@@ -462,7 +462,90 @@ const questions = [
   hint:
     "Replace each letter with its alphabetical position."
 },
+{
+  category: "ICT",
+  question: "Which file extension is commonly used for Microsoft Word documents?",
+  options: ["PDF", "DOCX", "JPG", "MP3"],
+  answer: "DOCX",
+  explanation:
+    "DOCX is the common file extension for modern Microsoft Word documents.",
+  wrongExplanations: {
+    PDF: "PDF is used for portable document files.",
+    JPG: "JPG is an image file format.",
+    MP3: "MP3 is an audio file format."
+  },
+  hint: "Think of Word documents."
+},
 
+{
+  category: "ICT",
+  question: "Which of the following is an example of an email service?",
+  options: ["Gmail", "Photoshop", "Excel", "VLC Player"],
+  answer: "Gmail",
+  explanation:
+    "Gmail is an email service provided by Google.",
+  wrongExplanations: {
+    Photoshop: "Photoshop is image editing software.",
+    Excel: "Excel is spreadsheet software.",
+    "VLC Player": "VLC is a media player."
+  },
+  hint: "Used to send and receive emails."
+},
+
+{
+  category: "ICT",
+  question: "What does OTP stand for?",
+  options: [
+    "One Time Password",
+    "Online Transfer Process",
+    "Open Text Program",
+    "Official Transaction Page"
+  ],
+  answer: "One Time Password",
+  explanation:
+    "OTP stands for One Time Password and is used for authentication and security verification.",
+  wrongExplanations: {
+    "Online Transfer Process": "Incorrect expansion.",
+    "Open Text Program": "Incorrect expansion.",
+    "Official Transaction Page": "Incorrect expansion."
+  },
+  hint: "Used during login or payment verification."
+},
+
+{
+  category: "ICT",
+  question: "Which of the following is a strong password?",
+  options: [
+    "123456",
+    "password",
+    "Alex1994",
+    "Mizo@2026#Safe"
+  ],
+  answer: "Mizo@2026#Safe",
+  explanation:
+    "A strong password uses a mix of uppercase letters, lowercase letters, numbers and special characters.",
+  wrongExplanations: {
+    "123456": "Very weak and easy to guess.",
+    password: "Very common and unsafe.",
+    Alex1994: "Contains a name and year, making it easier to guess."
+  },
+  hint: "Look for length and mixed characters."
+},
+
+{
+  category: "ICT",
+  question: "Which technology is commonly used for short-range wireless connection between devices?",
+  options: ["Bluetooth", "HTML", "HTTP", "PDF"],
+  answer: "Bluetooth",
+  explanation:
+    "Bluetooth is used for short-range wireless communication between devices such as phones, speakers and headphones.",
+  wrongExplanations: {
+    HTML: "HTML is used to create web pages.",
+    HTTP: "HTTP is used for web communication.",
+    PDF: "PDF is a document format."
+  },
+  hint: "Used with wireless earphones."
+},
 {
   category: "Reasoning",
   question: "Find the odd one out.",
