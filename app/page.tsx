@@ -10976,7 +10976,21 @@ export default function HomePage() {
           <h1 className="mt-3 text-4xl font-bold text-cyan-300 md:text-6xl">
             MPSC FREE MOCK
           </h1>
+<div className="mt-8 rounded-3xl border border-cyan-400/40 bg-slate-950/70 p-6 text-center shadow-[0_0_35px_rgba(34,211,238,0.25)]">
+  <div className="animate-bounce text-4xl">📖</div>
 
+  <p className="mt-3 animate-pulse text-xl font-bold text-cyan-200 md:text-3xl">
+    Education is like an offering to God.
+  </p>
+
+  <p className="mt-2 text-sm text-slate-300 md:text-base">
+    Don’t distribute it like a five-star dish.
+  </p>
+
+  <p className="mt-3 text-lg font-semibold italic text-cyan-300">
+    That’s our motto.
+  </p>
+</div>
           <p className="mt-4 max-w-3xl text-slate-300">
             MCQ-style practice questions with correct explanation, wrong answer
             explanation, elimination method and hints for Mizoram students.
