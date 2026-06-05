@@ -443,6 +443,630 @@ const questions = [
     "Mistake recovery shortcut."
 },
 {
+  category: "ICT",
+  question: "What does USB stand for?",
+  options: [
+    "Universal Serial Bus",
+    "United System Bus",
+    "Universal System Board",
+    "United Serial Board"
+  ],
+  answer: "Universal Serial Bus",
+  explanation:
+    "USB is a standard interface used to connect devices to computers.",
+  wrongExplanations: {
+    "United System Bus": "Incorrect expansion.",
+    "Universal System Board": "Incorrect expansion.",
+    "United Serial Board": "Incorrect expansion."
+  },
+  hint:
+    "Common computer port."
+},
+
+{
+  category: "ICT",
+  question: "Which of the following is a web browser?",
+  options: [
+    "Chrome",
+    "Excel",
+    "PowerPoint",
+    "Photoshop"
+  ],
+  answer: "Chrome",
+  explanation:
+    "Google Chrome is a web browser used to access websites.",
+  wrongExplanations: {
+    "Excel": "Spreadsheet software.",
+    "PowerPoint": "Presentation software.",
+    "Photoshop": "Image editing software."
+  },
+  hint:
+    "Used to browse the internet."
+},
+
+{
+  category: "ICT",
+  question: "Which key is used to refresh a webpage in most browsers?",
+  options: [
+    "F1",
+    "F5",
+    "F8",
+    "F12"
+  ],
+  answer: "F5",
+  explanation:
+    "F5 is commonly used to reload or refresh a webpage.",
+  wrongExplanations: {
+    "F1": "Usually opens Help.",
+    "F8": "Used for startup options in Windows.",
+    "F12": "Developer tools."
+  },
+  hint:
+    "Very common browser shortcut."
+},
+
+{
+  category: "ICT",
+  question: "What is the full form of Wi-Fi?",
+  options: [
+    "Wireless Fidelity",
+    "Wide Fidelity",
+    "Wireless File",
+    "Wide File"
+  ],
+  answer: "Wireless Fidelity",
+  explanation:
+    "In competitive exams, Wi-Fi is commonly expanded as Wireless Fidelity.",
+  wrongExplanations: {
+    "Wide Fidelity": "Incorrect expansion.",
+    "Wireless File": "Incorrect expansion.",
+    "Wide File": "Incorrect expansion."
+  },
+  hint:
+    "Wireless internet technology."
+},
+
+{
+  category: "ICT",
+  question: "Which of the following is an example of social media?",
+  options: [
+    "Instagram",
+    "Microsoft Word",
+    "Notepad",
+    "VLC Player"
+  ],
+  answer: "Instagram",
+  explanation:
+    "Instagram is a social networking and media-sharing platform.",
+  wrongExplanations: {
+    "Microsoft Word": "Word processing software.",
+    "Notepad": "Text editor.",
+    "VLC Player": "Media player."
+  },
+  hint:
+    "Photo and video sharing platform."
+},
+{
+  category: "ICT",
+  question: "Which of the following is used to send emails?",
+  options: [
+    "SMTP",
+    "HTTP",
+    "FTP",
+    "HTML"
+  ],
+  answer: "SMTP",
+  explanation:
+    "SMTP (Simple Mail Transfer Protocol) is used for sending emails over the internet.",
+  wrongExplanations: {
+    "HTTP": "Used for web pages.",
+    "FTP": "Used for file transfer.",
+    "HTML": "Markup language for web pages."
+  },
+  hint:
+    "Email sending protocol."
+},
+
+{
+  category: "ICT",
+  question: "What is the primary function of an operating system?",
+  options: [
+    "Play music",
+    "Manage computer resources",
+    "Browse websites",
+    "Print documents"
+  ],
+  answer: "Manage computer resources",
+  explanation:
+    "An operating system manages hardware, software and system resources.",
+  wrongExplanations: {
+    "Play music": "Media players do this.",
+    "Browse websites": "Browsers do this.",
+    "Print documents": "Printers perform this task."
+  },
+  hint:
+    "Windows and Linux do this."
+},
+
+{
+  category: "ICT",
+  question: "Which of the following is NOT a programming language?",
+  options: [
+    "Python",
+    "Java",
+    "HTML",
+    "C++"
+  ],
+  answer: "HTML",
+  explanation:
+    "HTML is a markup language used for creating web pages, not a programming language.",
+  wrongExplanations: {
+    "Python": "Programming language.",
+    "Java": "Programming language.",
+    "C++": "Programming language."
+  },
+  hint:
+    "Used to structure web pages."
+},
+
+{
+  category: "ICT",
+  question: "What does LAN stand for?",
+  options: [
+    "Local Area Network",
+    "Large Area Network",
+    "Long Access Network",
+    "Local Access Node"
+  ],
+  answer: "Local Area Network",
+  explanation:
+    "LAN connects computers within a limited area such as a home, office or school.",
+  wrongExplanations: {
+    "Large Area Network": "Incorrect expansion.",
+    "Long Access Network": "Incorrect expansion.",
+    "Local Access Node": "Incorrect expansion."
+  },
+  hint:
+    "Small geographical area."
+},
+
+{
+  category: "ICT",
+  question: "Which company developed the Windows operating system?",
+  options: [
+    "Apple",
+    "Google",
+    "Microsoft",
+    "IBM"
+  ],
+  answer: "Microsoft",
+  explanation:
+    "Microsoft developed and maintains the Windows operating system.",
+  wrongExplanations: {
+    "Apple": "Developed macOS.",
+    "Google": "Developed Android and ChromeOS.",
+    "IBM": "Computer company but not Windows developer."
+  },
+  hint:
+    "Founded by Bill Gates."
+},
+{
+  category: "ICT",
+  question: "Which of the following is an example of system software?",
+  options: [
+    "Microsoft Word",
+    "Windows",
+    "PowerPoint",
+    "Photoshop"
+  ],
+  answer: "Windows",
+  explanation:
+    "Windows is an operating system and therefore system software.",
+  wrongExplanations: {
+    "Microsoft Word": "Application software.",
+    "PowerPoint": "Presentation software.",
+    "Photoshop": "Image editing software."
+  },
+  hint:
+    "Operating system."
+},
+
+{
+  category: "ICT",
+  question: "What does CPU mainly do?",
+  options: [
+    "Stores files permanently",
+    "Processes instructions",
+    "Prints documents",
+    "Connects to Wi-Fi"
+  ],
+  answer: "Processes instructions",
+  explanation:
+    "The CPU executes instructions and performs calculations required by programs.",
+  wrongExplanations: {
+    "Stores files permanently": "Storage devices do that.",
+    "Prints documents": "Printers do that.",
+    "Connects to Wi-Fi": "Network adapters handle that."
+  },
+  hint:
+    "Brain of the computer."
+},
+
+{
+  category: "ICT",
+  question: "Which of the following is a cyber security threat?",
+  options: [
+    "Malware",
+    "Monitor",
+    "Keyboard",
+    "Scanner"
+  ],
+  answer: "Malware",
+  explanation:
+    "Malware is malicious software designed to damage or gain unauthorized access to systems.",
+  wrongExplanations: {
+    "Monitor": "Output device.",
+    "Keyboard": "Input device.",
+    "Scanner": "Input device."
+  },
+  hint:
+    "Malicious software."
+},
+
+{
+  category: "ICT",
+  question: "What is the full form of HTML?",
+  options: [
+    "Hyper Text Markup Language",
+    "High Text Machine Language",
+    "Hyper Transfer Markup Link",
+    "Home Tool Markup Language"
+  ],
+  answer: "Hyper Text Markup Language",
+  explanation:
+    "HTML is the standard markup language used to create web pages.",
+  wrongExplanations: {
+    "High Text Machine Language": "Incorrect expansion.",
+    "Hyper Transfer Markup Link": "Incorrect expansion.",
+    "Home Tool Markup Language": "Incorrect expansion."
+  },
+  hint:
+    "Language of web pages."
+},
+
+{
+  category: "ICT",
+  question: "Which device converts digital signals into paper output?",
+  options: [
+    "Monitor",
+    "Printer",
+    "Keyboard",
+    "Mouse"
+  ],
+  answer: "Printer",
+  explanation:
+    "A printer produces hard copies of digital documents.",
+  wrongExplanations: {
+    "Monitor": "Displays soft copy output.",
+    "Keyboard": "Input device.",
+    "Mouse": "Pointing device."
+  },
+  hint:
+    "Produces hard copy."
+},
+{
+  category: "ICT",
+  question: "What does ICT stand for?",
+  options: [
+    "Information and Communication Technology",
+    "Internet and Computer Technology",
+    "Information and Computer Tools",
+    "Integrated Communication Technology"
+  ],
+  answer: "Information and Communication Technology",
+  explanation:
+    "ICT refers to technologies used for information processing and communication.",
+  wrongExplanations: {
+    "Internet and Computer Technology": "Incorrect expansion.",
+    "Information and Computer Tools": "Incorrect expansion.",
+    "Integrated Communication Technology": "Incorrect expansion."
+  },
+  hint:
+    "A common term in education and governance."
+},
+
+{
+  category: "ICT",
+  question: "Which of the following is an output device?",
+  options: [
+    "Keyboard",
+    "Mouse",
+    "Monitor",
+    "Scanner"
+  ],
+  answer: "Monitor",
+  explanation:
+    "A monitor displays information from the computer to the user.",
+  wrongExplanations: {
+    "Keyboard": "Input device.",
+    "Mouse": "Input device.",
+    "Scanner": "Input device."
+  },
+  hint:
+    "Displays images and text."
+},
+
+{
+  category: "ICT",
+  question: "Which company developed the Android operating system?",
+  options: [
+    "Apple",
+    "Microsoft",
+    "Google",
+    "IBM"
+  ],
+  answer: "Google",
+  explanation:
+    "Android is developed and maintained by Google.",
+  wrongExplanations: {
+    "Apple": "Developed iOS.",
+    "Microsoft": "Developed Windows.",
+    "IBM": "Technology company but not Android developer."
+  },
+  hint:
+    "Also owns YouTube."
+},
+
+{
+  category: "ICT",
+  question: "What is the purpose of a firewall?",
+  options: [
+    "Increase screen brightness",
+    "Protect a network from unauthorized access",
+    "Print documents",
+    "Store files"
+  ],
+  answer: "Protect a network from unauthorized access",
+  explanation:
+    "A firewall monitors and filters incoming and outgoing network traffic for security.",
+  wrongExplanations: {
+    "Increase screen brightness": "Display setting.",
+    "Print documents": "Printer function.",
+    "Store files": "Storage device function."
+  },
+  hint:
+    "Cybersecurity tool."
+},
+
+{
+  category: "ICT",
+  question: "Which of the following is a search engine?",
+  options: [
+    "Firefox",
+    "Google",
+    "Windows",
+    "WhatsApp"
+  ],
+  answer: "Google",
+  explanation:
+    "Google is a search engine used to find information on the internet.",
+  wrongExplanations: {
+    "Firefox": "Web browser.",
+    "Windows": "Operating system.",
+    "WhatsApp": "Messaging application."
+  },
+  hint:
+    "Most popular search engine."
+},
+{
+  category: "ICT",
+  question: "Which of the following is an input device?",
+  options: [
+    "Monitor",
+    "Printer",
+    "Keyboard",
+    "Speaker"
+  ],
+  answer: "Keyboard",
+  explanation:
+    "A keyboard is used to enter data into a computer.",
+  wrongExplanations: {
+    "Monitor": "Output device.",
+    "Printer": "Output device.",
+    "Speaker": "Output device."
+  },
+  hint:
+    "Used for typing."
+},
+
+{
+  category: "ICT",
+  question: "What does WWW stand for?",
+  options: [
+    "World Wide Web",
+    "World Web Window",
+    "Wide World Web",
+    "World Wireless Web"
+  ],
+  answer: "World Wide Web",
+  explanation:
+    "WWW stands for World Wide Web, a system of interconnected web pages.",
+  wrongExplanations: {
+    "World Web Window": "Incorrect expansion.",
+    "Wide World Web": "Incorrect expansion.",
+    "World Wireless Web": "Incorrect expansion."
+  },
+  hint:
+    "Invented by Tim Berners-Lee."
+},
+
+{
+  category: "ICT",
+  question: "Which of the following is used to store data permanently?",
+  options: [
+    "RAM",
+    "Cache",
+    "Hard Disk",
+    "Register"
+  ],
+  answer: "Hard Disk",
+  explanation:
+    "A hard disk stores data even when the computer is switched off.",
+  wrongExplanations: {
+    "RAM": "Temporary memory.",
+    "Cache": "Temporary high-speed memory.",
+    "Register": "Very small temporary storage."
+  },
+  hint:
+    "Long-term storage device."
+},
+
+{
+  category: "ICT",
+  question: "What is the full form of URL?",
+  options: [
+    "Uniform Resource Locator",
+    "Universal Resource Link",
+    "Uniform Retrieval Link",
+    "Universal Retrieval Locator"
+  ],
+  answer: "Uniform Resource Locator",
+  explanation:
+    "A URL is the address used to locate resources on the internet.",
+  wrongExplanations: {
+    "Universal Resource Link": "Incorrect expansion.",
+    "Uniform Retrieval Link": "Incorrect expansion.",
+    "Universal Retrieval Locator": "Incorrect expansion."
+  },
+  hint:
+    "Website address."
+},
+
+{
+  category: "ICT",
+  question: "Which of the following is a mobile operating system?",
+  options: [
+    "Android",
+    "Oracle",
+    "Linux Kernel",
+    "HTML"
+  ],
+  answer: "Android",
+  explanation:
+    "Android is a mobile operating system developed by Google.",
+  wrongExplanations: {
+    "Oracle": "Database company/software.",
+    "Linux Kernel": "Kernel, not a mobile OS by itself.",
+    "HTML": "Markup language."
+  },
+  hint:
+    "Most-used smartphone OS."
+},
+{
+  category: "ICT",
+  question: "Which of the following is a spreadsheet software?",
+  options: [
+    "Microsoft Excel",
+    "Microsoft Word",
+    "PowerPoint",
+    "Paint"
+  ],
+  answer: "Microsoft Excel",
+  explanation:
+    "Microsoft Excel is used for spreadsheets, calculations and data analysis.",
+  wrongExplanations: {
+    "Microsoft Word": "Word processing software.",
+    "PowerPoint": "Presentation software.",
+    "Paint": "Drawing software."
+  },
+  hint:
+    "Rows and columns."
+},
+
+{
+  category: "ICT",
+  question: "What does RAM stand for?",
+  options: [
+    "Random Access Memory",
+    "Read Access Memory",
+    "Rapid Access Memory",
+    "Remote Access Memory"
+  ],
+  answer: "Random Access Memory",
+  explanation:
+    "RAM is temporary memory used by the computer while running programs.",
+  wrongExplanations: {
+    "Read Access Memory": "Incorrect expansion.",
+    "Rapid Access Memory": "Incorrect expansion.",
+    "Remote Access Memory": "Incorrect expansion."
+  },
+  hint:
+    "Temporary memory."
+},
+
+{
+  category: "ICT",
+  question: "Which of the following is an example of application software?",
+  options: [
+    "Windows",
+    "Linux",
+    "Microsoft Word",
+    "Android"
+  ],
+  answer: "Microsoft Word",
+  explanation:
+    "Microsoft Word is application software used for creating documents.",
+  wrongExplanations: {
+    "Windows": "Operating system.",
+    "Linux": "Operating system.",
+    "Android": "Operating system."
+  },
+  hint:
+    "Used for typing documents."
+},
+
+{
+  category: "ICT",
+  question: "What is the main function of a computer mouse?",
+  options: [
+    "Print documents",
+    "Control the pointer",
+    "Store files",
+    "Play music"
+  ],
+  answer: "Control the pointer",
+  explanation:
+    "A mouse is a pointing device used to interact with items on the screen.",
+  wrongExplanations: {
+    "Print documents": "Printer function.",
+    "Store files": "Storage device function.",
+    "Play music": "Media software function."
+  },
+  hint:
+    "Pointing device."
+},
+
+{
+  category: "ICT",
+  question: "Which of the following is commonly used for video conferencing?",
+  options: [
+    "Zoom",
+    "Paint",
+    "Notepad",
+    "Calculator"
+  ],
+  answer: "Zoom",
+  explanation:
+    "Zoom is a popular platform for online meetings and video conferencing.",
+  wrongExplanations: {
+    "Paint": "Drawing application.",
+    "Notepad": "Text editor.",
+    "Calculator": "Calculation tool."
+  },
+  hint:
+    "Online meetings."
+},
+{
   category: "Reasoning",
   question: "If A = 1, B = 2, C = 3, then CAT = ?",
   options: [
@@ -461,6 +1085,526 @@ const questions = [
   },
   hint:
     "Replace each letter with its alphabetical position."
+},
+{
+  category: "Reasoning",
+  question: "Find the next number: 1, 4, 9, 16, ?",
+  options: [
+    "20",
+    "25",
+    "30",
+    "36"
+  ],
+  answer: "25",
+  explanation:
+    "The sequence consists of perfect squares: 1², 2², 3², 4², 5².",
+  wrongExplanations: {
+    "20": "Not a perfect square.",
+    "30": "Not a perfect square.",
+    "36": "6², which comes later."
+  },
+  hint:
+    "Look at square numbers."
+},
+
+{
+  category: "Reasoning",
+  question: "If APPLE is coded as BQQMF, then BOOK is coded as:",
+  options: [
+    "CPPL",
+    "CPPM",
+    "CQQL",
+    "DQQM"
+  ],
+  answer: "CPPL",
+  explanation:
+    "Each letter is shifted forward by one position in the alphabet.",
+  wrongExplanations: {
+    "CPPM": "Last letter shifted incorrectly.",
+    "CQQL": "Middle letters shifted incorrectly.",
+    "DQQM": "First letter shifted twice."
+  },
+  hint:
+    "Move every letter +1."
+},
+
+{
+  category: "Reasoning",
+  question: "Complete the analogy: Doctor : Hospital :: Teacher : ?",
+  options: [
+    "School",
+    "Office",
+    "Market",
+    "Court"
+  ],
+  answer: "School",
+  explanation:
+    "A doctor works in a hospital, while a teacher works in a school.",
+  wrongExplanations: {
+    "Office": "Not the primary workplace of a teacher.",
+    "Market": "Not related.",
+    "Court": "Workplace of judges."
+  },
+  hint:
+    "Place of work."
+},
+
+{
+  category: "Reasoning",
+  question: "Find the odd one out.",
+  options: [
+    "Lion",
+    "Tiger",
+    "Leopard",
+    "Eagle"
+  ],
+  answer: "Eagle",
+  explanation:
+    "Lion, Tiger and Leopard are big cats, while Eagle is a bird.",
+  wrongExplanations: {
+    "Lion": "Big cat.",
+    "Tiger": "Big cat.",
+    "Leopard": "Big cat."
+  },
+  hint:
+    "Three are mammals."
+},
+
+{
+  category: "Reasoning",
+  question: "If today is Monday, what day will it be after 10 days?",
+  options: [
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ],
+  answer: "Thursday",
+  explanation:
+    "10 days = 7 days + 3 days. Monday + 3 days = Thursday.",
+  wrongExplanations: {
+    "Wednesday": "One day short.",
+    "Friday": "One day extra.",
+    "Saturday": "Two days extra."
+  },
+  hint:
+    "Use remainder after dividing by 7."
+},
+{
+  category: "Reasoning",
+  question: "Find the next number: 7, 14, 21, 28, ?",
+  options: [
+    "32",
+    "35",
+    "36",
+    "42"
+  ],
+  answer: "35",
+  explanation:
+    "The sequence increases by 7 each time. Therefore 28 + 7 = 35.",
+  wrongExplanations: {
+    "32": "Incorrect addition.",
+    "36": "Does not follow the pattern.",
+    "42": "This comes after 35."
+  },
+  hint:
+    "Multiples of 7."
+},
+
+{
+  category: "Reasoning",
+  question: "If MANGO is coded as OCPIQ, then APPLE is coded as:",
+  options: [
+    "CRRNG",
+    "BQQMF",
+    "CQQNG",
+    "DSSOH"
+  ],
+  answer: "CRRNG",
+  explanation:
+    "Each letter is shifted two positions forward in the alphabet.",
+  wrongExplanations: {
+    "BQQMF": "This is a +1 shift, not +2.",
+    "CQQNG": "Some letters are shifted incorrectly.",
+    "DSSOH": "This shifts too far."
+  },
+  hint:
+    "Move each letter +2."
+},
+
+{
+  category: "Reasoning",
+  question: "Complete the analogy: Pen : Write :: Knife : ?",
+  options: [
+    "Cut",
+    "Eat",
+    "Draw",
+    "Read"
+  ],
+  answer: "Cut",
+  explanation:
+    "A pen is used to write, and a knife is used to cut.",
+  wrongExplanations: {
+    "Eat": "A knife may be used during eating but its main function is cutting.",
+    "Draw": "Drawing is done with a pen or pencil.",
+    "Read": "Reading is not done with a knife."
+  },
+  hint:
+    "Think of main function."
+},
+
+{
+  category: "Reasoning",
+  question: "Find the odd one out.",
+  options: [
+    "January",
+    "April",
+    "July",
+    "Sunday"
+  ],
+  answer: "Sunday",
+  explanation:
+    "January, April and July are months, while Sunday is a day of the week.",
+  wrongExplanations: {
+    "January": "A month.",
+    "April": "A month.",
+    "July": "A month."
+  },
+  hint:
+    "Three are months."
+},
+
+{
+  category: "Reasoning",
+  question: "If 5 workers can complete a work in 10 days, how many days will 10 workers take, assuming same efficiency?",
+  options: [
+    "2 days",
+    "5 days",
+    "10 days",
+    "20 days"
+  ],
+  answer: "5 days",
+  explanation:
+    "More workers reduce the time. If workers double from 5 to 10, time becomes half: 10 ÷ 2 = 5 days.",
+  wrongExplanations: {
+    "2 days": "Too short.",
+    "10 days": "Time would remain same only if workers did not increase.",
+    "20 days": "More workers should reduce time, not increase it."
+  },
+  hint:
+    "Workers and days are inversely related."
+},
+{
+  category: "Reasoning",
+  question: "Find the next number: 11, 22, 33, 44, ?",
+  options: [
+    "50",
+    "55",
+    "60",
+    "66"
+  ],
+  answer: "55",
+  explanation:
+    "The sequence increases by 11 each time. Therefore 44 + 11 = 55.",
+  wrongExplanations: {
+    "50": "Incorrect addition.",
+    "60": "Does not follow the pattern.",
+    "66": "This comes after 55."
+  },
+  hint:
+    "Multiples of 11."
+},
+
+{
+  category: "Reasoning",
+  question: "If BLUE is coded as CMVF, then RED is coded as:",
+  options: [
+    "SFE",
+    "QDC",
+    "TGF",
+    "RFE"
+  ],
+  answer: "SFE",
+  explanation:
+    "Each letter is shifted one position forward: R→S, E→F, D→E.",
+  wrongExplanations: {
+    "QDC": "This shifts letters backward.",
+    "TGF": "This shifts too far.",
+    "RFE": "The first letter is not shifted."
+  },
+  hint:
+    "Move each letter +1."
+},
+
+{
+  category: "Reasoning",
+  question: "Complete the analogy: Bird : Nest :: Bee : ?",
+  options: [
+    "Hive",
+    "Stable",
+    "Kennel",
+    "Den"
+  ],
+  answer: "Hive",
+  explanation:
+    "A bird lives in a nest, while a bee lives in a hive.",
+  wrongExplanations: {
+    "Stable": "Home of horses.",
+    "Kennel": "Home of dogs.",
+    "Den": "Home of some wild animals."
+  },
+  hint:
+    "Home of bees."
+},
+
+{
+  category: "Reasoning",
+  question: "Find the odd one out.",
+  options: [
+    "Red",
+    "Blue",
+    "Green",
+    "Chair"
+  ],
+  answer: "Chair",
+  explanation:
+    "Red, Blue and Green are colours, while Chair is an object.",
+  wrongExplanations: {
+    "Red": "A colour.",
+    "Blue": "A colour.",
+    "Green": "A colour."
+  },
+  hint:
+    "Three are colours."
+},
+
+{
+  category: "Reasoning",
+  question: "A man walks 5 km north and then 5 km east. In which direction is he from the starting point?",
+  options: [
+    "North",
+    "East",
+    "North-East",
+    "South-East"
+  ],
+  answer: "North-East",
+  explanation:
+    "He moved both north and east from the starting point, so his final position is north-east.",
+  wrongExplanations: {
+    "North": "He also moved east.",
+    "East": "He also moved north.",
+    "South-East": "He did not move south."
+  },
+  hint:
+    "Combine both directions."
+},
+{
+  category: "Reasoning",
+  question: "Find the next number: 2, 6, 12, 20, 30, ?",
+  options: [
+    "36",
+    "40",
+    "42",
+    "44"
+  ],
+  answer: "42",
+  explanation:
+    "Pattern: 1×2, 2×3, 3×4, 4×5, 5×6, so next is 6×7 = 42.",
+  wrongExplanations: {
+    "36": "Does not follow the multiplication pattern.",
+    "40": "Incorrect value.",
+    "44": "Too high."
+  },
+  hint:
+    "Product of consecutive numbers."
+},
+
+{
+  category: "Reasoning",
+  question: "If SOUTH is coded as TPVUI, then NORTH is coded as:",
+  options: [
+    "OPSUI",
+    "OPSUIF",
+    "OPSUI",
+    "OPSUIH"
+  ],
+  answer: "OPSUI",
+  explanation:
+    "Each letter is shifted one position forward: N→O, O→P, R→S, T→U, H→I.",
+  wrongExplanations: {
+    "OPSUIF": "Extra letter added.",
+    "OPSUIH": "Last letter incorrect.",
+    "OPSUI": "Correct answer."
+  },
+  hint:
+    "Shift each letter +1."
+},
+
+{
+  category: "Reasoning",
+  question: "Complete the analogy: Fish : Water :: Bird : ?",
+  options: [
+    "Nest",
+    "Tree",
+    "Air",
+    "Forest"
+  ],
+  answer: "Air",
+  explanation:
+    "Fish live and move in water, while birds fly through air.",
+  wrongExplanations: {
+    "Nest": "Birds live in nests but the analogy is about medium of movement.",
+    "Tree": "Not true for all birds.",
+    "Forest": "Not true for all birds."
+  },
+  hint:
+    "Think habitat/movement."
+},
+
+{
+  category: "Reasoning",
+  question: "Find the odd one out.",
+  options: [
+    "Car",
+    "Bus",
+    "Train",
+    "Apple"
+  ],
+  answer: "Apple",
+  explanation:
+    "Car, Bus and Train are modes of transport, while Apple is a fruit.",
+  wrongExplanations: {
+    "Car": "Vehicle.",
+    "Bus": "Vehicle.",
+    "Train": "Vehicle."
+  },
+  hint:
+    "Three are transport-related."
+},
+
+{
+  category: "Reasoning",
+  question: "A clock shows 3:00. What is the angle between the hour and minute hands?",
+  options: [
+    "45°",
+    "90°",
+    "120°",
+    "180°"
+  ],
+  answer: "90°",
+  explanation:
+    "At 3:00, the minute hand is at 12 and the hour hand is at 3, forming a right angle.",
+  wrongExplanations: {
+    "45°": "Too small.",
+    "120°": "Incorrect.",
+    "180°": "Would occur at 6:00."
+  },
+  hint:
+    "Right angle."
+},
+{
+  category: "Reasoning",
+  question: "Find the next number: 8, 16, 24, 32, ?",
+  options: [
+    "36",
+    "40",
+    "42",
+    "48"
+  ],
+  answer: "40",
+  explanation:
+    "The sequence increases by 8 each time. Therefore 32 + 8 = 40.",
+  wrongExplanations: {
+    "36": "Incorrect difference.",
+    "42": "Incorrect difference.",
+    "48": "This would be the next after 40."
+  },
+  hint:
+    "Constant addition pattern."
+},
+
+{
+  category: "Reasoning",
+  question: "If PEN is coded as QFO, then BOOK is coded as:",
+  options: [
+    "CPPL",
+    "CPPM",
+    "CQQL",
+    "DQQM"
+  ],
+  answer: "CPPL",
+  explanation:
+    "Each letter is shifted one position forward: B→C, O→P, O→P, K→L.",
+  wrongExplanations: {
+    "CPPM": "Last letter is incorrect.",
+    "CQQL": "Middle letters shifted incorrectly.",
+    "DQQM": "First letter shifted twice."
+  },
+  hint:
+    "Move each letter +1."
+},
+
+{
+  category: "Reasoning",
+  question: "Complete the analogy: Cow : Calf :: Dog : ?",
+  options: [
+    "Cub",
+    "Puppy",
+    "Kitten",
+    "Foal"
+  ],
+  answer: "Puppy",
+  explanation:
+    "A calf is the young one of a cow, and a puppy is the young one of a dog.",
+  wrongExplanations: {
+    "Cub": "Young lion, tiger, etc.",
+    "Kitten": "Young cat.",
+    "Foal": "Young horse."
+  },
+  hint:
+    "Baby dog."
+},
+
+{
+  category: "Reasoning",
+  question: "Find the odd one out.",
+  options: [
+    "Rose",
+    "Lily",
+    "Lotus",
+    "Mango"
+  ],
+  answer: "Mango",
+  explanation:
+    "Rose, Lily and Lotus are flowers, while Mango is a fruit.",
+  wrongExplanations: {
+    "Rose": "Flower.",
+    "Lily": "Flower.",
+    "Lotus": "Flower."
+  },
+  hint:
+    "Three belong to the same plant category."
+},
+
+{
+  category: "Reasoning",
+  question: "A train travels 60 km in 1 hour. How far will it travel in 4 hours at the same speed?",
+  options: [
+    "180 km",
+    "220 km",
+    "240 km",
+    "300 km"
+  ],
+  answer: "240 km",
+  explanation:
+    "Distance = Speed × Time = 60 × 4 = 240 km.",
+  wrongExplanations: {
+    "180 km": "Too short.",
+    "220 km": "Incorrect multiplication.",
+    "300 km": "Too large."
+  },
+  hint:
+    "Use Distance = Speed × Time."
 },
 {
   category: "ICT",
@@ -1579,6 +2723,318 @@ const questions = [
     "Leader of the INA."
 },
   {
+  category: "History",
+  question: "Who founded the Maurya Empire?",
+  options: [
+    "Ashoka",
+    "Bindusara",
+    "Chandragupta Maurya",
+    "Harsha"
+  ],
+  answer: "Chandragupta Maurya",
+  explanation:
+    "Chandragupta Maurya founded the Maurya Empire around 322 BCE with the guidance of Chanakya.",
+  wrongExplanations: {
+    "Ashoka": "Most famous Mauryan ruler but not the founder.",
+    "Bindusara": "Son of Chandragupta Maurya.",
+    "Harsha": "Ruled much later."
+  },
+  hint:
+    "Guided by Chanakya."
+},
+
+{
+  category: "History",
+  question: "Who was known as the 'Iron Man of India'?",
+  options: [
+    "Jawaharlal Nehru",
+    "Subhas Chandra Bose",
+    "Sardar Vallabhbhai Patel",
+    "Rajendra Prasad"
+  ],
+  answer: "Sardar Vallabhbhai Patel",
+  explanation:
+    "Sardar Patel was called the Iron Man of India for integrating princely states into the Indian Union.",
+  wrongExplanations: {
+    "Jawaharlal Nehru": "First Prime Minister of India.",
+    "Subhas Chandra Bose": "Leader of INA.",
+    "Rajendra Prasad": "First President of India."
+  },
+  hint:
+    "Integrated princely states."
+},
+
+{
+  category: "History",
+  question: "The Battle of Plassey was fought in which year?",
+  options: [
+    "1757",
+    "1764",
+    "1857",
+    "1707"
+  ],
+  answer: "1757",
+  explanation:
+    "The Battle of Plassey in 1757 marked the beginning of British political dominance in India.",
+  wrongExplanations: {
+    "1764": "Battle of Buxar.",
+    "1857": "Revolt of 1857.",
+    "1707": "Death of Aurangzeb."
+  },
+  hint:
+    "Robert Clive and Siraj-ud-Daulah."
+},
+
+{
+  category: "History",
+  question: "Who gave the famous slogan 'Give me blood, and I shall give you freedom'?",
+  options: [
+    "Mahatma Gandhi",
+    "Bhagat Singh",
+    "Subhas Chandra Bose",
+    "Bal Gangadhar Tilak"
+  ],
+  answer: "Subhas Chandra Bose",
+  explanation:
+    "Netaji Subhas Chandra Bose gave this slogan to inspire Indians to fight for independence.",
+  wrongExplanations: {
+    "Mahatma Gandhi": "Leader of non-violent movement.",
+    "Bhagat Singh": "Revolutionary freedom fighter.",
+    "Bal Gangadhar Tilak": "Known for 'Swaraj is my birthright'."
+  },
+  hint:
+    "Leader of the INA."
+},
+
+{
+  category: "History",
+  question: "Who was the first Mughal Emperor of India?",
+  options: [
+    "Akbar",
+    "Humayun",
+    "Babur",
+    "Shah Jahan"
+  ],
+  answer: "Babur",
+  explanation:
+    "Babur founded the Mughal Empire after defeating Ibrahim Lodi in the First Battle of Panipat in 1526.",
+  wrongExplanations: {
+    "Akbar": "Third Mughal Emperor.",
+    "Humayun": "Son of Babur.",
+    "Shah Jahan": "Built the Taj Mahal."
+  },
+  hint:
+    "Battle of Panipat, 1526."
+},
+{
+  category: "History",
+  question: "Who built the Taj Mahal?",
+  options: [
+    "Akbar",
+    "Babur",
+    "Shah Jahan",
+    "Aurangzeb"
+  ],
+  answer: "Shah Jahan",
+  explanation:
+    "Shah Jahan built the Taj Mahal in memory of his wife Mumtaz Mahal.",
+  wrongExplanations: {
+    "Akbar": "Built Fatehpur Sikri.",
+    "Babur": "Founder of the Mughal Empire.",
+    "Aurangzeb": "Later Mughal ruler."
+  },
+  hint:
+    "Mumtaz Mahal."
+},
+
+{
+  category: "History",
+  question: "The Revolt of 1857 started at:",
+  options: [
+    "Delhi",
+    "Meerut",
+    "Kanpur",
+    "Lucknow"
+  ],
+  answer: "Meerut",
+  explanation:
+    "The Revolt of 1857 began at Meerut on 10 May 1857.",
+  wrongExplanations: {
+    "Delhi": "Important center of the revolt.",
+    "Kanpur": "Major revolt center.",
+    "Lucknow": "Major revolt center."
+  },
+  hint:
+    "10 May 1857."
+},
+
+{
+  category: "History",
+  question: "Who was the first Governor-General of independent India?",
+  options: [
+    "Lord Mountbatten",
+    "C. Rajagopalachari",
+    "Jawaharlal Nehru",
+    "Rajendra Prasad"
+  ],
+  answer: "Lord Mountbatten",
+  explanation:
+    "Lord Mountbatten served as the first Governor-General of independent India.",
+  wrongExplanations: {
+    "C. Rajagopalachari": "First Indian Governor-General.",
+    "Jawaharlal Nehru": "First Prime Minister.",
+    "Rajendra Prasad": "First President."
+  },
+  hint:
+    "Last Viceroy of India."
+},
+
+{
+  category: "History",
+  question: "Who founded the Gupta Empire?",
+  options: [
+    "Samudragupta",
+    "Chandragupta I",
+    "Skandagupta",
+    "Kumaragupta"
+  ],
+  answer: "Chandragupta I",
+  explanation:
+    "Chandragupta I is regarded as the founder of the Gupta Empire.",
+  wrongExplanations: {
+    "Samudragupta": "Expanded the empire.",
+    "Skandagupta": "Later Gupta ruler.",
+    "Kumaragupta": "Later Gupta ruler."
+  },
+  hint:
+    "Beginning of the Gupta age."
+},
+
+{
+  category: "History",
+  question: "Who wrote the book 'Discovery of India'?",
+  options: [
+    "Mahatma Gandhi",
+    "Subhas Chandra Bose",
+    "Jawaharlal Nehru",
+    "B.R. Ambedkar"
+  ],
+  answer: "Jawaharlal Nehru",
+  explanation:
+    "Jawaharlal Nehru wrote 'The Discovery of India' while imprisoned by the British.",
+  wrongExplanations: {
+    "Mahatma Gandhi": "Wrote 'My Experiments with Truth'.",
+    "Subhas Chandra Bose": "Freedom fighter and INA leader.",
+    "B.R. Ambedkar": "Principal architect of the Constitution."
+  },
+  hint:
+    "India's first Prime Minister."
+},
+{
+  category: "History",
+  question: "Who was the founder of the Mughal Empire in India?",
+  options: [
+    "Akbar",
+    "Babur",
+    "Humayun",
+    "Shah Jahan"
+  ],
+  answer: "Babur",
+  explanation:
+    "Babur founded the Mughal Empire after defeating Ibrahim Lodi in the First Battle of Panipat in 1526.",
+  wrongExplanations: {
+    "Akbar": "Third Mughal Emperor.",
+    "Humayun": "Son of Babur.",
+    "Shah Jahan": "Built the Taj Mahal."
+  },
+  hint:
+    "First Battle of Panipat."
+},
+
+{
+  category: "History",
+  question: "Who was the first President of independent India?",
+  options: [
+    "Jawaharlal Nehru",
+    "Rajendra Prasad",
+    "Sardar Patel",
+    "B.R. Ambedkar"
+  ],
+  answer: "Rajendra Prasad",
+  explanation:
+    "Dr. Rajendra Prasad became the first President of India in 1950.",
+  wrongExplanations: {
+    "Jawaharlal Nehru": "First Prime Minister.",
+    "Sardar Patel": "First Deputy Prime Minister.",
+    "B.R. Ambedkar": "Chairman of the Drafting Committee."
+  },
+  hint:
+    "First President."
+},
+
+{
+  category: "History",
+  question: "Which movement was launched by Mahatma Gandhi in 1942?",
+  options: [
+    "Non-Cooperation Movement",
+    "Civil Disobedience Movement",
+    "Quit India Movement",
+    "Swadeshi Movement"
+  ],
+  answer: "Quit India Movement",
+  explanation:
+    "The Quit India Movement was launched in August 1942 demanding an end to British rule.",
+  wrongExplanations: {
+    "Non-Cooperation Movement": "Started in 1920.",
+    "Civil Disobedience Movement": "Started in 1930.",
+    "Swadeshi Movement": "Associated with Bengal Partition."
+  },
+  hint:
+    "Do or Die."
+},
+
+{
+  category: "History",
+  question: "Who wrote 'Arthashastra'?",
+  options: [
+    "Kalidasa",
+    "Chanakya",
+    "Banabhatta",
+    "Megasthenes"
+  ],
+  answer: "Chanakya",
+  explanation:
+    "Chanakya (Kautilya) wrote the Arthashastra, a treatise on governance and economics.",
+  wrongExplanations: {
+    "Kalidasa": "Classical Sanskrit poet.",
+    "Banabhatta": "Author of Harshacharita.",
+    "Megasthenes": "Greek ambassador."
+  },
+  hint:
+    "Advisor of Chandragupta Maurya."
+},
+
+{
+  category: "History",
+  question: "The Jallianwala Bagh massacre took place in:",
+  options: [
+    "1915",
+    "1919",
+    "1922",
+    "1930"
+  ],
+  answer: "1919",
+  explanation:
+    "The Jallianwala Bagh massacre occurred on 13 April 1919 in Amritsar.",
+  wrongExplanations: {
+    "1915": "Too early.",
+    "1922": "Chauri Chaura incident year.",
+    "1930": "Salt March year."
+  },
+  hint:
+    "Amritsar tragedy."
+},
+{
   category: "Geography",
   question: "Which is the largest state of India by area?",
   options: [
@@ -1602,6 +3058,526 @@ const questions = [
     "Think of the state that contains the Thar Desert."
 },
   {
+  category: "Geography",
+  question: "Which is the largest state in India by population?",
+  options: [
+    "Maharashtra",
+    "Bihar",
+    "Uttar Pradesh",
+    "West Bengal"
+  ],
+  answer: "Uttar Pradesh",
+  explanation:
+    "Uttar Pradesh is the most populous state in India.",
+  wrongExplanations: {
+    "Maharashtra": "One of the largest states but not the most populous.",
+    "Bihar": "Highly populated but ranks below Uttar Pradesh.",
+    "West Bengal": "Not the most populous state."
+  },
+  hint:
+    "India's political heartland."
+},
+
+{
+  category: "Geography",
+  question: "Which river originates from the Gangotri Glacier?",
+  options: [
+    "Yamuna",
+    "Brahmaputra",
+    "Ganga",
+    "Godavari"
+  ],
+  answer: "Ganga",
+  explanation:
+    "The Ganga originates from the Gangotri Glacier in Uttarakhand.",
+  wrongExplanations: {
+    "Yamuna": "Originates from Yamunotri Glacier.",
+    "Brahmaputra": "Originates in Tibet.",
+    "Godavari": "Originates in Maharashtra."
+  },
+  hint:
+    "India's most sacred river."
+},
+
+{
+  category: "Geography",
+  question: "Which layer of the atmosphere contains the ozone layer?",
+  options: [
+    "Troposphere",
+    "Stratosphere",
+    "Mesosphere",
+    "Thermosphere"
+  ],
+  answer: "Stratosphere",
+  explanation:
+    "The ozone layer is located in the stratosphere and protects Earth from harmful UV radiation.",
+  wrongExplanations: {
+    "Troposphere": "Weather occurs here.",
+    "Mesosphere": "Above the stratosphere.",
+    "Thermosphere": "Much higher atmospheric layer."
+  },
+  hint:
+    "Above the troposphere."
+},
+
+{
+  category: "Geography",
+  question: "Which is the largest desert in India?",
+  options: [
+    "Kalahari",
+    "Sahara",
+    "Thar",
+    "Gobi"
+  ],
+  answer: "Thar",
+  explanation:
+    "The Thar Desert, also called the Great Indian Desert, is India's largest desert.",
+  wrongExplanations: {
+    "Kalahari": "Located in Africa.",
+    "Sahara": "Located in North Africa.",
+    "Gobi": "Located in Mongolia and China."
+  },
+  hint:
+    "Located mainly in Rajasthan."
+},
+
+{
+  category: "Geography",
+  question: "Which imaginary line divides the Earth into Eastern and Western Hemispheres?",
+  options: [
+    "Equator",
+    "Prime Meridian",
+    "Tropic of Cancer",
+    "Arctic Circle"
+  ],
+  answer: "Prime Meridian",
+  explanation:
+    "The Prime Meridian at 0° longitude divides the Earth into Eastern and Western Hemispheres.",
+  wrongExplanations: {
+    "Equator": "Divides North and South Hemispheres.",
+    "Tropic of Cancer": "23.5° North latitude.",
+    "Arctic Circle": "66.5° North latitude."
+  },
+  hint:
+    "0° longitude."
+},
+{
+  category: "Geography",
+  question: "Which is the longest river in the world?",
+  options: [
+    "Amazon",
+    "Yangtze",
+    "Mississippi",
+    "Nile"
+  ],
+  answer: "Nile",
+  explanation:
+    "The Nile River in Africa is traditionally regarded as the longest river in the world.",
+  wrongExplanations: {
+    "Amazon": "Largest by water discharge.",
+    "Yangtze": "Longest river in Asia.",
+    "Mississippi": "Major river in North America."
+  },
+  hint:
+    "Flows through Egypt."
+},
+
+{
+  category: "Geography",
+  question: "Which continent is known as the 'Dark Continent'?",
+  options: [
+    "Asia",
+    "Africa",
+    "Europe",
+    "Australia"
+  ],
+  answer: "Africa",
+  explanation:
+    "Africa was historically referred to as the 'Dark Continent' by European explorers.",
+  wrongExplanations: {
+    "Asia": "Largest continent.",
+    "Europe": "Not known by this term.",
+    "Australia": "Smallest continent."
+  },
+  hint:
+    "Second-largest continent."
+},
+
+{
+  category: "Geography",
+  question: "Which Indian state has the largest area?",
+  options: [
+    "Madhya Pradesh",
+    "Maharashtra",
+    "Rajasthan",
+    "Uttar Pradesh"
+  ],
+  answer: "Rajasthan",
+  explanation:
+    "Rajasthan is the largest state in India by area.",
+  wrongExplanations: {
+    "Madhya Pradesh": "Second largest.",
+    "Maharashtra": "Third largest.",
+    "Uttar Pradesh": "Largest by population, not area."
+  },
+  hint:
+    "Land of deserts and forts."
+},
+
+{
+  category: "Geography",
+  question: "Which ocean lies to the south of India?",
+  options: [
+    "Pacific Ocean",
+    "Atlantic Ocean",
+    "Indian Ocean",
+    "Arctic Ocean"
+  ],
+  answer: "Indian Ocean",
+  explanation:
+    "India is bordered by the Indian Ocean to the south.",
+  wrongExplanations: {
+    "Pacific Ocean": "East of Asia.",
+    "Atlantic Ocean": "Between Europe/Africa and the Americas.",
+    "Arctic Ocean": "Near the North Pole."
+  },
+  hint:
+    "Named after India."
+},
+
+{
+  category: "Geography",
+  question: "Which is the capital of Canada?",
+  options: [
+    "Toronto",
+    "Vancouver",
+    "Montreal",
+    "Ottawa"
+  ],
+  answer: "Ottawa",
+  explanation:
+    "Ottawa is the capital city of Canada.",
+  wrongExplanations: {
+    "Toronto": "Largest city in Canada.",
+    "Vancouver": "Major west coast city.",
+    "Montreal": "Major city in Quebec."
+  },
+  hint:
+    "Not Toronto."
+},
+{
+  category: "Geography",
+  question: "Which is the largest ocean in the world?",
+  options: [
+    "Indian Ocean",
+    "Atlantic Ocean",
+    "Pacific Ocean",
+    "Arctic Ocean"
+  ],
+  answer: "Pacific Ocean",
+  explanation:
+    "The Pacific Ocean is the largest and deepest ocean on Earth.",
+  wrongExplanations: {
+    "Indian Ocean": "Third largest ocean.",
+    "Atlantic Ocean": "Second largest ocean.",
+    "Arctic Ocean": "Smallest ocean."
+  },
+  hint:
+    "Located between Asia and the Americas."
+},
+
+{
+  category: "Geography",
+  question: "Which river is known as the 'Dakshin Ganga'?",
+  options: [
+    "Krishna",
+    "Godavari",
+    "Kaveri",
+    "Mahanadi"
+  ],
+  answer: "Godavari",
+  explanation:
+    "The Godavari is called the Dakshin Ganga (Ganga of the South) because of its length and importance.",
+  wrongExplanations: {
+    "Krishna": "Major river but not Dakshin Ganga.",
+    "Kaveri": "Important South Indian river.",
+    "Mahanadi": "Primarily flows through Odisha."
+  },
+  hint:
+    "Longest river in Peninsular India."
+},
+
+{
+  category: "Geography",
+  question: "Which latitude passes through the middle of India?",
+  options: [
+    "Equator",
+    "Tropic of Capricorn",
+    "Tropic of Cancer",
+    "Arctic Circle"
+  ],
+  answer: "Tropic of Cancer",
+  explanation:
+    "The Tropic of Cancer passes through the central part of India.",
+  wrongExplanations: {
+    "Equator": "Does not pass through India.",
+    "Tropic of Capricorn": "South of India.",
+    "Arctic Circle": "Far north of India."
+  },
+  hint:
+    "23½° North."
+},
+
+{
+  category: "Geography",
+  question: "Which is the highest mountain peak in the world?",
+  options: [
+    "K2",
+    "Kanchenjunga",
+    "Mount Everest",
+    "Nanga Parbat"
+  ],
+  answer: "Mount Everest",
+  explanation:
+    "Mount Everest is the highest mountain peak above sea level.",
+  wrongExplanations: {
+    "K2": "Second highest peak.",
+    "Kanchenjunga": "Third highest peak.",
+    "Nanga Parbat": "Ninth highest peak."
+  },
+  hint:
+    "Located in the Himalayas."
+},
+
+{
+  category: "Geography",
+  question: "Which Indian state is known as the 'Spice Garden of India'?",
+  options: [
+    "Tamil Nadu",
+    "Kerala",
+    "Karnataka",
+    "Goa"
+  ],
+  answer: "Kerala",
+  explanation:
+    "Kerala is famous for producing a wide variety of spices and is known as the Spice Garden of India.",
+  wrongExplanations: {
+    "Tamil Nadu": "Important agricultural state.",
+    "Karnataka": "Produces spices but not known by this title.",
+    "Goa": "Known more for tourism."
+  },
+  hint:
+    "God's Own Country."
+},
+{
+  category: "Geography",
+  question: "Which is the largest island in the world?",
+  options: [
+    "Greenland",
+    "Australia",
+    "Madagascar",
+    "Borneo"
+  ],
+  answer: "Greenland",
+  explanation:
+    "Greenland is the world's largest island. Australia is classified as a continent.",
+  wrongExplanations: {
+    "Australia": "Considered a continent.",
+    "Madagascar": "Fourth largest island.",
+    "Borneo": "Third largest island."
+  },
+  hint:
+    "Covered largely by ice."
+},
+
+{
+  category: "Geography",
+  question: "Which river is known as the 'Sorrow of Bengal'?",
+  options: [
+    "Damodar",
+    "Hooghly",
+    "Teesta",
+    "Mahananda"
+  ],
+  answer: "Damodar",
+  explanation:
+    "The Damodar River was historically called the 'Sorrow of Bengal' because of its devastating floods.",
+  wrongExplanations: {
+    "Hooghly": "Distributary of the Ganga.",
+    "Teesta": "Important Himalayan river.",
+    "Mahananda": "Tributary of the Ganga."
+  },
+  hint:
+    "Flood-prone river."
+},
+
+{
+  category: "Geography",
+  question: "Which is the deepest ocean in the world?",
+  options: [
+    "Atlantic Ocean",
+    "Indian Ocean",
+    "Arctic Ocean",
+    "Pacific Ocean"
+  ],
+  answer: "Pacific Ocean",
+  explanation:
+    "The Pacific Ocean contains the Mariana Trench, the deepest known point on Earth.",
+  wrongExplanations: {
+    "Atlantic Ocean": "Second deepest.",
+    "Indian Ocean": "Third largest ocean.",
+    "Arctic Ocean": "Shallowest ocean."
+  },
+  hint:
+    "Contains the Mariana Trench."
+},
+
+{
+  category: "Geography",
+  question: "Which Indian state has the longest coastline?",
+  options: [
+    "Tamil Nadu",
+    "Andhra Pradesh",
+    "Gujarat",
+    "Maharashtra"
+  ],
+  answer: "Gujarat",
+  explanation:
+    "Gujarat has the longest coastline among all Indian states.",
+  wrongExplanations: {
+    "Tamil Nadu": "Long coastline but shorter.",
+    "Andhra Pradesh": "Second longest coastline.",
+    "Maharashtra": "Important coastline but not the longest."
+  },
+  hint:
+    "Home of Kutch."
+},
+
+{
+  category: "Geography",
+  question: "Which mountain range separates Europe and Asia?",
+  options: [
+    "Andes",
+    "Alps",
+    "Ural Mountains",
+    "Rockies"
+  ],
+  answer: "Ural Mountains",
+  explanation:
+    "The Ural Mountains form the traditional boundary between Europe and Asia.",
+  wrongExplanations: {
+    "Andes": "Located in South America.",
+    "Alps": "Located in Europe.",
+    "Rockies": "Located in North America."
+  },
+  hint:
+    "Runs through Russia."
+},
+{
+  category: "Geography",
+  question: "Which is the largest freshwater lake in India?",
+  options: [
+    "Wular Lake",
+    "Chilika Lake",
+    "Loktak Lake",
+    "Pulicat Lake"
+  ],
+  answer: "Wular Lake",
+  explanation:
+    "Wular Lake in Jammu and Kashmir is one of the largest freshwater lakes in India.",
+  wrongExplanations: {
+    "Chilika Lake": "Largest brackish water lake in India.",
+    "Loktak Lake": "Largest freshwater lake in Northeast India.",
+    "Pulicat Lake": "Brackish water lake."
+  },
+  hint:
+    "Located in Jammu and Kashmir."
+},
+
+{
+  category: "Geography",
+  question: "Which state is known as the 'Land of Five Rivers'?",
+  options: [
+    "Haryana",
+    "Punjab",
+    "Uttar Pradesh",
+    "Rajasthan"
+  ],
+  answer: "Punjab",
+  explanation:
+    "Punjab derives its name from 'Panj-Ab', meaning five rivers.",
+  wrongExplanations: {
+    "Haryana": "Neighboring state.",
+    "Uttar Pradesh": "Gangetic plain state.",
+    "Rajasthan": "Desert state."
+  },
+  hint:
+    "Panj = Five."
+},
+
+{
+  category: "Geography",
+  question: "Which is the smallest state in India by area?",
+  options: [
+    "Goa",
+    "Sikkim",
+    "Tripura",
+    "Mizoram"
+  ],
+  answer: "Goa",
+  explanation:
+    "Goa is the smallest Indian state by area.",
+  wrongExplanations: {
+    "Sikkim": "Second smallest.",
+    "Tripura": "Larger than Goa.",
+    "Mizoram": "Much larger than Goa."
+  },
+  hint:
+    "Famous for beaches."
+},
+
+{
+  category: "Geography",
+  question: "Which plateau is known as the 'Roof of the World'?",
+  options: [
+    "Deccan Plateau",
+    "Tibetan Plateau",
+    "Iranian Plateau",
+    "Mongolian Plateau"
+  ],
+  answer: "Tibetan Plateau",
+  explanation:
+    "The Tibetan Plateau is known as the Roof of the World because of its high elevation.",
+  wrongExplanations: {
+    "Deccan Plateau": "Located in India.",
+    "Iranian Plateau": "Located in Iran region.",
+    "Mongolian Plateau": "Located in Mongolia."
+  },
+  hint:
+    "Near the Himalayas."
+},
+
+{
+  category: "Geography",
+  question: "Which river forms the famous Jog Falls?",
+  options: [
+    "Godavari",
+    "Krishna",
+    "Sharavathi",
+    "Kaveri"
+  ],
+  answer: "Sharavathi",
+  explanation:
+    "Jog Falls in Karnataka is formed by the Sharavathi River.",
+  wrongExplanations: {
+    "Godavari": "Major peninsular river.",
+    "Krishna": "Flows through several states.",
+    "Kaveri": "Forms Shivanasamudra Falls."
+  },
+  hint:
+    "Karnataka waterfall."
+},
+{
     category: "Mizoram GK",
     question: "What is the capital of Mizoram?",
     options: ["Silchar", "Aizawl", "Shillong", "Imphal"],
@@ -2644,6 +4620,214 @@ const questions = [
     "Takes business risks."
 },
 {
+  category: "Economics",
+  question: "What is meant by fiscal deficit?",
+  options: [
+    "Excess of government expenditure over revenue",
+    "Increase in exports",
+    "Decrease in population",
+    "Increase in tax collection"
+  ],
+  answer: "Excess of government expenditure over revenue",
+  explanation:
+    "Fiscal deficit occurs when the government's total expenditure exceeds its total revenue excluding borrowings.",
+  wrongExplanations: {
+    "Increase in exports": "Related to trade.",
+    "Decrease in population": "Demographic issue.",
+    "Increase in tax collection": "Can reduce fiscal deficit."
+  },
+  hint:
+    "Government spending vs income."
+},
+
+{
+  category: "Economics",
+  question: "Which institution regulates the stock market in India?",
+  options: [
+    "RBI",
+    "SEBI",
+    "NITI Aayog",
+    "NABARD"
+  ],
+  answer: "SEBI",
+  explanation:
+    "SEBI regulates and develops the securities market in India.",
+  wrongExplanations: {
+    "RBI": "Central bank.",
+    "NITI Aayog": "Policy think tank.",
+    "NABARD": "Rural development bank."
+  },
+  hint:
+    "Securities and Exchange Board."
+},
+
+{
+  category: "Economics",
+  question: "Which type of unemployment is common in agriculture in India?",
+  options: [
+    "Seasonal Unemployment",
+    "Structural Unemployment",
+    "Technological Unemployment",
+    "Frictional Unemployment"
+  ],
+  answer: "Seasonal Unemployment",
+  explanation:
+    "Agricultural workers often find employment only during specific farming seasons.",
+  wrongExplanations: {
+    "Structural Unemployment": "Due to economic changes.",
+    "Technological Unemployment": "Caused by machines replacing workers.",
+    "Frictional Unemployment": "Temporary job transition."
+  },
+  hint:
+    "Depends on farming seasons."
+},
+
+{
+  category: "Economics",
+  question: "What does per capita income mean?",
+  options: [
+    "Income of the richest citizen",
+    "Total national income divided by population",
+    "Government revenue per year",
+    "Income from exports"
+  ],
+  answer: "Total national income divided by population",
+  explanation:
+    "Per capita income is calculated by dividing national income by total population.",
+  wrongExplanations: {
+    "Income of the richest citizen": "Not per capita income.",
+    "Government revenue per year": "Different concept.",
+    "Income from exports": "Trade-related measure."
+  },
+  hint:
+    "Average income."
+},
+
+{
+  category: "Economics",
+  question: "Which economic sector is known as the primary sector?",
+  options: [
+    "Agriculture",
+    "Manufacturing",
+    "Banking",
+    "Information Technology"
+  ],
+  answer: "Agriculture",
+  explanation:
+    "The primary sector involves extraction and use of natural resources, including agriculture.",
+  wrongExplanations: {
+    "Manufacturing": "Secondary sector.",
+    "Banking": "Tertiary sector.",
+    "Information Technology": "Tertiary sector."
+  },
+  hint:
+    "Farming and natural resources."
+},
+{
+  category: "Economics",
+  question: "What is the full form of RBI?",
+  options: [
+    "Reserve Bank of India",
+    "Regional Bank of India",
+    "Revenue Bank of India",
+    "Reserve Bureau of India"
+  ],
+  answer: "Reserve Bank of India",
+  explanation:
+    "The RBI is the central bank of India and manages monetary policy.",
+  wrongExplanations: {
+    "Regional Bank of India": "Incorrect expansion.",
+    "Revenue Bank of India": "Incorrect expansion.",
+    "Reserve Bureau of India": "Incorrect expansion."
+  },
+  hint:
+    "India's central bank."
+},
+
+{
+  category: "Economics",
+  question: "Which of the following is a direct tax?",
+  options: [
+    "GST",
+    "Customs Duty",
+    "Income Tax",
+    "Excise Duty"
+  ],
+  answer: "Income Tax",
+  explanation:
+    "Income Tax is paid directly by individuals and organizations to the government.",
+  wrongExplanations: {
+    "GST": "Indirect tax.",
+    "Customs Duty": "Indirect tax.",
+    "Excise Duty": "Indirect tax."
+  },
+  hint:
+    "Paid on earnings."
+},
+
+{
+  category: "Economics",
+  question: "What does CPI stand for in economics?",
+  options: [
+    "Consumer Price Index",
+    "Central Price Index",
+    "Consumer Product Indicator",
+    "Cost Price Indicator"
+  ],
+  answer: "Consumer Price Index",
+  explanation:
+    "CPI measures changes in the average prices paid by consumers for goods and services.",
+  wrongExplanations: {
+    "Central Price Index": "Incorrect expansion.",
+    "Consumer Product Indicator": "Incorrect expansion.",
+    "Cost Price Indicator": "Incorrect expansion."
+  },
+  hint:
+    "Used to measure inflation."
+},
+
+{
+  category: "Economics",
+  question: "Which institution prepares India's National Income estimates?",
+  options: [
+    "RBI",
+    "NITI Aayog",
+    "NSO",
+    "SEBI"
+  ],
+  answer: "NSO",
+  explanation:
+    "The National Statistical Office (NSO) prepares India's National Income estimates.",
+  wrongExplanations: {
+    "RBI": "Central bank.",
+    "NITI Aayog": "Policy think tank.",
+    "SEBI": "Market regulator."
+  },
+  hint:
+    "Statistical agency."
+},
+
+{
+  category: "Economics",
+  question: "Demand generally decreases when:",
+  options: [
+    "Price decreases",
+    "Income increases",
+    "Price increases",
+    "Supply decreases"
+  ],
+  answer: "Price increases",
+  explanation:
+    "According to the law of demand, demand generally falls when price rises, all else remaining constant.",
+  wrongExplanations: {
+    "Price decreases": "Usually increases demand.",
+    "Income increases": "Often increases demand.",
+    "Supply decreases": "Not the law of demand."
+  },
+  hint:
+    "Law of Demand."
+},
+{
     category: "Polity",
     question: "Who appoints the Prime Minister of India?",
     options: [
@@ -2662,6 +4846,630 @@ const questions = [
     },
     hint: "Think about the constitutional head of India.",
   },
+{
+  category: "Polity",
+  question: "Who is the constitutional head of India?",
+  options: [
+    "Prime Minister",
+    "President",
+    "Vice-President",
+    "Chief Justice"
+  ],
+  answer: "President",
+  explanation:
+    "The President is the constitutional head of the Republic of India.",
+  wrongExplanations: {
+    "Prime Minister": "Head of Government.",
+    "Vice-President": "Second highest constitutional office.",
+    "Chief Justice": "Head of Judiciary."
+  },
+  hint:
+    "Head of State."
+},
+
+{
+  category: "Polity",
+  question: "How many Houses are there in the Parliament of India?",
+  options: [
+    "One",
+    "Two",
+    "Three",
+    "Four"
+  ],
+  answer: "Two",
+  explanation:
+    "Parliament consists of Lok Sabha and Rajya Sabha.",
+  wrongExplanations: {
+    "One": "India has a bicameral legislature.",
+    "Three": "Incorrect.",
+    "Four": "Incorrect."
+  },
+  hint:
+    "Lok Sabha + Rajya Sabha."
+},
+
+{
+  category: "Polity",
+  question: "Which House of Parliament is known as the Lower House?",
+  options: [
+    "Rajya Sabha",
+    "Lok Sabha",
+    "Legislative Council",
+    "Vidhan Parishad"
+  ],
+  answer: "Lok Sabha",
+  explanation:
+    "The Lok Sabha is known as the Lower House of Parliament.",
+  wrongExplanations: {
+    "Rajya Sabha": "Upper House.",
+    "Legislative Council": "State-level body.",
+    "Vidhan Parishad": "State-level Upper House."
+  },
+  hint:
+    "House of the People."
+},
+
+{
+  category: "Polity",
+  question: "What is the maximum strength of the Lok Sabha?",
+  options: [
+    "545",
+    "552",
+    "500",
+    "600"
+  ],
+  answer: "552",
+  explanation:
+    "The Constitution provides a maximum strength of 552 members for the Lok Sabha.",
+  wrongExplanations: {
+    "545": "Current commonly cited strength.",
+    "500": "Incorrect.",
+    "600": "Incorrect."
+  },
+  hint:
+    "Constitutional maximum."
+},
+
+{
+  category: "Polity",
+  question: "Who is known as the guardian of the Constitution?",
+  options: [
+    "President",
+    "Prime Minister",
+    "Supreme Court",
+    "Parliament"
+  ],
+  answer: "Supreme Court",
+  explanation:
+    "The Supreme Court protects and interprets the Constitution.",
+  wrongExplanations: {
+    "President": "Constitutional Head.",
+    "Prime Minister": "Head of Government.",
+    "Parliament": "Makes laws."
+  },
+  hint:
+    "Highest court of India."
+},
+  {
+  category: "Polity",
+  question: "The Rajya Sabha is also known as:",
+  options: [
+    "House of the People",
+    "Council of States",
+    "Legislative Assembly",
+    "National Assembly"
+  ],
+  answer: "Council of States",
+  explanation:
+    "Rajya Sabha represents the states of India and is officially known as the Council of States.",
+  wrongExplanations: {
+    "House of the People": "Lok Sabha.",
+    "Legislative Assembly": "State legislature.",
+    "National Assembly": "Not used in India."
+  },
+  hint:
+    "Upper House of Parliament."
+},
+
+{
+  category: "Polity",
+  question: "Who presides over the Rajya Sabha?",
+  options: [
+    "President",
+    "Prime Minister",
+    "Vice-President",
+    "Speaker"
+  ],
+  answer: "Vice-President",
+  explanation:
+    "The Vice-President of India is the ex-officio Chairman of the Rajya Sabha.",
+  wrongExplanations: {
+    "President": "Head of State.",
+    "Prime Minister": "Head of Government.",
+    "Speaker": "Presides over Lok Sabha."
+  },
+  hint:
+    "Second highest constitutional office."
+},
+
+{
+  category: "Polity",
+  question: "The minimum age to become a member of the Lok Sabha is:",
+  options: [
+    "21 years",
+    "25 years",
+    "30 years",
+    "35 years"
+  ],
+  answer: "25 years",
+  explanation:
+    "A person must be at least 25 years old to contest for the Lok Sabha.",
+  wrongExplanations: {
+    "21 years": "Too low.",
+    "30 years": "Required for Rajya Sabha.",
+    "35 years": "Required for President."
+  },
+  hint:
+    "Young MPs can enter at this age."
+},
+
+{
+  category: "Polity",
+  question: "The minimum age to become a member of the Rajya Sabha is:",
+  options: [
+    "25 years",
+    "30 years",
+    "35 years",
+    "40 years"
+  ],
+  answer: "30 years",
+  explanation:
+    "A person must be at least 30 years old to become a member of the Rajya Sabha.",
+  wrongExplanations: {
+    "25 years": "Lok Sabha age.",
+    "35 years": "President's minimum age.",
+    "40 years": "Incorrect."
+  },
+  hint:
+    "Upper House requirement."
+},
+
+{
+  category: "Polity",
+  question: "Who appoints the Governor of a State?",
+  options: [
+    "Chief Minister",
+    "President",
+    "Prime Minister",
+    "Chief Justice of India"
+  ],
+  answer: "President",
+  explanation:
+    "The Governor of a State is appointed by the President of India.",
+  wrongExplanations: {
+    "Chief Minister": "Head of State Government.",
+    "Prime Minister": "Advises the President.",
+    "Chief Justice of India": "Head of Judiciary."
+  },
+  hint:
+    "Appointed by the Union."
+},
+{
+  category: "Polity",
+  question: "Which Fundamental Right is known as the 'Heart and Soul' of the Constitution?",
+  options: [
+    "Article 14",
+    "Article 19",
+    "Article 21",
+    "Article 32"
+  ],
+  answer: "Article 32",
+  explanation:
+    "Dr. B.R. Ambedkar described Article 32 as the Heart and Soul of the Constitution because it provides the Right to Constitutional Remedies.",
+  wrongExplanations: {
+    "Article 14": "Right to Equality.",
+    "Article 19": "Freedom Rights.",
+    "Article 21": "Right to Life and Personal Liberty."
+  },
+  hint:
+    "Ambedkar's favourite Article."
+},
+
+{
+  category: "Polity",
+  question: "Fundamental Duties were added to the Constitution by which Amendment?",
+  options: [
+    "24th Amendment",
+    "42nd Amendment",
+    "44th Amendment",
+    "52nd Amendment"
+  ],
+  answer: "42nd Amendment",
+  explanation:
+    "The 42nd Constitutional Amendment Act, 1976 added Fundamental Duties.",
+  wrongExplanations: {
+    "24th Amendment": "Related to Parliament's amendment power.",
+    "44th Amendment": "Removed Right to Property as a Fundamental Right.",
+    "52nd Amendment": "Anti-Defection Law."
+  },
+  hint:
+    "Often called the Mini Constitution."
+},
+
+{
+  category: "Polity",
+  question: "How many Fundamental Duties are currently mentioned in the Constitution?",
+  options: [
+    "10",
+    "11",
+    "12",
+    "13"
+  ],
+  answer: "11",
+  explanation:
+    "There are currently 11 Fundamental Duties under Article 51A.",
+  wrongExplanations: {
+    "10": "Original number before 86th Amendment.",
+    "12": "Incorrect.",
+    "13": "Incorrect."
+  },
+  hint:
+    "One duty was added later."
+},
+
+{
+  category: "Polity",
+  question: "Which Constitutional Amendment lowered the voting age from 21 to 18 years?",
+  options: [
+    "42nd Amendment",
+    "44th Amendment",
+    "61st Amendment",
+    "73rd Amendment"
+  ],
+  answer: "61st Amendment",
+  explanation:
+    "The 61st Constitutional Amendment Act, 1988 reduced the voting age from 21 to 18 years.",
+  wrongExplanations: {
+    "42nd Amendment": "Fundamental Duties.",
+    "44th Amendment": "Emergency provisions reforms.",
+    "73rd Amendment": "Panchayati Raj."
+  },
+  hint:
+    "Youth voting rights."
+},
+
+{
+  category: "Polity",
+  question: "Which Article guarantees Equality before Law?",
+  options: [
+    "Article 14",
+    "Article 15",
+    "Article 16",
+    "Article 17"
+  ],
+  answer: "Article 14",
+  explanation:
+    "Article 14 guarantees Equality before Law and Equal Protection of Laws.",
+  wrongExplanations: {
+    "Article 15": "Prohibition of discrimination.",
+    "Article 16": "Equality in public employment.",
+    "Article 17": "Abolition of untouchability."
+  },
+  hint:
+    "First Article under Right to Equality."
+},
+{
+  category: "Polity",
+  question: "Who is the Supreme Commander of the Defence Forces of India?",
+  options: [
+    "Prime Minister",
+    "Defence Minister",
+    "President",
+    "Chief of Defence Staff"
+  ],
+  answer: "President",
+  explanation:
+    "The President of India is the Supreme Commander of the Armed Forces.",
+  wrongExplanations: {
+    "Prime Minister": "Head of Government.",
+    "Defence Minister": "Political head of Defence Ministry.",
+    "Chief of Defence Staff": "Military officer."
+  },
+  hint:
+    "Head of State."
+},
+
+{
+  category: "Polity",
+  question: "Which Article deals with National Emergency?",
+  options: [
+    "Article 352",
+    "Article 356",
+    "Article 360",
+    "Article 370"
+  ],
+  answer: "Article 352",
+  explanation:
+    "Article 352 provides for the proclamation of National Emergency.",
+  wrongExplanations: {
+    "Article 356": "President's Rule in States.",
+    "Article 360": "Financial Emergency.",
+    "Article 370": "Special status provision."
+  },
+  hint:
+    "War, external aggression or armed rebellion."
+},
+
+{
+  category: "Polity",
+  question: "The Panchayati Raj system was given constitutional status by which Amendment?",
+  options: [
+    "42nd Amendment",
+    "61st Amendment",
+    "73rd Amendment",
+    "74th Amendment"
+  ],
+  answer: "73rd Amendment",
+  explanation:
+    "The 73rd Constitutional Amendment Act, 1992 gave constitutional status to Panchayati Raj Institutions.",
+  wrongExplanations: {
+    "42nd Amendment": "Fundamental Duties.",
+    "61st Amendment": "Voting age reduced to 18.",
+    "74th Amendment": "Urban Local Bodies."
+  },
+  hint:
+    "Rural local government."
+},
+
+{
+  category: "Polity",
+  question: "Who presides over a joint sitting of Parliament?",
+  options: [
+    "President",
+    "Vice-President",
+    "Speaker of Lok Sabha",
+    "Chief Justice of India"
+  ],
+  answer: "Speaker of Lok Sabha",
+  explanation:
+    "A joint sitting of Parliament is presided over by the Speaker of the Lok Sabha.",
+  wrongExplanations: {
+    "President": "Summons Parliament but does not preside.",
+    "Vice-President": "Chairman of Rajya Sabha.",
+    "Chief Justice of India": "Head of Judiciary."
+  },
+  hint:
+    "Presiding officer of the Lower House."
+},
+
+{
+  category: "Polity",
+  question: "Which constitutional amendment is known as the 'Mini Constitution'?",
+  options: [
+    "42nd Amendment",
+    "44th Amendment",
+    "52nd Amendment",
+    "61st Amendment"
+  ],
+  answer: "42nd Amendment",
+  explanation:
+    "The 42nd Amendment Act made extensive changes to the Constitution and is known as the Mini Constitution.",
+  wrongExplanations: {
+    "44th Amendment": "Reversed some Emergency-era provisions.",
+    "52nd Amendment": "Anti-Defection Law.",
+    "61st Amendment": "Voting age reduced."
+  },
+  hint:
+    "Passed during the Emergency period."
+},
+{
+  category: "Polity",
+  question: "Which Article of the Constitution deals with President's Rule in a State?",
+  options: [
+    "Article 352",
+    "Article 356",
+    "Article 360",
+    "Article 368"
+  ],
+  answer: "Article 356",
+  explanation:
+    "Article 356 provides for President's Rule when the constitutional machinery of a State fails.",
+  wrongExplanations: {
+    "Article 352": "National Emergency.",
+    "Article 360": "Financial Emergency.",
+    "Article 368": "Constitutional Amendment."
+  },
+  hint:
+    "State Emergency."
+},
+
+{
+  category: "Polity",
+  question: "Which Article provides for Financial Emergency in India?",
+  options: [
+    "Article 352",
+    "Article 356",
+    "Article 360",
+    "Article 370"
+  ],
+  answer: "Article 360",
+  explanation:
+    "Article 360 empowers the President to proclaim a Financial Emergency.",
+  wrongExplanations: {
+    "Article 352": "National Emergency.",
+    "Article 356": "President's Rule.",
+    "Article 370": "Former special provision."
+  },
+  hint:
+    "Financial crisis provision."
+},
+
+{
+  category: "Polity",
+  question: "A Money Bill can be introduced only in:",
+  options: [
+    "Rajya Sabha",
+    "Lok Sabha",
+    "Either House",
+    "Joint Sitting"
+  ],
+  answer: "Lok Sabha",
+  explanation:
+    "A Money Bill can be introduced only in the Lok Sabha with prior recommendation of the President.",
+  wrongExplanations: {
+    "Rajya Sabha": "Cannot introduce Money Bills.",
+    "Either House": "Incorrect.",
+    "Joint Sitting": "Not applicable."
+  },
+  hint:
+    "Lower House."
+},
+
+{
+  category: "Polity",
+  question: "Who is the chief legal advisor to the Government of India?",
+  options: [
+    "Chief Justice of India",
+    "Solicitor General",
+    "Attorney General of India",
+    "Law Minister"
+  ],
+  answer: "Attorney General of India",
+  explanation:
+    "The Attorney General is the highest law officer of the Government of India.",
+  wrongExplanations: {
+    "Chief Justice of India": "Head of Judiciary.",
+    "Solicitor General": "Assists the Attorney General.",
+    "Law Minister": "Political executive."
+  },
+  hint:
+    "Highest law officer."
+},
+
+{
+  category: "Polity",
+  question: "How many Election Commissioners are there in the Election Commission of India including the Chief Election Commissioner?",
+  options: [
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  answer: "3",
+  explanation:
+    "The Election Commission currently consists of the Chief Election Commissioner and two Election Commissioners.",
+  wrongExplanations: {
+    "2": "Too few.",
+    "4": "Incorrect.",
+    "5": "Incorrect."
+  },
+  hint:
+    "CEC + two others."
+},
+{
+  category: "Polity",
+  question: "Which writ means 'to have the body'?",
+  options: [
+    "Mandamus",
+    "Habeas Corpus",
+    "Certiorari",
+    "Quo Warranto"
+  ],
+  answer: "Habeas Corpus",
+  explanation:
+    "Habeas Corpus protects personal liberty by requiring a detained person to be produced before the court.",
+  wrongExplanations: {
+    "Mandamus": "Means command issued by a court.",
+    "Certiorari": "Issued to transfer or quash a case.",
+    "Quo Warranto": "Questions the legality of holding public office."
+  },
+  hint:
+    "Protection against illegal detention."
+},
+
+{
+  category: "Polity",
+  question: "Which writ is issued by a court to command a public authority to perform its duty?",
+  options: [
+    "Mandamus",
+    "Habeas Corpus",
+    "Prohibition",
+    "Quo Warranto"
+  ],
+  answer: "Mandamus",
+  explanation:
+    "Mandamus means 'we command' and is issued to direct a public authority to perform a legal duty.",
+  wrongExplanations: {
+    "Habeas Corpus": "Protects personal liberty.",
+    "Prohibition": "Stops a lower court from exceeding jurisdiction.",
+    "Quo Warranto": "Questions legal authority to hold office."
+  },
+  hint:
+    "Court command."
+},
+
+{
+  category: "Polity",
+  question: "Which court is the highest court of appeal in India?",
+  options: [
+    "High Court",
+    "District Court",
+    "Supreme Court",
+    "Sessions Court"
+  ],
+  answer: "Supreme Court",
+  explanation:
+    "The Supreme Court of India is the highest court of appeal and the guardian of the Constitution.",
+  wrongExplanations: {
+    "High Court": "Highest court at the state level.",
+    "District Court": "Lower judiciary.",
+    "Sessions Court": "Criminal court at district level."
+  },
+  hint:
+    "Apex court."
+},
+
+{
+  category: "Polity",
+  question: "Who appoints the Chief Justice of India?",
+  options: [
+    "Prime Minister",
+    "President",
+    "Lok Sabha Speaker",
+    "Vice-President"
+  ],
+  answer: "President",
+  explanation:
+    "The Chief Justice of India is appointed by the President of India.",
+  wrongExplanations: {
+    "Prime Minister": "Advises but does not formally appoint.",
+    "Lok Sabha Speaker": "Presides over Lok Sabha.",
+    "Vice-President": "Chairman of Rajya Sabha."
+  },
+  hint:
+    "Constitutional head appoints."
+},
+
+{
+  category: "Polity",
+  question: "Which court has original jurisdiction over disputes between the Union and States?",
+  options: [
+    "District Court",
+    "High Court",
+    "Supreme Court",
+    "Consumer Court"
+  ],
+  answer: "Supreme Court",
+  explanation:
+    "The Supreme Court has original jurisdiction in disputes between the Union and States or between States.",
+  wrongExplanations: {
+    "District Court": "Local court.",
+    "High Court": "State-level highest court.",
+    "Consumer Court": "Deals with consumer disputes."
+  },
+  hint:
+    "Federal disputes."
+},
 {
   category: "Indian Polity",
   question: "Who appoints the Governor of a State in India?",
@@ -3453,6 +6261,630 @@ const questions = [
     "The sunshine vitamin."
 },
 {
+  category: "Science",
+  question: "Which gas is most abundant in the Earth's atmosphere?",
+  options: [
+    "Oxygen",
+    "Carbon Dioxide",
+    "Nitrogen",
+    "Hydrogen"
+  ],
+  answer: "Nitrogen",
+  explanation:
+    "Nitrogen makes up about 78% of the Earth's atmosphere.",
+  wrongExplanations: {
+    "Oxygen": "Makes up about 21% of the atmosphere.",
+    "Carbon Dioxide": "Present in a very small amount.",
+    "Hydrogen": "Not abundant in the atmosphere."
+  },
+  hint:
+    "About 78%."
+},
+
+{
+  category: "Science",
+  question: "Which part of the human body is known as the 'powerhouse of the cell'?",
+  options: [
+    "Nucleus",
+    "Mitochondria",
+    "Ribosome",
+    "Cytoplasm"
+  ],
+  answer: "Mitochondria",
+  explanation:
+    "Mitochondria produce energy (ATP) for the cell.",
+  wrongExplanations: {
+    "Nucleus": "Controls cell activities.",
+    "Ribosome": "Produces proteins.",
+    "Cytoplasm": "Jelly-like substance inside the cell."
+  },
+  hint:
+    "Produces energy."
+},
+
+{
+  category: "Science",
+  question: "What is the chemical formula of water?",
+  options: [
+    "CO₂",
+    "H₂O",
+    "O₂",
+    "NaCl"
+  ],
+  answer: "H₂O",
+  explanation:
+    "Water consists of two hydrogen atoms and one oxygen atom.",
+  wrongExplanations: {
+    "CO₂": "Carbon dioxide.",
+    "O₂": "Oxygen gas.",
+    "NaCl": "Common salt."
+  },
+  hint:
+    "Two hydrogen, one oxygen."
+},
+
+{
+  category: "Science",
+  question: "Which organ purifies blood in the human body?",
+  options: [
+    "Heart",
+    "Kidney",
+    "Lungs",
+    "Stomach"
+  ],
+  answer: "Kidney",
+  explanation:
+    "The kidneys filter waste products and excess fluids from the blood.",
+  wrongExplanations: {
+    "Heart": "Pumps blood.",
+    "Lungs": "Exchange gases.",
+    "Stomach": "Digests food."
+  },
+  hint:
+    "Produces urine."
+},
+
+{
+  category: "Science",
+  question: "Which force keeps planets in orbit around the Sun?",
+  options: [
+    "Magnetic Force",
+    "Nuclear Force",
+    "Gravitational Force",
+    "Frictional Force"
+  ],
+  answer: "Gravitational Force",
+  explanation:
+    "Gravity keeps planets moving around the Sun in their orbits.",
+  wrongExplanations: {
+    "Magnetic Force": "Not responsible for planetary orbits.",
+    "Nuclear Force": "Acts within atomic nuclei.",
+    "Frictional Force": "Not relevant in space."
+  },
+  hint:
+    "Discovered by Newton."
+},
+{
+  category: "Science",
+  question: "Which vitamin is produced in the skin when exposed to sunlight?",
+  options: [
+    "Vitamin A",
+    "Vitamin B12",
+    "Vitamin C",
+    "Vitamin D"
+  ],
+  answer: "Vitamin D",
+  explanation:
+    "The skin produces Vitamin D when exposed to sunlight.",
+  wrongExplanations: {
+    "Vitamin A": "Important for vision.",
+    "Vitamin B12": "Important for nerves and blood cells.",
+    "Vitamin C": "Important for immunity and wound healing."
+  },
+  hint:
+    "The sunshine vitamin."
+},
+
+{
+  category: "Science",
+  question: "Which metal is liquid at room temperature?",
+  options: [
+    "Iron",
+    "Mercury",
+    "Copper",
+    "Aluminium"
+  ],
+  answer: "Mercury",
+  explanation:
+    "Mercury is the only common metal that remains liquid at room temperature.",
+  wrongExplanations: {
+    "Iron": "Solid at room temperature.",
+    "Copper": "Solid metal.",
+    "Aluminium": "Solid metal."
+  },
+  hint:
+    "Used in traditional thermometers."
+},
+
+{
+  category: "Science",
+  question: "Which blood cells help fight infections?",
+  options: [
+    "Red Blood Cells",
+    "White Blood Cells",
+    "Platelets",
+    "Plasma"
+  ],
+  answer: "White Blood Cells",
+  explanation:
+    "White Blood Cells (WBCs) protect the body against infections and diseases.",
+  wrongExplanations: {
+    "Red Blood Cells": "Carry oxygen.",
+    "Platelets": "Help blood clot.",
+    "Plasma": "Liquid component of blood."
+  },
+  hint:
+    "Body's defense system."
+},
+
+{
+  category: "Science",
+  question: "What is the SI unit of force?",
+  options: [
+    "Joule",
+    "Newton",
+    "Watt",
+    "Pascal"
+  ],
+  answer: "Newton",
+  explanation:
+    "The SI unit of force is the Newton (N), named after Isaac Newton.",
+  wrongExplanations: {
+    "Joule": "Unit of energy.",
+    "Watt": "Unit of power.",
+    "Pascal": "Unit of pressure."
+  },
+  hint:
+    "Named after a scientist."
+},
+
+{
+  category: "Science",
+  question: "Which planet is known as the Red Planet?",
+  options: [
+    "Venus",
+    "Mars",
+    "Jupiter",
+    "Mercury"
+  ],
+  answer: "Mars",
+  explanation:
+    "Mars is called the Red Planet because of iron oxide on its surface.",
+  wrongExplanations: {
+    "Venus": "Known for its thick atmosphere.",
+    "Jupiter": "Largest planet.",
+    "Mercury": "Closest planet to the Sun."
+  },
+  hint:
+    "Target of many space missions."
+},
+{
+  category: "Science",
+  question: "Which gas is essential for photosynthesis?",
+  options: [
+    "Oxygen",
+    "Nitrogen",
+    "Carbon Dioxide",
+    "Hydrogen"
+  ],
+  answer: "Carbon Dioxide",
+  explanation:
+    "Plants use carbon dioxide along with water and sunlight to produce food through photosynthesis.",
+  wrongExplanations: {
+    "Oxygen": "Released during photosynthesis.",
+    "Nitrogen": "Important for plant growth but not directly used in photosynthesis.",
+    "Hydrogen": "Not taken directly from the atmosphere for photosynthesis."
+  },
+  hint:
+    "Plants absorb it from the air."
+},
+
+{
+  category: "Science",
+  question: "Which planet is closest to the Sun?",
+  options: [
+    "Venus",
+    "Earth",
+    "Mercury",
+    "Mars"
+  ],
+  answer: "Mercury",
+  explanation:
+    "Mercury is the closest planet to the Sun in our Solar System.",
+  wrongExplanations: {
+    "Venus": "Second planet from the Sun.",
+    "Earth": "Third planet from the Sun.",
+    "Mars": "Fourth planet from the Sun."
+  },
+  hint:
+    "Smallest planet in the Solar System."
+},
+
+{
+  category: "Science",
+  question: "Which organ in the human body pumps blood?",
+  options: [
+    "Liver",
+    "Brain",
+    "Heart",
+    "Kidney"
+  ],
+  answer: "Heart",
+  explanation:
+    "The heart pumps blood throughout the body via the circulatory system.",
+  wrongExplanations: {
+    "Liver": "Processes nutrients and detoxifies substances.",
+    "Brain": "Controls body functions.",
+    "Kidney": "Filters blood."
+  },
+  hint:
+    "Beats continuously."
+},
+
+{
+  category: "Science",
+  question: "What is the boiling point of water at sea level?",
+  options: [
+    "90°C",
+    "95°C",
+    "100°C",
+    "110°C"
+  ],
+  answer: "100°C",
+  explanation:
+    "Pure water boils at 100°C under standard atmospheric pressure.",
+  wrongExplanations: {
+    "90°C": "Too low.",
+    "95°C": "Below the standard boiling point.",
+    "110°C": "Above the standard boiling point."
+  },
+  hint:
+    "A basic science fact."
+},
+
+{
+  category: "Science",
+  question: "Which scientist formulated the law of gravitation?",
+  options: [
+    "Albert Einstein",
+    "Galileo Galilei",
+    "Isaac Newton",
+    "Nikola Tesla"
+  ],
+  answer: "Isaac Newton",
+  explanation:
+    "Isaac Newton formulated the universal law of gravitation.",
+  wrongExplanations: {
+    "Albert Einstein": "Developed the theory of relativity.",
+    "Galileo Galilei": "Made important observations about motion.",
+    "Nikola Tesla": "Known for electrical innovations."
+  },
+  hint:
+    "The apple story."
+},
+{
+  category: "Science",
+  question: "Which blood group is known as the universal donor?",
+  options: [
+    "A",
+    "B",
+    "AB",
+    "O Negative"
+  ],
+  answer: "O Negative",
+  explanation:
+    "O Negative blood can be transfused to patients of all blood groups in emergencies.",
+  wrongExplanations: {
+    "A": "Not universal donor.",
+    "B": "Not universal donor.",
+    "AB": "Universal recipient, not donor."
+  },
+  hint:
+    "Emergency blood type."
+},
+
+{
+  category: "Science",
+  question: "Which planet is known for its prominent rings?",
+  options: [
+    "Mars",
+    "Saturn",
+    "Mercury",
+    "Venus"
+  ],
+  answer: "Saturn",
+  explanation:
+    "Saturn is famous for its spectacular ring system.",
+  wrongExplanations: {
+    "Mars": "Known as the Red Planet.",
+    "Mercury": "Closest to the Sun.",
+    "Venus": "Known as Earth's twin."
+  },
+  hint:
+    "The ringed planet."
+},
+
+{
+  category: "Science",
+  question: "Which vitamin helps in blood clotting?",
+  options: [
+    "Vitamin A",
+    "Vitamin C",
+    "Vitamin D",
+    "Vitamin K"
+  ],
+  answer: "Vitamin K",
+  explanation:
+    "Vitamin K plays an essential role in blood clotting.",
+  wrongExplanations: {
+    "Vitamin A": "Important for vision.",
+    "Vitamin C": "Important for immunity.",
+    "Vitamin D": "Important for bones."
+  },
+  hint:
+    "Important after injuries."
+},
+
+{
+  category: "Science",
+  question: "What is the SI unit of electric current?",
+  options: [
+    "Volt",
+    "Ampere",
+    "Ohm",
+    "Watt"
+  ],
+  answer: "Ampere",
+  explanation:
+    "The Ampere (A) is the SI unit of electric current.",
+  wrongExplanations: {
+    "Volt": "Unit of voltage.",
+    "Ohm": "Unit of resistance.",
+    "Watt": "Unit of power."
+  },
+  hint:
+    "Named after André-Marie Ampère."
+},
+
+{
+  category: "Science",
+  question: "Which organ produces insulin in the human body?",
+  options: [
+    "Liver",
+    "Kidney",
+    "Pancreas",
+    "Heart"
+  ],
+  answer: "Pancreas",
+  explanation:
+    "The pancreas produces insulin, which helps regulate blood sugar levels.",
+  wrongExplanations: {
+    "Liver": "Performs metabolic functions.",
+    "Kidney": "Filters blood.",
+    "Heart": "Pumps blood."
+  },
+  hint:
+    "Associated with diabetes."
+},
+{
+  category: "Science",
+  question: "Which gas is commonly known as laughing gas?",
+  options: [
+    "Nitrogen",
+    "Nitrous Oxide",
+    "Carbon Monoxide",
+    "Methane"
+  ],
+  answer: "Nitrous Oxide",
+  explanation:
+    "Nitrous Oxide (N₂O) is commonly known as laughing gas and is used as an anesthetic.",
+  wrongExplanations: {
+    "Nitrogen": "Major component of air.",
+    "Carbon Monoxide": "Poisonous gas.",
+    "Methane": "Fuel gas."
+  },
+  hint:
+    "Used in dentistry."
+},
+
+{
+  category: "Science",
+  question: "Which planet is called the Earth's twin?",
+  options: [
+    "Mars",
+    "Venus",
+    "Mercury",
+    "Jupiter"
+  ],
+  answer: "Venus",
+  explanation:
+    "Venus is often called Earth's twin because of its similar size and mass.",
+  wrongExplanations: {
+    "Mars": "Red Planet.",
+    "Mercury": "Closest to the Sun.",
+    "Jupiter": "Largest planet."
+  },
+  hint:
+    "Second planet from the Sun."
+},
+
+{
+  category: "Science",
+  question: "Which instrument is used to measure atmospheric pressure?",
+  options: [
+    "Thermometer",
+    "Barometer",
+    "Hygrometer",
+    "Ammeter"
+  ],
+  answer: "Barometer",
+  explanation:
+    "A barometer is used to measure atmospheric pressure.",
+  wrongExplanations: {
+    "Thermometer": "Measures temperature.",
+    "Hygrometer": "Measures humidity.",
+    "Ammeter": "Measures electric current."
+  },
+  hint:
+    "Weather forecasting instrument."
+},
+
+{
+  category: "Science",
+  question: "Which part of the plant conducts water from roots to leaves?",
+  options: [
+    "Phloem",
+    "Xylem",
+    "Stomata",
+    "Chloroplast"
+  ],
+  answer: "Xylem",
+  explanation:
+    "Xylem transports water and minerals from roots to the rest of the plant.",
+  wrongExplanations: {
+    "Phloem": "Transports food.",
+    "Stomata": "Tiny pores on leaves.",
+    "Chloroplast": "Site of photosynthesis."
+  },
+  hint:
+    "Water transport tissue."
+},
+
+{
+  category: "Science",
+  question: "What is the chemical symbol of Gold?",
+  options: [
+    "Ag",
+    "Gd",
+    "Au",
+    "Go"
+  ],
+  answer: "Au",
+  explanation:
+    "The chemical symbol for Gold is Au, derived from the Latin word 'Aurum'.",
+  wrongExplanations: {
+    "Ag": "Silver.",
+    "Gd": "Gadolinium.",
+    "Go": "Not a chemical symbol."
+  },
+  hint:
+    "Aurum."
+},
+{
+  category: "Science",
+  question: "Which part of the human body is responsible for pumping blood?",
+  options: [
+    "Lungs",
+    "Kidney",
+    "Heart",
+    "Liver"
+  ],
+  answer: "Heart",
+  explanation:
+    "The heart pumps blood throughout the body via the circulatory system.",
+  wrongExplanations: {
+    "Lungs": "Exchange oxygen and carbon dioxide.",
+    "Kidney": "Filters blood.",
+    "Liver": "Performs metabolic functions."
+  },
+  hint:
+    "Beats continuously."
+},
+
+{
+  category: "Science",
+  question: "What is the SI unit of energy?",
+  options: [
+    "Newton",
+    "Watt",
+    "Joule",
+    "Pascal"
+  ],
+  answer: "Joule",
+  explanation:
+    "The Joule (J) is the SI unit of energy and work.",
+  wrongExplanations: {
+    "Newton": "Unit of force.",
+    "Watt": "Unit of power.",
+    "Pascal": "Unit of pressure."
+  },
+  hint:
+    "Named after James Prescott Joule."
+},
+
+{
+  category: "Science",
+  question: "Which vitamin deficiency causes scurvy?",
+  options: [
+    "Vitamin A",
+    "Vitamin B",
+    "Vitamin C",
+    "Vitamin D"
+  ],
+  answer: "Vitamin C",
+  explanation:
+    "Scurvy is caused by a deficiency of Vitamin C.",
+  wrongExplanations: {
+    "Vitamin A": "Deficiency affects vision.",
+    "Vitamin B": "Associated with several disorders.",
+    "Vitamin D": "Deficiency causes rickets."
+  },
+  hint:
+    "Found in citrus fruits."
+},
+
+{
+  category: "Science",
+  question: "Which gas is released during photosynthesis?",
+  options: [
+    "Carbon Dioxide",
+    "Nitrogen",
+    "Oxygen",
+    "Hydrogen"
+  ],
+  answer: "Oxygen",
+  explanation:
+    "Plants release oxygen as a by-product of photosynthesis.",
+  wrongExplanations: {
+    "Carbon Dioxide": "Consumed during photosynthesis.",
+    "Nitrogen": "Not released.",
+    "Hydrogen": "Not released in normal photosynthesis."
+  },
+  hint:
+    "Essential for human respiration."
+},
+
+{
+  category: "Science",
+  question: "Which branch of science deals with the study of plants?",
+  options: [
+    "Zoology",
+    "Botany",
+    "Geology",
+    "Astronomy"
+  ],
+  answer: "Botany",
+  explanation:
+    "Botany is the scientific study of plants.",
+  wrongExplanations: {
+    "Zoology": "Study of animals.",
+    "Geology": "Study of Earth.",
+    "Astronomy": "Study of celestial objects."
+  },
+  hint:
+    "Plant science."
+},
+{
     category: "Economics",
     question: "Which institution issues currency notes in India?",
     options: [
@@ -3678,6 +7110,214 @@ const questions = [
   },
   hint:
     "Service sector."
+},
+{
+  category: "Economics",
+  question: "Which institution is known as the central bank of India?",
+  options: [
+    "SEBI",
+    "NABARD",
+    "RBI",
+    "SBI"
+  ],
+  answer: "RBI",
+  explanation:
+    "The Reserve Bank of India (RBI) is the central bank of India.",
+  wrongExplanations: {
+    "SEBI": "Regulates the securities market.",
+    "NABARD": "Focuses on agriculture and rural development.",
+    "SBI": "A commercial bank."
+  },
+  hint:
+    "Issues currency notes."
+},
+
+{
+  category: "Economics",
+  question: "What does GDP measure?",
+  options: [
+    "Population growth",
+    "Government expenditure only",
+    "Total value of goods and services produced",
+    "Exports only"
+  ],
+  answer: "Total value of goods and services produced",
+  explanation:
+    "GDP measures the total value of final goods and services produced within a country.",
+  wrongExplanations: {
+    "Population growth": "Demographic measure.",
+    "Government expenditure only": "Only one component of GDP.",
+    "Exports only": "GDP includes much more than exports."
+  },
+  hint:
+    "Economic output."
+},
+
+{
+  category: "Economics",
+  question: "Inflation means:",
+  options: [
+    "Fall in prices",
+    "Rise in general price level",
+    "Increase in employment",
+    "Decrease in income"
+  ],
+  answer: "Rise in general price level",
+  explanation:
+    "Inflation refers to a sustained increase in the general level of prices.",
+  wrongExplanations: {
+    "Fall in prices": "This is deflation.",
+    "Increase in employment": "Not the definition of inflation.",
+    "Decrease in income": "Not the definition of inflation."
+  },
+  hint:
+    "Purchasing power declines."
+},
+
+{
+  category: "Economics",
+  question: "Which body replaced the Planning Commission in India?",
+  options: [
+    "Finance Commission",
+    "NITI Aayog",
+    "RBI",
+    "GST Council"
+  ],
+  answer: "NITI Aayog",
+  explanation:
+    "NITI Aayog replaced the Planning Commission in 2015.",
+  wrongExplanations: {
+    "Finance Commission": "Deals with fiscal transfers.",
+    "RBI": "Central bank.",
+    "GST Council": "Deals with GST matters."
+  },
+  hint:
+    "Created in 2015."
+},
+
+{
+  category: "Economics",
+  question: "Which tax was introduced in India on 1 July 2017?",
+  options: [
+    "Income Tax",
+    "Service Tax",
+    "GST",
+    "Wealth Tax"
+  ],
+  answer: "GST",
+  explanation:
+    "The Goods and Services Tax (GST) was introduced on 1 July 2017.",
+  wrongExplanations: {
+    "Income Tax": "Existed long before 2017.",
+    "Service Tax": "Merged into GST.",
+    "Wealth Tax": "Different tax."
+  },
+  hint:
+    "One Nation, One Tax."
+},
+{
+  category: "Economics",
+  question: "What is the full form of GST?",
+  options: [
+    "General Sales Tax",
+    "Goods and Services Tax",
+    "Government Service Tax",
+    "Gross Service Tax"
+  ],
+  answer: "Goods and Services Tax",
+  explanation:
+    "GST stands for Goods and Services Tax, a comprehensive indirect tax in India.",
+  wrongExplanations: {
+    "General Sales Tax": "Incorrect expansion.",
+    "Government Service Tax": "Incorrect expansion.",
+    "Gross Service Tax": "Incorrect expansion."
+  },
+  hint:
+    "Introduced in 2017."
+},
+
+{
+  category: "Economics",
+  question: "Which sector of the economy includes banking, transport and communication?",
+  options: [
+    "Primary Sector",
+    "Secondary Sector",
+    "Tertiary Sector",
+    "Agricultural Sector"
+  ],
+  answer: "Tertiary Sector",
+  explanation:
+    "The tertiary sector provides services such as banking, transport and communication.",
+  wrongExplanations: {
+    "Primary Sector": "Deals with natural resources.",
+    "Secondary Sector": "Deals with manufacturing.",
+    "Agricultural Sector": "Part of the primary sector."
+  },
+  hint:
+    "Service sector."
+},
+
+{
+  category: "Economics",
+  question: "What is the currency of Japan?",
+  options: [
+    "Won",
+    "Yuan",
+    "Yen",
+    "Dollar"
+  ],
+  answer: "Yen",
+  explanation:
+    "The official currency of Japan is the Japanese Yen.",
+  wrongExplanations: {
+    "Won": "Currency of South Korea.",
+    "Yuan": "Currency of China.",
+    "Dollar": "Used by several countries but not Japan."
+  },
+  hint:
+    "¥ symbol."
+},
+
+{
+  category: "Economics",
+  question: "Who presents the Union Budget in India?",
+  options: [
+    "Prime Minister",
+    "President",
+    "Finance Minister",
+    "RBI Governor"
+  ],
+  answer: "Finance Minister",
+  explanation:
+    "The Union Budget is presented annually by the Finance Minister in Parliament.",
+  wrongExplanations: {
+    "Prime Minister": "Head of Government.",
+    "President": "Constitutional Head.",
+    "RBI Governor": "Heads the central bank."
+  },
+  hint:
+    "Handles government finances."
+},
+
+{
+  category: "Economics",
+  question: "Which organization publishes the World Economic Outlook report?",
+  options: [
+    "World Bank",
+    "IMF",
+    "WTO",
+    "ADB"
+  ],
+  answer: "IMF",
+  explanation:
+    "The International Monetary Fund (IMF) publishes the World Economic Outlook report.",
+  wrongExplanations: {
+    "World Bank": "Publishes other development reports.",
+    "WTO": "Deals with international trade.",
+    "ADB": "Asian Development Bank."
+  },
+  hint:
+    "International Monetary Fund."
 },
 {
     category: "ICT",
@@ -4029,6 +7669,110 @@ const questions = [
   },
   hint:
     "Built between Sydney and Melbourne."
+},
+{
+  category: "Geography",
+  question: "Which is the largest continent in the world?",
+  options: [
+    "Africa",
+    "Europe",
+    "Asia",
+    "North America"
+  ],
+  answer: "Asia",
+  explanation:
+    "Asia is the largest continent by both area and population.",
+  wrongExplanations: {
+    "Africa": "Second largest continent.",
+    "Europe": "Much smaller than Asia.",
+    "North America": "Third largest continent."
+  },
+  hint:
+    "Home to India and China."
+},
+
+{
+  category: "Geography",
+  question: "Which is the smallest continent in the world?",
+  options: [
+    "Europe",
+    "Australia",
+    "Antarctica",
+    "South America"
+  ],
+  answer: "Australia",
+  explanation:
+    "Australia is the smallest continent by land area.",
+  wrongExplanations: {
+    "Europe": "Larger than Australia.",
+    "Antarctica": "Much larger but sparsely populated.",
+    "South America": "Significantly larger."
+  },
+  hint:
+    "Also a country."
+},
+
+{
+  category: "Geography",
+  question: "The Tropic of Cancer passes through how many Indian states?",
+  options: [
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  answer: "8",
+  explanation:
+    "The Tropic of Cancer passes through Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura and Mizoram.",
+  wrongExplanations: {
+    "6": "Too few states.",
+    "7": "One state short.",
+    "9": "One state too many."
+  },
+  hint:
+    "Includes Mizoram."
+},
+
+{
+  category: "Geography",
+  question: "Which Indian state shares the longest international border?",
+  options: [
+    "Punjab",
+    "Arunachal Pradesh",
+    "West Bengal",
+    "Rajasthan"
+  ],
+  answer: "West Bengal",
+  explanation:
+    "West Bengal shares India's longest international border, mainly with Bangladesh.",
+  wrongExplanations: {
+    "Punjab": "Borders Pakistan.",
+    "Arunachal Pradesh": "Borders China, Bhutan and Myanmar.",
+    "Rajasthan": "Long border with Pakistan but not the longest overall."
+  },
+  hint:
+    "Borders Bangladesh."
+},
+
+{
+  category: "Geography",
+  question: "Which strait separates India and Sri Lanka?",
+  options: [
+    "Palk Strait",
+    "Bering Strait",
+    "Malacca Strait",
+    "Hormuz Strait"
+  ],
+  answer: "Palk Strait",
+  explanation:
+    "The Palk Strait lies between Tamil Nadu and Sri Lanka.",
+  wrongExplanations: {
+    "Bering Strait": "Between Russia and Alaska.",
+    "Malacca Strait": "Between Malaysia and Indonesia.",
+    "Hormuz Strait": "Near the Persian Gulf."
+  },
+  hint:
+    "Near Rameswaram."
 },
 {
     category: "English",
@@ -4478,6 +8222,630 @@ const questions = [
   },
   hint:
     "Third-person singular."
+},
+{
+  category: "English",
+  question: "Choose the correct synonym of 'Honest'.",
+  options: [
+    "Truthful",
+    "Lazy",
+    "Angry",
+    "Careless"
+  ],
+  answer: "Truthful",
+  explanation:
+    "Honest means truthful, sincere and free from cheating.",
+  wrongExplanations: {
+    "Lazy": "Lazy means unwilling to work.",
+    "Angry": "Angry is an emotion.",
+    "Careless": "Careless means not careful."
+  },
+  hint:
+    "A person who does not lie."
+},
+
+{
+  category: "English",
+  question: "Choose the antonym of 'Difficult'.",
+  options: [
+    "Hard",
+    "Complex",
+    "Easy",
+    "Serious"
+  ],
+  answer: "Easy",
+  explanation:
+    "Easy is the opposite of difficult.",
+  wrongExplanations: {
+    "Hard": "Hard is similar to difficult.",
+    "Complex": "Complex also means difficult.",
+    "Serious": "Serious is not the opposite."
+  },
+  hint:
+    "Opposite of hard."
+},
+
+{
+  category: "English",
+  question: "Fill in the blank: He _____ a letter yesterday.",
+  options: [
+    "write",
+    "writes",
+    "wrote",
+    "writing"
+  ],
+  answer: "wrote",
+  explanation:
+    "The word 'yesterday' shows past time, so the correct verb is 'wrote'.",
+  wrongExplanations: {
+    "write": "Base form, not suitable for past tense here.",
+    "writes": "Present tense.",
+    "writing": "Incomplete verb form."
+  },
+  hint:
+    "Look at the word yesterday."
+},
+
+{
+  category: "English",
+  question: "Choose the correctly spelled word.",
+  options: [
+    "Government",
+    "Goverment",
+    "Govrnment",
+    "Govement"
+  ],
+  answer: "Government",
+  explanation:
+    "Government is the correct spelling.",
+  wrongExplanations: {
+    "Goverment": "Missing the letter 'n'.",
+    "Govrnment": "Missing a vowel.",
+    "Govement": "Incorrect spelling."
+  },
+  hint:
+    "Contains 'govern' + 'ment'."
+},
+
+{
+  category: "English",
+  question: "Identify the verb in the sentence: 'The children play in the park.'",
+  options: [
+    "children",
+    "play",
+    "park",
+    "the"
+  ],
+  answer: "play",
+  explanation:
+    "A verb shows action. In this sentence, 'play' is the action word.",
+  wrongExplanations: {
+    "children": "This is a noun.",
+    "park": "This is a noun.",
+    "the": "This is an article."
+  },
+  hint:
+    "Look for the action word."
+},
+{
+  category: "English",
+  question: "Choose the correct synonym of 'Silent'.",
+  options: [
+    "Quiet",
+    "Loud",
+    "Noisy",
+    "Angry"
+  ],
+  answer: "Quiet",
+  explanation:
+    "Silent means quiet or making no sound.",
+  wrongExplanations: {
+    "Loud": "Opposite of silent.",
+    "Noisy": "Opposite of silent.",
+    "Angry": "An emotion, not a synonym."
+  },
+  hint:
+    "No sound."
+},
+
+{
+  category: "English",
+  question: "Choose the antonym of 'Accept'.",
+  options: [
+    "Receive",
+    "Reject",
+    "Allow",
+    "Agree"
+  ],
+  answer: "Reject",
+  explanation:
+    "Reject means to refuse or not accept.",
+  wrongExplanations: {
+    "Receive": "Similar to accept.",
+    "Allow": "Similar in meaning.",
+    "Agree": "Similar in meaning."
+  },
+  hint:
+    "Opposite of saying yes."
+},
+
+{
+  category: "English",
+  question: "Fill in the blank: They _____ playing football now.",
+  options: [
+    "is",
+    "are",
+    "was",
+    "be"
+  ],
+  answer: "are",
+  explanation:
+    "The subject 'They' is plural, so the correct helping verb is 'are'.",
+  wrongExplanations: {
+    "is": "Used with singular subjects.",
+    "was": "Past tense singular.",
+    "be": "Incorrect form here."
+  },
+  hint:
+    "Plural subject."
+},
+
+{
+  category: "English",
+  question: "Choose the correctly spelled word.",
+  options: [
+    "Separate",
+    "Seperate",
+    "Seprate",
+    "Separete"
+  ],
+  answer: "Separate",
+  explanation:
+    "Separate is the correct spelling.",
+  wrongExplanations: {
+    "Seperate": "Common spelling mistake.",
+    "Seprate": "Missing a vowel.",
+    "Separete": "Incorrect spelling."
+  },
+  hint:
+    "Remember: sep-a-rate."
+},
+
+{
+  category: "English",
+  question: "Identify the preposition in the sentence: 'The book is on the table.'",
+  options: [
+    "book",
+    "is",
+    "on",
+    "table"
+  ],
+  answer: "on",
+  explanation:
+    "A preposition shows relation. Here, 'on' shows the position of the book.",
+  wrongExplanations: {
+    "book": "This is a noun.",
+    "is": "This is a verb.",
+    "table": "This is a noun."
+  },
+  hint:
+    "Shows position."
+},
+{
+  category: "English",
+  question: "Choose the correct synonym of 'Rapid'.",
+  options: [
+    "Slow",
+    "Fast",
+    "Weak",
+    "Small"
+  ],
+  answer: "Fast",
+  explanation:
+    "Rapid means happening quickly or at high speed.",
+  wrongExplanations: {
+    "Slow": "Opposite of rapid.",
+    "Weak": "Relates to strength, not speed.",
+    "Small": "Relates to size, not speed."
+  },
+  hint:
+    "Quick movement."
+},
+
+{
+  category: "English",
+  question: "Choose the antonym of 'Victory'.",
+  options: [
+    "Success",
+    "Achievement",
+    "Defeat",
+    "Triumph"
+  ],
+  answer: "Defeat",
+  explanation:
+    "Defeat is the opposite of victory.",
+  wrongExplanations: {
+    "Success": "Similar to victory.",
+    "Achievement": "Positive outcome.",
+    "Triumph": "Another word for victory."
+  },
+  hint:
+    "The losing side."
+},
+
+{
+  category: "English",
+  question: "Fill in the blank: I _____ my homework before dinner.",
+  options: [
+    "finished",
+    "finishing",
+    "finishs",
+    "finish"
+  ],
+  answer: "finished",
+  explanation:
+    "The sentence refers to a completed action in the past.",
+  wrongExplanations: {
+    "finishing": "Continuous form.",
+    "finishs": "Incorrect spelling.",
+    "finish": "Present tense."
+  },
+  hint:
+    "Action already completed."
+},
+
+{
+  category: "English",
+  question: "Choose the correctly spelled word.",
+  options: [
+    "Environment",
+    "Enviroment",
+    "Environmant",
+    "Envirnment"
+  ],
+  answer: "Environment",
+  explanation:
+    "Environment is the correct spelling.",
+  wrongExplanations: {
+    "Enviroment": "Missing 'n'.",
+    "Environmant": "Incorrect vowel.",
+    "Envirnment": "Missing letters."
+  },
+  hint:
+    "A common exam spelling question."
+},
+
+{
+  category: "English",
+  question: "Identify the adjective in the sentence: 'The tall building is beautiful.'",
+  options: [
+    "building",
+    "beautiful",
+    "tall",
+    "is"
+  ],
+  answer: "tall",
+  explanation:
+    "An adjective describes a noun. Here 'tall' describes the building.",
+  wrongExplanations: {
+    "building": "Noun.",
+    "beautiful": "Also an adjective, but it describes the whole subject complement rather than directly identifying the building's physical quality in this question.",
+    "is": "Verb."
+  },
+  hint:
+    "Which word describes the building?"
+},
+{
+  category: "English",
+  question: "Choose the correct synonym of 'Brave'.",
+  options: [
+    "Cowardly",
+    "Fearless",
+    "Weak",
+    "Shy"
+  ],
+  answer: "Fearless",
+  explanation:
+    "Brave means showing courage and being fearless in difficult situations.",
+  wrongExplanations: {
+    "Cowardly": "Opposite of brave.",
+    "Weak": "Relates to strength, not courage.",
+    "Shy": "Relates to personality, not bravery."
+  },
+  hint:
+    "A courageous person."
+},
+
+{
+  category: "English",
+  question: "Choose the antonym of 'Ancient'.",
+  options: [
+    "Historic",
+    "Old",
+    "Modern",
+    "Traditional"
+  ],
+  answer: "Modern",
+  explanation:
+    "Modern refers to the present or recent times, opposite of ancient.",
+  wrongExplanations: {
+    "Historic": "Can also refer to old events.",
+    "Old": "Similar to ancient.",
+    "Traditional": "Not the opposite."
+  },
+  hint:
+    "Present-day."
+},
+
+{
+  category: "English",
+  question: "Fill in the blank: The sun _____ in the east.",
+  options: [
+    "rise",
+    "rises",
+    "rising",
+    "rose"
+  ],
+  answer: "rises",
+  explanation:
+    "General truths are expressed in the simple present tense. The sun rises in the east.",
+  wrongExplanations: {
+    "rise": "Incorrect subject-verb agreement.",
+    "rising": "Continuous form.",
+    "rose": "Past tense."
+  },
+  hint:
+    "General truth."
+},
+
+{
+  category: "English",
+  question: "Choose the correctly spelled word.",
+  options: [
+    "Accommodation",
+    "Acommodation",
+    "Accomodation",
+    "Acomodation"
+  ],
+  answer: "Accommodation",
+  explanation:
+    "Accommodation is the correct spelling.",
+  wrongExplanations: {
+    "Acommodation": "Missing a 'c'.",
+    "Accomodation": "Missing an 'm'.",
+    "Acomodation": "Missing both a 'c' and an 'm'."
+  },
+  hint:
+    "Double c, double m."
+},
+
+{
+  category: "English",
+  question: "Identify the adverb in the sentence: 'She sings beautifully.'",
+  options: [
+    "She",
+    "Sings",
+    "Beautifully",
+    "Song"
+  ],
+  answer: "Beautifully",
+  explanation:
+    "An adverb modifies a verb. Here, 'beautifully' describes how she sings.",
+  wrongExplanations: {
+    "She": "Pronoun.",
+    "Sings": "Verb.",
+    "Song": "Noun."
+  },
+  hint:
+    "Describes the action."
+},
+{
+  category: "English",
+  question: "Choose the correct synonym of 'Wealthy'.",
+  options: [
+    "Rich",
+    "Poor",
+    "Weak",
+    "Lazy"
+  ],
+  answer: "Rich",
+  explanation:
+    "Wealthy means having a large amount of money or property.",
+  wrongExplanations: {
+    "Poor": "Opposite of wealthy.",
+    "Weak": "Relates to strength.",
+    "Lazy": "Relates to work habits."
+  },
+  hint:
+    "Has a lot of money."
+},
+
+{
+  category: "English",
+  question: "Choose the antonym of 'Victory'.",
+  options: [
+    "Success",
+    "Triumph",
+    "Defeat",
+    "Achievement"
+  ],
+  answer: "Defeat",
+  explanation:
+    "Defeat is the opposite of victory.",
+  wrongExplanations: {
+    "Success": "Similar meaning.",
+    "Triumph": "Another word for victory.",
+    "Achievement": "Positive accomplishment."
+  },
+  hint:
+    "The losing side."
+},
+
+{
+  category: "English",
+  question: "Fill in the blank: She _____ a beautiful song yesterday.",
+  options: [
+    "sing",
+    "sings",
+    "sang",
+    "singing"
+  ],
+  answer: "sang",
+  explanation:
+    "The word 'yesterday' indicates past tense, so 'sang' is correct.",
+  wrongExplanations: {
+    "sing": "Present form.",
+    "sings": "Present tense.",
+    "singing": "Continuous form."
+  },
+  hint:
+    "Past tense of sing."
+},
+
+{
+  category: "English",
+  question: "Choose the correctly spelled word.",
+  options: [
+    "Occasion",
+    "Ocassion",
+    "Occassion",
+    "Occasionn"
+  ],
+  answer: "Occasion",
+  explanation:
+    "Occasion is the correct spelling.",
+  wrongExplanations: {
+    "Ocassion": "Incorrect spelling.",
+    "Occassion": "Extra 's'.",
+    "Occasionn": "Extra 'n'."
+  },
+  hint:
+    "Common exam spelling question."
+},
+
+{
+  category: "English",
+  question: "Identify the pronoun in the sentence: 'They are playing football.'",
+  options: [
+    "They",
+    "Playing",
+    "Football",
+    "Are"
+  ],
+  answer: "They",
+  explanation:
+    "A pronoun replaces a noun. 'They' refers to a group of people.",
+  wrongExplanations: {
+    "Playing": "Verb form.",
+    "Football": "Noun.",
+    "Are": "Helping verb."
+  },
+  hint:
+    "Replaces a noun."
+},
+{
+  category: "English",
+  question: "Choose the correct synonym of 'Begin'.",
+  options: [
+    "Start",
+    "Finish",
+    "Stop",
+    "End"
+  ],
+  answer: "Start",
+  explanation:
+    "Begin means to start or commence something.",
+  wrongExplanations: {
+    "Finish": "Opposite meaning.",
+    "Stop": "Opposite meaning.",
+    "End": "Opposite meaning."
+  },
+  hint:
+    "To commence."
+},
+
+{
+  category: "English",
+  question: "Choose the antonym of 'Expand'.",
+  options: [
+    "Increase",
+    "Stretch",
+    "Contract",
+    "Extend"
+  ],
+  answer: "Contract",
+  explanation:
+    "Contract means to become smaller, the opposite of expand.",
+  wrongExplanations: {
+    "Increase": "Similar meaning.",
+    "Stretch": "Related to expansion.",
+    "Extend": "Similar meaning."
+  },
+  hint:
+    "To become smaller."
+},
+
+{
+  category: "English",
+  question: "Fill in the blank: They _____ to the market every Sunday.",
+  options: [
+    "go",
+    "goes",
+    "going",
+    "gone"
+  ],
+  answer: "go",
+  explanation:
+    "The plural subject 'They' takes the base form 'go' in the simple present tense.",
+  wrongExplanations: {
+    "goes": "Used with singular subjects.",
+    "going": "Continuous form.",
+    "gone": "Past participle."
+  },
+  hint:
+    "Plural subject."
+},
+
+{
+  category: "English",
+  question: "Choose the correctly spelled word.",
+  options: [
+    "Knowledge",
+    "Knowlege",
+    "Knowlodge",
+    "Knowlidge"
+  ],
+  answer: "Knowledge",
+  explanation:
+    "Knowledge is the correct spelling.",
+  wrongExplanations: {
+    "Knowlege": "Missing 'd'.",
+    "Knowlodge": "Incorrect vowel.",
+    "Knowlidge": "Incorrect spelling."
+  },
+  hint:
+    "Starts with 'Know'."
+},
+
+{
+  category: "English",
+  question: "Identify the noun in the sentence: 'The teacher explained the lesson clearly.'",
+  options: [
+    "Explained",
+    "Clearly",
+    "Teacher",
+    "The"
+  ],
+  answer: "Teacher",
+  explanation:
+    "A noun names a person, place, thing or idea. 'Teacher' is a noun.",
+  wrongExplanations: {
+    "Explained": "Verb.",
+    "Clearly": "Adverb.",
+    "The": "Article."
+  },
+  hint:
+    "A person."
 },
 {
     category: "Mizoram GK",
@@ -4933,7 +9301,111 @@ const questions = [
   hint:
     "Internal administration ministry."
 },
-  {
+ {
+  category: "Current Affairs",
+  question: "Which constitutional body conducts elections in India?",
+  options: [
+    "UPSC",
+    "Election Commission of India",
+    "NITI Aayog",
+    "Finance Commission"
+  ],
+  answer: "Election Commission of India",
+  explanation:
+    "The Election Commission of India conducts elections to Parliament, State Legislatures and the offices of President and Vice-President.",
+  wrongExplanations: {
+    "UPSC": "Conducts recruitment examinations.",
+    "NITI Aayog": "Policy think tank.",
+    "Finance Commission": "Deals with financial distribution."
+  },
+  hint:
+    "Responsible for free and fair elections."
+},
+
+{
+  category: "Current Affairs",
+  question: "How often is the Census of India traditionally conducted?",
+  options: [
+    "Every 5 years",
+    "Every 8 years",
+    "Every 10 years",
+    "Every 15 years"
+  ],
+  answer: "Every 10 years",
+  explanation:
+    "The Census of India has traditionally been conducted once every ten years.",
+  wrongExplanations: {
+    "Every 5 years": "Too frequent.",
+    "Every 8 years": "Incorrect interval.",
+    "Every 15 years": "Incorrect interval."
+  },
+  hint:
+    "A decade."
+},
+
+{
+  category: "Current Affairs",
+  question: "Which Indian city is known as the Silicon Valley of India?",
+  options: [
+    "Mumbai",
+    "Hyderabad",
+    "Bengaluru",
+    "Chennai"
+  ],
+  answer: "Bengaluru",
+  explanation:
+    "Bengaluru is known as the Silicon Valley of India because of its large IT industry.",
+  wrongExplanations: {
+    "Mumbai": "Financial capital.",
+    "Hyderabad": "Major IT hub but not called Silicon Valley of India.",
+    "Chennai": "Major industrial city."
+  },
+  hint:
+    "Capital of Karnataka."
+},
+
+{
+  category: "Current Affairs",
+  question: "Who is known as the Missile Man of India?",
+  options: [
+    "Vikram Sarabhai",
+    "Homi Bhabha",
+    "A.P.J. Abdul Kalam",
+    "Satish Dhawan"
+  ],
+  answer: "A.P.J. Abdul Kalam",
+  explanation:
+    "Dr. A.P.J. Abdul Kalam earned the title 'Missile Man of India' for his contribution to missile development.",
+  wrongExplanations: {
+    "Vikram Sarabhai": "Father of the Indian Space Programme.",
+    "Homi Bhabha": "Father of India's Nuclear Programme.",
+    "Satish Dhawan": "Prominent space scientist."
+  },
+  hint:
+    "Former President of India."
+},
+
+{
+  category: "Current Affairs",
+  question: "Which organization is responsible for issuing Aadhaar numbers in India?",
+  options: [
+    "RBI",
+    "UIDAI",
+    "NITI Aayog",
+    "UPSC"
+  ],
+  answer: "UIDAI",
+  explanation:
+    "The Unique Identification Authority of India (UIDAI) issues Aadhaar numbers.",
+  wrongExplanations: {
+    "RBI": "Central bank.",
+    "NITI Aayog": "Policy body.",
+    "UPSC": "Recruitment agency."
+  },
+  hint:
+    "Unique Identification Authority of India."
+},
+{
   category: "Mizoram GK",
   question: "Which district of Mizoram is famous for the Blue Mountain (Phawngpui)?",
   options: [
@@ -5943,6 +10415,318 @@ const questions = [
   },
   hint:
     "Think of inputs, processes and outputs."
+},
+{
+  category: "Public Administration",
+  question: "Who developed the concept of POSDCORB?",
+  options: [
+    "Woodrow Wilson",
+    "Luther Gulick",
+    "Max Weber",
+    "Herbert Simon"
+  ],
+  answer: "Luther Gulick",
+  explanation:
+    "Luther Gulick developed the concept of POSDCORB to explain managerial functions in administration.",
+  wrongExplanations: {
+    "Woodrow Wilson": "Father of Public Administration.",
+    "Max Weber": "Known for Bureaucratic Theory.",
+    "Herbert Simon": "Known for Decision-Making Theory."
+  },
+  hint:
+    "Planning, Organizing, Staffing..."
+},
+
+{
+  category: "Public Administration",
+  question: "Which principle emphasizes that each employee should receive orders from only one superior?",
+  options: [
+    "Span of Control",
+    "Unity of Command",
+    "Delegation",
+    "Coordination"
+  ],
+  answer: "Unity of Command",
+  explanation:
+    "Unity of Command means a subordinate should receive instructions from only one superior.",
+  wrongExplanations: {
+    "Span of Control": "Number of subordinates supervised.",
+    "Delegation": "Transfer of authority.",
+    "Coordination": "Harmonizing activities."
+  },
+  hint:
+    "One boss principle."
+},
+
+{
+  category: "Public Administration",
+  question: "Who is associated with the Bureaucratic Theory of Administration?",
+  options: [
+    "Herbert Simon",
+    "Max Weber",
+    "Chester Barnard",
+    "Mary Parker Follett"
+  ],
+  answer: "Max Weber",
+  explanation:
+    "Max Weber developed the ideal type of bureaucracy based on hierarchy, rules and specialization.",
+  wrongExplanations: {
+    "Herbert Simon": "Decision-making theory.",
+    "Chester Barnard": "Cooperative systems.",
+    "Mary Parker Follett": "Human relations approach."
+  },
+  hint:
+    "German sociologist."
+},
+
+{
+  category: "Public Administration",
+  question: "RTI stands for:",
+  options: [
+    "Right to Information",
+    "Rule to Information",
+    "Right to Inquiry",
+    "Rule to Inquiry"
+  ],
+  answer: "Right to Information",
+  explanation:
+    "The Right to Information Act promotes transparency and accountability in government.",
+  wrongExplanations: {
+    "Rule to Information": "Incorrect expansion.",
+    "Right to Inquiry": "Incorrect expansion.",
+    "Rule to Inquiry": "Incorrect expansion."
+  },
+  hint:
+    "Transparency law."
+},
+
+{
+  category: "Public Administration",
+  question: "E-Governance mainly aims to:",
+  options: [
+    "Increase paperwork",
+    "Reduce transparency",
+    "Improve service delivery",
+    "Eliminate government"
+  ],
+  answer: "Improve service delivery",
+  explanation:
+    "E-Governance uses information technology to make government services more efficient and accessible.",
+  wrongExplanations: {
+    "Increase paperwork": "It reduces paperwork.",
+    "Reduce transparency": "It increases transparency.",
+    "Eliminate government": "Not its purpose."
+  },
+  hint:
+    "Digital government services."
+},
+{
+  category: "Public Administration",
+  question: "Who is known as the Father of Scientific Management?",
+  options: [
+    "Max Weber",
+    "F.W. Taylor",
+    "Herbert Simon",
+    "Luther Gulick"
+  ],
+  answer: "F.W. Taylor",
+  explanation:
+    "Frederick Winslow Taylor developed Scientific Management to improve efficiency and productivity.",
+  wrongExplanations: {
+    "Max Weber": "Associated with bureaucracy.",
+    "Herbert Simon": "Associated with decision-making.",
+    "Luther Gulick": "Associated with POSDCORB."
+  },
+  hint:
+    "Scientific Management."
+},
+
+{
+  category: "Public Administration",
+  question: "Which concept refers to the number of subordinates directly supervised by a manager?",
+  options: [
+    "Unity of Command",
+    "Delegation",
+    "Span of Control",
+    "Coordination"
+  ],
+  answer: "Span of Control",
+  explanation:
+    "Span of Control refers to the number of employees directly managed by a supervisor.",
+  wrongExplanations: {
+    "Unity of Command": "One superior principle.",
+    "Delegation": "Transfer of authority.",
+    "Coordination": "Harmonizing activities."
+  },
+  hint:
+    "How many people one boss manages."
+},
+
+{
+  category: "Public Administration",
+  question: "Which of the following is a feature of good governance?",
+  options: [
+    "Secrecy",
+    "Corruption",
+    "Transparency",
+    "Favoritism"
+  ],
+  answer: "Transparency",
+  explanation:
+    "Transparency helps ensure accountability, trust and effective governance.",
+  wrongExplanations: {
+    "Secrecy": "Reduces accountability.",
+    "Corruption": "Weakens governance.",
+    "Favoritism": "Undermines fairness."
+  },
+  hint:
+    "Citizens can see how decisions are made."
+},
+
+{
+  category: "Public Administration",
+  question: "Delegation means:",
+  options: [
+    "Giving authority to subordinates",
+    "Removing authority",
+    "Avoiding responsibility",
+    "Increasing hierarchy"
+  ],
+  answer: "Giving authority to subordinates",
+  explanation:
+    "Delegation is the transfer of authority to subordinates while retaining overall responsibility.",
+  wrongExplanations: {
+    "Removing authority": "Not delegation.",
+    "Avoiding responsibility": "Responsibility remains with the superior.",
+    "Increasing hierarchy": "Not the definition."
+  },
+  hint:
+    "Transfer of authority."
+},
+
+{
+  category: "Public Administration",
+  question: "Which Act is considered a major tool for transparency in India?",
+  options: [
+    "RTI Act",
+    "IPC",
+    "CrPC",
+    "Indian Evidence Act"
+  ],
+  answer: "RTI Act",
+  explanation:
+    "The Right to Information Act empowers citizens to seek information from public authorities.",
+  wrongExplanations: {
+    "IPC": "Criminal law.",
+    "CrPC": "Criminal procedure.",
+    "Indian Evidence Act": "Rules of evidence."
+  },
+  hint:
+    "Citizens can request government information."
+},
+{
+  category: "Public Administration",
+  question: "Who is known as the Father of Public Administration?",
+  options: [
+    "Woodrow Wilson",
+    "Max Weber",
+    "Luther Gulick",
+    "Herbert Simon"
+  ],
+  answer: "Woodrow Wilson",
+  explanation:
+    "Woodrow Wilson is regarded as the Father of Public Administration because of his pioneering work in the field.",
+  wrongExplanations: {
+    "Max Weber": "Known for Bureaucratic Theory.",
+    "Luther Gulick": "Known for POSDCORB.",
+    "Herbert Simon": "Known for Decision-Making Theory."
+  },
+  hint:
+    "1887 essay on administration."
+},
+
+{
+  category: "Public Administration",
+  question: "Which of the following is NOT a function of POSDCORB?",
+  options: [
+    "Planning",
+    "Organizing",
+    "Staffing",
+    "Legislating"
+  ],
+  answer: "Legislating",
+  explanation:
+    "POSDCORB stands for Planning, Organizing, Staffing, Directing, Coordinating, Reporting and Budgeting.",
+  wrongExplanations: {
+    "Planning": "Part of POSDCORB.",
+    "Organizing": "Part of POSDCORB.",
+    "Staffing": "Part of POSDCORB."
+  },
+  hint:
+    "Think management functions."
+},
+
+{
+  category: "Public Administration",
+  question: "Which concept refers to assigning responsibility and authority to subordinates?",
+  options: [
+    "Coordination",
+    "Delegation",
+    "Centralization",
+    "Supervision"
+  ],
+  answer: "Delegation",
+  explanation:
+    "Delegation involves transferring authority and responsibility to subordinates.",
+  wrongExplanations: {
+    "Coordination": "Harmonizing activities.",
+    "Centralization": "Concentration of authority.",
+    "Supervision": "Monitoring work."
+  },
+  hint:
+    "Transfer of authority."
+},
+
+{
+  category: "Public Administration",
+  question: "Which theory emphasizes formal rules, hierarchy and specialization?",
+  options: [
+    "Human Relations Theory",
+    "Bureaucratic Theory",
+    "Systems Theory",
+    "Behavioral Theory"
+  ],
+  answer: "Bureaucratic Theory",
+  explanation:
+    "Max Weber's Bureaucratic Theory emphasizes hierarchy, rules and specialization.",
+  wrongExplanations: {
+    "Human Relations Theory": "Focuses on people and motivation.",
+    "Systems Theory": "Focuses on interdependence.",
+    "Behavioral Theory": "Focuses on human behavior."
+  },
+  hint:
+    "Associated with Max Weber."
+},
+
+{
+  category: "Public Administration",
+  question: "The Right to Information Act was enacted in India in:",
+  options: [
+    "2002",
+    "2005",
+    "2008",
+    "2010"
+  ],
+  answer: "2005",
+  explanation:
+    "The RTI Act, 2005 was enacted to promote transparency and accountability.",
+  wrongExplanations: {
+    "2002": "Too early.",
+    "2008": "Already in force by then.",
+    "2010": "Incorrect year."
+  },
+  hint:
+    "Mid-2000s transparency reform."
 },
 {
   category: "Teaching Aptitude",
