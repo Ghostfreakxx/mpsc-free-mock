@@ -2252,6 +2252,1254 @@ const questions = [
     "Greatest happiness principle."
 },
 {
+  category: "Political Science",
+  question: "Who is regarded as the Father of Political Science?",
+  options: [
+    "Plato",
+    "Aristotle",
+    "Machiavelli",
+    "Locke"
+  ],
+  answer: "Aristotle",
+  explanation:
+    "Aristotle is known as the Father of Political Science because of his systematic study of politics and government.",
+  wrongExplanations: {
+    "Plato": "Teacher of Aristotle.",
+    "Machiavelli": "Father of Modern Political Science.",
+    "Locke": "Liberal political thinker."
+  },
+  hint:
+    "Author of Politics."
+},
+
+{
+  category: "Political Science",
+  question: "Which book was written by Plato?",
+  options: [
+    "Politics",
+    "Leviathan",
+    "The Republic",
+    "The Prince"
+  ],
+  answer: "The Republic",
+  explanation:
+    "The Republic is Plato's famous work discussing justice and the ideal state.",
+  wrongExplanations: {
+    "Politics": "Written by Aristotle.",
+    "Leviathan": "Written by Hobbes.",
+    "The Prince": "Written by Machiavelli."
+  },
+  hint:
+    "Ideal State."
+},
+
+{
+  category: "Political Science",
+  question: "Who wrote the book 'The Prince'?",
+  options: [
+    "Hobbes",
+    "Locke",
+    "Rousseau",
+    "Machiavelli"
+  ],
+  answer: "Machiavelli",
+  explanation:
+    "Niccolo Machiavelli wrote The Prince, a classic work of political realism.",
+  wrongExplanations: {
+    "Hobbes": "Wrote Leviathan.",
+    "Locke": "Wrote Two Treatises of Government.",
+    "Rousseau": "Wrote The Social Contract."
+  },
+  hint:
+    "Political Realism."
+},
+
+{
+  category: "Political Science",
+  question: "Who wrote 'Leviathan'?",
+  options: [
+    "Locke",
+    "Hobbes",
+    "Rousseau",
+    "Bentham"
+  ],
+  answer: "Hobbes",
+  explanation:
+    "Thomas Hobbes wrote Leviathan, advocating a powerful sovereign to maintain order.",
+  wrongExplanations: {
+    "Locke": "Liberal thinker.",
+    "Rousseau": "General Will.",
+    "Bentham": "Utilitarianism."
+  },
+  hint:
+    "State of Nature was 'solitary, poor, nasty, brutish and short'."
+},
+
+{
+  category: "Political Science",
+  question: "John Locke is most closely associated with which concept?",
+  options: [
+    "Divine Right of Kings",
+    "Natural Rights",
+    "General Will",
+    "Class Struggle"
+  ],
+  answer: "Natural Rights",
+  explanation:
+    "Locke argued that individuals possess natural rights to life, liberty and property.",
+  wrongExplanations: {
+    "Divine Right of Kings": "Rejected by Locke.",
+    "General Will": "Rousseau.",
+    "Class Struggle": "Marx."
+  },
+  hint:
+    "Life, Liberty and Property."
+},
+{
+  category: "Political Science",
+  question: "Who wrote the book 'The Social Contract'?",
+  options: [
+    "John Locke",
+    "Thomas Hobbes",
+    "Jean-Jacques Rousseau",
+    "Karl Marx"
+  ],
+  answer: "Jean-Jacques Rousseau",
+  explanation:
+    "Rousseau wrote The Social Contract and introduced the concept of the General Will.",
+  wrongExplanations: {
+    "John Locke": "Wrote Two Treatises of Government.",
+    "Thomas Hobbes": "Wrote Leviathan.",
+    "Karl Marx": "Wrote The Communist Manifesto with Engels."
+  },
+  hint:
+    "General Will."
+},
+
+{
+  category: "Political Science",
+  question: "Jeremy Bentham is associated with:",
+  options: [
+    "Idealism",
+    "Utilitarianism",
+    "Marxism",
+    "Anarchism"
+  ],
+  answer: "Utilitarianism",
+  explanation:
+    "Bentham advocated Utilitarianism, emphasizing the greatest happiness of the greatest number.",
+  wrongExplanations: {
+    "Idealism": "Associated with Plato.",
+    "Marxism": "Associated with Karl Marx.",
+    "Anarchism": "Different ideology."
+  },
+  hint:
+    "Greatest happiness principle."
+},
+
+{
+  category: "Political Science",
+  question: "John Stuart Mill is best known for his defense of:",
+  options: [
+    "Absolute Monarchy",
+    "Liberty",
+    "Dictatorship",
+    "Theocracy"
+  ],
+  answer: "Liberty",
+  explanation:
+    "J.S. Mill's work 'On Liberty' is a classic defense of individual freedom.",
+  wrongExplanations: {
+    "Absolute Monarchy": "Mill opposed unchecked authority.",
+    "Dictatorship": "Contrary to Mill's views.",
+    "Theocracy": "Rule by religious authority."
+  },
+  hint:
+    "Author of On Liberty."
+},
+
+{
+  category: "Political Science",
+  question: "Karl Marx believed that history is driven by:",
+  options: [
+    "Religious Conflict",
+    "Class Struggle",
+    "Great Leaders",
+    "Nationalism"
+  ],
+  answer: "Class Struggle",
+  explanation:
+    "Marx argued that the conflict between social classes drives historical change.",
+  wrongExplanations: {
+    "Religious Conflict": "Not Marx's central theory.",
+    "Great Leaders": "Associated with other historical approaches.",
+    "Nationalism": "Not the basis of historical materialism."
+  },
+  hint:
+    "Bourgeoisie vs Proletariat."
+},
+
+{
+  category: "Political Science",
+  question: "Who wrote 'A Theory of Justice'?",
+  options: [
+    "Robert Nozick",
+    "John Rawls",
+    "Karl Marx",
+    "David Easton"
+  ],
+  answer: "John Rawls",
+  explanation:
+    "John Rawls developed the theory of justice as fairness in his book A Theory of Justice.",
+  wrongExplanations: {
+    "Robert Nozick": "Wrote Anarchy, State and Utopia.",
+    "Karl Marx": "Marxist thinker.",
+    "David Easton": "Known for Systems Theory."
+  },
+  hint:
+    "Justice as Fairness."
+},
+{
+  category: "Political Science",
+  question: "Who developed the Systems Theory in Political Science?",
+  options: [
+    "David Easton",
+    "Gabriel Almond",
+    "Karl Deutsch",
+    "Harold Lasswell"
+  ],
+  answer: "David Easton",
+  explanation:
+    "David Easton developed Systems Theory and viewed politics as the authoritative allocation of values.",
+  wrongExplanations: {
+    "Gabriel Almond": "Structural-Functional Approach.",
+    "Karl Deutsch": "Communication Theory.",
+    "Harold Lasswell": "Politics as who gets what, when and how."
+  },
+  hint:
+    "Authoritative allocation of values."
+},
+
+{
+  category: "Political Science",
+  question: "Who said, 'Politics is who gets what, when and how'?",
+  options: [
+    "David Easton",
+    "Harold Lasswell",
+    "Robert Dahl",
+    "Almond"
+  ],
+  answer: "Harold Lasswell",
+  explanation:
+    "Harold Lasswell defined politics as 'who gets what, when and how'.",
+  wrongExplanations: {
+    "David Easton": "Systems Theory.",
+    "Robert Dahl": "Pluralism.",
+    "Almond": "Structural Functionalism."
+  },
+  hint:
+    "Distribution of power and resources."
+},
+
+{
+  category: "Political Science",
+  question: "Gabriel Almond is associated with:",
+  options: [
+    "Marxism",
+    "Structural Functionalism",
+    "Elite Theory",
+    "Feminism"
+  ],
+  answer: "Structural Functionalism",
+  explanation:
+    "Gabriel Almond applied Structural-Functional Analysis to political systems.",
+  wrongExplanations: {
+    "Marxism": "Karl Marx.",
+    "Elite Theory": "Mosca, Pareto.",
+    "Feminism": "Separate approach."
+  },
+  hint:
+    "Political system functions."
+},
+
+{
+  category: "Political Science",
+  question: "Who is regarded as the father of Liberalism?",
+  options: [
+    "John Locke",
+    "Rousseau",
+    "Marx",
+    "Hobbes"
+  ],
+  answer: "John Locke",
+  explanation:
+    "John Locke's ideas on liberty, consent and natural rights form the foundation of Liberalism.",
+  wrongExplanations: {
+    "Rousseau": "General Will.",
+    "Marx": "Marxism.",
+    "Hobbes": "Absolute Sovereignty."
+  },
+  hint:
+    "Natural Rights."
+},
+
+{
+  category: "Political Science",
+  question: "Which concept is most closely associated with Rousseau?",
+  options: [
+    "General Will",
+    "Class Struggle",
+    "Utility",
+    "Separation of Powers"
+  ],
+  answer: "General Will",
+  explanation:
+    "Rousseau's political philosophy revolves around the concept of the General Will.",
+  wrongExplanations: {
+    "Class Struggle": "Marx.",
+    "Utility": "Bentham.",
+    "Separation of Powers": "Montesquieu."
+  },
+  hint:
+    "The Social Contract."
+},
+{
+  category: "Political Science",
+  question: "Who propounded the theory of Separation of Powers?",
+  options: [
+    "John Locke",
+    "Montesquieu",
+    "Rousseau",
+    "Bentham"
+  ],
+  answer: "Montesquieu",
+  explanation:
+    "Montesquieu advocated the Separation of Powers among the legislature, executive and judiciary.",
+  wrongExplanations: {
+    "John Locke": "Influenced the idea but not its classical formulation.",
+    "Rousseau": "General Will.",
+    "Bentham": "Utilitarianism."
+  },
+  hint:
+    "The Spirit of Laws."
+},
+
+{
+  category: "Political Science",
+  question: "Who is most closely associated with the concept of Polyarchy?",
+  options: [
+    "David Easton",
+    "Robert Dahl",
+    "Karl Deutsch",
+    "Gabriel Almond"
+  ],
+  answer: "Robert Dahl",
+  explanation:
+    "Robert Dahl developed the concept of Polyarchy to explain modern democratic systems.",
+  wrongExplanations: {
+    "David Easton": "Systems Theory.",
+    "Karl Deutsch": "Communication Theory.",
+    "Gabriel Almond": "Structural Functionalism."
+  },
+  hint:
+    "Pluralist thinker."
+},
+
+{
+  category: "Political Science",
+  question: "Karl Deutsch is associated with:",
+  options: [
+    "Communication Theory",
+    "Elite Theory",
+    "Marxism",
+    "Behavioralism"
+  ],
+  answer: "Communication Theory",
+  explanation:
+    "Karl Deutsch viewed political systems as communication and control networks.",
+  wrongExplanations: {
+    "Elite Theory": "Mosca and Pareto.",
+    "Marxism": "Karl Marx.",
+    "Behavioralism": "Broader approach."
+  },
+  hint:
+    "Flow of information."
+},
+
+{
+  category: "Political Science",
+  question: "Who is associated with Elite Theory?",
+  options: [
+    "Mosca and Pareto",
+    "Rawls and Nozick",
+    "Locke and Rousseau",
+    "Easton and Almond"
+  ],
+  answer: "Mosca and Pareto",
+  explanation:
+    "Elite Theory argues that a small minority of elites holds power in society.",
+  wrongExplanations: {
+    "Rawls and Nozick": "Justice theories.",
+    "Locke and Rousseau": "Social contract thinkers.",
+    "Easton and Almond": "Systems and structural-functional approaches."
+  },
+  hint:
+    "Ruling minority."
+},
+
+{
+  category: "Political Science",
+  question: "Who developed the concept of Political Culture?",
+  options: [
+    "Almond and Verba",
+    "Marx and Engels",
+    "Mosca and Pareto",
+    "Rawls and Nozick"
+  ],
+  answer: "Almond and Verba",
+  explanation:
+    "Gabriel Almond and Sidney Verba popularized the concept of Political Culture in 'The Civic Culture'.",
+  wrongExplanations: {
+    "Marx and Engels": "Marxism.",
+    "Mosca and Pareto": "Elite Theory.",
+    "Rawls and Nozick": "Political philosophy."
+  },
+  hint:
+    "The Civic Culture."
+},
+{
+  category: "Political Science",
+  question: "Who is known as the Father of Behavioralism in Political Science?",
+  options: [
+    "David Easton",
+    "Charles Merriam",
+    "Gabriel Almond",
+    "Harold Lasswell"
+  ],
+  answer: "Charles Merriam",
+  explanation:
+    "Charles Merriam is widely regarded as the Father of Behavioralism for promoting scientific methods in political studies.",
+  wrongExplanations: {
+    "David Easton": "Systems Theory.",
+    "Gabriel Almond": "Structural Functionalism.",
+    "Harold Lasswell": "Politics as who gets what, when and how."
+  },
+  hint:
+    "Chicago School."
+},
+
+{
+  category: "Political Science",
+  question: "Who gave the call for Post-Behavioralism in Political Science?",
+  options: [
+    "David Easton",
+    "Robert Dahl",
+    "Karl Deutsch",
+    "Gabriel Almond"
+  ],
+  answer: "David Easton",
+  explanation:
+    "David Easton advocated Post-Behavioralism, emphasizing relevance and action in political research.",
+  wrongExplanations: {
+    "Robert Dahl": "Polyarchy.",
+    "Karl Deutsch": "Communication Theory.",
+    "Gabriel Almond": "Political Culture."
+  },
+  hint:
+    "Relevance and Action."
+},
+
+{
+  category: "Political Science",
+  question: "Political socialization refers to:",
+  options: [
+    "Formation of governments",
+    "Learning political values and attitudes",
+    "Conducting elections",
+    "Making laws"
+  ],
+  answer: "Learning political values and attitudes",
+  explanation:
+    "Political socialization is the process through which individuals acquire political beliefs, values and orientations.",
+  wrongExplanations: {
+    "Formation of governments": "Government formation process.",
+    "Conducting elections": "Election administration.",
+    "Making laws": "Legislative function."
+  },
+  hint:
+    "Family, school and media influence it."
+},
+
+{
+  category: "Political Science",
+  question: "Which of the following is an agent of political socialization?",
+  options: [
+    "Family",
+    "School",
+    "Media",
+    "All of the above"
+  ],
+  answer: "All of the above",
+  explanation:
+    "Family, schools, media, peer groups and political institutions all shape political attitudes.",
+  wrongExplanations: {
+    "Family": "Only one agent.",
+    "School": "Only one agent.",
+    "Media": "Only one agent."
+  },
+  hint:
+    "Multiple institutions shape political beliefs."
+},
+
+{
+  category: "Political Science",
+  question: "Political participation includes:",
+  options: [
+    "Voting",
+    "Campaigning",
+    "Joining political parties",
+    "All of the above"
+  ],
+  answer: "All of the above",
+  explanation:
+    "Political participation includes all activities through which citizens influence political decisions.",
+  wrongExplanations: {
+    "Voting": "One form of participation.",
+    "Campaigning": "One form of participation.",
+    "Joining political parties": "One form of participation."
+  },
+  hint:
+    "Citizen involvement in politics."
+},
+{
+  category: "Political Science",
+  question: "Who defined sovereignty as the 'supreme power over citizens and subjects, unrestrained by law'?",
+  options: [
+    "Jean Bodin",
+    "John Locke",
+    "Rousseau",
+    "Laski"
+  ],
+  answer: "Jean Bodin",
+  explanation:
+    "Jean Bodin is regarded as the first modern theorist of sovereignty.",
+  wrongExplanations: {
+    "John Locke": "Natural rights theorist.",
+    "Rousseau": "General Will.",
+    "Laski": "Pluralist critic of sovereignty."
+  },
+  hint:
+    "Father of the modern theory of sovereignty."
+},
+
+{
+  category: "Political Science",
+  question: "Who wrote the famous essay 'On Liberty'?",
+  options: [
+    "Jeremy Bentham",
+    "John Stuart Mill",
+    "Thomas Hobbes",
+    "Jean Bodin"
+  ],
+  answer: "John Stuart Mill",
+  explanation:
+    "J.S. Mill's 'On Liberty' is a classic defense of individual freedom.",
+  wrongExplanations: {
+    "Jeremy Bentham": "Utilitarian thinker.",
+    "Thomas Hobbes": "Author of Leviathan.",
+    "Jean Bodin": "Sovereignty theorist."
+  },
+  hint:
+    "Liberty and individual freedom."
+},
+
+{
+  category: "Political Science",
+  question: "Which thinker is most closely associated with the concept of Justice as Fairness?",
+  options: [
+    "Karl Marx",
+    "John Rawls",
+    "Robert Nozick",
+    "Bentham"
+  ],
+  answer: "John Rawls",
+  explanation:
+    "Rawls argued that a just society should be based on fairness and equal opportunity.",
+  wrongExplanations: {
+    "Karl Marx": "Class struggle.",
+    "Robert Nozick": "Libertarianism.",
+    "Bentham": "Utilitarianism."
+  },
+  hint:
+    "A Theory of Justice."
+},
+
+{
+  category: "Political Science",
+  question: "According to Harold Laski, rights are:",
+  options: [
+    "Natural and unchangeable",
+    "Conditions necessary for the development of personality",
+    "Gifts from the State",
+    "Privileges of citizens"
+  ],
+  answer: "Conditions necessary for the development of personality",
+  explanation:
+    "Laski viewed rights as social conditions essential for the full development of human personality.",
+  wrongExplanations: {
+    "Natural and unchangeable": "Natural rights theory.",
+    "Gifts from the State": "Incorrect.",
+    "Privileges of citizens": "Too narrow."
+  },
+  hint:
+    "Pluralist thinker."
+},
+
+{
+  category: "Political Science",
+  question: "Equality before law is a concept borrowed from:",
+  options: [
+    "United States",
+    "France",
+    "Britain",
+    "Canada"
+  ],
+  answer: "Britain",
+  explanation:
+    "The concept of Equality before Law is derived from the British principle of Rule of Law.",
+  wrongExplanations: {
+    "United States": "Provided judicial review and fundamental rights influence.",
+    "France": "Liberty, Equality, Fraternity.",
+    "Canada": "Federal influences."
+  },
+  hint:
+    "A.V. Dicey's Rule of Law."
+},
+{
+  category: "Political Science",
+  question: "Who wrote 'The Communist Manifesto' along with Friedrich Engels?",
+  options: [
+    "Vladimir Lenin",
+    "Karl Marx",
+    "Antonio Gramsci",
+    "Mao Zedong"
+  ],
+  answer: "Karl Marx",
+  explanation:
+    "Karl Marx and Friedrich Engels jointly wrote The Communist Manifesto in 1848.",
+  wrongExplanations: {
+    "Vladimir Lenin": "Russian revolutionary leader.",
+    "Antonio Gramsci": "Italian Marxist thinker.",
+    "Mao Zedong": "Chinese communist leader."
+  },
+  hint:
+    "Father of Marxism."
+},
+
+{
+  category: "Political Science",
+  question: "Who developed the theory of the Vanguard Party?",
+  options: [
+    "Karl Marx",
+    "Lenin",
+    "Gramsci",
+    "Trotsky"
+  ],
+  answer: "Lenin",
+  explanation:
+    "Lenin argued that a disciplined Vanguard Party should lead the working class revolution.",
+  wrongExplanations: {
+    "Karl Marx": "Did not develop the Vanguard Party concept.",
+    "Gramsci": "Known for Cultural Hegemony.",
+    "Trotsky": "Permanent Revolution."
+  },
+  hint:
+    "Leader of the Bolsheviks."
+},
+
+{
+  category: "Political Science",
+  question: "Antonio Gramsci is famous for the concept of:",
+  options: [
+    "General Will",
+    "Cultural Hegemony",
+    "Polyarchy",
+    "Natural Rights"
+  ],
+  answer: "Cultural Hegemony",
+  explanation:
+    "Gramsci argued that ruling classes maintain power through cultural influence and consent.",
+  wrongExplanations: {
+    "General Will": "Rousseau.",
+    "Polyarchy": "Robert Dahl.",
+    "Natural Rights": "John Locke."
+  },
+  hint:
+    "Power through culture."
+},
+
+{
+  category: "Political Science",
+  question: "Which ideology primarily advocates public ownership of the means of production?",
+  options: [
+    "Liberalism",
+    "Conservatism",
+    "Socialism",
+    "Fascism"
+  ],
+  answer: "Socialism",
+  explanation:
+    "Socialism emphasizes collective or public ownership of major economic resources.",
+  wrongExplanations: {
+    "Liberalism": "Individual liberty and market economy.",
+    "Conservatism": "Tradition and stability.",
+    "Fascism": "Authoritarian nationalism."
+  },
+  hint:
+    "Collective ownership."
+},
+
+{
+  category: "Political Science",
+  question: "Feminism primarily seeks:",
+  options: [
+    "Religious reform",
+    "Gender equality",
+    "Economic planning",
+    "Military expansion"
+  ],
+  answer: "Gender equality",
+  explanation:
+    "Feminism is a movement and theory that advocates equality between genders.",
+  wrongExplanations: {
+    "Religious reform": "Not its primary goal.",
+    "Economic planning": "Not its primary focus.",
+    "Military expansion": "Unrelated."
+  },
+  hint:
+    "Equal rights and opportunities."
+},
+{
+  category: "Political Science",
+  question: "Which ideology places the highest emphasis on individual liberty?",
+  options: [
+    "Liberalism",
+    "Socialism",
+    "Fascism",
+    "Communism"
+  ],
+  answer: "Liberalism",
+  explanation:
+    "Liberalism emphasizes individual freedom, limited government and protection of rights.",
+  wrongExplanations: {
+    "Socialism": "Focuses more on economic equality.",
+    "Fascism": "Prioritizes the state over the individual.",
+    "Communism": "Focuses on classless society."
+  },
+  hint:
+    "Freedom of the individual."
+},
+
+{
+  category: "Political Science",
+  question: "Conservatism generally emphasizes:",
+  options: [
+    "Revolution",
+    "Tradition and gradual change",
+    "Class struggle",
+    "Abolition of government"
+  ],
+  answer: "Tradition and gradual change",
+  explanation:
+    "Conservatives generally support established institutions, traditions and gradual reform.",
+  wrongExplanations: {
+    "Revolution": "Associated with radical change.",
+    "Class struggle": "Marxist concept.",
+    "Abolition of government": "Anarchism."
+  },
+  hint:
+    "Stability over rapid change."
+},
+
+{
+  category: "Political Science",
+  question: "Which ideology advocates a society without a state?",
+  options: [
+    "Liberalism",
+    "Conservatism",
+    "Anarchism",
+    "Fascism"
+  ],
+  answer: "Anarchism",
+  explanation:
+    "Anarchism seeks the abolition of the state and other coercive institutions.",
+  wrongExplanations: {
+    "Liberalism": "Supports limited government.",
+    "Conservatism": "Supports traditional authority.",
+    "Fascism": "Supports a strong state."
+  },
+  hint:
+    "No state."
+},
+
+{
+  category: "Political Science",
+  question: "Globalization refers to:",
+  options: [
+    "Isolation of nations",
+    "Increasing interconnectedness among countries",
+    "Military expansion",
+    "Decentralization of villages"
+  ],
+  answer: "Increasing interconnectedness among countries",
+  explanation:
+    "Globalization involves growing economic, political and cultural links across the world.",
+  wrongExplanations: {
+    "Isolation of nations": "Opposite of globalization.",
+    "Military expansion": "Not the definition.",
+    "Decentralization of villages": "Unrelated."
+  },
+  hint:
+    "A more connected world."
+},
+
+{
+  category: "Political Science",
+  question: "Nationalism is primarily based on:",
+  options: [
+    "Class identity",
+    "Religious authority only",
+    "Shared national identity",
+    "Economic equality"
+  ],
+  answer: "Shared national identity",
+  explanation:
+    "Nationalism emphasizes loyalty and attachment to a nation and its people.",
+  wrongExplanations: {
+    "Class identity": "Marxist emphasis.",
+    "Religious authority only": "Too narrow.",
+    "Economic equality": "Socialist concern."
+  },
+  hint:
+    "Nation before all."
+},
+{
+  category: "Political Science",
+  question: "Political development generally refers to:",
+  options: [
+    "Increase in population",
+    "Growth of political institutions and processes",
+    "Economic growth only",
+    "Military expansion"
+  ],
+  answer: "Growth of political institutions and processes",
+  explanation:
+    "Political development involves the strengthening and modernization of political institutions and governance.",
+  wrongExplanations: {
+    "Increase in population": "Demographic change.",
+    "Economic growth only": "Not purely political development.",
+    "Military expansion": "Not the definition."
+  },
+  hint:
+    "Institutional growth."
+},
+
+{
+  category: "Political Science",
+  question: "Who is most closely associated with the concept of Political Modernization?",
+  options: [
+    "Lucian Pye",
+    "Karl Marx",
+    "John Locke",
+    "Jean Bodin"
+  ],
+  answer: "Lucian Pye",
+  explanation:
+    "Lucian Pye made significant contributions to the study of political modernization and development.",
+  wrongExplanations: {
+    "Karl Marx": "Historical materialism.",
+    "John Locke": "Liberalism.",
+    "Jean Bodin": "Sovereignty."
+  },
+  hint:
+    "Development scholar."
+},
+
+{
+  category: "Political Science",
+  question: "Dependency Theory is most closely associated with the relationship between:",
+  options: [
+    "Rulers and citizens",
+    "Developed and developing countries",
+    "Legislature and Executive",
+    "Political parties"
+  ],
+  answer: "Developed and developing countries",
+  explanation:
+    "Dependency Theory argues that poorer countries remain dependent on richer countries within the global economic system.",
+  wrongExplanations: {
+    "Rulers and citizens": "Domestic politics.",
+    "Legislature and Executive": "Government institutions.",
+    "Political parties": "Party politics."
+  },
+  hint:
+    "Core and periphery."
+},
+
+{
+  category: "Political Science",
+  question: "Federalism refers to a system of government where:",
+  options: [
+    "Power is concentrated in one authority",
+    "Power is divided between central and regional governments",
+    "Military rules the state",
+    "Judiciary controls the executive"
+  ],
+  answer: "Power is divided between central and regional governments",
+  explanation:
+    "Federalism involves constitutional division of powers between different levels of government.",
+  wrongExplanations: {
+    "Power is concentrated in one authority": "Unitary system.",
+    "Military rules the state": "Military rule.",
+    "Judiciary controls the executive": "Incorrect."
+  },
+  hint:
+    "Centre and States."
+},
+
+{
+  category: "Political Science",
+  question: "Who distinguished between traditional, charismatic and legal-rational authority?",
+  options: [
+    "Karl Marx",
+    "Max Weber",
+    "David Easton",
+    "Robert Dahl"
+  ],
+  answer: "Max Weber",
+  explanation:
+    "Max Weber classified authority into traditional, charismatic and legal-rational types.",
+  wrongExplanations: {
+    "Karl Marx": "Class struggle.",
+    "David Easton": "Systems Theory.",
+    "Robert Dahl": "Polyarchy."
+  },
+  hint:
+    "German sociologist."
+},
+{
+  category: "Political Science",
+  question: "Who defined Political Science as the study of the State?",
+  options: [
+    "Garner",
+    "David Easton",
+    "Robert Dahl",
+    "Harold Lasswell"
+  ],
+  answer: "Garner",
+  explanation:
+    "J.W. Garner defined Political Science as the study of the State.",
+  wrongExplanations: {
+    "David Easton": "Politics as authoritative allocation of values.",
+    "Robert Dahl": "Polyarchy and pluralism.",
+    "Harold Lasswell": "Who gets what, when and how."
+  },
+  hint:
+    "Classical definition."
+},
+
+{
+  category: "Political Science",
+  question: "Citizenship primarily refers to:",
+  options: [
+    "Ownership of property",
+    "Membership in a political community",
+    "Voting only",
+    "Government employment"
+  ],
+  answer: "Membership in a political community",
+  explanation:
+    "Citizenship denotes legal membership in a state along with rights and duties.",
+  wrongExplanations: {
+    "Ownership of property": "Not citizenship.",
+    "Voting only": "One aspect of citizenship.",
+    "Government employment": "Unrelated."
+  },
+  hint:
+    "Rights and duties."
+},
+
+{
+  category: "Political Science",
+  question: "Democracy literally means:",
+  options: [
+    "Rule by the rich",
+    "Rule by the military",
+    "Rule by the people",
+    "Rule by kings"
+  ],
+  answer: "Rule by the people",
+  explanation:
+    "The term democracy comes from the Greek words 'demos' (people) and 'kratos' (rule).",
+  wrongExplanations: {
+    "Rule by the rich": "Oligarchy.",
+    "Rule by the military": "Military regime.",
+    "Rule by kings": "Monarchy."
+  },
+  hint:
+    "Demos + Kratos."
+},
+
+{
+  category: "Political Science",
+  question: "Legitimacy in politics refers to:",
+  options: [
+    "Use of force",
+    "Acceptance of authority as rightful",
+    "Winning elections only",
+    "Economic development"
+  ],
+  answer: "Acceptance of authority as rightful",
+  explanation:
+    "Legitimacy exists when people believe political authority is justified and should be obeyed.",
+  wrongExplanations: {
+    "Use of force": "Coercion, not legitimacy.",
+    "Winning elections only": "One source, not the definition.",
+    "Economic development": "May influence legitimacy."
+  },
+  hint:
+    "Right to rule."
+},
+
+{
+  category: "Political Science",
+  question: "According to Robert Dahl, power means:",
+  options: [
+    "Military strength only",
+    "Economic wealth only",
+    "The ability to get others to do what they otherwise would not do",
+    "Legal authority only"
+  ],
+  answer: "The ability to get others to do what they otherwise would not do",
+  explanation:
+    "Dahl defined power as the ability of A to get B to do something B would not otherwise do.",
+  wrongExplanations: {
+    "Military strength only": "Too narrow.",
+    "Economic wealth only": "One source of power.",
+    "Legal authority only": "Not the full concept."
+  },
+  hint:
+    "A influences B."
+},
+{
+  category: "Political Science",
+  question: "According to T.H. Green, liberty means:",
+  options: [
+    "Absence of all restraints",
+    "Freedom to do anything",
+    "Positive power to do something worth doing",
+    "Rule by law"
+  ],
+  answer: "Positive power to do something worth doing",
+  explanation:
+    "T.H. Green advocated Positive Liberty, emphasizing the ability to develop one's potential.",
+  wrongExplanations: {
+    "Absence of all restraints": "Negative liberty view.",
+    "Freedom to do anything": "Too broad.",
+    "Rule by law": "Different concept."
+  },
+  hint:
+    "Positive liberty."
+},
+
+{
+  category: "Political Science",
+  question: "Who famously stated that 'Liberty consists in doing what one desires'?",
+  options: [
+    "Hobbes",
+    "Locke",
+    "Rousseau",
+    "Bentham"
+  ],
+  answer: "Hobbes",
+  explanation:
+    "Thomas Hobbes viewed liberty as the absence of external impediments.",
+  wrongExplanations: {
+    "Locke": "Natural rights.",
+    "Rousseau": "General Will.",
+    "Bentham": "Utilitarianism."
+  },
+  hint:
+    "Author of Leviathan."
+},
+
+{
+  category: "Political Science",
+  question: "Which thinker is associated with the concept of distributive justice?",
+  options: [
+    "John Rawls",
+    "Machiavelli",
+    "Mosca",
+    "Bentham"
+  ],
+  answer: "John Rawls",
+  explanation:
+    "Rawls emphasized fairness and equitable distribution of social and economic benefits.",
+  wrongExplanations: {
+    "Machiavelli": "Political realism.",
+    "Mosca": "Elite theory.",
+    "Bentham": "Utilitarianism."
+  },
+  hint:
+    "Justice as Fairness."
+},
+
+{
+  category: "Political Science",
+  question: "Political obligation refers to:",
+  options: [
+    "Duty to obey the laws of the state",
+    "Right to vote",
+    "Formation of government",
+    "Political participation"
+  ],
+  answer: "Duty to obey the laws of the state",
+  explanation:
+    "Political obligation concerns why citizens should obey the authority and laws of the state.",
+  wrongExplanations: {
+    "Right to vote": "Political right.",
+    "Formation of government": "Political process.",
+    "Political participation": "Citizen activity."
+  },
+  hint:
+    "Why obey the state?"
+},
+
+{
+  category: "Political Science",
+  question: "Equality of opportunity means:",
+  options: [
+    "Everyone gets identical outcomes",
+    "Everyone has the same income",
+    "Everyone has a fair chance to succeed",
+    "Everyone holds the same position"
+  ],
+  answer: "Everyone has a fair chance to succeed",
+  explanation:
+    "Equality of opportunity ensures individuals have equal access to opportunities regardless of background.",
+  wrongExplanations: {
+    "Everyone gets identical outcomes": "Equality of outcome.",
+    "Everyone has the same income": "Economic equality.",
+    "Everyone holds the same position": "Incorrect."
+  },
+  hint:
+    "Fair chance, not same result."
+},
+{
+  category: "Political Science",
+  question: "Which political theory emphasizes the importance of ideas over material conditions?",
+  options: [
+    "Marxism",
+    "Idealism",
+    "Behavioralism",
+    "Pluralism"
+  ],
+  answer: "Idealism",
+  explanation:
+    "Idealism emphasizes the role of ideas, values and moral principles in political life.",
+  wrongExplanations: {
+    "Marxism": "Focuses on material and economic factors.",
+    "Behavioralism": "Focuses on observable behavior.",
+    "Pluralism": "Focuses on competing groups."
+  },
+  hint:
+    "Plato is associated with this tradition."
+},
+
+{
+  category: "Political Science",
+  question: "Which theory argues that sovereignty is indivisible and absolute?",
+  options: [
+    "Pluralism",
+    "Monism",
+    "Federalism",
+    "Behavioralism"
+  ],
+  answer: "Monism",
+  explanation:
+    "Monists argue that sovereignty is supreme, indivisible and located in a single authority.",
+  wrongExplanations: {
+    "Pluralism": "Distributes power among groups.",
+    "Federalism": "Division of powers.",
+    "Behavioralism": "Research approach."
+  },
+  hint:
+    "Single supreme authority."
+},
+
+{
+  category: "Political Science",
+  question: "Pluralists argue that power in society is:",
+  options: [
+    "Concentrated in one ruler",
+    "Held by the military",
+    "Distributed among many groups",
+    "Controlled by judges"
+  ],
+  answer: "Distributed among many groups",
+  explanation:
+    "Pluralism sees society as composed of multiple competing groups sharing influence.",
+  wrongExplanations: {
+    "Concentrated in one ruler": "Autocracy.",
+    "Held by the military": "Military regime.",
+    "Controlled by judges": "Judicial rule."
+  },
+  hint:
+    "Multiple centers of power."
+},
+
+{
+  category: "Political Science",
+  question: "Civil society refers to:",
+  options: [
+    "The armed forces",
+    "Organizations existing between the state and family",
+    "The government bureaucracy",
+    "The judiciary"
+  ],
+  answer: "Organizations existing between the state and family",
+  explanation:
+    "Civil society includes voluntary associations, NGOs, unions and community organizations.",
+  wrongExplanations: {
+    "The armed forces": "Part of the state.",
+    "The government bureaucracy": "Government institution.",
+    "The judiciary": "State organ."
+  },
+  hint:
+    "NGOs and associations."
+},
+
+{
+  category: "Political Science",
+  question: "Which thinker is most closely associated with the concept of Civil Society in modern political theory?",
+  options: [
+    "Antonio Gramsci",
+    "Jean Bodin",
+    "Jeremy Bentham",
+    "Charles Merriam"
+  ],
+  answer: "Antonio Gramsci",
+  explanation:
+    "Gramsci viewed civil society as a key arena where cultural hegemony is created and maintained.",
+  wrongExplanations: {
+    "Jean Bodin": "Sovereignty.",
+    "Jeremy Bentham": "Utilitarianism.",
+    "Charles Merriam": "Behavioralism."
+  },
+  hint:
+    "Cultural Hegemony."
+},
+{
   category: "Economics",
   question: "Which bank is known as the Central Bank of India?",
   options: [
@@ -2458,6 +3706,214 @@ const questions = [
   },
   hint:
     "Think of the world of ideas."
+},
+{
+  category: "Education",
+  question: "Who is known as the Father of Modern Education?",
+  options: [
+    "John Dewey",
+    "Jean-Jacques Rousseau",
+    "Johann Heinrich Pestalozzi",
+    "Plato"
+  ],
+  answer: "Johann Heinrich Pestalozzi",
+  explanation:
+    "Pestalozzi is widely regarded as the Father of Modern Education due to his child-centered approach.",
+  wrongExplanations: {
+    "John Dewey": "Known for Pragmatism.",
+    "Jean-Jacques Rousseau": "Naturalism in education.",
+    "Plato": "Ancient Greek philosopher."
+  },
+  hint:
+    "Swiss education reformer."
+},
+
+{
+  category: "Education",
+  question: "Which method of teaching focuses on learning by doing?",
+  options: [
+    "Lecture Method",
+    "Project Method",
+    "Demonstration Method",
+    "Discussion Method"
+  ],
+  answer: "Project Method",
+  explanation:
+    "The Project Method emphasizes learning through practical activities and experiences.",
+  wrongExplanations: {
+    "Lecture Method": "Teacher-centered.",
+    "Demonstration Method": "Shows a process.",
+    "Discussion Method": "Exchange of ideas."
+  },
+  hint:
+    "Associated with activity-based learning."
+},
+
+{
+  category: "Education",
+  question: "Who proposed the theory of Pragmatism in education?",
+  options: [
+    "Plato",
+    "John Dewey",
+    "Aristotle",
+    "Locke"
+  ],
+  answer: "John Dewey",
+  explanation:
+    "John Dewey advocated Pragmatism and emphasized experiential learning.",
+  wrongExplanations: {
+    "Plato": "Idealism.",
+    "Aristotle": "Realism.",
+    "Locke": "Empiricism."
+  },
+  hint:
+    "Learning by doing."
+},
+
+{
+  category: "Education",
+  question: "What is the primary objective of education?",
+  options: [
+    "Passing examinations",
+    "Obtaining jobs only",
+    "All-round development of the individual",
+    "Memorizing facts"
+  ],
+  answer: "All-round development of the individual",
+  explanation:
+    "Education aims at the intellectual, moral, social and physical development of a person.",
+  wrongExplanations: {
+    "Passing examinations": "Only one aspect.",
+    "Obtaining jobs only": "Too narrow.",
+    "Memorizing facts": "Not the ultimate goal."
+  },
+  hint:
+    "Holistic development."
+},
+
+{
+  category: "Education",
+  question: "Which agency is responsible for maintaining standards in higher education in India?",
+  options: [
+    "NCERT",
+    "UGC",
+    "CBSE",
+    "NCTE"
+  ],
+  answer: "UGC",
+  explanation:
+    "The University Grants Commission (UGC) coordinates and maintains standards of higher education in India.",
+  wrongExplanations: {
+    "NCERT": "School education resources.",
+    "CBSE": "School board.",
+    "NCTE": "Teacher education."
+  },
+  hint:
+    "University regulator."
+},
+{
+  category: "Education",
+  question: "Who wrote the famous book 'Emile'?",
+  options: [
+    "John Dewey",
+    "Rousseau",
+    "Pestalozzi",
+    "Plato"
+  ],
+  answer: "Rousseau",
+  explanation:
+    "Jean-Jacques Rousseau wrote 'Emile', a landmark work on naturalistic education.",
+  wrongExplanations: {
+    "John Dewey": "Known for Pragmatism.",
+    "Pestalozzi": "Swiss education reformer.",
+    "Plato": "Wrote The Republic."
+  },
+  hint:
+    "Naturalism in education."
+},
+
+{
+  category: "Education",
+  question: "NCERT stands for:",
+  options: [
+    "National Council of Educational Research and Training",
+    "National Centre for Education Research and Training",
+    "National Council of Elementary Research and Teaching",
+    "National Committee for Education Reform and Training"
+  ],
+  answer: "National Council of Educational Research and Training",
+  explanation:
+    "NCERT is India's apex body for developing school education resources and curriculum.",
+  wrongExplanations: {
+    "National Centre for Education Research and Training": "Incorrect expansion.",
+    "National Council of Elementary Research and Teaching": "Incorrect expansion.",
+    "National Committee for Education Reform and Training": "Incorrect expansion."
+  },
+  hint:
+    "Develops school textbooks."
+},
+
+{
+  category: "Education",
+  question: "Which philosophy believes that reality exists independent of the mind?",
+  options: [
+    "Idealism",
+    "Naturalism",
+    "Realism",
+    "Pragmatism"
+  ],
+  answer: "Realism",
+  explanation:
+    "Realism holds that the external world exists independently of human perception.",
+  wrongExplanations: {
+    "Idealism": "Emphasizes ideas and mind.",
+    "Naturalism": "Focuses on nature.",
+    "Pragmatism": "Focuses on practical consequences."
+  },
+  hint:
+    "Associated with Aristotle."
+},
+
+{
+  category: "Education",
+  question: "Which educational philosophy emphasizes experience as the basis of learning?",
+  options: [
+    "Idealism",
+    "Pragmatism",
+    "Realism",
+    "Essentialism"
+  ],
+  answer: "Pragmatism",
+  explanation:
+    "Pragmatism views learning as a process based on experience and problem-solving.",
+  wrongExplanations: {
+    "Idealism": "Focuses on ideas.",
+    "Realism": "Focuses on objective reality.",
+    "Essentialism": "Focuses on core knowledge."
+  },
+  hint:
+    "John Dewey."
+},
+
+{
+  category: "Education",
+  question: "The Right to Education Act came into force in India in:",
+  options: [
+    "2005",
+    "2007",
+    "2009",
+    "2010"
+  ],
+  answer: "2010",
+  explanation:
+    "The Right to Education Act was implemented on 1 April 2010, making education a fundamental right for children aged 6–14.",
+  wrongExplanations: {
+    "2005": "Incorrect year.",
+    "2007": "Incorrect year.",
+    "2009": "Act passed, but implemented in 2010."
+  },
+  hint:
+    "1 April."
 },
 {
   category: "Public Administration",
