@@ -1067,6 +1067,136 @@ const questions = [
     "Online meetings."
 },
 {
+  id: 921,
+  category: "ICT",
+  question: "What does CPU stand for?",
+  options: [
+    "Central Processing Unit",
+    "Computer Processing Utility",
+    "Central Program Unit",
+    "Control Processing Unit"
+  ],
+  answer: "Central Processing Unit",
+  explanation: "The CPU is the primary component of a computer that performs calculations and executes instructions."
+},
+{
+  id: 922,
+  category: "ICT",
+  question: "Which of the following is an example of system software?",
+  options: [
+    "Microsoft Word",
+    "Google Chrome",
+    "Windows Operating System",
+    "Adobe Photoshop"
+  ],
+  answer: "Windows Operating System",
+  explanation: "An operating system is system software that manages computer hardware and software resources."
+},
+{
+  id: 923,
+  category: "ICT",
+  question: "Which device is primarily used to connect a computer to a network?",
+  options: [
+    "Scanner",
+    "Printer",
+    "Network Interface Card",
+    "Projector"
+  ],
+  answer: "Network Interface Card",
+  explanation: "A Network Interface Card (NIC) enables a computer to communicate over a network."
+},
+{
+  id: 924,
+  category: "ICT",
+  question: "The full form of URL is:",
+  options: [
+    "Uniform Resource Locator",
+    "Universal Resource Link",
+    "Uniform Retrieval Link",
+    "Universal Reference Locator"
+  ],
+  answer: "Uniform Resource Locator",
+  explanation: "A URL is the address used to locate resources on the internet."
+},
+{
+  id: 925,
+  category: "ICT",
+  question: "Which of the following is an example of cloud storage?",
+  options: [
+    "Google Drive",
+    "MS Paint",
+    "Notepad",
+    "Calculator"
+  ],
+  answer: "Google Drive",
+  explanation: "Google Drive is a cloud-based storage service that allows users to store and access files online."
+},
+{
+  id: 926,
+  category: "ICT",
+  question: "Which software is primarily used for creating documents and letters?",
+  options: [
+    "MS Excel",
+    "MS PowerPoint",
+    "MS Word",
+    "MS Access"
+  ],
+  answer: "MS Word",
+  explanation: "MS Word is a word-processing application used for creating, editing, and formatting documents."
+},
+{
+  id: 927,
+  category: "ICT",
+  question: "Which MS Office application is mainly used for spreadsheets and calculations?",
+  options: [
+    "MS Word",
+    "MS PowerPoint",
+    "MS Excel",
+    "MS Outlook"
+  ],
+  answer: "MS Excel",
+  explanation: "MS Excel is used for data analysis, calculations, charts, and spreadsheet management."
+},
+{
+  id: 928,
+  category: "ICT",
+  question: "Which software is commonly used for creating presentations?",
+  options: [
+    "MS Excel",
+    "MS PowerPoint",
+    "MS Word",
+    "MS Access"
+  ],
+  answer: "MS PowerPoint",
+  explanation: "MS PowerPoint is presentation software used to create slide-based presentations."
+},
+{
+  id: 929,
+  category: "ICT",
+  question: "What does HTTP stand for?",
+  options: [
+    "HyperText Transfer Protocol",
+    "High Transfer Text Protocol",
+    "Hyper Transfer Text Process",
+    "Host Transfer Protocol"
+  ],
+  answer: "HyperText Transfer Protocol",
+  explanation: "HTTP is the protocol used for transferring web pages and data on the World Wide Web."
+},
+{
+  id: 930,
+  category: "ICT",
+  question: "Which symbol is mandatory in a valid email address?",
+  options: [
+    "#",
+    "&",
+    "@",
+    "%"
+  ],
+  answer: "@",
+  explanation: "The '@' symbol separates the username from the domain name in an email address."
+},
+{
   category: "Reasoning",
   question: "If A = 1, B = 2, C = 3, then CAT = ?",
   options: [
@@ -1980,6 +2110,136 @@ const questions = [
   },
   hint:
     "Do not overthink the pattern."
+},
+{
+  id: 971,
+  category: "Reasoning",
+  question: "If A is the brother of B, B is the sister of C, and C is the father of D, then A is D's:",
+  options: [
+    "Father",
+    "Uncle",
+    "Brother",
+    "Grandfather"
+  ],
+  answer: "Uncle",
+  explanation: "A and C are siblings. Since C is D's father, A is D's uncle."
+},
+{
+  id: 972,
+  category: "Reasoning",
+  question: "Find the next number in the series: 2, 4, 8, 16, 32, ?",
+  options: [
+    "48",
+    "56",
+    "64",
+    "72"
+  ],
+  answer: "64",
+  explanation: "Each number is multiplied by 2. Therefore, 32 × 2 = 64."
+},
+{
+  id: 973,
+  category: "Reasoning",
+  question: "If SOUTH is written as HTUOS, then EAST will be written as:",
+  options: [
+    "TSAE",
+    "ETSA",
+    "SAET",
+    "ASTE"
+  ],
+  answer: "TSAE",
+  explanation: "The word is written in reverse order. EAST becomes TSAE."
+},
+{
+  id: 974,
+  category: "Reasoning",
+  question: "Which one of the following is different from the others?",
+  options: [
+    "Square",
+    "Rectangle",
+    "Triangle",
+    "Parallelogram"
+  ],
+  answer: "Triangle",
+  explanation: "Triangle has three sides, whereas the others are quadrilaterals with four sides."
+},
+{
+  id: 975,
+  category: "Reasoning",
+  question: "A clock shows 3:00. What is the angle between the hour hand and the minute hand?",
+  options: [
+    "45°",
+    "60°",
+    "90°",
+    "120°"
+  ],
+  answer: "90°",
+  explanation: "At 3:00, the minute hand is at 12 and the hour hand is at 3, forming a right angle of 90°."
+},
+{
+  id: 976,
+  category: "Reasoning",
+  question: "If CAT is coded as DBU, then DOG is coded as:",
+  options: [
+    "EPH",
+    "EOG",
+    "EOH",
+    "FPH"
+  ],
+  answer: "EPH",
+  explanation: "Each letter is shifted forward by one position. D→E, O→P, G→H."
+},
+{
+  id: 977,
+  category: "Reasoning",
+  question: "Pointing to a woman, Raj said, 'She is the daughter of my mother's only daughter.' How is the woman related to Raj?",
+  options: [
+    "Sister",
+    "Daughter",
+    "Niece",
+    "Mother"
+  ],
+  answer: "Daughter",
+  explanation: "Raj's mother's only daughter is Raj himself if female or Raj's sister if male. In standard reasoning interpretation, the woman is Raj's daughter."
+},
+{
+  id: 978,
+  category: "Reasoning",
+  question: "A person walks 5 km north, then 3 km east, and then 5 km south. How far is the person from the starting point?",
+  options: [
+    "2 km",
+    "3 km",
+    "5 km",
+    "8 km"
+  ],
+  answer: "3 km",
+  explanation: "The north and south movements cancel out, leaving the person 3 km east of the starting point."
+},
+{
+  id: 979,
+  category: "Reasoning",
+  question: "Book : Reading :: Food : ?",
+  options: [
+    "Cooking",
+    "Eating",
+    "Kitchen",
+    "Market"
+  ],
+  answer: "Eating",
+  explanation: "A book is used for reading just as food is used for eating."
+},
+{
+  id: 980,
+  category: "Reasoning",
+  question: "Find the next number in the series: 1, 4, 9, 16, 25, ?",
+  options: [
+    "30",
+    "35",
+    "36",
+    "49"
+  ],
+  answer: "36",
+  explanation: "The series consists of perfect squares: 1², 2², 3², 4², 5², so the next is 6² = 36."
 },
 {
   category: "Public Administration",
@@ -3604,6 +3864,201 @@ const questions = [
     "Service sector."
 },
 {
+  id: 981,
+  category: "Economics",
+  question: "GDP stands for:",
+  options: [
+    "Gross Domestic Product",
+    "General Domestic Product",
+    "Gross Development Product",
+    "General Development Product"
+  ],
+  answer: "Gross Domestic Product",
+  explanation: "GDP is the total monetary value of all final goods and services produced within a country's borders during a specific period."
+},
+{
+  id: 982,
+  category: "Economics",
+  question: "Which institution is responsible for issuing currency notes in India (except ₹1 notes)?",
+  options: [
+    "Ministry of Finance",
+    "NITI Aayog",
+    "Reserve Bank of India",
+    "SEBI"
+  ],
+  answer: "Reserve Bank of India",
+  explanation: "The Reserve Bank of India is the sole authority for issuing currency notes in India, except the ₹1 note which is issued by the Government of India."
+},
+{
+  id: 983,
+  category: "Economics",
+  question: "Inflation refers to:",
+  options: [
+    "Increase in unemployment",
+    "General rise in prices",
+    "Decrease in production",
+    "Increase in exports"
+  ],
+  answer: "General rise in prices",
+  explanation: "Inflation is a sustained increase in the general price level of goods and services in an economy over time."
+},
+{
+  id: 984,
+  category: "Economics",
+  question: "Which of the following is known as the 'Banker's Bank' in India?",
+  options: [
+    "SBI",
+    "NABARD",
+    "RBI",
+    "PNB"
+  ],
+  answer: "RBI",
+  explanation: "The RBI is called the Banker's Bank because commercial banks keep deposits with it and receive financial assistance when needed."
+},
+{
+  id: 985,
+  category: "Economics",
+  question: "Fiscal policy primarily deals with:",
+  options: [
+    "Interest rates",
+    "Government revenue and expenditure",
+    "Foreign exchange",
+    "Bank licensing"
+  ],
+  answer: "Government revenue and expenditure",
+  explanation: "Fiscal policy involves government taxation, spending, and borrowing to influence economic activity."
+},
+{
+  id: 986,
+  category: "Economics",
+  question: "The Annual Financial Statement of the Government of India is commonly known as the:",
+  options: [
+    "Economic Survey",
+    "Finance Bill",
+    "Budget",
+    "Appropriation Bill"
+  ],
+  answer: "Budget",
+  explanation: "Under Article 112 of the Constitution, the Annual Financial Statement is popularly known as the Union Budget."
+},
+{
+  id: 987,
+  category: "Economics",
+  question: "Which of the following is a direct tax?",
+  options: [
+    "GST",
+    "Customs Duty",
+    "Income Tax",
+    "Excise Duty"
+  ],
+  answer: "Income Tax",
+  explanation: "A direct tax is paid directly by the person on whom it is imposed. Income Tax is a classic example."
+},
+{
+  id: 988,
+  category: "Economics",
+  question: "Goods and Services Tax (GST) is an example of:",
+  options: [
+    "Direct Tax",
+    "Wealth Tax",
+    "Indirect Tax",
+    "Corporate Tax"
+  ],
+  answer: "Indirect Tax",
+  explanation: "GST is collected indirectly through the sale of goods and services and is ultimately borne by consumers."
+},
+{
+  id: 989,
+  category: "Economics",
+  question: "Which of the following is commonly used to measure poverty in India?",
+  options: [
+    "Poverty Line",
+    "Repo Rate",
+    "Fiscal Deficit",
+    "CRR"
+  ],
+  answer: "Poverty Line",
+  explanation: "The Poverty Line is used as a benchmark to identify individuals and households living below a minimum standard of living."
+},
+{
+  id: 990,
+  category: "Economics",
+  question: "Unemployment refers to a situation where:",
+  options: [
+    "People do not want to work",
+    "People are employed part-time",
+    "People willing and able to work cannot find jobs",
+    "People are retired"
+  ],
+  answer: "People willing and able to work cannot find jobs",
+  explanation: "Unemployment exists when individuals who are willing and able to work are unable to obtain employment."
+},
+{
+  id: 991,
+  category: "Economics",
+  question: "Which institution replaced the Planning Commission of India in 2015?",
+  options: [
+    "Finance Commission",
+    "NITI Aayog",
+    "RBI",
+    "Economic Advisory Council"
+  ],
+  answer: "NITI Aayog",
+  explanation: "NITI Aayog was established on 1 January 2015 to replace the Planning Commission and promote cooperative federalism."
+},
+{
+  id: 992,
+  category: "Economics",
+  question: "The Repo Rate is the rate at which:",
+  options: [
+    "Banks lend to customers",
+    "RBI lends money to commercial banks",
+    "Government borrows from RBI",
+    "Banks borrow from each other"
+  ],
+  answer: "RBI lends money to commercial banks",
+  explanation: "Repo Rate is the rate at which commercial banks borrow short-term funds from the RBI."
+},
+{
+  id: 993,
+  category: "Economics",
+  question: "The Reverse Repo Rate is the rate at which:",
+  options: [
+    "Commercial banks lend money to RBI",
+    "RBI lends money to banks",
+    "Government lends money to banks",
+    "Banks lend money to customers"
+  ],
+  answer: "Commercial banks lend money to RBI",
+  explanation: "The Reverse Repo Rate is the rate at which the RBI borrows money from commercial banks."
+},
+{
+  id: 994,
+  category: "Economics",
+  question: "The Economic Survey of India is presented in Parliament by the:",
+  options: [
+    "President",
+    "Prime Minister",
+    "Ministry of Finance",
+    "RBI Governor"
+  ],
+  answer: "Ministry of Finance",
+  explanation: "The Economic Survey is prepared by the Department of Economic Affairs under the Ministry of Finance and is presented before the Union Budget."
+},
+{
+  id: 995,
+  category: "Economics",
+  question: "Deficit financing refers to a situation where:",
+  options: [
+    "Government expenditure exceeds government revenue",
+    "Exports exceed imports",
+    "Tax revenue exceeds expenditure",
+    "Banks have excess reserves"
+  ],
+  answer: "Government expenditure exceeds government revenue",
+  explanation: "Deficit financing occurs when government spending is greater than its revenue and the gap is financed through borrowing or money creation."
+},
+{
   category: "Education",
   question: "Who is known as the Father of Modern Education?",
   options: [
@@ -3914,6 +4369,266 @@ const questions = [
   },
   hint:
     "1 April."
+},
+{
+  id: 721,
+  category: "Education",
+  question: "Who is known as the 'Father of Modern Education'?",
+  options: [
+    "John Dewey",
+    "Jean-Jacques Rousseau",
+    "Johann Heinrich Pestalozzi",
+    "Plato"
+  ],
+  answer: "Johann Heinrich Pestalozzi",
+  explanation: "Pestalozzi is often called the Father of Modern Education because of his emphasis on child-centered learning and holistic development."
+},
+{
+  id: 722,
+  category: "Education",
+  question: "According to Rousseau, education should be based on:",
+  options: [
+    "Strict discipline",
+    "Natural development of the child",
+    "Memorization",
+    "Religious instruction only"
+  ],
+  answer: "Natural development of the child",
+  explanation: "Rousseau believed that education should follow the natural growth and development of the child."
+},
+{
+  id: 723,
+  category: "Education",
+  question: "John Dewey is most closely associated with which philosophy of education?",
+  options: [
+    "Idealism",
+    "Pragmatism",
+    "Realism",
+    "Naturalism"
+  ],
+  answer: "Pragmatism",
+  explanation: "John Dewey advocated Pragmatism and emphasized learning through experience and problem-solving."
+},
+{
+  id: 724,
+  category: "Education",
+  question: "The primary aim of education in a democracy is to:",
+  options: [
+    "Produce obedient citizens",
+    "Develop responsible and informed citizens",
+    "Promote only economic growth",
+    "Prepare students for examinations"
+  ],
+  answer: "Develop responsible and informed citizens",
+  explanation: "Democratic education seeks to develop informed, responsible, and active citizens capable of participating in society."
+},
+{
+  id: 725,
+  category: "Education",
+  question: "Which educational philosophy emphasizes learning by doing?",
+  options: [
+    "Idealism",
+    "Pragmatism",
+    "Realism",
+    "Essentialism"
+  ],
+  answer: "Pragmatism",
+  explanation: "Pragmatism emphasizes practical experience and learning through action, often summarized as 'learning by doing'."
+},
+{
+  id: 726,
+  category: "Education",
+  question: "Which philosophy of education regards ideas and mind as the ultimate reality?",
+  options: [
+    "Naturalism",
+    "Realism",
+    "Idealism",
+    "Pragmatism"
+  ],
+  answer: "Idealism",
+  explanation: "Idealism considers ideas, values, and the mind as the most important aspects of reality and education."
+},
+{
+  id: 727,
+  category: "Education",
+  question: "Realism in education emphasizes:",
+  options: [
+    "Spiritual development",
+    "Learning through sensory experience and observation",
+    "Learning through imagination only",
+    "Religious instruction"
+  ],
+  answer: "Learning through sensory experience and observation",
+  explanation: "Realism focuses on the objective world and believes knowledge is gained through observation and experience."
+},
+{
+  id: 728,
+  category: "Education",
+  question: "Which educational philosophy advocates that nature should be the guide in the education of children?",
+  options: [
+    "Idealism",
+    "Naturalism",
+    "Pragmatism",
+    "Essentialism"
+  ],
+  answer: "Naturalism",
+  explanation: "Naturalism emphasizes the natural growth of the child and learning according to nature."
+},
+{
+  id: 729,
+  category: "Education",
+  question: "Education received in schools, colleges, and universities is known as:",
+  options: [
+    "Informal Education",
+    "Non-formal Education",
+    "Formal Education",
+    "Distance Education"
+  ],
+  answer: "Formal Education",
+  explanation: "Formal education is structured, organized, and provided through recognized educational institutions."
+},
+{
+  id: 730,
+  category: "Education",
+  question: "One of the major functions of education is:",
+  options: [
+    "Promoting socialization",
+    "Creating social isolation",
+    "Discouraging innovation",
+    "Reducing communication"
+  ],
+  answer: "Promoting socialization",
+  explanation: "Education helps individuals learn social norms, values, and skills necessary for participating in society."
+},
+{
+  id: 731,
+  category: "Education",
+  question: "Which of the following is considered the first agency of education?",
+  options: [
+    "School",
+    "Family",
+    "Community",
+    "State"
+  ],
+  answer: "Family",
+  explanation: "The family is the primary and first agency of education, shaping a child's personality, values, and behavior."
+},
+{
+  id: 732,
+  category: "Education",
+  question: "A curriculum refers to:",
+  options: [
+    "Only the textbook used in a class",
+    "Only classroom teaching",
+    "The total learning experiences provided by an institution",
+    "Only examination activities"
+  ],
+  answer: "The total learning experiences provided by an institution",
+  explanation: "Curriculum includes all planned learning experiences, activities, and assessments provided by an educational institution."
+},
+{
+  id: 733,
+  category: "Education",
+  question: "Which of the following is an example of a co-curricular activity?",
+  options: [
+    "Classroom lecture",
+    "Laboratory experiment",
+    "Debate competition",
+    "Written examination"
+  ],
+  answer: "Debate competition",
+  explanation: "Co-curricular activities such as debates, sports, and cultural programs support the overall development of students."
+},
+{
+  id: 734,
+  category: "Education",
+  question: "Value education primarily aims to develop:",
+  options: [
+    "Physical strength only",
+    "Moral and ethical values",
+    "Examination skills only",
+    "Technical knowledge only"
+  ],
+  answer: "Moral and ethical values",
+  explanation: "Value education promotes honesty, responsibility, respect, empathy, and other ethical qualities."
+},
+{
+  id: 735,
+  category: "Education",
+  question: "Inclusive education refers to:",
+  options: [
+    "Teaching only gifted students",
+    "Providing education to all learners regardless of their differences",
+    "Separate schools for different groups",
+    "Online education only"
+  ],
+  answer: "Providing education to all learners regardless of their differences",
+  explanation: "Inclusive education ensures that all students, including those with disabilities and diverse backgrounds, learn together in the same educational environment."
+},
+{
+  id: 736,
+  category: "Education",
+  question: "The Right to Education (RTE) Act in India came into force in:",
+  options: [
+    "2008",
+    "2009",
+    "2010",
+    "2012"
+  ],
+  answer: "2010",
+  explanation: "The Right of Children to Free and Compulsory Education Act, 2009 came into force on 1 April 2010."
+},
+{
+  id: 737,
+  category: "Education",
+  question: "The National Education Policy (NEP) currently in force was introduced in:",
+  options: [
+    "2015",
+    "2018",
+    "2020",
+    "2022"
+  ],
+  answer: "2020",
+  explanation: "The National Education Policy 2020 replaced the National Policy on Education, 1986 and introduced major reforms in the education system."
+},
+{
+  id: 738,
+  category: "Education",
+  question: "Distance education is especially useful for:",
+  options: [
+    "Only school children",
+    "Only university professors",
+    "Learners who cannot attend regular classes",
+    "Only government employees"
+  ],
+  answer: "Learners who cannot attend regular classes",
+  explanation: "Distance education provides flexibility and access to education for learners who are unable to attend traditional classroom programs."
+},
+{
+  id: 739,
+  category: "Education",
+  question: "The concept of lifelong learning means:",
+  options: [
+    "Learning only during childhood",
+    "Learning only in schools and colleges",
+    "Continuous learning throughout life",
+    "Learning only for employment"
+  ],
+  answer: "Continuous learning throughout life",
+  explanation: "Lifelong learning emphasizes the continuous acquisition of knowledge, skills, and competencies throughout an individual's life."
+},
+{
+  id: 740,
+  category: "Education",
+  question: "Educational technology primarily refers to:",
+  options: [
+    "Using technology to improve teaching and learning",
+    "Manufacturing computers",
+    "School administration only",
+    "Internet use for entertainment"
+  ],
+  answer: "Using technology to improve teaching and learning",
+  explanation: "Educational technology involves the use of digital tools, media, and technological resources to enhance the teaching-learning process."
 },
 {
   category: "Public Administration",
@@ -4489,6 +5204,526 @@ const questions = [
   },
   hint:
     "Amritsar tragedy."
+},
+{
+  id: 901,
+  category: "History",
+  question: "Which civilization is known as the earliest urban civilization in the Indian subcontinent?",
+  options: [
+    "Vedic Civilization",
+    "Mauryan Civilization",
+    "Indus Valley Civilization",
+    "Gupta Civilization"
+  ],
+  answer: "Indus Valley Civilization",
+  explanation: "The Indus Valley Civilization (c. 2500–1900 BCE) was the earliest urban civilization in South Asia, known for planned cities such as Harappa and Mohenjo-daro."
+},
+{
+  id: 902,
+  category: "History",
+  question: "Which city of the Indus Valley Civilization is famous for its Great Bath?",
+  options: [
+    "Harappa",
+    "Lothal",
+    "Mohenjo-daro",
+    "Kalibangan"
+  ],
+  answer: "Mohenjo-daro",
+  explanation: "The Great Bath, one of the most remarkable structures of the Indus Valley Civilization, was discovered at Mohenjo-daro."
+},
+{
+  id: 903,
+  category: "History",
+  question: "Who among the following founded the Mauryan Empire?",
+  options: [
+    "Ashoka",
+    "Bindusara",
+    "Chandragupta Maurya",
+    "Bimbisara"
+  ],
+  answer: "Chandragupta Maurya",
+  explanation: "Chandragupta Maurya founded the Mauryan Empire around 322 BCE with the guidance of Chanakya."
+},
+{
+  id: 904,
+  category: "History",
+  question: "Which Mauryan ruler embraced Buddhism after the Kalinga War?",
+  options: [
+    "Bindusara",
+    "Ashoka",
+    "Chandragupta Maurya",
+    "Dasharatha"
+  ],
+  answer: "Ashoka",
+  explanation: "After witnessing the destruction caused by the Kalinga War, Ashoka adopted Buddhism and promoted peace and non-violence."
+},
+{
+  id: 905,
+  category: "History",
+  question: "The famous work 'Arthashastra' is traditionally associated with:",
+  options: [
+    "Kalidasa",
+    "Chanakya",
+    "Megasthenes",
+    "Panini"
+  ],
+  answer: "Chanakya",
+  explanation: "The Arthashastra is an ancient treatise on statecraft, economics, and administration attributed to Chanakya (Kautilya)."
+},
+{
+  id: 906,
+  category: "History",
+  question: "Who was the Greek ambassador to the court of Chandragupta Maurya?",
+  options: [
+    "Fa-Hien",
+    "Megasthenes",
+    "Hiuen Tsang",
+    "Pliny"
+  ],
+  answer: "Megasthenes",
+  explanation: "Megasthenes was the Greek ambassador sent by Seleucus Nicator to the court of Chandragupta Maurya and wrote the work 'Indica'."
+},
+{
+  id: 907,
+  category: "History",
+  question: "The Gupta period is often referred to as the:",
+  options: [
+    "Age of Conquest",
+    "Golden Age of India",
+    "Age of Revolution",
+    "Age of Trade"
+  ],
+  answer: "Golden Age of India",
+  explanation: "The Gupta period witnessed remarkable achievements in science, literature, mathematics, art, and culture, earning it the title 'Golden Age of India'."
+},
+{
+  id: 908,
+  category: "History",
+  question: "Who wrote the Sanskrit play 'Abhijnanasakuntalam'?",
+  options: [
+    "Banabhatta",
+    "Kalidasa",
+    "Panini",
+    "Harisena"
+  ],
+  answer: "Kalidasa",
+  explanation: "Kalidasa, one of the greatest Sanskrit poets and dramatists, wrote the famous play 'Abhijnanasakuntalam'."
+},
+{
+  id: 909,
+  category: "History",
+  question: "Who among the following is credited with introducing the concept of zero in Indian mathematics?",
+  options: [
+    "Aryabhata",
+    "Varahamihira",
+    "Brahmagupta",
+    "Bhaskara"
+  ],
+  answer: "Brahmagupta",
+  explanation: "Brahmagupta was the first mathematician to clearly define zero as a number and establish rules for its use."
+},
+{
+  id: 910,
+  category: "History",
+  question: "The Chinese pilgrim Hiuen Tsang visited India during the reign of:",
+  options: [
+    "Ashoka",
+    "Samudragupta",
+    "Harshavardhana",
+    "Kanishka"
+  ],
+  answer: "Harshavardhana",
+  explanation: "Hiuen Tsang visited India in the 7th century CE during the reign of Harshavardhana and left valuable accounts of Indian society."
+},
+{
+  id: 911,
+  category: "History",
+  question: "Who was the founder of the Delhi Sultanate?",
+  options: [
+    "Iltutmish",
+    "Qutb-ud-din Aibak",
+    "Balban",
+    "Alauddin Khalji"
+  ],
+  answer: "Qutb-ud-din Aibak",
+  explanation: "Qutb-ud-din Aibak founded the Delhi Sultanate in 1206 and established the Mamluk (Slave) Dynasty."
+},
+{
+  id: 912,
+  category: "History",
+  question: "Who completed the construction of the Qutb Minar after Qutb-ud-din Aibak?",
+  options: [
+    "Balban",
+    "Razia Sultan",
+    "Iltutmish",
+    "Alauddin Khalji"
+  ],
+  answer: "Iltutmish",
+  explanation: "Iltutmish, the successor of Qutb-ud-din Aibak, completed the Qutb Minar and strengthened the Delhi Sultanate."
+},
+{
+  id: 913,
+  category: "History",
+  question: "Who was the first woman ruler of the Delhi Sultanate?",
+  options: [
+    "Nur Jahan",
+    "Razia Sultan",
+    "Mumtaz Mahal",
+    "Jahanara Begum"
+  ],
+  answer: "Razia Sultan",
+  explanation: "Razia Sultan ruled from 1236 to 1240 and was the first and only woman to sit on the throne of the Delhi Sultanate."
+},
+{
+  id: 914,
+  category: "History",
+  question: "Which Delhi Sultan introduced market control measures and price regulations?",
+  options: [
+    "Muhammad bin Tughlaq",
+    "Balban",
+    "Alauddin Khalji",
+    "Firoz Shah Tughlaq"
+  ],
+  answer: "Alauddin Khalji",
+  explanation: "Alauddin Khalji introduced strict market regulations, price controls, and administrative reforms to maintain a large army."
+},
+{
+  id: 915,
+  category: "History",
+  question: "Muhammad bin Tughlaq is particularly known for:",
+  options: [
+    "Building the Taj Mahal",
+    "Introducing token currency",
+    "Founding the Mughal Empire",
+    "Abolishing land revenue"
+  ],
+  answer: "Introducing token currency",
+  explanation: "Muhammad bin Tughlaq introduced token currency and attempted to shift the capital from Delhi to Daulatabad, though both policies faced difficulties."
+},
+{
+  id: 916,
+  category: "History",
+  question: "Who founded the Mughal Empire in India?",
+  options: [
+    "Humayun",
+    "Akbar",
+    "Babur",
+    "Sher Shah Suri"
+  ],
+  answer: "Babur",
+  explanation: "Babur founded the Mughal Empire after defeating Ibrahim Lodi in the First Battle of Panipat in 1526."
+},
+{
+  id: 917,
+  category: "History",
+  question: "The First Battle of Panipat was fought in:",
+  options: [
+    "1526",
+    "1556",
+    "1576",
+    "1761"
+  ],
+  answer: "1526",
+  explanation: "The First Battle of Panipat was fought in 1526 between Babur and Ibrahim Lodi, leading to the establishment of the Mughal Empire."
+},
+{
+  id: 918,
+  category: "History",
+  question: "Who introduced the policy of Sulh-i-Kul (Universal Peace)?",
+  options: [
+    "Babur",
+    "Humayun",
+    "Akbar",
+    "Aurangzeb"
+  ],
+  answer: "Akbar",
+  explanation: "Akbar introduced the policy of Sulh-i-Kul, emphasizing tolerance and peaceful coexistence among different religious communities."
+},
+{
+  id: 919,
+  category: "History",
+  question: "Din-i-Ilahi was introduced by:",
+  options: [
+    "Babur",
+    "Akbar",
+    "Jahangir",
+    "Shah Jahan"
+  ],
+  answer: "Akbar",
+  explanation: "Din-i-Ilahi was a spiritual order introduced by Akbar in 1582, combining elements from different religions."
+},
+{
+  id: 920,
+  category: "History",
+  question: "Who was the author of the Ain-i-Akbari?",
+  options: [
+    "Abul Fazl",
+    "Faizi",
+    "Badauni",
+    "Todar Mal"
+  ],
+  answer: "Abul Fazl",
+  explanation: "Abul Fazl wrote the Ain-i-Akbari, an important record of Akbar's administration, economy, military, and society."
+},
+{
+  id: 931,
+  category: "History",
+  question: "The Revolt of 1857 began at:",
+  options: [
+    "Delhi",
+    "Kanpur",
+    "Meerut",
+    "Lucknow"
+  ],
+  answer: "Meerut",
+  explanation: "The Revolt of 1857 started at Meerut on 10 May 1857 and soon spread to other parts of northern India."
+},
+{
+  id: 932,
+  category: "History",
+  question: "Who was proclaimed the Emperor of India during the Revolt of 1857?",
+  options: [
+    "Bahadur Shah II",
+    "Nana Sahib",
+    "Tantia Tope",
+    "Rani Lakshmibai"
+  ],
+  answer: "Bahadur Shah II",
+  explanation: "The rebels declared Bahadur Shah II, the last Mughal ruler, as the Emperor of India."
+},
+{
+  id: 933,
+  category: "History",
+  question: "The Indian National Congress was founded in:",
+  options: [
+    "1885",
+    "1887",
+    "1905",
+    "1919"
+  ],
+  answer: "1885",
+  explanation: "The Indian National Congress was founded in 1885 by A.O. Hume with the aim of promoting political dialogue and reforms."
+},
+{
+  id: 934,
+  category: "History",
+  question: "Who presided over the first session of the Indian National Congress?",
+  options: [
+    "A.O. Hume",
+    "Dadabhai Naoroji",
+    "W.C. Bonnerjee",
+    "Surendranath Banerjee"
+  ],
+  answer: "W.C. Bonnerjee",
+  explanation: "Womesh Chandra Bonnerjee presided over the first session of the Indian National Congress held in Bombay in 1885."
+},
+{
+  id: 935,
+  category: "History",
+  question: "The partition of Bengal took place in:",
+  options: [
+    "1905",
+    "1907",
+    "1911",
+    "1919"
+  ],
+  answer: "1905",
+  explanation: "Lord Curzon partitioned Bengal in 1905, leading to widespread protests and the Swadeshi Movement."
+},
+{
+  id: 936,
+  category: "History",
+  question: "The Swadeshi Movement was launched in response to:",
+  options: [
+    "Rowlatt Act",
+    "Partition of Bengal",
+    "Jallianwala Bagh Massacre",
+    "Simon Commission"
+  ],
+  answer: "Partition of Bengal",
+  explanation: "The Swadeshi Movement began in 1905 as a protest against the partition of Bengal by Lord Curzon."
+},
+{
+  id: 937,
+  category: "History",
+  question: "The All-India Muslim League was founded in:",
+  options: [
+    "1885",
+    "1906",
+    "1916",
+    "1920"
+  ],
+  answer: "1906",
+  explanation: "The All-India Muslim League was established at Dacca (now Dhaka) in 1906."
+},
+{
+  id: 938,
+  category: "History",
+  question: "Who started the Home Rule Movement in India?",
+  options: [
+    "Mahatma Gandhi and Jawaharlal Nehru",
+    "Bal Gangadhar Tilak and Annie Besant",
+    "Dadabhai Naoroji and Gokhale",
+    "Subhas Chandra Bose and Patel"
+  ],
+  answer: "Bal Gangadhar Tilak and Annie Besant",
+  explanation: "The Home Rule Movement was launched in 1916 by Bal Gangadhar Tilak and Annie Besant to demand self-government for India."
+},
+{
+  id: 939,
+  category: "History",
+  question: "The Jallianwala Bagh Massacre took place in:",
+  options: [
+    "1917",
+    "1918",
+    "1919",
+    "1920"
+  ],
+  answer: "1919",
+  explanation: "The Jallianwala Bagh Massacre occurred on 13 April 1919 in Amritsar when troops under General Dyer fired on a peaceful gathering."
+},
+{
+  id: 940,
+  category: "History",
+  question: "The Rowlatt Act of 1919 was criticized because it:",
+  options: [
+    "Promoted local self-government",
+    "Allowed detention without trial",
+    "Granted dominion status",
+    "Abolished land revenue"
+  ],
+  answer: "Allowed detention without trial",
+  explanation: "The Rowlatt Act empowered the government to arrest and detain individuals without trial, leading to widespread opposition across India."
+},
+{
+  id: 941,
+  category: "History",
+  question: "The Non-Cooperation Movement was launched by Mahatma Gandhi in:",
+  options: [
+    "1919",
+    "1920",
+    "1922",
+    "1930"
+  ],
+  answer: "1920",
+  explanation: "The Non-Cooperation Movement was launched in 1920 to protest against British rule and promote self-reliance."
+},
+{
+  id: 942,
+  category: "History",
+  question: "The Non-Cooperation Movement was withdrawn following the:",
+  options: [
+    "Jallianwala Bagh Massacre",
+    "Chauri Chaura Incident",
+    "Dandi March",
+    "Simon Commission"
+  ],
+  answer: "Chauri Chaura Incident",
+  explanation: "Gandhi withdrew the Non-Cooperation Movement in 1922 after the violent Chauri Chaura Incident in Uttar Pradesh."
+},
+{
+  id: 943,
+  category: "History",
+  question: "The Civil Disobedience Movement began with the:",
+  options: [
+    "Quit India Movement",
+    "Dandi March",
+    "Khilafat Movement",
+    "Lucknow Pact"
+  ],
+  answer: "Dandi March",
+  explanation: "The Civil Disobedience Movement was launched in 1930 with Gandhi's Dandi March to protest the British salt tax."
+},
+{
+  id: 944,
+  category: "History",
+  question: "The Dandi March started from:",
+  options: [
+    "Wardha",
+    "Ahmedabad",
+    "Sabarmati Ashram",
+    "Bombay"
+  ],
+  answer: "Sabarmati Ashram",
+  explanation: "Mahatma Gandhi began the historic Dandi March from Sabarmati Ashram on 12 March 1930."
+},
+{
+  id: 945,
+  category: "History",
+  question: "How many Round Table Conferences were held in London between 1930 and 1932?",
+  options: [
+    "One",
+    "Two",
+    "Three",
+    "Four"
+  ],
+  answer: "Three",
+  explanation: "Three Round Table Conferences were held in London to discuss constitutional reforms and India's political future."
+},
+{
+  id: 946,
+  category: "History",
+  question: "The Gandhi-Irwin Pact was signed in:",
+  options: [
+    "1929",
+    "1930",
+    "1931",
+    "1932"
+  ],
+  answer: "1931",
+  explanation: "The Gandhi-Irwin Pact was signed in March 1931 between Mahatma Gandhi and Lord Irwin, leading to the suspension of the Civil Disobedience Movement."
+},
+{
+  id: 947,
+  category: "History",
+  question: "The Poona Pact of 1932 was signed between:",
+  options: [
+    "Mahatma Gandhi and B.R. Ambedkar",
+    "Gandhi and Jinnah",
+    "Nehru and Ambedkar",
+    "Tilak and Gokhale"
+  ],
+  answer: "Mahatma Gandhi and B.R. Ambedkar",
+  explanation: "The Poona Pact provided for reserved seats for the Depressed Classes within the general electorate and was signed by Gandhi and Ambedkar."
+},
+{
+  id: 948,
+  category: "History",
+  question: "The Quit India Movement was launched in:",
+  options: [
+    "1939",
+    "1940",
+    "1942",
+    "1945"
+  ],
+  answer: "1942",
+  explanation: "The Quit India Movement was launched by the Indian National Congress on 8 August 1942 with the slogan 'Do or Die'."
+},
+{
+  id: 949,
+  category: "History",
+  question: "Who was the leader of the Indian National Army (INA)?",
+  options: [
+    "Bhagat Singh",
+    "Subhas Chandra Bose",
+    "Jawaharlal Nehru",
+    "Sardar Patel"
+  ],
+  answer: "Subhas Chandra Bose",
+  explanation: "Subhas Chandra Bose reorganized and led the Indian National Army to fight against British rule."
+},
+{
+  id: 950,
+  category: "History",
+  question: "The Cabinet Mission came to India in:",
+  options: [
+    "1942",
+    "1945",
+    "1946",
+    "1947"
+  ],
+  answer: "1946",
+  explanation: "The Cabinet Mission arrived in India in 1946 to discuss the transfer of power and the constitutional future of India."
 },
 {
   category: "Geography",
@@ -6927,6 +8162,786 @@ const questions = [
     "Federal disputes."
 },
 {
+  id: 791,
+  category: "Polity",
+  question: "Which Article of the Indian Constitution describes India as a 'Union of States'?",
+  options: [
+    "Article 1",
+    "Article 2",
+    "Article 3",
+    "Article 4"
+  ],
+  answer: "Article 1",
+  explanation: "Article 1 states that India, that is Bharat, shall be a Union of States."
+},
+{
+  id: 792,
+  category: "Polity",
+  question: "Who is known as the Constitutional Head of the State Government?",
+  options: [
+    "Chief Minister",
+    "Governor",
+    "Speaker",
+    "Chief Secretary"
+  ],
+  answer: "Governor",
+  explanation: "The Governor is the constitutional head of a state, while the Chief Minister is the real executive head."
+},
+{
+  id: 793,
+  category: "Polity",
+  question: "The Governor of a State is appointed by the:",
+  options: [
+    "Prime Minister",
+    "Chief Minister",
+    "President of India",
+    "Parliament"
+  ],
+  answer: "President of India",
+  explanation: "Under Article 155, the Governor of a State is appointed by the President of India."
+},
+{
+  id: 794,
+  category: "Polity",
+  question: "The minimum age required to become the President of India is:",
+  options: [
+    "25 years",
+    "30 years",
+    "35 years",
+    "40 years"
+  ],
+  answer: "35 years",
+  explanation: "A person must be at least 35 years old to be eligible for election as President of India."
+},
+{
+  id: 795,
+  category: "Polity",
+  question: "Which constitutional amendment lowered the voting age from 21 years to 18 years?",
+  options: [
+    "42nd Amendment",
+    "44th Amendment",
+    "52nd Amendment",
+    "61st Amendment"
+  ],
+  answer: "61st Amendment",
+  explanation: "The 61st Constitutional Amendment Act, 1988 reduced the voting age from 21 years to 18 years."
+},
+{
+  id: 796,
+  category: "Polity",
+  question: "Which Part of the Indian Constitution deals with Fundamental Rights?",
+  options: [
+    "Part II",
+    "Part III",
+    "Part IV",
+    "Part V"
+  ],
+  answer: "Part III",
+  explanation: "Part III of the Constitution (Articles 12–35) contains the Fundamental Rights guaranteed to citizens."
+},
+{
+  id: 797,
+  category: "Polity",
+  question: "The Right to Constitutional Remedies is provided under:",
+  options: [
+    "Article 19",
+    "Article 21",
+    "Article 32",
+    "Article 51"
+  ],
+  answer: "Article 32",
+  explanation: "Article 32 allows individuals to approach the Supreme Court for the enforcement of Fundamental Rights. Dr. B.R. Ambedkar called it the 'heart and soul' of the Constitution."
+},
+{
+  id: 798,
+  category: "Polity",
+  question: "Which Fundamental Right was removed from Part III and made a legal right by the 44th Constitutional Amendment?",
+  options: [
+    "Right to Freedom",
+    "Right to Equality",
+    "Right to Property",
+    "Right against Exploitation"
+  ],
+  answer: "Right to Property",
+  explanation: "The 44th Constitutional Amendment Act, 1978 removed the Right to Property from Fundamental Rights and made it a legal right under Article 300A."
+},
+{
+  id: 799,
+  category: "Polity",
+  question: "The Directive Principles of State Policy are contained in:",
+  options: [
+    "Part III",
+    "Part IV",
+    "Part IVA",
+    "Part V"
+  ],
+  answer: "Part IV",
+  explanation: "Part IV (Articles 36–51) contains the Directive Principles of State Policy, which guide the government in policymaking."
+},
+{
+  id: 800,
+  category: "Polity",
+  question: "Which Constitutional Amendment is known as the 'Mini Constitution' of India?",
+  options: [
+    "24th Amendment",
+    "42nd Amendment",
+    "44th Amendment",
+    "52nd Amendment"
+  ],
+  answer: "42nd Amendment",
+  explanation: "The 42nd Constitutional Amendment Act, 1976 is called the 'Mini Constitution' because it made extensive changes to the Constitution."
+},
+{
+  id: 801,
+  category: "Polity",
+  question: "Fundamental Duties were added to the Indian Constitution by which Constitutional Amendment?",
+  options: [
+    "42nd Amendment",
+    "44th Amendment",
+    "52nd Amendment",
+    "61st Amendment"
+  ],
+  answer: "42nd Amendment",
+  explanation: "Fundamental Duties were added in 1976 through the 42nd Constitutional Amendment based on the recommendations of the Swaran Singh Committee."
+},
+{
+  id: 802,
+  category: "Polity",
+  question: "Fundamental Duties are contained in which Part of the Indian Constitution?",
+  options: [
+    "Part III",
+    "Part IV",
+    "Part IVA",
+    "Part V"
+  ],
+  answer: "Part IVA",
+  explanation: "Fundamental Duties are contained in Part IVA under Article 51A of the Constitution."
+},
+{
+  id: 803,
+  category: "Polity",
+  question: "Which writ is issued by a court to produce a person who has been unlawfully detained?",
+  options: [
+    "Mandamus",
+    "Certiorari",
+    "Quo Warranto",
+    "Habeas Corpus"
+  ],
+  answer: "Habeas Corpus",
+  explanation: "Habeas Corpus means 'produce the body' and is issued to secure the release of a person unlawfully detained."
+},
+{
+  id: 804,
+  category: "Polity",
+  question: "A Money Bill can be introduced only in:",
+  options: [
+    "Rajya Sabha",
+    "Lok Sabha",
+    "Either House of Parliament",
+    "Joint Session of Parliament"
+  ],
+  answer: "Lok Sabha",
+  explanation: "Under Article 109, a Money Bill can be introduced only in the Lok Sabha with the prior recommendation of the President."
+},
+{
+  id: 805,
+  category: "Polity",
+  question: "Who certifies whether a bill is a Money Bill or not?",
+  options: [
+    "President",
+    "Prime Minister",
+    "Speaker of Lok Sabha",
+    "Chairman of Rajya Sabha"
+  ],
+  answer: "Speaker of Lok Sabha",
+  explanation: "The decision of the Speaker of the Lok Sabha regarding whether a bill is a Money Bill is final."
+},
+{
+  id: 806,
+  category: "Polity",
+  question: "The maximum strength of the Lok Sabha as provided by the Constitution is:",
+  options: [
+    "545",
+    "550",
+    "552",
+    "560"
+  ],
+  answer: "552",
+  explanation: "The Constitution originally provided for a maximum strength of 552 members in the Lok Sabha, including representatives from states, union territories, and formerly nominated Anglo-Indians."
+},
+{
+  id: 807,
+  category: "Polity",
+  question: "The Rajya Sabha is a:",
+  options: [
+    "Temporary House",
+    "Dissolvable House",
+    "Permanent House",
+    "Judicial Body"
+  ],
+  answer: "Permanent House",
+  explanation: "The Rajya Sabha is a permanent body and is not subject to dissolution. One-third of its members retire every two years."
+},
+{
+  id: 808,
+  category: "Polity",
+  question: "What is the normal term of the Lok Sabha?",
+  options: [
+    "4 years",
+    "5 years",
+    "6 years",
+    "7 years"
+  ],
+  answer: "5 years",
+  explanation: "The normal tenure of the Lok Sabha is five years from the date of its first meeting unless dissolved earlier."
+},
+{
+  id: 809,
+  category: "Polity",
+  question: "A joint sitting of Parliament is presided over by the:",
+  options: [
+    "President of India",
+    "Vice-President of India",
+    "Speaker of Lok Sabha",
+    "Chairman of Rajya Sabha"
+  ],
+  answer: "Speaker of Lok Sabha",
+  explanation: "Under Article 108, a joint sitting of Parliament is presided over by the Speaker of the Lok Sabha."
+},
+{
+  id: 810,
+  category: "Polity",
+  question: "Which Parliamentary Committee examines the reports of the Comptroller and Auditor General (CAG)?",
+  options: [
+    "Estimates Committee",
+    "Public Accounts Committee",
+    "Committee on Public Undertakings",
+    "Business Advisory Committee"
+  ],
+  answer: "Public Accounts Committee",
+  explanation: "The Public Accounts Committee (PAC) scrutinizes CAG reports and examines government expenditure to ensure accountability."
+},
+{
+  id: 811,
+  category: "Polity",
+  question: "The President of India is elected by:",
+  options: [
+    "Members of Lok Sabha only",
+    "Members of Parliament only",
+    "An Electoral College",
+    "The Supreme Court"
+  ],
+  answer: "An Electoral College",
+  explanation: "The President is elected by an Electoral College consisting of elected members of both Houses of Parliament and elected members of the State Legislative Assemblies."
+},
+{
+  id: 812,
+  category: "Polity",
+  question: "The Vice-President of India is the ex-officio Chairman of the:",
+  options: [
+    "Lok Sabha",
+    "Rajya Sabha",
+    "Supreme Court",
+    "NITI Aayog"
+  ],
+  answer: "Rajya Sabha",
+  explanation: "Under Article 64 of the Constitution, the Vice-President serves as the ex-officio Chairman of the Rajya Sabha."
+},
+{
+  id: 813,
+  category: "Polity",
+  question: "The term of office of the President of India is:",
+  options: [
+    "4 years",
+    "5 years",
+    "6 years",
+    "7 years"
+  ],
+  answer: "5 years",
+  explanation: "The President holds office for a term of five years from the date on which he or she enters office."
+},
+{
+  id: 814,
+  category: "Polity",
+  question: "Which Article of the Constitution empowers the President to promulgate Ordinances?",
+  options: [
+    "Article 123",
+    "Article 143",
+    "Article 213",
+    "Article 356"
+  ],
+  answer: "Article 123",
+  explanation: "Article 123 empowers the President to promulgate Ordinances when Parliament is not in session and immediate action is necessary."
+},
+{
+  id: 815,
+  category: "Polity",
+  question: "The impeachment of the President of India can be initiated in:",
+  options: [
+    "Lok Sabha only",
+    "Rajya Sabha only",
+    "Either House of Parliament",
+    "Supreme Court"
+  ],
+  answer: "Either House of Parliament",
+  explanation: "Impeachment proceedings against the President may be initiated in either House of Parliament for violation of the Constitution."
+},
+{
+  id: 816,
+  category: "Polity",
+  question: "Who is the real executive head of the Government of India?",
+  options: [
+    "President",
+    "Prime Minister",
+    "Chief Justice of India",
+    "Vice-President"
+  ],
+  answer: "Prime Minister",
+  explanation: "While the President is the constitutional head, the Prime Minister is the real executive head and leads the government."
+},
+{
+  id: 817,
+  category: "Polity",
+  question: "The Council of Ministers is collectively responsible to the:",
+  options: [
+    "President",
+    "Rajya Sabha",
+    "Lok Sabha",
+    "Supreme Court"
+  ],
+  answer: "Lok Sabha",
+  explanation: "Article 75 provides that the Council of Ministers shall be collectively responsible to the Lok Sabha."
+},
+{
+  id: 818,
+  category: "Polity",
+  question: "Who appoints the Prime Minister of India?",
+  options: [
+    "Chief Justice of India",
+    "President of India",
+    "Lok Sabha Speaker",
+    "Election Commission"
+  ],
+  answer: "President of India",
+  explanation: "The President appoints the Prime Minister, usually the leader of the majority party or coalition in the Lok Sabha."
+},
+{
+  id: 819,
+  category: "Polity",
+  question: "The Attorney General of India is appointed by the:",
+  options: [
+    "Prime Minister",
+    "Chief Justice of India",
+    "President of India",
+    "Parliament"
+  ],
+  answer: "President of India",
+  explanation: "The Attorney General is the highest law officer of India and is appointed by the President under Article 76."
+},
+{
+  id: 820,
+  category: "Polity",
+  question: "Which body is considered the highest decision-making authority within the Council of Ministers?",
+  options: [
+    "Parliament",
+    "Cabinet",
+    "Rajya Sabha",
+    "NITI Aayog"
+  ],
+  answer: "Cabinet",
+  explanation: "The Cabinet is the inner core of the Council of Ministers and takes major policy decisions on behalf of the government."
+},
+{
+  id: 821,
+  category: "Polity",
+  question: "Which Article of the Constitution provides for the establishment of the Supreme Court of India?",
+  options: [
+    "Article 124",
+    "Article 214",
+    "Article 226",
+    "Article 368"
+  ],
+  answer: "Article 124",
+  explanation: "Article 124 provides for the establishment and constitution of the Supreme Court of India."
+},
+{
+  id: 822,
+  category: "Polity",
+  question: "Who appoints the Chief Justice of India?",
+  options: [
+    "Prime Minister",
+    "President of India",
+    "Parliament",
+    "Vice-President"
+  ],
+  answer: "President of India",
+  explanation: "The Chief Justice of India is appointed by the President of India."
+},
+{
+  id: 823,
+  category: "Polity",
+  question: "Judicial Review refers to the power of the judiciary to:",
+  options: [
+    "Conduct elections",
+    "Review and declare laws unconstitutional",
+    "Make laws",
+    "Amend the Constitution"
+  ],
+  answer: "Review and declare laws unconstitutional",
+  explanation: "Judicial Review empowers courts to examine laws and executive actions and strike them down if they violate the Constitution."
+},
+{
+  id: 824,
+  category: "Polity",
+  question: "PIL stands for:",
+  options: [
+    "Public Interest Litigation",
+    "Private Interest Law",
+    "Public Institutional Law",
+    "Parliamentary Investigation Law"
+  ],
+  answer: "Public Interest Litigation",
+  explanation: "Public Interest Litigation allows any public-spirited individual to approach the court for the protection of public interest."
+},
+{
+  id: 825,
+  category: "Polity",
+  question: "Which Article empowers High Courts to issue writs for the enforcement of Fundamental Rights and other purposes?",
+  options: [
+    "Article 32",
+    "Article 136",
+    "Article 226",
+    "Article 356"
+  ],
+  answer: "Article 226",
+  explanation: "Article 226 empowers High Courts to issue writs not only for Fundamental Rights but also for other legal rights."
+},
+{
+  id: 826,
+  category: "Polity",
+  question: "Which constitutional body is responsible for conducting elections to Parliament, State Legislatures, and the offices of the President and Vice-President?",
+  options: [
+    "UPSC",
+    "Election Commission of India",
+    "Finance Commission",
+    "NITI Aayog"
+  ],
+  answer: "Election Commission of India",
+  explanation: "The Election Commission of India is an independent constitutional body responsible for conducting free and fair elections."
+},
+{
+  id: 827,
+  category: "Polity",
+  question: "Which Article of the Constitution provides for the Election Commission of India?",
+  options: [
+    "Article 280",
+    "Article 324",
+    "Article 315",
+    "Article 148"
+  ],
+  answer: "Article 324",
+  explanation: "Article 324 vests the superintendence, direction, and control of elections in the Election Commission of India."
+},
+{
+  id: 828,
+  category: "Polity",
+  question: "The Comptroller and Auditor General (CAG) of India is appointed by the:",
+  options: [
+    "Prime Minister",
+    "Chief Justice of India",
+    "President of India",
+    "Parliament"
+  ],
+  answer: "President of India",
+  explanation: "The CAG is appointed by the President and acts as the guardian of the public purse."
+},
+{
+  id: 829,
+  category: "Polity",
+  question: "Which constitutional body conducts examinations for recruitment to the All India Services and Central Services?",
+  options: [
+    "Election Commission",
+    "Finance Commission",
+    "Union Public Service Commission",
+    "Staff Selection Commission"
+  ],
+  answer: "Union Public Service Commission",
+  explanation: "The UPSC is a constitutional body responsible for recruitment to the All India Services and Central Civil Services."
+},
+{
+  id: 830,
+  category: "Polity",
+  question: "The Finance Commission is constituted by the President of India every:",
+  options: [
+    "3 years",
+    "4 years",
+    "5 years",
+    "6 years"
+  ],
+  answer: "5 years",
+  explanation: "Under Article 280, the President constitutes a Finance Commission every five years or earlier if necessary."
+},
+{
+  id: 831,
+  category: "Polity",
+  question: "The Advocate General is the highest law officer of a:",
+  options: [
+    "District",
+    "State",
+    "Union Territory",
+    "Municipality"
+  ],
+  answer: "State",
+  explanation: "The Advocate General is the highest legal officer of a State and performs functions similar to those of the Attorney General at the Union level."
+},
+{
+  id: 832,
+  category: "Polity",
+  question: "Which Article of the Constitution deals with National Emergency?",
+  options: [
+    "Article 352",
+    "Article 356",
+    "Article 360",
+    "Article 368"
+  ],
+  answer: "Article 352",
+  explanation: "Article 352 empowers the President to proclaim a National Emergency on grounds of war, external aggression, or armed rebellion."
+},
+{
+  id: 833,
+  category: "Polity",
+  question: "President's Rule in a State can be imposed under:",
+  options: [
+    "Article 352",
+    "Article 356",
+    "Article 360",
+    "Article 370"
+  ],
+  answer: "Article 356",
+  explanation: "Article 356 provides for President's Rule when the constitutional machinery in a State fails."
+},
+{
+  id: 834,
+  category: "Polity",
+  question: "Financial Emergency in India is provided under:",
+  options: [
+    "Article 352",
+    "Article 356",
+    "Article 360",
+    "Article 365"
+  ],
+  answer: "Article 360",
+  explanation: "Article 360 empowers the President to proclaim a Financial Emergency if the financial stability or credit of India is threatened."
+},
+{
+  id: 835,
+  category: "Polity",
+  question: "Which of the following is NOT a ground for proclaiming a National Emergency?",
+  options: [
+    "War",
+    "External Aggression",
+    "Armed Rebellion",
+    "Financial Instability"
+  ],
+  answer: "Financial Instability",
+  explanation: "National Emergency can be declared only on grounds of war, external aggression, or armed rebellion. Financial instability relates to Financial Emergency under Article 360."
+},
+{
+  id: 836,
+  category: "Polity",
+  question: "The 73rd Constitutional Amendment Act is related to:",
+  options: [
+    "Municipalities",
+    "Panchayati Raj Institutions",
+    "Fundamental Duties",
+    "Cooperative Societies"
+  ],
+  answer: "Panchayati Raj Institutions",
+  explanation: "The 73rd Constitutional Amendment Act, 1992 gave constitutional status to Panchayati Raj Institutions in rural areas."
+},
+{
+  id: 837,
+  category: "Polity",
+  question: "The 74th Constitutional Amendment Act deals with:",
+  options: [
+    "Fundamental Rights",
+    "Panchayats",
+    "Municipalities",
+    "Emergency Provisions"
+  ],
+  answer: "Municipalities",
+  explanation: "The 74th Constitutional Amendment Act, 1992 provided constitutional status to Urban Local Bodies or Municipalities."
+},
+{
+  id: 838,
+  category: "Polity",
+  question: "The Gram Sabha consists of:",
+  options: [
+    "Only elected members of the Panchayat",
+    "All registered voters in a village",
+    "Village government officials only",
+    "Members nominated by the Governor"
+  ],
+  answer: "All registered voters in a village",
+  explanation: "The Gram Sabha is the general body of all adult residents registered as voters within a village area."
+},
+{
+  id: 839,
+  category: "Polity",
+  question: "Which level of Panchayati Raj is found at the district level?",
+  options: [
+    "Gram Panchayat",
+    "Panchayat Samiti",
+    "Zila Parishad",
+    "Gram Sabha"
+  ],
+  answer: "Zila Parishad",
+  explanation: "The Zila Parishad functions at the district level, while the Panchayat Samiti operates at the block level and Gram Panchayat at the village level."
+},
+{
+  id: 840,
+  category: "Polity",
+  question: "Which committee is most closely associated with the recommendation of the three-tier Panchayati Raj system in India?",
+  options: [
+    "Sarkaria Committee",
+    "Balwant Rai Mehta Committee",
+    "Ashok Mehta Committee",
+    "Punchhi Commission"
+  ],
+  answer: "Balwant Rai Mehta Committee",
+  explanation: "The Balwant Rai Mehta Committee (1957) recommended the establishment of a three-tier Panchayati Raj system to promote democratic decentralization."
+},
+{
+  id: 841,
+  category: "Polity",
+  question: "Which Fundamental Right abolishes untouchability in India?",
+  options: [
+    "Right to Freedom",
+    "Right to Equality",
+    "Right against Exploitation",
+    "Cultural and Educational Rights"
+  ],
+  answer: "Right to Equality",
+  explanation: "Article 17, which abolishes untouchability, is part of the Right to Equality under Part III of the Constitution."
+},
+{
+  id: 842,
+  category: "Polity",
+  question: "Which writ is issued to prevent a lower court from exceeding its jurisdiction?",
+  options: [
+    "Habeas Corpus",
+    "Mandamus",
+    "Prohibition",
+    "Quo Warranto"
+  ],
+  answer: "Prohibition",
+  explanation: "The writ of Prohibition is issued by a higher court to prevent a lower court or tribunal from acting beyond its jurisdiction."
+},
+{
+  id: 843,
+  category: "Polity",
+  question: "Which constitutional body is known as the 'watchdog of public finances' in India?",
+  options: [
+    "Election Commission",
+    "Finance Commission",
+    "Comptroller and Auditor General",
+    "UPSC"
+  ],
+  answer: "Comptroller and Auditor General",
+  explanation: "The CAG audits government accounts and ensures accountability in the use of public funds."
+},
+{
+  id: 844,
+  category: "Polity",
+  question: "The Directive Principles of State Policy were borrowed from the Constitution of:",
+  options: [
+    "United Kingdom",
+    "Ireland",
+    "United States",
+    "Canada"
+  ],
+  answer: "Ireland",
+  explanation: "The Directive Principles of State Policy in the Indian Constitution were inspired by the Irish Constitution."
+},
+{
+  id: 845,
+  category: "Polity",
+  question: "Which Constitutional Amendment added the words 'Socialist', 'Secular', and 'Integrity' to the Preamble?",
+  options: [
+    "24th Amendment",
+    "42nd Amendment",
+    "44th Amendment",
+    "52nd Amendment"
+  ],
+  answer: "42nd Amendment",
+  explanation: "The 42nd Constitutional Amendment Act, 1976 added the words 'Socialist', 'Secular', and 'Integrity' to the Preamble."
+},
+{
+  id: 846,
+  category: "Polity",
+  question: "Which writ is issued by a court to command a public authority to perform its legal duty?",
+  options: [
+    "Certiorari",
+    "Mandamus",
+    "Prohibition",
+    "Habeas Corpus"
+  ],
+  answer: "Mandamus",
+  explanation: "Mandamus means 'we command'. It is issued by a court directing a public authority to perform a duty that it is legally bound to perform."
+},
+{
+  id: 847,
+  category: "Polity",
+  question: "The Constitution of India was adopted by the Constituent Assembly on:",
+  options: [
+    "15 August 1947",
+    "26 January 1950",
+    "26 November 1949",
+    "24 January 1950"
+  ],
+  answer: "26 November 1949",
+  explanation: "The Constituent Assembly adopted the Constitution on 26 November 1949. It came into force on 26 January 1950."
+},
+{
+  id: 848,
+  category: "Polity",
+  question: "Who was the Chairman of the Drafting Committee of the Constituent Assembly?",
+  options: [
+    "Jawaharlal Nehru",
+    "Rajendra Prasad",
+    "B. R. Ambedkar",
+    "Sardar Patel"
+  ],
+  answer: "B. R. Ambedkar",
+  explanation: "Dr. B. R. Ambedkar served as the Chairman of the Drafting Committee and is widely regarded as the chief architect of the Indian Constitution."
+},
+{
+  id: 849,
+  category: "Polity",
+  question: "The Preamble declares India to be a:",
+  options: [
+    "Unitary Republic",
+    "Federal Monarchy",
+    "Sovereign Socialist Secular Democratic Republic",
+    "Confederation of States"
+  ],
+  answer: "Sovereign Socialist Secular Democratic Republic",
+  explanation: "The Preamble describes India as a Sovereign Socialist Secular Democratic Republic committed to justice, liberty, equality, and fraternity."
+},
+{
+  id: 850,
+  category: "Polity",
+  question: "Which Article of the Constitution guarantees equality before the law and equal protection of the laws?",
+  options: [
+    "Article 14",
+    "Article 15",
+    "Article 16",
+    "Article 17"
+  ],
+  answer: "Article 14",
+  explanation: "Article 14 guarantees equality before the law and equal protection of the laws to all persons within the territory of India."
+},
+{
   category: "Indian Polity",
   question: "Who appoints the Governor of a State in India?",
   options: [
@@ -7030,7 +9045,72 @@ const questions = [
   hint:
     "Constitutional head of the Republic."
 },
-  {
+ {
+  id: 951,
+  category: "Polity",
+  question: "Which Article of the Constitution deals with the amendment of the Constitution?",
+  options: [
+    "Article 352",
+    "Article 356",
+    "Article 368",
+    "Article 370"
+  ],
+  answer: "Article 368",
+  explanation: "Article 368 lays down the procedure for amending the Constitution of India."
+},
+{
+  id: 952,
+  category: "Polity",
+  question: "Who is the custodian of the Constitution of India?",
+  options: [
+    "President",
+    "Prime Minister",
+    "Supreme Court",
+    "Parliament"
+  ],
+  answer: "Supreme Court",
+  explanation: "The Supreme Court acts as the guardian and interpreter of the Constitution."
+},
+{
+  id: 953,
+  category: "Polity",
+  question: "The Anti-Defection Law was added by which Constitutional Amendment?",
+  options: [
+    "42nd Amendment",
+    "44th Amendment",
+    "52nd Amendment",
+    "61st Amendment"
+  ],
+  answer: "52nd Amendment",
+  explanation: "The Anti-Defection Law was added through the 52nd Constitutional Amendment Act, 1985."
+},
+{
+  id: 954,
+  category: "Polity",
+  question: "The Tenth Schedule of the Constitution is related to:",
+  options: [
+    "Languages",
+    "Panchayats",
+    "Anti-Defection",
+    "Emergency Provisions"
+  ],
+  answer: "Anti-Defection",
+  explanation: "The Tenth Schedule contains provisions related to disqualification of legislators on grounds of defection."
+},
+{
+  id: 955,
+  category: "Polity",
+  question: "Who administers the oath of office to the President of India?",
+  options: [
+    "Prime Minister",
+    "Vice-President",
+    "Chief Justice of India",
+    "Speaker of Lok Sabha"
+  ],
+  answer: "Chief Justice of India",
+  explanation: "The Chief Justice of India administers the oath of office to the President."
+},
+{
     category: "History",
     question: "Who was the first Prime Minister of independent India?",
     options: [
@@ -8339,6 +10419,71 @@ const questions = [
   },
   hint:
     "Plant science."
+},
+{
+  id: 996,
+  category: "Science",
+  question: "Which gas is most abundant in the Earth's atmosphere?",
+  options: [
+    "Oxygen",
+    "Carbon Dioxide",
+    "Nitrogen",
+    "Argon"
+  ],
+  answer: "Nitrogen",
+  explanation: "Nitrogen constitutes about 78% of the Earth's atmosphere."
+},
+{
+  id: 997,
+  category: "Science",
+  question: "The SI unit of force is:",
+  options: [
+    "Joule",
+    "Newton",
+    "Watt",
+    "Pascal"
+  ],
+  answer: "Newton",
+  explanation: "Force is measured in Newtons (N) in the International System of Units."
+},
+{
+  id: 998,
+  category: "Science",
+  question: "Which organ in the human body produces insulin?",
+  options: [
+    "Liver",
+    "Kidney",
+    "Pancreas",
+    "Heart"
+  ],
+  answer: "Pancreas",
+  explanation: "The pancreas produces insulin, which helps regulate blood glucose levels."
+},
+{
+  id: 999,
+  category: "Science",
+  question: "What is the chemical formula of water?",
+  options: [
+    "CO₂",
+    "H₂O",
+    "O₂",
+    "NaCl"
+  ],
+  answer: "H₂O",
+  explanation: "A water molecule consists of two hydrogen atoms and one oxygen atom."
+},
+{
+  id: 1000,
+  category: "Science",
+  question: "Which planet is known as the 'Red Planet'?",
+  options: [
+    "Venus",
+    "Jupiter",
+    "Mars",
+    "Saturn"
+  ],
+  answer: "Mars",
+  explanation: "Mars appears reddish due to iron oxide (rust) on its surface and is therefore known as the Red Planet."
 },
 {
     category: "Economics",
@@ -10635,6 +12780,71 @@ const questions = [
     "Think of the Assam-Mizoram road entry."
 },
 {
+  id: 956,
+  category: "Mizoram GK",
+  question: "Article 371G provides special constitutional protection to:",
+  options: [
+    "Nagaland",
+    "Mizoram",
+    "Meghalaya",
+    "Tripura"
+  ],
+  answer: "Mizoram",
+  explanation: "Article 371G grants special protections to Mizoram regarding customary law, land ownership, and religious and social practices."
+},
+{
+  id: 957,
+  category: "Mizoram GK",
+  question: "The Mizoram Peace Accord was signed on:",
+  options: [
+    "20 February 1987",
+    "30 June 1986",
+    "21 January 1972",
+    "15 August 1947"
+  ],
+  answer: "30 June 1986",
+  explanation: "The Mizoram Peace Accord was signed on 30 June 1986 between the Government of India and the Mizo National Front."
+},
+{
+  id: 958,
+  category: "Mizoram GK",
+  question: "Which of the following is NOT an Autonomous District Council in Mizoram?",
+  options: [
+    "Chakma Autonomous District Council",
+    "Lai Autonomous District Council",
+    "Mara Autonomous District Council",
+    "Bru Autonomous District Council"
+  ],
+  answer: "Bru Autonomous District Council",
+  explanation: "Mizoram has three Autonomous District Councils: Chakma, Lai, and Mara."
+},
+{
+  id: 959,
+  category: "Mizoram GK",
+  question: "What is the state flower of Mizoram?",
+  options: [
+    "Red Vanda",
+    "Lotus",
+    "Orchid Tree",
+    "Rhododendron"
+  ],
+  answer: "Red Vanda",
+  explanation: "Red Vanda (Renanthera imschootiana) is the official state flower of Mizoram."
+},
+{
+  id: 960,
+  category: "Mizoram GK",
+  question: "Phawngpui, the highest peak in Mizoram, is also popularly known as:",
+  options: [
+    "Green Mountain",
+    "Blue Mountain",
+    "Cloud Mountain",
+    "Mizo Peak"
+  ],
+  answer: "Blue Mountain",
+  explanation: "Phawngpui is the highest peak in Mizoram and is popularly known as the Blue Mountain."
+},
+{
     category: "Current Affairs",
     question: "What is the minimum voting age in India?",
     options: [
@@ -10862,6 +13072,201 @@ const questions = [
     "Unique Identification Authority of India."
 },
 {
+  id: 851,
+  category: "Current Affairs",
+  question: "India hosted the G20 Leaders' Summit in which city in 2023, the outcomes of which continued to influence global discussions in 2025–26?",
+  options: [
+    "Mumbai",
+    "New Delhi",
+    "Bengaluru",
+    "Hyderabad"
+  ],
+  answer: "New Delhi",
+  explanation: "India hosted the G20 Leaders' Summit in New Delhi in September 2023, and many of its initiatives continued to shape discussions in subsequent years."
+},
+{
+  id: 852,
+  category: "Current Affairs",
+  question: "Which country became a full member of BRICS in its 2024 expansion process?",
+  options: [
+    "Japan",
+    "Saudi Arabia",
+    "South Korea",
+    "Vietnam"
+  ],
+  answer: "Saudi Arabia",
+  explanation: "BRICS expanded its membership, with Saudi Arabia being one of the countries invited to join the grouping."
+},
+{
+  id: 853,
+  category: "Current Affairs",
+  question: "The Chandrayaan-3 mission achieved a historic landing near which region of the Moon?",
+  options: [
+    "Equatorial Region",
+    "Far Side",
+    "South Polar Region",
+    "North Pole"
+  ],
+  answer: "South Polar Region",
+  explanation: "Chandrayaan-3 made India the first country to successfully land near the Moon's south polar region."
+},
+{
+  id: 854,
+  category: "Current Affairs",
+  question: "Which Indian mission is aimed at studying the Sun?",
+  options: [
+    "Mangalyaan",
+    "Gaganyaan",
+    "Aditya-L1",
+    "RISAT"
+  ],
+  answer: "Aditya-L1",
+  explanation: "Aditya-L1 is India's first dedicated solar mission designed to study the Sun from the Lagrange Point L1."
+},
+{
+  id: 855,
+  category: "Current Affairs",
+  question: "Which organization released the Human Development Report that includes the Human Development Index (HDI)?",
+  options: [
+    "World Bank",
+    "IMF",
+    "UNDP",
+    "WHO"
+  ],
+  answer: "UNDP",
+  explanation: "The United Nations Development Programme (UNDP) publishes the Human Development Report and Human Development Index."
+},
+{
+  id: 856,
+  category: "Current Affairs",
+  question: "Which Indian astronaut is expected to be part of India's first human spaceflight mission, Gaganyaan?",
+  options: [
+    "Rakesh Sharma",
+    "Group Captain Shubhanshu Shukla",
+    "Kalpana Chawla",
+    "Sunita Williams"
+  ],
+  answer: "Group Captain Shubhanshu Shukla",
+  explanation: "Group Captain Shubhanshu Shukla emerged as one of the key astronauts associated with India's human spaceflight programme."
+},
+{
+  id: 857,
+  category: "Current Affairs",
+  question: "The term 'Green Hydrogen' refers to hydrogen produced using:",
+  options: [
+    "Coal",
+    "Natural Gas",
+    "Renewable Energy",
+    "Nuclear Waste"
+  ],
+  answer: "Renewable Energy",
+  explanation: "Green Hydrogen is produced through electrolysis powered by renewable energy sources such as solar and wind power."
+},
+{
+  id: 858,
+  category: "Current Affairs",
+  question: "Which country remained India's largest trading partner during much of the 2024-25 period?",
+  options: [
+    "China",
+    "United States",
+    "Russia",
+    "Japan"
+  ],
+  answer: "United States",
+  explanation: "The United States continued to be among India's largest trading partners in terms of bilateral trade."
+},
+{
+  id: 859,
+  category: "Current Affairs",
+  question: "The Global South Summit initiative has been strongly promoted by:",
+  options: [
+    "India",
+    "Canada",
+    "Germany",
+    "Australia"
+  ],
+  answer: "India",
+  explanation: "India has actively promoted the concerns and interests of developing countries through initiatives such as the Voice of Global South Summit."
+},
+{
+  id: 860,
+  category: "Current Affairs",
+  question: "Which Indian state became the first to implement a Uniform Civil Code (UCC) in recent years?",
+  options: [
+    "Gujarat",
+    "Uttarakhand",
+    "Assam",
+    "Goa"
+  ],
+  answer: "Uttarakhand",
+  explanation: "Uttarakhand became the first state in recent years to implement a Uniform Civil Code through state legislation."
+},
+{
+  id: 961,
+  category: "Current Affairs",
+  question: "India's first dedicated solar mission is known as:",
+  options: [
+    "Chandrayaan-3",
+    "Gaganyaan",
+    "Aditya-L1",
+    "Mangalyaan"
+  ],
+  answer: "Aditya-L1",
+  explanation: "Aditya-L1 is India's first dedicated mission to study the Sun and its activities."
+},
+{
+  id: 962,
+  category: "Current Affairs",
+  question: "Which Indian mission successfully landed near the Moon's south polar region?",
+  options: [
+    "Chandrayaan-1",
+    "Chandrayaan-2",
+    "Chandrayaan-3",
+    "Mangalyaan"
+  ],
+  answer: "Chandrayaan-3",
+  explanation: "Chandrayaan-3 made India the first country to successfully land near the lunar south pole."
+},
+{
+  id: 963,
+  category: "Current Affairs",
+  question: "BRICS originally consisted of Brazil, Russia, India, China, and:",
+  options: [
+    "Saudi Arabia",
+    "South Africa",
+    "Egypt",
+    "Argentina"
+  ],
+  answer: "South Africa",
+  explanation: "South Africa joined BRIC in 2010, making it BRICS."
+},
+{
+  id: 964,
+  category: "Current Affairs",
+  question: "The Human Development Index (HDI) is published by:",
+  options: [
+    "World Bank",
+    "IMF",
+    "UNDP",
+    "WHO"
+  ],
+  answer: "UNDP",
+  explanation: "The Human Development Index is published annually by the United Nations Development Programme (UNDP)."
+},
+{
+  id: 965,
+  category: "Current Affairs",
+  question: "Green Hydrogen is primarily produced using:",
+  options: [
+    "Coal",
+    "Petroleum",
+    "Renewable Energy",
+    "Natural Gas"
+  ],
+  answer: "Renewable Energy",
+  explanation: "Green Hydrogen is produced through electrolysis powered by renewable energy sources such as solar and wind."
+},
+{
   category: "Mizoram GK",
   question: "Which district of Mizoram is famous for the Blue Mountain (Phawngpui)?",
   options: [
@@ -11068,6 +13473,461 @@ const questions = [
   },
   hint:
     "Early 21st century."
+},
+{
+  id: 866,
+  category: "Mizoram GK",
+  question: "What is the state animal of Mizoram?",
+  options: [
+    "Clouded Leopard",
+    "Tiger",
+    "Hoolock Gibbon",
+    "Serow"
+  ],
+  answer: "Serow",
+  explanation: "The Serow (Capricornis sumatraensis) is the state animal of Mizoram."
+},
+{
+  id: 867,
+  category: "Mizoram GK",
+  question: "What is the state bird of Mizoram?",
+  options: [
+    "Mrs. Hume's Pheasant",
+    "Hornbill",
+    "Peacock",
+    "Hill Myna"
+  ],
+  answer: "Mrs. Hume's Pheasant",
+  explanation: "Mrs. Hume's Pheasant is the state bird of Mizoram."
+},
+{
+  id: 868,
+  category: "Mizoram GK",
+  question: "Which is the highest peak in Mizoram?",
+  options: [
+    "Lengteng",
+    "Phawngpui",
+    "Reiek",
+    "Hmuifang"
+  ],
+  answer: "Phawngpui",
+  explanation: "Phawngpui, also known as Blue Mountain, is the highest peak in Mizoram at about 2,157 metres."
+},
+{
+  id: 869,
+  category: "Mizoram GK",
+  question: "Palak Lake, the largest natural lake in Mizoram, is located in which district?",
+  options: [
+    "Champhai",
+    "Aizawl",
+    "Siaha",
+    "Kolasib"
+  ],
+  answer: "Siaha",
+  explanation: "Palak Dil, the largest natural lake in Mizoram, is located in Siaha district."
+},
+{
+  id: 870,
+  category: "Mizoram GK",
+  question: "Which festival is known as the spring festival of Mizoram?",
+  options: [
+    "Mim Kut",
+    "Pawl Kut",
+    "Chapchar Kut",
+    "Thalfavang Kut"
+  ],
+  answer: "Chapchar Kut",
+  explanation: "Chapchar Kut is the most famous spring festival of Mizoram and is celebrated after the completion of jungle clearing for jhum cultivation."
+},
+{
+  id: 871,
+  category: "Mizoram GK",
+  question: "Mizoram attained full statehood on:",
+  options: [
+    "20 February 1987",
+    "21 January 1972",
+    "15 August 1947",
+    "30 June 1986"
+  ],
+  answer: "20 February 1987",
+  explanation: "Mizoram became the 23rd state of India on 20 February 1987 following the Mizoram Peace Accord."
+},
+{
+  id: 872,
+  category: "Mizoram GK",
+  question: "The Mizoram Peace Accord was signed in:",
+  options: [
+    "1984",
+    "1985",
+    "1986",
+    "1987"
+  ],
+  answer: "1986",
+  explanation: "The historic Mizoram Peace Accord was signed on 30 June 1986 between the Government of India and the Mizo National Front."
+},
+{
+  id: 873,
+  category: "Mizoram GK",
+  question: "Who became the first Chief Minister of Mizoram after attaining statehood in 1987?",
+  options: [
+    "Ch. Chhunga",
+    "Laldenga",
+    "Zoramthanga",
+    "Lal Thanhawla"
+  ],
+  answer: "Laldenga",
+  explanation: "Laldenga, leader of the Mizo National Front, became the first Chief Minister of Mizoram after statehood in 1987."
+},
+{
+  id: 874,
+  category: "Mizoram GK",
+  question: "Which district of Mizoram shares an international border with Bangladesh and Myanmar?",
+  options: [
+    "Kolasib",
+    "Champhai",
+    "Lawngtlai",
+    "Saitual"
+  ],
+  answer: "Lawngtlai",
+  explanation: "Lawngtlai district is strategically important as it shares borders with both Bangladesh and Myanmar."
+},
+{
+  id: 875,
+  category: "Mizoram GK",
+  question: "The headquarters of the Chakma Autonomous District Council is located at:",
+  options: [
+    "Saiha",
+    "Kolasib",
+    "Kamalanagar",
+    "Champhai"
+  ],
+  answer: "Kamalanagar",
+  explanation: "Kamalanagar serves as the headquarters of the Chakma Autonomous District Council (CADC)."
+},
+{
+  id: 876,
+  category: "Mizoram GK",
+  question: "The headquarters of the Lai Autonomous District Council (LADC) is located at:",
+  options: [
+    "Lawngtlai",
+    "Saiha",
+    "Champhai",
+    "Serchhip"
+  ],
+  answer: "Lawngtlai",
+  explanation: "The Lai Autonomous District Council (LADC) has its headquarters at Lawngtlai."
+},
+{
+  id: 877,
+  category: "Mizoram GK",
+  question: "The headquarters of the Mara Autonomous District Council (MADC) is located at:",
+  options: [
+    "Lawngtlai",
+    "Saiha",
+    "Aizawl",
+    "Kolasib"
+  ],
+  answer: "Saiha",
+  explanation: "Saiha serves as the headquarters of the Mara Autonomous District Council."
+},
+{
+  id: 878,
+  category: "Mizoram GK",
+  question: "Lengteng Wildlife Sanctuary is located in which district of Mizoram?",
+  options: [
+    "Mamit",
+    "Champhai",
+    "Kolasib",
+    "Lunglei"
+  ],
+  answer: "Champhai",
+  explanation: "Lengteng Wildlife Sanctuary is situated in Champhai district and is known for its rich biodiversity and birdlife."
+},
+{
+  id: 879,
+  category: "Mizoram GK",
+  question: "Which is the longest river flowing through Mizoram?",
+  options: [
+    "Tuivawl",
+    "Tlawng",
+    "Mat",
+    "Khawthlangtuipui"
+  ],
+  answer: "Tlawng",
+  explanation: "The Tlawng River, also known as the Dhaleswari River, is the longest river flowing through Mizoram."
+},
+{
+  id: 880,
+  category: "Mizoram GK",
+  question: "The Mizo National Front (MNF) was founded in:",
+  options: [
+    "1959",
+    "1961",
+    "1966",
+    "1972"
+  ],
+  answer: "1961",
+  explanation: "The Mizo National Front (MNF) was founded in 1961 under the leadership of Laldenga, evolving from the Mizo National Famine Front."
+},
+{
+  id: 881,
+  category: "Mizoram GK",
+  question: "The Mizo Hills were formerly a part of which British-administered province?",
+  options: [
+    "Bengal Presidency",
+    "Assam Province",
+    "North-East Frontier Agency",
+    "Eastern Bengal"
+  ],
+  answer: "Assam Province",
+  explanation: "During British rule, the Mizo Hills were administered as part of Assam Province."
+},
+{
+  id: 882,
+  category: "Mizoram GK",
+  question: "The first general election to the Mizoram Legislative Assembly was held in:",
+  options: [
+    "1972",
+    "1974",
+    "1978",
+    "1987"
+  ],
+  answer: "1972",
+  explanation: "Following the creation of Mizoram as a Union Territory in 1972, the first Legislative Assembly election was held the same year."
+},
+{
+  id: 883,
+  category: "Mizoram GK",
+  question: "Which district is known as the 'Rice Bowl of Mizoram'?",
+  options: [
+    "Kolasib",
+    "Champhai",
+    "Mamit",
+    "Serchhip"
+  ],
+  answer: "Champhai",
+  explanation: "Champhai is often called the Rice Bowl of Mizoram because of its extensive paddy cultivation and fertile valley."
+},
+{
+  id: 884,
+  category: "Mizoram GK",
+  question: "What is the official state flower of Mizoram?",
+  options: [
+    "Red Vanda",
+    "Lady's Slipper Orchid",
+    "Anthurium",
+    "Sunflower"
+  ],
+  answer: "Red Vanda",
+  explanation: "Red Vanda (Renanthera imschootiana) is the state flower of Mizoram."
+},
+{
+  id: 885,
+  category: "Mizoram GK",
+  question: "Which river forms a significant part of the border between Mizoram and Bangladesh?",
+  options: [
+    "Tlawng",
+    "Tuivawl",
+    "Karnaphuli",
+    "Mat"
+  ],
+  answer: "Karnaphuli",
+  explanation: "The Karnaphuli River system is an important geographical feature in the southern region bordering Bangladesh."
+},
+{
+  id: 886,
+  category: "Mizoram GK",
+  question: "Before the abolition of chieftainship, traditional Mizo villages were governed by:",
+  options: [
+    "Village Councils",
+    "Chiefs",
+    "District Commissioners",
+    "Clan Assemblies"
+  ],
+  answer: "Chiefs",
+  explanation: "Traditional Mizo society was organized under hereditary village chiefs who exercised administrative and judicial authority."
+},
+{
+  id: 887,
+  category: "Mizoram GK",
+  question: "The Mizo Union was primarily formed to:",
+  options: [
+    "Promote Christianity",
+    "Oppose the chieftainship system",
+    "Promote trade with Myanmar",
+    "Support British administration"
+  ],
+  answer: "Oppose the chieftainship system",
+  explanation: "The Mizo Union emerged as a political movement advocating democratic reforms and the abolition of hereditary chieftainship."
+},
+{
+  id: 888,
+  category: "Mizoram GK",
+  question: "The Young Mizo Association (YMA) was established in:",
+  options: [
+    "1925",
+    "1935",
+    "1947",
+    "1959"
+  ],
+  answer: "1935",
+  explanation: "The Young Mizo Association (YMA), one of the most influential civil society organizations in Mizoram, was established in 1935."
+},
+{
+  id: 889,
+  category: "Mizoram GK",
+  question: "The traditional Mizo practice of community service and mutual help is known as:",
+  options: [
+    "Tlawmngaihna",
+    "Mautam",
+    "Chapchar",
+    "Zawlbuk"
+  ],
+  answer: "Tlawmngaihna",
+  explanation: "Tlawmngaihna is a core Mizo social value emphasizing selflessness, community service, courage, and helping others."
+},
+{
+  id: 890,
+  category: "Mizoram GK",
+  question: "The Zawlbuk in traditional Mizo society was a:",
+  options: [
+    "Place of worship",
+    "Village granary",
+    "Bachelor's dormitory and training institution",
+    "Chief's residence"
+  ],
+  answer: "Bachelor's dormitory and training institution",
+  explanation: "The Zawlbuk served as a dormitory for unmarried young men and played an important role in social education and community life."
+},
+{
+  id: 891,
+  category: "Mizoram GK",
+  question: "Who are credited with developing the first written Mizo alphabet?",
+  options: [
+    "J.H. Lorrain and F.W. Savidge",
+    "William Carey and Joshua Marshman",
+    "David Scott and Robert Bruce",
+    "Laldenga and Ch. Chhunga"
+  ],
+  answer: "J.H. Lorrain and F.W. Savidge",
+  explanation: "Christian missionaries J.H. Lorrain and F.W. Savidge developed the first written Mizo alphabet using the Roman script in the 1890s."
+},
+{
+  id: 892,
+  category: "Mizoram GK",
+  question: "Christianity was introduced to the Mizo Hills primarily by:",
+  options: [
+    "British administrators",
+    "Christian missionaries",
+    "Bengali traders",
+    "Ahom rulers"
+  ],
+  answer: "Christian missionaries",
+  explanation: "Christianity was introduced to the Mizo Hills by missionaries, particularly J.H. Lorrain and F.W. Savidge, beginning in 1894."
+},
+{
+  id: 893,
+  category: "Mizoram GK",
+  question: "The arrival of Christian missionaries in the Mizo Hills is generally associated with the year:",
+  options: [
+    "1885",
+    "1894",
+    "1901",
+    "1912"
+  ],
+  answer: "1894",
+  explanation: "J.H. Lorrain and F.W. Savidge arrived in the Mizo Hills in 1894, marking the beginning of organized missionary work."
+},
+{
+  id: 894,
+  category: "Mizoram GK",
+  question: "Who is widely known as 'Pu Buanga', one of the most celebrated figures in Mizo folklore and literature?",
+  options: [
+    "Ch. Chhunga",
+    "Laldenga",
+    "Khuangchera",
+    "Mangkhaia"
+  ],
+  answer: "Khuangchera",
+  explanation: "Khuangchera is one of the most famous heroes in Mizo history and folklore, remembered for his bravery and leadership."
+},
+{
+  id: 895,
+  category: "Mizoram GK",
+  question: "The first written Mizo book was primarily related to:",
+  options: [
+    "Agriculture",
+    "Military history",
+    "Religious and educational instruction",
+    "Trade and commerce"
+  ],
+  answer: "Religious and educational instruction",
+  explanation: "Early Mizo publications produced by missionaries focused on literacy, religious teaching, and basic education."
+},
+{
+  id: 896,
+  category: "Mizoram GK",
+  question: "The Mizo language belongs to which language family?",
+  options: [
+    "Indo-Aryan",
+    "Dravidian",
+    "Tibeto-Burman",
+    "Austroasiatic"
+  ],
+  answer: "Tibeto-Burman",
+  explanation: "The Mizo language belongs to the Tibeto-Burman branch of the Sino-Tibetan language family."
+},
+{
+  id: 897,
+  category: "Mizoram GK",
+  question: "Which festival of Mizoram is associated with the completion of the maize harvest?",
+  options: [
+    "Chapchar Kut",
+    "Mim Kut",
+    "Pawl Kut",
+    "Thalfavang Kut"
+  ],
+  answer: "Mim Kut",
+  explanation: "Mim Kut is traditionally celebrated after the harvest of maize and is associated with remembrance of departed relatives."
+},
+{
+  id: 898,
+  category: "Mizoram GK",
+  question: "Pawl Kut is traditionally celebrated to mark:",
+  options: [
+    "Completion of jhum clearing",
+    "The spring season",
+    "The end of the harvest season",
+    "The beginning of the rainy season"
+  ],
+  answer: "The end of the harvest season",
+  explanation: "Pawl Kut is a post-harvest festival celebrated to give thanks for a successful agricultural season."
+},
+{
+  id: 899,
+  category: "Mizoram GK",
+  question: "Which traditional Mizo value emphasizes self-sacrifice, humility, and service to others?",
+  options: [
+    "Zawlbuk",
+    "Tlawmngaihna",
+    "Mautam",
+    "Kut"
+  ],
+  answer: "Tlawmngaihna",
+  explanation: "Tlawmngaihna is considered the foundation of Mizo social ethics, emphasizing selflessness, courage, and service to the community."
+},
+{
+  id: 900,
+  category: "Mizoram GK",
+  question: "Which of the following is the largest city in Mizoram?",
+  options: [
+    "Lunglei",
+    "Champhai",
+    "Aizawl",
+    "Kolasib"
+  ],
+  answer: "Aizawl",
+  explanation: "Aizawl is the capital and largest urban center of Mizoram, serving as the state's administrative, educational, and commercial hub."
 },
 {
   category: "Current Affairs",
@@ -12393,6 +15253,396 @@ const questions = [
     "Evaluating student learning."
 },
 {
+  id: 691,
+  category: "Teaching Aptitude",
+  question: "Which of the following is the most important quality of an effective teacher?",
+  options: [
+    "Strict discipline",
+    "Subject knowledge and communication skills",
+    "Political awareness",
+    "Administrative power"
+  ],
+  answer: "Subject knowledge and communication skills",
+  explanation: "An effective teacher should possess sound subject knowledge and the ability to communicate concepts clearly to learners."
+},
+{
+  id: 692,
+  category: "Teaching Aptitude",
+  question: "The primary objective of teaching is to:",
+  options: [
+    "Complete the syllabus",
+    "Maintain discipline",
+    "Facilitate learning",
+    "Conduct examinations"
+  ],
+  answer: "Facilitate learning",
+  explanation: "Teaching is a process of facilitating learning and helping students acquire knowledge, skills, values, and attitudes."
+},
+{
+  id: 693,
+  category: "Teaching Aptitude",
+  question: "Which method encourages maximum student participation in the classroom?",
+  options: [
+    "Lecture Method",
+    "Discussion Method",
+    "Dictation Method",
+    "Reading Method"
+  ],
+  answer: "Discussion Method",
+  explanation: "Discussion promotes interaction, critical thinking, and active participation among students."
+},
+{
+  id: 694,
+  category: "Teaching Aptitude",
+  question: "Formative assessment is conducted primarily to:",
+  options: [
+    "Award final grades",
+    "Promote students",
+    "Monitor learning progress",
+    "Select candidates"
+  ],
+  answer: "Monitor learning progress",
+  explanation: "Formative assessment is carried out during the learning process to identify strengths and weaknesses and improve learning outcomes."
+},
+{
+  id: 695,
+  category: "Teaching Aptitude",
+  question: "A teacher-centered classroom is characterized by:",
+  options: [
+    "Active student participation",
+    "Student autonomy",
+    "Teacher dominance in instruction",
+    "Collaborative learning"
+  ],
+  answer: "Teacher dominance in instruction",
+  explanation: "In a teacher-centered approach, the teacher plays the primary role in delivering information while students remain relatively passive."
+},
+{
+  id: 696,
+  category: "Teaching Aptitude",
+  question: "Bloom's Taxonomy is primarily concerned with:",
+  options: [
+    "Teaching methods",
+    "Learning objectives",
+    "Classroom discipline",
+    "Educational administration"
+  ],
+  answer: "Learning objectives",
+  explanation: "Bloom's Taxonomy classifies educational objectives into different levels of learning, especially in the cognitive domain."
+},
+{
+  id: 697,
+  category: "Teaching Aptitude",
+  question: "Which of the following is the highest level in the revised Bloom's Taxonomy?",
+  options: [
+    "Understanding",
+    "Applying",
+    "Creating",
+    "Analyzing"
+  ],
+  answer: "Creating",
+  explanation: "In the revised Bloom's Taxonomy, Creating is the highest cognitive level, involving the production of new ideas or products."
+},
+{
+  id: 698,
+  category: "Teaching Aptitude",
+  question: "Diagnostic evaluation is mainly used to:",
+  options: [
+    "Assign grades",
+    "Identify learning difficulties",
+    "Promote students",
+    "Compare schools"
+  ],
+  answer: "Identify learning difficulties",
+  explanation: "Diagnostic evaluation helps identify specific weaknesses and learning problems so that corrective measures can be taken."
+},
+{
+  id: 699,
+  category: "Teaching Aptitude",
+  question: "A learner-centered approach emphasizes:",
+  options: [
+    "Teacher authority",
+    "Student participation and engagement",
+    "Memorization only",
+    "Strict examination patterns"
+  ],
+  answer: "Student participation and engagement",
+  explanation: "Learner-centered teaching focuses on active student involvement, critical thinking, and independent learning."
+},
+{
+  id: 700,
+  category: "Teaching Aptitude",
+  question: "Which of the following is considered an intrinsic motivation for learning?",
+  options: [
+    "Receiving a prize",
+    "Getting higher marks",
+    "Curiosity and interest",
+    "Parental pressure"
+  ],
+  answer: "Curiosity and interest",
+  explanation: "Intrinsic motivation comes from internal interest, curiosity, and personal satisfaction rather than external rewards."
+},
+{
+  id: 701,
+  category: "Teaching Aptitude",
+  question: "Which of the following is an essential characteristic of a good teacher?",
+  options: [
+    "Partiality towards bright students",
+    "Effective communication skills",
+    "Strict punishment",
+    "Limited subject knowledge"
+  ],
+  answer: "Effective communication skills",
+  explanation: "A good teacher should communicate ideas clearly and effectively to facilitate learning."
+},
+{
+  id: 702,
+  category: "Teaching Aptitude",
+  question: "Classroom management primarily aims to:",
+  options: [
+    "Control students through punishment",
+    "Maintain an effective learning environment",
+    "Reduce teaching workload",
+    "Increase examination scores only"
+  ],
+  answer: "Maintain an effective learning environment",
+  explanation: "Classroom management involves organizing the classroom to create a positive and productive learning environment."
+},
+{
+  id: 703,
+  category: "Teaching Aptitude",
+  question: "Teaching aids are used mainly to:",
+  options: [
+    "Replace the teacher",
+    "Make learning more effective and interesting",
+    "Increase homework",
+    "Reduce student participation"
+  ],
+  answer: "Make learning more effective and interesting",
+  explanation: "Teaching aids help students understand concepts better by making lessons more engaging and interactive."
+},
+{
+  id: 704,
+  category: "Teaching Aptitude",
+  question: "Feedback in teaching-learning helps to:",
+  options: [
+    "Discourage students",
+    "Evaluate and improve performance",
+    "Increase classroom noise",
+    "Reduce communication"
+  ],
+  answer: "Evaluate and improve performance",
+  explanation: "Feedback provides information about learning progress and helps both teachers and students improve performance."
+},
+{
+  id: 705,
+  category: "Teaching Aptitude",
+  question: "Which of the following is a barrier to effective classroom communication?",
+  options: [
+    "Clear language",
+    "Active listening",
+    "Noise and distractions",
+    "Appropriate teaching aids"
+  ],
+  answer: "Noise and distractions",
+  explanation: "Physical and psychological distractions can interfere with the communication process and reduce learning effectiveness."
+},
+{
+  id: 706,
+  category: "Teaching Aptitude",
+  question: "Microteaching is primarily used for:",
+  options: [
+    "Conducting examinations",
+    "Developing teaching skills",
+    "Educational administration",
+    "Curriculum design"
+  ],
+  answer: "Developing teaching skills",
+  explanation: "Microteaching is a teacher training technique that helps teachers practice and improve specific teaching skills in a controlled environment."
+},
+{
+  id: 707,
+  category: "Teaching Aptitude",
+  question: "Positive reinforcement in the classroom means:",
+  options: [
+    "Punishing undesirable behaviour",
+    "Ignoring student performance",
+    "Rewarding desirable behaviour",
+    "Increasing homework"
+  ],
+  answer: "Rewarding desirable behaviour",
+  explanation: "Positive reinforcement encourages desirable behaviour by providing rewards, praise, or recognition."
+},
+{
+  id: 708,
+  category: "Teaching Aptitude",
+  question: "Individual differences among learners refer to differences in:",
+  options: [
+    "Learning abilities and interests",
+    "School building design",
+    "Textbook size",
+    "Examination schedule"
+  ],
+  answer: "Learning abilities and interests",
+  explanation: "Students differ in intelligence, aptitude, learning styles, interests, and personality traits."
+},
+{
+  id: 709,
+  category: "Teaching Aptitude",
+  question: "Guidance and counselling in education mainly help students to:",
+  options: [
+    "Memorize textbooks",
+    "Solve personal, educational, and career-related problems",
+    "Avoid examinations",
+    "Reduce classroom participation"
+  ],
+  answer: "Solve personal, educational, and career-related problems",
+  explanation: "Guidance and counselling assist students in making informed decisions regarding education, careers, and personal development."
+},
+{
+  id: 710,
+  category: "Teaching Aptitude",
+  question: "Team teaching refers to:",
+  options: [
+    "Students teaching each other",
+    "A single teacher handling multiple subjects",
+    "Two or more teachers teaching together",
+    "Online teaching only"
+  ],
+  answer: "Two or more teachers teaching together",
+  explanation: "Team teaching involves two or more teachers collaboratively planning, teaching, and evaluating learning activities."
+},
+{
+  id: 711,
+  category: "Teaching Aptitude",
+  question: "Which teaching method is most suitable for developing critical thinking among students?",
+  options: [
+    "Lecture Method",
+    "Discussion Method",
+    "Dictation Method",
+    "Drill Method"
+  ],
+  answer: "Discussion Method",
+  explanation: "Discussion encourages students to analyze, evaluate, and express their ideas, thereby developing critical thinking skills."
+},
+{
+  id: 712,
+  category: "Teaching Aptitude",
+  question: "The primary purpose of evaluation in education is to:",
+  options: [
+    "Punish weak students",
+    "Measure and improve learning outcomes",
+    "Increase competition only",
+    "Reduce classroom activities"
+  ],
+  answer: "Measure and improve learning outcomes",
+  explanation: "Evaluation helps assess student achievement and provides feedback for improving teaching and learning."
+},
+{
+  id: 713,
+  category: "Teaching Aptitude",
+  question: "A lesson plan is prepared mainly to:",
+  options: [
+    "Increase paperwork",
+    "Organize teaching-learning activities systematically",
+    "Reduce student participation",
+    "Replace textbooks"
+  ],
+  answer: "Organize teaching-learning activities systematically",
+  explanation: "A lesson plan provides a structured framework for achieving instructional objectives effectively."
+},
+{
+  id: 714,
+  category: "Teaching Aptitude",
+  question: "ICT in education refers to the use of:",
+  options: [
+    "Traditional blackboards only",
+    "Information and Communication Technology for teaching and learning",
+    "Examination committees",
+    "Library management only"
+  ],
+  answer: "Information and Communication Technology for teaching and learning",
+  explanation: "ICT includes computers, the internet, projectors, educational software, and other digital tools used in education."
+},
+{
+  id: 715,
+  category: "Teaching Aptitude",
+  question: "Remedial teaching is intended for students who:",
+  options: [
+    "Have already mastered the subject",
+    "Require additional support to overcome learning difficulties",
+    "Teach other students",
+    "Participate in sports activities"
+  ],
+  answer: "Require additional support to overcome learning difficulties",
+  explanation: "Remedial teaching provides extra instruction and assistance to help learners overcome specific academic weaknesses."
+},
+{
+  id: 716,
+  category: "Teaching Aptitude",
+  question: "Which of the following is considered a learner-centered method of teaching?",
+  options: [
+    "Lecture Method",
+    "Project Method",
+    "Dictation Method",
+    "Demonstration by teacher only"
+  ],
+  answer: "Project Method",
+  explanation: "The Project Method actively involves students in planning, executing, and evaluating learning activities."
+},
+{
+  id: 717,
+  category: "Teaching Aptitude",
+  question: "The main purpose of questioning in the classroom is to:",
+  options: [
+    "Create fear among students",
+    "Promote thinking and participation",
+    "Punish students",
+    "Reduce interaction"
+  ],
+  answer: "Promote thinking and participation",
+  explanation: "Effective questioning stimulates thinking, encourages participation, and helps assess understanding."
+},
+{
+  id: 718,
+  category: "Teaching Aptitude",
+  question: "Which of the following is most important for effective teaching?",
+  options: [
+    "Covering the syllabus quickly",
+    "Student understanding of concepts",
+    "Giving frequent punishments",
+    "Maintaining complete silence"
+  ],
+  answer: "Student understanding of concepts",
+  explanation: "The ultimate goal of teaching is meaningful understanding and learning rather than merely completing the syllabus."
+},
+{
+  id: 719,
+  category: "Teaching Aptitude",
+  question: "Continuous and Comprehensive Evaluation (CCE) emphasizes:",
+  options: [
+    "Only final examinations",
+    "Only academic performance",
+    "Continuous assessment of various aspects of learning",
+    "Memorization-based testing"
+  ],
+  answer: "Continuous assessment of various aspects of learning",
+  explanation: "CCE focuses on continuous evaluation of scholastic and co-scholastic development throughout the learning process."
+},
+{
+  id: 720,
+  category: "Teaching Aptitude",
+  question: "Which of the following best reflects professional ethics for teachers?",
+  options: [
+    "Showing favoritism",
+    "Maintaining fairness and integrity",
+    "Ignoring student concerns",
+    "Sharing confidential student information"
+  ],
+  answer: "Maintaining fairness and integrity",
+  explanation: "Professional ethics require teachers to act fairly, responsibly, honestly, and in the best interests of students."
+},
+{
   category: "Environment & Ecology",
   question: "What is the study of the relationship between organisms and their environment called?",
   options: [
@@ -12809,6 +16059,331 @@ const questions = [
     "Climate change agreement."
 },
 {
+  id: 766,
+  category: "Environment & Ecology",
+  question: "Which of the following is recognized as a biodiversity hotspot in India?",
+  options: [
+    "Western Ghats",
+    "Thar Desert",
+    "Deccan Plateau",
+    "Indo-Gangetic Plain"
+  ],
+  answer: "Western Ghats",
+  explanation: "The Western Ghats is one of the world's biodiversity hotspots due to its exceptional species richness and endemism."
+},
+{
+  id: 767,
+  category: "Environment & Ecology",
+  question: "The term 'endemic species' refers to species that:",
+  options: [
+    "Are found throughout the world",
+    "Migrate seasonally",
+    "Are restricted to a particular geographic area",
+    "Live only in deserts"
+  ],
+  answer: "Are restricted to a particular geographic area",
+  explanation: "Endemic species are native to and found only in a specific region or habitat."
+},
+{
+  id: 768,
+  category: "Environment & Ecology",
+  question: "Which international agreement aims to combat climate change by reducing greenhouse gas emissions?",
+  options: [
+    "Montreal Protocol",
+    "Kyoto Protocol",
+    "Ramsar Convention",
+    "Basel Convention"
+  ],
+  answer: "Kyoto Protocol",
+  explanation: "The Kyoto Protocol, adopted in 1997, committed participating countries to reduce greenhouse gas emissions."
+},
+{
+  id: 769,
+  category: "Environment & Ecology",
+  question: "The Ramsar Convention is related to the conservation of:",
+  options: [
+    "Forests",
+    "Wetlands",
+    "Deserts",
+    "Mountains"
+  ],
+  answer: "Wetlands",
+  explanation: "The Ramsar Convention is an international treaty for the conservation and wise use of wetlands."
+},
+{
+  id: 770,
+  category: "Environment & Ecology",
+  question: "Which gas contributes the most to the greenhouse effect due to human activities?",
+  options: [
+    "Oxygen",
+    "Nitrogen",
+    "Carbon Dioxide",
+    "Argon"
+  ],
+  answer: "Carbon Dioxide",
+  explanation: "Carbon dioxide (CO₂) is the largest contributor to anthropogenic greenhouse gas emissions and global warming."
+},
+{
+  id: 771,
+  category: "Environment & Ecology",
+  question: "The ozone layer is primarily located in which layer of the atmosphere?",
+  options: [
+    "Troposphere",
+    "Stratosphere",
+    "Mesosphere",
+    "Thermosphere"
+  ],
+  answer: "Stratosphere",
+  explanation: "The ozone layer is concentrated in the stratosphere and protects life on Earth by absorbing harmful ultraviolet radiation."
+},
+{
+  id: 772,
+  category: "Environment & Ecology",
+  question: "The Montreal Protocol was adopted to address:",
+  options: [
+    "Climate change",
+    "Deforestation",
+    "Ozone layer depletion",
+    "Marine pollution"
+  ],
+  answer: "Ozone layer depletion",
+  explanation: "The Montreal Protocol, adopted in 1987, aims to phase out substances that deplete the ozone layer."
+},
+{
+  id: 773,
+  category: "Environment & Ecology",
+  question: "Which of the following is a National Park in India?",
+  options: [
+    "Kaziranga",
+    "Sundarbans",
+    "Jim Corbett",
+    "All of the above"
+  ],
+  answer: "All of the above",
+  explanation: "Kaziranga, Sundarbans, and Jim Corbett are all National Parks and important wildlife conservation areas in India."
+},
+{
+  id: 774,
+  category: "Environment & Ecology",
+  question: "A Wildlife Sanctuary differs from a National Park because:",
+  options: [
+    "No wildlife is protected there",
+    "Human activities may be allowed to a limited extent",
+    "It exists only outside India",
+    "It protects only birds"
+  ],
+  answer: "Human activities may be allowed to a limited extent",
+  explanation: "Wildlife Sanctuaries generally allow certain regulated human activities, whereas National Parks have stricter protection measures."
+},
+{
+  id: 775,
+  category: "Environment & Ecology",
+  question: "The Red Data Book is published to provide information about:",
+  options: [
+    "Endangered and threatened species",
+    "Agricultural production",
+    "Mineral resources",
+    "Forest laws"
+  ],
+  answer: "Endangered and threatened species",
+  explanation: "The Red Data Book contains information on rare, endangered, and threatened species of plants and animals."
+},
+{
+  id: 776,
+  category: "Environment & Ecology",
+  question: "A food chain represents:",
+  options: [
+    "The flow of energy from one organism to another",
+    "A list of endangered species",
+    "A type of ecosystem",
+    "A conservation programme"
+  ],
+  answer: "The flow of energy from one organism to another",
+  explanation: "A food chain shows the transfer of energy and nutrients from producers to consumers and decomposers."
+},
+{
+  id: 777,
+  category: "Environment & Ecology",
+  question: "A food web is:",
+  options: [
+    "A single feeding relationship",
+    "A network of interconnected food chains",
+    "A type of forest",
+    "A biodiversity hotspot"
+  ],
+  answer: "A network of interconnected food chains",
+  explanation: "A food web consists of multiple interconnected food chains, making ecosystems more stable."
+},
+{
+  id: 778,
+  category: "Environment & Ecology",
+  question: "An ecosystem consists of:",
+  options: [
+    "Only living organisms",
+    "Only non-living components",
+    "Living organisms and their physical environment",
+    "Only plants and animals"
+  ],
+  answer: "Living organisms and their physical environment",
+  explanation: "An ecosystem includes both biotic (living) and abiotic (non-living) components interacting with each other."
+},
+{
+  id: 779,
+  category: "Environment & Ecology",
+  question: "Biodiversity refers to:",
+  options: [
+    "Variety of life forms in an area",
+    "Only plant diversity",
+    "Only animal diversity",
+    "The number of forests in a country"
+  ],
+  answer: "Variety of life forms in an area",
+  explanation: "Biodiversity includes the variety of genes, species, and ecosystems present in a region."
+},
+{
+  id: 780,
+  category: "Environment & Ecology",
+  question: "In an ecological pyramid, the largest amount of energy is found at the:",
+  options: [
+    "Top consumer level",
+    "Secondary consumer level",
+    "Primary consumer level",
+    "Producer level"
+  ],
+  answer: "Producer level",
+  explanation: "Producers form the base of the ecological pyramid and contain the highest amount of available energy."
+},
+{
+  id: 781,
+  category: "Environment & Ecology",
+  question: "Biomagnification refers to:",
+  options: [
+    "Increase in population size",
+    "Increase in concentration of pollutants at higher trophic levels",
+    "Growth of forests",
+    "Expansion of ecosystems"
+  ],
+  answer: "Increase in concentration of pollutants at higher trophic levels",
+  explanation: "Biomagnification is the process by which toxic substances become more concentrated as they move up the food chain."
+},
+{
+  id: 782,
+  category: "Environment & Ecology",
+  question: "Bioaccumulation is the process by which:",
+  options: [
+    "Pollutants build up within an organism over time",
+    "Species migrate between ecosystems",
+    "Nutrients are recycled in soil",
+    "Energy flows through a food chain"
+  ],
+  answer: "Pollutants build up within an organism over time",
+  explanation: "Bioaccumulation occurs when an organism absorbs pollutants faster than it can eliminate them."
+},
+{
+  id: 783,
+  category: "Environment & Ecology",
+  question: "Which of the following is a renewable resource?",
+  options: [
+    "Coal",
+    "Petroleum",
+    "Solar Energy",
+    "Natural Gas"
+  ],
+  answer: "Solar Energy",
+  explanation: "Solar energy is naturally replenished and is therefore considered a renewable resource."
+},
+{
+  id: 784,
+  category: "Environment & Ecology",
+  question: "Which of the following is a non-renewable resource?",
+  options: [
+    "Wind Energy",
+    "Solar Energy",
+    "Coal",
+    "Hydropower"
+  ],
+  answer: "Coal",
+  explanation: "Coal takes millions of years to form and cannot be replenished on a human timescale."
+},
+{
+  id: 785,
+  category: "Environment & Ecology",
+  question: "The concept of sustainable development was popularized by the:",
+  options: [
+    "Kyoto Protocol",
+    "Brundtland Commission Report",
+    "Montreal Protocol",
+    "Rio Declaration"
+  ],
+  answer: "Brundtland Commission Report",
+  explanation: "The 1987 Brundtland Report defined sustainable development as development that meets present needs without compromising the ability of future generations to meet their own needs."
+},
+{
+  id: 786,
+  category: "Environment & Ecology",
+  question: "Which of the following best describes afforestation?",
+  options: [
+    "Cutting down forests",
+    "Planting trees in barren or non-forest areas",
+    "Protecting wildlife only",
+    "Converting forests into farmland"
+  ],
+  answer: "Planting trees in barren or non-forest areas",
+  explanation: "Afforestation refers to establishing forests in areas where there were previously no forests."
+},
+{
+  id: 787,
+  category: "Environment & Ecology",
+  question: "Deforestation primarily results in:",
+  options: [
+    "Increased biodiversity",
+    "Reduced soil erosion",
+    "Loss of biodiversity and habitat",
+    "Increased rainfall"
+  ],
+  answer: "Loss of biodiversity and habitat",
+  explanation: "Deforestation destroys habitats, reduces biodiversity, and contributes to climate change and soil erosion."
+},
+{
+  id: 788,
+  category: "Environment & Ecology",
+  question: "The Chipko Movement is associated with:",
+  options: [
+    "Wildlife conservation",
+    "Forest conservation",
+    "River conservation",
+    "Air pollution control"
+  ],
+  answer: "Forest conservation",
+  explanation: "The Chipko Movement was a forest conservation movement in which villagers hugged trees to prevent them from being cut down."
+},
+{
+  id: 789,
+  category: "Environment & Ecology",
+  question: "Which of the following is known as a 'keystone species'?",
+  options: [
+    "A species with little impact on its ecosystem",
+    "A species that plays a critical role in maintaining ecosystem balance",
+    "A newly discovered species",
+    "An extinct species"
+  ],
+  answer: "A species that plays a critical role in maintaining ecosystem balance",
+  explanation: "Keystone species have a disproportionately large effect on their ecosystem relative to their population size."
+},
+{
+  id: 790,
+  category: "Environment & Ecology",
+  question: "The International Union for Conservation of Nature (IUCN) is best known for publishing:",
+  options: [
+    "Human Development Report",
+    "World Happiness Report",
+    "Red List of Threatened Species",
+    "Global Competitiveness Report"
+  ],
+  answer: "Red List of Threatened Species",
+  explanation: "The IUCN Red List is the world's most comprehensive inventory of the conservation status of plant and animal species."
+},
+{
   category: "Northeast India",
   question: "How many states are included in Northeast India?",
   options: [
@@ -13223,6 +16798,396 @@ const questions = [
   },
   hint:
     "Western international border."
+},
+{
+  id: 741,
+  category: "Northeast India",
+  question: "Which state is known as the 'Gateway to Northeast India'?",
+  options: [
+    "Manipur",
+    "Assam",
+    "Tripura",
+    "Mizoram"
+  ],
+  answer: "Assam",
+  explanation: "Assam is called the Gateway to Northeast India because it connects the region with the rest of India through the Siliguri Corridor."
+},
+{
+  id: 742,
+  category: "Northeast India",
+  question: "How many states are commonly referred to as the 'Seven Sisters' of Northeast India?",
+  options: [
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  answer: "7",
+  explanation: "The Seven Sisters are Assam, Arunachal Pradesh, Manipur, Meghalaya, Mizoram, Nagaland, and Tripura."
+},
+{
+  id: 743,
+  category: "Northeast India",
+  question: "Which state is known as the 'Land of the Rising Sun' in India?",
+  options: [
+    "Nagaland",
+    "Arunachal Pradesh",
+    "Manipur",
+    "Mizoram"
+  ],
+  answer: "Arunachal Pradesh",
+  explanation: "Arunachal Pradesh is called the Land of the Rising Sun because it is the easternmost state of India and receives the first sunrise."
+},
+{
+  id: 744,
+  category: "Northeast India",
+  question: "The capital city of Meghalaya is:",
+  options: [
+    "Aizawl",
+    "Kohima",
+    "Shillong",
+    "Imphal"
+  ],
+  answer: "Shillong",
+  explanation: "Shillong is the capital of Meghalaya and is popularly known as the 'Scotland of the East'."
+},
+{
+  id: 745,
+  category: "Northeast India",
+  question: "Which Northeast Indian state shares the longest international border with Myanmar?",
+  options: [
+    "Tripura",
+    "Mizoram",
+    "Nagaland",
+    "Assam"
+  ],
+  answer: "Mizoram",
+  explanation: "Mizoram shares approximately 510 km of international border with Myanmar, making it the Northeast state with the longest border with that country."
+},
+{
+  id: 746,
+  category: "Northeast India",
+  question: "The Hornbill Festival is primarily associated with which Northeast Indian state?",
+  options: [
+    "Manipur",
+    "Nagaland",
+    "Meghalaya",
+    "Tripura"
+  ],
+  answer: "Nagaland",
+  explanation: "The Hornbill Festival is Nagaland's most famous cultural festival, showcasing the traditions and heritage of various Naga tribes."
+},
+{
+  id: 747,
+  category: "Northeast India",
+  question: "The Sangai Festival is celebrated in which state?",
+  options: [
+    "Mizoram",
+    "Assam",
+    "Manipur",
+    "Arunachal Pradesh"
+  ],
+  answer: "Manipur",
+  explanation: "The Sangai Festival is Manipur's premier tourism festival and is named after the endangered Sangai deer."
+},
+{
+  id: 748,
+  category: "Northeast India",
+  question: "The phenomenon of mass bamboo flowering in Mizoram is known as:",
+  options: [
+    "Jhum",
+    "Chapchar Kut",
+    "Mautam",
+    "Thalfavang Kut"
+  ],
+  answer: "Mautam",
+  explanation: "Mautam refers to the cyclical flowering of bamboo, which often leads to an increase in rat populations and crop damage."
+},
+{
+  id: 749,
+  category: "Northeast India",
+  question: "The North Eastern Council (NEC) was established in:",
+  options: [
+    "1972",
+    "1980",
+    "1991",
+    "2001"
+  ],
+  answer: "1972",
+  explanation: "The North Eastern Council was established in 1972 as a regional planning and development body for Northeast India."
+},
+{
+  id: 750,
+  category: "Northeast India",
+  question: "The headquarters of the North Eastern Council (NEC) is located at:",
+  options: [
+    "Guwahati",
+    "Shillong",
+    "Aizawl",
+    "Imphal"
+  ],
+  answer: "Shillong",
+  explanation: "The North Eastern Council Secretariat is located in Shillong, Meghalaya."
+},
+{
+  id: 751,
+  category: "Northeast India",
+  question: "Sikkim became a state of India in which year?",
+  options: [
+    "1972",
+    "1975",
+    "1980",
+    "1987"
+  ],
+  answer: "1975",
+  explanation: "Sikkim became the 22nd state of India in 1975 after a referendum and constitutional amendment."
+},
+{
+  id: 752,
+  category: "Northeast India",
+  question: "Kaziranga National Park, a UNESCO World Heritage Site, is located in:",
+  options: [
+    "Meghalaya",
+    "Arunachal Pradesh",
+    "Assam",
+    "Nagaland"
+  ],
+  answer: "Assam",
+  explanation: "Kaziranga National Park in Assam is famous for its population of the one-horned rhinoceros and is a UNESCO World Heritage Site."
+},
+{
+  id: 753,
+  category: "Northeast India",
+  question: "Loktak Lake, the largest freshwater lake in Northeast India, is located in:",
+  options: [
+    "Tripura",
+    "Mizoram",
+    "Manipur",
+    "Meghalaya"
+  ],
+  answer: "Manipur",
+  explanation: "Loktak Lake in Manipur is famous for its floating islands known as 'Phumdis'."
+},
+{
+  id: 754,
+  category: "Northeast India",
+  question: "Dzukou Valley, known for its seasonal flowers and scenic beauty, lies on the border of:",
+  options: [
+    "Assam and Meghalaya",
+    "Nagaland and Manipur",
+    "Mizoram and Tripura",
+    "Arunachal Pradesh and Assam"
+  ],
+  answer: "Nagaland and Manipur",
+  explanation: "Dzukou Valley is located on the border of Nagaland and Manipur and is often called the 'Valley of Flowers of the Northeast'."
+},
+{
+  id: 755,
+  category: "Northeast India",
+  question: "Chapchar Kut is a major traditional festival celebrated in:",
+  options: [
+    "Nagaland",
+    "Manipur",
+    "Mizoram",
+    "Tripura"
+  ],
+  answer: "Mizoram",
+  explanation: "Chapchar Kut is one of the most important festivals of Mizoram, celebrated after the completion of jungle clearing for jhum cultivation."
+},
+{
+  id: 756,
+  category: "Northeast India",
+  question: "The Wangala Festival is celebrated by which tribe of Meghalaya?",
+  options: [
+    "Khasi",
+    "Jaintia",
+    "Garo",
+    "Mizo"
+  ],
+  answer: "Garo",
+  explanation: "Wangala, also known as the Hundred Drums Festival, is celebrated by the Garo tribe to mark the end of the harvest season."
+},
+{
+  id: 757,
+  category: "Northeast India",
+  question: "Ziro Valley, known for its scenic beauty and Apatani culture, is located in:",
+  options: [
+    "Nagaland",
+    "Arunachal Pradesh",
+    "Assam",
+    "Manipur"
+  ],
+  answer: "Arunachal Pradesh",
+  explanation: "Ziro Valley in Arunachal Pradesh is famous for the Apatani tribe and is included in UNESCO's tentative World Heritage list."
+},
+{
+  id: 758,
+  category: "Northeast India",
+  question: "Keibul Lamjao National Park, the world's only floating national park, is located in:",
+  options: [
+    "Mizoram",
+    "Assam",
+    "Manipur",
+    "Tripura"
+  ],
+  answer: "Manipur",
+  explanation: "Keibul Lamjao National Park is situated on Loktak Lake in Manipur and is the natural habitat of the endangered Sangai deer."
+},
+{
+  id: 759,
+  category: "Northeast India",
+  question: "The Nongkrem Dance Festival is associated with which state?",
+  options: [
+    "Nagaland",
+    "Meghalaya",
+    "Mizoram",
+    "Tripura"
+  ],
+  answer: "Meghalaya",
+  explanation: "The Nongkrem Dance Festival is a major Khasi festival celebrated in Meghalaya to honor and thank the divine for prosperity."
+},
+{
+  id: 760,
+  category: "Northeast India",
+  question: "Nathu La Pass, an important mountain pass connecting India and China, is located in:",
+  options: [
+    "Arunachal Pradesh",
+    "Sikkim",
+    "Nagaland",
+    "Assam"
+  ],
+  answer: "Sikkim",
+  explanation: "Nathu La Pass is situated in East Sikkim and forms part of the historic Silk Route between India and Tibet."
+},
+{
+  id: 761,
+  category: "Northeast India",
+  question: "Majuli, the world's largest inhabited river island, is located in:",
+  options: [
+    "Manipur",
+    "Assam",
+    "Tripura",
+    "Arunachal Pradesh"
+  ],
+  answer: "Assam",
+  explanation: "Majuli is located in the Brahmaputra River in Assam and is famous for its Vaishnavite monasteries known as Satras."
+},
+{
+  id: 762,
+  category: "Northeast India",
+  question: "Shilloi Lake, a popular tourist destination, is located in:",
+  options: [
+    "Mizoram",
+    "Nagaland",
+    "Manipur",
+    "Meghalaya"
+  ],
+  answer: "Nagaland",
+  explanation: "Shilloi Lake is located in Nagaland's Phek district and is known for its scenic beauty and local legends."
+},
+{
+  id: 763,
+  category: "Northeast India",
+  question: "Ujjayanta Palace, a famous historical monument, is situated in:",
+  options: [
+    "Agartala",
+    "Shillong",
+    "Aizawl",
+    "Imphal"
+  ],
+  answer: "Agartala",
+  explanation: "Ujjayanta Palace is located in Agartala, Tripura, and now houses the Tripura State Museum."
+},
+{
+  id: 764,
+  category: "Northeast India",
+  question: "Which Northeast Indian states share an international border with Myanmar?",
+  options: [
+    "Assam, Meghalaya and Tripura",
+    "Mizoram, Manipur, Nagaland and Arunachal Pradesh",
+    "Assam, Nagaland and Sikkim",
+    "Tripura, Meghalaya and Mizoram"
+  ],
+  answer: "Mizoram, Manipur, Nagaland and Arunachal Pradesh",
+  explanation: "Four Northeast states—Arunachal Pradesh, Nagaland, Manipur, and Mizoram—share an international border with Myanmar."
+},
+{
+  id: 765,
+  category: "Northeast India",
+  question: "North-Eastern Hill University (NEHU) is located in:",
+  options: [
+    "Aizawl",
+    "Shillong",
+    "Kohima",
+    "Itanagar"
+  ],
+  answer: "Shillong",
+  explanation: "NEHU was established in 1973 and is located in Shillong, Meghalaya. It is one of the major central universities in Northeast India."
+},
+{
+  id: 966,
+  category: "Northeast India",
+  question: "The headquarters of the North Eastern Council (NEC) is located in:",
+  options: [
+    "Aizawl",
+    "Guwahati",
+    "Shillong",
+    "Imphal"
+  ],
+  answer: "Shillong",
+  explanation: "The North Eastern Council (NEC), established in 1972, has its headquarters in Shillong, Meghalaya."
+},
+{
+  id: 967,
+  category: "Northeast India",
+  question: "The Hornbill Festival is celebrated annually in:",
+  options: [
+    "Manipur",
+    "Nagaland",
+    "Meghalaya",
+    "Tripura"
+  ],
+  answer: "Nagaland",
+  explanation: "The Hornbill Festival is Nagaland's premier cultural festival showcasing the traditions of various Naga tribes."
+},
+{
+  id: 968,
+  category: "Northeast India",
+  question: "Loktak Lake, famous for its floating phumdis, is located in:",
+  options: [
+    "Mizoram",
+    "Tripura",
+    "Manipur",
+    "Assam"
+  ],
+  answer: "Manipur",
+  explanation: "Loktak Lake in Manipur is the largest freshwater lake in Northeast India and is known for its floating islands called phumdis."
+},
+{
+  id: 969,
+  category: "Northeast India",
+  question: "Kaziranga National Park, renowned for the one-horned rhinoceros, is situated in:",
+  options: [
+    "Arunachal Pradesh",
+    "Nagaland",
+    "Assam",
+    "Meghalaya"
+  ],
+  answer: "Assam",
+  explanation: "Kaziranga National Park in Assam is a UNESCO World Heritage Site famous for the Indian one-horned rhinoceros."
+},
+{
+  id: 970,
+  category: "Northeast India",
+  question: "Sikkim became a state of India in:",
+  options: [
+    "1972",
+    "1975",
+    "1980",
+    "1987"
+  ],
+  answer: "1975",
+  explanation: "Sikkim became the 22nd state of India in 1975 following a referendum and constitutional amendment."
 },
 {
   category: "International Relations",
