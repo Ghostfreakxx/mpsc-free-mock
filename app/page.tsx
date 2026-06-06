@@ -12392,6 +12392,1475 @@ const questions = [
   hint:
     "Evaluating student learning."
 },
+{
+  category: "Environment & Ecology",
+  question: "What is the study of the relationship between organisms and their environment called?",
+  options: [
+    "Ecology",
+    "Geology",
+    "Meteorology",
+    "Botany"
+  ],
+  answer: "Ecology",
+  explanation:
+    "Ecology is the branch of science that studies interactions between organisms and their environment.",
+  wrongExplanations: {
+    "Geology": "Study of rocks and Earth.",
+    "Meteorology": "Study of weather.",
+    "Botany": "Study of plants."
+  },
+  hint:
+    "Environment and living organisms."
+},
+
+{
+  category: "Environment & Ecology",
+  question: "Which gas is primarily responsible for the greenhouse effect?",
+  options: [
+    "Oxygen",
+    "Nitrogen",
+    "Carbon Dioxide",
+    "Hydrogen"
+  ],
+  answer: "Carbon Dioxide",
+  explanation:
+    "Carbon dioxide is one of the major greenhouse gases contributing to global warming.",
+  wrongExplanations: {
+    "Oxygen": "Not a greenhouse gas.",
+    "Nitrogen": "Not a significant greenhouse gas.",
+    "Hydrogen": "Not responsible for greenhouse effect."
+  },
+  hint:
+    "Produced by burning fossil fuels."
+},
+
+{
+  category: "Environment & Ecology",
+  question: "Which level of biodiversity refers to the variety of genes within a species?",
+  options: [
+    "Species Diversity",
+    "Genetic Diversity",
+    "Ecosystem Diversity",
+    "Population Diversity"
+  ],
+  answer: "Genetic Diversity",
+  explanation:
+    "Genetic diversity refers to variation in genes among individuals of a species.",
+  wrongExplanations: {
+    "Species Diversity": "Variety of species.",
+    "Ecosystem Diversity": "Variety of ecosystems.",
+    "Population Diversity": "Not a standard biodiversity level."
+  },
+  hint:
+    "Variation within the same species."
+},
+
+{
+  category: "Environment & Ecology",
+  question: "Which layer of the atmosphere contains the ozone layer?",
+  options: [
+    "Troposphere",
+    "Stratosphere",
+    "Mesosphere",
+    "Thermosphere"
+  ],
+  answer: "Stratosphere",
+  explanation:
+    "The ozone layer is located in the stratosphere and protects Earth from harmful UV radiation.",
+  wrongExplanations: {
+    "Troposphere": "Weather occurs here.",
+    "Mesosphere": "Above stratosphere.",
+    "Thermosphere": "Higher atmospheric layer."
+  },
+  hint:
+    "Second atmospheric layer."
+},
+
+{
+  category: "Environment & Ecology",
+  question: "Which international organization publishes the Red List of Threatened Species?",
+  options: [
+    "UNESCO",
+    "WWF",
+    "IUCN",
+    "UNEP"
+  ],
+  answer: "IUCN",
+  explanation:
+    "The International Union for Conservation of Nature maintains the Red List of threatened species.",
+  wrongExplanations: {
+    "UNESCO": "Education and culture agency.",
+    "WWF": "Conservation NGO.",
+    "UNEP": "UN environmental programme."
+  },
+  hint:
+    "Global conservation authority."
+},
+{
+  category: "Environment & Ecology",
+  question: "A food chain begins with:",
+  options: [
+    "Consumers",
+    "Decomposers",
+    "Producers",
+    "Carnivores"
+  ],
+  answer: "Producers",
+  explanation:
+    "Producers such as green plants form the first trophic level of a food chain.",
+  wrongExplanations: {
+    "Consumers": "Depend on producers for food.",
+    "Decomposers": "Break down dead matter.",
+    "Carnivores": "Higher-level consumers."
+  },
+  hint:
+    "Plants make their own food."
+},
+
+{
+  category: "Environment & Ecology",
+  question: "Which of the following is a decomposer?",
+  options: [
+    "Tiger",
+    "Grass",
+    "Fungi",
+    "Deer"
+  ],
+  answer: "Fungi",
+  explanation:
+    "Fungi decompose dead organic matter and recycle nutrients into the ecosystem.",
+  wrongExplanations: {
+    "Tiger": "Carnivore.",
+    "Grass": "Producer.",
+    "Deer": "Herbivore."
+  },
+  hint:
+    "Breaks down dead organisms."
+},
+
+{
+  category: "Environment & Ecology",
+  question: "The interconnected network of food chains in an ecosystem is called:",
+  options: [
+    "Food Pyramid",
+    "Food Web",
+    "Trophic Level",
+    "Biomass"
+  ],
+  answer: "Food Web",
+  explanation:
+    "A food web consists of multiple interconnected food chains within an ecosystem.",
+  wrongExplanations: {
+    "Food Pyramid": "Represents energy transfer.",
+    "Trophic Level": "Position in a food chain.",
+    "Biomass": "Total organic matter."
+  },
+  hint:
+    "Many food chains connected together."
+},
+
+{
+  category: "Environment & Ecology",
+  question: "Which of the following is an abiotic factor?",
+  options: [
+    "Bacteria",
+    "Trees",
+    "Sunlight",
+    "Animals"
+  ],
+  answer: "Sunlight",
+  explanation:
+    "Abiotic factors are non-living components of an ecosystem such as sunlight, water and temperature.",
+  wrongExplanations: {
+    "Bacteria": "Living organism.",
+    "Trees": "Living organism.",
+    "Animals": "Living organisms."
+  },
+  hint:
+    "Non-living environmental factor."
+},
+
+{
+  category: "Environment & Ecology",
+  question: "An ecosystem consists of:",
+  options: [
+    "Only living organisms",
+    "Only non-living components",
+    "Living and non-living components interacting together",
+    "Only plants and animals"
+  ],
+  answer: "Living and non-living components interacting together",
+  explanation:
+    "An ecosystem includes biotic and abiotic components interacting as a functional unit.",
+  wrongExplanations: {
+    "Only living organisms": "Incomplete definition.",
+    "Only non-living components": "Incomplete definition.",
+    "Only plants and animals": "Excludes abiotic factors."
+  },
+  hint:
+    "Biotic + Abiotic."
+},
+{
+  category: "Environment & Ecology",
+  question: "Which of the following is the first National Park of India?",
+  options: [
+    "Kaziranga National Park",
+    "Jim Corbett National Park",
+    "Sundarbans National Park",
+    "Kanha National Park"
+  ],
+  answer: "Jim Corbett National Park",
+  explanation:
+    "Jim Corbett National Park, established in 1936, is India's first national park.",
+  wrongExplanations: {
+    "Kaziranga National Park": "Famous for one-horned rhinoceros.",
+    "Sundarbans National Park": "Known for mangrove forests.",
+    "Kanha National Park": "Known for tiger conservation."
+  },
+  hint:
+    "Named after a famous hunter-conservationist."
+},
+
+{
+  category: "Environment & Ecology",
+  question: "Which animal is most closely associated with Kaziranga National Park?",
+  options: [
+    "Royal Bengal Tiger",
+    "Asiatic Lion",
+    "One-Horned Rhinoceros",
+    "Snow Leopard"
+  ],
+  answer: "One-Horned Rhinoceros",
+  explanation:
+    "Kaziranga National Park in Assam is world-famous for the Indian one-horned rhinoceros.",
+  wrongExplanations: {
+    "Royal Bengal Tiger": "Found there but not the symbol species.",
+    "Asiatic Lion": "Mainly found in Gir.",
+    "Snow Leopard": "Found in Himalayan regions."
+  },
+  hint:
+    "Assam's famous wildlife species."
+},
+
+{
+  category: "Environment & Ecology",
+  question: "A Ramsar Site is associated with the conservation of:",
+  options: [
+    "Mountains",
+    "Wetlands",
+    "Forests",
+    "Grasslands"
+  ],
+  answer: "Wetlands",
+  explanation:
+    "The Ramsar Convention focuses on the conservation and sustainable use of wetlands.",
+  wrongExplanations: {
+    "Mountains": "Not covered by Ramsar.",
+    "Forests": "Protected through other mechanisms.",
+    "Grasslands": "Not the focus of Ramsar."
+  },
+  hint:
+    "International wetland convention."
+},
+
+{
+  category: "Environment & Ecology",
+  question: "Which category in the IUCN Red List indicates the highest risk of extinction in the wild?",
+  options: [
+    "Vulnerable",
+    "Endangered",
+    "Critically Endangered",
+    "Near Threatened"
+  ],
+  answer: "Critically Endangered",
+  explanation:
+    "Critically Endangered species face an extremely high risk of extinction in the wild.",
+  wrongExplanations: {
+    "Vulnerable": "Lower risk category.",
+    "Endangered": "Serious risk but below Critically Endangered.",
+    "Near Threatened": "Not yet threatened."
+  },
+  hint:
+    "Highest threatened category before extinction."
+},
+
+{
+  category: "Environment & Ecology",
+  question: "Which of the following is a Biosphere Reserve in Northeast India?",
+  options: [
+    "Nilgiri",
+    "Nokrek",
+    "Sundarbans",
+    "Pachmarhi"
+  ],
+  answer: "Nokrek",
+  explanation:
+    "Nokrek Biosphere Reserve is located in Meghalaya and is part of UNESCO's biosphere reserve network.",
+  wrongExplanations: {
+    "Nilgiri": "Located in South India.",
+    "Sundarbans": "Located in West Bengal.",
+    "Pachmarhi": "Located in Madhya Pradesh."
+  },
+  hint:
+    "Located in Meghalaya."
+},
+{
+  category: "Environment & Ecology",
+  question: "Global warming refers to:",
+  options: [
+    "Decrease in global temperature",
+    "Increase in Earth's average temperature",
+    "Increase in rainfall only",
+    "Formation of ozone"
+  ],
+  answer: "Increase in Earth's average temperature",
+  explanation:
+    "Global warming is the long-term increase in Earth's average surface temperature mainly due to greenhouse gases.",
+  wrongExplanations: {
+    "Decrease in global temperature": "Opposite meaning.",
+    "Increase in rainfall only": "One possible effect, not the definition.",
+    "Formation of ozone": "Different phenomenon."
+  },
+  hint:
+    "Greenhouse gases."
+},
+
+{
+  category: "Environment & Ecology",
+  question: "Which international agreement aims to limit global temperature rise to well below 2°C above pre-industrial levels?",
+  options: [
+    "Kyoto Protocol",
+    "Montreal Protocol",
+    "Paris Agreement",
+    "Ramsar Convention"
+  ],
+  answer: "Paris Agreement",
+  explanation:
+    "The Paris Agreement was adopted in 2015 to combat climate change and limit global warming.",
+  wrongExplanations: {
+    "Kyoto Protocol": "Earlier climate agreement.",
+    "Montreal Protocol": "Ozone layer protection.",
+    "Ramsar Convention": "Wetland conservation."
+  },
+  hint:
+    "Adopted in 2015."
+},
+
+{
+  category: "Environment & Ecology",
+  question: "Which gas is most responsible for the depletion of the ozone layer?",
+  options: [
+    "Carbon Dioxide",
+    "Methane",
+    "Chlorofluorocarbons (CFCs)",
+    "Nitrogen"
+  ],
+  answer: "Chlorofluorocarbons (CFCs)",
+  explanation:
+    "CFCs break down ozone molecules in the stratosphere, leading to ozone depletion.",
+  wrongExplanations: {
+    "Carbon Dioxide": "Major greenhouse gas.",
+    "Methane": "Greenhouse gas.",
+    "Nitrogen": "Not responsible for ozone depletion."
+  },
+  hint:
+    "Used in old refrigerators and aerosols."
+},
+
+{
+  category: "Environment & Ecology",
+  question: "Which of the following is a renewable source of energy?",
+  options: [
+    "Coal",
+    "Petroleum",
+    "Solar Energy",
+    "Natural Gas"
+  ],
+  answer: "Solar Energy",
+  explanation:
+    "Solar energy is renewable because it is continuously supplied by the Sun.",
+  wrongExplanations: {
+    "Coal": "Non-renewable fossil fuel.",
+    "Petroleum": "Non-renewable fossil fuel.",
+    "Natural Gas": "Non-renewable fossil fuel."
+  },
+  hint:
+    "Energy from sunlight."
+},
+
+{
+  category: "Environment & Ecology",
+  question: "The Kyoto Protocol is primarily concerned with:",
+  options: [
+    "Wildlife conservation",
+    "Reducing greenhouse gas emissions",
+    "Wetland protection",
+    "Ocean pollution"
+  ],
+  answer: "Reducing greenhouse gas emissions",
+  explanation:
+    "The Kyoto Protocol committed participating countries to reduce greenhouse gas emissions.",
+  wrongExplanations: {
+    "Wildlife conservation": "Not its primary focus.",
+    "Wetland protection": "Ramsar Convention.",
+    "Ocean pollution": "Different environmental issue."
+  },
+  hint:
+    "Climate change agreement."
+},
+{
+  category: "Northeast India",
+  question: "How many states are included in Northeast India?",
+  options: [
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  answer: "8",
+  explanation:
+    "Northeast India consists of eight states: Assam, Arunachal Pradesh, Manipur, Meghalaya, Mizoram, Nagaland, Tripura and Sikkim.",
+  wrongExplanations: {
+    "6": "Too few.",
+    "7": "Before Sikkim was commonly included.",
+    "9": "Incorrect."
+  },
+  hint:
+    "Eight sister states including Sikkim."
+},
+
+{
+  category: "Northeast India",
+  question: "Which is the largest state in Northeast India by area?",
+  options: [
+    "Assam",
+    "Mizoram",
+    "Arunachal Pradesh",
+    "Manipur"
+  ],
+  answer: "Arunachal Pradesh",
+  explanation:
+    "Arunachal Pradesh is the largest state in Northeast India by area.",
+  wrongExplanations: {
+    "Assam": "Largest by population.",
+    "Mizoram": "Smaller in area.",
+    "Manipur": "Smaller in area."
+  },
+  hint:
+    "Shares a long border with China."
+},
+
+{
+  category: "Northeast India",
+  question: "What is the capital of Meghalaya?",
+  options: [
+    "Aizawl",
+    "Imphal",
+    "Shillong",
+    "Agartala"
+  ],
+  answer: "Shillong",
+  explanation:
+    "Shillong is the capital city of Meghalaya and is known as the 'Scotland of the East'.",
+  wrongExplanations: {
+    "Aizawl": "Capital of Mizoram.",
+    "Imphal": "Capital of Manipur.",
+    "Agartala": "Capital of Tripura."
+  },
+  hint:
+    "Scotland of the East."
+},
+
+{
+  category: "Northeast India",
+  question: "Which river is known as the lifeline of Assam?",
+  options: [
+    "Barak",
+    "Teesta",
+    "Brahmaputra",
+    "Subansiri"
+  ],
+  answer: "Brahmaputra",
+  explanation:
+    "The Brahmaputra River is the major river of Assam and plays a vital role in its economy and culture.",
+  wrongExplanations: {
+    "Barak": "Flows through southern Assam.",
+    "Teesta": "Important in Sikkim and West Bengal.",
+    "Subansiri": "Tributary of Brahmaputra."
+  },
+  hint:
+    "One of Asia's largest rivers."
+},
+
+{
+  category: "Northeast India",
+  question: "Which state is known as the 'Land of the Rising Sun' in India?",
+  options: [
+    "Nagaland",
+    "Arunachal Pradesh",
+    "Manipur",
+    "Tripura"
+  ],
+  answer: "Arunachal Pradesh",
+  explanation:
+    "Arunachal Pradesh is called the Land of the Rising Sun because it receives the first sunrise in India.",
+  wrongExplanations: {
+    "Nagaland": "Neighboring state.",
+    "Manipur": "Known as the Jewel of India.",
+    "Tripura": "Located in western Northeast India."
+  },
+  hint:
+    "Easternmost state of India."
+},
+{
+  category: "Northeast India",
+  question: "What is the capital of Nagaland?",
+  options: [
+    "Kohima",
+    "Dimapur",
+    "Shillong",
+    "Aizawl"
+  ],
+  answer: "Kohima",
+  explanation:
+    "Kohima is the capital city of Nagaland.",
+  wrongExplanations: {
+    "Dimapur": "Largest city but not the capital.",
+    "Shillong": "Capital of Meghalaya.",
+    "Aizawl": "Capital of Mizoram."
+  },
+  hint:
+    "Famous for the Battle of Kohima."
+},
+
+{
+  category: "Northeast India",
+  question: "Which state is known as the 'Jewel of India'?",
+  options: [
+    "Mizoram",
+    "Manipur",
+    "Nagaland",
+    "Tripura"
+  ],
+  answer: "Manipur",
+  explanation:
+    "Manipur is popularly known as the 'Jewel of India' due to its natural beauty and cultural heritage.",
+  wrongExplanations: {
+    "Mizoram": "Known for its scenic hills.",
+    "Nagaland": "Known for Hornbill Festival.",
+    "Tripura": "Known for its palaces and heritage."
+  },
+  hint:
+    "Capital is Imphal."
+},
+
+{
+  category: "Northeast India",
+  question: "Which is the largest city in Northeast India?",
+  options: [
+    "Aizawl",
+    "Shillong",
+    "Guwahati",
+    "Agartala"
+  ],
+  answer: "Guwahati",
+  explanation:
+    "Guwahati is the largest city in Northeast India and serves as the region's main commercial hub.",
+  wrongExplanations: {
+    "Aizawl": "Capital of Mizoram.",
+    "Shillong": "Capital of Meghalaya.",
+    "Agartala": "Capital of Tripura."
+  },
+  hint:
+    "Gateway to Northeast India."
+},
+
+{
+  category: "Northeast India",
+  question: "The Hornbill Festival is celebrated in which state?",
+  options: [
+    "Mizoram",
+    "Assam",
+    "Nagaland",
+    "Meghalaya"
+  ],
+  answer: "Nagaland",
+  explanation:
+    "The Hornbill Festival is Nagaland's most famous cultural festival and showcases the traditions of Naga tribes.",
+  wrongExplanations: {
+    "Mizoram": "Celebrates Chapchar Kut.",
+    "Assam": "Known for Bihu.",
+    "Meghalaya": "Known for Wangala Festival."
+  },
+  hint:
+    "Festival of Festivals."
+},
+
+{
+  category: "Northeast India",
+  question: "Which is the only floating national park in the world, located in Manipur?",
+  options: [
+    "Nokrek National Park",
+    "Keibul Lamjao National Park",
+    "Kaziranga National Park",
+    "Namdapha National Park"
+  ],
+  answer: "Keibul Lamjao National Park",
+  explanation:
+    "Keibul Lamjao National Park on Loktak Lake is the world's only floating national park.",
+  wrongExplanations: {
+    "Nokrek National Park": "Located in Meghalaya.",
+    "Kaziranga National Park": "Located in Assam.",
+    "Namdapha National Park": "Located in Arunachal Pradesh."
+  },
+  hint:
+    "Located on Loktak Lake."
+},
+{
+  category: "Northeast India",
+  question: "The North Eastern Council (NEC) was established in which year?",
+  options: [
+    "1968",
+    "1971",
+    "1972",
+    "1985"
+  ],
+  answer: "1971",
+  explanation:
+    "The North Eastern Council was established in 1971 as the regional planning body for Northeast India.",
+  wrongExplanations: {
+    "1968": "Incorrect year.",
+    "1972": "Several NE states attained statehood around this period.",
+    "1985": "Incorrect year."
+  },
+  hint:
+    "Regional planning body."
+},
+
+{
+  category: "Northeast India",
+  question: "The Ministry of Development of North Eastern Region is commonly known as:",
+  options: [
+    "MDoNER",
+    "DoNER",
+    "NEC",
+    "NERA"
+  ],
+  answer: "DoNER",
+  explanation:
+    "DoNER stands for Development of North Eastern Region and focuses on development initiatives in the Northeast.",
+  wrongExplanations: {
+    "MDoNER": "Not commonly used.",
+    "NEC": "North Eastern Council.",
+    "NERA": "Incorrect."
+  },
+  hint:
+    "Development ministry for Northeast."
+},
+
+{
+  category: "Northeast India",
+  question: "Which state has three Autonomous District Councils?",
+  options: [
+    "Nagaland",
+    "Meghalaya",
+    "Tripura",
+    "Sikkim"
+  ],
+  answer: "Meghalaya",
+  explanation:
+    "Meghalaya has the Khasi Hills, Jaintia Hills and Garo Hills Autonomous District Councils.",
+  wrongExplanations: {
+    "Nagaland": "Has different traditional institutions.",
+    "Tripura": "Has one major ADC.",
+    "Sikkim": "Does not have three ADCs."
+  },
+  hint:
+    "Khasi, Jaintia and Garo."
+},
+
+{
+  category: "Northeast India",
+  question: "Which tribe is the largest tribal group in Mizoram?",
+  options: [
+    "Mara",
+    "Lai",
+    "Mizo (Lusei)",
+    "Chakma"
+  ],
+  answer: "Mizo (Lusei)",
+  explanation:
+    "The Mizo (Lusei) are the largest tribal group in Mizoram.",
+  wrongExplanations: {
+    "Mara": "Important tribe in southern Mizoram.",
+    "Lai": "Major tribal group with autonomous council.",
+    "Chakma": "Minority tribal community."
+  },
+  hint:
+    "Dominant tribe of Mizoram."
+},
+
+{
+  category: "Northeast India",
+  question: "Loktak Lake, the largest freshwater lake in Northeast India, is located in:",
+  options: [
+    "Assam",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram"
+  ],
+  answer: "Manipur",
+  explanation:
+    "Loktak Lake in Manipur is the largest freshwater lake in Northeast India.",
+  wrongExplanations: {
+    "Assam": "Known for the Brahmaputra.",
+    "Meghalaya": "Known for high rainfall.",
+    "Mizoram": "Does not contain Loktak Lake."
+  },
+  hint:
+    "Home of Keibul Lamjao National Park."
+},
+{
+  category: "Northeast India",
+  question: "Sikkim became a full-fledged state of India in which year?",
+  options: [
+    "1972",
+    "1975",
+    "1980",
+    "1987"
+  ],
+  answer: "1975",
+  explanation:
+    "Sikkim became the 22nd state of India in 1975 after a referendum.",
+  wrongExplanations: {
+    "1972": "Year of statehood for some NE states.",
+    "1980": "Incorrect.",
+    "1987": "Statehood year of Arunachal Pradesh and Mizoram."
+  },
+  hint:
+    "22nd State of India."
+},
+
+{
+  category: "Northeast India",
+  question: "Which festival is known as the harvest festival of Assam?",
+  options: [
+    "Chapchar Kut",
+    "Hornbill Festival",
+    "Bihu",
+    "Wangala"
+  ],
+  answer: "Bihu",
+  explanation:
+    "Bihu is the most important festival of Assam and is closely associated with agriculture.",
+  wrongExplanations: {
+    "Chapchar Kut": "Mizoram festival.",
+    "Hornbill Festival": "Nagaland festival.",
+    "Wangala": "Meghalaya festival."
+  },
+  hint:
+    "Assam's most famous festival."
+},
+
+{
+  category: "Northeast India",
+  question: "Which state celebrates Chapchar Kut?",
+  options: [
+    "Manipur",
+    "Nagaland",
+    "Mizoram",
+    "Tripura"
+  ],
+  answer: "Mizoram",
+  explanation:
+    "Chapchar Kut is one of the most important traditional festivals celebrated in Mizoram.",
+  wrongExplanations: {
+    "Manipur": "Known for Yaoshang.",
+    "Nagaland": "Known for Hornbill Festival.",
+    "Tripura": "Different cultural festivals."
+  },
+  hint:
+    "Spring festival."
+},
+
+{
+  category: "Northeast India",
+  question: "Namdapha National Park is located in:",
+  options: [
+    "Assam",
+    "Arunachal Pradesh",
+    "Meghalaya",
+    "Nagaland"
+  ],
+  answer: "Arunachal Pradesh",
+  explanation:
+    "Namdapha National Park is one of India's largest protected areas and is located in Arunachal Pradesh.",
+  wrongExplanations: {
+    "Assam": "Home to Kaziranga.",
+    "Meghalaya": "Home to Nokrek.",
+    "Nagaland": "Does not contain Namdapha."
+  },
+  hint:
+    "Eastern Himalayas."
+},
+
+{
+  category: "Northeast India",
+  question: "Which country shares the longest international border with Mizoram?",
+  options: [
+    "China",
+    "Nepal",
+    "Bangladesh",
+    "Bhutan"
+  ],
+  answer: "Bangladesh",
+  explanation:
+    "Mizoram shares a long international border with Bangladesh and Myanmar, with Bangladesh being the longer border.",
+  wrongExplanations: {
+    "China": "No border with Mizoram.",
+    "Nepal": "No border with Mizoram.",
+    "Bhutan": "No border with Mizoram."
+  },
+  hint:
+    "Western international border."
+},
+{
+  category: "International Relations",
+  question: "The headquarters of the United Nations (UN) is located in:",
+  options: [
+    "Geneva",
+    "Paris",
+    "New York",
+    "Washington D.C."
+  ],
+  answer: "New York",
+  explanation:
+    "The headquarters of the United Nations is located in New York City, USA.",
+  wrongExplanations: {
+    "Geneva": "Hosts several UN agencies.",
+    "Paris": "Headquarters of UNESCO.",
+    "Washington D.C.": "Capital of the USA."
+  },
+  hint:
+    "USA city."
+},
+
+{
+  category: "International Relations",
+  question: "How many permanent members are there in the UN Security Council?",
+  options: [
+    "3",
+    "5",
+    "7",
+    "10"
+  ],
+  answer: "5",
+  explanation:
+    "The five permanent members are China, France, Russia, the United Kingdom and the United States.",
+  wrongExplanations: {
+    "3": "Too few.",
+    "7": "Incorrect.",
+    "10": "Non-permanent members are also present."
+  },
+  hint:
+    "P5 nations."
+},
+
+{
+  category: "International Relations",
+  question: "What does IMF stand for?",
+  options: [
+    "International Monetary Fund",
+    "International Market Forum",
+    "Indian Monetary Fund",
+    "International Monetary Federation"
+  ],
+  answer: "International Monetary Fund",
+  explanation:
+    "The IMF promotes international monetary cooperation and financial stability.",
+  wrongExplanations: {
+    "International Market Forum": "Incorrect expansion.",
+    "Indian Monetary Fund": "Incorrect.",
+    "International Monetary Federation": "Incorrect."
+  },
+  hint:
+    "Global financial institution."
+},
+
+{
+  category: "International Relations",
+  question: "The World Bank primarily provides:",
+  options: [
+    "Military assistance",
+    "Development loans and assistance",
+    "Election monitoring",
+    "Trade sanctions"
+  ],
+  answer: "Development loans and assistance",
+  explanation:
+    "The World Bank supports economic development through loans, grants and technical assistance.",
+  wrongExplanations: {
+    "Military assistance": "Not its role.",
+    "Election monitoring": "Not its function.",
+    "Trade sanctions": "Not its function."
+  },
+  hint:
+    "Development financing."
+},
+
+{
+  category: "International Relations",
+  question: "WTO stands for:",
+  options: [
+    "World Trade Organization",
+    "World Transport Organization",
+    "World Treaty Organization",
+    "World Tariff Office"
+  ],
+  answer: "World Trade Organization",
+  explanation:
+    "The WTO regulates and facilitates international trade among nations.",
+  wrongExplanations: {
+    "World Transport Organization": "Incorrect.",
+    "World Treaty Organization": "Incorrect.",
+    "World Tariff Office": "Incorrect."
+  },
+  hint:
+    "Global trade body."
+},
+{
+  category: "International Relations",
+  question: "UNESCO stands for:",
+  options: [
+    "United Nations Educational, Scientific and Cultural Organization",
+    "United Nations Economic and Social Organization",
+    "United Nations Education and Security Council Organization",
+    "Universal Nations Educational and Cultural Office"
+  ],
+  answer: "United Nations Educational, Scientific and Cultural Organization",
+  explanation:
+    "UNESCO promotes international cooperation in education, science and culture.",
+  wrongExplanations: {
+    "United Nations Economic and Social Organization": "Incorrect expansion.",
+    "United Nations Education and Security Council Organization": "Incorrect.",
+    "Universal Nations Educational and Cultural Office": "Incorrect."
+  },
+  hint:
+    "Education, Science and Culture."
+},
+
+{
+  category: "International Relations",
+  question: "Which UN agency is primarily responsible for international public health?",
+  options: [
+    "UNICEF",
+    "WHO",
+    "FAO",
+    "UNDP"
+  ],
+  answer: "WHO",
+  explanation:
+    "The World Health Organization (WHO) is the UN's specialized agency for public health.",
+  wrongExplanations: {
+    "UNICEF": "Children's welfare.",
+    "FAO": "Food and agriculture.",
+    "UNDP": "Development programmes."
+  },
+  hint:
+    "Global health agency."
+},
+
+{
+  category: "International Relations",
+  question: "UNICEF mainly works for:",
+  options: [
+    "Trade regulation",
+    "Children's welfare",
+    "Military cooperation",
+    "Climate negotiations"
+  ],
+  answer: "Children's welfare",
+  explanation:
+    "UNICEF focuses on the rights, health, education and welfare of children worldwide.",
+  wrongExplanations: {
+    "Trade regulation": "WTO function.",
+    "Military cooperation": "Not UNICEF's role.",
+    "Climate negotiations": "Not its primary role."
+  },
+  hint:
+    "UN Children's Fund."
+},
+
+{
+  category: "International Relations",
+  question: "FAO is mainly concerned with:",
+  options: [
+    "Food and Agriculture",
+    "International Trade",
+    "Human Rights",
+    "Refugee Protection"
+  ],
+  answer: "Food and Agriculture",
+  explanation:
+    "The Food and Agriculture Organization (FAO) works to improve food security and agricultural development.",
+  wrongExplanations: {
+    "International Trade": "WTO.",
+    "Human Rights": "UN Human Rights bodies.",
+    "Refugee Protection": "UNHCR."
+  },
+  hint:
+    "Agriculture and food security."
+},
+
+{
+  category: "International Relations",
+  question: "Every member state of the United Nations is represented in:",
+  options: [
+    "UN Security Council",
+    "UN General Assembly",
+    "International Court of Justice",
+    "Economic and Social Council"
+  ],
+  answer: "UN General Assembly",
+  explanation:
+    "The UN General Assembly includes all UN member states, each having one vote.",
+  wrongExplanations: {
+    "UN Security Council": "Only 15 members at a time.",
+    "International Court of Justice": "Judicial organ.",
+    "Economic and Social Council": "Limited membership."
+  },
+  hint:
+    "All member states participate."
+},
+{
+  category: "International Relations",
+  question: "UNHCR is mainly concerned with:",
+  options: [
+    "Refugee protection",
+    "World trade",
+    "Food production",
+    "Public health"
+  ],
+  answer: "Refugee protection",
+  explanation:
+    "UNHCR, the UN Refugee Agency, protects refugees, displaced persons and stateless people.",
+  wrongExplanations: {
+    "World trade": "WTO handles trade.",
+    "Food production": "FAO deals with food and agriculture.",
+    "Public health": "WHO deals with public health."
+  },
+  hint:
+    "UN Refugee Agency."
+},
+
+{
+  category: "International Relations",
+  question: "UNDP stands for:",
+  options: [
+    "United Nations Development Programme",
+    "United Nations Defence Programme",
+    "United Nations Democratic Panel",
+    "United Nations Disaster Policy"
+  ],
+  answer: "United Nations Development Programme",
+  explanation:
+    "UNDP works to reduce poverty, support development and strengthen governance across countries.",
+  wrongExplanations: {
+    "United Nations Defence Programme": "Incorrect expansion.",
+    "United Nations Democratic Panel": "Incorrect expansion.",
+    "United Nations Disaster Policy": "Incorrect expansion."
+  },
+  hint:
+    "Development agency."
+},
+
+{
+  category: "International Relations",
+  question: "The International Court of Justice is located in:",
+  options: [
+    "New York",
+    "Geneva",
+    "The Hague",
+    "Paris"
+  ],
+  answer: "The Hague",
+  explanation:
+    "The International Court of Justice is located at The Hague in the Netherlands.",
+  wrongExplanations: {
+    "New York": "UN headquarters.",
+    "Geneva": "Hosts many UN offices.",
+    "Paris": "UNESCO headquarters."
+  },
+  hint:
+    "Netherlands."
+},
+
+{
+  category: "International Relations",
+  question: "UN peacekeeping operations are mainly used to:",
+  options: [
+    "Promote global trade",
+    "Maintain peace and security in conflict areas",
+    "Control international sports",
+    "Manage world currency"
+  ],
+  answer: "Maintain peace and security in conflict areas",
+  explanation:
+    "UN peacekeeping helps maintain peace, protect civilians and support stability in conflict-affected regions.",
+  wrongExplanations: {
+    "Promote global trade": "WTO role.",
+    "Control international sports": "Not a UN function.",
+    "Manage world currency": "Not a UN function."
+  },
+  hint:
+    "Blue helmets."
+},
+
+{
+  category: "International Relations",
+  question: "Who is the chief administrative officer of the United Nations?",
+  options: [
+    "President of the General Assembly",
+    "Secretary-General",
+    "President of the Security Council",
+    "World Bank President"
+  ],
+  answer: "Secretary-General",
+  explanation:
+    "The Secretary-General is the chief administrative officer of the United Nations.",
+  wrongExplanations: {
+    "President of the General Assembly": "Presides over the General Assembly.",
+    "President of the Security Council": "Rotating monthly position.",
+    "World Bank President": "Heads the World Bank, not the UN."
+  },
+  hint:
+    "Head of the UN Secretariat."
+},
+{
+  id: 661,
+  category: "International Relations",
+  question: "Who is regarded as the 'father of Classical Realism' in International Relations?",
+  options: ["Kenneth Waltz", "Hans Morgenthau", "Robert Keohane", "Alexander Wendt"],
+  answer: "Hans Morgenthau",
+  explanation: "Hans Morgenthau is considered the father of Classical Realism. He argued that states pursue power and national interest in an anarchic international system."
+},
+{
+  id: 662,
+  category: "International Relations",
+  question: "Which theory argues that international cooperation is possible through institutions and interdependence?",
+  options: ["Realism", "Marxism", "Liberalism", "Postmodernism"],
+  answer: "Liberalism",
+  explanation: "Liberalism emphasizes cooperation, international organizations, democracy, and economic interdependence as means to reduce conflict."
+},
+{
+  id: 663,
+  category: "International Relations",
+  question: "The headquarters of the United Nations is located in:",
+  options: ["Geneva", "Paris", "New York", "Vienna"],
+  answer: "New York",
+  explanation: "The main headquarters of the United Nations is located in New York City, USA."
+},
+{
+  id: 664,
+  category: "International Relations",
+  question: "How many permanent members are there in the United Nations Security Council (UNSC)?",
+  options: ["3", "5", "7", "10"],
+  answer: "5",
+  explanation: "The permanent members are China, France, Russia, the United Kingdom, and the United States."
+},
+{
+  id: 665,
+  category: "International Relations",
+  question: "Which permanent member of the UNSC has used the veto power the most in history?",
+  options: ["United States", "China", "Russia (formerly USSR)", "France"],
+  answer: "Russia (formerly USSR)",
+  explanation: "The Soviet Union and later Russia have historically used the veto power more frequently than any other permanent member."
+},
+{
+  id: 666,
+  category: "International Relations",
+  question: "The concept of 'Balance of Power' refers to:",
+  options: [
+    "Equal economic growth among states",
+    "Distribution of power to prevent domination by one state",
+    "Balance between exports and imports",
+    "Equal voting rights in the UN"
+  ],
+  answer: "Distribution of power to prevent domination by one state",
+  explanation: "Balance of Power is a key realist concept whereby states seek to prevent any one state from becoming overwhelmingly powerful."
+},
+{
+  id: 667,
+  category: "International Relations",
+  question: "Which organization was created in 1949 as a collective defense alliance in the North Atlantic region?",
+  options: ["ASEAN", "NATO", "Warsaw Pact", "European Union"],
+  answer: "NATO",
+  explanation: "The North Atlantic Treaty Organization (NATO) was established in 1949 to provide collective security against external threats."
+},
+{
+  id: 668,
+  category: "International Relations",
+  question: "The Non-Aligned Movement (NAM) was formally established at which conference?",
+  options: [
+    "Bandung Conference, 1955",
+    "Belgrade Conference, 1961",
+    "Geneva Conference, 1954",
+    "Helsinki Conference, 1975"
+  ],
+  answer: "Belgrade Conference, 1961",
+  explanation: "The first summit of the Non-Aligned Movement was held in Belgrade, Yugoslavia, in 1961."
+},
+{
+  id: 669,
+  category: "International Relations",
+  question: "Which of the following leaders is NOT considered a founding figure of the Non-Aligned Movement?",
+  options: [
+    "Jawaharlal Nehru",
+    "Josip Broz Tito",
+    "Gamal Abdel Nasser",
+    "Winston Churchill"
+  ],
+  answer: "Winston Churchill",
+  explanation: "Nehru, Tito, and Nasser were among the key leaders associated with the founding of NAM, while Churchill was not."
+},
+{
+  id: 670,
+  category: "International Relations",
+  question: "ASEAN stands for:",
+  options: [
+    "Association of South East Asian Nations",
+    "Alliance of South East Asian Nations",
+    "Association of South Asian Economic Nations",
+    "Asian Security and Economic Alliance Network"
+  ],
+  answer: "Association of South East Asian Nations",
+  explanation: "ASEAN was established in 1967 to promote economic, political, and security cooperation among Southeast Asian countries."
+},
+{
+  id: 671,
+  category: "International Relations",
+  question: "SAARC was established in which year?",
+  options: ["1983", "1985", "1987", "1991"],
+  answer: "1985",
+  explanation: "The South Asian Association for Regional Cooperation (SAARC) was established in 1985 to promote regional cooperation among South Asian countries."
+},
+{
+  id: 672,
+  category: "International Relations",
+  question: "Which of the following countries is NOT a member of SAARC?",
+  options: ["Afghanistan", "Myanmar", "Bhutan", "Maldives"],
+  answer: "Myanmar",
+  explanation: "SAARC consists of Afghanistan, Bangladesh, Bhutan, India, Maldives, Nepal, Pakistan, and Sri Lanka. Myanmar is not a member."
+},
+{
+  id: 673,
+  category: "International Relations",
+  question: "The headquarters of SAARC is located in:",
+  options: ["New Delhi", "Dhaka", "Kathmandu", "Colombo"],
+  answer: "Kathmandu",
+  explanation: "The SAARC Secretariat is located in Kathmandu, Nepal."
+},
+{
+  id: 674,
+  category: "International Relations",
+  question: "BIMSTEC connects South Asia with which other region?",
+  options: ["Europe", "Central Asia", "Southeast Asia", "Middle East"],
+  answer: "Southeast Asia",
+  explanation: "BIMSTEC (Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation) links South Asia and Southeast Asia through the Bay of Bengal region."
+},
+{
+  id: 675,
+  category: "International Relations",
+  question: "Which of the following countries is NOT a member of BIMSTEC?",
+  options: ["India", "Thailand", "Nepal", "Pakistan"],
+  answer: "Pakistan",
+  explanation: "BIMSTEC members are Bangladesh, Bhutan, India, Myanmar, Nepal, Sri Lanka, and Thailand. Pakistan is not a member."
+},
+{
+  id: 676,
+  category: "International Relations",
+  question: "BRICS originally consisted of Brazil, Russia, India, China and which other country?",
+  options: ["South Africa", "Saudi Arabia", "Argentina", "Indonesia"],
+  answer: "South Africa",
+  explanation: "BRIC became BRICS when South Africa joined the grouping in 2010."
+},
+{
+  id: 677,
+  category: "International Relations",
+  question: "The G20 is primarily a forum for cooperation on:",
+  options: [
+    "Military affairs",
+    "Religious issues",
+    "Economic and financial matters",
+    "Sports diplomacy"
+  ],
+  answer: "Economic and financial matters",
+  explanation: "The G20 brings together major economies to discuss global economic governance, financial stability, trade, and development."
+},
+{
+  id: 678,
+  category: "International Relations",
+  question: "The Shanghai Cooperation Organisation (SCO) was originally founded by which two major powers?",
+  options: [
+    "India and Russia",
+    "China and Russia",
+    "China and India",
+    "Russia and Kazakhstan"
+  ],
+  answer: "China and Russia",
+  explanation: "The SCO evolved from the Shanghai Five mechanism and was led primarily by China and Russia to promote regional security and cooperation."
+},
+{
+  id: 679,
+  category: "International Relations",
+  question: "Which of the following countries is NOT a member of the Quadrilateral Security Dialogue (Quad)?",
+  options: ["India", "Japan", "Australia", "South Korea"],
+  answer: "South Korea",
+  explanation: "The Quad consists of India, Australia, Japan, and the United States and focuses on cooperation in the Indo-Pacific region."
+},
+{
+  id: 680,
+  category: "International Relations",
+  question: "India's 'Act East Policy' is primarily aimed at strengthening relations with:",
+  options: [
+    "Europe",
+    "Africa",
+    "Southeast and East Asia",
+    "Latin America"
+  ],
+  answer: "Southeast and East Asia",
+  explanation: "The Act East Policy seeks deeper economic, strategic, and cultural engagement with Southeast Asia and East Asia."
+},
+{
+  id: 681,
+  category: "International Relations",
+  question: "Which is the principal judicial organ of the United Nations?",
+  options: [
+    "International Criminal Court",
+    "International Court of Justice",
+    "Permanent Court of Arbitration",
+    "UN Human Rights Council"
+  ],
+  answer: "International Court of Justice",
+  explanation: "The International Court of Justice (ICJ), located in The Hague, is the principal judicial organ of the United Nations."
+},
+{
+  id: 682,
+  category: "International Relations",
+  question: "The headquarters of the International Court of Justice (ICJ) is located in:",
+  options: [
+    "Geneva",
+    "New York",
+    "The Hague",
+    "Brussels"
+  ],
+  answer: "The Hague",
+  explanation: "The ICJ is headquartered in The Hague, Netherlands, and settles legal disputes between states."
+},
+{
+  id: 683,
+  category: "International Relations",
+  question: "The International Monetary Fund (IMF) was established in which year?",
+  options: [
+    "1945",
+    "1948",
+    "1950",
+    "1955"
+  ],
+  answer: "1945",
+  explanation: "The IMF was established in 1945 following the Bretton Woods Conference to promote international monetary cooperation."
+},
+{
+  id: 684,
+  category: "International Relations",
+  question: "Which institution primarily provides loans and assistance for development projects in developing countries?",
+  options: [
+    "WTO",
+    "World Bank",
+    "UNESCO",
+    "UNICEF"
+  ],
+  answer: "World Bank",
+  explanation: "The World Bank provides financial and technical assistance to developing countries for development and poverty reduction projects."
+},
+{
+  id: 685,
+  category: "International Relations",
+  question: "The World Trade Organization (WTO) officially came into existence in:",
+  options: [
+    "1985",
+    "1990",
+    "1995",
+    "2000"
+  ],
+  answer: "1995",
+  explanation: "The WTO was established on 1 January 1995, replacing the General Agreement on Tariffs and Trade (GATT)."
+},
+{
+  id: 686,
+  category: "International Relations",
+  question: "Which organ of the United Nations includes all member states and provides each state with one vote?",
+  options: [
+    "Security Council",
+    "General Assembly",
+    "ECOSOC",
+    "Secretariat"
+  ],
+  answer: "General Assembly",
+  explanation: "The UN General Assembly is the deliberative body of the United Nations where all member states have equal voting rights."
+},
+{
+  id: 687,
+  category: "International Relations",
+  question: "How many non-permanent members are elected to the UN Security Council?",
+  options: [
+    "5",
+    "8",
+    "10",
+    "15"
+  ],
+  answer: "10",
+  explanation: "The Security Council consists of 15 members: 5 permanent members and 10 non-permanent members elected for two-year terms."
+},
+{
+  id: 688,
+  category: "International Relations",
+  question: "ECOSOC stands for:",
+  options: [
+    "Economic and Community Security Organization",
+    "Economic and Social Council",
+    "European Council of Social Organizations",
+    "Economic Cooperation and Security Office"
+  ],
+  answer: "Economic and Social Council",
+  explanation: "ECOSOC is one of the six principal organs of the UN and coordinates economic, social, and related activities."
+},
+{
+  id: 689,
+  category: "International Relations",
+  question: "Which principal organ of the United Nations is currently inactive after completing its original mission?",
+  options: [
+    "Security Council",
+    "General Assembly",
+    "Trusteeship Council",
+    "Secretariat"
+  ],
+  answer: "Trusteeship Council",
+  explanation: "The Trusteeship Council suspended operations in 1994 after the last UN Trust Territory, Palau, achieved self-government."
+},
+{
+  id: 690,
+  category: "International Relations",
+  question: "The head of the United Nations Secretariat is known as the:",
+  options: [
+    "President",
+    "Director-General",
+    "Secretary-General",
+    "Chief Commissioner"
+  ],
+  answer: "Secretary-General",
+  explanation: "The Secretary-General is the chief administrative officer of the United Nations and heads the Secretariat."
+},
 ];
 
 const categories = ["All", ...Array.from(new Set(questions.map((q) => q.category)))];
@@ -12542,9 +14011,11 @@ export default function HomePage() {
                   <p className="mt-3 text-slate-300">
                     {isCorrect
                       ? currentQuestion.explanation
-                      : currentQuestion.wrongExplanations[
-                          selectedAnswer as keyof typeof currentQuestion.wrongExplanations
-                        ]}
+                      : (currentQuestion.wrongExplanations
+                          ? currentQuestion.wrongExplanations[
+                              selectedAnswer as keyof typeof currentQuestion.wrongExplanations
+                            ]
+                          : "")}
                   </p>
                 </div>
 
