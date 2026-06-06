@@ -4631,6 +4631,136 @@ const questions = [
   explanation: "Educational technology involves the use of digital tools, media, and technological resources to enhance the teaching-learning process."
 },
 {
+  id: 1001,
+  category: "Education",
+  question: "Who is regarded as the Father of Pragmatism in education?",
+  options: [
+    "Plato",
+    "John Dewey",
+    "Rousseau",
+    "Pestalozzi"
+  ],
+  answer: "John Dewey",
+  explanation: "John Dewey emphasized experiential learning and is regarded as a leading advocate of Pragmatism in education."
+},
+{
+  id: 1002,
+  category: "Education",
+  question: "Which type of education takes place throughout life and is not confined to formal institutions?",
+  options: [
+    "Formal Education",
+    "Informal Education",
+    "Technical Education",
+    "Distance Education"
+  ],
+  answer: "Informal Education",
+  explanation: "Informal education occurs through daily experiences, family, society, and personal interactions."
+},
+{
+  id: 1003,
+  category: "Education",
+  question: "The curriculum should primarily be designed according to the:",
+  options: [
+    "Convenience of teachers",
+    "Needs of learners",
+    "Availability of textbooks",
+    "Examination schedule"
+  ],
+  answer: "Needs of learners",
+  explanation: "Modern educational philosophy emphasizes learner-centered curriculum development."
+},
+{
+  id: 1004,
+  category: "Education",
+  question: "Which agency of education is considered the most formal?",
+  options: [
+    "Family",
+    "Peer Group",
+    "School",
+    "Community"
+  ],
+  answer: "School",
+  explanation: "Schools are structured institutions specifically established to provide formal education."
+},
+{
+  id: 1005,
+  category: "Education",
+  question: "The concept of 'learning by doing' is most closely associated with:",
+  options: [
+    "Idealism",
+    "Pragmatism",
+    "Naturalism",
+    "Realism"
+  ],
+  answer: "Pragmatism",
+  explanation: "Pragmatism emphasizes practical experience and active participation in the learning process."
+},
+{
+  id: 1006,
+  category: "Education",
+  question: "Which of the following is the primary purpose of evaluation in education?",
+  options: [
+    "Punishing students",
+    "Measuring and improving learning",
+    "Increasing homework",
+    "Reducing classroom activities"
+  ],
+  answer: "Measuring and improving learning",
+  explanation: "Evaluation helps determine the extent to which educational objectives have been achieved and provides feedback for improvement."
+},
+{
+  id: 1007,
+  category: "Education",
+  question: "Guidance in education primarily helps students to:",
+  options: [
+    "Memorize textbooks",
+    "Make appropriate educational and career choices",
+    "Avoid examinations",
+    "Reduce participation in class"
+  ],
+  answer: "Make appropriate educational and career choices",
+  explanation: "Guidance assists students in understanding themselves and making informed educational, vocational, and personal decisions."
+},
+{
+  id: 1008,
+  category: "Education",
+  question: "Counselling differs from guidance because counselling is:",
+  options: [
+    "More personal and individualized",
+    "Limited to classroom teaching",
+    "Concerned only with careers",
+    "A form of examination"
+  ],
+  answer: "More personal and individualized",
+  explanation: "Counselling focuses on helping individuals solve personal, educational, or psychological problems through direct interaction."
+},
+{
+  id: 1009,
+  category: "Education",
+  question: "Educational objectives are important because they:",
+  options: [
+    "Increase administrative work",
+    "Provide direction to teaching and learning",
+    "Eliminate the need for evaluation",
+    "Replace the curriculum"
+  ],
+  answer: "Provide direction to teaching and learning",
+  explanation: "Educational objectives guide the selection of content, teaching methods, and assessment procedures."
+},
+{
+  id: 1010,
+  category: "Education",
+  question: "Inclusive education aims to:",
+  options: [
+    "Separate students with disabilities",
+    "Provide equal learning opportunities for all learners",
+    "Teach only gifted students",
+    "Limit access to education"
+  ],
+  answer: "Provide equal learning opportunities for all learners",
+  explanation: "Inclusive education ensures that all learners, regardless of background or ability, have access to quality education in a common learning environment."
+},
+{
   category: "Public Administration",
   question: "Which theory is associated with Max Weber?",
   options: [
