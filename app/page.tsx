@@ -1067,7 +1067,6 @@ const questions = [
     "Online meetings."
 },
 {
-  id: 921,
   category: "ICT",
   question: "What does CPU stand for?",
   options: [
@@ -1080,7 +1079,6 @@ const questions = [
   explanation: "The CPU is the primary component of a computer that performs calculations and executes instructions."
 },
 {
-  id: 922,
   category: "ICT",
   question: "Which of the following is an example of system software?",
   options: [
@@ -1093,7 +1091,6 @@ const questions = [
   explanation: "An operating system is system software that manages computer hardware and software resources."
 },
 {
-  id: 923,
   category: "ICT",
   question: "Which device is primarily used to connect a computer to a network?",
   options: [
@@ -1106,7 +1103,6 @@ const questions = [
   explanation: "A Network Interface Card (NIC) enables a computer to communicate over a network."
 },
 {
-  id: 924,
   category: "ICT",
   question: "The full form of URL is:",
   options: [
@@ -1119,7 +1115,6 @@ const questions = [
   explanation: "A URL is the address used to locate resources on the internet."
 },
 {
-  id: 925,
   category: "ICT",
   question: "Which of the following is an example of cloud storage?",
   options: [
@@ -1132,7 +1127,6 @@ const questions = [
   explanation: "Google Drive is a cloud-based storage service that allows users to store and access files online."
 },
 {
-  id: 926,
   category: "ICT",
   question: "Which software is primarily used for creating documents and letters?",
   options: [
@@ -1145,7 +1139,6 @@ const questions = [
   explanation: "MS Word is a word-processing application used for creating, editing, and formatting documents."
 },
 {
-  id: 927,
   category: "ICT",
   question: "Which MS Office application is mainly used for spreadsheets and calculations?",
   options: [
@@ -1158,7 +1151,6 @@ const questions = [
   explanation: "MS Excel is used for data analysis, calculations, charts, and spreadsheet management."
 },
 {
-  id: 928,
   category: "ICT",
   question: "Which software is commonly used for creating presentations?",
   options: [
@@ -1171,7 +1163,6 @@ const questions = [
   explanation: "MS PowerPoint is presentation software used to create slide-based presentations."
 },
 {
-  id: 929,
   category: "ICT",
   question: "What does HTTP stand for?",
   options: [
@@ -1184,7 +1175,6 @@ const questions = [
   explanation: "HTTP is the protocol used for transferring web pages and data on the World Wide Web."
 },
 {
-  id: 930,
   category: "ICT",
   question: "Which symbol is mandatory in a valid email address?",
   options: [
@@ -2112,7 +2102,6 @@ const questions = [
     "Do not overthink the pattern."
 },
 {
-  id: 971,
   category: "Reasoning",
   question: "If A is the brother of B, B is the sister of C, and C is the father of D, then A is D's:",
   options: [
@@ -2125,7 +2114,6 @@ const questions = [
   explanation: "A and C are siblings. Since C is D's father, A is D's uncle."
 },
 {
-  id: 972,
   category: "Reasoning",
   question: "Find the next number in the series: 2, 4, 8, 16, 32, ?",
   options: [
@@ -2138,7 +2126,6 @@ const questions = [
   explanation: "Each number is multiplied by 2. Therefore, 32 × 2 = 64."
 },
 {
-  id: 973,
   category: "Reasoning",
   question: "If SOUTH is written as HTUOS, then EAST will be written as:",
   options: [
@@ -2151,7 +2138,6 @@ const questions = [
   explanation: "The word is written in reverse order. EAST becomes TSAE."
 },
 {
-  id: 974,
   category: "Reasoning",
   question: "Which one of the following is different from the others?",
   options: [
@@ -2164,7 +2150,6 @@ const questions = [
   explanation: "Triangle has three sides, whereas the others are quadrilaterals with four sides."
 },
 {
-  id: 975,
   category: "Reasoning",
   question: "A clock shows 3:00. What is the angle between the hour hand and the minute hand?",
   options: [
@@ -2177,7 +2162,6 @@ const questions = [
   explanation: "At 3:00, the minute hand is at 12 and the hour hand is at 3, forming a right angle of 90°."
 },
 {
-  id: 976,
   category: "Reasoning",
   question: "If CAT is coded as DBU, then DOG is coded as:",
   options: [
@@ -2190,7 +2174,6 @@ const questions = [
   explanation: "Each letter is shifted forward by one position. D→E, O→P, G→H."
 },
 {
-  id: 977,
   category: "Reasoning",
   question: "Pointing to a woman, Raj said, 'She is the daughter of my mother's only daughter.' How is the woman related to Raj?",
   options: [
@@ -2203,7 +2186,6 @@ const questions = [
   explanation: "Raj's mother's only daughter is Raj himself if female or Raj's sister if male. In standard reasoning interpretation, the woman is Raj's daughter."
 },
 {
-  id: 978,
   category: "Reasoning",
   question: "A person walks 5 km north, then 3 km east, and then 5 km south. How far is the person from the starting point?",
   options: [
@@ -2216,7 +2198,6 @@ const questions = [
   explanation: "The north and south movements cancel out, leaving the person 3 km east of the starting point."
 },
 {
-  id: 979,
   category: "Reasoning",
   question: "Book : Reading :: Food : ?",
   options: [
@@ -2229,7 +2210,6 @@ const questions = [
   explanation: "A book is used for reading just as food is used for eating."
 },
 {
-  id: 980,
   category: "Reasoning",
   question: "Find the next number in the series: 1, 4, 9, 16, 25, ?",
   options: [
@@ -3864,7 +3844,6 @@ const questions = [
     "Service sector."
 },
 {
-  id: 981,
   category: "Economics",
   question: "GDP stands for:",
   options: [
@@ -3877,7 +3856,6 @@ const questions = [
   explanation: "GDP is the total monetary value of all final goods and services produced within a country's borders during a specific period."
 },
 {
-  id: 982,
   category: "Economics",
   question: "Which institution is responsible for issuing currency notes in India (except ₹1 notes)?",
   options: [
@@ -3890,7 +3868,6 @@ const questions = [
   explanation: "The Reserve Bank of India is the sole authority for issuing currency notes in India, except the ₹1 note which is issued by the Government of India."
 },
 {
-  id: 983,
   category: "Economics",
   question: "Inflation refers to:",
   options: [
@@ -3903,7 +3880,6 @@ const questions = [
   explanation: "Inflation is a sustained increase in the general price level of goods and services in an economy over time."
 },
 {
-  id: 984,
   category: "Economics",
   question: "Which of the following is known as the 'Banker's Bank' in India?",
   options: [
@@ -3916,7 +3892,6 @@ const questions = [
   explanation: "The RBI is called the Banker's Bank because commercial banks keep deposits with it and receive financial assistance when needed."
 },
 {
-  id: 985,
   category: "Economics",
   question: "Fiscal policy primarily deals with:",
   options: [
@@ -3929,7 +3904,6 @@ const questions = [
   explanation: "Fiscal policy involves government taxation, spending, and borrowing to influence economic activity."
 },
 {
-  id: 986,
   category: "Economics",
   question: "The Annual Financial Statement of the Government of India is commonly known as the:",
   options: [
@@ -3942,7 +3916,6 @@ const questions = [
   explanation: "Under Article 112 of the Constitution, the Annual Financial Statement is popularly known as the Union Budget."
 },
 {
-  id: 987,
   category: "Economics",
   question: "Which of the following is a direct tax?",
   options: [
@@ -3955,7 +3928,6 @@ const questions = [
   explanation: "A direct tax is paid directly by the person on whom it is imposed. Income Tax is a classic example."
 },
 {
-  id: 988,
   category: "Economics",
   question: "Goods and Services Tax (GST) is an example of:",
   options: [
@@ -3968,7 +3940,6 @@ const questions = [
   explanation: "GST is collected indirectly through the sale of goods and services and is ultimately borne by consumers."
 },
 {
-  id: 989,
   category: "Economics",
   question: "Which of the following is commonly used to measure poverty in India?",
   options: [
@@ -3981,7 +3952,6 @@ const questions = [
   explanation: "The Poverty Line is used as a benchmark to identify individuals and households living below a minimum standard of living."
 },
 {
-  id: 990,
   category: "Economics",
   question: "Unemployment refers to a situation where:",
   options: [
@@ -3994,7 +3964,6 @@ const questions = [
   explanation: "Unemployment exists when individuals who are willing and able to work are unable to obtain employment."
 },
 {
-  id: 991,
   category: "Economics",
   question: "Which institution replaced the Planning Commission of India in 2015?",
   options: [
@@ -4007,7 +3976,6 @@ const questions = [
   explanation: "NITI Aayog was established on 1 January 2015 to replace the Planning Commission and promote cooperative federalism."
 },
 {
-  id: 992,
   category: "Economics",
   question: "The Repo Rate is the rate at which:",
   options: [
@@ -4020,7 +3988,6 @@ const questions = [
   explanation: "Repo Rate is the rate at which commercial banks borrow short-term funds from the RBI."
 },
 {
-  id: 993,
   category: "Economics",
   question: "The Reverse Repo Rate is the rate at which:",
   options: [
@@ -4033,7 +4000,6 @@ const questions = [
   explanation: "The Reverse Repo Rate is the rate at which the RBI borrows money from commercial banks."
 },
 {
-  id: 994,
   category: "Economics",
   question: "The Economic Survey of India is presented in Parliament by the:",
   options: [
@@ -4046,7 +4012,6 @@ const questions = [
   explanation: "The Economic Survey is prepared by the Department of Economic Affairs under the Ministry of Finance and is presented before the Union Budget."
 },
 {
-  id: 995,
   category: "Economics",
   question: "Deficit financing refers to a situation where:",
   options: [
@@ -4371,7 +4336,6 @@ const questions = [
     "1 April."
 },
 {
-  id: 721,
   category: "Education",
   question: "Who is known as the 'Father of Modern Education'?",
   options: [
@@ -4384,7 +4348,6 @@ const questions = [
   explanation: "Pestalozzi is often called the Father of Modern Education because of his emphasis on child-centered learning and holistic development."
 },
 {
-  id: 722,
   category: "Education",
   question: "According to Rousseau, education should be based on:",
   options: [
@@ -4397,7 +4360,6 @@ const questions = [
   explanation: "Rousseau believed that education should follow the natural growth and development of the child."
 },
 {
-  id: 723,
   category: "Education",
   question: "John Dewey is most closely associated with which philosophy of education?",
   options: [
@@ -4410,7 +4372,6 @@ const questions = [
   explanation: "John Dewey advocated Pragmatism and emphasized learning through experience and problem-solving."
 },
 {
-  id: 724,
   category: "Education",
   question: "The primary aim of education in a democracy is to:",
   options: [
@@ -4423,7 +4384,6 @@ const questions = [
   explanation: "Democratic education seeks to develop informed, responsible, and active citizens capable of participating in society."
 },
 {
-  id: 725,
   category: "Education",
   question: "Which educational philosophy emphasizes learning by doing?",
   options: [
@@ -4436,7 +4396,6 @@ const questions = [
   explanation: "Pragmatism emphasizes practical experience and learning through action, often summarized as 'learning by doing'."
 },
 {
-  id: 726,
   category: "Education",
   question: "Which philosophy of education regards ideas and mind as the ultimate reality?",
   options: [
@@ -4449,7 +4408,6 @@ const questions = [
   explanation: "Idealism considers ideas, values, and the mind as the most important aspects of reality and education."
 },
 {
-  id: 727,
   category: "Education",
   question: "Realism in education emphasizes:",
   options: [
@@ -4462,7 +4420,6 @@ const questions = [
   explanation: "Realism focuses on the objective world and believes knowledge is gained through observation and experience."
 },
 {
-  id: 728,
   category: "Education",
   question: "Which educational philosophy advocates that nature should be the guide in the education of children?",
   options: [
@@ -4475,7 +4432,6 @@ const questions = [
   explanation: "Naturalism emphasizes the natural growth of the child and learning according to nature."
 },
 {
-  id: 729,
   category: "Education",
   question: "Education received in schools, colleges, and universities is known as:",
   options: [
@@ -4488,7 +4444,6 @@ const questions = [
   explanation: "Formal education is structured, organized, and provided through recognized educational institutions."
 },
 {
-  id: 730,
   category: "Education",
   question: "One of the major functions of education is:",
   options: [
@@ -4501,7 +4456,6 @@ const questions = [
   explanation: "Education helps individuals learn social norms, values, and skills necessary for participating in society."
 },
 {
-  id: 731,
   category: "Education",
   question: "Which of the following is considered the first agency of education?",
   options: [
@@ -4514,7 +4468,6 @@ const questions = [
   explanation: "The family is the primary and first agency of education, shaping a child's personality, values, and behavior."
 },
 {
-  id: 732,
   category: "Education",
   question: "A curriculum refers to:",
   options: [
@@ -4527,7 +4480,6 @@ const questions = [
   explanation: "Curriculum includes all planned learning experiences, activities, and assessments provided by an educational institution."
 },
 {
-  id: 733,
   category: "Education",
   question: "Which of the following is an example of a co-curricular activity?",
   options: [
@@ -4540,7 +4492,6 @@ const questions = [
   explanation: "Co-curricular activities such as debates, sports, and cultural programs support the overall development of students."
 },
 {
-  id: 734,
   category: "Education",
   question: "Value education primarily aims to develop:",
   options: [
@@ -4553,7 +4504,6 @@ const questions = [
   explanation: "Value education promotes honesty, responsibility, respect, empathy, and other ethical qualities."
 },
 {
-  id: 735,
   category: "Education",
   question: "Inclusive education refers to:",
   options: [
@@ -4566,7 +4516,6 @@ const questions = [
   explanation: "Inclusive education ensures that all students, including those with disabilities and diverse backgrounds, learn together in the same educational environment."
 },
 {
-  id: 736,
   category: "Education",
   question: "The Right to Education (RTE) Act in India came into force in:",
   options: [
@@ -4579,7 +4528,6 @@ const questions = [
   explanation: "The Right of Children to Free and Compulsory Education Act, 2009 came into force on 1 April 2010."
 },
 {
-  id: 737,
   category: "Education",
   question: "The National Education Policy (NEP) currently in force was introduced in:",
   options: [
@@ -4592,7 +4540,6 @@ const questions = [
   explanation: "The National Education Policy 2020 replaced the National Policy on Education, 1986 and introduced major reforms in the education system."
 },
 {
-  id: 738,
   category: "Education",
   question: "Distance education is especially useful for:",
   options: [
@@ -4605,7 +4552,6 @@ const questions = [
   explanation: "Distance education provides flexibility and access to education for learners who are unable to attend traditional classroom programs."
 },
 {
-  id: 739,
   category: "Education",
   question: "The concept of lifelong learning means:",
   options: [
@@ -4618,7 +4564,6 @@ const questions = [
   explanation: "Lifelong learning emphasizes the continuous acquisition of knowledge, skills, and competencies throughout an individual's life."
 },
 {
-  id: 740,
   category: "Education",
   question: "Educational technology primarily refers to:",
   options: [
@@ -4631,7 +4576,6 @@ const questions = [
   explanation: "Educational technology involves the use of digital tools, media, and technological resources to enhance the teaching-learning process."
 },
 {
-  id: 1001,
   category: "Education",
   question: "Who is regarded as the Father of Pragmatism in education?",
   options: [
@@ -4644,7 +4588,6 @@ const questions = [
   explanation: "John Dewey emphasized experiential learning and is regarded as a leading advocate of Pragmatism in education."
 },
 {
-  id: 1002,
   category: "Education",
   question: "Which type of education takes place throughout life and is not confined to formal institutions?",
   options: [
@@ -4657,7 +4600,6 @@ const questions = [
   explanation: "Informal education occurs through daily experiences, family, society, and personal interactions."
 },
 {
-  id: 1003,
   category: "Education",
   question: "The curriculum should primarily be designed according to the:",
   options: [
@@ -4670,7 +4612,6 @@ const questions = [
   explanation: "Modern educational philosophy emphasizes learner-centered curriculum development."
 },
 {
-  id: 1004,
   category: "Education",
   question: "Which agency of education is considered the most formal?",
   options: [
@@ -4683,7 +4624,6 @@ const questions = [
   explanation: "Schools are structured institutions specifically established to provide formal education."
 },
 {
-  id: 1005,
   category: "Education",
   question: "The concept of 'learning by doing' is most closely associated with:",
   options: [
@@ -4696,7 +4636,6 @@ const questions = [
   explanation: "Pragmatism emphasizes practical experience and active participation in the learning process."
 },
 {
-  id: 1006,
   category: "Education",
   question: "Which of the following is the primary purpose of evaluation in education?",
   options: [
@@ -4709,7 +4648,6 @@ const questions = [
   explanation: "Evaluation helps determine the extent to which educational objectives have been achieved and provides feedback for improvement."
 },
 {
-  id: 1007,
   category: "Education",
   question: "Guidance in education primarily helps students to:",
   options: [
@@ -4722,7 +4660,6 @@ const questions = [
   explanation: "Guidance assists students in understanding themselves and making informed educational, vocational, and personal decisions."
 },
 {
-  id: 1008,
   category: "Education",
   question: "Counselling differs from guidance because counselling is:",
   options: [
@@ -4735,7 +4672,6 @@ const questions = [
   explanation: "Counselling focuses on helping individuals solve personal, educational, or psychological problems through direct interaction."
 },
 {
-  id: 1009,
   category: "Education",
   question: "Educational objectives are important because they:",
   options: [
@@ -4748,7 +4684,6 @@ const questions = [
   explanation: "Educational objectives guide the selection of content, teaching methods, and assessment procedures."
 },
 {
-  id: 1010,
   category: "Education",
   question: "Inclusive education aims to:",
   options: [
@@ -5336,7 +5271,6 @@ const questions = [
     "Amritsar tragedy."
 },
 {
-  id: 901,
   category: "History",
   question: "Which civilization is known as the earliest urban civilization in the Indian subcontinent?",
   options: [
@@ -5349,7 +5283,6 @@ const questions = [
   explanation: "The Indus Valley Civilization (c. 2500–1900 BCE) was the earliest urban civilization in South Asia, known for planned cities such as Harappa and Mohenjo-daro."
 },
 {
-  id: 902,
   category: "History",
   question: "Which city of the Indus Valley Civilization is famous for its Great Bath?",
   options: [
@@ -5362,7 +5295,6 @@ const questions = [
   explanation: "The Great Bath, one of the most remarkable structures of the Indus Valley Civilization, was discovered at Mohenjo-daro."
 },
 {
-  id: 903,
   category: "History",
   question: "Who among the following founded the Mauryan Empire?",
   options: [
@@ -5375,7 +5307,6 @@ const questions = [
   explanation: "Chandragupta Maurya founded the Mauryan Empire around 322 BCE with the guidance of Chanakya."
 },
 {
-  id: 904,
   category: "History",
   question: "Which Mauryan ruler embraced Buddhism after the Kalinga War?",
   options: [
@@ -5388,7 +5319,6 @@ const questions = [
   explanation: "After witnessing the destruction caused by the Kalinga War, Ashoka adopted Buddhism and promoted peace and non-violence."
 },
 {
-  id: 905,
   category: "History",
   question: "The famous work 'Arthashastra' is traditionally associated with:",
   options: [
@@ -5401,7 +5331,6 @@ const questions = [
   explanation: "The Arthashastra is an ancient treatise on statecraft, economics, and administration attributed to Chanakya (Kautilya)."
 },
 {
-  id: 906,
   category: "History",
   question: "Who was the Greek ambassador to the court of Chandragupta Maurya?",
   options: [
@@ -5414,7 +5343,6 @@ const questions = [
   explanation: "Megasthenes was the Greek ambassador sent by Seleucus Nicator to the court of Chandragupta Maurya and wrote the work 'Indica'."
 },
 {
-  id: 907,
   category: "History",
   question: "The Gupta period is often referred to as the:",
   options: [
@@ -5427,7 +5355,6 @@ const questions = [
   explanation: "The Gupta period witnessed remarkable achievements in science, literature, mathematics, art, and culture, earning it the title 'Golden Age of India'."
 },
 {
-  id: 908,
   category: "History",
   question: "Who wrote the Sanskrit play 'Abhijnanasakuntalam'?",
   options: [
@@ -5440,7 +5367,6 @@ const questions = [
   explanation: "Kalidasa, one of the greatest Sanskrit poets and dramatists, wrote the famous play 'Abhijnanasakuntalam'."
 },
 {
-  id: 909,
   category: "History",
   question: "Who among the following is credited with introducing the concept of zero in Indian mathematics?",
   options: [
@@ -5453,7 +5379,6 @@ const questions = [
   explanation: "Brahmagupta was the first mathematician to clearly define zero as a number and establish rules for its use."
 },
 {
-  id: 910,
   category: "History",
   question: "The Chinese pilgrim Hiuen Tsang visited India during the reign of:",
   options: [
@@ -5466,7 +5391,6 @@ const questions = [
   explanation: "Hiuen Tsang visited India in the 7th century CE during the reign of Harshavardhana and left valuable accounts of Indian society."
 },
 {
-  id: 911,
   category: "History",
   question: "Who was the founder of the Delhi Sultanate?",
   options: [
@@ -5479,7 +5403,6 @@ const questions = [
   explanation: "Qutb-ud-din Aibak founded the Delhi Sultanate in 1206 and established the Mamluk (Slave) Dynasty."
 },
 {
-  id: 912,
   category: "History",
   question: "Who completed the construction of the Qutb Minar after Qutb-ud-din Aibak?",
   options: [
@@ -5492,7 +5415,6 @@ const questions = [
   explanation: "Iltutmish, the successor of Qutb-ud-din Aibak, completed the Qutb Minar and strengthened the Delhi Sultanate."
 },
 {
-  id: 913,
   category: "History",
   question: "Who was the first woman ruler of the Delhi Sultanate?",
   options: [
@@ -5505,7 +5427,6 @@ const questions = [
   explanation: "Razia Sultan ruled from 1236 to 1240 and was the first and only woman to sit on the throne of the Delhi Sultanate."
 },
 {
-  id: 914,
   category: "History",
   question: "Which Delhi Sultan introduced market control measures and price regulations?",
   options: [
@@ -5518,7 +5439,6 @@ const questions = [
   explanation: "Alauddin Khalji introduced strict market regulations, price controls, and administrative reforms to maintain a large army."
 },
 {
-  id: 915,
   category: "History",
   question: "Muhammad bin Tughlaq is particularly known for:",
   options: [
@@ -5531,7 +5451,6 @@ const questions = [
   explanation: "Muhammad bin Tughlaq introduced token currency and attempted to shift the capital from Delhi to Daulatabad, though both policies faced difficulties."
 },
 {
-  id: 916,
   category: "History",
   question: "Who founded the Mughal Empire in India?",
   options: [
@@ -5544,7 +5463,6 @@ const questions = [
   explanation: "Babur founded the Mughal Empire after defeating Ibrahim Lodi in the First Battle of Panipat in 1526."
 },
 {
-  id: 917,
   category: "History",
   question: "The First Battle of Panipat was fought in:",
   options: [
@@ -5557,7 +5475,6 @@ const questions = [
   explanation: "The First Battle of Panipat was fought in 1526 between Babur and Ibrahim Lodi, leading to the establishment of the Mughal Empire."
 },
 {
-  id: 918,
   category: "History",
   question: "Who introduced the policy of Sulh-i-Kul (Universal Peace)?",
   options: [
@@ -5570,7 +5487,6 @@ const questions = [
   explanation: "Akbar introduced the policy of Sulh-i-Kul, emphasizing tolerance and peaceful coexistence among different religious communities."
 },
 {
-  id: 919,
   category: "History",
   question: "Din-i-Ilahi was introduced by:",
   options: [
@@ -5583,7 +5499,6 @@ const questions = [
   explanation: "Din-i-Ilahi was a spiritual order introduced by Akbar in 1582, combining elements from different religions."
 },
 {
-  id: 920,
   category: "History",
   question: "Who was the author of the Ain-i-Akbari?",
   options: [
@@ -5596,7 +5511,6 @@ const questions = [
   explanation: "Abul Fazl wrote the Ain-i-Akbari, an important record of Akbar's administration, economy, military, and society."
 },
 {
-  id: 931,
   category: "History",
   question: "The Revolt of 1857 began at:",
   options: [
@@ -5609,7 +5523,6 @@ const questions = [
   explanation: "The Revolt of 1857 started at Meerut on 10 May 1857 and soon spread to other parts of northern India."
 },
 {
-  id: 932,
   category: "History",
   question: "Who was proclaimed the Emperor of India during the Revolt of 1857?",
   options: [
@@ -5622,7 +5535,6 @@ const questions = [
   explanation: "The rebels declared Bahadur Shah II, the last Mughal ruler, as the Emperor of India."
 },
 {
-  id: 933,
   category: "History",
   question: "The Indian National Congress was founded in:",
   options: [
@@ -5635,7 +5547,6 @@ const questions = [
   explanation: "The Indian National Congress was founded in 1885 by A.O. Hume with the aim of promoting political dialogue and reforms."
 },
 {
-  id: 934,
   category: "History",
   question: "Who presided over the first session of the Indian National Congress?",
   options: [
@@ -5648,7 +5559,6 @@ const questions = [
   explanation: "Womesh Chandra Bonnerjee presided over the first session of the Indian National Congress held in Bombay in 1885."
 },
 {
-  id: 935,
   category: "History",
   question: "The partition of Bengal took place in:",
   options: [
@@ -5661,7 +5571,6 @@ const questions = [
   explanation: "Lord Curzon partitioned Bengal in 1905, leading to widespread protests and the Swadeshi Movement."
 },
 {
-  id: 936,
   category: "History",
   question: "The Swadeshi Movement was launched in response to:",
   options: [
@@ -5674,7 +5583,6 @@ const questions = [
   explanation: "The Swadeshi Movement began in 1905 as a protest against the partition of Bengal by Lord Curzon."
 },
 {
-  id: 937,
   category: "History",
   question: "The All-India Muslim League was founded in:",
   options: [
@@ -5687,7 +5595,6 @@ const questions = [
   explanation: "The All-India Muslim League was established at Dacca (now Dhaka) in 1906."
 },
 {
-  id: 938,
   category: "History",
   question: "Who started the Home Rule Movement in India?",
   options: [
@@ -5700,7 +5607,6 @@ const questions = [
   explanation: "The Home Rule Movement was launched in 1916 by Bal Gangadhar Tilak and Annie Besant to demand self-government for India."
 },
 {
-  id: 939,
   category: "History",
   question: "The Jallianwala Bagh Massacre took place in:",
   options: [
@@ -5713,7 +5619,6 @@ const questions = [
   explanation: "The Jallianwala Bagh Massacre occurred on 13 April 1919 in Amritsar when troops under General Dyer fired on a peaceful gathering."
 },
 {
-  id: 940,
   category: "History",
   question: "The Rowlatt Act of 1919 was criticized because it:",
   options: [
@@ -5726,7 +5631,6 @@ const questions = [
   explanation: "The Rowlatt Act empowered the government to arrest and detain individuals without trial, leading to widespread opposition across India."
 },
 {
-  id: 941,
   category: "History",
   question: "The Non-Cooperation Movement was launched by Mahatma Gandhi in:",
   options: [
@@ -5739,7 +5643,6 @@ const questions = [
   explanation: "The Non-Cooperation Movement was launched in 1920 to protest against British rule and promote self-reliance."
 },
 {
-  id: 942,
   category: "History",
   question: "The Non-Cooperation Movement was withdrawn following the:",
   options: [
@@ -5752,7 +5655,6 @@ const questions = [
   explanation: "Gandhi withdrew the Non-Cooperation Movement in 1922 after the violent Chauri Chaura Incident in Uttar Pradesh."
 },
 {
-  id: 943,
   category: "History",
   question: "The Civil Disobedience Movement began with the:",
   options: [
@@ -5765,7 +5667,6 @@ const questions = [
   explanation: "The Civil Disobedience Movement was launched in 1930 with Gandhi's Dandi March to protest the British salt tax."
 },
 {
-  id: 944,
   category: "History",
   question: "The Dandi March started from:",
   options: [
@@ -5778,7 +5679,6 @@ const questions = [
   explanation: "Mahatma Gandhi began the historic Dandi March from Sabarmati Ashram on 12 March 1930."
 },
 {
-  id: 945,
   category: "History",
   question: "How many Round Table Conferences were held in London between 1930 and 1932?",
   options: [
@@ -5791,7 +5691,6 @@ const questions = [
   explanation: "Three Round Table Conferences were held in London to discuss constitutional reforms and India's political future."
 },
 {
-  id: 946,
   category: "History",
   question: "The Gandhi-Irwin Pact was signed in:",
   options: [
@@ -5804,7 +5703,6 @@ const questions = [
   explanation: "The Gandhi-Irwin Pact was signed in March 1931 between Mahatma Gandhi and Lord Irwin, leading to the suspension of the Civil Disobedience Movement."
 },
 {
-  id: 947,
   category: "History",
   question: "The Poona Pact of 1932 was signed between:",
   options: [
@@ -5817,7 +5715,6 @@ const questions = [
   explanation: "The Poona Pact provided for reserved seats for the Depressed Classes within the general electorate and was signed by Gandhi and Ambedkar."
 },
 {
-  id: 948,
   category: "History",
   question: "The Quit India Movement was launched in:",
   options: [
@@ -5830,7 +5727,6 @@ const questions = [
   explanation: "The Quit India Movement was launched by the Indian National Congress on 8 August 1942 with the slogan 'Do or Die'."
 },
 {
-  id: 949,
   category: "History",
   question: "Who was the leader of the Indian National Army (INA)?",
   options: [
@@ -5843,7 +5739,6 @@ const questions = [
   explanation: "Subhas Chandra Bose reorganized and led the Indian National Army to fight against British rule."
 },
 {
-  id: 950,
   category: "History",
   question: "The Cabinet Mission came to India in:",
   options: [
@@ -8292,7 +8187,6 @@ const questions = [
     "Federal disputes."
 },
 {
-  id: 791,
   category: "Polity",
   question: "Which Article of the Indian Constitution describes India as a 'Union of States'?",
   options: [
@@ -8305,7 +8199,6 @@ const questions = [
   explanation: "Article 1 states that India, that is Bharat, shall be a Union of States."
 },
 {
-  id: 792,
   category: "Polity",
   question: "Who is known as the Constitutional Head of the State Government?",
   options: [
@@ -8318,7 +8211,6 @@ const questions = [
   explanation: "The Governor is the constitutional head of a state, while the Chief Minister is the real executive head."
 },
 {
-  id: 793,
   category: "Polity",
   question: "The Governor of a State is appointed by the:",
   options: [
@@ -8331,7 +8223,6 @@ const questions = [
   explanation: "Under Article 155, the Governor of a State is appointed by the President of India."
 },
 {
-  id: 794,
   category: "Polity",
   question: "The minimum age required to become the President of India is:",
   options: [
@@ -8344,7 +8235,6 @@ const questions = [
   explanation: "A person must be at least 35 years old to be eligible for election as President of India."
 },
 {
-  id: 795,
   category: "Polity",
   question: "Which constitutional amendment lowered the voting age from 21 years to 18 years?",
   options: [
@@ -8357,7 +8247,6 @@ const questions = [
   explanation: "The 61st Constitutional Amendment Act, 1988 reduced the voting age from 21 years to 18 years."
 },
 {
-  id: 796,
   category: "Polity",
   question: "Which Part of the Indian Constitution deals with Fundamental Rights?",
   options: [
@@ -8370,7 +8259,6 @@ const questions = [
   explanation: "Part III of the Constitution (Articles 12–35) contains the Fundamental Rights guaranteed to citizens."
 },
 {
-  id: 797,
   category: "Polity",
   question: "The Right to Constitutional Remedies is provided under:",
   options: [
@@ -8383,7 +8271,6 @@ const questions = [
   explanation: "Article 32 allows individuals to approach the Supreme Court for the enforcement of Fundamental Rights. Dr. B.R. Ambedkar called it the 'heart and soul' of the Constitution."
 },
 {
-  id: 798,
   category: "Polity",
   question: "Which Fundamental Right was removed from Part III and made a legal right by the 44th Constitutional Amendment?",
   options: [
@@ -8396,7 +8283,6 @@ const questions = [
   explanation: "The 44th Constitutional Amendment Act, 1978 removed the Right to Property from Fundamental Rights and made it a legal right under Article 300A."
 },
 {
-  id: 799,
   category: "Polity",
   question: "The Directive Principles of State Policy are contained in:",
   options: [
@@ -8409,7 +8295,6 @@ const questions = [
   explanation: "Part IV (Articles 36–51) contains the Directive Principles of State Policy, which guide the government in policymaking."
 },
 {
-  id: 800,
   category: "Polity",
   question: "Which Constitutional Amendment is known as the 'Mini Constitution' of India?",
   options: [
@@ -8422,7 +8307,6 @@ const questions = [
   explanation: "The 42nd Constitutional Amendment Act, 1976 is called the 'Mini Constitution' because it made extensive changes to the Constitution."
 },
 {
-  id: 801,
   category: "Polity",
   question: "Fundamental Duties were added to the Indian Constitution by which Constitutional Amendment?",
   options: [
@@ -8435,7 +8319,6 @@ const questions = [
   explanation: "Fundamental Duties were added in 1976 through the 42nd Constitutional Amendment based on the recommendations of the Swaran Singh Committee."
 },
 {
-  id: 802,
   category: "Polity",
   question: "Fundamental Duties are contained in which Part of the Indian Constitution?",
   options: [
@@ -8448,7 +8331,6 @@ const questions = [
   explanation: "Fundamental Duties are contained in Part IVA under Article 51A of the Constitution."
 },
 {
-  id: 803,
   category: "Polity",
   question: "Which writ is issued by a court to produce a person who has been unlawfully detained?",
   options: [
@@ -8461,7 +8343,6 @@ const questions = [
   explanation: "Habeas Corpus means 'produce the body' and is issued to secure the release of a person unlawfully detained."
 },
 {
-  id: 804,
   category: "Polity",
   question: "A Money Bill can be introduced only in:",
   options: [
@@ -8474,7 +8355,6 @@ const questions = [
   explanation: "Under Article 109, a Money Bill can be introduced only in the Lok Sabha with the prior recommendation of the President."
 },
 {
-  id: 805,
   category: "Polity",
   question: "Who certifies whether a bill is a Money Bill or not?",
   options: [
@@ -8487,7 +8367,6 @@ const questions = [
   explanation: "The decision of the Speaker of the Lok Sabha regarding whether a bill is a Money Bill is final."
 },
 {
-  id: 806,
   category: "Polity",
   question: "The maximum strength of the Lok Sabha as provided by the Constitution is:",
   options: [
@@ -8500,7 +8379,6 @@ const questions = [
   explanation: "The Constitution originally provided for a maximum strength of 552 members in the Lok Sabha, including representatives from states, union territories, and formerly nominated Anglo-Indians."
 },
 {
-  id: 807,
   category: "Polity",
   question: "The Rajya Sabha is a:",
   options: [
@@ -8513,7 +8391,6 @@ const questions = [
   explanation: "The Rajya Sabha is a permanent body and is not subject to dissolution. One-third of its members retire every two years."
 },
 {
-  id: 808,
   category: "Polity",
   question: "What is the normal term of the Lok Sabha?",
   options: [
@@ -8526,7 +8403,6 @@ const questions = [
   explanation: "The normal tenure of the Lok Sabha is five years from the date of its first meeting unless dissolved earlier."
 },
 {
-  id: 809,
   category: "Polity",
   question: "A joint sitting of Parliament is presided over by the:",
   options: [
@@ -8539,7 +8415,6 @@ const questions = [
   explanation: "Under Article 108, a joint sitting of Parliament is presided over by the Speaker of the Lok Sabha."
 },
 {
-  id: 810,
   category: "Polity",
   question: "Which Parliamentary Committee examines the reports of the Comptroller and Auditor General (CAG)?",
   options: [
@@ -8552,7 +8427,6 @@ const questions = [
   explanation: "The Public Accounts Committee (PAC) scrutinizes CAG reports and examines government expenditure to ensure accountability."
 },
 {
-  id: 811,
   category: "Polity",
   question: "The President of India is elected by:",
   options: [
@@ -8565,7 +8439,6 @@ const questions = [
   explanation: "The President is elected by an Electoral College consisting of elected members of both Houses of Parliament and elected members of the State Legislative Assemblies."
 },
 {
-  id: 812,
   category: "Polity",
   question: "The Vice-President of India is the ex-officio Chairman of the:",
   options: [
@@ -8578,7 +8451,6 @@ const questions = [
   explanation: "Under Article 64 of the Constitution, the Vice-President serves as the ex-officio Chairman of the Rajya Sabha."
 },
 {
-  id: 813,
   category: "Polity",
   question: "The term of office of the President of India is:",
   options: [
@@ -8591,7 +8463,6 @@ const questions = [
   explanation: "The President holds office for a term of five years from the date on which he or she enters office."
 },
 {
-  id: 814,
   category: "Polity",
   question: "Which Article of the Constitution empowers the President to promulgate Ordinances?",
   options: [
@@ -8604,7 +8475,6 @@ const questions = [
   explanation: "Article 123 empowers the President to promulgate Ordinances when Parliament is not in session and immediate action is necessary."
 },
 {
-  id: 815,
   category: "Polity",
   question: "The impeachment of the President of India can be initiated in:",
   options: [
@@ -8617,7 +8487,6 @@ const questions = [
   explanation: "Impeachment proceedings against the President may be initiated in either House of Parliament for violation of the Constitution."
 },
 {
-  id: 816,
   category: "Polity",
   question: "Who is the real executive head of the Government of India?",
   options: [
@@ -8630,7 +8499,6 @@ const questions = [
   explanation: "While the President is the constitutional head, the Prime Minister is the real executive head and leads the government."
 },
 {
-  id: 817,
   category: "Polity",
   question: "The Council of Ministers is collectively responsible to the:",
   options: [
@@ -8643,7 +8511,6 @@ const questions = [
   explanation: "Article 75 provides that the Council of Ministers shall be collectively responsible to the Lok Sabha."
 },
 {
-  id: 818,
   category: "Polity",
   question: "Who appoints the Prime Minister of India?",
   options: [
@@ -8656,7 +8523,6 @@ const questions = [
   explanation: "The President appoints the Prime Minister, usually the leader of the majority party or coalition in the Lok Sabha."
 },
 {
-  id: 819,
   category: "Polity",
   question: "The Attorney General of India is appointed by the:",
   options: [
@@ -8669,7 +8535,6 @@ const questions = [
   explanation: "The Attorney General is the highest law officer of India and is appointed by the President under Article 76."
 },
 {
-  id: 820,
   category: "Polity",
   question: "Which body is considered the highest decision-making authority within the Council of Ministers?",
   options: [
@@ -8682,7 +8547,6 @@ const questions = [
   explanation: "The Cabinet is the inner core of the Council of Ministers and takes major policy decisions on behalf of the government."
 },
 {
-  id: 821,
   category: "Polity",
   question: "Which Article of the Constitution provides for the establishment of the Supreme Court of India?",
   options: [
@@ -8695,7 +8559,6 @@ const questions = [
   explanation: "Article 124 provides for the establishment and constitution of the Supreme Court of India."
 },
 {
-  id: 822,
   category: "Polity",
   question: "Who appoints the Chief Justice of India?",
   options: [
@@ -8708,7 +8571,6 @@ const questions = [
   explanation: "The Chief Justice of India is appointed by the President of India."
 },
 {
-  id: 823,
   category: "Polity",
   question: "Judicial Review refers to the power of the judiciary to:",
   options: [
@@ -8721,7 +8583,6 @@ const questions = [
   explanation: "Judicial Review empowers courts to examine laws and executive actions and strike them down if they violate the Constitution."
 },
 {
-  id: 824,
   category: "Polity",
   question: "PIL stands for:",
   options: [
@@ -8734,7 +8595,6 @@ const questions = [
   explanation: "Public Interest Litigation allows any public-spirited individual to approach the court for the protection of public interest."
 },
 {
-  id: 825,
   category: "Polity",
   question: "Which Article empowers High Courts to issue writs for the enforcement of Fundamental Rights and other purposes?",
   options: [
@@ -8747,7 +8607,6 @@ const questions = [
   explanation: "Article 226 empowers High Courts to issue writs not only for Fundamental Rights but also for other legal rights."
 },
 {
-  id: 826,
   category: "Polity",
   question: "Which constitutional body is responsible for conducting elections to Parliament, State Legislatures, and the offices of the President and Vice-President?",
   options: [
@@ -8760,7 +8619,6 @@ const questions = [
   explanation: "The Election Commission of India is an independent constitutional body responsible for conducting free and fair elections."
 },
 {
-  id: 827,
   category: "Polity",
   question: "Which Article of the Constitution provides for the Election Commission of India?",
   options: [
@@ -8773,7 +8631,6 @@ const questions = [
   explanation: "Article 324 vests the superintendence, direction, and control of elections in the Election Commission of India."
 },
 {
-  id: 828,
   category: "Polity",
   question: "The Comptroller and Auditor General (CAG) of India is appointed by the:",
   options: [
@@ -8786,7 +8643,6 @@ const questions = [
   explanation: "The CAG is appointed by the President and acts as the guardian of the public purse."
 },
 {
-  id: 829,
   category: "Polity",
   question: "Which constitutional body conducts examinations for recruitment to the All India Services and Central Services?",
   options: [
@@ -8799,7 +8655,6 @@ const questions = [
   explanation: "The UPSC is a constitutional body responsible for recruitment to the All India Services and Central Civil Services."
 },
 {
-  id: 830,
   category: "Polity",
   question: "The Finance Commission is constituted by the President of India every:",
   options: [
@@ -8812,7 +8667,6 @@ const questions = [
   explanation: "Under Article 280, the President constitutes a Finance Commission every five years or earlier if necessary."
 },
 {
-  id: 831,
   category: "Polity",
   question: "The Advocate General is the highest law officer of a:",
   options: [
@@ -8825,7 +8679,6 @@ const questions = [
   explanation: "The Advocate General is the highest legal officer of a State and performs functions similar to those of the Attorney General at the Union level."
 },
 {
-  id: 832,
   category: "Polity",
   question: "Which Article of the Constitution deals with National Emergency?",
   options: [
@@ -8838,7 +8691,6 @@ const questions = [
   explanation: "Article 352 empowers the President to proclaim a National Emergency on grounds of war, external aggression, or armed rebellion."
 },
 {
-  id: 833,
   category: "Polity",
   question: "President's Rule in a State can be imposed under:",
   options: [
@@ -8851,7 +8703,6 @@ const questions = [
   explanation: "Article 356 provides for President's Rule when the constitutional machinery in a State fails."
 },
 {
-  id: 834,
   category: "Polity",
   question: "Financial Emergency in India is provided under:",
   options: [
@@ -8864,7 +8715,6 @@ const questions = [
   explanation: "Article 360 empowers the President to proclaim a Financial Emergency if the financial stability or credit of India is threatened."
 },
 {
-  id: 835,
   category: "Polity",
   question: "Which of the following is NOT a ground for proclaiming a National Emergency?",
   options: [
@@ -8877,7 +8727,6 @@ const questions = [
   explanation: "National Emergency can be declared only on grounds of war, external aggression, or armed rebellion. Financial instability relates to Financial Emergency under Article 360."
 },
 {
-  id: 836,
   category: "Polity",
   question: "The 73rd Constitutional Amendment Act is related to:",
   options: [
@@ -8890,7 +8739,6 @@ const questions = [
   explanation: "The 73rd Constitutional Amendment Act, 1992 gave constitutional status to Panchayati Raj Institutions in rural areas."
 },
 {
-  id: 837,
   category: "Polity",
   question: "The 74th Constitutional Amendment Act deals with:",
   options: [
@@ -8903,7 +8751,6 @@ const questions = [
   explanation: "The 74th Constitutional Amendment Act, 1992 provided constitutional status to Urban Local Bodies or Municipalities."
 },
 {
-  id: 838,
   category: "Polity",
   question: "The Gram Sabha consists of:",
   options: [
@@ -8916,7 +8763,6 @@ const questions = [
   explanation: "The Gram Sabha is the general body of all adult residents registered as voters within a village area."
 },
 {
-  id: 839,
   category: "Polity",
   question: "Which level of Panchayati Raj is found at the district level?",
   options: [
@@ -8929,7 +8775,6 @@ const questions = [
   explanation: "The Zila Parishad functions at the district level, while the Panchayat Samiti operates at the block level and Gram Panchayat at the village level."
 },
 {
-  id: 840,
   category: "Polity",
   question: "Which committee is most closely associated with the recommendation of the three-tier Panchayati Raj system in India?",
   options: [
@@ -8942,7 +8787,6 @@ const questions = [
   explanation: "The Balwant Rai Mehta Committee (1957) recommended the establishment of a three-tier Panchayati Raj system to promote democratic decentralization."
 },
 {
-  id: 841,
   category: "Polity",
   question: "Which Fundamental Right abolishes untouchability in India?",
   options: [
@@ -8955,7 +8799,6 @@ const questions = [
   explanation: "Article 17, which abolishes untouchability, is part of the Right to Equality under Part III of the Constitution."
 },
 {
-  id: 842,
   category: "Polity",
   question: "Which writ is issued to prevent a lower court from exceeding its jurisdiction?",
   options: [
@@ -8968,7 +8811,6 @@ const questions = [
   explanation: "The writ of Prohibition is issued by a higher court to prevent a lower court or tribunal from acting beyond its jurisdiction."
 },
 {
-  id: 843,
   category: "Polity",
   question: "Which constitutional body is known as the 'watchdog of public finances' in India?",
   options: [
@@ -8981,7 +8823,6 @@ const questions = [
   explanation: "The CAG audits government accounts and ensures accountability in the use of public funds."
 },
 {
-  id: 844,
   category: "Polity",
   question: "The Directive Principles of State Policy were borrowed from the Constitution of:",
   options: [
@@ -8994,7 +8835,6 @@ const questions = [
   explanation: "The Directive Principles of State Policy in the Indian Constitution were inspired by the Irish Constitution."
 },
 {
-  id: 845,
   category: "Polity",
   question: "Which Constitutional Amendment added the words 'Socialist', 'Secular', and 'Integrity' to the Preamble?",
   options: [
@@ -9007,7 +8847,6 @@ const questions = [
   explanation: "The 42nd Constitutional Amendment Act, 1976 added the words 'Socialist', 'Secular', and 'Integrity' to the Preamble."
 },
 {
-  id: 846,
   category: "Polity",
   question: "Which writ is issued by a court to command a public authority to perform its legal duty?",
   options: [
@@ -9020,7 +8859,6 @@ const questions = [
   explanation: "Mandamus means 'we command'. It is issued by a court directing a public authority to perform a duty that it is legally bound to perform."
 },
 {
-  id: 847,
   category: "Polity",
   question: "The Constitution of India was adopted by the Constituent Assembly on:",
   options: [
@@ -9033,7 +8871,6 @@ const questions = [
   explanation: "The Constituent Assembly adopted the Constitution on 26 November 1949. It came into force on 26 January 1950."
 },
 {
-  id: 848,
   category: "Polity",
   question: "Who was the Chairman of the Drafting Committee of the Constituent Assembly?",
   options: [
@@ -9046,7 +8883,6 @@ const questions = [
   explanation: "Dr. B. R. Ambedkar served as the Chairman of the Drafting Committee and is widely regarded as the chief architect of the Indian Constitution."
 },
 {
-  id: 849,
   category: "Polity",
   question: "The Preamble declares India to be a:",
   options: [
@@ -9059,7 +8895,6 @@ const questions = [
   explanation: "The Preamble describes India as a Sovereign Socialist Secular Democratic Republic committed to justice, liberty, equality, and fraternity."
 },
 {
-  id: 850,
   category: "Polity",
   question: "Which Article of the Constitution guarantees equality before the law and equal protection of the laws?",
   options: [
@@ -9176,7 +9011,6 @@ const questions = [
     "Constitutional head of the Republic."
 },
  {
-  id: 951,
   category: "Polity",
   question: "Which Article of the Constitution deals with the amendment of the Constitution?",
   options: [
@@ -9189,7 +9023,6 @@ const questions = [
   explanation: "Article 368 lays down the procedure for amending the Constitution of India."
 },
 {
-  id: 952,
   category: "Polity",
   question: "Who is the custodian of the Constitution of India?",
   options: [
@@ -9202,7 +9035,6 @@ const questions = [
   explanation: "The Supreme Court acts as the guardian and interpreter of the Constitution."
 },
 {
-  id: 953,
   category: "Polity",
   question: "The Anti-Defection Law was added by which Constitutional Amendment?",
   options: [
@@ -9215,7 +9047,6 @@ const questions = [
   explanation: "The Anti-Defection Law was added through the 52nd Constitutional Amendment Act, 1985."
 },
 {
-  id: 954,
   category: "Polity",
   question: "The Tenth Schedule of the Constitution is related to:",
   options: [
@@ -9228,7 +9059,6 @@ const questions = [
   explanation: "The Tenth Schedule contains provisions related to disqualification of legislators on grounds of defection."
 },
 {
-  id: 955,
   category: "Polity",
   question: "Who administers the oath of office to the President of India?",
   options: [
@@ -10551,7 +10381,6 @@ const questions = [
     "Plant science."
 },
 {
-  id: 996,
   category: "Science",
   question: "Which gas is most abundant in the Earth's atmosphere?",
   options: [
@@ -10564,7 +10393,6 @@ const questions = [
   explanation: "Nitrogen constitutes about 78% of the Earth's atmosphere."
 },
 {
-  id: 997,
   category: "Science",
   question: "The SI unit of force is:",
   options: [
@@ -10577,7 +10405,6 @@ const questions = [
   explanation: "Force is measured in Newtons (N) in the International System of Units."
 },
 {
-  id: 998,
   category: "Science",
   question: "Which organ in the human body produces insulin?",
   options: [
@@ -10590,7 +10417,6 @@ const questions = [
   explanation: "The pancreas produces insulin, which helps regulate blood glucose levels."
 },
 {
-  id: 999,
   category: "Science",
   question: "What is the chemical formula of water?",
   options: [
@@ -10603,7 +10429,6 @@ const questions = [
   explanation: "A water molecule consists of two hydrogen atoms and one oxygen atom."
 },
 {
-  id: 1000,
   category: "Science",
   question: "Which planet is known as the 'Red Planet'?",
   options: [
@@ -12910,7 +12735,6 @@ const questions = [
     "Think of the Assam-Mizoram road entry."
 },
 {
-  id: 956,
   category: "Mizoram GK",
   question: "Article 371G provides special constitutional protection to:",
   options: [
@@ -12923,7 +12747,6 @@ const questions = [
   explanation: "Article 371G grants special protections to Mizoram regarding customary law, land ownership, and religious and social practices."
 },
 {
-  id: 957,
   category: "Mizoram GK",
   question: "The Mizoram Peace Accord was signed on:",
   options: [
@@ -12936,7 +12759,6 @@ const questions = [
   explanation: "The Mizoram Peace Accord was signed on 30 June 1986 between the Government of India and the Mizo National Front."
 },
 {
-  id: 958,
   category: "Mizoram GK",
   question: "Which of the following is NOT an Autonomous District Council in Mizoram?",
   options: [
@@ -12949,7 +12771,6 @@ const questions = [
   explanation: "Mizoram has three Autonomous District Councils: Chakma, Lai, and Mara."
 },
 {
-  id: 959,
   category: "Mizoram GK",
   question: "What is the state flower of Mizoram?",
   options: [
@@ -12962,7 +12783,6 @@ const questions = [
   explanation: "Red Vanda (Renanthera imschootiana) is the official state flower of Mizoram."
 },
 {
-  id: 960,
   category: "Mizoram GK",
   question: "Phawngpui, the highest peak in Mizoram, is also popularly known as:",
   options: [
@@ -13202,7 +13022,6 @@ const questions = [
     "Unique Identification Authority of India."
 },
 {
-  id: 851,
   category: "Current Affairs",
   question: "India hosted the G20 Leaders' Summit in which city in 2023, the outcomes of which continued to influence global discussions in 2025–26?",
   options: [
@@ -13215,7 +13034,6 @@ const questions = [
   explanation: "India hosted the G20 Leaders' Summit in New Delhi in September 2023, and many of its initiatives continued to shape discussions in subsequent years."
 },
 {
-  id: 852,
   category: "Current Affairs",
   question: "Which country became a full member of BRICS in its 2024 expansion process?",
   options: [
@@ -13228,7 +13046,6 @@ const questions = [
   explanation: "BRICS expanded its membership, with Saudi Arabia being one of the countries invited to join the grouping."
 },
 {
-  id: 853,
   category: "Current Affairs",
   question: "The Chandrayaan-3 mission achieved a historic landing near which region of the Moon?",
   options: [
@@ -13241,7 +13058,6 @@ const questions = [
   explanation: "Chandrayaan-3 made India the first country to successfully land near the Moon's south polar region."
 },
 {
-  id: 854,
   category: "Current Affairs",
   question: "Which Indian mission is aimed at studying the Sun?",
   options: [
@@ -13254,7 +13070,6 @@ const questions = [
   explanation: "Aditya-L1 is India's first dedicated solar mission designed to study the Sun from the Lagrange Point L1."
 },
 {
-  id: 855,
   category: "Current Affairs",
   question: "Which organization released the Human Development Report that includes the Human Development Index (HDI)?",
   options: [
@@ -13267,7 +13082,6 @@ const questions = [
   explanation: "The United Nations Development Programme (UNDP) publishes the Human Development Report and Human Development Index."
 },
 {
-  id: 856,
   category: "Current Affairs",
   question: "Which Indian astronaut is expected to be part of India's first human spaceflight mission, Gaganyaan?",
   options: [
@@ -13280,7 +13094,6 @@ const questions = [
   explanation: "Group Captain Shubhanshu Shukla emerged as one of the key astronauts associated with India's human spaceflight programme."
 },
 {
-  id: 857,
   category: "Current Affairs",
   question: "The term 'Green Hydrogen' refers to hydrogen produced using:",
   options: [
@@ -13293,7 +13106,6 @@ const questions = [
   explanation: "Green Hydrogen is produced through electrolysis powered by renewable energy sources such as solar and wind power."
 },
 {
-  id: 858,
   category: "Current Affairs",
   question: "Which country remained India's largest trading partner during much of the 2024-25 period?",
   options: [
@@ -13306,7 +13118,6 @@ const questions = [
   explanation: "The United States continued to be among India's largest trading partners in terms of bilateral trade."
 },
 {
-  id: 859,
   category: "Current Affairs",
   question: "The Global South Summit initiative has been strongly promoted by:",
   options: [
@@ -13319,7 +13130,6 @@ const questions = [
   explanation: "India has actively promoted the concerns and interests of developing countries through initiatives such as the Voice of Global South Summit."
 },
 {
-  id: 860,
   category: "Current Affairs",
   question: "Which Indian state became the first to implement a Uniform Civil Code (UCC) in recent years?",
   options: [
@@ -13332,7 +13142,6 @@ const questions = [
   explanation: "Uttarakhand became the first state in recent years to implement a Uniform Civil Code through state legislation."
 },
 {
-  id: 961,
   category: "Current Affairs",
   question: "India's first dedicated solar mission is known as:",
   options: [
@@ -13345,7 +13154,6 @@ const questions = [
   explanation: "Aditya-L1 is India's first dedicated mission to study the Sun and its activities."
 },
 {
-  id: 962,
   category: "Current Affairs",
   question: "Which Indian mission successfully landed near the Moon's south polar region?",
   options: [
@@ -13358,7 +13166,6 @@ const questions = [
   explanation: "Chandrayaan-3 made India the first country to successfully land near the lunar south pole."
 },
 {
-  id: 963,
   category: "Current Affairs",
   question: "BRICS originally consisted of Brazil, Russia, India, China, and:",
   options: [
@@ -13371,7 +13178,6 @@ const questions = [
   explanation: "South Africa joined BRIC in 2010, making it BRICS."
 },
 {
-  id: 964,
   category: "Current Affairs",
   question: "The Human Development Index (HDI) is published by:",
   options: [
@@ -13384,7 +13190,6 @@ const questions = [
   explanation: "The Human Development Index is published annually by the United Nations Development Programme (UNDP)."
 },
 {
-  id: 965,
   category: "Current Affairs",
   question: "Green Hydrogen is primarily produced using:",
   options: [
@@ -13605,7 +13410,6 @@ const questions = [
     "Early 21st century."
 },
 {
-  id: 866,
   category: "Mizoram GK",
   question: "What is the state animal of Mizoram?",
   options: [
@@ -13618,7 +13422,6 @@ const questions = [
   explanation: "The Serow (Capricornis sumatraensis) is the state animal of Mizoram."
 },
 {
-  id: 867,
   category: "Mizoram GK",
   question: "What is the state bird of Mizoram?",
   options: [
@@ -13631,7 +13434,6 @@ const questions = [
   explanation: "Mrs. Hume's Pheasant is the state bird of Mizoram."
 },
 {
-  id: 868,
   category: "Mizoram GK",
   question: "Which is the highest peak in Mizoram?",
   options: [
@@ -13644,7 +13446,6 @@ const questions = [
   explanation: "Phawngpui, also known as Blue Mountain, is the highest peak in Mizoram at about 2,157 metres."
 },
 {
-  id: 869,
   category: "Mizoram GK",
   question: "Palak Lake, the largest natural lake in Mizoram, is located in which district?",
   options: [
@@ -13657,7 +13458,6 @@ const questions = [
   explanation: "Palak Dil, the largest natural lake in Mizoram, is located in Siaha district."
 },
 {
-  id: 870,
   category: "Mizoram GK",
   question: "Which festival is known as the spring festival of Mizoram?",
   options: [
@@ -13670,7 +13470,6 @@ const questions = [
   explanation: "Chapchar Kut is the most famous spring festival of Mizoram and is celebrated after the completion of jungle clearing for jhum cultivation."
 },
 {
-  id: 871,
   category: "Mizoram GK",
   question: "Mizoram attained full statehood on:",
   options: [
@@ -13683,7 +13482,6 @@ const questions = [
   explanation: "Mizoram became the 23rd state of India on 20 February 1987 following the Mizoram Peace Accord."
 },
 {
-  id: 872,
   category: "Mizoram GK",
   question: "The Mizoram Peace Accord was signed in:",
   options: [
@@ -13696,7 +13494,6 @@ const questions = [
   explanation: "The historic Mizoram Peace Accord was signed on 30 June 1986 between the Government of India and the Mizo National Front."
 },
 {
-  id: 873,
   category: "Mizoram GK",
   question: "Who became the first Chief Minister of Mizoram after attaining statehood in 1987?",
   options: [
@@ -13709,7 +13506,6 @@ const questions = [
   explanation: "Laldenga, leader of the Mizo National Front, became the first Chief Minister of Mizoram after statehood in 1987."
 },
 {
-  id: 874,
   category: "Mizoram GK",
   question: "Which district of Mizoram shares an international border with Bangladesh and Myanmar?",
   options: [
@@ -13722,7 +13518,6 @@ const questions = [
   explanation: "Lawngtlai district is strategically important as it shares borders with both Bangladesh and Myanmar."
 },
 {
-  id: 875,
   category: "Mizoram GK",
   question: "The headquarters of the Chakma Autonomous District Council is located at:",
   options: [
@@ -13735,7 +13530,6 @@ const questions = [
   explanation: "Kamalanagar serves as the headquarters of the Chakma Autonomous District Council (CADC)."
 },
 {
-  id: 876,
   category: "Mizoram GK",
   question: "The headquarters of the Lai Autonomous District Council (LADC) is located at:",
   options: [
@@ -13748,7 +13542,6 @@ const questions = [
   explanation: "The Lai Autonomous District Council (LADC) has its headquarters at Lawngtlai."
 },
 {
-  id: 877,
   category: "Mizoram GK",
   question: "The headquarters of the Mara Autonomous District Council (MADC) is located at:",
   options: [
@@ -13761,7 +13554,6 @@ const questions = [
   explanation: "Saiha serves as the headquarters of the Mara Autonomous District Council."
 },
 {
-  id: 878,
   category: "Mizoram GK",
   question: "Lengteng Wildlife Sanctuary is located in which district of Mizoram?",
   options: [
@@ -13774,7 +13566,6 @@ const questions = [
   explanation: "Lengteng Wildlife Sanctuary is situated in Champhai district and is known for its rich biodiversity and birdlife."
 },
 {
-  id: 879,
   category: "Mizoram GK",
   question: "Which is the longest river flowing through Mizoram?",
   options: [
@@ -13787,7 +13578,6 @@ const questions = [
   explanation: "The Tlawng River, also known as the Dhaleswari River, is the longest river flowing through Mizoram."
 },
 {
-  id: 880,
   category: "Mizoram GK",
   question: "The Mizo National Front (MNF) was founded in:",
   options: [
@@ -13800,7 +13590,6 @@ const questions = [
   explanation: "The Mizo National Front (MNF) was founded in 1961 under the leadership of Laldenga, evolving from the Mizo National Famine Front."
 },
 {
-  id: 881,
   category: "Mizoram GK",
   question: "The Mizo Hills were formerly a part of which British-administered province?",
   options: [
@@ -13813,7 +13602,6 @@ const questions = [
   explanation: "During British rule, the Mizo Hills were administered as part of Assam Province."
 },
 {
-  id: 882,
   category: "Mizoram GK",
   question: "The first general election to the Mizoram Legislative Assembly was held in:",
   options: [
@@ -13826,7 +13614,6 @@ const questions = [
   explanation: "Following the creation of Mizoram as a Union Territory in 1972, the first Legislative Assembly election was held the same year."
 },
 {
-  id: 883,
   category: "Mizoram GK",
   question: "Which district is known as the 'Rice Bowl of Mizoram'?",
   options: [
@@ -13839,7 +13626,6 @@ const questions = [
   explanation: "Champhai is often called the Rice Bowl of Mizoram because of its extensive paddy cultivation and fertile valley."
 },
 {
-  id: 884,
   category: "Mizoram GK",
   question: "What is the official state flower of Mizoram?",
   options: [
@@ -13852,7 +13638,6 @@ const questions = [
   explanation: "Red Vanda (Renanthera imschootiana) is the state flower of Mizoram."
 },
 {
-  id: 885,
   category: "Mizoram GK",
   question: "Which river forms a significant part of the border between Mizoram and Bangladesh?",
   options: [
@@ -13865,7 +13650,6 @@ const questions = [
   explanation: "The Karnaphuli River system is an important geographical feature in the southern region bordering Bangladesh."
 },
 {
-  id: 886,
   category: "Mizoram GK",
   question: "Before the abolition of chieftainship, traditional Mizo villages were governed by:",
   options: [
@@ -13878,7 +13662,6 @@ const questions = [
   explanation: "Traditional Mizo society was organized under hereditary village chiefs who exercised administrative and judicial authority."
 },
 {
-  id: 887,
   category: "Mizoram GK",
   question: "The Mizo Union was primarily formed to:",
   options: [
@@ -13891,7 +13674,6 @@ const questions = [
   explanation: "The Mizo Union emerged as a political movement advocating democratic reforms and the abolition of hereditary chieftainship."
 },
 {
-  id: 888,
   category: "Mizoram GK",
   question: "The Young Mizo Association (YMA) was established in:",
   options: [
@@ -13904,7 +13686,6 @@ const questions = [
   explanation: "The Young Mizo Association (YMA), one of the most influential civil society organizations in Mizoram, was established in 1935."
 },
 {
-  id: 889,
   category: "Mizoram GK",
   question: "The traditional Mizo practice of community service and mutual help is known as:",
   options: [
@@ -13917,7 +13698,6 @@ const questions = [
   explanation: "Tlawmngaihna is a core Mizo social value emphasizing selflessness, community service, courage, and helping others."
 },
 {
-  id: 890,
   category: "Mizoram GK",
   question: "The Zawlbuk in traditional Mizo society was a:",
   options: [
@@ -13930,7 +13710,6 @@ const questions = [
   explanation: "The Zawlbuk served as a dormitory for unmarried young men and played an important role in social education and community life."
 },
 {
-  id: 891,
   category: "Mizoram GK",
   question: "Who are credited with developing the first written Mizo alphabet?",
   options: [
@@ -13943,7 +13722,6 @@ const questions = [
   explanation: "Christian missionaries J.H. Lorrain and F.W. Savidge developed the first written Mizo alphabet using the Roman script in the 1890s."
 },
 {
-  id: 892,
   category: "Mizoram GK",
   question: "Christianity was introduced to the Mizo Hills primarily by:",
   options: [
@@ -13956,7 +13734,6 @@ const questions = [
   explanation: "Christianity was introduced to the Mizo Hills by missionaries, particularly J.H. Lorrain and F.W. Savidge, beginning in 1894."
 },
 {
-  id: 893,
   category: "Mizoram GK",
   question: "The arrival of Christian missionaries in the Mizo Hills is generally associated with the year:",
   options: [
@@ -13969,7 +13746,6 @@ const questions = [
   explanation: "J.H. Lorrain and F.W. Savidge arrived in the Mizo Hills in 1894, marking the beginning of organized missionary work."
 },
 {
-  id: 894,
   category: "Mizoram GK",
   question: "Who is widely known as 'Pu Buanga', one of the most celebrated figures in Mizo folklore and literature?",
   options: [
@@ -13982,7 +13758,6 @@ const questions = [
   explanation: "Khuangchera is one of the most famous heroes in Mizo history and folklore, remembered for his bravery and leadership."
 },
 {
-  id: 895,
   category: "Mizoram GK",
   question: "The first written Mizo book was primarily related to:",
   options: [
@@ -13995,7 +13770,6 @@ const questions = [
   explanation: "Early Mizo publications produced by missionaries focused on literacy, religious teaching, and basic education."
 },
 {
-  id: 896,
   category: "Mizoram GK",
   question: "The Mizo language belongs to which language family?",
   options: [
@@ -14008,7 +13782,6 @@ const questions = [
   explanation: "The Mizo language belongs to the Tibeto-Burman branch of the Sino-Tibetan language family."
 },
 {
-  id: 897,
   category: "Mizoram GK",
   question: "Which festival of Mizoram is associated with the completion of the maize harvest?",
   options: [
@@ -14021,7 +13794,6 @@ const questions = [
   explanation: "Mim Kut is traditionally celebrated after the harvest of maize and is associated with remembrance of departed relatives."
 },
 {
-  id: 898,
   category: "Mizoram GK",
   question: "Pawl Kut is traditionally celebrated to mark:",
   options: [
@@ -14034,7 +13806,6 @@ const questions = [
   explanation: "Pawl Kut is a post-harvest festival celebrated to give thanks for a successful agricultural season."
 },
 {
-  id: 899,
   category: "Mizoram GK",
   question: "Which traditional Mizo value emphasizes self-sacrifice, humility, and service to others?",
   options: [
@@ -14047,7 +13818,6 @@ const questions = [
   explanation: "Tlawmngaihna is considered the foundation of Mizo social ethics, emphasizing selflessness, courage, and service to the community."
 },
 {
-  id: 900,
   category: "Mizoram GK",
   question: "Which of the following is the largest city in Mizoram?",
   options: [
@@ -15383,7 +15153,6 @@ const questions = [
     "Evaluating student learning."
 },
 {
-  id: 691,
   category: "Teaching Aptitude",
   question: "Which of the following is the most important quality of an effective teacher?",
   options: [
@@ -15396,7 +15165,6 @@ const questions = [
   explanation: "An effective teacher should possess sound subject knowledge and the ability to communicate concepts clearly to learners."
 },
 {
-  id: 692,
   category: "Teaching Aptitude",
   question: "The primary objective of teaching is to:",
   options: [
@@ -15409,7 +15177,6 @@ const questions = [
   explanation: "Teaching is a process of facilitating learning and helping students acquire knowledge, skills, values, and attitudes."
 },
 {
-  id: 693,
   category: "Teaching Aptitude",
   question: "Which method encourages maximum student participation in the classroom?",
   options: [
@@ -15422,7 +15189,6 @@ const questions = [
   explanation: "Discussion promotes interaction, critical thinking, and active participation among students."
 },
 {
-  id: 694,
   category: "Teaching Aptitude",
   question: "Formative assessment is conducted primarily to:",
   options: [
@@ -15435,7 +15201,6 @@ const questions = [
   explanation: "Formative assessment is carried out during the learning process to identify strengths and weaknesses and improve learning outcomes."
 },
 {
-  id: 695,
   category: "Teaching Aptitude",
   question: "A teacher-centered classroom is characterized by:",
   options: [
@@ -15448,7 +15213,6 @@ const questions = [
   explanation: "In a teacher-centered approach, the teacher plays the primary role in delivering information while students remain relatively passive."
 },
 {
-  id: 696,
   category: "Teaching Aptitude",
   question: "Bloom's Taxonomy is primarily concerned with:",
   options: [
@@ -15461,7 +15225,6 @@ const questions = [
   explanation: "Bloom's Taxonomy classifies educational objectives into different levels of learning, especially in the cognitive domain."
 },
 {
-  id: 697,
   category: "Teaching Aptitude",
   question: "Which of the following is the highest level in the revised Bloom's Taxonomy?",
   options: [
@@ -15474,7 +15237,6 @@ const questions = [
   explanation: "In the revised Bloom's Taxonomy, Creating is the highest cognitive level, involving the production of new ideas or products."
 },
 {
-  id: 698,
   category: "Teaching Aptitude",
   question: "Diagnostic evaluation is mainly used to:",
   options: [
@@ -15487,7 +15249,6 @@ const questions = [
   explanation: "Diagnostic evaluation helps identify specific weaknesses and learning problems so that corrective measures can be taken."
 },
 {
-  id: 699,
   category: "Teaching Aptitude",
   question: "A learner-centered approach emphasizes:",
   options: [
@@ -15500,7 +15261,6 @@ const questions = [
   explanation: "Learner-centered teaching focuses on active student involvement, critical thinking, and independent learning."
 },
 {
-  id: 700,
   category: "Teaching Aptitude",
   question: "Which of the following is considered an intrinsic motivation for learning?",
   options: [
@@ -15513,7 +15273,6 @@ const questions = [
   explanation: "Intrinsic motivation comes from internal interest, curiosity, and personal satisfaction rather than external rewards."
 },
 {
-  id: 701,
   category: "Teaching Aptitude",
   question: "Which of the following is an essential characteristic of a good teacher?",
   options: [
@@ -15526,7 +15285,6 @@ const questions = [
   explanation: "A good teacher should communicate ideas clearly and effectively to facilitate learning."
 },
 {
-  id: 702,
   category: "Teaching Aptitude",
   question: "Classroom management primarily aims to:",
   options: [
@@ -15539,7 +15297,6 @@ const questions = [
   explanation: "Classroom management involves organizing the classroom to create a positive and productive learning environment."
 },
 {
-  id: 703,
   category: "Teaching Aptitude",
   question: "Teaching aids are used mainly to:",
   options: [
@@ -15552,7 +15309,6 @@ const questions = [
   explanation: "Teaching aids help students understand concepts better by making lessons more engaging and interactive."
 },
 {
-  id: 704,
   category: "Teaching Aptitude",
   question: "Feedback in teaching-learning helps to:",
   options: [
@@ -15565,7 +15321,6 @@ const questions = [
   explanation: "Feedback provides information about learning progress and helps both teachers and students improve performance."
 },
 {
-  id: 705,
   category: "Teaching Aptitude",
   question: "Which of the following is a barrier to effective classroom communication?",
   options: [
@@ -15578,7 +15333,6 @@ const questions = [
   explanation: "Physical and psychological distractions can interfere with the communication process and reduce learning effectiveness."
 },
 {
-  id: 706,
   category: "Teaching Aptitude",
   question: "Microteaching is primarily used for:",
   options: [
@@ -15591,7 +15345,6 @@ const questions = [
   explanation: "Microteaching is a teacher training technique that helps teachers practice and improve specific teaching skills in a controlled environment."
 },
 {
-  id: 707,
   category: "Teaching Aptitude",
   question: "Positive reinforcement in the classroom means:",
   options: [
@@ -15604,7 +15357,6 @@ const questions = [
   explanation: "Positive reinforcement encourages desirable behaviour by providing rewards, praise, or recognition."
 },
 {
-  id: 708,
   category: "Teaching Aptitude",
   question: "Individual differences among learners refer to differences in:",
   options: [
@@ -15617,7 +15369,6 @@ const questions = [
   explanation: "Students differ in intelligence, aptitude, learning styles, interests, and personality traits."
 },
 {
-  id: 709,
   category: "Teaching Aptitude",
   question: "Guidance and counselling in education mainly help students to:",
   options: [
@@ -15630,7 +15381,6 @@ const questions = [
   explanation: "Guidance and counselling assist students in making informed decisions regarding education, careers, and personal development."
 },
 {
-  id: 710,
   category: "Teaching Aptitude",
   question: "Team teaching refers to:",
   options: [
@@ -15643,7 +15393,6 @@ const questions = [
   explanation: "Team teaching involves two or more teachers collaboratively planning, teaching, and evaluating learning activities."
 },
 {
-  id: 711,
   category: "Teaching Aptitude",
   question: "Which teaching method is most suitable for developing critical thinking among students?",
   options: [
@@ -15656,7 +15405,6 @@ const questions = [
   explanation: "Discussion encourages students to analyze, evaluate, and express their ideas, thereby developing critical thinking skills."
 },
 {
-  id: 712,
   category: "Teaching Aptitude",
   question: "The primary purpose of evaluation in education is to:",
   options: [
@@ -15669,7 +15417,6 @@ const questions = [
   explanation: "Evaluation helps assess student achievement and provides feedback for improving teaching and learning."
 },
 {
-  id: 713,
   category: "Teaching Aptitude",
   question: "A lesson plan is prepared mainly to:",
   options: [
@@ -15682,7 +15429,6 @@ const questions = [
   explanation: "A lesson plan provides a structured framework for achieving instructional objectives effectively."
 },
 {
-  id: 714,
   category: "Teaching Aptitude",
   question: "ICT in education refers to the use of:",
   options: [
@@ -15695,7 +15441,6 @@ const questions = [
   explanation: "ICT includes computers, the internet, projectors, educational software, and other digital tools used in education."
 },
 {
-  id: 715,
   category: "Teaching Aptitude",
   question: "Remedial teaching is intended for students who:",
   options: [
@@ -15708,7 +15453,6 @@ const questions = [
   explanation: "Remedial teaching provides extra instruction and assistance to help learners overcome specific academic weaknesses."
 },
 {
-  id: 716,
   category: "Teaching Aptitude",
   question: "Which of the following is considered a learner-centered method of teaching?",
   options: [
@@ -15721,7 +15465,6 @@ const questions = [
   explanation: "The Project Method actively involves students in planning, executing, and evaluating learning activities."
 },
 {
-  id: 717,
   category: "Teaching Aptitude",
   question: "The main purpose of questioning in the classroom is to:",
   options: [
@@ -15734,7 +15477,6 @@ const questions = [
   explanation: "Effective questioning stimulates thinking, encourages participation, and helps assess understanding."
 },
 {
-  id: 718,
   category: "Teaching Aptitude",
   question: "Which of the following is most important for effective teaching?",
   options: [
@@ -15747,7 +15489,6 @@ const questions = [
   explanation: "The ultimate goal of teaching is meaningful understanding and learning rather than merely completing the syllabus."
 },
 {
-  id: 719,
   category: "Teaching Aptitude",
   question: "Continuous and Comprehensive Evaluation (CCE) emphasizes:",
   options: [
@@ -15760,7 +15501,6 @@ const questions = [
   explanation: "CCE focuses on continuous evaluation of scholastic and co-scholastic development throughout the learning process."
 },
 {
-  id: 720,
   category: "Teaching Aptitude",
   question: "Which of the following best reflects professional ethics for teachers?",
   options: [
@@ -16189,7 +15929,6 @@ const questions = [
     "Climate change agreement."
 },
 {
-  id: 766,
   category: "Environment & Ecology",
   question: "Which of the following is recognized as a biodiversity hotspot in India?",
   options: [
@@ -16202,7 +15941,6 @@ const questions = [
   explanation: "The Western Ghats is one of the world's biodiversity hotspots due to its exceptional species richness and endemism."
 },
 {
-  id: 767,
   category: "Environment & Ecology",
   question: "The term 'endemic species' refers to species that:",
   options: [
@@ -16215,7 +15953,6 @@ const questions = [
   explanation: "Endemic species are native to and found only in a specific region or habitat."
 },
 {
-  id: 768,
   category: "Environment & Ecology",
   question: "Which international agreement aims to combat climate change by reducing greenhouse gas emissions?",
   options: [
@@ -16228,7 +15965,6 @@ const questions = [
   explanation: "The Kyoto Protocol, adopted in 1997, committed participating countries to reduce greenhouse gas emissions."
 },
 {
-  id: 769,
   category: "Environment & Ecology",
   question: "The Ramsar Convention is related to the conservation of:",
   options: [
@@ -16241,7 +15977,6 @@ const questions = [
   explanation: "The Ramsar Convention is an international treaty for the conservation and wise use of wetlands."
 },
 {
-  id: 770,
   category: "Environment & Ecology",
   question: "Which gas contributes the most to the greenhouse effect due to human activities?",
   options: [
@@ -16254,7 +15989,6 @@ const questions = [
   explanation: "Carbon dioxide (CO₂) is the largest contributor to anthropogenic greenhouse gas emissions and global warming."
 },
 {
-  id: 771,
   category: "Environment & Ecology",
   question: "The ozone layer is primarily located in which layer of the atmosphere?",
   options: [
@@ -16267,7 +16001,6 @@ const questions = [
   explanation: "The ozone layer is concentrated in the stratosphere and protects life on Earth by absorbing harmful ultraviolet radiation."
 },
 {
-  id: 772,
   category: "Environment & Ecology",
   question: "The Montreal Protocol was adopted to address:",
   options: [
@@ -16280,7 +16013,6 @@ const questions = [
   explanation: "The Montreal Protocol, adopted in 1987, aims to phase out substances that deplete the ozone layer."
 },
 {
-  id: 773,
   category: "Environment & Ecology",
   question: "Which of the following is a National Park in India?",
   options: [
@@ -16293,7 +16025,6 @@ const questions = [
   explanation: "Kaziranga, Sundarbans, and Jim Corbett are all National Parks and important wildlife conservation areas in India."
 },
 {
-  id: 774,
   category: "Environment & Ecology",
   question: "A Wildlife Sanctuary differs from a National Park because:",
   options: [
@@ -16306,7 +16037,6 @@ const questions = [
   explanation: "Wildlife Sanctuaries generally allow certain regulated human activities, whereas National Parks have stricter protection measures."
 },
 {
-  id: 775,
   category: "Environment & Ecology",
   question: "The Red Data Book is published to provide information about:",
   options: [
@@ -16319,7 +16049,6 @@ const questions = [
   explanation: "The Red Data Book contains information on rare, endangered, and threatened species of plants and animals."
 },
 {
-  id: 776,
   category: "Environment & Ecology",
   question: "A food chain represents:",
   options: [
@@ -16332,7 +16061,6 @@ const questions = [
   explanation: "A food chain shows the transfer of energy and nutrients from producers to consumers and decomposers."
 },
 {
-  id: 777,
   category: "Environment & Ecology",
   question: "A food web is:",
   options: [
@@ -16345,7 +16073,6 @@ const questions = [
   explanation: "A food web consists of multiple interconnected food chains, making ecosystems more stable."
 },
 {
-  id: 778,
   category: "Environment & Ecology",
   question: "An ecosystem consists of:",
   options: [
@@ -16358,7 +16085,6 @@ const questions = [
   explanation: "An ecosystem includes both biotic (living) and abiotic (non-living) components interacting with each other."
 },
 {
-  id: 779,
   category: "Environment & Ecology",
   question: "Biodiversity refers to:",
   options: [
@@ -16371,7 +16097,6 @@ const questions = [
   explanation: "Biodiversity includes the variety of genes, species, and ecosystems present in a region."
 },
 {
-  id: 780,
   category: "Environment & Ecology",
   question: "In an ecological pyramid, the largest amount of energy is found at the:",
   options: [
@@ -16384,7 +16109,6 @@ const questions = [
   explanation: "Producers form the base of the ecological pyramid and contain the highest amount of available energy."
 },
 {
-  id: 781,
   category: "Environment & Ecology",
   question: "Biomagnification refers to:",
   options: [
@@ -16397,7 +16121,6 @@ const questions = [
   explanation: "Biomagnification is the process by which toxic substances become more concentrated as they move up the food chain."
 },
 {
-  id: 782,
   category: "Environment & Ecology",
   question: "Bioaccumulation is the process by which:",
   options: [
@@ -16410,7 +16133,6 @@ const questions = [
   explanation: "Bioaccumulation occurs when an organism absorbs pollutants faster than it can eliminate them."
 },
 {
-  id: 783,
   category: "Environment & Ecology",
   question: "Which of the following is a renewable resource?",
   options: [
@@ -16423,7 +16145,6 @@ const questions = [
   explanation: "Solar energy is naturally replenished and is therefore considered a renewable resource."
 },
 {
-  id: 784,
   category: "Environment & Ecology",
   question: "Which of the following is a non-renewable resource?",
   options: [
@@ -16436,7 +16157,6 @@ const questions = [
   explanation: "Coal takes millions of years to form and cannot be replenished on a human timescale."
 },
 {
-  id: 785,
   category: "Environment & Ecology",
   question: "The concept of sustainable development was popularized by the:",
   options: [
@@ -16449,7 +16169,6 @@ const questions = [
   explanation: "The 1987 Brundtland Report defined sustainable development as development that meets present needs without compromising the ability of future generations to meet their own needs."
 },
 {
-  id: 786,
   category: "Environment & Ecology",
   question: "Which of the following best describes afforestation?",
   options: [
@@ -16462,7 +16181,6 @@ const questions = [
   explanation: "Afforestation refers to establishing forests in areas where there were previously no forests."
 },
 {
-  id: 787,
   category: "Environment & Ecology",
   question: "Deforestation primarily results in:",
   options: [
@@ -16475,7 +16193,6 @@ const questions = [
   explanation: "Deforestation destroys habitats, reduces biodiversity, and contributes to climate change and soil erosion."
 },
 {
-  id: 788,
   category: "Environment & Ecology",
   question: "The Chipko Movement is associated with:",
   options: [
@@ -16488,7 +16205,6 @@ const questions = [
   explanation: "The Chipko Movement was a forest conservation movement in which villagers hugged trees to prevent them from being cut down."
 },
 {
-  id: 789,
   category: "Environment & Ecology",
   question: "Which of the following is known as a 'keystone species'?",
   options: [
@@ -16501,7 +16217,6 @@ const questions = [
   explanation: "Keystone species have a disproportionately large effect on their ecosystem relative to their population size."
 },
 {
-  id: 790,
   category: "Environment & Ecology",
   question: "The International Union for Conservation of Nature (IUCN) is best known for publishing:",
   options: [
@@ -16930,7 +16645,6 @@ const questions = [
     "Western international border."
 },
 {
-  id: 741,
   category: "Northeast India",
   question: "Which state is known as the 'Gateway to Northeast India'?",
   options: [
@@ -16943,7 +16657,6 @@ const questions = [
   explanation: "Assam is called the Gateway to Northeast India because it connects the region with the rest of India through the Siliguri Corridor."
 },
 {
-  id: 742,
   category: "Northeast India",
   question: "How many states are commonly referred to as the 'Seven Sisters' of Northeast India?",
   options: [
@@ -16956,7 +16669,6 @@ const questions = [
   explanation: "The Seven Sisters are Assam, Arunachal Pradesh, Manipur, Meghalaya, Mizoram, Nagaland, and Tripura."
 },
 {
-  id: 743,
   category: "Northeast India",
   question: "Which state is known as the 'Land of the Rising Sun' in India?",
   options: [
@@ -16969,7 +16681,6 @@ const questions = [
   explanation: "Arunachal Pradesh is called the Land of the Rising Sun because it is the easternmost state of India and receives the first sunrise."
 },
 {
-  id: 744,
   category: "Northeast India",
   question: "The capital city of Meghalaya is:",
   options: [
@@ -16982,7 +16693,6 @@ const questions = [
   explanation: "Shillong is the capital of Meghalaya and is popularly known as the 'Scotland of the East'."
 },
 {
-  id: 745,
   category: "Northeast India",
   question: "Which Northeast Indian state shares the longest international border with Myanmar?",
   options: [
@@ -16995,7 +16705,6 @@ const questions = [
   explanation: "Mizoram shares approximately 510 km of international border with Myanmar, making it the Northeast state with the longest border with that country."
 },
 {
-  id: 746,
   category: "Northeast India",
   question: "The Hornbill Festival is primarily associated with which Northeast Indian state?",
   options: [
@@ -17008,7 +16717,6 @@ const questions = [
   explanation: "The Hornbill Festival is Nagaland's most famous cultural festival, showcasing the traditions and heritage of various Naga tribes."
 },
 {
-  id: 747,
   category: "Northeast India",
   question: "The Sangai Festival is celebrated in which state?",
   options: [
@@ -17021,7 +16729,6 @@ const questions = [
   explanation: "The Sangai Festival is Manipur's premier tourism festival and is named after the endangered Sangai deer."
 },
 {
-  id: 748,
   category: "Northeast India",
   question: "The phenomenon of mass bamboo flowering in Mizoram is known as:",
   options: [
@@ -17034,7 +16741,6 @@ const questions = [
   explanation: "Mautam refers to the cyclical flowering of bamboo, which often leads to an increase in rat populations and crop damage."
 },
 {
-  id: 749,
   category: "Northeast India",
   question: "The North Eastern Council (NEC) was established in:",
   options: [
@@ -17047,7 +16753,6 @@ const questions = [
   explanation: "The North Eastern Council was established in 1972 as a regional planning and development body for Northeast India."
 },
 {
-  id: 750,
   category: "Northeast India",
   question: "The headquarters of the North Eastern Council (NEC) is located at:",
   options: [
@@ -17060,7 +16765,6 @@ const questions = [
   explanation: "The North Eastern Council Secretariat is located in Shillong, Meghalaya."
 },
 {
-  id: 751,
   category: "Northeast India",
   question: "Sikkim became a state of India in which year?",
   options: [
@@ -17073,7 +16777,6 @@ const questions = [
   explanation: "Sikkim became the 22nd state of India in 1975 after a referendum and constitutional amendment."
 },
 {
-  id: 752,
   category: "Northeast India",
   question: "Kaziranga National Park, a UNESCO World Heritage Site, is located in:",
   options: [
@@ -17086,7 +16789,6 @@ const questions = [
   explanation: "Kaziranga National Park in Assam is famous for its population of the one-horned rhinoceros and is a UNESCO World Heritage Site."
 },
 {
-  id: 753,
   category: "Northeast India",
   question: "Loktak Lake, the largest freshwater lake in Northeast India, is located in:",
   options: [
@@ -17099,7 +16801,6 @@ const questions = [
   explanation: "Loktak Lake in Manipur is famous for its floating islands known as 'Phumdis'."
 },
 {
-  id: 754,
   category: "Northeast India",
   question: "Dzukou Valley, known for its seasonal flowers and scenic beauty, lies on the border of:",
   options: [
@@ -17112,7 +16813,6 @@ const questions = [
   explanation: "Dzukou Valley is located on the border of Nagaland and Manipur and is often called the 'Valley of Flowers of the Northeast'."
 },
 {
-  id: 755,
   category: "Northeast India",
   question: "Chapchar Kut is a major traditional festival celebrated in:",
   options: [
@@ -17125,7 +16825,6 @@ const questions = [
   explanation: "Chapchar Kut is one of the most important festivals of Mizoram, celebrated after the completion of jungle clearing for jhum cultivation."
 },
 {
-  id: 756,
   category: "Northeast India",
   question: "The Wangala Festival is celebrated by which tribe of Meghalaya?",
   options: [
@@ -17138,7 +16837,6 @@ const questions = [
   explanation: "Wangala, also known as the Hundred Drums Festival, is celebrated by the Garo tribe to mark the end of the harvest season."
 },
 {
-  id: 757,
   category: "Northeast India",
   question: "Ziro Valley, known for its scenic beauty and Apatani culture, is located in:",
   options: [
@@ -17151,7 +16849,6 @@ const questions = [
   explanation: "Ziro Valley in Arunachal Pradesh is famous for the Apatani tribe and is included in UNESCO's tentative World Heritage list."
 },
 {
-  id: 758,
   category: "Northeast India",
   question: "Keibul Lamjao National Park, the world's only floating national park, is located in:",
   options: [
@@ -17164,7 +16861,6 @@ const questions = [
   explanation: "Keibul Lamjao National Park is situated on Loktak Lake in Manipur and is the natural habitat of the endangered Sangai deer."
 },
 {
-  id: 759,
   category: "Northeast India",
   question: "The Nongkrem Dance Festival is associated with which state?",
   options: [
@@ -17177,7 +16873,6 @@ const questions = [
   explanation: "The Nongkrem Dance Festival is a major Khasi festival celebrated in Meghalaya to honor and thank the divine for prosperity."
 },
 {
-  id: 760,
   category: "Northeast India",
   question: "Nathu La Pass, an important mountain pass connecting India and China, is located in:",
   options: [
@@ -17190,7 +16885,6 @@ const questions = [
   explanation: "Nathu La Pass is situated in East Sikkim and forms part of the historic Silk Route between India and Tibet."
 },
 {
-  id: 761,
   category: "Northeast India",
   question: "Majuli, the world's largest inhabited river island, is located in:",
   options: [
@@ -17203,7 +16897,6 @@ const questions = [
   explanation: "Majuli is located in the Brahmaputra River in Assam and is famous for its Vaishnavite monasteries known as Satras."
 },
 {
-  id: 762,
   category: "Northeast India",
   question: "Shilloi Lake, a popular tourist destination, is located in:",
   options: [
@@ -17216,7 +16909,6 @@ const questions = [
   explanation: "Shilloi Lake is located in Nagaland's Phek district and is known for its scenic beauty and local legends."
 },
 {
-  id: 763,
   category: "Northeast India",
   question: "Ujjayanta Palace, a famous historical monument, is situated in:",
   options: [
@@ -17229,7 +16921,6 @@ const questions = [
   explanation: "Ujjayanta Palace is located in Agartala, Tripura, and now houses the Tripura State Museum."
 },
 {
-  id: 764,
   category: "Northeast India",
   question: "Which Northeast Indian states share an international border with Myanmar?",
   options: [
@@ -17242,7 +16933,6 @@ const questions = [
   explanation: "Four Northeast states—Arunachal Pradesh, Nagaland, Manipur, and Mizoram—share an international border with Myanmar."
 },
 {
-  id: 765,
   category: "Northeast India",
   question: "North-Eastern Hill University (NEHU) is located in:",
   options: [
@@ -17255,7 +16945,6 @@ const questions = [
   explanation: "NEHU was established in 1973 and is located in Shillong, Meghalaya. It is one of the major central universities in Northeast India."
 },
 {
-  id: 966,
   category: "Northeast India",
   question: "The headquarters of the North Eastern Council (NEC) is located in:",
   options: [
@@ -17268,7 +16957,6 @@ const questions = [
   explanation: "The North Eastern Council (NEC), established in 1972, has its headquarters in Shillong, Meghalaya."
 },
 {
-  id: 967,
   category: "Northeast India",
   question: "The Hornbill Festival is celebrated annually in:",
   options: [
@@ -17281,7 +16969,6 @@ const questions = [
   explanation: "The Hornbill Festival is Nagaland's premier cultural festival showcasing the traditions of various Naga tribes."
 },
 {
-  id: 968,
   category: "Northeast India",
   question: "Loktak Lake, famous for its floating phumdis, is located in:",
   options: [
@@ -17294,7 +16981,6 @@ const questions = [
   explanation: "Loktak Lake in Manipur is the largest freshwater lake in Northeast India and is known for its floating islands called phumdis."
 },
 {
-  id: 969,
   category: "Northeast India",
   question: "Kaziranga National Park, renowned for the one-horned rhinoceros, is situated in:",
   options: [
@@ -17307,7 +16993,6 @@ const questions = [
   explanation: "Kaziranga National Park in Assam is a UNESCO World Heritage Site famous for the Indian one-horned rhinoceros."
 },
 {
-  id: 970,
   category: "Northeast India",
   question: "Sikkim became a state of India in:",
   options: [
@@ -17632,7 +17317,6 @@ const questions = [
     "Head of the UN Secretariat."
 },
 {
-  id: 661,
   category: "International Relations",
   question: "Who is regarded as the 'father of Classical Realism' in International Relations?",
   options: ["Kenneth Waltz", "Hans Morgenthau", "Robert Keohane", "Alexander Wendt"],
@@ -17640,7 +17324,6 @@ const questions = [
   explanation: "Hans Morgenthau is considered the father of Classical Realism. He argued that states pursue power and national interest in an anarchic international system."
 },
 {
-  id: 662,
   category: "International Relations",
   question: "Which theory argues that international cooperation is possible through institutions and interdependence?",
   options: ["Realism", "Marxism", "Liberalism", "Postmodernism"],
@@ -17648,7 +17331,6 @@ const questions = [
   explanation: "Liberalism emphasizes cooperation, international organizations, democracy, and economic interdependence as means to reduce conflict."
 },
 {
-  id: 663,
   category: "International Relations",
   question: "The headquarters of the United Nations is located in:",
   options: ["Geneva", "Paris", "New York", "Vienna"],
@@ -17656,7 +17338,6 @@ const questions = [
   explanation: "The main headquarters of the United Nations is located in New York City, USA."
 },
 {
-  id: 664,
   category: "International Relations",
   question: "How many permanent members are there in the United Nations Security Council (UNSC)?",
   options: ["3", "5", "7", "10"],
@@ -17664,7 +17345,6 @@ const questions = [
   explanation: "The permanent members are China, France, Russia, the United Kingdom, and the United States."
 },
 {
-  id: 665,
   category: "International Relations",
   question: "Which permanent member of the UNSC has used the veto power the most in history?",
   options: ["United States", "China", "Russia (formerly USSR)", "France"],
@@ -17672,7 +17352,6 @@ const questions = [
   explanation: "The Soviet Union and later Russia have historically used the veto power more frequently than any other permanent member."
 },
 {
-  id: 666,
   category: "International Relations",
   question: "The concept of 'Balance of Power' refers to:",
   options: [
@@ -17685,7 +17364,6 @@ const questions = [
   explanation: "Balance of Power is a key realist concept whereby states seek to prevent any one state from becoming overwhelmingly powerful."
 },
 {
-  id: 667,
   category: "International Relations",
   question: "Which organization was created in 1949 as a collective defense alliance in the North Atlantic region?",
   options: ["ASEAN", "NATO", "Warsaw Pact", "European Union"],
@@ -17693,7 +17371,6 @@ const questions = [
   explanation: "The North Atlantic Treaty Organization (NATO) was established in 1949 to provide collective security against external threats."
 },
 {
-  id: 668,
   category: "International Relations",
   question: "The Non-Aligned Movement (NAM) was formally established at which conference?",
   options: [
@@ -17706,7 +17383,6 @@ const questions = [
   explanation: "The first summit of the Non-Aligned Movement was held in Belgrade, Yugoslavia, in 1961."
 },
 {
-  id: 669,
   category: "International Relations",
   question: "Which of the following leaders is NOT considered a founding figure of the Non-Aligned Movement?",
   options: [
@@ -17719,7 +17395,6 @@ const questions = [
   explanation: "Nehru, Tito, and Nasser were among the key leaders associated with the founding of NAM, while Churchill was not."
 },
 {
-  id: 670,
   category: "International Relations",
   question: "ASEAN stands for:",
   options: [
@@ -17732,7 +17407,6 @@ const questions = [
   explanation: "ASEAN was established in 1967 to promote economic, political, and security cooperation among Southeast Asian countries."
 },
 {
-  id: 671,
   category: "International Relations",
   question: "SAARC was established in which year?",
   options: ["1983", "1985", "1987", "1991"],
@@ -17740,7 +17414,6 @@ const questions = [
   explanation: "The South Asian Association for Regional Cooperation (SAARC) was established in 1985 to promote regional cooperation among South Asian countries."
 },
 {
-  id: 672,
   category: "International Relations",
   question: "Which of the following countries is NOT a member of SAARC?",
   options: ["Afghanistan", "Myanmar", "Bhutan", "Maldives"],
@@ -17748,7 +17421,6 @@ const questions = [
   explanation: "SAARC consists of Afghanistan, Bangladesh, Bhutan, India, Maldives, Nepal, Pakistan, and Sri Lanka. Myanmar is not a member."
 },
 {
-  id: 673,
   category: "International Relations",
   question: "The headquarters of SAARC is located in:",
   options: ["New Delhi", "Dhaka", "Kathmandu", "Colombo"],
@@ -17756,7 +17428,6 @@ const questions = [
   explanation: "The SAARC Secretariat is located in Kathmandu, Nepal."
 },
 {
-  id: 674,
   category: "International Relations",
   question: "BIMSTEC connects South Asia with which other region?",
   options: ["Europe", "Central Asia", "Southeast Asia", "Middle East"],
@@ -17764,7 +17435,6 @@ const questions = [
   explanation: "BIMSTEC (Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation) links South Asia and Southeast Asia through the Bay of Bengal region."
 },
 {
-  id: 675,
   category: "International Relations",
   question: "Which of the following countries is NOT a member of BIMSTEC?",
   options: ["India", "Thailand", "Nepal", "Pakistan"],
@@ -17772,7 +17442,6 @@ const questions = [
   explanation: "BIMSTEC members are Bangladesh, Bhutan, India, Myanmar, Nepal, Sri Lanka, and Thailand. Pakistan is not a member."
 },
 {
-  id: 676,
   category: "International Relations",
   question: "BRICS originally consisted of Brazil, Russia, India, China and which other country?",
   options: ["South Africa", "Saudi Arabia", "Argentina", "Indonesia"],
@@ -17780,7 +17449,6 @@ const questions = [
   explanation: "BRIC became BRICS when South Africa joined the grouping in 2010."
 },
 {
-  id: 677,
   category: "International Relations",
   question: "The G20 is primarily a forum for cooperation on:",
   options: [
@@ -17793,7 +17461,6 @@ const questions = [
   explanation: "The G20 brings together major economies to discuss global economic governance, financial stability, trade, and development."
 },
 {
-  id: 678,
   category: "International Relations",
   question: "The Shanghai Cooperation Organisation (SCO) was originally founded by which two major powers?",
   options: [
@@ -17806,7 +17473,6 @@ const questions = [
   explanation: "The SCO evolved from the Shanghai Five mechanism and was led primarily by China and Russia to promote regional security and cooperation."
 },
 {
-  id: 679,
   category: "International Relations",
   question: "Which of the following countries is NOT a member of the Quadrilateral Security Dialogue (Quad)?",
   options: ["India", "Japan", "Australia", "South Korea"],
@@ -17814,7 +17480,6 @@ const questions = [
   explanation: "The Quad consists of India, Australia, Japan, and the United States and focuses on cooperation in the Indo-Pacific region."
 },
 {
-  id: 680,
   category: "International Relations",
   question: "India's 'Act East Policy' is primarily aimed at strengthening relations with:",
   options: [
@@ -17827,7 +17492,6 @@ const questions = [
   explanation: "The Act East Policy seeks deeper economic, strategic, and cultural engagement with Southeast Asia and East Asia."
 },
 {
-  id: 681,
   category: "International Relations",
   question: "Which is the principal judicial organ of the United Nations?",
   options: [
@@ -17840,7 +17504,6 @@ const questions = [
   explanation: "The International Court of Justice (ICJ), located in The Hague, is the principal judicial organ of the United Nations."
 },
 {
-  id: 682,
   category: "International Relations",
   question: "The headquarters of the International Court of Justice (ICJ) is located in:",
   options: [
@@ -17853,7 +17516,6 @@ const questions = [
   explanation: "The ICJ is headquartered in The Hague, Netherlands, and settles legal disputes between states."
 },
 {
-  id: 683,
   category: "International Relations",
   question: "The International Monetary Fund (IMF) was established in which year?",
   options: [
@@ -17866,7 +17528,6 @@ const questions = [
   explanation: "The IMF was established in 1945 following the Bretton Woods Conference to promote international monetary cooperation."
 },
 {
-  id: 684,
   category: "International Relations",
   question: "Which institution primarily provides loans and assistance for development projects in developing countries?",
   options: [
@@ -17879,7 +17540,6 @@ const questions = [
   explanation: "The World Bank provides financial and technical assistance to developing countries for development and poverty reduction projects."
 },
 {
-  id: 685,
   category: "International Relations",
   question: "The World Trade Organization (WTO) officially came into existence in:",
   options: [
@@ -17892,7 +17552,6 @@ const questions = [
   explanation: "The WTO was established on 1 January 1995, replacing the General Agreement on Tariffs and Trade (GATT)."
 },
 {
-  id: 686,
   category: "International Relations",
   question: "Which organ of the United Nations includes all member states and provides each state with one vote?",
   options: [
@@ -17905,7 +17564,6 @@ const questions = [
   explanation: "The UN General Assembly is the deliberative body of the United Nations where all member states have equal voting rights."
 },
 {
-  id: 687,
   category: "International Relations",
   question: "How many non-permanent members are elected to the UN Security Council?",
   options: [
@@ -17918,7 +17576,6 @@ const questions = [
   explanation: "The Security Council consists of 15 members: 5 permanent members and 10 non-permanent members elected for two-year terms."
 },
 {
-  id: 688,
   category: "International Relations",
   question: "ECOSOC stands for:",
   options: [
@@ -17931,7 +17588,6 @@ const questions = [
   explanation: "ECOSOC is one of the six principal organs of the UN and coordinates economic, social, and related activities."
 },
 {
-  id: 689,
   category: "International Relations",
   question: "Which principal organ of the United Nations is currently inactive after completing its original mission?",
   options: [
@@ -17944,7 +17600,6 @@ const questions = [
   explanation: "The Trusteeship Council suspended operations in 1994 after the last UN Trust Territory, Palau, achieved self-government."
 },
 {
-  id: 690,
   category: "International Relations",
   question: "The head of the United Nations Secretariat is known as the:",
   options: [
