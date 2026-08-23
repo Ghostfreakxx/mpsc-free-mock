@@ -15,740 +15,2529 @@ type Subject = {
 };
 
 const subjects: Subject[] = [
+  // =========================================================
+  // POLITICAL SCIENCE
+  // =========================================================
   {
     name: "Political Science",
+
     shortNotes: [
       {
         title: "Political Science",
-        body: "Political Science is the study of the state, government, power, law, rights, duties, political ideas and political behaviour.",
+        body:
+          "Political Science is the study of the State, government, political institutions, power, authority, rights, duties, political ideas and political behaviour.",
+      },
+      {
+        title: "State",
+        body:
+          "A State is a politically organised community living permanently within a definite territory, having a government and possessing sovereignty.",
       },
       {
         title: "Sovereignty",
-        body: "Sovereignty means the supreme power of the state to make and enforce laws within its territory without external control.",
+        body:
+          "Sovereignty means the supreme power of the State to make and enforce laws within its territory without being subject to another political authority.",
       },
       {
         title: "Democracy",
-        body: "Democracy is a system of government in which people participate directly or indirectly through elected representatives.",
+        body:
+          "Democracy is a system of government in which people participate directly or indirectly through elected representatives.",
       },
       {
         title: "Federalism",
-        body: "Federalism divides power between the Union and State governments while maintaining national unity.",
+        body:
+          "Federalism is a system in which constitutional powers are divided between a central government and regional governments.",
       },
       {
         title: "Political Ideology",
-        body: "Political ideology is a set of ideas about power, society, economy, rights and the role of the state.",
+        body:
+          "Political ideology is a system of ideas and beliefs about society, government, economy, rights, power and political change.",
+      },
+      {
+        title: "Traditional Approach",
+        body:
+          "The Traditional Approach studies formal institutions, constitutions, law, history and political philosophy. It concentrates mainly on what political institutions should be and how they are organised.",
+      },
+      {
+        title: "Behavioural Approach",
+        body:
+          "The Behavioural Approach studies the actual political behaviour of individuals and groups. It uses observation, surveys, statistics and other scientific methods.",
+      },
+      {
+        title: "Marxist Approach",
+        body:
+          "The Marxist Approach explains politics mainly through class relations, economic structure and ownership of the means of production.",
+      },
+      {
+        title: "Pluralist View of the State",
+        body:
+          "Pluralism argues that political power is distributed among many competing groups rather than being completely controlled by one class or organisation.",
+      },
+      {
+        title: "Elite Theory",
+        body:
+          "Elite theory argues that political power is usually concentrated in the hands of a small minority possessing wealth, organisation, knowledge or influence.",
+      },
+      {
+        title: "Power",
+        body:
+          "Power means the ability of a person or group to influence the behaviour or decisions of others.",
+      },
+      {
+        title: "Authority",
+        body:
+          "Authority is legitimate power. People obey authority because they believe that the command or institution has a recognised right to rule.",
+      },
+      {
+        title: "Liberty",
+        body:
+          "Liberty means the freedom of individuals to think, speak and act without unnecessary restrictions, while respecting the rights of others.",
+      },
+      {
+        title: "Equality",
+        body:
+          "Political equality means that citizens should enjoy equal status and equal political rights without discrimination.",
+      },
+      {
+        title: "Justice",
+        body:
+          "Justice means fairness in the distribution of rights, duties, opportunities, rewards and punishments.",
+      },
+      {
+        title: "Rights",
+        body:
+          "Rights are recognised claims and freedoms necessary for the development and dignity of individuals.",
+      },
+      {
+        title: "Fundamental Rights",
+        body:
+          "Fundamental Rights are constitutionally guaranteed rights provided mainly in Part III of the Indian Constitution.",
+      },
+      {
+        title: "Fundamental Duties",
+        body:
+          "Fundamental Duties are moral and civic duties of Indian citizens listed under Article 51A of the Constitution. There are eleven Fundamental Duties.",
+      },
+      {
+        title: "Article 21A",
+        body:
+          "Article 21A provides free and compulsory education for children between six and fourteen years of age.",
+      },
+      {
+        title: "Rights of Children",
+        body:
+          "Child rights include rights to survival, development, education, protection from exploitation and participation in matters affecting children.",
+      },
+      {
+        title: "Political Socialisation",
+        body:
+          "Political socialisation is the process through which individuals learn political values, attitudes, beliefs and patterns of political behaviour.",
+      },
+      {
+        title: "Political Culture",
+        body:
+          "Political culture refers to the attitudes, beliefs, values and expectations that people have regarding politics and government.",
+      },
+      {
+        title: "Political Participation",
+        body:
+          "Political participation includes voting, campaigning, attending meetings, joining organisations, protesting and other activities through which citizens influence politics.",
+      },
+      {
+        title: "Historical Materialism",
+        body:
+          "Historical materialism is the Marxist idea that historical development is strongly shaped by material conditions, economic production and class relations.",
+      },
+      {
+        title: "Dialectical Materialism",
+        body:
+          "Dialectical materialism explains change through contradictions and conflict within material conditions. Marxists used it to analyse social and historical transformation.",
       },
     ],
+
     longNotes: [
       {
+        title: "Traditional Approach to Political Science",
+        body: `The Traditional Approach is one of the oldest approaches to the study of politics. It concentrates on formal political institutions such as the State, government, constitution, legislature, executive and judiciary.
+
+Traditional scholars often use historical, legal, philosophical and institutional methods. Plato and Aristotle examined political life mainly through questions of justice, virtue, good government and the ideal State. Later scholars studied constitutions, laws and political institutions.
+
+The approach is useful because political institutions and constitutional rules remain important parts of political life. It helps students understand how governments are organised and how political ideas developed.
+
+However, the Traditional Approach is criticised for giving insufficient attention to actual political behaviour. It may describe institutions without explaining how citizens, political parties, pressure groups and leaders behave in practice.
+
+Therefore, modern Political Science continues to use traditional methods but combines them with behavioural, sociological, economic and empirical approaches.`,
+      },
+      {
+        title: "Behavioural Approach",
+        body: `The Behavioural Approach became important in Political Science particularly after the Second World War. Behaviouralists argued that Political Science should study actual political behaviour rather than only constitutions and formal institutions.
+
+The approach studies voting behaviour, political attitudes, leadership, political participation, group behaviour and public opinion. It uses surveys, interviews, observation, statistics and other empirical methods.
+
+David Easton identified important characteristics of behaviouralism such as regularities, verification, techniques, quantification, values, systematisation, pure science and integration.
+
+The main contribution of behaviouralism was to make Political Science more empirical and scientific. It encouraged scholars to collect evidence instead of depending only on philosophical arguments.
+
+However, behaviouralism was criticised for becoming too technical and for separating facts from important questions of justice and values. This criticism later contributed to the rise of post-behaviouralism.`,
+      },
+      {
+        title: "Marxist Approach",
+        body: `The Marxist Approach studies politics through economic structure, class relations and ownership of the means of production. Karl Marx believed that political institutions cannot be fully understood without examining the economic organisation of society.
+
+In capitalist society, Marx identified two major classes. The bourgeoisie owns the means of production, while the proletariat survives mainly by selling labour. Marxists argue that political institutions often reflect the interests and power of economically dominant classes.
+
+Marx also developed the idea of historical materialism. According to this view, changes in production and class relations strongly influence historical development.
+
+Class conflict plays a major role in political change. Marx believed that contradictions within capitalism could eventually produce revolutionary transformation.
+
+The Marxist approach is important because it connects politics with economics, inequality and class power. Critics, however, argue that Marxism may give too much importance to economic factors and underestimate religion, nationalism, culture and individual choice.`,
+      },
+      {
+        title: "Pluralist View of the State",
+        body: `The pluralist view argues that political power in society is distributed among many groups. No single group completely controls the State.
+
+Modern society contains business organisations, trade unions, professional associations, religious organisations, civil society groups, student bodies and other interests. These groups compete to influence public policy.
+
+Robert Dahl is strongly associated with modern pluralism. His work examined how different groups exercise influence in democratic systems.
+
+Pluralists usually see the State as an arena where competing interests bargain and negotiate. Government decisions are shaped by pressure from many directions.
+
+Pluralism is important because it explains the role of interest groups in democracy. However, critics argue that not all groups possess equal money, organisation or access to government. Wealthy groups may have greater influence than ordinary citizens.
+
+Therefore, pluralism helps explain democratic competition but must also be studied together with inequality and elite power.`,
+      },
+      {
         title: "Plato's Theory of Justice",
-        body: `Plato's theory of justice is explained in his famous book The Republic. For Plato, justice is not merely a legal idea but a moral and social principle. He believed that justice exists when every individual and every class performs its proper function without interfering in the work of others.
+        body: `Plato explained his theory of justice mainly in The Republic. Justice for Plato means harmony and proper performance of functions.
 
-Plato divided society into three classes: rulers, auxiliaries and producers. The rulers should possess wisdom, the auxiliaries should possess courage, and the producers should practice moderation. Justice appears when these three classes work harmoniously under the guidance of philosopher-kings.
+Plato divided society into three classes: rulers, auxiliaries and producers. Rulers should possess wisdom, auxiliaries should possess courage and producers should practise moderation.
 
-The theory is important because it connects individual morality with political order. A just state, according to Plato, is possible only when reason controls desire and courage supports reason. However, Plato's theory is criticised for being too idealistic, anti-democratic and supportive of strict class division. Still, it remains one of the foundational discussions in Western political thought.`,
+Justice exists when each class performs its proper function without interfering in the functions of others. Plato connected this social arrangement with the individual personality, where reason should control spirit and appetite.
+
+He believed philosopher-kings should rule because genuine political leadership requires knowledge and wisdom.
+
+Plato's theory is important because it connects morality and politics. However, critics consider it highly idealistic and argue that its rigid class structure and distrust of democracy conflict with modern democratic equality.
+
+Even with these criticisms, Plato remains one of the most influential thinkers in the history of political thought.`,
       },
       {
         title: "Aristotle's Classification of Constitutions",
-        body: `Aristotle is known as the Father of Political Science because he studied politics in a systematic and comparative manner. In his work Politics, he classified constitutions based on two criteria: the number of rulers and the purpose of rule.
+        body: `Aristotle classified constitutions according to two major criteria: the number of rulers and the purpose for which they rule.
 
-If one person rules for the common good, it is monarchy. If a few rule for the common good, it is aristocracy. If many rule for the common good, it is polity. These are considered good forms of government. But when these forms become selfish, they degenerate into tyranny, oligarchy and democracy respectively.
+When one person rules for the common good, Aristotle called it monarchy. Rule by a few for the common good is aristocracy, while rule by many for the common good is polity.
 
-Aristotle preferred polity because it combined the strengths of democracy and oligarchy and promoted the rule of the middle class. His classification is important because it shows that the quality of government depends not only on who rules but also on whose interest is served. Even today, his ideas help students understand constitutional forms, public interest and political stability.`,
+The corrupt forms are tyranny, oligarchy and democracy respectively. These forms become corrupt when rulers govern mainly for their own interests.
+
+Aristotle preferred polity because it combined democratic and oligarchic elements and relied strongly on a stable middle class.
+
+His classification was important because it showed that political systems should be judged not only by the number of rulers but also by whose interests the government serves.
+
+Although modern democratic terminology differs from Aristotle's language, his comparative study of constitutions remains foundational to Political Science.`,
       },
       {
         title: "Social Contract Theory",
-        body: `Social contract theory explains the origin of the state through an agreement among individuals. The major thinkers of this theory are Thomas Hobbes, John Locke and Jean-Jacques Rousseau. They all believed that before political society, human beings lived in a state of nature, but they differed in their interpretation of that condition.
+        body: `Social Contract Theory explains political authority as originating in an agreement among individuals. Thomas Hobbes, John Locke and Jean-Jacques Rousseau are the major thinkers associated with this tradition.
 
-Hobbes saw the state of nature as violent and insecure. Therefore, people created an absolute sovereign for protection. Locke believed the state of nature had natural rights, but government was needed to protect life, liberty and property. Rousseau argued that the social contract should express the general will of the people.
+Hobbes described the state of nature as insecure and violent. People therefore surrendered extensive power to an absolute sovereign in exchange for peace and security.
 
-The theory is important because it explains political authority as based on consent rather than divine right. It influenced liberalism, democracy, constitutional government and modern ideas of citizenship. However, critics argue that no actual historical contract ever existed. Still, the theory remains central to political thought because it connects state power with legitimacy and consent.`,
+Locke believed that individuals possessed natural rights to life, liberty and property. Government was created to protect those rights, and people could resist a government that violated them.
+
+Rousseau argued that legitimate authority should express the general will of the citizens.
+
+Social Contract Theory challenged ideas such as divine-right monarchy because it connected political legitimacy with human consent.
+
+Although historians do not consider the social contract an actual historical event, the theory strongly influenced liberalism, democracy, constitutionalism and modern ideas of citizenship.`,
       },
       {
         title: "Federalism in India",
-        body: `Federalism is a system of government in which powers are divided between the central government and regional governments. India follows a federal system with a strong Centre. The Constitution divides subjects into the Union List, State List and Concurrent List.
+        body: `Federalism divides political authority between central and regional governments. India has a federal constitutional structure with a comparatively strong Union government.
 
-Indian federalism is necessary because India is socially, culturally, linguistically and geographically diverse. State governments are closer to local problems and can address issues such as health, agriculture, land, education and local development more effectively. At the same time, the Union government handles defence, foreign affairs, currency and national planning.
+The Constitution distributes legislative subjects through the Union List, State List and Concurrent List. Both the Union and the States possess constitutionally recognised areas of authority.
 
-However, Indian federalism also contains unitary features. During emergencies, the Centre becomes more powerful. The Governor's role, financial dependence of states and centrally sponsored schemes often create tension between Centre and State. For Mizoram, federalism is especially important because it protects regional identity, land rights, culture and local governance. Therefore, Indian federalism is best understood as a balance between national unity and regional autonomy.`,
+Federalism is particularly important in India because of linguistic, cultural, religious and regional diversity. It allows regional governments to deal with local needs while maintaining national unity.
+
+However, Indian federalism also contains strong centralising features. Emergency provisions, financial dependence, the office of Governor and centrally sponsored programmes can increase the influence of the Union.
+
+For Mizoram, federalism is closely connected with regional identity, local government, cultural protection and constitutional safeguards.
+
+Indian federalism therefore operates as a continuing balance between national unity and regional autonomy.`,
+      },
+      {
+        title: "Fundamental Rights and Fundamental Duties",
+        body: `Fundamental Rights protect individual freedom and dignity, while Fundamental Duties emphasise civic responsibility.
+
+Fundamental Rights are mainly contained in Part III of the Constitution. They include the Right to Equality, Right to Freedom, Right against Exploitation, Right to Freedom of Religion, Cultural and Educational Rights and Right to Constitutional Remedies.
+
+Fundamental Duties are listed in Article 51A. They were added through the 42nd Constitutional Amendment Act of 1976. An additional duty concerning education of children was later added by the 86th Amendment.
+
+Rights protect citizens against arbitrary power. Duties remind citizens that democracy also requires responsibility.
+
+A democratic society cannot survive through rights alone. Citizens must respect constitutional values, protect public property, promote harmony and participate responsibly in society.
+
+Rights and duties should therefore be understood as complementary parts of democratic citizenship.`,
+      },
+      {
+        title: "Rights of Children in India",
+        body: `Children require special constitutional and legal protection because they are vulnerable to exploitation, abuse and neglect.
+
+Article 21A provides free and compulsory education for children between six and fourteen years of age. Article 24 prohibits employment of children below fourteen years in factories, mines and other hazardous employment.
+
+Directive Principles also contain provisions relating to protection and development of children. Article 39 directs the State to protect children against abuse and exploitation.
+
+The Right of Children to Free and Compulsory Education Act, 2009 provides a legal framework for elementary education.
+
+Child rights are commonly grouped into rights to survival, development, protection and participation.
+
+Protecting children requires cooperation among family, schools, government institutions, law enforcement agencies and communities. Child rights should therefore be understood not only as legal rules but as a responsibility of society.`,
       },
       {
         title: "Political Parties in Democracy",
-        body: `Political parties are organised groups that seek political power through elections. They are essential to representative democracy because citizens cannot directly govern large modern states. Parties present policies, select candidates, contest elections, form governments and organise opposition.
+        body: `Political parties are organised groups that seek political power mainly through elections.
 
-Political parties also perform the function of political education. They simplify public issues, mobilise voters and connect the government with society. In parliamentary democracy, the ruling party forms the government, while the opposition monitors, criticises and provides alternatives.
+They nominate candidates, present policies, organise voters and form governments. Parties also recruit political leaders and connect citizens with government.
 
-However, parties can also weaken democracy when they become corrupt, family-controlled, money-driven or based on narrow identity politics. Defection, criminalisation of politics and weak internal democracy reduce public trust. In Mizoram, parties play a major role in welfare schemes, development promises, church influence, youth politics and state-centre relations.
+In parliamentary democracy, the ruling party or coalition forms the government, while opposition parties examine government decisions and provide alternatives.
 
-A healthy democracy needs strong but accountable political parties. Without parties, elections may exist, but organised democratic choice becomes difficult.`,
+Political parties also contribute to political socialisation and political participation.
+
+However, parties may weaken democracy when they become excessively dependent on money, personality, family leadership or narrow identity politics.
+
+Internal democracy, transparency and accountability are therefore important for healthy party systems.
+
+Modern representative democracy would be extremely difficult to operate without political parties because they organise political choice on a large scale.`,
+      },
+      {
+        title: "Political Socialisation and Political Culture",
+        body: `Political socialisation is the process through which people learn political values, attitudes and behaviour. Family, schools, friends, religious institutions, media and political organisations can influence political learning.
+
+Political culture refers to the general pattern of attitudes and beliefs that citizens have regarding politics and government.
+
+Political socialisation helps transmit political culture from one generation to another. It can strengthen support for democracy, citizenship and constitutional values.
+
+Political culture differs between societies. Some societies encourage active participation, while others may emphasise obedience or traditional authority.
+
+In modern society, social media has become an important agency of political socialisation. Young citizens receive political information rapidly through digital platforms.
+
+Understanding political socialisation and political culture helps explain why people respond differently to elections, governments and political institutions.`,
       },
     ],
   },
 
+  // =========================================================
+  // HISTORY
+  // =========================================================
   {
     name: "History",
+
     shortNotes: [
       {
         title: "History",
-        body: "History is the study of human society in the past through evidence, sources and interpretation.",
+        body:
+          "History is the systematic study of human society in the past through evidence, sources and interpretation.",
       },
       {
         title: "Historical Sources",
-        body: "Sources of history include written records, oral traditions, monuments, coins, inscriptions and archaeological remains.",
+        body:
+          "Historical sources include written records, oral traditions, inscriptions, coins, monuments, archaeological remains, photographs and official documents.",
       },
       {
         title: "Colonialism",
-        body: "Colonialism is the political and economic domination of one country by another.",
+        body:
+          "Colonialism is political, economic and cultural domination of one territory or people by another power.",
       },
       {
         title: "Nationalism",
-        body: "Nationalism is a sense of common identity and political unity among people.",
+        body:
+          "Nationalism is a feeling of common identity and political belonging among a group of people.",
       },
       {
-        title: "Mizoram Peace Accord",
-        body: "The Mizoram Peace Accord of 1986 ended insurgency and created the foundation for statehood in 1987.",
-      },
-    ],
-    longNotes: [
-      {
-        title: "Importance of History",
-        body: `History is important because it gives society memory, identity and direction. It studies the political, social, cultural and economic experiences of human beings. History is not only about kings, wars and dates; it is about how societies change over time.
-
-A serious study of history teaches students to examine evidence and avoid blind belief. Historians use sources such as official records, oral traditions, inscriptions, monuments, newspapers and archaeological findings. By comparing sources, they reconstruct the past and interpret events.
-
-For Mizoram students, history is especially important because it explains migration, chieftainship, British contact, missionary influence, education, insurgency, Peace Accord and statehood. These events shaped modern Mizo society.
-
-History also helps people understand present problems. Issues such as identity, land, autonomy, religion, governance and development cannot be understood without historical background. Therefore, history is both an academic discipline and a tool for social self-understanding.`,
-      },
-      {
-        title: "British Colonial Rule in India",
-        body: `British colonial rule in India began through trade but gradually became political domination. The East India Company first entered India for commerce, but after the Battle of Plassey in 1757, British power expanded rapidly.
-
-Colonialism changed India's economy, administration and society. The British introduced railways, modern education, courts and bureaucracy, but these were mainly designed to serve colonial interests. Indian industries declined, agriculture was exploited through revenue systems, and wealth was drained from India.
-
-At the same time, colonial rule unintentionally created modern political consciousness. English education, newspapers, legal reforms and new associations helped Indians learn about rights, liberty and nationalism. Educated Indians began to question foreign rule and demand self-government.
-
-Thus, colonialism had a dual character. It modernised certain institutions but exploited India's resources and people. The contradiction between British claims of civilisation and the reality of exploitation gave rise to the Indian national movement.`,
+        title: "Battle of Plassey",
+        body:
+          "The Battle of Plassey was fought in 1757 and greatly strengthened the political influence of the English East India Company in Bengal.",
       },
       {
         title: "Revolt of 1857",
-        body: `The Revolt of 1857 was one of the earliest major challenges to British rule in India. It began among sepoys at Meerut and spread to Delhi, Kanpur, Lucknow, Jhansi and other areas. The immediate cause was the issue of greased cartridges, but the deeper causes were political, economic, military and social.
-
-Indian rulers were angered by British annexation policies, especially the Doctrine of Lapse. Peasants suffered from heavy revenue demands. Soldiers faced discrimination in pay, promotion and service conditions. Many Indians also feared interference with religion and tradition.
-
-The revolt failed because it lacked central leadership, modern weapons and a common national programme. Some regions and communities did not participate. Still, it was historically significant because it shook British confidence and ended Company rule. After 1858, India came directly under the British Crown.
-
-The Revolt of 1857 is interpreted differently. Some call it a sepoy mutiny, while others see it as the First War of Independence.`,
+        body:
+          "The Revolt of 1857 was a major armed uprising against East India Company rule involving soldiers, rulers and sections of the population.",
       },
       {
-        title: "Gandhi and the Indian National Movement",
-        body: `Mahatma Gandhi transformed the Indian national movement from an elite political movement into a mass movement. His methods included satyagraha, non-violence, non-cooperation, civil disobedience and constructive work.
-
-Gandhi believed that political struggle should have moral force. He led major movements such as the Non-Cooperation Movement, Civil Disobedience Movement and Quit India Movement. These movements brought peasants, workers, women, students and ordinary citizens into national politics.
-
-Gandhi also promoted swadeshi, khadi, village industries, Hindu-Muslim unity and the removal of untouchability. His politics was not limited to freedom from British rule; it also aimed at moral and social reform.
-
-However, Gandhi was criticised by revolutionaries, socialists and Ambedkarite thinkers for different reasons. Some felt his methods were slow, while others disagreed with his views on caste and economy. Yet his contribution remains central because he gave the freedom movement mass participation, moral legitimacy and international recognition.`,
+        title: "Indian National Congress",
+        body:
+          "The Indian National Congress was founded in 1885 and became the most important organisation of the Indian nationalist movement.",
+      },
+      {
+        title: "Swadeshi Movement",
+        body:
+          "The Swadeshi Movement encouraged the boycott of foreign goods and promotion of Indian products, particularly after the Partition of Bengal in 1905.",
+      },
+      {
+        title: "Non-Cooperation Movement",
+        body:
+          "The Non-Cooperation Movement was launched by Gandhi in 1920 to oppose British rule through peaceful non-cooperation.",
+      },
+      {
+        title: "Civil Disobedience Movement",
+        body:
+          "The Civil Disobedience Movement began in 1930 and included deliberate peaceful violation of unjust colonial laws.",
+      },
+      {
+        title: "Quit India Movement",
+        body:
+          "The Quit India Movement was launched in August 1942 demanding the end of British rule in India.",
+      },
+      {
+        title: "Indian Independence",
+        body:
+          "India became independent from British colonial rule on 15 August 1947.",
+      },
+      {
+        title: "Mizo Chieftainship",
+        body:
+          "Traditional Mizo society was organised around villages led by hereditary chiefs before major administrative reforms.",
+      },
+      {
+        title: "Missionary Influence in Mizoram",
+        body:
+          "Christian missionaries played an important role in literacy, education, religious conversion and social transformation in Mizoram.",
       },
       {
         title: "Mizoram Peace Accord",
-        body: `The Mizoram Peace Accord was signed on 30 June 1986 between the Government of India and the Mizo National Front. It ended nearly two decades of insurgency and is considered one of the most successful peace agreements in India.
+        body:
+          "The Mizoram Peace Accord was signed on 30 June 1986 and ended a long period of insurgency.",
+      },
+      {
+        title: "Mizoram Statehood",
+        body:
+          "Mizoram became a full state of the Indian Union on 20 February 1987.",
+      },
+    ],
 
-The Accord was significant because it transformed armed conflict into democratic politics. Former underground leaders entered constitutional politics, and peace returned to society. It also paved the way for Mizoram to become a full-fledged state in 1987.
+    longNotes: [
+      {
+        title: "Importance of History",
+        body: `History gives society memory, identity and understanding. It examines political, social, cultural and economic developments over time.
 
-The Accord shows the importance of negotiation, compromise and political trust. Instead of continuing military confrontation, both sides accepted a constitutional solution. For Mizoram, it created stability, allowed development and strengthened democratic institutions.
+Historians reconstruct the past through evidence. Sources include official records, oral traditions, inscriptions, monuments, newspapers, letters, coins and archaeological remains.
 
-However, peace did not automatically solve every problem. Mizoram still faces issues of unemployment, fiscal dependence, infrastructure weakness and border concerns. Still, the Peace Accord remains a turning point because it moved Mizoram from conflict to constitutional governance and peaceful political competition.`,
+Historical knowledge helps people understand how modern institutions and conflicts developed. Many present political issues cannot be properly understood without studying their historical background.
+
+History also teaches critical thinking because historians must compare evidence and examine competing interpretations.
+
+For Mizoram students, history helps explain chieftainship, colonial contact, missionary influence, education, insurgency, the Peace Accord and statehood.
+
+Therefore, history is not simply memorisation of dates. It is an organised attempt to understand change, continuity and human experience.`,
+      },
+      {
+        title: "British Colonial Rule in India",
+        body: `British political control in India developed gradually from commercial activity. The East India Company entered India for trade but later acquired political and territorial power.
+
+The Battle of Plassey in 1757 and the Battle of Buxar in 1764 strengthened Company authority in eastern India.
+
+Colonial rule transformed administration, taxation, law, transport and education. Railways, modern bureaucracy and English education expanded, but these changes were largely organised around colonial interests.
+
+Indian agriculture and industries were affected by revenue demands, commercialisation and competition with British manufactured goods.
+
+At the same time, modern education, newspapers and political associations contributed to the development of Indian nationalism.
+
+Colonial rule therefore produced major institutional changes while also creating economic exploitation and political subordination.`,
+      },
+      {
+        title: "Revolt of 1857",
+        body: `The Revolt of 1857 was a major challenge to East India Company rule. It began among sepoys at Meerut and quickly spread to Delhi, Kanpur, Lucknow, Jhansi and other regions.
+
+The immediate trigger was controversy over rifle cartridges believed to contain cow and pig fat. However, deeper political, economic, military and social causes already existed.
+
+Indian rulers were angered by annexation policies. Soldiers faced discrimination, while peasants and traditional elites experienced economic pressure.
+
+The revolt failed because it lacked unified leadership, common planning and support across the whole subcontinent.
+
+Nevertheless, it had major consequences. Company rule ended and India came under direct British Crown administration in 1858.
+
+Historians disagree over its nature. Some describe it mainly as a military mutiny, while others consider it an important early struggle against colonial rule.`,
+      },
+      {
+        title: "Rise of Indian Nationalism",
+        body: `Indian nationalism developed gradually during the nineteenth century.
+
+Modern education introduced ideas of liberty, equality and nationalism. Newspapers spread information and political criticism. Improved transport and communication also connected people from different regions.
+
+Economic exploitation under colonial rule created dissatisfaction. Indian thinkers criticised the drain of wealth and discriminatory policies.
+
+The Indian National Congress was founded in 1885 and became an important platform for political demands.
+
+Early nationalist leaders initially used petitions and constitutional methods. Later movements became more assertive and eventually developed into mass struggles.
+
+Nationalism united people around the idea that Indians should govern themselves. However, nationalist politics also contained regional, religious, ideological and social differences.
+
+The Indian freedom struggle therefore developed through many organisations, leaders and political strategies.`,
+      },
+      {
+        title: "Gandhi and the Indian National Movement",
+        body: `Mahatma Gandhi transformed Indian nationalism into a mass political movement.
+
+His political methods included satyagraha, non-violence, non-cooperation and civil disobedience. Gandhi believed political struggle should be connected with moral discipline.
+
+He led major national movements including the Non-Cooperation Movement, Civil Disobedience Movement and Quit India Movement.
+
+Gandhi brought peasants, workers, women, students and ordinary citizens more directly into nationalist politics.
+
+He also promoted swadeshi, khadi, village industries and campaigns against untouchability.
+
+Gandhi faced criticism from revolutionaries, socialists, Ambedkarite thinkers and others who disagreed with various aspects of his politics.
+
+Despite disagreements, Gandhi remains central to the history of India's freedom movement because of his ability to transform nationalism into mass participation.`,
+      },
+      {
+        title: "Non-Cooperation Movement",
+        body: `The Non-Cooperation Movement began in 1920 under Mahatma Gandhi.
+
+Its background included dissatisfaction with British policies, the Rowlatt Act, the Jallianwala Bagh massacre and the Khilafat issue.
+
+The movement encouraged Indians to withdraw cooperation from colonial institutions. People were asked to boycott certain schools, courts, titles, elections and foreign goods.
+
+The movement expanded nationalist participation across many sections of society.
+
+However, Gandhi suspended the movement in 1922 following the violent incident at Chauri Chaura.
+
+Although it did not achieve immediate independence, the movement changed Indian politics by bringing large numbers of ordinary people into the nationalist struggle.
+
+It also established Gandhi as the most important mass leader of the Indian National Congress.`,
+      },
+      {
+        title: "Civil Disobedience Movement",
+        body: `The Civil Disobedience Movement began in 1930.
+
+Gandhi launched the Salt March from Sabarmati to Dandi to protest the British monopoly and taxation on salt.
+
+Civil disobedience involved deliberate peaceful violation of colonial laws. Participants broke salt laws, boycotted foreign goods and joined demonstrations.
+
+The movement spread to different parts of India and involved women, students, peasants and political activists.
+
+Negotiations temporarily interrupted the movement through the Gandhi-Irwin Pact, but political conflict continued.
+
+The movement showed that British authority could be challenged through large-scale non-violent resistance.
+
+It also attracted international attention to India's demand for self-government.`,
+      },
+      {
+        title: "Quit India Movement",
+        body: `The Quit India Movement was launched by the Indian National Congress in August 1942 during the Second World War.
+
+The movement demanded the immediate end of British rule. Gandhi gave the famous call of "Do or Die."
+
+British authorities quickly arrested major Congress leaders. Despite this, protests spread in many parts of India.
+
+Some demonstrations became violent and communication systems and government institutions were attacked.
+
+The movement was suppressed, but it demonstrated that British rule faced deep political opposition.
+
+After the Second World War, changing international conditions, economic pressures and continued Indian nationalist demands made continuation of colonial rule increasingly difficult.
+
+Quit India therefore became one of the final major mass movements before independence.`,
+      },
+      {
+        title: "Mizo Traditional Society and Chieftainship",
+        body: `Traditional Mizo society was organised primarily around villages.
+
+Each village was commonly governed by a hereditary chief who possessed important political, administrative and customary authority.
+
+The chief was supported by advisers and traditional institutions. Village society was also shaped by kinship, clan relationships, customary law and community cooperation.
+
+Traditional institutions regulated land use, disputes, social obligations and village security.
+
+Colonial administration and later democratic reforms gradually transformed the political structure.
+
+The abolition of chieftainship marked a major transition from hereditary village authority to modern representative institutions.
+
+Understanding chieftainship is important because it explains many features of pre-modern Mizo political and social organisation.`,
+      },
+      {
+        title: "Missionary Influence in Mizoram",
+        body: `Christian missionaries had a major impact on modern Mizo history.
+
+Missionaries introduced a written form of the Mizo language and developed educational institutions.
+
+Literacy expanded rapidly and schools became important centres of social change.
+
+Christianity transformed religious life and also influenced social values, family practices, community institutions and attitudes toward older customs.
+
+Missionary activity contributed to the rise of a highly literate society.
+
+The church eventually became one of the most influential social institutions in Mizoram.
+
+Missionary influence should therefore be understood as both religious and social transformation. It affected language, education, identity, culture and public life.`,
+      },
+      {
+        title: "Mizoram Peace Accord",
+        body: `The Mizoram Peace Accord was signed on 30 June 1986 between the Government of India and the Mizo National Front.
+
+The agreement ended nearly two decades of insurgency and political conflict.
+
+The Accord enabled former underground leaders to enter constitutional democratic politics.
+
+It also created the political conditions for Mizoram to become a full state in 1987.
+
+The settlement is widely regarded as one of India's successful peace agreements because armed conflict was transformed into peaceful electoral competition.
+
+The Accord demonstrates the importance of negotiation, compromise and political trust.
+
+Peace did not remove every development problem, but it provided long-term political stability.
+
+For Mizoram, the Peace Accord remains one of the most important turning points in modern history.`,
+      },
+      {
+        title: "Mizoram Statehood",
+        body: `Mizoram became a full-fledged state of India on 20 February 1987.
+
+Statehood followed the political settlement created by the Mizoram Peace Accord of 1986.
+
+Before becoming a state, Mizoram had undergone several administrative changes under colonial and post-independence governments.
+
+Statehood gave Mizoram its own elected State Government within India's federal system.
+
+It strengthened constitutional representation and provided greater political recognition for regional identity and administration.
+
+Statehood also created new responsibilities in development, governance, education, infrastructure and public administration.
+
+The event therefore marked both political recognition and the beginning of a new phase of democratic government in Mizoram.`,
       },
     ],
   },
 
+  // =========================================================
+  // ECONOMICS
+  // =========================================================
   {
     name: "Economics",
+
     shortNotes: [
       {
         title: "Economics",
-        body: "Economics studies how people use scarce resources to satisfy unlimited wants.",
+        body:
+          "Economics studies how individuals and societies use scarce resources to satisfy human wants.",
+      },
+      {
+        title: "Scarcity",
+        body:
+          "Scarcity means resources are limited while human wants are comparatively unlimited.",
+      },
+      {
+        title: "Opportunity Cost",
+        body:
+          "Opportunity cost is the value of the next best alternative sacrificed when a choice is made.",
       },
       {
         title: "Demand",
-        body: "Demand is the quantity of a commodity that consumers are willing and able to buy at a given price.",
+        body:
+          "Demand is the quantity of a commodity that consumers are willing and able to purchase at a particular price.",
+      },
+      {
+        title: "Supply",
+        body:
+          "Supply is the quantity of a commodity that producers are willing and able to offer for sale at a given price.",
+      },
+      {
+        title: "Market",
+        body:
+          "A market is any arrangement through which buyers and sellers interact to exchange goods or services.",
       },
       {
         title: "Inflation",
-        body: "Inflation means a sustained rise in the general price level of goods and services.",
+        body:
+          "Inflation is a sustained rise in the general price level, reducing the purchasing power of money.",
+      },
+      {
+        title: "Deflation",
+        body:
+          "Deflation is a sustained decline in the general price level of goods and services.",
       },
       {
         title: "GDP",
-        body: "GDP measures the total value of final goods and services produced within a country in a year.",
+        body:
+          "Gross Domestic Product measures the value of final goods and services produced within a country during a given period.",
+      },
+      {
+        title: "Per Capita Income",
+        body:
+          "Per capita income is calculated by dividing total national income by population.",
+      },
+      {
+        title: "Unemployment",
+        body:
+          "Unemployment exists when people who are willing and able to work cannot obtain suitable employment.",
+      },
+      {
+        title: "Disguised Unemployment",
+        body:
+          "Disguised unemployment occurs when more workers are employed than are actually required for production.",
+      },
+      {
+        title: "Fiscal Policy",
+        body:
+          "Fiscal policy refers to government decisions regarding taxation, public spending and borrowing.",
+      },
+      {
+        title: "Monetary Policy",
+        body:
+          "Monetary policy refers to central-bank measures concerning money supply, interest rates and credit conditions.",
+      },
+      {
+        title: "Poverty",
+        body:
+          "Poverty refers to a condition in which people lack sufficient income or resources to maintain an acceptable standard of living.",
       },
       {
         title: "Development",
-        body: "Development means improvement in income, education, health, employment and quality of life.",
+        body:
+          "Economic development includes improvements in income, employment, health, education, infrastructure and quality of life.",
+      },
+      {
+        title: "Human Development",
+        body:
+          "Human development focuses on improving people's capabilities, education, health and opportunities rather than income alone.",
+      },
+      {
+        title: "Public Finance",
+        body:
+          "Public finance studies government revenue, expenditure, taxation, borrowing and financial administration.",
+      },
+      {
+        title: "Tax",
+        body:
+          "A tax is a compulsory payment imposed by government to finance public expenditure.",
+      },
+      {
+        title: "Budget",
+        body:
+          "A government budget is an annual statement of estimated public revenue and expenditure.",
       },
     ],
+
     longNotes: [
       {
         title: "Nature and Scope of Economics",
-        body: `Economics is the study of how individuals, firms and governments make choices under conditions of scarcity. Human wants are unlimited, but resources such as land, labour, capital and time are limited. Therefore, every society must decide what to produce, how to produce and for whom to produce.
+        body: `Economics studies human choices under conditions of scarcity.
 
-The scope of economics includes production, consumption, distribution, exchange, money, banking, public finance, trade, inflation, unemployment and development. Microeconomics studies individual consumers, firms and markets. Macroeconomics studies the economy as a whole, including national income, inflation, employment and growth.
+Resources such as land, labour, capital and time are limited, while human wants are numerous. Societies must therefore decide what to produce, how to produce and for whom to produce.
 
-Economics is not only about money. It is also about choice, welfare and resource allocation. For Mizoram, economics helps explain unemployment, market prices, state finances, agriculture, tourism, infrastructure, entrepreneurship and dependence on central grants.
+Economics is commonly divided into microeconomics and macroeconomics. Microeconomics studies consumers, firms, prices and individual markets. Macroeconomics examines national income, inflation, unemployment, growth and the economy as a whole.
 
-A proper understanding of economics helps students analyse public policy and development problems instead of simply memorising definitions.`,
+The subject also includes public finance, international trade, money, banking and development economics.
+
+Economics is not simply the study of money. It examines choices, incentives and allocation of resources.
+
+For Mizoram, economics helps explain government finances, unemployment, transport costs, agriculture, markets, entrepreneurship and economic dependence.`,
       },
       {
         title: "Law of Demand",
-        body: `The law of demand states that, other things remaining constant, when the price of a commodity rises, demand falls, and when price falls, demand rises. This shows an inverse relationship between price and quantity demanded.
+        body: `The Law of Demand states that, other things remaining unchanged, quantity demanded generally falls when price rises and increases when price falls.
 
-The law is based on normal consumer behaviour. When goods become expensive, consumers may reduce consumption, postpone purchase or shift to substitutes. When price falls, more consumers are willing to buy.
+This creates an inverse relationship between price and quantity demanded.
 
-The law of demand is useful for understanding market behaviour, pricing and consumer choice. It also helps governments and businesses predict how people may respond to price changes.
+One reason is the substitution effect. When one product becomes expensive, consumers may shift toward alternatives.
 
-However, the law has exceptions. Prestige goods, essential goods, addictive goods and goods affected by expectations may not always follow the normal pattern. For example, people may still buy medicines even if prices rise. Despite exceptions, the law of demand remains one of the most basic principles of economics because it explains how price influences human choice.`,
+Another reason is the income effect. A lower price increases the purchasing power of consumers.
+
+Demand is also affected by income, preferences, expectations, population and prices of related goods.
+
+There are exceptions to the ordinary law, but it remains a basic principle for understanding markets.
+
+The Law of Demand is important for businesses, governments and consumers because price changes influence purchasing behaviour.`,
+      },
+      {
+        title: "Law of Supply",
+        body: `The Law of Supply states that producers generally offer more of a commodity when its price rises, other things remaining constant.
+
+Higher prices can make production more profitable, encouraging firms to increase output.
+
+When prices fall, producers may reduce the quantity supplied.
+
+Supply is also influenced by production costs, technology, taxation, subsidies, expectations and the number of producers.
+
+The interaction between demand and supply helps determine market price.
+
+Understanding supply is important because shortages or increases in production can strongly influence prices.
+
+In Mizoram, supply conditions are particularly important because transport and connectivity affect the availability and price of many goods.`,
       },
       {
         title: "Inflation and its Effects",
-        body: `Inflation means a sustained increase in the general price level. When inflation rises, the purchasing power of money falls. People need more money to buy the same goods and services.
+        body: `Inflation is a sustained increase in the general price level.
 
-Inflation affects different sections of society differently. Poor people and fixed-income groups suffer more because they spend a large part of their income on essentials. Workers demand higher wages, businesses face higher production costs and savings may lose value.
+When prices rise continuously, the purchasing power of money falls. People require more money to purchase the same quantity of goods.
 
-The causes of inflation include excess demand, shortage of supply, increase in production cost, rise in fuel prices, government borrowing and expansion of money supply. Inflation can be controlled through monetary policy, fiscal policy, supply management and price stabilisation.
+Inflation can be caused by excessive demand, shortages, rising production costs, fuel prices, supply disruptions or expansion of money and credit.
 
-Mild inflation may encourage production, but high inflation creates uncertainty and social pressure. In states like Mizoram, inflation is strongly felt because many goods are imported from outside the state and transport costs are high.`,
+Fixed-income groups often suffer because income may not rise as quickly as prices.
+
+Inflation also creates uncertainty for savings and investment.
+
+Governments can respond through fiscal policy, while central banks use monetary measures.
+
+In Mizoram, inflation is often strongly felt because many goods are transported from outside the state. Higher fuel and transport costs can quickly raise retail prices.`,
       },
       {
         title: "Unemployment in India",
-        body: `Unemployment exists when people who are willing and able to work cannot find suitable jobs. In India, unemployment appears in different forms such as educated unemployment, seasonal unemployment, disguised unemployment and structural unemployment.
+        body: `Unemployment exists when people willing and able to work cannot obtain suitable employment.
 
-Educated unemployment is serious because many young people complete degrees but lack suitable jobs or practical skills. In Mizoram, this problem is visible in the strong dependence on government employment. When government vacancies are limited, educated youths face frustration and insecurity.
+India experiences educated unemployment, seasonal unemployment, disguised unemployment and structural unemployment.
 
-The causes of unemployment include population growth, slow industrialisation, lack of skills, weak private sector, poor infrastructure and mismatch between education and labour market needs.
+Educated unemployment is particularly important because large numbers of graduates seek limited formal-sector employment.
 
-Solutions require skill development, entrepreneurship, small industries, tourism, agriculture-based processing, digital work and better connectivity. Employment is not only an economic issue; it also affects dignity, family life, social stability and political confidence. Therefore, employment generation must be central to development policy.`,
+In Mizoram, dependence on government jobs can make this problem more visible.
+
+Causes include limited industrial development, mismatch between education and labour-market needs, weak private investment and insufficient skill development.
+
+Solutions include entrepreneurship, vocational training, infrastructure development, tourism, agriculture-based industries and digital employment opportunities.
+
+Employment is important not only for income but also dignity, social stability and personal development.`,
+      },
+      {
+        title: "Poverty and Development",
+        body: `Poverty involves deprivation of income, basic needs and opportunities.
+
+It may include inadequate food, housing, education, healthcare and employment.
+
+Economic growth can help reduce poverty, but growth alone does not guarantee equal benefits.
+
+Development policies must therefore consider distribution, education, health and social protection.
+
+Government programmes can support vulnerable groups through employment, food security and welfare measures.
+
+Long-term poverty reduction requires productive employment and human-capital development.
+
+Poverty should therefore be understood as a multidimensional problem rather than only low income.`,
       },
       {
         title: "Economic Development in Mizoram",
-        body: `Economic development in Mizoram means improvement in income, employment, infrastructure, education, health and quality of life. Mizoram has high literacy and social peace, but it faces structural economic challenges.
+        body: `Economic development in Mizoram requires improvements in employment, income, infrastructure, health, education and productive capacity.
 
-The state's hilly terrain, weak connectivity, small market size, limited industrial base and dependence on central funds restrict rapid growth. Many essential goods come from outside, increasing transport cost and market prices. Educated unemployment is also a major challenge.
+Mizoram has strengths such as high literacy, social stability, natural resources and potential in horticulture, tourism and digital services.
 
-However, Mizoram has strong potential in tourism, bamboo, horticulture, handloom, organic farming, local food processing, border trade and digital services. Youth entrepreneurship can become an important driver if supported by credit, training and market access.
+However, difficult terrain, limited industrialisation, high transport costs and a small domestic market create challenges.
 
-Development in Mizoram must be sustainable and culturally sensitive. It should not destroy land, community values or the environment. A good development model must combine infrastructure, local production, transparent governance, skill training and protection of Mizo identity.`,
+The economy also depends heavily on government spending and transfers.
+
+Greater emphasis can be placed on local production, food processing, bamboo industries, horticulture, tourism and entrepreneurship.
+
+Connectivity and market access are essential because producers need reliable links with consumers.
+
+Development should remain environmentally sustainable because Mizoram's hill ecology is fragile.`,
+      },
+      {
+        title: "Fiscal Policy",
+        body: `Fiscal policy refers to the government's use of taxation and expenditure to influence the economy.
+
+Government expenditure can support infrastructure, education, healthcare, employment and welfare.
+
+Taxes provide revenue and can also influence consumption and investment.
+
+During economic slowdown, governments may increase expenditure to stimulate demand.
+
+During excessive inflation, governments may reduce expenditure or increase certain taxes.
+
+Fiscal policy also affects public debt and budget deficits.
+
+In developing regions, public spending has a particularly important role because private investment may be limited.
+
+Effective fiscal policy requires both sufficient resources and responsible financial management.`,
+      },
+      {
+        title: "Monetary Policy",
+        body: `Monetary policy is mainly conducted by a central bank.
+
+Its objectives include price stability, financial stability and appropriate credit conditions.
+
+The central bank can influence interest rates, bank reserves and money supply.
+
+When inflation is high, monetary policy may become tighter to reduce excessive demand.
+
+During weak economic activity, easier monetary conditions may encourage borrowing and investment.
+
+Monetary policy affects households through loan rates, savings returns and credit availability.
+
+In India, the Reserve Bank of India plays the central role in monetary policy.`,
+      },
+      {
+        title: "Human Development",
+        body: `Human development focuses on expanding people's capabilities and opportunities.
+
+Income is important, but development also requires education, health, security and participation.
+
+The Human Development approach therefore goes beyond national income alone.
+
+A region may have economic growth without equal improvements in education or healthcare.
+
+Investments in schools, hospitals, nutrition and skills strengthen human capabilities.
+
+Mizoram's high literacy provides an important foundation, but employment and skill opportunities are also necessary.
+
+Human development ultimately asks whether people are able to live healthy, educated and meaningful lives.`,
       },
     ],
   },
 
+  // =========================================================
+  // SOCIOLOGY
+  // =========================================================
   {
     name: "Sociology",
+
     shortNotes: [
       {
         title: "Sociology",
-        body: "Sociology is the scientific study of society, social relationships, institutions and social change.",
+        body:
+          "Sociology is the systematic study of society, social relationships, institutions and social behaviour.",
       },
       {
         title: "Society",
-        body: "Society is a network of social relationships among individuals and groups.",
+        body:
+          "Society is a network of social relationships connecting individuals, groups and institutions.",
+      },
+      {
+        title: "Community",
+        body:
+          "A community is a group of people connected by common locality, identity or social relationships.",
       },
       {
         title: "Culture",
-        body: "Culture includes beliefs, customs, values, language, symbols and ways of life.",
+        body:
+          "Culture includes values, customs, beliefs, language, symbols, knowledge and shared ways of life.",
+      },
+      {
+        title: "Norms",
+        body:
+          "Social norms are expected rules or standards of behaviour within a society.",
+      },
+      {
+        title: "Values",
+        body:
+          "Values are shared ideas about what society considers important, desirable or morally acceptable.",
       },
       {
         title: "Socialisation",
-        body: "Socialisation is the process through which individuals learn social norms, values and behaviour.",
+        body:
+          "Socialisation is the process through which people learn social norms, roles, values and behaviour.",
+      },
+      {
+        title: "Family",
+        body:
+          "The family is a basic social institution connected with reproduction, care, socialisation and emotional support.",
+      },
+      {
+        title: "Social Institution",
+        body:
+          "A social institution is an organised pattern of social relationships created to meet important social needs.",
+      },
+      {
+        title: "Social Group",
+        body:
+          "A social group consists of people who interact and share some common identity, interest or relationship.",
+      },
+      {
+        title: "Primary Group",
+        body:
+          "A primary group is characterised by close, personal and relatively long-term relationships, such as family or close friends.",
+      },
+      {
+        title: "Secondary Group",
+        body:
+          "A secondary group is usually larger, more formal and organised around specific objectives.",
       },
       {
         title: "Social Stratification",
-        body: "Social stratification means the division of society into unequal layers based on class, caste, status or power.",
-      },
-    ],
-    longNotes: [
-      {
-        title: "Nature and Scope of Sociology",
-        body: `Sociology is the scientific study of society, social relationships, institutions and patterns of human behaviour. It studies how people live together, how groups are formed and how social order and change take place.
-
-The scope of sociology includes family, religion, education, economy, politics, culture, social stratification, gender, tribe, urbanisation, modernisation and social change. It does not study individuals in isolation but examines them as members of society.
-
-Sociology is useful because many problems are social in nature. Poverty, unemployment, crime, inequality, migration, addiction and conflict cannot be understood only at the individual level. They must be analysed in relation to social structure and institutions.
-
-For Mizoram, sociology helps explain tribal society, church influence, family change, youth culture, migration, education, identity and modernisation. It allows students to understand society critically instead of accepting every custom or problem as natural.`,
+        body:
+          "Social stratification refers to the unequal ranking of individuals and groups according to class, caste, status or power.",
       },
       {
-        title: "Culture and Society",
-        body: `Culture is the total way of life of a society. It includes language, beliefs, customs, values, dress, food habits, religion, art and moral codes. Society is the network of relationships among people, while culture provides meaning to those relationships.
-
-Culture is learned, shared and transmitted from one generation to another. It shapes how people think, behave and judge right and wrong. Without culture, social life would lack order and continuity.
-
-In Mizoram, culture is visible in language, community life, church participation, festivals, music, respect for elders and traditional values such as tlawmngaihna. However, culture is not static. Education, social media, migration, markets and global culture are changing Mizo society.
-
-Sociologically, culture must be studied critically. Some cultural practices strengthen solidarity, while others may limit individual freedom or development. Therefore, culture should be respected but also examined in relation to equality, progress and human dignity.`,
+        title: "Social Mobility",
+        body:
+          "Social mobility means movement of individuals or groups from one social position to another.",
       },
       {
-        title: "Socialisation",
-        body: `Socialisation is the process through which individuals learn the values, norms, language, behaviour and roles of society. A human child is not born social; society makes the child a social being through learning and interaction.
-
-The major agencies of socialisation are family, school, peer group, religion, media and community. Family teaches basic language, discipline and emotional values. School teaches formal knowledge, citizenship and competition. Peer groups shape identity and behaviour, especially among youths. Religion and media also strongly influence values.
-
-Socialisation is important because it maintains social order. It teaches people how to behave as children, students, citizens, workers and family members. However, socialisation can also reproduce inequality, gender roles, blind obedience and social prejudice.
-
-In Mizoram, family, church, school and community have strong roles in socialisation. Today, social media has become a powerful new agency, shaping youth behaviour, language, aspirations and political awareness.`,
+        title: "Social Control",
+        body:
+          "Social control includes mechanisms through which society encourages conformity to accepted norms.",
       },
       {
         title: "Social Change",
-        body: `Social change means transformation in social structure, institutions, values and behaviour over time. No society remains completely unchanged. Change may be slow or rapid, peaceful or conflictual, planned or unplanned.
+        body:
+          "Social change refers to significant transformation in social institutions, relationships, values or patterns of behaviour.",
+      },
+      {
+        title: "Modernisation",
+        body:
+          "Modernisation refers to social transformation associated with industrialisation, education, technology and new institutions.",
+      },
+      {
+        title: "Urbanisation",
+        body:
+          "Urbanisation is the growth of towns and cities and increasing concentration of population in urban areas.",
+      },
+      {
+        title: "Tribe",
+        body:
+          "A tribe is a social group historically connected by common ancestry, culture, territory and social identity.",
+      },
+      {
+        title: "Social Problem",
+        body:
+          "A social problem is a condition widely recognised as harmful to society and requiring collective response.",
+      },
+    ],
 
-The causes of social change include education, technology, migration, economic development, political reform, religion, media and social movements. Modern communication has made change faster because ideas spread quickly through phones, internet and social media.
+    longNotes: [
+      {
+        title: "Nature and Scope of Sociology",
+        body: `Sociology studies society, institutions and patterns of social relationships.
 
-In Mizoram, social change can be seen in education, family structure, youth culture, women's participation, political awareness, church influence, urbanisation and digital life. Traditional village-based life is increasingly connected with global culture and modern aspirations.
+It examines how individuals behave as members of families, communities, organisations and wider society.
 
-Social change has both positive and negative effects. It can bring education, equality and development, but it can also create identity crisis, unemployment pressure, moral confusion and generational conflict. Therefore, sociology studies not only change itself but also its direction, causes and consequences.`,
+The scope of Sociology includes family, religion, education, economy, politics, culture, social stratification, gender, urbanisation and social change.
+
+Sociology differs from ordinary common sense because it attempts to study social behaviour systematically.
+
+Many personal problems have broader social causes. Unemployment, inequality, crime and migration cannot always be understood only as individual failures.
+
+For Mizoram, Sociology helps examine tribal society, church influence, family change, youth culture, migration, urbanisation and identity.
+
+Sociology therefore helps students understand both continuity and transformation in society.`,
+      },
+      {
+        title: "Culture and Society",
+        body: `Culture is the shared way of life of a society.
+
+It includes language, religion, customs, values, symbols, dress, music and patterns of behaviour.
+
+Culture is learned rather than biologically inherited. Individuals acquire it through socialisation.
+
+Culture gives people identity and helps maintain social order.
+
+However, culture is not permanent. Technology, education, migration and communication can transform cultural practices.
+
+In Mizoram, language, community life, Christianity, music and ideas such as tlawmngaihna have strong cultural significance.
+
+Sociology encourages people to respect culture while also examining how cultural practices affect equality, freedom and social development.`,
+      },
+      {
+        title: "Socialisation",
+        body: `Socialisation is the process through which individuals learn the values, roles and behaviour of society.
+
+Family is usually the first agency of socialisation. Children learn language, discipline and basic social expectations within the family.
+
+Schools introduce formal knowledge, competition, rules and citizenship.
+
+Peer groups become particularly important during adolescence and youth.
+
+Religion, media and digital communication also shape attitudes and identity.
+
+Socialisation helps society maintain continuity because each generation learns existing norms.
+
+However, socialisation can also reproduce inequality or prejudice.
+
+In modern Mizoram, social media has become an important new influence on youth behaviour, language, politics and aspirations.`,
+      },
+      {
+        title: "Social Stratification",
+        body: `Social stratification refers to structured inequality between social groups.
+
+People may be ranked according to class, caste, occupation, wealth, status, gender or political influence.
+
+Stratification affects access to education, employment, healthcare and opportunities.
+
+Some systems are relatively closed, while others allow greater social mobility.
+
+Class stratification is strongly connected with economic resources.
+
+Sociologists examine not only individual differences but also the institutions that reproduce inequality.
+
+Even comparatively equal societies may develop new differences based on income, education and employment.
+
+Understanding stratification helps explain why opportunities are not always equally distributed.`,
+      },
+      {
+        title: "Social Change",
+        body: `Social change refers to transformation in institutions, relationships and patterns of behaviour.
+
+Important causes include technology, education, migration, economic development, political reform and social movements.
+
+Change may be gradual or rapid.
+
+Modern communication technologies have greatly accelerated cultural and social change.
+
+In Mizoram, change is visible in family life, urbanisation, education, gender roles, political awareness and digital culture.
+
+Social change may create new opportunities but can also produce conflict and uncertainty.
+
+Sociology studies both the causes and consequences of these transformations.`,
+      },
+      {
+        title: "Family as a Social Institution",
+        body: `The family is one of the most important social institutions.
+
+It performs functions such as reproduction, childcare, emotional support, socialisation and economic cooperation.
+
+Families also transmit language, culture and social identity.
+
+Family structures vary between societies and can change over time.
+
+Education, employment, migration and urbanisation can influence family relationships.
+
+Modern families may experience greater individual freedom but also new pressures.
+
+Sociology studies the family because many wider social changes become visible first within family relationships.`,
+      },
+      {
+        title: "Social Control",
+        body: `Social control refers to mechanisms used by society to encourage acceptable behaviour.
+
+Informal control comes from family, community, religion, customs and public opinion.
+
+Formal social control is exercised through law, police, courts and government institutions.
+
+Social control helps maintain order and predictability.
+
+However, excessive control may restrict freedom and social change.
+
+Different societies rely on different combinations of formal and informal control.
+
+In close-knit communities, informal social pressure can be particularly strong.
+
+Sociologists therefore examine both the benefits and dangers of social control.`,
       },
       {
         title: "Tribal Society in Mizoram",
-        body: `Tribal society in Mizoram has historically been based on kinship, clan identity, village life, customary practices and community solidarity. Before modern administration, traditional chieftainship played an important role in political and social organisation.
+        body: `Traditional Mizo society was strongly shaped by clan identity, kinship, village organisation and customary practices.
 
-Missionary influence, education and Christianity transformed Mizo society in major ways. Literacy increased, new institutions emerged and many older customs changed. The church became a central social institution, influencing morality, community life and even politics.
+Chieftainship played an important political and administrative role in the past.
 
-Modern tribal society in Mizoram is not isolated. It is shaped by state politics, constitutional protection, migration, education, employment, social media and global culture. Youths are more connected to outside opportunities but also face unemployment and identity pressure.
+Missionary activity and Christianity transformed education, religion and social institutions.
 
-Sociologically, Mizoram shows how tribal society can modernise without completely losing identity. However, challenges remain: class inequality, corruption, drug abuse, gender issues and dependence on government jobs. A serious study of tribal society must therefore combine tradition, modernity and development.`,
+Modern democratic government later replaced many older political structures.
+
+Contemporary Mizoram is highly connected with national and global society through education, migration, media and technology.
+
+At the same time, tribal identity remains politically and culturally important.
+
+Mizoram therefore provides an important example of how a tribal society can modernise while continuing to protect distinctive identity.`,
+      },
+      {
+        title: "Urbanisation in Mizoram",
+        body: `Urbanisation means growth of towns and concentration of population in urban areas.
+
+Aizawl has become the dominant urban centre of Mizoram because it provides government employment, education, healthcare and commercial opportunities.
+
+Urban growth creates demand for housing, roads, transport, water and waste management.
+
+Because Aizawl is located on steep hills, rapid construction also creates environmental risks.
+
+Rural-to-urban migration can weaken village populations while increasing pressure on towns.
+
+Urbanisation creates opportunities but also congestion, inequality and environmental problems.
+
+Good urban planning is therefore essential for sustainable development in Mizoram.`,
+      },
+      {
+        title: "Social Problems and Youth",
+        body: `Social problems are conditions that harm significant sections of society and require collective response.
+
+Youth unemployment, substance abuse, crime, educational pressure and digital addiction are examples of issues that may affect young people.
+
+Such problems cannot always be explained by personal weakness.
+
+Economic opportunities, family conditions, peer influence and social institutions also matter.
+
+Young people require education, employment, recreation, counselling and meaningful social participation.
+
+Policies addressing youth problems should therefore combine individual support with wider social reform.
+
+Sociological analysis helps identify the structural conditions behind apparently personal problems.`,
       },
     ],
   },
 
+  // =========================================================
+  // PUBLIC ADMINISTRATION
+  // =========================================================
   {
     name: "Public Administration",
+
     shortNotes: [
       {
         title: "Public Administration",
-        body: "Public Administration is the implementation of government policies and management of public affairs.",
+        body:
+          "Public Administration is the organisation and implementation of government policies and public programmes.",
+      },
+      {
+        title: "Administration",
+        body:
+          "Administration means organising people and resources to achieve predetermined objectives.",
       },
       {
         title: "Bureaucracy",
-        body: "Bureaucracy is a permanent administrative system based on hierarchy, rules, specialization and written records.",
+        body:
+          "Bureaucracy is a permanent administrative structure based on hierarchy, specialisation, rules and official procedures.",
       },
       {
-        title: "Good Governance",
-        body: "Good governance means accountable, transparent, responsive, effective and participatory administration.",
+        title: "Hierarchy",
+        body:
+          "Hierarchy means arrangement of administrative positions in different levels of authority and responsibility.",
+      },
+      {
+        title: "Delegation",
+        body:
+          "Delegation means assigning authority and responsibility from a higher official to a subordinate.",
+      },
+      {
+        title: "Coordination",
+        body:
+          "Coordination means harmonising the activities of different individuals and departments to achieve common goals.",
       },
       {
         title: "Accountability",
-        body: "Accountability means public officials must answer for their decisions, actions and use of public resources.",
+        body:
+          "Accountability means public officials must explain and justify their decisions and use of public resources.",
       },
       {
-        title: "E-Governance",
-        body: "E-governance uses digital technology to improve public service delivery and administrative efficiency.",
-      },
-    ],
-    longNotes: [
-      {
-        title: "Meaning and Scope of Public Administration",
-        body: `Public Administration is the organisation and implementation of government policies. It is concerned with the management of public affairs, public institutions and public services.
-
-The scope of Public Administration includes policy implementation, personnel administration, financial administration, development administration, local governance, welfare programmes, law and order and public service delivery. It connects political decisions with practical action.
-
-Public Administration is important because people experience government mainly through administration. Schools, hospitals, roads, police, welfare schemes, certificates and public utilities depend on administrative efficiency.
-
-In Mizoram, administration is important in areas such as rural development, district governance, border management, disaster response, infrastructure and welfare schemes. Weak administration leads to delay, corruption and public frustration. Strong administration improves trust, development and stability.
-
-Therefore, Public Administration is not just office work. It is the practical machinery through which the state serves society.`,
-      },
-      {
-        title: "Max Weber's Bureaucratic Theory",
-        body: `Max Weber developed the ideal type model of bureaucracy. He believed that modern administration should be based on rational-legal authority rather than personal loyalty or tradition.
-
-The main features of bureaucracy are hierarchy, division of work, written rules, official records, technical expertise, impersonality and merit-based recruitment. These features make administration predictable, stable and efficient.
-
-Bureaucracy is important because modern states perform complex functions such as taxation, welfare, law enforcement, education, health and development. Without a trained administrative machinery, government policies cannot be implemented properly.
-
-However, bureaucracy is also criticised for red tape, delay, rigidity, excessive formalism and distance from ordinary people. In India and Mizoram, people often experience bureaucracy through paperwork, approvals and slow procedures.
-
-Weber's theory remains important because it explains the structure of modern administration. But in democratic societies, bureaucracy must be balanced with accountability, transparency, responsiveness and citizen participation.`,
+        title: "Transparency",
+        body:
+          "Transparency means government decisions, procedures and information should be open and accessible.",
       },
       {
         title: "Good Governance",
-        body: `Good governance refers to a system of administration that is transparent, accountable, participatory, responsive, effective and based on rule of law. It focuses not only on government authority but also on the quality of public service delivery.
-
-The major features of good governance include openness in decision-making, control of corruption, respect for law, citizen participation, timely service delivery and protection of rights. A government may have power, but it earns legitimacy only when it governs fairly and efficiently.
-
-Good governance is especially important in developing states because public resources are limited and public needs are high. Misuse of funds, favouritism and delay directly harm ordinary citizens.
-
-In Mizoram, good governance is needed in infrastructure projects, welfare schemes, recruitment, local bodies, education and health services. Digital governance, social audit, RTI and decentralisation can improve accountability.
-
-Therefore, good governance is not an abstract idea. It is the difference between a state that merely rules and a state that genuinely serves people.`,
+        body:
+          "Good governance is transparent, accountable, responsive, participatory, effective and based on rule of law.",
       },
       {
         title: "Development Administration",
-        body: `Development Administration refers to the administrative system designed to promote social and economic development. It became important after independence because newly independent countries needed planned development, poverty reduction and institution building.
+        body:
+          "Development Administration refers to administrative systems designed to promote planned social and economic development.",
+      },
+      {
+        title: "E-Governance",
+        body:
+          "E-governance uses information and communication technology to improve administration and public service delivery.",
+      },
+      {
+        title: "Citizen Charter",
+        body:
+          "A Citizen Charter states the standards and commitments that a public organisation promises to citizens.",
+      },
+      {
+        title: "RTI",
+        body:
+          "The Right to Information promotes transparency by allowing citizens to request information from public authorities subject to legal exemptions.",
+      },
+      {
+        title: "Public Policy",
+        body:
+          "Public policy is a course of action adopted by government to address public problems.",
+      },
+      {
+        title: "Local Government",
+        body:
+          "Local government refers to governing institutions operating at village, town or municipal levels.",
+      },
+      {
+        title: "Personnel Administration",
+        body:
+          "Personnel administration deals with recruitment, training, promotion, discipline and management of public employees.",
+      },
+      {
+        title: "Financial Administration",
+        body:
+          "Financial administration concerns budgeting, taxation, expenditure, accounting and financial control.",
+      },
+      {
+        title: "Administrative Ethics",
+        body:
+          "Administrative ethics refers to principles such as honesty, neutrality, integrity and responsibility in public service.",
+      },
+      {
+        title: "Red Tapism",
+        body:
+          "Red tapism means excessive dependence on rules and procedures that causes unnecessary administrative delay.",
+      },
+      {
+        title: "Civil Service",
+        body:
+          "The civil service is the permanent professional administrative machinery that assists elected governments in policy implementation.",
+      },
+    ],
 
-Development Administration is different from routine administration. It focuses on change, innovation, welfare, public participation and transformation of society. It includes implementation of development plans, rural development, education, health, infrastructure and poverty alleviation programmes.
+    longNotes: [
+      {
+        title: "Meaning and Scope of Public Administration",
+        body: `Public Administration refers to the organisation and implementation of government policies.
 
-In India, development administration operates through central ministries, state governments, district administration, local bodies and special agencies. In Mizoram, it is visible in rural development schemes, road projects, livelihood programmes and welfare initiatives.
+It includes public organisations, personnel, finance, welfare programmes, regulation and public-service delivery.
 
-However, development administration often faces problems such as corruption, delay, lack of coordination, political interference and weak monitoring. Therefore, development requires not only funds but also capable institutions and honest implementation.
+Public Administration connects political decisions with practical action.
 
-A good development administration must be people-centred, transparent, locally sensitive and result-oriented.`,
+Citizens experience government through schools, hospitals, roads, police, welfare offices and administrative departments.
+
+The subject includes personnel administration, financial administration, development administration, local government and public policy.
+
+For Mizoram, effective administration is necessary for rural development, infrastructure, healthcare, education and disaster response.
+
+Public Administration is therefore the practical machinery through which the State serves society.`,
+      },
+      {
+        title: "Max Weber's Bureaucratic Theory",
+        body: `Max Weber described bureaucracy as a form of organisation based on rational-legal authority.
+
+Its main features include hierarchy, clearly defined responsibilities, written rules, official records and technical expertise.
+
+Officials are expected to perform duties impersonally rather than according to personal preference.
+
+Recruitment should be based on qualifications and competence.
+
+Bureaucracy allows large organisations to operate predictably and continuously.
+
+However, it may also produce red tapism, rigidity and excessive formalism.
+
+Modern democratic government therefore requires both professional bureaucracy and strong accountability.`,
+      },
+      {
+        title: "Good Governance",
+        body: `Good governance refers to administration that is transparent, accountable, responsive, participatory and effective.
+
+Rule of law is essential because government itself must operate according to law.
+
+Transparency allows citizens to understand how decisions are made.
+
+Accountability requires officials to explain their actions.
+
+Participation gives citizens opportunities to influence public decisions.
+
+Good governance also requires efficient service delivery and responsible use of resources.
+
+In Mizoram, good governance is important for recruitment, infrastructure, welfare, healthcare and local development.
+
+Government legitimacy depends not only on elections but also on how fairly and effectively public institutions operate.`,
+      },
+      {
+        title: "Development Administration",
+        body: `Development Administration focuses on planned social and economic transformation.
+
+It became particularly important in newly independent developing countries.
+
+It is concerned with poverty reduction, rural development, education, health, infrastructure and institution building.
+
+Unlike routine administration, development administration emphasises change, innovation and public participation.
+
+Its success depends on capable officials, coordination, sufficient resources and local participation.
+
+Development programmes often fail because of delay, corruption or weak monitoring.
+
+For Mizoram, development administration is important because difficult terrain and limited markets require effective public planning.`,
       },
       {
         title: "E-Governance and Digital Administration",
-        body: `E-governance means the use of information and communication technology in government administration. It aims to make governance faster, more transparent, accessible and citizen-friendly.
+        body: `E-governance means using digital technology to improve government services and administrative processes.
 
-Examples of e-governance include online certificates, digital payments, government portals, online grievance systems, digital land records and public information platforms. It reduces paperwork and can limit middlemen and corruption.
+Examples include online applications, digital certificates, electronic payments, grievance portals and online public information.
 
-However, e-governance is not only about technology. It also requires digital literacy, cyber security, reliable internet, trained officials and trust in digital systems. Without these, digital governance may exclude people who are poor, elderly or digitally unaware.
+Digital services can reduce travel, paperwork and delays.
 
-In Mizoram, e-governance has strong potential because difficult terrain makes physical access to offices costly and time-consuming. But digital services must be supported by awareness, local language support and cyber hygiene.
+This is particularly useful in hill regions where citizens may live far from government offices.
 
-Therefore, e-governance should be seen as a tool for better administration, not a replacement for accountable human governance.`,
+However, digital administration also creates challenges. Citizens need reliable internet, digital literacy and cyber security.
+
+Services should remain accessible to people who are elderly or unfamiliar with digital systems.
+
+E-governance is therefore most effective when technology is combined with responsive and accountable administration.`,
+      },
+      {
+        title: "Accountability in Administration",
+        body: `Administrative accountability means public officials must answer for their actions.
+
+Political accountability operates through elected representatives and legislatures.
+
+Legal accountability operates through courts and laws.
+
+Administrative accountability includes supervision, audits and departmental control.
+
+Citizens and media also play important roles in public accountability.
+
+Mechanisms such as RTI and social audits increase transparency.
+
+Accountability is necessary because public officials exercise authority and spend public money.
+
+Without accountability, administration may become inefficient, arbitrary or corrupt.`,
+      },
+      {
+        title: "Right to Information",
+        body: `The Right to Information is an important instrument of democratic transparency.
+
+It allows citizens to seek information from public authorities, subject to legally recognised exemptions.
+
+Access to information makes it easier to examine government spending and decisions.
+
+RTI can reduce secrecy and strengthen accountability.
+
+However, the law works effectively only when records are properly maintained and authorities respond on time.
+
+Citizens also need awareness about how to use information responsibly.
+
+RTI therefore connects transparency with democratic participation.`,
+      },
+      {
+        title: "Local Governance",
+        body: `Local governance brings public administration closer to citizens.
+
+Village councils, municipalities and other local institutions deal with community-level problems.
+
+Local bodies can understand local needs better than distant authorities.
+
+Decentralisation may improve participation, accountability and service delivery.
+
+However, local governments require adequate finance, trained staff and clearly defined responsibilities.
+
+In Mizoram, local institutions are especially important because settlements are geographically dispersed.
+
+Strong local governance can improve sanitation, roads, local planning and community participation.`,
+      },
+      {
+        title: "Administrative Ethics",
+        body: `Administrative ethics refers to moral principles guiding public officials.
+
+Important values include integrity, honesty, neutrality, fairness and commitment to public interest.
+
+Public officials often control resources and exercise discretion.
+
+Ethical administration helps prevent corruption and abuse of authority.
+
+Rules are important, but ethical judgement is also necessary when officials face difficult choices.
+
+Leadership and institutional culture strongly influence ethical behaviour.
+
+A professional civil service should therefore combine technical competence with moral responsibility.`,
+      },
+      {
+        title: "Public Policy",
+        body: `Public policy is a course of action adopted by government to deal with public problems.
+
+Policy making generally includes problem identification, agenda setting, formulation, implementation and evaluation.
+
+Governments create policies in areas such as education, health, agriculture and security.
+
+Good policy requires evidence, consultation and administrative capacity.
+
+Even a well-designed policy can fail if implementation is weak.
+
+Public feedback is also important because policies may produce unintended consequences.
+
+Public policy therefore connects political decisions, administration and citizen outcomes.`,
       },
     ],
   },
 
+  // =========================================================
+  // ENGLISH
+  // =========================================================
   {
     name: "English",
+
     shortNotes: [
       {
         title: "English Language",
-        body: "English is an important language for education, administration, employment and wider communication.",
-      },
-      {
-        title: "Essay Writing",
-        body: "Essay writing is an organised expression of ideas on a topic with introduction, body and conclusion.",
-      },
-      {
-        title: "Comprehension",
-        body: "Comprehension means understanding, interpreting and analysing a written passage.",
-      },
-      {
-        title: "Precis",
-        body: "Precis writing means shortening a passage while preserving its main idea and logical flow.",
+        body:
+          "English is widely used in education, administration, research, employment and communication.",
       },
       {
         title: "Communication",
-        body: "Communication is the process of sharing ideas, information and feelings through language or symbols.",
-      },
-    ],
-    longNotes: [
-      {
-        title: "Importance of English in Higher Education",
-        body: `English plays an important role in higher education because many textbooks, journals, research papers and official materials are available in English. For students in India, English functions as a link language across regions and disciplines.
-
-In college education, English improves access to academic knowledge. It helps students read political theory, history, economics, sociology and public administration from wider sources. It is also important for competitive examinations, interviews, research writing and professional communication.
-
-However, English should not be treated as a measure of intelligence. Many students understand concepts well but struggle to express them in English. Therefore, language learning must be supportive rather than humiliating.
-
-For Mizoram students, English has practical value because it connects local education with national and global opportunities. A good command of English can improve academic confidence, employment chances and public communication. The aim should be clear expression, not artificial decoration.`,
+        body:
+          "Communication is the process of sharing information, ideas, feelings and meaning between people.",
       },
       {
         title: "Essay Writing",
-        body: `Essay writing is the organised presentation of ideas on a given topic. A good essay has an introduction, body and conclusion. The introduction defines the topic and sets the direction. The body explains the main points with examples. The conclusion summarises the argument and gives a final view.
-
-At college level, an essay should not be a random collection of sentences. It must have logical flow, relevant arguments and balanced analysis. Students should avoid unnecessary repetition and emotional exaggeration.
-
-A strong essay includes definitions, background, causes, effects, examples and criticism where needed. For topics related to Mizoram, students can include examples from local governance, youth issues, education, economy, environment and society.
-
-Essay writing is important because it tests knowledge, reasoning and communication. It teaches students to think in an organised way. In examinations, a clear and structured essay often scores better than a long but confused answer.`,
+        body:
+          "An essay is an organised piece of writing containing an introduction, body and conclusion.",
       },
       {
-        title: "Reading Comprehension",
-        body: `Reading comprehension means understanding and interpreting a written passage. It is not limited to reading words; it requires grasping the main idea, tone, argument, supporting details and implied meaning.
-
-Good comprehension skills are important in college study because students must read textbooks, articles, notices, reports and examination passages. In competitive exams, comprehension tests the ability to read carefully and answer accurately.
-
-To improve comprehension, students should first identify the central idea of the passage. Then they should notice keywords, examples, contrast words and conclusion markers. Questions should be answered based on the passage, not personal opinion.
-
-Many students make mistakes because they read too fast or assume meaning without evidence. Careful reading is better than guessing. For Mizoram students preparing for MPSC or university exams, comprehension is a scoring area if practised regularly.
-
-Thus, comprehension develops both language ability and critical thinking.`,
+        title: "Paragraph",
+        body:
+          "A paragraph is a group of connected sentences organised around one central idea.",
+      },
+      {
+        title: "Comprehension",
+        body:
+          "Reading comprehension is the ability to understand, interpret and analyse written material.",
       },
       {
         title: "Precis Writing",
-        body: `Precis writing is the art of shortening a passage while preserving its main idea. It is not simply cutting sentences; it requires understanding the passage and rewriting it in a concise form.
+        body:
+          "Precis writing means presenting the central meaning of a passage in a shorter and clear form.",
+      },
+      {
+        title: "Grammar",
+        body:
+          "Grammar is the system of rules governing correct sentence structure and language use.",
+      },
+      {
+        title: "Noun",
+        body:
+          "A noun is a word used to name a person, place, object, idea or quality.",
+      },
+      {
+        title: "Pronoun",
+        body:
+          "A pronoun is a word used instead of a noun to avoid unnecessary repetition.",
+      },
+      {
+        title: "Verb",
+        body:
+          "A verb expresses an action, condition or state of being.",
+      },
+      {
+        title: "Adjective",
+        body:
+          "An adjective describes or modifies a noun or pronoun.",
+      },
+      {
+        title: "Adverb",
+        body:
+          "An adverb modifies a verb, adjective or another adverb.",
+      },
+      {
+        title: "Tense",
+        body:
+          "Tense indicates the time of an action or situation.",
+      },
+      {
+        title: "Active Voice",
+        body:
+          "In active voice, the subject performs the action expressed by the verb.",
+      },
+      {
+        title: "Passive Voice",
+        body:
+          "In passive voice, the subject receives the action expressed by the verb.",
+      },
+      {
+        title: "Direct Speech",
+        body:
+          "Direct speech reproduces the exact words spoken by a person.",
+      },
+      {
+        title: "Indirect Speech",
+        body:
+          "Indirect speech reports what someone said without necessarily using the exact words.",
+      },
+      {
+        title: "Formal Letter",
+        body:
+          "A formal letter is written in a polite and organised style for official or professional communication.",
+      },
+      {
+        title: "Report Writing",
+        body:
+          "Report writing presents factual information about an event, situation or investigation in an organised form.",
+      },
+      {
+        title: "Vocabulary",
+        body:
+          "Vocabulary refers to the collection of words a person understands and uses.",
+      },
+    ],
 
-A good precis should be clear, brief, accurate and logically connected. It should not include personal opinions, examples, repetitions or unnecessary details. The original meaning must be preserved, but the language should be the student's own.
+    longNotes: [
+      {
+        title: "Importance of English in Higher Education",
+        body: `English is widely used in higher education in India.
 
-The first step is to read the passage carefully and identify the main idea. The second step is to remove illustrations, repetitions and minor details. The third step is to write a compact version in simple language.
+Many textbooks, journals and academic resources are published in English.
 
-Precis writing is useful because it trains students to think clearly and express ideas economically. In administration, journalism, academic writing and official communication, the ability to summarise is very valuable.
+English also connects students with national and international scholarship.
 
-For examinations, students should remember that a precis must be shorter than the original but complete in meaning.`,
+It is important for competitive examinations, interviews and research writing.
+
+However, knowledge of English should not be treated as a measure of intelligence.
+
+Students may understand a subject well while still developing language ability.
+
+For college students, the main goal should be clear and accurate communication rather than unnecessarily difficult vocabulary.`,
+      },
+      {
+        title: "Essay Writing",
+        body: `Essay writing is the organised presentation of ideas on a particular topic.
+
+A good essay usually contains an introduction, main body and conclusion.
+
+The introduction introduces the subject and establishes direction.
+
+The body develops arguments, explanations and examples.
+
+The conclusion summarises the major points.
+
+Students should avoid repeating the same idea unnecessarily.
+
+Good essays are clear, relevant and logically organised.
+
+At college level, strong content and structure are more important than decorative language.`,
+      },
+      {
+        title: "Reading Comprehension",
+        body: `Reading comprehension means understanding and interpreting written material.
+
+Students should identify the central idea, supporting details and the author's argument.
+
+Questions should be answered primarily from information provided in the passage.
+
+A common mistake is answering from personal opinion rather than textual evidence.
+
+Students should notice contrast words, examples and conclusion markers.
+
+Regular reading improves vocabulary and comprehension speed.
+
+Comprehension is important in college examinations and many competitive tests.`,
+      },
+      {
+        title: "Precis Writing",
+        body: `Precis writing means reducing a passage while preserving its main meaning.
+
+A precis should be concise, accurate and logically organised.
+
+Students should first understand the central idea.
+
+Examples, repetition and unnecessary details can then be removed.
+
+The passage should generally be rewritten in the student's own words.
+
+Personal opinions should not be added.
+
+Precis writing develops the ability to identify important information and communicate efficiently.`,
       },
       {
         title: "Grammar and Effective Communication",
-        body: `Grammar provides the rules that help language become clear and meaningful. It includes sentence structure, tense, parts of speech, punctuation, agreement and correct word use.
+        body: `Grammar provides the rules that organise language.
 
-Effective communication does not mean using difficult English. It means expressing ideas clearly, correctly and appropriately. A simple sentence with correct grammar is better than a complicated sentence full of mistakes.
+Important areas include sentence structure, tense, agreement, punctuation and parts of speech.
 
-Grammar is important in academic writing because errors can confuse meaning. In official letters, applications, reports and answers, grammatical accuracy creates a good impression. However, grammar should support communication, not make students afraid of writing.
+Correct grammar helps prevent confusion.
 
-For college students, the best way to improve grammar is through regular reading, writing and correction. Memorising rules alone is not enough. Students should practise sentence formation, paragraph writing and editing.
+Effective communication does not require extremely complicated English.
 
-In Mizoram, where many students are multilingual, English communication can improve gradually with confidence and practice. The goal is clarity, not perfection.`,
+Simple and correct sentences are often more effective than difficult sentences full of errors.
+
+Students improve grammar through reading, writing and correction.
+
+The final goal of grammar is clear communication rather than memorisation of rules alone.`,
+      },
+      {
+        title: "Formal Letter Writing",
+        body: `Formal letters are used for official and professional communication.
+
+A formal letter normally contains the sender's details, date, recipient details, subject, salutation, body and closing.
+
+The language should be polite, direct and professional.
+
+The first paragraph should clearly state the purpose.
+
+The main body should provide necessary details.
+
+The final paragraph may state the expected action or response.
+
+Unnecessary emotional or informal expressions should be avoided.
+
+Good formal letters are concise, clear and properly organised.`,
+      },
+      {
+        title: "Report Writing",
+        body: `A report presents information about an event, activity, investigation or situation.
+
+Reports should be factual and logically organised.
+
+A report may contain a title, introduction, description, findings and conclusion.
+
+Facts should be distinguished from personal opinion.
+
+Dates, locations and important participants should be clearly mentioned when relevant.
+
+Academic reports may also include recommendations.
+
+Report writing is useful in education, administration, journalism and research.`,
+      },
+      {
+        title: "Effective Communication",
+        body: `Effective communication means conveying information clearly and appropriately.
+
+Communication includes a sender, message, channel and receiver.
+
+Misunderstanding can occur because of language, noise, poor listening or unclear ideas.
+
+Good communication requires both speaking and listening skills.
+
+In academic settings, students should organise ideas before speaking or writing.
+
+Clear communication improves classroom performance, interviews and professional life.
+
+Confidence develops through regular practice rather than memorising complicated expressions.`,
       },
     ],
   },
 
+  // =========================================================
+  // GEOGRAPHY
+  // =========================================================
   {
     name: "Geography",
+
     shortNotes: [
       {
         title: "Geography",
-        body: "Geography studies the earth, environment, places, resources and human interaction with nature.",
+        body:
+          "Geography studies the Earth, environment, places, resources and relationships between people and space.",
       },
       {
         title: "Physical Geography",
-        body: "Physical geography studies landforms, climate, rivers, soil, vegetation and natural processes.",
+        body:
+          "Physical Geography studies natural features and processes such as landforms, climate, rivers and vegetation.",
       },
       {
         title: "Human Geography",
-        body: "Human geography studies population, settlements, migration, culture, economy and human use of space.",
+        body:
+          "Human Geography studies population, settlements, culture, economy and human organisation of space.",
       },
       {
         title: "Climate",
-        body: "Climate is the average weather condition of a place over a long period.",
+        body:
+          "Climate is the average pattern of weather conditions over a long period.",
       },
       {
-        title: "Resources",
-        body: "Resources are materials or conditions that satisfy human needs and support development.",
-      },
-    ],
-    longNotes: [
-      {
-        title: "Physical Geography of Mizoram",
-        body: `Mizoram is a hilly state in Northeast India. Its physical geography is shaped by hills, valleys, rivers and forests. The state is part of the eastern Himalayan and Indo-Myanmar ecological region.
-
-The terrain is mostly mountainous, with ridges running roughly north to south. Flat land is limited, which affects agriculture, transport, settlement and infrastructure development. Road construction is difficult and costly because of slopes, landslides and fragile soil.
-
-Mizoram has many rivers such as Tlawng, Tuirial, Tuivawl, Chhimtuipui and Khawthlangtuipui. These rivers are important for water, agriculture and ecology, though their full economic potential is not fully used.
-
-The state's physical geography influences its economy and society. Hilly terrain protects cultural identity but also creates developmental challenges. Therefore, any development plan in Mizoram must consider geography seriously. Infrastructure, farming, tourism and disaster management must be adapted to hill conditions.`,
+        title: "Weather",
+        body:
+          "Weather refers to short-term atmospheric conditions such as temperature, rainfall and wind.",
       },
       {
-        title: "Climate and Monsoon",
-        body: `Climate refers to the average weather conditions of a place over a long period. Mizoram has a moderate and humid climate, strongly influenced by the monsoon.
-
-The southwest monsoon brings heavy rainfall to the state. Rainfall supports forests, rivers and agriculture, but it also creates problems such as landslides, road blockages, soil erosion and damage to infrastructure. The hilly terrain makes the impact of rainfall more serious.
-
-Climate affects settlement, farming, transport and daily life. In Mizoram, agricultural patterns, road maintenance and construction work are often shaped by seasonal rainfall. Climate also affects public health, water supply and disaster preparedness.
-
-Climate change can increase risks such as unpredictable rainfall, extreme weather, crop damage and slope instability. Therefore, climate study is not just physical geography; it is connected with planning, economy and governance.
-
-For Mizoram, climate-sensitive development is essential. Roads, housing, agriculture and drainage must be planned according to local environmental conditions.`,
+        title: "Monsoon",
+        body:
+          "Monsoon is a seasonal wind system associated with major changes in rainfall patterns.",
       },
       {
-        title: "Natural Resources of Mizoram",
-        body: `Natural resources are materials found in nature that can be used for human welfare. Mizoram has forests, bamboo, rivers, fertile valleys, biodiversity and potential for horticulture and tourism.
-
-Forests are one of the most important resources of Mizoram. They support biodiversity, regulate climate, protect soil and provide livelihood materials. Bamboo is especially significant because it can support handicrafts, construction, furniture, paper and small industries.
-
-The state also has potential in horticulture such as oranges, passion fruit, ginger, turmeric and other crops. However, weak market access, transport cost and limited processing facilities reduce benefits for farmers.
-
-Natural resources must be used sustainably. Overuse of forests, careless road construction, shifting cultivation without proper management and unplanned urbanisation can damage the environment.
-
-For Mizoram, the challenge is not lack of resources but lack of value addition, infrastructure and market linkage. Sustainable resource management can support both economy and ecological protection.`,
+        title: "River",
+        body:
+          "A river is a natural flowing watercourse moving toward another river, lake or sea.",
       },
       {
-        title: "Human Geography of Mizoram",
-        body: `Human geography studies the relationship between people and space. In Mizoram, human geography includes settlement patterns, population distribution, migration, culture, urbanisation and livelihood.
-
-Population is concentrated in towns and along road-connected areas. Aizawl is the largest urban centre and attracts education, employment, administration and trade. This creates pressure on housing, transport, waste management and public services.
-
-Rural areas remain important for agriculture, community life and cultural continuity. However, many youths migrate toward towns for education and jobs. This changes family structure, village life and aspirations.
-
-Mizoram's human geography is also shaped by tribal identity, language, church institutions and border location. The state shares borders with Myanmar and Bangladesh, making migration and border trade important issues.
-
-A serious study of Mizoram's human geography must connect people, land, culture, economy and governance. Development planning should consider both urban growth and rural sustainability.`,
+        title: "Watershed",
+        body:
+          "A watershed is an area of land from which water drains into a common river or water body.",
       },
       {
-        title: "Environmental Problems in Hill Areas",
-        body: `Hill areas face special environmental problems because their landforms are fragile. Mizoram's hilly terrain is vulnerable to landslides, soil erosion, deforestation, drainage problems and road damage.
-
-Heavy rainfall increases the risk of landslides, especially where slopes are cut for roads and buildings without proper engineering. Urban expansion in Aizawl and other towns creates pressure on land and drainage systems.
-
-Deforestation and unsustainable land use can weaken soil stability. Poor waste management also affects streams, roadsides and urban surroundings. Climate change may make these problems more serious through irregular rainfall and extreme weather.
-
-Environmental problems in hill areas are not only natural; many are linked to planning failure. Unscientific construction, weak regulation and lack of drainage increase disaster risks.
-
-For Mizoram, development must be environmentally sensitive. Roads, buildings, agriculture and town planning must respect hill ecology. Sustainable development is not optional; it is necessary for safety and survival.`,
-      },
-    ],
-  },
-
-  {
-    name: "Education",
-    shortNotes: [
-      {
-        title: "Education",
-        body: "Education is the process of developing knowledge, skills, values, attitudes and character.",
+        title: "Soil",
+        body:
+          "Soil is the upper layer of the Earth's surface that supports plant growth.",
       },
       {
-        title: "Aims of Education",
-        body: "The aims of education include knowledge, character, citizenship, livelihood and social development.",
+        title: "Natural Resources",
+        body:
+          "Natural resources are materials and environmental conditions that can be used to satisfy human needs.",
       },
       {
-        title: "Curriculum",
-        body: "Curriculum is the planned learning experience provided by an educational institution.",
+        title: "Population Density",
+        body:
+          "Population density means the number of people living per unit area.",
       },
       {
-        title: "Teacher",
-        body: "A teacher guides learning, shapes character and supports student development.",
+        title: "Migration",
+        body:
+          "Migration is the movement of people from one location to another for temporary or permanent settlement.",
       },
       {
-        title: "Value Education",
-        body: "Value education promotes moral understanding, discipline, responsibility and social harmony.",
-      },
-    ],
-    longNotes: [
-      {
-        title: "Meaning and Aims of Education",
-        body: `Education is the process through which individuals develop knowledge, skills, values, attitudes and personality. It is not limited to classroom learning; it includes family, community, experience and social interaction.
-
-The aims of education differ according to society and time. At a basic level, education gives literacy and knowledge. At a higher level, it develops critical thinking, character, citizenship, employment skills and social responsibility.
-
-Education also prepares individuals to participate in democracy. A citizen who can read, reason and question is less likely to be blindly controlled. Therefore, education is closely linked with freedom and development.
-
-For Mizoram, education has played a major role in social transformation. Missionary education increased literacy and changed society deeply. Today, the challenge is to move from certificate-based education to skill-based, research-based and problem-solving education.
-
-Thus, education should create not only degree holders but responsible, capable and thoughtful human beings.`,
+        title: "Urbanisation",
+        body:
+          "Urbanisation is the increasing proportion of population living in towns and cities.",
       },
       {
-        title: "Role of Education in Society",
-        body: `Education performs many important functions in society. It transmits culture, develops personality, prepares citizens, supports economic growth and promotes social change.
-
-Through education, society passes language, values, history and knowledge from one generation to another. At the same time, education can challenge harmful traditions and promote equality, scientific thinking and democratic values.
-
-Education also has an economic role. It provides skills needed for employment, entrepreneurship and professional life. A society with poor education faces weak productivity and limited development.
-
-In Mizoram, education has created high literacy and strong social awareness. However, educated unemployment shows that education must be linked with skills, innovation and local economic needs. Students should be trained not only to seek government jobs but also to create opportunities.
-
-Therefore, education is both conservative and transformative. It preserves society but also changes it.`,
+        title: "Deforestation",
+        body:
+          "Deforestation is large-scale removal or loss of forest cover.",
       },
       {
-        title: "Teacher and Classroom Management",
-        body: `A teacher is not only a transmitter of information but a guide, organiser and motivator. Good teaching requires knowledge, communication, patience, discipline and understanding of students.
-
-Classroom management refers to the ability to create a learning environment where students can participate, focus and grow. It includes planning lessons, maintaining discipline, encouraging discussion and handling different learning abilities.
-
-A good teacher balances authority with kindness. Too much strictness creates fear, while too much freedom may create disorder. Effective classroom management creates respect and responsibility.
-
-In modern education, teachers must also handle digital tools, inclusive classrooms, emotional issues and exam pressure. In Mizoram, teachers often influence not only academic learning but also moral and community life.
-
-The quality of education depends heavily on the quality of teachers. Buildings and syllabus are important, but without committed teachers, education becomes mechanical.`,
+        title: "Soil Erosion",
+        body:
+          "Soil erosion is the removal of fertile topsoil by water, wind or human activity.",
       },
       {
-        title: "Value Education",
-        body: `Value education is the teaching of moral, social and civic values. It helps students develop honesty, discipline, respect, responsibility, compassion and concern for society.
-
-Education without values can produce skilled but selfish individuals. Therefore, knowledge must be connected with character. Value education teaches students to use learning for public good rather than only personal success.
-
-In a democratic society, value education supports tolerance, equality, respect for law and social harmony. It also helps reduce corruption, violence, discrimination and irresponsible behaviour.
-
-In Mizoram, values are strongly influenced by family, church, school and community. However, modern society faces challenges such as materialism, social media pressure, substance abuse and weakening discipline. Value education must therefore be practical, not only moral preaching.
-
-A good education system should develop both competence and conscience. Students should learn not only how to succeed but also how to live responsibly.`,
-      },
-      {
-        title: "Education in Mizoram",
-        body: `Education in Mizoram has played a major role in transforming society. The coming of Christianity and missionary education greatly improved literacy and introduced modern learning. Today, Mizoram is one of the highly literate states in India.
-
-However, high literacy does not automatically mean high-quality education. The state faces challenges such as educated unemployment, weak research culture, limited technical institutions, dependence on government jobs and uneven quality between urban and rural schools.
-
-Education in Mizoram must now move beyond memorisation. Students need critical thinking, digital literacy, communication skills, entrepreneurship, research skills and practical training. Local problems such as environment, governance, agriculture, tourism and border issues should also enter classroom discussion.
-
-The purpose of education should be social transformation. It must prepare youths to serve Mizoram with knowledge, skill and moral responsibility.
-
-Thus, Mizoram's next educational challenge is not literacy alone but quality, relevance and employability.`,
-      },
-    ],
-  },
-
-  {
-    name: "Environmental Studies",
-    shortNotes: [
-      {
-        title: "Environment",
-        body: "Environment includes the natural and human-made surroundings that support life.",
+        title: "Landslide",
+        body:
+          "A landslide is the downward movement of rock, soil or debris along a slope.",
       },
       {
         title: "Biodiversity",
-        body: "Biodiversity means the variety of plants, animals and microorganisms in an ecosystem.",
+        body:
+          "Biodiversity means the variety of living organisms and ecosystems in a region.",
+      },
+      {
+        title: "Map",
+        body:
+          "A map is a scaled representation of the Earth's surface or part of it.",
+      },
+      {
+        title: "Latitude",
+        body:
+          "Latitude measures angular distance north or south of the Equator.",
+      },
+      {
+        title: "Longitude",
+        body:
+          "Longitude measures angular distance east or west of the Prime Meridian.",
+      },
+    ],
+
+    longNotes: [
+      {
+        title: "Physical Geography of Mizoram",
+        body: `Mizoram is a predominantly hilly state in Northeast India.
+
+Its landscape consists of ridges, valleys, rivers and extensive forest areas.
+
+The hill ranges generally run from north to south.
+
+Flat land is limited, which affects agriculture, settlement and infrastructure.
+
+Road construction is difficult because of steep slopes and heavy rainfall.
+
+Important rivers include the Tlawng, Tuirial and Chhimtuipui.
+
+Physical geography therefore strongly influences Mizoram's economy and development.
+
+Any major infrastructure programme must take account of slope stability, drainage and environmental conditions.`,
+      },
+      {
+        title: "Climate and Monsoon in Mizoram",
+        body: `Mizoram has a humid climate strongly influenced by the monsoon.
+
+The southwest monsoon provides most annual rainfall.
+
+Rainfall supports forests, agriculture and water resources.
+
+However, heavy rain also produces landslides, soil erosion and road damage.
+
+The hill environment makes drainage and slope stability major planning concerns.
+
+Climate also influences agriculture, construction and transport.
+
+Changing rainfall patterns can create new risks.
+
+Development planning in Mizoram must therefore remain climate-sensitive.`,
+      },
+      {
+        title: "Natural Resources of Mizoram",
+        body: `Mizoram possesses important natural resources including forests, bamboo, rivers and biodiversity.
+
+The state also has strong horticultural potential.
+
+Bamboo can support furniture, handicrafts, construction and small industries.
+
+Horticultural crops can provide income when farmers have access to markets and processing facilities.
+
+Forests provide ecological services by protecting soil and supporting biodiversity.
+
+Natural-resource development must remain sustainable.
+
+The key challenge is converting local resources into economic value without damaging the environment.`,
+      },
+      {
+        title: "Human Geography of Mizoram",
+        body: `Human Geography examines population, settlement, migration and economic activity.
+
+In Mizoram, population distribution is strongly influenced by hills and transport connections.
+
+Aizawl is the largest urban centre and attracts students, workers and government employees.
+
+Urban concentration creates pressure on roads, housing and public services.
+
+Rural areas remain important for agriculture and community life.
+
+Migration between rural and urban areas changes family and village structures.
+
+Mizoram's border location also affects migration and trade.
+
+Human geography therefore connects population patterns with culture, economy and governance.`,
+      },
+      {
+        title: "Environmental Problems in Hill Areas",
+        body: `Hill areas are environmentally fragile.
+
+Heavy rainfall can cause landslides and soil erosion.
+
+Road cutting and unplanned construction can further weaken slopes.
+
+Urban growth can create drainage and waste-management problems.
+
+Deforestation can reduce soil stability.
+
+Climate change may intensify extreme weather risks.
+
+Environmental problems in hill regions are therefore both natural and human-made.
+
+Careful engineering, drainage and land-use planning are essential for safe development.`,
+      },
+      {
+        title: "Population and Migration",
+        body: `Population geography studies distribution, growth and movement of people.
+
+People often migrate because of employment, education, marriage or security.
+
+Rural-to-urban migration contributes to urban growth.
+
+Migration can improve opportunities for individuals but may create pressure on housing and public services.
+
+Areas losing population may face labour shortages and social change.
+
+In border regions, migration may also become a political and security issue.
+
+Geographers therefore examine both the causes and consequences of population movement.`,
+      },
+      {
+        title: "Urbanisation in Aizawl",
+        body: `Aizawl has grown rapidly as Mizoram's administrative, educational and commercial centre.
+
+The city attracts residents from villages and smaller towns.
+
+Rapid population concentration creates traffic congestion and high demand for housing.
+
+Construction on steep slopes increases environmental vulnerability.
+
+Waste disposal, drainage and water supply are important urban challenges.
+
+Public transport and land-use planning are essential for future growth.
+
+Aizawl demonstrates how geography and urbanisation interact strongly in hill environments.`,
+      },
+      {
+        title: "Importance of Forests",
+        body: `Forests perform ecological, economic and social functions.
+
+They protect soil, regulate water cycles and support biodiversity.
+
+Forests also provide fuel, food, bamboo and other materials.
+
+In hill regions, forests help reduce erosion and slope instability.
+
+Excessive deforestation can damage watersheds and increase disaster risks.
+
+Forest protection should therefore involve local communities.
+
+Sustainable management allows people to use forest resources while maintaining ecological balance.`,
+      },
+      {
+        title: "Landslides in Mizoram",
+        body: `Landslides are common hazards in steep hill environments.
+
+Heavy rainfall is an important natural trigger.
+
+Human activities such as slope cutting, poor drainage and unplanned construction can increase risk.
+
+Landslides damage roads, houses and public infrastructure.
+
+Scientific slope assessment and drainage systems can reduce vulnerability.
+
+Construction regulations should consider local geology.
+
+Public awareness and disaster preparedness are also important.
+
+Landslide management therefore requires cooperation between engineering, environmental planning and local administration.`,
+      },
+      {
+        title: "Geography and Development",
+        body: `Geography strongly influences economic development.
+
+Terrain affects transport costs, settlement and agriculture.
+
+Landlocked and mountainous regions may face greater infrastructure costs.
+
+However, geography can also create opportunities through tourism, biodiversity and specialised agriculture.
+
+Development policies should be adapted to local conditions.
+
+Mizoram cannot simply copy development models designed for flat or heavily industrialised regions.
+
+Hill-sensitive planning can combine infrastructure, environmental protection and local economic opportunity.`,
+      },
+    ],
+  },
+
+  // =========================================================
+  // EDUCATION
+  // =========================================================
+  {
+    name: "Education",
+
+    shortNotes: [
+      {
+        title: "Education",
+        body:
+          "Education is the process of developing knowledge, skills, values, attitudes and personality.",
+      },
+      {
+        title: "Formal Education",
+        body:
+          "Formal education is organised learning provided through recognised schools, colleges and universities.",
+      },
+      {
+        title: "Informal Education",
+        body:
+          "Informal education is learning gained naturally through family, community, media and everyday experience.",
+      },
+      {
+        title: "Non-Formal Education",
+        body:
+          "Non-formal education is organised learning outside the regular formal school system.",
+      },
+      {
+        title: "Aims of Education",
+        body:
+          "The aims of education include knowledge, character, citizenship, livelihood, creativity and social development.",
+      },
+      {
+        title: "Curriculum",
+        body:
+          "Curriculum means the planned learning experiences provided by an educational institution.",
+      },
+      {
+        title: "Teaching",
+        body:
+          "Teaching is the planned process of helping learners acquire knowledge, understanding, skills and values.",
+      },
+      {
+        title: "Learning",
+        body:
+          "Learning is a relatively lasting change in knowledge, skill, understanding or behaviour through experience.",
+      },
+      {
+        title: "Teacher",
+        body:
+          "A teacher guides learning, develops students and creates an effective educational environment.",
+      },
+      {
+        title: "Classroom Management",
+        body:
+          "Classroom management means organising the classroom so that effective learning and discipline can take place.",
+      },
+      {
+        title: "Evaluation",
+        body:
+          "Evaluation is the systematic judgement of student learning or educational effectiveness.",
+      },
+      {
+        title: "Assessment",
+        body:
+          "Assessment is the process of collecting information about student learning and performance.",
+      },
+      {
+        title: "Inclusive Education",
+        body:
+          "Inclusive education aims to provide meaningful learning opportunities for students with diverse abilities and backgrounds.",
+      },
+      {
+        title: "Value Education",
+        body:
+          "Value education develops moral judgement, responsibility, honesty, respect and concern for society.",
+      },
+      {
+        title: "Educational Technology",
+        body:
+          "Educational technology uses tools and methods to improve teaching and learning.",
+      },
+      {
+        title: "Digital Literacy",
+        body:
+          "Digital literacy is the ability to use digital tools safely, critically and effectively.",
+      },
+      {
+        title: "Guidance",
+        body:
+          "Guidance helps learners understand educational, personal and career choices.",
+      },
+      {
+        title: "Counselling",
+        body:
+          "Counselling is a supportive process that helps individuals understand and manage personal or educational problems.",
+      },
+      {
+        title: "Motivation",
+        body:
+          "Motivation refers to forces that encourage and direct learning behaviour.",
+      },
+      {
+        title: "Child-Centred Education",
+        body:
+          "Child-centred education places the needs, abilities and active participation of learners at the centre of teaching.",
+      },
+    ],
+
+    longNotes: [
+      {
+        title: "Meaning and Aims of Education",
+        body: `Education develops knowledge, skills, values and personality.
+
+It occurs through schools as well as family, community and experience.
+
+One important aim is intellectual development.
+
+Education should also prepare people for employment and responsible citizenship.
+
+Moral and social development are equally important.
+
+For Mizoram, education has played a major role in social transformation.
+
+The modern challenge is to move beyond certificates toward knowledge, skill and problem-solving ability.
+
+Education should ultimately develop capable and responsible human beings.`,
+      },
+      {
+        title: "Role of Education in Society",
+        body: `Education transmits knowledge and culture from one generation to another.
+
+It teaches language, social norms and citizenship.
+
+Education also supports economic development by building skills.
+
+At the same time, education can promote social change.
+
+Schools may challenge discrimination and encourage scientific thinking.
+
+In Mizoram, education contributed to literacy and social transformation.
+
+However, educated unemployment shows that educational achievement must be connected with economic opportunities.
+
+Education is therefore both a social institution and an instrument of development.`,
+      },
+      {
+        title: "Teacher and Classroom Management",
+        body: `A teacher is a guide, organiser and facilitator of learning.
+
+Good teaching requires subject knowledge and communication skills.
+
+Classroom management creates an environment where students can learn effectively.
+
+Teachers need to maintain discipline without creating unnecessary fear.
+
+Students differ in ability, confidence and learning speed.
+
+Good teachers adapt methods when necessary.
+
+Modern teachers also use digital tools and support students facing emotional or academic difficulties.
+
+The quality of education depends greatly on the quality of classroom interaction.`,
+      },
+      {
+        title: "Value Education",
+        body: `Value education develops moral and social responsibility.
+
+Important values include honesty, respect, discipline, compassion and responsibility.
+
+Academic knowledge without ethical responsibility can be harmful.
+
+Schools therefore play an important role in character development.
+
+Value education should not consist only of lectures about morality.
+
+Students learn values through experience, relationships and the behaviour of adults.
+
+In democratic society, tolerance and respect for equality are especially important.
+
+Education should therefore develop both competence and conscience.`,
+      },
+      {
+        title: "Education in Mizoram",
+        body: `Education played a major role in modern Mizo social development.
+
+Missionary activities contributed strongly to literacy and formal schooling.
+
+Today Mizoram has a strong educational culture.
+
+However, high literacy does not automatically guarantee high educational quality.
+
+Problems include educated unemployment, limited technical opportunities and uneven educational resources.
+
+Students increasingly need digital literacy, communication skills and practical training.
+
+Education should also address local issues such as agriculture, environment, governance and entrepreneurship.
+
+Mizoram's next educational challenge is therefore quality and relevance rather than literacy alone.`,
+      },
+      {
+        title: "Inclusive Education",
+        body: `Inclusive education aims to provide meaningful learning opportunities for all students.
+
+Learners may differ in physical ability, language, economic background or learning needs.
+
+Inclusive classrooms attempt to reduce unnecessary barriers.
+
+Teachers may adapt teaching methods and learning materials.
+
+Schools should create respectful environments where differences are not treated as weaknesses.
+
+Inclusive education promotes equality and social participation.
+
+It requires trained teachers, supportive infrastructure and cooperation with families.
+
+Education becomes genuinely democratic when different learners can participate effectively.`,
+      },
+      {
+        title: "Educational Technology",
+        body: `Educational technology uses digital and non-digital tools to improve learning.
+
+Examples include presentations, videos, online quizzes, learning platforms and educational applications.
+
+Technology can make lessons interactive and provide access to wider resources.
+
+However, technology does not automatically improve education.
+
+Teachers must select tools according to learning objectives.
+
+Students also need digital literacy and cyber safety.
+
+Unequal internet access can create new educational inequality.
+
+Technology should therefore support good teaching rather than replace teachers.`,
+      },
+      {
+        title: "Assessment and Evaluation",
+        body: `Assessment collects information about student learning.
+
+Tests, assignments, projects and classroom activities can all provide evidence.
+
+Formative assessment is used during learning to provide feedback.
+
+Summative assessment evaluates achievement at the end of a course or unit.
+
+Evaluation goes beyond marks and judges broader educational effectiveness.
+
+Good assessment should be fair and connected with learning objectives.
+
+Overdependence on memorisation can weaken genuine understanding.
+
+Effective education therefore uses different forms of assessment.`,
+      },
+      {
+        title: "Motivation in Learning",
+        body: `Motivation encourages learners to begin and continue learning.
+
+Intrinsic motivation comes from personal interest or satisfaction.
+
+Extrinsic motivation comes from external rewards such as marks or recognition.
+
+Both forms can influence students.
+
+Teachers can improve motivation by making lessons meaningful and achievable.
+
+Encouragement and constructive feedback also matter.
+
+Excessive fear may reduce confidence and curiosity.
+
+Learning becomes stronger when students understand why a subject is useful.`,
+      },
+      {
+        title: "Guidance and Counselling",
+        body: `Guidance and counselling support students in educational, career and personal development.
+
+Guidance provides information and direction.
+
+Counselling involves a more personal helping relationship.
+
+Students may require help with course choices, careers or emotional difficulties.
+
+Schools and colleges can provide structured support systems.
+
+Confidentiality and respect are important.
+
+Good guidance helps students make informed decisions.
+
+Educational institutions should therefore support development beyond academic teaching alone.`,
+      },
+    ],
+  },
+
+  // =========================================================
+  // ENVIRONMENTAL STUDIES
+  // =========================================================
+  {
+    name: "Environmental Studies",
+
+    shortNotes: [
+      {
+        title: "Environment",
+        body:
+          "Environment includes natural and human-made surroundings that affect living organisms.",
+      },
+      {
+        title: "Ecosystem",
+        body:
+          "An ecosystem is a community of organisms interacting with each other and with the physical environment.",
+      },
+      {
+        title: "Biotic Components",
+        body:
+          "Biotic components are the living parts of an ecosystem such as plants, animals and microorganisms.",
+      },
+      {
+        title: "Abiotic Components",
+        body:
+          "Abiotic components are non-living environmental factors such as water, soil, temperature and sunlight.",
+      },
+      {
+        title: "Food Chain",
+        body:
+          "A food chain shows the transfer of food and energy from one organism to another.",
+      },
+      {
+        title: "Food Web",
+        body:
+          "A food web is a network of interconnected food chains within an ecosystem.",
+      },
+      {
+        title: "Biodiversity",
+        body:
+          "Biodiversity refers to variation among genes, species and ecosystems.",
+      },
+      {
+        title: "Conservation",
+        body:
+          "Conservation means protecting and sustainably managing natural resources and biodiversity.",
       },
       {
         title: "Pollution",
-        body: "Pollution is the contamination of air, water, soil or surroundings by harmful substances.",
+        body:
+          "Pollution is contamination of the environment by harmful substances or activities.",
+      },
+      {
+        title: "Air Pollution",
+        body:
+          "Air pollution occurs when harmful gases, particles or chemicals contaminate the atmosphere.",
+      },
+      {
+        title: "Water Pollution",
+        body:
+          "Water pollution occurs when harmful substances contaminate rivers, lakes, groundwater or other water sources.",
+      },
+      {
+        title: "Soil Pollution",
+        body:
+          "Soil pollution is contamination of land by harmful chemicals, waste or other pollutants.",
       },
       {
         title: "Climate Change",
-        body: "Climate change means long-term changes in temperature, rainfall and weather patterns.",
+        body:
+          "Climate change means long-term changes in global or regional temperature, rainfall and weather patterns.",
+      },
+      {
+        title: "Global Warming",
+        body:
+          "Global warming refers to the long-term increase in Earth's average temperature.",
+      },
+      {
+        title: "Greenhouse Effect",
+        body:
+          "The greenhouse effect is warming caused when atmospheric gases trap part of the heat radiated by Earth.",
+      },
+      {
+        title: "Deforestation",
+        body:
+          "Deforestation is the large-scale removal of forest cover.",
+      },
+      {
+        title: "Renewable Resources",
+        body:
+          "Renewable resources can naturally regenerate, such as sunlight, wind and flowing water.",
+      },
+      {
+        title: "Non-Renewable Resources",
+        body:
+          "Non-renewable resources exist in limited quantities and regenerate extremely slowly, such as coal and petroleum.",
       },
       {
         title: "Sustainable Development",
-        body: "Sustainable development meets present needs without destroying the ability of future generations to meet theirs.",
-      },
-    ],
-    longNotes: [
-      {
-        title: "Meaning and Importance of Environment",
-        body: `Environment refers to the surroundings in which living beings exist. It includes air, water, land, forests, animals, climate and human-made surroundings. Human life depends completely on the environment for food, water, shelter, energy and survival.
-
-Environmental studies is important because modern development has created serious ecological problems. Deforestation, pollution, climate change, waste generation and biodiversity loss affect human health and economic life.
-
-In Mizoram, the environment is closely connected with hills, forests, rivers, agriculture and community life. Damage to the environment can lead to landslides, water problems, soil erosion and loss of livelihood.
-
-Environmental awareness teaches people that development and nature must be balanced. Roads, buildings and industries are necessary, but they must be planned carefully. A society that destroys its environment destroys its own future.
-
-Therefore, environment is not only a science topic; it is a development, governance and survival issue.`,
-      },
-      {
-        title: "Biodiversity Conservation",
-        body: `Biodiversity means the variety of life forms, including plants, animals, insects, birds, microorganisms and ecosystems. It is important because every species plays a role in maintaining ecological balance.
-
-Mizoram is rich in biodiversity because of its forests, hills and location in the Indo-Myanmar biodiversity region. Forests provide habitat, regulate rainfall, protect soil and support local livelihoods.
-
-Biodiversity is threatened by deforestation, hunting, habitat destruction, pollution, climate change and unplanned development. Loss of biodiversity weakens ecosystems and affects future generations.
-
-Conservation means protecting species, habitats and ecological processes. It can be done through protected areas, community forests, awareness, sustainable farming and control of illegal exploitation.
-
-For Mizoram, biodiversity conservation must involve local communities because people live close to forests and depend on natural resources. Conservation should not be anti-people; it should combine ecological protection with sustainable livelihood.`,
-      },
-      {
-        title: "Climate Change and Society",
-        body: `Climate change refers to long-term changes in temperature, rainfall and weather patterns. It is caused mainly by greenhouse gas emissions, deforestation and unsustainable development.
-
-Climate change affects agriculture, water supply, health, biodiversity and disaster risk. In hill states like Mizoram, its effects may appear through irregular rainfall, landslides, crop damage, heat stress and water scarcity.
-
-Climate change is not only an environmental issue. It is also a social and economic issue because poor people are often more vulnerable. Farmers, daily workers and rural communities may suffer more from environmental instability.
-
-Responses to climate change include reducing emissions, protecting forests, improving drainage, promoting sustainable agriculture, disaster preparedness and climate-resilient infrastructure.
-
-For Mizoram, climate policy must be local. Roads, buildings, agriculture and town planning should consider rainfall, slope stability and ecological fragility. Climate awareness must become part of education and governance.`,
-      },
-      {
-        title: "Sustainable Development",
-        body: `Sustainable development means development that meets present needs without damaging the ability of future generations to meet their needs. It tries to balance economic growth, social justice and environmental protection.
-
-Development is necessary because people need roads, schools, hospitals, jobs and income. But development becomes dangerous when it destroys forests, pollutes rivers, displaces communities or creates inequality.
-
-In Mizoram, sustainable development is especially important because the environment is fragile and land is limited. Road construction, urban growth, tourism and agriculture must be planned carefully to avoid landslides, waste problems and ecological damage.
-
-Sustainable development also requires good governance. Corruption, poor planning and short-term politics can destroy both development and environment. People must participate in planning and monitoring.
-
-A sustainable Mizoram should combine infrastructure, local economy, cultural protection and ecological balance. True development is not only faster growth but safer and fairer growth.`,
+        body:
+          "Sustainable development meets present needs without seriously reducing the ability of future generations to meet their needs.",
       },
       {
         title: "Waste Management",
-        body: `Waste management refers to the proper collection, transport, treatment and disposal of waste. It includes household waste, plastic, electronic waste, medical waste and industrial waste.
+        body:
+          "Waste management includes proper collection, segregation, treatment, recycling and disposal of waste.",
+      },
+    ],
 
-Poor waste management creates pollution, bad smell, blocked drains, disease and damage to rivers and soil. In hill towns like Aizawl, waste problems become more serious because land is limited and slopes make disposal difficult.
+    longNotes: [
+      {
+        title: "Meaning and Importance of Environment",
+        body: `Environment includes the natural and human-made surroundings in which living organisms exist.
 
-Good waste management begins with segregation. Biodegradable waste, plastic, paper, metal and hazardous waste should be separated. Recycling, composting and reduction of single-use plastic can reduce pressure on dumping sites.
+Human beings depend on land, water, air and biodiversity.
 
-Public awareness is essential. Government alone cannot manage waste if citizens continue careless disposal. Schools, churches, local councils and youth groups can play an important role.
+Environmental degradation therefore directly affects human welfare.
 
-For Mizoram, waste management must become part of urban planning and civic culture. Clean surroundings are not only about beauty; they are about health, environment and responsible citizenship.`,
+Modern development has increased pollution, waste generation and pressure on natural resources.
+
+Environmental Studies examines these relationships.
+
+For Mizoram, forests and hill ecosystems are particularly important.
+
+Environmental protection is not simply about preserving scenery.
+
+It is closely connected with public health, agriculture, disaster safety and long-term development.`,
+      },
+      {
+        title: "Ecosystem",
+        body: `An ecosystem consists of living organisms and their physical environment.
+
+Living components include producers, consumers and decomposers.
+
+Non-living components include sunlight, water, soil and temperature.
+
+Energy generally enters ecosystems through sunlight.
+
+Plants convert solar energy into chemical energy.
+
+Consumers obtain energy by feeding on other organisms.
+
+Decomposers recycle nutrients from dead matter.
+
+Ecosystems therefore depend on continuous energy flow and nutrient cycling.`,
+      },
+      {
+        title: "Biodiversity Conservation",
+        body: `Biodiversity includes variation within species, between species and among ecosystems.
+
+It supports ecological stability and human livelihoods.
+
+Mizoram contains rich forest biodiversity because of its location and climate.
+
+Habitat destruction, hunting, pollution and climate change can reduce biodiversity.
+
+Conservation may take place through protected areas and community management.
+
+Local participation is particularly important because communities depend on natural resources.
+
+Conservation should therefore combine environmental protection with sustainable livelihood opportunities.`,
+      },
+      {
+        title: "Climate Change and Society",
+        body: `Climate change refers to long-term shifts in temperature and weather patterns.
+
+Human greenhouse gas emissions are now a major driver of global climate change.
+
+Climate impacts include changing rainfall, heat waves, floods and ecosystem stress.
+
+Poor communities are often especially vulnerable.
+
+In hill regions, intense rainfall can increase landslide risks.
+
+Agriculture and water supply may also be affected.
+
+Responses include reducing emissions and improving climate adaptation.
+
+Climate change is therefore both an environmental and social challenge.`,
+      },
+      {
+        title: "Sustainable Development",
+        body: `Sustainable development attempts to balance economic growth, social welfare and environmental protection.
+
+People need roads, schools, hospitals and employment.
+
+However, development that destroys ecosystems may create long-term costs.
+
+Sustainable planning considers future generations.
+
+In Mizoram, infrastructure development should recognise fragile hill environments.
+
+Roads and buildings require careful drainage and slope management.
+
+Local economic development can also promote sustainable agriculture and tourism.
+
+Development should therefore be judged by both present benefits and long-term consequences.`,
+      },
+      {
+        title: "Waste Management",
+        body: `Waste management includes collection, segregation, treatment and disposal of waste.
+
+Poor waste management causes pollution and public-health problems.
+
+Biodegradable waste can often be composted.
+
+Paper, metal, plastic and glass can be separated for recycling.
+
+Hazardous and medical waste require special treatment.
+
+Hill towns face additional difficulties because suitable disposal land is limited.
+
+Citizens also have responsibility for reducing litter and unnecessary waste.
+
+Good waste management therefore requires both public infrastructure and responsible behaviour.`,
+      },
+      {
+        title: "Air Pollution",
+        body: `Air pollution occurs when harmful gases and particles enter the atmosphere.
+
+Sources include vehicles, industries, construction dust and burning of waste.
+
+Air pollution can damage lungs and increase respiratory illness.
+
+Some pollutants also contribute to climate change.
+
+Urban planning and cleaner transport can reduce emissions.
+
+Public awareness is also important.
+
+Air quality should be treated as a public-health issue.
+
+Prevention is usually more effective than dealing with damage later.`,
+      },
+      {
+        title: "Water Pollution",
+        body: `Water pollution occurs when harmful substances contaminate water sources.
+
+Sewage, waste, chemicals and agricultural runoff are common causes.
+
+Polluted water harms aquatic ecosystems and human health.
+
+Clean water requires protection of rivers, springs and watersheds.
+
+Wastewater should be treated before discharge.
+
+In hill regions, household waste can easily enter streams during heavy rain.
+
+Protecting water therefore requires both infrastructure and community responsibility.`,
+      },
+      {
+        title: "Deforestation and Forest Conservation",
+        body: `Deforestation is the reduction or removal of forest cover.
+
+Forests protect soil, store carbon and support biodiversity.
+
+In hill regions they also help stabilise slopes and watersheds.
+
+Deforestation can increase erosion and reduce habitat.
+
+Forest conservation should involve sustainable resource use.
+
+Community participation can strengthen protection because local people understand local forest conditions.
+
+Afforestation and responsible land management are also important.
+
+Forest conservation therefore supports both ecology and human welfare.`,
+      },
+      {
+        title: "Environmental Problems in Mizoram",
+        body: `Mizoram faces several environmental challenges connected with its hill geography.
+
+Landslides can be intensified by heavy rainfall and careless slope cutting.
+
+Urban growth creates waste and drainage problems.
+
+Forest degradation can affect biodiversity and soil stability.
+
+Road development is necessary but must be carefully engineered.
+
+Climate change may increase uncertainty in rainfall patterns.
+
+Environmental protection should therefore be integrated with development policy.
+
+Sustainable Mizoram requires cooperation between government, communities, educational institutions and citizens.`,
       },
     ],
   },
@@ -759,8 +2548,22 @@ export default function CollegeNotesPage() {
   const [search, setSearch] = useState("");
 
   const subject = useMemo(() => {
-    return subjects.find((item) => item.name === selectedSubject) ?? subjects[0];
+    return (
+      subjects.find((item) => item.name === selectedSubject) ?? subjects[0]
+    );
   }, [selectedSubject]);
+
+  const filteredShortNotes = useMemo(() => {
+    const term = search.trim().toLowerCase();
+
+    if (!term) return subject.shortNotes;
+
+    return subject.shortNotes.filter(
+      (note) =>
+        note.title.toLowerCase().includes(term) ||
+        note.body.toLowerCase().includes(term)
+    );
+  }, [search, subject]);
 
   const filteredLongNotes = useMemo(() => {
     const term = search.trim().toLowerCase();
@@ -777,6 +2580,7 @@ export default function CollegeNotesPage() {
   return (
     <main className="min-h-screen bg-slate-950 px-4 py-8 text-slate-100">
       <div className="mx-auto max-w-7xl">
+        {/* HEADER */}
         <section className="mb-8 rounded-3xl border border-cyan-400/40 bg-slate-900 p-6 shadow-[0_0_40px_rgba(34,211,238,0.25)]">
           <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">
             Mizoram Arts College Notes
@@ -787,21 +2591,22 @@ export default function CollegeNotesPage() {
           </h1>
 
           <p className="mt-4 max-w-4xl text-slate-300">
-            Simple English but college-standard notes for Mizoram students.
-            Each subject contains short revision notes and long exam-style
-            explanations with concepts, examples and local relevance.
+            Easy-to-study college notes for Mizoram students. Choose a subject,
+            search a topic and read short revision notes or longer exam-style
+            explanations.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/"
-              className="rounded-xl border border-cyan-400 px-5 py-3 font-semibold text-cyan-300 hover:bg-cyan-400/10"
+              className="rounded-xl border border-cyan-400 px-5 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-400/10"
             >
-              Back to Mock Test
+              ← Back to Mock Test
             </Link>
           </div>
         </section>
 
+        {/* SUBJECT BUTTONS */}
         <section className="mb-6 flex flex-wrap gap-3">
           {subjects.map((item) => (
             <button
@@ -810,7 +2615,7 @@ export default function CollegeNotesPage() {
                 setSelectedSubject(item.name);
                 setSearch("");
               }}
-              className={`rounded-full border px-4 py-2 text-sm font-semibold ${
+              className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${
                 selectedSubject === item.name
                   ? "bg-cyan-400 text-slate-950"
                   : "border-cyan-400 text-cyan-300 hover:bg-cyan-400/10"
@@ -821,53 +2626,91 @@ export default function CollegeNotesPage() {
           ))}
         </section>
 
+        {/* SEARCH */}
         <section className="mb-6 rounded-3xl border border-cyan-400/30 bg-slate-900 p-5">
           <label className="text-sm font-semibold text-cyan-300">
             Search inside {subject.name}
           </label>
+
           <input
             value={search}
             onChange={(event) => setSearch(event.target.value)}
-            placeholder="Search title or keyword..."
-            className="mt-3 w-full rounded-2xl border border-cyan-400/40 bg-slate-950 px-4 py-3 text-slate-100 outline-none focus:border-cyan-300"
+            placeholder="Search topic or keyword..."
+            className="mt-3 w-full rounded-2xl border border-cyan-400/40 bg-slate-950 px-4 py-3 text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-cyan-300"
           />
+
+          {search && (
+            <p className="mt-3 text-sm text-slate-400">
+              Found {filteredShortNotes.length} short note
+              {filteredShortNotes.length !== 1 ? "s" : ""} and{" "}
+              {filteredLongNotes.length} long note
+              {filteredLongNotes.length !== 1 ? "s" : ""}.
+            </p>
+          )}
         </section>
 
+        {/* NOTES */}
         <section className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
+          {/* SHORT NOTES */}
           <div className="rounded-3xl border border-cyan-400/40 bg-slate-900 p-6">
-            <h2 className="text-2xl font-bold text-cyan-300">
-              Short Notes: {subject.name}
-            </h2>
+            <div className="flex items-center justify-between gap-3">
+              <h2 className="text-2xl font-bold text-cyan-300">
+                Short Notes
+              </h2>
+
+              <span className="rounded-full border border-cyan-400/30 bg-slate-950 px-3 py-1 text-xs text-slate-400">
+                {filteredShortNotes.length}
+              </span>
+            </div>
+
+            <p className="mt-1 text-sm text-slate-400">{subject.name}</p>
 
             <div className="mt-5 space-y-4">
-              {subject.shortNotes.map((note) => (
+              {filteredShortNotes.map((note) => (
                 <article
                   key={note.title}
-                  className="rounded-2xl border border-cyan-400/20 bg-slate-950 p-4"
+                  className="rounded-2xl border border-cyan-400/20 bg-slate-950 p-4 transition hover:border-cyan-400/40"
                 >
                   <h3 className="font-bold text-white">{note.title}</h3>
+
                   <p className="mt-2 text-sm leading-6 text-slate-300">
                     {note.body}
                   </p>
                 </article>
               ))}
+
+              {filteredShortNotes.length === 0 && (
+                <p className="rounded-2xl border border-red-400/40 bg-red-400/10 p-4 text-red-200">
+                  No short note found for this search.
+                </p>
+              )}
             </div>
           </div>
 
+          {/* LONG NOTES */}
           <div className="rounded-3xl border border-cyan-400/40 bg-slate-900 p-6">
-            <h2 className="text-2xl font-bold text-cyan-300">
-              Long Notes: {subject.name}
-            </h2>
+            <div className="flex items-center justify-between gap-3">
+              <h2 className="text-2xl font-bold text-cyan-300">
+                Long Notes
+              </h2>
+
+              <span className="rounded-full border border-cyan-400/30 bg-slate-950 px-3 py-1 text-xs text-slate-400">
+                {filteredLongNotes.length}
+              </span>
+            </div>
+
+            <p className="mt-1 text-sm text-slate-400">{subject.name}</p>
 
             <div className="mt-5 space-y-5">
               {filteredLongNotes.map((note) => (
                 <article
                   key={note.title}
-                  className="rounded-2xl border border-cyan-400/20 bg-slate-950 p-5"
+                  className="rounded-2xl border border-cyan-400/20 bg-slate-950 p-5 transition hover:border-cyan-400/40"
                 >
                   <h3 className="text-xl font-bold text-white">
                     {note.title}
                   </h3>
+
                   <p className="mt-3 whitespace-pre-line leading-7 text-slate-300">
                     {note.body}
                   </p>
@@ -876,11 +2719,18 @@ export default function CollegeNotesPage() {
 
               {filteredLongNotes.length === 0 && (
                 <p className="rounded-2xl border border-red-400/40 bg-red-400/10 p-4 text-red-200">
-                  No note found for this search.
+                  No long note found for this search.
                 </p>
               )}
             </div>
           </div>
+        </section>
+
+        {/* FOOTER */}
+        <section className="mt-8 rounded-3xl border border-cyan-400/20 bg-slate-900/70 p-5 text-center">
+          <p className="text-sm text-slate-400">
+            Free study material for students. Keep learning. 📖
+          </p>
         </section>
       </div>
     </main>

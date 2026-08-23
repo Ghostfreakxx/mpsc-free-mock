@@ -17678,7 +17678,13 @@ export default function HomePage() {
             >
               Open Arts College Notes
             </Link>
-          </div>
+           <Link
+    href="/neet"
+    className="rounded-xl border border-cyan-400 px-5 py-3 font-semibold text-cyan-300 hover:bg-cyan-400/10"
+  >
+    🧬 NEET Science Practice
+  </Link>
+</div>
         </section>
 
         <section className="mb-6 flex flex-wrap gap-3">
