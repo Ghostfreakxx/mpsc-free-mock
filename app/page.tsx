@@ -17671,16 +17671,17 @@ export default function HomePage() {
             explanation, elimination method and hints for Mizoram students.
           </p>
 
-          <div className="mt-6">
-            <Link
-              href="/college-notes"
-              className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 hover:bg-cyan-300"
-            >
-              Open Arts College Notes
-            </Link>
-           <Link
+       <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+  <Link
+    href="/college-notes"
+    className="w-full rounded-xl bg-cyan-400 px-5 py-3 text-center font-semibold text-slate-950 hover:bg-cyan-300 sm:w-auto"
+  >
+    Open Arts College Notes
+  </Link>
+
+  <Link
     href="/neet"
-    className="rounded-xl border border-cyan-400 px-5 py-3 font-semibold text-cyan-300 hover:bg-cyan-400/10"
+    className="w-full rounded-xl border border-cyan-400 px-5 py-3 text-center font-semibold text-cyan-300 hover:bg-cyan-400/10 sm:w-auto"
   >
     🧬 NEET Science Practice
   </Link>
