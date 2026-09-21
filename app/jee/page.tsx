@@ -4,8 +4,22 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { jeeQuestions } from "../data/jeeQuestions";
 import { useShuffledQuiz } from "../lib/useShuffledQuiz";
+import { createQuestionKeyer } from "../lib/questionKey";
+import {
+  getBookmarks,
+  getStats,
+  recordAnswer,
+  toggleBookmark,
+  EMPTY_BOOKMARKS,
+  EMPTY_STATS,
+} from "../lib/progressStore";
+import { useProgressValue } from "../lib/useProgressValue";
+import ProgressPanel from "../components/ProgressPanel";
+import MockTest from "../components/MockTest";
 
+const APP_ID = "jee";
 const questions = jeeQuestions;
+const questionKey = createQuestionKeyer(questions);
 
 const subjects = [
   "All",
@@ -16,6 +30,11 @@ export default function JeePage() {
   const [subject, setSubject] = useState("All");
   const [category, setCategory] = useState("All");
   const [selectedAnswer, setSelectedAnswer] = useState("");
+  const [mode, setMode] = useState<"practice" | "test">("practice");
+  const [bookmarkedOnly, setBookmarkedOnly] = useState(false);
+
+  const bookmarks = useProgressValue(() => getBookmarks(APP_ID), EMPTY_BOOKMARKS);
+  const stats = useProgressValue(() => getStats(APP_ID), EMPTY_STATS);
 
   const categories = useMemo(() => {
     const source =
@@ -27,16 +46,21 @@ export default function JeePage() {
   }, [subject]);
 
   const filteredQuestions = useMemo(() => {
-    return questions.filter((q) => {
+    const base = questions.filter((q) => {
       const subjectMatch = subject === "All" || q.subject === subject;
       const categoryMatch = category === "All" || q.category === category;
 
       return subjectMatch && categoryMatch;
     });
-  }, [subject, category]);
+
+    if (!bookmarkedOnly) return base;
+    return base.filter((q) => bookmarks.includes(questionKey(q)));
+  }, [subject, category, bookmarkedOnly, bookmarks]);
 
   const { currentQuestion, questionNumber, total, next } =
     useShuffledQuiz(filteredQuestions);
+  const currentKey = questionKey(currentQuestion);
+  const isBookmarked = bookmarks.includes(currentKey);
 
   function changeSubject(newSubject: string) {
     setSubject(newSubject);
@@ -49,12 +73,25 @@ export default function JeePage() {
     setSelectedAnswer("");
   }
 
+  function selectAnswer(option: string) {
+    if (!currentQuestion) return;
+    if (!selectedAnswer) {
+      recordAnswer(APP_ID, currentQuestion.category, option === currentQuestion.answer);
+    }
+    setSelectedAnswer(option);
+  }
+
   function nextQuestion() {
     setSelectedAnswer("");
 
     if (filteredQuestions.length > 0) {
       next();
     }
+  }
+
+  function toggleBookmarkedOnly() {
+    setBookmarkedOnly((prev) => !prev);
+    setSelectedAnswer("");
   }
 
   const isCorrect =
@@ -88,6 +125,8 @@ export default function JeePage() {
             </Link>
           </div>
         </section>
+
+        <ProgressPanel stats={stats} currentLabel={category} />
 
         {/* SUBJECT FILTER */}
         <section className="mb-6 rounded-3xl border border-cyan-400/30 bg-slate-900 p-5">
@@ -135,14 +174,50 @@ export default function JeePage() {
           </div>
         </section>
 
+        <section className="mb-6 flex flex-wrap gap-3">
+          <button
+            onClick={toggleBookmarkedOnly}
+            className={`rounded-full border px-4 py-2 text-sm font-semibold ${
+              bookmarkedOnly
+                ? "bg-yellow-400 text-slate-950 border-yellow-400"
+                : "border-yellow-400/60 text-yellow-300 hover:bg-yellow-400/10"
+            }`}
+          >
+            ⭐ {bookmarkedOnly ? "Showing Bookmarked" : "Show Bookmarked Only"}
+          </button>
+
+          <button
+            onClick={() => setMode(mode === "test" ? "practice" : "test")}
+            className={`rounded-full border px-4 py-2 text-sm font-semibold ${
+              mode === "test"
+                ? "bg-cyan-400 text-slate-950 border-cyan-400"
+                : "border-cyan-400 text-cyan-300 hover:bg-cyan-400/10"
+            }`}
+          >
+            📝 {mode === "test" ? "Exit Timed Test" : "Start Timed Mock Test"}
+          </button>
+        </section>
+
         {/* QUESTION AREA */}
-        {currentQuestion ? (
+        {mode === "test" ? (
+          <MockTest pool={filteredQuestions} onExit={() => setMode("practice")} />
+        ) : currentQuestion ? (
           <section className="grid gap-6 lg:grid-cols-2">
             {/* QUESTION */}
             <div className="rounded-3xl border border-cyan-400/50 bg-slate-900 p-6 shadow-[0_0_25px_rgba(34,211,238,0.15)]">
-              <p className="text-sm text-cyan-300">
-                Question {questionNumber} of {total}
-              </p>
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <p className="text-sm text-cyan-300">
+                  Question {questionNumber} of {total}
+                </p>
+
+                <button
+                  onClick={() => toggleBookmark(APP_ID, currentKey)}
+                  className={`text-xl ${isBookmarked ? "text-yellow-300" : "text-slate-500 hover:text-yellow-300"}`}
+                  aria-label="Toggle bookmark"
+                >
+                  {isBookmarked ? "★" : "☆"}
+                </button>
+              </div>
 
               <p className="mt-2 text-sm text-slate-400">
                 {currentQuestion.subject} | {currentQuestion.category}
@@ -156,7 +231,7 @@ export default function JeePage() {
                 {currentQuestion.options.map((option) => (
                   <button
                     key={option}
-                    onClick={() => setSelectedAnswer(option)}
+                    onClick={() => selectAnswer(option)}
                     className={`rounded-2xl border p-4 text-left transition ${
                       selectedAnswer === option
                         ? option === currentQuestion.answer
