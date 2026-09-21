@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { useShuffledQuiz } from "../lib/useShuffledQuiz";
 
 const questions = [
   {
@@ -8067,7 +8068,6 @@ const subjects = [
 
 export default function NeetPage() {
   const [subject, setSubject] = useState("All");
-  const [index, setIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
 
   const filteredQuestions = useMemo(() => {
@@ -8076,17 +8076,17 @@ export default function NeetPage() {
     return questions.filter((q) => q.subject === subject);
   }, [subject]);
 
-  const currentQuestion =
-    filteredQuestions[index % filteredQuestions.length];
+  const { currentQuestion: activeQuestion, questionNumber, total, next } =
+    useShuffledQuiz(filteredQuestions);
+  const currentQuestion = activeQuestion!;
 
   function nextQuestion() {
     setSelectedAnswer("");
-    setIndex((prev) => (prev + 1) % filteredQuestions.length);
+    next();
   }
 
   function changeSubject(newSubject: string) {
     setSubject(newSubject);
-    setIndex(0);
     setSelectedAnswer("");
   }
 
@@ -8138,7 +8138,7 @@ export default function NeetPage() {
         <section className="grid gap-6 lg:grid-cols-2">
           <div className="rounded-3xl border border-cyan-400/50 bg-slate-900 p-6 shadow-[0_0_25px_rgba(34,211,238,0.15)]">
             <p className="text-sm text-cyan-300">
-              Question {index + 1} of {filteredQuestions.length} |{" "}
+              Question {questionNumber} of {total} |{" "}
               {currentQuestion.subject}
             </p>
 

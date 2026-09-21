@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { useShuffledQuiz } from "./lib/useShuffledQuiz";
 
 const questions = [
   {
@@ -17617,7 +17618,6 @@ const categories = ["All", ...Array.from(new Set(questions.map((q) => q.category
 
 export default function HomePage() {
   const [category, setCategory] = useState("All");
-  const [index, setIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
 
   const filteredQuestions = useMemo(() => {
@@ -17625,16 +17625,17 @@ export default function HomePage() {
     return questions.filter((q) => q.category === category);
   }, [category]);
 
-  const currentQuestion = filteredQuestions[index % filteredQuestions.length];
+  const { currentQuestion: activeQuestion, questionNumber, total, next } =
+    useShuffledQuiz(filteredQuestions);
+  const currentQuestion = activeQuestion!;
 
   function nextQuestion() {
     setSelectedAnswer("");
-    setIndex((prev) => (prev + 1) % filteredQuestions.length);
+    next();
   }
 
   function changeCategory(cat: string) {
     setCategory(cat);
-    setIndex(0);
     setSelectedAnswer("");
   }
 return (
@@ -17684,6 +17685,13 @@ return (
   </Link>
 
   <Link
+    href="/jee"
+    className="rounded-xl border border-cyan-400 px-5 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-400/10"
+  >
+    🧪 JEE Practice
+  </Link>
+
+  <Link
     href="/cuet-pg"
     className="rounded-xl border border-cyan-400 px-5 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-400/10"
   >
@@ -17712,7 +17720,7 @@ return (
       <section className="grid gap-6 lg:grid-cols-2">
         <div className="rounded-3xl border border-cyan-400/50 bg-slate-900 p-6 shadow-[0_0_25px_rgba(34,211,238,0.15)]">
           <p className="text-sm text-cyan-300">
-            Question {index + 1} of {filteredQuestions.length} |{" "}
+            Question {questionNumber} of {total} |{" "}
             {currentQuestion.category}
           </p>
 

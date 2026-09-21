@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "MPSC Free Mock",
   description:
-    "Free MPSC mock tests, college notes and NEET science practice for Mizoram students.",
+    "Free MPSC mock tests, college notes, NEET and JEE practice for Mizoram students.",
   manifest: "/manifest.webmanifest",
   icons: {
     icon: [

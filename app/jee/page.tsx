@@ -2,17 +2,17 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { cuetPgQuestions } from "../data/cuetPgQuestions";
+import { jeeQuestions } from "../data/jeeQuestions";
 import { useShuffledQuiz } from "../lib/useShuffledQuiz";
 
-const questions = cuetPgQuestions;
+const questions = jeeQuestions;
 
 const subjects = [
   "All",
   ...Array.from(new Set(questions.map((q) => q.subject))),
 ];
 
-export default function CuetPgPage() {
+export default function JeePage() {
   const [subject, setSubject] = useState("All");
   const [category, setCategory] = useState("All");
   const [selectedAnswer, setSelectedAnswer] = useState("");
@@ -70,12 +70,13 @@ export default function CuetPgPage() {
           </p>
 
           <h1 className="mt-3 text-4xl font-bold text-cyan-300 md:text-6xl">
-            🎓 CUET PG PRACTICE
+            🧪 JEE PRACTICE
           </h1>
 
           <p className="mt-4 max-w-4xl text-slate-300">
-            Free CUET PG practice for different subjects. Choose your subject,
-            choose a topic and practise MCQs with explanations and hints.
+            Free JEE (Main) practice covering Physics, Chemistry and
+            Mathematics. Choose your subject, choose a topic and practise
+            MCQs with explanations and hints.
           </p>
 
           <div className="mt-6">
