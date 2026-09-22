@@ -143,7 +143,7 @@ export default function MockTest<T extends MockTestQuestion>({
               : "border-cyan-400 text-cyan-300"
           }`}
         >
-          ⏱ {minutes}:{seconds.toString().padStart(2, "0")}
+          {minutes}:{seconds.toString().padStart(2, "0")}
         </p>
       </div>
 

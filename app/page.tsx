@@ -83,8 +83,6 @@ return (
         </h1>
 
         <div className="mt-8 rounded-3xl border border-cyan-400/40 bg-slate-950/70 p-6 text-center shadow-[0_0_35px_rgba(34,211,238,0.25)]">
-          <div className="animate-bounce text-4xl">📖</div>
-
           <p className="mt-2 text-sm text-slate-300 md:text-base">
             Don’t distribute it like a five-star dish.
           </p>
@@ -105,35 +103,35 @@ return (
     href="/college-notes"
     className="rounded-xl border border-cyan-400 px-5 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-400/10"
   >
-    📖 Open Arts College Notes
+    Open Arts College Notes
   </Link>
 
   <Link
     href="/daily"
     className="rounded-xl border border-cyan-400 px-5 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-400/10"
   >
-    🗓️ Daily Quiz
+    Daily Quiz
   </Link>
 
   <Link
     href="/neet"
     className="rounded-xl border border-cyan-400 px-5 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-400/10"
   >
-    🧬 NEET Science Practice
+    NEET Science Practice
   </Link>
 
   <Link
     href="/jee"
     className="rounded-xl border border-cyan-400 px-5 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-400/10"
   >
-    🧪 JEE Practice
+    JEE Practice
   </Link>
 
   <Link
     href="/cuet-pg"
     className="rounded-xl border border-cyan-400 px-5 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-400/10"
   >
-    🎓 CUET PG Practice
+    CUET PG Practice
   </Link>
 
 </div>
@@ -166,7 +164,7 @@ return (
               : "border-yellow-400/60 text-yellow-300 hover:bg-yellow-400/10"
           }`}
         >
-          ⭐ {bookmarkedOnly ? "Showing Bookmarked" : "Show Bookmarked Only"}
+          {bookmarkedOnly ? "Showing Bookmarked" : "Show Bookmarked Only"}
         </button>
 
         <button
@@ -177,7 +175,7 @@ return (
               : "border-cyan-400 text-cyan-300 hover:bg-cyan-400/10"
           }`}
         >
-          📝 {mode === "test" ? "Exit Timed Test" : "Start Timed Mock Test"}
+          {mode === "test" ? "Exit Timed Test" : "Start Timed Mock Test"}
         </button>
       </section>
 

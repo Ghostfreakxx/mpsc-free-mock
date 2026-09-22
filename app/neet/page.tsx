@@ -128,7 +128,7 @@ export default function NeetPage() {
                 : "border-yellow-400/60 text-yellow-300 hover:bg-yellow-400/10"
             }`}
           >
-            ⭐ {bookmarkedOnly ? "Showing Bookmarked" : "Show Bookmarked Only"}
+            {bookmarkedOnly ? "Showing Bookmarked" : "Show Bookmarked Only"}
           </button>
 
           <button
@@ -139,7 +139,7 @@ export default function NeetPage() {
                 : "border-cyan-400 text-cyan-300 hover:bg-cyan-400/10"
             }`}
           >
-            📝 {mode === "test" ? "Exit Timed Test" : "Start Timed Mock Test"}
+            {mode === "test" ? "Exit Timed Test" : "Start Timed Mock Test"}
           </button>
         </section>
 

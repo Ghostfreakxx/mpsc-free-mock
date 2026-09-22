@@ -116,7 +116,7 @@ export default function DailyQuizPage() {
           </p>
 
           <h1 className="mt-3 text-4xl font-bold text-cyan-300 md:text-5xl">
-            🗓️ Daily Quiz
+            Daily Quiz
           </h1>
 
           <p className="mt-4 text-slate-300">

@@ -109,7 +109,7 @@ export default function JeePage() {
           </p>
 
           <h1 className="mt-3 text-4xl font-bold text-cyan-300 md:text-6xl">
-            🧪 JEE PRACTICE
+            JEE PRACTICE
           </h1>
 
           <p className="mt-4 max-w-4xl text-slate-300">
@@ -185,7 +185,7 @@ export default function JeePage() {
                 : "border-yellow-400/60 text-yellow-300 hover:bg-yellow-400/10"
             }`}
           >
-            ⭐ {bookmarkedOnly ? "Showing Bookmarked" : "Show Bookmarked Only"}
+            {bookmarkedOnly ? "Showing Bookmarked" : "Show Bookmarked Only"}
           </button>
 
           <button
@@ -196,7 +196,7 @@ export default function JeePage() {
                 : "border-cyan-400 text-cyan-300 hover:bg-cyan-400/10"
             }`}
           >
-            📝 {mode === "test" ? "Exit Timed Test" : "Start Timed Mock Test"}
+            {mode === "test" ? "Exit Timed Test" : "Start Timed Mock Test"}
           </button>
         </section>
 

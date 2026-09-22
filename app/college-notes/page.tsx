@@ -2729,7 +2729,7 @@ export default function CollegeNotesPage() {
         {/* FOOTER */}
         <section className="mt-8 rounded-3xl border border-cyan-400/20 bg-slate-900/70 p-5 text-center">
           <p className="text-sm text-slate-400">
-            Free study material for students. Keep learning. 📖
+            Free study material for students. Keep learning.
           </p>
         </section>
       </div>
