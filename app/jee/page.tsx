@@ -45,17 +45,19 @@ export default function JeePage() {
     return ["All", ...Array.from(new Set(source.map((q) => q.category)))];
   }, [subject]);
 
-  const filteredQuestions = useMemo(() => {
-    const base = questions.filter((q) => {
+  const baseQuestions = useMemo(() => {
+    return questions.filter((q) => {
       const subjectMatch = subject === "All" || q.subject === subject;
       const categoryMatch = category === "All" || q.category === category;
 
       return subjectMatch && categoryMatch;
     });
+  }, [subject, category]);
 
-    if (!bookmarkedOnly) return base;
-    return base.filter((q) => bookmarks.includes(questionKey(q)));
-  }, [subject, category, bookmarkedOnly, bookmarks]);
+  const filteredQuestions = useMemo(() => {
+    if (!bookmarkedOnly) return baseQuestions;
+    return baseQuestions.filter((q) => bookmarks.includes(questionKey(q)));
+  }, [baseQuestions, bookmarkedOnly, bookmarks]);
 
   const { currentQuestion, questionNumber, total, next } =
     useShuffledQuiz(filteredQuestions);

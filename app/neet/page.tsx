@@ -35,11 +35,14 @@ export default function NeetPage() {
   const bookmarks = useProgressValue(() => getBookmarks(APP_ID), EMPTY_BOOKMARKS);
   const stats = useProgressValue(() => getStats(APP_ID), EMPTY_STATS);
 
+  const baseQuestions = useMemo(() => {
+    return subject === "All" ? questions : questions.filter((q) => q.subject === subject);
+  }, [subject]);
+
   const filteredQuestions = useMemo(() => {
-    const base = subject === "All" ? questions : questions.filter((q) => q.subject === subject);
-    if (!bookmarkedOnly) return base;
-    return base.filter((q) => bookmarks.includes(questionKey(q)));
-  }, [subject, bookmarkedOnly, bookmarks]);
+    if (!bookmarkedOnly) return baseQuestions;
+    return baseQuestions.filter((q) => bookmarks.includes(questionKey(q)));
+  }, [baseQuestions, bookmarkedOnly, bookmarks]);
 
   const { currentQuestion, questionNumber, total, next } =
     useShuffledQuiz(filteredQuestions);

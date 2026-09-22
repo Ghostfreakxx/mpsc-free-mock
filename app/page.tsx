@@ -32,11 +32,14 @@ export default function HomePage() {
   const bookmarks = useProgressValue(() => getBookmarks(APP_ID), EMPTY_BOOKMARKS);
   const stats = useProgressValue(() => getStats(APP_ID), EMPTY_STATS);
 
+  const baseQuestions = useMemo(() => {
+    return category === "All" ? questions : questions.filter((q) => q.category === category);
+  }, [category]);
+
   const filteredQuestions = useMemo(() => {
-    const base = category === "All" ? questions : questions.filter((q) => q.category === category);
-    if (!bookmarkedOnly) return base;
-    return base.filter((q) => bookmarks.includes(questionKey(q)));
-  }, [category, bookmarkedOnly, bookmarks]);
+    if (!bookmarkedOnly) return baseQuestions;
+    return baseQuestions.filter((q) => bookmarks.includes(questionKey(q)));
+  }, [baseQuestions, bookmarkedOnly, bookmarks]);
 
   const { currentQuestion, questionNumber, total, next } =
     useShuffledQuiz(filteredQuestions);

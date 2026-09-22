@@ -92,11 +92,6 @@ export function recordAnswer(
   return next;
 }
 
-export function resetStats(appId: string): QuizStats {
-  writeCached(statsKey(appId), EMPTY_STATS);
-  return EMPTY_STATS;
-}
-
 // ---------- Bookmarks ----------
 
 export const EMPTY_BOOKMARKS: number[] = [];
@@ -107,10 +102,6 @@ function bookmarksKey(appId: string) {
 
 export function getBookmarks(appId: string): number[] {
   return readCached(bookmarksKey(appId), EMPTY_BOOKMARKS);
-}
-
-export function isBookmarked(appId: string, questionKey: number): boolean {
-  return getBookmarks(appId).includes(questionKey);
 }
 
 export function toggleBookmark(appId: string, questionKey: number): number[] {
