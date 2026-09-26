@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import InstallAppButton from "./install-app-button";
 import {
   Activity,
   ArrowRight,
@@ -71,6 +72,15 @@ const courses: {
     icon: BookMarked,
     theme: "coral",
     format: "Study notes",
+  },
+  {
+    title: "Mizo Tawng",
+    subject: "Mizo language",
+    description: "Learn the Mizo alphabet, vowel set and pronunciation with English explanations and practice.",
+    href: "/mizo",
+    icon: BookOpen,
+    theme: "gold",
+    format: "Language course",
   },
   {
     title: "NEET science practice",
@@ -321,6 +331,7 @@ export default function StudentDashboard() {
           </label>
           <div className="topbar-actions">
             <span className="topbar-date"><CalendarDays size={15} />{today.toLocaleDateString("en", { weekday: "short", month: "short", day: "numeric" })}</span>
+            <InstallAppButton />
             <div className="notification-wrap">
               <button
                 type="button"
@@ -350,7 +361,7 @@ export default function StudentDashboard() {
                   <h1>{getGreeting()},<br /><span>aspirant.</span></h1>
                   <p>Every focused session brings the goal a little closer. Your next step is ready.</p>
                   <div className="welcome-actions">
-                    <Link href="/mock-test" className="button button-dark"><Play size={16} fill="currentColor" />Start MPSC practice</Link>
+                    <Link href="/mock-test" className="button button-dark"><Play size={16} fill="currentColor" /><span className="button-label-stack"><strong>Start MPSC practice</strong><small>Zir zui rawh · Go to practice</small></span></Link>
                     <button type="button" className="text-button" onClick={() => setView("planner")}>View today&apos;s plan <ArrowRight size={16} /></button>
                   </div>
                 </div>
@@ -360,6 +371,11 @@ export default function StudentDashboard() {
                 </div>
                 <div className="welcome-index"><span>01</span><span className="index-line" /><span>FOCUS</span></div>
               </section>
+
+              <aside className="learning-motto" aria-label="Our learning principle">
+                <blockquote>“Education is an offering to God in a church. Share it freely; do not sell it like a five-star meal.”</blockquote>
+                <p>Every revolution starts with a student. Learn freely, ask bold questions, and build a better future together.</p>
+              </aside>
 
               <section className="metric-row" aria-label="Your learning summary">
                 <div className="metric-item"><span className="metric-icon metric-green"><ListChecks size={18} /></span><div><span className="metric-label">TODAY&apos;S PLAN</span><strong>{completedToday.length}<small> / {tasks.length}</small></strong><span className="metric-note">steps completed</span></div></div>
@@ -499,4 +515,3 @@ function WeekChart({ week }: { week: { key: string; label: string; completed: nu
     </div>
   );
 }
-

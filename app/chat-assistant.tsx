@@ -39,8 +39,16 @@ export default function ChatAssistant() {
   const [isSending, setIsSending] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([openingMessage]);
   const launcherRef = useRef<HTMLButtonElement>(null);
+  const returnFocusRef = useRef<HTMLElement | null>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const latestMessageRef = useRef<HTMLDivElement>(null);
+
+  function restoreFocus() {
+    const target = returnFocusRef.current?.isConnected
+      ? returnFocusRef.current
+      : launcherRef.current;
+    target?.focus();
+  }
 
   useEffect(() => {
     if (!isOpen) return;
@@ -49,13 +57,26 @@ export default function ChatAssistant() {
     function closeOnEscape(event: globalThis.KeyboardEvent) {
       if (event.key === "Escape") {
         setIsOpen(false);
-        launcherRef.current?.focus();
+        restoreFocus();
       }
     }
 
     window.addEventListener("keydown", closeOnEscape);
     return () => window.removeEventListener("keydown", closeOnEscape);
   }, [isOpen]);
+
+  useEffect(() => {
+    function openFromPageAction() {
+      returnFocusRef.current =
+        document.activeElement instanceof HTMLElement
+          ? document.activeElement
+          : launcherRef.current;
+      setIsOpen(true);
+    }
+
+    window.addEventListener("mpsc-open-assistant", openFromPageAction);
+    return () => window.removeEventListener("mpsc-open-assistant", openFromPageAction);
+  }, []);
 
   useEffect(() => {
     latestMessageRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
@@ -134,7 +155,7 @@ export default function ChatAssistant() {
 
   function closeChat() {
     setIsOpen(false);
-    launcherRef.current?.focus();
+    restoreFocus();
   }
 
   return (
@@ -237,7 +258,15 @@ export default function ChatAssistant() {
         className={`assistant-launcher ${isOpen ? "is-open" : ""}`}
         aria-label={isOpen ? "Close study assistant" : "Open MPSC study assistant"}
         aria-expanded={isOpen}
-        onClick={() => setIsOpen((open) => !open)}
+        onClick={() => {
+          if (isOpen) {
+            setIsOpen(false);
+            restoreFocus();
+          } else {
+            returnFocusRef.current = launcherRef.current;
+            setIsOpen(true);
+          }
+        }}
       >{isOpen ? <X size={22} /> : <MessageCircle size={22} />}</button>
     </div>
   );

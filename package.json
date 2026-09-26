@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate:banks": "node scripts/validate-question-banks.mjs",
+    "test:question-rotation": "node --experimental-strip-types --test scripts/question-rotation.test.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.48.0",
@@ -25,4 +27,3 @@
     "typescript": "^5"
   }
 }
-
