@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { ArrowLeft } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
 
 const questions = [
   {
@@ -17619,6 +17620,36 @@ export default function HomePage() {
   const [category, setCategory] = useState("All");
   const [index, setIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
+  const [responses, setResponses] = useState<Record<string, { category: string; correct: boolean }>>({});
+  const [responsesReady, setResponsesReady] = useState(false);
+
+  useEffect(() => {
+    const restore = () => {
+      try {
+        const saved = localStorage.getItem("mpsc.practice.responses.v1");
+        if (saved) {
+          const parsed: unknown = JSON.parse(saved);
+          if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
+            setResponses(parsed as Record<string, { category: string; correct: boolean }>);
+          }
+        }
+      } catch {
+        // Practice remains available if browser storage is unavailable.
+      }
+      setResponsesReady(true);
+    };
+    const timer = window.setTimeout(restore, 0);
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (!responsesReady) return;
+    try {
+      localStorage.setItem("mpsc.practice.responses.v1", JSON.stringify(responses));
+    } catch {
+      // Keep the current practice session usable without persistence.
+    }
+  }, [responses, responsesReady]);
 
   const filteredQuestions = useMemo(() => {
     if (category === "All") return questions;
@@ -17637,9 +17668,35 @@ export default function HomePage() {
     setIndex(0);
     setSelectedAnswer("");
   }
+
+  function chooseAnswer(option: string) {
+    setSelectedAnswer(option);
+    const questionKey = `${currentQuestion.category}::${currentQuestion.question}`;
+    setResponses((current) => ({
+      ...current,
+      [questionKey]: {
+        category: currentQuestion.category,
+        correct: option === currentQuestion.answer,
+      },
+    }));
+  }
+
+  const correctAnswers = Object.values(responses).filter((response) => response.correct).length;
+  const accuracy = Object.keys(responses).length
+    ? Math.round((correctAnswers / Object.keys(responses).length) * 100)
+    : null;
 return (
   <main className="min-h-screen bg-slate-950 px-4 py-8 text-slate-100">
     <div className="mx-auto max-w-7xl">
+
+      <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+        <Link href="/" className="inline-flex items-center gap-2 text-sm font-semibold text-cyan-300 transition hover:text-white">
+          <ArrowLeft size={16} />Learning space
+        </Link>
+        <p className="m-0 text-xs text-slate-400">
+          {Object.keys(responses).length} answered{accuracy === null ? "" : ` · ${accuracy}% accuracy`}
+        </p>
+      </div>
 
       <section className="mb-8 rounded-3xl border border-cyan-400/40 bg-slate-900 p-6 shadow-[0_0_40px_rgba(34,211,238,0.25)]">
         <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">
@@ -17724,7 +17781,7 @@ return (
             {currentQuestion.options?.map((option) => (
               <button
                 key={option}
-                onClick={() => setSelectedAnswer(option)}
+                onClick={() => chooseAnswer(option)}
                 className={`rounded-2xl border p-4 text-left transition ${
                   selectedAnswer === option
                     ? option === currentQuestion?.answer

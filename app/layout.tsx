@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MPSC Free Mock",
+  title: "MPSC Free Mock | Learning Space",
   description:
-    "Free MPSC mock tests, college notes and NEET science practice for Mizoram students.",
+    "A focused learning space for Mizoram students preparing for MPSC and other entrance exams.",
   manifest: "/manifest.webmanifest",
   icons: {
     icon: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "MPSC Mock",
+    title: "MPSC Learn",
   },
 };
 
@@ -57,3 +57,4 @@ export default function RootLayout({
     </html>
   );
 }
+
