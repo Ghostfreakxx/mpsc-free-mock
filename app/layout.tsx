@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ServiceWorkerRegister from "./service-worker-register";
+import ChatAssistant from "./chat-assistant";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,6 +21,11 @@ export const metadata: Metadata = {
   manifest: "/manifest.webmanifest",
   icons: {
     icon: [
+      {
+        url: "/favicon.ico",
+        sizes: "any",
+        type: "image/x-icon",
+      },
       {
         url: "/icon-192.png",
         sizes: "192x192",
@@ -53,8 +59,8 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <ServiceWorkerRegister />
         {children}
+        <ChatAssistant />
       </body>
     </html>
   );
 }
-

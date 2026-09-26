@@ -1,4 +1,4 @@
-const CACHE_NAME = "mpsc-free-mock-v2";
+const CACHE_NAME = "mpsc-free-mock-v3";
 
 const urlsToCache = [
   "/",
@@ -14,9 +14,9 @@ const urlsToCache = [
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(urlsToCache);
-    })
+    caches.open(CACHE_NAME)
+      .then((cache) => cache.addAll(urlsToCache))
+      .then(() => self.skipWaiting()),
   );
 });
 
@@ -33,10 +33,21 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
+  const request = event.request;
+  if (request.method !== "GET" || new URL(request.url).origin !== self.location.origin) {
+    return;
+  }
+
+  if (new URL(request.url).pathname.startsWith("/api/")) {
+    return;
+  }
+
   event.respondWith(
-    fetch(event.request).catch(() => {
-      return caches.match(event.request);
-    })
+    fetch(request).catch(async () => {
+      const cached = await caches.match(request);
+      if (cached) return cached;
+      if (request.mode === "navigate") return caches.match("/");
+      return Response.error();
+    }),
   );
 });
-
