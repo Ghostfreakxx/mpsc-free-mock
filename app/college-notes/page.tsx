@@ -4,6 +4,7 @@ import Link from "next/link";
 import {
   ArrowLeft,
   ArrowUpRight,
+  Atom,
   BookMarked,
   BookOpen,
   ClipboardCheck,
@@ -2603,6 +2604,7 @@ export default function CollegeNotesPage() {
           <Link href="/mock-test" className="sidebar-link"><ClipboardCheck size={18} /><span>MPSC practice</span></Link>
           <Link href="/mizo" className="sidebar-link"><BookOpen size={18} /><span>Mizo Tawng</span></Link>
           <Link href="/neet" className="sidebar-link"><BookOpen size={18} /><span>NEET practice</span></Link>
+          <Link href="/jee" className="sidebar-link"><Atom size={18} /><span>JEE Main practice</span></Link>
           <Link href="/cuet-pg" className="sidebar-link"><GraduationCap size={18} /><span>CUET PG practice</span></Link>
           <Link href="/college-notes" className="sidebar-link is-active" aria-current="page"><BookMarked size={18} /><span>College notes</span></Link>
         </nav>
@@ -2677,6 +2679,7 @@ export default function CollegeNotesPage() {
         <Link href="/mock-test" className="mobile-nav-link"><ClipboardCheck size={17} /><span>MPSC</span></Link>
         <Link href="/college-notes" className="mobile-nav-link is-active" aria-current="page"><BookMarked size={17} /><span>Notes</span></Link>
         <Link href="/cuet-pg" className="mobile-nav-link"><GraduationCap size={17} /><span>CUET PG</span></Link>
+        <Link href="/jee" className="mobile-nav-link"><Atom size={17} /><span>JEE</span></Link>
       </nav>
     </main>
   );

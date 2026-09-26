@@ -283,6 +283,9 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
 .practice-heading h1 { margin: 7px 0 5px; color: #26483a; font-size: 27px; font-weight: 680; line-height: 1.2; }
 .practice-heading p { max-width: 570px; margin: 0; color: #74837a; font-size: 11px; line-height: 1.6; }
 .practice-language-link { flex: 0 0 auto; white-space: nowrap; }
+.practice-heading-actions { display: flex; flex: 0 0 auto; align-items: center; flex-wrap: wrap; gap: 8px; }
+.practice-heading-actions .install-app-trigger { width: auto; padding: 0 9px; }
+.practice-heading-actions .install-app-trigger span { display: inline; }
 .practice-metrics { margin-bottom: 19px; }
 .exam-practice-metrics { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .practice-category-panel { margin-bottom: 15px; padding: 15px 16px 13px; border: 1px solid var(--line); background: #fff; }
@@ -407,6 +410,7 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
   .metric-item:nth-child(4) { border-top: 1px solid var(--line); }
   .overview-grid { grid-template-columns: minmax(0, 1.25fr) minmax(235px, .85fr); }
   .mobile-nav { position: fixed; right: 0; bottom: 0; left: 0; z-index: 20; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); min-height: 61px; padding: 5px 8px max(5px, env(safe-area-inset-bottom)); border-top: 1px solid #e1e8e2; background: #ffffffed; backdrop-filter: blur(12px); }
+  .practice-mobile-nav { grid-template-columns: repeat(5, minmax(0, 1fr)); }
   .mobile-nav button { display: grid; align-content: center; justify-items: center; gap: 3px; min-width: 0; border: 0; border-radius: 3px; background: transparent; color: #78877e; font-size: 8px; cursor: pointer; }
   .mobile-nav button.is-active { color: #246d55; font-weight: 700; }
   .mobile-nav button span { line-height: 1.1; }
@@ -520,6 +524,7 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
   .subtle-action { font-size: 9px; }
   .install-app-trigger span { display: none; }
   .install-app-trigger { width: 33px; padding: 0; }
+  .practice-heading-actions .install-app-trigger { width: auto; padding: 0 7px; }
   .practice-heading h1 { font-size: 22px; }
   .mizo-vowel-line { align-items: start; flex-direction: column; gap: 5px; }
 }

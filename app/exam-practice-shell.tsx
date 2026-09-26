@@ -4,6 +4,7 @@ import Link from "next/link";
 import {
   ArrowLeft,
   ArrowUpRight,
+  Atom,
   BookMarked,
   BookOpen,
   CheckCircle2,
@@ -42,7 +43,7 @@ type Props = {
   title: string;
   eyebrow: string;
   description: string;
-  activeRoute: "/neet" | "/cuet-pg";
+  activeRoute: "/neet" | "/cuet-pg" | "/jee";
   totalQuestions: number;
   filters: FilterGroup[];
   currentQuestion: ExamQuestion | null;
@@ -57,6 +58,7 @@ const navigation = [
   { href: "/mock-test", label: "MPSC practice", icon: ClipboardCheck },
   { href: "/mizo", label: "Mizo Tawng", icon: BookOpen },
   { href: "/neet", label: "NEET practice", icon: BookOpen },
+  { href: "/jee", label: "JEE Main practice", icon: Atom },
   { href: "/cuet-pg", label: "CUET PG practice", icon: GraduationCap },
   { href: "/college-notes", label: "College notes", icon: BookMarked },
 ] as const;
@@ -214,6 +216,7 @@ export default function ExamPracticeShell({
         <Link href="/" className="mobile-nav-link"><LayoutDashboard size={17} /><span>Learn</span></Link>
         <Link href="/mock-test" className="mobile-nav-link"><ClipboardCheck size={17} /><span>MPSC</span></Link>
         <Link href="/neet" className={`mobile-nav-link ${activeRoute === "/neet" ? "is-active" : ""}`} aria-current={activeRoute === "/neet" ? "page" : undefined}><BookOpen size={17} /><span>NEET</span></Link>
+        <Link href="/jee" className={`mobile-nav-link ${activeRoute === "/jee" ? "is-active" : ""}`} aria-current={activeRoute === "/jee" ? "page" : undefined}><Atom size={17} /><span>JEE</span></Link>
         <Link href="/cuet-pg" className={`mobile-nav-link ${activeRoute === "/cuet-pg" ? "is-active" : ""}`} aria-current={activeRoute === "/cuet-pg" ? "page" : undefined}><GraduationCap size={17} /><span>CUET PG</span></Link>
       </nav>
     </main>

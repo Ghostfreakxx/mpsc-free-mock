@@ -6,6 +6,7 @@ import { useEffect, useMemo, useState } from "react";
 import InstallAppButton from "./install-app-button";
 import {
   Activity,
+  Atom,
   ArrowRight,
   ArrowUpRight,
   Bell,
@@ -89,6 +90,15 @@ const courses: {
     href: "/neet",
     icon: Sparkles,
     theme: "blue",
+    format: "Question bank",
+  },
+  {
+    title: "JEE Main practice",
+    subject: "Engineering entrance",
+    description: "Physics, Chemistry, and Mathematics practice with clear explanations and spaced review.",
+    href: "/jee",
+    icon: Atom,
+    theme: "coral",
     format: "Question bank",
   },
   {

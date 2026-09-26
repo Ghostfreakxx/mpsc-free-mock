@@ -9,6 +9,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const bankFiles = [
   "app/mock-test/page.tsx",
   "app/neet/page.tsx",
+  "app/data/jeeQuestions.ts",
   "app/data/cuetPgQuestions.ts",
   "app/data/mizoQuestions.ts",
 ];
@@ -39,7 +40,7 @@ function questionArray(sourceFile) {
   function visit(node) {
     if (
       ts.isVariableDeclaration(node) &&
-      ["questions", "cuetPgQuestions", "mizoQuestions"].includes(node.name.getText(sourceFile)) &&
+      ["questions", "jeeQuestions", "cuetPgQuestions", "mizoQuestions"].includes(node.name.getText(sourceFile)) &&
       node.initializer
     ) {
       if (ts.isArrayLiteralExpression(node.initializer)) {

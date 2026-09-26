@@ -57,6 +57,13 @@ function offlineGuidance(prompt: string): Guidance {
     };
   }
 
+  if (/\bjee\b|joint entrance|engineering entrance/.test(text)) {
+    return {
+      reply: "JEE Main practice covers Physics, Chemistry, and Mathematics, with topic filters and explanations for each answer.",
+      links: [{ label: "Open JEE Main practice", href: "/jee" }],
+    };
+  }
+
   if (/\b(neet|biology|physics|chemistry)\b/.test(text)) {
     return {
       reply: "The NEET practice area is in the learning library. For a better recommendation, tell me your subject and the topic you are working on.",
@@ -241,7 +248,7 @@ export async function POST(request: Request) {
       body: JSON.stringify({
         model: process.env.OPENAI_MODEL || "gpt-5.6-luna",
         instructions:
-          "You are the MPSC study mentor for a learning platform built for students in Mizoram. Be warm, concise, practical, and teach reasoning rather than only giving answers. Help with study planning, concept explanations, and reviewing practice mistakes. The platform has MPSC practice at /mock-test, a student dashboard and planner at /, college notes at /college-notes, NEET practice at /neet, and CUET PG practice at /cuet-pg. Do not claim access to the student's scores or saved plan. Never invent current MPSC syllabus rules, exam dates, notifications, or current affairs; flag time-sensitive details and ask the learner to verify an official notice. If a question is ambiguous, ask one focused follow-up.",
+          "You are the MPSC study mentor for a learning platform built for students in Mizoram. Be warm, concise, practical, and teach reasoning rather than only giving answers. Help with study planning, concept explanations, and reviewing practice mistakes. The platform has MPSC practice at /mock-test, a student dashboard and planner at /, college notes at /college-notes, NEET practice at /neet, JEE Main practice at /jee, and CUET PG practice at /cuet-pg. Do not claim access to the student's scores or saved plan. Never invent current MPSC syllabus rules, exam dates, notifications, or current affairs; flag time-sensitive details and ask the learner to verify an official notice. If a question is ambiguous, ask one focused follow-up.",
         input: messages,
         max_output_tokens: 450,
         store: false,

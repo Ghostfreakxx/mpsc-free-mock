@@ -4,6 +4,7 @@ import Link from "next/link";
 import {
   ArrowLeft,
   ArrowUpRight,
+  Atom,
   BookMarked,
   BookOpen,
   ClipboardCheck,
@@ -60,6 +61,7 @@ export default function MizoPage() {
           <Link href="/college-notes" className="sidebar-link"><BookMarked size={18} /><span>College notes</span></Link>
           <Link href="/mizo" className="sidebar-link is-active" aria-current="page"><BookOpen size={18} /><span>Mizo Tawng</span></Link>
           <Link href="/neet" className="sidebar-link"><BookOpen size={18} /><span>NEET practice</span></Link>
+          <Link href="/jee" className="sidebar-link"><Atom size={18} /><span>JEE Main practice</span></Link>
           <Link href="/cuet-pg" className="sidebar-link"><GraduationCap size={18} /><span>CUET PG practice</span></Link>
         </nav>
         <div className="sidebar-spacer" />
@@ -159,6 +161,7 @@ export default function MizoPage() {
         <Link href="/mock-test" className="mobile-nav-link"><ClipboardCheck size={17} /><span>MPSC</span></Link>
         <Link href="/mizo" className="mobile-nav-link is-active" aria-current="page"><BookOpen size={17} /><span>Mizo</span></Link>
         <Link href="/neet" className="mobile-nav-link"><GraduationCap size={17} /><span>NEET</span></Link>
+        <Link href="/jee" className="mobile-nav-link"><Atom size={17} /><span>JEE</span></Link>
       </nav>
     </main>
   );

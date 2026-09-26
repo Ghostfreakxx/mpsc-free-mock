@@ -4,6 +4,7 @@ import Link from "next/link";
 import {
   ArrowLeft,
   ArrowUpRight,
+  Atom,
   BookMarked,
   BookOpen,
   ClipboardCheck,
@@ -16162,8 +16163,9 @@ return (
       <nav className="sidebar-nav" aria-label="Learning resources">
         <Link href="/college-notes" className="sidebar-link"><BookMarked size={18} /><span>College notes</span></Link>
         <Link href="/mizo" className="sidebar-link"><BookOpen size={18} /><span>Mizo Tawng</span></Link>
-        <Link href="/neet" className="sidebar-link"><BookOpen size={18} /><span>NEET practice</span></Link>
-        <Link href="/cuet-pg" className="sidebar-link"><GraduationCap size={18} /><span>CUET PG practice</span></Link>
+          <Link href="/neet" className="sidebar-link"><BookOpen size={18} /><span>NEET practice</span></Link>
+          <Link href="/jee" className="sidebar-link"><Atom size={18} /><span>JEE Main practice</span></Link>
+          <Link href="/cuet-pg" className="sidebar-link"><GraduationCap size={18} /><span>CUET PG practice</span></Link>
       </nav>
       <div className="sidebar-spacer" />
       <div className="sidebar-help">
@@ -16192,7 +16194,6 @@ return (
             aria-label="Open MPSC study assistant"
             title="Open study assistant"
           ><MessageCircle size={18} /></button>
-          <InstallAppButton />
           <Link href="/" className="icon-button practice-back" aria-label="Back to learning space" title="Back to learning space"><ArrowLeft size={18} /></Link>
         </div>
       </header>
@@ -16204,7 +16205,10 @@ return (
             <h1>MPSC practice</h1>
             <p>Build recall with focused questions, clear explanations, and review of missed answers.</p>
           </div>
-          <Link href="/mizo" className="button button-outline practice-language-link">Mizo Tawng <span aria-hidden="true">·</span> Mizo learning</Link>
+          <div className="practice-heading-actions">
+            <InstallAppButton />
+            <Link href="/mizo" className="button button-outline practice-language-link">Mizo Tawng <span aria-hidden="true">·</span> Mizo learning</Link>
+          </div>
         </div>
 
         <section className="metric-row practice-metrics" aria-label="MPSC practice summary">
@@ -16298,6 +16302,7 @@ return (
       <Link href="/" className="mobile-nav-link"><LayoutDashboard size={17} /><span>Learn</span></Link>
       <Link href="/mock-test" className="mobile-nav-link is-active" aria-current="page"><ClipboardCheck size={17} /><span>Practice</span></Link>
       <Link href="/neet" className="mobile-nav-link"><BookOpen size={17} /><span>NEET</span></Link>
+      <Link href="/jee" className="mobile-nav-link"><Atom size={17} /><span>JEE</span></Link>
       <Link href="/cuet-pg" className="mobile-nav-link"><GraduationCap size={17} /><span>CUET PG</span></Link>
     </nav>
   </main>

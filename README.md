@@ -9,6 +9,7 @@ A learning space for MPSC aspirants and other students in Mizoram. It brings the
 - `/college-notes` - Arts college notes.
 - `/mizo` - Mizo alphabet, pronunciation notes and bilingual practice.
 - `/neet` - NEET science practice.
+- `/jee` - JEE Main Physics, Chemistry and Mathematics practice.
 - `/cuet-pg` - CUET PG practice.
 
 Practice rotates through each selected question pool without repeating a fresh question in the same round. Missed answers return in a spaced review queue. Rotation state, planner checkoffs and MPSC answer history are saved in the browser on the current device; they are not synced between devices or accounts.
