@@ -1,7 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { useMemo, useState } from "react";
+import ExamPracticeShell from "../exam-practice-shell";
+import { useQuestionRotation } from "../lib/use-question-rotation";
 
 const questions = [
   {
@@ -5610,22 +5611,6 @@ const questions = [
   },
   hint: "The chromosome number must be reduced."
 },
-
-{
-  subject: "Biology",
-  question: "Which hormone is mainly responsible for milk production after childbirth?",
-  options: ["Prolactin", "Oxytocin", "FSH", "Testosterone"],
-  answer: "Prolactin",
-  explanation:
-    "Prolactin stimulates milk synthesis in the mammary glands after childbirth.",
-  wrongExplanations: {
-    Oxytocin: "Oxytocin mainly causes milk ejection.",
-    FSH: "FSH mainly regulates ovarian follicles and spermatogenesis.",
-    Testosterone: "Testosterone is the principal male sex hormone."
-  },
-  hint: "Production and ejection of milk use different hormones."
-},
-
 {
   subject: "Biology",
   question: "Which hormone mainly causes milk ejection from mammary glands?",
@@ -5760,22 +5745,6 @@ const questions = [
   },
   hint: "It is located in the right atrium."
 },
-
-{
-  subject: "Biology",
-  question: "Which blood vessel carries oxygenated blood from the lungs to the heart?",
-  options: ["Pulmonary vein", "Pulmonary artery", "Vena cava", "Hepatic portal vein"],
-  answer: "Pulmonary vein",
-  explanation:
-    "Pulmonary veins return oxygen-rich blood from the lungs to the left atrium.",
-  wrongExplanations: {
-    "Pulmonary artery": "The pulmonary artery carries deoxygenated blood from the heart to the lungs.",
-    "Vena cava": "The venae cavae return deoxygenated systemic blood to the right atrium.",
-    "Hepatic portal vein": "The hepatic portal vein carries blood from digestive organs to the liver."
-  },
-  hint: "This is the famous exception among veins."
-},
-
 {
   subject: "Biology",
   question: "Which blood vessel carries deoxygenated blood from the heart to the lungs?",
@@ -7623,22 +7592,6 @@ const questions = [
   },
   hint: "Linear speed equals radius × angular speed."
 },
-
-{
-  subject: "Physics",
-  question: "The time period of a simple pendulum for small oscillations is:",
-  options: ["2π√(L/g)", "2π√(g/L)", "L/g", "2πLg"],
-  answer: "2π√(L/g)",
-  explanation:
-    "For small angular oscillations, the period of a simple pendulum is T = 2π√(L/g).",
-  wrongExplanations: {
-    "2π√(g/L)": "The ratio inside the square root is reversed.",
-    "L/g": "This does not have dimensions of time.",
-    "2πLg": "This is dimensionally incorrect."
-  },
-  hint: "Longer pendulum means longer period."
-},
-
 {
   subject: "Physics",
   question: "The time period of a simple pendulum is independent of its:",
@@ -8056,6 +8009,201 @@ const questions = [
     Inductor: "An inductor responds primarily to changing current and magnetic fields."
   },
   hint: "Its name combines photo and diode."
+},
+{
+  subject: "Biology",
+  question: "In a double-stranded DNA sample, adenine makes up 20% of the bases. What percentage is guanine?",
+  options: ["20%", "30%", "40%", "60%"],
+  answer: "30%",
+  explanation: "Chargaff's rule gives A = T, so A + T = 40%. The remaining 60% is split equally between G and C, making guanine 30%.",
+  wrongExplanations: {
+    "20%": "Guanine equals cytosine, not adenine.",
+    "40%": "This is the combined percentage of adenine and thymine.",
+    "60%": "This is the combined percentage of guanine and cytosine."
+  },
+  hint: "Use A = T and G = C."
+},
+{
+  subject: "Biology",
+  question: "A population has allele frequencies p = 0.7 and q = 0.3. Under Hardy-Weinberg equilibrium, what fraction is expected to be heterozygous?",
+  options: ["0.09", "0.21", "0.42", "0.49"],
+  answer: "0.42",
+  explanation: "The heterozygote frequency is 2pq = 2 × 0.7 × 0.3 = 0.42.",
+  wrongExplanations: {
+    "0.09": "This is q², the expected frequency of the homozygous recessive genotype.",
+    "0.21": "This is pq; heterozygotes occur at 2pq.",
+    "0.49": "This is p², the expected frequency of the homozygous dominant genotype."
+  },
+  hint: "Use the heterozygote term in p² + 2pq + q²."
+},
+{
+  subject: "Biology",
+  question: "During which stage of prophase I does crossing over between homologous chromosomes occur?",
+  options: ["Leptotene", "Zygotene", "Pachytene", "Diplotene"],
+  answer: "Pachytene",
+  explanation: "Crossing over occurs during pachytene of prophase I; chiasmata become visible later, during diplotene.",
+  wrongExplanations: {
+    Leptotene: "Chromosomes begin to condense in leptotene.",
+    Zygotene: "Homologous chromosomes pair during zygotene.",
+    Diplotene: "Chiasmata become visible as homologues begin to separate."
+  },
+  hint: "Pairing occurs first; exchange follows during the next substage."
+},
+{
+  subject: "Biology",
+  question: "In the Calvin cycle, the first stable product formed after carbon dioxide fixation is:",
+  options: ["Pyruvate", "3-phosphoglycerate", "Oxaloacetate", "Acetyl-CoA"],
+  answer: "3-phosphoglycerate",
+  explanation: "Rubisco fixes CO2 to RuBP, producing an unstable six-carbon intermediate that splits into two molecules of 3-phosphoglycerate.",
+  wrongExplanations: {
+    Pyruvate: "Pyruvate is a product of glycolysis, not the first stable Calvin-cycle product.",
+    Oxaloacetate: "Oxaloacetate is the first stable product in the C4 pathway.",
+    "Acetyl-CoA": "Acetyl-CoA is not the first stable product of carbon fixation in the Calvin cycle."
+  },
+  hint: "It is a three-carbon acid abbreviated 3-PGA."
+},
+{
+  subject: "Biology",
+  question: "After double fertilisation in a typical angiosperm, the primary endosperm nucleus is usually:",
+  options: ["Haploid", "Diploid", "Triploid", "Tetraploid"],
+  answer: "Triploid",
+  explanation: "One sperm nucleus fuses with the two polar nuclei, producing a usually triploid primary endosperm nucleus.",
+  wrongExplanations: {
+    Haploid: "The egg cell is haploid before fertilisation.",
+    Diploid: "The zygote is diploid; the primary endosperm nucleus receives three chromosome sets.",
+    Tetraploid: "The usual angiosperm primary endosperm nucleus is triploid."
+  },
+  hint: "One haploid sperm nucleus joins two haploid polar nuclei."
+},
+{
+  subject: "Chemistry",
+  question: "Assuming complete dissociation, what is the pH of 1.0 × 10⁻³ mol L⁻¹ HCl at 25 °C?",
+  options: ["1", "2", "3", "11"],
+  answer: "3",
+  explanation: "HCl is a strong acid, so [H+] = 10⁻³ mol L⁻¹ and pH = -log₁₀[H+] = 3.",
+  wrongExplanations: {
+    "1": "That would correspond to a hydrogen-ion concentration of 10⁻¹ mol L⁻¹.",
+    "2": "That would correspond to a hydrogen-ion concentration of 10⁻² mol L⁻¹.",
+    "11": "The solution is acidic, not basic."
+  },
+  hint: "For a strong monoprotic acid, [H+] equals the acid concentration."
+},
+{
+  subject: "Chemistry",
+  question: "What is the oxidation number of manganese in KMnO₄?",
+  options: ["+2", "+4", "+6", "+7"],
+  answer: "+7",
+  explanation: "Potassium is +1 and four oxygen atoms contribute -8. For a neutral compound, manganese must be +7.",
+  wrongExplanations: {
+    "+2": "This does not balance the +1 from potassium and -8 from oxygen.",
+    "+4": "This does not make the total oxidation number zero.",
+    "+6": "With +6, the compound's oxidation numbers would sum to -1."
+  },
+  hint: "Set the sum of oxidation numbers equal to zero."
+},
+{
+  subject: "Chemistry",
+  question: "For a first-order reaction, the half-life is independent of the:",
+  options: ["Initial reactant concentration", "Rate constant", "Temperature", "Reaction mechanism"],
+  answer: "Initial reactant concentration",
+  explanation: "For a first-order reaction, t₁/₂ = 0.693/k, so it does not depend on the initial concentration.",
+  wrongExplanations: {
+    "Rate constant": "The half-life is inversely proportional to k.",
+    Temperature: "Temperature can change the rate constant and therefore the half-life.",
+    "Reaction mechanism": "The observed order and rate constant arise from the reaction kinetics."
+  },
+  hint: "Use the first-order half-life equation."
+},
+{
+  subject: "Chemistry",
+  question: "A catalyst added to a reversible reaction at equilibrium will:",
+  options: ["Increase the equilibrium constant", "Shift equilibrium toward products", "Help the system reach equilibrium faster without changing its position", "Stop the reverse reaction"],
+  answer: "Help the system reach equilibrium faster without changing its position",
+  explanation: "A catalyst lowers activation barriers for forward and reverse reactions, speeding attainment of equilibrium without changing K or the equilibrium composition.",
+  wrongExplanations: {
+    "Increase the equilibrium constant": "At a fixed temperature, a catalyst does not change K.",
+    "Shift equilibrium toward products": "A catalyst speeds both directions and does not shift equilibrium.",
+    "Stop the reverse reaction": "A catalyst does not stop either direction."
+  },
+  hint: "It changes the rate of reaching equilibrium, not the equilibrium itself."
+},
+{
+  subject: "Chemistry",
+  question: "Which solution would resist a small addition of acid or base most effectively?",
+  options: ["A concentrated buffer", "Pure distilled water", "A dilute solution of a strong acid", "A solution of sodium chloride only"],
+  answer: "A concentrated buffer",
+  explanation: "A buffer contains a conjugate acid-base pair that consumes small additions of H+ or OH-, limiting pH change; useful capacity also depends on concentration.",
+  wrongExplanations: {
+    "Pure distilled water": "Water alone has little capacity to neutralise added acid or base.",
+    "A dilute solution of a strong acid": "It does not contain a conjugate pair able to resist changes in both directions.",
+    "A solution of sodium chloride only": "A neutral salt solution does not provide a buffer pair."
+  },
+  hint: "Look for a weak acid/base and its conjugate partner."
+},
+{
+  subject: "Physics",
+  question: "A net force acts on a 2 kg object and gives it an acceleration of 3 m s⁻². What is the net force?",
+  options: ["1.5 N", "5 N", "6 N", "9 N"],
+  answer: "6 N",
+  explanation: "Newton's second law gives F = ma = 2 kg × 3 m s⁻² = 6 N.",
+  wrongExplanations: {
+    "1.5 N": "This divides mass by acceleration rather than multiplying them.",
+    "5 N": "This does not follow F = ma.",
+    "9 N": "This does not follow F = ma."
+  },
+  hint: "Apply Newton's second law."
+},
+{
+  subject: "Physics",
+  question: "How much work is done when a charge of 2 C moves through a potential difference of 3 V?",
+  options: ["1.5 J", "5 J", "6 J", "9 J"],
+  answer: "6 J",
+  explanation: "The work is W = qV = 2 C × 3 V = 6 J.",
+  wrongExplanations: {
+    "1.5 J": "This divides charge by potential difference instead of multiplying.",
+    "5 J": "This is not the product qV.",
+    "9 J": "This is not the product qV."
+  },
+  hint: "One volt is one joule per coulomb."
+},
+{
+  subject: "Physics",
+  question: "For light of fixed frequency above the threshold frequency, increasing its intensity mainly increases the:",
+  options: ["Maximum kinetic energy of each photoelectron", "Stopping potential", "Number of emitted photoelectrons per unit time", "Work function of the metal"],
+  answer: "Number of emitted photoelectrons per unit time",
+  explanation: "At fixed frequency, greater intensity means more incident photons per unit time, so the photocurrent can rise; maximum kinetic energy depends on frequency.",
+  wrongExplanations: {
+    "Maximum kinetic energy of each photoelectron": "At fixed frequency, maximum kinetic energy is unchanged by intensity.",
+    "Stopping potential": "Stopping potential tracks maximum kinetic energy and therefore frequency.",
+    "Work function of the metal": "Work function is a property of the metal surface."
+  },
+  hint: "Intensity changes photon number, while frequency changes photon energy."
+},
+{
+  subject: "Physics",
+  question: "The slope of a velocity-time graph represents the object's:",
+  options: ["Displacement", "Acceleration", "Momentum", "Kinetic energy"],
+  answer: "Acceleration",
+  explanation: "The gradient is change in velocity divided by change in time, which is acceleration.",
+  wrongExplanations: {
+    Displacement: "Displacement is represented by the signed area under a velocity-time graph.",
+    Momentum: "Momentum depends on mass and velocity, not on the graph's slope alone.",
+    "Kinetic energy": "Kinetic energy depends on mass and the square of velocity."
+  },
+  hint: "A graph's slope is the rate of change of its vertical quantity."
+},
+{
+  subject: "Physics",
+  question: "Two capacitors of capacitance C each are connected in parallel. Their equivalent capacitance is:",
+  options: ["C/2", "C", "2C", "4C"],
+  answer: "2C",
+  explanation: "Capacitances add in parallel: C_eq = C + C = 2C.",
+  wrongExplanations: {
+    "C/2": "This is the equivalent capacitance of two equal capacitors in series.",
+    C: "This accounts for only one capacitor.",
+    "4C": "Parallel capacitances add; they are not multiplied."
+  },
+  hint: "In parallel, each capacitor has the same potential difference."
 }
 ];
 
@@ -8067,7 +8215,6 @@ const subjects = [
 
 export default function NeetPage() {
   const [subject, setSubject] = useState("All");
-  const [index, setIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
 
   const filteredQuestions = useMemo(() => {
@@ -8076,165 +8223,36 @@ export default function NeetPage() {
     return questions.filter((q) => q.subject === subject);
   }, [subject]);
 
-  const currentQuestion =
-    filteredQuestions[index % filteredQuestions.length];
+  const rotation = useQuestionRotation(filteredQuestions, `neet:${subject}`);
+  const currentQuestion = rotation.currentQuestion;
 
   function nextQuestion() {
     setSelectedAnswer("");
-    setIndex((prev) => (prev + 1) % filteredQuestions.length);
+    rotation.nextQuestion();
   }
 
   function changeSubject(newSubject: string) {
     setSubject(newSubject);
-    setIndex(0);
     setSelectedAnswer("");
   }
 
-  const isCorrect = selectedAnswer === currentQuestion.answer;
-
   return (
-    <main className="min-h-screen bg-slate-950 px-4 py-8 text-slate-100">
-      <div className="mx-auto max-w-7xl">
-        <section className="mb-8 rounded-3xl border border-cyan-400/40 bg-slate-900 p-6 shadow-[0_0_40px_rgba(34,211,238,0.25)]">
-          <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">
-            Free Student Practice
-          </p>
-
-          <h1 className="mt-3 text-4xl font-bold text-cyan-300 md:text-6xl">
-            NEET SCIENCE PRACTICE
-          </h1>
-
-          <p className="mt-4 max-w-3xl text-slate-300">
-            Practice Biology, Chemistry and Physics MCQs with simple
-            explanations and hints.
-          </p>
-
-          <div className="mt-6">
-            <Link
-              href="/"
-              className="rounded-xl border border-cyan-400 px-5 py-3 font-semibold text-cyan-300 hover:bg-cyan-400/10"
-            >
-              ← Back to MPSC Free Mock
-            </Link>
-          </div>
-        </section>
-
-        <section className="mb-6 flex flex-wrap gap-3">
-          {subjects.map((item) => (
-            <button
-              key={item}
-              onClick={() => changeSubject(item)}
-              className={`rounded-full border px-4 py-2 text-sm font-semibold ${
-                subject === item
-                  ? "bg-cyan-400 text-slate-950"
-                  : "border-cyan-400 text-cyan-300 hover:bg-cyan-400/10"
-              }`}
-            >
-              {item}
-            </button>
-          ))}
-        </section>
-
-        <section className="grid gap-6 lg:grid-cols-2">
-          <div className="rounded-3xl border border-cyan-400/50 bg-slate-900 p-6 shadow-[0_0_25px_rgba(34,211,238,0.15)]">
-            <p className="text-sm text-cyan-300">
-              Question {index + 1} of {filteredQuestions.length} |{" "}
-              {currentQuestion.subject}
-            </p>
-
-            <h2 className="mt-4 text-2xl font-bold text-white">
-              {currentQuestion.question}
-            </h2>
-
-            <div className="mt-6 grid gap-4">
-              {currentQuestion.options.map((option) => (
-                <button
-                  key={option}
-                  onClick={() => setSelectedAnswer(option)}
-                  className={`rounded-2xl border p-4 text-left transition ${
-                    selectedAnswer === option
-                      ? option === currentQuestion.answer
-                        ? "border-green-400 bg-green-400/15"
-                        : "border-red-400 bg-red-400/15"
-                      : "border-cyan-400/70 hover:bg-cyan-400/10"
-                  }`}
-                >
-                  {option}
-                </button>
-              ))}
-            </div>
-
-            <button
-              onClick={nextQuestion}
-              className="mt-6 rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 hover:bg-cyan-300"
-            >
-              Next Question
-            </button>
-          </div>
-
-          <div className="rounded-3xl border border-cyan-400/50 bg-slate-900 p-6 shadow-[0_0_25px_rgba(34,211,238,0.15)]">
-            <h2 className="text-3xl font-bold text-cyan-300">
-              Explanation
-            </h2>
-
-            {!selectedAnswer ? (
-              <p className="mt-6 text-slate-300">
-                Select an answer to view the explanation.
-              </p>
-            ) : (
-              <div className="mt-6 space-y-5">
-                <div
-                  className={`rounded-2xl border p-4 ${
-                    isCorrect
-                      ? "border-green-400 bg-green-400/10"
-                      : "border-red-400 bg-red-400/10"
-                  }`}
-                >
-                  <h3
-                    className={`text-xl font-bold ${
-                      isCorrect ? "text-green-400" : "text-red-400"
-                    }`}
-                  >
-                    {isCorrect ? "Correct Answer" : "Wrong Answer"}
-                  </h3>
-
-                  <p className="mt-3 text-slate-300">
-                    {isCorrect
-                      ? currentQuestion.explanation
-                      : currentQuestion.wrongExplanations[
-                          selectedAnswer as keyof typeof currentQuestion.wrongExplanations
-                        ]}
-                  </p>
-                </div>
-
-                {!isCorrect && (
-                  <div className="rounded-2xl border border-cyan-400/50 p-4">
-                    <p className="text-cyan-300">Correct Answer:</p>
-
-                    <p className="mt-2 text-xl font-bold text-white">
-                      {currentQuestion.answer}
-                    </p>
-
-                    <p className="mt-4 text-slate-300">
-                      {currentQuestion.explanation}
-                    </p>
-                  </div>
-                )}
-
-                <div className="rounded-2xl border border-yellow-400/50 bg-yellow-400/10 p-4">
-                  <h3 className="font-bold text-yellow-300">
-                    Elimination Method / Hint
-                  </h3>
-
-                  <p className="mt-2 text-slate-300">
-                    {currentQuestion.hint}
-                  </p>
-                </div>
-              </div>
-            )}
-          </div>
-        </section>
-      </div>
-    </main>
+    <ExamPracticeShell
+      title="NEET practice"
+      eyebrow="NEET UG · BIOLOGY, CHEMISTRY & PHYSICS"
+      description="Practice Biology, Chemistry, and Physics with focused questions, worked explanations, and spaced review."
+      activeRoute="/neet"
+      totalQuestions={filteredQuestions.length}
+      filters={[{ label: "Subject", value: subject, options: subjects, onChange: changeSubject }]}
+      currentQuestion={currentQuestion}
+      summary={rotation.summary}
+      selectedAnswer={selectedAnswer}
+      onSelectAnswer={(option) => {
+        if (!currentQuestion) return;
+        setSelectedAnswer(option);
+        rotation.recordAnswer(option === currentQuestion.answer);
+      }}
+      onNext={nextQuestion}
+    />
   );
 }
