@@ -49,18 +49,18 @@ function offlineGuidance(prompt: string): Guidance {
     };
   }
 
+  if (/\bjee\b|joint entrance|engineering entrance/.test(text)) {
+    return {
+      reply: "JEE Main practice covers Physics, Chemistry, and Mathematics, with topic filters and explanations for each answer.",
+      links: [{ label: "Open JEE Main practice", href: "/jee" }],
+    };
+  }
+
   if (/\b(mock|practice|question|quiz|test)\b/.test(text)) {
     return {
       reply:
         "Open MPSC practice, choose a subject, and try a small set without notes. Check the explanation for each answer, especially the ones you guessed, then revisit those topics in your next session.",
       links: [{ label: "Start MPSC practice", href: "/mock-test" }],
-    };
-  }
-
-  if (/\bjee\b|joint entrance|engineering entrance/.test(text)) {
-    return {
-      reply: "JEE Main practice covers Physics, Chemistry, and Mathematics, with topic filters and explanations for each answer.",
-      links: [{ label: "Open JEE Main practice", href: "/jee" }],
     };
   }
 
