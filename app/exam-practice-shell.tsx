@@ -56,7 +56,6 @@ type Props = {
 const navigation = [
   { href: "/", label: "Learning space", icon: LayoutDashboard },
   { href: "/mock-test", label: "MPSC practice", icon: ClipboardCheck },
-  { href: "/mizo", label: "Mizo Tawng", icon: BookOpen },
   { href: "/neet", label: "NEET practice", icon: BookOpen },
   { href: "/jee", label: "JEE Main practice", icon: Atom },
   { href: "/cuet-pg", label: "CUET PG practice", icon: GraduationCap },
@@ -132,7 +131,7 @@ export default function ExamPracticeShell({
         <section className="academy-content practice-content">
           <div className="page-heading-row practice-heading">
             <div><span className="section-kicker">{eyebrow}</span><h1>{title}</h1><p>{description}</p></div>
-            <Link href="/mock-test" className="button button-outline practice-language-link">MPSC practice <ArrowUpRight size={15} /></Link>
+            <Link href="/mock-test" className="button button-outline practice-mpsc-link">MPSC practice <ArrowUpRight size={15} /></Link>
           </div>
 
           <section className="metric-row practice-metrics exam-practice-metrics" aria-label={`${title} summary`}>

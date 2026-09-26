@@ -16162,7 +16162,6 @@ return (
       <div className="sidebar-label sidebar-label-spaced">LEARNING RESOURCES</div>
       <nav className="sidebar-nav" aria-label="Learning resources">
         <Link href="/college-notes" className="sidebar-link"><BookMarked size={18} /><span>College notes</span></Link>
-        <Link href="/mizo" className="sidebar-link"><BookOpen size={18} /><span>Mizo Tawng</span></Link>
           <Link href="/neet" className="sidebar-link"><BookOpen size={18} /><span>NEET practice</span></Link>
           <Link href="/jee" className="sidebar-link"><Atom size={18} /><span>JEE Main practice</span></Link>
           <Link href="/cuet-pg" className="sidebar-link"><GraduationCap size={18} /><span>CUET PG practice</span></Link>
@@ -16207,7 +16206,6 @@ return (
           </div>
           <div className="practice-heading-actions">
             <InstallAppButton />
-            <Link href="/mizo" className="button button-outline practice-language-link">Mizo Tawng <span aria-hidden="true">·</span> Mizo learning</Link>
           </div>
         </div>
 

@@ -75,15 +75,6 @@ const courses: {
     format: "Study notes",
   },
   {
-    title: "Mizo Tawng",
-    subject: "Mizo language",
-    description: "Learn the Mizo alphabet, vowel set and pronunciation with English explanations and practice.",
-    href: "/mizo",
-    icon: BookOpen,
-    theme: "gold",
-    format: "Language course",
-  },
-  {
     title: "NEET science practice",
     subject: "Medical entrance",
     description: "Science practice for learners preparing for NEET.",

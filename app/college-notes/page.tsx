@@ -2602,7 +2602,6 @@ export default function CollegeNotesPage() {
         <nav className="sidebar-nav" aria-label="Learning navigation">
           <Link href="/" className="sidebar-link"><LayoutDashboard size={18} /><span>Learning space</span><ArrowUpRight className="nav-external" size={14} /></Link>
           <Link href="/mock-test" className="sidebar-link"><ClipboardCheck size={18} /><span>MPSC practice</span></Link>
-          <Link href="/mizo" className="sidebar-link"><BookOpen size={18} /><span>Mizo Tawng</span></Link>
           <Link href="/neet" className="sidebar-link"><BookOpen size={18} /><span>NEET practice</span></Link>
           <Link href="/jee" className="sidebar-link"><Atom size={18} /><span>JEE Main practice</span></Link>
           <Link href="/cuet-pg" className="sidebar-link"><GraduationCap size={18} /><span>CUET PG practice</span></Link>
@@ -2627,7 +2626,7 @@ export default function CollegeNotesPage() {
         <section className="academy-content practice-content notes-content">
           <div className="page-heading-row practice-heading">
             <div><span className="section-kicker">MIZORAM ARTS COLLEGE · FREE LEARNING</span><h1>College notes</h1><p>Search a subject, review concise notes, or study longer exam-style explanations.</p></div>
-            <Link href="/mock-test" className="button button-outline practice-language-link">MPSC practice <ArrowUpRight size={15} /></Link>
+            <Link href="/mock-test" className="button button-outline practice-mpsc-link">MPSC practice <ArrowUpRight size={15} /></Link>
           </div>
 
           <section className="practice-category-panel notes-subject-panel" aria-label="Choose a subject">

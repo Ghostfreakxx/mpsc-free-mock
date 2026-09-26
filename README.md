@@ -7,7 +7,6 @@ A learning space for MPSC aspirants and other students in Mizoram. It brings the
 - `/` - Student overview, learning library, daily planner and practice progress.
 - `/mock-test` - MPSC subject practice with answers, explanations and hints.
 - `/college-notes` - Arts college notes.
-- `/mizo` - Mizo alphabet, pronunciation notes and bilingual practice.
 - `/neet` - NEET science practice.
 - `/jee` - JEE Main Physics, Chemistry and Mathematics practice.
 - `/cuet-pg` - CUET PG practice.

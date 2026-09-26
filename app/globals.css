@@ -282,7 +282,7 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
 .practice-heading { align-items: center; margin: 1px 0 20px; }
 .practice-heading h1 { margin: 7px 0 5px; color: #26483a; font-size: 27px; font-weight: 680; line-height: 1.2; }
 .practice-heading p { max-width: 570px; margin: 0; color: #74837a; font-size: 11px; line-height: 1.6; }
-.practice-language-link { flex: 0 0 auto; white-space: nowrap; }
+.practice-mpsc-link { flex: 0 0 auto; white-space: nowrap; }
 .practice-heading-actions { display: flex; flex: 0 0 auto; align-items: center; flex-wrap: wrap; gap: 8px; }
 .practice-heading-actions .install-app-trigger { width: auto; padding: 0 9px; }
 .practice-heading-actions .install-app-trigger span { display: inline; }
@@ -334,30 +334,6 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
 .practice-loading { display: grid; min-height: 325px; place-items: center; color: #718178; font-size: 11px; }
 .practice-content .academy-footer { margin-top: 20px; }
 
-.mizo-content { display: grid; gap: 15px; }
-.mizo-content .practice-heading { margin-bottom: 4px; }
-.mizo-practice-cta { flex: 0 0 auto; white-space: nowrap; }
-.mizo-metric-letter { color: currentColor; font-size: 12px; font-weight: 750; }
-.mizo-alphabet-panel { padding: 17px; }
-.mizo-alphabet-grid { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 6px; margin-top: 15px; }
-.mizo-letter-tile { display: grid; min-width: 0; min-height: 63px; align-content: center; justify-items: center; gap: 3px; border: 1px solid #e3eae4; border-radius: 3px; background: #fcfdfc; }
-.mizo-letter-tile strong { color: #344d3d; font-size: 17px; font-weight: 680; }
-.mizo-letter-tile > span { color: #829087; font-size: 10px; }
-.mizo-letter-tile.is-vowel { border-color: #bfd5c2; background: #eef5ef; }
-.mizo-letter-tile.is-vowel strong { color: #327052; }
-.mizo-vowel-line { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 14px 0 0; padding-top: 12px; border-top: 1px solid #edf0ed; color: #65776b; font-size: 9px; }
-.mizo-vowel-line strong { color: #437155; }
-.mizo-vowel-line span { color: #365541; font-weight: 700; }
-.mizo-notes-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; }
-.mizo-note-panel { min-width: 0; padding: 17px; }
-.mizo-note-panel h2 { margin: 6px 0 13px; color: #2d4939; font-size: 15px; font-weight: 680; }
-.mizo-sound-list, .mizo-word-list { display: grid; gap: 0; margin: 0; }
-.mizo-sound-list > div, .mizo-word-list > div { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 10px; padding: 10px 0; border-top: 1px solid #edf0ed; }
-.mizo-sound-list dt, .mizo-word-list dt { color: #3c7154; font-size: 11px; font-weight: 750; }
-.mizo-sound-list dd, .mizo-word-list dd { margin: 0; color: #6d7d72; font-size: 9px; line-height: 1.65; }
-.mizo-word-list > div { grid-template-columns: minmax(100px, .8fr) minmax(0, 1fr); }
-.mizo-source-note { margin: 13px 0 0; padding-top: 11px; border-top: 1px solid #edf0ed; color: #859188; font-size: 9px; line-height: 1.6; }
-.mizo-quiz-panel { margin: 0; scroll-margin-top: 18px; }
 .notes-content { display: grid; gap: 15px; }
 .notes-content .practice-heading { margin-bottom: 4px; }
 .notes-search-panel { padding: 14px 16px; }
@@ -440,7 +416,6 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
   .practice-heading { align-items: start; flex-direction: column; gap: 11px; margin: 1px 0 5px; }
   .practice-heading h1 { font-size: 24px; }
   .practice-heading p { font-size: 10px; }
-  .practice-language-link { min-height: 33px; }
   .practice-metrics { margin-bottom: 0; }
   .practice-category-panel { margin-bottom: 0; padding: 12px; }
   .practice-question-panel, .practice-feedback-panel { padding: 15px 13px; }
@@ -448,14 +423,7 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
   .practice-question-actions { align-items: start; flex-direction: column; }
   .practice-question-actions .button { align-self: stretch; }
   .practice-loading { min-height: 260px; }
-  .mizo-content { gap: 12px; }
-  .mizo-content .practice-heading { margin-bottom: 0; }
-  .mizo-alphabet-panel, .mizo-note-panel { padding: 13px; }
   .notes-panel, .notes-search-panel { padding: 13px; }
-  .mizo-alphabet-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 5px; }
-  .mizo-letter-tile { min-height: 55px; }
-  .mizo-letter-tile strong { font-size: 15px; }
-  .mizo-notes-grid { grid-template-columns: minmax(0, 1fr); gap: 12px; }
   .learning-motto { margin: 0 0 15px; padding: 10px 12px; }
   .learning-motto blockquote { font-size: 10px; }
   .welcome-band { display: flex; flex-direction: column; min-height: 0; }
@@ -526,7 +494,6 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
   .install-app-trigger { width: 33px; padding: 0; }
   .practice-heading-actions .install-app-trigger { width: auto; padding: 0 7px; }
   .practice-heading h1 { font-size: 22px; }
-  .mizo-vowel-line { align-items: start; flex-direction: column; gap: 5px; }
 }
 
 .assistant-launcher { position: fixed; right: 22px; bottom: 22px; z-index: 50; display: grid; width: 54px; height: 54px; place-items: center; border: 1px solid #ffffff50; border-radius: 50%; background: var(--green-deep); color: #fff; box-shadow: 0 5px 18px #102a2050; cursor: pointer; transition: background .16s ease, transform .16s ease; }
