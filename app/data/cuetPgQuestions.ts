@@ -18634,15 +18634,7 @@ export const cuetPgQuestions: CuetPgQuestion[] = Array<CuetPgQuestion>(
 // POLITICAL SCIENCE - 20
 // =========================
 
-{
-  subject: "Political Science",
-  category: "Political Theory",
-  question: "Who wrote Leviathan?",
-  options: ["Thomas Hobbes", "John Locke", "Rousseau", "J.S. Mill"],
-  answer: "Thomas Hobbes",
-  explanation: "Thomas Hobbes wrote Leviathan and defended a strong sovereign authority.",
-  hint: "State of nature and absolute sovereignty."
-},
+
 
 {
   subject: "Political Science",
@@ -18668,17 +18660,6 @@ export const cuetPgQuestions: CuetPgQuestion[] = Array<CuetPgQuestion>(
   explanation: "Bentham used utility and happiness as the basis for judging laws and institutions.",
   hint: "Utilitarianism."
 },
-
-{
-  subject: "Political Science",
-  category: "Political Theory",
-  question: "Who wrote On Liberty?",
-  options: ["J.S. Mill", "Thomas Hobbes", "Karl Marx", "Rousseau"],
-  answer: "J.S. Mill",
-  explanation: "J.S. Mill's On Liberty is a major defence of individual freedom.",
-  hint: "Harm principle."
-},
-
 {
   subject: "Political Science",
   category: "Political Theory",
@@ -18703,17 +18684,6 @@ export const cuetPgQuestions: CuetPgQuestion[] = Array<CuetPgQuestion>(
   explanation: "Part III of the Constitution contains the Fundamental Rights.",
   hint: "Rights chapter."
 },
-
-{
-  subject: "Political Science",
-  category: "Indian Government & Politics",
-  question: "Directive Principles of State Policy are contained in:",
-  options: ["Part IV", "Part III", "Part IVA", "Part VI"],
-  answer: "Part IV",
-  explanation: "Part IV contains the Directive Principles of State Policy.",
-  hint: "Guidelines to the state."
-},
-
 {
   subject: "Political Science",
   category: "Indian Government & Politics",
@@ -18883,15 +18853,7 @@ export const cuetPgQuestions: CuetPgQuestion[] = Array<CuetPgQuestion>(
 // HISTORY - 20
 // =========================
 
-{
-  subject: "History",
-  category: "Ancient India",
-  question: "The Great Bath was discovered at:",
-  options: ["Mohenjo-daro", "Lothal", "Kalibangan", "Ropar"],
-  answer: "Mohenjo-daro",
-  explanation: "The Great Bath is one of the most famous structures discovered at Mohenjo-daro.",
-  hint: "Major Harappan city."
-},
+
 
 {
   subject: "History",
@@ -18922,17 +18884,6 @@ export const cuetPgQuestions: CuetPgQuestion[] = Array<CuetPgQuestion>(
   explanation: "Chandragupta Maurya founded the Mauryan Empire in the late fourth century BCE.",
   hint: "Supported by Chanakya."
 },
-
-{
-  subject: "History",
-  category: "Ancient India",
-  question: "The Arthashastra is traditionally associated with:",
-  options: ["Kautilya", "Kalidasa", "Banabhatta", "Patanjali"],
-  answer: "Kautilya",
-  explanation: "The Arthashastra is traditionally attributed to Kautilya or Chanakya.",
-  hint: "Mauryan political thought."
-},
-
 {
   subject: "History",
   category: "Ancient India",
@@ -18982,27 +18933,6 @@ export const cuetPgQuestions: CuetPgQuestion[] = Array<CuetPgQuestion>(
   explanation: "Akbar developed the mansabdari system as a major feature of Mughal administration.",
   hint: "Rank and service."
 },
-
-{
-  subject: "History",
-  category: "Modern India",
-  question: "The Battle of Plassey was fought in:",
-  options: ["1757", "1764", "1773", "1857"],
-  answer: "1757",
-  explanation: "The Battle of Plassey in 1757 marked a major expansion of Company power in Bengal.",
-  hint: "Robert Clive."
-},
-
-{
-  subject: "History",
-  category: "Modern India",
-  question: "The Battle of Buxar was fought in:",
-  options: ["1764", "1757", "1773", "1793"],
-  answer: "1764",
-  explanation: "The Battle of Buxar in 1764 further strengthened Company power.",
-  hint: "After Plassey."
-},
-
 {
   subject: "History",
   category: "Modern India",
@@ -19012,37 +18942,6 @@ export const cuetPgQuestions: CuetPgQuestion[] = Array<CuetPgQuestion>(
   explanation: "The Permanent Settlement of Bengal was introduced under Lord Cornwallis.",
   hint: "1793."
 },
-
-{
-  subject: "History",
-  category: "Modern India",
-  question: "The Doctrine of Lapse is associated with:",
-  options: ["Lord Dalhousie", "Lord Canning", "Lord Ripon", "Lord Lytton"],
-  answer: "Lord Dalhousie",
-  explanation: "Dalhousie used the Doctrine of Lapse to annex several princely states.",
-  hint: "Annexation policy."
-},
-
-{
-  subject: "History",
-  category: "Modern India",
-  question: "The Revolt of 1857 began at:",
-  options: ["Meerut", "Delhi", "Kanpur", "Lucknow"],
-  answer: "Meerut",
-  explanation: "The uprising began among sepoys at Meerut in May 1857.",
-  hint: "Then marched to Delhi."
-},
-
-{
-  subject: "History",
-  category: "Modern India",
-  question: "The Indian National Congress was founded in:",
-  options: ["1885", "1905", "1906", "1919"],
-  answer: "1885",
-  explanation: "The Indian National Congress was founded in 1885.",
-  hint: "A.O. Hume."
-},
-
 {
   subject: "History",
   category: "World History",
@@ -20141,17 +20040,6 @@ export const cuetPgQuestions: CuetPgQuestion[] = Array<CuetPgQuestion>(
   explanation: "The sequence decreases by 5 each time.",
   hint: "Subtract 5."
 },
-
-{
-  subject: "General Aptitude",
-  category: "Logical Reasoning",
-  question: "Find the next letter: A, C, E, G, ?",
-  options: ["H", "I", "J", "K"],
-  answer: "I",
-  explanation: "The sequence moves forward by two letters each time.",
-  hint: "Skip one letter."
-},
-
 {
   subject: "General Aptitude",
   category: "Logical Reasoning",
@@ -20301,17 +20189,6 @@ export const cuetPgQuestions: CuetPgQuestion[] = Array<CuetPgQuestion>(
   explanation: "Phishing messages impersonate trusted sources to obtain credentials or financial information.",
   hint: "Fake message."
 },
-
-{
-  subject: "General Aptitude",
-  category: "General Awareness",
-  question: "The headquarters of UNESCO is in:",
-  options: ["Paris", "Rome", "Geneva", "Vienna"],
-  answer: "Paris",
-  explanation: "UNESCO is headquartered in Paris, France.",
-  hint: "France."
-},
-
 {
   subject: "General Aptitude",
   category: "General Awareness",
@@ -20460,7 +20337,7 @@ export const cuetPgQuestions: CuetPgQuestion[] = Array<CuetPgQuestion>(
   options: [
     "Criteria",
     "Criterions",
-    "Criterions",
+    "Criterion",
     "Criterias"
   ],
   answer: "Criteria",
@@ -20824,23 +20701,6 @@ export const cuetPgQuestions: CuetPgQuestion[] = Array<CuetPgQuestion>(
     "Plagiarism involves presenting another person's words or ideas as one's own without appropriate acknowledgement.",
   hint: "Using someone's work without credit."
 },
-
-{
-  subject: "English",
-  category: "Writing",
-  question: "A citation is used mainly to:",
-  options: [
-    "Acknowledge the source of information or ideas",
-    "Increase the word count",
-    "Replace the essay title",
-    "Avoid paragraphing"
-  ],
-  answer: "Acknowledge the source of information or ideas",
-  explanation:
-    "Citations identify sources and allow readers to see where particular information, evidence or ideas originated.",
-  hint: "Give credit to the source."
-},
-
 {
   subject: "English",
   category: "Writing",
@@ -21794,23 +21654,6 @@ export const cuetPgQuestions: CuetPgQuestion[] = Array<CuetPgQuestion>(
     "Rousseau's general will represents the collective orientation toward the common good rather than merely private interests.",
   hint: "Not simply everyone's private wishes."
 },
-
-{
-  subject: "Political Science",
-  category: "Political Thought",
-  question: "Who wrote The Social Contract?",
-  options: [
-    "Jean-Jacques Rousseau",
-    "John Stuart Mill",
-    "Jeremy Bentham",
-    "Karl Marx"
-  ],
-  answer: "Jean-Jacques Rousseau",
-  explanation:
-    "Rousseau published The Social Contract in 1762 and explored popular sovereignty and legitimate political authority.",
-  hint: "Man is born free..."
-},
-
 {
   subject: "Political Science",
   category: "Political Thought",
@@ -22022,23 +21865,6 @@ export const cuetPgQuestions: CuetPgQuestion[] = Array<CuetPgQuestion>(
     "Vivekananda emphasised human dignity, education, spiritual development and service to humanity.",
   hint: "Service to humanity."
 },
-
-{
-  subject: "Political Science",
-  category: "Indian Political Thought",
-  question: "Who wrote Hind Swaraj?",
-  options: [
-    "Mahatma Gandhi",
-    "Jawaharlal Nehru",
-    "B.R. Ambedkar",
-    "M.N. Roy"
-  ],
-  answer: "Mahatma Gandhi",
-  explanation:
-    "Gandhi wrote Hind Swaraj in 1909, presenting his critique of modern civilisation and his understanding of swaraj.",
-  hint: "Gandhi's critique of modern civilisation."
-},
-
 {
   subject: "Political Science",
   category: "Indian Political Thought",
@@ -22102,23 +21928,6 @@ export const cuetPgQuestions: CuetPgQuestion[] = Array<CuetPgQuestion>(
     "Ambedkar regarded caste as a deeply unequal social order incompatible with liberty, equality and fraternity.",
   hint: "Annihilation of Caste."
 },
-
-{
-  subject: "Political Science",
-  category: "Indian Political Thought",
-  question: "Who wrote Annihilation of Caste?",
-  options: [
-    "B.R. Ambedkar",
-    "Mahatma Gandhi",
-    "Jawaharlal Nehru",
-    "Rabindranath Tagore"
-  ],
-  answer: "B.R. Ambedkar",
-  explanation:
-    "Annihilation of Caste is one of Ambedkar's most important critiques of caste hierarchy.",
-  hint: "Ambedkar's famous critique."
-},
-
 {
   subject: "Political Science",
   category: "Indian Political Thought",
@@ -22284,5 +22093,229 @@ export const cuetPgQuestions: CuetPgQuestion[] = Array<CuetPgQuestion>(
       "Jeremy Bentham is strongly associated with utilitarianism.",
   },
   hint: "Think of justice as fairness.",
-}, 
+},
+{
+  subject: "General Aptitude",
+  category: "Quantitative Aptitude",
+  question: "A college has 250 applicants, and 18% are shortlisted. How many applicants are shortlisted?",
+  options: ["35", "40", "45", "50"],
+  answer: "45",
+  explanation: "18% of 250 is 0.18 × 250 = 45.",
+  wrongExplanations: {
+    "35": "This is 14% of 250.",
+    "40": "This is 16% of 250.",
+    "50": "This is 20% of 250."
+  },
+  hint: "Find 10% and 8% of 250, then add them."
+},
+{
+  subject: "General Aptitude",
+  category: "Logical Reasoning",
+  question: "All scholarships at a college require an entrance test. Mina received one of these scholarships. Which conclusion follows?",
+  options: ["Mina took the entrance test", "Everyone who took the test received a scholarship", "Mina received the highest score", "No conclusion can be drawn"],
+  answer: "Mina took the entrance test",
+  explanation: "If receiving one of these scholarships requires taking the test, then a recipient must have taken the test. The converse is not implied.",
+  wrongExplanations: {
+    "Everyone who took the test received a scholarship": "A required condition is not necessarily sufficient.",
+    "Mina received the highest score": "The statements give no ranking information.",
+    "No conclusion can be drawn": "The stated requirement does support the conclusion that Mina took the test."
+  },
+  hint: "Separate what is necessary for a scholarship from what is sufficient."
+},
+{
+  subject: "Political Science",
+  category: "Political Theory",
+  question: "In Isaiah Berlin's distinction, negative liberty primarily refers to:",
+  options: ["Freedom from external interference", "The capacity to achieve every personal goal", "Collective ownership of productive resources", "Participation in every public decision"],
+  answer: "Freedom from external interference",
+  explanation: "Berlin uses negative liberty to describe a protected area in which a person can act without interference by others, especially the state.",
+  wrongExplanations: {
+    "The capacity to achieve every personal goal": "This is closer to positive liberty or capability-based accounts.",
+    "Collective ownership of productive resources": "This is an economic arrangement, not Berlin's definition of negative liberty.",
+    "Participation in every public decision": "Political participation is not the core definition of negative liberty."
+  },
+  hint: "Think of the area in which others do not obstruct an individual."
+},
+{
+  subject: "Political Science",
+  category: "Comparative Politics",
+  question: "A proportional representation electoral system is designed chiefly to:",
+  options: ["Make legislative seats broadly reflect parties' vote shares", "Guarantee a single-party majority", "Give every constituency two representatives", "Remove the need for political parties"],
+  answer: "Make legislative seats broadly reflect parties' vote shares",
+  explanation: "Proportional systems allocate seats so that representation more closely corresponds to the votes parties receive, subject to the system's rules and thresholds.",
+  wrongExplanations: {
+    "Guarantee a single-party majority": "Proportional representation does not guarantee a majority.",
+    "Give every constituency two representatives": "The number of representatives depends on the specific electoral design.",
+    "Remove the need for political parties": "Parties commonly contest and receive seats under proportional systems."
+  },
+  hint: "Compare each party's share of votes with its share of seats."
+},
+{
+  subject: "History",
+  category: "Ancient India",
+  question: "Most of Ashoka's inscriptions in the Indian subcontinent were composed in which language and script?",
+  options: ["Prakrit in Brahmi", "Sanskrit in Devanagari", "Pali in Grantha", "Tamil in Vatteluttu"],
+  answer: "Prakrit in Brahmi",
+  explanation: "Most Ashokan edicts in the subcontinent use Prakrit language and Brahmi script, with regional and northwestern exceptions.",
+  wrongExplanations: {
+    "Sanskrit in Devanagari": "This was not the usual language-script combination of Ashoka's edicts.",
+    "Pali in Grantha": "This does not describe the majority of the subcontinental inscriptions.",
+    "Tamil in Vatteluttu": "This was not the script-language combination used for most Ashokan edicts."
+  },
+  hint: "Think of the widely used early historic script that was later deciphered by James Prinsep."
+},
+{
+  subject: "History",
+  category: "Medieval India",
+  question: "Under the Delhi Sultanate, an iqta was generally an assignment of:",
+  options: ["Revenue from a territory in return for service", "Permanent private ownership of all land in a province", "A hereditary title to the throne", "A tax-free grant to every cultivator"],
+  answer: "Revenue from a territory in return for service",
+  explanation: "An iqta generally assigned revenue rights from a territory to an official or military commander in return for administrative or military service; it was not simply private ownership of the land.",
+  wrongExplanations: {
+    "Permanent private ownership of all land in a province": "An iqta was a revenue assignment, not straightforward private ownership.",
+    "A hereditary title to the throne": "An iqta was an administrative and fiscal arrangement.",
+    "A tax-free grant to every cultivator": "The assignment concerned revenue collection and service obligations."
+  },
+  hint: "Focus on rights to collect revenue rather than ownership of soil."
+},
+{
+  subject: "Geography",
+  category: "Physical Geography",
+  question: "In the Northern Hemisphere, the Coriolis effect deflects large-scale moving air primarily to the:",
+  options: ["Right of its direction of travel", "Left of its direction of travel", "Equator, regardless of direction", "Nearest mountain range"],
+  answer: "Right of its direction of travel",
+  explanation: "Because of Earth's rotation, moving air and other freely moving objects are deflected to the right in the Northern Hemisphere and to the left in the Southern Hemisphere.",
+  wrongExplanations: {
+    "Left of its direction of travel": "That is the usual deflection direction in the Southern Hemisphere.",
+    "Equator, regardless of direction": "The effect changes direction by hemisphere and is not always toward the equator.",
+    "Nearest mountain range": "The Coriolis effect results from Earth's rotation, not proximity to mountains."
+  },
+  hint: "Remember the right-left rule by hemisphere."
+},
+{
+  subject: "Geography",
+  category: "Human Geography",
+  question: "A region has a population of 600,000 people and an area of 2,000 km². What is its arithmetic population density?",
+  options: ["30 people per km²", "300 people per km²", "3,000 people per km²", "12,000 people per km²"],
+  answer: "300 people per km²",
+  explanation: "Arithmetic population density is total population divided by area: 600,000 ÷ 2,000 = 300 people per km².",
+  wrongExplanations: {
+    "30 people per km²": "This is ten times too small; check the division.",
+    "3,000 people per km²": "This is ten times too large; check the division.",
+    "12,000 people per km²": "This does not result from population divided by area."
+  },
+  hint: "Divide the number of people by the land area."
+},
+{
+  subject: "Economics",
+  category: "Microeconomics",
+  question: "If the absolute value of price elasticity of demand is 2, a 1% increase in price is associated approximately with a:",
+  options: ["2% increase in quantity demanded", "2% decrease in quantity demanded", "0.5% decrease in quantity demanded", "No change in quantity demanded"],
+  answer: "2% decrease in quantity demanded",
+  explanation: "Elasticity is the percentage change in quantity demanded divided by the percentage change in price. With an absolute value of 2, a 1% price rise corresponds to about a 2% fall in quantity demanded, all else equal.",
+  wrongExplanations: {
+    "2% increase in quantity demanded": "For a standard demand curve, quantity demanded moves opposite to price.",
+    "0.5% decrease in quantity demanded": "This reverses the elasticity ratio.",
+    "No change in quantity demanded": "An elasticity magnitude of 2 indicates a responsive quantity change."
+  },
+  hint: "Demand elasticity normally has a negative sign; the question gives its magnitude."
+},
+{
+  subject: "Economics",
+  category: "Public Finance",
+  question: "A pure public good is generally both:",
+  options: ["Non-rival and non-excludable", "Rival and excludable", "Rival and non-excludable", "Non-rival and excludable"],
+  answer: "Non-rival and non-excludable",
+  explanation: "For a pure public good, one person's use does not substantially reduce availability to others (non-rivalry), and people are difficult to exclude from it (non-excludability).",
+  wrongExplanations: {
+    "Rival and excludable": "This describes many private goods.",
+    "Rival and non-excludable": "This is characteristic of common-pool resources.",
+    "Non-rival and excludable": "This can describe a club good, not a pure public good."
+  },
+  hint: "Ask whether one person's use reduces another's and whether non-payers can be excluded."
+},
+{
+  subject: "Sociology",
+  category: "Sociological Thinkers",
+  question: "For Emile Durkheim, a social fact is characterised especially by being:",
+  options: ["External to individuals and capable of exerting constraint", "A purely biological instinct", "A private preference with no social origin", "An individual act that cannot be observed"],
+  answer: "External to individuals and capable of exerting constraint",
+  explanation: "Durkheim described social facts as ways of acting, thinking, or feeling that exist outside an individual and exert social constraint.",
+  wrongExplanations: {
+    "A purely biological instinct": "Durkheim distinguished social facts from purely biological phenomena.",
+    "A private preference with no social origin": "A social fact is collective and external, not merely private.",
+    "An individual act that cannot be observed": "Social facts can be studied through their observable effects and institutions."
+  },
+  hint: "Look for the combination of externality and constraint."
+},
+{
+  subject: "Sociology",
+  category: "Social Institutions",
+  question: "Endogamy is a marriage rule that generally requires a person to marry:",
+  options: ["Within a specified social group", "Outside every kinship group", "Only someone from another country", "Without regard to any social group"],
+  answer: "Within a specified social group",
+  explanation: "Endogamy prescribes marriage within a defined group, such as a community or social category; the precise boundary varies by society.",
+  wrongExplanations: {
+    "Outside every kinship group": "Marriage outside a group is exogamy, not endogamy.",
+    "Only someone from another country": "Endogamy is not defined by national borders.",
+    "Without regard to any social group": "Endogamy specifically sets an in-group boundary."
+  },
+  hint: "The prefix 'endo-' means within."
+},
+{
+  subject: "Education",
+  category: "Assessment",
+  question: "A criterion-referenced test interprets a learner's result by comparing it with:",
+  options: ["A stated standard or set of learning criteria", "The scores of other learners only", "The class average", "A randomly selected national rank"],
+  answer: "A stated standard or set of learning criteria",
+  explanation: "Criterion-referenced assessment judges performance against specified learning outcomes or standards rather than against other test-takers.",
+  wrongExplanations: {
+    "The scores of other learners only": "That is a norm-referenced comparison.",
+    "The class average": "A class average is a group norm, not a fixed learning criterion.",
+    "A randomly selected national rank": "Ranking is norm-referenced and would not define the criterion."
+  },
+  hint: "The benchmark is a learning standard, not another learner."
+},
+{
+  subject: "Education",
+  category: "Inclusive Education",
+  question: "A teacher offers the same learning goal through text, audio, and a visual model. This practice most directly supports:",
+  options: ["Multiple means of representation", "A single fixed mode of instruction", "Norm-referenced grading", "Selective exclusion"],
+  answer: "Multiple means of representation",
+  explanation: "Providing information in different formats supports varied learner needs and is a core Universal Design for Learning principle.",
+  wrongExplanations: {
+    "A single fixed mode of instruction": "The scenario deliberately uses more than one format.",
+    "Norm-referenced grading": "The scenario concerns access to content, not comparison of scores.",
+    "Selective exclusion": "Multiple formats are intended to broaden access."
+  },
+  hint: "The key is how information is presented."
+},
+{
+  subject: "English",
+  category: "Grammar",
+  question: "Which sentence has a correctly placed introductory modifier?",
+  options: ["Walking to class, Rina found a lost key.", "Walking to class, a lost key was found by Rina.", "Walking to class, the rain began suddenly.", "Walking to class, the classroom seemed far away."],
+  answer: "Walking to class, Rina found a lost key.",
+  explanation: "The introductory phrase 'Walking to class' must describe the subject that follows it: Rina.",
+  wrongExplanations: {
+    "Walking to class, a lost key was found by Rina.": "The sentence makes it sound as if the key was walking.",
+    "Walking to class, the rain began suddenly.": "The rain cannot be the person walking to class.",
+    "Walking to class, the classroom seemed far away.": "The classroom is not the actor described by the opening phrase."
+  },
+  hint: "The noun immediately after the introductory phrase should be doing the walking."
+},
+{
+  subject: "English",
+  category: "Comprehension Skills",
+  question: "A passage states that a pilot programme improved attendance, but says further study is needed before applying it nationally. Which conclusion is best supported?",
+  options: ["The programme is promising but not yet proven for national use", "The programme has failed", "The programme will certainly work in every region", "Attendance fell during the pilot"],
+  answer: "The programme is promising but not yet proven for national use",
+  explanation: "The stated improvement is encouraging, while the need for further study limits how widely the result can be generalised.",
+  wrongExplanations: {
+    "The programme has failed": "The passage says attendance improved.",
+    "The programme will certainly work in every region": "The passage explicitly says further study is needed.",
+    "Attendance fell during the pilot": "This contradicts the reported improvement."
+  },
+  hint: "Keep both the positive finding and the stated limitation."
+},
 );

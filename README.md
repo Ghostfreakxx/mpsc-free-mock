@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MPSC Free Mock
 
-## Getting Started
+A learning space for MPSC aspirants and other students in Mizoram. It brings the existing practice banks and study resources together with a learner dashboard, daily planner and progress view.
 
-First, run the development server:
+## Learning Routes
+
+- `/` - Student overview, learning library, daily planner and practice progress.
+- `/mock-test` - MPSC subject practice with answers, explanations and hints.
+- `/college-notes` - Arts college notes.
+- `/mizo` - Mizo alphabet, pronunciation notes and bilingual practice.
+- `/neet` - NEET science practice.
+- `/cuet-pg` - CUET PG practice.
+
+Practice rotates through each selected question pool without repeating a fresh question in the same round. Missed answers return in a spaced review queue. Rotation state, planner checkoffs and MPSC answer history are saved in the browser on the current device; they are not synced between devices or accounts.
+
+Run `npm run validate:banks` to check question options, answers, explanations and duplicate prompts. Run `npm run test:question-rotation` to test round exhaustion, retries and saved progress.
+
+The MPSC study assistant works with built-in study guidance when no AI key is configured. To enable generated tutoring responses, set `OPENAI_API_KEY` in the server environment. It defaults to `gpt-5.6-luna`; optionally set `OPENAI_MODEL` to choose another API-supported model. Responses API state storage is disabled for tutoring calls. Never expose the key in a `NEXT_PUBLIC_` variable.
+
+## Local Development
+
+Install dependencies and start Next.js:
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The production build is generated with `npm run build` and served with `npm run start`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`node ids.js` reports legacy question ID lines without changing files. Use `node ids.js --write` only when you intend to remove them from the MPSC practice bank; `remove-ids.js` remains as a compatibility alias.

@@ -1,7 +1,20 @@
 "use client";
 
 import Link from "next/link";
+import {
+  ArrowLeft,
+  ArrowUpRight,
+  BookMarked,
+  BookOpen,
+  ClipboardCheck,
+  GraduationCap,
+  LayoutDashboard,
+  MessageCircle,
+  Search,
+  X,
+} from "lucide-react";
 import { useMemo, useState } from "react";
+import InstallAppButton from "../install-app-button";
 
 type Note = {
   title: string;
@@ -2578,161 +2591,93 @@ export default function CollegeNotesPage() {
   }, [search, subject]);
 
   return (
-    <main className="min-h-screen bg-slate-950 px-4 py-8 text-slate-100">
-      <div className="mx-auto max-w-7xl">
-        {/* HEADER */}
-        <section className="mb-8 rounded-3xl border border-cyan-400/40 bg-slate-900 p-6 shadow-[0_0_40px_rgba(34,211,238,0.25)]">
-          <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">
-            Mizoram Arts College Notes
-          </p>
+    <main className="academy-shell notes-page-shell">
+      <aside className="academy-sidebar">
+        <Link href="/" className="academy-brand" aria-label="MPSC Free Mock home">
+          <span className="brand-mark"><GraduationCap size={22} strokeWidth={2.1} /></span>
+          <span className="brand-copy"><strong>MPSC FREE MOCK</strong><small>LEARNING SPACE</small></span>
+        </Link>
+        <div className="sidebar-label">YOUR LEARNING SPACE</div>
+        <nav className="sidebar-nav" aria-label="Learning navigation">
+          <Link href="/" className="sidebar-link"><LayoutDashboard size={18} /><span>Learning space</span><ArrowUpRight className="nav-external" size={14} /></Link>
+          <Link href="/mock-test" className="sidebar-link"><ClipboardCheck size={18} /><span>MPSC practice</span></Link>
+          <Link href="/mizo" className="sidebar-link"><BookOpen size={18} /><span>Mizo Tawng</span></Link>
+          <Link href="/neet" className="sidebar-link"><BookOpen size={18} /><span>NEET practice</span></Link>
+          <Link href="/cuet-pg" className="sidebar-link"><GraduationCap size={18} /><span>CUET PG practice</span></Link>
+          <Link href="/college-notes" className="sidebar-link is-active" aria-current="page"><BookMarked size={18} /><span>College notes</span></Link>
+        </nav>
+        <div className="sidebar-spacer" />
+        <div className="sidebar-help"><span className="help-icon"><BookOpen size={17} /></span><div><strong>Keep learning freely</strong><span>Knowledge grows when shared.</span></div><ArrowUpRight size={15} /></div>
+        <div className="sidebar-profile"><span className="profile-avatar">M</span><div><strong>Mizoram aspirant</strong><span>Independent learner</span></div><span className="profile-status" title="Learning space active" /></div>
+      </aside>
 
-          <h1 className="mt-3 text-4xl font-bold text-cyan-300 md:text-6xl">
-            College-Level Free Study Notes
-          </h1>
-
-          <p className="mt-4 max-w-4xl text-slate-300">
-            Easy-to-study college notes for Mizoram students. Choose a subject,
-            search a topic and read short revision notes or longer exam-style
-            explanations.
-          </p>
-
-          <div className="mt-6 flex flex-wrap gap-3">
-            <Link
-              href="/"
-              className="rounded-xl border border-cyan-400 px-5 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-400/10"
-            >
-              ← Back to Mock Test
-            </Link>
+      <div className="academy-main">
+        <header className="academy-topbar practice-topbar">
+          <Link href="/" className="mobile-brand" aria-label="Back to learning space"><span className="brand-mark"><GraduationCap size={19} /></span><strong>MPSC FREE MOCK</strong></Link>
+          <p className="practice-breadcrumb">Library <span>/</span> College notes</p>
+          <div className="topbar-actions">
+            <button type="button" className="icon-button practice-chat-trigger" onClick={() => window.dispatchEvent(new Event("mpsc-open-assistant"))} aria-label="Open MPSC study assistant" title="Open study assistant"><MessageCircle size={18} /></button>
+            <InstallAppButton />
+            <Link href="/" className="icon-button practice-back" aria-label="Back to learning space" title="Back to learning space"><ArrowLeft size={18} /></Link>
           </div>
-        </section>
+        </header>
 
-        {/* SUBJECT BUTTONS */}
-        <section className="mb-6 flex flex-wrap gap-3">
-          {subjects.map((item) => (
-            <button
-              key={item.name}
-              onClick={() => {
-                setSelectedSubject(item.name);
-                setSearch("");
-              }}
-              className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${
-                selectedSubject === item.name
-                  ? "bg-cyan-400 text-slate-950"
-                  : "border-cyan-400 text-cyan-300 hover:bg-cyan-400/10"
-              }`}
-            >
-              {item.name}
-            </button>
-          ))}
-        </section>
+        <section className="academy-content practice-content notes-content">
+          <div className="page-heading-row practice-heading">
+            <div><span className="section-kicker">MIZORAM ARTS COLLEGE · FREE LEARNING</span><h1>College notes</h1><p>Search a subject, review concise notes, or study longer exam-style explanations.</p></div>
+            <Link href="/mock-test" className="button button-outline practice-language-link">MPSC practice <ArrowUpRight size={15} /></Link>
+          </div>
 
-        {/* SEARCH */}
-        <section className="mb-6 rounded-3xl border border-cyan-400/30 bg-slate-900 p-5">
-          <label className="text-sm font-semibold text-cyan-300">
-            Search inside {subject.name}
-          </label>
-
-          <input
-            value={search}
-            onChange={(event) => setSearch(event.target.value)}
-            placeholder="Search topic or keyword..."
-            className="mt-3 w-full rounded-2xl border border-cyan-400/40 bg-slate-950 px-4 py-3 text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-cyan-300"
-          />
-
-          {search && (
-            <p className="mt-3 text-sm text-slate-400">
-              Found {filteredShortNotes.length} short note
-              {filteredShortNotes.length !== 1 ? "s" : ""} and{" "}
-              {filteredLongNotes.length} long note
-              {filteredLongNotes.length !== 1 ? "s" : ""}.
-            </p>
-          )}
-        </section>
-
-        {/* NOTES */}
-        <section className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
-          {/* SHORT NOTES */}
-          <div className="rounded-3xl border border-cyan-400/40 bg-slate-900 p-6">
-            <div className="flex items-center justify-between gap-3">
-              <h2 className="text-2xl font-bold text-cyan-300">
-                Short Notes
-              </h2>
-
-              <span className="rounded-full border border-cyan-400/30 bg-slate-950 px-3 py-1 text-xs text-slate-400">
-                {filteredShortNotes.length}
-              </span>
-            </div>
-
-            <p className="mt-1 text-sm text-slate-400">{subject.name}</p>
-
-            <div className="mt-5 space-y-4">
-              {filteredShortNotes.map((note) => (
-                <article
-                  key={note.title}
-                  className="rounded-2xl border border-cyan-400/20 bg-slate-950 p-4 transition hover:border-cyan-400/40"
-                >
-                  <h3 className="font-bold text-white">{note.title}</h3>
-
-                  <p className="mt-2 text-sm leading-6 text-slate-300">
-                    {note.body}
-                  </p>
-                </article>
+          <section className="practice-category-panel notes-subject-panel" aria-label="Choose a subject">
+            <div className="practice-section-heading"><div><span className="section-kicker">LEARNING LIBRARY</span><h2>Choose a subject</h2></div><span>{subjects.length} subjects</span></div>
+            <div className="practice-category-list">
+              {subjects.map((item) => (
+                <button
+                  type="button"
+                  key={item.name}
+                  onClick={() => { setSelectedSubject(item.name); setSearch(""); }}
+                  aria-pressed={selectedSubject === item.name}
+                  className={`practice-category-button ${selectedSubject === item.name ? "is-active" : ""}`}
+                >{item.name}</button>
               ))}
-
-              {filteredShortNotes.length === 0 && (
-                <p className="rounded-2xl border border-red-400/40 bg-red-400/10 p-4 text-red-200">
-                  No short note found for this search.
-                </p>
-              )}
             </div>
-          </div>
+          </section>
 
-          {/* LONG NOTES */}
-          <div className="rounded-3xl border border-cyan-400/40 bg-slate-900 p-6">
-            <div className="flex items-center justify-between gap-3">
-              <h2 className="text-2xl font-bold text-cyan-300">
-                Long Notes
-              </h2>
+          <section className="content-panel notes-search-panel">
+            <label htmlFor="notes-search" className="section-kicker">SEARCH {subject.name.toUpperCase()}</label>
+            <div className="notes-search-control"><Search size={17} aria-hidden="true" /><input id="notes-search" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search topics or keywords" /><button type="button" onClick={() => setSearch("")} aria-label="Clear search" title="Clear search" disabled={!search}><X size={16} /></button></div>
+            {search && <p className="notes-search-count">Found {filteredShortNotes.length} short notes and {filteredLongNotes.length} long notes.</p>}
+          </section>
 
-              <span className="rounded-full border border-cyan-400/30 bg-slate-950 px-3 py-1 text-xs text-slate-400">
-                {filteredLongNotes.length}
-              </span>
-            </div>
+          <section className="notes-layout" aria-label={`${subject.name} study notes`}>
+            <section className="content-panel notes-panel">
+              <div className="practice-section-heading"><div><span className="section-kicker">QUICK REVISION</span><h2>Short notes</h2></div><span>{filteredShortNotes.length}</span></div>
+              <p className="notes-subject-name">{subject.name}</p>
+              <div className="notes-list">
+                {filteredShortNotes.map((note) => <article className="notes-entry" key={note.title}><h3>{note.title}</h3><p>{note.body}</p></article>)}
+                {filteredShortNotes.length === 0 && <p className="notes-empty">No short notes match this search.</p>}
+              </div>
+            </section>
 
-            <p className="mt-1 text-sm text-slate-400">{subject.name}</p>
-
-            <div className="mt-5 space-y-5">
-              {filteredLongNotes.map((note) => (
-                <article
-                  key={note.title}
-                  className="rounded-2xl border border-cyan-400/20 bg-slate-950 p-5 transition hover:border-cyan-400/40"
-                >
-                  <h3 className="text-xl font-bold text-white">
-                    {note.title}
-                  </h3>
-
-                  <p className="mt-3 whitespace-pre-line leading-7 text-slate-300">
-                    {note.body}
-                  </p>
-                </article>
-              ))}
-
-              {filteredLongNotes.length === 0 && (
-                <p className="rounded-2xl border border-red-400/40 bg-red-400/10 p-4 text-red-200">
-                  No long note found for this search.
-                </p>
-              )}
-            </div>
-          </div>
-        </section>
-
-        {/* FOOTER */}
-        <section className="mt-8 rounded-3xl border border-cyan-400/20 bg-slate-900/70 p-5 text-center">
-          <p className="text-sm text-slate-400">
-            Free study material for students. Keep learning. 📖
-          </p>
+            <section className="content-panel notes-panel">
+              <div className="practice-section-heading"><div><span className="section-kicker">BUILD UNDERSTANDING</span><h2>Long notes</h2></div><span>{filteredLongNotes.length}</span></div>
+              <p className="notes-subject-name">{subject.name}</p>
+              <div className="notes-list notes-list-long">
+                {filteredLongNotes.map((note) => <article className="notes-entry" key={note.title}><h3>{note.title}</h3><p>{note.body}</p></article>)}
+                {filteredLongNotes.length === 0 && <p className="notes-empty">No long notes match this search.</p>}
+              </div>
+            </section>
+          </section>
+          <footer className="academy-footer"><span>Free study material for students. Keep learning.</span><span>Knowledge grows when shared.</span></footer>
         </section>
       </div>
+
+      <nav className="mobile-nav practice-mobile-nav" aria-label="Learning navigation">
+        <Link href="/" className="mobile-nav-link"><LayoutDashboard size={17} /><span>Learn</span></Link>
+        <Link href="/mock-test" className="mobile-nav-link"><ClipboardCheck size={17} /><span>MPSC</span></Link>
+        <Link href="/college-notes" className="mobile-nav-link is-active" aria-current="page"><BookMarked size={17} /><span>Notes</span></Link>
+        <Link href="/cuet-pg" className="mobile-nav-link"><GraduationCap size={17} /><span>CUET PG</span></Link>
+      </nav>
     </main>
   );
 }

@@ -1,7 +1,20 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import {
+  ArrowLeft,
+  ArrowUpRight,
+  BookMarked,
+  BookOpen,
+  ClipboardCheck,
+  GraduationCap,
+  LayoutDashboard,
+  MessageCircle,
+  TrendingUp,
+} from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import InstallAppButton from "../install-app-button";
+import { useQuestionRotation } from "../lib/use-question-rotation";
 
 const questions = [
   {
@@ -130,27 +143,6 @@ const questions = [
   hint:
     "Think of the company behind Gmail and YouTube."
 },
-  {
-  category: "ICT",
-  question: "What does RAM stand for?",
-  options: [
-    "Random Access Memory",
-    "Read Access Memory",
-    "Rapid Access Memory",
-    "Run Access Memory"
-  ],
-  answer: "Random Access Memory",
-  explanation:
-    "RAM is the temporary memory used by a computer to store data and programs currently in use.",
-  wrongExplanations: {
-    "Read Access Memory": "Incorrect expansion.",
-    "Rapid Access Memory": "Incorrect expansion.",
-    "Run Access Memory": "Incorrect expansion."
-  },
-  hint:
-    "Temporary working memory."
-},
-
 {
   category: "ICT",
   question: "Which of the following is an operating system?",
@@ -795,28 +787,6 @@ const questions = [
   hint:
     "Displays images and text."
 },
-
-{
-  category: "ICT",
-  question: "Which company developed the Android operating system?",
-  options: [
-    "Apple",
-    "Microsoft",
-    "Google",
-    "IBM"
-  ],
-  answer: "Google",
-  explanation:
-    "Android is developed and maintained by Google.",
-  wrongExplanations: {
-    "Apple": "Developed iOS.",
-    "Microsoft": "Developed Windows.",
-    "IBM": "Technology company but not Android developer."
-  },
-  hint:
-    "Also owns YouTube."
-},
-
 {
   category: "ICT",
   question: "What is the purpose of a firewall?",
@@ -836,27 +806,6 @@ const questions = [
   },
   hint:
     "Cybersecurity tool."
-},
-
-{
-  category: "ICT",
-  question: "Which of the following is a search engine?",
-  options: [
-    "Firefox",
-    "Google",
-    "Windows",
-    "WhatsApp"
-  ],
-  answer: "Google",
-  explanation:
-    "Google is a search engine used to find information on the internet.",
-  wrongExplanations: {
-    "Firefox": "Web browser.",
-    "Windows": "Operating system.",
-    "WhatsApp": "Messaging application."
-  },
-  hint:
-    "Most popular search engine."
 },
 {
   category: "ICT",
@@ -920,28 +869,6 @@ const questions = [
   hint:
     "Long-term storage device."
 },
-
-{
-  category: "ICT",
-  question: "What is the full form of URL?",
-  options: [
-    "Uniform Resource Locator",
-    "Universal Resource Link",
-    "Uniform Retrieval Link",
-    "Universal Retrieval Locator"
-  ],
-  answer: "Uniform Resource Locator",
-  explanation:
-    "A URL is the address used to locate resources on the internet.",
-  wrongExplanations: {
-    "Universal Resource Link": "Incorrect expansion.",
-    "Uniform Retrieval Link": "Incorrect expansion.",
-    "Universal Retrieval Locator": "Incorrect expansion."
-  },
-  hint:
-    "Website address."
-},
-
 {
   category: "ICT",
   question: "Which of the following is a mobile operating system?",
@@ -982,28 +909,6 @@ const questions = [
   hint:
     "Rows and columns."
 },
-
-{
-  category: "ICT",
-  question: "What does RAM stand for?",
-  options: [
-    "Random Access Memory",
-    "Read Access Memory",
-    "Rapid Access Memory",
-    "Remote Access Memory"
-  ],
-  answer: "Random Access Memory",
-  explanation:
-    "RAM is temporary memory used by the computer while running programs.",
-  wrongExplanations: {
-    "Read Access Memory": "Incorrect expansion.",
-    "Rapid Access Memory": "Incorrect expansion.",
-    "Remote Access Memory": "Incorrect expansion."
-  },
-  hint:
-    "Temporary memory."
-},
-
 {
   category: "ICT",
   question: "Which of the following is an example of application software?",
@@ -1068,18 +973,6 @@ const questions = [
 },
 {
   category: "ICT",
-  question: "What does CPU stand for?",
-  options: [
-    "Central Processing Unit",
-    "Computer Processing Utility",
-    "Central Program Unit",
-    "Control Processing Unit"
-  ],
-  answer: "Central Processing Unit",
-  explanation: "The CPU is the primary component of a computer that performs calculations and executes instructions."
-},
-{
-  category: "ICT",
   question: "Which of the following is an example of system software?",
   options: [
     "Microsoft Word",
@@ -1113,18 +1006,6 @@ const questions = [
   ],
   answer: "Uniform Resource Locator",
   explanation: "A URL is the address used to locate resources on the internet."
-},
-{
-  category: "ICT",
-  question: "Which of the following is an example of cloud storage?",
-  options: [
-    "Google Drive",
-    "MS Paint",
-    "Notepad",
-    "Calculator"
-  ],
-  answer: "Google Drive",
-  explanation: "Google Drive is a cloud-based storage service that allows users to store and access files online."
 },
 {
   category: "ICT",
@@ -1545,7 +1426,7 @@ const questions = [
   options: [
     "OPSUI",
     "OPSUIF",
-    "OPSUI",
+    "OPSVI",
     "OPSUIH"
   ],
   answer: "OPSUI",
@@ -1554,7 +1435,7 @@ const questions = [
   wrongExplanations: {
     "OPSUIF": "Extra letter added.",
     "OPSUIH": "Last letter incorrect.",
-    "OPSUI": "Correct answer."
+    "OPSVI": "The third letter should be S, not V."
   },
   hint:
     "Shift each letter +1."
@@ -4129,27 +4010,6 @@ const questions = [
 },
 {
   category: "Education",
-  question: "Who is known as the Father of Modern Education?",
-  options: [
-    "John Dewey",
-    "Jean-Jacques Rousseau",
-    "Johann Heinrich Pestalozzi",
-    "Plato"
-  ],
-  answer: "Johann Heinrich Pestalozzi",
-  explanation:
-    "Pestalozzi is widely regarded as the Father of Modern Education due to his child-centered approach.",
-  wrongExplanations: {
-    "John Dewey": "Known for Pragmatism.",
-    "Jean-Jacques Rousseau": "Naturalism in education.",
-    "Plato": "Ancient Greek philosopher."
-  },
-  hint:
-    "Swiss education reformer."
-},
-
-{
-  category: "Education",
   question: "Which method of teaching focuses on learning by doing?",
   options: [
     "Lecture Method",
@@ -5207,28 +5067,6 @@ const questions = [
   hint:
     "First President."
 },
-
-{
-  category: "History",
-  question: "Which movement was launched by Mahatma Gandhi in 1942?",
-  options: [
-    "Non-Cooperation Movement",
-    "Civil Disobedience Movement",
-    "Quit India Movement",
-    "Swadeshi Movement"
-  ],
-  answer: "Quit India Movement",
-  explanation:
-    "The Quit India Movement was launched in August 1942 demanding an end to British rule.",
-  wrongExplanations: {
-    "Non-Cooperation Movement": "Started in 1920.",
-    "Civil Disobedience Movement": "Started in 1930.",
-    "Swadeshi Movement": "Associated with Bengal Partition."
-  },
-  hint:
-    "Do or Die."
-},
-
 {
   category: "History",
   question: "Who wrote 'Arthashastra'?",
@@ -5416,18 +5254,6 @@ const questions = [
 },
 {
   category: "History",
-  question: "Who was the first woman ruler of the Delhi Sultanate?",
-  options: [
-    "Nur Jahan",
-    "Razia Sultan",
-    "Mumtaz Mahal",
-    "Jahanara Begum"
-  ],
-  answer: "Razia Sultan",
-  explanation: "Razia Sultan ruled from 1236 to 1240 and was the first and only woman to sit on the throne of the Delhi Sultanate."
-},
-{
-  category: "History",
   question: "Which Delhi Sultan introduced market control measures and price regulations?",
   options: [
     "Muhammad bin Tughlaq",
@@ -5605,18 +5431,6 @@ const questions = [
   ],
   answer: "Bal Gangadhar Tilak and Annie Besant",
   explanation: "The Home Rule Movement was launched in 1916 by Bal Gangadhar Tilak and Annie Besant to demand self-government for India."
-},
-{
-  category: "History",
-  question: "The Jallianwala Bagh Massacre took place in:",
-  options: [
-    "1917",
-    "1918",
-    "1919",
-    "1920"
-  ],
-  answer: "1919",
-  explanation: "The Jallianwala Bagh Massacre occurred on 13 April 1919 in Amritsar when troops under General Dyer fired on a peaceful gathering."
 },
 {
   category: "History",
@@ -6574,69 +6388,6 @@ const questions = [
     },
     hint: "Peace Accord first, statehood after that.",
   },
-  {
-  category: "History",
-  question: "Who founded the Indian National Congress in 1885?",
-  options: [
-    "A.O. Hume",
-    "Mahatma Gandhi",
-    "Jawaharlal Nehru",
-    "Subhas Chandra Bose"
-  ],
-  answer: "A.O. Hume",
-  explanation:
-    "A.O. Hume, a retired British civil servant, played a key role in founding the Indian National Congress in 1885.",
-  wrongExplanations: {
-    "Mahatma Gandhi": "Gandhi joined Congress later.",
-    "Jawaharlal Nehru": "Nehru was a later Congress leader.",
-    "Subhas Chandra Bose": "Bose was not the founder."
-  },
-  hint:
-    "Think of the retired British civil servant."
-},
-
-{
-  category: "History",
-  question: "The Revolt of 1857 started at:",
-  options: [
-    "Delhi",
-    "Meerut",
-    "Kanpur",
-    "Lucknow"
-  ],
-  answer: "Meerut",
-  explanation:
-    "The Revolt of 1857 began at Meerut before spreading across North India.",
-  wrongExplanations: {
-    "Delhi": "Delhi became a major centre later.",
-    "Kanpur": "Kanpur was important but not the starting point.",
-    "Lucknow": "Lucknow became a major battlefield later."
-  },
-  hint:
-    "Think of the cantonment where sepoys first revolted."
-},
-
-{
-  category: "History",
-  question: "Who was known as the 'Iron Man of India'?",
-  options: [
-    "Jawaharlal Nehru",
-    "Subhas Chandra Bose",
-    "Sardar Vallabhbhai Patel",
-    "Rajendra Prasad"
-  ],
-  answer: "Sardar Vallabhbhai Patel",
-  explanation:
-    "Patel earned the title Iron Man of India for integrating princely states into the Indian Union.",
-  wrongExplanations: {
-    "Jawaharlal Nehru": "Nehru was India's first Prime Minister.",
-    "Subhas Chandra Bose": "Bose led the INA.",
-    "Rajendra Prasad": "Prasad was India's first President."
-  },
-  hint:
-    "Think of national integration after independence."
-},
-
 {
   category: "History",
   question: "Who gave the slogan 'Give me blood, and I will give you freedom'?",
@@ -6678,27 +6429,6 @@ const questions = [
   hint:
     "Think of Independence Day."
 },
- {
-  category: "History",
-  question: "Who founded the Maurya Empire?",
-  options: [
-    "Ashoka",
-    "Bindusara",
-    "Chandragupta Maurya",
-    "Harsha"
-  ],
-  answer: "Chandragupta Maurya",
-  explanation:
-    "Chandragupta Maurya founded the Maurya Empire around 322 BCE with the guidance of Chanakya.",
-  wrongExplanations: {
-    "Ashoka": "Ashoka was the most famous Mauryan ruler but not the founder.",
-    "Bindusara": "Bindusara was Chandragupta's son.",
-    "Harsha": "Harsha ruled much later."
-  },
-  hint:
-    "Chanakya's student."
-},
-
 {
   category: "History",
   question: "Who wrote the book 'Arthashastra'?",
@@ -6740,28 +6470,6 @@ const questions = [
   hint:
     "Mumtaz Mahal."
 },
-
-{
-  category: "History",
-  question: "Who was the first Governor-General of independent India?",
-  options: [
-    "C. Rajagopalachari",
-    "Lord Mountbatten",
-    "Jawaharlal Nehru",
-    "Rajendra Prasad"
-  ],
-  answer: "Lord Mountbatten",
-  explanation:
-    "Lord Mountbatten served as the first Governor-General of independent India from 1947 to 1948.",
-  wrongExplanations: {
-    "C. Rajagopalachari": "He was the first Indian Governor-General.",
-    "Jawaharlal Nehru": "He was the first Prime Minister.",
-    "Rajendra Prasad": "He was the first President."
-  },
-  hint:
-    "Last Viceroy of British India."
-},
-
 {
   category: "History",
   question: "Who gave the slogan 'Swaraj is my birthright and I shall have it'?",
@@ -6823,28 +6531,6 @@ const questions = [
   hint:
     "A famous Gupta emperor."
 },
-
-{
-  category: "History",
-  question: "Who founded the Mughal Empire in India?",
-  options: [
-    "Akbar",
-    "Babur",
-    "Humayun",
-    "Shah Jahan"
-  ],
-  answer: "Babur",
-  explanation:
-    "Babur founded the Mughal Empire after the First Battle of Panipat in 1526.",
-  wrongExplanations: {
-    "Akbar": "Expanded and consolidated the empire.",
-    "Humayun": "Babur's son.",
-    "Shah Jahan": "Built the Taj Mahal."
-  },
-  hint:
-    "First Battle of Panipat."
-},
-
 {
   category: "History",
   question: "The Jallianwala Bagh massacre took place in which year?",
@@ -6900,48 +6586,6 @@ const questions = [
     },
     hint: "Think of Mizoram’s roads, slopes and mountains.",
   },
-  {
-  category: "Geography",
-  question: "Which is the largest ocean in the world?",
-  options: [
-    "Atlantic Ocean",
-    "Indian Ocean",
-    "Pacific Ocean",
-    "Arctic Ocean"
-  ],
-  answer: "Pacific Ocean",
-  explanation:
-    "The Pacific Ocean is the largest and deepest ocean on Earth.",
-  wrongExplanations: {
-    "Atlantic Ocean": "Atlantic is the second largest ocean.",
-    "Indian Ocean": "Indian Ocean is smaller than the Pacific.",
-    "Arctic Ocean": "Arctic is the smallest ocean."
-  },
-  hint:
-    "Think of the ocean between Asia and the Americas."
-},
-
-{
-  category: "Geography",
-  question: "Which is the highest mountain peak in the world?",
-  options: [
-    "Kanchenjunga",
-    "Mount Everest",
-    "K2",
-    "Nanga Parbat"
-  ],
-  answer: "Mount Everest",
-  explanation:
-    "Mount Everest is the highest mountain peak above sea level at 8,848.86 metres.",
-  wrongExplanations: {
-    "Kanchenjunga": "Kanchenjunga is the third highest mountain.",
-    "K2": "K2 is the second highest mountain.",
-    "Nanga Parbat": "Nanga Parbat is much lower than Everest."
-  },
-  hint:
-    "Think of Nepal and Tibet."
-},
-
 {
   category: "Geography",
   question: "Which river is known as the 'Sorrow of Bihar'?",
@@ -6962,49 +6606,7 @@ const questions = [
   hint:
     "Think of a flood-prone river."
 },
-
 {
-  category: "Geography",
-  question: "Which Indian state has the longest coastline?",
-  options: [
-    "Tamil Nadu",
-    "Gujarat",
-    "Maharashtra",
-    "Andhra Pradesh"
-  ],
-  answer: "Gujarat",
-  explanation:
-    "Gujarat has the longest coastline among Indian states.",
-  wrongExplanations: {
-    "Tamil Nadu": "Tamil Nadu has a long coastline but not the longest.",
-    "Maharashtra": "Maharashtra's coastline is shorter.",
-    "Andhra Pradesh": "Andhra Pradesh ranks below Gujarat."
-  },
-  hint:
-    "Think of India's western coast."
-},
-
-{
-  category: "Geography",
-  question: "Which layer of the atmosphere contains the ozone layer?",
-  options: [
-    "Troposphere",
-    "Stratosphere",
-    "Mesosphere",
-    "Thermosphere"
-  ],
-  answer: "Stratosphere",
-  explanation:
-    "The ozone layer is located mainly in the stratosphere and protects Earth from harmful ultraviolet radiation.",
-  wrongExplanations: {
-    "Troposphere": "Weather occurs mainly in the troposphere.",
-    "Mesosphere": "The mesosphere lies above the stratosphere.",
-    "Thermosphere": "The thermosphere is much higher."
-  },
-  hint:
-    "One layer above the troposphere."
-},
-  {
   category: "Geography",
   question: "Which is the largest continent in the world?",
   options: [
@@ -7024,28 +6626,6 @@ const questions = [
   hint:
     "India and China are located here."
 },
-
-{
-  category: "Geography",
-  question: "Which is the longest river in the world?",
-  options: [
-    "Amazon",
-    "Nile",
-    "Mississippi",
-    "Yangtze"
-  ],
-  answer: "Nile",
-  explanation:
-    "The Nile River in Africa is traditionally regarded as the longest river in the world.",
-  wrongExplanations: {
-    "Amazon": "Amazon has the largest discharge volume.",
-    "Mississippi": "Located in North America.",
-    "Yangtze": "Longest river in Asia."
-  },
-  hint:
-    "Flows through Egypt."
-},
-
 {
   category: "Geography",
   question: "Which planet is known as the Red Planet?",
@@ -7272,28 +6852,6 @@ const questions = [
   hint:
     "India's central bank."
 },
-
-{
-  category: "Economics",
-  question: "Inflation refers to:",
-  options: [
-    "Decrease in prices",
-    "Increase in employment",
-    "General rise in prices",
-    "Increase in exports"
-  ],
-  answer: "General rise in prices",
-  explanation:
-    "Inflation means a sustained increase in the general price level of goods and services.",
-  wrongExplanations: {
-    "Decrease in prices": "This is deflation.",
-    "Increase in employment": "Not inflation.",
-    "Increase in exports": "Not the definition of inflation."
-  },
-  hint:
-    "Purchasing power falls."
-},
-
 {
   category: "Economics",
   question: "Which sector is directly related to agriculture, forestry and fishing?",
@@ -7439,48 +6997,6 @@ const questions = [
   hint:
     "Farming and natural resources."
 },
-{
-  category: "Economics",
-  question: "What is the full form of RBI?",
-  options: [
-    "Reserve Bank of India",
-    "Regional Bank of India",
-    "Revenue Bank of India",
-    "Reserve Bureau of India"
-  ],
-  answer: "Reserve Bank of India",
-  explanation:
-    "The RBI is the central bank of India and manages monetary policy.",
-  wrongExplanations: {
-    "Regional Bank of India": "Incorrect expansion.",
-    "Revenue Bank of India": "Incorrect expansion.",
-    "Reserve Bureau of India": "Incorrect expansion."
-  },
-  hint:
-    "India's central bank."
-},
-
-{
-  category: "Economics",
-  question: "Which of the following is a direct tax?",
-  options: [
-    "GST",
-    "Customs Duty",
-    "Income Tax",
-    "Excise Duty"
-  ],
-  answer: "Income Tax",
-  explanation:
-    "Income Tax is paid directly by individuals and organizations to the government.",
-  wrongExplanations: {
-    "GST": "Indirect tax.",
-    "Customs Duty": "Indirect tax.",
-    "Excise Duty": "Indirect tax."
-  },
-  hint:
-    "Paid on earnings."
-},
-
 {
   category: "Economics",
   question: "What does CPI stand for in economics?",
@@ -8341,18 +7857,6 @@ const questions = [
   ],
   answer: "Habeas Corpus",
   explanation: "Habeas Corpus means 'produce the body' and is issued to secure the release of a person unlawfully detained."
-},
-{
-  category: "Polity",
-  question: "A Money Bill can be introduced only in:",
-  options: [
-    "Rajya Sabha",
-    "Lok Sabha",
-    "Either House of Parliament",
-    "Joint Session of Parliament"
-  ],
-  answer: "Lok Sabha",
-  explanation: "Under Article 109, a Money Bill can be introduced only in the Lok Sabha with the prior recommendation of the President."
 },
 {
   category: "Polity",
@@ -9381,28 +8885,6 @@ const questions = [
   hint:
     "Two hydrogen atoms and one oxygen atom."
 },
-
-{
-  category: "Science",
-  question: "Which organ pumps blood throughout the human body?",
-  options: [
-    "Liver",
-    "Lungs",
-    "Heart",
-    "Kidney"
-  ],
-  answer: "Heart",
-  explanation:
-    "The heart is a muscular organ responsible for pumping blood throughout the body.",
-  wrongExplanations: {
-    "Liver": "The liver helps in metabolism and detoxification.",
-    "Lungs": "Lungs exchange oxygen and carbon dioxide.",
-    "Kidney": "Kidneys filter blood and produce urine."
-  },
-  hint:
-    "Central organ of the circulatory system."
-},
-
 {
   category: "Science",
   question: "Which vitamin is produced in the skin when exposed to sunlight?",
@@ -9550,27 +9032,6 @@ const questions = [
 },
 {
   category: "Science",
-  question: "Which blood group is known as the universal donor?",
-  options: [
-    "A",
-    "B",
-    "AB",
-    "O Negative"
-  ],
-  answer: "O Negative",
-  explanation:
-    "O Negative blood can be given to people of all blood groups in emergencies.",
-  wrongExplanations: {
-    "A": "Can only donate to compatible groups.",
-    "B": "Not a universal donor.",
-    "AB": "AB Positive is the universal recipient, not donor."
-  },
-  hint:
-    "Emergency blood type."
-},
-
-{
-  category: "Science",
   question: "What is the speed of light in vacuum?",
   options: [
     "3 × 10^8 m/s",
@@ -9589,28 +9050,6 @@ const questions = [
   hint:
     "One of the most famous constants in physics."
 },
-
-{
-  category: "Science",
-  question: "Which vitamin deficiency causes scurvy?",
-  options: [
-    "Vitamin A",
-    "Vitamin B",
-    "Vitamin C",
-    "Vitamin D"
-  ],
-  answer: "Vitamin C",
-  explanation:
-    "Scurvy is caused by a deficiency of Vitamin C.",
-  wrongExplanations: {
-    "Vitamin A": "Deficiency affects vision.",
-    "Vitamin B": "Associated with several disorders.",
-    "Vitamin D": "Deficiency causes rickets."
-  },
-  hint:
-    "Found in citrus fruits."
-},
-
 {
   category: "Science",
   question: "Which scientist proposed the three laws of motion?",
@@ -9630,27 +9069,6 @@ const questions = [
   },
   hint:
     "Gravity and the apple story."
-},
-
-{
-  category: "Science",
-  question: "Which part of the plant conducts photosynthesis?",
-  options: [
-    "Root",
-    "Stem",
-    "Leaf",
-    "Flower"
-  ],
-  answer: "Leaf",
-  explanation:
-    "Leaves contain chlorophyll and are the main site of photosynthesis.",
-  wrongExplanations: {
-    "Root": "Absorbs water and minerals.",
-    "Stem": "Supports the plant.",
-    "Flower": "Reproductive part of the plant."
-  },
-  hint:
-    "Green part of the plant."
 },
 {
   category: "Science",
@@ -9672,28 +9090,6 @@ const questions = [
   hint:
     "Important for diabetes."
 },
-
-{
-  category: "Science",
-  question: "What is the chemical symbol for gold?",
-  options: [
-    "Go",
-    "Ag",
-    "Au",
-    "Gd"
-  ],
-  answer: "Au",
-  explanation:
-    "Au is the chemical symbol for gold, derived from the Latin word Aurum.",
-  wrongExplanations: {
-    "Go": "Not a valid chemical symbol.",
-    "Ag": "Silver.",
-    "Gd": "Gadolinium."
-  },
-  hint:
-    "Aurum."
-},
-
 {
   category: "Science",
   question: "Which planet is the largest in the Solar System?",
@@ -9758,27 +9154,6 @@ const questions = [
 },
 {
   category: "Science",
-  question: "Which gas is most abundant in the Earth's atmosphere?",
-  options: [
-    "Oxygen",
-    "Carbon Dioxide",
-    "Nitrogen",
-    "Hydrogen"
-  ],
-  answer: "Nitrogen",
-  explanation:
-    "Nitrogen makes up about 78% of the Earth's atmosphere.",
-  wrongExplanations: {
-    "Oxygen": "Makes up about 21% of the atmosphere.",
-    "Carbon Dioxide": "Present in a very small amount.",
-    "Hydrogen": "Not abundant in the atmosphere."
-  },
-  hint:
-    "About 78%."
-},
-
-{
-  category: "Science",
   question: "Which part of the human body is known as the 'powerhouse of the cell'?",
   options: [
     "Nucleus",
@@ -9796,27 +9171,6 @@ const questions = [
   },
   hint:
     "Produces energy."
-},
-
-{
-  category: "Science",
-  question: "What is the chemical formula of water?",
-  options: [
-    "CO₂",
-    "H₂O",
-    "O₂",
-    "NaCl"
-  ],
-  answer: "H₂O",
-  explanation:
-    "Water consists of two hydrogen atoms and one oxygen atom.",
-  wrongExplanations: {
-    "CO₂": "Carbon dioxide.",
-    "O₂": "Oxygen gas.",
-    "NaCl": "Common salt."
-  },
-  hint:
-    "Two hydrogen, one oxygen."
 },
 
 {
@@ -9862,48 +9216,6 @@ const questions = [
 },
 {
   category: "Science",
-  question: "Which vitamin is produced in the skin when exposed to sunlight?",
-  options: [
-    "Vitamin A",
-    "Vitamin B12",
-    "Vitamin C",
-    "Vitamin D"
-  ],
-  answer: "Vitamin D",
-  explanation:
-    "The skin produces Vitamin D when exposed to sunlight.",
-  wrongExplanations: {
-    "Vitamin A": "Important for vision.",
-    "Vitamin B12": "Important for nerves and blood cells.",
-    "Vitamin C": "Important for immunity and wound healing."
-  },
-  hint:
-    "The sunshine vitamin."
-},
-
-{
-  category: "Science",
-  question: "Which metal is liquid at room temperature?",
-  options: [
-    "Iron",
-    "Mercury",
-    "Copper",
-    "Aluminium"
-  ],
-  answer: "Mercury",
-  explanation:
-    "Mercury is the only common metal that remains liquid at room temperature.",
-  wrongExplanations: {
-    "Iron": "Solid at room temperature.",
-    "Copper": "Solid metal.",
-    "Aluminium": "Solid metal."
-  },
-  hint:
-    "Used in traditional thermometers."
-},
-
-{
-  category: "Science",
   question: "Which blood cells help fight infections?",
   options: [
     "Red Blood Cells",
@@ -9921,48 +9233,6 @@ const questions = [
   },
   hint:
     "Body's defense system."
-},
-
-{
-  category: "Science",
-  question: "What is the SI unit of force?",
-  options: [
-    "Joule",
-    "Newton",
-    "Watt",
-    "Pascal"
-  ],
-  answer: "Newton",
-  explanation:
-    "The SI unit of force is the Newton (N), named after Isaac Newton.",
-  wrongExplanations: {
-    "Joule": "Unit of energy.",
-    "Watt": "Unit of power.",
-    "Pascal": "Unit of pressure."
-  },
-  hint:
-    "Named after a scientist."
-},
-
-{
-  category: "Science",
-  question: "Which planet is known as the Red Planet?",
-  options: [
-    "Venus",
-    "Mars",
-    "Jupiter",
-    "Mercury"
-  ],
-  answer: "Mars",
-  explanation:
-    "Mars is called the Red Planet because of iron oxide on its surface.",
-  wrongExplanations: {
-    "Venus": "Known for its thick atmosphere.",
-    "Jupiter": "Largest planet.",
-    "Mercury": "Closest planet to the Sun."
-  },
-  hint:
-    "Target of many space missions."
 },
 {
   category: "Science",
@@ -10070,27 +9340,6 @@ const questions = [
 },
 {
   category: "Science",
-  question: "Which blood group is known as the universal donor?",
-  options: [
-    "A",
-    "B",
-    "AB",
-    "O Negative"
-  ],
-  answer: "O Negative",
-  explanation:
-    "O Negative blood can be transfused to patients of all blood groups in emergencies.",
-  wrongExplanations: {
-    "A": "Not universal donor.",
-    "B": "Not universal donor.",
-    "AB": "Universal recipient, not donor."
-  },
-  hint:
-    "Emergency blood type."
-},
-
-{
-  category: "Science",
   question: "Which planet is known for its prominent rings?",
   options: [
     "Mars",
@@ -10130,28 +9379,6 @@ const questions = [
   hint:
     "Important after injuries."
 },
-
-{
-  category: "Science",
-  question: "What is the SI unit of electric current?",
-  options: [
-    "Volt",
-    "Ampere",
-    "Ohm",
-    "Watt"
-  ],
-  answer: "Ampere",
-  explanation:
-    "The Ampere (A) is the SI unit of electric current.",
-  wrongExplanations: {
-    "Volt": "Unit of voltage.",
-    "Ohm": "Unit of resistance.",
-    "Watt": "Unit of power."
-  },
-  hint:
-    "Named after André-Marie Ampère."
-},
-
 {
   category: "Science",
   question: "Which organ produces insulin in the human body?",
@@ -10213,28 +9440,6 @@ const questions = [
   hint:
     "Second planet from the Sun."
 },
-
-{
-  category: "Science",
-  question: "Which instrument is used to measure atmospheric pressure?",
-  options: [
-    "Thermometer",
-    "Barometer",
-    "Hygrometer",
-    "Ammeter"
-  ],
-  answer: "Barometer",
-  explanation:
-    "A barometer is used to measure atmospheric pressure.",
-  wrongExplanations: {
-    "Thermometer": "Measures temperature.",
-    "Hygrometer": "Measures humidity.",
-    "Ammeter": "Measures electric current."
-  },
-  hint:
-    "Weather forecasting instrument."
-},
-
 {
   category: "Science",
   question: "Which part of the plant conducts water from roots to leaves?",
@@ -10317,28 +9522,6 @@ const questions = [
   hint:
     "Named after James Prescott Joule."
 },
-
-{
-  category: "Science",
-  question: "Which vitamin deficiency causes scurvy?",
-  options: [
-    "Vitamin A",
-    "Vitamin B",
-    "Vitamin C",
-    "Vitamin D"
-  ],
-  answer: "Vitamin C",
-  explanation:
-    "Scurvy is caused by a deficiency of Vitamin C.",
-  wrongExplanations: {
-    "Vitamin A": "Deficiency affects vision.",
-    "Vitamin B": "Associated with several disorders.",
-    "Vitamin D": "Deficiency causes rickets."
-  },
-  hint:
-    "Found in citrus fruits."
-},
-
 {
   category: "Science",
   question: "Which gas is released during photosynthesis?",
@@ -10382,18 +9565,6 @@ const questions = [
 },
 {
   category: "Science",
-  question: "Which gas is most abundant in the Earth's atmosphere?",
-  options: [
-    "Oxygen",
-    "Carbon Dioxide",
-    "Nitrogen",
-    "Argon"
-  ],
-  answer: "Nitrogen",
-  explanation: "Nitrogen constitutes about 78% of the Earth's atmosphere."
-},
-{
-  category: "Science",
   question: "The SI unit of force is:",
   options: [
     "Joule",
@@ -10403,30 +9574,6 @@ const questions = [
   ],
   answer: "Newton",
   explanation: "Force is measured in Newtons (N) in the International System of Units."
-},
-{
-  category: "Science",
-  question: "Which organ in the human body produces insulin?",
-  options: [
-    "Liver",
-    "Kidney",
-    "Pancreas",
-    "Heart"
-  ],
-  answer: "Pancreas",
-  explanation: "The pancreas produces insulin, which helps regulate blood glucose levels."
-},
-{
-  category: "Science",
-  question: "What is the chemical formula of water?",
-  options: [
-    "CO₂",
-    "H₂O",
-    "O₂",
-    "NaCl"
-  ],
-  answer: "H₂O",
-  explanation: "A water molecule consists of two hydrogen atoms and one oxygen atom."
 },
 {
   category: "Science",
@@ -10461,90 +9608,6 @@ const questions = [
   },
 {
   category: "Economics",
-  question: "Which institution issues currency notes in India?",
-  options: [
-    "Ministry of Finance",
-    "Reserve Bank of India",
-    "NITI Aayog",
-    "State Bank of India"
-  ],
-  answer: "Reserve Bank of India",
-  explanation:
-    "The Reserve Bank of India is responsible for issuing currency notes in India except the one-rupee note.",
-  wrongExplanations: {
-    "Ministry of Finance": "The Ministry manages finances but does not issue most currency notes.",
-    "NITI Aayog": "NITI Aayog is a policy think tank.",
-    "State Bank of India": "SBI is a commercial bank."
-  },
-  hint:
-    "Think of India's central bank."
-},
-
-{
-  category: "Economics",
-  question: "Inflation means:",
-  options: [
-    "Fall in prices",
-    "Rise in general price level",
-    "Increase in exports",
-    "Decrease in population"
-  ],
-  answer: "Rise in general price level",
-  explanation:
-    "Inflation refers to a sustained increase in the general price level of goods and services.",
-  wrongExplanations: {
-    "Fall in prices": "This is called deflation.",
-    "Increase in exports": "Exports may affect the economy but are not inflation.",
-    "Decrease in population": "Population change is unrelated."
-  },
-  hint:
-    "Think about what happens when everything becomes more expensive."
-},
-
-{
-  category: "Economics",
-  question: "GDP stands for:",
-  options: [
-    "Gross Domestic Product",
-    "General Development Plan",
-    "Global Domestic Product",
-    "Gross Development Policy"
-  ],
-  answer: "Gross Domestic Product",
-  explanation:
-    "GDP measures the total value of goods and services produced within a country.",
-  wrongExplanations: {
-    "General Development Plan": "Not a standard economic term.",
-    "Global Domestic Product": "Incorrect expansion.",
-    "Gross Development Policy": "Incorrect expansion."
-  },
-  hint:
-    "One of the most common economics abbreviations."
-},
-
-{
-  category: "Economics",
-  question: "Which of the following is a direct tax?",
-  options: [
-    "GST",
-    "Customs Duty",
-    "Income Tax",
-    "Excise Duty"
-  ],
-  answer: "Income Tax",
-  explanation:
-    "Income Tax is paid directly by individuals and organizations to the government.",
-  wrongExplanations: {
-    "GST": "GST is an indirect tax.",
-    "Customs Duty": "Customs Duty is an indirect tax.",
-    "Excise Duty": "Excise Duty is an indirect tax."
-  },
-  hint:
-    "Think of the tax deducted from earnings."
-},
-
-{
-  category: "Economics",
   question: "Which sector is known as the primary sector?",
   options: [
     "Agriculture",
@@ -10562,110 +9625,6 @@ const questions = [
   },
   hint:
     "Think of activities directly connected with nature."
-},
-  {
-  category: "Economics",
-  question: "Which bank is known as the Central Bank of India?",
-  options: [
-    "State Bank of India",
-    "Punjab National Bank",
-    "Reserve Bank of India",
-    "Bank of Baroda"
-  ],
-  answer: "Reserve Bank of India",
-  explanation:
-    "The Reserve Bank of India (RBI) is India's central banking institution.",
-  wrongExplanations: {
-    "State Bank of India": "SBI is the largest commercial bank, not the central bank.",
-    "Punjab National Bank": "PNB is a public sector bank.",
-    "Bank of Baroda": "Bank of Baroda is a commercial bank."
-  },
-  hint:
-    "Issues currency and controls monetary policy."
-},
-
-{
-  category: "Economics",
-  question: "What does GST stand for?",
-  options: [
-    "General Sales Tax",
-    "Goods and Services Tax",
-    "Government Service Tax",
-    "Goods Supply Tax"
-  ],
-  answer: "Goods and Services Tax",
-  explanation:
-    "GST is a unified indirect tax system introduced in India in 2017.",
-  wrongExplanations: {
-    "General Sales Tax": "Incorrect expansion.",
-    "Government Service Tax": "Incorrect expansion.",
-    "Goods Supply Tax": "Incorrect expansion."
-  },
-  hint:
-    "A major tax reform in India."
-},
-
-{
-  category: "Economics",
-  question: "Which factor of production receives wages?",
-  options: [
-    "Land",
-    "Labour",
-    "Capital",
-    "Entrepreneur"
-  ],
-  answer: "Labour",
-  explanation:
-    "Labour receives wages as a reward for its contribution to production.",
-  wrongExplanations: {
-    "Land": "Land receives rent.",
-    "Capital": "Capital receives interest.",
-    "Entrepreneur": "Entrepreneur receives profit."
-  },
-  hint:
-    "Human effort in production."
-},
-
-{
-  category: "Economics",
-  question: "What is the basic economic problem faced by all societies?",
-  options: [
-    "Inflation",
-    "Scarcity",
-    "Taxation",
-    "Population"
-  ],
-  answer: "Scarcity",
-  explanation:
-    "Resources are limited while human wants are unlimited, creating scarcity.",
-  wrongExplanations: {
-    "Inflation": "Not every society constantly faces inflation.",
-    "Taxation": "Taxation is a policy issue.",
-    "Population": "Population itself is not the basic economic problem."
-  },
-  hint:
-    "Unlimited wants, limited resources."
-},
-
-{
-  category: "Economics",
-  question: "Which economic sector includes banking, education and healthcare?",
-  options: [
-    "Primary Sector",
-    "Secondary Sector",
-    "Tertiary Sector",
-    "Agricultural Sector"
-  ],
-  answer: "Tertiary Sector",
-  explanation:
-    "The tertiary sector consists of services such as banking, education, transport and healthcare.",
-  wrongExplanations: {
-    "Primary Sector": "Primary sector involves extraction of natural resources.",
-    "Secondary Sector": "Secondary sector involves manufacturing.",
-    "Agricultural Sector": "Agriculture belongs to the primary sector."
-  },
-  hint:
-    "Service sector."
 },
 {
   category: "Economics",
@@ -10708,28 +9667,6 @@ const questions = [
   hint:
     "Economic output."
 },
-
-{
-  category: "Economics",
-  question: "Inflation means:",
-  options: [
-    "Fall in prices",
-    "Rise in general price level",
-    "Increase in employment",
-    "Decrease in income"
-  ],
-  answer: "Rise in general price level",
-  explanation:
-    "Inflation refers to a sustained increase in the general level of prices.",
-  wrongExplanations: {
-    "Fall in prices": "This is deflation.",
-    "Increase in employment": "Not the definition of inflation.",
-    "Decrease in income": "Not the definition of inflation."
-  },
-  hint:
-    "Purchasing power declines."
-},
-
 {
   category: "Economics",
   question: "Which body replaced the Planning Commission in India?",
@@ -10876,45 +9813,6 @@ const questions = [
     "International Monetary Fund."
 },
 {
-    category: "ICT",
-    question: "Which of the following is an operating system?",
-    options: [
-      "Windows",
-      "Google",
-      "Intel",
-      "Python"
-    ],
-    answer: "Windows",
-    explanation:
-      "Windows is an operating system developed by Microsoft.",
-    wrongExplanations: {
-      "Google": "Google is a company and search engine.",
-      "Intel": "Intel manufactures processors.",
-      "Python": "Python is a programming language.",
-    },
-    hint: "It manages computer hardware and software.",
-  },
-
-  {
-    category: "Geography",
-    question: "Which is the highest mountain peak in the world?",
-    options: [
-      "Mount Everest",
-      "Kanchenjunga",
-      "K2",
-      "Nanga Parbat"
-    ],
-    answer: "Mount Everest",
-    explanation:
-      "Mount Everest is the highest mountain peak above sea level.",
-    wrongExplanations: {
-      "Kanchenjunga": "It is the third highest peak.",
-      "K2": "K2 is the second highest mountain.",
-      "Nanga Parbat": "It is a major Himalayan peak but not the highest.",
-    },
-    hint: "Located in the Himalayas.",
-  },
- {
   category: "Geography",
   question: "Which is the smallest continent in the world?",
   options: [
@@ -10934,49 +9832,6 @@ const questions = [
   hint:
     "Also a country and a continent."
 },
-
-{
-  category: "Geography",
-  question: "Which is the largest island in the world?",
-  options: [
-    "Madagascar",
-    "Greenland",
-    "Sri Lanka",
-    "Borneo"
-  ],
-  answer: "Greenland",
-  explanation:
-    "Greenland is the world's largest island that is not considered a continent.",
-  wrongExplanations: {
-    "Madagascar": "Madagascar is much smaller.",
-    "Sri Lanka": "Sri Lanka is a relatively small island.",
-    "Borneo": "Borneo is large but smaller than Greenland."
-  },
-  hint:
-    "Located between the Arctic and Atlantic Oceans."
-},
-
-{
-  category: "Geography",
-  question: "Which Indian state has the largest area?",
-  options: [
-    "Madhya Pradesh",
-    "Rajasthan",
-    "Maharashtra",
-    "Uttar Pradesh"
-  ],
-  answer: "Rajasthan",
-  explanation:
-    "Rajasthan is the largest Indian state by area.",
-  wrongExplanations: {
-    "Madhya Pradesh": "Second largest state by area.",
-    "Maharashtra": "Smaller than Rajasthan.",
-    "Uttar Pradesh": "Largest by population, not area."
-  },
-  hint:
-    "Known for the Thar Desert."
-},
-
 {
   category: "Geography",
   question: "Which line divides the Earth into Northern and Southern Hemispheres?",
@@ -11124,27 +9979,6 @@ const questions = [
 },
 {
   category: "Geography",
-  question: "Which is the largest freshwater lake in India?",
-  options: [
-    "Dal Lake",
-    "Wular Lake",
-    "Loktak Lake",
-    "Chilika Lake"
-  ],
-  answer: "Wular Lake",
-  explanation:
-    "Wular Lake in Jammu and Kashmir is the largest freshwater lake in India.",
-  wrongExplanations: {
-    "Dal Lake": "A famous lake in Srinagar.",
-    "Loktak Lake": "Largest freshwater lake in Northeast India.",
-    "Chilika Lake": "Largest brackish water lagoon in India."
-  },
-  hint:
-    "Located in Jammu and Kashmir."
-},
-
-{
-  category: "Geography",
   question: "Which is the longest mountain range in the world?",
   options: [
     "Himalayas",
@@ -11163,49 +9997,6 @@ const questions = [
   hint:
     "Runs along western South America."
 },
-
-{
-  category: "Geography",
-  question: "Which Indian state has the longest coastline?",
-  options: [
-    "Tamil Nadu",
-    "Andhra Pradesh",
-    "Gujarat",
-    "Maharashtra"
-  ],
-  answer: "Gujarat",
-  explanation:
-    "Gujarat has the longest coastline among Indian states.",
-  wrongExplanations: {
-    "Tamil Nadu": "Long coastline but shorter than Gujarat.",
-    "Andhra Pradesh": "Second longest coastline.",
-    "Maharashtra": "Important coastline but shorter."
-  },
-  hint:
-    "Home of Kutch."
-},
-
-{
-  category: "Geography",
-  question: "Which river is known as the 'Sorrow of Bihar'?",
-  options: [
-    "Ganga",
-    "Kosi",
-    "Yamuna",
-    "Son"
-  ],
-  answer: "Kosi",
-  explanation:
-    "The Kosi River frequently changes course and causes devastating floods in Bihar.",
-  wrongExplanations: {
-    "Ganga": "Major river but not known by this title.",
-    "Yamuna": "Flows through northern India.",
-    "Son": "Important tributary but not called the Sorrow of Bihar."
-  },
-  hint:
-    "A flood-prone Himalayan river."
-},
-
 {
   category: "Geography",
   question: "What is the capital city of Australia?",
@@ -11226,48 +10017,6 @@ const questions = [
   hint:
     "Built between Sydney and Melbourne."
 },
-{
-  category: "Geography",
-  question: "Which is the largest continent in the world?",
-  options: [
-    "Africa",
-    "Europe",
-    "Asia",
-    "North America"
-  ],
-  answer: "Asia",
-  explanation:
-    "Asia is the largest continent by both area and population.",
-  wrongExplanations: {
-    "Africa": "Second largest continent.",
-    "Europe": "Much smaller than Asia.",
-    "North America": "Third largest continent."
-  },
-  hint:
-    "Home to India and China."
-},
-
-{
-  category: "Geography",
-  question: "Which is the smallest continent in the world?",
-  options: [
-    "Europe",
-    "Australia",
-    "Antarctica",
-    "South America"
-  ],
-  answer: "Australia",
-  explanation:
-    "Australia is the smallest continent by land area.",
-  wrongExplanations: {
-    "Europe": "Larger than Australia.",
-    "Antarctica": "Much larger but sparsely populated.",
-    "South America": "Significantly larger."
-  },
-  hint:
-    "Also a country."
-},
-
 {
   category: "Geography",
   question: "The Tropic of Cancer passes through how many Indian states?",
@@ -11333,7 +10082,7 @@ const questions = [
 {
     category: "English",
     question: "Choose the correct plural form of 'Child'.",
-    options: ["Children", "Child"],
+    options: ["Children", "Child", "Childs", "Childrens"],
     answer: "Children",
     explanation: "The correct plural of 'child' is 'children'.",
     wrongExplanations: {
@@ -11655,27 +10404,6 @@ const questions = [
   hint:
     "Double c, double m."
 },
-
-{
-  category: "English",
-  question: "What is the plural form of 'Child'?",
-  options: [
-    "Childs",
-    "Children",
-    "Childes",
-    "Childrens"
-  ],
-  answer: "Children",
-  explanation:
-    "Children is the irregular plural form of child.",
-  wrongExplanations: {
-    "Childs": "Incorrect plural form.",
-    "Childes": "Not a valid English word.",
-    "Childrens": "Incorrect plural form."
-  },
-  hint:
-    "An irregular plural noun."
-},
 {
   category: "English",
   question: "Choose the correct synonym of 'Ancient'.",
@@ -11717,27 +10445,6 @@ const questions = [
   hint:
     "To become smaller."
 },
-
-{
-  category: "English",
-  question: "Identify the noun in the sentence: 'The boy kicked the ball.'",
-  options: [
-    "Kicked",
-    "The",
-    "Boy",
-    "The"
-  ],
-  answer: "Boy",
-  explanation:
-    "A noun names a person, place, thing or idea. 'Boy' is a noun.",
-  wrongExplanations: {
-    "Kicked": "This is a verb.",
-    "The": "This is an article."
-  },
-  hint:
-    "A person is involved."
-},
-
 {
   category: "English",
   question: "Choose the correctly spelled word.",
@@ -12007,28 +10714,6 @@ const questions = [
   hint:
     "Quick movement."
 },
-
-{
-  category: "English",
-  question: "Choose the antonym of 'Victory'.",
-  options: [
-    "Success",
-    "Achievement",
-    "Defeat",
-    "Triumph"
-  ],
-  answer: "Defeat",
-  explanation:
-    "Defeat is the opposite of victory.",
-  wrongExplanations: {
-    "Success": "Similar to victory.",
-    "Achievement": "Positive outcome.",
-    "Triumph": "Another word for victory."
-  },
-  hint:
-    "The losing side."
-},
-
 {
   category: "English",
   question: "Fill in the blank: I _____ my homework before dinner.",
@@ -12093,27 +10778,6 @@ const questions = [
 },
 {
   category: "English",
-  question: "Choose the correct synonym of 'Brave'.",
-  options: [
-    "Cowardly",
-    "Fearless",
-    "Weak",
-    "Shy"
-  ],
-  answer: "Fearless",
-  explanation:
-    "Brave means showing courage and being fearless in difficult situations.",
-  wrongExplanations: {
-    "Cowardly": "Opposite of brave.",
-    "Weak": "Relates to strength, not courage.",
-    "Shy": "Relates to personality, not bravery."
-  },
-  hint:
-    "A courageous person."
-},
-
-{
-  category: "English",
   question: "Choose the antonym of 'Ancient'.",
   options: [
     "Historic",
@@ -12153,28 +10817,6 @@ const questions = [
   hint:
     "General truth."
 },
-
-{
-  category: "English",
-  question: "Choose the correctly spelled word.",
-  options: [
-    "Accommodation",
-    "Acommodation",
-    "Accomodation",
-    "Acomodation"
-  ],
-  answer: "Accommodation",
-  explanation:
-    "Accommodation is the correct spelling.",
-  wrongExplanations: {
-    "Acommodation": "Missing a 'c'.",
-    "Accomodation": "Missing an 'm'.",
-    "Acomodation": "Missing both a 'c' and an 'm'."
-  },
-  hint:
-    "Double c, double m."
-},
-
 {
   category: "English",
   question: "Identify the adverb in the sentence: 'She sings beautifully.'",
@@ -12215,28 +10857,6 @@ const questions = [
   hint:
     "Has a lot of money."
 },
-
-{
-  category: "English",
-  question: "Choose the antonym of 'Victory'.",
-  options: [
-    "Success",
-    "Triumph",
-    "Defeat",
-    "Achievement"
-  ],
-  answer: "Defeat",
-  explanation:
-    "Defeat is the opposite of victory.",
-  wrongExplanations: {
-    "Success": "Similar meaning.",
-    "Triumph": "Another word for victory.",
-    "Achievement": "Positive accomplishment."
-  },
-  hint:
-    "The losing side."
-},
-
 {
   category: "English",
   question: "Fill in the blank: She _____ a beautiful song yesterday.",
@@ -12404,25 +11024,6 @@ const questions = [
     "A person."
 },
 {
-    category: "Mizoram GK",
-    question: "Which language is primarily spoken in Mizoram?",
-    options: [
-      "Mizo",
-      "Hindi",
-      "Bengali",
-      "Nepali"
-    ],
-    answer: "Mizo",
-    explanation:
-      "Mizo is the primary language spoken in Mizoram.",
-    wrongExplanations: {
-      "Hindi": "Hindi is widely understood but not the primary language.",
-      "Bengali": "Bengali is mainly spoken in West Bengal.",
-      "Nepali": "Nepali is not the primary language of Mizoram.",
-    },
-    hint: "It is also called Lusei language.",
-  },
-{
   category: "Mizoram GK",
   question: "In which year did Mizoram become a full-fledged state of India?",
   options: [
@@ -12526,27 +11127,6 @@ const questions = [
   hint:
     "Think west of Mizoram."
 },
-  {
-  category: "Mizoram GK",
-  question: "What is the capital of Mizoram?",
-  options: [
-    "Lunglei",
-    "Champhai",
-    "Aizawl",
-    "Kolasib"
-  ],
-  answer: "Aizawl",
-  explanation:
-    "Aizawl is the capital city and administrative headquarters of Mizoram.",
-  wrongExplanations: {
-    "Lunglei": "Lunglei is an important district headquarters but not the capital.",
-    "Champhai": "Champhai is a border district.",
-    "Kolasib": "Kolasib is a district but not the capital."
-  },
-  hint:
-    "Largest city in Mizoram."
-},
-
 {
   category: "Mizoram GK",
   question: "On which date did Mizoram attain statehood?",
@@ -13615,30 +12195,6 @@ const questions = [
 },
 {
   category: "Mizoram GK",
-  question: "Which district is known as the 'Rice Bowl of Mizoram'?",
-  options: [
-    "Kolasib",
-    "Champhai",
-    "Mamit",
-    "Serchhip"
-  ],
-  answer: "Champhai",
-  explanation: "Champhai is often called the Rice Bowl of Mizoram because of its extensive paddy cultivation and fertile valley."
-},
-{
-  category: "Mizoram GK",
-  question: "What is the official state flower of Mizoram?",
-  options: [
-    "Red Vanda",
-    "Lady's Slipper Orchid",
-    "Anthurium",
-    "Sunflower"
-  ],
-  answer: "Red Vanda",
-  explanation: "Red Vanda (Renanthera imschootiana) is the state flower of Mizoram."
-},
-{
-  category: "Mizoram GK",
   question: "Which river forms a significant part of the border between Mizoram and Bangladesh?",
   options: [
     "Tlawng",
@@ -13990,28 +12546,6 @@ const questions = [
   hint:
     "₹"
 },
-
-{
-  category: "Current Affairs",
-  question: "Which constitutional body conducts elections in India?",
-  options: [
-    "UPSC",
-    "Election Commission of India",
-    "Finance Commission",
-    "NITI Aayog"
-  ],
-  answer: "Election Commission of India",
-  explanation:
-    "The Election Commission supervises elections to Parliament, State Legislatures and constitutional offices.",
-  wrongExplanations: {
-    "UPSC": "Conducts recruitment examinations.",
-    "Finance Commission": "Deals with financial distribution.",
-    "NITI Aayog": "Policy think tank."
-  },
-  hint:
-    "Guardian of elections."
-},
-
 {
   category: "Current Affairs",
   question: "Which day is celebrated as Constitution Day in India?",
@@ -14034,7 +12568,9 @@ const questions = [
 },
 {
     category: "Polity",
-    question: "Which article of the Indian Constitution deals with equality before law?",
+  question: "Which article of the Indian Constitution deals with equality before law?",
+  options: ["Article 19", "Article 14", "Article 21", "Article 32"],
+  answer: "Article 14",
 
     explanation: "Article 14 provides equality before law and equal protection of laws.",
     wrongExplanations: {
@@ -14343,27 +12879,6 @@ const questions = [
 },
 {
   category: "Indian Polity",
-  question: "Who appoints the Governor of a State in India?",
-  options: [
-    "Prime Minister",
-    "Chief Minister",
-    "President",
-    "Parliament"
-  ],
-  answer: "President",
-  explanation:
-    "The Governor of a State is appointed by the President of India.",
-  wrongExplanations: {
-    "Prime Minister": "The PM advises but does not formally appoint.",
-    "Chief Minister": "The CM is not involved in appointment.",
-    "Parliament": "Parliament does not appoint Governors."
-  },
-  hint:
-    "Constitutional Head of the Union."
-},
-
-{
-  category: "Indian Polity",
   question: "How many schedules are currently in the Constitution of India?",
   options: [
     "10",
@@ -14447,27 +12962,6 @@ const questions = [
 },
 {
   category: "Current Affairs",
-  question: "Who is the constitutional head of India?",
-  options: [
-    "Prime Minister",
-    "President",
-    "Chief Justice of India",
-    "Vice-President"
-  ],
-  answer: "President",
-  explanation:
-    "The President is the constitutional head of the Republic of India.",
-  wrongExplanations: {
-    "Prime Minister": "The Prime Minister is the head of government.",
-    "Chief Justice of India": "The CJI heads the judiciary.",
-    "Vice-President": "The Vice-President is not the constitutional head."
-  },
-  hint:
-    "Think constitutional head, not executive head."
-},
-
-{
-  category: "Current Affairs",
   question: "Which institution is known as the lower house of Parliament?",
   options: [
     "Rajya Sabha",
@@ -14527,110 +13021,6 @@ const questions = [
   },
   hint:
     "Same duration as a full Lok Sabha term."
-},
-{
-  category: "Public Administration",
-  question: "Who is known as the Father of Scientific Management?",
-  options: [
-    "Max Weber",
-    "F.W. Taylor",
-    "Elton Mayo",
-    "Herbert Simon"
-  ],
-  answer: "F.W. Taylor",
-  explanation:
-    "Frederick Winslow Taylor developed Scientific Management to improve efficiency in organizations.",
-  wrongExplanations: {
-    "Max Weber": "Known for Bureaucratic Theory.",
-    "Elton Mayo": "Known for Human Relations Theory.",
-    "Herbert Simon": "Known for Decision-Making Theory."
-  },
-  hint:
-    "Scientific Management."
-},
-
-{
-  category: "Public Administration",
-  question: "Which thinker is associated with the Human Relations Approach?",
-  options: [
-    "Elton Mayo",
-    "Max Weber",
-    "Woodrow Wilson",
-    "Luther Gulick"
-  ],
-  answer: "Elton Mayo",
-  explanation:
-    "Elton Mayo emphasized human behavior and workplace relationships through the Hawthorne Studies.",
-  wrongExplanations: {
-    "Max Weber": "Associated with bureaucracy.",
-    "Woodrow Wilson": "Father of Public Administration.",
-    "Luther Gulick": "Associated with POSDCORB."
-  },
-  hint:
-    "Hawthorne Experiments."
-},
-
-{
-  category: "Public Administration",
-  question: "What does the letter 'D' in POSDCORB stand for?",
-  options: [
-    "Development",
-    "Direction",
-    "Directing",
-    "Decision"
-  ],
-  answer: "Directing",
-  explanation:
-    "POSDCORB stands for Planning, Organizing, Staffing, Directing, Coordinating, Reporting and Budgeting.",
-  wrongExplanations: {
-    "Development": "Not part of POSDCORB.",
-    "Direction": "Close, but the accepted term is Directing.",
-    "Decision": "Not part of POSDCORB."
-  },
-  hint:
-    "A managerial function."
-},
-
-{
-  category: "Public Administration",
-  question: "Who introduced the concept of Decision-Making Theory?",
-  options: [
-    "Herbert Simon",
-    "Woodrow Wilson",
-    "Elton Mayo",
-    "F.W. Taylor"
-  ],
-  answer: "Herbert Simon",
-  explanation:
-    "Herbert Simon emphasized decision-making as the core of administration.",
-  wrongExplanations: {
-    "Woodrow Wilson": "Founder of the discipline.",
-    "Elton Mayo": "Human Relations School.",
-    "F.W. Taylor": "Scientific Management."
-  },
-  hint:
-    "Bounded Rationality."
-},
-
-{
-  category: "Public Administration",
-  question: "Which approach views administration as a system of interrelated parts?",
-  options: [
-    "Classical Approach",
-    "Systems Approach",
-    "Scientific Management",
-    "Human Relations Approach"
-  ],
-  answer: "Systems Approach",
-  explanation:
-    "The Systems Approach studies administration as a set of interconnected elements working together.",
-  wrongExplanations: {
-    "Classical Approach": "Focuses on structure and hierarchy.",
-    "Scientific Management": "Focuses on efficiency.",
-    "Human Relations Approach": "Focuses on people and relationships."
-  },
-  hint:
-    "Think of inputs, processes and outputs."
 },
 {
   category: "Public Administration",
@@ -14738,27 +13128,6 @@ const questions = [
 },
 {
   category: "Public Administration",
-  question: "Who is known as the Father of Scientific Management?",
-  options: [
-    "Max Weber",
-    "F.W. Taylor",
-    "Herbert Simon",
-    "Luther Gulick"
-  ],
-  answer: "F.W. Taylor",
-  explanation:
-    "Frederick Winslow Taylor developed Scientific Management to improve efficiency and productivity.",
-  wrongExplanations: {
-    "Max Weber": "Associated with bureaucracy.",
-    "Herbert Simon": "Associated with decision-making.",
-    "Luther Gulick": "Associated with POSDCORB."
-  },
-  hint:
-    "Scientific Management."
-},
-
-{
-  category: "Public Administration",
   question: "Which concept refers to the number of subordinates directly supervised by a manager?",
   options: [
     "Unity of Command",
@@ -14840,27 +13209,6 @@ const questions = [
   hint:
     "Citizens can request government information."
 },
-{
-  category: "Public Administration",
-  question: "Who is known as the Father of Public Administration?",
-  options: [
-    "Woodrow Wilson",
-    "Max Weber",
-    "Luther Gulick",
-    "Herbert Simon"
-  ],
-  answer: "Woodrow Wilson",
-  explanation:
-    "Woodrow Wilson is regarded as the Father of Public Administration because of his pioneering work in the field.",
-  wrongExplanations: {
-    "Max Weber": "Known for Bureaucratic Theory.",
-    "Luther Gulick": "Known for POSDCORB.",
-    "Herbert Simon": "Known for Decision-Making Theory."
-  },
-  hint:
-    "1887 essay on administration."
-},
-
 {
   category: "Public Administration",
   question: "Which of the following is NOT a function of POSDCORB?",
@@ -16670,18 +15018,6 @@ const questions = [
 },
 {
   category: "Northeast India",
-  question: "Which state is known as the 'Land of the Rising Sun' in India?",
-  options: [
-    "Nagaland",
-    "Arunachal Pradesh",
-    "Manipur",
-    "Mizoram"
-  ],
-  answer: "Arunachal Pradesh",
-  explanation: "Arunachal Pradesh is called the Land of the Rising Sun because it is the easternmost state of India and receives the first sunrise."
-},
-{
-  category: "Northeast India",
   question: "The capital city of Meghalaya is:",
   options: [
     "Aizawl",
@@ -16787,18 +15123,6 @@ const questions = [
   ],
   answer: "Assam",
   explanation: "Kaziranga National Park in Assam is famous for its population of the one-horned rhinoceros and is a UNESCO World Heritage Site."
-},
-{
-  category: "Northeast India",
-  question: "Loktak Lake, the largest freshwater lake in Northeast India, is located in:",
-  options: [
-    "Tripura",
-    "Mizoram",
-    "Manipur",
-    "Meghalaya"
-  ],
-  answer: "Manipur",
-  explanation: "Loktak Lake in Manipur is famous for its floating islands known as 'Phumdis'."
 },
 {
   category: "Northeast India",
@@ -17611,216 +15935,371 @@ const questions = [
   answer: "Secretary-General",
   explanation: "The Secretary-General is the chief administrative officer of the United Nations and heads the Secretariat."
 },
+{
+  category: "Mizoram GK",
+  question: "On which date did Mizoram become a state of the Indian Union?",
+  options: ["20 January 1987", "20 February 1987", "26 January 1987", "15 August 1986"],
+  answer: "20 February 1987",
+  explanation: "Mizoram became India's 23rd state on 20 February 1987.",
+  hint: "Statehood Day is observed in February."
+},
+{
+  category: "Mizoram GK",
+  question: "Chapchar Kut is traditionally celebrated after which stage of jhum cultivation?",
+  options: ["Harvesting the maize crop", "Clearing and drying the jhum vegetation", "Planting the first rice seedlings", "Storing the harvested grain"],
+  answer: "Clearing and drying the jhum vegetation",
+  explanation: "Chapchar Kut is a spring festival celebrated after the forest-clearing work for jhum cultivation is completed.",
+  hint: "The festival follows the strenuous clearing work."
+},
+{
+  category: "Mizoram GK",
+  question: "How many elected seats are there in the Mizoram Legislative Assembly?",
+  options: ["30", "35", "40", "60"],
+  answer: "40",
+  explanation: "The Mizoram Legislative Assembly has 40 elected seats.",
+  hint: "It is a forty-member Assembly."
+},
+{
+  category: "Northeast India",
+  question: "Dampa Tiger Reserve is located in which district of Mizoram?",
+  options: ["Mamit", "Champhai", "Serchhip", "Saitual"],
+  answer: "Mamit",
+  explanation: "Dampa Tiger Reserve lies in western Mizoram in Mamit district, along the India-Bangladesh border.",
+  hint: "The reserve is in western Mizoram."
+},
+{
+  category: "History",
+  question: "At which Indian National Congress session was the goal of Purna Swaraj adopted?",
+  options: ["Lahore session, 1929", "Karachi session, 1931", "Surat session, 1907", "Lucknow session, 1916"],
+  answer: "Lahore session, 1929",
+  explanation: "The Congress adopted Purna Swaraj as its goal at the Lahore session in December 1929, presided over by Jawaharlal Nehru.",
+  hint: "The session preceded the first Independence Day observance on 26 January 1930."
+},
+{
+  category: "Polity",
+  question: "Which article of the Constitution defines a Money Bill?",
+  options: ["Article 108", "Article 110", "Article 112", "Article 123"],
+  answer: "Article 110",
+  explanation: "Article 110 sets out the constitutional definition of a Money Bill.",
+  hint: "It is in the part dealing with Parliament's legislative procedure."
+},
+{
+  category: "Indian Polity",
+  question: "A person whose fundamental right is violated may directly seek a remedy from the Supreme Court under:",
+  options: ["Article 14", "Article 19", "Article 32", "Article 368"],
+  answer: "Article 32",
+  explanation: "Article 32 guarantees the right to move the Supreme Court for enforcement of fundamental rights.",
+  hint: "Dr. B. R. Ambedkar called this the Constitution's heart and soul."
+},
+{
+  category: "Geography",
+  question: "Why is the leeward side of a high mountain range often relatively dry?",
+  options: ["Descending air warms and loses relative humidity", "The mountain creates additional ocean evaporation", "Cold air permanently blocks all cloud formation", "The Sun heats the leeward side less strongly"],
+  answer: "Descending air warms and loses relative humidity",
+  explanation: "After moist air rises and loses moisture on the windward slope, descending air on the leeward side warms and becomes drier, producing a rain-shadow effect.",
+  hint: "Think about what happens to air as it descends."
+},
+{
+  category: "Environment & Ecology",
+  question: "A persistent pollutant becomes more concentrated at each higher trophic level. This process is called:",
+  options: ["Eutrophication", "Biomagnification", "Nitrogen fixation", "Primary succession"],
+  answer: "Biomagnification",
+  explanation: "Biomagnification is the increase in concentration of a persistent substance in organisms at successively higher trophic levels.",
+  hint: "The concentration magnifies up a food chain."
+},
+{
+  category: "Economics",
+  question: "A student spends an evening working instead of attending a free lecture. The opportunity cost of working is best described as:",
+  options: ["The wage earned that evening", "The value of the best alternative forgone", "The total cost of the lecture hall", "The student's monthly expenses"],
+  answer: "The value of the best alternative forgone",
+  explanation: "Opportunity cost is the value of the next-best alternative sacrificed when a choice is made.",
+  hint: "Focus on what the student gives up by choosing work."
+},
+{
+  category: "Teaching Aptitude",
+  question: "A teacher gives a short quiz during a unit and uses the results to reteach a difficult concept. This is primarily:",
+  options: ["Formative assessment", "Summative assessment", "Aptitude testing", "Norm-referenced selection"],
+  answer: "Formative assessment",
+  explanation: "Formative assessment gathers evidence during learning so teaching and feedback can be adjusted before the unit ends.",
+  hint: "The evidence is used to improve ongoing instruction."
+},
+{
+  category: "Public Administration",
+  question: "Which feature most directly distinguishes decentralisation from centralisation?",
+  options: ["Authority is transferred to lower levels of government", "All decisions are reserved for the national executive", "Administrative rules are removed", "Public services are delivered only by private firms"],
+  answer: "Authority is transferred to lower levels of government",
+  explanation: "Decentralisation redistributes decision-making authority and responsibilities to lower levels or local institutions.",
+  hint: "The key is where decision-making power sits."
+},
+{
+  category: "Reasoning",
+  question: "Find the next number in the sequence: 3, 8, 15, 24, 35, ?",
+  options: ["44", "46", "48", "50"],
+  answer: "48",
+  explanation: "The terms follow n² - 1: 2² - 1 = 3, 3² - 1 = 8, and so on; the next term is 7² - 1 = 48.",
+  hint: "Compare the terms with consecutive squares."
+},
+{
+  category: "ICT",
+  question: "When a browser connects to a website using HTTPS, TLS is primarily used to:",
+  options: ["Encrypt data in transit and authenticate the server", "Increase the website's storage capacity", "Replace the website's domain name", "Guarantee that every page is factually correct"],
+  answer: "Encrypt data in transit and authenticate the server",
+  explanation: "TLS protects data exchanged in transit and lets the browser verify the server's identity through its certificate.",
+  hint: "It protects the connection, not the truth of the content."
+},
+{
+  category: "English",
+  question: "Choose the correct passive form of: 'The committee approved the proposal.'",
+  options: ["The proposal was approved by the committee.", "The proposal has approve by the committee.", "The committee was approved by the proposal.", "The proposal is approving the committee."],
+  answer: "The proposal was approved by the committee.",
+  explanation: "In the simple past passive, the object becomes the subject and takes 'was/were + past participle'.",
+  hint: "Keep the past tense and use the past participle 'approved'."
+},
+{
+  category: "Science",
+  question: "Two identical resistors, each of resistance R, are connected in parallel. Their equivalent resistance is:",
+  options: ["2R", "R", "R/2", "R/4"],
+  answer: "R/2",
+  explanation: "For two equal resistors in parallel, 1/R_eq = 1/R + 1/R = 2/R, so R_eq = R/2.",
+  hint: "Parallel conductances add."
+},
 ];
 
 const categories = ["All", ...Array.from(new Set(questions.map((q) => q.category)))];
 
 export default function HomePage() {
   const [category, setCategory] = useState("All");
-  const [index, setIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
+  const [responses, setResponses] = useState<Record<string, { category: string; correct: boolean }>>({});
+  const [responsesReady, setResponsesReady] = useState(false);
+
+  useEffect(() => {
+    const restore = () => {
+      try {
+        const saved = localStorage.getItem("mpsc.practice.responses.v1");
+        if (saved) {
+          const parsed: unknown = JSON.parse(saved);
+          if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
+            setResponses(parsed as Record<string, { category: string; correct: boolean }>);
+          }
+        }
+      } catch {
+        // Practice remains available if browser storage is unavailable.
+      }
+      setResponsesReady(true);
+    };
+    const timer = window.setTimeout(restore, 0);
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (!responsesReady) return;
+    try {
+      localStorage.setItem("mpsc.practice.responses.v1", JSON.stringify(responses));
+    } catch {
+      // Keep the current practice session usable without persistence.
+    }
+  }, [responses, responsesReady]);
 
   const filteredQuestions = useMemo(() => {
     if (category === "All") return questions;
     return questions.filter((q) => q.category === category);
   }, [category]);
 
-  const currentQuestion = filteredQuestions[index % filteredQuestions.length];
+  const rotation = useQuestionRotation(
+    filteredQuestions,
+    `mpsc:${category}`,
+  );
+  const currentQuestion = rotation.currentQuestion;
 
   function nextQuestion() {
     setSelectedAnswer("");
-    setIndex((prev) => (prev + 1) % filteredQuestions.length);
+    rotation.nextQuestion();
   }
 
   function changeCategory(cat: string) {
     setCategory(cat);
-    setIndex(0);
     setSelectedAnswer("");
   }
+
+  function chooseAnswer(option: string) {
+    if (!currentQuestion) return;
+    setSelectedAnswer(option);
+    rotation.recordAnswer(option === currentQuestion.answer);
+    const questionKey = `${currentQuestion.category}::${currentQuestion.question}`;
+    setResponses((current) => ({
+      ...current,
+      [questionKey]: {
+        category: currentQuestion.category,
+        correct: option === currentQuestion.answer,
+      },
+    }));
+  }
+
+  const correctAnswers = Object.values(responses).filter((response) => response.correct).length;
+  const accuracy = Object.keys(responses).length
+    ? Math.round((correctAnswers / Object.keys(responses).length) * 100)
+    : null;
+  const selectedWrongExplanation =
+    currentQuestion && selectedAnswer
+      ? (currentQuestion.wrongExplanations as Record<string, string> | undefined)?.[
+          selectedAnswer
+        ]
+      : undefined;
 return (
-  <main className="min-h-screen bg-slate-950 px-4 py-8 text-slate-100">
-    <div className="mx-auto max-w-7xl">
+  <main className="academy-shell">
+    <aside className="academy-sidebar">
+      <Link href="/" className="academy-brand" aria-label="MPSC Free Mock home">
+        <span className="brand-mark"><GraduationCap size={22} strokeWidth={2.1} /></span>
+        <span className="brand-copy"><strong>MPSC FREE MOCK</strong><small>LEARNING SPACE</small></span>
+      </Link>
+      <div className="sidebar-label">YOUR WORKSPACE</div>
+      <nav className="sidebar-nav" aria-label="Main navigation">
+        <Link href="/" className="sidebar-link"><LayoutDashboard size={18} /><span>Learning space</span><ArrowUpRight className="nav-external" size={14} /></Link>
+        <Link href="/mock-test" className="sidebar-link is-active" aria-current="page"><ClipboardCheck size={18} /><span>MPSC practice</span></Link>
+      </nav>
+      <div className="sidebar-label sidebar-label-spaced">LEARNING RESOURCES</div>
+      <nav className="sidebar-nav" aria-label="Learning resources">
+        <Link href="/college-notes" className="sidebar-link"><BookMarked size={18} /><span>College notes</span></Link>
+        <Link href="/mizo" className="sidebar-link"><BookOpen size={18} /><span>Mizo Tawng</span></Link>
+        <Link href="/neet" className="sidebar-link"><BookOpen size={18} /><span>NEET practice</span></Link>
+        <Link href="/cuet-pg" className="sidebar-link"><GraduationCap size={18} /><span>CUET PG practice</span></Link>
+      </nav>
+      <div className="sidebar-spacer" />
+      <div className="sidebar-help">
+        <span className="help-icon"><BookOpen size={17} /></span>
+        <div><strong>Keep learning freely</strong><span>Knowledge grows when shared.</span></div>
+        <ArrowUpRight size={15} />
+      </div>
+      <div className="sidebar-profile">
+        <span className="profile-avatar">M</span>
+        <div><strong>Mizoram aspirant</strong><span>Independent learner</span></div>
+        <span className="profile-status" title="Learning space active" />
+      </div>
+    </aside>
 
-      <section className="mb-8 rounded-3xl border border-cyan-400/40 bg-slate-900 p-6 shadow-[0_0_40px_rgba(34,211,238,0.25)]">
-        <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">
-          Mizoram Exam Practice
-        </p>
+    <div className="academy-main">
+      <header className="academy-topbar practice-topbar">
+        <Link href="/" className="mobile-brand" aria-label="Back to learning space">
+          <span className="brand-mark"><GraduationCap size={19} /></span><strong>MPSC FREE MOCK</strong>
+        </Link>
+        <p className="practice-breadcrumb">Practice <span>/</span> MPSC question bank</p>
+        <div className="topbar-actions">
+          <button
+            type="button"
+            className="icon-button practice-chat-trigger"
+            onClick={() => window.dispatchEvent(new Event("mpsc-open-assistant"))}
+            aria-label="Open MPSC study assistant"
+            title="Open study assistant"
+          ><MessageCircle size={18} /></button>
+          <InstallAppButton />
+          <Link href="/" className="icon-button practice-back" aria-label="Back to learning space" title="Back to learning space"><ArrowLeft size={18} /></Link>
+        </div>
+      </header>
 
-        <h1 className="mt-3 text-4xl font-bold text-cyan-300 md:text-6xl">
-          MPSC FREE MOCK
-        </h1>
-
-        <div className="mt-8 rounded-3xl border border-cyan-400/40 bg-slate-950/70 p-6 text-center shadow-[0_0_35px_rgba(34,211,238,0.25)]">
-          <div className="animate-bounce text-4xl">📖</div>
-
-          <p className="mt-2 text-sm text-slate-300 md:text-base">
-            Don’t distribute it like a five-star dish.
-          </p>
-
-          <p className="mt-3 text-lg font-semibold italic text-cyan-300">
-            That’s our motto.
-          </p>
+      <section className="academy-content practice-content">
+        <div className="page-heading-row practice-heading">
+          <div>
+            <span className="section-kicker">MIZORAM PUBLIC SERVICE COMMISSION</span>
+            <h1>MPSC practice</h1>
+            <p>Build recall with focused questions, clear explanations, and review of missed answers.</p>
+          </div>
+          <Link href="/mizo" className="button button-outline practice-language-link">Mizo Tawng <span aria-hidden="true">·</span> Mizo learning</Link>
         </div>
 
-        <p className="mt-4 max-w-3xl text-slate-300">
-          MCQ-style practice questions with answers, explanations and elimination
-          hints.
-        </p>
+        <section className="metric-row practice-metrics" aria-label="MPSC practice summary">
+          <div className="metric-item"><span className="metric-icon metric-green"><BookOpen size={18} /></span><div><span className="metric-label">QUESTIONS IN THIS SET</span><strong>{filteredQuestions.length}</strong><span className="metric-note">{category === "All" ? "all MPSC topics" : category}</span></div></div>
+          <div className="metric-item"><span className="metric-icon metric-coral"><ClipboardCheck size={18} /></span><div><span className="metric-label">QUESTIONS ANSWERED</span><strong>{Object.keys(responses).length}</strong><span className="metric-note">saved on this device</span></div></div>
+          <div className="metric-item"><span className="metric-icon metric-blue"><TrendingUp size={18} /></span><div><span className="metric-label">PRACTICE ACCURACY</span><strong>{accuracy === null ? "—" : `${accuracy}%`}</strong><span className="metric-note">{accuracy === null ? "Your first answer starts here" : `${correctAnswers} correct answers`}</span></div></div>
+        </section>
 
-        <div className="mt-6 flex flex-wrap gap-3">
-
-  <Link
-    href="/college-notes"
-    className="rounded-xl border border-cyan-400 px-5 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-400/10"
-  >
-    📖 Open Arts College Notes
-  </Link>
-
-  <Link
-    href="/neet"
-    className="rounded-xl border border-cyan-400 px-5 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-400/10"
-  >
-    🧬 NEET Science Practice
-  </Link>
-
-  <Link
-    href="/cuet-pg"
-    className="rounded-xl border border-cyan-400 px-5 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-400/10"
-  >
-    🎓 CUET PG Practice
-  </Link>
-
-</div>
-      </section>
-
-      <section className="mb-6 flex flex-wrap gap-3">
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => changeCategory(cat)}
-            className={`rounded-full border px-4 py-2 text-sm font-semibold ${
-              category === cat
-                ? "bg-cyan-400 text-slate-950"
-                : "border-cyan-400 text-cyan-300 hover:bg-cyan-400/10"
-            }`}
-          >
-            {cat}
-          </button>
-        ))}
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-2">
-        <div className="rounded-3xl border border-cyan-400/50 bg-slate-900 p-6 shadow-[0_0_25px_rgba(34,211,238,0.15)]">
-          <p className="text-sm text-cyan-300">
-            Question {index + 1} of {filteredQuestions.length} |{" "}
-            {currentQuestion.category}
-          </p>
-
-          <h2 className="mt-4 text-2xl font-bold text-white">
-            {currentQuestion.question}
-          </h2>
-
-          <div className="mt-6 grid gap-4">
-            {currentQuestion.options?.map((option) => (
+        <section className="practice-category-panel" aria-label="Choose a MPSC practice topic">
+          <div className="practice-section-heading"><div><span className="section-kicker">FOCUS YOUR SESSION</span><h2>Question bank</h2></div><span>{filteredQuestions.length} questions</span></div>
+          <div className="practice-category-list">
+            {categories.map((cat) => (
               <button
-                key={option}
-                onClick={() => setSelectedAnswer(option)}
-                className={`rounded-2xl border p-4 text-left transition ${
-                  selectedAnswer === option
-                    ? option === currentQuestion?.answer
-                      ? "border-green-400 bg-green-400/15"
-                      : "border-red-400 bg-red-400/15"
-                    : "border-cyan-400/70 hover:bg-cyan-400/10"
-                }`}
-              >
-                {option}
-              </button>
+                key={cat}
+                type="button"
+                onClick={() => changeCategory(cat)}
+                aria-pressed={category === cat}
+                className={`practice-category-button ${category === cat ? "is-active" : ""}`}
+              >{cat}</button>
             ))}
           </div>
+        </section>
 
-          <button
-            onClick={nextQuestion}
-            className="mt-6 rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 hover:bg-cyan-300"
-          >
-            Next Question
-          </button>
-        </div>
-
-        <div className="rounded-3xl border border-cyan-400/50 bg-slate-900 p-6 shadow-[0_0_25px_rgba(34,211,238,0.15)]">
-          <h2 className="text-3xl font-bold text-cyan-300">
-            Explanation
-          </h2>
-
-          {!selectedAnswer ? (
-            <p className="mt-6 text-slate-300">
-              Select an answer to view the explanation.
-            </p>
-          ) : (
-            <>
-            {(() => {
-              const isCorrect = selectedAnswer === currentQuestion.answer;
-              return (
-            <div className="mt-6 space-y-5">
-              <div
-                className={`rounded-2xl border p-4 ${
-                  isCorrect
-                    ? "border-green-400 bg-green-400/10"
-                    : "border-red-400 bg-red-400/10"
-                }`}
-              >
-                <h3
-                  className={`text-xl font-bold ${
-                    isCorrect ? "text-green-400" : "text-red-400"
-                  }`}
-                >
-                  {isCorrect ? "Correct Answer" : "Wrong Answer"}
-                </h3>
-
-                <p className="mt-3 text-slate-300">
-                  {isCorrect
-                    ? currentQuestion.explanation
-                    : currentQuestion.wrongExplanations
-                    ? currentQuestion.wrongExplanations[
-                        selectedAnswer as keyof typeof currentQuestion.wrongExplanations
-                      ]
-                    : currentQuestion.explanation}
-                </p>
-              </div>
-
-              {!isCorrect && (
-                <div className="rounded-2xl border border-cyan-400/50 p-4">
-                  <p className="text-cyan-300">
-                    Correct Answer:
-                  </p>
-
-                  <p className="mt-2 text-xl font-bold text-white">
-                    {currentQuestion.answer}
-                  </p>
-
-                  <p className="mt-4 text-slate-300">
-                    {currentQuestion.explanation}
-                  </p>
+        <section className="practice-layout">
+          <div className="content-panel practice-question-panel">
+            {currentQuestion && rotation.summary ? (
+              <>
+                <div className="practice-question-meta">
+                  <span className="section-kicker">{currentQuestion.category}</span>
+                  <span className={`practice-round-label ${rotation.summary.isReview ? "is-review" : ""}`}>
+                    {rotation.summary.isReview ? "Spaced review" : `Round ${rotation.summary.round}`}
+                  </span>
                 </div>
-              )}
-
-              <div className="rounded-2xl border border-yellow-400/50 bg-yellow-400/10 p-4">
-                <h3 className="font-bold text-yellow-300">
-                  Elimination Method / Hint
-                </h3>
-
-                <p className="mt-2 text-slate-300">
-                  {currentQuestion.hint}
+                <p className="practice-question-count">
+                  {rotation.summary.freshRemaining} fresh {rotation.summary.freshRemaining === 1 ? "question" : "questions"} left
+                  {rotation.summary.reviewsPending > 0 && ` · ${rotation.summary.reviewsPending} to review`}
                 </p>
-              </div>
-            </div>
-              );
-            })()}
-            </>
-          )}
-        </div>
-      </section>
+                <h2 className="practice-question-title">{currentQuestion.question}</h2>
+                <div className="practice-options">
+                  {currentQuestion.options?.map((option, index) => {
+                    const selected = selectedAnswer === option;
+                    const correct = selected && option === currentQuestion.answer;
+                    const incorrect = selected && option !== currentQuestion.answer;
+                    return (
+                      <button
+                        key={`${option}-${index}`}
+                        type="button"
+                        onClick={() => chooseAnswer(option)}
+                        aria-pressed={selected}
+                        className={`practice-option ${correct ? "is-correct" : ""} ${incorrect ? "is-incorrect" : ""}`}
+                      >
+                        <span className="practice-option-letter">{String.fromCharCode(65 + index)}</span>
+                        <span>{option}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+                <div className="practice-question-actions">
+                  <span>{rotation.summary.reviewsDue > 0 ? `${rotation.summary.reviewsDue} review${rotation.summary.reviewsDue === 1 ? "" : "s"} due` : "Missed questions return later for review"}</span>
+                  <button type="button" className="button button-dark" onClick={nextQuestion}>Next question <ArrowUpRight size={15} /></button>
+                </div>
+              </>
+            ) : (
+              <div className="practice-loading" role="status">Preparing your question set…</div>
+            )}
+          </div>
 
+          <aside className="content-panel practice-feedback-panel" aria-live="polite">
+            <div className="practice-section-heading"><div><span className="section-kicker">LEARN FROM EACH ANSWER</span><h2>{selectedAnswer && currentQuestion ? selectedAnswer === currentQuestion.answer ? "Correct" : "Review this" : "Explanation"}</h2></div><span className="practice-feedback-mark"><BookOpen size={18} /></span></div>
+            {!selectedAnswer || !currentQuestion ? (
+              <p className="practice-feedback-empty">Choose an answer to see why it works and what to revisit.</p>
+            ) : (
+              <div className="practice-feedback-copy">
+                <p className={`practice-result ${selectedAnswer === currentQuestion.answer ? "is-correct" : "is-incorrect"}`}>
+                  {selectedAnswer === currentQuestion.answer ? "That’s right." : `Correct answer: ${currentQuestion.answer}`}
+                </p>
+                <p>{selectedAnswer === currentQuestion.answer ? currentQuestion.explanation : selectedWrongExplanation ?? currentQuestion.explanation}</p>
+                {selectedAnswer !== currentQuestion.answer && <p>{currentQuestion.explanation}</p>}
+                {currentQuestion.hint && <div className="practice-hint"><strong>Remember</strong><p>{currentQuestion.hint}</p></div>}
+              </div>
+            )}
+            <div className="practice-review-note"><span>{rotation.summary?.reviewsPending ?? 0}</span><p>missed questions in your spaced review queue</p></div>
+          </aside>
+        </section>
+
+        <footer className="academy-footer"><span>Open learning for every MPSC aspirant.</span><span>Progress and practice are saved on this device.</span></footer>
+      </section>
     </div>
+
+    <nav className="mobile-nav practice-mobile-nav" aria-label="Learning navigation">
+      <Link href="/" className="mobile-nav-link"><LayoutDashboard size={17} /><span>Learn</span></Link>
+      <Link href="/mock-test" className="mobile-nav-link is-active" aria-current="page"><ClipboardCheck size={17} /><span>Practice</span></Link>
+      <Link href="/neet" className="mobile-nav-link"><BookOpen size={17} /><span>NEET</span></Link>
+      <Link href="/cuet-pg" className="mobile-nav-link"><GraduationCap size={17} /><span>CUET PG</span></Link>
+    </nav>
   </main>
 );
 }
