@@ -23,6 +23,8 @@ export interface QuestionRotationState {
   lastRoundFirst: string;
   freshCompleted: number;
   reviews: ReviewQuestion[];
+  answered?: boolean;
+  selectedAnswer?: string;
 }
 
 const STORAGE_PREFIX = "question-rotation:v1:";
@@ -140,6 +142,8 @@ export function restoreRotation(
       idSet.has(state.lastRoundFirst) &&
       Number.isInteger(state.freshCompleted) &&
       state.freshCompleted! >= 0 &&
+      (state.answered === undefined || typeof state.answered === "boolean") &&
+      (state.selectedAnswer === undefined || typeof state.selectedAnswer === "string") &&
       validReviews
     ) {
       return state as QuestionRotationState;
@@ -154,8 +158,10 @@ export function recordRotationAnswer(
   state: QuestionRotationState,
   id: string,
   correct: boolean,
+  selectedAnswer = "",
 ): QuestionRotationState {
-  if (state.activeId !== id) return state;
+  if (state.activeId !== id || state.answered) return state;
+  state = { ...state, answered: true, selectedAnswer };
   const existing = state.reviews.find((review) => review.id === id);
   const reviews = state.reviews.filter((review) => review.id !== id);
   if (correct) return { ...state, reviews };
@@ -179,7 +185,7 @@ export function advanceRotation(
 ): QuestionRotationState | null {
   const freshCompleted =
     state.freshCompleted + (state.activeMode === "fresh" ? 1 : 0);
-  const base = { ...state, freshCompleted };
+  const base = { ...state, freshCompleted, answered: false, selectedAnswer: "" };
   const dueReview = [...base.reviews]
     .filter(
       (review) => review.id !== state.activeId && review.dueAt <= freshCompleted,

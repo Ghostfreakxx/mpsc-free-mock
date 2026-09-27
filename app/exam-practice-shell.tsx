@@ -15,7 +15,8 @@ import {
   RotateCw,
 } from "lucide-react";
 import InstallAppButton from "./install-app-button";
-import type { RotatableQuestion } from "./lib/question-rotation";
+import type { ReviewedQuestion } from "./data/reviewed-content";
+import QuestionSource from "./question-source";
 
 type RotationSummary = {
   round: number;
@@ -25,12 +26,7 @@ type RotationSummary = {
   isReview: boolean;
 };
 
-type ExamQuestion = RotatableQuestion & {
-  explanation: string;
-  wrongExplanations?: object;
-  hint?: string;
-  options: readonly string[];
-};
+type ExamQuestion = ReviewedQuestion;
 
 type FilterGroup = {
   label: string;
@@ -60,6 +56,7 @@ const navigation = [
   { href: "/jee", label: "JEE Main practice", icon: Atom },
   { href: "/cuet-pg", label: "CUET PG practice", icon: GraduationCap },
   { href: "/college-notes", label: "College notes", icon: BookMarked },
+  { href: "/downloads", label: "Download notes", icon: BookMarked },
 ] as const;
 
 export default function ExamPracticeShell({
@@ -131,7 +128,7 @@ export default function ExamPracticeShell({
         <section className="academy-content practice-content">
           <div className="page-heading-row practice-heading">
             <div><span className="section-kicker">{eyebrow}</span><h1>{title}</h1><p>{description}</p></div>
-            <Link href="/mock-test" className="button button-outline practice-mpsc-link">MPSC practice <ArrowUpRight size={15} /></Link>
+            <Link href={`/downloads#${activeRoute.slice(1)}`} className="button button-outline">Download notes <ArrowUpRight size={15} /></Link>
           </div>
 
           <section className="metric-row practice-metrics exam-practice-metrics" aria-label={`${title} summary`}>
@@ -139,6 +136,7 @@ export default function ExamPracticeShell({
             <div className="metric-item"><span className="metric-icon metric-blue"><RotateCw size={18} /></span><div><span className="metric-label">FRESH THIS ROUND</span><strong>{summary?.freshRemaining ?? totalQuestions}</strong><span className="metric-note">no repeats in a round</span></div></div>
             <div className="metric-item"><span className="metric-icon metric-coral"><ClipboardCheck size={18} /></span><div><span className="metric-label">SPACED REVIEWS</span><strong>{summary?.reviewsPending ?? 0}</strong><span className="metric-note">missed answers to revisit</span></div></div>
           </section>
+          <p className="content-review-notice">Source-checked foundation practice. Original questions, not official PYQs or a complete syllabus.</p>
 
           <section className="practice-category-panel exam-filter-panel" aria-label="Filter questions">
             <div className="practice-section-heading"><div><span className="section-kicker">FOCUS YOUR SESSION</span><h2>Choose {filters.length > 1 ? "subject and topic" : "subject"}</h2></div><span>{totalQuestions.toLocaleString()} questions</span></div>
@@ -178,7 +176,8 @@ export default function ExamPracticeShell({
                         <button
                           type="button"
                           key={`${option}-${index}`}
-                          onClick={() => onSelectAnswer(option)}
+                          onClick={() => { if (!selectedAnswer) onSelectAnswer(option); }}
+                          disabled={Boolean(selectedAnswer)}
                           aria-pressed={selected}
                           className={`practice-option ${correct ? "is-correct" : ""} ${incorrect ? "is-incorrect" : ""}`}
                         ><span className="practice-option-letter">{String.fromCharCode(65 + index)}</span><span>{option}</span></button>
@@ -202,6 +201,7 @@ export default function ExamPracticeShell({
                   <p>{selectedIsCorrect ? currentQuestion.explanation : selectedWrongExplanation?.[selectedAnswer] ?? "That option is not correct. Check the explanation below."}</p>
                   {!selectedIsCorrect && <p>{currentQuestion.explanation}</p>}
                   {currentQuestion.hint && <div className="practice-hint"><strong>Remember</strong><p>{currentQuestion.hint}</p></div>}
+                  <QuestionSource question={currentQuestion} />
                 </div>
               )}
               <div className="practice-review-note"><span>{summary?.reviewsPending ?? 0}</span><p>missed questions in your spaced review queue</p></div>

@@ -15,7 +15,6 @@ const subjects = [
 export default function CuetPgPage() {
   const [subject, setSubject] = useState("All");
   const [category, setCategory] = useState("All");
-  const [selectedAnswer, setSelectedAnswer] = useState("");
 
   const categories = useMemo(() => {
     const source =
@@ -40,20 +39,18 @@ export default function CuetPgPage() {
     `cuet-pg:${subject}:${category}`,
   );
   const currentQuestion = rotation.currentQuestion;
+  const selectedAnswer = rotation.selectedAnswer;
 
   function changeSubject(newSubject: string) {
     setSubject(newSubject);
     setCategory("All");
-    setSelectedAnswer("");
   }
 
   function changeCategory(newCategory: string) {
     setCategory(newCategory);
-    setSelectedAnswer("");
   }
 
   function nextQuestion() {
-    setSelectedAnswer("");
 
     rotation.nextQuestion();
   }
@@ -73,9 +70,8 @@ export default function CuetPgPage() {
       summary={rotation.summary}
       selectedAnswer={selectedAnswer}
       onSelectAnswer={(option) => {
-        if (!currentQuestion) return;
-        setSelectedAnswer(option);
-        rotation.recordAnswer(option === currentQuestion.answer);
+        if (!currentQuestion || selectedAnswer || !currentQuestion.options.includes(option)) return;
+        rotation.recordAnswer(option === currentQuestion.answer, option);
       }}
       onNext={nextQuestion}
     />
