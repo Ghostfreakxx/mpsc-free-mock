@@ -3,6 +3,62 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { getReviewedQuestions, topics, notePacks, sources, contentRevision, collegeSubjects } from '../app/data/reviewed-content.ts';
 import { renderNotes, escapeHtml } from '../app/lib/render-notes.ts';
+import { additionalQuestions } from '../app/data/additional-questions.ts';
+import { additionalQuotas, practiceExpansion } from '../app/data/expanded-practice.ts';
+import { numeric } from '../app/data/question-builders.ts';
+
+test('each stream gains exactly 200 questions over the merged release', () => {
+  for (const [stream, original] of Object.entries({mpsc: 29, neet: 9, jee: 9, 'cuet-pg': 24})) {
+    assert.equal(getReviewedQuestions(stream).length, original + 200, stream);
+    assert.equal(Object.values(additionalQuotas[stream]).reduce((a, b) => a + b, 0), 200);
+  }
+});
+
+test('numerical options do not reveal the answer by always making it the smallest', () => {
+  const [, options, index] = numeric('Test', 10, '', '10', 'Test', 2);
+  assert.equal(options[index], '10');
+  assert.ok(options.some(option => Number(option) < 10));
+  assert.ok(options.some(option => Number(option) > 10));
+});
+
+test('independently recompute the science numerical expansion from its question text', () => {
+  for (const [prompt, options, answer] of practiceExpansion.physics) {
+    let expected;
+    const numbers = [...prompt.matchAll(/\b\d+(?:\.\d+)?\b/g)].map(match => Number(match[0]));
+    if (prompt.startsWith('A constant-mass')) expected = numbers[0] * numbers[1];
+    else if (prompt.startsWith('A net force')) expected = numbers[0] / numbers[1];
+    else if (prompt.startsWith('An object accelerates')) expected = numbers[2] / numbers[0];
+    else if (prompt.startsWith('At g')) expected = numbers[0] * numbers[2];
+    else if (prompt.startsWith('Horizontal forces')) expected = (numbers[0] - numbers[1]) / numbers[2];
+    else if (prompt.startsWith('A body accelerates')) expected = 2 * numbers[0];
+    else if (prompt.startsWith('A ') && prompt.includes('supported')) expected = (numbers[1] - numbers[0] * numbers[2]) / numbers[0];
+    else assert.fail(`Missing arithmetic check: ${prompt}`);
+    assert.equal(parseFloat(options[answer]), expected, prompt);
+  }
+  for (const [prompt, options, answer] of practiceExpansion.chemistry) {
+    const n = [...prompt.matchAll(/-?\d+/g)].map(match => Number(match[0]));
+    let expected;
+    if (prompt.startsWith('A nucleus')) expected = n[1] - n[0];
+    else if (prompt.startsWith('An atom contains')) expected = n[0] + n[1];
+    else if (prompt.startsWith('An atom has mass')) expected = n[0] - n[1];
+    else if (prompt.startsWith('An ion')) expected = n[0] - n[1];
+    else if (prompt.startsWith('A neutral atom has')) expected = n[0];
+    else if (prompt.startsWith('Two isotopes')) expected = n[1] - n[0];
+    else if (prompt.startsWith('A neutral atom contains')) expected = 2 * n[0] + n[1];
+    else assert.fail(`Missing arithmetic check: ${prompt}`);
+    assert.equal(Number(options[answer]), expected, prompt);
+  }
+});
+
+test('the expansion covers every topic and uses valid answer indices', () => {
+  assert.deepEqual(Object.keys(additionalQuestions).sort(), topics.map(topic => topic.id).sort());
+  for (const [id, questions] of Object.entries(additionalQuestions)) {
+    assert.ok(questions.length >= 3, id);
+    for (const [, options, answer] of questions) {
+      assert.ok(Number.isInteger(answer) && answer >= 0 && answer < options.length, id);
+    }
+  }
+});
 
 test('all existing stream subjects have published practice', () => {
   const expected = { neet: ['Biology', 'Chemistry', 'Physics'], jee: ['Physics', 'Chemistry', 'Mathematics'], 'cuet-pg': ['General Aptitude', 'Political Science', 'History', 'Geography', 'Economics', 'Sociology', 'Education', 'English'] };

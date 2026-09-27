@@ -1,4 +1,4 @@
-const CACHE_NAME = "mpsc-free-mock-v7";
+const CACHE_NAME = "mpsc-free-mock-v8";
 
 const urlsToCache = [
   "/",
