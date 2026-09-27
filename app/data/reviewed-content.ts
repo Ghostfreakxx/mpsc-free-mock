@@ -1,3 +1,6 @@
+import { additionalQuestions } from "./additional-questions.ts";
+import { additionalQuotas, practiceExpansion } from "./expanded-practice.ts";
+
 export type Stream = "mpsc" | "neet" | "jee" | "cuet-pg";
 export const contentRevision = "2026-09-27";
 export const contentScope = "Foundation revision only; not a complete syllabus or a prediction of exam questions.";
@@ -5,7 +8,7 @@ export const contentScope = "Foundation revision only; not a complete syllabus o
 export const sources = {
   constitution: { title: "Legislative Department: Constitution of India (May 2024 edition)", url: "https://cdnbbsr.s3waas.gov.in/s380537a945c7aaa788ccfcdf1b99b5d8f/uploads/2024/07/20240716890312078.pdf" },
   mizoram: { title: "Government of Mizoram: state history", url: "https://eram.mizoram.gov.in/pages/about-us" },
-  biology: { title: "NCERT Biology: Cell, the Unit of Life", url: "https://ncert.gov.in/textbook/pdf/kebo108.pdf" },
+  biology: { title: "NCERT Biology: Cell, the Unit of Life", url: "https://ncert.nic.in/textbook/pdf/kebo108.pdf" },
   physics: { title: "OpenStax College Physics 2e: 4.3 Newton's Second Law", url: "https://openstax.org/books/college-physics-2e/pages/4-3-newtons-second-law-of-motion-concept-of-a-system" },
   chemistry: { title: "OpenStax Chemistry 2e: 2.3 Atomic Structure", url: "https://openstax.org/books/chemistry-2e/pages/2-3-atomic-structure-and-symbolism" },
   mathematics: { title: "OpenStax College Algebra 2e: 2.5 Quadratic Equations", url: "https://openstax.org/books/college-algebra-2e/pages/2-5-quadratic-equations" },
@@ -28,7 +31,7 @@ export type ReviewedQuestion = {
   hint?: string; wrongExplanations?: Record<string, string>;
 };
 
-type QuestionSeed = [prompt: string, options: [string, string, string, string], answerIndex: number, explanation: string, location: string];
+export type QuestionSeed = [prompt: string, options: [string, string, string, string], answerIndex: number, explanation: string, location: string];
 export type Topic = {
   id: string; subject: string; title: string; sourceId: SourceId;
   streams: Stream[]; notes: string[]; pitfall: string; questions: QuestionSeed[];
@@ -159,12 +162,22 @@ topics.push({
   ],
 });
 
+const originalTopicCounts = new Map(topics.map(topic => [topic.id, topic.questions.length]));
+// Append within each topic so existing question IDs and saved progress stay stable.
+for (const topic of topics) {
+  const quota = Math.max(...topic.streams.map(stream => additionalQuotas[stream]?.[topic.id] ?? 0));
+  const additions = [...(additionalQuestions[topic.id] ?? []), ...(practiceExpansion[topic.id] ?? [])];
+  if (additions.length < quota) throw new Error(`Insufficient reviewed additions for ${topic.id}`);
+  topic.questions.push(...additions.slice(0, quota));
+}
+
 export const reviewedQuestions: ReviewedQuestion[] = topics.flatMap(topic =>
   topic.questions.map(([question, options, answerIndex, explanation, sourceLocation], index) => ({
     id: `${topic.id}-${index + 1}`, subject: topic.subject, category: topic.title,
     question, options, answer: options[answerIndex], explanation,
     sourceId: topic.sourceId, sourceLocation, reviewedOn: contentRevision,
-    kind: "original" as const, streams: topic.streams,
+    kind: "original" as const,
+    streams: topic.streams.filter(stream => index < originalTopicCounts.get(topic.id)! || index - originalTopicCounts.get(topic.id)! < additionalQuotas[stream][topic.id]),
   })),
 );
 
