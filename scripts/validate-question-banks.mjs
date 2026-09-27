@@ -1,159 +1,33 @@
-import fs from "node:fs";
-import path from "node:path";
-import { createRequire } from "node:module";
-import { fileURLToPath } from "node:url";
+import assert from 'node:assert/strict';
+import { reviewedQuestions, getReviewedQuestions, sources, notePacks, topics } from '../app/data/reviewed-content.ts';
 
-const require = createRequire(import.meta.url);
-const ts = require("typescript");
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const bankFiles = [
-  "app/mock-test/page.tsx",
-  "app/neet/page.tsx",
-  "app/data/jeeQuestions.ts",
-  "app/data/cuetPgQuestions.ts",
-];
-let errorCount = 0;
-
-function readLiteral(node, sourceFile) {
-  if (ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node)) {
-    return node.text;
-  }
-  if (ts.isArrayLiteralExpression(node)) {
-    return node.elements.map((element) => readLiteral(element, sourceFile));
-  }
-  if (ts.isObjectLiteralExpression(node)) {
-    return Object.fromEntries(
-      node.properties
-        .filter(ts.isPropertyAssignment)
-        .map((property) => [
-          property.name.getText(sourceFile).replace(/^['"]|['"]$/g, ""),
-          readLiteral(property.initializer, sourceFile),
-        ]),
-    );
-  }
-  return undefined;
+const ids = new Set();
+const prompts = new Set();
+assert.ok(reviewedQuestions.length > 0, 'Published bank must not be empty');
+for (const question of reviewedQuestions) {
+  assert.ok(!ids.has(question.id), `Duplicate ID: ${question.id}`);
+  ids.add(question.id);
+  const prompt = question.question.toLowerCase().replace(/\s+/g, ' ').trim();
+  assert.ok(prompt && !prompts.has(prompt), `Missing or duplicate prompt: ${question.id}`);
+  prompts.add(prompt);
+  assert.equal(question.options.length, 4, question.id);
+  assert.equal(new Set(question.options.map(option => option.trim().toLowerCase())).size, 4, question.id);
+  assert.ok(question.options.every(option => option.trim()), question.id);
+  assert.equal(question.options.filter(option => option === question.answer).length, 1, question.id);
+  assert.ok(question.explanation.trim() && question.sourceLocation.trim(), question.id);
+  assert.equal(new URL(sources[question.sourceId].url).protocol, 'https:');
+  assert.equal(question.kind, 'original', 'PYQs require a separate paper/final-key matching workflow');
+  assert.match(question.reviewedOn, /^\d{4}-\d{2}-\d{2}$/);
+  assert.ok(question.streams.length > 0);
 }
-
-function questionArray(sourceFile) {
-  let found;
-  function visit(node) {
-    if (
-      ts.isVariableDeclaration(node) &&
-      ["questions", "jeeQuestions", "cuetPgQuestions"].includes(node.name.getText(sourceFile)) &&
-      node.initializer
-    ) {
-      if (ts.isArrayLiteralExpression(node.initializer)) {
-        found = node.initializer;
-      } else if (ts.isCallExpression(node.initializer)) {
-        found = node.initializer;
-      }
-    }
-    ts.forEachChild(node, visit);
-  }
-  visit(sourceFile);
-  return found;
+for (const stream of ['mpsc', 'neet', 'jee', 'cuet-pg']) {
+  const bank = getReviewedQuestions(stream);
+  assert.ok(bank.length > 0, `${stream} cannot silently validate zero questions`);
+  console.log(`${stream}: ${bank.length} published questions`);
 }
-
-function normalize(value) {
-  return String(value ?? "").normalize("NFKC").toLowerCase().replace(/\s+/g, " ").trim();
+assert.equal(new Set(notePacks.map(pack => pack.id)).size, notePacks.length);
+for (const pack of notePacks) {
+  assert.ok(pack.topicIds.length > 0);
+  for (const id of pack.topicIds) assert.ok(topics.some(topic => topic.id === id), `${pack.id}: missing topic ${id}`);
 }
-
-for (const relativePath of bankFiles) {
-  const filePath = path.join(root, relativePath);
-  const text = fs.readFileSync(filePath, "utf8");
-  const sourceFile = ts.createSourceFile(
-    filePath,
-    text,
-    ts.ScriptTarget.Latest,
-    true,
-    filePath.endsWith(".tsx") ? ts.ScriptKind.TSX : ts.ScriptKind.TS,
-  );
-  if (sourceFile.parseDiagnostics.length > 0) {
-    for (const diagnostic of sourceFile.parseDiagnostics) {
-      const position = sourceFile.getLineAndCharacterOfPosition(diagnostic.start ?? 0);
-      errorCount += 1;
-      console.error(
-        `${relativePath}:${position.line + 1}:${position.character + 1}: ${ts.flattenDiagnosticMessageText(diagnostic.messageText, " ")}`,
-      );
-    }
-    continue;
-  }
-  const array = questionArray(sourceFile);
-  const elements = array
-    ? ts.isArrayLiteralExpression(array)
-      ? array.elements
-      : array.arguments
-    : [];
-  const questions = elements
-    .filter(ts.isObjectLiteralExpression)
-    .map((node) => ({
-      line: sourceFile.getLineAndCharacterOfPosition(node.getStart(sourceFile)).line + 1,
-      ...readLiteral(node, sourceFile),
-    }));
-  const seenPrompts = new Map();
-  const seenIds = new Map();
-
-  function report(question, message) {
-    errorCount += 1;
-    console.error(`${relativePath}:${question.line}: ${message}`);
-  }
-
-  for (const question of questions) {
-    const label = question.subject ?? question.category ?? "Uncategorized";
-    if (!normalize(question.question)) report(question, "missing question text");
-    if (!Array.isArray(question.options) || question.options.length !== 4) {
-      report(question, "must have exactly four answer options");
-      continue;
-    }
-    const normalizedOptions = question.options.map(normalize);
-    if (normalizedOptions.some((option) => !option)) {
-      report(question, "answer options cannot be empty");
-    }
-    if (new Set(normalizedOptions).size !== 4) {
-      report(question, "answer options must be distinct");
-    }
-    if (!normalizedOptions.includes(normalize(question.answer))) {
-      report(question, "correct answer must match one of the options");
-    }
-    if (!normalize(question.explanation)) report(question, "missing explanation");
-
-    const promptKey = JSON.stringify([
-      normalize(label),
-      normalize(question.question),
-      normalize(question.answer),
-    ]);
-    const prior = seenPrompts.get(promptKey);
-    if (prior) {
-      report(question, `duplicate prompt and answer (first seen on line ${prior})`);
-    } else {
-      seenPrompts.set(promptKey, question.line);
-    }
-
-    const idKey = JSON.stringify([
-      normalize(question.subject),
-      normalize(question.category),
-      question.question,
-      question.options,
-      question.answer,
-    ]);
-    const priorId = seenIds.get(idKey);
-    if (priorId) report(question, `duplicate question record (first seen on line ${priorId})`);
-    else seenIds.set(idKey, question.line);
-  }
-
-  const counts = new Map();
-  for (const question of questions) {
-    const label = question.subject ?? question.category ?? "Uncategorized";
-    counts.set(label, (counts.get(label) ?? 0) + 1);
-  }
-  console.log(
-    `${relativePath}: ${questions.length} questions across ${counts.size} sections`,
-  );
-}
-
-if (errorCount > 0) {
-  console.error(`Question bank validation failed with ${errorCount} issue(s).`);
-  process.exitCode = 1;
-} else {
-  console.log("Question bank validation passed.");
-}
+console.log(`Validated structure and references for ${ids.size} unique questions and ${notePacks.length} note packs. Factual review is a separate editorial check.`);

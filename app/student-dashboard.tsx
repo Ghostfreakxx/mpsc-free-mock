@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import InstallAppButton from "./install-app-button";
+import { getReviewedQuestions } from "./data/reviewed-content";
 import {
   Activity,
   Atom,
@@ -40,6 +41,7 @@ type PlannerHistory = Record<string, string[]>;
 
 const PLANNER_KEY = "mpsc.academy.planner.v1";
 const PRACTICE_KEY = "mpsc.practice.responses.v1";
+const reviewedKeys = new Set(getReviewedQuestions("mpsc").map(question => `${question.category}::${question.question}`));
 
 const tasks = [
   { id: "practice", title: "Answer a set of MPSC questions", detail: "Build recall with focused practice", href: "/mock-test", icon: ClipboardCheck },
@@ -103,10 +105,11 @@ const courses: {
   },
 ];
 
-const mainNavigation: { id: View | "practice"; label: string; icon: LucideIcon; href?: string }[] = [
+const mainNavigation: { id: View | "practice" | "downloads"; label: string; icon: LucideIcon; href?: string }[] = [
   { id: "overview", label: "Overview", icon: LayoutDashboard },
   { id: "courses", label: "My learning", icon: LibraryBig },
   { id: "practice", label: "Practice tests", icon: ClipboardCheck, href: "/mock-test" },
+  { id: "downloads", label: "Download notes", icon: BookMarked, href: "/downloads" },
   { id: "planner", label: "Study planner", icon: ListChecks },
   { id: "progress", label: "My progress", icon: TrendingUp },
 ];
@@ -148,7 +151,7 @@ export default function StudentDashboard() {
         if (savedAnswers) {
           const parsed: unknown = JSON.parse(savedAnswers);
           if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
-            const answers = Object.values(parsed as Record<string, unknown>).filter(
+            const answers = Object.entries(parsed as Record<string, unknown>).filter(([key]) => reviewedKeys.has(key)).map(([, answer]) => answer).filter(
               (answer): answer is PracticeAnswer =>
                 Boolean(answer) &&
                 typeof answer === "object" &&

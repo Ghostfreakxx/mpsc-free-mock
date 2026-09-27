@@ -1,4 +1,4 @@
-const CACHE_NAME = "mpsc-free-mock-v6";
+const CACHE_NAME = "mpsc-free-mock-v7";
 
 const urlsToCache = [
   "/",
@@ -7,6 +7,7 @@ const urlsToCache = [
   "/neet",
   "/jee",
   "/cuet-pg",
+  "/downloads",
   "/manifest.webmanifest",
   "/mizoram-study.webp",
   "/icon-192.png",
@@ -43,11 +44,24 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
+  const url = new URL(request.url);
+  // Cache public page navigations and static assets, not API or RSC payloads.
+  const cacheable = !url.search && (request.mode === "navigate" || url.pathname.startsWith("/_next/static/") || url.pathname.startsWith("/downloads/") || urlsToCache.includes(url.pathname));
+  if (!cacheable || request.headers.get("RSC") === "1") return;
   event.respondWith(
-    fetch(request).catch(async () => {
+    fetch(request).then(async (response) => {
+      if (response.ok && response.type === "basic") {
+        const cache = await caches.open(CACHE_NAME);
+        await cache.put(request, response.clone()).catch(() => {});
+      }
+      return response;
+    }).catch(async () => {
       const cached = await caches.match(request);
       if (cached) return cached;
-      if (request.mode === "navigate") return caches.match("/");
+      if (request.mode === "navigate" && !url.pathname.startsWith("/downloads/")) {
+        const home = await caches.match("/");
+        if (home) return home;
+      }
       return Response.error();
     }),
   );

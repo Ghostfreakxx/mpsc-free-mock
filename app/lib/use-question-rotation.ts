@@ -63,13 +63,12 @@ export function useQuestionRotation<T extends RotatableQuestion>(
     ? (questionsById.get(state.activeId) ?? null)
     : null;
 
-  function recordAnswer(correct: boolean) {
+  function recordAnswer(correct: boolean, answer: string) {
     if (!state || !currentQuestion) return;
     const id = questionId(currentQuestion);
-    setLoaded({
-      key,
-      state: recordRotationAnswer(state, id, correct),
-    });
+    setLoaded(current => current?.key === key && current.state
+      ? { key, state: recordRotationAnswer(current.state, id, correct, answer) }
+      : current);
   }
 
   function nextQuestion() {
@@ -81,6 +80,7 @@ export function useQuestionRotation<T extends RotatableQuestion>(
 
   return {
     currentQuestion,
+    selectedAnswer: typeof state?.selectedAnswer === "string" && currentQuestion?.options?.includes(state.selectedAnswer) ? state.selectedAnswer : "",
     ready: Boolean(ready && state),
     recordAnswer,
     nextQuestion,

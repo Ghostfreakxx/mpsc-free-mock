@@ -11,6 +11,21 @@ import {
 
 const fixedRandom = () => 0.5;
 
+test("first answer stays locked after repeat events and reload until next question", () => {
+  const ids = ["a", "b"];
+  let state = createRotation(ids, fixedRandom);
+  state = recordRotationAnswer(state, state.activeId, false, "wrong option");
+  const repeated = recordRotationAnswer(state, state.activeId, true, "right option");
+  assert.deepEqual(repeated, state);
+  const restored = restoreRotation(serializeRotation(state), ids, fixedRandom);
+  assert.equal(restored.selectedAnswer, "wrong option");
+  assert.equal(restored.reviews.length, 1);
+  assert.deepEqual(recordRotationAnswer(restored, restored.activeId, true, "right option"), restored);
+  const next = advanceRotation(restored, ids, fixedRandom);
+  assert.equal(next.answered, false);
+  assert.equal(next.selectedAnswer, "");
+});
+
 test("uses each question once before starting a new round", () => {
   const ids = ["a", "b", "c", "d"];
   let state = createRotation(ids, fixedRandom);

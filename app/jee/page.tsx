@@ -12,7 +12,6 @@ const subjects = ["All", ...Array.from(new Set(questions.map((question) => quest
 export default function JeePage() {
   const [subject, setSubject] = useState("All");
   const [category, setCategory] = useState("All");
-  const [selectedAnswer, setSelectedAnswer] = useState("");
 
   const categories = useMemo(() => {
     const source = subject === "All"
@@ -30,16 +29,15 @@ export default function JeePage() {
   );
   const rotation = useQuestionRotation(filteredQuestions, `jee:${subject}:${category}`);
   const currentQuestion = rotation.currentQuestion;
+  const selectedAnswer = rotation.selectedAnswer;
 
   function changeSubject(value: string) {
     setSubject(value);
     setCategory("All");
-    setSelectedAnswer("");
   }
 
   function changeCategory(value: string) {
     setCategory(value);
-    setSelectedAnswer("");
   }
 
   return (
@@ -57,12 +55,10 @@ export default function JeePage() {
       summary={rotation.summary}
       selectedAnswer={selectedAnswer}
       onSelectAnswer={(option) => {
-        if (!currentQuestion) return;
-        setSelectedAnswer(option);
-        rotation.recordAnswer(option === currentQuestion.answer);
+        if (!currentQuestion || selectedAnswer || !currentQuestion.options.includes(option)) return;
+        rotation.recordAnswer(option === currentQuestion.answer, option);
       }}
       onNext={() => {
-        setSelectedAnswer("");
         rotation.nextQuestion();
       }}
     />

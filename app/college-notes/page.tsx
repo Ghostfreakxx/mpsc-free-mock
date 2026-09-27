@@ -1,4 +1,5 @@
 "use client";
+import { topics } from "../data/reviewed-content";
 
 import Link from "next/link";
 import {
@@ -2626,7 +2627,7 @@ export default function CollegeNotesPage() {
         <section className="academy-content practice-content notes-content">
           <div className="page-heading-row practice-heading">
             <div><span className="section-kicker">MIZORAM ARTS COLLEGE · FREE LEARNING</span><h1>College notes</h1><p>Search a subject, review concise notes, or study longer exam-style explanations.</p></div>
-            <Link href="/mock-test" className="button button-outline practice-mpsc-link">MPSC practice <ArrowUpRight size={15} /></Link>
+            <Link href={`/downloads#${topics.find(topic => topic.subject === selectedSubject)?.id ?? ""}`} className="button button-outline">Download notes <ArrowUpRight size={15} /></Link>
           </div>
 
           <section className="practice-category-panel notes-subject-panel" aria-label="Choose a subject">
@@ -2650,6 +2651,7 @@ export default function CollegeNotesPage() {
             {search && <p className="notes-search-count">Found {filteredShortNotes.length} short notes and {filteredLongNotes.length} long notes.</p>}
           </section>
 
+          <p className="content-review-notice">The legacy notes below are awaiting source review. Source-checked foundation packs are available in <Link href="/downloads">Downloadable notes</Link>.</p>
           <section className="notes-layout" aria-label={`${subject.name} study notes`}>
             <section className="content-panel notes-panel">
               <div className="practice-section-heading"><div><span className="section-kicker">QUICK REVISION</span><h2>Short notes</h2></div><span>{filteredShortNotes.length}</span></div>
