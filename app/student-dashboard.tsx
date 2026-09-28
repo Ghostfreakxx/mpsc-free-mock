@@ -132,8 +132,9 @@ function getDayKey(date: Date) {
   return `${year}-${month}-${day}`;
 }
 
-function getGreeting() {
-  const hour = new Date().getHours();
+function getGreeting(date: Date | null) {
+  if (!date) return "Welcome";
+  const hour = date.getHours();
   if (hour < 12) return "Good morning";
   if (hour < 17) return "Good afternoon";
   return "Good evening";
@@ -146,6 +147,19 @@ export default function StudentDashboard() {
   const [practiceAnswers, setPracticeAnswers] = useState<PracticeAnswer[]>([]);
   const [ready, setReady] = useState(false);
   const [notificationsOpen, setNotificationsOpen] = useState(false);
+  const [today, setToday] = useState<Date | null>(null);
+
+  useEffect(() => {
+    const updateClock = () => setToday(new Date());
+    const initial = window.setTimeout(updateClock, 0);
+    const interval = window.setInterval(updateClock, 60_000);
+    window.addEventListener("focus", updateClock);
+    return () => {
+      window.clearTimeout(initial);
+      window.clearInterval(interval);
+      window.removeEventListener("focus", updateClock);
+    };
+  }, []);
 
   useEffect(() => {
     const restore = () => {
@@ -190,8 +204,7 @@ export default function StudentDashboard() {
     }
   }, [plannerHistory, ready]);
 
-  const today = new Date();
-  const todayKey = getDayKey(today);
+  const todayKey = today ? getDayKey(today) : "";
   const completedToday = plannerHistory[todayKey] ?? [];
   const completionRate = Math.round((completedToday.length / tasks.length) * 100);
   const correctAnswers = practiceAnswers.filter((answer) => answer.correct).length;
@@ -200,28 +213,30 @@ export default function StudentDashboard() {
     : null;
 
   const streak = useMemo(() => {
+    if (!today) return 0;
     let count = 0;
-    const cursor = new Date();
+    const cursor = new Date(today);
     while (count < 365 && (plannerHistory[getDayKey(cursor)]?.length ?? 0) > 0) {
       count += 1;
       cursor.setDate(cursor.getDate() - 1);
     }
     return count;
-  }, [plannerHistory]);
+  }, [plannerHistory, today]);
 
   const week = useMemo(() => {
+    if (!today) return [];
     return Array.from({ length: 7 }, (_, index) => {
-      const date = new Date();
+      const date = new Date(today);
       date.setDate(date.getDate() - (6 - index));
       const key = getDayKey(date);
       return {
         key,
         label: date.toLocaleDateString("en", { weekday: "short" }),
         completed: plannerHistory[key]?.length ?? 0,
-        isToday: key === getDayKey(new Date()),
+        isToday: key === getDayKey(today),
       };
     });
-  }, [plannerHistory]);
+  }, [plannerHistory, today]);
 
   const categoryProgress = useMemo(() => {
     const groups = new Map<string, { attempted: number; correct: number }>();
@@ -345,7 +360,7 @@ export default function StudentDashboard() {
             />
           </label>
           <div className="topbar-actions">
-                    <span className="topbar-date" suppressHydrationWarning><CalendarDays size={15} />{today.toLocaleDateString("en", { weekday: "short", month: "short", day: "numeric" })}</span>
+                    <span className="topbar-date"><CalendarDays size={15} />{today?.toLocaleDateString("en", { weekday: "short", month: "short", day: "numeric" })}</span>
             <InstallAppButton />
             <div className="notification-wrap">
               <button
@@ -373,7 +388,7 @@ export default function StudentDashboard() {
               <section className="welcome-band">
                 <div className="welcome-copy">
                   <div className="eyebrow"><span className="eyebrow-dot" />MIZORAM PUBLIC SERVICE COMMISSION</div>
-                  <h1 suppressHydrationWarning>{getGreeting()},<br /><span>aspirant.</span></h1>
+                  <h1>{getGreeting(today)},<br /><span>aspirant.</span></h1>
                   <p>Every focused session brings the goal a little closer. Your next step is ready.</p>
                   <div className="welcome-actions">
                     <Link href="/mock-test" className="button button-dark"><Play size={16} fill="currentColor" /><span className="button-label-stack"><strong>Start MPSC practice</strong><small>Zir zui rawh · Go to practice</small></span></Link>
@@ -450,7 +465,7 @@ export default function StudentDashboard() {
             <>
               <div className="page-heading-row">
                 <div><span className="section-kicker">MPSC FREE MOCK · STUDENT SPACE</span><h1>{viewTitle}</h1><p>{viewDescription}</p></div>
-                <div className="page-date-chip"><CalendarDays size={16} /><span suppressHydrationWarning>{today.toLocaleDateString("en", { weekday: "long", month: "long", day: "numeric" })}</span></div>
+                <div className="page-date-chip"><CalendarDays size={16} /><span>{today?.toLocaleDateString("en", { weekday: "long", month: "long", day: "numeric" })}</span></div>
               </div>
 
               {view === "courses" && (
@@ -463,7 +478,7 @@ export default function StudentDashboard() {
               {view === "planner" && (
                 <section className="planner-view">
                   <div className="planner-main content-panel">
-                    <div className="panel-heading"><div><span className="section-kicker" suppressHydrationWarning>{today.toLocaleDateString("en", { weekday: "long" }).toUpperCase()} · YOUR STUDY SESSION</span><h2>Make today count</h2></div><span className="planner-count"><CheckCircle2 size={16} />{completedToday.length}/{tasks.length} done</span></div>
+                    <div className="panel-heading"><div><span className="section-kicker">{today?.toLocaleDateString("en", { weekday: "long" }).toUpperCase()} · YOUR STUDY SESSION</span><h2>Make today count</h2></div><span className="planner-count"><CheckCircle2 size={16} />{completedToday.length}/{tasks.length} done</span></div>
                     <div className="planner-list">
                       {tasks.map((task, index) => {
                         const Icon = task.icon;
@@ -526,7 +541,7 @@ function CourseCard({ course, compact = false }: { course: (typeof courses)[numb
 function WeekChart({ week }: { week: { key: string; label: string; completed: number; isToday: boolean }[] }) {
   return (
     <div className="week-chart" aria-label="Study planner completions during the last seven days">
-      {week.map((day) => <div className="week-day" key={day.key}><div className="week-bar-wrap"><span className={day.completed ? "week-bar has-activity" : "week-bar"} style={{ height: `${Math.max(day.completed ? 18 : 5, (day.completed / tasks.length) * 100)}%` }} title={`${day.completed} steps completed`} /></div><span suppressHydrationWarning className={day.isToday ? "week-label is-today" : "week-label"}>{day.label}</span></div>)}
+      {week.map((day) => <div className="week-day" key={day.key}><div className="week-bar-wrap"><span className={day.completed ? "week-bar has-activity" : "week-bar"} style={{ height: `${Math.max(day.completed ? 18 : 5, (day.completed / tasks.length) * 100)}%` }} title={`${day.completed} steps completed`} /></div><span className={day.isToday ? "week-label is-today" : "week-label"}>{day.label}</span></div>)}
     </div>
   );
 }
