@@ -11,7 +11,7 @@ test('each stream retains its published expansion quota', () => {
   for (const [stream, original] of Object.entries({mpsc: 29, neet: 9, jee: 9, 'cuet-pg': 24})) {
     const quota = Object.values(additionalQuotas[stream]).reduce((a, b) => a + b, 0);
     assert.equal(getReviewedQuestions(stream).length, original + quota, stream);
-    assert.equal(quota, stream === 'mpsc' ? 203 : 200);
+    assert.equal(quota, stream === 'mpsc' ? 221 : 200);
   }
 });
 

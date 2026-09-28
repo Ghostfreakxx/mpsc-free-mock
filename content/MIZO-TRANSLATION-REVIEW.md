@@ -2,7 +2,7 @@
 
 ## Scope
 
-2026-09-29: Draft bilingual support for all 232 active MPSC foundation questions.
+2026-09-29: Draft bilingual support for all 250 active MPSC foundation questions.
 This is not a translation of the archived question banks, NEET, JEE or CUET PG.
 No new questions or official past papers were added in this change.
 
