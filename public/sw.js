@@ -1,8 +1,9 @@
-const CACHE_NAME = "mpsc-free-mock-v8";
+const CACHE_NAME = "mpsc-free-mock-v9";
 
 const urlsToCache = [
   "/",
   "/mock-test",
+  "/mizo",
   "/college-notes",
   "/neet",
   "/jee",
