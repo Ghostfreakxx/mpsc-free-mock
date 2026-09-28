@@ -118,7 +118,7 @@ export const practiceExpansion = generated;
 
 // Counts refer to additions over the released 44-question foundation bank.
 export const additionalQuotas: Record<string, Record<string, number>> = {
-  mpsc: Object.fromEntries(["political-science", "mizoram", "economics", "english", "environmental-studies", "public-administration", "history", "geography", "education", "general-aptitude"].map(id => [id, 20])),
+  mpsc: Object.fromEntries(["political-science", "economics", "english", "environmental-studies", "public-administration", "history", "geography", "education", "general-aptitude"].map(id => [id, 20]).concat([["mizoram", 23]])),
   neet: { biology: 67, chemistry: 67, physics: 66 },
   jee: { physics: 66, chemistry: 67, mathematics: 67 },
   "cuet-pg": Object.fromEntries(["political-science", "economics", "sociology", "english", "history", "geography", "education", "general-aptitude"].map(id => [id, 25])),
