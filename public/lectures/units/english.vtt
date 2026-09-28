@@ -1,0 +1,325 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.724
+Welcome.
+
+00:00:01.724 --> 00:00:07.519
+Let us build your first physics toolkit, one step at a time.
+
+00:00:07.519 --> 00:00:12.406
+Imagine someone tells you that a classroom is five long.
+
+00:00:12.406 --> 00:00:14.308
+Five what?
+
+00:00:14.308 --> 00:00:18.674
+Metres, centimetres, or kilometres?
+
+00:00:18.674 --> 00:00:21.753
+The number alone is not enough.
+
+00:00:21.753 --> 00:00:26.487
+A measured physical quantity needs a number and a unit.
+
+00:00:26.487 --> 00:00:35.225
+Today we will learn how units work, how to convert them, and how dimensions help us catch mistakes.
+
+00:00:35.225 --> 00:00:41.161
+You only need multiplication, division, and simple powers.
+
+00:00:41.161 --> 00:00:46.671
+This is a foundation class, not the whole measurement chapter.
+
+00:00:46.671 --> 00:00:51.195
+The International System of Units is called S I.
+
+00:00:51.195 --> 00:01:00.300
+Its seven base units are the metre, kilogram, second, ampere, kelvin, mole, and candela.
+
+00:01:00.300 --> 00:01:09.592
+For today's mechanics examples, focus on length in metres, mass in kilograms, and time in seconds.
+
+00:01:09.592 --> 00:01:15.204
+Notice that the base unit of mass is the kilogram, not the gram.
+
+00:01:15.204 --> 00:01:17.554
+Symbols matter too.
+
+00:01:17.554 --> 00:01:23.617
+A small m means metre, while a capital M can be the prefix mega.
+
+00:01:23.617 --> 00:01:27.739
+Write the unit beside each number while you work.
+
+00:01:27.739 --> 00:01:32.323
+That small habit prevents many avoidable errors.
+
+00:01:32.323 --> 00:01:38.486
+Let us convert seventy two kilometres per hour into metres per second.
+
+00:01:38.486 --> 00:01:42.905
+One kilometre equals one thousand metres.
+
+00:01:42.905 --> 00:01:48.153
+One hour equals three thousand six hundred seconds.
+
+00:01:48.153 --> 00:01:57.090
+Multiply by one thousand metres per kilometre, then by one hour per three thousand six hundred seconds.
+
+00:01:57.090 --> 00:01:59.668
+Kilometres cancel.
+
+00:01:59.668 --> 00:02:01.803
+Hours cancel.
+
+00:02:01.803 --> 00:02:05.319
+What remains is metres per second.
+
+00:02:05.319 --> 00:02:12.742
+Seventy two times one thousand divided by three thousand six hundred gives twenty.
+
+00:02:12.742 --> 00:02:18.107
+Rather than memorising a trick first, check the cancellation.
+
+00:02:18.107 --> 00:02:25.025
+The familiar five over eighteen conversion factor is simply this ratio reduced.
+
+00:02:25.025 --> 00:02:27.592
+Here is a common trap.
+
+00:02:27.592 --> 00:02:31.819
+One centimetre is one hundredth of a metre.
+
+00:02:31.819 --> 00:02:37.887
+Does that mean one square centimetre is one hundredth of a square metre?
+
+00:02:37.887 --> 00:02:39.150
+No.
+
+00:02:39.150 --> 00:02:44.158
+A square has two lengths, and both must be converted.
+
+00:02:44.158 --> 00:02:50.069
+One hundredth multiplied by one hundredth is one ten thousandth.
+
+00:02:50.069 --> 00:02:56.301
+So one square centimetre is ten to the power minus four square metres.
+
+00:02:56.301 --> 00:03:01.145
+For volume, cube the conversion factor instead.
+
+00:03:01.145 --> 00:03:09.087
+Before calculating, ask yourself whether the quantity is a length, an area, or a volume.
+
+00:03:09.087 --> 00:03:12.592
+The exponent changes the answer.
+
+00:03:12.592 --> 00:03:16.222
+A unit tells us the measurement scale.
+
+00:03:16.222 --> 00:03:20.888
+A dimension tells us the physical kind of quantity.
+
+00:03:20.888 --> 00:03:26.765
+Metres and kilometres are different units, but both measure length.
+
+00:03:26.765 --> 00:03:34.615
+We write the dimension of length as capital L, mass as capital M, and time as capital T.
+
+00:03:34.615 --> 00:03:40.451
+Square brackets around a quantity mean the dimensions of that quantity.
+
+00:03:40.451 --> 00:03:45.632
+Be careful: capital M here does not mean metres.
+
+00:03:45.632 --> 00:03:50.616
+These are dimension symbols, not unit symbols.
+
+00:03:50.616 --> 00:03:56.006
+Keeping that distinction clear is the key to the next examples.
+
+00:03:56.006 --> 00:04:01.554
+Do not try to memorise every dimensional formula separately.
+
+00:04:01.554 --> 00:04:04.350
+Start with definitions.
+
+00:04:04.350 --> 00:04:14.766
+Velocity is displacement divided by time, so its dimension is L divided by T, written L T to the power minus one.
+
+00:04:14.766 --> 00:04:22.518
+Acceleration is change in velocity divided by time, giving L T to the power minus two.
+
+00:04:22.518 --> 00:04:27.127
+Now use force equals mass times acceleration.
+
+00:04:27.127 --> 00:04:34.134
+Multiply by M, and force has dimensions M L T to the power minus two.
+
+00:04:34.134 --> 00:04:41.002
+In SI units that is kilogram metre per second squared, also called the newton.
+
+00:04:41.002 --> 00:04:44.759
+Each step follows from the previous one.
+
+00:04:44.759 --> 00:04:47.159
+Try pressure with me.
+
+00:04:47.159 --> 00:04:51.843
+Pressure is perpendicular force divided by area.
+
+00:04:51.843 --> 00:04:55.457
+We already know the dimension of force.
+
+00:04:55.457 --> 00:04:58.918
+Area has dimension L squared.
+
+00:04:58.918 --> 00:05:04.881
+When dividing powers of the same base, subtract the exponents.
+
+00:05:04.881 --> 00:05:08.352
+One minus two is minus one.
+
+00:05:08.352 --> 00:05:15.899
+Therefore pressure has dimensions M L to the power minus one T to the power minus two.
+
+00:05:15.899 --> 00:05:18.922
+Its SI unit is the pascal.
+
+00:05:18.922 --> 00:05:25.732
+Think about pressing the same force over a smaller area: the pressure increases.
+
+00:05:25.732 --> 00:05:30.961
+That physical picture agrees with area being in the denominator.
+
+00:05:30.961 --> 00:05:35.150
+A good solution connects the algebra to the meaning.
+
+00:05:35.150 --> 00:05:40.451
+An equation can only add quantities with matching dimensions.
+
+00:05:40.451 --> 00:05:50.063
+Consider displacement equals initial velocity times time, plus one half acceleration times time squared.
+
+00:05:50.063 --> 00:05:53.586
+The left side has dimension L.
+
+00:05:53.586 --> 00:05:58.183
+Velocity times time also has dimension L.
+
+00:05:58.183 --> 00:06:03.359
+Acceleration times time squared has dimension L too.
+
+00:06:03.359 --> 00:06:06.644
+The one half is dimensionless.
+
+00:06:06.644 --> 00:06:11.026
+So the equation passes the dimensional check.
+
+00:06:11.026 --> 00:06:21.617
+If somebody accidentally writes acceleration times time instead, that term has the dimension of velocity, not displacement.
+
+00:06:21.617 --> 00:06:28.095
+We can reject that version immediately, without substituting any numbers.
+
+00:06:28.095 --> 00:06:30.941
+Now an important warning.
+
+00:06:30.941 --> 00:06:37.330
+Passing a dimensional check does not prove an equation is physically correct.
+
+00:06:37.330 --> 00:06:47.881
+If we remove the one half from our constant acceleration equation, the dimensions still match, but the equation is generally wrong.
+
+00:06:47.881 --> 00:06:53.324
+Dimensional analysis cannot determine that numerical factor.
+
+00:06:53.324 --> 00:07:01.091
+Also, work and torque share the same dimensions, yet they are different physical quantities.
+
+00:07:01.091 --> 00:07:07.284
+Treat dimensions as a powerful error detector, not a complete proof.
+
+00:07:07.284 --> 00:07:15.074
+This is exactly the kind of distinction that helps with conceptual multiple choice questions.
+
+00:07:15.074 --> 00:07:19.900
+Let us use dimensions to discover a relationship.
+
+00:07:19.900 --> 00:07:28.486
+Suppose a pendulum period depends only on its length and gravitational acceleration, through a power law.
+
+00:07:28.486 --> 00:07:35.107
+Use tau for the period so we do not confuse it with the dimension symbol T.
+
+00:07:35.107 --> 00:07:41.191
+Write tau proportional to length to the power a times gravity to the power b.
+
+00:07:41.191 --> 00:07:48.545
+Matching time powers gives one equals minus two b, so b is minus one half.
+
+00:07:48.545 --> 00:07:54.942
+Matching length powers gives zero equals a plus b, so a is one half.
+
+00:07:54.942 --> 00:08:01.825
+The period is a dimensionless constant times the square root of length over gravity.
+
+00:08:01.825 --> 00:08:06.312
+Dimensions alone cannot find that constant.
+
+00:08:06.312 --> 00:08:13.009
+For an ideal simple pendulum at small angles, other physics gives two pi.
+
+00:08:13.009 --> 00:08:16.692
+Pause the class and try this yourself.
+
+00:08:16.692 --> 00:08:23.595
+An ideal simple pendulum has its length increased to four times the original length.
+
+00:08:23.595 --> 00:08:30.062
+Gravity stays the same, and the small angle approximation remains valid.
+
+00:08:30.062 --> 00:08:33.139
+How does the period change?
+
+00:08:33.139 --> 00:08:38.389
+When you are ready, compare the new period with the old one.
+
+00:08:38.389 --> 00:08:41.938
+The constant and gravity cancel.
+
+00:08:41.938 --> 00:08:46.445
+The ratio is the square root of four, which is two.
+
+00:08:46.445 --> 00:08:49.017
+The period doubles.
+
+00:08:49.017 --> 00:08:58.561
+It does not become four times as large, because period depends on the square root of length, not directly on length.
+
+00:08:58.561 --> 00:09:02.847
+Here is your routine for the next practice set.
+
+00:09:02.847 --> 00:09:07.002
+First identify what the question asks.
+
+00:09:07.002 --> 00:09:12.085
+Second, put the measurements into compatible units.
+
+00:09:12.085 --> 00:09:19.167
+Third, derive the required dimension from a definition or equation you understand.
+
+00:09:19.167 --> 00:09:24.587
+Finally, check both the dimensions and the size of your answer.
+
+00:09:24.587 --> 00:09:31.450
+If a classroom length comes out smaller than an atom, stop and check the conversion.
+
+00:09:31.450 --> 00:09:37.619
+You have now learned a compact toolkit that will return throughout mechanics.
+
+00:09:37.619 --> 00:09:41.998
+Complete the three checks below before moving on.
+
+00:09:41.998 --> 00:09:52.716
+Significant figures, measurement uncertainty, and measuring instruments need their own later lessons; they are not covered in this class.
