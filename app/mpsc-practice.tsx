@@ -1,6 +1,6 @@
 "use client";
 import { getReviewedQuestions } from "./data/reviewed-content";
-import { getMizoTranslation, mizoCategories, mizoReferences, mizoTranslationStatus } from "./data/mizo-translations";
+import { getMizoTranslation, mizoCategories, mizoEnglishGlossary, mizoReferences, mizoTranslationStatus } from "./data/mizo-translations";
 import QuestionSource from "./question-source";
 
 
@@ -267,6 +267,7 @@ return (
         </section>
 
         {bilingual && <details className="translation-references"><summary>Translation references and review status</summary><p>AI-assisted draft translations, not official MPSC translations. Technical names, dates, units and English grammar test sentences are retained. Your supplied Mizo grammar books and SCERT materials informed the language reference work; the scans contain OCR errors. A fluent-speaker review is still needed.</p><ul>{mizoReferences.map(reference => <li key={reference.url}><a href={reference.url} target="_blank" rel="noreferrer">{reference.title}</a></li>)}</ul><p>Question sources remain attached to each explanation. These references do not certify the translations.</p></details>}
+        {bilingual && <section className="mizo-glossary" aria-labelledby="mizo-glossary-heading"><div className="practice-section-heading"><div><span className="section-kicker">LANGUAGE SUPPORT</span><h2 id="mizo-glossary-heading">Mizo-English glossary</h2></div><span>{mizoEnglishGlossary.length} terms</span></div><p>Meanings are provided for study support. Context-sensitive entries must be checked before they are treated as final.</p><div className="mizo-glossary-grid">{mizoEnglishGlossary.map(([mizo, english, note]) => <div className="mizo-glossary-row" key={mizo}><strong lang="lus">{mizo}</strong><span lang="en">{english}</span><small>{note}</small></div>)}</div></section>}
         <footer className="academy-footer"><span>Open learning for every MPSC aspirant.</span><span>Progress and practice are saved on this device.</span></footer>
       </section>
     </div>

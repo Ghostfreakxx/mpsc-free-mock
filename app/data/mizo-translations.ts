@@ -8,6 +8,29 @@ export const mizoReferences = [
   { title: "Government of Mizoram: historical timeline", url: "https://eram.mizoram.gov.in/pages/about-us" },
 ];
 
+export const mizoEnglishGlossary = [
+  ["zirtirtu", "teacher", "verified from supplied phrase list"],
+  ["zirlaite", "learners / students", "draft; confirm preferred exam wording"],
+  ["khua leh tui", "citizens / people of the state", "draft; context-sensitive"],
+  ["sawrkar", "government", "draft; confirm register"],
+  ["rawngbawlna", "service", "draft; used in Citizen's Charter context"],
+  ["sawiselna", "complaint / grievance", "draft; context-sensitive"],
+  ["chinfelna", "redress / resolution", "draft; context-sensitive"],
+  ["Danpui", "Constitution", "draft; constitutional context"],
+  ["dikna", "right", "draft; confirm plural and legal usage"],
+  ["thutiam", "commitment / promise", "draft; context-sensitive"],
+  ["hriatthiamna", "understanding", "draft"],
+  ["tehna", "assessment / measurement", "draft; context-sensitive"],
+  ["ngaihtuahna", "thinking / reasoning", "draft; context-sensitive"],
+  ["humhalhna", "protection", "draft"],
+  ["inremna", "agreement / settlement", "draft; context-sensitive"],
+  ["ram", "domain / land area", "official Mizoram history context"],
+  ["puitling", "full / mature / adult", "context-sensitive; do not translate mechanically"],
+  ["naupang", "child / children", "verified from supplied phrase list"],
+  ["mipui", "public / people", "draft; context-sensitive"],
+  ["hriattirna", "information / notification", "draft; context-sensitive"],
+] as const;
+
 export type MizoTranslation = {
   question: string;
   options: string[];
