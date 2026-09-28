@@ -373,7 +373,7 @@ export default function StudentDashboard() {
               <section className="welcome-band">
                 <div className="welcome-copy">
                   <div className="eyebrow"><span className="eyebrow-dot" />MIZORAM PUBLIC SERVICE COMMISSION</div>
-                  <h1>{getGreeting()},<br /><span>aspirant.</span></h1>
+                  <h1 suppressHydrationWarning>{getGreeting()},<br /><span>aspirant.</span></h1>
                   <p>Every focused session brings the goal a little closer. Your next step is ready.</p>
                   <div className="welcome-actions">
                     <Link href="/mock-test" className="button button-dark"><Play size={16} fill="currentColor" /><span className="button-label-stack"><strong>Start MPSC practice</strong><small>Zir zui rawh · Go to practice</small></span></Link>
@@ -526,7 +526,7 @@ function CourseCard({ course, compact = false }: { course: (typeof courses)[numb
 function WeekChart({ week }: { week: { key: string; label: string; completed: number; isToday: boolean }[] }) {
   return (
     <div className="week-chart" aria-label="Study planner completions during the last seven days">
-      {week.map((day) => <div className="week-day" key={day.key}><div className="week-bar-wrap"><span className={day.completed ? "week-bar has-activity" : "week-bar"} style={{ height: `${Math.max(day.completed ? 18 : 5, (day.completed / tasks.length) * 100)}%` }} title={`${day.completed} steps completed`} /></div><span className={day.isToday ? "week-label is-today" : "week-label"}>{day.label}</span></div>)}
+      {week.map((day) => <div className="week-day" key={day.key}><div className="week-bar-wrap"><span className={day.completed ? "week-bar has-activity" : "week-bar"} style={{ height: `${Math.max(day.completed ? 18 : 5, (day.completed / tasks.length) * 100)}%` }} title={`${day.completed} steps completed`} /></div><span suppressHydrationWarning className={day.isToday ? "week-label is-today" : "week-label"}>{day.label}</span></div>)}
     </div>
   );
 }
