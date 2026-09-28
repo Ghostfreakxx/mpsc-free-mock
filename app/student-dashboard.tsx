@@ -23,6 +23,7 @@ import {
   Compass,
   GraduationCap,
   LayoutDashboard,
+  Languages,
   LibraryBig,
   ListChecks,
   MapPin,
@@ -68,6 +69,15 @@ const courses: {
     format: "Practice bank",
   },
   {
+    title: "MPSC: Mizo + English",
+    subject: "Civil services",
+    description: "Draft Mizo translations alongside the original English questions.",
+    href: "/mizo",
+    icon: Languages,
+    theme: "blue",
+    format: "Bilingual practice",
+  },
+  {
     title: "Arts college notes",
     subject: "Arts and humanities",
     description: "Open your college reading and revision material in one place.",
@@ -105,10 +115,11 @@ const courses: {
   },
 ];
 
-const mainNavigation: { id: View | "practice" | "downloads"; label: string; icon: LucideIcon; href?: string }[] = [
+const mainNavigation: { id: View | "practice" | "mizo" | "downloads"; label: string; icon: LucideIcon; href?: string }[] = [
   { id: "overview", label: "Overview", icon: LayoutDashboard },
   { id: "courses", label: "My learning", icon: LibraryBig },
   { id: "practice", label: "Practice tests", icon: ClipboardCheck, href: "/mock-test" },
+  { id: "mizo", label: "Mizo + English", icon: Languages, href: "/mizo" },
   { id: "downloads", label: "Download notes", icon: BookMarked, href: "/downloads" },
   { id: "planner", label: "Study planner", icon: ListChecks },
   { id: "progress", label: "My progress", icon: TrendingUp },

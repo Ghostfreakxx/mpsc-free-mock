@@ -573,3 +573,17 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
 .download-topic h3 { font-size: 17px; margin-bottom: 8px; }
 .download-topic a { display: inline-block; margin-top: 8px; font-size: 13px; overflow-wrap: anywhere; }
 @media (max-width: 600px) { .download-library { padding: 18px 18px 36px; } .download-heading h1 { font-size: 28px; } .download-entry-heading { flex-direction: column; gap: 14px; } .download-topbar > span { max-width: 100px; text-align: right; } .download-controls > label { max-width: 100%; } }
+/* Bilingual practice keeps canonical English visible beside the draft. */
+.practice-language-switch { display: flex; flex-wrap: wrap; gap: 0; border-bottom: 1px solid #d5dfdc; margin: 20px 0; }
+.practice-language-switch a { display: inline-flex; align-items: center; gap: 8px; padding: 12px 16px; border-bottom: 3px solid transparent; color: #43544c; font-size: 14px; }
+.practice-language-switch a[aria-current="page"] { border-bottom-color: #267458; color: #20593f; font-weight: 700; }
+.translation-status { display: flex; flex-wrap: wrap; gap: 8px 20px; padding: 12px 0; color: #73531b; font-size: 13px; line-height: 1.6; }
+.practice-english-question { margin: 12px 0 24px; color: #52615d; font-size: 16px; line-height: 1.7; overflow-wrap: anywhere; }
+.bilingual-option-copy { display: flex; flex-direction: column; gap: 6px; min-width: 0; line-height: 1.6; overflow-wrap: anywhere; }
+.bilingual-option-copy small { font-size: 13px; color: #52615d; }
+.practice-category-button small { display: block; font-size: 11px; font-weight: 400; margin-top: 4px; }
+.mizo-explanation { font-weight: 500; line-height: 1.8; }
+.translation-references { margin: 24px 0; border-top: 1px solid #d5dfdc; padding-top: 16px; color: #52615d; font-size: 13px; line-height: 1.8; overflow-wrap: anywhere; }
+.translation-references summary { cursor: pointer; color: #263c31; font-weight: 600; }
+.translation-references p, .translation-references ul { margin-top: 12px; }
+.translation-references a { text-decoration: underline; }
