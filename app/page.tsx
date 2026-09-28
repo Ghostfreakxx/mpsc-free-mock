@@ -198,7 +198,7 @@ return (
 
             <button
               onClick={() => toggleBookmark(APP_ID, currentKey)}
-              className={`text-xl ${isBookmarked ? "text-yellow-300" : "text-slate-500 hover:text-yellow-300"}`}
+              className={`-m-2 rounded-full p-2 text-xl ${isBookmarked ? "text-yellow-300" : "text-slate-500 hover:text-yellow-300"}`}
               aria-label="Toggle bookmark"
             >
               {isBookmarked ? "★" : "☆"}
