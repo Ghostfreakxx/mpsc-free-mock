@@ -60,6 +60,15 @@ const courses: {
   format: string;
 }[] = [
   {
+    title: "JEE Physics class",
+    subject: "Engineering entrance",
+    description: "Units and dimensions: a recorded English foundation lesson with worked examples.",
+    href: "/jee/classes",
+    icon: Play,
+    theme: "green",
+    format: "Recorded class",
+  },
+  {
     title: "MPSC preparation",
     subject: "Civil services",
     description: "Subject-wise questions, explanations and elimination hints for your MPSC preparation.",

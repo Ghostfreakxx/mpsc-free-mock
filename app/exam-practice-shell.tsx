@@ -54,6 +54,7 @@ const navigation = [
   { href: "/mock-test", label: "MPSC practice", icon: ClipboardCheck },
   { href: "/neet", label: "NEET practice", icon: BookOpen },
   { href: "/jee", label: "JEE Main practice", icon: Atom },
+  { href: "/jee/classes", label: "JEE Physics class", icon: BookOpen },
   { href: "/cuet-pg", label: "CUET PG practice", icon: GraduationCap },
   { href: "/college-notes", label: "College notes", icon: BookMarked },
   { href: "/downloads", label: "Download notes", icon: BookMarked },
@@ -137,6 +138,7 @@ export default function ExamPracticeShell({
             <div className="metric-item"><span className="metric-icon metric-coral"><ClipboardCheck size={18} /></span><div><span className="metric-label">SPACED REVIEWS</span><strong>{summary?.reviewsPending ?? 0}</strong><span className="metric-note">missed answers to revisit</span></div></div>
           </section>
           <p className="content-review-notice">Source-checked foundation practice. Original questions, not official PYQs or a complete syllabus.</p>
+          {activeRoute === "/jee" && <Link href="/jee/classes" className="button button-outline">Units and dimensions: recorded class <ArrowUpRight size={15} /></Link>}
 
           <section className="practice-category-panel exam-filter-panel" aria-label="Filter questions">
             <div className="practice-section-heading"><div><span className="section-kicker">FOCUS YOUR SESSION</span><h2>Choose {filters.length > 1 ? "subject and topic" : "subject"}</h2></div><span>{totalQuestions.toLocaleString()} questions</span></div>

@@ -1,0 +1,169 @@
+{
+  "title": "Units and dimensions",
+  "version": 1,
+  "voice": "Microsoft Hazel Desktop",
+  "sources": [
+    {
+      "title": "BIPM: SI base units",
+      "url": "https://www.bipm.org/en/measurement-units/si-base-units"
+    },
+    {
+      "title": "OpenStax: Physical quantities and units",
+      "url": "https://openstax.org/books/college-physics-2e/pages/1-2-physical-quantities-and-units"
+    }
+  ],
+  "segments": [
+    {
+      "title": "A number needs a unit",
+      "formula": "Distance = number × unit",
+      "steps": [
+        "5 m and 5 km describe different distances.",
+        "A physical quantity includes a numerical value and a unit.",
+        "Our goal: convert units, derive dimensions, and test equations."
+      ],
+      "english": "Welcome. Let us build your first physics toolkit, one step at a time. Imagine someone tells you that a classroom is five long. Five what? Metres, centimetres, or kilometres? The number alone is not enough. A measured physical quantity needs a number and a unit. Today we will learn how units work, how to convert them, and how dimensions help us catch mistakes. You only need multiplication, division, and simple powers. This is a foundation class, not the whole measurement chapter."
+    },
+    {
+      "title": "The SI starting point",
+      "formula": "Length → m   Mass → kg   Time → s",
+      "steps": [
+        "Other base units: A, K, mol, cd.",
+        "Symbols are case-sensitive: m is not M.",
+        "Mass uses kilogram, not gram, as its SI base unit."
+      ],
+      "english": "The International System of Units is called S I. Its seven base units are the metre, kilogram, second, ampere, kelvin, mole, and candela. For today's mechanics examples, focus on length in metres, mass in kilograms, and time in seconds. Notice that the base unit of mass is the kilogram, not the gram. Symbols matter too. A small m means metre, while a capital M can be the prefix mega. Write the unit beside each number while you work. That small habit prevents many avoidable errors."
+    },
+    {
+      "title": "Convert without guessing",
+      "formula": "72 km/h × (1000 m / 1 km) × (1 h / 3600 s) = 20 m/s",
+      "steps": [
+        "1 km = 1000 m; 1 h = 3600 s.",
+        "Arrange conversion factors so unwanted units cancel.",
+        "72 × 5/18 = 20. Reverse conversion uses 18/5."
+      ],
+      "english": "Let us convert seventy two kilometres per hour into metres per second. One kilometre equals one thousand metres. One hour equals three thousand six hundred seconds. Multiply by one thousand metres per kilometre, then by one hour per three thousand six hundred seconds. Kilometres cancel. Hours cancel. What remains is metres per second. Seventy two times one thousand divided by three thousand six hundred gives twenty. Rather than memorising a trick first, check the cancellation. The familiar five over eighteen conversion factor is simply this ratio reduced."
+    },
+    {
+      "title": "Area changes the conversion",
+      "formula": "1 cm² = (0.01 m)² = 0.0001 m²",
+      "steps": [
+        "Length conversion: 1 cm = 10⁻² m.",
+        "Area conversion: square the entire factor.",
+        "Volume conversion: 1 cm³ = 10⁻⁶ m³."
+      ],
+      "english": "Here is a common trap. One centimetre is one hundredth of a metre. Does that mean one square centimetre is one hundredth of a square metre? No. A square has two lengths, and both must be converted. One hundredth multiplied by one hundredth is one ten thousandth. So one square centimetre is ten to the power minus four square metres. For volume, cube the conversion factor instead. Before calculating, ask yourself whether the quantity is a length, an area, or a volume. The exponent changes the answer."
+    },
+    {
+      "title": "Unit versus dimension",
+      "formula": "[length] = L    [mass] = M    [time] = T",
+      "steps": [
+        "Metre and kilometre are different units of the same dimension.",
+        "Square brackets mean: dimensions of this quantity.",
+        "M, L and T here are dimension symbols, not unit symbols."
+      ],
+      "english": "A unit tells us the measurement scale. A dimension tells us the physical kind of quantity. Metres and kilometres are different units, but both measure length. We write the dimension of length as capital L, mass as capital M, and time as capital T. Square brackets around a quantity mean the dimensions of that quantity. Be careful: capital M here does not mean metres. These are dimension symbols, not unit symbols. Keeping that distinction clear is the key to the next examples."
+    },
+    {
+      "title": "Build dimensions from definitions",
+      "formula": "[v] = LT⁻¹   [a] = LT⁻²   [F] = MLT⁻²",
+      "steps": [
+        "Velocity: displacement / time.",
+        "Acceleration: change in velocity / time.",
+        "Force: mass × acceleration."
+      ],
+      "english": "Do not try to memorise every dimensional formula separately. Start with definitions. Velocity is displacement divided by time, so its dimension is L divided by T, written L T to the power minus one. Acceleration is change in velocity divided by time, giving L T to the power minus two. Now use force equals mass times acceleration. Multiply by M, and force has dimensions M L T to the power minus two. In SI units that is kilogram metre per second squared, also called the newton. Each step follows from the previous one."
+    },
+    {
+      "title": "Worked example: pressure",
+      "formula": "[p] = [F]/[A] = MLT⁻²/L² = ML⁻¹T⁻²",
+      "steps": [
+        "Pressure = perpendicular force / area.",
+        "Subtract powers when dividing: L¹ / L² = L⁻¹.",
+        "SI unit: pascal (Pa) = kg m⁻¹ s⁻²."
+      ],
+      "english": "Try pressure with me. Pressure is perpendicular force divided by area. We already know the dimension of force. Area has dimension L squared. When dividing powers of the same base, subtract the exponents. One minus two is minus one. Therefore pressure has dimensions M L to the power minus one T to the power minus two. Its SI unit is the pascal. Think about pressing the same force over a smaller area: the pressure increases. That physical picture agrees with area being in the denominator. A good solution connects the algebra to the meaning."
+    },
+    {
+      "title": "An equation must balance",
+      "formula": "s = ut + ½at²",
+      "steps": [
+        "[s] = L",
+        "[ut] = (LT⁻¹)(T) = L",
+        "[at²] = (LT⁻²)(T²) = L"
+      ],
+      "english": "An equation can only add quantities with matching dimensions. Consider displacement equals initial velocity times time, plus one half acceleration times time squared. The left side has dimension L. Velocity times time also has dimension L. Acceleration times time squared has dimension L too. The one half is dimensionless. So the equation passes the dimensional check. If somebody accidentally writes acceleration times time instead, that term has the dimension of velocity, not displacement. We can reject that version immediately, without substituting any numbers."
+    },
+    {
+      "title": "What dimensions cannot prove",
+      "formula": "s = ut + at²  also has matching dimensions",
+      "steps": [
+        "Matching dimensions are necessary, not sufficient.",
+        "Dimensionless numerical factors cannot be found this way.",
+        "Work and torque share ML²T⁻² but are different quantities."
+      ],
+      "english": "Now an important warning. Passing a dimensional check does not prove an equation is physically correct. If we remove the one half from our constant acceleration equation, the dimensions still match, but the equation is generally wrong. Dimensional analysis cannot determine that numerical factor. Also, work and torque share the same dimensions, yet they are different physical quantities. Treat dimensions as a powerful error detector, not a complete proof. This is exactly the kind of distinction that helps with conceptual multiple choice questions."
+    },
+    {
+      "title": "Worked example: a pendulum",
+      "formula": "τ ∝ lᵃgᵇ → T = Lᵃ(LT⁻²)ᵇ",
+      "steps": [
+        "Time powers: 1 = −2b, so b = −½.",
+        "Length powers: 0 = a + b, so a = ½.",
+        "τ = C√(l/g); dimensions cannot determine C."
+      ],
+      "english": "Let us use dimensions to discover a relationship. Suppose a pendulum period depends only on its length and gravitational acceleration, through a power law. Use tau for the period so we do not confuse it with the dimension symbol T. Write tau proportional to length to the power a times gravity to the power b. Matching time powers gives one equals minus two b, so b is minus one half. Matching length powers gives zero equals a plus b, so a is one half. The period is a dimensionless constant times the square root of length over gravity. Dimensions alone cannot find that constant. For an ideal simple pendulum at small angles, other physics gives two pi."
+    },
+    {
+      "title": "Pause and solve",
+      "formula": "If l becomes 4l, what happens to τ?",
+      "steps": [
+        "Keep g and the small-angle approximation unchanged.",
+        "τ₂/τ₁ = √(4l/l)",
+        "Answer: 2. The period doubles, not quadruples."
+      ],
+      "english": "Pause the class and try this yourself. An ideal simple pendulum has its length increased to four times the original length. Gravity stays the same, and the small angle approximation remains valid. How does the period change? When you are ready, compare the new period with the old one. The constant and gravity cancel. The ratio is the square root of four, which is two. The period doubles. It does not become four times as large, because period depends on the square root of length, not directly on length."
+    },
+    {
+      "title": "Your problem-solving routine",
+      "formula": "Identify → Convert → Derive → Check",
+      "steps": [
+        "Identify the quantity and its definition.",
+        "Convert units before substituting numerical values.",
+        "Check dimensions and whether the size of the answer makes sense."
+      ],
+      "english": "Here is your routine for the next practice set. First identify what the question asks. Second, put the measurements into compatible units. Third, derive the required dimension from a definition or equation you understand. Finally, check both the dimensions and the size of your answer. If a classroom length comes out smaller than an atom, stop and check the conversion. You have now learned a compact toolkit that will return throughout mechanics. Complete the three checks below before moving on. Significant figures, measurement uncertainty, and measuring instruments need their own later lessons; they are not covered in this class."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Convert 36 km/h to m/s.",
+      "options": [
+        "10 m/s",
+        "36 m/s",
+        "129.6 m/s"
+      ],
+      "answer": 0,
+      "explanation": "36 × 1000/3600 = 10 m/s. The kilometre and hour units cancel."
+    },
+    {
+      "question": "What are the dimensions of work (force × displacement)?",
+      "options": [
+        "MLT⁻²",
+        "ML²T⁻²",
+        "ML⁻¹T⁻²"
+      ],
+      "answer": 1,
+      "explanation": "Multiply MLT⁻² by L to obtain ML²T⁻²."
+    },
+    {
+      "question": "An equation is dimensionally consistent. What can we conclude?",
+      "options": [
+        "It is always physically correct.",
+        "All numerical factors are correct.",
+        "It passes one necessary check, but may still be wrong."
+      ],
+      "answer": 2,
+      "explanation": "Dimensional consistency cannot establish numerical constants or the full physical relationship."
+    }
+  ]
+}
