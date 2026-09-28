@@ -345,7 +345,7 @@ export default function StudentDashboard() {
             />
           </label>
           <div className="topbar-actions">
-            <span className="topbar-date"><CalendarDays size={15} />{today.toLocaleDateString("en", { weekday: "short", month: "short", day: "numeric" })}</span>
+                    <span className="topbar-date" suppressHydrationWarning><CalendarDays size={15} />{today.toLocaleDateString("en", { weekday: "short", month: "short", day: "numeric" })}</span>
             <InstallAppButton />
             <div className="notification-wrap">
               <button
@@ -450,7 +450,7 @@ export default function StudentDashboard() {
             <>
               <div className="page-heading-row">
                 <div><span className="section-kicker">MPSC FREE MOCK · STUDENT SPACE</span><h1>{viewTitle}</h1><p>{viewDescription}</p></div>
-                <div className="page-date-chip"><CalendarDays size={16} /><span>{today.toLocaleDateString("en", { weekday: "long", month: "long", day: "numeric" })}</span></div>
+                <div className="page-date-chip"><CalendarDays size={16} /><span suppressHydrationWarning>{today.toLocaleDateString("en", { weekday: "long", month: "long", day: "numeric" })}</span></div>
               </div>
 
               {view === "courses" && (
@@ -463,7 +463,7 @@ export default function StudentDashboard() {
               {view === "planner" && (
                 <section className="planner-view">
                   <div className="planner-main content-panel">
-                    <div className="panel-heading"><div><span className="section-kicker">{today.toLocaleDateString("en", { weekday: "long" }).toUpperCase()} · YOUR STUDY SESSION</span><h2>Make today count</h2></div><span className="planner-count"><CheckCircle2 size={16} />{completedToday.length}/{tasks.length} done</span></div>
+                    <div className="panel-heading"><div><span className="section-kicker" suppressHydrationWarning>{today.toLocaleDateString("en", { weekday: "long" }).toUpperCase()} · YOUR STUDY SESSION</span><h2>Make today count</h2></div><span className="planner-count"><CheckCircle2 size={16} />{completedToday.length}/{tasks.length} done</span></div>
                     <div className="planner-list">
                       {tasks.map((task, index) => {
                         const Icon = task.icon;
