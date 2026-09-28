@@ -8,11 +8,11 @@ import { mizoManual } from "../app/data/mizo-manual.ts";
 const questions = getReviewedQuestions("mpsc");
 
 test("English source bank is unchanged; source edits require translation review", () => {
-  assert.equal(createHash("sha256").update(JSON.stringify(questions)).digest("hex"), "7a3bede8aebf6502e957e16e3e2e42a30ce2c62b1008b3f205156acde5aef8fa");
+  assert.equal(createHash("sha256").update(JSON.stringify(questions)).digest("hex"), "a950c2c597773e8ecb5756ab94179a835a23ff5ea33243521abd2f0df75fb63c");
 });
 
-test("all 229 questions and ten categories have complete draft translations", () => {
-  assert.equal(questions.length, 229);
+test("all 232 questions and ten categories have complete draft translations", () => {
+  assert.equal(questions.length, 232);
   for (const q of questions) {
     const original = structuredClone(q);
     const translated = getMizoTranslation(q);

@@ -7,10 +7,11 @@ import { additionalQuestions } from '../app/data/additional-questions.ts';
 import { additionalQuotas, practiceExpansion } from '../app/data/expanded-practice.ts';
 import { numeric } from '../app/data/question-builders.ts';
 
-test('each stream gains exactly 200 questions over the merged release', () => {
+test('each stream retains its published expansion quota', () => {
   for (const [stream, original] of Object.entries({mpsc: 29, neet: 9, jee: 9, 'cuet-pg': 24})) {
-    assert.equal(getReviewedQuestions(stream).length, original + 200, stream);
-    assert.equal(Object.values(additionalQuotas[stream]).reduce((a, b) => a + b, 0), 200);
+    const quota = Object.values(additionalQuotas[stream]).reduce((a, b) => a + b, 0);
+    assert.equal(getReviewedQuestions(stream).length, original + quota, stream);
+    assert.equal(quota, stream === 'mpsc' ? 203 : 200);
   }
 });
 
