@@ -33,7 +33,7 @@ const environmentFacts: Fact[] = [
 generated["environmental-studies"] = conceptPractice("Ozone agreements", environmentFacts);
 
 generated.geography = [];
-for (let i = 0; i < 11; i++) {
+for (let i = 0; i < 71; i++) {
   const north = 8 + i * 2, south = 5 + i;
   generated.geography.push(numeric(`Two locations are at ${north} degrees N and ${south} degrees S. Their difference in latitude is:`, north + south, " degrees", `The points are on opposite sides of the equator, so add ${north} and ${south}.`, "What is latitude?: north/south coordinates", i));
   generated.geography.push(numeric(`A location moves from ${north} degrees N to ${north + south} degrees N along a meridian. Its change in latitude is:`, south, " degrees", `Both coordinates are north: ${north + south} - ${north} = ${south} degrees.`, "What is latitude?: degrees of latitude", i + 1));
@@ -55,14 +55,14 @@ const englishSentences: [string, boolean][] = [
 generated.english = englishSentences.map(([sentence, singular], index) => question(`Complete in the simple present: '${sentence}'`, singular ? "is" : "are", singular ? ["are", "am", "be"] : ["is", "am", "be"], `The grammatical subject is ${singular ? "singular" : "plural"}; use '${singular ? "is" : "are"}'. Intervening phrases do not change subject number.`, "Purdue OWL: subject-verb agreement; original sentence variant", index));
 
 generated.economics = [];
-for (let i = 0; i < 11; i++) {
+for (let i = 0; i < 71; i++) {
   const supply = 130 + i * 15, demand = 80 + i * 9;
   generated.economics.push(numeric(`At price P, quantity supplied is ${supply} units and quantity demanded is ${demand} units. What is the surplus?`, supply - demand, " units", `Surplus = supply - demand = ${supply} - ${demand} = ${supply - demand}.`, "Section 3.1: surplus", i));
   generated.economics.push(numeric(`At price Q, buyers demand ${supply + 7} units and sellers offer ${demand + 3} units. What is the shortage?`, supply - demand + 4, " units", `Shortage = demand - supply = ${supply + 7} - ${demand + 3} = ${supply - demand + 4}.`, "Section 3.1: shortage", i + 1));
 }
 
 generated["general-aptitude"] = [];
-for (let i = 0; i < 11; i++) {
+for (let i = 0; i < 16; i++) {
   const length = 13 + i, width = 4 + i;
   generated["general-aptitude"].push(numeric(`A rectangle is ${length} cm long and ${width} cm wide. What is its perimeter?`, 2 * (length + width), " cm", `P = 2(l + w) = 2(${length} + ${width}) = ${2 * (length + width)} cm.`, "Section 2.5: geometric applications", i));
   generated["general-aptitude"].push(numeric(`A rectangle has area ${length * width} cm^2 and length ${length} cm. Find its width.`, width, " cm", `Width = area / length = ${length * width}/${length} = ${width} cm.`, "Section 2.5: geometric applications", i + 1));
@@ -118,7 +118,7 @@ export const practiceExpansion = generated;
 
 // Counts refer to additions over the released 44-question foundation bank.
 export const additionalQuotas: Record<string, Record<string, number>> = {
-  mpsc: Object.fromEntries(["political-science", "economics", "english", "history", "geography", "education", "general-aptitude"].map(id => [id, 22]).concat([["environmental-studies", 21], ["public-administration", 21], ["mizoram", 25]])),
+  mpsc: Object.fromEntries(["political-science", "english", "history", "education"].map(id => [id, 22]).concat([["economics", 142], ["geography", 142], ["general-aptitude", 32], ["environmental-studies", 21], ["public-administration", 21], ["mizoram", 25]])),
   neet: { biology: 67, chemistry: 67, physics: 66 },
   jee: { physics: 66, chemistry: 67, mathematics: 67 },
   "cuet-pg": Object.fromEntries(["political-science", "economics", "sociology", "english", "history", "geography", "education", "general-aptitude"].map(id => [id, 25])),
