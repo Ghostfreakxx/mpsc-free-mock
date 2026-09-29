@@ -1,58 +1,363 @@
 {
-  "duration": 275.832,
+  "duration": 272.232,
+  "chapterDurations": [
+    33.96,
+    31.248,
+    27.456,
+    28.968,
+    28.464,
+    29.952,
+    29.904,
+    28.512,
+    33.768
+  ],
   "cues": [
     {
       "start": 0,
-      "end": 33.96,
-      "text": "A measurement is not a perfect label attached to an object. It is our best estimate, made with a particular instrument and method. When you read a ruler, the final digit is an estimate between markings. That is why a careful measurement should communicate both a value and its uncertainty. Precision describes how finely we can repeat or resolve a measurement. Accuracy describes how close the result is to the accepted value. A result can be very precise and still be inaccurate if the instrument has a zero error.",
+      "end": 4.44,
+      "text": "A measurement is not a perfect label attached to an object.",
       "chapter": 0
     },
     {
-      "start": 34.36,
-      "end": 65.608,
-      "text": "Significant figures tell the reader how much information a measured number carries. In zero point zero zero four five zero, the leading zeros only locate the decimal place, so they do not count. The four, five, and final zero do count. That gives three significant figures. In contrast, zeros between non-zero digits are significant. Write numbers in scientific notation when a string of zeros could confuse the intended precision. The coefficient makes the significant figures visible.",
+      "start": 4.44,
+      "end": 8.68,
+      "text": "It is our best estimate, made with a particular instrument and method.",
+      "chapter": 0
+    },
+    {
+      "start": 8.68,
+      "end": 13.56,
+      "text": "When you read a ruler, the final digit is an estimate between markings.",
+      "chapter": 0
+    },
+    {
+      "start": 13.56,
+      "end": 19.02,
+      "text": "That is why a careful measurement should communicate both a value and its uncertainty.",
+      "chapter": 0
+    },
+    {
+      "start": 19.02,
+      "end": 23.64,
+      "text": "Precision describes how finely we can repeat or resolve a measurement.",
+      "chapter": 0
+    },
+    {
+      "start": 23.64,
+      "end": 27.3,
+      "text": "Accuracy describes how close the result is to the accepted value.",
+      "chapter": 0
+    },
+    {
+      "start": 27.3,
+      "end": 33.96,
+      "text": "A result can be very precise and still be inaccurate if the instrument has a zero error.",
+      "chapter": 0
+    },
+    {
+      "start": 33.96,
+      "end": 39.08,
+      "text": "Significant figures tell the reader how much information a measured number carries.",
       "chapter": 1
     },
     {
-      "start": 66.008,
-      "end": 93.464,
-      "text": "To round two point seven four six to three significant figures, keep two, seven, and four, then inspect the next digit, six. Because it is five or greater, increase the last kept digit. The result is two point seven five. In a multi-step calculation, keep a guard digit during the working and round only the final answer. Rounding at every line can push the result away from the measured information. The final format should match the precision justified by the data.",
+      "start": 39.08,
+      "end": 46.04,
+      "text": "In zero point zero zero four five zero, the leading zeros only locate the decimal place, so they do not count.",
+      "chapter": 1
+    },
+    {
+      "start": 46.04,
+      "end": 49.3,
+      "text": "The four, five, and final zero do count.",
+      "chapter": 1
+    },
+    {
+      "start": 49.3,
+      "end": 51.86,
+      "text": "That gives three significant figures.",
+      "chapter": 1
+    },
+    {
+      "start": 51.86,
+      "end": 56.26,
+      "text": "In contrast, zeros between non-zero digits are significant.",
+      "chapter": 1
+    },
+    {
+      "start": 56.26,
+      "end": 61.0,
+      "text": "Write numbers in scientific notation when a string of zeros could confuse the intended precision.",
+      "chapter": 1
+    },
+    {
+      "start": 61.0,
+      "end": 65.208,
+      "text": "The coefficient makes the significant figures visible.",
+      "chapter": 1
+    },
+    {
+      "start": 65.208,
+      "end": 72.968,
+      "text": "To round two point seven four six to three significant figures, keep two, seven, and four, then inspect the next digit, six.",
       "chapter": 2
     },
     {
-      "start": 93.86399999999999,
-      "end": 122.832,
-      "text": "For addition and subtraction, the rule is about decimal places, not the total number of significant figures. Add twelve point one one and zero point three. The second measurement is known only to the tenths place, so the answer must stop at the tenths place. The unrounded sum is twelve point four one, which becomes twelve point four. The hundredths digit cannot be justified by the less precise measurement. Always identify the operation before choosing the rounding rule.",
+      "start": 72.968,
+      "end": 76.308,
+      "text": "Because it is five or greater, increase the last kept digit.",
+      "chapter": 2
+    },
+    {
+      "start": 76.308,
+      "end": 78.668,
+      "text": "The result is two point seven five.",
+      "chapter": 2
+    },
+    {
+      "start": 78.668,
+      "end": 85.008,
+      "text": "In a multi-step calculation, keep a guard digit during the working and round only the final answer.",
+      "chapter": 2
+    },
+    {
+      "start": 85.008,
+      "end": 88.848,
+      "text": "Rounding at every line can push the result away from the measured information.",
+      "chapter": 2
+    },
+    {
+      "start": 88.848,
+      "end": 92.664,
+      "text": "The final format should match the precision justified by the data.",
+      "chapter": 2
+    },
+    {
+      "start": 92.664,
+      "end": 99.864,
+      "text": "For addition and subtraction, the rule is about decimal places, not the total number of significant figures.",
       "chapter": 3
     },
     {
-      "start": 123.23199999999999,
-      "end": 151.69599999999997,
-      "text": "For multiplication and division, count significant figures. Two point five has two significant figures. Three point four two has three. Their product is eight point five five, but the final result must have two significant figures because the least precise input has two. Rounded correctly, that is eight point six. Do not confuse this with the decimal-place rule for addition. These two rules are frequent multiple-choice traps, so write the operation at the top of your solution.",
+      "start": 99.864,
+      "end": 102.904,
+      "text": "Add twelve point one one and zero point three.",
+      "chapter": 3
+    },
+    {
+      "start": 102.904,
+      "end": 109.004,
+      "text": "The second measurement is known only to the tenths place, so the answer must stop at the tenths place.",
+      "chapter": 3
+    },
+    {
+      "start": 109.004,
+      "end": 114.004,
+      "text": "The unrounded sum is twelve point four one, which becomes twelve point four.",
+      "chapter": 3
+    },
+    {
+      "start": 114.004,
+      "end": 118.304,
+      "text": "The hundredths digit cannot be justified by the less precise measurement.",
+      "chapter": 3
+    },
+    {
+      "start": 118.304,
+      "end": 121.632,
+      "text": "Always identify the operation before choosing the rounding rule.",
+      "chapter": 3
+    },
+    {
+      "start": 121.632,
+      "end": 125.392,
+      "text": "For multiplication and division, count significant figures.",
       "chapter": 4
     },
     {
-      "start": 152.09599999999998,
-      "end": 182.04799999999997,
-      "text": "Suppose a length is measured as twenty point zero plus or minus zero point one centimetres. Zero point one centimetres is the absolute uncertainty. Divide it by twenty point zero centimetres and the units cancel. The relative uncertainty is zero point zero zero five, or zero point five percent. A small absolute uncertainty is not enough to judge a result; its size must be compared with the measurement itself. Relative and percentage uncertainty make that comparison possible.",
+      "start": 125.392,
+      "end": 127.912,
+      "text": "Two point five has two significant figures.",
+      "chapter": 4
+    },
+    {
+      "start": 127.912,
+      "end": 129.932,
+      "text": "Three point four two has three.",
+      "chapter": 4
+    },
+    {
+      "start": 129.932,
+      "end": 138.692,
+      "text": "Their product is eight point five five, but the final result must have two significant figures because the least precise input has two.",
+      "chapter": 4
+    },
+    {
+      "start": 138.692,
+      "end": 141.552,
+      "text": "Rounded correctly, that is eight point six.",
+      "chapter": 4
+    },
+    {
+      "start": 141.552,
+      "end": 144.792,
+      "text": "Do not confuse this with the decimal-place rule for addition.",
+      "chapter": 4
+    },
+    {
+      "start": 144.792,
+      "end": 150.096,
+      "text": "These two rules are frequent multiple-choice traps, so write the operation at the top of your solution.",
+      "chapter": 4
+    },
+    {
+      "start": 150.096,
+      "end": 155.733,
+      "text": "Suppose a length is measured as twenty point zero plus or minus zero point one centimetres.",
       "chapter": 5
     },
     {
-      "start": 182.44799999999998,
-      "end": 212.35199999999998,
-      "text": "For a sum or difference, add the absolute uncertainties. If x has uncertainty delta x and y has uncertainty delta y, then the uncertainty in x plus or minus y is approximately their sum. For a product or quotient, add the relative uncertainties instead. These are standard maximum-uncertainty rules used at this level. Statistical uncertainty can be treated differently when repeated measurements and random errors are analyzed. The question wording tells you which model to use.",
+      "start": 155.733,
+      "end": 159.676,
+      "text": "Zero point one centimetres is the absolute uncertainty.",
+      "chapter": 5
+    },
+    {
+      "start": 159.676,
+      "end": 163.736,
+      "text": "Divide it by twenty point zero centimetres and the units cancel.",
+      "chapter": 5
+    },
+    {
+      "start": 163.736,
+      "end": 169.296,
+      "text": "The relative uncertainty is zero point zero zero five, or zero point five percent.",
+      "chapter": 5
+    },
+    {
+      "start": 169.296,
+      "end": 177.016,
+      "text": "A small absolute uncertainty is not enough to judge a result; its size must be compared with the measurement itself.",
+      "chapter": 5
+    },
+    {
+      "start": 177.016,
+      "end": 180.048,
+      "text": "Relative and percentage uncertainty make that comparison possible.",
+      "chapter": 5
+    },
+    {
+      "start": 180.048,
+      "end": 184.288,
+      "text": "For a sum or difference, add the absolute uncertainties.",
       "chapter": 6
     },
     {
-      "start": 212.75199999999998,
-      "end": 241.26399999999998,
-      "text": "Error and uncertainty are related, but they are not identical. If the accepted length is ten centimetres and your measured value is ten point two centimetres, the percentage error compares their difference with the accepted value. Uncertainty, on the other hand, describes the range or limitation attached to your measurement. Random errors change from trial to trial and may be reduced by averaging. Systematic errors shift results in one direction and require calibration or correction.",
+      "start": 184.288,
+      "end": 193.688,
+      "text": "If x has uncertainty delta x and y has uncertainty delta y, then the uncertainty in x plus or minus y is approximately their sum.",
+      "chapter": 6
+    },
+    {
+      "start": 193.688,
+      "end": 197.768,
+      "text": "For a product or quotient, add the relative uncertainties instead.",
+      "chapter": 6
+    },
+    {
+      "start": 197.768,
+      "end": 202.128,
+      "text": "These are standard maximum-uncertainty rules used at this level.",
+      "chapter": 6
+    },
+    {
+      "start": 202.128,
+      "end": 207.008,
+      "text": "Statistical uncertainty can be treated differently when repeated measurements and random errors are analyzed.",
+      "chapter": 6
+    },
+    {
+      "start": 207.008,
+      "end": 209.952,
+      "text": "The question wording tells you which model to use.",
+      "chapter": 6
+    },
+    {
+      "start": 209.952,
+      "end": 213.872,
+      "text": "Error and uncertainty are related, but they are not identical.",
       "chapter": 7
     },
     {
-      "start": 241.664,
-      "end": 275.432,
-      "text": "Before submitting a measurement problem, use four checks. First, are the units compatible? Second, did you count significant figures correctly? Third, did you use the decimal-place rule for addition and the significant-figure rule for multiplication? Fourth, is the uncertainty or error reported in the requested form? Keep extra digits during the working, then round the final answer once. This routine turns a confusing-looking calculation into a sequence of small decisions.",
+      "start": 213.872,
+      "end": 220.692,
+      "text": "If the accepted length is ten centimetres and your measured value is ten point two centimetres, the percentage error compares their",
+      "chapter": 7
+    },
+    {
+      "start": 220.692,
+      "end": 223.192,
+      "text": "difference with the accepted value.",
+      "chapter": 7
+    },
+    {
+      "start": 223.192,
+      "end": 228.792,
+      "text": "Uncertainty, on the other hand, describes the range or limitation attached to your measurement.",
+      "chapter": 7
+    },
+    {
+      "start": 228.792,
+      "end": 233.412,
+      "text": "Random errors change from trial to trial and may be reduced by averaging.",
+      "chapter": 7
+    },
+    {
+      "start": 233.412,
+      "end": 238.464,
+      "text": "Systematic errors shift results in one direction and require calibration or correction.",
+      "chapter": 7
+    },
+    {
+      "start": 238.464,
+      "end": 243.524,
+      "text": "Before submitting a measurement problem, use four checks.",
+      "chapter": 8
+    },
+    {
+      "start": 243.524,
+      "end": 246.084,
+      "text": "First, are the units compatible?",
+      "chapter": 8
+    },
+    {
+      "start": 246.084,
+      "end": 249.864,
+      "text": "Second, did you count significant figures correctly?",
+      "chapter": 8
+    },
+    {
+      "start": 249.864,
+      "end": 256.704,
+      "text": "Third, did you use the decimal-place rule for addition and the significant-figure rule for multiplication?",
+      "chapter": 8
+    },
+    {
+      "start": 256.704,
+      "end": 261.704,
+      "text": "Fourth, is the uncertainty or error reported in the requested form?",
+      "chapter": 8
+    },
+    {
+      "start": 261.704,
+      "end": 265.974,
+      "text": "Keep extra digits during the working, then round the final answer once.",
+      "chapter": 8
+    },
+    {
+      "start": 265.974,
+      "end": 272.232,
+      "text": "This routine turns a confusing-looking calculation into a sequence of small decisions.",
       "chapter": 8
     }
   ]

@@ -1,0 +1,175 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.440
+A measurement is not a perfect label attached to an object.
+
+00:00:04.440 --> 00:00:08.680
+It is our best estimate, made with a particular instrument and method.
+
+00:00:08.680 --> 00:00:13.560
+When you read a ruler, the final digit is an estimate between markings.
+
+00:00:13.560 --> 00:00:19.020
+That is why a careful measurement should communicate both a value and its uncertainty.
+
+00:00:19.020 --> 00:00:23.640
+Precision describes how finely we can repeat or resolve a measurement.
+
+00:00:23.640 --> 00:00:27.300
+Accuracy describes how close the result is to the accepted value.
+
+00:00:27.300 --> 00:00:33.960
+A result can be very precise and still be inaccurate if the instrument has a zero error.
+
+00:00:33.960 --> 00:00:39.080
+Significant figures tell the reader how much information a measured number carries.
+
+00:00:39.080 --> 00:00:46.040
+In zero point zero zero four five zero, the leading zeros only locate the decimal place, so they do not count.
+
+00:00:46.040 --> 00:00:49.300
+The four, five, and final zero do count.
+
+00:00:49.300 --> 00:00:51.860
+That gives three significant figures.
+
+00:00:51.860 --> 00:00:56.260
+In contrast, zeros between non-zero digits are significant.
+
+00:00:56.260 --> 00:01:01.000
+Write numbers in scientific notation when a string of zeros could confuse the intended precision.
+
+00:01:01.000 --> 00:01:05.208
+The coefficient makes the significant figures visible.
+
+00:01:05.208 --> 00:01:12.968
+To round two point seven four six to three significant figures, keep two, seven, and four, then inspect the next digit, six.
+
+00:01:12.968 --> 00:01:16.308
+Because it is five or greater, increase the last kept digit.
+
+00:01:16.308 --> 00:01:18.668
+The result is two point seven five.
+
+00:01:18.668 --> 00:01:25.008
+In a multi-step calculation, keep a guard digit during the working and round only the final answer.
+
+00:01:25.008 --> 00:01:28.848
+Rounding at every line can push the result away from the measured information.
+
+00:01:28.848 --> 00:01:32.664
+The final format should match the precision justified by the data.
+
+00:01:32.664 --> 00:01:39.864
+For addition and subtraction, the rule is about decimal places, not the total number of significant figures.
+
+00:01:39.864 --> 00:01:42.904
+Add twelve point one one and zero point three.
+
+00:01:42.904 --> 00:01:49.004
+The second measurement is known only to the tenths place, so the answer must stop at the tenths place.
+
+00:01:49.004 --> 00:01:54.004
+The unrounded sum is twelve point four one, which becomes twelve point four.
+
+00:01:54.004 --> 00:01:58.304
+The hundredths digit cannot be justified by the less precise measurement.
+
+00:01:58.304 --> 00:02:01.632
+Always identify the operation before choosing the rounding rule.
+
+00:02:01.632 --> 00:02:05.392
+For multiplication and division, count significant figures.
+
+00:02:05.392 --> 00:02:07.912
+Two point five has two significant figures.
+
+00:02:07.912 --> 00:02:09.932
+Three point four two has three.
+
+00:02:09.932 --> 00:02:18.692
+Their product is eight point five five, but the final result must have two significant figures because the least precise input has two.
+
+00:02:18.692 --> 00:02:21.552
+Rounded correctly, that is eight point six.
+
+00:02:21.552 --> 00:02:24.792
+Do not confuse this with the decimal-place rule for addition.
+
+00:02:24.792 --> 00:02:30.096
+These two rules are frequent multiple-choice traps, so write the operation at the top of your solution.
+
+00:02:30.096 --> 00:02:35.733
+Suppose a length is measured as twenty point zero plus or minus zero point one centimetres.
+
+00:02:35.733 --> 00:02:39.676
+Zero point one centimetres is the absolute uncertainty.
+
+00:02:39.676 --> 00:02:43.736
+Divide it by twenty point zero centimetres and the units cancel.
+
+00:02:43.736 --> 00:02:49.296
+The relative uncertainty is zero point zero zero five, or zero point five percent.
+
+00:02:49.296 --> 00:02:57.016
+A small absolute uncertainty is not enough to judge a result; its size must be compared with the measurement itself.
+
+00:02:57.016 --> 00:03:00.048
+Relative and percentage uncertainty make that comparison possible.
+
+00:03:00.048 --> 00:03:04.288
+For a sum or difference, add the absolute uncertainties.
+
+00:03:04.288 --> 00:03:13.688
+If x has uncertainty delta x and y has uncertainty delta y, then the uncertainty in x plus or minus y is approximately their sum.
+
+00:03:13.688 --> 00:03:17.768
+For a product or quotient, add the relative uncertainties instead.
+
+00:03:17.768 --> 00:03:22.128
+These are standard maximum-uncertainty rules used at this level.
+
+00:03:22.128 --> 00:03:27.008
+Statistical uncertainty can be treated differently when repeated measurements and random errors are analyzed.
+
+00:03:27.008 --> 00:03:29.952
+The question wording tells you which model to use.
+
+00:03:29.952 --> 00:03:33.872
+Error and uncertainty are related, but they are not identical.
+
+00:03:33.872 --> 00:03:40.692
+If the accepted length is ten centimetres and your measured value is ten point two centimetres, the percentage error compares their
+
+00:03:40.692 --> 00:03:43.192
+difference with the accepted value.
+
+00:03:43.192 --> 00:03:48.792
+Uncertainty, on the other hand, describes the range or limitation attached to your measurement.
+
+00:03:48.792 --> 00:03:53.412
+Random errors change from trial to trial and may be reduced by averaging.
+
+00:03:53.412 --> 00:03:58.464
+Systematic errors shift results in one direction and require calibration or correction.
+
+00:03:58.464 --> 00:04:03.524
+Before submitting a measurement problem, use four checks.
+
+00:04:03.524 --> 00:04:06.084
+First, are the units compatible?
+
+00:04:06.084 --> 00:04:09.864
+Second, did you count significant figures correctly?
+
+00:04:09.864 --> 00:04:16.704
+Third, did you use the decimal-place rule for addition and the significant-figure rule for multiplication?
+
+00:04:16.704 --> 00:04:21.704
+Fourth, is the uncertainty or error reported in the requested form?
+
+00:04:21.704 --> 00:04:25.974
+Keep extra digits during the working, then round the final answer once.
+
+00:04:25.974 --> 00:04:32.232
+This routine turns a confusing-looking calculation into a sequence of small decisions.
