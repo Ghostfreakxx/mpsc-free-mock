@@ -12,7 +12,8 @@ test('course map preserves all 54 baseline units across three subjects', () => {
 });
 
 test('published written lessons have substantive content, practice and figures', () => {
-  assert.equal(new Set(studyLessons.map(lesson => lesson.id)).size, 3);
+  assert.equal(new Set(studyLessons.map(lesson => lesson.id)).size, 6);
+  for (const subject of subjects) assert.equal(studyLessons.filter(lesson => lesson.subject === subject).length, 2);
   for (const lesson of studyLessons) {
     assert.ok(courseUnits[lesson.subject][lesson.unit - 1]);
     assert.equal(lesson.sections.length, 5);
@@ -40,4 +41,11 @@ test('numerical quiz keys match independently computed answers', () => {
   assert.equal(correct(math, 0), String(2 ** 3));
   assert.equal(correct(math, 1), String(12 + 9 - 4));
   assert.equal(correct(math, 4), String(2 * 2 + 3));
+  const [forces, atom, quadratic] = studyLessons.slice(3);
+  assert.equal(correct(forces, 0), `${(15 - 6) / 3} m/s² right`);
+  assert.equal(correct(forces, 2), '4 N');
+  assert.equal(correct(atom, 0), String(12 - 2));
+  assert.equal(correct(atom, 2), String(2 * (2 * 1 + 1)));
+  assert.equal(correct(quadratic, 1), String(3 ** 2 - 4 * 2 * 5));
+  assert.equal(correct(quadratic, 2), String(7 ** 2 - 2 * 10));
 });

@@ -13,12 +13,15 @@ try {
     ['Physics', 'straight-line-motion', 20, [1, 2, 1, 2, 1]],
     ['Chemistry', 'mole-concept', 20, [1, 2, 1, 1, 2]],
     ['Mathematics', 'sets-and-functions', 14, [2, 0, 2, 1, 0]],
+    ['Physics', 'newtons-laws', 20, [1, 1, 1, 2, 1]],
+    ['Chemistry', 'atomic-structure', 20, [0, 2, 2, 3, 1]],
+    ['Mathematics', 'quadratic-equations', 14, [1, 1, 2, 1, 2]],
   ];
   for (const [subject, slug, count, answers] of cases) {
     await page.goto(`${base}/jee/classes`);
     await page.getByRole('button', { name: subject, exact: true }).click();
     assert.equal(await page.getByRole('region', { name: `${subject} course map` }).locator('li').count(), count);
-    await page.getByRole('link', { name: 'Read lesson', exact: true }).click();
+    await page.locator(`a[href="/jee/classes/study/${slug}"]`).filter({ hasText: 'Read lesson' }).click();
     await page.waitForURL(`**/study/${slug}`);
     await page.getByRole('img').waitFor();
     await page.waitForFunction(() => [...document.images].every(image => image.complete && image.naturalWidth > 0));
