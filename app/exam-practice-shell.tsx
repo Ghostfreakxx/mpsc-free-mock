@@ -118,7 +118,7 @@ export default function ExamPracticeShell({
               type="button"
               className="icon-button practice-chat-trigger"
               onClick={() => window.dispatchEvent(new Event("mpsc-open-assistant"))}
-              aria-label="Open MPSC study assistant"
+              aria-label="Open study assistant"
               title="Open study assistant"
             ><MessageCircle size={18} /></button>
             <InstallAppButton />
