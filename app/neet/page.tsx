@@ -16,14 +16,23 @@ const subjects = [
 
 export default function NeetPage() {
   const [subject, setSubject] = useState("All");
+  const [category, setCategory] = useState("All");
 
-  const filteredQuestions = useMemo(() => {
-    if (subject === "All") return questions;
-
-    return questions.filter((q) => q.subject === subject);
+  const categories = useMemo(() => {
+    const source = subject === "All" ? questions : questions.filter((q) => q.subject === subject);
+    return ["All", ...Array.from(new Set(source.map((q) => q.category)))];
   }, [subject]);
 
-  const rotation = useQuestionRotation(filteredQuestions, `neet:${subject}`);
+  const filteredQuestions = useMemo(
+    () => questions.filter((q) =>
+      (subject === "All" || q.subject === subject) &&
+      (category === "All" || q.category === category),
+    ),
+    [subject, category],
+  );
+
+  // Keep the original per-subject key for "All" topics so saved progress carries over.
+  const rotation = useQuestionRotation(filteredQuestions, category === "All" ? `neet:${subject}` : `neet:${subject}:${category}`);
   const currentQuestion = rotation.currentQuestion;
   const selectedAnswer = rotation.selectedAnswer;
 
@@ -33,6 +42,7 @@ export default function NeetPage() {
 
   function changeSubject(newSubject: string) {
     setSubject(newSubject);
+    setCategory("All");
   }
 
   return (
@@ -42,7 +52,10 @@ export default function NeetPage() {
       description="Practice Biology, Chemistry, and Physics with focused questions, worked explanations, and spaced review."
       activeRoute="/neet"
       totalQuestions={filteredQuestions.length}
-      filters={[{ label: "Subject", value: subject, options: subjects, onChange: changeSubject }]}
+      filters={[
+        { label: "Subject", value: subject, options: subjects, onChange: changeSubject },
+        { label: "Topic", value: category, options: categories, onChange: setCategory },
+      ]}
       currentQuestion={currentQuestion}
       summary={rotation.summary}
       selectedAnswer={selectedAnswer}
