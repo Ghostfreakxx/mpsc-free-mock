@@ -29,6 +29,7 @@ export interface QuestionRotationState {
 
 const STORAGE_PREFIX = "question-rotation:v1:";
 const MAX_REVIEW_INTERVAL = 24;
+const SKIP_REVIEW_INTERVAL = 3;
 
 function shuffle(values: readonly string[], random: () => number): string[] {
   const result = [...values];
@@ -209,7 +210,20 @@ export function advanceRotation(
 ): QuestionRotationState | null {
   const freshCompleted =
     state.freshCompleted + (state.activeMode === "fresh" ? 1 : 0);
-  const base = { ...state, freshCompleted, answered: false, selectedAnswer: "" };
+  // A skipped question returns later instead of silently counting as done.
+  // Skips do not grow the review interval or the attempt count.
+  const reviews = state.answered
+    ? state.reviews
+    : [
+        ...state.reviews.filter((review) => review.id !== state.activeId),
+        {
+          id: state.activeId,
+          dueAt: freshCompleted + SKIP_REVIEW_INTERVAL,
+          interval: state.reviews.find((review) => review.id === state.activeId)?.interval ?? SKIP_REVIEW_INTERVAL,
+          attempts: state.reviews.find((review) => review.id === state.activeId)?.attempts ?? 0,
+        },
+      ];
+  const base = { ...state, freshCompleted, reviews, answered: false, selectedAnswer: "" };
   const dueReview = [...base.reviews]
     .filter(
       (review) => review.id !== state.activeId && review.dueAt <= freshCompleted,

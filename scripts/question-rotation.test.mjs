@@ -10,6 +10,9 @@ import {
 } from "../app/lib/question-rotation.ts";
 
 const fixedRandom = () => 0.5;
+// Answer correctly (unless already answered) and move on, as a student normally would.
+const answerAndAdvance = (state, ids) =>
+  advanceRotation(state.answered ? state : recordRotationAnswer(state, state.activeId, true), ids, fixedRandom);
 
 test("first answer stays locked after repeat events and reload until next question", () => {
   const ids = ["a", "b"];
@@ -32,12 +35,12 @@ test("uses each question once before starting a new round", () => {
   const seen = [state.activeId];
 
   for (let i = 1; i < ids.length; i += 1) {
-    state = advanceRotation(state, ids, fixedRandom);
+    state = answerAndAdvance(state, ids);
     seen.push(state.activeId);
   }
 
   assert.equal(new Set(seen).size, ids.length);
-  state = advanceRotation(state, ids, fixedRandom);
+  state = answerAndAdvance(state, ids);
   assert.equal(state.round, 2);
   assert.notEqual(state.activeId, seen[0]);
 });
@@ -49,11 +52,11 @@ test("returns incorrect answers as spaced reviews and backs off on another miss"
   state = recordRotationAnswer(state, missed, false);
   assert.equal(state.reviews[0].interval, 3);
 
-  state = advanceRotation(state, ids, fixedRandom);
+  state = answerAndAdvance(state, ids);
   assert.notEqual(state.activeId, missed);
-  state = advanceRotation(state, ids, fixedRandom);
+  state = answerAndAdvance(state, ids);
   assert.notEqual(state.activeId, missed);
-  state = advanceRotation(state, ids, fixedRandom);
+  state = answerAndAdvance(state, ids);
   assert.equal(state.activeId, missed);
   assert.equal(state.activeMode, "review");
 
@@ -66,9 +69,9 @@ test("removes a review after a correct retry and restores saved progress", () =>
   let state = createRotation(ids, fixedRandom);
   const missed = state.activeId;
   state = recordRotationAnswer(state, missed, false);
-  state = advanceRotation(state, ids, fixedRandom);
-  state = advanceRotation(state, ids, fixedRandom);
-  state = advanceRotation(state, ids, fixedRandom);
+  state = answerAndAdvance(state, ids);
+  state = answerAndAdvance(state, ids);
+  state = answerAndAdvance(state, ids);
   state = recordRotationAnswer(state, missed, true);
 
   const restored = restoreRotation(serializeRotation(state), ids, fixedRandom);
@@ -122,4 +125,24 @@ test("moves to the next question and drops reviews when questions are removed", 
   const nextRound = restoreRotation(serializeRotation(last), ids.filter(id => id !== last.activeId), fixedRandom);
   assert.equal(nextRound.round, state.round + 1);
   assert.notEqual(nextRound.activeId, last.activeId);
+});
+
+test("a skipped question returns later as a review without counting as a miss", () => {
+  const ids = ["a", "b", "c", "d", "e", "f"];
+  let state = createRotation(ids, fixedRandom);
+  const skipped = state.activeId;
+  state = advanceRotation(state, ids, fixedRandom);
+  assert.deepEqual(state.reviews.map(review => review.id), [skipped]);
+  assert.equal(state.reviews[0].attempts, 0);
+  state = answerAndAdvance(state, ids);
+  assert.notEqual(state.activeId, skipped);
+  state = answerAndAdvance(state, ids);
+  assert.notEqual(state.activeId, skipped);
+  state = answerAndAdvance(state, ids);
+  assert.equal(state.activeId, skipped);
+  assert.equal(state.activeMode, "review");
+  // Skipping the review again pushes it back instead of looping on it.
+  state = advanceRotation(state, ids, fixedRandom);
+  assert.notEqual(state.activeId, skipped);
+  assert.equal(state.reviews.find(review => review.id === skipped).interval, 3);
 });
