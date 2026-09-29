@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { ArrowLeft, Clock, BookOpen } from "lucide-react";
-import ClassProgress from "./class-progress";
-import { lectures } from "./lessons";
+import { ArrowLeft } from "lucide-react";
+import CourseLibrary from "./course-library";
+import { syllabusBaseline, syllabusSource } from "./course";
 import styles from "./lecture.module.css";
 
 export default function ClassLibrary() {
@@ -11,18 +11,11 @@ export default function ClassLibrary() {
       <Link href="/">MPSC FREE MOCK</Link>
     </header>
     <div className={styles.heading}>
-      <p>JEE · PHYSICS · FOUNDATION</p>
-      <h1>Physics classes</h1>
-      <span>2 recorded classes · Marin · English audio and subtitles</span>
+      <p>PHYSICS · CHEMISTRY · MATHEMATICS</p>
+      <h1>JEE classes</h1>
+      <span>2 recorded classes · 3 written lessons · Course in development</span>
     </div>
-    <section aria-label="Available classes" className={styles.library}>
-      {lectures.map(lesson => <article key={lesson.id}>
-        <div className={styles.lessonNumber}><BookOpen size={28} /><span>{lesson.number}</span></div>
-        <div><h2>{lesson.title}</h2><p>{lesson.description}</p>
-          <p className={styles.lessonMeta}><Clock size={15} /> {Math.floor(lesson.timings.duration / 60)}:{String(Math.floor(lesson.timings.duration % 60)).padStart(2, "0")} <span>{lesson.segments.length} chapters</span><span>{lesson.quiz.length} practice checks</span></p>
-          <ClassProgress id={lesson.id} progressKey={lesson.progressKey} duration={lesson.timings.duration} quiz={lesson.quiz} />
-        </div>
-      </article>)}
-    </section>
+    <CourseLibrary />
+    <footer className={styles.notes}><p>Baseline: <a href={syllabusSource} target="_blank" rel="noreferrer">{syllabusBaseline}</a>. Course map checked 30 September 2026. This is not a verified 2027 or JEE Advanced syllabus.</p></footer>
   </main>;
 }
