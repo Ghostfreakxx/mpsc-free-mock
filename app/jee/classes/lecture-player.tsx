@@ -55,7 +55,7 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
   }
 
   function downloadTranscript() {
-    const text = `${lesson.title}\nEnglish narration · Synthetic female voice\n\n` + lesson.segments.map((segment, index) =>
+    const text = `${lesson.title}\nEnglish narration · American English · Marin · AI-generated voice\n\n` + lesson.segments.map((segment, index) =>
       `${index + 1}. ${segment.title}\n${segment.formula}\n${segment.steps.join("\n")}\n\n${segment.english}\n${segment.note ? `Clarification: ${segment.note}\n` : ""}`
     ).join("\n") + "\nSources\n" + lesson.sources.map(source => `${source.title}: ${source.url}`).join("\n");
     const url = URL.createObjectURL(new Blob([text], { type: "text/plain;charset=utf-8" }));

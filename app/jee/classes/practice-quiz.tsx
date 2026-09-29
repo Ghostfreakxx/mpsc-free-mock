@@ -37,7 +37,7 @@ export default function PracticeQuiz({ quiz, progressKey }: { quiz: Question[]; 
     <p className={styles.saveStatus}>{!ready ? "Loading saved answers..." : saved ? "Answers saved on this browser" : "Answers cannot be saved in this browser. This attempt is temporary."}</p>
     {quiz.map((question, index) => <fieldset key={question.question}>
       <legend>{index + 1}. {question.question}</legend>
-      {question.options.map((option, optionIndex) => <label key={option}><input type="radio" disabled={!ready} name={`${progressKey}-${index}`} checked={answers[index] === optionIndex} onChange={() => save({ ...answers, [index]: optionIndex })} />{option}</label>)}
+      {question.options.map((option, optionIndex) => <label key={option}><input type="radio" disabled={!ready || answers[index] !== undefined} name={`${progressKey}-${index}`} checked={answers[index] === optionIndex} onChange={() => { if (answers[index] === undefined) save({ ...answers, [index]: optionIndex }); }} />{option}</label>)}
       {answers[index] !== undefined && <p role="status" className={answers[index] === question.answer ? styles.correct : styles.incorrect}><strong>{answers[index] === question.answer ? "Correct. " : "Not quite. "}</strong>{question.explanation}</p>}
     </fieldset>)}
   </section>;

@@ -28,6 +28,7 @@ try {
     assert.match(await page.getByRole('region', { name: 'Lesson practice' }).textContent(), /5 \/ 5 answered · 5 correct/);
     await page.reload();
     await page.waitForFunction(() => document.querySelectorAll('input:checked').length === 5);
+    assert.equal(await page.locator('fieldset input:disabled').count(), 20);
     const downloadEvent = page.waitForEvent('download');
     await page.getByRole('button', { name: 'Download notes' }).click();
     const download = await downloadEvent;
@@ -36,6 +37,7 @@ try {
     assert.ok(notes.includes('ANSWER KEY') && notes.includes('UNIT COVERAGE') && notes.includes('REFERENCES'));
     await page.getByRole('button', { name: 'Retry practice' }).click();
     assert.equal(await page.locator('input:checked').count(), 0);
+    assert.equal(await page.locator('fieldset input:disabled').count(), 0);
     for (const width of [1440, 390, 320]) {
       await page.setViewportSize({ width, height: 900 });
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `${slug} overflow at ${width}`);

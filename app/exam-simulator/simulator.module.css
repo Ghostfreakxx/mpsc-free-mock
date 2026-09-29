@@ -6,7 +6,8 @@
 .title { margin: 6px 0 6px; font-size: 26px; line-height: 1.2; }
 .lead { max-width: 640px; margin: 0 0 20px; color: var(--muted); font-size: 13px; line-height: 1.6; }
 .panel { border: 1px solid var(--line); border-radius: 6px; background: #fff; padding: 16px; }
-.stack { display: grid; gap: 14px; }
+/* A single column pinned to the container width, so wide children scroll instead of widening the page. */
+.stack { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; }
 .sectionTitle { margin: 0 0 10px; font-size: 13px; }
 .muted { color: var(--muted); font-size: 12px; line-height: 1.55; }
 
@@ -76,6 +77,7 @@
 .insightWarn { border-left-color: var(--coral); }
 .insight h3 { margin: 0 0 6px; font-size: 13px; }
 .insight p { margin: 0; color: #43594b; font-size: 12px; line-height: 1.55; }
+.tableScroll { overflow-x: auto; }
 .table { width: 100%; border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; }
 .table th, .table td { padding: 8px 6px; border-top: 1px solid var(--line); text-align: right; }
 .table th:first-child, .table td:first-child { text-align: left; }
