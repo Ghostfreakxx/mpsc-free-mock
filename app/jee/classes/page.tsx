@@ -128,6 +128,11 @@ export default function JeeClass() {
       <details><summary>Read the English transcript</summary>{lesson.segments.map(segment => <article key={segment.title}><h3>{segment.title}</h3><p>{segment.english}</p></article>)}</details>
       <p className={styles.sources}>References: {lesson.sources.map(source => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.title}</a>)}</p>
     </section>
+    <section className={styles.notes}>
+      <h2>Next class</h2>
+      <p>Continue with significant figures, uncertainty and error analysis.</p>
+      <Link href="/jee/classes/measurements">Open the measurement class <ArrowRight size={17} /></Link>
+    </section>
     <section className={styles.quiz}>
       <h2>Check your understanding</h2>
       <p>Original practice · {Object.keys(answers).length} / {lesson.quiz.length} answered</p>
