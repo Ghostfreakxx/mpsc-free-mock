@@ -8,8 +8,9 @@ import { additionalQuotas, practiceExpansion } from '../app/data/expanded-practi
 import { numeric } from '../app/data/question-builders.ts';
 import { jeeTopics } from '../app/data/jee-topics.ts';
 import { neetTopics } from '../app/data/neet-topics.ts';
+import { highYieldTopics } from '../app/data/high-yield-topics.ts';
 
-const foundationTopics = [...jeeTopics, ...neetTopics];
+const foundationTopics = [...jeeTopics, ...neetTopics, ...highYieldTopics];
 const foundationCount = stream => foundationTopics.filter(topic => topic.streams.includes(stream)).reduce((total, topic) => total + topic.questions.length, 0);
 
 test('each stream retains its published expansion quota', () => {
@@ -183,4 +184,36 @@ test('NEET Biology worked answers are independently recomputed', () => {
   assert.equal(answer('neet-dna-replication-8'), `1/${2 ** 3 / 2}`);
   assert.equal(answer('neet-inheritance-8'), '2/3');
   assert.ok(2 ** 23 > 8e6 && 2 ** 23 < 8.5e6);
+});
+
+test('high-yield topics are sourced, balanced and published to the intended streams', () => {
+  for (const topic of highYieldTopics) {
+    assert.ok(topic.questions.length >= 7 && topic.notes.length > 0 && topic.pitfall, topic.id);
+    assert.ok(new URL(sources[topic.sourceId].url).protocol === 'https:', topic.id);
+    for (const stream of topic.streams) {
+      const published = getReviewedQuestions(stream).filter(question => question.id.startsWith(`${topic.id}-`));
+      assert.equal(published.length, topic.questions.length, `${topic.id} in ${stream}`);
+      assert.ok(new Set(published.map(question => question.options.indexOf(question.answer))).size >= 3, topic.id);
+    }
+  }
+  // MPSC questions need Mizo translations before publication.
+  assert.ok(!getReviewedQuestions('mpsc').some(question => highYieldTopics.some(topic => question.id.startsWith(`${topic.id}-`))));
+});
+
+test('high-yield worked answers are independently recomputed', () => {
+  const answer = (stream, id) => getReviewedQuestions(stream).find(question => question.id === id).answer;
+  assert.equal(answer('jee', 'ohms-law-3'), `${9 / 0.5} ohm`);
+  assert.equal(answer('neet', 'resistor-circuits-2'), `${1 / (1 / 6 + 1 / 3)} ohm`);
+  assert.equal(answer('jee', 'resistor-circuits-9'), `${12 / ((6 * 12) / (6 + 12))} A`);
+  assert.equal(answer('neet', 'photoelectric-effect-4'), `${6 - 4} eV`);
+  assert.equal(answer('jee', 'matter-waves-5'), `${Math.round(6.6e-34 / 3.3e-24 / 1e-10)} x 10^-10 m`);
+  assert.equal(answer('jee', 'determinants-1'), String(3 * 4 - 2 * 1));
+  assert.equal(answer('jee', 'determinants-4'), String((5 * -1 - 1 * 1) / (2 * -1 - 1 * 1)));
+  assert.equal(answer('jee', 'vectors-3'), String(2 * 4 + 3 * -1));
+  assert.equal(answer('jee', 'vectors-7'), String(12 / 3));
+  const choose = (n, k) => { let r = 1; for (let i = 1; i <= k; i += 1) r = (r * (n - k + i)) / i; return r; };
+  assert.equal(answer('jee', 'binomial-theorem-2'), String(choose(5, 3)));
+  assert.equal(answer('jee', 'binomial-theorem-6'), String(choose(8, 3)));
+  assert.equal(answer('jee', 'binomial-theorem-9'), String(choose(3, 2) * 2));
+  assert.equal(answer('neet', 'coordination-compounds-7'), `+${-4 + 6}`);
 });
