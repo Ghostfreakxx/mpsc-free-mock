@@ -6,9 +6,11 @@ import { renderNotes, escapeHtml } from '../app/lib/render-notes.ts';
 import { additionalQuestions } from '../app/data/additional-questions.ts';
 import { additionalQuotas, practiceExpansion } from '../app/data/expanded-practice.ts';
 import { numeric } from '../app/data/question-builders.ts';
+import { jeeTopics } from '../app/data/jee-topics.ts';
 
 test('each stream retains its published expansion quota', () => {
-  for (const [stream, original] of Object.entries({mpsc: 29, neet: 9, jee: 9, 'cuet-pg': 24})) {
+  const jeeFoundation = jeeTopics.reduce((total, topic) => total + topic.questions.length, 0);
+  for (const [stream, original] of Object.entries({mpsc: 29, neet: 9, jee: 9 + jeeFoundation, 'cuet-pg': 24})) {
     const quota = Object.values(additionalQuotas[stream]).reduce((a, b) => a + b, 0);
     assert.equal(getReviewedQuestions(stream).length, original + quota, stream);
     assert.equal(quota, stream === 'mpsc' ? 471 : 200);
@@ -64,7 +66,7 @@ test('independently recompute the science numerical expansion from its question 
 });
 
 test('the expansion covers every topic and uses valid answer indices', () => {
-  assert.deepEqual(Object.keys(additionalQuestions).sort(), topics.map(topic => topic.id).sort());
+  assert.deepEqual(Object.keys(additionalQuestions).sort(), topics.filter(topic => !jeeTopics.includes(topic)).map(topic => topic.id).sort());
   for (const [id, questions] of Object.entries(additionalQuestions)) {
     assert.ok(questions.length >= 3, id);
     for (const [, options, answer] of questions) {
@@ -107,4 +109,38 @@ test('worked numerical answers are independently recomputed', () => {
   assert.equal(physics.find(q => q.id === 'physics-2').answer, `${(14 - 6) / 4} m/s^2 right`);
   assert.equal(physics.find(q => q.id === 'chemistry-1').answer, String(27 - 13));
   for (const root of [4, 5]) assert.equal(root ** 2 - 9 * root + 20, 0);
+});
+
+test('JEE foundation topics extend all three subjects with sourced, balanced questions', () => {
+  const bank = getReviewedQuestions('jee');
+  for (const subject of ['Physics', 'Chemistry', 'Mathematics']) {
+    const added = jeeTopics.filter(topic => topic.subject === subject);
+    assert.ok(added.length >= 3, subject);
+    assert.ok(added.reduce((total, topic) => total + topic.questions.length, 0) >= 30, subject);
+  }
+  for (const topic of jeeTopics) {
+    assert.ok(topic.questions.length >= 6 && topic.notes.length > 0 && topic.pitfall, topic.id);
+    assert.equal(new URL(sources[topic.sourceId].url).hostname, 'openstax.org', topic.id);
+    const published = bank.filter(question => question.id.startsWith(`${topic.id}-`));
+    assert.equal(published.length, topic.questions.length, topic.id);
+    const positions = new Set(published.map(question => question.options.indexOf(question.answer)));
+    assert.ok(positions.size >= 3, `${topic.id} answers cluster in one option position`);
+  }
+});
+
+test('JEE foundation worked answers are independently recomputed', () => {
+  const answer = id => getReviewedQuestions('jee').find(question => question.id === id).answer;
+  assert.equal(answer('jee-kinematics-4'), `${20 ** 2 / (2 * 5)} m`);
+  assert.equal(answer('jee-kinematics-11'), `${0.5 * 4 * 3 ** 2 - 0.5 * 4 * 2 ** 2} m`);
+  assert.equal(answer('jee-projectile-7'), `${(20 ** 2 * Math.sin(Math.PI / 3) / 10).toFixed(1)} m`);
+  assert.equal(answer('jee-work-energy-8'), `${0.5 * 2 * 10 ** 2 / 5} N`);
+  assert.equal(answer('jee-work-energy-11'), `${Math.sqrt(2 * 10 * 10).toFixed(1)} m/s`);
+  assert.equal(answer('jee-mole-concept-2'), `${88 / (12 + 2 * 16)} mol`);
+  assert.equal(answer('jee-molarity-6'), `${(1 * 600) / 12} mL`);
+  assert.equal(answer('jee-ideal-gas-9'), `${Math.round((2 * 24.63) / (0.0821 * 300))} mol`);
+  assert.equal(answer('jee-arithmetic-sequences-1'), String(3 + 9 * 4));
+  assert.equal(answer('jee-geometric-sequences-2'), String(2 * 3 ** 5));
+  assert.equal(answer('jee-counting-4'), String((7 * 6 * 5) / (3 * 2 * 1)));
+  assert.equal(answer('jee-counting-6'), String(120 / 4));
+  assert.equal(answer('jee-differentiation-4'), String(3 * 2 ** 2));
 });
