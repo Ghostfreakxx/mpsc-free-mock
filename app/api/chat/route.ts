@@ -21,6 +21,27 @@ function json(data: unknown, status = 200) {
   });
 }
 
+async function readLimitedBody(request: Request, limit: number): Promise<string | null> {
+  if (!request.body) return "";
+  const reader = request.body.getReader();
+  const chunks: Uint8Array[] = [];
+  let size = 0;
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    size += value.byteLength;
+    if (size > limit) {
+      await reader.cancel().catch(() => {});
+      return null;
+    }
+    chunks.push(value);
+  }
+  const body = new Uint8Array(size);
+  let offset = 0;
+  for (const chunk of chunks) { body.set(chunk, offset); offset += chunk.byteLength; }
+  return new TextDecoder().decode(body);
+}
+
 function takeRateLimit(request: Request) {
   const forwarded = request.headers.get("x-forwarded-for");
   const address = forwarded?.split(",").at(-1)?.trim() || "local";
@@ -122,8 +143,9 @@ export async function POST(request: Request) {
     return json({ error: "That conversation is too long. Start a new chat and try again." }, 413);
   }
 
-  const rawBody = await request.text();
-  if (rawBody.length > MAX_BODY_LENGTH) {
+  // Read at most MAX_BODY_LENGTH bytes even when the sender omits or understates Content-Length.
+  const rawBody = await readLimitedBody(request, MAX_BODY_LENGTH);
+  if (rawBody === null) {
     return json({ error: "That conversation is too long. Start a new chat and try again." }, 413);
   }
 
