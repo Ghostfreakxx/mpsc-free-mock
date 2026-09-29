@@ -10,7 +10,7 @@ Students use this app live. Every change, from any agent or person, goes through
 
 1. `npm run check`: question banks, all tests, lint and types. It must pass.
 2. `npm run build`, then start the server (`npx next start -p 3000`) and run `npm run smoke`: security headers, chat API abuse cases, every page at 360px with no browser errors or CSP violations, practice and the simulator.
-3. Recorded-class changes: also run `TEST_URL=http://localhost:3000 PLAYWRIGHT_CHANNEL=chromium node scripts/check-lecture-library.mjs`.
+3. Recorded-class or course changes: also run `node scripts/check-lecture-library.mjs` and `node scripts/check-jee-course.mjs` with `TEST_URL=http://localhost:3000 PLAYWRIGHT_CHANNEL=chromium`.
 4. Merge `main` into your branch before merging and re-run the checks. Other agents may have changed the same files.
 
 CI (`.github/workflows/ci.yml`) runs all of this on every pull request. Do not merge a red PR. Never skip, weaken or delete a test to make it pass.

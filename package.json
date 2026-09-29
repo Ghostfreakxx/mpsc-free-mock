@@ -13,7 +13,7 @@
     "test:question-rotation": "node --experimental-strip-types --test scripts/question-rotation.test.mjs",
     "test:guidance": "node --experimental-strip-types --test scripts/guidance.test.mjs",
     "test:exam-simulator": "node --experimental-strip-types --test scripts/exam-simulator.test.mjs",
-    "test:lecture": "node --experimental-strip-types --test scripts/lecture.test.mjs scripts/lecture-captions.test.mjs scripts/lecture-progress.test.mjs",
+    "test:lecture": "node --experimental-strip-types --test scripts/lecture.test.mjs scripts/lecture-captions.test.mjs scripts/lecture-progress.test.mjs scripts/jee-course.test.mjs",
     "test": "npm run test:content && npm run test:mizo && npm run test:question-rotation && npm run test:guidance && npm run test:exam-simulator && npm run test:lecture",
     "typecheck": "tsc --noEmit",
     "check": "npm run validate:banks && npm test && npm run lint && npm run typecheck",

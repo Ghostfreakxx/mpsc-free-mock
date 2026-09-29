@@ -57,3 +57,9 @@ jobs:
           TEST_URL: http://localhost:3000
           PLAYWRIGHT_CHANNEL: chromium
           SCREENSHOT_DIR: ${{ runner.temp }}
+      - name: JEE course map and study lessons check
+        run: node scripts/check-jee-course.mjs
+        env:
+          TEST_URL: http://localhost:3000
+          PLAYWRIGHT_CHANNEL: chromium
+          SCREENSHOT_DIR: ${{ runner.temp }}
