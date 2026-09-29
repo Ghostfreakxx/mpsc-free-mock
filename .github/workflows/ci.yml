@@ -1,0 +1,65 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Tests, lint, types, audit and build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Question banks, tests, lint and types
+        run: npm run check
+      - name: Dependency audit (fails on high or critical)
+        run: npm audit --audit-level=high
+      - run: npm run build
+
+  browser:
+    name: Browser smoke, security headers and classes
+    runs-on: ubuntu-latest
+    needs: check
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build
+      - name: Start the production server
+        run: |
+          npx next start -p 3000 > server.log 2>&1 &
+          for i in $(seq 1 60); do curl -sf -o /dev/null http://localhost:3000/ && exit 0; sleep 1; done
+          cat server.log; exit 1
+      - name: Smoke and security check
+        run: npm run smoke
+        env:
+          SMOKE_URL: http://localhost:3000
+      - name: Recorded class library check
+        run: node scripts/check-lecture-library.mjs
+        env:
+          TEST_URL: http://localhost:3000
+          PLAYWRIGHT_CHANNEL: chromium
+          SCREENSHOT_DIR: ${{ runner.temp }}
+      - name: JEE course map and study lessons check
+        run: node scripts/check-jee-course.mjs
+        env:
+          TEST_URL: http://localhost:3000
+          PLAYWRIGHT_CHANNEL: chromium
+          SCREENSHOT_DIR: ${{ runner.temp }}

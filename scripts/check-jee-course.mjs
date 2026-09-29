@@ -4,7 +4,7 @@ import { pathToFileURL } from 'node:url';
 const { chromium } = await import(process.env.PLAYWRIGHT_MODULE ? pathToFileURL(`${process.env.PLAYWRIGHT_MODULE}/index.mjs`).href : 'playwright');
 const base = process.env.TEST_URL || 'http://localhost:3107';
 const screenshots = process.env.SCREENSHOT_DIR || '.';
-const browser = await chromium.launch({ channel: 'msedge', headless: true });
+const browser = await chromium.launch({ headless: true, ...(process.env.PLAYWRIGHT_CHANNEL === 'chromium' ? {} : { channel: process.env.PLAYWRIGHT_CHANNEL || 'msedge' }) });
 try {
   const page = await browser.newPage({ serviceWorkers: 'block' });
   const errors = [];
