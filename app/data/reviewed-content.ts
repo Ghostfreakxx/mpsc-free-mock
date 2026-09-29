@@ -1,6 +1,7 @@
 import { additionalQuestions } from "./additional-questions.ts";
 import { additionalQuotas, practiceExpansion } from "./expanded-practice.ts";
 import { jeeSources, jeeTopics } from "./jee-topics.ts";
+import { neetSources, neetTopics } from "./neet-topics.ts";
 
 export type Stream = "mpsc" | "neet" | "jee" | "cuet-pg";
 export const contentRevision = "2026-09-27";
@@ -22,6 +23,7 @@ export const sources = {
   geography: { title: "NOAA: What is latitude?", url: "https://oceanservice.noaa.gov/facts/latitude.html" },
   education: { title: "Vanderbilt IRIS: Assessment-Centered Learning Environments", url: "https://iris.peabody.vanderbilt.edu/module/hpl/cresource/q1/p04/" },
   ...jeeSources,
+  ...neetSources,
 } as const;
 
 export type SourceId = keyof typeof sources;
@@ -164,8 +166,8 @@ topics.push({
   ],
 });
 
-// JEE foundation topics are fully hand-written, so all their questions are original seeds.
-topics.push(...jeeTopics);
+// Foundation topics are fully hand-written, so all their questions are original seeds.
+topics.push(...jeeTopics, ...neetTopics);
 
 const originalTopicCounts = new Map(topics.map(topic => [topic.id, topic.questions.length]));
 // Append within each topic so existing question IDs and saved progress stay stable.

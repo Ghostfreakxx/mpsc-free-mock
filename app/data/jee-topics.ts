@@ -1,7 +1,8 @@
 import type { QuestionSeed, Stream } from "./reviewed-content";
-import { question } from "./question-builders.ts";
+import { fromItems as build } from "./question-builders.ts";
 
-// Hand-written JEE foundation topics. Every item is original and cites the section it was checked against.
+// Hand-written JEE foundation topics; the Physics and Chemistry ones are also on the NEET syllabus.
+// Every item is original and cites the section it was checked against.
 export const jeeSources = {
   kinematics: { title: "OpenStax University Physics Volume 1: 3.4 Motion with Constant Acceleration", url: "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration" },
   projectile: { title: "OpenStax University Physics Volume 1: 4.3 Projectile Motion", url: "https://openstax.org/books/university-physics-volume-1/pages/4-3-projectile-motion" },
@@ -16,18 +17,13 @@ export const jeeSources = {
   differentiation: { title: "OpenStax Calculus Volume 1: 3.3 Differentiation Rules", url: "https://openstax.org/books/calculus-volume-1/pages/3-3-differentiation-rules" },
 } as const;
 
-type Item = [prompt: string, correct: string, distractors: [string, string, string], explanation: string, location: string];
 type JeeTopic = {
   id: string; subject: string; title: string; sourceId: keyof typeof jeeSources;
   streams: Stream[]; notes: string[]; pitfall: string; questions: QuestionSeed[];
 };
 
-// Rotating the correct option by item index spreads answers evenly across positions.
-const build = (items: Item[]): QuestionSeed[] =>
-  items.map(([prompt, correct, distractors, explanation, location], index) => question(prompt, correct, distractors, explanation, location, index));
-
 export const jeeTopics: JeeTopic[] = [
-  { id: "jee-kinematics", subject: "Physics", title: "Motion with constant acceleration", sourceId: "kinematics", streams: ["jee"],
+  { id: "jee-kinematics", subject: "Physics", title: "Motion with constant acceleration", sourceId: "kinematics", streams: ["jee", "neet"],
     notes: ["For constant acceleration: v = u + at, s = ut + (1/2)at^2 and v^2 = u^2 + 2as. Choose the equation that contains your three known quantities and the one unknown.", "The slope of a velocity-time graph is acceleration; the area under it is displacement. In free fall near Earth, acceleration is g downward throughout the flight, including at the highest point."],
     pitfall: "Zero velocity does not mean zero acceleration. Fix a positive direction and keep signs consistent.",
     questions: build([
@@ -44,7 +40,7 @@ export const jeeTopics: JeeTopic[] = [
       ["A body starts from rest with a constant acceleration of 4 m/s^2. How far does it travel during the 3rd second alone?", "10 m", ["18 m", "8 m", "12 m"], "Distance in 3 s = 0.5 x 4 x 9 = 18 m; in 2 s = 0.5 x 4 x 4 = 8 m. During the 3rd second: 18 - 8 = 10 m.", "Section 3.4: x = x0 + v0t + (1/2)at^2; original calculation"],
       ["With the same constant deceleration, a car's initial speed is doubled. Its stopping distance becomes:", "Four times as large", ["Unchanged", "Twice as large", "Half as large"], "Stopping distance u^2/(2a) is proportional to u^2, so doubling u multiplies it by 4.", "Section 3.4: v^2 = v0^2 + 2a(x - x0)"],
     ]) },
-  { id: "jee-projectile", subject: "Physics", title: "Projectile motion", sourceId: "projectile", streams: ["jee"],
+  { id: "jee-projectile", subject: "Physics", title: "Projectile motion", sourceId: "projectile", streams: ["jee", "neet"],
     notes: ["Treat projectile motion as two independent motions: constant horizontal velocity, and vertical motion with acceleration g downward. Time links the two.", "For launch speed u at angle theta over level ground: time of flight 2u sin(theta)/g, maximum height (u sin(theta))^2/(2g), range u^2 sin(2theta)/g. Range is largest at 45 degrees, and complementary angles give equal ranges."],
     pitfall: "Horizontal motion has no acceleration without air resistance; do not apply g to the horizontal component.",
     questions: build([
@@ -60,7 +56,7 @@ export const jeeTopics: JeeTopic[] = [
       ["The maximum range of a projectile launched at 20 m/s over level ground, with g = 10 m/s^2, is:", "40 m", ["20 m", "80 m", "10 m"], "Maximum range = u^2/g = 400/10 = 40 m, at 45 degrees.", "Section 4.3: range equation"],
       ["From the same height at the same instant, one ball is dropped and another is launched horizontally. Ignoring air resistance, which reaches the level ground first?", "Both land at the same time", ["The dropped ball", "The launched ball", "The heavier ball"], "Both start with zero vertical velocity and have the same vertical acceleration, so their fall times are equal.", "Section 4.3: independence of horizontal and vertical motion"],
     ]) },
-  { id: "jee-work-energy", subject: "Physics", title: "Work and the work-energy theorem", sourceId: "workEnergy", streams: ["jee"],
+  { id: "jee-work-energy", subject: "Physics", title: "Work and the work-energy theorem", sourceId: "workEnergy", streams: ["jee", "neet"],
     notes: ["Kinetic energy is (1/2)mv^2. The work-energy theorem states that the net work done on a particle equals its change in kinetic energy.", "Work by a constant force is F d cos(theta). A force perpendicular to the displacement does no work; kinetic friction on a sliding object does negative work."],
     pitfall: "Use net work, not the work of one force, when applying the work-energy theorem.",
     questions: build([
@@ -77,7 +73,7 @@ export const jeeTopics: JeeTopic[] = [
       ["A 0.5 kg stone falls 10 m from rest. Taking g = 10 m/s^2 and ignoring air resistance, its speed is approximately:", "14.1 m/s", ["10 m/s", "20 m/s", "100 m/s"], "Work by gravity = mgh = 50 J = 0.5 x 0.5 x v^2, so v^2 = 200 and v = 14.1 m/s.", "Section 7.3: work-energy theorem; original calculation"],
       ["The joule, the SI unit of work, is equivalent to:", "N m", ["N/m", "kg m/s", "W/s"], "Work is force times displacement, so 1 J = 1 N m.", "Section 7.3: units of work and energy"],
     ]) },
-  { id: "jee-mole-concept", subject: "Chemistry", title: "Mole concept and molar mass", sourceId: "moleConcept", streams: ["jee"],
+  { id: "jee-mole-concept", subject: "Chemistry", title: "Mole concept and molar mass", sourceId: "moleConcept", streams: ["jee", "neet"],
     notes: ["One mole contains 6.022 x 10^23 entities (Avogadro's number). Molar mass in g/mol is numerically equal to the formula mass in amu.", "Moles = mass / molar mass. Count atoms within a formula to convert moles of a compound to moles of each element."],
     pitfall: "Equal masses of different substances do not contain equal numbers of particles.",
     questions: build([
@@ -93,7 +89,7 @@ export const jeeTopics: JeeTopic[] = [
       ["How many moles of oxygen atoms are present in 2 mol of CO2?", "4", ["2", "1", "6"], "Each CO2 contains 2 O atoms, so 2 mol CO2 contains 4 mol O atoms.", "Section 3.1: moles of elements within compounds"],
       ["Using a molar mass of 100 g/mol for CaCO3, the mass of 0.25 mol is:", "25 g", ["40 g", "100 g", "4 g"], "Mass = 0.25 x 100 = 25 g.", "Section 3.1: converting moles to mass"],
     ]) },
-  { id: "jee-molarity", subject: "Chemistry", title: "Molarity and dilution", sourceId: "molarity", streams: ["jee"],
+  { id: "jee-molarity", subject: "Chemistry", title: "Molarity and dilution", sourceId: "molarity", streams: ["jee", "neet"],
     notes: ["Molarity M = moles of solute / litres of solution. Convert millilitres to litres before dividing.", "Dilution adds solvent but not solute, so moles of solute are conserved: M1V1 = M2V2."],
     pitfall: "Molarity uses the volume of the solution, not the volume of solvent added.",
     questions: build([
@@ -108,7 +104,7 @@ export const jeeTopics: JeeTopic[] = [
       ["What mass of NaOH (40 g/mol) is needed to make 2 L of a 0.5 M solution?", "40 g", ["20 g", "80 g", "10 g"], "Moles = 0.5 x 2 = 1 mol; mass = 1 x 40 = 40 g.", "Section 3.3: mass of solute from molarity"],
       ["Why does the molarity of a solution change slightly with temperature?", "The solution's volume changes", ["The solute's mass changes", "The moles of solute change", "Avogadro's number changes"], "Liquids expand or contract with temperature, changing the volume in the denominator.", "Section 3.3: definition of molarity; original reasoning"],
     ]) },
-  { id: "jee-ideal-gas", subject: "Chemistry", title: "Gas laws and the ideal gas equation", sourceId: "idealGas", streams: ["jee"],
+  { id: "jee-ideal-gas", subject: "Chemistry", title: "Gas laws and the ideal gas equation", sourceId: "idealGas", streams: ["jee", "neet"],
     notes: ["Boyle's law: at constant T and n, PV is constant. Charles's law: at constant P and n, V/T is constant. Amontons's (Gay-Lussac's) law: at constant V and n, P/T is constant.", "The ideal gas law PV = nRT combines these; R = 0.08206 L atm mol^-1 K^-1. Temperatures must be in kelvin. The law is most accurate at low pressure and moderate temperature."],
     pitfall: "Always convert Celsius to kelvin before using any gas law ratio.",
     questions: build([

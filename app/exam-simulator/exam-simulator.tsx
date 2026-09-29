@@ -5,8 +5,8 @@ import { ArrowLeft, ArrowRight, Bookmark, Clock, Eraser, Grid3x3, RotateCcw, Sen
 import { Fragment, useEffect, useMemo, useState } from "react";
 import { getReviewedQuestions, reviewedQuestions } from "../data/reviewed-content";
 import {
-  clearAnswer, examConfigs, formatClock, goTo, maxLength, questionStatus, restoreAttempt, scoreAttempt,
-  selectAnswer, selectQuestions, startAttempt, submitAttempt, summarize, toggleMark,
+  addToHistory, clearAnswer, examConfigs, formatClock, goTo, maxLength, questionStatus, restoreAttempt, scoreAttempt,
+  selectAnswer, selectQuestions, startAttempt, statusCounts, submitAttempt, summarize, toggleMark,
   type Attempt, type AttemptResult, type AttemptSummary, type ExamId, type QuestionStatus,
 } from "../lib/exam-simulator";
 import styles from "./simulator.module.css";
@@ -39,7 +39,10 @@ function readHistory(): AttemptSummary[] {
   } catch { return []; }
 }
 const minutes = (ms: number) => `${Math.round(ms / 60000)} min`;
-const seconds = (ms: number) => ms < 60000 ? `${Math.round(ms / 1000)} s` : `${Math.floor(ms / 60000)} min ${Math.round((ms % 60000) / 1000)} s`;
+const seconds = (ms: number) => {
+  const total = Math.round(ms / 1000);
+  return total < 60 ? `${total} s` : `${Math.floor(total / 60)} min ${total % 60} s`;
+};
 // Event handlers read the wall clock through this helper; render code never calls it.
 const clockNow = () => Date.now();
 const formatScore = (value: number) => Number.isInteger(value) ? String(value) : value.toFixed(2);
@@ -94,7 +97,7 @@ export default function ExamSimulator() {
   function finish(current: Attempt, at: number) {
     const submitted = submitAttempt(current, at);
     const summary = summarize(submitted, scoreAttempt(submitted, examConfigs[submitted.examId], questionsById));
-    const nextHistory = [summary, ...readHistory()].slice(0, 10);
+    const nextHistory = addToHistory(readHistory(), summary);
     writeStorage(HISTORY_KEY, JSON.stringify(nextHistory));
     setHistory(nextHistory);
     setConfirming(false);
@@ -142,7 +145,8 @@ export default function ExamSimulator() {
     const response = attempt.responses[question.id];
     const remaining = attempt.deadline - now;
     const statuses = attempt.questionIds.map(id => questionStatus(attempt.responses[id]));
-    const count = (status: QuestionStatus) => statuses.filter(value => value === status).length;
+    const counts = statusCounts(attempt);
+    const count = (status: QuestionStatus) => counts[status];
     const answeredCount = count("answered") + count("answered-marked");
     const last = attempt.current === attempt.questionIds.length - 1;
     const nextOrStay = (current: Attempt, at: number) => last ? current : goTo(current, current.current + 1, at);
@@ -205,10 +209,7 @@ export default function ExamSimulator() {
           <h2 id="submit-title">Submit your exam?</h2>
           <p className={styles.muted}>{formatClock(remaining)} left. Answers marked for review are still evaluated. You cannot change answers after submitting.</p>
           <div className={styles.counts}>
-            <div><strong>{answeredCount}</strong>answered</div>
-            <div><strong>{attempt.questionIds.length - answeredCount}</strong>not answered</div>
-            <div><strong>{count("marked") + count("answered-marked")}</strong>marked for review</div>
-            <div><strong>{count("not-visited")}</strong>not visited</div>
+            {(Object.keys(statusLabels) as QuestionStatus[]).map(status => <div key={status}><strong>{count(status)}</strong>{statusLabels[status].toLowerCase()}</div>)}
           </div>
           <div className={styles.startRow}>
             <button type="button" className="button button-outline" autoFocus onClick={() => setConfirming(false)}>Back to exam</button>

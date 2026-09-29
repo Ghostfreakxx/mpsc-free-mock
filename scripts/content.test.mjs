@@ -7,10 +7,14 @@ import { additionalQuestions } from '../app/data/additional-questions.ts';
 import { additionalQuotas, practiceExpansion } from '../app/data/expanded-practice.ts';
 import { numeric } from '../app/data/question-builders.ts';
 import { jeeTopics } from '../app/data/jee-topics.ts';
+import { neetTopics } from '../app/data/neet-topics.ts';
+
+const foundationTopics = [...jeeTopics, ...neetTopics];
+const foundationCount = stream => foundationTopics.filter(topic => topic.streams.includes(stream)).reduce((total, topic) => total + topic.questions.length, 0);
 
 test('each stream retains its published expansion quota', () => {
-  const jeeFoundation = jeeTopics.reduce((total, topic) => total + topic.questions.length, 0);
-  for (const [stream, original] of Object.entries({mpsc: 29, neet: 9, jee: 9 + jeeFoundation, 'cuet-pg': 24})) {
+  for (const [stream, released] of Object.entries({mpsc: 29, neet: 9, jee: 9, 'cuet-pg': 24})) {
+    const original = released + foundationCount(stream);
     const quota = Object.values(additionalQuotas[stream]).reduce((a, b) => a + b, 0);
     assert.equal(getReviewedQuestions(stream).length, original + quota, stream);
     assert.equal(quota, stream === 'mpsc' ? 471 : 200);
@@ -66,7 +70,7 @@ test('independently recompute the science numerical expansion from its question 
 });
 
 test('the expansion covers every topic and uses valid answer indices', () => {
-  assert.deepEqual(Object.keys(additionalQuestions).sort(), topics.filter(topic => !jeeTopics.includes(topic)).map(topic => topic.id).sort());
+  assert.deepEqual(Object.keys(additionalQuestions).sort(), topics.filter(topic => !foundationTopics.includes(topic)).map(topic => topic.id).sort());
   for (const [id, questions] of Object.entries(additionalQuestions)) {
     assert.ok(questions.length >= 3, id);
     for (const [, options, answer] of questions) {
@@ -153,4 +157,30 @@ test('generated discriminant questions are recomputed and not all the same answe
     answers.push(options[answer]);
   }
   assert.equal(new Set(answers).size, answers.length);
+});
+
+test('NEET Biology foundation topics are sourced, balanced and rebalance the NEET bank', () => {
+  const bank = getReviewedQuestions('neet');
+  const biology = bank.filter(question => question.subject === 'Biology').length;
+  assert.ok(biology >= 130, `NEET Biology has ${biology} questions`);
+  for (const topic of neetTopics) {
+    assert.ok(topic.questions.length >= 9 && topic.notes.length > 0 && topic.pitfall, topic.id);
+    assert.equal(new URL(sources[topic.sourceId].url).hostname, 'openstax.org', topic.id);
+    const published = bank.filter(question => question.id.startsWith(`${topic.id}-`));
+    assert.equal(published.length, topic.questions.length, topic.id);
+    assert.ok(new Set(published.map(question => question.options.indexOf(question.answer))).size >= 3, topic.id);
+  }
+  // Shared Physics and Chemistry topics are published in both streams.
+  for (const id of ['jee-kinematics-1', 'jee-mole-concept-1']) assert.ok(bank.some(question => question.id === id), id);
+  assert.ok(!bank.some(question => question.id.startsWith('jee-logarithms-')));
+});
+
+test('NEET Biology worked answers are independently recomputed', () => {
+  const answer = id => getReviewedQuestions('neet').find(question => question.id === id).answer;
+  assert.equal(answer('neet-dna-structure-4'), `${Number((3.4 / 10).toFixed(2))} nm`);
+  assert.equal(answer('neet-dna-structure-6'), `${(100 - 2 * 30) / 2}%`);
+  assert.equal(answer('neet-meiosis-4'), String(8 / 2));
+  assert.equal(answer('neet-dna-replication-8'), `1/${2 ** 3 / 2}`);
+  assert.equal(answer('neet-inheritance-8'), '2/3');
+  assert.ok(2 ** 23 > 8e6 && 2 ** 23 < 8.5e6);
 });
