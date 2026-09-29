@@ -1,18 +1,9 @@
 import { NextResponse } from "next/server";
+import { offlineGuidance } from "../../lib/study-guidance";
 
 type ChatMessage = {
   role: "user" | "assistant";
   content: string;
-};
-
-type ResourceLink = {
-  label: string;
-  href: string;
-};
-
-type Guidance = {
-  reply: string;
-  links: ResourceLink[];
 };
 
 const MAX_BODY_LENGTH = 24_000;
@@ -28,87 +19,6 @@ function json(data: unknown, status = 200) {
     status,
     headers: { "Cache-Control": "no-store" },
   });
-}
-
-function offlineGuidance(prompt: string): Guidance {
-  const text = prompt.toLowerCase();
-
-  if (/\b(plan|planner|schedule|today|time|hours)\b/.test(text)) {
-    return {
-      reply:
-        "Try a focused 90-minute session: spend 25 minutes revising one topic, 30 minutes answering practice questions, 20 minutes reviewing every miss, then 15 minutes recalling the key points without notes. Keep the session realistic and tick off a step in your study planner when you finish.",
-      links: [{ label: "Open your study dashboard", href: "/" }],
-    };
-  }
-
-  if (/\b(accuracy|wrong|mistake|improv|stuck|review)\b/.test(text)) {
-    return {
-      reply:
-        "After each practice set, sort missed questions into three causes: a fact you did not know, a concept you misunderstood, or a rushed reading. Review just that gap, then retry the question later without looking at the answer. A short error log is more useful than repeating full sets blindly.",
-      links: [{ label: "Review MPSC practice questions", href: "/mock-test" }],
-    };
-  }
-
-  if (/\bjee\b|joint entrance|engineering entrance/.test(text)) {
-    return {
-      reply: "JEE Main practice covers Physics, Chemistry, and Mathematics, with topic filters and explanations for each answer.",
-      links: [{ label: "Open JEE Main practice", href: "/jee" }],
-    };
-  }
-
-  if (/\b(mock|practice|question|quiz|test)\b/.test(text)) {
-    return {
-      reply:
-        "Open MPSC practice, choose a subject, and try a small set without notes. Check the explanation for each answer, especially the ones you guessed, then revisit those topics in your next session.",
-      links: [{ label: "Start MPSC practice", href: "/mock-test" }],
-    };
-  }
-
-  if (/\b(neet|biology|physics|chemistry)\b/.test(text)) {
-    return {
-      reply: "The NEET practice area is in the learning library. For a better recommendation, tell me your subject and the topic you are working on.",
-      links: [{ label: "Open NEET practice", href: "/neet" }],
-    };
-  }
-
-  if (/\b(cuet|postgraduate|pg)\b/.test(text)) {
-    return {
-      reply: "You can find CUET PG practice in the learning library. Share a subject or a question and I can help you work through it.",
-      links: [{ label: "Open CUET PG practice", href: "/cuet-pg" }],
-    };
-  }
-
-  if (/\b(notes|college|arts)\b/.test(text)) {
-    return {
-      reply: "College notes are available in the learning library. Tell me the paper or topic you need and I can help you make a concise revision outline.",
-      links: [{ label: "Browse college notes", href: "/college-notes" }],
-    };
-  }
-
-  if (/\b(syllabus|notification|current affairs|current affair|exam date|deadline)\b/.test(text)) {
-    return {
-      reply:
-        "For current MPSC syllabus details, notifications, dates, and current affairs, use the latest official notice as your source; I do not want to guess on time-sensitive exam information. Paste a notice or question here and I can help explain it.",
-      links: [{ label: "Open the learning dashboard", href: "/" }],
-    };
-  }
-
-  if (/\b(help|what can you|who are you)\b/.test(text)) {
-    return {
-      reply:
-        "I can help you break down a question, plan a focused study session, review wrong answers, or find a practice area. Paste a question or tell me your exam goal and how much time you have today.",
-      links: [
-        { label: "MPSC practice", href: "/mock-test" },
-        { label: "Study dashboard", href: "/" },
-      ],
-    };
-  }
-
-  return {
-    reply:
-      "Tell me what you are studying or paste the question you are stuck on. I can help you reason it through, plan a revision session, or point you to the right practice area.",
-    links: [{ label: "Browse learning resources", href: "/" }],
-  };
 }
 
 function takeRateLimit(request: Request) {

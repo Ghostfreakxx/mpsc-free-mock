@@ -8,7 +8,8 @@ import { mizoManual } from "../app/data/mizo-manual.ts";
 const questions = getReviewedQuestions("mpsc");
 
 test("English source bank is unchanged; source edits require translation review", () => {
-  assert.equal(createHash("sha256").update(JSON.stringify(questions)).digest("hex"), "e2b51ef6ce20aec8a97b10cf98065ba6dc4b2eaa3f52f1130786be540516a0d3");
+  // 2026-09-29: numerical distractor order changed; numerical translations reuse English options, so no text needs review.
+  assert.equal(createHash("sha256").update(JSON.stringify(questions)).digest("hex"), "6fc03ee19174ee8614f96edf5146063182813a4ff4a61d43d970c82363d6da82");
 });
 
 test("all 500 questions and ten categories have complete draft translations", () => {

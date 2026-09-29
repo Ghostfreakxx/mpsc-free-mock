@@ -19,6 +19,8 @@ type ChatMessage = {
   content: string;
   links?: ChatLink[];
   mode?: "ai" | "offline";
+  // Connection or server errors are shown to the student but never sent back as conversation history.
+  failed?: boolean;
 };
 
 const suggestions = [
@@ -32,6 +34,8 @@ const openingMessage: ChatMessage = {
   content:
     "Hi, I’m your MPSC study mentor. Bring me a question, a topic you’re revising, or the time you have today and we’ll find a useful next step.",
 };
+
+class AssistantError extends Error {}
 
 export default function ChatAssistant() {
   const [isOpen, setIsOpen] = useState(false);
@@ -97,19 +101,19 @@ export default function ChatAssistant() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           messages: nextMessages
-            .filter((message) => message.role === "user" || message.role === "assistant")
+            .filter((message) => !message.failed)
             .slice(-8)
             .map(({ role, content: messageContent }) => ({ role, content: messageContent })),
         }),
       });
-      const result = (await response.json()) as {
+      const result = (await response.json().catch(() => ({}))) as {
         reply?: string;
         links?: ChatLink[];
         mode?: "ai" | "offline";
         error?: string;
       };
 
-      if (!response.ok) throw new Error(result.error || "The assistant could not answer that just now.");
+      if (!response.ok) throw new AssistantError(result.error || "The assistant could not answer that just now.");
       setMessages((current) => [
         ...current,
         {
@@ -124,12 +128,14 @@ export default function ChatAssistant() {
         ...current,
         {
           role: "assistant",
+          // Only server-written messages are shown; browser errors like "Failed to fetch" are not.
           content:
-            error instanceof Error
+            error instanceof AssistantError
               ? error.message
-              : "I could not reach the study assistant. Please try again in a moment.",
+              : "I could not reach the study assistant. Check your connection and try again in a moment.",
           links: [{ label: "Open MPSC practice", href: "/mock-test" }],
           mode: "offline",
+          failed: true,
         },
       ]);
     } finally {

@@ -29,6 +29,7 @@ export interface QuestionRotationState {
 
 const STORAGE_PREFIX = "question-rotation:v1:";
 const MAX_REVIEW_INTERVAL = 24;
+const SKIP_REVIEW_INTERVAL = 3;
 
 function shuffle(values: readonly string[], random: () => number): string[] {
   const result = [...values];
@@ -94,62 +95,86 @@ export function createRotation(
   return makeRound(ids, random, 1, "", 0, []);
 }
 
+function isStoredState(value: unknown): value is QuestionRotationState {
+  if (!value || typeof value !== "object") return false;
+  const state = value as Partial<QuestionRotationState>;
+  return (
+    state.version === 1 &&
+    Array.isArray(state.order) &&
+    state.order.every((id) => typeof id === "string") &&
+    new Set(state.order).size === state.order.length &&
+    Number.isInteger(state.cursor) &&
+    state.cursor! >= 0 &&
+    state.cursor! <= state.order.length &&
+    typeof state.activeId === "string" &&
+    (state.activeMode === "fresh" || state.activeMode === "review") &&
+    Number.isInteger(state.round) &&
+    state.round! >= 1 &&
+    typeof state.lastRoundFirst === "string" &&
+    Number.isInteger(state.freshCompleted) &&
+    state.freshCompleted! >= 0 &&
+    (state.answered === undefined || typeof state.answered === "boolean") &&
+    (state.selectedAnswer === undefined || typeof state.selectedAnswer === "string") &&
+    Array.isArray(state.reviews) &&
+    state.reviews.every(
+      (review) =>
+        review &&
+        typeof review.id === "string" &&
+        Number.isInteger(review.dueAt) &&
+        review.dueAt >= 0 &&
+        Number.isInteger(review.interval) &&
+        review.interval > 0 &&
+        Number.isInteger(review.attempts) &&
+        review.attempts >= 0,
+    ) &&
+    new Set(state.reviews.map((review) => review.id)).size === state.reviews.length
+  );
+}
+
+// When questions are added, edited or removed, keep the student's place, the
+// questions already seen this round and the review queue for questions that remain.
+function reconcileRotation(
+  state: QuestionRotationState,
+  ids: readonly string[],
+  random: () => number,
+): QuestionRotationState | null {
+  const idSet = new Set(ids);
+  const stored = new Set(state.order);
+  if (state.cursor >= 1 && state.order.length === ids.length && ids.every((id) => stored.has(id)) && idSet.has(state.activeId) && idSet.has(state.lastRoundFirst) && state.reviews.every((review) => idSet.has(review.id))) {
+    return state;
+  }
+  const seen = state.order.slice(0, state.cursor).filter((id) => idSet.has(id));
+  const upcoming = shuffle(
+    [...state.order.slice(state.cursor).filter((id) => idSet.has(id)), ...ids.filter((id) => !stored.has(id))],
+    random,
+  );
+  const reviews = state.reviews.filter((review) => idSet.has(review.id));
+  const order = [...seen, ...upcoming];
+  const lastRoundFirst = idSet.has(state.lastRoundFirst) ? state.lastRoundFirst : order[0] ?? "";
+  if (order.length === 0) return null;
+
+  if (idSet.has(state.activeId) && (state.activeMode === "review" || seen.includes(state.activeId))) {
+    return { ...state, order, cursor: seen.length, lastRoundFirst, reviews };
+  }
+  // The active question no longer exists: move on to the next unseen one.
+  const base = { ...state, order, lastRoundFirst, reviews, answered: false, selectedAnswer: "" };
+  if (seen.length < order.length) {
+    return { ...base, cursor: seen.length + 1, activeId: order[seen.length], activeMode: "fresh" };
+  }
+  return makeRound(ids, random, state.round + 1, lastRoundFirst, state.freshCompleted, reviews);
+}
+
 export function restoreRotation(
   serialized: string | null,
   ids: readonly string[],
   random: () => number = Math.random,
 ): QuestionRotationState | null {
-  if (!serialized) return createRotation(ids, random);
+  if (!serialized || ids.length === 0) return createRotation(ids, random);
   try {
     const value: unknown = JSON.parse(serialized);
-    if (!value || typeof value !== "object") return createRotation(ids, random);
-    const state = value as Partial<QuestionRotationState>;
-    const idSet = new Set(ids);
-    const validOrder =
-      Array.isArray(state.order) &&
-      state.order.length === ids.length &&
-      new Set(state.order).size === ids.length &&
-      state.order.every((id) => typeof id === "string" && idSet.has(id));
-    const validReviews =
-      Array.isArray(state.reviews) &&
-      state.reviews.every(
-        (review) =>
-          review &&
-          typeof review.id === "string" &&
-          idSet.has(review.id) &&
-          Number.isInteger(review.dueAt) &&
-          review.dueAt >= 0 &&
-          Number.isInteger(review.interval) &&
-          review.interval > 0 &&
-          Number.isInteger(review.attempts) &&
-          review.attempts >= 0,
-      ) &&
-      new Set(state.reviews.map((review) => review.id)).size ===
-        state.reviews.length;
-
-    if (
-      state.version === 1 &&
-      validOrder &&
-      Number.isInteger(state.cursor) &&
-      state.cursor! >= 1 &&
-      state.cursor! <= ids.length &&
-      typeof state.activeId === "string" &&
-      idSet.has(state.activeId) &&
-      (state.activeMode === "fresh" || state.activeMode === "review") &&
-      Number.isInteger(state.round) &&
-      state.round! >= 1 &&
-      typeof state.lastRoundFirst === "string" &&
-      idSet.has(state.lastRoundFirst) &&
-      Number.isInteger(state.freshCompleted) &&
-      state.freshCompleted! >= 0 &&
-      (state.answered === undefined || typeof state.answered === "boolean") &&
-      (state.selectedAnswer === undefined || typeof state.selectedAnswer === "string") &&
-      validReviews
-    ) {
-      return state as QuestionRotationState;
-    }
+    if (isStoredState(value)) return reconcileRotation(value, ids, random);
   } catch {
-    return createRotation(ids, random);
+    // Fall through to a fresh rotation.
   }
   return createRotation(ids, random);
 }
@@ -185,7 +210,20 @@ export function advanceRotation(
 ): QuestionRotationState | null {
   const freshCompleted =
     state.freshCompleted + (state.activeMode === "fresh" ? 1 : 0);
-  const base = { ...state, freshCompleted, answered: false, selectedAnswer: "" };
+  // A skipped question returns later instead of silently counting as done.
+  // Skips do not grow the review interval or the attempt count.
+  const reviews = state.answered
+    ? state.reviews
+    : [
+        ...state.reviews.filter((review) => review.id !== state.activeId),
+        {
+          id: state.activeId,
+          dueAt: freshCompleted + SKIP_REVIEW_INTERVAL,
+          interval: state.reviews.find((review) => review.id === state.activeId)?.interval ?? SKIP_REVIEW_INTERVAL,
+          attempts: state.reviews.find((review) => review.id === state.activeId)?.attempts ?? 0,
+        },
+      ];
+  const base = { ...state, freshCompleted, reviews, answered: false, selectedAnswer: "" };
   const dueReview = [...base.reviews]
     .filter(
       (review) => review.id !== state.activeId && review.dueAt <= freshCompleted,

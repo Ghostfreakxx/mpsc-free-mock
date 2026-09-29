@@ -1,5 +1,6 @@
 import { additionalQuestions } from "./additional-questions.ts";
 import { additionalQuotas, practiceExpansion } from "./expanded-practice.ts";
+import { jeeSources, jeeTopics } from "./jee-topics.ts";
 
 export type Stream = "mpsc" | "neet" | "jee" | "cuet-pg";
 export const contentRevision = "2026-09-27";
@@ -20,6 +21,7 @@ export const sources = {
   history: { title: "NCERT Themes in Indian History I: Bricks, Beads and Bones", url: "https://ncert.nic.in/textbook/pdf/lehs101.pdf" },
   geography: { title: "NOAA: What is latitude?", url: "https://oceanservice.noaa.gov/facts/latitude.html" },
   education: { title: "Vanderbilt IRIS: Assessment-Centered Learning Environments", url: "https://iris.peabody.vanderbilt.edu/module/hpl/cresource/q1/p04/" },
+  ...jeeSources,
 } as const;
 
 export type SourceId = keyof typeof sources;
@@ -161,6 +163,9 @@ topics.push({
     ["A rectangle is 3 cm longer than it is wide and has area 28 cm^2. Its width is:", ["7 cm", "14 cm", "4 cm", "3 cm"], 2, "w(w + 3) = 28 gives (w + 7)(w - 4) = 0. A width is positive, so w = 4 cm.", "Section 2.5: geometric applications; original worked example"],
   ],
 });
+
+// JEE foundation topics are fully hand-written, so all their questions are original seeds.
+topics.push(...jeeTopics);
 
 const originalTopicCounts = new Map(topics.map(topic => [topic.id, topic.questions.length]));
 // Append within each topic so existing question IDs and saved progress stay stable.
