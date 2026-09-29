@@ -10,7 +10,9 @@
     "validate:banks": "node --experimental-strip-types scripts/validate-question-banks.mjs",
     "test:content": "node --experimental-strip-types --test scripts/content.test.mjs",
     "test:mizo": "node --experimental-strip-types --test scripts/mizo.test.mjs",
-    "test:question-rotation": "node --experimental-strip-types --test scripts/question-rotation.test.mjs"
+    "test:question-rotation": "node --experimental-strip-types --test scripts/question-rotation.test.mjs",
+    "test:lecture": "node --test scripts/lecture.test.mjs",
+    "test:guidance": "node --experimental-strip-types --test scripts/guidance.test.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.48.0",
