@@ -81,6 +81,7 @@ const base = process.env.TEST_URL || 'http://localhost:3105';
     await failurePage.unroute('**/lectures/measurements/**');
     await failurePage.getByRole('button', { name: 'Retry audio' }).click();
     await failurePage.waitForFunction(() => document.querySelector('audio')?.readyState >= 3);
+    await audioError.waitFor({ state: 'hidden' });
     assert.equal(await audioError.count(), 0);
     const privatePage = await browser.newPage({ serviceWorkers: 'block' });
     await privatePage.addInitScript(() => {
