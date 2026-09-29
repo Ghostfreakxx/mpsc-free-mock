@@ -1,4 +1,5 @@
 import type { StudyLesson } from "./course";
+import { nextStudyLessons } from "./study-lessons-two.ts";
 
 export const studyLessons: StudyLesson[] = [
   {
@@ -127,4 +128,5 @@ export const studyLessons: StudyLesson[] = [
     ],
     sources: [{ title: "OpenStax: functions and notation", url: "https://openstax.org/books/college-algebra-2e/pages/3-1-functions-and-function-notation" }],
   },
+  ...nextStudyLessons,
 ];
