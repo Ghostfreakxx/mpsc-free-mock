@@ -55,7 +55,7 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
   }
 
   function downloadTranscript() {
-    const text = `${lesson.title}\nEnglish narration · Synthetic female voice\n\n` + lesson.segments.map((segment, index) =>
+    const text = `${lesson.title}\nEnglish narration · American English · Marin · AI-generated voice\n\n` + lesson.segments.map((segment, index) =>
       `${index + 1}. ${segment.title}\n${segment.formula}\n${segment.steps.join("\n")}\n\n${segment.english}\n${segment.note ? `Clarification: ${segment.note}\n` : ""}`
     ).join("\n") + "\nSources\n" + lesson.sources.map(source => `${source.title}: ${source.url}`).join("\n");
     const url = URL.createObjectURL(new Blob([text], { type: "text/plain;charset=utf-8" }));
@@ -137,10 +137,11 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
     </section>}
     <section className={styles.quiz}>
       <h2>Check your understanding</h2>
-      <p>Original practice · {Object.keys(answers).length} / {lesson.quiz.length} answered</p>
+      <p>Original practice · {Object.keys(answers).length} / {lesson.quiz.length} answered · your first choice counts</p>
       {lesson.quiz.map((question, index) => <fieldset key={question.question}>
         <legend>{index + 1}. {question.question}</legend>
-        {question.options.map((option, optionIndex) => <label key={option}><input type="radio" name={`check-${index}`} checked={answers[index] === optionIndex} onChange={() => setAnswers({ ...answers, [index]: optionIndex })} />{option}</label>)}
+        {question.options.map((option, optionIndex) => <label key={option}><input type="radio" name={`check-${index}`} checked={answers[index] === optionIndex} disabled={answers[index] !== undefined}
+          onChange={() => setAnswers(current => current[index] === undefined ? { ...current, [index]: optionIndex } : current)} />{option}</label>)}
         {answers[index] !== undefined && <p role="status" className={answers[index] === question.answer ? styles.correct : styles.incorrect}><strong>{answers[index] === question.answer ? "Correct. " : "Not quite. "}</strong>{question.explanation}</p>}
       </fieldset>)}
       <Link href="/jee">Continue to JEE practice <ArrowRight size={17} /></Link>
