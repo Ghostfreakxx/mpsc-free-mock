@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import { chromium } from 'playwright';
 
 const base = process.env.SMOKE_URL || 'http://localhost:3000';
-const pages = ['/', '/mock-test', '/mizo', '/neet', '/jee', '/cuet-pg', '/college-notes', '/downloads', '/exam-simulator', '/jee/classes', '/jee/classes/units', '/jee/classes/measurements', '/jee/classes/study/straight-line-motion', '/jee/classes/study/mole-concept', '/jee/classes/study/sets-and-functions'];
+const pages = ['/', '/mock-test', '/mizo', '/neet', '/jee', '/cuet-pg', '/college-notes', '/downloads', '/exam-simulator', '/jee/classes', '/jee/classes/units', '/jee/classes/measurements'];
 const failures = [];
 const check = (condition, message) => { if (!condition) failures.push(message); };
 
@@ -38,6 +38,16 @@ try {
   const errors = [];
   page.on('pageerror', error => errors.push(`${page.url()}: ${error.message}`));
   page.on('console', message => { if (message.type() === 'error') errors.push(`${page.url()}: ${message.text()}`); });
+  // Every study lesson linked from the class library is checked, so new lessons are covered automatically.
+  await page.goto(`${base}/jee/classes`);
+  const lessons = new Set();
+  const subjectTabs = page.getByRole('navigation', { name: 'Course subjects' }).getByRole('button');
+  for (let index = 0; index < await subjectTabs.count(); index += 1) {
+    await subjectTabs.nth(index).click();
+    for (const href of await page.locator('a[href^="/jee/classes/study/"]').evaluateAll(links => links.map(link => link.getAttribute('href')))) lessons.add(href);
+  }
+  check(lessons.size > 0, 'no study lessons linked from /jee/classes');
+  pages.push(...lessons);
   for (const path of pages) {
     const response = await page.goto(base + path);
     await page.waitForLoadState('networkidle');
