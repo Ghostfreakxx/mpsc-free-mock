@@ -84,3 +84,42 @@ test("rebuilds invalid or changed-pool state instead of getting stuck", () => {
   assert.equal(new Set(rebuilt.order).size, ids.length);
   assert.equal(restoreRotation(null, [], fixedRandom), null);
 });
+
+test("keeps place, seen questions and reviews when questions are added", () => {
+  const ids = ["a", "b", "c", "d", "e"];
+  let state = createRotation(ids, fixedRandom);
+  const missed = state.activeId;
+  state = recordRotationAnswer(state, missed, false, "wrong");
+  state = advanceRotation(state, ids, fixedRandom);
+  const active = state.activeId;
+  const seen = state.order.slice(0, state.cursor);
+
+  const grown = [...ids, "f", "g"];
+  const restored = restoreRotation(serializeRotation(state), grown, fixedRandom);
+  assert.equal(restored.activeId, active);
+  assert.equal(restored.round, state.round);
+  assert.deepEqual(restored.order.slice(0, restored.cursor), seen);
+  assert.deepEqual(new Set(restored.order), new Set(grown));
+  assert.deepEqual(restored.reviews.map(review => review.id), [missed]);
+  assert.equal(rotationSummary(restored, grown.length).freshRemaining, grown.length - seen.length + 1);
+});
+
+test("moves to the next question and drops reviews when questions are removed", () => {
+  const ids = ["a", "b", "c", "d"];
+  let state = createRotation(ids, fixedRandom);
+  state = recordRotationAnswer(state, state.activeId, false, "wrong");
+  const removed = state.activeId;
+  const remaining = ids.filter(id => id !== removed);
+
+  const restored = restoreRotation(serializeRotation(state), remaining, fixedRandom);
+  assert.ok(remaining.includes(restored.activeId));
+  assert.equal(restored.answered, false);
+  assert.equal(restored.reviews.length, 0);
+  assert.deepEqual(new Set(restored.order), new Set(remaining));
+
+  // Last question of the round removed: a new round starts.
+  const last = { ...state, cursor: ids.length, activeId: state.order.at(-1) };
+  const nextRound = restoreRotation(serializeRotation(last), ids.filter(id => id !== last.activeId), fixedRandom);
+  assert.equal(nextRound.round, state.round + 1);
+  assert.notEqual(nextRound.activeId, last.activeId);
+});
