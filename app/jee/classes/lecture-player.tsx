@@ -26,6 +26,8 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
   useEffect(() => {
     const player = audio.current;
     if (!player) return;
+    // A media request can fail before hydration installs React's error handler.
+    if (player.error) queueMicrotask(() => setError(true));
     const restore = () => {
       if (restored.current) return;
       try {
@@ -89,7 +91,7 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
           {chapter.note && <p className={styles.clarification}><strong>Clarification:</strong> {chapter.note}</p>}
         </div>
         <div className={styles.caption} aria-label="English subtitles">{captions ? cue?.text ?? "English subtitles" : "Subtitles off"}</div>
-        <audio ref={audio} controls preload="metadata" aria-label="Class narration"
+        <audio ref={audio} src={lesson.audio} controls preload="metadata" aria-label="Class narration"
           onRateChange={() => setSpeed(audio.current?.playbackRate ?? 1)}
           onError={() => setError(true)}
           onCanPlay={() => setError(false)}
@@ -101,7 +103,6 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
               try { localStorage.setItem(progressKey, String(current)); } catch { /* Optional local resume. */ }
             }
           }}>
-          <source src={lesson.audio} type="audio/mpeg" onError={() => setError(true)} />
           <track kind="captions" src={lesson.subtitles} srcLang="en-US" label="English" default />
         </audio>
         {error && <p role="alert">The recording could not load. <button onClick={() => audio.current?.load()}>Retry audio</button> or read the transcript below.</p>}

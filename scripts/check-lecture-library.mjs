@@ -6,7 +6,7 @@ const base = process.env.TEST_URL || 'http://localhost:3105';
 (async () => {
   const browser = await chromium.launch({ headless: true, channel: 'msedge' });
   try {
-    const page = await browser.newPage();
+    const page = await browser.newPage({ serviceWorkers: 'block' });
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(`${base}/jee/classes`);
@@ -54,13 +54,15 @@ const base = process.env.TEST_URL || 'http://localhost:3105';
       }
       console.log(`${id}: ${duration.toFixed(3)}s, playback, resume, captions, speed, chapters, quiz, notes, responsive checks passed`);
     }
-    await page.route('**/lectures/measurements/*.mp3', route => route.abort());
-    await page.goto(`${base}/jee/classes/measurements`);
-    const audioError = page.getByRole('alert').filter({ hasText: 'The recording could not load' });
+    const failurePage = await browser.newPage({ serviceWorkers: 'block' });
+    failurePage.on('pageerror', error => errors.push(error.message));
+    await failurePage.route('**/lectures/measurements/**', route => route.abort());
+    await failurePage.goto(`${base}/jee/classes/measurements`);
+    const audioError = failurePage.getByRole('alert').filter({ hasText: 'The recording could not load' });
     await audioError.waitFor();
-    await page.unroute('**/lectures/measurements/*.mp3');
-    await page.getByRole('button', { name: 'Retry audio' }).click();
-    await page.waitForFunction(() => document.querySelector('audio')?.readyState >= 3);
+    await failurePage.unroute('**/lectures/measurements/**');
+    await failurePage.getByRole('button', { name: 'Retry audio' }).click();
+    await failurePage.waitForFunction(() => document.querySelector('audio')?.readyState >= 3);
     assert.equal(await audioError.count(), 0);
     assert.deepEqual(errors, []);
     console.log('Library and both lessons passed. No browser exceptions.');
