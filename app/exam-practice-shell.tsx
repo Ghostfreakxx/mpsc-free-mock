@@ -129,7 +129,10 @@ export default function ExamPracticeShell({
         <section className="academy-content practice-content">
           <div className="page-heading-row practice-heading">
             <div><span className="section-kicker">{eyebrow}</span><h1>{title}</h1><p>{description}</p></div>
-            <Link href={`/downloads#${activeRoute.slice(1)}`} className="button button-outline">Download notes <ArrowUpRight size={15} /></Link>
+            <div className="practice-heading-actions">
+              <Link href={`/exam-simulator?exam=${activeRoute.slice(1)}`} className="button button-dark">Timed exam simulator <ArrowUpRight size={15} /></Link>
+              <Link href={`/downloads#${activeRoute.slice(1)}`} className="button button-outline">Download notes <ArrowUpRight size={15} /></Link>
+            </div>
           </div>
 
           <section className="metric-row practice-metrics exam-practice-metrics" aria-label={`${title} summary`}>

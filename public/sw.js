@@ -1,4 +1,4 @@
-const CACHE_NAME = "mpsc-free-mock-v9";
+const CACHE_NAME = "mpsc-free-mock-v10";
 
 const urlsToCache = [
   "/",
@@ -9,6 +9,7 @@ const urlsToCache = [
   "/jee",
   "/cuet-pg",
   "/downloads",
+  "/exam-simulator",
   "/manifest.webmanifest",
   "/mizoram-study.webp",
   "/icon-192.png",

@@ -166,6 +166,7 @@ return (
             <Link href="/downloads#mpsc">Download MPSC notes</Link>
           </div>
           <div className="practice-heading-actions">
+            <Link href="/exam-simulator?exam=mpsc" className="button button-dark">Timed exam simulator <ArrowUpRight size={15} /></Link>
             <InstallAppButton />
           </div>
         </div>
