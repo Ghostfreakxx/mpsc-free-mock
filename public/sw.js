@@ -1,4 +1,4 @@
-const CACHE_NAME = "mpsc-free-mock-v10";
+const CACHE_NAME = "mpsc-free-mock-v11";
 
 const urlsToCache = [
   "/",
@@ -48,17 +48,20 @@ self.addEventListener("fetch", (event) => {
 
   const url = new URL(request.url);
   // Cache public page navigations and static assets, not API or RSC payloads.
-  const cacheable = !url.search && (request.mode === "navigate" || url.pathname.startsWith("/_next/static/") || url.pathname.startsWith("/downloads/") || urlsToCache.includes(url.pathname));
+  // Navigations with a query string (e.g. /exam-simulator?exam=jee) are served
+  // network-first too, and fall back to the cached page for the same path offline.
+  const navigation = request.mode === "navigate";
+  const cacheable = (navigation || !url.search) && (navigation || url.pathname.startsWith("/_next/static/") || url.pathname.startsWith("/downloads/") || urlsToCache.includes(url.pathname));
   if (!cacheable || request.headers.get("RSC") === "1") return;
   event.respondWith(
     fetch(request).then(async (response) => {
-      if (response.ok && response.type === "basic") {
+      if (response.ok && response.type === "basic" && !url.search) {
         const cache = await caches.open(CACHE_NAME);
         await cache.put(request, response.clone()).catch(() => {});
       }
       return response;
     }).catch(async () => {
-      const cached = await caches.match(request);
+      const cached = await caches.match(request, { ignoreSearch: navigation });
       if (cached) return cached;
       if (request.mode === "navigate" && !url.pathname.startsWith("/downloads/")) {
         const home = await caches.match("/");
