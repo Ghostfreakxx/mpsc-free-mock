@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { getReviewedQuestions } from '../app/data/reviewed-content.ts';
 import {
-  clearAnswer, examConfigs, goTo, maxLength, questionStatus, restoreAttempt, scoreAttempt,
+  addToHistory, clearAnswer, examConfigs, statusCounts, summarize, goTo, maxLength, questionStatus, restoreAttempt, scoreAttempt,
   selectAnswer, selectQuestions, startAttempt, submitAttempt, toggleMark, formatClock,
 } from '../app/lib/exam-simulator.ts';
 
@@ -160,4 +160,38 @@ test('clock formatting', () => {
   assert.equal(formatClock(61_000), '1:01');
   assert.equal(formatClock(3 * 3600_000), '3:00:00');
   assert.equal(formatClock(59_001), '1:00');
+});
+
+test('full-length NEET follows the real 45/45/90 split', () => {
+  const paper = selectQuestions(examConfigs.neet, getReviewedQuestions('neet'), 180, 21);
+  const counts = paper.reduce((all, question) => ({ ...all, [question.subject]: (all[question.subject] ?? 0) + 1 }), {});
+  assert.deepEqual(counts, { Physics: 45, Chemistry: 45, Biology: 90 });
+  assert.ok(examConfigs.neet.lengths.includes(180));
+});
+
+test('submit summary counts are disjoint and add up to the paper length', () => {
+  const paper = selectQuestions(jee, jeePool, 15, 17);
+  let attempt = startAttempt(jee, 'nta', paper, 0);
+  attempt = selectAnswer(attempt, paper[0].answer, 1);        // answered
+  attempt = goTo(attempt, 1, 2); attempt = toggleMark(attempt, 3);  // marked
+  attempt = goTo(attempt, 2, 4); attempt = selectAnswer(attempt, paper[2].answer, 5); attempt = toggleMark(attempt, 6); // answered and marked
+  attempt = goTo(attempt, 3, 7);                              // not answered
+  const counts = statusCounts(attempt);
+  assert.deepEqual(counts, { 'not-visited': 11, 'not-answered': 1, answered: 1, marked: 1, 'answered-marked': 1 });
+  assert.equal(Object.values(counts).reduce((a, b) => a + b, 0), paper.length);
+});
+
+test('history records each attempt once, newest first, capped at ten', () => {
+  const paper = selectQuestions(jee, jeePool, 15, 19);
+  const attempt = submitAttempt(startAttempt(jee, 'nta', paper, 1000), 5000);
+  const summary = summarize(attempt, scoreAttempt(attempt, jee, byId));
+  let history = addToHistory([], summary);
+  history = addToHistory(history, summary);
+  assert.equal(history.length, 1);
+  const legacy = { examId: 'jee', finishedAt: 1, score: 0, max: 60, count: 15, accuracy: null };
+  history = addToHistory([legacy], summary);
+  assert.deepEqual(history.map(item => item.startedAt), [1000, undefined]);
+  for (let i = 0; i < 12; i += 1) history = addToHistory(history, { ...summary, startedAt: 2000 + i });
+  assert.equal(history.length, 10);
+  assert.equal(history[0].startedAt, 2011);
 });

@@ -30,8 +30,8 @@ export const examConfigs: Record<ExamId, ExamConfig> = {
   neet: {
     id: "neet", name: "NEET UG", stream: "neet", secondsPerQuestion: 60,
     subjectWeights: { Physics: 1, Chemistry: 1, Biology: 2 },
-    lengths: [20, 45, 90], markingOptions: [nta],
-    note: "NEET UG pattern: 1 minute per question, +4 for a correct answer and −1 for a wrong one. The real paper gives Biology half the questions; this bank has fewer Biology items, so long papers use more Physics and Chemistry.",
+    lengths: [20, 45, 90, 180], markingOptions: [nta],
+    note: "NEET UG pattern: 180 questions in 3 hours (1 minute each), +4 for a correct answer and −1 for a wrong one, with Biology making up half the paper.",
   },
   "cuet-pg": {
     id: "cuet-pg", name: "CUET PG", stream: "cuet-pg", secondsPerQuestion: 72,
@@ -255,7 +255,7 @@ export function scoreAttempt(attempt: Attempt, config: ExamConfig, questionsById
       toCorrect: questions.filter(result => result.changedToCorrect).length,
       fromCorrect: questions.filter(result => result.changedFromCorrect).length,
     },
-    slowest: [...questions].sort((a, b) => b.timeMs - a.timeMs).slice(0, 3).filter(result => result.timeMs > 0),
+    slowest: [...questions].sort((a, b) => b.timeMs - a.timeMs).slice(0, 3).filter(result => result.timeMs >= 1000),
   };
 }
 
@@ -284,10 +284,23 @@ export function restoreAttempt(serialized: string | null, questionsById: Readonl
   }
 }
 
-export type AttemptSummary = { examId: ExamId; finishedAt: number; score: number; max: number; count: number; accuracy: number | null };
+export type AttemptSummary = { examId: ExamId; startedAt?: number; finishedAt: number; score: number; max: number; count: number; accuracy: number | null };
 
 export function summarize(attempt: Attempt, result: AttemptResult): AttemptSummary {
-  return { examId: attempt.examId, finishedAt: attempt.submittedAt ?? attempt.deadline, score: result.score, max: result.max, count: attempt.questionIds.length, accuracy: result.accuracy };
+  return { examId: attempt.examId, startedAt: attempt.startedAt, finishedAt: attempt.submittedAt ?? attempt.deadline, score: result.score, max: result.max, count: attempt.questionIds.length, accuracy: result.accuracy };
+}
+
+// Newest first, one entry per attempt: a double tap or a tap at time-up must not record a paper twice.
+export function addToHistory(history: readonly AttemptSummary[], summary: AttemptSummary, limit = 10): AttemptSummary[] {
+  const others = history.filter(item => item.startedAt === undefined || item.startedAt !== summary.startedAt);
+  return [summary, ...others].slice(0, limit);
+}
+
+// The five disjoint palette categories, as the CBT summary shows them; they always add up to the paper length.
+export function statusCounts(attempt: Attempt): Record<QuestionStatus, number> {
+  const counts: Record<QuestionStatus, number> = { "not-visited": 0, "not-answered": 0, answered: 0, marked: 0, "answered-marked": 0 };
+  for (const id of attempt.questionIds) counts[questionStatus(attempt.responses[id])] += 1;
+  return counts;
 }
 
 export function formatClock(ms: number) {
