@@ -22,6 +22,18 @@ test('numerical options do not reveal the answer by always making it the smalles
   assert.ok(options.some(option => Number(option) > 10));
 });
 
+test('numerical answers are not guessable from their rank among the options', () => {
+  for (const stream of ['mpsc', 'neet', 'jee', 'cuet-pg']) {
+    const ranks = [0, 0, 0, 0];
+    const numerical = getReviewedQuestions(stream).filter(q => q.sourceLocation.includes('numerical variant'));
+    for (const q of numerical) {
+      const values = q.options.map(option => parseFloat(option)).sort((a, b) => a - b);
+      ranks[values.indexOf(parseFloat(q.answer))]++;
+    }
+    for (const count of ranks) assert.ok(count <= numerical.length * 0.4, `${stream} answer ranks are skewed: ${ranks}`);
+  }
+});
+
 test('independently recompute the science numerical expansion from its question text', () => {
   for (const [prompt, options, answer] of practiceExpansion.physics) {
     let expected;
