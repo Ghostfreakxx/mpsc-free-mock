@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Captions, Download, RotateCcw } from "lucide-react";
 import type { Lecture } from "./lessons";
+import { readAnswers, serializeAnswers } from "./progress";
 import styles from "./lecture.module.css";
 
 const formatTime = (value: number) => `${Math.floor(value / 60)}:${Math.floor(value % 60).toString().padStart(2, "0")}`;
@@ -17,11 +18,32 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
   const [captions, setCaptions] = useState(true);
   const [error, setError] = useState(false);
   const [answers, setAnswers] = useState<Record<number, number>>({});
+  const [practiceReady, setPracticeReady] = useState(false);
+  const [practiceSaved, setPracticeSaved] = useState(true);
   const lastSaved = useRef(-1);
   const restored = useRef(false);
   const cue = timings.cues.find(item => time >= item.start && time < item.end);
   const chapterIndex = Math.max(0, chapterStarts.findLastIndex(start => time >= start));
   const chapter = lesson.segments[chapterIndex];
+
+  useEffect(() => {
+    let active = true;
+    queueMicrotask(() => {
+      if (!active) return;
+      try { setAnswers(readAnswers(localStorage.getItem(`${progressKey}.answers`), lesson.quiz)); }
+      catch { setPracticeSaved(false); }
+      setPracticeReady(true);
+    });
+    return () => { active = false; };
+  }, [progressKey, lesson.quiz]);
+
+  function saveAnswers(next: Record<number, number>) {
+    setAnswers(next);
+    try {
+      localStorage.setItem(`${progressKey}.answers`, serializeAnswers(next, lesson.quiz));
+      setPracticeSaved(true);
+    } catch { setPracticeSaved(false); }
+  }
 
   useEffect(() => {
     const player = audio.current;
@@ -136,12 +158,12 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
       <Link href="/jee/classes/measurements">Open the measurement class <ArrowRight size={17} /></Link>
     </section>}
     <section className={styles.quiz}>
-      <h2>Check your understanding</h2>
-      <p>Original practice · {Object.keys(answers).length} / {lesson.quiz.length} answered · your first choice counts</p>
+      <div className={styles.sectionHeading}><h2>Check your understanding</h2><button disabled={!practiceReady || Object.keys(answers).length === 0} onClick={() => saveAnswers({})}><RotateCcw size={17} /> Retry practice</button></div>
+      <p>Original practice · {Object.keys(answers).length} / {lesson.quiz.length} answered · {lesson.quiz.filter((question, index) => answers[index] === question.answer).length} correct</p>
+      <p className={styles.saveStatus}>{!practiceReady ? "Loading saved answers..." : practiceSaved ? "Answers saved on this browser" : "Answers cannot be saved in this browser. This attempt is temporary."}</p>
       {lesson.quiz.map((question, index) => <fieldset key={question.question}>
         <legend>{index + 1}. {question.question}</legend>
-        {question.options.map((option, optionIndex) => <label key={option}><input type="radio" name={`check-${index}`} checked={answers[index] === optionIndex} disabled={answers[index] !== undefined}
-          onChange={() => setAnswers(current => current[index] === undefined ? { ...current, [index]: optionIndex } : current)} />{option}</label>)}
+        {question.options.map((option, optionIndex) => <label key={option}><input type="radio" disabled={!practiceReady || answers[index] !== undefined} name={`check-${index}`} checked={answers[index] === optionIndex} onChange={() => { if (answers[index] === undefined) saveAnswers({ ...answers, [index]: optionIndex }); }} />{option}</label>)}
         {answers[index] !== undefined && <p role="status" className={answers[index] === question.answer ? styles.correct : styles.incorrect}><strong>{answers[index] === question.answer ? "Correct. " : "Not quite. "}</strong>{question.explanation}</p>}
       </fieldset>)}
       <Link href="/jee">Continue to JEE practice <ArrowRight size={17} /></Link>

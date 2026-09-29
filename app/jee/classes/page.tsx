@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, Clock, BookOpen } from "lucide-react";
+import { ArrowLeft, Clock, BookOpen } from "lucide-react";
+import ClassProgress from "./class-progress";
 import { lectures } from "./lessons";
 import styles from "./lecture.module.css";
 
@@ -19,7 +20,7 @@ export default function ClassLibrary() {
         <div className={styles.lessonNumber}><BookOpen size={28} /><span>{lesson.number}</span></div>
         <div><h2>{lesson.title}</h2><p>{lesson.description}</p>
           <p className={styles.lessonMeta}><Clock size={15} /> {Math.floor(lesson.timings.duration / 60)}:{String(Math.floor(lesson.timings.duration % 60)).padStart(2, "0")} <span>{lesson.segments.length} chapters</span><span>{lesson.quiz.length} practice checks</span></p>
-          <Link href={`/jee/classes/${lesson.id}`}>Open class <ArrowRight size={17} /></Link>
+          <ClassProgress id={lesson.id} progressKey={lesson.progressKey} duration={lesson.timings.duration} quiz={lesson.quiz} />
         </div>
       </article>)}
     </section>
