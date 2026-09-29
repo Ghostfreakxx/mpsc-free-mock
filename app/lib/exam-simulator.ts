@@ -284,6 +284,14 @@ export function restoreAttempt(serialized: string | null, questionsById: Readonl
   }
 }
 
+// Which saved attempt to show on arrival. A paper in progress always resumes, so it is never
+// lost; a finished paper gives way to the setup screen when a link asks for a specific exam
+// (its score is already in history).
+export function attemptOnArrival(saved: Attempt | null, requestedExam: string | null): Attempt | null {
+  if (!saved || saved.submittedAt === undefined) return saved;
+  return requestedExam && requestedExam in examConfigs ? null : saved;
+}
+
 export type AttemptSummary = { examId: ExamId; startedAt?: number; finishedAt: number; score: number; max: number; count: number; accuracy: number | null };
 
 export function summarize(attempt: Attempt, result: AttemptResult): AttemptSummary {

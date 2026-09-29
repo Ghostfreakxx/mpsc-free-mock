@@ -77,7 +77,7 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
   }
 
   function downloadTranscript() {
-    const text = `${lesson.title}\nEnglish narration · Synthetic female voice\n\n` + lesson.segments.map((segment, index) =>
+    const text = `${lesson.title}\nEnglish narration · American English · Marin · AI-generated voice\n\n` + lesson.segments.map((segment, index) =>
       `${index + 1}. ${segment.title}\n${segment.formula}\n${segment.steps.join("\n")}\n\n${segment.english}\n${segment.note ? `Clarification: ${segment.note}\n` : ""}`
     ).join("\n") + "\nSources\n" + lesson.sources.map(source => `${source.title}: ${source.url}`).join("\n");
     const url = URL.createObjectURL(new Blob([text], { type: "text/plain;charset=utf-8" }));
@@ -163,7 +163,7 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
       <p className={styles.saveStatus}>{!practiceReady ? "Loading saved answers..." : practiceSaved ? "Answers saved on this browser" : "Answers cannot be saved in this browser. This attempt is temporary."}</p>
       {lesson.quiz.map((question, index) => <fieldset key={question.question}>
         <legend>{index + 1}. {question.question}</legend>
-        {question.options.map((option, optionIndex) => <label key={option}><input type="radio" disabled={!practiceReady} name={`check-${index}`} checked={answers[index] === optionIndex} onChange={() => saveAnswers({ ...answers, [index]: optionIndex })} />{option}</label>)}
+        {question.options.map((option, optionIndex) => <label key={option}><input type="radio" disabled={!practiceReady || answers[index] !== undefined} name={`check-${index}`} checked={answers[index] === optionIndex} onChange={() => { if (answers[index] === undefined) saveAnswers({ ...answers, [index]: optionIndex }); }} />{option}</label>)}
         {answers[index] !== undefined && <p role="status" className={answers[index] === question.answer ? styles.correct : styles.incorrect}><strong>{answers[index] === question.answer ? "Correct. " : "Not quite. "}</strong>{question.explanation}</p>}
       </fieldset>)}
       <Link href="/jee">Continue to JEE practice <ArrowRight size={17} /></Link>

@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowRight, Bookmark, Clock, Eraser, Grid3x3, RotateCcw, Sen
 import { Fragment, useEffect, useMemo, useState } from "react";
 import { getReviewedQuestions, reviewedQuestions } from "../data/reviewed-content";
 import {
-  addToHistory, clearAnswer, examConfigs, formatClock, goTo, maxLength, questionStatus, restoreAttempt, scoreAttempt,
+  addToHistory, attemptOnArrival, clearAnswer, examConfigs, formatClock, goTo, maxLength, questionStatus, restoreAttempt, scoreAttempt,
   selectAnswer, selectQuestions, startAttempt, statusCounts, submitAttempt, summarize, toggleMark,
   type Attempt, type AttemptResult, type AttemptSummary, type ExamId, type QuestionStatus,
 } from "../lib/exam-simulator";
@@ -68,7 +68,7 @@ export default function ExamSimulator() {
         const config = examConfigs[requested as ExamId];
         setExamId(config.id); setLength(config.lengths[0]); setMarkingId(config.markingOptions[0].id);
       }
-      setAttempt(saved);
+      setAttempt(attemptOnArrival(saved, requested));
       setHistory(readHistory());
       setNow(Date.now());
       setLoaded(true);
@@ -264,10 +264,10 @@ export default function ExamSimulator() {
 
         <section className={styles.panel}>
           <h2 className={styles.sectionTitle}>By subject</h2>
-          <table className={styles.table}>
+          <div className={styles.tableScroll}><table className={styles.table}>
             <thead><tr><th scope="col">Subject</th><th scope="col">Score</th><th scope="col">Correct</th><th scope="col">Wrong</th><th scope="col">Skipped</th></tr></thead>
             <tbody>{result.bySubject.map(subject => <tr key={subject.subject}><td>{subject.subject}</td><td>{formatScore(subject.score)} / {subject.max}</td><td>{subject.correct}</td><td>{subject.wrong}</td><td>{subject.skipped}</td></tr>)}</tbody>
-          </table>
+          </table></div>
         </section>
 
         <div className={styles.startRow}>

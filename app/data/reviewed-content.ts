@@ -2,6 +2,7 @@ import { additionalQuestions } from "./additional-questions.ts";
 import { additionalQuotas, practiceExpansion } from "./expanded-practice.ts";
 import { jeeSources, jeeTopics } from "./jee-topics.ts";
 import { neetSources, neetTopics } from "./neet-topics.ts";
+import { highYieldSources, highYieldTopics } from "./high-yield-topics.ts";
 
 export type Stream = "mpsc" | "neet" | "jee" | "cuet-pg";
 export const contentRevision = "2026-09-27";
@@ -24,6 +25,7 @@ export const sources = {
   education: { title: "Vanderbilt IRIS: Assessment-Centered Learning Environments", url: "https://iris.peabody.vanderbilt.edu/module/hpl/cresource/q1/p04/" },
   ...jeeSources,
   ...neetSources,
+  ...highYieldSources,
 } as const;
 
 export type SourceId = keyof typeof sources;
@@ -167,7 +169,7 @@ topics.push({
 });
 
 // Foundation topics are fully hand-written, so all their questions are original seeds.
-topics.push(...jeeTopics, ...neetTopics);
+topics.push(...jeeTopics, ...neetTopics, ...highYieldTopics);
 
 const originalTopicCounts = new Map(topics.map(topic => [topic.id, topic.questions.length]));
 // Append within each topic so existing question IDs and saved progress stay stable.
@@ -199,7 +201,9 @@ export const notePacks: NotePack[] = [
     id: stream, title: ({ mpsc: "MPSC", neet: "NEET", jee: "JEE Main", "cuet-pg": "CUET PG" })[stream] + " foundation notes",
     group: "Exam streams", topicIds: topics.filter(topic => topic.streams.includes(stream)).map(topic => topic.id),
   })),
-  ...topics.filter(topic => collegeSubjects.includes(topic.subject)).map(topic => ({
-    id: topic.id, title: `${topic.subject} revision notes`, group: "College subjects", topicIds: [topic.id],
-  })),
+  // One pack per college subject, keyed by its first topic's id so existing download links keep working.
+  ...collegeSubjects.flatMap(subject => {
+    const subjectTopics = topics.filter(topic => topic.subject === subject);
+    return subjectTopics.length ? [{ id: subjectTopics[0].id, title: `${subject} revision notes`, group: "College subjects", topicIds: subjectTopics.map(topic => topic.id) }] : [];
+  }),
 ];
