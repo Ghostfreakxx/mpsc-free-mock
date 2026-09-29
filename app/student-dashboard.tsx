@@ -78,6 +78,15 @@ const courses: {
     format: "Practice bank",
   },
   {
+    title: "Exam simulator",
+    subject: "All exams",
+    description: "Timed JEE Main, NEET, CUET PG and MPSC papers with real marking, a question palette and a strategy report.",
+    href: "/exam-simulator",
+    icon: Clock3,
+    theme: "blue",
+    format: "Timed mock",
+  },
+  {
     title: "MPSC: Mizo + English",
     subject: "Civil services",
     description: "Draft Mizo translations alongside the original English questions.",
