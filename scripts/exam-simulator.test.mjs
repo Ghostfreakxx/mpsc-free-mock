@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { getReviewedQuestions } from '../app/data/reviewed-content.ts';
 import {
-  addToHistory, clearAnswer, examConfigs, statusCounts, summarize, goTo, maxLength, questionStatus, restoreAttempt, scoreAttempt,
+  addToHistory, attemptOnArrival, clearAnswer, examConfigs, statusCounts, summarize, goTo, maxLength, questionStatus, restoreAttempt, scoreAttempt,
   selectAnswer, selectQuestions, startAttempt, submitAttempt, toggleMark, formatClock,
 } from '../app/lib/exam-simulator.ts';
 
@@ -194,4 +194,15 @@ test('history records each attempt once, newest first, capped at ten', () => {
   for (let i = 0; i < 12; i += 1) history = addToHistory(history, { ...summary, startedAt: 2000 + i });
   assert.equal(history.length, 10);
   assert.equal(history[0].startedAt, 2011);
+});
+
+test('a link to a specific exam replaces a finished paper but never an unfinished one', () => {
+  const paper = selectQuestions(jee, jeePool, 15, 23);
+  const running = startAttempt(jee, 'nta', paper, 0);
+  const finished = submitAttempt(running, 10);
+  assert.equal(attemptOnArrival(finished, 'neet'), null);
+  assert.equal(attemptOnArrival(finished, null), finished);
+  assert.equal(attemptOnArrival(finished, 'unknown-exam'), finished);
+  assert.equal(attemptOnArrival(running, 'neet'), running);
+  assert.equal(attemptOnArrival(null, 'neet'), null);
 });
