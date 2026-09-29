@@ -1,0 +1,28 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:33.960
+A measurement is not a perfect label attached to an object. It is our best estimate, made with a particular instrument and method. When you read a ruler, the final digit is an estimate between markings. That is why a careful measurement should communicate both a value and its uncertainty. Precision describes how finely we can repeat or resolve a measurement. Accuracy describes how close the result is to the accepted value. A result can be very precise and still be inaccurate if the instrument has a zero error.
+
+00:00:34.360 --> 00:01:05.608
+Significant figures tell the reader how much information a measured number carries. In zero point zero zero four five zero, the leading zeros only locate the decimal place, so they do not count. The four, five, and final zero do count. That gives three significant figures. In contrast, zeros between non-zero digits are significant. Write numbers in scientific notation when a string of zeros could confuse the intended precision. The coefficient makes the significant figures visible.
+
+00:01:06.008 --> 00:01:33.464
+To round two point seven four six to three significant figures, keep two, seven, and four, then inspect the next digit, six. Because it is five or greater, increase the last kept digit. The result is two point seven five. In a multi-step calculation, keep a guard digit during the working and round only the final answer. Rounding at every line can push the result away from the measured information. The final format should match the precision justified by the data.
+
+00:01:33.864 --> 00:02:02.832
+For addition and subtraction, the rule is about decimal places, not the total number of significant figures. Add twelve point one one and zero point three. The second measurement is known only to the tenths place, so the answer must stop at the tenths place. The unrounded sum is twelve point four one, which becomes twelve point four. The hundredths digit cannot be justified by the less precise measurement. Always identify the operation before choosing the rounding rule.
+
+00:02:03.232 --> 00:02:31.696
+For multiplication and division, count significant figures. Two point five has two significant figures. Three point four two has three. Their product is eight point five five, but the final result must have two significant figures because the least precise input has two. Rounded correctly, that is eight point six. Do not confuse this with the decimal-place rule for addition. These two rules are frequent multiple-choice traps, so write the operation at the top of your solution.
+
+00:02:32.096 --> 00:03:02.048
+Suppose a length is measured as twenty point zero plus or minus zero point one centimetres. Zero point one centimetres is the absolute uncertainty. Divide it by twenty point zero centimetres and the units cancel. The relative uncertainty is zero point zero zero five, or zero point five percent. A small absolute uncertainty is not enough to judge a result; its size must be compared with the measurement itself. Relative and percentage uncertainty make that comparison possible.
+
+00:03:02.448 --> 00:03:32.352
+For a sum or difference, add the absolute uncertainties. If x has uncertainty delta x and y has uncertainty delta y, then the uncertainty in x plus or minus y is approximately their sum. For a product or quotient, add the relative uncertainties instead. These are standard maximum-uncertainty rules used at this level. Statistical uncertainty can be treated differently when repeated measurements and random errors are analyzed. The question wording tells you which model to use.
+
+00:03:32.752 --> 00:04:01.264
+Error and uncertainty are related, but they are not identical. If the accepted length is ten centimetres and your measured value is ten point two centimetres, the percentage error compares their difference with the accepted value. Uncertainty, on the other hand, describes the range or limitation attached to your measurement. Random errors change from trial to trial and may be reduced by averaging. Systematic errors shift results in one direction and require calibration or correction.
+
+00:04:01.664 --> 00:04:35.432
+Before submitting a measurement problem, use four checks. First, are the units compatible? Second, did you count significant figures correctly? Third, did you use the decimal-place rule for addition and the significant-figure rule for multiplication? Fourth, is the uncertainty or error reported in the requested form? Keep extra digits during the working, then round the final answer once. This routine turns a confusing-looking calculation into a sequence of small decisions.

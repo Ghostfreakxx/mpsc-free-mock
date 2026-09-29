@@ -44,5 +44,13 @@
 .quiz input { accent-color: #19775b; }
 .correct { color: #126b46; }
 .incorrect { color: #9b3d28; }
+.clarification { padding: 12px 0; border-top: 2px solid #b65737; font-size: 14px; line-height: 1.6; color: #713c2b; }
+.library article { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 24px; padding: 28px 0; border-top: 1px solid #dae5de; }
+.library h2 { font-size: 22px; line-height: 1.35; margin: 0 0 8px; }
+.library p { font-size: 15px; color: #596b64; margin: 0 0 16px; }
+.lessonNumber { color: #255d88; background: #eef5fa; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; height: 96px; border-radius: 4px; }
+.library article:nth-child(2) .lessonNumber { color: #99452d; background: #fcf0ec; }
+.lessonMeta { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
+@media(max-width: 540px) { .library article { grid-template-columns: 44px minmax(0, 1fr); gap: 14px; } .library h2 { font-size: 20px; } .lessonNumber { height: 80px; } }
 @media(max-width: 900px) { .layout { grid-template-columns: 1fr; } .outline ol { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; } }
 @media(max-width: 540px) { .page { padding: 18px 16px 60px; } .heading h1 { font-size: 28px; } .board { padding: 20px; min-height: 450px; } .board h2 { font-size: 22px; } .formula { font-size: 21px; } .caption { min-height: 150px; padding: 16px; font-size: 16px; } .outline ol { grid-template-columns: 1fr; } .controls { gap: 8px; } .header { gap: 10px; font-size: 11px; } }

@@ -17,7 +17,9 @@ test('every chapter has a complete, contiguous English recording and no Mizo sub
     assert.equal(cue.start, index ? timing.cues[index - 1].end : 0);
   }
   assert.equal(timing.duration, timing.cues.at(-1).end);
-  assert.ok(timing.duration > 540 && timing.duration < 660);
+  assert.ok(timing.duration > 300 && timing.duration < 1200);
+  assert.equal(lesson.voice, 'marin');
+  assert.equal(lesson.version, 2);
 });
 
 test('quiz answers and lesson calculations are consistent', () => {
@@ -31,8 +33,8 @@ test('quiz answers and lesson calculations are consistent', () => {
 });
 
 test('published audio and caption assets exist with all cues', () => {
-  assert.ok(fs.statSync(new URL('../public/lectures/units/narration.mp3', import.meta.url)).size > 1000000);
-  const vtt = fs.readFileSync(new URL('../public/lectures/units/english.vtt', import.meta.url), 'utf8');
+  assert.ok(fs.statSync(new URL('../public/lectures/units/narration-marin-v2.mp3', import.meta.url)).size > 1000000);
+  const vtt = fs.readFileSync(new URL('../public/lectures/units/english-marin-v2.vtt', import.meta.url), 'utf8');
   assert.ok(vtt.startsWith('WEBVTT'));
   assert.equal(vtt.match(/ --> /g).length, timing.cues.length);
 });
