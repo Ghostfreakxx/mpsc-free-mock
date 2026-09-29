@@ -106,7 +106,7 @@ for (let i = 0; i < 8; i++) {
     numeric(`What is the larger root of (x - ${r})(x - ${s}) = 0?`, s, "", `The zero-product rule gives roots ${r} and ${s}; the larger is ${s}.`, location, i),
     numeric(`Find the sum of the roots of x^2 - ${r + s}x + ${r * s} = 0.`, r + s, "", `Factoring gives (x - ${r})(x - ${s}); their sum is ${r + s}.`, location, i + 1),
     numeric(`Find the product of the roots of (x - ${r})(x + ${s}) = 0.`, -r * s, "", `The roots are ${r} and -${s}; their product is ${-r * s}.`, location, i + 2),
-    numeric(`Find the discriminant of x^2 - ${2 * r}x + ${r * r - 4} = 0.`, 16, "", `b^2 - 4ac = ${4 * r * r} - ${4 * (r * r - 4)} = 16.`, location, i + 3),
+    numeric(`Find the discriminant of x^2 - ${2 * r}x + ${r * r - (i + 1)} = 0.`, 4 * (i + 1), "", `b^2 - 4ac = ${4 * r * r} - ${4 * (r * r - (i + 1))} = ${4 * (i + 1)}.`, location, i + 3),
     numeric(`For what k does x^2 + ${2 * r}x + k = 0 have a repeated real root?`, r * r, "", `Zero discriminant gives ${4 * r * r} - 4k = 0; k = ${r * r}.`, location, i),
     numeric(`Find the positive solution of x^2 = ${s * s}.`, s, "", `The roots are plus or minus ${s}; the positive solution is ${s}.`, location, i + 1),
     numeric(`What is the distance between the two real roots of (x + ${r})(x - ${s}) = 0?`, r + s, "", `The roots are -${r} and ${s}; their distance is ${s} - (-${r}) = ${r + s}.`, location, i + 2),

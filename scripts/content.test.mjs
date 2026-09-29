@@ -144,3 +144,13 @@ test('JEE foundation worked answers are independently recomputed', () => {
   assert.equal(answer('jee-counting-6'), String(120 / 4));
   assert.equal(answer('jee-differentiation-4'), String(3 * 2 ** 2));
 });
+
+test('generated discriminant questions are recomputed and not all the same answer', () => {
+  const answers = [];
+  for (const [prompt, options, answer] of practiceExpansion.mathematics.filter(([prompt]) => prompt.startsWith('Find the discriminant'))) {
+    const [, b, c] = prompt.match(/x\^2 - (\d+)x \+ (\d+) = 0/).map(Number);
+    assert.equal(Number(options[answer]), b * b - 4 * c, prompt);
+    answers.push(options[answer]);
+  }
+  assert.equal(new Set(answers).size, answers.length);
+});
