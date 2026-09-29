@@ -47,6 +47,28 @@
 .clarification { padding: 12px 0; border-top: 2px solid #b65737; font-size: 14px; line-height: 1.6; color: #713c2b; }
 .library article { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 24px; padding: 28px 0; border-top: 1px solid #dae5de; }
 .library h2 { font-size: 22px; line-height: 1.35; margin: 0 0 8px; }
+.library h3 { font-size: 22px; line-height: 1.35; margin: 0 0 8px; }
+.library .libraryTitle { font-size: 20px; margin: 24px 0 18px; }
+.subjects { display: flex; gap: 8px; flex-wrap: wrap; padding-bottom: 20px; border-bottom: 1px solid #dae5de; }
+.courseMap { list-style: none; padding: 0; }
+.courseMap li { display: grid; grid-template-columns: 26px minmax(0, 1fr) 65px; gap: 12px; padding: 14px 0; border-bottom: 1px solid #e1e9e4; align-items: start; }
+.courseMap strong { font-size: 15px; font-weight: 500; }
+.courseMap a { display: flex; width: fit-content; font-size: 13px; margin-top: 5px; }
+.partial { font-size: 12px; color: #9b3d28; }
+.planned { font-size: 12px; color: #596b64; }
+.prerequisites { max-width: 650px; font-size: 14px; line-height: 1.6; }
+.contents { padding: 24px 0; border-bottom: 1px solid #dae5de; }
+.contents h2 { font-size: 20px; }
+.contents ol { padding-left: 24px; line-height: 1.8; }
+.contents > a { margin-right: 20px; }
+.reading { max-width: 850px; }
+.reading section { padding: 24px 0; border-bottom: 1px solid #dae5de; scroll-margin-top: 24px; }
+.reading h2 { font-size: 23px; line-height: 1.35; }
+.reading p { font-size: 17px; line-height: 1.85; margin-top: 18px; }
+.reading .studyFormula { font-size: 19px; color: #255d88; font-weight: 600; border-left: 3px solid #255d88; padding-left: 16px; overflow-wrap: anywhere; }
+.studyFigure { margin: 28px 0; max-width: 850px; }
+.studyFigure img { width: 100%; height: auto; }
+.studyFigure figcaption { font-size: 13px; line-height: 1.6; color: #596b64; margin-top: 10px; }
 .library p { font-size: 15px; color: #596b64; margin: 0 0 16px; }
 .lessonNumber { color: #255d88; background: #eef5fa; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; height: 96px; border-radius: 4px; }
 .library article:nth-child(2) .lessonNumber { color: #99452d; background: #fcf0ec; }
