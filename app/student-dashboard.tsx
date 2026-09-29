@@ -177,7 +177,10 @@ export default function StudentDashboard() {
         if (savedPlanner) {
           const parsed: unknown = JSON.parse(savedPlanner);
           if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
-            setPlannerHistory(parsed as PlannerHistory);
+            // Drop corrupted days rather than let a non-list value break the planner.
+            setPlannerHistory(Object.fromEntries(Object.entries(parsed).filter(
+              ([, steps]) => Array.isArray(steps) && steps.every(step => typeof step === "string"),
+            )) as PlannerHistory);
           }
         }
 
@@ -225,6 +228,8 @@ export default function StudentDashboard() {
     if (!today) return 0;
     let count = 0;
     const cursor = new Date(today);
+    // An unfinished today does not break the streak until the day is over.
+    if ((plannerHistory[getDayKey(cursor)]?.length ?? 0) === 0) cursor.setDate(cursor.getDate() - 1);
     while (count < 365 && (plannerHistory[getDayKey(cursor)]?.length ?? 0) > 0) {
       count += 1;
       cursor.setDate(cursor.getDate() - 1);
