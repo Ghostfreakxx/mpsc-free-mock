@@ -10,7 +10,7 @@ const base = process.env.TEST_URL || 'http://localhost:3105';
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(`${base}/jee/classes`);
-    assert.equal(await page.getByRole('heading', { name: 'Physics classes', exact: true }).count(), 1);
+    assert.equal(await page.getByRole('heading', { name: 'JEE classes', exact: true }).count(), 1);
     assert.equal(await page.getByRole('link', { name: 'Open class' }).count(), 2);
     for (const width of [1440, 390, 320]) {
       await page.setViewportSize({ width, height: 900 });

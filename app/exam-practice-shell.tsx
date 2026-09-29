@@ -54,7 +54,7 @@ const navigation = [
   { href: "/mock-test", label: "MPSC practice", icon: ClipboardCheck },
   { href: "/neet", label: "NEET practice", icon: BookOpen },
   { href: "/jee", label: "JEE Main practice", icon: Atom },
-  { href: "/jee/classes", label: "JEE Physics classes", icon: BookOpen },
+  { href: "/jee/classes", label: "JEE classes", icon: BookOpen },
   { href: "/cuet-pg", label: "CUET PG practice", icon: GraduationCap },
   { href: "/college-notes", label: "College notes", icon: BookMarked },
   { href: "/downloads", label: "Download notes", icon: BookMarked },

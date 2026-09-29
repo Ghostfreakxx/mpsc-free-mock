@@ -60,9 +60,9 @@ const courses: {
   format: string;
 }[] = [
   {
-    title: "JEE Physics classes",
+    title: "JEE classes",
     subject: "Engineering entrance",
-    description: "Recorded English lessons on units, dimensions and measurement, with worked examples and practice checks.",
+    description: "Physics recordings and written foundation lessons in Physics, Chemistry and Mathematics.",
     href: "/jee/classes",
     icon: Play,
     theme: "green",
