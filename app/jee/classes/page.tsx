@@ -7,7 +7,7 @@ import lesson from "../../data/jee-lecture.json";
 import timings from "../../data/jee-lecture-timings.json";
 import styles from "./lecture.module.css";
 
-const progressKey = "jee.units.lecture.v1";
+const progressKey = `jee.units.lecture.v${lesson.version}`;
 const chapterStarts = lesson.segments.map((_, index) => timings.cues.find(cue => cue.chapter === index)!.start);
 const formatTime = (value: number) => `${Math.floor(value / 60)}:${Math.floor(value % 60).toString().padStart(2, "0")}`;
 
@@ -73,7 +73,7 @@ export default function JeeClass() {
     <div className={styles.heading}>
       <p>JEE · PHYSICS · FOUNDATION CLASS 01</p>
       <h1>{lesson.title}</h1>
-      <span>{formatTime(timings.duration)} · English · Synthetic female narration</span>
+      <span>{formatTime(timings.duration)} · American English · Marin · AI-generated voice</span>
     </div>
     <div className={styles.layout}>
       <section aria-label="Recorded visual lesson" className={styles.player}>
@@ -100,8 +100,8 @@ export default function JeeClass() {
               try { localStorage.setItem(progressKey, String(current)); } catch { /* Optional local resume. */ }
             }
           }}>
-          <source src="/lectures/units/narration.mp3" type="audio/mpeg" />
-          <track kind="captions" src="/lectures/units/english.vtt" srcLang="en" label="English" default />
+          <source src="/lectures/units/narration-marin-v2.mp3" type="audio/mpeg" />
+          <track kind="captions" src="/lectures/units/english-marin-v2.vtt" srcLang="en-US" label="English" default />
         </audio>
         {error && <p role="alert">The recording could not load. <button onClick={() => audio.current?.load()}>Retry audio</button> or read the transcript below.</p>}
         <div className={styles.controls}>
