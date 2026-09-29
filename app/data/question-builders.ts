@@ -33,3 +33,10 @@ export function numeric(prompt: string, value: number, unit: string, explanation
   while (rank > 0 && value > 0 && value - rank <= 0) rank--;
   return question(prompt, format(value), numericSpreads[rank].map(delta => format(value + delta)), explanation, `${location}; original numerical variant`, offset);
 }
+
+// Hand-written item: correct answer first, then three distractors.
+export type Item = [prompt: string, correct: string, distractors: [string, string, string], explanation: string, location: string];
+
+// Rotating the correct option by item index spreads answers evenly across positions.
+export const fromItems = (items: Item[]): QuestionSeed[] =>
+  items.map(([prompt, correct, distractors, explanation, location], index) => question(prompt, correct, distractors, explanation, location, index));
