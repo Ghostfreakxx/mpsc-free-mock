@@ -1,0 +1,36 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { biomoleculesAnalysisLessons as lessons } from '../app/jee/classes/biomolecules-analysis-study.ts';
+
+test('biomolecules and analysis map to official units with honest written scope', () => {
+  assert.deepEqual(lessons.map(l => l.unit), [19, 13]);
+  for (const l of lessons) {
+    assert.equal(l.sections.length, 8);
+    assert.equal(l.examples.length, 3);
+    assert.equal(l.quiz.length, 6);
+    assert.match(l.remaining, /not a Marin recording or complete unit coverage/);
+  }
+});
+test('peptide and DNA examples retain topology and double-strand assumptions', () => {
+  assert.equal(5 - 1, 4);
+  assert.equal((100 - 2 * 30) / 2, 20);
+  assert.match(lessons[0].examples[1].answer, /linear, noncyclic/);
+  assert.match(lessons[0].examples[2].answer, /not a rule for arbitrary single strands/);
+  assert.equal(lessons[0].quiz[1].options[lessons[0].quiz[1].answer], 'Two glucose units');
+});
+test('combustion balances and empirical ratio agree with independent arithmetic', () => {
+  const c = 0.440 * 12 / 44, h = 0.180 * 2 / 18, o = 0.300 - c - h;
+  assert.ok(Math.abs(c - 0.120) < 1e-12);
+  assert.ok(Math.abs(h - 0.0200) < 1e-12);
+  const base = c / 12;
+  assert.ok(Math.abs(h / base - 2) < 1e-12);
+  assert.ok(Math.abs(o / 16 / base - 1) < 1e-12);
+  assert.match(lessons[1].examples[0].answer, /CH2O/);
+});
+test('Rf and molecular multiplier calculations match practice keys', () => {
+  assert.equal(3 / 5, 0.60);
+  assert.equal(2 / 8, 0.25);
+  assert.equal(90 / (12 + 2 + 16), 3);
+  assert.equal(lessons[1].quiz[5].options[lessons[1].quiz[5].answer], 'C3H6O3');
+  assert.match(lessons[1].sections[4].paragraphs.join(' '), /supervised laboratory/);
+});

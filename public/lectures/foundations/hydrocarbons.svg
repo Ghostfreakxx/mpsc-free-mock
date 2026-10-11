@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+<title id="title">Two HBr pathways for propene</title><desc id="desc">Ordinary ionic addition gives mainly 2-bromopropane, while suitable peroxide radical conditions give mainly 1-bromopropane.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#18212b"/></marker></defs>
+<rect width="900" height="360" fill="#f8fafc"/>
+<g font-family="Arial,sans-serif" fill="#18212b"><text x="30" y="35" font-size="24" font-weight="bold">Same starting alkene. Different reaction pathway.</text>
+<text x="30" y="175" font-size="24">CH3-CH=CH2</text><text x="65" y="210" font-size="19">propene + HBr</text>
+<path d="M235 160L415 105H525" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M235 190L415 255H525" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="285" y="85" font-size="18" fill="#087e8b">Ordinary ionic pathway</text><text x="285" y="300" font-size="18" fill="#b42343">Peroxide radical pathway</text>
+<text x="555" y="110" font-size="24">CH3-CHBr-CH3</text><text x="555" y="145" font-size="19">mainly 2-bromopropane</text>
+<text x="555" y="255" font-size="24">CH3-CH2-CH2Br</text><text x="555" y="290" font-size="19">mainly 1-bromopropane</text>
+<text x="30" y="345" font-size="17" fill="#475569">The familiar peroxide effect applies to HBr; do not generalize it to HCl or HI.</text></g></svg>

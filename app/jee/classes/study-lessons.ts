@@ -1,5 +1,22 @@
 import type { StudyLesson } from "./course";
+import { chemistryFoundationsLesson } from "./chemistry-foundations-study.ts";
+import { chemistryExpansionLessons } from "./chemistry-expansion-study.ts";
+import { physicalChemistryLessons } from "./physical-chemistry-study.ts";
+import { equilibriumElectrochemistryLessons } from "./equilibrium-electrochemistry-study.ts";
+import { chemistryCoreLessons } from "./chemistry-core-study.ts";
+import { organicReactionLessons } from "./organic-reactions-study.ts";
+import { oxygenNitrogenLessons } from "./organic-oxygen-nitrogen-study.ts";
+import { biomoleculesAnalysisLessons } from "./biomolecules-analysis-study.ts";
+import { inorganicPracticalLessons } from "./inorganic-practical-study.ts";
 import { nextStudyLessons } from "./study-lessons-two.ts";
+import { rotationApplicationsLesson } from "./rotation-applications-study.ts";
+import { gravityApplicationsLesson } from "./gravity-applications-study.ts";
+import { thermalApplicationsLessons } from "./thermal-applications-study.ts";
+import { electrostaticsApplicationsLesson } from "./electrostatics-applications-study.ts";
+import { capacitorApplicationsLesson } from "./capacitor-applications-study.ts";
+import { circuitApplicationsLesson } from "./circuit-applications-study.ts";
+import { magneticApplicationsLesson } from "./magnetic-applications-study.ts";
+import { inductionApplicationsLesson } from "./induction-applications-study.ts";
 
 export const studyLessons: StudyLesson[] = [
   {
@@ -129,4 +146,21 @@ export const studyLessons: StudyLesson[] = [
     sources: [{ title: "OpenStax: functions and notation", url: "https://openstax.org/books/college-algebra-2e/pages/3-1-functions-and-function-notation" }],
   },
   ...nextStudyLessons,
+  chemistryFoundationsLesson,
+  ...chemistryExpansionLessons,
+  ...physicalChemistryLessons,
+  ...equilibriumElectrochemistryLessons,
+  ...chemistryCoreLessons,
+  ...organicReactionLessons,
+  ...oxygenNitrogenLessons,
+  ...biomoleculesAnalysisLessons,
+  ...inorganicPracticalLessons,
+  rotationApplicationsLesson,
+  gravityApplicationsLesson,
+  ...thermalApplicationsLessons,
+  electrostaticsApplicationsLesson,
+  capacitorApplicationsLesson,
+  circuitApplicationsLesson,
+  magneticApplicationsLesson,
+  inductionApplicationsLesson,
 ];

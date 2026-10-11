@@ -12,21 +12,26 @@ test('course map preserves all 54 baseline units across three subjects', () => {
 });
 
 test('published written lessons have substantive content, practice and figures', () => {
-  assert.equal(new Set(studyLessons.map(lesson => lesson.id)).size, 6);
-  for (const subject of subjects) assert.equal(studyLessons.filter(lesson => lesson.subject === subject).length, 2);
+  assert.equal(new Set(studyLessons.map(lesson => lesson.id)).size, 36);
+  for (const subject of subjects) assert.equal(studyLessons.filter(lesson => lesson.subject === subject).length, subject === 'Physics' ? 12 : subject === 'Chemistry' ? 22 : 2);
   for (const lesson of studyLessons) {
     assert.ok(courseUnits[lesson.subject][lesson.unit - 1]);
-    assert.equal(lesson.sections.length, 5);
-    assert.equal(lesson.examples.length, 3);
-    assert.equal(lesson.quiz.length, 5);
+    const newFoundation = lesson.id === 'chemistry-foundations';
+    const expansion = ['atomic-spectra', 'periodic-trends', 'chemical-bonding', 'chemical-thermodynamics', 'solutions', 'equilibrium', 'redox-electrochemistry', 'chemical-kinetics', 'coordination-compounds', 'organic-principles', 'hydrocarbons', 'organic-halogens', 'organic-oxygen', 'organic-nitrogen', 'biomolecules', 'purification-analysis', 'p-block', 'd-f-block', 'practical-chemistry'].includes(lesson.id);
+    const sections = { 'atomic-spectra': 6, 'periodic-trends': 6, 'chemical-bonding': 7, 'chemical-thermodynamics': 7, solutions: 7, equilibrium: 8, 'redox-electrochemistry': 8, 'chemical-kinetics': 8, 'coordination-compounds': 8, 'organic-principles': 8, hydrocarbons: 8, 'organic-halogens': 8, 'organic-oxygen': 8, 'organic-nitrogen': 8, biomolecules: 8, 'purification-analysis': 8, 'p-block': 8, 'd-f-block': 8, 'practical-chemistry': 8 };
+    const extendedElectrochemistry = lesson.id === 'redox-electrochemistry';
+    const expandedPractice = ['equilibrium', 'redox-electrochemistry', 'chemical-kinetics'].includes(lesson.id);
+    assert.equal(lesson.sections.length, extendedElectrochemistry ? 10 : newFoundation ? 8 : expansion ? sections[lesson.id] : 5);
+    assert.equal(lesson.examples.length, expandedPractice ? 7 : newFoundation ? 4 : 3);
+    assert.equal(lesson.quiz.length, expandedPractice ? 12 : newFoundation ? 8 : expansion ? 6 : 5);
     assert.ok(lesson.remaining.length > 50);
     assert.ok(lesson.sections.flatMap(section => section.paragraphs).join(' ').split(/\s+/).length > 400);
     for (const question of lesson.quiz) {
       assert.equal(new Set(question.options).size, 4);
       assert.ok(Number.isInteger(question.answer) && question.answer >= 0 && question.answer < 4);
-      assert.ok(question.explanation.length > 60);
+      assert.ok(question.explanation.length > (newFoundation || expansion ? 30 : 60));
     }
-    assert.ok(statSync(new URL(`../public/lectures/foundations/${lesson.id}.png`, import.meta.url)).size > 5000);
+    assert.ok(statSync(new URL(`../public/lectures/foundations/${lesson.id}.${newFoundation || expansion ? 'svg' : 'png'}`, import.meta.url)).size > (newFoundation || expansion ? 1000 : 5000));
   }
 });
 

@@ -1,0 +1,957 @@
+{
+  "duration": 495.02400000001427,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 95.0160000000027
+    },
+    {
+      "start": 95.0160000000027,
+      "end": 185.88000000000525
+    },
+    {
+      "start": 185.88000000000525,
+      "end": 286.9920000000082
+    },
+    {
+      "start": 286.9920000000082,
+      "end": 388.70400000001115
+    },
+    {
+      "start": 388.70400000001115,
+      "end": 495.02400000001427
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.3600000143051147,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.0799999237060547,
+      "end": 4.800000190734863,
+      "text": "Today we turn circuit measurements into physical conclusions.",
+      "chapter": 0
+    },
+    {
+      "start": 5.880000114440918,
+      "end": 10.381538464472843,
+      "text": "Start with a resistor, a low voltage supply, a current limiting arrangement,",
+      "chapter": 0
+    },
+    {
+      "start": 10.381538464472843,
+      "end": 10.5,
+      "text": "an",
+      "chapter": 0
+    },
+    {
+      "start": 10.5,
+      "end": 13.119999885559082,
+      "text": "ammeter in series, and a voltmeter across the resistor.",
+      "chapter": 0
+    },
+    {
+      "start": 13.479999542236328,
+      "end": 17.299999237060547,
+      "text": "The ammeter follows the current through the circuit; the voltmeter compares",
+      "chapter": 0
+    },
+    {
+      "start": 17.299999237060547,
+      "end": 18.68000030517578,
+      "text": "potential at two terminals.",
+      "chapter": 0
+    },
+    {
+      "start": 19.280000686645508,
+      "end": 22.239999771118164,
+      "text": "An ammeter must never be connected directly across the supply.",
+      "chapter": 0
+    },
+    {
+      "start": 23,
+      "end": 27.21153846153846,
+      "text": "In our ideal worked model, its resistance is negligible and the voltmeter",
+      "chapter": 0
+    },
+    {
+      "start": 27.21153846153846,
+      "end": 27.5,
+      "text": "draws",
+      "chapter": 0
+    },
+    {
+      "start": 27.5,
+      "end": 28.440000534057617,
+      "text": "negligible current.",
+      "chapter": 0
+    },
+    {
+      "start": 29.219999313354492,
+      "end": 33.34000015258789,
+      "text": "Real instruments introduce loading, so these are assumptions, not promises.",
+      "chapter": 0
+    },
+    {
+      "start": 34.380001068115234,
+      "end": 38.02000045776367,
+      "text": "Change the current gently, recording corresponding voltage and current pairs.",
+      "chapter": 0
+    },
+    {
+      "start": 38.939998626708984,
+      "end": 42.439998626708984,
+      "text": "Keep the resistor's temperature approximately constant, because heating can",
+      "chapter": 0
+    },
+    {
+      "start": 42.439998626708984,
+      "end": 43.34000015258789,
+      "text": "change its resistance.",
+      "chapter": 0
+    },
+    {
+      "start": 44.279998779296875,
+      "end": 48.87615511967586,
+      "text": "Suppose our original data are zero point one ampere at one volt, zero point",
+      "chapter": 0
+    },
+    {
+      "start": 48.87615511967586,
+      "end": 49.060001373291016,
+      "text": "two",
+      "chapter": 0
+    },
+    {
+      "start": 49.060001373291016,
+      "end": 51.91999816894531,
+      "text": "at two volts, and zero point three at three volts.",
+      "chapter": 0
+    },
+    {
+      "start": 52.779998779296875,
+      "end": 55.619998931884766,
+      "text": "Voltage divided by current is ten ohms each time.",
+      "chapter": 0
+    },
+    {
+      "start": 56.47999954223633,
+      "end": 60.52000045776367,
+      "text": "Plot voltage vertically against current horizontally: the fitted slope is ten",
+      "chapter": 0
+    },
+    {
+      "start": 60.52000045776367,
+      "end": 62.560001373291016,
+      "text": "volts per ampere, or ten ohms.",
+      "chapter": 0
+    },
+    {
+      "start": 63.36000061035156,
+      "end": 64.12000274658203,
+      "text": "Now a quick trap.",
+      "chapter": 0
+    },
+    {
+      "start": 64.66000366210938,
+      "end": 66.94000244140625,
+      "text": "What if current is vertical and voltage horizontal?",
+      "chapter": 0
+    },
+    {
+      "start": 68,
+      "end": 69.05999755859375,
+      "text": "Pause and inspect the units.",
+      "chapter": 0
+    },
+    {
+      "start": 69.5,
+      "end": 73.5199966430664,
+      "text": "The slope is zero point one ampere per volt, the conductance, not the",
+      "chapter": 0
+    },
+    {
+      "start": 73.5199966430664,
+      "end": 74.0199966430664,
+      "text": "resistance.",
+      "chapter": 0
+    },
+    {
+      "start": 74.63999938964844,
+      "end": 75.26000213623047,
+      "text": "Take its reciprocal.",
+      "chapter": 0
+    },
+    {
+      "start": 76,
+      "end": 79.72923161433293,
+      "text": "A straight line through the corrected origin supports Ohm's law over the",
+      "chapter": 0
+    },
+    {
+      "start": 79.72923161433293,
+      "end": 80.04000091552734,
+      "text": "tested",
+      "chapter": 0
+    },
+    {
+      "start": 80.04000091552734,
+      "end": 83.5999984741211,
+      "text": "range and conditions; it does not prove every device is ohmic.",
+      "chapter": 0
+    },
+    {
+      "start": 84.33999633789062,
+      "end": 89.36000061035156,
+      "text": "Use several observations, sensible ranges, short observation times, and a",
+      "chapter": 0
+    },
+    {
+      "start": 89.36000061035156,
+      "end": 90.30000305175781,
+      "text": "supervised low voltage setup.",
+      "chapter": 0
+    },
+    {
+      "start": 90.9800033569336,
+      "end": 94.27999877929688,
+      "text": "A single voltage current pair cannot establish a linear relationship.",
+      "chapter": 0
+    },
+    {
+      "start": 95.0160000000027,
+      "end": 99.53599998092922,
+      "text": "A metre bridge measures resistance by finding a balance, rather than measuring",
+      "chapter": 1
+    },
+    {
+      "start": 99.53599998092922,
+      "end": 101.19599982834133,
+      "text": "a large galvanometer current.",
+      "chapter": 1
+    },
+    {
+      "start": 102.05599996185573,
+      "end": 106.43600007629665,
+      "text": "Put unknown resistance X in the left gap and known resistance K in the right",
+      "chapter": 1
+    },
+    {
+      "start": 106.43600007629665,
+      "end": 106.63599988556179,
+      "text": "gap.",
+      "chapter": 1
+    },
+    {
+      "start": 107.53600045776638,
+      "end": 110.63599988556179,
+      "text": "Connect the supply across the ends of the uniform bridge wire.",
+      "chapter": 1
+    },
+    {
+      "start": 111.19600030517849,
+      "end": 115.59599992370876,
+      "text": "A sensitive galvanometer joins the gap junction to a gently applied jockey",
+      "chapter": 1
+    },
+    {
+      "start": 115.59599992370876,
+      "end": 116.7359993133572,
+      "text": "contact on that wire.",
+      "chapter": 1
+    },
+    {
+      "start": 117.53600045776638,
+      "end": 121.65599938965114,
+      "text": "At the null point, those two junctions have equal potential, so no current",
+      "chapter": 1
+    },
+    {
+      "start": 121.65599938965114,
+      "end": 122.91599961853298,
+      "text": "passes through the galvanometer.",
+      "chapter": 1
+    },
+    {
+      "start": 123.57599946594509,
+      "end": 126.19600030517849,
+      "text": "Current still flows through the other bridge branches.",
+      "chapter": 1
+    },
+    {
+      "start": 127.39600106811794,
+      "end": 128.85600015259058,
+      "text": "Why does length appear in the answer?",
+      "chapter": 1
+    },
+    {
+      "start": 129.6759998474148,
+      "end": 134.19600030517847,
+      "text": "The two sections of the uniform wire have the same material and area, so their",
+      "chapter": 1
+    },
+    {
+      "start": 134.19600030517847,
+      "end": 136.23600122070582,
+      "text": "resistances are proportional to their lengths.",
+      "chapter": 1
+    },
+    {
+      "start": 137.09600183105738,
+      "end": 141.74599954223902,
+      "text": "The balanced ratios therefore give X divided by K equals l divided by one",
+      "chapter": 1
+    },
+    {
+      "start": 141.74599954223902,
+      "end": 146.09600183105738,
+      "text": "hundred minus l, when l is measured in centimeters from the left end of an",
+      "chapter": 1
+    },
+    {
+      "start": 146.09600183105738,
+      "end": 147.69600030517847,
+      "text": "exactly one hundred centimeter wire.",
+      "chapter": 1
+    },
+    {
+      "start": 148.5160000000027,
+      "end": 153.23600122070582,
+      "text": "Our example has K equal to two ohms and l equal to sixty centimeters.",
+      "chapter": 1
+    },
+    {
+      "start": 154.0760013732937,
+      "end": 157.5760013732937,
+      "text": "The unknown is two times sixty over forty, giving three ohms.",
+      "chapter": 1
+    },
+    {
+      "start": 158.55600091553003,
+      "end": 161.79599877929957,
+      "text": "Before memorizing anything, point to the left resistor and its corresponding",
+      "chapter": 1
+    },
+    {
+      "start": 161.79599877929957,
+      "end": 162.75599786377222,
+      "text": "left wire length.",
+      "chapter": 1
+    },
+    {
+      "start": 163.87600061035425,
+      "end": 167.61599847412378,
+      "text": "If you swap X and K, the ideal balance moves to forty centimeters.",
+      "chapter": 1
+    },
+    {
+      "start": 168.25599786377222,
+      "end": 172.95600244140894,
+      "text": "The unknown is now in the right gap, so X equals K times one hundred minus l,",
+      "chapter": 1
+    },
+    {
+      "start": 173.27600213623316,
+      "end": 174.0160000000027,
+      "text": "divided by l.",
+      "chapter": 1
+    },
+    {
+      "start": 174.69600030517847,
+      "end": 176.21599694824488,
+      "text": "That again gives three ohms.",
+      "chapter": 1
+    },
+    {
+      "start": 176.63600274658472,
+      "end": 180.11599847412378,
+      "text": "Use the actual wire length if it is not exactly one hundred centimeters.",
+      "chapter": 1
+    },
+    {
+      "start": 181.05600091553003,
+      "end": 184.7152286290905,
+      "text": "A formula without a clearly defined gap arrangement is an invitation to",
+      "chapter": 1
+    },
+    {
+      "start": 184.7152286290905,
+      "end": 185.07599755859644,
+      "text": "reverse",
+      "chapter": 1
+    },
+    {
+      "start": 185.07599755859644,
+      "end": 185.49600335693628,
+      "text": "the answer.",
+      "chapter": 1
+    },
+    {
+      "start": 185.88000000000525,
+      "end": 188.6399999904685,
+      "text": "Resistance describes this particular wire.",
+      "chapter": 2
+    },
+    {
+      "start": 189.67999995232154,
+      "end": 192.36000001907874,
+      "text": "Resistivity describes its material at the stated temperature.",
+      "chapter": 2
+    },
+    {
+      "start": 193.0799998092704,
+      "end": 197.0799998092704,
+      "text": "To move from one to the other, we need the test wire's length and cross",
+      "chapter": 2
+    },
+    {
+      "start": 197.0799998092704,
+      "end": 197.76000011444617,
+      "text": "sectional area.",
+      "chapter": 2
+    },
+    {
+      "start": 198.8000000762992,
+      "end": 203.2420505944329,
+      "text": "For a uniform circular wire, resistance equals resistivity times length",
+      "chapter": 2
+    },
+    {
+      "start": 203.2420505944329,
+      "end": 203.6799992370658,
+      "text": "divided",
+      "chapter": 2
+    },
+    {
+      "start": 203.6799992370658,
+      "end": 204.3000000762992,
+      "text": "by area.",
+      "chapter": 2
+    },
+    {
+      "start": 205.43999946594764,
+      "end": 210.9599999237113,
+      "text": "Rearranging gives rho equals X times pi d squared divided by four L.",
+      "chapter": 2
+    },
+    {
+      "start": 211.75999916077186,
+      "end": 215.5199993896537,
+      "text": "Here capital L means the length of the test wire between its effective",
+      "chapter": 2
+    },
+    {
+      "start": 215.5199993896537,
+      "end": 215.90000045776893,
+      "text": "terminals.",
+      "chapter": 2
+    },
+    {
+      "start": 216.53999984741736,
+      "end": 220.13999832153846,
+      "text": "It is not the sixty centimeter bridge balancing length from our previous",
+      "chapter": 2
+    },
+    {
+      "start": 220.13999832153846,
+      "end": 220.60000122070838,
+      "text": "example.",
+      "chapter": 2
+    },
+    {
+      "start": 222.03999984741736,
+      "end": 225.4900011972333,
+      "text": "Suppose that three ohm test wire is one point two meters long and has",
+      "chapter": 2
+    },
+    {
+      "start": 225.4900011972333,
+      "end": 225.94000137329627,
+      "text": "corrected",
+      "chapter": 2
+    },
+    {
+      "start": 225.94000137329627,
+      "end": 228.15999877930213,
+      "text": "diameter zero point four millimeters.",
+      "chapter": 2
+    },
+    {
+      "start": 229.4200009155326,
+      "end": 232.85999954224158,
+      "text": "First convert diameter to zero point zero zero zero four meters.",
+      "chapter": 2
+    },
+    {
+      "start": 233.9200009155326,
+      "end": 237.63999832153846,
+      "text": "Its area is pi times that diameter squared divided by four.",
+      "chapter": 2
+    },
+    {
+      "start": 238.4200009155326,
+      "end": 241.46000183105994,
+      "text": "Multiply by three ohms and divide by one point two meters.",
+      "chapter": 2
+    },
+    {
+      "start": 242.56000030518103,
+      "end": 246.69999969482947,
+      "text": "The resistivity is about three point one four times ten to the minus seven ohm",
+      "chapter": 2
+    },
+    {
+      "start": 246.69999969482947,
+      "end": 247.06000030518103,
+      "text": "meters.",
+      "chapter": 2
+    },
+    {
+      "start": 248.35999954224158,
+      "end": 252.39999664307166,
+      "text": "Radius and diameter cannot be swapped without changing the area by a factor of",
+      "chapter": 2
+    },
+    {
+      "start": 252.39999664307166,
+      "end": 252.60000122070838,
+      "text": "four.",
+      "chapter": 2
+    },
+    {
+      "start": 253.75999725342322,
+      "end": 257.71999633789585,
+      "text": "Measure diameter at multiple places and orientations to check uniformity.",
+      "chapter": 2
+    },
+    {
+      "start": 258.69999969482944,
+      "end": 261.71999633789585,
+      "text": "Keep contacts clean and use brief observations to limit heating.",
+      "chapter": 2
+    },
+    {
+      "start": 262.560000305181,
+      "end": 266.92000091553257,
+      "text": "For the bridge, choose known resistances that place the null point near the",
+      "chapter": 2
+    },
+    {
+      "start": 266.92000091553257,
+      "end": 271.00000274658726,
+      "text": "middle; ratios become more vulnerable to length errors near the ends.",
+      "chapter": 2
+    },
+    {
+      "start": 272.19999969482944,
+      "end": 275.9600018310599,
+      "text": "Interchanging gap positions helps reveal and reduce some end effects, but does",
+      "chapter": 2
+    },
+    {
+      "start": 275.9600018310599,
+      "end": 278.2599972534232,
+      "text": "not magically remove every systematic error.",
+      "chapter": 2
+    },
+    {
+      "start": 278.2599972534232,
+      "end": 283.10000122070835,
+      "text": "Nonuniform bridge wire and significant contact resistances still matter.",
+      "chapter": 2
+    },
+    {
+      "start": 283.9799984741263,
+      "end": 286.78000152588413,
+      "text": "A tidy average cannot fix a wrong physical model.",
+      "chapter": 2
+    },
+    {
+      "start": 286.9920000000082,
+      "end": 291.77200020981655,
+      "text": "Now we measure the resistance of a sensitive galvanometer without sending a",
+      "chapter": 3
+    },
+    {
+      "start": 291.77200020981655,
+      "end": 292.4920000000082,
+      "text": "dangerous current through it.",
+      "chapter": 3
+    },
+    {
+      "start": 293.1119998855673,
+      "end": 297.3720001144491,
+      "text": "A large series resistance R limits current from a stable low voltage source.",
+      "chapter": 3
+    },
+    {
+      "start": 298.23199977112637,
+      "end": 302.6519998474203,
+      "text": "With the parallel shunt disconnected, note an initial deflection theta within",
+      "chapter": 3
+    },
+    {
+      "start": 302.6519998474203,
+      "end": 304.07199992371426,
+      "text": "the instrument's linear range.",
+      "chapter": 3
+    },
+    {
+      "start": 305.0120004577719,
+      "end": 310.0889223609419,
+      "text": "Keep R fixed, connect a shunt S across the galvanometer, and adjust S until",
+      "chapter": 3
+    },
+    {
+      "start": 310.0889223609419,
+      "end": 310.29199923706875,
+      "text": "the",
+      "chapter": 3
+    },
+    {
+      "start": 310.29199923706875,
+      "end": 312.03200091553555,
+      "text": "deflection is half its original value.",
+      "chapter": 3
+    },
+    {
+      "start": 312.9920000000082,
+      "end": 315.95199908448086,
+      "text": "Linear deflection means the galvanometer current has halved.",
+      "chapter": 3
+    },
+    {
+      "start": 316.53200091553555,
+      "end": 320.8920015258871,
+      "text": "Here is the subtle point: the total supply current has not stayed exactly",
+      "chapter": 3
+    },
+    {
+      "start": 320.8920015258871,
+      "end": 321.3119996948324,
+      "text": "constant.",
+      "chapter": 3
+    },
+    {
+      "start": 322.35200061035977,
+      "end": 324.85200061035977,
+      "text": "Adding a parallel branch changes the circuit resistance.",
+      "chapter": 3
+    },
+    {
+      "start": 325.732001678475,
+      "end": 329.61199893189297,
+      "text": "With the shunt open, galvanometer current is E divided by R plus G.",
+      "chapter": 3
+    },
+    {
+      "start": 330.3320001525961,
+      "end": 334.63199938965664,
+      "text": "With the shunt connected, current division gives galvanometer current E S",
+      "chapter": 3
+    },
+    {
+      "start": 334.63199938965664,
+      "end": 338.45199908448086,
+      "text": "divided by R times G plus S, plus G S.",
+      "chapter": 3
+    },
+    {
+      "start": 339.3320001525961,
+      "end": 341.672000305184,
+      "text": "Set the second expression equal to half the first.",
+      "chapter": 3
+    },
+    {
+      "start": 341.672000305184,
+      "end": 346.13199938965664,
+      "text": "After cancellation, R G equals R S plus G S.",
+      "chapter": 3
+    },
+    {
+      "start": 347.1519998474203,
+      "end": 350.2719987793051,
+      "text": "Rearranging gives G equals R S divided by R minus S.",
+      "chapter": 3
+    },
+    {
+      "start": 350.9920000000082,
+      "end": 355.61200274659024,
+      "text": "Our original example uses R equal to nine thousand nine hundred ohms and S",
+      "chapter": 3
+    },
+    {
+      "start": 355.61200274659024,
+      "end": 356.83199633789883,
+      "text": "equal to ninety nine ohms.",
+      "chapter": 3
+    },
+    {
+      "start": 357.45199908448086,
+      "end": 360.4119981689535,
+      "text": "The result is exactly one hundred ohms in this ideal model.",
+      "chapter": 3
+    },
+    {
+      "start": 361.5919984741293,
+      "end": 364.83199633789883,
+      "text": "Simply calling G ninety nine ohms would use an approximation.",
+      "chapter": 3
+    },
+    {
+      "start": 365.672000305184,
+      "end": 369.9119981689535,
+      "text": "When R is much larger than S, the correction becomes small and G is",
+      "chapter": 3
+    },
+    {
+      "start": 369.9119981689535,
+      "end": 370.792003051766,
+      "text": "approximately S.",
+      "chapter": 3
+    },
+    {
+      "start": 371.33199633789883,
+      "end": 374.93200244141445,
+      "text": "For this example it underestimates G by one percent.",
+      "chapter": 3
+    },
+    {
+      "start": 374.93200244141445,
+      "end": 378.93200244141445,
+      "text": "Start with a high current limiting resistance and never connect an unprotected",
+      "chapter": 3
+    },
+    {
+      "start": 378.93200244141445,
+      "end": 380.8920015258871,
+      "text": "galvanometer directly to a supply.",
+      "chapter": 3
+    },
+    {
+      "start": 382.0919984741293,
+      "end": 386.1112295367983,
+      "text": "Battery internal resistance is neglected here; if it matters, include it in",
+      "chapter": 3
+    },
+    {
+      "start": 386.1112295367983,
+      "end": 386.2719987793051,
+      "text": "the",
+      "chapter": 3
+    },
+    {
+      "start": 386.2719987793051,
+      "end": 388.23199786377774,
+      "text": "total series resistance used by the model.",
+      "chapter": 3
+    },
+    {
+      "start": 388.70400000001115,
+      "end": 393.86399984742326,
+      "text": "A galvanometer's figure of merit tells us how much current is required for one",
+      "chapter": 4
+    },
+    {
+      "start": 393.86399984742326,
+      "end": 394.5240001716725,
+      "text": "scale division.",
+      "chapter": 4
+    },
+    {
+      "start": 395.18400001908464,
+      "end": 398.48399973298234,
+      "text": "It is not its resistance, and it is not the deflection per ampere.",
+      "chapter": 4
+    },
+    {
+      "start": 399.26400041962785,
+      "end": 401.4439997711293,
+      "text": "Let k be current divided by deflection.",
+      "chapter": 4
+    },
+    {
+      "start": 402.4039998092763,
+      "end": 407.85375601290446,
+      "text": "For the unshunted circuit, k equals E divided by the product of R plus G and",
+      "chapter": 4
+    },
+    {
+      "start": 407.85375601290446,
+      "end": 408.2839999237172,
+      "text": "theta.",
+      "chapter": 4
+    },
+    {
+      "start": 409.1240000763051,
+      "end": 412.2839999237172,
+      "text": "Use the original full deflection, measured with the shunt disconnected.",
+      "chapter": 4
+    },
+    {
+      "start": 412.98400068665666,
+      "end": 418.4040007629506,
+      "text": "Suppose E is two volts, R is nine thousand nine hundred ohms, G is one hundred",
+      "chapter": 4
+    },
+    {
+      "start": 418.4040007629506,
+      "end": 421.2240004577748,
+      "text": "ohms, and the original deflection is forty divisions.",
+      "chapter": 4
+    },
+    {
+      "start": 422.62399816895646,
+      "end": 426.80399847413224,
+      "text": "The current is two divided by ten thousand amperes: two hundred microamperes.",
+      "chapter": 4
+    },
+    {
+      "start": 427.62399816895646,
+      "end": 430.46399832154435,
+      "text": "Divide by forty divisions to get five microamperes per division.",
+      "chapter": 4
+    },
+    {
+      "start": 431.46399832154435,
+      "end": 435.714000228893,
+      "text": "If the same linear instrument later receives seventy five microamperes, how",
+      "chapter": 4
+    },
+    {
+      "start": 435.714000228893,
+      "end": 435.88400030518693,
+      "text": "far",
+      "chapter": 4
+    },
+    {
+      "start": 435.88400030518693,
+      "end": 436.483998779308,
+      "text": "should it deflect?",
+      "chapter": 4
+    },
+    {
+      "start": 437.38400030518693,
+      "end": 438.5840010681264,
+      "text": "Give yourself a moment.",
+      "chapter": 4
+    },
+    {
+      "start": 438.5840010681264,
+      "end": 441.30399847413224,
+      "text": "Current divided by k gives fifteen divisions.",
+      "chapter": 4
+    },
+    {
+      "start": 442.2240004577748,
+      "end": 446.0840010681264,
+      "text": "Smaller current per division means greater sensitivity, because less current",
+      "chapter": 4
+    },
+    {
+      "start": 446.0840010681264,
+      "end": 447.7440009155385,
+      "text": "produces the same visible deflection.",
+      "chapter": 4
+    },
+    {
+      "start": 448.62399816895646,
+      "end": 452.9501569370479,
+      "text": "The reciprocal, deflection per current, is the current sensitivity; do not",
+      "chapter": 4
+    },
+    {
+      "start": 452.9501569370479,
+      "end": 453.18400335694474,
+      "text": "swap",
+      "chapter": 4
+    },
+    {
+      "start": 453.18400335694474,
+      "end": 453.72399664307756,
+      "text": "these units.",
+      "chapter": 4
+    },
+    {
+      "start": 454.72399664307756,
+      "end": 458.62399816895646,
+      "text": "In an observation table, record the series resistance, original deflection,",
+      "chapter": 4
+    },
+    {
+      "start": 459.18400335694474,
+      "end": 461.3640036621205,
+      "text": "half deflection, and shunt resistance together.",
+      "chapter": 4
+    },
+    {
+      "start": 462.2639975586049,
+      "end": 466.2783592091207,
+      "text": "Calculate G for each valid set, then use the unshunted readings to calculate",
+      "chapter": 4
+    },
+    {
+      "start": 466.2783592091207,
+      "end": 466.38400030518693,
+      "text": "k.",
+      "chapter": 4
+    },
+    {
+      "start": 466.9439978637807,
+      "end": 471.68400335694474,
+      "text": "Check the pointer's zero, avoid parallax, keep connections reliable, and stay",
+      "chapter": 4
+    },
+    {
+      "start": 471.68400335694474,
+      "end": 472.983998779308,
+      "text": "within safe deflections.",
+      "chapter": 4
+    },
+    {
+      "start": 473.90399694825334,
+      "end": 477.9091265423226,
+      "text": "Repetition reveals scatter, but supply drift, wrong zero and instrument",
+      "chapter": 4
+    },
+    {
+      "start": 477.9091265423226,
+      "end": 478.30399847413224,
+      "text": "loading",
+      "chapter": 4
+    },
+    {
+      "start": 478.30399847413224,
+      "end": 479.5640006103627,
+      "text": "need separate attention.",
+      "chapter": 4
+    },
+    {
+      "start": 480.30399847413224,
+      "end": 484.4439978637807,
+      "text": "Our numbers are original teaching examples, not measurements we performed or",
+      "chapter": 4
+    },
+    {
+      "start": 484.4439978637807,
+      "end": 485.88400030518693,
+      "text": "official past paper questions.",
+      "chapter": 4
+    },
+    {
+      "start": 486.7440009155385,
+      "end": 491.28400183106584,
+      "text": "The JEE skill is connecting the circuit arrangement, observation and justified",
+      "chapter": 4
+    },
+    {
+      "start": 491.28400183106584,
+      "end": 494.60400152589006,
+      "text": "equation, not memorizing an isolated laboratory formula.",
+      "chapter": 4
+    }
+  ]
+}

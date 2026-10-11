@@ -1,0 +1,144 @@
+{
+  "title": "Electromagnetic waves and the spectrum",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 15",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Maxwell's equations, conceptual reference",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/16-1-maxwells-equations-and-electromagnetic-waves"
+    },
+    {
+      "title": "OpenStax: Plane electromagnetic waves, conceptual reference",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/16-2-plane-electromagnetic-waves"
+    },
+    {
+      "title": "OpenStax: Electromagnetic spectrum, conceptual reference",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/16-5-the-electromagnetic-spectrum"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Displacement current closes the capacitor picture",
+      "formula": "Vacuum: Id = epsilon0 dPhi_E/dt; ideal vacuum capacitor: Id = C dV/dt = dQ/dt",
+      "points": [
+        "No conduction charge crosses the ideal vacuum gap.",
+        "Changing electric flux contributes to the magnetic-field law.",
+        "For the complete gap surface, displacement current matches the charging current."
+      ],
+      "script": "Hey, welcome back. Imagine charging a capacitor. Current flows in the wires, but no conduction charge crosses an ideal vacuum gap between the plates. Does the magnetic-field description simply break at the gap? Maxwell's correction makes the account consistent. A changing electric flux contributes to the magnetic circulation just as conduction current does. In vacuum, displacement current equals epsilon zero times the rate of change of electric flux. Its units are amperes, but it is not electrons flying across the vacuum gap. For an ideal parallel-plate vacuum capacitor, neglecting fringing, electric flux through the full plate area is charge divided by epsilon zero. Differentiate and displacement current equals the rate of change of plate charge. That matches the wire's charging current. Since charge equals C V for fixed capacitance, displacement current is C times the voltage derivative. Take capacitance two nanofarads and voltage increasing at five hundred thousand volts per second. Convert capacitance to two times ten to the minus nine farad. The current is zero point zero zero one ampere, or one milliampere. A constant capacitor voltage gives zero displacement current in this model even though the electric field can be nonzero. The electric-flux formula stated here uses vacuum. In matter, the general description uses electric displacement and must include the material response. Do not use the vacuum expression as a universal dielectric shortcut."
+    },
+    {
+      "title": "A plane wave has linked transverse fields",
+      "formula": "Vacuum plane wave: E perpendicular to B, both perpendicular to propagation; E0 = c B0",
+      "points": [
+        "Propagation direction follows E cross B.",
+        "The electric and magnetic fields are in phase in this wave model.",
+        "Their numerical amplitudes differ because they have different SI units."
+      ],
+      "script": "Faraday's law connects changing magnetic fields to electric fields. Maxwell's correction completes the changing-electric-field side. Together, the equations allow electromagnetic disturbances to travel even through vacuum. We do not need air or a vibrating material string. Accelerated charges can produce electromagnetic radiation. For a plane wave travelling in vacuum, the electric and magnetic fields are perpendicular to one another, and both are perpendicular to the propagation direction. That makes the wave transverse. At a given point, the electric and magnetic oscillations are in phase in this travelling-wave model. They reach corresponding zeroes and extrema together. Their amplitudes are not numerically equal in SI units: E zero equals c times B zero. Suppose electric-field amplitude is ninety volts per meter. With c approximately three times ten to the eight meters per second, magnetic amplitude is three times ten to the minus seven tesla, or zero point three microtesla. Now use a direction check. If E points along positive y and B along positive z at an instant, E cross B points along positive x. That is the energy-flow and propagation direction. At the opposite half-cycle, both fields reverse, so their cross product still points forward. The sketch shows directions at one location; it is not a picture of a single charge moving through space along every drawn field arrow."
+    },
+    {
+      "title": "Frequency, wavelength and a change of medium",
+      "formula": "Vacuum: c = f lambda0; medium: v = f lambda; refractive index n = c/v",
+      "points": [
+        "Vacuum speed is approximately 3 x 10^8 m/s for all spectrum bands.",
+        "At a stationary interface, frequency is unchanged.",
+        "A changed phase speed changes wavelength in the medium."
+      ],
+      "script": "Frequency counts oscillations per second, and wavelength is the spatial repeat distance. For any travelling periodic wave, speed equals frequency times wavelength. In vacuum, the electromagnetic-wave speed is c, approximately three hundred million meters per second. Radio waves and visible light share that vacuum speed; higher frequency does not mean faster travel in vacuum. Let's calculate for frequency six times ten to the fourteen hertz. Divide c by frequency to get five times ten to the minus seven meter, or five hundred nanometers. Take a moment with the powers of ten. One nanometer is ten to the minus nine meter, so the conversion is five hundred, not five. Now let this wave enter a stationary transparent medium with refractive index one point five at that frequency. Its phase speed is c over n, or two hundred million meters per second. The source and interface keep the frequency at six times ten to the fourteen hertz. Wavelength becomes about three hundred thirty-three nanometers in the medium. Do not change the frequency just because the speed changed. Spectrum classifications ordinarily quote vacuum wavelength; the shorter wavelength inside glass does not turn the light into a different frequency band. Real media can be dispersive, so refractive index can depend on frequency. We use the stated index at this particular frequency."
+    },
+    {
+      "title": "One spectrum: order the bands by frequency",
+      "formula": "Increasing frequency: radio -> microwave -> infrared -> visible -> ultraviolet -> X rays -> gamma rays; vacuum wavelength decreases",
+      "points": [
+        "Band boundaries are approximate and some ranges overlap.",
+        "Visible red has longer vacuum wavelength than visible violet.",
+        "X-ray and gamma-ray labels can depend on production mechanism, not a perfectly sharp frequency boundary."
+      ],
+      "script": "The electromagnetic spectrum is one continuous family, not seven unrelated kinds of wave. Starting from lower frequency and moving upward, the usual teaching order is radio, microwave, infrared, visible, ultraviolet, X rays and gamma rays. Vacuum wavelength runs in the opposite direction because c equals frequency times wavelength. The board uses equal-width named bands only as an ordering guide, not a linear frequency scale. Microwaves are often treated as a subset of radio waves, so the labels are not perfectly exclusive boxes. Visible light is a small part of the spectrum. A useful approximate classroom range is four hundred to seven hundred nanometers in vacuum, with actual visibility limits depending on conditions. Red is toward the longer-wavelength end; violet toward the shorter-wavelength end. Infrared lies beyond the red side and ultraviolet beyond the violet side. Suppose wave A has frequency twice that of wave B in vacuum. What happens to wavelength? It halves, while their vacuum speeds remain the same. Exact boundaries between bands are conventions, not abrupt changes in the laws of physics. In particular, X-ray and gamma-ray frequency ranges can overlap; their production mechanisms can help distinguish the names. Learn the order, the inverse wavelength trend and the shared wave properties. Later, photon-energy calculations will give another way to compare frequencies without changing this spectrum picture."
+    },
+    {
+      "title": "Applications follow wavelength and interaction",
+      "formula": "For f = 3 GHz: lambda0 = 0.10 m; for f = 3 x 10^14 Hz: lambda0 = 1 micrometer",
+      "points": [
+        "Radio and microwaves support communication; microwaves also serve radar.",
+        "Infrared supports thermal sensing; visible light supports imaging and illumination.",
+        "Ultraviolet, X rays and gamma rays have distinct interactions and controlled uses."
+      ],
+      "script": "Applications become easier to remember when you connect them to interactions rather than learning a random list. Radio waves carry communication signals. Microwaves are useful for radar and many communication links; suitable microwave fields can also transfer energy to food through absorption. These examples do not mean every material absorbs every microwave frequency equally. Infrared is important in thermal sensing and remote controls. Thermal radiation is not exclusively infrared; its distribution depends on temperature. Visible light supports illumination, photography and vision. Ultraviolet has controlled applications such as germicidal equipment and fluorescence excitation. X rays support imaging because different materials attenuate them differently. Gamma rays are associated with energetic nuclear processes and have controlled scientific and industrial applications. Penetration and biological effects depend on photon energy and material; do not infer safety from a band name alone. Our lesson is a physics overview, not instructions for operating radiation equipment. Let's finish with two calculations. A three-gigahertz signal has frequency three times ten to the nine hertz, so vacuum wavelength is zero point one meter, ten centimeters. A wave at three times ten to the fourteen hertz has wavelength one micrometer, in the infrared region. Both still travel at c in vacuum. Your checklist is electric-flux change, field directions, the propagation medium, frequency-wavelength conversion and the interaction relevant to the application. Those links make the spectrum a useful physical map."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "An ideal fixed 2 nF vacuum capacitor has dV/dt = 5 x 10^5 V/s. Displacement-current magnitude through its complete gap surface is:",
+      "options": [
+        "1 A",
+        "1 microA",
+        "1 mA",
+        "0 A"
+      ],
+      "answer": 2,
+      "explanation": "Id = C dV/dt = 2 x 10^-9 x 5 x 10^5 = 10^-3 A, or 1 mA."
+    },
+    {
+      "question": "A vacuum plane wave has E0 = 90 V/m. Its magnetic-field amplitude is approximately:",
+      "options": [
+        "0.3 microT",
+        "30 microT",
+        "3 T",
+        "90 T"
+      ],
+      "answer": 0,
+      "explanation": "B0 = E0/c = 90/(3 x 10^8) = 3 x 10^-7 T = 0.3 microT."
+    },
+    {
+      "question": "At an instant, E points +y and B points +z in a vacuum plane wave. Propagation is:",
+      "options": [
+        "-x",
+        "+y",
+        "-z",
+        "+x"
+      ],
+      "answer": 3,
+      "explanation": "E cross B points +x. Both fields are transverse to propagation."
+    },
+    {
+      "question": "Frequency 6 x 10^14 Hz corresponds to vacuum wavelength:",
+      "options": [
+        "5 nm",
+        "500 nm",
+        "5000 nm",
+        "0.5 m"
+      ],
+      "answer": 1,
+      "explanation": "lambda0 = c/f = 5 x 10^-7 m = 500 nm."
+    },
+    {
+      "question": "At a stationary interface into a medium of n = 1.5, this wave's frequency and wavelength become:",
+      "options": [
+        "Frequency unchanged; wavelength about 333 nm",
+        "Frequency halves; wavelength stays 500 nm",
+        "Frequency rises 1.5 times; wavelength unchanged",
+        "Frequency unchanged; wavelength 750 nm"
+      ],
+      "answer": 0,
+      "explanation": "Frequency remains 6 x 10^14 Hz. Phase speed and wavelength both decrease by the factor 1.5."
+    },
+    {
+      "question": "Which ordering follows increasing typical frequency?",
+      "options": [
+        "Gamma, X ray, UV, visible, IR, microwave, radio",
+        "Visible, IR, UV, radio, microwave, X ray, gamma",
+        "Radio, microwave, IR, visible, UV, X ray, gamma",
+        "Radio, visible, microwave, IR, gamma, UV, X ray"
+      ],
+      "answer": 2,
+      "explanation": "The conventional ordering runs from radio toward gamma rays as typical frequency increases; boundaries can overlap."
+    }
+  ]
+}

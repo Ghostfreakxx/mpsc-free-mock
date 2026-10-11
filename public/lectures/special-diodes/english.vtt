@@ -1,0 +1,430 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.400
+Hey, welcome back.
+
+00:00:02.060 --> 00:00:04.200
+A diode can do more than redirect current.
+
+00:00:05.160 --> 00:00:09.000
+Choose the right semiconductor, and electrical energy can become visible
+
+00:00:09.000 --> 00:00:09.320
+light.
+
+00:00:10.340 --> 00:00:15.020
+In a light emitting diode, or LED, forward bias injects carriers that can
+
+00:00:15.020 --> 00:00:16.640
+recombine and emit photons.
+
+00:00:17.820 --> 00:00:22.144
+Efficient light emission requires suitable materials; an ordinary silicon
+
+00:00:22.144 --> 00:00:22.440
+diode
+
+00:00:22.440 --> 00:00:25.180
+is not automatically a useful visible LED.
+
+00:00:25.800 --> 00:00:30.160
+The approximate photon energy is related to the semiconductor energy gap,
+
+00:00:30.740 --> 00:00:33.780
+although real emission has a spectrum and other device effects.
+
+00:00:34.680 --> 00:00:38.820
+For a simple estimate, suppose the emitted photons have energy two electron
+
+00:00:38.820 --> 00:00:39.020
+volts.
+
+00:00:39.960 --> 00:00:44.340
+Using h c approximately twelve hundred forty electron volt nanometers, their
+
+00:00:44.340 --> 00:00:46.580
+wavelength is about six hundred twenty nanometers.
+
+00:00:47.520 --> 00:00:49.880
+Greater photon energy means shorter wavelength.
+
+00:00:50.460 --> 00:00:53.700
+Now connect the LED safely in our classroom circuit model.
+
+00:00:53.700 --> 00:00:59.140
+A five volt supply drives an LED whose assumed forward drop is two volts.
+
+00:00:59.920 --> 00:01:03.920
+To target ten milliamperes, the resistor must drop the remaining three volts.
+
+00:01:05.060 --> 00:01:09.600
+Divide three by zero point zero one amperes: choose three hundred ohms in this
+
+00:01:09.600 --> 00:01:10.640
+idealized calculation.
+
+00:01:11.420 --> 00:01:14.680
+A real component choice must account for tolerances and ratings.
+
+00:01:15.660 --> 00:01:18.440
+Notice that we did not use zero point seven volts for the LED.
+
+00:01:19.460 --> 00:01:22.380
+Different colors and materials have different forward characteristics.
+
+00:01:22.940 --> 00:01:27.880
+Its I V curve has a steep forward branch; brightness generally responds to
+
+00:01:27.880 --> 00:01:31.500
+current over a useful range, not to a universal voltage rule.
+
+00:01:32.800 --> 00:01:36.540
+Pause and name the conversion: electrical energy in, light out.
+
+00:01:37.180 --> 00:01:39.880
+That direction will help us distinguish the next two devices.
+
+00:01:40.152 --> 00:01:42.032
+Now reverse the energy story.
+
+00:01:42.752 --> 00:01:46.012
+A photodiode detects incoming light rather than producing it.
+
+00:01:46.732 --> 00:01:49.032
+Absorbed photons can create electron hole pairs.
+
+00:01:49.852 --> 00:01:54.092
+The junction field helps separate these carriers so they contribute to a
+
+00:01:54.092 --> 00:01:54.492
+measurable current.
+
+00:01:55.392 --> 00:01:59.612
+In the usual JEE detection arrangement, the photodiode is reverse biased.
+
+00:02:00.832 --> 00:02:04.572
+Reverse bias widens the depletion region and can improve collection speed.
+
+00:02:05.712 --> 00:02:10.332
+Photodiodes can also operate without external reverse bias, so reverse bias is
+
+00:02:10.332 --> 00:02:13.652
+a common operating mode, not the only physically possible one.
+
+00:02:14.192 --> 00:02:15.632
+Keep that qualification in mind.
+
+00:02:16.392 --> 00:02:19.352
+Even without illumination there can be a small dark current.
+
+00:02:20.472 --> 00:02:23.532
+Under suitable fixed wavelength and operating conditions, the added
+
+00:02:23.532 --> 00:02:27.012
+photocurrent is approximately proportional to incident optical power.
+
+00:02:27.412 --> 00:02:32.432
+For an original numerical example, assume responsivity is zero point four
+
+00:02:32.432 --> 00:02:33.272
+amperes per watt.
+
+00:02:34.292 --> 00:02:36.352
+Incident power is two milliwatts.
+
+00:02:36.772 --> 00:02:41.320
+Multiply zero point four by zero point zero zero two watts to get zero point
+
+00:02:41.320 --> 00:02:44.813
+zero zero zero eight amperes, or zero point eight milliamperes of
+
+00:02:44.813 --> 00:02:45.512
+photocurrent.
+
+00:02:46.012 --> 00:02:50.412
+If dark current is two microamperes and both contributions flow in the same
+
+00:02:50.412 --> 00:02:54.022
+measured reverse direction, the current magnitude becomes about zero point
+
+00:02:54.022 --> 00:02:55.352
+eight zero two milliamperes.
+
+00:02:56.272 --> 00:02:58.972
+Check the sign convention before adding signed currents on a graph.
+
+00:02:59.712 --> 00:03:02.792
+More light shifts the reverse current magnitude under the same conditions.
+
+00:03:03.752 --> 00:03:06.412
+This example assumes the device is in its linear range.
+
+00:03:07.292 --> 00:03:12.103
+The key contrast is easy: an LED sends light out under forward operation,
+
+00:03:12.103 --> 00:03:12.432
+while
+
+00:03:12.432 --> 00:03:15.812
+a photodiode turns incoming light into an electrical detection signal.
+
+00:03:16.200 --> 00:03:20.960
+A solar cell also absorbs light, but its main job is delivering electrical
+
+00:03:20.960 --> 00:03:21.900
+power to a load.
+
+00:03:22.780 --> 00:03:26.620
+Illumination creates carriers, and the junction separates them, producing a
+
+00:03:26.620 --> 00:03:30.020
+photovoltage and a current that can flow through an external circuit.
+
+00:03:30.720 --> 00:03:34.400
+There is no external bias battery supplying the cell in its normal power
+
+00:03:34.400 --> 00:03:35.140
+generating role.
+
+00:03:35.740 --> 00:03:37.260
+A graph needs a clear convention.
+
+00:03:37.940 --> 00:03:42.300
+In our board, voltage is the positive output terminal voltage, and current is
+
+00:03:42.300 --> 00:03:44.060
+the positive current delivered to the load.
+
+00:03:44.650 --> 00:03:49.080
+Under fixed illumination, current is greatest near the short circuit end and
+
+00:03:49.080 --> 00:03:51.180
+falls to zero at the open circuit voltage.
+
+00:03:51.960 --> 00:03:56.940
+At short circuit the terminal voltage is zero, so useful terminal power V I is
+
+00:03:56.940 --> 00:03:58.340
+zero despite the current.
+
+00:03:59.020 --> 00:04:03.486
+At open circuit the current is zero, so terminal power is also zero despite
+
+00:04:03.486 --> 00:04:04.200
+the voltage.
+
+00:04:04.940 --> 00:04:07.640
+The useful operating point lies between these extremes.
+
+00:04:08.480 --> 00:04:12.560
+Suppose the cell supplies zero point five volts and twenty milliamperes to a
+
+00:04:12.560 --> 00:04:12.700
+load.
+
+00:04:13.420 --> 00:04:17.460
+Multiply zero point five by zero point zero two amperes.
+
+00:04:17.460 --> 00:04:21.680
+Output power is zero point zero one watt, or ten milliwatts.
+
+00:04:21.680 --> 00:04:25.811
+If fifty milliwatts of optical power fall on the active area, the efficiency
+
+00:04:25.811 --> 00:04:25.920
+at
+
+00:04:25.920 --> 00:04:29.920
+that operating point is ten divided by fifty, or twenty percent.
+
+00:04:29.920 --> 00:04:33.340
+That is an assumed example, not a promise about every solar cell.
+
+00:04:34.260 --> 00:04:38.200
+Maximum power operation depends on the I V curve, illumination, and
+
+00:04:38.200 --> 00:04:38.480
+temperature.
+
+00:04:38.960 --> 00:04:43.820
+For JEE, do not confuse open circuit voltage with maximum power, or short
+
+00:04:43.820 --> 00:04:45.700
+circuit current with a useful power output.
+
+00:04:46.800 --> 00:04:50.900
+Our ordinary diode lesson treated reverse breakdown as a condition to avoid
+
+00:04:50.900 --> 00:04:53.120
+unless the device is designed for it.
+
+00:04:53.540 --> 00:04:57.578
+A Zener diode is designed for controlled reverse breakdown operation within
+
+00:04:57.578 --> 00:04:57.740
+its
+
+00:04:57.740 --> 00:04:58.160
+ratings.
+
+00:04:59.200 --> 00:05:01.120
+Connect it reverse biased and limit the current.
+
+00:05:02.020 --> 00:05:06.320
+Once its reverse voltage reaches the operating region around V Z, current can
+
+00:05:06.320 --> 00:05:09.380
+change substantially while voltage changes relatively little.
+
+00:05:10.220 --> 00:05:14.632
+On the usual signed diode I V graph, reverse voltage and reverse current
+
+00:05:14.632 --> 00:05:15.000
+appear
+
+00:05:15.000 --> 00:05:15.900
+on the negative sides.
+
+00:05:15.900 --> 00:05:21.080
+The labels V Z and I Z in our numerical examples are positive magnitudes.
+
+00:05:22.020 --> 00:05:24.140
+That avoids accidentally reporting negative power.
+
+00:05:25.100 --> 00:05:29.120
+The curve is not a perfectly vertical line: real devices have a finite slope
+
+00:05:29.120 --> 00:05:31.160
+resistance and a useful current range.
+
+00:05:32.420 --> 00:05:36.240
+Also, the microscopic mechanism can involve Zener tunneling, avalanche
+
+00:05:36.240 --> 00:05:38.960
+processes, or both, depending on the device.
+
+00:05:39.140 --> 00:05:43.320
+You do not need to label every breakdown event as one identical process.
+
+00:05:43.320 --> 00:05:48.700
+For a five point one volt Zener carrying ten milliamperes in reverse, power is
+
+00:05:48.700 --> 00:05:53.000
+five point one times zero point zero one, or zero point zero five one watts.
+
+00:05:53.840 --> 00:05:55.940
+That is fifty one milliwatts.
+
+00:05:55.940 --> 00:05:58.980
+Compare this with the power rating and the allowed operating current.
+
+00:05:59.920 --> 00:06:03.820
+A series resistor is not optional in the simple supply circuit; it prevents
+
+00:06:03.820 --> 00:06:04.740
+excessive current.
+
+00:06:05.880 --> 00:06:07.760
+Pause and distinguish polarity from magnitude.
+
+00:06:08.440 --> 00:06:11.860
+The Zener is reverse biased, but its dissipated power is positive.
+
+00:06:11.860 --> 00:06:16.420
+Regulation requires a suitable current, not just writing the breakdown voltage
+
+00:06:16.420 --> 00:06:17.960
+next to an unloaded diode.
+
+00:06:18.408 --> 00:06:22.928
+Let's solve a complete regulator example, because the current split is where
+
+00:06:22.928 --> 00:06:24.708
+JEE questions become interesting.
+
+00:06:25.388 --> 00:06:28.788
+A twelve volt source feeds a three hundred thirty ohm series resistor.
+
+00:06:29.448 --> 00:06:33.808
+A five point one volt Zener is reverse connected across a five hundred ten ohm
+
+00:06:33.808 --> 00:06:34.048
+load.
+
+00:06:35.128 --> 00:06:39.328
+Assume the Zener's specified useful current range for this exercise is five to
+
+00:06:39.328 --> 00:06:40.908
+thirty milliamperes.
+
+00:06:40.908 --> 00:06:46.008
+If it regulates, the series resistor drops twelve minus five point one, or six
+
+00:06:46.008 --> 00:06:46.648
+point nine volts.
+
+00:06:46.648 --> 00:06:52.152
+Divide by three hundred thirty: source current is about twenty point nine one
+
+00:06:52.152 --> 00:06:52.708
+milliamperes.
+
+00:06:52.708 --> 00:06:56.188
+Load current is five point one divided by five hundred ten, or ten
+
+00:06:56.188 --> 00:06:57.688
+milliamperes.
+
+00:06:57.688 --> 00:07:00.848
+The remaining ten point nine one milliamperes flows through the Zener.
+
+00:07:01.528 --> 00:07:05.281
+It is inside the assumed current range, and Zener power is about fifty five
+
+00:07:05.281 --> 00:07:07.228
+point six milliwatts.
+
+00:07:07.228 --> 00:07:10.208
+Now change the load resistance to one hundred seventy ohms.
+
+00:07:10.608 --> 00:07:14.608
+If voltage stayed at five point one, load current would be thirty
+
+00:07:14.608 --> 00:07:15.408
+milliamperes,
+
+00:07:15.408 --> 00:07:16.648
+more than the resistor can supply.
+
+00:07:17.468 --> 00:07:19.908
+Subtracting gives a negative assumed Zener current.
+
+00:07:20.628 --> 00:07:24.428
+That is a warning that our regulating model is inconsistent, not a real
+
+00:07:24.428 --> 00:07:25.428
+negative breakdown current.
+
+00:07:25.968 --> 00:07:30.762
+In the simple off Zener approximation, the circuit becomes a divider: output
+
+00:07:30.762 --> 00:07:30.888
+is
+
+00:07:30.888 --> 00:07:34.928
+twelve times one hundred seventy divided by five hundred, or four point zero
+
+00:07:34.928 --> 00:07:36.508
+eight volts, below breakdown.
+
+00:07:37.508 --> 00:07:39.768
+Think before trusting V Z as the output.
+
+00:07:40.548 --> 00:07:42.408
+Always test the current balance and ratings.
+
+00:07:43.048 --> 00:07:46.908
+A regulator maintains voltage only within its operating conditions, not for
+
+00:07:46.908 --> 00:07:48.308
+every supply and every load.

@@ -1,0 +1,140 @@
+{
+  "title": "Series LCR circuits: resonance and AC power",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 14",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: RLC series circuits, conceptual reference",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/15-3-rlc-series-circuits-with-ac"
+    },
+    {
+      "title": "OpenStax: Power in an AC circuit, conceptual reference",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Series elements share one current, not one voltage phase",
+      "formula": "VR = IR; VL = I XL; VC = I XC; phasors referenced to current",
+      "points": [
+        "R voltage follows current; L voltage leads; C voltage lags.",
+        "Use all peak values or all RMS values consistently.",
+        "VL and VC point in opposite phasor directions."
+      ],
+      "script": "Hey, welcome back. Connect a resistor, inductor and capacitor in series to a sinusoidal source. There is only one series current, but the three element voltages do not peak at the same time. That is why adding their magnitudes as ordinary positive numbers gives the wrong source voltage. Use current as our phasor reference. Resistor voltage points along current. Inductor voltage leads it by ninety degrees, so draw it upward. Capacitor voltage lags by ninety degrees, so draw it downward. The inductive and capacitive voltage phasors oppose each other. Their net vertical contribution is current times X L minus X C. The horizontal contribution is current times R. The source voltage is the vector sum. Here, all phasor lengths represent RMS magnitudes; peak values would also work if used consistently. Suppose RMS current is two amperes, R is thirty ohms, X L is seventy ohms and X C is thirty ohms. Resistor voltage is sixty volts. Inductor voltage is one hundred forty volts, capacitor voltage sixty volts, and their difference eighty volts. The source magnitude is the square root of sixty squared plus eighty squared: one hundred volts. It is not two hundred sixty volts. Phasors encode time relationships; they are not literal spatial voltage arrows inside the wires."
+    },
+    {
+      "title": "Impedance and phase tell you magnitude and timing",
+      "formula": "Z = sqrt(R^2 + (XL-XC)^2); Irms = Vrms/Z; tan(phi) = (XL-XC)/R",
+      "points": [
+        "phi is source-voltage phase minus current phase.",
+        "XL > XC gives an inductive circuit: current lags.",
+        "XL < XC gives a capacitive circuit: current leads."
+      ],
+      "script": "Factor current out of the phasor triangle and you get impedance Z: square root of R squared plus the square of X L minus X C. Impedance has units ohms, but includes timing effects as well as resistance. RMS current equals RMS source voltage divided by Z. The phase angle phi is source-voltage phase minus current phase, and its tangent is X L minus X C divided by R. With R thirty ohms and net reactance forty ohms, impedance is fifty ohms. A one-hundred-volt RMS source gives two amperes RMS. The phase angle is about fifty-three point one degrees. Because net reactance is positive, source voltage leads current, or current lags. Now swap the reactances: X L thirty ohms and X C seventy ohms. Impedance still equals fifty ohms and current magnitude stays two amperes, but phi is negative. Current now leads the source voltage by the same angle magnitude. Magnitude alone cannot tell you the lead or lag. The sign of net reactance matters. Our formula assumes a series circuit, ideal L and C, positive total resistance and sinusoidal steady state. Do not reuse it unchanged for a parallel circuit, and do not mix RMS source voltage with peak current when calculating impedance."
+    },
+    {
+      "title": "Series resonance cancels net reactance",
+      "formula": "omega0 = 1/sqrt(LC); f0 = omega0/(2pi); at resonance Z = R",
+      "points": [
+        "XL = XC, but the individual element voltages need not vanish.",
+        "For fixed source amplitude and constant R, series current is maximal.",
+        "Positive resistance keeps the steady-state resonance current finite."
+      ],
+      "script": "Resonance occurs when inductive and capacitive reactances match. Set omega L equal to one over omega C. Rearranging gives resonance angular frequency one over square root of L C. Ordinary resonance frequency is that angular frequency divided by two pi. At resonance, net reactance is zero, impedance equals resistance and current is in phase with the source voltage. For a fixed source amplitude and constant total resistance, the series current reaches its maximum. Try L equal to zero point one henry and C equal to one hundred microfarads. Their product is ten to the minus five, giving angular frequency about three hundred sixteen point two radians per second and ordinary frequency about fifty point three hertz. With RMS source voltage one hundred volts and R twenty ohms, resonance current is five amperes RMS. Do the inductor and capacitor voltages vanish? Pause before answering. No. Each reactance is about thirty-one point six ohms, so each element voltage is about one hundred fifty-eight volts RMS. Their phasors cancel each other in the source sum. An element voltage can exceed the source voltage without violating energy conservation. Our finite-resistance model keeps current finite. The ideal zero-resistance driven resonant system needs a transient analysis; do not promise an ordinary finite steady-state current there."
+    },
+    {
+      "title": "Power factor separates energy transfer from circulation",
+      "formula": "Pavg = Vrms Irms cos(phi) = Irms^2 R; cos(phi) = R/Z",
+      "points": [
+        "Only the ideal resistor dissipates average power.",
+        "Vrms Irms alone is apparent power, not generally real power.",
+        "Ideal L and C exchange energy and have zero average dissipation."
+      ],
+      "script": "The source voltage and current may be out of phase, so multiplying their RMS magnitudes does not always give average transferred power. The correct expression is RMS voltage times RMS current times cosine phi. That cosine is the power factor. In our series model it equals R over Z. For the thirty-ohm resistor and fifty-ohm impedance example, power factor is zero point six. RMS voltage one hundred volts and RMS current two amperes give average power one hundred twenty watts. Check another way: current squared times resistance is four times thirty, also one hundred twenty watts. The product V RMS times I RMS is two hundred volt-amperes of apparent power, not two hundred watts of real power in this example. Ideal inductors and capacitors store and return energy, giving zero average dissipation individually. Real components add losses, which belong in a more complete model. At series resonance, phi is zero and power factor is one. An ideal pure reactive circuit has zero average power despite nonzero voltage and current. That does not mean instantaneous power is always zero. Energy goes back and forth over the cycle. In JEE numericals, first establish whether the provided voltage and current are peak or RMS, then check whether a power factor is needed."
+    },
+    {
+      "title": "A frequency check joins all the ideas",
+      "formula": "L = 0.1 H, C = 100 microF, R = 20 ohm; at omega = 200 rad/s: XL = 20, XC = 50, Z = sqrt(1300)",
+      "points": [
+        "Below resonance the series circuit is capacitive.",
+        "Above resonance the series circuit is inductive.",
+        "Frequency changes both reactances; update both before finding Z."
+      ],
+      "script": "Let's combine the ideas in one frequency test. Keep L zero point one henry, C one hundred microfarads, R twenty ohms and RMS source voltage one hundred volts. Set angular frequency to two hundred radians per second, below the resonance value of about three hundred sixteen. Inductive reactance is twenty ohms. Capacitive reactance is fifty ohms. Net reactance is minus thirty ohms, so the circuit is capacitive and current leads the voltage. Impedance is square root of twenty squared plus thirty squared, about thirty-six point one ohms. RMS current is about two point seven seven amperes. Power factor is twenty over thirty-six point one, about zero point five five five. Average power is about one hundred fifty-four watts. At resonance the current would be five amperes and average power five hundred watts for this same fixed source and resistor. Now raise angular frequency to five hundred. X L becomes fifty ohms and X C becomes twenty ohms. Net reactance is plus thirty ohms: current lags. The impedance and current magnitude happen to match our lower-frequency case, but phase reverses. That matching is specific to these numbers, not a general equal-spacing frequency rule. Recalculate both reactances whenever frequency changes, then use their difference, the impedance and the power factor."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "R = 30 ohm, XL = 70 ohm and XC = 30 ohm give impedance:",
+      "options": [
+        "130 ohm",
+        "50 ohm",
+        "40 ohm",
+        "30 ohm"
+      ],
+      "answer": 1,
+      "explanation": "Z = sqrt(30 squared + 40 squared) = 50 ohm."
+    },
+    {
+      "question": "For positive XL-XC in a series LCR circuit, current:",
+      "options": [
+        "Leads source voltage",
+        "Is always in phase",
+        "Lags source voltage",
+        "Must be zero"
+      ],
+      "answer": 2,
+      "explanation": "The circuit is inductive; source voltage leads current."
+    },
+    {
+      "question": "For L = 0.1 H and C = 100 microF, resonance frequency is approximately:",
+      "options": [
+        "50.3 Hz",
+        "316 Hz",
+        "5.03 Hz",
+        "1000 Hz"
+      ],
+      "answer": 0,
+      "explanation": "f0 = 1/(2pi sqrt(LC)) is approximately 50.3 Hz."
+    },
+    {
+      "question": "At series resonance, the ideal inductor and capacitor voltages:",
+      "options": [
+        "Both vanish",
+        "Must each equal the source voltage",
+        "Always have zero RMS value",
+        "Can be nonzero and cancel as phasors"
+      ],
+      "answer": 3,
+      "explanation": "VL and VC are equal in magnitude and opposite in phase."
+    },
+    {
+      "question": "Vrms = 100 V, Irms = 2 A and power factor 0.6 give average power:",
+      "options": [
+        "200 W",
+        "120 W",
+        "60 W",
+        "0 W"
+      ],
+      "answer": 1,
+      "explanation": "Pavg = 100 x 2 x 0.6 = 120 W."
+    },
+    {
+      "question": "With R = 20 ohm and net reactance -30 ohm, impedance is approximately:",
+      "options": [
+        "10 ohm",
+        "50 ohm",
+        "36.1 ohm",
+        "-36.1 ohm"
+      ],
+      "answer": 2,
+      "explanation": "Z = sqrt(20 squared + (-30) squared) is positive, about 36.1 ohm."
+    }
+  ]
+}

@@ -1,0 +1,691 @@
+{
+  "duration": 353.2560000000107,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 126.16800000000389
+    },
+    {
+      "start": 126.16800000000389,
+      "end": 232.53600000000702
+    },
+    {
+      "start": 232.53600000000702,
+      "end": 353.2560000000107
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.2599999904632568,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.7799999713897705,
+      "end": 2.819999933242798,
+      "text": "Let's start with a puzzle.",
+      "chapter": 0
+    },
+    {
+      "start": 3.4000000953674316,
+      "end": 7.639999866485596,
+      "text": "A wire carries current into a charging capacitor, but no charge crosses its",
+      "chapter": 0
+    },
+    {
+      "start": 7.639999866485596,
+      "end": 8.680000305175781,
+      "text": "ideal vacuum gap.",
+      "chapter": 0
+    },
+    {
+      "start": 9.4399995803833,
+      "end": 12.119999885559082,
+      "text": "How can the magnetic field around the circuit be consistent?",
+      "chapter": 0
+    },
+    {
+      "start": 12.979999542236328,
+      "end": 15.760000228881836,
+      "text": "Maxwell's correction includes changing electric flux.",
+      "chapter": 0
+    },
+    {
+      "start": 16.639999389648438,
+      "end": 20.5,
+      "text": "Displacement current is epsilon zero times the rate of change of electric flux",
+      "chapter": 0
+    },
+    {
+      "start": 20.5,
+      "end": 21.040000915527344,
+      "text": "in vacuum.",
+      "chapter": 0
+    },
+    {
+      "start": 21.5,
+      "end": 24.100000381469727,
+      "text": "It is not a stream of particles crossing the gap.",
+      "chapter": 0
+    },
+    {
+      "start": 25.18000030517578,
+      "end": 29.81999969482422,
+      "text": "For ideal parallel plates, charge is epsilon zero times electric field times",
+      "chapter": 0
+    },
+    {
+      "start": 29.81999969482422,
+      "end": 30.440000534057617,
+      "text": "plate area.",
+      "chapter": 0
+    },
+    {
+      "start": 31.479999542236328,
+      "end": 35.68000030517578,
+      "text": "Differentiate: the displacement current across the full plate area equals the",
+      "chapter": 0
+    },
+    {
+      "start": 35.68000030517578,
+      "end": 36.52000045776367,
+      "text": "charging current in the wire.",
+      "chapter": 0
+    },
+    {
+      "start": 37.31999969482422,
+      "end": 41.459999084472656,
+      "text": "The magnetic circulation law includes conduction current plus displacement",
+      "chapter": 0
+    },
+    {
+      "start": 41.459999084472656,
+      "end": 43.15999984741211,
+      "text": "current through the chosen surface.",
+      "chapter": 0
+    },
+    {
+      "start": 44.15999984741211,
+      "end": 48.29999923706055,
+      "text": "Now give the plates circular radius a and assume uniform electric field,",
+      "chapter": 0
+    },
+    {
+      "start": 48.86000061035156,
+      "end": 51.279998779296875,
+      "text": "negligible fringing and a quasistatic situation.",
+      "chapter": 0
+    },
+    {
+      "start": 52.34000015258789,
+      "end": 56.599998474121094,
+      "text": "Take a circular magnetic loop of radius r less than a, concentric with the",
+      "chapter": 0
+    },
+    {
+      "start": 56.599998474121094,
+      "end": 58.2400016784668,
+      "text": "plate axis, between the plates.",
+      "chapter": 0
+    },
+    {
+      "start": 59.040000915527344,
+      "end": 61.040000915527344,
+      "text": "What fraction of electric flux does it enclose?",
+      "chapter": 0
+    },
+    {
+      "start": 61.86000061035156,
+      "end": 63.7599983215332,
+      "text": "It is r squared divided by a squared.",
+      "chapter": 0
+    },
+    {
+      "start": 64.5199966430664,
+      "end": 68.12000274658203,
+      "text": "So enclosed displacement current is charging current times that fraction.",
+      "chapter": 0
+    },
+    {
+      "start": 69.18000030517578,
+      "end": 72.41999816894531,
+      "text": "Symmetry lets magnetic field magnitude be constant around the circular loop,",
+      "chapter": 0
+    },
+    {
+      "start": 73,
+      "end": 73.73999786376953,
+      "text": "tangent to it.",
+      "chapter": 0
+    },
+    {
+      "start": 74.4800033569336,
+      "end": 76.80000305175781,
+      "text": "Magnetic circulation is B times two pi r.",
+      "chapter": 0
+    },
+    {
+      "start": 77.73999786376953,
+      "end": 81.96871967804738,
+      "text": "Equating it to mu zero times the enclosed displacement current gives B equal",
+      "chapter": 0
+    },
+    {
+      "start": 81.96871967804738,
+      "end": 82.08000183105469,
+      "text": "to",
+      "chapter": 0
+    },
+    {
+      "start": 82.08000183105469,
+      "end": 84.81999969482422,
+      "text": "mu zero I r divided by two pi a squared.",
+      "chapter": 0
+    },
+    {
+      "start": 85.83999633789062,
+      "end": 89.05999755859375,
+      "text": "Notice the field increases linearly with r inside the plate area.",
+      "chapter": 0
+    },
+    {
+      "start": 89.80000305175781,
+      "end": 94.30000305175781,
+      "text": "Try a equals zero point one metres, r equals zero point zero five metres and",
+      "chapter": 0
+    },
+    {
+      "start": 94.30000305175781,
+      "end": 96.5999984741211,
+      "text": "charging current zero point two amperes.",
+      "chapter": 0
+    },
+    {
+      "start": 96.9000015258789,
+      "end": 100.85076962984525,
+      "text": "Using mu zero divided by two pi approximately two times ten to the minus",
+      "chapter": 0
+    },
+    {
+      "start": 100.85076962984525,
+      "end": 101.18000030517578,
+      "text": "seven,",
+      "chapter": 0
+    },
+    {
+      "start": 101.62000274658203,
+      "end": 103.80000305175781,
+      "text": "the result is zero point two microtesla.",
+      "chapter": 0
+    },
+    {
+      "start": 104.26000213623047,
+      "end": 106.9800033569336,
+      "text": "At the plate edge it is zero point four microtesla.",
+      "chapter": 0
+    },
+    {
+      "start": 107.37999725341797,
+      "end": 110.54000091552734,
+      "text": "The current direction sets the circulation by the right hand rule.",
+      "chapter": 0
+    },
+    {
+      "start": 111.4000015258789,
+      "end": 115.55999755859375,
+      "text": "This ideal capacitor model is not a universal field formula for arbitrary",
+      "chapter": 0
+    },
+    {
+      "start": 115.55999755859375,
+      "end": 118.27999877929688,
+      "text": "leads, fringing or rapidly varying circuits.",
+      "chapter": 0
+    },
+    {
+      "start": 118.94000244140625,
+      "end": 122.94000244140625,
+      "text": "Our key idea is to choose the surface carefully and include changing electric",
+      "chapter": 0
+    },
+    {
+      "start": 122.94000244140625,
+      "end": 125.45999908447266,
+      "text": "flux where conduction current alone is not enough.",
+      "chapter": 0
+    },
+    {
+      "start": 126.16800000000389,
+      "end": 129.84800006676107,
+      "text": "Now let the fields travel as a sinusoidal plane wave in vacuum.",
+      "chapter": 1
+    },
+    {
+      "start": 130.76799990463644,
+      "end": 133.90799977112204,
+      "text": "Electric field, magnetic field and propagation direction are mutually",
+      "chapter": 1
+    },
+    {
+      "start": 133.90799977112204,
+      "end": 134.44799973297506,
+      "text": "perpendicular.",
+      "chapter": 1
+    },
+    {
+      "start": 135.4879996948281,
+      "end": 137.94799973297506,
+      "text": "Propagation follows electric field cross magnetic field.",
+      "chapter": 1
+    },
+    {
+      "start": 138.50800015259176,
+      "end": 142.78800083923727,
+      "text": "Their peak magnitudes obey E zero equals c times B zero.",
+      "chapter": 1
+    },
+    {
+      "start": 142.78800083923727,
+      "end": 146.82799984741598,
+      "text": "In vacuum, electric energy density is one half epsilon zero E squared.",
+      "chapter": 1
+    },
+    {
+      "start": 147.8079993896523,
+      "end": 150.68800045776754,
+      "text": "Magnetic energy density is B squared divided by two mu zero.",
+      "chapter": 1
+    },
+    {
+      "start": 151.38799931335836,
+      "end": 155.52800061035543,
+      "text": "Since B equals E divided by c and c squared equals one divided by mu zero",
+      "chapter": 1
+    },
+    {
+      "start": 155.52800061035543,
+      "end": 159.02800061035543,
+      "text": "epsilon zero, those two densities are equal at each instant.",
+      "chapter": 1
+    },
+    {
+      "start": 159.888001220707,
+      "end": 162.10799862671286,
+      "text": "Total energy density is epsilon zero E squared.",
+      "chapter": 1
+    },
+    {
+      "start": 162.888001220707,
+      "end": 165.74800183105856,
+      "text": "The energy flux magnitude is c times that total density.",
+      "chapter": 1
+    },
+    {
+      "start": 166.4879996948281,
+      "end": 168.18800045776754,
+      "text": "But intensity means the time average.",
+      "chapter": 1
+    },
+    {
+      "start": 168.82799984741598,
+      "end": 172.40800167847067,
+      "text": "For a sinusoid, average E squared is half the peak amplitude squared.",
+      "chapter": 1
+    },
+    {
+      "start": 173.20800091553122,
+      "end": 176.70800091553122,
+      "text": "Therefore intensity is one half epsilon zero c E zero squared.",
+      "chapter": 1
+    },
+    {
+      "start": 177.02800061035543,
+      "end": 182.02800061035543,
+      "text": "If the field is given as RMS instead, intensity is epsilon zero c E RMS",
+      "chapter": 1
+    },
+    {
+      "start": 182.02800061035543,
+      "end": 183.60799862671286,
+      "text": "squared, with no extra half.",
+      "chapter": 1
+    },
+    {
+      "start": 184.42799832153707,
+      "end": 187.26799847412497,
+      "text": "Pause before substituting: is your number peak or RMS?",
+      "chapter": 1
+    },
+    {
+      "start": 188.00800015259176,
+      "end": 190.62799908447653,
+      "text": "Let peak electric field be one hundred twenty volts per metre.",
+      "chapter": 1
+    },
+    {
+      "start": 191.34800030517965,
+      "end": 194.72799755859762,
+      "text": "Use epsilon zero approximately eight point eight five times ten to the minus",
+      "chapter": 1
+    },
+    {
+      "start": 194.72799755859762,
+      "end": 198.86799694824606,
+      "text": "twelve and c approximately three times ten to the eighth.",
+      "chapter": 1
+    },
+    {
+      "start": 198.86799694824606,
+      "end": 201.10800244141012,
+      "text": "Peak magnetic field is zero point four microtesla.",
+      "chapter": 1
+    },
+    {
+      "start": 201.96800305176168,
+      "end": 205.66800000000387,
+      "text": "Average intensity is nineteen point one one six watts per square metre, about",
+      "chapter": 1
+    },
+    {
+      "start": 205.66800000000387,
+      "end": 206.64800335693747,
+      "text": "nineteen point one.",
+      "chapter": 1
+    },
+    {
+      "start": 207.22799755859762,
+      "end": 210.52800061035543,
+      "text": "RMS electric field is one hundred twenty divided by the square root of two,",
+      "chapter": 1
+    },
+    {
+      "start": 211.46800305176168,
+      "end": 213.32800366211325,
+      "text": "approximately eighty four point eight five volts per metre.",
+      "chapter": 1
+    },
+    {
+      "start": 214.24800183105856,
+      "end": 216.76799847412497,
+      "text": "Putting that into the RMS formula gives the same intensity.",
+      "chapter": 1
+    },
+    {
+      "start": 217.70800091553122,
+      "end": 220.34800030517965,
+      "text": "Double the amplitude and intensity becomes four times as large.",
+      "chapter": 1
+    },
+    {
+      "start": 221.12799908447653,
+      "end": 225.43517944023324,
+      "text": "These relations assume a vacuum plane wave; do not automatically replace c",
+      "chapter": 1
+    },
+    {
+      "start": 225.43517944023324,
+      "end": 225.66800000000387,
+      "text": "with",
+      "chapter": 1
+    },
+    {
+      "start": 225.66800000000387,
+      "end": 228.5079963378945,
+      "text": "a medium speed while keeping every vacuum formula unchanged.",
+      "chapter": 1
+    },
+    {
+      "start": 229.12799908447653,
+      "end": 232.37279963379484,
+      "text": "For the numerical answer, keep enough digits during calculation and round at",
+      "chapter": 1
+    },
+    {
+      "start": 232.37279963379484,
+      "end": 232.53600000000702,
+      "text": "the end.",
+      "chapter": 1
+    },
+    {
+      "start": 232.53600000000702,
+      "end": 234.73600004769074,
+      "text": "Finally, light can push.",
+      "chapter": 2
+    },
+    {
+      "start": 235.5160000190805,
+      "end": 239.97600005722748,
+      "text": "At normal incidence, a completely absorbing surface receives momentum from the",
+      "chapter": 2
+    },
+    {
+      "start": 239.97600005722748,
+      "end": 240.79600022888886,
+      "text": "incoming wave.",
+      "chapter": 2
+    },
+    {
+      "start": 241.57599996186005,
+      "end": 244.33600019074188,
+      "text": "Average radiation pressure is intensity divided by c.",
+      "chapter": 2
+    },
+    {
+      "start": 245.2160003051828,
+      "end": 249.51599954224335,
+      "text": "An ideal perfectly reflecting surface reverses the normal momentum, giving",
+      "chapter": 2
+    },
+    {
+      "start": 249.51599954224335,
+      "end": 250.45600007630097,
+      "text": "twice that pressure.",
+      "chapter": 2
+    },
+    {
+      "start": 251.33599923706757,
+      "end": 255.7559993133615,
+      "text": "These are normal incidence limiting cases, not formulas for every tilted or",
+      "chapter": 2
+    },
+    {
+      "start": 255.7559993133615,
+      "end": 256.99599908447965,
+      "text": "partly reflecting surface.",
+      "chapter": 2
+    },
+    {
+      "start": 258.1360003814767,
+      "end": 262.19651204388657,
+      "text": "Consider a beam with intensity six hundred watts per square metre striking",
+      "chapter": 2
+    },
+    {
+      "start": 262.19651204388657,
+      "end": 262.4159991607736,
+      "text": "area",
+      "chapter": 2
+    },
+    {
+      "start": 262.4159991607736,
+      "end": 264.7760016784738,
+      "text": "zero point zero two square metres normally.",
+      "chapter": 2
+    },
+    {
+      "start": 266.65599893189176,
+      "end": 268.17599938965543,
+      "text": "Absorbed power is twelve watts.",
+      "chapter": 2
+    },
+    {
+      "start": 269.2560012207101,
+      "end": 273.58215275065805,
+      "text": "Absorbing pressure is two times ten to the minus six pascals, and force is",
+      "chapter": 2
+    },
+    {
+      "start": 273.58215275065805,
+      "end": 273.81599877930387,
+      "text": "four",
+      "chapter": 2
+    },
+    {
+      "start": 273.81599877930387,
+      "end": 275.3760001525949,
+      "text": "times ten to the minus eight newtons.",
+      "chapter": 2
+    },
+    {
+      "start": 276.2959983215402,
+      "end": 280.3760001525949,
+      "text": "For perfect reflection, force doubles to eight times ten to the minus eight",
+      "chapter": 2
+    },
+    {
+      "start": 280.3760001525949,
+      "end": 280.65599893189176,
+      "text": "newtons.",
+      "chapter": 2
+    },
+    {
+      "start": 281.4559981689523,
+      "end": 285.23600076294645,
+      "text": "A tiny force can still matter for light objects or sustained illumination.",
+      "chapter": 2
+    },
+    {
+      "start": 286.1359984741281,
+      "end": 290.15599893189176,
+      "text": "Do not confuse force, measured in newtons, with pressure, measured in newtons",
+      "chapter": 2
+    },
+    {
+      "start": 290.15599893189176,
+      "end": 290.89600061035856,
+      "text": "per square metre.",
+      "chapter": 2
+    },
+    {
+      "start": 291.65599893189176,
+      "end": 295.475998626716,
+      "text": "Now imagine an ideal source radiating one hundred twenty watts isotropically",
+      "chapter": 2
+    },
+    {
+      "start": 295.475998626716,
+      "end": 296.4559981689523,
+      "text": "into free space.",
+      "chapter": 2
+    },
+    {
+      "start": 297.3559996948312,
+      "end": 302.036000000007,
+      "text": "At distance two metres, power spreads over a sphere of area four pi r squared.",
+      "chapter": 2
+    },
+    {
+      "start": 303.156002746589,
+      "end": 307.1626632080148,
+      "text": "Intensity is one hundred twenty divided by sixteen pi, about two point three",
+      "chapter": 2
+    },
+    {
+      "start": 307.1626632080148,
+      "end": 308.29600213623746,
+      "text": "nine watts per square metre.",
+      "chapter": 2
+    },
+    {
+      "start": 309.31599877930387,
+      "end": 314.5559966430734,
+      "text": "At four metres it is one quarter as large, about zero point five nine seven.",
+      "chapter": 2
+    },
+    {
+      "start": 314.5559966430734,
+      "end": 314.8759963378976,
+      "text": "Why?",
+      "chapter": 2
+    },
+    {
+      "start": 315.59599755860074,
+      "end": 319.2759978637765,
+      "text": "Doubling radius makes the sphere's area four times larger while total emitted",
+      "chapter": 2
+    },
+    {
+      "start": 319.2759978637765,
+      "end": 320.39600061035856,
+      "text": "power stays the same.",
+      "chapter": 2
+    },
+    {
+      "start": 321.49599908447965,
+      "end": 325.17599938965543,
+      "text": "Plane wave local intensity formulas and spherical spreading describe different",
+      "chapter": 2
+    },
+    {
+      "start": 325.17599938965543,
+      "end": 328.81958694223954,
+      "text": "aspects of the model; do not demand inverse square decay from an ideal",
+      "chapter": 2
+    },
+    {
+      "start": 328.81958694223954,
+      "end": 329.2359969482492,
+      "text": "infinite",
+      "chapter": 2
+    },
+    {
+      "start": 329.2359969482492,
+      "end": 329.7759978637765,
+      "text": "plane wave.",
+      "chapter": 2
+    },
+    {
+      "start": 330.7359969482492,
+      "end": 335.0160033569406,
+      "text": "In this far field isotropic model, field amplitude scales as one over distance",
+      "chapter": 2
+    },
+    {
+      "start": 335.7160003051828,
+      "end": 337.79600213623746,
+      "text": "because intensity scales with amplitude squared.",
+      "chapter": 2
+    },
+    {
+      "start": 338.81599877930387,
+      "end": 342.7359969482492,
+      "text": "Real antennas, lasers, absorption and near fields can change the spatial",
+      "chapter": 2
+    },
+    {
+      "start": 342.7359969482492,
+      "end": 343.07600091553434,
+      "text": "pattern.",
+      "chapter": 2
+    },
+    {
+      "start": 344.0160033569406,
+      "end": 347.7160003051828,
+      "text": "The routine is to identify the wave model, decide whether the surface absorbs",
+      "chapter": 2
+    },
+    {
+      "start": 347.7160003051828,
+      "end": 351.99599908447965,
+      "text": "or reflects, and distinguish total source power from the intensity arriving at",
+      "chapter": 2
+    },
+    {
+      "start": 351.99599908447965,
+      "end": 352.47600244141324,
+      "text": "the surface.",
+      "chapter": 2
+    }
+  ]
+}

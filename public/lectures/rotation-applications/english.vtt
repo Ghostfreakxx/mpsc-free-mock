@@ -1,0 +1,436 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.760
+Welcome back.
+
+00:00:01.260 --> 00:00:04.940
+In this class we will work through mass weighted positions, axis theorems,
+
+00:00:05.660 --> 00:00:09.200
+angular momentum, beam equilibrium and rolling down an incline.
+
+00:00:10.100 --> 00:00:12.800
+Imagine two small masses joined by a light connector.
+
+00:00:13.460 --> 00:00:16.910
+Their centre of mass is a mass weighted position, not necessarily the
+
+00:00:16.910 --> 00:00:17.360
+midpoint.
+
+00:00:18.240 --> 00:00:23.800
+Put 2 kg at x equals 0 and 3 kg at x equals 4 m.
+
+00:00:23.800 --> 00:00:29.200
+Multiply each position by its mass, add, then divide by total mass: (2 times 0
+
+00:00:29.200 --> 00:00:34.000
+plus 3 times 4)/5 equals 2.4 m.
+
+00:00:34.000 --> 00:00:35.920
+The answer lies nearer the heavier mass.
+
+00:00:36.480 --> 00:00:40.500
+For positive masses on a line it must lie between the extreme positions; that
+
+00:00:40.500 --> 00:00:42.640
+is a useful check before trusting your arithmetic.
+
+00:00:43.480 --> 00:00:46.980
+Use the same weighted average separately for x, y and z components.
+
+00:00:47.640 --> 00:00:51.476
+A uniform straight rod has its centre of mass at its midpoint, but a
+
+00:00:51.476 --> 00:00:52.040
+nonuniform
+
+00:00:52.040 --> 00:00:52.780
+rod may not.
+
+00:00:53.400 --> 00:00:57.520
+For a continuous body, replace the particle sum by an integral over mass.
+
+00:00:58.380 --> 00:01:01.900
+Symmetry is often quicker: a uniform ring has its centre of mass at its
+
+00:01:01.900 --> 00:01:04.680
+geometric centre even though there is no material there.
+
+00:01:05.400 --> 00:01:09.740
+For a fixed mass system, the net external force equals total mass times centre
+
+00:01:09.740 --> 00:01:10.660
+of mass acceleration.
+
+00:01:11.620 --> 00:01:15.312
+Internal forces can rearrange the particles but cannot by themselves change
+
+00:01:15.312 --> 00:01:15.460
+the
+
+00:01:15.460 --> 00:01:15.960
+total momentum.
+
+00:01:16.660 --> 00:01:20.519
+On a horizontal frictionless surface, a person walking along a movable
+
+00:01:20.519 --> 00:01:20.960
+platform
+
+00:01:20.960 --> 00:01:25.120
+shifts the platform oppositely while their combined horizontal centre of mass
+
+00:01:25.120 --> 00:01:27.140
+stays fixed if initially at rest.
+
+00:01:27.980 --> 00:01:30.740
+Always include both person and platform in that system.
+
+00:01:30.960 --> 00:01:35.860
+Moment of inertia sums mass times squared perpendicular distance from the
+
+00:01:35.860 --> 00:01:36.580
+chosen axis.
+
+00:01:37.300 --> 00:01:41.900
+For standard uniform bodies, identify the axis before choosing a formula.
+
+00:01:42.700 --> 00:01:48.600
+A thin ring about its central perpendicular axis has I equals MR squared; a
+
+00:01:48.600 --> 00:01:52.720
+uniform disk has I equals MR squared/2.
+
+00:01:52.720 --> 00:01:58.680
+A uniform solid sphere about a diameter has 2MR squared/5, while a thin
+
+00:01:58.680 --> 00:02:02.560
+spherical shell has 2MR squared/3.
+
+00:02:02.560 --> 00:02:08.200
+A uniform thin rod has ML squared/12 about a perpendicular midpoint axis.
+
+00:02:09.460 --> 00:02:11.960
+These shapes and axes are part of each formula.
+
+00:02:12.880 --> 00:02:17.180
+The parallel axis theorem moves from an axis through the centre of mass to a
+
+00:02:17.180 --> 00:02:21.800
+parallel axis a distance d away: I equals the centre of mass moment of inertia
+
+00:02:21.800 --> 00:02:23.060
+plus Md squared.
+
+00:02:23.060 --> 00:02:28.780
+For a 3 kg uniform rod of length 2 m, midpoint inertia is
+
+00:02:28.780 --> 00:02:30.180
+1 kilogram metre squared.
+
+00:02:31.300 --> 00:02:36.320
+Move to a perpendicular axis through its end: d equals 1 m, so the end axis
+
+00:02:36.320 --> 00:02:40.820
+moment of inertia equals 1 plus 3 equals 4 kilogram metre squared.
+
+00:02:41.760 --> 00:02:44.740
+Do not use the distance between arbitrary nonparallel axes.
+
+00:02:45.840 --> 00:02:49.560
+Starting from two off centre axes also requires knowing their distances from
+
+00:02:49.560 --> 00:02:53.820
+the centre of mass axis, not blindly adding Md squared between them.
+
+00:02:55.020 --> 00:02:59.800
+For a thin planar lamina, the perpendicular axis theorem states I z equals I x
+
+00:02:59.800 --> 00:03:04.340
+plus I y for two perpendicular in plane axes intersecting at the point where
+
+00:03:04.340 --> 00:03:05.760
+the normal z axis passes.
+
+00:03:06.380 --> 00:03:09.140
+It does not apply to an arbitrary three dimensional body.
+
+00:03:09.820 --> 00:03:14.640
+A uniform disk has equal diameter axis inertias by symmetry, so each is
+
+00:03:14.640 --> 00:03:17.040
+MR squared/4.
+
+00:03:17.040 --> 00:03:21.509
+Radius of gyration is a length defined by I equals Mradius of gyration
+
+00:03:21.509 --> 00:03:22.020
+squared.
+
+00:03:22.940 --> 00:03:26.862
+It locates an equivalent inertia distance, not necessarily a physical ring of
+
+00:03:26.862 --> 00:03:27.320
+material.
+
+00:03:27.624 --> 00:03:31.884
+For a particle, angular momentum about a point is r cross p.
+
+00:03:32.584 --> 00:03:37.910
+Its magnitude is mvr sin(theta), where theta is the angle between position and
+
+00:03:37.910 --> 00:03:38.524
+velocity.
+
+00:03:39.224 --> 00:03:42.204
+The perpendicular distance from the reference point to the particle's straight
+
+00:03:42.204 --> 00:03:47.544
+line path is often easier: magnitude equals mv times that distance.
+
+00:03:48.004 --> 00:03:54.004
+A 2 kg particle moving at 3 metres per second on a straight path 0.5 m from
+
+00:03:54.004 --> 00:03:58.964
+the origin has angular momentum magnitude 3 kilogram metre squared per second,
+
+00:03:59.524 --> 00:04:01.204
+even though it is not moving in a circle.
+
+00:04:02.064 --> 00:04:06.444
+About a fixed point in an inertial frame, the net external torque equals the
+
+00:04:06.444 --> 00:04:08.304
+rate of change of total angular momentum.
+
+00:04:09.044 --> 00:04:12.164
+If that torque vanishes, angular momentum is conserved.
+
+00:04:12.744 --> 00:04:17.838
+For rotation about a fixed principal or symmetry axis, the axial component is
+
+00:04:17.838 --> 00:04:17.904
+I
+
+00:04:17.904 --> 00:04:18.324
+omega.
+
+00:04:18.964 --> 00:04:23.504
+Do not assume the vector angular momentum is parallel to angular velocity for
+
+00:04:23.504 --> 00:04:26.044
+every possible axis of a three dimensional body.
+
+00:04:27.024 --> 00:04:32.264
+An isolated rotating system reduces its axial moment of inertia from 4 to 2
+
+00:04:32.264 --> 00:04:36.524
+kilogram metre squared, starting at 3 radians per second, with negligible
+
+00:04:36.524 --> 00:04:38.224
+external torque about that axis.
+
+00:04:39.104 --> 00:04:42.384
+Initial angular momentum is 12 kilogram metre squared per second.
+
+00:04:43.024 --> 00:04:45.824
+The final angular speed is 6 radians per second.
+
+00:04:46.564 --> 00:04:48.684
+Does its rotational kinetic energy stay unchanged?
+
+00:04:49.724 --> 00:04:50.324
+Pause and compare.
+
+00:04:51.044 --> 00:04:54.464
+It rises from 18 to 36 J.
+
+00:04:54.464 --> 00:04:57.304
+Internal work during the rearrangement supplies the increase.
+
+00:04:58.484 --> 00:05:02.084
+Conservation of angular momentum does not automatically conserve rotational
+
+00:05:02.084 --> 00:05:02.804
+kinetic energy.
+
+00:05:03.384 --> 00:05:08.904
+A rigid body in static equilibrium needs both zero net external force and zero
+
+00:05:08.904 --> 00:05:09.924
+net external torque.
+
+00:05:11.004 --> 00:05:12.784
+Balanced forces alone do not prevent turning.
+
+00:05:13.704 --> 00:05:17.824
+Two equal opposite parallel forces on different lines of action form a couple:
+
+00:05:18.604 --> 00:05:20.964
+net force is zero but their torques can add.
+
+00:05:22.304 --> 00:05:26.184
+Choose a torque reference that removes an unknown reaction, then still check
+
+00:05:26.184 --> 00:05:26.984
+the force equation.
+
+00:05:27.684 --> 00:05:33.024
+Consider a horizontal uniform 4 m beam of mass 2 kg supported vertically at
+
+00:05:33.024 --> 00:05:33.504
+both ends.
+
+00:05:34.524 --> 00:05:37.344
+A 6 kg load sits 1 m from the left end.
+
+00:05:38.324 --> 00:05:42.124
+Use g equals 10 metres per second squared and neglect support friction.
+
+00:05:43.084 --> 00:05:48.484
+The beam weight is 20 N at its midpoint; the load weight is 60 N at x equals 1
+
+00:05:48.484 --> 00:05:49.264
+m.
+
+00:05:49.264 --> 00:05:52.304
+Call the upward reactions the left reaction and the right reaction.
+
+00:05:53.404 --> 00:05:56.444
+Vertical equilibrium gives their sum as 80 N.
+
+00:05:56.444 --> 00:05:59.764
+Take torques about the left support, positive anticlockwise.
+
+00:06:00.624 --> 00:06:02.404
+The left reaction has zero lever arm.
+
+00:06:03.244 --> 00:06:07.704
+The right reaction contributes 4the right reaction; the two downward weights
+
+00:06:07.704 --> 00:06:12.184
+contribute minus 20 times 2 and minus 60 times 1.
+
+00:06:12.184 --> 00:06:17.613
+Therefore 4the right reaction equals 100, giving the right reaction equals 25
+
+00:06:17.613 --> 00:06:17.684
+N
+
+00:06:17.684 --> 00:06:20.564
+and the left reaction equals 55 N.
+
+00:06:20.564 --> 00:06:22.644
+The larger reaction is near the load.
+
+00:06:23.164 --> 00:06:27.876
+If a support can only push, a calculated negative reaction would invalidate
+
+00:06:27.876 --> 00:06:28.064
+the
+
+00:06:28.064 --> 00:06:31.604
+assumed contact; do not quietly accept a downward normal force.
+
+00:06:32.496 --> 00:06:37.256
+Release a uniform solid cylinder from rest down a fixed rough incline.
+
+00:06:37.996 --> 00:06:42.196
+Assume pure rolling on a stationary surface, sufficient static friction, no
+
+00:06:42.196 --> 00:06:44.376
+deformation losses and no rolling resistance.
+
+00:06:45.356 --> 00:06:49.576
+The centre accelerates downhill while static friction points uphill and
+
+00:06:49.576 --> 00:06:52.116
+supplies torque about the centre.
+
+00:06:52.116 --> 00:06:56.596
+Translational force balance gives mg sin(theta) minus f equals ma.
+
+00:06:57.376 --> 00:07:03.276
+Torque gives fR equals the centre of mass moment of inertia alpha, and no slip
+
+00:07:03.276 --> 00:07:05.136
+gives a equals R alpha.
+
+00:07:06.236 --> 00:07:12.076
+Combining them yields a equals g sin(theta)/(1 plus the centre of mass
+
+00:07:12.076 --> 00:07:15.096
+moment of inertia divided by mass times radius squared).
+
+00:07:16.376 --> 00:07:20.236
+For a solid cylinder the centre of mass moment of inertia is mass times radius
+
+00:07:20.236 --> 00:07:21.356
+squared divided by two.
+
+00:07:21.356 --> 00:07:26.936
+At 30 degrees with g equals 10 metres per second squared, its acceleration is
+
+00:07:26.936 --> 00:07:30.436
+10/3 metres per second squared, not 5 metres per second squared.
+
+00:07:31.536 --> 00:07:35.556
+Some gravitational energy goes into rotation, so the centre accelerates less
+
+00:07:35.556 --> 00:07:37.216
+than a frictionless sliding particle.
+
+00:07:38.096 --> 00:07:42.091
+In ideal pure rolling the instantaneous contact point is stationary relative
+
+00:07:42.091 --> 00:07:42.196
+to
+
+00:07:42.196 --> 00:07:42.876
+the fixed surface.
+
+00:07:43.836 --> 00:07:47.376
+Static friction therefore does no net work on the rigid body here, although it
+
+00:07:47.376 --> 00:07:49.596
+redistributes translational and rotational energy.
+
+00:07:50.416 --> 00:07:52.876
+This conclusion need not hold for a moving surface.
+
+00:07:53.516 --> 00:07:58.976
+The required friction is mg sin(theta)/3 for the cylinder, while N equals mg
+
+00:07:58.976 --> 00:08:00.456
+cos(theta).
+
+00:08:00.456 --> 00:08:03.956
+Hence the no slip condition is the coefficient of static friction must be at
+
+00:08:03.956 --> 00:08:06.636
+least tan(theta)/3.
+
+00:08:06.636 --> 00:08:10.656
+Below that coefficient, the rolling assumption fails and sliding must be
+
+00:08:10.656 --> 00:08:11.036
+treated separately.
+
+00:08:12.156 --> 00:08:18.096
+After a vertical drop h, energy gives v squared equals 2gh/(1
+
+00:08:18.096 --> 00:08:21.776
+plus the centre of mass moment of inertia divided by mass times radius
+
+00:08:21.776 --> 00:08:22.136
+squared).
+
+00:08:23.076 --> 00:08:28.216
+A solid cylinder dropping 0.30 m with g equals 10 reaches 2 metres per second.
+
+00:08:28.536 --> 00:08:31.456
+A ring has a different inertia and a different final speed.
+
+00:08:31.456 --> 00:08:31.656
+Compare models, not just masses.

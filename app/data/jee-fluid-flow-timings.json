@@ -1,0 +1,699 @@
+{
+  "duration": 364.89600000000934,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 71.2560000000018
+    },
+    {
+      "start": 71.2560000000018,
+      "end": 144.21600000000367
+    },
+    {
+      "start": 144.21600000000367,
+      "end": 219.43200000000564
+    },
+    {
+      "start": 219.43200000000564,
+      "end": 294.6960000000076
+    },
+    {
+      "start": 294.6960000000076,
+      "end": 364.89600000000934
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.3799999952316284,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.1600000858306885,
+      "end": 4.199999809265137,
+      "text": "Last time we explored water at rest.",
+      "chapter": 0
+    },
+    {
+      "start": 5.059999942779541,
+      "end": 9.15999984741211,
+      "text": "Today, let's use pressure to lift a load, then follow a fluid as it moves.",
+      "chapter": 0
+    },
+    {
+      "start": 10.079999923706055,
+      "end": 14.399999618530273,
+      "text": "Picture a hydraulic lift with a small piston connected by liquid to a larger",
+      "chapter": 0
+    },
+    {
+      "start": 14.399999618530273,
+      "end": 14.699999809265137,
+      "text": "piston.",
+      "chapter": 0
+    },
+    {
+      "start": 15.720000267028809,
+      "end": 19.559999465942383,
+      "text": "Push on the small piston, and you increase the pressure of the enclosed fluid.",
+      "chapter": 0
+    },
+    {
+      "start": 20.639999389648438,
+      "end": 24.540000915527344,
+      "text": "Pascal's principle says that applied pressure change is transmitted throughout",
+      "chapter": 0
+    },
+    {
+      "start": 24.540000915527344,
+      "end": 25.040000915527344,
+      "text": "the fluid.",
+      "chapter": 0
+    },
+    {
+      "start": 25.979999542236328,
+      "end": 28.920000076293945,
+      "text": "Pressure is shared; force depends on piston area.",
+      "chapter": 0
+    },
+    {
+      "start": 29.68000030517578,
+      "end": 33.86000061035156,
+      "text": "For ideal pistons at the same height, with negligible friction and piston",
+      "chapter": 0
+    },
+    {
+      "start": 33.86000061035156,
+      "end": 39.060001373291016,
+      "text": "weight, input force divided by input area equals output force divided by output",
+      "chapter": 0
+    },
+    {
+      "start": 39.060001373291016,
+      "end": 39.380001068115234,
+      "text": "area.",
+      "chapter": 0
+    },
+    {
+      "start": 40.400001525878906,
+      "end": 43.84000015258789,
+      "text": "Suppose the output piston has ten times the area of the input piston.",
+      "chapter": 0
+    },
+    {
+      "start": 44.63999938964844,
+      "end": 45.65999984741211,
+      "text": "Push with fifty newtons.",
+      "chapter": 0
+    },
+    {
+      "start": 46.2400016784668,
+      "end": 47.68000030517578,
+      "text": "What load force can it balance?",
+      "chapter": 0
+    },
+    {
+      "start": 48.2400016784668,
+      "end": 48.91999816894531,
+      "text": "Take a moment.",
+      "chapter": 0
+    },
+    {
+      "start": 49.47999954223633,
+      "end": 51.70000076293945,
+      "text": "Ten times fifty gives five hundred newtons.",
+      "chapter": 0
+    },
+    {
+      "start": 52.400001525878906,
+      "end": 53.7599983215332,
+      "text": "That feels like a useful bargain.",
+      "chapter": 0
+    },
+    {
+      "start": 54.70000076293945,
+      "end": 57.31999969482422,
+      "text": "But a bigger force doesn't mean we've created energy.",
+      "chapter": 0
+    },
+    {
+      "start": 58.15999984741211,
+      "end": 59.70000076293945,
+      "text": "We'll check the distance moved next.",
+      "chapter": 0
+    },
+    {
+      "start": 60.31999969482422,
+      "end": 63.599998474121094,
+      "text": "If the pistons are at different heights, include the hydrostatic pressure",
+      "chapter": 0
+    },
+    {
+      "start": 63.599998474121094,
+      "end": 64.04000091552734,
+      "text": "difference.",
+      "chapter": 0
+    },
+    {
+      "start": 64.94000244140625,
+      "end": 68.68000030517578,
+      "text": "Pascal's principle concerns the transmitted pressure change; it doesn't erase",
+      "chapter": 0
+    },
+    {
+      "start": 68.68000030517578,
+      "end": 71,
+      "text": "the existing variation of pressure with depth.",
+      "chapter": 0
+    },
+    {
+      "start": 71.2560000000018,
+      "end": 73.73600001907529,
+      "text": "Let's see where the bargain comes from.",
+      "chapter": 1
+    },
+    {
+      "start": 74.55599995231809,
+      "end": 78.21600003814878,
+      "text": "Our liquid is approximately incompressible, and we're neglecting leaks.",
+      "chapter": 1
+    },
+    {
+      "start": 79.05600019073667,
+      "end": 82.8160004196185,
+      "text": "When the small piston moves down, the volume it pushes into the connecting",
+      "chapter": 1
+    },
+    {
+      "start": 82.8160004196185,
+      "end": 86.39600034332456,
+      "text": "region must equal the volume raised beneath the large piston.",
+      "chapter": 1
+    },
+    {
+      "start": 87.69600053405942,
+      "end": 89.8760008392352,
+      "text": "Piston volume is area times distance moved.",
+      "chapter": 1
+    },
+    {
+      "start": 90.67600007629575,
+      "end": 95.85600038147153,
+      "text": "So input area times input displacement equals output area times output",
+      "chapter": 1
+    },
+    {
+      "start": 95.85600038147153,
+      "end": 96.31599946594419,
+      "text": "displacement.",
+      "chapter": 1
+    },
+    {
+      "start": 97.01600022888364,
+      "end": 101.89599938965024,
+      "text": "If the large area is ten times the small area, the large piston travels only",
+      "chapter": 1
+    },
+    {
+      "start": 101.89599938965024,
+      "end": 103.05599923706235,
+      "text": "one tenth as far.",
+      "chapter": 1
+    },
+    {
+      "start": 103.9960016784686,
+      "end": 108.0960001525897,
+      "text": "Push the small piston down twenty centimetres, and the large piston rises two",
+      "chapter": 1
+    },
+    {
+      "start": 108.0960001525897,
+      "end": 109.19599862671079,
+      "text": "centimetres.",
+      "chapter": 1
+    },
+    {
+      "start": 109.19599862671079,
+      "end": 109.95600076294126,
+      "text": "Now check the work.",
+      "chapter": 1
+    },
+    {
+      "start": 110.69599862671079,
+      "end": 114.03599877929868,
+      "text": "Fifty newtons times zero point two zero metres is ten joules.",
+      "chapter": 1
+    },
+    {
+      "start": 114.03599877929868,
+      "end": 118.71599908447446,
+      "text": "Five hundred newtons times zero point zero two metres is also ten joules.",
+      "chapter": 1
+    },
+    {
+      "start": 119.63600106811704,
+      "end": 122.87599893188657,
+      "text": "Larger force, smaller distance: energy is accounted for.",
+      "chapter": 1
+    },
+    {
+      "start": 123.37599893188657,
+      "end": 126.95600076294126,
+      "text": "Real machines lose some energy through friction and other effects, so their",
+      "chapter": 1
+    },
+    {
+      "start": 126.95600076294126,
+      "end": 128.39599938965023,
+      "text": "useful output work is smaller.",
+      "chapter": 1
+    },
+    {
+      "start": 129.27600045776546,
+      "end": 130.87599893188656,
+      "text": "Here is a JEE trap to dodge.",
+      "chapter": 1
+    },
+    {
+      "start": 131.47600122070492,
+      "end": 135.51600213623226,
+      "text": "If a question doubles piston radius, its area becomes four times larger.",
+      "chapter": 1
+    },
+    {
+      "start": 136.49599786377132,
+      "end": 140.29600091552913,
+      "text": "Force multiplication depends on the area ratio, not directly on the radius",
+      "chapter": 1
+    },
+    {
+      "start": 140.29600091552913,
+      "end": 140.69600244140804,
+      "text": "ratio.",
+      "chapter": 1
+    },
+    {
+      "start": 141.5560030517596,
+      "end": 143.89599938965023,
+      "text": "Start with pi r squared before making the comparison.",
+      "chapter": 1
+    },
+    {
+      "start": 144.21600000000367,
+      "end": 148.17600003815065,
+      "text": "Now open a flow path and watch liquid move through a pipe.",
+      "chapter": 2
+    },
+    {
+      "start": 149.29599992370973,
+      "end": 150.77599994278322,
+      "text": "Imagine marking two cross sections.",
+      "chapter": 2
+    },
+    {
+      "start": 151.5960001144446,
+      "end": 154.7559999618567,
+      "text": "In steady flow, fluid doesn't keep accumulating between them.",
+      "chapter": 2
+    },
+    {
+      "start": 155.63600007629762,
+      "end": 158.95599977112184,
+      "text": "The mass entering each second equals the mass leaving each second.",
+      "chapter": 2
+    },
+    {
+      "start": 159.4760002288855,
+      "end": 163.27599946594606,
+      "text": "For constant density, the volume flow rate is the same at both sections.",
+      "chapter": 2
+    },
+    {
+      "start": 163.9760002288855,
+      "end": 168.11599961853395,
+      "text": "We call it capital Q, and calculate it as area times mean flow speed.",
+      "chapter": 2
+    },
+    {
+      "start": 168.73600045776735,
+      "end": 173.89600030517946,
+      "text": "This gives the continuity equation: area one times speed one equals area two",
+      "chapter": 2
+    },
+    {
+      "start": 173.89600030517946,
+      "end": 175.0359996948279,
+      "text": "times speed two.",
+      "chapter": 2
+    },
+    {
+      "start": 175.5359996948279,
+      "end": 179.19599954224,
+      "text": "Suppose a pipe section has area four square centimetres and mean speed two",
+      "chapter": 2
+    },
+    {
+      "start": 179.19599954224,
+      "end": 179.91600076294313,
+      "text": "metres per second.",
+      "chapter": 2
+    },
+    {
+      "start": 180.75600091553102,
+      "end": 185.47599832153688,
+      "text": "Convert the area: four square centimetres is zero point zero zero zero four",
+      "chapter": 2
+    },
+    {
+      "start": 185.47599832153688,
+      "end": 186.0359996948279,
+      "text": "square metres.",
+      "chapter": 2
+    },
+    {
+      "start": 187.01599923706422,
+      "end": 191.49599877930055,
+      "text": "The volume flow rate is zero point zero zero zero eight cubic metres per",
+      "chapter": 2
+    },
+    {
+      "start": 191.49599877930055,
+      "end": 194.31599847412477,
+      "text": "second, or zero point eight litres per second.",
+      "chapter": 2
+    },
+    {
+      "start": 194.99599877930055,
+      "end": 199.0960010681189,
+      "text": "At a section of area one square centimetre, the speed becomes eight metres per",
+      "chapter": 2
+    },
+    {
+      "start": 199.0960010681189,
+      "end": 199.2760013732947,
+      "text": "second.",
+      "chapter": 2
+    },
+    {
+      "start": 199.83599893188844,
+      "end": 203.17599908447633,
+      "text": "The liquid speeds up to pass the same volume through a smaller opening.",
+      "chapter": 2
+    },
+    {
+      "start": 204.0359996948279,
+      "end": 208.31599847412477,
+      "text": "We're assuming steady incompressible flow, a full pipe, and no leaks or",
+      "chapter": 2
+    },
+    {
+      "start": 208.31599847412477,
+      "end": 209.5359996948279,
+      "text": "branches between these sections.",
+      "chapter": 2
+    },
+    {
+      "start": 210.3360027465857,
+      "end": 214.39600030517946,
+      "text": "For changing density, conserve mass using density times area times speed",
+      "chapter": 2
+    },
+    {
+      "start": 214.39600030517946,
+      "end": 214.89600030517946,
+      "text": "instead.",
+      "chapter": 2
+    },
+    {
+      "start": 215.81599847412477,
+      "end": 219.17599908447633,
+      "text": "Continuity comes from conservation of mass, not from a pressure equation.",
+      "chapter": 2
+    },
+    {
+      "start": 219.43200000000564,
+      "end": 222.07200010490982,
+      "text": "Continuity tells us how flow speed changes.",
+      "chapter": 3
+    },
+    {
+      "start": 222.93200000000564,
+      "end": 225.712000209814,
+      "text": "Bernoulli's equation connects that speed to pressure and height.",
+      "chapter": 3
+    },
+    {
+      "start": 226.47199996185867,
+      "end": 230.89200003815262,
+      "text": "For steady incompressible flow with negligible viscous losses, along a",
+      "chapter": 3
+    },
+    {
+      "start": 230.89200003815262,
+      "end": 235.87200053406326,
+      "text": "streamline, add three terms: pressure, one half density times speed squared,",
+      "chapter": 3
+    },
+    {
+      "start": 236.27200015259353,
+      "end": 238.1320007629451,
+      "text": "and density times g times height.",
+      "chapter": 3
+    },
+    {
+      "start": 238.6719997711238,
+      "end": 243.6719997711238,
+      "text": "Their sum stays constant when no pump or turbine adds or removes energy between",
+      "chapter": 3
+    },
+    {
+      "start": 243.6719997711238,
+      "end": 244.1719997711238,
+      "text": "the points.",
+      "chapter": 3
+    },
+    {
+      "start": 244.95200045776932,
+      "end": 247.65199931336014,
+      "text": "Think of this as an energy account per unit volume.",
+      "chapter": 3
+    },
+    {
+      "start": 248.41199954224197,
+      "end": 252.35199816895096,
+      "text": "Now take two points at the same height in an ideal water flow.",
+      "chapter": 3
+    },
+    {
+      "start": 253.25199969482986,
+      "end": 255.57199938965408,
+      "text": "Speed increases from two to four metres per second.",
+      "chapter": 3
+    },
+    {
+      "start": 256.2920006103572,
+      "end": 257.5519989318904,
+      "text": "How much does pressure decrease?",
+      "chapter": 3
+    },
+    {
+      "start": 258.2319992370662,
+      "end": 259.2319992370662,
+      "text": "The height terms cancel.",
+      "chapter": 3
+    },
+    {
+      "start": 259.972000915533,
+      "end": 263.75199969482986,
+      "text": "The pressure drop is one half times one thousand times the difference between",
+      "chapter": 3
+    },
+    {
+      "start": 263.75199969482986,
+      "end": 265.1120003051814,
+      "text": "four squared and two squared.",
+      "chapter": 3
+    },
+    {
+      "start": 265.1120003051814,
+      "end": 269.7319992370662,
+      "text": "Sixteen minus four is twelve, giving six thousand pascals.",
+      "chapter": 3
+    },
+    {
+      "start": 270.3919990844783,
+      "end": 275.00699885559646,
+      "text": "If the first pressure is one hundred twenty thousand pascals, the second is one",
+      "chapter": 3
+    },
+    {
+      "start": 275.00699885559646,
+      "end": 276.3719986267146,
+      "text": "hundred fourteen thousand.",
+      "chapter": 3
+    },
+    {
+      "start": 276.3719986267146,
+      "end": 279.59199984741775,
+      "text": "Faster flow has lower pressure in this particular comparison.",
+      "chapter": 3
+    },
+    {
+      "start": 280.49200137329666,
+      "end": 284.25199969482986,
+      "text": "Keep the conditions attached to that conclusion: equal height, the same",
+      "chapter": 3
+    },
+    {
+      "start": 284.25199969482986,
+      "end": 286.092003662115,
+      "text": "streamline, and the ideal assumptions.",
+      "chapter": 3
+    },
+    {
+      "start": 286.85199816895096,
+      "end": 289.77199633789627,
+      "text": "Don't automatically apply that slogan to every moving fluid.",
+      "chapter": 3
+    },
+    {
+      "start": 290.51200183106033,
+      "end": 294.5520027465877,
+      "text": "First decide whether continuity, energy conservation, or both are needed.",
+      "chapter": 3
+    },
+    {
+      "start": 294.6960000000076,
+      "end": 297.31599988556667,
+      "text": "Let's finish with a tank draining through a small opening.",
+      "chapter": 4
+    },
+    {
+      "start": 297.99599995232387,
+      "end": 301.47600020981594,
+      "text": "The tank is open to the atmosphere, and the outlet is also open to air.",
+      "chapter": 4
+    },
+    {
+      "start": 302.3559998474197,
+      "end": 305.65600003815456,
+      "text": "Choose one point at the free surface and the other in the emerging jet.",
+      "chapter": 4
+    },
+    {
+      "start": 306.27599992371364,
+      "end": 309.8559998474197,
+      "text": "Their pressures are both atmospheric, so those terms cancel in Bernoulli's",
+      "chapter": 4
+    },
+    {
+      "start": 309.8559998474197,
+      "end": 310.1960000000076,
+      "text": "equation.",
+      "chapter": 4
+    },
+    {
+      "start": 310.93599977112575,
+      "end": 315.0159996948318,
+      "text": "If the tank is much wider than the outlet, continuity tells us the surface",
+      "chapter": 4
+    },
+    {
+      "start": 315.0159996948318,
+      "end": 317.7960003814773,
+      "text": "moves down much more slowly than the jet moves out.",
+      "chapter": 4
+    },
+    {
+      "start": 318.61600007630153,
+      "end": 319.39600076294704,
+      "text": "Neglect the surface speed.",
+      "chapter": 4
+    },
+    {
+      "start": 320.0159996948318,
+      "end": 324.8559998474197,
+      "text": "A vertical drop h then becomes kinetic energy per unit volume, giving outlet",
+      "chapter": 4
+    },
+    {
+      "start": 324.8559998474197,
+      "end": 327.97599877930446,
+      "text": "speed equal to the square root of two g h.",
+      "chapter": 4
+    },
+    {
+      "start": 327.97599877930446,
+      "end": 333.23600091553493,
+      "text": "With a depth of one point two five metres and g equal to ten, two g h is twenty",
+      "chapter": 4
+    },
+    {
+      "start": 333.23600091553493,
+      "end": 333.73600091553493,
+      "text": "five.",
+      "chapter": 4
+    },
+    {
+      "start": 333.73600091553493,
+      "end": 336.335999389656,
+      "text": "The ideal exit speed is five metres per second.",
+      "chapter": 4
+    },
+    {
+      "start": 337.1960000000076,
+      "end": 340.15599908448024,
+      "text": "Pause and predict what happens when the depth becomes four times larger.",
+      "chapter": 4
+    },
+    {
+      "start": 340.73600091553493,
+      "end": 342.97599877930446,
+      "text": "The speed doubles, because of the square root.",
+      "chapter": 4
+    },
+    {
+      "start": 343.6759995422439,
+      "end": 347.8559998474197,
+      "text": "Real outlet flow can differ because of viscosity, jet contraction and other",
+      "chapter": 4
+    },
+    {
+      "start": 347.8559998474197,
+      "end": 348.23600091553493,
+      "text": "losses.",
+      "chapter": 4
+    },
+    {
+      "start": 348.47599877930446,
+      "end": 353.2760018310623,
+      "text": "As a large tank drains, we use this as a slowly changing, approximately steady",
+      "chapter": 4
+    },
+    {
+      "start": 353.2760018310623,
+      "end": 354.6759995422439,
+      "text": "model at each instant.",
+      "chapter": 4
+    },
+    {
+      "start": 355.31599893189235,
+      "end": 359.4960030517654,
+      "text": "Your checklist is pressure reference, vertical height, flow continuity and",
+      "chapter": 4
+    },
+    {
+      "start": 359.4960030517654,
+      "end": 360.13600244141384,
+      "text": "energy assumptions.",
+      "chapter": 4
+    },
+    {
+      "start": 361.0359963378982,
+      "end": 364.3959969482498,
+      "text": "Next we'll need separate ideas for viscosity and surface tension.",
+      "chapter": 4
+    }
+  ]
+}

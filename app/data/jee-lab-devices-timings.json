@@ -1,0 +1,945 @@
+{
+  "duration": 478.92000000001366,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 88.24800000000245
+    },
+    {
+      "start": 88.24800000000245,
+      "end": 183.55200000000517
+    },
+    {
+      "start": 183.55200000000517,
+      "end": 278.6640000000079
+    },
+    {
+      "start": 278.6640000000079,
+      "end": 375.72000000001066
+    },
+    {
+      "start": 375.72000000001066,
+      "end": 478.92000000001366
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.7200000286102295,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.319999933242798,
+      "end": 5.360000133514404,
+      "text": "Today we identify components and learn what their measured curves actually",
+      "chapter": 0
+    },
+    {
+      "start": 5.360000133514404,
+      "end": 5.659999847412109,
+      "text": "mean.",
+      "chapter": 0
+    },
+    {
+      "start": 6.079999923706055,
+      "end": 9.579999923706055,
+      "text": "For a junction diode's forward characteristic, connect a safe low voltage",
+      "chapter": 0
+    },
+    {
+      "start": 9.579999923706055,
+      "end": 12.520000457763672,
+      "text": "source through a current limiting resistor and a series ammeter.",
+      "chapter": 0
+    },
+    {
+      "start": 13.640000343322754,
+      "end": 15.300000190734863,
+      "text": "Measure voltage across the diode itself.",
+      "chapter": 0
+    },
+    {
+      "start": 16.3799991607666,
+      "end": 19.260000228881836,
+      "text": "Forward bias means its anode is at higher potential than its cathode.",
+      "chapter": 0
+    },
+    {
+      "start": 20.200000762939453,
+      "end": 24.5,
+      "text": "Start low and increase the setting gradually, taking paired diode voltage and",
+      "chapter": 0
+    },
+    {
+      "start": 24.5,
+      "end": 27.260000228881836,
+      "text": "current readings within the component and meter ratings.",
+      "chapter": 0
+    },
+    {
+      "start": 27.719999313354492,
+      "end": 31.600000381469727,
+      "text": "The series resistor limits current; it is not part of the voltage measured",
+      "chapter": 0
+    },
+    {
+      "start": 31.600000381469727,
+      "end": 32.599998474121094,
+      "text": "across the diode.",
+      "chapter": 0
+    },
+    {
+      "start": 33.400001525878906,
+      "end": 37.91999816894531,
+      "text": "Suppose two nearby original observations are zero point six five volts at two",
+      "chapter": 0
+    },
+    {
+      "start": 37.91999816894531,
+      "end": 41.84000015258789,
+      "text": "milliamperes, and zero point six seven volts at four milliamperes.",
+      "chapter": 0
+    },
+    {
+      "start": 42.31999969482422,
+      "end": 47.13999938964844,
+      "text": "At the second point, static resistance is zero point six seven divided by zero",
+      "chapter": 0
+    },
+    {
+      "start": 47.13999938964844,
+      "end": 50.70000076293945,
+      "text": "point zero zero four, or one hundred sixty seven point five ohms.",
+      "chapter": 0
+    },
+    {
+      "start": 51.2400016784668,
+      "end": 54.7400016784668,
+      "text": "But the local incremental resistance is the voltage change divided by the",
+      "chapter": 0
+    },
+    {
+      "start": 54.7400016784668,
+      "end": 58.880001068115234,
+      "text": "current change: zero point zero two volts over zero point zero zero two",
+      "chapter": 0
+    },
+    {
+      "start": 58.880001068115234,
+      "end": 60.380001068115234,
+      "text": "amperes, giving ten ohms.",
+      "chapter": 0
+    },
+    {
+      "start": 61.84000015258789,
+      "end": 62.86000061035156,
+      "text": "These are different questions.",
+      "chapter": 0
+    },
+    {
+      "start": 63.619998931884766,
+      "end": 67.16000366210938,
+      "text": "The first uses a line from the origin; the second describes the local curve",
+      "chapter": 0
+    },
+    {
+      "start": 67.16000366210938,
+      "end": 68.18000030517578,
+      "text": "over a small interval.",
+      "chapter": 0
+    },
+    {
+      "start": 69.4800033569336,
+      "end": 72.80000305175781,
+      "text": "The curve rises steeply rather than obeying one constant resistance.",
+      "chapter": 0
+    },
+    {
+      "start": 73.69999694824219,
+      "end": 77.5999984741211,
+      "text": "There is no universal perfectly sharp zero point seven volt switch for every",
+      "chapter": 0
+    },
+    {
+      "start": 77.5999984741211,
+      "end": 78.30000305175781,
+      "text": "silicon diode.",
+      "chapter": 0
+    },
+    {
+      "start": 79.45999908447266,
+      "end": 81.5199966430664,
+      "text": "Temperature, device and current matter.",
+      "chapter": 0
+    },
+    {
+      "start": 82.18000030517578,
+      "end": 86.23999786376953,
+      "text": "State your graph axes and units, allow for meter loading, and never connect a",
+      "chapter": 0
+    },
+    {
+      "start": 86.23999786376953,
+      "end": 87.9800033569336,
+      "text": "diode directly across an unrestricted supply.",
+      "chapter": 0
+    },
+    {
+      "start": 88.24800000000245,
+      "end": 93.34799990463502,
+      "text": "Reverse the diode orientation while keeping a suitable protective resistor and",
+      "chapter": 1
+    },
+    {
+      "start": 93.34799990463502,
+      "end": 95.3279999237085,
+      "text": "a supervised low voltage source.",
+      "chapter": 1
+    },
+    {
+      "start": 96.26800045776612,
+      "end": 98.3279999237085,
+      "text": "The cathode is now at higher potential than the anode.",
+      "chapter": 1
+    },
+    {
+      "start": 99.22799954223878,
+      "end": 103.48799977112061,
+      "text": "With diode voltage defined as anode potential minus cathode potential, reverse",
+      "chapter": 1
+    },
+    {
+      "start": 103.48799977112061,
+      "end": 104.4480007629419,
+      "text": "voltage is negative.",
+      "chapter": 1
+    },
+    {
+      "start": 105.52800068664796,
+      "end": 109.60800061035401,
+      "text": "Define forward conventional current as positive, and the reverse current is",
+      "chapter": 1
+    },
+    {
+      "start": 109.60800061035401,
+      "end": 110.64799961853272,
+      "text": "negative too.",
+      "chapter": 1
+    },
+    {
+      "start": 110.64799961853272,
+      "end": 114.90799984741456,
+      "text": "The ordinary reverse branch therefore lies in the lower left quadrant on a",
+      "chapter": 1
+    },
+    {
+      "start": 114.90799984741456,
+      "end": 115.98799977112061,
+      "text": "signed I V graph.",
+      "chapter": 1
+    },
+    {
+      "start": 115.98799977112061,
+      "end": 120.63030781066357,
+      "text": "Some laboratory plots instead show positive reverse voltage and reverse",
+      "chapter": 1
+    },
+    {
+      "start": 120.63030781066357,
+      "end": 121.08800015259034,
+      "text": "current",
+      "chapter": 1
+    },
+    {
+      "start": 121.08800015259034,
+      "end": 121.58800015259034,
+      "text": "magnitudes.",
+      "chapter": 1
+    },
+    {
+      "start": 122.547999237063,
+      "end": 126.74800000000245,
+      "text": "Those plots are fine when clearly labeled, but do not silently mix the two",
+      "chapter": 1
+    },
+    {
+      "start": 126.74800000000245,
+      "end": 127.14800152588136,
+      "text": "conventions.",
+      "chapter": 1
+    },
+    {
+      "start": 128.12800106811767,
+      "end": 131.5562059224471,
+      "text": "Before breakdown, a real diode usually carries a small reverse leakage",
+      "chapter": 1
+    },
+    {
+      "start": 131.5562059224471,
+      "end": 131.9480007629419,
+      "text": "current,",
+      "chapter": 1
+    },
+    {
+      "start": 132.54799923706298,
+      "end": 133.8679989318872,
+      "text": "not an exactly zero current.",
+      "chapter": 1
+    },
+    {
+      "start": 134.98800167846923,
+      "end": 138.54799923706298,
+      "text": "Choose an appropriately sensitive range, and recognize that voltmeter loading",
+      "chapter": 1
+    },
+    {
+      "start": 138.54799923706298,
+      "end": 141.608000610354,
+      "text": "can become significant when the current being measured is tiny.",
+      "chapter": 1
+    },
+    {
+      "start": 142.40799984741454,
+      "end": 146.64800152588134,
+      "text": "A meter display of zero may mean below its resolution rather than no physical",
+      "chapter": 1
+    },
+    {
+      "start": 146.64800152588134,
+      "end": 147.28800091552978,
+      "text": "current.",
+      "chapter": 1
+    },
+    {
+      "start": 148.42800030517822,
+      "end": 152.32800183105712,
+      "text": "Suppose a signed observation is minus three volts and minus two microamperes.",
+      "chapter": 1
+    },
+    {
+      "start": 152.96800122070556,
+      "end": 157.108000610354,
+      "text": "Its current magnitude is two microamperes, or zero point zero zero two",
+      "chapter": 1
+    },
+    {
+      "start": 157.108000610354,
+      "end": 157.68800244140868,
+      "text": "milliamperes.",
+      "chapter": 1
+    },
+    {
+      "start": 158.1279972534204,
+      "end": 159.38799938965087,
+      "text": "It is not two milliamperes.",
+      "chapter": 1
+    },
+    {
+      "start": 160.1279972534204,
+      "end": 163.7079990844751,
+      "text": "At sufficiently large reverse voltage, breakdown can cause a strong current",
+      "chapter": 1
+    },
+    {
+      "start": 163.7079990844751,
+      "end": 164.108000610354,
+      "text": "increase.",
+      "chapter": 1
+    },
+    {
+      "start": 164.6279972534204,
+      "end": 168.78800091552978,
+      "text": "An ordinary diode must not be deliberately pushed into breakdown unless the",
+      "chapter": 1
+    },
+    {
+      "start": 168.78800091552978,
+      "end": 171.80799755859618,
+      "text": "device ratings and an approved protected procedure permit it.",
+      "chapter": 1
+    },
+    {
+      "start": 172.72800335693603,
+      "end": 176.73158702048522,
+      "text": "A Zener device is designed for controlled reverse breakdown operation, but",
+      "chapter": 1
+    },
+    {
+      "start": 176.73158702048522,
+      "end": 176.94799694824462,
+      "text": "even",
+      "chapter": 1
+    },
+    {
+      "start": 176.94799694824462,
+      "end": 178.16799816894775,
+      "text": "it needs current limitation.",
+      "chapter": 1
+    },
+    {
+      "start": 179.42800030517822,
+      "end": 183.34799847412353,
+      "text": "The JEE lesson here is interpreting polarity, quadrant and measurement scale",
+      "chapter": 1
+    },
+    {
+      "start": 183.34799847412353,
+      "end": 183.55200000000517,
+      "text": "before reading the curve.",
+      "chapter": 1
+    },
+    {
+      "start": 183.55200000000517,
+      "end": 187.37199993324796,
+      "text": "For a Zener reverse characteristic, the current remains small before the",
+      "chapter": 2
+    },
+    {
+      "start": 187.37199993324796,
+      "end": 191.57200045776884,
+      "text": "breakdown region, then increases strongly while the diode voltage changes much",
+      "chapter": 2
+    },
+    {
+      "start": 191.57200045776884,
+      "end": 191.812000228887,
+      "text": "less.",
+      "chapter": 2
+    },
+    {
+      "start": 192.4720000762991,
+      "end": 195.17199988556425,
+      "text": "A protected measurement can reveal that steep branch.",
+      "chapter": 2
+    },
+    {
+      "start": 195.89200015259306,
+      "end": 200.27199931335966,
+      "text": "In our magnitude plot, both reverse voltage and reverse current are shown as",
+      "chapter": 2
+    },
+    {
+      "start": 200.27199931335966,
+      "end": 202.6520003814749,
+      "text": "positive values, with the convention stated.",
+      "chapter": 2
+    },
+    {
+      "start": 203.49200053406278,
+      "end": 207.41200061035673,
+      "text": "Never interpret nearly constant voltage as unlimited permissible current.",
+      "chapter": 2
+    },
+    {
+      "start": 208.3519992370657,
+      "end": 212.67200083923856,
+      "text": "Suppose our ideal classroom circuit has a nine volt supply, a five point one",
+      "chapter": 2
+    },
+    {
+      "start": 212.67200083923856,
+      "end": 216.63200183105985,
+      "text": "volt Zener operating in breakdown, and a three hundred ninety ohm series",
+      "chapter": 2
+    },
+    {
+      "start": 216.63200183105985,
+      "end": 218.41200061035673,
+      "text": "resistor, with no parallel load.",
+      "chapter": 2
+    },
+    {
+      "start": 219.5920009155325,
+      "end": 221.57200045776884,
+      "text": "The resistor drops three point nine volts.",
+      "chapter": 2
+    },
+    {
+      "start": 222.37199969482938,
+      "end": 225.89200015259306,
+      "text": "Current is three point nine divided by three hundred ninety, giving ten",
+      "chapter": 2
+    },
+    {
+      "start": 225.89200015259306,
+      "end": 226.81199832153837,
+      "text": "milliamperes.",
+      "chapter": 2
+    },
+    {
+      "start": 227.25200076294462,
+      "end": 231.90199847412626,
+      "text": "The Zener dissipates five point one times zero point zero one watts, or fifty",
+      "chapter": 2
+    },
+    {
+      "start": 231.90199847412626,
+      "end": 232.5319995422415,
+      "text": "one milliwatts.",
+      "chapter": 2
+    },
+    {
+      "start": 233.33199877930204,
+      "end": 236.99199862671415,
+      "text": "The resistor dissipates current squared times resistance, or thirty nine",
+      "chapter": 2
+    },
+    {
+      "start": 236.99199862671415,
+      "end": 237.51199908447782,
+      "text": "milliwatts.",
+      "chapter": 2
+    },
+    {
+      "start": 238.1919993896536,
+      "end": 242.2720012207083,
+      "text": "These are model values; an actual design needs suitable ratings and margin.",
+      "chapter": 2
+    },
+    {
+      "start": 243.11200137329618,
+      "end": 247.15199847412626,
+      "text": "Now imagine nearby measured points: five point zero eight volts at eight",
+      "chapter": 2
+    },
+    {
+      "start": 247.15199847412626,
+      "end": 250.91200061035673,
+      "text": "milliamperes, and five point one two volts at twelve milliamperes.",
+      "chapter": 2
+    },
+    {
+      "start": 251.53200335693876,
+      "end": 255.33199877930204,
+      "text": "The local dynamic resistance is zero point zero four volts over four",
+      "chapter": 2
+    },
+    {
+      "start": 255.33199877930204,
+      "end": 257.1119975585989,
+      "text": "milliamperes, giving ten ohms.",
+      "chapter": 2
+    },
+    {
+      "start": 257.831998779302,
+      "end": 261.03200335693873,
+      "text": "The finite slope explains why voltage is not exactly constant.",
+      "chapter": 2
+    },
+    {
+      "start": 261.77200122070826,
+      "end": 266.33917813736866,
+      "text": "A datasheet specifies breakdown at a test current and includes tolerance,",
+      "chapter": 2
+    },
+    {
+      "start": 266.33917813736866,
+      "end": 266.65199847412623,
+      "text": "power",
+      "chapter": 2
+    },
+    {
+      "start": 266.65199847412623,
+      "end": 267.57199664307154,
+      "text": "and temperature limits.",
+      "chapter": 2
+    },
+    {
+      "start": 268.0119990844778,
+      "end": 272.77200122070826,
+      "text": "Do not identify the supply setting as the Zener voltage without measuring the",
+      "chapter": 2
+    },
+    {
+      "start": 272.77200122070826,
+      "end": 273.2320003051809,
+      "text": "diode itself.",
+      "chapter": 2
+    },
+    {
+      "start": 274.03200335693873,
+      "end": 277.97199816895045,
+      "text": "Use a stable source, protected connections and observations within the rated",
+      "chapter": 2
+    },
+    {
+      "start": 277.97199816895045,
+      "end": 278.29199786377467,
+      "text": "range.",
+      "chapter": 2
+    },
+    {
+      "start": 278.6640000000079,
+      "end": 282.62400003815486,
+      "text": "A mixed collection of components becomes manageable when you combine",
+      "chapter": 3
+    },
+    {
+      "start": 282.62400003815486,
+      "end": 285.74399992371394,
+      "text": "appearance, markings and a safe electrical test.",
+      "chapter": 3
+    },
+    {
+      "start": 286.46400019074275,
+      "end": 289.24399992371394,
+      "text": "A resistor often has two leads and color bands.",
+      "chapter": 3
+    },
+    {
+      "start": 289.9839996948321,
+      "end": 294.2240004196246,
+      "text": "For a four band resistor, the first two bands are digits, the third is a",
+      "chapter": 3
+    },
+    {
+      "start": 294.2240004196246,
+      "end": 296.2640003814776,
+      "text": "multiplier, and the fourth is tolerance.",
+      "chapter": 3
+    },
+    {
+      "start": 297.1640000000079,
+      "end": 301.8609229380369,
+      "text": "Red, violet, brown and gold mean twenty seven times ten ohms, with five",
+      "chapter": 3
+    },
+    {
+      "start": 301.8609229380369,
+      "end": 302.32399984742,
+      "text": "percent",
+      "chapter": 3
+    },
+    {
+      "start": 302.32399984742,
+      "end": 304.58400007630183,
+      "text": "tolerance: two hundred seventy ohms.",
+      "chapter": 3
+    },
+    {
+      "start": 304.8039993896563,
+      "end": 309.22400061035944,
+      "text": "Its nominal tolerance interval is two hundred fifty six point five to two",
+      "chapter": 3
+    },
+    {
+      "start": 309.22400061035944,
+      "end": 311.34400030518367,
+      "text": "hundred eighty three point five ohms.",
+      "chapter": 3
+    },
+    {
+      "start": 311.96399923706844,
+      "end": 316.95912879788136,
+      "text": "A capacitor also has two terminals, but stores charge rather than maintaining",
+      "chapter": 3
+    },
+    {
+      "start": 316.95912879788136,
+      "end": 317.02400061035945,
+      "text": "a",
+      "chapter": 3
+    },
+    {
+      "start": 317.02400061035945,
+      "end": 317.7440018310626,
+      "text": "steady ohmic current.",
+      "chapter": 3
+    },
+    {
+      "start": 318.5839981689532,
+      "end": 322.5040001525958,
+      "text": "A common three digit code one zero four means ten times ten to the four",
+      "chapter": 3
+    },
+    {
+      "start": 322.5040001525958,
+      "end": 326.9839996948321,
+      "text": "picofarads: one hundred thousand picofarads, or one hundred nanofarads.",
+      "chapter": 3
+    },
+    {
+      "start": 327.7240013732989,
+      "end": 331.2440018310626,
+      "text": "Check the marking system rather than assuming every number follows that code.",
+      "chapter": 3
+    },
+    {
+      "start": 331.8039993896563,
+      "end": 335.94399877930476,
+      "text": "Electrolytic capacitors are commonly polarized; their stripe often marks the",
+      "chapter": 3
+    },
+    {
+      "start": 335.94399877930476,
+      "end": 338.5040001525958,
+      "text": "negative lead, but verify the actual part.",
+      "chapter": 3
+    },
+    {
+      "start": 339.46399923706844,
+      "end": 343.34400030518367,
+      "text": "Safely discharge them through an appropriate resistor before testing, never by",
+      "chapter": 3
+    },
+    {
+      "start": 343.34400030518367,
+      "end": 344.5039963378985,
+      "text": "a deliberate short circuit.",
+      "chapter": 3
+    },
+    {
+      "start": 345.1839966430743,
+      "end": 347.62399908448054,
+      "text": "A diode's body band commonly marks the cathode.",
+      "chapter": 3
+    },
+    {
+      "start": 348.2440018310626,
+      "end": 352.3039993896563,
+      "text": "In diode test mode an ordinary silicon junction typically gives a finite",
+      "chapter": 3
+    },
+    {
+      "start": 352.3039993896563,
+      "end": 356.763998474129,
+      "text": "forward drop and an over range indication in reverse, depending on meter and",
+      "chapter": 3
+    },
+    {
+      "start": 356.763998474129,
+      "end": 357.0839981689532,
+      "text": "device.",
+      "chapter": 3
+    },
+    {
+      "start": 357.634001220711,
+      "end": 361.82400366211726,
+      "text": "An LED emits light under suitable forward current, often has a different",
+      "chapter": 3
+    },
+    {
+      "start": 361.82400366211726,
+      "end": 364.22399755860164,
+      "text": "forward drop, and may not light from every meter.",
+      "chapter": 3
+    },
+    {
+      "start": 365.22399755860164,
+      "end": 369.52400061035945,
+      "text": "Lead length and a flat edge are clues, not guarantees on damaged or unfamiliar",
+      "chapter": 3
+    },
+    {
+      "start": 369.52400061035945,
+      "end": 369.92400213623836,
+      "text": "parts.",
+      "chapter": 3
+    },
+    {
+      "start": 370.8639969482501,
+      "end": 374.884001220711,
+      "text": "Test isolated, unpowered components, and consult ratings before applying a",
+      "chapter": 3
+    },
+    {
+      "start": 374.884001220711,
+      "end": 375.1440033569415,
+      "text": "supply.",
+      "chapter": 3
+    },
+    {
+      "start": 375.72000000001066,
+      "end": 379.51999995232694,
+      "text": "The identification requirement also includes transistors and integrated",
+      "chapter": 4
+    },
+    {
+      "start": 379.51999995232694,
+      "end": 379.9800002288925,
+      "text": "circuits.",
+      "chapter": 4
+    },
+    {
+      "start": 380.73999998093717,
+      "end": 385.2599999618637,
+      "text": "A typical bipolar transistor has three terminals: base, collector and emitter.",
+      "chapter": 4
+    },
+    {
+      "start": 385.83999988556974,
+      "end": 390.44000026703947,
+      "text": "But a three lead package alone is not proof of a bipolar transistor; other",
+      "chapter": 4
+    },
+    {
+      "start": 390.44000026703947,
+      "end": 391.84000083924406,
+      "text": "devices use similar packages.",
+      "chapter": 4
+    },
+    {
+      "start": 392.699999542247,
+      "end": 394.4599997711288,
+      "text": "Read the part number and check its datasheet.",
+      "chapter": 4
+    },
+    {
+      "start": 395.11999961854093,
+      "end": 399.4599997711288,
+      "text": "In a simple unpowered diode test check, a silicon NPN transistor usually",
+      "chapter": 4
+    },
+    {
+      "start": 399.4599997711288,
+      "end": 403.84000083924406,
+      "text": "behaves like two junctions sharing a base: a positive probe at the base and",
+      "chapter": 4
+    },
+    {
+      "start": 403.84000083924406,
+      "end": 407.08871782939707,
+      "text": "negative probe at either emitter or collector gives a forward junction",
+      "chapter": 4
+    },
+    {
+      "start": 407.08871782939707,
+      "end": 407.4599997711288,
+      "text": "reading.",
+      "chapter": 4
+    },
+    {
+      "start": 408.56000015259855,
+      "end": 411.0800006103622,
+      "text": "Reversing those probes generally gives an over range reading.",
+      "chapter": 4
+    },
+    {
+      "start": 412.06000015259855,
+      "end": 415.62000152588956,
+      "text": "For a PNP transistor, the corresponding conducting polarities reverse.",
+      "chapter": 4
+    },
+    {
+      "start": 416.37999984742277,
+      "end": 419.760000915538,
+      "text": "This is an identification model, not a full transistor performance test.",
+      "chapter": 4
+    },
+    {
+      "start": 420.37999984742277,
+      "end": 424.22000000001066,
+      "text": "It does not reliably distinguish collector from emitter in every device, and",
+      "chapter": 4
+    },
+    {
+      "start": 424.22000000001066,
+      "end": 426.96000167847745,
+      "text": "protection structures or a damaged part can change readings.",
+      "chapter": 4
+    },
+    {
+      "start": 427.8399989318954,
+      "end": 430.15999862671964,
+      "text": "Confirm the actual pinout before connecting anything.",
+      "chapter": 4
+    },
+    {
+      "start": 430.90000030518644,
+      "end": 434.3399989318954,
+      "text": "An integrated circuit contains several circuit elements in one package.",
+      "chapter": 4
+    },
+    {
+      "start": 434.99999877930753,
+      "end": 439.30000183106534,
+      "text": "A dot or notch commonly indicates pin one orientation, and the part number",
+      "chapter": 4
+    },
+    {
+      "start": 439.30000183106534,
+      "end": 440.8400027465927,
+      "text": "tells you which datasheet to consult.",
+      "chapter": 4
+    },
+    {
+      "start": 441.49999877930753,
+      "end": 444.3599993896591,
+      "text": "You cannot determine every pin's role from the package outline.",
+      "chapter": 4
+    },
+    {
+      "start": 445.0399996948349,
+      "end": 448.38000366212003,
+      "text": "Different integrated circuits may look almost identical while doing completely",
+      "chapter": 4
+    },
+    {
+      "start": 448.38000366212003,
+      "end": 449.02000305176847,
+      "text": "different jobs.",
+      "chapter": 4
+    },
+    {
+      "start": 449.9599978637802,
+      "end": 453.13999816895597,
+      "text": "Avoid powered resistance tests and static discharge into sensitive parts.",
+      "chapter": 4
+    },
+    {
+      "start": 453.8599993896591,
+      "end": 457.8400027465927,
+      "text": "Before accepting an identification, combine at least two appropriate clues",
+      "chapter": 4
+    },
+    {
+      "start": 457.8400027465927,
+      "end": 460.13999816895597,
+      "text": "rather than guessing from color or shape.",
+      "chapter": 4
+    },
+    {
+      "start": 460.70000335694425,
+      "end": 464.38000366212003,
+      "text": "Our diagrams are representative teaching sketches, not universal component",
+      "chapter": 4
+    },
+    {
+      "start": 464.38000366212003,
+      "end": 464.81999847413175,
+      "text": "pinouts.",
+      "chapter": 4
+    },
+    {
+      "start": 465.4800021362411,
+      "end": 468.91999694825284,
+      "text": "These original examples conclude the introductory experimental skills set;",
+      "chapter": 4
+    },
+    {
+      "start": 469.88000366212003,
+      "end": 474.02000305176847,
+      "text": "further observation tables, corrections and mixed JEE practice are still",
+      "chapter": 4
+    },
+    {
+      "start": 474.02000305176847,
+      "end": 474.1600024414169,
+      "text": "needed.",
+      "chapter": 4
+    },
+    {
+      "start": 475.1799990844833,
+      "end": 478.49999877930753,
+      "text": "Learning the laboratory principle is not a substitute for supervised hands on",
+      "chapter": 4
+    },
+    {
+      "start": 478.49999877930753,
+      "end": 478.760000915538,
+      "text": "work.",
+      "chapter": 4
+    }
+  ]
+}

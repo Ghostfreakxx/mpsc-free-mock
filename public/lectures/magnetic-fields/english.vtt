@@ -1,0 +1,415 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.360
+Hey, welcome back.
+
+00:00:01.360 --> 00:00:03.740
+We've followed charge through electric circuits.
+
+00:00:04.380 --> 00:00:07.040
+Now we ask what a current does to the space around it.
+
+00:00:07.740 --> 00:00:11.560
+A steady current creates a magnetic field, represented by the vector B.
+
+00:00:12.240 --> 00:00:13.780
+Its SI unit is the tesla.
+
+00:00:14.820 --> 00:00:18.769
+A straight wire produces field lines that circle the wire, not lines that
+
+00:00:18.769 --> 00:00:19.040
+point
+
+00:00:19.040 --> 00:00:19.600
+along it.
+
+00:00:20.560 --> 00:00:24.360
+Use your right hand: point your thumb along conventional current, and your
+
+00:00:24.360 --> 00:00:26.480
+curled fingers give the magnetic field direction.
+
+00:00:27.700 --> 00:00:31.540
+Conventional current is opposite electron drift in a metal, so use the current
+
+00:00:31.540 --> 00:00:32.740
+arrow printed in the question.
+
+00:00:34.220 --> 00:00:36.820
+Imagine a vertical wire carrying current upward on the page.
+
+00:00:37.700 --> 00:00:40.440
+To its right, the magnetic field points into the page.
+
+00:00:41.160 --> 00:00:42.860
+To its left, it points out.
+
+00:00:43.860 --> 00:00:48.280
+We represent a vector coming toward you by a dot, like an arrow tip, and one
+
+00:00:48.280 --> 00:00:50.960
+going away by a cross, like the tail of an arrow.
+
+00:00:52.260 --> 00:00:54.420
+Reverse the current and the field reverses.
+
+00:00:55.360 --> 00:00:59.500
+These symbols describe a direction perpendicular to the page; they do not mean
+
+00:00:59.500 --> 00:01:01.380
+a positive or negative field magnitude.
+
+00:01:02.640 --> 00:01:06.160
+Also, do not confuse the direction of magnetic field with the direction of
+
+00:01:06.160 --> 00:01:07.360
+magnetic force on a moving charge.
+
+00:01:08.240 --> 00:01:10.960
+The force requires another vector rule that we will study separately.
+
+00:01:12.020 --> 00:01:14.900
+Our first job is to find B at a chosen observation point.
+
+00:01:15.600 --> 00:01:19.300
+We will use steady currents and thin wire models in vacuum or approximately
+
+00:01:19.300 --> 00:01:22.220
+air, and state the geometry before applying a formula.
+
+00:01:23.256 --> 00:01:28.196
+The Biot Savart law connects a small piece of current carrying wire to its
+
+00:01:28.196 --> 00:01:30.056
+contribution at an observation point.
+
+00:01:31.196 --> 00:01:35.036
+Draw a tiny directed length, d l, along conventional current.
+
+00:01:35.916 --> 00:01:39.836
+Draw the displacement from that piece to the observation point; its magnitude
+
+00:01:39.836 --> 00:01:40.556
+is r.
+
+00:01:41.376 --> 00:01:46.336
+The small field magnitude is mu zero over four pi, multiplied by current,
+
+00:01:46.736 --> 00:01:50.956
+directed length magnitude and sine theta, then divided by r squared.
+
+00:01:51.916 --> 00:01:54.596
+Theta is the angle between the current element and that displacement.
+
+00:01:55.796 --> 00:02:00.396
+The direction follows d l crossed with the unit displacement vector, using the
+
+00:02:00.396 --> 00:02:01.696
+right hand cross product rule.
+
+00:02:02.636 --> 00:02:06.336
+A perpendicular displacement gives the largest contribution for the same
+
+00:02:06.336 --> 00:02:08.176
+current, length and distance.
+
+00:02:09.116 --> 00:02:11.836
+Along the element's direction, sine theta is zero.
+
+00:02:12.536 --> 00:02:16.396
+To obtain the field of a whole wire, add the vector contributions by
+
+00:02:16.396 --> 00:02:20.636
+integration; don't substitute the total wire length into a small element
+
+00:02:20.636 --> 00:02:22.976
+expression when distance or angle changes.
+
+00:02:23.796 --> 00:02:28.696
+For an approximate tiny segment example, use four amperes, length one
+
+00:02:28.696 --> 00:02:31.716
+centimeter, perpendicular distance ten centimeters.
+
+00:02:32.816 --> 00:02:35.776
+Treat distance and angle as nearly constant across that short piece.
+
+00:02:36.156 --> 00:02:40.556
+With mu zero over four pi approximately ten to the minus seven, its
+
+00:02:40.556 --> 00:02:45.456
+contribution is four times ten to the minus seven tesla, or zero point four
+
+00:02:45.456 --> 00:02:46.096
+microtesla.
+
+00:02:47.016 --> 00:02:50.984
+That is the contribution of this piece, not a complete wire or its return
+
+00:02:50.984 --> 00:02:51.256
+path.
+
+00:02:52.476 --> 00:02:57.916
+In standard JEE numericals we use mu zero approximately four pi times ten to
+
+00:02:57.916 --> 00:02:59.856
+the minus seven tesla meter per ampere.
+
+00:03:00.656 --> 00:03:03.456
+Geometry and vector direction must accompany the arithmetic.
+
+00:03:03.816 --> 00:03:06.856
+For a straight wire, integration gives a useful result.
+
+00:03:07.716 --> 00:03:11.316
+At perpendicular distance a from a wire that is effectively very long in both
+
+00:03:11.316 --> 00:03:16.236
+directions, the field magnitude is mu zero I divided by two pi a.
+
+00:03:17.036 --> 00:03:20.516
+Field strength falls as one over distance, even though a single small element
+
+00:03:20.516 --> 00:03:22.576
+contribution contains one over r squared.
+
+00:03:23.756 --> 00:03:24.776
+Integration changes the dependence.
+
+00:03:25.396 --> 00:03:28.916
+A five ampere long wire produces twenty microtesla at five centimeters.
+
+00:03:29.816 --> 00:03:32.116
+Double the distance and the field becomes ten microtesla.
+
+00:03:32.556 --> 00:03:33.996
+Now keep the wire finite.
+
+00:03:34.716 --> 00:03:37.696
+If the perpendicular from the observation point meets the segment between its
+
+00:03:37.696 --> 00:03:41.496
+endpoints, define alpha and beta as the positive angles from that
+
+00:03:41.496 --> 00:03:42.256
+perpendicular
+
+00:03:42.256 --> 00:03:43.816
+toward the two endpoint lines.
+
+00:03:44.456 --> 00:03:49.408
+The field is mu zero I divided by four pi a, multiplied by sine alpha plus
+
+00:03:49.408 --> 00:03:49.676
+sine
+
+00:03:49.676 --> 00:03:49.896
+beta.
+
+00:03:50.056 --> 00:03:54.296
+A symmetric segment with both angles forty five degrees, at the same five
+
+00:03:54.296 --> 00:03:58.788
+centimeters and five amperes, gives ten times square root two microtesla,
+
+00:03:58.788 --> 00:03:59.096
+about
+
+00:03:59.096 --> 00:04:00.486
+fourteen point one four.
+
+00:04:00.486 --> 00:04:03.616
+This is smaller than the infinite wire result because there is less
+
+00:04:03.616 --> 00:04:04.356
+contributing wire.
+
+00:04:05.256 --> 00:04:08.976
+Let both angles approach ninety degrees and the long wire result returns.
+
+00:04:09.576 --> 00:04:13.196
+If the perpendicular foot lies outside the segment, use signed endpoint
+
+00:04:13.196 --> 00:04:17.156
+geometry or rederive the integral rather than adding two positive sines
+
+00:04:17.156 --> 00:04:17.536
+blindly.
+
+00:04:18.216 --> 00:04:22.293
+The formula gives magnitude; use the current direction to determine into or
+
+00:04:22.293 --> 00:04:22.456
+out
+
+00:04:22.456 --> 00:04:22.976
+of the page.
+
+00:04:23.856 --> 00:04:27.412
+Nearby return wires can also contribute, so read the complete circuit
+
+00:04:27.412 --> 00:04:27.876
+geometry.
+
+00:04:28.416 --> 00:04:30.976
+A circular loop has a different symmetry.
+
+00:04:31.796 --> 00:04:35.396
+At its center, every current element is perpendicular to the displacement
+
+00:04:35.396 --> 00:04:39.076
+toward the center, and each is the same distance R away.
+
+00:04:39.836 --> 00:04:42.596
+All field contributions point along the loop axis.
+
+00:04:43.536 --> 00:04:48.016
+Integrating around the circumference gives mu zero I divided by two R.
+
+00:04:48.016 --> 00:04:52.456
+For N closely wound identical turns carrying the same current, multiply by N,
+
+00:04:52.756 --> 00:04:55.756
+provided their radii and positions are approximately the same.
+
+00:04:56.616 --> 00:05:00.456
+Curl your right fingers along the loop current; your thumb gives the central
+
+00:05:00.456 --> 00:05:01.256
+field direction.
+
+00:05:02.276 --> 00:05:05.416
+Counterclockwise current as viewed on the page gives field out of the page at
+
+00:05:05.416 --> 00:05:05.716
+the center.
+
+00:05:06.396 --> 00:05:10.496
+For a single loop of radius ten centimeters carrying four amperes, the center
+
+00:05:10.496 --> 00:05:14.896
+field is eight pi microtesla, approximately twenty five point one three.
+
+00:05:14.896 --> 00:05:18.756
+Along the axis at distance x from the center, contributions have transverse
+
+00:05:18.756 --> 00:05:20.616
+components that cancel in opposite pairs.
+
+00:05:21.116 --> 00:05:22.516
+Their axial components add.
+
+00:05:22.876 --> 00:05:27.636
+The result is mu zero N I R squared divided by twice the quantity R squared
+
+00:05:27.636 --> 00:05:29.556
+plus x squared raised to three halves.
+
+00:05:30.656 --> 00:05:33.276
+Set x equal to zero and the center formula returns.
+
+00:05:33.956 --> 00:05:37.676
+Set x equal to R and the field is the center value divided by two square root
+
+00:05:37.676 --> 00:05:40.376
+two, here about eight point eight nine microtesla.
+
+00:05:41.256 --> 00:05:45.076
+This equation is for points on the axis, not arbitrary points in the plane of
+
+00:05:45.076 --> 00:05:45.396
+the loop.
+
+00:05:46.256 --> 00:05:49.696
+State whether a question asks for the center, an axial point or another
+
+00:05:49.696 --> 00:05:51.576
+geometry before choosing the expression.
+
+00:05:51.864 --> 00:05:55.084
+Let's finish with two common JEE patterns.
+
+00:05:55.884 --> 00:06:00.104
+For a circular arc, the center field contribution is proportional to the angle
+
+00:06:00.104 --> 00:06:00.684
+swept out.
+
+00:06:01.304 --> 00:06:07.004
+The magnitude is mu zero I times theta divided by four pi R, with theta
+
+00:06:07.004 --> 00:06:07.724
+in radians.
+
+00:06:08.304 --> 00:06:13.704
+A semicircle has theta equal to pi, so its contribution is half that of a full
+
+00:06:13.704 --> 00:06:15.584
+loop with the same radius and current.
+
+00:06:16.304 --> 00:06:21.204
+Our four ampere, ten centimeter semicircular arc contributes four pi
+
+00:06:21.204 --> 00:06:24.724
+microtesla, about twelve point five seven.
+
+00:06:24.724 --> 00:06:27.404
+Its direction still follows the current around the arc.
+
+00:06:28.844 --> 00:06:32.084
+Straight leads directed radially toward or away from that center contribute
+
+00:06:32.084 --> 00:06:36.084
+zero there, because their current elements and displacement vectors are
+
+00:06:36.084 --> 00:06:36.344
+parallel.
+
+00:06:37.324 --> 00:06:41.604
+This is a geometry statement, not a rule that all connecting leads have zero
+
+00:06:41.604 --> 00:06:41.904
+field.
+
+00:06:42.804 --> 00:06:44.824
+Include other lead contributions when needed.
+
+00:06:45.494 --> 00:06:50.204
+Now place two very long parallel wires ten centimeters apart, each carrying
+
+00:06:50.204 --> 00:06:51.424
+five amperes upward.
+
+00:06:52.184 --> 00:06:56.864
+At the midpoint, each gives twenty microtesla, but one field enters the page
+
+00:06:57.284 --> 00:06:59.224
+and the other leaves, so they cancel.
+
+00:07:00.284 --> 00:07:04.044
+Reverse the current in one wire and both midpoint fields point the same way,
+
+00:07:04.764 --> 00:07:05.924
+giving forty microtesla.
+
+00:07:06.984 --> 00:07:10.804
+Notice that these are field comparisons, not statements about forces between
+
+00:07:10.804 --> 00:07:11.324
+the wires.
+
+00:07:11.984 --> 00:07:16.604
+For your final checklist, identify the observation point, convert distances,
+
+00:07:17.524 --> 00:07:21.824
+choose a formula with matching geometry, establish every direction, and then
+
+00:07:21.824 --> 00:07:22.524
+add vectors.
+
+00:07:23.364 --> 00:07:27.084
+Ampere's law will give us another powerful way to use symmetry in the next
+
+00:07:27.084 --> 00:07:27.384
+class.

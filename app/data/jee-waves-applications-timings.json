@@ -1,0 +1,541 @@
+{
+  "duration": 290.32800000000833,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 95.56800000000273
+    },
+    {
+      "start": 95.56800000000273,
+      "end": 191.88000000000548
+    },
+    {
+      "start": 191.88000000000548,
+      "end": 290.32800000000833
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.1399999856948853,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.559999942779541,
+      "end": 5.199999809265137,
+      "text": "A crest moves along a rope, but a marked bit of rope oscillates locally.",
+      "chapter": 0
+    },
+    {
+      "start": 5.840000152587891,
+      "end": 7.199999809265137,
+      "text": "Let's make that difference numerical.",
+      "chapter": 0
+    },
+    {
+      "start": 7.860000133514404,
+      "end": 12.65999984741211,
+      "text": "In SI units, displacement y is zero point zero two times sine of four pi x",
+      "chapter": 0
+    },
+    {
+      "start": 12.65999984741211,
+      "end": 13.640000343322754,
+      "text": "minus twenty pi t.",
+      "chapter": 0
+    },
+    {
+      "start": 14.539999961853027,
+      "end": 18.520000457763672,
+      "text": "Amplitude is two centimetres, wave number is four pi per metre, and angular",
+      "chapter": 0
+    },
+    {
+      "start": 18.520000457763672,
+      "end": 20.639999389648438,
+      "text": "frequency is twenty pi radians per second.",
+      "chapter": 0
+    },
+    {
+      "start": 21.219999313354492,
+      "end": 23.5,
+      "text": "To follow a crest, keep its phase constant.",
+      "chapter": 0
+    },
+    {
+      "start": 24.079999923706055,
+      "end": 28.959999084472656,
+      "text": "Four pi x minus twenty pi t stays fixed, so x increases at five metres per",
+      "chapter": 0
+    },
+    {
+      "start": 28.959999084472656,
+      "end": 29.15999984741211,
+      "text": "second.",
+      "chapter": 0
+    },
+    {
+      "start": 29.8799991607666,
+      "end": 32.2599983215332,
+      "text": "That is the pattern speed, along positive x.",
+      "chapter": 0
+    },
+    {
+      "start": 32.959999084472656,
+      "end": 34.939998626708984,
+      "text": "Now watch one particle at a fixed position.",
+      "chapter": 0
+    },
+    {
+      "start": 35.779998779296875,
+      "end": 38.619998931884766,
+      "text": "Differentiate with respect to time while keeping x unchanged.",
+      "chapter": 0
+    },
+    {
+      "start": 39.220001220703125,
+      "end": 43.2599983215332,
+      "text": "Its transverse velocity is minus zero point four pi times cosine of the phase.",
+      "chapter": 0
+    },
+    {
+      "start": 43.86000061035156,
+      "end": 48.27743765024039,
+      "text": "At x zero and time zero, the particle is crossing equilibrium downward at",
+      "chapter": 0
+    },
+    {
+      "start": 48.27743765024039,
+      "end": 48.58000183105469,
+      "text": "about",
+      "chapter": 0
+    },
+    {
+      "start": 48.58000183105469,
+      "end": 50.36000061035156,
+      "text": "one point two six metres per second.",
+      "chapter": 0
+    },
+    {
+      "start": 50.36000061035156,
+      "end": 53.5,
+      "text": "Pause: zero displacement did not mean zero velocity.",
+      "chapter": 0
+    },
+    {
+      "start": 54.36000061035156,
+      "end": 57.86000061035156,
+      "text": "Its acceleration is minus angular frequency squared times displacement.",
+      "chapter": 0
+    },
+    {
+      "start": 58.63999938964844,
+      "end": 60.7599983215332,
+      "text": "At that instant acceleration is zero.",
+      "chapter": 0
+    },
+    {
+      "start": 61.41999816894531,
+      "end": 65.63999938964844,
+      "text": "A quarter period later, the particle is at its negative extreme: velocity is",
+      "chapter": 0
+    },
+    {
+      "start": 65.63999938964844,
+      "end": 67.44000244140625,
+      "text": "zero and acceleration is upward.",
+      "chapter": 0
+    },
+    {
+      "start": 68.22000122070312,
+      "end": 70.13999938964844,
+      "text": "There is also a useful equation check.",
+      "chapter": 0
+    },
+    {
+      "start": 70.95999908447266,
+      "end": 75.0999984741211,
+      "text": "Taking two time derivatives gives minus omega squared times y; taking two",
+      "chapter": 0
+    },
+    {
+      "start": 75.0999984741211,
+      "end": 77.62000274658203,
+      "text": "position derivatives gives minus k squared times y.",
+      "chapter": 0
+    },
+    {
+      "start": 78.30000305175781,
+      "end": 82.5,
+      "text": "Their ratio gives the ideal wave equation: the second time derivative equals",
+      "chapter": 0
+    },
+    {
+      "start": 82.5,
+      "end": 85.16000366210938,
+      "text": "pattern speed squared times the second position derivative.",
+      "chapter": 0
+    },
+    {
+      "start": 85.86000061035156,
+      "end": 89.95999908447266,
+      "text": "This is a linear, nondispersive wave model, not a promise for every real",
+      "chapter": 0
+    },
+    {
+      "start": 89.95999908447266,
+      "end": 90.23999786376953,
+      "text": "medium.",
+      "chapter": 0
+    },
+    {
+      "start": 90.91999816894531,
+      "end": 94.36000061035156,
+      "text": "Always ask which rate the problem wants before substituting numbers.",
+      "chapter": 0
+    },
+    {
+      "start": 95.56800000000273,
+      "end": 97.26800004768644,
+      "text": "Now the pattern stands still.",
+      "chapter": 1
+    },
+    {
+      "start": 97.88799993324552,
+      "end": 102.36800019073759,
+      "text": "A two metre string fixed at both ends has displacement zero point zero four",
+      "chapter": 1
+    },
+    {
+      "start": 102.36800019073759,
+      "end": 107.90800015259062,
+      "text": "times sine of pi x times cosine of one hundred pi t, again in SI units.",
+      "chapter": 1
+    },
+    {
+      "start": 108.24800030517851,
+      "end": 111.0880004577664,
+      "text": "The position factor sets each particle's amplitude.",
+      "chapter": 1
+    },
+    {
+      "start": 111.62799946594511,
+      "end": 113.90800015259062,
+      "text": "The time factor sets its oscillation.",
+      "chapter": 1
+    },
+    {
+      "start": 114.76800076294218,
+      "end": 119.16800038147245,
+      "text": "Nodes occur where sine of pi x is zero: at zero, one and two metres.",
+      "chapter": 1
+    },
+    {
+      "start": 119.54799954223905,
+      "end": 123.64646157367686,
+      "text": "There are two loops, so this is the second harmonic, with wavelength two",
+      "chapter": 1
+    },
+    {
+      "start": 123.64646157367686,
+      "end": 123.98800007629667,
+      "text": "metres",
+      "chapter": 1
+    },
+    {
+      "start": 123.98800007629667,
+      "end": 125.62799946594511,
+      "text": "and frequency fifty hertz.",
+      "chapter": 1
+    },
+    {
+      "start": 126.36799923706327,
+      "end": 129.6480018310574,
+      "text": "Each travelling component therefore has speed one hundred metres per second.",
+      "chapter": 1
+    },
+    {
+      "start": 130.58800045776638,
+      "end": 133.78800122070584,
+      "text": "Notice that a stationary pattern does not mean the particles are stationary.",
+      "chapter": 1
+    },
+    {
+      "start": 134.68799893188748,
+      "end": 139.18799893188748,
+      "text": "At x equal to one quarter metre, the local amplitude is zero point zero four",
+      "chapter": 1
+    },
+    {
+      "start": 139.18799893188748,
+      "end": 143.96800152588162,
+      "text": "divided by the square root of two, about two point eight three centimetres.",
+      "chapter": 1
+    },
+    {
+      "start": 143.96800152588162,
+      "end": 148.3680011444119,
+      "text": "That particle's maximum transverse speed is its local amplitude times one",
+      "chapter": 1
+    },
+    {
+      "start": 148.3680011444119,
+      "end": 151.46800152588162,
+      "text": "hundred pi, about eight point eight nine metres per second.",
+      "chapter": 1
+    },
+    {
+      "start": 152.0680000000027,
+      "end": 153.62800137329373,
+      "text": "Why isn't it the antinode value?",
+      "chapter": 1
+    },
+    {
+      "start": 154.20799938965115,
+      "end": 155.86799923706326,
+      "text": "Because amplitude depends on position.",
+      "chapter": 1
+    },
+    {
+      "start": 156.72799984741482,
+      "end": 159.7480003051785,
+      "text": "Compare particles at one quarter metre and one and one quarter metres.",
+      "chapter": 1
+    },
+    {
+      "start": 160.32800213623318,
+      "end": 164.1480018310574,
+      "text": "Their sine factors have opposite signs, so their motions are opposite at the",
+      "chapter": 1
+    },
+    {
+      "start": 164.1480018310574,
+      "end": 166.20799938965115,
+      "text": "same time: a phase difference of pi.",
+      "chapter": 1
+    },
+    {
+      "start": 167.0680000000027,
+      "end": 171.00800244140896,
+      "text": "Two points inside the same loop have the same temporal phase, though their",
+      "chapter": 1
+    },
+    {
+      "start": 171.00800244140896,
+      "end": 171.70799938965115,
+      "text": "amplitudes can differ.",
+      "chapter": 1
+    },
+    {
+      "start": 172.2679969482449,
+      "end": 176.52799908447537,
+      "text": "At a node phase of displacement is undefined because the amplitude is zero.",
+      "chapter": 1
+    },
+    {
+      "start": 177.38799969482693,
+      "end": 181.86800305176052,
+      "text": "Finally, the four centimetre antinode amplitude comes from two equal, opposite",
+      "chapter": 1
+    },
+    {
+      "start": 181.86800305176052,
+      "end": 185.5680000000027,
+      "text": "travelling waves, each with amplitude two centimetres.",
+      "chapter": 1
+    },
+    {
+      "start": 185.5680000000027,
+      "end": 188.40799633789334,
+      "text": "Do not assign the full standing wave amplitude to each component.",
+      "chapter": 1
+    },
+    {
+      "start": 189.08799664306912,
+      "end": 191.6480018310574,
+      "text": "Those checks prevent several common JEE errors.",
+      "chapter": 1
+    },
+    {
+      "start": 191.88000000000548,
+      "end": 193.77999997616362,
+      "text": "Let's finish with a detective problem.",
+      "chapter": 2
+    },
+    {
+      "start": 194.47999990463805,
+      "end": 198.2800000953729,
+      "text": "A reference tuning fork is two hundred and fifty six hertz.",
+      "chapter": 2
+    },
+    {
+      "start": 198.2800000953729,
+      "end": 200.8599995422418,
+      "text": "Another fork produces four beats per second with it.",
+      "chapter": 2
+    },
+    {
+      "start": 201.72000015259337,
+      "end": 202.9800003814752,
+      "text": "What is the unknown frequency?",
+      "chapter": 2
+    },
+    {
+      "start": 204.2600001144464,
+      "end": 205.1000002670343,
+      "text": "Think before choosing.",
+      "chapter": 2
+    },
+    {
+      "start": 205.7600001144464,
+      "end": 210.33999908447814,
+      "text": "It could be two hundred and fifty two or two hundred and sixty hertz.",
+      "chapter": 2
+    },
+    {
+      "start": 210.33999908447814,
+      "end": 212.88000000000548,
+      "text": "An absolute difference does not tell us which is higher.",
+      "chapter": 2
+    },
+    {
+      "start": 213.80000007629943,
+      "end": 218.25999916077208,
+      "text": "Now the question states that adding a small load lowers the unknown fork's",
+      "chapter": 2
+    },
+    {
+      "start": 218.25999916077208,
+      "end": 221.22000015259337,
+      "text": "frequency, and the beats decrease from four to three per second.",
+      "chapter": 2
+    },
+    {
+      "start": 222.17999923706603,
+      "end": 226.01999938965392,
+      "text": "If the original frequency were two hundred and fifty two, lowering it would",
+      "chapter": 2
+    },
+    {
+      "start": 226.01999938965392,
+      "end": 228.67999923706603,
+      "text": "move it farther from the reference and increase the beats.",
+      "chapter": 2
+    },
+    {
+      "start": 229.42000091553282,
+      "end": 230.72000015259337,
+      "text": "That contradicts the observation.",
+      "chapter": 2
+    },
+    {
+      "start": 231.74000061035704,
+      "end": 235.8599995422418,
+      "text": "So the original frequency was two hundred and sixty hertz; after the change it",
+      "chapter": 2
+    },
+    {
+      "start": 235.8599995422418,
+      "end": 239.76000106812072,
+      "text": "is two hundred and fifty nine, assuming the stated small change stays on the",
+      "chapter": 2
+    },
+    {
+      "start": 239.76000106812072,
+      "end": 240.76000106812072,
+      "text": "same side of the reference.",
+      "chapter": 2
+    },
+    {
+      "start": 241.67999923706603,
+      "end": 244.2999981689508,
+      "text": "The direction of the change matters as much as the beat count.",
+      "chapter": 2
+    },
+    {
+      "start": 245.08000076294493,
+      "end": 248.22000015259337,
+      "text": "Why is beat frequency the full frequency difference, not half?",
+      "chapter": 2
+    },
+    {
+      "start": 249.08000076294493,
+      "end": 253.8599995422418,
+      "text": "Adding two equal amplitude nearby tones produces a rapid carrier multiplied by",
+      "chapter": 2
+    },
+    {
+      "start": 253.8599995422418,
+      "end": 255.63999832153868,
+      "text": "a slowly changing cosine envelope.",
+      "chapter": 2
+    },
+    {
+      "start": 256.29999816895076,
+      "end": 260.9200009155328,
+      "text": "That signed cosine changes sign, but loudness depends on its magnitude or its",
+      "chapter": 2
+    },
+    {
+      "start": 260.9200009155328,
+      "end": 261.18000305176326,
+      "text": "square.",
+      "chapter": 2
+    },
+    {
+      "start": 262.0199993896539,
+      "end": 266.0000027465875,
+      "text": "Two adjacent loud maxima occur one divided by the frequency difference seconds",
+      "chapter": 2
+    },
+    {
+      "start": 266.0000027465875,
+      "end": 266.29999816895076,
+      "text": "apart.",
+      "chapter": 2
+    },
+    {
+      "start": 267.0199993896539,
+      "end": 269.86000335693905,
+      "text": "For a four hertz difference, they are a quarter second apart.",
+      "chapter": 2
+    },
+    {
+      "start": 270.5400036621148,
+      "end": 274.8399990844781,
+      "text": "With unequal amplitudes, the minimum amplitude is the absolute difference of",
+      "chapter": 2
+    },
+    {
+      "start": 274.8399990844781,
+      "end": 278.1599987793023,
+      "text": "the two amplitudes, so quiet moments need not be silence.",
+      "chapter": 2
+    },
+    {
+      "start": 279.07999694824764,
+      "end": 283.18000305176326,
+      "text": "This elementary beat model assumes stable nearby frequencies and comparable",
+      "chapter": 2
+    },
+    {
+      "start": 283.18000305176326,
+      "end": 283.69999969482967,
+      "text": "amplitudes.",
+      "chapter": 2
+    },
+    {
+      "start": 284.69999969482967,
+      "end": 289.1599987793023,
+      "text": "Our routine is simple: identify the measured quantity, preserve both initial",
+      "chapter": 2
+    },
+    {
+      "start": 289.1599987793023,
+      "end": 290.32800000000833,
+      "text": "possibilities, then use the physical change to decide.",
+      "chapter": 2
+    }
+  ]
+}

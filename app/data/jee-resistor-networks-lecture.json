@@ -1,0 +1,136 @@
+{
+  "title": "Resistor networks: nodes, current and voltage",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 12",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Resistors in series and parallel",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Read the nodes before the drawing",
+      "formula": "Ideal wire: equal potential along one node; series: one unbranched path; parallel: same two nodes",
+      "points": [
+        "An uninterrupted ideal wire belongs to one node, regardless of its shape.",
+        "Series elements share current only when their connecting junction has no other conducting branch.",
+        "Parallel elements connect between the same pair of nodes."
+      ],
+      "script": "Hey, welcome back. Let's make circuit diagrams feel a little less mysterious. A resistor network can look tangled while its actual connections are simple. Our first tool is the node: all points connected by uninterrupted ideal wire share one potential. Bending or stretching that wire on the page changes the drawing, not the circuit. Mark each node with a letter before simplifying anything. Two resistors are in parallel if their ends connect to the same two nodes. They must then have the same potential difference, even if they sit far apart in the drawing. Two resistors form a simple series path if their shared junction has no other conducting branch. The same steady current must pass through both, because charge is not accumulating there. Being next to each other is not enough. Imagine three resistors meeting at a junction. Current can split, so you cannot automatically add two of those resistances as a series pair. Our model assumes steady direct current, ideal connecting wires and ohmic resistors whose values stay constant. Those assumptions let us focus on the connections. For JEE, redraw a difficult-looking diagram using node labels. Once the connections are visible, decide which elements really share a current and which really share a voltage. Your pencil has now done half the job."
+    },
+    {
+      "title": "Series resistors and voltage division",
+      "formula": "R_eq = R1 + R2; I common; V1/V2 = R1/R2",
+      "points": [
+        "A simple series chain carries one current through every resistor.",
+        "Individual voltage drops add to the voltage across the chain.",
+        "An unloaded divider apportions voltage in proportion to resistance."
+      ],
+      "script": "Let's derive the series rule from what remains the same. In one unbranched path, every resistor carries current I. The first voltage drop is I times R one, and the second is I times R two. Adding the drops gives the total voltage as I times the sum of the resistances. So the equivalent resistance is R one plus R two. This is why series resistance increases: at a given total voltage, the single path carries less current. Put three ohms and six ohms in series across an ideal eighteen volt source. The equivalent resistance is nine ohms, so the current is two amperes. The drops are six volts and twelve volts. Pause and check: they add back to eighteen. The larger resistance receives the larger drop because the current is common. For two series resistors, voltage across the second equals the total voltage multiplied by R two divided by their sum. This is the voltage-divider formula. It assumes no extra conducting branch draws current from the middle junction. Attach a load there, and the circuit changes; the original divider formula is no longer enough. Notice also that charge is not used up by the first resistor. Current remains the same, while electrical energy per unit charge is transferred along the path. Always write the common current first, then calculate each drop."
+    },
+    {
+      "title": "Parallel resistors and current division",
+      "formula": "1/R_eq = 1/R1 + 1/R2; R_eq = R1 R2/(R1 + R2); I1/I2 = R2/R1",
+      "points": [
+        "Parallel branches have the same voltage across their endpoints.",
+        "Branch currents add; lower resistance carries greater current at common voltage.",
+        "For positive finite resistances, parallel equivalent resistance is smaller than either branch."
+      ],
+      "script": "Now give charge two paths between the same nodes. Each branch experiences the same voltage V. Its current is V divided by its resistance. The total current is the sum of those branch currents, so I total equals V times one over R one plus one over R two. Divide by V and we obtain the reciprocal rule for equivalent resistance. For two branches, this becomes the product of the resistances divided by their sum. Take four ohms and twelve ohms in parallel across twelve volts. The currents are three amperes and one ampere, giving four amperes total. Equivalent resistance is therefore twelve divided by four, or three ohms. Check the scale: three is smaller than four, the smaller branch resistance. An extra conducting path increases total current at fixed voltage. Current division follows the inverse resistance ratio. Here, the four ohm branch carries three times the current in the twelve ohm branch. Do not divide the current equally unless the branch resistances are equal. If total current is given instead of voltage, current in the first branch equals total current times R two divided by R one plus R two. The other resistance appears in the numerator. Derive that result from common voltage whenever memory feels uncertain. Remember the contrast from our series example: series shares current and divides voltage; parallel shares voltage and divides current."
+    },
+    {
+      "title": "A mixed circuit: simplify, then work backward",
+      "formula": "6 ohm || 3 ohm = 2 ohm; R_total = 4 + 2 = 6 ohm; I_total = 12/6 = 2 A",
+      "points": [
+        "Simplify only valid groups, keeping their original endpoints.",
+        "After finding total current, recover the voltage across each group.",
+        "Work backward to branch currents and verify current and power totals."
+      ],
+      "script": "Let's solve a full mixed circuit together. An ideal twelve volt source supplies a four ohm resistor in series with a parallel pair of six ohms and three ohms. Start with the parallel group. Six times three divided by six plus three gives two ohms. Add the four ohm series resistor and the total becomes six ohms. Total current is twelve divided by six, or two amperes. Now work backward. The four ohm resistor has a drop of eight volts. The parallel group has the remaining four volts, which is also two amperes times two ohms. Every branch of that group receives four volts. Current in the six ohm branch is two thirds of an ampere; current in the three ohm branch is four thirds. Add them and you recover two amperes. Now check energy transfer. Power supplied is twelve times two, or twenty four watts. The series resistor dissipates sixteen watts. The parallel branches dissipate eight thirds and sixteen thirds watts, totaling eight watts. Sixteen plus eight returns twenty four. Three independent checks now agree: voltage drops, branch current sum and power balance. For JEE, don't stop at equivalent resistance when the question asks about an individual resistor. Simplifying moves inward toward the total; recovering branch quantities moves outward toward the original circuit."
+    },
+    {
+      "title": "Switches, shorts and sensible checks",
+      "formula": "Open branch: I = 0; ideal wire bypass: V_R = 0; n equal resistors: series nR, parallel R/n",
+      "points": [
+        "An open branch removes that conducting path; its voltage need not be zero.",
+        "An ideal wire across a resistor makes its endpoints one node.",
+        "Redraw the circuit after switching, and inspect the source model before calculating."
+      ],
+      "script": "Our final skill is handling a changed connection. An open switch interrupts a conducting path. In the steady ideal model, current in that open branch is zero, but the voltage across the gap need not be zero. Suppose the twelve ohm branch in our four and twelve ohm parallel example opens. Only the four ohm branch remains across twelve volts. Total current falls from four amperes to three, while that surviving branch still carries three amperes. This conclusion relies on an ideal source maintaining twelve volts. A real cell with internal resistance needs additional analysis. Now consider a wire placed directly across a resistor. Its endpoints become the same node. Voltage across that resistor is zero, so its current is zero for a finite resistance. This is a bypass, often called a short across the resistor. Shorting an entire ideal voltage source instead creates an inconsistent zero-resistance ideal circuit; it is not a sensible finite-current example. Real shorts are limited by internal and wire resistance. Finish with quick scale checks: n equal resistors give n times R in series and R divided by n in parallel. Positive finite parallel resistance must be below the smallest branch. A diagram that cannot be reduced by valid series or parallel groups needs a more general method, such as Kirchhoff laws. Label nodes, redraw after switching, name the fixed quantity, and check your result against the physical circuit."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Two resistors are parallel when they:",
+      "options": [
+        "Touch at one endpoint",
+        "Share the same two nodes",
+        "Have equal resistance",
+        "Are drawn next to each other"
+      ],
+      "answer": 1,
+      "explanation": "Both endpoints must connect to the same two nodes, giving the same voltage."
+    },
+    {
+      "question": "3 ohm and 6 ohm are in an unloaded series chain across 18 V. The drop across 6 ohm is:",
+      "options": [
+        "6 V",
+        "9 V",
+        "12 V",
+        "18 V"
+      ],
+      "answer": 2,
+      "explanation": "I = 18/(3 + 6) = 2 A, so the drop is 2 x 6 = 12 V."
+    },
+    {
+      "question": "4 ohm and 12 ohm in parallel have equivalent resistance:",
+      "options": [
+        "3 ohm",
+        "8 ohm",
+        "16 ohm",
+        "48 ohm"
+      ],
+      "answer": 0,
+      "explanation": "R_eq = 4 x 12/(4 + 12) = 3 ohm."
+    },
+    {
+      "question": "A 4 ohm resistor is in series with 6 ohm parallel to 3 ohm across 12 V. Current in the 3 ohm branch is:",
+      "options": [
+        "2 A",
+        "2/3 A",
+        "3 A",
+        "4/3 A"
+      ],
+      "answer": 3,
+      "explanation": "The parallel group is 2 ohm; total current is 2 A, giving 4 V across the group. Its 3 ohm branch carries 4/3 A."
+    },
+    {
+      "question": "In that mixed circuit, total power supplied by the ideal source is:",
+      "options": [
+        "8 W",
+        "24 W",
+        "16 W",
+        "72 W"
+      ],
+      "answer": 1,
+      "explanation": "Total resistance is 6 ohm and source current is 2 A. P = 12 x 2 = 24 W."
+    },
+    {
+      "question": "An ideal wire directly bypasses a finite ohmic resistor. Its steady current is:",
+      "options": [
+        "Infinite",
+        "The source current",
+        "Zero",
+        "V/R with the original voltage"
+      ],
+      "answer": 2,
+      "explanation": "Both resistor endpoints are now one node: V_R = 0 and I_R = 0."
+    }
+  ]
+}

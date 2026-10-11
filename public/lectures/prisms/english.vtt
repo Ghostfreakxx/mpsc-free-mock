@@ -1,0 +1,376 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.240
+Hey, welcome back.
+
+00:00:01.840 --> 00:00:06.260
+A parallel slab shifts a ray sideways but returns it to a parallel direction.
+
+00:00:06.900 --> 00:00:11.600
+A prism has faces that are not parallel, so the ray generally emerges in a
+
+00:00:11.600 --> 00:00:12.240
+different direction.
+
+00:00:12.880 --> 00:00:15.480
+We describe that change by its angle of deviation.
+
+00:00:16.440 --> 00:00:20.140
+Work in the prism's principal section and draw a normal at each face.
+
+00:00:20.740 --> 00:00:22.160
+The entry angle is i.
+
+00:00:22.720 --> 00:00:27.240
+The internal angles are r one and r two, each measured from its local normal.
+
+00:00:27.920 --> 00:00:29.340
+The emergence angle is e.
+
+00:00:30.340 --> 00:00:33.900
+Geometry gives r one plus r two equal to the prism angle A.
+
+00:00:34.540 --> 00:00:39.600
+The overall deviation equals i plus e minus A for the ordinary transmitted
+
+00:00:39.600 --> 00:00:40.020
+path.
+
+00:00:40.960 --> 00:00:44.920
+Suppose A is sixty degrees, i is forty five, and e is fifty.
+
+00:00:45.140 --> 00:00:47.340
+The deviation is thirty five degrees.
+
+00:00:48.020 --> 00:00:52.060
+The incidence and emergence angles are not measured from the prism faces, and
+
+00:00:52.060 --> 00:00:53.720
+they do not share one common normal.
+
+00:00:54.380 --> 00:00:56.300
+That is why a quick sketch is so valuable.
+
+00:00:57.000 --> 00:01:00.280
+The relation assumes that the ray enters and leaves through the two intended
+
+00:01:00.280 --> 00:01:00.660
+faces.
+
+00:01:01.340 --> 00:01:05.080
+At some internal angles, total internal reflection can prevent that emerging
+
+00:01:05.080 --> 00:01:05.440
+path.
+
+00:01:05.880 --> 00:01:09.560
+Then blindly calculating an emergence angle gives a nonphysical answer.
+
+00:01:10.180 --> 00:01:14.200
+Our prism drawings are geometry guides, not scale accurate trajectories for
+
+00:01:14.200 --> 00:01:15.160
+every choice of index.
+
+00:01:15.680 --> 00:01:19.760
+Start with the path, label the two normals, and only then use the angle sum.
+
+00:01:19.968 --> 00:01:23.548
+Rotate an ordinary prism while keeping the incoming ray fixed.
+
+00:01:24.108 --> 00:01:28.088
+The deviation first decreases, reaches a minimum, then increases.
+
+00:01:28.728 --> 00:01:33.068
+At that minimum for the usual symmetric setup, the internal ray takes a
+
+00:01:33.068 --> 00:01:38.068
+symmetric path: i equals e, and r one equals r two.
+
+00:01:38.068 --> 00:01:41.808
+Since the internal angles add to A, each is A over two.
+
+00:01:42.848 --> 00:01:44.928
+Combine this with Snell's law at the entry face.
+
+00:01:44.928 --> 00:01:49.608
+The prism's index relative to its surroundings equals sine of half of A plus
+
+00:01:49.608 --> 00:01:52.888
+minimum deviation, divided by sine of half of A.
+
+00:01:53.388 --> 00:01:57.228
+Let's use a sixty degree prism with minimum deviation thirty degrees.
+
+00:01:58.008 --> 00:02:02.228
+Half of A plus that deviation is forty five degrees; half of A alone is thirty
+
+00:02:02.228 --> 00:02:02.588
+degrees.
+
+00:02:02.848 --> 00:02:07.448
+The ratio is sine forty five divided by sine thirty, or square root of two.
+
+00:02:07.908 --> 00:02:10.168
+This is about one point four one four.
+
+00:02:10.168 --> 00:02:14.568
+If the surrounding medium is air approximated as index one, it is also the
+
+00:02:14.568 --> 00:02:16.128
+prism's approximate absolute index.
+
+00:02:16.768 --> 00:02:20.948
+In another surrounding medium, multiply by that medium's index to obtain the
+
+00:02:20.948 --> 00:02:21.688
+absolute prism index.
+
+00:02:22.468 --> 00:02:25.842
+Do not use the minimum deviation formula when the given path is not at
+
+00:02:25.842 --> 00:02:26.228
+minimum.
+
+00:02:26.728 --> 00:02:29.788
+And do not assume i equals e for every orientation.
+
+00:02:30.448 --> 00:02:33.908
+The equality is the special symmetry condition we earned by choosing the
+
+00:02:33.908 --> 00:02:34.920
+minimum path, not a universal prism rule.
+
+00:02:34.920 --> 00:02:36.600
+Now reverse the problem.
+
+00:02:37.260 --> 00:02:40.540
+We know a prism's refractive index and want its minimum deviation.
+
+00:02:41.240 --> 00:02:45.760
+For a sixty degree glass prism in air with index one point five, the internal
+
+00:02:45.760 --> 00:02:47.540
+angle at symmetry is thirty degrees.
+
+00:02:48.260 --> 00:02:52.920
+Snell's law gives sine i equal to one point five times sine thirty, or zero
+
+00:02:52.920 --> 00:02:54.320
+point seven five.
+
+00:02:54.320 --> 00:02:57.260
+The incidence angle is about forty eight point six degrees.
+
+00:02:58.000 --> 00:03:02.393
+Minimum deviation is twice that angle minus sixty, approximately thirty seven
+
+00:03:02.393 --> 00:03:03.420
+point two degrees.
+
+00:03:04.180 --> 00:03:05.560
+Let's pause for an error check.
+
+00:03:06.120 --> 00:03:07.560
+Is the index ratio below one?
+
+00:03:08.000 --> 00:03:11.820
+No, so the ray bends toward the normal on entering, consistent with an
+
+00:03:11.820 --> 00:03:14.380
+incidence angle larger than the thirty degree internal angle.
+
+00:03:14.640 --> 00:03:16.680
+And is the sine argument physically allowed?
+
+00:03:17.200 --> 00:03:19.100
+Zero point seven five is below one.
+
+00:03:19.840 --> 00:03:19.980
+Good.
+
+00:03:20.520 --> 00:03:24.975
+In general, delta minimum equals twice the inverse sine of relative index
+
+00:03:24.975 --> 00:03:25.280
+times
+
+00:03:25.280 --> 00:03:27.700
+sine of half the prism angle, minus A.
+
+00:03:27.900 --> 00:03:32.188
+If that inverse sine argument exceeds one, the usual symmetric transmitted
+
+00:03:32.188 --> 00:03:32.420
+path
+
+00:03:32.420 --> 00:03:33.180
+cannot exist.
+
+00:03:33.960 --> 00:03:38.060
+A calculator error is telling us something physical, not asking for a creative
+
+00:03:38.060 --> 00:03:38.800
+replacement number.
+
+00:03:39.520 --> 00:03:41.140
+Keep degree and radian modes consistent.
+
+00:03:41.760 --> 00:03:44.660
+These angle relations do not require a small angle approximation.
+
+00:03:45.420 --> 00:03:49.300
+The thin prism shortcut coming next does, and we should not silently swap the
+
+00:03:49.300 --> 00:03:49.780
+two formulas.
+
+00:03:50.736 --> 00:03:56.176
+For a thin prism, with a small apex angle and sufficiently small incidence and
+
+00:03:56.176 --> 00:04:00.696
+refraction angles, Snell's law simplifies because sine theta is approximately
+
+00:04:00.696 --> 00:04:01.756
+theta in radians.
+
+00:04:02.476 --> 00:04:07.056
+At entry, i is approximately relative index times r one.
+
+00:04:07.056 --> 00:04:11.636
+At exit, e is approximately relative index times r two.
+
+00:04:11.636 --> 00:04:15.516
+Add the two equations and use r one plus r two equal to A.
+
+00:04:16.236 --> 00:04:21.396
+Subtract A, and we get deviation approximately relative index minus one, times
+
+00:04:21.396 --> 00:04:21.616
+A.
+
+00:04:22.576 --> 00:04:26.656
+So a small four degree prism with index one point five in air gives an
+
+00:04:26.656 --> 00:04:28.476
+approximate deviation of two degrees.
+
+00:04:29.056 --> 00:04:33.296
+We derived the relation using radians, but the proportional result works with
+
+00:04:33.296 --> 00:04:36.796
+degrees too when A and deviation use the same angular unit.
+
+00:04:37.316 --> 00:04:40.716
+This shortcut is not for the sixty degree prism from our earlier example.
+
+00:04:41.616 --> 00:04:44.225
+Applying it there would give thirty degrees instead of the more accurate
+
+00:04:44.225 --> 00:04:44.443
+thirty
+
+00:04:44.443 --> 00:04:45.816
+seven point two at minimum.
+
+00:04:46.356 --> 00:04:50.696
+The discrepancy is a warning about the approximation, not a contradiction in
+
+00:04:50.696 --> 00:04:51.016
+optics.
+
+00:04:51.796 --> 00:04:56.716
+If a JEE question explicitly says a thin prism and gives small angles, this
+
+00:04:56.716 --> 00:04:57.896
+relation can save time.
+
+00:04:58.636 --> 00:05:01.816
+Otherwise use Snell's law and the actual prism geometry.
+
+00:05:02.496 --> 00:05:06.596
+The reason a larger index gives more deviation in this ordinary setup is that
+
+00:05:06.596 --> 00:05:09.656
+each interface bends the ray more relative to its normal.
+
+00:05:09.936 --> 00:05:13.868
+A prism can spread white light into colors because its refractive index
+
+00:05:13.868 --> 00:05:14.256
+depends
+
+00:05:14.256 --> 00:05:14.896
+on frequency.
+
+00:05:15.536 --> 00:05:20.016
+In the ordinary visible normal dispersion region of glass, violet has a larger
+
+00:05:20.016 --> 00:05:20.816
+index than red.
+
+00:05:21.816 --> 00:05:25.196
+Violet is therefore deviated more in the usual prism arrangement.
+
+00:05:25.876 --> 00:05:28.436
+The prism is not changing red light into violet light.
+
+00:05:29.136 --> 00:05:33.296
+At stationary interfaces the frequency of each component stays the same.
+
+00:05:33.976 --> 00:05:36.536
+It redirects the components by different amounts.
+
+00:05:36.536 --> 00:05:42.136
+For a thin four degree prism, suppose red has index one point five zero and
+
+00:05:42.136 --> 00:05:44.996
+violet has index one point five two.
+
+00:05:44.996 --> 00:05:47.016
+Red deviation is approximately two degrees.
+
+00:05:47.916 --> 00:05:50.056
+Violet deviation is two point zero eight degrees.
+
+00:05:50.856 --> 00:05:53.796
+Their angular separation is zero point zero eight degrees.
+
+00:05:54.516 --> 00:05:57.196
+Small, but quite measurable with a suitable arrangement.
+
+00:05:58.356 --> 00:06:02.536
+That example also shows why we distinguish deviation of a single color from
+
+00:06:02.536 --> 00:06:04.056
+dispersion between two colors.
+
+00:06:04.476 --> 00:06:09.056
+If both indices increased equally, both deviations could change without
+
+00:06:09.056 --> 00:06:11.016
+changing their separation by the same amount.
+
+00:06:11.796 --> 00:06:16.256
+The violet more than red ordering describes ordinary normal dispersion, not
+
+00:06:16.256 --> 00:06:17.896
+every material at every frequency.
+
+00:06:18.656 --> 00:06:20.876
+Near absorption bands, behavior can differ.
+
+00:06:21.696 --> 00:06:25.236
+Finally, remember that total internal reflection and dispersion are different
+
+00:06:25.236 --> 00:06:29.516
+effects: one concerns whether a transmitted ray exists, while the other
+
+00:06:29.516 --> 00:06:32.116
+concerns how index varies across spectral components.
+
+00:06:32.656 --> 00:06:37.576
+Our JEE routine is to identify the regime, label angles, and apply the
+
+00:06:37.576 --> 00:06:39.656
+appropriate exact or approximate relation.

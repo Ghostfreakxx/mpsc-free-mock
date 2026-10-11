@@ -1,0 +1,136 @@
+{
+  "title": "Magnetic materials and temperature effects",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 13",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "NCERT Physics Part I: Magnetism and matter, sections 5.4 and 5.5",
+      "url": "https://www.ncert.nic.in/textbook/pdf/leph105.pdf"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Magnetisation: the material joins the field",
+      "formula": "M = net magnetic moment / volume; B = mu0(H + M); linear isotropic response: M = chi H, mu_r = 1 + chi",
+      "points": [
+        "M and H have units A/m; B has units tesla.",
+        "Susceptibility chi is dimensionless and can be negative.",
+        "Use internal H; specimen shape can affect its relation to an applied field."
+      ],
+      "script": "Hey, welcome back. A coil creates a magnetic field, but place a material inside it and the material can respond too. Today's question is not just how strong the source is. It is how matter changes the result. Magnetisation, capital M, means net magnetic dipole moment per unit volume. If microscopic moments cancel, the net magnetisation can be zero even though individual moments exist. Both magnetisation and magnetic field intensity, capital H, are measured in amperes per meter. The magnetic field B is measured in tesla. In SI units, B equals mu zero times the sum of H and M. For a linear isotropic material, M equals susceptibility chi times H. Isotropic means the response has no preferred material direction. Susceptibility has no units. Combine those two equations and B equals mu zero times one plus chi times H. Relative permeability is therefore one plus chi in this model. Try this: chi is zero point zero zero two, and internal H is five hundred amperes per meter. What is M? Take a moment. It is one ampere per meter, aligned with H. Relative permeability is one point zero zero two. Notice we used internal H. A specimen's shape can make internal H different from the field applied without the specimen. For our numerical examples, internal H is given. Keep that assumption visible; it saves a sneaky substitution error."
+    },
+    {
+      "title": "Diamagnetism: a small opposing response",
+      "formula": "Diamagnetic: chi < 0, mu_r < 1; weak response toward weaker field in a field gradient",
+      "points": [
+        "The induced magnetisation opposes H.",
+        "Typical examples include bismuth, copper and water.",
+        "Ordinary diamagnetic susceptibility is approximately temperature independent."
+      ],
+      "script": "Imagine pointing H to the right. In a diamagnetic material, the induced magnetisation points left. That opposing response is encoded by negative susceptibility. It does not mean every magnetic field inside the sample reverses direction. The response is usually tiny, so B normally remains in the direction of H, just slightly reduced compared with mu zero H. On the board, the orange arrow shows the response, not the total field. Microscopically, the applied field changes the motion of electrons and induces an opposing magnetic contribution. This contribution exists widely, but a stronger paramagnetic or ferromagnetic response can dominate the observed behaviour. Familiar diamagnetic examples include bismuth, copper and water. In a nonuniform external field, an ordinary weak diamagnetic sample tends toward regions of weaker field. In a uniform field, there is no such net translation from a field gradient. Now calculate: chi is minus four times ten to the minus five, and internal H is two thousand amperes per meter to the right. M is minus zero point zero eight amperes per meter. The minus sign tells us left. Relative permeability is zero point nine nine nine nine six, a little below one, not negative. For ordinary diamagnetic materials, susceptibility is approximately independent of temperature over the usual elementary-model range. JEE comparisons often test the sign, direction and temperature trend together. Learn that connected picture, rather than three disconnected labels."
+    },
+    {
+      "title": "Paramagnetism: alignment competes with thermal motion",
+      "formula": "Paramagnetic: small chi > 0; Curie model: chi = C/T, using kelvin, in its applicable regime",
+      "points": [
+        "Permanent microscopic moments give a weak net alignment with H.",
+        "Thermal agitation competes with alignment.",
+        "For a Curie-law material, doubling absolute temperature halves chi at fixed model parameters."
+      ],
+      "script": "Now suppose atoms have permanent magnetic moments, but their directions are disordered when no field is applied. In a paramagnet, the field biases these moments toward alignment. Thermal agitation keeps the alignment incomplete. The result is a small positive susceptibility and magnetisation along H. Aluminium and oxygen are useful elementary examples. In a field gradient, a weak paramagnetic sample tends toward stronger field. Again, that statement needs a nonuniform field; attraction is not a substitute for checking geometry. The ordinary response does not leave a stable permanent magnet when the field is removed. Temperature gives us a lovely competition: more thermal agitation makes alignment harder. For a material in the Curie-law regime, susceptibility equals Curie constant C divided by absolute temperature T. Use kelvin, not degrees Celsius. This is a model for appropriate materials and conditions, not a universal law for every paramagnet. Let's practise. Susceptibility is zero point zero zero three at three hundred kelvin. At six hundred kelvin, what should it be under this model? Pause before dividing. It becomes zero point zero zero one five. At fixed internal H of eight hundred amperes per meter, magnetisation drops from two point four to one point two amperes per meter. The field did not become weaker; thermal disorder changed the material's response. If temperature is given in Celsius, convert first. Ratios of Celsius temperatures do not preserve the Curie relation."
+    },
+    {
+      "title": "Ferromagnetism: domains and magnetic memory",
+      "formula": "Ferromagnetism: cooperative ordering, domains, nonlinear and history-dependent M(H); no universal constant chi",
+      "points": [
+        "Within a domain, microscopic moments are cooperatively aligned.",
+        "An unmagnetised specimen can have differently oriented domains.",
+        "Soft magnetic materials suit changing-field cores; hard materials resist demagnetisation."
+      ],
+      "script": "Iron can respond much more strongly than aluminium. The difference is not simply that we turned up the same weak alignment process. In a ferromagnet, interactions favour cooperative ordering of neighbouring microscopic moments. Below the appropriate transition temperature, regions called domains can have spontaneous magnetisation. But a whole specimen need not start with a large net moment. Different domains can point in different directions and largely cancel. Look at the left-hand sketch. The arrows represent different domains, not single electrons. Apply a field and favourable domains can grow; magnetisation can also rotate toward the field. The right-hand sketch shows a stronger net alignment. The response is generally nonlinear and depends on magnetic history. So do not assign one constant chi across the entire ferromagnetic curve. At strong enough fields, magnetisation approaches saturation; it cannot increase without limit as a simple proportionality might suggest. Some magnetisation can remain after the external field is removed. The retained response is associated with magnetic memory. A reverse field can be required to reduce the magnetisation to zero: that is the idea behind coercivity. Soft magnetic materials are relatively easy to magnetise and demagnetise, useful in changing-field cores. Hard magnetic materials resist demagnetisation and suit permanent magnets. Soft and hard here describe magnetic response, not how easily you scratch the surface. Iron, cobalt and nickel are standard ferromagnetic examples, under suitable temperature conditions."
+    },
+    {
+      "title": "Temperature, Curie transition and a field calculation",
+      "formula": "Above Curie temperature: ferromagnetic order is lost, material becomes paramagnetic; linear example B = mu0(1 + chi)H",
+      "points": [
+        "Above the Curie temperature, loss of ferromagnetic order does not mean zero magnetic response.",
+        "Do not extrapolate chi = C/T through a ferromagnetic transition.",
+        "For chi = 0.01 and H = 1000 A/m, M = 10 A/m and B is approximately 1.269 mT."
+      ],
+      "script": "Heating a ferromagnet increases thermal disorder. At its Curie temperature, spontaneous ferromagnetic ordering is lost. Above that transition, the material becomes paramagnetic. It does not become incapable of responding to a magnetic field. That distinction is a favourite conceptual trap. Cooling below the transition can restore ferromagnetic ordering, but does not by itself guarantee the same macroscopic permanent magnetisation as before. Domain arrangement and magnetic history still matter. Also, do not extend the elementary chi equals C over T rule through this transition. Near a ferromagnetic transition, the temperature dependence is more subtle. Let's finish with a separate linear-material problem. Internal H is one thousand amperes per meter, susceptibility is zero point zero one, and the material is isotropic and linear in the stated range. First find magnetisation. Ten amperes per meter, along H. Next, B equals mu zero times one thousand and ten. Taking mu zero approximately four pi times ten to the minus seven in SI units gives about one point two six nine millitesla. Without that material response, mu zero H would be about one point two five seven millitesla. The increase is only one percent. Positive susceptibility alone does not prove ferromagnetism. Classify by the response regime, its magnitude, microscopic ordering and history. Your final checklist is sign, direction, field gradient, absolute temperature and model validity. Those five checks turn a memorised table into usable physics."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A linear isotropic sample has chi = 0.002 and internal H = 500 A/m. Its magnetisation is:",
+      "options": [
+        "1 A/m along H",
+        "1 A/m opposite H",
+        "250000 A/m along H",
+        "0.002 tesla"
+      ],
+      "answer": 0,
+      "explanation": "M = chi H = 0.002 x 500 = 1 A/m; positive chi means alignment with H."
+    },
+    {
+      "question": "For chi = -4 x 10^-5, relative permeability in the linear model is:",
+      "options": [
+        "-0.00004",
+        "1.00004",
+        "0.99996",
+        "0"
+      ],
+      "answer": 2,
+      "explanation": "mu_r = 1 + chi = 0.99996. Negative susceptibility does not imply negative permeability."
+    },
+    {
+      "question": "A Curie-law material has chi = 0.003 at 300 K. At 600 K its chi is:",
+      "options": [
+        "0.006",
+        "0.0015",
+        "0.003",
+        "0.00075"
+      ],
+      "answer": 1,
+      "explanation": "chi T is constant in the stated Curie regime; chi = 0.003 x 300/600 = 0.0015."
+    },
+    {
+      "question": "Why can an unmagnetised ferromagnetic specimen have nearly zero net magnetisation?",
+      "options": [
+        "It has no microscopic magnetic moments",
+        "It is necessarily above its Curie temperature",
+        "Different domain magnetisations can largely cancel",
+        "Every domain must have zero magnetisation"
+      ],
+      "answer": 2,
+      "explanation": "Domains may individually be magnetised while their differently directed contributions cancel macroscopically."
+    },
+    {
+      "question": "Above its Curie temperature, an ordinary ferromagnetic material becomes:",
+      "options": [
+        "Paramagnetic, not magnetically unresponsive",
+        "A stronger permanent magnet",
+        "Necessarily diamagnetic",
+        "An ideal magnetic shield"
+      ],
+      "answer": 0,
+      "explanation": "Thermal disorder destroys spontaneous ferromagnetic order; a paramagnetic response to applied field remains."
+    },
+    {
+      "question": "For a linear material with chi = 0.01 and internal H = 1000 A/m, B is approximately:",
+      "options": [
+        "12.69 mT",
+        "1.257 T",
+        "0.01257 mT",
+        "1.269 mT"
+      ],
+      "answer": 3,
+      "explanation": "B = mu0(1 + chi)H = 4pi x 10^-7 x 1.01 x 1000 T, approximately 1.269 mT."
+    }
+  ]
+}

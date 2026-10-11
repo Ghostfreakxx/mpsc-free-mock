@@ -1,0 +1,787 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.740
+Hey, welcome back.
+
+00:00:02.300 --> 00:00:04.840
+You already know how to describe motion along a straight line.
+
+00:00:05.700 --> 00:00:09.500
+Today we let motion turn corners, change observers, and leave the ground.
+
+00:00:10.160 --> 00:00:14.020
+Our tools are still position, velocity, acceleration, and time.
+
+00:00:14.700 --> 00:00:16.380
+We just need to keep direction in the picture.
+
+00:00:17.160 --> 00:00:19.980
+Choose east as positive x and north as positive y.
+
+00:00:20.580 --> 00:00:25.060
+A velocity with components three meters per second east and four north has
+
+00:00:25.060 --> 00:00:26.840
+speed five, not seven.
+
+00:00:26.840 --> 00:00:30.340
+The components are perpendicular, so their squared values add.
+
+00:00:31.120 --> 00:00:33.420
+The direction is about fifty three degrees north of east.
+
+00:00:34.660 --> 00:00:37.740
+Components carry signs; the speed is the nonnegative magnitude.
+
+00:00:38.580 --> 00:00:40.980
+Now imagine watching a faster bus from a slower bus.
+
+00:00:41.700 --> 00:00:45.060
+The ground measures their velocities as eighteen and twelve meters per second
+
+00:00:45.060 --> 00:00:45.400
+east.
+
+00:00:46.520 --> 00:00:48.020
+What speed does the slower bus see?
+
+00:00:48.700 --> 00:00:49.320
+Take a moment.
+
+00:00:50.020 --> 00:00:51.380
+Six meters per second east.
+
+00:00:52.620 --> 00:00:56.100
+Relative position means the position of A minus the position of B.
+
+00:00:56.980 --> 00:01:01.500
+Differentiating that difference gives relative velocity: velocity of A minus
+
+00:01:01.500 --> 00:01:02.260
+velocity of B.
+
+00:01:02.880 --> 00:01:06.180
+This subtraction works component by component, not just along a road.
+
+00:01:06.880 --> 00:01:10.140
+If the faster vehicle starts one hundred twenty meters behind the slower one
+
+00:01:10.520 --> 00:01:14.700
+and both velocities stay constant, that gap closes at six meters per second.
+
+00:01:15.460 --> 00:01:18.920
+Catch up time is one hundred twenty divided by six, or twenty seconds.
+
+00:01:19.500 --> 00:01:23.920
+If B instead moves west at twelve, its signed velocity is negative twelve.
+
+00:01:23.920 --> 00:01:26.700
+Subtracting it gives thirty meters per second east.
+
+00:01:27.420 --> 00:01:30.900
+The familiar add the speeds shortcut is really signed vector subtraction.
+
+00:01:31.980 --> 00:01:35.548
+For two trains travelling east at eighteen and twelve, with lengths one
+
+00:01:35.548 --> 00:01:35.900
+hundred
+
+00:01:35.900 --> 00:01:40.160
+and one hundred forty meters, complete overtaking from first overlap to last
+
+00:01:40.160 --> 00:01:43.120
+overlap requires two hundred forty meters of relative travel.
+
+00:01:43.880 --> 00:01:48.080
+That takes forty seconds, assuming parallel tracks and constant velocities.
+
+00:01:48.960 --> 00:01:52.820
+A point catching a point and a whole train passing another train are different
+
+00:01:52.820 --> 00:01:53.740
+geometry questions.
+
+00:01:54.580 --> 00:01:58.800
+In a JEE style problem, draw the initial separation before choosing what
+
+00:01:58.800 --> 00:02:00.480
+distance to divide by relative speed.
+
+00:02:00.768 --> 00:02:03.828
+Let's take the same observer idea to a river.
+
+00:02:04.628 --> 00:02:05.728
+Here is our original example.
+
+00:02:06.488 --> 00:02:09.908
+The banks are one hundred twenty meters apart, measured northward.
+
+00:02:10.988 --> 00:02:12.988
+Water flows east at three meters per second.
+
+00:02:13.748 --> 00:02:16.708
+A boat can maintain five meters per second relative to the water.
+
+00:02:17.828 --> 00:02:19.968
+Ignore changes in current and the time taken to turn.
+
+00:02:20.728 --> 00:02:25.148
+The boat's ground velocity is its velocity relative to water plus the water's
+
+00:02:25.148 --> 00:02:26.428
+velocity relative to ground.
+
+00:02:27.288 --> 00:02:31.568
+Picture walking across a moving walkway: your own motion and the walkway's
+
+00:02:31.568 --> 00:02:32.848
+motion both contribute.
+
+00:02:34.168 --> 00:02:35.228
+First, aim the boat due north.
+
+00:02:36.008 --> 00:02:40.159
+The ground velocity then has a north component of five and an east component
+
+00:02:40.159 --> 00:02:40.268
+of
+
+00:02:40.268 --> 00:02:40.568
+three.
+
+00:02:41.808 --> 00:02:45.048
+Crossing time depends on the north component because that is the direction of
+
+00:02:45.048 --> 00:02:45.728
+the river's width.
+
+00:02:45.728 --> 00:02:49.948
+One hundred twenty divided by five gives twenty four seconds.
+
+00:02:50.728 --> 00:02:54.148
+During that time, the current carries the boat seventy two meters east.
+
+00:02:55.208 --> 00:02:58.628
+This is the minimum crossing time for the given boat speed and a current
+
+00:02:58.628 --> 00:02:59.608
+parallel to the banks.
+
+00:03:00.608 --> 00:03:00.888
+Why?
+
+00:03:01.068 --> 00:03:05.008
+The largest possible north component of a five meter per second velocity is
+
+00:03:05.008 --> 00:03:05.388
+five.
+
+00:03:05.908 --> 00:03:08.608
+Any upstream tilt makes that component smaller.
+
+00:03:09.768 --> 00:03:10.588
+Now change the goal.
+
+00:03:11.148 --> 00:03:13.868
+We want to reach the point directly opposite our starting point.
+
+00:03:13.868 --> 00:03:15.648
+Should we still aim north?
+
+00:03:16.348 --> 00:03:17.668
+Think about the current for a moment.
+
+00:03:18.708 --> 00:03:18.828
+No.
+
+00:03:19.328 --> 00:03:22.559
+Aim upstream so the boat's westward component relative to water is three
+
+00:03:22.559 --> 00:03:22.828
+meters
+
+00:03:22.828 --> 00:03:23.348
+per second.
+
+00:03:24.108 --> 00:03:25.908
+It cancels the current's eastward three.
+
+00:03:26.328 --> 00:03:31.008
+The boat's own speed is still five, so its north component is the square root
+
+00:03:31.008 --> 00:03:34.028
+of twenty five minus nine: four meters per second.
+
+00:03:34.828 --> 00:03:36.548
+The crossing now takes thirty seconds.
+
+00:03:37.308 --> 00:03:40.874
+The upstream heading makes about thirty seven degrees with north, since sine
+
+00:03:40.874 --> 00:03:40.968
+of
+
+00:03:40.968 --> 00:03:42.768
+that angle is three divided by five.
+
+00:03:43.608 --> 00:03:47.068
+Minimum time and zero drift are different instructions, not competing answers
+
+00:03:47.068 --> 00:03:47.948
+to the same question.
+
+00:03:48.608 --> 00:03:52.384
+In this ideal model, directly opposite landing requires boat speed greater
+
+00:03:52.384 --> 00:03:52.588
+than
+
+00:03:52.588 --> 00:03:53.088
+current speed.
+
+00:03:53.888 --> 00:03:57.768
+Equal speeds leave no north component when the current is canceled.
+
+00:03:57.768 --> 00:03:59.816
+Read the requested destination before calculating, and always label the frame
+
+00:03:59.816 --> 00:03:59.928
+of each velocity.
+
+00:03:59.928 --> 00:04:04.048
+A ball follows a curved path, but our equations do not have to become
+
+00:04:04.048 --> 00:04:04.628
+mysterious.
+
+00:04:05.668 --> 00:04:08.208
+Split its motion into horizontal and vertical components.
+
+00:04:09.288 --> 00:04:13.888
+We assume a uniform downward gravitational field and neglect air resistance.
+
+00:04:15.228 --> 00:04:17.888
+After launch, gravity is the only acceleration.
+
+00:04:18.888 --> 00:04:23.348
+Choose the launch point as origin, positive x horizontally, and positive y
+
+00:04:23.348 --> 00:04:23.688
+upward.
+
+00:04:24.408 --> 00:04:28.788
+For speed u at angle theta above the horizontal, the initial horizontal
+
+00:04:28.788 --> 00:04:31.148
+component is u times cosine theta.
+
+00:04:32.248 --> 00:04:34.628
+The vertical component is u times sine theta.
+
+00:04:35.648 --> 00:04:39.168
+Horizontal acceleration is zero, so horizontal velocity stays constant.
+
+00:04:40.448 --> 00:04:43.868
+Vertical acceleration is negative g, so vertical velocity changes.
+
+00:04:44.808 --> 00:04:46.688
+Both directions share the same elapsed time.
+
+00:04:46.748 --> 00:04:48.068
+That is what connects them.
+
+00:04:48.928 --> 00:04:52.503
+Horizontal displacement is the initial horizontal component multiplied by
+
+00:04:52.503 --> 00:04:52.748
+time.
+
+00:04:53.348 --> 00:04:57.248
+Vertical displacement is the initial vertical component multiplied by time,
+
+00:04:57.708 --> 00:04:59.608
+minus one half g times time squared.
+
+00:05:00.528 --> 00:05:04.328
+Let's launch an ideal ball at twenty meters per second, thirty degrees above
+
+00:05:04.328 --> 00:05:04.748
+horizontal.
+
+00:05:05.648 --> 00:05:08.688
+Use g equal to ten meters per second squared for this example.
+
+00:05:09.488 --> 00:05:13.288
+Its horizontal component is ten square root of three, and its vertical
+
+00:05:13.288 --> 00:05:14.348
+component is ten.
+
+00:05:15.128 --> 00:05:17.648
+At the top, vertical velocity becomes zero.
+
+00:05:18.468 --> 00:05:22.288
+Ten minus ten times t equals zero, giving one second to reach the top.
+
+00:05:22.928 --> 00:05:23.648
+Has the ball stopped?
+
+00:05:24.128 --> 00:05:24.668
+Take a moment.
+
+00:05:25.408 --> 00:05:26.948
+Only its vertical component has stopped.
+
+00:05:27.528 --> 00:05:30.708
+Its horizontal velocity is still ten square root of three.
+
+00:05:31.428 --> 00:05:32.908
+Acceleration is still ten downward.
+
+00:05:33.608 --> 00:05:38.208
+The maximum height above launch is ten squared divided by twice ten, or five
+
+00:05:38.208 --> 00:05:38.468
+meters.
+
+00:05:39.068 --> 00:05:43.368
+If the ball lands at its launch height, the nonzero root of zero equals ten t
+
+00:05:43.368 --> 00:05:45.608
+minus five t squared is two seconds.
+
+00:05:46.568 --> 00:05:50.308
+Multiply that time by the horizontal component to get a range of twenty square
+
+00:05:50.308 --> 00:05:52.768
+root of three meters, about thirty four point six.
+
+00:05:53.668 --> 00:05:56.328
+Eliminating time gives a downward opening parabolic trajectory.
+
+00:05:57.148 --> 00:06:00.711
+The curve comes from horizontal motion proportional to time and vertical
+
+00:06:00.711 --> 00:06:01.008
+motion
+
+00:06:01.008 --> 00:06:02.068
+containing time squared.
+
+00:06:02.728 --> 00:06:07.651
+For same height landing, time of flight is twice u sine theta divided by g,
+
+00:06:07.651 --> 00:06:07.848
+and
+
+00:06:07.848 --> 00:06:10.728
+range is u squared sine twice theta divided by g.
+
+00:06:11.468 --> 00:06:15.028
+Those shortcuts require the stated ideal model and equal launch and landing
+
+00:06:15.028 --> 00:06:15.268
+heights.
+
+00:06:15.848 --> 00:06:17.688
+They are not universal projectile formulas.
+
+00:06:18.048 --> 00:06:20.568
+Now the landing point is below the launch point.
+
+00:06:21.328 --> 00:06:24.914
+This is where memorized same height formulas can quietly give the wrong
+
+00:06:24.914 --> 00:06:25.268
+answer.
+
+00:06:26.508 --> 00:06:30.618
+Imagine an ideal horizontal launch at fifteen meters per second from a
+
+00:06:30.618 --> 00:06:31.088
+platform
+
+00:06:31.088 --> 00:06:33.228
+twenty meters above the landing surface.
+
+00:06:34.288 --> 00:06:36.768
+Use g equal to ten and ignore air resistance.
+
+00:06:37.848 --> 00:06:40.348
+Put the origin at launch and keep upward positive.
+
+00:06:41.168 --> 00:06:42.768
+Initial vertical velocity is zero.
+
+00:06:43.528 --> 00:06:47.968
+At landing, y is negative twenty, not positive twenty.
+
+00:06:47.968 --> 00:06:52.168
+Our vertical equation becomes negative twenty equals negative five t squared.
+
+00:06:53.088 --> 00:06:57.688
+Time is two seconds; discard the negative root because we are asking about the
+
+00:06:57.688 --> 00:06:58.428
+event after launch.
+
+00:06:59.688 --> 00:07:02.768
+Horizontal displacement is fifteen times two, or thirty meters.
+
+00:07:03.788 --> 00:07:07.768
+Notice why increasing horizontal launch speed would increase range without
+
+00:07:07.768 --> 00:07:09.648
+changing falling time in this ideal model.
+
+00:07:10.488 --> 00:07:14.088
+The vertical drop and vertical initial velocity have not changed.
+
+00:07:15.008 --> 00:07:19.208
+At impact, horizontal velocity is still positive fifteen.
+
+00:07:19.208 --> 00:07:21.728
+Vertical velocity is negative twenty.
+
+00:07:21.728 --> 00:07:25.848
+The speed is the square root of fifteen squared plus twenty squared, giving
+
+00:07:25.848 --> 00:07:27.368
+twenty five meters per second.
+
+00:07:28.248 --> 00:07:31.188
+The direction is about fifty three degrees below horizontal.
+
+00:07:31.648 --> 00:07:34.828
+We do not add fifteen and twenty as scalar speeds.
+
+00:07:35.528 --> 00:07:36.908
+Those components are perpendicular.
+
+00:07:37.788 --> 00:07:41.908
+For an angled launch from a height, use y equals initial vertical velocity
+
+00:07:41.908 --> 00:07:46.928
+times t minus one half g t squared, and set y to the actual signed landing
+
+00:07:46.928 --> 00:07:47.228
+height.
+
+00:07:48.028 --> 00:07:51.734
+A quadratic can have two positive roots if the projectile passes a raised
+
+00:07:51.734 --> 00:07:51.988
+level
+
+00:07:51.988 --> 00:07:53.808
+once upward and again downward.
+
+00:07:54.608 --> 00:07:56.948
+The situation tells you which event is requested.
+
+00:07:57.828 --> 00:08:01.848
+There is one useful range result worth understanding: at fixed launch speed,
+
+00:08:02.168 --> 00:08:06.208
+with the same launch and landing height, range depends on sine of twice the
+
+00:08:06.208 --> 00:08:06.648
+launch angle.
+
+00:08:07.528 --> 00:08:09.488
+It is largest at forty five degrees.
+
+00:08:10.308 --> 00:08:13.670
+Complementary angles have equal ranges but generally different flight times
+
+00:08:13.670 --> 00:08:14.208
+and heights.
+
+00:08:15.008 --> 00:08:19.008
+For different height landing, neither that equal range symmetry nor forty five
+
+00:08:19.008 --> 00:08:21.248
+degrees as the optimum is generally valid.
+
+00:08:22.028 --> 00:08:25.148
+In JEE practice, first write the physical landing condition.
+
+00:08:25.828 --> 00:08:29.228
+Let the equation choose the time instead of making the scene fit a remembered
+
+00:08:29.228 --> 00:08:29.648
+shortcut.
+
+00:08:29.952 --> 00:08:33.332
+Constant speed does not always mean zero acceleration.
+
+00:08:34.092 --> 00:08:35.672
+Watch a point moving around a circle.
+
+00:08:36.032 --> 00:08:40.092
+At the rightmost point, an anticlockwise moving point has upward velocity.
+
+00:08:40.872 --> 00:08:42.992
+A little later, its velocity tilts left.
+
+00:08:43.592 --> 00:08:47.032
+The speed can stay the same while the velocity vector changes direction.
+
+00:08:47.712 --> 00:08:49.592
+That change requires acceleration.
+
+00:08:50.452 --> 00:08:54.592
+For uniform circular motion, acceleration points toward the center, while
+
+00:08:54.592 --> 00:08:56.272
+velocity is tangent to the path.
+
+00:08:56.872 --> 00:09:00.812
+Over a very short interval, the little triangle formed by the velocity change
+
+00:09:00.812 --> 00:09:04.252
+is similar to the triangle formed by two nearby radius vectors.
+
+00:09:05.092 --> 00:09:09.232
+The magnitude of the velocity change divided by speed is approximately the
+
+00:09:09.232 --> 00:09:11.232
+traveled arc length divided by radius.
+
+00:09:12.012 --> 00:09:14.272
+Divide by the short time interval and take its limit.
+
+00:09:14.892 --> 00:09:18.352
+The inward acceleration becomes speed squared divided by radius.
+
+00:09:18.912 --> 00:09:23.214
+This is a kinematic result; a later force analysis identifies which real
+
+00:09:23.214 --> 00:09:23.572
+forces
+
+00:09:23.572 --> 00:09:24.152
+supply it.
+
+00:09:24.712 --> 00:09:28.172
+Angular speed omega means angle turned per second in radians.
+
+00:09:29.092 --> 00:09:33.132
+Arc length equals radius times angle, so speed equals omega times radius.
+
+00:09:33.892 --> 00:09:38.232
+One revolution covers two pi radians and takes a period of two pi divided by
+
+00:09:38.232 --> 00:09:38.412
+omega.
+
+00:09:39.232 --> 00:09:42.392
+Suppose radius is two meters and speed is four meters per second.
+
+00:09:43.092 --> 00:09:47.572
+Omega is two radians per second, period is pi seconds, and inward acceleration
+
+00:09:47.572 --> 00:09:49.212
+is eight meters per second squared.
+
+00:09:49.992 --> 00:09:54.272
+After half a revolution, distance traveled is two pi meters, but displacement
+
+00:09:54.272 --> 00:09:56.372
+magnitude is the diameter, four meters.
+
+00:09:57.252 --> 00:09:58.472
+Average speed remains four.
+
+00:09:59.032 --> 00:10:02.832
+Average velocity magnitude is displacement divided by half period: eight
+
+00:10:02.832 --> 00:10:04.572
+divided by pi meters per second.
+
+00:10:05.292 --> 00:10:06.512
+Now let the point speed up.
+
+00:10:06.972 --> 00:10:10.572
+It still needs radial acceleration to turn, and it also has tangential
+
+00:10:10.572 --> 00:10:12.012
+acceleration to change speed.
+
+00:10:12.832 --> 00:10:17.312
+At the instant when speed is four and radius is two, radial acceleration is
+
+00:10:17.312 --> 00:10:17.612
+eight.
+
+00:10:18.192 --> 00:10:22.812
+If tangential acceleration is six, total acceleration magnitude is ten, from
+
+00:10:22.812 --> 00:10:25.832
+the square root of sixty four plus thirty six.
+
+00:10:25.832 --> 00:10:29.812
+The two components are perpendicular; their scalar magnitudes must not simply
+
+00:10:29.812 --> 00:10:30.432
+be added.
+
+00:10:31.072 --> 00:10:33.592
+Always use instantaneous speed in the radial formula.
+
+00:10:34.572 --> 00:10:38.552
+Uniform circular motion has constant angular speed, not constant velocity.
+
+00:10:38.952 --> 00:10:41.472
+That distinction is a common conceptual test.
+
+00:10:41.664 --> 00:10:46.324
+Let's finish with a problem that refuses to use constant acceleration.
+
+00:10:47.104 --> 00:10:52.464
+A particle's position in meters is t cubed minus six t squared plus nine t,
+
+00:10:52.464 --> 00:10:53.564
+with time in seconds.
+
+00:10:54.504 --> 00:10:57.464
+The numerical coefficients carry the corresponding SI units.
+
+00:10:58.364 --> 00:11:00.264
+We study time from zero to three seconds.
+
+00:11:01.064 --> 00:11:04.824
+Instantaneous velocity is the slope of the position time graph, so
+
+00:11:04.824 --> 00:11:05.824
+differentiate position.
+
+00:11:07.024 --> 00:11:10.064
+Velocity is three t squared minus twelve t plus nine.
+
+00:11:10.644 --> 00:11:15.204
+Differentiate again: acceleration is six t minus twelve.
+
+00:11:15.204 --> 00:11:18.604
+Because acceleration changes with time, do not use the constant acceleration
+
+00:11:18.604 --> 00:11:19.984
+equations over the whole journey.
+
+00:11:20.844 --> 00:11:24.464
+Factor the velocity as three times t minus one times t minus three.
+
+00:11:25.424 --> 00:11:28.984
+It is positive from zero to one second and negative from one to three.
+
+00:11:30.004 --> 00:11:31.824
+The particle turns around at one second.
+
+00:11:32.344 --> 00:11:35.944
+At three seconds it reaches zero velocity again, at our interval's endpoint.
+
+00:11:36.744 --> 00:11:40.324
+Now calculate position at the boundaries and at the interior turning point.
+
+00:11:41.504 --> 00:11:42.604
+Position at zero is zero.
+
+00:11:43.644 --> 00:11:44.844
+Position at one is four meters.
+
+00:11:45.944 --> 00:11:47.324
+Position at three is zero again.
+
+00:11:48.264 --> 00:11:49.304
+What is the total distance?
+
+00:11:49.944 --> 00:11:51.664
+Take a moment to separate it from displacement.
+
+00:11:52.644 --> 00:11:57.304
+The particle goes from zero to four, then from four back to zero: eight meters
+
+00:11:57.304 --> 00:11:57.724
+traveled.
+
+00:11:58.784 --> 00:11:59.484
+Displacement is zero.
+
+00:12:00.104 --> 00:12:04.144
+Its average velocity over three seconds is zero, but average speed is eight
+
+00:12:04.144 --> 00:12:05.724
+divided by three meters per second.
+
+00:12:07.064 --> 00:12:11.141
+The positive and negative areas under the velocity time curve are plus four
+
+00:12:11.141 --> 00:12:11.304
+and
+
+00:12:11.304 --> 00:12:12.064
+minus four meters.
+
+00:12:12.964 --> 00:12:15.204
+That signed area check agrees with the positions.
+
+00:12:16.064 --> 00:12:20.179
+At two seconds, acceleration is zero, but velocity is negative three meters
+
+00:12:20.179 --> 00:12:20.344
+per
+
+00:12:20.344 --> 00:12:20.584
+second.
+
+00:12:21.484 --> 00:12:23.884
+Zero acceleration at an instant does not mean rest.
+
+00:12:24.644 --> 00:12:28.644
+Before that instant, velocity and acceleration are both negative, so speed
+
+00:12:28.644 --> 00:12:29.104
+increases.
+
+00:12:29.104 --> 00:12:34.024
+After it, velocity is negative while acceleration is positive, so speed
+
+00:12:34.024 --> 00:12:34.564
+decreases.
+
+00:12:35.524 --> 00:12:39.684
+For a position graph, slope gives velocity; for a velocity graph, slope gives
+
+00:12:39.684 --> 00:12:42.084
+acceleration and signed area gives displacement.
+
+00:12:43.044 --> 00:12:46.564
+For an acceleration graph, signed area gives change in velocity, not
+
+00:12:46.564 --> 00:12:47.024
+displacement.
+
+00:12:47.944 --> 00:12:50.693
+This class adds the main missing motion models to our straight line
+
+00:12:50.693 --> 00:12:51.144
+foundation.
+
+00:12:51.944 --> 00:12:55.904
+More multi stage projectile, relative motion and calculus practice still
+
+00:12:55.904 --> 00:12:56.684
+belongs in revision.
+
+00:12:57.284 --> 00:13:01.284
+Choose the frame, identify the acceleration model, solve the event condition,
+
+00:13:01.644 --> 00:13:02.584
+and then check the graph.
+
+00:13:03.324 --> 00:13:06.312
+That routine is far more dependable than hunting for a formula that merely
+
+00:13:06.312 --> 00:13:06.480
+looks familiar.

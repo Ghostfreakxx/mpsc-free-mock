@@ -1,0 +1,433 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.220
+Hey, welcome back.
+
+00:00:01.580 --> 00:00:05.220
+In our previous class, a complete current loop in a uniform magnetic field had
+
+00:00:05.220 --> 00:00:06.100
+zero net force.
+
+00:00:06.820 --> 00:00:08.460
+Today, that same loop can turn.
+
+00:00:09.180 --> 00:00:10.680
+How can both statements be true?
+
+00:00:11.540 --> 00:00:15.620
+Imagine opening a jar lid with two fingers pushing in opposite directions at
+
+00:00:15.620 --> 00:00:16.280
+different points.
+
+00:00:17.080 --> 00:00:20.520
+The pushes can cancel as forces while adding as a turning effect.
+
+00:00:21.000 --> 00:00:21.940
+That is a couple.
+
+00:00:22.780 --> 00:00:26.860
+Take a rectangular loop of sides a and b carrying steady current in a uniform
+
+00:00:26.860 --> 00:00:27.580
+external field.
+
+00:00:28.140 --> 00:00:31.996
+At the orientation where the field lies in the loop's plane, two opposite
+
+00:00:31.996 --> 00:00:32.260
+sides
+
+00:00:32.260 --> 00:00:35.600
+of length b each feel force I b B.
+
+00:00:35.600 --> 00:00:39.120
+Their forces are opposite, but their lines of action are separated by a.
+
+00:00:39.880 --> 00:00:45.540
+The torque is force times that separation, giving I a b B, or I A B.
+
+00:00:45.540 --> 00:00:49.160
+The other two sides are parallel to the field in this orientation, so their
+
+00:00:49.160 --> 00:00:50.320
+magnetic forces vanish.
+
+00:00:51.340 --> 00:00:51.860
+Tilt the loop.
+
+00:00:51.860 --> 00:00:56.320
+If theta is the angle between its normal and B, the couple's effective arm
+
+00:00:56.320 --> 00:00:57.460
+becomes a sine theta.
+
+00:00:58.100 --> 00:01:00.840
+The torque magnitude becomes I A B sine theta.
+
+00:01:01.820 --> 00:01:04.840
+At ninety degrees between normal and field, torque is largest.
+
+00:01:05.340 --> 00:01:06.640
+At zero degrees it vanishes.
+
+00:01:07.440 --> 00:01:10.640
+Be careful: a normal is a line perpendicular to the loop's plane.
+
+00:01:11.560 --> 00:01:15.020
+Maximum torque occurs when the plane is parallel to B, not when the plane is
+
+00:01:15.020 --> 00:01:15.980
+perpendicular to B.
+
+00:01:16.860 --> 00:01:20.240
+Zero net force means no translational acceleration from these magnetic forces;
+
+00:01:20.240 --> 00:01:20.712
+it does not mean no rotational acceleration.
+
+00:01:20.712 --> 00:01:25.152
+We can package a loop's area, current and orientation into one useful vector:
+
+00:01:25.772 --> 00:01:27.112
+its magnetic dipole moment.
+
+00:01:27.792 --> 00:01:32.012
+For a single planar loop, its magnitude is I times enclosed area A.
+
+00:01:32.672 --> 00:01:34.512
+Its direction is the right hand normal.
+
+00:01:35.472 --> 00:01:38.952
+Curl your right fingers along conventional current around the loop; your thumb
+
+00:01:38.952 --> 00:01:40.472
+points along the dipole moment.
+
+00:01:41.492 --> 00:01:45.252
+Viewed from your side of the page, counterclockwise current gives a moment out
+
+00:01:45.252 --> 00:01:45.852
+of the page.
+
+00:01:46.732 --> 00:01:48.952
+Clockwise current gives a moment into the page.
+
+00:01:49.752 --> 00:01:52.852
+The moment points perpendicular to the plane, not along the wire.
+
+00:01:53.872 --> 00:01:58.042
+For N identical turns with their normals aligned, add the moments to get N I
+
+00:01:58.042 --> 00:01:58.152
+A.
+
+00:01:59.072 --> 00:02:03.252
+Area means the area of one turn; multiplying an already summed area by N again
+
+00:02:03.252 --> 00:02:04.452
+would count the turns twice.
+
+00:02:04.932 --> 00:02:06.712
+The unit is ampere meter squared.
+
+00:02:07.552 --> 00:02:11.692
+Suppose a coil has one hundred turns, current zero point two amperes, and area
+
+00:02:11.692 --> 00:02:13.372
+forty square centimeters per turn.
+
+00:02:14.252 --> 00:02:17.192
+Convert the area to zero point zero zero four square meters.
+
+00:02:17.932 --> 00:02:22.218
+Its moment is one hundred times zero point two times zero point zero zero
+
+00:02:22.218 --> 00:02:22.512
+four,
+
+00:02:22.512 --> 00:02:25.112
+or zero point zero eight ampere meter squared.
+
+00:02:25.752 --> 00:02:27.492
+The torque vector is moment cross B.
+
+00:02:28.132 --> 00:02:31.432
+This gives both the sine angle magnitude and the turning axis direction.
+
+00:02:32.112 --> 00:02:36.012
+If the moment is out of the page and B points right, the torque vector points
+
+00:02:36.012 --> 00:02:36.932
+upward in the page.
+
+00:02:37.712 --> 00:02:41.232
+Reversing the current reverses the moment and torque for the same field and
+
+00:02:41.232 --> 00:02:41.912
+orientation.
+
+00:02:42.732 --> 00:02:45.952
+Keep the right hand grip rule for the moment separate from the cross product
+
+00:02:45.952 --> 00:02:46.672
+rule for torque.
+
+00:02:46.872 --> 00:02:50.832
+Let's use that coil in a field of zero point five zero tesla.
+
+00:02:51.692 --> 00:02:56.559
+Its moment is zero point zero eight ampere meter squared, so moment times
+
+00:02:56.559 --> 00:02:56.892
+field
+
+00:02:56.892 --> 00:02:59.552
+is zero point zero four zero newton meters.
+
+00:02:59.972 --> 00:03:01.512
+That is the maximum torque.
+
+00:03:01.832 --> 00:03:06.652
+If the moment makes thirty degrees with B, multiply by sine thirty, which is
+
+00:03:06.652 --> 00:03:07.092
+one half.
+
+00:03:07.592 --> 00:03:10.432
+The torque is zero point zero two zero newton meters.
+
+00:03:10.852 --> 00:03:12.532
+Now change only the wording.
+
+00:03:12.632 --> 00:03:16.692
+The question says the plane of the coil makes sixty degrees with the field.
+
+00:03:17.392 --> 00:03:17.952
+What do we do?
+
+00:03:18.872 --> 00:03:20.592
+Pause and draw a short normal to the plane.
+
+00:03:21.292 --> 00:03:25.692
+For this acute plane angle, the normal makes thirty degrees with B, so the
+
+00:03:25.692 --> 00:03:28.612
+answer is still zero point zero two zero newton meters.
+
+00:03:29.332 --> 00:03:33.612
+If the plane instead makes thirty degrees with B, the normal angle is sixty
+
+00:03:33.612 --> 00:03:34.012
+degrees.
+
+00:03:34.832 --> 00:03:37.852
+Torque is about zero point zero three four six newton meters.
+
+00:03:38.112 --> 00:03:42.452
+You may write the magnitude using cosine of the acute plane angle, but do not
+
+00:03:42.452 --> 00:03:45.512
+mix that cosine with an angle labeled between the normal and B.
+
+00:03:46.052 --> 00:03:50.332
+And remember that torque is measured in newton meters, while dipole moment is
+
+00:03:50.332 --> 00:03:51.752
+measured in ampere meter squared.
+
+00:03:52.472 --> 00:03:57.372
+Another common slip is area conversion: forty square centimeters is not zero
+
+00:03:57.372 --> 00:03:58.412
+point four square meters.
+
+00:03:59.172 --> 00:04:03.012
+Each centimeter contributes a factor of one hundredth, so a square centimeter
+
+00:04:03.012 --> 00:04:05.272
+is ten to the minus four square meters.
+
+00:04:06.232 --> 00:04:10.892
+Identify the angle, convert the area, find the moment, and only then calculate
+
+00:04:10.892 --> 00:04:11.252
+torque.
+
+00:04:11.424 --> 00:04:14.044
+Torque tells us how the coil starts to turn.
+
+00:04:14.984 --> 00:04:17.504
+Potential energy tells us which orientations are favored.
+
+00:04:18.284 --> 00:04:22.134
+For a fixed magnetic dipole moment in a prescribed uniform field,
+
+00:04:22.134 --> 00:04:22.904
+orientational
+
+00:04:22.904 --> 00:04:26.544
+energy is minus moment times field times cosine theta.
+
+00:04:27.224 --> 00:04:29.544
+We choose zero energy at ninety degrees.
+
+00:04:30.124 --> 00:04:34.384
+With our moment times field equal to zero point zero four joules, parallel
+
+00:04:34.384 --> 00:04:37.264
+alignment has energy minus zero point zero four joules.
+
+00:04:37.984 --> 00:04:40.864
+Antiparallel alignment has plus zero point zero four joules.
+
+00:04:41.724 --> 00:04:45.547
+Both positions have zero torque exactly, because sine zero and sine one
+
+00:04:45.547 --> 00:04:45.924
+hundred
+
+00:04:45.924 --> 00:04:46.844
+eighty are zero.
+
+00:04:47.644 --> 00:04:48.884
+But are they equally stable?
+
+00:04:49.704 --> 00:04:54.264
+A small tilt away from parallel alignment produces a restoring torque; it is
+
+00:04:54.264 --> 00:04:54.524
+stable.
+
+00:04:55.244 --> 00:04:59.004
+A small tilt away from antiparallel alignment pushes the dipole farther from
+
+00:04:59.004 --> 00:05:00.804
+that position; it is unstable.
+
+00:05:01.644 --> 00:05:04.884
+Without damping, a displaced dipole need not settle quietly.
+
+00:05:05.304 --> 00:05:07.544
+It can oscillate around the stable direction.
+
+00:05:08.484 --> 00:05:12.371
+Now slowly rotate the fixed moment dipole from sixty degrees to one hundred
+
+00:05:12.371 --> 00:05:14.524
+twenty degrees, keeping B unchanged.
+
+00:05:15.464 --> 00:05:20.044
+Initial energy is minus zero point zero two joules; final energy is plus zero
+
+00:05:20.044 --> 00:05:20.984
+point zero two joules.
+
+00:05:21.724 --> 00:05:25.504
+The external agent supplies zero point zero four joules of quasistatic work.
+
+00:05:26.104 --> 00:05:29.644
+The magnetic torque does the opposite amount of mechanical work in this ideal
+
+00:05:29.644 --> 00:05:30.524
+orientation model.
+
+00:05:31.184 --> 00:05:35.164
+For a maintained current coil, an electrical source participates in the energy
+
+00:05:35.164 --> 00:05:35.544
+balance.
+
+00:05:36.224 --> 00:05:40.464
+This is not a claim that magnetic force alone increases an isolated charge's
+
+00:05:40.464 --> 00:05:40.824
+kinetic energy.
+
+00:05:41.624 --> 00:05:44.824
+Keep the model's energy accounting distinct from the single particle rule we
+
+00:05:44.824 --> 00:05:45.384
+learned earlier.
+
+00:05:46.080 --> 00:05:49.400
+Finish with a design style JEE comparison.
+
+00:05:49.980 --> 00:05:54.240
+The same forty centimeter wire can form either one square turn or one circular
+
+00:05:54.240 --> 00:05:56.340
+turn, with negligible lead length.
+
+00:05:57.200 --> 00:05:59.060
+Current is two amperes in each case.
+
+00:05:59.900 --> 00:06:04.267
+For the square, each side is ten centimeters, so enclosed area is zero point
+
+00:06:04.267 --> 00:06:05.400
+zero one square meters.
+
+00:06:06.060 --> 00:06:09.200
+The moment is zero point zero two ampere meter squared.
+
+00:06:09.600 --> 00:06:12.560
+For the circle, circumference is the wire length.
+
+00:06:13.280 --> 00:06:17.440
+Radius is the length divided by two pi, and area is length squared divided by
+
+00:06:17.440 --> 00:06:17.900
+four pi.
+
+00:06:18.660 --> 00:06:22.080
+Its moment is about zero point zero two five five ampere meter squared.
+
+00:06:22.940 --> 00:06:26.900
+Dividing the circle result by the square result gives four over pi, about one
+
+00:06:26.900 --> 00:06:28.360
+point two seven.
+
+00:06:28.360 --> 00:06:31.900
+The circle has the larger moment and larger maximum torque in the same field.
+
+00:06:32.680 --> 00:06:35.800
+Notice what stayed fixed: current, wire length and one turn.
+
+00:06:36.660 --> 00:06:40.151
+Saying more turns always means a bigger moment can be misleading when each
+
+00:06:40.151 --> 00:06:40.340
+turn
+
+00:06:40.340 --> 00:06:40.660
+shrinks.
+
+00:06:40.660 --> 00:06:45.720
+If the same wire forms N equal circular turns with negligible leads, each
+
+00:06:45.720 --> 00:06:48.000
+circumference is the total length divided by N.
+
+00:06:48.840 --> 00:06:52.640
+Each turn's area falls as one over N squared, so the total moment falls as one
+
+00:06:52.640 --> 00:06:53.860
+over N at fixed current.
+
+00:06:54.680 --> 00:06:56.720
+Two such turns have half the single turn moment.
+
+00:06:57.340 --> 00:07:01.760
+That does not contradict moment equal to N I A; it changes A while changing N.
+
+00:07:02.400 --> 00:07:05.320
+Before using a proportionality, write what is held constant.
+
+00:07:05.850 --> 00:07:09.440
+We now have the foundation for the moving coil galvanometer, which will be our
+
+00:07:09.440 --> 00:07:09.980
+next class.

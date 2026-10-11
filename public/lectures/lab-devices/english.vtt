@@ -1,0 +1,460 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.720
+Hey, welcome back.
+
+00:00:02.320 --> 00:00:05.360
+Today we identify components and learn what their measured curves actually
+
+00:00:05.360 --> 00:00:05.660
+mean.
+
+00:00:06.080 --> 00:00:09.580
+For a junction diode's forward characteristic, connect a safe low voltage
+
+00:00:09.580 --> 00:00:12.520
+source through a current limiting resistor and a series ammeter.
+
+00:00:13.640 --> 00:00:15.300
+Measure voltage across the diode itself.
+
+00:00:16.380 --> 00:00:19.260
+Forward bias means its anode is at higher potential than its cathode.
+
+00:00:20.200 --> 00:00:24.500
+Start low and increase the setting gradually, taking paired diode voltage and
+
+00:00:24.500 --> 00:00:27.260
+current readings within the component and meter ratings.
+
+00:00:27.720 --> 00:00:31.600
+The series resistor limits current; it is not part of the voltage measured
+
+00:00:31.600 --> 00:00:32.600
+across the diode.
+
+00:00:33.400 --> 00:00:37.920
+Suppose two nearby original observations are zero point six five volts at two
+
+00:00:37.920 --> 00:00:41.840
+milliamperes, and zero point six seven volts at four milliamperes.
+
+00:00:42.320 --> 00:00:47.140
+At the second point, static resistance is zero point six seven divided by zero
+
+00:00:47.140 --> 00:00:50.700
+point zero zero four, or one hundred sixty seven point five ohms.
+
+00:00:51.240 --> 00:00:54.740
+But the local incremental resistance is the voltage change divided by the
+
+00:00:54.740 --> 00:00:58.880
+current change: zero point zero two volts over zero point zero zero two
+
+00:00:58.880 --> 00:01:00.380
+amperes, giving ten ohms.
+
+00:01:01.840 --> 00:01:02.860
+These are different questions.
+
+00:01:03.620 --> 00:01:07.160
+The first uses a line from the origin; the second describes the local curve
+
+00:01:07.160 --> 00:01:08.180
+over a small interval.
+
+00:01:09.480 --> 00:01:12.800
+The curve rises steeply rather than obeying one constant resistance.
+
+00:01:13.700 --> 00:01:17.600
+There is no universal perfectly sharp zero point seven volt switch for every
+
+00:01:17.600 --> 00:01:18.300
+silicon diode.
+
+00:01:19.460 --> 00:01:21.520
+Temperature, device and current matter.
+
+00:01:22.180 --> 00:01:26.240
+State your graph axes and units, allow for meter loading, and never connect a
+
+00:01:26.240 --> 00:01:27.980
+diode directly across an unrestricted supply.
+
+00:01:28.248 --> 00:01:33.348
+Reverse the diode orientation while keeping a suitable protective resistor and
+
+00:01:33.348 --> 00:01:35.328
+a supervised low voltage source.
+
+00:01:36.268 --> 00:01:38.328
+The cathode is now at higher potential than the anode.
+
+00:01:39.228 --> 00:01:43.488
+With diode voltage defined as anode potential minus cathode potential, reverse
+
+00:01:43.488 --> 00:01:44.448
+voltage is negative.
+
+00:01:45.528 --> 00:01:49.608
+Define forward conventional current as positive, and the reverse current is
+
+00:01:49.608 --> 00:01:50.648
+negative too.
+
+00:01:50.648 --> 00:01:54.908
+The ordinary reverse branch therefore lies in the lower left quadrant on a
+
+00:01:54.908 --> 00:01:55.988
+signed I V graph.
+
+00:01:55.988 --> 00:02:00.630
+Some laboratory plots instead show positive reverse voltage and reverse
+
+00:02:00.630 --> 00:02:01.088
+current
+
+00:02:01.088 --> 00:02:01.588
+magnitudes.
+
+00:02:02.548 --> 00:02:06.748
+Those plots are fine when clearly labeled, but do not silently mix the two
+
+00:02:06.748 --> 00:02:07.148
+conventions.
+
+00:02:08.128 --> 00:02:11.556
+Before breakdown, a real diode usually carries a small reverse leakage
+
+00:02:11.556 --> 00:02:11.948
+current,
+
+00:02:12.548 --> 00:02:13.868
+not an exactly zero current.
+
+00:02:14.988 --> 00:02:18.548
+Choose an appropriately sensitive range, and recognize that voltmeter loading
+
+00:02:18.548 --> 00:02:21.608
+can become significant when the current being measured is tiny.
+
+00:02:22.408 --> 00:02:26.648
+A meter display of zero may mean below its resolution rather than no physical
+
+00:02:26.648 --> 00:02:27.288
+current.
+
+00:02:28.428 --> 00:02:32.328
+Suppose a signed observation is minus three volts and minus two microamperes.
+
+00:02:32.968 --> 00:02:37.108
+Its current magnitude is two microamperes, or zero point zero zero two
+
+00:02:37.108 --> 00:02:37.688
+milliamperes.
+
+00:02:38.128 --> 00:02:39.388
+It is not two milliamperes.
+
+00:02:40.128 --> 00:02:43.708
+At sufficiently large reverse voltage, breakdown can cause a strong current
+
+00:02:43.708 --> 00:02:44.108
+increase.
+
+00:02:44.628 --> 00:02:48.788
+An ordinary diode must not be deliberately pushed into breakdown unless the
+
+00:02:48.788 --> 00:02:51.808
+device ratings and an approved protected procedure permit it.
+
+00:02:52.728 --> 00:02:56.732
+A Zener device is designed for controlled reverse breakdown operation, but
+
+00:02:56.732 --> 00:02:56.948
+even
+
+00:02:56.948 --> 00:02:58.168
+it needs current limitation.
+
+00:02:59.428 --> 00:03:03.348
+The JEE lesson here is interpreting polarity, quadrant and measurement scale
+
+00:03:03.348 --> 00:03:03.552
+before reading the curve.
+
+00:03:03.552 --> 00:03:07.372
+For a Zener reverse characteristic, the current remains small before the
+
+00:03:07.372 --> 00:03:11.572
+breakdown region, then increases strongly while the diode voltage changes much
+
+00:03:11.572 --> 00:03:11.812
+less.
+
+00:03:12.472 --> 00:03:15.172
+A protected measurement can reveal that steep branch.
+
+00:03:15.892 --> 00:03:20.272
+In our magnitude plot, both reverse voltage and reverse current are shown as
+
+00:03:20.272 --> 00:03:22.652
+positive values, with the convention stated.
+
+00:03:23.492 --> 00:03:27.412
+Never interpret nearly constant voltage as unlimited permissible current.
+
+00:03:28.352 --> 00:03:32.672
+Suppose our ideal classroom circuit has a nine volt supply, a five point one
+
+00:03:32.672 --> 00:03:36.632
+volt Zener operating in breakdown, and a three hundred ninety ohm series
+
+00:03:36.632 --> 00:03:38.412
+resistor, with no parallel load.
+
+00:03:39.592 --> 00:03:41.572
+The resistor drops three point nine volts.
+
+00:03:42.372 --> 00:03:45.892
+Current is three point nine divided by three hundred ninety, giving ten
+
+00:03:45.892 --> 00:03:46.812
+milliamperes.
+
+00:03:47.252 --> 00:03:51.902
+The Zener dissipates five point one times zero point zero one watts, or fifty
+
+00:03:51.902 --> 00:03:52.532
+one milliwatts.
+
+00:03:53.332 --> 00:03:56.992
+The resistor dissipates current squared times resistance, or thirty nine
+
+00:03:56.992 --> 00:03:57.512
+milliwatts.
+
+00:03:58.192 --> 00:04:02.272
+These are model values; an actual design needs suitable ratings and margin.
+
+00:04:03.112 --> 00:04:07.152
+Now imagine nearby measured points: five point zero eight volts at eight
+
+00:04:07.152 --> 00:04:10.912
+milliamperes, and five point one two volts at twelve milliamperes.
+
+00:04:11.532 --> 00:04:15.332
+The local dynamic resistance is zero point zero four volts over four
+
+00:04:15.332 --> 00:04:17.112
+milliamperes, giving ten ohms.
+
+00:04:17.832 --> 00:04:21.032
+The finite slope explains why voltage is not exactly constant.
+
+00:04:21.772 --> 00:04:26.339
+A datasheet specifies breakdown at a test current and includes tolerance,
+
+00:04:26.339 --> 00:04:26.652
+power
+
+00:04:26.652 --> 00:04:27.572
+and temperature limits.
+
+00:04:28.012 --> 00:04:32.772
+Do not identify the supply setting as the Zener voltage without measuring the
+
+00:04:32.772 --> 00:04:33.232
+diode itself.
+
+00:04:34.032 --> 00:04:37.972
+Use a stable source, protected connections and observations within the rated
+
+00:04:37.972 --> 00:04:38.292
+range.
+
+00:04:38.664 --> 00:04:42.624
+A mixed collection of components becomes manageable when you combine
+
+00:04:42.624 --> 00:04:45.744
+appearance, markings and a safe electrical test.
+
+00:04:46.464 --> 00:04:49.244
+A resistor often has two leads and color bands.
+
+00:04:49.984 --> 00:04:54.224
+For a four band resistor, the first two bands are digits, the third is a
+
+00:04:54.224 --> 00:04:56.264
+multiplier, and the fourth is tolerance.
+
+00:04:57.164 --> 00:05:01.861
+Red, violet, brown and gold mean twenty seven times ten ohms, with five
+
+00:05:01.861 --> 00:05:02.324
+percent
+
+00:05:02.324 --> 00:05:04.584
+tolerance: two hundred seventy ohms.
+
+00:05:04.804 --> 00:05:09.224
+Its nominal tolerance interval is two hundred fifty six point five to two
+
+00:05:09.224 --> 00:05:11.344
+hundred eighty three point five ohms.
+
+00:05:11.964 --> 00:05:16.959
+A capacitor also has two terminals, but stores charge rather than maintaining
+
+00:05:16.959 --> 00:05:17.024
+a
+
+00:05:17.024 --> 00:05:17.744
+steady ohmic current.
+
+00:05:18.584 --> 00:05:22.504
+A common three digit code one zero four means ten times ten to the four
+
+00:05:22.504 --> 00:05:26.984
+picofarads: one hundred thousand picofarads, or one hundred nanofarads.
+
+00:05:27.724 --> 00:05:31.244
+Check the marking system rather than assuming every number follows that code.
+
+00:05:31.804 --> 00:05:35.944
+Electrolytic capacitors are commonly polarized; their stripe often marks the
+
+00:05:35.944 --> 00:05:38.504
+negative lead, but verify the actual part.
+
+00:05:39.464 --> 00:05:43.344
+Safely discharge them through an appropriate resistor before testing, never by
+
+00:05:43.344 --> 00:05:44.504
+a deliberate short circuit.
+
+00:05:45.184 --> 00:05:47.624
+A diode's body band commonly marks the cathode.
+
+00:05:48.244 --> 00:05:52.304
+In diode test mode an ordinary silicon junction typically gives a finite
+
+00:05:52.304 --> 00:05:56.764
+forward drop and an over range indication in reverse, depending on meter and
+
+00:05:56.764 --> 00:05:57.084
+device.
+
+00:05:57.634 --> 00:06:01.824
+An LED emits light under suitable forward current, often has a different
+
+00:06:01.824 --> 00:06:04.224
+forward drop, and may not light from every meter.
+
+00:06:05.224 --> 00:06:09.524
+Lead length and a flat edge are clues, not guarantees on damaged or unfamiliar
+
+00:06:09.524 --> 00:06:09.924
+parts.
+
+00:06:10.864 --> 00:06:14.884
+Test isolated, unpowered components, and consult ratings before applying a
+
+00:06:14.884 --> 00:06:15.144
+supply.
+
+00:06:15.720 --> 00:06:19.520
+The identification requirement also includes transistors and integrated
+
+00:06:19.520 --> 00:06:19.980
+circuits.
+
+00:06:20.740 --> 00:06:25.260
+A typical bipolar transistor has three terminals: base, collector and emitter.
+
+00:06:25.840 --> 00:06:30.440
+But a three lead package alone is not proof of a bipolar transistor; other
+
+00:06:30.440 --> 00:06:31.840
+devices use similar packages.
+
+00:06:32.700 --> 00:06:34.460
+Read the part number and check its datasheet.
+
+00:06:35.120 --> 00:06:39.460
+In a simple unpowered diode test check, a silicon NPN transistor usually
+
+00:06:39.460 --> 00:06:43.840
+behaves like two junctions sharing a base: a positive probe at the base and
+
+00:06:43.840 --> 00:06:47.089
+negative probe at either emitter or collector gives a forward junction
+
+00:06:47.089 --> 00:06:47.460
+reading.
+
+00:06:48.560 --> 00:06:51.080
+Reversing those probes generally gives an over range reading.
+
+00:06:52.060 --> 00:06:55.620
+For a PNP transistor, the corresponding conducting polarities reverse.
+
+00:06:56.380 --> 00:06:59.760
+This is an identification model, not a full transistor performance test.
+
+00:07:00.380 --> 00:07:04.220
+It does not reliably distinguish collector from emitter in every device, and
+
+00:07:04.220 --> 00:07:06.960
+protection structures or a damaged part can change readings.
+
+00:07:07.840 --> 00:07:10.160
+Confirm the actual pinout before connecting anything.
+
+00:07:10.900 --> 00:07:14.340
+An integrated circuit contains several circuit elements in one package.
+
+00:07:15.000 --> 00:07:19.300
+A dot or notch commonly indicates pin one orientation, and the part number
+
+00:07:19.300 --> 00:07:20.840
+tells you which datasheet to consult.
+
+00:07:21.500 --> 00:07:24.360
+You cannot determine every pin's role from the package outline.
+
+00:07:25.040 --> 00:07:28.380
+Different integrated circuits may look almost identical while doing completely
+
+00:07:28.380 --> 00:07:29.020
+different jobs.
+
+00:07:29.960 --> 00:07:33.140
+Avoid powered resistance tests and static discharge into sensitive parts.
+
+00:07:33.860 --> 00:07:37.840
+Before accepting an identification, combine at least two appropriate clues
+
+00:07:37.840 --> 00:07:40.140
+rather than guessing from color or shape.
+
+00:07:40.700 --> 00:07:44.380
+Our diagrams are representative teaching sketches, not universal component
+
+00:07:44.380 --> 00:07:44.820
+pinouts.
+
+00:07:45.480 --> 00:07:48.920
+These original examples conclude the introductory experimental skills set;
+
+00:07:49.880 --> 00:07:54.020
+further observation tables, corrections and mixed JEE practice are still
+
+00:07:54.020 --> 00:07:54.160
+needed.
+
+00:07:55.180 --> 00:07:58.500
+Learning the laboratory principle is not a substitute for supervised hands on
+
+00:07:58.500 --> 00:07:58.760
+work.

@@ -1,0 +1,891 @@
+{
+  "duration": 430.4880000000118,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 80.71200000000216
+    },
+    {
+      "start": 80.71200000000216,
+      "end": 166.87200000000453
+    },
+    {
+      "start": 166.87200000000453,
+      "end": 251.42400000000686
+    },
+    {
+      "start": 251.42400000000686,
+      "end": 346.08000000000953
+    },
+    {
+      "start": 346.08000000000953,
+      "end": 430.4880000000118
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.2200000286102295,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.5800000429153442,
+      "end": 5.21999979019165,
+      "text": "In our previous class, a complete current loop in a uniform magnetic field had",
+      "chapter": 0
+    },
+    {
+      "start": 5.21999979019165,
+      "end": 6.099999904632568,
+      "text": "zero net force.",
+      "chapter": 0
+    },
+    {
+      "start": 6.820000171661377,
+      "end": 8.460000038146973,
+      "text": "Today, that same loop can turn.",
+      "chapter": 0
+    },
+    {
+      "start": 9.180000305175781,
+      "end": 10.680000305175781,
+      "text": "How can both statements be true?",
+      "chapter": 0
+    },
+    {
+      "start": 11.539999961853027,
+      "end": 15.619999885559082,
+      "text": "Imagine opening a jar lid with two fingers pushing in opposite directions at",
+      "chapter": 0
+    },
+    {
+      "start": 15.619999885559082,
+      "end": 16.280000686645508,
+      "text": "different points.",
+      "chapter": 0
+    },
+    {
+      "start": 17.079999923706055,
+      "end": 20.520000457763672,
+      "text": "The pushes can cancel as forces while adding as a turning effect.",
+      "chapter": 0
+    },
+    {
+      "start": 21,
+      "end": 21.940000534057617,
+      "text": "That is a couple.",
+      "chapter": 0
+    },
+    {
+      "start": 22.780000686645508,
+      "end": 26.860000610351562,
+      "text": "Take a rectangular loop of sides a and b carrying steady current in a uniform",
+      "chapter": 0
+    },
+    {
+      "start": 26.860000610351562,
+      "end": 27.579999923706055,
+      "text": "external field.",
+      "chapter": 0
+    },
+    {
+      "start": 28.139999389648438,
+      "end": 31.995895825899563,
+      "text": "At the orientation where the field lies in the loop's plane, two opposite",
+      "chapter": 0
+    },
+    {
+      "start": 31.995895825899563,
+      "end": 32.2599983215332,
+      "text": "sides",
+      "chapter": 0
+    },
+    {
+      "start": 32.2599983215332,
+      "end": 35.599998474121094,
+      "text": "of length b each feel force I b B.",
+      "chapter": 0
+    },
+    {
+      "start": 35.599998474121094,
+      "end": 39.119998931884766,
+      "text": "Their forces are opposite, but their lines of action are separated by a.",
+      "chapter": 0
+    },
+    {
+      "start": 39.880001068115234,
+      "end": 45.540000915527344,
+      "text": "The torque is force times that separation, giving I a b B, or I A B.",
+      "chapter": 0
+    },
+    {
+      "start": 45.540000915527344,
+      "end": 49.15999984741211,
+      "text": "The other two sides are parallel to the field in this orientation, so their",
+      "chapter": 0
+    },
+    {
+      "start": 49.15999984741211,
+      "end": 50.31999969482422,
+      "text": "magnetic forces vanish.",
+      "chapter": 0
+    },
+    {
+      "start": 51.34000015258789,
+      "end": 51.86000061035156,
+      "text": "Tilt the loop.",
+      "chapter": 0
+    },
+    {
+      "start": 51.86000061035156,
+      "end": 56.31999969482422,
+      "text": "If theta is the angle between its normal and B, the couple's effective arm",
+      "chapter": 0
+    },
+    {
+      "start": 56.31999969482422,
+      "end": 57.459999084472656,
+      "text": "becomes a sine theta.",
+      "chapter": 0
+    },
+    {
+      "start": 58.099998474121094,
+      "end": 60.84000015258789,
+      "text": "The torque magnitude becomes I A B sine theta.",
+      "chapter": 0
+    },
+    {
+      "start": 61.81999969482422,
+      "end": 64.83999633789062,
+      "text": "At ninety degrees between normal and field, torque is largest.",
+      "chapter": 0
+    },
+    {
+      "start": 65.33999633789062,
+      "end": 66.63999938964844,
+      "text": "At zero degrees it vanishes.",
+      "chapter": 0
+    },
+    {
+      "start": 67.44000244140625,
+      "end": 70.63999938964844,
+      "text": "Be careful: a normal is a line perpendicular to the loop's plane.",
+      "chapter": 0
+    },
+    {
+      "start": 71.55999755859375,
+      "end": 75.0199966430664,
+      "text": "Maximum torque occurs when the plane is parallel to B, not when the plane is",
+      "chapter": 0
+    },
+    {
+      "start": 75.0199966430664,
+      "end": 75.9800033569336,
+      "text": "perpendicular to B.",
+      "chapter": 0
+    },
+    {
+      "start": 76.86000061035156,
+      "end": 80.23999786376953,
+      "text": "Zero net force means no translational acceleration from these magnetic forces;",
+      "chapter": 0
+    },
+    {
+      "start": 80.23999786376953,
+      "end": 80.71200000000216,
+      "text": "it does not mean no rotational acceleration.",
+      "chapter": 0
+    },
+    {
+      "start": 80.71200000000216,
+      "end": 85.15200005722262,
+      "text": "We can package a loop's area, current and orientation into one useful vector:",
+      "chapter": 1
+    },
+    {
+      "start": 85.7719999427817,
+      "end": 87.1120000953696,
+      "text": "its magnetic dipole moment.",
+      "chapter": 1
+    },
+    {
+      "start": 87.79199992370822,
+      "end": 92.01200019073703,
+      "text": "For a single planar loop, its magnitude is I times enclosed area A.",
+      "chapter": 1
+    },
+    {
+      "start": 92.67200003814914,
+      "end": 94.51200019073703,
+      "text": "Its direction is the right hand normal.",
+      "chapter": 1
+    },
+    {
+      "start": 95.472000228884,
+      "end": 98.95199977112033,
+      "text": "Curl your right fingers along conventional current around the loop; your thumb",
+      "chapter": 1
+    },
+    {
+      "start": 98.95199977112033,
+      "end": 100.472000228884,
+      "text": "points along the dipole moment.",
+      "chapter": 1
+    },
+    {
+      "start": 101.49200068664767,
+      "end": 105.2520009155295,
+      "text": "Viewed from your side of the page, counterclockwise current gives a moment out",
+      "chapter": 1
+    },
+    {
+      "start": 105.2520009155295,
+      "end": 105.8519993896506,
+      "text": "of the page.",
+      "chapter": 1
+    },
+    {
+      "start": 106.73200045776584,
+      "end": 108.95199977112033,
+      "text": "Clockwise current gives a moment into the page.",
+      "chapter": 1
+    },
+    {
+      "start": 109.7520009155295,
+      "end": 112.8519993896506,
+      "text": "The moment points perpendicular to the plane, not along the wire.",
+      "chapter": 1
+    },
+    {
+      "start": 113.87199984741427,
+      "end": 118.04225506826764,
+      "text": "For N identical turns with their normals aligned, add the moments to get N I",
+      "chapter": 1
+    },
+    {
+      "start": 118.04225506826764,
+      "end": 118.15199862671115,
+      "text": "A.",
+      "chapter": 1
+    },
+    {
+      "start": 119.07200061035373,
+      "end": 123.2520009155295,
+      "text": "Area means the area of one turn; multiplying an already summed area by N again",
+      "chapter": 1
+    },
+    {
+      "start": 123.2520009155295,
+      "end": 124.45200167846896,
+      "text": "would count the turns twice.",
+      "chapter": 1
+    },
+    {
+      "start": 124.93200122070529,
+      "end": 126.71200000000216,
+      "text": "The unit is ampere meter squared.",
+      "chapter": 1
+    },
+    {
+      "start": 127.55200015259005,
+      "end": 131.69199954223848,
+      "text": "Suppose a coil has one hundred turns, current zero point two amperes, and area",
+      "chapter": 1
+    },
+    {
+      "start": 131.69199954223848,
+      "end": 133.37199984741426,
+      "text": "forty square centimeters per turn.",
+      "chapter": 1
+    },
+    {
+      "start": 134.2520009155295,
+      "end": 137.19199954223848,
+      "text": "Convert the area to zero point zero zero four square meters.",
+      "chapter": 1
+    },
+    {
+      "start": 137.93200122070527,
+      "end": 142.21840962062953,
+      "text": "Its moment is one hundred times zero point two times zero point zero zero",
+      "chapter": 1
+    },
+    {
+      "start": 142.21840962062953,
+      "end": 142.5119992370627,
+      "text": "four,",
+      "chapter": 1
+    },
+    {
+      "start": 142.5119992370627,
+      "end": 145.11200152588106,
+      "text": "or zero point zero eight ampere meter squared.",
+      "chapter": 1
+    },
+    {
+      "start": 145.7520009155295,
+      "end": 147.49199877929902,
+      "text": "The torque vector is moment cross B.",
+      "chapter": 1
+    },
+    {
+      "start": 148.13199816894746,
+      "end": 151.43200122070527,
+      "text": "This gives both the sine angle magnitude and the turning axis direction.",
+      "chapter": 1
+    },
+    {
+      "start": 152.11200152588106,
+      "end": 156.01200305175996,
+      "text": "If the moment is out of the page and B points right, the torque vector points",
+      "chapter": 1
+    },
+    {
+      "start": 156.01200305175996,
+      "end": 156.93200122070527,
+      "text": "upward in the page.",
+      "chapter": 1
+    },
+    {
+      "start": 157.71200000000215,
+      "end": 161.23199664306856,
+      "text": "Reversing the current reverses the moment and torque for the same field and",
+      "chapter": 1
+    },
+    {
+      "start": 161.23199664306856,
+      "end": 161.91199694824434,
+      "text": "orientation.",
+      "chapter": 1
+    },
+    {
+      "start": 162.73199664306856,
+      "end": 165.95199786377168,
+      "text": "Keep the right hand grip rule for the moment separate from the cross product",
+      "chapter": 1
+    },
+    {
+      "start": 165.95199786377168,
+      "end": 166.6719990844748,
+      "text": "rule for torque.",
+      "chapter": 1
+    },
+    {
+      "start": 166.87200000000453,
+      "end": 170.8320000381515,
+      "text": "Let's use that coil in a field of zero point five zero tesla.",
+      "chapter": 2
+    },
+    {
+      "start": 171.6920001716659,
+      "end": 176.558667106095,
+      "text": "Its moment is zero point zero eight ampere meter squared, so moment times",
+      "chapter": 2
+    },
+    {
+      "start": 176.558667106095,
+      "end": 176.8920004577682,
+      "text": "field",
+      "chapter": 2
+    },
+    {
+      "start": 176.8920004577682,
+      "end": 179.55200030518031,
+      "text": "is zero point zero four zero newton meters.",
+      "chapter": 2
+    },
+    {
+      "start": 179.97200038147426,
+      "end": 181.5120003433273,
+      "text": "That is the maximum torque.",
+      "chapter": 2
+    },
+    {
+      "start": 181.8320000381515,
+      "end": 186.65200068665004,
+      "text": "If the moment makes thirty degrees with B, multiply by sine thirty, which is",
+      "chapter": 2
+    },
+    {
+      "start": 186.65200068665004,
+      "end": 187.09199931335903,
+      "text": "one half.",
+      "chapter": 2
+    },
+    {
+      "start": 187.59199931335903,
+      "end": 190.43199946594692,
+      "text": "The torque is zero point zero two zero newton meters.",
+      "chapter": 2
+    },
+    {
+      "start": 190.85199954224086,
+      "end": 192.53199984741664,
+      "text": "Now change only the wording.",
+      "chapter": 2
+    },
+    {
+      "start": 192.63200022888637,
+      "end": 196.69199969482875,
+      "text": "The question says the plane of the coil makes sixty degrees with the field.",
+      "chapter": 2
+    },
+    {
+      "start": 197.3920004577682,
+      "end": 197.9519999237106,
+      "text": "What do we do?",
+      "chapter": 2
+    },
+    {
+      "start": 198.87200000000453,
+      "end": 200.59200122070766,
+      "text": "Pause and draw a short normal to the plane.",
+      "chapter": 2
+    },
+    {
+      "start": 201.29199816894985,
+      "end": 205.69199969482875,
+      "text": "For this acute plane angle, the normal makes thirty degrees with B, so the",
+      "chapter": 2
+    },
+    {
+      "start": 205.69199969482875,
+      "end": 208.61200167847133,
+      "text": "answer is still zero point zero two zero newton meters.",
+      "chapter": 2
+    },
+    {
+      "start": 209.3319990844772,
+      "end": 213.61200167847133,
+      "text": "If the plane instead makes thirty degrees with B, the normal angle is sixty",
+      "chapter": 2
+    },
+    {
+      "start": 213.61200167847133,
+      "end": 214.01199938965297,
+      "text": "degrees.",
+      "chapter": 2
+    },
+    {
+      "start": 214.8319990844772,
+      "end": 217.85199954224086,
+      "text": "Torque is about zero point zero three four six newton meters.",
+      "chapter": 2
+    },
+    {
+      "start": 218.11200167847133,
+      "end": 222.45200183105922,
+      "text": "You may write the magnitude using cosine of the acute plane angle, but do not",
+      "chapter": 2
+    },
+    {
+      "start": 222.45200183105922,
+      "end": 225.51199938965297,
+      "text": "mix that cosine with an angle labeled between the normal and B.",
+      "chapter": 2
+    },
+    {
+      "start": 226.05200030518031,
+      "end": 230.3319990844772,
+      "text": "And remember that torque is measured in newton meters, while dipole moment is",
+      "chapter": 2
+    },
+    {
+      "start": 230.3319990844772,
+      "end": 231.7519972534225,
+      "text": "measured in ampere meter squared.",
+      "chapter": 2
+    },
+    {
+      "start": 232.47199847412563,
+      "end": 237.37200000000453,
+      "text": "Another common slip is area conversion: forty square centimeters is not zero",
+      "chapter": 2
+    },
+    {
+      "start": 237.37200000000453,
+      "end": 238.41200091553188,
+      "text": "point four square meters.",
+      "chapter": 2
+    },
+    {
+      "start": 239.17200305176235,
+      "end": 243.01199938965297,
+      "text": "Each centimeter contributes a factor of one hundredth, so a square centimeter",
+      "chapter": 2
+    },
+    {
+      "start": 243.01199938965297,
+      "end": 245.27200152588344,
+      "text": "is ten to the minus four square meters.",
+      "chapter": 2
+    },
+    {
+      "start": 246.2320006103561,
+      "end": 250.89199664307094,
+      "text": "Identify the angle, convert the area, find the moment, and only then calculate",
+      "chapter": 2
+    },
+    {
+      "start": 250.89199664307094,
+      "end": 251.2519972534225,
+      "text": "torque.",
+      "chapter": 2
+    },
+    {
+      "start": 251.42400000000686,
+      "end": 254.04399988556594,
+      "text": "Torque tells us how the coil starts to turn.",
+      "chapter": 3
+    },
+    {
+      "start": 254.9839999427864,
+      "end": 257.5039999237129,
+      "text": "Potential energy tells us which orientations are favored.",
+      "chapter": 3
+    },
+    {
+      "start": 258.28400013352126,
+      "end": 262.1339996407895,
+      "text": "For a fixed magnetic dipole moment in a prescribed uniform field,",
+      "chapter": 3
+    },
+    {
+      "start": 262.1339996407895,
+      "end": 262.9039995422432,
+      "text": "orientational",
+      "chapter": 3
+    },
+    {
+      "start": 262.9039995422432,
+      "end": 266.54399988556594,
+      "text": "energy is minus moment times field times cosine theta.",
+      "chapter": 3
+    },
+    {
+      "start": 267.2240001907417,
+      "end": 269.54400083924025,
+      "text": "We choose zero energy at ninety degrees.",
+      "chapter": 3
+    },
+    {
+      "start": 270.1240007629463,
+      "end": 274.3839990844795,
+      "text": "With our moment times field equal to zero point zero four joules, parallel",
+      "chapter": 3
+    },
+    {
+      "start": 274.3839990844795,
+      "end": 277.26400015259475,
+      "text": "alignment has energy minus zero point zero four joules.",
+      "chapter": 3
+    },
+    {
+      "start": 277.98399946594924,
+      "end": 280.8640005340645,
+      "text": "Antiparallel alignment has plus zero point zero four joules.",
+      "chapter": 3
+    },
+    {
+      "start": 281.7239992370674,
+      "end": 285.5470780120657,
+      "text": "Both positions have zero torque exactly, because sine zero and sine one",
+      "chapter": 3
+    },
+    {
+      "start": 285.5470780120657,
+      "end": 285.9240012715726,
+      "text": "hundred",
+      "chapter": 3
+    },
+    {
+      "start": 285.9240012715726,
+      "end": 286.84399816895217,
+      "text": "eighty are zero.",
+      "chapter": 3
+    },
+    {
+      "start": 287.64400122071,
+      "end": 288.8839990844795,
+      "text": "But are they equally stable?",
+      "chapter": 3
+    },
+    {
+      "start": 289.70399877930373,
+      "end": 294.26400015259475,
+      "text": "A small tilt away from parallel alignment produces a restoring torque; it is",
+      "chapter": 3
+    },
+    {
+      "start": 294.26400015259475,
+      "end": 294.52399847412795,
+      "text": "stable.",
+      "chapter": 3
+    },
+    {
+      "start": 295.2439996948311,
+      "end": 299.00400183106154,
+      "text": "A small tilt away from antiparallel alignment pushes the dipole farther from",
+      "chapter": 3
+    },
+    {
+      "start": 299.00400183106154,
+      "end": 300.8040010681221,
+      "text": "that position; it is unstable.",
+      "chapter": 3
+    },
+    {
+      "start": 301.64400122071,
+      "end": 304.8839990844795,
+      "text": "Without damping, a displaced dipole need not settle quietly.",
+      "chapter": 3
+    },
+    {
+      "start": 305.3040010681221,
+      "end": 307.5439989318916,
+      "text": "It can oscillate around the stable direction.",
+      "chapter": 3
+    },
+    {
+      "start": 308.4840013732979,
+      "end": 312.37066671753615,
+      "text": "Now slowly rotate the fixed moment dipole from sixty degrees to one hundred",
+      "chapter": 3
+    },
+    {
+      "start": 312.37066671753615,
+      "end": 314.52399847412795,
+      "text": "twenty degrees, keeping B unchanged.",
+      "chapter": 3
+    },
+    {
+      "start": 315.4640009155342,
+      "end": 320.0440027465889,
+      "text": "Initial energy is minus zero point zero two joules; final energy is plus zero",
+      "chapter": 3
+    },
+    {
+      "start": 320.0440027465889,
+      "end": 320.9839975586006,
+      "text": "point zero two joules.",
+      "chapter": 3
+    },
+    {
+      "start": 321.72400305176467,
+      "end": 325.50400183106154,
+      "text": "The external agent supplies zero point zero four joules of quasistatic work.",
+      "chapter": 3
+    },
+    {
+      "start": 326.10400030518264,
+      "end": 329.64400122071,
+      "text": "The magnetic torque does the opposite amount of mechanical work in this ideal",
+      "chapter": 3
+    },
+    {
+      "start": 329.64400122071,
+      "end": 330.52399847412795,
+      "text": "orientation model.",
+      "chapter": 3
+    },
+    {
+      "start": 331.1840021362373,
+      "end": 335.1639978637764,
+      "text": "For a maintained current coil, an electrical source participates in the energy",
+      "chapter": 3
+    },
+    {
+      "start": 335.1639978637764,
+      "end": 335.5440027465889,
+      "text": "balance.",
+      "chapter": 3
+    },
+    {
+      "start": 336.22400305176467,
+      "end": 340.4640009155342,
+      "text": "This is not a claim that magnetic force alone increases an isolated charge's",
+      "chapter": 3
+    },
+    {
+      "start": 340.4640009155342,
+      "end": 340.82400152588576,
+      "text": "kinetic energy.",
+      "chapter": 3
+    },
+    {
+      "start": 341.62399694824904,
+      "end": 344.82400152588576,
+      "text": "Keep the model's energy accounting distinct from the single particle rule we",
+      "chapter": 3
+    },
+    {
+      "start": 344.82400152588576,
+      "end": 345.3839990844795,
+      "text": "learned earlier.",
+      "chapter": 3
+    },
+    {
+      "start": 346.08000000000953,
+      "end": 349.39999993325233,
+      "text": "Finish with a design style JEE comparison.",
+      "chapter": 4
+    },
+    {
+      "start": 349.98000009537697,
+      "end": 354.23999984742164,
+      "text": "The same forty centimeter wire can form either one square turn or one circular",
+      "chapter": 4
+    },
+    {
+      "start": 354.23999984742164,
+      "end": 356.34000022889137,
+      "text": "turn, with negligible lead length.",
+      "chapter": 4
+    },
+    {
+      "start": 357.1999998855686,
+      "end": 359.05999954224586,
+      "text": "Current is two amperes in each case.",
+      "chapter": 4
+    },
+    {
+      "start": 359.89999969483375,
+      "end": 364.2666658528741,
+      "text": "For the square, each side is ten centimeters, so enclosed area is zero point",
+      "chapter": 4
+    },
+    {
+      "start": 364.2666658528741,
+      "end": 365.39999969483375,
+      "text": "zero one square meters.",
+      "chapter": 4
+    },
+    {
+      "start": 366.05999954224586,
+      "end": 369.20000083924293,
+      "text": "The moment is zero point zero two ampere meter squared.",
+      "chapter": 4
+    },
+    {
+      "start": 369.6000004577732,
+      "end": 372.55999954224586,
+      "text": "For the circle, circumference is the wire length.",
+      "chapter": 4
+    },
+    {
+      "start": 373.280000762949,
+      "end": 377.4400006103611,
+      "text": "Radius is the length divided by two pi, and area is length squared divided by",
+      "chapter": 4
+    },
+    {
+      "start": 377.4400006103611,
+      "end": 377.89999969483375,
+      "text": "four pi.",
+      "chapter": 4
+    },
+    {
+      "start": 378.6600018310642,
+      "end": 382.08000000000953,
+      "text": "Its moment is about zero point zero two five five ampere meter squared.",
+      "chapter": 4
+    },
+    {
+      "start": 382.9400006103611,
+      "end": 386.89999969483375,
+      "text": "Dividing the circle result by the square result gives four over pi, about one",
+      "chapter": 4
+    },
+    {
+      "start": 386.89999969483375,
+      "end": 388.3599987793064,
+      "text": "point two seven.",
+      "chapter": 4
+    },
+    {
+      "start": 388.3599987793064,
+      "end": 391.89999969483375,
+      "text": "The circle has the larger moment and larger maximum torque in the same field.",
+      "chapter": 4
+    },
+    {
+      "start": 392.6799984741306,
+      "end": 395.80000122071266,
+      "text": "Notice what stayed fixed: current, wire length and one turn.",
+      "chapter": 4
+    },
+    {
+      "start": 396.6600018310642,
+      "end": 400.15128055280024,
+      "text": "Saying more turns always means a bigger moment can be misleading when each",
+      "chapter": 4
+    },
+    {
+      "start": 400.15128055280024,
+      "end": 400.33999832154274,
+      "text": "turn",
+      "chapter": 4
+    },
+    {
+      "start": 400.33999832154274,
+      "end": 400.6600018310642,
+      "text": "shrinks.",
+      "chapter": 4
+    },
+    {
+      "start": 400.6600018310642,
+      "end": 405.71999938965797,
+      "text": "If the same wire forms N equal circular turns with negligible leads, each",
+      "chapter": 4
+    },
+    {
+      "start": 405.71999938965797,
+      "end": 407.99999816895485,
+      "text": "circumference is the total length divided by N.",
+      "chapter": 4
+    },
+    {
+      "start": 408.83999832154274,
+      "end": 412.6399975586033,
+      "text": "Each turn's area falls as one over N squared, so the total moment falls as one",
+      "chapter": 4
+    },
+    {
+      "start": 412.6399975586033,
+      "end": 413.8599987793064,
+      "text": "over N at fixed current.",
+      "chapter": 4
+    },
+    {
+      "start": 414.6799984741306,
+      "end": 416.71999938965797,
+      "text": "Two such turns have half the single turn moment.",
+      "chapter": 4
+    },
+    {
+      "start": 417.34000213624,
+      "end": 421.7600003051853,
+      "text": "That does not contradict moment equal to N I A; it changes A while changing N.",
+      "chapter": 4
+    },
+    {
+      "start": 422.39999969483375,
+      "end": 425.31999786377907,
+      "text": "Before using a proportionality, write what is held constant.",
+      "chapter": 4
+    },
+    {
+      "start": 425.84999664307594,
+      "end": 429.4400006103611,
+      "text": "We now have the foundation for the moving coil galvanometer, which will be our",
+      "chapter": 4
+    },
+    {
+      "start": 429.4400006103611,
+      "end": 429.98000152588844,
+      "text": "next class.",
+      "chapter": 4
+    }
+  ]
+}

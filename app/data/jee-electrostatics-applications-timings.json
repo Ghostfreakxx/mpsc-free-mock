@@ -1,0 +1,727 @@
+{
+  "duration": 363.6960000000111,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 127.51200000000394
+    },
+    {
+      "start": 127.51200000000394,
+      "end": 247.7280000000076
+    },
+    {
+      "start": 247.7280000000076,
+      "end": 363.6960000000111
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.3600000143051147,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.0399999618530273,
+      "end": 5.519999980926514,
+      "text": "Let's build a field from its sources rather than guess a formula from the",
+      "chapter": 0
+    },
+    {
+      "start": 5.519999980926514,
+      "end": 5.739999771118164,
+      "text": "shape.",
+      "chapter": 0
+    },
+    {
+      "start": 6.440000057220459,
+      "end": 9.15999984741211,
+      "text": "For point charges, we add electric field vectors.",
+      "chapter": 0
+    },
+    {
+      "start": 9.9399995803833,
+      "end": 14.859999656677246,
+      "text": "A continuous distribution uses the same idea with tiny charge elements, called",
+      "chapter": 0
+    },
+    {
+      "start": 14.859999656677246,
+      "end": 16.239999771118164,
+      "text": "d q.",
+      "chapter": 0
+    },
+    {
+      "start": 16.239999771118164,
+      "end": 19.847692489624023,
+      "text": "Each contribution points along the source to observation direction for",
+      "chapter": 0
+    },
+    {
+      "start": 19.847692489624023,
+      "end": 20.260000228881836,
+      "text": "positive",
+      "chapter": 0
+    },
+    {
+      "start": 20.260000228881836,
+      "end": 20.639999389648438,
+      "text": "charge.",
+      "chapter": 0
+    },
+    {
+      "start": 21.579999923706055,
+      "end": 24.18000030517578,
+      "text": "Integrate components, not just positive magnitudes.",
+      "chapter": 0
+    },
+    {
+      "start": 25.040000915527344,
+      "end": 27.360000610351562,
+      "text": "For a line, d q is line density times a small length.",
+      "chapter": 0
+    },
+    {
+      "start": 28.780000686645508,
+      "end": 32.279998779296875,
+      "text": "Surface and volume densities need area and volume elements instead.",
+      "chapter": 0
+    },
+    {
+      "start": 32.900001525878906,
+      "end": 34.599998474121094,
+      "text": "Those units are not interchangeable.",
+      "chapter": 0
+    },
+    {
+      "start": 35.29999923706055,
+      "end": 39.959999084472656,
+      "text": "Now picture a thin uniformly charged ring, radius a, total charge Q.",
+      "chapter": 0
+    },
+    {
+      "start": 40.599998474121094,
+      "end": 43.97999954223633,
+      "text": "Our point lies a distance x along its central perpendicular axis.",
+      "chapter": 0
+    },
+    {
+      "start": 44.63999938964844,
+      "end": 48.540000915527344,
+      "text": "All ring elements have the same distance to that point, the square root of a",
+      "chapter": 0
+    },
+    {
+      "start": 48.540000915527344,
+      "end": 49.63999938964844,
+      "text": "squared plus x squared.",
+      "chapter": 0
+    },
+    {
+      "start": 50.560001373291016,
+      "end": 51.36000061035156,
+      "text": "Pair opposite elements.",
+      "chapter": 0
+    },
+    {
+      "start": 51.959999084472656,
+      "end": 55.459999084472656,
+      "text": "Their sideways field components cancel, while axial components add.",
+      "chapter": 0
+    },
+    {
+      "start": 55.459999084472656,
+      "end": 59.880001068115234,
+      "text": "The axial projection supplies a factor x divided by that same distance.",
+      "chapter": 0
+    },
+    {
+      "start": 60.900001525878906,
+      "end": 65.4000015258789,
+      "text": "Integrating the charge gives axial field k Q x divided by a squared plus x",
+      "chapter": 0
+    },
+    {
+      "start": 65.4000015258789,
+      "end": 66.94000244140625,
+      "text": "squared to the power three halves.",
+      "chapter": 0
+    },
+    {
+      "start": 67.58000183105469,
+      "end": 71.76000213623047,
+      "text": "The sign of x matters: for positive Q, field points away from the centre on",
+      "chapter": 0
+    },
+    {
+      "start": 71.76000213623047,
+      "end": 72.33999633789062,
+      "text": "either side.",
+      "chapter": 0
+    },
+    {
+      "start": 73.22000122070312,
+      "end": 74.91999816894531,
+      "text": "Potential is easier because it is a scalar.",
+      "chapter": 0
+    },
+    {
+      "start": 75.58000183105469,
+      "end": 80.35794693384415,
+      "text": "With zero at infinity, it is k Q divided by the square root of a squared plus",
+      "chapter": 0
+    },
+    {
+      "start": 80.35794693384415,
+      "end": 80.41999816894531,
+      "text": "x",
+      "chapter": 0
+    },
+    {
+      "start": 80.41999816894531,
+      "end": 80.66000366210938,
+      "text": "squared.",
+      "chapter": 0
+    },
+    {
+      "start": 81.4800033569336,
+      "end": 86.33999633789062,
+      "text": "Try a numerical example: one nanocoulomb, radius zero point three metres, and",
+      "chapter": 0
+    },
+    {
+      "start": 86.33999633789062,
+      "end": 88.13999938964844,
+      "text": "axial x zero point four metres.",
+      "chapter": 0
+    },
+    {
+      "start": 88.9800033569336,
+      "end": 91.94000244140625,
+      "text": "Use k equal to nine times ten to the ninth in SI units.",
+      "chapter": 0
+    },
+    {
+      "start": 93.0199966430664,
+      "end": 93.87999725341797,
+      "text": "Distance is half a metre.",
+      "chapter": 0
+    },
+    {
+      "start": 94.77999877929688,
+      "end": 98.73999786376953,
+      "text": "Potential is eighteen volts, and field is twenty eight point eight newtons per",
+      "chapter": 0
+    },
+    {
+      "start": 98.73999786376953,
+      "end": 100.08000183105469,
+      "text": "coulomb along positive x.",
+      "chapter": 0
+    },
+    {
+      "start": 100.68000030517578,
+      "end": 102.44000244140625,
+      "text": "Now think about the centre.",
+      "chapter": 0
+    },
+    {
+      "start": 102.44000244140625,
+      "end": 106.72820438482823,
+      "text": "Field is zero by cancellation, but potential is positive, thirty volts for",
+      "chapter": 0
+    },
+    {
+      "start": 106.72820438482823,
+      "end": 106.95999908447266,
+      "text": "this",
+      "chapter": 0
+    },
+    {
+      "start": 106.95999908447266,
+      "end": 107.13999938964844,
+      "text": "ring.",
+      "chapter": 0
+    },
+    {
+      "start": 107.13999938964844,
+      "end": 109.80000305175781,
+      "text": "Zero field does not mean zero potential.",
+      "chapter": 0
+    },
+    {
+      "start": 110.73999786376953,
+      "end": 114.27999877929688,
+      "text": "Differentiating potential with respect to x and changing the sign reproduces",
+      "chapter": 0
+    },
+    {
+      "start": 114.27999877929688,
+      "end": 116.30000305175781,
+      "text": "the axial field, a useful check.",
+      "chapter": 0
+    },
+    {
+      "start": 117.08000183105469,
+      "end": 119.76000213623047,
+      "text": "Far away, the ring behaves approximately like a point charge.",
+      "chapter": 0
+    },
+    {
+      "start": 120.4800033569336,
+      "end": 121.94000244140625,
+      "text": "Close to it, keep the geometry.",
+      "chapter": 0
+    },
+    {
+      "start": 122.86000061035156,
+      "end": 126.5199966430664,
+      "text": "Symmetry simplifies an integral; it does not replace the need to identify the",
+      "chapter": 0
+    },
+    {
+      "start": 126.5199966430664,
+      "end": 127.0999984741211,
+      "text": "correct components.",
+      "chapter": 0
+    },
+    {
+      "start": 127.51200000000394,
+      "end": 133.27200022888576,
+      "text": "Next, put a uniform thin insulating rod on the x axis from minus a to plus a.",
+      "chapter": 1
+    },
+    {
+      "start": 133.59199992370998,
+      "end": 136.27200022888576,
+      "text": "Observe a point a positive distance y above its midpoint.",
+      "chapter": 1
+    },
+    {
+      "start": 137.15200034332668,
+      "end": 139.67199984741603,
+      "text": "Elements on opposite sides cancel horizontal components.",
+      "chapter": 1
+    },
+    {
+      "start": 140.2919997329751,
+      "end": 142.631999885563,
+      "text": "Their upward components add for positive charge.",
+      "chapter": 1
+    },
+    {
+      "start": 143.21199980926906,
+      "end": 147.76046102641573,
+      "text": "A source element at coordinate s contributes k times line density times y",
+      "chapter": 1
+    },
+    {
+      "start": 147.76046102641573,
+      "end": 148.0719994659463,
+      "text": "times",
+      "chapter": 1
+    },
+    {
+      "start": 148.0719994659463,
+      "end": 152.11200038147365,
+      "text": "d s, divided by s squared plus y squared to the power three halves.",
+      "chapter": 1
+    },
+    {
+      "start": 153.05200091553127,
+      "end": 154.77200022888576,
+      "text": "Integrate from minus a to plus a.",
+      "chapter": 1
+    },
+    {
+      "start": 154.77200022888576,
+      "end": 159.89200106811916,
+      "text": "The result is two k times line density times a, divided by y times the square",
+      "chapter": 1
+    },
+    {
+      "start": 159.89200106811916,
+      "end": 161.51200000000392,
+      "text": "root of a squared plus y squared.",
+      "chapter": 1
+    },
+    {
+      "start": 162.39200106811916,
+      "end": 166.71200076294338,
+      "text": "Take a zero point three metres, y zero point four metres and line density two",
+      "chapter": 1
+    },
+    {
+      "start": 166.71200076294338,
+      "end": 167.6920003051797,
+      "text": "nanocoulombs per metre.",
+      "chapter": 1
+    },
+    {
+      "start": 168.17199984741603,
+      "end": 170.27199832153713,
+      "text": "We get fifty four newtons per coulomb upward.",
+      "chapter": 1
+    },
+    {
+      "start": 171.05200091553127,
+      "end": 174.8520001525918,
+      "text": "If length becomes very large while line density stays fixed, the end position",
+      "chapter": 1
+    },
+    {
+      "start": 174.8520001525918,
+      "end": 177.67199984741603,
+      "text": "factor approaches one, giving the infinite line field.",
+      "chapter": 1
+    },
+    {
+      "start": 178.65199938965236,
+      "end": 181.67199984741603,
+      "text": "Keeping total charge fixed instead changes line density and is a different",
+      "chapter": 1
+    },
+    {
+      "start": 181.67199984741603,
+      "end": 181.91200152588283,
+      "text": "limit.",
+      "chapter": 1
+    },
+    {
+      "start": 182.47199908447658,
+      "end": 186.39200106811916,
+      "text": "A finite rod does not have the translational symmetry needed for a simple",
+      "chapter": 1
+    },
+    {
+      "start": 186.39200106811916,
+      "end": 187.99199954224025,
+      "text": "cylindrical Gauss law field shortcut.",
+      "chapter": 1
+    },
+    {
+      "start": 188.97199908447658,
+      "end": 189.57200137329494,
+      "text": "Now a dipole.",
+      "chapter": 1
+    },
+    {
+      "start": 190.39200106811916,
+      "end": 194.75199786377345,
+      "text": "Put minus one nanocoulomb at x minus zero point one metres and plus one",
+      "chapter": 1
+    },
+    {
+      "start": 194.75199786377345,
+      "end": 197.1920003051797,
+      "text": "nanocoulomb at x plus zero point one metres.",
+      "chapter": 1
+    },
+    {
+      "start": 197.85199633789455,
+      "end": 200.7119969482461,
+      "text": "Our observation point is x plus zero point three metres.",
+      "chapter": 1
+    },
+    {
+      "start": 201.5920018310586,
+      "end": 204.01200000000392,
+      "text": "Distances are zero point two and zero point four metres.",
+      "chapter": 1
+    },
+    {
+      "start": 204.31200305176174,
+      "end": 207.87200061035549,
+      "text": "The positive charge contributes two hundred twenty five newtons per coulomb",
+      "chapter": 1
+    },
+    {
+      "start": 207.87200061035549,
+      "end": 211.93199816894924,
+      "text": "rightward; the negative charge contributes fifty six point two five leftward.",
+      "chapter": 1
+    },
+    {
+      "start": 211.93199816894924,
+      "end": 216.47199908447658,
+      "text": "Subtract: exact net field is one hundred sixty eight point seven five newtons",
+      "chapter": 1
+    },
+    {
+      "start": 216.47199908447658,
+      "end": 217.3919972534219,
+      "text": "per coulomb rightward.",
+      "chapter": 1
+    },
+    {
+      "start": 218.1920003051797,
+      "end": 222.13200274658595,
+      "text": "The dipole moment is charge magnitude times separation, two times ten to the",
+      "chapter": 1
+    },
+    {
+      "start": 222.13200274658595,
+      "end": 223.2919987793008,
+      "text": "minus ten coulomb metres.",
+      "chapter": 1
+    },
+    {
+      "start": 223.7720021362344,
+      "end": 228.5748585815469,
+      "text": "The familiar far axis formula, two k p divided by r cubed, gives about one",
+      "chapter": 1
+    },
+    {
+      "start": 228.5748585815469,
+      "end": 230.3919972534219,
+      "text": "hundred thirty three point three three.",
+      "chapter": 1
+    },
+    {
+      "start": 230.3919972534219,
+      "end": 233.2720021362344,
+      "text": "That is about twenty one percent below the exact result here.",
+      "chapter": 1
+    },
+    {
+      "start": 233.2720021362344,
+      "end": 237.8919972534219,
+      "text": "The exact axial expression is two k p r divided by the square of r squared",
+      "chapter": 1
+    },
+    {
+      "start": 237.8919972534219,
+      "end": 240.05200091553127,
+      "text": "minus a squared, for r greater than a.",
+      "chapter": 1
+    },
+    {
+      "start": 240.6720036621133,
+      "end": 244.1920003051797,
+      "text": "It becomes the far field formula only when r is much larger than a.",
+      "chapter": 1
+    },
+    {
+      "start": 244.97199908447658,
+      "end": 247.7280000000076,
+      "text": "A convenient formula needs a valid approximation, not just familiar symbols.",
+      "chapter": 1
+    },
+    {
+      "start": 247.7280000000076,
+      "end": 250.58799989510342,
+      "text": "Let's finish on the dipole's perpendicular bisector.",
+      "chapter": 2
+    },
+    {
+      "start": 251.4280000476913,
+      "end": 255.52800019074246,
+      "text": "A point there is equally distant from positive and negative charges, so their",
+      "chapter": 2
+    },
+    {
+      "start": 255.52800019074246,
+      "end": 258.96799977112573,
+      "text": "scalar potentials cancel exactly, choosing zero at infinity.",
+      "chapter": 2
+    },
+    {
+      "start": 259.34799988556665,
+      "end": 261.02800019074243,
+      "text": "But the fields do not cancel.",
+      "chapter": 2
+    },
+    {
+      "start": 262.24800045777124,
+      "end": 266.1879990844802,
+      "text": "Components along the bisector cancel; components along the dipole axis point",
+      "chapter": 2
+    },
+    {
+      "start": 266.1879990844802,
+      "end": 268.2680009155349,
+      "text": "from positive toward negative and add.",
+      "chapter": 2
+    },
+    {
+      "start": 268.7680009155349,
+      "end": 270.96799977112573,
+      "text": "The net field is opposite the dipole moment.",
+      "chapter": 2
+    },
+    {
+      "start": 270.96799977112573,
+      "end": 276.56800015259546,
+      "text": "Its exact magnitude is k p divided by r squared plus a squared to the power",
+      "chapter": 2
+    },
+    {
+      "start": 276.56800015259546,
+      "end": 277.1480000763015,
+      "text": "three halves.",
+      "chapter": 2
+    },
+    {
+      "start": 278.08800061035913,
+      "end": 281.00799877930444,
+      "text": "Far away this approaches k p divided by r cubed.",
+      "chapter": 2
+    },
+    {
+      "start": 281.6479981689529,
+      "end": 284.4879983215408,
+      "text": "Once again, zero potential does not imply zero field.",
+      "chapter": 2
+    },
+    {
+      "start": 285.16799862671655,
+      "end": 287.928000762947,
+      "text": "Now place a fixed dipole in a uniform external field.",
+      "chapter": 2
+    },
+    {
+      "start": 288.867999389656,
+      "end": 292.50799877930444,
+      "text": "Equal opposite forces give zero net force, but generally form a torque.",
+      "chapter": 2
+    },
+    {
+      "start": 293.3879998474197,
+      "end": 295.6479981689529,
+      "text": "Torque magnitude is p E sine theta.",
+      "chapter": 2
+    },
+    {
+      "start": 296.3879998474197,
+      "end": 301.367999389656,
+      "text": "Orientation energy is minus p E cosine theta, choosing zero when the dipole is",
+      "chapter": 2
+    },
+    {
+      "start": 301.367999389656,
+      "end": 301.90800030518335,
+      "text": "perpendicular.",
+      "chapter": 2
+    },
+    {
+      "start": 302.928000762947,
+      "end": 306.50799877930444,
+      "text": "Parallel alignment has minimum energy and is stable; opposite alignment has",
+      "chapter": 2
+    },
+    {
+      "start": 306.50799877930444,
+      "end": 308.2079995422439,
+      "text": "maximum energy and is unstable.",
+      "chapter": 2
+    },
+    {
+      "start": 308.9879983215408,
+      "end": 309.84799893189233,
+      "text": "Let's work a rotation.",
+      "chapter": 2
+    },
+    {
+      "start": 310.58800061035913,
+      "end": 314.19261516160987,
+      "text": "Charge magnitude is two nanocoulombs and separation zero point zero two",
+      "chapter": 2
+    },
+    {
+      "start": 314.19261516160987,
+      "end": 314.5479996948318,
+      "text": "metres,",
+      "chapter": 2
+    },
+    {
+      "start": 315.1280015258865,
+      "end": 318.5479996948318,
+      "text": "so dipole moment is four times ten to the minus eleven coulomb metres.",
+      "chapter": 2
+    },
+    {
+      "start": 319.1879990844802,
+      "end": 322.1879990844802,
+      "text": "External field is two times ten to the fifth newtons per coulomb.",
+      "chapter": 2
+    },
+    {
+      "start": 323.0679963378982,
+      "end": 325.00799877930444,
+      "text": "Rotate slowly from parallel to perpendicular.",
+      "chapter": 2
+    },
+    {
+      "start": 325.60799725342554,
+      "end": 327.0679963378982,
+      "text": "What sign should external work have?",
+      "chapter": 2
+    },
+    {
+      "start": 327.0679963378982,
+      "end": 328.2879975586013,
+      "text": "Think first.",
+      "chapter": 2
+    },
+    {
+      "start": 328.82799847412866,
+      "end": 332.82799847412866,
+      "text": "You move away from the minimum energy orientation, so stored energy increases.",
+      "chapter": 2
+    },
+    {
+      "start": 333.48800213623804,
+      "end": 336.00799877930444,
+      "text": "The increase is p E, eight microjoules.",
+      "chapter": 2
+    },
+    {
+      "start": 336.7879975586013,
+      "end": 340.4679978637771,
+      "text": "External work is plus eight microjoules, while field work is minus eight.",
+      "chapter": 2
+    },
+    {
+      "start": 341.00799877930444,
+      "end": 344.48800213623804,
+      "text": "We assumed negligible kinetic energy change and no other transfers.",
+      "chapter": 2
+    },
+    {
+      "start": 345.367999389656,
+      "end": 348.5280030517654,
+      "text": "Zero torque at the starting alignment does not mean zero work over the entire",
+      "chapter": 2
+    },
+    {
+      "start": 348.5280030517654,
+      "end": 348.92799694824976,
+      "text": "rotation.",
+      "chapter": 2
+    },
+    {
+      "start": 349.42799694824976,
+      "end": 351.6879990844802,
+      "text": "And a zero net force does not mean zero torque.",
+      "chapter": 2
+    },
+    {
+      "start": 352.30800183106226,
+      "end": 356.5679963378982,
+      "text": "For JEE, state the source geometry, whether a far field approximation applies,",
+      "chapter": 2
+    },
+    {
+      "start": 356.5679963378982,
+      "end": 359.3480027465896,
+      "text": "the potential reference and whose work is requested.",
+      "chapter": 2
+    },
+    {
+      "start": 360.0280030517654,
+      "end": 363.10799725342554,
+      "text": "Then the signs and equations tell one consistent physical story.",
+      "chapter": 2
+    }
+  ]
+}

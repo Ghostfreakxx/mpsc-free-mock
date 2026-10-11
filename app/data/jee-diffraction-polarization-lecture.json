@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Single-slit diffraction and polarization",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 16",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Single-slit diffraction",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/4-1-single-slit-diffraction"
+    },
+    {
+      "title": "OpenStax: Polarization",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/1-7-polarization"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "One slit can still produce cancellation",
+      "formula": "Single slit width a: minima a sin theta = m lambda, m = 1, 2, ...",
+      "points": [
+        "Different portions of one coherent aperture contribute waves.",
+        "At the first minimum, paired halves differ by half a wavelength.",
+        "Theta = 0 is a maximum, not the m = 0 minimum."
+      ],
+      "script": "Hey, welcome back. We needed two slits for Young's experiment, but one slit can also produce bright and dark structure. Different parts of the same illuminated aperture send contributions toward a screen. Their relative phases depend on direction. At the center, the paths from all parts of the slit are equal in the far-field model, so the contributions reinforce. Move away from the center and the phases vary across the aperture. For the first dark direction, the path difference between the slit edges is one wavelength. Pair each point in the upper half with the corresponding point half a slit width below. Each pair differs by half a wavelength, so its two contributions cancel. The first minimum satisfies a sine theta equal to wavelength. Higher minima satisfy a sine theta equal to m wavelengths, for positive integers m, with corresponding symmetric negative angles. Do not include m equal to zero as a minimum. At zero angle the contributions line up, producing the central maximum. Our relation assumes a uniformly illuminated rectangular slit and Fraunhofer conditions, such as a far screen or a lens focal plane. Real finite-distance diffraction can require a different description. The key idea is that one opening contains many coherent contributing points; you do not need a second physical slit to get cancellation."
+    },
+    {
+      "title": "The central diffraction maximum is twice as wide",
+      "formula": "Small-angle screen width of central maximum W = 2 lambda D/a",
+      "points": [
+        "The central maximum lies between the first minima on both sides.",
+        "Narrowing the slit broadens the angular pattern.",
+        "This central width differs from Young's fringe spacing."
+      ],
+      "script": "The first single-slit minima occur symmetrically where sine theta equals plus or minus wavelength over slit width. For small angles, each first minimum lies approximately wavelength D over a from the center on a screen a distance D away. The full central-maximum width is therefore twice wavelength D over a. Try wavelength five hundred nanometers, slit width zero point two millimeters, and screen distance two meters. One first minimum is five millimeters from the center. The central maximum extends from negative five to positive five millimeters, giving a full width of ten millimeters. What if we halve the slit width? Pause before calculating. The central maximum doubles to twenty millimeters. A narrower opening spreads the light more in angle. This is the opposite of the naive idea that a smaller slit must make a smaller patch. Increasing wavelength also broadens the pattern. The side maxima are weaker than the central one; their exact locations are not given by the minimum equation. In Young's ideal two-slit formula, neighboring fringes have spacing wavelength D over slit separation. Here we are measuring the full width between the first minima of a single-slit envelope, which has the factor two. Finite-width double slits can show both: interference fringes inside a diffraction envelope. Always identify which width the question is asking for."
+    },
+    {
+      "title": "Polarization describes the electric-field direction",
+      "formula": "For plane-polarized light, E oscillates along one transverse direction",
+      "points": [
+        "Light is transverse; ordinary sound in air is longitudinal.",
+        "Unpolarized light has fluctuating transverse polarization directions.",
+        "An ideal Polaroid transmits the field component along its transmission axis."
+      ],
+      "script": "Diffraction shows light's wave nature. Polarization tells us that the electromagnetic wave is transverse. For a wave traveling forward, its electric field oscillates perpendicular to the propagation direction. Plane-polarized light has a fixed electric-field oscillation direction in that transverse plane. Unpolarized light has rapidly fluctuating polarization directions in the usual statistical description. It is not a beam that needs to turn its propagation direction to change polarization. An ideal polarizing sheet transmits the electric-field component along its transmission axis and blocks the perpendicular component. On our board, the vertical arrow marks the allowed electric-field direction, not the direction in which the ray travels. Two ideal polarizers with parallel axes can transmit the selected component. If their axes are perpendicular, light transmitted by the first is blocked by the second. Ordinary longitudinal sound waves in air do not have an independent transverse oscillation direction to select this way. That contrast makes polarization strong evidence for light's transverse nature. Polarizing filters can reduce suitably polarized reflected glare and are used in optical analysis and displays. They do not eliminate every reflected ray regardless of angle. Real filters also have finite transmission and leakage; we'll use ideal ones for the numerical examples. Keep field direction, propagation direction, and the filter's transmission axis distinct in your sketch."
+    },
+    {
+      "title": "Malus's law needs the correct input intensity",
+      "formula": "Polarized input: I = I_in cos squared theta; unpolarized through first ideal polarizer: I_in/2",
+      "points": [
+        "Theta is between the incident polarization and analyzer axis.",
+        "The half-intensity rule applies to unpolarized input, not every polarizer.",
+        "With several filters, apply the law at each successive stage."
+      ],
+      "script": "Take already plane-polarized light and an analyzer whose axis makes angle theta with that polarization. The transmitted electric-field amplitude is the incident amplitude times cosine theta. Since intensity is proportional to amplitude squared, transmitted intensity is input intensity times cosine squared theta. This is Malus's law. At sixty degrees, cosine is one half, so intensity becomes one quarter of the polarized input. Now start with unpolarized light of intensity one hundred units. An ideal first polarizer transmits half on average, giving fifty. An analyzer at sixty degrees to the first axis transmits a quarter of fifty, or twelve point five units. Do not divide by two a second time just because there is another sheet. The light entering that second sheet is polarized. Here's a nice puzzle. Two crossed polarizers block the ideal beam. Put a third between them at forty-five degrees to each outer axis. Does transmission remain zero? Pause. After the first sheet we have fifty units. The middle passes half, giving twenty-five, and rotates the selected polarization to its own axis. The last passes half again, giving twelve point five. An extra filter can therefore increase the output from zero in this setup. Track both intensity and polarization direction after each sheet, not just the original beam."
+    },
+    {
+      "title": "Brewster's angle polarizes reflected light",
+      "formula": "For transparent nonmagnetic dielectrics: tan i_B = n2/n1; i_B + r_B = 90 degrees",
+      "points": [
+        "At Brewster incidence, reflected and refracted rays are perpendicular.",
+        "Ideal reflected light is polarized perpendicular to the incidence plane.",
+        "Brewster's angle is not the critical angle for total internal reflection."
+      ],
+      "script": "Polarization can also arise by reflection at a transparent dielectric boundary. At Brewster's angle, the reflected and refracted rays are perpendicular. For ordinary nonmagnetic transparent media, tangent of that incidence angle equals the transmitted medium's index divided by the incident medium's index. With air as one and glass as one point five, Brewster's angle is about fifty-six point three degrees. The refraction angle is about thirty-three point seven, and the two add to ninety. For ideal unpolarized input at that angle, the reflected light is linearly polarized perpendicular to the plane of incidence. The transmitted light is generally not completely polarized. The plane of incidence contains the incident ray and the normal; don't confuse it with the surface itself. Now compare our earlier critical angle of forty-one point eight degrees for glass toward air. That was a different direction and a different phenomenon. Total internal reflection requires higher-to-lower index and an incidence angle above the critical value. Brewster incidence describes suppression of one reflected polarization component. For air entering ordinary glass, Brewster reflection is possible even though total internal reflection is not. Our final optics checklist is: identify the geometry, decide whether the question concerns interference, diffraction, or polarization, state the assumptions, and only then choose the formula. The introductory optics sequence is now connected, but detailed mixed problems and derivations still deserve their own practice."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "For a uniformly illuminated single slit, the first far-field minimum satisfies:",
+      "options": [
+        "a sin theta = lambda",
+        "a sin theta = 0",
+        "a sin theta = lambda/2",
+        "a sin theta = 2.5 lambda"
+      ],
+      "answer": 0,
+      "explanation": "Pairing the slit halves gives half-wavelength phase differences at edge difference lambda."
+    },
+    {
+      "question": "lambda = 500 nm, D = 2 m, a = 0.2 mm. Full central maximum width is:",
+      "options": [
+        "5 mm",
+        "10 mm",
+        "1 mm",
+        "20 mm"
+      ],
+      "answer": 1,
+      "explanation": "W = 2 lambda D/a = 0.01 m."
+    },
+    {
+      "question": "Halving a single slit width at fixed wavelength and distance makes the central maximum:",
+      "options": [
+        "Half as wide",
+        "Twice as wide",
+        "Unchanged",
+        "Disappear"
+      ],
+      "answer": 1,
+      "explanation": "W is inversely proportional to a."
+    },
+    {
+      "question": "Plane-polarized light entering an analyzer at 60 degrees transmits what fraction ideally?",
+      "options": [
+        "1/2",
+        "3/4",
+        "1/4",
+        "1"
+      ],
+      "answer": 2,
+      "explanation": "cos squared 60 = 1/4."
+    },
+    {
+      "question": "Unpolarized intensity 100 enters two ideal polarizers separated by 60 degrees. Output is:",
+      "options": [
+        "25",
+        "50",
+        "0",
+        "12.5"
+      ],
+      "answer": 3,
+      "explanation": "100/2 = 50 after the first, then 50/4 = 12.5."
+    },
+    {
+      "question": "For air n1 = 1 toward glass n2 = 1.5, Brewster's angle is approximately:",
+      "options": [
+        "41.8 degrees",
+        "56.3 degrees",
+        "90 degrees",
+        "19.5 degrees"
+      ],
+      "answer": 1,
+      "explanation": "atan(1.5) = 56.31 degrees."
+    }
+  ]
+}

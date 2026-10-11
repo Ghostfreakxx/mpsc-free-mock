@@ -1,0 +1,442 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.340
+Hey, welcome back.
+
+00:00:01.920 --> 00:00:03.980
+We have learned how charges move through circuits.
+
+00:00:04.700 --> 00:00:08.120
+Now we meet a material whose charge carriers we can deliberately change.
+
+00:00:08.880 --> 00:00:13.280
+In a semiconductor, electrons can be excited into a conduction band, leaving
+
+00:00:13.280 --> 00:00:14.640
+holes in the valence band.
+
+00:00:15.180 --> 00:00:18.806
+A hole is a missing electron state that behaves like a mobile positive
+
+00:00:18.806 --> 00:00:19.220
+carrier;
+
+00:00:19.740 --> 00:00:21.780
+it is not a proton traveling through the solid.
+
+00:00:22.380 --> 00:00:26.800
+In a pure, intrinsic semiconductor, thermal generation creates electrons and
+
+00:00:26.800 --> 00:00:29.760
+holes in pairs, so their concentrations are equal.
+
+00:00:30.820 --> 00:00:33.920
+Doping introduces a small controlled amount of suitable impurity.
+
+00:00:34.780 --> 00:00:38.540
+In silicon, a donor impurity can supply an extra conduction electron.
+
+00:00:39.620 --> 00:00:42.600
+Electrons become the majority carriers, giving n type material.
+
+00:00:43.300 --> 00:00:47.460
+An acceptor impurity produces holes as the majority carriers, giving p type
+
+00:00:47.460 --> 00:00:47.820
+material.
+
+00:00:48.840 --> 00:00:51.580
+The other carrier is still present as a minority carrier.
+
+00:00:52.280 --> 00:00:56.080
+Here is the trap: n type does not mean the whole sample has a net negative
+
+00:00:56.080 --> 00:00:56.460
+charge.
+
+00:00:57.080 --> 00:01:00.320
+The ionized donor charges balance the added mobile electrons.
+
+00:01:01.060 --> 00:01:04.400
+Likewise, p type is not an electrically positive chunk of material.
+
+00:01:05.780 --> 00:01:06.700
+Pause and test the wording.
+
+00:01:07.300 --> 00:01:10.920
+If someone says holes are the only carriers in p type material, is that
+
+00:01:10.920 --> 00:01:11.260
+correct?
+
+00:01:11.700 --> 00:01:12.060
+No.
+
+00:01:12.480 --> 00:01:14.640
+They are the majority, not the only carriers.
+
+00:01:15.420 --> 00:01:19.420
+Temperature also affects carrier concentration, so semiconductor conductivity
+
+00:01:19.420 --> 00:01:22.440
+is not described by a fixed universal resistance.
+
+00:01:22.600 --> 00:01:26.767
+For our JEE questions, begin with the carrier picture and electrical
+
+00:01:26.767 --> 00:01:27.380
+neutrality
+
+00:01:27.380 --> 00:01:27.768
+before moving to a junction.
+
+00:01:27.768 --> 00:01:33.188
+Bring p type and n type regions together, and something happens even without a
+
+00:01:33.188 --> 00:01:33.488
+battery.
+
+00:01:34.188 --> 00:01:37.388
+Electrons diffuse from the electron rich n side toward the p side.
+
+00:01:38.288 --> 00:01:39.928
+Holes diffuse in the opposite direction.
+
+00:01:40.688 --> 00:01:44.128
+Near the junction, recombination removes mobile electrons and holes.
+
+00:01:44.828 --> 00:01:49.040
+This leaves a region depleted of mobile majority carriers, but not empty of
+
+00:01:49.040 --> 00:01:49.208
+all
+
+00:01:49.208 --> 00:01:49.548
+charge.
+
+00:01:50.368 --> 00:01:54.728
+Positive ionized donors remain on the n side, and negative ionized acceptors
+
+00:01:54.728 --> 00:01:55.928
+remain on the p side.
+
+00:01:56.528 --> 00:02:00.248
+These ions are part of the crystal and do not wander through the circuit like
+
+00:02:00.248 --> 00:02:00.928
+mobile carriers.
+
+00:02:01.568 --> 00:02:05.852
+Their electric field points from the positive n side ions toward the negative
+
+00:02:05.852 --> 00:02:05.908
+p
+
+00:02:05.908 --> 00:02:06.508
+side ions.
+
+00:02:07.048 --> 00:02:11.268
+That field opposes further majority carrier diffusion and establishes a
+
+00:02:11.268 --> 00:02:11.948
+potential barrier.
+
+00:02:12.708 --> 00:02:17.208
+At thermal equilibrium, diffusion and drift currents balance, giving zero net
+
+00:02:17.208 --> 00:02:18.788
+current through the unbiased junction.
+
+00:02:19.488 --> 00:02:21.848
+Do not call this unbiased state reverse bias.
+
+00:02:22.508 --> 00:02:26.148
+Reverse bias requires an externally applied voltage of the appropriate
+
+00:02:26.148 --> 00:02:26.628
+polarity.
+
+00:02:27.188 --> 00:02:30.348
+Picture people crossing a doorway because one room is crowded.
+
+00:02:31.188 --> 00:02:34.688
+Their movement builds an opposing influence until the net flow balances.
+
+00:02:35.408 --> 00:02:38.688
+The analogy helps with the direction, but the real barrier comes from
+
+00:02:38.688 --> 00:02:40.608
+electrostatics, not a physical wall.
+
+00:02:41.448 --> 00:02:44.088
+Think for a moment: is the depletion layer free of charge?
+
+00:02:44.748 --> 00:02:45.068
+No.
+
+00:02:45.448 --> 00:02:48.688
+It has fixed space charge and relatively few mobile carriers.
+
+00:02:49.708 --> 00:02:52.968
+Distinguish mobile carriers, fixed ions, and net current.
+
+00:02:52.968 --> 00:02:57.568
+Those three ideas explain why the junction responds so differently to the two
+
+00:02:57.568 --> 00:02:58.168
+battery connections.
+
+00:02:58.632 --> 00:03:04.032
+Connect the p side toward a battery's positive terminal and the n side toward
+
+00:03:04.032 --> 00:03:05.032
+its negative terminal.
+
+00:03:05.852 --> 00:03:07.452
+That is forward bias.
+
+00:03:08.412 --> 00:03:12.732
+The applied voltage reduces the junction barrier and narrows the depletion
+
+00:03:12.732 --> 00:03:15.692
+region, allowing a rapidly increasing current.
+
+00:03:16.952 --> 00:03:20.712
+Reverse the connection, and the barrier grows while the depletion region
+
+00:03:20.712 --> 00:03:21.132
+widens.
+
+00:03:22.272 --> 00:03:26.992
+A small reverse current can still flow before breakdown; real reverse current
+
+00:03:26.992 --> 00:03:31.212
+is not exactly zero and can depend on temperature and the device.
+
+00:03:32.152 --> 00:03:36.712
+On an I versus V graph, forward current rises nonlinearly.
+
+00:03:36.712 --> 00:03:41.632
+In reverse bias it remains small over a range, then can become large in
+
+00:03:41.632 --> 00:03:42.012
+breakdown.
+
+00:03:42.992 --> 00:03:46.952
+Ordinary diodes must stay within their voltage, current, and power ratings.
+
+00:03:47.392 --> 00:03:50.452
+Now let's use an explicitly simplified circuit model.
+
+00:03:51.792 --> 00:03:55.732
+Assume a forward conducting silicon diode has a constant drop of zero point
+
+00:03:55.732 --> 00:03:56.612
+seven volts.
+
+00:03:57.752 --> 00:04:00.732
+A five volt supply drives it through a one kilo ohm resistor.
+
+00:04:01.652 --> 00:04:05.552
+The resistor gets five minus zero point seven, or four point three volts.
+
+00:04:06.432 --> 00:04:10.192
+Divide by one thousand ohms: current is four point three milliamperes.
+
+00:04:11.012 --> 00:04:15.252
+The resistor limits current; connecting a diode directly to an ideal voltage
+
+00:04:15.252 --> 00:04:17.632
+source can be a poor model of a safe circuit.
+
+00:04:18.532 --> 00:04:22.812
+The zero point seven value is not a sharp universal physical threshold, and it
+
+00:04:22.812 --> 00:04:24.492
+changes with current and temperature.
+
+00:04:25.792 --> 00:04:28.732
+For JEE, first read the model specified in the question.
+
+00:04:29.472 --> 00:04:33.852
+An ideal diode has zero forward drop, whereas this constant drop approximation
+
+00:04:33.852 --> 00:04:34.772
+does not.
+
+00:04:35.136 --> 00:04:37.956
+An alternating source changes polarity.
+
+00:04:38.456 --> 00:04:42.836
+A diode can turn that alternating signal into a load current that does not
+
+00:04:42.836 --> 00:04:43.676
+reverse direction.
+
+00:04:44.476 --> 00:04:49.164
+In a simple half wave rectifier, a diode and resistor are in series with the
+
+00:04:49.164 --> 00:04:49.596
+source.
+
+00:04:50.476 --> 00:04:53.376
+Choose the orientation that conducts on the positive half cycle.
+
+00:04:54.396 --> 00:04:59.036
+During that half cycle the ideal diode acts like a short circuit, so the load
+
+00:04:59.036 --> 00:05:00.416
+follows the positive input.
+
+00:05:01.236 --> 00:05:05.856
+During the negative half cycle it blocks, and the ideal load voltage is zero.
+
+00:05:06.576 --> 00:05:08.696
+The result is a sequence of positive pulses.
+
+00:05:09.596 --> 00:05:13.936
+It has a nonzero average, but it is not smooth, constant direct voltage.
+
+00:05:14.916 --> 00:05:19.896
+For a sinusoidal input with peak V m, the ideal average over a complete cycle
+
+00:05:19.896 --> 00:05:22.096
+is V m divided by pi.
+
+00:05:22.876 --> 00:05:26.296
+The root mean square output is V m divided by two.
+
+00:05:27.136 --> 00:05:31.356
+These formulas assume an ideal diode, a resistive load, and no smoothing
+
+00:05:31.356 --> 00:05:31.816
+capacitor.
+
+00:05:31.816 --> 00:05:37.066
+For a ten volt peak input, the average is about three point one eight volts
+
+00:05:37.066 --> 00:05:37.276
+and
+
+00:05:37.276 --> 00:05:39.196
+the root mean square value is five volts.
+
+00:05:40.176 --> 00:05:41.216
+Those are different quantities.
+
+00:05:41.216 --> 00:05:42.196
+Pause before answering a frequency question.
+
+00:05:42.196 --> 00:05:46.796
+A fifty hertz input makes fifty positive output pulses per second in this half
+
+00:05:46.796 --> 00:05:48.836
+wave circuit, not a hundred.
+
+00:05:48.836 --> 00:05:52.976
+If the diode is reversed, the passed pulses have the opposite sign under the
+
+00:05:52.976 --> 00:05:53.996
+same voltage reference.
+
+00:05:54.836 --> 00:05:57.776
+Real diode drop and source resistance change the waveform.
+
+00:05:58.716 --> 00:06:02.176
+Keep the circuit orientation and the stated approximation attached to the
+
+00:06:02.176 --> 00:06:02.376
+formula.
+
+00:06:02.688 --> 00:06:05.408
+Can we use the energy in the other half cycle too?
+
+00:06:05.988 --> 00:06:09.448
+A full wave rectifier does that by redirecting current so the load current
+
+00:06:09.448 --> 00:06:10.428
+keeps the same direction.
+
+00:06:10.808 --> 00:06:12.088
+In a bridge there are four diodes.
+
+00:06:12.648 --> 00:06:16.090
+One pair conducts during one half cycle, and the other pair conducts during
+
+00:06:16.090 --> 00:06:16.228
+the
+
+00:06:16.228 --> 00:06:17.048
+opposite half cycle.
+
+00:06:18.088 --> 00:06:22.028
+Trace a complete path from the currently positive source terminal, through a
+
+00:06:22.028 --> 00:06:25.068
+conducting diode, through the load, and back through the other conducting
+
+00:06:25.068 --> 00:06:25.408
+diode.
+
+00:06:26.108 --> 00:06:28.008
+Do not assume all four conduct at once.
+
+00:06:28.528 --> 00:06:32.968
+For ideal diodes and a resistive load, the output is the absolute value of the
+
+00:06:32.968 --> 00:06:33.828
+sinusoidal input.
+
+00:06:34.568 --> 00:06:37.088
+Its average is twice V m divided by pi.
+
+00:06:38.008 --> 00:06:41.388
+With a ten volt peak input, that is about six point three seven volts.
+
+00:06:42.128 --> 00:06:46.468
+A fifty hertz input now gives one hundred output pulses each second, so ripple
+
+00:06:46.468 --> 00:06:48.248
+frequency is twice the source frequency.
+
+00:06:48.948 --> 00:06:52.382
+Under a constant zero point seven volt drop model, two conducting bridge
+
+00:06:52.382 --> 00:06:52.668
+diodes
+
+00:06:52.668 --> 00:06:56.822
+reduce the output peak to approximately eight point six volts for that same
+
+00:06:56.822 --> 00:06:56.988
+ten
+
+00:06:56.988 --> 00:06:57.648
+volt peak source.
+
+00:06:58.098 --> 00:07:02.248
+Do not use the ideal average formula unchanged for the entire real waveform.
+
+00:07:03.248 --> 00:07:06.988
+A capacitor across the load can charge near the peaks and discharge between
+
+00:07:06.988 --> 00:07:08.088
+them, reducing ripple.
+
+00:07:08.728 --> 00:07:12.333
+It does not guarantee perfectly constant output, and the result depends on
+
+00:07:12.333 --> 00:07:12.528
+load
+
+00:07:12.528 --> 00:07:13.328
+and capacitance.
+
+00:07:13.968 --> 00:07:16.248
+Our graphs show the unsmoothed ideal case.
+
+00:07:16.728 --> 00:07:20.988
+For JEE, separate peak, average, root mean square, and ripple frequency, then
+
+00:07:20.988 --> 00:07:23.348
+count the conducting diode drops in the chosen circuit.

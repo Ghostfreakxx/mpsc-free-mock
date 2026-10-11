@@ -1,0 +1,613 @@
+{
+  "duration": 328.32000000000977,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 110.7600000000033
+    },
+    {
+      "start": 110.7600000000033,
+      "end": 220.36800000000656
+    },
+    {
+      "start": 220.36800000000656,
+      "end": 328.32000000000977
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.4199999570846558,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.059999942779541,
+      "end": 5.519999980926514,
+      "text": "Let's turn the photoelectric equation into a graph we can actually read.",
+      "chapter": 0
+    },
+    {
+      "start": 6.260000228881836,
+      "end": 11.5,
+      "text": "The fastest emitted electrons have kinetic energy h times frequency minus the",
+      "chapter": 0
+    },
+    {
+      "start": 11.5,
+      "end": 12.020000457763672,
+      "text": "work function.",
+      "chapter": 0
+    },
+    {
+      "start": 12.760000228881836,
+      "end": 17.1200008392334,
+      "text": "A retarding potential stops even those electrons when e times the stopping",
+      "chapter": 0
+    },
+    {
+      "start": 17.1200008392334,
+      "end": 19.860000610351562,
+      "text": "potential magnitude equals that maximum energy.",
+      "chapter": 0
+    },
+    {
+      "start": 20.639999389648438,
+      "end": 24.899999618530273,
+      "text": "So stopping potential versus frequency is a straight line above threshold.",
+      "chapter": 0
+    },
+    {
+      "start": 25.520000457763672,
+      "end": 27.520000457763672,
+      "text": "Its slope is h divided by e.",
+      "chapter": 0
+    },
+    {
+      "start": 28.239999771118164,
+      "end": 32.599998474121094,
+      "text": "Its horizontal intercept is the threshold frequency, and its extrapolated",
+      "chapter": 0
+    },
+    {
+      "start": 32.599998474121094,
+      "end": 35.97999954223633,
+      "text": "vertical intercept is minus the work function divided by e.",
+      "chapter": 0
+    },
+    {
+      "start": 36.70000076293945,
+      "end": 40.52000045776367,
+      "text": "That vertical intercept is a mathematical extrapolation, not an emitted",
+      "chapter": 0
+    },
+    {
+      "start": 40.52000045776367,
+      "end": 42.040000915527344,
+      "text": "electron measurement below threshold.",
+      "chapter": 0
+    },
+    {
+      "start": 42.959999084472656,
+      "end": 46.119998931884766,
+      "text": "Take an illustrative surface with work function two electron volts.",
+      "chapter": 0
+    },
+    {
+      "start": 46.959999084472656,
+      "end": 50.939998626708984,
+      "text": "Use h over e approximately four point one three six times ten to the minus",
+      "chapter": 0
+    },
+    {
+      "start": 50.939998626708984,
+      "end": 52.2599983215332,
+      "text": "fifteen volt seconds.",
+      "chapter": 0
+    },
+    {
+      "start": 58.7599983215332,
+      "end": 59.47027869536498,
+      "text": "At frequency six times ten to the fourteen hertz, stopping potential is zero",
+      "chapter": 0
+    },
+    {
+      "start": 59.47027869536498,
+      "end": 59.7599983215332,
+      "text": "point four eight one six volts.",
+      "chapter": 0
+    },
+    {
+      "start": 59.7599983215332,
+      "end": 63.380001068115234,
+      "text": "At ten times ten to the fourteen hertz, it is two point one three six volts.",
+      "chapter": 0
+    },
+    {
+      "start": 64.41999816894531,
+      "end": 67.5199966430664,
+      "text": "Subtract the two stopping potentials and divide by the frequency difference.",
+      "chapter": 0
+    },
+    {
+      "start": 68.0199966430664,
+      "end": 69.27999877929688,
+      "text": "You recover the same slope.",
+      "chapter": 0
+    },
+    {
+      "start": 70.13999938964844,
+      "end": 73.4800033569336,
+      "text": "The threshold is approximately four point eight three six times ten to the",
+      "chapter": 0
+    },
+    {
+      "start": 73.4800033569336,
+      "end": 74.13999938964844,
+      "text": "fourteen hertz.",
+      "chapter": 0
+    },
+    {
+      "start": 75,
+      "end": 77.0999984741211,
+      "text": "Now make the light brighter without changing frequency.",
+      "chapter": 0
+    },
+    {
+      "start": 78.16000366210938,
+      "end": 79.26000213623047,
+      "text": "Think before changing the graph.",
+      "chapter": 0
+    },
+    {
+      "start": 79.87999725341797,
+      "end": 83.77999877929688,
+      "text": "In the ideal one photon picture, you increase photon arrival rate and can",
+      "chapter": 0
+    },
+    {
+      "start": 83.77999877929688,
+      "end": 87.77999877929688,
+      "text": "increase photocurrent, but you do not increase the maximum energy per emitted",
+      "chapter": 0
+    },
+    {
+      "start": 87.77999877929688,
+      "end": 88.36000061035156,
+      "text": "electron.",
+      "chapter": 0
+    },
+    {
+      "start": 89.26000213623047,
+      "end": 92,
+      "text": "Saturation current and stopping potential answer different questions.",
+      "chapter": 0
+    },
+    {
+      "start": 93,
+      "end": 97.30000305175781,
+      "text": "Real surfaces, contact potentials and experimental offsets require care, but",
+      "chapter": 0
+    },
+    {
+      "start": 97.30000305175781,
+      "end": 100.12000274658203,
+      "text": "our numerical graph uses the stated ideal model.",
+      "chapter": 0
+    },
+    {
+      "start": 101.0199966430664,
+      "end": 104.58000183105469,
+      "text": "For JEE, label the axes and their units before reading a slope.",
+      "chapter": 0
+    },
+    {
+      "start": 105.13999938964844,
+      "end": 108.81999969482422,
+      "text": "A slope of energy against frequency gives h; a slope of voltage against",
+      "chapter": 0
+    },
+    {
+      "start": 108.81999969482422,
+      "end": 110.44000244140625,
+      "text": "frequency gives h over e.",
+      "chapter": 0
+    },
+    {
+      "start": 110.7600000000033,
+      "end": 114.40000010490748,
+      "text": "Now compare two beams on that same two electron volt surface.",
+      "chapter": 1
+    },
+    {
+      "start": 115.27999998092982,
+      "end": 120.2600000000033,
+      "text": "Use h c approximately twelve hundred forty electron volt nanometres.",
+      "chapter": 1
+    },
+    {
+      "start": 120.2600000000033,
+      "end": 124.0399997329745,
+      "text": "A four hundred nanometre photon has energy three point one electron volts.",
+      "chapter": 1
+    },
+    {
+      "start": 125.02000022888514,
+      "end": 128.83846169594335,
+      "text": "After paying the work function, the maximum emitted kinetic energy is one",
+      "chapter": 1
+    },
+    {
+      "start": 128.83846169594335,
+      "end": 129.10000015259118,
+      "text": "point",
+      "chapter": 1
+    },
+    {
+      "start": 129.10000015259118,
+      "end": 133.86000038147301,
+      "text": "one electron volts, and the ideal stopping potential is one point one volts.",
+      "chapter": 1
+    },
+    {
+      "start": 135.2000005340609,
+      "end": 139.55999923706383,
+      "text": "An eight hundred nanometre photon has only one point five five electron volts.",
+      "chapter": 1
+    },
+    {
+      "start": 140.2600000000033,
+      "end": 144.55999923706383,
+      "text": "In this ordinary one photon model, it cannot eject an electron from this",
+      "chapter": 1
+    },
+    {
+      "start": 144.55999923706383,
+      "end": 144.94000030517907,
+      "text": "surface.",
+      "chapter": 1
+    },
+    {
+      "start": 145.89999938965173,
+      "end": 148.80000091553063,
+      "text": "We are not discussing intense field multiphoton processes.",
+      "chapter": 1
+    },
+    {
+      "start": 150.05999923706383,
+      "end": 153.7600000000033,
+      "text": "Next, give the four hundred nanometre beam optical power two milliwatts.",
+      "chapter": 1
+    },
+    {
+      "start": 154.44000030517907,
+      "end": 158.94000030517907,
+      "text": "Power is energy delivered per second, so divide by photon energy in joules to",
+      "chapter": 1
+    },
+    {
+      "start": 158.94000030517907,
+      "end": 160.03999877930016,
+      "text": "count arriving photons.",
+      "chapter": 1
+    },
+    {
+      "start": 160.84000183105798,
+      "end": 164.80000091553063,
+      "text": "Using one electron volt approximately one point six zero two times ten to the",
+      "chapter": 1
+    },
+    {
+      "start": 164.80000091553063,
+      "end": 169.1799981689486,
+      "text": "minus nineteen joules, each photon carries about four point nine six six times",
+      "chapter": 1
+    },
+    {
+      "start": 169.1799981689486,
+      "end": 170.62000061035485,
+      "text": "ten to the minus nineteen joules.",
+      "chapter": 1
+    },
+    {
+      "start": 171.7600000000033,
+      "end": 174.9800012207064,
+      "text": "The arrival rate is about four point zero three times ten to the fifteen",
+      "chapter": 1
+    },
+    {
+      "start": 174.9800012207064,
+      "end": 175.9800012207064,
+      "text": "photons per second.",
+      "chapter": 1
+    },
+    {
+      "start": 177.35999847412438,
+      "end": 180.72153963529476,
+      "text": "Suppose only zero point one percent of those incident photons produce",
+      "chapter": 1
+    },
+    {
+      "start": 180.72153963529476,
+      "end": 181.1600015258822,
+      "text": "collected",
+      "chapter": 1
+    },
+    {
+      "start": 181.1600015258822,
+      "end": 183.0799996948275,
+      "text": "electrons in our stated efficiency model.",
+      "chapter": 1
+    },
+    {
+      "start": 184.0799996948275,
+      "end": 187.94000030517907,
+      "text": "Multiply by zero point zero zero one, then by the elementary charge.",
+      "chapter": 1
+    },
+    {
+      "start": 188.5799996948275,
+      "end": 191.5600030517611,
+      "text": "The current is about zero point six four five microamperes.",
+      "chapter": 1
+    },
+    {
+      "start": 192.89999938965173,
+      "end": 196.92000366211266,
+      "text": "Pause and separate the two answers: one point one volts describes the maximum",
+      "chapter": 1
+    },
+    {
+      "start": 196.92000366211266,
+      "end": 201.31999755859704,
+      "text": "electron energy, while the microampere result depends on photon rate and",
+      "chapter": 1
+    },
+    {
+      "start": 201.31999755859704,
+      "end": 202.13999725342126,
+      "text": "collection efficiency.",
+      "chapter": 1
+    },
+    {
+      "start": 203.39999938965173,
+      "end": 206.89999938965173,
+      "text": "Do not quietly assume every photon creates an electron that reaches the",
+      "chapter": 1
+    },
+    {
+      "start": 206.89999938965173,
+      "end": 207.1600015258822,
+      "text": "collector.",
+      "chapter": 1
+    },
+    {
+      "start": 208.1799981689486,
+      "end": 211.9800012207064,
+      "text": "A JEE numerical should state or justify that efficiency assumption.",
+      "chapter": 1
+    },
+    {
+      "start": 213.02000213623376,
+      "end": 216.1600015258822,
+      "text": "Doubling optical power at fixed wavelength doubles the predicted current in",
+      "chapter": 1
+    },
+    {
+      "start": 216.1600015258822,
+      "end": 219.92000366211266,
+      "text": "this simple linear model, but leaves the maximum kinetic energy unchanged.",
+      "chapter": 1
+    },
+    {
+      "start": 220.36800000000656,
+      "end": 222.54800006676376,
+      "text": "For matter waves, start with momentum.",
+      "chapter": 2
+    },
+    {
+      "start": 223.16799995232284,
+      "end": 225.5679998092717,
+      "text": "De Broglie wavelength is h divided by momentum.",
+      "chapter": 2
+    },
+    {
+      "start": 226.20800015259445,
+      "end": 227.84800001908005,
+      "text": "It is not h divided by speed.",
+      "chapter": 2
+    },
+    {
+      "start": 228.60799977112472,
+      "end": 231.9680003814763,
+      "text": "Two particles with the same momentum have the same wavelength even if their",
+      "chapter": 2
+    },
+    {
+      "start": 231.9680003814763,
+      "end": 232.54800030518234,
+      "text": "masses differ.",
+      "chapter": 2
+    },
+    {
+      "start": 233.44799992371262,
+      "end": 238.1280002288884,
+      "text": "For nonrelativistic kinetic energy K, momentum magnitude is the square root of",
+      "chapter": 2
+    },
+    {
+      "start": 238.1280002288884,
+      "end": 239.74799916077316,
+      "text": "two m K.",
+      "chapter": 2
+    },
+    {
+      "start": 239.74799916077316,
+      "end": 243.54800030518234,
+      "text": "Therefore wavelength is inversely proportional to the square root of mass at",
+      "chapter": 2
+    },
+    {
+      "start": 243.54800030518234,
+      "end": 244.54800030518234,
+      "text": "equal kinetic energy.",
+      "chapter": 2
+    },
+    {
+      "start": 245.507999389655,
+      "end": 248.58799931336105,
+      "text": "Compare an electron and a proton with the same small kinetic energy.",
+      "chapter": 2
+    },
+    {
+      "start": 249.14800068665207,
+      "end": 253.568000762946,
+      "text": "Using proton mass about eighteen hundred thirty six electron masses, the",
+      "chapter": 2
+    },
+    {
+      "start": 253.568000762946,
+      "end": 257.1479987793034,
+      "text": "electron wavelength is about the square root of eighteen hundred thirty six",
+      "chapter": 2
+    },
+    {
+      "start": 257.1479987793034,
+      "end": 258.6679992370671,
+      "text": "times the proton wavelength.",
+      "chapter": 2
+    },
+    {
+      "start": 259.5480003051823,
+      "end": 263.36800000000653,
+      "text": "That ratio is approximately forty two point eight five.",
+      "chapter": 2
+    },
+    {
+      "start": 263.36800000000653,
+      "end": 266.74800106812177,
+      "text": "Now accelerate an electron from rest through one hundred fifty volts.",
+      "chapter": 2
+    },
+    {
+      "start": 267.568000762946,
+      "end": 270.4679984741276,
+      "text": "Its kinetic energy is one hundred fifty electron volts.",
+      "chapter": 2
+    },
+    {
+      "start": 271.3279990844792,
+      "end": 275.96594988388324,
+      "text": "A convenient nonrelativistic electron relation gives wavelength in angstroms",
+      "chapter": 2
+    },
+    {
+      "start": 275.96594988388324,
+      "end": 276.08800122070966,
+      "text": "as",
+      "chapter": 2
+    },
+    {
+      "start": 276.08800122070966,
+      "end": 279.68799969483075,
+      "text": "approximately twelve point two seven divided by the square root of the",
+      "chapter": 2
+    },
+    {
+      "start": 279.68799969483075,
+      "end": 281.068000762946,
+      "text": "accelerating voltage in volts.",
+      "chapter": 2
+    },
+    {
+      "start": 281.86800000000653,
+      "end": 286.7880019836491,
+      "text": "The result is about one point zero zero two angstroms, or zero point one zero",
+      "chapter": 2
+    },
+    {
+      "start": 286.7880019836491,
+      "end": 288.08800122070966,
+      "text": "zero two nanometres.",
+      "chapter": 2
+    },
+    {
+      "start": 288.08800122070966,
+      "end": 290.4679984741276,
+      "text": "One angstrom is ten to the minus ten metres.",
+      "chapter": 2
+    },
+    {
+      "start": 291.26800152588544,
+      "end": 293.48800274658856,
+      "text": "What if you increase that voltage by a factor of four?",
+      "chapter": 2
+    },
+    {
+      "start": 293.48800274658856,
+      "end": 295.3279990844792,
+      "text": "Pause.",
+      "chapter": 2
+    },
+    {
+      "start": 295.3279990844792,
+      "end": 298.70799633789716,
+      "text": "Momentum doubles and wavelength halves, in the nonrelativistic regime.",
+      "chapter": 2
+    },
+    {
+      "start": 299.6479987793034,
+      "end": 303.5480003051823,
+      "text": "Equal accelerating voltage is not always equal energy for different charge",
+      "chapter": 2
+    },
+    {
+      "start": 303.5480003051823,
+      "end": 307.8444116727454,
+      "text": "magnitudes: an ion carrying twice the elementary charge gains twice the",
+      "chapter": 2
+    },
+    {
+      "start": 307.8444116727454,
+      "end": 308.26800152588544,
+      "text": "energy.",
+      "chapter": 2
+    },
+    {
+      "start": 309.08800122070966,
+      "end": 312.9279975586003,
+      "text": "At sufficiently large kinetic energies, the simple square root relation fails",
+      "chapter": 2
+    },
+    {
+      "start": 312.9480018310612,
+      "end": 315.10799786377606,
+      "text": "and relativistic momentum is needed.",
+      "chapter": 2
+    },
+    {
+      "start": 315.86800000000653,
+      "end": 318.86800000000653,
+      "text": "The core de Broglie relation still uses the correct momentum.",
+      "chapter": 2
+    },
+    {
+      "start": 319.76800152588544,
+      "end": 322.0679969482487,
+      "text": "Our examples deliberately stay at low energy.",
+      "chapter": 2
+    },
+    {
+      "start": 323.1479987793034,
+      "end": 327.50799938965497,
+      "text": "Distinguish equal speed, equal kinetic energy, equal accelerating voltage and",
+      "chapter": 2
+    },
+    {
+      "start": 327.50799938965497,
+      "end": 328.32000000000977,
+      "text": "equal momentum: those phrases select different comparisons.",
+      "chapter": 2
+    }
+  ]
+}

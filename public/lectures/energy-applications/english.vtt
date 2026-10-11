@@ -1,0 +1,589 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.720
+Welcome back.
+
+00:00:01.400 --> 00:00:05.280
+Today we turn our energy basics into a practical problem solving toolkit.
+
+00:00:06.120 --> 00:00:10.840
+We will connect changing forces, springs and collisions, and learn when energy
+
+00:00:10.840 --> 00:00:12.760
+needs a second equation to help it.
+
+00:00:13.640 --> 00:00:15.580
+Start with a force that changes with position.
+
+00:00:16.440 --> 00:00:20.520
+Over a tiny displacement, the work is the force component along the motion
+
+00:00:20.940 --> 00:00:21.920
+times that displacement.
+
+00:00:23.000 --> 00:00:25.040
+Adding these little contributions gives an integral.
+
+00:00:25.040 --> 00:00:29.780
+On a force versus position graph, work is the signed area under the curve.
+
+00:00:30.620 --> 00:00:34.900
+Do not confuse it with a force versus time graph, whose area gives impulse.
+
+00:00:35.860 --> 00:00:40.620
+Let the net force along a straight line be two x plus two newtons, where x is
+
+00:00:40.620 --> 00:00:41.140
+measured in meters.
+
+00:00:41.960 --> 00:00:46.883
+A two kilogram particle starts from rest at x equal to zero and reaches x
+
+00:00:46.883 --> 00:00:47.220
+equal
+
+00:00:47.220 --> 00:00:47.660
+to three.
+
+00:00:48.340 --> 00:00:50.500
+The force rises from two to eight newtons.
+
+00:00:51.100 --> 00:00:52.900
+Predict the work before doing calculus.
+
+00:00:53.600 --> 00:00:57.180
+The graph is a trapezoid, so its area is the average of two and eight,
+
+00:00:57.900 --> 00:00:58.460
+multiplied by three.
+
+00:00:59.020 --> 00:01:00.380
+That gives fifteen joules.
+
+00:01:01.380 --> 00:01:06.029
+Integrating gives x squared plus two x, evaluated from zero to three: nine
+
+00:01:06.029 --> 00:01:06.280
+plus
+
+00:01:06.280 --> 00:01:08.720
+six, again fifteen.
+
+00:01:08.720 --> 00:01:10.680
+Net work equals the change in kinetic energy.
+
+00:01:11.440 --> 00:01:15.960
+For our two kilogram particle, one half m v squared is simply v squared in SI
+
+00:01:15.960 --> 00:01:16.260
+units.
+
+00:01:17.020 --> 00:01:20.400
+The final speed is therefore the square root of fifteen meters per second.
+
+00:01:21.400 --> 00:01:25.140
+Negative areas subtract work; they do not become positive because we call them
+
+00:01:25.140 --> 00:01:25.520
+areas.
+
+00:01:26.360 --> 00:01:30.240
+If the plotted force is only one of several forces, add the work of the others
+
+00:01:30.240 --> 00:01:31.360
+before applying the theorem.
+
+00:01:32.380 --> 00:01:36.920
+Check the horizontal axis first: position gives energy, time gives momentum
+
+00:01:36.920 --> 00:01:37.400
+change.
+
+00:01:37.800 --> 00:01:42.240
+Two motors can do the same work, yet finish at different times.
+
+00:01:43.360 --> 00:01:45.260
+Power measures the rate of energy transfer.
+
+00:01:46.260 --> 00:01:48.840
+Average power is work divided by the time interval.
+
+00:01:49.760 --> 00:01:53.400
+Instantaneous power is the dot product of force and velocity.
+
+00:01:54.180 --> 00:01:58.574
+In words, take the component of force along the velocity and multiply by
+
+00:01:58.574 --> 00:01:58.940
+speed.
+
+00:01:59.300 --> 00:02:00.540
+Why the dot product?
+
+00:02:01.140 --> 00:02:03.980
+Work already counts the force component along displacement.
+
+00:02:04.700 --> 00:02:09.060
+Dividing a tiny amount of work by its tiny time interval replaces displacement
+
+00:02:09.060 --> 00:02:09.980
+by velocity.
+
+00:02:11.000 --> 00:02:14.780
+Imagine lifting a four kilogram load vertically at a steady two meters per
+
+00:02:14.780 --> 00:02:15.000
+second.
+
+00:02:15.740 --> 00:02:18.380
+Use g equal to ten and neglect other resistance.
+
+00:02:19.260 --> 00:02:23.700
+Steady velocity means zero acceleration, so the upward lifting force is forty
+
+00:02:23.700 --> 00:02:24.080
+newtons.
+
+00:02:24.760 --> 00:02:28.300
+Its mechanical power is forty times two, or eighty watts.
+
+00:02:29.160 --> 00:02:31.340
+Gravity's power is minus eighty watts.
+
+00:02:31.820 --> 00:02:36.340
+The net power is zero, consistent with unchanged kinetic energy, while
+
+00:02:36.340 --> 00:02:38.420
+gravitational potential energy increases.
+
+00:02:39.260 --> 00:02:43.640
+This is a nice reminder: zero net work on a particle does not mean the motor
+
+00:02:43.640 --> 00:02:44.380
+does no work.
+
+00:02:45.120 --> 00:02:47.000
+Suppose the motor is eighty percent efficient.
+
+00:02:47.700 --> 00:02:51.080
+What electrical input power is needed for this eighty watt useful output?
+
+00:02:51.680 --> 00:02:53.340
+Think about which number should be larger.
+
+00:02:54.480 --> 00:02:56.560
+Efficiency is useful output divided by input.
+
+00:02:56.560 --> 00:03:00.620
+Input is eighty divided by zero point eight, or one hundred watts.
+
+00:03:01.500 --> 00:03:05.120
+If a pulling force stays fixed while speed doubles along the same direction,
+
+00:03:05.640 --> 00:03:07.340
+its instantaneous power doubles.
+
+00:03:08.020 --> 00:03:12.860
+If supplied power is fixed instead, the available force is power divided by
+
+00:03:12.860 --> 00:03:14.280
+speed for collinear motion.
+
+00:03:15.160 --> 00:03:19.540
+Use this only where the constant power model applies; it does not predict a
+
+00:03:19.540 --> 00:03:21.620
+realistic infinite force at zero speed.
+
+00:03:21.816 --> 00:03:25.376
+A spring becomes harder to stretch as its deformation grows.
+
+00:03:26.276 --> 00:03:30.376
+For an ideal spring within its linear elastic range, its force on the attached
+
+00:03:30.376 --> 00:03:32.956
+block is minus k x.
+
+00:03:32.956 --> 00:03:37.756
+Here x is the signed displacement from the spring's natural length, and k is
+
+00:03:37.756 --> 00:03:38.356
+its stiffness.
+
+00:03:39.096 --> 00:03:42.536
+The minus sign says the spring force points back toward natural length.
+
+00:03:43.396 --> 00:03:47.936
+To store energy slowly, an external agent must oppose that changing force.
+
+00:03:48.496 --> 00:03:50.956
+The force versus extension graph is a triangle.
+
+00:03:50.956 --> 00:03:55.776
+Its area gives one half k x squared, the elastic potential energy.
+
+00:03:56.956 --> 00:03:59.616
+Compression stores energy too because x is squared.
+
+00:04:00.696 --> 00:04:04.436
+Take a two kilogram block attached to a light spring on a smooth horizontal
+
+00:04:04.436 --> 00:04:04.836
+surface.
+
+00:04:05.616 --> 00:04:07.676
+The stiffness is two hundred newtons per meter.
+
+00:04:09.016 --> 00:04:12.516
+Compress the spring by zero point two meters and release the block from rest.
+
+00:04:13.116 --> 00:04:17.036
+The stored energy is one half times two hundred times zero point two squared,
+
+00:04:17.256 --> 00:04:18.796
+or four joules.
+
+00:04:18.796 --> 00:04:21.036
+At natural length the spring energy is zero.
+
+00:04:21.616 --> 00:04:24.976
+With no dissipative work, those four joules become kinetic energy.
+
+00:04:25.776 --> 00:04:30.156
+One half times two times v squared equals four, so the speed is two meters per
+
+00:04:30.156 --> 00:04:30.356
+second.
+
+00:04:31.036 --> 00:04:34.496
+Now add a rough region that removes one joule before the block reaches natural
+
+00:04:34.496 --> 00:04:34.756
+length.
+
+00:04:35.636 --> 00:04:36.276
+What changes?
+
+00:04:36.996 --> 00:04:37.136
+Pause.
+
+00:04:37.736 --> 00:04:41.616
+Only three joules remain as kinetic energy, so the speed becomes the square
+
+00:04:41.616 --> 00:04:42.976
+root of three meters per second.
+
+00:04:43.756 --> 00:04:47.776
+Do not call energy destroyed: it has transferred into internal energy of the
+
+00:04:47.776 --> 00:04:48.616
+contacting materials.
+
+00:04:49.956 --> 00:04:54.116
+For this chosen system, initial mechanical energy plus nonconservative work
+
+00:04:54.116 --> 00:04:56.016
+equals final mechanical energy.
+
+00:04:57.436 --> 00:05:00.816
+State which forces are represented by potential energy so you do not count
+
+00:05:00.816 --> 00:05:01.556
+their work twice.
+
+00:05:01.776 --> 00:05:04.836
+Here is a problem where energy alone is not enough.
+
+00:05:05.476 --> 00:05:09.216
+A small particle on a light inextensible string moves in a vertical circle.
+
+00:05:10.136 --> 00:05:12.356
+Gravity is uniform and we neglect drag.
+
+00:05:13.096 --> 00:05:16.856
+The string must remain taut, and a string can pull but cannot push.
+
+00:05:17.656 --> 00:05:19.736
+At the top, inward means downward.
+
+00:05:20.376 --> 00:05:25.916
+Both weight and tension point inward, so T plus m g equals m v top squared
+
+00:05:25.916 --> 00:05:26.976
+divided by r.
+
+00:05:27.436 --> 00:05:31.456
+The smallest possible top speed for the marginal taut condition has tension
+
+00:05:31.456 --> 00:05:32.676
+equal to zero.
+
+00:05:32.956 --> 00:05:35.776
+That gives v top squared equal to g r.
+
+00:05:35.776 --> 00:05:38.396
+A slightly larger speed gives positive tension.
+
+00:05:39.296 --> 00:05:41.276
+Now connect bottom and top using energy.
+
+00:05:41.956 --> 00:05:46.196
+The particle rises by two r, and ideal tension does no work because it is
+
+00:05:46.196 --> 00:05:47.256
+perpendicular to the motion.
+
+00:05:48.016 --> 00:05:52.176
+The decrease in kinetic energy equals m g times two r.
+
+00:05:52.176 --> 00:05:55.996
+Therefore v bottom squared equals v top squared plus four g r.
+
+00:05:55.996 --> 00:06:00.116
+Substitute the limiting top value and obtain five g r.
+
+00:06:00.116 --> 00:06:04.196
+The minimum bottom speed is the square root of five g r for this ideal string
+
+00:06:04.196 --> 00:06:04.536
+model.
+
+00:06:05.396 --> 00:06:08.196
+Try r equal to two meters and g equal to ten.
+
+00:06:08.816 --> 00:06:13.256
+The minimum bottom speed is ten meters per second, while the top speed is the
+
+00:06:13.256 --> 00:06:14.736
+square root of twenty.
+
+00:06:14.736 --> 00:06:19.388
+For a one kilogram particle at the bottom, inward is upward: T minus ten
+
+00:06:19.388 --> 00:06:19.776
+equals
+
+00:06:19.776 --> 00:06:21.556
+one times one hundred divided by two.
+
+00:06:22.296 --> 00:06:23.776
+Bottom tension is sixty newtons.
+
+00:06:23.976 --> 00:06:27.876
+That tension is not forty; remember to include weight in the force balance.
+
+00:06:28.656 --> 00:06:32.136
+A rigid rod or a particle constrained on a track has different contact
+
+00:06:32.136 --> 00:06:35.336
+conditions, so do not transfer the string result automatically.
+
+00:06:36.156 --> 00:06:40.316
+In JEE, energy connects speeds at different heights, while the radial force
+
+00:06:40.316 --> 00:06:43.356
+equation checks whether the assumed motion is physically allowed.
+
+00:06:43.584 --> 00:06:47.024
+For a collision, begin by choosing both bodies as your system.
+
+00:06:47.984 --> 00:06:51.984
+During the short interaction, neglect net external impulse when the stated
+
+00:06:51.984 --> 00:06:53.364
+conditions justify it.
+
+00:06:54.104 --> 00:06:56.084
+Then total momentum is conserved.
+
+00:06:56.964 --> 00:06:59.304
+This does not automatically conserve kinetic energy.
+
+00:07:00.024 --> 00:07:03.144
+In an elastic collision, kinetic energy is also conserved.
+
+00:07:03.624 --> 00:07:07.798
+In a perfectly inelastic collision, the bodies stick together and share a
+
+00:07:07.798 --> 00:07:08.084
+final
+
+00:07:08.084 --> 00:07:08.484
+velocity.
+
+00:07:09.124 --> 00:07:13.624
+Let a two kilogram body moving right at six meters per second hit a stationary
+
+00:07:13.624 --> 00:07:16.644
+one kilogram body in a one dimensional elastic collision.
+
+00:07:17.624 --> 00:07:21.444
+Initial momentum is twelve kilogram meters per second, and kinetic energy is
+
+00:07:21.444 --> 00:07:22.804
+thirty six joules.
+
+00:07:22.804 --> 00:07:25.624
+The elastic separation speed equals the approach speed.
+
+00:07:26.344 --> 00:07:31.584
+So v two minus v one equals six, while momentum gives two v one plus v two
+
+00:07:31.584 --> 00:07:33.304
+equals twelve.
+
+00:07:33.304 --> 00:07:35.644
+Substitute v two equal to v one plus six.
+
+00:07:35.644 --> 00:07:41.364
+Three v one equals six, giving v one equal to two and v two equal to eight
+
+00:07:41.364 --> 00:07:42.144
+meters per second.
+
+00:07:43.024 --> 00:07:46.904
+Check the energy: the two kilogram body has four joules and the one kilogram
+
+00:07:46.904 --> 00:07:48.444
+body has thirty two.
+
+00:07:48.444 --> 00:07:50.184
+Total, thirty six.
+
+00:07:50.184 --> 00:07:52.264
+Now let the same bodies stick together instead.
+
+00:07:53.004 --> 00:07:56.824
+Momentum gives three times their common velocity equal to twelve, so the
+
+00:07:56.824 --> 00:07:57.744
+velocity is four.
+
+00:07:58.544 --> 00:08:03.071
+Final kinetic energy is one half times three times sixteen, or twenty four
+
+00:08:03.071 --> 00:08:03.484
+joules.
+
+00:08:03.484 --> 00:08:08.704
+The twelve joule decrease becomes other forms of energy; total energy has not
+
+00:08:08.704 --> 00:08:09.084
+vanished.
+
+00:08:10.224 --> 00:08:13.864
+Momentum is a signed equation, whereas kinetic energy uses speed squared.
+
+00:08:14.644 --> 00:08:17.864
+These examples assume translational particle motion without rotation.
+
+00:08:18.684 --> 00:08:22.912
+Do not impose both sticking and elastic kinetic energy conservation on a
+
+00:08:22.912 --> 00:08:23.264
+moving
+
+00:08:23.264 --> 00:08:24.240
+collision: those are different models.
+
+00:08:24.240 --> 00:08:29.480
+Momentum conservation is a vector statement, so a collision does not have to
+
+00:08:29.480 --> 00:08:30.360
+stay on one line.
+
+00:08:31.280 --> 00:08:36.080
+Take a two kilogram particle traveling east at three meters per second and a
+
+00:08:36.080 --> 00:08:39.620
+one kilogram particle traveling north at six meters per second.
+
+00:08:40.160 --> 00:08:44.620
+They stick together; external impulse is negligible, and treat the combined
+
+00:08:44.620 --> 00:08:47.200
+object as a particle with no rotational energy.
+
+00:08:47.920 --> 00:08:51.520
+Choose east as positive x and north as positive y.
+
+00:08:52.500 --> 00:08:56.780
+Initial x momentum is six, and initial y momentum is also six.
+
+00:08:57.540 --> 00:08:59.540
+The combined mass is three kilograms.
+
+00:09:00.580 --> 00:09:04.880
+Divide each component by three, giving a final velocity of two east and two
+
+00:09:04.880 --> 00:09:06.480
+north, in meters per second.
+
+00:09:07.320 --> 00:09:11.340
+The speed is the square root of two squared plus two squared, or two times the
+
+00:09:11.340 --> 00:09:11.980
+square root of two.
+
+00:09:12.640 --> 00:09:15.060
+The direction is forty five degrees north of east.
+
+00:09:15.900 --> 00:09:17.700
+Why not add three and six to get nine?
+
+00:09:18.040 --> 00:09:21.320
+Because the initial velocities belong to different masses and different
+
+00:09:21.320 --> 00:09:21.780
+directions.
+
+00:09:22.700 --> 00:09:25.240
+Add momentum components, not speed magnitudes.
+
+00:09:26.340 --> 00:09:29.800
+Initial kinetic energy is nine plus eighteen, or twenty seven joules.
+
+00:09:30.960 --> 00:09:34.740
+Final kinetic energy is one half times three times eight, or twelve joules.
+
+00:09:34.740 --> 00:09:37.960
+Fifteen joules have left translational kinetic energy.
+
+00:09:38.820 --> 00:09:42.100
+Now consider equal masses in an elastic scattering example.
+
+00:09:42.900 --> 00:09:45.920
+One starts at ten meters per second east; the other is stationary.
+
+00:09:47.080 --> 00:09:51.440
+Possible final velocities are five east plus five north, and five east plus
+
+00:09:51.440 --> 00:09:52.040
+five south.
+
+00:09:52.880 --> 00:09:56.600
+Their vector sum preserves momentum, and their equal speeds of five times
+
+00:09:56.820 --> 00:10:00.700
+square root of two preserve the initial fifty joules for one kilogram masses.
+
+00:10:01.280 --> 00:10:03.480
+The final velocity vectors are perpendicular.
+
+00:10:04.300 --> 00:10:08.540
+This special result excludes a zero final velocity and assumes an initially
+
+00:10:08.540 --> 00:10:10.040
+stationary equal mass target.
+
+00:10:11.140 --> 00:10:14.180
+General two dimensional scattering needs enough angle or interaction
+
+00:10:14.180 --> 00:10:16.380
+information to determine a unique outcome.
+
+00:10:17.300 --> 00:10:20.540
+Use the practice questions to test the model before trusting a memorized
+
+00:10:20.540 --> 00:10:20.820
+formula.

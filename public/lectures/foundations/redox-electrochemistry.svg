@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+<title id="title">Daniell galvanic cell</title><desc id="desc">Electrons travel externally from negative zinc anode to positive copper cathode. Salt bridge carries ions, not electrons.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#18212b"/></marker></defs>
+<rect width="900" height="360" fill="#f8fafc"/>
+<g font-family="Arial,sans-serif" fill="#18212b"><text x="30" y="35" font-size="24" font-weight="bold">Separate the reactions; connect the charge paths</text>
+<path d="M70 160V285H340V160M550 160V285H820V160" fill="none" stroke="#334155" stroke-width="3"/>
+<rect x="73" y="205" width="264" height="77" fill="#d7eef5"/><rect x="553" y="205" width="264" height="77" fill="#d7eef5"/>
+<rect x="170" y="110" width="25" height="145" fill="#737b86"/><rect x="675" y="110" width="25" height="145" fill="#d19b66"/>
+<path d="M182 110V65H687V110" fill="none" stroke="#334155" stroke-width="3"/>
+<path d="M335 65H525" stroke="#18212b" stroke-width="2" marker-end="url(#arrow)"/><text x="350" y="55" font-size="18">electrons</text>
+<path d="M275 215V135H615V215" fill="none" stroke="#087e8b" stroke-width="15"/>
+<text x="354" y="125" font-size="18">Salt bridge: ions only</text>
+<text x="80" y="190" font-size="18">Zn2+ solution</text><text x="715" y="190" font-size="18">Cu2+</text>
+<text x="55" y="315" font-size="18">Zn anode (-): Zn -&gt; Zn2+ + 2e-</text><text x="510" y="315" font-size="18">Cu cathode (+): Cu2+ + 2e- -&gt; Cu</text>
+<text x="30" y="349" font-size="16" fill="#475569">Galvanic operation: oxidation at the anode; reduction at the cathode. Geometry is schematic.</text></g></svg>

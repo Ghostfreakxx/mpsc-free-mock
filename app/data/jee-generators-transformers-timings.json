@@ -1,0 +1,777 @@
+{
+  "duration": 427.2000000000117,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 83.25600000000226
+    },
+    {
+      "start": 83.25600000000226,
+      "end": 167.97600000000457
+    },
+    {
+      "start": 167.97600000000457,
+      "end": 259.48800000000716
+    },
+    {
+      "start": 259.48800000000716,
+      "end": 345.5520000000095
+    },
+    {
+      "start": 345.5520000000095,
+      "end": 427.2000000000117
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.840000033378601,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.319999933242798,
+      "end": 6.360000133514404,
+      "text": "We can create alternating emf by rotating a coil in a magnetic field.",
+      "chapter": 0
+    },
+    {
+      "start": 7.059999942779541,
+      "end": 11.399999618530273,
+      "text": "Take N identical turns, area A per turn and a uniform field B.",
+      "chapter": 0
+    },
+    {
+      "start": 12.220000267028809,
+      "end": 14.720000267028809,
+      "text": "Rotate the coil at constant angular speed omega.",
+      "chapter": 0
+    },
+    {
+      "start": 15.539999961853027,
+      "end": 18.020000457763672,
+      "text": "Choose time zero when its normal follows the field.",
+      "chapter": 0
+    },
+    {
+      "start": 18.940000534057617,
+      "end": 22.540000915527344,
+      "text": "Flux linkage is N B A times cosine of omega t.",
+      "chapter": 0
+    },
+    {
+      "start": 23.31999969482422,
+      "end": 28.81999969482422,
+      "text": "Apply Faraday's law: minus the derivative of linkage gives induced emf N B A",
+      "chapter": 0
+    },
+    {
+      "start": 28.81999969482422,
+      "end": 30.84000015258789,
+      "text": "omega times sine of omega t.",
+      "chapter": 0
+    },
+    {
+      "start": 31.81999969482422,
+      "end": 34.540000915527344,
+      "text": "The sine appears because we differentiated the cosine.",
+      "chapter": 0
+    },
+    {
+      "start": 35.099998474121094,
+      "end": 39.939998626708984,
+      "text": "When linkage is greatest, its instantaneous rate of change is zero, so emf is",
+      "chapter": 0
+    },
+    {
+      "start": 39.939998626708984,
+      "end": 40.220001220703125,
+      "text": "zero.",
+      "chapter": 0
+    },
+    {
+      "start": 40.939998626708984,
+      "end": 45.07640946217072,
+      "text": "A quarter turn later the coil's plane is parallel to the field, linkage is",
+      "chapter": 0
+    },
+    {
+      "start": 45.07640946217072,
+      "end": 45.29999923706055,
+      "text": "zero",
+      "chapter": 0
+    },
+    {
+      "start": 45.63999938964844,
+      "end": 47.720001220703125,
+      "text": "and its rate of change has greatest magnitude.",
+      "chapter": 0
+    },
+    {
+      "start": 48.36000061035156,
+      "end": 49.459999084472656,
+      "text": "Emf reaches a peak.",
+      "chapter": 0
+    },
+    {
+      "start": 50.220001220703125,
+      "end": 52.79999923706055,
+      "text": "Do not pair maximum flux with maximum emf.",
+      "chapter": 0
+    },
+    {
+      "start": 53.400001525878906,
+      "end": 58.02000045776367,
+      "text": "The chosen starting orientation fixes our waveform phase; another time origin",
+      "chapter": 0
+    },
+    {
+      "start": 58.02000045776367,
+      "end": 60.040000915527344,
+      "text": "changes the phase, not the amplitude.",
+      "chapter": 0
+    },
+    {
+      "start": 60.81999969482422,
+      "end": 65.05999755859375,
+      "text": "A simple AC generator uses slip rings to maintain connection while allowing",
+      "chapter": 0
+    },
+    {
+      "start": 65.05999755859375,
+      "end": 69.08000183105469,
+      "text": "alternating output, whereas a split ring arrangement changes the terminal",
+      "chapter": 0
+    },
+    {
+      "start": 69.08000183105469,
+      "end": 69.54000091552734,
+      "text": "waveform.",
+      "chapter": 0
+    },
+    {
+      "start": 70.16000366210938,
+      "end": 74.54000091552734,
+      "text": "Under load, magnetic effects resist rotation and mechanical input is needed.",
+      "chapter": 0
+    },
+    {
+      "start": 75.16000366210938,
+      "end": 78.62000274658203,
+      "text": "An open circuit emf can exist without significant load power.",
+      "chapter": 0
+    },
+    {
+      "start": 79.41999816894531,
+      "end": 83.0199966430664,
+      "text": "Rotation is an energy conversion mechanism, not a free electrical source.",
+      "chapter": 0
+    },
+    {
+      "start": 83.25600000000226,
+      "end": 85.11600001430737,
+      "text": "Let's give the generator numbers.",
+      "chapter": 1
+    },
+    {
+      "start": 85.89600010490643,
+      "end": 90.73600001907575,
+      "text": "Use one hundred turns, field zero point two tesla, area zero point zero one",
+      "chapter": 1
+    },
+    {
+      "start": 90.73600001907575,
+      "end": 94.03599973297345,
+      "text": "square meter and angular speed one hundred radians per second.",
+      "chapter": 1
+    },
+    {
+      "start": 94.77600045776593,
+      "end": 98.21600003814923,
+      "text": "Peak emf is N B A omega, which gives twenty volts.",
+      "chapter": 1
+    },
+    {
+      "start": 99.23599954223859,
+      "end": 102.69600053405988,
+      "text": "Frequency is one hundred over two pi, about fifteen point nine hertz.",
+      "chapter": 1
+    },
+    {
+      "start": 103.7960009155296,
+      "end": 108.77600045776593,
+      "text": "The ideal sinusoidal RMS emf is twenty divided by square root of two, about",
+      "chapter": 1
+    },
+    {
+      "start": 108.77600045776593,
+      "end": 110.33599992370831,
+      "text": "fourteen point one four volts.",
+      "chapter": 1
+    },
+    {
+      "start": 111.47599931335675,
+      "end": 114.0160002288841,
+      "text": "Pause and predict what happens if rotation speed doubles.",
+      "chapter": 1
+    },
+    {
+      "start": 115.25600000000226,
+      "end": 119.08266651408104,
+      "text": "Peak emf doubles to forty volts, and frequency doubles to about thirty one",
+      "chapter": 1
+    },
+    {
+      "start": 119.08266651408104,
+      "end": 120.03599877929913,
+      "text": "point eight hertz.",
+      "chapter": 1
+    },
+    {
+      "start": 121.03599877929913,
+      "end": 122.3959993896507,
+      "text": "RMS emf also doubles.",
+      "chapter": 1
+    },
+    {
+      "start": 123.17599816894757,
+      "end": 127.77600045776593,
+      "text": "If instead turns double at the same speed, amplitude doubles but frequency",
+      "chapter": 1
+    },
+    {
+      "start": 127.77600045776593,
+      "end": 128.67599816894756,
+      "text": "stays unchanged.",
+      "chapter": 1
+    },
+    {
+      "start": 129.2960009155296,
+      "end": 131.43600030517803,
+      "text": "Those are different experimental changes.",
+      "chapter": 1
+    },
+    {
+      "start": 132.03599877929912,
+      "end": 135.93600030517803,
+      "text": "With a purely resistive ten ohm load and negligible generator internal",
+      "chapter": 1
+    },
+    {
+      "start": 135.93600030517803,
+      "end": 140.43600030517803,
+      "text": "impedance, the first generator gives RMS current about one point four one",
+      "chapter": 1
+    },
+    {
+      "start": 140.43600030517803,
+      "end": 142.875998931887,
+      "text": "amperes and average power twenty watts.",
+      "chapter": 1
+    },
+    {
+      "start": 143.69599862671123,
+      "end": 147.815997558596,
+      "text": "A real generator's terminal voltage can depend on loading, winding resistance",
+      "chapter": 1
+    },
+    {
+      "start": 148.1160006103538,
+      "end": 149.05600305176006,
+      "text": "and inductive effects.",
+      "chapter": 1
+    },
+    {
+      "start": 149.65600152588115,
+      "end": 152.01600213623271,
+      "text": "Our ideal numerical example neglects those.",
+      "chapter": 1
+    },
+    {
+      "start": 152.65600152588115,
+      "end": 156.7159990844749,
+      "text": "Do not confuse the peak twenty volts with a constant twenty volt DC supply.",
+      "chapter": 1
+    },
+    {
+      "start": 157.7960009155296,
+      "end": 161.73600335693584,
+      "text": "Follow the same sequence each time: geometry and speed, peak waveform",
+      "chapter": 1
+    },
+    {
+      "start": 161.73600335693584,
+      "end": 166.95599694824443,
+      "text": "amplitude, frequency, RMS conversion, then the circuit response if a load is",
+      "chapter": 1
+    },
+    {
+      "start": 166.95599694824443,
+      "end": 167.2159990844749,
+      "text": "specified.",
+      "chapter": 1
+    },
+    {
+      "start": 167.97600000000457,
+      "end": 170.8560001144455,
+      "text": "A transformer does not need mechanical rotation.",
+      "chapter": 2
+    },
+    {
+      "start": 171.8359998951004,
+      "end": 175.63599984741668,
+      "text": "It uses changing magnetic flux to link a primary and secondary winding.",
+      "chapter": 2
+    },
+    {
+      "start": 176.5760003814743,
+      "end": 181.2959996948288,
+      "text": "In the ideal model, both windings link the same core flux, and each turn has",
+      "chapter": 2
+    },
+    {
+      "start": 181.2959996948288,
+      "end": 183.2360002288864,
+      "text": "the same induced emf magnitude.",
+      "chapter": 2
+    },
+    {
+      "start": 184.2360002288864,
+      "end": 189.17600076294403,
+      "text": "Therefore secondary voltage over primary voltage equals secondary turns over",
+      "chapter": 2
+    },
+    {
+      "start": 189.17600076294403,
+      "end": 189.9559995422409,
+      "text": "primary turns.",
+      "chapter": 2
+    },
+    {
+      "start": 191.43599908447723,
+      "end": 194.87599961853485,
+      "text": "Use either RMS magnitudes throughout or peak magnitudes throughout.",
+      "chapter": 2
+    },
+    {
+      "start": 194.87599961853485,
+      "end": 199.49600045776825,
+      "text": "If secondary turns exceed primary turns, it is a step up transformer.",
+      "chapter": 2
+    },
+    {
+      "start": 200.21600167847137,
+      "end": 201.8560010681198,
+      "text": "If fewer, it is step down.",
+      "chapter": 2
+    },
+    {
+      "start": 202.81600015259247,
+      "end": 207.07599847412567,
+      "text": "Take primary turns five hundred and secondary turns one hundred.",
+      "chapter": 2
+    },
+    {
+      "start": 207.07599847412567,
+      "end": 211.77599923706512,
+      "text": "With primary RMS voltage two hundred thirty volts, ideal secondary RMS voltage",
+      "chapter": 2
+    },
+    {
+      "start": 211.77599923706512,
+      "end": 212.97600000000457,
+      "text": "is forty six volts.",
+      "chapter": 2
+    },
+    {
+      "start": 214.43599908447723,
+      "end": 218.63599984741668,
+      "text": "Winding orientation determines the relative terminal phase, so the turns ratio",
+      "chapter": 2
+    },
+    {
+      "start": 218.63599984741668,
+      "end": 222.49600045776825,
+      "text": "alone is a magnitude statement unless polarity references are given.",
+      "chapter": 2
+    },
+    {
+      "start": 223.23599832153778,
+      "end": 225.5360013732956,
+      "text": "Why not apply a steady DC supply?",
+      "chapter": 2
+    },
+    {
+      "start": 226.41599862671356,
+      "end": 230.65600030518036,
+      "text": "After any initial transient, steady current produces steady linked flux, which",
+      "chapter": 2
+    },
+    {
+      "start": 230.65600030518036,
+      "end": 232.25599877930145,
+      "text": "cannot sustain secondary emf.",
+      "chapter": 2
+    },
+    {
+      "start": 232.91600244141082,
+      "end": 237.51600091553192,
+      "text": "In a real transformer, direct DC connection can cause damaging primary current",
+      "chapter": 2
+    },
+    {
+      "start": 237.51600091553192,
+      "end": 241.33600061035614,
+      "text": "and heating because the intended alternating flux operation is absent.",
+      "chapter": 2
+    },
+    {
+      "start": 241.87600152588348,
+      "end": 244.7959996948288,
+      "text": "This is a conceptual explanation, not a home experiment.",
+      "chapter": 2
+    },
+    {
+      "start": 246.13600366211395,
+      "end": 248.49599664307098,
+      "text": "Core properties, insulation and ratings matter.",
+      "chapter": 2
+    },
+    {
+      "start": 249.01600091553192,
+      "end": 251.91600244141082,
+      "text": "Transformers are designed for specified operating conditions.",
+      "chapter": 2
+    },
+    {
+      "start": 252.65600030518036,
+      "end": 256.6793319717844,
+      "text": "Our ideal turns ratio relation assumes shared changing flux, negligible",
+      "chapter": 2
+    },
+    {
+      "start": 256.6793319717844,
+      "end": 257.07599847412564,
+      "text": "leakage",
+      "chapter": 2
+    },
+    {
+      "start": 257.5359975585983,
+      "end": 259.1560003051803,
+      "text": "and negligible winding voltage losses.",
+      "chapter": 2
+    },
+    {
+      "start": 259.48800000000716,
+      "end": 263.788000190742,
+      "text": "A higher transformer output voltage does not create extra power.",
+      "chapter": 3
+    },
+    {
+      "start": 264.64799984741927,
+      "end": 268.5679999237132,
+      "text": "In an ideal lossless transformer, input power equals output power.",
+      "chapter": 3
+    },
+    {
+      "start": 269.38799961853744,
+      "end": 274.88799961853744,
+      "text": "For our ideal resistive load example, primary RMS voltage times primary RMS",
+      "chapter": 3
+    },
+    {
+      "start": 274.88799961853744,
+      "end": 277.76800068665267,
+      "text": "current equals the corresponding secondary product.",
+      "chapter": 3
+    },
+    {
+      "start": 278.54799946594954,
+      "end": 280.98800000000716,
+      "text": "Thus current ratio is inverse to voltage ratio.",
+      "chapter": 3
+    },
+    {
+      "start": 281.748000228889,
+      "end": 285.36799916077376,
+      "text": "The five to one step down transformer gives forty six volts on the secondary",
+      "chapter": 3
+    },
+    {
+      "start": 285.36799916077376,
+      "end": 287.6279993896556,
+      "text": "from two hundred thirty volts on the primary.",
+      "chapter": 3
+    },
+    {
+      "start": 287.6279993896556,
+      "end": 292.5980006103587,
+      "text": "If the secondary supplies a two ampere resistive load, output power is ninety",
+      "chapter": 3
+    },
+    {
+      "start": 292.5980006103587,
+      "end": 293.16800030518294,
+      "text": "two watts.",
+      "chapter": 3
+    },
+    {
+      "start": 294.0480013732982,
+      "end": 296.32800015259505,
+      "text": "Ideal primary current is zero point four ampere.",
+      "chapter": 3
+    },
+    {
+      "start": 297.08799847412826,
+      "end": 300.8680010681224,
+      "text": "A step down voltage can accompany increased load current because power is",
+      "chapter": 3
+    },
+    {
+      "start": 300.8680010681224,
+      "end": 301.16800030518294,
+      "text": "conserved.",
+      "chapter": 3
+    },
+    {
+      "start": 301.76799877930404,
+      "end": 304.5280009155345,
+      "text": "We neglect magnetising current and losses in this calculation.",
+      "chapter": 3
+    },
+    {
+      "start": 305.38800152588607,
+      "end": 308.8772311683139,
+      "text": "With arbitrary phase shifted loads, distinguish real power from apparent",
+      "chapter": 3
+    },
+    {
+      "start": 308.8772311683139,
+      "end": 309.16800030518294,
+      "text": "power;",
+      "chapter": 3
+    },
+    {
+      "start": 309.72800167847396,
+      "end": 312.8079996948314,
+      "text": "do not silently drop power factors in a real efficiency calculation.",
+      "chapter": 3
+    },
+    {
+      "start": 313.4079981689525,
+      "end": 317.2879992370677,
+      "text": "Now treat a different, real transformer with ninety two watts output and",
+      "chapter": 3
+    },
+    {
+      "start": 317.2879992370677,
+      "end": 319.00800045777083,
+      "text": "efficiency eighty percent.",
+      "chapter": 3
+    },
+    {
+      "start": 319.00800045777083,
+      "end": 323.3480006103587,
+      "text": "Input real power is output divided by efficiency: one hundred fifteen watts.",
+      "chapter": 3
+    },
+    {
+      "start": 324.06800183106185,
+      "end": 325.16800030518294,
+      "text": "Losses are twenty three watts.",
+      "chapter": 3
+    },
+    {
+      "start": 325.788003051765,
+      "end": 329.2279978637767,
+      "text": "The ideal voltage ratio is not by itself a complete model of real voltage",
+      "chapter": 3
+    },
+    {
+      "start": 329.2279978637767,
+      "end": 329.788003051765,
+      "text": "regulation.",
+      "chapter": 3
+    },
+    {
+      "start": 330.74800213623763,
+      "end": 334.4479990844798,
+      "text": "Real losses can include winding heating, eddy current heating and hysteresis.",
+      "chapter": 3
+    },
+    {
+      "start": 335.24800213623763,
+      "end": 338.7279978637767,
+      "text": "Laminated cores reduce eddy current losses, while appropriate core materials",
+      "chapter": 3
+    },
+    {
+      "start": 338.7279978637767,
+      "end": 340.36799725342513,
+      "text": "and design limit other losses.",
+      "chapter": 3
+    },
+    {
+      "start": 340.36799725342513,
+      "end": 344.288003051765,
+      "text": "State which ideal relations you are using, and which real quantity the",
+      "chapter": 3
+    },
+    {
+      "start": 344.288003051765,
+      "end": 345.1279993896556,
+      "text": "efficiency describes.",
+      "chapter": 3
+    },
+    {
+      "start": 345.5520000000095,
+      "end": 348.071999980936,
+      "text": "Let's connect transformers to transmission.",
+      "chapter": 4
+    },
+    {
+      "start": 349.2120000858402,
+      "end": 353.4120001335239,
+      "text": "Suppose a line must carry ten kilowatts with unity power factor, and the total",
+      "chapter": 4
+    },
+    {
+      "start": 353.4120001335239,
+      "end": 354.97200007630346,
+      "text": "line resistance is two ohms.",
+      "chapter": 4
+    },
+    {
+      "start": 355.7119998474216,
+      "end": 359.5520000000095,
+      "text": "At a line operating voltage of one thousand volts, current is ten amperes.",
+      "chapter": 4
+    },
+    {
+      "start": 360.43200011445043,
+      "end": 363.6119994659519,
+      "text": "Line heating is current squared times resistance: two hundred watts.",
+      "chapter": 4
+    },
+    {
+      "start": 364.59200091553686,
+      "end": 368.13199992371557,
+      "text": "Raise the operating voltage to ten thousand volts while carrying the same",
+      "chapter": 4
+    },
+    {
+      "start": 368.13199992371557,
+      "end": 368.4519996185398,
+      "text": "power.",
+      "chapter": 4
+    },
+    {
+      "start": 369.37199969483373,
+      "end": 372.63199992371557,
+      "text": "Current becomes one ampere and line heating becomes two watts.",
+      "chapter": 4
+    },
+    {
+      "start": 373.271999313364,
+      "end": 377.7920016784763,
+      "text": "Voltage increased tenfold; line loss fell by a factor of one hundred.",
+      "chapter": 4
+    },
+    {
+      "start": 377.7920016784763,
+      "end": 381.8920001525974,
+      "text": "The reasoning requires fixed transmitted power, the same line resistance and",
+      "chapter": 4
+    },
+    {
+      "start": 381.8920001525974,
+      "end": 383.0520000000095,
+      "text": "the stated power factor.",
+      "chapter": 4
+    },
+    {
+      "start": 383.9120006103611,
+      "end": 387.8119983215427,
+      "text": "It does not say that raising voltage across a fixed resistor reduces its",
+      "chapter": 4
+    },
+    {
+      "start": 387.8119983215427,
+      "end": 390.3319987793064,
+      "text": "heating; that is a different circuit condition.",
+      "chapter": 4
+    },
+    {
+      "start": 390.87199969483373,
+      "end": 394.35405193544995,
+      "text": "Transmission systems use step up and step down stages so long distance",
+      "chapter": 4
+    },
+    {
+      "start": 394.35405193544995,
+      "end": 394.75200076294897,
+      "text": "currents",
+      "chapter": 4
+    },
+    {
+      "start": 394.75200076294897,
+      "end": 397.69199938965795,
+      "text": "can be smaller while equipment receives appropriate voltages.",
+      "chapter": 4
+    },
+    {
+      "start": 398.5720004577732,
+      "end": 402.59200091553686,
+      "text": "Real systems include transformer losses, reactive power, insulation",
+      "chapter": 4
+    },
+    {
+      "start": 402.59200091553686,
+      "end": 404.19199938965795,
+      "text": "requirements and safety constraints.",
+      "chapter": 4
+    },
+    {
+      "start": 404.9520015258884,
+      "end": 408.11200137330053,
+      "text": "The classroom arithmetic is not a plan for handling high voltage equipment.",
+      "chapter": 4
+    },
+    {
+      "start": 409.0720004577732,
+      "end": 409.9120006103611,
+      "text": "Finish with three checks.",
+      "chapter": 4
+    },
+    {
+      "start": 410.51199908448217,
+      "end": 413.89199633790014,
+      "text": "In a generator, changing coil orientation creates a flux derivative.",
+      "chapter": 4
+    },
+    {
+      "start": 414.5520000000095,
+      "end": 417.67200274659155,
+      "text": "In a transformer, changing shared flux gives a turns ratio.",
+      "chapter": 4
+    },
+    {
+      "start": 418.31200213624,
+      "end": 420.9719981689548,
+      "text": "In a transmission line, current sets resistive loss.",
+      "chapter": 4
+    },
+    {
+      "start": 421.5320033569431,
+      "end": 426.29199786377905,
+      "text": "In all three, account for the energy source and keep peak, RMS and real power",
+      "chapter": 4
+    },
+    {
+      "start": 426.29199786377905,
+      "end": 427.2000000000117,
+      "text": "clearly labelled.",
+      "chapter": 4
+    }
+  ]
+}

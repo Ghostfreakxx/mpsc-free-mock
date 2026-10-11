@@ -1,0 +1,352 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.860
+Welcome back.
+
+00:00:01.240 --> 00:00:03.480
+We have often treated objects as perfectly rigid.
+
+00:00:04.320 --> 00:00:07.740
+Real solids can change shape under a force, even when the change is too small
+
+00:00:07.740 --> 00:00:08.280
+to notice.
+
+00:00:09.080 --> 00:00:11.600
+Pull gently on a metal wire and it becomes slightly longer.
+
+00:00:12.440 --> 00:00:16.140
+Remove the force, and within its elastic range it returns to its original
+
+00:00:16.140 --> 00:00:16.460
+length.
+
+00:00:17.080 --> 00:00:19.100
+That recovery is what elasticity means.
+
+00:00:19.600 --> 00:00:21.420
+It does not simply mean easy to stretch.
+
+00:00:21.900 --> 00:00:25.840
+A material may be stiff, meaning difficult to deform, and still recover
+
+00:00:25.840 --> 00:00:26.320
+elastically.
+
+00:00:26.940 --> 00:00:31.360
+If a load leaves a permanent change after removal, that is plastic deformation.
+
+00:00:32.460 --> 00:00:35.740
+Imagine bending a paper clip gently, then bending it much farther.
+
+00:00:36.380 --> 00:00:39.480
+The small bend may recover; the larger bend may remain.
+
+00:00:40.100 --> 00:00:44.460
+We will use a simpler model: a uniform wire stretched slowly along its length,
+
+00:00:44.860 --> 00:00:47.400
+with small deformation and negligible self weight.
+
+00:00:48.000 --> 00:00:49.540
+There are two limits to keep separate.
+
+00:00:50.120 --> 00:00:53.180
+Below the proportional limit, stress is proportional to strain.
+
+00:00:53.700 --> 00:00:57.960
+The elastic limit concerns whether the material fully recovers after unloading.
+
+00:00:57.960 --> 00:01:02.480
+A material can show nonlinear yet recoverable behaviour, so these limits are
+
+00:01:02.480 --> 00:01:03.740
+not automatically identical.
+
+00:01:04.520 --> 00:01:08.240
+In JEE questions, read the stated regime before choosing an equation.
+
+00:01:09.020 --> 00:01:12.600
+Today we will calculate how much a wire stretches and how much energy that
+
+00:01:12.600 --> 00:01:13.200
+stretch stores.
+
+00:01:13.848 --> 00:01:18.428
+Suppose two wires carry the same pulling force, but one is thicker.
+
+00:01:19.348 --> 00:01:22.748
+The force alone does not describe how intensely each wire is loaded.
+
+00:01:23.868 --> 00:01:26.908
+Stress divides the tensile force by the cross sectional area.
+
+00:01:27.988 --> 00:01:31.388
+Spreading the same force over a larger area gives less stress.
+
+00:01:32.368 --> 00:01:37.168
+In static tension, equal opposite forces at the ends balance the wire overall.
+
+00:01:38.008 --> 00:01:41.268
+Do not add their magnitudes and use twice the force in the stress formula.
+
+00:01:41.988 --> 00:01:44.388
+Use the tension transmitted through a cross section.
+
+00:01:45.328 --> 00:01:48.648
+The unit of stress is newtons per square metre, called the pascal.
+
+00:01:49.708 --> 00:01:54.028
+Watch the area conversion: one square millimetre is one millionth of a square
+
+00:01:54.028 --> 00:01:56.488
+metre, because both length dimensions are converted.
+
+00:01:57.388 --> 00:02:01.708
+A hundred newtons acting over one square millimetre therefore gives one hundred
+
+00:02:01.708 --> 00:02:03.168
+million pascals of stress.
+
+00:02:04.008 --> 00:02:05.468
+Now describe the deformation.
+
+00:02:06.488 --> 00:02:09.628
+Longitudinal strain is extension divided by original length.
+
+00:02:10.128 --> 00:02:15.208
+If a two metre wire extends by one millimetre, convert that extension to zero
+
+00:02:15.208 --> 00:02:16.528
+point zero zero one metres.
+
+00:02:17.528 --> 00:02:21.188
+Divide by two to get zero point zero zero zero five.
+
+00:02:21.188 --> 00:02:23.628
+Strain has no unit because it is a ratio of lengths.
+
+00:02:24.448 --> 00:02:29.248
+The extension is one millimetre, but the strain is not one millimetre.
+
+00:02:29.248 --> 00:02:31.968
+Keeping those quantities separate prevents a very common error.
+
+00:02:32.208 --> 00:02:37.648
+In the linear elastic region, longitudinal stress equals Young's modulus times
+
+00:02:37.648 --> 00:02:38.648
+longitudinal strain.
+
+00:02:39.748 --> 00:02:44.088
+Young's modulus, written capital Y, describes the material's resistance to this
+
+00:02:44.088 --> 00:02:44.448
+deformation.
+
+00:02:45.608 --> 00:02:49.748
+Because strain is dimensionless, Y has the same unit as stress: pascals.
+
+00:02:50.988 --> 00:02:52.348
+Rearrange the equation carefully.
+
+00:02:53.368 --> 00:02:57.568
+Stress is force over area, and strain is extension over original length.
+
+00:02:57.568 --> 00:03:03.048
+Solving for extension gives force times original length, divided by area
+
+00:03:03.048 --> 00:03:04.288
+times Young's modulus.
+
+00:03:05.468 --> 00:03:07.388
+Let us solve our wire example completely.
+
+00:03:08.308 --> 00:03:12.568
+The force is one hundred newtons, the original length is two metres, and the
+
+00:03:12.568 --> 00:03:14.688
+area is one square millimetre.
+
+00:03:14.688 --> 00:03:17.988
+The material's Young's modulus is two hundred billion pascals.
+
+00:03:18.948 --> 00:03:21.288
+First convert the area to one millionth of a square metre.
+
+00:03:21.988 --> 00:03:24.728
+The numerator, force times length, is two hundred.
+
+00:03:24.728 --> 00:03:30.128
+The denominator, area times modulus, is two hundred thousand.
+
+00:03:30.128 --> 00:03:34.608
+Dividing gives zero point zero zero one metres, or one millimetre.
+
+00:03:34.608 --> 00:03:35.768
+Pause and check it another way.
+
+00:03:36.668 --> 00:03:40.428
+Stress is one hundred million pascals; divide by two hundred billion to get
+
+00:03:40.428 --> 00:03:44.088
+strain zero point zero zero zero five.
+
+00:03:44.088 --> 00:03:46.168
+Multiply by two metres to recover the same extension.
+
+00:03:46.948 --> 00:03:49.668
+We assumed the load remains within the proportional region.
+
+00:03:49.668 --> 00:03:54.288
+A formula cannot tell us that the material is safe without information about
+
+00:03:54.288 --> 00:03:54.748
+its limits.
+
+00:03:55.464 --> 00:03:59.324
+Now use the extension equation without repeatedly substituting large numbers.
+
+00:04:00.044 --> 00:04:03.964
+Under the same force, two wires of the same material and cross section have
+
+00:04:03.964 --> 00:04:05.924
+extension proportional to original length.
+
+00:04:07.384 --> 00:04:09.144
+Double the length and the extension doubles.
+
+00:04:09.784 --> 00:04:10.044
+Why?
+
+00:04:10.224 --> 00:04:13.444
+The same strain acts over twice as much original length.
+
+00:04:14.304 --> 00:04:18.644
+Next, keep length and material unchanged but double the radius of a circular
+
+00:04:18.644 --> 00:04:18.944
+wire.
+
+00:04:19.964 --> 00:04:20.604
+Predict the extension.
+
+00:04:21.244 --> 00:04:21.724
+Take a moment.
+
+00:04:22.524 --> 00:04:26.704
+Area is pi times radius squared, so doubling the radius makes the area four
+
+00:04:26.704 --> 00:04:27.384
+times larger.
+
+00:04:28.184 --> 00:04:31.284
+The extension becomes one quarter as large, not one half.
+
+00:04:32.084 --> 00:04:36.444
+If both length and radius double, the length contributes a factor of two while
+
+00:04:36.444 --> 00:04:38.864
+the area contributes a factor of four in the denominator.
+
+00:04:39.584 --> 00:04:41.704
+The new extension is half the old extension.
+
+00:04:42.604 --> 00:04:46.304
+Finally, compare materials using identical force, length, and area.
+
+00:04:46.824 --> 00:04:49.364
+A larger Young's modulus produces a smaller extension.
+
+00:04:50.004 --> 00:04:52.044
+It is the material stiffness that changes here.
+
+00:04:52.044 --> 00:04:55.524
+The stiffness of the whole wire also depends on geometry.
+
+00:04:56.624 --> 00:05:01.044
+Writing force equals k times extension gives an effective spring constant k
+
+00:05:01.044 --> 00:05:03.964
+equal to area times Young's modulus divided by length.
+
+00:05:04.664 --> 00:05:08.724
+A longer wire has smaller k, even though its material has exactly the same
+
+00:05:08.724 --> 00:05:09.324
+Young's modulus.
+
+00:05:10.544 --> 00:05:15.004
+This distinction is useful whenever a JEE question changes the dimensions but
+
+00:05:15.004 --> 00:05:15.764
+not the material.
+
+00:05:15.984 --> 00:05:18.704
+Stretching the wire stores elastic energy.
+
+00:05:19.504 --> 00:05:22.364
+Why is the energy not simply final force times extension?
+
+00:05:23.284 --> 00:05:28.524
+During slow loading from zero, the force is initially zero and increases as the
+
+00:05:28.524 --> 00:05:28.984
+wire stretches.
+
+00:05:29.784 --> 00:05:33.524
+In the linear elastic model, the force extension graph is a straight line
+
+00:05:33.524 --> 00:05:34.204
+through the origin.
+
+00:05:34.964 --> 00:05:36.524
+Work is the area under that graph.
+
+00:05:37.124 --> 00:05:42.024
+The area is a triangle, so stored energy is one half times final force times
+
+00:05:42.024 --> 00:05:42.724
+final extension.
+
+00:05:43.384 --> 00:05:47.124
+Equivalently, it is one half k times extension squared.
+
+00:05:48.364 --> 00:05:52.724
+For our wire, the final force is one hundred newtons and the extension is one
+
+00:05:52.724 --> 00:05:55.524
+millimetre, or zero point zero zero one metres.
+
+00:05:56.284 --> 00:06:00.304
+Multiply one half by one hundred by zero point zero zero one.
+
+00:06:00.304 --> 00:06:02.844
+The stored energy is zero point zero five joules.
+
+00:06:03.544 --> 00:06:07.664
+A sudden application of a constant load is a different dynamical problem; do
+
+00:06:07.664 --> 00:06:10.264
+not assume that all its work is stored at the static extension.
+
+00:06:10.964 --> 00:06:12.804
+One more graph distinction matters.
+
+00:06:13.544 --> 00:06:17.584
+On a force versus extension graph, slope is the wire's spring constant.
+
+00:06:18.324 --> 00:06:22.524
+On a stress versus strain graph, the initial linear slope is Young's modulus.
+
+00:06:23.564 --> 00:06:25.664
+Before solving, identify the axes.
+
+00:06:26.304 --> 00:06:30.524
+Your final checklist is original length, cross sectional area in square metres,
+
+00:06:31.404 --> 00:06:34.464
+force transmitted through the wire, and the linear elastic assumption.
+
+00:06:35.644 --> 00:06:39.764
+Shear, bulk compression, fluids, and thermal expansion need their own lessons.

@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "EM-wave applications: displacement current, intensity and pressure",
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 syllabus, Unit 15",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: electromagnetic-wave energy",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/16-3-energy-carried-by-electromagnetic-waves"
+    },
+    {
+      "title": "OpenStax: radiation pressure",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/16-4-momentum-and-radiation-pressure"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Displacement current: the gap in a charging capacitor",
+      "formula": "I_d=epsilon0 dPhi_E/dt; inside circular plates B=mu0 I r/(2 pi a^2)",
+      "points": [
+        "Displacement current describes changing electric flux, not charges crossing an ideal vacuum gap.",
+        "For ideal uniform circular plates, enclosed flux grows with loop area.",
+        "State symmetry, negligible fringing and the quasistatic limit."
+      ],
+      "script": "Hey, welcome back. Let's start with a puzzle. A wire carries current into a charging capacitor, but no charge crosses its ideal vacuum gap. How can the magnetic field around the circuit be consistent? Maxwell's correction includes changing electric flux. Displacement current is epsilon zero times the rate of change of electric flux in vacuum. It is not a stream of particles crossing the gap. For ideal parallel plates, charge is epsilon zero times electric field times plate area. Differentiate: the displacement current across the full plate area equals the charging current in the wire. The magnetic-circulation law includes conduction current plus displacement current through the chosen surface. Now give the plates circular radius a and assume uniform electric field, negligible fringing and a quasistatic situation. Take a circular magnetic loop of radius r less than a, concentric with the plate axis, between the plates. What fraction of electric flux does it enclose? It is r squared divided by a squared. So enclosed displacement current is charging current times that fraction. Symmetry lets magnetic field magnitude be constant around the circular loop, tangent to it. Magnetic circulation is B times two pi r. Equating it to mu zero times the enclosed displacement current gives B equal to mu zero I r divided by two pi a squared. Notice the field increases linearly with r inside the plate area. Try a equals zero point one metres, r equals zero point zero five metres and charging current zero point two amperes. Using mu zero divided by two pi approximately two times ten to the minus seven, the result is zero point two microtesla. At the plate edge it is zero point four microtesla. The current direction sets the circulation by the right-hand rule. This ideal capacitor model is not a universal field formula for arbitrary leads, fringing or rapidly varying circuits. Our key idea is to choose the surface carefully and include changing electric flux where conduction current alone is not enough."
+    },
+    {
+      "title": "Intensity: distinguish peak fields from RMS fields",
+      "formula": "B0=E0/c; intensity=epsilon0 c E0^2/2=epsilon0 c E_rms^2",
+      "points": [
+        "Vacuum plane-wave electric and magnetic energy densities are equal.",
+        "Intensity is an average energy flux, not field amplitude.",
+        "Doubling amplitude quadruples intensity."
+      ],
+      "script": "Now let the fields travel as a sinusoidal plane wave in vacuum. Electric field, magnetic field and propagation direction are mutually perpendicular. Propagation follows electric field cross magnetic field. Their peak magnitudes obey E zero equals c times B zero. In vacuum, electric energy density is one half epsilon zero E squared. Magnetic energy density is B squared divided by two mu zero. Since B equals E divided by c and c squared equals one divided by mu zero epsilon zero, those two densities are equal at each instant. Total energy density is epsilon zero E squared. The energy-flux magnitude is c times that total density. But intensity means the time average. For a sinusoid, average E squared is half the peak amplitude squared. Therefore intensity is one half epsilon zero c E zero squared. If the field is given as RMS instead, intensity is epsilon zero c E RMS squared, with no extra half. Pause before substituting: is your number peak or RMS? Let peak electric field be one hundred twenty volts per metre. Use epsilon zero approximately eight point eight five times ten to the minus twelve and c approximately three times ten to the eighth. Peak magnetic field is zero point four microtesla. Average intensity is nineteen point one one six watts per square metre, about nineteen point one. RMS electric field is one hundred twenty divided by the square root of two, approximately eighty four point eight five volts per metre. Putting that into the RMS formula gives the same intensity. Double the amplitude and intensity becomes four times as large. These relations assume a vacuum plane wave; do not automatically replace c with a medium speed while keeping every vacuum formula unchanged. For the numerical answer, keep enough digits during calculation and round at the end."
+    },
+    {
+      "title": "Radiation pressure and inverse-square spreading",
+      "formula": "Normal absorption: pressure=intensity/c; perfect reflection: pressure=2 intensity/c; isotropic source intensity=P/(4 pi r^2)",
+      "points": [
+        "Radiation transfers momentum as well as energy.",
+        "Perfect normal reflection reverses photon momentum and doubles pressure.",
+        "Inverse-square intensity requires the stated isotropic spreading model."
+      ],
+      "script": "Finally, light can push. At normal incidence, a completely absorbing surface receives momentum from the incoming wave. Average radiation pressure is intensity divided by c. An ideal perfectly reflecting surface reverses the normal momentum, giving twice that pressure. These are normal-incidence limiting cases, not formulas for every tilted or partly reflecting surface. Consider a beam with intensity six hundred watts per square metre striking area zero point zero two square metres normally. Absorbed power is twelve watts. Absorbing pressure is two times ten to the minus six pascals, and force is four times ten to the minus eight newtons. For perfect reflection, force doubles to eight times ten to the minus eight newtons. A tiny force can still matter for light objects or sustained illumination. Do not confuse force, measured in newtons, with pressure, measured in newtons per square metre. Now imagine an ideal source radiating one hundred twenty watts isotropically into free space. At distance two metres, power spreads over a sphere of area four pi r squared. Intensity is one hundred twenty divided by sixteen pi, about two point three nine watts per square metre. At four metres it is one quarter as large, about zero point five nine seven. Why? Doubling radius makes the sphere's area four times larger while total emitted power stays the same. Plane-wave local intensity formulas and spherical spreading describe different aspects of the model; do not demand inverse-square decay from an ideal infinite plane wave. In this far-field isotropic model, field amplitude scales as one over distance because intensity scales with amplitude squared. Real antennas, lasers, absorption and near fields can change the spatial pattern. The routine is to identify the wave model, decide whether the surface absorbs or reflects, and distinguish total source power from the intensity arriving at the surface."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "In the ideal capacitor gap, displacement current means:",
+      "options": [
+        "Charges cross the vacuum gap",
+        "Changing electric flux contributes to magnetic circulation",
+        "A permanent static field creates conduction current",
+        "The charging wire carries no current"
+      ],
+      "answer": 1,
+      "explanation": "Displacement current is epsilon0 times changing electric flux in vacuum, not a particle current through the ideal gap."
+    },
+    {
+      "question": "For a=0.10 m, r=0.05 m and I=0.20 A, ideal gap magnetic field is:",
+      "options": [
+        "0.4 microT",
+        "0.1 microT",
+        "0.2 microT",
+        "2 microT"
+      ],
+      "answer": 2,
+      "explanation": "Use mu0 I r/(2 pi a squared): 2 x 10^-7 x 0.20 x 0.05/0.01 = 2 x 10^-7 T."
+    },
+    {
+      "question": "Doubling sinusoidal vacuum-wave electric-field amplitude changes intensity by:",
+      "options": [
+        "A factor of 4",
+        "A factor of 2",
+        "A factor of 1/2",
+        "No change"
+      ],
+      "answer": 0,
+      "explanation": "Average intensity is proportional to the square of peak electric-field amplitude, so doubling amplitude quadruples intensity."
+    },
+    {
+      "question": "At normal incidence, a perfect reflector experiences pressure:",
+      "options": [
+        "Zero",
+        "Intensity/(2c)",
+        "Intensity/c",
+        "2 intensity/c"
+      ],
+      "answer": 3,
+      "explanation": "Normal momentum reverses on perfect reflection, doubling transfer compared with complete absorption at the same incident intensity."
+    },
+    {
+      "question": "For a fixed-power isotropic far-field source, doubling distance changes intensity by:",
+      "options": [
+        "A factor of 1/2",
+        "A factor of 1/4",
+        "A factor of 2",
+        "No change"
+      ],
+      "answer": 1,
+      "explanation": "The same power spreads over four times the spherical area, so intensity falls to one quarter in this stated ideal model."
+    }
+  ]
+}

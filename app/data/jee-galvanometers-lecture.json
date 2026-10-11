@@ -1,0 +1,140 @@
+{
+  "title": "Moving-coil galvanometer and meter conversions",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 13",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "NCERT Physics Part I: Moving charges and magnetism, section 4.10",
+      "url": "https://www.ncert.nic.in/textbook/pdf/leph104.pdf"
+    },
+    {
+      "title": "OpenStax: Electrical measuring instruments",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-4-electrical-measuring-instruments"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "A radial field makes deflection proportional to current",
+      "formula": "Radial field: magnetic torque = NIAB; restoring torque = c theta; equilibrium: theta = (NAB/c) I",
+      "points": [
+        "Curved pole pieces and a soft-iron core produce an approximately radial field.",
+        "The field lies in the coil plane as the coil turns, so its normal stays perpendicular to local B.",
+        "Pointer deflection theta is not the normal-to-field angle in the torque formula."
+      ],
+      "script": "Hey, welcome back. Our last class showed how a magnetic field turns a current loop. Today, we use that turning effect to measure a small steady current. A moving-coil galvanometer contains a light coil with many turns, a pointer, a magnetic system and a restoring suspension or spring. Current produces a magnetic torque. The spring resists rotation, and the pointer stops where those torques balance. The magnetic system is designed carefully. Curved pole pieces and a soft-iron core produce an approximately radial field in the working region. As the coil turns, the local field stays in its plane, perpendicular to the coil's normal. The sine factor in the magnetic torque is therefore one throughout the useful deflection range. This field is not uniform in direction across the instrument; we use the radial-field model with approximately constant magnitude at the active coil sides. Magnetic torque is N I A B. If c is restoring torque per radian, spring torque magnitude is c times theta. At equilibrium, c theta equals N I A B. So theta equals N A B over c, multiplied by current. Double the current within the operating range and the deflection doubles. Notice the two different angles. The pointer's deflection changes, while the normal-to-local-field angle stays ninety degrees. Confusing them would incorrectly insert sine of pointer deflection into the instrument equation. Damping helps the pointer settle; our equation describes its final steady reading, not every instant during motion."
+    },
+    {
+      "title": "Current sensitivity is not the same as voltage sensitivity",
+      "formula": "S_I = theta/I = NAB/c; bare coil: V = IG, S_V = theta/V = NAB/(cG)",
+      "points": [
+        "Here current sensitivity means deflection per unit current.",
+        "Voltage sensitivity also depends on the coil resistance G.",
+        "Doubling N and G at fixed A, B and c doubles S_I but leaves S_V unchanged."
+      ],
+      "script": "How responsive is the pointer? We define current sensitivity here as deflection divided by current. It is N A B over c, measured in radians per ampere if we use angular units. Larger turn count, larger area or stronger field increases it when the other quantities are fixed. A softer restoring spring also increases it. Take one hundred turns, area two square centimeters, field zero point two tesla, and restoring constant four times ten to the minus six newton meters per radian. Two square centimeters is two times ten to the minus four square meters. N A B is zero point zero zero four, giving current sensitivity one thousand radians per ampere. A half milliampere produces zero point five radians of deflection in this ideal linear model. Now let the bare coil resistance G be one hundred ohms. Its voltage is current times G. Voltage sensitivity is therefore current sensitivity divided by G, or ten radians per volt. That half milliampere needs zero point zero five volts across the coil. Here is a useful exam trap. Double the number of turns while holding area, field and restoring constant fixed. Current sensitivity doubles. If the longer winding also doubles resistance, voltage sensitivity stays unchanged, because numerator and resistance both double. Greater current sensitivity alone does not guarantee greater voltage sensitivity. Keep coil resistance separate from the restoring constant, and keep radians per ampere separate from radians per volt."
+    },
+    {
+      "title": "Build an ammeter with a parallel shunt",
+      "formula": "Full scale: Ig G = (I - Ig) S; shunt S = Ig G/(I - Ig); meter resistance R_A = Ig G/I",
+      "points": [
+        "Most current bypasses the delicate coil through a low-resistance parallel path.",
+        "Equal branch voltages give the shunt formula.",
+        "The complete ammeter connects in series with the measured branch."
+      ],
+      "script": "A delicate galvanometer cannot carry a large current directly. To make an ammeter, put a small shunt resistance S in parallel with its coil. Most of the current uses the shunt, while a controlled small fraction passes through the galvanometer. Let full-scale coil current be I g and coil resistance be G. If the desired full-scale total current is I, the shunt current is I minus I g. Parallel branches share the same voltage. So I g times G equals I minus I g, multiplied by S. Solve for S: I g G divided by I minus I g. Let's use a different instrument with full-scale current one milliampere and coil resistance one hundred ohms. We want a one ampere range. At full scale the coil voltage is zero point one volt, and the shunt carries zero point nine nine nine amperes. The required shunt is approximately zero point one zero zero one ohms. The complete ammeter's resistance is voltage divided by total current, giving zero point one ohms. Do not round I minus I g to I until you know the approximation is acceptable. A second check is the circuit connection. The shunt is parallel to the coil inside the instrument, but the complete ammeter is connected in series with the branch whose current we measure. Those two statements refer to different parts of the circuit. We assume steady direct current, constant resistances and negligible lead resistance for these calculations."
+    },
+    {
+      "title": "Build a voltmeter with a series multiplier",
+      "formula": "Full scale: V = Ig(G + R); added series resistance R = V/Ig - G; R_V = G + R",
+      "points": [
+        "A large series resistor limits the coil current at the target voltage.",
+        "The complete voltmeter connects across the two measurement points.",
+        "Subtract coil resistance when calculating the added resistance."
+      ],
+      "script": "Now suppose we want to measure voltage. Connect a large resistance R in series with the coil to limit the current. The complete voltmeter is then connected across the two points whose potential difference we want. Same instrument: full-scale coil current one milliampere, resistance one hundred ohms. For a ten volt range, total resistance must be voltage divided by full-scale current, or ten thousand ohms. The coil already contributes one hundred ohms, so the added series resistance is nine thousand nine hundred ohms. At full scale, the coil drops zero point one volt and the series resistor drops nine point nine volts. Together they make ten volts. Writing ten thousand ohms as the added resistance would count the coil resistance twice. In symbols, V equals I g times G plus R. Rearranging gives R equal to V over I g, minus G. This design requires a target range at least as large as the bare coil's full-scale voltage if we use only a nonnegative added series resistance. For a twenty volt range with the same coil, total resistance becomes twenty thousand ohms and the added resistance becomes nineteen thousand nine hundred ohms. Remember the two levels of connection: multiplier and coil are internally in series, but the complete voltmeter is externally in parallel with the measured component. A voltmeter should draw little current, so high input resistance is desirable. It is still a real branch of the circuit, not an invisible observer."
+    },
+    {
+      "title": "Real meters change the circuit: calculate the loading",
+      "formula": "Ammeter: I_measured = E/(R_load + R_A); voltmeter: R_effective = R_load parallel R_V",
+      "points": [
+        "An ideal ammeter has zero resistance; an ideal voltmeter has infinite resistance.",
+        "A finite-resistance voltmeter draws current and can lower the measured voltage.",
+        "Redraw the circuit with the meter present before calculating its reading."
+      ],
+      "script": "Let's see why meter resistance matters. An ideal ten volt source feeds a ten ohm resistor. Without a meter, current is one ampere. Insert our zero point one ohm ammeter in series. Total resistance becomes ten point one ohms, so current is about zero point nine nine zero amperes. The instrument correctly reads the current in the altered circuit, which is slightly smaller than the original current. Now a voltage example. An ideal ten volt source feeds two ten thousand ohm resistors in series. The voltage across the second resistor is five volts before measurement. Connect our ten thousand ohm voltmeter across that second resistor. Two equal ten thousand ohm branches in parallel give five thousand ohms. The loaded divider now has ten thousand ohms above and five thousand ohms below. Its measured voltage is ten times five thousand divided by fifteen thousand, or about three point three three volts. The drop from five volts is a loading effect, not a mistake in Ohm's law. A much higher voltmeter resistance would disturb this circuit less. This is why an ideal ammeter has zero resistance and an ideal voltmeter has infinite resistance. Also, do not connect a low-resistance ammeter directly across a voltage source; it can draw excessive current. For JEE problems, redraw the actual connections, preserve the coil's full-scale current, and use branch voltages and currents to derive the formulas. Our next class will turn from measuring instruments to magnetic dipole fields and bar-magnet geometry."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why does an ideal moving-coil galvanometer's radial field give a linear steady deflection-current relation?",
+      "options": [
+        "The coil normal remains perpendicular to local B, so magnetic torque is NIAB",
+        "Pointer deflection always equals 90 degrees",
+        "The restoring torque is zero",
+        "The field is uniform in direction everywhere"
+      ],
+      "answer": 0,
+      "explanation": "The radial field keeps local B in the coil plane. Balancing NIAB with c theta gives theta proportional to I."
+    },
+    {
+      "question": "For N = 100, A = 2 x 10^-4 m^2, B = 0.20 T and c = 4 x 10^-6 N m/rad, current sensitivity theta/I is:",
+      "options": [
+        "10 rad/A",
+        "1000 rad/A",
+        "100 rad/A",
+        "0.001 rad/A"
+      ],
+      "answer": 1,
+      "explanation": "NAB/c = 100 x 2 x 10^-4 x 0.20/(4 x 10^-6) = 1000 rad/A."
+    },
+    {
+      "question": "At fixed A, B and c, doubling both N and bare coil resistance G gives:",
+      "options": [
+        "Both sensitivities double",
+        "Both sensitivities stay unchanged",
+        "Current sensitivity doubles; voltage sensitivity stays unchanged",
+        "Current sensitivity unchanged; voltage sensitivity doubles"
+      ],
+      "answer": 2,
+      "explanation": "S_I is proportional to N, but S_V is proportional to N/G under the stated constraints."
+    },
+    {
+      "question": "Ig = 1 mA, G = 100 ohms. For a 1 A ammeter range, the added shunt is approximately:",
+      "options": [
+        "100 ohms in series",
+        "0.1001 ohms in series",
+        "100 ohms in parallel",
+        "0.1001 ohms in parallel"
+      ],
+      "answer": 3,
+      "explanation": "S = Ig G/(I-Ig) = 0.001 x 100/0.999 = 0.100100... ohms, connected parallel to the coil."
+    },
+    {
+      "question": "Ig = 1 mA, G = 100 ohms. For a 10 V voltmeter range, the added resistance is:",
+      "options": [
+        "9900 ohms in series",
+        "10000 ohms in series",
+        "9900 ohms in parallel",
+        "100 ohms in series"
+      ],
+      "answer": 0,
+      "explanation": "R = V/Ig - G = 10/0.001 - 100 = 9900 ohms. Total input resistance is 10000 ohms."
+    },
+    {
+      "question": "A 10 V ideal source feeds two 10 kilohm resistors in series. A 10 kilohm voltmeter across the lower resistor reads:",
+      "options": [
+        "5 V",
+        "Approximately 3.33 V",
+        "10 V",
+        "Approximately 6.67 V"
+      ],
+      "answer": 1,
+      "explanation": "The lower resistor parallel with the meter is 5 kilohms. The loaded divider gives 10 x 5/(10+5) = 10/3 V."
+    }
+  ]
+}

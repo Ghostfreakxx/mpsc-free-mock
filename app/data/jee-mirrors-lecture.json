@@ -1,0 +1,136 @@
+{
+  "title": "Reflection and spherical mirrors",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 16",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Spherical mirrors, conceptual reference; sign convention adapted explicitly",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/2-2-spherical-mirrors"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Reflection starts with the normal",
+      "formula": "Angle of incidence i = angle of reflection r, measured from the normal",
+      "points": [
+        "The incident ray, reflected ray and normal lie in one plane.",
+        "A plane mirror forms a virtual upright image at equal distance behind it.",
+        "An angle measured from the mirror surface is complementary to the normal angle."
+      ],
+      "script": "Hey, welcome back. Today we begin optics with mirrors. Before collecting formulas, let's ask what a mirror actually does to a ray of light. At the point where the ray hits, draw a normal: a line perpendicular to the reflecting surface. The angle of incidence is measured between that normal and the incoming ray. The reflected ray makes the same angle with the normal, on the other side. These two rays and the normal lie in one plane. Simple rule, powerful consequences. Suppose a question says the incident ray makes sixty degrees with the mirror surface. What is the angle of reflection? Take a moment. It is thirty degrees, not sixty. The normal is perpendicular to the surface, so we subtract from ninety before using the reflection law. Now picture a plane mirror. Reflected rays reaching your eyes diverge, but their backward extensions meet behind the mirror. That meeting point is a virtual image. Light does not actually travel through that point behind an opaque mirror. For a stationary plane mirror, an object twenty centimeters in front produces an upright, same-size image twenty centimeters behind it. Object and image are forty centimeters apart. In a ray diagram, solid lines represent actual light paths; dashed lines show backward extensions. This distinction will matter even more when we curve the mirror. Our first JEE habit is therefore: draw the normal, identify the angle, and decide whether actual rays or their extensions meet."
+    },
+    {
+      "title": "Curvature, focus and a consistent coordinate system",
+      "formula": "New Cartesian convention: 1/f = 1/v + 1/u; f = R/2 for paraxial spherical mirrors",
+      "points": [
+        "Set the pole at x = 0; incident light travels left to right, so +x is right.",
+        "A concave mirror has f < 0; a convex mirror has f > 0 in this setup.",
+        "The spherical-mirror relations assume rays close to the principal axis."
+      ],
+      "script": "A concave mirror has its reflecting surface curved inward, facing our object. A convex mirror bulges toward the object. The pole is the middle of the mirror, and the principal axis joins the pole to the sphere's center of curvature. Near the axis, parallel rays reflected by a concave mirror meet at its principal focus. A convex mirror sends them apart; their backward extensions meet at a virtual focus behind it. For spherical mirrors in the paraxial approximation, the focal length is half the radius of curvature. Paraxial means rays close to the axis and making small angles with it. Farther-out rays need not share exactly the same focus: that is spherical aberration. Now let's prevent the classic sign-convention mix-up. Throughout this lesson, incident light travels left to right. Put the pole at zero, and take rightward distances as positive. Every distance is measured from the pole. A real object on the left has negative object distance, u. A concave mirror's focus is on the left, so f is negative. A convex mirror's focus is on the right, so f is positive. Image distance, v, may be negative or positive depending on its location. A concave radius of negative twenty centimeters gives f equal to negative ten centimeters. Convex radius positive twenty gives positive ten. Some references use a different convention. Their physics is the same, but do not borrow their signs while keeping our equation. Here we use one over f equals one over v plus one over u, consistently."
+    },
+    {
+      "title": "A real image: let two rays and the equation agree",
+      "formula": "u = -30 cm, f = -10 cm -> v = -15 cm; m = -v/u = -0.5",
+      "points": [
+        "A parallel incident ray reflects through the concave focus.",
+        "At the pole, reflection gives equal angles to the principal-axis normal.",
+        "A negative image distance is in front; negative magnification means inverted."
+      ],
+      "script": "Let's build a real image rather than just name it. Our concave mirror has focal length negative ten centimeters. Place a small upright object thirty centimeters to its left. Draw one ray from the object's tip parallel to the axis. After reflection, it passes through the focus. Draw a second ray to the pole. At the pole the normal lies along the axis, so equal angles give its reflected direction. Where those two reflected rays actually meet, we locate the image tip. Our diagram is a paraxial schematic, so the mirror is treated close to its pole for the ray construction. Now calculate. Object distance is negative thirty centimeters. One over image distance equals one over focal length minus one over object distance. That is negative one tenth plus one thirtieth, giving negative one fifteenth per centimeter. Therefore v is negative fifteen centimeters. The image lies fifteen centimeters to the left of the mirror, between the focus and center of curvature. It is real because reflected rays actually converge there. What about its size? Mirror magnification is negative v divided by u. Substituting both signed distances gives negative one half. The minus sign says inverted; the magnitude says half as tall. A two-centimeter object therefore has signed image height negative one centimeter. Notice how three checks agree: the ray intersection, the calculated position, and the predicted orientation. In JEE numerical questions, write signs before arithmetic, keep units consistent, then describe the image. A correct number with the wrong real-or-virtual interpretation is an unfinished answer."
+    },
+    {
+      "title": "Inside the focus: a virtual image can be enlarged",
+      "formula": "u = -5 cm, f = -10 cm -> v = +10 cm; m = +2",
+      "points": [
+        "For an object between concave focus and pole, reflected rays diverge.",
+        "Backward extensions meet behind the mirror, forming a virtual upright enlarged image.",
+        "An object exactly at the focus has its paraxial image at infinity."
+      ],
+      "script": "Keep the same concave mirror, but move our object to five centimeters in front. That puts it between the focus and the pole. Do you expect a smaller real image again? Pause and look at the rays. Now the reflected rays spread apart. Their backward extensions meet behind the mirror, above the axis. We get a virtual, upright, enlarged image. Let's make the calculation explain the picture. One over v is negative one tenth minus negative one fifth. That becomes positive one tenth per centimeter, so v is positive ten centimeters. Positive image distance means behind this mirror in our coordinate system. Magnification is negative ten divided by negative five, which equals positive two. The image is twice as tall and upright. A virtual image is not automatically smaller. That shortcut would fail right here. As a useful map for a real object and a concave mirror: beyond the center, the image is real and smaller; at the center, it is real and the same size; between center and focus, it is real and larger. Inside the focus, it becomes virtual and larger. At the focus itself, reflected paraxial rays are parallel. There is no finite image distance; we describe the image as at infinity. Do not divide by zero and report an ordinary number. Our two worked examples straddle that focal boundary. In a JEE problem, first locate the object relative to the focus. That prediction gives you a quick way to catch an algebraic sign error."
+    },
+    {
+      "title": "Convex mirrors and a final sign-check routine",
+      "formula": "u = -30 cm, f = +15 cm -> v = +10 cm; m = +1/3",
+      "points": [
+        "For a real object, a convex mirror gives a virtual upright diminished image.",
+        "Its image lies between the pole and virtual focus.",
+        "The real-object restriction matters; virtual objects require separate analysis."
+      ],
+      "script": "Now switch to a convex mirror with focal length positive fifteen centimeters. Our real object is thirty centimeters in front, so u remains negative thirty. One over v equals one fifteenth minus negative one thirtieth. That is one tenth per centimeter. Image distance is positive ten centimeters, behind the mirror, between the pole and the virtual focus. Magnification is negative ten divided by negative thirty, giving positive one third. So the image is virtual, upright, and diminished. Try one more in your head: the same mirror, but a real object fifteen centimeters away. What is the image distance? Give yourself a moment. One over v becomes one fifteenth plus one fifteenth, so v is positive seven point five centimeters. Magnification is positive one half. It is still behind the mirror and smaller. This explains why convex mirrors can show a wider scene while shrinking the objects in it. For a real object in front of an ordinary convex mirror, the virtual, upright, diminished pattern is dependable. The words real object are essential: a virtual object made by another optical element needs separate analysis. Finally, our sign-check routine. Fix the pole and positive direction. Write signed u and f. Solve for v. Calculate negative v over u. Then interpret position, orientation, and size, and check them against a ray sketch. For a plane mirror, the same convention gives v equal to negative u and magnification positive one. Keep this method consistent and mirror questions stop feeling like a guessing game."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "An incident ray makes 60 degrees with a plane mirror's surface. Its angle of reflection from the normal is:",
+      "options": [
+        "60 degrees",
+        "30 degrees",
+        "90 degrees",
+        "120 degrees"
+      ],
+      "answer": 1,
+      "explanation": "The normal is perpendicular to the surface: i = 90 - 60 = 30 degrees, and r = i."
+    },
+    {
+      "question": "A plane-mirror object is 20 cm in front. The object-image separation is:",
+      "options": [
+        "10 cm",
+        "20 cm",
+        "40 cm",
+        "0 cm"
+      ],
+      "answer": 2,
+      "explanation": "The virtual image is 20 cm behind, so the separation is 20 + 20 = 40 cm."
+    },
+    {
+      "question": "In this lesson's Cartesian convention, a concave mirror has R = -20 cm. Its paraxial focal length is:",
+      "options": [
+        "+10 cm",
+        "-40 cm",
+        "+40 cm",
+        "-10 cm"
+      ],
+      "answer": 3,
+      "explanation": "With signed distances measured from the pole, f = R/2 = -10 cm."
+    },
+    {
+      "question": "For u = -30 cm and f = -10 cm, the image distance and magnification are:",
+      "options": [
+        "v = -15 cm; m = -0.5",
+        "v = +15 cm; m = +0.5",
+        "v = -30 cm; m = -1",
+        "v = +10 cm; m = +2"
+      ],
+      "answer": 0,
+      "explanation": "1/v = -1/10 + 1/30 = -1/15; m = -v/u = -0.5. Real, inverted, half-size."
+    },
+    {
+      "question": "A real object has u = -5 cm before a concave mirror with f = -10 cm. The image is:",
+      "options": [
+        "Real, inverted, half-size",
+        "Virtual, upright, twice as tall",
+        "Virtual, upright, half-size",
+        "Real, upright, twice as tall"
+      ],
+      "answer": 1,
+      "explanation": "1/v = -1/10 + 1/5 = +1/10, so v = +10 cm and m = +2."
+    },
+    {
+      "question": "For a convex mirror with f = +15 cm and a real object at u = -30 cm, the image is:",
+      "options": [
+        "v = -10 cm; inverted",
+        "v = +30 cm; same size",
+        "v = +10 cm; upright, one-third size",
+        "v = -30 cm; upright"
+      ],
+      "answer": 2,
+      "explanation": "1/v = 1/15 + 1/30 = 1/10; m = -10/(-30) = +1/3. Virtual and diminished."
+    }
+  ]
+}

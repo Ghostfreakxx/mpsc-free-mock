@@ -1,0 +1,849 @@
+{
+  "duration": 429.2880000000118,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 81.26400000000218
+    },
+    {
+      "start": 81.26400000000218,
+      "end": 163.1760000000044
+    },
+    {
+      "start": 163.1760000000044,
+      "end": 247.77600000000672
+    },
+    {
+      "start": 247.77600000000672,
+      "end": 336.38400000000917
+    },
+    {
+      "start": 336.38400000000917,
+      "end": 429.2880000000118
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.3600000143051147,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.9600000381469727,
+      "end": 4.559999942779541,
+      "text": "We have used a coil's magnetic moment to predict torque.",
+      "chapter": 0
+    },
+    {
+      "start": 5.380000114440918,
+      "end": 8.720000267028809,
+      "text": "Now we ask what field a magnetic dipole creates around itself.",
+      "chapter": 0
+    },
+    {
+      "start": 9.399999618530273,
+      "end": 13.0600004196167,
+      "text": "A bar magnet and a small current loop can produce the same leading field",
+      "chapter": 0
+    },
+    {
+      "start": 13.0600004196167,
+      "end": 16.239999771118164,
+      "text": "pattern at large distances if their magnetic moments match.",
+      "chapter": 0
+    },
+    {
+      "start": 17.299999237060547,
+      "end": 20.760000228881836,
+      "text": "For a bar magnet, the moment points from its south end toward its north end.",
+      "chapter": 0
+    },
+    {
+      "start": 21.440000534057617,
+      "end": 25,
+      "text": "For a current loop, the right hand rule gives the normal, and the moment",
+      "chapter": 0
+    },
+    {
+      "start": 25,
+      "end": 27.15999984741211,
+      "text": "magnitude is current times enclosed area.",
+      "chapter": 0
+    },
+    {
+      "start": 27.84000015258789,
+      "end": 31.5,
+      "text": "The moment is not the same thing as the local magnetic field at every point.",
+      "chapter": 0
+    },
+    {
+      "start": 32.7599983215332,
+      "end": 36.47999954223633,
+      "text": "Outside a bar magnet, field lines leave the north region and curve toward the",
+      "chapter": 0
+    },
+    {
+      "start": 36.47999954223633,
+      "end": 36.939998626708984,
+      "text": "south region.",
+      "chapter": 0
+    },
+    {
+      "start": 37.79999923706055,
+      "end": 40.400001525878906,
+      "text": "Inside the magnet, they continue from south toward north.",
+      "chapter": 0
+    },
+    {
+      "start": 40.86000061035156,
+      "end": 42.400001525878906,
+      "text": "They do not simply stop at the poles.",
+      "chapter": 0
+    },
+    {
+      "start": 43.18000030517578,
+      "end": 46.900001525878906,
+      "text": "In the standard magnetism model, the net magnetic flux through any closed",
+      "chapter": 0
+    },
+    {
+      "start": 46.900001525878906,
+      "end": 47.84000015258789,
+      "text": "surface is zero.",
+      "chapter": 0
+    },
+    {
+      "start": 48.619998931884766,
+      "end": 52.560001373291016,
+      "text": "Unlike the electric field of an isolated charge, a bar magnet's field has no",
+      "chapter": 0
+    },
+    {
+      "start": 52.560001373291016,
+      "end": 54.02000045776367,
+      "text": "separate magnetic source or sink.",
+      "chapter": 0
+    },
+    {
+      "start": 54.959999084472656,
+      "end": 57.400001525878906,
+      "text": "The tangent to a field line gives the local field direction.",
+      "chapter": 0
+    },
+    {
+      "start": 58.02000045776367,
+      "end": 61.560001373291016,
+      "text": "It does not directly give the force direction on a moving charge, which still",
+      "chapter": 0
+    },
+    {
+      "start": 61.560001373291016,
+      "end": 62.97999954223633,
+      "text": "requires velocity cross B.",
+      "chapter": 0
+    },
+    {
+      "start": 63.959999084472656,
+      "end": 67.23999786376953,
+      "text": "Our quantitative dipole formulas describe points far outside a localized",
+      "chapter": 0
+    },
+    {
+      "start": 67.23999786376953,
+      "end": 69.94000244140625,
+      "text": "source, at distances much larger than its size.",
+      "chapter": 0
+    },
+    {
+      "start": 71.0199966430664,
+      "end": 74.16000366210938,
+      "text": "Close to a real magnet, shape and magnetization details matter.",
+      "chapter": 0
+    },
+    {
+      "start": 75.08000183105469,
+      "end": 79.12000274658203,
+      "text": "Treat the dipole as an approximation with a useful range, not a tiny drawing",
+      "chapter": 0
+    },
+    {
+      "start": 79.12000274658203,
+      "end": 80.81999969482422,
+      "text": "that makes every nearby field exact.",
+      "chapter": 0
+    },
+    {
+      "start": 81.26400000000218,
+      "end": 85.36399990463475,
+      "text": "Put a bar magnet horizontally, south on the left and north on the right.",
+      "chapter": 1
+    },
+    {
+      "start": 85.90399986648778,
+      "end": 87.06400019073705,
+      "text": "Its moment points right.",
+      "chapter": 1
+    },
+    {
+      "start": 87.56400019073705,
+      "end": 90.50399977112035,
+      "text": "The axial line passes through both poles and the center.",
+      "chapter": 1
+    },
+    {
+      "start": 91.22400003814916,
+      "end": 95.18964135331592,
+      "text": "At a point far to the right of the north end, the field points right, away",
+      "chapter": 1
+    },
+    {
+      "start": 95.18964135331592,
+      "end": 95.40400034332494,
+      "text": "from",
+      "chapter": 1
+    },
+    {
+      "start": 95.40400034332494,
+      "end": 96.04399973297338,
+      "text": "the north region.",
+      "chapter": 1
+    },
+    {
+      "start": 96.84399992370824,
+      "end": 99.06399923706273,
+      "text": "What about a point far to the left of the south end?",
+      "chapter": 1
+    },
+    {
+      "start": 99.68400007629613,
+      "end": 101.00399977112035,
+      "text": "Take a moment to draw the arrow.",
+      "chapter": 1
+    },
+    {
+      "start": 101.48399931335668,
+      "end": 104.44400030517797,
+      "text": "The field points toward the south region, which is also right.",
+      "chapter": 1
+    },
+    {
+      "start": 104.62400061035375,
+      "end": 108.7040005340598,
+      "text": "So the far axial field is parallel to the moment on both sides.",
+      "chapter": 1
+    },
+    {
+      "start": 109.26400000000218,
+      "end": 111.36400038147191,
+      "text": "It is not automatically outward from the center.",
+      "chapter": 1
+    },
+    {
+      "start": 112.12400061035375,
+      "end": 117.16400152588109,
+      "text": "Its magnitude is mu zero over four pi, multiplied by two times moment divided",
+      "chapter": 1
+    },
+    {
+      "start": 117.16400152588109,
+      "end": 117.98400122070531,
+      "text": "by r cubed.",
+      "chapter": 1
+    },
+    {
+      "start": 118.72399908447484,
+      "end": 122.62400061035375,
+      "text": "Here r is distance from the center of the localized dipole, not distance from",
+      "chapter": 1
+    },
+    {
+      "start": 122.62400061035375,
+      "end": 123.30400091552953,
+      "text": "the nearest pole.",
+      "chapter": 1
+    },
+    {
+      "start": 124.04399877929906,
+      "end": 129.1440010681174,
+      "text": "In vacuum or approximately air, use mu zero over four pi approximately ten to",
+      "chapter": 1
+    },
+    {
+      "start": 129.1440010681174,
+      "end": 130.88399893188694,
+      "text": "the minus seven in SI units.",
+      "chapter": 1
+    },
+    {
+      "start": 131.82400137329319,
+      "end": 136.06399923706272,
+      "text": "Suppose moment is zero point eight ampere meter squared and the axial point is",
+      "chapter": 1
+    },
+    {
+      "start": 136.06399923706272,
+      "end": 140.2439995422385,
+      "text": "zero point four meters from the center, sufficiently far compared with the",
+      "chapter": 1
+    },
+    {
+      "start": 140.2439995422385,
+      "end": 140.86399847412326,
+      "text": "magnet's size.",
+      "chapter": 1
+    },
+    {
+      "start": 141.92399984741428,
+      "end": 145.6039963378928,
+      "text": "Cube zero point four to get zero point zero six four.",
+      "chapter": 1
+    },
+    {
+      "start": 145.6039963378928,
+      "end": 147.64399725342014,
+      "text": "The field is two point five microtesla.",
+      "chapter": 1
+    },
+    {
+      "start": 148.66400152588108,
+      "end": 150.3040009155295,
+      "text": "Double the distance while staying on the axis.",
+      "chapter": 1
+    },
+    {
+      "start": 150.78399664306858,
+      "end": 154.36399847412326,
+      "text": "The field becomes one eighth as large, zero point three one two five",
+      "chapter": 1
+    },
+    {
+      "start": 154.36399847412326,
+      "end": 155.1039963378928,
+      "text": "microtesla.",
+      "chapter": 1
+    },
+    {
+      "start": 155.74400335693576,
+      "end": 158.8840027465842,
+      "text": "That cube dependence is characteristic of the far dipole field.",
+      "chapter": 1
+    },
+    {
+      "start": 159.62400061035373,
+      "end": 162.874666056318,
+      "text": "Always check geometry, distance reference and the approximation before",
+      "chapter": 1
+    },
+    {
+      "start": 162.874666056318,
+      "end": 163.1760000000044,
+      "text": "substituting numbers.",
+      "chapter": 1
+    },
+    {
+      "start": 163.1760000000044,
+      "end": 168.3359998474165,
+      "text": "Now move to the perpendicular bisector of the magnet, called its equatorial",
+      "chapter": 2
+    },
+    {
+      "start": 168.3359998474165,
+      "end": 169.23599994278393,
+      "text": "line in our drawing.",
+      "chapter": 2
+    },
+    {
+      "start": 170.1760000000044,
+      "end": 171.5560001144453,
+      "text": "Keep the moment pointing right.",
+      "chapter": 2
+    },
+    {
+      "start": 172.35600030518017,
+      "end": 176.50984616558807,
+      "text": "At a distant point above the center, symmetry cancels the vertical parts of",
+      "chapter": 2
+    },
+    {
+      "start": 176.50984616558807,
+      "end": 176.6760000000044,
+      "text": "the",
+      "chapter": 2
+    },
+    {
+      "start": 176.6760000000044,
+      "end": 179.03599965668164,
+      "text": "field, while the horizontal parts point left.",
+      "chapter": 2
+    },
+    {
+      "start": 179.69600045776806,
+      "end": 181.47599923706494,
+      "text": "The same happens below the center.",
+      "chapter": 2
+    },
+    {
+      "start": 182.53600061035596,
+      "end": 185.19600045776806,
+      "text": "Thus the equatorial field is opposite to the moment.",
+      "chapter": 2
+    },
+    {
+      "start": 185.73599946594678,
+      "end": 190.77600038147412,
+      "text": "Its magnitude is mu zero over four pi, times moment divided by r cubed.",
+      "chapter": 2
+    },
+    {
+      "start": 191.87600076294385,
+      "end": 195.37600076294385,
+      "text": "Compared at the same center distance in the far field limit, the axial",
+      "chapter": 2
+    },
+    {
+      "start": 195.37600076294385,
+      "end": 197.75600183105908,
+      "text": "magnitude is twice the equatorial magnitude.",
+      "chapter": 2
+    },
+    {
+      "start": 198.69600045776806,
+      "end": 202.35523164368115,
+      "text": "For our zero point eight ampere meter squared moment at zero point four",
+      "chapter": 2
+    },
+    {
+      "start": 202.35523164368115,
+      "end": 202.71600091553174,
+      "text": "meters,",
+      "chapter": 2
+    },
+    {
+      "start": 203.47599923706494,
+      "end": 207.4160016784712,
+      "text": "equatorial field is one point two five microtesla, pointing left.",
+      "chapter": 2
+    },
+    {
+      "start": 208.01600015259228,
+      "end": 212.19600045776806,
+      "text": "The axial value at that same distance is two point five microtesla, pointing",
+      "chapter": 2
+    },
+    {
+      "start": 212.19600045776806,
+      "end": 212.5760015258833,
+      "text": "right.",
+      "chapter": 2
+    },
+    {
+      "start": 213.0760015258833,
+      "end": 216.9959996948286,
+      "text": "The equatorial field is not zero just because the point lies on a symmetry",
+      "chapter": 2
+    },
+    {
+      "start": 216.9959996948286,
+      "end": 217.37600076294385,
+      "text": "line.",
+      "chapter": 2
+    },
+    {
+      "start": 218.31599938965283,
+      "end": 220.81599938965283,
+      "text": "Symmetry can cancel one component while leaving another.",
+      "chapter": 2
+    },
+    {
+      "start": 221.8359998474165,
+      "end": 225.7318961721611,
+      "text": "Also, the ratio of two is not a rule for arbitrary points near a finite",
+      "chapter": 2
+    },
+    {
+      "start": 225.7318961721611,
+      "end": 226.11599862671338,
+      "text": "magnet.",
+      "chapter": 2
+    },
+    {
+      "start": 227.21600091553174,
+      "end": 227.656003356938,
+      "text": "Distance matters.",
+      "chapter": 2
+    },
+    {
+      "start": 228.39600122070752,
+      "end": 232.5760015258833,
+      "text": "If an axial point is twice as far from the center as an equatorial point, its",
+      "chapter": 2
+    },
+    {
+      "start": 232.5760015258833,
+      "end": 236.45599877930127,
+      "text": "field magnitude is two divided by eight, or one quarter of the equatorial",
+      "chapter": 2
+    },
+    {
+      "start": 236.45599877930127,
+      "end": 236.75600183105908,
+      "text": "value.",
+      "chapter": 2
+    },
+    {
+      "start": 237.23599755859814,
+      "end": 241.63804826159793,
+      "text": "If the question says equal fields instead, the axial distance must be cube",
+      "chapter": 2
+    },
+    {
+      "start": 241.63804826159793,
+      "end": 241.87599694824658,
+      "text": "root",
+      "chapter": 2
+    },
+    {
+      "start": 241.87599694824658,
+      "end": 244.0760015258833,
+      "text": "of two times the equatorial distance.",
+      "chapter": 2
+    },
+    {
+      "start": 244.91599786377392,
+      "end": 247.53600061035596,
+      "text": "Do the cube scaling before reaching for a familiar ratio.",
+      "chapter": 2
+    },
+    {
+      "start": 247.77600000000672,
+      "end": 252.7560000190802,
+      "text": "Let's test the approximation using a source we can calculate: a thin circular",
+      "chapter": 3
+    },
+    {
+      "start": 252.7560000190802,
+      "end": 253.97599980927185,
+      "text": "current loop in vacuum.",
+      "chapter": 3
+    },
+    {
+      "start": 254.6160001525946,
+      "end": 260.1160001525946,
+      "text": "On its axis at distance x from the center, the field magnitude is mu zero I",
+      "chapter": 3
+    },
+    {
+      "start": 260.4560003051825,
+      "end": 265.71600053406434,
+      "text": "R squared divided by two times the quantity R squared plus x squared raised to",
+      "chapter": 3
+    },
+    {
+      "start": 265.87600038147644,
+      "end": 266.3359994659491,
+      "text": "three halves.",
+      "chapter": 3
+    },
+    {
+      "start": 266.87600038147644,
+      "end": 270.8960008392401,
+      "text": "This is the circular loop result, not a universal exact bar magnet formula.",
+      "chapter": 3
+    },
+    {
+      "start": 271.6160001525946,
+      "end": 276.03600022888855,
+      "text": "When x is much larger than loop radius R, the denominator is approximately two",
+      "chapter": 3
+    },
+    {
+      "start": 276.31600091553406,
+      "end": 277.3960008392401,
+      "text": "x cubed.",
+      "chapter": 3
+    },
+    {
+      "start": 277.3960008392401,
+      "end": 282.4560003051825,
+      "text": "Replace I pi R squared by the loop's moment, and the expression becomes the",
+      "chapter": 3
+    },
+    {
+      "start": 282.4560003051825,
+      "end": 284.19599816895203,
+      "text": "same far axial dipole field.",
+      "chapter": 3
+    },
+    {
+      "start": 284.91599938965516,
+      "end": 287.4359998474188,
+      "text": "We can even check how close the approximation is.",
+      "chapter": 3
+    },
+    {
+      "start": 288.2359990844794,
+      "end": 292.4560003051825,
+      "text": "Exact loop field divided by its far field estimate is the quantity one plus R",
+      "chapter": 3
+    },
+    {
+      "start": 292.4560003051825,
+      "end": 295.25599954224305,
+      "text": "squared over x squared raised to minus three halves.",
+      "chapter": 3
+    },
+    {
+      "start": 295.8959989318915,
+      "end": 301.0559987793036,
+      "text": "At x equal to ten radii, this ratio is about zero point nine eight five.",
+      "chapter": 3
+    },
+    {
+      "start": 301.0559987793036,
+      "end": 304.2760000000067,
+      "text": "The exact value is about ninety eight point five percent of the estimate.",
+      "chapter": 3
+    },
+    {
+      "start": 304.7760000000067,
+      "end": 309.7960004577704,
+      "text": "At x equal to one radius, the ratio is only about zero point three five four.",
+      "chapter": 3
+    },
+    {
+      "start": 309.7960004577704,
+      "end": 311.0359983215399,
+      "text": "That is not a small correction.",
+      "chapter": 3
+    },
+    {
+      "start": 311.7359990844794,
+      "end": 317.08600137329773,
+      "text": "At the center, x is zero and the actual loop field is mu zero I divided by two",
+      "chapter": 3
+    },
+    {
+      "start": 317.08600137329773,
+      "end": 318.11599633789734,
+      "text": "R, which is finite.",
+      "chapter": 3
+    },
+    {
+      "start": 318.6760015258856,
+      "end": 322.2760000000067,
+      "text": "The point dipole formula would diverge there because we have used it outside",
+      "chapter": 3
+    },
+    {
+      "start": 322.2760000000067,
+      "end": 322.7959966430731,
+      "text": "its range.",
+      "chapter": 3
+    },
+    {
+      "start": 323.2959966430731,
+      "end": 327.4360036621161,
+      "text": "A formula's apparent infinity can be a warning about its model, not a claim",
+      "chapter": 3
+    },
+    {
+      "start": 327.4360036621161,
+      "end": 329.4759969482489,
+      "text": "that a real magnet produces infinite field.",
+      "chapter": 3
+    },
+    {
+      "start": 329.8759984741278,
+      "end": 334.29702758946235,
+      "text": "For a finite bar magnet, choose a suitable source model or supplied result",
+      "chapter": 3
+    },
+    {
+      "start": 334.29702758946235,
+      "end": 334.5360021362372,
+      "text": "when",
+      "chapter": 3
+    },
+    {
+      "start": 334.5360021362372,
+      "end": 335.99600122070984,
+      "text": "the far field condition is absent.",
+      "chapter": 3
+    },
+    {
+      "start": 336.38400000000917,
+      "end": 337.8039999570938,
+      "text": "Finish with two sources.",
+      "chapter": 4
+    },
+    {
+      "start": 338.68399995232545,
+      "end": 342.644000228891,
+      "text": "Our dipole has moment zero point eight ampere meter squared pointing right.",
+      "chapter": 4
+    },
+    {
+      "start": 343.6039997902008,
+      "end": 347.84400003815614,
+      "text": "Add a uniform external field of one point two five microtesla pointing right.",
+      "chapter": 4
+    },
+    {
+      "start": 348.2439996566864,
+      "end": 352.43682063362843,
+      "text": "At an equatorial point zero point four meters from the center, the dipole",
+      "chapter": 4
+    },
+    {
+      "start": 352.43682063362843,
+      "end": 352.72400015259706,
+      "text": "field",
+      "chapter": 4
+    },
+    {
+      "start": 352.72400015259706,
+      "end": 354.9240009155365,
+      "text": "is one point two five microtesla left.",
+      "chapter": 4
+    },
+    {
+      "start": 355.3639995422455,
+      "end": 358.22400015259706,
+      "text": "The two fields cancel there in our far field model.",
+      "chapter": 4
+    },
+    {
+      "start": 359.00400083924256,
+      "end": 363.1640006866547,
+      "text": "At an axial point at the same center distance, the dipole field is two point",
+      "chapter": 4
+    },
+    {
+      "start": 363.1640006866547,
+      "end": 364.60399931336366,
+      "text": "five microtesla right.",
+      "chapter": 4
+    },
+    {
+      "start": 365.4840003814789,
+      "end": 368.9440013733002,
+      "text": "Add the external field to get three point seven five microtesla right.",
+      "chapter": 4
+    },
+    {
+      "start": 369.6839992370697,
+      "end": 373.7640010681244,
+      "text": "One source has not switched off; its vector contribution cancels another only",
+      "chapter": 4
+    },
+    {
+      "start": 373.7640010681244,
+      "end": 374.98399847413026,
+      "text": "at the specified location.",
+      "chapter": 4
+    },
+    {
+      "start": 375.9440013733002,
+      "end": 379.88399872844343,
+      "text": "Now change the external field to point upward, keeping its magnitude one point",
+      "chapter": 4
+    },
+    {
+      "start": 379.88399872844343,
+      "end": 381.00399893189393,
+      "text": "two five microtesla.",
+      "chapter": 4
+    },
+    {
+      "start": 381.7640010681244,
+      "end": 386.00399893189393,
+      "text": "At the equatorial point, we have equal perpendicular components: left from the",
+      "chapter": 4
+    },
+    {
+      "start": 386.00399893189393,
+      "end": 387.98399847413026,
+      "text": "dipole and up from the external field.",
+      "chapter": 4
+    },
+    {
+      "start": 388.4240009155365,
+      "end": 393.00399893189393,
+      "text": "The resultant magnitude is one point two five times square root of two, about",
+      "chapter": 4
+    },
+    {
+      "start": 393.00399893189393,
+      "end": 394.9440013733002,
+      "text": "one point seven seven microtesla.",
+      "chapter": 4
+    },
+    {
+      "start": 395.8039981689545,
+      "end": 399.66399877930604,
+      "text": "It points forty five degrees above the leftward direction, not upward along",
+      "chapter": 4
+    },
+    {
+      "start": 399.66399877930604,
+      "end": 400.5239993896576,
+      "text": "either source alone.",
+      "chapter": 4
+    },
+    {
+      "start": 400.9439975586029,
+      "end": 404.88400000000917,
+      "text": "A small compass aligns with the local resultant field in a nonzero field",
+      "chapter": 4
+    },
+    {
+      "start": 404.88400000000917,
+      "end": 405.184003051767,
+      "text": "region.",
+      "chapter": 4
+    },
+    {
+      "start": 405.66399877930604,
+      "end": 409.184003051767,
+      "text": "At an exact zero, that field alone supplies no preferred alignment.",
+      "chapter": 4
+    },
+    {
+      "start": 410.0040027465912,
+      "end": 411.66399877930604,
+      "text": "Other fields and disturbances can matter.",
+      "chapter": 4
+    },
+    {
+      "start": 412.56400030518495,
+      "end": 416.3240024414154,
+      "text": "Keep the three decisions separate: identify axial or equatorial geometry,",
+      "chapter": 4
+    },
+    {
+      "start": 417.14400213623964,
+      "end": 420.48399847413026,
+      "text": "verify distance is large relative to source size, and add vectors.",
+      "chapter": 4
+    },
+    {
+      "start": 421.4439975586029,
+      "end": 424.2840015258881,
+      "text": "We have connected coils, bar magnets and dipole fields.",
+      "chapter": 4
+    },
+    {
+      "start": 425.2840015258881,
+      "end": 428.66399877930604,
+      "text": "Next we will examine how different materials respond to an applied magnetic",
+      "chapter": 4
+    },
+    {
+      "start": 428.66399877930604,
+      "end": 428.98399847413026,
+      "text": "field.",
+      "chapter": 4
+    }
+  ]
+}

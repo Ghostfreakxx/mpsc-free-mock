@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Convex mirror: find its focus through a returning ray",
+  "sources": [
+    { "title": "NTA: JEE Main 2026 Physics Unit 20", "url": "https://jeemain.nta.nic.in/document/syllabus-2026/" },
+    { "title": "NCERT Physics Laboratory Manual: Experiment 11", "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/physics/lelm309.pdf" }
+  ],
+  "chapters": [
+    {
+      "title": "Make the rays retrace their path",
+      "formula": "At the return condition, C is the mirror's centre of curvature; f = PC/2",
+      "points": ["A convex mirror with a real object normally gives a virtual image.", "A convex lens supplies converging rays aimed at the mirror's centre of curvature.", "Remove parallax; keep lens and object fixed when removing the mirror."],
+      "script": "Hey, welcome back. A convex mirror looks simple, but finding its focal length needs a clever setup. With a real object in front of it, the image is virtual, behind the mirror. We cannot catch that ordinary image on a screen. Instead, a convex lens helps us send in converging rays. Place an object pin beyond the lens's focal distance. Align the pin tip, lens centre and mirror pole on a horizontal optical bench. The lens alone would make a real image at a point we will call C. Put the convex mirror between the lens and that point, reflecting side facing the lens. Adjust the mirror until returning light passes back through the lens and forms an inverted image at the object pin. Move your eye sideways and remove relative motion between the two pin tips. That is the parallax check, not simply overlap from one viewpoint. Why does this reveal the radius? A ray aimed at the centre of curvature of a spherical mirror meets the surface along its normal. It reflects back along the same path. At the return condition, the lens's would-be image C is that centre of curvature, behind the mirror. The distance from the mirror pole P to C is its radius R. In the paraxial spherical-mirror model, focal length magnitude is half that radius. Now remove the mirror without moving the lens or object pin. Locate the lens's real image C with an image pin, again removing parallax. The pole-to-image separation gives the radius. Use supervised safe illumination, never sunlight or direct beam viewing. A small aperture and careful alignment help keep this spherical-mirror approximation reliable."
+    },
+    {
+      "title": "Correct the readings before halving",
+      "formula": "R = corrected positive pole-to-C separation; f = R/2; delta f = delta R/2",
+      "points": ["Apply the measured index correction to the separation.", "Pole-to-C separation is a radius, not already a focal length.", "Original illustrative readings are not claimed observations or official questions."],
+      "script": "Let's turn that ray story into a calculation. Suppose the mirror pole is at forty centimetres on a scale increasing toward the original lens image. After removing the mirror, the real image C is at seventy centimetres. Their observed separation is thirty centimetres. It is not the lens-to-image distance, and it is not yet the focal length. Calibration shows that the true pole-to-pin separation is zero point two centimetres larger than this upright difference. The corrected radius is thirty point two centimetres. Divide by two to get focal length magnitude fifteen point one centimetres. Take a moment: why add the correction before dividing? Because it belongs to the measured separation. Adding the full correction to fifteen would give the wrong answer. With the original incident direction toward the mirror taken positive, the centre and focus lie behind the convex mirror, so its Cartesian focal length is positive. Here is an uncertainty check. Each position reading has maximum uncertainty zero point one centimetres. The index correction has maximum uncertainty zero point zero four centimetres. For a worst-case difference, add their absolute uncertainties: zero point two four centimetres in radius. Halving gives zero point one two centimetres in focal length. With matching precision, report fifteen point one zero plus or minus zero point one two centimetres under this stated uncertainty model. These are original teaching numbers, not measurements we performed. Repeat the return-and-parallax procedure for several object positions. The inferred focal length should agree within uncertainty. Changing the assisting lens does not change the mirror itself. That final physical check is just as important as the arithmetic."
+    }
+  ],
+  "quiz": [
+    { "question": "At the retracing-ray condition, C is the convex mirror's:", "options": ["Pole", "Centre of curvature", "Principal focus", "Lens centre"], "answer": 1, "explanation": "Rays aimed at the spherical mirror's centre of curvature meet it normally and retrace their paths." },
+    { "question": "Corrected pole-to-C separation is 30.2 cm. Focal-length magnitude is:", "options": ["30.2 cm", "60.4 cm", "15.1 cm", "15.2 cm"], "answer": 2, "explanation": "The separation is R, so f = R/2 = 15.1 cm." },
+    { "question": "When removing the mirror to locate C, which positions stay fixed?", "options": ["Only image pin", "Only mirror upright", "Neither lens nor object", "Lens and object pin"], "answer": 3, "explanation": "Moving the lens or object changes the lens-alone image point used to infer the mirror's radius." },
+    { "question": "Position uncertainties 0.10 and 0.10 cm, correction uncertainty 0.04 cm: worst-case focal-length uncertainty is:", "options": ["0.12 cm", "0.24 cm", "0.02 cm", "0.04 cm"], "answer": 0, "explanation": "Radius uncertainty is 0.24 cm. Divide by two for f = R/2." }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Thin lenses, lens maker and optical power",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 16",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Thin lenses; Cartesian signs adapted",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/2-4-thin-lenses"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Two refractions produce a lens",
+      "formula": "Thin lens in air: 1/f = 1/v - 1/u; m = v/u",
+      "points": [
+        "Take rightward positive for left-to-right incident light.",
+        "A converging lens has f > 0 in its stated medium.",
+        "Thin-lens ray constructions neglect thickness and use paraxial rays."
+      ],
+      "script": "Hey, welcome back. A lens changes a ray's direction at two refracting surfaces. In the thin-lens approximation, we represent those two changes at one plane through the optical center. A converging lens brings parallel paraxial rays to a focus on the far side. A diverging lens makes them spread, as though they came from a focus on the incoming side. We'll keep incident light traveling left to right and rightward distances positive. For a real object to the left, u is negative. A converging lens has positive f, and a diverging lens has negative f in the medium being considered. The thin-lens equation is one over f equals one over v minus one over u. Notice the minus between the image and object terms. Do not carry over the mirror equation. Lens magnification is v over u, without the mirror's extra minus sign. To draw a converging-lens image, send one ray parallel to the axis: it refracts through the far focus. A ray through the optical center is undeviated in this ideal thin-lens treatment. Their intersection locates the image tip. Our drawings are paraxial schematics, not exact wide-angle lens designs. The point is to connect the image geometry to the signed distances rather than memorize disconnected cases."
+    },
+    {
+      "title": "Real image: position and size together",
+      "formula": "f = +10 cm, u = -30 cm -> v = +15 cm; m = -0.5",
+      "points": [
+        "A real image forms where transmitted rays actually converge.",
+        "Negative magnification means inverted, not a negative physical size.",
+        "For a real object beyond 2f, a converging lens gives a diminished image."
+      ],
+      "script": "Let's put a real object thirty centimeters before a converging lens of focal length ten centimeters. Before calculating, locate it: thirty is greater than twice ten. We expect a real, inverted, smaller image on the other side. Now use signs. f is positive ten, and u is negative thirty. One over v equals one over f plus one over u. That is one tenth minus one thirtieth, or one fifteenth per centimeter. Therefore v is positive fifteen centimeters. The image lies between the far focus and twice the focal length. Magnification is fifteen divided by negative thirty, or negative one half. A four-centimeter-high upright object gives a signed image height negative two centimeters. The image is two centimeters tall and inverted. A screen placed at that image plane can intercept the converging light. This is what real means; it is not a statement that virtual images cannot be seen. Try moving the object to twenty centimeters. Take a moment. u equals negative twenty, so v is positive twenty, and magnification is negative one. The image is real, inverted, and the same size. The ray sketch and the arithmetic tell the same story. For a JEE answer, report location, orientation, and size together, and keep every length in the same unit before combining reciprocals."
+    },
+    {
+      "title": "Virtual images: converging and diverging lenses",
+      "formula": "Converging: f = +10, u = -5 -> v = -10 cm, m = +2",
+      "points": [
+        "Inside the converging focus, backward extensions meet on the object side.",
+        "A diverging lens gives a diminished virtual image for a real object.",
+        "At a converging focus, the paraxial output is parallel."
+      ],
+      "script": "Move our object inside the converging lens's focal distance. With f positive ten centimeters and u negative five, one over v is one tenth minus one fifth, or negative one tenth. The image distance is negative ten centimeters, on the object side. Magnification is negative ten divided by negative five, so positive two. Refraction sends the rays apart, but their backward extensions meet at an upright, enlarged virtual image. This is how a simple magnifying lens can help us inspect a small object. A virtual image is not captured directly on a screen at its apparent location. Your eye can still form its own real image from the arriving rays. Now switch to a diverging lens with f negative ten centimeters and a real object at negative thirty. One over v is negative one tenth minus one thirtieth, giving v negative seven point five centimeters. Magnification is positive one quarter. The image is virtual, upright, and smaller, between the lens and its incoming-side focus. For a real object, that diminished virtual pattern is dependable for a diverging lens. Virtual objects created by another element need separate analysis. Finally, if a real object sits exactly at a converging focus, the outgoing paraxial rays are parallel. Image distance is at infinity, not an ordinary finite number. Predict the case first, then use the equation as a check."
+    },
+    {
+      "title": "Lens maker connects curvature to focal length",
+      "formula": "1/f = (n_lens/n_medium - 1)(1/R1 - 1/R2)",
+      "points": [
+        "Thin lens, same surrounding medium on both sides, paraxial approximation.",
+        "Each radius is signed from its own surface pole to its center.",
+        "Shape alone does not guarantee converging behavior in every medium."
+      ],
+      "script": "Where does a lens's focal length come from? Combining the refraction equations for its two surfaces gives the lens-maker relation. For a thin lens surrounded by the same medium on both sides, one over f equals the lens index relative to that medium, minus one, times one over R one minus one over R two. The radii are signed using our left-to-right convention. A symmetric biconvex glass lens in air, with index one point five, has first radius positive twenty centimeters and second radius negative twenty. Subtracting their reciprocals gives one tenth per centimeter. Multiplying by zero point five gives one twentieth, so f is positive twenty centimeters. Now imagine immersing it in a surrounding medium with exactly the same refractive index as the lens. The relative-index factor becomes zero. There is no refraction at the ideal matched boundaries, the power vanishes, and the focal length is infinite. If the surrounding index exceeds the lens index, even this biconvex shape can become diverging. That is why shape labels alone are not enough without the medium. The formula assumes negligible thickness, small ray angles, and a common surrounding index. A thick lens or different media on the two sides needs more careful treatment. In JEE calculations, draw the centers of curvature to assign radius signs instead of calling every radius positive."
+    },
+    {
+      "title": "Power adds for thin lenses in contact",
+      "formula": "P = 1/f in meters; P_total = P1 + P2 for thin lenses in contact",
+      "points": [
+        "Power is measured in diopters, equivalent to inverse meters.",
+        "A positive power is converging in the stated setup.",
+        "Separated lenses are not covered by the contact-only sum."
+      ],
+      "script": "Optical power measures how strongly a lens converges or diverges paraxial light. It is one over focal length when the focal length is expressed in meters. Its unit is the diopter, equivalent to inverse meters. A positive twenty-centimeter lens has focal length zero point two meters and power positive five diopters. A negative fifty-centimeter lens has power negative two diopters. Put these ideal thin lenses in contact, in the same surrounding medium. Their powers add, giving positive three diopters. The effective focal length is one third of a meter, about thirty-three point three centimeters. Positive total power tells us the pair is converging. Why does addition work? When the planes coincide in the thin-lens model, the second lens adds its ray-deflection contribution to the first at essentially the same ray height. If the lenses are separated, that height changes during the travel between them. The simple contact rule is then insufficient. Also, do not add focal lengths. Five diopters plus negative two diopters is meaningful; twenty centimeters plus negative fifty centimeters does not give the combined focal length. Our final routine is to choose the right relation, assign signs, convert units where required, and interpret the resulting image or power. The next classes will apply those same habits to prisms and optical instruments."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A thin converging lens in air has f = +10 cm, u = -30 cm. Its image distance is:",
+      "options": [
+        "-15 cm",
+        "+15 cm",
+        "+30 cm",
+        "-30 cm"
+      ],
+      "answer": 1,
+      "explanation": "1/v = 1/10 - 1/30 = 1/15."
+    },
+    {
+      "question": "For that lens, the magnification is:",
+      "options": [
+        "+0.5",
+        "-2",
+        "-0.5",
+        "+2"
+      ],
+      "answer": 2,
+      "explanation": "m = v/u = 15/(-30) = -0.5."
+    },
+    {
+      "question": "A converging lens with f = +10 cm and u = -5 cm produces:",
+      "options": [
+        "Virtual upright enlarged image",
+        "Real inverted diminished image",
+        "No image for any ray",
+        "Virtual inverted diminished image"
+      ],
+      "answer": 0,
+      "explanation": "v = -10 cm and m = +2."
+    },
+    {
+      "question": "A diverging lens has f = -10 cm, u = -30 cm. Its image distance is:",
+      "options": [
+        "+7.5 cm",
+        "-7.5 cm",
+        "+15 cm",
+        "-30 cm"
+      ],
+      "answer": 1,
+      "explanation": "1/v = -1/10 - 1/30, giving -7.5 cm."
+    },
+    {
+      "question": "A thin n = 1.5 biconvex lens in air has R1 = +20 cm, R2 = -20 cm. Its focal length is:",
+      "options": [
+        "+20 cm",
+        "-20 cm",
+        "+10 cm",
+        "+40 cm"
+      ],
+      "answer": 0,
+      "explanation": "(1.5-1)(1/20+1/20) = 1/20 per cm."
+    },
+    {
+      "question": "Thin lenses in contact have powers +5 D and -2 D. Their combined power is:",
+      "options": [
+        "-10 D",
+        "+7 D",
+        "+3 D",
+        "-3 D"
+      ],
+      "answer": 2,
+      "explanation": "Contact powers add: 5-2 = +3 D."
+    }
+  ]
+}

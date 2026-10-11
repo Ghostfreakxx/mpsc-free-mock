@@ -1,0 +1,409 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.480
+Hey, welcome back.
+
+00:00:02.160 --> 00:00:05.936
+A bridge is a clever way to measure resistance by finding a balance rather
+
+00:00:05.936 --> 00:00:06.140
+than
+
+00:00:06.140 --> 00:00:07.640
+measuring a large current accurately.
+
+00:00:08.520 --> 00:00:09.940
+Let's label the circuit clearly.
+
+00:00:10.740 --> 00:00:13.560
+The source connects between left node A and right node D.
+
+00:00:14.380 --> 00:00:18.840
+The upper path contains resistor P from A to B, then Q from B to D.
+
+00:00:19.460 --> 00:00:23.600
+The lower path contains R from A to C, then S from C to D.
+
+00:00:24.040 --> 00:00:26.980
+A galvanometer connects the two midpoints B and C.
+
+00:00:27.480 --> 00:00:30.220
+If their potentials are different, current can flow through that detector.
+
+00:00:31.080 --> 00:00:34.680
+At balance, their potentials are equal, so detector current is zero.
+
+00:00:35.500 --> 00:00:37.520
+This does not mean current is zero everywhere.
+
+00:00:38.140 --> 00:00:41.040
+Both outer paths can still carry current and dissipate power.
+
+00:00:42.000 --> 00:00:45.180
+Think of two voltage dividers whose middle points reach the same potential.
+
+00:00:45.980 --> 00:00:49.740
+Only then can the detector branch be omitted while calculating the outer path
+
+00:00:49.740 --> 00:00:50.080
+currents.
+
+00:00:51.280 --> 00:00:54.580
+Before balance is established, removing it generally changes the circuit.
+
+00:00:54.980 --> 00:00:59.800
+Our model uses positive ohmic resistances, ideal connecting wires and a
+
+00:00:59.800 --> 00:01:01.600
+sensitive galvanometer with finite resistance.
+
+00:01:02.620 --> 00:01:04.840
+The source voltage is nonzero.
+
+00:01:04.840 --> 00:01:08.580
+A broken detector circuit could also show zero current, but that is not
+
+00:01:08.580 --> 00:01:09.440
+evidence of balance.
+
+00:01:10.160 --> 00:01:14.240
+In a question or an experiment, identify the source diagonal and the detector
+
+00:01:14.240 --> 00:01:17.580
+diagonal, then confirm which pair of nodes has equal potential.
+
+00:01:18.260 --> 00:01:22.160
+That node reasoning is more reliable than memorizing the shape of a diamond.
+
+00:01:23.016 --> 00:01:26.016
+Let's derive the balance equation from the labeled circuit.
+
+00:01:26.776 --> 00:01:31.736
+At a genuine null, the upper path carries one current through P and Q, and the
+
+00:01:31.736 --> 00:01:33.976
+lower path carries another through R and S.
+
+00:01:34.876 --> 00:01:39.436
+Equal midpoint potentials mean the drop from A to B equals the drop from A to
+
+00:01:39.436 --> 00:01:39.696
+C.
+
+00:01:40.416 --> 00:01:43.996
+Therefore upper current times P equals lower current times R.
+
+00:01:44.896 --> 00:01:49.196
+Likewise, the drops from B to D and C to D are equal, giving upper current
+
+00:01:49.196 --> 00:01:51.896
+times Q equal to lower current times S.
+
+00:01:51.896 --> 00:01:54.416
+Divide the first equation by the second.
+
+00:01:55.036 --> 00:01:58.576
+The currents cancel, leaving P over Q equal to R over S.
+
+00:01:59.316 --> 00:02:01.936
+Equivalently, P times S equals Q times R.
+
+00:02:02.476 --> 00:02:06.136
+The cancellation explains why source voltage and detector resistance do not
+
+00:02:06.136 --> 00:02:07.776
+appear in the ideal balance ratio.
+
+00:02:08.716 --> 00:02:13.456
+Let's use P equal to two ohms, Q equal to three ohms and R equal to four ohms.
+
+00:02:14.316 --> 00:02:16.136
+Balance requires S equal to six ohms.
+
+00:02:16.136 --> 00:02:20.747
+Across a ten volt source, the upper path carries two amperes and the lower
+
+00:02:20.747 --> 00:02:20.996
+path
+
+00:02:20.996 --> 00:02:21.876
+one ampere.
+
+00:02:22.196 --> 00:02:24.316
+Their A to midpoint drops are both four volts.
+
+00:02:25.136 --> 00:02:29.936
+Taking D as zero potential, B and C are both at six volts, so the detector has
+
+00:02:29.936 --> 00:02:31.036
+no potential difference.
+
+00:02:31.636 --> 00:02:35.402
+The equivalent resistance is five ohms in parallel with ten ohms, or ten
+
+00:02:35.402 --> 00:02:35.716
+thirds
+
+00:02:35.716 --> 00:02:36.296
+of an ohm.
+
+00:02:36.956 --> 00:02:38.676
+Total source current is three amperes.
+
+00:02:39.236 --> 00:02:43.164
+Check the arm labels before writing any ratio; another drawing may use the
+
+00:02:43.164 --> 00:02:43.376
+same
+
+00:02:43.376 --> 00:02:44.556
+letters in different positions.
+
+00:02:44.784 --> 00:02:49.584
+A metre bridge replaces one resistor pair with two parts of the same uniform
+
+00:02:49.584 --> 00:02:50.404
+resistance wire.
+
+00:02:51.464 --> 00:02:55.984
+Put unknown resistance X in the left upper gap and known resistance S in the
+
+00:02:55.984 --> 00:02:56.644
+right upper gap.
+
+00:02:57.264 --> 00:03:01.104
+Their common junction connects through the galvanometer to a sliding contact,
+
+00:03:01.104 --> 00:03:03.064
+called the jockey, on the lower wire.
+
+00:03:03.924 --> 00:03:05.744
+The source connects across the two ends.
+
+00:03:06.624 --> 00:03:10.884
+Let the full wire length be L, and let the jockey be distance l from the left
+
+00:03:10.884 --> 00:03:12.604
+end, the side containing X.
+
+00:03:12.604 --> 00:03:17.404
+At null, the Wheatstone ratio gives X over S equal to the resistance of the
+
+00:03:17.404 --> 00:03:19.624
+left wire part divided by that of the right part.
+
+00:03:20.424 --> 00:03:24.484
+For a uniform wire at a uniform temperature, resistance equals resistivity
+
+00:03:24.484 --> 00:03:26.084
+times length divided by area.
+
+00:03:26.904 --> 00:03:31.184
+Resistivity and cross sectional area cancel in the ratio, leaving l divided by
+
+00:03:31.184 --> 00:03:31.984
+L minus l.
+
+00:03:32.904 --> 00:03:36.354
+The familiar one hundred minus l appears only when the total length is one
+
+00:03:36.354 --> 00:03:38.864
+hundred centimeters and l uses centimeters too.
+
+00:03:39.504 --> 00:03:43.404
+Now take a three ohm known resistance and a null at forty centimeters.
+
+00:03:44.244 --> 00:03:47.984
+The unknown is three times forty divided by sixty, giving two ohms.
+
+00:03:48.804 --> 00:03:50.344
+Why must it be smaller than the standard?
+
+00:03:50.984 --> 00:03:53.204
+Because its corresponding wire segment is shorter.
+
+00:03:53.784 --> 00:03:55.164
+This is a quick physical check.
+
+00:03:55.764 --> 00:03:58.604
+If you measure l from the other end, the ratio reverses.
+
+00:03:59.424 --> 00:04:02.284
+Draw the gap labels and state the measurement end before calculating.
+
+00:04:02.764 --> 00:04:05.564
+The uniform wire assumption is doing real work here.
+
+00:04:05.640 --> 00:04:08.180
+Let's make the previous example do more work.
+
+00:04:08.980 --> 00:04:13.440
+Unknown X is two ohms, standard S is three ohms, and the original balance is
+
+00:04:13.440 --> 00:04:15.120
+forty centimeters from the left end.
+
+00:04:15.900 --> 00:04:19.740
+Interchange the gap resistances while keeping the same uniform wire and
+
+00:04:19.740 --> 00:04:21.200
+measuring from the same left end.
+
+00:04:21.720 --> 00:04:26.420
+The new ratio is three over two, so the left segment is sixty centimeters and
+
+00:04:26.420 --> 00:04:27.560
+the right forty.
+
+00:04:27.560 --> 00:04:30.600
+The ideal balance length becomes L minus the original length.
+
+00:04:31.220 --> 00:04:35.540
+Real end resistances can prevent exact complementarity; that mismatch is one
+
+00:04:35.540 --> 00:04:36.720
+clue to systematic error.
+
+00:04:37.580 --> 00:04:41.185
+Now restore X on the left and connect another two ohm resistor in parallel
+
+00:04:41.185 --> 00:04:41.380
+with
+
+00:04:41.380 --> 00:04:41.560
+it.
+
+00:04:42.160 --> 00:04:45.860
+The left gap's equivalent resistance is one ohm, while the right gap stays
+
+00:04:45.860 --> 00:04:46.520
+three ohms.
+
+00:04:47.240 --> 00:04:50.820
+At balance, l over one hundred minus l equals one third.
+
+00:04:50.820 --> 00:04:55.220
+Multiply through: three l equals one hundred minus l, giving l equal to twenty
+
+00:04:55.220 --> 00:04:55.880
+five centimeters.
+
+00:04:56.880 --> 00:04:58.280
+Pause and check the direction of the shift.
+
+00:04:58.760 --> 00:05:02.680
+The left gap resistance decreased, so its corresponding wire segment must
+
+00:05:02.680 --> 00:05:03.260
+become shorter.
+
+00:05:03.700 --> 00:05:07.420
+The wire did not physically shrink; only the jockey position changed.
+
+00:05:08.120 --> 00:05:12.100
+If instead a resistor is added in series in the gap, add the resistances first
+
+00:05:12.100 --> 00:05:13.700
+and then solve the new ratio.
+
+00:05:14.440 --> 00:05:17.820
+Away from balance, the detector can carry current, and you need full circuit
+
+00:05:17.820 --> 00:05:19.260
+analysis to find its magnitude.
+
+00:05:19.820 --> 00:05:22.296
+The simple ratio determines a null position, not every detector reading.
+
+00:05:22.296 --> 00:05:25.036
+Let's finish by asking what makes a measurement trustworthy.
+
+00:05:25.816 --> 00:05:30.456
+A balance very close to one end uses a very short wire segment, so a small
+
+00:05:30.456 --> 00:05:32.816
+position error becomes a large fractional error.
+
+00:05:33.696 --> 00:05:37.276
+Choose a known resistance close to the unknown so the null lies near the
+
+00:05:37.276 --> 00:05:37.656
+midpoint.
+
+00:05:38.336 --> 00:05:42.336
+For small uncertainty in l, treating the standard and total length as exact,
+
+00:05:42.896 --> 00:05:46.401
+the fractional uncertainty in X is approximately L times the length
+
+00:05:46.401 --> 00:05:46.976
+uncertainty
+
+00:05:47.596 --> 00:05:49.696
+divided by l times L minus l.
+
+00:05:49.916 --> 00:05:54.016
+At forty centimeters on a one hundred centimeter wire, a point one centimeter
+
+00:05:54.016 --> 00:05:58.156
+reading uncertainty contributes about zero point four two percent.
+
+00:05:58.156 --> 00:06:02.916
+Near five centimeters, the same uncertainty contributes about two point one
+
+00:06:02.916 --> 00:06:03.176
+percent.
+
+00:06:03.176 --> 00:06:07.276
+This comparison explains the midpoint preference; it is not just a laboratory
+
+00:06:07.276 --> 00:06:07.796
+tradition.
+
+00:06:08.536 --> 00:06:11.636
+Real measurements also have uncertainty in the standard and total length.
+
+00:06:12.516 --> 00:06:16.936
+Wire nonuniformity, end resistance and contact resistance can bias the ideal
+
+00:06:16.936 --> 00:06:17.256
+formula.
+
+00:06:18.136 --> 00:06:22.521
+Gentle jockey contact and brief current flow help avoid damaging or heating
+
+00:06:22.521 --> 00:06:22.696
+the
+
+00:06:22.696 --> 00:06:22.976
+wire.
+
+00:06:23.556 --> 00:06:27.516
+Interchanging gaps can help assess end effects, but do not claim that every
+
+00:06:27.516 --> 00:06:30.336
+systematic error is automatically removed by one swap.
+
+00:06:31.276 --> 00:06:36.596
+For JEE, check five things: a functioning detector, a nonzero source, the gap
+
+00:06:36.596 --> 00:06:39.809
+labels, the end from which length is measured, and the uniform wire
+
+00:06:39.809 --> 00:06:40.336
+assumption.
+
+00:06:40.836 --> 00:06:44.896
+For a balanced Wheatstone bridge, confirm equal midpoint potentials before
+
+00:06:44.896 --> 00:06:45.696
+omitting the detector.
+
+00:06:46.236 --> 00:06:49.910
+For a metre bridge, compare the resistance ratio with the segment length
+
+00:06:49.910 --> 00:06:50.216
+ratio.
+
+00:06:51.036 --> 00:06:52.996
+Those two checks bring the entire lesson together.

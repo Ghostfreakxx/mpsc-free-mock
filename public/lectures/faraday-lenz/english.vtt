@@ -1,0 +1,424 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.360
+Hey, welcome back.
+
+00:00:01.980 --> 00:00:05.920
+A magnetic field can exist around a circuit without producing any induced
+
+00:00:05.920 --> 00:00:06.280
+current.
+
+00:00:06.860 --> 00:00:08.780
+The key question is what changes.
+
+00:00:09.500 --> 00:00:13.280
+Before we answer it, let's build the quantity that tracks the field through a
+
+00:00:13.280 --> 00:00:14.560
+loop: magnetic flux.
+
+00:00:15.460 --> 00:00:18.920
+Choose a surface spanning the loop and an arrow perpendicular to it.
+
+00:00:19.120 --> 00:00:20.900
+That arrow is the surface normal.
+
+00:00:21.620 --> 00:00:26.720
+For a uniform field and a flat surface, flux equals field strength times area
+
+00:00:26.720 --> 00:00:29.780
+times cosine of the angle between the field and the normal.
+
+00:00:30.260 --> 00:00:31.520
+Not the angle with the plane.
+
+00:00:32.180 --> 00:00:34.160
+That little distinction does a lot of work.
+
+00:00:34.920 --> 00:00:38.040
+When the field follows the normal, flux is positive B A.
+
+00:00:38.740 --> 00:00:40.920
+When it lies in the plane, flux is zero.
+
+00:00:41.940 --> 00:00:45.980
+Reverse the chosen normal and the signed flux reverses, without changing the
+
+00:00:45.980 --> 00:00:47.020
+physical field.
+
+00:00:47.320 --> 00:00:51.735
+Try a uniform field of zero point four tesla through an area of zero point
+
+00:00:51.735 --> 00:00:51.973
+zero
+
+00:00:51.973 --> 00:00:52.840
+two square meters.
+
+00:00:53.460 --> 00:00:56.040
+The field makes sixty degrees with the normal.
+
+00:00:56.540 --> 00:00:57.440
+Pause and find the flux.
+
+00:00:58.080 --> 00:01:02.760
+It is zero point zero zero four weber, because cosine sixty is one half.
+
+00:01:03.660 --> 00:01:07.420
+If sixty degrees were measured from the plane instead, the angle with the
+
+00:01:07.420 --> 00:01:08.740
+normal would be thirty degrees.
+
+00:01:09.260 --> 00:01:11.220
+One weber is one tesla square meter.
+
+00:01:11.940 --> 00:01:16.520
+For a nonuniform field, add the contributions of small area elements using the
+
+00:01:16.520 --> 00:01:17.020
+flux integral.
+
+00:01:17.700 --> 00:01:22.560
+Also, zero net magnetic flux through a closed surface does not mean zero flux
+
+00:01:22.560 --> 00:01:24.380
+through the open surface bounded by a loop.
+
+00:01:24.600 --> 00:01:28.820
+Now we can ask the right question: how fast does the flux linkage change?
+
+00:01:29.420 --> 00:01:33.780
+For a coil with N identical turns, each linking the same flux, flux linkage is
+
+00:01:33.780 --> 00:01:35.380
+N times the flux through one turn.
+
+00:01:36.260 --> 00:01:40.560
+Faraday's law says the induced electromotive force, or emf, is minus the time
+
+00:01:40.560 --> 00:01:41.560
+derivative of that linkage.
+
+00:01:42.380 --> 00:01:45.240
+Despite the name, emf is measured in volts, not newtons.
+
+00:01:45.740 --> 00:01:49.300
+The minus sign contains direction information; we will unpack it next.
+
+00:01:49.880 --> 00:01:53.300
+For magnitude, faster flux change means greater induced emf.
+
+00:01:53.620 --> 00:01:58.200
+A large constant flux gives zero induced emf in a stationary, unchanged loop.
+
+00:01:59.320 --> 00:02:02.140
+Field strength, loop area or orientation can change the linkage.
+
+00:02:02.740 --> 00:02:05.600
+Our first example keeps area and orientation fixed.
+
+00:02:06.060 --> 00:02:10.080
+An eighty turn coil has area zero point zero zero five square meters per turn.
+
+00:02:10.780 --> 00:02:15.400
+A uniform field perpendicular to its plane rises by zero point three tesla in
+
+00:02:15.400 --> 00:02:17.740
+zero point two seconds, at a constant rate.
+
+00:02:17.940 --> 00:02:20.340
+The rate is one point five tesla per second.
+
+00:02:20.340 --> 00:02:22.880
+Multiply eighty by area by that rate.
+
+00:02:23.600 --> 00:02:26.120
+The induced emf magnitude is zero point six volt.
+
+00:02:26.860 --> 00:02:30.700
+In a closed circuit with total resistance six ohms, the current magnitude is
+
+00:02:30.700 --> 00:02:33.920
+zero point one ampere, assuming inductive effects are negligible.
+
+00:02:34.720 --> 00:02:38.460
+An open circuit can have induced emf without a circulating conduction current.
+
+00:02:39.080 --> 00:02:42.720
+If turns link different fluxes, add their individual linkages instead of
+
+00:02:42.720 --> 00:02:44.680
+automatically writing N times one flux.
+
+00:02:45.240 --> 00:02:49.200
+Separate the flux calculation, the rate calculation and the circuit response.
+
+00:02:49.512 --> 00:02:52.072
+Let's turn the minus sign into a picture.
+
+00:02:53.312 --> 00:02:53.792
+Face the page.
+
+00:02:54.512 --> 00:02:58.712
+A stationary conducting loop lies in the page, and the external magnetic field
+
+00:02:58.712 --> 00:02:59.572
+points into it.
+
+00:03:00.572 --> 00:03:02.052
+Crosses represent into the page.
+
+00:03:02.992 --> 00:03:04.592
+Suppose that inward field is increasing.
+
+00:03:05.472 --> 00:03:07.012
+What field would oppose the increase?
+
+00:03:07.932 --> 00:03:08.472
+Take a moment.
+
+00:03:09.012 --> 00:03:10.212
+An outward induced field.
+
+00:03:10.972 --> 00:03:14.252
+Curl the fingers of your right hand in the current direction so the thumb
+
+00:03:14.252 --> 00:03:15.312
+points out toward you.
+
+00:03:15.952 --> 00:03:20.467
+The induced conventional current is counterclockwise, as viewed facing the
+
+00:03:20.467 --> 00:03:20.772
+page.
+
+00:03:21.852 --> 00:03:25.652
+Now keep the external field pointing inward, but let its magnitude decrease.
+
+00:03:26.472 --> 00:03:27.952
+Does the current stay counterclockwise?
+
+00:03:28.772 --> 00:03:29.132
+No.
+
+00:03:29.672 --> 00:03:32.652
+The response now tries to maintain the disappearing inward flux.
+
+00:03:33.352 --> 00:03:36.192
+The induced field points inward, so the current is clockwise.
+
+00:03:37.232 --> 00:03:41.372
+The same original field direction gave opposite current directions because the
+
+00:03:41.372 --> 00:03:42.052
+change reversed.
+
+00:03:43.012 --> 00:03:47.052
+Lenz's law opposes the change in magnetic flux, not always the magnetic field
+
+00:03:47.052 --> 00:03:47.472
+itself.
+
+00:03:48.192 --> 00:03:50.112
+Choose the normal out of the page.
+
+00:03:51.172 --> 00:03:55.153
+Increasing inward flux becomes more negative, so its derivative is negative
+
+00:03:55.153 --> 00:03:55.312
+and
+
+00:03:55.312 --> 00:03:58.172
+induced emf is positive in the counterclockwise sense.
+
+00:03:59.312 --> 00:04:01.672
+Decreasing inward flux gives the opposite signs.
+
+00:04:02.712 --> 00:04:06.152
+Reversing the normal reverses both mathematical conventions, not the real
+
+00:04:06.152 --> 00:04:06.432
+current.
+
+00:04:07.272 --> 00:04:09.932
+The induced field need not cancel the external field completely.
+
+00:04:10.772 --> 00:04:13.892
+In a resistive circuit, its size follows the circuit response.
+
+00:04:14.552 --> 00:04:18.872
+Lenz's law also expresses energy conservation: induction does not supply
+
+00:04:18.872 --> 00:04:20.712
+unlimited electrical energy for free.
+
+00:04:21.932 --> 00:04:25.312
+The source changing the field or moving the apparatus must account for the
+
+00:04:25.312 --> 00:04:25.912
+energy transferred.
+
+00:04:26.568 --> 00:04:32.028
+A flux time graph is a shortcut, provided you know what the vertical axis
+
+00:04:32.028 --> 00:04:32.468
+means.
+
+00:04:33.408 --> 00:04:37.228
+Our graph shows signed flux through one turn of a fifty turn coil.
+
+00:04:38.668 --> 00:04:41.108
+The normal and positive circulation direction are fixed.
+
+00:04:42.148 --> 00:04:46.748
+First, flux rises linearly from zero to zero point zero zero six weber in zero
+
+00:04:46.748 --> 00:04:47.508
+point three seconds.
+
+00:04:48.248 --> 00:04:51.488
+Its slope is positive zero point zero two weber per second.
+
+00:04:52.488 --> 00:04:53.988
+Multiply by minus fifty.
+
+00:04:54.628 --> 00:04:56.468
+The induced emf is minus one volt.
+
+00:04:57.848 --> 00:05:02.028
+Next comes a plateau: the flux stays at zero point zero zero six weber from
+
+00:05:02.028 --> 00:05:03.968
+zero point three to zero point six seconds.
+
+00:05:05.388 --> 00:05:06.448
+What is the emf there?
+
+00:05:07.188 --> 00:05:08.648
+Think slope, not height.
+
+00:05:09.088 --> 00:05:09.568
+It is zero.
+
+00:05:10.068 --> 00:05:11.828
+A nonzero flux is not enough.
+
+00:05:12.888 --> 00:05:16.648
+Finally, flux falls linearly to zero over the next zero point six seconds.
+
+00:05:17.128 --> 00:05:21.828
+The slope is minus zero point zero one weber per second, so emf is plus zero
+
+00:05:21.828 --> 00:05:22.608
+point five volt.
+
+00:05:23.768 --> 00:05:27.588
+The return takes twice as long as the rise, so the magnitude is half as large.
+
+00:05:28.308 --> 00:05:31.148
+The signs refer to our chosen positive circulation direction.
+
+00:05:32.188 --> 00:05:36.048
+If the graph instead showed total flux linkage, we would not multiply by N
+
+00:05:36.048 --> 00:05:36.348
+again.
+
+00:05:37.068 --> 00:05:40.744
+At ideal sharp corners, a unique derivative is not defined; use the
+
+00:05:40.744 --> 00:05:41.348
+appropriate
+
+00:05:41.348 --> 00:05:44.908
+open time interval rather than assigning both slopes to one instant.
+
+00:05:45.988 --> 00:05:47.628
+Real transitions are smoothed.
+
+00:05:48.408 --> 00:05:52.288
+Sketching the corresponding emf graph gives three constant levels: minus one,
+
+00:05:52.648 --> 00:05:54.288
+zero and plus one half volt.
+
+00:05:54.576 --> 00:05:59.276
+For a curved flux time graph, average and instantaneous emf can differ.
+
+00:06:00.096 --> 00:06:02.756
+Let's solve one clean JEE style problem.
+
+00:06:03.176 --> 00:06:07.516
+A fixed forty turn coil has area zero point zero three square meters per turn.
+
+00:06:08.256 --> 00:06:10.936
+A uniform magnetic field follows its chosen normal.
+
+00:06:11.656 --> 00:06:15.516
+Field strength as a function of time is zero point one plus zero point two
+
+00:06:15.516 --> 00:06:18.816
+times t squared, in tesla, with t in seconds.
+
+00:06:19.576 --> 00:06:21.596
+Find the induced emf at two seconds.
+
+00:06:22.336 --> 00:06:25.316
+First write the flux linkage: forty times area times B.
+
+00:06:25.756 --> 00:06:28.336
+The angle is zero, so cosine contributes one.
+
+00:06:28.956 --> 00:06:30.736
+Differentiate before substituting the time.
+
+00:06:31.316 --> 00:06:34.776
+The derivative of B is zero point four times t tesla per second.
+
+00:06:35.756 --> 00:06:38.936
+Multiply by minus forty times zero point zero three.
+
+00:06:38.936 --> 00:06:41.556
+The emf is minus zero point four eight times t volts.
+
+00:06:42.296 --> 00:06:44.916
+At two seconds, that is minus zero point nine six volt.
+
+00:06:45.596 --> 00:06:49.536
+With total resistance eight ohms and negligible inductive effects, current
+
+00:06:49.536 --> 00:06:51.596
+magnitude is zero point one two ampere.
+
+00:06:52.176 --> 00:06:55.076
+Its circulation is opposite our positive right hand convention.
+
+00:06:55.976 --> 00:06:58.196
+Now compare an interval from zero to two seconds.
+
+00:06:58.936 --> 00:07:02.996
+B changes by zero point eight tesla, giving an average rate of zero point four
+
+00:07:02.996 --> 00:07:03.876
+tesla per second.
+
+00:07:05.076 --> 00:07:08.856
+Average emf is minus zero point four eight volt, not the final instantaneous
+
+00:07:08.856 --> 00:07:09.256
+value.
+
+00:07:10.196 --> 00:07:12.936
+Constant initial field contributes flux, but no derivative.
+
+00:07:13.856 --> 00:07:18.136
+Before finishing any induction problem, check the normal, linked turns, the
+
+00:07:18.136 --> 00:07:21.796
+time dependence, your direction convention and whether the circuit model
+
+00:07:21.796 --> 00:07:24.176
+permits current equal to emf over resistance.

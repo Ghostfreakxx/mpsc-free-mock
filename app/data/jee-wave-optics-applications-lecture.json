@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Wave-optics applications: phase, missing orders and successive polarizers",
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 syllabus, Physics Unit 16",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: interference geometry",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/3-2-mathematics-of-interference"
+    },
+    {
+      "title": "OpenStax: single-slit diffraction",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/4-1-single-slit-diffraction"
+    },
+    {
+      "title": "OpenStax: polarization",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/1-7-polarization"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "A fixed phase offset shifts the fringes, not their spacing",
+      "formula": "phi = 2 pi y/beta + phi0; I = I1 + I2 + 2 sqrt(I1 I2) cos(phi)",
+      "points": [
+        "Define the signed phase before predicting a shift direction.",
+        "Unequal beam amplitudes leave nonzero minima even with perfect coherence.",
+        "Visibility = (Imax - Imin)/(Imax + Imin)."
+      ],
+      "script": "Hey, welcome back. A fringe pattern carries two pieces of information: where the bright bands sit, and how strongly brightness changes between bands. Let's separate those ideas. Use two coherent, narrow sources with the same frequency and polarization. On our distant screen, define positive y so that the phase difference we use increases with y. Write that phase as two pi times y divided by fringe width beta, plus a fixed offset phi zero. Bright interference occurs when this total phase is an integer multiple of two pi. A fixed offset moves the pattern but does not change the spacing. Take wavelength six hundred nanometres, screen distance one point five metres and slit separation zero point nine millimetres. The small-angle fringe width, wavelength times screen distance divided by slit separation, is one millimetre. Now let the fixed phase offset be positive pi over two. Where is the zero-phase bright order? Pause and solve for y. It is negative beta over four, or negative zero point two five millimetres in our declared coordinate convention. Reversing the sign convention changes the signed description, so never quote a direction without defining it. Now make the two contributions have intensities nine and four units at the screen. These are the separate intensities each would give there, not their source powers. Superposition gives total intensity nine plus four plus twice the square root of thirty-six times cosine of the phase. At a bright order, the result is twenty-five units. At an opposing phase, it is one unit, not zero. Perfect coherence does not guarantee perfect darkness when amplitudes differ. Fringe visibility compares the maximum-minus-minimum to the maximum-plus-minimum. Here it is twenty-four divided by twenty-six, or twelve thirteenths, about zero point nine two three. Equal intensities would give unity visibility in this ideal fully overlapping model. Poor coherence, mismatched polarization and detector averaging can also reduce contrast. Our JEE routine is phase first for position, then the amplitude-dependent intensity formula for brightness. Do not mistake a shifted fringe or a nonzero minimum for proof that interference has disappeared."
+    },
+    {
+      "title": "Finite slit width can erase an interference order",
+      "formula": "Interference: d sin(theta) = m lambda; envelope minima: a sin(theta) = p lambda",
+      "points": [
+        "Slit separation d sets fringe spacing; slit width a sets the diffraction envelope.",
+        "An interference maximum disappears when it coincides with an envelope zero.",
+        "Do not count the dark boundary orders as bright fringes inside the central envelope."
+      ],
+      "script": "Our earlier two-slit model treated each slit as very narrow. Real slit width adds another layer: a diffraction envelope. Picture closely spaced interference ripples sitting inside a broader intensity profile. Assume equal, uniformly illuminated rectangular slits, coherent equal-phase light, and far-field conditions. Let each slit width be a and the centre-to-centre separation be d. Constructive interference orders obey d sine theta equals m wavelengths. Single-slit envelope minima obey a sine theta equals p wavelengths, where p is a nonzero integer. If both conditions hold at the same direction, the interference order has no light to reinforce. It is missing. Dividing the two equations gives m equal to p times d over a. Try d equal to zero point six millimetres and a equal to zero point two millimetres. Their ratio is three. Every third nonzero interference order coincides with an envelope minimum in this ideal model. In particular, orders positive three and negative three are absent at the first envelope boundaries. Now use wavelength six hundred nanometres and screen distance one point five metres. Interference spacing is one point five millimetres. The first diffraction minima lie four point five millimetres from the centre on either side, so the full central-envelope width is nine millimetres. How many principal interference orders fit strictly inside it? Take a moment. Their labels are negative two, negative one, zero, positive one and positive two. Five, not seven. The boundary orders are dark and must not be counted. The envelope also makes the outer peaks weaker. For a mathematical intensity sketch, multiply cosine squared of pi d y over wavelength D by the squared sine-over-argument envelope, using argument pi a y over wavelength D. At zero argument, that envelope equals one by its limit; don't let your calculator divide zero by zero. The envelope can shift actual local peak positions slightly away from the narrow-slit order positions. Our five-order count is the standard interference-order description. Distinguish fringe spacing, full central-envelope width, and actual peak brightness: they are different quantities in one pattern."
+    },
+    {
+      "title": "An extra polarizer can increase the final transmitted light",
+      "formula": "Unpolarized input: Iout = I0/2 times the product of cos^2 of successive axis differences",
+      "points": [
+        "The first ideal polarizer halves unpolarized intensity.",
+        "Every later filter uses the preceding polarization direction.",
+        "No individual passive filter amplifies light; compare different complete sequences."
+      ],
+      "script": "Let's finish with a lovely optical puzzle. Two ideal crossed polarizers block the transmitted beam. Put another polarizer between them, and some light can come through. Does that mean the extra sheet creates energy? Absolutely not. Each sheet still reduces or preserves the intensity arriving at that sheet. It changes the selected polarization direction, which changes what the later sheet can transmit. Start with unpolarized light of intensity one hundred units. The first axis is zero degrees and the final axis is ninety degrees. The first ideal sheet passes fifty units. Insert one middle axis at angle theta. That sheet passes fifty times cosine squared theta, and the last passes that result times sine squared theta. Using the double-angle relation, final intensity is one hundred divided by eight, times sine squared of twice theta. What angle gives the greatest output? Pause before choosing. Forty-five degrees makes that squared sine one, so the maximum is twelve point five units. The final beam is polarized along the final sheet's ninety-degree axis, not the middle sheet's axis. Now use two middle sheets instead, giving successive axes zero, thirty, sixty and ninety degrees. Each step after the first differs by thirty degrees. Cosine squared thirty degrees is three quarters. Track the sequence: fifty units, thirty-seven point five, twenty-eight point one two five, and finally twenty-one point zero nine three seven five units. More than twelve point five, but every individual step still lost light. If you swap or reorder the sheets, their successive angle differences change and the result can change. If the original beam is already polarized, do not automatically halve its intensity at the first sheet. Use the angle between its actual polarization and that first axis. These are ideal monochromatic teaching models; real sheets have losses and leakage, so adding many sheets is not a promise of unlimited useful transmission. For JEE problems, draw the axes in order, update polarization after each filter, and multiply the correct intensity factors. Tracking the intermediate state is more reliable than applying one angle to the entire stack."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "For phi = 2 pi y/beta + pi/2 and beta = 1 mm, the zero-phase bright order lies at:",
+      "options": [
+        "+0.25 mm",
+        "-0.25 mm",
+        "-0.5 mm",
+        "+1 mm"
+      ],
+      "answer": 1,
+      "explanation": "Set phi = 0: y/beta = -1/4 in the declared signed-phase convention."
+    },
+    {
+      "question": "Coherent same-polarization contributions have separate intensities 9 and 4. The minimum intensity is:",
+      "options": [
+        "0",
+        "5",
+        "1",
+        "13"
+      ],
+      "answer": 2,
+      "explanation": "Imin = (sqrt(9) - sqrt(4)) squared = 1; unequal amplitudes prevent perfect cancellation."
+    },
+    {
+      "question": "For equal finite slits with d/a = 3, how many principal interference orders lie strictly inside the central diffraction envelope?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "3"
+      ],
+      "answer": 0,
+      "explanation": "Only m = -2, -1, 0, 1, 2. Orders +/-3 coincide with the first diffraction minima."
+    },
+    {
+      "question": "For 100 units of unpolarized input and ideal axes 0, 30, 60, 90 degrees in that order, final intensity is approximately:",
+      "options": [
+        "50 units",
+        "12.5 units",
+        "75 units",
+        "21.094 units"
+      ],
+      "answer": 3,
+      "explanation": "100/2 x (cos squared 30 degrees)^3 = 50 x (3/4)^3 = 21.09375."
+    },
+    {
+      "question": "With one middle ideal polarizer between crossed outer sheets, the greatest output for unpolarized input occurs at:",
+      "options": [
+        "30 degrees to the first",
+        "45 degrees to the first",
+        "0 degrees to the first",
+        "90 degrees to the first"
+      ],
+      "answer": 1,
+      "explanation": "Output = I0/8 x sin squared(2 theta); it is maximal at theta = 45 degrees modulo axis periodicity."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Materials and flow: choosing the right physical model",
+  "sources": [
+    {
+      "title": "Official NTA JEE Main 2026 Physics syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Stress, strain and elastic modulus",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/12-3-stress-strain-and-elastic-modulus"
+    },
+    {
+      "title": "OpenStax: Viscosity and turbulence",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/14-7-viscosity-and-turbulence"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Match the deformation to its modulus; Elastic does not always mean proportional",
+      "formula": "Y = (F/A)/(delta L/L); B = -delta P/(delta V/V); G_s = shear stress / shear strain; Linear elastic energy density = (1/2) stress x strain",
+      "points": [
+        "Match the deformation to its modulus",
+        "Elastic does not always mean proportional"
+      ],
+      "script": "Welcome back. In this class we will work through bulk and shear moduli, stress-strain curves, critical velocity and combined thermal-fluid calculations. Stretching, squeezing and shearing are different experiments. Young's modulus Y relates longitudinal stress F/A to fractional length change the fractional length change within the proportional elastic range. Bulk modulus B measures resistance to volume change under a uniform pressure increase. Because compression decreases volume, B equals -the pressure increase/(the fractional volume change) is positive for an ordinary stable material. Use consistent signs or use positive compression magnitudes explicitly. Shear modulus G_s relates tangential stress to shear strain, approximately the small angular deformation in radians. A material can resist compression without resisting a lasting static shear: liquids have a bulk modulus but no equilibrium static shear modulus. Do not transfer the stretching formula to every kind of deformation. For a pressure increase of two million pascals and B equals one billion pascals, the fractional volume change is -0.002, a decrease of 0.2 percent. The straight initial part of a tensile stress-strain graph obeys Hooke's law; its slope gives Young's modulus. A body can still recover its original dimensions beyond the proportional limit while its response is nonlinear. The elastic limit is therefore not automatically the end of every straight section, and the yield point is not a universal sharp feature of all materials. Beyond yield, unloading can leave permanent deformation. In a linear, quasistatic elastic stretch from zero stress, work stored per original volume is the triangular graph area: one half stress times strain. A stress of four million pascals with strain 0.002 stores 4000 joules per cubic metre. This is energy density, not total energy. Multiply by the original volume to get energy. A material being stiff, strong or tough refers to different properties: slope, limiting stress and energy absorbed before failure should not be confused."
+    },
+    {
+      "title": "Use a flow-regime check before trusting a formula; Combine pressure and motion without double-counting",
+      "formula": "Re = rho v D/eta; v_critical = Re_critical eta/(rho D); Ideal tank outlet v = sqrt(2gh); volume flow = A v; mass flow = rho A v",
+      "points": [
+        "Use a flow-regime check before trusting a formula",
+        "Combine pressure and motion without double-counting"
+      ],
+      "script": "Laminar flow has orderly layers; turbulent flow includes irregular fluctuations and mixing. Reynolds number compares inertial and viscous effects. For pipe flow, Re equals rho v D/eta using mean speed v and diameter D. The critical speed for an assigned critical Reynolds number is Re_critical eta/(rho D). The transition threshold depends on geometry, disturbances and the chosen characteristic length. A familiar pipe estimate is not a universal constant for every flow. For water with rho equals 1000 kilograms per cubic metre and viscosity 0.001 pascal seconds in a 0.01 m diameter pipe, take Re_critical equals 2000 as a stated illustrative criterion. Critical mean speed is 0.20 metres per second. Doubling diameter halves this estimated speed. Bernoulli's simple streamline equation assumes steady, incompressible flow with negligible viscous losses; continuity can still hold when Bernoulli without losses is inadequate. Stokes drag on a sphere requires creeping flow, not arbitrary high-speed turbulence. For a large open tank draining through a small opening, apply Bernoulli between the surface and outlet at the same atmospheric pressure. Neglect surface speed and losses. The gravitational height difference h becomes kinetic energy per mass, giving outlet speed the square root of two g h. At h equals 0.45 m with g equals 10 metres per second squared, the ideal speed is 3 metres per second. The outlet area times speed gives volume flow, not mass flow until density is included. If the outlet area is one square centimetre, convert it to 0.0001 m squared. Volume flow is 0.0003 cubic metres per second, and water mass flow is 0.30 kg/s. The height will fall in a finite tank, so this is an instantaneous ideal rate unless the level is maintained. Adding pressure work again after using Bernoulli would double-count an energy contribution already included. Real contraction and viscosity reduce the actual outflow compared with this ideal model."
+    },
+    {
+      "title": "Track heat through every stage",
+      "formula": "Q_total = sum(mc delta T) + sum(mL); thermal resistance = L/(kA)",
+      "points": [
+        "Track heat through every stage"
+      ],
+      "script": "Heating through a phase change is not one temperature-rise calculation. To turn ice at -10 degrees Celsius into water at 20 degrees Celsius, warm the ice to zero, supply latent heat of fusion, then warm the liquid. At fixed pressure a pure material's ideal melting stage changes phase without changing temperature. Write an energy ledger before substituting numbers; latent heat has units of joules per kilogram, not joules per kilogram per kelvin. Use 0.10 kg ice, ice heat capacity 2100 joules per kilogram per kelvin, latent heat 334000 joules per kilogram and water heat capacity 4200 joules per kilogram per kelvin. The three contributions are 2100, 33400 and 8400 J: total 43900 J. With useful heating power 100 W and negligible losses, time is 439 s. For heat conduction through two layers of equal area in steady state, thermal resistances L/(kA) add. Equal heat current, not equal temperature drop, is the condition linking the layers."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "For delta P = 2 x 10^6 Pa and B = 10^9 Pa, fractional volume change is:",
+      "options": [
+        "+0.002",
+        "-0.002",
+        "-0.2",
+        "+500"
+      ],
+      "answer": 1,
+      "explanation": "Compression gives delta V/V = -delta P/B = -0.002. The negative sign records the decrease in volume."
+    },
+    {
+      "question": "A linear elastic stress 4 x 10^6 Pa produces strain 0.002. Stored energy per volume is:",
+      "options": [
+        "4000 J/m^3",
+        "8000 J/m^3",
+        "2000 J/m^3",
+        "4 J/m^3"
+      ],
+      "answer": 0,
+      "explanation": "The triangular stress-strain area is one half times 4 x 10^6 times 0.002, giving 4000 J/m^3."
+    },
+    {
+      "question": "At fixed rho, viscosity and assigned Re criterion, doubling pipe diameter changes critical speed to:",
+      "options": [
+        "Twice",
+        "Four times",
+        "Half",
+        "Unchanged"
+      ],
+      "answer": 2,
+      "explanation": "From v_critical = Re_critical eta/(rho D), the predicted speed is inversely proportional to the chosen pipe diameter."
+    },
+    {
+      "question": "A maintained tank level is 0.45 m above a small outlet. With g = 10 and negligible losses, outlet speed is:",
+      "options": [
+        "9 m/s",
+        "4.5 m/s",
+        "1.5 m/s",
+        "3 m/s"
+      ],
+      "answer": 3,
+      "explanation": "Torricelli's ideal result gives sqrt(2 x 10 x 0.45) = sqrt(9) = 3 m/s when surface speed is negligible."
+    },
+    {
+      "question": "Two conducting layers in series at steady state, without lateral heat loss, must have the same:",
+      "options": [
+        "Temperature drop",
+        "Heat current",
+        "Conductivity",
+        "Thickness"
+      ],
+      "answer": 1,
+      "explanation": "Steady energy conservation gives equal heat current through each layer; drops depend on the individual thermal resistances."
+    }
+  ]
+}

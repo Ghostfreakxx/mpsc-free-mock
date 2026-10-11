@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "unit": 18,
+  "title": "Atoms and nuclei applications: scattering, spectral lines and mass accounting",
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 official syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Bohr model and Rutherford background",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/6-4-bohrs-model-of-the-hydrogen-atom"
+    },
+    {
+      "title": "OpenStax: nuclear binding energy",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/10-2-nuclear-binding-energy"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "A head-on alpha particle trades motion for electric potential energy",
+      "formula": "Closest approach: r = k (2e)(Ze)/K for a fixed heavy nucleus",
+      "points": [
+        "Head-on motion has zero angular momentum in the fixed-target model.",
+        "The turning point is not an estimate of the atomic radius.",
+        "Nonzero impact parameter requires an angular-momentum analysis."
+      ],
+      "script": "Hey, welcome back. Most alpha particles in Rutherford's experiment passed through the thin foil, but a small fraction scattered strongly. That supports a compact positive nucleus rather than positive charge spread throughout the atom. Let's calculate a special case carefully. An alpha particle approaches a heavy nucleus exactly head-on. Treat the nucleus as fixed, neglect electron screening near the turning point, and use nonrelativistic motion. As the alpha approaches, repulsive electric potential energy increases while kinetic energy decreases. At closest approach, its radial speed is zero. Initial kinetic energy equals Coulomb potential energy there. The alpha charge is two e, and nuclear charge is Z e, so closest distance is k times two e times Z e, divided by the initial kinetic energy. Use gold with Z equal to seventy-nine and alpha energy five megaelectron volts. A useful conversion is k e squared approximately one point four four megaelectron volt femtometres. The distance is two times seventy-nine times one point four four divided by five femtometres, or forty-five point five zero four femtometres. That is about four point five five times ten to the minus fourteen metres. This distance is much smaller than an atomic radius, but it is not itself the nuclear radius. For a non-head-on trajectory, the alpha retains tangential motion at closest approach, so setting all kinetic energy to zero would be wrong. Nuclear recoil also changes a more exact calculation. Our simple result uses a heavy fixed target and zero impact parameter. In JEE, ask what energy remains at the turning point before substituting. The experimental observation, the atomic model and the special closest-approach calculation are related, but they are not interchangeable claims."
+    },
+    {
+      "title": "Hydrogen-like ions scale with nuclear charge squared",
+      "formula": "En = -13.6 Z^2/n^2 eV; rn = 0.0529 n^2/Z nm",
+      "points": [
+        "Apply this elementary model to one-electron ions, not neutral many-electron atoms.",
+        "Photon energy is the positive difference between initial and final levels.",
+        "Keep the final-level series distinct from the individual transition."
+      ],
+      "script": "Now let's use Bohr energy levels without losing the signs. For a one-electron hydrogen-like ion, energy is minus thirteen point six times Z squared divided by n squared electron volts in the elementary heavy-nucleus model. Negative energy means a bound state relative to a free electron at rest infinitely far away. Consider singly ionized helium. Its nucleus has Z equal to two, but only one electron remains. The energy scale is fifty-four point four electron volts. At n equal to three, energy is about negative six point zero four four electron volts. At n equal to two, it is negative thirteen point six electron volts. A downward transition from three to two emits the difference: seven point five five six electron volts approximately. Using h c equal to twelve hundred forty electron volt nanometres gives wavelength about one hundred sixty-four point one nanometres, in the ultraviolet. The corresponding three-to-two hydrogen transition has one quarter of that photon energy, so roughly four times the wavelength. It is the familiar red Balmer line near six hundred fifty-six nanometres in this approximate model. A spectral series is grouped by the final level; one line is only one transition within that series. For size, the Bohr radius formula is zero point zero five two nine times n squared divided by Z nanometres. The helium-ion n equals two radius is zero point one zero five eight nanometres. Pause and compare the scaling: radius falls as one over Z at fixed n, while binding energy grows as Z squared. Do not use the same one-electron formula for neutral helium with two interacting electrons. More accurate spectroscopy includes reduced mass and other corrections. JEE's elementary comparison needs the right charge, level numbers and the correct domain of the model."
+    },
+    {
+      "title": "Consistent masses make nuclear energy bookkeeping work",
+      "formula": "Q = (initial mass - final mass)c^2; 1 u c^2 approximately 931.5 MeV",
+      "points": [
+        "Do not mix a neutral atomic mass with an unrelated bare nuclear mass.",
+        "Electron rest masses cancel when atomic electron counts balance.",
+        "Binding energy per nucleon is not total binding energy."
+      ],
+      "script": "Finally, nuclear energy bookkeeping becomes much easier when every mass uses the same convention. For binding a nucleus, compare separated nucleons with the bound nucleus. If you use neutral atomic masses instead, pair hydrogen-atom masses with neutron masses and the neutral atom's mass. That balances electron counts; small electronic binding corrections are normally neglected in our nuclear-scale estimate. Let's use approximate atomic masses for fusion: deuterium two point zero one four one zero two u, tritium three point zero one six zero four nine u, helium four point zero zero two six zero three u, and a neutron one point zero zero eight six six five u. Initial mass for deuterium plus tritium is five point zero three zero one five one u. Final mass for helium plus neutron is five point zero one one two six eight u. Both sides have two atomic electrons in this bookkeeping convention. Mass decrease is zero point zero one eight eight eight three u. Multiply by nine hundred thirty-one point five megaelectron volts per u to obtain about seventeen point five nine megaelectron volts released. The positive Q means a net rest-energy decrease; energy appears mainly as product kinetic energy in this reaction. Do not confuse released energy with the activation barrier or with a claim that fusion is easy to start. For binding-energy curves, divide total binding by nucleon number before comparing average binding. Moving toward higher binding per nucleon can release energy in suitable light-nucleus fusion or heavy-nucleus fission, but use actual conserved products for a numerical answer. This classroom uses approximate stated masses, not a precision nuclear data table. In JEE, check charge and nucleon conservation first, mass conventions second, then the sign of Q."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "In the fixed-heavy-target head-on model, doubling alpha kinetic energy changes closest approach by:",
+      "options": [
+        "A factor of 2",
+        "A factor of 1/2",
+        "No change",
+        "A factor of 4"
+      ],
+      "answer": 1,
+      "explanation": "r is inversely proportional to the initial kinetic energy."
+    },
+    {
+      "question": "Which atom or ion can use the one-electron hydrogen-like formula directly?",
+      "options": [
+        "Neutral helium",
+        "Neutral carbon",
+        "He+",
+        "Li+"
+      ],
+      "answer": 2,
+      "explanation": "He+ has one electron and Z = 2."
+    },
+    {
+      "question": "For He+, the n=2 Bohr radius with a0=0.0529 nm is:",
+      "options": [
+        "0.1058 nm",
+        "0.02645 nm",
+        "0.2116 nm",
+        "0.0529 nm"
+      ],
+      "answer": 0,
+      "explanation": "a0 n squared/Z = 0.0529 x 4/2."
+    },
+    {
+      "question": "An initial-minus-final mass difference of 0.018883 u gives approximately:",
+      "options": [
+        "0.018883 MeV",
+        "931.5 MeV",
+        "-17.59 MeV",
+        "+17.59 MeV"
+      ],
+      "answer": 3,
+      "explanation": "Q = 0.018883 x 931.5 = +17.5895 MeV."
+    },
+    {
+      "question": "A nucleus has total binding energy 80 MeV and A=10. Binding energy per nucleon is:",
+      "options": [
+        "80 MeV",
+        "8 MeV",
+        "800 MeV",
+        "0.125 MeV"
+      ],
+      "answer": 1,
+      "explanation": "Divide total binding energy by nucleon count."
+    }
+  ]
+}

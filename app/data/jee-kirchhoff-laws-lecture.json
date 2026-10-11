@@ -1,0 +1,136 @@
+{
+  "title": "Kirchhoff's laws: junctions, loops and signed currents",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 12",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Kirchhoff's rules",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Junction rule: account for charge",
+      "formula": "Steady junction: sum I_in = sum I_out; chosen current arrows may be arbitrary",
+      "points": [
+        "The junction rule follows charge conservation with no net charge accumulation.",
+        "Choose one arrow for each branch and retain it throughout the equations.",
+        "A negative result means actual current opposes the chosen arrow."
+      ],
+      "script": "Hey, welcome back. We have simplified resistor networks and modeled real cells. Now we need a method that still works when several sources and branches prevent easy series or parallel reduction. Kirchhoff's first law is the junction rule. In a steady circuit, charge does not keep accumulating at a junction, so total current entering equals total current leaving. This is charge conservation in action. Suppose five amperes enters a junction, while two amperes leaves along one path. The remaining outgoing path carries three amperes. No current has been consumed at the node. Before solving an unfamiliar circuit, choose a current arrow for each branch. You are allowed to guess its direction. The arrow defines a positive reference; it does not guarantee the physical result. If an equation returns minus one ampere, actual current is one ampere opposite your arrow. Keep that negative sign when checking the original equations. Changing arrows halfway through without rewriting the equations creates confusion. We assume steady direct current and ideal connecting wires in this class. For a connected circuit with several nodes, some junction equations repeat the same information. Usually one fewer independent junction equation than the number of nodes is sufficient. Begin by tracing uninterrupted wires into nodes, then write the current balance at each independent junction. A complicated drawing becomes manageable when every current has a clear reference direction."
+    },
+    {
+      "title": "Loop rule: return to the same potential",
+      "formula": "Closed DC loop: sum delta V = 0; resistor with current: -IR; source from - to +: +E",
+      "points": [
+        "Choose a loop traversal independently of your current arrows.",
+        "Across a resistor, moving with its reference current gives -IR; against it gives +IR.",
+        "Across an ideal source, polarity determines the EMF sign."
+      ],
+      "script": "Kirchhoff's second law is the loop rule. Walk around a closed path and return to the same point. In our steady circuit model, the total signed change in electric potential is zero. Sources supply energy per charge, and resistors transfer it into internal energy. Choose a direction to walk around a loop; clockwise or counterclockwise both work. This walking direction is separate from the current arrows. Across a resistor, walking with its reference current gives minus I R, a potential drop. Walking against the reference arrow gives plus I R. Across an ideal source, walking from its negative terminal to its positive terminal gives plus E. Walking from positive to negative gives minus E. Internal resistance is another resistor and follows the same resistor rule. Try one source of twelve volts, internal resistance one ohm and load five ohms. Walking through the source from negative to positive, then with current through both resistances, gives twelve minus I times one minus I times five equals zero. Current is two amperes. Reverse your entire walk and every sign reverses; the current solution remains unchanged. That is a useful consistency check. This zero-sum form assumes no changing magnetic flux supplies an unaccounted induced EMF. Later, induction will extend the model. For now, mark polarities, draw current arrows and write each potential change in the order you encounter it."
+    },
+    {
+      "title": "Set up a circuit with three branches",
+      "formula": "I1 + I2 = I3; 12 - 2I1 - 4I3 = 0; 6 - 2I2 - 4I3 = 0",
+      "points": [
+        "Between A and B: two source branches and one 4 ohm load.",
+        "Source EMFs are 12 V and 6 V, each with 2 ohm series resistance.",
+        "Choose source currents B to A and load current A to B; both source positive terminals face A."
+      ],
+      "script": "Let's set up an original worked problem carefully. There are two nodes, A at the top and B at the bottom, with three branches between them. The left branch has a twelve volt ideal source and a two ohm series resistance. The right branch has a six volt ideal source and a two ohm series resistance. Both sources have their positive terminal toward A. The middle branch is a four ohm load. Choose I one upward from B to A in the left branch, I two upward in the right branch, and I three downward through the load. At node A, write I one plus I two equals I three. Now walk from B upward through the left source branch and downward through the load. The source raises potential by twelve, its series resistor lowers it by two I one, and the load lowers it by four I three. Their sum is zero. For the right loop, the same walk gives six minus two I two minus four I three equals zero. We have three unknown branch currents and three independent equations. The loop across the two source branches would add no new information; it follows by subtracting these two loop equations. Pause before solving and check the picture: source polarities, resistor values and chosen current arrows must match every term. The six volt branch may turn out to absorb energy rather than supply it. Our signed equations will tell us."
+    },
+    {
+      "title": "Solve, interpret and check the result",
+      "formula": "V_A - V_B = 7.2 V; I1 = 2.4 A; I2 = -0.6 A; I3 = 1.8 A",
+      "points": [
+        "The negative I2 means actual current goes A to B in that branch.",
+        "The stronger source supplies energy; the weaker source absorbs energy.",
+        "Check junction balance, both loop sums and total power independently."
+      ],
+      "script": "Let V be the potential of A relative to B. The load current is V divided by four. The left source current is twelve minus V divided by two, and the right source current is six minus V divided by two. Substituting into the junction equation gives nine minus V equals V over four. Multiply by four: thirty six minus four V equals V. Therefore V is seven point two volts. I one becomes two point four amperes, I two becomes minus zero point six amperes, and I three becomes one point eight amperes. The negative result is useful information: actual current in the six volt branch travels from A to B, opposite our upward reference arrow. Current enters that source's positive terminal, so the ideal six volt source absorbs energy. Check the junction: two point four minus zero point six equals one point eight. Check the left loop: twelve minus four point eight minus seven point two is zero. Check the right: six plus one point two minus seven point two is zero. Now verify power. The twelve volt source supplies twenty eight point eight watts. The six volt source absorbs three point six watts. Resistor heating totals twenty five point two watts: eleven point five two in the left branch, zero point seven two in the right, and twelve point nine six in the load. Absorption plus heating equals the supplied power. A negative current never makes resistor heating negative; use I squared R."
+    },
+    {
+      "title": "A reliable JEE circuit-solving routine",
+      "formula": "Keep reference arrows; solve independent equations; check sum I and sum delta V; P_resistor = I^2R",
+      "points": [
+        "Do not simplify source-containing branches as plain resistor pairs.",
+        "Ideal ammeters have zero resistance; ideal voltmeters draw zero current.",
+        "Wheatstone and metre bridges will apply these same node and loop ideas."
+      ],
+      "script": "Let's finish with a routine you can carry into a JEE problem. First label nodes by tracing ideal wires. Next mark every source polarity and choose one reference current per branch. Write enough independent junction and loop equations for the unknowns. Solve the equations, interpret signs, and check the original circuit. A branch containing a source cannot generally be merged with another branch by using only the parallel-resistor formula. Sources maintain their own potential rises and can oppose one another. Include each source and each internal resistance explicitly. For an ideal ammeter, resistance is zero; placing it between two nodes can change the circuit by joining their potentials. For an ideal voltmeter, resistance is infinite and no current flows through its branch. A voltmeter reading of zero does not automatically mean there is no current elsewhere. Keep meter connections in the diagram while reasoning. If you get a negative branch current, retain it in the equations and describe the actual direction. Check resistor heating with current squared times resistance, and determine source power from whether current leaves or enters the positive terminal. More elaborate circuits use the same method with more independent equations. Bridges will be our next application, where equal potentials can make a connecting branch carry zero current. For today's class, the important skill is not guessing which source wins. It is translating a clearly labeled circuit into consistent signed equations and letting those equations answer the question."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "5 A enters a steady junction and 2 A leaves through one branch. The other outgoing current is:",
+      "options": [
+        "7 A",
+        "3 A",
+        "2.5 A",
+        "-5 A"
+      ],
+      "answer": 1,
+      "explanation": "Charge balance gives 5 = 2 + I, so I = 3 A."
+    },
+    {
+      "question": "Walking through an ohmic resistor with its chosen current arrow contributes:",
+      "options": [
+        "+IR",
+        "Zero",
+        "-IR",
+        "+E"
+      ],
+      "answer": 2,
+      "explanation": "Potential change with the reference current is -IR; the current itself can be signed."
+    },
+    {
+      "question": "Walking through an ideal source from its negative terminal to its positive terminal contributes:",
+      "options": [
+        "+E",
+        "-E",
+        "-IR",
+        "Zero"
+      ],
+      "answer": 0,
+      "explanation": "The ideal source gives a potential rise +E in that traversal."
+    },
+    {
+      "question": "In the worked three-branch circuit, the potential of A relative to B is:",
+      "options": [
+        "6 V",
+        "12 V",
+        "9 V",
+        "7.2 V"
+      ],
+      "answer": 3,
+      "explanation": "(12-V)/2 + (6-V)/2 = V/4 gives V = 7.2 V."
+    },
+    {
+      "question": "The calculated right-branch upward current is -0.6 A. Its actual direction is:",
+      "options": [
+        "B to A at 0.6 A",
+        "A to B at 0.6 A",
+        "No current",
+        "B to A at 6 A"
+      ],
+      "answer": 1,
+      "explanation": "The negative sign reverses the chosen upward B-to-A reference."
+    },
+    {
+      "question": "For the 6 V ideal source in that branch, current enters its positive terminal. It:",
+      "options": [
+        "Supplies 3.6 W",
+        "Supplies 0.72 W",
+        "Absorbs 3.6 W",
+        "Absorbs 25.2 W"
+      ],
+      "answer": 2,
+      "explanation": "An ideal source absorbs EI = 6 x 0.6 = 3.6 W when current enters its positive terminal."
+    }
+  ]
+}

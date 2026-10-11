@@ -1,0 +1,184 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.500
+Hey, welcome back.
+
+00:00:02.200 --> 00:00:06.044
+A convex mirror looks simple, but finding its focal length needs a clever
+
+00:00:06.044 --> 00:00:06.360
+setup.
+
+00:00:07.220 --> 00:00:11.240
+With a real object in front of it, the image is virtual, behind the mirror.
+
+00:00:12.020 --> 00:00:14.360
+We cannot catch that ordinary image on a screen.
+
+00:00:15.140 --> 00:00:18.660
+Instead, a convex lens helps us send in converging rays.
+
+00:00:19.700 --> 00:00:22.420
+Place an object pin beyond the lens's focal distance.
+
+00:00:23.180 --> 00:00:27.580
+Align the pin tip, lens centre and mirror pole on a horizontal optical bench.
+
+00:00:28.300 --> 00:00:31.920
+The lens alone would make a real image at a point we will call C.
+
+00:00:32.720 --> 00:00:36.540
+Put the convex mirror between the lens and that point, reflecting side facing
+
+00:00:36.540 --> 00:00:37.040
+the lens.
+
+00:00:38.000 --> 00:00:41.580
+Adjust the mirror until returning light passes back through the lens and forms
+
+00:00:41.580 --> 00:00:43.440
+an inverted image at the object pin.
+
+00:00:44.260 --> 00:00:47.880
+Move your eye sideways and remove relative motion between the two pin tips.
+
+00:00:48.740 --> 00:00:52.240
+That is the parallax check, not simply overlap from one viewpoint.
+
+00:00:52.880 --> 00:00:54.340
+Why does this reveal the radius?
+
+00:00:55.300 --> 00:00:59.240
+A ray aimed at the centre of curvature of a spherical mirror meets the surface
+
+00:00:59.240 --> 00:01:00.040
+along its normal.
+
+00:01:00.840 --> 00:01:02.560
+It reflects back along the same path.
+
+00:01:03.320 --> 00:01:07.680
+At the return condition, the lens's would be image C is that centre of
+
+00:01:07.680 --> 00:01:08.700
+curvature, behind the mirror.
+
+00:01:09.480 --> 00:01:12.500
+The distance from the mirror pole P to C is its radius R.
+
+00:01:13.200 --> 00:01:17.200
+In the paraxial spherical mirror model, focal length magnitude is half that
+
+00:01:17.200 --> 00:01:17.500
+radius.
+
+00:01:18.140 --> 00:01:20.900
+Now remove the mirror without moving the lens or object pin.
+
+00:01:21.800 --> 00:01:25.640
+Locate the lens's real image C with an image pin, again removing parallax.
+
+00:01:26.320 --> 00:01:28.360
+The pole to image separation gives the radius.
+
+00:01:29.380 --> 00:01:32.780
+Use supervised safe illumination, never sunlight or direct beam viewing.
+
+00:01:33.460 --> 00:01:36.580
+A small aperture and careful alignment help keep this spherical mirror
+
+00:01:36.780 --> 00:01:37.900
+approximation reliable.
+
+00:01:38.160 --> 00:01:40.800
+Let's turn that ray story into a calculation.
+
+00:01:41.680 --> 00:01:45.020
+Suppose the mirror pole is at forty centimetres on a scale increasing toward
+
+00:01:45.020 --> 00:01:46.200
+the original lens image.
+
+00:01:47.060 --> 00:01:51.320
+After removing the mirror, the real image C is at seventy centimetres.
+
+00:01:51.320 --> 00:01:54.200
+Their observed separation is thirty centimetres.
+
+00:01:54.200 --> 00:01:57.880
+It is not the lens to image distance, and it is not yet the focal length.
+
+00:01:58.820 --> 00:02:02.440
+Calibration shows that the true pole to pin separation is zero point two
+
+00:02:02.440 --> 00:02:04.580
+centimetres larger than this upright difference.
+
+00:02:05.060 --> 00:02:08.800
+The corrected radius is thirty point two centimetres.
+
+00:02:08.800 --> 00:02:13.240
+Divide by two to get focal length magnitude fifteen point one centimetres.
+
+00:02:13.240 --> 00:02:16.180
+Take a moment: why add the correction before dividing?
+
+00:02:16.600 --> 00:02:18.760
+Because it belongs to the measured separation.
+
+00:02:19.760 --> 00:02:22.640
+Adding the full correction to fifteen would give the wrong answer.
+
+00:02:23.540 --> 00:02:27.260
+With the original incident direction toward the mirror taken positive, the
+
+00:02:27.260 --> 00:02:31.781
+centre and focus lie behind the convex mirror, so its Cartesian focal length
+
+00:02:31.781 --> 00:02:31.900
+is
+
+00:02:31.900 --> 00:02:32.300
+positive.
+
+00:02:32.890 --> 00:02:34.360
+Here is an uncertainty check.
+
+00:02:35.140 --> 00:02:39.480
+Each position reading has maximum uncertainty zero point one centimetres.
+
+00:02:39.480 --> 00:02:44.380
+The index correction has maximum uncertainty zero point zero four centimetres.
+
+00:02:44.380 --> 00:02:48.780
+For a worst case difference, add their absolute uncertainties: zero point two
+
+00:02:48.780 --> 00:02:49.920
+four centimetres in radius.
+
+00:02:50.900 --> 00:02:53.400
+Halving gives zero point one two centimetres in focal length.
+
+00:02:54.000 --> 00:02:58.591
+With matching precision, report fifteen point one zero plus or minus zero
+
+00:02:58.591 --> 00:02:58.905
+point
+
+00:02:58.905 --> 00:03:01.840
+one two centimetres under this stated uncertainty model.
+
+00:03:02.660 --> 00:03:05.600
+These are original teaching numbers, not measurements we performed.
+
+00:03:06.600 --> 00:03:09.580
+Repeat the return and parallax procedure for several object positions.
+
+00:03:10.180 --> 00:03:12.580
+The inferred focal length should agree within uncertainty.
+
+00:03:13.680 --> 00:03:16.120
+Changing the assisting lens does not change the mirror itself.
+
+00:03:16.620 --> 00:03:19.780
+That final physical check is just as important as the arithmetic.

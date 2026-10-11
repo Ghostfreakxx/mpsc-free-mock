@@ -1,0 +1,352 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.720
+Welcome back.
+
+00:00:01.600 --> 00:00:03.520
+Imagine a wheel turning about a fixed axle.
+
+00:00:04.540 --> 00:00:08.840
+A dot near the rim travels farther than a dot near the centre during the same
+
+00:00:08.840 --> 00:00:09.140
+turn.
+
+00:00:09.820 --> 00:00:12.140
+Yet both dots turn through the same angle.
+
+00:00:12.820 --> 00:00:15.200
+That distinction is the starting point of rotation.
+
+00:00:16.020 --> 00:00:18.180
+We measure angular displacement in radians.
+
+00:00:18.860 --> 00:00:21.440
+One radian means the arc length equals the radius.
+
+00:00:22.080 --> 00:00:26.520
+So arc length equals radius times angular displacement, provided the angle is
+
+00:00:26.520 --> 00:00:27.060
+in radians.
+
+00:00:27.640 --> 00:00:31.060
+A point half a metre from the axle turns through two radians.
+
+00:00:31.840 --> 00:00:33.240
+Its arc length is one metre.
+
+00:00:34.200 --> 00:00:37.960
+Notice that this is distance along a circular arc, not the straight line
+
+00:00:37.960 --> 00:00:39.620
+displacement between its endpoints.
+
+00:00:40.620 --> 00:00:43.300
+Angular velocity tells us how quickly the angle changes.
+
+00:00:43.960 --> 00:00:44.880
+We call it omega.
+
+00:00:45.840 --> 00:00:48.300
+Tangential speed equals radius times omega.
+
+00:00:48.980 --> 00:00:53.120
+If our wheel turns at four radians per second, the dot half a metre from the
+
+00:00:53.120 --> 00:00:54.900
+axle moves at two metres per second.
+
+00:00:55.400 --> 00:00:57.380
+What about a dot halfway to that rim?
+
+00:00:58.120 --> 00:00:58.600
+Take a moment.
+
+00:00:59.160 --> 00:01:02.660
+It has the same angular velocity, but half the tangential speed.
+
+00:01:03.420 --> 00:01:07.820
+In JEE questions, always distinguish angular quantities from linear quantities,
+
+00:01:07.980 --> 00:01:11.060
+and check which radius belongs to the point being discussed.
+
+00:01:11.808 --> 00:01:15.928
+Why is a long wrench easier to turn than a short one?
+
+00:01:17.188 --> 00:01:21.008
+The turning effect of a force depends not only on the force, but also on where
+
+00:01:21.008 --> 00:01:21.868
+and how it acts.
+
+00:01:22.568 --> 00:01:24.368
+That turning effect is torque.
+
+00:01:24.948 --> 00:01:29.588
+For motion in a plane, the torque magnitude about a chosen axis is radius times
+
+00:01:29.588 --> 00:01:31.928
+force times sine of the angle between them.
+
+00:01:32.588 --> 00:01:36.328
+Here radius means the position vector from the axis to the point where the
+
+00:01:36.328 --> 00:01:36.728
+force acts.
+
+00:01:37.208 --> 00:01:41.548
+An equivalent method is force times the perpendicular distance from the axis to
+
+00:01:41.548 --> 00:01:42.628
+the force's line of action.
+
+00:01:43.428 --> 00:01:45.168
+That distance is the lever arm.
+
+00:01:46.048 --> 00:01:49.508
+Push perpendicular to a wrench, twenty five centimetres from the bolt, with
+
+00:01:49.508 --> 00:01:50.128
+twenty newtons.
+
+00:01:50.868 --> 00:01:52.968
+Convert the length to zero point two five metres.
+
+00:01:53.548 --> 00:01:55.088
+The torque is five newton metres.
+
+00:01:55.848 --> 00:01:58.008
+Now push directly along the wrench toward the bolt.
+
+00:01:58.748 --> 00:01:59.948
+Predict the torque before calculating.
+
+00:02:00.568 --> 00:02:03.988
+It is zero, because the force's line of action passes through the axis.
+
+00:02:04.828 --> 00:02:09.208
+Choose an anticlockwise positive sign, then add clockwise torques with a
+
+00:02:09.208 --> 00:02:09.728
+negative sign.
+
+00:02:10.248 --> 00:02:14.208
+Torque uses newton metres, but we do not call it energy in joules: torque
+
+00:02:14.208 --> 00:02:17.628
+describes turning tendency, while work describes energy transfer.
+
+00:02:17.928 --> 00:02:22.348
+Mass tells us how strongly an object resists a change in linear motion.
+
+00:02:23.028 --> 00:02:27.248
+For rotation, we also need to know where that mass sits relative to the axis.
+
+00:02:28.108 --> 00:02:31.288
+This is moment of inertia, represented by capital I.
+
+00:02:32.088 --> 00:02:35.588
+For point particles, add each mass multiplied by the square of its
+
+00:02:35.588 --> 00:02:37.208
+perpendicular distance from the axis.
+
+00:02:37.848 --> 00:02:43.041
+A one kilogram point mass half a metre from the axis contributes zero point two
+
+00:02:43.041 --> 00:02:44.708
+five kilogram metres squared.
+
+00:02:44.708 --> 00:02:49.728
+Move it to one metre, and the contribution becomes one kilogram metre squared.
+
+00:02:49.728 --> 00:02:52.248
+Doubling the distance has quadrupled the moment of inertia.
+
+00:02:53.008 --> 00:02:56.728
+That squared distance is the reason mass near the rim matters so much.
+
+00:02:57.528 --> 00:03:01.588
+For a thin ring about its central perpendicular axis, the moment of inertia is
+
+00:03:01.588 --> 00:03:03.028
+mass times radius squared.
+
+00:03:03.688 --> 00:03:08.228
+For a uniform solid disk about the equivalent axis, it is one half mass times
+
+00:03:08.228 --> 00:03:08.888
+radius squared.
+
+00:03:09.268 --> 00:03:13.328
+The disk has some mass closer to the centre, so its moment of inertia is
+
+00:03:13.328 --> 00:03:15.088
+smaller for the same mass and radius.
+
+00:03:15.868 --> 00:03:19.708
+These formulas are not interchangeable, and changing the axis changes the
+
+00:03:19.708 --> 00:03:19.888
+answer.
+
+00:03:20.748 --> 00:03:24.588
+Before using a formula in an exam, identify the shape, the mass distribution,
+
+00:03:24.928 --> 00:03:26.148
+and the axis explicitly.
+
+00:03:26.544 --> 00:03:29.264
+Now combine the ideas in a worked problem.
+
+00:03:30.044 --> 00:03:34.764
+A uniform solid disk rotates about a fixed axle through its centre,
+
+00:03:34.764 --> 00:03:35.904
+perpendicular to its face.
+
+00:03:36.484 --> 00:03:39.964
+Its mass is two kilograms and its radius is half a metre.
+
+00:03:40.604 --> 00:03:43.444
+A constant net torque of one newton metre acts on it.
+
+00:03:43.884 --> 00:03:44.824
+It starts from rest.
+
+00:03:45.784 --> 00:03:47.924
+Find its angular speed after three seconds.
+
+00:03:48.664 --> 00:03:53.424
+First calculate the moment of inertia: one half times two times half squared
+
+00:03:53.424 --> 00:03:56.644
+gives zero point two five kilogram metres squared.
+
+00:03:57.504 --> 00:04:02.044
+For a rigid body rotating about a fixed axis, net torque about that axis equals
+
+00:04:02.044 --> 00:04:04.424
+moment of inertia times angular acceleration.
+
+00:04:05.444 --> 00:04:07.824
+Divide one by zero point two five.
+
+00:04:07.824 --> 00:04:10.784
+The angular acceleration is four radians per second squared.
+
+00:04:11.864 --> 00:04:15.504
+Constant angular acceleration means we can use the rotational version of our
+
+00:04:15.504 --> 00:04:16.384
+straight line equations.
+
+00:04:17.104 --> 00:04:21.224
+Final angular velocity equals initial angular velocity plus angular
+
+00:04:21.224 --> 00:04:22.584
+acceleration times time.
+
+00:04:23.604 --> 00:04:27.064
+Starting from rest gives twelve radians per second after three seconds.
+
+00:04:28.164 --> 00:04:31.964
+The angle turned is one half alpha t squared, or eighteen radians.
+
+00:04:33.044 --> 00:04:34.064
+Here is an energy check.
+
+00:04:34.804 --> 00:04:39.244
+Rotational kinetic energy is one half I omega squared, giving eighteen joules.
+
+00:04:40.004 --> 00:04:43.844
+Constant torque times angular displacement also gives eighteen joules of work.
+
+00:04:44.424 --> 00:04:45.444
+Two approaches agree.
+
+00:04:45.444 --> 00:04:49.704
+Remember: the torque supplied in this question is the net torque, after
+
+00:04:49.704 --> 00:04:51.244
+including any opposing torques.
+
+00:04:51.456 --> 00:04:56.556
+A wheel rolling along the ground does two things: its centre moves forward, and
+
+00:04:56.556 --> 00:04:58.876
+the wheel rotates about its centre.
+
+00:04:58.876 --> 00:05:01.276
+We must include both parts of the kinetic energy.
+
+00:05:02.236 --> 00:05:05.316
+Translational energy is one half mass times centre speed squared.
+
+00:05:06.256 --> 00:05:10.856
+Rotational energy is one half moment of inertia about the centre times angular
+
+00:05:10.856 --> 00:05:11.536
+speed squared.
+
+00:05:12.636 --> 00:05:16.616
+For rolling without slipping on a stationary surface, centre speed equals
+
+00:05:16.616 --> 00:05:18.096
+radius times angular speed.
+
+00:05:18.936 --> 00:05:21.816
+Do not apply that constraint to a wheel that is skidding.
+
+00:05:23.096 --> 00:05:27.856
+Try a uniform solid disk of mass two kilograms and radius half a metre, rolling
+
+00:05:27.856 --> 00:05:30.876
+without slipping at a centre speed of two metres per second.
+
+00:05:31.736 --> 00:05:33.836
+Its angular speed is four radians per second.
+
+00:05:35.056 --> 00:05:36.536
+Translational energy is four joules.
+
+00:05:37.276 --> 00:05:41.056
+Its moment of inertia is zero point two five kilogram metres squared, so
+
+00:05:41.056 --> 00:05:42.776
+rotational energy is two joules.
+
+00:05:43.636 --> 00:05:45.376
+Total kinetic energy is six joules.
+
+00:05:45.916 --> 00:05:49.936
+What changes for a thin ring with the same mass, radius, and centre speed?
+
+00:05:51.416 --> 00:05:52.776
+Pause and compare the moments of inertia.
+
+00:05:53.536 --> 00:05:57.616
+The ring has twice the rotational inertia, so its rotational energy is four
+
+00:05:57.616 --> 00:05:59.596
+joules and its total is eight joules.
+
+00:06:00.436 --> 00:06:03.896
+That does not mean it has a greater centre speed; the speeds were specified
+
+00:06:03.896 --> 00:06:04.356
+equal.
+
+00:06:05.156 --> 00:06:09.496
+Your final checklist is axis, torque, moment of inertia, and any rolling
+
+00:06:09.496 --> 00:06:09.956
+constraint.
+
+00:06:10.636 --> 00:06:14.636
+These are foundations; angular momentum, axis theorems, and more advanced
+
+00:06:14.636 --> 00:06:16.396
+rolling problems need further study.

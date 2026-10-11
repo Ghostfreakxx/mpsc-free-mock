@@ -1,0 +1,813 @@
+{
+  "duration": 436.65600000001206,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 84.64800000000231
+    },
+    {
+      "start": 84.64800000000231,
+      "end": 163.6560000000044
+    },
+    {
+      "start": 163.6560000000044,
+      "end": 258.1680000000071
+    },
+    {
+      "start": 258.1680000000071,
+      "end": 344.7360000000095
+    },
+    {
+      "start": 344.7360000000095,
+      "end": 436.65600000001206
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.159999966621399,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.7000000476837158,
+      "end": 4.159999847412109,
+      "text": "A telescope does not bring the Moon physically closer.",
+      "chapter": 0
+    },
+    {
+      "start": 4.78000020980835,
+      "end": 7.559999942779541,
+      "text": "It makes the Moon occupy a larger angle at your eye.",
+      "chapter": 0
+    },
+    {
+      "start": 8.220000267028809,
+      "end": 12.199999809265137,
+      "text": "That is our key idea for optical instruments: angular magnification.",
+      "chapter": 0
+    },
+    {
+      "start": 12.699999809265137,
+      "end": 18,
+      "text": "A small object of height h at distance d subtends an angle approximately h",
+      "chapter": 0
+    },
+    {
+      "start": 18,
+      "end": 21.920000076293945,
+      "text": "divided by d, when that angle is small and expressed in radians.",
+      "chapter": 0
+    },
+    {
+      "start": 22.84000015258789,
+      "end": 26.899999618530273,
+      "text": "Bring the object closer and its angular size increases, but your eye cannot",
+      "chapter": 0
+    },
+    {
+      "start": 26.899999618530273,
+      "end": 29.31999969482422,
+      "text": "focus clearly at arbitrarily small distances.",
+      "chapter": 0
+    },
+    {
+      "start": 30,
+      "end": 34.47999954223633,
+      "text": "For standard JEE calculations, we take the least distance of distinct vision,",
+      "chapter": 0
+    },
+    {
+      "start": 35.2400016784668,
+      "end": 38.47999954223633,
+      "text": "D, as twenty five centimeters unless another value is given.",
+      "chapter": 0
+    },
+    {
+      "start": 39.380001068115234,
+      "end": 43.02000045776367,
+      "text": "It is a conventional reference, not a promise that every person's eye has",
+      "chapter": 0
+    },
+    {
+      "start": 43.02000045776367,
+      "end": 44.13999938964844,
+      "text": "exactly that near point.",
+      "chapter": 0
+    },
+    {
+      "start": 45.02000045776367,
+      "end": 49.31999969482422,
+      "text": "A one millimeter object viewed at twenty five centimeters subtends about zero",
+      "chapter": 0
+    },
+    {
+      "start": 49.31999969482422,
+      "end": 50.939998626708984,
+      "text": "point zero zero four radians.",
+      "chapter": 0
+    },
+    {
+      "start": 51.7599983215332,
+      "end": 55.880001068115234,
+      "text": "A magnifier lets us see that object under a larger angle while keeping it in",
+      "chapter": 0
+    },
+    {
+      "start": 55.880001068115234,
+      "end": 56.13999938964844,
+      "text": "focus.",
+      "chapter": 0
+    },
+    {
+      "start": 56.900001525878906,
+      "end": 60.41999816894531,
+      "text": "Angular magnification compares the angle with the instrument against the",
+      "chapter": 0
+    },
+    {
+      "start": 60.41999816894531,
+      "end": 62.040000915527344,
+      "text": "specified unaided viewing angle.",
+      "chapter": 0
+    },
+    {
+      "start": 63.119998931884766,
+      "end": 67.30000305175781,
+      "text": "Image height magnification, such as v over u for a lens, answers a different",
+      "chapter": 0
+    },
+    {
+      "start": 67.30000305175781,
+      "end": 67.68000030517578,
+      "text": "question.",
+      "chapter": 0
+    },
+    {
+      "start": 68.73999786376953,
+      "end": 71.77999877929688,
+      "text": "Mixing those two definitions causes trouble in microscope questions.",
+      "chapter": 0
+    },
+    {
+      "start": 72.91999816894531,
+      "end": 76.83999633789062,
+      "text": "Throughout this class we use ideal paraxial instruments, ignore aberrations,",
+      "chapter": 0
+    },
+    {
+      "start": 77.13999938964844,
+      "end": 79.33999633789062,
+      "text": "and specify where the final image lies.",
+      "chapter": 0
+    },
+    {
+      "start": 79.81999969482422,
+      "end": 84.04769369272086,
+      "text": "The final image at infinity corresponds to a relaxed eye in the standard",
+      "chapter": 0
+    },
+    {
+      "start": 84.04769369272086,
+      "end": 84.4000015258789,
+      "text": "model.",
+      "chapter": 0
+    },
+    {
+      "start": 84.64800000000231,
+      "end": 88.60800003814929,
+      "text": "A simple magnifier is a converging lens viewed close to the eye.",
+      "chapter": 1
+    },
+    {
+      "start": 89.36799979019396,
+      "end": 93.3280003051781,
+      "text": "For a final virtual image at infinity, place the object at the lens's focal",
+      "chapter": 1
+    },
+    {
+      "start": 93.3280003051781,
+      "end": 93.60800003814929,
+      "text": "plane.",
+      "chapter": 1
+    },
+    {
+      "start": 94.40800022888415,
+      "end": 98.62030752309394,
+      "text": "The outgoing rays are parallel, and the angle they make is approximately h",
+      "chapter": 1
+    },
+    {
+      "start": 98.62030752309394,
+      "end": 98.84799980926745,
+      "text": "over",
+      "chapter": 1
+    },
+    {
+      "start": 98.84799980926745,
+      "end": 99.14800000000231,
+      "text": "f.",
+      "chapter": 1
+    },
+    {
+      "start": 99.94800019073718,
+      "end": 104.60799908447497,
+      "text": "Divide by the unaided reference angle h over D, and angular magnification is D",
+      "chapter": 1
+    },
+    {
+      "start": 104.60799908447497,
+      "end": 105.14800000000231,
+      "text": "over f.",
+      "chapter": 1
+    },
+    {
+      "start": 105.8679993133568,
+      "end": 110.54799961853259,
+      "text": "A lens of focal length five centimeters gives magnification five when D is",
+      "chapter": 1
+    },
+    {
+      "start": 110.54799961853259,
+      "end": 111.50800061035388,
+      "text": "twenty five centimeters.",
+      "chapter": 1
+    },
+    {
+      "start": 111.50800061035388,
+      "end": 116.84800076294177,
+      "text": "Now bring the object slightly inside the focus and arrange the final virtual",
+      "chapter": 1
+    },
+    {
+      "start": 116.84800076294177,
+      "end": 117.86800122070544,
+      "text": "image at the near point.",
+      "chapter": 1
+    },
+    {
+      "start": 118.56799816894763,
+      "end": 123.30799984741442,
+      "text": "With the lens close to the eye, the magnitude becomes one plus D over f, which",
+      "chapter": 1
+    },
+    {
+      "start": 123.30799984741442,
+      "end": 124.60799908447497,
+      "text": "is six for the same lens.",
+      "chapter": 1
+    },
+    {
+      "start": 125.28799938965075,
+      "end": 127.80799984741442,
+      "text": "The extra one belongs to this different viewing arrangement.",
+      "chapter": 1
+    },
+    {
+      "start": 128.46799969482652,
+      "end": 131.44799923706285,
+      "text": "It is not a correction you add to every magnifying power formula.",
+      "chapter": 1
+    },
+    {
+      "start": 132.228001831057,
+      "end": 133.728001831057,
+      "text": "Let's connect this to the lens equation.",
+      "chapter": 1
+    },
+    {
+      "start": 134.50800061035386,
+      "end": 138.3880016784691,
+      "text": "Set final image distance to negative twenty five centimeters and focal length",
+      "chapter": 1
+    },
+    {
+      "start": 138.3880016784691,
+      "end": 139.34800076294175,
+      "text": "to positive five.",
+      "chapter": 1
+    },
+    {
+      "start": 139.34800076294175,
+      "end": 144.10799908447495,
+      "text": "The object distance becomes negative twenty five over six centimeters, about",
+      "chapter": 1
+    },
+    {
+      "start": 144.10799908447495,
+      "end": 146.00800061035386,
+      "text": "negative four point one seven.",
+      "chapter": 1
+    },
+    {
+      "start": 146.00800061035386,
+      "end": 149.0679981689476,
+      "text": "That lies inside the five centimeter focus, as expected.",
+      "chapter": 1
+    },
+    {
+      "start": 149.78799938965074,
+      "end": 153.5480015258812,
+      "text": "The near point arrangement can give greater angular magnification, but the",
+      "chapter": 1
+    },
+    {
+      "start": 153.5480015258812,
+      "end": 156.78799938965074,
+      "text": "relaxed eye arrangement is often more comfortable in the elementary model.",
+      "chapter": 1
+    },
+    {
+      "start": 157.48799633789292,
+      "end": 162.10799908447495,
+      "text": "In a numerical problem, underline whether the final image is at infinity or at",
+      "chapter": 1
+    },
+    {
+      "start": 162.10799908447495,
+      "end": 163.4480030517601,
+      "text": "D before choosing the formula.",
+      "chapter": 1
+    },
+    {
+      "start": 163.6560000000044,
+      "end": 169.19599996185744,
+      "text": "A compound microscope uses an objective lens close to the small object and an",
+      "chapter": 2
+    },
+    {
+      "start": 169.19599996185744,
+      "end": 170.4960001525923,
+      "text": "eyepiece close to the eye.",
+      "chapter": 2
+    },
+    {
+      "start": 171.09600005722487,
+      "end": 174.79600034332717,
+      "text": "The objective makes a real, inverted, enlarged intermediate image.",
+      "chapter": 2
+    },
+    {
+      "start": 175.39599977112258,
+      "end": 179.8759993133589,
+      "text": "The eyepiece treats that image as its object and magnifies its angular size.",
+      "chapter": 2
+    },
+    {
+      "start": 180.57600007629836,
+      "end": 184.85600076294386,
+      "text": "Therefore total magnification is the objective's signed linear magnification",
+      "chapter": 2
+    },
+    {
+      "start": 184.85600076294386,
+      "end": 188.01600061035597,
+      "text": "multiplied by the eyepiece's angular magnification.",
+      "chapter": 2
+    },
+    {
+      "start": 188.75600038147414,
+      "end": 191.43600068664992,
+      "text": "Let's calculate one exact objective stage.",
+      "chapter": 2
+    },
+    {
+      "start": 191.81599984741652,
+      "end": 196.19600091553176,
+      "text": "Its focal length is two centimeters, and the object distance is negative two",
+      "chapter": 2
+    },
+    {
+      "start": 196.19600091553176,
+      "end": 197.01600061035597,
+      "text": "point two centimeters.",
+      "chapter": 2
+    },
+    {
+      "start": 197.87600122070754,
+      "end": 201.8960016784712,
+      "text": "The lens equation gives image distance positive twenty two centimeters, so",
+      "chapter": 2
+    },
+    {
+      "start": 201.8960016784712,
+      "end": 204.07599816894972,
+      "text": "objective magnification is negative ten.",
+      "chapter": 2
+    },
+    {
+      "start": 204.95599923706496,
+      "end": 209.1560000000044,
+      "text": "With an eyepiece focal length five centimeters and final image at infinity,",
+      "chapter": 2
+    },
+    {
+      "start": 209.81599984741652,
+      "end": 212.77599893188918,
+      "text": "eyepiece magnification is twenty five over five, or five.",
+      "chapter": 2
+    },
+    {
+      "start": 213.4359987793013,
+      "end": 215.3960016784712,
+      "text": "Total magnification is negative fifty.",
+      "chapter": 2
+    },
+    {
+      "start": 216.01600061035597,
+      "end": 220.53600106811965,
+      "text": "Its magnitude is fifty, and the minus sign describes inversion relative to the",
+      "chapter": 2
+    },
+    {
+      "start": 220.53600106811965,
+      "end": 221.31599984741652,
+      "text": "original object.",
+      "chapter": 2
+    },
+    {
+      "start": 222.2559984741255,
+      "end": 226.17600045776808,
+      "text": "The intermediate image must lie at the eyepiece focal plane, so the lens",
+      "chapter": 2
+    },
+    {
+      "start": 226.17600045776808,
+      "end": 228.27600274658644,
+      "text": "separation here is twenty seven centimeters.",
+      "chapter": 2
+    },
+    {
+      "start": 229.41600213623488,
+      "end": 233.69600091553176,
+      "text": "In a high magnification approximation, objective magnification magnitude is",
+      "chapter": 2
+    },
+    {
+      "start": 233.69600091553176,
+      "end": 237.21599755859816,
+      "text": "about optical tube length L divided by objective focal length.",
+      "chapter": 2
+    },
+    {
+      "start": 237.8559969482466,
+      "end": 241.636003356938,
+      "text": "L is the distance from the objective's back focal plane to the intermediate",
+      "chapter": 2
+    },
+    {
+      "start": 241.636003356938,
+      "end": 245.07599816894972,
+      "text": "image plane, not blindly every quoted mechanical tube length.",
+      "chapter": 2
+    },
+    {
+      "start": 245.91600213623488,
+      "end": 250.636003356938,
+      "text": "That gives the common approximate normal magnification L D over f o f e.",
+      "chapter": 2
+    },
+    {
+      "start": 250.636003356938,
+      "end": 255.69600091553176,
+      "text": "For a near point final image, the eyepiece factor becomes one plus D over f e,",
+      "chapter": 2
+    },
+    {
+      "start": 255.69600091553176,
+      "end": 257.636003356938,
+      "text": "and the geometry must be adjusted accordingly.",
+      "chapter": 2
+    },
+    {
+      "start": 258.1680000000071,
+      "end": 262.3079998664927,
+      "text": "For an astronomical telescope, the object is extremely far away.",
+      "chapter": 3
+    },
+    {
+      "start": 263.2679999046397,
+      "end": 266.08800007630106,
+      "text": "Rays arriving from one point of that object are nearly parallel.",
+      "chapter": 3
+    },
+    {
+      "start": 266.9479997329783,
+      "end": 269.6280000381541,
+      "text": "The objective lens makes a real image in its focal plane.",
+      "chapter": 3
+    },
+    {
+      "start": 270.54800011444803,
+      "end": 274.9521021953556,
+      "text": "For normal adjustment, place the eyepiece so this intermediate image is also",
+      "chapter": 3
+    },
+    {
+      "start": 274.9521021953556,
+      "end": 275.0679996185374,
+      "text": "at",
+      "chapter": 3
+    },
+    {
+      "start": 275.0679996185374,
+      "end": 276.80799938965555,
+      "text": "the eyepiece's incoming focal plane.",
+      "chapter": 3
+    },
+    {
+      "start": 277.508000152595,
+      "end": 281.24799992371317,
+      "text": "The final rays are parallel, allowing the standard relaxed eye view.",
+      "chapter": 3
+    },
+    {
+      "start": 281.74799992371317,
+      "end": 286.30799938965555,
+      "text": "The objective focal length is usually large, and the eyepiece focal length is",
+      "chapter": 3
+    },
+    {
+      "start": 286.30799938965555,
+      "end": 286.5479991607737,
+      "text": "small.",
+      "chapter": 3
+    },
+    {
+      "start": 287.26800038147684,
+      "end": 291.1680000000071,
+      "text": "Angular magnification is negative f o divided by f e.",
+      "chapter": 3
+    },
+    {
+      "start": 291.1680000000071,
+      "end": 293.7679984741282,
+      "text": "The negative sign means the astronomical image is inverted.",
+      "chapter": 3
+    },
+    {
+      "start": 294.7480018310618,
+      "end": 298.2482562420256,
+      "text": "If the objective focal length is one hundred centimeters and the eyepiece",
+      "chapter": 3
+    },
+    {
+      "start": 298.2482562420256,
+      "end": 298.48799969483133,
+      "text": "focal",
+      "chapter": 3
+    },
+    {
+      "start": 298.48799969483133,
+      "end": 302.7879989318919,
+      "text": "length is five centimeters, the magnification is negative twenty.",
+      "chapter": 3
+    },
+    {
+      "start": 302.7879989318919,
+      "end": 307.49299980927225,
+      "text": "The magnitude is twenty, and the lens separation is one hundred five",
+      "chapter": 3
+    },
+    {
+      "start": 307.49299980927225,
+      "end": 308.008000152595,
+      "text": "centimeters.",
+      "chapter": 3
+    },
+    {
+      "start": 308.008000152595,
+      "end": 309.88800122071024,
+      "text": "Why does that focal length ratio appear?",
+      "chapter": 3
+    },
+    {
+      "start": 310.14799954224344,
+      "end": 314.88800122071024,
+      "text": "A distant object angle produces intermediate image height approximately f o",
+      "chapter": 3
+    },
+    {
+      "start": 314.88800122071024,
+      "end": 316.0280006103587,
+      "text": "times the incoming angle.",
+      "chapter": 3
+    },
+    {
+      "start": 316.54800106812235,
+      "end": 320.88800122071024,
+      "text": "The eyepiece converts that height into an outgoing angle approximately height",
+      "chapter": 3
+    },
+    {
+      "start": 320.88800122071024,
+      "end": 322.7480018310618,
+      "text": "divided by f e.",
+      "chapter": 3
+    },
+    {
+      "start": 322.7480018310618,
+      "end": 325.3679969482493,
+      "text": "Their ratio is f o over f e.",
+      "chapter": 3
+    },
+    {
+      "start": 325.3679969482493,
+      "end": 328.5280006103587,
+      "text": "A telescope objective with a large aperture also collects more light.",
+      "chapter": 3
+    },
+    {
+      "start": 329.48799969483133,
+      "end": 332.9280021362376,
+      "text": "Magnifying power and light collection are different properties; a huge",
+      "chapter": 3
+    },
+    {
+      "start": 332.9280021362376,
+      "end": 335.6480033569407,
+      "text": "magnification does not automatically reveal more detail.",
+      "chapter": 3
+    },
+    {
+      "start": 336.568001525886,
+      "end": 340.3679969482493,
+      "text": "These formulas describe an ideal astronomical refractor in normal adjustment,",
+      "chapter": 3
+    },
+    {
+      "start": 341.12799908447977,
+      "end": 344.48799969483133,
+      "text": "not an upright terrestrial telescope with additional erecting elements.",
+      "chapter": 3
+    },
+    {
+      "start": 344.7360000000095,
+      "end": 349.03600019074435,
+      "text": "A reflecting telescope uses a concave primary mirror instead of a large",
+      "chapter": 4
+    },
+    {
+      "start": 349.03600019074435,
+      "end": 349.81599992371554,
+      "text": "objective lens.",
+      "chapter": 4
+    },
+    {
+      "start": 350.6560000763034,
+      "end": 354.4960002288913,
+      "text": "Incoming rays from a distant object reflect toward the primary's focal region,",
+      "chapter": 4
+    },
+    {
+      "start": 355.0159997329807,
+      "end": 356.8360003814792,
+      "text": "where a real intermediate image forms.",
+      "chapter": 4
+    },
+    {
+      "start": 357.4359998092746,
+      "end": 359.09599965668673,
+      "text": "An eyepiece magnifies that image.",
+      "chapter": 4
+    },
+    {
+      "start": 359.7159995422458,
+      "end": 363.63599961853976,
+      "text": "A secondary mirror may redirect the beam to a convenient viewing position,",
+      "chapter": 4
+    },
+    {
+      "start": 364.1159991607761,
+      "end": 364.97599977112765,
+      "text": "depending on the design.",
+      "chapter": 4
+    },
+    {
+      "start": 365.7360000000095,
+      "end": 370.41600030518526,
+      "text": "Our board shows the primary image eyepiece sequence schematically; it is not a",
+      "chapter": 4
+    },
+    {
+      "start": 370.41600030518526,
+      "end": 372.2159995422458,
+      "text": "construction drawing for a particular telescope.",
+      "chapter": 4
+    },
+    {
+      "start": 372.2159995422458,
+      "end": 377.51599877930636,
+      "text": "In an ideal normal arrangement, magnifying power magnitude is approximately",
+      "chapter": 4
+    },
+    {
+      "start": 377.51599877930636,
+      "end": 380.69599908448214,
+      "text": "primary focal length divided by eyepiece focal length.",
+      "chapter": 4
+    },
+    {
+      "start": 381.2960013733005,
+      "end": 384.8959998474216,
+      "text": "A two hundred centimeter primary with a four centimeter eyepiece gives",
+      "chapter": 4
+    },
+    {
+      "start": 384.8959998474216,
+      "end": 385.8959998474216,
+      "text": "magnitude fifty.",
+      "chapter": 4
+    },
+    {
+      "start": 386.67599862671847,
+      "end": 389.75600045777315,
+      "text": "Reflection does not disperse different wavelengths through an objective lens,",
+      "chapter": 4
+    },
+    {
+      "start": 390.25600045777315,
+      "end": 393.6559981689548,
+      "text": "so the primary avoids the refractive objective's chromatic aberration.",
+      "chapter": 4
+    },
+    {
+      "start": 394.2360000000095,
+      "end": 398.7360000000095,
+      "text": "That does not mean every reflector is perfectly sharp: spherical aberration,",
+      "chapter": 4
+    },
+    {
+      "start": 399.59600061036105,
+      "end": 403.1160010681247,
+      "text": "alignment errors, diffraction, and atmospheric conditions can still matter.",
+      "chapter": 4
+    },
+    {
+      "start": 404.17599862671847,
+      "end": 408.1360015258884,
+      "text": "Telescope tube length also depends on the folded optical layout, so do not",
+      "chapter": 4
+    },
+    {
+      "start": 408.1360015258884,
+      "end": 411.99600213623995,
+      "text": "reuse the refractor's simple lens separation expression as the physical length",
+      "chapter": 4
+    },
+    {
+      "start": 411.99600213623995,
+      "end": 412.8560027465915,
+      "text": "of every reflector.",
+      "chapter": 4
+    },
+    {
+      "start": 413.69599908448214,
+      "end": 418.3567714569969,
+      "text": "Our final comparison is useful for JEE: a microscope begins with a nearby",
+      "chapter": 4
+    },
+    {
+      "start": 418.3567714569969,
+      "end": 418.67600244141573,
+      "text": "small",
+      "chapter": 4
+    },
+    {
+      "start": 418.67600244141573,
+      "end": 421.89600366211886,
+      "text": "object and uses a short focal length objective to enlarge it.",
+      "chapter": 4
+    },
+    {
+      "start": 422.3560027465915,
+      "end": 426.7559966430759,
+      "text": "An astronomical telescope begins with a distant angular object and commonly",
+      "chapter": 4
+    },
+    {
+      "start": 426.7559966430759,
+      "end": 429.1559981689548,
+      "text": "uses a long focal length objective or primary.",
+      "chapter": 4
+    },
+    {
+      "start": 429.99600213623995,
+      "end": 434.0206180842568,
+      "text": "Both then use an eyepiece, and both require the final image condition to",
+      "chapter": 4
+    },
+    {
+      "start": 434.0206180842568,
+      "end": 434.3560027465915,
+      "text": "choose",
+      "chapter": 4
+    },
+    {
+      "start": 434.3560027465915,
+      "end": 436.0759963379001,
+      "text": "the correct magnifying power formula.",
+      "chapter": 4
+    }
+  ]
+}

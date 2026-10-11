@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Ray-optics applications: virtual objects, separated lenses and curved surfaces",
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 syllabus, Physics Unit 16",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: thin lenses; Cartesian signs adapted",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/2-4-thin-lenses"
+    },
+    {
+      "title": "OpenStax: spherical refraction; Cartesian signs adapted",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/2-3-images-formed-by-refraction"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "A virtual object is a destination for incoming rays",
+      "formula": "Lens: 1/v = 1/f + 1/u; second-lens u = first image position - second lens position",
+      "points": [
+        "Rightward coordinates are positive for left-to-right light.",
+        "A second lens can intercept converging rays before their first image forms.",
+        "Multiply signed magnifications, not image distances."
+      ],
+      "script": "Hey, welcome back. Today our light meets more than one optical element. The useful question is not just where the object stands. It is: what are the rays doing when they reach this particular lens? Keep light travelling left to right, with rightward distances positive. A real object sends diverging rays toward a lens from its left, so its object distance is negative. Now suppose the incoming rays are already converging toward a point on the right. That point is a virtual object for the lens, with positive object distance. No physical object needs to be sitting there. The point describes where the incoming rays would meet if we removed that lens. Let's build a concrete example. Put a thin converging lens of focal length ten centimetres at coordinate zero. Place the original object at negative thirty centimetres. The lens equation gives one over v equals one over ten minus one over thirty. Its image would be at positive fifteen centimetres. Now insert a second thin converging lens at coordinate ten centimetres, before the first image can form. Give it focal length twenty centimetres. Pause and predict its object sign. The incoming rays are heading toward coordinate fifteen, five centimetres to the right of the second lens. Therefore its object distance is positive five, not negative five. One over its image distance is one over twenty plus one over five. That gives an image four centimetres to the right of the second lens, at coordinate fourteen centimetres. The second lens brings the convergence closer. The first magnification is fifteen divided by negative thirty, or negative one half. The second is four divided by positive five, or positive zero point eight. Their product is negative zero point four. The final image is real, inverted relative to the original object, and forty percent of its height. Our ray sketch is paraxial and schematic. In a JEE multi-element question, calculate each element locally, then convert to a common coordinate before handing that image to the next element. That one habit prevents the most common virtual-object sign error."
+    },
+    {
+      "title": "Separated lenses: effective focal length is not back focus",
+      "formula": "In air: P = P1 + P2 - d P1 P2; back focal distance = (1 - d P1)/P",
+      "points": [
+        "Use metres for separation and inverse metres for power.",
+        "Propagation changes ray height between the lenses.",
+        "Effective focal length is measured from a principal plane, not generally the second lens."
+      ],
+      "script": "Our contact-lens power rule was convenient, but separation changes the geometry. Let's see why instead of memorising another formula. Use two ideal thin lenses in air with powers P one and P two, separated by distance d in metres. Send in a paraxial ray parallel to the axis at height h. The first lens gives it a small slope of negative P one times h. During travel to the second lens, its height becomes h times one minus d P one. The second lens changes slope by negative P two times that new height. Collect the terms. The final slope is negative h times P one plus P two minus d P one P two. The bracket is the equivalent power P. If d is zero, the contact sum comes back. With separation, the extra product matters. Try P one equal to ten diopters, P two equal to five diopters and separation zero point zero five metres. Equivalent power is ten plus five minus zero point zero five times ten times five. That is twelve point five diopters. Effective focal length is one divided by twelve point five metres, or eight centimetres. Now a subtle question: does parallel light meet eight centimetres beyond the second lens? Give that a moment. No. At the second lens, the ray height is half its original height. The final slope is negative twelve point five times the original height. Height divided by the convergence slope gives a back focal distance of zero point zero four metres, or four centimetres beyond the second lens. Generally, that distance is one minus d P one, divided by equivalent power. Effective focal length and back focal distance differ because the equivalent system's principal plane need not coincide with the second lens. This is a useful extension of thin-lens combinations, not a replacement for sequential imaging. For a finite object, work through each lens or use a fully specified system model. Keep the order of lenses: exchanging them leaves equivalent power unchanged in this air model, but usually changes the back focal distance. If equivalent power is zero, handle the parallel-output limit directly rather than dividing by zero."
+    },
+    {
+      "title": "One curved refracting surface has two different focal distances",
+      "formula": "n2/v - n1/u = (n2 - n1)/R; transverse magnification = n1 v/(n2 u)",
+      "points": [
+        "Small-angle Snell refraction produces the spherical-surface equation.",
+        "Measure the radius from the surface vertex to its centre.",
+        "Specify an extended second medium: a finite glass body has another interface."
+      ],
+      "script": "Now remove the second surface of a lens and study just one curved boundary. Light moves from index n one into index n two. The optical axis points right, and the radius R is positive when the centre of curvature lies to the right of the surface vertex. Why does a formula connect object distance, image distance and curvature? A ray close to the axis hits the surface at small height. Its incident and transmitted angles depend on the ray slopes and the tilted normal, which points toward the centre of curvature. Small-angle Snell's law relates those angles with n one and n two. Combining that geometry gives n two divided by v, minus n one divided by u, equals n two minus n one, divided by R. Notice that it is not the thin-lens equation: both refractive indices remain. Let's use an ideal air-to-glass spherical surface. Take n one equal to one, n two equal to one point five, radius positive twenty centimetres, and object distance negative sixty centimetres. Assume the glass continues far enough that no second interface intercepts the rays before they meet. The right side is zero point five divided by twenty, or zero point zero two five per centimetre. Rearranging gives one point five over v equal to zero point zero two five minus one over sixty. That is one over one hundred twenty per centimetre. Therefore v is positive one hundred eighty centimetres into the glass. Transverse magnification is n one v divided by n two u. Here it is negative two: a real image twice as tall and inverted. Finally, send in parallel rays. The object term vanishes, and the image focal distance becomes n two R divided by n two minus n one, or sixty centimetres. Reverse the question: where must a real object sit to make the transmitted rays parallel? Set one over v to zero. The signed object position is negative n one R divided by n two minus n one, or negative forty centimetres. Different indices give different focal distances. Do not silently turn a single boundary into a finite glass sphere. Draw the surfaces, specify the medium, and then let signs and small-angle assumptions guide the calculation."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Incoming rays would meet 5 cm to the right of a lens if it were removed. Its Cartesian object distance is:",
+      "options": [
+        "-5 cm",
+        "+5 cm",
+        "Zero",
+        "Always infinity"
+      ],
+      "answer": 1,
+      "explanation": "For left-to-right light, that convergence point is a virtual object at u = +5 cm."
+    },
+    {
+      "question": "For f2 = +20 cm and u2 = +5 cm, image distance from the second lens is:",
+      "options": [
+        "-4 cm",
+        "+25 cm",
+        "+4 cm",
+        "+15 cm"
+      ],
+      "answer": 2,
+      "explanation": "1/v2 = 1/20 + 1/5 = 1/4 per cm."
+    },
+    {
+      "question": "Thin lenses in air have powers 10 D and 5 D, separated by 0.05 m. Equivalent power is:",
+      "options": [
+        "12.5 D",
+        "15 D",
+        "17.5 D",
+        "2.5 D"
+      ],
+      "answer": 0,
+      "explanation": "P = 10 + 5 - 0.05 x 10 x 5 = 12.5 D."
+    },
+    {
+      "question": "With the 10 D lens first in that system, parallel light meets this far beyond the second lens:",
+      "options": [
+        "8 cm",
+        "10 cm",
+        "20 cm",
+        "4 cm"
+      ],
+      "answer": 3,
+      "explanation": "Back focal distance = (1 - 0.05 x 10)/12.5 m = 0.04 m, not the effective focal length of 0.08 m."
+    },
+    {
+      "question": "A single air-to-glass spherical surface has n2 = 1.5, R = +20 cm and u = -60 cm. Its image distance is:",
+      "options": [
+        "+60 cm",
+        "+180 cm",
+        "-180 cm",
+        "+40 cm"
+      ],
+      "answer": 1,
+      "explanation": "1.5/v = 0.5/20 - 1/60 = 1/120 per cm; v = +180 cm in the extended glass medium."
+    }
+  ]
+}

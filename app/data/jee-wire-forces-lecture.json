@@ -1,0 +1,140 @@
+{
+  "title": "Magnetic forces on wires and parallel currents",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 13",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Force on a current-carrying conductor",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/11-4-magnetic-force-on-a-current-carrying-conductor"
+    },
+    {
+      "title": "OpenStax: Force between two parallel currents",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/12-3-magnetic-force-between-two-parallel-currents"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "From moving charges to the force on a wire",
+      "formula": "dF = I(dl x B_external); straight segment in uniform B: F = I(L x B)",
+      "points": [
+        "Direct the length vector along conventional current, not electron drift.",
+        "Use the external field acting on the chosen wire.",
+        "Force is perpendicular to the current element and magnetic field."
+      ],
+      "script": "Hey, welcome back. Last time, a magnetic field bent the path of a moving charge. Today, many moving charges are inside a conducting wire, and their magnetic forces are transferred to the conductor. The wire can bend or move. For a tiny current element, the force is I times d l cross the external magnetic field. The vector d l points along conventional current. In a metal, electrons drift the opposite way, but we do not reverse the current arrow again in this formula. The negative charge and opposite drift direction are already accounted for. For a straight segment in a uniform field, add all the elements to get I times the length vector cross B. Its magnitude is I L B sine theta, where theta is between current direction and field. Picture current to the right with B into the page. Right cross into the page gives upward force on the wire. Reverse only the current and force becomes downward. Reverse only the field and it also becomes downward. Reverse both and the force returns upward. A wire parallel to B has zero magnetic force in this model. Always identify the particular wire and the field produced by other sources. We are not inserting the wire's own field into a formula for its net sideways force. Draw current, field and force as three separate directions before reaching for numbers."
+    },
+    {
+      "title": "A straight-wire calculation and weight balance",
+      "formula": "F = ILB sin(theta); perpendicular upward magnetic support: I = mg/(LB)",
+      "points": [
+        "Use only the wire length actually immersed in the specified field.",
+        "Measure theta between current direction and B.",
+        "Balancing weight requires an upward force, not merely the correct magnitude."
+      ],
+      "script": "Let's calculate a force before building a more complicated circuit. A straight forty centimeter segment carries three amperes in a uniform field of zero point two zero tesla. Current and field are perpendicular. Convert forty centimeters to zero point four zero meters. Multiply three by zero point four by zero point two. The force is zero point two four newtons. Now let the angle between current and field be thirty degrees. Sine thirty is one half, so the force becomes zero point one two newtons. Be careful if a diagram labels the complementary angle: first find the actual angle between current and B. Only the length inside the field belongs in the simple expression. Suppose a horizontal wire has mass twelve grams and length thirty centimeters in a perpendicular field of zero point four zero tesla. Assume negligible forces from connecting leads and use gravitational acceleration ten meters per second squared. Weight is zero point one two newtons. For magnetic force to support the wire, set I L B equal to m g. The required current magnitude is one ampere. Is that the whole answer? Pause and check the arrows. With field into the page, current must be rightward to produce upward support. A leftward current of the same magnitude would add a downward magnetic force instead. A correct number paired with the wrong direction does not describe equilibrium."
+    },
+    {
+      "title": "Bent wires: why the endpoint vector matters",
+      "formula": "Uniform external B and steady I: F = I[(r_end - r_start) x B]; closed loop: net F = 0",
+      "points": [
+        "For a curved wire, add the vector forces rather than scalar magnitudes.",
+        "The endpoint shortcut requires the same uniform B over the whole path.",
+        "A closed loop can have zero net force while still experiencing torque."
+      ],
+      "script": "Does a bent wire require a new force law? No. Add I d l cross B along its path. If current is steady and the external field is uniform everywhere on the chosen wire, I and B can be taken outside the integral. The sum of the tiny displacement vectors is the vector from starting endpoint to finishing endpoint, following conventional current. So the total force is I times that endpoint displacement cross B. It is not I times the curved path length times B. The turns in the path make some vector contributions cancel. Consider an upper semicircular wire of radius ten centimeters, carrying three amperes from its left endpoint to its right endpoint. The entire arc is in a uniform field of zero point two zero tesla into the page. Endpoint displacement is twenty centimeters to the right. The net force is therefore zero point one two newtons upward. Using the semicircle's arc length would incorrectly add magnitudes without respecting their directions. If a complete closed loop lies in the same uniform field, starting and ending points coincide. Its net magnetic force is zero. That does not mean every piece feels zero force, and it does not rule out a torque that turns the loop. We will treat torque in the next class. If the field varies along the wire, or only part of it lies inside the field, apply the integral or sum to the actual field-covered pieces. Do not extend this shortcut beyond its assumptions."
+    },
+    {
+      "title": "Parallel currents: derive attraction and repulsion",
+      "formula": "Long thin parallel wires: B1 at wire 2 = mu0 I1/(2pi d); F/L = mu0 |I1 I2|/(2pi d)",
+      "points": [
+        "First find the source wire's field at the other wire.",
+        "Same-direction currents attract; opposite-direction currents repel.",
+        "Use separation between wire axes and neglect end effects."
+      ],
+      "script": "Now let two wires provide each other's magnetic field. Assume long, straight, thin parallel wires in vacuum or approximately air, with steady currents and negligible end effects. Let their axis separation be d. Wire one produces a field of magnitude mu zero I one divided by two pi d at wire two. This field is perpendicular to the second wire. Multiply by I two and the selected length L to find the force on that length. Force per unit length is mu zero times the product of the current magnitudes divided by two pi d. Where does it point? Draw both currents upward, with wire one on the left. Its field at the right wire is into the page. Upward current cross into-page field points left, toward wire one. The left wire is pushed right. Same-direction currents attract. Reverse one current and both forces point away from the other wire: opposite currents repel. Use five amperes and eight amperes separated by four centimeters. Taking mu zero approximately four pi times ten to the minus seven gives force per meter two times ten to the minus four newtons per meter. On a twenty centimeter portion far from the ends, that is four times ten to the minus five newtons. Doubling either current doubles the force per meter; doubling separation halves it. The wire formula uses axis separation, not the gap between surfaces. Keep the direction check separate from the magnitude calculation."
+    },
+    {
+      "title": "Three wires: balance forces, then test the equilibrium",
+      "formula": "Between same-direction fixed currents: I1/x = I2/(d-x); x = I1 d/(I1+I2)",
+      "points": [
+        "Opposing pairwise forces must be added with signs.",
+        "The zero-field point between unequal same-direction currents lies nearer the smaller current.",
+        "A force-balance point need not be stable."
+      ],
+      "script": "Let's finish with a three-wire problem that rewards a careful sketch. Two long fixed parallel wires carry four amperes and six amperes upward, separated by twenty-five centimeters. Put a third parallel wire between them carrying two amperes upward. Both outer wires attract the middle wire. Let x be its distance from the four ampere wire. Its distance from the six ampere wire is d minus x. For zero sideways net force, the two force magnitudes must match. The common factor mu zero I three divided by two pi cancels, leaving I one over x equals I two over d minus x. Solve to get x equal to I one d divided by I one plus I two. Here x is ten centimeters, so the other distance is fifteen centimeters. Each attraction is one point six times ten to the minus five newtons per meter. The balance point is nearer the smaller current, because a smaller source current needs a shorter distance to give the same field. Now nudge the middle wire slightly right while the outer wires and currents stay fixed. The rightward attraction grows and the leftward attraction weakens. The wire is pushed farther right: this lateral equilibrium is unstable for our same-direction middle current. Force balance and stability are different questions. Reversing the middle current reverses both pairwise forces without moving the zero-force position. Finally, if the two outer currents run in opposite directions, their fields between the wires reinforce rather than cancel. There is no intervening zero-field balance point for a nonzero third current in this ideal model."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Current is rightward and uniform B is into the page. The wire's magnetic force is:",
+      "options": [
+        "Downward",
+        "Upward",
+        "Rightward",
+        "Into the page"
+      ],
+      "answer": 1,
+      "explanation": "The length vector follows conventional current. Right cross into-page B points upward."
+    },
+    {
+      "question": "A 0.40 m wire carries 3 A at 30 degrees to a 0.20 T field. Force magnitude is:",
+      "options": [
+        "0.24 N",
+        "0.06 N",
+        "0.12 N",
+        "0.48 N"
+      ],
+      "answer": 2,
+      "explanation": "F = 3 x 0.40 x 0.20 x sin(30 degrees) = 0.12 N."
+    },
+    {
+      "question": "A 12 g, 0.30 m horizontal wire is supported by B = 0.40 T into the page. With g = 10 m/s^2 and negligible lead forces, current is:",
+      "options": [
+        "1 A leftward",
+        "0.1 A rightward",
+        "10 A rightward",
+        "1 A rightward"
+      ],
+      "answer": 3,
+      "explanation": "I = mg/(LB) = 0.012 x 10/(0.30 x 0.40) = 1 A. Rightward current gives upward support."
+    },
+    {
+      "question": "For a complete closed current loop entirely in a uniform external B, net magnetic force is:",
+      "options": [
+        "Zero, although torque can be nonzero",
+        "Always ILB using the perimeter",
+        "Zero only if each segment is parallel to B",
+        "Always nonzero"
+      ],
+      "answer": 0,
+      "explanation": "The closed sum of displacement vectors is zero. Local forces and torque can still exist."
+    },
+    {
+      "question": "Long parallel wires carry 5 A and 8 A in the same direction at axis separation 0.04 m. Force per meter is approximately:",
+      "options": [
+        "2 x 10^-4 N/m, repulsive",
+        "2 x 10^-4 N/m, attractive",
+        "4 x 10^-5 N/m, attractive",
+        "2 x 10^-3 N/m, attractive"
+      ],
+      "answer": 1,
+      "explanation": "F/L = 2 x 10^-7 x 5 x 8/0.04 = 2 x 10^-4 N/m. Same-direction currents attract."
+    },
+    {
+      "question": "Between fixed upward currents 4 A and 6 A separated by 0.25 m, an upward third current balances at distance from the 4 A wire:",
+      "options": [
+        "0.15 m, stable laterally",
+        "0.125 m, unstable laterally",
+        "0.10 m, unstable laterally",
+        "0.10 m, stable laterally"
+      ],
+      "answer": 2,
+      "explanation": "x = 4 x 0.25/(4+6) = 0.10 m. A small shift strengthens attraction toward the nearer wire, so this lateral balance is unstable."
+    }
+  ]
+}

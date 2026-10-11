@@ -1,0 +1,795 @@
+{
+  "duration": 410.54400000001107,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 80.56800000000216
+    },
+    {
+      "start": 80.56800000000216,
+      "end": 155.83200000000411
+    },
+    {
+      "start": 155.83200000000411,
+      "end": 234.3360000000062
+    },
+    {
+      "start": 234.3360000000062,
+      "end": 314.78400000000835
+    },
+    {
+      "start": 314.78400000000835,
+      "end": 410.54400000001107
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.840000033378601,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.5999999046325684,
+      "end": 5.78000020980835,
+      "text": "Let's make circuit diagrams feel a little less mysterious.",
+      "chapter": 0
+    },
+    {
+      "start": 6.800000190734863,
+      "end": 11.119999885559082,
+      "text": "A resistor network can look tangled while its actual connections are simple.",
+      "chapter": 0
+    },
+    {
+      "start": 12.039999961853027,
+      "end": 16.84000015258789,
+      "text": "Our first tool is the node: all points connected by uninterrupted ideal wire",
+      "chapter": 0
+    },
+    {
+      "start": 16.84000015258789,
+      "end": 18.020000457763672,
+      "text": "share one potential.",
+      "chapter": 0
+    },
+    {
+      "start": 19.360000610351562,
+      "end": 23.194000816345216,
+      "text": "Bending or stretching that wire on the page changes the drawing, not the",
+      "chapter": 0
+    },
+    {
+      "start": 23.194000816345216,
+      "end": 23.6200008392334,
+      "text": "circuit.",
+      "chapter": 0
+    },
+    {
+      "start": 24.5,
+      "end": 26.780000686645508,
+      "text": "Mark each node with a letter before simplifying anything.",
+      "chapter": 0
+    },
+    {
+      "start": 27.6200008392334,
+      "end": 31.31999969482422,
+      "text": "Two resistors are in parallel if their ends connect to the same two nodes.",
+      "chapter": 0
+    },
+    {
+      "start": 32.099998474121094,
+      "end": 36.099998474121094,
+      "text": "They must then have the same potential difference, even if they sit far apart",
+      "chapter": 0
+    },
+    {
+      "start": 36.099998474121094,
+      "end": 36.68000030517578,
+      "text": "in the drawing.",
+      "chapter": 0
+    },
+    {
+      "start": 37.599998474121094,
+      "end": 42.060001373291016,
+      "text": "Two resistors form a simple series path if their shared junction has no other",
+      "chapter": 0
+    },
+    {
+      "start": 42.060001373291016,
+      "end": 42.81999969482422,
+      "text": "conducting branch.",
+      "chapter": 0
+    },
+    {
+      "start": 43.65999984741211,
+      "end": 47.65999984741211,
+      "text": "The same steady current must pass through both, because charge is not",
+      "chapter": 0
+    },
+    {
+      "start": 47.65999984741211,
+      "end": 48.540000915527344,
+      "text": "accumulating there.",
+      "chapter": 0
+    },
+    {
+      "start": 49.29999923706055,
+      "end": 50.7599983215332,
+      "text": "Being next to each other is not enough.",
+      "chapter": 0
+    },
+    {
+      "start": 51.84000015258789,
+      "end": 53.63999938964844,
+      "text": "Imagine three resistors meeting at a junction.",
+      "chapter": 0
+    },
+    {
+      "start": 54.41999816894531,
+      "end": 58.34000015258789,
+      "text": "Current can split, so you cannot automatically add two of those resistances as",
+      "chapter": 0
+    },
+    {
+      "start": 58.34000015258789,
+      "end": 59.099998474121094,
+      "text": "a series pair.",
+      "chapter": 0
+    },
+    {
+      "start": 59.84000015258789,
+      "end": 64.26000213623047,
+      "text": "Our model assumes steady direct current, ideal connecting wires and ohmic",
+      "chapter": 0
+    },
+    {
+      "start": 64.26000213623047,
+      "end": 66.16000366210938,
+      "text": "resistors whose values stay constant.",
+      "chapter": 0
+    },
+    {
+      "start": 66.95999908447266,
+      "end": 69.0199966430664,
+      "text": "Those assumptions let us focus on the connections.",
+      "chapter": 0
+    },
+    {
+      "start": 70,
+      "end": 73.9000015258789,
+      "text": "For JEE, redraw a difficult looking diagram using node labels.",
+      "chapter": 0
+    },
+    {
+      "start": 74.66000366210938,
+      "end": 78.5,
+      "text": "Once the connections are visible, decide which elements really share a current",
+      "chapter": 0
+    },
+    {
+      "start": 78.5,
+      "end": 80.23999786376953,
+      "text": "and which really share a voltage.",
+      "chapter": 0
+    },
+    {
+      "start": 80.23999786376953,
+      "end": 80.56800000000216,
+      "text": "Your pencil has now done half the job.",
+      "chapter": 0
+    },
+    {
+      "start": 80.56800000000216,
+      "end": 83.66799990463473,
+      "text": "Let's derive the series rule from what remains the same.",
+      "chapter": 1
+    },
+    {
+      "start": 84.28800002861239,
+      "end": 87.54800001907564,
+      "text": "In one unbranched path, every resistor carries current I.",
+      "chapter": 1
+    },
+    {
+      "start": 88.02800003814913,
+      "end": 93.2679998092673,
+      "text": "The first voltage drop is I times R one, and the second is I times R two.",
+      "chapter": 1
+    },
+    {
+      "start": 93.2679998092673,
+      "end": 96.29723132089684,
+      "text": "Adding the drops gives the total voltage as I times the sum of the",
+      "chapter": 1
+    },
+    {
+      "start": 96.29723132089684,
+      "end": 96.84800068664767,
+      "text": "resistances.",
+      "chapter": 1
+    },
+    {
+      "start": 97.40800015259005,
+      "end": 100.88799969482638,
+      "text": "So the equivalent resistance is R one plus R two.",
+      "chapter": 1
+    },
+    {
+      "start": 100.88799969482638,
+      "end": 105.56800000000216,
+      "text": "This is why series resistance increases: at a given total voltage, the single",
+      "chapter": 1
+    },
+    {
+      "start": 105.56800000000216,
+      "end": 106.80799977112032,
+      "text": "path carries less current.",
+      "chapter": 1
+    },
+    {
+      "start": 107.50800053405978,
+      "end": 111.7079993896506,
+      "text": "Put three ohms and six ohms in series across an ideal eighteen volt source.",
+      "chapter": 1
+    },
+    {
+      "start": 112.4880000762961,
+      "end": 116.26800076294161,
+      "text": "The equivalent resistance is nine ohms, so the current is two amperes.",
+      "chapter": 1
+    },
+    {
+      "start": 116.94800106811739,
+      "end": 118.74800030517794,
+      "text": "The drops are six volts and twelve volts.",
+      "chapter": 1
+    },
+    {
+      "start": 119.54799954223849,
+      "end": 122.00799862671114,
+      "text": "Pause and check: they add back to eighteen.",
+      "chapter": 1
+    },
+    {
+      "start": 122.00799862671114,
+      "end": 125.84799877929903,
+      "text": "The larger resistance receives the larger drop because the current is common.",
+      "chapter": 1
+    },
+    {
+      "start": 126.52799908447481,
+      "end": 130.48799816894746,
+      "text": "For two series resistors, voltage across the second equals the total voltage",
+      "chapter": 1
+    },
+    {
+      "start": 130.48799816894746,
+      "end": 133.22799984741425,
+      "text": "multiplied by R two divided by their sum.",
+      "chapter": 1
+    },
+    {
+      "start": 133.78800122070527,
+      "end": 135.4280006103537,
+      "text": "This is the voltage divider formula.",
+      "chapter": 1
+    },
+    {
+      "start": 135.75799862671113,
+      "end": 139.28800122070527,
+      "text": "It assumes no extra conducting branch draws current from the middle junction.",
+      "chapter": 1
+    },
+    {
+      "start": 140.24800030517792,
+      "end": 144.08800045776582,
+      "text": "Attach a load there, and the circuit changes; the original divider formula is",
+      "chapter": 1
+    },
+    {
+      "start": 144.08800045776582,
+      "end": 144.84799877929902,
+      "text": "no longer enough.",
+      "chapter": 1
+    },
+    {
+      "start": 145.70799938965058,
+      "end": 148.08799664306855,
+      "text": "Notice also that charge is not used up by the first resistor.",
+      "chapter": 1
+    },
+    {
+      "start": 148.96800152588105,
+      "end": 152.18800274658417,
+      "text": "Current remains the same, while electrical energy per unit charge is",
+      "chapter": 1
+    },
+    {
+      "start": 152.18800274658417,
+      "end": 153.18800274658417,
+      "text": "transferred along the path.",
+      "chapter": 1
+    },
+    {
+      "start": 153.9280006103537,
+      "end": 155.83200000000411,
+      "text": "Always write the common current first, then calculate each drop.",
+      "chapter": 1
+    },
+    {
+      "start": 155.83200000000411,
+      "end": 158.69199989509994,
+      "text": "Now give charge two paths between the same nodes.",
+      "chapter": 2
+    },
+    {
+      "start": 159.43199990463668,
+      "end": 161.51199982834274,
+      "text": "Each branch experiences the same voltage V.",
+      "chapter": 2
+    },
+    {
+      "start": 162.05199979019577,
+      "end": 164.2319996185344,
+      "text": "Its current is V divided by its resistance.",
+      "chapter": 2
+    },
+    {
+      "start": 164.93200038147384,
+      "end": 169.53199980926925,
+      "text": "The total current is the sum of those branch currents, so I total equals V",
+      "chapter": 2
+    },
+    {
+      "start": 169.53199980926925,
+      "end": 172.77200053406173,
+      "text": "times one over R one plus one over R two.",
+      "chapter": 2
+    },
+    {
+      "start": 172.77200053406173,
+      "end": 176.41199992371017,
+      "text": "Divide by V and we obtain the reciprocal rule for equivalent resistance.",
+      "chapter": 2
+    },
+    {
+      "start": 177.0519993133586,
+      "end": 181.19200061035568,
+      "text": "For two branches, this becomes the product of the resistances divided by their",
+      "chapter": 2
+    },
+    {
+      "start": 181.19200061035568,
+      "end": 181.41199992371017,
+      "text": "sum.",
+      "chapter": 2
+    },
+    {
+      "start": 182.07199977112228,
+      "end": 184.8520004577678,
+      "text": "Take four ohms and twelve ohms in parallel across twelve volts.",
+      "chapter": 2
+    },
+    {
+      "start": 185.27200053406173,
+      "end": 189.29199908447677,
+      "text": "The currents are three amperes and one ampere, giving four amperes total.",
+      "chapter": 2
+    },
+    {
+      "start": 190.172000152592,
+      "end": 193.63199923706466,
+      "text": "Equivalent resistance is therefore twelve divided by four, or three ohms.",
+      "chapter": 2
+    },
+    {
+      "start": 194.37200091553146,
+      "end": 198.37200091553146,
+      "text": "Check the scale: three is smaller than four, the smaller branch resistance.",
+      "chapter": 2
+    },
+    {
+      "start": 199.0120003051799,
+      "end": 202.37200091553146,
+      "text": "An extra conducting path increases total current at fixed voltage.",
+      "chapter": 2
+    },
+    {
+      "start": 203.2719986267131,
+      "end": 205.611998779301,
+      "text": "Current division follows the inverse resistance ratio.",
+      "chapter": 2
+    },
+    {
+      "start": 206.3520004577678,
+      "end": 209.9319984741252,
+      "text": "Here, the four ohm branch carries three times the current in the twelve ohm",
+      "chapter": 2
+    },
+    {
+      "start": 209.9319984741252,
+      "end": 210.23200152588302,
+      "text": "branch.",
+      "chapter": 2
+    },
+    {
+      "start": 210.9319984741252,
+      "end": 214.37200091553146,
+      "text": "Do not divide the current equally unless the branch resistances are equal.",
+      "chapter": 2
+    },
+    {
+      "start": 215.15199969482833,
+      "end": 218.63199923706466,
+      "text": "If total current is given instead of voltage, current in the first branch",
+      "chapter": 2
+    },
+    {
+      "start": 218.63199923706466,
+      "end": 223.25199816894943,
+      "text": "equals total current times R two divided by R one plus R two.",
+      "chapter": 2
+    },
+    {
+      "start": 223.25199816894943,
+      "end": 225.111998779301,
+      "text": "The other resistance appears in the numerator.",
+      "chapter": 2
+    },
+    {
+      "start": 226.0120003051799,
+      "end": 228.9120018310588,
+      "text": "Derive that result from common voltage whenever memory feels uncertain.",
+      "chapter": 2
+    },
+    {
+      "start": 229.75199816894943,
+      "end": 233.45200274658615,
+      "text": "Remember the contrast from our series example: series shares current and",
+      "chapter": 2
+    },
+    {
+      "start": 233.45200274658615,
+      "end": 234.3360000000062,
+      "text": "divides voltage; parallel shares voltage and divides current.",
+      "chapter": 2
+    },
+    {
+      "start": 234.3360000000062,
+      "end": 236.57600000954295,
+      "text": "Let's solve a full mixed circuit together.",
+      "chapter": 3
+    },
+    {
+      "start": 237.21600011444713,
+      "end": 241.57599977112437,
+      "text": "An ideal twelve volt source supplies a four ohm resistor in series with a",
+      "chapter": 3
+    },
+    {
+      "start": 241.57599977112437,
+      "end": 243.49599984741832,
+      "text": "parallel pair of six ohms and three ohms.",
+      "chapter": 3
+    },
+    {
+      "start": 244.41599992371226,
+      "end": 245.37599996185924,
+      "text": "Start with the parallel group.",
+      "chapter": 3
+    },
+    {
+      "start": 246.15599969483043,
+      "end": 249.75600007630015,
+      "text": "Six times three divided by six plus three gives two ohms.",
+      "chapter": 3
+    },
+    {
+      "start": 250.516000305182,
+      "end": 254.11600068665172,
+      "text": "Add the four ohm series resistor and the total becomes six ohms.",
+      "chapter": 3
+    },
+    {
+      "start": 254.87600091553355,
+      "end": 258.3560004577699,
+      "text": "Total current is twelve divided by six, or two amperes.",
+      "chapter": 3
+    },
+    {
+      "start": 258.9959998474183,
+      "end": 259.87600091553355,
+      "text": "Now work backward.",
+      "chapter": 3
+    },
+    {
+      "start": 260.31599954224254,
+      "end": 263.0559993133607,
+      "text": "The four ohm resistor has a drop of eight volts.",
+      "chapter": 3
+    },
+    {
+      "start": 263.3560004577699,
+      "end": 267.55600122070933,
+      "text": "The parallel group has the remaining four volts, which is also two amperes",
+      "chapter": 3
+    },
+    {
+      "start": 267.55600122070933,
+      "end": 268.4959998474183,
+      "text": "times two ohms.",
+      "chapter": 3
+    },
+    {
+      "start": 269.21600106812144,
+      "end": 271.3960013732972,
+      "text": "Every branch of that group receives four volts.",
+      "chapter": 3
+    },
+    {
+      "start": 272.1559996948304,
+      "end": 275.79599908447886,
+      "text": "Current in the six ohm branch is two thirds of an ampere; current in the three",
+      "chapter": 3
+    },
+    {
+      "start": 275.79599908447886,
+      "end": 277.1760001525941,
+      "text": "ohm branch is four thirds.",
+      "chapter": 3
+    },
+    {
+      "start": 277.7559981689515,
+      "end": 279.79599908447886,
+      "text": "Add them and you recover two amperes.",
+      "chapter": 3
+    },
+    {
+      "start": 280.455998931891,
+      "end": 281.79599908447886,
+      "text": "Now check energy transfer.",
+      "chapter": 3
+    },
+    {
+      "start": 282.455998931891,
+      "end": 285.3360000000062,
+      "text": "Power supplied is twelve times two, or twenty four watts.",
+      "chapter": 3
+    },
+    {
+      "start": 285.9359984741273,
+      "end": 288.3960013732972,
+      "text": "The series resistor dissipates sixteen watts.",
+      "chapter": 3
+    },
+    {
+      "start": 288.87600091553355,
+      "end": 292.6990763322941,
+      "text": "The parallel branches dissipate eight thirds and sixteen thirds watts,",
+      "chapter": 3
+    },
+    {
+      "start": 292.6990763322941,
+      "end": 293.13599923706676,
+      "text": "totaling",
+      "chapter": 3
+    },
+    {
+      "start": 293.13599923706676,
+      "end": 293.71600106812144,
+      "text": "eight watts.",
+      "chapter": 3
+    },
+    {
+      "start": 293.71600106812144,
+      "end": 297.1760001525941,
+      "text": "Sixteen plus eight returns twenty four.",
+      "chapter": 3
+    },
+    {
+      "start": 297.1760001525941,
+      "end": 301.4811304998215,
+      "text": "Three independent checks now agree: voltage drops, branch current sum and",
+      "chapter": 3
+    },
+    {
+      "start": 301.4811304998215,
+      "end": 301.77600244141246,
+      "text": "power",
+      "chapter": 3
+    },
+    {
+      "start": 301.77600244141246,
+      "end": 302.136003051764,
+      "text": "balance.",
+      "chapter": 3
+    },
+    {
+      "start": 302.7559981689515,
+      "end": 307.016000305182,
+      "text": "For JEE, don't stop at equivalent resistance when the question asks about an",
+      "chapter": 3
+    },
+    {
+      "start": 307.016000305182,
+      "end": 307.77600244141246,
+      "text": "individual resistor.",
+      "chapter": 3
+    },
+    {
+      "start": 308.8559966430726,
+      "end": 313.0359969482484,
+      "text": "Simplifying moves inward toward the total; recovering branch quantities moves",
+      "chapter": 3
+    },
+    {
+      "start": 313.0359969482484,
+      "end": 314.5960021362367,
+      "text": "outward toward the original circuit.",
+      "chapter": 3
+    },
+    {
+      "start": 314.78400000000835,
+      "end": 317.96400006676555,
+      "text": "Our final skill is handling a changed connection.",
+      "chapter": 4
+    },
+    {
+      "start": 318.66400011444927,
+      "end": 321.3239999618614,
+      "text": "An open switch interrupts a conducting path.",
+      "chapter": 4
+    },
+    {
+      "start": 322.0039997902,
+      "end": 326.8829742707067,
+      "text": "In the steady ideal model, current in that open branch is zero, but the",
+      "chapter": 4
+    },
+    {
+      "start": 326.8829742707067,
+      "end": 327.3639999237144,
+      "text": "voltage",
+      "chapter": 4
+    },
+    {
+      "start": 327.3639999237144,
+      "end": 329.4240003433311,
+      "text": "across the gap need not be zero.",
+      "chapter": 4
+    },
+    {
+      "start": 330.3639999237144,
+      "end": 333.9239993896568,
+      "text": "Suppose the twelve ohm branch in our four and twelve ohm parallel example",
+      "chapter": 4
+    },
+    {
+      "start": 333.9239993896568,
+      "end": 334.4239993896568,
+      "text": "opens.",
+      "chapter": 4
+    },
+    {
+      "start": 335.0440002288902,
+      "end": 337.7639995422447,
+      "text": "Only the four ohm branch remains across twelve volts.",
+      "chapter": 4
+    },
+    {
+      "start": 338.66399916077495,
+      "end": 342.743999084481,
+      "text": "Total current falls from four amperes to three, while that surviving branch",
+      "chapter": 4
+    },
+    {
+      "start": 342.743999084481,
+      "end": 344.4239993896568,
+      "text": "still carries three amperes.",
+      "chapter": 4
+    },
+    {
+      "start": 345.44399984742046,
+      "end": 348.94399984742046,
+      "text": "This conclusion relies on an ideal source maintaining twelve volts.",
+      "chapter": 4
+    },
+    {
+      "start": 349.743999084481,
+      "end": 353.0639987793052,
+      "text": "A real cell with internal resistance needs additional analysis.",
+      "chapter": 4
+    },
+    {
+      "start": 353.96400030518413,
+      "end": 356.72399862671733,
+      "text": "Now consider a wire placed directly across a resistor.",
+      "chapter": 4
+    },
+    {
+      "start": 357.62400015259624,
+      "end": 359.4840007629478,
+      "text": "Its endpoints become the same node.",
+      "chapter": 4
+    },
+    {
+      "start": 360.4039989318931,
+      "end": 364.36400183106304,
+      "text": "Voltage across that resistor is zero, so its current is zero for a finite",
+      "chapter": 4
+    },
+    {
+      "start": 364.36400183106304,
+      "end": 364.88399847412944,
+      "text": "resistance.",
+      "chapter": 4
+    },
+    {
+      "start": 365.5839992370689,
+      "end": 369.44399984742046,
+      "text": "This is a bypass, often called a short across the resistor.",
+      "chapter": 4
+    },
+    {
+      "start": 370.1640010681236,
+      "end": 374.5839992370689,
+      "text": "Shorting an entire ideal voltage source instead creates an inconsistent zero",
+      "chapter": 4
+    },
+    {
+      "start": 374.5839992370689,
+      "end": 378.78400000000835,
+      "text": "resistance ideal circuit; it is not a sensible finite current example.",
+      "chapter": 4
+    },
+    {
+      "start": 379.623996337899,
+      "end": 382.4440036621177,
+      "text": "Real shorts are limited by internal and wire resistance.",
+      "chapter": 4
+    },
+    {
+      "start": 383.36400183106304,
+      "end": 388.36400183106304,
+      "text": "Finish with quick scale checks: n equal resistors give n times R in series",
+      "chapter": 4
+    },
+    {
+      "start": 389.0639987793052,
+      "end": 391.123996337899,
+      "text": "and R divided by n in parallel.",
+      "chapter": 4
+    },
+    {
+      "start": 392.08400305176616,
+      "end": 395.5040012207115,
+      "text": "Positive finite parallel resistance must be below the smallest branch.",
+      "chapter": 4
+    },
+    {
+      "start": 395.98399694825054,
+      "end": 400.46400030518413,
+      "text": "A diagram that cannot be reduced by valid series or parallel groups needs a",
+      "chapter": 4
+    },
+    {
+      "start": 400.46400030518413,
+      "end": 403.0440021362388,
+      "text": "more general method, such as Kirchhoff laws.",
+      "chapter": 4
+    },
+    {
+      "start": 403.96400030518413,
+      "end": 408.1440006103599,
+      "text": "Label nodes, redraw after switching, name the fixed quantity, and check your",
+      "chapter": 4
+    },
+    {
+      "start": 408.1440006103599,
+      "end": 409.58400305176616,
+      "text": "result against the physical circuit.",
+      "chapter": 4
+    }
+  ]
+}

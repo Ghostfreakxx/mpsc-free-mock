@@ -1,0 +1,140 @@
+{
+  "title": "Motional emf and eddy currents",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 14",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Motional emf, conceptual reference",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/13-3-motional-emf"
+    },
+    {
+      "title": "OpenStax: Eddy currents, conceptual reference",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/13-5-eddy-currents"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "An open moving rod: voltage without a complete circuit",
+      "formula": "Motional contribution: integral (v x B) dot dl; perpendicular straight rod: |emf| = Blv",
+      "points": [
+        "Rod vertical, v right and B into page: positive charges are pushed upward.",
+        "Charge separation creates an electric field opposing further separation.",
+        "Open-circuit voltage does not imply a sustained circulating current."
+      ],
+      "script": "Hey, welcome back. Last time, a changing magnetic field created an induced emf. Today the field can stay constant while a conductor moves. Picture a vertical metal rod moving to the right through a uniform field into the page. Charges inside the rod share its motion. The magnetic force on a positive charge is q times velocity cross B. Use your right hand: right crossed with into the page points upward. Positive charge accumulates near the upper end, and electrons shift toward the lower end. The upper end becomes positive. This separation creates a downward electric field. In the ideal open-circuit steady state, electric and magnetic forces balance along the rod. The electric field magnitude is v B, so the voltage magnitude across a rod of length l is B l v. This shortcut assumes the rod, velocity and field are mutually perpendicular and the motion is uniform across the rod. More generally, the motional contribution is the line integral of velocity cross B dotted with the length element. Do not multiply three magnitudes when the geometry does not support it. For B equal to zero point five tesla, length zero point four meter and speed three meters per second, the voltage is zero point six volt. There is no complete external circuit, so no sustained circulating current. Voltage and current are different questions. Reverse the motion or the field, and the end polarity reverses."
+    },
+    {
+      "title": "Close the rails: growing area and induced current",
+      "formula": "Area = lx; |dPhi/dt| = Blv; negligible inductance: |I| = Blv/R",
+      "points": [
+        "A sliding rod completes the circuit between fixed conducting rails.",
+        "Moving right increases inward flux through the circuit.",
+        "Current flows up the moving rod and counterclockwise around the loop, viewed facing the page."
+      ],
+      "script": "Now place the same moving rod across two horizontal conducting rails, connected through a resistor on the left. The rod completes a circuit. As it moves right, the enclosed rectangle grows wider. Its area is rod length times position x, so the magnitude of flux is B times l times x. Differentiate with respect to time. Since the rate of change of x is speed v, the induced emf magnitude is B l v. The charge-force picture and the changing-flux picture agree. Let's get direction without guessing. The field goes into the page, and the circuit area grows. Inward flux is increasing. Lenz's law requires an outward induced field, which corresponds to counterclockwise conventional current when viewed facing the page. Along the right-hand moving rod, that current goes upward. Along the top rail it goes left. Use our previous numbers: field zero point five tesla, rod length zero point four meter and speed three meters per second. Emf is zero point six volt. If the total circuit resistance is two ohms, current is zero point three ampere. We assume good sliding contacts, negligible lead resistance beyond the stated total, and negligible self-inductive effects. Immediately after a sudden change, appreciable inductance could alter the current response. In this elementary resistive model, emf divided by resistance is appropriate. Opening the connection stops the sustained loop current even though the moving rod can still develop an end-to-end voltage."
+    },
+    {
+      "title": "Magnetic braking: where the electrical energy comes from",
+      "formula": "|F_mag| = IlB = B^2 l^2 v/R; constant speed: P_pull = Fv = I^2 R",
+      "points": [
+        "Current up the rod with B into page gives a magnetic force left.",
+        "An external pull maintains constant speed against magnetic drag.",
+        "Mechanical input becomes Joule heat under the stated resistive, frictionless approximation."
+      ],
+      "script": "Current is now flowing, so the rod experiences a magnetic force. Current points up and field points into the page. Up crossed with into the page points left. That force opposes the rod's rightward motion. To maintain constant speed, an external agent must pull right with equal magnitude, if friction and other forces are neglected. The magnetic force magnitude is current times rod length times field. Substitute current B l v over R and you obtain B squared times l squared times v over R. Let's calculate with the same circuit. Current is zero point three ampere, length zero point four meter and field zero point five tesla. The drag force is zero point zero six newton. At speed three meters per second, the pulling power is zero point one eight watt. Now calculate electrical heating: current squared times resistance. Zero point three squared times two is also zero point one eight watt. Lovely: the energy accounts match. The resistor's heating comes from mechanical work, not an inexhaustible magnetic energy gift. At constant speed, kinetic energy is unchanged. If you release the rod, this simple model predicts deceleration as mechanical energy is converted into heat. The drag decreases with speed; it is not a fixed friction force. Doubling speed with the other quantities fixed doubles current and force, but quadruples heating power. Those different scaling laws are useful JEE checks."
+    },
+    {
+      "title": "A whole loop entering and leaving a field region",
+      "formula": "Entering or leaving at constant speed: |emf| = Bwv; fully inside a uniform static field: net emf = 0",
+      "points": [
+        "w is the loop dimension transverse to motion.",
+        "Entry increases linked flux; exit decreases it, reversing current.",
+        "During rigid translation fully within uniform B, opposite-side motional contributions cancel."
+      ],
+      "script": "Here is a trap worth slowing down for. A rectangular conducting loop moves right into a region with uniform magnetic field into the page. Does motion always mean a nonzero net emf? No. During entry, the area of the loop inside the field increases. If its vertical side length is w, the overlapping area grows at rate w times v. The emf magnitude is B w v. Inward flux increases, so current is counterclockwise as viewed facing the page. Once the entire rigid loop is inside the uniform, static field, its area and orientation remain fixed. Flux is constant, so net induced emf is zero. Opposite-side motional contributions cancel around the loop. Charges may redistribute locally, but this does not create a sustained loop current in our resistive steady-state model. As the loop exits, inward flux decreases. The current becomes clockwise. Try field zero point four tesla, vertical width zero point three meter and speed two meters per second. Entry or exit emf magnitude is zero point two four volt. With total resistance one point two ohms and negligible inductance, current magnitude is zero point two ampere. Fully inside, current is zero. The ideal abrupt boundaries separate three regimes; real field edges are smoother. Mechanical drag acts while flux is changing, not throughout every uniform-field translation. Check overlap area before using B l v for the net circuit emf."
+    },
+    {
+      "title": "Eddy currents: closed paths within the metal itself",
+      "formula": "Changing linked flux induces circulating currents inside a conductor; heating power is supplied by motion or the field source",
+      "points": [
+        "A solid conducting plate contains many possible closed current paths.",
+        "Slots and insulated laminations interrupt large paths and reduce losses.",
+        "A stationary ordinary conductor in a static field does not continuously generate eddy currents."
+      ],
+      "script": "A circuit does not always need visible wires. A solid metal plate contains many possible closed conducting paths. If linked magnetic flux changes through those paths, circulating currents can form inside the plate. We call them eddy currents. Picture a conducting plate moving through a localized magnetic field. Different parts enter and leave the field region, so the linked flux changes. The induced currents interact with the field and can oppose the motion, converting mechanical energy into heat. This gives magnetic damping without rubbing surfaces together. But do not claim that any metal moving anywhere in a uniform static field must experience eddy-current braking. Geometry and changing linked flux matter. A stationary ordinary conductor in a static field does not continuously generate eddy currents. A changing applied field can induce them even without motion. For transformer cores, unwanted circulating currents waste energy as heat. Thin insulated laminations interrupt large conducting paths and reduce those losses. Slots in a conducting plate can similarly weaken damping by obstructing current paths. These methods reduce currents; they do not abolish electromagnetic induction itself. Induction heating deliberately uses changing fields to transfer energy into a conducting workpiece. The power supply provides that energy. We will not assign one universal B l v circuit to an entire plate: its current distribution depends on shape, conductivity and field variation. Your final checklist is motion geometry, flux change, closed paths, resistance and the energy source. That is how the rod and the plate belong to the same physical story."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A vertical open rod moves right with B into the page. Its upper end becomes:",
+      "options": [
+        "Negative",
+        "Positive",
+        "Necessarily uncharged",
+        "Alternately positive and negative in a static field"
+      ],
+      "answer": 1,
+      "explanation": "For positive charge, v x B points upward. Charge separation makes the upper end positive."
+    },
+    {
+      "question": "B = 0.5 T, rod length 0.4 m and speed 3 m/s are mutually perpendicular. Open-circuit voltage magnitude is:",
+      "options": [
+        "0.06 V",
+        "6 V",
+        "0.6 V",
+        "0 V"
+      ],
+      "answer": 2,
+      "explanation": "|emf| = Blv = 0.5 x 0.4 x 3 = 0.6 V. A complete circuit is not required for charge separation."
+    },
+    {
+      "question": "The moving rod closes a rail circuit of total resistance 2 ohms. For emf 0.6 V and negligible inductance, current magnitude is:",
+      "options": [
+        "0.3 A",
+        "1.2 A",
+        "3 A",
+        "0.03 A"
+      ],
+      "answer": 0,
+      "explanation": "I = |emf|/R = 0.6/2 = 0.3 A."
+    },
+    {
+      "question": "For that circuit at speed 3 m/s, magnetic drag is 0.06 N. Pulling power at constant speed is:",
+      "options": [
+        "0.02 W",
+        "0.54 W",
+        "0.06 W",
+        "0.18 W"
+      ],
+      "answer": 3,
+      "explanation": "P = Fv = 0.06 x 3 = 0.18 W, also I^2R = 0.3^2 x 2."
+    },
+    {
+      "question": "A rigid loop translates wholly within a uniform static field with fixed orientation. Its net motional emf is:",
+      "options": [
+        "Always Bwv",
+        "Zero",
+        "Nonzero because both sides move",
+        "Infinite if resistance is zero"
+      ],
+      "answer": 1,
+      "explanation": "Flux remains constant and opposite-side motional contributions cancel around the loop."
+    },
+    {
+      "question": "Why do insulated laminations reduce eddy-current losses in a core?",
+      "options": [
+        "They remove the magnetic field entirely",
+        "They increase every possible current loop's area",
+        "They interrupt large conducting paths",
+        "They make the material a perfect conductor"
+      ],
+      "answer": 2,
+      "explanation": "Insulation between thin laminations obstructs large circulating paths, reducing induced currents and associated heating."
+    }
+  ]
+}

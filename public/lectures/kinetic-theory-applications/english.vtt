@@ -1,0 +1,301 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.740
+Welcome back.
+
+00:00:01.340 --> 00:00:05.240
+In this class we will work through wall collision derivation, temperature and
+
+00:00:05.240 --> 00:00:09.520
+rms speed, equipartition, heat capacities and mean free path.
+
+00:00:10.100 --> 00:00:13.640
+An ideal gas is a model of many tiny particles in random motion.
+
+00:00:14.380 --> 00:00:18.040
+Their own volume is negligible compared with the container, and intermolecular
+
+00:00:18.040 --> 00:00:20.440
+forces are neglected except during collisions.
+
+00:00:21.520 --> 00:00:25.400
+Assume elastic wall collisions and an equilibrium gas with isotropic random
+
+00:00:25.400 --> 00:00:27.200
+velocities and no overall flow.
+
+00:00:28.260 --> 00:00:31.740
+These assumptions make the derivation manageable, but they become poor
+
+00:00:31.740 --> 00:00:34.880
+approximations in dense gases or near condensation.
+
+00:00:35.940 --> 00:00:40.920
+Use PV equals N Boltzmann constant T when counting molecules and PV equals nRT
+
+00:00:40.920 --> 00:00:41.920
+when counting moles.
+
+00:00:42.660 --> 00:00:47.480
+They agree because N equals n Avogadro constant and R equals Avogadro constant
+
+00:00:47.480 --> 00:00:48.340
+Boltzmann constant.
+
+00:00:49.100 --> 00:00:53.542
+Number density N/V has units of molecules per cubic metre; mass density rho
+
+00:00:53.542 --> 00:00:53.720
+has
+
+00:00:53.720 --> 00:00:55.240
+units of kilograms per cubic metre.
+
+00:00:55.840 --> 00:01:00.720
+A factor of Avogadro's number cannot be silently exchanged for a mass factor.
+
+00:01:00.720 --> 00:01:04.440
+Absolute temperature belongs in these equations; a Celsius reading must first
+
+00:01:04.440 --> 00:01:05.360
+be converted to kelvin.
+
+00:01:06.420 --> 00:01:10.460
+Take a cube of side L and a molecule of mass m with x component of velocity
+
+00:01:10.460 --> 00:01:11.000
+v_x.
+
+00:01:11.820 --> 00:01:15.900
+At an elastic collision with the wall normal to x, the component reverses.
+
+00:01:16.220 --> 00:01:19.040
+Momentum delivered to that wall has magnitude 2m|v_x|.
+
+00:01:19.040 --> 00:01:24.060
+The time between successive collisions with the same wall is
+
+00:01:24.060 --> 00:01:27.480
+2L/|v_x|.
+
+00:01:27.480 --> 00:01:32.180
+Divide momentum transfer by time to get the average force contribution m v_x
+
+00:01:32.180 --> 00:01:36.380
+squared/L; negative v_x gives the same squared contribution.
+
+00:01:37.220 --> 00:01:40.240
+Sum over N molecules and divide by wall area L squared.
+
+00:01:40.960 --> 00:01:45.560
+Pressure is m sum(v_x squared)/L cubed, or N m
+
+00:01:45.560 --> 00:01:48.700
+average(v_x squared)/V.
+
+00:01:48.700 --> 00:01:52.640
+Isotropic equilibrium gives average(v_x squared) equals average(v_y squared)
+
+00:01:52.640 --> 00:01:57.320
+equals average(v_z squared) equals average(v squared)/3.
+
+00:01:57.320 --> 00:02:03.307
+Therefore P equals N m average(v squared)/(3V) equals rho
+
+00:02:03.307 --> 00:02:05.320
+v_rms squared/3.
+
+00:02:05.320 --> 00:02:09.720
+The factor one third comes from three dimensional isotropy, not from an
+
+00:02:09.720 --> 00:02:10.140
+arbitrary correction.
+
+00:02:10.600 --> 00:02:15.020
+This collision picture is an idealization; equilibrium averaging is what lets
+
+00:02:15.020 --> 00:02:18.220
+irregular microscopic impacts produce a steady measured pressure.
+
+00:02:19.056 --> 00:02:25.016
+Combine the pressure result with PV equals N Boltzmann constant T.
+
+00:02:25.676 --> 00:02:31.196
+It gives m average(v squared) equals 3Boltzmann constant T,
+
+00:02:31.936 --> 00:02:37.876
+so mean translational kinetic energy per molecule is 3Boltzmann constant
+
+00:02:37.876 --> 00:02:39.856
+T/2.
+
+00:02:39.856 --> 00:02:45.536
+RMS speed is sqrt(3Boltzmann constant T/m), or
+
+00:02:45.536 --> 00:02:51.456
+sqrt(3RT/M) using molar mass M in kilograms
+
+00:02:51.456 --> 00:02:51.896
+per mole.
+
+00:02:53.076 --> 00:02:57.296
+At the same temperature, different ideal gases have equal mean translational
+
+00:02:57.296 --> 00:03:01.696
+energy per molecule but different RMS speeds because their molecular masses
+
+00:03:01.696 --> 00:03:02.056
+differ.
+
+00:03:02.976 --> 00:03:08.836
+For nitrogen at 300 K, M equals 0.028 kilograms per mole and
+
+00:03:08.836 --> 00:03:13.956
+R equals 8.314 give about 517 metres per second.
+
+00:03:13.956 --> 00:03:19.956
+Helium with M equals 0.004 kilograms per mole is the square
+
+00:03:19.956 --> 00:03:22.276
+root of seven times faster at the same temperature.
+
+00:03:23.556 --> 00:03:28.916
+For the same gas, increasing temperature from 300 to 1200 K doubles RMS speed.
+
+00:03:30.096 --> 00:03:34.396
+An equilibrium gas has zero average vector velocity even though its average
+
+00:03:34.396 --> 00:03:35.596
+scalar speed is positive.
+
+00:03:36.556 --> 00:03:41.486
+RMS, mean and most probable speeds are different statistics; the RMS formula
+
+00:03:41.486 --> 00:03:41.616
+is
+
+00:03:41.616 --> 00:03:42.956
+not the value for every molecule.
+
+00:03:43.896 --> 00:03:49.316
+Classical equipartition assigns half Boltzmann constant T per molecule to each
+
+00:03:49.316 --> 00:03:50.856
+active quadratic energy term.
+
+00:03:51.676 --> 00:03:55.016
+With f active degrees of freedom, internal energy is f
+
+00:03:55.016 --> 00:03:59.416
+nRT/2 when f is constant.
+
+00:04:00.496 --> 00:04:05.736
+The molar heat capacity C V is fR/2.
+
+00:04:05.736 --> 00:04:11.456
+For an ideal gas, C P C V equals
+
+00:04:11.456 --> 00:04:17.316
+R, giving gamma equals (f+2)/f.
+
+00:04:17.316 --> 00:04:22.416
+A monatomic gas has three translational degrees and gamma equals 5/3.
+
+00:04:22.416 --> 00:04:27.836
+A rigid diatomic model with vibration inactive usually has five and gamma
+
+00:04:27.836 --> 00:04:29.756
+equals 7/5.
+
+00:04:29.756 --> 00:04:34.236
+A vibrational mode, when fully active classically, has both a kinetic and
+
+00:04:34.796 --> 00:04:35.856
+potential quadratic contribution.
+
+00:04:37.036 --> 00:04:41.216
+Active modes depend on temperature; quantum freezing of modes makes constant f
+
+00:04:41.216 --> 00:04:44.416
+an approximation rather than a universal molecular label.
+
+00:04:45.436 --> 00:04:50.476
+Two moles of monatomic ideal gas warmed by 10 K at fixed volume gain
+
+00:04:50.476 --> 00:04:55.256
+30R joules, about 249.42 J.
+
+00:04:55.256 --> 00:04:59.236
+Constant volume heat equals that gain because boundary work is zero.
+
+00:05:00.176 --> 00:05:05.773
+At constant pressure the same rise also requires expansion work, so heat uses
+
+00:05:05.773 --> 00:05:05.846
+C
+
+00:05:05.846 --> 00:05:07.456
+P instead.
+
+00:05:07.656 --> 00:05:11.896
+For a dilute equilibrium gas of identical hard sphere molecules with diameter
+
+00:05:11.896 --> 00:05:16.956
+d, the mean free path is 1/(the square root of two pi d squared
+
+00:05:16.956 --> 00:05:17.356
+number_density).
+
+00:05:17.356 --> 00:05:21.636
+The square root factor accounts for relative molecular motion.
+
+00:05:22.456 --> 00:05:26.116
+This is an average distance between collisions, not a fixed distance every
+
+00:05:26.116 --> 00:05:26.956
+particle must travel.
+
+00:05:28.096 --> 00:05:31.796
+Molecules per volume, not moles per volume or mass density, enter the formula
+
+00:05:31.796 --> 00:05:32.256
+directly.
+
+00:05:32.876 --> 00:05:38.696
+With d equals 3.0 times ten to the power of negative 10 m and number density
+
+00:05:38.696 --> 00:05:44.536
+2.5 times 10 squared5 per cubic metre, the mean free path is about 1.0
+
+00:05:44.536 --> 00:05:47.096
+times ten to the power of negative 7 m.
+
+00:05:47.096 --> 00:05:51.000
+At fixed temperature and diameter, doubling pressure doubles number density
+
+00:05:51.000 --> 00:05:51.156
+and
+
+00:05:51.156 --> 00:05:52.236
+halves mean free path.
+
+00:05:52.936 --> 00:05:57.476
+At fixed pressure, increasing absolute temperature reduces number density and
+
+00:05:57.476 --> 00:05:58.096
+increases it.
+
+00:05:58.096 --> 00:06:03.016
+Separately, compression work against a constant external pressure is external
+
+00:06:03.016 --> 00:06:08.436
+pressure the volume change: compressing from 3 to 1 litres at 100000
+
+00:06:08.436 --> 00:06:11.676
+Pa gives 200 J work by the gas.
+
+00:06:12.556 --> 00:06:17.116
+Collision distance and macroscopic work are different quantities linked by a
+
+00:06:17.116 --> 00:06:17.676
+consistent gas model.

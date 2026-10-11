@@ -1,0 +1,843 @@
+{
+  "duration": 413.20800000001117,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 83.01600000000225
+    },
+    {
+      "start": 83.01600000000225,
+      "end": 164.78400000000445
+    },
+    {
+      "start": 164.78400000000445,
+      "end": 245.64000000000664
+    },
+    {
+      "start": 245.64000000000664,
+      "end": 322.29600000000863
+    },
+    {
+      "start": 322.29600000000863,
+      "end": 413.20800000001117
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.4800000190734863,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.1600000858306885,
+      "end": 5.935897313631498,
+      "text": "A bridge is a clever way to measure resistance by finding a balance rather",
+      "chapter": 0
+    },
+    {
+      "start": 5.935897313631498,
+      "end": 6.139999866485596,
+      "text": "than",
+      "chapter": 0
+    },
+    {
+      "start": 6.139999866485596,
+      "end": 7.639999866485596,
+      "text": "measuring a large current accurately.",
+      "chapter": 0
+    },
+    {
+      "start": 8.520000457763672,
+      "end": 9.9399995803833,
+      "text": "Let's label the circuit clearly.",
+      "chapter": 0
+    },
+    {
+      "start": 10.739999771118164,
+      "end": 13.5600004196167,
+      "text": "The source connects between left node A and right node D.",
+      "chapter": 0
+    },
+    {
+      "start": 14.380000114440918,
+      "end": 18.84000015258789,
+      "text": "The upper path contains resistor P from A to B, then Q from B to D.",
+      "chapter": 0
+    },
+    {
+      "start": 19.459999084472656,
+      "end": 23.600000381469727,
+      "text": "The lower path contains R from A to C, then S from C to D.",
+      "chapter": 0
+    },
+    {
+      "start": 24.040000915527344,
+      "end": 26.979999542236328,
+      "text": "A galvanometer connects the two midpoints B and C.",
+      "chapter": 0
+    },
+    {
+      "start": 27.479999542236328,
+      "end": 30.219999313354492,
+      "text": "If their potentials are different, current can flow through that detector.",
+      "chapter": 0
+    },
+    {
+      "start": 31.079999923706055,
+      "end": 34.68000030517578,
+      "text": "At balance, their potentials are equal, so detector current is zero.",
+      "chapter": 0
+    },
+    {
+      "start": 35.5,
+      "end": 37.52000045776367,
+      "text": "This does not mean current is zero everywhere.",
+      "chapter": 0
+    },
+    {
+      "start": 38.13999938964844,
+      "end": 41.040000915527344,
+      "text": "Both outer paths can still carry current and dissipate power.",
+      "chapter": 0
+    },
+    {
+      "start": 42,
+      "end": 45.18000030517578,
+      "text": "Think of two voltage dividers whose middle points reach the same potential.",
+      "chapter": 0
+    },
+    {
+      "start": 45.97999954223633,
+      "end": 49.7400016784668,
+      "text": "Only then can the detector branch be omitted while calculating the outer path",
+      "chapter": 0
+    },
+    {
+      "start": 49.7400016784668,
+      "end": 50.08000183105469,
+      "text": "currents.",
+      "chapter": 0
+    },
+    {
+      "start": 51.279998779296875,
+      "end": 54.58000183105469,
+      "text": "Before balance is established, removing it generally changes the circuit.",
+      "chapter": 0
+    },
+    {
+      "start": 54.97999954223633,
+      "end": 59.79999923706055,
+      "text": "Our model uses positive ohmic resistances, ideal connecting wires and a",
+      "chapter": 0
+    },
+    {
+      "start": 59.79999923706055,
+      "end": 61.599998474121094,
+      "text": "sensitive galvanometer with finite resistance.",
+      "chapter": 0
+    },
+    {
+      "start": 62.619998931884766,
+      "end": 64.83999633789062,
+      "text": "The source voltage is nonzero.",
+      "chapter": 0
+    },
+    {
+      "start": 64.83999633789062,
+      "end": 68.58000183105469,
+      "text": "A broken detector circuit could also show zero current, but that is not",
+      "chapter": 0
+    },
+    {
+      "start": 68.58000183105469,
+      "end": 69.44000244140625,
+      "text": "evidence of balance.",
+      "chapter": 0
+    },
+    {
+      "start": 70.16000366210938,
+      "end": 74.23999786376953,
+      "text": "In a question or an experiment, identify the source diagonal and the detector",
+      "chapter": 0
+    },
+    {
+      "start": 74.23999786376953,
+      "end": 77.58000183105469,
+      "text": "diagonal, then confirm which pair of nodes has equal potential.",
+      "chapter": 0
+    },
+    {
+      "start": 78.26000213623047,
+      "end": 82.16000366210938,
+      "text": "That node reasoning is more reliable than memorizing the shape of a diamond.",
+      "chapter": 0
+    },
+    {
+      "start": 83.01600000000225,
+      "end": 86.01600000000225,
+      "text": "Let's derive the balance equation from the labeled circuit.",
+      "chapter": 1
+    },
+    {
+      "start": 86.77599999046551,
+      "end": 91.73600026703106,
+      "text": "At a genuine null, the upper path carries one current through P and Q, and the",
+      "chapter": 1
+    },
+    {
+      "start": 91.73600026703106,
+      "end": 93.97600003814922,
+      "text": "lower path carries another through R and S.",
+      "chapter": 1
+    },
+    {
+      "start": 94.8759996566795,
+      "end": 99.4360000762962,
+      "text": "Equal midpoint potentials mean the drop from A to B equals the drop from A to",
+      "chapter": 1
+    },
+    {
+      "start": 99.4360000762962,
+      "end": 99.69600030517803,
+      "text": "C.",
+      "chapter": 1
+    },
+    {
+      "start": 100.41599961853252,
+      "end": 103.99599954223858,
+      "text": "Therefore upper current times P equals lower current times R.",
+      "chapter": 1
+    },
+    {
+      "start": 104.89599916076885,
+      "end": 109.19600030517803,
+      "text": "Likewise, the drops from B to D and C to D are equal, giving upper current",
+      "chapter": 1
+    },
+    {
+      "start": 109.19600030517803,
+      "end": 111.89599916076885,
+      "text": "times Q equal to lower current times S.",
+      "chapter": 1
+    },
+    {
+      "start": 111.89599916076885,
+      "end": 114.41599961853252,
+      "text": "Divide the first equation by the second.",
+      "chapter": 1
+    },
+    {
+      "start": 115.03600045776592,
+      "end": 118.57600137329327,
+      "text": "The currents cancel, leaving P over Q equal to R over S.",
+      "chapter": 1
+    },
+    {
+      "start": 119.3159992370628,
+      "end": 121.93599816894756,
+      "text": "Equivalently, P times S equals Q times R.",
+      "chapter": 1
+    },
+    {
+      "start": 122.4759990844749,
+      "end": 126.13599893188702,
+      "text": "The cancellation explains why source voltage and detector resistance do not",
+      "chapter": 1
+    },
+    {
+      "start": 126.13599893188702,
+      "end": 127.77599832153545,
+      "text": "appear in the ideal balance ratio.",
+      "chapter": 1
+    },
+    {
+      "start": 128.7160007629417,
+      "end": 133.45599862671122,
+      "text": "Let's use P equal to two ohms, Q equal to three ohms and R equal to four ohms.",
+      "chapter": 1
+    },
+    {
+      "start": 134.31599923706278,
+      "end": 136.135998931887,
+      "text": "Balance requires S equal to six ohms.",
+      "chapter": 1
+    },
+    {
+      "start": 136.135998931887,
+      "end": 140.7467687417077,
+      "text": "Across a ten volt source, the upper path carries two amperes and the lower",
+      "chapter": 1
+    },
+    {
+      "start": 140.7467687417077,
+      "end": 140.99599954223856,
+      "text": "path",
+      "chapter": 1
+    },
+    {
+      "start": 140.99599954223856,
+      "end": 141.8760006103538,
+      "text": "one ampere.",
+      "chapter": 1
+    },
+    {
+      "start": 142.19600030517802,
+      "end": 144.31599923706278,
+      "text": "Their A to midpoint drops are both four volts.",
+      "chapter": 1
+    },
+    {
+      "start": 145.135998931887,
+      "end": 149.93599816894755,
+      "text": "Taking D as zero potential, B and C are both at six volts, so the detector has",
+      "chapter": 1
+    },
+    {
+      "start": 149.93599816894755,
+      "end": 151.03599664306864,
+      "text": "no potential difference.",
+      "chapter": 1
+    },
+    {
+      "start": 151.63600274658427,
+      "end": 155.40215124042442,
+      "text": "The equivalent resistance is five ohms in parallel with ten ohms, or ten",
+      "chapter": 1
+    },
+    {
+      "start": 155.40215124042442,
+      "end": 155.71599694824442,
+      "text": "thirds",
+      "chapter": 1
+    },
+    {
+      "start": 155.71599694824442,
+      "end": 156.2959987792991,
+      "text": "of an ohm.",
+      "chapter": 1
+    },
+    {
+      "start": 156.9560024414085,
+      "end": 158.6760036621116,
+      "text": "Total source current is three amperes.",
+      "chapter": 1
+    },
+    {
+      "start": 159.23600122070536,
+      "end": 163.1636929493462,
+      "text": "Check the arm labels before writing any ratio; another drawing may use the",
+      "chapter": 1
+    },
+    {
+      "start": 163.1636929493462,
+      "end": 163.3760006103538,
+      "text": "same",
+      "chapter": 1
+    },
+    {
+      "start": 163.3760006103538,
+      "end": 164.55600091552958,
+      "text": "letters in different positions.",
+      "chapter": 1
+    },
+    {
+      "start": 164.78400000000445,
+      "end": 169.58400019073932,
+      "text": "A metre bridge replaces one resistor pair with two parts of the same uniform",
+      "chapter": 2
+    },
+    {
+      "start": 169.58400019073932,
+      "end": 170.40399988556354,
+      "text": "resistance wire.",
+      "chapter": 2
+    },
+    {
+      "start": 171.46399982834308,
+      "end": 175.9839998092696,
+      "text": "Put unknown resistance X in the left upper gap and known resistance S in the",
+      "chapter": 2
+    },
+    {
+      "start": 175.9839998092696,
+      "end": 176.6439996566817,
+      "text": "right upper gap.",
+      "chapter": 2
+    },
+    {
+      "start": 177.26399954224078,
+      "end": 181.10399969482867,
+      "text": "Their common junction connects through the galvanometer to a sliding contact,",
+      "chapter": 2
+    },
+    {
+      "start": 181.10399969482867,
+      "end": 183.06400068664996,
+      "text": "called the jockey, on the lower wire.",
+      "chapter": 2
+    },
+    {
+      "start": 183.9239993896529,
+      "end": 185.7439990844771,
+      "text": "The source connects across the two ends.",
+      "chapter": 2
+    },
+    {
+      "start": 186.62400015259234,
+      "end": 190.88400038147418,
+      "text": "Let the full wire length be L, and let the jockey be distance l from the left",
+      "chapter": 2
+    },
+    {
+      "start": 190.88400038147418,
+      "end": 192.60399969482867,
+      "text": "end, the side containing X.",
+      "chapter": 2
+    },
+    {
+      "start": 192.60399969482867,
+      "end": 197.40399893188922,
+      "text": "At null, the Wheatstone ratio gives X over S equal to the resistance of the",
+      "chapter": 2
+    },
+    {
+      "start": 197.40399893188922,
+      "end": 199.62400015259234,
+      "text": "left wire part divided by that of the right part.",
+      "chapter": 2
+    },
+    {
+      "start": 200.4239993896529,
+      "end": 204.4840007629439,
+      "text": "For a uniform wire at a uniform temperature, resistance equals resistivity",
+      "chapter": 2
+    },
+    {
+      "start": 204.4840007629439,
+      "end": 206.083999237065,
+      "text": "times length divided by area.",
+      "chapter": 2
+    },
+    {
+      "start": 206.90399893188922,
+      "end": 211.18400152588336,
+      "text": "Resistivity and cross sectional area cancel in the ratio, leaving l divided by",
+      "chapter": 2
+    },
+    {
+      "start": 211.18400152588336,
+      "end": 211.9840007629439,
+      "text": "L minus l.",
+      "chapter": 2
+    },
+    {
+      "start": 212.90399893188922,
+      "end": 216.35399969482867,
+      "text": "The familiar one hundred minus l appears only when the total length is one",
+      "chapter": 2
+    },
+    {
+      "start": 216.35399969482867,
+      "end": 218.86400183105914,
+      "text": "hundred centimeters and l uses centimeters too.",
+      "chapter": 2
+    },
+    {
+      "start": 219.50400122070758,
+      "end": 223.40399893188922,
+      "text": "Now take a three ohm known resistance and a null at forty centimeters.",
+      "chapter": 2
+    },
+    {
+      "start": 224.2439990844771,
+      "end": 227.9840007629439,
+      "text": "The unknown is three times forty divided by sixty, giving two ohms.",
+      "chapter": 2
+    },
+    {
+      "start": 228.80399664307086,
+      "end": 230.3439975585982,
+      "text": "Why must it be smaller than the standard?",
+      "chapter": 2
+    },
+    {
+      "start": 230.98399694824664,
+      "end": 233.20399816894977,
+      "text": "Because its corresponding wire segment is shorter.",
+      "chapter": 2
+    },
+    {
+      "start": 233.78400000000445,
+      "end": 235.16399725342242,
+      "text": "This is a quick physical check.",
+      "chapter": 2
+    },
+    {
+      "start": 235.76400335693805,
+      "end": 238.60399969482867,
+      "text": "If you measure l from the other end, the ratio reverses.",
+      "chapter": 2
+    },
+    {
+      "start": 239.4239993896529,
+      "end": 242.28400000000445,
+      "text": "Draw the gap labels and state the measurement end before calculating.",
+      "chapter": 2
+    },
+    {
+      "start": 242.76400335693805,
+      "end": 245.56399877930133,
+      "text": "The uniform wire assumption is doing real work here.",
+      "chapter": 2
+    },
+    {
+      "start": 245.64000000000664,
+      "end": 248.17999996185966,
+      "text": "Let's make the previous example do more work.",
+      "chapter": 3
+    },
+    {
+      "start": 248.97999991417595,
+      "end": 253.4400001907415,
+      "text": "Unknown X is two ohms, standard S is three ohms, and the original balance is",
+      "chapter": 3
+    },
+    {
+      "start": 253.4400001907415,
+      "end": 255.11999954224297,
+      "text": "forty centimeters from the left end.",
+      "chapter": 3
+    },
+    {
+      "start": 255.90000022888847,
+      "end": 259.74000038147636,
+      "text": "Interchange the gap resistances while keeping the same uniform wire and",
+      "chapter": 3
+    },
+    {
+      "start": 259.74000038147636,
+      "end": 261.20000041962334,
+      "text": "measuring from the same left end.",
+      "chapter": 3
+    },
+    {
+      "start": 261.7199999237127,
+      "end": 266.42000068665214,
+      "text": "The new ratio is three over two, so the left segment is sixty centimeters and",
+      "chapter": 3
+    },
+    {
+      "start": 266.42000068665214,
+      "end": 267.5600000763006,
+      "text": "the right forty.",
+      "chapter": 3
+    },
+    {
+      "start": 267.5600000763006,
+      "end": 270.5999990844793,
+      "text": "The ideal balance length becomes L minus the original length.",
+      "chapter": 3
+    },
+    {
+      "start": 271.2199999237127,
+      "end": 275.5399996185369,
+      "text": "Real end resistances can prevent exact complementarity; that mismatch is one",
+      "chapter": 3
+    },
+    {
+      "start": 275.5399996185369,
+      "end": 276.7199999237127,
+      "text": "clue to systematic error.",
+      "chapter": 3
+    },
+    {
+      "start": 277.58000053406425,
+      "end": 281.185129824914,
+      "text": "Now restore X on the left and connect another two ohm resistor in parallel",
+      "chapter": 3
+    },
+    {
+      "start": 281.185129824914,
+      "end": 281.38000167847343,
+      "text": "with",
+      "chapter": 3
+    },
+    {
+      "start": 281.38000167847343,
+      "end": 281.55999816895195,
+      "text": "it.",
+      "chapter": 3
+    },
+    {
+      "start": 282.1600004577703,
+      "end": 285.86000122070976,
+      "text": "The left gap's equivalent resistance is one ohm, while the right gap stays",
+      "chapter": 3
+    },
+    {
+      "start": 285.86000122070976,
+      "end": 286.52000106812187,
+      "text": "three ohms.",
+      "chapter": 3
+    },
+    {
+      "start": 287.23999847412773,
+      "end": 290.8200003051824,
+      "text": "At balance, l over one hundred minus l equals one third.",
+      "chapter": 3
+    },
+    {
+      "start": 290.8200003051824,
+      "end": 295.2199999237127,
+      "text": "Multiply through: three l equals one hundred minus l, giving l equal to twenty",
+      "chapter": 3
+    },
+    {
+      "start": 295.2199999237127,
+      "end": 295.88000167847343,
+      "text": "five centimeters.",
+      "chapter": 3
+    },
+    {
+      "start": 296.88000167847343,
+      "end": 298.2799993896551,
+      "text": "Pause and check the direction of the shift.",
+      "chapter": 3
+    },
+    {
+      "start": 298.7599989318914,
+      "end": 302.680000915534,
+      "text": "The left gap resistance decreased, so its corresponding wire segment must",
+      "chapter": 3
+    },
+    {
+      "start": 302.680000915534,
+      "end": 303.2599989318914,
+      "text": "become shorter.",
+      "chapter": 3
+    },
+    {
+      "start": 303.70000137329765,
+      "end": 307.4199987793035,
+      "text": "The wire did not physically shrink; only the jockey position changed.",
+      "chapter": 3
+    },
+    {
+      "start": 308.11999954224297,
+      "end": 312.0999990844793,
+      "text": "If instead a resistor is added in series in the gap, add the resistances first",
+      "chapter": 3
+    },
+    {
+      "start": 312.0999990844793,
+      "end": 313.6999975586004,
+      "text": "and then solve the new ratio.",
+      "chapter": 3
+    },
+    {
+      "start": 314.44000305176445,
+      "end": 317.8200003051824,
+      "text": "Away from balance, the detector can carry current, and you need full circuit",
+      "chapter": 3
+    },
+    {
+      "start": 317.8200003051824,
+      "end": 319.26000274658867,
+      "text": "analysis to find its magnitude.",
+      "chapter": 3
+    },
+    {
+      "start": 319.8200003051824,
+      "end": 322.29600000000863,
+      "text": "The simple ratio determines a null position, not every detector reading.",
+      "chapter": 3
+    },
+    {
+      "start": 322.29600000000863,
+      "end": 325.0360000095454,
+      "text": "Let's finish by asking what makes a measurement trustworthy.",
+      "chapter": 4
+    },
+    {
+      "start": 325.81599998093515,
+      "end": 330.45599984742074,
+      "text": "A balance very close to one end uses a very short wire segment, so a small",
+      "chapter": 4
+    },
+    {
+      "start": 330.45599984742074,
+      "end": 332.8160004577723,
+      "text": "position error becomes a large fractional error.",
+      "chapter": 4
+    },
+    {
+      "start": 333.6959996185389,
+      "end": 337.27599954224496,
+      "text": "Choose a known resistance close to the unknown so the null lies near the",
+      "chapter": 4
+    },
+    {
+      "start": 337.27599954224496,
+      "end": 337.6559996566859,
+      "text": "midpoint.",
+      "chapter": 4
+    },
+    {
+      "start": 338.336000915536,
+      "end": 342.336000915536,
+      "text": "For small uncertainty in l, treating the standard and total length as exact,",
+      "chapter": 4
+    },
+    {
+      "start": 342.89600038147836,
+      "end": 346.40061570055923,
+      "text": "the fractional uncertainty in X is approximately L times the length",
+      "chapter": 4
+    },
+    {
+      "start": 346.40061570055923,
+      "end": 346.9760003051844,
+      "text": "uncertainty",
+      "chapter": 4
+    },
+    {
+      "start": 347.5959992370692,
+      "end": 349.6959996185389,
+      "text": "divided by l times L minus l.",
+      "chapter": 4
+    },
+    {
+      "start": 349.91600083924203,
+      "end": 354.0159993133631,
+      "text": "At forty centimeters on a one hundred centimeter wire, a point one centimeter",
+      "chapter": 4
+    },
+    {
+      "start": 354.0159993133631,
+      "end": 358.1560006103602,
+      "text": "reading uncertainty contributes about zero point four two percent.",
+      "chapter": 4
+    },
+    {
+      "start": 358.1560006103602,
+      "end": 362.9159989318934,
+      "text": "Near five centimeters, the same uncertainty contributes about two point one",
+      "chapter": 4
+    },
+    {
+      "start": 362.9159989318934,
+      "end": 363.17600106812387,
+      "text": "percent.",
+      "chapter": 4
+    },
+    {
+      "start": 363.17600106812387,
+      "end": 367.27599954224496,
+      "text": "This comparison explains the midpoint preference; it is not just a laboratory",
+      "chapter": 4
+    },
+    {
+      "start": 367.27599954224496,
+      "end": 367.79600000000863,
+      "text": "tradition.",
+      "chapter": 4
+    },
+    {
+      "start": 368.53600167847543,
+      "end": 371.6360001525965,
+      "text": "Real measurements also have uncertainty in the standard and total length.",
+      "chapter": 4
+    },
+    {
+      "start": 372.51600122071176,
+      "end": 376.93599938965707,
+      "text": "Wire nonuniformity, end resistance and contact resistance can bias the ideal",
+      "chapter": 4
+    },
+    {
+      "start": 376.93599938965707,
+      "end": 377.2559990844813,
+      "text": "formula.",
+      "chapter": 4
+    },
+    {
+      "start": 378.1360001525965,
+      "end": 382.52061685768405,
+      "text": "Gentle jockey contact and brief current flow help avoid damaging or heating",
+      "chapter": 4
+    },
+    {
+      "start": 382.52061685768405,
+      "end": 382.69600152588754,
+      "text": "the",
+      "chapter": 4
+    },
+    {
+      "start": 382.69600152588754,
+      "end": 382.9760003051844,
+      "text": "wire.",
+      "chapter": 4
+    },
+    {
+      "start": 383.55599832154184,
+      "end": 387.51600122071176,
+      "text": "Interchanging gaps can help assess end effects, but do not claim that every",
+      "chapter": 4
+    },
+    {
+      "start": 387.51600122071176,
+      "end": 390.336000915536,
+      "text": "systematic error is automatically removed by one swap.",
+      "chapter": 4
+    },
+    {
+      "start": 391.2760033569422,
+      "end": 396.59600305176644,
+      "text": "For JEE, check five things: a functioning detector, a nonzero source, the gap",
+      "chapter": 4
+    },
+    {
+      "start": 396.59600305176644,
+      "end": 399.80856531936337,
+      "text": "labels, the end from which length is measured, and the uniform wire",
+      "chapter": 4
+    },
+    {
+      "start": 399.80856531936337,
+      "end": 400.336000915536,
+      "text": "assumption.",
+      "chapter": 4
+    },
+    {
+      "start": 400.836000915536,
+      "end": 404.8959984741297,
+      "text": "For a balanced Wheatstone bridge, confirm equal midpoint potentials before",
+      "chapter": 4
+    },
+    {
+      "start": 404.8959984741297,
+      "end": 405.69600152588754,
+      "text": "omitting the detector.",
+      "chapter": 4
+    },
+    {
+      "start": 406.2360024414149,
+      "end": 409.90984465145095,
+      "text": "For a metre bridge, compare the resistance ratio with the segment length",
+      "chapter": 4
+    },
+    {
+      "start": 409.90984465145095,
+      "end": 410.21599816895394,
+      "text": "ratio.",
+      "chapter": 4
+    },
+    {
+      "start": 411.03599786377816,
+      "end": 412.9959969482508,
+      "text": "Those two checks bring the entire lesson together.",
+      "chapter": 4
+    }
+  ]
+}

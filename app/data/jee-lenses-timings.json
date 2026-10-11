@@ -1,0 +1,783 @@
+{
+  "duration": 402.64800000001077,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 74.11200000000191
+    },
+    {
+      "start": 74.11200000000191,
+      "end": 151.36800000000395
+    },
+    {
+      "start": 151.36800000000395,
+      "end": 235.22400000000624
+    },
+    {
+      "start": 235.22400000000624,
+      "end": 318.8880000000085
+    },
+    {
+      "start": 318.8880000000085,
+      "end": 402.64800000001077
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.7999999523162842,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.2799999713897705,
+      "end": 5.199999809265137,
+      "text": "A lens changes a ray's direction at two refracting surfaces.",
+      "chapter": 0
+    },
+    {
+      "start": 5.940000057220459,
+      "end": 9.779999732971191,
+      "text": "In the thin lens approximation, we represent those two changes at one plane",
+      "chapter": 0
+    },
+    {
+      "start": 9.779999732971191,
+      "end": 10.800000190734863,
+      "text": "through the optical center.",
+      "chapter": 0
+    },
+    {
+      "start": 11.479999542236328,
+      "end": 15.460000038146973,
+      "text": "A converging lens brings parallel paraxial rays to a focus on the far side.",
+      "chapter": 0
+    },
+    {
+      "start": 16.040000915527344,
+      "end": 19.780000686645508,
+      "text": "A diverging lens makes them spread, as though they came from a focus on the",
+      "chapter": 0
+    },
+    {
+      "start": 19.780000686645508,
+      "end": 20.3799991607666,
+      "text": "incoming side.",
+      "chapter": 0
+    },
+    {
+      "start": 21.1200008392334,
+      "end": 24.559999465942383,
+      "text": "We'll keep incident light traveling left to right and rightward distances",
+      "chapter": 0
+    },
+    {
+      "start": 24.559999465942383,
+      "end": 25.079999923706055,
+      "text": "positive.",
+      "chapter": 0
+    },
+    {
+      "start": 25.579999923706055,
+      "end": 28.260000228881836,
+      "text": "For a real object to the left, u is negative.",
+      "chapter": 0
+    },
+    {
+      "start": 28.940000534057617,
+      "end": 33.400001525878906,
+      "text": "A converging lens has positive f, and a diverging lens has negative f in the",
+      "chapter": 0
+    },
+    {
+      "start": 33.400001525878906,
+      "end": 34.220001220703125,
+      "text": "medium being considered.",
+      "chapter": 0
+    },
+    {
+      "start": 34.959999084472656,
+      "end": 39.58000183105469,
+      "text": "The thin lens equation is one over f equals one over v minus one over u.",
+      "chapter": 0
+    },
+    {
+      "start": 40.2400016784668,
+      "end": 42.52000045776367,
+      "text": "Notice the minus between the image and object terms.",
+      "chapter": 0
+    },
+    {
+      "start": 43.20000076293945,
+      "end": 44.720001220703125,
+      "text": "Do not carry over the mirror equation.",
+      "chapter": 0
+    },
+    {
+      "start": 45.540000915527344,
+      "end": 49.34000015258789,
+      "text": "Lens magnification is v over u, without the mirror's extra minus sign.",
+      "chapter": 0
+    },
+    {
+      "start": 49.81999969482422,
+      "end": 54.4507687886556,
+      "text": "To draw a converging lens image, send one ray parallel to the axis: it",
+      "chapter": 0
+    },
+    {
+      "start": 54.4507687886556,
+      "end": 54.97999954223633,
+      "text": "refracts",
+      "chapter": 0
+    },
+    {
+      "start": 54.97999954223633,
+      "end": 55.880001068115234,
+      "text": "through the far focus.",
+      "chapter": 0
+    },
+    {
+      "start": 56.540000915527344,
+      "end": 60.08000183105469,
+      "text": "A ray through the optical center is undeviated in this ideal thin lens",
+      "chapter": 0
+    },
+    {
+      "start": 60.08000183105469,
+      "end": 60.459999084472656,
+      "text": "treatment.",
+      "chapter": 0
+    },
+    {
+      "start": 61.20000076293945,
+      "end": 63.060001373291016,
+      "text": "Their intersection locates the image tip.",
+      "chapter": 0
+    },
+    {
+      "start": 63.720001220703125,
+      "end": 67.83999633789062,
+      "text": "Our drawings are paraxial schematics, not exact wide angle lens designs.",
+      "chapter": 0
+    },
+    {
+      "start": 68.36000061035156,
+      "end": 72.18000030517578,
+      "text": "The point is to connect the image geometry to the signed distances rather than",
+      "chapter": 0
+    },
+    {
+      "start": 72.18000030517578,
+      "end": 73.54000091552734,
+      "text": "memorize disconnected cases.",
+      "chapter": 0
+    },
+    {
+      "start": 74.11200000000191,
+      "end": 78.11200000000191,
+      "text": "Let's put a real object thirty centimeters before a converging lens of focal",
+      "chapter": 1
+    },
+    {
+      "start": 78.11200000000191,
+      "end": 79.15199996185494,
+      "text": "length ten centimeters.",
+      "chapter": 1
+    },
+    {
+      "start": 79.89200020981026,
+      "end": 83.09199954223824,
+      "text": "Before calculating, locate it: thirty is greater than twice ten.",
+      "chapter": 1
+    },
+    {
+      "start": 83.53200007629586,
+      "end": 86.81199980926705,
+      "text": "We expect a real, inverted, smaller image on the other side.",
+      "chapter": 1
+    },
+    {
+      "start": 87.65199996185494,
+      "end": 88.4520001525898,
+      "text": "Now use signs.",
+      "chapter": 1
+    },
+    {
+      "start": 88.9520001525898,
+      "end": 91.51199961853219,
+      "text": "f is positive ten, and u is negative thirty.",
+      "chapter": 1
+    },
+    {
+      "start": 92.05200053405953,
+      "end": 94.51199961853219,
+      "text": "One over v equals one over f plus one over u.",
+      "chapter": 1
+    },
+    {
+      "start": 94.97200061035348,
+      "end": 98.53200007629586,
+      "text": "That is one tenth minus one thirtieth, or one fifteenth per centimeter.",
+      "chapter": 1
+    },
+    {
+      "start": 99.23200083923531,
+      "end": 101.6719994659443,
+      "text": "Therefore v is positive fifteen centimeters.",
+      "chapter": 1
+    },
+    {
+      "start": 101.6719994659443,
+      "end": 105.3319993133564,
+      "text": "The image lies between the far focus and twice the focal length.",
+      "chapter": 1
+    },
+    {
+      "start": 106.13200045776559,
+      "end": 109.67200137329293,
+      "text": "Magnification is fifteen divided by negative thirty, or negative one half.",
+      "chapter": 1
+    },
+    {
+      "start": 110.43199969482613,
+      "end": 114.59199954223824,
+      "text": "A four centimeter high upright object gives a signed image height negative two",
+      "chapter": 1
+    },
+    {
+      "start": 114.59199954223824,
+      "end": 114.91199923706246,
+      "text": "centimeters.",
+      "chapter": 1
+    },
+    {
+      "start": 115.65200091552926,
+      "end": 117.83200122070504,
+      "text": "The image is two centimeters tall and inverted.",
+      "chapter": 1
+    },
+    {
+      "start": 118.51200152588082,
+      "end": 121.97200061035348,
+      "text": "A screen placed at that image plane can intercept the converging light.",
+      "chapter": 1
+    },
+    {
+      "start": 122.711998474123,
+      "end": 126.77199984741402,
+      "text": "This is what real means; it is not a statement that virtual images cannot be",
+      "chapter": 1
+    },
+    {
+      "start": 126.77199984741402,
+      "end": 126.93199969482613,
+      "text": "seen.",
+      "chapter": 1
+    },
+    {
+      "start": 127.77199984741402,
+      "end": 129.49200106811713,
+      "text": "Try moving the object to twenty centimeters.",
+      "chapter": 1
+    },
+    {
+      "start": 129.93199969482612,
+      "end": 130.5120015258808,
+      "text": "Take a moment.",
+      "chapter": 1
+    },
+    {
+      "start": 130.5120015258808,
+      "end": 135.59199954223823,
+      "text": "u equals negative twenty, so v is positive twenty, and magnification is",
+      "chapter": 1
+    },
+    {
+      "start": 135.59199954223823,
+      "end": 136.17200137329291,
+      "text": "negative one.",
+      "chapter": 1
+    },
+    {
+      "start": 136.711998474123,
+      "end": 139.43199969482612,
+      "text": "The image is real, inverted, and the same size.",
+      "chapter": 1
+    },
+    {
+      "start": 139.97200061035346,
+      "end": 142.3119969482441,
+      "text": "The ray sketch and the arithmetic tell the same story.",
+      "chapter": 1
+    },
+    {
+      "start": 142.95199633789252,
+      "end": 147.99199725341987,
+      "text": "For a JEE answer, report location, orientation, and size together, and keep",
+      "chapter": 1
+    },
+    {
+      "start": 147.99199725341987,
+      "end": 150.97200061035346,
+      "text": "every length in the same unit before combining reciprocals.",
+      "chapter": 1
+    },
+    {
+      "start": 151.36800000000395,
+      "end": 155.36800000000395,
+      "text": "Move our object inside the converging lens's focal distance.",
+      "chapter": 2
+    },
+    {
+      "start": 156.04799982834257,
+      "end": 160.96800038147367,
+      "text": "With f positive ten centimeters and u negative five, one over v is one tenth",
+      "chapter": 2
+    },
+    {
+      "start": 160.96800038147367,
+      "end": 163.12800022888578,
+      "text": "minus one fifth, or negative one tenth.",
+      "chapter": 2
+    },
+    {
+      "start": 163.84799954224027,
+      "end": 167.30799958038725,
+      "text": "The image distance is negative ten centimeters, on the object side.",
+      "chapter": 2
+    },
+    {
+      "start": 168.08799931335844,
+      "end": 172.02799984741605,
+      "text": "Magnification is negative ten divided by negative five, so positive two.",
+      "chapter": 2
+    },
+    {
+      "start": 172.58799931335844,
+      "end": 176.70800015259184,
+      "text": "Refraction sends the rays apart, but their backward extensions meet at an",
+      "chapter": 2
+    },
+    {
+      "start": 176.70800015259184,
+      "end": 178.46800038147367,
+      "text": "upright, enlarged virtual image.",
+      "chapter": 2
+    },
+    {
+      "start": 178.86800000000395,
+      "end": 182.80800053406156,
+      "text": "This is how a simple magnifying lens can help us inspect a small object.",
+      "chapter": 2
+    },
+    {
+      "start": 183.5680007629434,
+      "end": 186.9879989318887,
+      "text": "A virtual image is not captured directly on a screen at its apparent location.",
+      "chapter": 2
+    },
+    {
+      "start": 187.74800106811918,
+      "end": 191.00799938965238,
+      "text": "Your eye can still form its own real image from the arriving rays.",
+      "chapter": 2
+    },
+    {
+      "start": 191.78799816894926,
+      "end": 196.20800015259184,
+      "text": "Now switch to a diverging lens with f negative ten centimeters and a real",
+      "chapter": 2
+    },
+    {
+      "start": 196.20800015259184,
+      "end": 197.36800000000395,
+      "text": "object at negative thirty.",
+      "chapter": 2
+    },
+    {
+      "start": 198.12799832153715,
+      "end": 203.02799984741605,
+      "text": "One over v is negative one tenth minus one thirtieth, giving v negative seven",
+      "chapter": 2
+    },
+    {
+      "start": 203.02799984741605,
+      "end": 203.9080009155313,
+      "text": "point five centimeters.",
+      "chapter": 2
+    },
+    {
+      "start": 204.80799862671293,
+      "end": 206.30799862671293,
+      "text": "Magnification is positive one quarter.",
+      "chapter": 2
+    },
+    {
+      "start": 206.68799969482816,
+      "end": 210.9879989318887,
+      "text": "The image is virtual, upright, and smaller, between the lens and its incoming",
+      "chapter": 2
+    },
+    {
+      "start": 210.9879989318887,
+      "end": 211.7280006103555,
+      "text": "side focus.",
+      "chapter": 2
+    },
+    {
+      "start": 212.5680007629434,
+      "end": 216.12800213623441,
+      "text": "For a real object, that diminished virtual pattern is dependable for a",
+      "chapter": 2
+    },
+    {
+      "start": 216.12800213623441,
+      "end": 216.74799725342191,
+      "text": "diverging lens.",
+      "chapter": 2
+    },
+    {
+      "start": 217.76800152588285,
+      "end": 220.8080024414102,
+      "text": "Virtual objects created by another element need separate analysis.",
+      "chapter": 2
+    },
+    {
+      "start": 221.84800335693754,
+      "end": 226.14799877930082,
+      "text": "Finally, if a real object sits exactly at a converging focus, the outgoing",
+      "chapter": 2
+    },
+    {
+      "start": 226.14799877930082,
+      "end": 227.58800122070707,
+      "text": "paraxial rays are parallel.",
+      "chapter": 2
+    },
+    {
+      "start": 228.48800274658598,
+      "end": 231.52800366211332,
+      "text": "Image distance is at infinity, not an ordinary finite number.",
+      "chapter": 2
+    },
+    {
+      "start": 231.52800366211332,
+      "end": 235.02800366211332,
+      "text": "Predict the case first, then use the equation as a check.",
+      "chapter": 2
+    },
+    {
+      "start": 235.22400000000624,
+      "end": 237.6440000763002,
+      "text": "Where does a lens's focal length come from?",
+      "chapter": 3
+    },
+    {
+      "start": 238.6440000763002,
+      "end": 242.40399982834487,
+      "text": "Combining the refraction equations for its two surfaces gives the lens maker",
+      "chapter": 3
+    },
+    {
+      "start": 242.40399982834487,
+      "end": 242.86399986649184,
+      "text": "relation.",
+      "chapter": 3
+    },
+    {
+      "start": 243.60400011444716,
+      "end": 247.9639997711244,
+      "text": "For a thin lens surrounded by the same medium on both sides, one over f equals",
+      "chapter": 3
+    },
+    {
+      "start": 247.9639997711244,
+      "end": 253.2640009155336,
+      "text": "the lens index relative to that medium, minus one, times one over R one minus",
+      "chapter": 3
+    },
+    {
+      "start": 253.2640009155336,
+      "end": 254.4240007629457,
+      "text": "one over R two.",
+      "chapter": 3
+    },
+    {
+      "start": 254.4240007629457,
+      "end": 257.32400038147597,
+      "text": "The radii are signed using our left to right convention.",
+      "chapter": 3
+    },
+    {
+      "start": 257.8639993896547,
+      "end": 263.20399954224257,
+      "text": "A symmetric biconvex glass lens in air, with index one point five, has first",
+      "chapter": 3
+    },
+    {
+      "start": 263.20399954224257,
+      "end": 268.2640009155336,
+      "text": "radius positive twenty centimeters and second radius negative twenty.",
+      "chapter": 3
+    },
+    {
+      "start": 268.2640009155336,
+      "end": 270.72400000000624,
+      "text": "Subtracting their reciprocals gives one tenth per centimeter.",
+      "chapter": 3
+    },
+    {
+      "start": 271.843998931891,
+      "end": 275.8639993896547,
+      "text": "Multiplying by zero point five gives one twentieth, so f is positive twenty",
+      "chapter": 3
+    },
+    {
+      "start": 275.8639993896547,
+      "end": 276.2640009155336,
+      "text": "centimeters.",
+      "chapter": 3
+    },
+    {
+      "start": 277.0840006103578,
+      "end": 280.78400137329726,
+      "text": "Now imagine immersing it in a surrounding medium with exactly the same",
+      "chapter": 3
+    },
+    {
+      "start": 280.78400137329726,
+      "end": 282.0840006103578,
+      "text": "refractive index as the lens.",
+      "chapter": 3
+    },
+    {
+      "start": 282.6040010681215,
+      "end": 285.04399969483046,
+      "text": "The relative index factor becomes zero.",
+      "chapter": 3
+    },
+    {
+      "start": 285.6839990844789,
+      "end": 290.1070782083427,
+      "text": "There is no refraction at the ideal matched boundaries, the power vanishes,",
+      "chapter": 3
+    },
+    {
+      "start": 290.1070782083427,
+      "end": 290.28400137329726,
+      "text": "and",
+      "chapter": 3
+    },
+    {
+      "start": 290.28400137329726,
+      "end": 291.62400152588515,
+      "text": "the focal length is infinite.",
+      "chapter": 3
+    },
+    {
+      "start": 292.404000305182,
+      "end": 297.04399969483046,
+      "text": "If the surrounding index exceeds the lens index, even this biconvex shape can",
+      "chapter": 3
+    },
+    {
+      "start": 297.04399969483046,
+      "end": 297.8639993896547,
+      "text": "become diverging.",
+      "chapter": 3
+    },
+    {
+      "start": 298.62400152588515,
+      "end": 301.54399969483046,
+      "text": "That is why shape labels alone are not enough without the medium.",
+      "chapter": 3
+    },
+    {
+      "start": 302.24399664307265,
+      "end": 306.2640009155336,
+      "text": "The formula assumes negligible thickness, small ray angles, and a common",
+      "chapter": 3
+    },
+    {
+      "start": 306.2640009155336,
+      "end": 307.0039987793031,
+      "text": "surrounding index.",
+      "chapter": 3
+    },
+    {
+      "start": 307.72400000000624,
+      "end": 311.3639993896547,
+      "text": "A thick lens or different media on the two sides needs more careful treatment.",
+      "chapter": 3
+    },
+    {
+      "start": 312.1839990844789,
+      "end": 316.54399969483046,
+      "text": "In JEE calculations, draw the centers of curvature to assign radius signs",
+      "chapter": 3
+    },
+    {
+      "start": 316.54399969483046,
+      "end": 318.62400152588515,
+      "text": "instead of calling every radius positive.",
+      "chapter": 3
+    },
+    {
+      "start": 318.8880000000085,
+      "end": 323.5479998474206,
+      "text": "Optical power measures how strongly a lens converges or diverges paraxial",
+      "chapter": 4
+    },
+    {
+      "start": 323.5479998474206,
+      "end": 323.8480000381555,
+      "text": "light.",
+      "chapter": 4
+    },
+    {
+      "start": 324.5479998474206,
+      "end": 328.14800022889034,
+      "text": "It is one over focal length when the focal length is expressed in meters.",
+      "chapter": 4
+    },
+    {
+      "start": 328.8880000000085,
+      "end": 331.86799954224483,
+      "text": "Its unit is the diopter, equivalent to inverse meters.",
+      "chapter": 4
+    },
+    {
+      "start": 332.7879996185388,
+      "end": 337.24800061036007,
+      "text": "A positive twenty centimeter lens has focal length zero point two meters and",
+      "chapter": 4
+    },
+    {
+      "start": 337.24800061036007,
+      "end": 339.02799938965694,
+      "text": "power positive five diopters.",
+      "chapter": 4
+    },
+    {
+      "start": 339.9479994659509,
+      "end": 343.8880000000085,
+      "text": "A negative fifty centimeter lens has power negative two diopters.",
+      "chapter": 4
+    },
+    {
+      "start": 344.7280001525964,
+      "end": 348.9080004577722,
+      "text": "Put these ideal thin lenses in contact, in the same surrounding medium.",
+      "chapter": 4
+    },
+    {
+      "start": 349.58800076294796,
+      "end": 352.2880015258874,
+      "text": "Their powers add, giving positive three diopters.",
+      "chapter": 4
+    },
+    {
+      "start": 353.4080004577722,
+      "end": 356.6679987793054,
+      "text": "The effective focal length is one third of a meter, about thirty three point",
+      "chapter": 4
+    },
+    {
+      "start": 356.6679987793054,
+      "end": 357.68799923706905,
+      "text": "three centimeters.",
+      "chapter": 4
+    },
+    {
+      "start": 359.0680003051843,
+      "end": 361.52799938965694,
+      "text": "Positive total power tells us the pair is converging.",
+      "chapter": 4
+    },
+    {
+      "start": 362.52799938965694,
+      "end": 363.4879984741296,
+      "text": "Why does addition work?",
+      "chapter": 4
+    },
+    {
+      "start": 364.0680003051843,
+      "end": 368.18799923706905,
+      "text": "When the planes coincide in the thin lens model, the second lens adds its ray",
+      "chapter": 4
+    },
+    {
+      "start": 368.18799923706905,
+      "end": 371.6479983215417,
+      "text": "deflection contribution to the first at essentially the same ray height.",
+      "chapter": 4
+    },
+    {
+      "start": 371.6479983215417,
+      "end": 375.7880015258874,
+      "text": "If the lenses are separated, that height changes during the travel between",
+      "chapter": 4
+    },
+    {
+      "start": 375.7880015258874,
+      "end": 375.9480013732995,
+      "text": "them.",
+      "chapter": 4
+    },
+    {
+      "start": 376.5680003051843,
+      "end": 378.58800076294796,
+      "text": "The simple contact rule is then insufficient.",
+      "chapter": 4
+    },
+    {
+      "start": 379.86799954224483,
+      "end": 381.4879984741296,
+      "text": "Also, do not add focal lengths.",
+      "chapter": 4
+    },
+    {
+      "start": 382.26800106812374,
+      "end": 386.3474875237966,
+      "text": "Five diopters plus negative two diopters is meaningful; twenty centimeters",
+      "chapter": 4
+    },
+    {
+      "start": 386.3474875237966,
+      "end": 386.5680003051843,
+      "text": "plus",
+      "chapter": 4
+    },
+    {
+      "start": 386.5680003051843,
+      "end": 390.00800274659053,
+      "text": "negative fifty centimeters does not give the combined focal length.",
+      "chapter": 4
+    },
+    {
+      "start": 390.44799755860225,
+      "end": 394.9680018310632,
+      "text": "Our final routine is to choose the right relation, assign signs, convert units",
+      "chapter": 4
+    },
+    {
+      "start": 394.9680018310632,
+      "end": 397.84799908448116,
+      "text": "where required, and interpret the resulting image or power.",
+      "chapter": 4
+    },
+    {
+      "start": 397.84799908448116,
+      "end": 401.9079966430749,
+      "text": "The next classes will apply those same habits to prisms and optical",
+      "chapter": 4
+    },
+    {
+      "start": 401.9079966430749,
+      "end": 402.2679972534265,
+      "text": "instruments.",
+      "chapter": 4
+    }
+  ]
+}

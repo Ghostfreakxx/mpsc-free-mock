@@ -1,0 +1,831 @@
+{
+  "duration": 420.88800000001146,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 82.56000000000223
+    },
+    {
+      "start": 82.56000000000223,
+      "end": 160.00800000000427
+    },
+    {
+      "start": 160.00800000000427,
+      "end": 244.17600000000658
+    },
+    {
+      "start": 244.17600000000658,
+      "end": 334.2240000000091
+    },
+    {
+      "start": 334.2240000000091,
+      "end": 420.88800000001146
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.4600000381469727,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.200000047683716,
+      "end": 5.400000095367432,
+      "text": "Biot Savart let us add magnetic field contributions from current elements.",
+      "chapter": 0
+    },
+    {
+      "start": 6.179999828338623,
+      "end": 9.699999809265137,
+      "text": "Ampere's law gives another route for steady currents: it relates the field's",
+      "chapter": 0
+    },
+    {
+      "start": 9.699999809265137,
+      "end": 13.260000228881836,
+      "text": "circulation around a closed path to the current enclosed by that path.",
+      "chapter": 0
+    },
+    {
+      "start": 14.279999732971191,
+      "end": 18.200000762939453,
+      "text": "Imagine walking around a mathematical loop and adding the component of B along",
+      "chapter": 0
+    },
+    {
+      "start": 18.200000762939453,
+      "end": 19.139999389648438,
+      "text": "each tiny step.",
+      "chapter": 0
+    },
+    {
+      "start": 19.65999984741211,
+      "end": 24.239999771118164,
+      "text": "The closed integral of B dot d l equals mu zero times the signed enclosed",
+      "chapter": 0
+    },
+    {
+      "start": 24.239999771118164,
+      "end": 24.559999465942383,
+      "text": "current.",
+      "chapter": 0
+    },
+    {
+      "start": 25.260000228881836,
+      "end": 29.65999984741211,
+      "text": "The loop is imaginary; it need not be a conducting wire or a magnetic field",
+      "chapter": 0
+    },
+    {
+      "start": 29.65999984741211,
+      "end": 29.920000076293945,
+      "text": "line.",
+      "chapter": 0
+    },
+    {
+      "start": 30.739999771118164,
+      "end": 33.779998779296875,
+      "text": "Choose a direction around the path, then curl your right fingers in that",
+      "chapter": 0
+    },
+    {
+      "start": 33.779998779296875,
+      "end": 34.08000183105469,
+      "text": "direction.",
+      "chapter": 0
+    },
+    {
+      "start": 34.7400016784668,
+      "end": 37.18000030517578,
+      "text": "Your thumb defines the positive surface normal.",
+      "chapter": 0
+    },
+    {
+      "start": 38.2400016784668,
+      "end": 42.02000045776367,
+      "text": "Current crossing toward that normal counts positive, and current crossing the",
+      "chapter": 0
+    },
+    {
+      "start": 42.02000045776367,
+      "end": 43.220001220703125,
+      "text": "opposite way counts negative.",
+      "chapter": 0
+    },
+    {
+      "start": 44.08000183105469,
+      "end": 47.63999938964844,
+      "text": "For a counterclockwise path viewed on the page, out of page current is",
+      "chapter": 0
+    },
+    {
+      "start": 47.63999938964844,
+      "end": 47.959999084472656,
+      "text": "positive.",
+      "chapter": 0
+    },
+    {
+      "start": 48.380001068115234,
+      "end": 52.5441030844664,
+      "text": "If two amperes comes out inside the loop and five amperes goes in, the",
+      "chapter": 0
+    },
+    {
+      "start": 52.5441030844664,
+      "end": 53.02000045776367,
+      "text": "enclosed",
+      "chapter": 0
+    },
+    {
+      "start": 53.02000045776367,
+      "end": 54.619998931884766,
+      "text": "current is minus three amperes.",
+      "chapter": 0
+    },
+    {
+      "start": 55.040000915527344,
+      "end": 58.79999923706055,
+      "text": "A seven ampere wire outside does not enter that enclosed current sum.",
+      "chapter": 0
+    },
+    {
+      "start": 59.41999816894531,
+      "end": 61.91999816894531,
+      "text": "It can still contribute to the magnetic field along the path.",
+      "chapter": 0
+    },
+    {
+      "start": 62.560001373291016,
+      "end": 66.6217963878925,
+      "text": "That distinction matters: circulation is constrained by enclosed current,",
+      "chapter": 0
+    },
+    {
+      "start": 66.6217963878925,
+      "end": 66.9000015258789,
+      "text": "while",
+      "chapter": 0
+    },
+    {
+      "start": 66.9000015258789,
+      "end": 69.41999816894531,
+      "text": "local field can have contributions from sources elsewhere.",
+      "chapter": 0
+    },
+    {
+      "start": 70.05999755859375,
+      "end": 72.16000366210938,
+      "text": "We use the steady current vacuum form here.",
+      "chapter": 0
+    },
+    {
+      "start": 73.05999755859375,
+      "end": 76.77999877929688,
+      "text": "Changing electric fields require Maxwell's additional term, which belongs to a",
+      "chapter": 0
+    },
+    {
+      "start": 76.77999877929688,
+      "end": 77.18000030517578,
+      "text": "later class.",
+      "chapter": 0
+    },
+    {
+      "start": 78.0199966430664,
+      "end": 81.6938458956205,
+      "text": "To find a simple field value from this law, we must choose geometry with",
+      "chapter": 0
+    },
+    {
+      "start": 81.6938458956205,
+      "end": 82,
+      "text": "enough",
+      "chapter": 0
+    },
+    {
+      "start": 82,
+      "end": 82.30000305175781,
+      "text": "symmetry.",
+      "chapter": 0
+    },
+    {
+      "start": 82.56000000000223,
+      "end": 85.37999993324503,
+      "text": "Let's see symmetry earn its place in the calculation.",
+      "chapter": 1
+    },
+    {
+      "start": 86.30000000953898,
+      "end": 89.67999988556132,
+      "text": "Take an effectively infinite straight wire in vacuum carrying steady current.",
+      "chapter": 1
+    },
+    {
+      "start": 90.62000041961893,
+      "end": 95.31897406309302,
+      "text": "Rotational symmetry around the wire and translational symmetry along it imply",
+      "chapter": 1
+    },
+    {
+      "start": 95.31897406309302,
+      "end": 95.37999969482645,
+      "text": "a",
+      "chapter": 1
+    },
+    {
+      "start": 95.37999969482645,
+      "end": 95.98000007629618,
+      "text": "circular field pattern.",
+      "chapter": 1
+    },
+    {
+      "start": 96.9599996185325,
+      "end": 100.18000083923563,
+      "text": "Choose a circle centered on the wire in a perpendicular plane.",
+      "chapter": 1
+    },
+    {
+      "start": 100.5800004577659,
+      "end": 104.4200006103538,
+      "text": "Along that circle, B is tangent and has the same magnitude at every point.",
+      "chapter": 1
+    },
+    {
+      "start": 105.34000068664774,
+      "end": 110.35999923706278,
+      "text": "Choose your walking direction to match the field, so B dot d l is B times d l.",
+      "chapter": 1
+    },
+    {
+      "start": 110.35999923706278,
+      "end": 114.00000053405985,
+      "text": "The integral becomes B times the circumference, two pi r.",
+      "chapter": 1
+    },
+    {
+      "start": 114.85999923706278,
+      "end": 120.20615440368876,
+      "text": "Set that equal to mu zero I, and we recover B equal to mu zero I divided by",
+      "chapter": 1
+    },
+    {
+      "start": 120.20615440368876,
+      "end": 120.4200006103538,
+      "text": "two",
+      "chapter": 1
+    },
+    {
+      "start": 120.4200006103538,
+      "end": 120.83999877929911,
+      "text": "pi r.",
+      "chapter": 1
+    },
+    {
+      "start": 121.49999862671122,
+      "end": 124.33999877929911,
+      "text": "This agrees with the Biot Savart result from our previous class.",
+      "chapter": 1
+    },
+    {
+      "start": 125.21999984741434,
+      "end": 128.96000152588113,
+      "text": "A five ampere wire at five centimeters gives twenty microtesla.",
+      "chapter": 1
+    },
+    {
+      "start": 129.76000076294167,
+      "end": 131.71999984741433,
+      "text": "Now suppose you choose a rectangle instead.",
+      "chapter": 1
+    },
+    {
+      "start": 132.6400018310569,
+      "end": 136.17999893188698,
+      "text": "Ampere's law still holds, but B varies with distance and is not everywhere",
+      "chapter": 1
+    },
+    {
+      "start": 136.17999893188698,
+      "end": 137.06000000000222,
+      "text": "parallel to the path.",
+      "chapter": 1
+    },
+    {
+      "start": 137.5899987792991,
+      "end": 140.78000122070534,
+      "text": "You cannot replace the integral by B times the rectangle's perimeter.",
+      "chapter": 1
+    },
+    {
+      "start": 141.69999938965066,
+      "end": 144.28000122070534,
+      "text": "The law did not fail; the shortcut lost its symmetry.",
+      "chapter": 1
+    },
+    {
+      "start": 145.28000122070534,
+      "end": 149.16974336282024,
+      "text": "Likewise, a nearby extra wire can destroy the symmetry of the total field,",
+      "chapter": 1
+    },
+    {
+      "start": 149.16974336282024,
+      "end": 149.37999969482644,
+      "text": "even",
+      "chapter": 1
+    },
+    {
+      "start": 149.37999969482644,
+      "end": 150.740000305178,
+      "text": "if only one wire is enclosed.",
+      "chapter": 1
+    },
+    {
+      "start": 151.68000274658425,
+      "end": 155.60000091552956,
+      "text": "When an exam solution writes B times a path length, ask what makes B constant",
+      "chapter": 1
+    },
+    {
+      "start": 155.60000091552956,
+      "end": 157.46000152588113,
+      "text": "there and what makes the dot product simple.",
+      "chapter": 1
+    },
+    {
+      "start": 157.9399972534202,
+      "end": 159.8399987792991,
+      "text": "Those are the two reasons the method works.",
+      "chapter": 1
+    },
+    {
+      "start": 160.00800000000427,
+      "end": 164.5279999809308,
+      "text": "What changes if our circular path lies inside a wire of finite radius?",
+      "chapter": 2
+    },
+    {
+      "start": 165.28800020981262,
+      "end": 167.3880001144452,
+      "text": "We no longer enclose the whole current.",
+      "chapter": 2
+    },
+    {
+      "start": 168.36799965668152,
+      "end": 172.8279996948285,
+      "text": "Assume a very long cylindrical wire of radius a with uniform current density",
+      "chapter": 2
+    },
+    {
+      "start": 172.8279996948285,
+      "end": 174.02800045776794,
+      "text": "across its cross section.",
+      "chapter": 2
+    },
+    {
+      "start": 174.8279996948285,
+      "end": 179.8069737681896,
+      "text": "At an interior radius r, the enclosed area is pi r squared, compared with",
+      "chapter": 2
+    },
+    {
+      "start": 179.8069737681896,
+      "end": 180.1479993896527,
+      "text": "total",
+      "chapter": 2
+    },
+    {
+      "start": 180.1479993896527,
+      "end": 181.608000381474,
+      "text": "area pi a squared.",
+      "chapter": 2
+    },
+    {
+      "start": 182.24799977112244,
+      "end": 185.7680002288861,
+      "text": "The enclosed current is therefore I times r squared divided by a squared.",
+      "chapter": 2
+    },
+    {
+      "start": 185.7680002288861,
+      "end": 190.4879995422406,
+      "text": "Substitute into B times two pi r equals mu zero enclosed current.",
+      "chapter": 2
+    },
+    {
+      "start": 191.16799984741638,
+      "end": 196.16799984741638,
+      "text": "One factor of r cancels, giving B equal to mu zero I r divided by two pi a",
+      "chapter": 2
+    },
+    {
+      "start": 196.16799984741638,
+      "end": 196.42799816894959,
+      "text": "squared.",
+      "chapter": 2
+    },
+    {
+      "start": 197.3880010681195,
+      "end": 200.92799816894959,
+      "text": "Inside the wire, field grows linearly from zero on the axis to its surface",
+      "chapter": 2
+    },
+    {
+      "start": 200.92799816894959,
+      "end": 201.30799923706482,
+      "text": "value.",
+      "chapter": 2
+    },
+    {
+      "start": 202.1479993896527,
+      "end": 206.3279996948285,
+      "text": "Outside, the full current is enclosed and field falls as one over r.",
+      "chapter": 2
+    },
+    {
+      "start": 207.02800045776794,
+      "end": 210.9879995422406,
+      "text": "Both formulas agree at r equal to a, so the field is continuous in this model.",
+      "chapter": 2
+    },
+    {
+      "start": 211.60799847412537,
+      "end": 213.8279996948285,
+      "text": "Use five amperes and radius two millimeters.",
+      "chapter": 2
+    },
+    {
+      "start": 213.8279996948285,
+      "end": 216.86800061035584,
+      "text": "The surface field is zero point five millitesla.",
+      "chapter": 2
+    },
+    {
+      "start": 217.70800076294373,
+      "end": 221.52800045776794,
+      "text": "Halfway from axis to surface it is zero point two five millitesla.",
+      "chapter": 2
+    },
+    {
+      "start": 222.02800045776794,
+      "end": 226.1280027465863,
+      "text": "At twice the wire radius outside, it is also zero point two five millitesla,",
+      "chapter": 2
+    },
+    {
+      "start": 226.6280027465863,
+      "end": 229.96799908447693,
+      "text": "but for a different reason: inverse distance rather than linear growth.",
+      "chapter": 2
+    },
+    {
+      "start": 230.7280012207074,
+      "end": 234.08507549304923,
+      "text": "Check whether the observation point is inside or outside before choosing a",
+      "chapter": 2
+    },
+    {
+      "start": 234.08507549304923,
+      "end": 234.44800244141052,
+      "text": "formula.",
+      "chapter": 2
+    },
+    {
+      "start": 235.02799664307068,
+      "end": 238.78799877930115,
+      "text": "If current density is not uniform, the enclosed current fraction must be",
+      "chapter": 2
+    },
+    {
+      "start": 238.78799877930115,
+      "end": 239.36800061035584,
+      "text": "recalculated.",
+      "chapter": 2
+    },
+    {
+      "start": 239.36800061035584,
+      "end": 243.90800152588318,
+      "text": "The area ratio is a model assumption, not a universal rule for every wire.",
+      "chapter": 2
+    },
+    {
+      "start": 244.17600000000658,
+      "end": 247.91600000954332,
+      "text": "Now wrap the wire into many closely spaced turns.",
+      "chapter": 3
+    },
+    {
+      "start": 248.95600020981493,
+      "end": 254.3359998474187,
+      "text": "A solenoid is a helical coil; when it is long compared with its radius, its",
+      "chapter": 3
+    },
+    {
+      "start": 254.3359998474187,
+      "end": 259.69600045777025,
+      "text": "interior field is approximately uniform and directed along the axis, away from",
+      "chapter": 3
+    },
+    {
+      "start": 259.69600045777025,
+      "end": 260.19600045777025,
+      "text": "the ends.",
+      "chapter": 3
+    },
+    {
+      "start": 261.315999389655,
+      "end": 265.809670275731,
+      "text": "Use a rectangular Amperian path with one long side inside and the other",
+      "chapter": 3
+    },
+    {
+      "start": 265.809670275731,
+      "end": 266.315999389655,
+      "text": "outside.",
+      "chapter": 3
+    },
+    {
+      "start": 267.4360002288884,
+      "end": 270.47599923706713,
+      "text": "Let the length of that inside side be ell.",
+      "chapter": 3
+    },
+    {
+      "start": 270.47599923706713,
+      "end": 274.4560006866521,
+      "text": "In the ideal infinite solenoid model, the exterior field vanishes.",
+      "chapter": 3
+    },
+    {
+      "start": 275.47599923706713,
+      "end": 279.75600183106127,
+      "text": "On the short sides, field is perpendicular to the path, so their dot product",
+      "chapter": 3
+    },
+    {
+      "start": 279.75600183106127,
+      "end": 281.0760015258855,
+      "text": "contributions vanish.",
+      "chapter": 3
+    },
+    {
+      "start": 281.8359998474187,
+      "end": 286.0560010681218,
+      "text": "Only the inside long side contributes, giving B times ell.",
+      "chapter": 3
+    },
+    {
+      "start": 286.0560010681218,
+      "end": 289.7759984741277,
+      "text": "If n is turns per unit length, the rectangle's surface is crossed by",
+      "chapter": 3
+    },
+    {
+      "start": 289.7759984741277,
+      "end": 294.4959996948308,
+      "text": "approximately n ell turns, each carrying current I with the appropriate common",
+      "chapter": 3
+    },
+    {
+      "start": 294.4959996948308,
+      "end": 294.7759984741277,
+      "text": "sign.",
+      "chapter": 3
+    },
+    {
+      "start": 295.5959981689519,
+      "end": 299.3960012207097,
+      "text": "Ampere's law becomes B ell equals mu zero n ell I.",
+      "chapter": 3
+    },
+    {
+      "start": 300.35600030518236,
+      "end": 303.4359983215398,
+      "text": "Cancel ell and get B equal to mu zero n I.",
+      "chapter": 3
+    },
+    {
+      "start": 303.9359983215398,
+      "end": 308.25600183106127,
+      "text": "The length of the imaginary rectangle disappears; the turn density remains.",
+      "chapter": 3
+    },
+    {
+      "start": 309.05599725342455,
+      "end": 312.35600030518236,
+      "text": "Curl your right fingers along the winding current and your thumb gives the",
+      "chapter": 3
+    },
+    {
+      "start": 312.35600030518236,
+      "end": 313.5760015258855,
+      "text": "interior axial direction.",
+      "chapter": 3
+    },
+    {
+      "start": 314.93600213623705,
+      "end": 318.95599877930346,
+      "text": "Keep N, the total number of turns, separate from n, the number per meter.",
+      "chapter": 3
+    },
+    {
+      "start": 319.61600244141283,
+      "end": 323.9760030517644,
+      "text": "A finite solenoid has fringing field near its ends and a return field outside.",
+      "chapter": 3
+    },
+    {
+      "start": 324.9959996948308,
+      "end": 328.5760015258855,
+      "text": "Calling its exterior field exactly zero would overstate the approximation.",
+      "chapter": 3
+    },
+    {
+      "start": 329.37599694824877,
+      "end": 333.63599908447924,
+      "text": "Our simple formula describes a long, tightly wound air core coil deep inside,",
+      "chapter": 3
+    },
+    {
+      "start": 333.63599908447924,
+      "end": 334.2240000000091,
+      "text": "not every point around a short coil.",
+      "chapter": 3
+    },
+    {
+      "start": 334.2240000000091,
+      "end": 336.82399990464165,
+      "text": "Let's calculate one practical exam example.",
+      "chapter": 4
+    },
+    {
+      "start": 337.64400007630303,
+      "end": 341.8639998664947,
+      "text": "An air core solenoid has six hundred turns over thirty centimeters and carries",
+      "chapter": 4
+    },
+    {
+      "start": 341.8639998664947,
+      "end": 342.7639999618621,
+      "text": "two amperes.",
+      "chapter": 4
+    },
+    {
+      "start": 343.64400007630303,
+      "end": 346.30399992371514,
+      "text": "Convert thirty centimeters to zero point three zero meters.",
+      "chapter": 4
+    },
+    {
+      "start": 347.2840004196258,
+      "end": 351.5040006866546,
+      "text": "Turn density is six hundred divided by zero point three, or two thousand turns",
+      "chapter": 4
+    },
+    {
+      "start": 351.5040006866546,
+      "end": 351.8839998474212,
+      "text": "per meter.",
+      "chapter": 4
+    },
+    {
+      "start": 352.92400076294854,
+      "end": 355.42400076294854,
+      "text": "Multiply mu zero by turn density and current.",
+      "chapter": 4
+    },
+    {
+      "start": 356.3440008392425,
+      "end": 360.74400045777276,
+      "text": "With mu zero approximately four pi times ten to the minus seven, the interior",
+      "chapter": 4
+    },
+    {
+      "start": 360.74400045777276,
+      "end": 363.1039991607757,
+      "text": "field is about five point zero three millitesla.",
+      "chapter": 4
+    },
+    {
+      "start": 363.90400030518487,
+      "end": 368.24400045777276,
+      "text": "If we double the coil length while keeping total turns and current fixed, turn",
+      "chapter": 4
+    },
+    {
+      "start": 368.24400045777276,
+      "end": 372.8639993896575,
+      "text": "density halves and the ideal interior field halves, provided the winding still",
+      "chapter": 4
+    },
+    {
+      "start": 372.8639993896575,
+      "end": 374.8839998474212,
+      "text": "satisfies the long solenoid approximation.",
+      "chapter": 4
+    },
+    {
+      "start": 375.52399923706963,
+      "end": 380.13938311885863,
+      "text": "If instead we double both turns and length, turn density stays the same, so",
+      "chapter": 4
+    },
+    {
+      "start": 380.13938311885863,
+      "end": 380.3239984741302,
+      "text": "the",
+      "chapter": 4
+    },
+    {
+      "start": 380.3239984741302,
+      "end": 382.16399862671807,
+      "text": "predicted interior field stays the same.",
+      "chapter": 4
+    },
+    {
+      "start": 382.4839983215423,
+      "end": 387.2039995422454,
+      "text": "On the axis at the end of a very long solenoid, a useful limiting result is",
+      "chapter": 4
+    },
+    {
+      "start": 387.2039995422454,
+      "end": 391.1040010681243,
+      "text": "approximately half the deep interior field, here about two point five one",
+      "chapter": 4
+    },
+    {
+      "start": 391.1040010681243,
+      "end": 391.58400061036065,
+      "text": "millitesla.",
+      "chapter": 4
+    },
+    {
+      "start": 392.3639993896575,
+      "end": 395.42400076294854,
+      "text": "That end value is not the general finite coil field formula.",
+      "chapter": 4
+    },
+    {
+      "start": 396.66399862671807,
+      "end": 397.9440012207122,
+      "text": "Finally, revisit a subtle trap.",
+      "chapter": 4
+    },
+    {
+      "start": 398.4639978637786,
+      "end": 402.2240000000091,
+      "text": "If a chosen path encloses zero net current, Ampere's law says its field",
+      "chapter": 4
+    },
+    {
+      "start": 402.2240000000091,
+      "end": 403.18399908448174,
+      "text": "circulation is zero.",
+      "chapter": 4
+    },
+    {
+      "start": 403.7640009155364,
+      "end": 406.68399908448174,
+      "text": "It does not say the magnetic field is zero everywhere along it.",
+      "chapter": 4
+    },
+    {
+      "start": 406.68399908448174,
+      "end": 409.60399725342705,
+      "text": "Nonzero contributions can cancel in the integral.",
+      "chapter": 4
+    },
+    {
+      "start": 410.58400061036065,
+      "end": 414.3316906644472,
+      "text": "Use symmetry, identify the actual enclosed current, and name the model's",
+      "chapter": 4
+    },
+    {
+      "start": 414.3316906644472,
+      "end": 414.6439981689544,
+      "text": "limits",
+      "chapter": 4
+    },
+    {
+      "start": 414.6439981689544,
+      "end": 415.78399755860283,
+      "text": "before simplifying.",
+      "chapter": 4
+    },
+    {
+      "start": 416.48400213623955,
+      "end": 419.8639993896575,
+      "text": "Those habits will support our next class on magnetic forces and charged",
+      "chapter": 4
+    },
+    {
+      "start": 419.8639993896575,
+      "end": 420.5240030517669,
+      "text": "particle motion.",
+      "chapter": 4
+    }
+  ]
+}

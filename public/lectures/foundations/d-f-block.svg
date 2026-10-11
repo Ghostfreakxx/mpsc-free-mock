@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+<title id="title">Ion configurations for iron</title><desc id="desc">Iron loses the two outer 4s electrons before a 3d electron, giving Fe2+ d6 and Fe3+ d5.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#18212b"/></marker></defs>
+<rect width="900" height="360" fill="#f8fafc"/>
+<g font-family="Arial,sans-serif" fill="#18212b"><text x="30" y="35" font-size="24" font-weight="bold">Count the ion, not only the neutral atom</text>
+<g font-size="25"><text x="75" y="155">Fe</text><text x="400" y="155">Fe2+</text><text x="730" y="155">Fe3+</text></g>
+<g font-size="23" fill="#087e8b"><text x="45" y="210">3d6 4s2</text><text x="405" y="210">3d6</text><text x="735" y="210">3d5</text></g>
+<path d="M170 150H350" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/><path d="M495 150H680" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="180" y="115" font-size="18">Remove two 4s</text><text x="510" y="115" font-size="18">Remove one 3d</text>
+<text x="45" y="285" font-size="20" fill="#b42343">For these common cations, outer 4s electrons leave first.</text>
+<text x="30" y="345" font-size="16" fill="#475569">[Ar] core is omitted. Magnetic properties also depend on the electron arrangement and environment.</text></g></svg>

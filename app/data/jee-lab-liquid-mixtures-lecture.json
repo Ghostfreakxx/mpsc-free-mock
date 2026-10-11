@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Experimental closeout: unknown-liquid heat capacity and honest observations",
+  "unit": 20,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 official syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: heat transfer and specific heat",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/1-4-heat-transfer-specific-heat-and-calorimetry"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Use a known hot solid to find an unknown liquid",
+      "formula": "ms cs(Ts - Tf) = (ml cl + Ccal)(Tf - Tl)",
+      "points": [
+        "Only one specific heat is unknown in this observation.",
+        "Include calorimeter heat capacity and use a common final temperature.",
+        "Constructed data: cl = 2100 J/(kg K), not a measured substance identification."
+      ],
+      "script": "Welcome back. Our earlier materials laboratory inferred the specific heat of a solid using known water. Now reverse the question. How can we find the heat capacity of an unknown liquid without guessing it is water? Use a hot solid whose mass and specific heat are known. Under supervision, place a measured amount of liquid in an insulated calorimeter of known heat capacity. Record its initial uniform temperature, record the hot solid's temperature, transfer the solid promptly with suitable equipment, stir gently, and observe a common final temperature. Our numerical observations are constructed teaching data, not an experiment we performed. Use solid mass zero point one kilograms and specific heat nine hundred joules per kilogram kelvin. Its initial temperature is eighty degrees Celsius. The liquid has mass zero point two kilograms and begins at twenty degrees. Calorimeter heat capacity is thirty joules per kelvin. Final temperature is thirty degrees. Before calculating, predict who loses energy. The hot solid cools by fifty degrees, releasing four thousand five hundred joules. The liquid and calorimeter warm by ten degrees. The container takes thirty times ten, or three hundred joules. That leaves four thousand two hundred joules for the liquid. Divide by liquid mass times temperature rise: zero point two times ten. Its inferred specific heat is two thousand one hundred joules per kilogram kelvin. Notice that the board's answer must follow these exact observations, not a remembered value for a named fluid. Ignoring the container would give two thousand two hundred fifty, an overestimate in this case. Alternatively solve the general balance: c liquid equals solid heat lost divided by liquid mass times liquid temperature rise, minus calorimeter heat capacity divided by liquid mass. Temperature differences in Celsius and kelvin have equal numerical sizes. State the assumptions: no phase change, no reaction, negligible heat exchange with the surroundings, and specific heats treated as constant over these intervals. If both specific heats were unknown, one temperature balance would not determine both. A correct equation also needs enough independent known information."
+    },
+    {
+      "title": "Keep corrections, losses and evidence separate",
+      "formula": "Ccal is in J/K; specific heat is in J/(kg K); report the model and units",
+      "points": [
+        "Repeat readings and show the raw observations, correction and inferred quantity separately.",
+        "Actual hands-on work requires supervision and appropriate materials.",
+        "Worked checks and original questions are not official PYQs or laboratory certification."
+      ],
+      "script": "Let's finish by testing the measurement, not merely its arithmetic. We obtained two thousand one hundred joules per kilogram kelvin from the stated ideal energy balance. If two hundred joules actually escaped to cooler surroundings during the transfer and mixing, only four thousand three hundred joules of the solid's release would reach the liquid and calorimeter. For the same observed ten-degree rise, subtract the container's three hundred joules, leaving four thousand for the liquid. The corrected inferred specific heat would be two thousand. Our uncorrected ideal balance would overestimate it. That direction belongs to this stated heat-loss model; a warmer surrounding or other process could change the sign. We cannot subtract an invented heat-loss number from real data without a justified measurement or correction procedure. Now consider liquid mass. Weigh the calorimeter empty and with liquid, then subtract. Do not treat the total filled mass as the liquid mass. If the empty mass is zero point zero eight kilograms and the filled mass zero point two eight, the liquid mass is zero point two, as required. Record each raw value, its unit and uncertainty before computing. A known constant thermometer offset cancels in temperature differences taken with that same instrument, but gain error, thermal lag or different offsets across instruments may not cancel. Repetition reveals scatter; it does not remove every systematic effect. Avoid splashes, evaporation, hot water carried in with the solid, and unsafe handling. Choose materials and a supervised procedure compatible with the liquid; never casually heat an unknown flammable sample. In JEE, distinguish calorimeter heat capacity in joules per kelvin from a material's specific heat in joules per kilogram kelvin. If a question gives water equivalent, first convert it to heat capacity using the stated water specific heat. Finally, the course's laboratory classes teach apparatus choice, observations, equations and checks. They are not evidence that we performed the experiments, not official past-paper questions, and not a substitute for supervised laboratory experience. Work through the existing instrument, mechanics, electrical, optics and device observations as revision; you do not need a new narration for every change of numerical values."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "For the stated 0.1 kg solid, cs=900, Ts=80 C, Tf=30 C, ml=0.2 kg, Tl=20 C and Ccal=30 J/K, liquid specific heat is:",
+      "options": [
+        "2000 J/(kg K)",
+        "2250 J/(kg K)",
+        "2100 J/(kg K)",
+        "900 J/(kg K)"
+      ],
+      "answer": 2,
+      "explanation": "(4500-300)/(0.2 x 10) = 2100."
+    },
+    {
+      "question": "Ignoring that calorimeter would give:",
+      "options": [
+        "2250 J/(kg K)",
+        "2100 J/(kg K)",
+        "2000 J/(kg K)",
+        "150 J/(kg K)"
+      ],
+      "answer": 0,
+      "explanation": "4500/(0.2 x 10)=2250: the container heat is incorrectly attributed to the liquid."
+    },
+    {
+      "question": "If a justified 200 J loss to the surroundings occurred with those same observations, the corrected liquid value is:",
+      "options": [
+        "2200 J/(kg K)",
+        "2000 J/(kg K)",
+        "2100 J/(kg K)",
+        "2300 J/(kg K)"
+      ],
+      "answer": 1,
+      "explanation": "(4500-200-300)/2=2000."
+    },
+    {
+      "question": "The calorimeter heat capacity has units:",
+      "options": [
+        "J/(kg K)",
+        "kg K/J",
+        "J/kg",
+        "J/K"
+      ],
+      "answer": 3,
+      "explanation": "It is the heat for one kelvin change of the whole calorimeter, not per unit mass."
+    }
+  ]
+}

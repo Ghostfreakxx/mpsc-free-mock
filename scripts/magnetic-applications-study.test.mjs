@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { magneticApplicationsLesson as lesson } from '../app/jee/classes/magnetic-applications-study.ts';
+const close=(a,b)=>assert.ok(Math.abs(a-b)<1e-10*Math.max(1,Math.abs(b)));
+test('Finite wire integral agrees with stated field',()=>{const a=.3,b=.4,i=5;close(2e-7*i*a/(b*Math.hypot(a,b)),1.5e-6);assert.ok(lesson.examples[0].answer.includes('1.5 microT'));});
+test('Same-direction wires cancel between sources',()=>{const x=.3*3/(3+6);close(x,.1);close(3/x,6/(.3-x));});
+test('Helix radius, period and pitch use separate components',()=>{const m=2e-27,q=1e-19,b=.2;close(m*2e5/(q*b),.02);const t=2*Math.PI*m/(q*b);close(t,6.283185307179586e-7);close(1e5*t,.06283185307179587);});
+test('Acceleration and magnetic analysis give square-root mass scaling',()=>{const r=m=>Math.sqrt(2*m*1000/1e-19)/.2;close(r(4e-27)/r(2e-27),Math.SQRT2);});
+test('Fixed-speed analyzer instead gives linear mass scaling',()=>{const r=m=>m*2e5/(1e-19*.2);close(r(4e-27)/r(2e-27),2);});
+test('Crossed-field forces cancel for either charge sign',()=>{const e=4e4,b=.2,v=e/b;assert.equal(v,2e5);for(const q of [-1e-19,1e-19])close(q*e-q*v*b,0);});

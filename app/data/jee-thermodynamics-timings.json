@@ -1,0 +1,759 @@
+{
+  "duration": 414.1440000000112,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 78.40800000000208
+    },
+    {
+      "start": 78.40800000000208,
+      "end": 160.4640000000043
+    },
+    {
+      "start": 160.4640000000043,
+      "end": 242.3760000000065
+    },
+    {
+      "start": 242.3760000000065,
+      "end": 334.0800000000091
+    },
+    {
+      "start": 334.0800000000091,
+      "end": 414.1440000000112
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.6799999475479126,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.5199999809265137,
+      "end": 5.659999847412109,
+      "text": "A gas warms up, pushes a piston, and lifts a weight.",
+      "chapter": 0
+    },
+    {
+      "start": 6.360000133514404,
+      "end": 7.78000020980835,
+      "text": "Where does the supplied energy go?",
+      "chapter": 0
+    },
+    {
+      "start": 8.640000343322754,
+      "end": 10.720000267028809,
+      "text": "Thermodynamics keeps that energy account.",
+      "chapter": 0
+    },
+    {
+      "start": 11.539999961853027,
+      "end": 13.979999542236328,
+      "text": "First choose the system: today it is the gas.",
+      "chapter": 0
+    },
+    {
+      "start": 14.640000343322754,
+      "end": 16.15999984741211,
+      "text": "Everything else is its surroundings.",
+      "chapter": 0
+    },
+    {
+      "start": 17.18000030517578,
+      "end": 21.239999771118164,
+      "text": "Thermal equilibrium means there is no net heat transfer between bodies in",
+      "chapter": 0
+    },
+    {
+      "start": 21.239999771118164,
+      "end": 21.959999084472656,
+      "text": "thermal contact.",
+      "chapter": 0
+    },
+    {
+      "start": 22.5,
+      "end": 26.700000762939453,
+      "text": "The zeroth law says that if two bodies are each in thermal equilibrium with a",
+      "chapter": 0
+    },
+    {
+      "start": 26.700000762939453,
+      "end": 29.15999984741211,
+      "text": "third, they are in thermal equilibrium with each other.",
+      "chapter": 0
+    },
+    {
+      "start": 29.8799991607666,
+      "end": 32.959999084472656,
+      "text": "That is why a thermometer can compare temperatures consistently.",
+      "chapter": 0
+    },
+    {
+      "start": 33.97999954223633,
+      "end": 34.84000015258789,
+      "text": "Now choose signs.",
+      "chapter": 0
+    },
+    {
+      "start": 35.41999816894531,
+      "end": 39.15999984741211,
+      "text": "We'll call heat entering the gas positive, and work done by the gas on its",
+      "chapter": 0
+    },
+    {
+      "start": 39.15999984741211,
+      "end": 40.29999923706055,
+      "text": "surroundings positive.",
+      "chapter": 0
+    },
+    {
+      "start": 41.02000045776367,
+      "end": 45.15999984741211,
+      "text": "The first law then says the change in internal energy equals heat received",
+      "chapter": 0
+    },
+    {
+      "start": 45.15999984741211,
+      "end": 46.959999084472656,
+      "text": "minus work done by the gas.",
+      "chapter": 0
+    },
+    {
+      "start": 47.47999954223633,
+      "end": 51.540000915527344,
+      "text": "If it absorbs six hundred joules and does two hundred and fifty joules of work,",
+      "chapter": 0
+    },
+    {
+      "start": 51.91999816894531,
+      "end": 55.2400016784668,
+      "text": "its internal energy rises by three hundred and fifty joules.",
+      "chapter": 0
+    },
+    {
+      "start": 56.29999923706055,
+      "end": 60.79999923706055,
+      "text": "If instead the surroundings compress it and do work on it, our work by the gas",
+      "chapter": 0
+    },
+    {
+      "start": 60.79999923706055,
+      "end": 61.47999954223633,
+      "text": "is negative.",
+      "chapter": 0
+    },
+    {
+      "start": 62.47999954223633,
+      "end": 64.0199966430664,
+      "text": "Internal energy depends on the state.",
+      "chapter": 0
+    },
+    {
+      "start": 64.83999633789062,
+      "end": 68.86000061035156,
+      "text": "Heat and work depend on the process, so we don't say a gas contains a certain",
+      "chapter": 0
+    },
+    {
+      "start": 68.86000061035156,
+      "end": 69.44000244140625,
+      "text": "amount of heat.",
+      "chapter": 0
+    },
+    {
+      "start": 70.31999969482422,
+      "end": 74.37999725341797,
+      "text": "Some chemistry books use work on the system as positive and write a plus sign.",
+      "chapter": 0
+    },
+    {
+      "start": 74.9800033569336,
+      "end": 78.19999694824219,
+      "text": "Both conventions work, but never mix them in one solution.",
+      "chapter": 0
+    },
+    {
+      "start": 78.40800000000208,
+      "end": 80.96799994278162,
+      "text": "Let's see where gas work comes from.",
+      "chapter": 1
+    },
+    {
+      "start": 81.68799997139185,
+      "end": 84.74800015258997,
+      "text": "Pressure pushes the piston with force pressure times area.",
+      "chapter": 1
+    },
+    {
+      "start": 85.54799986648767,
+      "end": 89.288000114443,
+      "text": "A small piston movement changes the volume by area times displacement.",
+      "chapter": 1
+    },
+    {
+      "start": 90.36800003814905,
+      "end": 94.30799961853235,
+      "text": "Multiply them and the work element is external pressure times volume change.",
+      "chapter": 1
+    },
+    {
+      "start": 94.94800091552942,
+      "end": 99.36799908447473,
+      "text": "In a slow process close to mechanical equilibrium, the gas pressure tracks the",
+      "chapter": 1
+    },
+    {
+      "start": 99.36799908447473,
+      "end": 103.42800045776575,
+      "text": "resisting pressure, and the area under the pressure volume curve gives the",
+      "chapter": 1
+    },
+    {
+      "start": 103.42800045776575,
+      "end": 103.52800083923547,
+      "text": "work.",
+      "chapter": 1
+    },
+    {
+      "start": 103.96799946594446,
+      "end": 108.30799961853235,
+      "text": "For a constant pressure of two times ten to the power five pascals, let volume",
+      "chapter": 1
+    },
+    {
+      "start": 108.30799961853235,
+      "end": 111.1280012207052,
+      "text": "increase from one litre to three litres.",
+      "chapter": 1
+    },
+    {
+      "start": 111.1280012207052,
+      "end": 114.76800061035364,
+      "text": "The change is two litres, or zero point zero zero two cubic metres.",
+      "chapter": 1
+    },
+    {
+      "start": 115.52799893188684,
+      "end": 117.78800106811731,
+      "text": "Pressure times this change gives four hundred joules.",
+      "chapter": 1
+    },
+    {
+      "start": 118.64800167846887,
+      "end": 122.86799908447473,
+      "text": "During compression the volume change is negative, so work by the gas is",
+      "chapter": 1
+    },
+    {
+      "start": 122.86799908447473,
+      "end": 123.16799832153528,
+      "text": "negative.",
+      "chapter": 1
+    },
+    {
+      "start": 123.84799862671106,
+      "end": 127.40800000000208,
+      "text": "Don't forget that one litre is ten to the power minus three cubic metres.",
+      "chapter": 1
+    },
+    {
+      "start": 128.1280012207052,
+      "end": 132.36799908447472,
+      "text": "In a complete cycle, the gas returns to its initial state, and its internal",
+      "chapter": 1
+    },
+    {
+      "start": 132.36799908447472,
+      "end": 133.6280012207052,
+      "text": "energy change is zero.",
+      "chapter": 1
+    },
+    {
+      "start": 134.24800015258995,
+      "end": 136.68799877929894,
+      "text": "Therefore net heat received equals net work done.",
+      "chapter": 1
+    },
+    {
+      "start": 137.4480009155294,
+      "end": 141.98800183105675,
+      "text": "On a pressure volume graph, a clockwise loop gives positive net work; an",
+      "chapter": 1
+    },
+    {
+      "start": 141.98800183105675,
+      "end": 144.06800366211144,
+      "text": "anticlockwise loop gives negative net work.",
+      "chapter": 1
+    },
+    {
+      "start": 144.78799725342003,
+      "end": 148.20800305175987,
+      "text": "Different paths between the same endpoints can have different areas and",
+      "chapter": 1
+    },
+    {
+      "start": 148.20800305175987,
+      "end": 151.82799816894737,
+      "text": "therefore different work, while the internal energy change between those states",
+      "chapter": 1
+    },
+    {
+      "start": 151.82799816894737,
+      "end": 152.90800000000206,
+      "text": "remains the same.",
+      "chapter": 1
+    },
+    {
+      "start": 153.22799969482628,
+      "end": 158.3480024414083,
+      "text": "For a strongly irreversible process, don't substitute an undefined intermediate",
+      "chapter": 1
+    },
+    {
+      "start": 158.3480024414083,
+      "end": 160.08800030517784,
+      "text": "gas pressure into that integral.",
+      "chapter": 1
+    },
+    {
+      "start": 160.4640000000043,
+      "end": 164.6239998474164,
+      "text": "Process names are useful only if we understand what stays fixed.",
+      "chapter": 2
+    },
+    {
+      "start": 165.26400019073915,
+      "end": 167.06399990463686,
+      "text": "Isochoric means constant volume.",
+      "chapter": 2
+    },
+    {
+      "start": 167.80400015259218,
+      "end": 172.4640000000043,
+      "text": "With only pressure volume work allowed, a fixed volume means zero work, and",
+      "chapter": 2
+    },
+    {
+      "start": 172.4640000000043,
+      "end": 175.16399980926943,
+      "text": "heat supplied equals the internal energy increase.",
+      "chapter": 2
+    },
+    {
+      "start": 176.08399988556337,
+      "end": 177.80400015259218,
+      "text": "Isobaric means constant pressure.",
+      "chapter": 2
+    },
+    {
+      "start": 178.54399992371035,
+      "end": 182.80400015259218,
+      "text": "If the gas expands, some incoming energy does work and the rest changes",
+      "chapter": 2
+    },
+    {
+      "start": 182.80400015259218,
+      "end": 183.60399938965273,
+      "text": "internal energy.",
+      "chapter": 2
+    },
+    {
+      "start": 184.4640000000043,
+      "end": 187.9040005340619,
+      "text": "Isothermal means constant temperature, not zero heat transfer.",
+      "chapter": 2
+    },
+    {
+      "start": 188.2839996948285,
+      "end": 191.9640000000043,
+      "text": "For an ideal gas, internal energy depends only on temperature.",
+      "chapter": 2
+    },
+    {
+      "start": 192.7040016784711,
+      "end": 197.32400061035585,
+      "text": "So an isothermal ideal gas has zero internal energy change, and the first law",
+      "chapter": 2
+    },
+    {
+      "start": 197.32400061035585,
+      "end": 199.50400091553163,
+      "text": "gives heat received equal to work done.",
+      "chapter": 2
+    },
+    {
+      "start": 200.32400061035585,
+      "end": 204.84400106811952,
+      "text": "During a reversible isothermal expansion, pressure equals n R T divided by",
+      "chapter": 2
+    },
+    {
+      "start": 204.84400106811952,
+      "end": 205.56399847412538,
+      "text": "volume.",
+      "chapter": 2
+    },
+    {
+      "start": 205.82400061035585,
+      "end": 210.08399893188906,
+      "text": "Integrating gives work equal to n R T times the natural logarithm of the final",
+      "chapter": 2
+    },
+    {
+      "start": 210.08399893188906,
+      "end": 211.34400106811952,
+      "text": "to initial volume ratio.",
+      "chapter": 2
+    },
+    {
+      "start": 212.2239983215375,
+      "end": 216.4640000000043,
+      "text": "Suppose a problem gives n R T as one thousand joules and the gas doubles its",
+      "chapter": 2
+    },
+    {
+      "start": 216.4640000000043,
+      "end": 216.7239983215375,
+      "text": "volume.",
+      "chapter": 2
+    },
+    {
+      "start": 217.32400061035585,
+      "end": 222.32400061035585,
+      "text": "Multiply one thousand by the natural logarithm of two, about zero point six",
+      "chapter": 2
+    },
+    {
+      "start": 222.32400061035585,
+      "end": 223.2839996948285,
+      "text": "nine three.",
+      "chapter": 2
+    },
+    {
+      "start": 223.2839996948285,
+      "end": 227.30399633789492,
+      "text": "Work is approximately six hundred and ninety three joules, and the gas receives",
+      "chapter": 2
+    },
+    {
+      "start": 227.30399633789492,
+      "end": 228.04400183105898,
+      "text": "the same heat.",
+      "chapter": 2
+    },
+    {
+      "start": 228.62400366211367,
+      "end": 232.74399877930117,
+      "text": "If no heat entered, that ideal gas could not stay at the same temperature while",
+      "chapter": 2
+    },
+    {
+      "start": 232.74399877930117,
+      "end": 233.68400122070742,
+      "text": "doing positive work.",
+      "chapter": 2
+    },
+    {
+      "start": 234.34399725342226,
+      "end": 238.18400122070742,
+      "text": "Remember the ideal gas restriction: constant temperature does not automatically",
+      "chapter": 2
+    },
+    {
+      "start": 238.18400122070742,
+      "end": 241.24399877930117,
+      "text": "imply constant internal energy for every real substance.",
+      "chapter": 2
+    },
+    {
+      "start": 242.3760000000065,
+      "end": 246.29600007630046,
+      "text": "Now insulate the gas so that no heat crosses its boundary.",
+      "chapter": 3
+    },
+    {
+      "start": 247.03599984741862,
+      "end": 248.79600007630046,
+      "text": "That is an adiabatic process.",
+      "chapter": 3
+    },
+    {
+      "start": 249.5159998664921,
+      "end": 253.79600007630046,
+      "text": "If it expands and does work, the energy must come from its internal energy.",
+      "chapter": 3
+    },
+    {
+      "start": 254.51600034332927,
+      "end": 257.73599965668376,
+      "text": "For an ideal gas that usually means its temperature falls.",
+      "chapter": 3
+    },
+    {
+      "start": 258.5359998474186,
+      "end": 261.0560003051823,
+      "text": "Let's contrast this with isothermal expansion.",
+      "chapter": 3
+    },
+    {
+      "start": 262.095999313361,
+      "end": 266.13600022888835,
+      "text": "Isothermal expansion stays at constant temperature because suitable heat",
+      "chapter": 3
+    },
+    {
+      "start": 266.13600022888835,
+      "end": 268.7360006103581,
+      "text": "exchange replaces the energy used for work.",
+      "chapter": 3
+    },
+    {
+      "start": 269.45599992371257,
+      "end": 272.2559991607731,
+      "text": "Adiabatic expansion has no such replacement.",
+      "chapter": 3
+    },
+    {
+      "start": 273.07600076294597,
+      "end": 277.43600137329753,
+      "text": "In a reversible adiabatic ideal gas process with constant heat capacities,",
+      "chapter": 3
+    },
+    {
+      "start": 278.25600106812175,
+      "end": 280.93600137329753,
+      "text": "pressure times volume to the power gamma is constant.",
+      "chapter": 3
+    },
+    {
+      "start": 281.85599954224284,
+      "end": 286.4759984741276,
+      "text": "Gamma is the ratio of molar heat capacity at constant pressure to that at",
+      "chapter": 3
+    },
+    {
+      "start": 286.4759984741276,
+      "end": 286.9959989318913,
+      "text": "constant volume.",
+      "chapter": 3
+    },
+    {
+      "start": 287.9759984741276,
+      "end": 291.83599908447917,
+      "text": "Combining this relation with the gas equation gives temperature times volume to",
+      "chapter": 3
+    },
+    {
+      "start": 291.83599908447917,
+      "end": 294.07600076294597,
+      "text": "the power gamma minus one constant.",
+      "chapter": 3
+    },
+    {
+      "start": 295.1359983215397,
+      "end": 298.9560018310612,
+      "text": "Try a gas with gamma five thirds and initial temperature four hundred kelvin.",
+      "chapter": 3
+    },
+    {
+      "start": 299.83599908447917,
+      "end": 304.41600091553386,
+      "text": "It expands reversibly and adiabatically to eight times its initial volume.",
+      "chapter": 3
+    },
+    {
+      "start": 305.1359983215397,
+      "end": 308.81600244141276,
+      "text": "The temperature ratio is one over eight raised to the two thirds power.",
+      "chapter": 3
+    },
+    {
+      "start": 309.49600274658854,
+      "end": 313.3959966430729,
+      "text": "Eight to the two thirds is four, so the final temperature is one hundred kelvin",
+      "chapter": 3
+    },
+    {
+      "start": 313.3959966430729,
+      "end": 314.9759984741276,
+      "text": "in this idealized model.",
+      "chapter": 3
+    },
+    {
+      "start": 315.2360006103581,
+      "end": 318.11599786377604,
+      "text": "But do not apply this reversible relation blindly.",
+      "chapter": 3
+    },
+    {
+      "start": 318.83599908447917,
+      "end": 324.1760030517643,
+      "text": "An ideal gas freely expanding into a vacuum in an isolated container does no",
+      "chapter": 3
+    },
+    {
+      "start": 324.1760030517643,
+      "end": 326.136002136237,
+      "text": "external work and receives no heat.",
+      "chapter": 3
+    },
+    {
+      "start": 326.636002136237,
+      "end": 330.5759969482487,
+      "text": "Its internal energy, and hence its temperature, stays unchanged.",
+      "chapter": 3
+    },
+    {
+      "start": 331.41600091553386,
+      "end": 333.8760000000065,
+      "text": "Adiabatic alone is not enough to choose the power law.",
+      "chapter": 3
+    },
+    {
+      "start": 334.0800000000091,
+      "end": 338.500000076303,
+      "text": "Energy conservation is necessary, but it doesn't tell us which processes can",
+      "chapter": 4
+    },
+    {
+      "start": 338.500000076303,
+      "end": 339.1399999427886,
+      "text": "actually happen.",
+      "chapter": 4
+    },
+    {
+      "start": 339.88000019074394,
+      "end": 341.56000001908257,
+      "text": "The second law adds that direction.",
+      "chapter": 4
+    },
+    {
+      "start": 342.38000019074394,
+      "end": 346.6400004196258,
+      "text": "Heat flows spontaneously from a hotter body to a cooler one, not the reverse as",
+      "chapter": 4
+    },
+    {
+      "start": 346.6400004196258,
+      "end": 347.3999996948333,
+      "text": "the only effect.",
+      "chapter": 4
+    },
+    {
+      "start": 348.1800003814788,
+      "end": 352.3999996948333,
+      "text": "A refrigerator can move heat from cold to hot, but it needs work input.",
+      "chapter": 4
+    },
+    {
+      "start": 353.0800000000091,
+      "end": 357.0599995422454,
+      "text": "Another statement says a cyclic engine cannot take heat from just one reservoir",
+      "chapter": 4
+    },
+    {
+      "start": 357.0599995422454,
+      "end": 360.5599995422454,
+      "text": "and turn all of it into work with no other effect.",
+      "chapter": 4
+    },
+    {
+      "start": 361.0200005340667,
+      "end": 365.47999961853935,
+      "text": "Our simple engine receives one thousand joules from a hot reservoir and rejects",
+      "chapter": 4
+    },
+    {
+      "start": 365.47999961853935,
+      "end": 368.0599995422454,
+      "text": "seven hundred joules to a colder reservoir each cycle.",
+      "chapter": 4
+    },
+    {
+      "start": 368.9600010681243,
+      "end": 370.85999877930595,
+      "text": "It delivers three hundred joules of net work.",
+      "chapter": 4
+    },
+    {
+      "start": 371.8000012207122,
+      "end": 375.85999877930595,
+      "text": "Divide that work by the heat received: efficiency is zero point three, or",
+      "chapter": 4
+    },
+    {
+      "start": 375.85999877930595,
+      "end": 376.9999981689544,
+      "text": "thirty percent.",
+      "chapter": 4
+    },
+    {
+      "start": 376.9999981689544,
+      "end": 380.66000183106377,
+      "text": "This is not the assertion that heat can never be completely converted to work",
+      "chapter": 4
+    },
+    {
+      "start": 380.66000183106377,
+      "end": 382.94000061036064,
+      "text": "in a single noncyclic process.",
+      "chapter": 4
+    },
+    {
+      "start": 383.5599995422454,
+      "end": 386.03999908448174,
+      "text": "The cycle and single reservoir conditions matter.",
+      "chapter": 4
+    },
+    {
+      "start": 386.53999908448174,
+      "end": 390.69999893189384,
+      "text": "A reversible process is an ideal limit that can be reversed while restoring",
+      "chapter": 4
+    },
+    {
+      "start": 390.69999893189384,
+      "end": 394.35999877930595,
+      "text": "both system and surroundings, with no net changes left behind.",
+      "chapter": 4
+    },
+    {
+      "start": 395.3200016784759,
+      "end": 398.84000213623955,
+      "text": "Friction, free expansion and heat flow across a finite temperature difference",
+      "chapter": 4
+    },
+    {
+      "start": 398.84000213623955,
+      "end": 399.8999996948333,
+      "text": "are irreversible.",
+      "chapter": 4
+    },
+    {
+      "start": 400.84000213623955,
+      "end": 403.26000030518486,
+      "text": "Moving slowly is not enough if friction is still present.",
+      "chapter": 4
+    },
+    {
+      "start": 403.95999725342705,
+      "end": 408.5999966430755,
+      "text": "For JEE problems, begin with the energy balance, name the process, check its",
+      "chapter": 4
+    },
+    {
+      "start": 408.5999966430755,
+      "end": 411.0999966430755,
+      "text": "assumptions and only then choose a special formula.",
+      "chapter": 4
+    },
+    {
+      "start": 411.74000366211845,
+      "end": 413.9199963378997,
+      "text": "That's the foundation for thermodynamic reasoning.",
+      "chapter": 4
+    }
+  ]
+}

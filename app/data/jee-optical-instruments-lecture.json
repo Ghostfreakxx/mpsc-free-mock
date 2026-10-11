@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Microscopes and astronomical telescopes",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 16",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Simple magnifier",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/2-7-the-simple-magnifier"
+    },
+    {
+      "title": "OpenStax: Microscopes and telescopes",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/2-8-microscopes-and-telescopes"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Angular size is what the eye compares",
+      "formula": "Small angle: theta approximately h/d; D = 25 cm is the conventional near point",
+      "points": [
+        "Angular magnification is not the same as image-height magnification.",
+        "D is a reference viewing distance, not everybody's measured near point.",
+        "Optical instruments can increase angular size without moving the object closer."
+      ],
+      "script": "Hey, welcome back. A telescope does not bring the Moon physically closer. It makes the Moon occupy a larger angle at your eye. That is our key idea for optical instruments: angular magnification. A small object of height h at distance d subtends an angle approximately h divided by d, when that angle is small and expressed in radians. Bring the object closer and its angular size increases, but your eye cannot focus clearly at arbitrarily small distances. For standard JEE calculations, we take the least distance of distinct vision, D, as twenty-five centimeters unless another value is given. It is a conventional reference, not a promise that every person's eye has exactly that near point. A one-millimeter object viewed at twenty-five centimeters subtends about zero point zero zero four radians. A magnifier lets us see that object under a larger angle while keeping it in focus. Angular magnification compares the angle with the instrument against the specified unaided viewing angle. Image-height magnification, such as v over u for a lens, answers a different question. Mixing those two definitions causes trouble in microscope questions. Throughout this class we use ideal paraxial instruments, ignore aberrations, and specify where the final image lies. The final image at infinity corresponds to a relaxed eye in the standard model."
+    },
+    {
+      "title": "A simple magnifier has two viewing arrangements",
+      "formula": "Magnitude: M_infinity = D/f; M_near = 1 + D/f",
+      "points": [
+        "A positive lens forms a virtual enlarged image.",
+        "For a relaxed eye, the object is at the focal plane.",
+        "For a near-point image, the object is just inside the focal distance."
+      ],
+      "script": "A simple magnifier is a converging lens viewed close to the eye. For a final virtual image at infinity, place the object at the lens's focal plane. The outgoing rays are parallel, and the angle they make is approximately h over f. Divide by the unaided reference angle h over D, and angular magnification is D over f. A lens of focal length five centimeters gives magnification five when D is twenty-five centimeters. Now bring the object slightly inside the focus and arrange the final virtual image at the near point. With the lens close to the eye, the magnitude becomes one plus D over f, which is six for the same lens. The extra one belongs to this different viewing arrangement. It is not a correction you add to every magnifying-power formula. Let's connect this to the lens equation. Set final image distance to negative twenty-five centimeters and focal length to positive five. The object distance becomes negative twenty-five over six centimeters, about negative four point one seven. That lies inside the five-centimeter focus, as expected. The near-point arrangement can give greater angular magnification, but the relaxed-eye arrangement is often more comfortable in the elementary model. In a numerical problem, underline whether the final image is at infinity or at D before choosing the formula."
+    },
+    {
+      "title": "A compound microscope magnifies in two stages",
+      "formula": "M = m_objective x M_eyepiece; normal magnitude approximately (L/f_o)(D/f_e)",
+      "points": [
+        "The objective first makes a real inverted enlarged intermediate image.",
+        "The eyepiece acts as a magnifier of that intermediate image.",
+        "The L/f_o approximation assumes a high-magnification objective geometry."
+      ],
+      "script": "A compound microscope uses an objective lens close to the small object and an eyepiece close to the eye. The objective makes a real, inverted, enlarged intermediate image. The eyepiece treats that image as its object and magnifies its angular size. Therefore total magnification is the objective's signed linear magnification multiplied by the eyepiece's angular magnification. Let's calculate one exact objective stage. Its focal length is two centimeters, and the object distance is negative two point two centimeters. The lens equation gives image distance positive twenty-two centimeters, so objective magnification is negative ten. With an eyepiece focal length five centimeters and final image at infinity, eyepiece magnification is twenty-five over five, or five. Total magnification is negative fifty. Its magnitude is fifty, and the minus sign describes inversion relative to the original object. The intermediate image must lie at the eyepiece focal plane, so the lens separation here is twenty-seven centimeters. In a high-magnification approximation, objective magnification magnitude is about optical tube length L divided by objective focal length. L is the distance from the objective's back focal plane to the intermediate-image plane, not blindly every quoted mechanical tube length. That gives the common approximate normal magnification L D over f o f e. For a near-point final image, the eyepiece factor becomes one plus D over f e, and the geometry must be adjusted accordingly."
+    },
+    {
+      "title": "A refracting telescope magnifies a distant angle",
+      "formula": "Normal adjustment: M = -f_o/f_e; lens separation = f_o + f_e",
+      "points": [
+        "The distant object sends nearly parallel rays to the objective.",
+        "Its real intermediate image lies at the objective focal plane.",
+        "That plane coincides with the eyepiece object focal plane for a relaxed eye."
+      ],
+      "script": "For an astronomical telescope, the object is extremely far away. Rays arriving from one point of that object are nearly parallel. The objective lens makes a real image in its focal plane. For normal adjustment, place the eyepiece so this intermediate image is also at the eyepiece's incoming focal plane. The final rays are parallel, allowing the standard relaxed-eye view. The objective focal length is usually large, and the eyepiece focal length is small. Angular magnification is negative f o divided by f e. The negative sign means the astronomical image is inverted. If the objective focal length is one hundred centimeters and the eyepiece focal length is five centimeters, the magnification is negative twenty. The magnitude is twenty, and the lens separation is one hundred five centimeters. Why does that focal-length ratio appear? A distant object angle produces intermediate image height approximately f o times the incoming angle. The eyepiece converts that height into an outgoing angle approximately height divided by f e. Their ratio is f o over f e. A telescope objective with a large aperture also collects more light. Magnifying power and light collection are different properties; a huge magnification does not automatically reveal more detail. These formulas describe an ideal astronomical refractor in normal adjustment, not an upright terrestrial telescope with additional erecting elements."
+    },
+    {
+      "title": "A reflecting telescope replaces the objective lens",
+      "formula": "Reflector: |M| approximately f_primary/f_eyepiece in the ideal normal arrangement",
+      "points": [
+        "A concave primary mirror forms the real intermediate image.",
+        "A secondary can redirect the beam; layout depends on telescope design.",
+        "Reflection avoids objective chromatic refraction, but not all aberrations."
+      ],
+      "script": "A reflecting telescope uses a concave primary mirror instead of a large objective lens. Incoming rays from a distant object reflect toward the primary's focal region, where a real intermediate image forms. An eyepiece magnifies that image. A secondary mirror may redirect the beam to a convenient viewing position, depending on the design. Our board shows the primary-image-eyepiece sequence schematically; it is not a construction drawing for a particular telescope. In an ideal normal arrangement, magnifying-power magnitude is approximately primary focal length divided by eyepiece focal length. A two-hundred-centimeter primary with a four-centimeter eyepiece gives magnitude fifty. Reflection does not disperse different wavelengths through an objective lens, so the primary avoids the refractive objective's chromatic aberration. That does not mean every reflector is perfectly sharp: spherical aberration, alignment errors, diffraction, and atmospheric conditions can still matter. Telescope tube length also depends on the folded optical layout, so do not reuse the refractor's simple lens-separation expression as the physical length of every reflector. Our final comparison is useful for JEE: a microscope begins with a nearby small object and uses a short-focal-length objective to enlarge it. An astronomical telescope begins with a distant angular object and commonly uses a long-focal-length objective or primary. Both then use an eyepiece, and both require the final-image condition to choose the correct magnifying-power formula."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "For D = 25 cm and magnifier f = 5 cm, relaxed-eye angular magnification is:",
+      "options": [
+        "6",
+        "5",
+        "0.2",
+        "25"
+      ],
+      "answer": 1,
+      "explanation": "D/f = 25/5 = 5."
+    },
+    {
+      "question": "The same magnifier with its virtual image at the near point has magnitude:",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "1"
+      ],
+      "answer": 2,
+      "explanation": "1 + D/f = 6, with the lens close to the eye."
+    },
+    {
+      "question": "A microscope objective has f = 2 cm, u = -2.2 cm. Its signed magnification is:",
+      "options": [
+        "+10",
+        "-10",
+        "-2",
+        "+2"
+      ],
+      "answer": 1,
+      "explanation": "v = +22 cm and m = 22/(-2.2) = -10."
+    },
+    {
+      "question": "That objective combined with eyepiece factor +5 gives total signed magnification:",
+      "options": [
+        "-50",
+        "+50",
+        "-5",
+        "+2"
+      ],
+      "answer": 0,
+      "explanation": "Multiply the two stages: -10 x 5 = -50."
+    },
+    {
+      "question": "An astronomical refractor in normal adjustment has f_o = 100 cm, f_e = 5 cm. Lens separation is:",
+      "options": [
+        "95 cm",
+        "20 cm",
+        "105 cm",
+        "500 cm"
+      ],
+      "answer": 2,
+      "explanation": "The intermediate image is at both focal planes: separation = f_o + f_e."
+    },
+    {
+      "question": "A reflector has primary focal length 200 cm and eyepiece focal length 4 cm. Ideal normal magnification magnitude is:",
+      "options": [
+        "800",
+        "50",
+        "0.02",
+        "204"
+      ],
+      "answer": 1,
+      "explanation": "f_primary/f_eyepiece = 50."
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "title": "Cells and EMF: terminal voltage and internal resistance",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 12",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Electromotive force",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-1-electromotive-force"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "EMF is energy supplied per charge",
+      "formula": "EMF E = source work/q; model: ideal EMF E in series with internal resistance r",
+      "points": [
+        "Despite its name, EMF is measured in volts, not newtons.",
+        "A real cell is modeled by an ideal source and a series internal resistance.",
+        "Open-circuit terminal voltage equals EMF within this steady model."
+      ],
+      "script": "Hey, welcome back. Last class we treated a voltage source as ideal. Today we open that model up and ask why a real cell's voltage can fall when it powers a load. First, electromotive force, or E M F, is a historical name. It is not a mechanical force measured in newtons. It describes energy supplied by the source per unit charge, measured in joules per coulomb, which are volts. In a chemical cell, chemical processes maintain charge separation and supply electrical energy. Our introductory circuit model replaces that cell with an ideal E M F in series with an internal resistance, little r. The external resistor is capital R. Both belong to the current path, but they represent different places where energy is transferred. When the external circuit is open, current is zero in this steady model. There is no I r drop, so voltage across the cell's terminals equals its E M F. An ideal voltmeter has infinite resistance and draws no current; a practical high-resistance voltmeter approximates that open-circuit measurement. Once a load draws current, the terminal voltage can differ from the E M F. We will assume constant E M F and internal resistance during each problem. Real cells change with temperature, state of charge and operating conditions. For JEE, begin by sketching the source and little r as separate series elements. That simple drawing makes the rest of the calculations much easier."
+    },
+    {
+      "title": "Discharging: voltage available to the load",
+      "formula": "I = E/(R + r); V_terminal = E - Ir = IR; discharge current leaves the positive terminal",
+      "points": [
+        "The external load and internal resistance share the same current.",
+        "During discharge, internal resistance reduces the terminal voltage.",
+        "The model short-circuit current E/r assumes r > 0 and neglects other limits."
+      ],
+      "script": "Connect a load across the cell, and let conventional current leave its positive terminal. This is discharge: the cell supplies energy. The E M F must account for the voltage drop inside and outside, so E equals I R plus I r. Collect the terms to get current equal to E divided by R plus r. Voltage available at the terminals is E minus I r, and that same voltage equals I R across the external load. Let's use twelve volts of E M F, one ohm of internal resistance and five ohms of external resistance. Total resistance is six ohms, current is two amperes, and terminal voltage is ten volts. The missing two volts are the internal drop, not a disappearance of charge. Now reduce the load resistance. Current rises, which increases the internal drop, so terminal voltage falls in this constant-parameter model. At an open circuit, current approaches zero and terminal voltage approaches twelve volts. At a model short circuit, external resistance approaches zero. If internal resistance is positive, current approaches E over r and terminal voltage approaches zero. That is a mathematical limit, not a practical experiment to perform: real cells also have heating and operating limits. In numerical work, distinguish the E M F from the load voltage before substituting. Using twelve volts across the five ohm load here would incorrectly ignore the internal resistance."
+    },
+    {
+      "title": "Charging and the terminal-voltage graph",
+      "formula": "Charging current enters + terminal: V_terminal = E + Ir; discharge graph V = E - rI",
+      "points": [
+        "Define the current direction before choosing the terminal-voltage sign.",
+        "For a rechargeable cell being charged, the external supply exceeds its EMF by Ir.",
+        "On a V-versus-discharge-I graph, intercept is E and slope is -r."
+      ],
+      "script": "Now reverse the energy transfer. An external source can drive current into the positive terminal of a rechargeable cell. We call this charging. With I defined as the positive magnitude of that charging current, the terminal voltage required is E plus I r. The source must overcome both the cell's opposing E M F and the internal resistive drop. For a cell with E M F twelve volts and internal resistance one ohm, a charging current of one ampere requires thirteen volts at its terminals in our model. Don't memorize minus for a cell forever. Draw the current direction and state whether the cell supplies or absorbs energy. Alternatively, define signed current positive when it leaves the positive terminal. Then V equals E minus I r handles both cases, because charging current is negative in that convention. Here is another JEE tool: plot terminal voltage vertically against discharge current horizontally. The equation is a straight line with vertical intercept E and slope minus r, assuming those parameters remain constant. Suppose measurements are ten volts at two amperes and eight volts at four amperes. The slope is minus one volt per ampere, so internal resistance is one ohm. Substituting either point gives E M F twelve volts. Pause and check the intercept against both readings. Two measurements can reveal the hidden source model, not just the terminal voltage at one load."
+    },
+    {
+      "title": "Power, efficiency and maximum load power",
+      "formula": "P_source = EI; P_load = I^2 R; P_internal = I^2 r; efficiency = R/(R+r); maximum P_load at R=r",
+      "points": [
+        "Source power divides into external load power and internal heating.",
+        "Maximum load power is not maximum efficiency.",
+        "The matching result assumes fixed E and positive r with a variable resistive load."
+      ],
+      "script": "Let's follow the energy using the same twelve volt cell, one ohm internal resistance and five ohm load. Current is two amperes. Source power is E times I, or twenty four watts. Load power is I squared R, giving twenty watts, while internal heating is I squared r, giving four watts. The two outputs add to the source power. The fraction reaching the load is R divided by R plus r, here five sixths, or about eighty three point three percent. Now ask a different question: which load receives the greatest power for fixed E and positive r? Substitute current into load power to get E squared R divided by R plus r, all squared. Rewrite the denominator divided by R as R plus two r plus r squared over R. The sum R plus r squared over R is at least two r, with equality when R equals r. Therefore load power is greatest at resistance matching: capital R equals little r. Our cell then has current six amperes, terminal voltage six volts and load power thirty six watts. Internal heating is also thirty six watts, so efficiency is only fifty percent. A very large load resistance gives high efficiency but very small power. These are different goals. For JEE, identify whether the question asks for greatest current, greatest load power or greatest efficiency. The same circuit can give three different limiting answers."
+    },
+    {
+      "title": "Combining identical cells",
+      "formula": "n aiding series cells: E_eq=nE, r_eq=nr; n identical same-polarity parallel cells: E_eq=E, r_eq=r/n",
+      "points": [
+        "Aiding series cells add EMFs and internal resistances.",
+        "Identical same-polarity parallel cells keep the EMF and reduce equivalent internal resistance.",
+        "Unequal parallel cells require a general circuit analysis and can drive circulating current."
+      ],
+      "script": "Finally, let's combine cells while keeping the assumptions visible. Put n identical cells in series with their E M F directions aiding. Their E M Fs add to n E, and internal resistances add to n r. Current through a load R is n E divided by R plus n r. Reversing a cell changes its signed E M F contribution, while its internal resistance still adds. Now put n identical cells in parallel with corresponding polarities joined. Their equivalent E M F stays E; it does not multiply by n. Their equivalent internal resistance becomes r divided by n. Symmetry means they share the delivered current equally in this identical-cell model. Compare two cells, each with E M F one point five volts and internal resistance half an ohm, supplying a two ohm load. Aiding series gives three volts with one ohm internal resistance, so load current is one ampere and load voltage is two volts. Parallel gives one point five volts with a quarter ohm internal resistance, so load current is two thirds of an ampere and load voltage is four thirds of a volt. Series is better for this particular load; it is not universally better. For two identical cells, the currents are equal when external resistance equals the resistance of one cell. Larger loads favor series, and smaller positive loads favor parallel. Unequal E M Fs in parallel can drive circulating current, so do not apply the identical-cell formula there. We will use Kirchhoff laws for those broader circuits."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "EMF has SI unit:",
+      "options": [
+        "Newton",
+        "Volt",
+        "Ampere",
+        "Ohm"
+      ],
+      "answer": 1,
+      "explanation": "EMF is energy supplied per charge: joule/coulomb, or volt."
+    },
+    {
+      "question": "E = 12 V, r = 1 ohm and R = 5 ohm during discharge. Terminal voltage is:",
+      "options": [
+        "12 V",
+        "2 V",
+        "10 V",
+        "14 V"
+      ],
+      "answer": 2,
+      "explanation": "I = 12/(5+1) = 2 A; V = 12 - 2 x 1 = 10 V."
+    },
+    {
+      "question": "A rechargeable cell with E = 12 V and r = 1 ohm is charged at 1 A entering its positive terminal. Terminal voltage is:",
+      "options": [
+        "13 V",
+        "11 V",
+        "12 V",
+        "1 V"
+      ],
+      "answer": 0,
+      "explanation": "With charging-current magnitude positive, V = E + Ir = 13 V."
+    },
+    {
+      "question": "At fixed E and r > 0, maximum power to a resistive load occurs when:",
+      "options": [
+        "R approaches infinity",
+        "R = 0",
+        "R = 2r",
+        "R = r"
+      ],
+      "answer": 3,
+      "explanation": "P_load = E squared R/(R+r) squared has its maximum at R = r; efficiency there is 50%."
+    },
+    {
+      "question": "Two identical 1.5 V cells, each r = 0.5 ohm, are in same-polarity parallel across 2 ohm. Load current is:",
+      "options": [
+        "1 A",
+        "2/3 A",
+        "3/2 A",
+        "3 A"
+      ],
+      "answer": 1,
+      "explanation": "E_eq = 1.5 V; r_eq = 0.25 ohm; I = 1.5/2.25 = 2/3 A."
+    },
+    {
+      "question": "Terminal voltage falls from 10 V at 2 A to 8 V at 4 A discharge current. Constant internal resistance is:",
+      "options": [
+        "2 ohm",
+        "0.5 ohm",
+        "1 ohm",
+        "4 ohm"
+      ],
+      "answer": 2,
+      "explanation": "r = -delta V/delta I = -(-2)/2 = 1 ohm; extrapolated EMF is 12 V."
+    }
+  ]
+}

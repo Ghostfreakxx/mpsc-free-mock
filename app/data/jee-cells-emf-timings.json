@@ -1,0 +1,873 @@
+{
+  "duration": 439.53600000001217,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 89.90400000000251
+    },
+    {
+      "start": 89.90400000000251,
+      "end": 177.16800000000492
+    },
+    {
+      "start": 177.16800000000492,
+      "end": 269.56800000000754
+    },
+    {
+      "start": 269.56800000000754,
+      "end": 350.0880000000097
+    },
+    {
+      "start": 350.0880000000097,
+      "end": 439.53600000001217
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.5199999809265137,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.380000114440918,
+      "end": 4.659999847412109,
+      "text": "Last class we treated a voltage source as ideal.",
+      "chapter": 0
+    },
+    {
+      "start": 5.559999942779541,
+      "end": 10.619999885559082,
+      "text": "Today we open that model up and ask why a real cell's voltage can fall when it",
+      "chapter": 0
+    },
+    {
+      "start": 10.619999885559082,
+      "end": 11.039999961853027,
+      "text": "powers a load.",
+      "chapter": 0
+    },
+    {
+      "start": 11.739999771118164,
+      "end": 16.219999313354492,
+      "text": "First, electromotive force, or E M F, is a historical name.",
+      "chapter": 0
+    },
+    {
+      "start": 16.799999237060547,
+      "end": 19.100000381469727,
+      "text": "It is not a mechanical force measured in newtons.",
+      "chapter": 0
+    },
+    {
+      "start": 19.520000457763672,
+      "end": 23.780000686645508,
+      "text": "It describes energy supplied by the source per unit charge, measured in joules",
+      "chapter": 0
+    },
+    {
+      "start": 23.780000686645508,
+      "end": 25.5,
+      "text": "per coulomb, which are volts.",
+      "chapter": 0
+    },
+    {
+      "start": 26.299999237060547,
+      "end": 31.040000915527344,
+      "text": "In a chemical cell, chemical processes maintain charge separation and supply",
+      "chapter": 0
+    },
+    {
+      "start": 31.040000915527344,
+      "end": 32.02000045776367,
+      "text": "electrical energy.",
+      "chapter": 0
+    },
+    {
+      "start": 33.08000183105469,
+      "end": 37.71384488619291,
+      "text": "Our introductory circuit model replaces that cell with an ideal E M F in",
+      "chapter": 0
+    },
+    {
+      "start": 37.71384488619291,
+      "end": 38.099998474121094,
+      "text": "series",
+      "chapter": 0
+    },
+    {
+      "start": 38.099998474121094,
+      "end": 40.47999954223633,
+      "text": "with an internal resistance, little r.",
+      "chapter": 0
+    },
+    {
+      "start": 41.08000183105469,
+      "end": 43.119998931884766,
+      "text": "The external resistor is capital R.",
+      "chapter": 0
+    },
+    {
+      "start": 43.79999923706055,
+      "end": 47.65999984741211,
+      "text": "Both belong to the current path, but they represent different places where",
+      "chapter": 0
+    },
+    {
+      "start": 47.65999984741211,
+      "end": 48.560001373291016,
+      "text": "energy is transferred.",
+      "chapter": 0
+    },
+    {
+      "start": 49.31999969482422,
+      "end": 53.119998931884766,
+      "text": "When the external circuit is open, current is zero in this steady model.",
+      "chapter": 0
+    },
+    {
+      "start": 53.119998931884766,
+      "end": 59,
+      "text": "There is no I r drop, so voltage across the cell's terminals equals its E M F.",
+      "chapter": 0
+    },
+    {
+      "start": 59,
+      "end": 63.52000045776367,
+      "text": "An ideal voltmeter has infinite resistance and draws no current; a practical",
+      "chapter": 0
+    },
+    {
+      "start": 63.52000045776367,
+      "end": 66.9000015258789,
+      "text": "high resistance voltmeter approximates that open circuit measurement.",
+      "chapter": 0
+    },
+    {
+      "start": 67.83999633789062,
+      "end": 72.13999938964844,
+      "text": "Once a load draws current, the terminal voltage can differ from the E M F.",
+      "chapter": 0
+    },
+    {
+      "start": 72.13999938964844,
+      "end": 76.0199966430664,
+      "text": "We will assume constant E M F and internal resistance during each problem.",
+      "chapter": 0
+    },
+    {
+      "start": 76.77999877929688,
+      "end": 80.62000274658203,
+      "text": "Real cells change with temperature, state of charge and operating conditions.",
+      "chapter": 0
+    },
+    {
+      "start": 81.37999725341797,
+      "end": 85.44000244140625,
+      "text": "For JEE, begin by sketching the source and little r as separate series",
+      "chapter": 0
+    },
+    {
+      "start": 85.44000244140625,
+      "end": 85.86000061035156,
+      "text": "elements.",
+      "chapter": 0
+    },
+    {
+      "start": 86.5199966430664,
+      "end": 89.62000274658203,
+      "text": "That simple drawing makes the rest of the calculations much easier.",
+      "chapter": 0
+    },
+    {
+      "start": 89.90400000000251,
+      "end": 93.7450258293177,
+      "text": "Connect a load across the cell, and let conventional current leave its",
+      "chapter": 1
+    },
+    {
+      "start": 93.7450258293177,
+      "end": 94.18400020981086,
+      "text": "positive",
+      "chapter": 1
+    },
+    {
+      "start": 94.18400020981086,
+      "end": 94.46399994278205,
+      "text": "terminal.",
+      "chapter": 1
+    },
+    {
+      "start": 94.94399996185554,
+      "end": 97.54399986648811,
+      "text": "This is discharge: the cell supplies energy.",
+      "chapter": 1
+    },
+    {
+      "start": 98.16400022888435,
+      "end": 103.51451312471299,
+      "text": "The E M F must account for the voltage drop inside and outside, so E equals I",
+      "chapter": 1
+    },
+    {
+      "start": 103.51451312471299,
+      "end": 103.5840003051783,
+      "text": "R",
+      "chapter": 1
+    },
+    {
+      "start": 103.5840003051783,
+      "end": 105.36400003814948,
+      "text": "plus I r.",
+      "chapter": 1
+    },
+    {
+      "start": 105.36400003814948,
+      "end": 108.94400091552986,
+      "text": "Collect the terms to get current equal to E divided by R plus r.",
+      "chapter": 1
+    },
+    {
+      "start": 109.82400007629646,
+      "end": 114.49476881408943,
+      "text": "Voltage available at the terminals is E minus I r, and that same voltage",
+      "chapter": 1
+    },
+    {
+      "start": 114.49476881408943,
+      "end": 114.88399954223884,
+      "text": "equals",
+      "chapter": 1
+    },
+    {
+      "start": 114.88399954223884,
+      "end": 116.7440001525904,
+      "text": "I R across the external load.",
+      "chapter": 1
+    },
+    {
+      "start": 117.40400000000251,
+      "end": 122.46400137329353,
+      "text": "Let's use twelve volts of E M F, one ohm of internal resistance and five ohms",
+      "chapter": 1
+    },
+    {
+      "start": 122.46400137329353,
+      "end": 123.5840003051783,
+      "text": "of external resistance.",
+      "chapter": 1
+    },
+    {
+      "start": 124.66399832153571,
+      "end": 129.28400106811773,
+      "text": "Total resistance is six ohms, current is two amperes, and terminal voltage is",
+      "chapter": 1
+    },
+    {
+      "start": 129.28400106811773,
+      "end": 129.88399954223883,
+      "text": "ten volts.",
+      "chapter": 1
+    },
+    {
+      "start": 130.48400183105718,
+      "end": 134.52399893188726,
+      "text": "The missing two volts are the internal drop, not a disappearance of charge.",
+      "chapter": 1
+    },
+    {
+      "start": 135.5039984741236,
+      "end": 137.02399893188726,
+      "text": "Now reduce the load resistance.",
+      "chapter": 1
+    },
+    {
+      "start": 137.86399908447515,
+      "end": 142.2440001525904,
+      "text": "Current rises, which increases the internal drop, so terminal voltage falls in",
+      "chapter": 1
+    },
+    {
+      "start": 142.2440001525904,
+      "end": 143.60400076294195,
+      "text": "this constant parameter model.",
+      "chapter": 1
+    },
+    {
+      "start": 143.60400076294195,
+      "end": 148.62400122070562,
+      "text": "At an open circuit, current approaches zero and terminal voltage approaches",
+      "chapter": 1
+    },
+    {
+      "start": 148.62400122070562,
+      "end": 149.26400061035406,
+      "text": "twelve volts.",
+      "chapter": 1
+    },
+    {
+      "start": 149.9640013732935,
+      "end": 153.1639983215357,
+      "text": "At a model short circuit, external resistance approaches zero.",
+      "chapter": 1
+    },
+    {
+      "start": 153.84399862671148,
+      "end": 158.16400213623297,
+      "text": "If internal resistance is positive, current approaches E over r and terminal",
+      "chapter": 1
+    },
+    {
+      "start": 158.16400213623297,
+      "end": 159.3239981689478,
+      "text": "voltage approaches zero.",
+      "chapter": 1
+    },
+    {
+      "start": 160.04399938965093,
+      "end": 163.95605095731545,
+      "text": "That is a mathematical limit, not a practical experiment to perform: real",
+      "chapter": 1
+    },
+    {
+      "start": 163.95605095731545,
+      "end": 164.22399969482672,
+      "text": "cells",
+      "chapter": 1
+    },
+    {
+      "start": 164.22399969482672,
+      "end": 166.18399877929937,
+      "text": "also have heating and operating limits.",
+      "chapter": 1
+    },
+    {
+      "start": 167.18399877929937,
+      "end": 170.66400213623297,
+      "text": "In numerical work, distinguish the E M F from the load voltage before",
+      "chapter": 1
+    },
+    {
+      "start": 170.66400213623297,
+      "end": 171.22399969482672,
+      "text": "substituting.",
+      "chapter": 1
+    },
+    {
+      "start": 171.22399969482672,
+      "end": 175.9239966430689,
+      "text": "Using twelve volts across the five ohm load here would incorrectly ignore the",
+      "chapter": 1
+    },
+    {
+      "start": 175.9239966430689,
+      "end": 176.66400213623297,
+      "text": "internal resistance.",
+      "chapter": 1
+    },
+    {
+      "start": 177.16800000000492,
+      "end": 179.1280000381519,
+      "text": "Now reverse the energy transfer.",
+      "chapter": 2
+    },
+    {
+      "start": 180.06800009537235,
+      "end": 183.9880001716663,
+      "text": "An external source can drive current into the positive terminal of a",
+      "chapter": 2
+    },
+    {
+      "start": 183.9880001716663,
+      "end": 184.66800000000492,
+      "text": "rechargeable cell.",
+      "chapter": 2
+    },
+    {
+      "start": 185.4079997711231,
+      "end": 186.6880004577686,
+      "text": "We call this charging.",
+      "chapter": 2
+    },
+    {
+      "start": 187.4680001907398,
+      "end": 191.23723078879823,
+      "text": "With I defined as the positive magnitude of that charging current, the",
+      "chapter": 2
+    },
+    {
+      "start": 191.23723078879823,
+      "end": 191.66800000000492,
+      "text": "terminal",
+      "chapter": 2
+    },
+    {
+      "start": 191.66800000000492,
+      "end": 195.64799954224125,
+      "text": "voltage required is E plus I r.",
+      "chapter": 2
+    },
+    {
+      "start": 195.64799954224125,
+      "end": 200.1880004577686,
+      "text": "The source must overcome both the cell's opposing E M F and the internal",
+      "chapter": 2
+    },
+    {
+      "start": 200.1880004577686,
+      "end": 201.12799908447758,
+      "text": "resistive drop.",
+      "chapter": 2
+    },
+    {
+      "start": 201.82799984741703,
+      "end": 207.0679996185352,
+      "text": "For a cell with E M F twelve volts and internal resistance one ohm, a charging",
+      "chapter": 2
+    },
+    {
+      "start": 207.0679996185352,
+      "end": 211.7879989318897,
+      "text": "current of one ampere requires thirteen volts at its terminals in our model.",
+      "chapter": 2
+    },
+    {
+      "start": 212.26799847412602,
+      "end": 213.98799969482914,
+      "text": "Don't memorize minus for a cell forever.",
+      "chapter": 2
+    },
+    {
+      "start": 214.86800076294438,
+      "end": 218.66800000000492,
+      "text": "Draw the current direction and state whether the cell supplies or absorbs",
+      "chapter": 2
+    },
+    {
+      "start": 218.66800000000492,
+      "end": 219.1079986267139,
+      "text": "energy.",
+      "chapter": 2
+    },
+    {
+      "start": 220.14799954224125,
+      "end": 223.98799969482914,
+      "text": "Alternatively, define signed current positive when it leaves the positive",
+      "chapter": 2
+    },
+    {
+      "start": 223.98799969482914,
+      "end": 224.2879989318897,
+      "text": "terminal.",
+      "chapter": 2
+    },
+    {
+      "start": 225.1079986267139,
+      "end": 230.48799969482914,
+      "text": "Then V equals E minus I r handles both cases, because charging current is",
+      "chapter": 2
+    },
+    {
+      "start": 230.48799969482914,
+      "end": 231.6880004577686,
+      "text": "negative in that convention.",
+      "chapter": 2
+    },
+    {
+      "start": 232.1880004577686,
+      "end": 237.3480003051807,
+      "text": "Here is another JEE tool: plot terminal voltage vertically against discharge",
+      "chapter": 2
+    },
+    {
+      "start": 237.3480003051807,
+      "end": 238.16800000000492,
+      "text": "current horizontally.",
+      "chapter": 2
+    },
+    {
+      "start": 239.08799816895024,
+      "end": 244.08799816895024,
+      "text": "The equation is a straight line with vertical intercept E and slope minus r,",
+      "chapter": 2
+    },
+    {
+      "start": 244.8679969482471,
+      "end": 246.48799969482914,
+      "text": "assuming those parameters remain constant.",
+      "chapter": 2
+    },
+    {
+      "start": 247.38800122070805,
+      "end": 251.56800152588383,
+      "text": "Suppose measurements are ten volts at two amperes and eight volts at four",
+      "chapter": 2
+    },
+    {
+      "start": 251.56800152588383,
+      "end": 252.46800305176274,
+      "text": "amperes.",
+      "chapter": 2
+    },
+    {
+      "start": 252.56800152588383,
+      "end": 257.1480033569385,
+      "text": "The slope is minus one volt per ampere, so internal resistance is one ohm.",
+      "chapter": 2
+    },
+    {
+      "start": 258.12799908447755,
+      "end": 260.82800366211427,
+      "text": "Substituting either point gives E M F twelve volts.",
+      "chapter": 2
+    },
+    {
+      "start": 261.54799725342286,
+      "end": 263.94799877930177,
+      "text": "Pause and check the intercept against both readings.",
+      "chapter": 2
+    },
+    {
+      "start": 264.6879966430713,
+      "end": 268.20800091553224,
+      "text": "Two measurements can reveal the hidden source model, not just the terminal",
+      "chapter": 2
+    },
+    {
+      "start": 268.20800091553224,
+      "end": 269.267998474126,
+      "text": "voltage at one load.",
+      "chapter": 2
+    },
+    {
+      "start": 269.56800000000754,
+      "end": 273.90800015259543,
+      "text": "Let's follow the energy using the same twelve volt cell, one ohm internal",
+      "chapter": 3
+    },
+    {
+      "start": 273.90800015259543,
+      "end": 275.74799982834617,
+      "text": "resistance and five ohm load.",
+      "chapter": 3
+    },
+    {
+      "start": 276.3480002098159,
+      "end": 277.7480003051833,
+      "text": "Current is two amperes.",
+      "chapter": 3
+    },
+    {
+      "start": 278.5280000381545,
+      "end": 281.16800038147727,
+      "text": "Source power is E times I, or twenty four watts.",
+      "chapter": 3
+    },
+    {
+      "start": 282.0880004577712,
+      "end": 286.5479995422439,
+      "text": "Load power is I squared R, giving twenty watts, while internal heating is I",
+      "chapter": 3
+    },
+    {
+      "start": 286.5479995422439,
+      "end": 288.00800053406516,
+      "text": "squared r, giving four watts.",
+      "chapter": 3
+    },
+    {
+      "start": 288.3280002288894,
+      "end": 290.38799969483176,
+      "text": "The two outputs add to the source power.",
+      "chapter": 3
+    },
+    {
+      "start": 290.9880000763015,
+      "end": 296.22799984741965,
+      "text": "The fraction reaching the load is R divided by R plus r, here five sixths, or",
+      "chapter": 3
+    },
+    {
+      "start": 296.22799984741965,
+      "end": 297.707999389656,
+      "text": "about eighty three point three percent.",
+      "chapter": 3
+    },
+    {
+      "start": 298.28799931336204,
+      "end": 302.30800167847434,
+      "text": "Now ask a different question: which load receives the greatest power for fixed",
+      "chapter": 3
+    },
+    {
+      "start": 302.30800167847434,
+      "end": 303.56800000000754,
+      "text": "E and positive r?",
+      "chapter": 3
+    },
+    {
+      "start": 304.2480003051833,
+      "end": 309.0079986267165,
+      "text": "Substitute current into load power to get E squared R divided by R plus r, all",
+      "chapter": 3
+    },
+    {
+      "start": 309.0079986267165,
+      "end": 309.2480003051833,
+      "text": "squared.",
+      "chapter": 3
+    },
+    {
+      "start": 310.0479995422439,
+      "end": 314.56800000000754,
+      "text": "Rewrite the denominator divided by R as R plus two r plus r squared over R.",
+      "chapter": 3
+    },
+    {
+      "start": 315.207999389656,
+      "end": 320.12800137329856,
+      "text": "The sum R plus r squared over R is at least two r, with equality when R equals",
+      "chapter": 3
+    },
+    {
+      "start": 320.12800137329856,
+      "end": 320.48799816895286,
+      "text": "r.",
+      "chapter": 3
+    },
+    {
+      "start": 321.0479995422439,
+      "end": 325.1080009155349,
+      "text": "Therefore load power is greatest at resistance matching: capital R equals",
+      "chapter": 3
+    },
+    {
+      "start": 325.1080009155349,
+      "end": 325.6080009155349,
+      "text": "little r.",
+      "chapter": 3
+    },
+    {
+      "start": 325.6080009155349,
+      "end": 330.72799984741965,
+      "text": "Our cell then has current six amperes, terminal voltage six volts and load",
+      "chapter": 3
+    },
+    {
+      "start": 330.72799984741965,
+      "end": 331.88799969483176,
+      "text": "power thirty six watts.",
+      "chapter": 3
+    },
+    {
+      "start": 332.66799847412864,
+      "end": 336.4013350939704,
+      "text": "Internal heating is also thirty six watts, so efficiency is only fifty",
+      "chapter": 3
+    },
+    {
+      "start": 336.4013350939704,
+      "end": 336.828002136238,
+      "text": "percent.",
+      "chapter": 3
+    },
+    {
+      "start": 337.46800152588645,
+      "end": 341.1279975586013,
+      "text": "A very large load resistance gives high efficiency but very small power.",
+      "chapter": 3
+    },
+    {
+      "start": 341.76799694824973,
+      "end": 342.6880027465896,
+      "text": "These are different goals.",
+      "chapter": 3
+    },
+    {
+      "start": 343.26799694824973,
+      "end": 347.5372277174805,
+      "text": "For JEE, identify whether the question asks for greatest current, greatest",
+      "chapter": 3
+    },
+    {
+      "start": 347.5372277174805,
+      "end": 347.76799694824973,
+      "text": "load",
+      "chapter": 3
+    },
+    {
+      "start": 347.76799694824973,
+      "end": 349.2480003051833,
+      "text": "power or greatest efficiency.",
+      "chapter": 3
+    },
+    {
+      "start": 349.2480003051833,
+      "end": 350.0880000000097,
+      "text": "The same circuit can give three different limiting answers.",
+      "chapter": 3
+    },
+    {
+      "start": 350.0880000000097,
+      "end": 353.8080000286199,
+      "text": "Finally, let's combine cells while keeping the assumptions visible.",
+      "chapter": 4
+    },
+    {
+      "start": 354.70799988556877,
+      "end": 358.527999580393,
+      "text": "Put n identical cells in series with their E M F directions aiding.",
+      "chapter": 4
+    },
+    {
+      "start": 359.4680001144506,
+      "end": 364.6880003814794,
+      "text": "Their E M Fs add to n E, and internal resistances add to n r.",
+      "chapter": 4
+    },
+    {
+      "start": 364.6880003814794,
+      "end": 369.2479998474218,
+      "text": "Current through a load R is n E divided by R plus n r.",
+      "chapter": 4
+    },
+    {
+      "start": 369.2479998474218,
+      "end": 372.9079996948339,
+      "text": "Reversing a cell changes its signed E M F contribution, while its internal",
+      "chapter": 4
+    },
+    {
+      "start": 372.9079996948339,
+      "end": 374.0880000000097,
+      "text": "resistance still adds.",
+      "chapter": 4
+    },
+    {
+      "start": 374.78800076294914,
+      "end": 378.9280001525976,
+      "text": "Now put n identical cells in parallel with corresponding polarities joined.",
+      "chapter": 4
+    },
+    {
+      "start": 378.9280001525976,
+      "end": 383.38799923707023,
+      "text": "Their equivalent E M F stays E; it does not multiply by n.",
+      "chapter": 4
+    },
+    {
+      "start": 384.1879984741308,
+      "end": 387.3280016784765,
+      "text": "Their equivalent internal resistance becomes r divided by n.",
+      "chapter": 4
+    },
+    {
+      "start": 388.3479983215429,
+      "end": 391.8280016784765,
+      "text": "Symmetry means they share the delivered current equally in this identical cell",
+      "chapter": 4
+    },
+    {
+      "start": 391.8280016784765,
+      "end": 392.12800091553703,
+      "text": "model.",
+      "chapter": 4
+    },
+    {
+      "start": 393.1879984741308,
+      "end": 396.95415205423393,
+      "text": "Compare two cells, each with E M F one point five volts and internal",
+      "chapter": 4
+    },
+    {
+      "start": 396.95415205423393,
+      "end": 397.507998168955,
+      "text": "resistance",
+      "chapter": 4
+    },
+    {
+      "start": 397.507998168955,
+      "end": 399.8280016784765,
+      "text": "half an ohm, supplying a two ohm load.",
+      "chapter": 4
+    },
+    {
+      "start": 400.76800030518547,
+      "end": 405.0880000000097,
+      "text": "Aiding series gives three volts with one ohm internal resistance, so load",
+      "chapter": 4
+    },
+    {
+      "start": 405.0880000000097,
+      "end": 407.88799923707023,
+      "text": "current is one ampere and load voltage is two volts.",
+      "chapter": 4
+    },
+    {
+      "start": 408.5880000000097,
+      "end": 413.04799908448234,
+      "text": "Parallel gives one point five volts with a quarter ohm internal resistance, so",
+      "chapter": 4
+    },
+    {
+      "start": 413.04799908448234,
+      "end": 416.89491123304043,
+      "text": "load current is two thirds of an ampere and load voltage is four thirds of a",
+      "chapter": 4
+    },
+    {
+      "start": 416.89491123304043,
+      "end": 417.14799755860344,
+      "text": "volt.",
+      "chapter": 4
+    },
+    {
+      "start": 417.9079996948339,
+      "end": 421.6680018310644,
+      "text": "Series is better for this particular load; it is not universally better.",
+      "chapter": 4
+    },
+    {
+      "start": 422.46799725342765,
+      "end": 426.2526182720575,
+      "text": "For two identical cells, the currents are equal when external resistance",
+      "chapter": 4
+    },
+    {
+      "start": 426.2526182720575,
+      "end": 426.5680033569433,
+      "text": "equals",
+      "chapter": 4
+    },
+    {
+      "start": 426.5680033569433,
+      "end": 427.86799877930656,
+      "text": "the resistance of one cell.",
+      "chapter": 4
+    },
+    {
+      "start": 428.8279978637792,
+      "end": 432.4079996948339,
+      "text": "Larger loads favor series, and smaller positive loads favor parallel.",
+      "chapter": 4
+    },
+    {
+      "start": 433.0680033569433,
+      "end": 437.76800030518547,
+      "text": "Unequal E M Fs in parallel can drive circulating current, so do not apply the",
+      "chapter": 4
+    },
+    {
+      "start": 437.76800030518547,
+      "end": 439.02800244141594,
+      "text": "identical cell formula there.",
+      "chapter": 4
+    },
+    {
+      "start": 439.02800244141594,
+      "end": 439.53600000001217,
+      "text": "We will use Kirchhoff laws for those broader circuits.",
+      "chapter": 4
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.140
+Hey, welcome back.
+
+00:00:01.560 --> 00:00:05.200
+A crest moves along a rope, but a marked bit of rope oscillates locally.
+
+00:00:05.840 --> 00:00:07.200
+Let's make that difference numerical.
+
+00:00:07.860 --> 00:00:12.660
+In SI units, displacement y is zero point zero two times sine of four pi x
+
+00:00:12.660 --> 00:00:13.640
+minus twenty pi t.
+
+00:00:14.540 --> 00:00:18.520
+Amplitude is two centimetres, wave number is four pi per metre, and angular
+
+00:00:18.520 --> 00:00:20.640
+frequency is twenty pi radians per second.
+
+00:00:21.220 --> 00:00:23.500
+To follow a crest, keep its phase constant.
+
+00:00:24.080 --> 00:00:28.960
+Four pi x minus twenty pi t stays fixed, so x increases at five metres per
+
+00:00:28.960 --> 00:00:29.160
+second.
+
+00:00:29.880 --> 00:00:32.260
+That is the pattern speed, along positive x.
+
+00:00:32.960 --> 00:00:34.940
+Now watch one particle at a fixed position.
+
+00:00:35.780 --> 00:00:38.620
+Differentiate with respect to time while keeping x unchanged.
+
+00:00:39.220 --> 00:00:43.260
+Its transverse velocity is minus zero point four pi times cosine of the phase.
+
+00:00:43.860 --> 00:00:48.277
+At x zero and time zero, the particle is crossing equilibrium downward at
+
+00:00:48.277 --> 00:00:48.580
+about
+
+00:00:48.580 --> 00:00:50.360
+one point two six metres per second.
+
+00:00:50.360 --> 00:00:53.500
+Pause: zero displacement did not mean zero velocity.
+
+00:00:54.360 --> 00:00:57.860
+Its acceleration is minus angular frequency squared times displacement.
+
+00:00:58.640 --> 00:01:00.760
+At that instant acceleration is zero.
+
+00:01:01.420 --> 00:01:05.640
+A quarter period later, the particle is at its negative extreme: velocity is
+
+00:01:05.640 --> 00:01:07.440
+zero and acceleration is upward.
+
+00:01:08.220 --> 00:01:10.140
+There is also a useful equation check.
+
+00:01:10.960 --> 00:01:15.100
+Taking two time derivatives gives minus omega squared times y; taking two
+
+00:01:15.100 --> 00:01:17.620
+position derivatives gives minus k squared times y.
+
+00:01:18.300 --> 00:01:22.500
+Their ratio gives the ideal wave equation: the second time derivative equals
+
+00:01:22.500 --> 00:01:25.160
+pattern speed squared times the second position derivative.
+
+00:01:25.860 --> 00:01:29.960
+This is a linear, nondispersive wave model, not a promise for every real
+
+00:01:29.960 --> 00:01:30.240
+medium.
+
+00:01:30.920 --> 00:01:34.360
+Always ask which rate the problem wants before substituting numbers.
+
+00:01:35.568 --> 00:01:37.268
+Now the pattern stands still.
+
+00:01:37.888 --> 00:01:42.368
+A two metre string fixed at both ends has displacement zero point zero four
+
+00:01:42.368 --> 00:01:47.908
+times sine of pi x times cosine of one hundred pi t, again in SI units.
+
+00:01:48.248 --> 00:01:51.088
+The position factor sets each particle's amplitude.
+
+00:01:51.628 --> 00:01:53.908
+The time factor sets its oscillation.
+
+00:01:54.768 --> 00:01:59.168
+Nodes occur where sine of pi x is zero: at zero, one and two metres.
+
+00:01:59.548 --> 00:02:03.646
+There are two loops, so this is the second harmonic, with wavelength two
+
+00:02:03.646 --> 00:02:03.988
+metres
+
+00:02:03.988 --> 00:02:05.628
+and frequency fifty hertz.
+
+00:02:06.368 --> 00:02:09.648
+Each travelling component therefore has speed one hundred metres per second.
+
+00:02:10.588 --> 00:02:13.788
+Notice that a stationary pattern does not mean the particles are stationary.
+
+00:02:14.688 --> 00:02:19.188
+At x equal to one quarter metre, the local amplitude is zero point zero four
+
+00:02:19.188 --> 00:02:23.968
+divided by the square root of two, about two point eight three centimetres.
+
+00:02:23.968 --> 00:02:28.368
+That particle's maximum transverse speed is its local amplitude times one
+
+00:02:28.368 --> 00:02:31.468
+hundred pi, about eight point eight nine metres per second.
+
+00:02:32.068 --> 00:02:33.628
+Why isn't it the antinode value?
+
+00:02:34.208 --> 00:02:35.868
+Because amplitude depends on position.
+
+00:02:36.728 --> 00:02:39.748
+Compare particles at one quarter metre and one and one quarter metres.
+
+00:02:40.328 --> 00:02:44.148
+Their sine factors have opposite signs, so their motions are opposite at the
+
+00:02:44.148 --> 00:02:46.208
+same time: a phase difference of pi.
+
+00:02:47.068 --> 00:02:51.008
+Two points inside the same loop have the same temporal phase, though their
+
+00:02:51.008 --> 00:02:51.708
+amplitudes can differ.
+
+00:02:52.268 --> 00:02:56.528
+At a node phase of displacement is undefined because the amplitude is zero.
+
+00:02:57.388 --> 00:03:01.868
+Finally, the four centimetre antinode amplitude comes from two equal, opposite
+
+00:03:01.868 --> 00:03:05.568
+travelling waves, each with amplitude two centimetres.
+
+00:03:05.568 --> 00:03:08.408
+Do not assign the full standing wave amplitude to each component.
+
+00:03:09.088 --> 00:03:11.648
+Those checks prevent several common JEE errors.
+
+00:03:11.880 --> 00:03:13.780
+Let's finish with a detective problem.
+
+00:03:14.480 --> 00:03:18.280
+A reference tuning fork is two hundred and fifty six hertz.
+
+00:03:18.280 --> 00:03:20.860
+Another fork produces four beats per second with it.
+
+00:03:21.720 --> 00:03:22.980
+What is the unknown frequency?
+
+00:03:24.260 --> 00:03:25.100
+Think before choosing.
+
+00:03:25.760 --> 00:03:30.340
+It could be two hundred and fifty two or two hundred and sixty hertz.
+
+00:03:30.340 --> 00:03:32.880
+An absolute difference does not tell us which is higher.
+
+00:03:33.800 --> 00:03:38.260
+Now the question states that adding a small load lowers the unknown fork's
+
+00:03:38.260 --> 00:03:41.220
+frequency, and the beats decrease from four to three per second.
+
+00:03:42.180 --> 00:03:46.020
+If the original frequency were two hundred and fifty two, lowering it would
+
+00:03:46.020 --> 00:03:48.680
+move it farther from the reference and increase the beats.
+
+00:03:49.420 --> 00:03:50.720
+That contradicts the observation.
+
+00:03:51.740 --> 00:03:55.860
+So the original frequency was two hundred and sixty hertz; after the change it
+
+00:03:55.860 --> 00:03:59.760
+is two hundred and fifty nine, assuming the stated small change stays on the
+
+00:03:59.760 --> 00:04:00.760
+same side of the reference.
+
+00:04:01.680 --> 00:04:04.300
+The direction of the change matters as much as the beat count.
+
+00:04:05.080 --> 00:04:08.220
+Why is beat frequency the full frequency difference, not half?
+
+00:04:09.080 --> 00:04:13.860
+Adding two equal amplitude nearby tones produces a rapid carrier multiplied by
+
+00:04:13.860 --> 00:04:15.640
+a slowly changing cosine envelope.
+
+00:04:16.300 --> 00:04:20.920
+That signed cosine changes sign, but loudness depends on its magnitude or its
+
+00:04:20.920 --> 00:04:21.180
+square.
+
+00:04:22.020 --> 00:04:26.000
+Two adjacent loud maxima occur one divided by the frequency difference seconds
+
+00:04:26.000 --> 00:04:26.300
+apart.
+
+00:04:27.020 --> 00:04:29.860
+For a four hertz difference, they are a quarter second apart.
+
+00:04:30.540 --> 00:04:34.840
+With unequal amplitudes, the minimum amplitude is the absolute difference of
+
+00:04:34.840 --> 00:04:38.160
+the two amplitudes, so quiet moments need not be silence.
+
+00:04:39.080 --> 00:04:43.180
+This elementary beat model assumes stable nearby frequencies and comparable
+
+00:04:43.180 --> 00:04:43.700
+amplitudes.
+
+00:04:44.700 --> 00:04:49.160
+Our routine is simple: identify the measured quantity, preserve both initial
+
+00:04:49.160 --> 00:04:50.328
+possibilities, then use the physical change to decide.
