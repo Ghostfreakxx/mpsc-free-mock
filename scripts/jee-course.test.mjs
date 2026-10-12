@@ -20,7 +20,7 @@ test('published written lessons have substantive content, practice and figures',
     const expansion = ['atomic-spectra', 'periodic-trends', 'chemical-bonding', 'chemical-thermodynamics', 'solutions', 'equilibrium', 'redox-electrochemistry', 'chemical-kinetics', 'coordination-compounds', 'organic-principles', 'hydrocarbons', 'organic-halogens', 'organic-oxygen', 'organic-nitrogen', 'biomolecules', 'purification-analysis', 'p-block', 'd-f-block', 'practical-chemistry'].includes(lesson.id);
     const sections = { 'atomic-spectra': 6, 'periodic-trends': 6, 'chemical-bonding': 7, 'chemical-thermodynamics': 7, solutions: 7, equilibrium: 8, 'redox-electrochemistry': 8, 'chemical-kinetics': 8, 'coordination-compounds': 8, 'organic-principles': 8, hydrocarbons: 8, 'organic-halogens': 8, 'organic-oxygen': 8, 'organic-nitrogen': 8, biomolecules: 8, 'purification-analysis': 8, 'p-block': 8, 'd-f-block': 8, 'practical-chemistry': 8 };
     const extendedElectrochemistry = lesson.id === 'redox-electrochemistry';
-    const expandedPractice = ['equilibrium', 'redox-electrochemistry', 'chemical-kinetics', 'coordination-compounds'].includes(lesson.id);
+    const expandedPractice = ['equilibrium', 'redox-electrochemistry', 'chemical-kinetics', 'coordination-compounds', 'organic-principles'].includes(lesson.id);
     assert.equal(lesson.sections.length, extendedElectrochemistry ? 10 : newFoundation ? 8 : expansion ? sections[lesson.id] : 5);
     assert.equal(lesson.examples.length, expandedPractice ? 7 : newFoundation ? 4 : 3);
     assert.equal(lesson.quiz.length, expandedPractice ? 12 : newFoundation ? 8 : expansion ? 6 : 5);

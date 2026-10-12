@@ -63,3 +63,8 @@ covering outer-sphere chloride precipitation, mixed-ligand naming, nickel(II)
 geometry, fac/mer arrangements and pairing-energy comparisons for octahedral d6.
 This remains a written lesson; detailed stereochemical drawings and extended
 stability and reaction-sequence practice remain outstanding.
+
+Organic Principles now includes seven worked examples and twelve original MCQs,
+with branched alcohol naming, pKa comparisons, substitution electron bookkeeping
+and direct allylic resonance. Further multifunctional naming, stereochemical
+drawings and solvent-dependent acidity practice remain; this is a written lesson.
