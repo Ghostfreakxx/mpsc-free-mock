@@ -5,8 +5,9 @@ Baseline: [official NTA syllabus](https://jeemain.nta.nic.in/document/syllabus-2
 This is a coverage inventory, not a claim that the course is complete.
 There are 22 authored written lessons spanning all 20 Chemistry units.
 This means each unit has at least one foundation, not exhaustive topic coverage.
-There are no Chemistry Marin recordings in this batch. Existing Physics
-recordings and captions have not been regenerated.
+Organic Principles now has a five-chapter Marin recording with timed captions
+and chapter visuals. Other Chemistry lessons remain written-only. Existing
+Physics recordings and captions have not been regenerated.
 
 | Unit | Written foundation routes |
 | --- | --- |
@@ -67,4 +68,5 @@ stability and reaction-sequence practice remain outstanding.
 Organic Principles now includes seven worked examples and twelve original MCQs,
 with branched alcohol naming, pKa comparisons, substitution electron bookkeeping
 and direct allylic resonance. Further multifunctional naming, stereochemical
-drawings and solvent-dependent acidity practice remain; this is a written lesson.
+drawings and solvent-dependent acidity practice remain. A five-chapter recorded
+class now accompanies this written lesson at `/jee/classes/organic-principles`.

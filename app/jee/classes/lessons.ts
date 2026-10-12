@@ -1,3 +1,5 @@
+import organicPrinciples from "../../data/jee-organic-principles-lecture.json";
+import organicPrinciplesTimings from "../../data/jee-organic-principles-timings.json";
 import units from "../../data/jee-lecture.json";
 import unitTimings from "../../data/jee-lecture-timings.json";
 import measurements from "../../data/jee-measurements-lecture.json";
@@ -173,6 +175,8 @@ import wavesApplicationTimings from "../../data/jee-waves-applications-timings.j
 import { nextStudyLessons } from "./study-lessons-two";
 
 export type Lecture = {
+  subject?: "Physics" | "Chemistry" | "Mathematics";
+  unit?: number;
   id: string;
   number: string;
   title: string;
@@ -1068,5 +1072,15 @@ export const lectures: Lecture[] = [
     subtitles: "/lectures/lab-liquid-mixtures/english.vtt", timings: labLiquidTimings,
     segments: labLiquidMixtures.chapters.map(chapter => ({title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script})),
     sources: labLiquidMixtures.sources, quiz: labLiquidMixtures.quiz,
+  },
+  {
+    id: "organic-principles", subject: "Chemistry", unit: 14, number: "C01", title: organicPrinciples.title,
+    description: "Five narrated chapters on structures, naming, isomerism, electron arrows, stabilization and acidity.",
+    scope: "Recorded JEE Main 2026 Chemistry Unit 14 foundation with original practice, not official PYQs or complete unit coverage. Further multifunctional naming, stereochemical drawings and reaction mechanisms remain in development.",
+    progressKey: "jee.organic-principles.lecture.v1",
+    audio: "/lectures/organic-principles/narration-marin.mp3",
+    subtitles: "/lectures/organic-principles/english.vtt", timings: organicPrinciplesTimings,
+    segments: organicPrinciples.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
+    sources: organicPrinciples.sources, quiz: organicPrinciples.quiz,
   },
 ];

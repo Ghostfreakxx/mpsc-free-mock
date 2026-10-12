@@ -22,5 +22,5 @@ test('naming and resonance questions retain unambiguous keyed answers', () => {
   assert.equal(lesson.quiz[9].options[lesson.quiz[9].answer], 'CH2=CH-CH2+');
   assert.equal(lesson.quiz[11].options[lesson.quiz[11].answer], 'Moving an attached hydrogen to a different carbon');
   for (const q of lesson.quiz) assert.equal(new Set(q.options).size, 4);
-  assert.match(lesson.remaining, /not a Marin recording/);
+  assert.match(lesson.remaining, /five-chapter Marin recording/);
 });

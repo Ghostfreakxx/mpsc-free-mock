@@ -1,5 +1,7 @@
 "use client";
 
+import OrganicPrinciplesDiagram from "./organic-principles-diagram";
+
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Captions, Download, RotateCcw } from "lucide-react";
@@ -131,7 +133,7 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
       <Link href="/">MPSC FREE MOCK</Link>
     </header>
     <div className={styles.heading}>
-      <p>JEE · PHYSICS · FOUNDATION CLASS {lesson.number}</p>
+      <p>JEE · {(lesson.subject ?? "Physics").toUpperCase()} · FOUNDATION CLASS {lesson.number}</p>
       <h1>{lesson.title}</h1>
       <span>{formatTime(timings.duration)} · American English · Marin · AI-generated voice</span>
     </div>
@@ -140,6 +142,7 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
         <div className={styles.board}>
           <p className={styles.chapterNumber}>CHAPTER {String(chapterIndex + 1).padStart(2, "0")} / {lesson.segments.length}</p>
           <h2>{chapter.title}</h2>
+          {lesson.id === "organic-principles" && <OrganicPrinciplesDiagram chapter={chapterIndex} />}
           {lesson.id === "kinematics-applications" && <KinematicsDiagram chapter={chapterIndex} />}
           {lesson.id === "laws-motion-applications" && <LawsMotionDiagram chapter={chapterIndex} />}
           {lesson.id === "energy-applications" && <EnergyApplicationsDiagram chapter={chapterIndex} />}

@@ -14,12 +14,13 @@ import styles from "./lecture.module.css";
 export default function CourseLibrary() {
   const [subject, setSubject] = useState<Subject>("Physics");
   const available = studyLessons.filter(lesson => lesson.subject === subject);
-  const recordingGroups = groupRecordings(courseUnits.Physics, physicsCoverage, lectures);
+  const subjectRecordings = lectures.filter(lesson => (lesson.subject ?? "Physics") === subject);
+  const recordingGroups = groupRecordings(courseUnits[subject], subject === "Physics" ? physicsCoverage : courseUnits[subject].map((_, index) => ({ recordings: subjectRecordings.filter(lesson => lesson.unit === index + 1).map(lesson => lesson.id) })), subjectRecordings);
   return <>
     <nav className={styles.subjects} aria-label="Course subjects">{subjects.map(name => <button key={name} aria-pressed={subject === name} onClick={() => setSubject(name)}>{name}</button>)}</nav>
     <section aria-label={`${subject} available lessons`} className={styles.library}>
       <h2 className={styles.libraryTitle}>{subject} lessons</h2>
-      {subject === "Physics" && recordingGroups.map((group, index) => <details className={styles.recordingGroup} key={group.title} open={index === 0}>
+      {recordingGroups.map((group, index) => <details className={styles.recordingGroup} key={group.title} open={index === 0}>
         <summary><span>{group.title}</span><small>{group.lessons.length} {group.lessons.length === 1 ? "class" : "classes"} · {Math.floor(group.duration / 60)} min</small></summary>
         {group.lessons.map(lesson => <article key={lesson.id}>
         <div className={styles.lessonNumber}><BookOpen size={28} /><span>{lesson.number}</span></div>
@@ -33,7 +34,7 @@ export default function CourseLibrary() {
       {available.map(lesson => <article key={lesson.id}>
         <div className={styles.lessonNumber}><BookOpen size={28} /><span>U{lesson.unit}</span></div>
         <div><h3>{lesson.title}</h3><p>{lesson.summary}</p>
-          <p className={styles.lessonMeta}>Written lesson <span>{lesson.examples.length} worked examples</span><span>{lesson.quiz.length} practice checks</span></p>
+          <p className={styles.lessonMeta}>{subjectRecordings.some(recording => recording.id === lesson.id) ? "Written notes + recorded class" : "Written lesson"} <span>{lesson.examples.length} worked examples</span><span>{lesson.quiz.length} practice checks</span></p>
           {lectures.some(recording => recording.id === lesson.id) ? <Link href={`/jee/classes/${lesson.id}`}>Watch recorded class <ArrowRight size={17} /></Link> : <p>Marin recording not yet available</p>}
           <Link href={`/jee/classes/study/${lesson.id}`}>Read lesson <ArrowRight size={17} /></Link>
         </div>
@@ -42,11 +43,11 @@ export default function CourseLibrary() {
     <section className={styles.notes} aria-label={`${subject} course map`}>
       <h2>{subject} course map</h2>
       <p><a href={syllabusPdf} target="_blank" rel="noreferrer">Official NTA syllabus: {syllabusBaseline}</a></p>
-      <p>{courseUnits[subject].length} syllabus units · {subject === "Physics" ? `${physicsCoverage.filter(unit => unit.recordings.length > 0).length} with recorded lesson sets` : "Written and recorded coverage in development"}</p>
+      <p>{courseUnits[subject].length} syllabus units · {subject === "Physics" ? `${physicsCoverage.filter(unit => unit.recordings.length > 0).length} with recorded lesson sets` : `${new Set(subjectRecordings.map(lesson => lesson.unit)).size} with recorded lesson sets; more in development`}</p>
       <ol className={styles.courseMap}>{courseUnits[subject].map((title, index) => {
         const written = available.filter(lesson => lesson.unit === index + 1);
         const coverage = subject === "Physics" ? physicsCoverage[index] : undefined;
-        const recorded = lectures.filter(lecture => coverage?.recordings.includes(lecture.id));
+        const recorded = subjectRecordings.filter(lecture => coverage ? coverage.recordings.includes(lecture.id) : lecture.unit === index + 1);
         return <li key={title}><span>{String(index + 1).padStart(2, "0")}</span><div><strong>{title}</strong>
           {written.map(lesson => <Link key={lesson.id} href={`/jee/classes/study/${lesson.id}`}>{lesson.title} <ArrowRight size={14} /></Link>)}
           {recorded.map(lesson => <Link key={lesson.id} href={`/jee/classes/${lesson.id}`}>{lesson.title} <ArrowRight size={14} /></Link>)}
