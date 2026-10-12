@@ -6,8 +6,8 @@ test('new Chemistry foundations map to official units and distinguish written sc
   assert.deepEqual(lessons.map(l => l.unit), [8, 12, 14]);
   for (const l of lessons) {
     assert.equal(l.sections.length, 8);
-    assert.equal(l.examples.length, l.id === 'chemical-kinetics' ? 7 : 3);
-    assert.equal(l.quiz.length, l.id === 'chemical-kinetics' ? 12 : 6);
+    assert.equal(l.examples.length, ['chemical-kinetics', 'coordination-compounds'].includes(l.id) ? 7 : 3);
+    assert.equal(l.quiz.length, ['chemical-kinetics', 'coordination-compounds'].includes(l.id) ? 12 : 6);
     assert.match(l.remaining, /not a Marin recording or complete unit coverage/);
   }
 });

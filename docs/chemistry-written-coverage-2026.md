@@ -57,3 +57,9 @@ An existing foundation does not mean exhaustive unit coverage. The `remaining`
 field of each lesson identifies further practice or content required.
 Do not relabel these notes as prerecorded classes until audio, aligned captions
 and player integration have actually been generated and validated.
+
+Coordination Compounds now includes seven worked examples and twelve original MCQs,
+covering outer-sphere chloride precipitation, mixed-ligand naming, nickel(II)
+geometry, fac/mer arrangements and pairing-energy comparisons for octahedral d6.
+This remains a written lesson; detailed stereochemical drawings and extended
+stability and reaction-sequence practice remain outstanding.
