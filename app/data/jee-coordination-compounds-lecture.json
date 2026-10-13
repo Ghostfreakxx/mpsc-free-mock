@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Coordination compounds: ligands, geometry and electron counting",
+  "subject": "Chemistry",
+  "unit": 12,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 Chemistry syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: coordination chemistry",
+      "url": "https://openstax.org/books/chemistry-2e/pages/19-2-coordination-chemistry-of-transition-metals"
+    },
+    {
+      "title": "OpenStax: spectroscopic and magnetic properties",
+      "url": "https://openstax.org/books/chemistry-2e/pages/19-3-spectroscopic-and-magnetic-properties-of-coordination-compounds"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Read brackets, charges and donor atoms",
+      "formula": "[Co(en)3]Cl3: complex +3 · Co(III) · coordination number 6",
+      "points": [
+        "Oxidation state + ligand charges = complex charge.",
+        "Each neutral bidentate en supplies two donor atoms.",
+        "Outer-sphere chloride is not included in the coordination number."
+      ],
+      "script": "Welcome to Coordination Compounds. This recorded Chemistry class uses an AI generated Marin voice. Our first habit is to read the brackets before counting anything. A coordination entity contains a central atom or ion and its directly bonded ligands. A ligand donates an electron pair through a donor atom. Species outside the brackets are counterions, not automatically ligands. Consider the cobalt complex on the board. Three chloride counterions require the bracketed entity to have charge positive three. The abbreviation e n stands for ethane one two diamine. Each of these ligands is neutral, so cobalt has oxidation state plus three. Now count donor atoms separately. Each e n attaches through two nitrogen atoms. Three such bidentate ligands give six directly attached donors. The coordination number is six, not three. Oxidation state, complex charge, ligand count and donor count are four different quantities. Werner's primary valency is associated with oxidation state, while secondary valency is associated with coordination number and directed bonding. Water and ammonia are normally monodentate. A chelating ligand attaches through several donor atoms and forms a ring with the metal. E D T A can bind through six donor atoms in a common hexadentate arrangement. An ambidentate ligand is different: it can use alternative donor atoms. Nitrite can bind through nitrogen or oxygen, but that does not mean it normally binds through both simultaneously. For a second charge check, take hexacyanidoferrate with overall charge negative four. Six cyanide ligands contribute negative six. The iron oxidation state must be plus two to give negative four overall. Write that short charge equation before assigning any electronic configuration. The ligand's charge belongs in the charge balance; its denticity belongs in the donor count."
+    },
+    {
+      "title": "Name a complex and count ionizable chloride",
+      "formula": "[Co(NH3)5Cl]Cl2: 0.0100 mol → 0.0200 mol AgCl → 2.87 g",
+      "points": [
+        "Assume only outer chloride precipitates and the coordination sphere stays intact.",
+        "[Co(NH3)4Cl2]Cl: tetraamminedichloridocobalt(III) chloride.",
+        "Alphabetize ligand names while ignoring multiplicative prefixes."
+      ],
+      "script": "Naming becomes easier after charge balance. Name ligands alphabetically, ignoring multiplicative prefixes, then name the metal with its oxidation state in Roman numerals. Ammonia is called ammine, with two m letters, and water is aqua. An anionic complex uses a metal name ending in ate; iron uses ferrate. Thus the potassium salt of the negative four hexacyanidoferrate ion is potassium hexacyanidoferrate, two. The Roman numeral refers to iron's oxidation state, not the ion's charge. Now consider the cobalt salt with four ammonia ligands, two chlorido ligands inside the brackets and one chloride outside. The complex has charge positive one. Four neutral ammonia ligands contribute zero and the two bound chlorides contribute negative two. Cobalt is therefore plus three. Ammine precedes chlorido alphabetically. The name is tetraammine dichlorido cobalt, three, chloride, as written together on the board. Its octahedral geometry allows cis and trans forms; the formula alone does not tell us which one we have. Next, distinguish bound chloride from ionizable chloride. Our worked salt has five ammonia ligands and one chloride inside the brackets, with two chlorides outside. We assume an immediate silver nitrate test that leaves the coordination sphere intact. Under that assumption only the two outer chlorides form silver chloride. A sample containing zero point zero one zero zero mole of salt therefore gives zero point zero two zero zero mole of silver chloride. Multiply by one hundred forty three point five grams per mole to obtain two point eight seven grams. Cobalt is still plus three and its coordination number is six. Counting all three chlorines as precipitated chloride would ignore the test's stated assumption. Bound ligands are not permanently impossible to displace; reaction conditions and time matter. In this question, the intact sphere assumption tells us exactly what to count."
+    },
+    {
+      "title": "Distinguish geometry and isomerism",
+      "formula": "cis: adjacent · trans: opposite · fac-MA3B3: all A–A pairs cis",
+      "points": [
+        "Four donors can give tetrahedral or square-planar geometry.",
+        "Linkage changes the donor atom; ionization exchanges bound ion and counterion.",
+        "Octahedral fac has mutually cis A donors; mer has one trans A–A pair."
+      ],
+      "script": "Coordination number is useful, but it does not uniquely fix geometry. Six donors commonly give an octahedral environment. Four can give tetrahedral or square planar geometry. In elementary valence bond language these are described using orbital combinations such as s p three for tetrahedral and d s p two for square planar. These labels are a model, not a complete explanation of spectra. Isomerism needs a separate check. Structural isomers differ in connectivity or in which species lie inside the coordination sphere. Linkage isomers use different donor atoms of an ambidentate ligand. Ionization isomers exchange a coordinated ion with a counterion. A drawing merely rotated on the page is not a new isomer. For square planar platinum with two ammonia and two chloride ligands, adjacent chlorides define the cis form, while opposite chlorides define trans. The angle between the two platinum to chloride bond directions is ninety degrees in cis and one hundred eighty in trans. These are spatial arrangements with the same connectivity. An octahedral complex with three monodentate A ligands and three monodentate B ligands can have facial and meridional forms. In the facial form, the three A donors occupy a triangular face. Every A to metal to A angle is ninety degrees. In the meridional form, one pair of A ligands is opposite, giving a one hundred eighty degree angle. Draw or label the six positions before counting arrangements. Optical isomers are non superimposable mirror images. The cobalt complex with three bidentate e n ligands can form such a pair. Equal amounts of both mirror forms make a racemic mixture with no net optical rotation. That does not make the individual structures identical. Detailed three dimensional optical drawings remain further practice. First establish connectivity and geometry, then ask which particular kind of isomerism is possible."
+    },
+    {
+      "title": "Fill split orbitals and account for pairing",
+      "formula": "d6: EHS = −0.4Δo + P; ELS = −2.4Δo + 3P",
+      "points": [
+        "Octahedral t2g electrons contribute −0.4Δo each; eg electrons +0.6Δo each.",
+        "High-spin d6: t2g4 eg2, 4 unpaired. Low-spin d6: t2g6, 0 unpaired.",
+        "For Δo=250 and P=180 kJ/mol, ELS−EHS=−140 kJ/mol."
+      ],
+      "script": "Crystal field theory separates the five d orbitals into groups with different energies. In an octahedral field, the three t two g orbitals are lower and the two e g orbitals are higher. Relative to the barycentre, a t two g electron contributes minus zero point four delta octahedral, and an e g electron contributes plus zero point six delta octahedral. Those contributions alone exclude pairing energy. Consider a d six metal ion. If splitting is small compared with the cost of pairing, the high spin arrangement has four electrons in t two g and two in e g. Its orbital occupancy contains four unpaired electrons and one pair. If splitting is sufficiently large, the low spin arrangement puts all six electrons into the lower set as three pairs. There are then no unpaired electrons. Let's calculate the high spin field contribution. Four times minus zero point four, plus two times zero point six, gives minus zero point four delta octahedral. The low spin field contribution is six times minus zero point four, or minus two point four delta octahedral. Now include P as the cost per electron pair. High spin has energy minus zero point four delta plus P. Low spin has minus two point four delta plus three P. Comparing only the negative field terms would miss the extra pairing cost. With delta equal to two hundred fifty kilojoules per mole and P equal to one hundred eighty, high spin gives positive eighty and low spin negative sixty kilojoules per mole on the same chosen energy reference. Low spin minus high spin is negative one hundred forty. Low spin is lower by one hundred forty kilojoules per mole in this simplified model. The crossover is when the octahedral splitting equals the pairing energy. Do not transfer this octahedral orbital diagram unchanged to a square planar or tetrahedral complex."
+    },
+    {
+      "title": "Connect magnetism, colour and useful chemistry",
+      "formula": "μspin-only = √[n(n+2)] μB; n=4 → 4.90 μB; n=2 → 2.83 μB",
+      "points": [
+        "Ni(II) is d8 in both complexes; geometry and electron arrangement differ.",
+        "[NiCl4]2−: tetrahedral, 2 unpaired. [Ni(CN)4]2−: square planar, all paired.",
+        "Colour may involve d–d or charge-transfer transitions; d count alone is insufficient."
+      ],
+      "script": "Unpaired electrons produce paramagnetism. An all paired arrangement is diamagnetic. The spin only magnetic moment is the square root of n times n plus two, in Bohr magnetons, where n is the number of unpaired electrons. This is an approximation; orbital contributions can matter. Our high spin octahedral d six example has four unpaired electrons. The square root of four times six is about four point nine zero Bohr magnetons. Low spin d six has no unpaired electrons. Now compare the two nickel complexes on the board. Each has four singly negative ligands and total charge negative two, so both contain nickel in oxidation state plus two. Nickel two has a d eight configuration, after removal of the two four s electrons from neutral nickel. The chloride complex is usually tetrahedral with two unpaired electrons. Its spin only moment is the square root of eight, about two point eight three Bohr magnetons. The cyanide complex is square planar and all paired, so it is diamagnetic. The same metal, oxidation state and coordination number did not guarantee the same geometry or magnetism. Colour needs another check. Absorption between split d levels can remove visible wavelengths, leaving a complementary transmitted or reflected colour. Ligands, oxidation state and geometry affect the splitting. Charge transfer transitions can also produce colour, so d zero or d ten does not guarantee that every compound is colourless. Complex formation is useful in qualitative analysis, including the deep blue copper ammine species in aqueous ammonia, and in biological metal binding, such as iron in haem proteins and magnesium in chlorophyll. Finish with the sequence: complex charge, oxidation state, donor count, d electron count, geometry, then properties. Use the twelve original practice questions and the seven worked examples in the written companion. This is a recorded Unit twelve foundation, not exhaustive coverage or official past paper material."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Three bidentate en ligands attached through both donors give coordination number:",
+      "options": [
+        "3",
+        "2",
+        "9",
+        "6"
+      ],
+      "answer": 3,
+      "explanation": "Each en contributes two donor atoms, giving three times two directly bonded donors."
+    },
+    {
+      "question": "Iron oxidation state in [Fe(CN)6]^4- is:",
+      "options": [
+        "+4",
+        "+2",
+        "+6",
+        "-4"
+      ],
+      "answer": 1,
+      "explanation": "Six cyanide ligands contribute -6; iron must contribute +2 to give net -4."
+    },
+    {
+      "question": "In square-planar cis-MA2B2, identical ligands of either type are:",
+      "options": [
+        "Adjacent",
+        "Opposite",
+        "Outside the sphere",
+        "Unbound"
+      ],
+      "answer": 0,
+      "explanation": "Cis places the two like ligands adjacent; trans places them across from each other."
+    },
+    {
+      "question": "The lower d-orbital set in an octahedral crystal field is:",
+      "options": [
+        "eg",
+        "All five equally",
+        "t2g",
+        "Only the s orbital"
+      ],
+      "answer": 2,
+      "explanation": "Octahedral splitting places the three t2g orbitals below the two eg orbitals."
+    },
+    {
+      "question": "An octahedral low-spin d6 arrangement has how many unpaired electrons?",
+      "options": [
+        "4",
+        "0",
+        "2",
+        "6"
+      ],
+      "answer": 1,
+      "explanation": "All six electrons pair in the three lower t2g orbitals, leaving no unpaired electrons."
+    },
+    {
+      "question": "Multiplying ligand count by charge gives coordination number:",
+      "options": [
+        "Always",
+        "Only for neutral ligands",
+        "Only for chloride",
+        "Not in general"
+      ],
+      "answer": 3,
+      "explanation": "Coordination number counts donor atoms; ligand charge is used in a different charge-balance calculation."
+    },
+    {
+      "question": "Under an immediate precipitation test that leaves the coordination sphere intact, one mole of [Co(NH3)5Cl]Cl2 gives how many moles of AgCl?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "6"
+      ],
+      "answer": 1,
+      "explanation": "Only the two outer-sphere chloride ions are counted under the stated test conditions; the coordinated chloride remains bound."
+    },
+    {
+      "question": "The cobalt oxidation state in [Co(NH3)4Cl2]Cl is:",
+      "options": [
+        "+1",
+        "+2",
+        "+3",
+        "+4"
+      ],
+      "answer": 2,
+      "explanation": "The complex cation is +1 and its two chlorido ligands contribute -2, so cobalt contributes +3."
+    },
+    {
+      "question": "Which ligand is named first in tetraamminedichloridocobalt(III) chloride?",
+      "options": [
+        "Ammine",
+        "Chlorido",
+        "Cobalt",
+        "The counterion"
+      ],
+      "answer": 0,
+      "explanation": "Ligands are alphabetized by their names while ignoring multiplicative prefixes; ammine precedes chlorido."
+    },
+    {
+      "question": "The usual geometry and unpaired-electron count of [NiCl4]^2- are:",
+      "options": [
+        "Square planar, 0",
+        "Octahedral, 2",
+        "Tetrahedral, 0",
+        "Tetrahedral, 2"
+      ],
+      "answer": 3,
+      "explanation": "The tetrahedral nickel(II) d8 chloride complex has two unpaired electrons; coordination number four alone does not imply square planar."
+    },
+    {
+      "question": "For octahedral d6, including P per electron pair, E_LS - E_HS equals:",
+      "options": [
+        "-2 Delta_o + 2P",
+        "-2 Delta_o - 2P",
+        "2 Delta_o + P",
+        "-0.4 Delta_o"
+      ],
+      "answer": 0,
+      "explanation": "Low spin gains 2 Delta_o in field energy but introduces two additional electron pairs, costing 2P."
+    },
+    {
+      "question": "For an octahedral MA3B3 complex with monodentate A and B, a facial arrangement has:",
+      "options": [
+        "All A ligands outside the sphere",
+        "One A-A pair trans",
+        "All three A-A pairs cis",
+        "No B ligands coordinated"
+      ],
+      "answer": 2,
+      "explanation": "In the facial form the three A donors occupy one triangular face and are mutually cis. A meridional form contains a trans A-A pair."
+    }
+  ]
+}

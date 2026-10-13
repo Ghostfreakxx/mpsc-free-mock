@@ -5,8 +5,9 @@ Baseline: [official NTA syllabus](https://jeemain.nta.nic.in/document/syllabus-2
 This is a coverage inventory, not a claim that the course is complete.
 There are 22 authored written lessons spanning all 20 Chemistry units.
 This means each unit has at least one foundation, not exhaustive topic coverage.
-Organic Principles now has a five-chapter Marin recording with timed captions
-and chapter visuals. Other Chemistry lessons remain written-only. Existing
+Organic Principles, Coordination Compounds and Chemical Kinetics each have a five-chapter Marin
+recording with timed captions and chapter visuals. Other Chemistry lessons
+remain written-only. Existing
 Physics recordings and captions have not been regenerated.
 
 | Unit | Written foundation routes |
@@ -49,7 +50,8 @@ weak-electrolyte ionization, lead-acid discharge and current efficiency.
 
 Chemical kinetics now includes seven worked examples and twelve MCQs, with
 pressure-based first-order measurements, depletion boundaries, mixed rate-law
-changes and successive half-lives. This remains a written lesson.
+changes and successive half-lives. A five-chapter recorded class accompanies these notes
+at `/jee/classes/chemical-kinetics`.
 
 No unit is missing a written foundation. Detailed subtopic coverage, additional
 worked problems, independent factual review and Chemistry narration still need work.
@@ -62,7 +64,8 @@ and player integration have actually been generated and validated.
 Coordination Compounds now includes seven worked examples and twelve original MCQs,
 covering outer-sphere chloride precipitation, mixed-ligand naming, nickel(II)
 geometry, fac/mer arrangements and pairing-energy comparisons for octahedral d6.
-This remains a written lesson; detailed stereochemical drawings and extended
+A five-chapter recorded class now accompanies these notes at
+`/jee/classes/coordination-compounds`; detailed stereochemical drawings and extended
 stability and reaction-sequence practice remain outstanding.
 
 Organic Principles now includes seven worked examples and twelve original MCQs,

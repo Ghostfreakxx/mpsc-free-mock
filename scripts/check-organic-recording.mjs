@@ -12,7 +12,7 @@ try {
  assert.equal((await page.goto(`${base}/jee/classes`)).status(),200);
  assert.equal(await page.locator('a[href="/jee/classes/organic-principles"]').count(),0,'Chemistry must not appear under Physics');
  await page.getByRole('button',{name:'Chemistry',exact:true}).click();
- await page.getByRole('link',{name:/Watch recorded class/}).click();
+ await page.locator('a[href="/jee/classes/organic-principles"]').filter({hasText:'Watch recorded class'}).click();
  await page.waitForURL('**/jee/classes/organic-principles');
  assert.match(await page.locator('h1').textContent(),/Organic principles/);
  assert.match(await page.locator('main').textContent(),/CHEMISTRY/);

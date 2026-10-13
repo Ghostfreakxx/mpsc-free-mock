@@ -59,6 +59,8 @@ targets['wave-optics-applications'] = 'wave-optics-applications';
 for (const id of ['dual-nature-applications', 'atomic-nuclear-applications', 'electronics-applications', 'experimental-applications']) targets[id] = id;
 for (const id of ['banked-road-limits', 'optics-derivations', 'lab-liquid-mixtures']) targets[id] = id;
 targets['organic-principles'] = 'organic-principles';
+targets['coordination-compounds'] = 'coordination-compounds';
+targets['chemical-kinetics'] = 'chemical-kinetics';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const lesson = JSON.parse(await fs.readFile(path.join(root, `app/data/jee-${dataName}-lecture.json`), 'utf8'));

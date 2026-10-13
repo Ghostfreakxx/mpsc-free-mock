@@ -22,5 +22,5 @@ test('expanded practice includes naming and fac geometry with written scope', ()
   assert.equal(lesson.quiz.length, 12);
   assert.equal(lesson.quiz[8].options[lesson.quiz[8].answer], 'Ammine');
   assert.equal(lesson.quiz[11].options[lesson.quiz[11].answer], 'All three A-A pairs cis');
-  assert.match(lesson.remaining, /not a Marin recording/);
+  assert.match(lesson.remaining, /five-chapter Marin recording/);
 });

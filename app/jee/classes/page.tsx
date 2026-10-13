@@ -15,7 +15,7 @@ export default function ClassLibrary() {
     <div className={styles.heading}>
       <p>PHYSICS · CHEMISTRY · MATHEMATICS</p>
       <h1>JEE classes</h1>
-      <span>{lectures.filter(lesson => (lesson.subject ?? "Physics") === "Physics").length} recorded Physics classes · {lectures.filter(lesson => lesson.subject === "Chemistry").length} recorded Chemistry class · {studyLessons.length} written lessons · More Chemistry and Mathematics classes in development</span>
+      <span>{lectures.filter(lesson => (lesson.subject ?? "Physics") === "Physics").length} recorded Physics classes · {lectures.filter(lesson => lesson.subject === "Chemistry").length} recorded Chemistry classes · {studyLessons.length} written lessons · More Chemistry and Mathematics classes in development</span>
     </div>
     <CourseLibrary />
     <footer className={styles.notes}><p>Following the official NTA syllabus: <a href={syllabusSource} target="_blank" rel="noreferrer">{syllabusBaseline}</a>. Unit names and order checked on {syllabusChecked}. Independently produced classes; no NTA endorsement. Coverage is tracked against this 2026 baseline; 2027 and JEE Advanced require separate verification.</p></footer>

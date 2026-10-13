@@ -1,3 +1,7 @@
+import chemicalKinetics from "../../data/jee-chemical-kinetics-lecture.json";
+import kineticsTimings from "../../data/jee-chemical-kinetics-timings.json";
+import coordinationCompounds from "../../data/jee-coordination-compounds-lecture.json";
+import coordinationTimings from "../../data/jee-coordination-compounds-timings.json";
 import organicPrinciples from "../../data/jee-organic-principles-lecture.json";
 import organicPrinciplesTimings from "../../data/jee-organic-principles-timings.json";
 import units from "../../data/jee-lecture.json";
@@ -1082,5 +1086,25 @@ export const lectures: Lecture[] = [
     subtitles: "/lectures/organic-principles/english.vtt", timings: organicPrinciplesTimings,
     segments: organicPrinciples.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
     sources: organicPrinciples.sources, quiz: organicPrinciples.quiz,
+  },
+  {
+    id: "coordination-compounds", subject: "Chemistry", unit: 12, number: "C02", title: coordinationCompounds.title,
+    description: "Five narrated chapters on ligands, naming, isomerism, spin-state energies and magnetic properties.",
+    scope: "Recorded JEE Main 2026 Chemistry Unit 12 foundation with original practice, not official PYQs or complete unit coverage. Detailed optical-isomer drawings, stability comparisons and reaction sequences remain for further study.",
+    progressKey: "jee.coordination-compounds.lecture.v1",
+    audio: "/lectures/coordination-compounds/narration-marin.mp3",
+    subtitles: "/lectures/coordination-compounds/english.vtt", timings: coordinationTimings,
+    segments: coordinationCompounds.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
+    sources: coordinationCompounds.sources, quiz: coordinationCompounds.quiz,
+  },
+  {
+    id: "chemical-kinetics", subject: "Chemistry", unit: 8, number: "C03", title: chemicalKinetics.title,
+    description: "Five narrated chapters on experimental rate laws, zero and first order, pressure measurements and activation energy.",
+    scope: "Recorded JEE Main 2026 Chemistry Unit 8 foundation with original practice. Further experimental datasets and mechanism-based problems remain; this is not exhaustive unit coverage or official PYQ material.",
+    progressKey: "jee.chemical-kinetics.lecture.v1",
+    audio: "/lectures/chemical-kinetics/narration-marin.mp3",
+    subtitles: "/lectures/chemical-kinetics/english.vtt", timings: kineticsTimings,
+    segments: chemicalKinetics.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
+    sources: chemicalKinetics.sources, quiz: chemicalKinetics.quiz,
   },
 ];
