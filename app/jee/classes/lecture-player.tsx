@@ -1,6 +1,7 @@
 "use client";
 
 import KineticsDiagram from "./kinetics-diagram";
+import PhysicalChemistryDiagram from "./physical-chemistry-diagram";
 import CoordinationDiagram from "./coordination-diagram";
 import OrganicPrinciplesDiagram from "./organic-principles-diagram";
 
@@ -145,6 +146,7 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
           <p className={styles.chapterNumber}>CHAPTER {String(chapterIndex + 1).padStart(2, "0")} / {lesson.segments.length}</p>
           <h2>{chapter.title}</h2>
           {lesson.id === "chemical-kinetics" && <KineticsDiagram chapter={chapterIndex} />}
+          {(lesson.id === "chemical-thermodynamics" || lesson.id === "solutions") && <PhysicalChemistryDiagram lesson={lesson.id} chapter={chapterIndex} />}
           {lesson.id === "coordination-compounds" && <CoordinationDiagram chapter={chapterIndex} />}
           {lesson.id === "organic-principles" && <OrganicPrinciplesDiagram chapter={chapterIndex} />}
           {lesson.id === "kinematics-applications" && <KinematicsDiagram chapter={chapterIndex} />}

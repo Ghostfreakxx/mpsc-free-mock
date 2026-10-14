@@ -1,4 +1,8 @@
 import chemicalKinetics from "../../data/jee-chemical-kinetics-lecture.json";
+import chemicalThermodynamics from "../../data/jee-chemical-thermodynamics-lecture.json";
+import chemicalThermodynamicsTimings from "../../data/jee-chemical-thermodynamics-timings.json";
+import solutions from "../../data/jee-solutions-lecture.json";
+import solutionsTimings from "../../data/jee-solutions-timings.json";
 import kineticsTimings from "../../data/jee-chemical-kinetics-timings.json";
 import coordinationCompounds from "../../data/jee-coordination-compounds-lecture.json";
 import coordinationTimings from "../../data/jee-coordination-compounds-timings.json";
@@ -1106,5 +1110,25 @@ export const lectures: Lecture[] = [
     subtitles: "/lectures/chemical-kinetics/english.vtt", timings: kineticsTimings,
     segments: chemicalKinetics.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
     sources: chemicalKinetics.sources, quiz: chemicalKinetics.quiz,
+  },
+  {
+    id: "chemical-thermodynamics", subject: "Chemistry", unit: 4, number: "C04", title: chemicalThermodynamics.title,
+    description: "Five narrated chapters on energy signs, enthalpy, Hess cycles, entropy, Gibbs energy and equilibrium.",
+    scope: "Recorded JEE Main 2026 Chemistry Unit 4 foundation with original practice. Detailed enthalpy cycles, entropy integrals and further mixed problems remain; this is not exhaustive unit coverage or official PYQ material.",
+    progressKey: "jee.chemical-thermodynamics.lecture.v1",
+    audio: "/lectures/chemical-thermodynamics/narration-marin.mp3",
+    subtitles: "/lectures/chemical-thermodynamics/english.vtt", timings: chemicalThermodynamicsTimings,
+    segments: chemicalThermodynamics.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
+    sources: chemicalThermodynamics.sources, quiz: chemicalThermodynamics.quiz,
+  },
+  {
+    id: "solutions", subject: "Chemistry", unit: 5, number: "C05", title: solutions.title,
+    description: "Five narrated chapters on concentrations, Raoult’s law, freezing-point shifts, osmosis and particle factors.",
+    scope: "Recorded JEE Main 2026 Chemistry Unit 5 foundation with original practice. Detailed phase diagrams, azeotropes, nonideal activities and further mixed problems remain; this is not exhaustive unit coverage or official PYQ material.",
+    progressKey: "jee.solutions.lecture.v1",
+    audio: "/lectures/solutions/narration-marin.mp3",
+    subtitles: "/lectures/solutions/english.vtt", timings: solutionsTimings,
+    segments: solutions.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
+    sources: solutions.sources, quiz: solutions.quiz,
   },
 ];

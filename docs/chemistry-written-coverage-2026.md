@@ -5,7 +5,8 @@ Baseline: [official NTA syllabus](https://jeemain.nta.nic.in/document/syllabus-2
 This is a coverage inventory, not a claim that the course is complete.
 There are 22 authored written lessons spanning all 20 Chemistry units.
 This means each unit has at least one foundation, not exhaustive topic coverage.
-Organic Principles, Coordination Compounds and Chemical Kinetics each have a five-chapter Marin
+Organic Principles, Coordination Compounds, Chemical Kinetics, Chemical Thermodynamics
+and Solutions each have a five-chapter Marin
 recording with timed captions and chapter visuals. Other Chemistry lessons
 remain written-only. Existing
 Physics recordings and captions have not been regenerated.
@@ -38,6 +39,13 @@ limitations, explanations, original worked examples, practice MCQs, diagrams
 and downloadable notes. Original questions are not represented as official PYQs.
 
 ## Remaining course work
+
+Chemical Thermodynamics and Solutions now each have five narrated chapters,
+aligned captions, visual boards and six original quiz questions. Their written
+companions retain three worked examples each. Recordings are available at
+`/jee/classes/chemical-thermodynamics` and `/jee/classes/solutions`.
+Detailed entropy integrals, enthalpy cycles, phase diagrams and nonideal activity
+calculations remain beyond these foundations.
 
 Equilibrium now includes seven worked examples and twelve original MCQs,
 including buffer neutralization, salt hydrolysis, dilution before precipitation

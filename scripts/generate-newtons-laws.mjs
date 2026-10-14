@@ -61,6 +61,8 @@ for (const id of ['banked-road-limits', 'optics-derivations', 'lab-liquid-mixtur
 targets['organic-principles'] = 'organic-principles';
 targets['coordination-compounds'] = 'coordination-compounds';
 targets['chemical-kinetics'] = 'chemical-kinetics';
+targets['chemical-thermodynamics'] = 'chemical-thermodynamics';
+targets.solutions = 'solutions';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const lesson = JSON.parse(await fs.readFile(path.join(root, `app/data/jee-${dataName}-lecture.json`), 'utf8'));
@@ -88,9 +90,11 @@ function inspectMp3(buffer) {
 const parts=[], chapters=[];
 let duration=0;
 for (const [i,chapter] of lesson.chapters.entries()) {
+  // Preserve the exact requested input when a reviewed transcript corrects a TTS omission.
+  const speechInput = chapter.speechInput ?? chapter.script;
   const stem=`chapter-${String(i+1).padStart(2,'0')}`;
   const file=path.join(folder,`${stem}.mp3`);
-  const fingerprint=createHash('sha256').update(JSON.stringify({script:chapter.script,instructions,voice:'marin',model:'gpt-4o-mini-tts'})).digest('hex');
+  const fingerprint=createHash('sha256').update(JSON.stringify({script:speechInput,instructions,voice:'marin',model:'gpt-4o-mini-tts'})).digest('hex');
   let buffer;
   try {
     buffer=await fs.readFile(file);
@@ -98,9 +102,9 @@ for (const [i,chapter] of lesson.chapters.entries()) {
   } catch(error) {
     if(error.code!=='ENOENT') throw error;
     if (buffer) throw new Error('Audio exists without a valid fingerprint; preserve it and repair its cache');
-    if (chapter.script.length > 4096) throw new Error('Chapter exceeds the speech input limit');
+    if (speechInput.length > 4096) throw new Error('Chapter exceeds the speech input limit');
     await reserveAudioBudget(root, { lesson: selected, chapter: i + 1, kind: 'tts', amount: ttsReservationUsd });
-    const response=await fetch('https://api.openai.com/v1/audio/speech',{method:'POST',headers:{Authorization:`Bearer ${key}`,'Content-Type':'application/json'},body:JSON.stringify({model:'gpt-4o-mini-tts',voice:'marin',instructions,input:chapter.script,response_format:'mp3'}),signal:AbortSignal.timeout(180000)});
+    const response=await fetch('https://api.openai.com/v1/audio/speech',{method:'POST',headers:{Authorization:`Bearer ${key}`,'Content-Type':'application/json'},body:JSON.stringify({model:'gpt-4o-mini-tts',voice:'marin',instructions,input:speechInput,response_format:'mp3'}),signal:AbortSignal.timeout(180000)});
     if(!response.ok) throw new Error(`TTS HTTP ${response.status}`);
     buffer=Buffer.from(await response.arrayBuffer());
     const generated = inspectMp3(buffer);

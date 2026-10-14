@@ -54,6 +54,8 @@ for (const id of ['banked-road-limits', 'optics-derivations', 'lab-liquid-mixtur
 targets['organic-principles'] = 'organic-principles';
 targets['coordination-compounds'] = 'coordination-compounds';
 targets['chemical-kinetics'] = 'chemical-kinetics';
+targets['chemical-thermodynamics'] = 'chemical-thermodynamics';
+targets.solutions = 'solutions';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const folder = path.join(root, 'public/lectures', selected);

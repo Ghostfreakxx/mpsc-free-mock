@@ -3,14 +3,14 @@ import assert from 'node:assert/strict';
 import { physicalChemistryLessons as lessons } from '../app/jee/classes/physical-chemistry-study.ts';
 const near = (a, b, tolerance = 1e-10) => assert.ok(Math.abs(a - b) < tolerance, `${a} != ${b}`);
 
-test('physical Chemistry lessons map to Units 4 and 5 with explicit written-only scope', () => {
+test('physical Chemistry lessons map to Units 4 and 5 with recorded companion scope', () => {
   assert.deepEqual(lessons.map(l => [l.id, l.unit]), [['chemical-thermodynamics', 4], ['solutions', 5]]);
   for (const lesson of lessons) {
     assert.equal(lesson.subject, 'Chemistry');
     assert.equal(lesson.sections.length, 7);
     assert.equal(lesson.examples.length, 3);
     assert.equal(lesson.quiz.length, 6);
-    assert.match(lesson.remaining, /not a Marin recording/);
+    assert.match(lesson.remaining, /five-chapter Marin recording/);
     assert.ok(lesson.sources.some(s => s.url.includes('jeemain.nta.nic.in')));
   }
 });
