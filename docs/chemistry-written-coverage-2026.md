@@ -6,8 +6,9 @@ This is a coverage inventory, not a claim that the course is complete.
 There are 22 authored written lessons spanning all 20 Chemistry units.
 This means each unit has at least one foundation, not exhaustive topic coverage.
 Organic Principles, Coordination Compounds, Chemical Kinetics, Chemical Thermodynamics
-and Solutions each have a five-chapter Marin
-recording with timed captions and chapter visuals. Other Chemistry lessons
+and Solutions each have a five-chapter Marin recording. Equilibrium has eight
+chapters and Redox and Electrochemistry has nine. All seven recordings include
+timed captions and chapter visuals. Other Chemistry lessons
 remain written-only. Existing
 Physics recordings and captions have not been regenerated.
 
@@ -50,11 +51,17 @@ calculations remain beyond these foundations.
 Equilibrium now includes seven worked examples and twelve original MCQs,
 including buffer neutralization, salt hydrolysis, dilution before precipitation
 and a weak-acid calculation that requires the quadratic rather than a shortcut.
-These are written practice additions, not a prerecorded Chemistry class.
+An eight-chapter recorded class now accompanies these notes at
+`/jee/classes/equilibrium`, covering dynamic equilibrium, Q and K, pressure and
+temperature changes, acid-base models, weak-acid calculations, buffers,
+hydrolysis and precipitation after dilution.
 
 Electrochemistry now has ten sections, seven worked examples and twelve MCQs.
 The additions cover basic-medium permanganate reduction, conductivity units,
 weak-electrolyte ionization, lead-acid discharge and current efficiency.
+A nine-chapter recorded class accompanies these notes at
+`/jee/classes/redox-electrochemistry`, including the additional conductance,
+charge-balance and current-efficiency calculations.
 
 Chemical kinetics now includes seven worked examples and twelve MCQs, with
 pressure-based first-order measurements, depletion boundaries, mixed rate-law

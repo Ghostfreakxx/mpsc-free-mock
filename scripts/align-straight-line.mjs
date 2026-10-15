@@ -56,6 +56,8 @@ targets['coordination-compounds'] = 'coordination-compounds';
 targets['chemical-kinetics'] = 'chemical-kinetics';
 targets['chemical-thermodynamics'] = 'chemical-thermodynamics';
 targets.solutions = 'solutions';
+targets.equilibrium = 'equilibrium';
+targets['redox-electrochemistry'] = 'redox-electrochemistry';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const folder = path.join(root, 'public/lectures', selected);

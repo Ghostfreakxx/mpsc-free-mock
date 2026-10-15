@@ -3,11 +3,11 @@ import assert from 'node:assert/strict';
 import { equilibriumElectrochemistryLessons } from '../app/jee/classes/equilibrium-electrochemistry-study.ts';
 const lesson = equilibriumElectrochemistryLessons[1];
 
-test('expanded electrochemistry retains written-only scope and original examples', () => {
+test('expanded electrochemistry retains recorded companion scope and original examples', () => {
   assert.equal(lesson.sections.length, 10);
   assert.equal(lesson.examples.length, 7);
   assert.equal(lesson.quiz.length, 12);
-  assert.match(lesson.remaining, /not a Marin recording or complete unit coverage/);
+  assert.match(lesson.remaining, /Marin recording and written notes, not complete unit coverage/);
   assert.match(lesson.examples[2].answer, /3.18 g/);
 });
 test('basic permanganate half-reaction conserves atoms and charge', () => {

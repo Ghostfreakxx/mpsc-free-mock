@@ -63,9 +63,13 @@ targets['coordination-compounds'] = 'coordination-compounds';
 targets['chemical-kinetics'] = 'chemical-kinetics';
 targets['chemical-thermodynamics'] = 'chemical-thermodynamics';
 targets.solutions = 'solutions';
+targets.equilibrium = 'equilibrium';
+targets['redox-electrochemistry'] = 'redox-electrochemistry';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const lesson = JSON.parse(await fs.readFile(path.join(root, `app/data/jee-${dataName}-lecture.json`), 'utf8'));
+const onlyChapter = process.argv[3] === undefined ? null : Number(process.argv[3]);
+if (onlyChapter !== null && (!Number.isInteger(onlyChapter) || onlyChapter < 1 || onlyChapter > lesson.chapters.length)) throw new Error('Invalid chapter number');
 const folder = path.join(root, 'public/lectures', selected);
 await fs.mkdir(folder, { recursive: true });
 const instructions = lesson.voiceInstructions ?? 'Warm, natural female American-English teacher. Conversational and encouraging, clear pronunciation, natural pauses, gentle emphasis on key contrasts, slightly slower for equations and numbers. Use a short thinking pause when inviting the student to predict an answer. Speak like an attentive JEE classroom teacher, never robotic or overly dramatic.';
@@ -90,6 +94,7 @@ function inspectMp3(buffer) {
 const parts=[], chapters=[];
 let duration=0;
 for (const [i,chapter] of lesson.chapters.entries()) {
+  if (onlyChapter !== null && i + 1 !== onlyChapter) continue;
   // Preserve the exact requested input when a reviewed transcript corrects a TTS omission.
   const speechInput = chapter.speechInput ?? chapter.script;
   const stem=`chapter-${String(i+1).padStart(2,'0')}`;
@@ -104,9 +109,14 @@ for (const [i,chapter] of lesson.chapters.entries()) {
     if (buffer) throw new Error('Audio exists without a valid fingerprint; preserve it and repair its cache');
     if (speechInput.length > 4096) throw new Error('Chapter exceeds the speech input limit');
     await reserveAudioBudget(root, { lesson: selected, chapter: i + 1, kind: 'tts', amount: ttsReservationUsd });
-    const response=await fetch('https://api.openai.com/v1/audio/speech',{method:'POST',headers:{Authorization:`Bearer ${key}`,'Content-Type':'application/json'},body:JSON.stringify({model:'gpt-4o-mini-tts',voice:'marin',instructions,input:speechInput,response_format:'mp3'}),signal:AbortSignal.timeout(180000)});
+    const response=await fetch('https://api.openai.com/v1/audio/speech',{method:'POST',headers:{Authorization:`Bearer ${key}`,'Content-Type':'application/json'},body:JSON.stringify({model:'gpt-4o-mini-tts',voice:'marin',instructions,input:speechInput,response_format:'mp3'}),signal:AbortSignal.timeout(600000)});
     if(!response.ok) throw new Error(`TTS HTTP ${response.status}`);
-    buffer=Buffer.from(await response.arrayBuffer());
+    const chunks=[];let bytes=0,lastReport=Date.now();
+    for await(const chunk of response.body){
+      chunks.push(chunk);bytes+=chunk.length;
+      if(Date.now()-lastReport>30000){console.log(`${selected} chapter ${i+1}: received ${Math.round(bytes/1024)} KB`);lastReport=Date.now();}
+    }
+    buffer=Buffer.concat(chunks);
     const generated = inspectMp3(buffer);
     if(generated.seconds<20 || generated.seconds>240) throw new Error('Unexpected generated chapter duration; audio was not cached');
     await fs.writeFile(file,buffer,{flag:'wx'});
@@ -119,6 +129,7 @@ for (const [i,chapter] of lesson.chapters.entries()) {
   duration+=part.seconds;
   console.log(`Chapter ${i+1}: ${part.seconds.toFixed(3)} seconds, validated`);
 }
+if (onlyChapter !== null) process.exit(0);
 await fs.writeFile(path.join(folder,'narration-marin.mp3'),Buffer.concat(parts));
 const timingsPath=path.join(root,`app/data/jee-${dataName}-timings.json`);
 let existing;

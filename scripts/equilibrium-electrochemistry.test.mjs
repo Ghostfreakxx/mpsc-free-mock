@@ -8,7 +8,7 @@ test('equilibrium and electrochemistry remain written foundations mapped to Unit
     assert.equal(lesson.sections.length, lesson.id === 'equilibrium' ? 8 : 10);
     assert.equal(lesson.examples.length, 7);
     assert.equal(lesson.quiz.length, 12);
-    assert.match(lesson.remaining, /not a Marin recording or complete unit coverage/);
+    assert.match(lesson.remaining, /Marin recording and written notes, not complete unit coverage/);
   }
 });
 test('weak acid, buffer and common-ion examples agree with independent calculations', () => {

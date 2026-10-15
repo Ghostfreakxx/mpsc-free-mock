@@ -7,7 +7,7 @@ test('expanded equilibrium practice preserves the original foundation', () => {
   assert.equal(lesson.sections.length, 8);
   assert.equal(lesson.examples.length, 7);
   assert.equal(lesson.quiz.length, 12);
-  assert.match(lesson.remaining, /not a Marin recording or complete unit coverage/);
+  assert.match(lesson.remaining, /Marin recording and written notes, not complete unit coverage/);
 });
 test('buffer reaction precedes its equilibrium calculation', () => {
   const acid = 0.0200 + 0.00500;
