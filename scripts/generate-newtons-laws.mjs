@@ -65,6 +65,8 @@ targets['chemical-thermodynamics'] = 'chemical-thermodynamics';
 targets.solutions = 'solutions';
 targets.equilibrium = 'equilibrium';
 targets['redox-electrochemistry'] = 'redox-electrochemistry';
+targets['atomic-structure'] = 'atomic-structure';
+targets['chemical-bonding'] = 'chemical-bonding';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const lesson = JSON.parse(await fs.readFile(path.join(root, `app/data/jee-${dataName}-lecture.json`), 'utf8'));

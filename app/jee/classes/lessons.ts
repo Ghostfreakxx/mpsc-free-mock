@@ -1,4 +1,8 @@
 import chemicalKinetics from "../../data/jee-chemical-kinetics-lecture.json";
+import atomicStructure from "../../data/jee-atomic-structure-lecture.json";
+import atomicStructureTimings from "../../data/jee-atomic-structure-timings.json";
+import chemicalBonding from "../../data/jee-chemical-bonding-lecture.json";
+import chemicalBondingTimings from "../../data/jee-chemical-bonding-timings.json";
 import equilibrium from "../../data/jee-equilibrium-lecture.json";
 import equilibriumTimings from "../../data/jee-equilibrium-timings.json";
 import electrochemistry from "../../data/jee-redox-electrochemistry-lecture.json";
@@ -1154,5 +1158,25 @@ export const lectures: Lecture[] = [
     subtitles: "/lectures/redox-electrochemistry/english.vtt", timings: electrochemistryTimings,
     segments: electrochemistry.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
     sources: electrochemistry.sources, quiz: electrochemistry.quiz,
+  },
+  {
+    id: "atomic-structure", subject: "Chemistry", unit: 2, number: "C08", title: atomicStructure.title,
+    description: "Eight narrated chapters covering particle counts, photons, Bohr levels, spectra, matter waves, orbitals, nodes and configurations.",
+    scope: "Recorded JEE Main 2026 Chemistry Unit 2 foundation with original practice. The Atomic Structure and Atomic Spectra written lessons complement this class. Detailed radial plots, fuller derivations and additional configuration problems remain; not exhaustive coverage or official PYQs.",
+    progressKey: "jee.atomic-structure.lecture.v1",
+    audio: "/lectures/atomic-structure/narration-marin.mp3",
+    subtitles: "/lectures/atomic-structure/english.vtt", timings: atomicStructureTimings,
+    segments: atomicStructure.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
+    sources: atomicStructure.sources, quiz: atomicStructure.quiz,
+  },
+  {
+    id: "chemical-bonding", subject: "Chemistry", unit: 3, number: "C09", title: chemicalBonding.title,
+    description: "Eight narrated chapters on ionic lattices, Lewis structures, resonance, VSEPR, polarity, overlap, molecular orbitals and hydrogen bonds.",
+    scope: "Recorded JEE Main 2026 Chemistry Unit 3 foundation with original practice. Quantitative lattice cycles, fuller molecular-orbital diagrams and additional shape comparisons remain; not exhaustive coverage or official PYQs.",
+    progressKey: "jee.chemical-bonding.lecture.v1",
+    audio: "/lectures/chemical-bonding/narration-marin.mp3",
+    subtitles: "/lectures/chemical-bonding/english.vtt", timings: chemicalBondingTimings,
+    segments: chemicalBonding.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
+    sources: chemicalBonding.sources, quiz: chemicalBonding.quiz,
   },
 ];

@@ -1,0 +1,450 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script. Read every sentence completely and precisely, including the final sentence. Do not summarize.",
+  "title": "Atomic structure: shells, orbitals and electron arrangements",
+  "subject": "Chemistry",
+  "unit": 2,
+  "sources": [
+    {
+      "title": "OpenStax: quantum theory",
+      "url": "https://openstax.org/books/chemistry-2e/pages/6-3-development-of-quantum-theory"
+    },
+    {
+      "title": "OpenStax: electron configurations",
+      "url": "https://openstax.org/books/chemistry-atoms-first-2e/pages/3-4-electronic-structure-of-atoms-electron-configurations"
+    },
+    {
+      "title": "NTA: JEE Main 2026 Chemistry syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: electromagnetic energy",
+      "url": "https://openstax.org/books/chemistry-2e/pages/6-1-electromagnetic-energy"
+    },
+    {
+      "title": "OpenStax: Bohr model",
+      "url": "https://openstax.org/books/chemistry-2e/pages/6-2-the-bohr-model"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Count nuclei, electrons and isotopes",
+      "formula": "N = A − Z; electrons = Z − signed charge",
+      "script": "Welcome to Atomic Structure. This recorded Chemistry class uses an AI generated Marin voice. Atomic number counts protons and fixes the element. Mass number counts protons plus neutrons in a particular isotope. Subtract atomic number from mass number to find neutrons. For aluminium twenty seven, atomic number thirteen, there are thirteen protons and fourteen neutrons. An aluminium three plus ion has lost three electrons, leaving ten. Ordinary ionization does not change the nucleus. Isotopes share the same proton number but have different neutron numbers. Isobars share mass number, while isotones share neutron number. Check the actual counts rather than relying on similar names. The periodic table's relative atomic mass is usually an isotope weighted average, not the mass number of one atom. Imagine an element with isotopes of relative masses ten and eleven, present in twenty and eighty percent proportions. The weighted mean is zero point two times ten plus zero point eight times eleven, or ten point eight. This does not imply that each atom contains a fractional neutron. Rutherford scattering supported a tiny, positively charged nucleus and a largely empty atomic volume, but a classical planetary picture did not explain stable atomic energies.",
+      "points": [
+        "Protons · Z · 13",
+        "Neutrons · 27 − 13 · 14",
+        "Al³⁺ electrons · 13 − 3 · 10"
+      ],
+      "board": {
+        "heading": "Count nuclei, electrons and isotopes",
+        "columns": [
+          "Particle",
+          "Calculation",
+          "Count"
+        ],
+        "rows": [
+          [
+            "Protons",
+            "Z",
+            "13"
+          ],
+          [
+            "Neutrons",
+            "27 − 13",
+            "14"
+          ],
+          [
+            "Al³⁺ electrons",
+            "13 − 3",
+            "10"
+          ]
+        ]
+      },
+      "speechInput": "Welcome to Atomic Structure. This recorded Chemistry class uses an AI generated Marin voice. Atomic number counts protons and fixes the element. Mass number counts protons plus neutrons in a particular isotope. Subtract atomic number from mass number to find neutrons. For aluminium twenty seven, atomic number thirteen, there are thirteen protons and fourteen neutrons. An aluminium three plus ion has lost three electrons, leaving ten. Ordinary ionization does not change the nucleus. Isotopes share the same proton number but have different neutron numbers. Isobars share mass number, while isotones share neutron number. Check the actual counts rather than relying on similar names. The periodic table's relative atomic mass is usually an isotope weighted average, not the mass number of one atom. Imagine an element with isotopes of relative masses ten and eleven, present in twenty and eighty percent proportions. The weighted mean is zero point two times ten plus zero point eight times eleven, or ten point eight. This does not imply that each atom contains a fractional neutron. Rutherford scattering supported a tiny, positively charged nucleus and a largely empty atomic volume, but a classical planetary picture did not explain stable atomic energies. Quantum models address those limitations.",
+      "recordingNote": "Closing reminder omitted by TTS; transcript follows independently verified audio. Exact requested input retained for cache provenance."
+    },
+    {
+      "title": "Photons and photoelectric thresholds",
+      "formula": "E = hc/λ; Kmax = hν − φ",
+      "script": "In vacuum, frequency times wavelength equals the speed of light. Photon energy equals Planck's constant times frequency, or h c divided by wavelength. Shorter wavelength means more energy per photon, not faster travel through vacuum. With h c equal to twelve hundred forty electron volt nanometres, a four hundred nanometre photon carries three point one zero electron volts. If a surface work function is two point zero zero electron volts, the maximum photoelectron kinetic energy is one point one zero electron volts. The stopping potential magnitude is one point one zero volts. Below the threshold frequency, increasing ordinary light intensity cannot overcome the per photon energy deficit in the elementary single photon model. Above threshold, intensity can increase the photon arrival rate and photocurrent under fixed collection conditions; frequency controls maximum electron energy. A second example uses six hundred twenty nanometre light and work function one point five zero electron volts. Photon energy is two point zero zero electron volts, leaving zero point five zero electron volts of maximum kinetic energy. Always match units: using Planck's constant in joule seconds requires wavelength in metres and energies in joules. Do not confuse energy of one photon with the total energy delivered by a beam.",
+      "points": [
+        "400 · 3.10 · 1.10 eV",
+        "620 · 2.00 · 0 at threshold",
+        "800 · 1.55 · No emission"
+      ],
+      "board": {
+        "heading": "Photons and photoelectric thresholds",
+        "columns": [
+          "λ / nm",
+          "Photon / eV",
+          "Kmax for φ = 2 eV"
+        ],
+        "rows": [
+          [
+            "400",
+            "3.10",
+            "1.10 eV"
+          ],
+          [
+            "620",
+            "2.00",
+            "0 at threshold"
+          ],
+          [
+            "800",
+            "1.55",
+            "No emission"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Derive the hydrogen-like Bohr relations",
+      "formula": "rn = a₀n²/Z; En = −13.6Z²/n² eV",
+      "script": "Bohr postulated stationary states and angular momentum equal to an integer times h bar. For a one electron ion, Coulomb attraction supplies the centripetal force in this historical model. Combining the force equation with angular momentum quantization gives radius proportional to n squared divided by nuclear charge Z. Kinetic energy is half the magnitude of potential energy, so the total bound state energy is negative. The introductory expressions are radius equals a zero times n squared divided by Z, and energy equals minus thirteen point six times Z squared divided by n squared, in electron volts. These describe hydrogen and one electron ions, not neutral helium or general many electron atoms. For helium plus with Z equal to two and n equal to two, radius is zero point zero five two nine times four divided by two nanometres, or zero point one zero five eight nanometres. Energy is minus thirteen point six electron volts. Raising n makes a bound energy less negative and increases the model radius. The separated electron and nucleus define the zero energy continuum. The formulas neglect reduced mass and relativistic corrections. Modern quantum mechanics replaces fixed circular electron tracks with states described by wavefunctions. Use Bohr formulas for their stated one electron calculations without treating the orbits as modern probability pictures.",
+      "points": [
+        "Radius / nm · 0.0529 × 4/2 · 0.1058",
+        "Energy / eV · −13.6 × 4/4 · −13.6",
+        "Electron count · 2 − 1 · 1"
+      ],
+      "board": {
+        "heading": "Derive the hydrogen-like Bohr relations",
+        "columns": [
+          "He⁺, n = 2",
+          "Substitution",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Radius / nm",
+            "0.0529 × 4/2",
+            "0.1058"
+          ],
+          [
+            "Energy / eV",
+            "−13.6 × 4/4",
+            "−13.6"
+          ],
+          [
+            "Electron count",
+            "2 − 1",
+            "1"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Read spectral lines and ionization limits",
+      "formula": "Ephoton = Ei − Ef > 0 for emission",
+      "script": "An emitted photon carries the positive difference between the initial atomic energy and the lower final energy. Absorption requires a photon matching an allowed upward energy difference. For hydrogen falling from level four to level two, the photon energy is thirteen point six times one quarter minus one sixteenth, or two point five five electron volts. Dividing twelve hundred forty by two point five five gives wavelength about four hundred eighty six nanometres. This belongs to the Balmer series because the lower level is two. Lyman transitions have lower level one, and Paschen transitions have lower level three. The Rydberg expression places the lower level term first so the inverse wavelength is positive. Ionization means reaching the zero energy continuum, not merely moving up one bound level. Hydrogen initially in level two has energy minus three point four zero electron volts, so it needs three point four zero electron volts to ionize. The ground state needs thirteen point six. For the same pair of principal levels in a hydrogen-like ion, transition energy scales as Z squared and wavelength scales inversely as Z squared. Keep the charge state, initial level and final level visible throughout the calculation.",
+      "points": [
+        "n = 4 → 2 · 2.55 emitted · λ ≈ 486 nm",
+        "n = 2 → ∞ · 3.40 absorbed · Ionization",
+        "n = 1 → ∞ · 13.6 absorbed · Ionization"
+      ],
+      "board": {
+        "heading": "Read spectral lines and ionization limits",
+        "columns": [
+          "Hydrogen change",
+          "Energy / eV",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "n = 4 → 2",
+            "2.55 emitted",
+            "λ ≈ 486 nm"
+          ],
+          [
+            "n = 2 → ∞",
+            "3.40 absorbed",
+            "Ionization"
+          ],
+          [
+            "n = 1 → ∞",
+            "13.6 absorbed",
+            "Ionization"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Matter waves and uncertainty",
+      "formula": "λ = h/p; Δx Δpx ≥ ℏ/2",
+      "script": "De Broglie's relation assigns wavelength h divided by momentum to a particle. A nonrelativistic electron accelerated from rest through a voltage gains kinetic energy equal to electron charge times voltage. Its momentum is the square root of two times mass times that energy. Combining these relations gives the familiar electron shortcut: wavelength in angstroms is approximately twelve point two seven divided by the square root of voltage in volts. At one hundred volts it is one point two two seven angstroms. At four hundred volts it is zero point six one three five angstroms. Quadrupling voltage doubles momentum and halves wavelength. This low speed approximation is not suitable at arbitrarily high voltages. Matter waves are not electromagnetic waves travelling at the speed of light. The uncertainty relation says the position standard deviation times the matching momentum standard deviation is at least h bar over two. These are spreads in a quantum state, not simply the least count of measuring instruments. Halving position spread doubles the minimum allowed momentum spread. With position spread ten to the minus ten metres, the lower momentum spread is about five point two seven five times ten to the minus twenty five kilogram metres per second.",
+      "points": [
+        "100 V · 1.227 · Reference",
+        "400 V · 0.6135 · Half wavelength",
+        "Δx halved · Minimum Δpx × 2 · Same lower bound"
+      ],
+      "board": {
+        "heading": "Matter waves and uncertainty",
+        "columns": [
+          "Electron voltage",
+          "λ / Å",
+          "Scaling"
+        ],
+        "rows": [
+          [
+            "100 V",
+            "1.227",
+            "Reference"
+          ],
+          [
+            "400 V",
+            "0.6135",
+            "Half wavelength"
+          ],
+          [
+            "Δx halved",
+            "Minimum Δpx × 2",
+            "Same lower bound"
+          ]
+        ]
+      },
+      "speechInput": "De Broglie's relation assigns wavelength h divided by momentum to a particle. A nonrelativistic electron accelerated from rest through a voltage gains kinetic energy equal to electron charge times voltage. Its momentum is the square root of two times mass times that energy. Combining these relations gives the familiar electron shortcut: wavelength in angstroms is approximately twelve point two seven divided by the square root of voltage in volts. At one hundred volts it is one point two two seven angstroms. At four hundred volts it is zero point six one three five angstroms. Quadrupling voltage doubles momentum and halves wavelength. This low speed approximation is not suitable at arbitrarily high voltages. Matter waves are not electromagnetic waves travelling at the speed of light. The uncertainty relation says the position standard deviation times the matching momentum standard deviation is at least h bar over two. These are spreads in a quantum state, not simply the least count of measuring instruments. Halving position spread doubles the minimum allowed momentum spread. With position spread ten to the minus ten metres, the lower momentum spread is about five point two seven five times ten to the minus twenty five kilogram metres per second. Localization and momentum spread must be considered together.",
+      "recordingNote": "Closing reminder omitted by TTS; transcript follows independently verified audio. Exact requested input retained for cache provenance."
+    },
+    {
+      "title": "Quantum numbers and shell capacities",
+      "formula": "l = 0…n−1; ml = −l…+l; capacity = 2n²",
+      "script": "An orbital is a quantum state described by a wavefunction. Its squared magnitude gives probability density; it is not a tiny planetary track. The principal quantum number n is a positive integer. For a chosen n, the angular momentum quantum number l ranges from zero to n minus one. Labels s, p, d and f correspond to zero, one, two and three. A two d subshell is impossible because n equal to two allows only s and p. For a specified l, the magnetic quantum number takes integer values from minus l to plus l, giving two l plus one orbitals. A three d subshell therefore has five orbitals, with magnetic values minus two, minus one, zero, plus one and plus two. Each orbital holds at most two electrons with opposite spin quantum numbers. Pauli's exclusion principle forbids two electrons in an atom from sharing all four quantum numbers. The s, p, d and f subshell capacities are two, six, ten and fourteen. Summing the orbital counts within shell n gives n squared orbitals and a maximum of two n squared electrons. Shell three has nine orbitals and capacity eighteen. Capacity does not imply that all shells fill completely in principal number order.",
+      "points": [
+        "s, l = 0 · 1 · 2",
+        "p, l = 1 · 3 · 6",
+        "d, l = 2 · 5 · 10"
+      ],
+      "board": {
+        "heading": "Quantum numbers and shell capacities",
+        "columns": [
+          "Subshell",
+          "Orbitals",
+          "Max electrons"
+        ],
+        "rows": [
+          [
+            "s, l = 0",
+            "1",
+            "2"
+          ],
+          [
+            "p, l = 1",
+            "3",
+            "6"
+          ],
+          [
+            "d, l = 2",
+            "5",
+            "10"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Orbital shapes, phase and nodes",
+      "formula": "Hydrogen-like: radial nodes = n−l−1; angular nodes = l",
+      "script": "An s orbital has spherical angular symmetry. A real p orbital is commonly pictured with two lobes on opposite sides of a nodal plane through the nucleus. The two colours in an orbital drawing usually indicate opposite wavefunction signs, not positive and negative electric charges. Squaring the wavefunction removes that sign from probability density. Most familiar real d orbitals have four lobes; the d z squared picture has two lobes and a ring. These sketches show chosen probability boundaries, not hard walls. In the hydrogen-like orbital model, angular nodes number l and radial nodes number n minus l minus one. Their total is n minus one. For a three p orbital, n is three and l is one: there is one radial node and one angular node. For three d, there are zero radial nodes and two angular nodes. A two s orbital has one radial node and no angular node. A radial probability distribution includes the volume factor associated with spherical shells, so it is not the same graph as probability density at a point. Node counting and these distinctions are a foundation; detailed radial wavefunction and distribution plots need separate practice.",
+      "points": [
+        "2s · 1 · 0",
+        "3p · 1 · 1",
+        "3d · 0 · 2"
+      ],
+      "board": {
+        "heading": "Orbital shapes, phase and nodes",
+        "columns": [
+          "Orbital",
+          "Radial nodes",
+          "Angular nodes"
+        ],
+        "rows": [
+          [
+            "2s",
+            "1",
+            "0"
+          ],
+          [
+            "3p",
+            "1",
+            "1"
+          ],
+          [
+            "3d",
+            "0",
+            "2"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Fill orbitals and form transition-metal ions",
+      "formula": "Hund: singly first; Fe³⁺ = [Ar]3d⁵",
+      "script": "Ground state configurations use lower available energy states first, with Pauli's two electron limit and Hund's rule for equal energy orbitals. Hund filling puts one electron in each degenerate orbital with parallel spins before pairing. Nitrogen has three singly occupied two p orbitals. Oxygen has one pair and two unpaired two p electrons. The n plus l ordering rule is a useful introductory guide: smaller n plus l comes first, and for a tie smaller n comes first. It is not an exact universal energy law. Neutral chromium is conventionally written argon core, three d five, four s one; copper is argon core, three d ten, four s one. These differ from a naive filling sequence because nearby subshell energies and electron interactions matter. Do not turn half filled or filled stability into a rule overriding measured configurations in every case. Neutral iron is argon core, three d six, four s two. Forming its common cations removes four s electrons before three d electrons. Iron two plus is three d six beyond the argon core, and iron three plus is three d five. Always count the final electrons: iron three plus has twenty three. Magnetic behaviour of a free ion and that of its coordination complexes can differ.",
+      "points": [
+        "Cr atom · 3d⁵ 4s¹ · 24",
+        "Cu atom · 3d¹⁰ 4s¹ · 29",
+        "Fe³⁺ · 3d⁵ · 23"
+      ],
+      "board": {
+        "heading": "Fill orbitals and form transition-metal ions",
+        "columns": [
+          "Species",
+          "Beyond [Ar]",
+          "Electron total"
+        ],
+        "rows": [
+          [
+            "Cr atom",
+            "3d⁵ 4s¹",
+            "24"
+          ],
+          [
+            "Cu atom",
+            "3d¹⁰ 4s¹",
+            "29"
+          ],
+          [
+            "Fe³⁺",
+            "3d⁵",
+            "23"
+          ]
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "For magnesium-24, Z = 12. How many electrons are in Mg2+?",
+      "options": [
+        "10",
+        "12",
+        "14",
+        "24"
+      ],
+      "answer": 0,
+      "explanation": "A neutral magnesium atom has 12 electrons. A 2+ ion has lost two, leaving 10; its proton count remains 12."
+    },
+    {
+      "question": "Which subshell label is impossible?",
+      "options": [
+        "1s",
+        "2p",
+        "2d",
+        "3d"
+      ],
+      "answer": 2,
+      "explanation": "For n = 2, l can only be 0 or 1. A d subshell requires l = 2, so it first becomes possible when n = 3."
+    },
+    {
+      "question": "What is the maximum number of electrons in a p subshell?",
+      "options": [
+        "2",
+        "3",
+        "6",
+        "10"
+      ],
+      "answer": 2,
+      "explanation": "For p, l = 1, giving three orbitals. Each holds at most two opposite-spin electrons, so the maximum is six."
+    },
+    {
+      "question": "How many unpaired electrons are in the ground-state 2p subshell of nitrogen (Z = 7)?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 3,
+      "explanation": "Nitrogen is 1s² 2s² 2p³. Hund's rule places one electron in each of the three equal-energy 2p orbitals before pairing."
+    },
+    {
+      "question": "In a hydrogen-like Bohr model, an electron falls to a lower energy level. What occurs?",
+      "options": [
+        "A photon is absorbed",
+        "A photon is emitted",
+        "The proton number changes",
+        "Photon energy is negative"
+      ],
+      "answer": 1,
+      "explanation": "The atom loses energy and emits a photon carrying the positive energy difference. This electronic transition does not change the nucleus."
+    },
+    {
+      "question": "A 500 nm photon has what energy using hc = 1240 eV nm?",
+      "options": [
+        "0.403 eV",
+        "2.48 eV",
+        "6.20 eV",
+        "1240 eV"
+      ],
+      "answer": 1,
+      "explanation": "Divide 1240 eV nm by 500 nm: 2.48 eV. The wavelength units cancel."
+    },
+    {
+      "question": "Below a metal's single-photon photoelectric threshold, increasing intensity ordinarily:",
+      "options": [
+        "Raises every photon's frequency",
+        "Guarantees electron emission",
+        "Does not overcome the per-photon threshold",
+        "Makes the work function zero"
+      ],
+      "answer": 2,
+      "explanation": "More below-threshold photons do not change the energy of each photon in this elementary model."
+    },
+    {
+      "question": "For hydrogen at n = 2, energy required to reach the continuum is:",
+      "options": [
+        "3.40 eV",
+        "13.6 eV",
+        "-3.40 eV",
+        "10.2 eV"
+      ],
+      "answer": 0,
+      "explanation": "E2 = -13.6/4 = -3.40 eV. Reaching zero requires a positive 3.40 eV."
+    },
+    {
+      "question": "Which system permits the basic one-electron Bohr formulas?",
+      "options": [
+        "Neutral helium",
+        "Neutral lithium",
+        "Oxygen molecule",
+        "Li2+"
+      ],
+      "answer": 3,
+      "explanation": "Li2+ retains exactly one electron. The other listed systems are not hydrogen-like one-electron ions."
+    },
+    {
+      "question": "Quadrupling non-relativistic electron accelerating voltage changes wavelength by:",
+      "options": [
+        "Four times",
+        "One half",
+        "One quarter",
+        "Two times"
+      ],
+      "answer": 1,
+      "explanation": "Lambda is proportional to V^(-1/2), so the ratio is 1/sqrt(4) = 1/2."
+    },
+    {
+      "question": "Halving position spread changes the minimum allowed momentum spread by:",
+      "options": [
+        "One half",
+        "One quarter",
+        "Two times",
+        "No constraint"
+      ],
+      "answer": 2,
+      "explanation": "The uncertainty-product lower bound stays fixed, so the minimum momentum spread doubles."
+    },
+    {
+      "question": "In the hydrogen-like model, how many radial and angular nodes does 3p have?",
+      "options": [
+        "0 radial, 2 angular",
+        "2 radial, 0 angular",
+        "1 radial, 1 angular",
+        "3 radial, 1 angular"
+      ],
+      "answer": 2,
+      "explanation": "For n=3 and l=1, radial nodes are n-l-1=1 and angular nodes are l=1."
+    }
+  ]
+}

@@ -58,6 +58,8 @@ targets['chemical-thermodynamics'] = 'chemical-thermodynamics';
 targets.solutions = 'solutions';
 targets.equilibrium = 'equilibrium';
 targets['redox-electrochemistry'] = 'redox-electrochemistry';
+targets['atomic-structure'] = 'atomic-structure';
+targets['chemical-bonding'] = 'chemical-bonding';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const folder = path.join(root, 'public/lectures', selected);

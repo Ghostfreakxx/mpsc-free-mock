@@ -51,7 +51,7 @@ export const nextStudyLessons: StudyLesson[] = [
     title: "Atomic structure: shells, orbitals and electron arrangements",
     summary: "Particle counts, energy levels, quantum numbers and orbital filling.",
     prerequisites: "Atomic symbols, the mole concept and simple integer arithmetic.",
-    remaining: "Spectral calculations, the Bohr-model derivations, wave-particle relations and uncertainty calculations remain to complete this unit.",
+    remaining: "Written companion to the eight-chapter Marin recording for Unit 2. The recording and Atomic Spectra notes add photons, Bohr relations, spectra, matter waves, uncertainty, nodes and configuration examples. Detailed radial plots, fuller derivations and additional mixed problems remain; this is not complete unit coverage.",
     sections: [
       { title: "Count particles before discussing orbitals", paragraphs: [
         "The atomic number Z counts protons and determines the element. The mass number A counts protons plus neutrons in a specified isotope. Therefore neutrons = A - Z. A neutral atom has Z electrons, while an ion's electron count changes with its charge. Removing electrons makes a positive ion; adding electrons makes a negative ion.",

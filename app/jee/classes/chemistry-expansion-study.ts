@@ -8,7 +8,7 @@ export const chemistryExpansionLessons: StudyLesson[] = [
     title: "Atomic spectra and matter waves: connect energy with evidence",
     summary: "Photons, photoelectric thresholds, Bohr derivations, spectra and uncertainty.",
     prerequisites: "Atomic Structure foundation, scientific notation and basic electrostatic force.",
-    remaining: "Written Unit 2 companion, not a Marin recording. Radial wavefunction plots, orbital nodes, detailed shapes, configuration exceptions and half-filled-shell stability require further teaching; the unit is not yet complete.",
+    remaining: "Written Unit 2 companion, not a Marin recording of its own. The Atomic Structure recording covers these calculations plus introductory nodes, orbital shapes and configuration exceptions. Detailed radial wavefunction plots and further mixed problems remain; the unit is not yet complete.",
     sections: [
       { title: "A colour tells us about photon energy", paragraphs: [
         "Imagine comparing red and violet light. In vacuum both travel at c, but violet has shorter wavelength and higher frequency. The wave relation is c = frequency x wavelength. One photon's energy is h times frequency, not the total energy of an entire beam.",
@@ -105,7 +105,7 @@ export const chemistryExpansionLessons: StudyLesson[] = [
     title: "Chemical bonding: from electrons to shape and properties",
     summary: "Lewis structures, charge bookkeeping, VSEPR, polarity, overlap and molecular orbitals.",
     prerequisites: "Valence electrons, periodic trends and basic orbital terminology.",
-    remaining: "Written Unit 3 foundation, not a Marin recording. Quantitative lattice-enthalpy cycles, Fajan's-rule applications, expanded-domain VSEPR shapes, detailed d-orbital hybridization conventions, and fuller molecular-orbital configurations require additional lessons.",
+    remaining: "Written companion to the eight-chapter Marin recording for Unit 3. The recording adds polarization comparisons, five- and six-domain shapes, bond counting and hydrogen bonding. Quantitative lattice-enthalpy cycles, fuller molecular-orbital diagrams and additional shape comparisons remain; this is not complete unit coverage.",
     sections: [
       { title: "Bond formation must lower the appropriate energy", paragraphs: [
         "Atoms do not bond merely because someone tells them to complete an octet. Bond formation can lower a system's energy through interactions among nuclei and electrons. The octet rule is a useful bookkeeping pattern with exceptions, including electron-deficient and odd-electron species.",
