@@ -58,7 +58,7 @@ export const chemistryExpansionLessons: StudyLesson[] = [
     title: "Periodic trends: explain the pattern before memorising it",
     summary: "Electronic blocks, shielding, radii, ionization, electron gain and reactivity.",
     prerequisites: "Electron configurations and the Atomic Structure foundation.",
-    remaining: "Written Unit 9 foundation, not a Marin recording. Valence, oxidation-state patterns, detailed group reactivity and further exceptions need additional practice and teaching; this is not complete inorganic Chemistry.",
+    remaining: "Written companion to the eight-chapter Marin recording for Unit 9. The recording adds shielding, valence patterns and oxide behaviour. Detailed group reactivity, transition-element trends and further exceptions remain; this is not complete inorganic Chemistry.",
     sections: [
       { title: "Read the table as a repeating electron pattern", paragraphs: [
         "The modern periodic law relates recurring properties to atomic number, not increasing atomic mass. Periods track occupied-shell patterns, while similar outer configurations explain many group similarities. Do not infer that all members react identically.",

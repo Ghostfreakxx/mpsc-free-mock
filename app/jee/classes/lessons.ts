@@ -1,3 +1,7 @@
+import moleConcept from "../../data/jee-mole-concept-lecture.json";
+import moleConceptTimings from "../../data/jee-mole-concept-timings.json";
+import periodicTrends from "../../data/jee-periodic-trends-lecture.json";
+import periodicTrendsTimings from "../../data/jee-periodic-trends-timings.json";
 import chemicalKinetics from "../../data/jee-chemical-kinetics-lecture.json";
 import atomicStructure from "../../data/jee-atomic-structure-lecture.json";
 import atomicStructureTimings from "../../data/jee-atomic-structure-timings.json";
@@ -1178,5 +1182,25 @@ export const lectures: Lecture[] = [
     subtitles: "/lectures/chemical-bonding/english.vtt", timings: chemicalBondingTimings,
     segments: chemicalBonding.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
     sources: chemicalBonding.sources, quiz: chemicalBonding.quiz,
+  },
+  {
+    id: "mole-concept", subject: "Chemistry", unit: 1, number: "C10", title: moleConcept.title,
+    description: "Eight narrated chapters on chemical laws, entity counting, composition, formulas, limiting reactants, purity, yield, gases and dilution.",
+    scope: "Recorded Unit 1 foundation with original practice. Longer multi-reaction problems, combustion analysis and additional experimental applications remain; not exhaustive coverage or official PYQs.",
+    progressKey: "jee.mole-concept.lecture.v1",
+    audio: "/lectures/mole-concept/narration-marin.mp3",
+    subtitles: "/lectures/mole-concept/english.vtt", timings: moleConceptTimings,
+    segments: moleConcept.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
+    sources: moleConcept.sources, quiz: moleConcept.quiz,
+  },
+  {
+    id: "periodic-trends", subject: "Chemistry", unit: 9, number: "C11", title: periodicTrends.title,
+    description: "Eight narrated chapters on blocks, shielding, radii, isoelectronic ions, ionization, electron gain, electronegativity and oxide trends.",
+    scope: "Recorded Unit 9 foundation with original practice. Detailed group chemistry, transition-element trends and further exceptions remain; not exhaustive coverage or official PYQs.",
+    progressKey: "jee.periodic-trends.lecture.v1",
+    audio: "/lectures/periodic-trends/narration-marin.mp3",
+    subtitles: "/lectures/periodic-trends/english.vtt", timings: periodicTrendsTimings,
+    segments: periodicTrends.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
+    sources: periodicTrends.sources, quiz: periodicTrends.quiz,
   },
 ];

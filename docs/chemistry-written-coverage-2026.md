@@ -8,7 +8,8 @@ This means each unit has at least one foundation, not exhaustive topic coverage.
 Organic Principles, Coordination Compounds, Chemical Kinetics, Chemical Thermodynamics
 and Solutions each have a five-chapter Marin recording. Equilibrium has eight
 chapters and Redox and Electrochemistry has nine. Atomic Structure and Chemical
-Bonding each have eight chapters. All nine recordings include
+Bonding each have eight chapters. Mole Concept and Periodic Trends also have
+eight chapters each. All eleven recordings include
 timed captions and chapter visuals. Other Chemistry lessons
 remain written-only. Existing
 Physics recordings and captions have not been regenerated.
@@ -41,6 +42,15 @@ limitations, explanations, original worked examples, practice MCQs, diagrams
 and downloadable notes. Original questions are not represented as official PYQs.
 
 ## Remaining course work
+
+Mole Concept now has eight narrated chapters at `/jee/classes/mole-concept`,
+covering chemical laws, particle and mass conversions, composition, formulas,
+limiting reactants, purity and yield, gas volumes and dilution. Periodic Trends
+has eight chapters at `/jee/classes/periodic-trends`, including shielding,
+radius definitions, isoelectronic comparisons, ionization exceptions, successive
+ionization, electron gain, electronegativity and oxide behaviour. Each includes
+ten original questions. Longer reaction chains, combustion analysis and detailed
+group chemistry remain for further work.
 
 Atomic Structure now has an eight-chapter recording at `/jee/classes/atomic-structure`,
 combining particle counts, photon calculations, Bohr relations, spectra, matter
