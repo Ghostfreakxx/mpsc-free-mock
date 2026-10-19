@@ -1,0 +1,418 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script. Read every sentence completely and precisely, including the final sentence. Do not summarize.",
+  "title": "Organic nitrogen: amines, basicity and diazonium chemistry",
+  "subject": "Chemistry",
+  "unit": 18,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 Chemistry syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: amine basicity",
+      "url": "https://openstax.org/books/organic-chemistry/pages/24-3-basicity-of-amines"
+    },
+    {
+      "title": "OpenStax: synthesis of amines",
+      "url": "https://openstax.org/books/organic-chemistry/pages/24-6-synthesis-of-amines"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Count the carbon groups bonded to nitrogen",
+      "formula": "Primary RNH2; secondary R2NH; tertiary R3N; quaternary R4N+",
+      "script": "Welcome to Organic Nitrogen. This recorded Chemistry class uses an AI generated Marin voice. Classify an amine by counting carbon groups directly bonded to nitrogen. One carbon group gives a primary amine, two give a secondary amine and three give a tertiary amine. Branching elsewhere in the carbon skeleton does not change that count. Thus tert butylamine is primary even though the carbon attached to nitrogen has three carbon neighbours. Dimethylamine is secondary and trimethylamine is tertiary. A quaternary ammonium ion has four carbon groups on nitrogen and a positive charge; it is a different class from a neutral tertiary amine. In aniline, nitrogen is directly attached to a benzene ring, allowing its lone pair to conjugate with the ring. In benzylamine, a saturated carbon separates nitrogen from the ring. That difference affects basicity and reactivity. An amide instead has nitrogen directly attached to a carbonyl carbon. Delocalization into the carbonyl strongly reduces the nitrogen lone pair's availability compared with an ordinary amine. Draw nitrogen's immediate neighbours before classifying a structure.",
+      "points": [
+        "Primary · 1 · tert-Butylamine",
+        "Secondary · 2 · Dimethylamine",
+        "Tertiary · 3 · Trimethylamine"
+      ],
+      "board": {
+        "heading": "Count the carbon groups bonded to nitrogen",
+        "columns": [
+          "Nitrogen class",
+          "C groups on N",
+          "Example"
+        ],
+        "rows": [
+          [
+            "Primary",
+            "1",
+            "tert-Butylamine"
+          ],
+          [
+            "Secondary",
+            "2",
+            "Dimethylamine"
+          ],
+          [
+            "Tertiary",
+            "3",
+            "Trimethylamine"
+          ]
+        ]
+      },
+      "speechInput": "Welcome to Organic Nitrogen. This recorded Chemistry class uses an AI generated Marin voice. Classify an amine by counting carbon groups directly bonded to nitrogen. One carbon group gives a primary amine, two give a secondary amine and three give a tertiary amine. Branching elsewhere in the carbon skeleton does not change that count. Thus tert butylamine is primary even though the carbon attached to nitrogen has three carbon neighbours. Dimethylamine is secondary and trimethylamine is tertiary. A quaternary ammonium ion has four carbon groups on nitrogen and a positive charge; it is a different class from a neutral tertiary amine. In aniline, nitrogen is directly attached to a benzene ring, allowing its lone pair to conjugate with the ring. In benzylamine, a saturated carbon separates nitrogen from the ring. That difference affects basicity and reactivity. An amide instead has nitrogen directly attached to a carbonyl carbon. Delocalization into the carbonyl strongly reduces the nitrogen lone pair's availability compared with an ordinary amine. Draw nitrogen's immediate neighbours before classifying a structure or comparing its chemistry.",
+      "recordingNote": "Closing reminder shortened by TTS; transcript follows independently verified audio. Exact requested input retained for cache provenance."
+    },
+    {
+      "title": "The lone pair accepts a proton",
+      "formula": "pKₐ = −log₁₀ Kₐ; pKᵦ = −log₁₀ Kᵦ; pKₐ + pKᵦ = 14 at 25°C",
+      "script": "An amine's nitrogen lone pair can accept a proton to form an ammonium ion. Basicity measures the equilibrium tendency for that proton transfer in a specified solvent. A larger base equilibrium constant means a stronger base under comparable conditions. The conjugate acid and base constants are related through the water ion product. At twenty five degrees Celsius, take that product as ten raised to the power minus fourteen. If the conjugate acid has an acid constant of ten to the minus ten, dividing the water ion product by it gives a base constant of ten to the minus four. The corresponding acid and base logarithmic values are ten and four, adding to fourteen. An acid logarithmic value of five instead gives a base logarithmic value of nine, indicating a weaker base. Always identify whether the supplied value describes the amine or its conjugate acid. Structural effects help explain the comparison: alkyl groups can donate electron density, while aniline's nitrogen lone pair participates in aromatic conjugation. Electron withdrawing substituents, steric crowding and solvent stabilization can all affect the observed equilibrium.",
+      "points": [
+        "10 · 4 · Stronger base",
+        "5 · 9 · Weaker base",
+        "Same solvent · pKₐ + pKᵦ = 14 · Illustrative values"
+      ],
+      "board": {
+        "heading": "The lone pair accepts a proton",
+        "columns": [
+          "Conjugate acid pKₐ",
+          "Base pKᵦ at 25°C",
+          "Relative strength"
+        ],
+        "rows": [
+          [
+            "10",
+            "4",
+            "Stronger base"
+          ],
+          [
+            "5",
+            "9",
+            "Weaker base"
+          ],
+          [
+            "Same solvent",
+            "pKₐ + pKᵦ = 14",
+            "Illustrative values"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Do not use a gas-phase ranking blindly in water",
+      "formula": "At the same temperature for a conjugate pair: K_a K_b = K_w",
+      "script": "Alkyl groups can donate electron density, suggesting increased intrinsic proton affinity as substitution increases. In water, however, the neutral amine and its conjugate acid are solvated differently. Hydrogen bonding, steric crowding and solvation of the charged product can change the ordering. A universal tertiary > secondary > primary rule in aqueous solution is unreliable. If a problem supplies K b or conjugate-acid p K a values measured under comparable conditions, use those data rather than a memorized slogan. For example, a conjugate acid with p K a 10 corresponds to a stronger base than one with p K a 5 in the same solvent and convention. These numbers are illustrative, not values assigned to unspecified real compounds. For illustrative bases A and B with conjugate acid p K a values ten and five, their acid constants differ by one hundred thousand. Their base constants differ by the inverse factor, making A the stronger base by that equilibrium measure. This is a ratio of constants under comparable conditions, not a statement that every solution has a one hundred thousand fold difference in p H or reaction rate.",
+      "points": [
+        "Alkyl donation · Electron availability · Intrinsic tendency",
+        "Solvation · Neutral and ion energies · Water can change order",
+        "Measured constants · Comparable conditions · Use supplied data"
+      ],
+      "board": {
+        "heading": "Do not use a gas-phase ranking blindly in water",
+        "columns": [
+          "Effect",
+          "What changes",
+          "Ranking caveat"
+        ],
+        "rows": [
+          [
+            "Alkyl donation",
+            "Electron availability",
+            "Intrinsic tendency"
+          ],
+          [
+            "Solvation",
+            "Neutral and ion energies",
+            "Water can change order"
+          ],
+          [
+            "Measured constants",
+            "Comparable conditions",
+            "Use supplied data"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Preparation can keep or reduce the carbon count",
+      "formula": "R-C#N -> R-CH2NH2; R-CONH2 -> R-NH2 in Hofmann rearrangement",
+      "script": "Preparation of an amine must be checked by following every carbon atom. A nitrile contains a carbon bonded to nitrogen through a triple bond. Suitable reduction converts that nitrile carbon into the carbon of a methylene group attached to amino nitrogen. Acetonitrile starts with two carbons and gives ethylamine, which still has two. Reduction of an aromatic nitro group can give aniline without changing the ring's carbon framework. A different preparation, Hofmann rearrangement of a primary amide, shortens the carbon chain of the organic amine by one. Acetamide has two carbons but gives methylamine with one carbon because its carbonyl carbon leaves the selected organic product. That carbon remains accounted for elsewhere in the overall reaction. Ammonia reacting with a suitable alkyl halide can form an amine, but further alkylation may produce mixtures. Gabriel synthesis is another route for suitable primary alkyl substrates and does not imply ordinary substitution on an unactivated aryl halide. Identify the starting functional group, select appropriate conditions and compare the carbon counts before naming the final amine.",
+      "points": [
+        "CH₃CN · Nitrile reduction · Ethylamine; 2 C",
+        "CH₃CONH₂ · Hofmann rearrangement · Methylamine; 1 C",
+        "Nitro compound · Reduction · Skeleton retained"
+      ],
+      "board": {
+        "heading": "Preparation can keep or reduce the carbon count",
+        "columns": [
+          "Two-carbon reactant",
+          "Transformation",
+          "Amine product"
+        ],
+        "rows": [
+          [
+            "CH₃CN",
+            "Nitrile reduction",
+            "Ethylamine; 2 C"
+          ],
+          [
+            "CH₃CONH₂",
+            "Hofmann rearrangement",
+            "Methylamine; 1 C"
+          ],
+          [
+            "Nitro compound",
+            "Reduction",
+            "Skeleton retained"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Identification depends on the nitrogen class",
+      "formula": "Test interpretation: identify whether nitrogen originally carries one or two N-H bonds",
+      "script": "The carbylamine test is associated with primary aliphatic and aromatic amines; secondary and tertiary amines do not give that same reaction. It produces an isocyanide under the specified test conditions.  In the Hinsberg distinction, primary and secondary amines can form different sulfonamide products, while tertiary amines do not form the same nitrogen hydrogen-derived product. A primary-amine sulfonamide retains an acidic nitrogen hydrogen and can dissolve in alkali; the secondary-amine product lacks that hydrogen and is not similarly alkali-soluble. Check the subsequent acid/base behaviour rather than relying only on a precipitate. The primary amine starting material has two nitrogen hydrogen bonds; its sulfonamide product retains one. A secondary amine begins with one such hydrogen and loses it during sulfonamide formation, leaving no nitrogen hydrogen in that product. This explains the different alkaline behaviour more precisely than saying primary amines dissolve and secondary amines never dissolve. Solubility also depends on protonation, solvent and the exact compound.",
+      "points": [
+        "Primary · Retains acidic N–H · Can dissolve",
+        "Secondary · No remaining N–H · Not similarly soluble",
+        "Tertiary · No same sulfonamide · Check acid response"
+      ],
+      "board": {
+        "heading": "Identification depends on the nitrogen class",
+        "columns": [
+          "Original amine",
+          "Hinsberg product",
+          "Alkali behaviour"
+        ],
+        "rows": [
+          [
+            "Primary",
+            "Retains acidic N–H",
+            "Can dissolve"
+          ],
+          [
+            "Secondary",
+            "No remaining N–H",
+            "Not similarly soluble"
+          ],
+          [
+            "Tertiary",
+            "No same sulfonamide",
+            "Check acid response"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Nitrous acid distinguishes aromatic diazotization",
+      "formula": "Ar-NH2 --nitrous acid, cold acidic solution--> Ar-N2+",
+      "script": "Aniline reacts with nitrous acid generated under cold acidic conditions to form a benzenediazonium salt. The usual elementary temperature window is about two hundred seventy three to two hundred seventy eight kelvin. Aromatic diazonium salts are useful intermediates in cold solution; they should not be described as indefinitely stable or safe to isolate dry. A primary aliphatic amine can form a much less stable aliphatic diazonium species that loses nitrogen and leads to further products. Secondary amines instead can form N-nitrosamines under appropriate nitrosating conditions; they do not follow the same primary aromatic diazotization sequence. Always identify the original nitrogen class and the aromatic attachment before choosing the pathway. Cold aromatic diazonium formation and later warming are separate stages with different purposes. In a conceptual aniline to phenol sequence, first create the diazonium group under suitable cold acidic conditions, then replace it during aqueous warming. The six ring carbons remain throughout. Different classes of amines react differently with nitrous acid, so the reagent name alone cannot establish that a diazonium salt is the final product.",
+      "points": [
+        "Primary aromatic · Diazonium formation · Cold acidic solution",
+        "Primary aliphatic · Unstable intermediate · Further products",
+        "Secondary · Nitrosamine possible · Different pathway"
+      ],
+      "board": {
+        "heading": "Nitrous acid distinguishes aromatic diazotization",
+        "columns": [
+          "Amine type",
+          "Nitrous acid reaction",
+          "Key condition"
+        ],
+        "rows": [
+          [
+            "Primary aromatic",
+            "Diazonium formation",
+            "Cold acidic solution"
+          ],
+          [
+            "Primary aliphatic",
+            "Unstable intermediate",
+            "Further products"
+          ],
+          [
+            "Secondary",
+            "Nitrosamine possible",
+            "Different pathway"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A diazonium group can be replaced",
+      "formula": "Ar-N2+ -> Ar-OH + N2 under suitable aqueous warming conditions",
+      "script": "A benzenediazonium group can be replaced by chloride or bromide using suitable copper halide with copper in oxidation state plus one conditions, or by cyanide using the corresponding copper reagent in a Sandmeyer transformation. Iodide substitution and other replacement routes use different conditions. Write the reagent explicitly instead of treating every replacement as the same copper-catalysed process. Warming a suitable aqueous diazonium solution can give phenol with nitrogen loss. Introducing CN adds a carbon to the organic product; replacing the group with hydroxyl or Cl does not. Diazonium chemistry therefore connects amines with aromatic compounds that are difficult to obtain by simple direct substitution of an ordinary aryl halide. Replacing the diazonium group of a six carbon ring by chlorine preserves six carbons. Replacing it by a cyano group gives a seven carbon nitrile because the new group contains carbon. Nitrogen gas loss occurs in either replacement, yet the final organic nitrogen content differs: the cyano product still contains a nitrogen atom from the introduced reagent. Track each group's source rather than counting only the starting nitrogen.",
+      "points": [
+        "Chloride · Cl · 6 + 0 = 6",
+        "Cyanide · CN · 6 + 1 = 7",
+        "Aqueous warming · OH · 6 + 0 = 6"
+      ],
+      "board": {
+        "heading": "A diazonium group can be replaced",
+        "columns": [
+          "Diazonium replacement",
+          "New group",
+          "Ring + new C count"
+        ],
+        "rows": [
+          [
+            "Chloride",
+            "Cl",
+            "6 + 0 = 6"
+          ],
+          [
+            "Cyanide",
+            "CN",
+            "6 + 1 = 7"
+          ],
+          [
+            "Aqueous warming",
+            "OH",
+            "6 + 0 = 6"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Coupling makes a bond to another aromatic ring",
+      "formula": "Azo coupling retains nitrogen: Ar-N=N-Ar'; diazonium replacement commonly releases N2",
+      "script": "A diazonium species can act as an electrophile towards an activated aromatic ring, producing an azo linkage joining two aromatic groups. Phenol is commonly coupled under suitably alkaline conditions and aniline under controlled mildly acidic conditions. The medium matters because it controls ring activation and the form of the reacting groups. Coupling often favours the para site when it is available; an occupied para position can change the outcome. Conjugated azo products can be strongly coloured, but not every colour or shade is predictable from a reaction label alone. For synthesis questions, track whether nitrogen is retained as an azo bridge or lost as nitrogen gas during replacement. Azo coupling joins two aromatic partners through a nitrogen nitrogen double bond. If each partner is a six carbon ring without carbon side chains, the product contains twelve carbons and the azo bridge contributes no carbon. Replacement of a diazonium group by hydroxyl instead keeps only the original ring in that product. These different outcomes explain why coupling and replacement cannot be treated as interchangeable arrows in a synthesis plan.",
+      "points": [
+        "Azo coupling · Retained in –N=N– · 6 + 6 = 12",
+        "OH replacement · N₂ released · 6 C ring retained",
+        "Coupling site · Often para if free · Medium matters"
+      ],
+      "board": {
+        "heading": "Coupling makes a bond to another aromatic ring",
+        "columns": [
+          "Aromatic process",
+          "Nitrogen outcome",
+          "Carbon example"
+        ],
+        "rows": [
+          [
+            "Azo coupling",
+            "Retained in –N=N–",
+            "6 + 6 = 12"
+          ],
+          [
+            "OH replacement",
+            "N₂ released",
+            "6 C ring retained"
+          ],
+          [
+            "Coupling site",
+            "Often para if free",
+            "Medium matters"
+          ]
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "(CH3)3CNH2 is a:",
+      "options": [
+        "Tertiary amine",
+        "Primary amine",
+        "Secondary amine",
+        "Quaternary ammonium ion"
+      ],
+      "answer": 1,
+      "explanation": "Only one carbon group is bonded directly to nitrogen; carbon branching does not define the amine class."
+    },
+    {
+      "question": "Reduction of CH3CN gives:",
+      "options": [
+        "Methanamine",
+        "Aniline",
+        "Ethanamine",
+        "Only ammonia"
+      ],
+      "answer": 2,
+      "explanation": "The nitrile carbon is retained and becomes the CH2 bonded to NH2, giving a two-carbon amine."
+    },
+    {
+      "question": "Hofmann rearrangement of CH3CONH2 gives the organic amine:",
+      "options": [
+        "CH3NH2",
+        "CH3CH2NH2",
+        "C6H5NH2",
+        "(CH3)3N"
+      ],
+      "answer": 0,
+      "explanation": "The carbonyl carbon is removed from the organic product, leaving the one-carbon methyl group attached to NH2."
+    },
+    {
+      "question": "A reliable general aqueous basicity rule is:",
+      "options": [
+        "Tertiary is always strongest",
+        "Every amine is equally basic",
+        "Aniline is always strongest",
+        "Solvation and structure must both be considered"
+      ],
+      "answer": 3,
+      "explanation": "Electron donation, resonance, crowding and solvent stabilization compete; no single substitution ranking is universal."
+    },
+    {
+      "question": "The standard carbylamine test is associated with:",
+      "options": [
+        "Only tertiary amines",
+        "Primary amines",
+        "Every nitrogen compound",
+        "Only amides"
+      ],
+      "answer": 1,
+      "explanation": "Primary aliphatic and aromatic amines can give the isocyanide test; secondary and tertiary amines do not."
+    },
+    {
+      "question": "Azo coupling produces the linkage:",
+      "options": [
+        "C#N only",
+        "N2 gas as the only product",
+        "-N=N- between aromatic groups",
+        "Only a C-Cl bond"
+      ],
+      "answer": 2,
+      "explanation": "Coupling retains the two nitrogen atoms in the azo bridge rather than merely replacing the diazonium group."
+    },
+    {
+      "question": "At 25°C with pKw = 14, conjugate-acid pKa = 10 gives base pKb:",
+      "options": [
+        "24",
+        "10",
+        "4",
+        "-4"
+      ],
+      "answer": 2,
+      "explanation": "pKa + pKb = 14 for the conjugate pair under these conditions."
+    },
+    {
+      "question": "Diazonium replacement by CN on an otherwise unsubstituted six-carbon ring gives how many carbons in the nitrile?",
+      "options": [
+        "5",
+        "6",
+        "12",
+        "7"
+      ],
+      "answer": 3,
+      "explanation": "The cyano group contributes one additional carbon."
+    },
+    {
+      "question": "The sulfonamide from a primary amine can dissolve in alkali because it:",
+      "options": [
+        "Retains an acidic N-H",
+        "Has no nitrogen",
+        "Always has a quaternary ion",
+        "Cannot lose a proton"
+      ],
+      "answer": 0,
+      "explanation": "The retained sulfonamide N-H can be deprotonated under suitable alkaline conditions."
+    },
+    {
+      "question": "An azo product joining two unsubstituted six-carbon aromatic rings contains:",
+      "options": [
+        "6 carbons",
+        "12 carbons",
+        "14 carbons",
+        "No nitrogen"
+      ],
+      "answer": 1,
+      "explanation": "Six plus six carbons gives twelve; the N=N bridge contributes nitrogen and no carbon."
+    }
+  ]
+}

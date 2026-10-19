@@ -10,7 +10,8 @@ and Solutions each have a five-chapter Marin recording. Equilibrium has eight
 chapters and Redox and Electrochemistry has nine. Atomic Structure and Chemical
 Bonding each have eight chapters. Mole Concept and Periodic Trends also have
 eight chapters each. Hydrocarbons and Organic Halogens each have eight chapters.
-All thirteen recordings include
+Organic Oxygen has ten chapters and Organic Nitrogen has eight.
+All fifteen recordings include
 timed captions and chapter visuals. Other Chemistry lessons
 remain written-only. Existing
 Physics recordings and captions have not been regenerated.
@@ -43,6 +44,15 @@ limitations, explanations, original worked examples, practice MCQs, diagrams
 and downloadable notes. Original questions are not represented as official PYQs.
 
 ## Remaining course work
+
+Organic Oxygen now has ten narrated chapters at `/jee/classes/organic-oxygen`,
+covering functional groups, alcohol oxidation, phenol, carbonyl addition and
+reduction, aldol and Cannizzaro, iodoform, carboxylic acids, ether cleavage and
+Grignard carbon accounting. Organic Nitrogen has eight chapters at
+`/jee/classes/organic-nitrogen`, including classification, solvent-dependent
+basicity, preparation, identification, diazotization, replacement and azo coupling.
+Each has ten original questions. Further detailed mechanisms, stereochemical
+drawings and multistep synthesis remain for additional lessons.
 
 Hydrocarbons now has eight narrated chapters at `/jee/classes/hydrocarbons`,
 including unsaturation, radical chains, reagent-specific addition, reductive

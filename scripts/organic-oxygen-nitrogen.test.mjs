@@ -8,7 +8,7 @@ test('oxygen and nitrogen foundations map to official units with explicit writte
     assert.equal(l.sections.length, 8);
     assert.equal(l.examples.length, 3);
     assert.equal(l.quiz.length, 6);
-    assert.match(l.remaining, /not a Marin recording or complete unit coverage/);
+    assert.match(l.remaining, /Marin recording/);
   }
 });
 test('oxygen practice distinguishes oxidation, iodoform and initial aldol addition', () => {
