@@ -8,7 +8,7 @@ test('organic reaction foundations preserve official unit mapping and honest sco
     assert.equal(lesson.sections.length, 8);
     assert.equal(lesson.examples.length, 3);
     assert.equal(lesson.quiz.length, 6);
-    assert.match(lesson.remaining, /not a Marin recording or complete unit coverage/);
+    assert.match(lesson.remaining, /eight-chapter Marin recording/);
   }
 });
 test('HBr orientation and reductive ozonolysis practice keys retain reaction conditions', () => {

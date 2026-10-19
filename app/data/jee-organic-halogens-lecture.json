@@ -1,0 +1,424 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script. Read every sentence completely and precisely, including the final sentence. Do not summarize.",
+  "title": "Organic halogens: substitution, elimination and reaction conditions",
+  "subject": "Chemistry",
+  "unit": 16,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 Chemistry syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: characteristics of SN2",
+      "url": "https://openstax.org/books/organic-chemistry/pages/11-3-characteristics-of-the-sn2-reaction"
+    },
+    {
+      "title": "OpenStax: SN1 mechanism",
+      "url": "https://openstax.org/books/organic-chemistry/pages/11-4-the-sn1-reaction"
+    },
+    {
+      "title": "OpenStax: E2 mechanism",
+      "url": "https://openstax.org/books/organic-chemistry/pages/11-8-the-e2-reaction-and-the-deuterium-isotope-effect"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Identify the carbon bearing halogen",
+      "formula": "Aryl C–X and benzylic C–X are different centres",
+      "script": "Welcome to Organic Halogens. This recorded Chemistry class uses an AI generated Marin voice. Classify the carbon bearing halogen before comparing reactions. In a haloalkane, halogen is bonded to a saturated carbon. In chlorobenzene, chlorine is directly attached to an aromatic ring carbon. In benzyl chloride, chlorine is attached to a carbon outside the ring, so the reacting environment is different. Primary, secondary and tertiary alkyl halides are classified by how many carbons are attached to the carbon carrying halogen. A carbon halogen bond is generally polarized toward halogen, leaving the carbon susceptible to suitable nucleophiles. Bond strength, leaving group stability, steric access and solvent all affect reactivity. For comparable simple substrates in many substitution settings, iodide is a better leaving group than bromide, which is better than chloride; fluoride is generally poor. This ranking cannot replace a stated mechanism or conditions. Also distinguish allylic and benzylic centres from vinylic and aryl centres. A nearby pi system can stabilize an intermediate, but direct attachment to an unsaturated carbon creates a different substitution problem.",
+      "points": [
+        "CH₃CH₂Cl · Saturated; one C neighbour · Primary haloalkane",
+        "C₆H₅CH₂Cl · Outside aromatic ring · Benzylic chloride",
+        "C₆H₅Cl · Directly in aromatic ring · Aryl chloride"
+      ],
+      "board": {
+        "heading": "Identify the carbon bearing halogen",
+        "columns": [
+          "Substrate",
+          "Halogen-bearing carbon",
+          "Classification"
+        ],
+        "rows": [
+          [
+            "CH₃CH₂Cl",
+            "Saturated; one C neighbour",
+            "Primary haloalkane"
+          ],
+          [
+            "C₆H₅CH₂Cl",
+            "Outside aromatic ring",
+            "Benzylic chloride"
+          ],
+          [
+            "C₆H₅Cl",
+            "Directly in aromatic ring",
+            "Aryl chloride"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Preparation and reaction site",
+      "formula": "Circle the bond changed by each reagent",
+      "script": "Several routes produce organic halides, and they do not all use the same mechanism. Suitable hydrogen halides or reagents such as thionyl chloride can replace an alcohol's hydroxyl group under appropriate conditions. Adding hydrogen halide to an alkene instead consumes a pi bond and adds hydrogen and halogen. Radical halogenation of an alkane uses initiating conditions and can give mixtures. Aromatic ring halogenation commonly uses an electrophilic pathway with a suitable Lewis acid. In toluene, chlorine with iron three chloride under ring substitution conditions can introduce chlorine on the ring, with ortho and para preferences. Under radical conditions such as light, substitution can instead occur at the side chain. Do not infer the reaction site from the molecular formula of the reagent alone. Preparation may also cause elimination, rearrangement or further substitution depending on substrate and conditions. Before writing an arrow, circle the carbon being changed and identify whether the intended process replaces a group, adds across a multiple bond or changes a side chain. Then verify the product's carbon skeleton.",
+      "points": [
+        "Alcohol → halide · Replace C–O group · Substrate-dependent",
+        "Alkene + HX · Consume C=C · Addition pathway",
+        "Toluene chlorination · Ring or side chain · Catalyst versus light"
+      ],
+      "board": {
+        "heading": "Preparation and reaction site",
+        "columns": [
+          "Route",
+          "Main bond change",
+          "Condition matters"
+        ],
+        "rows": [
+          [
+            "Alcohol → halide",
+            "Replace C–O group",
+            "Substrate-dependent"
+          ],
+          [
+            "Alkene + HX",
+            "Consume C=C",
+            "Addition pathway"
+          ],
+          [
+            "Toluene chlorination",
+            "Ring or side chain",
+            "Catalyst versus light"
+          ]
+        ]
+      },
+      "speechInput": "Several routes produce organic halides, and they do not all use the same mechanism. Suitable hydrogen halides or reagents such as thionyl chloride can replace an alcohol's hydroxyl group under appropriate conditions. Adding hydrogen halide to an alkene instead consumes a pi bond and adds hydrogen and halogen. Radical halogenation of an alkane uses initiating conditions and can give mixtures. Aromatic ring halogenation commonly uses an electrophilic pathway with a suitable Lewis acid. In toluene, chlorine with iron three chloride under ring substitution conditions can introduce chlorine on the ring, with ortho and para preferences. Under radical conditions such as light, substitution can instead occur at the side chain. Do not infer the reaction site from the molecular formula of the reagent alone. Preparation may also cause elimination, rearrangement or further substitution depending on substrate and conditions. Before writing an arrow, circle the carbon being changed and identify whether the intended process replaces a group, adds across a multiple bond or changes a side chain. Then verify the product's carbon skeleton and valence.",
+      "recordingNote": "Closing reminder shortened by TTS; transcript follows independently verified audio. Exact requested input retained for cache provenance."
+    },
+    {
+      "title": "SN2: concerted attack and rate",
+      "formula": "Rate = k[substrate][nucleophile]",
+      "script": "In the S N two mechanism, a nucleophile approaches carbon from the side opposite the leaving group. Bond formation and departure occur in one concerted step. A free carbocation is not an intermediate. In the simple rate law, rate equals the rate constant times substrate concentration times nucleophile concentration. Doubling either concentration doubles the rate, and doubling both multiplies it by four, with temperature and other conditions unchanged. Backside access becomes harder as the reaction centre is crowded. Comparable methyl and primary alkyl substrates are therefore more accessible than tertiary substrates for this pathway. Polar aprotic solvents often support reactive anionic nucleophiles, although the complete substrate and reagent combination must still be considered. At a reacting stereogenic carbon, backside attack inverts the local geometry. This does not automatically turn every R label into S, because priority rankings may change in the product. Reassign the configuration rather than treating a label as a physical mechanism. A stronger nucleophile cannot simply force an ordinary tertiary centre to follow a favourable backside substitution path.",
+      "points": [
+        "Double substrate · 2 · First order in substrate",
+        "Double nucleophile · 2 · First order in nucleophile",
+        "Double both · 4 · Multiply independent factors"
+      ],
+      "board": {
+        "heading": "SN2: concerted attack and rate",
+        "columns": [
+          "Change in simple SN2 conditions",
+          "Rate factor",
+          "Reason"
+        ],
+        "rows": [
+          [
+            "Double substrate",
+            "2",
+            "First order in substrate"
+          ],
+          [
+            "Double nucleophile",
+            "2",
+            "First order in nucleophile"
+          ],
+          [
+            "Double both",
+            "4",
+            "Multiply independent factors"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "SN1: ionization, capture and rearrangement",
+      "formula": "Ideal rate = k[substrate]",
+      "script": "In a simple S N one mechanism, slow ionization first forms a carbocation and leaving group. Nucleophile capture occurs afterward. The ideal rate law depends on substrate concentration alone, because nucleophile participation is not part of the slow ionization step. Doubling only nucleophile concentration therefore produces no direct rate change in this ideal model. A tertiary substrate can favour ionization under suitable conditions because its carbocation is more stable than a simple primary one. Benzylic and allylic intermediates may gain resonance stabilization. Strongly ionizing media can assist separation of charged species. A carbocation can rearrange when a more favourable structure is accessible, so compare skeletons before declaring the final substitution product. A planar carbocation permits attack from either face, allowing a stereogenic substrate to lose optical purity. Exact equal racemization is not guaranteed because ion pairing and nearby groups can make the faces unequally accessible. These are mechanistic tendencies, not a rule that every tertiary halide always gives substitution: elimination can compete. State the solvent, nucleophile and temperature before choosing a dominant pathway.",
+      "points": [
+        "Slow ionization · Carbocation formed · Rearrangement possible",
+        "Rate = k[R–X] · Substrate-dependent · Nu doubling: factor 1",
+        "Planar intermediate · Two faces accessible · Optical purity may fall"
+      ],
+      "board": {
+        "heading": "SN1: ionization, capture and rearrangement",
+        "columns": [
+          "Simple SN1 feature",
+          "Meaning",
+          "Product consequence"
+        ],
+        "rows": [
+          [
+            "Slow ionization",
+            "Carbocation formed",
+            "Rearrangement possible"
+          ],
+          [
+            "Rate = k[R–X]",
+            "Substrate-dependent",
+            "Nu doubling: factor 1"
+          ],
+          [
+            "Planar intermediate",
+            "Two faces accessible",
+            "Optical purity may fall"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Elimination competes with substitution",
+      "formula": "E2 removes β-H and leaving group together",
+      "script": "In beta elimination, hydrogen is removed from a carbon adjacent to the carbon carrying the leaving group. A double bond forms between these alpha and beta carbons. In the E two mechanism, base removes hydrogen as the leaving group departs in the same step. The simple rate depends on both substrate and base concentrations. An appropriate anti periplanar arrangement helps the required orbital overlap; ring conformations can therefore restrict which product forms. Heating a suitable haloalkane with alcoholic potassium hydroxide commonly favours elimination in elementary questions, while aqueous hydroxide often favours substitution for suitable substrates. These are contextual comparisons, not absolute switches. Bromoethane with aqueous hydroxide can give ethanol; with hot alcoholic base it can give ethene. A secondary butyl halide with a small base often gives but two ene as the major alkene, while bulky bases or geometric restrictions can change preferences. First check that a beta hydrogen exists, then identify all possible adjacent double bonds. Distinguish the major product from the only possible product.",
+      "points": [
+        "Aqueous OH⁻ · Ethanol; substitution · 2 carbons retained",
+        "Hot alcoholic base · Ethene; elimination · 2 carbons retained",
+        "E2 elementary law · k[R–X][base] · Concerted process"
+      ],
+      "board": {
+        "heading": "Elimination competes with substitution",
+        "columns": [
+          "Bromoethane comparison",
+          "Common textbook outcome",
+          "Skeleton check"
+        ],
+        "rows": [
+          [
+            "Aqueous OH⁻",
+            "Ethanol; substitution",
+            "2 carbons retained"
+          ],
+          [
+            "Hot alcoholic base",
+            "Ethene; elimination",
+            "2 carbons retained"
+          ],
+          [
+            "E2 elementary law",
+            "k[R–X][base]",
+            "Concerted process"
+          ]
+        ]
+      },
+      "speechInput": "In beta elimination, hydrogen is removed from a carbon adjacent to the carbon carrying the leaving group. A double bond forms between these alpha and beta carbons. In the E two mechanism, base removes hydrogen as the leaving group departs in the same step. The simple rate depends on both substrate and base concentrations. An appropriate anti periplanar arrangement helps the required orbital overlap; ring conformations can therefore restrict which product forms. Heating a suitable haloalkane with alcoholic potassium hydroxide commonly favours elimination in elementary questions, while aqueous hydroxide often favours substitution for suitable substrates. These are contextual comparisons, not absolute switches. Bromoethane with aqueous hydroxide can give ethanol; with hot alcoholic base it can give ethene. A secondary butyl halide with a small base often gives but two ene as the major alkene, while bulky bases or geometric restrictions can change preferences. First check that a beta hydrogen exists, then identify all possible adjacent double bonds. Distinguish the major product from the only possible product and retain the original carbon count.",
+      "recordingNote": "Closing reminder shortened by TTS; transcript follows independently verified audio. Exact requested input retained for cache provenance."
+    },
+    {
+      "title": "Haloarenes and activated aromatic substitution",
+      "formula": "Chlorobenzene is not benzyl chloride",
+      "script": "Ordinary chlorobenzene resists the usual alkyl substitution pathways. The chlorine bearing carbon is sp two hybridized, and conjugation gives the carbon chlorine bond partial double bond character. Ordinary backside S N two displacement at that aromatic carbon is difficult. A simple S N one route would require an unfavourable phenyl cation, so it is not the usual alternative. Benzyl chloride has its leaving group on a saturated carbon outside the ring and must be considered separately. Resistance does not mean all haloarenes are chemically inert. Strong electron withdrawing groups, such as nitro groups in suitable ortho or para positions relative to halogen, can activate a ring toward nucleophilic aromatic substitution. The intermediate and reaction pathway differ from ordinary alkyl substitution. A meta nitro group does not provide the same direct resonance stabilization in the usual addition elimination mechanism. Harsh conditions can also allow other aromatic substitution pathways. For an exam comparison, mark the exact attachment point, locate activating substituents and read the conditions before ranking reactivity from a memorized halide list.",
+      "points": [
+        "Aryl C–Cl · Resists alkyl SN1/SN2 · Unfavourable ordinary paths",
+        "Benzylic C–Cl · Different reaction centre · Outside ring carbon",
+        "Ortho / para nitro · Can activate aromatic SN · Different mechanism"
+      ],
+      "board": {
+        "heading": "Haloarenes and activated aromatic substitution",
+        "columns": [
+          "Substrate feature",
+          "Ordinary implication",
+          "Important distinction"
+        ],
+        "rows": [
+          [
+            "Aryl C–Cl",
+            "Resists alkyl SN1/SN2",
+            "Unfavourable ordinary paths"
+          ],
+          [
+            "Benzylic C–Cl",
+            "Different reaction centre",
+            "Outside ring carbon"
+          ],
+          [
+            "Ortho / para nitro",
+            "Can activate aromatic SN",
+            "Different mechanism"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Grignard formation and carbon coupling",
+      "formula": "R–MgX + H₂O → R–H + Mg(OH)X",
+      "script": "An appropriate organic halide can react with magnesium in dry ether to form a Grignard reagent. Its carbon has strongly basic and nucleophilic character. Water or another sufficiently acidic proton can quench the reagent before a planned carbon carbon bond forming reaction. Ethylmagnesium bromide meeting water gives ethane as its organic product: the ethyl carbon accepts a proton instead of adding to a later carbonyl reagent. This is why dry conditions are chemically necessary. When no acidic interference is present, reaction with an appropriate carbonyl compound followed by work-up can form a new carbon carbon bond, but the precise product depends on the carbonyl partner. Wurtz coupling instead uses sodium with suitable alkyl halides in dry ether. Two methyl halide units can couple to ethane. Using different alkyl halides can give several homo and cross coupling products, making the method poorly selective for one unsymmetrical alkane. Count the carbons from both coupling partners and consider all pairings. Do not confuse magnesium insertion with sodium coupling merely because both start from an organic halide.",
+      "points": [
+        "Ethyl–MgBr + water · Ethane · Proton transfer quenches",
+        "2 methyl halide units · Ethane by coupling · Na; dry ether",
+        "Mixed Wurtz partners · Several combinations · Poor single-product selectivity"
+      ],
+      "board": {
+        "heading": "Grignard formation and carbon coupling",
+        "columns": [
+          "Transformation",
+          "Organic outcome",
+          "Key condition"
+        ],
+        "rows": [
+          [
+            "Ethyl–MgBr + water",
+            "Ethane",
+            "Proton transfer quenches"
+          ],
+          [
+            "2 methyl halide units",
+            "Ethane by coupling",
+            "Na; dry ether"
+          ],
+          [
+            "Mixed Wurtz partners",
+            "Several combinations",
+            "Poor single-product selectivity"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Compound properties and final reaction checks",
+      "formula": "Substrate + reagent + solvent + conditions",
+      "script": "Some halogen compounds are studied for their properties and environmental history as well as their reactions. Chloroform has been used as a solvent and historically as an anaesthetic. It has significant toxicity and can oxidize in air and light to phosgene. Iodoform is associated with an older antiseptic use and with the yellow product formed in the iodoform test for suitable precursors. Many chlorofluorocarbons persist long enough to reach the stratosphere, where chlorine radicals can catalyse ozone destruction. D D T has a history of insecticidal use and concerns involving persistence and bioaccumulation. These chemical facts should be connected with molecular stability and reaction pathways rather than reduced to a list of names. For a product question, record four things: substrate, reagent, solvent and conditions. Decide whether substitution, elimination, proton transfer or coupling is plausible. Check the carbon skeleton, charges and the presence of beta hydrogen where required. Apply a rate law only to the stated mechanism. The practice questions review those choices; fuller stereochemical drawings and additional preparation routes remain for further lessons.",
+      "points": [
+        "Chloroform · Solvent; historical anaesthetic · Toxicity; air oxidation",
+        "CFCs · Ozone destruction · Persistent; radical chemistry",
+        "DDT · Insecticide history · Persistence; bioaccumulation"
+      ],
+      "board": {
+        "heading": "Compound properties and final reaction checks",
+        "columns": [
+          "Compound class",
+          "Studied association",
+          "Relevant property"
+        ],
+        "rows": [
+          [
+            "Chloroform",
+            "Solvent; historical anaesthetic",
+            "Toxicity; air oxidation"
+          ],
+          [
+            "CFCs",
+            "Ozone destruction",
+            "Persistent; radical chemistry"
+          ],
+          [
+            "DDT",
+            "Insecticide history",
+            "Persistence; bioaccumulation"
+          ]
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which has chlorine directly attached to an aromatic-ring carbon?",
+      "options": [
+        "CH3Cl",
+        "C6H5CH2Cl",
+        "CH3CH2Cl",
+        "C6H5Cl"
+      ],
+      "answer": 3,
+      "explanation": "Chlorobenzene has an aryl C-Cl bond; benzyl chloride has chlorine on an external saturated carbon."
+    },
+    {
+      "question": "A simple SN2 mechanism contains:",
+      "options": [
+        "A mandatory free carbocation",
+        "One concerted substitution step",
+        "Only a radical chain",
+        "A rate independent of nucleophile"
+      ],
+      "answer": 1,
+      "explanation": "Backside bond formation and leaving-group departure occur together rather than through a free carbocation."
+    },
+    {
+      "question": "In the ideal SN1 rate law, doubling only nucleophile concentration changes rate by:",
+      "options": [
+        "No direct change",
+        "Doubling it",
+        "Quadrupling it",
+        "Halving it"
+      ],
+      "answer": 0,
+      "explanation": "The ideal law depends on substrate concentration because its slow ionization precedes nucleophile capture."
+    },
+    {
+      "question": "SN2 at a reacting stereogenic carbon gives:",
+      "options": [
+        "Guaranteed unchanged geometry",
+        "A free planar carbocation",
+        "Inversion of geometry",
+        "Guaranteed equal racemization"
+      ],
+      "answer": 2,
+      "explanation": "Backside attack inverts the local arrangement; R/S labels must be reassigned using the product priorities."
+    },
+    {
+      "question": "Water added to a Grignard reagent generally:",
+      "options": [
+        "Preserves it unchanged",
+        "Always makes an alkene",
+        "Improves its storage",
+        "Quenches it by proton transfer"
+      ],
+      "answer": 3,
+      "explanation": "The strongly basic carbon accepts a proton, producing a hydrocarbon and destroying the organomagnesium reagent."
+    },
+    {
+      "question": "The hydrogen removed in a beta elimination is on:",
+      "options": [
+        "The carbon carrying X necessarily",
+        "A carbon adjacent to the carbon carrying X",
+        "Any remote carbon equally",
+        "Only the halogen atom"
+      ],
+      "answer": 1,
+      "explanation": "Removing beta hydrogen and the alpha leaving group forms a double bond between adjacent carbons."
+    },
+    {
+      "question": "For rate = k[R-X][Nu], doubling both concentrations changes rate by:",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "answer": 2,
+      "explanation": "The two independent factors of two multiply to four."
+    },
+    {
+      "question": "Under standard elementary conditions, bromoethane with hot alcoholic KOH mainly undergoes:",
+      "options": [
+        "Beta elimination to ethene",
+        "Addition to benzene",
+        "Carbon-chain growth",
+        "Formation of ethyne in one step"
+      ],
+      "answer": 0,
+      "explanation": "Base removes beta hydrogen while bromide leaves, forming the two-carbon alkene."
+    },
+    {
+      "question": "Which nitro position can provide the usual resonance activation for nucleophilic aromatic displacement of ring halogen?",
+      "options": [
+        "Only meta",
+        "Any position identically",
+        "Only a distant side chain",
+        "Ortho or para"
+      ],
+      "answer": 3,
+      "explanation": "Ortho and para nitro groups can stabilize the intermediate in the usual addition-elimination pathway."
+    },
+    {
+      "question": "Why is mixed-halide Wurtz coupling often poorly selective for one unsymmetrical alkane?",
+      "options": [
+        "No carbon-carbon bond can form",
+        "Several homo- and cross-coupling pairings can occur",
+        "Only the halogens couple",
+        "Every substrate must become an alcohol"
+      ],
+      "answer": 1,
+      "explanation": "Different starting halides permit multiple coupling combinations."
+    }
+  ]
+}

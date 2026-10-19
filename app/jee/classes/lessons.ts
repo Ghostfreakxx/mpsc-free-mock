@@ -1,3 +1,7 @@
+import hydrocarbons from "../../data/jee-hydrocarbons-lecture.json";
+import hydrocarbonsTimings from "../../data/jee-hydrocarbons-timings.json";
+import organicHalogens from "../../data/jee-organic-halogens-lecture.json";
+import organicHalogensTimings from "../../data/jee-organic-halogens-timings.json";
 import moleConcept from "../../data/jee-mole-concept-lecture.json";
 import moleConceptTimings from "../../data/jee-mole-concept-timings.json";
 import periodicTrends from "../../data/jee-periodic-trends-lecture.json";
@@ -1202,5 +1206,25 @@ export const lectures: Lecture[] = [
     subtitles: "/lectures/periodic-trends/english.vtt", timings: periodicTrendsTimings,
     segments: periodicTrends.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
     sources: periodicTrends.sources, quiz: periodicTrends.quiz,
+  },
+  {
+    id: "hydrocarbons", subject: "Chemistry", unit: 15, number: "C12", title: hydrocarbons.title,
+    description: "Eight narrated chapters on hydrocarbon frameworks, radical chains, addition, ozonolysis, alkynes and aromatic substitution.",
+    scope: "Recorded Unit 15 foundation with original practice. Detailed conformational drawings, additional preparation routes, alkyne hydration and longer synthesis problems remain; not exhaustive coverage or official PYQs.",
+    progressKey: "jee.hydrocarbons.lecture.v1",
+    audio: "/lectures/hydrocarbons/narration-marin.mp3",
+    subtitles: "/lectures/hydrocarbons/english.vtt", timings: hydrocarbonsTimings,
+    segments: hydrocarbons.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
+    sources: hydrocarbons.sources, quiz: hydrocarbons.quiz,
+  },
+  {
+    id: "organic-halogens", subject: "Chemistry", unit: 16, number: "C13", title: organicHalogens.title,
+    description: "Eight narrated chapters on preparation, SN1/SN2, elimination, haloarenes, Grignard reagents, coupling and compound properties.",
+    scope: "Recorded Unit 16 foundation with original practice. Detailed stereochemical drawings, additional preparation routes, special haloarene mechanisms and extended compound comparisons remain; not exhaustive coverage or official PYQs.",
+    progressKey: "jee.organic-halogens.lecture.v1",
+    audio: "/lectures/organic-halogens/narration-marin.mp3",
+    subtitles: "/lectures/organic-halogens/english.vtt", timings: organicHalogensTimings,
+    segments: organicHalogens.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
+    sources: organicHalogens.sources, quiz: organicHalogens.quiz,
   },
 ];

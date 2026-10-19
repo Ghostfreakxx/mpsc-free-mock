@@ -9,7 +9,8 @@ Organic Principles, Coordination Compounds, Chemical Kinetics, Chemical Thermody
 and Solutions each have a five-chapter Marin recording. Equilibrium has eight
 chapters and Redox and Electrochemistry has nine. Atomic Structure and Chemical
 Bonding each have eight chapters. Mole Concept and Periodic Trends also have
-eight chapters each. All eleven recordings include
+eight chapters each. Hydrocarbons and Organic Halogens each have eight chapters.
+All thirteen recordings include
 timed captions and chapter visuals. Other Chemistry lessons
 remain written-only. Existing
 Physics recordings and captions have not been regenerated.
@@ -42,6 +43,14 @@ limitations, explanations, original worked examples, practice MCQs, diagrams
 and downloadable notes. Original questions are not represented as official PYQs.
 
 ## Remaining course work
+
+Hydrocarbons now has eight narrated chapters at `/jee/classes/hydrocarbons`,
+including unsaturation, radical chains, reagent-specific addition, reductive
+ozonolysis, acetylides, selective reduction and aromatic substitution. Organic
+Halogens has eight chapters at `/jee/classes/organic-halogens`, covering reaction
+centres, preparation, SN1/SN2, elimination, activated haloarenes, Grignard quenching,
+coupling and compound properties. Each includes ten original questions. Detailed
+stereochemical drawings, alkyne hydration and longer synthesis problems remain.
 
 Mole Concept now has eight narrated chapters at `/jee/classes/mole-concept`,
 covering chemical laws, particle and mass conversions, composition, formulas,
