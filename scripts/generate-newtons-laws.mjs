@@ -9,6 +9,8 @@ envPackage.loadEnvConfig(root, false, { info() {}, error() {} });
 const key = process.env.OPENAI_API_KEY;
 if (!key?.trim()) throw new Error('Missing API credential');
 const selected = process.argv[2] ?? 'newtons-laws';
+const requestTimeoutMs = Number(process.env.RECORDING_TTS_TIMEOUT_MS ?? 600000);
+if (!Number.isInteger(requestTimeoutMs) || requestTimeoutMs < 30000 || requestTimeoutMs > 600000) throw new Error('Recording timeout must be between 30000 and 600000 milliseconds');
 const targets = { 'newtons-laws': 'newtons', 'work-energy': 'work-energy', rotation: 'rotation', gravity: 'gravity', elasticity: 'elasticity', 'fluid-statics': 'fluid-statics', 'fluid-flow': 'fluid-flow', 'viscosity-surface-tension': 'viscosity-surface-tension', 'thermal-expansion': 'thermal-expansion', calorimetry: 'calorimetry', 'heat-transfer': 'heat-transfer', thermodynamics: 'thermodynamics', 'kinetic-theory': 'kinetic-theory' };
 targets.oscillations = 'oscillations';
 targets.waves = 'waves';
@@ -65,6 +67,9 @@ targets['chemical-thermodynamics'] = 'chemical-thermodynamics';
 targets.solutions = 'solutions';
 targets.equilibrium = 'equilibrium';
 targets['redox-electrochemistry'] = 'redox-electrochemistry';
+targets['biomolecules'] = 'biomolecules';
+targets['purification-analysis'] = 'purification-analysis';
+targets['practical-chemistry'] = 'practical-chemistry';
 targets['organic-oxygen'] = 'organic-oxygen';
 targets['organic-nitrogen'] = 'organic-nitrogen';
 targets['hydrocarbons'] = 'hydrocarbons';
@@ -117,7 +122,7 @@ for (const [i,chapter] of lesson.chapters.entries()) {
     if (buffer) throw new Error('Audio exists without a valid fingerprint; preserve it and repair its cache');
     if (speechInput.length > 4096) throw new Error('Chapter exceeds the speech input limit');
     await reserveAudioBudget(root, { lesson: selected, chapter: i + 1, kind: 'tts', amount: ttsReservationUsd });
-    const response=await fetch('https://api.openai.com/v1/audio/speech',{method:'POST',headers:{Authorization:`Bearer ${key}`,'Content-Type':'application/json'},body:JSON.stringify({model:'gpt-4o-mini-tts',voice:'marin',instructions,input:speechInput,response_format:'mp3'}),signal:AbortSignal.timeout(600000)});
+    const response=await fetch('https://api.openai.com/v1/audio/speech',{method:'POST',headers:{Authorization:`Bearer ${key}`,'Content-Type':'application/json'},body:JSON.stringify({model:'gpt-4o-mini-tts',voice:'marin',instructions,input:speechInput,response_format:'mp3'}),signal:AbortSignal.timeout(requestTimeoutMs)});
     if(!response.ok) throw new Error(`TTS HTTP ${response.status}`);
     const chunks=[];let bytes=0,lastReport=Date.now();
     for await(const chunk of response.body){

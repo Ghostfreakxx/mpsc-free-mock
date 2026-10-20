@@ -1,3 +1,9 @@
+import biomolecules from "../../data/jee-biomolecules-lecture.json";
+import biomoleculesTimings from "../../data/jee-biomolecules-timings.json";
+import purificationAnalysis from "../../data/jee-purification-analysis-lecture.json";
+import purificationAnalysisTimings from "../../data/jee-purification-analysis-timings.json";
+import practicalChemistry from "../../data/jee-practical-chemistry-lecture.json";
+import practicalChemistryTimings from "../../data/jee-practical-chemistry-timings.json";
 import organicOxygen from "../../data/jee-organic-oxygen-lecture.json";
 import organicOxygenTimings from "../../data/jee-organic-oxygen-timings.json";
 import organicNitrogen from "../../data/jee-organic-nitrogen-lecture.json";
@@ -1250,5 +1256,35 @@ export const lectures: Lecture[] = [
     subtitles: "/lectures/organic-nitrogen/english.vtt", timings: organicNitrogenTimings,
     segments: organicNitrogen.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
     sources: organicNitrogen.sources, quiz: organicNitrogen.quiz,
+  },
+  {
+    id: "biomolecules", subject: "Chemistry", unit: 19, number: "C16", title: biomolecules.title,
+    description: "Eight narrated chapters on sugars, hydrolysis, polysaccharides, peptides, protein structure, enzymes, vitamins and nucleic acids.",
+    scope: "Recorded Unit 19 foundation with original practice. Detailed sugar stereochemical drawings, named vitamin-function tables, further hormone examples and mixed identification remain; not exhaustive coverage or official PYQs.",
+    progressKey: "jee.biomolecules.lecture.v1",
+    audio: "/lectures/biomolecules/narration-marin.mp3",
+    subtitles: "/lectures/biomolecules/english.vtt", timings: biomoleculesTimings,
+    segments: biomolecules.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
+    sources: biomolecules.sources, quiz: biomolecules.quiz,
+  },
+  {
+    id: "purification-analysis", subject: "Chemistry", unit: 13, number: "C17", title: purificationAnalysis.title,
+    description: "Eight narrated chapters on separation, crystallization, distillation, extraction, chromatography, element detection and composition calculations.",
+    scope: "Recorded Unit 13 foundation with original practice. Detailed analytical equations, phosphorus calculations, partition calculations and larger datasets remain; not exhaustive coverage or official PYQs.",
+    progressKey: "jee.purification-analysis.lecture.v1",
+    audio: "/lectures/purification-analysis/narration-marin.mp3",
+    subtitles: "/lectures/purification-analysis/english.vtt", timings: purificationAnalysisTimings,
+    segments: purificationAnalysis.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
+    sources: purificationAnalysis.sources, quiz: purificationAnalysis.quiz,
+  },
+  {
+    id: "practical-chemistry", subject: "Chemistry", unit: 20, number: "C18", title: practicalChemistry.title,
+    description: "Eight narrated chapters on observations, titration ratios, permanganate, salt and functional-group evidence, preparations, calorimetry and rate experiments.",
+    scope: "Recorded Unit 20 conceptual foundation with original practice. Full ion-analysis schemes, all preparation equations, indicator curves, sol preparation and further kinetic datasets remain; not exhaustive coverage or official PYQs.",
+    progressKey: "jee.practical-chemistry.lecture.v1",
+    audio: "/lectures/practical-chemistry/narration-marin.mp3",
+    subtitles: "/lectures/practical-chemistry/english.vtt", timings: practicalChemistryTimings,
+    segments: practicalChemistry.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
+    sources: practicalChemistry.sources, quiz: practicalChemistry.quiz,
   },
 ];

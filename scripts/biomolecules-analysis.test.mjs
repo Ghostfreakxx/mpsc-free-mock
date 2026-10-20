@@ -8,7 +8,7 @@ test('biomolecules and analysis map to official units with honest written scope'
     assert.equal(l.sections.length, 8);
     assert.equal(l.examples.length, 3);
     assert.equal(l.quiz.length, 6);
-    assert.match(l.remaining, /not a Marin recording or complete unit coverage/);
+    assert.match(l.remaining, /eight-chapter Marin recording/);
   }
 });
 test('peptide and DNA examples retain topology and double-strand assumptions', () => {

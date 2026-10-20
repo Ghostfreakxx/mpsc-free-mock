@@ -1,0 +1,420 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script. Read every sentence completely and precisely, including the final sentence. Do not summarize.",
+  "title": "Purification and characterisation: separation and composition",
+  "subject": "Chemistry",
+  "unit": 13,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 Chemistry syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "NCERT: organic principles and techniques",
+      "url": "https://ncert.nic.in/textbook/pdf/kech202.pdf"
+    },
+    {
+      "title": "OpenStax: empirical and molecular formulas",
+      "url": "https://openstax.org/books/chemistry-2e/pages/3-2-determining-empirical-and-molecular-formulas"
+    },
+    {
+      "title": "OpenStax: physical separation and mixtures",
+      "url": "https://openstax.org/books/chemistry-2e/pages/1-2-phases-and-classification-of-matter"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Choose the property that differs between components",
+      "formula": "Separation: exploit a property difference; analysis: identify or measure composition",
+      "script": "Welcome to Purification and Analysis. This recorded Chemistry class uses an AI generated Marin voice. Purification separates a desired substance from impurities by exploiting differences in properties. It does not normally change the desired compound into a new chemical. A mixture of an insoluble solid and a solution may be filtered, but filtering a dissolved impurity does not remove it merely because its particles are invisible. Qualitative analysis asks which elements or groups are present; quantitative analysis measures how much. Characterisation may combine composition with physical or chemical behaviour. A sharp melting range can support purity for a suitable solid, but one measurement alone does not prove identity or perfect purity under every circumstance. Consider sand mixed with a dissolved salt solution. Filtering can retain the sand while the salt remains in the filtrate. Recovering that dissolved salt requires another principle, such as removing solvent or crystallizing under suitable conditions. The proposed method should identify which component is retained, which moves to another phase and whether the desired compound's chemical identity is preserved.",
+      "points": [
+        "Suspended insoluble solid · Filtration · Dissolved solute passes",
+        "Dissolved desired solid · Crystallization · Depends on solubility",
+        "Identity question · Combined evidence · One property is not proof"
+      ],
+      "board": {
+        "heading": "Choose the property that differs between components",
+        "columns": [
+          "Mixture feature",
+          "Useful principle",
+          "Limitation"
+        ],
+        "rows": [
+          [
+            "Suspended insoluble solid",
+            "Filtration",
+            "Dissolved solute passes"
+          ],
+          [
+            "Dissolved desired solid",
+            "Crystallization",
+            "Depends on solubility"
+          ],
+          [
+            "Identity question",
+            "Combined evidence",
+            "One property is not proof"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Crystallization uses temperature-dependent solubility",
+      "formula": "Recrystallization needs a useful difference between hot and cold solubility",
+      "script": "A suitable recrystallization solvent dissolves much of the desired solid when hot and less when cold, allowing crystals to form on cooling. Impurities may remain in solution or be removed as insoluble material at a suitable stage. The choice must avoid unwanted chemical reaction with the compound. Cooling does not force every last molecule into crystals; some desired product remains dissolved, so yield and purity are different goals. If the solvent dissolves the product equally well hot and cold, simple cooling is less useful. Sublimation instead exploits a solid's ability to enter the vapour phase and redeposit, separating it from suitably nonvolatile impurities. Suppose a stated solvent quantity dissolves ten grams of a compound when hot but only two grams at the final cold temperature. Starting from a hot saturated solution, at most eight grams could crystallize in that simplified model before additional losses. A larger recovered mass is not automatically purer material. Solubility data, solvent quantity and final temperature are necessary before calculating a theoretical recovery.",
+      "points": [
+        "Hot saturation · 10 g · Starting amount",
+        "Cold equilibrium · 2 g · Remains dissolved",
+        "Ideal recovery · 10 − 2 · 8 g crystals maximum"
+      ],
+      "board": {
+        "heading": "Crystallization uses temperature-dependent solubility",
+        "columns": [
+          "Solubility model",
+          "Dissolved amount",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Hot saturation",
+            "10 g",
+            "Starting amount"
+          ],
+          [
+            "Cold equilibrium",
+            "2 g",
+            "Remains dissolved"
+          ],
+          [
+            "Ideal recovery",
+            "10 − 2",
+            "8 g crystals maximum"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Distillation uses vapour composition",
+      "formula": "Boiling occurs when total vapour pressure matches external pressure",
+      "script": "Distillation vaporizes part of a liquid mixture and condenses the vapour. A more volatile component is often enriched in that vapour. Simple distillation suits some widely separated boiling behaviour or removal of a volatile liquid from nonvolatile material; closer boiling liquids may require fractional distillation with repeated vapour-liquid contact. Reduced-pressure distillation lowers the boiling temperature and can help avoid thermal decomposition. Steam distillation applies to suitable water-immiscible, steam-volatile compounds because their vapour pressures contribute to the total. No method guarantees separation of every mixture: azeotropes and chemical instability can limit ordinary distillation. Boiling occurs when the relevant vapour pressure reaches the external pressure. Lowering external pressure can therefore reduce the required temperature. A fractionating column provides repeated separation opportunities rather than acting as a chemical reagent. Choose the method from volatility, thermal stability and mixture behaviour, and recognize when an azeotrope prevents the assumed unlimited enrichment by ordinary fractional distillation.",
+      "points": [
+        "Fractional · Closer volatility · Azeotropes possible",
+        "Reduced pressure · Lower boiling temperature · Stability still matters",
+        "Steam · Suitable immiscible compound · Not every liquid"
+      ],
+      "board": {
+        "heading": "Distillation uses vapour composition",
+        "columns": [
+          "Distillation type",
+          "Reason to choose",
+          "Important limit"
+        ],
+        "rows": [
+          [
+            "Fractional",
+            "Closer volatility",
+            "Azeotropes possible"
+          ],
+          [
+            "Reduced pressure",
+            "Lower boiling temperature",
+            "Stability still matters"
+          ],
+          [
+            "Steam",
+            "Suitable immiscible compound",
+            "Not every liquid"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Extraction and chromatography redistribute a substance",
+      "formula": "R_f = spot travel distance / solvent-front travel distance",
+      "script": "Differential extraction distributes a solute between suitable immiscible solvents. The amount in each phase depends on its affinity and the phase volumes; repeated smaller extractions can be more effective than one extraction of the same total solvent volume under an appropriate partition model. Do not assume every organic substance must prefer the organic phase. Chromatography separates components because they interact differently with stationary and mobile phases. In elementary paper or thin-layer work, R f is the distance travelled by the spot divided by the distance travelled by the solvent front from the same starting line. It depends on the system and conditions, so matching one R f alone does not prove identity. If a chromatographic spot travels three centimetres and the solvent front five centimetres from the same origin, the ratio is zero point six. Both distances use the same length units. Those units cancel, so the ratio is dimensionless. A new solvent or stationary phase can change the value for the same compound. In extraction, always state which phase is being analysed and include the phase volumes when translating a concentration ratio into recovered amounts.",
+      "points": [
+        "Spot · 3 cm · Same origin",
+        "Solvent front · 5 cm · Same system",
+        "Rf · 3 / 5 = 0.60 · Dimensionless"
+      ],
+      "board": {
+        "heading": "Extraction and chromatography redistribute a substance",
+        "columns": [
+          "Chromatography",
+          "Distance from origin",
+          "Check"
+        ],
+        "rows": [
+          [
+            "Spot",
+            "3 cm",
+            "Same origin"
+          ],
+          [
+            "Solvent front",
+            "5 cm",
+            "Same system"
+          ],
+          [
+            "Rf",
+            "3 / 5 = 0.60",
+            "Dimensionless"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Element detection converts a hidden element into a detectable form",
+      "formula": "Qualitative observation requires the correct conversion and control of interfering species",
+      "script": "In organic compounds an element can be covalently bound and not respond directly as a free ion. Classical sodium-fusion analysis converts suitable nitrogen, sulfur or halogen content into ionic products that can be tested. The chemistry involves reactive metal and hazardous products and belongs only in a supervised laboratory, not an improvised home experiment. Nitrogen can be detected through cyanide-derived iron-complex chemistry, sulfur through sulfide chemistry and halogens through suitable silver-halide precipitation after removing interferences. Simultaneous nitrogen and sulfur can form thiocyanate, altering the expected observations. Phosphorus detection can involve oxidation to phosphate followed by a suitable phosphate test. A negative poorly performed test is not proof an element is absent. Classical element tests first transform covalently bound elements into species with recognizable reactions. This explains why directly adding an ionic test reagent to an untreated organic compound may fail. A positive observation needs the expected chemistry and interference controls; a negative observation also depends on successful conversion and detection. Treat the test result as evidence within a stated analytical scheme rather than an infallible label.",
+      "points": [
+        "Nitrogen · Ionic detectable species · Conversion must succeed",
+        "Sulfur / halogen · Suitable ionic products · Remove interference",
+        "Negative test · No observed response · Not absolute proof"
+      ],
+      "board": {
+        "heading": "Element detection converts a hidden element into a detectable form",
+        "columns": [
+          "Element evidence",
+          "Conversion principle",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "Nitrogen",
+            "Ionic detectable species",
+            "Conversion must succeed"
+          ],
+          [
+            "Sulfur / halogen",
+            "Suitable ionic products",
+            "Remove interference"
+          ],
+          [
+            "Negative test",
+            "No observed response",
+            "Not absolute proof"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Combustion data count carbon and hydrogen",
+      "formula": "m(C) = (12/44)m(CO2); m(H) = (2/18)m(H2O) with C=12, H=1, O=16",
+      "script": "Complete combustion analysis can relate collected products to carbon and hydrogen in a sample. Carbon is measured through carbon dioxide, while hydrogen is measured through water. With carbon atomic mass twelve and oxygen sixteen, carbon accounts for twelve forty fourths of the carbon dioxide mass. With hydrogen one, hydrogen accounts for two eighteenths of water mass. Convert product masses to element masses before dividing by sample mass to obtain percentages. Only assign the remaining mass to oxygen when the problem establishes that no other unmeasured element or impurity contributes. A zero point three zero zero gram sample gives zero point four four zero gram carbon dioxide and zero point one eight zero gram water. These correspond to zero point one two zero gram carbon and zero point zero two zero gram hydrogen. Under the stated carbon hydrogen oxygen assumption, oxygen mass is zero point one six zero gram. The masses add back to the sample mass. The carbon percentage is forty and the hydrogen percentage about six point six seven. Product mass can exceed sample mass because oxygen from combustion also enters those products.",
+      "points": [
+        "0.440 g CO₂ · 0.120 g C · 40.0% C",
+        "0.180 g H₂O · 0.0200 g H · 6.67% H",
+        "O by difference · 0.160 g O · Only C, H, O assumed"
+      ],
+      "board": {
+        "heading": "Combustion data count carbon and hydrogen",
+        "columns": [
+          "Combustion product",
+          "Element mass",
+          "0.300 g sample"
+        ],
+        "rows": [
+          [
+            "0.440 g CO₂",
+            "0.120 g C",
+            "40.0% C"
+          ],
+          [
+            "0.180 g H₂O",
+            "0.0200 g H",
+            "6.67% H"
+          ],
+          [
+            "O by difference",
+            "0.160 g O",
+            "Only C, H, O assumed"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Other elemental estimates need their own chemical assumptions",
+      "formula": "Element mass from a pure weighed precipitate = precipitate mass x element molar-mass fraction",
+      "script": "Dumas nitrogen estimation measures nitrogen gas after suitable conversion and removal of interfering gases. The measured gas volume needs stated temperature, pressure and appropriate corrections. Kjeldahl analysis estimates nitrogen through conversion to ammonium and subsequent ammonia measurement, but does not work without modification for every nitrogen-containing functional group. Classical Carius-type halogen estimation converts suitable halogen content to a weighed silver halide; the halogen fraction follows its molar-mass share in that precipitate. Sulfur can similarly be estimated through sulfate precipitation, and phosphorus through an appropriate phosphate-derived measurement. These are stoichiometric principles, not instructions for hazardous digestion or pressure-vessel operation. For nitrogen gas collected over water, the pressure of water vapour must be considered before applying the gas law to dry nitrogen. For a weighed silver halide, the halogen amount follows a molar mass fraction rather than equality with the whole precipitate mass. Each method has its own conversion chemistry, so a calculation valid for carbon dioxide cannot simply be reused for every analytical product.",
+      "points": [
+        "Dumas · Nitrogen gas · P, V, T; water vapour",
+        "Silver halide · Precipitate mass · Halogen mass fraction",
+        "Kjeldahl · Ammonia-related amount · Functional-group limits"
+      ],
+      "board": {
+        "heading": "Other elemental estimates need their own chemical assumptions",
+        "columns": [
+          "Analytical method",
+          "Measured quantity",
+          "Necessary correction"
+        ],
+        "rows": [
+          [
+            "Dumas",
+            "Nitrogen gas",
+            "P, V, T; water vapour"
+          ],
+          [
+            "Silver halide",
+            "Precipitate mass",
+            "Halogen mass fraction"
+          ],
+          [
+            "Kjeldahl",
+            "Ammonia-related amount",
+            "Functional-group limits"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "An empirical ratio is not yet a molecular formula",
+      "formula": "Molecular formula = empirical formula subscripts x (molar mass / empirical-formula mass)",
+      "script": "Convert each element mass or percentage to moles using its atomic mass, then divide all amounts by the smallest. Find a simple integer ratio without rounding a genuine fraction away: a ratio near one to one and a half may need multiplication by two. The empirical formula describes the simplest atom ratio. To find a molecular formula, divide the independently known molar mass by the empirical-formula mass. A suitable result is an integer multiplier, within the precision of the data. Multiplying every empirical subscript gives the molecular formula; it still does not uniquely identify structure. Report assumptions and rounding rather than forcing inconsistent data into a familiar compound. An empirical unit with one carbon, two hydrogens and one oxygen has approximate formula mass thirty using the stated rounded atomic masses. If independent molar mass is ninety, the multiplier is three, giving three carbons, six hydrogens and three oxygens. Multiplying only one subscript would change the elemental ratio and fail the original analysis. Molecular formula still leaves possible structural isomers.",
+      "points": [
+        "Empirical unit · 12 + 2 + 16 · 30",
+        "Molar mass ratio · 90 / 30 · 3",
+        "Molecular formula · Multiply every subscript · C₃H₆O₃"
+      ],
+      "board": {
+        "heading": "An empirical ratio is not yet a molecular formula",
+        "columns": [
+          "Formula step",
+          "Calculation",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Empirical unit",
+            "12 + 2 + 16",
+            "30"
+          ],
+          [
+            "Molar mass ratio",
+            "90 / 30",
+            "3"
+          ],
+          [
+            "Molecular formula",
+            "Multiply every subscript",
+            "C₃H₆O₃"
+          ]
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "An ordinary dissolved impurity can always be removed by simple filtration:",
+      "options": [
+        "True for every solution",
+        "Only if colourless",
+        "False; dissolved material ordinarily passes through",
+        "True if the filter is dry"
+      ],
+      "answer": 2,
+      "explanation": "Ordinary filtration removes suspended insoluble material, not every species dissolved in the liquid."
+    },
+    {
+      "question": "Reduced-pressure distillation can help by:",
+      "options": [
+        "Lowering boiling temperature",
+        "Making every mixture an ideal solution",
+        "Removing all azeotropes",
+        "Guaranteeing no decomposition ever"
+      ],
+      "answer": 0,
+      "explanation": "Lower external pressure can permit boiling at a lower temperature, useful for suitable heat-sensitive liquids."
+    },
+    {
+      "question": "If spot and solvent-front distances are 2 cm and 8 cm, R_f is:",
+      "options": [
+        "4",
+        "6 cm",
+        "0.50",
+        "0.25"
+      ],
+      "answer": 3,
+      "explanation": "The dimensionless ratio is 2/8 = 0.25, measured from the same starting line."
+    },
+    {
+      "question": "0.440 g CO2 contains how much carbon with C=12 and O=16?",
+      "options": [
+        "0.440 g",
+        "0.120 g",
+        "0.320 g",
+        "0.040 g"
+      ],
+      "answer": 1,
+      "explanation": "Carbon contributes 12/44 of carbon dioxide mass, giving 0.440 x 12/44 = 0.120 g."
+    },
+    {
+      "question": "Oxygen may safely be obtained by difference when:",
+      "options": [
+        "The compound's other constituents and their amounts are established",
+        "Any element was not tested",
+        "Every sample is assumed pure water",
+        "Only carbon is measured in any unknown"
+      ],
+      "answer": 0,
+      "explanation": "The missing mass can be assigned to oxygen only when the composition assumptions exclude other unmeasured contributions."
+    },
+    {
+      "question": "CH2O with molecular molar mass 90 g/mol gives molecular formula:",
+      "options": [
+        "CH2O",
+        "C2H4O2",
+        "C3H6O3",
+        "C6H12O6"
+      ],
+      "answer": 2,
+      "explanation": "The empirical mass is 30, so the multiplier is three and every subscript triples."
+    },
+    {
+      "question": "A hot saturated solution holds 10 g, while the final cold solution holds 2 g. Ideal maximum crystallized mass is:",
+      "options": [
+        "12 g",
+        "10 g",
+        "8 g",
+        "2 g"
+      ],
+      "answer": 2,
+      "explanation": "10 − 2 = 8 g before additional losses in this stated model."
+    },
+    {
+      "question": "A 3 cm spot distance and 5 cm solvent-front distance give Rf:",
+      "options": [
+        "0.60",
+        "1.67 cm",
+        "2 cm",
+        "15"
+      ],
+      "answer": 0,
+      "explanation": "Rf = 3/5 = 0.60 with no length unit."
+    },
+    {
+      "question": "A 0.300 g C,H,O-only sample contains 0.120 g C and 0.0200 g H. Oxygen mass is:",
+      "options": [
+        "0.440 g",
+        "0.280 g",
+        "0.0200 g",
+        "0.160 g"
+      ],
+      "answer": 3,
+      "explanation": "0.300 − 0.120 − 0.0200 = 0.160 g under the stated composition assumption."
+    },
+    {
+      "question": "Nitrogen gas measured over water requires attention to:",
+      "options": [
+        "Only liquid colour",
+        "Water-vapour pressure and gas conditions",
+        "A universal room-temperature molar volume",
+        "Only sample shape"
+      ],
+      "answer": 1,
+      "explanation": "Use the dry nitrogen partial pressure and appropriate temperature and volume in the gas relation."
+    }
+  ]
+}

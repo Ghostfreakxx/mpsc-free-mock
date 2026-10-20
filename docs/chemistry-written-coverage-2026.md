@@ -11,7 +11,8 @@ chapters and Redox and Electrochemistry has nine. Atomic Structure and Chemical
 Bonding each have eight chapters. Mole Concept and Periodic Trends also have
 eight chapters each. Hydrocarbons and Organic Halogens each have eight chapters.
 Organic Oxygen has ten chapters and Organic Nitrogen has eight.
-All fifteen recordings include
+Biomolecules, Purification and Analysis, and Practical Chemistry each have eight chapters.
+All eighteen recordings include
 timed captions and chapter visuals. Other Chemistry lessons
 remain written-only. Existing
 Physics recordings and captions have not been regenerated.
@@ -44,6 +45,16 @@ limitations, explanations, original worked examples, practice MCQs, diagrams
 and downloadable notes. Original questions are not represented as official PYQs.
 
 ## Remaining course work
+
+Biomolecules now has eight narrated chapters at `/jee/classes/biomolecules`,
+covering sugars, hydrolysis, polymers, peptides, protein structure, enzymes,
+vitamin/hormone classification and nucleic acids. Purification and Analysis has
+eight chapters at `/jee/classes/purification-analysis`, including separation
+principles, chromatography, elemental evidence and composition calculations.
+Practical Chemistry has eight chapters at `/jee/classes/practical-chemistry`,
+covering titrations, redox ratios, qualitative evidence, preparation principles,
+calorimetry and clock-rate interpretation. Each has ten original questions.
+Detailed stereochemistry, full analytical schemes and larger datasets remain.
 
 Organic Oxygen now has ten narrated chapters at `/jee/classes/organic-oxygen`,
 covering functional groups, alcohol oxidation, phenol, carbonyl addition and

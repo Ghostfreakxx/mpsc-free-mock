@@ -3,6 +3,7 @@
 import KineticsDiagram from "./kinetics-diagram";
 import PhysicalChemistryDiagram from "./physical-chemistry-diagram";
 import EquilibriumElectrochemistryDiagram from "./equilibrium-electrochemistry-diagram";
+import BiomoleculesPracticalDiagram from "./biomolecules-practical-diagram";
 import OxygenNitrogenDiagram from "./oxygen-nitrogen-diagram";
 import OrganicReactionDiagram from "./organic-reaction-diagram";
 import MolePeriodicDiagram from "./mole-periodic-diagram";
@@ -153,6 +154,7 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
           {lesson.id === "chemical-kinetics" && <KineticsDiagram chapter={chapterIndex} />}
           {(lesson.id === "chemical-thermodynamics" || lesson.id === "solutions") && <PhysicalChemistryDiagram lesson={lesson.id} chapter={chapterIndex} />}
           {(lesson.id === "equilibrium" || lesson.id === "redox-electrochemistry") && <EquilibriumElectrochemistryDiagram lesson={lesson.id} chapter={chapterIndex} />}
+          {(lesson.id === "biomolecules" || lesson.id === "purification-analysis" || lesson.id === "practical-chemistry") && <BiomoleculesPracticalDiagram lesson={lesson.id} chapter={chapterIndex} />}
           {(lesson.id === "organic-oxygen" || lesson.id === "organic-nitrogen") && <OxygenNitrogenDiagram lesson={lesson.id} chapter={chapterIndex} />}
           {(lesson.id === "hydrocarbons" || lesson.id === "organic-halogens") && <OrganicReactionDiagram lesson={lesson.id} chapter={chapterIndex} />}
           {(lesson.id === "mole-concept" || lesson.id === "periodic-trends") && <MolePeriodicDiagram lesson={lesson.id} chapter={chapterIndex} />}
