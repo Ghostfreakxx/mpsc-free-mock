@@ -9,8 +9,10 @@ import { numeric } from '../app/data/question-builders.ts';
 import { jeeTopics } from '../app/data/jee-topics.ts';
 import { neetTopics } from '../app/data/neet-topics.ts';
 import { highYieldTopics } from '../app/data/high-yield-topics.ts';
+import { patternBatchTopics } from '../app/data/pattern-batch-topics.ts';
+import { getMizoTranslation } from '../app/data/mizo-translations.ts';
 
-const foundationTopics = [...jeeTopics, ...neetTopics, ...highYieldTopics];
+const foundationTopics = [...jeeTopics, ...neetTopics, ...highYieldTopics, ...patternBatchTopics];
 const foundationCount = stream => foundationTopics.filter(topic => topic.streams.includes(stream)).reduce((total, topic) => total + topic.questions.length, 0);
 
 test('each stream retains its published expansion quota', () => {
@@ -216,4 +218,63 @@ test('high-yield worked answers are independently recomputed', () => {
   assert.equal(answer('jee', 'binomial-theorem-6'), String(choose(8, 3)));
   assert.equal(answer('jee', 'binomial-theorem-9'), String(choose(3, 2) * 2));
   assert.equal(answer('neet', 'coordination-compounds-7'), `+${-4 + 6}`);
+});
+
+test('pattern batch topics are sourced, balanced and published to the intended streams', () => {
+  const ids = new Set(topics.map(topic => topic.id));
+  assert.equal(ids.size, topics.length, 'topic ids are unique');
+  for (const topic of patternBatchTopics) {
+    assert.ok(topic.questions.length >= 7 && topic.notes.length > 0 && topic.pitfall, topic.id);
+    const url = new URL(sources[topic.sourceId].url);
+    assert.ok(url.protocol === 'https:' && (url.hostname === 'openstax.org' || topic.sourceId === 'constitution'), topic.id);
+    for (const stream of topic.streams) {
+      const published = getReviewedQuestions(stream).filter(question => question.id.startsWith(`${topic.id}-`));
+      assert.equal(published.length, topic.questions.length, `${topic.id} in ${stream}`);
+      assert.ok(new Set(published.map(question => question.options.indexOf(question.answer))).size >= 3, topic.id);
+      for (const question of published) assert.ok(question.sourceLocation && question.explanation, question.id);
+    }
+  }
+  // Every MPSC question from this batch has a draft Mizo translation; the rest wait for review.
+  for (const question of getReviewedQuestions('mpsc').filter(q => patternBatchTopics.some(topic => q.id.startsWith(`${topic.id}-`)))) {
+    assert.ok(getMizoTranslation(question), question.id);
+  }
+  assert.ok(!getReviewedQuestions('mpsc').some(question => question.id.startsWith('local-government-')));
+  // Each new stream gets fresh questions.
+  for (const [stream, minimum] of Object.entries({ mpsc: 20, neet: 90, jee: 80, 'cuet-pg': 50 })) {
+    const fresh = getReviewedQuestions(stream).filter(question => patternBatchTopics.some(topic => question.id.startsWith(`${topic.id}-`)));
+    assert.ok(fresh.length >= minimum, `${stream} has ${fresh.length} pattern-batch questions`);
+  }
+});
+
+test('pattern batch worked answers are independently recomputed', () => {
+  const answer = (stream, id) => getReviewedQuestions(stream).find(question => question.id === id).answer;
+  const k = 9e9;
+  assert.equal(answer('jee', 'coulombs-law-3'), `${Number((k * 2e-6 * 3e-6 / 0.3 ** 2).toFixed(2))} N, repulsive`);
+  assert.equal(answer('neet', 'coulombs-law-8'), `${16 / 4 ** 2} N`);
+  assert.equal(answer('jee', 'thin-lenses-1'), `${Math.round(1 / (1 / 20 - 1 / 30))} cm from the lens, on the opposite side`);
+  assert.equal(answer('neet', 'thin-lenses-3'), `+${1 / 0.25} D`);
+  assert.equal(answer('jee', 'first-law-thermodynamics-1'), `+${500 - 200} J`);
+  assert.equal(answer('jee', 'first-law-thermodynamics-2'), `+${-50 - -150} J`);
+  assert.equal(answer('neet', 'faraday-induction-1'), `${(0.5 - 0.1) / 0.2} V`);
+  assert.equal(answer('neet', 'faraday-induction-2'), `${(100 * 0.02) / 0.1} V`);
+  assert.equal(answer('jee', 'faraday-induction-6'), `${Number((0.4 * 0.05).toFixed(3))} Wb`);
+  assert.equal(answer('jee', 'enthalpy-hess-5'), `${-394 - -283} kJ`);
+  assert.equal(answer('neet', 'enthalpy-hess-7'), `${(-394 + 2 * -286) - -75} kJ`);
+  assert.equal(answer('jee', 'definite-integrals-1'), String(2 ** 3 - 0));
+  assert.equal(answer('jee', 'definite-integrals-2'), String((3 ** 2 + 3) - (1 ** 2 + 1)));
+  assert.equal(answer('jee', 'definite-integrals-9'), `${(2 / 3) * 4 ** 1.5 * 3}/3`);
+  assert.equal(answer('jee', 'lines-planes-3d-3'), String(Math.abs(-14) / Math.sqrt(4 + 9 + 36)));
+  assert.equal(answer('jee', 'lines-planes-3d-6'), `3x - y + 2z = ${3 * 1 - 0 + 2 * 2}`);
+  assert.equal(answer('jee', 'lines-planes-3d-8'), String((10 - 4) / 2));
+  assert.equal(answer('jee', 'lines-planes-3d-9'), String(Math.hypot(3, 4, 12)));
+  assert.equal(1 * 1 + 1 * -1 + 1 * 0, 0, 'lines-planes-3d-5 normals are perpendicular');
+  assert.equal(answer('neet', 'ecosystem-energy-2'), `${(10000 * 0.1 * 0.1).toLocaleString('en-US')} kJ`);
+  assert.equal(answer('neet', 'plant-water-transport-9'), `${Number((-0.7 + 0.3).toFixed(1))} MPa`);
+  assert.equal(answer('cuet-pg', 'price-elasticity-7'), `${(40 / 100) / (4 / 10)} (unitary)`);
+  assert.equal(answer('mpsc', 'percentages-1'), String((12 / 100) * 250));
+  assert.equal(answer('mpsc', 'percentages-11'), `${((50 - 40) / 40) * 100}%`);
+  assert.equal(answer('mpsc', 'percentages-15'), `${((400 - 300) / 400) * 100}%`);
+  assert.equal(answer('mpsc', 'simple-interest-1'), `Rs ${(2000 * 5 * 3) / 100}`);
+  assert.equal(answer('mpsc', 'simple-interest-5'), `Rs ${1000 + (1000 * 6 * 4) / 100}`);
+  assert.equal(answer('cuet-pg', 'simple-interest-10'), `${(720 * 100) / (3000 * 3)}%`);
 });
