@@ -23,4 +23,4 @@ CI (`.github/workflows/ci.yml`) runs all of this on every pull request. Do not m
 - Render user and model text as text. Do not use `dangerouslySetInnerHTML`. Generated HTML (note downloads) must escape every value with `escapeHtml`.
 - Links that open a new tab need `rel="noreferrer"`.
 - Validate anything read back from `localStorage`; it can be corrupt or edited.
-- `npm audit --audit-level=high` must pass. Review Dependabot PRs promptly.
+- `npm run audit` must pass: no high or critical advisory anywhere in the tree. The only exception is an entry in `scripts/audit.mjs`'s allowlist, which needs three things: no fixed release exists, the package is dev-only, and the entry has a review date. Never allowlist a production dependency. Review Dependabot PRs promptly.

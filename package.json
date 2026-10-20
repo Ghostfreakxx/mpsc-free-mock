@@ -17,7 +17,8 @@
     "test": "npm run test:content && npm run test:mizo && npm run test:question-rotation && npm run test:guidance && npm run test:exam-simulator && npm run test:lecture",
     "typecheck": "tsc --noEmit",
     "check": "npm run validate:banks && npm test && npm run lint && npm run typecheck",
-    "smoke": "node scripts/smoke.mjs"
+    "smoke": "node scripts/smoke.mjs",
+    "audit": "node scripts/audit.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.48.0",

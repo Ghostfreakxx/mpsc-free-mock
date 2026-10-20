@@ -23,7 +23,7 @@ Please report security issues privately, not in public issues. Use GitHub's **Re
   - strict message schema (no client-supplied system prompts)
   - bounded model output
 - **Note downloads:** every value is HTML-escaped, and the file is served with its own locked-down CSP.
-- **Automated checks:** CI runs on every pull request. It covers tests, lint, types, `npm audit`, the build and a browser smoke test that re-verifies the headers and the API abuse cases. Dependabot proposes dependency updates weekly.
+- **Automated checks:** CI runs on every pull request. It covers tests, lint, types, a dependency audit (`npm run audit`: the production tree must be clean, and the only allowed exceptions are dev-only advisories with no upstream fix, listed with a review date), the build and a browser smoke test that re-verifies the headers and the API abuse cases. Dependabot proposes dependency updates weekly.
 
 ## Known limits
 
