@@ -1,3 +1,7 @@
+import pBlock from "../../data/jee-p-block-lecture.json";
+import pBlockTimings from "../../data/jee-p-block-timings.json";
+import dFBlock from "../../data/jee-d-f-block-lecture.json";
+import dFBlockTimings from "../../data/jee-d-f-block-timings.json";
 import biomolecules from "../../data/jee-biomolecules-lecture.json";
 import biomoleculesTimings from "../../data/jee-biomolecules-timings.json";
 import purificationAnalysis from "../../data/jee-purification-analysis-lecture.json";
@@ -1286,5 +1290,25 @@ export const lectures: Lecture[] = [
     subtitles: "/lectures/practical-chemistry/english.vtt", timings: practicalChemistryTimings,
     segments: practicalChemistry.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
     sources: practicalChemistry.sources, quiz: practicalChemistry.quiz,
+  },
+  {
+    id: "p-block", subject: "Chemistry", unit: 10, number: "C19", title: pBlock.title,
+    description: "Ten narrated chapters on groups 13–18, first-member differences, oxidation states, hydride comparisons and worked oxygen exceptions.",
+    scope: "Recorded Unit 10 trend foundation with original practice. Further element-specific comparisons, physical-property datasets and detailed structural drawings remain; not exhaustive coverage or official PYQs.",
+    progressKey: "jee.p-block.lecture.v1",
+    audio: "/lectures/p-block/narration-marin.mp3",
+    subtitles: "/lectures/p-block/english.vtt", timings: pBlockTimings,
+    segments: pBlock.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
+    sources: pBlock.sources, quiz: pBlock.quiz,
+  },
+  {
+    id: "d-f-block", subject: "Chemistry", unit: 11, number: "C20", title: dFBlock.title,
+    description: "Ten narrated chapters on configurations, oxidation states, magnetism, colour, solids, oxidants, f-block comparisons and worked calculations.",
+    scope: "Recorded Unit 11 foundation with original practice. Full oxidant preparation schemes, occurrence and uses, detailed actinoid configurations and extended comparisons remain; not exhaustive coverage or official PYQs.",
+    progressKey: "jee.d-f-block.lecture.v1",
+    audio: "/lectures/d-f-block/narration-marin.mp3",
+    subtitles: "/lectures/d-f-block/english.vtt", timings: dFBlockTimings,
+    segments: dFBlock.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
+    sources: dFBlock.sources, quiz: dFBlock.quiz,
   },
 ];

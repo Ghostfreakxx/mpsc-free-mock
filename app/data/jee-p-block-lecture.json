@@ -1,0 +1,504 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script. Read every sentence completely and precisely, including the final sentence. Do not summarize.",
+  "title": "P-block: group trends and first-element exceptions",
+  "subject": "Chemistry",
+  "unit": 10,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 Chemistry syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: periodicity",
+      "url": "https://openstax.org/books/chemistry-2e/pages/18-1-periodicity"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Map groups from valence electrons",
+      "formula": "Groups 13–18: ns²np¹ through ns²np⁶",
+      "script": "Welcome to P Block Chemistry. This recorded class uses an AI generated Marin voice. The p block spans groups thirteen to eighteen. In the usual main group pattern, the outer s subshell contains two electrons, while the outer p subshell contains one through six. Three outer electrons correspond to group thirteen, and eight correspond to group eighteen. Helium is the important exception: its filled first shell has only two electrons, yet its chemical behaviour places it with the noble gases. An outer three s two, three p three configuration belongs to period three and group fifteen. The period identifies the outer principal shell, while the group reflects the main group valence pattern. Across a typical period, increasing effective nuclear attraction generally reduces radius and increases nonmetallic character. Down a group, additional occupied shells generally increase size and metallic character. These are starting trends rather than complete predictions of every property. Before comparing melting points, distinguish molecular substances, metallic structures and extended networks; they need not follow the same smooth pattern.",
+      "points": [
+        "ns²np¹ · 3 · 13",
+        "ns²np³ · 5 · 15",
+        "ns²np⁶; He exception · 8; He has 2 · 18"
+      ],
+      "board": {
+        "heading": "Map groups from valence electrons",
+        "columns": [
+          "Outer pattern",
+          "Valence electrons",
+          "Group"
+        ],
+        "rows": [
+          [
+            "ns²np¹",
+            "3",
+            "13"
+          ],
+          [
+            "ns²np³",
+            "5",
+            "15"
+          ],
+          [
+            "ns²np⁶; He exception",
+            "8; He has 2",
+            "18"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "First-member differences and lower states",
+      "formula": "Small second-period atoms; inert-pair trends in heavier members",
+      "script": "The first p block members differ from heavier members for structural reasons. Boron, carbon, nitrogen, oxygen and fluorine have small second period valence shells. Their size, electronegativity and orbital overlap affect which bonds and structures are favoured. They cannot be treated as if their valence shells expand arbitrarily to imitate every heavier congener. Saying anomalous is only a label; a useful explanation identifies the bonding or electronic cause. Among several heavier groups, a lower oxidation state becomes more important relative to the group maximum. This is commonly discussed through the inert pair effect. Thallium plus one and lead plus two are examples of lower states becoming relatively stable. It does not mean higher oxidation states never occur, or that the outer s electrons are unavailable in every compound. Oxidation state stability depends on the actual ligands, bonding and reaction environment. A group number identifies possible electron bookkeeping patterns, but cannot by itself establish which compound is most stable. Compare specified species rather than treating the trend as an absolute prohibition.",
+      "points": [
+        "First member · Small size; overlap · Not just a label",
+        "Tl(I) · Lower state important · Tl(III) still exists",
+        "Pb(II) · Inert-pair trend · Compare actual compounds"
+      ],
+      "board": {
+        "heading": "First-member differences and lower states",
+        "columns": [
+          "Comparison",
+          "Useful explanation",
+          "Limit"
+        ],
+        "rows": [
+          [
+            "First member",
+            "Small size; overlap",
+            "Not just a label"
+          ],
+          [
+            "Tl(I)",
+            "Lower state important",
+            "Tl(III) still exists"
+          ],
+          [
+            "Pb(II)",
+            "Inert-pair trend",
+            "Compare actual compounds"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Groups 13 and 14: deficiency and networks",
+      "formula": "Shared group does not require identical structures",
+      "script": "Group thirteen commonly shows oxidation state plus three, while plus one becomes important for some heavier members. Boron is a nonmetal and often forms covalent, electron deficient structures. Aluminium has stronger metallic character. Boron trifluoride is a useful Lewis acid example: it can accept an electron pair from a suitable donor. Do not rank all Lewis acids from one octet drawing alone, because bonding interactions and the reacting partner matter. Group fourteen includes carbon and silicon together with more metallic heavier elements. Carbon forms strong carbon carbon bonds, supporting extensive catenation and many stable multiple bonds. Silicon's larger orbitals and different overlap lead to different structures. Carbon dioxide consists of discrete molecules, while common solid silicon dioxide is an extended network of silicon oxygen bonds. A formula ratio of one central atom to two oxygens therefore does not imply identical physical properties. Plus four and plus two states also change in relative importance down group fourteen. Use the group pattern to organize a comparison, then inspect the actual bonding and structure.",
+      "points": [
+        "BF₃ · Electron-pair acceptor · Lewis acid",
+        "CO₂ · Discrete molecules · Molecular substance",
+        "Solid SiO₂ · Extended Si–O network · Different physical behaviour"
+      ],
+      "board": {
+        "heading": "Groups 13 and 14: deficiency and networks",
+        "columns": [
+          "Example",
+          "Structural point",
+          "Consequence"
+        ],
+        "rows": [
+          [
+            "BF₃",
+            "Electron-pair acceptor",
+            "Lewis acid"
+          ],
+          [
+            "CO₂",
+            "Discrete molecules",
+            "Molecular substance"
+          ],
+          [
+            "Solid SiO₂",
+            "Extended Si–O network",
+            "Different physical behaviour"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Group 15: nitrogen and heavier hydrides",
+      "formula": "Outer shell: ns²np³",
+      "script": "Group fifteen has two outer s electrons and three outer p electrons. Common oxidation states include minus three, plus three and plus five, depending on the atoms bonded to the element. Nitrogen's strong nitrogen nitrogen triple bond helps explain the relatively low reactivity of molecular nitrogen under ordinary conditions. That statement concerns the molecule, not a claim that every nitrogen compound is unreactive. Nitrogen also cannot simply imitate every five coordinate structure of a heavier group member. For the common hydride comparison, ammonia is more basic than the heavier hydrides in the usual introductory sequence. Thermal stability also generally decreases down that series. Ammonia's intermolecular hydrogen bonding makes its boiling behaviour unusual compared with a simple increase based only on molar mass. Basicity, thermal stability and boiling point are different properties: one ordering must not be copied automatically into another column. State which compounds are being compared and what conditions apply. A lone pair may be present in several hydrides while its availability and the stability of the protonated product still differ.",
+      "points": [
+        "N₂ reactivity · Strong N≡N bond · Molecule-specific",
+        "Hydride basicity · NH₃ higher than heavier set · Lone-pair environment",
+        "Boiling behaviour · NH₃ has H bonding · Not only molar mass"
+      ],
+      "board": {
+        "heading": "Group 15: nitrogen and heavier hydrides",
+        "columns": [
+          "Property",
+          "Introductory comparison",
+          "Reason to separate"
+        ],
+        "rows": [
+          [
+            "N₂ reactivity",
+            "Strong N≡N bond",
+            "Molecule-specific"
+          ],
+          [
+            "Hydride basicity",
+            "NH₃ higher than heavier set",
+            "Lone-pair environment"
+          ],
+          [
+            "Boiling behaviour",
+            "NH₃ has H bonding",
+            "Not only molar mass"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Group 16: oxygen and hydride trends",
+      "formula": "Oxidation number needs the actual formula",
+      "script": "Group sixteen has six outer electrons in the usual main group pattern. Oxygen commonly has oxidation number minus two, but that value is not universal. Peroxides, superoxides and oxygen fluorine compounds require different assignments. Sulfur and heavier members can also have positive oxidation states in suitable compounds. Write the actual formula and apply charge balance instead of turning group membership into a fixed ionic charge. Water has unusually strong intermolecular hydrogen bonding compared with nearby heavier group sixteen hydrides. Its boiling point therefore departs from a simple mass based comparison. In the elementary hydride series, acidity generally increases toward heavier members as the element hydrogen bond becomes easier to break, while thermal stability decreases. Acidity concerns proton transfer under specified conditions; boiling concerns separation of molecules into vapour. These processes should not be treated as one trend. In a ranking problem, identify the property before applying an arrow down the periodic table. Later worked examples will use peroxide, superoxide and oxygen difluoride to check oxygen bookkeeping directly.",
+      "points": [
+        "O oxidation number · Often −2 · Important exceptions",
+        "Water boiling point · Raised by H bonding · Intermolecular property",
+        "Heavier hydrides · Acidity rises; stability falls · Specified series and conditions"
+      ],
+      "board": {
+        "heading": "Group 16: oxygen and hydride trends",
+        "columns": [
+          "Comparison",
+          "Typical trend",
+          "Key qualification"
+        ],
+        "rows": [
+          [
+            "O oxidation number",
+            "Often −2",
+            "Important exceptions"
+          ],
+          [
+            "Water boiling point",
+            "Raised by H bonding",
+            "Intermolecular property"
+          ],
+          [
+            "Heavier hydrides",
+            "Acidity rises; stability falls",
+            "Specified series and conditions"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Halogens: three different attraction measures",
+      "formula": "Electronegativity ≠ electron gain ≠ aqueous oxidizing strength",
+      "script": "Group seventeen has seven outer electrons and commonly forms compounds in which the halogen has oxidation number minus one. Fluorine is assigned minus one in its compounds, while heavier halogens can have positive oxidation states when bonded to more electronegative partners. Near room temperature, fluorine and chlorine are gases, bromine is a liquid and iodine is a solid. Increasing polarizability strengthens dispersion attractions down the molecular series. Fluorine is more electronegative than chlorine, yet chlorine has a more negative first electron gain enthalpy. An incoming electron encounters stronger repulsion in fluorine's compact shell, producing this familiar exception. Aqueous oxidizing strength involves several energy changes, so electron gain enthalpy alone cannot determine the complete ranking. Fluorine remains a very strong oxidizing agent in ordinary aqueous comparisons. Hydrogen fluoride is a weak acid in dilute water compared with the usual strong hydrogen chloride, bromide and iodide acids. Its strong bond and the solution environment matter. Keep these different properties and their definitions in separate columns when explaining halogen trends.",
+      "points": [
+        "Electronegativity · F greater than Cl · Bond electron attraction",
+        "First electron gain · Cl more negative than F · Compact-shell repulsion",
+        "Physical state · Cl₂ gas; Br₂ liquid; I₂ solid · Growing dispersion forces"
+      ],
+      "board": {
+        "heading": "Halogens: three different attraction measures",
+        "columns": [
+          "Property",
+          "Comparison",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "Electronegativity",
+            "F greater than Cl",
+            "Bond electron attraction"
+          ],
+          [
+            "First electron gain",
+            "Cl more negative than F",
+            "Compact-shell repulsion"
+          ],
+          [
+            "Physical state",
+            "Cl₂ gas; Br₂ liquid; I₂ solid",
+            "Growing dispersion forces"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Noble gases and the meaning of inert",
+      "formula": "Filled shells reduce ordinary reactivity",
+      "script": "Noble gases have filled valence shells, making many ordinary reactions unfavourable. Their atoms are normally monatomic rather than joined into the familiar diatomic molecules of halogens. Weak dispersion attractions help explain their low boiling temperatures. Down the group, increasing polarizability generally raises boiling points, while the outer electrons become easier to remove. A filled shell therefore does not give identical physical properties to every member. Heavier noble gases can form compounds under suitable conditions. Xenon compounds with strongly electronegative partners show why inert is a contextual description rather than a rule forbidding all bonding. Helium's very small filled first shell is particularly resistant to ordinary chemical bonding and is a distinctive first member. Do not infer that a helium configuration requires six p electrons: helium has a filled first s subshell. When comparing reactivity, identify the species and conditions instead of assigning every group eighteen atom an absolute inability to react. Physical trends and exceptional chemical compounds provide complementary evidence about the same group.",
+      "points": [
+        "Filled valence shell · Low ordinary reactivity · Not absolute impossibility",
+        "Increasing polarizability · Boiling point tends to rise · Compare same group",
+        "Xenon compounds · Bonding can occur · Heavier member chemistry"
+      ],
+      "board": {
+        "heading": "Noble gases and the meaning of inert",
+        "columns": [
+          "Feature",
+          "General consequence",
+          "Exception or distinction"
+        ],
+        "rows": [
+          [
+            "Filled valence shell",
+            "Low ordinary reactivity",
+            "Not absolute impossibility"
+          ],
+          [
+            "Increasing polarizability",
+            "Boiling point tends to rise",
+            "Compare same group"
+          ],
+          [
+            "Xenon compounds",
+            "Bonding can occur",
+            "Heavier member chemistry"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Read data before applying a trend",
+      "formula": "Property → species → direction → exceptions",
+      "script": "A reliable comparison starts by naming the property. Radius, ionization energy, acidity, boiling point and oxidation state stability describe different processes. Next identify whether the objects are elements, ions or compounds, and whether the change is across a period or down a group. Only then apply the relevant broad trend. Carbon dioxide compared with silicon dioxide is mainly a bonding and structure comparison. Ammonia and water highlight intermolecular hydrogen bonding. Chlorine compared with fluorine highlights the difference between electron gain and electronegativity. These examples do not justify applying one exception to every unrelated property. If a numerical table is supplied, read its units, temperature, pressure and radius or energy convention. The data are evidence to interpret, rather than an inconvenience to replace with a memorized slogan. In a written explanation, connect the observation with shell size, shielding, orbital overlap or intermolecular attraction as appropriate. Finally check the first member and any unusual structure before deciding whether the broad ordering is suitable.",
+      "points": [
+        "CO₂ versus SiO₂ · Structure and physical form · Molecule versus network",
+        "NH₃ or H₂O anomaly · Boiling point · Hydrogen bonding",
+        "Cl versus F · First electron gain · Crowding and convention"
+      ],
+      "board": {
+        "heading": "Read data before applying a trend",
+        "columns": [
+          "Comparison",
+          "Property to inspect",
+          "Useful explanation"
+        ],
+        "rows": [
+          [
+            "CO₂ versus SiO₂",
+            "Structure and physical form",
+            "Molecule versus network"
+          ],
+          [
+            "NH₃ or H₂O anomaly",
+            "Boiling point",
+            "Hydrogen bonding"
+          ],
+          [
+            "Cl versus F",
+            "First electron gain",
+            "Crowding and convention"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Worked oxidation numbers for oxygen",
+      "formula": "H₂O₂: −1; KO₂: average −½; OF₂: +2",
+      "script": "Oxidation numbers are formal bookkeeping values that must add to the species charge. In hydrogen peroxide, take hydrogen as plus one. Two hydrogen atoms contribute plus two, so the two oxygens together contribute minus two. Each oxygen is assigned minus one. In potassium superoxide, potassium contributes plus one and the oxygen pair together contributes minus one. The average oxidation number per oxygen is therefore minus one half. A fractional average is not a statement that an individual atom contains half an electron; it describes the bookkeeping of the bonded species. In oxygen difluoride, each fluorine is minus one. The oxygen must be plus two so the neutral molecule's total is zero. Compare these with water, where oxygen is minus two. The same element can have several assignments because its bonded partners and connectivity differ. Apply the sum rule to the actual formula first. A memorized oxygen value is useful as a common case, but it must yield to a stated peroxide, superoxide or fluorine containing exception.",
+      "points": [
+        "H₂O₂ · 2(+1) + 2x = 0 · −1",
+        "KO₂ · (+1) + 2x = 0 · Average −½",
+        "OF₂ · x + 2(−1) = 0 · +2"
+      ],
+      "board": {
+        "heading": "Worked oxidation numbers for oxygen",
+        "columns": [
+          "Compound",
+          "Charge balance",
+          "O oxidation number"
+        ],
+        "rows": [
+          [
+            "H₂O₂",
+            "2(+1) + 2x = 0",
+            "−1"
+          ],
+          [
+            "KO₂",
+            "(+1) + 2x = 0",
+            "Average −½"
+          ],
+          [
+            "OF₂",
+            "x + 2(−1) = 0",
+            "+2"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Compare hydrides without mixing properties",
+      "formula": "Boiling, acid strength and stability are separate questions",
+      "script": "Hydrogen bonding can strongly affect boiling without giving the same ordering for acidity. Water, ammonia and hydrogen fluoride are familiar hydrogen bonding examples from different groups. Compare each with an appropriate set of related hydrides rather than mixing all group members into one unexplained ranking. Down the heavier hydrogen halides, decreasing hydrogen halogen bond strength supports stronger acidity in the usual dilute aqueous comparison. Hydrogen fluoride remains the weak member of that elementary acid series despite fluorine's high electronegativity. For group sixteen hydrides, acidity generally increases as the central atom becomes larger and its covalent bond to hydrogen weakens, while water has a high boiling point because of attractions between molecules. In group fifteen, ammonia's basicity and hydrogen bonding again require separate explanations. A question about thermal stability asks how readily a compound decomposes under stated conditions, not how much energy is needed simply to boil it. Use the property definition, relevant bond or intermolecular interaction and stated medium to build the comparison. The practice questions combine these distinctions with oxidation number calculations.",
+      "points": [
+        "Boiling point · Separate molecules · Ignore H bonding",
+        "Acid strength · Proton transfer in medium · Use electronegativity alone",
+        "Thermal stability · Chemical decomposition · Confuse with boiling"
+      ],
+      "board": {
+        "heading": "Compare hydrides without mixing properties",
+        "columns": [
+          "Question",
+          "Relevant process",
+          "Common trap"
+        ],
+        "rows": [
+          [
+            "Boiling point",
+            "Separate molecules",
+            "Ignore H bonding"
+          ],
+          [
+            "Acid strength",
+            "Proton transfer in medium",
+            "Use electronegativity alone"
+          ],
+          [
+            "Thermal stability",
+            "Chemical decomposition",
+            "Confuse with boiling"
+          ]
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "ns2 np4 is the usual outer configuration of:",
+      "options": [
+        "Group 14",
+        "Group 16",
+        "Group 18",
+        "Group 13"
+      ],
+      "answer": 1,
+      "explanation": "Two s and four p valence electrons correspond to Group 16 in the p-block pattern."
+    },
+    {
+      "question": "The noble gas not described by ns2 np6 is:",
+      "options": [
+        "Neon",
+        "Argon",
+        "Helium",
+        "Xenon"
+      ],
+      "answer": 2,
+      "explanation": "Helium's filled shell is 1s2; it has no occupied valence p subshell."
+    },
+    {
+      "question": "The first electron-gain enthalpy is more negative for which pair member?",
+      "options": [
+        "Chlorine rather than fluorine",
+        "Fluorine rather than chlorine",
+        "They are necessarily identical",
+        "Neither can accept an electron"
+      ],
+      "answer": 0,
+      "explanation": "Chlorine is less crowded for the added electron, producing this familiar exception to a simple trend."
+    },
+    {
+      "question": "Water's boiling-point anomaly among these hydrides is explained mainly by:",
+      "options": [
+        "Its being a metal",
+        "No intermolecular forces",
+        "A different oxygen atomic number",
+        "Hydrogen bonding"
+      ],
+      "answer": 3,
+      "explanation": "Strong intermolecular hydrogen bonding raises water's boiling point compared with a simple mass-based trend."
+    },
+    {
+      "question": "Greater relative stability of Pb(II) down Group 14 is commonly discussed using:",
+      "options": [
+        "A mandatory zero oxidation state",
+        "The inert-pair effect",
+        "No valence electrons",
+        "Identical carbon and lead radii"
+      ],
+      "answer": 1,
+      "explanation": "The lower +2 state becomes relatively more important for the heavier group member."
+    },
+    {
+      "question": "Ordinary solid SiO2 is best described here as:",
+      "options": [
+        "Isolated CO2 molecules",
+        "A noble gas",
+        "An extended network",
+        "A metallic carbon allotrope"
+      ],
+      "answer": 2,
+      "explanation": "Its common solid structures consist of extended Si-O bonding rather than separate CO2-like molecules."
+    },
+    {
+      "question": "Outer configuration 3s2 3p3 corresponds to:",
+      "options": [
+        "Group 13, period 2",
+        "Group 15, period 3",
+        "Group 17, period 3",
+        "Group 3, period 15"
+      ],
+      "answer": 1,
+      "explanation": "Five main-group outer electrons give group 15; the outer principal shell is 3."
+    },
+    {
+      "question": "The oxidation number of each oxygen in H2O2 is:",
+      "options": [
+        "−2",
+        "0",
+        "−1",
+        "+2"
+      ],
+      "answer": 2,
+      "explanation": "Two +1 hydrogens require a total −2 over two oxygens."
+    },
+    {
+      "question": "The oxygen oxidation number in OF2 is:",
+      "options": [
+        "+2",
+        "−2",
+        "−1",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "Two fluorines at −1 require oxygen at +2 for a neutral molecule."
+    },
+    {
+      "question": "The average oxygen oxidation number in potassium superoxide KO2 is:",
+      "options": [
+        "−2",
+        "−1",
+        "+1",
+        "−½"
+      ],
+      "answer": 3,
+      "explanation": "K contributes +1; the two oxygens together contribute −1, an average −½ each."
+    },
+    {
+      "question": "BF3 acts as a Lewis acid by:",
+      "options": [
+        "Donating a proton in every reaction",
+        "Accepting a suitable electron pair",
+        "Always losing fluorine as a metal",
+        "Having no valence electrons"
+      ],
+      "answer": 1,
+      "explanation": "Boron trifluoride can accept an electron pair from a suitable donor."
+    },
+    {
+      "question": "Xenon compounds show that noble-gas inertness:",
+      "options": [
+        "Means all bonding is impossible",
+        "Requires xenon to have no electrons",
+        "Is a contextual low-reactivity description",
+        "Makes every noble gas equally reactive"
+      ],
+      "answer": 2,
+      "explanation": "Some heavier noble gases form compounds under suitable conditions."
+    }
+  ]
+}

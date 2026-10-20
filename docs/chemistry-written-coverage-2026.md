@@ -12,9 +12,9 @@ Bonding each have eight chapters. Mole Concept and Periodic Trends also have
 eight chapters each. Hydrocarbons and Organic Halogens each have eight chapters.
 Organic Oxygen has ten chapters and Organic Nitrogen has eight.
 Biomolecules, Purification and Analysis, and Practical Chemistry each have eight chapters.
-All eighteen recordings include
-timed captions and chapter visuals. Other Chemistry lessons
-remain written-only. Existing
+P-block and D/F-block each have ten chapters. All twenty recordings include
+timed captions and chapter visuals. Every Chemistry unit has a recorded foundation.
+Chemistry Foundations and Atomic Spectra retain written material without separate recordings. Existing
 Physics recordings and captions have not been regenerated.
 
 | Unit | Written foundation routes |
@@ -45,6 +45,15 @@ limitations, explanations, original worked examples, practice MCQs, diagrams
 and downloadable notes. Original questions are not represented as official PYQs.
 
 ## Remaining course work
+
+P-block now has ten narrated chapters at `/jee/classes/p-block`, covering groups
+13–18, first-member differences, bonding, hydrides and worked oxygen oxidation
+numbers. D/F-block has ten chapters at `/jee/classes/d-f-block`, including actual
+ion configurations, variable states, colour, magnetism, solid structures, oxidants,
+contraction and worked magnetic/redox calculations. Each includes twelve original
+questions. All twenty Chemistry units now have at least one recorded foundation;
+this does not establish exhaustive syllabus coverage. Further datasets, detailed
+structures, preparation schemes and extended synthesis/experimental practice remain.
 
 Biomolecules now has eight narrated chapters at `/jee/classes/biomolecules`,
 covering sugars, hydrolysis, polymers, peptides, protein structure, enzymes,

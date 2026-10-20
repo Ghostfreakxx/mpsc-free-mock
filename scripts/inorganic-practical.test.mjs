@@ -10,7 +10,7 @@ test('all 20 Chemistry units now have a written foundation, without claiming exh
   for (const l of lessons) {
     assert.equal(l.sections.length, 8);
     assert.equal(l.quiz.length, 6);
-    assert.match(l.remaining, l.id==='practical-chemistry'?/eight-chapter Marin recording/:/not a Marin recording or complete unit coverage/);
+    assert.match(l.remaining, l.id==='practical-chemistry'?/eight-chapter Marin recording/:/ten-chapter Marin recording/);
   }
 });
 test('p-block patterns retain helium and electron-gain exceptions', () => {
