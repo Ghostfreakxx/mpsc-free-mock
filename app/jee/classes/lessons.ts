@@ -1123,8 +1123,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "coordination-compounds", subject: "Chemistry", unit: 12, number: "C02", title: coordinationCompounds.title,
-    description: "Five narrated chapters on ligands, naming, isomerism, spin-state energies and magnetic properties.",
-    scope: "Recorded JEE Main 2026 Chemistry Unit 12 foundation with original practice, not official PYQs or complete unit coverage. Detailed optical-isomer drawings, stability comparisons and reaction sequences remain for further study.",
+    description: "Ten narrated chapters on ligands, naming, isomerism, spin energies, magnetism, chelation, formation constants and applications.",
+    scope: "Recorded Unit 12 foundation and worked applications with original practice. Detailed optical-isomer models, extended nomenclature and quantitative extraction/analysis sequences remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.coordination-compounds.lecture.v1",
     audio: "/lectures/coordination-compounds/narration-marin.mp3",
     subtitles: "/lectures/coordination-compounds/english.vtt", timings: coordinationTimings,
@@ -1133,8 +1133,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "chemical-kinetics", subject: "Chemistry", unit: 8, number: "C03", title: chemicalKinetics.title,
-    description: "Five narrated chapters on experimental rate laws, zero and first order, pressure measurements and activation energy.",
-    scope: "Recorded JEE Main 2026 Chemistry Unit 8 foundation with original practice. Further experimental datasets and mechanism-based problems remain; this is not exhaustive unit coverage or official PYQ material.",
+    description: "Ten narrated chapters on rate laws, zero and first order, pressure measurements, pseudo-first-order conditions, graphs and catalyst barriers.",
+    scope: "Recorded Unit 8 foundation and worked applications with original practice. Further mixed experimental datasets and mechanism-based problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.chemical-kinetics.lecture.v1",
     audio: "/lectures/chemical-kinetics/narration-marin.mp3",
     subtitles: "/lectures/chemical-kinetics/english.vtt", timings: kineticsTimings,

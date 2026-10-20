@@ -17,6 +17,10 @@
     {
       "title": "OpenStax: spectroscopic and magnetic properties",
       "url": "https://openstax.org/books/chemistry-2e/pages/19-3-spectroscopic-and-magnetic-properties-of-coordination-compounds"
+    },
+    {
+      "title": "OpenStax: Lewis acids, bases and formation equilibria",
+      "url": "https://openstax.org/books/chemistry-2e/pages/15-2-lewis-acids-and-bases"
     }
   ],
   "chapters": [
@@ -69,6 +73,183 @@
         "Colour may involve d–d or charge-transfer transitions; d count alone is insufficient."
       ],
       "script": "Unpaired electrons produce paramagnetism. An all paired arrangement is diamagnetic. The spin only magnetic moment is the square root of n times n plus two, in Bohr magnetons, where n is the number of unpaired electrons. This is an approximation; orbital contributions can matter. Our high spin octahedral d six example has four unpaired electrons. The square root of four times six is about four point nine zero Bohr magnetons. Low spin d six has no unpaired electrons. Now compare the two nickel complexes on the board. Each has four singly negative ligands and total charge negative two, so both contain nickel in oxidation state plus two. Nickel two has a d eight configuration, after removal of the two four s electrons from neutral nickel. The chloride complex is usually tetrahedral with two unpaired electrons. Its spin only moment is the square root of eight, about two point eight three Bohr magnetons. The cyanide complex is square planar and all paired, so it is diamagnetic. The same metal, oxidation state and coordination number did not guarantee the same geometry or magnetism. Colour needs another check. Absorption between split d levels can remove visible wavelengths, leaving a complementary transmitted or reflected colour. Ligands, oxidation state and geometry affect the splitting. Charge transfer transitions can also produce colour, so d zero or d ten does not guarantee that every compound is colourless. Complex formation is useful in qualitative analysis, including the deep blue copper ammine species in aqueous ammonia, and in biological metal binding, such as iron in haem proteins and magnesium in chlorophyll. Finish with the sequence: complex charge, oxidation state, donor count, d electron count, geometry, then properties. Use the twelve original practice questions and the seven worked examples in the written companion. This is a recorded Unit twelve foundation, not exhaustive coverage or official past paper material."
+    },
+    {
+      "title": "Ionization and linkage isomerism",
+      "formula": "Ionization: exchange sphere / counterion; linkage: change donor atom",
+      "script": "Isomerism can change which ion is outside the coordination sphere or which atom binds to the metal. Compare a cobalt complex with five neutral ammonia ligands and coordinated bromide, accompanied by a sulfate counterion, with one containing coordinated sulfate and an external bromide. Cobalt is plus three in each. In the first case, the complex charge is plus two; in the second, it is plus one. The overall elemental inventory is unchanged, but the counterions differ. This illustrates ionization isomerism, assuming the stated coordination spheres persist under the test conditions. Linkage isomerism is different. An ambidentate nitrite ligand can attach through nitrogen or through oxygen, giving different metal to donor connectivity without exchanging the external counterion. Ambidentate does not mean both donor atoms necessarily bind simultaneously to this metal. A bidentate ligand instead supplies two donor attachments in the specified complex. Classify the structural change before applying an isomer name. Formula brackets identify the coordination sphere, so moving a group across a bracket changes chemical information rather than merely changing typography.",
+      "points": [
+        "Ionization · Sphere and counterion · Different free counterion",
+        "Linkage · Metal donor attachment · Nitrite: N versus O",
+        "Bidentate binding · Two donor attachments · Not just ambidentate"
+      ],
+      "board": {
+        "heading": "Ionization and linkage isomerism",
+        "columns": [
+          "Type",
+          "What changes",
+          "Diagnostic distinction"
+        ],
+        "rows": [
+          [
+            "Ionization",
+            "Sphere and counterion",
+            "Different free counterion"
+          ],
+          [
+            "Linkage",
+            "Metal donor attachment",
+            "Nitrite: N versus O"
+          ],
+          [
+            "Bidentate binding",
+            "Two donor attachments",
+            "Not just ambidentate"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Octahedral fac and mer arrangements",
+      "formula": "fac-MA₃B₃: all A pairs cis; mer-MA₃B₃: one A pair trans",
+      "script": "For an octahedral complex with three identical A ligands and three identical B ligands, facial and meridional arrangements are distinct geometrical isomers. Imagine six ligand positions on the positive and negative x, y and z axes. Opposite ends of the same axis are trans, while positions on different axes are cis. A facial arrangement places the three A ligands at positive x, positive y and positive z. Every A pair is cis, and the three positions form one face of the octahedron. A meridional arrangement can place A at positive x, negative x and positive z. The first two form a trans pair, while the other two A pairs are cis. The schematic shows these position labels so the classification does not depend on an ambiguous flat sketch. Rotating an entire complex does not create a new isomer. Exchanging ligand positions can. These fac and mer labels apply to this octahedral three plus three pattern; do not reuse them for every six coordinate formula without checking its ligand arrangement.",
+      "points": [
+        "fac · +x, +y, +z · Three cis pairs",
+        "mer · +x, −x, +z · One trans; two cis",
+        "Opposite pairs · +x/−x; +y/−y; +z/−z · Same axis = trans"
+      ],
+      "board": {
+        "heading": "Octahedral fac and mer arrangements",
+        "columns": [
+          "Arrangement",
+          "A positions",
+          "A-pair relationships"
+        ],
+        "rows": [
+          [
+            "fac",
+            "+x, +y, +z",
+            "Three cis pairs"
+          ],
+          [
+            "mer",
+            "+x, −x, +z",
+            "One trans; two cis"
+          ],
+          [
+            "Opposite pairs",
+            "+x/−x; +y/−y; +z/−z",
+            "Same axis = trans"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Chelation and optical isomerism",
+      "formula": "[Co(en)₃]³⁺: three bidentate ligands, six donor attachments",
+      "script": "A chelating ligand binds through multiple donor atoms to the same central metal and closes a ring. Ethane one two diamine, commonly abbreviated e n, can bind through its two nitrogen atoms. Three such ligands around cobalt give six donor attachments, so the coordination number is six although there are only three ligand molecules. With neutral diamine ligands and complex charge plus three, cobalt has oxidation state plus three. An octahedral tris chelate arrangement can have two nonsuperimposable mirror image forms, conventionally described by delta and lambda helicity labels. They have the same connectivity but a different three dimensional handed arrangement. Mirror images that can be superimposed do not constitute an optical isomer pair. A flat donor count table alone cannot establish handedness; a spatial model is needed for that assignment. Individual enantiomers can rotate plane polarized light, while an equal mixture has cancelling rotations under the same conditions. Delta and lambda specify structural helicity; they do not automatically predict the sign of measured optical rotation. Keep ligand count, donor count, oxidation state and chirality as separate questions.",
+      "points": [
+        "Ligand molecules · 3 · Each en is bidentate",
+        "Coordination number · 6 · Six donor attachments",
+        "Optical pair · Δ and Λ · Helicity ≠ rotation sign"
+      ],
+      "board": {
+        "heading": "Chelation and optical isomerism",
+        "columns": [
+          "Question",
+          "For [Co(en)₃]³⁺",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "Ligand molecules",
+            "3",
+            "Each en is bidentate"
+          ],
+          [
+            "Coordination number",
+            "6",
+            "Six donor attachments"
+          ],
+          [
+            "Optical pair",
+            "Δ and Λ",
+            "Helicity ≠ rotation sign"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Stepwise and overall formation constants",
+      "formula": "β₂ = K₁K₂ for M + 2L ⇌ ML₂",
+      "script": "Complex stability is an equilibrium question that needs a defined reaction. Suppose a metal M binds one ligand L to make M L, then binds another to make M L two. Define the first and second stepwise formation constants from those two equilibria. Adding the reactions gives metal plus two ligands forming the bis ligand complex. Multiplying the stepwise constants gives the overall formation constant beta two. With illustrative dimensionless constants ten to the four and ten to the three, beta two is ten to the seven. It is not their sum, and the second constant need not always exceed the first. Thermodynamic constants use activities; concentration ratios are approximations under specified solution conditions. A large overall formation constant favours the complex relative to free metal and free ligand for that defined equilibrium, but the actual composition also depends on ligand availability, competing reactions and mass balances. Thermodynamic stability is distinct from kinetic inertness. A complex can be strongly favoured at equilibrium while exchanging ligands rapidly, or react slowly even when a different product is favoured.",
+      "points": [
+        "M + L ⇌ ML · K₁ = 10⁴ · First binding",
+        "ML + L ⇌ ML₂ · K₂ = 10³ · Second binding",
+        "M + 2L ⇌ ML₂ · β₂ = 10⁷ · Multiply K₁ and K₂"
+      ],
+      "board": {
+        "heading": "Stepwise and overall formation constants",
+        "columns": [
+          "Equilibrium",
+          "Illustrative constant",
+          "Combination"
+        ],
+        "rows": [
+          [
+            "M + L ⇌ ML",
+            "K₁ = 10⁴",
+            "First binding"
+          ],
+          [
+            "ML + L ⇌ ML₂",
+            "K₂ = 10³",
+            "Second binding"
+          ],
+          [
+            "M + 2L ⇌ ML₂",
+            "β₂ = 10⁷",
+            "Multiply K₁ and K₂"
+          ]
+        ]
+      },
+      "speechInput": "Complex stability is an equilibrium question that needs a defined reaction. Suppose a metal M binds one ligand L to make M L, then binds another to make M L two. Define the first and second stepwise formation constants from those two equilibria. Adding the reactions gives metal plus two ligands forming the bis ligand complex. Multiplying the stepwise constants gives the overall formation constant beta two. With illustrative dimensionless constants ten to the four and ten to the three, beta two is ten to the seven. It is not their sum, and the second constant need not always exceed the first. Thermodynamic constants use activities; concentration ratios are approximations under specified solution conditions. A large overall formation constant favours the complex relative to free metal and free ligand for that defined equilibrium, but the actual composition also depends on ligand availability, competing reactions and mass balances. Thermodynamic stability is distinct from kinetic inertness. A complex can be strongly favoured at equilibrium while exchanging ligands rapidly, or react slowly even when a different product is favoured. Do not infer reaction speed from a formation constant alone.",
+      "recordingNote": "Closing reminder shortened in the recording; transcript follows independently verified audio. Exact requested input retained for cache provenance."
+    },
+    {
+      "title": "Coordination in analysis and biology",
+      "formula": "Complexation changes speciation; identify metal and ligand roles",
+      "script": "Coordination compounds connect reaction chemistry with biological and analytical functions. Chlorophyll contains magnesium in its coordinated pigment framework, while haem groups contain iron in a porphyrin environment. Vitamin B twelve contains cobalt. These metal identities are useful starting facts, but they do not imply that every metal ion has the same biological function in every ligand environment. In qualitative analysis, complex formation can change the concentration of a free metal ion and thereby affect precipitation or dissolution equilibria. Such reasoning requires the competing equilibrium constants and solution conditions. In a standard silver complex example, two cyanide ligands each have charge minus one. A complex charge of minus one therefore places silver at oxidation state plus one. Its formation does not itself require a change in the silver oxidation state. Complex formation is also used in extraction and purification chemistry because ligands can stabilize selected dissolved metal species. Keep ligand binding, redox conversion and precipitation conceptually separate, then connect them through balanced equations when a problem supplies enough data. The purpose here is interpreting chemical roles and charge balance, rather than prescribing an experimental procedure.",
+      "points": [
+        "Chlorophyll · Mg · Biological ligand framework",
+        "Haem; vitamin B₁₂ · Fe; Co · Different metal environments",
+        "[Ag(CN)₂]⁻ · Ag(I) · +1 + 2(−1) = −1"
+      ],
+      "board": {
+        "heading": "Coordination in analysis and biology",
+        "columns": [
+          "Example",
+          "Central metal / state",
+          "Key distinction"
+        ],
+        "rows": [
+          [
+            "Chlorophyll",
+            "Mg",
+            "Biological ligand framework"
+          ],
+          [
+            "Haem; vitamin B₁₂",
+            "Fe; Co",
+            "Different metal environments"
+          ],
+          [
+            "[Ag(CN)₂]⁻",
+            "Ag(I)",
+            "+1 + 2(−1) = −1"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -203,6 +384,72 @@
       ],
       "answer": 2,
       "explanation": "In the facial form the three A donors occupy one triangular face and are mutually cis. A meridional form contains a trans A-A pair."
+    },
+    {
+      "question": "A nitrite ligand binding through N in one complex and O in another illustrates:",
+      "options": [
+        "Ionization isomerism",
+        "Linkage isomerism",
+        "Only cis/trans isomerism",
+        "Identical metal-donor connectivity"
+      ],
+      "answer": 1,
+      "explanation": "The same ambidentate ligand changes its donor attachment atom."
+    },
+    {
+      "question": "In octahedral fac-MA3B3, the three A ligands have:",
+      "options": [
+        "Three trans pairs",
+        "One trans pair",
+        "Three cis pairs",
+        "No angular relationships"
+      ],
+      "answer": 2,
+      "explanation": "The three A positions occupy a face; every A–A pair is cis."
+    },
+    {
+      "question": "A mer-MA3B3 arrangement with A at +x, −x and +z contains how many A–A trans pairs?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Zero"
+      ],
+      "answer": 0,
+      "explanation": "The +x and −x positions are opposite; the other A pairs are cis."
+    },
+    {
+      "question": "For [Co(en)3]3+ with neutral bidentate en, coordination number and oxidation state are:",
+      "options": [
+        "3 and +6",
+        "3 and +3",
+        "6 and 0",
+        "6 and +3"
+      ],
+      "answer": 3,
+      "explanation": "Three bidentate ligands supply six donors; neutral ligands leave cobalt at +3."
+    },
+    {
+      "question": "Stepwise dimensionless constants K1 = 10^4 and K2 = 10^3 give overall beta2:",
+      "options": [
+        "10^1",
+        "10^7",
+        "10^12",
+        "2 × 10^4"
+      ],
+      "answer": 1,
+      "explanation": "Adding equilibrium reactions multiplies their constants: beta2 = K1 K2."
+    },
+    {
+      "question": "Which metal assignment is correct?",
+      "options": [
+        "Chlorophyll: Fe; haem: Mg",
+        "Vitamin B12: Mg",
+        "Chlorophyll: Mg; haem: Fe; vitamin B12: Co",
+        "All three contain the same metal"
+      ],
+      "answer": 2,
+      "explanation": "The coordinated metal identities are magnesium, iron and cobalt, respectively."
     }
   ]
 }

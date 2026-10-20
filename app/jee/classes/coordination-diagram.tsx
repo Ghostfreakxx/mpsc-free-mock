@@ -1,6 +1,8 @@
 import styles from "./lecture.module.css";
+import KineticsCoordinationDiagram from "./kinetics-coordination-diagram";
 const titles = ["Four counts, four meanings", "Only outer chloride is counted", "Square-planar cis and trans", "Octahedral d⁶: count pairs too", "Same d count, different properties"];
 export default function CoordinationDiagram({ chapter }: { chapter: number }) {
+ if (chapter >= 5) return <KineticsCoordinationDiagram lesson="coordination-compounds" chapter={chapter} />;
  return <svg className={styles.diagram} viewBox="0 0 460 320" role="img" aria-label={titles[chapter]}>
   <title>{titles[chapter]}</title><rect width="460" height="320" rx="12" fill="#f5faf7" />
   <g fontFamily="Arial, sans-serif" fill="#20483e" fontSize="16">

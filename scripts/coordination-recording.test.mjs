@@ -1,10 +1,18 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import {chemistryCoreLessons} from '../app/jee/classes/chemistry-core-study.ts';
 const lesson=JSON.parse(fs.readFileSync('app/data/jee-coordination-compounds-lecture.json'));
 test('narrated worked examples preserve charge, precipitate and spin energy results',()=>{
  assert.equal(lesson.subject,'Chemistry'); assert.equal(lesson.unit,12);
- assert.equal(lesson.chapters.length,5); assert.equal(lesson.quiz.length,12);
+ assert.equal(lesson.chapters.length,10); assert.equal(lesson.quiz.length,18);
+ assert.deepEqual(lesson.quiz,chemistryCoreLessons.find(l=>l.id==='coordination-compounds').quiz);
+ for(const [i,c]of lesson.chapters.entries()){
+  const hash=createHash('sha256').update(JSON.stringify({script:c.speechInput??c.script,instructions:lesson.voiceInstructions,voice:'marin',model:'gpt-4o-mini-tts'})).digest('hex');
+  assert.equal(fs.readFileSync('public/lectures/coordination-compounds/chapter-'+String(i+1).padStart(2,'0')+'.sha256','utf8'),hash);
+  if(i>=5){assert.ok(c.script.split(/\s+/).length>=140);assert.equal(c.board.rows.length,3);}
+ }
  assert.equal((.01*2*143.5).toFixed(2),'2.87');
  assert.match(lesson.chapters[1].script,/sphere intact/);
  assert.match(lesson.chapters[1].script,/two point eight seven/);
@@ -16,8 +24,8 @@ test('narrated worked examples preserve charge, precipitate and spin energy resu
 });
 test('recording captions match every chapter and remain within audio bounds',()=>{
  const timings=JSON.parse(fs.readFileSync('app/data/jee-coordination-compounds-timings.json'));
- assert.ok(timings.duration>500 && timings.duration<800);
- assert.equal(timings.chapters.length,5);
+ assert.ok(timings.duration>850 && timings.duration<1400);
+ assert.equal(timings.chapters.length,10);
  const words=t=>t.toLowerCase().replace(/[^a-z0-9]/g,'');
  for(const [i,chapter] of timings.chapters.entries()){
   assert.equal(chapter.start,i?timings.chapters[i-1].end:0);

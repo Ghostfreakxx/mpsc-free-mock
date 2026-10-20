@@ -24,8 +24,8 @@ try {
  await audio.evaluate(a=>a.pause());
  assert.equal((await page.request.get(`${base}/lectures/chemical-kinetics/english.vtt`)).status(),200);
  const chapters=page.getByRole('complementary',{name:'Class chapters'}).getByRole('button');
- assert.equal(await chapters.count(),5);
- for(let i=0;i<5;i++) {
+ assert.equal(await chapters.count(),10);
+ for(let i=0;i<data.chapters.length;i++) {
    await chapters.nth(i).click();
    await page.waitForFunction(i=>document.querySelector('[aria-label="Class chapters"] button[aria-current="step"]')?.textContent.includes(i), data.chapters[i].title);
    await audio.evaluate(a=>a.pause());
@@ -38,16 +38,16 @@ try {
  }
  await audio.evaluate(a=>{a.currentTime=130;a.dispatchEvent(new Event('timeupdate'));});
  await page.reload(); await page.waitForFunction(()=>document.querySelector('audio')?.currentTime>=129);
- assert.equal(await page.locator('fieldset').count(),12);
+ assert.equal(await page.locator('fieldset').count(),data.quiz.length);
  for(const [i,q] of data.quiz.entries())await page.locator('fieldset').nth(i).getByRole('radio').nth(q.answer).check();
- assert.equal(await page.getByRole('status').filter({hasText:/^Correct\./}).count(),12);
+ assert.equal(await page.getByRole('status').filter({hasText:/^Correct\./}).count(),data.quiz.length);
  const downloadEvent=page.waitForEvent('download');
  await page.getByRole('button',{name:/Download notes/}).click();
  const download=await downloadEvent; const notes=await fs.readFile(await download.path(),'utf8');
- assert.ok(notes.includes(data.chapters[4].script));
+ assert.ok(notes.includes(data.chapters.at(-1).script));
  await page.goto(`${base}/jee/classes/study/chemical-kinetics`);
  await page.getByRole('link',{name:'Watch the Marin class'}).waitFor();
- assert.equal(await page.locator('fieldset').count(),12);
+ assert.equal(await page.locator('fieldset').count(),data.quiz.length);
  await page.goto(`${base}/jee/classes`);await page.getByRole('button',{name:'Chemistry',exact:true}).click();
  const unit=page.getByRole('region',{name:'Chemistry course map'}).locator('li').filter({has:page.locator('a[href="/jee/classes/chemical-kinetics"]')});
  assert.match(await unit.textContent(),/Recorded/);
@@ -60,5 +60,5 @@ try {
  await page.locator('audio').evaluate(a=>a.play());
  await page.waitForFunction(()=>document.querySelector('audio').currentTime>.3);
  await page.locator('audio').evaluate(a=>a.pause());
- assert.deepEqual(errors,[]);console.log('PASS: Chemistry entry, five boards, playback, captions, resume, 12 answers, notes, course map and responsive layouts.');
+ assert.deepEqual(errors,[]);console.log('PASS: Chemistry entry, all ten boards, playback, captions, resume, all answers, notes, course map and responsive layouts.');
 } finally {await browser.close();}

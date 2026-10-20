@@ -1,10 +1,18 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import {chemistryCoreLessons} from '../app/jee/classes/chemistry-core-study.ts';
 const lesson=JSON.parse(fs.readFileSync('app/data/jee-chemical-kinetics-lecture.json'));
 test('kinetics recording preserves experimental and integrated-law examples',()=>{
  assert.equal(lesson.subject,'Chemistry');assert.equal(lesson.unit,8);
- assert.equal(lesson.chapters.length,5);assert.equal(lesson.quiz.length,12);
+ assert.equal(lesson.chapters.length,10);assert.equal(lesson.quiz.length,18);
+ assert.deepEqual(lesson.quiz,chemistryCoreLessons.find(l=>l.id==='chemical-kinetics').quiz);
+ for(const [i,c]of lesson.chapters.entries()){
+  const hash=createHash('sha256').update(JSON.stringify({script:c.speechInput??c.script,instructions:lesson.voiceInstructions,voice:'marin',model:'gpt-4o-mini-tts'})).digest('hex');
+  assert.equal(fs.readFileSync('public/lectures/chemical-kinetics/chapter-'+String(i+1).padStart(2,'0')+'.sha256','utf8'),hash);
+  if(i>=5){assert.ok(c.script.split(/\s+/).length>=140);assert.equal(c.board.rows.length,3);}
+ }
  assert.ok(Math.abs(.002/(.1**2*.1)-2)<1e-10);
  assert.equal((.08-.002*15).toFixed(3),'0.050');assert.equal(.08/.002,40);
  assert.equal(.5**3,.125);assert.equal((Math.log(10)/(Math.log(2)/10)).toFixed(1),'33.2');
@@ -13,9 +21,9 @@ test('kinetics recording preserves experimental and integrated-law examples',()=
  assert.match(lesson.chapters[3].script,/no other gases or reactions/);
  assert.match(lesson.chapters[4].script,/does not change the equilibrium constant/);
 });
-test('all five chapters have complete, bounded and readable captions',()=>{
+test('all ten chapters have complete, bounded and readable captions',()=>{
  const t=JSON.parse(fs.readFileSync('app/data/jee-chemical-kinetics-timings.json'));
- assert.equal(t.chapters.length,5);assert.ok(t.duration>450 && t.duration<750);
+ assert.equal(t.chapters.length,10);assert.ok(t.duration>850 && t.duration<1400);
  const normalize=s=>s.toLowerCase().replace(/[^a-z0-9]/g,'');
  for(const [i,ch] of t.chapters.entries()){
   assert.equal(ch.start,i?t.chapters[i-1].end:0);

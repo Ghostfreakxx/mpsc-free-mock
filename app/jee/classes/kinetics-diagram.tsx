@@ -1,6 +1,8 @@
 import styles from "./lecture.module.css";
+import KineticsCoordinationDiagram from "./kinetics-coordination-diagram";
 const titles=["Find each exponent separately","Zero order stops at depletion","First order: successive halvings","Total pressure is not pA","Arrhenius plot: negative slope"];
 export default function KineticsDiagram({chapter}:{chapter:number}) {
+ if (chapter >= 5) return <KineticsCoordinationDiagram lesson="chemical-kinetics" chapter={chapter} />;
  return <svg className={styles.diagram} viewBox="0 0 460 320" role="img" aria-label={titles[chapter]}>
  <title>{titles[chapter]}</title><rect width="460" height="320" rx="12" fill="#f5faf7" />
  <g fontFamily="Arial, sans-serif" fontSize="16" fill="#20483e">

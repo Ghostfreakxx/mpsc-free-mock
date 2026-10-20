@@ -5,9 +5,9 @@ Baseline: [official NTA syllabus](https://jeemain.nta.nic.in/document/syllabus-2
 This is a coverage inventory, not a claim that the course is complete.
 There are 22 authored written lessons spanning all 20 Chemistry units.
 This means each unit has at least one foundation, not exhaustive topic coverage.
-Organic Principles, Coordination Compounds and Chemical Kinetics each have a
-five-chapter Marin recording. Chemical Thermodynamics and Solutions each have
-ten chapters. Equilibrium has eight
+Organic Principles has a five-chapter Marin recording. Coordination Compounds,
+Chemical Kinetics, Chemical Thermodynamics and Solutions each have ten chapters.
+Equilibrium has eight
 chapters and Redox and Electrochemistry has nine. Atomic Structure and Chemical
 Bonding each have eight chapters. Mole Concept and Periodic Trends also have
 eight chapters each. Hydrocarbons and Organic Halogens each have eight chapters.
@@ -129,10 +129,12 @@ A nine-chapter recorded class accompanies these notes at
 `/jee/classes/redox-electrochemistry`, including the additional conductance,
 charge-balance and current-efficiency calculations.
 
-Chemical kinetics now includes seven worked examples and twelve MCQs, with
-pressure-based first-order measurements, depletion boundaries, mixed rate-law
-changes and successive half-lives. A five-chapter recorded class accompanies these notes
-at `/jee/classes/chemical-kinetics`.
+Chemical Kinetics now includes thirteen written sections, ten worked examples
+and eighteen original MCQs. Its ten-chapter recording at
+`/jee/classes/chemical-kinetics` adds stoichiometric rate normalization,
+pseudo-first-order conditions, model-testing plots, high completion percentages
+and labelled catalyst energy profiles. Further mixed datasets and mechanism
+practice remain; second-order integrated laws are not claimed as required scope.
 
 No unit is missing a written foundation. Detailed subtopic coverage, additional
 worked problems, independent factual review and Chemistry narration still need work.
@@ -142,12 +144,14 @@ field of each lesson identifies further practice or content required.
 Do not relabel these notes as prerecorded classes until audio, aligned captions
 and player integration have actually been generated and validated.
 
-Coordination Compounds now includes seven worked examples and twelve original MCQs,
+Coordination Compounds now includes thirteen written sections, ten worked examples and eighteen original MCQs,
 covering outer-sphere chloride precipitation, mixed-ligand naming, nickel(II)
 geometry, fac/mer arrangements and pairing-energy comparisons for octahedral d6.
-A five-chapter recorded class now accompanies these notes at
-`/jee/classes/coordination-compounds`; detailed stereochemical drawings and extended
-stability and reaction-sequence practice remain outstanding.
+A ten-chapter recorded class now accompanies these notes at
+`/jee/classes/coordination-compounds`, adding ionization/linkage distinctions,
+labelled fac/mer positions, chelation and optical-isomer concepts, stepwise/overall
+formation constants and analytical/biological applications. Detailed optical-isomer
+models and quantitative extraction/analysis sequences remain outstanding.
 
 Organic Principles now includes seven worked examples and twelve original MCQs,
 with branched alcohol naming, pKa comparisons, substitution electron bookkeeping
