@@ -1,0 +1,375 @@
+// Authored by scripts/expand-organic-principles.mjs.
+export const organicPrinciplesAdditions = {
+  "chapters": [
+    {
+      "title": "Name a principal group before numbering",
+      "formula": "HOCH₂CH₂COOH: 3-hydroxypropanoic acid",
+      "script": "When several functional groups occur in one molecule, identify the principal group before numbering the parent. For hydroxy carboxylic acids in these examples, the carboxylic acid supplies the suffix and the alcohol is described by a hydroxy prefix. In H O C H two, C H two, C O O H, the carboxyl carbon is carbon one. The parent contains three carbons, and the hydroxy group is on carbon three, giving three hydroxypropanoic acid. In C H three, C H with O H, C O O H, the hydroxy group is instead on carbon two, giving two hydroxypropanoic acid. These compounds have the same molecular formula but different connectivity. Do not renumber from the alcohol end to give the prefix a lower number at the expense of the principal acid group. For the separate ketone C H three, C O, C H two, C H three, numbering gives butan two one. Draw the connectivity from a proposed name as a reverse check. This short selection does not establish a complete priority hierarchy for every multifunctional molecule.",
+      "points": [
+        "HOCH₂CH₂COOH · Carboxylic acid · 3-hydroxypropanoic acid",
+        "CH₃CH(OH)COOH · Carboxylic acid · 2-hydroxypropanoic acid",
+        "CH₃COCH₂CH₃ · Ketone · Butan-2-one"
+      ],
+      "board": {
+        "heading": "Name a principal group before numbering",
+        "columns": [
+          "Structure",
+          "Principal group",
+          "Name"
+        ],
+        "rows": [
+          [
+            "HOCH₂CH₂COOH",
+            "Carboxylic acid",
+            "3-hydroxypropanoic acid"
+          ],
+          [
+            "CH₃CH(OH)COOH",
+            "Carboxylic acid",
+            "2-hydroxypropanoic acid"
+          ],
+          [
+            "CH₃COCH₂CH₃",
+            "Ketone",
+            "Butan-2-one"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Use unsaturation as a formula check",
+      "formula": "DBE = (2C + 2 + N − H − X)/2",
+      "script": "A degree of unsaturation counts rings and pi bond equivalents in ordinary closed shell organic formulas with the usual valences. Start with twice the carbon count plus two, add nitrogen, then subtract hydrogen and the monovalent halogen count. Divide by two. Oxygen does not appear in this elementary expression. For C four H eight O, the result is one. The formula could describe an alkene, a carbonyl compound or a ring containing compound; the index alone does not identify the functional group. For C three H five chlorine, count chlorine like one hydrogen. Eight minus five minus one, divided by two, again gives one. A triple bond contributes two units, while one ring or one double bond contributes one. Benzene, C six H six, gives four: one ring and three double bond equivalents. The index is a consistency check rather than a unique structure generator. Unusual valence states, ions or radicals need additional care before applying this simple formula. A negative or unexpected fractional result should prompt a check of the molecular formula and model assumptions.",
+      "points": [
+        "C₄H₈O · (8 + 2 − 8)/2 · 1",
+        "C₃H₅Cl · (6 + 2 − 5 − 1)/2 · 1",
+        "C₆H₆ · (12 + 2 − 6)/2 · 4"
+      ],
+      "board": {
+        "heading": "Use unsaturation as a formula check",
+        "columns": [
+          "Formula",
+          "Calculation",
+          "DBE"
+        ],
+        "rows": [
+          [
+            "C₄H₈O",
+            "(8 + 2 − 8)/2",
+            "1"
+          ],
+          [
+            "C₃H₅Cl",
+            "(6 + 2 − 5 − 1)/2",
+            "1"
+          ],
+          [
+            "C₆H₆",
+            "(12 + 2 − 6)/2",
+            "4"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Assign E and Z from priority",
+      "formula": "Higher-priority groups: same side Z; opposite sides E",
+      "script": "Geometrical isomerism requires two different substituents on each carbon of an ordinary alkene double bond. The E and Z system compares the higher priority substituent on each end. In the simple example drawn here, the left carbon bears bromine and hydrogen, while the right bears chlorine and a methyl group. Bromine outranks hydrogen because its directly attached atom has the higher atomic number. Chlorine outranks the methyl carbon for the same reason. When bromine and chlorine lie on the same side of the double bond, the arrangement is Z. When those higher priority groups lie on opposite sides, it is E. Do not compare the sizes of the printed group names or simply select the two heaviest complete groups. If directly attached atoms tie, the sequence rules require further comparisons beyond this elementary example. An alkene with two hydrogens on one end fails the starting condition, so an E or Z label cannot be assigned there. Cis and trans refer to specified relative groups and are not automatically interchangeable with E and Z in every substituted alkene.",
+      "points": [
+        "Left carbon · Br versus H · Br",
+        "Right carbon · Cl versus CH₃ · Cl",
+        "Compare Br / Cl · Same side / opposite · Z / E"
+      ],
+      "board": {
+        "heading": "Assign E and Z from priority",
+        "columns": [
+          "End",
+          "Priority comparison",
+          "Higher priority"
+        ],
+        "rows": [
+          [
+            "Left carbon",
+            "Br versus H",
+            "Br"
+          ],
+          [
+            "Right carbon",
+            "Cl versus CH₃",
+            "Cl"
+          ],
+          [
+            "Compare Br / Cl",
+            "Same side / opposite",
+            "Z / E"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Identify a stereogenic carbon",
+      "formula": "Butan-2-ol: H, OH, CH₃ and CH₂CH₃ are different",
+      "script": "A tetrahedral carbon attached to four different groups is a common source of molecular chirality. Carbon two in butan two ol carries hydrogen, hydroxyl, methyl and ethyl groups. All four differ, so the molecule has a pair of nonsuperimposable mirror image configurations. By comparison, isopropyl alcohol has two identical methyl groups at its alcohol carbon and does not have that stereogenic centre. The drawing uses a Fischer projection convention: horizontal attachments point toward the viewer and vertical attachments point away. Reflecting the left and right groups produces the opposite configuration in this one centre example. Turning a complete spatial molecule does not change its configuration. An individual enantiomer can rotate plane polarized light, while an equal mixture of the two gives cancelling rotations under the same conditions. R and S descriptors specify configuration and do not automatically predict positive or negative optical rotation. With several stereogenic centres, two to the power of the centre count is a maximum count under simple assumptions; molecular symmetry can reduce the number. Never decide overall chirality from carbon counting alone.",
+      "points": [
+        "Butan-2-ol · H, OH, methyl, ethyl · One stereogenic centre",
+        "Propan-2-ol · Two methyl groups · No such centre",
+        "One-centre mirror pair · Same connectivity · Two configurations"
+      ],
+      "board": {
+        "heading": "Identify a stereogenic carbon",
+        "columns": [
+          "Molecule / rule",
+          "Groups at centre",
+          "Conclusion"
+        ],
+        "rows": [
+          [
+            "Butan-2-ol",
+            "H, OH, methyl, ethyl",
+            "One stereogenic centre"
+          ],
+          [
+            "Propan-2-ol",
+            "Two methyl groups",
+            "No such centre"
+          ],
+          [
+            "One-centre mirror pair",
+            "Same connectivity",
+            "Two configurations"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Track formal charge and electron pairs",
+      "formula": "Formal charge = valence electrons − nonbonding electrons − ½ bonding electrons",
+      "script": "Formal charge checks whether an electron drawing is consistent with its stated species. Assign each atom its nonbonding electrons and half of the electrons in its bonds, then compare with the neutral atom's valence count. In ammonia, nitrogen has five valence electrons, one lone pair containing two electrons, and three single bonds. Its formal charge is five minus two minus three, or zero. In ammonium, nitrogen has four single bonds and no lone pair, giving five minus zero minus four, or plus one. In hydroxide, oxygen has six valence electrons, six nonbonding electrons and one single bond, giving minus one. Sum all atomic formal charges to obtain the species charge. A full curved arrow represents movement of an electron pair and begins at a pair or bond; a single headed fishhook represents one electron. Formal charge is bookkeeping, rather than a direct measurement of partial charge. Resonance contributors preserve atomic positions and overall charge while redistributing electrons. Moving an attached hydrogen to another atom changes connectivity and is not merely a resonance arrow.",
+      "points": [
+        "N in NH₃ · 5 − 2 − 3 · 0",
+        "N in NH₄⁺ · 5 − 0 − 4 · +1",
+        "O in OH⁻ · 6 − 6 − 1 · −1"
+      ],
+      "board": {
+        "heading": "Track formal charge and electron pairs",
+        "columns": [
+          "Atom in species",
+          "Electron bookkeeping",
+          "Formal charge"
+        ],
+        "rows": [
+          [
+            "N in NH₃",
+            "5 − 2 − 3",
+            "0"
+          ],
+          [
+            "N in NH₄⁺",
+            "5 − 0 − 4",
+            "+1"
+          ],
+          [
+            "O in OH⁻",
+            "6 − 6 − 1",
+            "−1"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Separate induction, resonance and hybridization",
+      "formula": "Compare conjugate bases under the same conditions",
+      "script": "Acidity comparisons should begin with the conjugate base and the conditions of comparison. In a matched carboxylic acid series, a nearby chlorine substituent withdraws electron density through sigma bonds and can stabilize the conjugate base. Chloroacetic acid is therefore stronger than acetic acid in the usual aqueous comparison. Moving that substituent farther from the acid group generally weakens the inductive effect. Resonance requires a suitable connected orbital system and is not the same as this through bond polarization. Acetate delocalizes negative charge between its two oxygens, whereas an ordinary alkoxide lacks the same carboxylate arrangement. Hybridization supplies another controlled comparison: a terminal alkyne is more acidic than corresponding simple alkene or alkane carbon hydrogen sites, because its conjugate base places the lone pair in an orbital with greater s character. These examples do not imply one effect dominates every molecule. Solvation, substituent position, competing resonance and the actual proton removed can change a ranking. State the structures and medium instead of treating the words electron withdrawing as a complete explanation.",
+      "points": [
+        "ClCH₂COOH / CH₃COOH · Inductive withdrawal · Matched aqueous comparison",
+        "Acetate / alkoxide · Conjugate-base resonance · Different bonding",
+        "Terminal alkyne C–H · Greater s character · Comparable carbon sites"
+      ],
+      "board": {
+        "heading": "Separate induction, resonance and hybridization",
+        "columns": [
+          "Comparison",
+          "Relevant effect",
+          "Limit"
+        ],
+        "rows": [
+          [
+            "ClCH₂COOH / CH₃COOH",
+            "Inductive withdrawal",
+            "Matched aqueous comparison"
+          ],
+          [
+            "Acetate / alkoxide",
+            "Conjugate-base resonance",
+            "Different bonding"
+          ],
+          [
+            "Terminal alkyne C–H",
+            "Greater s character",
+            "Comparable carbon sites"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Use pKa to predict proton transfer",
+      "formula": "HA + B ⇌ A⁻ + HB⁺; K = 10^[pKa(HB⁺) − pKa(HA)]",
+      "script": "A proton transfer equilibrium connects two acid dissociation constants measured in the same solvent at the same temperature. Write H A plus base B forming A minus plus the conjugate acid H B plus. The equilibrium constant equals the acid constant of H A divided by the acid constant of H B plus. In terms of p K a, this is ten raised to the p K a of H B plus minus the p K a of H A. With illustrative values five and nine respectively, the exponent is nine minus five, or four, and the constant is ten thousand. Products are favoured in that defined equilibrium. Reversing the equation gives the reciprocal constant, one ten thousandth. This calculation does not establish a p H or percentage conversion without starting concentrations and the appropriate mass and charge balances. Do not mix aqueous values with values measured in a different solvent as if the numbers shared one scale. The useful direction rule is that proton transfer tends to favour the weaker acid and weaker base pair, while the numerical equilibrium expression makes that comparison precise.",
+      "points": [
+        "pKa(HA) · 5 · Stronger acid of pair",
+        "pKa(HB⁺) · 9 · Weaker acid of pair",
+        "Kforward · 10^(9 − 5) · 10000; Kreverse = 10⁻⁴"
+      ],
+      "board": {
+        "heading": "Use pKa to predict proton transfer",
+        "columns": [
+          "Quantity",
+          "Illustrative value",
+          "Consequence"
+        ],
+        "rows": [
+          [
+            "pKa(HA)",
+            "5",
+            "Stronger acid of pair"
+          ],
+          [
+            "pKa(HB⁺)",
+            "9",
+            "Weaker acid of pair"
+          ],
+          [
+            "Kforward",
+            "10^(9 − 5)",
+            "10000; Kreverse = 10⁻⁴"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Conformation differs from configuration",
+      "formula": "Ethane: eclipsed 0°; staggered 60° dihedral angle",
+      "script": "Rotation about a single bond changes conformation without changing the atom connectivity. View ethane along its carbon carbon bond using a Newman projection. When the front and rear carbon hydrogen bonds line up in the view, the arrangement is eclipsed. A sixty degree rotation produces a staggered arrangement, where the rear bonds lie between the front bonds. In the usual ethane torsional picture, staggered arrangements are energy minima and eclipsed arrangements are maxima. Equivalent patterns repeat every one hundred twenty degrees because each carbon carries three identical hydrogens. These conformers normally interconvert rapidly at ordinary temperatures and are not a new set of constitutional isomers. The torsional energy difference is also not the energy required to break the carbon carbon sigma bond. Larger molecules introduce additional steric interactions, so one ethane picture does not rank every substituted conformation. Changing an alkene from E to Z instead changes its double bond configuration and is not achieved by unrestricted ordinary single bond rotation about that double bond. Identify which bond rotates and whether connectivity or configuration changes before naming the relationship.",
+      "points": [
+        "Conformation · Single-bond torsion · Staggered / eclipsed",
+        "Constitution · Bond connectivity · Not changed by rotation",
+        "Configuration · Spatial arrangement · E / Z is a different issue"
+      ],
+      "board": {
+        "heading": "Conformation differs from configuration",
+        "columns": [
+          "Relationship",
+          "What changes",
+          "Ethane example"
+        ],
+        "rows": [
+          [
+            "Conformation",
+            "Single-bond torsion",
+            "Staggered / eclipsed"
+          ],
+          [
+            "Constitution",
+            "Bond connectivity",
+            "Not changed by rotation"
+          ],
+          [
+            "Configuration",
+            "Spatial arrangement",
+            "E / Z is a different issue"
+          ]
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The preferred name for HOCH2CH2COOH in this example is:",
+      "options": [
+        "1-Hydroxypropanoic acid",
+        "3-Hydroxypropanoic acid",
+        "2-Hydroxypropanoic acid",
+        "Propan-1-ol"
+      ],
+      "answer": 1,
+      "explanation": "The acid carbon is carbon 1, placing the hydroxy prefix at carbon 3."
+    },
+    {
+      "question": "For ordinary closed-shell C4H8O, the degree of unsaturation is:",
+      "options": [
+        "0",
+        "2",
+        "1",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "Oxygen is omitted from this formula check: (2×4 + 2 − 8)/2 = 1."
+    },
+    {
+      "question": "An alkene carbon bears Br/H and the other Cl/CH3. Br and Cl on the same side give:",
+      "options": [
+        "Z",
+        "E",
+        "No possible geometrical isomerism",
+        "An R descriptor"
+      ],
+      "answer": 0,
+      "explanation": "Br and Cl are the higher-priority directly attached atoms; same side gives Z."
+    },
+    {
+      "question": "Which alcohol has one carbon bearing four different groups?",
+      "options": [
+        "Methanol",
+        "Ethanol",
+        "Propan-2-ol",
+        "Butan-2-ol"
+      ],
+      "answer": 3,
+      "explanation": "Carbon 2 in butan-2-ol bears H, OH, methyl and ethyl groups, all different."
+    },
+    {
+      "question": "Nitrogen in NH4+ has four single bonds and no lone pair. Its formal charge is:",
+      "options": [
+        "0",
+        "+1",
+        "−1",
+        "+5"
+      ],
+      "answer": 1,
+      "explanation": "Five valence electrons minus zero nonbonding minus four assigned bonding electrons gives +1."
+    },
+    {
+      "question": "A nearby chlorine can increase a matched carboxylic acid’s acidity mainly through:",
+      "options": [
+        "Removing all oxygen atoms",
+        "Creating a new carbon count",
+        "Inductive stabilization of its conjugate base",
+        "Making every solvent identical"
+      ],
+      "answer": 2,
+      "explanation": "Electron withdrawal through sigma bonds can stabilize the conjugate base; distance and medium matter."
+    },
+    {
+      "question": "For HA + B ⇌ A− + HB+, pKa(HA)=5 and pKa(HB+)=9 in the same medium. K is:",
+      "options": [
+        "10000",
+        "0.0001",
+        "4",
+        "14"
+      ],
+      "answer": 0,
+      "explanation": "K = 10^[pKa(HB+) − pKa(HA)] = 10^(9−5) = 10^4 for the forward equation."
+    },
+    {
+      "question": "Staggered and eclipsed ethane are:",
+      "options": [
+        "Different molecular formulas",
+        "Constitutional isomers",
+        "An E/Z alkene pair",
+        "Conformers related by single-bond rotation"
+      ],
+      "answer": 3,
+      "explanation": "Rotation changes torsion while preserving connectivity and the same ethane molecule."
+    }
+  ]
+};

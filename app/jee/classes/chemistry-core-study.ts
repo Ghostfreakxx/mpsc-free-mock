@@ -1,5 +1,6 @@
 import type { StudyLesson } from "./course";
 import { kineticsCoordinationAdditions } from "./kinetics-coordination-additions.ts";
+import { organicPrinciplesAdditions } from "./organic-principles-additions.ts";
 
 const syllabus = { title: "NTA: JEE Main 2026 Chemistry syllabus", url: "https://jeemain.nta.nic.in/document/syllabus-2026/" };
 
@@ -91,7 +92,7 @@ export const chemistryCoreLessons: StudyLesson[] = [
     title: "Organic principles: structures, electron flow and reaction types",
     summary: "Build a foundation for organic reactions through functional groups, bond fission, intermediate stability and electron movement.",
     prerequisites: "Chemical bonding, hybridization, electronegativity, acids and bases.",
-    remaining: "Written companion to the five-chapter Marin recording for Unit 14, not complete unit coverage. Further multifunctional IUPAC naming, stereochemical drawings, solvent-dependent acidity comparisons and mechanism practice across functional groups remain. Examples are original practice, not official past-paper questions.",
+    remaining: "Written companion to the thirteen-chapter Marin recording for Unit 14, including multifunctional naming, unsaturation, E/Z and Fischer drawings, charge bookkeeping, acidity, proton-transfer equilibria and conformations. Full CIP tie-breaking, multiple-centre stereochemistry, additional solvent datasets and mechanism practice remain. Original practice, not official past-paper questions or complete unit coverage.",
     sections: [
       { title: "Start with carbon's bonds and the functional group", paragraphs: ["Carbon commonly forms four bonds in neutral organic structures. An sp3 carbon has approximately tetrahedral geometry, an sp2 carbon is approximately trigonal planar, and an sp carbon is approximately linear. A double bond contains one sigma and one pi bond; a triple bond contains one sigma and two pi bonds.", "A functional group identifies a characteristic reactive part: alcohols contain an OH group attached to a saturated carbon, aldehydes contain a terminal CHO group, and carboxylic acids contain COOH. Compounds can have several functional groups. Members of a homologous series share a functional-group pattern and successive members commonly differ by CH2, not necessarily by the same physical properties."], formula: "Double bond: 1 sigma + 1 pi; triple bond: 1 sigma + 2 pi" },
       { title: "A name should locate the important features", paragraphs: ["Choose the parent structure using the applicable functional-group and multiple-bond naming rules, not simply the visually longest line on the page. Identify the principal functional group, number the parent to give the required priority features appropriate locants, then locate substituents. Practice with unambiguous condensed structures before attempting a complex branched drawing.", "CH3CH2OH is ethanol and CH3CH(OH)CH3 is propan-2-ol. CH3CH2CHO is propanal: the aldehyde carbon belongs to the three-carbon parent chain. CH3COCH3 is propan-2-one. These examples distinguish the position and type of oxygen-containing group; sharing carbon and oxygen atoms does not make molecules identical. For CH3CH(OH)CH(CH3)CH3, the four-carbon parent contains the OH-bearing carbon. Numbering from the OH-nearer end gives 3-methylbutan-2-ol: the alcohol suffix locant takes priority over a smaller methyl locant."], formula: "CH3CH(OH)CH3: propan-2-ol" },
@@ -148,3 +149,18 @@ for (const lesson of chemistryCoreLessons) {
     { question: "Two binding steps M + L ⇌ ML and ML + L ⇌ ML2 have dimensionless K1 = 10^4 and K2 = 10^3. Find beta2 and interpret it.", steps: ["Add the two equilibria and cancel ML.", "Multiply the constants: beta2 = K1 K2 = 10^7.", "This is an overall formation equilibrium constant, not a ligand-exchange rate constant."], answer: "beta2 = 10^7 for M + 2L ⇌ ML2." },
   );
 }
+
+const organic = chemistryCoreLessons.find(lesson => lesson.id === "organic-principles")!;
+organic.sections.push(...organicPrinciplesAdditions.chapters.map(chapter => ({ title: chapter.title, paragraphs: [chapter.script], formula: chapter.formula })));
+organic.quiz.push(...organicPrinciplesAdditions.quiz);
+organic.sources.push(
+  { title: "IUPAC: E and Z", url: "https://goldbook.iupac.org/terms/view/E01882" },
+  { title: "OpenStax: enantiomers and tetrahedral carbon", url: "https://openstax.org/books/organic-chemistry/pages/5-1-enantiomers-and-the-tetrahedral-carbon" },
+  { title: "OpenStax: substituent effects on acidity", url: "https://openstax.org/books/organic-chemistry/pages/20-4-substituent-effects-on-acidity" },
+);
+organic.examples.push(
+  { question: "Name HOCH2CH2COOH and CH3CH(OH)COOH, stating the principal group.", steps: ["The carboxylic acid supplies the suffix and its carbon is carbon 1.", "Both parents have three carbons; OH is a hydroxy prefix.", "The hydroxy positions are 3 and 2 respectively."], answer: "3-Hydroxypropanoic acid and 2-hydroxypropanoic acid." },
+  { question: "Find DBE for C4H8O and C3H5Cl under the ordinary closed-shell valence model. Does either index determine a unique structure?", steps: ["Use (2C + 2 + N − H − X)/2; oxygen does not enter this expression.", "C4H8O: (8 + 2 − 8)/2 = 1. C3H5Cl: (6 + 2 − 5 − 1)/2 = 1.", "One unit can represent a ring or double bond; more structural evidence is needed."], answer: "Both have DBE 1; neither has a uniquely determined structure." },
+  { question: "An alkene bears Br/H on one end and Cl/CH3 on the other. Assign E/Z when Br and Cl are on the same side, then opposite sides.", steps: ["Br outranks H by directly attached atomic number.", "Cl outranks the directly attached carbon of CH3.", "Compare those two higher-priority groups: together gives Z; opposite gives E."], answer: "Same side: Z; opposite sides: E." },
+  { question: "For HA + B ⇌ A− + HB+, use pKa(HA)=5 and pKa(HB+)=9 in the same solvent and at the same temperature. Find forward and reverse K.", steps: ["Kforward = Ka(HA)/Ka(HB+) = 10^(9 − 5).", "The forward constant is 10000; reversing gives its reciprocal.", "These constants alone do not determine pH or conversion without composition balances."], answer: "Kforward = 10000; Kreverse = 0.0001." },
+);

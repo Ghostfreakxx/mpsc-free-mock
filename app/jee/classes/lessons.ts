@@ -1113,8 +1113,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-principles", subject: "Chemistry", unit: 14, number: "C01", title: organicPrinciples.title,
-    description: "Five narrated chapters on structures, naming, isomerism, electron arrows, stabilization and acidity.",
-    scope: "Recorded JEE Main 2026 Chemistry Unit 14 foundation with original practice, not official PYQs or complete unit coverage. Further multifunctional naming, stereochemical drawings and reaction mechanisms remain in development.",
+    description: "Thirteen narrated chapters on naming, unsaturation, stereochemistry, electron arrows, formal charge, acidity, proton transfer and conformations.",
+    scope: "Recorded Unit 14 foundation and worked applications with original practice. Full CIP tie-breaking, multiple-centre stereochemistry, additional solvent datasets and mechanisms remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-principles.lecture.v1",
     audio: "/lectures/organic-principles/narration-marin.mp3",
     subtitles: "/lectures/organic-principles/english.vtt", timings: organicPrinciplesTimings,
