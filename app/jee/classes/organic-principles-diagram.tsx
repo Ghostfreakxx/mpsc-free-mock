@@ -1,7 +1,9 @@
 import styles from "./lecture.module.css";
+import OrganicExtensionDiagram from "./organic-extension-diagram";
 
 const titles = ["Number the alcohol parent", "Test both alkene carbons", "Two electron-pair arrows", "Adjacent orbitals allow resonance", "A two-unit pKa difference"];
 export default function OrganicPrinciplesDiagram({ chapter }: { chapter: number }) {
+  if(chapter>=5)return <OrganicExtensionDiagram chapter={chapter}/>;
   return <svg className={styles.diagram} viewBox="0 0 460 300" role="img" aria-label={titles[chapter]}>
     <title>{titles[chapter]}</title>
     <rect width="460" height="300" rx="12" fill="#f5faf7" />

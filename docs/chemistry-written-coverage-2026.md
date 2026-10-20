@@ -5,7 +5,7 @@ Baseline: [official NTA syllabus](https://jeemain.nta.nic.in/document/syllabus-2
 This is a coverage inventory, not a claim that the course is complete.
 There are 22 authored written lessons spanning all 20 Chemistry units.
 This means each unit has at least one foundation, not exhaustive topic coverage.
-Organic Principles has a five-chapter Marin recording. Coordination Compounds,
+Organic Principles has a thirteen-chapter Marin recording. Coordination Compounds,
 Chemical Kinetics, Chemical Thermodynamics and Solutions each have ten chapters.
 Equilibrium has eight
 chapters and Redox and Electrochemistry has nine. Atomic Structure and Chemical
@@ -153,8 +153,11 @@ labelled fac/mer positions, chelation and optical-isomer concepts, stepwise/over
 formation constants and analytical/biological applications. Detailed optical-isomer
 models and quantitative extraction/analysis sequences remain outstanding.
 
-Organic Principles now includes seven worked examples and twelve original MCQs,
+Organic Principles now includes sixteen written sections, eleven worked examples and twenty original MCQs,
 with branched alcohol naming, pKa comparisons, substitution electron bookkeeping
-and direct allylic resonance. Further multifunctional naming, stereochemical
-drawings and solvent-dependent acidity practice remain. A five-chapter recorded
-class now accompanies this written lesson at `/jee/classes/organic-principles`.
+and direct allylic resonance. A thirteen-chapter recorded class accompanies these
+notes at `/jee/classes/organic-principles`, adding hydroxy-acid naming, DBE,
+E/Z drawings, one-centre Fischer mirror images, formal charge, controlled acidity
+comparisons, proton-transfer constants and ethane Newman projections. Full CIP
+tie-breaking, multiple-centre stereochemistry, additional solvent datasets and
+mechanism practice remain. The material does not claim exhaustive unit coverage.
