@@ -1,0 +1,340 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.380
+Hey, welcome back.
+
+00:00:02.000 --> 00:00:05.980
+Our last class used an ideal fluid with negligible viscous losses.
+
+00:00:06.720 --> 00:00:11.120
+Now let's add something real fluids do: resist relative motion between
+
+00:00:11.120 --> 00:00:11.960
+neighbouring layers.
+
+00:00:12.620 --> 00:00:13.780
+That's viscosity.
+
+00:00:14.800 --> 00:00:16.540
+Picture liquid between two parallel plates.
+
+00:00:17.100 --> 00:00:20.500
+The bottom plate stays still and the top slides sideways.
+
+00:00:21.300 --> 00:00:26.340
+For a Newtonian fluid in a simple steady flow, shear stress is viscosity times
+
+00:00:26.340 --> 00:00:27.340
+the velocity gradient.
+
+00:00:28.080 --> 00:00:32.580
+A gradient tells us how rapidly velocity changes as we move across the layers.
+
+00:00:33.400 --> 00:00:37.700
+If the velocity profile is linear, divide the speed difference by the plate
+
+00:00:37.700 --> 00:00:38.180
+separation.
+
+00:00:39.280 --> 00:00:43.520
+Multiply that gradient by viscosity and area to find the shear force magnitude.
+
+00:00:44.240 --> 00:00:49.460
+Try viscosity zero point five pascal seconds, area zero point zero two square
+
+00:00:49.460 --> 00:00:54.473
+metres, speed difference one metre per second, and separation zero point zero
+
+00:00:54.473 --> 00:00:55.000
+one metres.
+
+00:00:55.540 --> 00:00:57.460
+The gradient is one hundred per second.
+
+00:00:57.980 --> 00:01:03.160
+Multiply zero point five by zero point zero two by one hundred: one newton.
+
+00:01:03.880 --> 00:01:08.340
+The liquid resists the top plate's motion, so an external force must keep it
+
+00:01:08.340 --> 00:01:08.940
+moving steadily.
+
+00:01:09.940 --> 00:01:11.940
+Viscosity is measured in pascal seconds.
+
+00:01:12.540 --> 00:01:15.560
+It is different from density, which measures mass per volume.
+
+00:01:16.020 --> 00:01:20.900
+And this linear stress relationship is a model for Newtonian fluids; it isn't a
+
+00:01:20.900 --> 00:01:22.300
+universal rule for every mixture.
+
+00:01:22.608 --> 00:01:25.448
+Drop a small dense sphere into a viscous liquid.
+
+00:01:26.188 --> 00:01:27.948
+At first it accelerates downward.
+
+00:01:28.748 --> 00:01:32.948
+As its speed grows, the upward drag grows too, until the forces balance.
+
+00:01:33.688 --> 00:01:35.788
+Then it keeps moving at terminal speed.
+
+00:01:36.828 --> 00:01:40.588
+Constant speed does not mean zero forces; it means zero net force.
+
+00:01:41.568 --> 00:01:45.588
+Draw three forces: weight downward, and buoyancy and drag upward.
+
+00:01:46.368 --> 00:01:50.528
+For a sphere moving slowly relative to the fluid at very low Reynolds number,
+
+00:01:50.528 --> 00:01:56.248
+Stokes' law gives drag magnitude six pi times viscosity times radius times
+
+00:01:56.248 --> 00:01:56.988
+relative speed.
+
+00:01:57.948 --> 00:02:01.508
+We also assume the sphere is far enough from container walls that their effect
+
+00:02:01.508 --> 00:02:02.308
+is negligible.
+
+00:02:03.308 --> 00:02:06.528
+At terminal descent, weight equals buoyancy plus drag.
+
+00:02:07.548 --> 00:02:11.728
+Substitute the sphere volume, four thirds pi r cubed, into weight and buoyancy.
+
+00:02:12.688 --> 00:02:17.688
+After cancelling common factors, terminal speed becomes two r squared times the
+
+00:02:17.688 --> 00:02:20.788
+density difference times g, divided by nine times viscosity.
+
+00:02:21.948 --> 00:02:26.148
+For radius one millimetre, density difference four thousand five hundred,
+
+00:02:26.148 --> 00:02:30.808
+viscosity one pascal second, and g ten, the result is zero point zero one
+
+00:02:30.808 --> 00:02:31.928
+metres per second.
+
+00:02:32.688 --> 00:02:33.988
+Watch the square on radius.
+
+00:02:34.688 --> 00:02:38.768
+Doubling radius gives four times the terminal speed only if the Stokes regime
+
+00:02:38.768 --> 00:02:39.548
+still applies.
+
+00:02:39.868 --> 00:02:44.148
+A sphere less dense than the liquid tends to rise; use the appropriate
+
+00:02:44.148 --> 00:02:47.608
+directions rather than treating a negative result as a downward speed.
+
+00:02:47.928 --> 00:02:50.128
+Now look at a liquid's surface.
+
+00:02:50.848 --> 00:02:52.748
+Creating extra surface costs energy.
+
+00:02:53.688 --> 00:02:57.928
+Surface tension describes that cost per unit area, and also the tangential
+
+00:02:57.928 --> 00:02:59.948
+force per unit length along a boundary.
+
+00:03:00.688 --> 00:03:05.328
+We use gamma, with units newtons per metre, equivalent to joules per square
+
+00:03:05.328 --> 00:03:05.548
+metre.
+
+00:03:06.328 --> 00:03:10.968
+This is different from viscosity: surface tension concerns an interface, while
+
+00:03:10.968 --> 00:03:13.668
+viscosity concerns relative motion within the fluid.
+
+00:03:14.828 --> 00:03:18.128
+Imagine a thin soap film on a frame with a movable straight wire.
+
+00:03:18.828 --> 00:03:21.308
+The film pulls the wire toward a smaller area.
+
+00:03:22.108 --> 00:03:26.148
+Here's the easy detail to miss: the film has two liquid air surfaces.
+
+00:03:27.128 --> 00:03:31.568
+Each contributes gamma times wire length, so the total force is two gamma l.
+
+00:03:32.328 --> 00:03:36.788
+With gamma zero point zero three newtons per metre and wire length zero point
+
+00:03:36.788 --> 00:03:40.668
+one zero metres, the force is zero point zero zero six newtons.
+
+00:03:41.128 --> 00:03:45.688
+If we pull the wire outward slowly by one centimetre, work is force times
+
+00:03:45.688 --> 00:03:47.688
+distance: sixty microjoules.
+
+00:03:48.488 --> 00:03:52.168
+The total surface area increases by twice the wire length times the
+
+00:03:52.168 --> 00:03:52.488
+displacement.
+
+00:03:53.668 --> 00:03:56.648
+Multiply that area change by gamma, and you get the same energy.
+
+00:03:57.708 --> 00:04:01.688
+Assume gamma stays constant and neglect gravity and other energy changes in
+
+00:04:01.688 --> 00:04:02.108
+this model.
+
+00:04:02.544 --> 00:04:05.924
+Why is pressure inside a small droplet higher than outside?
+
+00:04:07.044 --> 00:04:10.924
+Surface tension tends to reduce its area, and an outward pressure difference
+
+00:04:10.924 --> 00:04:12.024
+balances that effect.
+
+00:04:12.924 --> 00:04:17.764
+For a spherical liquid droplet, the pressure excess is two gamma divided by radius.
+
+00:04:18.604 --> 00:04:22.884
+For a thin soap bubble, there are two interfaces, and the pressure excess is
+
+00:04:22.884 --> 00:04:24.564
+four gamma divided by radius.
+
+00:04:25.304 --> 00:04:29.284
+The film is thin enough that the inner and outer radii can be treated as equal,
+
+00:04:29.604 --> 00:04:31.924
+and gamma is the same on both surfaces.
+
+00:04:32.884 --> 00:04:36.964
+A gas bubble inside a liquid has one interface, so don't automatically give it
+
+00:04:36.964 --> 00:04:37.884
+the soap bubble formula.
+
+00:04:38.664 --> 00:04:43.024
+Let's compare a droplet and a thin soap bubble, each with radius one millimetre
+
+00:04:43.024 --> 00:04:46.664
+and the given surface tension zero point zero three newtons per metre.
+
+00:04:47.584 --> 00:04:52.234
+For the droplet, two times zero point zero three divided by zero point zero
+
+00:04:52.234 --> 00:04:54.184
+zero one gives sixty pascals.
+
+00:04:54.784 --> 00:04:57.464
+The soap bubble gives one hundred twenty pascals.
+
+00:04:58.084 --> 00:05:02.204
+These are excess pressures; add the outside pressure if absolute inside
+
+00:05:02.204 --> 00:05:03.084
+pressure is requested.
+
+00:05:04.144 --> 00:05:06.304
+Now halve the radius while keeping gamma fixed.
+
+00:05:06.844 --> 00:05:07.344
+What happens?
+
+00:05:08.144 --> 00:05:09.384
+Both excess pressures double.
+
+00:05:10.044 --> 00:05:14.044
+The key checklist is radius, number of interfaces, and whether the requested
+
+00:05:14.044 --> 00:05:15.944
+pressure is absolute or excess.
+
+00:05:16.296 --> 00:05:19.476
+Finally, why can water rise in a narrow glass tube?
+
+00:05:19.976 --> 00:05:23.136
+At the contact line, surface tension has a vertical component.
+
+00:05:23.836 --> 00:05:27.416
+For a wetting liquid, that component supports the raised liquid column.
+
+00:05:28.056 --> 00:05:32.616
+The tube's contact line has circumference two pi r, so the upward force is two
+
+00:05:32.616 --> 00:05:35.576
+pi r times gamma times cosine of the contact angle.
+
+00:05:36.076 --> 00:05:40.656
+The column's weight is density times pi r squared times height times g.
+
+00:05:41.436 --> 00:05:46.116
+Balance them, and the height is two gamma cosine theta divided by density times
+
+00:05:46.116 --> 00:05:47.296
+g times radius.
+
+00:05:48.036 --> 00:05:49.956
+The contact angle is measured through the liquid.
+
+00:05:50.536 --> 00:05:54.336
+In this introductory model, neglect the meniscus volume and use a narrow
+
+00:05:54.336 --> 00:05:55.376
+uniform tube.
+
+00:05:55.936 --> 00:06:01.336
+Let gamma be zero point zero seven five, density one thousand, g ten, inner
+
+00:06:01.336 --> 00:06:04.636
+radius zero point five millimetres, and contact angle zero.
+
+00:06:05.396 --> 00:06:08.176
+Convert radius to zero point zero zero zero five metres.
+
+00:06:08.716 --> 00:06:12.516
+The numerator is zero point one five; the denominator is five.
+
+00:06:12.956 --> 00:06:17.416
+Height is zero point zero three metres, or three centimetres.
+
+00:06:17.416 --> 00:06:19.076
+Halving tube radius doubles the rise.
+
+00:06:19.636 --> 00:06:23.936
+If the contact angle exceeds ninety degrees, cosine is negative and the model
+
+00:06:23.936 --> 00:06:24.836
+predicts a depression.
+
+00:06:25.536 --> 00:06:29.676
+Before finishing, separate viscosity from surface tension, count interfaces,
+
+00:06:30.456 --> 00:06:32.976
+convert radius to metres, and state the force balance.
+
+00:06:33.556 --> 00:06:38.356
+These are foundations; detailed flow resistance and experimental methods need
+
+00:06:38.356 --> 00:06:39.156
+further practice.

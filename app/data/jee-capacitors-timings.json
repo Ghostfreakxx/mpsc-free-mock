@@ -1,0 +1,897 @@
+{
+  "duration": 477.4320000000136,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 92.44800000000261
+    },
+    {
+      "start": 92.44800000000261,
+      "end": 183.76800000000517
+    },
+    {
+      "start": 183.76800000000517,
+      "end": 282.216000000008
+    },
+    {
+      "start": 282.216000000008,
+      "end": 372.81600000001055
+    },
+    {
+      "start": 372.81600000001055,
+      "end": 477.4320000000136
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.6799999475479126,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.4000000953674316,
+      "end": 4.880000114440918,
+      "text": "A capacitor separates charge between conductors.",
+      "chapter": 0
+    },
+    {
+      "start": 5.619999885559082,
+      "end": 10.9399995803833,
+      "text": "In our simple two plate model, one plate carries plus Q and the other minus Q.",
+      "chapter": 0
+    },
+    {
+      "start": 11.720000267028809,
+      "end": 15.65999984741211,
+      "text": "The pair can have zero net charge while still storing electrical energy.",
+      "chapter": 0
+    },
+    {
+      "start": 16.579999923706055,
+      "end": 20.84000015258789,
+      "text": "When we say the charge on the capacitor is Q, we mean the magnitude on one",
+      "chapter": 0
+    },
+    {
+      "start": 20.84000015258789,
+      "end": 22.65999984741211,
+      "text": "plate, not twice that magnitude.",
+      "chapter": 0
+    },
+    {
+      "start": 23.559999465942383,
+      "end": 27.600000381469727,
+      "text": "Capacitance is charge magnitude divided by the potential difference magnitude",
+      "chapter": 0
+    },
+    {
+      "start": 27.600000381469727,
+      "end": 28.860000610351562,
+      "text": "between the conductors.",
+      "chapter": 0
+    },
+    {
+      "start": 29.760000228881836,
+      "end": 31.559999465942383,
+      "text": "One farad means one coulomb per volt.",
+      "chapter": 0
+    },
+    {
+      "start": 32.2599983215332,
+      "end": 35.52000045776367,
+      "text": "It tells us how much separated charge this arrangement holds for a given",
+      "chapter": 0
+    },
+    {
+      "start": 35.52000045776367,
+      "end": 35.880001068115234,
+      "text": "voltage.",
+      "chapter": 0
+    },
+    {
+      "start": 36.81999969482422,
+      "end": 40.84000015258789,
+      "text": "For an ideal linear capacitor with fixed geometry and material, capacitance",
+      "chapter": 0
+    },
+    {
+      "start": 40.84000015258789,
+      "end": 43.7400016784668,
+      "text": "doesn't increase just because we apply a higher voltage.",
+      "chapter": 0
+    },
+    {
+      "start": 44.65999984741211,
+      "end": 46.099998474121094,
+      "text": "Charge increases in the same ratio.",
+      "chapter": 0
+    },
+    {
+      "start": 46.900001525878906,
+      "end": 51.220001220703125,
+      "text": "If capacitance is three microfarads and voltage is four volts, each plate",
+      "chapter": 0
+    },
+    {
+      "start": 51.220001220703125,
+      "end": 53.400001525878906,
+      "text": "carries twelve microcoulombs in magnitude.",
+      "chapter": 0
+    },
+    {
+      "start": 54.119998931884766,
+      "end": 58.15999984741211,
+      "text": "Double voltage to eight volts and charge becomes twenty four microcoulombs,",
+      "chapter": 0
+    },
+    {
+      "start": 58.880001068115234,
+      "end": 60.779998779296875,
+      "text": "while capacitance remains three microfarads.",
+      "chapter": 0
+    },
+    {
+      "start": 61.68000030517578,
+      "end": 65.81999969482422,
+      "text": "A microfarad is one millionth of a farad, whereas a picofarad is one",
+      "chapter": 0
+    },
+    {
+      "start": 65.81999969482422,
+      "end": 66.36000061035156,
+      "text": "trillionth.",
+      "chapter": 0
+    },
+    {
+      "start": 67,
+      "end": 68.05999755859375,
+      "text": "Keep those prefixes straight.",
+      "chapter": 0
+    },
+    {
+      "start": 68.9800033569336,
+      "end": 73.36000061035156,
+      "text": "In electrostatic equilibrium the conducting plates are each equipotential, and",
+      "chapter": 0
+    },
+    {
+      "start": 73.36000061035156,
+      "end": 75.5,
+      "text": "field within their conducting material is zero.",
+      "chapter": 0
+    },
+    {
+      "start": 76.26000213623047,
+      "end": 78.4800033569336,
+      "text": "The insulating gap can still have a field.",
+      "chapter": 0
+    },
+    {
+      "start": 79.31999969482422,
+      "end": 83.53153551541843,
+      "text": "Real capacitors have leakage and voltage limits, so this ideal linear model",
+      "chapter": 0
+    },
+    {
+      "start": 83.53153551541843,
+      "end": 83.69999694824219,
+      "text": "has",
+      "chapter": 0
+    },
+    {
+      "start": 83.69999694824219,
+      "end": 84.63999938964844,
+      "text": "a range of validity.",
+      "chapter": 0
+    },
+    {
+      "start": 85.4800033569336,
+      "end": 90.29743654300005,
+      "text": "For JEE, first identify the two conductors, the voltage between them and what",
+      "chapter": 0
+    },
+    {
+      "start": 90.29743654300005,
+      "end": 90.36000061035156,
+      "text": "Q",
+      "chapter": 0
+    },
+    {
+      "start": 90.36000061035156,
+      "end": 92.23999786376953,
+      "text": "represents before applying the ratio.",
+      "chapter": 0
+    },
+    {
+      "start": 92.44800000000261,
+      "end": 96.36800007629655,
+      "text": "Let's derive the parallel plate result rather than treating it as magic.",
+      "chapter": 1
+    },
+    {
+      "start": 97.32800011444353,
+      "end": 102.44800000000261,
+      "text": "Take large opposite plates with charge magnitudes Q, area A and separation d,",
+      "chapter": 1
+    },
+    {
+      "start": 102.7279997329738,
+      "end": 103.98799996185564,
+      "text": "with vacuum in the gap.",
+      "chapter": 1
+    },
+    {
+      "start": 104.96800045776628,
+      "end": 109.54800038147233,
+      "text": "Well away from the edges, the combined field is approximately Q divided by",
+      "chapter": 1
+    },
+    {
+      "start": 109.54800038147233,
+      "end": 110.86800007629655,
+      "text": "epsilon zero times area.",
+      "chapter": 1
+    },
+    {
+      "start": 111.64800076294206,
+      "end": 114.44800000000261,
+      "text": "Potential difference magnitude is field times separation.",
+      "chapter": 1
+    },
+    {
+      "start": 115.30800061035417,
+      "end": 119.568000839236,
+      "text": "Divide Q by that potential difference, and capacitance becomes epsilon zero",
+      "chapter": 1
+    },
+    {
+      "start": 119.568000839236,
+      "end": 121.60799984741472,
+      "text": "times area divided by separation.",
+      "chapter": 1
+    },
+    {
+      "start": 122.64800076294206,
+      "end": 125.50800137329362,
+      "text": "Charge cancels, because the geometry sets the ratio.",
+      "chapter": 1
+    },
+    {
+      "start": 126.16800122070573,
+      "end": 129.74799923706314,
+      "text": "Bigger plates spread a given charge over more area and reduce the voltage",
+      "chapter": 1
+    },
+    {
+      "start": 129.74799923706314,
+      "end": 130.72799877929947,
+      "text": "needed to hold it.",
+      "chapter": 1
+    },
+    {
+      "start": 131.46800045776627,
+      "end": 135.12800030517838,
+      "text": "Bringing plates closer also lowers that voltage, increasing capacitance.",
+      "chapter": 1
+    },
+    {
+      "start": 136.30800061035416,
+      "end": 139.88799862671158,
+      "text": "Use area zero point zero two square meters and separation one millimeter.",
+      "chapter": 1
+    },
+    {
+      "start": 140.3679981689479,
+      "end": 143.78800015259048,
+      "text": "With epsilon zero equal to eight point eight five times ten to the minus",
+      "chapter": 1
+    },
+    {
+      "start": 143.78800015259048,
+      "end": 147.28800015259048,
+      "text": "twelve, capacitance is one hundred and seventy seven picofarads.",
+      "chapter": 1
+    },
+    {
+      "start": 148.14800076294205,
+      "end": 151.52800183105728,
+      "text": "At twelve volts the gap field is twelve thousand newtons per coulomb.",
+      "chapter": 1
+    },
+    {
+      "start": 152.28800015259048,
+      "end": 156.33108036021957,
+      "text": "This model ignores edge fringing and assumes the gap is small relative to",
+      "chapter": 1
+    },
+    {
+      "start": 156.33108036021957,
+      "end": 156.60800366211197,
+      "text": "plate",
+      "chapter": 1
+    },
+    {
+      "start": 156.60800366211197,
+      "end": 157.08799938965103,
+      "text": "dimensions.",
+      "chapter": 1
+    },
+    {
+      "start": 157.60800366211197,
+      "end": 162.08799938965103,
+      "text": "If a uniform linear dielectric completely fills the gap, multiply the vacuum",
+      "chapter": 1
+    },
+    {
+      "start": 162.08799938965103,
+      "end": 164.7679996948268,
+      "text": "capacitance by its relative permittivity, kappa.",
+      "chapter": 1
+    },
+    {
+      "start": 165.3679981689479,
+      "end": 169.22799877929947,
+      "text": "Partial filling requires a different geometry calculation; don't apply that",
+      "chapter": 1
+    },
+    {
+      "start": 169.22799877929947,
+      "end": 171.40799908447525,
+      "text": "multiplier to the entire capacitor automatically.",
+      "chapter": 1
+    },
+    {
+      "start": 172.4280033569362,
+      "end": 176.20800213623306,
+      "text": "Also, changing separation has different consequences depending on whether a",
+      "chapter": 1
+    },
+    {
+      "start": 176.20800213623306,
+      "end": 179.4280033569362,
+      "text": "battery maintains voltage or whether the disconnected plates retain their",
+      "chapter": 1
+    },
+    {
+      "start": 179.4280033569362,
+      "end": 179.64799694824478,
+      "text": "charge.",
+      "chapter": 1
+    },
+    {
+      "start": 180.56800274658463,
+      "end": 183.52800183105728,
+      "text": "We'll use that fixed quantity reasoning throughout the rest of this class.",
+      "chapter": 1
+    },
+    {
+      "start": 183.76800000000517,
+      "end": 187.663897626882,
+      "text": "In a network, identify connected nodes rather than relying on how close",
+      "chapter": 2
+    },
+    {
+      "start": 187.663897626882,
+      "end": 188.04800020981352,
+      "text": "symbols",
+      "chapter": 2
+    },
+    {
+      "start": 188.04800020981352,
+      "end": 189.1480001144461,
+      "text": "look on the page.",
+      "chapter": 2
+    },
+    {
+      "start": 190.028000228887,
+      "end": 193.34799992371123,
+      "text": "Capacitors are in parallel when both connect across the same two nodes.",
+      "chapter": 2
+    },
+    {
+      "start": 194.028000228887,
+      "end": 198.34799992371123,
+      "text": "They share voltage, so total separated charge is the sum of each capacitance",
+      "chapter": 2
+    },
+    {
+      "start": 198.34799992371123,
+      "end": 199.56800019074004,
+      "text": "times that voltage.",
+      "chapter": 2
+    },
+    {
+      "start": 200.42799984741728,
+      "end": 202.3680003814749,
+      "text": "Equivalent capacitance is the sum.",
+      "chapter": 2
+    },
+    {
+      "start": 203.10800015259306,
+      "end": 207.46800076294463,
+      "text": "Two and three microfarads in parallel across ten volts give five microfarads",
+      "chapter": 2
+    },
+    {
+      "start": 207.46800076294463,
+      "end": 211.528000228887,
+      "text": "overall, with charges twenty and thirty microcoulombs.",
+      "chapter": 2
+    },
+    {
+      "start": 212.18800007629912,
+      "end": 216.34800183105986,
+      "text": "Now connect the two capacitors in a simple series chain that starts uncharged,",
+      "chapter": 2
+    },
+    {
+      "start": 216.56799923706572,
+      "end": 219.44800030518095,
+      "text": "with an isolated neutral intermediate node.",
+      "chapter": 2
+    },
+    {
+      "start": 220.5879996948294,
+      "end": 222.30800091553252,
+      "text": "The plate charge magnitudes are equal.",
+      "chapter": 2
+    },
+    {
+      "start": 223.22799908447783,
+      "end": 227.40107615427388,
+      "text": "Their voltage drops add, so the reciprocal of equivalent capacitance is the",
+      "chapter": 2
+    },
+    {
+      "start": 227.40107615427388,
+      "end": 227.56799923706572,
+      "text": "sum",
+      "chapter": 2
+    },
+    {
+      "start": 227.56799923706572,
+      "end": 229.10800015259306,
+      "text": "of the individual reciprocals.",
+      "chapter": 2
+    },
+    {
+      "start": 230.4880012207083,
+      "end": 233.80800091553252,
+      "text": "Two and three microfarads in series give one point two microfarads.",
+      "chapter": 2
+    },
+    {
+      "start": 234.76800000000517,
+      "end": 238.84800183105986,
+      "text": "Across ten volts, each capacitor carries twelve microcoulombs in magnitude.",
+      "chapter": 2
+    },
+    {
+      "start": 239.5879996948294,
+      "end": 244.1551801816552,
+      "text": "Their voltages are six volts across the two microfarad capacitor and four",
+      "chapter": 2
+    },
+    {
+      "start": 244.1551801816552,
+      "end": 244.46800076294463,
+      "text": "volts",
+      "chapter": 2
+    },
+    {
+      "start": 244.46800076294463,
+      "end": 246.26800000000517,
+      "text": "across the three microfarad capacitor.",
+      "chapter": 2
+    },
+    {
+      "start": 247.4880012207083,
+      "end": 251.1879981689505,
+      "text": "The smaller capacitance gets the larger voltage, because voltage equals the",
+      "chapter": 2
+    },
+    {
+      "start": 251.1879981689505,
+      "end": 253.0879996948294,
+      "text": "common charge divided by capacitance.",
+      "chapter": 2
+    },
+    {
+      "start": 254.52800213623564,
+      "end": 257.78799664307155,
+      "text": "Pause and check: six plus four returns the applied ten volts.",
+      "chapter": 2
+    },
+    {
+      "start": 258.9079993896536,
+      "end": 262.9079993896536,
+      "text": "Series equivalent capacitance is smaller than either component; parallel",
+      "chapter": 2
+    },
+    {
+      "start": 262.9079993896536,
+      "end": 264.34800183105983,
+      "text": "equivalent is larger than either.",
+      "chapter": 2
+    },
+    {
+      "start": 264.34800183105983,
+      "end": 269.36799847412624,
+      "text": "If an internal node already has net charge or another connection, the simple",
+      "chapter": 2
+    },
+    {
+      "start": 269.36799847412624,
+      "end": 270.98800122070827,
+      "text": "equal charge assumption may fail.",
+      "chapter": 2
+    },
+    {
+      "start": 272.2279990844778,
+      "end": 276.9280036621145,
+      "text": "For more complicated JEE networks, label nodes, simplify valid series or",
+      "chapter": 2
+    },
+    {
+      "start": 276.9280036621145,
+      "end": 280.98800122070827,
+      "text": "parallel groups, and then work backward to recover individual charges and",
+      "chapter": 2
+    },
+    {
+      "start": 280.98800122070827,
+      "end": 281.26800000000515,
+      "text": "voltages.",
+      "chapter": 2
+    },
+    {
+      "start": 282.216000000008,
+      "end": 287.5560001525959,
+      "text": "Why is stored energy one half Q V instead of Q V?",
+      "chapter": 3
+    },
+    {
+      "start": 287.5560001525959,
+      "end": 292.0160001907429,
+      "text": "While charging an initially uncharged ideal capacitor, the voltage rises from",
+      "chapter": 3
+    },
+    {
+      "start": 292.0160001907429,
+      "end": 293.5560001525959,
+      "text": "zero to its final value.",
+      "chapter": 3
+    },
+    {
+      "start": 294.37599984742013,
+      "end": 298.69599954224435,
+      "text": "Each small added charge needs work equal to the voltage at that moment times",
+      "chapter": 3
+    },
+    {
+      "start": 298.69599954224435,
+      "end": 299.53599969483224,
+      "text": "the added charge.",
+      "chapter": 3
+    },
+    {
+      "start": 300.5959991607746,
+      "end": 304.65600053406564,
+      "text": "Integrating those contributions gives Q squared divided by twice capacitance.",
+      "chapter": 3
+    },
+    {
+      "start": 305.81600038147775,
+      "end": 311.69599954224435,
+      "text": "Substitute Q equals C V to get one half C V squared, or one half Q V.",
+      "chapter": 3
+    },
+    {
+      "start": 311.69599954224435,
+      "end": 314.9560016784748,
+      "text": "These are equivalent expressions, not three different kinds of energy.",
+      "chapter": 3
+    },
+    {
+      "start": 315.8960003051838,
+      "end": 320.4959987793049,
+      "text": "For two microfarads at ten volts, stored energy is one hundred microjoules and",
+      "chapter": 3
+    },
+    {
+      "start": 320.4959987793049,
+      "end": 321.8960003051838,
+      "text": "charge is twenty microcoulombs.",
+      "chapter": 3
+    },
+    {
+      "start": 322.61600152588693,
+      "end": 326.7960018310627,
+      "text": "If this capacitor stays disconnected with no leakage and its plate separation",
+      "chapter": 3
+    },
+    {
+      "start": 326.7960018310627,
+      "end": 328.655998626717,
+      "text": "doubles, capacitance halves.",
+      "chapter": 3
+    },
+    {
+      "start": 329.3159984741291,
+      "end": 332.35599938965646,
+      "text": "Charge stays fixed, so energy doubles and voltage doubles.",
+      "chapter": 3
+    },
+    {
+      "start": 332.9759983215412,
+      "end": 336.13599816895334,
+      "text": "An external agent must do work to pull the attracting plates apart.",
+      "chapter": 3
+    },
+    {
+      "start": 336.9959987793049,
+      "end": 341.0760006103596,
+      "text": "If instead an ideal battery holds the voltage at ten volts while separation",
+      "chapter": 3
+    },
+    {
+      "start": 341.0760006103596,
+      "end": 345.5760006103596,
+      "text": "doubles, capacitance halves, plate charge halves and stored energy halves.",
+      "chapter": 3
+    },
+    {
+      "start": 346.155998626717,
+      "end": 349.9444588447064,
+      "text": "In that case charge flows back toward the source, and the source belongs in",
+      "chapter": 3
+    },
+    {
+      "start": 349.9444588447064,
+      "end": 350.095997253426,
+      "text": "the",
+      "chapter": 3
+    },
+    {
+      "start": 350.095997253426,
+      "end": 350.73599664307443,
+      "text": "energy account.",
+      "chapter": 3
+    },
+    {
+      "start": 351.45599786377755,
+      "end": 354.63599816895334,
+      "text": "Don't infer mechanical work from the capacitor energy change alone.",
+      "chapter": 3
+    },
+    {
+      "start": 355.43600122071115,
+      "end": 360.2960018310627,
+      "text": "In vacuum, the field energy per unit volume is one half epsilon zero times",
+      "chapter": 3
+    },
+    {
+      "start": 360.2960018310627,
+      "end": 360.93600122071115,
+      "text": "field squared.",
+      "chapter": 3
+    },
+    {
+      "start": 361.2759975586018,
+      "end": 365.7744622896715,
+      "text": "For the ideal parallel plate geometry, multiplying by the gap volume",
+      "chapter": 3
+    },
+    {
+      "start": 365.7744622896715,
+      "end": 366.43600122071115,
+      "text": "reproduces",
+      "chapter": 3
+    },
+    {
+      "start": 366.43600122071115,
+      "end": 367.51600305176584,
+      "text": "the capacitor energy.",
+      "chapter": 3
+    },
+    {
+      "start": 368.3159984741291,
+      "end": 371.6960033569416,
+      "text": "Your formula choice should follow the constraint, not whichever expression",
+      "chapter": 3
+    },
+    {
+      "start": 371.6960033569416,
+      "end": 372.51600305176584,
+      "text": "looks shortest.",
+      "chapter": 3
+    },
+    {
+      "start": 372.81600000001055,
+      "end": 377.0559997711287,
+      "text": "A dielectric is an insulating material whose charges respond to the electric",
+      "chapter": 4
+    },
+    {
+      "start": 377.0559997711287,
+      "end": 378.31600000001055,
+      "text": "field through polarization.",
+      "chapter": 4
+    },
+    {
+      "start": 379.31600000001055,
+      "end": 381.4560003433333,
+      "text": "Opposite bound charges appear near its faces.",
+      "chapter": 4
+    },
+    {
+      "start": 382.25599958039385,
+      "end": 385.59599973298174,
+      "text": "They are not the same as freely conducting charges moving across the gap.",
+      "chapter": 4
+    },
+    {
+      "start": 386.31600000001055,
+      "end": 390.69599916077715,
+      "text": "With fixed free plate charge, polarization reduces the gap field and voltage,",
+      "chapter": 4
+    },
+    {
+      "start": 391.2159996185408,
+      "end": 393.6159992370711,
+      "text": "so the ratio Q over V increases.",
+      "chapter": 4
+    },
+    {
+      "start": 394.2759990844832,
+      "end": 398.59600068665605,
+      "text": "Let's completely fill a capacitor's gap with a uniform linear dielectric of",
+      "chapter": 4
+    },
+    {
+      "start": 398.59600068665605,
+      "end": 401.2159996185408,
+      "text": "kappa three, keeping plate geometry unchanged.",
+      "chapter": 4
+    },
+    {
+      "start": 401.9960003051863,
+      "end": 406.7775390484255,
+      "text": "Start with two microfarads at ten volts: charge twenty microcoulombs and",
+      "chapter": 4
+    },
+    {
+      "start": 406.7775390484255,
+      "end": 407.1760006103621,
+      "text": "energy",
+      "chapter": 4
+    },
+    {
+      "start": 407.1760006103621,
+      "end": 408.37600137330156,
+      "text": "one hundred microjoules.",
+      "chapter": 4
+    },
+    {
+      "start": 409.39600183106523,
+      "end": 411.57599832154375,
+      "text": "Disconnect the battery first, assuming no leakage.",
+      "chapter": 4
+    },
+    {
+      "start": 412.57599832154375,
+      "end": 416.57599832154375,
+      "text": "Capacitance becomes six microfarads, charge remains twenty microcoulombs,",
+      "chapter": 4
+    },
+    {
+      "start": 417.41599847413164,
+      "end": 421.2959995422469,
+      "text": "voltage becomes about three point three three volts, and energy becomes about",
+      "chapter": 4
+    },
+    {
+      "start": 421.2959995422469,
+      "end": 422.87600137330156,
+      "text": "thirty three point three microjoules.",
+      "chapter": 4
+    },
+    {
+      "start": 423.6960010681258,
+      "end": 428.2759990844832,
+      "text": "The energy reduction is available for mechanical work and any losses; it has",
+      "chapter": 4
+    },
+    {
+      "start": 428.2759990844832,
+      "end": 428.81600000001055,
+      "text": "not vanished.",
+      "chapter": 4
+    },
+    {
+      "start": 429.57599832154375,
+      "end": 433.4960003051863,
+      "text": "Now repeat from the same initial state but keep the ideal ten volt battery",
+      "chapter": 4
+    },
+    {
+      "start": 433.4960003051863,
+      "end": 434.01600076295,
+      "text": "connected.",
+      "chapter": 4
+    },
+    {
+      "start": 435.1760006103621,
+      "end": 439.1760006103621,
+      "text": "Capacitance still becomes six microfarads, but voltage stays ten volts.",
+      "chapter": 4
+    },
+    {
+      "start": 440.31600000001055,
+      "end": 443.73599816895586,
+      "text": "Charge increases to sixty microcoulombs and stored energy to three hundred",
+      "chapter": 4
+    },
+    {
+      "start": 443.73599816895586,
+      "end": 444.3759975586043,
+      "text": "microjoules.",
+      "chapter": 4
+    },
+    {
+      "start": 445.4360027465926,
+      "end": 450.0360012207137,
+      "text": "The battery supplies additional energy, so the increased capacitor energy does",
+      "chapter": 4
+    },
+    {
+      "start": 450.0360012207137,
+      "end": 452.71600152588945,
+      "text": "not contradict attraction pulling the dielectric inward.",
+      "chapter": 4
+    },
+    {
+      "start": 453.1760006103621,
+      "end": 458.81600000001055,
+      "text": "With fixed gap and fixed voltage, the average gap field stays V over d; the",
+      "chapter": 4
+    },
+    {
+      "start": 458.81600000001055,
+      "end": 461.61600305176836,
+      "text": "battery's extra free charge compensates for polarization.",
+      "chapter": 4
+    },
+    {
+      "start": 462.7560024414168,
+      "end": 465.2759990844832,
+      "text": "Real materials also have dielectric breakdown limits.",
+      "chapter": 4
+    },
+    {
+      "start": 466.0559978637801,
+      "end": 470.8759975586043,
+      "text": "Our final checklist is: state the geometry, name the material model, identify",
+      "chapter": 4
+    },
+    {
+      "start": 470.8759975586043,
+      "end": 476.00831003982427,
+      "text": "whether Q or V is fixed, then calculate capacitance, charge, voltage and",
+      "chapter": 4
+    },
+    {
+      "start": 476.00831003982427,
+      "end": 476.4360027465926,
+      "text": "energy",
+      "chapter": 4
+    },
+    {
+      "start": 476.6760006103621,
+      "end": 477.0559978637801,
+      "text": "consistently.",
+      "chapter": 4
+    }
+  ]
+}

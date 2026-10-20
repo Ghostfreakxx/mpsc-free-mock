@@ -1,0 +1,140 @@
+{
+  "title": "AC generators and transformers",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 14",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: AC sources, conceptual reference",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/15-1-ac-sources"
+    },
+    {
+      "title": "OpenStax: Transformers, conceptual reference",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "A rotating coil changes its linked flux",
+      "formula": "lambda = NBA cos(omega t); emf = NBA omega sin(omega t), with the stated initial normal",
+      "points": [
+        "At t = 0, the normal is along B and linkage is maximal.",
+        "Emf is zero when linkage is at an extremum.",
+        "Mechanical rotation supplies electrical energy under load."
+      ],
+      "script": "Hey, welcome back. We can create alternating emf by rotating a coil in a magnetic field. Take N identical turns, area A per turn and a uniform field B. Rotate the coil at constant angular speed omega. Choose time zero when its normal follows the field. Flux linkage is N B A times cosine of omega t. Apply Faraday's law: minus the derivative of linkage gives induced emf N B A omega times sine of omega t. The sine appears because we differentiated the cosine. When linkage is greatest, its instantaneous rate of change is zero, so emf is zero. A quarter-turn later the coil's plane is parallel to the field, linkage is zero and its rate of change has greatest magnitude. Emf reaches a peak. Do not pair maximum flux with maximum emf. The chosen starting orientation fixes our waveform phase; another time origin changes the phase, not the amplitude. A simple AC generator uses slip rings to maintain connection while allowing alternating output, whereas a split-ring arrangement changes the terminal waveform. Under load, magnetic effects resist rotation and mechanical input is needed. An open-circuit emf can exist without significant load power. Rotation is an energy-conversion mechanism, not a free electrical source."
+    },
+    {
+      "title": "Calculate generator amplitude, frequency and RMS",
+      "formula": "E0 = NBA omega; f = omega/(2pi); Erms = E0/sqrt(2) for a sinusoid",
+      "points": [
+        "Doubling speed doubles amplitude and frequency.",
+        "Turns and area affect amplitude but not rotation frequency.",
+        "Load current also depends on the external circuit and internal effects."
+      ],
+      "script": "Let's give the generator numbers. Use one hundred turns, field zero point two tesla, area zero point zero one square meter and angular speed one hundred radians per second. Peak emf is N B A omega, which gives twenty volts. Frequency is one hundred over two pi, about fifteen point nine hertz. The ideal sinusoidal RMS emf is twenty divided by square root of two, about fourteen point one four volts. Pause and predict what happens if rotation speed doubles. Peak emf doubles to forty volts, and frequency doubles to about thirty-one point eight hertz. RMS emf also doubles. If instead turns double at the same speed, amplitude doubles but frequency stays unchanged. Those are different experimental changes. With a purely resistive ten-ohm load and negligible generator internal impedance, the first generator gives RMS current about one point four one amperes and average power twenty watts. A real generator's terminal voltage can depend on loading, winding resistance and inductive effects. Our ideal numerical example neglects those. Do not confuse the peak twenty volts with a constant twenty-volt DC supply. Follow the same sequence each time: geometry and speed, peak waveform amplitude, frequency, RMS conversion, then the circuit response if a load is specified."
+    },
+    {
+      "title": "A transformer shares changing core flux",
+      "formula": "Ideal magnitudes: Vs/Vp = Ns/Np; both windings link the same time-varying flux",
+      "points": [
+        "More secondary turns step voltage up; fewer step it down.",
+        "Relative winding orientation determines terminal phase.",
+        "A steady DC input does not sustain transformer action."
+      ],
+      "script": "A transformer does not need mechanical rotation. It uses changing magnetic flux to link a primary and secondary winding. In the ideal model, both windings link the same core flux, and each turn has the same induced-emf magnitude. Therefore secondary voltage over primary voltage equals secondary turns over primary turns. Use either RMS magnitudes throughout or peak magnitudes throughout. If secondary turns exceed primary turns, it is a step-up transformer. If fewer, it is step-down. Take primary turns five hundred and secondary turns one hundred. With primary RMS voltage two hundred thirty volts, ideal secondary RMS voltage is forty-six volts. Winding orientation determines the relative terminal phase, so the turns ratio alone is a magnitude statement unless polarity references are given. Why not apply a steady DC supply? After any initial transient, steady current produces steady linked flux, which cannot sustain secondary emf. In a real transformer, direct DC connection can cause damaging primary current and heating because the intended alternating-flux operation is absent. This is a conceptual explanation, not a home experiment. Core properties, insulation and ratings matter. Transformers are designed for specified operating conditions. Our ideal turns-ratio relation assumes shared changing flux, negligible leakage and negligible winding voltage losses."
+    },
+    {
+      "title": "Voltage gain trades against current; check efficiency",
+      "formula": "Ideal loaded transformer: Vp Ip = Vs Is; Is/Ip = Np/Ns for the ideal resistive-load example; eta = Pout/Pin",
+      "points": [
+        "Stepping voltage up does not multiply power.",
+        "Ideal current ratios neglect magnetising current and losses.",
+        "Real efficiency problems require input and output real power."
+      ],
+      "script": "A higher transformer output voltage does not create extra power. In an ideal lossless transformer, input power equals output power. For our ideal resistive-load example, primary RMS voltage times primary RMS current equals the corresponding secondary product. Thus current ratio is inverse to voltage ratio. The five-to-one step-down transformer gives forty-six volts on the secondary from two hundred thirty volts on the primary. If the secondary supplies a two-ampere resistive load, output power is ninety-two watts. Ideal primary current is zero point four ampere. A step-down voltage can accompany increased load current because power is conserved. We neglect magnetising current and losses in this calculation. With arbitrary phase-shifted loads, distinguish real power from apparent power; do not silently drop power factors in a real-efficiency calculation. Now treat a different, real transformer with ninety-two watts output and efficiency eighty percent. Input real power is output divided by efficiency: one hundred fifteen watts. Losses are twenty-three watts. The ideal voltage ratio is not by itself a complete model of real voltage regulation. Real losses can include winding heating, eddy-current heating and hysteresis. Laminated cores reduce eddy-current losses, while appropriate core materials and design limit other losses. State which ideal relations you are using, and which real quantity the efficiency describes."
+    },
+    {
+      "title": "Why high-voltage transmission reduces line loss",
+      "formula": "Fixed transmitted power with unity power factor: I = P/V; line heating = I^2 R_line",
+      "points": [
+        "Compare at fixed transmitted power and fixed line resistance.",
+        "Raising voltage lowers current under the stated power-factor assumption.",
+        "Transformer and line losses prevent a perfectly lossless real system."
+      ],
+      "script": "Let's connect transformers to transmission. Suppose a line must carry ten kilowatts with unity power factor, and the total line resistance is two ohms. At a line operating voltage of one thousand volts, current is ten amperes. Line heating is current squared times resistance: two hundred watts. Raise the operating voltage to ten thousand volts while carrying the same power. Current becomes one ampere and line heating becomes two watts. Voltage increased tenfold; line loss fell by a factor of one hundred. The reasoning requires fixed transmitted power, the same line resistance and the stated power factor. It does not say that raising voltage across a fixed resistor reduces its heating; that is a different circuit condition. Transmission systems use step-up and step-down stages so long-distance currents can be smaller while equipment receives appropriate voltages. Real systems include transformer losses, reactive power, insulation requirements and safety constraints. The classroom arithmetic is not a plan for handling high-voltage equipment. Finish with three checks. In a generator, changing coil orientation creates a flux derivative. In a transformer, changing shared flux gives a turns ratio. In a transmission line, current sets resistive loss. In all three, account for the energy source and keep peak, RMS and real power clearly labelled."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "With lambda = NBA cos(omega t), emf at t = 0 is:",
+      "options": [
+        "Zero",
+        "Maximum positive",
+        "Maximum negative",
+        "Constant NBA"
+      ],
+      "answer": 0,
+      "explanation": "At maximum linkage its derivative is zero."
+    },
+    {
+      "question": "N = 100, B = 0.2 T, A = 0.01 m^2 and omega = 100 rad/s give peak emf:",
+      "options": [
+        "2 V",
+        "200 V",
+        "20 V",
+        "14.14 V"
+      ],
+      "answer": 2,
+      "explanation": "E0 = NBA omega = 20 V; 14.14 V is its RMS value."
+    },
+    {
+      "question": "An ideal transformer has Np = 500, Ns = 100 and Vp = 230 V RMS. Vs is:",
+      "options": [
+        "1150 V",
+        "46 V",
+        "230 V",
+        "23 V"
+      ],
+      "answer": 1,
+      "explanation": "Vs = Vp Ns/Np = 46 V."
+    },
+    {
+      "question": "That ideal transformer supplies 46 V RMS at 2 A to a resistive load. Primary current is:",
+      "options": [
+        "10 A",
+        "2 A",
+        "0.08 A",
+        "0.4 A"
+      ],
+      "answer": 3,
+      "explanation": "Output power is 92 W; ideal primary current is 92/230 = 0.4 A."
+    },
+    {
+      "question": "A real transformer outputs 92 W with efficiency 80 percent. Input real power is:",
+      "options": [
+        "115 W",
+        "73.6 W",
+        "92 W",
+        "23 W"
+      ],
+      "answer": 0,
+      "explanation": "Pin = Pout/eta = 92/0.8 = 115 W."
+    },
+    {
+      "question": "At fixed transmitted power and unity power factor, increasing line voltage tenfold changes I^2R line loss to:",
+      "options": [
+        "Ten times",
+        "One hundredth",
+        "One tenth",
+        "Unchanged"
+      ],
+      "answer": 1,
+      "explanation": "Current falls tenfold, so its square and line heating fall one hundredfold."
+    }
+  ]
+}

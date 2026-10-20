@@ -1,0 +1,897 @@
+{
+  "duration": 473.04000000001344,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 89.35200000000249
+    },
+    {
+      "start": 89.35200000000249,
+      "end": 180.40800000000505
+    },
+    {
+      "start": 180.40800000000505,
+      "end": 273.2640000000077
+    },
+    {
+      "start": 273.2640000000077,
+      "end": 373.17600000001056
+    },
+    {
+      "start": 373.17600000001056,
+      "end": 473.04000000001344
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.4600000381469727,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.119999885559082,
+      "end": 5.440000057220459,
+      "text": "Today we look inside the nucleus and connect its structure with energy.",
+      "chapter": 0
+    },
+    {
+      "start": 6.21999979019165,
+      "end": 7.039999961853027,
+      "text": "Start with three symbols.",
+      "chapter": 0
+    },
+    {
+      "start": 7.78000020980835,
+      "end": 12.84000015258789,
+      "text": "Z is the number of protons, N is the number of neutrons, and A is the total",
+      "chapter": 0
+    },
+    {
+      "start": 12.84000015258789,
+      "end": 13.720000267028809,
+      "text": "number of nucleons.",
+      "chapter": 0
+    },
+    {
+      "start": 14.520000457763672,
+      "end": 16.84000015258789,
+      "text": "Therefore A equals Z plus N.",
+      "chapter": 0
+    },
+    {
+      "start": 17.600000381469727,
+      "end": 21.059999465942383,
+      "text": "For iron fifty six, Z is twenty six.",
+      "chapter": 0
+    },
+    {
+      "start": 21.059999465942383,
+      "end": 24.200000762939453,
+      "text": "Subtract twenty six from fifty six and you get thirty neutrons.",
+      "chapter": 0
+    },
+    {
+      "start": 24.579999923706055,
+      "end": 29.459999084472656,
+      "text": "A neutral atom also has twenty six electrons, but those electrons are not",
+      "chapter": 0
+    },
+    {
+      "start": 29.459999084472656,
+      "end": 31.200000762939453,
+      "text": "included in the nuclear mass number.",
+      "chapter": 0
+    },
+    {
+      "start": 32.279998779296875,
+      "end": 35.560001373291016,
+      "text": "Isotopes have the same proton number and different neutron numbers.",
+      "chapter": 0
+    },
+    {
+      "start": 36.41999816894531,
+      "end": 40.20000076293945,
+      "text": "Their chemistry can be similar because they belong to the same element, while",
+      "chapter": 0
+    },
+    {
+      "start": 40.20000076293945,
+      "end": 41.84000015258789,
+      "text": "their nuclear properties can differ.",
+      "chapter": 0
+    },
+    {
+      "start": 42.7400016784668,
+      "end": 43.7599983215332,
+      "text": "Now a units trap.",
+      "chapter": 0
+    },
+    {
+      "start": 44.560001373291016,
+      "end": 48.90615565960224,
+      "text": "Mass number fifty six does not mean the actual atomic mass is exactly fifty",
+      "chapter": 0
+    },
+    {
+      "start": 48.90615565960224,
+      "end": 49.08000183105469,
+      "text": "six",
+      "chapter": 0
+    },
+    {
+      "start": 49.08000183105469,
+      "end": 50.5,
+      "text": "unified atomic mass units.",
+      "chapter": 0
+    },
+    {
+      "start": 51.220001220703125,
+      "end": 51.91999816894531,
+      "text": "A is a count.",
+      "chapter": 0
+    },
+    {
+      "start": 52.5,
+      "end": 57.02000045776367,
+      "text": "The unit u is defined as one twelfth of the mass of a neutral carbon twelve",
+      "chapter": 0
+    },
+    {
+      "start": 57.02000045776367,
+      "end": 58.86000061035156,
+      "text": "atom in its ground state at rest.",
+      "chapter": 0
+    },
+    {
+      "start": 59.81999969482422,
+      "end": 61.959999084472656,
+      "text": "Notice the word atom, not bare nucleus.",
+      "chapter": 0
+    },
+    {
+      "start": 62.779998779296875,
+      "end": 66.45999908447266,
+      "text": "Atomic mass tables generally include the electrons of neutral atoms.",
+      "chapter": 0
+    },
+    {
+      "start": 67.54000091552734,
+      "end": 68.73999786376953,
+      "text": "Nuclear mass tables do not.",
+      "chapter": 0
+    },
+    {
+      "start": 69.33999633789062,
+      "end": 72.12000274658203,
+      "text": "We will keep that distinction when calculating binding energy.",
+      "chapter": 0
+    },
+    {
+      "start": 73.13999938964844,
+      "end": 78.04000091552734,
+      "text": "Pause and test the notation: if an isotope has A equal to forty and Z equal to",
+      "chapter": 0
+    },
+    {
+      "start": 78.04000091552734,
+      "end": 80.0999984741211,
+      "text": "twenty, how many neutrons are inside?",
+      "chapter": 0
+    },
+    {
+      "start": 80.0999984741211,
+      "end": 81.76000213623047,
+      "text": "Twenty.",
+      "chapter": 0
+    },
+    {
+      "start": 81.76000213623047,
+      "end": 85.95999908447266,
+      "text": "Begin each nuclear question by counting particles and identifying whether the",
+      "chapter": 0
+    },
+    {
+      "start": 85.95999908447266,
+      "end": 88.73999786376953,
+      "text": "stated mass belongs to a nucleus or an atom.",
+      "chapter": 0
+    },
+    {
+      "start": 88.73999786376953,
+      "end": 89.35200000000249,
+      "text": "That small check saves a surprising number of mistakes.",
+      "chapter": 0
+    },
+    {
+      "start": 89.35200000000249,
+      "end": 92.0520000476862,
+      "text": "A nucleus is incredibly small compared with an atom.",
+      "chapter": 1
+    },
+    {
+      "start": 92.81200003814946,
+      "end": 96.79200005722295,
+      "text": "A useful empirical estimate for its radius is R zero times A to the one third",
+      "chapter": 1
+    },
+    {
+      "start": 96.79200005722295,
+      "end": 97.0119998474146,
+      "text": "power.",
+      "chapter": 1
+    },
+    {
+      "start": 97.85200000000249,
+      "end": 101.25199961853276,
+      "text": "Use R zero approximately one point two femtometers for our examples.",
+      "chapter": 1
+    },
+    {
+      "start": 102.13199973297368,
+      "end": 104.47199988556157,
+      "text": "A femtometer is ten to the minus fifteen meters.",
+      "chapter": 1
+    },
+    {
+      "start": 105.27200007629644,
+      "end": 107.09199977112065,
+      "text": "The one third power means a cube root.",
+      "chapter": 1
+    },
+    {
+      "start": 107.91199946594487,
+      "end": 109.09199977112065,
+      "text": "Why that particular dependence?",
+      "chapter": 1
+    },
+    {
+      "start": 109.95200038147222,
+      "end": 113.29200053406011,
+      "text": "Nuclear matter has approximately the same density across many nuclei.",
+      "chapter": 1
+    },
+    {
+      "start": 114.27200007629644,
+      "end": 115.93199992370855,
+      "text": "Adding nucleons roughly adds volume.",
+      "chapter": 1
+    },
+    {
+      "start": 116.57199931335698,
+      "end": 120.72584546720314,
+      "text": "If volume grows in proportion to A and a sphere's volume grows as radius",
+      "chapter": 1
+    },
+    {
+      "start": 120.72584546720314,
+      "end": 121.07199931335698,
+      "text": "cubed,",
+      "chapter": 1
+    },
+    {
+      "start": 121.9120013732935,
+      "end": 123.7719981689478,
+      "text": "radius must grow as the cube root of A.",
+      "chapter": 1
+    },
+    {
+      "start": 124.57200122070562,
+      "end": 128.79199862671146,
+      "text": "Real nuclei have diffuse boundaries and can be nonspherical, so this is an",
+      "chapter": 1
+    },
+    {
+      "start": 128.79199862671146,
+      "end": 131.7719981689478,
+      "text": "average model rather than an exact ruler for every isotope.",
+      "chapter": 1
+    },
+    {
+      "start": 132.69200015259037,
+      "end": 135.39200091552982,
+      "text": "Take A equal to one hundred twenty five.",
+      "chapter": 1
+    },
+    {
+      "start": 135.39200091552982,
+      "end": 138.71200061035404,
+      "text": "The cube root is five, giving radius about six femtometers.",
+      "chapter": 1
+    },
+    {
+      "start": 139.6719996948267,
+      "end": 143.81199908447513,
+      "text": "Now compare nuclei with mass numbers sixty four and two hundred sixteen.",
+      "chapter": 1
+    },
+    {
+      "start": 143.81199908447513,
+      "end": 145.59200167846927,
+      "text": "Their cube roots are four and six.",
+      "chapter": 1
+    },
+    {
+      "start": 146.21200061035404,
+      "end": 149.31199908447513,
+      "text": "The radius ratio is six over four, or one point five.",
+      "chapter": 1
+    },
+    {
+      "start": 149.93200183105716,
+      "end": 153.7719981689478,
+      "text": "The mass number ratio is larger, three point three seven five.",
+      "chapter": 1
+    },
+    {
+      "start": 153.7719981689478,
+      "end": 157.4676439169884,
+      "text": "Their volumes have approximately that same larger ratio, because volume",
+      "chapter": 1
+    },
+    {
+      "start": 157.4676439169884,
+      "end": 157.83200335693607,
+      "text": "depends",
+      "chapter": 1
+    },
+    {
+      "start": 157.83200335693607,
+      "end": 158.75200152588138,
+      "text": "on radius cubed.",
+      "chapter": 1
+    },
+    {
+      "start": 159.81199908447513,
+      "end": 164.14935123967797,
+      "text": "Think before answering a ratio question: does it ask for radius, volume, or",
+      "chapter": 1
+    },
+    {
+      "start": 164.14935123967797,
+      "end": 164.61200213623295,
+      "text": "density?",
+      "chapter": 1
+    },
+    {
+      "start": 164.75200152588138,
+      "end": 166.29200244140873,
+      "text": "They are not interchangeable.",
+      "chapter": 1
+    },
+    {
+      "start": 166.79200244140873,
+      "end": 172.01200366211185,
+      "text": "In the simple spherical model, mass and volume both scale with A, so A cancels",
+      "chapter": 1
+    },
+    {
+      "start": 172.01200366211185,
+      "end": 173.25200152588138,
+      "text": "from the density expression.",
+      "chapter": 1
+    },
+    {
+      "start": 174.21200061035404,
+      "end": 178.22636226086988,
+      "text": "Nearly constant nuclear density follows from the same scaling assumption; it",
+      "chapter": 1
+    },
+    {
+      "start": 178.22636226086988,
+      "end": 178.33200335693607,
+      "text": "is",
+      "chapter": 1
+    },
+    {
+      "start": 178.33200335693607,
+      "end": 180.05199694824466,
+      "text": "not an independent numerical coincidence.",
+      "chapter": 1
+    },
+    {
+      "start": 180.40800000000505,
+      "end": 182.6679999904683,
+      "text": "Here comes the central energy idea.",
+      "chapter": 2
+    },
+    {
+      "start": 183.56800008583573,
+      "end": 187.54799986649064,
+      "text": "A bound nucleus has a lower rest mass than its separated protons and neutrons.",
+      "chapter": 2
+    },
+    {
+      "start": 188.30800009537248,
+      "end": 190.328000076299,
+      "text": "That difference is called the mass defect.",
+      "chapter": 2
+    },
+    {
+      "start": 191.18799973297624,
+      "end": 195.30799961853532,
+      "text": "Energy is released when the bound state forms, and energy must be supplied to",
+      "chapter": 2
+    },
+    {
+      "start": 195.30799961853532,
+      "end": 196.10799980927018,
+      "text": "separate it completely.",
+      "chapter": 2
+    },
+    {
+      "start": 196.7680006103566,
+      "end": 201.3679990844777,
+      "text": "This does not violate conservation: total mass energy, including released",
+      "chapter": 2
+    },
+    {
+      "start": 201.3679990844777,
+      "end": 203.7680006103566,
+      "text": "radiation and kinetic energy, is conserved.",
+      "chapter": 2
+    },
+    {
+      "start": 203.9879999237111,
+      "end": 209.1479997711232,
+      "text": "If you use bare nuclear masses, subtract the nuclear mass from the sum of bare",
+      "chapter": 2
+    },
+    {
+      "start": 209.1479997711232,
+      "end": 210.4879999237111,
+      "text": "proton and neutron masses.",
+      "chapter": 2
+    },
+    {
+      "start": 211.2680006103566,
+      "end": 215.72799969482926,
+      "text": "If you use neutral atomic masses instead, use hydrogen atom mass for each",
+      "chapter": 2
+    },
+    {
+      "start": 215.72799969482926,
+      "end": 216.6080007629445,
+      "text": "proton contribution.",
+      "chapter": 2
+    },
+    {
+      "start": 217.34799862671403,
+      "end": 222.18799877930192,
+      "text": "The electron rest masses then cancel to excellent approximation, while small",
+      "chapter": 2
+    },
+    {
+      "start": 222.18799877930192,
+      "end": 225.40800000000505,
+      "text": "electronic binding corrections are neglected at this nuclear scale.",
+      "chapter": 2
+    },
+    {
+      "start": 226.0279989318898,
+      "end": 229.66799832153825,
+      "text": "Let's calculate for deuterium, containing one proton and one neutron.",
+      "chapter": 2
+    },
+    {
+      "start": 230.42800045776872,
+      "end": 235.13364061483253,
+      "text": "Use hydrogen atom mass one point zero zero seven eight two five u, neutron",
+      "chapter": 2
+    },
+    {
+      "start": 235.13364061483253,
+      "end": 235.38799954224137,
+      "text": "mass",
+      "chapter": 2
+    },
+    {
+      "start": 235.38799954224137,
+      "end": 240.43300009537248,
+      "text": "one point zero zero eight six six five u, and deuterium atomic mass two point",
+      "chapter": 2
+    },
+    {
+      "start": 240.43300009537248,
+      "end": 242.84799862671403,
+      "text": "zero one four one zero two u.",
+      "chapter": 2
+    },
+    {
+      "start": 242.84799862671403,
+      "end": 244.8480024414113,
+      "text": "Add the first two and subtract the third.",
+      "chapter": 2
+    },
+    {
+      "start": 245.50799847412614,
+      "end": 249.58800030518083,
+      "text": "The defect is zero point zero zero two three eight eight u.",
+      "chapter": 2
+    },
+    {
+      "start": 249.58800030518083,
+      "end": 253.18799877930192,
+      "text": "Multiply by nine hundred thirty one point five mega electron volts per u.",
+      "chapter": 2
+    },
+    {
+      "start": 253.7680006103566,
+      "end": 257.3680020188602,
+      "text": "The binding energy is approximately two point two two four mega electron",
+      "chapter": 2
+    },
+    {
+      "start": 257.3680020188602,
+      "end": 257.6680021362355,
+      "text": "volts.",
+      "chapter": 2
+    },
+    {
+      "start": 257.6680021362355,
+      "end": 262.94800091553236,
+      "text": "For binding energy per nucleon, divide by A equal to two, giving about one",
+      "chapter": 2
+    },
+    {
+      "start": 262.94800091553236,
+      "end": 264.82799816895033,
+      "text": "point one one two mega electron volts.",
+      "chapter": 2
+    },
+    {
+      "start": 265.62800122070814,
+      "end": 269.32799816895033,
+      "text": "Do not mix a bare proton mass with a neutral deuterium atomic mass.",
+      "chapter": 2
+    },
+    {
+      "start": 270.0680036621144,
+      "end": 272.6879987793019,
+      "text": "Consistent mass bookkeeping comes before the multiplication.",
+      "chapter": 2
+    },
+    {
+      "start": 273.2640000000077,
+      "end": 277.103999914177,
+      "text": "Now plot binding energy per nucleon against mass number.",
+      "chapter": 3
+    },
+    {
+      "start": 277.86399990464025,
+      "end": 281.62399965668493,
+      "text": "For very light nuclei the values are relatively small, with important",
+      "chapter": 3
+    },
+    {
+      "start": 281.62399965668493,
+      "end": 283.56400019074255,
+      "text": "irregularities between neighboring nuclei.",
+      "chapter": 3
+    },
+    {
+      "start": 284.62399965668493,
+      "end": 288.9239998474198,
+      "text": "The broad curve rises toward a peak near the iron and nickel region, around",
+      "chapter": 3
+    },
+    {
+      "start": 288.9239998474198,
+      "end": 293.44400030518347,
+      "text": "eight point eight mega electron volts per nucleon, and then declines gradually",
+      "chapter": 3
+    },
+    {
+      "start": 293.44400030518347,
+      "end": 295.0839996948319,
+      "text": "for very heavy nuclei.",
+      "chapter": 3
+    },
+    {
+      "start": 295.50399977112585,
+      "end": 299.9039993896561,
+      "text": "This graph gives an energy direction, not a universal rule that every",
+      "chapter": 3
+    },
+    {
+      "start": 299.9039993896561,
+      "end": 301.46400076294714,
+      "text": "imaginable reaction must occur.",
+      "chapter": 3
+    },
+    {
+      "start": 302.3840008392411,
+      "end": 306.4239998474198,
+      "text": "Light nuclei can release energy by combining into products with greater total",
+      "chapter": 3
+    },
+    {
+      "start": 306.4239998474198,
+      "end": 306.6640015258866,
+      "text": "binding.",
+      "chapter": 3
+    },
+    {
+      "start": 307.9039993896561,
+      "end": 311.62400061035925,
+      "text": "Some heavy nuclei can release energy by splitting into more tightly bound",
+      "chapter": 3
+    },
+    {
+      "start": 311.62400061035925,
+      "end": 312.06399923706823,
+      "text": "products.",
+      "chapter": 3
+    },
+    {
+      "start": 313.2640000000077,
+      "end": 317.3639984741288,
+      "text": "Here is the reason: greater binding means a lower combined rest mass for the",
+      "chapter": 3
+    },
+    {
+      "start": 317.3639984741288,
+      "end": 321.0839996948319,
+      "text": "same conserved particles, with the difference available as released energy.",
+      "chapter": 3
+    },
+    {
+      "start": 321.9239998474198,
+      "end": 323.1040001525956,
+      "text": "Be careful with the word per.",
+      "chapter": 3
+    },
+    {
+      "start": 323.8240013732987,
+      "end": 328.5839996948319,
+      "text": "To calculate the exact energy of a reaction, compare total binding energies or",
+      "chapter": 3
+    },
+    {
+      "start": 328.5839996948319,
+      "end": 331.683998168953,
+      "text": "consistent total rest masses of all reactants and products.",
+      "chapter": 3
+    },
+    {
+      "start": 332.6440010681229,
+      "end": 335.683998168953,
+      "text": "A single per nucleon number cannot replace that bookkeeping.",
+      "chapter": 3
+    },
+    {
+      "start": 336.9039993896561,
+      "end": 341.4039993896561,
+      "text": "If a nucleus with A equal to fifty has binding energy per nucleon eight mega",
+      "chapter": 3
+    },
+    {
+      "start": 341.4039993896561,
+      "end": 345.8840027465897,
+      "text": "electron volts, its total binding energy is four hundred mega electron volts.",
+      "chapter": 3
+    },
+    {
+      "start": 347.0640030517655,
+      "end": 349.183998168953,
+      "text": "Pause before using that total as reaction energy.",
+      "chapter": 3
+    },
+    {
+      "start": 349.5640030517655,
+      "end": 352.804000915535,
+      "text": "It is not automatically the energy released in any particular change.",
+      "chapter": 3
+    },
+    {
+      "start": 353.62400061035925,
+      "end": 355.52400213623815,
+      "text": "The products also carry binding energy.",
+      "chapter": 3
+    },
+    {
+      "start": 356.3840027465897,
+      "end": 360.2640000000077,
+      "text": "Likewise, a large binding energy per nucleon does not by itself prove that",
+      "chapter": 3
+    },
+    {
+      "start": 360.2640000000077,
+      "end": 362.4039993896561,
+      "text": "every possible radioactive decay is forbidden.",
+      "chapter": 3
+    },
+    {
+      "start": 363.84400183106237,
+      "end": 367.46399694824987,
+      "text": "Charge, nucleon balance, available final states, and the complete energy",
+      "chapter": 3
+    },
+    {
+      "start": 367.46399694824987,
+      "end": 368.2839966430741,
+      "text": "comparison matter.",
+      "chapter": 3
+    },
+    {
+      "start": 369.2440033569413,
+      "end": 372.64399725342565,
+      "text": "Read the curve as a useful trend, then calculate the stated reaction.",
+      "chapter": 3
+    },
+    {
+      "start": 373.17600000001056,
+      "end": 375.31600010491474,
+      "text": "Let's bring the energy story together.",
+      "chapter": 4
+    },
+    {
+      "start": 376.2159999618636,
+      "end": 379.01600015259845,
+      "text": "Fission is the splitting of a heavy nucleus into lighter products.",
+      "chapter": 4
+    },
+    {
+      "start": 379.81599986649616,
+      "end": 384.11599958039386,
+      "text": "One possible illustrative channel is uranium two hundred thirty five plus a",
+      "chapter": 4
+    },
+    {
+      "start": 384.11599958039386,
+      "end": 388.83599984742267,
+      "text": "neutron forming barium one hundred forty one, krypton ninety two, and three",
+      "chapter": 4
+    },
+    {
+      "start": 388.83599984742267,
+      "end": 389.23599946595294,
+      "text": "neutrons.",
+      "chapter": 4
+    },
+    {
+      "start": 389.9959996948348,
+      "end": 393.4760001907454,
+      "text": "Count the mass numbers: two hundred thirty six on the left, and one hundred",
+      "chapter": 4
+    },
+    {
+      "start": 393.4760001907454,
+      "end": 395.83599984742267,
+      "text": "forty one plus ninety two plus three on the right.",
+      "chapter": 4
+    },
+    {
+      "start": 396.67600000001056,
+      "end": 401.45600068665607,
+      "text": "Charge numbers also balance: ninety two equals fifty six plus thirty six.",
+      "chapter": 4
+    },
+    {
+      "start": 401.45600068665607,
+      "end": 405.33599984742267,
+      "text": "Real fission has many product channels, so this example is not the only",
+      "chapter": 4
+    },
+    {
+      "start": 405.33599984742267,
+      "end": 405.6559995422469,
+      "text": "outcome.",
+      "chapter": 4
+    },
+    {
+      "start": 406.5360006103621,
+      "end": 409.75600183106525,
+      "text": "Energy release is typically of order two hundred mega electron volts per",
+      "chapter": 4
+    },
+    {
+      "start": 409.75600183106525,
+      "end": 412.815999389659,
+      "text": "fission, depending on the complete channel and energy accounting.",
+      "chapter": 4
+    },
+    {
+      "start": 414.25600183106525,
+      "end": 415.4759992370711,
+      "text": "Fusion combines light nuclei.",
+      "chapter": 4
+    },
+    {
+      "start": 415.9759992370711,
+      "end": 420.17600000001056,
+      "text": "An illustrative reaction is deuterium plus tritium forming helium four and a",
+      "chapter": 4
+    },
+    {
+      "start": 420.17600000001056,
+      "end": 420.37600076295,
+      "text": "neutron.",
+      "chapter": 4
+    },
+    {
+      "start": 421.27599847413165,
+      "end": 425.19600045777423,
+      "text": "Mass number is five on both sides, and charge number is two on both sides.",
+      "chapter": 4
+    },
+    {
+      "start": 425.77599847413165,
+      "end": 429.27599847413165,
+      "text": "This reaction releases about seventeen point six mega electron volts.",
+      "chapter": 4
+    },
+    {
+      "start": 430.19600045777423,
+      "end": 434.3960012207137,
+      "text": "The positive nuclei repel electrically, so merely having an energy favorable",
+      "chapter": 4
+    },
+    {
+      "start": 434.3960012207137,
+      "end": 438.5159963379012,
+      "text": "product does not remove the approach barrier; quantum tunneling also matters.",
+      "chapter": 4
+    },
+    {
+      "start": 439.25600183106525,
+      "end": 442.95599877930744,
+      "text": "Our focus is conceptual nuclear energy, not engineering a device.",
+      "chapter": 4
+    },
+    {
+      "start": 443.8960012207137,
+      "end": 447.789330841075,
+      "text": "For a numerical example, if the total initial rest mass exceeds the final",
+      "chapter": 4
+    },
+    {
+      "start": 447.789330841075,
+      "end": 448.05599725342853,
+      "text": "total",
+      "chapter": 4
+    },
+    {
+      "start": 448.05599725342853,
+      "end": 452.45200097657306,
+      "text": "by zero point zero one eight nine u, Q is that difference times nine hundred",
+      "chapter": 4
+    },
+    {
+      "start": 452.45200097657306,
+      "end": 456.83600366211994,
+      "text": "thirty one point five, approximately seventeen point six mega electron volts.",
+      "chapter": 4
+    },
+    {
+      "start": 457.5159963379012,
+      "end": 459.77599847413165,
+      "text": "A positive Q means energy is released.",
+      "chapter": 4
+    },
+    {
+      "start": 460.45599877930744,
+      "end": 464.35600030518634,
+      "text": "A negative Q means energy must be supplied, with additional kinematic",
+      "chapter": 4
+    },
+    {
+      "start": 464.35600030518634,
+      "end": 465.83600366211994,
+      "text": "conditions potentially relevant.",
+      "chapter": 4
+    },
+    {
+      "start": 466.9959996948348,
+      "end": 470.9959996948348,
+      "text": "Balance particles first, use one consistent mass convention, and only then",
+      "chapter": 4
+    },
+    {
+      "start": 470.9959996948348,
+      "end": 472.27599847413165,
+      "text": "evaluate the energy difference.",
+      "chapter": 4
+    }
+  ]
+}

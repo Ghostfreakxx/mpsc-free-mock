@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Optics closeout: ray geometry, curved refraction and telescope adjustment",
+  "unit": 16,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 official syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "NCERT: ray optics and optical instruments",
+      "url": "https://ncert.nic.in/textbook/pdf/leph201.pdf"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Two similar triangles explain the mirror equation",
+      "formula": "H/h = V/U = (V - F)/F -> 1/U + 1/V = 1/F",
+      "points": [
+        "U, V and F are positive magnitudes only in the pictured real concave-mirror case.",
+        "Cartesian equation: 1/u + 1/v = 1/f; magnification = -v/u.",
+        "The derivation is paraxial: small angles and a narrow aperture."
+      ],
+      "script": "Welcome back. Let's see where the mirror equation comes from, instead of treating it as a password. Our picture is a concave spherical mirror, a real upright object beyond the focus, and a real inverted image. For this derivation only, capital U, V and F are positive distance magnitudes measured from the pole. Object height is h, and inverted image height magnitude is H. One ray goes from the object tip to the pole. Equal angles of reflection give two similar triangles, so H divided by h equals V divided by U. A second ray travels parallel to the axis and reflects through the focus. In the paraxial approximation its reflection point is effectively in the pole plane, at height h. On its reflected path, the height falls from h to zero over distance F, then from zero to minus H over distance V minus F. Those similar triangles give H divided by h equal to V minus F, divided by F. Set our two ratios equal. V over U equals V over F minus one. Divide by V and rearrange: one over U plus one over V equals one over F. This is why both ray geometry and the equation locate the same image. Now translate, don't mix, sign conventions. With incident light rightward and the pole at zero, this real concave-mirror case has u equals minus U, v equals minus V, and f equals minus F. The Cartesian result is one over u plus one over v equals one over f. Signed magnification is minus v over u. Try u minus thirty centimeters and f minus ten. The equation gives v minus fifteen, and magnification minus one half. A two-centimeter upright object gives an inverted one-centimeter image. Now why is focal length half the spherical radius? A near-axis parallel ray meets a normal tilted by a small angle theta. Reflection turns the return ray through twice that angle relative to the axis. Using tangent theta approximately theta, the same ray height divided by focus distance is twice height divided by radius. Thus F is R magnitude over two. Wider rays violate that small-angle step and can produce spherical aberration. We have explained the formula and its limits, not claimed that every ray from a wide spherical mirror shares one exact focus."
+    },
+    {
+      "title": "Snell law becomes the spherical-interface equation",
+      "formula": "n1(alpha + gamma) = n2(gamma - beta) -> n2/v - n1/u = (n2 - n1)/R",
+      "points": [
+        "Draw a real object left of a surface convex toward it, with the center to the right.",
+        "Small-angle geometry: alpha = h/(-u), beta = h/v, gamma = h/R.",
+        "For other configurations use consistent signed distances, not unsigned copies."
+      ],
+      "script": "Let's build the curved refraction equation from Snell's law. Light travels left to right, from index n one to index n two. Draw a surface convex toward a real object on the left. Its center is on the right, and for our pictured case a real image is also on the right. A ray meets the surface a small height h above the axis. The incoming ray rises by angle alpha; the outgoing ray falls by angle beta. The radius through the point of incidence supplies the normal, whose rightward direction falls by angle gamma. Therefore incidence angle is alpha plus gamma, while refraction angle is gamma minus beta in this configuration. Snell's law says n one sine incidence equals n two sine refraction. At small angles in radians, replace each sine by its angle. We get n one times alpha plus gamma equal to n two times gamma minus beta. Move terms: n one alpha plus n two beta equals n two minus n one, times gamma. Now connect angles to distances. Alpha is approximately h over minus u, beta is h over v, and gamma is h over R. Divide by h. The result is n two over v minus n one over u equals n two minus n one over R. Unlike a mirror, light proceeds into the second medium, and both indices belong in the equation. Let's check the existing example: n one one, n two one point five, u minus sixty centimeters, R plus twenty. The curvature term is one fortieth per centimeter. Subtract one sixtieth to find one point five over v equal to one one-hundred-twentieth. Thus v is plus one hundred eighty centimeters. Pause: a longer image distance is reasonable here because this surface only weakly converges the incident beam. Let R tend to infinity. The curvature term vanishes. For an object twenty centimeters inside water of index four thirds, viewed near normally from air through a plane surface, set u minus twenty and swap n one to four thirds, n two to one. The equation gives v minus fifteen centimeters: a virtual image closer to the boundary. Our sketch's positive small angles are a route to the equation for that pictured configuration. Virtual images or reversed curvature require signed geometry, not an assumption that every angle keeps the pictured sign. Keep the pole, incident direction and media labels visible in a JEE solution."
+    },
+    {
+      "title": "Choose infinity or the near point before magnifying",
+      "formula": "Infinity: M = -fo/fe; near point: M = -(fo/fe)(1 + fe/D)",
+      "points": [
+        "Near-point eyepiece object distance magnitude is fe D/(D + fe).",
+        "For a distant-object refractor, separation = fo + fe D/(D + fe).",
+        "Reflectors use a primary focal length; their folded physical tube length is layout dependent."
+      ],
+      "script": "A telescope formula depends on where the final image is. Normal adjustment means final image at infinity: relaxed viewing, magnification minus objective focal length over eyepiece focal length, and refractor lens separation their sum. Now put the final virtual image at the near point, a distance D from the eyepiece in our ideal model. We neglect separation between eye and eyepiece. D is twenty-five centimeters for the standard reference eye, not a fixed property of every person. The eyepiece image distance is minus D. Its thin-lens equation gives one over f e equal to minus one over D minus one over u e. Therefore the intermediate image lies on its incoming side at distance magnitude s equal to f e times D divided by D plus f e. This is less than f e. The objective still forms its intermediate image approximately f o from itself for a distant object. So lens separation is f o plus s, slightly less than the normal-adjustment length. The incoming object angle makes intermediate height magnitude approximately f o times that angle. The outgoing angle at the eyepiece is approximately that height divided by s. Hence signed magnification is minus f o over s, or minus f o over f e times one plus f e over D. Let's use f o one hundred centimeters, f e five, and D twenty-five. s is twenty-five sixths centimeters, about four point one seven. Lens separation is one hundred four point one seven centimeters. Magnification is minus twenty-four, compared with minus twenty and separation one hundred five centimeters in normal adjustment. Greater angular magnification here needs accommodation; it is not automatically the most comfortable or clearest view. Think before swapping in the microscope formula: the microscope's nearby object and objective linear magnification create a different first stage. For a reflecting telescope, the concave primary replaces the refracting objective and the eyepiece uses the same final-image reasoning. A two-hundred-centimeter primary and four-centimeter eyepiece give normal magnifying-power magnitude fifty. Do not equate that optical focal-length sum to every reflector's physical tube length: a secondary can fold the beam. Magnification, aperture, resolution and brightness remain distinct. These are ideal paraxial classroom calculations, not instructions to view the Sun or build unprotected optical equipment."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A concave mirror has u=-30 cm and f=-10 cm. Its image distance is:",
+      "options": [
+        "+15 cm",
+        "-15 cm",
+        "-30 cm",
+        "+30 cm"
+      ],
+      "answer": 1,
+      "explanation": "1/v = -1/10 + 1/30 = -1/15."
+    },
+    {
+      "question": "A +2 cm object in that mirror has image height:",
+      "options": [
+        "+1 cm",
+        "+4 cm",
+        "-1 cm",
+        "-4 cm"
+      ],
+      "answer": 2,
+      "explanation": "m=-v/u=-0.5, so height=-1 cm."
+    },
+    {
+      "question": "Air to glass n2=1.5, u=-60 cm and R=+20 cm gives:",
+      "options": [
+        "v=+180 cm",
+        "v=-180 cm",
+        "v=+60 cm",
+        "v=+20 cm"
+      ],
+      "answer": 0,
+      "explanation": "1.5/v + 1/60 = 0.5/20, hence v=180 cm."
+    },
+    {
+      "question": "For fo=100 cm, fe=5 cm and D=25 cm, telescope near-point magnification is:",
+      "options": [
+        "-20",
+        "-5",
+        "+24",
+        "-24"
+      ],
+      "answer": 3,
+      "explanation": "M=-(100/5)(1+5/25)=-24 in the stated eye-at-eyepiece model."
+    },
+    {
+      "question": "The lens separation for that near-point refractor is approximately:",
+      "options": [
+        "105 cm",
+        "100 cm",
+        "104.17 cm",
+        "125 cm"
+      ],
+      "answer": 2,
+      "explanation": "fo + fe D/(D+fe) = 100 + 125/30 cm."
+    }
+  ]
+}

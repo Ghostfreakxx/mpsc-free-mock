@@ -1,0 +1,367 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.740
+Hey, welcome back.
+
+00:00:02.740 --> 00:00:07.020
+Touch the handle of a metal spoon left in hot soup, watch the soup circulate,
+
+00:00:07.300 --> 00:00:10.140
+and feel warmth from a nearby heater without touching it.
+
+00:00:10.960 --> 00:00:14.140
+Those experiences point to three different ways energy travels.
+
+00:00:15.140 --> 00:00:19.240
+Conduction transfers energy through microscopic interactions without a bulk
+
+00:00:19.240 --> 00:00:20.120
+flow of the material.
+
+00:00:20.900 --> 00:00:24.060
+In metals, mobile electrons also help carry energy.
+
+00:00:24.940 --> 00:00:28.980
+Convection involves fluid moving from place to place and carrying internal
+
+00:00:28.980 --> 00:00:29.800
+energy with it.
+
+00:00:30.000 --> 00:00:34.720
+Warm fluid often rises because it becomes less dense in a gravitational field,
+
+00:00:35.360 --> 00:00:38.240
+but a fan or pump can also drive forced convection.
+
+00:00:39.380 --> 00:00:43.520
+Radiation carries energy as electromagnetic waves and does not need any
+
+00:00:43.520 --> 00:00:45.360
+material between source and receiver.
+
+00:00:46.280 --> 00:00:48.740
+That's how sunlight reaches Earth through space.
+
+00:00:49.380 --> 00:00:51.920
+Real situations often involve all three mechanisms.
+
+00:00:52.760 --> 00:00:56.260
+A hot cooking vessel conducts through its wall, circulates liquid by
+
+00:00:56.260 --> 00:00:58.520
+convection, and radiates to its surroundings.
+
+00:00:59.460 --> 00:01:03.800
+So don't force every situation into just one category unless the question asks
+
+00:01:03.800 --> 00:01:05.040
+which mechanism dominates.
+
+00:01:05.780 --> 00:01:09.820
+We will calculate steady conduction and thermal radiation, then use a simple
+
+00:01:09.820 --> 00:01:10.420
+cooling model.
+
+00:01:11.360 --> 00:01:14.100
+Keep the distinction between heat and its rate of transfer clear.
+
+00:01:14.980 --> 00:01:19.120
+Heat is measured in joules; transfer rate is energy per second, measured in
+
+00:01:19.120 --> 00:01:19.320
+watts.
+
+00:01:19.560 --> 00:01:23.700
+Imagine a flat slab with one face held warm and the other held cooler.
+
+00:01:24.640 --> 00:01:28.460
+After the temperature profile settles, energy crosses the slab at a steady
+
+00:01:28.460 --> 00:01:28.780
+rate.
+
+00:01:29.860 --> 00:01:34.980
+For uniform material, no internal generation and negligible side losses, that
+
+00:01:34.980 --> 00:01:39.200
+rate equals thermal conductivity times area times temperature difference,
+
+00:01:39.600 --> 00:01:40.600
+divided by thickness.
+
+00:01:41.500 --> 00:01:44.680
+Conductivity tells us how readily the material conducts.
+
+00:01:45.280 --> 00:01:48.160
+A larger face offers more parallel paths for transfer.
+
+00:01:48.860 --> 00:01:51.200
+Greater thickness makes the transfer path longer.
+
+00:01:52.260 --> 00:01:57.540
+Let's use conductivity zero point five watts per metre per kelvin, face area
+
+00:01:57.540 --> 00:02:02.020
+two square metres, thickness zero point one metres, and temperature difference
+
+00:02:02.020 --> 00:02:02.740
+twenty kelvin.
+
+00:02:03.820 --> 00:02:08.160
+Multiply zero point five by two by twenty, then divide by zero point one.
+
+00:02:08.580 --> 00:02:09.920
+The rate is two hundred watts.
+
+00:02:10.780 --> 00:02:14.660
+Over sixty seconds, it transfers twelve thousand joules if the boundary
+
+00:02:14.660 --> 00:02:15.720
+temperatures stay fixed.
+
+00:02:16.520 --> 00:02:19.280
+Pause and predict what doubling the thickness does.
+
+00:02:20.240 --> 00:02:23.740
+It halves the rate, not the energy per degree stored inside the material.
+
+00:02:24.720 --> 00:02:27.300
+Conductivity and specific heat are different properties.
+
+00:02:28.200 --> 00:02:32.060
+The minus sign in the differential conduction law describes flow toward lower
+
+00:02:32.060 --> 00:02:35.680
+temperature; here we are calculating the positive magnitude.
+
+00:02:36.740 --> 00:02:39.440
+Steady state does not mean both slab faces have the same temperature.
+
+00:02:39.900 --> 00:02:44.280
+It means the temperature at each location stops changing with time while energy
+
+00:02:44.280 --> 00:02:45.280
+continues to flow.
+
+00:02:45.576 --> 00:02:50.016
+Now stack two insulating layers, so energy must pass through the first and then
+
+00:02:50.016 --> 00:02:50.456
+the second.
+
+00:02:51.196 --> 00:02:55.636
+We can make the algebra friendlier by defining thermal resistance: thickness
+
+00:02:55.636 --> 00:02:57.716
+divided by conductivity times area.
+
+00:02:58.556 --> 00:03:00.136
+Its unit is kelvin per watt.
+
+00:03:01.016 --> 00:03:04.596
+A large resistance needs a large temperature difference to pass a given power.
+
+00:03:05.796 --> 00:03:09.576
+In steady series conduction, both layers carry the same transfer rate,
+
+00:03:10.036 --> 00:03:12.516
+otherwise energy would keep accumulating at their interface.
+
+00:03:13.296 --> 00:03:14.296
+Add their resistances.
+
+00:03:15.116 --> 00:03:19.416
+If the two resistances are zero point two and zero point three kelvin per watt,
+
+00:03:19.936 --> 00:03:24.456
+and the outer faces differ by fifty kelvin, divide fifty by zero point five.
+
+00:03:24.856 --> 00:03:26.536
+The rate is one hundred watts.
+
+00:03:27.376 --> 00:03:29.256
+How much temperature drop belongs to each layer?
+
+00:03:30.216 --> 00:03:32.056
+Multiply the common rate by each resistance.
+
+00:03:32.636 --> 00:03:34.976
+The drops are twenty kelvin and thirty kelvin.
+
+00:03:35.416 --> 00:03:39.776
+If the hot face is eighty degrees Celsius and the cold face thirty, the
+
+00:03:39.776 --> 00:03:41.476
+interface is sixty degrees Celsius.
+
+00:03:42.396 --> 00:03:44.896
+Notice that the greater resistance takes the greater temperature drop.
+
+00:03:45.516 --> 00:03:50.096
+We assume perfect contact and no side losses; an imperfect contact can
+
+00:03:50.096 --> 00:03:51.316
+introduce an extra resistance.
+
+00:03:52.176 --> 00:03:56.176
+For separate side by side paths with the same boundary temperatures, add the
+
+00:03:56.176 --> 00:03:58.556
+transfer rates instead of adding series resistances.
+
+00:03:59.416 --> 00:04:01.376
+First sketch the path energy must follow.
+
+00:04:01.836 --> 00:04:05.496
+That simple sketch tells you whether the layers are in series or in parallel.
+
+00:04:05.688 --> 00:04:09.148
+Unlike conduction, thermal radiation can cross a vacuum.
+
+00:04:09.988 --> 00:04:14.128
+For a body facing a large surrounding enclosure, our simple net radiation model
+
+00:04:14.128 --> 00:04:19.148
+uses emissivity times the Stefan Boltzmann constant times area times the
+
+00:04:19.148 --> 00:04:21.448
+difference of fourth powers of absolute temperatures.
+
+00:04:22.188 --> 00:04:26.508
+The body emits radiation, and it also absorbs radiation from its surroundings.
+
+00:04:27.568 --> 00:04:30.248
+Net loss means we subtract the incoming contribution.
+
+00:04:31.228 --> 00:04:35.368
+Take an ideal blackbody of area zero point one square metres, at four hundred
+
+00:04:35.368 --> 00:04:38.968
+kelvin, surrounded by a large enclosure at three hundred kelvin.
+
+00:04:40.208 --> 00:04:43.628
+Use sigma five point six seven times ten to the power minus eight.
+
+00:04:44.568 --> 00:04:48.128
+The difference of the fourth powers is seventeen point five times ten to the
+
+00:04:48.128 --> 00:04:48.508
+power nine.
+
+00:04:49.728 --> 00:04:52.688
+Multiplying gives net power ninety nine point two two five watts.
+
+00:04:53.908 --> 00:04:57.628
+Don't put Celsius temperatures into a fourth power formula, and don't subtract
+
+00:04:57.628 --> 00:04:59.728
+the temperatures before raising to the fourth power.
+
+00:05:00.688 --> 00:05:04.268
+Doubling absolute temperature makes the emitted power sixteen times larger if
+
+00:05:04.268 --> 00:05:05.908
+area and emissivity stay fixed.
+
+00:05:06.928 --> 00:05:11.008
+But net power is not generally multiplied by sixteen, because the surrounding
+
+00:05:11.008 --> 00:05:12.188
+temperature term remains.
+
+00:05:12.968 --> 00:05:14.668
+A blackbody has emissivity one.
+
+00:05:15.508 --> 00:05:19.108
+Real emissivity depends on surface and wavelength; we are using a simple
+
+00:05:19.108 --> 00:05:20.428
+effective value.
+
+00:05:20.968 --> 00:05:24.628
+Shiny and dark surfaces can behave differently, but colour alone is not a
+
+00:05:24.628 --> 00:05:26.348
+universal rule for infrared emissivity.
+
+00:05:26.688 --> 00:05:28.688
+Let's finish with Newton's law of cooling.
+
+00:05:29.408 --> 00:05:33.368
+In a useful approximate model, the cooling rate is proportional to how much
+
+00:05:33.368 --> 00:05:35.268
+warmer the body is than its surroundings.
+
+00:05:36.048 --> 00:05:39.648
+The rate of change of temperature is minus a constant times the temperature
+
+00:05:39.648 --> 00:05:40.168
+excess.
+
+00:05:41.108 --> 00:05:44.788
+We assume nearly uniform body temperature and conditions that keep this
+
+00:05:44.788 --> 00:05:46.168
+constant approximately fixed.
+
+00:05:47.228 --> 00:05:49.048
+Suppose the room is twenty degrees Celsius.
+
+00:05:50.148 --> 00:05:54.068
+Compare the same body initially at sixty degrees with that body initially at
+
+00:05:54.068 --> 00:05:54.708
+forty degrees.
+
+00:05:55.628 --> 00:05:57.968
+The excess temperatures are forty and twenty degrees.
+
+00:05:58.688 --> 00:06:01.288
+So the first initial cooling rate has twice the magnitude.
+
+00:06:02.068 --> 00:06:05.428
+The comparison uses temperature differences, so Celsius is fine here.
+
+00:06:06.128 --> 00:06:09.128
+It does not mean the body loses the same number of degrees each minute.
+
+00:06:09.808 --> 00:06:13.408
+As it cools, the excess becomes smaller and the cooling slows.
+
+00:06:14.488 --> 00:06:18.148
+For a constant model coefficient, temperature excess decays exponentially.
+
+00:06:19.008 --> 00:06:23.488
+After one interval halves the excess, a second equal interval halves what
+
+00:06:23.488 --> 00:06:25.408
+remains, not the original temperature.
+
+00:06:26.208 --> 00:06:30.568
+A body starting at sixty in a twenty degree room would then reach forty, then
+
+00:06:30.568 --> 00:06:32.288
+thirty, under that example.
+
+00:06:33.148 --> 00:06:36.748
+Newton's law is not an exact substitute for the fourth power radiation law at
+
+00:06:36.748 --> 00:06:37.608
+arbitrary temperatures.
+
+00:06:38.448 --> 00:06:42.048
+For a small difference near a fixed surrounding temperature, radiation can
+
+00:06:42.048 --> 00:06:44.708
+approximately contribute a term proportional to the difference.
+
+00:06:45.588 --> 00:06:49.488
+Identify the mechanism, the assumptions and the units before choosing your
+
+00:06:49.488 --> 00:06:49.768
+equation.
+
+00:06:49.768 --> 00:06:49.992
+That's your heat transfer toolkit.

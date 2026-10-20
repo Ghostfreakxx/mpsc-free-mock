@@ -1,0 +1,412 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.360
+Hey, welcome back.
+
+00:00:01.960 --> 00:00:04.560
+We have used a coil's magnetic moment to predict torque.
+
+00:00:05.380 --> 00:00:08.720
+Now we ask what field a magnetic dipole creates around itself.
+
+00:00:09.400 --> 00:00:13.060
+A bar magnet and a small current loop can produce the same leading field
+
+00:00:13.060 --> 00:00:16.240
+pattern at large distances if their magnetic moments match.
+
+00:00:17.300 --> 00:00:20.760
+For a bar magnet, the moment points from its south end toward its north end.
+
+00:00:21.440 --> 00:00:25.000
+For a current loop, the right hand rule gives the normal, and the moment
+
+00:00:25.000 --> 00:00:27.160
+magnitude is current times enclosed area.
+
+00:00:27.840 --> 00:00:31.500
+The moment is not the same thing as the local magnetic field at every point.
+
+00:00:32.760 --> 00:00:36.480
+Outside a bar magnet, field lines leave the north region and curve toward the
+
+00:00:36.480 --> 00:00:36.940
+south region.
+
+00:00:37.800 --> 00:00:40.400
+Inside the magnet, they continue from south toward north.
+
+00:00:40.860 --> 00:00:42.400
+They do not simply stop at the poles.
+
+00:00:43.180 --> 00:00:46.900
+In the standard magnetism model, the net magnetic flux through any closed
+
+00:00:46.900 --> 00:00:47.840
+surface is zero.
+
+00:00:48.620 --> 00:00:52.560
+Unlike the electric field of an isolated charge, a bar magnet's field has no
+
+00:00:52.560 --> 00:00:54.020
+separate magnetic source or sink.
+
+00:00:54.960 --> 00:00:57.400
+The tangent to a field line gives the local field direction.
+
+00:00:58.020 --> 00:01:01.560
+It does not directly give the force direction on a moving charge, which still
+
+00:01:01.560 --> 00:01:02.980
+requires velocity cross B.
+
+00:01:03.960 --> 00:01:07.240
+Our quantitative dipole formulas describe points far outside a localized
+
+00:01:07.240 --> 00:01:09.940
+source, at distances much larger than its size.
+
+00:01:11.020 --> 00:01:14.160
+Close to a real magnet, shape and magnetization details matter.
+
+00:01:15.080 --> 00:01:19.120
+Treat the dipole as an approximation with a useful range, not a tiny drawing
+
+00:01:19.120 --> 00:01:20.820
+that makes every nearby field exact.
+
+00:01:21.264 --> 00:01:25.364
+Put a bar magnet horizontally, south on the left and north on the right.
+
+00:01:25.904 --> 00:01:27.064
+Its moment points right.
+
+00:01:27.564 --> 00:01:30.504
+The axial line passes through both poles and the center.
+
+00:01:31.224 --> 00:01:35.190
+At a point far to the right of the north end, the field points right, away
+
+00:01:35.190 --> 00:01:35.404
+from
+
+00:01:35.404 --> 00:01:36.044
+the north region.
+
+00:01:36.844 --> 00:01:39.064
+What about a point far to the left of the south end?
+
+00:01:39.684 --> 00:01:41.004
+Take a moment to draw the arrow.
+
+00:01:41.484 --> 00:01:44.444
+The field points toward the south region, which is also right.
+
+00:01:44.624 --> 00:01:48.704
+So the far axial field is parallel to the moment on both sides.
+
+00:01:49.264 --> 00:01:51.364
+It is not automatically outward from the center.
+
+00:01:52.124 --> 00:01:57.164
+Its magnitude is mu zero over four pi, multiplied by two times moment divided
+
+00:01:57.164 --> 00:01:57.984
+by r cubed.
+
+00:01:58.724 --> 00:02:02.624
+Here r is distance from the center of the localized dipole, not distance from
+
+00:02:02.624 --> 00:02:03.304
+the nearest pole.
+
+00:02:04.044 --> 00:02:09.144
+In vacuum or approximately air, use mu zero over four pi approximately ten to
+
+00:02:09.144 --> 00:02:10.884
+the minus seven in SI units.
+
+00:02:11.824 --> 00:02:16.064
+Suppose moment is zero point eight ampere meter squared and the axial point is
+
+00:02:16.064 --> 00:02:20.244
+zero point four meters from the center, sufficiently far compared with the
+
+00:02:20.244 --> 00:02:20.864
+magnet's size.
+
+00:02:21.924 --> 00:02:25.604
+Cube zero point four to get zero point zero six four.
+
+00:02:25.604 --> 00:02:27.644
+The field is two point five microtesla.
+
+00:02:28.664 --> 00:02:30.304
+Double the distance while staying on the axis.
+
+00:02:30.784 --> 00:02:34.364
+The field becomes one eighth as large, zero point three one two five
+
+00:02:34.364 --> 00:02:35.104
+microtesla.
+
+00:02:35.744 --> 00:02:38.884
+That cube dependence is characteristic of the far dipole field.
+
+00:02:39.624 --> 00:02:42.875
+Always check geometry, distance reference and the approximation before
+
+00:02:42.875 --> 00:02:43.176
+substituting numbers.
+
+00:02:43.176 --> 00:02:48.336
+Now move to the perpendicular bisector of the magnet, called its equatorial
+
+00:02:48.336 --> 00:02:49.236
+line in our drawing.
+
+00:02:50.176 --> 00:02:51.556
+Keep the moment pointing right.
+
+00:02:52.356 --> 00:02:56.510
+At a distant point above the center, symmetry cancels the vertical parts of
+
+00:02:56.510 --> 00:02:56.676
+the
+
+00:02:56.676 --> 00:02:59.036
+field, while the horizontal parts point left.
+
+00:02:59.696 --> 00:03:01.476
+The same happens below the center.
+
+00:03:02.536 --> 00:03:05.196
+Thus the equatorial field is opposite to the moment.
+
+00:03:05.736 --> 00:03:10.776
+Its magnitude is mu zero over four pi, times moment divided by r cubed.
+
+00:03:11.876 --> 00:03:15.376
+Compared at the same center distance in the far field limit, the axial
+
+00:03:15.376 --> 00:03:17.756
+magnitude is twice the equatorial magnitude.
+
+00:03:18.696 --> 00:03:22.355
+For our zero point eight ampere meter squared moment at zero point four
+
+00:03:22.355 --> 00:03:22.716
+meters,
+
+00:03:23.476 --> 00:03:27.416
+equatorial field is one point two five microtesla, pointing left.
+
+00:03:28.016 --> 00:03:32.196
+The axial value at that same distance is two point five microtesla, pointing
+
+00:03:32.196 --> 00:03:32.576
+right.
+
+00:03:33.076 --> 00:03:36.996
+The equatorial field is not zero just because the point lies on a symmetry
+
+00:03:36.996 --> 00:03:37.376
+line.
+
+00:03:38.316 --> 00:03:40.816
+Symmetry can cancel one component while leaving another.
+
+00:03:41.836 --> 00:03:45.732
+Also, the ratio of two is not a rule for arbitrary points near a finite
+
+00:03:45.732 --> 00:03:46.116
+magnet.
+
+00:03:47.216 --> 00:03:47.656
+Distance matters.
+
+00:03:48.396 --> 00:03:52.576
+If an axial point is twice as far from the center as an equatorial point, its
+
+00:03:52.576 --> 00:03:56.456
+field magnitude is two divided by eight, or one quarter of the equatorial
+
+00:03:56.456 --> 00:03:56.756
+value.
+
+00:03:57.236 --> 00:04:01.638
+If the question says equal fields instead, the axial distance must be cube
+
+00:04:01.638 --> 00:04:01.876
+root
+
+00:04:01.876 --> 00:04:04.076
+of two times the equatorial distance.
+
+00:04:04.916 --> 00:04:07.536
+Do the cube scaling before reaching for a familiar ratio.
+
+00:04:07.776 --> 00:04:12.756
+Let's test the approximation using a source we can calculate: a thin circular
+
+00:04:12.756 --> 00:04:13.976
+current loop in vacuum.
+
+00:04:14.616 --> 00:04:20.116
+On its axis at distance x from the center, the field magnitude is mu zero I
+
+00:04:20.456 --> 00:04:25.716
+R squared divided by two times the quantity R squared plus x squared raised to
+
+00:04:25.876 --> 00:04:26.336
+three halves.
+
+00:04:26.876 --> 00:04:30.896
+This is the circular loop result, not a universal exact bar magnet formula.
+
+00:04:31.616 --> 00:04:36.036
+When x is much larger than loop radius R, the denominator is approximately two
+
+00:04:36.316 --> 00:04:37.396
+x cubed.
+
+00:04:37.396 --> 00:04:42.456
+Replace I pi R squared by the loop's moment, and the expression becomes the
+
+00:04:42.456 --> 00:04:44.196
+same far axial dipole field.
+
+00:04:44.916 --> 00:04:47.436
+We can even check how close the approximation is.
+
+00:04:48.236 --> 00:04:52.456
+Exact loop field divided by its far field estimate is the quantity one plus R
+
+00:04:52.456 --> 00:04:55.256
+squared over x squared raised to minus three halves.
+
+00:04:55.896 --> 00:05:01.056
+At x equal to ten radii, this ratio is about zero point nine eight five.
+
+00:05:01.056 --> 00:05:04.276
+The exact value is about ninety eight point five percent of the estimate.
+
+00:05:04.776 --> 00:05:09.796
+At x equal to one radius, the ratio is only about zero point three five four.
+
+00:05:09.796 --> 00:05:11.036
+That is not a small correction.
+
+00:05:11.736 --> 00:05:17.086
+At the center, x is zero and the actual loop field is mu zero I divided by two
+
+00:05:17.086 --> 00:05:18.116
+R, which is finite.
+
+00:05:18.676 --> 00:05:22.276
+The point dipole formula would diverge there because we have used it outside
+
+00:05:22.276 --> 00:05:22.796
+its range.
+
+00:05:23.296 --> 00:05:27.436
+A formula's apparent infinity can be a warning about its model, not a claim
+
+00:05:27.436 --> 00:05:29.476
+that a real magnet produces infinite field.
+
+00:05:29.876 --> 00:05:34.297
+For a finite bar magnet, choose a suitable source model or supplied result
+
+00:05:34.297 --> 00:05:34.536
+when
+
+00:05:34.536 --> 00:05:35.996
+the far field condition is absent.
+
+00:05:36.384 --> 00:05:37.804
+Finish with two sources.
+
+00:05:38.684 --> 00:05:42.644
+Our dipole has moment zero point eight ampere meter squared pointing right.
+
+00:05:43.604 --> 00:05:47.844
+Add a uniform external field of one point two five microtesla pointing right.
+
+00:05:48.244 --> 00:05:52.437
+At an equatorial point zero point four meters from the center, the dipole
+
+00:05:52.437 --> 00:05:52.724
+field
+
+00:05:52.724 --> 00:05:54.924
+is one point two five microtesla left.
+
+00:05:55.364 --> 00:05:58.224
+The two fields cancel there in our far field model.
+
+00:05:59.004 --> 00:06:03.164
+At an axial point at the same center distance, the dipole field is two point
+
+00:06:03.164 --> 00:06:04.604
+five microtesla right.
+
+00:06:05.484 --> 00:06:08.944
+Add the external field to get three point seven five microtesla right.
+
+00:06:09.684 --> 00:06:13.764
+One source has not switched off; its vector contribution cancels another only
+
+00:06:13.764 --> 00:06:14.984
+at the specified location.
+
+00:06:15.944 --> 00:06:19.884
+Now change the external field to point upward, keeping its magnitude one point
+
+00:06:19.884 --> 00:06:21.004
+two five microtesla.
+
+00:06:21.764 --> 00:06:26.004
+At the equatorial point, we have equal perpendicular components: left from the
+
+00:06:26.004 --> 00:06:27.984
+dipole and up from the external field.
+
+00:06:28.424 --> 00:06:33.004
+The resultant magnitude is one point two five times square root of two, about
+
+00:06:33.004 --> 00:06:34.944
+one point seven seven microtesla.
+
+00:06:35.804 --> 00:06:39.664
+It points forty five degrees above the leftward direction, not upward along
+
+00:06:39.664 --> 00:06:40.524
+either source alone.
+
+00:06:40.944 --> 00:06:44.884
+A small compass aligns with the local resultant field in a nonzero field
+
+00:06:44.884 --> 00:06:45.184
+region.
+
+00:06:45.664 --> 00:06:49.184
+At an exact zero, that field alone supplies no preferred alignment.
+
+00:06:50.004 --> 00:06:51.664
+Other fields and disturbances can matter.
+
+00:06:52.564 --> 00:06:56.324
+Keep the three decisions separate: identify axial or equatorial geometry,
+
+00:06:57.144 --> 00:07:00.484
+verify distance is large relative to source size, and add vectors.
+
+00:07:01.444 --> 00:07:04.284
+We have connected coils, bar magnets and dipole fields.
+
+00:07:05.284 --> 00:07:08.664
+Next we will examine how different materials respond to an applied magnetic
+
+00:07:08.664 --> 00:07:08.984
+field.

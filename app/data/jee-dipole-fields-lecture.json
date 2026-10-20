@@ -1,0 +1,140 @@
+{
+  "title": "Magnetic dipole fields and bar-magnet geometry",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 13",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "NCERT Physics Part I: Magnetism and matter, section 5.2",
+      "url": "https://www.ncert.nic.in/textbook/pdf/leph105.pdf"
+    },
+    {
+      "title": "OpenStax: Magnetic field of a current loop",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/12-4-magnetic-field-of-a-current-loop"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "A bar magnet and a current loop share a far-field pattern",
+      "formula": "Dipole moment m: S to N within a bar magnet; current loop: m = IA n_hat; closed-surface magnetic flux = 0",
+      "points": [
+        "Magnetic field lines continue through the magnet rather than ending at a pole.",
+        "Outside a bar magnet, field lines run from N toward S; inside, from S toward N.",
+        "The equivalent dipole description applies far from a localized magnetic source."
+      ],
+      "script": "Hey, welcome back. We have used a coil's magnetic moment to predict torque. Now we ask what field a magnetic dipole creates around itself. A bar magnet and a small current loop can produce the same leading field pattern at large distances if their magnetic moments match. For a bar magnet, the moment points from its south end toward its north end. For a current loop, the right-hand rule gives the normal, and the moment magnitude is current times enclosed area. The moment is not the same thing as the local magnetic field at every point. Outside a bar magnet, field lines leave the north region and curve toward the south region. Inside the magnet, they continue from south toward north. They do not simply stop at the poles. In the standard magnetism model, the net magnetic flux through any closed surface is zero. Unlike the electric field of an isolated charge, a bar magnet's field has no separate magnetic source or sink. The tangent to a field line gives the local field direction. It does not directly give the force direction on a moving charge, which still requires velocity cross B. Our quantitative dipole formulas describe points far outside a localized source, at distances much larger than its size. Close to a real magnet, shape and magnetization details matter. Treat the dipole as an approximation with a useful range, not a tiny drawing that makes every nearby field exact."
+    },
+    {
+      "title": "Axial field: along the moment on both sides",
+      "formula": "Far axial field: B_axial vector = (mu0/(4pi)) (2m vector/r^3); r measured from source center",
+      "points": [
+        "The axis passes through the magnet's center and both poles.",
+        "Outside on either side of that axis, the field is parallel to the moment.",
+        "The far-field magnitude falls as 1/r^3, not 1/r or 1/r^2."
+      ],
+      "script": "Put a bar magnet horizontally, south on the left and north on the right. Its moment points right. The axial line passes through both poles and the center. At a point far to the right of the north end, the field points right, away from the north region. What about a point far to the left of the south end? Take a moment to draw the arrow. The field points toward the south region, which is also right. So the far axial field is parallel to the moment on both sides. It is not automatically outward from the center. Its magnitude is mu zero over four pi, multiplied by two times moment divided by r cubed. Here r is distance from the center of the localized dipole, not distance from the nearest pole. In vacuum or approximately air, use mu zero over four pi approximately ten to the minus seven in SI units. Suppose moment is zero point eight ampere meter squared and the axial point is zero point four meters from the center, sufficiently far compared with the magnet's size. Cube zero point four to get zero point zero six four. The field is two point five microtesla. Double the distance while staying on the axis. The field becomes one eighth as large, zero point three one two five microtesla. That cube dependence is characteristic of the far dipole field. Always check geometry, distance reference and the approximation before substituting numbers."
+    },
+    {
+      "title": "Equatorial field: opposite to the moment",
+      "formula": "Far equatorial field: B_equatorial vector = -(mu0/(4pi)) (m vector/r^3); equal-r magnitudes B_axial/B_equatorial = 2",
+      "points": [
+        "The equatorial line is perpendicular to the axis through the center.",
+        "The field is antiparallel to the dipole moment at equatorial points.",
+        "The factor-of-two comparison requires the same center distance and the far-field limit."
+      ],
+      "script": "Now move to the perpendicular bisector of the magnet, called its equatorial line in our drawing. Keep the moment pointing right. At a distant point above the center, symmetry cancels the vertical parts of the field, while the horizontal parts point left. The same happens below the center. Thus the equatorial field is opposite to the moment. Its magnitude is mu zero over four pi, times moment divided by r cubed. Compared at the same center distance in the far-field limit, the axial magnitude is twice the equatorial magnitude. For our zero point eight ampere meter squared moment at zero point four meters, equatorial field is one point two five microtesla, pointing left. The axial value at that same distance is two point five microtesla, pointing right. The equatorial field is not zero just because the point lies on a symmetry line. Symmetry can cancel one component while leaving another. Also, the ratio of two is not a rule for arbitrary points near a finite magnet. Distance matters. If an axial point is twice as far from the center as an equatorial point, its field magnitude is two divided by eight, or one quarter of the equatorial value. If the question says equal fields instead, the axial distance must be cube root of two times the equatorial distance. Do the cube scaling before reaching for a familiar ratio."
+    },
+    {
+      "title": "Why a finite source cannot be a point dipole everywhere",
+      "formula": "Thin circular loop axis: B = mu0 I R^2/[2(R^2+x^2)^(3/2)]; x >> R gives B approximately mu0 (2m)/(4pi x^3)",
+      "points": [
+        "The exact circular-loop expression is not an exact formula for every bar magnet.",
+        "At large x, substitute m = I pi R^2 to recover the axial dipole field.",
+        "At the center, a finite loop has finite B; the point-dipole approximation is invalid there."
+      ],
+      "script": "Let's test the approximation using a source we can calculate: a thin circular current loop in vacuum. On its axis at distance x from the center, the field magnitude is mu zero I R squared divided by two times the quantity R squared plus x squared raised to three halves. This is the circular-loop result, not a universal exact bar-magnet formula. When x is much larger than loop radius R, the denominator is approximately two x cubed. Replace I pi R squared by the loop's moment, and the expression becomes the same far axial dipole field. We can even check how close the approximation is. Exact loop field divided by its far-field estimate is the quantity one plus R squared over x squared raised to minus three halves. At x equal to ten radii, this ratio is about zero point nine eight five. The exact value is about ninety-eight point five percent of the estimate. At x equal to one radius, the ratio is only about zero point three five four. That is not a small correction. At the center, x is zero and the actual loop field is mu zero I divided by two R, which is finite. The point-dipole formula would diverge there because we have used it outside its range. A formula's apparent infinity can be a warning about its model, not a claim that a real magnet produces infinite field. For a finite bar magnet, choose a suitable source model or supplied result when the far-field condition is absent."
+    },
+    {
+      "title": "Superposition: a zero field is a local vector cancellation",
+      "formula": "B_total = B_dipole + B_external; equator: -1.25 microT x_hat + 1.25 microT x_hat = 0",
+      "points": [
+        "Add field components with direction, not just their positive magnitudes.",
+        "A cancellation at one point does not erase the magnetic source.",
+        "A compass responds to the local resultant field; field direction is undefined at an exact zero."
+      ],
+      "script": "Finish with two sources. Our dipole has moment zero point eight ampere meter squared pointing right. Add a uniform external field of one point two five microtesla pointing right. At an equatorial point zero point four meters from the center, the dipole field is one point two five microtesla left. The two fields cancel there in our far-field model. At an axial point at the same center distance, the dipole field is two point five microtesla right. Add the external field to get three point seven five microtesla right. One source has not switched off; its vector contribution cancels another only at the specified location. Now change the external field to point upward, keeping its magnitude one point two five microtesla. At the equatorial point, we have equal perpendicular components: left from the dipole and up from the external field. The resultant magnitude is one point two five times square root of two, about one point seven seven microtesla. It points forty-five degrees above the leftward direction, not upward along either source alone. A small compass aligns with the local resultant field in a nonzero-field region. At an exact zero, that field alone supplies no preferred alignment. Other fields and disturbances can matter. Keep the three decisions separate: identify axial or equatorial geometry, verify distance is large relative to source size, and add vectors. We have connected coils, bar magnets and dipole fields. Next we will examine how different materials respond to an applied magnetic field."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "For a bar magnet with S left and N right, its magnetic moment points:",
+      "options": [
+        "Right, from S to N",
+        "Left, from N to S",
+        "Up",
+        "Along every external field line"
+      ],
+      "answer": 0,
+      "explanation": "The bar magnet's moment is directed from south toward north within the magnet."
+    },
+    {
+      "question": "Far outside the south end on a bar magnet's axis, B is:",
+      "options": [
+        "Antiparallel to the moment",
+        "Parallel to the moment",
+        "Zero",
+        "Always away from the magnet"
+      ],
+      "answer": 1,
+      "explanation": "The field points toward the south end there. This is parallel to the S-to-N moment, just as on the other axial side."
+    },
+    {
+      "question": "For m = 0.80 A m^2 and far equatorial distance r = 0.40 m, B is approximately:",
+      "options": [
+        "2.50 microT along m",
+        "1.25 microT along m",
+        "1.25 microT opposite m",
+        "0 microT"
+      ],
+      "answer": 2,
+      "explanation": "Magnitude = 10^-7 x 0.80/(0.40)^3 = 1.25 x 10^-6 T. Equatorial field is opposite to m."
+    },
+    {
+      "question": "An axial observation point is twice as far from the dipole center as an equatorial point. In the far-field limit, B_axial/B_equatorial is:",
+      "options": [
+        "2",
+        "8",
+        "1/8",
+        "1/4"
+      ],
+      "answer": 3,
+      "explanation": "The axial factor 2 is divided by the distance factor 2 cubed: 2/8 = 1/4."
+    },
+    {
+      "question": "For a circular loop at axial x = 10R, exact B divided by its far-dipole estimate is approximately:",
+      "options": [
+        "0.985",
+        "1.000 exactly",
+        "0.354",
+        "10"
+      ],
+      "answer": 0,
+      "explanation": "The ratio is (1 + R^2/x^2)^(-3/2) = (1.01)^(-3/2), approximately 0.985."
+    },
+    {
+      "question": "A 1.25 microT leftward dipole field combines with a 1.25 microT upward external field. Resultant is:",
+      "options": [
+        "2.50 microT upward",
+        "Approximately 1.77 microT, 45 degrees above left",
+        "0 microT",
+        "1.25 microT left"
+      ],
+      "answer": 1,
+      "explanation": "Perpendicular equal components give magnitude 1.25 sqrt(2) microT and a diagonal up-left direction."
+    }
+  ]
+}

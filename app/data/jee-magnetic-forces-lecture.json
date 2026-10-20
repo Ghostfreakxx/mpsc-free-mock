@@ -1,0 +1,140 @@
+{
+  "title": "Magnetic forces and charged-particle motion",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 13",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Magnetic fields and lines",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/11-2-magnetic-fields-and-lines"
+    },
+    {
+      "title": "OpenStax: Motion of a charged particle in a magnetic field",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/11-3-motion-of-a-charged-particle-in-a-magnetic-field"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Force direction: velocity cross magnetic field",
+      "formula": "F = q(v x B); magnitude = |q| v B sin(theta)",
+      "points": [
+        "Force is perpendicular to both velocity and magnetic field.",
+        "Find v cross B for positive charge; reverse for negative charge.",
+        "Parallel or antiparallel velocity gives zero magnetic force."
+      ],
+      "script": "Hey, welcome back. We have learned how currents produce magnetic fields. Now let's ask what a magnetic field does to a moving charge. The magnetic force is q times velocity cross magnetic field. Its magnitude is the absolute value of charge times speed times field strength times sine of the angle between velocity and field. That angle belongs between velocity and B, not between force and B. Imagine a positive charge moving right while the field points into the page, shown by crosses. Right cross into the page gives upward force. For a negative charge moving the same way, reverse that answer: the force is downward. Take a moment to picture both arrows. Your right-hand rule finds velocity cross B first; the sign of charge comes afterward. A stationary particle has no magnetic force. A particle moving parallel or opposite to the field also has zero magnetic force, because the sine is zero. Perpendicular motion gives the largest magnitude. For charge two microcoulombs, speed three hundred meters per second, and perpendicular field zero point five tesla, the force is three times ten to the minus four newtons. If the angle becomes thirty degrees, the force halves. In JEE questions, settle the direction and angle before doing arithmetic. The cross product is more than a formula: it tells us which way the path starts to bend."
+    },
+    {
+      "title": "Why a magnetic field bends motion without speeding it up",
+      "formula": "F dot v = 0; magnetic work = 0; uniform perpendicular motion: |q|vB = mv^2/r",
+      "points": [
+        "A magnetic force alone changes velocity direction, not speed or kinetic energy.",
+        "Uniform B and perpendicular initial velocity produce circular motion.",
+        "Assume nonrelativistic motion, negligible radiation and no other forces."
+      ],
+      "script": "Can a magnetic field make a particle faster? With magnetic force alone, no. Force is always perpendicular to the instantaneous velocity. Power is force dot velocity, which is zero. So magnetic work is zero and kinetic energy stays constant. Velocity can still change, because velocity includes direction. Think of steering a moving bicycle without increasing its speed: changing direction is a real acceleration. Our particle is an idealized example, with no electric field, gravity or collisions affecting the motion, and radiation neglected. We also use speeds small compared with the speed of light. In a uniform magnetic field, if velocity is initially perpendicular to B, the force stays perpendicular to velocity and has constant magnitude. It acts as the centripetal force for a circular path. Set absolute q times v times B equal to m times v squared divided by r. Cancel one v, and the radius is m v divided by absolute q B. Larger momentum means a wider circle. Stronger field or larger charge magnitude means a tighter circle. A negative charge bends the opposite way but has the same radius as a positive particle with the same mass, speed and charge magnitude. Do not confuse no work with no acceleration. Speed stays fixed, while the direction keeps turning. And do not use the circle formula for every magnetic field: a nonuniform field can produce a more complicated trajectory."
+    },
+    {
+      "title": "Circular motion: radius, period and a worked proton example",
+      "formula": "r = mv/(|q|B); T = 2pi m/(|q|B); f = |q|B/(2pi m)",
+      "points": [
+        "In the nonrelativistic uniform-field model, period is independent of speed.",
+        "A semicircle takes T/2 and its endpoint displacement magnitude is 2r.",
+        "The path length for a semicircle is pi r, not 2r."
+      ],
+      "script": "Let's give the circle some numbers. A proton enters a uniform field of zero point two zero tesla at one million meters per second, perpendicular to the field. Use proton mass one point six seven times ten to the minus twenty-seven kilograms and charge magnitude one point six zero times ten to the minus nineteen coulombs. Radius is mass times speed divided by charge magnitude times field. The result is about zero point zero five two two meters, or five point two two centimeters. Now how long does one turn take? Time equals circumference divided by speed: two pi r over v. Substituting the radius cancels v and gives period two pi m over absolute q B. For this proton, the period is about zero point three two eight microseconds. Double its speed within our nonrelativistic model. What changes? Pause and decide. The radius doubles, but the period stays the same: the longer circumference is traveled at twice the speed. For a semicircular passage through a suitable field region, travel time is half the period. The distance traveled is pi r, while displacement magnitude between the endpoints is two r. Those are different quantities. Here the endpoint separation is about ten point four four centimeters. Always check the region's geometry before assuming the particle actually completes a semicircle. A boundary can make it leave earlier, and the direction of charge decides which side it bends toward."
+    },
+    {
+      "title": "Oblique entry: separate the circle from the forward motion",
+      "formula": "v_perp = v sin(theta); v_parallel = v cos(theta); r = mv_perp/(|q|B); pitch = v_parallel T",
+      "points": [
+        "The perpendicular component rotates; the parallel component stays constant.",
+        "The trajectory is a helix in a uniform magnetic field.",
+        "Pitch is axial displacement per turn; its sign follows the parallel velocity."
+      ],
+      "script": "What if the velocity is neither parallel nor perpendicular to the field? Split it into two components. The parallel component is v cosine theta, and the perpendicular component is v sine theta, with theta measured from the magnetic-field direction. The parallel component produces no magnetic force and stays constant. The perpendicular component rotates exactly as in circular motion. Combine that circle with steady progress along the field, and the path becomes a helix. Its radius uses only perpendicular speed: m v perpendicular divided by absolute q B. Its period remains two pi m divided by absolute q B. The pitch is axial displacement during one turn, so multiply parallel velocity by the period. Using our same proton and field, let total speed be one million meters per second at thirty degrees to B. Perpendicular speed is half a million meters per second, and parallel speed is about eight hundred sixty-six thousand meters per second. The radius becomes two point six one centimeters. The period stays about zero point three two eight microseconds, and pitch is about zero point two eight four meters. At ninety degrees, parallel speed vanishes, so the helix becomes a circle with zero pitch. At zero degrees, perpendicular speed vanishes and the particle moves straight along B; there is no actual circular orbit to time. A negative charge reverses the rotational sense, not the unchanged parallel motion. Keep those two independent pieces separate in your sketch."
+    },
+    {
+      "title": "Electric and magnetic forces together: select a speed",
+      "formula": "F = q(E + v x B); crossed-field selector: v = E/B when forces oppose",
+      "points": [
+        "An electric field can do work; magnetic force alone cannot.",
+        "For undeviated selector motion, E and v cross B must cancel as vectors.",
+        "Equal force magnitudes without opposite directions are insufficient."
+      ],
+      "script": "Finally, bring in an electric field. The total electromagnetic force is q times the quantity E plus velocity cross B. Unlike magnetic force, electric force can have a component along motion and can change kinetic energy. A velocity selector uses perpendicular electric and magnetic fields to let one speed pass without deflection. Picture velocity to the right and magnetic field into the page. For a positive charge, magnetic force points upward. Choose the electric field downward, so electric force points downward. At the selected speed, the magnitudes match: absolute q E equals absolute q v B. Cancel the charge magnitude and get v equal to E divided by B. Take electric field six thousand newtons per coulomb and magnetic field zero point zero two tesla. Selected speed is three hundred thousand meters per second. For negative charges, both forces reverse, so cancellation still occurs at the same speed when the entry direction is unchanged. A faster positive particle initially bends upward, because its magnetic force is larger. A slower positive particle initially bends downward. Equal magnitudes would not cancel if the force directions were the same, so draw the vectors first. This is a crossed-field application, not a claim that all electric and magnetic motion is circular. Our toolkit now has force direction, unchanged speed under magnetic force alone, circle radius and period, helical pitch, and a selector condition. Try the practice questions, keeping the physical assumptions beside each formula."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A positive charge moves right through B directed into the page. Magnetic force points:",
+      "options": [
+        "Upward",
+        "Downward",
+        "Right",
+        "Into the page"
+      ],
+      "answer": 0,
+      "explanation": "Right cross into the page points upward for positive charge. Negative charge would reverse the force."
+    },
+    {
+      "question": "With magnetic force alone and radiation neglected, which stays constant?",
+      "options": [
+        "Velocity vector",
+        "Kinetic energy",
+        "Acceleration vector",
+        "Position"
+      ],
+      "answer": 1,
+      "explanation": "F dot v = 0, so magnetic work is zero. Velocity direction can change."
+    },
+    {
+      "question": "In uniform perpendicular B, doubling nonrelativistic speed at fixed m, |q| and B gives:",
+      "options": [
+        "Same radius and twice the period",
+        "Half radius and half period",
+        "Twice radius and same period",
+        "Twice radius and twice period"
+      ],
+      "answer": 2,
+      "explanation": "r = mv/(|q|B), while T = 2pi m/(|q|B) is independent of speed."
+    },
+    {
+      "question": "A proton (m = 1.67 x 10^-27 kg, |q| = 1.60 x 10^-19 C) enters B = 0.20 T perpendicularly at 10^6 m/s. Radius is approximately:",
+      "options": [
+        "0.522 cm",
+        "52.2 cm",
+        "2.61 cm",
+        "5.22 cm"
+      ],
+      "answer": 3,
+      "explanation": "r = (1.67 x 10^-27 x 10^6)/(1.60 x 10^-19 x 0.20) = 0.0521875 m."
+    },
+    {
+      "question": "In an ideal uniform-B helix, pitch is:",
+      "options": [
+        "v_parallel T",
+        "v_perp T",
+        "2pi r",
+        "v T for every angle"
+      ],
+      "answer": 0,
+      "explanation": "Pitch is displacement along the field during one complete turn."
+    },
+    {
+      "question": "A correctly oriented crossed-field selector has E = 6000 N/C and B = 0.020 T. Selected speed is:",
+      "options": [
+        "120 m/s",
+        "3.0 x 10^5 m/s",
+        "3.0 x 10^3 m/s",
+        "1.2 x 10^5 m/s"
+      ],
+      "answer": 1,
+      "explanation": "Opposing forces cancel at v = E/B = 6000/0.020 = 300000 m/s."
+    }
+  ]
+}

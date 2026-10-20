@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "unit": 17,
+  "title": "Dual-nature applications: stopping graphs, photon counts and matter waves",
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 official syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: photoelectric effect",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/6-2-photoelectric-effect"
+    },
+    {
+      "title": "OpenStax: wave-particle duality",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/6-6-wave-particle-duality"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Read the stopping-potential graph, not just its height",
+      "formula": "Vs = (h/e) frequency - work_function/e",
+      "points": [
+        "Slope gives h/e; frequency intercept gives the threshold.",
+        "Below threshold, do not extend a negative stopping-potential prediction as an emitted-electron observation.",
+        "Stopping potential measures maximum kinetic energy, not the total photocurrent."
+      ],
+      "script": "Hey, welcome back. Let's turn the photoelectric equation into a graph we can actually read. The fastest emitted electrons have kinetic energy h times frequency minus the work function. A retarding potential stops even those electrons when e times the stopping-potential magnitude equals that maximum energy. So stopping potential versus frequency is a straight line above threshold. Its slope is h divided by e. Its horizontal intercept is the threshold frequency, and its extrapolated vertical intercept is minus the work function divided by e. That vertical intercept is a mathematical extrapolation, not an emitted-electron measurement below threshold. Take an illustrative surface with work function two electron volts. Use h over e approximately four point one three six times ten to the minus fifteen volt seconds. At frequency six times ten to the fourteen hertz, stopping potential is zero point four eight one six volts. At ten times ten to the fourteen hertz, it is two point one three six volts. Subtract the two stopping potentials and divide by the frequency difference. You recover the same slope. The threshold is approximately four point eight three six times ten to the fourteen hertz. Now make the light brighter without changing frequency. Think before changing the graph. In the ideal one-photon picture, you increase photon arrival rate and can increase photocurrent, but you do not increase the maximum energy per emitted electron. Saturation current and stopping potential answer different questions. Real surfaces, contact potentials and experimental offsets require care, but our numerical graph uses the stated ideal model. For JEE, label the axes and their units before reading a slope. A slope of energy against frequency gives h; a slope of voltage against frequency gives h over e."
+    },
+    {
+      "title": "Photon energy and photon rate are different calculations",
+      "formula": "Ephoton = hc/lambda; photon_rate = optical_power/Ephoton",
+      "points": [
+        "Use consistent energy units before subtracting the work function.",
+        "Specify the fraction of incident photons producing collected electrons.",
+        "Subthreshold photons do not become individually energetic merely because the beam is brighter."
+      ],
+      "script": "Now compare two beams on that same two-electron-volt surface. Use h c approximately twelve hundred forty electron volt nanometres. A four-hundred-nanometre photon has energy three point one electron volts. After paying the work function, the maximum emitted kinetic energy is one point one electron volts, and the ideal stopping potential is one point one volts. An eight-hundred-nanometre photon has only one point five five electron volts. In this ordinary one-photon model, it cannot eject an electron from this surface. We are not discussing intense-field multiphoton processes. Next, give the four-hundred-nanometre beam optical power two milliwatts. Power is energy delivered per second, so divide by photon energy in joules to count arriving photons. Using one electron volt approximately one point six zero two times ten to the minus nineteen joules, each photon carries about four point nine six six times ten to the minus nineteen joules. The arrival rate is about four point zero three times ten to the fifteen photons per second. Suppose only zero point one percent of those incident photons produce collected electrons in our stated efficiency model. Multiply by zero point zero zero one, then by the elementary charge. The current is about zero point six four five microamperes. Pause and separate the two answers: one point one volts describes the maximum electron energy, while the microampere result depends on photon rate and collection efficiency. Do not quietly assume every photon creates an electron that reaches the collector. A JEE numerical should state or justify that efficiency assumption. Doubling optical power at fixed wavelength doubles the predicted current in this simple linear model, but leaves the maximum kinetic energy unchanged."
+    },
+    {
+      "title": "Compare matter waves using momentum first",
+      "formula": "lambda = h/p; nonrelativistic p = sqrt(2mK)",
+      "points": [
+        "Equal momentum means equal de Broglie wavelength.",
+        "At equal kinetic energy, the lighter particle has the longer wavelength.",
+        "Acceleration from rest through V gives K = |q|V, within the stated model."
+      ],
+      "script": "For matter waves, start with momentum. De Broglie wavelength is h divided by momentum. It is not h divided by speed. Two particles with the same momentum have the same wavelength even if their masses differ. For nonrelativistic kinetic energy K, momentum magnitude is the square root of two m K. Therefore wavelength is inversely proportional to the square root of mass at equal kinetic energy. Compare an electron and a proton with the same small kinetic energy. Using proton mass about eighteen hundred thirty-six electron masses, the electron wavelength is about the square root of eighteen hundred thirty-six times the proton wavelength. That ratio is approximately forty-two point eight five. Now accelerate an electron from rest through one hundred fifty volts. Its kinetic energy is one hundred fifty electron volts. A convenient nonrelativistic electron relation gives wavelength in angstroms as approximately twelve point two seven divided by the square root of the accelerating voltage in volts. The result is about one point zero zero two angstroms, or zero point one zero zero two nanometres. One angstrom is ten to the minus ten metres. What if you increase that voltage by a factor of four? Pause. Momentum doubles and wavelength halves, in the nonrelativistic regime. Equal accelerating voltage is not always equal energy for different charge magnitudes: an ion carrying twice the elementary charge gains twice the energy. At sufficiently large kinetic energies, the simple square-root relation fails and relativistic momentum is needed. The core de Broglie relation still uses the correct momentum. Our examples deliberately stay at low energy. Distinguish equal speed, equal kinetic energy, equal accelerating voltage and equal momentum: those phrases select different comparisons."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The slope of stopping potential versus frequency is:",
+      "options": [
+        "h",
+        "h/e",
+        "e/h",
+        "The work function"
+      ],
+      "answer": 1,
+      "explanation": "From eVs = hf - work function, the voltage slope is h/e."
+    },
+    {
+      "question": "A 400 nm photon hits a surface with work function 2 eV. Use hc = 1240 eV nm. Maximum kinetic energy is:",
+      "options": [
+        "3.1 eV",
+        "5.1 eV",
+        "1.1 eV",
+        "0.55 eV"
+      ],
+      "answer": 2,
+      "explanation": "1240/400 - 2 = 1.1 eV."
+    },
+    {
+      "question": "At the same nonrelativistic kinetic energy, lambda_e/lambda_p is approximately:",
+      "options": [
+        "42.85",
+        "1836",
+        "1",
+        "1/1836"
+      ],
+      "answer": 0,
+      "explanation": "Wavelength varies as 1/sqrt(m); use sqrt(1836)."
+    },
+    {
+      "question": "Two particles with equal momentum have:",
+      "options": [
+        "Equal speeds",
+        "Equal kinetic energies always",
+        "Equal masses",
+        "Equal de Broglie wavelengths"
+      ],
+      "answer": 3,
+      "explanation": "lambda = h/p depends directly on momentum."
+    },
+    {
+      "question": "Doubling optical power at fixed above-threshold frequency in the stated linear collection model changes maximum electron energy by:",
+      "options": [
+        "Doubling it",
+        "Leaving it unchanged",
+        "Halving it",
+        "Making it zero"
+      ],
+      "answer": 1,
+      "explanation": "More photons change rate, not each photon energy."
+    }
+  ]
+}

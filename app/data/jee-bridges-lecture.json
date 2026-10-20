@@ -1,0 +1,136 @@
+{
+  "title": "Wheatstone and metre bridges: finding the balance",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 12",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "NCERT Class XII Physics: Current electricity",
+      "url": "https://www.ncert.nic.in/textbook/pdf/leph103.pdf"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Balance means equal midpoint potentials",
+      "formula": "At balance: V_B = V_C and I_G = 0; the rest of the circuit can still carry current",
+      "points": [
+        "The source connects across A and D; the detector connects between B and C.",
+        "Upper path: A-P-B-Q-D; lower path: A-R-C-S-D.",
+        "A null detector reading identifies equal potentials at the two midpoints."
+      ],
+      "script": "Hey, welcome back. A bridge is a clever way to measure resistance by finding a balance rather than measuring a large current accurately. Let's label the circuit clearly. The source connects between left node A and right node D. The upper path contains resistor P from A to B, then Q from B to D. The lower path contains R from A to C, then S from C to D. A galvanometer connects the two midpoints B and C. If their potentials are different, current can flow through that detector. At balance, their potentials are equal, so detector current is zero. This does not mean current is zero everywhere. Both outer paths can still carry current and dissipate power. Think of two voltage dividers whose middle points reach the same potential. Only then can the detector branch be omitted while calculating the outer-path currents. Before balance is established, removing it generally changes the circuit. Our model uses positive ohmic resistances, ideal connecting wires and a sensitive galvanometer with finite resistance. The source voltage is nonzero. A broken detector circuit could also show zero current, but that is not evidence of balance. In a question or an experiment, identify the source diagonal and the detector diagonal, then confirm which pair of nodes has equal potential. That node reasoning is more reliable than memorizing the shape of a diamond."
+    },
+    {
+      "title": "Derive the Wheatstone ratio",
+      "formula": "P/Q = R/S; equivalently PS = QR; valid at balance for the stated arm labels",
+      "points": [
+        "With I_G = 0, each outer path is an unloaded series pair.",
+        "Equal A-to-midpoint drops give I_upper P = I_lower R.",
+        "Equal midpoint-to-D drops give I_upper Q = I_lower S."
+      ],
+      "script": "Let's derive the balance equation from the labeled circuit. At a genuine null, the upper path carries one current through P and Q, and the lower path carries another through R and S. Equal midpoint potentials mean the drop from A to B equals the drop from A to C. Therefore upper current times P equals lower current times R. Likewise, the drops from B to D and C to D are equal, giving upper current times Q equal to lower current times S. Divide the first equation by the second. The currents cancel, leaving P over Q equal to R over S. Equivalently, P times S equals Q times R. The cancellation explains why source voltage and detector resistance do not appear in the ideal balance ratio. Let's use P equal to two ohms, Q equal to three ohms and R equal to four ohms. Balance requires S equal to six ohms. Across a ten volt source, the upper path carries two amperes and the lower path one ampere. Their A-to-midpoint drops are both four volts. Taking D as zero potential, B and C are both at six volts, so the detector has no potential difference. The equivalent resistance is five ohms in parallel with ten ohms, or ten thirds of an ohm. Total source current is three amperes. Check the arm labels before writing any ratio; another drawing may use the same letters in different positions."
+    },
+    {
+      "title": "The metre bridge turns resistance into length",
+      "formula": "X/S = l/(L-l); X = S l/(L-l); uniform wire, L = 100 cm, l measured from the X end",
+      "points": [
+        "The upper gaps contain X on the left and known S on the right.",
+        "The lower branch is a uniform wire split at the jockey contact J.",
+        "Uniform cross section and resistivity make wire resistance proportional to length."
+      ],
+      "script": "A metre bridge replaces one resistor pair with two parts of the same uniform resistance wire. Put unknown resistance X in the left upper gap and known resistance S in the right upper gap. Their common junction connects through the galvanometer to a sliding contact, called the jockey, on the lower wire. The source connects across the two ends. Let the full wire length be L, and let the jockey be distance l from the left end, the side containing X. At null, the Wheatstone ratio gives X over S equal to the resistance of the left wire part divided by that of the right part. For a uniform wire at a uniform temperature, resistance equals resistivity times length divided by area. Resistivity and cross-sectional area cancel in the ratio, leaving l divided by L minus l. The familiar one hundred minus l appears only when the total length is one hundred centimeters and l uses centimeters too. Now take a three ohm known resistance and a null at forty centimeters. The unknown is three times forty divided by sixty, giving two ohms. Why must it be smaller than the standard? Because its corresponding wire segment is shorter. This is a quick physical check. If you measure l from the other end, the ratio reverses. Draw the gap labels and state the measurement end before calculating. The uniform-wire assumption is doing real work here."
+    },
+    {
+      "title": "Swap the gaps and predict a new balance",
+      "formula": "Ideal interchange: l_new = L-l; parallel gap replacement must use the new equivalent resistance",
+      "points": [
+        "Interchanging the two resistances complements the ideal balance length.",
+        "A added parallel resistor changes the gap resistance, not the full wire length.",
+        "Work from the resistance ratio rather than guessing the shift."
+      ],
+      "script": "Let's make the previous example do more work. Unknown X is two ohms, standard S is three ohms, and the original balance is forty centimeters from the left end. Interchange the gap resistances while keeping the same uniform wire and measuring from the same left end. The new ratio is three over two, so the left segment is sixty centimeters and the right forty. The ideal balance length becomes L minus the original length. Real end resistances can prevent exact complementarity; that mismatch is one clue to systematic error. Now restore X on the left and connect another two ohm resistor in parallel with it. The left gap's equivalent resistance is one ohm, while the right gap stays three ohms. At balance, l over one hundred minus l equals one third. Multiply through: three l equals one hundred minus l, giving l equal to twenty five centimeters. Pause and check the direction of the shift. The left gap resistance decreased, so its corresponding wire segment must become shorter. The wire did not physically shrink; only the jockey position changed. If instead a resistor is added in series in the gap, add the resistances first and then solve the new ratio. Away from balance, the detector can carry current, and you need full circuit analysis to find its magnitude. The simple ratio determines a null position, not every detector reading."
+    },
+    {
+      "title": "Accuracy, assumptions and JEE checks",
+      "formula": "Small length uncertainty: deltaX/X approximately L delta l/[l(L-l)] if S and L are treated as exact",
+      "points": [
+        "Choose a standard that brings the null near the midpoint.",
+        "Contact and end resistance, heating and wire nonuniformity can bias results.",
+        "A zero detector reading requires a functioning detector and source."
+      ],
+      "script": "Let's finish by asking what makes a measurement trustworthy. A balance very close to one end uses a very short wire segment, so a small position error becomes a large fractional error. Choose a known resistance close to the unknown so the null lies near the midpoint. For small uncertainty in l, treating the standard and total length as exact, the fractional uncertainty in X is approximately L times the length uncertainty divided by l times L minus l. At forty centimeters on a one hundred centimeter wire, a point one centimeter reading uncertainty contributes about zero point four two percent. Near five centimeters, the same uncertainty contributes about two point one percent. This comparison explains the midpoint preference; it is not just a laboratory tradition. Real measurements also have uncertainty in the standard and total length. Wire nonuniformity, end resistance and contact resistance can bias the ideal formula. Gentle jockey contact and brief current flow help avoid damaging or heating the wire. Interchanging gaps can help assess end effects, but do not claim that every systematic error is automatically removed by one swap. For JEE, check five things: a functioning detector, a nonzero source, the gap labels, the end from which length is measured, and the uniform-wire assumption. For a balanced Wheatstone bridge, confirm equal midpoint potentials before omitting the detector. For a metre bridge, compare the resistance ratio with the segment-length ratio. Those two checks bring the entire lesson together."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "At a genuine bridge balance with a functioning finite-resistance detector:",
+      "options": [
+        "Every branch current is zero",
+        "The detector midpoints have equal potential",
+        "The source voltage is zero",
+        "All four arms have equal resistance"
+      ],
+      "answer": 1,
+      "explanation": "At null, the midpoint potential difference and detector current are zero; outer-path currents can remain nonzero."
+    },
+    {
+      "question": "For paths A-P-B-Q-D and A-R-C-S-D, a balanced bridge with P=2, Q=3, R=4 ohm requires S:",
+      "options": [
+        "3 ohm",
+        "8 ohm",
+        "6 ohm",
+        "2 ohm"
+      ],
+      "answer": 2,
+      "explanation": "P/Q = R/S implies S = QR/P = 6 ohm."
+    },
+    {
+      "question": "With these balanced arms across 10 V and D at 0 V, both midpoint potentials are:",
+      "options": [
+        "6 V",
+        "4 V",
+        "10 V",
+        "0 V"
+      ],
+      "answer": 0,
+      "explanation": "Upper current 2 A gives a 4 V drop across P. Lower current 1 A gives the same drop across R. Both midpoints are at 6 V."
+    },
+    {
+      "question": "X is in the left gap and S=3 ohm in the right. A uniform 100 cm wire balances at 40 cm from the left. X is:",
+      "options": [
+        "4.5 ohm",
+        "3 ohm",
+        "1 ohm",
+        "2 ohm"
+      ],
+      "answer": 3,
+      "explanation": "X = S l/(100-l) = 3 x 40/60 = 2 ohm."
+    },
+    {
+      "question": "Interchanging those gap resistances in the ideal bridge gives a new balance from the same left end at:",
+      "options": [
+        "40 cm",
+        "60 cm",
+        "20 cm",
+        "80 cm"
+      ],
+      "answer": 1,
+      "explanation": "The ratio reverses and l_new = 100 - 40 = 60 cm."
+    },
+    {
+      "question": "Restore X=2 ohm on the left and S=3 ohm on the right. Add 2 ohm in parallel with X. The new balance is:",
+      "options": [
+        "50 cm",
+        "40 cm",
+        "25 cm",
+        "75 cm"
+      ],
+      "answer": 2,
+      "explanation": "Left equivalent resistance is 1 ohm; l/(100-l) = 1/3 gives l = 25 cm."
+    }
+  ]
+}

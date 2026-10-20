@@ -1,0 +1,817 @@
+{
+  "duration": 418.3680000000131,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 135.0480000000042
+    },
+    {
+      "start": 135.0480000000042,
+      "end": 273.50400000000855
+    },
+    {
+      "start": 273.50400000000855,
+      "end": 418.3680000000131
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 0.7599999904632568,
+      "text": "Welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.5,
+      "end": 5.400000095367432,
+      "text": "Let's see where the mirror equation comes from, instead of treating it as a",
+      "chapter": 0
+    },
+    {
+      "start": 5.400000095367432,
+      "end": 5.739999771118164,
+      "text": "password.",
+      "chapter": 0
+    },
+    {
+      "start": 6.039999961853027,
+      "end": 10.319999694824219,
+      "text": "Our picture is a concave spherical mirror, a real upright object beyond the",
+      "chapter": 0
+    },
+    {
+      "start": 10.319999694824219,
+      "end": 11.899999618530273,
+      "text": "focus, and a real inverted image.",
+      "chapter": 0
+    },
+    {
+      "start": 12.859999656677246,
+      "end": 17.31999969482422,
+      "text": "For this derivation only, capital U, V and F are positive distance magnitudes",
+      "chapter": 0
+    },
+    {
+      "start": 17.31999969482422,
+      "end": 18.399999618530273,
+      "text": "measured from the pole.",
+      "chapter": 0
+    },
+    {
+      "start": 19.299999237060547,
+      "end": 22.780000686645508,
+      "text": "Object height is h, and inverted image height magnitude is H.",
+      "chapter": 0
+    },
+    {
+      "start": 23.399999618530273,
+      "end": 25.459999084472656,
+      "text": "One ray goes from the object tip to the pole.",
+      "chapter": 0
+    },
+    {
+      "start": 25.459999084472656,
+      "end": 30.92461453951322,
+      "text": "Equal angles of reflection give two similar triangles, so H divided by h",
+      "chapter": 0
+    },
+    {
+      "start": 30.92461453951322,
+      "end": 31.3799991607666,
+      "text": "equals",
+      "chapter": 0
+    },
+    {
+      "start": 31.3799991607666,
+      "end": 32.34000015258789,
+      "text": "V divided by U.",
+      "chapter": 0
+    },
+    {
+      "start": 33.040000915527344,
+      "end": 36.68000030517578,
+      "text": "A second ray travels parallel to the axis and reflects through the focus.",
+      "chapter": 0
+    },
+    {
+      "start": 37.31999969482422,
+      "end": 40.959999084472656,
+      "text": "In the paraxial approximation its reflection point is effectively in the pole",
+      "chapter": 0
+    },
+    {
+      "start": 40.959999084472656,
+      "end": 42.220001220703125,
+      "text": "plane, at height h.",
+      "chapter": 0
+    },
+    {
+      "start": 42.560001373291016,
+      "end": 47.15999984741211,
+      "text": "On its reflected path, the height falls from h to zero over distance F, then",
+      "chapter": 0
+    },
+    {
+      "start": 47.15999984741211,
+      "end": 50.040000915527344,
+      "text": "from zero to minus H over distance V minus F.",
+      "chapter": 0
+    },
+    {
+      "start": 50.7599983215332,
+      "end": 55.84000015258789,
+      "text": "Those similar triangles give H divided by h equal to V minus F, divided by F.",
+      "chapter": 0
+    },
+    {
+      "start": 56.619998931884766,
+      "end": 57.900001525878906,
+      "text": "Set our two ratios equal.",
+      "chapter": 0
+    },
+    {
+      "start": 58.540000915527344,
+      "end": 60.619998931884766,
+      "text": "V over U equals V over F minus one.",
+      "chapter": 0
+    },
+    {
+      "start": 61.2599983215332,
+      "end": 65.4800033569336,
+      "text": "Divide by V and rearrange: one over U plus one over V equals one over F.",
+      "chapter": 0
+    },
+    {
+      "start": 66.12000274658203,
+      "end": 69.33999633789062,
+      "text": "This is why both ray geometry and the equation locate the same image.",
+      "chapter": 0
+    },
+    {
+      "start": 70.0999984741211,
+      "end": 72.44000244140625,
+      "text": "Now translate, don't mix, sign conventions.",
+      "chapter": 0
+    },
+    {
+      "start": 73.13999938964844,
+      "end": 76.87999725341797,
+      "text": "With incident light rightward and the pole at zero, this real concave mirror",
+      "chapter": 0
+    },
+    {
+      "start": 76.87999725341797,
+      "end": 81.41999816894531,
+      "text": "case has u equals minus U, v equals minus V, and f equals minus F.",
+      "chapter": 0
+    },
+    {
+      "start": 82.18000030517578,
+      "end": 86.19999694824219,
+      "text": "The Cartesian result is one over u plus one over v equals one over f.",
+      "chapter": 0
+    },
+    {
+      "start": 86.91999816894531,
+      "end": 88.9000015258789,
+      "text": "Signed magnification is minus v over u.",
+      "chapter": 0
+    },
+    {
+      "start": 89.63999938964844,
+      "end": 92.18000030517578,
+      "text": "Try u minus thirty centimeters and f minus ten.",
+      "chapter": 0
+    },
+    {
+      "start": 92.76000213623047,
+      "end": 96.73999786376953,
+      "text": "The equation gives v minus fifteen, and magnification minus one half.",
+      "chapter": 0
+    },
+    {
+      "start": 97.04000091552734,
+      "end": 100.63999938964844,
+      "text": "A two centimeter upright object gives an inverted one centimeter image.",
+      "chapter": 0
+    },
+    {
+      "start": 101.4000015258789,
+      "end": 103.83999633789062,
+      "text": "Now why is focal length half the spherical radius?",
+      "chapter": 0
+    },
+    {
+      "start": 103.83999633789062,
+      "end": 108.23999786376953,
+      "text": "A near axis parallel ray meets a normal tilted by a small angle theta.",
+      "chapter": 0
+    },
+    {
+      "start": 109.36000061035156,
+      "end": 112.68000030517578,
+      "text": "Reflection turns the return ray through twice that angle relative to the axis.",
+      "chapter": 0
+    },
+    {
+      "start": 113.58000183105469,
+      "end": 117.5199966430664,
+      "text": "Using tangent theta approximately theta, the same ray height divided by focus",
+      "chapter": 0
+    },
+    {
+      "start": 117.5199966430664,
+      "end": 120.08000183105469,
+      "text": "distance is twice height divided by radius.",
+      "chapter": 0
+    },
+    {
+      "start": 120.9800033569336,
+      "end": 123.23999786376953,
+      "text": "Thus F is R magnitude over two.",
+      "chapter": 0
+    },
+    {
+      "start": 124,
+      "end": 127.22000122070312,
+      "text": "Wider rays violate that small angle step and can produce spherical aberration.",
+      "chapter": 0
+    },
+    {
+      "start": 127.72000122070312,
+      "end": 131.76744314340445,
+      "text": "We have explained the formula and its limits, not claimed that every ray from",
+      "chapter": 0
+    },
+    {
+      "start": 131.76744314340445,
+      "end": 131.82000732421875,
+      "text": "a",
+      "chapter": 0
+    },
+    {
+      "start": 131.82000732421875,
+      "end": 133.82000732421875,
+      "text": "wide spherical mirror shares one exact focus.",
+      "chapter": 0
+    },
+    {
+      "start": 135.0480000000042,
+      "end": 137.98800005722467,
+      "text": "Let's build the curved refraction equation from Snell's law.",
+      "chapter": 1
+    },
+    {
+      "start": 138.50800003815118,
+      "end": 142.46800007629815,
+      "text": "Light travels left to right, from index n one to index n two.",
+      "chapter": 1
+    },
+    {
+      "start": 142.46800007629815,
+      "end": 145.00800003815118,
+      "text": "Draw a surface convex toward a real object on the left.",
+      "chapter": 1
+    },
+    {
+      "start": 145.56800045776788,
+      "end": 149.52799954224054,
+      "text": "Its center is on the right, and for our pictured case a real image is also on",
+      "chapter": 1
+    },
+    {
+      "start": 149.52799954224054,
+      "end": 149.8279997329754,
+      "text": "the right.",
+      "chapter": 1
+    },
+    {
+      "start": 150.24799980926934,
+      "end": 153.28799977112237,
+      "text": "A ray meets the surface a small height h above the axis.",
+      "chapter": 1
+    },
+    {
+      "start": 153.82800068664972,
+      "end": 158.50799908447686,
+      "text": "The incoming ray rises by angle alpha; the outgoing ray falls by angle beta.",
+      "chapter": 1
+    },
+    {
+      "start": 159.08800091553155,
+      "end": 162.86799969482843,
+      "text": "The radius through the point of incidence supplies the normal, whose rightward",
+      "chapter": 1
+    },
+    {
+      "start": 162.86799969482843,
+      "end": 164.58800091553155,
+      "text": "direction falls by angle gamma.",
+      "chapter": 1
+    },
+    {
+      "start": 165.22800030518,
+      "end": 169.70799984741632,
+      "text": "Therefore incidence angle is alpha plus gamma, while refraction angle is gamma",
+      "chapter": 1
+    },
+    {
+      "start": 169.70799984741632,
+      "end": 171.4879986267132,
+      "text": "minus beta in this configuration.",
+      "chapter": 1
+    },
+    {
+      "start": 172.46799816894952,
+      "end": 176.20799984741632,
+      "text": "Snell's law says n one sine incidence equals n two sine refraction.",
+      "chapter": 1
+    },
+    {
+      "start": 176.82799877930108,
+      "end": 180.02799954224054,
+      "text": "At small angles in radians, replace each sine by its angle.",
+      "chapter": 1
+    },
+    {
+      "start": 180.60800137329522,
+      "end": 185.10800137329522,
+      "text": "We get n one times alpha plus gamma equal to n two times gamma minus beta.",
+      "chapter": 1
+    },
+    {
+      "start": 185.66799893188897,
+      "end": 190.8079983215374,
+      "text": "Move terms: n one alpha plus n two beta equals n two minus n one, times gamma.",
+      "chapter": 1
+    },
+    {
+      "start": 191.36799969482843,
+      "end": 193.24800076294366,
+      "text": "Now connect angles to distances.",
+      "chapter": 1
+    },
+    {
+      "start": 193.8079983215374,
+      "end": 199.18646030602508,
+      "text": "Alpha is approximately h over minus u, beta is h over v, and gamma is h over",
+      "chapter": 1
+    },
+    {
+      "start": 199.18646030602508,
+      "end": 199.32799877930108,
+      "text": "R.",
+      "chapter": 1
+    },
+    {
+      "start": 200.1479984741253,
+      "end": 200.7479969482464,
+      "text": "Divide by h.",
+      "chapter": 1
+    },
+    {
+      "start": 201.1280018310589,
+      "end": 206.6280018310589,
+      "text": "The result is n two over v minus n one over u equals n two minus n one over R.",
+      "chapter": 1
+    },
+    {
+      "start": 206.82799877930108,
+      "end": 210.55723039363403,
+      "text": "Unlike a mirror, light proceeds into the second medium, and both indices",
+      "chapter": 1
+    },
+    {
+      "start": 210.55723039363403,
+      "end": 210.86799969482843,
+      "text": "belong",
+      "chapter": 1
+    },
+    {
+      "start": 210.86799969482843,
+      "end": 211.44800152588311,
+      "text": "in the equation.",
+      "chapter": 1
+    },
+    {
+      "start": 212.1479984741253,
+      "end": 217.30800213623468,
+      "text": "Let's check the existing example: n one one, n two one point five, u minus",
+      "chapter": 1
+    },
+    {
+      "start": 217.30800213623468,
+      "end": 219.94800152588311,
+      "text": "sixty centimeters, R plus twenty.",
+      "chapter": 1
+    },
+    {
+      "start": 219.94800152588311,
+      "end": 222.40800061035577,
+      "text": "The curvature term is one fortieth per centimeter.",
+      "chapter": 1
+    },
+    {
+      "start": 223.32799877930108,
+      "end": 228.0080016276084,
+      "text": "Subtract one sixtieth to find one point five over v equal to one one hundred",
+      "chapter": 1
+    },
+    {
+      "start": 228.0080016276084,
+      "end": 228.5280033569378,
+      "text": "twentieth.",
+      "chapter": 1
+    },
+    {
+      "start": 228.5280033569378,
+      "end": 230.50799908447686,
+      "text": "Thus v is plus one hundred eighty centimeters.",
+      "chapter": 1
+    },
+    {
+      "start": 230.50799908447686,
+      "end": 234.70800366211358,
+      "text": "Pause: a longer image distance is reasonable here because this surface only",
+      "chapter": 1
+    },
+    {
+      "start": 234.70800366211358,
+      "end": 236.32799877930108,
+      "text": "weakly converges the incident beam.",
+      "chapter": 1
+    },
+    {
+      "start": 237.10799755859796,
+      "end": 238.20800366211358,
+      "text": "Let R tend to infinity.",
+      "chapter": 1
+    },
+    {
+      "start": 238.70800366211358,
+      "end": 239.84800305176202,
+      "text": "The curvature term vanishes.",
+      "chapter": 1
+    },
+    {
+      "start": 240.58800091553155,
+      "end": 244.4208222969293,
+      "text": "For an object twenty centimeters inside water of index four thirds, viewed",
+      "chapter": 1
+    },
+    {
+      "start": 244.4208222969293,
+      "end": 244.6280018310589,
+      "text": "near",
+      "chapter": 1
+    },
+    {
+      "start": 244.6280018310589,
+      "end": 249.36338704114505,
+      "text": "normally from air through a plane surface, set u minus twenty and swap n one",
+      "chapter": 1
+    },
+    {
+      "start": 249.36338704114505,
+      "end": 249.48800244141046,
+      "text": "to",
+      "chapter": 1
+    },
+    {
+      "start": 249.48800244141046,
+      "end": 251.20800366211358,
+      "text": "four thirds, n two to one.",
+      "chapter": 1
+    },
+    {
+      "start": 251.72800030518,
+      "end": 255.73916610150425,
+      "text": "The equation gives v minus fifteen centimeters: a virtual image closer to the",
+      "chapter": 1
+    },
+    {
+      "start": 255.73916610150425,
+      "end": 256.2080036621136,
+      "text": "boundary.",
+      "chapter": 1
+    },
+    {
+      "start": 256.9279972534222,
+      "end": 260.3279987793011,
+      "text": "Our sketch's positive small angles are a route to the equation for that",
+      "chapter": 1
+    },
+    {
+      "start": 260.3279987793011,
+      "end": 261.18799938965265,
+      "text": "pictured configuration.",
+      "chapter": 1
+    },
+    {
+      "start": 262.1280018310589,
+      "end": 265.8418431959928,
+      "text": "Virtual images or reversed curvature require signed geometry, not an",
+      "chapter": 1
+    },
+    {
+      "start": 265.8418431959928,
+      "end": 266.38799633789483,
+      "text": "assumption",
+      "chapter": 1
+    },
+    {
+      "start": 266.38799633789483,
+      "end": 268.52799572754327,
+      "text": "that every angle keeps the pictured sign.",
+      "chapter": 1
+    },
+    {
+      "start": 269.18799938965265,
+      "end": 273.348003051762,
+      "text": "Keep the pole, incident direction and media labels visible in a JEE solution.",
+      "chapter": 1
+    },
+    {
+      "start": 273.50400000000855,
+      "end": 276.70400004769226,
+      "text": "A telescope formula depends on where the final image is.",
+      "chapter": 2
+    },
+    {
+      "start": 277.2240000286188,
+      "end": 281.1906662899739,
+      "text": "Normal adjustment means final image at infinity: relaxed viewing,",
+      "chapter": 2
+    },
+    {
+      "start": 281.1906662899739,
+      "end": 281.9839995422449,
+      "text": "magnification",
+      "chapter": 2
+    },
+    {
+      "start": 281.9839995422449,
+      "end": 286.1440003433313,
+      "text": "minus objective focal length over eyepiece focal length, and refractor lens",
+      "chapter": 2
+    },
+    {
+      "start": 286.1440003433313,
+      "end": 288.1239998855676,
+      "text": "separation their sum.",
+      "chapter": 2
+    },
+    {
+      "start": 288.1239998855676,
+      "end": 292.3039992370691,
+      "text": "Now put the final virtual image at the near point, a distance D from the",
+      "chapter": 2
+    },
+    {
+      "start": 292.3039992370691,
+      "end": 293.56399946595093,
+      "text": "eyepiece in our ideal model.",
+      "chapter": 2
+    },
+    {
+      "start": 293.7640002288904,
+      "end": 296.643999389657,
+      "text": "We neglect separation between eye and eyepiece.",
+      "chapter": 2
+    },
+    {
+      "start": 297.0240004577722,
+      "end": 300.84400015259644,
+      "text": "D is twenty five centimeters for the standard reference eye, not a fixed",
+      "chapter": 2
+    },
+    {
+      "start": 300.84400015259644,
+      "end": 301.9839995422449,
+      "text": "property of every person.",
+      "chapter": 2
+    },
+    {
+      "start": 302.62400083924194,
+      "end": 305.00400000000855,
+      "text": "The eyepiece image distance is minus D.",
+      "chapter": 2
+    },
+    {
+      "start": 305.6840003051843,
+      "end": 310.74400167847534,
+      "text": "Its thin lens equation gives one over f e equal to minus one over D minus one",
+      "chapter": 2
+    },
+    {
+      "start": 310.74400167847534,
+      "end": 312.1840003051843,
+      "text": "over u e.",
+      "chapter": 2
+    },
+    {
+      "start": 312.1840003051843,
+      "end": 315.66399984742065,
+      "text": "Therefore the intermediate image lies on its incoming side at distance",
+      "chapter": 2
+    },
+    {
+      "start": 315.66399984742065,
+      "end": 320.5240004577722,
+      "text": "magnitude s equal to f e times D divided by D plus f e.",
+      "chapter": 2
+    },
+    {
+      "start": 320.5240004577722,
+      "end": 321.9839995422449,
+      "text": "This is less than f e.",
+      "chapter": 2
+    },
+    {
+      "start": 321.9839995422449,
+      "end": 326.5240004577722,
+      "text": "The objective still forms its intermediate image approximately f o from itself",
+      "chapter": 2
+    },
+    {
+      "start": 326.5240004577722,
+      "end": 327.8039992370691,
+      "text": "for a distant object.",
+      "chapter": 2
+    },
+    {
+      "start": 328.24400167847534,
+      "end": 332.66399984742065,
+      "text": "So lens separation is f o plus s, slightly less than the normal adjustment",
+      "chapter": 2
+    },
+    {
+      "start": 332.66399984742065,
+      "end": 333.06400137329956,
+      "text": "length.",
+      "chapter": 2
+    },
+    {
+      "start": 333.90400152588745,
+      "end": 337.7145149489268,
+      "text": "The incoming object angle makes intermediate height magnitude approximately f",
+      "chapter": 2
+    },
+    {
+      "start": 337.7145149489268,
+      "end": 337.764002136239,
+      "text": "o",
+      "chapter": 2
+    },
+    {
+      "start": 337.764002136239,
+      "end": 338.58400183106323,
+      "text": "times that angle.",
+      "chapter": 2
+    },
+    {
+      "start": 339.4440024414148,
+      "end": 343.0440009155359,
+      "text": "The outgoing angle at the eyepiece is approximately that height divided by s.",
+      "chapter": 2
+    },
+    {
+      "start": 343.92399816895386,
+      "end": 349.6547665194083,
+      "text": "Hence signed magnification is minus f o over s, or minus f o over f e times",
+      "chapter": 2
+    },
+    {
+      "start": 349.6547665194083,
+      "end": 349.8839972534265,
+      "text": "one",
+      "chapter": 2
+    },
+    {
+      "start": 349.8839972534265,
+      "end": 350.9639990844812,
+      "text": "plus f e over D.",
+      "chapter": 2
+    },
+    {
+      "start": 351.32399969483276,
+      "end": 355.8839972534265,
+      "text": "Let's use f o one hundred centimeters, f e five, and D twenty five.",
+      "chapter": 2
+    },
+    {
+      "start": 355.8839972534265,
+      "end": 360.4440024414148,
+      "text": "s is twenty five sixths centimeters, about four point one seven.",
+      "chapter": 2
+    },
+    {
+      "start": 360.4440024414148,
+      "end": 363.1640036621179,
+      "text": "Lens separation is one hundred four point one seven centimeters.",
+      "chapter": 2
+    },
+    {
+      "start": 364.1840003051843,
+      "end": 367.82399969483276,
+      "text": "Magnification is minus twenty four, compared with minus twenty and separation",
+      "chapter": 2
+    },
+    {
+      "start": 367.82399969483276,
+      "end": 370.143999389657,
+      "text": "one hundred five centimeters in normal adjustment.",
+      "chapter": 2
+    },
+    {
+      "start": 371.2839987793054,
+      "end": 374.4339977620528,
+      "text": "Greater angular magnification here needs accommodation; it is not",
+      "chapter": 2
+    },
+    {
+      "start": 374.4339977620528,
+      "end": 375.0639975586023,
+      "text": "automatically",
+      "chapter": 2
+    },
+    {
+      "start": 375.0639975586023,
+      "end": 376.90400152588745,
+      "text": "the most comfortable or clearest view.",
+      "chapter": 2
+    },
+    {
+      "start": 378.02399664307495,
+      "end": 381.90092394550885,
+      "text": "Think before swapping in the microscope formula: the microscope's nearby",
+      "chapter": 2
+    },
+    {
+      "start": 381.90092394550885,
+      "end": 382.22400122071167,
+      "text": "object",
+      "chapter": 2
+    },
+    {
+      "start": 382.22400122071167,
+      "end": 385.4639990844812,
+      "text": "and objective linear magnification create a different first stage.",
+      "chapter": 2
+    },
+    {
+      "start": 385.8839972534265,
+      "end": 389.84399633789917,
+      "text": "For a reflecting telescope, the concave primary replaces the refracting",
+      "chapter": 2
+    },
+    {
+      "start": 389.84399633789917,
+      "end": 393.143999389657,
+      "text": "objective and the eyepiece uses the same final image reasoning.",
+      "chapter": 2
+    },
+    {
+      "start": 393.90400152588745,
+      "end": 397.6240027465906,
+      "text": "A two hundred centimeter primary and four centimeter eyepiece give normal",
+      "chapter": 2
+    },
+    {
+      "start": 397.6240027465906,
+      "end": 399.34399633789917,
+      "text": "magnifying power magnitude fifty.",
+      "chapter": 2
+    },
+    {
+      "start": 400.22400122071167,
+      "end": 404.143999389657,
+      "text": "Do not equate that optical focal length sum to every reflector's physical tube",
+      "chapter": 2
+    },
+    {
+      "start": 404.143999389657,
+      "end": 406.5639975586023,
+      "text": "length: a secondary can fold the beam.",
+      "chapter": 2
+    },
+    {
+      "start": 407.38400488282105,
+      "end": 410.38400488282105,
+      "text": "Magnification, aperture, resolution and brightness remain distinct.",
+      "chapter": 2
+    },
+    {
+      "start": 411.2839987793054,
+      "end": 415.3640006103601,
+      "text": "These are ideal paraxial classroom calculations, not instructions to view the",
+      "chapter": 2
+    },
+    {
+      "start": 415.3640006103601,
+      "end": 417.72400122071167,
+      "text": "Sun or build unprotected optical equipment.",
+      "chapter": 2
+    }
+  ]
+}

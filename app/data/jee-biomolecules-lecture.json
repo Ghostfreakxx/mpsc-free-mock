@@ -1,0 +1,420 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script. Read every sentence completely and precisely, including the final sentence. Do not summarize.",
+  "title": "Biomolecules: sugars, proteins and genetic building blocks",
+  "subject": "Chemistry",
+  "unit": 19,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 Chemistry syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: carbohydrates",
+      "url": "https://openstax.org/books/biology-2e/pages/3-2-carbohydrates"
+    },
+    {
+      "title": "OpenStax: proteins",
+      "url": "https://openstax.org/books/biology-2e/pages/3-4-proteins"
+    },
+    {
+      "title": "OpenStax: nucleic acids",
+      "url": "https://openstax.org/books/biology-2e/pages/3-5-nucleic-acids"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "A sugar's functional group helps classify it",
+      "formula": "Glucose: aldohexose; fructose: ketohexose; both C6H12O6",
+      "script": "Welcome to Biomolecules. This recorded Chemistry class uses an AI generated Marin voice. Carbohydrates include sugars and their larger assemblies. Monosaccharides cannot be hydrolysed into simpler carbohydrate units. An aldose has an aldehyde group in its open-chain representation; a ketose has a ketone. Glucose is an aldohexose and fructose a ketohexose: both have six carbons, but their carbonyl positions differ. Many sugars spend most of their time in cyclic forms in solution, so an open-chain formula is a useful representation rather than the only structure present. Ring formation creates an anomeric centre. Do not identify a carbohydrate solely from the often-used simple carbon and water composition pattern; some compounds fit it without being carbohydrates and some carbohydrate derivatives do not fit it. For glucose and fructose, six carbon atoms and the same overall composition do not imply the same functional group position. Classification combines the carbon count with the open chain carbonyl type. Ring drawings add a further distinction between alpha and beta forms at an anomeric centre. A formula comparison should therefore be followed by a connectivity check before naming a sugar.",
+      "points": [
+        "Glucose · Aldose · 6",
+        "Fructose · Ketose · 6",
+        "Same formula · Different connectivity · Check structure"
+      ],
+      "board": {
+        "heading": "A sugar's functional group helps classify it",
+        "columns": [
+          "Sugar",
+          "Open-chain class",
+          "Carbon count"
+        ],
+        "rows": [
+          [
+            "Glucose",
+            "Aldose",
+            "6"
+          ],
+          [
+            "Fructose",
+            "Ketose",
+            "6"
+          ],
+          [
+            "Same formula",
+            "Different connectivity",
+            "Check structure"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Hydrolysis tells us the units in a disaccharide",
+      "formula": "C12H22O11 + H2O -> two C6H12O6 units for these disaccharides",
+      "script": "Sucrose contains glucose and fructose units. Maltose contains two glucose units, while lactose contains galactose and glucose. Joining two monosaccharides with a glycosidic bond has the net composition change of losing one water molecule; hydrolysis adds water and separates the units. Structural bonding details distinguish the three despite related overall formulas. A reducing sugar can access a reactive carbonyl form under the relevant test conditions. Sucrose has both anomeric centres involved in its linkage and is nonreducing before hydrolysis. Maltose and lactose retain a suitable free anomeric centre and are reducing. Fructose can respond in alkaline reducing-sugar tests through rearrangement even though it is a ketose. For one mole of sucrose hydrolysed completely, one mole each of glucose and fructose appears. One mole of maltose gives two moles of glucose instead. The total monosaccharide amount doubles, while the carbon inventory is conserved. Water participates in hydrolysis, so adding the masses of the isolated sugar units need not equal the original dry disaccharide mass alone.",
+      "points": [
+        "Sucrose · Glucose + fructose · Nonreducing",
+        "Maltose · Glucose + glucose · Reducing",
+        "Lactose · Galactose + glucose · Reducing"
+      ],
+      "board": {
+        "heading": "Hydrolysis tells us the units in a disaccharide",
+        "columns": [
+          "Disaccharide",
+          "Hydrolysis units",
+          "Before hydrolysis"
+        ],
+        "rows": [
+          [
+            "Sucrose",
+            "Glucose + fructose",
+            "Nonreducing"
+          ],
+          [
+            "Maltose",
+            "Glucose + glucose",
+            "Reducing"
+          ],
+          [
+            "Lactose",
+            "Galactose + glucose",
+            "Reducing"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Large carbohydrate chains are not all interchangeable",
+      "formula": "Same monomer does not imply the same linkage or polymer properties",
+      "script": "Starch and glycogen store glucose units, whereas cellulose has a structural role. Different linkage arrangements change properties even when the repeating monosaccharide is glucose. This is an example of why a monomer name alone cannot specify the behaviour of a polymer. The official Chemistry unit emphasizes the named monosaccharides and the constituent units of sucrose, maltose and lactose. Use larger polysaccharides as supporting context rather than claiming every biological polymer detail is required. For a hydrolysis question, track the type and number of released units, not simply whether the original substance has a sweet taste. Amylose is largely unbranched, while amylopectin and glycogen have branching. Cellulose uses a different glucose linkage arrangement that gives extended structural chains. Humans do not digest cellulose with the same enzymes used for starch. These contrasts connect molecular bonding with macroscopic properties without changing the identity of the glucose building block. Linkage and branching must accompany the monomer name in a comparison.",
+      "points": [
+        "Starch · Storage · Glucose linkages",
+        "Glycogen · Storage · More branched",
+        "Cellulose · Structural · Different linkage"
+      ],
+      "board": {
+        "heading": "Large carbohydrate chains are not all interchangeable",
+        "columns": [
+          "Polymer",
+          "Main role",
+          "Structural feature"
+        ],
+        "rows": [
+          [
+            "Starch",
+            "Storage",
+            "Glucose linkages"
+          ],
+          [
+            "Glycogen",
+            "Storage",
+            "More branched"
+          ],
+          [
+            "Cellulose",
+            "Structural",
+            "Different linkage"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Amino acids join through peptide bonds",
+      "formula": "Simple linear n-residue peptide: n-1 peptide bonds",
+      "script": "A typical alpha-amino acid has amino and carboxyl groups associated with the same alpha carbon. Its side chain distinguishes it from other amino acids. In suitable aqueous conditions, it can exist as a zwitterion carrying both positive and negative charges; the dominant ionic form depends on p H and the side chain. A peptide bond is the amide linkage with a carbonyl carbon bonded to nitrogen formed between amino-acid residues. The net assembly of a simple linear chain of n amino acids forms n minus one peptide links and releases n minus one waters in a condensation bookkeeping model. Living synthesis is more elaborate than directly mixing free amino acids. Hydrolysis breaks the links and adds water. For five amino acid residues in one noncyclic linear chain, four joins are needed. That gives four peptide bonds and four net water losses in the simple bookkeeping model. A cyclic peptide or several separate chains would require different counting. Glycine has two hydrogens at its alpha carbon, unlike a typical amino acid with four distinct attached groups, so do not automatically assign every amino acid a stereogenic alpha carbon.",
+      "points": [
+        "5 residues · 4 · 4",
+        "6 residues · 5 · 5",
+        "n residues · n − 1 · n − 1"
+      ],
+      "board": {
+        "heading": "Amino acids join through peptide bonds",
+        "columns": [
+          "Linear chain",
+          "Peptide links",
+          "Net water losses"
+        ],
+        "rows": [
+          [
+            "5 residues",
+            "4",
+            "4"
+          ],
+          [
+            "6 residues",
+            "5",
+            "5"
+          ],
+          [
+            "n residues",
+            "n − 1",
+            "n − 1"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Protein structure has four different levels",
+      "formula": "Denaturation is not the same process as peptide-bond hydrolysis",
+      "script": "Protein structure is described at four different levels. Primary structure gives the amino acid sequence along a polypeptide chain. Secondary structure describes recurring local backbone arrangements, including alpha helices and beta sheets, with hydrogen bonds playing an important stabilizing role. Tertiary structure is the complete three dimensional folding of one chain. Quaternary structure describes how several polypeptide subunits are arranged together. A single chain protein can have the first three levels without having quaternary structure. Keep the sequence separate from the way that sequence folds. Denaturation changes the folded organization and can reduce biological activity. It does not necessarily break peptide bonds or turn the whole protein into free amino acids. Heat and changes in chemical environment can disturb stabilizing interactions, but different proteins respond differently. Refolding is not guaranteed simply by restoring the original temperature. In a comparison question, identify whether the evidence concerns sequence, local backbone folding, the shape of one complete chain or the association of several chains. Loss of activity with an intact peptide backbone supports a folding change rather than complete hydrolysis.",
+      "points": [
+        "Primary · Sequence · Backbone order",
+        "Secondary / tertiary · Local / whole-chain fold · Folding levels",
+        "Quaternary · Multiple subunits · More than one chain"
+      ],
+      "board": {
+        "heading": "Protein structure has four different levels",
+        "columns": [
+          "Level",
+          "What it describes",
+          "Key distinction"
+        ],
+        "rows": [
+          [
+            "Primary",
+            "Sequence",
+            "Backbone order"
+          ],
+          [
+            "Secondary / tertiary",
+            "Local / whole-chain fold",
+            "Folding levels"
+          ],
+          [
+            "Quaternary",
+            "Multiple subunits",
+            "More than one chain"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Enzymes speed reactions without changing equilibrium",
+      "formula": "Catalysis changes the pathway and rate, not K at fixed conditions",
+      "script": "Enzymes are biological catalysts; most are proteins, though some catalytic RNA molecules also exist. A suitable active site helps bind substrates and provide a lower-barrier pathway. Specificity reflects structure and interactions, not an absolute promise that one enzyme acts on only one possible molecule. Like other catalysts, enzymes do not change the equilibrium constant for a reaction at the same conditions. Activity depends on factors such as temperature and p H, and extreme conditions can damage structure. More heat does not mean unlimited acceleration because the catalyst can lose its working form. An enzyme changes the barrier along a reaction pathway and can accelerate both directions toward equilibrium. It does not force a different final equilibrium composition merely by being a catalyst. Changing acidity or temperature can change both the chemical environment and the enzyme structure. Compare activity measurements only when the substrate amount, conditions and measured interval are appropriately controlled.",
+      "points": [
+        "Alternative pathway · Barrier and rate · Equilibrium K",
+        "Working structure · Depends on conditions · No unlimited heating",
+        "Activity comparison · Control environment · Not just enzyme name"
+      ],
+      "board": {
+        "heading": "Enzymes speed reactions without changing equilibrium",
+        "columns": [
+          "Catalyst property",
+          "What changes",
+          "What does not"
+        ],
+        "rows": [
+          [
+            "Alternative pathway",
+            "Barrier and rate",
+            "Equilibrium K"
+          ],
+          [
+            "Working structure",
+            "Depends on conditions",
+            "No unlimited heating"
+          ],
+          [
+            "Activity comparison",
+            "Control environment",
+            "Not just enzyme name"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Vitamins and hormones play different roles",
+      "formula": "Fat-soluble vitamin group: A, D, E, K; water-soluble: B group and C",
+      "script": "Vitamins are needed in small amounts for normal biochemical functions. The usual classification places A, D, E and K among fat-soluble vitamins and the B group and C among water-soluble vitamins. These are families with distinct roles, not one interchangeable chemical. Hormones are chemical signals acting through suitable biological targets; some are peptides, some steroids and others have different structures. Insulin is a peptide-hormone example, whereas many steroid hormones derive from a different molecular framework. Vitamin classification and hormone classification answer different questions. Solubility places vitamins into broad groups; it does not state a universal molecular structure or biochemical role. A peptide hormone has amino acid residues joined in a chain, while a steroid hormone has a different carbon framework. Recognize insulin as a peptide example and keep the two classification systems separate during revision. Recognizing a family name does not uniquely determine every reaction or functional group. Compare the actual molecular framework when a structure is supplied rather than treating all biological signalling compounds as the same class.",
+      "points": [
+        "Fat-soluble vitamins · A, D, E, K · Solubility group",
+        "Water-soluble vitamins · B group, C · Different families",
+        "Hormones · Insulin; steroids · Different frameworks"
+      ],
+      "board": {
+        "heading": "Vitamins and hormones play different roles",
+        "columns": [
+          "Category",
+          "Examples",
+          "Classification basis"
+        ],
+        "rows": [
+          [
+            "Fat-soluble vitamins",
+            "A, D, E, K",
+            "Solubility group"
+          ],
+          [
+            "Water-soluble vitamins",
+            "B group, C",
+            "Different families"
+          ],
+          [
+            "Hormones",
+            "Insulin; steroids",
+            "Different frameworks"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "DNA and RNA are chains of nucleotides",
+      "formula": "Nucleoside = base + sugar; nucleotide = base + sugar + phosphate component",
+      "script": "A nucleoside combines a nitrogenous base and a sugar. Adding a phosphate component gives a nucleotide, the building block of nucleic acids. DNA uses deoxyribose and typically the bases A, G, C and T; RNA uses ribose and usually A, G, C and U. The sugar-phosphate backbone joins units through phosphodiester links. In the elementary double-stranded DNA model, A pairs with T and G with C, with complementary antiparallel strands. DNA stores hereditary information, while RNA has roles in expressing and processing it. Complementary DNA base-count rules apply to a whole double-stranded sample; do not impose equal A and T on an arbitrary single RNA strand. If adenine accounts for thirty percent of a whole complementary double stranded DNA sample, thymine is also thirty percent. Forty percent remains for guanine plus cytosine, giving twenty percent each. This calculation uses complementarity over both strands. A single isolated strand can have unequal adenine and thymine counts, and RNA substitutes uracil for thymine in the usual elementary comparison.",
+      "points": [
+        "Adenine · Given · 30%",
+        "Thymine · Matches A · 30%",
+        "Guanine / cytosine · Equal shares of rest · 20% each"
+      ],
+      "board": {
+        "heading": "DNA and RNA are chains of nucleotides",
+        "columns": [
+          "Whole double-stranded DNA",
+          "Given / inferred",
+          "Percentage"
+        ],
+        "rows": [
+          [
+            "Adenine",
+            "Given",
+            "30%"
+          ],
+          [
+            "Thymine",
+            "Matches A",
+            "30%"
+          ],
+          [
+            "Guanine / cytosine",
+            "Equal shares of rest",
+            "20% each"
+          ]
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Fructose is classified in its open-chain representation as a:",
+      "options": [
+        "Ketohexose",
+        "Aldopentose",
+        "Protein",
+        "Nucleotide"
+      ],
+      "answer": 0,
+      "explanation": "Fructose has six carbons and a ketone carbonyl in its open-chain representation."
+    },
+    {
+      "question": "Maltose hydrolysis releases:",
+      "options": [
+        "Glucose and fructose",
+        "Two glucose units",
+        "Two amino acids",
+        "Galactose and fructose"
+      ],
+      "answer": 1,
+      "explanation": "Maltose is built from two glucose units joined through a glycosidic linkage."
+    },
+    {
+      "question": "A simple linear peptide with six residues has how many peptide bonds?",
+      "options": [
+        "6",
+        "7",
+        "5",
+        "12"
+      ],
+      "answer": 2,
+      "explanation": "A linear chain needs one fewer connecting peptide bonds than its number of residues."
+    },
+    {
+      "question": "Denaturation necessarily means:",
+      "options": [
+        "All peptide bonds hydrolyse",
+        "DNA replaces protein",
+        "Every amino acid changes identity",
+        "None of these; unfolding need not break the backbone"
+      ],
+      "answer": 3,
+      "explanation": "Denaturation disrupts folded organization without necessarily hydrolysing the primary peptide sequence."
+    },
+    {
+      "question": "The usual fat-soluble vitamin group is:",
+      "options": [
+        "A, D, E, K",
+        "B and C only",
+        "All vitamins",
+        "Only vitamin C"
+      ],
+      "answer": 0,
+      "explanation": "A, D, E and K are conventionally grouped as fat-soluble; B-group vitamins and C are water-soluble."
+    },
+    {
+      "question": "A nucleotide differs from a nucleoside by its:",
+      "options": [
+        "Mandatory peptide bond",
+        "Phosphate component",
+        "Absence of sugar",
+        "Lack of a base"
+      ],
+      "answer": 1,
+      "explanation": "A nucleoside has base and sugar; a nucleotide additionally includes phosphate."
+    },
+    {
+      "question": "Complete hydrolysis of one mole of sucrose yields:",
+      "options": [
+        "Two moles glucose",
+        "One mole glucose and one mole fructose",
+        "Only amino acids",
+        "One mole lactose"
+      ],
+      "answer": 1,
+      "explanation": "Sucrose contains one glucose and one fructose unit."
+    },
+    {
+      "question": "Whole complementary double-stranded DNA has 30% A. Its G percentage is:",
+      "options": [
+        "30%",
+        "40%",
+        "20%",
+        "70%"
+      ],
+      "answer": 2,
+      "explanation": "T is 30%, leaving 40% for equal G and C: 20% each."
+    },
+    {
+      "question": "Which protein level requires multiple polypeptide subunits?",
+      "options": [
+        "Quaternary",
+        "Primary",
+        "Secondary only",
+        "Every tertiary structure"
+      ],
+      "answer": 0,
+      "explanation": "Quaternary structure describes the arrangement of multiple subunits."
+    },
+    {
+      "question": "An enzyme at fixed conditions changes:",
+      "options": [
+        "The equilibrium constant necessarily",
+        "Every product into a different element",
+        "Only the substrate molecular formula",
+        "The reaction pathway and rate"
+      ],
+      "answer": 3,
+      "explanation": "Catalysis changes the kinetic pathway while preserving the equilibrium constant at fixed conditions."
+    }
+  ]
+}

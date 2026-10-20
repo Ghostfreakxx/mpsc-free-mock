@@ -1,0 +1,873 @@
+{
+  "duration": 444.52800000001236,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 84.60000000000231
+    },
+    {
+      "start": 84.60000000000231,
+      "end": 169.51200000000463
+    },
+    {
+      "start": 169.51200000000463,
+      "end": 266.56800000000743
+    },
+    {
+      "start": 266.56800000000743,
+      "end": 354.57600000000986
+    },
+    {
+      "start": 354.57600000000986,
+      "end": 444.52800000001236
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.3600000143051147,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.9800000190734863,
+      "end": 5.920000076293945,
+      "text": "A magnetic field can exist around a circuit without producing any induced",
+      "chapter": 0
+    },
+    {
+      "start": 5.920000076293945,
+      "end": 6.28000020980835,
+      "text": "current.",
+      "chapter": 0
+    },
+    {
+      "start": 6.860000133514404,
+      "end": 8.779999732971191,
+      "text": "The key question is what changes.",
+      "chapter": 0
+    },
+    {
+      "start": 9.5,
+      "end": 13.279999732971191,
+      "text": "Before we answer it, let's build the quantity that tracks the field through a",
+      "chapter": 0
+    },
+    {
+      "start": 13.279999732971191,
+      "end": 14.5600004196167,
+      "text": "loop: magnetic flux.",
+      "chapter": 0
+    },
+    {
+      "start": 15.460000038146973,
+      "end": 18.920000076293945,
+      "text": "Choose a surface spanning the loop and an arrow perpendicular to it.",
+      "chapter": 0
+    },
+    {
+      "start": 19.1200008392334,
+      "end": 20.899999618530273,
+      "text": "That arrow is the surface normal.",
+      "chapter": 0
+    },
+    {
+      "start": 21.6200008392334,
+      "end": 26.719999313354492,
+      "text": "For a uniform field and a flat surface, flux equals field strength times area",
+      "chapter": 0
+    },
+    {
+      "start": 26.719999313354492,
+      "end": 29.780000686645508,
+      "text": "times cosine of the angle between the field and the normal.",
+      "chapter": 0
+    },
+    {
+      "start": 30.260000228881836,
+      "end": 31.520000457763672,
+      "text": "Not the angle with the plane.",
+      "chapter": 0
+    },
+    {
+      "start": 32.18000030517578,
+      "end": 34.15999984741211,
+      "text": "That little distinction does a lot of work.",
+      "chapter": 0
+    },
+    {
+      "start": 34.91999816894531,
+      "end": 38.040000915527344,
+      "text": "When the field follows the normal, flux is positive B A.",
+      "chapter": 0
+    },
+    {
+      "start": 38.7400016784668,
+      "end": 40.91999816894531,
+      "text": "When it lies in the plane, flux is zero.",
+      "chapter": 0
+    },
+    {
+      "start": 41.939998626708984,
+      "end": 45.97999954223633,
+      "text": "Reverse the chosen normal and the signed flux reverses, without changing the",
+      "chapter": 0
+    },
+    {
+      "start": 45.97999954223633,
+      "end": 47.02000045776367,
+      "text": "physical field.",
+      "chapter": 0
+    },
+    {
+      "start": 47.31999969482422,
+      "end": 51.73470146635658,
+      "text": "Try a uniform field of zero point four tesla through an area of zero point",
+      "chapter": 0
+    },
+    {
+      "start": 51.73470146635658,
+      "end": 51.973333994547524,
+      "text": "zero",
+      "chapter": 0
+    },
+    {
+      "start": 51.973333994547524,
+      "end": 52.84000015258789,
+      "text": "two square meters.",
+      "chapter": 0
+    },
+    {
+      "start": 53.459999084472656,
+      "end": 56.040000915527344,
+      "text": "The field makes sixty degrees with the normal.",
+      "chapter": 0
+    },
+    {
+      "start": 56.540000915527344,
+      "end": 57.439998626708984,
+      "text": "Pause and find the flux.",
+      "chapter": 0
+    },
+    {
+      "start": 58.08000183105469,
+      "end": 62.7599983215332,
+      "text": "It is zero point zero zero four weber, because cosine sixty is one half.",
+      "chapter": 0
+    },
+    {
+      "start": 63.65999984741211,
+      "end": 67.41999816894531,
+      "text": "If sixty degrees were measured from the plane instead, the angle with the",
+      "chapter": 0
+    },
+    {
+      "start": 67.41999816894531,
+      "end": 68.73999786376953,
+      "text": "normal would be thirty degrees.",
+      "chapter": 0
+    },
+    {
+      "start": 69.26000213623047,
+      "end": 71.22000122070312,
+      "text": "One weber is one tesla square meter.",
+      "chapter": 0
+    },
+    {
+      "start": 71.94000244140625,
+      "end": 76.5199966430664,
+      "text": "For a nonuniform field, add the contributions of small area elements using the",
+      "chapter": 0
+    },
+    {
+      "start": 76.5199966430664,
+      "end": 77.0199966430664,
+      "text": "flux integral.",
+      "chapter": 0
+    },
+    {
+      "start": 77.69999694824219,
+      "end": 82.55999755859375,
+      "text": "Also, zero net magnetic flux through a closed surface does not mean zero flux",
+      "chapter": 0
+    },
+    {
+      "start": 82.55999755859375,
+      "end": 84.37999725341797,
+      "text": "through the open surface bounded by a loop.",
+      "chapter": 0
+    },
+    {
+      "start": 84.60000000000231,
+      "end": 88.81999979019396,
+      "text": "Now we can ask the right question: how fast does the flux linkage change?",
+      "chapter": 1
+    },
+    {
+      "start": 89.42000017166369,
+      "end": 93.78000030517809,
+      "text": "For a coil with N identical turns, each linking the same flux, flux linkage is",
+      "chapter": 1
+    },
+    {
+      "start": 93.78000030517809,
+      "end": 95.3799997329735,
+      "text": "N times the flux through one turn.",
+      "chapter": 1
+    },
+    {
+      "start": 96.25999984741442,
+      "end": 100.56000003814928,
+      "text": "Faraday's law says the induced electromotive force, or emf, is minus the time",
+      "chapter": 1
+    },
+    {
+      "start": 100.56000003814928,
+      "end": 101.55999908447497,
+      "text": "derivative of that linkage.",
+      "chapter": 1
+    },
+    {
+      "start": 102.38000068664782,
+      "end": 105.23999938965075,
+      "text": "Despite the name, emf is measured in volts, not newtons.",
+      "chapter": 1
+    },
+    {
+      "start": 105.73999938965075,
+      "end": 109.30000076294176,
+      "text": "The minus sign contains direction information; we will unpack it next.",
+      "chapter": 1
+    },
+    {
+      "start": 109.88000068664782,
+      "end": 113.30000076294176,
+      "text": "For magnitude, faster flux change means greater induced emf.",
+      "chapter": 1
+    },
+    {
+      "start": 113.62000045776598,
+      "end": 118.1999984741234,
+      "text": "A large constant flux gives zero induced emf in a stationary, unchanged loop.",
+      "chapter": 1
+    },
+    {
+      "start": 119.32000122070544,
+      "end": 122.14000091552965,
+      "text": "Field strength, loop area or orientation can change the linkage.",
+      "chapter": 1
+    },
+    {
+      "start": 122.73999938965075,
+      "end": 125.60000000000231,
+      "text": "Our first example keeps area and orientation fixed.",
+      "chapter": 1
+    },
+    {
+      "start": 126.05999908447497,
+      "end": 130.07999954223862,
+      "text": "An eighty turn coil has area zero point zero zero five square meters per turn.",
+      "chapter": 1
+    },
+    {
+      "start": 130.78000030517808,
+      "end": 135.39999923706284,
+      "text": "A uniform field perpendicular to its plane rises by zero point three tesla in",
+      "chapter": 1
+    },
+    {
+      "start": 135.39999923706284,
+      "end": 137.73999938965073,
+      "text": "zero point two seconds, at a constant rate.",
+      "chapter": 1
+    },
+    {
+      "start": 137.9400001525902,
+      "end": 140.3400016784691,
+      "text": "The rate is one point five tesla per second.",
+      "chapter": 1
+    },
+    {
+      "start": 140.3400016784691,
+      "end": 142.87999877929917,
+      "text": "Multiply eighty by area by that rate.",
+      "chapter": 1
+    },
+    {
+      "start": 143.6000000000023,
+      "end": 146.12000045776597,
+      "text": "The induced emf magnitude is zero point six volt.",
+      "chapter": 1
+    },
+    {
+      "start": 146.8599983215355,
+      "end": 150.6999984741234,
+      "text": "In a closed circuit with total resistance six ohms, the current magnitude is",
+      "chapter": 1
+    },
+    {
+      "start": 150.6999984741234,
+      "end": 153.91999969482652,
+      "text": "zero point one ampere, assuming inductive effects are negligible.",
+      "chapter": 1
+    },
+    {
+      "start": 154.72000274658433,
+      "end": 158.46000061035386,
+      "text": "An open circuit can have induced emf without a circulating conduction current.",
+      "chapter": 1
+    },
+    {
+      "start": 159.0800033569359,
+      "end": 162.72000274658433,
+      "text": "If turns link different fluxes, add their individual linkages instead of",
+      "chapter": 1
+    },
+    {
+      "start": 162.72000274658433,
+      "end": 164.68000183105698,
+      "text": "automatically writing N times one flux.",
+      "chapter": 1
+    },
+    {
+      "start": 165.23999938965073,
+      "end": 169.1999984741234,
+      "text": "Separate the flux calculation, the rate calculation and the circuit response.",
+      "chapter": 1
+    },
+    {
+      "start": 169.51200000000463,
+      "end": 172.07199994278417,
+      "text": "Let's turn the minus sign into a picture.",
+      "chapter": 2
+    },
+    {
+      "start": 173.31199995232092,
+      "end": 173.79200020981298,
+      "text": "Face the page.",
+      "chapter": 2
+    },
+    {
+      "start": 174.51200000000463,
+      "end": 178.71199980926977,
+      "text": "A stationary conducting loop lies in the page, and the external magnetic field",
+      "chapter": 2
+    },
+    {
+      "start": 178.71199980926977,
+      "end": 179.57200041962133,
+      "text": "points into it.",
+      "chapter": 2
+    },
+    {
+      "start": 180.57200041962133,
+      "end": 182.05199996185766,
+      "text": "Crosses represent into the page.",
+      "chapter": 2
+    },
+    {
+      "start": 182.99199954224096,
+      "end": 184.5919999237107,
+      "text": "Suppose that inward field is increasing.",
+      "chapter": 2
+    },
+    {
+      "start": 185.4720000381516,
+      "end": 187.01200000000463,
+      "text": "What field would oppose the increase?",
+      "chapter": 2
+    },
+    {
+      "start": 187.93200007629858,
+      "end": 188.4719990844773,
+      "text": "Take a moment.",
+      "chapter": 2
+    },
+    {
+      "start": 189.01200000000463,
+      "end": 190.2120007629441,
+      "text": "An outward induced field.",
+      "chapter": 2
+    },
+    {
+      "start": 190.9719990844773,
+      "end": 194.2519997711228,
+      "text": "Curl the fingers of your right hand in the current direction so the thumb",
+      "chapter": 2
+    },
+    {
+      "start": 194.2519997711228,
+      "end": 195.31199923706518,
+      "text": "points out toward you.",
+      "chapter": 2
+    },
+    {
+      "start": 195.95200053406225,
+      "end": 200.46693695706216,
+      "text": "The induced conventional current is counterclockwise, as viewed facing the",
+      "chapter": 2
+    },
+    {
+      "start": 200.46693695706216,
+      "end": 200.77200022888647,
+      "text": "page.",
+      "chapter": 2
+    },
+    {
+      "start": 201.85200015259252,
+      "end": 205.65199938965307,
+      "text": "Now keep the external field pointing inward, but let its magnitude decrease.",
+      "chapter": 2
+    },
+    {
+      "start": 206.4719990844773,
+      "end": 207.95199862671362,
+      "text": "Does the current stay counterclockwise?",
+      "chapter": 2
+    },
+    {
+      "start": 208.77199832153784,
+      "end": 209.1319989318894,
+      "text": "No.",
+      "chapter": 2
+    },
+    {
+      "start": 209.67199984741674,
+      "end": 212.65199938965307,
+      "text": "The response now tries to maintain the disappearing inward flux.",
+      "chapter": 2
+    },
+    {
+      "start": 213.35200015259252,
+      "end": 216.19200030518041,
+      "text": "The induced field points inward, so the current is clockwise.",
+      "chapter": 2
+    },
+    {
+      "start": 217.23200122070776,
+      "end": 221.3720006103562,
+      "text": "The same original field direction gave opposite current directions because the",
+      "chapter": 2
+    },
+    {
+      "start": 221.3720006103562,
+      "end": 222.05200091553198,
+      "text": "change reversed.",
+      "chapter": 2
+    },
+    {
+      "start": 223.01200000000463,
+      "end": 227.05200091553198,
+      "text": "Lenz's law opposes the change in magnetic flux, not always the magnetic field",
+      "chapter": 2
+    },
+    {
+      "start": 227.05200091553198,
+      "end": 227.4719990844773,
+      "text": "itself.",
+      "chapter": 2
+    },
+    {
+      "start": 228.19200030518041,
+      "end": 230.11199847412573,
+      "text": "Choose the normal out of the page.",
+      "chapter": 2
+    },
+    {
+      "start": 231.17199984741674,
+      "end": 235.15277215928762,
+      "text": "Increasing inward flux becomes more negative, so its derivative is negative",
+      "chapter": 2
+    },
+    {
+      "start": 235.15277215928762,
+      "end": 235.31200305176245,
+      "text": "and",
+      "chapter": 2
+    },
+    {
+      "start": 235.31200305176245,
+      "end": 238.172003662114,
+      "text": "induced emf is positive in the counterclockwise sense.",
+      "chapter": 2
+    },
+    {
+      "start": 239.31200305176245,
+      "end": 241.672003662114,
+      "text": "Decreasing inward flux gives the opposite signs.",
+      "chapter": 2
+    },
+    {
+      "start": 242.71199694824682,
+      "end": 246.15199938965307,
+      "text": "Reversing the normal reverses both mathematical conventions, not the real",
+      "chapter": 2
+    },
+    {
+      "start": 246.15199938965307,
+      "end": 246.43199816894995,
+      "text": "current.",
+      "chapter": 2
+    },
+    {
+      "start": 247.2720021362351,
+      "end": 249.93199816894995,
+      "text": "The induced field need not cancel the external field completely.",
+      "chapter": 2
+    },
+    {
+      "start": 250.7720021362351,
+      "end": 253.8919972534226,
+      "text": "In a resistive circuit, its size follows the circuit response.",
+      "chapter": 2
+    },
+    {
+      "start": 254.55200091553198,
+      "end": 258.87200061035617,
+      "text": "Lenz's law also expresses energy conservation: induction does not supply",
+      "chapter": 2
+    },
+    {
+      "start": 258.87200061035617,
+      "end": 260.7119969482468,
+      "text": "unlimited electrical energy for free.",
+      "chapter": 2
+    },
+    {
+      "start": 261.9319981689499,
+      "end": 265.3120030517624,
+      "text": "The source changing the field or moving the apparatus must account for the",
+      "chapter": 2
+    },
+    {
+      "start": 265.3120030517624,
+      "end": 265.9120015258835,
+      "text": "energy transferred.",
+      "chapter": 2
+    },
+    {
+      "start": 266.56800000000743,
+      "end": 272.0280000381544,
+      "text": "A flux time graph is a shortcut, provided you know what the vertical axis",
+      "chapter": 3
+    },
+    {
+      "start": 272.0280000381544,
+      "end": 272.46800009537486,
+      "text": "means.",
+      "chapter": 3
+    },
+    {
+      "start": 273.4080001525953,
+      "end": 277.22799984741954,
+      "text": "Our graph shows signed flux through one turn of a fifty turn coil.",
+      "chapter": 3
+    },
+    {
+      "start": 278.66800038147716,
+      "end": 281.10799996186046,
+      "text": "The normal and positive circulation direction are fixed.",
+      "chapter": 3
+    },
+    {
+      "start": 282.1479999237135,
+      "end": 286.7480003051832,
+      "text": "First, flux rises linearly from zero to zero point zero zero six weber in zero",
+      "chapter": 3
+    },
+    {
+      "start": 286.7480003051832,
+      "end": 287.50800053406505,
+      "text": "point three seconds.",
+      "chapter": 3
+    },
+    {
+      "start": 288.2480003051832,
+      "end": 291.4880000763014,
+      "text": "Its slope is positive zero point zero two weber per second.",
+      "chapter": 3
+    },
+    {
+      "start": 292.4880000763014,
+      "end": 293.9880000763014,
+      "text": "Multiply by minus fifty.",
+      "chapter": 3
+    },
+    {
+      "start": 294.6279994659498,
+      "end": 296.4679996185377,
+      "text": "The induced emf is minus one volt.",
+      "chapter": 3
+    },
+    {
+      "start": 297.84800068665294,
+      "end": 302.0279990844801,
+      "text": "Next comes a plateau: the flux stays at zero point zero zero six weber from",
+      "chapter": 3
+    },
+    {
+      "start": 302.0279990844801,
+      "end": 303.96800152588634,
+      "text": "zero point three to zero point six seconds.",
+      "chapter": 3
+    },
+    {
+      "start": 305.38799969483165,
+      "end": 306.44800106812266,
+      "text": "What is the emf there?",
+      "chapter": 3
+    },
+    {
+      "start": 307.1879989318922,
+      "end": 308.6480018310621,
+      "text": "Think slope, not height.",
+      "chapter": 3
+    },
+    {
+      "start": 309.0880004577711,
+      "end": 309.56800000000743,
+      "text": "It is zero.",
+      "chapter": 3
+    },
+    {
+      "start": 310.06800000000743,
+      "end": 311.82799832154063,
+      "text": "A nonzero flux is not enough.",
+      "chapter": 3
+    },
+    {
+      "start": 312.88799969483165,
+      "end": 316.6480018310621,
+      "text": "Finally, flux falls linearly to zero over the next zero point six seconds.",
+      "chapter": 3
+    },
+    {
+      "start": 317.12800137329845,
+      "end": 321.82799832154063,
+      "text": "The slope is minus zero point zero one weber per second, so emf is plus zero",
+      "chapter": 3
+    },
+    {
+      "start": 321.82799832154063,
+      "end": 322.6080009155348,
+      "text": "point five volt.",
+      "chapter": 3
+    },
+    {
+      "start": 323.7680007629469,
+      "end": 327.5880004577711,
+      "text": "The return takes twice as long as the rise, so the magnitude is half as large.",
+      "chapter": 3
+    },
+    {
+      "start": 328.3080016784742,
+      "end": 331.1480018310621,
+      "text": "The signs refer to our chosen positive circulation direction.",
+      "chapter": 3
+    },
+    {
+      "start": 332.18800274658946,
+      "end": 336.048003356941,
+      "text": "If the graph instead showed total flux linkage, we would not multiply by N",
+      "chapter": 3
+    },
+    {
+      "start": 336.048003356941,
+      "end": 336.3479987793043,
+      "text": "again.",
+      "chapter": 3
+    },
+    {
+      "start": 337.06800000000743,
+      "end": 340.744409207865,
+      "text": "At ideal sharp corners, a unique derivative is not defined; use the",
+      "chapter": 3
+    },
+    {
+      "start": 340.744409207865,
+      "end": 341.3479987793043,
+      "text": "appropriate",
+      "chapter": 3
+    },
+    {
+      "start": 341.3479987793043,
+      "end": 344.90799633789806,
+      "text": "open time interval rather than assigning both slopes to one instant.",
+      "chapter": 3
+    },
+    {
+      "start": 345.98799816895274,
+      "end": 347.6279975586012,
+      "text": "Real transitions are smoothed.",
+      "chapter": 3
+    },
+    {
+      "start": 348.40799633789806,
+      "end": 352.28800122071056,
+      "text": "Sketching the corresponding emf graph gives three constant levels: minus one,",
+      "chapter": 3
+    },
+    {
+      "start": 352.6480018310621,
+      "end": 354.28800122071056,
+      "text": "zero and plus one half volt.",
+      "chapter": 3
+    },
+    {
+      "start": 354.57600000000986,
+      "end": 359.275999809275,
+      "text": "For a curved flux time graph, average and instantaneous emf can differ.",
+      "chapter": 4
+    },
+    {
+      "start": 360.09599998093637,
+      "end": 362.75600030518564,
+      "text": "Let's solve one clean JEE style problem.",
+      "chapter": 4
+    },
+    {
+      "start": 363.1760003814796,
+      "end": 367.51599958039316,
+      "text": "A fixed forty turn coil has area zero point zero three square meters per turn.",
+      "chapter": 4
+    },
+    {
+      "start": 368.25600030518564,
+      "end": 370.9360006103614,
+      "text": "A uniform magnetic field follows its chosen normal.",
+      "chapter": 4
+    },
+    {
+      "start": 371.6559999237159,
+      "end": 375.5160005340675,
+      "text": "Field strength as a function of time is zero point one plus zero point two",
+      "chapter": 4
+    },
+    {
+      "start": 375.5160005340675,
+      "end": 378.815999771128,
+      "text": "times t squared, in tesla, with t in seconds.",
+      "chapter": 4
+    },
+    {
+      "start": 379.57600000000986,
+      "end": 381.5960004577735,
+      "text": "Find the induced emf at two seconds.",
+      "chapter": 4
+    },
+    {
+      "start": 382.3360002288917,
+      "end": 385.315999771128,
+      "text": "First write the flux linkage: forty times area times B.",
+      "chapter": 4
+    },
+    {
+      "start": 385.75600030518564,
+      "end": 388.33599832154306,
+      "text": "The angle is zero, so cosine contributes one.",
+      "chapter": 4
+    },
+    {
+      "start": 388.9560010681251,
+      "end": 390.73599984742197,
+      "text": "Differentiate before substituting the time.",
+      "chapter": 4
+    },
+    {
+      "start": 391.31600167847665,
+      "end": 394.7760007629493,
+      "text": "The derivative of B is zero point four times t tesla per second.",
+      "chapter": 4
+    },
+    {
+      "start": 395.75600030518564,
+      "end": 398.9360006103614,
+      "text": "Multiply by minus forty times zero point zero three.",
+      "chapter": 4
+    },
+    {
+      "start": 398.9360006103614,
+      "end": 401.5559995422462,
+      "text": "The emf is minus zero point four eight times t volts.",
+      "chapter": 4
+    },
+    {
+      "start": 402.296001220713,
+      "end": 404.91600015259775,
+      "text": "At two seconds, that is minus zero point nine six volt.",
+      "chapter": 4
+    },
+    {
+      "start": 405.5960004577735,
+      "end": 409.5359990844825,
+      "text": "With total resistance eight ohms and negligible inductive effects, current",
+      "chapter": 4
+    },
+    {
+      "start": 409.5359990844825,
+      "end": 411.5960004577735,
+      "text": "magnitude is zero point one two ampere.",
+      "chapter": 4
+    },
+    {
+      "start": 412.17599847413095,
+      "end": 415.07600000000986,
+      "text": "Its circulation is opposite our positive right hand convention.",
+      "chapter": 4
+    },
+    {
+      "start": 415.97600152588876,
+      "end": 418.1959989318946,
+      "text": "Now compare an interval from zero to two seconds.",
+      "chapter": 4
+    },
+    {
+      "start": 418.9360006103614,
+      "end": 422.99599816895517,
+      "text": "B changes by zero point eight tesla, giving an average rate of zero point four",
+      "chapter": 4
+    },
+    {
+      "start": 422.99599816895517,
+      "end": 423.87600305176767,
+      "text": "tesla per second.",
+      "chapter": 4
+    },
+    {
+      "start": 425.07600000000986,
+      "end": 428.85599877930673,
+      "text": "Average emf is minus zero point four eight volt, not the final instantaneous",
+      "chapter": 4
+    },
+    {
+      "start": 428.85599877930673,
+      "end": 429.25600030518564,
+      "text": "value.",
+      "chapter": 4
+    },
+    {
+      "start": 430.1960027465919,
+      "end": 432.9360006103614,
+      "text": "Constant initial field contributes flux, but no derivative.",
+      "chapter": 4
+    },
+    {
+      "start": 433.85599877930673,
+      "end": 438.1359975586036,
+      "text": "Before finishing any induction problem, check the normal, linked turns, the",
+      "chapter": 4
+    },
+    {
+      "start": 438.1359975586036,
+      "end": 441.796001220713,
+      "text": "time dependence, your direction convention and whether the circuit model",
+      "chapter": 4
+    },
+    {
+      "start": 441.796001220713,
+      "end": 444.17599847413095,
+      "text": "permits current equal to emf over resistance.",
+      "chapter": 4
+    }
+  ]
+}

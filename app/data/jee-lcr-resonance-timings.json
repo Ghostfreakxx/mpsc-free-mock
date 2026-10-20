@@ -1,0 +1,789 @@
+{
+  "duration": 423.12000000001154,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 82.36800000000223
+    },
+    {
+      "start": 82.36800000000223,
+      "end": 166.68000000000453
+    },
+    {
+      "start": 166.68000000000453,
+      "end": 250.39200000000682
+    },
+    {
+      "start": 250.39200000000682,
+      "end": 338.16000000000923
+    },
+    {
+      "start": 338.16000000000923,
+      "end": 423.12000000001154
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.5399999618530273,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.3399999141693115,
+      "end": 6.659999847412109,
+      "text": "Connect a resistor, inductor and capacitor in series to a sinusoidal source.",
+      "chapter": 0
+    },
+    {
+      "start": 7.360000133514404,
+      "end": 11.530256748199463,
+      "text": "There is only one series current, but the three element voltages do not peak",
+      "chapter": 0
+    },
+    {
+      "start": 11.530256748199463,
+      "end": 11.640000343322754,
+      "text": "at",
+      "chapter": 0
+    },
+    {
+      "start": 11.640000343322754,
+      "end": 12.279999732971191,
+      "text": "the same time.",
+      "chapter": 0
+    },
+    {
+      "start": 12.920000076293945,
+      "end": 16.719999313354492,
+      "text": "That is why adding their magnitudes as ordinary positive numbers gives the",
+      "chapter": 0
+    },
+    {
+      "start": 16.719999313354492,
+      "end": 17.739999771118164,
+      "text": "wrong source voltage.",
+      "chapter": 0
+    },
+    {
+      "start": 18.81999969482422,
+      "end": 20.360000610351562,
+      "text": "Use current as our phasor reference.",
+      "chapter": 0
+    },
+    {
+      "start": 21.299999237060547,
+      "end": 22.780000686645508,
+      "text": "Resistor voltage points along current.",
+      "chapter": 0
+    },
+    {
+      "start": 23.760000228881836,
+      "end": 26.719999313354492,
+      "text": "Inductor voltage leads it by ninety degrees, so draw it upward.",
+      "chapter": 0
+    },
+    {
+      "start": 27.739999771118164,
+      "end": 30.920000076293945,
+      "text": "Capacitor voltage lags by ninety degrees, so draw it downward.",
+      "chapter": 0
+    },
+    {
+      "start": 31.860000610351562,
+      "end": 35.18000030517578,
+      "text": "The inductive and capacitive voltage phasors oppose each other.",
+      "chapter": 0
+    },
+    {
+      "start": 35.65999984741211,
+      "end": 40.58000183105469,
+      "text": "Their net vertical contribution is current times X L minus X C.",
+      "chapter": 0
+    },
+    {
+      "start": 41.34000015258789,
+      "end": 44.099998474121094,
+      "text": "The horizontal contribution is current times R.",
+      "chapter": 0
+    },
+    {
+      "start": 44.63999938964844,
+      "end": 46.41999816894531,
+      "text": "The source voltage is the vector sum.",
+      "chapter": 0
+    },
+    {
+      "start": 47.099998474121094,
+      "end": 51.720001220703125,
+      "text": "Here, all phasor lengths represent RMS magnitudes; peak values would also work",
+      "chapter": 0
+    },
+    {
+      "start": 51.720001220703125,
+      "end": 52.7400016784668,
+      "text": "if used consistently.",
+      "chapter": 0
+    },
+    {
+      "start": 53.7400016784668,
+      "end": 59.74000040690104,
+      "text": "Suppose RMS current is two amperes, R is thirty ohms, X L is",
+      "chapter": 0
+    },
+    {
+      "start": 59.74000040690104,
+      "end": 60.84000015258789,
+      "text": "seventy ohms and X C is thirty ohms.",
+      "chapter": 0
+    },
+    {
+      "start": 61.779998779296875,
+      "end": 63.08000183105469,
+      "text": "Resistor voltage is sixty volts.",
+      "chapter": 0
+    },
+    {
+      "start": 63.79999923706055,
+      "end": 67.8384615091177,
+      "text": "Inductor voltage is one hundred forty volts, capacitor voltage sixty volts,",
+      "chapter": 0
+    },
+    {
+      "start": 67.8384615091177,
+      "end": 68,
+      "text": "and",
+      "chapter": 0
+    },
+    {
+      "start": 68,
+      "end": 69.36000061035156,
+      "text": "their difference eighty volts.",
+      "chapter": 0
+    },
+    {
+      "start": 70.12000274658203,
+      "end": 73.68000030517578,
+      "text": "The source magnitude is the square root of sixty squared plus eighty squared:",
+      "chapter": 0
+    },
+    {
+      "start": 73.68000030517578,
+      "end": 74.95999908447266,
+      "text": "one hundred volts.",
+      "chapter": 0
+    },
+    {
+      "start": 75.68000030517578,
+      "end": 77.22000122070312,
+      "text": "It is not two hundred sixty volts.",
+      "chapter": 0
+    },
+    {
+      "start": 78.19999694824219,
+      "end": 81.83999633789062,
+      "text": "Phasors encode time relationships; they are not literal spatial voltage arrows",
+      "chapter": 0
+    },
+    {
+      "start": 81.83999633789062,
+      "end": 82.36800000000223,
+      "text": "inside the wires.",
+      "chapter": 0
+    },
+    {
+      "start": 82.36800000000223,
+      "end": 88.14800020981058,
+      "text": "Factor current out of the phasor triangle and you get impedance Z: square root",
+      "chapter": 1
+    },
+    {
+      "start": 88.14800020981058,
+      "end": 92.92800041961893,
+      "text": "of R squared plus the square of X L minus X C.",
+      "chapter": 1
+    },
+    {
+      "start": 92.92800041961893,
+      "end": 97.40799996185525,
+      "text": "Impedance has units ohms, but includes timing effects as well as resistance.",
+      "chapter": 1
+    },
+    {
+      "start": 98.40800091552957,
+      "end": 101.86800000000223,
+      "text": "RMS current equals RMS source voltage divided by Z.",
+      "chapter": 1
+    },
+    {
+      "start": 102.60799977112039,
+      "end": 106.66799923706277,
+      "text": "The phase angle phi is source voltage phase minus current phase, and its",
+      "chapter": 1
+    },
+    {
+      "start": 106.66799923706277,
+      "end": 110.16799923706277,
+      "text": "tangent is X L minus X C divided by R.",
+      "chapter": 1
+    },
+    {
+      "start": 110.48800083923562,
+      "end": 115.74800106811746,
+      "text": "With R thirty ohms and net reactance forty ohms, impedance is fifty ohms.",
+      "chapter": 1
+    },
+    {
+      "start": 116.6479987792991,
+      "end": 119.86800000000223,
+      "text": "A one hundred volt RMS source gives two amperes RMS.",
+      "chapter": 1
+    },
+    {
+      "start": 120.78799816894754,
+      "end": 123.24800106811746,
+      "text": "The phase angle is about fifty three point one degrees.",
+      "chapter": 1
+    },
+    {
+      "start": 124.12799832153543,
+      "end": 128.4679984741233,
+      "text": "Because net reactance is positive, source voltage leads current, or current",
+      "chapter": 1
+    },
+    {
+      "start": 128.4679984741233,
+      "end": 128.98799893188698,
+      "text": "lags.",
+      "chapter": 1
+    },
+    {
+      "start": 129.72800061035377,
+      "end": 134.32799908447487,
+      "text": "Now swap the reactances: X L thirty ohms and X C seventy ohms.",
+      "chapter": 1
+    },
+    {
+      "start": 135.40800091552956,
+      "end": 140.00799938965065,
+      "text": "Impedance still equals fifty ohms and current magnitude stays two amperes, but",
+      "chapter": 1
+    },
+    {
+      "start": 140.00799938965065,
+      "end": 141.00799938965065,
+      "text": "phi is negative.",
+      "chapter": 1
+    },
+    {
+      "start": 141.88800045776588,
+      "end": 144.98799893188698,
+      "text": "Current now leads the source voltage by the same angle magnitude.",
+      "chapter": 1
+    },
+    {
+      "start": 146.1479987792991,
+      "end": 148.38799664306862,
+      "text": "Magnitude alone cannot tell you the lead or lag.",
+      "chapter": 1
+    },
+    {
+      "start": 149.1479987792991,
+      "end": 150.88799664306862,
+      "text": "The sign of net reactance matters.",
+      "chapter": 1
+    },
+    {
+      "start": 151.70799633789284,
+      "end": 156.80800244140846,
+      "text": "Our formula assumes a series circuit, ideal L and C, positive total resistance",
+      "chapter": 1
+    },
+    {
+      "start": 157.20799633789284,
+      "end": 158.50799938965065,
+      "text": "and sinusoidal steady state.",
+      "chapter": 1
+    },
+    {
+      "start": 159.20799633789284,
+      "end": 163.5679969482444,
+      "text": "Do not reuse it unchanged for a parallel circuit, and do not mix RMS source",
+      "chapter": 1
+    },
+    {
+      "start": 163.5679969482444,
+      "end": 166.4679984741233,
+      "text": "voltage with peak current when calculating impedance.",
+      "chapter": 1
+    },
+    {
+      "start": 166.68000000000453,
+      "end": 170.18000000000453,
+      "text": "Resonance occurs when inductive and capacitive reactances match.",
+      "chapter": 2
+    },
+    {
+      "start": 170.85999982834315,
+      "end": 173.37999980926966,
+      "text": "Set omega L equal to one over omega C.",
+      "chapter": 2
+    },
+    {
+      "start": 174.31999986649012,
+      "end": 179.37999980926966,
+      "text": "Rearranging gives resonance angular frequency one over square root of L C.",
+      "chapter": 2
+    },
+    {
+      "start": 179.37999980926966,
+      "end": 183.47999923706507,
+      "text": "Ordinary resonance frequency is that angular frequency divided by two pi.",
+      "chapter": 2
+    },
+    {
+      "start": 184.2000004577682,
+      "end": 189.13025634766078,
+      "text": "At resonance, net reactance is zero, impedance equals resistance and current",
+      "chapter": 2
+    },
+    {
+      "start": 189.13025634766078,
+      "end": 189.25999992371058,
+      "text": "is",
+      "chapter": 2
+    },
+    {
+      "start": 189.25999992371058,
+      "end": 190.62000053406214,
+      "text": "in phase with the source voltage.",
+      "chapter": 2
+    },
+    {
+      "start": 190.88000076294398,
+      "end": 195.25999992371058,
+      "text": "For a fixed source amplitude and constant total resistance, the series current",
+      "chapter": 2
+    },
+    {
+      "start": 195.25999992371058,
+      "end": 196.44000022888636,
+      "text": "reaches its maximum.",
+      "chapter": 2
+    },
+    {
+      "start": 197.47999923706507,
+      "end": 201.81999938965296,
+      "text": "Try L equal to zero point one henry and C equal to one hundred microfarads.",
+      "chapter": 2
+    },
+    {
+      "start": 202.49999969482874,
+      "end": 206.1799990463302,
+      "text": "Their product is ten to the minus five, giving angular frequency about three",
+      "chapter": 2
+    },
+    {
+      "start": 206.1799990463302,
+      "end": 210.541281847347,
+      "text": "hundred sixteen point two radians per second and ordinary frequency about",
+      "chapter": 2
+    },
+    {
+      "start": 210.541281847347,
+      "end": 210.83999984741664,
+      "text": "fifty",
+      "chapter": 2
+    },
+    {
+      "start": 210.83999984741664,
+      "end": 211.5400006103561,
+      "text": "point three hertz.",
+      "chapter": 2
+    },
+    {
+      "start": 212.24000137329554,
+      "end": 217.2600018310592,
+      "text": "With RMS source voltage one hundred volts and R twenty ohms, resonance current",
+      "chapter": 2
+    },
+    {
+      "start": 217.2600018310592,
+      "end": 218.8600003051803,
+      "text": "is five amperes RMS.",
+      "chapter": 2
+    },
+    {
+      "start": 219.2999989318893,
+      "end": 221.83999984741664,
+      "text": "Do the inductor and capacitor voltages vanish?",
+      "chapter": 2
+    },
+    {
+      "start": 221.83999984741664,
+      "end": 223.38000076294398,
+      "text": "Pause before answering.",
+      "chapter": 2
+    },
+    {
+      "start": 224.38000076294398,
+      "end": 224.49999969482874,
+      "text": "No.",
+      "chapter": 2
+    },
+    {
+      "start": 225.1199986267135,
+      "end": 229.18000000000453,
+      "text": "Each reactance is about thirty one point six ohms, so each element voltage is",
+      "chapter": 2
+    },
+    {
+      "start": 229.18000000000453,
+      "end": 231.12000244141078,
+      "text": "about one hundred fifty eight volts RMS.",
+      "chapter": 2
+    },
+    {
+      "start": 231.63999908447718,
+      "end": 233.81999938965296,
+      "text": "Their phasors cancel each other in the source sum.",
+      "chapter": 2
+    },
+    {
+      "start": 234.4599987793014,
+      "end": 238.27999847412562,
+      "text": "An element voltage can exceed the source voltage without violating energy",
+      "chapter": 2
+    },
+    {
+      "start": 238.27999847412562,
+      "end": 238.80000274658656,
+      "text": "conservation.",
+      "chapter": 2
+    },
+    {
+      "start": 239.58000152588343,
+      "end": 241.99999969482874,
+      "text": "Our finite resistance model keeps current finite.",
+      "chapter": 2
+    },
+    {
+      "start": 242.5599972534225,
+      "end": 247.3343577145353,
+      "text": "The ideal zero resistance driven resonant system needs a transient analysis;",
+      "chapter": 2
+    },
+    {
+      "start": 247.3343577145353,
+      "end": 247.4599987793014,
+      "text": "do",
+      "chapter": 2
+    },
+    {
+      "start": 247.4599987793014,
+      "end": 250.22000091553187,
+      "text": "not promise an ordinary finite steady state current there.",
+      "chapter": 2
+    },
+    {
+      "start": 250.39200000000682,
+      "end": 255.57199982834544,
+      "text": "The source voltage and current may be out of phase, so multiplying their RMS",
+      "chapter": 3
+    },
+    {
+      "start": 255.57199982834544,
+      "end": 258.93199996185984,
+      "text": "magnitudes does not always give average transferred power.",
+      "chapter": 3
+    },
+    {
+      "start": 259.8520000381538,
+      "end": 264.77200011444774,
+      "text": "The correct expression is RMS voltage times RMS current times cosine phi.",
+      "chapter": 3
+    },
+    {
+      "start": 265.6120002670356,
+      "end": 267.37199954224315,
+      "text": "That cosine is the power factor.",
+      "chapter": 3
+    },
+    {
+      "start": 268.1119993133613,
+      "end": 270.69199923706736,
+      "text": "In our series model it equals R over Z.",
+      "chapter": 3
+    },
+    {
+      "start": 271.81200007630076,
+      "end": 276.3519990844795,
+      "text": "For the thirty ohm resistor and fifty ohm impedance example, power factor is",
+      "chapter": 3
+    },
+    {
+      "start": 276.3519990844795,
+      "end": 277.33200053406443,
+      "text": "zero point six.",
+      "chapter": 3
+    },
+    {
+      "start": 278.21199969483104,
+      "end": 283.5720003051826,
+      "text": "RMS voltage one hundred volts and RMS current two amperes give average power",
+      "chapter": 3
+    },
+    {
+      "start": 283.5720003051826,
+      "end": 284.6719987793037,
+      "text": "one hundred twenty watts.",
+      "chapter": 3
+    },
+    {
+      "start": 285.9720018310615,
+      "end": 290.6320016784736,
+      "text": "Check another way: current squared times resistance is four times thirty, also",
+      "chapter": 3
+    },
+    {
+      "start": 290.6320016784736,
+      "end": 291.71199969483104,
+      "text": "one hundred twenty watts.",
+      "chapter": 3
+    },
+    {
+      "start": 292.7520006103584,
+      "end": 297.4919984741279,
+      "text": "The product V RMS times I RMS is two hundred volt amperes of apparent power,",
+      "chapter": 3
+    },
+    {
+      "start": 298.1719987793037,
+      "end": 300.53199938965525,
+      "text": "not two hundred watts of real power in this example.",
+      "chapter": 3
+    },
+    {
+      "start": 301.7520006103584,
+      "end": 306.11200122070994,
+      "text": "Ideal inductors and capacitors store and return energy, giving zero average",
+      "chapter": 3
+    },
+    {
+      "start": 306.11200122070994,
+      "end": 307.2320001525947,
+      "text": "dissipation individually.",
+      "chapter": 3
+    },
+    {
+      "start": 308.4120004577705,
+      "end": 311.6320016784736,
+      "text": "Real components add losses, which belong in a more complete model.",
+      "chapter": 3
+    },
+    {
+      "start": 312.7520006103584,
+      "end": 316.31199816895213,
+      "text": "At series resonance, phi is zero and power factor is one.",
+      "chapter": 3
+    },
+    {
+      "start": 317.1719987793037,
+      "end": 321.6520021362373,
+      "text": "An ideal pure reactive circuit has zero average power despite nonzero voltage",
+      "chapter": 3
+    },
+    {
+      "start": 321.6520021362373,
+      "end": 322.21199969483104,
+      "text": "and current.",
+      "chapter": 3
+    },
+    {
+      "start": 322.9919984741279,
+      "end": 325.8920000000068,
+      "text": "That does not mean instantaneous power is always zero.",
+      "chapter": 3
+    },
+    {
+      "start": 326.7520006103584,
+      "end": 328.2920015258857,
+      "text": "Energy goes back and forth over the cycle.",
+      "chapter": 3
+    },
+    {
+      "start": 328.8519990844795,
+      "end": 333.40968933810404,
+      "text": "In JEE numericals, first establish whether the provided voltage and current",
+      "chapter": 3
+    },
+    {
+      "start": 333.40968933810404,
+      "end": 333.591996948249,
+      "text": "are",
+      "chapter": 3
+    },
+    {
+      "start": 333.591996948249,
+      "end": 337.13199786377635,
+      "text": "peak or RMS, then check whether a power factor is needed.",
+      "chapter": 3
+    },
+    {
+      "start": 338.16000000000923,
+      "end": 341.17999998093575,
+      "text": "Let's combine the ideas in one frequency test.",
+      "chapter": 4
+    },
+    {
+      "start": 341.9199999904725,
+      "end": 347.22000041962593,
+      "text": "Keep L zero point one henry, C one hundred microfarads, R twenty ohms",
+      "chapter": 4
+    },
+    {
+      "start": 347.69999996186226,
+      "end": 350.04000011445015,
+      "text": "and RMS source voltage one hundred volts.",
+      "chapter": 4
+    },
+    {
+      "start": 351.0800000763032,
+      "end": 355.2000009155366,
+      "text": "Set angular frequency to two hundred radians per second, below the resonance",
+      "chapter": 4
+    },
+    {
+      "start": 355.2000009155366,
+      "end": 358.13999954224556,
+      "text": "value of about three hundred sixteen.",
+      "chapter": 4
+    },
+    {
+      "start": 358.13999954224556,
+      "end": 360.0200006103608,
+      "text": "Inductive reactance is twenty ohms.",
+      "chapter": 4
+    },
+    {
+      "start": 360.94000068665474,
+      "end": 362.5800000763032,
+      "text": "Capacitive reactance is fifty ohms.",
+      "chapter": 4
+    },
+    {
+      "start": 363.13999954224556,
+      "end": 368.1800004577729,
+      "text": "Net reactance is minus thirty ohms, so the circuit is capacitive and current",
+      "chapter": 4
+    },
+    {
+      "start": 368.1800004577729,
+      "end": 369.60000053406685,
+      "text": "leads the voltage.",
+      "chapter": 4
+    },
+    {
+      "start": 370.0200006103608,
+      "end": 373.4000004069103,
+      "text": "Impedance is square root of twenty squared plus thirty squared, about thirty",
+      "chapter": 4
+    },
+    {
+      "start": 373.4000004069103,
+      "end": 374.72000137330025,
+      "text": "six point one ohms.",
+      "chapter": 4
+    },
+    {
+      "start": 375.5200006103608,
+      "end": 378.1800004577729,
+      "text": "RMS current is about two point seven seven amperes.",
+      "chapter": 4
+    },
+    {
+      "start": 378.9599992370698,
+      "end": 383.7100001907441,
+      "text": "Power factor is twenty over thirty six point one, about zero point five five",
+      "chapter": 4
+    },
+    {
+      "start": 383.7100001907441,
+      "end": 384.16000000000923,
+      "text": "five.",
+      "chapter": 4
+    },
+    {
+      "start": 384.16000000000923,
+      "end": 386.54000106812447,
+      "text": "Average power is about one hundred fifty four watts.",
+      "chapter": 4
+    },
+    {
+      "start": 387.2599984741303,
+      "end": 391.72000137330025,
+      "text": "At resonance the current would be five amperes and average power five hundred",
+      "chapter": 4
+    },
+    {
+      "start": 391.72000137330025,
+      "end": 394.0000001525971,
+      "text": "watts for this same fixed source and resistor.",
+      "chapter": 4
+    },
+    {
+      "start": 394.91999832154244,
+      "end": 397.63000122071236,
+      "text": "Now raise angular frequency to five hundred.",
+      "chapter": 4
+    },
+    {
+      "start": 397.63000122071236,
+      "end": 401.47999969483345,
+      "text": "X L becomes fifty ohms and X C becomes twenty ohms.",
+      "chapter": 4
+    },
+    {
+      "start": 402.28000274659126,
+      "end": 405.07999816895455,
+      "text": "Net reactance is plus thirty ohms: current lags.",
+      "chapter": 4
+    },
+    {
+      "start": 405.6199990844819,
+      "end": 409.1400033569428,
+      "text": "The impedance and current magnitude happen to match our lower frequency case,",
+      "chapter": 4
+    },
+    {
+      "start": 409.49999633789986,
+      "end": 410.49999633789986,
+      "text": "but phase reverses.",
+      "chapter": 4
+    },
+    {
+      "start": 411.1000024414155,
+      "end": 414.8200036621186,
+      "text": "That matching is specific to these numbers, not a general equal spacing",
+      "chapter": 4
+    },
+    {
+      "start": 414.8200036621186,
+      "end": 415.6400033569428,
+      "text": "frequency rule.",
+      "chapter": 4
+    },
+    {
+      "start": 416.39999786377876,
+      "end": 420.7000009155366,
+      "text": "Recalculate both reactances whenever frequency changes, then use their",
+      "chapter": 4
+    },
+    {
+      "start": 420.7000009155366,
+      "end": 422.78000274659126,
+      "text": "difference, the impedance and the power factor.",
+      "chapter": 4
+    }
+  ]
+}

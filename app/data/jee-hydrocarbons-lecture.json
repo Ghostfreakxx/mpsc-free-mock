@@ -1,0 +1,424 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script. Read every sentence completely and precisely, including the final sentence. Do not summarize.",
+  "title": "Hydrocarbons: addition, radical chains and aromatic reactions",
+  "subject": "Chemistry",
+  "unit": 15,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 Chemistry syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: orientation of electrophilic additions",
+      "url": "https://openstax.org/books/organic-chemistry/pages/7-8-orientation-of-electrophilic-additions-markovnikovs-rule"
+    },
+    {
+      "title": "OpenStax: halogenation of alkenes",
+      "url": "https://openstax.org/books/organic-chemistry/pages/8-2-halogenation-of-alkenes-addition-of-x2"
+    },
+    {
+      "title": "OpenStax: electrophilic aromatic bromination",
+      "url": "https://openstax.org/books/organic-chemistry/pages/16-1-electrophilic-aromatic-substitution-reactions-bromination"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Frameworks, formulas and unsaturation",
+      "formula": "For hydrocarbons: DBE = (2C + 2 − H)/2",
+      "script": "Welcome to Hydrocarbons. This recorded Chemistry class uses an AI generated Marin voice. A hydrocarbon contains only carbon and hydrogen. Start with connectivity before choosing a reaction. An acyclic saturated alkane has two more hydrogen atoms than twice its carbon count. One ring or one double bond removes two hydrogens relative to that saturated reference; one triple bond removes four. The degree of unsaturation counts rings and pi bonds. For a neutral ordinary hydrocarbon, take twice the carbon count plus two, subtract the hydrogen count, and divide by two. Benzene's formula gives four, consistent with one ring and three pi bonds in a conventional contributor. The formula alone does not prove benzene: other connectivities can share it. Butane has zero degrees, butene has one, and butyne has two. In but two ene, each double bonded carbon carries two different groups, permitting geometrical isomers. A terminal double bond with two hydrogens on one carbon does not meet that requirement. Check valence, hydrogen count and possible stereoisomers before interpreting a formula as one unique molecule.",
+      "points": [
+        "C₄H₁₀ · (10 − 10)/2 = 0 · Acyclic saturated",
+        "C₄H₈ · (10 − 8)/2 = 1 · One ring or C=C",
+        "C₆H₆ · (14 − 6)/2 = 4 · Formula ≠ unique shape"
+      ],
+      "board": {
+        "heading": "Frameworks, formulas and unsaturation",
+        "columns": [
+          "Hydrocarbon",
+          "DBE calculation",
+          "Structural allowance"
+        ],
+        "rows": [
+          [
+            "C₄H₁₀",
+            "(10 − 10)/2 = 0",
+            "Acyclic saturated"
+          ],
+          [
+            "C₄H₈",
+            "(10 − 8)/2 = 1",
+            "One ring or C=C"
+          ],
+          [
+            "C₆H₆",
+            "(14 − 6)/2 = 4",
+            "Formula ≠ unique shape"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Conformations and radical chains",
+      "formula": "Initiation → propagation → termination",
+      "script": "Rotation about ethane's carbon carbon single bond changes its conformation without changing which atoms are connected. In a Newman view along that bond, an eclipsed arrangement aligns front and back bonds, while a staggered arrangement offsets them. Staggered ethane has lower energy in the introductory model. These are conformations, not different constitutional isomers. Alkane chlorination under light changes connectivity through a radical chain. Initiation breaks a chlorine molecule homolytically to form two chlorine radicals. In propagation, a chlorine radical removes hydrogen from methane to give hydrogen chloride and a methyl radical. That methyl radical reacts with another chlorine molecule to form chloromethane and regenerate a chlorine radical. Each propagation sequence therefore maintains a reactive radical. Termination joins two radicals without generating another. Repeated substitution can form products beyond the first chlorinated compound, and unsymmetrical alkanes can give several positions of substitution. Product amounts depend on both how many hydrogens are available and their relative reaction rates. Do not predict product percentages from radical stability alone or assume all halogenations have identical selectivity.",
+      "points": [
+        "Initiation · Cl₂ → 2 Cl• · Radicals created",
+        "Propagation · CH₃• + Cl₂ → CH₃Cl + Cl• · Radical regenerated",
+        "Termination · CH₃• + Cl• → CH₃Cl · Radicals consumed"
+      ],
+      "board": {
+        "heading": "Conformations and radical chains",
+        "columns": [
+          "Chain stage",
+          "Elementary change",
+          "Radical accounting"
+        ],
+        "rows": [
+          [
+            "Initiation",
+            "Cl₂ → 2 Cl•",
+            "Radicals created"
+          ],
+          [
+            "Propagation",
+            "CH₃• + Cl₂ → CH₃Cl + Cl•",
+            "Radical regenerated"
+          ],
+          [
+            "Termination",
+            "CH₃• + Cl• → CH₃Cl",
+            "Radicals consumed"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Alkene orientation depends on pathway",
+      "formula": "Propene + HBr: ionic and peroxide pathways differ",
+      "script": "An alkene's pi electrons can begin bonding to an electrophile. In ordinary ionic addition of hydrogen bromide to propene, protonation can lead toward a secondary or a primary carbocation. The pathway involving the more stable secondary intermediate is favoured, and bromide capture gives mainly two bromopropane. This is the familiar Markovnikov orientation for this substrate and these conditions. It is a result of a mechanism, not a direction rule independent of reagents. Carbocation rearrangements can change products in substrates where a more favourable intermediate is accessible. Suitable peroxide initiated radical conditions change the hydrogen bromide pathway. Bromine radical addition that forms the more stable carbon radical leads, after hydrogen abstraction, mainly to one bromopropane. The standard peroxide reversal applies to hydrogen bromide; it must not be transferred automatically to hydrogen chloride or hydrogen iodide. For every prediction write the alkene, reagent and radical or ionic conditions together. The carbon skeleton has three carbons in both propene products; the location of bromine changes, while no carbon is gained or lost.",
+      "points": [
+        "HBr, ordinary conditions · Ionic addition · 2-bromopropane",
+        "HBr, suitable peroxides · Radical chain · 1-bromopropane",
+        "HCl or HI + peroxides · No general HBr shortcut · Check actual chemistry"
+      ],
+      "board": {
+        "heading": "Alkene orientation depends on pathway",
+        "columns": [
+          "Propene reaction",
+          "Dominant pathway",
+          "Main product"
+        ],
+        "rows": [
+          [
+            "HBr, ordinary conditions",
+            "Ionic addition",
+            "2-bromopropane"
+          ],
+          [
+            "HBr, suitable peroxides",
+            "Radical chain",
+            "1-bromopropane"
+          ],
+          [
+            "HCl or HI + peroxides",
+            "No general HBr shortcut",
+            "Check actual chemistry"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Hydrogenation, halogenation and hydration",
+      "formula": "The solvent and catalyst help define the reaction",
+      "script": "Adding hydrogen to an alkene with an appropriate metal catalyst converts its double bond into a single bond. Ethene becomes ethane, consuming one mole of hydrogen per mole of double bonds. Alkene bromination in a suitable non-nucleophilic medium commonly forms a vicinal dibromide, with bromine atoms on adjacent carbons. A bridged intermediate explains the usual anti addition rather than a freely rotating carbocation picture. If water is present, it can compete as a nucleophile and change the product toward a bromohydrin. Therefore a reagent name without solvent information may not fully specify the chemistry. Acid catalysed hydration of propene gives mainly propan two ol through the usual ionic orientation. Simply mixing an alkene with water does not imply rapid hydration without suitable conditions. In addition polymerization, many ethene molecules join as the pi bonds are replaced by bonds along a saturated chain. The polyethene repeat unit contains two carbon atoms each bearing two hydrogens. Distinguish a repeat unit from a whole polymer molecule.",
+      "points": [
+        "Ethene · H₂; metal catalyst · Ethane",
+        "Alkene · Br₂; non-nucleophilic medium · Vicinal dibromide",
+        "Ethene · Polymerization conditions · [–CH₂–CH₂–]ₙ"
+      ],
+      "board": {
+        "heading": "Hydrogenation, halogenation and hydration",
+        "columns": [
+          "Starting alkene",
+          "Reagent or condition",
+          "Transformation"
+        ],
+        "rows": [
+          [
+            "Ethene",
+            "H₂; metal catalyst",
+            "Ethane"
+          ],
+          [
+            "Alkene",
+            "Br₂; non-nucleophilic medium",
+            "Vicinal dibromide"
+          ],
+          [
+            "Ethene",
+            "Polymerization conditions",
+            "[–CH₂–CH₂–]ₙ"
+          ]
+        ]
+      },
+      "speechInput": "Adding hydrogen to an alkene with an appropriate metal catalyst converts its double bond into a single bond. Ethene becomes ethane, consuming one mole of hydrogen per mole of double bonds. Alkene bromination in a suitable non-nucleophilic medium commonly forms a vicinal dibromide, with bromine atoms on adjacent carbons. A bridged intermediate explains the usual anti addition rather than a freely rotating carbocation picture. If water is present, it can compete as a nucleophile and change the product toward a bromohydrin. Therefore a reagent name without solvent information may not fully specify the chemistry. Acid catalysed hydration of propene gives mainly propan two ol through the usual ionic orientation. Simply mixing an alkene with water does not imply rapid hydration without suitable conditions. In addition polymerization, many ethene molecules join as the pi bonds are replaced by bonds along a saturated chain. The polyethene repeat unit contains two carbon atoms each bearing two hydrogens. Distinguish a repeat unit from a whole polymer molecule and keep the carbon inventory consistent.",
+      "recordingNote": "Closing reminder shortened by TTS; transcript follows independently verified audio. Exact requested input retained for cache provenance."
+    },
+    {
+      "title": "Ozonolysis reconstructs double bonds",
+      "formula": "Reductive work-up preserves aldehyde fragments",
+      "script": "Ozonolysis is useful for locating an alkene double bond when the work-up is specified. Under reductive work-up, split the double bond and convert each of its carbons into a carbonyl carbon. Keep the other groups attached to that carbon. For but two ene, each double bonded carbon carries hydrogen and methyl, so each fragment is acetaldehyde, a two carbon aldehyde. One original molecule gives two acetaldehyde molecules. This result identifies the connectivity but does not by itself distinguish the geometrical isomers of but two ene. For two methylpropene, one double bonded carbon bears two methyl groups and gives propanone; the terminal carbon bears two hydrogens and gives formaldehyde, a one carbon aldehyde. Add the fragment carbon counts: three plus one returns the original four. A double bonded carbon with no hydrogen commonly yields a ketone fragment. A carbon bearing hydrogen can yield an aldehyde under the stated reductive conditions. Oxidative work-up can further change aldehyde products, so it must not be treated as interchangeable. Work backward by reconnecting the two carbonyl carbons when reconstructing a possible alkene.",
+      "points": [
+        "But-2-ene · 2 ethanal · 2 + 2 = 4",
+        "2-Methylpropene · Propanone + methanal · 3 + 1 = 4",
+        "Each C=C carbon · Becomes carbonyl C · Keep attached groups"
+      ],
+      "board": {
+        "heading": "Ozonolysis reconstructs double bonds",
+        "columns": [
+          "Alkene",
+          "Reductive fragments",
+          "Carbon check"
+        ],
+        "rows": [
+          [
+            "But-2-ene",
+            "2 ethanal",
+            "2 + 2 = 4"
+          ],
+          [
+            "2-Methylpropene",
+            "Propanone + methanal",
+            "3 + 1 = 4"
+          ],
+          [
+            "Each C=C carbon",
+            "Becomes carbonyl C",
+            "Keep attached groups"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Alkynes: acidity and selective reduction",
+      "formula": "Terminal sp C–H differs from an ordinary alkane C–H",
+      "script": "A terminal alkyne has hydrogen directly attached to a carbon of the triple bond. Removing this hydrogen gives an acetylide ion. The greater s character of an sp orbital stabilizes the negative charge compared with comparable simple sp two or sp three carbanions. Terminal alkynes are consequently more acidic than comparable alkenes and alkanes, while remaining much weaker acids than water. A sufficiently strong base such as sodium amide can form an acetylide; aqueous hydroxide is not a quantitative substitute. Acetylides can form carbon carbon bonds with suitable unhindered primary alkyl halides by substitution, while more hindered substrates can favour elimination. Complete catalytic hydrogenation of an alkyne consumes two equivalents of hydrogen to reach an alkane. Selective partial hydrogenation with a Lindlar catalyst can give a cis alkene from an appropriate internal alkyne. Dissolving metal reduction can instead give the trans alkene. The alkene formed from a terminal triple bond has a carbon bearing two hydrogens, so cis and trans labels do not apply. Reagents and equivalents decide how far the reduction proceeds.",
+      "points": [
+        "Terminal C≡C–H · NaNH₂ · Acetylide formation",
+        "Internal alkyne · H₂; Lindlar catalyst · Cis alkene",
+        "Internal alkyne · Dissolving metal reduction · Trans alkene"
+      ],
+      "board": {
+        "heading": "Alkynes: acidity and selective reduction",
+        "columns": [
+          "Alkyne transformation",
+          "Conditions",
+          "Expected outcome"
+        ],
+        "rows": [
+          [
+            "Terminal C≡C–H",
+            "NaNH₂",
+            "Acetylide formation"
+          ],
+          [
+            "Internal alkyne",
+            "H₂; Lindlar catalyst",
+            "Cis alkene"
+          ],
+          [
+            "Internal alkyne",
+            "Dissolving metal reduction",
+            "Trans alkene"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Aromaticity and aromatic substitution",
+      "formula": "Planar cyclic conjugation plus 4n + 2 π electrons",
+      "script": "Benzene is a planar cyclic conjugated system with six pi electrons. It satisfies the introductory four n plus two aromatic electron rule with n equal to one. Electron count alone is insufficient: a molecule must also have the required cyclic conjugation and appropriate geometry. Benzene's carbon carbon bonds are equivalent; alternating bond drawings are contributors to a delocalized structure. In common electrophilic aromatic substitution, the ring forms a new bond to an electrophile and temporarily loses aromaticity. Removal of a proton restores the conjugated ring. Bromination commonly uses bromine with a Lewis acid such as iron three bromide. Nitration uses conditions that generate the nitronium electrophile. These ring substitutions replace a ring hydrogen and retain the six carbon framework. They differ from radical substitution on an alkyl side chain under light. In toluene, identify whether conditions target the aromatic ring or the benzylic position before assigning a product. Treat aromatic stabilization as an explanation for common reaction preferences, rather than a claim that an aromatic ring can never undergo any addition reaction.",
+      "points": [
+        "Bromination · Br₂ with FeBr₃ · Ring H replaced",
+        "Nitration · Nitronium electrophile · Aromaticity restored",
+        "Side-chain halogenation · Radical conditions · Different reaction site"
+      ],
+      "board": {
+        "heading": "Aromaticity and aromatic substitution",
+        "columns": [
+          "Aromatic process",
+          "Electrophile or role",
+          "Key distinction"
+        ],
+        "rows": [
+          [
+            "Bromination",
+            "Br₂ with FeBr₃",
+            "Ring H replaced"
+          ],
+          [
+            "Nitration",
+            "Nitronium electrophile",
+            "Aromaticity restored"
+          ],
+          [
+            "Side-chain halogenation",
+            "Radical conditions",
+            "Different reaction site"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Directing groups and synthesis checks",
+      "formula": "Activation and directing position are separate questions",
+      "script": "A substituent influences both how rapidly an aromatic ring reacts and where a new group is introduced. An alkyl group generally activates the ring and favours ortho and para substitution. A nitro group deactivates the ring and favours meta substitution. Halogens are an important mixed case: they deactivate overall through electron withdrawal but direct toward ortho and para positions through resonance donation. A directing preference does not promise one pure positional product. Friedel Crafts alkylation introduces an alkyl group under suitable Lewis acid conditions, but rearrangements and repeated alkylation can complicate the result. Acylation introduces an acyl group and avoids the analogous carbocation skeleton rearrangement. Strongly deactivated rings and catalyst binding groups can prevent the usual reaction, so do not apply the name without checking the substrate. In a short synthesis, mark the reaction centre, count carbons, state the reagent and inspect competing pathways at each arrow. Use the practice questions to connect these choices rather than memorizing product names alone. More preparation routes and detailed stereochemical drawings remain useful.",
+      "points": [
+        "Alkyl · Activating · Ortho / para",
+        "Nitro · Deactivating · Meta",
+        "Halogen · Deactivating · Ortho / para"
+      ],
+      "board": {
+        "heading": "Directing groups and synthesis checks",
+        "columns": [
+          "Existing substituent",
+          "Overall ring effect",
+          "Direction preference"
+        ],
+        "rows": [
+          [
+            "Alkyl",
+            "Activating",
+            "Ortho / para"
+          ],
+          [
+            "Nitro",
+            "Deactivating",
+            "Meta"
+          ],
+          [
+            "Halogen",
+            "Deactivating",
+            "Ortho / para"
+          ]
+        ]
+      },
+      "speechInput": "A substituent influences both how rapidly an aromatic ring reacts and where a new group is introduced. An alkyl group generally activates the ring and favours ortho and para substitution. A nitro group deactivates the ring and favours meta substitution. Halogens are an important mixed case: they deactivate overall through electron withdrawal but direct toward ortho and para positions through resonance donation. A directing preference does not promise one pure positional product. Friedel Crafts alkylation introduces an alkyl group under suitable Lewis acid conditions, but rearrangements and repeated alkylation can complicate the result. Acylation introduces an acyl group and avoids the analogous carbocation skeleton rearrangement. Strongly deactivated rings and catalyst binding groups can prevent the usual reaction, so do not apply the name without checking the substrate. In a short synthesis, mark the reaction centre, count carbons, state the reagent and inspect competing pathways at each arrow. Use the practice questions to connect these choices rather than memorizing product names alone. More preparation routes and detailed stereochemical drawings remain useful further study.",
+      "recordingNote": "Closing reminder shortened by TTS; transcript follows independently verified audio. Exact requested input retained for cache provenance."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Ordinary ionic addition of HBr to propene mainly gives:",
+      "options": [
+        "1-bromopropane",
+        "2-bromopropane",
+        "Benzene",
+        "Propane only"
+      ],
+      "answer": 1,
+      "explanation": "The favoured secondary carbocation pathway places bromine at the middle carbon."
+    },
+    {
+      "question": "The familiar peroxide-induced reversed HX orientation applies to:",
+      "options": [
+        "Every hydrogen halide",
+        "HCl only",
+        "HBr under suitable radical conditions",
+        "HI only"
+      ],
+      "answer": 2,
+      "explanation": "The standard peroxide effect is associated with HBr, not a general rule for all hydrogen halides."
+    },
+    {
+      "question": "Reductive ozonolysis of but-2-ene gives:",
+      "options": [
+        "Two ethanal molecules",
+        "Only methane",
+        "Two acetone molecules",
+        "Benzene"
+      ],
+      "answer": 0,
+      "explanation": "Each double-bond carbon retains its H and CH3 substituents and becomes an ethanal carbonyl carbon."
+    },
+    {
+      "question": "The lower-energy ethane conformation in the elementary model is:",
+      "options": [
+        "Eclipsed",
+        "A disconnected molecule",
+        "A carbocation",
+        "Staggered"
+      ],
+      "answer": 3,
+      "explanation": "Staggered ethane has less torsional strain than the eclipsed arrangement."
+    },
+    {
+      "question": "A chlorine substituent on benzene is generally:",
+      "options": [
+        "Activating and meta directing",
+        "Deactivating and ortho/para directing",
+        "Always removed before substitution",
+        "Activating and only para directing"
+      ],
+      "answer": 1,
+      "explanation": "Halogens withdraw inductively and deactivate, while resonance donation favours ortho/para substitution."
+    },
+    {
+      "question": "Which hydrocarbon has hydrogen directly attached to an sp carbon?",
+      "options": [
+        "Ethane",
+        "Ethene",
+        "Ethyne",
+        "Benzene"
+      ],
+      "answer": 2,
+      "explanation": "Ethyne is a terminal alkyne with an sp carbon-hydrogen bond, responsible for its distinctive acidity."
+    },
+    {
+      "question": "The degree of unsaturation of neutral hydrocarbon C6H6 is:",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "(2 × 6 + 2 − 6)/2 = 4. This count does not uniquely identify benzene."
+    },
+    {
+      "question": "Reductive ozonolysis of 2-methylpropene gives:",
+      "options": [
+        "Two ethanal molecules",
+        "Propanone and methanal",
+        "Only methane",
+        "Two propanone molecules"
+      ],
+      "answer": 1,
+      "explanation": "The carbon bearing two methyl groups gives propanone; the terminal CH2 carbon gives methanal."
+    },
+    {
+      "question": "Partial hydrogenation of an appropriate internal alkyne with a Lindlar catalyst usually gives:",
+      "options": [
+        "A cis alkene",
+        "A trans alkene only",
+        "An acetylide salt",
+        "A haloarene"
+      ],
+      "answer": 0,
+      "explanation": "The Lindlar system allows selective partial hydrogenation with the usual cis relationship for an appropriate internal alkyne."
+    },
+    {
+      "question": "Which group is generally deactivating and meta directing in aromatic substitution?",
+      "options": [
+        "Methyl",
+        "Ethyl",
+        "Nitro",
+        "Chlorine"
+      ],
+      "answer": 2,
+      "explanation": "Nitro deactivates and directs meta. Chlorine deactivates but directs ortho/para."
+    }
+  ]
+}

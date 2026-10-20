@@ -1,0 +1,395 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Solutions: concentration, vapour pressure and particle counting",
+  "subject": "Chemistry",
+  "unit": 5,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 Chemistry syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: molarity",
+      "url": "https://openstax.org/books/chemistry-2e/pages/3-3-molarity"
+    },
+    {
+      "title": "OpenStax: colligative properties",
+      "url": "https://openstax.org/books/chemistry-2e/pages/11-4-colligative-properties"
+    },
+    {
+      "title": "NCERT: Solutions — Henry law and nonideal mixtures",
+      "url": "https://ncert.nic.in/textbook/pdf/lech101.pdf"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Choose the correct concentration denominator",
+      "formula": "M = nsolute/Vsolution; m = nsolute/kg solvent",
+      "points": [
+        "20 g solute + 180 g solvent → mass percentage = 10%.",
+        "Molar mass 100 g/mol → n = 0.200 mol; m = 1.11 mol/kg.",
+        "Molarity needs final solution volume; it cannot be inferred here."
+      ],
+      "script": "Welcome to Solutions. This recorded Chemistry class uses an AI generated Marin voice. Most concentration errors begin with the denominator. Molarity is moles of solute divided by litres of final solution. Molality is moles of solute divided by kilograms of solvent. The words solution and solvent are not interchangeable. Suppose twenty grams of solute are dissolved in one hundred eighty grams of solvent. The final solution mass is two hundred grams, so the mass percentage is ten percent. If the solute molar mass is one hundred grams per mole, the solute amount is zero point two zero zero moles. Divide by zero point one eight zero kilograms of solvent to obtain molality about one point one one moles per kilogram. We cannot calculate molarity until the final solution volume or enough information to infer it is supplied. Do not use solvent volume as solution volume or assume volumes always add exactly. If the solution density were one point two zero grams per millilitre, its two hundred gram mass would occupy about one hundred sixty six point seven millilitres. The molarity would then be one point two zero moles per litre. At fixed composition, molality does not change when thermal expansion changes the volume. Molarity generally does. Mole fraction is the moles of a component divided by total moles of all components; all mole fractions sum to one. One mole of A and three moles of B give mole fractions one quarter and three quarters. Volume percentage uses solute volume divided by final solution volume under a stated convention and temperature. Before using any concentration, write down its numerator and denominator. That small step prevents confusing mass percentage with mole fraction or molarity with molality."
+    },
+    {
+      "title": "Apply Raoult’s law and find vapour composition",
+      "formula": "Pi = xi Pi*; Ptotal = ΣPi; yi = Pi/Ptotal",
+      "points": [
+        "Ideal solution: xA = xB = 0.50; PA* = 80, PB* = 40 kPa.",
+        "PA = 40 and PB = 20 kPa → total pressure = 60 kPa.",
+        "Vapour yA = 40/60 = 2/3; liquid xA = 1/2."
+      ],
+      "script": "For an ideal liquid solution, Raoult's law says that each volatile component contributes a partial vapour pressure equal to its liquid mole fraction times the vapour pressure of the pure component at the same temperature. Add these partial pressures to obtain the total. Consider an equimolar ideal mixture of A and B. Their pure vapour pressures are eighty and forty kilopascals. A contributes one half of eighty, or forty kilopascals. B contributes one half of forty, or twenty. The total is sixty kilopascals. Assuming an ideal vapour, A's mole fraction in that vapour is its partial pressure divided by total pressure: forty over sixty, or two thirds. The liquid was one half A, while the vapour is richer in the more volatile component A. Keep liquid mole fraction x separate from vapour mole fraction y. For a nonvolatile solute, only the solvent contributes appreciably. If solvent mole fraction is zero point nine zero and pure solvent vapour pressure is one hundred kilopascals, the solution pressure is ninety kilopascals. In the ideal solution model with one nonvolatile solute, relative vapour pressure lowering equals the solute mole fraction. Dissociation or association requires consistent counting of the species present. Ideal mixing has zero enthalpy change and zero volume change of mixing. Positive deviations from Raoult's law give a higher vapour pressure than the ideal prediction, commonly associated with weaker unlike interactions. Negative deviations give a lower pressure, commonly associated with stronger unlike interactions. Sufficiently strong deviations can produce azeotropes, where liquid and vapour compositions coincide during boiling at the specified pressure. Do not infer an azeotrope from every small deviation. Detailed phase diagrams require additional treatment. Always compare pure vapour pressures at the same temperature.",
+      "speechInput": "For an ideal liquid solution, Raoult's law says that each volatile component contributes a partial vapour pressure equal to its liquid mole fraction times the vapour pressure of the pure component at the same temperature. Add these partial pressures to obtain the total. Consider an equimolar ideal mixture of A and B. Their pure vapour pressures are eighty and forty kilopascals. A contributes one half of eighty, or forty kilopascals. B contributes one half of forty, or twenty. The total is sixty kilopascals. Assuming an ideal vapour, A's mole fraction in that vapour is its partial pressure divided by total pressure: forty over sixty, or two thirds. The liquid was one half A, while the vapour is richer in the more volatile component A. Keep liquid mole fraction x separate from vapour mole fraction y. For a nonvolatile solute, only the solvent contributes appreciably. If solvent mole fraction is zero point nine zero and pure solvent vapour pressure is one hundred kilopascals, the solution pressure is ninety kilopascals. In the ideal solution model with one nonvolatile solute, relative vapour pressure lowering equals the solute mole fraction. Dissociation or association requires consistent counting of the species present. Ideal mixing has zero enthalpy change and zero volume change of mixing. Positive deviations from Raoult's law give a higher vapour pressure than the ideal prediction, commonly associated with weaker unlike interactions. Negative deviations give a lower pressure, commonly associated with stronger unlike interactions. Sufficiently strong deviations can produce azeotropes, where liquid and vapour compositions coincide during boiling at the specified pressure. Do not infer an azeotrope from every small deviation. Detailed phase diagrams require additional treatment. Always compare pure vapour pressures at the same temperature and identify which components are volatile.",
+      "recordingNote": "Closing reminder omitted by TTS in the verified recording; transcript follows the audio. Exact speech input retained for cache provenance."
+    },
+    {
+      "title": "Count particles for boiling and freezing shifts",
+      "formula": "ΔTb = i Kb m; ΔTf = i Kf m",
+      "points": [
+        "0.0100 mol solute in 0.100 kg water → m = 0.100 mol/kg.",
+        "For i = 1 and Kf = 1.86 K kg/mol, ΔTf = 0.186 K.",
+        "Freezing point = pure solvent freezing point − ΔTf."
+      ],
+      "script": "Colligative properties in the dilute solution model depend on the number of dissolved particles rather than their chemical identity. Boiling point elevation equals the van't Hoff factor i times the solvent's boiling constant times molality. Freezing point depression equals i times the solvent's freezing constant times molality. The freezing depression is a positive magnitude; subtract it from the pure solvent freezing point. These relations apply approximately to dilute solutions with suitable nonvolatile solutes and the usual solvent phase assumptions. Consider zero point zero one zero zero moles of a non electrolyte dissolved in zero point one zero zero kilograms of water. Molality is zero point one zero zero moles per kilogram. Taking i as one and the freezing constant as one point eight six kelvin kilograms per mole, the freezing depression is zero point one eight six kelvin. If pure water freezes at zero degrees Celsius under the stated conditions, this solution freezes at minus zero point one eight six degrees Celsius. A temperature difference of one kelvin equals a difference of one degree Celsius. For a second example, ten grams of a non electrolyte with molar mass one hundred eighty grams per mole are dissolved in one hundred grams of water. First convert the solute mass into zero point zero five five six moles. Divide by zero point one zero zero kilograms of solvent to get molality about zero point five five six. The predicted depression is about one point zero three kelvin for i equal to one. The one hundred ten gram solution mass does not belong in the molality denominator. If the effective particle factor doubles at the same formal molality, the dilute model predicts twice the temperature shift. The constants belong to the solvent, and the particle factor describes how the dissolved solute behaves.",
+      "speechInput": "Colligative properties in the dilute solution model depend on the number of dissolved particles rather than their chemical identity. Boiling point elevation equals the van't Hoff factor i times the solvent's boiling constant times molality. Freezing point depression equals i times the solvent's freezing constant times molality. The freezing depression is a positive magnitude; subtract it from the pure solvent freezing point. These relations apply approximately to dilute solutions with suitable nonvolatile solutes and the usual solvent phase assumptions. Consider zero point zero one zero zero moles of a non electrolyte dissolved in zero point one zero zero kilograms of water. Molality is zero point one zero zero moles per kilogram. Taking i as one and the freezing constant as one point eight six kelvin kilograms per mole, the freezing depression is zero point one eight six kelvin. If pure water freezes at zero degrees Celsius under the stated conditions, this solution freezes at minus zero point one eight six degrees Celsius. A temperature difference of one kelvin equals a difference of one degree Celsius. For a second example, ten grams of a non electrolyte with molar mass one hundred eighty grams per mole are dissolved in one hundred grams of water. First convert the solute mass into zero point zero five five six moles. Divide by zero point one zero zero kilograms of solvent to get molality about zero point five five six. The predicted depression is about one point zero three kelvin for i equal to one. The one hundred ten gram solution mass does not belong in the molality denominator. If the effective particle factor doubles at the same formal molality, the dilute model predicts twice the temperature shift. The constants belong to the solvent, and the particle factor describes how the dissolved solute behaves. Keep those roles separate.",
+      "recordingNote": "Closing reminder omitted by TTS in the verified recording; transcript follows the audio. Exact speech input retained for cache provenance."
+    },
+    {
+      "title": "Use osmotic pressure to infer molar mass",
+      "formula": "π = i C R T; molar mass = i wRT/(πV)",
+      "points": [
+        "At 300 K, C = 0.100 mol/L and i = 1 → π ≈ 2.46 atm.",
+        "2.00 g in 1.00 L gives π = 0.246 atm at 300 K.",
+        "Molar mass ≈ 200 g/mol; use final solution volume."
+      ],
+      "script": "A semipermeable membrane allows the solvent to pass while retaining the chosen solute. Solvent tends to move toward the solution with lower solvent chemical potential. Osmotic pressure is the excess pressure required to stop this net solvent flow under the specified conditions. For an ideal dilute solution, osmotic pressure equals i times the formal solute molarity times R times absolute temperature. Formal molarity counts the solute amount before applying the particle factor. Suppose a non electrolyte solution has concentration zero point one zero zero moles per litre at three hundred kelvin. Use R equal to zero point zero eight two zero five seven litre atmospheres per mole kelvin. Multiplying gives osmotic pressure about two point four six atmospheres. Pressure is not measured in kelvin, and temperature must not be inserted in degrees Celsius. Now infer a molar mass. Two point zero zero grams of a non electrolyte are made up to one point zero zero litre of solution. At three hundred kelvin, the osmotic pressure is zero point two four six atmospheres. Replace molarity by mass divided by molar mass and solution volume. Rearranging gives molar mass equals i times mass times R times temperature, divided by osmotic pressure times volume. With i equal to one, the result is about two hundred grams per mole. Check the units: litre atmospheres cancel with pressure times volume, leaving grams per mole. This sensitivity to low concentrations makes osmotic pressure useful for large molecules, provided the membrane and dilute solution assumptions hold. Equal osmotic pressures at the same temperature require equal effective particle concentrations. Equal formal molarities alone are insufficient if particle factors differ. In every osmotic pressure calculation, use final solution volume, the compatible gas constant and the correct particle factor."
+    },
+    {
+      "title": "Correct for dissociation and association",
+      "formula": "idiss = 1 + α(ν − 1); iassoc = 1 − α(1 − 1/n)",
+      "points": [
+        "80% dissociation into two ions: i = 1 + 0.80 = 1.80.",
+        "Half of initial monomers form dimers: i = 0.50 + 0.25 = 0.75.",
+        "Ignoring i gives apparent molar mass = true molar mass/i."
+      ],
+      "script": "The van't Hoff factor compares the effective number of solute particles with the number expected from the formula amount added. In a simple ideal dissociation model, suppose a fraction alpha dissociates and each dissociated formula unit produces nu particles. Starting with one mole of formula units, one minus alpha remains intact and nu times alpha appears as products. The total particle count is one plus alpha times nu minus one. If eighty percent dissociates into two particles, i is one point eight zero. Complete ideal dissociation of sodium chloride would give two, although measured values can differ because real solutions are not perfectly ideal. Association reduces the particle count. If a fraction alpha of initial molecules combines into groups of n, the remaining monomers contribute one minus alpha, and the groups contribute alpha divided by n. Thus i equals one minus alpha times one minus one over n. Imagine one hundred initial molecules with half of them forming dimers. Fifty molecules stay single. The other fifty make twenty five dimers. There are seventy five particles in total, so i is zero point seven five. Do not count each dimer as two independent dissolved particles. If a colligative measurement is analysed while incorrectly assuming i equals one, the apparent molar mass equals the true molar mass divided by the actual particle factor. Association therefore makes the apparent molar mass larger. A true molar mass of one hundred eighty with i zero point seven five appears as two hundred forty grams per mole. Dissociation has the opposite effect. This simple degree model assumes one specified association or dissociation process and neglects additional nonideal interactions. Finish by checking the denominator, solvent constants, temperature scale and effective particle number. The companion notes include three worked examples and six original questions. This Unit five foundation is followed by further phase diagram, azeotrope and mixed problem practice."
+    },
+    {
+      "title": "Convert molarity using density",
+      "formula": "m = 1000 M / (1000ρ − M Ms)",
+      "script": "Density connects solution volume to the masses needed for molality. Take a one point zero zero molar solution of a solute with molar mass sixty grams per mole and solution density one point zero four grams per millilitre at the stated temperature. Choose one litre of solution. It contains one mole, or sixty grams, of solute. Its total mass is one thousand forty grams. Subtracting the solute leaves nine hundred eighty grams of solvent, or zero point nine eight zero kilogram. Molality is therefore one divided by zero point nine eight zero, about one point zero two moles per kilogram. Do not divide by the total solution mass. In the general conversion formula, density in grams per millilitre makes one litre weigh one thousand times density in grams. Subtract molarity times solute molar mass, then convert the remaining grams to kilograms. This calculation assumes a single identified solute and a correctly specified final solution density. Molarity and density must refer to the same temperature. A negative calculated solvent mass signals inconsistent data or a unit error.",
+      "points": [
+        "Solution mass · 1000 × 1.04 · 1040 g",
+        "Solvent mass · 1040 − 60 · 980 g",
+        "Molality · 1.00 / 0.980 · 1.02 mol kg⁻¹"
+      ],
+      "board": {
+        "heading": "Convert molarity using density",
+        "columns": [
+          "One litre basis",
+          "Calculation",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Solution mass",
+            "1000 × 1.04",
+            "1040 g"
+          ],
+          [
+            "Solvent mass",
+            "1040 − 60",
+            "980 g"
+          ],
+          [
+            "Molality",
+            "1.00 / 0.980",
+            "1.02 mol kg⁻¹"
+          ]
+        ]
+      },
+      "speechInput": "Density connects solution volume to the masses needed for molality. Take a one point zero zero molar solution of a solute with molar mass sixty grams per mole and solution density one point zero four grams per millilitre at the stated temperature. Choose one litre of solution. It contains one mole, or sixty grams, of solute. Its total mass is one thousand forty grams. Subtracting the solute leaves nine hundred eighty grams of solvent, or zero point nine eight zero kilogram. Molality is therefore one divided by zero point nine eight zero, about one point zero two moles per kilogram. Do not divide by the total solution mass. In the general conversion formula, density in grams per millilitre makes one litre weigh one thousand times density in grams. Subtract molarity times solute molar mass, then convert the remaining grams to kilograms. This calculation assumes a single identified solute and a correctly specified final solution density. Molarity and density must refer to the same temperature. A negative calculated solvent mass signals inconsistent data or a unit error, not a physically meaningful concentration.",
+      "recordingNote": "Closing reminder shortened in the recording; transcript follows independently verified audio. Exact requested input retained for cache provenance."
+    },
+    {
+      "title": "Henry law: state the convention",
+      "formula": "p = KH x at fixed temperature",
+      "script": "Henry law describes dilute dissolved gas in equilibrium with its gas phase at a specified temperature. Several conventions use the same name, so write the equation before interpreting its constant. Here the gas partial pressure equals K H times its dissolved mole fraction. Suppose K H is forty thousand bar and the relevant gas partial pressure is two bar. The dissolved mole fraction is two divided by forty thousand, or five times ten to the minus five. Use the gas partial pressure rather than the total pressure of an unrelated gas mixture. In this convention, a larger K H means a smaller dissolved mole fraction at the same pressure. A constant defined by concentration divided by pressure has the opposite interpretation. Temperature changes the constant; do not compare values at different temperatures as if conditions were identical. The simple relationship assumes a dilute solution and no major chemical reaction changing the gas species in solution. Increasing pressure increases equilibrium solubility within the model, but equilibrium solubility does not specify how fast the gas enters the liquid. Keep the pressure unit consistent.",
+      "points": [
+        "Gas partial pressure · p · 2.00 bar",
+        "Henry constant · KH in p = KH x · 40000 bar",
+        "Dissolved fraction · x = p/KH · 5.00 × 10⁻⁵"
+      ],
+      "board": {
+        "heading": "Henry law: state the convention",
+        "columns": [
+          "Given",
+          "Relation",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Gas partial pressure",
+            "p",
+            "2.00 bar"
+          ],
+          [
+            "Henry constant",
+            "KH in p = KH x",
+            "40000 bar"
+          ],
+          [
+            "Dissolved fraction",
+            "x = p/KH",
+            "5.00 × 10⁻⁵"
+          ]
+        ]
+      },
+      "speechInput": "Henry law describes dilute dissolved gas in equilibrium with its gas phase at a specified temperature. Several conventions use the same name, so write the equation before interpreting its constant. Here the gas partial pressure equals K H times its dissolved mole fraction. Suppose K H is forty thousand bar and the relevant gas partial pressure is two bar. The dissolved mole fraction is two divided by forty thousand, or five times ten to the minus five. Use the gas partial pressure rather than the total pressure of an unrelated gas mixture. In this convention, a larger K H means a smaller dissolved mole fraction at the same pressure. A constant defined by concentration divided by pressure has the opposite interpretation. Temperature changes the constant; do not compare values at different temperatures as if conditions were identical. The simple relationship assumes a dilute solution and no major chemical reaction changing the gas species in solution. Increasing pressure increases equilibrium solubility within the model, but equilibrium solubility does not specify how fast the gas enters the liquid. Keep the pressure unit consistent with the tabulated constant.",
+      "recordingNote": "Closing reminder shortened in the recording; transcript follows independently verified audio. Exact requested input retained for cache provenance."
+    },
+    {
+      "title": "Nonideal mixtures and azeotropes",
+      "formula": "Positive / negative deviations refer to Raoult predictions",
+      "script": "For an ideal liquid mixture, each component follows the partial pressure prediction from its liquid mole fraction and pure liquid vapour pressure. Real mixtures can lie above or below that prediction. In a common positive deviation picture, unlike molecule attractions are less favourable than the corresponding like molecule interactions, and total vapour pressure is higher than the ideal prediction. Negative deviation gives lower vapour pressure. Mixing enthalpy and volume can provide supporting evidence, but they require actual mixture data. A sufficiently large deviation can produce an azeotrope at a specified pressure. At that composition, the equilibrium vapour and liquid have the same composition, so ordinary fractional distillation cannot carry that mixture past the azeotropic composition. Minimum boiling azeotropes are associated with a suitable positive deviation; maximum boiling ones with a suitable negative deviation. Not every nonideal mixture forms an azeotrope. Nor does an azeotrope require equal mole fractions of the two components. State whether a graph holds pressure or temperature fixed before reading its boiling or vapour pressure extrema.",
+      "points": [
+        "Vapour pressure · Above ideal prediction · Below ideal prediction",
+        "Possible azeotrope · Minimum boiling · Maximum boiling",
+        "At azeotrope · Vapour = liquid composition · Not necessarily x = 0.5"
+      ],
+      "board": {
+        "heading": "Nonideal mixtures and azeotropes",
+        "columns": [
+          "Feature",
+          "Positive deviation",
+          "Negative deviation"
+        ],
+        "rows": [
+          [
+            "Vapour pressure",
+            "Above ideal prediction",
+            "Below ideal prediction"
+          ],
+          [
+            "Possible azeotrope",
+            "Minimum boiling",
+            "Maximum boiling"
+          ],
+          [
+            "At azeotrope",
+            "Vapour = liquid composition",
+            "Not necessarily x = 0.5"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Infer molar mass from boiling elevation",
+      "formula": "Ms = i Kb w / (ΔTb masssolvent in kg)",
+      "script": "Boiling elevation can provide a molar mass when the solvent amount and particle behaviour are known. Dissolve one point eight zero grams of a nonvolatile non electrolyte in one hundred grams of solvent. Let the solvent boiling constant be zero point five two kelvin kilograms per mole, and the measured elevation be zero point zero five two kelvin. Assume a dilute solution and particle factor one. Dividing the elevation by the boiling constant gives molality zero point one zero zero moles per kilogram. Multiply by zero point one zero zero kilogram of solvent to obtain zero point zero one zero zero moles of solute. Divide one point eight zero grams by that amount to get one hundred eighty grams per mole. The measured elevation is a positive difference, not the absolute boiling temperature. If the pure solvent boils at one hundred degrees Celsius under the stated pressure, the model solution boils at one hundred point zero five two degrees Celsius. Association or dissociation changes the effective particle count and therefore the inferred molar mass. Check the assumed particle factor and solvent mass before treating a numerical answer as a molecular formula.",
+      "points": [
+        "Molality · 0.052 / 0.52 · 0.100 mol kg⁻¹",
+        "Solute amount · 0.100 × 0.100 · 0.0100 mol",
+        "Molar mass · 1.80 / 0.0100 · 180 g mol⁻¹"
+      ],
+      "board": {
+        "heading": "Infer molar mass from boiling elevation",
+        "columns": [
+          "Step",
+          "Calculation",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Molality",
+            "0.052 / 0.52",
+            "0.100 mol kg⁻¹"
+          ],
+          [
+            "Solute amount",
+            "0.100 × 0.100",
+            "0.0100 mol"
+          ],
+          [
+            "Molar mass",
+            "1.80 / 0.0100",
+            "180 g mol⁻¹"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Dissociation and isotonic comparisons",
+      "formula": "i = 1 + α(ν − 1); equal π at equal T needs equal iC",
+      "script": "Consider a solute that produces three ions per formula unit in the ideal dissociation model. Starting with one mole of formula units, a fraction alpha dissociates. One minus alpha mole remains intact and three alpha moles appear as ions. Total particles are one plus two alpha. If a dilute colligative measurement gives particle factor two point six zero, alpha is zero point eight zero, or eighty percent. The complete dissociation limit is three, so a value above three would not fit this simple single process model. Real electrolyte interactions can also affect measured factors. Now compare osmotic pressures at the same temperature. A zero point one zero zero molar non electrolyte has effective particle concentration zero point one zero zero molar. A salt solution with factor two point six zero matches it at formal concentration zero point one zero zero divided by two point six zero, about zero point zero three eight five molar. Equal formal molarities would not be isotonic here. These equations assume the stated membranes retain the relevant solutes and that the dilute solution model is adequate.",
+      "points": [
+        "Dissociation factor · i = 1 + 2α · 2.60",
+        "Degree of dissociation · (2.60 − 1)/2 · 0.80",
+        "Isotonic formal C · 0.100 / 2.60 · 0.0385 mol L⁻¹"
+      ],
+      "board": {
+        "heading": "Dissociation and isotonic comparisons",
+        "columns": [
+          "Quantity",
+          "Calculation",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Dissociation factor",
+            "i = 1 + 2α",
+            "2.60"
+          ],
+          [
+            "Degree of dissociation",
+            "(2.60 − 1)/2",
+            "0.80"
+          ],
+          [
+            "Isotonic formal C",
+            "0.100 / 2.60",
+            "0.0385 mol L⁻¹"
+          ]
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Molality uses which denominator?",
+      "options": [
+        "Litres of solvent",
+        "Kilograms of solution",
+        "Kilograms of solvent",
+        "Litres of solution"
+      ],
+      "answer": 2,
+      "explanation": "Molality is solute moles per kilogram of solvent, not per kilogram of total solution."
+    },
+    {
+      "question": "10 g solute in 90 g solvent gives mass percent:",
+      "options": [
+        "10%",
+        "11.1%",
+        "90%",
+        "1%"
+      ],
+      "answer": 0,
+      "explanation": "The total solution is 100 g, so the solute mass percentage is 100 x 10/100 = 10%."
+    },
+    {
+      "question": "Ideal nonvolatile-solute solution has x_solvent = 0.80 and pure-solvent pressure 50 kPa. Its pressure is:",
+      "options": [
+        "10 kPa",
+        "62.5 kPa",
+        "50 kPa",
+        "40 kPa"
+      ],
+      "answer": 3,
+      "explanation": "Raoult's law gives 0.80 x 50 = 40 kPa at the specified common temperature."
+    },
+    {
+      "question": "For i = 1, K_f = 1.86 and m = 0.100, freezing depression is:",
+      "options": [
+        "18.6 K",
+        "0.186 K",
+        "1.86 K",
+        "-1.86 K"
+      ],
+      "answer": 1,
+      "explanation": "Multiply i K_f m = 1 x 1.86 x 0.100 = 0.186 K; depression is a positive magnitude."
+    },
+    {
+      "question": "Half the original molecules associate into dimers. The ideal particle factor is:",
+      "options": [
+        "2",
+        "1.5",
+        "0.75",
+        "0.5"
+      ],
+      "answer": 2,
+      "explanation": "i = 1 - alpha(1 - 1/2) = 1 - 0.5 x 0.5 = 0.75."
+    },
+    {
+      "question": "Ignoring dissociation with i > 1 makes the inferred molar mass:",
+      "options": [
+        "Smaller than the true value",
+        "Always unchanged",
+        "Larger than the true value",
+        "Always zero"
+      ],
+      "answer": 0,
+      "explanation": "The observed effect is larger; an i = 1 calculation gives apparent mass equal to true mass divided by i."
+    },
+    {
+      "question": "One litre of 1.00 M solution has density 1.04 g/mL and solute molar mass 60 g/mol. Solvent mass is:",
+      "options": [
+        "1040 g",
+        "1000 g",
+        "980 g",
+        "60 g"
+      ],
+      "answer": 2,
+      "explanation": "The solution weighs 1040 g and contains 60 g solute; subtract to get 980 g solvent."
+    },
+    {
+      "question": "The molality of that solution is approximately:",
+      "options": [
+        "1.02 mol/kg",
+        "0.962 mol/kg",
+        "60 mol/kg",
+        "1.04 mol/kg"
+      ],
+      "answer": 0,
+      "explanation": "One mole divided by 0.980 kg solvent is 1.0204 mol/kg."
+    },
+    {
+      "question": "For p = KH x, KH = 40000 bar and gas partial pressure 2 bar, x is:",
+      "options": [
+        "20000",
+        "0.020",
+        "8 × 10⁴",
+        "5 × 10⁻⁵"
+      ],
+      "answer": 3,
+      "explanation": "Use x = 2/40000; matching pressure units cancel."
+    },
+    {
+      "question": "At an azeotrope at its stated pressure, equilibrium liquid and vapour:",
+      "options": [
+        "Must each be equimolar",
+        "Have the same composition",
+        "Have no molecules in common",
+        "Always follow ideal Raoult behaviour"
+      ],
+      "answer": 1,
+      "explanation": "Equal phase compositions explain the ordinary fractional distillation limitation."
+    },
+    {
+      "question": "1.80 g non-electrolyte in 0.100 kg solvent gives ΔTb = 0.052 K with Kb = 0.52 K kg/mol. Molar mass is:",
+      "options": [
+        "18 g/mol",
+        "360 g/mol",
+        "180 g/mol",
+        "90 g/mol"
+      ],
+      "answer": 2,
+      "explanation": "Molality is 0.100, so amount is 0.0100 mol and mass/amount is 180 g/mol."
+    },
+    {
+      "question": "A solute producing three ions has i = 2.60 in the ideal degree model. Its dissociated fraction is:",
+      "options": [
+        "0.80",
+        "0.60",
+        "1.30",
+        "0.20"
+      ],
+      "answer": 0,
+      "explanation": "i = 1 + 2α, so α = (2.60 − 1)/2 = 0.80."
+    }
+  ]
+}

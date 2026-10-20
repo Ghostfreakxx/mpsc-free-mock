@@ -1,0 +1,1207 @@
+{
+  "duration": 621.2400000000182,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 97.80000000000281
+    },
+    {
+      "start": 97.80000000000281,
+      "end": 201.81600000000586
+    },
+    {
+      "start": 201.81600000000586,
+      "end": 301.77600000000876
+    },
+    {
+      "start": 301.77600000000876,
+      "end": 403.5840000000117
+    },
+    {
+      "start": 403.5840000000117,
+      "end": 504.2400000000146
+    },
+    {
+      "start": 504.2400000000146,
+      "end": 621.2400000000182
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 0.7200000286102295,
+      "text": "Welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.399999976158142,
+      "end": 5.28000020980835,
+      "text": "Today we turn our energy basics into a practical problem solving toolkit.",
+      "chapter": 0
+    },
+    {
+      "start": 6.119999885559082,
+      "end": 10.84000015258789,
+      "text": "We will connect changing forces, springs and collisions, and learn when energy",
+      "chapter": 0
+    },
+    {
+      "start": 10.84000015258789,
+      "end": 12.760000228881836,
+      "text": "needs a second equation to help it.",
+      "chapter": 0
+    },
+    {
+      "start": 13.640000343322754,
+      "end": 15.579999923706055,
+      "text": "Start with a force that changes with position.",
+      "chapter": 0
+    },
+    {
+      "start": 16.440000534057617,
+      "end": 20.520000457763672,
+      "text": "Over a tiny displacement, the work is the force component along the motion",
+      "chapter": 0
+    },
+    {
+      "start": 20.940000534057617,
+      "end": 21.920000076293945,
+      "text": "times that displacement.",
+      "chapter": 0
+    },
+    {
+      "start": 23,
+      "end": 25.040000915527344,
+      "text": "Adding these little contributions gives an integral.",
+      "chapter": 0
+    },
+    {
+      "start": 25.040000915527344,
+      "end": 29.780000686645508,
+      "text": "On a force versus position graph, work is the signed area under the curve.",
+      "chapter": 0
+    },
+    {
+      "start": 30.6200008392334,
+      "end": 34.900001525878906,
+      "text": "Do not confuse it with a force versus time graph, whose area gives impulse.",
+      "chapter": 0
+    },
+    {
+      "start": 35.86000061035156,
+      "end": 40.619998931884766,
+      "text": "Let the net force along a straight line be two x plus two newtons, where x is",
+      "chapter": 0
+    },
+    {
+      "start": 40.619998931884766,
+      "end": 41.13999938964844,
+      "text": "measured in meters.",
+      "chapter": 0
+    },
+    {
+      "start": 41.959999084472656,
+      "end": 46.882821596585785,
+      "text": "A two kilogram particle starts from rest at x equal to zero and reaches x",
+      "chapter": 0
+    },
+    {
+      "start": 46.882821596585785,
+      "end": 47.220001220703125,
+      "text": "equal",
+      "chapter": 0
+    },
+    {
+      "start": 47.220001220703125,
+      "end": 47.65999984741211,
+      "text": "to three.",
+      "chapter": 0
+    },
+    {
+      "start": 48.34000015258789,
+      "end": 50.5,
+      "text": "The force rises from two to eight newtons.",
+      "chapter": 0
+    },
+    {
+      "start": 51.099998474121094,
+      "end": 52.900001525878906,
+      "text": "Predict the work before doing calculus.",
+      "chapter": 0
+    },
+    {
+      "start": 53.599998474121094,
+      "end": 57.18000030517578,
+      "text": "The graph is a trapezoid, so its area is the average of two and eight,",
+      "chapter": 0
+    },
+    {
+      "start": 57.900001525878906,
+      "end": 58.459999084472656,
+      "text": "multiplied by three.",
+      "chapter": 0
+    },
+    {
+      "start": 59.02000045776367,
+      "end": 60.380001068115234,
+      "text": "That gives fifteen joules.",
+      "chapter": 0
+    },
+    {
+      "start": 61.380001068115234,
+      "end": 66.02871684539012,
+      "text": "Integrating gives x squared plus two x, evaluated from zero to three: nine",
+      "chapter": 0
+    },
+    {
+      "start": 66.02871684539012,
+      "end": 66.27999877929688,
+      "text": "plus",
+      "chapter": 0
+    },
+    {
+      "start": 66.27999877929688,
+      "end": 68.72000122070312,
+      "text": "six, again fifteen.",
+      "chapter": 0
+    },
+    {
+      "start": 68.72000122070312,
+      "end": 70.68000030517578,
+      "text": "Net work equals the change in kinetic energy.",
+      "chapter": 0
+    },
+    {
+      "start": 71.44000244140625,
+      "end": 75.95999908447266,
+      "text": "For our two kilogram particle, one half m v squared is simply v squared in SI",
+      "chapter": 0
+    },
+    {
+      "start": 75.95999908447266,
+      "end": 76.26000213623047,
+      "text": "units.",
+      "chapter": 0
+    },
+    {
+      "start": 77.0199966430664,
+      "end": 80.4000015258789,
+      "text": "The final speed is therefore the square root of fifteen meters per second.",
+      "chapter": 0
+    },
+    {
+      "start": 81.4000015258789,
+      "end": 85.13999938964844,
+      "text": "Negative areas subtract work; they do not become positive because we call them",
+      "chapter": 0
+    },
+    {
+      "start": 85.13999938964844,
+      "end": 85.5199966430664,
+      "text": "areas.",
+      "chapter": 0
+    },
+    {
+      "start": 86.36000061035156,
+      "end": 90.23999786376953,
+      "text": "If the plotted force is only one of several forces, add the work of the others",
+      "chapter": 0
+    },
+    {
+      "start": 90.23999786376953,
+      "end": 91.36000061035156,
+      "text": "before applying the theorem.",
+      "chapter": 0
+    },
+    {
+      "start": 92.37999725341797,
+      "end": 96.91999816894531,
+      "text": "Check the horizontal axis first: position gives energy, time gives momentum",
+      "chapter": 0
+    },
+    {
+      "start": 96.91999816894531,
+      "end": 97.4000015258789,
+      "text": "change.",
+      "chapter": 0
+    },
+    {
+      "start": 97.80000000000281,
+      "end": 102.24000005722327,
+      "text": "Two motors can do the same work, yet finish at different times.",
+      "chapter": 1
+    },
+    {
+      "start": 103.35999994278235,
+      "end": 105.26000003814978,
+      "text": "Power measures the rate of energy transfer.",
+      "chapter": 1
+    },
+    {
+      "start": 106.26000003814978,
+      "end": 108.83999996185584,
+      "text": "Average power is work divided by the time interval.",
+      "chapter": 1
+    },
+    {
+      "start": 109.76000003814978,
+      "end": 113.40000038147254,
+      "text": "Instantaneous power is the dot product of force and velocity.",
+      "chapter": 1
+    },
+    {
+      "start": 114.17999916076941,
+      "end": 118.5738455258911,
+      "text": "In words, take the component of force along the velocity and multiply by",
+      "chapter": 1
+    },
+    {
+      "start": 118.5738455258911,
+      "end": 118.93999938965125,
+      "text": "speed.",
+      "chapter": 1
+    },
+    {
+      "start": 119.30000000000281,
+      "end": 120.53999977112097,
+      "text": "Why the dot product?",
+      "chapter": 1
+    },
+    {
+      "start": 121.1400001525907,
+      "end": 123.98000030517859,
+      "text": "Work already counts the force component along displacement.",
+      "chapter": 1
+    },
+    {
+      "start": 124.69999961853308,
+      "end": 129.06000022888463,
+      "text": "Dividing a tiny amount of work by its tiny time interval replaces displacement",
+      "chapter": 1
+    },
+    {
+      "start": 129.06000022888463,
+      "end": 129.98000030517858,
+      "text": "by velocity.",
+      "chapter": 1
+    },
+    {
+      "start": 131.00000076294225,
+      "end": 134.77999954223912,
+      "text": "Imagine lifting a four kilogram load vertically at a steady two meters per",
+      "chapter": 1
+    },
+    {
+      "start": 134.77999954223912,
+      "end": 135.00000076294225,
+      "text": "second.",
+      "chapter": 1
+    },
+    {
+      "start": 135.73999862671178,
+      "end": 138.38000183105748,
+      "text": "Use g equal to ten and neglect other resistance.",
+      "chapter": 1
+    },
+    {
+      "start": 139.25999908447545,
+      "end": 143.7000015258817,
+      "text": "Steady velocity means zero acceleration, so the upward lifting force is forty",
+      "chapter": 1
+    },
+    {
+      "start": 143.7000015258817,
+      "end": 144.07999877929967,
+      "text": "newtons.",
+      "chapter": 1
+    },
+    {
+      "start": 144.75999908447545,
+      "end": 148.3000000000028,
+      "text": "Its mechanical power is forty times two, or eighty watts.",
+      "chapter": 1
+    },
+    {
+      "start": 149.16000061035436,
+      "end": 151.34000091553014,
+      "text": "Gravity's power is minus eighty watts.",
+      "chapter": 1
+    },
+    {
+      "start": 151.82000045776647,
+      "end": 156.34000091553014,
+      "text": "The net power is zero, consistent with unchanged kinetic energy, while",
+      "chapter": 1
+    },
+    {
+      "start": 156.34000091553014,
+      "end": 158.41999893188756,
+      "text": "gravitational potential energy increases.",
+      "chapter": 1
+    },
+    {
+      "start": 159.25999908447545,
+      "end": 163.63999633789342,
+      "text": "This is a nice reminder: zero net work on a particle does not mean the motor",
+      "chapter": 1
+    },
+    {
+      "start": 163.63999633789342,
+      "end": 164.38000183105748,
+      "text": "does no work.",
+      "chapter": 1
+    },
+    {
+      "start": 165.11999969482702,
+      "end": 166.99999694824498,
+      "text": "Suppose the motor is eighty percent efficient.",
+      "chapter": 1
+    },
+    {
+      "start": 167.7000015258817,
+      "end": 171.07999877929967,
+      "text": "What electrical input power is needed for this eighty watt useful output?",
+      "chapter": 1
+    },
+    {
+      "start": 171.67999725342077,
+      "end": 173.34000091553014,
+      "text": "Think about which number should be larger.",
+      "chapter": 1
+    },
+    {
+      "start": 174.48000030517858,
+      "end": 176.56000213623327,
+      "text": "Efficiency is useful output divided by input.",
+      "chapter": 1
+    },
+    {
+      "start": 176.56000213623327,
+      "end": 180.61999969482702,
+      "text": "Input is eighty divided by zero point eight, or one hundred watts.",
+      "chapter": 1
+    },
+    {
+      "start": 181.49999694824498,
+      "end": 185.11999969482702,
+      "text": "If a pulling force stays fixed while speed doubles along the same direction,",
+      "chapter": 1
+    },
+    {
+      "start": 185.63999633789342,
+      "end": 187.34000091553014,
+      "text": "its instantaneous power doubles.",
+      "chapter": 1
+    },
+    {
+      "start": 188.02000122070592,
+      "end": 192.85999755859655,
+      "text": "If supplied power is fixed instead, the available force is power divided by",
+      "chapter": 1
+    },
+    {
+      "start": 192.85999755859655,
+      "end": 194.2800033569364,
+      "text": "speed for collinear motion.",
+      "chapter": 1
+    },
+    {
+      "start": 195.16000061035436,
+      "end": 199.53999786377233,
+      "text": "Use this only where the constant power model applies; it does not predict a",
+      "chapter": 1
+    },
+    {
+      "start": 199.53999786377233,
+      "end": 201.61999969482702,
+      "text": "realistic infinite force at zero speed.",
+      "chapter": 1
+    },
+    {
+      "start": 201.81600000000586,
+      "end": 205.3759999427854,
+      "text": "A spring becomes harder to stretch as its deformation grows.",
+      "chapter": 2
+    },
+    {
+      "start": 206.27600003815283,
+      "end": 210.37600041962256,
+      "text": "For an ideal spring within its linear elastic range, its force on the attached",
+      "chapter": 2
+    },
+    {
+      "start": 210.37600041962256,
+      "end": 212.9560003433286,
+      "text": "block is minus k x.",
+      "chapter": 2
+    },
+    {
+      "start": 212.9560003433286,
+      "end": 217.75599958038916,
+      "text": "Here x is the signed displacement from the spring's natural length, and k is",
+      "chapter": 2
+    },
+    {
+      "start": 217.75599958038916,
+      "end": 218.3560009155332,
+      "text": "its stiffness.",
+      "chapter": 2
+    },
+    {
+      "start": 219.09600068665137,
+      "end": 222.53599931336035,
+      "text": "The minus sign says the spring force points back toward natural length.",
+      "chapter": 2
+    },
+    {
+      "start": 223.3959999237119,
+      "end": 227.93600083923926,
+      "text": "To store energy slowly, an external agent must oppose that changing force.",
+      "chapter": 2
+    },
+    {
+      "start": 228.49600030518164,
+      "end": 230.9559993896543,
+      "text": "The force versus extension graph is a triangle.",
+      "chapter": 2
+    },
+    {
+      "start": 230.9559993896543,
+      "end": 235.7759990844785,
+      "text": "Its area gives one half k x squared, the elastic potential energy.",
+      "chapter": 2
+    },
+    {
+      "start": 236.9559993896543,
+      "end": 239.6159992370664,
+      "text": "Compression stores energy too because x is squared.",
+      "chapter": 2
+    },
+    {
+      "start": 240.6960010681211,
+      "end": 244.43599893189062,
+      "text": "Take a two kilogram block attached to a light spring on a smooth horizontal",
+      "chapter": 2
+    },
+    {
+      "start": 244.43599893189062,
+      "end": 244.83600045776953,
+      "text": "surface.",
+      "chapter": 2
+    },
+    {
+      "start": 245.6159992370664,
+      "end": 247.67600061035742,
+      "text": "The stiffness is two hundred newtons per meter.",
+      "chapter": 2
+    },
+    {
+      "start": 249.0160007629453,
+      "end": 252.5160007629453,
+      "text": "Compress the spring by zero point two meters and release the block from rest.",
+      "chapter": 2
+    },
+    {
+      "start": 253.1159992370664,
+      "end": 257.03600122070895,
+      "text": "The stored energy is one half times two hundred times zero point two squared,",
+      "chapter": 2
+    },
+    {
+      "start": 257.2559986267148,
+      "end": 258.79599954224216,
+      "text": "or four joules.",
+      "chapter": 2
+    },
+    {
+      "start": 258.79599954224216,
+      "end": 261.03600122070895,
+      "text": "At natural length the spring energy is zero.",
+      "chapter": 2
+    },
+    {
+      "start": 261.6159992370664,
+      "end": 264.97599984741794,
+      "text": "With no dissipative work, those four joules become kinetic energy.",
+      "chapter": 2
+    },
+    {
+      "start": 265.7759990844785,
+      "end": 270.15599633789645,
+      "text": "One half times two times v squared equals four, so the speed is two meters per",
+      "chapter": 2
+    },
+    {
+      "start": 270.15599633789645,
+      "end": 270.3560009155332,
+      "text": "second.",
+      "chapter": 2
+    },
+    {
+      "start": 271.03600122070895,
+      "end": 274.4960003051816,
+      "text": "Now add a rough region that removes one joule before the block reaches natural",
+      "chapter": 2
+    },
+    {
+      "start": 274.4960003051816,
+      "end": 274.7560024414121,
+      "text": "length.",
+      "chapter": 2
+    },
+    {
+      "start": 275.63599969483005,
+      "end": 276.2759990844785,
+      "text": "What changes?",
+      "chapter": 2
+    },
+    {
+      "start": 276.9960003051816,
+      "end": 277.13599969483005,
+      "text": "Pause.",
+      "chapter": 2
+    },
+    {
+      "start": 277.73599816895114,
+      "end": 281.61600305176364,
+      "text": "Only three joules remain as kinetic energy, so the speed becomes the square",
+      "chapter": 2
+    },
+    {
+      "start": 281.61600305176364,
+      "end": 282.9760036621152,
+      "text": "root of three meters per second.",
+      "chapter": 2
+    },
+    {
+      "start": 283.7560024414121,
+      "end": 287.7759990844785,
+      "text": "Do not call energy destroyed: it has transferred into internal energy of the",
+      "chapter": 2
+    },
+    {
+      "start": 287.7759990844785,
+      "end": 288.61600305176364,
+      "text": "contacting materials.",
+      "chapter": 2
+    },
+    {
+      "start": 289.95599938965427,
+      "end": 294.11600305176364,
+      "text": "For this chosen system, initial mechanical energy plus nonconservative work",
+      "chapter": 2
+    },
+    {
+      "start": 294.11600305176364,
+      "end": 296.015996948248,
+      "text": "equals final mechanical energy.",
+      "chapter": 2
+    },
+    {
+      "start": 297.43600274658786,
+      "end": 300.81600000000583,
+      "text": "State which forces are represented by potential energy so you do not count",
+      "chapter": 2
+    },
+    {
+      "start": 300.81600000000583,
+      "end": 301.55599786377536,
+      "text": "their work twice.",
+      "chapter": 2
+    },
+    {
+      "start": 301.77600000000876,
+      "end": 304.8359999427883,
+      "text": "Here is a problem where energy alone is not enough.",
+      "chapter": 3
+    },
+    {
+      "start": 305.4760000476925,
+      "end": 309.2160000572292,
+      "text": "A small particle on a light inextensible string moves in a vertical circle.",
+      "chapter": 3
+    },
+    {
+      "start": 310.135999656686,
+      "end": 312.3559999237148,
+      "text": "Gravity is uniform and we neglect drag.",
+      "chapter": 3
+    },
+    {
+      "start": 313.095999694833,
+      "end": 316.8559999237148,
+      "text": "The string must remain taut, and a string can pull but cannot push.",
+      "chapter": 3
+    },
+    {
+      "start": 317.6560001144497,
+      "end": 319.7359990844814,
+      "text": "At the top, inward means downward.",
+      "chapter": 3
+    },
+    {
+      "start": 320.3760003814785,
+      "end": 325.9159993896572,
+      "text": "Both weight and tension point inward, so T plus m g equals m v top squared",
+      "chapter": 3
+    },
+    {
+      "start": 325.9159993896572,
+      "end": 326.9760007629482,
+      "text": "divided by r.",
+      "chapter": 3
+    },
+    {
+      "start": 327.4359998474209,
+      "end": 331.45600030518455,
+      "text": "The smallest possible top speed for the marginal taut condition has tension",
+      "chapter": 3
+    },
+    {
+      "start": 331.45600030518455,
+      "end": 332.67599961853904,
+      "text": "equal to zero.",
+      "chapter": 3
+    },
+    {
+      "start": 332.95600030518455,
+      "end": 335.77600000000876,
+      "text": "That gives v top squared equal to g r.",
+      "chapter": 3
+    },
+    {
+      "start": 335.77600000000876,
+      "end": 338.39599893189353,
+      "text": "A slightly larger speed gives positive tension.",
+      "chapter": 3
+    },
+    {
+      "start": 339.29600045777244,
+      "end": 341.27600000000876,
+      "text": "Now connect bottom and top using energy.",
+      "chapter": 3
+    },
+    {
+      "start": 341.95600030518455,
+      "end": 346.1959981689541,
+      "text": "The particle rises by two r, and ideal tension does no work because it is",
+      "chapter": 3
+    },
+    {
+      "start": 346.1959981689541,
+      "end": 347.2559995422451,
+      "text": "perpendicular to the motion.",
+      "chapter": 3
+    },
+    {
+      "start": 348.01600167847556,
+      "end": 352.17600152588767,
+      "text": "The decrease in kinetic energy equals m g times two r.",
+      "chapter": 3
+    },
+    {
+      "start": 352.17600152588767,
+      "end": 355.9960012207119,
+      "text": "Therefore v bottom squared equals v top squared plus four g r.",
+      "chapter": 3
+    },
+    {
+      "start": 355.9960012207119,
+      "end": 360.11600015259665,
+      "text": "Substitute the limiting top value and obtain five g r.",
+      "chapter": 3
+    },
+    {
+      "start": 360.11600015259665,
+      "end": 364.1959981689541,
+      "text": "The minimum bottom speed is the square root of five g r for this ideal string",
+      "chapter": 3
+    },
+    {
+      "start": 364.1959981689541,
+      "end": 364.53599832154197,
+      "text": "model.",
+      "chapter": 3
+    },
+    {
+      "start": 365.39599893189353,
+      "end": 368.1959981689541,
+      "text": "Try r equal to two meters and g equal to ten.",
+      "chapter": 3
+    },
+    {
+      "start": 368.8160009155361,
+      "end": 373.25600335694236,
+      "text": "The minimum bottom speed is ten meters per second, while the top speed is the",
+      "chapter": 3
+    },
+    {
+      "start": 373.25600335694236,
+      "end": 374.7359990844814,
+      "text": "square root of twenty.",
+      "chapter": 3
+    },
+    {
+      "start": 374.7359990844814,
+      "end": 379.3883076218913,
+      "text": "For a one kilogram particle at the bottom, inward is upward: T minus ten",
+      "chapter": 3
+    },
+    {
+      "start": 379.3883076218913,
+      "end": 379.77600000000876,
+      "text": "equals",
+      "chapter": 3
+    },
+    {
+      "start": 379.77600000000876,
+      "end": 381.55599877930564,
+      "text": "one times one hundred divided by two.",
+      "chapter": 3
+    },
+    {
+      "start": 382.29599664307517,
+      "end": 383.77600000000876,
+      "text": "Bottom tension is sixty newtons.",
+      "chapter": 3
+    },
+    {
+      "start": 383.97599694825095,
+      "end": 387.87599847412986,
+      "text": "That tension is not forty; remember to include weight in the force balance.",
+      "chapter": 3
+    },
+    {
+      "start": 388.65599725342673,
+      "end": 392.1360006103603,
+      "text": "A rigid rod or a particle constrained on a track has different contact",
+      "chapter": 3
+    },
+    {
+      "start": 392.1360006103603,
+      "end": 395.3359975586025,
+      "text": "conditions, so do not transfer the string result automatically.",
+      "chapter": 3
+    },
+    {
+      "start": 396.15599725342673,
+      "end": 400.3160009155361,
+      "text": "In JEE, energy connects speeds at different heights, while the radial force",
+      "chapter": 3
+    },
+    {
+      "start": 400.3160009155361,
+      "end": 403.35600183106345,
+      "text": "equation checks whether the assumed motion is physically allowed.",
+      "chapter": 3
+    },
+    {
+      "start": 403.5840000000117,
+      "end": 407.0240000572322,
+      "text": "For a collision, begin by choosing both bodies as your system.",
+      "chapter": 4
+    },
+    {
+      "start": 407.98400009537914,
+      "end": 411.983999618542,
+      "text": "During the short interaction, neglect net external impulse when the stated",
+      "chapter": 4
+    },
+    {
+      "start": 411.983999618542,
+      "end": 413.3639997329829,
+      "text": "conditions justify it.",
+      "chapter": 4
+    },
+    {
+      "start": 414.1040004577754,
+      "end": 416.0840000000117,
+      "text": "Then total momentum is conserved.",
+      "chapter": 4
+    },
+    {
+      "start": 416.96400011445263,
+      "end": 419.3040002670405,
+      "text": "This does not automatically conserve kinetic energy.",
+      "chapter": 4
+    },
+    {
+      "start": 420.02400053406933,
+      "end": 423.1439994659541,
+      "text": "In an elastic collision, kinetic energy is also conserved.",
+      "chapter": 4
+    },
+    {
+      "start": 423.62400091553906,
+      "end": 427.79810262280193,
+      "text": "In a perfectly inelastic collision, the bodies stick together and share a",
+      "chapter": 4
+    },
+    {
+      "start": 427.79810262280193,
+      "end": 428.0840000000117,
+      "text": "final",
+      "chapter": 4
+    },
+    {
+      "start": 428.0840000000117,
+      "end": 428.483999618542,
+      "text": "velocity.",
+      "chapter": 4
+    },
+    {
+      "start": 429.12400091553906,
+      "end": 433.62400091553906,
+      "text": "Let a two kilogram body moving right at six meters per second hit a stationary",
+      "chapter": 4
+    },
+    {
+      "start": 433.62400091553906,
+      "end": 436.64400137330273,
+      "text": "one kilogram body in a one dimensional elastic collision.",
+      "chapter": 4
+    },
+    {
+      "start": 437.62400091553906,
+      "end": 441.4440006103633,
+      "text": "Initial momentum is twelve kilogram meters per second, and kinetic energy is",
+      "chapter": 4
+    },
+    {
+      "start": 441.4440006103633,
+      "end": 442.80400122071484,
+      "text": "thirty six joules.",
+      "chapter": 4
+    },
+    {
+      "start": 442.80400122071484,
+      "end": 445.62400091553906,
+      "text": "The elastic separation speed equals the approach speed.",
+      "chapter": 4
+    },
+    {
+      "start": 446.3439983215449,
+      "end": 451.5840000000117,
+      "text": "So v two minus v one equals six, while momentum gives two v one plus v two",
+      "chapter": 4
+    },
+    {
+      "start": 451.5840000000117,
+      "end": 453.30400122071484,
+      "text": "equals twelve.",
+      "chapter": 4
+    },
+    {
+      "start": 453.30400122071484,
+      "end": 455.64400137330273,
+      "text": "Substitute v two equal to v one plus six.",
+      "chapter": 4
+    },
+    {
+      "start": 455.64400137330273,
+      "end": 461.3639987793086,
+      "text": "Three v one equals six, giving v one equal to two and v two equal to eight",
+      "chapter": 4
+    },
+    {
+      "start": 461.3639987793086,
+      "end": 462.14400137330273,
+      "text": "meters per second.",
+      "chapter": 4
+    },
+    {
+      "start": 463.0239986267207,
+      "end": 466.90399969483593,
+      "text": "Check the energy: the two kilogram body has four joules and the one kilogram",
+      "chapter": 4
+    },
+    {
+      "start": 466.90399969483593,
+      "end": 468.4440006103633,
+      "text": "body has thirty two.",
+      "chapter": 4
+    },
+    {
+      "start": 468.4440006103633,
+      "end": 470.1839984741328,
+      "text": "Total, thirty six.",
+      "chapter": 4
+    },
+    {
+      "start": 470.1839984741328,
+      "end": 472.2640003051875,
+      "text": "Now let the same bodies stick together instead.",
+      "chapter": 4
+    },
+    {
+      "start": 473.003998168957,
+      "end": 476.82399786378124,
+      "text": "Momentum gives three times their common velocity equal to twelve, so the",
+      "chapter": 4
+    },
+    {
+      "start": 476.82399786378124,
+      "end": 477.7440036621211,
+      "text": "velocity is four.",
+      "chapter": 4
+    },
+    {
+      "start": 478.54399908448437,
+      "end": 483.0706689046341,
+      "text": "Final kinetic energy is one half times three times sixteen, or twenty four",
+      "chapter": 4
+    },
+    {
+      "start": 483.0706689046341,
+      "end": 483.4840015258906,
+      "text": "joules.",
+      "chapter": 4
+    },
+    {
+      "start": 483.4840015258906,
+      "end": 488.70400274659374,
+      "text": "The twelve joule decrease becomes other forms of energy; total energy has not",
+      "chapter": 4
+    },
+    {
+      "start": 488.70400274659374,
+      "end": 489.0840000000117,
+      "text": "vanished.",
+      "chapter": 4
+    },
+    {
+      "start": 490.22399938966015,
+      "end": 493.8639987793086,
+      "text": "Momentum is a signed equation, whereas kinetic energy uses speed squared.",
+      "chapter": 4
+    },
+    {
+      "start": 494.64399755860546,
+      "end": 497.8639987793086,
+      "text": "These examples assume translational particle motion without rotation.",
+      "chapter": 4
+    },
+    {
+      "start": 498.6839984741328,
+      "end": 502.9116924720294,
+      "text": "Do not impose both sticking and elastic kinetic energy conservation on a",
+      "chapter": 4
+    },
+    {
+      "start": 502.9116924720294,
+      "end": 503.2640003051875,
+      "text": "moving",
+      "chapter": 4
+    },
+    {
+      "start": 503.2640003051875,
+      "end": 504.2400000000146,
+      "text": "collision: those are different models.",
+      "chapter": 4
+    },
+    {
+      "start": 504.2400000000146,
+      "end": 509.4799997711328,
+      "text": "Momentum conservation is a vector statement, so a collision does not have to",
+      "chapter": 5
+    },
+    {
+      "start": 509.4799997711328,
+      "end": 510.3599998855737,
+      "text": "stay on one line.",
+      "chapter": 5
+    },
+    {
+      "start": 511.27999996186765,
+      "end": 516.0800001526025,
+      "text": "Take a two kilogram particle traveling east at three meters per second and a",
+      "chapter": 5
+    },
+    {
+      "start": 516.0800001526025,
+      "end": 519.6200001144555,
+      "text": "one kilogram particle traveling north at six meters per second.",
+      "chapter": 5
+    },
+    {
+      "start": 520.1600000763085,
+      "end": 524.6199991607812,
+      "text": "They stick together; external impulse is negligible, and treat the combined",
+      "chapter": 5
+    },
+    {
+      "start": 524.6199991607812,
+      "end": 527.1999990844872,
+      "text": "object as a particle with no rotational energy.",
+      "chapter": 5
+    },
+    {
+      "start": 527.9200003051903,
+      "end": 531.5200006866601,
+      "text": "Choose east as positive x and north as positive y.",
+      "chapter": 5
+    },
+    {
+      "start": 532.5000002288964,
+      "end": 536.7800009155419,
+      "text": "Initial x momentum is six, and initial y momentum is also six.",
+      "chapter": 5
+    },
+    {
+      "start": 537.5399992370751,
+      "end": 539.5399992370751,
+      "text": "The combined mass is three kilograms.",
+      "chapter": 5
+    },
+    {
+      "start": 540.5800001526025,
+      "end": 544.879999389663,
+      "text": "Divide each component by three, giving a final velocity of two east and two",
+      "chapter": 5
+    },
+    {
+      "start": 544.879999389663,
+      "end": 546.4800016784814,
+      "text": "north, in meters per second.",
+      "chapter": 5
+    },
+    {
+      "start": 547.3200018310692,
+      "end": 551.3399984741357,
+      "text": "The speed is the square root of two squared plus two squared, or two times the",
+      "chapter": 5
+    },
+    {
+      "start": 551.3399984741357,
+      "end": 551.9800016784814,
+      "text": "square root of two.",
+      "chapter": 5
+    },
+    {
+      "start": 552.6400015258935,
+      "end": 555.0599996948388,
+      "text": "The direction is forty five degrees north of east.",
+      "chapter": 5
+    },
+    {
+      "start": 555.8999998474267,
+      "end": 557.6999990844872,
+      "text": "Why not add three and six to get nine?",
+      "chapter": 5
+    },
+    {
+      "start": 558.0399992370751,
+      "end": 561.3200018310692,
+      "text": "Because the initial velocities belong to different masses and different",
+      "chapter": 5
+    },
+    {
+      "start": 561.3200018310692,
+      "end": 561.7800009155419,
+      "text": "directions.",
+      "chapter": 5
+    },
+    {
+      "start": 562.6999990844872,
+      "end": 565.2400000000146,
+      "text": "Add momentum components, not speed magnitudes.",
+      "chapter": 5
+    },
+    {
+      "start": 566.3399984741357,
+      "end": 569.7999975586083,
+      "text": "Initial kinetic energy is nine plus eighteen, or twenty seven joules.",
+      "chapter": 5
+    },
+    {
+      "start": 570.9600012207177,
+      "end": 574.7400000000146,
+      "text": "Final kinetic energy is one half times three times eight, or twelve joules.",
+      "chapter": 5
+    },
+    {
+      "start": 574.7400000000146,
+      "end": 577.9600012207177,
+      "text": "Fifteen joules have left translational kinetic energy.",
+      "chapter": 5
+    },
+    {
+      "start": 578.8200018310692,
+      "end": 582.1000006103661,
+      "text": "Now consider equal masses in an elastic scattering example.",
+      "chapter": 5
+    },
+    {
+      "start": 582.9000036621239,
+      "end": 585.9200003051903,
+      "text": "One starts at ten meters per second east; the other is stationary.",
+      "chapter": 5
+    },
+    {
+      "start": 587.0799963379052,
+      "end": 591.4399969482567,
+      "text": "Possible final velocities are five east plus five north, and five east plus",
+      "chapter": 5
+    },
+    {
+      "start": 591.4399969482567,
+      "end": 592.0400030517724,
+      "text": "five south.",
+      "chapter": 5
+    },
+    {
+      "start": 592.879999389663,
+      "end": 596.6000006103661,
+      "text": "Their vector sum preserves momentum, and their equal speeds of five times",
+      "chapter": 5
+    },
+    {
+      "start": 596.8200018310692,
+      "end": 600.6999990844872,
+      "text": "square root of two preserve the initial fifty joules for one kilogram masses.",
+      "chapter": 5
+    },
+    {
+      "start": 601.2800009155419,
+      "end": 603.4799978637841,
+      "text": "The final velocity vectors are perpendicular.",
+      "chapter": 5
+    },
+    {
+      "start": 604.2999975586083,
+      "end": 608.5400030517724,
+      "text": "This special result excludes a zero final velocity and assumes an initially",
+      "chapter": 5
+    },
+    {
+      "start": 608.5400030517724,
+      "end": 610.0400030517724,
+      "text": "stationary equal mass target.",
+      "chapter": 5
+    },
+    {
+      "start": 611.1400015258935,
+      "end": 614.1800024414208,
+      "text": "General two dimensional scattering needs enough angle or interaction",
+      "chapter": 5
+    },
+    {
+      "start": 614.1800024414208,
+      "end": 616.379999389663,
+      "text": "information to determine a unique outcome.",
+      "chapter": 5
+    },
+    {
+      "start": 617.2999975586083,
+      "end": 620.5400030517724,
+      "text": "Use the practice questions to test the model before trusting a memorized",
+      "chapter": 5
+    },
+    {
+      "start": 620.5400030517724,
+      "end": 620.8200018310692,
+      "text": "formula.",
+      "chapter": 5
+    }
+  ]
+}

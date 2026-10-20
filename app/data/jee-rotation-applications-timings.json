@@ -1,0 +1,897 @@
+{
+  "duration": 511.6560000000149,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 90.96000000000255
+    },
+    {
+      "start": 90.96000000000255,
+      "end": 207.62400000000608
+    },
+    {
+      "start": 207.62400000000608,
+      "end": 303.3840000000088
+    },
+    {
+      "start": 303.3840000000088,
+      "end": 392.4960000000113
+    },
+    {
+      "start": 392.4960000000113,
+      "end": 511.6560000000149
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 0.7599999904632568,
+      "text": "Welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.2599999904632568,
+      "end": 4.940000057220459,
+      "text": "In this class we will work through mass weighted positions, axis theorems,",
+      "chapter": 0
+    },
+    {
+      "start": 5.659999847412109,
+      "end": 9.199999809265137,
+      "text": "angular momentum, beam equilibrium and rolling down an incline.",
+      "chapter": 0
+    },
+    {
+      "start": 10.100000381469727,
+      "end": 12.800000190734863,
+      "text": "Imagine two small masses joined by a light connector.",
+      "chapter": 0
+    },
+    {
+      "start": 13.460000038146973,
+      "end": 16.910000544327957,
+      "text": "Their centre of mass is a mass weighted position, not necessarily the",
+      "chapter": 0
+    },
+    {
+      "start": 16.910000544327957,
+      "end": 17.360000610351562,
+      "text": "midpoint.",
+      "chapter": 0
+    },
+    {
+      "start": 18.239999771118164,
+      "end": 23.799999237060547,
+      "text": "Put 2 kg at x equals 0 and 3 kg at x equals 4 m.",
+      "chapter": 0
+    },
+    {
+      "start": 23.799999237060547,
+      "end": 29.200000762939453,
+      "text": "Multiply each position by its mass, add, then divide by total mass: (2 times 0",
+      "chapter": 0
+    },
+    {
+      "start": 29.200000762939453,
+      "end": 34,
+      "text": "plus 3 times 4)/5 equals 2.4 m.",
+      "chapter": 0
+    },
+    {
+      "start": 34,
+      "end": 35.91999816894531,
+      "text": "The answer lies nearer the heavier mass.",
+      "chapter": 0
+    },
+    {
+      "start": 36.47999954223633,
+      "end": 40.5,
+      "text": "For positive masses on a line it must lie between the extreme positions; that",
+      "chapter": 0
+    },
+    {
+      "start": 40.5,
+      "end": 42.63999938964844,
+      "text": "is a useful check before trusting your arithmetic.",
+      "chapter": 0
+    },
+    {
+      "start": 43.47999954223633,
+      "end": 46.97999954223633,
+      "text": "Use the same weighted average separately for x, y and z components.",
+      "chapter": 0
+    },
+    {
+      "start": 47.63999938964844,
+      "end": 51.47589815579928,
+      "text": "A uniform straight rod has its centre of mass at its midpoint, but a",
+      "chapter": 0
+    },
+    {
+      "start": 51.47589815579928,
+      "end": 52.040000915527344,
+      "text": "nonuniform",
+      "chapter": 0
+    },
+    {
+      "start": 52.040000915527344,
+      "end": 52.779998779296875,
+      "text": "rod may not.",
+      "chapter": 0
+    },
+    {
+      "start": 53.400001525878906,
+      "end": 57.52000045776367,
+      "text": "For a continuous body, replace the particle sum by an integral over mass.",
+      "chapter": 0
+    },
+    {
+      "start": 58.380001068115234,
+      "end": 61.900001525878906,
+      "text": "Symmetry is often quicker: a uniform ring has its centre of mass at its",
+      "chapter": 0
+    },
+    {
+      "start": 61.900001525878906,
+      "end": 64.68000030517578,
+      "text": "geometric centre even though there is no material there.",
+      "chapter": 0
+    },
+    {
+      "start": 65.4000015258789,
+      "end": 69.73999786376953,
+      "text": "For a fixed mass system, the net external force equals total mass times centre",
+      "chapter": 0
+    },
+    {
+      "start": 69.73999786376953,
+      "end": 70.66000366210938,
+      "text": "of mass acceleration.",
+      "chapter": 0
+    },
+    {
+      "start": 71.62000274658203,
+      "end": 75.3123069176307,
+      "text": "Internal forces can rearrange the particles but cannot by themselves change",
+      "chapter": 0
+    },
+    {
+      "start": 75.3123069176307,
+      "end": 75.45999908447266,
+      "text": "the",
+      "chapter": 0
+    },
+    {
+      "start": 75.45999908447266,
+      "end": 75.95999908447266,
+      "text": "total momentum.",
+      "chapter": 0
+    },
+    {
+      "start": 76.66000366210938,
+      "end": 80.51897391294821,
+      "text": "On a horizontal frictionless surface, a person walking along a movable",
+      "chapter": 0
+    },
+    {
+      "start": 80.51897391294821,
+      "end": 80.95999908447266,
+      "text": "platform",
+      "chapter": 0
+    },
+    {
+      "start": 80.95999908447266,
+      "end": 85.12000274658203,
+      "text": "shifts the platform oppositely while their combined horizontal centre of mass",
+      "chapter": 0
+    },
+    {
+      "start": 85.12000274658203,
+      "end": 87.13999938964844,
+      "text": "stays fixed if initially at rest.",
+      "chapter": 0
+    },
+    {
+      "start": 87.9800033569336,
+      "end": 90.73999786376953,
+      "text": "Always include both person and platform in that system.",
+      "chapter": 0
+    },
+    {
+      "start": 90.96000000000255,
+      "end": 95.86000009536998,
+      "text": "Moment of inertia sums mass times squared perpendicular distance from the",
+      "chapter": 1
+    },
+    {
+      "start": 95.86000009536998,
+      "end": 96.57999988556163,
+      "text": "chosen axis.",
+      "chapter": 1
+    },
+    {
+      "start": 97.30000015259044,
+      "end": 101.89999958038585,
+      "text": "For standard uniform bodies, identify the axis before choosing a formula.",
+      "chapter": 1
+    },
+    {
+      "start": 102.69999977112072,
+      "end": 108.59999938965099,
+      "text": "A thin ring about its central perpendicular axis has I equals MR squared; a",
+      "chapter": 1
+    },
+    {
+      "start": 108.59999938965099,
+      "end": 112.72000022888439,
+      "text": "uniform disk has I equals MR squared/2.",
+      "chapter": 1
+    },
+    {
+      "start": 112.72000022888439,
+      "end": 118.67999931335704,
+      "text": "A uniform solid sphere about a diameter has 2MR squared/5, while a thin",
+      "chapter": 1
+    },
+    {
+      "start": 118.67999931335704,
+      "end": 122.56000038147228,
+      "text": "spherical shell has 2MR squared/3.",
+      "chapter": 1
+    },
+    {
+      "start": 122.56000038147228,
+      "end": 128.20000167846933,
+      "text": "A uniform thin rod has ML squared/12 about a perpendicular midpoint axis.",
+      "chapter": 1
+    },
+    {
+      "start": 129.46000000000254,
+      "end": 131.96000000000254,
+      "text": "These shapes and axes are part of each formula.",
+      "chapter": 1
+    },
+    {
+      "start": 132.87999816894785,
+      "end": 137.18000122070566,
+      "text": "The parallel axis theorem moves from an axis through the centre of mass to a",
+      "chapter": 1
+    },
+    {
+      "start": 137.18000122070566,
+      "end": 141.80000015259043,
+      "text": "parallel axis a distance d away: I equals the centre of mass moment of inertia",
+      "chapter": 1
+    },
+    {
+      "start": 141.80000015259043,
+      "end": 143.05999847412363,
+      "text": "plus Md squared.",
+      "chapter": 1
+    },
+    {
+      "start": 143.05999847412363,
+      "end": 148.77999969482676,
+      "text": "For a 3 kg uniform rod of length 2 m, midpoint inertia is",
+      "chapter": 1
+    },
+    {
+      "start": 148.77999969482676,
+      "end": 150.18000122070566,
+      "text": "1 kilogram metre squared.",
+      "chapter": 1
+    },
+    {
+      "start": 151.30000015259043,
+      "end": 156.3200006103541,
+      "text": "Move to a perpendicular axis through its end: d equals 1 m, so the end axis",
+      "chapter": 1
+    },
+    {
+      "start": 156.3200006103541,
+      "end": 160.8200006103541,
+      "text": "moment of inertia equals 1 plus 3 equals 4 kilogram metre squared.",
+      "chapter": 1
+    },
+    {
+      "start": 161.76000305176035,
+      "end": 164.7399987792994,
+      "text": "Do not use the distance between arbitrary nonparallel axes.",
+      "chapter": 1
+    },
+    {
+      "start": 165.8399972534205,
+      "end": 169.55999847412363,
+      "text": "Starting from two off centre axes also requires knowing their distances from",
+      "chapter": 1
+    },
+    {
+      "start": 169.55999847412363,
+      "end": 173.8200006103541,
+      "text": "the centre of mass axis, not blindly adding Md squared between them.",
+      "chapter": 1
+    },
+    {
+      "start": 175.0199975585963,
+      "end": 179.79999633789316,
+      "text": "For a thin planar lamina, the perpendicular axis theorem states I z equals I x",
+      "chapter": 1
+    },
+    {
+      "start": 179.79999633789316,
+      "end": 184.3399972534205,
+      "text": "plus I y for two perpendicular in plane axes intersecting at the point where",
+      "chapter": 1
+    },
+    {
+      "start": 184.3399972534205,
+      "end": 185.76000305176035,
+      "text": "the normal z axis passes.",
+      "chapter": 1
+    },
+    {
+      "start": 186.37999816894785,
+      "end": 189.14000030517832,
+      "text": "It does not apply to an arbitrary three dimensional body.",
+      "chapter": 1
+    },
+    {
+      "start": 189.8200006103541,
+      "end": 194.64000030517832,
+      "text": "A uniform disk has equal diameter axis inertias by symmetry, so each is",
+      "chapter": 1
+    },
+    {
+      "start": 194.64000030517832,
+      "end": 197.04000183105722,
+      "text": "MR squared/4.",
+      "chapter": 1
+    },
+    {
+      "start": 197.04000183105722,
+      "end": 201.50922876602817,
+      "text": "Radius of gyration is a length defined by I equals Mradius of gyration",
+      "chapter": 1
+    },
+    {
+      "start": 201.50922876602817,
+      "end": 202.0199975585963,
+      "text": "squared.",
+      "chapter": 1
+    },
+    {
+      "start": 202.94000335693613,
+      "end": 206.86162880476385,
+      "text": "It locates an equivalent inertia distance, not necessarily a physical ring of",
+      "chapter": 1
+    },
+    {
+      "start": 206.86162880476385,
+      "end": 207.3200006103541,
+      "text": "material.",
+      "chapter": 1
+    },
+    {
+      "start": 207.62400000000608,
+      "end": 211.8840002288879,
+      "text": "For a particle, angular momentum about a point is r cross p.",
+      "chapter": 2
+    },
+    {
+      "start": 212.58400003815305,
+      "end": 217.9095169033243,
+      "text": "Its magnitude is mvr sin(theta), where theta is the angle between position and",
+      "chapter": 2
+    },
+    {
+      "start": 217.9095169033243,
+      "end": 218.52399961853635,
+      "text": "velocity.",
+      "chapter": 2
+    },
+    {
+      "start": 219.2240003814758,
+      "end": 222.20399992371213,
+      "text": "The perpendicular distance from the reference point to the particle's straight",
+      "chapter": 2
+    },
+    {
+      "start": 222.20399992371213,
+      "end": 227.54400007630002,
+      "text": "line path is often easier: magnitude equals mv times that distance.",
+      "chapter": 2
+    },
+    {
+      "start": 228.00399916077268,
+      "end": 234.00399916077268,
+      "text": "A 2 kg particle moving at 3 metres per second on a straight path 0.5 m from",
+      "chapter": 2
+    },
+    {
+      "start": 234.00399916077268,
+      "end": 238.96400015259397,
+      "text": "the origin has angular momentum magnitude 3 kilogram metre squared per second,",
+      "chapter": 2
+    },
+    {
+      "start": 239.52399961853635,
+      "end": 241.20400183106076,
+      "text": "even though it is not moving in a circle.",
+      "chapter": 2
+    },
+    {
+      "start": 242.06399862671506,
+      "end": 246.4439996948303,
+      "text": "About a fixed point in an inertial frame, the net external torque equals the",
+      "chapter": 2
+    },
+    {
+      "start": 246.4439996948303,
+      "end": 248.30400030518186,
+      "text": "rate of change of total angular momentum.",
+      "chapter": 2
+    },
+    {
+      "start": 249.0439981689514,
+      "end": 252.16400091553342,
+      "text": "If that torque vanishes, angular momentum is conserved.",
+      "chapter": 2
+    },
+    {
+      "start": 252.74399893189084,
+      "end": 257.83784493510535,
+      "text": "For rotation about a fixed principal or symmetry axis, the axial component is",
+      "chapter": 2
+    },
+    {
+      "start": 257.83784493510535,
+      "end": 257.9039987793029,
+      "text": "I",
+      "chapter": 2
+    },
+    {
+      "start": 257.9039987793029,
+      "end": 258.3240007629455,
+      "text": "omega.",
+      "chapter": 2
+    },
+    {
+      "start": 258.96400015259394,
+      "end": 263.5040010681213,
+      "text": "Do not assume the vector angular momentum is parallel to angular velocity for",
+      "chapter": 2
+    },
+    {
+      "start": 263.5040010681213,
+      "end": 266.04399816895136,
+      "text": "every possible axis of a three dimensional body.",
+      "chapter": 2
+    },
+    {
+      "start": 267.02400152588496,
+      "end": 272.2639993896545,
+      "text": "An isolated rotating system reduces its axial moment of inertia from 4 to 2",
+      "chapter": 2
+    },
+    {
+      "start": 272.2639993896545,
+      "end": 276.52400152588496,
+      "text": "kilogram metre squared, starting at 3 radians per second, with negligible",
+      "chapter": 2
+    },
+    {
+      "start": 276.52400152588496,
+      "end": 278.22399847412714,
+      "text": "external torque about that axis.",
+      "chapter": 2
+    },
+    {
+      "start": 279.10400335693964,
+      "end": 282.3840021362365,
+      "text": "Initial angular momentum is 12 kilogram metre squared per second.",
+      "chapter": 2
+    },
+    {
+      "start": 283.02400152588496,
+      "end": 285.82399694824824,
+      "text": "The final angular speed is 6 radians per second.",
+      "chapter": 2
+    },
+    {
+      "start": 286.5640024414123,
+      "end": 288.6839975585998,
+      "text": "Does its rotational kinetic energy stay unchanged?",
+      "chapter": 2
+    },
+    {
+      "start": 289.72399847412714,
+      "end": 290.32399694824824,
+      "text": "Pause and compare.",
+      "chapter": 2
+    },
+    {
+      "start": 291.04399816895136,
+      "end": 294.4639963378967,
+      "text": "It rises from 18 to 36 J.",
+      "chapter": 2
+    },
+    {
+      "start": 294.4639963378967,
+      "end": 297.30400030518183,
+      "text": "Internal work during the rearrangement supplies the increase.",
+      "chapter": 2
+    },
+    {
+      "start": 298.4840006103576,
+      "end": 302.0839990844787,
+      "text": "Conservation of angular momentum does not automatically conserve rotational",
+      "chapter": 2
+    },
+    {
+      "start": 302.0839990844787,
+      "end": 302.80400030518183,
+      "text": "kinetic energy.",
+      "chapter": 2
+    },
+    {
+      "start": 303.3840000000088,
+      "end": 308.90399998093534,
+      "text": "A rigid body in static equilibrium needs both zero net external force and zero",
+      "chapter": 3
+    },
+    {
+      "start": 308.90399998093534,
+      "end": 309.92399996186185,
+      "text": "net external torque.",
+      "chapter": 3
+    },
+    {
+      "start": 311.0039998855679,
+      "end": 312.7839996185391,
+      "text": "Balanced forces alone do not prevent turning.",
+      "chapter": 3
+    },
+    {
+      "start": 313.70399969483304,
+      "end": 317.8239995803921,
+      "text": "Two equal opposite parallel forces on different lines of action form a couple:",
+      "chapter": 3
+    },
+    {
+      "start": 318.60400026703763,
+      "end": 320.9639999237149,
+      "text": "net force is zero but their torques can add.",
+      "chapter": 3
+    },
+    {
+      "start": 322.30400007630277,
+      "end": 326.1839992370694,
+      "text": "Choose a torque reference that removes an unknown reaction, then still check",
+      "chapter": 3
+    },
+    {
+      "start": 326.1839992370694,
+      "end": 326.98400038147855,
+      "text": "the force equation.",
+      "chapter": 3
+    },
+    {
+      "start": 327.6839992370694,
+      "end": 333.02399938965726,
+      "text": "Consider a horizontal uniform 4 m beam of mass 2 kg supported vertically at",
+      "chapter": 3
+    },
+    {
+      "start": 333.02399938965726,
+      "end": 333.5040008392422,
+      "text": "both ends.",
+      "chapter": 3
+    },
+    {
+      "start": 334.52399938965726,
+      "end": 337.3439990844815,
+      "text": "A 6 kg load sits 1 m from the left end.",
+      "chapter": 3
+    },
+    {
+      "start": 338.3239986267178,
+      "end": 342.1240016784756,
+      "text": "Use g equals 10 metres per second squared and neglect support friction.",
+      "chapter": 3
+    },
+    {
+      "start": 343.0840007629483,
+      "end": 348.48400038147855,
+      "text": "The beam weight is 20 N at its midpoint; the load weight is 60 N at x equals 1",
+      "chapter": 3
+    },
+    {
+      "start": 348.48400038147855,
+      "end": 349.26400106812406,
+      "text": "m.",
+      "chapter": 3
+    },
+    {
+      "start": 349.26400106812406,
+      "end": 352.30399816895414,
+      "text": "Call the upward reactions the left reaction and the right reaction.",
+      "chapter": 3
+    },
+    {
+      "start": 353.4040004577725,
+      "end": 356.44400137329984,
+      "text": "Vertical equilibrium gives their sum as 80 N.",
+      "chapter": 3
+    },
+    {
+      "start": 356.44400137329984,
+      "end": 359.76400106812406,
+      "text": "Take torques about the left support, positive anticlockwise.",
+      "chapter": 3
+    },
+    {
+      "start": 360.6240016784756,
+      "end": 362.4040004577725,
+      "text": "The left reaction has zero lever arm.",
+      "chapter": 3
+    },
+    {
+      "start": 363.2440006103604,
+      "end": 367.70399969483304,
+      "text": "The right reaction contributes 4the right reaction; the two downward weights",
+      "chapter": 3
+    },
+    {
+      "start": 367.70399969483304,
+      "end": 372.18400305176664,
+      "text": "contribute minus 20 times 2 and minus 60 times 1.",
+      "chapter": 3
+    },
+    {
+      "start": 372.18400305176664,
+      "end": 377.6134902312538,
+      "text": "Therefore 4the right reaction equals 100, giving the right reaction equals 25",
+      "chapter": 3
+    },
+    {
+      "start": 377.6134902312538,
+      "end": 377.68400305176664,
+      "text": "N",
+      "chapter": 3
+    },
+    {
+      "start": 377.68400305176664,
+      "end": 380.5640003051846,
+      "text": "and the left reaction equals 55 N.",
+      "chapter": 3
+    },
+    {
+      "start": 380.5640003051846,
+      "end": 382.6440021362393,
+      "text": "The larger reaction is near the load.",
+      "chapter": 3
+    },
+    {
+      "start": 383.1639987793057,
+      "end": 387.87553870803544,
+      "text": "If a support can only push, a calculated negative reaction would invalidate",
+      "chapter": 3
+    },
+    {
+      "start": 387.87553870803544,
+      "end": 388.0640003051846,
+      "text": "the",
+      "chapter": 3
+    },
+    {
+      "start": 388.0640003051846,
+      "end": 391.60400122071195,
+      "text": "assumed contact; do not quietly accept a downward normal force.",
+      "chapter": 3
+    },
+    {
+      "start": 392.4960000000113,
+      "end": 397.25600022889313,
+      "text": "Release a uniform solid cylinder from rest down a fixed rough incline.",
+      "chapter": 4
+    },
+    {
+      "start": 397.9960000000113,
+      "end": 402.19599980927643,
+      "text": "Assume pure rolling on a stationary surface, sufficient static friction, no",
+      "chapter": 4
+    },
+    {
+      "start": 402.19599980927643,
+      "end": 404.3760001144522,
+      "text": "deformation losses and no rolling resistance.",
+      "chapter": 4
+    },
+    {
+      "start": 405.35599965668854,
+      "end": 409.57599992371735,
+      "text": "The centre accelerates downhill while static friction points uphill and",
+      "chapter": 4
+    },
+    {
+      "start": 409.57599992371735,
+      "end": 412.1160008392447,
+      "text": "supplies torque about the centre.",
+      "chapter": 4
+    },
+    {
+      "start": 412.1160008392447,
+      "end": 416.596000381481,
+      "text": "Translational force balance gives mg sin(theta) minus f equals ma.",
+      "chapter": 4
+    },
+    {
+      "start": 417.3759991607779,
+      "end": 423.2760006866568,
+      "text": "Torque gives fR equals the centre of mass moment of inertia alpha, and no slip",
+      "chapter": 4
+    },
+    {
+      "start": 423.2760006866568,
+      "end": 425.13599938965973,
+      "text": "gives a equals R alpha.",
+      "chapter": 4
+    },
+    {
+      "start": 426.2360016784781,
+      "end": 432.076001831066,
+      "text": "Combining them yields a equals g sin(theta)/(1 plus the centre of mass",
+      "chapter": 4
+    },
+    {
+      "start": 432.076001831066,
+      "end": 435.0959984741324,
+      "text": "moment of inertia divided by mass times radius squared).",
+      "chapter": 4
+    },
+    {
+      "start": 436.3760010681265,
+      "end": 440.2360016784781,
+      "text": "For a solid cylinder the centre of mass moment of inertia is mass times radius",
+      "chapter": 4
+    },
+    {
+      "start": 440.2360016784781,
+      "end": 441.35600061036286,
+      "text": "squared divided by two.",
+      "chapter": 4
+    },
+    {
+      "start": 441.35600061036286,
+      "end": 446.9359986267203,
+      "text": "At 30 degrees with g equals 10 metres per second squared, its acceleration is",
+      "chapter": 4
+    },
+    {
+      "start": 446.9359986267203,
+      "end": 450.4359986267203,
+      "text": "10/3 metres per second squared, not 5 metres per second squared.",
+      "chapter": 4
+    },
+    {
+      "start": 451.53600091553864,
+      "end": 455.5560013733023,
+      "text": "Some gravitational energy goes into rotation, so the centre accelerates less",
+      "chapter": 4
+    },
+    {
+      "start": 455.5560013733023,
+      "end": 457.2160012207144,
+      "text": "than a frictionless sliding particle.",
+      "chapter": 4
+    },
+    {
+      "start": 458.0959984741324,
+      "end": 462.09086878225037,
+      "text": "In ideal pure rolling the instantaneous contact point is stationary relative",
+      "chapter": 4
+    },
+    {
+      "start": 462.09086878225037,
+      "end": 462.1959969482535,
+      "text": "to",
+      "chapter": 4
+    },
+    {
+      "start": 462.1959969482535,
+      "end": 462.87599725342926,
+      "text": "the fixed surface.",
+      "chapter": 4
+    },
+    {
+      "start": 463.8359963379019,
+      "end": 467.37599725342926,
+      "text": "Static friction therefore does no net work on the rigid body here, although it",
+      "chapter": 4
+    },
+    {
+      "start": 467.37599725342926,
+      "end": 469.5959984741324,
+      "text": "redistributes translational and rotational energy.",
+      "chapter": 4
+    },
+    {
+      "start": 470.4159981689566,
+      "end": 472.87599725342926,
+      "text": "This conclusion need not hold for a moving surface.",
+      "chapter": 4
+    },
+    {
+      "start": 473.5159966430777,
+      "end": 478.9760033569449,
+      "text": "The required friction is mg sin(theta)/3 for the cylinder, while N equals mg",
+      "chapter": 4
+    },
+    {
+      "start": 478.9760033569449,
+      "end": 480.45599908448395,
+      "text": "cos(theta).",
+      "chapter": 4
+    },
+    {
+      "start": 480.45599908448395,
+      "end": 483.95599908448395,
+      "text": "Hence the no slip condition is the coefficient of static friction must be at",
+      "chapter": 4
+    },
+    {
+      "start": 483.95599908448395,
+      "end": 486.63599938965973,
+      "text": "least tan(theta)/3.",
+      "chapter": 4
+    },
+    {
+      "start": 486.63599938965973,
+      "end": 490.65600366212067,
+      "text": "Below that coefficient, the rolling assumption fails and sliding must be",
+      "chapter": 4
+    },
+    {
+      "start": 490.65600366212067,
+      "end": 491.03600091553864,
+      "text": "treated separately.",
+      "chapter": 4
+    },
+    {
+      "start": 492.15600366212067,
+      "end": 498.0959984741324,
+      "text": "After a vertical drop h, energy gives v squared equals 2gh/(1",
+      "chapter": 4
+    },
+    {
+      "start": 498.0959984741324,
+      "end": 501.77599877930817,
+      "text": "plus the centre of mass moment of inertia divided by mass times radius",
+      "chapter": 4
+    },
+    {
+      "start": 501.77599877930817,
+      "end": 502.13599938965973,
+      "text": "squared).",
+      "chapter": 4
+    },
+    {
+      "start": 503.076001831066,
+      "end": 508.2160012207144,
+      "text": "A solid cylinder dropping 0.30 m with g equals 10 reaches 2 metres per second.",
+      "chapter": 4
+    },
+    {
+      "start": 508.53600091553864,
+      "end": 511.45599908448395,
+      "text": "A ring has a different inertia and a different final speed.",
+      "chapter": 4
+    },
+    {
+      "start": 511.45599908448395,
+      "end": 511.6560000000149,
+      "text": "Compare models, not just masses.",
+      "chapter": 4
+    }
+  ]
+}

@@ -1,0 +1,508 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script. Read every sentence completely and precisely, including the final sentence. Do not summarize.",
+  "title": "D and f block: configurations, properties and oxidants",
+  "subject": "Chemistry",
+  "unit": 11,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 Chemistry syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "NCERT: d- and f-block elements",
+      "url": "https://ncert.nic.in/textbook/pdf/lech104.pdf"
+    },
+    {
+      "title": "OpenStax: transition-metal properties",
+      "url": "https://openstax.org/books/chemistry-2e/pages/19-1-occurrence-preparation-and-properties-of-transition-metals-and-their-compounds"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Configurations of actual atoms and ions",
+      "formula": "Remove outer 4s electrons before 3d for common first-row cations",
+      "script": "Welcome to D and F Block Chemistry. This recorded class uses an AI generated Marin voice. Begin with the configuration of the actual species. Neutral chromium is commonly described as an argon core followed by three d five and four s one. Neutral copper has three d ten and four s one beyond that core. These observed configurations are not replaced by an inflexible filling shortcut. For common first row metal cations, remove outer four s electrons before three d electrons. Neutral iron has three d six and four s two. Removing two electrons gives iron two plus with a d six count; removing one more gives iron three plus with d five. Copper two plus has d nine, while zinc two plus has d ten. A transition element has an incomplete d subshell in its atom or an important cation. Zinc's common atom and zinc two plus both have a filled d subshell, so a position in the d block does not automatically make it a typical transition element under that definition.",
+      "points": [
+        "Fe²⁺ · d⁶ · Remove two 4s electrons",
+        "Fe³⁺ · d⁵ · Then remove one d electron",
+        "Cu²⁺; Zn²⁺ · d⁹; d¹⁰ · Use actual configuration"
+      ],
+      "board": {
+        "heading": "Configurations of actual atoms and ions",
+        "columns": [
+          "Ion",
+          "d count",
+          "Counting step"
+        ],
+        "rows": [
+          [
+            "Fe²⁺",
+            "d⁶",
+            "Remove two 4s electrons"
+          ],
+          [
+            "Fe³⁺",
+            "d⁵",
+            "Then remove one d electron"
+          ],
+          [
+            "Cu²⁺; Zn²⁺",
+            "d⁹; d¹⁰",
+            "Use actual configuration"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Variable oxidation states and environment",
+      "formula": "Formal oxidation state is not always a free-ion charge",
+      "script": "Outer s and d orbitals in transition elements can have relatively close energies. Different numbers of electrons can therefore participate in bonding, supporting several oxidation states. Their relative stability depends on the element, ligands and medium. Manganese in permanganate has formal oxidation state plus seven, but that does not describe an ordinary free aqueous manganese seven plus ion. The oxygen containing species and its bonding are essential. High oxidation states are often stabilized with oxygen or fluorine, while many later first row compounds favour lower states such as plus two or plus three. Atomic radii also vary less dramatically across much of the transition series than a simple main group comparison might suggest, because increasing nuclear attraction and added d electrons compete. Melting point and ionization trends contain exceptions and should be checked against supplied data. Separate a neutral metal, a dissolved ion and a solid oxide when explaining a property. Sharing the same elemental name does not make those species electronically or structurally identical.",
+      "points": [
+        "Oxidation-state stability · Ligands and medium · Actual compound matters",
+        "Mn(VII) in MnO₄⁻ · Oxygen-containing ion · Not free Mn⁷⁺",
+        "Across transition row · Nuclear charge and d filling · Trends need data"
+      ],
+      "board": {
+        "heading": "Variable oxidation states and environment",
+        "columns": [
+          "Comparison",
+          "What to identify",
+          "Reason"
+        ],
+        "rows": [
+          [
+            "Oxidation-state stability",
+            "Ligands and medium",
+            "Actual compound matters"
+          ],
+          [
+            "Mn(VII) in MnO₄⁻",
+            "Oxygen-containing ion",
+            "Not free Mn⁷⁺"
+          ],
+          [
+            "Across transition row",
+            "Nuclear charge and d filling",
+            "Trends need data"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Unpaired electrons and the spin-only model",
+      "formula": "μ ≈ √[n(n + 2)] Bohr magnetons",
+      "script": "In an elementary magnetic model, unpaired electrons give paramagnetism, while an all paired arrangement is diamagnetic. The spin only moment estimate is the square root of the product of n and the quantity n plus two, in Bohr magnetons, where n is the number of unpaired electrons. It is not simply the total d electron count. A specified high spin d five arrangement has five unpaired electrons, so the estimate is the square root of thirty five, about five point nine two Bohr magnetons. Other configurations require the actual orbital arrangement before counting n. Ligand field strength can change the number of unpaired electrons for some d counts, so oxidation state alone is not enough to predict every complex. Orbital contributions and interactions can also make measured moments differ from the spin only estimate. Follow a clear sequence: identify the species, find the oxidation state and d count, use the specified spin environment, then count unpaired electrons. Only after those choices should the numerical formula be applied.",
+      "points": [
+        "High-spin d⁵ · 5 · √35 ≈ 5.92 μB",
+        "All paired · 0 · 0 in this model",
+        "Different ligand field · Recount n · Do not use d count directly"
+      ],
+      "board": {
+        "heading": "Unpaired electrons and the spin-only model",
+        "columns": [
+          "Specified arrangement",
+          "Unpaired n",
+          "Spin-only estimate"
+        ],
+        "rows": [
+          [
+            "High-spin d⁵",
+            "5",
+            "√35 ≈ 5.92 μB"
+          ],
+          [
+            "All paired",
+            "0",
+            "0 in this model"
+          ],
+          [
+            "Different ligand field",
+            "Recount n",
+            "Do not use d count directly"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Colour, charge transfer and catalysis",
+      "formula": "d–d absorption is only one source of colour",
+      "script": "Many transition compounds absorb visible light through electronic transitions. Splitting of d orbital energies in a ligand environment can allow d to d absorption, but that is not the only mechanism. Charge transfer transitions can give strong colours even when the metal is formally d zero. Permanganate is a familiar coloured example with manganese in oxidation state plus seven and a formal d zero count. A rule that every d zero compound must be colourless therefore fails. Do not infer an exact colour from oxidation state alone: the ligands, structure and allowed transitions matter. Transition metals and their compounds can also act as catalysts through accessible oxidation states, reactive surfaces or intermediate complexes. Small charged metal ions can accept electron pairs from donor ligands and form coordination compounds. These are broad explanations, not guarantees that every metal salt is a useful catalyst. A catalyst changes the reaction pathway and rate under suitable conditions, while the equilibrium constant at fixed temperature remains a thermodynamic property of the reaction.",
+      "points": [
+        "Colour · d–d or charge-transfer absorption · Not d count alone",
+        "Permanganate · Charge-transfer contribution · Coloured despite d⁰",
+        "Catalysis · Surface or redox pathways · Not every compound works"
+      ],
+      "board": {
+        "heading": "Colour, charge transfer and catalysis",
+        "columns": [
+          "Property",
+          "Possible explanation",
+          "Limit"
+        ],
+        "rows": [
+          [
+            "Colour",
+            "d–d or charge-transfer absorption",
+            "Not d count alone"
+          ],
+          [
+            "Permanganate",
+            "Charge-transfer contribution",
+            "Coloured despite d⁰"
+          ],
+          [
+            "Catalysis",
+            "Surface or redox pathways",
+            "Not every compound works"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Alloys, interstitial solids and metallic properties",
+      "formula": "Solid-lattice behaviour differs from solution complexes",
+      "script": "Many transition metals are dense, strong solids with useful melting points, although the pattern has exceptions. Metallic bonding and the solid structure should be distinguished from the behaviour of a dissolved metal salt. Similar atomic sizes can help different metals occupy a common metallic lattice and form alloys. An alloy need not be a pure molecular compound with one fixed stoichiometric formula. Its properties depend on the elements present, their proportions and the resulting phases. Small atoms such as carbon or nitrogen can occupy spaces in some metal lattices, producing interstitial compounds or related solid phases. These may retain metallic characteristics while becoming harder or showing changed melting behaviour. That does not make an interstitial solid a coordination complex in solution. The same transition element can participate in several kinds of material, with different structures and properties. In a comparison question, identify whether it concerns the elemental metal, an alloy, an interstitial solid or a salt before applying a general statement about transition element chemistry.",
+      "points": [
+        "Alloy · Metallic lattice / phases · Composition affects properties",
+        "Interstitial solid · Small atoms in lattice spaces · Hardness may change",
+        "Complex ion · Ligands around metal · Different from bulk alloy"
+      ],
+      "board": {
+        "heading": "Alloys, interstitial solids and metallic properties",
+        "columns": [
+          "Material",
+          "Structural setting",
+          "Useful distinction"
+        ],
+        "rows": [
+          [
+            "Alloy",
+            "Metallic lattice / phases",
+            "Composition affects properties"
+          ],
+          [
+            "Interstitial solid",
+            "Small atoms in lattice spaces",
+            "Hardness may change"
+          ],
+          [
+            "Complex ion",
+            "Ligands around metal",
+            "Different from bulk alloy"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Oxidants need a specified medium",
+      "formula": "Acidic MnO₄⁻ accepts 5 e⁻; Cr₂O₇²⁻ accepts 6 e⁻",
+      "script": "In suitable acidic medium, permanganate is reduced to manganese two plus by accepting five electrons per ion. Dichromate is reduced to two chromium three plus ions by accepting six electrons per dichromate ion. These changes determine redox mole ratios. Permanganate can give other manganese products in other media, so the five electron factor is not universal. Always read the medium and stated reduction product. Preparation of potassium permanganate is conceptually connected with forming manganate and then converting it to permanganate. Potassium dichromate is connected with conversion of chromium ore to chromate followed by the chromate dichromate relationship. Acid base conditions shift that equilibrium: acid favours dichromate relative to chromate under the usual comparison, while alkaline conditions favour chromate. This equilibrium changes the predominant species without itself changing chromium's plus six oxidation state. Distinguish acid base interconversion from reduction to chromium three plus. The two processes use different bookkeeping even though the same element appears in each. Later examples will check both the electron and mole balances explicitly.",
+      "points": [
+        "MnO₄⁻ → Mn²⁺ · 5 per ion · Suitable acidic medium",
+        "Cr₂O₇²⁻ → 2 Cr³⁺ · 6 per ion · Reduction, not just pH shift",
+        "Chromate ⇌ dichromate · Cr remains +6 · Acid–base interconversion"
+      ],
+      "board": {
+        "heading": "Oxidants need a specified medium",
+        "columns": [
+          "Specified change",
+          "Electrons accepted",
+          "Qualification"
+        ],
+        "rows": [
+          [
+            "MnO₄⁻ → Mn²⁺",
+            "5 per ion",
+            "Suitable acidic medium"
+          ],
+          [
+            "Cr₂O₇²⁻ → 2 Cr³⁺",
+            "6 per ion",
+            "Reduction, not just pH shift"
+          ],
+          [
+            "Chromate ⇌ dichromate",
+            "Cr remains +6",
+            "Acid–base interconversion"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Lanthanoid contraction and actinoid comparisons",
+      "formula": "Growing nuclear charge is incompletely screened by added f electrons",
+      "script": "Lanthanoids involve progressive filling of four f orbitals, with plus three a common oxidation state and important exceptions. Across a comparable series of their trivalent ions, size generally decreases because the increasing nuclear charge is not fully screened by added f electrons. This lanthanoid contraction contributes to the chemical similarity of neighbouring members and can make their separation difficult. Similar charge and gradually changing radius support similar behaviour, but do not make every compound identical. Contraction also helps explain the unexpectedly close sizes of some heavier transition pairs, such as zirconium and hafnium. Actinoids involve five f electrons and often show a wider range of accessible oxidation states. Their configurations and bonding require element specific treatment rather than a universal plus three label. When comparing radii, use the same charge and a consistent radius definition; changing both the oxidation state and element at once can obscure the trend. The shielding explanation is a useful cause for a systematic comparison, not permission to ignore the actual species in a table.",
+      "points": [
+        "Lanthanoid(III) series · Imperfect 4f shielding · Gradual contraction",
+        "Zr and Hf · Similar sizes · Contraction helps explain",
+        "Actinoids · 5f; more varied states · Element-specific chemistry"
+      ],
+      "board": {
+        "heading": "Lanthanoid contraction and actinoid comparisons",
+        "columns": [
+          "Series or comparison",
+          "Key feature",
+          "Consequence"
+        ],
+        "rows": [
+          [
+            "Lanthanoid(III) series",
+            "Imperfect 4f shielding",
+            "Gradual contraction"
+          ],
+          [
+            "Zr and Hf",
+            "Similar sizes",
+            "Contraction helps explain"
+          ],
+          [
+            "Actinoids",
+            "5f; more varied states",
+            "Element-specific chemistry"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A method for ion and trend questions",
+      "formula": "Species → charge → configuration → environment → property",
+      "script": "For a metal ion question, begin with the actual species and its oxidation state. Use the neutral configuration as the starting inventory, then remove the appropriate outer electrons to obtain the ion. For common first row cations, removing four s electrons before three d avoids a frequent counting error. Next identify the ligand environment and any specified spin arrangement. The same d count can lead to different magnetic behaviour in different complexes. For redox questions, specify the medium and the final oxidation state before assigning an electron factor. Balance atoms and total charge independently rather than accepting an equation because the coefficients look familiar. For trends, distinguish the first transition series from lanthanoids and actinoids, and identify whether a value belongs to an atom, ion or solid. A tabulated radius or magnetic moment needs its stated definition and conditions. Finally compare the result with basic limits: electron counts must match charge, reaction charge must balance and a spin only unpaired count must fit the available orbitals.",
+      "points": [
+        "Configuration · Actual ion charge · Remove d before outer s",
+        "Magnetism · Spin / ligand environment · Use d count as n",
+        "Redox · Medium and product · Use one universal factor"
+      ],
+      "board": {
+        "heading": "A method for ion and trend questions",
+        "columns": [
+          "Question",
+          "First check",
+          "Common error"
+        ],
+        "rows": [
+          [
+            "Configuration",
+            "Actual ion charge",
+            "Remove d before outer s"
+          ],
+          [
+            "Magnetism",
+            "Spin / ligand environment",
+            "Use d count as n"
+          ],
+          [
+            "Redox",
+            "Medium and product",
+            "Use one universal factor"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Worked magnetic moments for common d counts",
+      "formula": "High-spin d⁶: n = 4; high-spin d⁵: n = 5; d⁹: n = 1",
+      "script": "Consider iron two plus in a specified high spin d six arrangement. Five d orbitals first receive one electron each, and the sixth makes one pair. Four electrons remain unpaired. The spin only estimate is the square root of four times six, or the square root of twenty four, about four point nine zero Bohr magnetons. High spin iron three plus has d five with five unpaired electrons, giving about five point nine two. In the elementary d nine arrangement for copper two plus, four orbitals are paired and one has an unpaired electron. The estimate is the square root of three, about one point seven three Bohr magnetons. These are model estimates, not exact measured values guaranteed for every solid or complex. If the problem changes ligand field strength, check whether the assumed high spin arrangement remains appropriate before reusing the result. The total d count, the number of unpaired electrons and the numerical moment are three different quantities that should be written separately.",
+      "points": [
+        "Fe²⁺; high-spin d⁶ · 4 · √24 ≈ 4.90 μB",
+        "Fe³⁺; high-spin d⁵ · 5 · √35 ≈ 5.92 μB",
+        "Cu²⁺; elementary d⁹ · 1 · √3 ≈ 1.73 μB"
+      ],
+      "board": {
+        "heading": "Worked magnetic moments for common d counts",
+        "columns": [
+          "Specified ion / arrangement",
+          "Unpaired n",
+          "μ spin-only"
+        ],
+        "rows": [
+          [
+            "Fe²⁺; high-spin d⁶",
+            "4",
+            "√24 ≈ 4.90 μB"
+          ],
+          [
+            "Fe³⁺; high-spin d⁵",
+            "5",
+            "√35 ≈ 5.92 μB"
+          ],
+          [
+            "Cu²⁺; elementary d⁹",
+            "1",
+            "√3 ≈ 1.73 μB"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Worked oxidant amounts and charge balances",
+      "formula": "Cr₂O₇²⁻ : Fe²⁺ = 1:6; MnO₄⁻ : Fe²⁺ = 1:5 in acid",
+      "script": "Dichromate contains two chromium atoms, each at plus six. Reducing both to plus three requires three electrons per chromium, giving six per dichromate ion. Iron two plus supplies one electron when it becomes iron three plus. Therefore zero point zero one zero zero mole of dichromate can oxidize zero point zero six zero zero mole of iron two plus under the stated acidic reaction. Permanganate becoming manganese two plus instead accepts five electrons per ion. Zero point zero two zero zero mole can therefore oxidize zero point one zero zero mole of iron two plus. Check charge as well as the mole ratio. In the acidic permanganate half equation, minus one plus eight minus five equals plus two, matching the product charge. For dichromate, minus two plus fourteen minus six equals plus six, matching two chromium three plus ions. Water and hydrogen ions must also balance oxygen and hydrogen atoms. These checks distinguish a correct acidic equation from a memorized electron factor used with the wrong product or medium.",
+      "points": [
+        "0.0100 mol Cr₂O₇²⁻ · × 6 · 0.0600 mol",
+        "0.0200 mol MnO₄⁻ · × 5 · 0.100 mol",
+        "Charge checks · −1 + 8 − 5; −2 + 14 − 6 · +2; +6"
+      ],
+      "board": {
+        "heading": "Worked oxidant amounts and charge balances",
+        "columns": [
+          "Acidic oxidant amount",
+          "Fe²⁺ factor",
+          "Fe²⁺ amount"
+        ],
+        "rows": [
+          [
+            "0.0100 mol Cr₂O₇²⁻",
+            "× 6",
+            "0.0600 mol"
+          ],
+          [
+            "0.0200 mol MnO₄⁻",
+            "× 5",
+            "0.100 mol"
+          ],
+          [
+            "Charge checks",
+            "−1 + 8 − 5; −2 + 14 − 6",
+            "+2; +6"
+          ]
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Fe3+ from neutral 3d6 4s2 has configuration:",
+      "options": [
+        "d8",
+        "d6",
+        "d5",
+        "d3"
+      ],
+      "answer": 2,
+      "explanation": "Two outer s electrons and then one d electron are removed, leaving five d electrons."
+    },
+    {
+      "question": "Zn2+ has d occupancy:",
+      "options": [
+        "d10",
+        "d5",
+        "d0",
+        "d8"
+      ],
+      "answer": 0,
+      "explanation": "Removing zinc's two outer s electrons leaves its complete 3d10 subshell."
+    },
+    {
+      "question": "MnO4- becoming Mn2+ accepts how many electrons per ion?",
+      "options": [
+        "2",
+        "7",
+        "3",
+        "5"
+      ],
+      "answer": 3,
+      "explanation": "Manganese changes from +7 to +2, a five-electron reduction in the stated medium."
+    },
+    {
+      "question": "Cr2O7^2- becoming two Cr3+ accepts how many electrons?",
+      "options": [
+        "3",
+        "6",
+        "2",
+        "12"
+      ],
+      "answer": 1,
+      "explanation": "Each of the two chromium atoms falls from +6 to +3, accepting three electrons each."
+    },
+    {
+      "question": "A coloured d0 oxidant demonstrates that:",
+      "options": [
+        "Every colour must be d-d absorption",
+        "d counts never matter",
+        "Charge-transfer absorption can contribute",
+        "No electronic transition occurs"
+      ],
+      "answer": 2,
+      "explanation": "Colour can arise from charge-transfer transitions rather than transitions within a partly filled d set."
+    },
+    {
+      "question": "Lanthanoid contraction chiefly reflects:",
+      "options": [
+        "Imperfect f-electron shielding as nuclear charge rises",
+        "Decreasing atomic number",
+        "No electrons being added",
+        "Identical radii for every ion"
+      ],
+      "answer": 0,
+      "explanation": "The added f electrons do not fully screen the growing nuclear attraction, so size decreases gradually."
+    },
+    {
+      "question": "A specified high-spin d6 ion has how many unpaired electrons in the elementary arrangement?",
+      "options": [
+        "6",
+        "2",
+        "0",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "Five orbitals fill singly, then the sixth electron pairs, leaving four unpaired."
+    },
+    {
+      "question": "Its spin-only moment, for four unpaired electrons, is approximately:",
+      "options": [
+        "5.92 μB",
+        "4.90 μB",
+        "1.73 μB",
+        "0 μB"
+      ],
+      "answer": 1,
+      "explanation": "√[4(4+2)] = √24 ≈ 4.90 Bohr magnetons."
+    },
+    {
+      "question": "The d count of Cu2+ is:",
+      "options": [
+        "d9",
+        "d10",
+        "d5",
+        "d0"
+      ],
+      "answer": 0,
+      "explanation": "Neutral copper is 3d10 4s1 beyond the core; removal gives Cu2+ with 3d9."
+    },
+    {
+      "question": "0.0100 mol dichromate becoming Cr3+ in acid oxidizes how much Fe2+ to Fe3+?",
+      "options": [
+        "0.0100 mol",
+        "0.0300 mol",
+        "0.0600 mol",
+        "0.00500 mol"
+      ],
+      "answer": 2,
+      "explanation": "Six electrons per dichromate require six iron(II) ions, giving 6 × 0.0100 mol."
+    },
+    {
+      "question": "0.0200 mol permanganate becoming Mn2+ in acid oxidizes how much Fe2+?",
+      "options": [
+        "0.00400 mol",
+        "0.0200 mol",
+        "0.0400 mol",
+        "0.100 mol"
+      ],
+      "answer": 3,
+      "explanation": "Five electrons per permanganate give 5 × 0.0200 = 0.100 mol Fe2+."
+    },
+    {
+      "question": "The similar sizes of zirconium and hafnium are partly explained by:",
+      "options": [
+        "Their identical atomic numbers",
+        "Lanthanoid contraction",
+        "Their both being noble gases",
+        "The absence of inner electrons"
+      ],
+      "answer": 1,
+      "explanation": "Contraction associated with imperfect f-electron shielding helps account for the close sizes."
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.460
+Hey, welcome back.
+
+00:00:02.080 --> 00:00:05.180
+Our last class showed how a magnetic field turns a current loop.
+
+00:00:06.040 --> 00:00:09.500
+Today, we use that turning effect to measure a small steady current.
+
+00:00:09.760 --> 00:00:14.840
+A moving coil galvanometer contains a light coil with many turns, a pointer,
+
+00:00:15.360 --> 00:00:18.460
+a magnetic system and a restoring suspension or spring.
+
+00:00:19.140 --> 00:00:20.540
+Current produces a magnetic torque.
+
+00:00:21.240 --> 00:00:25.099
+The spring resists rotation, and the pointer stops where those torques
+
+00:00:25.099 --> 00:00:25.540
+balance.
+
+00:00:26.100 --> 00:00:28.500
+The magnetic system is designed carefully.
+
+00:00:29.400 --> 00:00:33.500
+Curved pole pieces and a soft iron core produce an approximately radial field
+
+00:00:33.500 --> 00:00:34.460
+in the working region.
+
+00:00:35.120 --> 00:00:39.680
+As the coil turns, the local field stays in its plane, perpendicular to the
+
+00:00:39.680 --> 00:00:40.160
+coil's normal.
+
+00:00:40.840 --> 00:00:45.200
+The sine factor in the magnetic torque is therefore one throughout the useful
+
+00:00:45.200 --> 00:00:46.020
+deflection range.
+
+00:00:46.780 --> 00:00:50.712
+This field is not uniform in direction across the instrument; we use the
+
+00:00:50.712 --> 00:00:51.040
+radial
+
+00:00:51.040 --> 00:00:55.460
+field model with approximately constant magnitude at the active coil sides.
+
+00:00:56.460 --> 00:00:59.060
+Magnetic torque is N I A B.
+
+00:00:59.820 --> 00:01:04.100
+If c is restoring torque per radian, spring torque magnitude is c times theta.
+
+00:01:04.840 --> 00:01:08.960
+At equilibrium, c theta equals N I A B.
+
+00:01:09.660 --> 00:01:14.320
+So theta equals N A B over c, multiplied by current.
+
+00:01:15.200 --> 00:01:21.160
+Double the current within the operating range and the
+
+00:01:21.160 --> 00:01:21.700
+deflection doubles. Notice the two different angles.
+
+00:01:21.700 --> 00:01:24.660
+The pointer's deflection changes, while the normal to local field angle stays
+
+00:01:24.660 --> 00:01:25.520
+ninety degrees.
+
+00:01:26.340 --> 00:01:30.180
+Confusing them would incorrectly insert sine of pointer deflection into the
+
+00:01:30.180 --> 00:01:30.920
+instrument equation.
+
+00:01:31.860 --> 00:01:35.640
+Damping helps the pointer settle; our equation describes its final steady
+
+00:01:35.640 --> 00:01:36.456
+reading, not every instant during motion.
+
+00:01:36.456 --> 00:01:38.196
+How responsive is the pointer?
+
+00:01:39.156 --> 00:01:43.476
+We define current sensitivity here as deflection divided by current.
+
+00:01:44.456 --> 00:01:49.796
+It is N A B over c, measured in radians per ampere if we use angular units.
+
+00:01:51.056 --> 00:01:55.636
+Larger turn count, larger area or stronger field increases it when the other
+
+00:01:55.636 --> 00:01:56.436
+quantities are fixed.
+
+00:01:57.156 --> 00:01:59.836
+A softer restoring spring also increases it.
+
+00:02:00.596 --> 00:02:05.076
+Take one hundred turns, area two square centimeters, field zero point two
+
+00:02:05.076 --> 00:02:10.172
+tesla, and restoring constant four times ten to the minus six newton meters
+
+00:02:10.172 --> 00:02:10.376
+per
+
+00:02:10.376 --> 00:02:10.596
+radian.
+
+00:02:11.716 --> 00:02:15.476
+Two square centimeters is two times ten to the minus four square meters.
+
+00:02:15.476 --> 00:02:20.756
+N A B is zero point zero zero four, giving current sensitivity one thousand
+
+00:02:20.756 --> 00:02:21.696
+radians per ampere.
+
+00:02:22.396 --> 00:02:26.701
+A half milliampere produces zero point five radians of deflection in this
+
+00:02:26.701 --> 00:02:26.996
+ideal
+
+00:02:26.996 --> 00:02:27.596
+linear model.
+
+00:02:28.136 --> 00:02:31.216
+Now let the bare coil resistance G be one hundred ohms.
+
+00:02:31.616 --> 00:02:33.516
+Its voltage is current times G.
+
+00:02:34.636 --> 00:02:38.636
+Voltage sensitivity is therefore current sensitivity divided by G, or ten
+
+00:02:38.636 --> 00:02:39.376
+radians per volt.
+
+00:02:39.916 --> 00:02:43.676
+That half milliampere needs zero point zero five volts across the coil.
+
+00:02:44.956 --> 00:02:46.636
+Here is a useful exam trap.
+
+00:02:47.356 --> 00:02:50.556
+Double the number of turns while holding area, field and restoring constant
+
+00:02:50.556 --> 00:02:50.976
+fixed.
+
+00:02:52.116 --> 00:02:53.196
+Current sensitivity doubles.
+
+00:02:53.896 --> 00:02:58.076
+If the longer winding also doubles resistance, voltage sensitivity stays
+
+00:02:58.076 --> 00:03:01.236
+unchanged, because numerator and resistance both double.
+
+00:03:02.096 --> 00:03:05.096
+Greater current sensitivity alone does not guarantee greater voltage
+
+00:03:05.096 --> 00:03:05.576
+sensitivity.
+
+00:03:06.496 --> 00:03:10.111
+Keep coil resistance separate from the restoring constant, and keep radians
+
+00:03:10.111 --> 00:03:10.256
+per
+
+00:03:10.256 --> 00:03:12.156
+ampere separate from radians per volt.
+
+00:03:12.504 --> 00:03:16.044
+A delicate galvanometer cannot carry a large current directly.
+
+00:03:16.944 --> 00:03:21.364
+To make an ammeter, put a small shunt resistance S in parallel with its coil.
+
+00:03:22.144 --> 00:03:25.844
+Most of the current uses the shunt, while a controlled small fraction passes
+
+00:03:25.844 --> 00:03:26.704
+through the galvanometer.
+
+00:03:27.924 --> 00:03:31.564
+Let full scale coil current be I g and coil resistance be G.
+
+00:03:32.064 --> 00:03:36.799
+If the desired full scale total current is I, the shunt current is I minus I
+
+00:03:36.799 --> 00:03:36.924
+g.
+
+00:03:36.924 --> 00:03:38.784
+Parallel branches share the same voltage.
+
+00:03:39.324 --> 00:03:43.284
+So I g times G equals I minus I g, multiplied by S.
+
+00:03:43.824 --> 00:03:48.624
+Solve for S: I g G divided by I minus I g.
+
+00:03:48.624 --> 00:03:52.044
+Let's use a different instrument with full scale current one milliampere and
+
+00:03:52.044 --> 00:03:53.484
+coil resistance one hundred ohms.
+
+00:03:54.104 --> 00:03:55.484
+We want a one ampere range.
+
+00:03:56.084 --> 00:04:00.284
+At full scale the coil voltage is zero point one volt, and the shunt carries
+
+00:04:00.284 --> 00:04:02.104
+zero point nine nine nine amperes.
+
+00:04:02.424 --> 00:04:06.444
+The required shunt is approximately zero point one zero zero one ohms.
+
+00:04:07.724 --> 00:04:11.624
+The complete ammeter's resistance is voltage divided by total current, giving
+
+00:04:11.624 --> 00:04:12.804
+zero point one ohms.
+
+00:04:13.924 --> 00:04:17.984
+Do not round I minus I g to I until you know the approximation is acceptable.
+
+00:04:18.704 --> 00:04:20.304
+A second check is the circuit connection.
+
+00:04:21.004 --> 00:04:24.624
+The shunt is parallel to the coil inside the instrument, but the complete
+
+00:04:24.624 --> 00:04:27.584
+ammeter is connected in series with the branch whose current we measure.
+
+00:04:28.344 --> 00:04:30.644
+Those two statements refer to different parts of the circuit.
+
+00:04:30.644 --> 00:04:35.644
+We assume steady direct current, constant resistances and negligible lead
+
+00:04:35.644 --> 00:04:36.964
+resistance for these calculations.
+
+00:04:37.464 --> 00:04:39.784
+Now suppose we want to measure voltage.
+
+00:04:40.744 --> 00:04:44.504
+Connect a large resistance R in series with the coil to limit the current.
+
+00:04:45.124 --> 00:04:48.944
+The complete voltmeter is then connected across the two points whose potential
+
+00:04:48.944 --> 00:04:49.764
+difference we want.
+
+00:04:50.524 --> 00:04:54.834
+Same instrument: full scale coil current one milliampere, resistance one
+
+00:04:54.834 --> 00:04:55.364
+hundred ohms.
+
+00:04:55.984 --> 00:05:00.324
+For a ten volt range, total resistance must be voltage divided by full scale
+
+00:05:00.324 --> 00:05:02.144
+current, or ten thousand ohms.
+
+00:05:02.824 --> 00:05:07.244
+The coil already contributes one hundred ohms, so the added series resistance
+
+00:05:07.244 --> 00:05:09.284
+is nine thousand nine hundred ohms.
+
+00:05:10.104 --> 00:05:14.203
+At full scale, the coil drops zero point one volt and the series resistor
+
+00:05:14.203 --> 00:05:14.484
+drops
+
+00:05:14.484 --> 00:05:15.604
+nine point nine volts.
+
+00:05:16.304 --> 00:05:17.804
+Together they make ten volts.
+
+00:05:18.804 --> 00:05:21.584
+Writing ten thousand ohms as the added resistance would count the coil
+
+00:05:21.584 --> 00:05:22.464
+resistance twice.
+
+00:05:23.084 --> 00:05:26.744
+In symbols, V equals I g times G plus R.
+
+00:05:27.604 --> 00:05:30.704
+Rearranging gives R equal to V over I g, minus G.
+
+00:05:31.064 --> 00:05:35.104
+This design requires a target range at least as large as the bare coil's full
+
+00:05:35.104 --> 00:05:38.924
+scale voltage if we use only a nonnegative added series resistance.
+
+00:05:39.644 --> 00:05:43.234
+For a twenty volt range with the same coil, total resistance becomes twenty
+
+00:05:43.234 --> 00:05:46.884
+thousand ohms and the added resistance becomes nineteen thousand nine hundred
+
+00:05:46.884 --> 00:05:47.264
+ohms.
+
+00:05:48.104 --> 00:05:52.624
+Remember the two levels of connection: multiplier and coil are internally in
+
+00:05:52.624 --> 00:05:56.664
+series, but the complete voltmeter is externally in parallel with the measured
+
+00:05:56.664 --> 00:05:57.104
+component.
+
+00:05:57.744 --> 00:06:01.984
+A voltmeter should draw little current, so high input resistance is desirable.
+
+00:06:01.984 --> 00:06:06.044
+It is still a real branch of the circuit, not an invisible observer.
+
+00:06:06.312 --> 00:06:09.292
+Let's see why meter resistance matters.
+
+00:06:10.032 --> 00:06:12.352
+An ideal ten volt source feeds a ten ohm resistor.
+
+00:06:13.172 --> 00:06:15.652
+Without a meter, current is one ampere.
+
+00:06:16.192 --> 00:06:18.592
+Insert our zero point one ohm ammeter in series.
+
+00:06:19.372 --> 00:06:23.697
+Total resistance becomes ten point one ohms, so current is about zero point
+
+00:06:23.697 --> 00:06:25.112
+nine nine zero amperes.
+
+00:06:25.812 --> 00:06:29.092
+The instrument correctly reads the current in the altered circuit, which is
+
+00:06:29.092 --> 00:06:30.812
+slightly smaller than the original current.
+
+00:06:31.372 --> 00:06:32.542
+Now a voltage example.
+
+00:06:32.842 --> 00:06:37.042
+An ideal ten volt source feeds two ten thousand ohm resistors in series.
+
+00:06:37.722 --> 00:06:41.062
+The voltage across the second resistor is five volts before measurement.
+
+00:06:42.082 --> 00:06:44.642
+Connect our ten thousand ohm voltmeter across that second resistor.
+
+00:06:45.442 --> 00:06:49.022
+Two equal ten thousand ohm branches in parallel give five thousand ohms.
+
+00:06:49.802 --> 00:06:53.842
+The loaded divider now has ten thousand ohms above and five thousand ohms
+
+00:06:53.842 --> 00:06:54.162
+below.
+
+00:06:54.642 --> 00:06:59.280
+Its measured voltage is ten times five thousand divided by fifteen thousand,
+
+00:06:59.280 --> 00:06:59.402
+or
+
+00:06:59.402 --> 00:07:01.022
+about three point three three volts.
+
+00:07:01.962 --> 00:07:05.602
+The drop from five volts is a loading effect, not a mistake in Ohm's law.
+
+00:07:06.402 --> 00:07:09.382
+A much higher voltmeter resistance would disturb this circuit less.
+
+00:07:10.162 --> 00:07:13.942
+This is why an ideal ammeter has zero resistance and an ideal voltmeter has
+
+00:07:13.942 --> 00:07:14.742
+infinite resistance.
+
+00:07:15.582 --> 00:07:19.096
+Also, do not connect a low resistance ammeter directly across a voltage
+
+00:07:19.096 --> 00:07:19.442
+source;
+
+00:07:19.842 --> 00:07:21.202
+it can draw excessive current.
+
+00:07:21.942 --> 00:07:26.846
+For JEE problems, redraw the actual connections, preserve the coil's full
+
+00:07:26.846 --> 00:07:27.182
+scale
+
+00:07:27.182 --> 00:07:30.862
+current, and use branch voltages and currents to derive the formulas.
+
+00:07:31.682 --> 00:07:35.342
+Our next class will turn from measuring instruments to magnetic dipole fields
+
+00:07:35.342 --> 00:07:36.802
+and bar magnet geometry.

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">A mass-weighted centre, not the midpoint</title>
+  <desc id="desc">Masses 2 kg at zero meters and 3 kg at four meters have their centre of mass at 2.4 meters, nearer the heavier mass.</desc>
+  <rect width="1200" height="640" fill="#ffffff"/>
+  <g font-family="Arial, sans-serif" fill="#203a34" font-size="48">
+    <text x="50" y="72">Centre of mass: nearer the heavier mass</text>
+    <path d="M120 280 H1080" stroke="#52636b" stroke-width="5"/>
+    <circle cx="120" cy="280" r="35" fill="#2878ac"/>
+    <circle cx="1080" cy="280" r="45" fill="#247e68"/>
+    <path d="M696 210 V350" stroke="#ce5064" stroke-width="7"/>
+    <text x="65" y="186">2 kg</text><text x="1020" y="186">3 kg</text>
+    <text x="80" y="384">0 m</text><text x="1030" y="384">4 m</text>
+    <text x="536" y="430" fill="#ce5064">x_CM = 2.4 m</text>
+    <path d="M50 477 H1150" stroke="#d8dee5"/>
+    <text x="50" y="550">x_CM = (2 x 0 + 3 x 4) / (2 + 3)</text>
+    <text x="50" y="612">Mass-weighted position = 12 / 5 = 2.4 m</text>
+  </g>
+</svg>

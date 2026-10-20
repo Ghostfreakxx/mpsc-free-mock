@@ -1,0 +1,385 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.840
+Hey, welcome back.
+
+00:00:02.600 --> 00:00:05.780
+Let's make circuit diagrams feel a little less mysterious.
+
+00:00:06.800 --> 00:00:11.120
+A resistor network can look tangled while its actual connections are simple.
+
+00:00:12.040 --> 00:00:16.840
+Our first tool is the node: all points connected by uninterrupted ideal wire
+
+00:00:16.840 --> 00:00:18.020
+share one potential.
+
+00:00:19.360 --> 00:00:23.194
+Bending or stretching that wire on the page changes the drawing, not the
+
+00:00:23.194 --> 00:00:23.620
+circuit.
+
+00:00:24.500 --> 00:00:26.780
+Mark each node with a letter before simplifying anything.
+
+00:00:27.620 --> 00:00:31.320
+Two resistors are in parallel if their ends connect to the same two nodes.
+
+00:00:32.100 --> 00:00:36.100
+They must then have the same potential difference, even if they sit far apart
+
+00:00:36.100 --> 00:00:36.680
+in the drawing.
+
+00:00:37.600 --> 00:00:42.060
+Two resistors form a simple series path if their shared junction has no other
+
+00:00:42.060 --> 00:00:42.820
+conducting branch.
+
+00:00:43.660 --> 00:00:47.660
+The same steady current must pass through both, because charge is not
+
+00:00:47.660 --> 00:00:48.540
+accumulating there.
+
+00:00:49.300 --> 00:00:50.760
+Being next to each other is not enough.
+
+00:00:51.840 --> 00:00:53.640
+Imagine three resistors meeting at a junction.
+
+00:00:54.420 --> 00:00:58.340
+Current can split, so you cannot automatically add two of those resistances as
+
+00:00:58.340 --> 00:00:59.100
+a series pair.
+
+00:00:59.840 --> 00:01:04.260
+Our model assumes steady direct current, ideal connecting wires and ohmic
+
+00:01:04.260 --> 00:01:06.160
+resistors whose values stay constant.
+
+00:01:06.960 --> 00:01:09.020
+Those assumptions let us focus on the connections.
+
+00:01:10.000 --> 00:01:13.900
+For JEE, redraw a difficult looking diagram using node labels.
+
+00:01:14.660 --> 00:01:18.500
+Once the connections are visible, decide which elements really share a current
+
+00:01:18.500 --> 00:01:20.240
+and which really share a voltage.
+
+00:01:20.240 --> 00:01:20.568
+Your pencil has now done half the job.
+
+00:01:20.568 --> 00:01:23.668
+Let's derive the series rule from what remains the same.
+
+00:01:24.288 --> 00:01:27.548
+In one unbranched path, every resistor carries current I.
+
+00:01:28.028 --> 00:01:33.268
+The first voltage drop is I times R one, and the second is I times R two.
+
+00:01:33.268 --> 00:01:36.297
+Adding the drops gives the total voltage as I times the sum of the
+
+00:01:36.297 --> 00:01:36.848
+resistances.
+
+00:01:37.408 --> 00:01:40.888
+So the equivalent resistance is R one plus R two.
+
+00:01:40.888 --> 00:01:45.568
+This is why series resistance increases: at a given total voltage, the single
+
+00:01:45.568 --> 00:01:46.808
+path carries less current.
+
+00:01:47.508 --> 00:01:51.708
+Put three ohms and six ohms in series across an ideal eighteen volt source.
+
+00:01:52.488 --> 00:01:56.268
+The equivalent resistance is nine ohms, so the current is two amperes.
+
+00:01:56.948 --> 00:01:58.748
+The drops are six volts and twelve volts.
+
+00:01:59.548 --> 00:02:02.008
+Pause and check: they add back to eighteen.
+
+00:02:02.008 --> 00:02:05.848
+The larger resistance receives the larger drop because the current is common.
+
+00:02:06.528 --> 00:02:10.488
+For two series resistors, voltage across the second equals the total voltage
+
+00:02:10.488 --> 00:02:13.228
+multiplied by R two divided by their sum.
+
+00:02:13.788 --> 00:02:15.428
+This is the voltage divider formula.
+
+00:02:15.758 --> 00:02:19.288
+It assumes no extra conducting branch draws current from the middle junction.
+
+00:02:20.248 --> 00:02:24.088
+Attach a load there, and the circuit changes; the original divider formula is
+
+00:02:24.088 --> 00:02:24.848
+no longer enough.
+
+00:02:25.708 --> 00:02:28.088
+Notice also that charge is not used up by the first resistor.
+
+00:02:28.968 --> 00:02:32.188
+Current remains the same, while electrical energy per unit charge is
+
+00:02:32.188 --> 00:02:33.188
+transferred along the path.
+
+00:02:33.928 --> 00:02:35.832
+Always write the common current first, then calculate each drop.
+
+00:02:35.832 --> 00:02:38.692
+Now give charge two paths between the same nodes.
+
+00:02:39.432 --> 00:02:41.512
+Each branch experiences the same voltage V.
+
+00:02:42.052 --> 00:02:44.232
+Its current is V divided by its resistance.
+
+00:02:44.932 --> 00:02:49.532
+The total current is the sum of those branch currents, so I total equals V
+
+00:02:49.532 --> 00:02:52.772
+times one over R one plus one over R two.
+
+00:02:52.772 --> 00:02:56.412
+Divide by V and we obtain the reciprocal rule for equivalent resistance.
+
+00:02:57.052 --> 00:03:01.192
+For two branches, this becomes the product of the resistances divided by their
+
+00:03:01.192 --> 00:03:01.412
+sum.
+
+00:03:02.072 --> 00:03:04.852
+Take four ohms and twelve ohms in parallel across twelve volts.
+
+00:03:05.272 --> 00:03:09.292
+The currents are three amperes and one ampere, giving four amperes total.
+
+00:03:10.172 --> 00:03:13.632
+Equivalent resistance is therefore twelve divided by four, or three ohms.
+
+00:03:14.372 --> 00:03:18.372
+Check the scale: three is smaller than four, the smaller branch resistance.
+
+00:03:19.012 --> 00:03:22.372
+An extra conducting path increases total current at fixed voltage.
+
+00:03:23.272 --> 00:03:25.612
+Current division follows the inverse resistance ratio.
+
+00:03:26.352 --> 00:03:29.932
+Here, the four ohm branch carries three times the current in the twelve ohm
+
+00:03:29.932 --> 00:03:30.232
+branch.
+
+00:03:30.932 --> 00:03:34.372
+Do not divide the current equally unless the branch resistances are equal.
+
+00:03:35.152 --> 00:03:38.632
+If total current is given instead of voltage, current in the first branch
+
+00:03:38.632 --> 00:03:43.252
+equals total current times R two divided by R one plus R two.
+
+00:03:43.252 --> 00:03:45.112
+The other resistance appears in the numerator.
+
+00:03:46.012 --> 00:03:48.912
+Derive that result from common voltage whenever memory feels uncertain.
+
+00:03:49.752 --> 00:03:53.452
+Remember the contrast from our series example: series shares current and
+
+00:03:53.452 --> 00:03:54.336
+divides voltage; parallel shares voltage and divides current.
+
+00:03:54.336 --> 00:03:56.576
+Let's solve a full mixed circuit together.
+
+00:03:57.216 --> 00:04:01.576
+An ideal twelve volt source supplies a four ohm resistor in series with a
+
+00:04:01.576 --> 00:04:03.496
+parallel pair of six ohms and three ohms.
+
+00:04:04.416 --> 00:04:05.376
+Start with the parallel group.
+
+00:04:06.156 --> 00:04:09.756
+Six times three divided by six plus three gives two ohms.
+
+00:04:10.516 --> 00:04:14.116
+Add the four ohm series resistor and the total becomes six ohms.
+
+00:04:14.876 --> 00:04:18.356
+Total current is twelve divided by six, or two amperes.
+
+00:04:18.996 --> 00:04:19.876
+Now work backward.
+
+00:04:20.316 --> 00:04:23.056
+The four ohm resistor has a drop of eight volts.
+
+00:04:23.356 --> 00:04:27.556
+The parallel group has the remaining four volts, which is also two amperes
+
+00:04:27.556 --> 00:04:28.496
+times two ohms.
+
+00:04:29.216 --> 00:04:31.396
+Every branch of that group receives four volts.
+
+00:04:32.156 --> 00:04:35.796
+Current in the six ohm branch is two thirds of an ampere; current in the three
+
+00:04:35.796 --> 00:04:37.176
+ohm branch is four thirds.
+
+00:04:37.756 --> 00:04:39.796
+Add them and you recover two amperes.
+
+00:04:40.456 --> 00:04:41.796
+Now check energy transfer.
+
+00:04:42.456 --> 00:04:45.336
+Power supplied is twelve times two, or twenty four watts.
+
+00:04:45.936 --> 00:04:48.396
+The series resistor dissipates sixteen watts.
+
+00:04:48.876 --> 00:04:52.699
+The parallel branches dissipate eight thirds and sixteen thirds watts,
+
+00:04:52.699 --> 00:04:53.136
+totaling
+
+00:04:53.136 --> 00:04:53.716
+eight watts.
+
+00:04:53.716 --> 00:04:57.176
+Sixteen plus eight returns twenty four.
+
+00:04:57.176 --> 00:05:01.481
+Three independent checks now agree: voltage drops, branch current sum and
+
+00:05:01.481 --> 00:05:01.776
+power
+
+00:05:01.776 --> 00:05:02.136
+balance.
+
+00:05:02.756 --> 00:05:07.016
+For JEE, don't stop at equivalent resistance when the question asks about an
+
+00:05:07.016 --> 00:05:07.776
+individual resistor.
+
+00:05:08.856 --> 00:05:13.036
+Simplifying moves inward toward the total; recovering branch quantities moves
+
+00:05:13.036 --> 00:05:14.596
+outward toward the original circuit.
+
+00:05:14.784 --> 00:05:17.964
+Our final skill is handling a changed connection.
+
+00:05:18.664 --> 00:05:21.324
+An open switch interrupts a conducting path.
+
+00:05:22.004 --> 00:05:26.883
+In the steady ideal model, current in that open branch is zero, but the
+
+00:05:26.883 --> 00:05:27.364
+voltage
+
+00:05:27.364 --> 00:05:29.424
+across the gap need not be zero.
+
+00:05:30.364 --> 00:05:33.924
+Suppose the twelve ohm branch in our four and twelve ohm parallel example
+
+00:05:33.924 --> 00:05:34.424
+opens.
+
+00:05:35.044 --> 00:05:37.764
+Only the four ohm branch remains across twelve volts.
+
+00:05:38.664 --> 00:05:42.744
+Total current falls from four amperes to three, while that surviving branch
+
+00:05:42.744 --> 00:05:44.424
+still carries three amperes.
+
+00:05:45.444 --> 00:05:48.944
+This conclusion relies on an ideal source maintaining twelve volts.
+
+00:05:49.744 --> 00:05:53.064
+A real cell with internal resistance needs additional analysis.
+
+00:05:53.964 --> 00:05:56.724
+Now consider a wire placed directly across a resistor.
+
+00:05:57.624 --> 00:05:59.484
+Its endpoints become the same node.
+
+00:06:00.404 --> 00:06:04.364
+Voltage across that resistor is zero, so its current is zero for a finite
+
+00:06:04.364 --> 00:06:04.884
+resistance.
+
+00:06:05.584 --> 00:06:09.444
+This is a bypass, often called a short across the resistor.
+
+00:06:10.164 --> 00:06:14.584
+Shorting an entire ideal voltage source instead creates an inconsistent zero
+
+00:06:14.584 --> 00:06:18.784
+resistance ideal circuit; it is not a sensible finite current example.
+
+00:06:19.624 --> 00:06:22.444
+Real shorts are limited by internal and wire resistance.
+
+00:06:23.364 --> 00:06:28.364
+Finish with quick scale checks: n equal resistors give n times R in series
+
+00:06:29.064 --> 00:06:31.124
+and R divided by n in parallel.
+
+00:06:32.084 --> 00:06:35.504
+Positive finite parallel resistance must be below the smallest branch.
+
+00:06:35.984 --> 00:06:40.464
+A diagram that cannot be reduced by valid series or parallel groups needs a
+
+00:06:40.464 --> 00:06:43.044
+more general method, such as Kirchhoff laws.
+
+00:06:43.964 --> 00:06:48.144
+Label nodes, redraw after switching, name the fixed quantity, and check your
+
+00:06:48.144 --> 00:06:49.584
+result against the physical circuit.

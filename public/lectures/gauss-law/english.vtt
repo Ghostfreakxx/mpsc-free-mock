@@ -1,0 +1,367 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.400
+Hey, welcome back.
+
+00:00:02.180 --> 00:00:04.060
+Imagine holding a flat frame in a breeze.
+
+00:00:04.900 --> 00:00:07.780
+Face it into the breeze and plenty of air crosses its opening.
+
+00:00:08.700 --> 00:00:11.060
+Turn it edge on and much less crosses.
+
+00:00:12.200 --> 00:00:17.180
+Electric flux uses a similar geometric idea, although electric field is not a
+
+00:00:17.180 --> 00:00:17.700
+flowing substance.
+
+00:00:18.560 --> 00:00:23.740
+For a flat surface in a uniform field, flux equals field magnitude times area
+
+00:00:23.740 --> 00:00:27.040
+times the cosine of the angle between the field and the area vector.
+
+00:00:27.680 --> 00:00:30.620
+The area vector points perpendicular to the surface.
+
+00:00:31.360 --> 00:00:34.540
+That angle is not automatically the angle to the plane of the surface.
+
+00:00:35.080 --> 00:00:39.240
+If a question gives the angle to the plane, convert it to the angle to the normal.
+
+00:00:39.740 --> 00:00:44.093
+Let's take a field of two hundred newtons per coulomb and area zero point zero
+
+00:00:44.093 --> 00:00:45.000
+three square meters.
+
+00:00:45.920 --> 00:00:50.260
+If the field makes sixty degrees with the chosen normal, flux is three newton
+
+00:00:50.260 --> 00:00:51.480
+square meters per coulomb.
+
+00:00:52.240 --> 00:00:56.440
+At ninety degrees to the normal, the field lies along the plane and flux is
+
+00:00:56.440 --> 00:00:56.700
+zero.
+
+00:00:57.780 --> 00:00:59.600
+Reversing the normal reverses the sign.
+
+00:01:00.340 --> 00:01:05.180
+For a curved surface or varying field, split the area into tiny patches and add
+
+00:01:05.180 --> 00:01:08.720
+the field dot area contributions, which becomes a surface integral.
+
+00:01:09.180 --> 00:01:11.740
+An open surface has a chosen normal convention.
+
+00:01:12.420 --> 00:01:14.400
+A closed surface uses outward normals.
+
+00:01:15.340 --> 00:01:19.430
+Flux is a scalar, but its sign carries the direction of the field through that
+
+00:01:19.430 --> 00:01:20.448
+oriented surface.
+
+00:01:20.448 --> 00:01:24.768
+Now close the surface completely, like an imaginary box around a region.
+
+00:01:25.648 --> 00:01:29.688
+Gauss's law says its total outward electric flux equals the net enclosed charge
+
+00:01:29.688 --> 00:01:31.708
+divided by vacuum permittivity.
+
+00:01:32.808 --> 00:01:34.408
+Add enclosed charges algebraically.
+
+00:01:35.148 --> 00:01:39.068
+An outside charge does not contribute to the net enclosed charge, even though
+
+00:01:39.068 --> 00:01:41.088
+its field can be strong on the surface.
+
+00:01:41.508 --> 00:01:45.928
+In the flux integral, the electric field is the total field from all sources.
+
+00:01:45.928 --> 00:01:50.528
+For an external source, field entering and leaving makes zero net closed
+
+00:01:50.528 --> 00:01:51.148
+surface flux.
+
+00:01:52.208 --> 00:01:56.968
+This is the trap to remember: zero enclosed charge means zero net flux, not
+
+00:01:56.968 --> 00:01:58.208
+necessarily zero field.
+
+00:01:59.188 --> 00:02:00.888
+Put an empty box in a uniform field.
+
+00:02:02.128 --> 00:02:06.088
+Field passes through it; flux entering one side cancels flux leaving the other.
+
+00:02:06.888 --> 00:02:10.368
+Let's enclose plus two nanocoulombs and minus half a nanocoulomb.
+
+00:02:10.968 --> 00:02:13.328
+Net charge is one point five nanocoulombs.
+
+00:02:14.088 --> 00:02:17.668
+Divide by eight point eight five times ten to the minus twelve, giving about
+
+00:02:17.668 --> 00:02:21.428
+one hundred and sixty nine point five newton square meters per coulomb.
+
+00:02:22.248 --> 00:02:26.388
+Move an outside charge around and this total stays the same, provided no charge
+
+00:02:26.388 --> 00:02:27.248
+crosses the boundary.
+
+00:02:27.948 --> 00:02:29.848
+But individual surface fields change.
+
+00:02:31.168 --> 00:02:32.848
+Gauss's law applies to any closed surface.
+
+00:02:33.668 --> 00:02:37.108
+To turn it into a simple formula for field strength, however, we need enough
+
+00:02:37.108 --> 00:02:40.948
+symmetry to know the field direction and how its magnitude varies over our
+
+00:02:40.948 --> 00:02:41.628
+chosen surface.
+
+00:02:42.468 --> 00:02:44.508
+The law and the shortcut are not the same thing.
+
+00:02:44.760 --> 00:02:50.300
+Consider an isolated thin spherical shell with charge distributed uniformly
+
+00:02:50.300 --> 00:02:51.260
+over its surface.
+
+00:02:52.220 --> 00:02:56.720
+Symmetry tells us that field must be radial, with the same magnitude everywhere
+
+00:02:56.720 --> 00:02:58.600
+at a fixed distance from the center.
+
+00:02:59.640 --> 00:03:02.540
+Choose a concentric imaginary sphere of radius r.
+
+00:03:03.400 --> 00:03:08.220
+The field is along its normal, so the flux becomes field times four pi r
+
+00:03:08.220 --> 00:03:08.540
+squared.
+
+00:03:09.460 --> 00:03:12.840
+Outside the shell, the enclosed charge is the entire shell charge.
+
+00:03:12.840 --> 00:03:17.160
+Gauss's law gives the same outside field as a point charge at the center.
+
+00:03:18.300 --> 00:03:20.420
+Inside the shell, enclosed charge is zero.
+
+00:03:21.160 --> 00:03:25.000
+Because the spherical symmetry still makes the field constant and radial on a
+
+00:03:25.000 --> 00:03:27.180
+concentric sphere, the field is zero.
+
+00:03:27.800 --> 00:03:31.380
+This last conclusion uses symmetry, not zero flux alone.
+
+00:03:32.040 --> 00:03:36.740
+For shell charge two nanocoulombs and shell radius ten centimeters, at twenty
+
+00:03:36.740 --> 00:03:40.880
+centimeters from the center the field is four hundred and fifty newtons per
+
+00:03:40.880 --> 00:03:44.940
+coulomb, using the Coulomb constant nine times ten to the ninth.
+
+00:03:44.940 --> 00:03:47.740
+At five centimeters inside, the field is zero.
+
+00:03:48.460 --> 00:03:52.240
+These results assume an isolated, uniformly charged thin shell.
+
+00:03:53.000 --> 00:03:56.720
+Don't substitute them for a solid insulating sphere with charge spread
+
+00:03:56.720 --> 00:03:57.500
+throughout its volume.
+
+00:03:58.060 --> 00:04:02.820
+For that different model, enclosed charge inside grows as r cubed, and field
+
+00:04:02.820 --> 00:04:04.140
+grows linearly with r.
+
+00:04:04.140 --> 00:04:09.020
+Nor should you assume an arbitrary shell remains uniformly charged when
+
+00:04:09.020 --> 00:04:11.100
+external sources distort its distribution.
+
+00:04:11.880 --> 00:04:14.680
+Always name the distribution before choosing the surface.
+
+00:04:14.976 --> 00:04:19.536
+For an ideal infinitely long uniformly charged straight line, a sphere is an
+
+00:04:19.536 --> 00:04:20.096
+awkward choice.
+
+00:04:20.696 --> 00:04:22.776
+A coaxial cylinder matches the symmetry.
+
+00:04:23.576 --> 00:04:26.836
+Let the cylinder have radius r and length ell.
+
+00:04:26.836 --> 00:04:30.636
+Field points radially away from a positive line and has constant magnitude on
+
+00:04:30.636 --> 00:04:31.376
+the curved side.
+
+00:04:32.016 --> 00:04:36.416
+On the flat end caps, field lies along the surface rather than through it, so
+
+00:04:36.416 --> 00:04:37.336
+their flux is zero.
+
+00:04:37.336 --> 00:04:41.476
+The side contributes field times two pi r ell.
+
+00:04:41.476 --> 00:04:45.696
+Enclosed charge is linear charge density lambda times ell.
+
+00:04:45.696 --> 00:04:48.536
+Substitute into Gauss's law and the cylinder length cancels.
+
+00:04:49.496 --> 00:04:52.176
+Field is lambda divided by two pi epsilon zero r.
+
+00:04:52.936 --> 00:04:57.276
+Unlike a point charge, this field falls as one over r, not one over r squared.
+
+00:04:57.936 --> 00:05:01.376
+Let's use lambda equal to two nanocoulombs per meter and r equal
+
+00:05:01.376 --> 00:05:07.316
+to ten centimeters. With k equal to nine times ten to the ninth, the equivalent relation two k
+
+00:05:07.316 --> 00:05:10.576
+lambda divided by r gives three hundred and sixty newtons per coulomb.
+
+00:05:11.376 --> 00:05:14.956
+Double r and the field becomes one hundred and eighty, not ninety.
+
+00:05:14.956 --> 00:05:18.556
+The imaginary cylinder is a calculation surface; it is not a physical
+
+00:05:18.556 --> 00:05:19.296
+conducting tube.
+
+00:05:19.916 --> 00:05:24.236
+For a finite charged wire, the infinite line approximation is most useful near
+
+00:05:24.236 --> 00:05:27.936
+its central region when perpendicular distance is much smaller than the
+
+00:05:27.936 --> 00:05:28.776
+distance to either end.
+
+00:05:29.416 --> 00:05:32.956
+Without that approximate symmetry, the end cap argument and simple formula
+
+00:05:32.956 --> 00:05:34.296
+cannot be used blindly.
+
+00:05:34.536 --> 00:05:39.256
+For an ideal infinite nonconducting sheet with uniform surface charge density,
+
+00:05:40.176 --> 00:05:44.296
+symmetry gives equal field magnitudes on both sides, perpendicular to the sheet.
+
+00:05:45.156 --> 00:05:47.516
+Choose a short imaginary pillbox crossing it.
+
+00:05:48.096 --> 00:05:49.796
+No field crosses the curved side.
+
+00:05:50.556 --> 00:05:56.036
+Both flat faces contribute outward flux, so the total is two E A.
+
+00:05:56.036 --> 00:06:01.256
+The charge inside is sigma times A, and field becomes sigma divided by twice
+
+00:06:01.256 --> 00:06:02.216
+vacuum permittivity.
+
+00:06:02.956 --> 00:06:05.196
+That factor of two is easy to lose.
+
+00:06:05.936 --> 00:06:09.936
+If sigma is one point seven seven times ten to the minus nine coulombs per
+
+00:06:09.936 --> 00:06:14.616
+square meter and epsilon zero is eight point eight five times ten to the minus
+
+00:06:14.616 --> 00:06:19.536
+twelve, field magnitude is one hundred newtons per coulomb on either side.
+
+00:06:20.116 --> 00:06:23.116
+It does not decrease with distance in this infinite sheet model.
+
+00:06:23.116 --> 00:06:28.576
+A finite sheet needs distances small compared with its lateral size and points
+
+00:06:28.576 --> 00:06:30.236
+away from edges for this approximation.
+
+00:06:31.296 --> 00:06:34.636
+Now contrast a conducting surface in electrostatic equilibrium.
+
+00:06:35.616 --> 00:06:37.376
+Field within the conducting material is zero.
+
+00:06:37.996 --> 00:06:42.376
+A tiny pillbox straddling its surface gets flux only through the outside face,
+
+00:06:42.816 --> 00:06:46.976
+giving the field just outside as local surface charge density divided by
+
+00:06:46.976 --> 00:06:47.696
+epsilon zero.
+
+00:06:48.336 --> 00:06:53.096
+Here sigma means the charge density on that particular conductor face, not
+
+00:06:53.096 --> 00:06:56.096
+automatically the total charge divided by both faces of a slab.
+
+00:06:56.756 --> 00:07:01.176
+Our closing routine is simple: identify symmetry, choose a closed surface,
+
+00:07:01.816 --> 00:07:06.516
+write every flux contribution, count enclosed charge, and only then solve for
+
+00:07:06.516 --> 00:07:06.836
+the field.

@@ -1,0 +1,475 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.320
+Hey, welcome back.
+
+00:00:02.300 --> 00:00:04.000
+Today we begin optics with mirrors.
+
+00:00:04.840 --> 00:00:08.755
+Before collecting formulas, let's ask what a mirror actually does to a ray of
+
+00:00:08.755 --> 00:00:09.060
+light.
+
+00:00:09.760 --> 00:00:14.220
+At the point where the ray hits, draw a normal: a line perpendicular to the
+
+00:00:14.220 --> 00:00:15.000
+reflecting surface.
+
+00:00:15.660 --> 00:00:19.040
+The angle of incidence is measured between that normal and the incoming ray.
+
+00:00:19.640 --> 00:00:23.280
+The reflected ray makes the same angle with the normal, on the other side.
+
+00:00:23.860 --> 00:00:26.320
+These two rays and the normal lie in one plane.
+
+00:00:27.160 --> 00:00:29.260
+Simple rule, powerful consequences.
+
+00:00:30.240 --> 00:00:33.780
+Suppose a question says the incident ray makes sixty degrees with the mirror
+
+00:00:33.780 --> 00:00:34.220
+surface.
+
+00:00:34.860 --> 00:00:35.940
+What is the angle of reflection?
+
+00:00:36.820 --> 00:00:37.320
+Take a moment.
+
+00:00:37.800 --> 00:00:40.140
+It is thirty degrees, not sixty.
+
+00:00:40.140 --> 00:00:44.540
+The normal is perpendicular to the surface, so we subtract from ninety before
+
+00:00:44.540 --> 00:00:45.780
+using the reflection law.
+
+00:00:46.520 --> 00:00:47.720
+Now picture a plane mirror.
+
+00:00:48.480 --> 00:00:52.460
+Reflected rays reaching your eyes diverge, but their backward extensions meet
+
+00:00:52.460 --> 00:00:53.140
+behind the mirror.
+
+00:00:53.640 --> 00:00:55.480
+That meeting point is a virtual image.
+
+00:00:56.100 --> 00:00:59.080
+Light does not actually travel through that point behind an opaque mirror.
+
+00:00:59.900 --> 00:01:03.900
+For a stationary plane mirror, an object twenty centimeters in front produces
+
+00:01:03.900 --> 00:01:07.120
+an upright, same size image twenty centimeters behind it.
+
+00:01:07.700 --> 00:01:09.760
+Object and image are forty centimeters apart.
+
+00:01:10.540 --> 00:01:15.340
+In a ray diagram, solid lines represent actual light paths; dashed lines show
+
+00:01:15.340 --> 00:01:16.100
+backward extensions.
+
+00:01:16.800 --> 00:01:19.780
+This distinction will matter even more when we curve the mirror.
+
+00:01:20.420 --> 00:01:25.460
+Our first JEE habit is therefore: draw the normal, identify the angle, and
+
+00:01:25.460 --> 00:01:27.920
+decide whether actual rays or their extensions meet.
+
+00:01:28.800 --> 00:01:34.240
+A concave mirror has its reflecting surface curved inward, facing our object.
+
+00:01:34.920 --> 00:01:37.800
+A convex mirror bulges toward the object.
+
+00:01:38.360 --> 00:01:42.460
+The pole is the middle of the mirror, and the principal axis joins the pole to
+
+00:01:42.460 --> 00:01:44.260
+the sphere's center of curvature.
+
+00:01:44.840 --> 00:01:49.160
+Near the axis, parallel rays reflected by a concave mirror meet at its
+
+00:01:49.160 --> 00:01:49.920
+principal focus.
+
+00:01:50.420 --> 00:01:54.980
+A convex mirror sends them apart; their backward extensions meet at a virtual
+
+00:01:54.980 --> 00:01:56.000
+focus behind it.
+
+00:01:56.320 --> 00:02:01.340
+For spherical mirrors in the paraxial approximation, the focal length is half
+
+00:02:01.340 --> 00:02:02.540
+the radius of curvature.
+
+00:02:03.280 --> 00:02:07.540
+Paraxial means rays close to the axis and making small angles with it.
+
+00:02:08.280 --> 00:02:12.580
+Farther out rays need not share exactly the same focus: that is spherical
+
+00:02:12.580 --> 00:02:13.200
+aberration.
+
+00:02:13.800 --> 00:02:16.700
+Now let's prevent the classic sign convention mix up.
+
+00:02:17.400 --> 00:02:20.160
+Throughout this lesson, incident light travels left to right.
+
+00:02:20.800 --> 00:02:24.300
+Put the pole at zero, and take rightward distances as positive.
+
+00:02:24.880 --> 00:02:26.780
+Every distance is measured from the pole.
+
+00:02:27.640 --> 00:02:31.160
+A real object on the left has negative object distance, u.
+
+00:02:31.940 --> 00:02:35.340
+A concave mirror's focus is on the left, so f is negative.
+
+00:02:36.000 --> 00:02:39.040
+A convex mirror's focus is on the right, so f is positive.
+
+00:02:39.840 --> 00:02:43.660
+Image distance, v, may be negative or positive depending on its location.
+
+00:02:44.400 --> 00:02:48.620
+A concave radius of negative twenty centimeters gives f equal to negative ten
+
+00:02:48.620 --> 00:02:49.080
+centimeters.
+
+00:02:50.040 --> 00:02:52.840
+Convex radius positive twenty gives positive ten.
+
+00:02:53.360 --> 00:02:55.160
+Some references use a different convention.
+
+00:02:55.760 --> 00:02:59.340
+Their physics is the same, but do not borrow their signs while keeping our
+
+00:02:59.340 --> 00:02:59.660
+equation.
+
+00:03:00.480 --> 00:03:05.620
+Here we use one over f equals one over v plus one over u, consistently.
+
+00:03:05.856 --> 00:03:08.856
+Let's build a real image rather than just name it.
+
+00:03:09.296 --> 00:03:12.236
+Our concave mirror has focal length negative ten centimeters.
+
+00:03:13.116 --> 00:03:16.216
+Place a small upright object thirty centimeters to its left.
+
+00:03:17.276 --> 00:03:20.076
+Draw one ray from the object's tip parallel to the axis.
+
+00:03:21.016 --> 00:03:23.336
+After reflection, it passes through the focus.
+
+00:03:24.456 --> 00:03:25.716
+Draw a second ray to the pole.
+
+00:03:26.536 --> 00:03:31.076
+At the pole the normal lies along the axis, so equal angles give its reflected
+
+00:03:31.076 --> 00:03:31.556
+direction.
+
+00:03:32.036 --> 00:03:35.936
+Where those two reflected rays actually meet, we locate the image tip.
+
+00:03:36.636 --> 00:03:40.640
+Our diagram is a paraxial schematic, so the mirror is treated close to its
+
+00:03:40.640 --> 00:03:40.856
+pole
+
+00:03:40.856 --> 00:03:42.016
+for the ray construction.
+
+00:03:43.756 --> 00:03:44.456
+Now calculate.
+
+00:03:45.416 --> 00:03:47.156
+Object distance is negative thirty centimeters.
+
+00:03:47.976 --> 00:03:52.136
+One over image distance equals one over focal length minus one over object
+
+00:03:52.136 --> 00:03:52.556
+distance.
+
+00:03:52.936 --> 00:03:57.456
+That is negative one tenth plus one thirtieth, giving negative one fifteenth
+
+00:03:57.456 --> 00:03:58.156
+per centimeter.
+
+00:03:58.996 --> 00:04:01.076
+Therefore v is negative fifteen centimeters.
+
+00:04:01.556 --> 00:04:05.562
+The image lies fifteen centimeters to the left of the mirror, between the
+
+00:04:05.562 --> 00:04:05.836
+focus
+
+00:04:05.836 --> 00:04:07.076
+and center of curvature.
+
+00:04:07.836 --> 00:04:10.716
+It is real because reflected rays actually converge there.
+
+00:04:11.456 --> 00:04:12.236
+What about its size?
+
+00:04:12.996 --> 00:04:15.656
+Mirror magnification is negative v divided by u.
+
+00:04:16.636 --> 00:04:19.256
+Substituting both signed distances gives negative one half.
+
+00:04:19.896 --> 00:04:23.276
+The minus sign says inverted; the magnitude says half as tall.
+
+00:04:24.116 --> 00:04:27.636
+A two centimeter object therefore has signed image height negative one
+
+00:04:27.636 --> 00:04:27.976
+centimeter.
+
+00:04:28.896 --> 00:04:32.596
+Notice how three checks agree: the ray intersection, the calculated position,
+
+00:04:33.036 --> 00:04:34.156
+and the predicted orientation.
+
+00:04:35.076 --> 00:04:39.096
+In JEE numerical questions, write signs before arithmetic, keep units
+
+00:04:39.096 --> 00:04:40.936
+consistent, then describe the image.
+
+00:04:41.536 --> 00:04:44.849
+A correct number with the wrong real or virtual interpretation is an
+
+00:04:44.849 --> 00:04:45.336
+unfinished
+
+00:04:45.336 --> 00:04:45.696
+answer.
+
+00:04:45.912 --> 00:04:50.564
+Keep the same concave mirror, but move our object to five centimeters in
+
+00:04:50.564 --> 00:04:50.952
+front.
+
+00:04:51.612 --> 00:04:53.752
+That puts it between the focus and the pole.
+
+00:04:54.432 --> 00:04:56.532
+Do you expect a smaller real image again?
+
+00:04:57.432 --> 00:04:58.452
+Pause and look at the rays.
+
+00:04:58.872 --> 00:05:00.872
+Now the reflected rays spread apart.
+
+00:05:01.512 --> 00:05:04.952
+Their backward extensions meet behind the mirror, above the axis.
+
+00:05:05.292 --> 00:05:08.272
+We get a virtual, upright, enlarged image.
+
+00:05:08.272 --> 00:05:11.152
+Let's make the calculation explain the picture.
+
+00:05:11.952 --> 00:05:15.452
+One over v is negative one tenth minus negative one fifth.
+
+00:05:15.952 --> 00:05:20.232
+That becomes positive one tenth per centimeter, so v is positive ten
+
+00:05:20.232 --> 00:05:21.572
+centimeters.
+
+00:05:21.572 --> 00:05:25.052
+Positive image distance means behind this mirror in our coordinate system.
+
+00:05:25.652 --> 00:05:30.032
+Magnification is negative ten divided by negative five, which equals positive
+
+00:05:30.032 --> 00:05:30.412
+two.
+
+00:05:30.892 --> 00:05:33.172
+The image is twice as tall and upright.
+
+00:05:33.652 --> 00:05:36.032
+A virtual image is not automatically smaller.
+
+00:05:36.452 --> 00:05:38.252
+That shortcut would fail right here.
+
+00:05:38.972 --> 00:05:43.212
+As a useful map for a real object and a concave mirror: beyond the center, the
+
+00:05:43.212 --> 00:05:47.636
+image is real and smaller; at the center, it is real and the same size;
+
+00:05:47.636 --> 00:05:48.072
+between
+
+00:05:48.072 --> 00:05:50.392
+center and focus, it is real and larger.
+
+00:05:51.312 --> 00:05:53.692
+Inside the focus, it becomes virtual and larger.
+
+00:05:54.392 --> 00:05:57.732
+At the focus itself, reflected paraxial rays are parallel.
+
+00:05:58.332 --> 00:06:02.432
+There is no finite image distance; we describe the image as at infinity.
+
+00:06:03.192 --> 00:06:05.812
+Do not divide by zero and report an ordinary number.
+
+00:06:06.412 --> 00:06:08.852
+Our two worked examples straddle that focal boundary.
+
+00:06:09.552 --> 00:06:13.412
+In a JEE problem, first locate the object relative to the focus.
+
+00:06:14.012 --> 00:06:17.212
+That prediction gives you a quick way to catch an algebraic sign error.
+
+00:06:17.424 --> 00:06:21.924
+Now switch to a convex mirror with focal length positive fifteen centimeters.
+
+00:06:22.764 --> 00:06:27.124
+Our real object is thirty centimeters in front, so u remains negative thirty.
+
+00:06:27.844 --> 00:06:32.004
+One over v equals one fifteenth minus negative one thirtieth.
+
+00:06:32.004 --> 00:06:33.504
+That is one tenth per centimeter.
+
+00:06:34.484 --> 00:06:38.013
+Image distance is positive ten centimeters, behind the mirror, between the
+
+00:06:38.013 --> 00:06:38.204
+pole
+
+00:06:38.364 --> 00:06:39.364
+and the virtual focus.
+
+00:06:40.304 --> 00:06:44.264
+Magnification is negative ten divided by negative thirty, giving positive one
+
+00:06:44.264 --> 00:06:44.424
+third.
+
+00:06:45.164 --> 00:06:47.584
+So the image is virtual, upright, and diminished.
+
+00:06:48.324 --> 00:06:51.724
+Try one more in your head: the same mirror, but a real object fifteen
+
+00:06:51.724 --> 00:06:52.464
+centimeters away.
+
+00:06:53.104 --> 00:06:54.044
+What is the image distance?
+
+00:06:54.684 --> 00:06:55.444
+Give yourself a moment.
+
+00:06:56.104 --> 00:07:00.384
+One over v becomes one fifteenth plus one fifteenth, so v is positive seven
+
+00:07:00.384 --> 00:07:01.244
+point five centimeters.
+
+00:07:02.564 --> 00:07:04.064
+Magnification is positive one half.
+
+00:07:04.584 --> 00:07:06.404
+It is still behind the mirror and smaller.
+
+00:07:07.184 --> 00:07:11.204
+This explains why convex mirrors can show a wider scene while shrinking the
+
+00:07:11.204 --> 00:07:11.584
+objects in it.
+
+00:07:12.284 --> 00:07:16.304
+For a real object in front of an ordinary convex mirror, the virtual, upright,
+
+00:07:16.724 --> 00:07:17.744
+diminished pattern is dependable.
+
+00:07:18.244 --> 00:07:22.784
+The words real object are essential: a virtual object made by another optical
+
+00:07:22.784 --> 00:07:24.404
+element needs separate analysis.
+
+00:07:25.524 --> 00:07:26.984
+Finally, our sign check routine.
+
+00:07:27.784 --> 00:07:29.284
+Fix the pole and positive direction.
+
+00:07:30.004 --> 00:07:31.264
+Write signed u and f.
+
+00:07:31.824 --> 00:07:32.484
+Solve for v.
+
+00:07:33.324 --> 00:07:34.524
+Calculate negative v over u.
+
+00:07:35.084 --> 00:07:39.324
+Then interpret position, orientation, and size, and check them against a ray
+
+00:07:39.324 --> 00:07:39.584
+sketch.
+
+00:07:40.324 --> 00:07:44.224
+For a plane mirror, the same convention gives v equal to negative u and
+
+00:07:44.224 --> 00:07:45.644
+magnification positive one.
+
+00:07:46.384 --> 00:07:49.824
+Keep this method consistent and mirror questions stop feeling like a guessing
+
+00:07:49.824 --> 00:07:50.064
+game.

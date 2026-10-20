@@ -1,0 +1,256 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.000
+Welcome back.
+
+00:00:01.520 --> 00:00:06.294
+A banked turn is a lovely example of one diagram doing more work than a pile
+
+00:00:06.294 --> 00:00:06.420
+of
+
+00:00:06.420 --> 00:00:06.880
+memorized equations.
+
+00:00:07.340 --> 00:00:09.340
+We already found the frictionless speed.
+
+00:00:09.900 --> 00:00:12.780
+Now let's find the allowed range when static friction is available.
+
+00:00:13.500 --> 00:00:16.700
+This is an ideal particle model, not driving advice.
+
+00:00:17.740 --> 00:00:20.180
+The road rises toward the outside.
+
+00:00:21.200 --> 00:00:23.580
+Choose horizontal inward and vertical upward axes.
+
+00:00:24.060 --> 00:00:26.540
+The normal reaction points upward and inward.
+
+00:00:27.520 --> 00:00:31.960
+At a speed above the frictionless value, the car tends to slip outward and up
+
+00:00:31.960 --> 00:00:35.840
+the bank, so friction acts down the bank: inward and downward.
+
+00:00:36.660 --> 00:00:40.020
+At the upper limiting speed its magnitude is mu times N.
+
+00:00:40.760 --> 00:00:46.180
+The inward equation is N sine theta plus mu N cosine theta equals m v squared
+
+00:00:46.180 --> 00:00:46.780
+over r.
+
+00:00:47.580 --> 00:00:53.210
+The vertical equation is N cosine theta minus mu N sine theta equals m
+
+00:00:53.210 --> 00:00:54.320
+g.
+
+00:00:54.320 --> 00:00:57.120
+Notice that N is not m g.
+
+00:00:57.120 --> 00:00:58.680
+Divide the first equation by the second.
+
+00:00:59.400 --> 00:01:03.800
+After dividing numerator and denominator by cosine theta, v squared over r g
+
+00:01:03.800 --> 00:01:08.280
+becomes tangent theta plus mu, divided by one minus mu tangent theta.
+
+00:01:09.380 --> 00:01:13.280
+Let's use tangent theta equal to three quarters, mu equal to one quarter,
+
+00:01:13.740 --> 00:01:16.440
+radius twenty five meters, and g equal to ten.
+
+00:01:17.080 --> 00:01:21.500
+The ratio is one divided by thirteen sixteenths, or sixteen thirteenths.
+
+00:01:22.340 --> 00:01:26.980
+Therefore maximum speed squared is four thousand over thirteen, and maximum
+
+00:01:26.980 --> 00:01:30.240
+speed is approximately seventeen point five four meters per second.
+
+00:01:31.480 --> 00:01:32.940
+Pause before calling that answer valid.
+
+00:01:33.700 --> 00:01:37.700
+The denominator is positive, so the vertical balance permits a positive normal
+
+00:01:37.700 --> 00:01:39.040
+force at this limiting state.
+
+00:01:39.760 --> 00:01:43.820
+If the denominator were zero or negative, do not take a square root of an
+
+00:01:43.820 --> 00:01:46.420
+invalid expression and call it a real speed boundary.
+
+00:01:47.440 --> 00:01:50.420
+Return to the friction inequality and contact assumptions.
+
+00:01:51.080 --> 00:01:54.740
+Our formula is a model with a domain, not a universal rule.
+
+00:01:55.520 --> 00:01:59.400
+For this numerical case, the normal reaction divided by m g at the upper
+
+00:01:59.400 --> 00:02:02.920
+boundary is twenty over thirteen.
+
+00:02:02.920 --> 00:02:06.871
+Friction has a downward component, so the normal's upward component must
+
+00:02:06.871 --> 00:02:07.200
+supply
+
+00:02:07.200 --> 00:02:07.940
+more than the weight.
+
+00:02:08.920 --> 00:02:13.040
+That check helps explain why simply setting N equal to m g would fail.
+
+00:02:13.152 --> 00:02:14.652
+Now reduce the speed.
+
+00:02:15.392 --> 00:02:19.072
+Below the frictionless value, the car tends to slip inward and down the bank.
+
+00:02:20.032 --> 00:02:24.012
+Static friction reverses: it points up the bank, outward and upward.
+
+00:02:24.752 --> 00:02:29.852
+At a positive lower limiting speed, the inward equation is N sine theta minus
+
+00:02:29.852 --> 00:02:33.352
+mu N cosine theta equals m v squared over r.
+
+00:02:33.952 --> 00:02:39.652
+The vertical equation is N cosine theta plus mu N sine theta equals m g.
+
+00:02:39.652 --> 00:02:40.512
+Divide them carefully.
+
+00:02:41.192 --> 00:02:45.952
+The lower speed squared is r g times tangent theta minus mu, divided by one
+
+00:02:45.952 --> 00:02:47.092
+plus mu tangent theta.
+
+00:02:47.972 --> 00:02:52.914
+Use our same twenty five meter radius, g ten, tangent theta three quarters,
+
+00:02:52.914 --> 00:02:53.112
+and
+
+00:02:53.112 --> 00:02:53.712
+mu one quarter.
+
+00:02:54.392 --> 00:02:58.812
+The ratio is one half divided by nineteen sixteenths, or eight nineteenths.
+
+00:02:59.452 --> 00:03:03.692
+Minimum speed squared is two thousand over nineteen, so minimum speed is about
+
+00:03:03.692 --> 00:03:05.472
+ten point two six meters per second.
+
+00:03:06.032 --> 00:03:09.392
+The frictionless speed is the square root of one hundred eighty seven point
+
+00:03:09.392 --> 00:03:12.432
+five, about thirteen point six nine.
+
+00:03:12.432 --> 00:03:15.192
+It lies between the two limits, exactly as we hoped.
+
+00:03:15.892 --> 00:03:20.355
+At that middle speed, friction can be zero; static friction is not always mu
+
+00:03:20.355 --> 00:03:20.472
+N.
+
+00:03:21.132 --> 00:03:22.752
+What if the coefficient were one instead?
+
+00:03:23.132 --> 00:03:26.212
+The expression for the lower squared speed becomes negative.
+
+00:03:26.672 --> 00:03:28.972
+That does not create an imaginary physical speed.
+
+00:03:29.512 --> 00:03:33.532
+At rest, force balance on the slope requires friction divided by normal
+
+00:03:33.532 --> 00:03:35.452
+reaction equal to tangent theta.
+
+00:03:36.072 --> 00:03:40.076
+Our tangent is three quarters, less than the available coefficient one, so
+
+00:03:40.076 --> 00:03:40.292
+rest
+
+00:03:40.292 --> 00:03:42.972
+is possible and the physical lower speed is zero.
+
+00:03:43.612 --> 00:03:47.747
+For the general check, solve for the signed required friction f directed up
+
+00:03:47.747 --> 00:03:47.912
+the
+
+00:03:47.912 --> 00:03:48.112
+bank.
+
+00:03:48.712 --> 00:03:53.452
+Its ratio to N is tangent theta minus q, divided by one plus q tangent theta,
+
+00:03:53.892 --> 00:03:56.432
+where q is v squared over r g.
+
+00:03:56.432 --> 00:03:59.272
+Demand the absolute value of that ratio be no greater than mu.
+
+00:03:59.732 --> 00:04:02.292
+That single inequality checks either friction direction.
+
+00:04:02.852 --> 00:04:06.240
+For example, at ten meters per second in our original quarter coefficient
+
+00:04:06.240 --> 00:04:06.472
+case,
+
+00:04:07.012 --> 00:04:08.092
+q is zero point four.
+
+00:04:08.772 --> 00:04:13.092
+Required friction divided by N is about zero point two six nine, above one
+
+00:04:13.092 --> 00:04:15.012
+quarter, so that speed is not allowed.
+
+00:04:15.632 --> 00:04:20.492
+At fourteen meters per second it is about minus zero point zero two one four,
+
+00:04:20.492 --> 00:04:21.312
+safely within the bound.
+
+00:04:21.612 --> 00:04:24.232
+The negative sign means friction acts down the bank.
+
+00:04:25.012 --> 00:04:28.925
+State the model, resolve actual forces, and test the inequality before
+
+00:04:28.925 --> 00:04:29.372
+trusting
+
+00:04:29.372 --> 00:04:31.012
+a memorized maximum or minimum.

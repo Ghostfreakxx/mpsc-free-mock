@@ -2,9 +2,9 @@
 import { Download } from "lucide-react";
 import type { StudyLesson } from "./course";
 
-export default function StudyDownload({ lesson }: { lesson: StudyLesson }) {
+export default function StudyDownload({ lesson, kind = "Written foundation lesson" }: { lesson: StudyLesson; kind?: "Written foundation lesson" | "Class transcript" }) {
   function download() {
-    const text = [lesson.title, `${lesson.subject} - written foundation lesson`, `Prerequisites: ${lesson.prerequisites}`,
+    const text = [lesson.title, `${lesson.subject} - ${kind.toLowerCase()}`, `Prerequisites: ${lesson.prerequisites}`,
       ...lesson.sections.map(section => `${section.title}\n${section.paragraphs.join("\n\n")}\n${section.formula ?? ""}`),
       "WORKED EXAMPLES", ...lesson.examples.map(example => `${example.question}\n${example.steps.map((step, index) => `${index + 1}. ${step}`).join("\n")}\n${example.answer}`),
       "ORIGINAL PRACTICE", ...lesson.quiz.map((question, index) => `${index + 1}. ${question.question}\n${question.options.map((option, i) => `${String.fromCharCode(65 + i)}. ${option}`).join("\n")}`),

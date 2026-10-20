@@ -1,0 +1,412 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.480
+Hey, welcome back.
+
+00:00:02.200 --> 00:00:04.920
+Pull a spring gently, let go, and watch it return.
+
+00:00:05.500 --> 00:00:07.620
+Then it passes the center and comes back again.
+
+00:00:08.360 --> 00:00:10.120
+Why doesn't it simply stop at the center?
+
+00:00:10.740 --> 00:00:14.960
+The force restores it toward equilibrium, but its velocity carries it through.
+
+00:00:15.640 --> 00:00:17.460
+That balance gives us oscillation.
+
+00:00:18.220 --> 00:00:22.060
+Let's measure displacement from the equilibrium position, with right positive.
+
+00:00:22.800 --> 00:00:27.300
+For simple harmonic motion, acceleration equals minus omega squared times
+
+00:00:27.300 --> 00:00:27.700
+displacement.
+
+00:00:28.380 --> 00:00:33.340
+The minus sign is the whole story of direction: right of center, acceleration
+
+00:00:33.340 --> 00:00:36.440
+points left; left of center, it points right.
+
+00:00:37.220 --> 00:00:40.660
+Its magnitude also grows in proportion to how far we move from center.
+
+00:00:41.600 --> 00:00:44.200
+A repeating motion is not automatically simple harmonic.
+
+00:00:44.800 --> 00:00:47.380
+It must satisfy this particular acceleration rule.
+
+00:00:48.300 --> 00:00:52.340
+Period is the time for one complete cycle, returning to the same position and
+
+00:00:52.340 --> 00:00:53.340
+direction of motion.
+
+00:00:54.620 --> 00:00:56.000
+Frequency counts cycles per second.
+
+00:00:57.200 --> 00:01:01.480
+Angular frequency counts radians of phase per second and equals two pi times
+
+00:01:01.480 --> 00:01:01.880
+frequency.
+
+00:01:02.860 --> 00:01:07.320
+If an oscillator makes two cycles per second, its period is half a second and
+
+00:01:07.320 --> 00:01:10.200
+its angular frequency is four pi radians per second.
+
+00:01:11.000 --> 00:01:12.000
+Now think for a moment.
+
+00:01:12.720 --> 00:01:15.100
+At equilibrium, is acceleration largest?
+
+00:01:15.500 --> 00:01:16.900
+No, it is zero.
+
+00:01:17.540 --> 00:01:19.400
+Speed can still be largest there.
+
+00:01:20.200 --> 00:01:22.740
+Never confuse zero acceleration with zero velocity.
+
+00:01:23.660 --> 00:01:26.320
+That distinction is a favorite source of JEE mistakes.
+
+00:01:26.712 --> 00:01:30.412
+Picture the horizontal shadow of a point moving around a circle at constant
+
+00:01:30.412 --> 00:01:31.172
+angular speed.
+
+00:01:31.752 --> 00:01:33.312
+The shadow moves between two ends.
+
+00:01:34.132 --> 00:01:37.772
+This projection is a beautiful way to understand simple harmonic motion.
+
+00:01:38.492 --> 00:01:43.572
+We write displacement as amplitude times the cosine of omega t plus initial
+
+00:01:43.572 --> 00:01:44.392
+phase.
+
+00:01:44.892 --> 00:01:49.652
+Amplitude sets the size of the motion; omega sets how quickly it repeats; phase
+
+00:01:49.652 --> 00:01:51.692
+tells us where in that repeating cycle we are.
+
+00:01:51.692 --> 00:01:56.752
+For zero initial phase, the particle begins at the positive end, not at the
+
+00:01:56.752 --> 00:01:57.012
+center.
+
+00:01:57.812 --> 00:02:01.792
+Differentiate displacement with respect to time: velocity is minus amplitude
+
+00:02:01.792 --> 00:02:04.712
+times omega times sine of the same phase.
+
+00:02:05.592 --> 00:02:09.212
+Differentiate again and acceleration becomes minus omega squared times
+
+00:02:09.212 --> 00:02:11.552
+displacement, exactly our defining rule.
+
+00:02:12.292 --> 00:02:16.452
+Let's use amplitude four centimeters and angular frequency five radians per
+
+00:02:16.452 --> 00:02:16.692
+second.
+
+00:02:17.172 --> 00:02:20.592
+At the positive end, displacement is zero point zero four meters.
+
+00:02:20.592 --> 00:02:25.432
+Velocity is zero, while acceleration is minus one meter per second squared.
+
+00:02:26.192 --> 00:02:30.272
+A quarter period later the particle crosses equilibrium moving in the negative
+
+00:02:30.272 --> 00:02:30.712
+direction.
+
+00:02:31.352 --> 00:02:35.052
+Its velocity there is minus zero point two meters per second and its
+
+00:02:35.052 --> 00:02:36.092
+acceleration is zero.
+
+00:02:36.972 --> 00:02:38.452
+Pause and imagine those two moments.
+
+00:02:39.032 --> 00:02:43.452
+The turning point has no speed but a strong inward acceleration; the center has
+
+00:02:43.452 --> 00:02:45.432
+the greatest speed but no acceleration.
+
+00:02:46.232 --> 00:02:50.032
+For initial conditions, use both position and velocity to select phase.
+
+00:02:50.032 --> 00:02:54.512
+Position alone usually leaves two possible phases, because a particle can visit
+
+00:02:54.512 --> 00:02:57.032
+the same position while moving in opposite directions.
+
+00:02:57.528 --> 00:03:00.288
+Now let's see where angular frequency comes from.
+
+00:03:00.868 --> 00:03:04.988
+An ideal spring exerts a restoring force equal to minus spring constant times
+
+00:03:04.988 --> 00:03:05.468
+displacement.
+
+00:03:06.368 --> 00:03:09.788
+Newton's second law says mass times acceleration equals this force.
+
+00:03:10.688 --> 00:03:15.028
+Divide by mass, compare with our simple harmonic motion rule, and omega squared
+
+00:03:15.028 --> 00:03:17.228
+equals spring constant divided by mass.
+
+00:03:17.808 --> 00:03:21.868
+So the period is two pi times the square root of mass divided by spring
+
+00:03:21.868 --> 00:03:22.208
+constant.
+
+00:03:22.788 --> 00:03:24.868
+This is not a formula to memorize blindly.
+
+00:03:25.468 --> 00:03:28.408
+Greater mass means more inertia and a slower response.
+
+00:03:29.188 --> 00:03:33.068
+A stiffer spring supplies more restoring force for the same displacement and
+
+00:03:33.068 --> 00:03:34.328
+gives a faster response.
+
+00:03:35.368 --> 00:03:38.668
+Take a half kilogram block on a spring of two hundred newtons per meter.
+
+00:03:39.648 --> 00:03:41.168
+Omega is twenty radians per second.
+
+00:03:41.868 --> 00:03:45.728
+The period is pi divided by ten seconds, about zero point three one four
+
+00:03:45.728 --> 00:03:46.168
+seconds.
+
+00:03:46.768 --> 00:03:50.288
+If the mass becomes four times larger with the same spring, what happens?
+
+00:03:50.808 --> 00:03:51.628
+Give yourself a moment.
+
+00:03:52.168 --> 00:03:56.408
+The square root becomes twice as large, so the period doubles, not quadruples.
+
+00:03:57.288 --> 00:04:00.948
+Within the ideal Hooke law model, changing amplitude does not change period.
+
+00:04:01.568 --> 00:04:04.028
+Real springs can leave this model at large extensions.
+
+00:04:04.868 --> 00:04:08.348
+For a vertical spring, gravity stretches the spring to a new equilibrium.
+
+00:04:09.208 --> 00:04:10.728
+Measure displacement from that new position.
+
+00:04:11.328 --> 00:04:15.508
+The constant gravitational force cancels the equilibrium spring force, leaving
+
+00:04:15.508 --> 00:04:17.888
+the same restoring rule for the additional displacement.
+
+00:04:18.488 --> 00:04:22.788
+The period still depends on mass and spring constant, not on that equilibrium
+
+00:04:22.788 --> 00:04:23.828
+extension by itself.
+
+00:04:24.288 --> 00:04:27.168
+At the end of the motion the block stops for an instant.
+
+00:04:27.928 --> 00:04:29.208
+Where has its kinetic energy gone?
+
+00:04:29.808 --> 00:04:31.388
+Into the spring's potential energy.
+
+00:04:32.088 --> 00:04:35.848
+At equilibrium the spring's potential energy, measured from the unstretched
+
+00:04:35.848 --> 00:04:40.208
+position for our horizontal spring, is zero and kinetic energy is largest.
+
+00:04:40.888 --> 00:04:45.468
+With no friction, the total stays constant: one half spring constant times
+
+00:04:45.468 --> 00:04:46.348
+amplitude squared.
+
+00:04:47.028 --> 00:04:51.548
+At displacement x, potential energy is one half spring constant times x
+
+00:04:51.548 --> 00:04:51.808
+squared.
+
+00:04:52.548 --> 00:04:55.288
+Subtract it from total energy and you get the kinetic energy.
+
+00:04:56.188 --> 00:05:00.628
+That gives speed squared equal to omega squared times amplitude squared minus
+
+00:05:00.628 --> 00:05:01.508
+displacement squared.
+
+00:05:02.388 --> 00:05:03.928
+Notice that squaring loses the direction.
+
+00:05:04.668 --> 00:05:08.628
+Use the actual part of the cycle to decide whether velocity is positive or negative.
+
+00:05:09.648 --> 00:05:13.128
+Let's return to our half kilogram block and two hundred newtons per meter
+
+00:05:13.128 --> 00:05:15.408
+spring, now with amplitude ten centimeters.
+
+00:05:16.288 --> 00:05:17.568
+Total energy is one joule.
+
+00:05:18.188 --> 00:05:21.961
+At displacement six centimeters, spring potential energy is zero point three
+
+00:05:21.961 --> 00:05:25.288
+six joules, leaving zero point six four joules of kinetic energy.
+
+00:05:26.148 --> 00:05:28.208
+The speed is one point six meters per second.
+
+00:05:28.928 --> 00:05:31.268
+At the center it reaches two meters per second.
+
+00:05:31.968 --> 00:05:36.268
+Here's a useful JEE check: at half the amplitude, potential energy is one
+
+00:05:36.268 --> 00:05:39.308
+quarter of total energy, not one half.
+
+00:05:39.308 --> 00:05:41.808
+Kinetic energy is the remaining three quarters.
+
+00:05:41.808 --> 00:05:43.368
+Energy depends on displacement squared.
+
+00:05:44.068 --> 00:05:48.028
+With damping the amplitude and mechanical energy decrease, so the constant
+
+00:05:48.028 --> 00:05:50.968
+energy formula no longer describes the whole changing motion.
+
+00:05:51.144 --> 00:05:56.644
+A swinging pendulum is another oscillator, but we must earn the simple harmonic
+
+00:05:56.644 --> 00:05:57.324
+approximation.
+
+00:05:58.424 --> 00:06:02.644
+Model the bob as a point mass on a light, inextensible string of length L.
+
+00:06:03.884 --> 00:06:06.964
+Gravity has a tangential component opposite the angular displacement.
+
+00:06:07.804 --> 00:06:12.644
+The exact tangential equation gives angular acceleration equal to minus g
+
+00:06:12.644 --> 00:06:14.684
+divided by L times sine of theta.
+
+00:06:15.184 --> 00:06:16.544
+That sine matters.
+
+00:06:17.044 --> 00:06:21.944
+For a sufficiently small angle measured in radians, sine theta is approximately
+
+00:06:21.944 --> 00:06:22.264
+theta.
+
+00:06:23.124 --> 00:06:27.744
+The equation then becomes the simple harmonic rule, with omega squared equal to
+
+00:06:27.744 --> 00:06:28.624
+g divided by L.
+
+00:06:29.644 --> 00:06:33.344
+Its period is two pi times the square root of length divided by gravitational
+
+00:06:33.344 --> 00:06:34.004
+acceleration.
+
+00:06:35.004 --> 00:06:36.344
+Bob mass cancels out.
+
+00:06:37.084 --> 00:06:40.764
+For a one meter pendulum and g equal to nine point eight meters per second
+
+00:06:40.764 --> 00:06:43.824
+squared, the period is about two point zero one seconds.
+
+00:06:43.824 --> 00:06:48.344
+If its length becomes four meters, the period becomes about four point zero one
+
+00:06:48.344 --> 00:06:50.524
+seconds, twice the original value.
+
+00:06:51.264 --> 00:06:54.904
+This assumes the same gravitational acceleration and small oscillations.
+
+00:06:55.684 --> 00:06:59.884
+A large swing takes longer than this small angle formula predicts; don't claim
+
+00:06:59.884 --> 00:07:02.224
+amplitude independence for every pendulum swing.
+
+00:07:02.844 --> 00:07:04.964
+Let's summarize your problem solving routine.
+
+00:07:05.944 --> 00:07:09.944
+Choose equilibrium, identify the restoring equation, check whether it is
+
+00:07:09.944 --> 00:07:12.544
+proportional to displacement, and state the assumptions.
+
+00:07:13.224 --> 00:07:18.044
+Then select a phase equation, period relation or energy equation depending on
+
+00:07:18.044 --> 00:07:18.504
+the question.
+
+00:07:19.484 --> 00:07:23.124
+Oscillations become much easier when you connect the equations to the actual
+
+00:07:23.124 --> 00:07:26.084
+motion instead of treating each one as a separate trick.

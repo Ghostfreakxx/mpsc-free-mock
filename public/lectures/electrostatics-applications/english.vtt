@@ -1,0 +1,355 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.360
+Hey, welcome back.
+
+00:00:02.040 --> 00:00:05.520
+Let's build a field from its sources rather than guess a formula from the
+
+00:00:05.520 --> 00:00:05.740
+shape.
+
+00:00:06.440 --> 00:00:09.160
+For point charges, we add electric field vectors.
+
+00:00:09.940 --> 00:00:14.860
+A continuous distribution uses the same idea with tiny charge elements, called
+
+00:00:14.860 --> 00:00:16.240
+d q.
+
+00:00:16.240 --> 00:00:19.848
+Each contribution points along the source to observation direction for
+
+00:00:19.848 --> 00:00:20.260
+positive
+
+00:00:20.260 --> 00:00:20.640
+charge.
+
+00:00:21.580 --> 00:00:24.180
+Integrate components, not just positive magnitudes.
+
+00:00:25.040 --> 00:00:27.360
+For a line, d q is line density times a small length.
+
+00:00:28.780 --> 00:00:32.280
+Surface and volume densities need area and volume elements instead.
+
+00:00:32.900 --> 00:00:34.600
+Those units are not interchangeable.
+
+00:00:35.300 --> 00:00:39.960
+Now picture a thin uniformly charged ring, radius a, total charge Q.
+
+00:00:40.600 --> 00:00:43.980
+Our point lies a distance x along its central perpendicular axis.
+
+00:00:44.640 --> 00:00:48.540
+All ring elements have the same distance to that point, the square root of a
+
+00:00:48.540 --> 00:00:49.640
+squared plus x squared.
+
+00:00:50.560 --> 00:00:51.360
+Pair opposite elements.
+
+00:00:51.960 --> 00:00:55.460
+Their sideways field components cancel, while axial components add.
+
+00:00:55.460 --> 00:00:59.880
+The axial projection supplies a factor x divided by that same distance.
+
+00:01:00.900 --> 00:01:05.400
+Integrating the charge gives axial field k Q x divided by a squared plus x
+
+00:01:05.400 --> 00:01:06.940
+squared to the power three halves.
+
+00:01:07.580 --> 00:01:11.760
+The sign of x matters: for positive Q, field points away from the centre on
+
+00:01:11.760 --> 00:01:12.340
+either side.
+
+00:01:13.220 --> 00:01:14.920
+Potential is easier because it is a scalar.
+
+00:01:15.580 --> 00:01:20.358
+With zero at infinity, it is k Q divided by the square root of a squared plus
+
+00:01:20.358 --> 00:01:20.420
+x
+
+00:01:20.420 --> 00:01:20.660
+squared.
+
+00:01:21.480 --> 00:01:26.340
+Try a numerical example: one nanocoulomb, radius zero point three metres, and
+
+00:01:26.340 --> 00:01:28.140
+axial x zero point four metres.
+
+00:01:28.980 --> 00:01:31.940
+Use k equal to nine times ten to the ninth in SI units.
+
+00:01:33.020 --> 00:01:33.880
+Distance is half a metre.
+
+00:01:34.780 --> 00:01:38.740
+Potential is eighteen volts, and field is twenty eight point eight newtons per
+
+00:01:38.740 --> 00:01:40.080
+coulomb along positive x.
+
+00:01:40.680 --> 00:01:42.440
+Now think about the centre.
+
+00:01:42.440 --> 00:01:46.728
+Field is zero by cancellation, but potential is positive, thirty volts for
+
+00:01:46.728 --> 00:01:46.960
+this
+
+00:01:46.960 --> 00:01:47.140
+ring.
+
+00:01:47.140 --> 00:01:49.800
+Zero field does not mean zero potential.
+
+00:01:50.740 --> 00:01:54.280
+Differentiating potential with respect to x and changing the sign reproduces
+
+00:01:54.280 --> 00:01:56.300
+the axial field, a useful check.
+
+00:01:57.080 --> 00:01:59.760
+Far away, the ring behaves approximately like a point charge.
+
+00:02:00.480 --> 00:02:01.940
+Close to it, keep the geometry.
+
+00:02:02.860 --> 00:02:06.520
+Symmetry simplifies an integral; it does not replace the need to identify the
+
+00:02:06.520 --> 00:02:07.100
+correct components.
+
+00:02:07.512 --> 00:02:13.272
+Next, put a uniform thin insulating rod on the x axis from minus a to plus a.
+
+00:02:13.592 --> 00:02:16.272
+Observe a point a positive distance y above its midpoint.
+
+00:02:17.152 --> 00:02:19.672
+Elements on opposite sides cancel horizontal components.
+
+00:02:20.292 --> 00:02:22.632
+Their upward components add for positive charge.
+
+00:02:23.212 --> 00:02:27.760
+A source element at coordinate s contributes k times line density times y
+
+00:02:27.760 --> 00:02:28.072
+times
+
+00:02:28.072 --> 00:02:32.112
+d s, divided by s squared plus y squared to the power three halves.
+
+00:02:33.052 --> 00:02:34.772
+Integrate from minus a to plus a.
+
+00:02:34.772 --> 00:02:39.892
+The result is two k times line density times a, divided by y times the square
+
+00:02:39.892 --> 00:02:41.512
+root of a squared plus y squared.
+
+00:02:42.392 --> 00:02:46.712
+Take a zero point three metres, y zero point four metres and line density two
+
+00:02:46.712 --> 00:02:47.692
+nanocoulombs per metre.
+
+00:02:48.172 --> 00:02:50.272
+We get fifty four newtons per coulomb upward.
+
+00:02:51.052 --> 00:02:54.852
+If length becomes very large while line density stays fixed, the end position
+
+00:02:54.852 --> 00:02:57.672
+factor approaches one, giving the infinite line field.
+
+00:02:58.652 --> 00:03:01.672
+Keeping total charge fixed instead changes line density and is a different
+
+00:03:01.672 --> 00:03:01.912
+limit.
+
+00:03:02.472 --> 00:03:06.392
+A finite rod does not have the translational symmetry needed for a simple
+
+00:03:06.392 --> 00:03:07.992
+cylindrical Gauss law field shortcut.
+
+00:03:08.972 --> 00:03:09.572
+Now a dipole.
+
+00:03:10.392 --> 00:03:14.752
+Put minus one nanocoulomb at x minus zero point one metres and plus one
+
+00:03:14.752 --> 00:03:17.192
+nanocoulomb at x plus zero point one metres.
+
+00:03:17.852 --> 00:03:20.712
+Our observation point is x plus zero point three metres.
+
+00:03:21.592 --> 00:03:24.012
+Distances are zero point two and zero point four metres.
+
+00:03:24.312 --> 00:03:27.872
+The positive charge contributes two hundred twenty five newtons per coulomb
+
+00:03:27.872 --> 00:03:31.932
+rightward; the negative charge contributes fifty six point two five leftward.
+
+00:03:31.932 --> 00:03:36.472
+Subtract: exact net field is one hundred sixty eight point seven five newtons
+
+00:03:36.472 --> 00:03:37.392
+per coulomb rightward.
+
+00:03:38.192 --> 00:03:42.132
+The dipole moment is charge magnitude times separation, two times ten to the
+
+00:03:42.132 --> 00:03:43.292
+minus ten coulomb metres.
+
+00:03:43.772 --> 00:03:48.575
+The familiar far axis formula, two k p divided by r cubed, gives about one
+
+00:03:48.575 --> 00:03:50.392
+hundred thirty three point three three.
+
+00:03:50.392 --> 00:03:53.272
+That is about twenty one percent below the exact result here.
+
+00:03:53.272 --> 00:03:57.892
+The exact axial expression is two k p r divided by the square of r squared
+
+00:03:57.892 --> 00:04:00.052
+minus a squared, for r greater than a.
+
+00:04:00.672 --> 00:04:04.192
+It becomes the far field formula only when r is much larger than a.
+
+00:04:04.972 --> 00:04:07.728
+A convenient formula needs a valid approximation, not just familiar symbols.
+
+00:04:07.728 --> 00:04:10.588
+Let's finish on the dipole's perpendicular bisector.
+
+00:04:11.428 --> 00:04:15.528
+A point there is equally distant from positive and negative charges, so their
+
+00:04:15.528 --> 00:04:18.968
+scalar potentials cancel exactly, choosing zero at infinity.
+
+00:04:19.348 --> 00:04:21.028
+But the fields do not cancel.
+
+00:04:22.248 --> 00:04:26.188
+Components along the bisector cancel; components along the dipole axis point
+
+00:04:26.188 --> 00:04:28.268
+from positive toward negative and add.
+
+00:04:28.768 --> 00:04:30.968
+The net field is opposite the dipole moment.
+
+00:04:30.968 --> 00:04:36.568
+Its exact magnitude is k p divided by r squared plus a squared to the power
+
+00:04:36.568 --> 00:04:37.148
+three halves.
+
+00:04:38.088 --> 00:04:41.008
+Far away this approaches k p divided by r cubed.
+
+00:04:41.648 --> 00:04:44.488
+Once again, zero potential does not imply zero field.
+
+00:04:45.168 --> 00:04:47.928
+Now place a fixed dipole in a uniform external field.
+
+00:04:48.868 --> 00:04:52.508
+Equal opposite forces give zero net force, but generally form a torque.
+
+00:04:53.388 --> 00:04:55.648
+Torque magnitude is p E sine theta.
+
+00:04:56.388 --> 00:05:01.368
+Orientation energy is minus p E cosine theta, choosing zero when the dipole is
+
+00:05:01.368 --> 00:05:01.908
+perpendicular.
+
+00:05:02.928 --> 00:05:06.508
+Parallel alignment has minimum energy and is stable; opposite alignment has
+
+00:05:06.508 --> 00:05:08.208
+maximum energy and is unstable.
+
+00:05:08.988 --> 00:05:09.848
+Let's work a rotation.
+
+00:05:10.588 --> 00:05:14.193
+Charge magnitude is two nanocoulombs and separation zero point zero two
+
+00:05:14.193 --> 00:05:14.548
+metres,
+
+00:05:15.128 --> 00:05:18.548
+so dipole moment is four times ten to the minus eleven coulomb metres.
+
+00:05:19.188 --> 00:05:22.188
+External field is two times ten to the fifth newtons per coulomb.
+
+00:05:23.068 --> 00:05:25.008
+Rotate slowly from parallel to perpendicular.
+
+00:05:25.608 --> 00:05:27.068
+What sign should external work have?
+
+00:05:27.068 --> 00:05:28.288
+Think first.
+
+00:05:28.828 --> 00:05:32.828
+You move away from the minimum energy orientation, so stored energy increases.
+
+00:05:33.488 --> 00:05:36.008
+The increase is p E, eight microjoules.
+
+00:05:36.788 --> 00:05:40.468
+External work is plus eight microjoules, while field work is minus eight.
+
+00:05:41.008 --> 00:05:44.488
+We assumed negligible kinetic energy change and no other transfers.
+
+00:05:45.368 --> 00:05:48.528
+Zero torque at the starting alignment does not mean zero work over the entire
+
+00:05:48.528 --> 00:05:48.928
+rotation.
+
+00:05:49.428 --> 00:05:51.688
+And a zero net force does not mean zero torque.
+
+00:05:52.308 --> 00:05:56.568
+For JEE, state the source geometry, whether a far field approximation applies,
+
+00:05:56.568 --> 00:05:59.348
+the potential reference and whose work is requested.
+
+00:06:00.028 --> 00:06:03.108
+Then the signs and equations tell one consistent physical story.

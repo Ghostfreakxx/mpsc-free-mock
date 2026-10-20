@@ -1,0 +1,358 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.900
+Welcome back.
+
+00:00:01.740 --> 00:00:04.200
+What connects a falling ball with a satellite above Earth?
+
+00:00:04.980 --> 00:00:06.480
+Both accelerate because of gravity.
+
+00:00:07.200 --> 00:00:11.360
+The satellite has enough sideways motion to keep falling around Earth instead
+
+00:00:11.360 --> 00:00:12.340
+of reaching the surface.
+
+00:00:13.140 --> 00:00:14.660
+We will build that idea carefully.
+
+00:00:15.600 --> 00:00:19.400
+Newton's gravitational law says the attractive force between two point masses
+
+00:00:19.400 --> 00:00:23.980
+equals capital G times the two masses, divided by the square of their
+
+00:00:23.980 --> 00:00:24.440
+separation.
+
+00:00:25.420 --> 00:00:27.860
+Capital G is the universal gravitational constant.
+
+00:00:28.540 --> 00:00:32.540
+It is not the same as little g, the gravitational acceleration at a particular
+
+00:00:32.540 --> 00:00:32.920
+place.
+
+00:00:33.740 --> 00:00:38.100
+For an object outside a spherically symmetric planet, the planet attracts it as
+
+00:00:38.100 --> 00:00:40.700
+though the planet's mass were at its centre.
+
+00:00:40.700 --> 00:00:44.220
+That means the distance in the denominator is measured from the centre, not
+
+00:00:44.220 --> 00:00:44.860
+from the surface.
+
+00:00:45.960 --> 00:00:47.640
+Here is a quick ratio problem.
+
+00:00:48.000 --> 00:00:50.440
+Keep both masses fixed and double their separation.
+
+00:00:51.100 --> 00:00:52.240
+What happens to the force?
+
+00:00:53.040 --> 00:00:53.660
+Take a moment.
+
+00:00:54.200 --> 00:00:58.680
+The denominator becomes four times larger, so the force becomes one quarter as
+
+00:00:58.680 --> 00:00:58.940
+large.
+
+00:00:59.860 --> 00:01:03.420
+If one mass also doubles, the new force is half the original force.
+
+00:01:04.740 --> 00:01:06.740
+Ratios often save time in JEE problems.
+
+00:01:07.920 --> 00:01:12.060
+Finally, the two bodies feel equal and opposite gravitational forces, but their
+
+00:01:12.060 --> 00:01:14.860
+accelerations need not be equal because their masses differ.
+
+00:01:15.000 --> 00:01:19.140
+Now divide the gravitational force on a small object by its mass.
+
+00:01:19.780 --> 00:01:24.000
+The mass cancels, leaving little g equal to capital G times the planet's mass
+
+00:01:24.000 --> 00:01:26.420
+divided by distance from the centre squared.
+
+00:01:27.180 --> 00:01:31.260
+This explains why different objects have the same gravitational acceleration at
+
+00:01:31.260 --> 00:01:34.960
+the same location when we neglect air resistance and other forces.
+
+00:01:35.860 --> 00:01:40.260
+Let Earth's radius be capital R and the object's height above the surface be h.
+
+00:01:40.880 --> 00:01:43.280
+Its distance from Earth's centre is R plus h.
+
+00:01:44.200 --> 00:01:48.560
+Compare gravity there with gravity at the surface: the ratio is R divided by R
+
+00:01:48.560 --> 00:01:49.760
+plus h, all squared.
+
+00:01:51.040 --> 00:01:53.200
+Suppose the height equals one Earth radius.
+
+00:01:53.780 --> 00:01:55.460
+Is gravity half its surface value?
+
+00:01:56.220 --> 00:01:57.280
+Pause before answering.
+
+00:01:57.880 --> 00:02:02.240
+The centre distance is two R, so gravity is one quarter, not one half.
+
+00:02:03.120 --> 00:02:06.940
+If the surface value is ten metres per second squared in a problem, the new
+
+00:02:06.940 --> 00:02:08.440
+value is two point five.
+
+00:02:08.980 --> 00:02:13.860
+A two kilogram object then has gravitational force five newtons, while its mass
+
+00:02:13.860 --> 00:02:15.020
+remains two kilograms.
+
+00:02:16.020 --> 00:02:18.980
+These equations use a spherical, nonrotating planet model.
+
+00:02:19.680 --> 00:02:23.900
+Do not use the exterior inverse square formula inside Earth by simply inserting
+
+00:02:23.900 --> 00:02:24.860
+a smaller radius.
+
+00:02:25.560 --> 00:02:28.800
+The mass distribution inside the chosen radius matters there.
+
+00:02:28.920 --> 00:02:32.320
+Our energy lesson used m g h near Earth's surface.
+
+00:02:33.100 --> 00:02:37.580
+For large changes in distance, gravity is not constant, so we need a more
+
+00:02:37.580 --> 00:02:38.040
+general expression.
+
+00:02:38.980 --> 00:02:42.740
+Choose gravitational potential energy to be zero infinitely far from an
+
+00:02:42.740 --> 00:02:43.400
+isolated planet.
+
+00:02:44.120 --> 00:02:48.120
+At distance r outside that planet, the potential energy of the planet and
+
+00:02:48.120 --> 00:02:52.940
+object system is minus capital G times M times m divided by r.
+
+00:02:53.380 --> 00:02:54.020
+Why negative?
+
+00:02:54.260 --> 00:02:58.660
+You must supply energy to separate the initially stationary masses to infinity.
+
+00:02:59.340 --> 00:03:02.480
+Their initial energy is therefore below the zero level chosen there.
+
+00:03:03.160 --> 00:03:07.040
+Negative does not mean impossible or unphysical; it reflects the reference
+
+00:03:07.040 --> 00:03:07.300
+level.
+
+00:03:08.100 --> 00:03:12.060
+Let us move an object from radius R to radius two R.
+
+00:03:12.060 --> 00:03:14.900
+Initially the energy is minus G M m over R.
+
+00:03:15.560 --> 00:03:18.900
+Finally it is minus G M m over two R.
+
+00:03:18.900 --> 00:03:23.180
+Final minus initial gives a positive increase, G M m over two R.
+
+00:03:23.180 --> 00:03:25.760
+Moving outward makes the energy less negative.
+
+00:03:26.420 --> 00:03:30.280
+If you lift the object slowly with negligible change in kinetic energy, your
+
+00:03:30.280 --> 00:03:33.780
+work equals that increase, and gravity does the opposite work.
+
+00:03:34.400 --> 00:03:37.580
+For a small height compared with the planet's radius, this change is
+
+00:03:37.580 --> 00:03:40.040
+approximately m g h using surface g.
+
+00:03:40.740 --> 00:03:44.480
+Always distinguish potential energy from gravitational potential, which is
+
+00:03:44.480 --> 00:03:45.980
+potential energy per unit mass.
+
+00:03:46.224 --> 00:03:50.184
+Picture a satellite moving in a circular orbit around a much more massive
+
+00:03:50.184 --> 00:03:50.564
+planet.
+
+00:03:51.184 --> 00:03:55.164
+Its speed can stay constant while its velocity changes, because the direction
+
+00:03:55.164 --> 00:03:55.824
+keeps turning.
+
+00:03:56.864 --> 00:03:58.424
+Gravity provides the inward acceleration.
+
+00:03:59.164 --> 00:04:03.424
+There is no extra centripetal force to add to gravity: centripetal describes
+
+00:04:03.424 --> 00:04:05.324
+the role of the net inward force.
+
+00:04:06.184 --> 00:04:10.144
+Equate G M m over r squared to m v squared over r.
+
+00:04:10.144 --> 00:04:13.164
+Cancel the satellite mass and one factor of r.
+
+00:04:13.824 --> 00:04:19.524
+The result is v squared equals G M over r, so circular orbital speed is the
+
+00:04:19.524 --> 00:04:21.044
+square root of G M over r.
+
+00:04:21.344 --> 00:04:23.764
+A larger circular orbit has a lower speed.
+
+00:04:24.364 --> 00:04:28.124
+For an ideal planet with surface gravity ten metres per second squared and
+
+00:04:28.124 --> 00:04:32.684
+radius six point four million metres, G M equals surface g times R squared.
+
+00:04:33.164 --> 00:04:37.844
+The formal circular speed at radius R is therefore the square root of g R:
+
+00:04:37.844 --> 00:04:39.664
+eight thousand metres per second.
+
+00:04:40.364 --> 00:04:42.804
+At four R it is four thousand metres per second.
+
+00:04:43.504 --> 00:04:47.144
+These are ideal model values, not instructions for flying at the surface.
+
+00:04:47.724 --> 00:04:52.264
+The orbital period is circumference divided by speed, giving two pi times the
+
+00:04:52.264 --> 00:04:55.264
+square root of r cubed over G M.
+
+00:04:55.264 --> 00:04:58.244
+Increasing radius fourfold makes the period eight times longer.
+
+00:04:59.124 --> 00:05:02.464
+Astronauts feel weightless because they and their spacecraft are in free fall
+
+00:05:02.464 --> 00:05:03.672
+together, not because gravity has disappeared.
+
+00:05:03.672 --> 00:05:08.732
+How fast must an object start to escape an isolated planet without further
+
+00:05:08.732 --> 00:05:09.152
+propulsion?
+
+00:05:10.112 --> 00:05:14.552
+Use energy, and neglect atmosphere, planet rotation, and other celestial
+
+00:05:14.552 --> 00:05:14.992
+bodies.
+
+00:05:15.612 --> 00:05:20.332
+At the minimum escape speed, the object approaches infinity with its speed
+
+00:05:20.332 --> 00:05:21.112
+tending to zero.
+
+00:05:22.012 --> 00:05:24.792
+Its final total mechanical energy is zero.
+
+00:05:25.772 --> 00:05:30.292
+Initially, kinetic energy plus gravitational potential energy must also be
+
+00:05:30.292 --> 00:05:30.572
+zero.
+
+00:05:31.452 --> 00:05:36.312
+One half m v squared minus G M m over r equals zero.
+
+00:05:37.072 --> 00:05:40.952
+Solving gives escape speed equal to the square root of two G M over r.
+
+00:05:41.792 --> 00:05:43.212
+The object's mass cancels.
+
+00:05:44.232 --> 00:05:48.572
+Compare this with circular speed at the same radius: escape speed is the square
+
+00:05:48.572 --> 00:05:50.312
+root of two times circular speed.
+
+00:05:51.232 --> 00:05:55.972
+For our ideal planet, the circular speed at radius R was eight kilometres per
+
+00:05:55.972 --> 00:05:56.272
+second.
+
+00:05:56.832 --> 00:06:00.652
+Multiply by approximately one point four one four to get about eleven point
+
+00:06:00.652 --> 00:06:02.292
+three kilometres per second.
+
+00:06:03.612 --> 00:06:07.472
+Try a comparison: a planet has the same radius but four times the mass.
+
+00:06:08.192 --> 00:06:11.892
+Its escape speed doubles, because speed depends on the square root of mass.
+
+00:06:12.792 --> 00:06:15.612
+Escape does not mean gravity suddenly switches off at a boundary.
+
+00:06:16.592 --> 00:06:18.932
+Gravity weakens continuously as the object moves away.
+
+00:06:19.672 --> 00:06:24.172
+Our result is an energy threshold for an unpowered departure, not a rule that
+
+00:06:24.172 --> 00:06:26.592
+every powered rocket must reach that speed immediately.
+
+00:06:27.812 --> 00:06:31.812
+Finish by checking centre distance, your planet model, and whether the question
+
+00:06:31.812 --> 00:06:35.312
+asks for force, orbital speed, period, or escape speed.

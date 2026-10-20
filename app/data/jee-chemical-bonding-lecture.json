@@ -1,0 +1,446 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script. Read every sentence completely and precisely, including the final sentence. Do not summarize.",
+  "title": "Chemical bonding: from electrons to shape and properties",
+  "subject": "Chemistry",
+  "unit": 3,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 Chemistry syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: covalent bonding",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-2-covalent-bonding"
+    },
+    {
+      "title": "OpenStax: shape and polarity",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-6-molecular-structure-and-polarity"
+    },
+    {
+      "title": "OpenStax: hybrid orbitals",
+      "url": "https://openstax.org/books/chemistry-2e/pages/8-2-hybrid-atomic-orbitals"
+    },
+    {
+      "title": "OpenStax: molecular orbitals",
+      "url": "https://openstax.org/books/chemistry-2e/pages/8-4-molecular-orbital-theory"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Energy, ionic lattices and polarization",
+      "formula": "Smaller ions and larger charges strengthen comparable lattices",
+      "script": "Welcome to Chemical Bonding. This recorded Chemistry class uses an AI generated Marin voice. Bond formation can lower energy through interactions between nuclei and electrons. The octet rule is a useful pattern, not the physical cause of every bond. Electron deficient species, odd electron species and expanded valence shell descriptions show its limits. An ionic solid is an extended lattice, not a collection of isolated pairs held only by the act of electron transfer. For comparable structures, greater ionic charges and smaller separations strengthen electrostatic attraction. In a Born Haber cycle, add all enthalpy steps with their stated signs. Lattice formation from gaseous ions releases energy, while separating the solid into gaseous ions requires energy; tables may use either convention. Fajans's rules describe polarization and covalent character. A small, highly charged cation more strongly distorts a neighbouring electron cloud. A large, readily polarizable anion is more easily distorted. Thus lithium iodide has greater covalent character than lithium fluoride in the usual comparison. The model describes trends, not a sharp boundary dividing every bond into purely ionic or purely covalent. A quantitative lattice enthalpy calculation also needs consistent phases, stoichiometric amounts and all the necessary energy data.",
+      "points": [
+        "Small cation · High charge density · More polarization",
+        "Large anion · More polarizable · More covalency",
+        "Lattice formation · Gas ions → solid · Energy released"
+      ],
+      "board": {
+        "heading": "Energy, ionic lattices and polarization",
+        "columns": [
+          "Comparison",
+          "Relevant feature",
+          "Consequence"
+        ],
+        "rows": [
+          [
+            "Small cation",
+            "High charge density",
+            "More polarization"
+          ],
+          [
+            "Large anion",
+            "More polarizable",
+            "More covalency"
+          ],
+          [
+            "Lattice formation",
+            "Gas ions → solid",
+            "Energy released"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Lewis electrons and formal charges",
+      "formula": "Formal charge = valence − nonbonding − bonding/2",
+      "script": "Start a Lewis structure by counting valence electrons from all atoms. Add electrons for negative charge and subtract for positive charge. Draw a plausible connected skeleton, fill terminal shells where appropriate, then place remaining electrons and inspect the central atom. Carbon dioxide has sixteen valence electrons. Two carbon oxygen double bonds use eight electrons, and two lone pairs on each oxygen use the other eight. Each double bond still counts as one electron domain for shape. Hydrogen requires a duet, not an octet. Formal charge equals valence electrons minus nonbonding electrons minus half the bonding electrons. In ammonium, nitrogen has four single bonds and no lone pair. Five minus zero minus four gives formal charge plus one. Each hydrogen has formal charge zero, so the total is plus one as required. Formal charge differs from oxidation number and from an experimentally inferred partial charge. In one carbonate contributor, the double bonded oxygen has formal charge zero and the two singly bonded oxygens each have minus one, giving the ion's total minus two. Every proposed drawing must satisfy both the electron inventory and the net charge before its stability is compared with alternatives.",
+      "points": [
+        "CO₂ · 4 + 2×6 = 16 · Two C=O bonds",
+        "NH₄⁺ · 5 + 4 − 1 = 8 · N formal charge +1",
+        "CO₃²⁻ · 4 + 18 + 2 = 24 · Total charge −2"
+      ],
+      "board": {
+        "heading": "Lewis electrons and formal charges",
+        "columns": [
+          "Species",
+          "Valence count",
+          "Check"
+        ],
+        "rows": [
+          [
+            "CO₂",
+            "4 + 2×6 = 16",
+            "Two C=O bonds"
+          ],
+          [
+            "NH₄⁺",
+            "5 + 4 − 1 = 8",
+            "N formal charge +1"
+          ],
+          [
+            "CO₃²⁻",
+            "4 + 18 + 2 = 24",
+            "Total charge −2"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Resonance describes delocalization",
+      "formula": "Contributors: same nuclei, different electron placement",
+      "script": "Resonance contributors keep atomic positions and connectivity unchanged while changing electron placement. They are not separate molecules rapidly switching between drawings. The actual electronic structure is delocalized and cannot always be represented by one localized Lewis structure. Carbonate has three equivalent contributors, each with one carbon oxygen double bond in a different position. Its three carbon oxygen bonds are equivalent in the ideal symmetric ion. The simple average Lewis bond order is four thirds, intermediate between a single and double bond. In ozone, two equivalent contributors place the double bond on opposite sides, and the simple average bond order is one point five. Resonance forms need not always contribute equally. Equivalent forms have equal weight, while non-equivalent contributors differ in importance according to features such as octets, charge separation and charge placement. Moving an atom or a proton creates a different structural arrangement, not merely another resonance contributor. Curved electron arrows begin at an electron pair, not at a positive charge. Delocalization can affect bond length, stabilization and chemical reactivity. Use the drawings to explain these consequences rather than interpreting the resonance arrow as an equilibrium between isolable species.",
+      "points": [
+        "CO₃²⁻ · Three C–O · 4/3",
+        "O₃ · Two O–O · 1.5",
+        "Contributor change · Electrons move · Nuclei stay fixed"
+      ],
+      "board": {
+        "heading": "Resonance describes delocalization",
+        "columns": [
+          "System",
+          "Equivalent bonds",
+          "Simple mean order"
+        ],
+        "rows": [
+          [
+            "CO₃²⁻",
+            "Three C–O",
+            "4/3"
+          ],
+          [
+            "O₃",
+            "Two O–O",
+            "1.5"
+          ],
+          [
+            "Contributor change",
+            "Electrons move",
+            "Nuclei stay fixed"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "VSEPR from two to six domains",
+      "formula": "Count domains, then distinguish arrangement from shape",
+      "script": "VSEPR begins with electron domains around the central atom. A multiple bond counts as one domain, while a lone pair is another domain. Two domains give a linear arrangement, three trigonal planar, and four tetrahedral. Carbon dioxide is linear. Ammonia has three bond domains and one lone pair: tetrahedral electron arrangement but trigonal pyramidal molecular shape. Water has two bonds and two lone pairs and is bent. Five domains use a trigonal bipyramidal reference arrangement. In the introductory model, a lone pair prefers an equatorial site because it encounters fewer ninety degree interactions. Sulfur tetrafluoride has four bonds and one lone pair and is seesaw shaped. Chlorine trifluoride has three bonds and two lone pairs and is T shaped. Xenon difluoride has two bonds and three lone pairs and is linear. Six domains use an octahedral reference arrangement. Sulfur hexafluoride is octahedral; xenon tetrafluoride has four bonds and two opposite lone pairs and is square planar. These shape rules are useful models. Exact bond angles and lengths depend on the species, and a shape name alone does not prove a literal d orbital hybridization mechanism in hypervalent bonding.",
+      "points": [
+        "SF₄ · 4 bonds + 1 LP · Seesaw",
+        "ClF₃ · 3 bonds + 2 LP · T shaped",
+        "XeF₄ · 4 bonds + 2 LP · Square planar"
+      ],
+      "board": {
+        "heading": "VSEPR from two to six domains",
+        "columns": [
+          "Molecule",
+          "Domains",
+          "Molecular shape"
+        ],
+        "rows": [
+          [
+            "SF₄",
+            "4 bonds + 1 LP",
+            "Seesaw"
+          ],
+          [
+            "ClF₃",
+            "3 bonds + 2 LP",
+            "T shaped"
+          ],
+          [
+            "XeF₄",
+            "4 bonds + 2 LP",
+            "Square planar"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Add bond dipoles as vectors",
+      "formula": "Polar bonds can cancel in a symmetric molecule",
+      "script": "A polar bond does not automatically make the entire molecule polar. Bond dipoles must be combined with directions and molecular geometry. Carbon dioxide has polar carbon oxygen bonds, but in the ideal linear molecule the equal opposite contributions cancel. Bent water does not have this cancellation. Trigonal planar boron trifluoride and tetrahedral carbon tetrachloride are other familiar symmetric examples with zero net permanent molecular dipole. Replacing one terminal chlorine in carbon tetrachloride by hydrogen breaks the symmetry; chloroform has a nonzero molecular dipole. Lone pairs can influence both geometry and the full charge distribution. Ammonia and nitrogen trifluoride are both pyramidal, but their molecular dipoles differ because the bond contributions align differently with the overall electronic distribution. Do not rank dipoles solely by central atom electronegativity or by counting polar bonds. For two equal dipole vectors separated by one hundred eighty degrees, the sum is zero. If the angle is smaller, the resultant generally is not zero. Molecular dipole is an observable property of the complete charge distribution; individual bond arrows provide an approximate explanatory model. Always establish the actual shape before claiming cancellation.",
+      "points": [
+        "CO₂ · Linear, symmetric · Zero",
+        "H₂O · Bent · Nonzero",
+        "CCl₄ · Tetrahedral, symmetric · Zero"
+      ],
+      "board": {
+        "heading": "Add bond dipoles as vectors",
+        "columns": [
+          "Molecule",
+          "Shape",
+          "Net permanent dipole"
+        ],
+        "rows": [
+          [
+            "CO₂",
+            "Linear, symmetric",
+            "Zero"
+          ],
+          [
+            "H₂O",
+            "Bent",
+            "Nonzero"
+          ],
+          [
+            "CCl₄",
+            "Tetrahedral, symmetric",
+            "Zero"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Sigma, pi and localized hybrid orbitals",
+      "formula": "C₂H₄: 5σ + 1π; C₂H₂: 3σ + 2π",
+      "script": "In valence bond language, head on overlap along the internuclear axis makes a sigma bond, while side on overlap makes a pi bond. An ordinary double bond has one sigma and one pi bond; a triple bond has one sigma and two pi bonds. Count every bond in the whole molecule, including those to hydrogen. Ethene has four carbon hydrogen sigma bonds and one carbon carbon sigma bond, plus one pi bond. Its total is five sigma and one pi. Each carbon is described by three sp two hybrid orbitals in a planar arrangement, with an unhybridized p orbital forming the pi overlap. Ethyne has two carbon hydrogen sigma bonds and one carbon carbon sigma bond, plus two pi bonds. Its total is three sigma and two pi. Its carbons are described as sp hybridized and linear. Methane is described using sp three hybrids in a tetrahedral arrangement. Rotation that destroys a pi overlap is energetically restricted, unlike the simplified picture of free rotation about an isolated sigma bond. Hybridization is a localized model connecting orbital combinations with bonding patterns, not a directly measured label that independently proves every molecular geometry.",
+      "points": [
+        "CH₄ · 4 · 0",
+        "C₂H₄ · 5 · 1",
+        "C₂H₂ · 3 · 2"
+      ],
+      "board": {
+        "heading": "Sigma, pi and localized hybrid orbitals",
+        "columns": [
+          "Molecule",
+          "Sigma bonds",
+          "Pi bonds"
+        ],
+        "rows": [
+          [
+            "CH₄",
+            "4",
+            "0"
+          ],
+          [
+            "C₂H₄",
+            "5",
+            "1"
+          ],
+          [
+            "C₂H₂",
+            "3",
+            "2"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Molecular orbitals, bond order and oxygen",
+      "formula": "Bond order = (bonding electrons − antibonding electrons)/2",
+      "script": "Molecular orbitals extend across a molecule. Compatible atomic wavefunctions combine into bonding and antibonding combinations. Fill these orbitals according to their energies, Pauli's limit and Hund's rule. Bond order is half the difference between bonding and antibonding electron counts. Hydrogen molecule has two bonding electrons and no antibonding electrons, giving bond order one. The elementary helium molecule configuration fills both corresponding orbitals and has bond order zero, so that model predicts no ordinary stable covalent helium dimer. Weakly bound helium pairs involve physics beyond this simple bonding picture. Oxygen has two unpaired electrons in degenerate pi antibonding orbitals, explaining its paramagnetism. Its bond order is two. Removing one antibonding electron to make oxygen molecular cation raises bond order to two point five and leaves one unpaired electron. Adding one to make superoxide lowers bond order to one point five and leaves one unpaired electron. Adding two to make peroxide gives bond order one with the relevant electrons paired. Within this related series, greater bond order generally correlates with shorter and stronger bonds. Orbital energy ordering differs among diatomic molecules, so do not copy one molecular orbital diagram blindly onto every species.",
+      "points": [
+        "O₂⁺ · 2.5 · 1",
+        "O₂ · 2 · 2",
+        "O₂⁻ · 1.5 · 1"
+      ],
+      "board": {
+        "heading": "Molecular orbitals, bond order and oxygen",
+        "columns": [
+          "Species",
+          "Bond order",
+          "Unpaired electrons"
+        ],
+        "rows": [
+          [
+            "O₂⁺",
+            "2.5",
+            "1"
+          ],
+          [
+            "O₂",
+            "2",
+            "2"
+          ],
+          [
+            "O₂⁻",
+            "1.5",
+            "1"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Hydrogen bonding and physical properties",
+      "formula": "Donor + available acceptor; inter- versus intramolecular",
+      "script": "Hydrogen bonding requires an appropriate donor and acceptor. In common introductory examples, a hydrogen bonded to nitrogen, oxygen or fluorine interacts with a suitable lone pair on another electronegative atom. Do not assume that every hydrogen atom or every lone pair is equally effective. Water can both donate and accept hydrogen bonds and forms an extended network. This helps explain its unusually high boiling point relative to comparable small hydrides and the open structure of ordinary ice. Intermolecular hydrogen bonds link different molecules. Intramolecular hydrogen bonds form within one molecule and may compete with interactions with neighbours or solvent. Compare ethanol and dimethyl ether: both have two carbons, six hydrogens and one oxygen, but ethanol has an oxygen hydrogen donor while dimethyl ether does not. Ether can accept hydrogen bonds from water but cannot form the same self associated donor network as ethanol. Ethanol consequently has the higher normal boiling point. Solubility and boiling point also depend on molecular size, shape, dispersion forces and other interactions, so hydrogen bonding is not the only variable. Use the twelve original questions to review electron counts, shapes, dipoles and orbital models. Further lattice cycles and complete molecular orbital diagrams remain useful practice.",
+      "points": [
+        "Water · Yes · Yes",
+        "Ethanol · Yes · Yes",
+        "Dimethyl ether · No O–H donor · Yes"
+      ],
+      "board": {
+        "heading": "Hydrogen bonding and physical properties",
+        "columns": [
+          "Substance",
+          "Donor in pure sample?",
+          "Accepts from water?"
+        ],
+        "rows": [
+          [
+            "Water",
+            "Yes",
+            "Yes"
+          ],
+          [
+            "Ethanol",
+            "Yes",
+            "Yes"
+          ],
+          [
+            "Dimethyl ether",
+            "No O–H donor",
+            "Yes"
+          ]
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Total valence electrons in CO2 are:",
+      "options": [
+        "8",
+        "12",
+        "16",
+        "18"
+      ],
+      "answer": 2,
+      "explanation": "Carbon contributes four and the two oxygen atoms contribute twelve: total sixteen."
+    },
+    {
+      "question": "Molecular shape of NH3 is:",
+      "options": [
+        "Trigonal planar",
+        "Trigonal pyramidal",
+        "Linear",
+        "Square planar"
+      ],
+      "answer": 1,
+      "explanation": "Three bonded atoms and one lone pair produce a trigonal-pyramidal molecular shape."
+    },
+    {
+      "question": "Why is ideal CO2 nonpolar despite polar bonds?",
+      "options": [
+        "It has no electrons",
+        "Oxygen is nonpolar in every compound",
+        "Double bonds never have dipoles",
+        "Equal opposite bond dipoles cancel"
+      ],
+      "answer": 3,
+      "explanation": "Its linear symmetric charge distribution has no net molecular dipole."
+    },
+    {
+      "question": "An ordinary double bond consists of:",
+      "options": [
+        "One sigma and one pi bond",
+        "Two sigma bonds",
+        "Two pi bonds only",
+        "One ionic and one metallic bond"
+      ],
+      "answer": 0,
+      "explanation": "Head-on overlap provides one sigma bond, and side-on overlap provides one pi bond."
+    },
+    {
+      "question": "Why is ground-state O2 paramagnetic in elementary MO theory?",
+      "options": [
+        "It has no bonds",
+        "All electrons are paired",
+        "It has two unpaired pi-antibonding electrons",
+        "It contains a permanent cation"
+      ],
+      "answer": 2,
+      "explanation": "Hund filling of degenerate pi-antibonding orbitals leaves two unpaired electrons."
+    },
+    {
+      "question": "Removing one antibonding electron from O2 gives bond order:",
+      "options": [
+        "1.5",
+        "2.5",
+        "0",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "O2 starts at two; reducing the antibonding population by one raises the bond order by one half."
+    },
+    {
+      "question": "In introductory VSEPR, SF4 has which molecular shape?",
+      "options": [
+        "Tetrahedral",
+        "Square planar",
+        "Seesaw",
+        "Trigonal planar"
+      ],
+      "answer": 2,
+      "explanation": "Five domains comprise four bonds and one equatorial lone pair, giving seesaw shape."
+    },
+    {
+      "question": "XeF4 has four bond domains and two opposite lone pairs. Its molecular shape is:",
+      "options": [
+        "Square planar",
+        "Tetrahedral",
+        "Linear",
+        "Octahedral"
+      ],
+      "answer": 0,
+      "explanation": "The six-domain arrangement is octahedral, but the four atomic positions form a square plane."
+    },
+    {
+      "question": "How many sigma and pi bonds are in ethyne, H-C≡C-H?",
+      "options": [
+        "2 sigma, 3 pi",
+        "3 sigma, 2 pi",
+        "1 sigma, 2 pi",
+        "5 sigma, 0 pi"
+      ],
+      "answer": 1,
+      "explanation": "Two C-H sigma bonds and the C-C sigma bond give three; the triple bond also contains two pi bonds."
+    },
+    {
+      "question": "Which statement about equivalent carbonate resonance contributors is correct?",
+      "options": [
+        "They rapidly swap oxygen nuclei",
+        "One C-O bond is permanently unique",
+        "They have different total electron counts",
+        "Their nuclei stay fixed while electron placement differs"
+      ],
+      "answer": 3,
+      "explanation": "Resonance describes delocalization over unchanged nuclear connectivity, not movement of atoms."
+    },
+    {
+      "question": "Which has greater covalent character in the usual Fajans comparison?",
+      "options": [
+        "LiF compared with LiI",
+        "Both are necessarily purely covalent",
+        "LiI compared with LiF",
+        "Neither has ionic interactions"
+      ],
+      "answer": 2,
+      "explanation": "The larger iodide anion is more polarizable, increasing covalent character with the same cation."
+    },
+    {
+      "question": "Dimethyl ether can accept hydrogen bonds from water because:",
+      "options": [
+        "Every C-H is a strong donor",
+        "Its oxygen has available lone pairs",
+        "It contains an O-H bond",
+        "Its electrons are absent"
+      ],
+      "answer": 1,
+      "explanation": "An acceptor need not contain its own O-H donor. Ether oxygen can accept from water."
+    }
+  ]
+}

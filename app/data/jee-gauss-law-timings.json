@@ -1,0 +1,759 @@
+{
+  "duration": 427.1040000000117,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 80.44800000000215
+    },
+    {
+      "start": 80.44800000000215,
+      "end": 164.76000000000445
+    },
+    {
+      "start": 164.76000000000445,
+      "end": 254.976000000007
+    },
+    {
+      "start": 254.976000000007,
+      "end": 334.5360000000091
+    },
+    {
+      "start": 334.5360000000091,
+      "end": 427.1040000000117
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.399999976158142,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.180000066757202,
+      "end": 4.059999942779541,
+      "text": "Imagine holding a flat frame in a breeze.",
+      "chapter": 0
+    },
+    {
+      "start": 4.900000095367432,
+      "end": 7.78000020980835,
+      "text": "Face it into the breeze and plenty of air crosses its opening.",
+      "chapter": 0
+    },
+    {
+      "start": 8.699999809265137,
+      "end": 11.0600004196167,
+      "text": "Turn it edge on and much less crosses.",
+      "chapter": 0
+    },
+    {
+      "start": 12.199999809265137,
+      "end": 17.18000030517578,
+      "text": "Electric flux uses a similar geometric idea, although electric field is not a",
+      "chapter": 0
+    },
+    {
+      "start": 17.18000030517578,
+      "end": 17.700000762939453,
+      "text": "flowing substance.",
+      "chapter": 0
+    },
+    {
+      "start": 18.559999465942383,
+      "end": 23.739999771118164,
+      "text": "For a flat surface in a uniform field, flux equals field magnitude times area",
+      "chapter": 0
+    },
+    {
+      "start": 23.739999771118164,
+      "end": 27.040000915527344,
+      "text": "times the cosine of the angle between the field and the area vector.",
+      "chapter": 0
+    },
+    {
+      "start": 27.68000030517578,
+      "end": 30.6200008392334,
+      "text": "The area vector points perpendicular to the surface.",
+      "chapter": 0
+    },
+    {
+      "start": 31.360000610351562,
+      "end": 34.540000915527344,
+      "text": "That angle is not automatically the angle to the plane of the surface.",
+      "chapter": 0
+    },
+    {
+      "start": 35.08000183105469,
+      "end": 39.2400016784668,
+      "text": "If a question gives the angle to the plane, convert it to the angle to the normal.",
+      "chapter": 0
+    },
+    {
+      "start": 39.7400016784668,
+      "end": 44.09333292643229,
+      "text": "Let's take a field of two hundred newtons per coulomb and area zero point zero",
+      "chapter": 0
+    },
+    {
+      "start": 44.09333292643229,
+      "end": 45,
+      "text": "three square meters.",
+      "chapter": 0
+    },
+    {
+      "start": 45.91999816894531,
+      "end": 50.2599983215332,
+      "text": "If the field makes sixty degrees with the chosen normal, flux is three newton",
+      "chapter": 0
+    },
+    {
+      "start": 50.2599983215332,
+      "end": 51.47999954223633,
+      "text": "square meters per coulomb.",
+      "chapter": 0
+    },
+    {
+      "start": 52.2400016784668,
+      "end": 56.439998626708984,
+      "text": "At ninety degrees to the normal, the field lies along the plane and flux is",
+      "chapter": 0
+    },
+    {
+      "start": 56.439998626708984,
+      "end": 56.70000076293945,
+      "text": "zero.",
+      "chapter": 0
+    },
+    {
+      "start": 57.779998779296875,
+      "end": 59.599998474121094,
+      "text": "Reversing the normal reverses the sign.",
+      "chapter": 0
+    },
+    {
+      "start": 60.34000015258789,
+      "end": 65.18000030517578,
+      "text": "For a curved surface or varying field, split the area into tiny patches and add",
+      "chapter": 0
+    },
+    {
+      "start": 65.18000030517578,
+      "end": 68.72000122070312,
+      "text": "the field dot area contributions, which becomes a surface integral.",
+      "chapter": 0
+    },
+    {
+      "start": 69.18000030517578,
+      "end": 71.73999786376953,
+      "text": "An open surface has a chosen normal convention.",
+      "chapter": 0
+    },
+    {
+      "start": 72.41999816894531,
+      "end": 74.4000015258789,
+      "text": "A closed surface uses outward normals.",
+      "chapter": 0
+    },
+    {
+      "start": 75.33999633789062,
+      "end": 79.43000030517578,
+      "text": "Flux is a scalar, but its sign carries the direction of the field through that",
+      "chapter": 0
+    },
+    {
+      "start": 79.43000030517578,
+      "end": 80.44800000000215,
+      "text": "oriented surface.",
+      "chapter": 0
+    },
+    {
+      "start": 80.44800000000215,
+      "end": 84.76800017166353,
+      "text": "Now close the surface completely, like an imaginary box around a region.",
+      "chapter": 1
+    },
+    {
+      "start": 85.64799980926729,
+      "end": 89.68799977112032,
+      "text": "Gauss's law says its total outward electric flux equals the net enclosed charge",
+      "chapter": 1
+    },
+    {
+      "start": 89.68799977112032,
+      "end": 91.70800022888399,
+      "text": "divided by vacuum permittivity.",
+      "chapter": 1
+    },
+    {
+      "start": 92.8079996566794,
+      "end": 94.40800003814913,
+      "text": "Add enclosed charges algebraically.",
+      "chapter": 1
+    },
+    {
+      "start": 95.14799980926729,
+      "end": 99.06800083923555,
+      "text": "An outside charge does not contribute to the net enclosed charge, even though",
+      "chapter": 1
+    },
+    {
+      "start": 99.06800083923555,
+      "end": 101.08799938965059,
+      "text": "its field can be strong on the surface.",
+      "chapter": 1
+    },
+    {
+      "start": 101.50799946594454,
+      "end": 105.92799954223848,
+      "text": "In the flux integral, the electric field is the total field from all sources.",
+      "chapter": 1
+    },
+    {
+      "start": 105.92799954223848,
+      "end": 110.52799992370821,
+      "text": "For an external source, field entering and leaving makes zero net closed",
+      "chapter": 1
+    },
+    {
+      "start": 110.52799992370821,
+      "end": 111.1480007629416,
+      "text": "surface flux.",
+      "chapter": 1
+    },
+    {
+      "start": 112.20800022888399,
+      "end": 116.96800045776583,
+      "text": "This is the trap to remember: zero enclosed charge means zero net flux, not",
+      "chapter": 1
+    },
+    {
+      "start": 116.96800045776583,
+      "end": 118.20799832153536,
+      "text": "necessarily zero field.",
+      "chapter": 1
+    },
+    {
+      "start": 119.18800167846895,
+      "end": 120.88799862671114,
+      "text": "Put an empty box in a uniform field.",
+      "chapter": 1
+    },
+    {
+      "start": 122.12800030517793,
+      "end": 126.08799938965059,
+      "text": "Field passes through it; flux entering one side cancels flux leaving the other.",
+      "chapter": 1
+    },
+    {
+      "start": 126.88799862671114,
+      "end": 130.36799816894745,
+      "text": "Let's enclose plus two nanocoulombs and minus half a nanocoulomb.",
+      "chapter": 1
+    },
+    {
+      "start": 130.9680004577658,
+      "end": 133.32800106811737,
+      "text": "Net charge is one point five nanocoulombs.",
+      "chapter": 1
+    },
+    {
+      "start": 134.08799938965058,
+      "end": 137.66800122070526,
+      "text": "Divide by eight point eight five times ten to the minus twelve, giving about",
+      "chapter": 1
+    },
+    {
+      "start": 137.66800122070526,
+      "end": 141.42799954223847,
+      "text": "one hundred and sixty nine point five newton square meters per coulomb.",
+      "chapter": 1
+    },
+    {
+      "start": 142.2479992370627,
+      "end": 146.3880024414084,
+      "text": "Move an outside charge around and this total stays the same, provided no charge",
+      "chapter": 1
+    },
+    {
+      "start": 146.3880024414084,
+      "end": 147.24800305175995,
+      "text": "crosses the boundary.",
+      "chapter": 1
+    },
+    {
+      "start": 147.94800000000214,
+      "end": 149.84800152588105,
+      "text": "But individual surface fields change.",
+      "chapter": 1
+    },
+    {
+      "start": 151.16800122070526,
+      "end": 152.84800152588105,
+      "text": "Gauss's law applies to any closed surface.",
+      "chapter": 1
+    },
+    {
+      "start": 153.66800122070526,
+      "end": 157.1080036621115,
+      "text": "To turn it into a simple formula for field strength, however, we need enough",
+      "chapter": 1
+    },
+    {
+      "start": 157.1080036621115,
+      "end": 160.94800000000214,
+      "text": "symmetry to know the field direction and how its magnitude varies over our",
+      "chapter": 1
+    },
+    {
+      "start": 160.94800000000214,
+      "end": 161.62800030517792,
+      "text": "chosen surface.",
+      "chapter": 1
+    },
+    {
+      "start": 162.46799664306855,
+      "end": 164.5079975585959,
+      "text": "The law and the shortcut are not the same thing.",
+      "chapter": 1
+    },
+    {
+      "start": 164.76000000000445,
+      "end": 170.29999996185748,
+      "text": "Consider an isolated thin spherical shell with charge distributed uniformly",
+      "chapter": 2
+    },
+    {
+      "start": 170.29999996185748,
+      "end": 171.26000000000445,
+      "text": "over its surface.",
+      "chapter": 2
+    },
+    {
+      "start": 172.22000003815143,
+      "end": 176.72000003815143,
+      "text": "Symmetry tells us that field must be radial, with the same magnitude everywhere",
+      "chapter": 2
+    },
+    {
+      "start": 176.72000003815143,
+      "end": 178.60000015259234,
+      "text": "at a fixed distance from the center.",
+      "chapter": 2
+    },
+    {
+      "start": 179.64000011444537,
+      "end": 182.54000068664996,
+      "text": "Choose a concentric imaginary sphere of radius r.",
+      "chapter": 2
+    },
+    {
+      "start": 183.3999993896529,
+      "end": 188.2199990844771,
+      "text": "The field is along its normal, so the flux becomes field times four pi r",
+      "chapter": 2
+    },
+    {
+      "start": 188.2199990844771,
+      "end": 188.54000068664996,
+      "text": "squared.",
+      "chapter": 2
+    },
+    {
+      "start": 189.4600007629439,
+      "end": 192.8399999237105,
+      "text": "Outside the shell, the enclosed charge is the entire shell charge.",
+      "chapter": 2
+    },
+    {
+      "start": 192.8399999237105,
+      "end": 197.16000152588336,
+      "text": "Gauss's law gives the same outside field as a point charge at the center.",
+      "chapter": 2
+    },
+    {
+      "start": 198.3000009155318,
+      "end": 200.41999984741656,
+      "text": "Inside the shell, enclosed charge is zero.",
+      "chapter": 2
+    },
+    {
+      "start": 201.16000152588336,
+      "end": 205.00000167847125,
+      "text": "Because the spherical symmetry still makes the field constant and radial on a",
+      "chapter": 2
+    },
+    {
+      "start": 205.00000167847125,
+      "end": 207.17999816894977,
+      "text": "concentric sphere, the field is zero.",
+      "chapter": 2
+    },
+    {
+      "start": 207.8000009155318,
+      "end": 211.37999893188922,
+      "text": "This last conclusion uses symmetry, not zero flux alone.",
+      "chapter": 2
+    },
+    {
+      "start": 212.03999877930133,
+      "end": 216.73999954224078,
+      "text": "For shell charge two nanocoulombs and shell radius ten centimeters, at twenty",
+      "chapter": 2
+    },
+    {
+      "start": 216.73999954224078,
+      "end": 220.87999893188922,
+      "text": "centimeters from the center the field is four hundred and fifty newtons per",
+      "chapter": 2
+    },
+    {
+      "start": 220.87999893188922,
+      "end": 224.94000030518023,
+      "text": "coulomb, using the Coulomb constant nine times ten to the ninth.",
+      "chapter": 2
+    },
+    {
+      "start": 224.94000030518023,
+      "end": 227.73999954224078,
+      "text": "At five centimeters inside, the field is zero.",
+      "chapter": 2
+    },
+    {
+      "start": 228.4600007629439,
+      "end": 232.24000335693805,
+      "text": "These results assume an isolated, uniformly charged thin shell.",
+      "chapter": 2
+    },
+    {
+      "start": 232.99999786377398,
+      "end": 236.7199990844771,
+      "text": "Don't substitute them for a solid insulating sphere with charge spread",
+      "chapter": 2
+    },
+    {
+      "start": 236.7199990844771,
+      "end": 237.49999786377398,
+      "text": "throughout its volume.",
+      "chapter": 2
+    },
+    {
+      "start": 238.06000305176227,
+      "end": 242.8199975585982,
+      "text": "For that different model, enclosed charge inside grows as r cubed, and field",
+      "chapter": 2
+    },
+    {
+      "start": 242.8199975585982,
+      "end": 244.13999725342242,
+      "text": "grows linearly with r.",
+      "chapter": 2
+    },
+    {
+      "start": 244.13999725342242,
+      "end": 249.02000213623492,
+      "text": "Nor should you assume an arbitrary shell remains uniformly charged when",
+      "chapter": 2
+    },
+    {
+      "start": 249.02000213623492,
+      "end": 251.09999633789508,
+      "text": "external sources distort its distribution.",
+      "chapter": 2
+    },
+    {
+      "start": 251.88000274658648,
+      "end": 254.67999816894977,
+      "text": "Always name the distribution before choosing the surface.",
+      "chapter": 2
+    },
+    {
+      "start": 254.976000000007,
+      "end": 259.53599994278653,
+      "text": "For an ideal infinitely long uniformly charged straight line, a sphere is an",
+      "chapter": 3
+    },
+    {
+      "start": 259.53599994278653,
+      "end": 260.0959998855661,
+      "text": "awkward choice.",
+      "chapter": 3
+    },
+    {
+      "start": 260.69599979019864,
+      "end": 262.77600019074185,
+      "text": "A coaxial cylinder matches the symmetry.",
+      "chapter": 3
+    },
+    {
+      "start": 263.5760003814767,
+      "end": 266.83599965668424,
+      "text": "Let the cylinder have radius r and length ell.",
+      "chapter": 3
+    },
+    {
+      "start": 266.83599965668424,
+      "end": 270.6359998474191,
+      "text": "Field points radially away from a positive line and has constant magnitude on",
+      "chapter": 3
+    },
+    {
+      "start": 270.6359998474191,
+      "end": 271.37599961853726,
+      "text": "the curved side.",
+      "chapter": 3
+    },
+    {
+      "start": 272.01600091553433,
+      "end": 276.4160005340646,
+      "text": "On the flat end caps, field lies along the surface rather than through it, so",
+      "chapter": 3
+    },
+    {
+      "start": 276.4160005340646,
+      "end": 277.33600061035855,
+      "text": "their flux is zero.",
+      "chapter": 3
+    },
+    {
+      "start": 277.33600061035855,
+      "end": 281.476000000007,
+      "text": "The side contributes field times two pi r ell.",
+      "chapter": 3
+    },
+    {
+      "start": 281.476000000007,
+      "end": 285.6959993133615,
+      "text": "Enclosed charge is linear charge density lambda times ell.",
+      "chapter": 3
+    },
+    {
+      "start": 285.6959993133615,
+      "end": 288.536001373298,
+      "text": "Substitute into Gauss's law and the cylinder length cancels.",
+      "chapter": 3
+    },
+    {
+      "start": 289.49600045777066,
+      "end": 292.17600076294644,
+      "text": "Field is lambda divided by two pi epsilon zero r.",
+      "chapter": 3
+    },
+    {
+      "start": 292.93599908447965,
+      "end": 297.27599923706754,
+      "text": "Unlike a point charge, this field falls as one over r, not one over r squared.",
+      "chapter": 3
+    },
+    {
+      "start": 297.93599908447965,
+      "end": 301.3760015258859,
+      "text": "Let's use lambda equal to two nanocoulombs per meter and r equal",
+      "chapter": 3
+    },
+    {
+      "start": 301.3760015258859,
+      "end": 307.3160001525949,
+      "text": "to ten centimeters. With k equal to nine times ten to the ninth, the equivalent relation two k",
+      "chapter": 3
+    },
+    {
+      "start": 307.3160001525949,
+      "end": 310.5759984741281,
+      "text": "lambda divided by r gives three hundred and sixty newtons per coulomb.",
+      "chapter": 3
+    },
+    {
+      "start": 311.3760015258859,
+      "end": 314.9559995422433,
+      "text": "Double r and the field becomes one hundred and eighty, not ninety.",
+      "chapter": 3
+    },
+    {
+      "start": 314.9559995422433,
+      "end": 318.5560018310617,
+      "text": "The imaginary cylinder is a calculation surface; it is not a physical",
+      "chapter": 3
+    },
+    {
+      "start": 318.5560018310617,
+      "end": 319.2959996948312,
+      "text": "conducting tube.",
+      "chapter": 3
+    },
+    {
+      "start": 319.91600244141324,
+      "end": 324.23600213623746,
+      "text": "For a finite charged wire, the infinite line approximation is most useful near",
+      "chapter": 3
+    },
+    {
+      "start": 324.23600213623746,
+      "end": 327.93599908447965,
+      "text": "its central region when perpendicular distance is much smaller than the",
+      "chapter": 3
+    },
+    {
+      "start": 327.93599908447965,
+      "end": 328.7760030517648,
+      "text": "distance to either end.",
+      "chapter": 3
+    },
+    {
+      "start": 329.41600244141324,
+      "end": 332.9560033569406,
+      "text": "Without that approximate symmetry, the end cap argument and simple formula",
+      "chapter": 3
+    },
+    {
+      "start": 332.9560033569406,
+      "end": 334.2959996948312,
+      "text": "cannot be used blindly.",
+      "chapter": 3
+    },
+    {
+      "start": 334.5360000000091,
+      "end": 339.25599979020075,
+      "text": "For an ideal infinite nonconducting sheet with uniform surface charge density,",
+      "chapter": 4
+    },
+    {
+      "start": 340.1759998664947,
+      "end": 344.29600022889093,
+      "text": "symmetry gives equal field magnitudes on both sides, perpendicular to the sheet.",
+      "chapter": 4
+    },
+    {
+      "start": 345.1559998855682,
+      "end": 347.5159995422454,
+      "text": "Choose a short imaginary pillbox crossing it.",
+      "chapter": 4
+    },
+    {
+      "start": 348.0960004196258,
+      "end": 349.79600022889093,
+      "text": "No field crosses the curved side.",
+      "chapter": 4
+    },
+    {
+      "start": 350.55600045777277,
+      "end": 356.0360000000091,
+      "text": "Both flat faces contribute outward flux, so the total is two E A.",
+      "chapter": 4
+    },
+    {
+      "start": 356.0360000000091,
+      "end": 361.2559993133636,
+      "text": "The charge inside is sigma times A, and field becomes sigma divided by twice",
+      "chapter": 4
+    },
+    {
+      "start": 361.2559993133636,
+      "end": 362.2160003051849,
+      "text": "vacuum permittivity.",
+      "chapter": 4
+    },
+    {
+      "start": 362.95600007630304,
+      "end": 365.1959998474212,
+      "text": "That factor of two is easy to lose.",
+      "chapter": 4
+    },
+    {
+      "start": 365.93599961853937,
+      "end": 369.936001525888,
+      "text": "If sigma is one point seven seven times ten to the minus nine coulombs per",
+      "chapter": 4
+    },
+    {
+      "start": 369.936001525888,
+      "end": 374.6160018310638,
+      "text": "square meter and epsilon zero is eight point eight five times ten to the minus",
+      "chapter": 4
+    },
+    {
+      "start": 374.6160018310638,
+      "end": 379.5360000000091,
+      "text": "twelve, field magnitude is one hundred newtons per coulomb on either side.",
+      "chapter": 4
+    },
+    {
+      "start": 380.1160018310638,
+      "end": 383.1160018310638,
+      "text": "It does not decrease with distance in this infinite sheet model.",
+      "chapter": 4
+    },
+    {
+      "start": 383.1160018310638,
+      "end": 388.57600091553644,
+      "text": "A finite sheet needs distances small compared with its lateral size and points",
+      "chapter": 4
+    },
+    {
+      "start": 388.57600091553644,
+      "end": 390.23600076294855,
+      "text": "away from edges for this approximation.",
+      "chapter": 4
+    },
+    {
+      "start": 391.2959983215423,
+      "end": 394.6359984741302,
+      "text": "Now contrast a conducting surface in electrostatic equilibrium.",
+      "chapter": 4
+    },
+    {
+      "start": 395.6160018310638,
+      "end": 397.376000152597,
+      "text": "Field within the conducting material is zero.",
+      "chapter": 4
+    },
+    {
+      "start": 397.99599908448175,
+      "end": 402.3759963378997,
+      "text": "A tiny pillbox straddling its surface gets flux only through the outside face,",
+      "chapter": 4
+    },
+    {
+      "start": 402.81599877930597,
+      "end": 406.97600244141535,
+      "text": "giving the field just outside as local surface charge density divided by",
+      "chapter": 4
+    },
+    {
+      "start": 406.97600244141535,
+      "end": 407.69600366211847,
+      "text": "epsilon zero.",
+      "chapter": 4
+    },
+    {
+      "start": 408.3360030517669,
+      "end": 413.09599755860285,
+      "text": "Here sigma means the charge density on that particular conductor face, not",
+      "chapter": 4
+    },
+    {
+      "start": 413.09599755860285,
+      "end": 416.09599755860285,
+      "text": "automatically the total charge divided by both faces of a slab.",
+      "chapter": 4
+    },
+    {
+      "start": 416.7560012207122,
+      "end": 421.17599938965753,
+      "text": "Our closing routine is simple: identify symmetry, choose a closed surface,",
+      "chapter": 4
+    },
+    {
+      "start": 421.81599877930597,
+      "end": 426.5160033569427,
+      "text": "write every flux contribution, count enclosed charge, and only then solve for",
+      "chapter": 4
+    },
+    {
+      "start": 426.5160033569427,
+      "end": 426.8360030517669,
+      "text": "the field.",
+      "chapter": 4
+    }
+  ]
+}

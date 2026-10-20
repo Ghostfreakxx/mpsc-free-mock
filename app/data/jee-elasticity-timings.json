@@ -1,0 +1,729 @@
+{
+  "duration": 400.10400000001067,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 73.8480000000019
+    },
+    {
+      "start": 73.8480000000019,
+      "end": 152.20800000000398
+    },
+    {
+      "start": 152.20800000000398,
+      "end": 235.46400000000625
+    },
+    {
+      "start": 235.46400000000625,
+      "end": 315.9840000000084
+    },
+    {
+      "start": 315.9840000000084,
+      "end": 400.10400000001067
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 0.8600000143051147,
+      "text": "Welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.2400000095367432,
+      "end": 3.4800000190734863,
+      "text": "We have often treated objects as perfectly rigid.",
+      "chapter": 0
+    },
+    {
+      "start": 4.320000171661377,
+      "end": 7.739999771118164,
+      "text": "Real solids can change shape under a force, even when the change is too small",
+      "chapter": 0
+    },
+    {
+      "start": 7.739999771118164,
+      "end": 8.279999732971191,
+      "text": "to notice.",
+      "chapter": 0
+    },
+    {
+      "start": 9.079999923706055,
+      "end": 11.600000381469727,
+      "text": "Pull gently on a metal wire and it becomes slightly longer.",
+      "chapter": 0
+    },
+    {
+      "start": 12.4399995803833,
+      "end": 16.139999389648438,
+      "text": "Remove the force, and within its elastic range it returns to its original",
+      "chapter": 0
+    },
+    {
+      "start": 16.139999389648438,
+      "end": 16.459999084472656,
+      "text": "length.",
+      "chapter": 0
+    },
+    {
+      "start": 17.079999923706055,
+      "end": 19.100000381469727,
+      "text": "That recovery is what elasticity means.",
+      "chapter": 0
+    },
+    {
+      "start": 19.600000381469727,
+      "end": 21.420000076293945,
+      "text": "It does not simply mean easy to stretch.",
+      "chapter": 0
+    },
+    {
+      "start": 21.899999618530273,
+      "end": 25.84000015258789,
+      "text": "A material may be stiff, meaning difficult to deform, and still recover",
+      "chapter": 0
+    },
+    {
+      "start": 25.84000015258789,
+      "end": 26.31999969482422,
+      "text": "elastically.",
+      "chapter": 0
+    },
+    {
+      "start": 26.940000534057617,
+      "end": 31.360000610351562,
+      "text": "If a load leaves a permanent change after removal, that is plastic deformation.",
+      "chapter": 0
+    },
+    {
+      "start": 32.459999084472656,
+      "end": 35.7400016784668,
+      "text": "Imagine bending a paper clip gently, then bending it much farther.",
+      "chapter": 0
+    },
+    {
+      "start": 36.380001068115234,
+      "end": 39.47999954223633,
+      "text": "The small bend may recover; the larger bend may remain.",
+      "chapter": 0
+    },
+    {
+      "start": 40.099998474121094,
+      "end": 44.459999084472656,
+      "text": "We will use a simpler model: a uniform wire stretched slowly along its length,",
+      "chapter": 0
+    },
+    {
+      "start": 44.86000061035156,
+      "end": 47.400001525878906,
+      "text": "with small deformation and negligible self weight.",
+      "chapter": 0
+    },
+    {
+      "start": 48,
+      "end": 49.540000915527344,
+      "text": "There are two limits to keep separate.",
+      "chapter": 0
+    },
+    {
+      "start": 50.119998931884766,
+      "end": 53.18000030517578,
+      "text": "Below the proportional limit, stress is proportional to strain.",
+      "chapter": 0
+    },
+    {
+      "start": 53.70000076293945,
+      "end": 57.959999084472656,
+      "text": "The elastic limit concerns whether the material fully recovers after unloading.",
+      "chapter": 0
+    },
+    {
+      "start": 57.959999084472656,
+      "end": 62.47999954223633,
+      "text": "A material can show nonlinear yet recoverable behaviour, so these limits are",
+      "chapter": 0
+    },
+    {
+      "start": 62.47999954223633,
+      "end": 63.7400016784668,
+      "text": "not automatically identical.",
+      "chapter": 0
+    },
+    {
+      "start": 64.5199966430664,
+      "end": 68.23999786376953,
+      "text": "In JEE questions, read the stated regime before choosing an equation.",
+      "chapter": 0
+    },
+    {
+      "start": 69.0199966430664,
+      "end": 72.5999984741211,
+      "text": "Today we will calculate how much a wire stretches and how much energy that",
+      "chapter": 0
+    },
+    {
+      "start": 72.5999984741211,
+      "end": 73.19999694824219,
+      "text": "stretch stores.",
+      "chapter": 0
+    },
+    {
+      "start": 73.8480000000019,
+      "end": 78.42799992370796,
+      "text": "Suppose two wires carry the same pulling force, but one is thicker.",
+      "chapter": 1
+    },
+    {
+      "start": 79.3480000000019,
+      "end": 82.74799961853218,
+      "text": "The force alone does not describe how intensely each wire is loaded.",
+      "chapter": 1
+    },
+    {
+      "start": 83.86800045776558,
+      "end": 86.9080004196186,
+      "text": "Stress divides the tensile force by the cross sectional area.",
+      "chapter": 1
+    },
+    {
+      "start": 87.98800034332466,
+      "end": 91.38800091552925,
+      "text": "Spreading the same force over a larger area gives less stress.",
+      "chapter": 1
+    },
+    {
+      "start": 92.36800045776558,
+      "end": 97.16799969482612,
+      "text": "In static tension, equal opposite forces at the ends balance the wire overall.",
+      "chapter": 1
+    },
+    {
+      "start": 98.00799984741401,
+      "end": 101.26800007629585,
+      "text": "Do not add their magnitudes and use twice the force in the stress formula.",
+      "chapter": 1
+    },
+    {
+      "start": 101.98799938965034,
+      "end": 104.38800091552925,
+      "text": "Use the tension transmitted through a cross section.",
+      "chapter": 1
+    },
+    {
+      "start": 105.32799954223823,
+      "end": 108.64799923706245,
+      "text": "The unit of stress is newtons per square metre, called the pascal.",
+      "chapter": 1
+    },
+    {
+      "start": 109.70800061035347,
+      "end": 114.02800030517768,
+      "text": "Watch the area conversion: one square millimetre is one millionth of a square",
+      "chapter": 1
+    },
+    {
+      "start": 114.02800030517768,
+      "end": 116.48799938965034,
+      "text": "metre, because both length dimensions are converted.",
+      "chapter": 1
+    },
+    {
+      "start": 117.38800091552925,
+      "end": 121.70800061035347,
+      "text": "A hundred newtons acting over one square millimetre therefore gives one hundred",
+      "chapter": 1
+    },
+    {
+      "start": 121.70800061035347,
+      "end": 123.16799969482612,
+      "text": "million pascals of stress.",
+      "chapter": 1
+    },
+    {
+      "start": 124.00799984741401,
+      "end": 125.46799893188667,
+      "text": "Now describe the deformation.",
+      "chapter": 1
+    },
+    {
+      "start": 126.48799938965034,
+      "end": 129.62799877929876,
+      "text": "Longitudinal strain is extension divided by original length.",
+      "chapter": 1
+    },
+    {
+      "start": 130.12799877929876,
+      "end": 135.20800061035345,
+      "text": "If a two metre wire extends by one millimetre, convert that extension to zero",
+      "chapter": 1
+    },
+    {
+      "start": 135.20800061035345,
+      "end": 136.52800030517767,
+      "text": "point zero zero one metres.",
+      "chapter": 1
+    },
+    {
+      "start": 137.52800030517767,
+      "end": 141.1879963378925,
+      "text": "Divide by two to get zero point zero zero zero five.",
+      "chapter": 1
+    },
+    {
+      "start": 141.1879963378925,
+      "end": 143.62799877929876,
+      "text": "Strain has no unit because it is a ratio of lengths.",
+      "chapter": 1
+    },
+    {
+      "start": 144.44799847412298,
+      "end": 149.2480015258808,
+      "text": "The extension is one millimetre, but the strain is not one millimetre.",
+      "chapter": 1
+    },
+    {
+      "start": 149.2480015258808,
+      "end": 151.96800274658392,
+      "text": "Keeping those quantities separate prevents a very common error.",
+      "chapter": 1
+    },
+    {
+      "start": 152.20800000000398,
+      "end": 157.64800005722444,
+      "text": "In the linear elastic region, longitudinal stress equals Young's modulus times",
+      "chapter": 2
+    },
+    {
+      "start": 157.64800005722444,
+      "end": 158.64800005722444,
+      "text": "longitudinal strain.",
+      "chapter": 2
+    },
+    {
+      "start": 159.747999961857,
+      "end": 164.0880001144449,
+      "text": "Young's modulus, written capital Y, describes the material's resistance to this",
+      "chapter": 2
+    },
+    {
+      "start": 164.0880001144449,
+      "end": 164.44799977112214,
+      "text": "deformation.",
+      "chapter": 2
+    },
+    {
+      "start": 165.60799961853425,
+      "end": 169.74800091553132,
+      "text": "Because strain is dimensionless, Y has the same unit as stress: pascals.",
+      "chapter": 2
+    },
+    {
+      "start": 170.98800068664949,
+      "end": 172.34799938965241,
+      "text": "Rearrange the equation carefully.",
+      "chapter": 2
+    },
+    {
+      "start": 173.3679998474161,
+      "end": 177.56800061035554,
+      "text": "Stress is force over area, and strain is extension over original length.",
+      "chapter": 2
+    },
+    {
+      "start": 177.56800061035554,
+      "end": 183.04800015259187,
+      "text": "Solving for extension gives force times original length, divided by area",
+      "chapter": 2
+    },
+    {
+      "start": 183.04800015259187,
+      "end": 184.28800183105866,
+      "text": "times Young's modulus.",
+      "chapter": 2
+    },
+    {
+      "start": 185.46799832153718,
+      "end": 187.38800030517976,
+      "text": "Let us solve our wire example completely.",
+      "chapter": 2
+    },
+    {
+      "start": 188.30799847412507,
+      "end": 192.56800061035554,
+      "text": "The force is one hundred newtons, the original length is two metres, and the",
+      "chapter": 2
+    },
+    {
+      "start": 192.56800061035554,
+      "end": 194.6879995422403,
+      "text": "area is one square millimetre.",
+      "chapter": 2
+    },
+    {
+      "start": 194.6879995422403,
+      "end": 197.98799877930085,
+      "text": "The material's Young's modulus is two hundred billion pascals.",
+      "chapter": 2
+    },
+    {
+      "start": 198.94800167847077,
+      "end": 201.28800183105866,
+      "text": "First convert the area to one millionth of a square metre.",
+      "chapter": 2
+    },
+    {
+      "start": 201.98799877930085,
+      "end": 204.72800045776765,
+      "text": "The numerator, force times length, is two hundred.",
+      "chapter": 2
+    },
+    {
+      "start": 204.72800045776765,
+      "end": 210.1279981689493,
+      "text": "The denominator, area times modulus, is two hundred thousand.",
+      "chapter": 2
+    },
+    {
+      "start": 210.1279981689493,
+      "end": 214.60800152588288,
+      "text": "Dividing gives zero point zero zero one metres, or one millimetre.",
+      "chapter": 2
+    },
+    {
+      "start": 214.60800152588288,
+      "end": 215.768001373295,
+      "text": "Pause and check it another way.",
+      "chapter": 2
+    },
+    {
+      "start": 216.66799908447663,
+      "end": 220.4280012207071,
+      "text": "Stress is one hundred million pascals; divide by two hundred billion to get",
+      "chapter": 2
+    },
+    {
+      "start": 220.4280012207071,
+      "end": 224.08799725342195,
+      "text": "strain zero point zero zero zero five.",
+      "chapter": 2
+    },
+    {
+      "start": 224.08799725342195,
+      "end": 226.16799908447663,
+      "text": "Multiply by two metres to recover the same extension.",
+      "chapter": 2
+    },
+    {
+      "start": 226.9479978637735,
+      "end": 229.66799908447663,
+      "text": "We assumed the load remains within the proportional region.",
+      "chapter": 2
+    },
+    {
+      "start": 229.66799908447663,
+      "end": 234.28800183105866,
+      "text": "A formula cannot tell us that the material is safe without information about",
+      "chapter": 2
+    },
+    {
+      "start": 234.28800183105866,
+      "end": 234.74800091553132,
+      "text": "its limits.",
+      "chapter": 2
+    },
+    {
+      "start": 235.46400000000625,
+      "end": 239.32399989510208,
+      "text": "Now use the extension equation without repeatedly substituting large numbers.",
+      "chapter": 3
+    },
+    {
+      "start": 240.0439999237123,
+      "end": 243.96400000000625,
+      "text": "Under the same force, two wires of the same material and cross section have",
+      "chapter": 3
+    },
+    {
+      "start": 243.96400000000625,
+      "end": 245.92400003815322,
+      "text": "extension proportional to original length.",
+      "chapter": 3
+    },
+    {
+      "start": 247.3840000763002,
+      "end": 249.14400030518203,
+      "text": "Double the length and the extension doubles.",
+      "chapter": 3
+    },
+    {
+      "start": 249.78399969483047,
+      "end": 250.0439999237123,
+      "text": "Why?",
+      "chapter": 3
+    },
+    {
+      "start": 250.2240002288881,
+      "end": 253.44399954224258,
+      "text": "The same strain acts over twice as much original length.",
+      "chapter": 3
+    },
+    {
+      "start": 254.30400015259414,
+      "end": 258.64400030518203,
+      "text": "Next, keep length and material unchanged but double the radius of a circular",
+      "chapter": 3
+    },
+    {
+      "start": 258.64400030518203,
+      "end": 258.9439995422426,
+      "text": "wire.",
+      "chapter": 3
+    },
+    {
+      "start": 259.96400000000625,
+      "end": 260.6039993896547,
+      "text": "Predict the extension.",
+      "chapter": 3
+    },
+    {
+      "start": 261.24400068665176,
+      "end": 261.7240002288881,
+      "text": "Take a moment.",
+      "chapter": 3
+    },
+    {
+      "start": 262.52399946594863,
+      "end": 266.7039997711244,
+      "text": "Area is pi times radius squared, so doubling the radius makes the area four",
+      "chapter": 3
+    },
+    {
+      "start": 266.7039997711244,
+      "end": 267.3840000763002,
+      "text": "times larger.",
+      "chapter": 3
+    },
+    {
+      "start": 268.1840012207094,
+      "end": 271.28399969483047,
+      "text": "The extension becomes one quarter as large, not one half.",
+      "chapter": 3
+    },
+    {
+      "start": 272.083998931891,
+      "end": 276.4439995422426,
+      "text": "If both length and radius double, the length contributes a factor of two while",
+      "chapter": 3
+    },
+    {
+      "start": 276.4439995422426,
+      "end": 278.86400152588516,
+      "text": "the area contributes a factor of four in the denominator.",
+      "chapter": 3
+    },
+    {
+      "start": 279.583998931891,
+      "end": 281.70400167847305,
+      "text": "The new extension is half the old extension.",
+      "chapter": 3
+    },
+    {
+      "start": 282.6039993896547,
+      "end": 286.30400015259414,
+      "text": "Finally, compare materials using identical force, length, and area.",
+      "chapter": 3
+    },
+    {
+      "start": 286.8240006103578,
+      "end": 289.36400152588516,
+      "text": "A larger Young's modulus produces a smaller extension.",
+      "chapter": 3
+    },
+    {
+      "start": 290.0040009155336,
+      "end": 292.04400183106094,
+      "text": "It is the material stiffness that changes here.",
+      "chapter": 3
+    },
+    {
+      "start": 292.04400183106094,
+      "end": 295.52400137329727,
+      "text": "The stiffness of the whole wire also depends on geometry.",
+      "chapter": 3
+    },
+    {
+      "start": 296.62399984741836,
+      "end": 301.04400183106094,
+      "text": "Writing force equals k times extension gives an effective spring constant k",
+      "chapter": 3
+    },
+    {
+      "start": 301.04400183106094,
+      "end": 303.96400000000625,
+      "text": "equal to area times Young's modulus divided by length.",
+      "chapter": 3
+    },
+    {
+      "start": 304.66399694824844,
+      "end": 308.7240021362367,
+      "text": "A longer wire has smaller k, even though its material has exactly the same",
+      "chapter": 3
+    },
+    {
+      "start": 308.7240021362367,
+      "end": 309.3240006103578,
+      "text": "Young's modulus.",
+      "chapter": 3
+    },
+    {
+      "start": 310.54400183106094,
+      "end": 315.0040009155336,
+      "text": "This distinction is useful whenever a JEE question changes the dimensions but",
+      "chapter": 3
+    },
+    {
+      "start": 315.0040009155336,
+      "end": 315.76400305176406,
+      "text": "not the material.",
+      "chapter": 3
+    },
+    {
+      "start": 315.9840000000084,
+      "end": 318.7040000286186,
+      "text": "Stretching the wire stores elastic energy.",
+      "chapter": 4
+    },
+    {
+      "start": 319.5039999809349,
+      "end": 322.3640001144493,
+      "text": "Why is the energy not simply final force times extension?",
+      "chapter": 4
+    },
+    {
+      "start": 323.28400019074326,
+      "end": 328.5239999618614,
+      "text": "During slow loading from zero, the force is initially zero and increases as the",
+      "chapter": 4
+    },
+    {
+      "start": 328.5239999618614,
+      "end": 328.9840000000084,
+      "text": "wire stretches.",
+      "chapter": 4
+    },
+    {
+      "start": 329.78400019074326,
+      "end": 333.52400091553574,
+      "text": "In the linear elastic model, the force extension graph is a straight line",
+      "chapter": 4
+    },
+    {
+      "start": 333.52400091553574,
+      "end": 334.2039993133629,
+      "text": "through the origin.",
+      "chapter": 4
+    },
+    {
+      "start": 334.9639995422447,
+      "end": 336.52400091553574,
+      "text": "Work is the area under that graph.",
+      "chapter": 4
+    },
+    {
+      "start": 337.12399938965683,
+      "end": 342.02400091553574,
+      "text": "The area is a triangle, so stored energy is one half times final force times",
+      "chapter": 4
+    },
+    {
+      "start": 342.02400091553574,
+      "end": 342.72399977112656,
+      "text": "final extension.",
+      "chapter": 4
+    },
+    {
+      "start": 343.38399961853867,
+      "end": 347.12399938965683,
+      "text": "Equivalently, it is one half k times extension squared.",
+      "chapter": 4
+    },
+    {
+      "start": 348.3640010681236,
+      "end": 352.7240016784752,
+      "text": "For our wire, the final force is one hundred newtons and the extension is one",
+      "chapter": 4
+    },
+    {
+      "start": 352.7240016784752,
+      "end": 355.52400091553574,
+      "text": "millimetre, or zero point zero zero one metres.",
+      "chapter": 4
+    },
+    {
+      "start": 356.28399923706894,
+      "end": 360.3039996948326,
+      "text": "Multiply one half by one hundred by zero point zero zero one.",
+      "chapter": 4
+    },
+    {
+      "start": 360.3039996948326,
+      "end": 362.84400061035996,
+      "text": "The stored energy is zero point zero five joules.",
+      "chapter": 4
+    },
+    {
+      "start": 363.5440013732994,
+      "end": 367.6640003051842,
+      "text": "A sudden application of a constant load is a different dynamical problem; do",
+      "chapter": 4
+    },
+    {
+      "start": 367.6640003051842,
+      "end": 370.26399877930527,
+      "text": "not assume that all its work is stored at the static extension.",
+      "chapter": 4
+    },
+    {
+      "start": 370.9639995422447,
+      "end": 372.8039996948326,
+      "text": "One more graph distinction matters.",
+      "chapter": 4
+    },
+    {
+      "start": 373.5440013732994,
+      "end": 377.5839984741295,
+      "text": "On a force versus extension graph, slope is the wire's spring constant.",
+      "chapter": 4
+    },
+    {
+      "start": 378.3240001525963,
+      "end": 382.52400091553574,
+      "text": "On a stress versus strain graph, the initial linear slope is Young's modulus.",
+      "chapter": 4
+    },
+    {
+      "start": 383.5640018310631,
+      "end": 385.6640003051842,
+      "text": "Before solving, identify the axes.",
+      "chapter": 4
+    },
+    {
+      "start": 386.3039996948326,
+      "end": 390.52400091553574,
+      "text": "Your final checklist is original length, cross sectional area in square metres,",
+      "chapter": 4
+    },
+    {
+      "start": 391.4039981689537,
+      "end": 394.464003356942,
+      "text": "force transmitted through the wire, and the linear elastic assumption.",
+      "chapter": 4
+    },
+    {
+      "start": 395.64400366211777,
+      "end": 399.76399877930527,
+      "text": "Shear, bulk compression, fluids, and thermal expansion need their own lessons.",
+      "chapter": 4
+    }
+  ]
+}

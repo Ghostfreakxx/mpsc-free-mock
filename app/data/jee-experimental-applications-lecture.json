@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "unit": 20,
+  "title": "Experimental-skills applications: corrections, graph slopes and meter loading",
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 official syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "NCERT: measurement experiments",
+      "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXI/physics/kelm102.pdf"
+    },
+    {
+      "title": "NCERT: electrical measurement experiments",
+      "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/physics/lelm303.pdf"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Correct the zero before combining uncertainties",
+      "formula": "Corrected reading = observed reading - zero error; delta_V/V approximately 2 delta_d/d + delta_L/L",
+      "points": [
+        "A positive zero error requires a negative correction.",
+        "Worst-case uncertainty addition is not a standard-deviation calculation.",
+        "Repetition reduces random scatter, not an uncorrected systematic zero."
+      ],
+      "script": "Hey, welcome back. Experimental questions reward careful reasoning more than memorised apparatus names. We will analyse original classroom observations, not pretend we performed these experiments. Use an illustrative vernier with least count zero point zero two millimetres. Its main-scale reading is twelve millimetres and the seventh vernier division coincides. The raw reading is twelve point one four millimetres. When correctly closed, this instrument reads positive zero point zero four millimetres. What correction should we apply? Pause and think about a ruler that adds an unwanted amount. Subtract that positive zero error. Corrected diameter is twelve point one zero millimetres. If a diameter is used in a cylinder-volume calculation, its error matters twice to first order because diameter is squared. Volume is pi d squared L divided by four. For small worst-case bounds, fractional volume uncertainty is approximately twice diameter uncertainty divided by diameter, plus length uncertainty divided by length. Let corrected diameter be twelve point one zero plus or minus zero point zero two millimetres and length forty point zero plus or minus zero point one millimetres. Assume those are the stated bounds after correction, including any relevant zero-correction uncertainty. The resulting fractional bound is about zero point zero zero five eight one, or zero point five eight one percent. This linear bound is not a root-sum-square statistical uncertainty. Do not switch rules without knowing what the question specifies. Repeated measurements can reveal random scatter, but taking many readings does not remove a wrong zero setting. Record units, raw values, corrections and the stated uncertainty model separately. Real instrument work should be supervised and follow the laboratory procedure; this lesson develops observation and calculation skills without asking you to operate unfamiliar equipment."
+    },
+    {
+      "title": "A pendulum graph turns several observations into one estimate",
+      "formula": "Small angle: T^2 = (4 pi^2/g)L; g = 4 pi^2/slope",
+      "points": [
+        "Use length from suspension point to bob centre.",
+        "A T-squared versus L slope has units of seconds squared per metre.",
+        "An intercept can reveal an offset; do not force every experimental fit through zero."
+      ],
+      "script": "For a simple pendulum at small angular amplitude, period is two pi times the square root of length divided by g. Square it and you get a straight-line relation: T squared equals four pi squared divided by g, times length. Plot T squared vertically against length horizontally. A slope of four seconds squared per metre gives g equal to four pi squared divided by four, approximately nine point eight seven metres per second squared. Illustrative points at lengths zero point four, zero point six, zero point eight and one metre have T-squared values one point six, two point four, three point two and four seconds squared. Their slope agrees. Those are constructed teaching data, not a claim of real measured precision. Why time several oscillations? A timing uncertainty of zero point two seconds on one period is much more significant than on twenty periods. For a one-metre pendulum with approximate period two seconds, twenty oscillations take forty seconds. Divide total time by twenty. If the stated total-time bound is zero point two seconds, the period bound is zero point zero one seconds. Suppose length uncertainty is zero point zero zero two metres. Since g is proportional to L divided by T squared, its small worst-case fractional uncertainty is length uncertainty over length plus twice period uncertainty over period. That is zero point zero zero two plus zero point zero one, or one point two percent. A graph fit can use several lengths, but a wrong pivot-to-centre length or timing bias still matters. Check small amplitude, timing convention and the graph intercept. The JEE skill is connecting what you observe to the slope and its units, not just inserting a period into a formula."
+    },
+    {
+      "title": "Your meter can change the circuit you are measuring",
+      "formula": "Apparent R = R parallel RV when the ammeter includes voltmeter current",
+      "points": [
+        "Specify whether the ammeter reads only resistor current or total branch current.",
+        "At a bridge null, galvanometer current vanishes; other currents need not vanish.",
+        "Model instrument loading before interpreting the measured ratio."
+      ],
+      "script": "Now a measurement trap: the instrument is part of the circuit. Connect a voltmeter across a one-kilo-ohm resistor. Let the voltmeter's resistance be ten kilo-ohms, and put the ammeter outside that parallel pair so it reads both currents. If the measured voltage is one volt, resistor current is one milliampere and voltmeter current is zero point one milliampere. The ammeter reads one point one milliamperes. Dividing voltage by that reading gives about nine hundred nine point one ohms, smaller than the actual one thousand. You measured the parallel combination, not the resistor alone. A different placement can introduce the ammeter's series resistance instead. Always draw the instrument connections before choosing a correction. Next, consider an ideal uniform metre bridge of total wire length one hundred centimetres. Unknown resistance X is in the left gap, known resistance two ohms in the right. Balance length measured from the left is forty centimetres. The null condition gives X over two equals forty over sixty. Hence X is four thirds ohms. At null, the galvanometer current is zero because its terminals have equal potential; the supply and bridge-wire currents generally are not zero. If the only small uncertainty were plus or minus zero point one centimetres in that balance length, with known resistance and total wire length treated as exact, the fractional X bound would be one hundred times zero point one divided by forty times sixty. That is about zero point four one seven percent. End corrections, wire nonuniformity, contacts and known-resistor tolerance require extra treatment in a real setup. Keep these assumptions visible. Never connect a classroom bridge or diode experiment directly to household mains. Practical work belongs in a supervised, appropriately rated low-voltage laboratory."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Raw reading 12.14 mm and zero error +0.04 mm give corrected reading:",
+      "options": [
+        "12.18 mm",
+        "12.10 mm",
+        "12.14 mm",
+        "12.04 mm"
+      ],
+      "answer": 1,
+      "explanation": "Subtract the positive zero error."
+    },
+    {
+      "question": "A T-squared versus L graph has slope 4 s squared/m. Estimated g is:",
+      "options": [
+        "4 m/s squared",
+        "39.48 m/s squared",
+        "9.87 m/s squared",
+        "0.25 m/s squared"
+      ],
+      "answer": 2,
+      "explanation": "g = 4 pi squared/slope."
+    },
+    {
+      "question": "Twenty oscillations take 40.0 +/-0.2 s. The period bound is:",
+      "options": [
+        "0.01 s",
+        "0.2 s",
+        "4 s",
+        "0.04 s"
+      ],
+      "answer": 0,
+      "explanation": "Divide total time and its stated bound by 20."
+    },
+    {
+      "question": "An ammeter includes currents through R=1 kilo-ohm and a parallel voltmeter RV=10 kilo-ohm. V/I estimates:",
+      "options": [
+        "11000 ohms",
+        "1000 ohms exactly",
+        "10000 ohms",
+        "About 909.1 ohms"
+      ],
+      "answer": 3,
+      "explanation": "It measures the parallel equivalent of R and RV."
+    },
+    {
+      "question": "A uniform 100 cm bridge has X left, 2 ohms right, and null at 40 cm from the left. X is:",
+      "options": [
+        "3 ohms",
+        "4/3 ohms",
+        "2 ohms",
+        "5 ohms"
+      ],
+      "answer": 1,
+      "explanation": "X/2 = 40/60."
+    }
+  ]
+}

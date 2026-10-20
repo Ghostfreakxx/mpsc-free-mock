@@ -1,0 +1,337 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.380
+Hey, welcome back.
+
+00:00:02.160 --> 00:00:04.200
+Last time we explored water at rest.
+
+00:00:05.060 --> 00:00:09.160
+Today, let's use pressure to lift a load, then follow a fluid as it moves.
+
+00:00:10.080 --> 00:00:14.400
+Picture a hydraulic lift with a small piston connected by liquid to a larger
+
+00:00:14.400 --> 00:00:14.700
+piston.
+
+00:00:15.720 --> 00:00:19.560
+Push on the small piston, and you increase the pressure of the enclosed fluid.
+
+00:00:20.640 --> 00:00:24.540
+Pascal's principle says that applied pressure change is transmitted throughout
+
+00:00:24.540 --> 00:00:25.040
+the fluid.
+
+00:00:25.980 --> 00:00:28.920
+Pressure is shared; force depends on piston area.
+
+00:00:29.680 --> 00:00:33.860
+For ideal pistons at the same height, with negligible friction and piston
+
+00:00:33.860 --> 00:00:39.060
+weight, input force divided by input area equals output force divided by output
+
+00:00:39.060 --> 00:00:39.380
+area.
+
+00:00:40.400 --> 00:00:43.840
+Suppose the output piston has ten times the area of the input piston.
+
+00:00:44.640 --> 00:00:45.660
+Push with fifty newtons.
+
+00:00:46.240 --> 00:00:47.680
+What load force can it balance?
+
+00:00:48.240 --> 00:00:48.920
+Take a moment.
+
+00:00:49.480 --> 00:00:51.700
+Ten times fifty gives five hundred newtons.
+
+00:00:52.400 --> 00:00:53.760
+That feels like a useful bargain.
+
+00:00:54.700 --> 00:00:57.320
+But a bigger force doesn't mean we've created energy.
+
+00:00:58.160 --> 00:00:59.700
+We'll check the distance moved next.
+
+00:01:00.320 --> 00:01:03.600
+If the pistons are at different heights, include the hydrostatic pressure
+
+00:01:03.600 --> 00:01:04.040
+difference.
+
+00:01:04.940 --> 00:01:08.680
+Pascal's principle concerns the transmitted pressure change; it doesn't erase
+
+00:01:08.680 --> 00:01:11.000
+the existing variation of pressure with depth.
+
+00:01:11.256 --> 00:01:13.736
+Let's see where the bargain comes from.
+
+00:01:14.556 --> 00:01:18.216
+Our liquid is approximately incompressible, and we're neglecting leaks.
+
+00:01:19.056 --> 00:01:22.816
+When the small piston moves down, the volume it pushes into the connecting
+
+00:01:22.816 --> 00:01:26.396
+region must equal the volume raised beneath the large piston.
+
+00:01:27.696 --> 00:01:29.876
+Piston volume is area times distance moved.
+
+00:01:30.676 --> 00:01:35.856
+So input area times input displacement equals output area times output
+
+00:01:35.856 --> 00:01:36.316
+displacement.
+
+00:01:37.016 --> 00:01:41.896
+If the large area is ten times the small area, the large piston travels only
+
+00:01:41.896 --> 00:01:43.056
+one tenth as far.
+
+00:01:43.996 --> 00:01:48.096
+Push the small piston down twenty centimetres, and the large piston rises two
+
+00:01:48.096 --> 00:01:49.196
+centimetres.
+
+00:01:49.196 --> 00:01:49.956
+Now check the work.
+
+00:01:50.696 --> 00:01:54.036
+Fifty newtons times zero point two zero metres is ten joules.
+
+00:01:54.036 --> 00:01:58.716
+Five hundred newtons times zero point zero two metres is also ten joules.
+
+00:01:59.636 --> 00:02:02.876
+Larger force, smaller distance: energy is accounted for.
+
+00:02:03.376 --> 00:02:06.956
+Real machines lose some energy through friction and other effects, so their
+
+00:02:06.956 --> 00:02:08.396
+useful output work is smaller.
+
+00:02:09.276 --> 00:02:10.876
+Here is a JEE trap to dodge.
+
+00:02:11.476 --> 00:02:15.516
+If a question doubles piston radius, its area becomes four times larger.
+
+00:02:16.496 --> 00:02:20.296
+Force multiplication depends on the area ratio, not directly on the radius
+
+00:02:20.296 --> 00:02:20.696
+ratio.
+
+00:02:21.556 --> 00:02:23.896
+Start with pi r squared before making the comparison.
+
+00:02:24.216 --> 00:02:28.176
+Now open a flow path and watch liquid move through a pipe.
+
+00:02:29.296 --> 00:02:30.776
+Imagine marking two cross sections.
+
+00:02:31.596 --> 00:02:34.756
+In steady flow, fluid doesn't keep accumulating between them.
+
+00:02:35.636 --> 00:02:38.956
+The mass entering each second equals the mass leaving each second.
+
+00:02:39.476 --> 00:02:43.276
+For constant density, the volume flow rate is the same at both sections.
+
+00:02:43.976 --> 00:02:48.116
+We call it capital Q, and calculate it as area times mean flow speed.
+
+00:02:48.736 --> 00:02:53.896
+This gives the continuity equation: area one times speed one equals area two
+
+00:02:53.896 --> 00:02:55.036
+times speed two.
+
+00:02:55.536 --> 00:02:59.196
+Suppose a pipe section has area four square centimetres and mean speed two
+
+00:02:59.196 --> 00:02:59.916
+metres per second.
+
+00:03:00.756 --> 00:03:05.476
+Convert the area: four square centimetres is zero point zero zero zero four
+
+00:03:05.476 --> 00:03:06.036
+square metres.
+
+00:03:07.016 --> 00:03:11.496
+The volume flow rate is zero point zero zero zero eight cubic metres per
+
+00:03:11.496 --> 00:03:14.316
+second, or zero point eight litres per second.
+
+00:03:14.996 --> 00:03:19.096
+At a section of area one square centimetre, the speed becomes eight metres per
+
+00:03:19.096 --> 00:03:19.276
+second.
+
+00:03:19.836 --> 00:03:23.176
+The liquid speeds up to pass the same volume through a smaller opening.
+
+00:03:24.036 --> 00:03:28.316
+We're assuming steady incompressible flow, a full pipe, and no leaks or
+
+00:03:28.316 --> 00:03:29.536
+branches between these sections.
+
+00:03:30.336 --> 00:03:34.396
+For changing density, conserve mass using density times area times speed
+
+00:03:34.396 --> 00:03:34.896
+instead.
+
+00:03:35.816 --> 00:03:39.176
+Continuity comes from conservation of mass, not from a pressure equation.
+
+00:03:39.432 --> 00:03:42.072
+Continuity tells us how flow speed changes.
+
+00:03:42.932 --> 00:03:45.712
+Bernoulli's equation connects that speed to pressure and height.
+
+00:03:46.472 --> 00:03:50.892
+For steady incompressible flow with negligible viscous losses, along a
+
+00:03:50.892 --> 00:03:55.872
+streamline, add three terms: pressure, one half density times speed squared,
+
+00:03:56.272 --> 00:03:58.132
+and density times g times height.
+
+00:03:58.672 --> 00:04:03.672
+Their sum stays constant when no pump or turbine adds or removes energy between
+
+00:04:03.672 --> 00:04:04.172
+the points.
+
+00:04:04.952 --> 00:04:07.652
+Think of this as an energy account per unit volume.
+
+00:04:08.412 --> 00:04:12.352
+Now take two points at the same height in an ideal water flow.
+
+00:04:13.252 --> 00:04:15.572
+Speed increases from two to four metres per second.
+
+00:04:16.292 --> 00:04:17.552
+How much does pressure decrease?
+
+00:04:18.232 --> 00:04:19.232
+The height terms cancel.
+
+00:04:19.972 --> 00:04:23.752
+The pressure drop is one half times one thousand times the difference between
+
+00:04:23.752 --> 00:04:25.112
+four squared and two squared.
+
+00:04:25.112 --> 00:04:29.732
+Sixteen minus four is twelve, giving six thousand pascals.
+
+00:04:30.392 --> 00:04:35.007
+If the first pressure is one hundred twenty thousand pascals, the second is one
+
+00:04:35.007 --> 00:04:36.372
+hundred fourteen thousand.
+
+00:04:36.372 --> 00:04:39.592
+Faster flow has lower pressure in this particular comparison.
+
+00:04:40.492 --> 00:04:44.252
+Keep the conditions attached to that conclusion: equal height, the same
+
+00:04:44.252 --> 00:04:46.092
+streamline, and the ideal assumptions.
+
+00:04:46.852 --> 00:04:49.772
+Don't automatically apply that slogan to every moving fluid.
+
+00:04:50.512 --> 00:04:54.552
+First decide whether continuity, energy conservation, or both are needed.
+
+00:04:54.696 --> 00:04:57.316
+Let's finish with a tank draining through a small opening.
+
+00:04:57.996 --> 00:05:01.476
+The tank is open to the atmosphere, and the outlet is also open to air.
+
+00:05:02.356 --> 00:05:05.656
+Choose one point at the free surface and the other in the emerging jet.
+
+00:05:06.276 --> 00:05:09.856
+Their pressures are both atmospheric, so those terms cancel in Bernoulli's
+
+00:05:09.856 --> 00:05:10.196
+equation.
+
+00:05:10.936 --> 00:05:15.016
+If the tank is much wider than the outlet, continuity tells us the surface
+
+00:05:15.016 --> 00:05:17.796
+moves down much more slowly than the jet moves out.
+
+00:05:18.616 --> 00:05:19.396
+Neglect the surface speed.
+
+00:05:20.016 --> 00:05:24.856
+A vertical drop h then becomes kinetic energy per unit volume, giving outlet
+
+00:05:24.856 --> 00:05:27.976
+speed equal to the square root of two g h.
+
+00:05:27.976 --> 00:05:33.236
+With a depth of one point two five metres and g equal to ten, two g h is twenty
+
+00:05:33.236 --> 00:05:33.736
+five.
+
+00:05:33.736 --> 00:05:36.336
+The ideal exit speed is five metres per second.
+
+00:05:37.196 --> 00:05:40.156
+Pause and predict what happens when the depth becomes four times larger.
+
+00:05:40.736 --> 00:05:42.976
+The speed doubles, because of the square root.
+
+00:05:43.676 --> 00:05:47.856
+Real outlet flow can differ because of viscosity, jet contraction and other
+
+00:05:47.856 --> 00:05:48.236
+losses.
+
+00:05:48.476 --> 00:05:53.276
+As a large tank drains, we use this as a slowly changing, approximately steady
+
+00:05:53.276 --> 00:05:54.676
+model at each instant.
+
+00:05:55.316 --> 00:05:59.496
+Your checklist is pressure reference, vertical height, flow continuity and
+
+00:05:59.496 --> 00:06:00.136
+energy assumptions.
+
+00:06:01.036 --> 00:06:04.396
+Next we'll need separate ideas for viscosity and surface tension.

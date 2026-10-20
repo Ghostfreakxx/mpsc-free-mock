@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Magnetic applications: finite wires and particle trajectories",
+  "sources": [
+    {
+      "title": "OpenStax: magnetic field due to a straight wire",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/12-2-magnetic-field-due-to-a-thin-straight-wire"
+    },
+    {
+      "title": "OpenStax: charged-particle motion",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/11-3-motion-of-a-charged-particle-in-a-magnetic-field"
+    },
+    {
+      "title": "Official JEE Main 2026 syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What field does the stated finite 5 A segment produce at P?",
+      "options": [
+        "2.5 microT out of page",
+        "1.5 microT into page",
+        "2.5 microT into page",
+        "1.5 microT out of page"
+      ],
+      "answer": 1,
+      "explanation": "The finite factor is 0.30/0.50=0.6 of the infinite-wire magnitude, and the current cross product gives field into the page."
+    },
+    {
+      "question": "For the stated same-direction 3 A and 6 A wires, where is cancellation?",
+      "options": [
+        "At x=0.20 m",
+        "Outside on the right",
+        "At x=0.10 m",
+        "At x=0.15 m"
+      ],
+      "answer": 2,
+      "explanation": "Between the wires, opposing field magnitudes obey 3/x=6/(0.30-x), giving x=0.10 m closer to the weaker current."
+    },
+    {
+      "question": "A particle enters a static uniform magnetic field with no electric field. What happens to kinetic energy?",
+      "options": [
+        "It stays constant",
+        "It increases each turn",
+        "It decreases each turn",
+        "It becomes zero"
+      ],
+      "answer": 0,
+      "explanation": "Magnetic force is perpendicular to velocity, so its power is zero. It changes direction without changing the particle's kinetic energy."
+    },
+    {
+      "question": "At equal charge magnitude, accelerating voltage and B, doubling particle mass changes radius by what factor?",
+      "options": [
+        "2",
+        "1/2",
+        "1",
+        "sqrt(2)"
+      ],
+      "answer": 3,
+      "explanation": "Combining electric acceleration energy with magnetic circular motion gives radius proportional to sqrt(m), not directly to mass."
+    },
+    {
+      "question": "A perpendicular crossed-field selector has E=4 x 10^4 V/m and B=0.20 T. What speed passes undeflected in the specified direction?",
+      "options": [
+        "8 x 10^3 m/s",
+        "2 x 10^5 m/s",
+        "4 x 10^4 m/s",
+        "8 x 10^4 m/s"
+      ],
+      "answer": 1,
+      "explanation": "Opposing electric and magnetic forces cancel at v=E/B=2 x 10^5 m/s. This assumes the stated perpendicular entry direction."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Finite sources and cancellation: draw directions first",
+      "formula": "Finite segment: B=mu0 I a/[2 pi b sqrt(a^2+b^2)]; long wire: B=mu0 I/(2 pi r)",
+      "points": [
+        "Finite length reduces the field compared with an infinite wire.",
+        "Assign a direction before adding field magnitudes.",
+        "Same-direction wires cancel between them, closer to the weaker current."
+      ],
+      "script": "Hey, welcome back. Today our first question is not which formula to use, but whether the source matches that formula. Put a straight wire on the vertical y axis, extending from minus zero point three to plus zero point three metres. Current is five amperes upward. Our observation point is zero point four metres to the right of the centre. Apply the right-hand rule: the field there points into the page. Every element of this segment contributes in that direction. But the wire is finite. For a symmetric segment, the field magnitude is mu zero times current times half length, divided by two pi times the perpendicular distance times the square root of half length squared plus distance squared. Where does that come from? Each tiny contribution contains the perpendicular distance divided by source distance cubed. Integrating along the wire gives the end-position factor. Here, the end distance is half a metre. Using mu zero divided by four pi approximately ten to the minus seven in SI units, the result is one point five microtesla. The infinite-wire formula would give two point five microtesla. That is too large because it includes current elements that are not in our segment. As length grows, the finite result approaches the infinite one. The rest of a real circuit can also contribute, so we have isolated this segment. Now two long wires, both carrying current out of the page. Put three amperes at x zero and six amperes at x zero point three metres. Between them, the left wire's field points up and the right wire's field points down. Where can they cancel? Think for a moment. Equate three divided by x to six divided by zero point three minus x. Solving gives x zero point one metres, closer to the weaker current. At smaller distance, its weaker current can still produce the matching field. Outside the wires, these field directions agree, so there is no finite cancellation point there. Reverse a current and redraw the directions; do not recycle this conclusion blindly. Geometry and vectors come before arithmetic."
+    },
+    {
+      "title": "Particle motion: circular turning and helical advance",
+      "formula": "r=m v_perp/(|q|B); T=2 pi m/(|q|B); pitch=v_parallel T",
+      "points": [
+        "Magnetic force does zero work on a particle.",
+        "Perpendicular speed sets the radius; parallel speed sets the pitch.",
+        "Charge sign reverses bending, not radius magnitude."
+      ],
+      "script": "Now follow a particle rather than the source wire. Magnetic force is charge times velocity cross magnetic field. It is perpendicular to velocity. Ask yourself: can that force increase speed? No. Its instantaneous power, force dot velocity, is zero. A static magnetic field alone changes direction, not kinetic energy. For entry perpendicular to a uniform field, magnetic force supplies the centripetal acceleration. Radius is mass times speed divided by charge magnitude times field. Use charge magnitude for radius; use charge sign to decide bending direction. For example, positive charge entering along positive x with field along positive z initially feels force along negative y. Oblique entry is even more interesting. Split velocity into a perpendicular component and a parallel component. The perpendicular component rotates. The parallel component stays constant. Together they make a helix. Let's calculate one. Mass is two times ten to the minus twenty seven kilograms. Charge magnitude is ten to the minus nineteen coulombs. Field is zero point two tesla. Perpendicular speed is two times ten to the fifth metres per second, while parallel speed is ten to the fifth. The radius is zero point zero two metres, or two centimetres. We used perpendicular speed, not total speed. The period is two pi times mass divided by charge magnitude times field, approximately six point two eight three times ten to the minus seven seconds. Multiply by parallel speed to get the pitch, zero point zero six two eight three metres per turn. Pause: a smaller parallel speed changes pitch but not radius if the perpendicular speed stays fixed. Within this nonrelativistic model, period does not depend on speed. Relativistic motion requires a different treatment. Our checks are simple: magnetic work is zero, parallel motion is unchanged, and each component goes into the correct geometrical quantity."
+    },
+    {
+      "title": "Selectors and analyzers: separate the stages",
+      "formula": "Acceleration: |q|V=mv^2/2; analyzer r=sqrt(2mV/|q|)/B; selector v=E/B",
+      "points": [
+        "Electric acceleration supplies kinetic energy; the magnet turns the path.",
+        "A semicircle landing separation is a diameter, 2r.",
+        "Crossed fields select speed, not equal kinetic energy."
+      ],
+      "script": "Let's connect these ideas into a JEE-style apparatus. First accelerate a particle from negligible initial speed through a potential difference. It gains kinetic energy equal to charge magnitude times accelerating voltage, if losses are negligible. Next send it perpendicularly into a uniform magnetic field. Combining energy and circular motion gives radius equal to the square root of two times mass times voltage divided by charge magnitude, all divided by the field. Hold charge magnitude, voltage and field fixed. If mass doubles, what happens to radius? Take a moment. It grows by the square root of two, not by two. The particles did not enter at the same speed after the same accelerating voltage. Now check the detector geometry. If the particle completes a semicircle and lands on the original entry boundary, the separation from entry is two radii. A measured diameter is not a radius. Other detector positions need their own sketch. Finally, a velocity selector uses crossed electric and magnetic fields. Choose velocity along positive x, magnetic field along positive z and electric field along positive y. The electric force and magnetic force oppose. Cancellation requires electric field equal to speed times magnetic field, so selected speed is E divided by B. For forty thousand volts per metre and zero point two tesla, it is two hundred thousand metres per second. The charge factor cancels, and reversing charge reverses both forces. But a different entry angle does not satisfy this simple scalar condition. Different masses at the selected speed have different kinetic energies. Also, an analyzer after a selector has radius proportional to mass at fixed charge and field, because speed is now fixed. Compare that with the square-root mass scaling after a fixed accelerating voltage. Same magnetic equation, different preparation. That is the key habit: identify the stage, identify what is held fixed, then choose the equation."
+    }
+  ]
+}

@@ -1,0 +1,855 @@
+{
+  "duration": 447.9840000000125,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 83.25600000000226
+    },
+    {
+      "start": 83.25600000000226,
+      "end": 183.81600000000518
+    },
+    {
+      "start": 183.81600000000518,
+      "end": 268.4160000000075
+    },
+    {
+      "start": 268.4160000000075,
+      "end": 351.86400000000975
+    },
+    {
+      "start": 351.86400000000975,
+      "end": 447.9840000000125
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.3600000143051147,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.3600000143051147,
+      "end": 3.740000009536743,
+      "text": "We've followed charge through electric circuits.",
+      "chapter": 0
+    },
+    {
+      "start": 4.380000114440918,
+      "end": 7.039999961853027,
+      "text": "Now we ask what a current does to the space around it.",
+      "chapter": 0
+    },
+    {
+      "start": 7.739999771118164,
+      "end": 11.5600004196167,
+      "text": "A steady current creates a magnetic field, represented by the vector B.",
+      "chapter": 0
+    },
+    {
+      "start": 12.239999771118164,
+      "end": 13.779999732971191,
+      "text": "Its SI unit is the tesla.",
+      "chapter": 0
+    },
+    {
+      "start": 14.819999694824219,
+      "end": 18.769488016764324,
+      "text": "A straight wire produces field lines that circle the wire, not lines that",
+      "chapter": 0
+    },
+    {
+      "start": 18.769488016764324,
+      "end": 19.040000915527344,
+      "text": "point",
+      "chapter": 0
+    },
+    {
+      "start": 19.040000915527344,
+      "end": 19.600000381469727,
+      "text": "along it.",
+      "chapter": 0
+    },
+    {
+      "start": 20.559999465942383,
+      "end": 24.360000610351562,
+      "text": "Use your right hand: point your thumb along conventional current, and your",
+      "chapter": 0
+    },
+    {
+      "start": 24.360000610351562,
+      "end": 26.479999542236328,
+      "text": "curled fingers give the magnetic field direction.",
+      "chapter": 0
+    },
+    {
+      "start": 27.700000762939453,
+      "end": 31.540000915527344,
+      "text": "Conventional current is opposite electron drift in a metal, so use the current",
+      "chapter": 0
+    },
+    {
+      "start": 31.540000915527344,
+      "end": 32.7400016784668,
+      "text": "arrow printed in the question.",
+      "chapter": 0
+    },
+    {
+      "start": 34.220001220703125,
+      "end": 36.81999969482422,
+      "text": "Imagine a vertical wire carrying current upward on the page.",
+      "chapter": 0
+    },
+    {
+      "start": 37.70000076293945,
+      "end": 40.439998626708984,
+      "text": "To its right, the magnetic field points into the page.",
+      "chapter": 0
+    },
+    {
+      "start": 41.15999984741211,
+      "end": 42.86000061035156,
+      "text": "To its left, it points out.",
+      "chapter": 0
+    },
+    {
+      "start": 43.86000061035156,
+      "end": 48.279998779296875,
+      "text": "We represent a vector coming toward you by a dot, like an arrow tip, and one",
+      "chapter": 0
+    },
+    {
+      "start": 48.279998779296875,
+      "end": 50.959999084472656,
+      "text": "going away by a cross, like the tail of an arrow.",
+      "chapter": 0
+    },
+    {
+      "start": 52.2599983215332,
+      "end": 54.41999816894531,
+      "text": "Reverse the current and the field reverses.",
+      "chapter": 0
+    },
+    {
+      "start": 55.36000061035156,
+      "end": 59.5,
+      "text": "These symbols describe a direction perpendicular to the page; they do not mean",
+      "chapter": 0
+    },
+    {
+      "start": 59.5,
+      "end": 61.380001068115234,
+      "text": "a positive or negative field magnitude.",
+      "chapter": 0
+    },
+    {
+      "start": 62.63999938964844,
+      "end": 66.16000366210938,
+      "text": "Also, do not confuse the direction of magnetic field with the direction of",
+      "chapter": 0
+    },
+    {
+      "start": 66.16000366210938,
+      "end": 67.36000061035156,
+      "text": "magnetic force on a moving charge.",
+      "chapter": 0
+    },
+    {
+      "start": 68.23999786376953,
+      "end": 70.95999908447266,
+      "text": "The force requires another vector rule that we will study separately.",
+      "chapter": 0
+    },
+    {
+      "start": 72.0199966430664,
+      "end": 74.9000015258789,
+      "text": "Our first job is to find B at a chosen observation point.",
+      "chapter": 0
+    },
+    {
+      "start": 75.5999984741211,
+      "end": 79.30000305175781,
+      "text": "We will use steady currents and thin wire models in vacuum or approximately",
+      "chapter": 0
+    },
+    {
+      "start": 79.30000305175781,
+      "end": 82.22000122070312,
+      "text": "air, and state the geometry before applying a formula.",
+      "chapter": 0
+    },
+    {
+      "start": 83.25600000000226,
+      "end": 88.19600005722272,
+      "text": "The Biot Savart law connects a small piece of current carrying wire to its",
+      "chapter": 1
+    },
+    {
+      "start": 88.19600005722272,
+      "end": 90.05600019073712,
+      "text": "contribution at an observation point.",
+      "chapter": 1
+    },
+    {
+      "start": 91.19600005722272,
+      "end": 95.03599973297345,
+      "text": "Draw a tiny directed length, d l, along conventional current.",
+      "chapter": 1
+    },
+    {
+      "start": 95.91599984741437,
+      "end": 99.83599992370831,
+      "text": "Draw the displacement from that piece to the observation point; its magnitude",
+      "chapter": 1
+    },
+    {
+      "start": 99.83599992370831,
+      "end": 100.5559992370628,
+      "text": "is r.",
+      "chapter": 1
+    },
+    {
+      "start": 101.37600083923566,
+      "end": 106.33599992370831,
+      "text": "The small field magnitude is mu zero over four pi, multiplied by current,",
+      "chapter": 1
+    },
+    {
+      "start": 106.73599954223859,
+      "end": 110.95600076294171,
+      "text": "directed length magnitude and sine theta, then divided by r squared.",
+      "chapter": 1
+    },
+    {
+      "start": 111.91599984741437,
+      "end": 114.59600015259015,
+      "text": "Theta is the angle between the current element and that displacement.",
+      "chapter": 1
+    },
+    {
+      "start": 115.7960009155296,
+      "end": 120.3959993896507,
+      "text": "The direction follows d l crossed with the unit displacement vector, using the",
+      "chapter": 1
+    },
+    {
+      "start": 120.3959993896507,
+      "end": 121.69599862671124,
+      "text": "right hand cross product rule.",
+      "chapter": 1
+    },
+    {
+      "start": 122.6360010681175,
+      "end": 126.33600183105695,
+      "text": "A perpendicular displacement gives the largest contribution for the same",
+      "chapter": 1
+    },
+    {
+      "start": 126.33600183105695,
+      "end": 128.17599816894756,
+      "text": "current, length and distance.",
+      "chapter": 1
+    },
+    {
+      "start": 129.1160006103538,
+      "end": 131.83600183105693,
+      "text": "Along the element's direction, sine theta is zero.",
+      "chapter": 1
+    },
+    {
+      "start": 132.53599877929912,
+      "end": 136.39599938965068,
+      "text": "To obtain the field of a whole wire, add the vector contributions by",
+      "chapter": 1
+    },
+    {
+      "start": 136.39599938965068,
+      "end": 140.63600106811748,
+      "text": "integration; don't substitute the total wire length into a small element",
+      "chapter": 1
+    },
+    {
+      "start": 140.63600106811748,
+      "end": 142.97600122070537,
+      "text": "expression when distance or angle changes.",
+      "chapter": 1
+    },
+    {
+      "start": 143.7960009155296,
+      "end": 148.6960024414085,
+      "text": "For an approximate tiny segment example, use four amperes, length one",
+      "chapter": 1
+    },
+    {
+      "start": 148.6960024414085,
+      "end": 151.7159990844749,
+      "text": "centimeter, perpendicular distance ten centimeters.",
+      "chapter": 1
+    },
+    {
+      "start": 152.815997558596,
+      "end": 155.77599664306865,
+      "text": "Treat distance and angle as nearly constant across that short piece.",
+      "chapter": 1
+    },
+    {
+      "start": 156.15600152588115,
+      "end": 160.55600305176006,
+      "text": "With mu zero over four pi approximately ten to the minus seven, its",
+      "chapter": 1
+    },
+    {
+      "start": 160.55600305176006,
+      "end": 165.45599694824443,
+      "text": "contribution is four times ten to the minus seven tesla, or zero point four",
+      "chapter": 1
+    },
+    {
+      "start": 165.45599694824443,
+      "end": 166.09599633789287,
+      "text": "microtesla.",
+      "chapter": 1
+    },
+    {
+      "start": 167.01600213623271,
+      "end": 170.98420526514522,
+      "text": "That is the contribution of this piece, not a complete wire or its return",
+      "chapter": 1
+    },
+    {
+      "start": 170.98420526514522,
+      "end": 171.25600000000225,
+      "text": "path.",
+      "chapter": 1
+    },
+    {
+      "start": 172.47600122070537,
+      "end": 177.91600366211162,
+      "text": "In standard JEE numericals we use mu zero approximately four pi times ten to",
+      "chapter": 1
+    },
+    {
+      "start": 177.91600366211162,
+      "end": 179.85599847412334,
+      "text": "the minus seven tesla meter per ampere.",
+      "chapter": 1
+    },
+    {
+      "start": 180.65600152588115,
+      "end": 183.45599694824443,
+      "text": "Geometry and vector direction must accompany the arithmetic.",
+      "chapter": 1
+    },
+    {
+      "start": 183.81600000000518,
+      "end": 186.8559999618582,
+      "text": "For a straight wire, integration gives a useful result.",
+      "chapter": 2
+    },
+    {
+      "start": 187.7160000953726,
+      "end": 191.31600000000518,
+      "text": "At perpendicular distance a from a wire that is effectively very long in both",
+      "chapter": 2
+    },
+    {
+      "start": 191.31600000000518,
+      "end": 196.23600007629912,
+      "text": "directions, the field magnitude is mu zero I divided by two pi a.",
+      "chapter": 2
+    },
+    {
+      "start": 197.03600026703398,
+      "end": 200.51600076294463,
+      "text": "Field strength falls as one over distance, even though a single small element",
+      "chapter": 2
+    },
+    {
+      "start": 200.51600076294463,
+      "end": 202.576000228887,
+      "text": "contribution contains one over r squared.",
+      "chapter": 2
+    },
+    {
+      "start": 203.7560005340628,
+      "end": 204.77599908447783,
+      "text": "Integration changes the dependence.",
+      "chapter": 2
+    },
+    {
+      "start": 205.39599992371123,
+      "end": 208.9160003814749,
+      "text": "A five ampere long wire produces twenty microtesla at five centimeters.",
+      "chapter": 2
+    },
+    {
+      "start": 209.81600000000518,
+      "end": 212.11599923706572,
+      "text": "Double the distance and the field becomes ten microtesla.",
+      "chapter": 2
+    },
+    {
+      "start": 212.55599977112334,
+      "end": 213.99600030518096,
+      "text": "Now keep the wire finite.",
+      "chapter": 2
+    },
+    {
+      "start": 214.71599961853545,
+      "end": 217.6960010681204,
+      "text": "If the perpendicular from the observation point meets the segment between its",
+      "chapter": 2
+    },
+    {
+      "start": 217.6960010681204,
+      "end": 221.4959990336152,
+      "text": "endpoints, define alpha and beta as the positive angles from that",
+      "chapter": 2
+    },
+    {
+      "start": 221.4959990336152,
+      "end": 222.25599862671416,
+      "text": "perpendicular",
+      "chapter": 2
+    },
+    {
+      "start": 222.25599862671416,
+      "end": 223.81600000000518,
+      "text": "toward the two endpoint lines.",
+      "chapter": 2
+    },
+    {
+      "start": 224.4559993896536,
+      "end": 229.40830824006426,
+      "text": "The field is mu zero I divided by four pi a, multiplied by sine alpha plus",
+      "chapter": 2
+    },
+    {
+      "start": 229.40830824006426,
+      "end": 229.67600061035674,
+      "text": "sine",
+      "chapter": 2
+    },
+    {
+      "start": 229.67600061035674,
+      "end": 229.89600183105986,
+      "text": "beta.",
+      "chapter": 2
+    },
+    {
+      "start": 230.05600167847197,
+      "end": 234.2959995422415,
+      "text": "A symmetric segment with both angles forty five degrees, at the same five",
+      "chapter": 2
+    },
+    {
+      "start": 234.2959995422415,
+      "end": 238.78830652051613,
+      "text": "centimeters and five amperes, gives ten times square root two microtesla,",
+      "chapter": 2
+    },
+    {
+      "start": 238.78830652051613,
+      "end": 239.09599877930205,
+      "text": "about",
+      "chapter": 2
+    },
+    {
+      "start": 239.09599877930205,
+      "end": 240.4859981689505,
+      "text": "fourteen point one four.",
+      "chapter": 2
+    },
+    {
+      "start": 240.4859981689505,
+      "end": 243.61599923706572,
+      "text": "This is smaller than the infinite wire result because there is less",
+      "chapter": 2
+    },
+    {
+      "start": 243.61599923706572,
+      "end": 244.35600091553252,
+      "text": "contributing wire.",
+      "chapter": 2
+    },
+    {
+      "start": 245.25599862671416,
+      "end": 248.97600366211455,
+      "text": "Let both angles approach ninety degrees and the long wire result returns.",
+      "chapter": 2
+    },
+    {
+      "start": 249.57600213623564,
+      "end": 253.19599725342314,
+      "text": "If the perpendicular foot lies outside the segment, use signed endpoint",
+      "chapter": 2
+    },
+    {
+      "start": 253.19599725342314,
+      "end": 257.1559963378958,
+      "text": "geometry or rederive the integral rather than adding two positive sines",
+      "chapter": 2
+    },
+    {
+      "start": 257.1559963378958,
+      "end": 257.5360012207083,
+      "text": "blindly.",
+      "chapter": 2
+    },
+    {
+      "start": 258.21600152588405,
+      "end": 262.2929225487394,
+      "text": "The formula gives magnitude; use the current direction to determine into or",
+      "chapter": 2
+    },
+    {
+      "start": 262.2929225487394,
+      "end": 262.4559993896536,
+      "text": "out",
+      "chapter": 2
+    },
+    {
+      "start": 262.4559993896536,
+      "end": 262.9760036621145,
+      "text": "of the page.",
+      "chapter": 2
+    },
+    {
+      "start": 263.8560009155325,
+      "end": 267.4121517920912,
+      "text": "Nearby return wires can also contribute, so read the complete circuit",
+      "chapter": 2
+    },
+    {
+      "start": 267.4121517920912,
+      "end": 267.8759975585989,
+      "text": "geometry.",
+      "chapter": 2
+    },
+    {
+      "start": 268.4160000000075,
+      "end": 270.97599994278704,
+      "text": "A circular loop has a different symmetry.",
+      "chapter": 3
+    },
+    {
+      "start": 271.7960001144484,
+      "end": 275.396000019081,
+      "text": "At its center, every current element is perpendicular to the displacement",
+      "chapter": 3
+    },
+    {
+      "start": 275.396000019081,
+      "end": 279.0759998474196,
+      "text": "toward the center, and each is the same distance R away.",
+      "chapter": 3
+    },
+    {
+      "start": 279.83600007630145,
+      "end": 282.5960003051833,
+      "text": "All field contributions point along the loop axis.",
+      "chapter": 3
+    },
+    {
+      "start": 283.5359998855666,
+      "end": 288.0160003814772,
+      "text": "Integrating around the circumference gives mu zero I divided by two R.",
+      "chapter": 3
+    },
+    {
+      "start": 288.0160003814772,
+      "end": 292.45600091553484,
+      "text": "For N closely wound identical turns carrying the same current, multiply by N,",
+      "chapter": 3
+    },
+    {
+      "start": 292.7560001525954,
+      "end": 295.7560001525954,
+      "text": "provided their radii and positions are approximately the same.",
+      "chapter": 3
+    },
+    {
+      "start": 296.61600076294695,
+      "end": 300.45600091553484,
+      "text": "Curl your right fingers along the loop current; your thumb gives the central",
+      "chapter": 3
+    },
+    {
+      "start": 300.45600091553484,
+      "end": 301.2560001525954,
+      "text": "field direction.",
+      "chapter": 3
+    },
+    {
+      "start": 302.27600061035906,
+      "end": 305.4160000000075,
+      "text": "Counterclockwise current as viewed on the page gives field out of the page at",
+      "chapter": 3
+    },
+    {
+      "start": 305.4160000000075,
+      "end": 305.71599923706805,
+      "text": "the center.",
+      "chapter": 3
+    },
+    {
+      "start": 306.3959995422438,
+      "end": 310.4960018310622,
+      "text": "For a single loop of radius ten centimeters carrying four amperes, the center",
+      "chapter": 3
+    },
+    {
+      "start": 310.4960018310622,
+      "end": 314.8959995422438,
+      "text": "field is eight pi microtesla, approximately twenty five point one three.",
+      "chapter": 3
+    },
+    {
+      "start": 314.8959995422438,
+      "end": 318.7560001525954,
+      "text": "Along the axis at distance x from the center, contributions have transverse",
+      "chapter": 3
+    },
+    {
+      "start": 318.7560001525954,
+      "end": 320.61600076294695,
+      "text": "components that cancel in opposite pairs.",
+      "chapter": 3
+    },
+    {
+      "start": 321.11600076294695,
+      "end": 322.5159984741286,
+      "text": "Their axial components add.",
+      "chapter": 3
+    },
+    {
+      "start": 322.87599908448016,
+      "end": 327.6360012207106,
+      "text": "The result is mu zero N I R squared divided by twice the quantity R squared",
+      "chapter": 3
+    },
+    {
+      "start": 327.6360012207106,
+      "end": 329.55599938965594,
+      "text": "plus x squared raised to three halves.",
+      "chapter": 3
+    },
+    {
+      "start": 330.6560016784743,
+      "end": 333.27600061035906,
+      "text": "Set x equal to zero and the center formula returns.",
+      "chapter": 3
+    },
+    {
+      "start": 333.95600091553484,
+      "end": 337.67600213623797,
+      "text": "Set x equal to R and the field is the center value divided by two square root",
+      "chapter": 3
+    },
+    {
+      "start": 337.67600213623797,
+      "end": 340.37599908448016,
+      "text": "two, here about eight point eight nine microtesla.",
+      "chapter": 3
+    },
+    {
+      "start": 341.2559963378981,
+      "end": 345.0760036621169,
+      "text": "This equation is for points on the axis, not arbitrary points in the plane of",
+      "chapter": 3
+    },
+    {
+      "start": 345.0760036621169,
+      "end": 345.3960033569411,
+      "text": "the loop.",
+      "chapter": 3
+    },
+    {
+      "start": 346.2559963378981,
+      "end": 349.6959987793044,
+      "text": "State whether a question asks for the center, an axial point or another",
+      "chapter": 3
+    },
+    {
+      "start": 349.6959987793044,
+      "end": 351.5760036621169,
+      "text": "geometry before choosing the expression.",
+      "chapter": 3
+    },
+    {
+      "start": 351.86400000000975,
+      "end": 355.08400002862,
+      "text": "Let's finish with two common JEE patterns.",
+      "chapter": 4
+    },
+    {
+      "start": 355.88399998093627,
+      "end": 360.1039997711279,
+      "text": "For a circular arc, the center field contribution is proportional to the angle",
+      "chapter": 4
+    },
+    {
+      "start": 360.1039997711279,
+      "end": 360.683999694834,
+      "text": "swept out.",
+      "chapter": 4
+    },
+    {
+      "start": 361.30399958039305,
+      "end": 367.0040003433325,
+      "text": "The magnitude is mu zero I times theta divided by four pi R, with theta",
+      "chapter": 4
+    },
+    {
+      "start": 367.0040003433325,
+      "end": 367.723999656687,
+      "text": "in radians.",
+      "chapter": 4
+    },
+    {
+      "start": 368.30400053406737,
+      "end": 373.70400015259764,
+      "text": "A semicircle has theta equal to pi, so its contribution is half that of a full",
+      "chapter": 4
+    },
+    {
+      "start": 373.70400015259764,
+      "end": 375.58399931336425,
+      "text": "loop with the same radius and current.",
+      "chapter": 4
+    },
+    {
+      "start": 376.30400053406737,
+      "end": 381.20400015259764,
+      "text": "Our four ampere, ten centimeter semicircular arc contributes four pi",
+      "chapter": 4
+    },
+    {
+      "start": 381.20400015259764,
+      "end": 384.7240006103613,
+      "text": "microtesla, about twelve point five seven.",
+      "chapter": 4
+    },
+    {
+      "start": 384.7240006103613,
+      "end": 387.4040009155371,
+      "text": "Its direction still follows the current around the arc.",
+      "chapter": 4
+    },
+    {
+      "start": 388.8439995422461,
+      "end": 392.0840012207129,
+      "text": "Straight leads directed radially toward or away from that center contribute",
+      "chapter": 4
+    },
+    {
+      "start": 392.0840012207129,
+      "end": 396.0840012207129,
+      "text": "zero there, because their current elements and displacement vectors are",
+      "chapter": 4
+    },
+    {
+      "start": 396.0840012207129,
+      "end": 396.3439995422461,
+      "text": "parallel.",
+      "chapter": 4
+    },
+    {
+      "start": 397.3239990844824,
+      "end": 401.60400167847655,
+      "text": "This is a geometry statement, not a rule that all connecting leads have zero",
+      "chapter": 4
+    },
+    {
+      "start": 401.60400167847655,
+      "end": 401.9040009155371,
+      "text": "field.",
+      "chapter": 4
+    },
+    {
+      "start": 402.80399862671874,
+      "end": 404.8239990844824,
+      "text": "Include other lead contributions when needed.",
+      "chapter": 4
+    },
+    {
+      "start": 405.494001068125,
+      "end": 410.20400015259764,
+      "text": "Now place two very long parallel wires ten centimeters apart, each carrying",
+      "chapter": 4
+    },
+    {
+      "start": 410.20400015259764,
+      "end": 411.42400137330077,
+      "text": "five amperes upward.",
+      "chapter": 4
+    },
+    {
+      "start": 412.183999694834,
+      "end": 416.86400000000975,
+      "text": "At the midpoint, each gives twenty microtesla, but one field enters the page",
+      "chapter": 4
+    },
+    {
+      "start": 417.28399816895507,
+      "end": 419.2240006103613,
+      "text": "and the other leaves, so they cancel.",
+      "chapter": 4
+    },
+    {
+      "start": 420.28399816895507,
+      "end": 424.04400030518553,
+      "text": "Reverse the current in one wire and both midpoint fields point the same way,",
+      "chapter": 4
+    },
+    {
+      "start": 424.76400152588866,
+      "end": 425.9239975586035,
+      "text": "giving forty microtesla.",
+      "chapter": 4
+    },
+    {
+      "start": 426.9840027465918,
+      "end": 430.804002441416,
+      "text": "Notice that these are field comparisons, not statements about forces between",
+      "chapter": 4
+    },
+    {
+      "start": 430.804002441416,
+      "end": 431.3239990844824,
+      "text": "the wires.",
+      "chapter": 4
+    },
+    {
+      "start": 431.9840027465918,
+      "end": 436.6039978637793,
+      "text": "For your final checklist, identify the observation point, convert distances,",
+      "chapter": 4
+    },
+    {
+      "start": 437.5240036621191,
+      "end": 441.8239990844824,
+      "text": "choose a formula with matching geometry, establish every direction, and then",
+      "chapter": 4
+    },
+    {
+      "start": 441.8239990844824,
+      "end": 442.5240036621191,
+      "text": "add vectors.",
+      "chapter": 4
+    },
+    {
+      "start": 443.36400000000975,
+      "end": 447.0840012207129,
+      "text": "Ampere's law will give us another powerful way to use symmetry in the next",
+      "chapter": 4
+    },
+    {
+      "start": 447.0840012207129,
+      "end": 447.38399664307616,
+      "text": "class.",
+      "chapter": 4
+    }
+  ]
+}

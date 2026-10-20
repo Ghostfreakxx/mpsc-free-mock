@@ -12,6 +12,9 @@
 .board { padding: 28px; min-height: 440px; background: #f5faf7; }
 .board h2 { font-size: 24px; margin: 14px 0 22px; line-height: 1.3; }
 .ruler { width: 100%; height: 85px; margin: 2px 0 12px; }
+.motionDiagram { width: 100%; height: 150px; margin: 2px 0 12px; background: #fff; border: 1px solid #d6e5dd; border-radius: 6px; }
+.forceDiagram { display: block; width: 100%; height: auto; aspect-ratio: 440 / 270; margin: 12px 0; background: white; font-size: 19px; fill: #203a34; }
+.kinematicsDiagram { aspect-ratio: 440 / 320; }
 .formula { padding: 20px 0; color: #11614c; font-size: 25px; font-weight: 600; overflow-wrap: anywhere; border-block: 1px solid #cbded5; }
 .steps { padding-left: 22px; margin-top: 22px; font-size: 16px; line-height: 1.7; }
 .steps li { padding: 3px 0 3px 4px; }
@@ -51,7 +54,11 @@
 .library .libraryTitle { font-size: 20px; margin: 24px 0 18px; }
 .subjects { display: flex; gap: 8px; flex-wrap: wrap; padding-bottom: 20px; border-bottom: 1px solid #dae5de; }
 .courseMap { list-style: none; padding: 0; }
-.courseMap li { display: grid; grid-template-columns: 26px minmax(0, 1fr) 65px; gap: 12px; padding: 14px 0; border-bottom: 1px solid #e1e9e4; align-items: start; }
+.courseMap > li { display: grid; grid-template-columns: 26px minmax(0, 1fr) 65px; gap: 12px; padding: 14px 0; border-bottom: 1px solid #e1e9e4; align-items: start; }
+.courseMap details { margin-top: 10px; font-size: 13px; }
+.courseMap summary { cursor: pointer; color: #276b4b; }
+.courseMap details ul { padding-left: 18px; }
+.courseMap details li { margin: 8px 0; line-height: 1.5; }
 .courseMap strong { font-size: 15px; font-weight: 500; }
 .courseMap a { display: flex; width: fit-content; font-size: 13px; margin-top: 5px; }
 .partial { font-size: 12px; color: #9b3d28; }
@@ -80,3 +87,23 @@
 @media(max-width: 540px) { .library article { grid-template-columns: 44px minmax(0, 1fr); gap: 14px; } .library h2 { font-size: 20px; } .lessonNumber { height: 80px; } }
 @media(max-width: 900px) { .layout { grid-template-columns: 1fr; } .outline ol { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; } }
 @media(max-width: 540px) { .page { padding: 18px 16px 60px; } .heading h1 { font-size: 28px; } .board { padding: 20px; min-height: 450px; } .board h2 { font-size: 22px; } .formula { font-size: 21px; } .caption { min-height: 150px; padding: 16px; font-size: 16px; } .outline ol { grid-template-columns: 1fr; } .controls { gap: 8px; } .header { gap: 10px; font-size: 11px; } }
+.recordingGroup {
+  border-top: 1px solid #d8dee5;
+}
+.applicationsDiagram { aspect-ratio: 440 / 320; }
+
+.recordingGroup > summary {
+  cursor: pointer;
+  padding: 20px 8px;
+  font-size: 18px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.recordingGroup > summary small {
+  display: block;
+  padding-left: 20px;
+  margin-top: 4px;
+  font-size: 14px;
+  color: #52606d;
+}

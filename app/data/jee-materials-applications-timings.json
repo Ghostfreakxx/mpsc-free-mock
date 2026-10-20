@@ -1,0 +1,595 @@
+{
+  "duration": 342.07200000001023,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 132.5040000000041
+    },
+    {
+      "start": 132.5040000000041,
+      "end": 270.96000000000845
+    },
+    {
+      "start": 270.96000000000845,
+      "end": 342.07200000001023
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 0.8600000143051147,
+      "text": "Welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.340000033378601,
+      "end": 5.126666669662182,
+      "text": "In this class we will work through bulk and shear moduli, stress strain",
+      "chapter": 0
+    },
+    {
+      "start": 5.126666669662182,
+      "end": 5.5,
+      "text": "curves,",
+      "chapter": 0
+    },
+    {
+      "start": 6.21999979019165,
+      "end": 9.100000381469727,
+      "text": "critical velocity and combined thermal fluid calculations.",
+      "chapter": 0
+    },
+    {
+      "start": 10.15999984741211,
+      "end": 13.0600004196167,
+      "text": "Stretching, squeezing and shearing are different experiments.",
+      "chapter": 0
+    },
+    {
+      "start": 14.100000381469727,
+      "end": 19.420000076293945,
+      "text": "Young's modulus Y relates longitudinal stress F/A to fractional length change",
+      "chapter": 0
+    },
+    {
+      "start": 19.420000076293945,
+      "end": 21.559999465942383,
+      "text": "the fractional length change within the proportional elastic range.",
+      "chapter": 0
+    },
+    {
+      "start": 22.479999542236328,
+      "end": 26.860000610351562,
+      "text": "Bulk modulus B measures resistance to volume change under a uniform pressure",
+      "chapter": 0
+    },
+    {
+      "start": 26.860000610351562,
+      "end": 27.360000610351562,
+      "text": "increase.",
+      "chapter": 0
+    },
+    {
+      "start": 27.920000076293945,
+      "end": 33.439998626708984,
+      "text": "Because compression decreases volume, B equals the pressure increase/(the",
+      "chapter": 0
+    },
+    {
+      "start": 33.439998626708984,
+      "end": 37.91999816894531,
+      "text": "fractional volume change) is positive for an ordinary stable material.",
+      "chapter": 0
+    },
+    {
+      "start": 38.7599983215332,
+      "end": 42.619998931884766,
+      "text": "Use consistent signs or use positive compression magnitudes explicitly.",
+      "chapter": 0
+    },
+    {
+      "start": 43.5,
+      "end": 48.380001068115234,
+      "text": "Shear modulus G_s relates tangential stress to shear strain, approximately the",
+      "chapter": 0
+    },
+    {
+      "start": 48.380001068115234,
+      "end": 50.220001220703125,
+      "text": "small angular deformation in radians.",
+      "chapter": 0
+    },
+    {
+      "start": 50.84000015258789,
+      "end": 54.779998779296875,
+      "text": "A material can resist compression without resisting a lasting static shear:",
+      "chapter": 0
+    },
+    {
+      "start": 55.68000030517578,
+      "end": 59.29999923706055,
+      "text": "liquids have a bulk modulus but no equilibrium static shear modulus.",
+      "chapter": 0
+    },
+    {
+      "start": 60.099998474121094,
+      "end": 63.13999938964844,
+      "text": "Do not transfer the stretching formula to every kind of deformation.",
+      "chapter": 0
+    },
+    {
+      "start": 63.900001525878906,
+      "end": 67.86000061035156,
+      "text": "For a pressure increase of two million pascals and B equals one billion",
+      "chapter": 0
+    },
+    {
+      "start": 67.86000061035156,
+      "end": 73.68000030517578,
+      "text": "pascals, the fractional volume change is 0.002, a decrease",
+      "chapter": 0
+    },
+    {
+      "start": 73.68000030517578,
+      "end": 75.5199966430664,
+      "text": "of 0.2 percent.",
+      "chapter": 0
+    },
+    {
+      "start": 75.5199966430664,
+      "end": 79.5,
+      "text": "The straight initial part of a tensile stress strain graph obeys Hooke's law;",
+      "chapter": 0
+    },
+    {
+      "start": 80.04000091552734,
+      "end": 81.69999694824219,
+      "text": "its slope gives Young's modulus.",
+      "chapter": 0
+    },
+    {
+      "start": 82.12000274658203,
+      "end": 86.16000366210938,
+      "text": "A body can still recover its original dimensions beyond the proportional limit",
+      "chapter": 0
+    },
+    {
+      "start": 86.63999938964844,
+      "end": 88,
+      "text": "while its response is nonlinear.",
+      "chapter": 0
+    },
+    {
+      "start": 88.73999786376953,
+      "end": 91.9000015258789,
+      "text": "The elastic limit is therefore not automatically the end of every straight",
+      "chapter": 0
+    },
+    {
+      "start": 91.9000015258789,
+      "end": 95.84051141983423,
+      "text": "section, and the yield point is not a universal sharp feature of all",
+      "chapter": 0
+    },
+    {
+      "start": 95.84051141983423,
+      "end": 96.41999816894531,
+      "text": "materials.",
+      "chapter": 0
+    },
+    {
+      "start": 97.18000030517578,
+      "end": 99.86000061035156,
+      "text": "Beyond yield, unloading can leave permanent deformation.",
+      "chapter": 0
+    },
+    {
+      "start": 100.66000366210938,
+      "end": 104.83999633789062,
+      "text": "In a linear, quasistatic elastic stretch from zero stress, work stored per",
+      "chapter": 0
+    },
+    {
+      "start": 104.83999633789062,
+      "end": 109.37999725341797,
+      "text": "original volume is the triangular graph area: one half stress times strain.",
+      "chapter": 0
+    },
+    {
+      "start": 109.83999633789062,
+      "end": 115.62000274658203,
+      "text": "A stress of four million pascals with strain 0.002 stores 4000 joules",
+      "chapter": 0
+    },
+    {
+      "start": 115.62000274658203,
+      "end": 116.4000015258789,
+      "text": "per cubic metre.",
+      "chapter": 0
+    },
+    {
+      "start": 117.23999786376953,
+      "end": 119.45999908447266,
+      "text": "This is energy density, not total energy.",
+      "chapter": 0
+    },
+    {
+      "start": 120.45999908447266,
+      "end": 122.27999877929688,
+      "text": "Multiply by the original volume to get energy.",
+      "chapter": 0
+    },
+    {
+      "start": 122.9000015258789,
+      "end": 127.87999725341797,
+      "text": "A material being stiff, strong or tough refers to different properties: slope,",
+      "chapter": 0
+    },
+    {
+      "start": 128.33999633789062,
+      "end": 132.17999267578125,
+      "text": "limiting stress and energy absorbed before failure should not be confused.",
+      "chapter": 0
+    },
+    {
+      "start": 132.5040000000041,
+      "end": 137.44553859065542,
+      "text": "Laminar flow has orderly layers; turbulent flow includes irregular",
+      "chapter": 1
+    },
+    {
+      "start": 137.44553859065542,
+      "end": 138.344000152592,
+      "text": "fluctuations",
+      "chapter": 1
+    },
+    {
+      "start": 138.344000152592,
+      "end": 139.38400011444503,
+      "text": "and mixing.",
+      "chapter": 1
+    },
+    {
+      "start": 140.42400007629806,
+      "end": 143.46400003815108,
+      "text": "Reynolds number compares inertial and viscous effects.",
+      "chapter": 1
+    },
+    {
+      "start": 144.26400022888595,
+      "end": 150.04400091553146,
+      "text": "For pipe flow, Re equals rho v D/eta using mean speed",
+      "chapter": 1
+    },
+    {
+      "start": 150.04400091553146,
+      "end": 151.28400068664962,
+      "text": "v and diameter D.",
+      "chapter": 1
+    },
+    {
+      "start": 151.94400053406173,
+      "end": 156.7239993133586,
+      "text": "The critical speed for an assigned critical Reynolds number is Re_critical",
+      "chapter": 1
+    },
+    {
+      "start": 156.7239993133586,
+      "end": 158.5040000000041,
+      "text": "eta/(rho D).",
+      "chapter": 1
+    },
+    {
+      "start": 159.04400091553146,
+      "end": 163.344000152592,
+      "text": "The transition threshold depends on geometry, disturbances and the chosen",
+      "chapter": 1
+    },
+    {
+      "start": 163.344000152592,
+      "end": 164.40399961853439,
+      "text": "characteristic length.",
+      "chapter": 1
+    },
+    {
+      "start": 165.38400106811935,
+      "end": 169.1039984741252,
+      "text": "A familiar pipe estimate is not a universal constant for every flow.",
+      "chapter": 1
+    },
+    {
+      "start": 170.1039984741252,
+      "end": 176.1039984741252,
+      "text": "For water with rho equals 1000 kilograms per cubic metre and viscosity 0.001",
+      "chapter": 1
+    },
+    {
+      "start": 176.1039984741252,
+      "end": 182.02400045776778,
+      "text": "pascal seconds in a 0.01 m diameter pipe, take Re_critical equals",
+      "chapter": 1
+    },
+    {
+      "start": 182.02400045776778,
+      "end": 184.80399923706466,
+      "text": "2000 as a stated illustrative criterion.",
+      "chapter": 1
+    },
+    {
+      "start": 185.86400061035567,
+      "end": 189.30399923706466,
+      "text": "Critical mean speed is 0.20 metres per second.",
+      "chapter": 1
+    },
+    {
+      "start": 190.04400091553146,
+      "end": 192.02400045776778,
+      "text": "Doubling diameter halves this estimated speed.",
+      "chapter": 1
+    },
+    {
+      "start": 193.1039984741252,
+      "end": 197.14553896234386,
+      "text": "Bernoulli's simple streamline equation assumes steady, incompressible flow",
+      "chapter": 1
+    },
+    {
+      "start": 197.14553896234386,
+      "end": 197.36400061035567,
+      "text": "with",
+      "chapter": 1
+    },
+    {
+      "start": 197.36400061035567,
+      "end": 201.94400244141036,
+      "text": "negligible viscous losses; continuity can still hold when Bernoulli without",
+      "chapter": 1
+    },
+    {
+      "start": 201.94400244141036,
+      "end": 202.96399908447677,
+      "text": "losses is inadequate.",
+      "chapter": 1
+    },
+    {
+      "start": 203.9840033569377,
+      "end": 207.94400244141036,
+      "text": "Stokes drag on a sphere requires creeping flow, not arbitrary high speed",
+      "chapter": 1
+    },
+    {
+      "start": 207.94400244141036,
+      "end": 208.34399633789474,
+      "text": "turbulence.",
+      "chapter": 1
+    },
+    {
+      "start": 209.34399633789474,
+      "end": 213.14886841055474,
+      "text": "For a large open tank draining through a small opening, apply Bernoulli",
+      "chapter": 1
+    },
+    {
+      "start": 213.14886841055474,
+      "end": 213.52399664307052,
+      "text": "between",
+      "chapter": 1
+    },
+    {
+      "start": 213.52399664307052,
+      "end": 216.42399816894942,
+      "text": "the surface and outlet at the same atmospheric pressure.",
+      "chapter": 1
+    },
+    {
+      "start": 217.56399755859786,
+      "end": 219.2039969482463,
+      "text": "Neglect surface speed and losses.",
+      "chapter": 1
+    },
+    {
+      "start": 219.82399969482833,
+      "end": 223.88399725342208,
+      "text": "The gravitational height difference h becomes kinetic energy per mass, giving",
+      "chapter": 1
+    },
+    {
+      "start": 223.88399725342208,
+      "end": 226.88399725342208,
+      "text": "outlet speed the square root of two g h.",
+      "chapter": 1
+    },
+    {
+      "start": 226.88399725342208,
+      "end": 232.4840033569377,
+      "text": "At h equals 0.45 m with g equals 10 metres per second squared, the ideal speed",
+      "chapter": 1
+    },
+    {
+      "start": 232.4840033569377,
+      "end": 233.72400122070724,
+      "text": "is 3 metres per second.",
+      "chapter": 1
+    },
+    {
+      "start": 234.44400244141036,
+      "end": 238.76400213623458,
+      "text": "The outlet area times speed gives volume flow, not mass flow until density is",
+      "chapter": 1
+    },
+    {
+      "start": 238.76400213623458,
+      "end": 239.04400091553146,
+      "text": "included.",
+      "chapter": 1
+    },
+    {
+      "start": 239.86400061035567,
+      "end": 244.85733251953536,
+      "text": "If the outlet area is one square centimetre, convert it to 0.0001 m",
+      "chapter": 1
+    },
+    {
+      "start": 244.85733251953536,
+      "end": 245.88399725342208,
+      "text": "squared.",
+      "chapter": 1
+    },
+    {
+      "start": 245.88399725342208,
+      "end": 251.22400122070724,
+      "text": "Volume flow is 0.0003 cubic metres per second, and water mass flow is",
+      "chapter": 1
+    },
+    {
+      "start": 251.22400122070724,
+      "end": 253.52399664307052,
+      "text": "0.30 kg/s.",
+      "chapter": 1
+    },
+    {
+      "start": 253.52399664307052,
+      "end": 257.7640021362346,
+      "text": "The height will fall in a finite tank, so this is an instantaneous ideal rate",
+      "chapter": 1
+    },
+    {
+      "start": 257.7640021362346,
+      "end": 259.2039969482463,
+      "text": "unless the level is maintained.",
+      "chapter": 1
+    },
+    {
+      "start": 259.94400244141036,
+      "end": 263.52400427246505,
+      "text": "Adding pressure work again after using Bernoulli would double count an energy",
+      "chapter": 1
+    },
+    {
+      "start": 263.52400427246505,
+      "end": 264.94400244141036,
+      "text": "contribution already included.",
+      "chapter": 1
+    },
+    {
+      "start": 264.94400244141036,
+      "end": 269.8840048828166,
+      "text": "Real contraction and viscosity reduce the actual outflow compared with this",
+      "chapter": 1
+    },
+    {
+      "start": 269.8840048828166,
+      "end": 270.3640006103557,
+      "text": "ideal model.",
+      "chapter": 1
+    },
+    {
+      "start": 270.96000000000845,
+      "end": 274.8600000953759,
+      "text": "Heating through a phase change is not one temperature rise calculation.",
+      "chapter": 2
+    },
+    {
+      "start": 275.6799997902001,
+      "end": 280.89999958039175,
+      "text": "To turn ice at 10 degrees Celsius into water at 20 degrees Celsius, warm the",
+      "chapter": 2
+    },
+    {
+      "start": 280.89999958039175,
+      "end": 284.9200000381554,
+      "text": "ice to zero, supply latent heat of fusion, then warm the liquid.",
+      "chapter": 2
+    },
+    {
+      "start": 285.64000030518423,
+      "end": 290.0999993896569,
+      "text": "At fixed pressure a pure material's ideal melting stage changes phase without",
+      "chapter": 2
+    },
+    {
+      "start": 290.0999993896569,
+      "end": 290.90000053406607,
+      "text": "changing temperature.",
+      "chapter": 2
+    },
+    {
+      "start": 291.83999916077505,
+      "end": 296.0399999237145,
+      "text": "Write an energy ledger before substituting numbers; latent heat has units of",
+      "chapter": 2
+    },
+    {
+      "start": 296.0399999237145,
+      "end": 298.759999237069,
+      "text": "joules per kilogram, not joules per kilogram per kelvin.",
+      "chapter": 2
+    },
+    {
+      "start": 299.40000053406607,
+      "end": 305.37999816895376,
+      "text": "Use 0.10 kg ice, ice heat capacity 2100 joules per kilogram",
+      "chapter": 2
+    },
+    {
+      "start": 305.37999816895376,
+      "end": 311.21999832154165,
+      "text": "per kelvin, latent heat 334000 joules per kilogram and water heat capacity",
+      "chapter": 2
+    },
+    {
+      "start": 311.21999832154165,
+      "end": 313.9800004577721,
+      "text": "4200 joules per kilogram per kelvin.",
+      "chapter": 2
+    },
+    {
+      "start": 314.759999237069,
+      "end": 320.40000053406607,
+      "text": "The three contributions are 2100, 33400 and 8400",
+      "chapter": 2
+    },
+    {
+      "start": 320.40000053406607,
+      "end": 324.02000137329946,
+      "text": "J: total 43900 J.",
+      "chapter": 2
+    },
+    {
+      "start": 324.02000137329946,
+      "end": 329.0399999237145,
+      "text": "With useful heating power 100 W and negligible losses, time is 439",
+      "chapter": 2
+    },
+    {
+      "start": 329.0399999237145,
+      "end": 330.11999984742056,
+      "text": "s.",
+      "chapter": 2
+    },
+    {
+      "start": 330.11999984742056,
+      "end": 333.86000152588736,
+      "text": "For heat conduction through two layers of equal area in steady state, thermal",
+      "chapter": 2
+    },
+    {
+      "start": 333.86000152588736,
+      "end": 337.46000000000845,
+      "text": "resistances L/(kA) add.",
+      "chapter": 2
+    },
+    {
+      "start": 337.87999816895376,
+      "end": 341.46939408268685,
+      "text": "Equal heat current, not equal temperature drop, is the condition linking the",
+      "chapter": 2
+    },
+    {
+      "start": 341.46939408268685,
+      "end": 341.7999963378991,
+      "text": "layers.",
+      "chapter": 2
+    }
+  ]
+}

@@ -1,0 +1,403 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.460
+Hey, welcome back.
+
+00:00:02.200 --> 00:00:05.400
+Biot Savart let us add magnetic field contributions from current elements.
+
+00:00:06.180 --> 00:00:09.700
+Ampere's law gives another route for steady currents: it relates the field's
+
+00:00:09.700 --> 00:00:13.260
+circulation around a closed path to the current enclosed by that path.
+
+00:00:14.280 --> 00:00:18.200
+Imagine walking around a mathematical loop and adding the component of B along
+
+00:00:18.200 --> 00:00:19.140
+each tiny step.
+
+00:00:19.660 --> 00:00:24.240
+The closed integral of B dot d l equals mu zero times the signed enclosed
+
+00:00:24.240 --> 00:00:24.560
+current.
+
+00:00:25.260 --> 00:00:29.660
+The loop is imaginary; it need not be a conducting wire or a magnetic field
+
+00:00:29.660 --> 00:00:29.920
+line.
+
+00:00:30.740 --> 00:00:33.780
+Choose a direction around the path, then curl your right fingers in that
+
+00:00:33.780 --> 00:00:34.080
+direction.
+
+00:00:34.740 --> 00:00:37.180
+Your thumb defines the positive surface normal.
+
+00:00:38.240 --> 00:00:42.020
+Current crossing toward that normal counts positive, and current crossing the
+
+00:00:42.020 --> 00:00:43.220
+opposite way counts negative.
+
+00:00:44.080 --> 00:00:47.640
+For a counterclockwise path viewed on the page, out of page current is
+
+00:00:47.640 --> 00:00:47.960
+positive.
+
+00:00:48.380 --> 00:00:52.544
+If two amperes comes out inside the loop and five amperes goes in, the
+
+00:00:52.544 --> 00:00:53.020
+enclosed
+
+00:00:53.020 --> 00:00:54.620
+current is minus three amperes.
+
+00:00:55.040 --> 00:00:58.800
+A seven ampere wire outside does not enter that enclosed current sum.
+
+00:00:59.420 --> 00:01:01.920
+It can still contribute to the magnetic field along the path.
+
+00:01:02.560 --> 00:01:06.622
+That distinction matters: circulation is constrained by enclosed current,
+
+00:01:06.622 --> 00:01:06.900
+while
+
+00:01:06.900 --> 00:01:09.420
+local field can have contributions from sources elsewhere.
+
+00:01:10.060 --> 00:01:12.160
+We use the steady current vacuum form here.
+
+00:01:13.060 --> 00:01:16.780
+Changing electric fields require Maxwell's additional term, which belongs to a
+
+00:01:16.780 --> 00:01:17.180
+later class.
+
+00:01:18.020 --> 00:01:21.694
+To find a simple field value from this law, we must choose geometry with
+
+00:01:21.694 --> 00:01:22.000
+enough
+
+00:01:22.000 --> 00:01:22.300
+symmetry.
+
+00:01:22.560 --> 00:01:25.380
+Let's see symmetry earn its place in the calculation.
+
+00:01:26.300 --> 00:01:29.680
+Take an effectively infinite straight wire in vacuum carrying steady current.
+
+00:01:30.620 --> 00:01:35.319
+Rotational symmetry around the wire and translational symmetry along it imply
+
+00:01:35.319 --> 00:01:35.380
+a
+
+00:01:35.380 --> 00:01:35.980
+circular field pattern.
+
+00:01:36.960 --> 00:01:40.180
+Choose a circle centered on the wire in a perpendicular plane.
+
+00:01:40.580 --> 00:01:44.420
+Along that circle, B is tangent and has the same magnitude at every point.
+
+00:01:45.340 --> 00:01:50.360
+Choose your walking direction to match the field, so B dot d l is B times d l.
+
+00:01:50.360 --> 00:01:54.000
+The integral becomes B times the circumference, two pi r.
+
+00:01:54.860 --> 00:02:00.206
+Set that equal to mu zero I, and we recover B equal to mu zero I divided by
+
+00:02:00.206 --> 00:02:00.420
+two
+
+00:02:00.420 --> 00:02:00.840
+pi r.
+
+00:02:01.500 --> 00:02:04.340
+This agrees with the Biot Savart result from our previous class.
+
+00:02:05.220 --> 00:02:08.960
+A five ampere wire at five centimeters gives twenty microtesla.
+
+00:02:09.760 --> 00:02:11.720
+Now suppose you choose a rectangle instead.
+
+00:02:12.640 --> 00:02:16.180
+Ampere's law still holds, but B varies with distance and is not everywhere
+
+00:02:16.180 --> 00:02:17.060
+parallel to the path.
+
+00:02:17.590 --> 00:02:20.780
+You cannot replace the integral by B times the rectangle's perimeter.
+
+00:02:21.700 --> 00:02:24.280
+The law did not fail; the shortcut lost its symmetry.
+
+00:02:25.280 --> 00:02:29.170
+Likewise, a nearby extra wire can destroy the symmetry of the total field,
+
+00:02:29.170 --> 00:02:29.380
+even
+
+00:02:29.380 --> 00:02:30.740
+if only one wire is enclosed.
+
+00:02:31.680 --> 00:02:35.600
+When an exam solution writes B times a path length, ask what makes B constant
+
+00:02:35.600 --> 00:02:37.460
+there and what makes the dot product simple.
+
+00:02:37.940 --> 00:02:39.840
+Those are the two reasons the method works.
+
+00:02:40.008 --> 00:02:44.528
+What changes if our circular path lies inside a wire of finite radius?
+
+00:02:45.288 --> 00:02:47.388
+We no longer enclose the whole current.
+
+00:02:48.368 --> 00:02:52.828
+Assume a very long cylindrical wire of radius a with uniform current density
+
+00:02:52.828 --> 00:02:54.028
+across its cross section.
+
+00:02:54.828 --> 00:02:59.807
+At an interior radius r, the enclosed area is pi r squared, compared with
+
+00:02:59.807 --> 00:03:00.148
+total
+
+00:03:00.148 --> 00:03:01.608
+area pi a squared.
+
+00:03:02.248 --> 00:03:05.768
+The enclosed current is therefore I times r squared divided by a squared.
+
+00:03:05.768 --> 00:03:10.488
+Substitute into B times two pi r equals mu zero enclosed current.
+
+00:03:11.168 --> 00:03:16.168
+One factor of r cancels, giving B equal to mu zero I r divided by two pi a
+
+00:03:16.168 --> 00:03:16.428
+squared.
+
+00:03:17.388 --> 00:03:20.928
+Inside the wire, field grows linearly from zero on the axis to its surface
+
+00:03:20.928 --> 00:03:21.308
+value.
+
+00:03:22.148 --> 00:03:26.328
+Outside, the full current is enclosed and field falls as one over r.
+
+00:03:27.028 --> 00:03:30.988
+Both formulas agree at r equal to a, so the field is continuous in this model.
+
+00:03:31.608 --> 00:03:33.828
+Use five amperes and radius two millimeters.
+
+00:03:33.828 --> 00:03:36.868
+The surface field is zero point five millitesla.
+
+00:03:37.708 --> 00:03:41.528
+Halfway from axis to surface it is zero point two five millitesla.
+
+00:03:42.028 --> 00:03:46.128
+At twice the wire radius outside, it is also zero point two five millitesla,
+
+00:03:46.628 --> 00:03:49.968
+but for a different reason: inverse distance rather than linear growth.
+
+00:03:50.728 --> 00:03:54.085
+Check whether the observation point is inside or outside before choosing a
+
+00:03:54.085 --> 00:03:54.448
+formula.
+
+00:03:55.028 --> 00:03:58.788
+If current density is not uniform, the enclosed current fraction must be
+
+00:03:58.788 --> 00:03:59.368
+recalculated.
+
+00:03:59.368 --> 00:04:03.908
+The area ratio is a model assumption, not a universal rule for every wire.
+
+00:04:04.176 --> 00:04:07.916
+Now wrap the wire into many closely spaced turns.
+
+00:04:08.956 --> 00:04:14.336
+A solenoid is a helical coil; when it is long compared with its radius, its
+
+00:04:14.336 --> 00:04:19.696
+interior field is approximately uniform and directed along the axis, away from
+
+00:04:19.696 --> 00:04:20.196
+the ends.
+
+00:04:21.316 --> 00:04:25.810
+Use a rectangular Amperian path with one long side inside and the other
+
+00:04:25.810 --> 00:04:26.316
+outside.
+
+00:04:27.436 --> 00:04:30.476
+Let the length of that inside side be ell.
+
+00:04:30.476 --> 00:04:34.456
+In the ideal infinite solenoid model, the exterior field vanishes.
+
+00:04:35.476 --> 00:04:39.756
+On the short sides, field is perpendicular to the path, so their dot product
+
+00:04:39.756 --> 00:04:41.076
+contributions vanish.
+
+00:04:41.836 --> 00:04:46.056
+Only the inside long side contributes, giving B times ell.
+
+00:04:46.056 --> 00:04:49.776
+If n is turns per unit length, the rectangle's surface is crossed by
+
+00:04:49.776 --> 00:04:54.496
+approximately n ell turns, each carrying current I with the appropriate common
+
+00:04:54.496 --> 00:04:54.776
+sign.
+
+00:04:55.596 --> 00:04:59.396
+Ampere's law becomes B ell equals mu zero n ell I.
+
+00:05:00.356 --> 00:05:03.436
+Cancel ell and get B equal to mu zero n I.
+
+00:05:03.936 --> 00:05:08.256
+The length of the imaginary rectangle disappears; the turn density remains.
+
+00:05:09.056 --> 00:05:12.356
+Curl your right fingers along the winding current and your thumb gives the
+
+00:05:12.356 --> 00:05:13.576
+interior axial direction.
+
+00:05:14.936 --> 00:05:18.956
+Keep N, the total number of turns, separate from n, the number per meter.
+
+00:05:19.616 --> 00:05:23.976
+A finite solenoid has fringing field near its ends and a return field outside.
+
+00:05:24.996 --> 00:05:28.576
+Calling its exterior field exactly zero would overstate the approximation.
+
+00:05:29.376 --> 00:05:33.636
+Our simple formula describes a long, tightly wound air core coil deep inside,
+
+00:05:33.636 --> 00:05:34.224
+not every point around a short coil.
+
+00:05:34.224 --> 00:05:36.824
+Let's calculate one practical exam example.
+
+00:05:37.644 --> 00:05:41.864
+An air core solenoid has six hundred turns over thirty centimeters and carries
+
+00:05:41.864 --> 00:05:42.764
+two amperes.
+
+00:05:43.644 --> 00:05:46.304
+Convert thirty centimeters to zero point three zero meters.
+
+00:05:47.284 --> 00:05:51.504
+Turn density is six hundred divided by zero point three, or two thousand turns
+
+00:05:51.504 --> 00:05:51.884
+per meter.
+
+00:05:52.924 --> 00:05:55.424
+Multiply mu zero by turn density and current.
+
+00:05:56.344 --> 00:06:00.744
+With mu zero approximately four pi times ten to the minus seven, the interior
+
+00:06:00.744 --> 00:06:03.104
+field is about five point zero three millitesla.
+
+00:06:03.904 --> 00:06:08.244
+If we double the coil length while keeping total turns and current fixed, turn
+
+00:06:08.244 --> 00:06:12.864
+density halves and the ideal interior field halves, provided the winding still
+
+00:06:12.864 --> 00:06:14.884
+satisfies the long solenoid approximation.
+
+00:06:15.524 --> 00:06:20.139
+If instead we double both turns and length, turn density stays the same, so
+
+00:06:20.139 --> 00:06:20.324
+the
+
+00:06:20.324 --> 00:06:22.164
+predicted interior field stays the same.
+
+00:06:22.484 --> 00:06:27.204
+On the axis at the end of a very long solenoid, a useful limiting result is
+
+00:06:27.204 --> 00:06:31.104
+approximately half the deep interior field, here about two point five one
+
+00:06:31.104 --> 00:06:31.584
+millitesla.
+
+00:06:32.364 --> 00:06:35.424
+That end value is not the general finite coil field formula.
+
+00:06:36.664 --> 00:06:37.944
+Finally, revisit a subtle trap.
+
+00:06:38.464 --> 00:06:42.224
+If a chosen path encloses zero net current, Ampere's law says its field
+
+00:06:42.224 --> 00:06:43.184
+circulation is zero.
+
+00:06:43.764 --> 00:06:46.684
+It does not say the magnetic field is zero everywhere along it.
+
+00:06:46.684 --> 00:06:49.604
+Nonzero contributions can cancel in the integral.
+
+00:06:50.584 --> 00:06:54.332
+Use symmetry, identify the actual enclosed current, and name the model's
+
+00:06:54.332 --> 00:06:54.644
+limits
+
+00:06:54.644 --> 00:06:55.784
+before simplifying.
+
+00:06:56.484 --> 00:06:59.864
+Those habits will support our next class on magnetic forces and charged
+
+00:06:59.864 --> 00:07:00.524
+particle motion.

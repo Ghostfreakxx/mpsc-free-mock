@@ -1,0 +1,705 @@
+{
+  "duration": 399.40800000001065,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 82.60800000000224
+    },
+    {
+      "start": 82.60800000000224,
+      "end": 167.92800000000457
+    },
+    {
+      "start": 167.92800000000457,
+      "end": 242.54400000000652
+    },
+    {
+      "start": 242.54400000000652,
+      "end": 316.2960000000084
+    },
+    {
+      "start": 316.2960000000084,
+      "end": 399.40800000001065
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.3799999952316284,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2,
+      "end": 5.980000019073486,
+      "text": "Our last class used an ideal fluid with negligible viscous losses.",
+      "chapter": 0
+    },
+    {
+      "start": 6.71999979019165,
+      "end": 11.119999885559082,
+      "text": "Now let's add something real fluids do: resist relative motion between",
+      "chapter": 0
+    },
+    {
+      "start": 11.119999885559082,
+      "end": 11.960000038146973,
+      "text": "neighbouring layers.",
+      "chapter": 0
+    },
+    {
+      "start": 12.619999885559082,
+      "end": 13.779999732971191,
+      "text": "That's viscosity.",
+      "chapter": 0
+    },
+    {
+      "start": 14.800000190734863,
+      "end": 16.540000915527344,
+      "text": "Picture liquid between two parallel plates.",
+      "chapter": 0
+    },
+    {
+      "start": 17.100000381469727,
+      "end": 20.5,
+      "text": "The bottom plate stays still and the top slides sideways.",
+      "chapter": 0
+    },
+    {
+      "start": 21.299999237060547,
+      "end": 26.34000015258789,
+      "text": "For a Newtonian fluid in a simple steady flow, shear stress is viscosity times",
+      "chapter": 0
+    },
+    {
+      "start": 26.34000015258789,
+      "end": 27.34000015258789,
+      "text": "the velocity gradient.",
+      "chapter": 0
+    },
+    {
+      "start": 28.079999923706055,
+      "end": 32.58000183105469,
+      "text": "A gradient tells us how rapidly velocity changes as we move across the layers.",
+      "chapter": 0
+    },
+    {
+      "start": 33.400001525878906,
+      "end": 37.70000076293945,
+      "text": "If the velocity profile is linear, divide the speed difference by the plate",
+      "chapter": 0
+    },
+    {
+      "start": 37.70000076293945,
+      "end": 38.18000030517578,
+      "text": "separation.",
+      "chapter": 0
+    },
+    {
+      "start": 39.279998779296875,
+      "end": 43.52000045776367,
+      "text": "Multiply that gradient by viscosity and area to find the shear force magnitude.",
+      "chapter": 0
+    },
+    {
+      "start": 44.2400016784668,
+      "end": 49.459999084472656,
+      "text": "Try viscosity zero point five pascal seconds, area zero point zero two square",
+      "chapter": 0
+    },
+    {
+      "start": 49.459999084472656,
+      "end": 54.473333994547524,
+      "text": "metres, speed difference one metre per second, and separation zero point zero",
+      "chapter": 0
+    },
+    {
+      "start": 54.473333994547524,
+      "end": 55,
+      "text": "one metres.",
+      "chapter": 0
+    },
+    {
+      "start": 55.540000915527344,
+      "end": 57.459999084472656,
+      "text": "The gradient is one hundred per second.",
+      "chapter": 0
+    },
+    {
+      "start": 57.97999954223633,
+      "end": 63.15999984741211,
+      "text": "Multiply zero point five by zero point zero two by one hundred: one newton.",
+      "chapter": 0
+    },
+    {
+      "start": 63.880001068115234,
+      "end": 68.33999633789062,
+      "text": "The liquid resists the top plate's motion, so an external force must keep it",
+      "chapter": 0
+    },
+    {
+      "start": 68.33999633789062,
+      "end": 68.94000244140625,
+      "text": "moving steadily.",
+      "chapter": 0
+    },
+    {
+      "start": 69.94000244140625,
+      "end": 71.94000244140625,
+      "text": "Viscosity is measured in pascal seconds.",
+      "chapter": 0
+    },
+    {
+      "start": 72.54000091552734,
+      "end": 75.55999755859375,
+      "text": "It is different from density, which measures mass per volume.",
+      "chapter": 0
+    },
+    {
+      "start": 76.0199966430664,
+      "end": 80.9000015258789,
+      "text": "And this linear stress relationship is a model for Newtonian fluids; it isn't a",
+      "chapter": 0
+    },
+    {
+      "start": 80.9000015258789,
+      "end": 82.30000305175781,
+      "text": "universal rule for every mixture.",
+      "chapter": 0
+    },
+    {
+      "start": 82.60800000000224,
+      "end": 85.44799991417155,
+      "text": "Drop a small dense sphere into a viscous liquid.",
+      "chapter": 1
+    },
+    {
+      "start": 86.18799992370829,
+      "end": 87.94800015259013,
+      "text": "At first it accelerates downward.",
+      "chapter": 1
+    },
+    {
+      "start": 88.74799986648783,
+      "end": 92.94800015259013,
+      "text": "As its speed grows, the upward drag grows too, until the forces balance.",
+      "chapter": 1
+    },
+    {
+      "start": 93.68799992370829,
+      "end": 95.78800030517802,
+      "text": "Then it keeps moving at terminal speed.",
+      "chapter": 1
+    },
+    {
+      "start": 96.82800026703104,
+      "end": 100.58799954223856,
+      "text": "Constant speed does not mean zero forces; it means zero net force.",
+      "chapter": 1
+    },
+    {
+      "start": 101.56799908447489,
+      "end": 105.58799954223856,
+      "text": "Draw three forces: weight downward, and buoyancy and drag upward.",
+      "chapter": 1
+    },
+    {
+      "start": 106.36800022888407,
+      "end": 110.52800007629618,
+      "text": "For a sphere moving slowly relative to the fluid at very low Reynolds number,",
+      "chapter": 1
+    },
+    {
+      "start": 110.52800007629618,
+      "end": 116.24799938965067,
+      "text": "Stokes' law gives drag magnitude six pi times viscosity times radius times",
+      "chapter": 1
+    },
+    {
+      "start": 116.24799938965067,
+      "end": 116.98800106811747,
+      "text": "relative speed.",
+      "chapter": 1
+    },
+    {
+      "start": 117.94800015259013,
+      "end": 121.50800152588114,
+      "text": "We also assume the sphere is far enough from container walls that their effect",
+      "chapter": 1
+    },
+    {
+      "start": 121.50800152588114,
+      "end": 122.30800076294169,
+      "text": "is negligible.",
+      "chapter": 1
+    },
+    {
+      "start": 123.30800076294169,
+      "end": 126.52799816894755,
+      "text": "At terminal descent, weight equals buoyancy plus drag.",
+      "chapter": 1
+    },
+    {
+      "start": 127.54799862671122,
+      "end": 131.727998931887,
+      "text": "Substitute the sphere volume, four thirds pi r cubed, into weight and buoyancy.",
+      "chapter": 1
+    },
+    {
+      "start": 132.6880018310569,
+      "end": 137.6880018310569,
+      "text": "After cancelling common factors, terminal speed becomes two r squared times the",
+      "chapter": 1
+    },
+    {
+      "start": 137.6880018310569,
+      "end": 140.788000305178,
+      "text": "density difference times g, divided by nine times viscosity.",
+      "chapter": 1
+    },
+    {
+      "start": 141.9480001525901,
+      "end": 146.14800091552956,
+      "text": "For radius one millimetre, density difference four thousand five hundred,",
+      "chapter": 1
+    },
+    {
+      "start": 146.14800091552956,
+      "end": 150.8079969482444,
+      "text": "viscosity one pascal second, and g ten, the result is zero point zero one",
+      "chapter": 1
+    },
+    {
+      "start": 150.8079969482444,
+      "end": 151.92799969482644,
+      "text": "metres per second.",
+      "chapter": 1
+    },
+    {
+      "start": 152.6880018310569,
+      "end": 153.9879972534202,
+      "text": "Watch the square on radius.",
+      "chapter": 1
+    },
+    {
+      "start": 154.6880018310569,
+      "end": 158.7680036621116,
+      "text": "Doubling radius gives four times the terminal speed only if the Stokes regime",
+      "chapter": 1
+    },
+    {
+      "start": 158.7680036621116,
+      "end": 159.54800244140847,
+      "text": "still applies.",
+      "chapter": 1
+    },
+    {
+      "start": 159.8680021362327,
+      "end": 164.14800091552956,
+      "text": "A sphere less dense than the liquid tends to rise; use the appropriate",
+      "chapter": 1
+    },
+    {
+      "start": 164.14800091552956,
+      "end": 167.60800000000222,
+      "text": "directions rather than treating a negative result as a downward speed.",
+      "chapter": 1
+    },
+    {
+      "start": 167.92800000000457,
+      "end": 170.1280000476883,
+      "text": "Now look at a liquid's surface.",
+      "chapter": 2
+    },
+    {
+      "start": 170.84800007629852,
+      "end": 172.74800017166595,
+      "text": "Creating extra surface costs energy.",
+      "chapter": 2
+    },
+    {
+      "start": 173.6880002288864,
+      "end": 177.92800000000457,
+      "text": "Surface tension describes that cost per unit area, and also the tangential",
+      "chapter": 2
+    },
+    {
+      "start": 177.92800000000457,
+      "end": 179.94800045776825,
+      "text": "force per unit length along a boundary.",
+      "chapter": 2
+    },
+    {
+      "start": 180.6880002288864,
+      "end": 185.32799961853485,
+      "text": "We use gamma, with units newtons per metre, equivalent to joules per square",
+      "chapter": 2
+    },
+    {
+      "start": 185.32799961853485,
+      "end": 185.54800083923797,
+      "text": "metre.",
+      "chapter": 2
+    },
+    {
+      "start": 186.32799961853485,
+      "end": 190.96800091553192,
+      "text": "This is different from viscosity: surface tension concerns an interface, while",
+      "chapter": 2
+    },
+    {
+      "start": 190.96800091553192,
+      "end": 193.66799977112274,
+      "text": "viscosity concerns relative motion within the fluid.",
+      "chapter": 2
+    },
+    {
+      "start": 194.82799961853485,
+      "end": 198.12800076294403,
+      "text": "Imagine a thin soap film on a frame with a movable straight wire.",
+      "chapter": 2
+    },
+    {
+      "start": 198.82799961853485,
+      "end": 201.3080010681198,
+      "text": "The film pulls the wire toward a smaller area.",
+      "chapter": 2
+    },
+    {
+      "start": 202.10800030518035,
+      "end": 206.1480012207077,
+      "text": "Here's the easy detail to miss: the film has two liquid air surfaces.",
+      "chapter": 2
+    },
+    {
+      "start": 207.12800076294403,
+      "end": 211.567999389653,
+      "text": "Each contributes gamma times wire length, so the total force is two gamma l.",
+      "chapter": 2
+    },
+    {
+      "start": 212.32800152588348,
+      "end": 216.78799933879037,
+      "text": "With gamma zero point zero three newtons per metre and wire length zero point",
+      "chapter": 2
+    },
+    {
+      "start": 216.78799933879037,
+      "end": 220.66800167847137,
+      "text": "one zero metres, the force is zero point zero zero six newtons.",
+      "chapter": 2
+    },
+    {
+      "start": 221.12800076294403,
+      "end": 225.68799832153778,
+      "text": "If we pull the wire outward slowly by one centimetre, work is force times",
+      "chapter": 2
+    },
+    {
+      "start": 225.68799832153778,
+      "end": 227.68799832153778,
+      "text": "distance: sixty microjoules.",
+      "chapter": 2
+    },
+    {
+      "start": 228.4880013732956,
+      "end": 232.1679978637741,
+      "text": "The total surface area increases by twice the wire length times the",
+      "chapter": 2
+    },
+    {
+      "start": 232.1679978637741,
+      "end": 232.48799755859832,
+      "text": "displacement.",
+      "chapter": 2
+    },
+    {
+      "start": 233.6679978637741,
+      "end": 236.6480012207077,
+      "text": "Multiply that area change by gamma, and you get the same energy.",
+      "chapter": 2
+    },
+    {
+      "start": 237.70799877930145,
+      "end": 241.68800213623504,
+      "text": "Assume gamma stays constant and neglect gravity and other energy changes in",
+      "chapter": 2
+    },
+    {
+      "start": 241.68800213623504,
+      "end": 242.10800030518035,
+      "text": "this model.",
+      "chapter": 2
+    },
+    {
+      "start": 242.54400000000652,
+      "end": 245.92400011444744,
+      "text": "Why is pressure inside a small droplet higher than outside?",
+      "chapter": 3
+    },
+    {
+      "start": 247.04400000000652,
+      "end": 250.92400011444744,
+      "text": "Surface tension tends to reduce its area, and an outward pressure difference",
+      "chapter": 3
+    },
+    {
+      "start": 250.92400011444744,
+      "end": 252.02399954224285,
+      "text": "balances that effect.",
+      "chapter": 3
+    },
+    {
+      "start": 252.92400011444744,
+      "end": 257.7640002670353,
+      "text": "For a spherical liquid droplet, the pressure excess is two gamma divided by radius.",
+      "chapter": 3
+    },
+    {
+      "start": 258.6039994659489,
+      "end": 262.8840001525944,
+      "text": "For a thin soap bubble, there are two interfaces, and the pressure excess is",
+      "chapter": 3
+    },
+    {
+      "start": 262.8840001525944,
+      "end": 264.5640004577702,
+      "text": "four gamma divided by radius.",
+      "chapter": 3
+    },
+    {
+      "start": 265.30400022888836,
+      "end": 269.2839997711247,
+      "text": "The film is thin enough that the inner and outer radii can be treated as equal,",
+      "chapter": 3
+    },
+    {
+      "start": 269.6039994659489,
+      "end": 271.9239991607731,
+      "text": "and gamma is the same on both surfaces.",
+      "chapter": 3
+    },
+    {
+      "start": 272.8840001525944,
+      "end": 276.96399816895183,
+      "text": "A gas bubble inside a liquid has one interface, so don't automatically give it",
+      "chapter": 3
+    },
+    {
+      "start": 276.96399816895183,
+      "end": 277.8840001525944,
+      "text": "the soap bubble formula.",
+      "chapter": 3
+    },
+    {
+      "start": 278.6639989318913,
+      "end": 283.02399954224285,
+      "text": "Let's compare a droplet and a thin soap bubble, each with radius one millimetre",
+      "chapter": 3
+    },
+    {
+      "start": 283.02399954224285,
+      "end": 286.6639989318913,
+      "text": "and the given surface tension zero point zero three newtons per metre.",
+      "chapter": 3
+    },
+    {
+      "start": 287.58400091553386,
+      "end": 292.23400053406414,
+      "text": "For the droplet, two times zero point zero three divided by zero point zero",
+      "chapter": 3
+    },
+    {
+      "start": 292.23400053406414,
+      "end": 294.18399938965496,
+      "text": "zero one gives sixty pascals.",
+      "chapter": 3
+    },
+    {
+      "start": 294.7840016784733,
+      "end": 297.46399816895183,
+      "text": "The soap bubble gives one hundred twenty pascals.",
+      "chapter": 3
+    },
+    {
+      "start": 298.08400091553386,
+      "end": 302.20399984741863,
+      "text": "These are excess pressures; add the outside pressure if absolute inside",
+      "chapter": 3
+    },
+    {
+      "start": 302.20399984741863,
+      "end": 303.08400091553386,
+      "text": "pressure is requested.",
+      "chapter": 3
+    },
+    {
+      "start": 304.1439984741276,
+      "end": 306.3039983215397,
+      "text": "Now halve the radius while keeping gamma fixed.",
+      "chapter": 3
+    },
+    {
+      "start": 306.84400305176433,
+      "end": 307.34400305176433,
+      "text": "What happens?",
+      "chapter": 3
+    },
+    {
+      "start": 308.1439984741276,
+      "end": 309.38399633789714,
+      "text": "Both excess pressures double.",
+      "chapter": 3
+    },
+    {
+      "start": 310.0440000000065,
+      "end": 314.0440000000065,
+      "text": "The key checklist is radius, number of interfaces, and whether the requested",
+      "chapter": 3
+    },
+    {
+      "start": 314.0440000000065,
+      "end": 315.9440015258854,
+      "text": "pressure is absolute or excess.",
+      "chapter": 3
+    },
+    {
+      "start": 316.2960000000084,
+      "end": 319.4760000667656,
+      "text": "Finally, why can water rise in a narrow glass tube?",
+      "chapter": 4
+    },
+    {
+      "start": 319.9760000667656,
+      "end": 323.1360001525963,
+      "text": "At the contact line, surface tension has a vertical component.",
+      "chapter": 4
+    },
+    {
+      "start": 323.83599996186143,
+      "end": 327.4159998855675,
+      "text": "For a wetting liquid, that component supports the raised liquid column.",
+      "chapter": 4
+    },
+    {
+      "start": 328.05600022889024,
+      "end": 332.6159996948326,
+      "text": "The tube's contact line has circumference two pi r, so the upward force is two",
+      "chapter": 4
+    },
+    {
+      "start": 332.6159996948326,
+      "end": 335.5760006866539,
+      "text": "pi r times gamma times cosine of the contact angle.",
+      "chapter": 4
+    },
+    {
+      "start": 336.0760006866539,
+      "end": 340.65600061035997,
+      "text": "The column's weight is density times pi r squared times height times g.",
+      "chapter": 4
+    },
+    {
+      "start": 341.43599938965684,
+      "end": 346.1159996948326,
+      "text": "Balance them, and the height is two gamma cosine theta divided by density times",
+      "chapter": 4
+    },
+    {
+      "start": 346.1159996948326,
+      "end": 347.2960000000084,
+      "text": "g times radius.",
+      "chapter": 4
+    },
+    {
+      "start": 348.03599977112657,
+      "end": 349.9559998474205,
+      "text": "The contact angle is measured through the liquid.",
+      "chapter": 4
+    },
+    {
+      "start": 350.5360016784752,
+      "end": 354.33600091553575,
+      "text": "In this introductory model, neglect the meniscus volume and use a narrow",
+      "chapter": 4
+    },
+    {
+      "start": 354.33600091553575,
+      "end": 355.3760018310631,
+      "text": "uniform tube.",
+      "chapter": 4
+    },
+    {
+      "start": 355.93599938965684,
+      "end": 361.33600091553575,
+      "text": "Let gamma be zero point zero seven five, density one thousand, g ten, inner",
+      "chapter": 4
+    },
+    {
+      "start": 361.33600091553575,
+      "end": 364.6360001525963,
+      "text": "radius zero point five millimetres, and contact angle zero.",
+      "chapter": 4
+    },
+    {
+      "start": 365.3959984741295,
+      "end": 368.17600106812364,
+      "text": "Convert radius to zero point zero zero zero five metres.",
+      "chapter": 4
+    },
+    {
+      "start": 368.7159981689537,
+      "end": 372.51600122071153,
+      "text": "The numerator is zero point one five; the denominator is five.",
+      "chapter": 4
+    },
+    {
+      "start": 372.9559998474205,
+      "end": 377.41599893189317,
+      "text": "Height is zero point zero three metres, or three centimetres.",
+      "chapter": 4
+    },
+    {
+      "start": 377.41599893189317,
+      "end": 379.0759987793053,
+      "text": "Halving tube radius doubles the rise.",
+      "chapter": 4
+    },
+    {
+      "start": 379.6360001525963,
+      "end": 383.93599938965684,
+      "text": "If the contact angle exceeds ninety degrees, cosine is negative and the model",
+      "chapter": 4
+    },
+    {
+      "start": 383.93599938965684,
+      "end": 384.83600091553575,
+      "text": "predicts a depression.",
+      "chapter": 4
+    },
+    {
+      "start": 385.53599786377794,
+      "end": 389.6759972534264,
+      "text": "Before finishing, separate viscosity from surface tension, count interfaces,",
+      "chapter": 4
+    },
+    {
+      "start": 390.4560036621178,
+      "end": 392.9760003051842,
+      "text": "convert radius to metres, and state the force balance.",
+      "chapter": 4
+    },
+    {
+      "start": 393.5560021362389,
+      "end": 398.35599755860216,
+      "text": "These are foundations; detailed flow resistance and experimental methods need",
+      "chapter": 4
+    },
+    {
+      "start": 398.35599755860216,
+      "end": 399.15600061035997,
+      "text": "further practice.",
+      "chapter": 4
+    }
+  ]
+}

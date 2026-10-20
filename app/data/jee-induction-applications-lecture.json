@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Induction and AC applications: motion, energy and resonance",
+  "sources": [
+    {
+      "title": "OpenStax: motional emf",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/13-3-motional-emf"
+    },
+    {
+      "title": "OpenStax: AC resonance",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/15-5-resonance-in-an-ac-circuit"
+    },
+    {
+      "title": "Official JEE Main 2026 syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What supplies the heat energy in the ideal constant-speed sliding-rod circuit?",
+      "options": [
+        "The static field alone",
+        "The external mechanical agent",
+        "The rails create energy",
+        "No energy is required"
+      ],
+      "answer": 1,
+      "explanation": "The external force maintains motion against magnetic braking. Its mechanical power Fv equals resistor heating in the stated ideal circuit."
+    },
+    {
+      "question": "What is the end emf of a radial rod rotating about one end in a perpendicular uniform field?",
+      "options": [
+        "B omega l^2",
+        "B omega l",
+        "B omega l^2/2",
+        "Zero for every rotation"
+      ],
+      "answer": 2,
+      "explanation": "Local speed is omega s, so integrating B omega s ds along the rod produces the factor one half. Tip speed cannot represent every element."
+    },
+    {
+      "question": "For L=0.50 H and R=5 ohm, what is the RL time constant?",
+      "options": [
+        "0.10 s",
+        "10 s",
+        "2.5 s",
+        "0.01 s"
+      ],
+      "answer": 0,
+      "explanation": "The time constant is L/R=0.50/5=0.10 s. At this time growth current is about 63.2 percent of its eventual steady value."
+    },
+    {
+      "question": "In the stated resonant series circuit, what is the inductor RMS voltage?",
+      "options": [
+        "0 V",
+        "20 V",
+        "40 V",
+        "200 V"
+      ],
+      "answer": 3,
+      "explanation": "The current is 2 A RMS and inductive reactance is 100 ohm, giving 200 V RMS. Capacitor voltage cancels it in the phasor loop sum."
+    },
+    {
+      "question": "For a series RLC circuit with R=10 ohm and L=0.20 H, what is half-power angular bandwidth?",
+      "options": [
+        "500 rad/s",
+        "50 rad/s",
+        "2 rad/s",
+        "0.02 rad/s"
+      ],
+      "answer": 1,
+      "explanation": "For ideal series RLC at fixed source voltage, the difference of the half-power angular frequencies is exactly R/L=50 rad/s."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Moving conductors: where the energy comes from",
+      "formula": "Sliding: emf=Blv; rotating: emf=B omega l^2/2; Fv=I^2 R; torque omega=I^2 R",
+      "points": [
+        "Sliding rod: use Lenz law to find current and braking direction.",
+        "Rotating rod: integrate the changing local speed.",
+        "Mechanical input, not the static field, supplies the resistor heat."
+      ],
+      "script": "Hey, welcome back. Let's turn motion into electricity, without pretending the magnetic field gives us free energy. Picture a rod sliding right on two rails, with a field into the page. The loop gets bigger, so inward magnetic flux increases. What should the induced current do? Take a moment. It produces an outward field to oppose that increase, so current is counterclockwise, upward through the rod. The resulting force on the rod points left. You must pull right to keep the speed constant. Here is our example: field zero point five tesla, rod length zero point four metres, speed three metres per second, and total resistance two ohms. Emf is B times length times speed: zero point six volts. Current is zero point three amperes. Braking force is B times current times length, zero point zero six newtons. Multiply by speed: mechanical input is zero point one eight watts. Current squared times resistance gives exactly the same heating power. Good, our energy account balances. We neglected friction and circuit inductance. Now rotate a rod about one end. Should we use the tip speed everywhere? No. At distance s from the pivot, speed is omega times s. Integrating B omega s along the rod gives B omega length squared divided by two. With zero point four tesla, twenty radians per second and half a metre, emf is one volt. Counterclockwise rotation with field out of the page makes the tip positive. An isolated rod can have this voltage without continuous current. Add a stationary return path and contacts with five ohms total resistance, and current is zero point two amperes. Braking torque is B times current times length squared divided by two: zero point zero one newton metres. Torque times angular speed is zero point two watts, matching resistor heating. Different geometry, same conservation check."
+    },
+    {
+      "title": "RL switching: slope changes before current does",
+      "formula": "I=(E/R)[1-exp(-t/tau)]; tau=L/R; U=L I^2/2",
+      "points": [
+        "Finite inductor voltage sets dI/dt, not an instantaneous current jump.",
+        "At one time constant, growth reaches about 63.2 percent.",
+        "A discharge path matters: an open switch can produce a large voltage."
+      ],
+      "script": "Next, let's give the circuit a little memory. An inductor stores magnetic energy. For constant inductance, its voltage is L times the rate of change of current, using the passive sign convention. A finite applied voltage changes the slope of current, not the current instantaneously. Imagine connecting a ten volt source to five ohms and a zero point five henry inductor in series, initially with zero current. Right at the start, current is still zero. The resistor voltage is zero, and the inductor initially takes the source voltage. Eventually the current stops changing. The ideal inductor then has zero voltage, and current approaches ten divided by five, two amperes. How quickly? The time constant is L divided by R, zero point one seconds. Growth current is the final current times one minus the exponential of negative time divided by the time constant. At one time constant, that factor is about zero point six three two. So current is about one point two six amperes, not two. Think of the time constant as a characteristic pace, not a finish line. The final stored magnetic energy is one half L times current squared: one joule. Now remove the source but leave a closed resistor and inductor discharge loop. Current decays exponentially, and the stored energy becomes heat in that resistor. But opening the only current path is a different situation. The inductor can develop a large voltage, sometimes causing a spark. We do not casually apply the closed-loop decay formula to an open circuit. For JEE, sketch the circuit before and after switching, state the initial current, and identify the actual path available for discharge. That picture often matters more than memorizing another formula."
+    },
+    {
+      "title": "Resonance: large element voltages and exact bandwidth",
+      "formula": "omega0=1/sqrt(LC); I_rms=V_rms/R; delta omega=R/L; Q=omega0 L/R",
+      "points": [
+        "Reactances cancel in the series sum, not separately.",
+        "Use RMS voltage and RMS current consistently.",
+        "Half-power endpoints have an exact bandwidth and a geometric-mean relation."
+      ],
+      "script": "Finally, an AC puzzle. Can a twenty volt source produce two hundred volts across an inductor in a passive circuit? At series resonance, yes, under the ideal conditions we are about to specify. Take inductance zero point two henry, capacitance twenty microfarads, total series resistance ten ohms, and source voltage twenty volts RMS. Resonant angular frequency is one divided by the square root of L times C: five hundred radians per second, about seventy nine point five eight hertz. Inductive and capacitive reactances each have magnitude one hundred ohms. They have opposite phase, so they cancel in the total impedance, leaving ten ohms. Current is two amperes RMS. Each reactive element has two hundred volts RMS, but their voltage phasors oppose. We must not add those magnitudes as if they point in the same direction. The source supplies forty watts, dissipated in resistance. Ideal inductors and capacitors exchange energy but consume no average power. Now ask how selective this resonance is. With source voltage fixed, half resonant power means current is the resonant value divided by the square root of two. This happens when the magnitude of inductive reactance minus capacitive reactance equals resistance. Solving the lower and upper cases gives approximately four hundred seventy five point six two and five hundred twenty five point six two radians per second. Subtract: bandwidth is fifty radians per second, exactly R divided by L for this ideal series model. Quality factor is resonant angular frequency times L divided by R, which is ten. Notice one subtlety. The geometric mean of the half-power frequencies is the resonance frequency; their arithmetic midpoint is not exactly resonance. Symmetric endpoints are an approximation, not an identity. Real losses and component ratings limit voltage magnification. Our routine is to name the model, keep RMS separate from peak values, and check power. That is how these equations become useful tools rather than a guessing game."
+    }
+  ]
+}

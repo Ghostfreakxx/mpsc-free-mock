@@ -1,0 +1,891 @@
+{
+  "duration": 478.32000000001364,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 89.90400000000251
+    },
+    {
+      "start": 89.90400000000251,
+      "end": 182.61600000000513
+    },
+    {
+      "start": 182.61600000000513,
+      "end": 278.5680000000079
+    },
+    {
+      "start": 278.5680000000079,
+      "end": 380.47200000001084
+    },
+    {
+      "start": 380.47200000001084,
+      "end": 478.32000000001364
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.4600000381469727,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.9800000190734863,
+      "end": 6.21999979019165,
+      "text": "A coil creates a magnetic field, but place a material inside it and the",
+      "chapter": 0
+    },
+    {
+      "start": 6.21999979019165,
+      "end": 7.440000057220459,
+      "text": "material can respond too.",
+      "chapter": 0
+    },
+    {
+      "start": 8.300000190734863,
+      "end": 10.859999656677246,
+      "text": "Today's question is not just how strong the source is.",
+      "chapter": 0
+    },
+    {
+      "start": 11.300000190734863,
+      "end": 13.4399995803833,
+      "text": "It is how matter changes the result.",
+      "chapter": 0
+    },
+    {
+      "start": 13.4399995803833,
+      "end": 19.020000457763672,
+      "text": "Magnetisation, capital M, means net magnetic dipole moment per unit volume.",
+      "chapter": 0
+    },
+    {
+      "start": 19.68000030517578,
+      "end": 24.639999389648438,
+      "text": "If microscopic moments cancel, the net magnetisation can be zero even though",
+      "chapter": 0
+    },
+    {
+      "start": 24.639999389648438,
+      "end": 26.020000457763672,
+      "text": "individual moments exist.",
+      "chapter": 0
+    },
+    {
+      "start": 26.719999313354492,
+      "end": 31.18000030517578,
+      "text": "Both magnetisation and magnetic field intensity, capital H, are measured in",
+      "chapter": 0
+    },
+    {
+      "start": 31.18000030517578,
+      "end": 32.040000915527344,
+      "text": "amperes per meter.",
+      "chapter": 0
+    },
+    {
+      "start": 32.68000030517578,
+      "end": 35.220001220703125,
+      "text": "The magnetic field B is measured in tesla.",
+      "chapter": 0
+    },
+    {
+      "start": 36,
+      "end": 40.29999923706055,
+      "text": "In SI units, B equals mu zero times the sum of H and M.",
+      "chapter": 0
+    },
+    {
+      "start": 41.02000045776367,
+      "end": 45.65999984741211,
+      "text": "For a linear isotropic material, M equals susceptibility chi times H.",
+      "chapter": 0
+    },
+    {
+      "start": 46.41999816894531,
+      "end": 49.2400016784668,
+      "text": "Isotropic means the response has no preferred material direction.",
+      "chapter": 0
+    },
+    {
+      "start": 49.900001525878906,
+      "end": 51.560001373291016,
+      "text": "Susceptibility has no units.",
+      "chapter": 0
+    },
+    {
+      "start": 52.47999954223633,
+      "end": 57.08000183105469,
+      "text": "Combine those two equations and B equals mu zero times one plus chi times H.",
+      "chapter": 0
+    },
+    {
+      "start": 58,
+      "end": 61.02000045776367,
+      "text": "Relative permeability is therefore one plus chi in this model.",
+      "chapter": 0
+    },
+    {
+      "start": 61.84000015258789,
+      "end": 66.5,
+      "text": "Try this: chi is zero point zero zero two, and internal H is five hundred",
+      "chapter": 0
+    },
+    {
+      "start": 66.5,
+      "end": 67.37999725341797,
+      "text": "amperes per meter.",
+      "chapter": 0
+    },
+    {
+      "start": 67.9800033569336,
+      "end": 68.54000091552734,
+      "text": "What is M?",
+      "chapter": 0
+    },
+    {
+      "start": 69.05999755859375,
+      "end": 69.63999938964844,
+      "text": "Take a moment.",
+      "chapter": 0
+    },
+    {
+      "start": 70.04000091552734,
+      "end": 72.44000244140625,
+      "text": "It is one ampere per meter, aligned with H.",
+      "chapter": 0
+    },
+    {
+      "start": 73.0199966430664,
+      "end": 76.0999984741211,
+      "text": "Relative permeability is one point zero zero two.",
+      "chapter": 0
+    },
+    {
+      "start": 76.0999984741211,
+      "end": 77.33999633789062,
+      "text": "Notice we used internal H.",
+      "chapter": 0
+    },
+    {
+      "start": 77.83999633789062,
+      "end": 80.88025635939378,
+      "text": "A specimen's shape can make internal H different from the field applied",
+      "chapter": 0
+    },
+    {
+      "start": 80.88025635939378,
+      "end": 81.18000030517578,
+      "text": "without",
+      "chapter": 0
+    },
+    {
+      "start": 81.18000030517578,
+      "end": 81.68000030517578,
+      "text": "the specimen.",
+      "chapter": 0
+    },
+    {
+      "start": 82.31999969482422,
+      "end": 84.95999908447266,
+      "text": "For our numerical examples, internal H is given.",
+      "chapter": 0
+    },
+    {
+      "start": 85.77999877929688,
+      "end": 89.37999725341797,
+      "text": "Keep that assumption visible; it saves a sneaky substitution error.",
+      "chapter": 0
+    },
+    {
+      "start": 89.90400000000251,
+      "end": 91.7039999523188,
+      "text": "Imagine pointing H to the right.",
+      "chapter": 1
+    },
+    {
+      "start": 92.50399990463508,
+      "end": 96.40400000000251,
+      "text": "In a diamagnetic material, the induced magnetisation points left.",
+      "chapter": 1
+    },
+    {
+      "start": 97.16400022888435,
+      "end": 100.22399969482673,
+      "text": "That opposing response is encoded by negative susceptibility.",
+      "chapter": 1
+    },
+    {
+      "start": 101.20400019073737,
+      "end": 105.00400038147224,
+      "text": "It does not mean every magnetic field inside the sample reverses direction.",
+      "chapter": 1
+    },
+    {
+      "start": 105.94400091552986,
+      "end": 110.85835836987869,
+      "text": "The response is usually tiny, so B normally remains in the direction of H,",
+      "chapter": 1
+    },
+    {
+      "start": 110.85835836987869,
+      "end": 111.123999313357,
+      "text": "just",
+      "chapter": 1
+    },
+    {
+      "start": 111.123999313357,
+      "end": 113.92400045776618,
+      "text": "slightly reduced compared with mu zero H.",
+      "chapter": 1
+    },
+    {
+      "start": 113.92400045776618,
+      "end": 117.42400045776618,
+      "text": "On the board, the orange arrow shows the response, not the total field.",
+      "chapter": 1
+    },
+    {
+      "start": 118.2440001525904,
+      "end": 122.66399832153571,
+      "text": "Microscopically, the applied field changes the motion of electrons and induces",
+      "chapter": 1
+    },
+    {
+      "start": 122.66399832153571,
+      "end": 124.32399816894782,
+      "text": "an opposing magnetic contribution.",
+      "chapter": 1
+    },
+    {
+      "start": 125.30400152588142,
+      "end": 129.6639983215357,
+      "text": "This contribution exists widely, but a stronger paramagnetic or ferromagnetic",
+      "chapter": 1
+    },
+    {
+      "start": 129.6639983215357,
+      "end": 133.10400076294195,
+      "text": "response can dominate the observed behaviour.",
+      "chapter": 1
+    },
+    {
+      "start": 133.10400076294195,
+      "end": 136.72399969482672,
+      "text": "Familiar diamagnetic examples include bismuth, copper and water.",
+      "chapter": 1
+    },
+    {
+      "start": 137.5639998474146,
+      "end": 141.84399862671148,
+      "text": "In a nonuniform external field, an ordinary weak diamagnetic sample tends",
+      "chapter": 1
+    },
+    {
+      "start": 141.84399862671148,
+      "end": 143.10400076294195,
+      "text": "toward regions of weaker field.",
+      "chapter": 1
+    },
+    {
+      "start": 143.52399893188726,
+      "end": 147.36399908447515,
+      "text": "In a uniform field, there is no such net translation from a field gradient.",
+      "chapter": 1
+    },
+    {
+      "start": 148.6639983215357,
+      "end": 153.51630928470178,
+      "text": "Now calculate: chi is minus four times ten to the minus five, and internal H",
+      "chapter": 1
+    },
+    {
+      "start": 153.51630928470178,
+      "end": 153.6440016784693,
+      "text": "is",
+      "chapter": 1
+    },
+    {
+      "start": 153.6440016784693,
+      "end": 155.46399755859625,
+      "text": "two thousand amperes per meter to the right.",
+      "chapter": 1
+    },
+    {
+      "start": 155.46399755859625,
+      "end": 158.9040000000025,
+      "text": "M is minus zero point zero eight amperes per meter.",
+      "chapter": 1
+    },
+    {
+      "start": 159.98400183105718,
+      "end": 161.74399633789312,
+      "text": "The minus sign tells us left.",
+      "chapter": 1
+    },
+    {
+      "start": 162.72399969482672,
+      "end": 165.98400183105718,
+      "text": "Relative permeability is zero point nine nine nine nine six, a little below",
+      "chapter": 1
+    },
+    {
+      "start": 165.98400183105718,
+      "end": 167.2040030517603,
+      "text": "one, not negative.",
+      "chapter": 1
+    },
+    {
+      "start": 167.8040015258814,
+      "end": 171.48041073373898,
+      "text": "For ordinary diamagnetic materials, susceptibility is approximately",
+      "chapter": 1
+    },
+    {
+      "start": 171.48041073373898,
+      "end": 172.08400030517828,
+      "text": "independent",
+      "chapter": 1
+    },
+    {
+      "start": 172.08400030517828,
+      "end": 175.3040015258814,
+      "text": "of temperature over the usual elementary model range.",
+      "chapter": 1
+    },
+    {
+      "start": 175.3040015258814,
+      "end": 180.36399908447515,
+      "text": "JEE comparisons often test the sign, direction and temperature trend together.",
+      "chapter": 1
+    },
+    {
+      "start": 181.28399725342047,
+      "end": 182.61600000000513,
+      "text": "Learn that connected picture, rather than three disconnected labels.",
+      "chapter": 1
+    },
+    {
+      "start": 182.61600000000513,
+      "end": 187.5560000572256,
+      "text": "Now suppose atoms have permanent magnetic moments, but their directions are",
+      "chapter": 2
+    },
+    {
+      "start": 187.5560000572256,
+      "end": 189.2359998855642,
+      "text": "disordered when no field is applied.",
+      "chapter": 2
+    },
+    {
+      "start": 189.9360001716665,
+      "end": 193.5159996185354,
+      "text": "In a paramagnet, the field biases these moments toward alignment.",
+      "chapter": 2
+    },
+    {
+      "start": 194.61600000000513,
+      "end": 196.95600015259302,
+      "text": "Thermal agitation keeps the alignment incomplete.",
+      "chapter": 2
+    },
+    {
+      "start": 197.69599992371118,
+      "end": 202.1759994659475,
+      "text": "The result is a small positive susceptibility and magnetisation along H.",
+      "chapter": 2
+    },
+    {
+      "start": 203.03600007629908,
+      "end": 205.69599992371118,
+      "text": "Aluminium and oxygen are useful elementary examples.",
+      "chapter": 2
+    },
+    {
+      "start": 206.5159996185354,
+      "end": 210.9760006103567,
+      "text": "In a field gradient, a weak paramagnetic sample tends toward stronger field.",
+      "chapter": 2
+    },
+    {
+      "start": 211.43599969482935,
+      "end": 216.49600106812036,
+      "text": "Again, that statement needs a nonuniform field; attraction is not a substitute",
+      "chapter": 2
+    },
+    {
+      "start": 216.49600106812036,
+      "end": 217.65600091553247,
+      "text": "for checking geometry.",
+      "chapter": 2
+    },
+    {
+      "start": 218.6360004577688,
+      "end": 222.21599847412622,
+      "text": "The ordinary response does not leave a stable permanent magnet when the field",
+      "chapter": 2
+    },
+    {
+      "start": 222.21599847412622,
+      "end": 222.81600076294458,
+      "text": "is removed.",
+      "chapter": 2
+    },
+    {
+      "start": 223.7960003051809,
+      "end": 227.67600137329615,
+      "text": "Temperature gives us a lovely competition: more thermal agitation makes",
+      "chapter": 2
+    },
+    {
+      "start": 227.67600137329615,
+      "end": 228.51600152588404,
+      "text": "alignment harder.",
+      "chapter": 2
+    },
+    {
+      "start": 229.33600122070825,
+      "end": 234.03599816895044,
+      "text": "For a material in the Curie law regime, susceptibility equals Curie constant C",
+      "chapter": 2
+    },
+    {
+      "start": 234.03599816895044,
+      "end": 236.03599816895044,
+      "text": "divided by absolute temperature T.",
+      "chapter": 2
+    },
+    {
+      "start": 236.67600137329615,
+      "end": 238.5559986267141,
+      "text": "Use kelvin, not degrees Celsius.",
+      "chapter": 2
+    },
+    {
+      "start": 239.21599847412622,
+      "end": 243.51600152588404,
+      "text": "This is a model for appropriate materials and conditions, not a universal law",
+      "chapter": 2
+    },
+    {
+      "start": 243.51600152588404,
+      "end": 244.71599847412622,
+      "text": "for every paramagnet.",
+      "chapter": 2
+    },
+    {
+      "start": 245.61600000000513,
+      "end": 247.23600274658716,
+      "text": "Let's practise.",
+      "chapter": 2
+    },
+    {
+      "start": 247.23600274658716,
+      "end": 250.23600274658716,
+      "text": "Susceptibility is zero point zero zero three at three hundred kelvin.",
+      "chapter": 2
+    },
+    {
+      "start": 251.01600152588404,
+      "end": 253.33600122070825,
+      "text": "At six hundred kelvin, what should it be under this model?",
+      "chapter": 2
+    },
+    {
+      "start": 254.395998779302,
+      "end": 255.09600335693872,
+      "text": "Pause before dividing.",
+      "chapter": 2
+    },
+    {
+      "start": 255.81599694824732,
+      "end": 258.65600091553245,
+      "text": "It becomes zero point zero zero one five.",
+      "chapter": 2
+    },
+    {
+      "start": 258.65600091553245,
+      "end": 263.0359981689504,
+      "text": "At fixed internal H of eight hundred amperes per meter, magnetisation drops",
+      "chapter": 2
+    },
+    {
+      "start": 263.0359981689504,
+      "end": 266.0359981689504,
+      "text": "from two point four to one point two amperes per meter.",
+      "chapter": 2
+    },
+    {
+      "start": 266.6160000000051,
+      "end": 270.7760036621145,
+      "text": "The field did not become weaker; thermal disorder changed the material's",
+      "chapter": 2
+    },
+    {
+      "start": 270.7760036621145,
+      "end": 271.1160000000051,
+      "text": "response.",
+      "chapter": 2
+    },
+    {
+      "start": 271.87600213623557,
+      "end": 274.5960033569387,
+      "text": "If temperature is given in Celsius, convert first.",
+      "chapter": 2
+    },
+    {
+      "start": 275.55600244141135,
+      "end": 278.2960003051809,
+      "text": "Ratios of Celsius temperatures do not preserve the Curie relation.",
+      "chapter": 2
+    },
+    {
+      "start": 278.5680000000079,
+      "end": 281.54800001908137,
+      "text": "Iron can respond much more strongly than aluminium.",
+      "chapter": 3
+    },
+    {
+      "start": 282.4279998951037,
+      "end": 285.7664614592411,
+      "text": "The difference is not simply that we turned up the same weak alignment",
+      "chapter": 3
+    },
+    {
+      "start": 285.7664614592411,
+      "end": 286.14799992371394,
+      "text": "process.",
+      "chapter": 3
+    },
+    {
+      "start": 286.96799961853816,
+      "end": 290.9480001144488,
+      "text": "In a ferromagnet, interactions favour cooperative ordering of neighbouring",
+      "chapter": 3
+    },
+    {
+      "start": 290.9480001144488,
+      "end": 291.9480001144488,
+      "text": "microscopic moments.",
+      "chapter": 3
+    },
+    {
+      "start": 293.0680000000079,
+      "end": 297.3280002288897,
+      "text": "Below the appropriate transition temperature, regions called domains can have",
+      "chapter": 3
+    },
+    {
+      "start": 297.3280002288897,
+      "end": 299.5479995422442,
+      "text": "spontaneous magnetisation.",
+      "chapter": 3
+    },
+    {
+      "start": 299.5479995422442,
+      "end": 302.30799977112605,
+      "text": "But a whole specimen need not start with a large net moment.",
+      "chapter": 3
+    },
+    {
+      "start": 303.24800030518367,
+      "end": 306.42800061035945,
+      "text": "Different domains can point in different directions and largely cancel.",
+      "chapter": 3
+    },
+    {
+      "start": 307.24800030518367,
+      "end": 308.9479991607745,
+      "text": "Look at the left hand sketch.",
+      "chapter": 3
+    },
+    {
+      "start": 309.5680000000079,
+      "end": 312.86799923706843,
+      "text": "The arrows represent different domains, not single electrons.",
+      "chapter": 3
+    },
+    {
+      "start": 314.0680000000079,
+      "end": 318.84799877930476,
+      "text": "Apply a field and favourable domains can grow; magnetisation can also rotate",
+      "chapter": 3
+    },
+    {
+      "start": 318.84799877930476,
+      "end": 319.4879981689532,
+      "text": "toward the field.",
+      "chapter": 3
+    },
+    {
+      "start": 320.3879996948321,
+      "end": 322.9879981689532,
+      "text": "The right hand sketch shows a stronger net alignment.",
+      "chapter": 3
+    },
+    {
+      "start": 324.0479995422442,
+      "end": 327.4080001525958,
+      "text": "The response is generally nonlinear and depends on magnetic history.",
+      "chapter": 3
+    },
+    {
+      "start": 328.3080016784747,
+      "end": 331.9879981689532,
+      "text": "So do not assign one constant chi across the entire ferromagnetic curve.",
+      "chapter": 3
+    },
+    {
+      "start": 332.72799984742,
+      "end": 336.9680015258868,
+      "text": "At strong enough fields, magnetisation approaches saturation; it cannot",
+      "chapter": 3
+    },
+    {
+      "start": 336.9680015258868,
+      "end": 340.3879996948321,
+      "text": "increase without limit as a simple proportionality might suggest.",
+      "chapter": 3
+    },
+    {
+      "start": 341.788001220711,
+      "end": 344.94799725342585,
+      "text": "Some magnetisation can remain after the external field is removed.",
+      "chapter": 3
+    },
+    {
+      "start": 345.62799755860163,
+      "end": 348.24800030518367,
+      "text": "The retained response is associated with magnetic memory.",
+      "chapter": 3
+    },
+    {
+      "start": 349.3680030517657,
+      "end": 353.788001220711,
+      "text": "A reverse field can be required to reduce the magnetisation to zero: that is",
+      "chapter": 3
+    },
+    {
+      "start": 353.788001220711,
+      "end": 355.22800366211726,
+      "text": "the idea behind coercivity.",
+      "chapter": 3
+    },
+    {
+      "start": 356.42800061035945,
+      "end": 361.22800366211726,
+      "text": "Soft magnetic materials are relatively easy to magnetise and demagnetise,",
+      "chapter": 3
+    },
+    {
+      "start": 361.22800366211726,
+      "end": 362.667998474129,
+      "text": "useful in changing field cores.",
+      "chapter": 3
+    },
+    {
+      "start": 363.788001220711,
+      "end": 367.72800366211726,
+      "text": "Hard magnetic materials resist demagnetisation and suit permanent magnets.",
+      "chapter": 3
+    },
+    {
+      "start": 369.02799908448054,
+      "end": 373.08635506664393,
+      "text": "Soft and hard here describe magnetic response, not how easily you scratch the",
+      "chapter": 3
+    },
+    {
+      "start": 373.08635506664393,
+      "end": 373.50800244141413,
+      "text": "surface.",
+      "chapter": 3
+    },
+    {
+      "start": 374.8079978637774,
+      "end": 379.0879966430743,
+      "text": "Iron, cobalt and nickel are standard ferromagnetic examples, under suitable",
+      "chapter": 3
+    },
+    {
+      "start": 379.0879966430743,
+      "end": 379.9879981689532,
+      "text": "temperature conditions.",
+      "chapter": 3
+    },
+    {
+      "start": 380.47200000001084,
+      "end": 383.31199991418015,
+      "text": "Heating a ferromagnet increases thermal disorder.",
+      "chapter": 4
+    },
+    {
+      "start": 384.0319999427904,
+      "end": 387.9520000190843,
+      "text": "At its Curie temperature, spontaneous ferromagnetic ordering is lost.",
+      "chapter": 4
+    },
+    {
+      "start": 388.85200011445176,
+      "end": 391.671999809276,
+      "text": "Above that transition, the material becomes paramagnetic.",
+      "chapter": 4
+    },
+    {
+      "start": 392.3319996566881,
+      "end": 395.3920000763048,
+      "text": "It does not become incapable of responding to a magnetic field.",
+      "chapter": 4
+    },
+    {
+      "start": 396.19200026703965,
+      "end": 398.8920000763048,
+      "text": "That distinction is a favourite conceptual trap.",
+      "chapter": 4
+    },
+    {
+      "start": 399.7320002288927,
+      "end": 403.7719992370714,
+      "text": "Cooling below the transition can restore ferromagnetic ordering, but does not",
+      "chapter": 4
+    },
+    {
+      "start": 403.7719992370714,
+      "end": 408.25200068665634,
+      "text": "by itself guarantee the same macroscopic permanent magnetisation as before.",
+      "chapter": 4
+    },
+    {
+      "start": 409.09200083924424,
+      "end": 411.9319990844835,
+      "text": "Domain arrangement and magnetic history still matter.",
+      "chapter": 4
+    },
+    {
+      "start": 413.1119993896593,
+      "end": 417.45199954224717,
+      "text": "Also, do not extend the elementary chi equals C over T rule through this",
+      "chapter": 4
+    },
+    {
+      "start": 417.45199954224717,
+      "end": 417.8320006103624,
+      "text": "transition.",
+      "chapter": 4
+    },
+    {
+      "start": 418.87200152588974,
+      "end": 422.4319990844835,
+      "text": "Near a ferromagnetic transition, the temperature dependence is more subtle.",
+      "chapter": 4
+    },
+    {
+      "start": 423.35200106812607,
+      "end": 425.95199954224717,
+      "text": "Let's finish with a separate linear material problem.",
+      "chapter": 4
+    },
+    {
+      "start": 426.4119986267198,
+      "end": 431.2441361991795,
+      "text": "Internal H is one thousand amperes per meter, susceptibility is zero point",
+      "chapter": 4
+    },
+    {
+      "start": 431.2441361991795,
+      "end": 431.50533282471787,
+      "text": "zero",
+      "chapter": 4
+    },
+    {
+      "start": 431.50533282471787,
+      "end": 435.13199984742295,
+      "text": "one, and the material is isotropic and linear in the stated range.",
+      "chapter": 4
+    },
+    {
+      "start": 435.87200152588974,
+      "end": 437.5120009155382,
+      "text": "First find magnetisation.",
+      "chapter": 4
+    },
+    {
+      "start": 437.5120009155382,
+      "end": 439.8320006103624,
+      "text": "Ten amperes per meter, along H.",
+      "chapter": 4
+    },
+    {
+      "start": 440.71200167847763,
+      "end": 444.5120009155382,
+      "text": "Next, B equals mu zero times one thousand and ten.",
+      "chapter": 4
+    },
+    {
+      "start": 444.5120009155382,
+      "end": 448.5319975586046,
+      "text": "Taking mu zero approximately four pi times ten to the minus seven in SI units",
+      "chapter": 4
+    },
+    {
+      "start": 448.5319975586046,
+      "end": 451.09200274659287,
+      "text": "gives about one point two six nine millitesla.",
+      "chapter": 4
+    },
+    {
+      "start": 451.71199786378037,
+      "end": 455.9669989318956,
+      "text": "Without that material response, mu zero H would be about one point two five",
+      "chapter": 4
+    },
+    {
+      "start": 455.9669989318956,
+      "end": 456.7320021362413,
+      "text": "seven millitesla.",
+      "chapter": 4
+    },
+    {
+      "start": 457.39199816895615,
+      "end": 459.5319975586046,
+      "text": "The increase is only one percent.",
+      "chapter": 4
+    },
+    {
+      "start": 459.5319975586046,
+      "end": 463.1119993896593,
+      "text": "Positive susceptibility alone does not prove ferromagnetism.",
+      "chapter": 4
+    },
+    {
+      "start": 463.79199969483506,
+      "end": 467.6620024414171,
+      "text": "Classify by the response regime, its magnitude, microscopic ordering and",
+      "chapter": 4
+    },
+    {
+      "start": 467.6620024414171,
+      "end": 468.09200274659287,
+      "text": "history.",
+      "chapter": 4
+    },
+    {
+      "start": 468.81199633790146,
+      "end": 473.0319975586046,
+      "text": "Your final checklist is sign, direction, field gradient, absolute temperature",
+      "chapter": 4
+    },
+    {
+      "start": 473.21199786378037,
+      "end": 474.1320036621202,
+      "text": "and model validity.",
+      "chapter": 4
+    },
+    {
+      "start": 474.69200122071396,
+      "end": 478.07199847413193,
+      "text": "Those five checks turn a memorised table into usable physics.",
+      "chapter": 4
+    }
+  ]
+}

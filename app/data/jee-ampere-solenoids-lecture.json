@@ -1,0 +1,140 @@
+{
+  "title": "Ampere's law and the long solenoid",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 13",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Ampere's law",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/12-5-amperes-law"
+    },
+    {
+      "title": "OpenStax: Solenoids and toroids (solenoid sections)",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/12-6-solenoids-and-toroids"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "A closed path and signed enclosed current",
+      "formula": "Steady vacuum currents: closed integral B dot dl = mu0 I_enclosed; current sign follows the path's right-hand normal",
+      "points": [
+        "The Amperian path is an imaginary mathematical loop, not necessarily a wire.",
+        "Enclosed current is the algebraic sum crossing a surface bounded by that loop.",
+        "The law gives circulation; symmetry is needed to extract a simple local field."
+      ],
+      "script": "Hey, welcome back. Biot-Savart let us add magnetic-field contributions from current elements. Ampere's law gives another route for steady currents: it relates the field's circulation around a closed path to the current enclosed by that path. Imagine walking around a mathematical loop and adding the component of B along each tiny step. The closed integral of B dot d l equals mu zero times the signed enclosed current. The loop is imaginary; it need not be a conducting wire or a magnetic field line. Choose a direction around the path, then curl your right fingers in that direction. Your thumb defines the positive surface normal. Current crossing toward that normal counts positive, and current crossing the opposite way counts negative. For a counterclockwise path viewed on the page, out-of-page current is positive. If two amperes comes out inside the loop and five amperes goes in, the enclosed current is minus three amperes. A seven ampere wire outside does not enter that enclosed-current sum. It can still contribute to the magnetic field along the path. That distinction matters: circulation is constrained by enclosed current, while local field can have contributions from sources elsewhere. We use the steady-current vacuum form here. Changing electric fields require Maxwell's additional term, which belongs to a later class. To find a simple field value from this law, we must choose geometry with enough symmetry."
+    },
+    {
+      "title": "Use symmetry for an infinitely long wire",
+      "formula": "Circular path: B(2pi r) = mu0 I; outside a long wire: B = mu0 I/(2pi r)",
+      "points": [
+        "Cylindrical symmetry makes B tangent and equal in magnitude around a concentric circle.",
+        "B cannot be pulled out of an arbitrary loop integral without justification.",
+        "Reversing the path reverses both the integral sign and enclosed-current sign."
+      ],
+      "script": "Let's see symmetry earn its place in the calculation. Take an effectively infinite straight wire in vacuum carrying steady current. Rotational symmetry around the wire and translational symmetry along it imply a circular field pattern. Choose a circle centered on the wire in a perpendicular plane. Along that circle, B is tangent and has the same magnitude at every point. Choose your walking direction to match the field, so B dot d l is B times d l. The integral becomes B times the circumference, two pi r. Set that equal to mu zero I, and we recover B equal to mu zero I divided by two pi r. This agrees with the Biot-Savart result from our previous class. A five ampere wire at five centimeters gives twenty microtesla. Now suppose you choose a rectangle instead. Ampere's law still holds, but B varies with distance and is not everywhere parallel to the path. You cannot replace the integral by B times the rectangle's perimeter. The law did not fail; the shortcut lost its symmetry. Likewise, a nearby extra wire can destroy the symmetry of the total field, even if only one wire is enclosed. When an exam solution writes B times a path length, ask what makes B constant there and what makes the dot product simple. Those are the two reasons the method works."
+    },
+    {
+      "title": "Inside a wire: enclose only part of the current",
+      "formula": "Uniform current in radius a: I_enclosed = I r^2/a^2; inside B = mu0 I r/(2pi a^2)",
+      "points": [
+        "The enclosed current changes when the circular path lies inside the wire.",
+        "The inside result assumes uniform current density in a long cylindrical wire.",
+        "Field rises linearly to the surface, then falls inversely with radius outside."
+      ],
+      "script": "What changes if our circular path lies inside a wire of finite radius? We no longer enclose the whole current. Assume a very long cylindrical wire of radius a with uniform current density across its cross section. At an interior radius r, the enclosed area is pi r squared, compared with total area pi a squared. The enclosed current is therefore I times r squared divided by a squared. Substitute into B times two pi r equals mu zero enclosed current. One factor of r cancels, giving B equal to mu zero I r divided by two pi a squared. Inside the wire, field grows linearly from zero on the axis to its surface value. Outside, the full current is enclosed and field falls as one over r. Both formulas agree at r equal to a, so the field is continuous in this model. Use five amperes and radius two millimeters. The surface field is zero point five millitesla. Halfway from axis to surface it is zero point two five millitesla. At twice the wire radius outside, it is also zero point two five millitesla, but for a different reason: inverse distance rather than linear growth. Check whether the observation point is inside or outside before choosing a formula. If current density is not uniform, the enclosed-current fraction must be recalculated. The area ratio is a model assumption, not a universal rule for every wire."
+    },
+    {
+      "title": "A long solenoid: many turns create an axial field",
+      "formula": "Interior, far from ends: B approximately mu0 nI; n = N/L; rectangle encloses n ell turns",
+      "points": [
+        "A long, tightly wound solenoid has an approximately uniform axial interior field.",
+        "A rectangular path has one long side inside and one outside.",
+        "The ideal infinite-solenoid exterior field is zero; finite coils have end and exterior fields."
+      ],
+      "script": "Now wrap the wire into many closely spaced turns. A solenoid is a helical coil; when it is long compared with its radius, its interior field is approximately uniform and directed along the axis, away from the ends. Use a rectangular Amperian path with one long side inside and the other outside. Let the length of that inside side be ell. In the ideal infinite-solenoid model, the exterior field vanishes. On the short sides, field is perpendicular to the path, so their dot-product contributions vanish. Only the inside long side contributes, giving B times ell. If n is turns per unit length, the rectangle's surface is crossed by approximately n ell turns, each carrying current I with the appropriate common sign. Ampere's law becomes B ell equals mu zero n ell I. Cancel ell and get B equal to mu zero n I. The length of the imaginary rectangle disappears; the turn density remains. Curl your right fingers along the winding current and your thumb gives the interior axial direction. Keep N, the total number of turns, separate from n, the number per meter. A finite solenoid has fringing field near its ends and a return field outside. Calling its exterior field exactly zero would overstate the approximation. Our simple formula describes a long, tightly wound air-core coil deep inside, not every point around a short coil."
+    },
+    {
+      "title": "Solenoid examples and a final model check",
+      "formula": "N = 600, L = 0.30 m, I = 2 A: B approximately 5.03 mT; long-solenoid on-axis end approximately mu0 nI/2",
+      "points": [
+        "Convert coil length to meters before computing turn density.",
+        "With N and I fixed, doubling coil length halves the ideal interior field.",
+        "Zero enclosed current does not imply zero field at every point on a path."
+      ],
+      "script": "Let's calculate one practical exam example. An air-core solenoid has six hundred turns over thirty centimeters and carries two amperes. Convert thirty centimeters to zero point three zero meters. Turn density is six hundred divided by zero point three, or two thousand turns per meter. Multiply mu zero by turn density and current. With mu zero approximately four pi times ten to the minus seven, the interior field is about five point zero three millitesla. If we double the coil length while keeping total turns and current fixed, turn density halves and the ideal interior field halves, provided the winding still satisfies the long-solenoid approximation. If instead we double both turns and length, turn density stays the same, so the predicted interior field stays the same. On the axis at the end of a very long solenoid, a useful limiting result is approximately half the deep-interior field, here about two point five one millitesla. That end value is not the general finite-coil field formula. Finally, revisit a subtle trap. If a chosen path encloses zero net current, Ampere's law says its field circulation is zero. It does not say the magnetic field is zero everywhere along it. Nonzero contributions can cancel in the integral. Use symmetry, identify the actual enclosed current, and name the model's limits before simplifying. Those habits will support our next class on magnetic forces and charged-particle motion."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "For counterclockwise traversal viewed on the page, enclosed currents are 2 A out and 5 A in. Signed I_enclosed is:",
+      "options": [
+        "7 A",
+        "-3 A",
+        "3 A",
+        "-7 A"
+      ],
+      "answer": 1,
+      "explanation": "The right-hand normal is out of the page, so I_enclosed = 2 - 5 = -3 A."
+    },
+    {
+      "question": "Replacing the closed integral by B times circumference for a long wire relies on:",
+      "options": [
+        "Any chosen loop being circular",
+        "Enclosing zero current",
+        "Tangential B of constant magnitude on a concentric circle",
+        "Ignoring field direction"
+      ],
+      "answer": 2,
+      "explanation": "Cylindrical symmetry makes the concentric circular path useful."
+    },
+    {
+      "question": "A long uniform-current wire has radius a. At r = a/2, its enclosed current is:",
+      "options": [
+        "I/4",
+        "I/2",
+        "I",
+        "2I"
+      ],
+      "answer": 0,
+      "explanation": "With uniform current density, the area fraction is (a/2) squared/a squared = 1/4."
+    },
+    {
+      "question": "A 5 A long uniform-current wire of radius 2 mm has surface field approximately:",
+      "options": [
+        "0.25 mT",
+        "5 mT",
+        "20 microT",
+        "0.5 mT"
+      ],
+      "answer": 3,
+      "explanation": "B(a) = mu0 I/(2pi a) = 2 x 10^-7 x 5/0.002 = 0.5 mT."
+    },
+    {
+      "question": "A long air-core solenoid has N = 600, L = 0.30 m, I = 2 A. Deep-interior B is approximately:",
+      "options": [
+        "0.503 mT",
+        "5.03 mT",
+        "50.3 mT",
+        "2.51 mT"
+      ],
+      "answer": 1,
+      "explanation": "n = 600/0.30 = 2000 per meter; B = mu0 nI = 5.03 mT."
+    },
+    {
+      "question": "Zero net current enclosed by an Amperian loop implies:",
+      "options": [
+        "B is zero at every point",
+        "No external wire can contribute to B",
+        "The closed integral of B dot dl is zero",
+        "Every field line is straight"
+      ],
+      "answer": 2,
+      "explanation": "Ampere's law constrains circulation; it does not determine each local field value without further symmetry."
+    }
+  ]
+}

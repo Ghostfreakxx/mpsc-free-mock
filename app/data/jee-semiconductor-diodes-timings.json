@@ -1,0 +1,909 @@
+{
+  "duration": 443.4960000000123,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 87.76800000000243
+    },
+    {
+      "start": 87.76800000000243,
+      "end": 178.63200000000498
+    },
+    {
+      "start": 178.63200000000498,
+      "end": 275.13600000000775
+    },
+    {
+      "start": 275.13600000000775,
+      "end": 362.68800000001016
+    },
+    {
+      "start": 362.68800000001016,
+      "end": 443.4960000000123
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.340000033378601,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.9199999570846558,
+      "end": 3.9800000190734863,
+      "text": "We have learned how charges move through circuits.",
+      "chapter": 0
+    },
+    {
+      "start": 4.699999809265137,
+      "end": 8.119999885559082,
+      "text": "Now we meet a material whose charge carriers we can deliberately change.",
+      "chapter": 0
+    },
+    {
+      "start": 8.880000114440918,
+      "end": 13.279999732971191,
+      "text": "In a semiconductor, electrons can be excited into a conduction band, leaving",
+      "chapter": 0
+    },
+    {
+      "start": 13.279999732971191,
+      "end": 14.640000343322754,
+      "text": "holes in the valence band.",
+      "chapter": 0
+    },
+    {
+      "start": 15.180000305175781,
+      "end": 18.80564044072078,
+      "text": "A hole is a missing electron state that behaves like a mobile positive",
+      "chapter": 0
+    },
+    {
+      "start": 18.80564044072078,
+      "end": 19.219999313354492,
+      "text": "carrier;",
+      "chapter": 0
+    },
+    {
+      "start": 19.739999771118164,
+      "end": 21.780000686645508,
+      "text": "it is not a proton traveling through the solid.",
+      "chapter": 0
+    },
+    {
+      "start": 22.3799991607666,
+      "end": 26.799999237060547,
+      "text": "In a pure, intrinsic semiconductor, thermal generation creates electrons and",
+      "chapter": 0
+    },
+    {
+      "start": 26.799999237060547,
+      "end": 29.760000228881836,
+      "text": "holes in pairs, so their concentrations are equal.",
+      "chapter": 0
+    },
+    {
+      "start": 30.81999969482422,
+      "end": 33.91999816894531,
+      "text": "Doping introduces a small controlled amount of suitable impurity.",
+      "chapter": 0
+    },
+    {
+      "start": 34.779998779296875,
+      "end": 38.540000915527344,
+      "text": "In silicon, a donor impurity can supply an extra conduction electron.",
+      "chapter": 0
+    },
+    {
+      "start": 39.619998931884766,
+      "end": 42.599998474121094,
+      "text": "Electrons become the majority carriers, giving n type material.",
+      "chapter": 0
+    },
+    {
+      "start": 43.29999923706055,
+      "end": 47.459999084472656,
+      "text": "An acceptor impurity produces holes as the majority carriers, giving p type",
+      "chapter": 0
+    },
+    {
+      "start": 47.459999084472656,
+      "end": 47.81999969482422,
+      "text": "material.",
+      "chapter": 0
+    },
+    {
+      "start": 48.84000015258789,
+      "end": 51.58000183105469,
+      "text": "The other carrier is still present as a minority carrier.",
+      "chapter": 0
+    },
+    {
+      "start": 52.279998779296875,
+      "end": 56.08000183105469,
+      "text": "Here is the trap: n type does not mean the whole sample has a net negative",
+      "chapter": 0
+    },
+    {
+      "start": 56.08000183105469,
+      "end": 56.459999084472656,
+      "text": "charge.",
+      "chapter": 0
+    },
+    {
+      "start": 57.08000183105469,
+      "end": 60.31999969482422,
+      "text": "The ionized donor charges balance the added mobile electrons.",
+      "chapter": 0
+    },
+    {
+      "start": 61.060001373291016,
+      "end": 64.4000015258789,
+      "text": "Likewise, p type is not an electrically positive chunk of material.",
+      "chapter": 0
+    },
+    {
+      "start": 65.77999877929688,
+      "end": 66.69999694824219,
+      "text": "Pause and test the wording.",
+      "chapter": 0
+    },
+    {
+      "start": 67.30000305175781,
+      "end": 70.91999816894531,
+      "text": "If someone says holes are the only carriers in p type material, is that",
+      "chapter": 0
+    },
+    {
+      "start": 70.91999816894531,
+      "end": 71.26000213623047,
+      "text": "correct?",
+      "chapter": 0
+    },
+    {
+      "start": 71.69999694824219,
+      "end": 72.05999755859375,
+      "text": "No.",
+      "chapter": 0
+    },
+    {
+      "start": 72.4800033569336,
+      "end": 74.63999938964844,
+      "text": "They are the majority, not the only carriers.",
+      "chapter": 0
+    },
+    {
+      "start": 75.41999816894531,
+      "end": 79.41999816894531,
+      "text": "Temperature also affects carrier concentration, so semiconductor conductivity",
+      "chapter": 0
+    },
+    {
+      "start": 79.41999816894531,
+      "end": 82.44000244140625,
+      "text": "is not described by a fixed universal resistance.",
+      "chapter": 0
+    },
+    {
+      "start": 82.5999984741211,
+      "end": 86.76717689709785,
+      "text": "For our JEE questions, begin with the carrier picture and electrical",
+      "chapter": 0
+    },
+    {
+      "start": 86.76717689709785,
+      "end": 87.37999725341797,
+      "text": "neutrality",
+      "chapter": 0
+    },
+    {
+      "start": 87.37999725341797,
+      "end": 87.76800000000243,
+      "text": "before moving to a junction.",
+      "chapter": 0
+    },
+    {
+      "start": 87.76800000000243,
+      "end": 93.18800007629638,
+      "text": "Bring p type and n type regions together, and something happens even without a",
+      "chapter": 1
+    },
+    {
+      "start": 93.18800007629638,
+      "end": 93.48799979019408,
+      "text": "battery.",
+      "chapter": 1
+    },
+    {
+      "start": 94.18800007629638,
+      "end": 97.38799988556151,
+      "text": "Electrons diffuse from the electron rich n side toward the p side.",
+      "chapter": 1
+    },
+    {
+      "start": 98.2880004577661,
+      "end": 99.92799984741454,
+      "text": "Holes diffuse in the opposite direction.",
+      "chapter": 1
+    },
+    {
+      "start": 100.68800007629638,
+      "end": 104.128000610354,
+      "text": "Near the junction, recombination removes mobile electrons and holes.",
+      "chapter": 1
+    },
+    {
+      "start": 104.82799946594481,
+      "end": 109.03953895451716,
+      "text": "This leaves a region depleted of mobile majority carriers, but not empty of",
+      "chapter": 1
+    },
+    {
+      "start": 109.03953895451716,
+      "end": 109.20800053406005,
+      "text": "all",
+      "chapter": 1
+    },
+    {
+      "start": 109.20800053406005,
+      "end": 109.54800068664794,
+      "text": "charge.",
+      "chapter": 1
+    },
+    {
+      "start": 110.36800038147216,
+      "end": 114.72799908447509,
+      "text": "Positive ionized donors remain on the n side, and negative ionized acceptors",
+      "chapter": 1
+    },
+    {
+      "start": 114.72799908447509,
+      "end": 115.92799984741454,
+      "text": "remain on the p side.",
+      "chapter": 1
+    },
+    {
+      "start": 116.52800022888427,
+      "end": 120.24799954223876,
+      "text": "These ions are part of the crystal and do not wander through the circuit like",
+      "chapter": 1
+    },
+    {
+      "start": 120.24799954223876,
+      "end": 120.92799984741454,
+      "text": "mobile carriers.",
+      "chapter": 1
+    },
+    {
+      "start": 121.56799923706298,
+      "end": 125.8523583620536,
+      "text": "Their electric field points from the positive n side ions toward the negative",
+      "chapter": 1
+    },
+    {
+      "start": 125.8523583620536,
+      "end": 125.90799938965087,
+      "text": "p",
+      "chapter": 1
+    },
+    {
+      "start": 125.90799938965087,
+      "end": 126.50800167846923,
+      "text": "side ions.",
+      "chapter": 1
+    },
+    {
+      "start": 127.0479987792993,
+      "end": 131.26800000000242,
+      "text": "That field opposes further majority carrier diffusion and establishes a",
+      "chapter": 1
+    },
+    {
+      "start": 131.26800000000242,
+      "end": 131.9480003051782,
+      "text": "potential barrier.",
+      "chapter": 1
+    },
+    {
+      "start": 132.7079986267114,
+      "end": 137.2079986267114,
+      "text": "At thermal equilibrium, diffusion and drift currents balance, giving zero net",
+      "chapter": 1
+    },
+    {
+      "start": 137.2079986267114,
+      "end": 138.7880004577661,
+      "text": "current through the unbiased junction.",
+      "chapter": 1
+    },
+    {
+      "start": 139.48800122070554,
+      "end": 141.8480018310571,
+      "text": "Do not call this unbiased state reverse bias.",
+      "chapter": 1
+    },
+    {
+      "start": 142.5080016784692,
+      "end": 146.14800106811765,
+      "text": "Reverse bias requires an externally applied voltage of the appropriate",
+      "chapter": 1
+    },
+    {
+      "start": 146.14800106811765,
+      "end": 146.62800061035398,
+      "text": "polarity.",
+      "chapter": 1
+    },
+    {
+      "start": 147.18799816894773,
+      "end": 150.3480018310571,
+      "text": "Picture people crossing a doorway because one room is crowded.",
+      "chapter": 1
+    },
+    {
+      "start": 151.18799816894773,
+      "end": 154.68799816894773,
+      "text": "Their movement builds an opposing influence until the net flow balances.",
+      "chapter": 1
+    },
+    {
+      "start": 155.40799938965085,
+      "end": 158.68799816894773,
+      "text": "The analogy helps with the direction, but the real barrier comes from",
+      "chapter": 1
+    },
+    {
+      "start": 158.68799816894773,
+      "end": 160.60799633789304,
+      "text": "electrostatics, not a physical wall.",
+      "chapter": 1
+    },
+    {
+      "start": 161.4480003051782,
+      "end": 164.08799969482664,
+      "text": "Think for a moment: is the depletion layer free of charge?",
+      "chapter": 1
+    },
+    {
+      "start": 164.748003356936,
+      "end": 165.06800305176023,
+      "text": "No.",
+      "chapter": 1
+    },
+    {
+      "start": 165.4480003051782,
+      "end": 168.68799816894773,
+      "text": "It has fixed space charge and relatively few mobile carriers.",
+      "chapter": 1
+    },
+    {
+      "start": 169.70800244140867,
+      "end": 172.9679969482446,
+      "text": "Distinguish mobile carriers, fixed ions, and net current.",
+      "chapter": 1
+    },
+    {
+      "start": 172.9679969482446,
+      "end": 177.56800305176023,
+      "text": "Those three ideas explain why the junction responds so differently to the two",
+      "chapter": 1
+    },
+    {
+      "start": 177.56800305176023,
+      "end": 178.16800152588132,
+      "text": "battery connections.",
+      "chapter": 1
+    },
+    {
+      "start": 178.63200000000498,
+      "end": 184.0320000953724,
+      "text": "Connect the p side toward a battery's positive terminal and the n side toward",
+      "chapter": 2
+    },
+    {
+      "start": 184.0320000953724,
+      "end": 185.0320000953724,
+      "text": "its negative terminal.",
+      "chapter": 2
+    },
+    {
+      "start": 185.85199979019663,
+      "end": 187.4519996948292,
+      "text": "That is forward bias.",
+      "chapter": 2
+    },
+    {
+      "start": 188.41199973297617,
+      "end": 192.7320003814747,
+      "text": "The applied voltage reduces the junction barrier and narrows the depletion",
+      "chapter": 2
+    },
+    {
+      "start": 192.7320003814747,
+      "end": 195.69199946594736,
+      "text": "region, allowing a rapidly increasing current.",
+      "chapter": 2
+    },
+    {
+      "start": 196.9519996948292,
+      "end": 200.71199992371103,
+      "text": "Reverse the connection, and the barrier grows while the depletion region",
+      "chapter": 2
+    },
+    {
+      "start": 200.71199992371103,
+      "end": 201.13200000000498,
+      "text": "widens.",
+      "chapter": 2
+    },
+    {
+      "start": 202.27199938965342,
+      "end": 206.99200061035654,
+      "text": "A small reverse current can still flow before breakdown; real reverse current",
+      "chapter": 2
+    },
+    {
+      "start": 206.99200061035654,
+      "end": 211.21200183105967,
+      "text": "is not exactly zero and can depend on temperature and the device.",
+      "chapter": 2
+    },
+    {
+      "start": 212.15200045776865,
+      "end": 216.71200183105967,
+      "text": "On an I versus V graph, forward current rises nonlinearly.",
+      "chapter": 2
+    },
+    {
+      "start": 216.71200183105967,
+      "end": 221.63200000000498,
+      "text": "In reverse bias it remains small over a range, then can become large in",
+      "chapter": 2
+    },
+    {
+      "start": 221.63200000000498,
+      "end": 222.0120010681202,
+      "text": "breakdown.",
+      "chapter": 2
+    },
+    {
+      "start": 222.99200061035654,
+      "end": 226.9519996948292,
+      "text": "Ordinary diodes must stay within their voltage, current, and power ratings.",
+      "chapter": 2
+    },
+    {
+      "start": 227.39199832153818,
+      "end": 230.4519996948292,
+      "text": "Now let's use an explicitly simplified circuit model.",
+      "chapter": 2
+    },
+    {
+      "start": 231.7919998474171,
+      "end": 235.73199847412607,
+      "text": "Assume a forward conducting silicon diode has a constant drop of zero point",
+      "chapter": 2
+    },
+    {
+      "start": 235.73199847412607,
+      "end": 236.6119995422413,
+      "text": "seven volts.",
+      "chapter": 2
+    },
+    {
+      "start": 237.75199893188974,
+      "end": 240.73199847412607,
+      "text": "A five volt supply drives it through a one kilo ohm resistor.",
+      "chapter": 2
+    },
+    {
+      "start": 241.65200045776865,
+      "end": 245.5519981689503,
+      "text": "The resistor gets five minus zero point seven, or four point three volts.",
+      "chapter": 2
+    },
+    {
+      "start": 246.4320030517628,
+      "end": 250.19199755859873,
+      "text": "Divide by one thousand ohms: current is four point three milliamperes.",
+      "chapter": 2
+    },
+    {
+      "start": 251.01199725342295,
+      "end": 255.252002746587,
+      "text": "The resistor limits current; connecting a diode directly to an ideal voltage",
+      "chapter": 2
+    },
+    {
+      "start": 255.252002746587,
+      "end": 257.63200000000495,
+      "text": "source can be a poor model of a safe circuit.",
+      "chapter": 2
+    },
+    {
+      "start": 258.53200152588386,
+      "end": 262.81200030518073,
+      "text": "The zero point seven value is not a sharp universal physical threshold, and it",
+      "chapter": 2
+    },
+    {
+      "start": 262.81200030518073,
+      "end": 264.4920006103565,
+      "text": "changes with current and temperature.",
+      "chapter": 2
+    },
+    {
+      "start": 265.7920036621143,
+      "end": 268.73199847412604,
+      "text": "For JEE, first read the model specified in the question.",
+      "chapter": 2
+    },
+    {
+      "start": 269.4719963378956,
+      "end": 273.8520012207081,
+      "text": "An ideal diode has zero forward drop, whereas this constant drop approximation",
+      "chapter": 2
+    },
+    {
+      "start": 273.8520012207081,
+      "end": 274.7719993896534,
+      "text": "does not.",
+      "chapter": 2
+    },
+    {
+      "start": 275.13600000000775,
+      "end": 277.95599993325055,
+      "text": "An alternating source changes polarity.",
+      "chapter": 3
+    },
+    {
+      "start": 278.45599993325055,
+      "end": 282.8359998092729,
+      "text": "A diode can turn that alternating signal into a load current that does not",
+      "chapter": 3
+    },
+    {
+      "start": 282.8359998092729,
+      "end": 283.6759999618608,
+      "text": "reverse direction.",
+      "chapter": 3
+    },
+    {
+      "start": 284.47600015259565,
+      "end": 289.1641928188907,
+      "text": "In a simple half wave rectifier, a diode and resistor are in series with the",
+      "chapter": 3
+    },
+    {
+      "start": 289.1641928188907,
+      "end": 289.5960000381547,
+      "text": "source.",
+      "chapter": 3
+    },
+    {
+      "start": 290.47600015259565,
+      "end": 293.3759997711259,
+      "text": "Choose the orientation that conducts on the positive half cycle.",
+      "chapter": 3
+    },
+    {
+      "start": 294.3960002288896,
+      "end": 299.035999618538,
+      "text": "During that half cycle the ideal diode acts like a short circuit, so the load",
+      "chapter": 3
+    },
+    {
+      "start": 299.035999618538,
+      "end": 300.41600068665326,
+      "text": "follows the positive input.",
+      "chapter": 3
+    },
+    {
+      "start": 301.2360003814775,
+      "end": 305.85599931336225,
+      "text": "During the negative half cycle it blocks, and the ideal load voltage is zero.",
+      "chapter": 3
+    },
+    {
+      "start": 306.5760005340654,
+      "end": 308.69600137329877,
+      "text": "The result is a sequence of positive pulses.",
+      "chapter": 3
+    },
+    {
+      "start": 309.5959990844804,
+      "end": 313.9359992370683,
+      "text": "It has a nonzero average, but it is not smooth, constant direct voltage.",
+      "chapter": 3
+    },
+    {
+      "start": 314.91599877930463,
+      "end": 319.89599832154096,
+      "text": "For a sinusoidal input with peak V m, the ideal average over a complete cycle",
+      "chapter": 3
+    },
+    {
+      "start": 319.89599832154096,
+      "end": 322.0959990844804,
+      "text": "is V m divided by pi.",
+      "chapter": 3
+    },
+    {
+      "start": 322.87600167847455,
+      "end": 326.29599984741986,
+      "text": "The root mean square output is V m divided by two.",
+      "chapter": 3
+    },
+    {
+      "start": 327.13600000000775,
+      "end": 331.3560012207109,
+      "text": "These formulas assume an ideal diode, a resistive load, and no smoothing",
+      "chapter": 3
+    },
+    {
+      "start": 331.3560012207109,
+      "end": 331.81600030518354,
+      "text": "capacitor.",
+      "chapter": 3
+    },
+    {
+      "start": 331.81600030518354,
+      "end": 337.0659994248688,
+      "text": "For a ten volt peak input, the average is about three point one eight volts",
+      "chapter": 3
+    },
+    {
+      "start": 337.0659994248688,
+      "end": 337.2759993896562,
+      "text": "and",
+      "chapter": 3
+    },
+    {
+      "start": 337.2759993896562,
+      "end": 339.1959975586015,
+      "text": "the root mean square value is five volts.",
+      "chapter": 3
+    },
+    {
+      "start": 340.1760009155351,
+      "end": 341.21600183106244,
+      "text": "Those are different quantities.",
+      "chapter": 3
+    },
+    {
+      "start": 341.21600183106244,
+      "end": 342.1959975586015,
+      "text": "Pause before answering a frequency question.",
+      "chapter": 3
+    },
+    {
+      "start": 342.1959975586015,
+      "end": 346.79600366211713,
+      "text": "A fifty hertz input makes fifty positive output pulses per second in this half",
+      "chapter": 3
+    },
+    {
+      "start": 346.79600366211713,
+      "end": 348.83599694824994,
+      "text": "wave circuit, not a hundred.",
+      "chapter": 3
+    },
+    {
+      "start": 348.83599694824994,
+      "end": 352.9759963378984,
+      "text": "If the diode is reversed, the passed pulses have the opposite sign under the",
+      "chapter": 3
+    },
+    {
+      "start": 352.9759963378984,
+      "end": 353.9960006103593,
+      "text": "same voltage reference.",
+      "chapter": 3
+    },
+    {
+      "start": 354.83599694824994,
+      "end": 357.7759993896562,
+      "text": "Real diode drop and source resistance change the waveform.",
+      "chapter": 3
+    },
+    {
+      "start": 358.71600183106244,
+      "end": 362.1760009155351,
+      "text": "Keep the circuit orientation and the stated approximation attached to the",
+      "chapter": 3
+    },
+    {
+      "start": 362.1760009155351,
+      "end": 362.3759978637773,
+      "text": "formula.",
+      "chapter": 3
+    },
+    {
+      "start": 362.68800000001016,
+      "end": 365.4080000286204,
+      "text": "Can we use the energy in the other half cycle too?",
+      "chapter": 4
+    },
+    {
+      "start": 365.98799995232645,
+      "end": 369.448000228892,
+      "text": "A full wave rectifier does that by redirecting current so the load current",
+      "chapter": 4
+    },
+    {
+      "start": 369.448000228892,
+      "end": 370.4279997711283,
+      "text": "keeps the same direction.",
+      "chapter": 4
+    },
+    {
+      "start": 370.80799988556925,
+      "end": 372.08799961854044,
+      "text": "In a bridge there are four diodes.",
+      "chapter": 4
+    },
+    {
+      "start": 372.64800003815714,
+      "end": 376.09030765710526,
+      "text": "One pair conducts during one half cycle, and the other pair conducts during",
+      "chapter": 4
+    },
+    {
+      "start": 376.09030765710526,
+      "end": 376.2279999618632,
+      "text": "the",
+      "chapter": 4
+    },
+    {
+      "start": 376.2279999618632,
+      "end": 377.0479996566874,
+      "text": "opposite half cycle.",
+      "chapter": 4
+    },
+    {
+      "start": 378.08799961854044,
+      "end": 382.02800015259805,
+      "text": "Trace a complete path from the currently positive source terminal, through a",
+      "chapter": 4
+    },
+    {
+      "start": 382.02800015259805,
+      "end": 385.06799916077676,
+      "text": "conducting diode, through the load, and back through the other conducting",
+      "chapter": 4
+    },
+    {
+      "start": 385.06799916077676,
+      "end": 385.40799931336466,
+      "text": "diode.",
+      "chapter": 4
+    },
+    {
+      "start": 386.1080000763041,
+      "end": 388.0079996948344,
+      "text": "Do not assume all four conduct at once.",
+      "chapter": 4
+    },
+    {
+      "start": 388.52800015259805,
+      "end": 392.96800068665567,
+      "text": "For ideal diodes and a resistive load, the output is the absolute value of the",
+      "chapter": 4
+    },
+    {
+      "start": 392.96800068665567,
+      "end": 393.8279993896586,
+      "text": "sinusoidal input.",
+      "chapter": 4
+    },
+    {
+      "start": 394.56799916077676,
+      "end": 397.08800152588907,
+      "text": "Its average is twice V m divided by pi.",
+      "chapter": 4
+    },
+    {
+      "start": 398.0079996948344,
+      "end": 401.3880007629496,
+      "text": "With a ten volt peak input, that is about six point three seven volts.",
+      "chapter": 4
+    },
+    {
+      "start": 402.12799862671915,
+      "end": 406.46799877930704,
+      "text": "A fifty hertz input now gives one hundred output pulses each second, so ripple",
+      "chapter": 4
+    },
+    {
+      "start": 406.46799877930704,
+      "end": 408.2480013733012,
+      "text": "frequency is twice the source frequency.",
+      "chapter": 4
+    },
+    {
+      "start": 408.94799832154337,
+      "end": 412.3818456021924,
+      "text": "Under a constant zero point seven volt drop model, two conducting bridge",
+      "chapter": 4
+    },
+    {
+      "start": 412.3818456021924,
+      "end": 412.6679995422465,
+      "text": "diodes",
+      "chapter": 4
+    },
+    {
+      "start": 412.6679995422465,
+      "end": 416.8218454026544,
+      "text": "reduce the output peak to approximately eight point six volts for that same",
+      "chapter": 4
+    },
+    {
+      "start": 416.8218454026544,
+      "end": 416.9879992370707,
+      "text": "ten",
+      "chapter": 4
+    },
+    {
+      "start": 416.9879992370707,
+      "end": 417.6479990844828,
+      "text": "volt peak source.",
+      "chapter": 4
+    },
+    {
+      "start": 418.0979998474223,
+      "end": 422.2480013733012,
+      "text": "Do not use the ideal average formula unchanged for the entire real waveform.",
+      "chapter": 4
+    },
+    {
+      "start": 423.2480013733012,
+      "end": 426.988003051768,
+      "text": "A capacitor across the load can charge near the peaks and discharge between",
+      "chapter": 4
+    },
+    {
+      "start": 426.988003051768,
+      "end": 428.08800152588907,
+      "text": "them, reducing ripple.",
+      "chapter": 4
+    },
+    {
+      "start": 428.7280009155375,
+      "end": 432.3331247777796,
+      "text": "It does not guarantee perfectly constant output, and the result depends on",
+      "chapter": 4
+    },
+    {
+      "start": 432.3331247777796,
+      "end": 432.5279963379008,
+      "text": "load",
+      "chapter": 4
+    },
+    {
+      "start": 432.5279963379008,
+      "end": 433.3279993896586,
+      "text": "and capacitance.",
+      "chapter": 4
+    },
+    {
+      "start": 433.96799877930704,
+      "end": 436.2479975586039,
+      "text": "Our graphs show the unsmoothed ideal case.",
+      "chapter": 4
+    },
+    {
+      "start": 436.7280009155375,
+      "end": 440.988003051768,
+      "text": "For JEE, separate peak, average, root mean square, and ripple frequency, then",
+      "chapter": 4
+    },
+    {
+      "start": 440.988003051768,
+      "end": 443.34800366211954,
+      "text": "count the conducting diode drops in the chosen circuit.",
+      "chapter": 4
+    }
+  ]
+}

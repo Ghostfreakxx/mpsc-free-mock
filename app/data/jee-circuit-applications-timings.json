@@ -1,0 +1,733 @@
+{
+  "duration": 363.3120000000111,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 125.30400000000385
+    },
+    {
+      "start": 125.30400000000385,
+      "end": 240.26400000000731
+    },
+    {
+      "start": 240.26400000000731,
+      "end": 363.3120000000111
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.5399999618530273,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.2799999713897705,
+      "end": 6.510769064609821,
+      "text": "A battery labelled twelve volts does not always deliver twelve volts across",
+      "chapter": 0
+    },
+    {
+      "start": 6.510769064609821,
+      "end": 6.679999828338623,
+      "text": "the",
+      "chapter": 0
+    },
+    {
+      "start": 6.679999828338623,
+      "end": 6.739999771118164,
+      "text": "load.",
+      "chapter": 0
+    },
+    {
+      "start": 7.480000019073486,
+      "end": 8.300000190734863,
+      "text": "Let's explain why.",
+      "chapter": 0
+    },
+    {
+      "start": 9.279999732971191,
+      "end": 13.880000114440918,
+      "text": "Model the cell as an ideal emf E in series with internal resistance r.",
+      "chapter": 0
+    },
+    {
+      "start": 14.640000343322754,
+      "end": 18.420000076293945,
+      "text": "Emf tells us how much energy the source mechanism supplies per unit charge.",
+      "chapter": 0
+    },
+    {
+      "start": 19.280000686645508,
+      "end": 22.860000610351562,
+      "text": "Some of that energy becomes heat inside the cell, leaving less potential",
+      "chapter": 0
+    },
+    {
+      "start": 22.860000610351562,
+      "end": 23.860000610351562,
+      "text": "difference at the terminals.",
+      "chapter": 0
+    },
+    {
+      "start": 24.559999465942383,
+      "end": 29.860000610351562,
+      "text": "Our example has emf twelve volts, internal resistance two ohms and external",
+      "chapter": 0
+    },
+    {
+      "start": 29.860000610351562,
+      "end": 31.040000915527344,
+      "text": "resistance four ohms.",
+      "chapter": 0
+    },
+    {
+      "start": 31.860000610351562,
+      "end": 35.2599983215332,
+      "text": "Total resistance is six ohms, so current is two amperes.",
+      "chapter": 0
+    },
+    {
+      "start": 36.02000045776367,
+      "end": 39.900001525878906,
+      "text": "The internal voltage drop is current times internal resistance, four volts.",
+      "chapter": 0
+    },
+    {
+      "start": 40.91999816894531,
+      "end": 42.720001220703125,
+      "text": "Terminal voltage is therefore eight volts.",
+      "chapter": 0
+    },
+    {
+      "start": 43.439998626708984,
+      "end": 46.08000183105469,
+      "text": "It also equals current times the external resistance.",
+      "chapter": 0
+    },
+    {
+      "start": 47.040000915527344,
+      "end": 50,
+      "text": "Now check power: the source supplies twenty four watts.",
+      "chapter": 0
+    },
+    {
+      "start": 50,
+      "end": 54.439998626708984,
+      "text": "The load receives sixteen watts, and internal heating takes eight watts.",
+      "chapter": 0
+    },
+    {
+      "start": 55.08000183105469,
+      "end": 55.939998626708984,
+      "text": "They add correctly.",
+      "chapter": 0
+    },
+    {
+      "start": 56.959999084472656,
+      "end": 60.939998626708984,
+      "text": "This is a constant parameter model, not a complete description of a real cell",
+      "chapter": 0
+    },
+    {
+      "start": 61.040000915527344,
+      "end": 62.65999984741211,
+      "text": "as it heats or discharges.",
+      "chapter": 0
+    },
+    {
+      "start": 63.7400016784668,
+      "end": 64.87999725341797,
+      "text": "Now let's change the load.",
+      "chapter": 0
+    },
+    {
+      "start": 65.58000183105469,
+      "end": 68.9800033569336,
+      "text": "Would making it very small always give the largest useful power?",
+      "chapter": 0
+    },
+    {
+      "start": 69.81999969482422,
+      "end": 70.5999984741211,
+      "text": "Think about that.",
+      "chapter": 0
+    },
+    {
+      "start": 71,
+      "end": 74.18000030517578,
+      "text": "A tiny load draws current, but has little voltage across it.",
+      "chapter": 0
+    },
+    {
+      "start": 74.18000030517578,
+      "end": 77.55999755859375,
+      "text": "A very large load has voltage but little current.",
+      "chapter": 0
+    },
+    {
+      "start": 78.83999633789062,
+      "end": 83.08000183105469,
+      "text": "Load power is E squared times R divided by the square of R plus r.",
+      "chapter": 0
+    },
+    {
+      "start": 84.23999786376953,
+      "end": 90.04461806859726,
+      "text": "Differentiating with respect to R gives E squared times r minus R, divided by",
+      "chapter": 0
+    },
+    {
+      "start": 90.04461806859726,
+      "end": 90.12000274658203,
+      "text": "R",
+      "chapter": 0
+    },
+    {
+      "start": 90.12000274658203,
+      "end": 91.27999877929688,
+      "text": "plus r cubed.",
+      "chapter": 0
+    },
+    {
+      "start": 91.27999877929688,
+      "end": 94.36000061035156,
+      "text": "It changes from positive to negative when R equals r.",
+      "chapter": 0
+    },
+    {
+      "start": 95.04000091552734,
+      "end": 99.0199966430664,
+      "text": "So our twelve volt, two ohm source gives maximum load power with a two ohm",
+      "chapter": 0
+    },
+    {
+      "start": 99.0199966430664,
+      "end": 100.19999694824219,
+      "text": "load: eighteen watts.",
+      "chapter": 0
+    },
+    {
+      "start": 100.81999969482422,
+      "end": 104.16000366210938,
+      "text": "But the internal resistance also dissipates eighteen watts.",
+      "chapter": 0
+    },
+    {
+      "start": 104.16000366210938,
+      "end": 106.31999969482422,
+      "text": "Efficiency is only fifty percent.",
+      "chapter": 0
+    },
+    {
+      "start": 107.04000091552734,
+      "end": 109.58000183105469,
+      "text": "Maximum power and maximum efficiency are different goals.",
+      "chapter": 0
+    },
+    {
+      "start": 110.5,
+      "end": 114.08000183105469,
+      "text": "With a larger load, the fraction of source power delivered outside improves,",
+      "chapter": 0
+    },
+    {
+      "start": 114.58000183105469,
+      "end": 115.76000213623047,
+      "text": "but delivered power falls.",
+      "chapter": 0
+    },
+    {
+      "start": 116.69999694824219,
+      "end": 119.83999633789062,
+      "text": "For JEE, read which objective the question asks for.",
+      "chapter": 0
+    },
+    {
+      "start": 120.41999816894531,
+      "end": 124.68000030517578,
+      "text": "And never treat the ideal maximum power calculation as advice to short a real",
+      "chapter": 0
+    },
+    {
+      "start": 124.68000030517578,
+      "end": 124.83999633789062,
+      "text": "battery.",
+      "chapter": 0
+    },
+    {
+      "start": 125.30400000000385,
+      "end": 129.28400001907733,
+      "text": "Next, a question that sounds simple but hides an important condition.",
+      "chapter": 1
+    },
+    {
+      "start": 130.12400017166522,
+      "end": 133.12400017166522,
+      "text": "A metal resistor warms up and its resistance increases.",
+      "chapter": 1
+    },
+    {
+      "start": 134.00399980926898,
+      "end": 136.46399984741595,
+      "text": "Does its electrical power increase or decrease?",
+      "chapter": 1
+    },
+    {
+      "start": 137.52400026703265,
+      "end": 140.36400041962054,
+      "text": "Before choosing, ask what the source holds constant.",
+      "chapter": 1
+    },
+    {
+      "start": 141.36399946594622,
+      "end": 145.98400030517962,
+      "text": "Close to a reference temperature, resistance is approximately R zero times one",
+      "chapter": 1
+    },
+    {
+      "start": 145.98400030517962,
+      "end": 147.86399946594622,
+      "text": "plus alpha times the temperature change.",
+      "chapter": 1
+    },
+    {
+      "start": 148.68399916077044,
+      "end": 150.42400083923724,
+      "text": "Alpha is defined at that reference temperature.",
+      "chapter": 1
+    },
+    {
+      "start": 150.86399946594622,
+      "end": 155.62399969482806,
+      "text": "This is a local linear approximation, not a universal rule for every material",
+      "chapter": 1
+    },
+    {
+      "start": 155.62399969482806,
+      "end": 156.3839999237099,
+      "text": "or temperature.",
+      "chapter": 1
+    },
+    {
+      "start": 157.28399954224017,
+      "end": 161.3972683088879,
+      "text": "Suppose resistance is ten ohms at twenty degrees Celsius, with alpha zero",
+      "chapter": 1
+    },
+    {
+      "start": 161.3972683088879,
+      "end": 161.67899904632952,
+      "text": "point",
+      "chapter": 1
+    },
+    {
+      "start": 161.67899904632952,
+      "end": 162.96399984741595,
+      "text": "zero zero four per kelvin.",
+      "chapter": 1
+    },
+    {
+      "start": 163.9239989318886,
+      "end": 165.34400091553118,
+      "text": "Warm it to seventy degrees Celsius.",
+      "chapter": 1
+    },
+    {
+      "start": 165.9239989318886,
+      "end": 169.84400091553118,
+      "text": "The temperature change is fifty degrees, numerically the same as fifty kelvin.",
+      "chapter": 1
+    },
+    {
+      "start": 170.62399969482806,
+      "end": 173.62399969482806,
+      "text": "Resistance becomes ten times one point two, or twelve ohms.",
+      "chapter": 1
+    },
+    {
+      "start": 174.40399847412493,
+      "end": 176.86400137329485,
+      "text": "Now use an ideal constant twelve volt supply.",
+      "chapter": 1
+    },
+    {
+      "start": 177.56399832153704,
+      "end": 181.8240004577675,
+      "text": "Initially current is one point two amperes and power is fourteen point four",
+      "chapter": 1
+    },
+    {
+      "start": 181.8240004577675,
+      "end": 182.0839987793007,
+      "text": "watts.",
+      "chapter": 1
+    },
+    {
+      "start": 182.70400152588275,
+      "end": 186.48400030517962,
+      "text": "At twelve ohms, current is one ampere and power is twelve watts.",
+      "chapter": 1
+    },
+    {
+      "start": 187.40399847412493,
+      "end": 191.2440024414101,
+      "text": "Power decreased because voltage stayed fixed and power is voltage squared",
+      "chapter": 1
+    },
+    {
+      "start": 191.2440024414101,
+      "end": 192.28400335693743,
+      "text": "divided by resistance.",
+      "chapter": 1
+    },
+    {
+      "start": 193.28400335693743,
+      "end": 194.28400335693743,
+      "text": "Try the other constraint.",
+      "chapter": 1
+    },
+    {
+      "start": 195.22399816894915,
+      "end": 198.04399786377337,
+      "text": "Suppose an ideal source holds current at one point two amperes.",
+      "chapter": 1
+    },
+    {
+      "start": 198.62399969482806,
+      "end": 201.04399786377337,
+      "text": "At ten ohms, power is fourteen point four watts.",
+      "chapter": 1
+    },
+    {
+      "start": 201.72399816894915,
+      "end": 204.3639975585976,
+      "text": "At twelve ohms it becomes seventeen point two eight watts.",
+      "chapter": 1
+    },
+    {
+      "start": 205.04399786377337,
+      "end": 208.8639975585976,
+      "text": "It increased because current squared times resistance is now the relevant",
+      "chapter": 1
+    },
+    {
+      "start": 208.8639975585976,
+      "end": 209.30400000000384,
+      "text": "expression.",
+      "chapter": 1
+    },
+    {
+      "start": 210.02400122070696,
+      "end": 212.5640021362343,
+      "text": "Same resistor change, opposite power trend.",
+      "chapter": 1
+    },
+    {
+      "start": 213.32399664307025,
+      "end": 216.34400091553118,
+      "text": "So do not memorize that heating always reduces electrical power.",
+      "chapter": 1
+    },
+    {
+      "start": 217.2440024414101,
+      "end": 218.48400030517962,
+      "text": "State the source constraint first.",
+      "chapter": 1
+    },
+    {
+      "start": 219.2440024414101,
+      "end": 222.90399847412493,
+      "text": "Real circuits can also include internal source resistance, and self heating",
+      "chapter": 1
+    },
+    {
+      "start": 222.90399847412493,
+      "end": 225.38400183105853,
+      "text": "needs a heat loss model if temperature is not prescribed.",
+      "chapter": 1
+    },
+    {
+      "start": 226.2440024414101,
+      "end": 230.1640006103554,
+      "text": "For our numerical question, geometry changes are neglected and the given",
+      "chapter": 1
+    },
+    {
+      "start": 230.1640006103554,
+      "end": 231.2440024414101,
+      "text": "temperature is an input.",
+      "chapter": 1
+    },
+    {
+      "start": 231.92400274658587,
+      "end": 235.7829729974247,
+      "text": "Our routine is to calculate resistance using a temperature difference,",
+      "chapter": 1
+    },
+    {
+      "start": 235.7829729974247,
+      "end": 236.22399816894915,
+      "text": "identify",
+      "chapter": 1
+    },
+    {
+      "start": 236.22399816894915,
+      "end": 239.34400091553118,
+      "text": "the source, and only then calculate current and power.",
+      "chapter": 1
+    },
+    {
+      "start": 240.26400000000731,
+      "end": 242.96400004769103,
+      "text": "Let's finish with a bridge that is not balanced.",
+      "chapter": 2
+    },
+    {
+      "start": 243.5839999332501,
+      "end": 245.04400020981566,
+      "text": "Keep the diagram beside you.",
+      "chapter": 2
+    },
+    {
+      "start": 245.54400020981566,
+      "end": 248.62399965668456,
+      "text": "Supply node A is twelve volts and node D is zero.",
+      "chapter": 2
+    },
+    {
+      "start": 249.48400026703612,
+      "end": 253.84912802613817,
+      "text": "The upper path goes from A through three ohms to B, then through six ohms to",
+      "chapter": 2
+    },
+    {
+      "start": 253.84912802613817,
+      "end": 253.96399980927245,
+      "text": "D.",
+      "chapter": 2
+    },
+    {
+      "start": 254.52400022888915,
+      "end": 258.7137430752558,
+      "text": "The lower path goes from A through six ohms to C, then through three ohms to",
+      "chapter": 2
+    },
+    {
+      "start": 258.7137430752558,
+      "end": 258.82399946594967,
+      "text": "D.",
+      "chapter": 2
+    },
+    {
+      "start": 259.3840008392407,
+      "end": 261.46400076294674,
+      "text": "A three ohm bridge joins B to C.",
+      "chapter": 2
+    },
+    {
+      "start": 262.16399961853756,
+      "end": 265.46400076294674,
+      "text": "Can we treat the upper and lower paths as independent voltage dividers?",
+      "chapter": 2
+    },
+    {
+      "start": 265.94400030518307,
+      "end": 267.62400061035885,
+      "text": "Not while bridge current flows.",
+      "chapter": 2
+    },
+    {
+      "start": 268.0440006866528,
+      "end": 271.2439995422436,
+      "text": "The middle resistor changes both node potentials.",
+      "chapter": 2
+    },
+    {
+      "start": 271.44400030518307,
+      "end": 276.1440010681225,
+      "text": "At B, write outgoing currents: B minus twelve divided by three, plus B divided",
+      "chapter": 2
+    },
+    {
+      "start": 276.1440010681225,
+      "end": 278.88399893189205,
+      "text": "by six, plus B minus C divided by three.",
+      "chapter": 2
+    },
+    {
+      "start": 279.38399893189205,
+      "end": 280.2439995422436,
+      "text": "Their sum is zero.",
+      "chapter": 2
+    },
+    {
+      "start": 281.0239983215405,
+      "end": 285.30400091553463,
+      "text": "At C, the outgoing sum is C minus twelve divided by six, plus C divided by",
+      "chapter": 2
+    },
+    {
+      "start": 285.30400091553463,
+      "end": 287.80400091553463,
+      "text": "three, plus C minus B divided by three.",
+      "chapter": 2
+    },
+    {
+      "start": 289.0839996948315,
+      "end": 290.54399877930416,
+      "text": "Multiply both equations by six.",
+      "chapter": 2
+    },
+    {
+      "start": 290.96400076294674,
+      "end": 295.7439995422436,
+      "text": "We get five B minus two C equals twenty four, and minus two B plus five C",
+      "chapter": 2
+    },
+    {
+      "start": 295.7439995422436,
+      "end": 296.54399877930416,
+      "text": "equals twelve.",
+      "chapter": 2
+    },
+    {
+      "start": 296.54399877930416,
+      "end": 301.38399893189205,
+      "text": "Solve them together: B is forty eight sevenths volts, and C is thirty six",
+      "chapter": 2
+    },
+    {
+      "start": 301.38399893189205,
+      "end": 302.0839996948315,
+      "text": "sevenths volts.",
+      "chapter": 2
+    },
+    {
+      "start": 302.9840012207104,
+      "end": 305.7440033569409,
+      "text": "B is higher, so bridge current goes from B to C.",
+      "chapter": 2
+    },
+    {
+      "start": 306.1640015258862,
+      "end": 309.8840027465893,
+      "text": "Its value is the difference divided by three ohms: four sevenths of an ampere.",
+      "chapter": 2
+    },
+    {
+      "start": 310.44400030518307,
+      "end": 313.844001831062,
+      "text": "A negative current under an assumed arrow would simply tell us the real",
+      "chapter": 2
+    },
+    {
+      "start": 313.844001831062,
+      "end": 314.7440033569409,
+      "text": "direction is opposite.",
+      "chapter": 2
+    },
+    {
+      "start": 315.3639984741284,
+      "end": 316.02400213623775,
+      "text": "Now verify.",
+      "chapter": 2
+    },
+    {
+      "start": 316.7640000000073,
+      "end": 320.0839996948315,
+      "text": "At B, incoming current from A is twelve sevenths of an ampere.",
+      "chapter": 2
+    },
+    {
+      "start": 320.80400091553463,
+      "end": 324.52400213623775,
+      "text": "Outgoing current to D is eight sevenths, and to C four sevenths.",
+      "chapter": 2
+    },
+    {
+      "start": 324.52400213623775,
+      "end": 326.2839966430737,
+      "text": "Charge conservation checks.",
+      "chapter": 2
+    },
+    {
+      "start": 327.0640030517651,
+      "end": 330.3639984741284,
+      "text": "Supply current is twenty sevenths of an ampere, giving equivalent resistance",
+      "chapter": 2
+    },
+    {
+      "start": 330.3639984741284,
+      "end": 331.52400213623775,
+      "text": "four point two ohms.",
+      "chapter": 2
+    },
+    {
+      "start": 332.5039978637768,
+      "end": 336.12400061035885,
+      "text": "Removing the middle branch gives two nine ohm paths in parallel, or four point",
+      "chapter": 2
+    },
+    {
+      "start": 336.12400061035885,
+      "end": 336.9039993896557,
+      "text": "five ohms.",
+      "chapter": 2
+    },
+    {
+      "start": 337.72399908447994,
+      "end": 340.22399908447994,
+      "text": "Adding a conducting path reduced resistance, as expected.",
+      "chapter": 2
+    },
+    {
+      "start": 341.5039978637768,
+      "end": 345.553999008186,
+      "text": "Finally, source power is twelve times twenty sevenths, or two hundred forty",
+      "chapter": 2
+    },
+    {
+      "start": 345.553999008186,
+      "end": 345.9039993896557,
+      "text": "sevenths watts.",
+      "chapter": 2
+    },
+    {
+      "start": 346.7440033569409,
+      "end": 350.94400030518307,
+      "text": "Adding current squared times resistance over all five resistors gives the same",
+      "chapter": 2
+    },
+    {
+      "start": 350.94400030518307,
+      "end": 351.2440033569409,
+      "text": "result.",
+      "chapter": 2
+    },
+    {
+      "start": 351.4639969482495,
+      "end": 353.0839996948315,
+      "text": "That is a strong check.",
+      "chapter": 2
+    },
+    {
+      "start": 353.0839996948315,
+      "end": 358.2839966430737,
+      "text": "Draw nodes, write signs consistently, solve independent equations, then verify",
+      "chapter": 2
+    },
+    {
+      "start": 358.2839966430737,
+      "end": 359.12400061035885,
+      "text": "charge and energy.",
+      "chapter": 2
+    },
+    {
+      "start": 359.7640000000073,
+      "end": 362.9039993896557,
+      "text": "A circuit's appearance is not enough to decide series or parallel.",
+      "chapter": 2
+    }
+  ]
+}

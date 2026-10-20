@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import CourseLibrary from "./course-library";
-import { syllabusBaseline, syllabusSource } from "./course";
+import { syllabusBaseline, syllabusSource, syllabusChecked } from "./course";
 import { studyLessons } from "./study-lessons";
 import { lectures } from "./lessons";
 import styles from "./lecture.module.css";
@@ -15,9 +15,9 @@ export default function ClassLibrary() {
     <div className={styles.heading}>
       <p>PHYSICS · CHEMISTRY · MATHEMATICS</p>
       <h1>JEE classes</h1>
-      <span>{lectures.length} recorded classes · {studyLessons.length} written lessons · Course in development</span>
+      <span>{lectures.filter(lesson => (lesson.subject ?? "Physics") === "Physics").length} recorded Physics classes · {lectures.filter(lesson => lesson.subject === "Chemistry").length} recorded Chemistry classes · {studyLessons.length} written lessons · More Chemistry and Mathematics classes in development</span>
     </div>
     <CourseLibrary />
-    <footer className={styles.notes}><p>Baseline: <a href={syllabusSource} target="_blank" rel="noreferrer">{syllabusBaseline}</a>. Course map checked 30 September 2026. This is not a verified 2027 or JEE Advanced syllabus.</p></footer>
+    <footer className={styles.notes}><p>Following the official NTA syllabus: <a href={syllabusSource} target="_blank" rel="noreferrer">{syllabusBaseline}</a>. Unit names and order checked on {syllabusChecked}. Independently produced classes; no NTA endorsement. Coverage is tracked against this 2026 baseline; 2027 and JEE Advanced require separate verification.</p></footer>
   </main>;
 }

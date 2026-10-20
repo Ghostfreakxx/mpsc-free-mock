@@ -1,0 +1,289 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.940
+Hey, welcome back.
+
+00:00:02.500 --> 00:00:06.260
+A diode problem is really a circuit problem plus a consistency check.
+
+00:00:07.100 --> 00:00:11.215
+Use a stated zero point seven volt forward drop model, with reverse leakage
+
+00:00:11.215 --> 00:00:11.380
+and
+
+00:00:11.380 --> 00:00:12.200
+breakdown neglected.
+
+00:00:13.140 --> 00:00:15.800
+Connect a source through one kilo ohm to an output node.
+
+00:00:16.340 --> 00:00:20.360
+From that node to ground, place a ten kilo ohm load and a diode in parallel.
+
+00:00:20.900 --> 00:00:23.240
+Its anode is at the node and cathode at ground.
+
+00:00:24.080 --> 00:00:25.640
+Start with a positive five volt source.
+
+00:00:26.180 --> 00:00:29.800
+If the diode were off, the divider would give about four point five five volts
+
+00:00:29.800 --> 00:00:30.300
+at the node.
+
+00:00:31.000 --> 00:00:33.980
+That would forward bias our diode, so off is inconsistent.
+
+00:00:34.760 --> 00:00:37.620
+With the diode on, output is zero point seven volts.
+
+00:00:38.300 --> 00:00:42.530
+The series resistor current is five minus zero point seven, divided by one
+
+00:00:42.530 --> 00:00:44.580
+thousand, or four point three milliamperes.
+
+00:00:45.060 --> 00:00:47.000
+But does all that current enter the diode?
+
+00:00:47.700 --> 00:00:48.880
+Pause and check the load branch.
+
+00:00:49.360 --> 00:00:53.853
+The load takes zero point seven divided by ten thousand amperes, or zero point
+
+00:00:53.853 --> 00:00:55.100
+zero seven milliamperes.
+
+00:00:56.620 --> 00:00:59.160
+Kirchhoff's current law leaves four point two three milliamperes through the
+
+00:00:59.160 --> 00:01:00.500
+diode, in its allowed direction.
+
+00:01:01.260 --> 00:01:03.540
+Now change the source to negative zero point five volts.
+
+00:01:04.180 --> 00:01:08.520
+An on assumption would require a negative forward diode current, so reject it.
+
+00:01:08.880 --> 00:01:12.682
+With the diode off, the divider gives output negative zero point four five
+
+00:01:12.682 --> 00:01:12.888
+four
+
+00:01:12.888 --> 00:01:13.960
+five volts approximately.
+
+00:01:14.560 --> 00:01:16.560
+That reverse biases the diode consistently.
+
+00:01:16.740 --> 00:01:21.020
+We did not simply clamp every output to zero point seven regardless of input.
+
+00:01:21.900 --> 00:01:26.140
+Label the diode orientation, assume a state, solve the remaining circuit, and
+
+00:01:26.140 --> 00:01:28.140
+verify the resulting voltage and current.
+
+00:01:28.880 --> 00:01:32.980
+Real diode curves are smooth and temperature dependent; zero point seven is
+
+00:01:32.980 --> 00:01:35.340
+only the chosen approximation for this exercise.
+
+00:01:36.100 --> 00:01:39.620
+Any practical circuit also needs current limits and component ratings.
+
+00:01:40.632 --> 00:01:44.192
+A Zener does not hold its rated voltage under every possible load.
+
+00:01:44.812 --> 00:01:48.412
+In the simplified regulator, a series resistor supplies a parallel combination
+
+00:01:48.412 --> 00:01:50.912
+of the reverse biased Zener and the load.
+
+00:01:51.872 --> 00:01:55.592
+Use Zener voltage five point one volts, series resistance three hundred thirty
+
+00:01:55.592 --> 00:01:58.052
+ohms and load resistance one kilo ohm.
+
+00:01:58.672 --> 00:02:02.692
+At twelve volts input, series current is six point nine divided by three
+
+00:02:02.692 --> 00:02:06.172
+hundred thirty, or about twenty point nine zero nine milliamperes.
+
+00:02:06.532 --> 00:02:09.172
+The load takes five point one milliamperes.
+
+00:02:09.172 --> 00:02:12.752
+Zener current is the difference, about fifteen point eight zero nine
+
+00:02:12.752 --> 00:02:13.352
+milliamperes.
+
+00:02:14.352 --> 00:02:18.412
+Suppose our specified usable Zener window is five to twenty five milliamperes.
+
+00:02:19.032 --> 00:02:20.732
+The nominal point is inside it.
+
+00:02:21.192 --> 00:02:25.672
+To keep that same load regulated, minimum input is five point one plus three
+
+00:02:25.672 --> 00:02:29.032
+hundred thirty times the sum of five milliamperes and load current.
+
+00:02:29.572 --> 00:02:31.432
+That gives eight point four three three volts.
+
+00:02:32.032 --> 00:02:35.972
+The upper current limit gives maximum input fifteen point zero three three
+
+00:02:35.972 --> 00:02:36.272
+volts.
+
+00:02:36.272 --> 00:02:40.272
+These bounds belong to this fixed load, constant Zener voltage model.
+
+00:02:41.072 --> 00:02:44.392
+Now replace the load by two hundred twenty ohms while keeping twelve volts
+
+00:02:44.392 --> 00:02:44.792
+input.
+
+00:02:45.472 --> 00:02:49.080
+At a supposed five point one volts, the load would demand twenty three point
+
+00:02:49.080 --> 00:02:52.452
+one eight milliamperes, more than the series resistor supplies.
+
+00:02:53.072 --> 00:02:56.172
+A negative computed Zener current tells us regulation failed.
+
+00:02:57.072 --> 00:03:01.172
+Neglecting leakage below breakdown, the off Zener divider gives output four
+
+00:03:01.172 --> 00:03:02.332
+point eight volts instead.
+
+00:03:02.932 --> 00:03:06.712
+Never report five point one volts just because that number is printed beside
+
+00:03:06.712 --> 00:03:07.212
+the device.
+
+00:03:08.072 --> 00:03:12.240
+At the nominal regulated point, Zener power is approximately zero point zero
+
+00:03:12.240 --> 00:03:13.472
+eight zero six watts.
+
+00:03:14.292 --> 00:03:16.472
+Resistor power and device ratings also need checking.
+
+00:03:17.212 --> 00:03:20.612
+Real knee currents, tolerances and thermal effects change the bounds.
+
+00:03:21.512 --> 00:03:25.872
+JEE's clean routine is current balance, operating window check, and power
+
+00:03:25.872 --> 00:03:26.712
+check, in that order.
+
+00:03:26.712 --> 00:03:29.892
+Let's move from current paths to logical states.
+
+00:03:30.672 --> 00:03:33.812
+We use ideal binary inputs zero and one.
+
+00:03:34.712 --> 00:03:36.672
+A NAND output is the negation of AND.
+
+00:03:37.592 --> 00:03:42.732
+Tie its two inputs together and you obtain NOT: NAND of A with A is not A.
+
+00:03:43.492 --> 00:03:44.432
+Do the same to B.
+
+00:03:45.372 --> 00:03:47.692
+Feed those two inverted signals into a third NAND.
+
+00:03:48.272 --> 00:03:51.252
+Its result is not of not A AND not B.
+
+00:03:51.252 --> 00:03:54.252
+De Morgan's identity turns that into A OR B.
+
+00:03:55.072 --> 00:03:58.572
+Rather than trusting a familiar looking symbol, build its complete table.
+
+00:03:59.372 --> 00:04:03.872
+For inputs zero zero, the first two outputs are one one, and the final NAND
+
+00:04:03.872 --> 00:04:04.492
+gives zero.
+
+00:04:05.152 --> 00:04:08.392
+For zero one, they are one zero, and output is one.
+
+00:04:09.072 --> 00:04:11.152
+For one zero, output is also one.
+
+00:04:11.672 --> 00:04:15.572
+For one one, the intermediate pair is zero zero, and output is one.
+
+00:04:15.932 --> 00:04:19.292
+The resulting sequence is zero, one, one, one: OR.
+
+00:04:19.292 --> 00:04:22.252
+Now use three NOR gates in the analogous pattern.
+
+00:04:22.972 --> 00:04:25.092
+A tied input NOR also makes NOT.
+
+00:04:25.812 --> 00:04:30.092
+The final NOR gives not of not A OR not B, which is A AND B.
+
+00:04:30.692 --> 00:04:32.892
+Its table is zero, zero, zero, one.
+
+00:04:33.772 --> 00:04:37.372
+Pause and predict the all one input before checking: both inverted signals
+
+00:04:37.372 --> 00:04:39.792
+become zero, and the last NOR gives one.
+
+00:04:40.392 --> 00:04:43.752
+These constructions explain why NAND and NOR are called universal gates.
+
+00:04:44.472 --> 00:04:48.392
+More complicated networks can be simplified with Boolean algebra, but checking
+
+00:04:48.392 --> 00:04:52.112
+all combinations remains an excellent safeguard for a small network.
+
+00:04:52.792 --> 00:04:57.772
+Do not use ordinary arithmetic addition for OR: one OR one is one, not two.
+
+00:04:58.312 --> 00:05:02.612
+These are ideal logic models with stable defined inputs; practical voltage
+
+00:05:02.612 --> 00:05:06.206
+thresholds, delays and floating input behaviour require a device
+
+00:05:06.206 --> 00:05:06.992
+specification.
+
+00:05:07.752 --> 00:05:12.412
+For JEE, annotate the intermediate signals and test the full table, especially
+
+00:05:12.412 --> 00:05:14.892
+any inversion bubbles that are easy to overlook.

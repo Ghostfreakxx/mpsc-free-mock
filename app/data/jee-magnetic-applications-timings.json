@@ -1,0 +1,715 @@
+{
+  "duration": 372.84000000001146,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 120.81600000000368
+    },
+    {
+      "start": 120.81600000000368,
+      "end": 248.18400000000761
+    },
+    {
+      "start": 248.18400000000761,
+      "end": 372.84000000001146
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.159999966621399,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.940000057220459,
+      "end": 5.960000038146973,
+      "text": "Today our first question is not which formula to use, but whether the source",
+      "chapter": 0
+    },
+    {
+      "start": 5.960000038146973,
+      "end": 6.960000038146973,
+      "text": "matches that formula.",
+      "chapter": 0
+    },
+    {
+      "start": 8.020000457763672,
+      "end": 12,
+      "text": "Put a straight wire on the vertical y axis, extending from minus zero point",
+      "chapter": 0
+    },
+    {
+      "start": 12,
+      "end": 14.0600004196167,
+      "text": "three to plus zero point three metres.",
+      "chapter": 0
+    },
+    {
+      "start": 15.0600004196167,
+      "end": 16.520000457763672,
+      "text": "Current is five amperes upward.",
+      "chapter": 0
+    },
+    {
+      "start": 17.139999389648438,
+      "end": 21.459999084472656,
+      "text": "Our observation point is zero point four metres to the right of the centre.",
+      "chapter": 0
+    },
+    {
+      "start": 21.459999084472656,
+      "end": 24.760000228881836,
+      "text": "Apply the right hand rule: the field there points into the page.",
+      "chapter": 0
+    },
+    {
+      "start": 25.420000076293945,
+      "end": 27.959999084472656,
+      "text": "Every element of this segment contributes in that direction.",
+      "chapter": 0
+    },
+    {
+      "start": 28.799999237060547,
+      "end": 30.040000915527344,
+      "text": "But the wire is finite.",
+      "chapter": 0
+    },
+    {
+      "start": 30.700000762939453,
+      "end": 35,
+      "text": "For a symmetric segment, the field magnitude is mu zero times current times",
+      "chapter": 0
+    },
+    {
+      "start": 35,
+      "end": 39.380001068115234,
+      "text": "half length, divided by two pi times the perpendicular distance times the",
+      "chapter": 0
+    },
+    {
+      "start": 39.380001068115234,
+      "end": 41.97999954223633,
+      "text": "square root of half length squared plus distance squared.",
+      "chapter": 0
+    },
+    {
+      "start": 42.5,
+      "end": 43.34000015258789,
+      "text": "Where does that come from?",
+      "chapter": 0
+    },
+    {
+      "start": 43.900001525878906,
+      "end": 47.599998474121094,
+      "text": "Each tiny contribution contains the perpendicular distance divided by source",
+      "chapter": 0
+    },
+    {
+      "start": 47.599998474121094,
+      "end": 48.220001220703125,
+      "text": "distance cubed.",
+      "chapter": 0
+    },
+    {
+      "start": 49.119998931884766,
+      "end": 51.560001373291016,
+      "text": "Integrating along the wire gives the end position factor.",
+      "chapter": 0
+    },
+    {
+      "start": 52.2400016784668,
+      "end": 54.040000915527344,
+      "text": "Here, the end distance is half a metre.",
+      "chapter": 0
+    },
+    {
+      "start": 54.900001525878906,
+      "end": 59.279998779296875,
+      "text": "Using mu zero divided by four pi approximately ten to the minus seven in SI",
+      "chapter": 0
+    },
+    {
+      "start": 59.279998779296875,
+      "end": 62.15999984741211,
+      "text": "units, the result is one point five microtesla.",
+      "chapter": 0
+    },
+    {
+      "start": 63.2400016784668,
+      "end": 66.12000274658203,
+      "text": "The infinite wire formula would give two point five microtesla.",
+      "chapter": 0
+    },
+    {
+      "start": 66.86000061035156,
+      "end": 70.13999938964844,
+      "text": "That is too large because it includes current elements that are not in our",
+      "chapter": 0
+    },
+    {
+      "start": 70.13999938964844,
+      "end": 70.31999969482422,
+      "text": "segment.",
+      "chapter": 0
+    },
+    {
+      "start": 70.86000061035156,
+      "end": 73.94000244140625,
+      "text": "As length grows, the finite result approaches the infinite one.",
+      "chapter": 0
+    },
+    {
+      "start": 74.36000061035156,
+      "end": 78.18000030517578,
+      "text": "The rest of a real circuit can also contribute, so we have isolated this",
+      "chapter": 0
+    },
+    {
+      "start": 78.18000030517578,
+      "end": 78.37999725341797,
+      "text": "segment.",
+      "chapter": 0
+    },
+    {
+      "start": 79,
+      "end": 82.36000061035156,
+      "text": "Now two long wires, both carrying current out of the page.",
+      "chapter": 0
+    },
+    {
+      "start": 82.86000061035156,
+      "end": 86.69999694824219,
+      "text": "Put three amperes at x zero and six amperes at x zero point three metres.",
+      "chapter": 0
+    },
+    {
+      "start": 87.31999969482422,
+      "end": 90.64307520939754,
+      "text": "Between them, the left wire's field points up and the right wire's field",
+      "chapter": 0
+    },
+    {
+      "start": 90.64307520939754,
+      "end": 90.91999816894531,
+      "text": "points",
+      "chapter": 0
+    },
+    {
+      "start": 90.91999816894531,
+      "end": 91.26000213623047,
+      "text": "down.",
+      "chapter": 0
+    },
+    {
+      "start": 91.77999877929688,
+      "end": 92.5199966430664,
+      "text": "Where can they cancel?",
+      "chapter": 0
+    },
+    {
+      "start": 93.08000183105469,
+      "end": 93.69999694824219,
+      "text": "Think for a moment.",
+      "chapter": 0
+    },
+    {
+      "start": 94.41999816894531,
+      "end": 98.13999938964844,
+      "text": "Equate three divided by x to six divided by zero point three minus x.",
+      "chapter": 0
+    },
+    {
+      "start": 99.0199966430664,
+      "end": 102.33999633789062,
+      "text": "Solving gives x zero point one metres, closer to the weaker current.",
+      "chapter": 0
+    },
+    {
+      "start": 102.86000061035156,
+      "end": 106.5199966430664,
+      "text": "At smaller distance, its weaker current can still produce the matching field.",
+      "chapter": 0
+    },
+    {
+      "start": 107.30000305175781,
+      "end": 111.18000030517578,
+      "text": "Outside the wires, these field directions agree, so there is no finite",
+      "chapter": 0
+    },
+    {
+      "start": 111.18000030517578,
+      "end": 112.22000122070312,
+      "text": "cancellation point there.",
+      "chapter": 0
+    },
+    {
+      "start": 113.08000183105469,
+      "end": 116.58000183105469,
+      "text": "Reverse a current and redraw the directions; do not recycle this conclusion",
+      "chapter": 0
+    },
+    {
+      "start": 116.58000183105469,
+      "end": 117.0199966430664,
+      "text": "blindly.",
+      "chapter": 0
+    },
+    {
+      "start": 118.0999984741211,
+      "end": 119.94000244140625,
+      "text": "Geometry and vectors come before arithmetic.",
+      "chapter": 0
+    },
+    {
+      "start": 120.81600000000368,
+      "end": 123.75600005722414,
+      "text": "Now follow a particle rather than the source wire.",
+      "chapter": 1
+    },
+    {
+      "start": 124.79600001907717,
+      "end": 128.33599998093018,
+      "text": "Magnetic force is charge times velocity cross magnetic field.",
+      "chapter": 1
+    },
+    {
+      "start": 129.05599977112183,
+      "end": 130.53600026703248,
+      "text": "It is perpendicular to velocity.",
+      "chapter": 1
+    },
+    {
+      "start": 131.5760002288855,
+      "end": 134.11600019073853,
+      "text": "Ask yourself: can that force increase speed?",
+      "chapter": 1
+    },
+    {
+      "start": 134.65600015259156,
+      "end": 135.03600026703248,
+      "text": "No.",
+      "chapter": 1
+    },
+    {
+      "start": 135.4160003814734,
+      "end": 139.39599992370972,
+      "text": "Its instantaneous power, force dot velocity, is zero.",
+      "chapter": 1
+    },
+    {
+      "start": 139.89599992370972,
+      "end": 144.23600007629761,
+      "text": "A static magnetic field alone changes direction, not kinetic energy.",
+      "chapter": 1
+    },
+    {
+      "start": 144.9559993896521,
+      "end": 149.6359996948279,
+      "text": "For entry perpendicular to a uniform field, magnetic force supplies the",
+      "chapter": 1
+    },
+    {
+      "start": 149.6359996948279,
+      "end": 150.71599961853394,
+      "text": "centripetal acceleration.",
+      "chapter": 1
+    },
+    {
+      "start": 151.83600045776734,
+      "end": 155.61599923706422,
+      "text": "Radius is mass times speed divided by charge magnitude times field.",
+      "chapter": 1
+    },
+    {
+      "start": 156.65600015259156,
+      "end": 160.856000915531,
+      "text": "Use charge magnitude for radius; use charge sign to decide bending direction.",
+      "chapter": 1
+    },
+    {
+      "start": 161.81600000000367,
+      "end": 166.01600076294312,
+      "text": "For example, positive charge entering along positive x with field along",
+      "chapter": 1
+    },
+    {
+      "start": 166.01600076294312,
+      "end": 169.37600137329468,
+      "text": "positive z initially feels force along negative y.",
+      "chapter": 1
+    },
+    {
+      "start": 170.4559993896521,
+      "end": 171.97599984741578,
+      "text": "Oblique entry is even more interesting.",
+      "chapter": 1
+    },
+    {
+      "start": 172.97599984741578,
+      "end": 176.39600183105836,
+      "text": "Split velocity into a perpendicular component and a parallel component.",
+      "chapter": 1
+    },
+    {
+      "start": 176.81600000000367,
+      "end": 178.89600183105836,
+      "text": "The perpendicular component rotates.",
+      "chapter": 1
+    },
+    {
+      "start": 179.75599862671265,
+      "end": 181.43599893188843,
+      "text": "The parallel component stays constant.",
+      "chapter": 1
+    },
+    {
+      "start": 182.51600076294312,
+      "end": 183.73599816894898,
+      "text": "Together they make a helix.",
+      "chapter": 1
+    },
+    {
+      "start": 184.67600061035523,
+      "end": 185.77599908447633,
+      "text": "Let's calculate one.",
+      "chapter": 1
+    },
+    {
+      "start": 186.6359996948279,
+      "end": 189.4559993896521,
+      "text": "Mass is two times ten to the minus twenty seven kilograms.",
+      "chapter": 1
+    },
+    {
+      "start": 190.41599847412476,
+      "end": 193.356000915531,
+      "text": "Charge magnitude is ten to the minus nineteen coulombs.",
+      "chapter": 1
+    },
+    {
+      "start": 194.4360027465857,
+      "end": 195.97600366211304,
+      "text": "Field is zero point two tesla.",
+      "chapter": 1
+    },
+    {
+      "start": 197.07600213623414,
+      "end": 201.33599664307008,
+      "text": "Perpendicular speed is two times ten to the fifth metres per second, while",
+      "chapter": 1
+    },
+    {
+      "start": 201.33599664307008,
+      "end": 202.97600366211304,
+      "text": "parallel speed is ten to the fifth.",
+      "chapter": 1
+    },
+    {
+      "start": 203.356000915531,
+      "end": 207.57600213623414,
+      "text": "The radius is zero point zero two metres, or two centimetres.",
+      "chapter": 1
+    },
+    {
+      "start": 207.57600213623414,
+      "end": 209.9360027465857,
+      "text": "We used perpendicular speed, not total speed.",
+      "chapter": 1
+    },
+    {
+      "start": 210.59599877930054,
+      "end": 214.5559978637732,
+      "text": "The period is two pi times mass divided by charge magnitude times field,",
+      "chapter": 1
+    },
+    {
+      "start": 215.1359996948279,
+      "end": 219.27599908447633,
+      "text": "approximately six point two eight three times ten to the minus seven seconds.",
+      "chapter": 1
+    },
+    {
+      "start": 220.37599755859742,
+      "end": 224.6493358764685,
+      "text": "Multiply by parallel speed to get the pitch, zero point zero six two eight",
+      "chapter": 1
+    },
+    {
+      "start": 224.6493358764685,
+      "end": 225.29600335693726,
+      "text": "three metres per turn.",
+      "chapter": 1
+    },
+    {
+      "start": 226.356000915531,
+      "end": 230.51599694824586,
+      "text": "Pause: a smaller parallel speed changes pitch but not radius if the",
+      "chapter": 1
+    },
+    {
+      "start": 230.51599694824586,
+      "end": 231.856000915531,
+      "text": "perpendicular speed stays fixed.",
+      "chapter": 1
+    },
+    {
+      "start": 232.49600030517945,
+      "end": 236.11600305176148,
+      "text": "Within this nonrelativistic model, period does not depend on speed.",
+      "chapter": 1
+    },
+    {
+      "start": 237.09599877930054,
+      "end": 238.9360027465857,
+      "text": "Relativistic motion requires a different treatment.",
+      "chapter": 1
+    },
+    {
+      "start": 239.79600335693726,
+      "end": 245.1806172743614,
+      "text": "Our checks are simple: magnetic work is zero, parallel motion is unchanged,",
+      "chapter": 1
+    },
+    {
+      "start": 245.1806172743614,
+      "end": 245.39600183105836,
+      "text": "and",
+      "chapter": 1
+    },
+    {
+      "start": 245.39600183105836,
+      "end": 247.9360027465857,
+      "text": "each component goes into the correct geometrical quantity.",
+      "chapter": 1
+    },
+    {
+      "start": 248.18400000000761,
+      "end": 251.74399994278716,
+      "text": "Let's connect these ideas into a JEE style apparatus.",
+      "chapter": 2
+    },
+    {
+      "start": 252.92399977112578,
+      "end": 257.10400007630153,
+      "text": "First accelerate a particle from negligible initial speed through a potential",
+      "chapter": 2
+    },
+    {
+      "start": 257.10400007630153,
+      "end": 257.54399965668483,
+      "text": "difference.",
+      "chapter": 2
+    },
+    {
+      "start": 258.2440004196243,
+      "end": 262.9040002670364,
+      "text": "It gains kinetic energy equal to charge magnitude times accelerating voltage,",
+      "chapter": 2
+    },
+    {
+      "start": 263.30399988556667,
+      "end": 264.4640006866531,
+      "text": "if losses are negligible.",
+      "chapter": 2
+    },
+    {
+      "start": 265.5240001525955,
+      "end": 269.10400007630153,
+      "text": "Next send it perpendicularly into a uniform magnetic field.",
+      "chapter": 2
+    },
+    {
+      "start": 269.92399977112575,
+      "end": 274.4039993133621,
+      "text": "Combining energy and circular motion gives radius equal to the square root of",
+      "chapter": 2
+    },
+    {
+      "start": 274.4039993133621,
+      "end": 279.1679029544813,
+      "text": "two times mass times voltage divided by charge magnitude, all divided by the",
+      "chapter": 2
+    },
+    {
+      "start": 279.1679029544813,
+      "end": 279.54400061035915,
+      "text": "field.",
+      "chapter": 2
+    },
+    {
+      "start": 280.5840015258865,
+      "end": 282.9240016784744,
+      "text": "Hold charge magnitude, voltage and field fixed.",
+      "chapter": 2
+    },
+    {
+      "start": 283.54400061035915,
+      "end": 285.823999389656,
+      "text": "If mass doubles, what happens to radius?",
+      "chapter": 2
+    },
+    {
+      "start": 286.54400061035915,
+      "end": 287.12399862671657,
+      "text": "Take a moment.",
+      "chapter": 2
+    },
+    {
+      "start": 287.64399908448024,
+      "end": 290.1039981689529,
+      "text": "It grows by the square root of two, not by two.",
+      "chapter": 2
+    },
+    {
+      "start": 290.5840015258865,
+      "end": 294.0840015258865,
+      "text": "The particles did not enter at the same speed after the same accelerating",
+      "chapter": 2
+    },
+    {
+      "start": 294.0840015258865,
+      "end": 294.54400061035915,
+      "text": "voltage.",
+      "chapter": 2
+    },
+    {
+      "start": 295.0840015258865,
+      "end": 296.9439983215408,
+      "text": "Now check the detector geometry.",
+      "chapter": 2
+    },
+    {
+      "start": 297.30399893189235,
+      "end": 300.98399923706813,
+      "text": "If the particle completes a semicircle and lands on the original entry",
+      "chapter": 2
+    },
+    {
+      "start": 300.98399923706813,
+      "end": 303.9240016784744,
+      "text": "boundary, the separation from entry is two radii.",
+      "chapter": 2
+    },
+    {
+      "start": 304.7640018310623,
+      "end": 306.6039981689529,
+      "text": "A measured diameter is not a radius.",
+      "chapter": 2
+    },
+    {
+      "start": 307.38400076294704,
+      "end": 309.4040012207107,
+      "text": "Other detector positions need their own sketch.",
+      "chapter": 2
+    },
+    {
+      "start": 310.5640010681228,
+      "end": 314.5239963378982,
+      "text": "Finally, a velocity selector uses crossed electric and magnetic fields.",
+      "chapter": 2
+    },
+    {
+      "start": 315.4840030517654,
+      "end": 320.1840000000076,
+      "text": "Choose velocity along positive x, magnetic field along positive z and electric",
+      "chapter": 2
+    },
+    {
+      "start": 320.1840000000076,
+      "end": 321.46399877930446,
+      "text": "field along positive y.",
+      "chapter": 2
+    },
+    {
+      "start": 322.0840015258865,
+      "end": 324.4040012207107,
+      "text": "The electric force and magnetic force oppose.",
+      "chapter": 2
+    },
+    {
+      "start": 325.0039996948318,
+      "end": 329.6840000000076,
+      "text": "Cancellation requires electric field equal to speed times magnetic field, so",
+      "chapter": 2
+    },
+    {
+      "start": 329.6840000000076,
+      "end": 331.74399755860134,
+      "text": "selected speed is E divided by B.",
+      "chapter": 2
+    },
+    {
+      "start": 332.74399755860134,
+      "end": 336.8706683960037,
+      "text": "For forty thousand volts per metre and zero point two tesla, it is two hundred",
+      "chapter": 2
+    },
+    {
+      "start": 336.8706683960037,
+      "end": 337.94400213623805,
+      "text": "thousand metres per second.",
+      "chapter": 2
+    },
+    {
+      "start": 338.9040012207107,
+      "end": 342.6640033569412,
+      "text": "The charge factor cancels, and reversing charge reverses both forces.",
+      "chapter": 2
+    },
+    {
+      "start": 343.44400213623805,
+      "end": 347.0039996948318,
+      "text": "But a different entry angle does not satisfy this simple scalar condition.",
+      "chapter": 2
+    },
+    {
+      "start": 348.0840015258865,
+      "end": 351.0840015258865,
+      "text": "Different masses at the selected speed have different kinetic energies.",
+      "chapter": 2
+    },
+    {
+      "start": 351.8040027465896,
+      "end": 356.2640018310623,
+      "text": "Also, an analyzer after a selector has radius proportional to mass at fixed",
+      "chapter": 2
+    },
+    {
+      "start": 356.2640018310623,
+      "end": 358.703996643074,
+      "text": "charge and field, because speed is now fixed.",
+      "chapter": 2
+    },
+    {
+      "start": 359.823999389656,
+      "end": 363.0039996948318,
+      "text": "Compare that with the square root mass scaling after a fixed accelerating",
+      "chapter": 2
+    },
+    {
+      "start": 363.0039996948318,
+      "end": 363.4239978637771,
+      "text": "voltage.",
+      "chapter": 2
+    },
+    {
+      "start": 364.3040027465896,
+      "end": 366.5039996948318,
+      "text": "Same magnetic equation, different preparation.",
+      "chapter": 2
+    },
+    {
+      "start": 367.1640033569412,
+      "end": 371.84400366211696,
+      "text": "That is the key habit: identify the stage, identify what is held fixed, then",
+      "chapter": 2
+    },
+    {
+      "start": 371.84400366211696,
+      "end": 372.56399725342555,
+      "text": "choose the equation.",
+      "chapter": 2
+    }
+  ]
+}

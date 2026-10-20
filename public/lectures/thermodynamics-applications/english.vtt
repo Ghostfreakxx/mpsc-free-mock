@@ -1,0 +1,316 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.760
+Welcome back.
+
+00:00:01.320 --> 00:00:05.677
+In this class we will work through first law signs, isothermal and adiabatic
+
+00:00:05.677 --> 00:00:08.600
+derivations, path dependence and second law limits.
+
+00:00:09.240 --> 00:00:13.940
+If systems A and B are each in thermal equilibrium with C, they are in thermal
+
+00:00:13.940 --> 00:00:15.240
+equilibrium with one another.
+
+00:00:15.860 --> 00:00:19.657
+This zeroth law idea makes a thermometer meaningful: it can compare
+
+00:00:19.657 --> 00:00:20.280
+temperature
+
+00:00:20.280 --> 00:00:23.380
+after reaching equilibrium without measuring every molecule.
+
+00:00:24.300 --> 00:00:26.020
+Temperature is not the amount of heat stored.
+
+00:00:26.720 --> 00:00:30.620
+Heat names energy transferred because of a temperature difference, while
+
+00:00:30.620 --> 00:00:32.880
+internal energy is a state property of the system.
+
+00:00:33.760 --> 00:00:35.320
+Choose work by the gas as positive.
+
+00:00:36.140 --> 00:00:40.460
+The first law then reads the change in internal energy equals Q minus work by
+
+00:00:40.460 --> 00:00:40.860
+the gas.
+
+00:00:41.900 --> 00:00:46.360
+Heat entering is positive Q; expansion work is usually positive work by the
+
+00:00:46.360 --> 00:00:48.280
+gas, while compression work is negative.
+
+00:00:49.320 --> 00:00:54.620
+If 500 J enters and the gas does 200 J of work, internal energy increases by
+
+00:00:54.620 --> 00:00:55.360
+300 J.
+
+00:00:55.780 --> 00:00:59.953
+The sign convention must be stated because another text may use work on the
+
+00:00:59.953 --> 00:01:00.120
+gas
+
+00:01:00.120 --> 00:01:00.560
+instead.
+
+00:01:01.460 --> 00:01:05.340
+For an ideal gas with fixed composition, internal energy depends on
+
+00:01:05.340 --> 00:01:08.800
+temperature, so equal endpoint temperatures give equal endpoint internal
+
+00:01:08.800 --> 00:01:09.240
+energies.
+
+00:01:10.340 --> 00:01:14.120
+The work done by a gas against its surroundings is the integral of external
+
+00:01:14.120 --> 00:01:15.480
+pressure with respect to volume.
+
+00:01:16.200 --> 00:01:20.469
+On a mechanically quasistatic path the gas pressure is arbitrarily close to
+
+00:01:20.469 --> 00:01:20.640
+the
+
+00:01:20.640 --> 00:01:24.580
+external pressure, so the plotted equilibrium P V curve can be used.
+
+00:01:25.460 --> 00:01:29.560
+A constant pressure expansion gives the rectangular area P the volume change.
+
+00:01:30.280 --> 00:01:34.492
+An isochoric step has zero volume change and therefore zero boundary work,
+
+00:01:34.492 --> 00:01:34.720
+even
+
+00:01:34.720 --> 00:01:35.720
+when pressure changes.
+
+00:01:36.820 --> 00:01:42.800
+Take endpoints A at 0.001 cubic metres and 100000 Pa, and
+
+00:01:42.800 --> 00:01:47.700
+C at 0.002 cubic metres and 200000 Pa.
+
+00:01:47.700 --> 00:01:52.920
+Expand first at 100000 Pa, then raise pressure at constant volume: work is 100
+
+00:01:52.920 --> 00:01:53.120
+J.
+
+00:01:53.940 --> 00:01:58.600
+Raise pressure first, then expand at 200000 Pa: work is 200 J.
+
+00:01:59.660 --> 00:02:03.740
+The endpoints and the change in internal energy are the same, but Q differs by
+
+00:02:03.740 --> 00:02:04.380
+100 J.
+
+00:02:05.220 --> 00:02:06.560
+Heat and work are path quantities.
+
+00:02:07.300 --> 00:02:10.567
+Do not use an endpoint pressure in P the volume change when the actual
+
+00:02:10.567 --> 00:02:10.940
+pressure
+
+00:02:10.940 --> 00:02:12.000
+changes along the path.
+
+00:02:12.408 --> 00:02:16.408
+For a fixed amount of ideal gas held at constant absolute temperature T,
+
+00:02:17.068 --> 00:02:21.348
+equilibrium pressure is nRT/V.
+
+00:02:21.348 --> 00:02:24.922
+Integrate this pressure from initial to final volume on a reversible
+
+00:02:24.922 --> 00:02:25.448
+isothermal
+
+00:02:25.448 --> 00:02:25.888
+path.
+
+00:02:26.848 --> 00:02:31.308
+Since nRT is constant, work by the gas is
+
+00:02:31.308 --> 00:02:34.498
+nRT
+
+00:02:34.498 --> 00:02:37.688
+ln(V_final/V_initial).
+
+00:02:37.688 --> 00:02:41.148
+Expansion has a positive logarithm; compression has a negative one.
+
+00:02:41.528 --> 00:02:46.048
+The result needs the ideal gas and reversible or quasistatic isothermal model,
+
+00:02:46.708 --> 00:02:50.068
+not just an arbitrary process whose endpoints happen to have the same
+
+00:02:50.068 --> 00:02:50.468
+temperature.
+
+00:02:51.368 --> 00:02:56.337
+Ideal gas internal energy is unchanged, so the first law gives Q equals work
+
+00:02:56.337 --> 00:02:56.468
+by
+
+00:02:56.468 --> 00:02:57.728
+the gas.
+
+00:02:57.728 --> 00:03:01.668
+Isothermal does not mean no heat transfer: heat must enter during reversible
+
+00:03:01.668 --> 00:03:03.428
+expansion to maintain temperature.
+
+00:03:04.158 --> 00:03:09.208
+For one mole at 300 K expanding from V to 2V, use R equals
+
+00:03:09.208 --> 00:03:14.988
+8.314 and ln 2 equals 0.693.
+
+00:03:14.988 --> 00:03:18.868
+Work and heat are approximately 1729 J.
+
+00:03:18.868 --> 00:03:23.568
+In contrast, ideal gas free expansion into an insulated vacuum has zero
+
+00:03:23.568 --> 00:03:27.808
+external pressure work and zero heat, but is irreversible even though its
+
+00:03:27.808 --> 00:03:29.688
+temperature remains unchanged in this model.
+
+00:03:30.368 --> 00:03:33.588
+Adiabatic means Q equals 0.
+
+00:03:33.588 --> 00:03:39.588
+For a reversible adiabatic ideal gas process, n C V dT equals P
+
+00:03:39.588 --> 00:03:41.208
+dV.
+
+00:03:41.208 --> 00:03:45.688
+Substitute P equals nRT/V and divide by T: C V
+
+00:03:45.688 --> 00:03:50.768
+dT/T equals R dV/V.
+
+00:03:50.768 --> 00:03:54.508
+If heat capacities are constant, integrate to obtain T V^(R/C V)
+
+00:03:56.808 --> 00:03:57.168
+constant.
+
+00:03:57.908 --> 00:04:03.568
+Because C P minus C V equals R and gamma equals C P/C V, the exponent
+
+00:04:03.568 --> 00:04:04.848
+is gamma minus one.
+
+00:04:05.708 --> 00:04:09.748
+Combining with the gas law gives P V^gamma constant.
+
+00:04:10.508 --> 00:04:14.208
+For a monatomic ideal gas gamma is 5/3.
+
+00:04:14.208 --> 00:04:20.188
+Doubling the volume lowers temperature to T_initial divided by 2^(2/3), so
+
+00:04:20.648 --> 00:04:24.248
+300 K becomes about 189 K.
+
+00:04:24.248 --> 00:04:28.578
+Its adiabatic work is n C V(T_initial
+
+00:04:28.578 --> 00:04:30.448
+T_final).
+
+00:04:30.448 --> 00:04:33.108
+Energy comes from internal energy, not incoming heat.
+
+00:04:33.948 --> 00:04:38.068
+Irreversible adiabatic processes need the first law and actual external work;
+
+00:04:38.528 --> 00:04:42.208
+the reversible P V^gamma relation cannot be assumed.
+
+00:04:43.048 --> 00:04:46.968
+Constant heat capacities are an additional model condition, not a promise for
+
+00:04:46.968 --> 00:04:49.268
+every real gas over every temperature range.
+
+00:04:49.464 --> 00:04:54.784
+After a complete cycle the system returns to its initial state, so net the
+
+00:04:54.784 --> 00:04:59.804
+change in internal energy is zero and net Q equals net work by the gas.
+
+00:05:00.444 --> 00:05:06.004
+On a P V diagram a clockwise quasistatic loop usually represents positive work
+
+00:05:06.004 --> 00:05:09.584
+by the gas; the enclosed signed area gives that work.
+
+00:05:10.504 --> 00:05:16.224
+For a rectangular loop between volumes 0.001 and 0.002
+
+00:05:16.224 --> 00:05:22.084
+cubic metres and pressures 100000 and 200000 Pa, clockwise work is
+
+00:05:22.084 --> 00:05:24.204
+100 J.
+
+00:05:24.204 --> 00:05:26.044
+Reversing the cycle reverses the sign.
+
+00:05:26.964 --> 00:05:30.624
+The second law prevents a cyclic engine from converting heat from a single
+
+00:05:30.624 --> 00:05:33.824
+reservoir entirely into work without other effects.
+
+00:05:34.764 --> 00:05:39.984
+A reversible Carnot engine between reservoir temperatures T_hot and T_cold has
+
+00:05:39.984 --> 00:05:44.564
+maximum efficiency 1 T_cold/T_hot, using kelvin.
+
+00:05:45.204 --> 00:05:50.184
+At 600 K and 300 K the limit is 50 percent.
+
+00:05:50.184 --> 00:05:54.304
+A real engine is less efficient under the same two reservoir conditions.
+
+00:05:55.564 --> 00:05:59.103
+Reversibility requires no entropy production and no finite gradient
+
+00:05:59.103 --> 00:05:59.684
+dissipative
+
+00:05:59.684 --> 00:06:04.724
+transfer; merely running a process slowly does not remove friction or make it
+
+00:06:04.724 --> 00:06:05.024
+reversible.

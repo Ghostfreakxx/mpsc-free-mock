@@ -1,0 +1,120 @@
+{
+  "title": "Straight-line motion: from a journey to an equation",
+  "version": 1,
+  "voice": "marin",
+  "sources": [
+    {
+      "title": "OpenStax: Motion with Constant Acceleration",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Choose a direction: position, distance and displacement",
+      "formula": "Displacement = final position − initial position",
+      "points": [
+        "Choose an origin and a positive direction.",
+        "Distance counts the complete path.",
+        "Displacement compares only the two endpoints."
+      ],
+      "script": "Welcome to Straight-line Motion. Let us begin with the decision that makes every later equation easier: choose a reference point and a positive direction. Imagine a bus stop at the origin, and call motion to the right positive. A position of plus eighty metres means the bus is eighty metres to the right; minus thirty metres means it is thirty metres to the left. The sign is information, not a judgment. Now watch the difference between distance and displacement. Suppose the bus travels eighty metres right, then thirty metres back. Pause and predict: what are the two answers? The total path is one hundred and ten metres, so that is the distance. The final position is fifty metres to the right of the start, so the displacement is plus fifty metres. In symbols, displacement is final position minus initial position. JEE questions often place these two ideas side by side, so always write both before calculating further. Distance is a scalar path length; displacement is a signed change in position."
+    },
+    {
+      "title": "Speed and velocity: average versus instantaneous",
+      "formula": "Average velocity = displacement ÷ elapsed time",
+      "points": [
+        "Average speed uses total distance.",
+        "Average velocity uses displacement.",
+        "The slope of a position-time graph is instantaneous velocity."
+      ],
+      "script": "Now let us turn position into a rate of motion. Average speed asks, how much path was covered per second? Average velocity asks, how quickly did position change in the chosen direction? Use the same bus journey. The distance was one hundred and ten metres and the displacement was plus fifty metres. If the whole trip took ten seconds, the average speed is eleven metres per second, while the average velocity is plus five metres per second. Neither calculation is wrong; they answer different questions. Here is a common trap: do not average two speeds unless the time intervals are equal. For motion at one instant, we use instantaneous velocity. On a position-time graph, it is the slope of the tangent at that instant. A horizontal graph means position is constant, so velocity is zero. A negative slope means the object is moving in the negative direction. It does not automatically mean the object is slowing down. Keep the graph, the sign convention, and the definition connected."
+    },
+    {
+      "title": "Acceleration changes velocity",
+      "formula": "Average acceleration = (final velocity − initial velocity) ÷ time",
+      "points": [
+        "Acceleration measures change in velocity per unit time.",
+        "Compare velocity and acceleration signs to reason about speed.",
+        "Negative acceleration is not always deceleration."
+      ],
+      "script": "Velocity can change, and acceleration measures how quickly it changes. Imagine a cyclist whose velocity rises from plus two to plus eight metres per second in three seconds. The change is six metres per second, so the average acceleration is plus two metres per second squared. The unit tells us that velocity changes by about two metres per second every second. Now for the sign idea JEE likes to test. If velocity and acceleration have the same sign, the magnitude of velocity increases, so speed increases. If their signs are opposite, speed decreases. But negative acceleration is not automatically slowing down. An object moving left has negative velocity. If its acceleration is also negative, its velocity becomes more negative and its speed increases. At a turning instant, velocity may be zero while acceleration is still non-zero; a ball thrown upward is the familiar example. Before using a formula, ask: what is the direction, what is changing, and over what time interval?"
+    },
+    {
+      "title": "Build the constant-acceleration equations",
+      "formula": "v = u + at   |   s = ut + ½at²   |   v² = u² + 2as",
+      "points": [
+        "These equations require constant acceleration.",
+        "The velocity-time graph is a straight line.",
+        "Area under the velocity-time graph gives displacement."
+      ],
+      "script": "Let us derive the three equations instead of memorising them blindly. When acceleration is constant, velocity changes by the same amount in equal time intervals. Starting with the definition of acceleration, final velocity v equals initial velocity u plus acceleration a multiplied by time t: v equals u plus a t. On a velocity-time graph, constant acceleration gives a straight line. The displacement is the signed area under that line, a trapezium, so s equals the average velocity, u plus v over two, multiplied by t. Substitute v equals u plus a t, and you obtain s equals u t plus one-half a t squared. If time is inconvenient, eliminate it between the two equations to get v squared equals u squared plus two a s. Let us test the process. A cart starts at three metres per second, accelerates at two metres per second squared for four seconds. The final velocity is three plus two times four, or eleven metres per second. The displacement is three times four plus one-half times two times four squared, which is twenty-eight metres. The graph check gives the same answer: average velocity seven times four equals twenty-eight."
+    },
+    {
+      "title": "Read motion graphs and solve a JEE-style problem",
+      "formula": "Velocity-time area: signed area = displacement; area magnitudes = distance",
+      "points": [
+        "Split a velocity-time graph wherever it crosses zero.",
+        "Use signed areas for displacement.",
+        "Use positive magnitudes for total distance."
+      ],
+      "script": "Our final toolkit is graphical reasoning. On a velocity-time graph, area above the time axis contributes positive displacement; area below contributes negative displacement. Add signed areas for displacement, but add the magnitudes when the question asks for distance. Try this JEE-style example. Velocity changes linearly from plus six metres per second at zero seconds to minus two metres per second at four seconds. First find when velocity becomes zero. The slope is minus two metres per second squared, so the crossing occurs after three seconds. The positive triangular area is one-half times three times six: nine metres. The negative triangle is one-half times one times two: one metre in the negative direction. Therefore displacement is nine minus one, or plus eight metres, while distance is nine plus one, or ten metres. Notice why we split the graph: the object reverses direction. For vertical motion, choose your sign convention before using g. If upward is positive, acceleration near Earth is minus nine point eight metres per second squared; use ten only when the problem allows that approximation. You now have a reliable routine: define direction, identify the quantity, choose the equation or graph, pause to estimate, and then check the sign and units."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A bus travels 80 m east and 30 m west. What are its distance and displacement?",
+      "options": [
+        "50 m, 110 m",
+        "110 m, +50 m",
+        "+50 m, 110 m",
+        "110 m, -50 m"
+      ],
+      "answer": 1,
+      "explanation": "Distance is the full path, 110 m. Taking east as positive, displacement is +80 - 30 = +50 m."
+    },
+    {
+      "question": "A position-time graph has a negative slope. What does that show?",
+      "options": [
+        "Negative-direction velocity",
+        "Always negative acceleration",
+        "The object is definitely slowing",
+        "Zero displacement"
+      ],
+      "answer": 0,
+      "explanation": "The slope of a position-time graph is velocity. A negative slope means negative velocity, not necessarily slowing."
+    },
+    {
+      "question": "If velocity and acceleration are both negative, what happens to speed?",
+      "options": [
+        "It increases",
+        "It decreases",
+        "It is zero",
+        "It cannot be known"
+      ],
+      "answer": 0,
+      "explanation": "Acceleration makes the already negative velocity more negative, increasing its magnitude and therefore its speed."
+    },
+    {
+      "question": "Which condition is required for v² = u² + 2as?",
+      "options": [
+        "Constant acceleration",
+        "Zero initial velocity",
+        "Positive velocity",
+        "No change of direction"
+      ],
+      "answer": 0,
+      "explanation": "The constant-acceleration equations apply over an interval where acceleration remains constant."
+    },
+    {
+      "question": "A velocity-time graph crosses the time axis. Why should it be split for distance?",
+      "options": [
+        "Velocity becomes infinite",
+        "The direction changes",
+        "Time stops",
+        "Acceleration becomes zero"
+      ],
+      "answer": 1,
+      "explanation": "The sign of velocity changes, so signed areas cancel for displacement while distance requires adding the magnitudes."
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Wavefronts, Huygens and double-slit interference",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 16",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Huygens's principle",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/1-6-huygenss-principle"
+    },
+    {
+      "title": "OpenStax: Interference mathematics",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/3-2-mathematics-of-interference"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "A wavefront connects equal-phase points",
+      "formula": "Secondary wavelet radius = v delta_t; rays are normal to wavefronts in isotropic media",
+      "points": [
+        "A plane wave has planar wavefronts; a point source gives spherical ones in a uniform medium.",
+        "The advancing envelope of secondary wavelets constructs the new front.",
+        "This construction describes wave propagation, not independent physical lamps everywhere."
+      ],
+      "script": "Hey, welcome back. Ray optics helped us locate images. Now we need wave optics to explain bright and dark bands. A wavefront is a surface joining points with the same phase. A point source in a uniform medium produces spherical wavefronts; far from a source, a small patch can be treated as a plane wavefront. In an isotropic medium, rays point perpendicular to the wavefront in the direction of travel. Huygens's principle treats every point on an existing front as a source of secondary wavelets. After a short time, each wavelet has radius speed times that time. The advancing envelope gives the next wavefront. This is a construction for propagation, not a claim that we have installed a separate physical lamp at every point. For a plane wave in a uniform medium, all those radii are equal, and the new envelope is another parallel plane. In a medium of lower phase speed, the wavelets grow more slowly during the same time interval. That difference will let us derive refraction rather than merely quote Snell's law. It also explains why apertures can spread light into directions that a single straight-ray sketch misses. The full quantitative treatment needs superposition and phase information; Huygens's simple picture is our conceptual starting point, not a complete intensity calculation by itself."
+    },
+    {
+      "title": "The wavefront construction recovers reflection and refraction",
+      "formula": "sin i/sin r = v1/v2 = n2/n1; reflection gives i = r",
+      "points": [
+        "Compare distances traveled during the same time interval.",
+        "Reflection stays in the same medium, so incident and reflected speeds match.",
+        "At a stationary refracting interface, frequency remains the same."
+      ],
+      "script": "Let a tilted plane wavefront reach a flat mirror. One end reaches the mirror first and begins contributing reflected wavelets while the other end is still approaching. During the same time interval, both incident and reflected light travel at the same speed in the same medium. The two construction triangles have equal traveled distances, and geometry gives equal incidence and reflection angles. That is the ray law recovered from wavefronts. For refraction, repeat the construction at a boundary between two media. While the last part of the incident front travels a distance v one times delta t, the first transmitted part travels v two times delta t. The triangles share the relevant diagonal length. Their sine ratio gives sine i over sine r equal to v one over v two. Since v equals c over n, that speed ratio is n two over n one. Rearranging gives Snell's law: n one sine i equals n two sine r. If the second speed is smaller, its front advances less during that time, and the transmitted ray turns toward the normal. This derivation assumes homogeneous isotropic media and angles measured from the boundary normal. Frequency matches at the stationary boundary; the changed speed therefore also changes wavelength. Wavefront geometry and the earlier ray calculations are two compatible descriptions, not rival rules."
+    },
+    {
+      "title": "Coherence keeps the bright and dark pattern stable",
+      "formula": "Phase difference = 2 pi x path difference / wavelength, plus source phase offset",
+      "points": [
+        "Coherent sources have a stable relative phase and matching frequency.",
+        "Young's slits are illuminated from a common source.",
+        "Overlapping light alone does not guarantee observable sustained fringes."
+      ],
+      "script": "When two light waves reach a point, their electric fields add. If their phases line up, the combined field is stronger. If they oppose, it can be weaker or even vanish. A steady pattern needs coherent sources: a stable relative phase and the same frequency in the elementary model. Two ordinary independent lamps do not usually maintain that relationship, so the fast-changing pattern averages away. Young's arrangement illuminates two narrow slits from a common source. The slits act as related secondary sources. For equal initial phase, an extra path length of one wavelength produces an extra phase of two pi and restores alignment. A half-wavelength path difference produces a phase difference of pi and opposition. Constructive interference occurs at path difference m times wavelength. Destructive interference occurs at m plus one half, times wavelength, for nonnegative order labels or corresponding signed positions. If the slits start with a nonzero fixed phase offset, the pattern shifts. For fully interfering, same-polarization waves, intensity is I one plus I two plus twice the square root of their product times cosine of the phase difference. Equal intensities of nine units each give maximum thirty-six and minimum zero. Different intensities of four and nine give maximum twenty-five and minimum one. Unequal amplitudes therefore prevent completely dark minima, even when coherence is good."
+    },
+    {
+      "title": "Young's fringe width turns geometry into a ruler",
+      "formula": "For D much greater than d and small angles: beta = lambda D/d",
+      "points": [
+        "Path difference approximately d y/D on a distant screen.",
+        "Bright positions y_m = m beta for equal initial phase.",
+        "Use the wavelength in the propagation medium."
+      ],
+      "script": "Put the slit separation at d and the screen distance at D. For a point a small vertical distance y from the central line, the path difference is approximately d times y divided by D, when the screen is far away and the angle is small. Set this equal to m wavelengths for a bright fringe. Its position is m times wavelength D over d. Consecutive bright fringes are separated by beta, the fringe width, equal to wavelength D over d. The dark fringes lie halfway between those bright positions for equal initial phase. Let's calculate with wavelength five hundred nanometers, screen distance two meters, and slit separation one millimeter. Convert carefully: wavelength is five times ten to the negative seven meters, and slit separation is ten to the negative three meters. Fringe width is ten to the negative three meters, or one millimeter. The second bright fringe from the center is at two millimeters. Increase screen distance and the fringes spread; increase slit separation and they crowd together. If the entire propagation region is filled by a uniform medium of index one point five, frequency stays fixed and wavelength becomes smaller by that factor. Fringe width becomes about zero point six six seven millimeters. These formulas assume coherent equal-phase illumination and the distant-screen small-angle geometry, not every possible two-source arrangement."
+    },
+    {
+      "title": "A thin sheet changes optical path and shifts the center",
+      "formula": "Optical path difference added = (n-1)t; shift N = (n-1)t/lambda fringes",
+      "points": [
+        "Screen shift magnitude is N beta, where beta is fringe width.",
+        "A thin parallel transparent sheet covers one slit in air.",
+        "For the standard geometry, the central fringe moves toward the covered slit."
+      ],
+      "script": "Now cover one slit with a thin transparent parallel sheet. Light travels through material instead of the same thickness of air. The extra optical path is n minus one, times sheet thickness t, taking air index as one. It is optical path, not simply the physical distance between slit and screen. Suppose the sheet index is one point five and its thickness is two micrometers. The added optical path is one micrometer. With wavelength half a micrometer, that equals two wavelengths, so the pattern shifts by two fringe widths. In our one-millimeter-fringe example, the shift magnitude is two millimeters. Which direction does the central fringe move? Pause and picture the covered slit above the uncovered one. The sheet has added delay to the upper path. To restore equal total optical paths, the observation point moves upward, making the geometric upper path shorter. The center moves toward the covered slit. The fringe spacing itself is unchanged in this ideal thin-sheet setup because the sheet contributes a nearly constant additional path difference. A sheet across the whole apparatus, or a strongly angle-dependent optical path, is a different problem. Finally, don't call a missing dark fringe proof of lost coherence without checking intensities and polarizations. Our checklist is source phase, optical path, wavelength, geometry, and then intensity. Those same habits will carry us into diffraction."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Secondary wavelet radius after time delta_t in a uniform medium is:",
+      "options": [
+        "v delta_t",
+        "v/delta_t",
+        "delta_t/v",
+        "v squared"
+      ],
+      "answer": 0,
+      "explanation": "Distance traveled = speed x time."
+    },
+    {
+      "question": "Huygens refraction gives sin i/sin r equal to:",
+      "options": [
+        "n1/n2",
+        "n2/n1",
+        "n1+n2",
+        "1 always"
+      ],
+      "answer": 1,
+      "explanation": "v1/v2 = (c/n1)/(c/n2) = n2/n1."
+    },
+    {
+      "question": "Two coherent same-polarization beams each have intensity 9 units. Maximum intensity is:",
+      "options": [
+        "18",
+        "9",
+        "36",
+        "0"
+      ],
+      "answer": 2,
+      "explanation": "(sqrt9+sqrt9)^2 = 36."
+    },
+    {
+      "question": "For lambda = 500 nm, D = 2 m, d = 1 mm, fringe width is:",
+      "options": [
+        "1 mm",
+        "2 mm",
+        "0.1 mm",
+        "10 mm"
+      ],
+      "answer": 0,
+      "explanation": "lambda D/d = 0.001 m."
+    },
+    {
+      "question": "The complete propagation region is filled with n = 1.5 without changing geometry or frequency. A 1 mm air fringe width becomes approximately:",
+      "options": [
+        "1.5 mm",
+        "1 mm",
+        "0.667 mm",
+        "3 mm"
+      ],
+      "answer": 2,
+      "explanation": "Wavelength and fringe width divide by n."
+    },
+    {
+      "question": "A sheet n = 1.5, t = 2 micrometers covers one slit; lambda = 0.5 micrometer. Shift magnitude is:",
+      "options": [
+        "1 fringe",
+        "2 fringes",
+        "4 fringes",
+        "0 fringes"
+      ],
+      "answer": 1,
+      "explanation": "N = (n-1)t/lambda = 2."
+    }
+  ]
+}

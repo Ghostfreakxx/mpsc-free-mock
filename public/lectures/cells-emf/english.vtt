@@ -1,0 +1,424 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.520
+Hey, welcome back.
+
+00:00:02.380 --> 00:00:04.660
+Last class we treated a voltage source as ideal.
+
+00:00:05.560 --> 00:00:10.620
+Today we open that model up and ask why a real cell's voltage can fall when it
+
+00:00:10.620 --> 00:00:11.040
+powers a load.
+
+00:00:11.740 --> 00:00:16.220
+First, electromotive force, or E M F, is a historical name.
+
+00:00:16.800 --> 00:00:19.100
+It is not a mechanical force measured in newtons.
+
+00:00:19.520 --> 00:00:23.780
+It describes energy supplied by the source per unit charge, measured in joules
+
+00:00:23.780 --> 00:00:25.500
+per coulomb, which are volts.
+
+00:00:26.300 --> 00:00:31.040
+In a chemical cell, chemical processes maintain charge separation and supply
+
+00:00:31.040 --> 00:00:32.020
+electrical energy.
+
+00:00:33.080 --> 00:00:37.714
+Our introductory circuit model replaces that cell with an ideal E M F in
+
+00:00:37.714 --> 00:00:38.100
+series
+
+00:00:38.100 --> 00:00:40.480
+with an internal resistance, little r.
+
+00:00:41.080 --> 00:00:43.120
+The external resistor is capital R.
+
+00:00:43.800 --> 00:00:47.660
+Both belong to the current path, but they represent different places where
+
+00:00:47.660 --> 00:00:48.560
+energy is transferred.
+
+00:00:49.320 --> 00:00:53.120
+When the external circuit is open, current is zero in this steady model.
+
+00:00:53.120 --> 00:00:59.000
+There is no I r drop, so voltage across the cell's terminals equals its E M F.
+
+00:00:59.000 --> 00:01:03.520
+An ideal voltmeter has infinite resistance and draws no current; a practical
+
+00:01:03.520 --> 00:01:06.900
+high resistance voltmeter approximates that open circuit measurement.
+
+00:01:07.840 --> 00:01:12.140
+Once a load draws current, the terminal voltage can differ from the E M F.
+
+00:01:12.140 --> 00:01:16.020
+We will assume constant E M F and internal resistance during each problem.
+
+00:01:16.780 --> 00:01:20.620
+Real cells change with temperature, state of charge and operating conditions.
+
+00:01:21.380 --> 00:01:25.440
+For JEE, begin by sketching the source and little r as separate series
+
+00:01:25.440 --> 00:01:25.860
+elements.
+
+00:01:26.520 --> 00:01:29.620
+That simple drawing makes the rest of the calculations much easier.
+
+00:01:29.904 --> 00:01:33.745
+Connect a load across the cell, and let conventional current leave its
+
+00:01:33.745 --> 00:01:34.184
+positive
+
+00:01:34.184 --> 00:01:34.464
+terminal.
+
+00:01:34.944 --> 00:01:37.544
+This is discharge: the cell supplies energy.
+
+00:01:38.164 --> 00:01:43.515
+The E M F must account for the voltage drop inside and outside, so E equals I
+
+00:01:43.515 --> 00:01:43.584
+R
+
+00:01:43.584 --> 00:01:45.364
+plus I r.
+
+00:01:45.364 --> 00:01:48.944
+Collect the terms to get current equal to E divided by R plus r.
+
+00:01:49.824 --> 00:01:54.495
+Voltage available at the terminals is E minus I r, and that same voltage
+
+00:01:54.495 --> 00:01:54.884
+equals
+
+00:01:54.884 --> 00:01:56.744
+I R across the external load.
+
+00:01:57.404 --> 00:02:02.464
+Let's use twelve volts of E M F, one ohm of internal resistance and five ohms
+
+00:02:02.464 --> 00:02:03.584
+of external resistance.
+
+00:02:04.664 --> 00:02:09.284
+Total resistance is six ohms, current is two amperes, and terminal voltage is
+
+00:02:09.284 --> 00:02:09.884
+ten volts.
+
+00:02:10.484 --> 00:02:14.524
+The missing two volts are the internal drop, not a disappearance of charge.
+
+00:02:15.504 --> 00:02:17.024
+Now reduce the load resistance.
+
+00:02:17.864 --> 00:02:22.244
+Current rises, which increases the internal drop, so terminal voltage falls in
+
+00:02:22.244 --> 00:02:23.604
+this constant parameter model.
+
+00:02:23.604 --> 00:02:28.624
+At an open circuit, current approaches zero and terminal voltage approaches
+
+00:02:28.624 --> 00:02:29.264
+twelve volts.
+
+00:02:29.964 --> 00:02:33.164
+At a model short circuit, external resistance approaches zero.
+
+00:02:33.844 --> 00:02:38.164
+If internal resistance is positive, current approaches E over r and terminal
+
+00:02:38.164 --> 00:02:39.324
+voltage approaches zero.
+
+00:02:40.044 --> 00:02:43.956
+That is a mathematical limit, not a practical experiment to perform: real
+
+00:02:43.956 --> 00:02:44.224
+cells
+
+00:02:44.224 --> 00:02:46.184
+also have heating and operating limits.
+
+00:02:47.184 --> 00:02:50.664
+In numerical work, distinguish the E M F from the load voltage before
+
+00:02:50.664 --> 00:02:51.224
+substituting.
+
+00:02:51.224 --> 00:02:55.924
+Using twelve volts across the five ohm load here would incorrectly ignore the
+
+00:02:55.924 --> 00:02:56.664
+internal resistance.
+
+00:02:57.168 --> 00:02:59.128
+Now reverse the energy transfer.
+
+00:03:00.068 --> 00:03:03.988
+An external source can drive current into the positive terminal of a
+
+00:03:03.988 --> 00:03:04.668
+rechargeable cell.
+
+00:03:05.408 --> 00:03:06.688
+We call this charging.
+
+00:03:07.468 --> 00:03:11.237
+With I defined as the positive magnitude of that charging current, the
+
+00:03:11.237 --> 00:03:11.668
+terminal
+
+00:03:11.668 --> 00:03:15.648
+voltage required is E plus I r.
+
+00:03:15.648 --> 00:03:20.188
+The source must overcome both the cell's opposing E M F and the internal
+
+00:03:20.188 --> 00:03:21.128
+resistive drop.
+
+00:03:21.828 --> 00:03:27.068
+For a cell with E M F twelve volts and internal resistance one ohm, a charging
+
+00:03:27.068 --> 00:03:31.788
+current of one ampere requires thirteen volts at its terminals in our model.
+
+00:03:32.268 --> 00:03:33.988
+Don't memorize minus for a cell forever.
+
+00:03:34.868 --> 00:03:38.668
+Draw the current direction and state whether the cell supplies or absorbs
+
+00:03:38.668 --> 00:03:39.108
+energy.
+
+00:03:40.148 --> 00:03:43.988
+Alternatively, define signed current positive when it leaves the positive
+
+00:03:43.988 --> 00:03:44.288
+terminal.
+
+00:03:45.108 --> 00:03:50.488
+Then V equals E minus I r handles both cases, because charging current is
+
+00:03:50.488 --> 00:03:51.688
+negative in that convention.
+
+00:03:52.188 --> 00:03:57.348
+Here is another JEE tool: plot terminal voltage vertically against discharge
+
+00:03:57.348 --> 00:03:58.168
+current horizontally.
+
+00:03:59.088 --> 00:04:04.088
+The equation is a straight line with vertical intercept E and slope minus r,
+
+00:04:04.868 --> 00:04:06.488
+assuming those parameters remain constant.
+
+00:04:07.388 --> 00:04:11.568
+Suppose measurements are ten volts at two amperes and eight volts at four
+
+00:04:11.568 --> 00:04:12.468
+amperes.
+
+00:04:12.568 --> 00:04:17.148
+The slope is minus one volt per ampere, so internal resistance is one ohm.
+
+00:04:18.128 --> 00:04:20.828
+Substituting either point gives E M F twelve volts.
+
+00:04:21.548 --> 00:04:23.948
+Pause and check the intercept against both readings.
+
+00:04:24.688 --> 00:04:28.208
+Two measurements can reveal the hidden source model, not just the terminal
+
+00:04:28.208 --> 00:04:29.268
+voltage at one load.
+
+00:04:29.568 --> 00:04:33.908
+Let's follow the energy using the same twelve volt cell, one ohm internal
+
+00:04:33.908 --> 00:04:35.748
+resistance and five ohm load.
+
+00:04:36.348 --> 00:04:37.748
+Current is two amperes.
+
+00:04:38.528 --> 00:04:41.168
+Source power is E times I, or twenty four watts.
+
+00:04:42.088 --> 00:04:46.548
+Load power is I squared R, giving twenty watts, while internal heating is I
+
+00:04:46.548 --> 00:04:48.008
+squared r, giving four watts.
+
+00:04:48.328 --> 00:04:50.388
+The two outputs add to the source power.
+
+00:04:50.988 --> 00:04:56.228
+The fraction reaching the load is R divided by R plus r, here five sixths, or
+
+00:04:56.228 --> 00:04:57.708
+about eighty three point three percent.
+
+00:04:58.288 --> 00:05:02.308
+Now ask a different question: which load receives the greatest power for fixed
+
+00:05:02.308 --> 00:05:03.568
+E and positive r?
+
+00:05:04.248 --> 00:05:09.008
+Substitute current into load power to get E squared R divided by R plus r, all
+
+00:05:09.008 --> 00:05:09.248
+squared.
+
+00:05:10.048 --> 00:05:14.568
+Rewrite the denominator divided by R as R plus two r plus r squared over R.
+
+00:05:15.208 --> 00:05:20.128
+The sum R plus r squared over R is at least two r, with equality when R equals
+
+00:05:20.128 --> 00:05:20.488
+r.
+
+00:05:21.048 --> 00:05:25.108
+Therefore load power is greatest at resistance matching: capital R equals
+
+00:05:25.108 --> 00:05:25.608
+little r.
+
+00:05:25.608 --> 00:05:30.728
+Our cell then has current six amperes, terminal voltage six volts and load
+
+00:05:30.728 --> 00:05:31.888
+power thirty six watts.
+
+00:05:32.668 --> 00:05:36.401
+Internal heating is also thirty six watts, so efficiency is only fifty
+
+00:05:36.401 --> 00:05:36.828
+percent.
+
+00:05:37.468 --> 00:05:41.128
+A very large load resistance gives high efficiency but very small power.
+
+00:05:41.768 --> 00:05:42.688
+These are different goals.
+
+00:05:43.268 --> 00:05:47.537
+For JEE, identify whether the question asks for greatest current, greatest
+
+00:05:47.537 --> 00:05:47.768
+load
+
+00:05:47.768 --> 00:05:49.248
+power or greatest efficiency.
+
+00:05:49.248 --> 00:05:50.088
+The same circuit can give three different limiting answers.
+
+00:05:50.088 --> 00:05:53.808
+Finally, let's combine cells while keeping the assumptions visible.
+
+00:05:54.708 --> 00:05:58.528
+Put n identical cells in series with their E M F directions aiding.
+
+00:05:59.468 --> 00:06:04.688
+Their E M Fs add to n E, and internal resistances add to n r.
+
+00:06:04.688 --> 00:06:09.248
+Current through a load R is n E divided by R plus n r.
+
+00:06:09.248 --> 00:06:12.908
+Reversing a cell changes its signed E M F contribution, while its internal
+
+00:06:12.908 --> 00:06:14.088
+resistance still adds.
+
+00:06:14.788 --> 00:06:18.928
+Now put n identical cells in parallel with corresponding polarities joined.
+
+00:06:18.928 --> 00:06:23.388
+Their equivalent E M F stays E; it does not multiply by n.
+
+00:06:24.188 --> 00:06:27.328
+Their equivalent internal resistance becomes r divided by n.
+
+00:06:28.348 --> 00:06:31.828
+Symmetry means they share the delivered current equally in this identical cell
+
+00:06:31.828 --> 00:06:32.128
+model.
+
+00:06:33.188 --> 00:06:36.954
+Compare two cells, each with E M F one point five volts and internal
+
+00:06:36.954 --> 00:06:37.508
+resistance
+
+00:06:37.508 --> 00:06:39.828
+half an ohm, supplying a two ohm load.
+
+00:06:40.768 --> 00:06:45.088
+Aiding series gives three volts with one ohm internal resistance, so load
+
+00:06:45.088 --> 00:06:47.888
+current is one ampere and load voltage is two volts.
+
+00:06:48.588 --> 00:06:53.048
+Parallel gives one point five volts with a quarter ohm internal resistance, so
+
+00:06:53.048 --> 00:06:56.895
+load current is two thirds of an ampere and load voltage is four thirds of a
+
+00:06:56.895 --> 00:06:57.148
+volt.
+
+00:06:57.908 --> 00:07:01.668
+Series is better for this particular load; it is not universally better.
+
+00:07:02.468 --> 00:07:06.253
+For two identical cells, the currents are equal when external resistance
+
+00:07:06.253 --> 00:07:06.568
+equals
+
+00:07:06.568 --> 00:07:07.868
+the resistance of one cell.
+
+00:07:08.828 --> 00:07:12.408
+Larger loads favor series, and smaller positive loads favor parallel.
+
+00:07:13.068 --> 00:07:17.768
+Unequal E M Fs in parallel can drive circulating current, so do not apply the
+
+00:07:17.768 --> 00:07:19.028
+identical cell formula there.
+
+00:07:19.028 --> 00:07:19.536
+We will use Kirchhoff laws for those broader circuits.

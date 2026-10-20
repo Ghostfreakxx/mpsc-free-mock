@@ -1,0 +1,424 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.400
+Hey, welcome back.
+
+00:00:01.920 --> 00:00:05.140
+We have simplified resistor networks and modeled real cells.
+
+00:00:05.660 --> 00:00:09.319
+Now we need a method that still works when several sources and branches
+
+00:00:09.319 --> 00:00:09.680
+prevent
+
+00:00:09.680 --> 00:00:11.580
+easy series or parallel reduction.
+
+00:00:11.580 --> 00:00:14.540
+Kirchhoff's first law is the junction rule.
+
+00:00:15.300 --> 00:00:19.680
+In a steady circuit, charge does not keep accumulating at a junction, so total
+
+00:00:19.680 --> 00:00:21.800
+current entering equals total current leaving.
+
+00:00:22.500 --> 00:00:24.580
+This is charge conservation in action.
+
+00:00:25.340 --> 00:00:29.420
+Suppose five amperes enters a junction, while two amperes leaves along one
+
+00:00:29.420 --> 00:00:29.680
+path.
+
+00:00:30.260 --> 00:00:32.780
+The remaining outgoing path carries three amperes.
+
+00:00:33.420 --> 00:00:35.140
+No current has been consumed at the node.
+
+00:00:35.940 --> 00:00:39.740
+Before solving an unfamiliar circuit, choose a current arrow for each branch.
+
+00:00:40.400 --> 00:00:41.840
+You are allowed to guess its direction.
+
+00:00:42.420 --> 00:00:46.220
+The arrow defines a positive reference; it does not guarantee the physical
+
+00:00:46.220 --> 00:00:46.620
+result.
+
+00:00:47.280 --> 00:00:52.040
+If an equation returns minus one ampere, actual current is one ampere opposite
+
+00:00:52.040 --> 00:00:52.520
+your arrow.
+
+00:00:53.260 --> 00:00:56.000
+Keep that negative sign when checking the original equations.
+
+00:00:56.600 --> 00:01:00.140
+Changing arrows halfway through without rewriting the equations creates
+
+00:01:00.140 --> 00:01:00.640
+confusion.
+
+00:01:01.620 --> 00:01:05.360
+We assume steady direct current and ideal connecting wires in this class.
+
+00:01:06.120 --> 00:01:09.820
+For a connected circuit with several nodes, some junction equations repeat the
+
+00:01:09.820 --> 00:01:10.520
+same information.
+
+00:01:11.520 --> 00:01:14.940
+Usually one fewer independent junction equation than the number of nodes is
+
+00:01:14.940 --> 00:01:15.260
+sufficient.
+
+00:01:16.280 --> 00:01:19.957
+Begin by tracing uninterrupted wires into nodes, then write the current
+
+00:01:19.957 --> 00:01:20.320
+balance
+
+00:01:20.320 --> 00:01:21.620
+at each independent junction.
+
+00:01:22.020 --> 00:01:26.080
+A complicated drawing becomes manageable when every current has a clear
+
+00:01:26.080 --> 00:01:26.800
+reference direction.
+
+00:01:27.120 --> 00:01:29.160
+Kirchhoff's second law is the loop rule.
+
+00:01:29.680 --> 00:01:31.920
+Walk around a closed path and return to the same point.
+
+00:01:32.400 --> 00:01:36.160
+In our steady circuit model, the total signed change in electric potential is
+
+00:01:36.160 --> 00:01:36.480
+zero.
+
+00:01:37.200 --> 00:01:40.760
+Sources supply energy per charge, and resistors transfer it into internal
+
+00:01:40.760 --> 00:01:41.160
+energy.
+
+00:01:41.760 --> 00:01:45.360
+Choose a direction to walk around a loop; clockwise or counterclockwise both
+
+00:01:45.360 --> 00:01:45.660
+work.
+
+00:01:46.200 --> 00:01:48.460
+This walking direction is separate from the current arrows.
+
+00:01:49.100 --> 00:01:53.260
+Across a resistor, walking with its reference current gives minus I R, a
+
+00:01:53.260 --> 00:01:53.840
+potential drop.
+
+00:01:54.580 --> 00:01:57.100
+Walking against the reference arrow gives plus I R.
+
+00:01:57.100 --> 00:02:01.140
+Across an ideal source, walking from its negative terminal to its positive
+
+00:02:01.140 --> 00:02:02.480
+terminal gives plus E.
+
+00:02:03.340 --> 00:02:05.680
+Walking from positive to negative gives minus E.
+
+00:02:06.300 --> 00:02:09.600
+Internal resistance is another resistor and follows the same resistor rule.
+
+00:02:10.540 --> 00:02:14.452
+Try one source of twelve volts, internal resistance one ohm and load five
+
+00:02:14.452 --> 00:02:14.720
+ohms.
+
+00:02:15.600 --> 00:02:18.294
+Walking through the source from negative to positive, then with current
+
+00:02:18.294 --> 00:02:18.560
+through
+
+00:02:18.560 --> 00:02:23.440
+both resistances, gives twelve minus I times one minus I times five equals
+
+00:02:23.440 --> 00:02:23.740
+zero.
+
+00:02:23.740 --> 00:02:25.500
+Current is two amperes.
+
+00:02:26.260 --> 00:02:30.020
+Reverse your entire walk and every sign reverses; the current solution remains
+
+00:02:30.020 --> 00:02:30.580
+unchanged.
+
+00:02:31.080 --> 00:02:32.880
+That is a useful consistency check.
+
+00:02:33.680 --> 00:02:37.740
+This zero sum form assumes no changing magnetic flux supplies an unaccounted
+
+00:02:37.740 --> 00:02:38.600
+induced EMF.
+
+00:02:39.400 --> 00:02:41.220
+Later, induction will extend the model.
+
+00:02:41.720 --> 00:02:46.300
+For now, mark polarities, draw current arrows and write each potential change
+
+00:02:46.300 --> 00:02:47.620
+in the order you encounter it.
+
+00:02:47.832 --> 00:02:50.752
+Let's set up an original worked problem carefully.
+
+00:02:51.412 --> 00:02:55.792
+There are two nodes, A at the top and B at the bottom, with three branches
+
+00:02:55.792 --> 00:02:56.432
+between them.
+
+00:02:56.992 --> 00:03:01.046
+The left branch has a twelve volt ideal source and a two ohm series
+
+00:03:01.046 --> 00:03:01.712
+resistance.
+
+00:03:02.312 --> 00:03:06.712
+The right branch has a six volt ideal source and a two ohm series resistance.
+
+00:03:07.412 --> 00:03:09.852
+Both sources have their positive terminal toward A.
+
+00:03:10.272 --> 00:03:12.492
+The middle branch is a four ohm load.
+
+00:03:13.252 --> 00:03:17.832
+Choose I one upward from B to A in the left branch, I two upward in the right
+
+00:03:17.832 --> 00:03:20.332
+branch, and I three downward through the load.
+
+00:03:20.852 --> 00:03:24.812
+At node A, write I one plus I two equals I three.
+
+00:03:24.812 --> 00:03:28.665
+Now walk from B upward through the left source branch and downward through the
+
+00:03:28.665 --> 00:03:28.912
+load.
+
+00:03:29.472 --> 00:03:33.872
+The source raises potential by twelve, its series resistor lowers it by two I
+
+00:03:33.872 --> 00:03:36.852
+one, and the load lowers it by four I three.
+
+00:03:36.852 --> 00:03:37.632
+Their sum is zero.
+
+00:03:38.172 --> 00:03:42.692
+For the right loop, the same walk gives six minus two I two minus four I three
+
+00:03:42.692 --> 00:03:43.452
+equals zero.
+
+00:03:43.792 --> 00:03:47.212
+We have three unknown branch currents and three independent equations.
+
+00:03:47.812 --> 00:03:51.592
+The loop across the two source branches would add no new information; it
+
+00:03:51.592 --> 00:03:53.872
+follows by subtracting these two loop equations.
+
+00:03:54.832 --> 00:03:59.072
+Pause before solving and check the picture: source polarities, resistor values
+
+00:03:59.212 --> 00:04:01.932
+and chosen current arrows must match every term.
+
+00:04:02.352 --> 00:04:06.332
+The six volt branch may turn out to absorb energy rather than supply it.
+
+00:04:06.332 --> 00:04:06.600
+Our signed equations will tell us.
+
+00:04:06.600 --> 00:04:09.520
+Let V be the potential of A relative to B.
+
+00:04:10.200 --> 00:04:11.980
+The load current is V divided by four.
+
+00:04:12.500 --> 00:04:16.780
+The left source current is twelve minus V divided by two, and the right source
+
+00:04:16.780 --> 00:04:19.380
+current is six minus V divided by two.
+
+00:04:20.380 --> 00:04:25.040
+Substituting into the junction equation gives nine minus V equals V over four.
+
+00:04:25.740 --> 00:04:29.060
+Multiply by four: thirty six minus four V equals V.
+
+00:04:29.880 --> 00:04:31.740
+Therefore V is seven point two volts.
+
+00:04:31.740 --> 00:04:36.680
+I one becomes two point four amperes, I two becomes minus zero point six
+
+00:04:36.680 --> 00:04:39.540
+amperes, and I three becomes one point eight amperes.
+
+00:04:40.380 --> 00:04:44.780
+The negative result is useful information: actual current in the six volt
+
+00:04:44.780 --> 00:04:48.300
+branch travels from A to B, opposite our upward reference arrow.
+
+00:04:49.380 --> 00:04:52.960
+Current enters that source's positive terminal, so the ideal six volt source
+
+00:04:52.960 --> 00:04:53.720
+absorbs energy.
+
+00:04:54.580 --> 00:04:58.198
+Check the junction: two point four minus zero point six equals one point
+
+00:04:58.198 --> 00:04:58.500
+eight.
+
+00:04:59.140 --> 00:05:02.660
+Check the left loop: twelve minus four point eight minus seven point two is
+
+00:05:02.660 --> 00:05:02.900
+zero.
+
+00:05:03.400 --> 00:05:06.960
+Check the right: six plus one point two minus seven point two is zero.
+
+00:05:07.800 --> 00:05:08.700
+Now verify power.
+
+00:05:08.880 --> 00:05:11.680
+The twelve volt source supplies twenty eight point eight watts.
+
+00:05:12.260 --> 00:05:14.680
+The six volt source absorbs three point six watts.
+
+00:05:15.540 --> 00:05:19.020
+Resistor heating totals twenty five point two watts: eleven point five two in
+
+00:05:19.020 --> 00:05:22.880
+the left branch, zero point seven two in the right, and twelve point nine six
+
+00:05:22.880 --> 00:05:23.440
+in the load.
+
+00:05:24.400 --> 00:05:26.280
+Absorption plus heating equals the supplied power.
+
+00:05:26.920 --> 00:05:29.448
+A negative current never makes resistor heating negative; use I squared R.
+
+00:05:29.448 --> 00:05:33.368
+Let's finish with a routine you can carry into a JEE problem.
+
+00:05:34.328 --> 00:05:36.488
+First label nodes by tracing ideal wires.
+
+00:05:37.568 --> 00:05:41.608
+Next mark every source polarity and choose one reference current per branch.
+
+00:05:42.508 --> 00:05:45.608
+Write enough independent junction and loop equations for the unknowns.
+
+00:05:46.508 --> 00:05:50.088
+Solve the equations, interpret signs, and check the original circuit.
+
+00:05:50.608 --> 00:05:55.188
+A branch containing a source cannot generally be merged with another branch by
+
+00:05:55.188 --> 00:05:57.268
+using only the parallel resistor formula.
+
+00:05:57.828 --> 00:06:01.628
+Sources maintain their own potential rises and can oppose one another.
+
+00:06:02.528 --> 00:06:05.488
+Include each source and each internal resistance explicitly.
+
+00:06:06.868 --> 00:06:11.388
+For an ideal ammeter, resistance is zero; placing it between two nodes can
+
+00:06:11.388 --> 00:06:13.528
+change the circuit by joining their potentials.
+
+00:06:14.348 --> 00:06:18.310
+For an ideal voltmeter, resistance is infinite and no current flows through
+
+00:06:18.310 --> 00:06:18.468
+its
+
+00:06:18.468 --> 00:06:18.768
+branch.
+
+00:06:19.468 --> 00:06:23.048
+A voltmeter reading of zero does not automatically mean there is no current
+
+00:06:23.048 --> 00:06:23.528
+elsewhere.
+
+00:06:24.188 --> 00:06:26.368
+Keep meter connections in the diagram while reasoning.
+
+00:06:26.368 --> 00:06:30.788
+If you get a negative branch current, retain it in the equations and describe
+
+00:06:30.788 --> 00:06:31.828
+the actual direction.
+
+00:06:32.888 --> 00:06:36.488
+Check resistor heating with current squared times resistance, and determine
+
+00:06:36.488 --> 00:06:40.148
+source power from whether current leaves or enters the positive terminal.
+
+00:06:41.128 --> 00:06:44.508
+More elaborate circuits use the same method with more independent equations.
+
+00:06:45.388 --> 00:06:49.068
+Bridges will be our next application, where equal potentials can make a
+
+00:06:49.068 --> 00:06:50.428
+connecting branch carry zero current.
+
+00:06:50.728 --> 00:06:54.648
+For today's class, the important skill is not guessing which source wins.
+
+00:06:54.928 --> 00:06:59.328
+It is translating a clearly labeled circuit into consistent signed equations
+
+00:06:59.328 --> 00:07:01.548
+and letting those equations answer the question.

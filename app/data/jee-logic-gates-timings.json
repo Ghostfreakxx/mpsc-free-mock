@@ -1,0 +1,885 @@
+{
+  "duration": 447.9600000000125,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 86.76000000000239
+    },
+    {
+      "start": 86.76000000000239,
+      "end": 182.32800000000512
+    },
+    {
+      "start": 182.32800000000512,
+      "end": 264.19200000000734
+    },
+    {
+      "start": 264.19200000000734,
+      "end": 354.45600000000985
+    },
+    {
+      "start": 354.45600000000985,
+      "end": 447.9600000000125
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.5199999809265137,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.9199999570846558,
+      "end": 4.980000019073486,
+      "text": "Our last classes followed voltages and currents continuously.",
+      "chapter": 0
+    },
+    {
+      "start": 5.78000020980835,
+      "end": 9.579999923706055,
+      "text": "Digital logic groups signals into two states instead: zero and one.",
+      "chapter": 0
+    },
+    {
+      "start": 10.079999923706055,
+      "end": 14.579999923706055,
+      "text": "Under positive logic, a low input represents zero and a high input represents",
+      "chapter": 0
+    },
+    {
+      "start": 14.579999923706055,
+      "end": 14.960000038146973,
+      "text": "one.",
+      "chapter": 0
+    },
+    {
+      "start": 15.520000457763672,
+      "end": 18.020000457763672,
+      "text": "Real circuits use specified voltage ranges for those states.",
+      "chapter": 0
+    },
+    {
+      "start": 18.540000915527344,
+      "end": 22.920000076293945,
+      "text": "One is not universally exactly five volts, and an intermediate voltage is not",
+      "chapter": 0
+    },
+    {
+      "start": 22.920000076293945,
+      "end": 24.760000228881836,
+      "text": "automatically a valid third logic state.",
+      "chapter": 0
+    },
+    {
+      "start": 25.040000915527344,
+      "end": 29.540000915527344,
+      "text": "For this lesson we use ideal stable binary inputs and ignore propagation",
+      "chapter": 0
+    },
+    {
+      "start": 29.540000915527344,
+      "end": 29.940000534057617,
+      "text": "delays.",
+      "chapter": 0
+    },
+    {
+      "start": 30.65999984741211,
+      "end": 34.34000015258789,
+      "text": "A logic gate maps input states to an output state according to a rule.",
+      "chapter": 0
+    },
+    {
+      "start": 35.18000030517578,
+      "end": 36.900001525878906,
+      "text": "Start with the simplest rule: NOT.",
+      "chapter": 0
+    },
+    {
+      "start": 37.380001068115234,
+      "end": 39.2400016784668,
+      "text": "It has one input and reverses it.",
+      "chapter": 0
+    },
+    {
+      "start": 39.79999923706055,
+      "end": 43.099998474121094,
+      "text": "Input zero gives output one; input one gives output zero.",
+      "chapter": 0
+    },
+    {
+      "start": 43.599998474121094,
+      "end": 47.41999816894531,
+      "text": "The output is often written as A with a bar above it, read as not A.",
+      "chapter": 0
+    },
+    {
+      "start": 47.900001525878906,
+      "end": 51.279998779296875,
+      "text": "In a gate symbol, a little circle, or bubble, indicates inversion.",
+      "chapter": 0
+    },
+    {
+      "start": 51.84000015258789,
+      "end": 55.939998626708984,
+      "text": "It is a notation mark, not an extra external component that must be drawn as",
+      "chapter": 0
+    },
+    {
+      "start": 55.939998626708984,
+      "end": 56.91999816894531,
+      "text": "another separate gate.",
+      "chapter": 0
+    },
+    {
+      "start": 57.7599983215332,
+      "end": 60.599998474121094,
+      "text": "Picture an indicator that should turn on when a condition is absent.",
+      "chapter": 0
+    },
+    {
+      "start": 61.279998779296875,
+      "end": 64.66000366210938,
+      "text": "If A means the condition is present, NOT A means it is absent.",
+      "chapter": 0
+    },
+    {
+      "start": 65.36000061035156,
+      "end": 69.41999816894531,
+      "text": "Now pause: if the input changes from zero to one, what happens to the ideal",
+      "chapter": 0
+    },
+    {
+      "start": 69.41999816894531,
+      "end": 69.72000122070312,
+      "text": "output?",
+      "chapter": 0
+    },
+    {
+      "start": 69.9800033569336,
+      "end": 71.94000244140625,
+      "text": "It changes from one to zero.",
+      "chapter": 0
+    },
+    {
+      "start": 72.54000091552734,
+      "end": 76.30000305175781,
+      "text": "A truth table simply lists every input possibility and the corresponding",
+      "chapter": 0
+    },
+    {
+      "start": 76.30000305175781,
+      "end": 76.68000030517578,
+      "text": "output.",
+      "chapter": 0
+    },
+    {
+      "start": 77.31999969482422,
+      "end": 78.68000030517578,
+      "text": "One input needs two rows.",
+      "chapter": 0
+    },
+    {
+      "start": 79.23999786376953,
+      "end": 81.54000091552734,
+      "text": "Two independent binary inputs need four rows.",
+      "chapter": 0
+    },
+    {
+      "start": 82.0199966430664,
+      "end": 85.55589626996945,
+      "text": "We will use that complete row list rather than trusting one convenient",
+      "chapter": 0
+    },
+    {
+      "start": 85.55589626996945,
+      "end": 85.95999908447266,
+      "text": "example.",
+      "chapter": 0
+    },
+    {
+      "start": 86.76000000000239,
+      "end": 88.600000033381,
+      "text": "Let's add a second input.",
+      "chapter": 1
+    },
+    {
+      "start": 89.40000010490657,
+      "end": 93.37999988556147,
+      "text": "An AND gate produces one only when both inputs are one.",
+      "chapter": 1
+    },
+    {
+      "start": 94.37999988556147,
+      "end": 98.55230800042025,
+      "text": "Think of a device that may operate only when permission is present and a",
+      "chapter": 1
+    },
+    {
+      "start": 98.55230800042025,
+      "end": 98.90000034332515,
+      "text": "safety",
+      "chapter": 1
+    },
+    {
+      "start": 98.90000034332515,
+      "end": 100.02000022888423,
+      "text": "condition is satisfied.",
+      "chapter": 1
+    },
+    {
+      "start": 100.49999977112056,
+      "end": 104.44000030517817,
+      "text": "If either condition is zero, the AND output is zero.",
+      "chapter": 1
+    },
+    {
+      "start": 105.139999160769,
+      "end": 110.60000015259028,
+      "text": "In row order zero zero, zero one, one zero, one one, the outputs are",
+      "chapter": 1
+    },
+    {
+      "start": 110.60000015259028,
+      "end": 112.44000030517817,
+      "text": "zero, zero, zero, one.",
+      "chapter": 1
+    },
+    {
+      "start": 113.28000045776606,
+      "end": 117.12000061035396,
+      "text": "An OR gate instead gives one when at least one input is one.",
+      "chapter": 1
+    },
+    {
+      "start": 118.36000038147212,
+      "end": 121.94641112401175,
+      "text": "Imagine an indicator that turns on if either of two independent sensors",
+      "chapter": 1
+    },
+    {
+      "start": 121.94641112401175,
+      "end": 122.30000091552974,
+      "text": "reports",
+      "chapter": 1
+    },
+    {
+      "start": 122.30000091552974,
+      "end": 122.85999847412349,
+      "text": "a condition.",
+      "chapter": 1
+    },
+    {
+      "start": 123.57999969482661,
+      "end": 127.23999954223872,
+      "text": "Its outputs in the same row order are zero, one, one, one.",
+      "chapter": 1
+    },
+    {
+      "start": 128.19999862671136,
+      "end": 130.28000045776605,
+      "text": "Both inputs being one still gives one.",
+      "chapter": 1
+    },
+    {
+      "start": 130.8200013732934,
+      "end": 134.4800012207055,
+      "text": "This is inclusive OR, not the different exclusive OR operation.",
+      "chapter": 1
+    },
+    {
+      "start": 135.03999877929925,
+      "end": 138.50000167846918,
+      "text": "A useful notation trap: Boolean plus means OR.",
+      "chapter": 1
+    },
+    {
+      "start": 139.30000091552972,
+      "end": 143.85999847412347,
+      "text": "One plus one in this algebra is one, not the ordinary arithmetic result two.",
+      "chapter": 1
+    },
+    {
+      "start": 144.55999923706293,
+      "end": 147.71999908447503,
+      "text": "A dot means AND, so one dot zero is zero.",
+      "chapter": 1
+    },
+    {
+      "start": 148.78000045776605,
+      "end": 151.89999938965082,
+      "text": "You are combining truth states, not adding measured voltages.",
+      "chapter": 1
+    },
+    {
+      "start": 153.02000213623285,
+      "end": 153.77999664306878,
+      "text": "Pause for a comparison.",
+      "chapter": 1
+    },
+    {
+      "start": 154.9800012207055,
+      "end": 155.89999938965082,
+      "text": "Inputs are one and zero.",
+      "chapter": 1
+    },
+    {
+      "start": 156.27999664306878,
+      "end": 157.12000061035394,
+      "text": "What are the two outputs?",
+      "chapter": 1
+    },
+    {
+      "start": 157.8800027465844,
+      "end": 160.02000213623285,
+      "text": "AND gives zero; OR gives one.",
+      "chapter": 1
+    },
+    {
+      "start": 160.63999725342035,
+      "end": 164.95999694824457,
+      "text": "Testing only the one one row cannot distinguish these two gates because both",
+      "chapter": 1
+    },
+    {
+      "start": 164.95999694824457,
+      "end": 165.74000335693597,
+      "text": "give one there.",
+      "chapter": 1
+    },
+    {
+      "start": 166.6799981689477,
+      "end": 167.9999978637719,
+      "text": "A full truth table can.",
+      "chapter": 1
+    },
+    {
+      "start": 168.81999755859613,
+      "end": 172.8800027465844,
+      "text": "When a JEE question shows switches as an analogy, identify whether both",
+      "chapter": 1
+    },
+    {
+      "start": 172.8800027465844,
+      "end": 175.44000030517816,
+      "text": "conditions are required or either condition suffices.",
+      "chapter": 1
+    },
+    {
+      "start": 176.02000213623285,
+      "end": 180.38538763193222,
+      "text": "The meaning of a gate comes from its rule, not from the everyday wording of",
+      "chapter": 1
+    },
+    {
+      "start": 180.38538763193222,
+      "end": 180.5600030517602,
+      "text": "the",
+      "chapter": 1
+    },
+    {
+      "start": 180.5600030517602,
+      "end": 181.8800027465844,
+      "text": "word or in isolation.",
+      "chapter": 1
+    },
+    {
+      "start": 182.32800000000512,
+      "end": 186.72800009537255,
+      "text": "Now we build two very important gates by adding a NOT operation to the whole",
+      "chapter": 2
+    },
+    {
+      "start": 186.72800009537255,
+      "end": 187.06799977112328,
+      "text": "output.",
+      "chapter": 2
+    },
+    {
+      "start": 188.02799980927026,
+      "end": 189.00799982834374,
+      "text": "NAND means NOT AND.",
+      "chapter": 2
+    },
+    {
+      "start": 189.74800007629906,
+      "end": 192.8480004577688,
+      "text": "First evaluate the AND result, then complement it.",
+      "chapter": 2
+    },
+    {
+      "start": 192.88800041962182,
+      "end": 198.8379997520498,
+      "text": "The NAND outputs for zero zero, zero one, one zero, one one are one, one,",
+      "chapter": 2
+    },
+    {
+      "start": 198.8379997520498,
+      "end": 199.8879994659475,
+      "text": "one, zero.",
+      "chapter": 2
+    },
+    {
+      "start": 199.8879994659475,
+      "end": 202.56799977112328,
+      "text": "Its only zero occurs when both inputs are one.",
+      "chapter": 2
+    },
+    {
+      "start": 203.62799923706567,
+      "end": 204.668000152593,
+      "text": "NOR means NOT OR.",
+      "chapter": 2
+    },
+    {
+      "start": 205.24800007629906,
+      "end": 207.8480004577688,
+      "text": "First evaluate OR, then complement the result.",
+      "chapter": 2
+    },
+    {
+      "start": 207.8480004577688,
+      "end": 212.28799908447778,
+      "text": "Its outputs in that same row order are one, zero, zero, zero.",
+      "chapter": 2
+    },
+    {
+      "start": 212.8480004577688,
+      "end": 215.14799969482934,
+      "text": "Its only one occurs when both inputs are zero.",
+      "chapter": 2
+    },
+    {
+      "start": 215.68800061035668,
+      "end": 217.62799923706567,
+      "text": "The placement of the bar or brackets matters.",
+      "chapter": 2
+    },
+    {
+      "start": 218.12799923706567,
+      "end": 222.2679986267141,
+      "text": "Not the whole expression A AND B is different from simply saying not A AND not",
+      "chapter": 2
+    },
+    {
+      "start": 222.2679986267141,
+      "end": 222.52800076294457,
+      "text": "B.",
+      "chapter": 2
+    },
+    {
+      "start": 223.107998779302,
+      "end": 228.80799954224145,
+      "text": "For example, with A equal to one and B equal to zero, NAND is one, but not A",
+      "chapter": 2
+    },
+    {
+      "start": 228.80799954224145,
+      "end": 229.94799893188988,
+      "text": "AND not B is zero.",
+      "chapter": 2
+    },
+    {
+      "start": 230.18800061035668,
+      "end": 232.58799832153832,
+      "text": "That is a quick counterexample to a common error.",
+      "chapter": 2
+    },
+    {
+      "start": 233.14799969482934,
+      "end": 236.67025025177514,
+      "text": "In a drawing, NAND looks like an AND gate with an inversion bubble at the",
+      "chapter": 2
+    },
+    {
+      "start": 236.67025025177514,
+      "end": 237.0080003051809,
+      "text": "output.",
+      "chapter": 2
+    },
+    {
+      "start": 237.0080003051809,
+      "end": 239.5080003051809,
+      "text": "NOR looks like OR with that output bubble.",
+      "chapter": 2
+    },
+    {
+      "start": 240.28799908447778,
+      "end": 244.107998779302,
+      "text": "Think for a moment: how can you distinguish NAND from NOR using just one input",
+      "chapter": 2
+    },
+    {
+      "start": 244.107998779302,
+      "end": 244.3480004577688,
+      "text": "pair?",
+      "chapter": 2
+    },
+    {
+      "start": 244.96799938965356,
+      "end": 245.70800106812035,
+      "text": "Choose one zero.",
+      "chapter": 2
+    },
+    {
+      "start": 246.4080018310598,
+      "end": 248.16799633789574,
+      "text": "NAND gives one, while NOR gives zero.",
+      "chapter": 2
+    },
+    {
+      "start": 248.54800122070824,
+      "end": 252.04800122070824,
+      "text": "The zero zero row would not distinguish them because both give one there.",
+      "chapter": 2
+    },
+    {
+      "start": 252.04800122070824,
+      "end": 257.8280000000051,
+      "text": "De Morgan's rules say NOT of A AND B equals NOT A OR NOT B, and NOT of A OR",
+      "chapter": 2
+    },
+    {
+      "start": 257.8280000000051,
+      "end": 259.70799725342306,
+      "text": "B equals NOT A AND NOT B.",
+      "chapter": 2
+    },
+    {
+      "start": 260.28799908447775,
+      "end": 263.4279984741262,
+      "text": "Notice that complementing the whole expression also changes the connecting",
+      "chapter": 2
+    },
+    {
+      "start": 263.4279984741262,
+      "end": 263.9080018310598,
+      "text": "operation.",
+      "chapter": 2
+    },
+    {
+      "start": 264.19200000000734,
+      "end": 269.07200011444826,
+      "text": "A JEE circuit often has more than one gate, but the method stays friendly.",
+      "chapter": 3
+    },
+    {
+      "start": 269.87199982834596,
+      "end": 273.6520000381543,
+      "text": "Work from inputs toward output, and label every intermediate signal.",
+      "chapter": 3
+    },
+    {
+      "start": 274.67199954224367,
+      "end": 276.3919998092725,
+      "text": "Consider A and B entering an OR gate.",
+      "chapter": 3
+    },
+    {
+      "start": 276.8919998092725,
+      "end": 280.31200083924074,
+      "text": "Its output X then enters an AND gate alongside NOT C.",
+      "chapter": 3
+    },
+    {
+      "start": 281.13200053406496,
+      "end": 285.8720003051831,
+      "text": "The final rule is Y equals A OR B, in brackets, AND NOT C.",
+      "chapter": 3
+    },
+    {
+      "start": 286.3319993896558,
+      "end": 288.9919992370679,
+      "text": "Let A be zero, B one, and C one.",
+      "chapter": 3
+    },
+    {
+      "start": 289.31200083924074,
+      "end": 292.51199969483156,
+      "text": "First, X is zero OR one, so X is one.",
+      "chapter": 3
+    },
+    {
+      "start": 292.51199969483156,
+      "end": 294.7320009155347,
+      "text": "Next, NOT C is zero.",
+      "chapter": 3
+    },
+    {
+      "start": 295.67199954224367,
+      "end": 298.19200000000734,
+      "text": "Finally, one AND zero gives Y equal to zero.",
+      "chapter": 3
+    },
+    {
+      "start": 299.03200015259523,
+      "end": 302.95199832154054,
+      "text": "Do not skip the intermediate step and let the nearby one values persuade you",
+      "chapter": 3
+    },
+    {
+      "start": 302.95199832154054,
+      "end": 304.79199847412843,
+      "text": "that the final output must be one.",
+      "chapter": 3
+    },
+    {
+      "start": 305.4719987793042,
+      "end": 308.5520006103589,
+      "text": "Now keep A and B the same but change C to zero.",
+      "chapter": 3
+    },
+    {
+      "start": 309.17199954224367,
+      "end": 312.61199816895265,
+      "text": "NOT C becomes one, so the final AND output becomes one.",
+      "chapter": 3
+    },
+    {
+      "start": 313.15199908448,
+      "end": 317.43200167847414,
+      "text": "This circuit requires at least one of A or B to be active while C is inactive.",
+      "chapter": 3
+    },
+    {
+      "start": 317.93200167847414,
+      "end": 321.75353957661116,
+      "text": "Its complete truth table has eight rows because three independent binary",
+      "chapter": 3
+    },
+    {
+      "start": 321.75353957661116,
+      "end": 322.0720010681226,
+      "text": "inputs",
+      "chapter": 3
+    },
+    {
+      "start": 322.0720010681226,
+      "end": 323.6319986267163,
+      "text": "give two cubed combinations.",
+      "chapter": 3
+    },
+    {
+      "start": 324.3119989318921,
+      "end": 327.85199984741945,
+      "text": "A convenient order runs from zero zero zero through one one one.",
+      "chapter": 3
+    },
+    {
+      "start": 328.31200274658937,
+      "end": 332.99200305176515,
+      "text": "For this example, the output is one for zero one zero, one zero zero, and one",
+      "chapter": 3
+    },
+    {
+      "start": 332.99200305176515,
+      "end": 335.15199908448,
+      "text": "one zero, and zero in the other rows.",
+      "chapter": 3
+    },
+    {
+      "start": 335.8520036621167,
+      "end": 340.53199633789797,
+      "text": "Take a short pause and verify the last one: one OR one is one, and NOT zero is",
+      "chapter": 3
+    },
+    {
+      "start": 340.53199633789797,
+      "end": 340.8720003051831,
+      "text": "one.",
+      "chapter": 3
+    },
+    {
+      "start": 341.4719987793042,
+      "end": 345.81200274658937,
+      "text": "Real gate outputs respond after finite delay; our stable input truth table",
+      "chapter": 3
+    },
+    {
+      "start": 345.81200274658937,
+      "end": 348.11199816895265,
+      "text": "exercise ignores that transient behavior.",
+      "chapter": 3
+    },
+    {
+      "start": 348.8520036621167,
+      "end": 353.15199908448,
+      "text": "For a worked exam question, translate each symbol, preserve brackets, and",
+      "chapter": 3
+    },
+    {
+      "start": 353.15199908448,
+      "end": 354.15199908448,
+      "text": "compute one gate at a time.",
+      "chapter": 3
+    },
+    {
+      "start": 354.45600000000985,
+      "end": 359.155999809275,
+      "text": "Let's finish with why NAND and NOR are called universal gates.",
+      "chapter": 4
+    },
+    {
+      "start": 360.0159999427894,
+      "end": 365.4760004577735,
+      "text": "Each type can be combined to realize NOT, AND, and OR, and therefore more",
+      "chapter": 4
+    },
+    {
+      "start": 365.4760004577735,
+      "end": 366.655999809275,
+      "text": "general Boolean functions.",
+      "chapter": 4
+    },
+    {
+      "start": 367.45600000000985,
+      "end": 368.13600030518563,
+      "text": "Begin with NOT.",
+      "chapter": 4
+    },
+    {
+      "start": 368.9959999618629,
+      "end": 370.4760004577735,
+      "text": "Tie both NAND inputs to A.",
+      "chapter": 4
+    },
+    {
+      "start": 370.9760004577735,
+      "end": 372.8760000763038,
+      "text": "The output is NOT of A AND A.",
+      "chapter": 4
+    },
+    {
+      "start": 373.39600053406747,
+      "end": 376.5560003814796,
+      "text": "Since A AND A equals A, the result is NOT A.",
+      "chapter": 4
+    },
+    {
+      "start": 377.33599916077645,
+      "end": 382.4359995422462,
+      "text": "Tying both NOR inputs to A also gives NOT A, because A OR A equals A.",
+      "chapter": 4
+    },
+    {
+      "start": 382.9760004577735,
+      "end": 386.11599984742196,
+      "text": "These connections are allowed when the component supports the stated input",
+      "chapter": 4
+    },
+    {
+      "start": 386.11599984742196,
+      "end": 389.9359995422462,
+      "text": "wiring; do not confuse joining inputs with shorting two different outputs",
+      "chapter": 4
+    },
+    {
+      "start": 389.9359995422462,
+      "end": 390.39599862671884,
+      "text": "together.",
+      "chapter": 4
+    },
+    {
+      "start": 391.2359987793067,
+      "end": 397.0759989318946,
+      "text": "To make AND using NAND, calculate X as NAND of A and B, then invert X with a",
+      "chapter": 4
+    },
+    {
+      "start": 397.0759989318946,
+      "end": 399.05599847413094,
+      "text": "second NAND whose inputs are both X.",
+      "chapter": 4
+    },
+    {
+      "start": 399.95600000000985,
+      "end": 401.63600030518563,
+      "text": "Two inversions leave A AND B.",
+      "chapter": 4
+    },
+    {
+      "start": 402.21599832154305,
+      "end": 407.51600137330087,
+      "text": "For OR using NAND, first invert A and B with two tied input NAND gates, then",
+      "chapter": 4
+    },
+    {
+      "start": 407.51600137330087,
+      "end": 408.87599816895516,
+      "text": "NAND those inverted signals.",
+      "chapter": 4
+    },
+    {
+      "start": 409.9359995422462,
+      "end": 411.5959993896583,
+      "text": "De Morgan's rule gives A OR B.",
+      "chapter": 4
+    },
+    {
+      "start": 412.29600015259774,
+      "end": 414.8360010681251,
+      "text": "Try the pair A equal to zero, B equal to one.",
+      "chapter": 4
+    },
+    {
+      "start": 415.35600152588876,
+      "end": 419.95600000000985,
+      "text": "The input inversions are one and zero; NAND of one and zero is one, as OR",
+      "chapter": 4
+    },
+    {
+      "start": 419.95600000000985,
+      "end": 420.47599664307626,
+      "text": "requires.",
+      "chapter": 4
+    },
+    {
+      "start": 420.7359987793067,
+      "end": 422.7359987793067,
+      "text": "But do not stop after that one check.",
+      "chapter": 4
+    },
+    {
+      "start": 423.5760027465919,
+      "end": 426.2359987793067,
+      "text": "Compare all four rows before declaring two networks equivalent.",
+      "chapter": 4
+    },
+    {
+      "start": 426.7959963379005,
+      "end": 428.75600305176766,
+      "text": "A similar construction works with NOR gates.",
+      "chapter": 4
+    },
+    {
+      "start": 429.47599664307626,
+      "end": 434.2359987793067,
+      "text": "For JEE, recognize the inversion bubble, the five required gate tables, and",
+      "chapter": 4
+    },
+    {
+      "start": 434.2359987793067,
+      "end": 438.35600152588876,
+      "text": "simple networks without importing ordinary arithmetic into Boolean operations.",
+      "chapter": 4
+    },
+    {
+      "start": 439.5760027465919,
+      "end": 442.3359972534278,
+      "text": "Treat every internal wire as a named intermediate result.",
+      "chapter": 4
+    },
+    {
+      "start": 443.0159975586036,
+      "end": 447.0959993896583,
+      "text": "That turns a complicated looking drawing into a sequence of small, reliable",
+      "chapter": 4
+    },
+    {
+      "start": 447.0959993896583,
+      "end": 447.5760027465919,
+      "text": "decisions.",
+      "chapter": 4
+    }
+  ]
+}

@@ -1,0 +1,745 @@
+{
+  "duration": 371.04000000001133,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 122.11200000000373
+    },
+    {
+      "start": 122.11200000000373,
+      "end": 239.9760000000073
+    },
+    {
+      "start": 239.9760000000073,
+      "end": 371.04000000001133
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.7999999523162842,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.3399999141693115,
+      "end": 6.059999942779541,
+      "text": "Two capacitors share charge, but they do not automatically share energy",
+      "chapter": 0
+    },
+    {
+      "start": 6.059999942779541,
+      "end": 6.519999980926514,
+      "text": "equally.",
+      "chapter": 0
+    },
+    {
+      "start": 7.78000020980835,
+      "end": 8.5,
+      "text": "Let's see why.",
+      "chapter": 0
+    },
+    {
+      "start": 9.65999984741211,
+      "end": 14.12000036239624,
+      "text": "Start with a two microfarad capacitor at twelve volts and an uncharged four",
+      "chapter": 0
+    },
+    {
+      "start": 14.12000036239624,
+      "end": 15.039999961853027,
+      "text": "microfarad capacitor.",
+      "chapter": 0
+    },
+    {
+      "start": 16.219999313354492,
+      "end": 20.54615367987217,
+      "text": "Disconnect any battery, then join corresponding plates so the capacitors end",
+      "chapter": 0
+    },
+    {
+      "start": 20.54615367987217,
+      "end": 20.65999984741211,
+      "text": "up",
+      "chapter": 0
+    },
+    {
+      "start": 20.65999984741211,
+      "end": 21.18000030517578,
+      "text": "in parallel.",
+      "chapter": 0
+    },
+    {
+      "start": 21.700000762939453,
+      "end": 26.219999313354492,
+      "text": "The joined positive node initially holds twenty four microcoulombs.",
+      "chapter": 0
+    },
+    {
+      "start": 26.219999313354492,
+      "end": 29.81999969482422,
+      "text": "After the real circuit settles, both capacitors have the same voltage.",
+      "chapter": 0
+    },
+    {
+      "start": 30.68000030517578,
+      "end": 30.760000228881836,
+      "text": "Why?",
+      "chapter": 0
+    },
+    {
+      "start": 31.18000030517578,
+      "end": 32.959999084472656,
+      "text": "Their plates connect to the same two nodes.",
+      "chapter": 0
+    },
+    {
+      "start": 33.7599983215332,
+      "end": 38.18000030517578,
+      "text": "Total capacitance is six microfarads, so final voltage is twenty four divided",
+      "chapter": 0
+    },
+    {
+      "start": 38.18000030517578,
+      "end": 40.34000015258789,
+      "text": "by six, four volts.",
+      "chapter": 0
+    },
+    {
+      "start": 40.34000015258789,
+      "end": 44.5,
+      "text": "The two microfarad capacitor now holds eight microcoulombs and the four",
+      "chapter": 0
+    },
+    {
+      "start": 44.5,
+      "end": 46.560001373291016,
+      "text": "microfarad capacitor sixteen.",
+      "chapter": 0
+    },
+    {
+      "start": 46.560001373291016,
+      "end": 48.720001220703125,
+      "text": "Their sum is still twenty four.",
+      "chapter": 0
+    },
+    {
+      "start": 48.720001220703125,
+      "end": 49.900001525878906,
+      "text": "Charge conservation checks.",
+      "chapter": 0
+    },
+    {
+      "start": 50.47999954223633,
+      "end": 53.70000076293945,
+      "text": "Now pause and predict: is stored energy also unchanged?",
+      "chapter": 0
+    },
+    {
+      "start": 54.540000915527344,
+      "end": 58.41999816894531,
+      "text": "Initial energy is one half times two microfarads times twelve volts squared,",
+      "chapter": 0
+    },
+    {
+      "start": 58.41999816894531,
+      "end": 61.400001525878906,
+      "text": "one hundred forty four microjoules.",
+      "chapter": 0
+    },
+    {
+      "start": 61.400001525878906,
+      "end": 65.74666849772136,
+      "text": "Final energy is one half times six microfarads times four volts squared, forty",
+      "chapter": 0
+    },
+    {
+      "start": 65.74666849772136,
+      "end": 67,
+      "text": "eight microjoules.",
+      "chapter": 0
+    },
+    {
+      "start": 67,
+      "end": 70.5,
+      "text": "Ninety six microjoules have left the electric field store.",
+      "chapter": 0
+    },
+    {
+      "start": 71.26000213623047,
+      "end": 75.26000213623047,
+      "text": "During a real transient, resistance and possibly radiation carry that energy",
+      "chapter": 0
+    },
+    {
+      "start": 75.26000213623047,
+      "end": 75.55999755859375,
+      "text": "away.",
+      "chapter": 0
+    },
+    {
+      "start": 76.23999786376953,
+      "end": 77.41999816894531,
+      "text": "The charge has not vanished.",
+      "chapter": 0
+    },
+    {
+      "start": 78.04000091552734,
+      "end": 82.73999786376953,
+      "text": "An exactly zero resistance, zero inductance connection does not describe the",
+      "chapter": 0
+    },
+    {
+      "start": 82.73999786376953,
+      "end": 85.87999725341797,
+      "text": "settling transient, so we assume eventual real equilibration.",
+      "chapter": 0
+    },
+    {
+      "start": 86.73999786376953,
+      "end": 91.45589916522687,
+      "text": "For the general case, final voltage is C one V one plus C two V two, divided",
+      "chapter": 0
+    },
+    {
+      "start": 91.45589916522687,
+      "end": 91.58000183105469,
+      "text": "by",
+      "chapter": 0
+    },
+    {
+      "start": 91.58000183105469,
+      "end": 92.69999694824219,
+      "text": "the sum of capacitances.",
+      "chapter": 0
+    },
+    {
+      "start": 93.55999755859375,
+      "end": 95.94000244140625,
+      "text": "Both initial voltages must use the same orientation.",
+      "chapter": 0
+    },
+    {
+      "start": 96.62000274658203,
+      "end": 100.27999877929688,
+      "text": "If the second capacitor is reversed, its voltage enters with a negative sign.",
+      "chapter": 0
+    },
+    {
+      "start": 101.04000091552734,
+      "end": 104.13999938964844,
+      "text": "Do not add positive charge magnitudes just because they look easier.",
+      "chapter": 0
+    },
+    {
+      "start": 104.5199966430664,
+      "end": 109.25352235940787,
+      "text": "The released energy, for fixed capacitances and no battery, is one half times",
+      "chapter": 0
+    },
+    {
+      "start": 109.25352235940787,
+      "end": 109.31499671936035,
+      "text": "C",
+      "chapter": 0
+    },
+    {
+      "start": 109.31499671936035,
+      "end": 113.37999725341797,
+      "text": "one C two divided by their sum, times the initial voltage difference squared.",
+      "chapter": 0
+    },
+    {
+      "start": 114.0999984741211,
+      "end": 117.77999877929688,
+      "text": "It is nonnegative and becomes zero when the initial voltages already agree.",
+      "chapter": 0
+    },
+    {
+      "start": 118.62000274658203,
+      "end": 121.81999969482422,
+      "text": "Those two checks help catch sign mistakes before they become wrong answers.",
+      "chapter": 0
+    },
+    {
+      "start": 122.11200000000373,
+      "end": 125.8919999713935,
+      "text": "Now a phrase that can cause trouble: half filled with dielectric.",
+      "chapter": 1
+    },
+    {
+      "start": 126.61200000000373,
+      "end": 127.0720000381507,
+      "text": "Half of what?",
+      "chapter": 1
+    },
+    {
+      "start": 127.67199994278327,
+      "end": 130.19199992370977,
+      "text": "Draw the geometry before selecting a formula.",
+      "chapter": 1
+    },
+    {
+      "start": 130.41200019073858,
+      "end": 133.91661550981942,
+      "text": "First, the dielectric covers half the plate area and spans the full",
+      "chapter": 1
+    },
+    {
+      "start": 133.91661550981942,
+      "end": 134.49200011444464,
+      "text": "separation.",
+      "chapter": 1
+    },
+    {
+      "start": 135.11200000000372,
+      "end": 136.75200034332647,
+      "text": "The remaining area contains vacuum.",
+      "chapter": 1
+    },
+    {
+      "start": 137.61200000000372,
+      "end": 141.09199954224005,
+      "text": "Both regions run between the same two plates, so they have the same voltage.",
+      "chapter": 1
+    },
+    {
+      "start": 141.31200076294317,
+      "end": 143.41199923706426,
+      "text": "Their capacitances add in parallel.",
+      "chapter": 1
+    },
+    {
+      "start": 151.4520001525916,
+      "end": 152.1320004577674,
+      "text": "If empty capacitance is C zero and area fraction is f, the total is C zero",
+      "chapter": 1
+    },
+    {
+      "start": 152.1320004577674,
+      "end": 152.47200061035528,
+      "text": "times one minus f plus kappa times f.",
+      "chapter": 1
+    },
+    {
+      "start": 152.47200061035528,
+      "end": 153.43199969482794,
+      "text": "Kappa is the relative permittivity.",
+      "chapter": 1
+    },
+    {
+      "start": 154.1920018310584,
+      "end": 157.9520001525916,
+      "text": "With half the area filled and kappa three, the multiplier is one half plus",
+      "chapter": 1
+    },
+    {
+      "start": 157.9520001525916,
+      "end": 159.1920018310584,
+      "text": "three halves, two.",
+      "chapter": 1
+    },
+    {
+      "start": 159.65200091553106,
+      "end": 162.93199969482794,
+      "text": "An empty four microfarad capacitor becomes eight microfarads.",
+      "chapter": 1
+    },
+    {
+      "start": 163.51200152588262,
+      "end": 167.47200061035528,
+      "text": "At equal voltage, the dielectric region stores more free charge; do not force",
+      "chapter": 1
+    },
+    {
+      "start": 167.47200061035528,
+      "end": 168.87199832153692,
+      "text": "equal charges in the two regions.",
+      "chapter": 1
+    },
+    {
+      "start": 169.53199816894903,
+      "end": 171.15200091553106,
+      "text": "Now rotate the arrangement mentally.",
+      "chapter": 1
+    },
+    {
+      "start": 171.6320004577674,
+      "end": 175.07199908447637,
+      "text": "A slab covers the whole area, but only half the plate separation.",
+      "chapter": 1
+    },
+    {
+      "start": 175.65200091553106,
+      "end": 177.35200167847051,
+      "text": "The rest of the separation is vacuum.",
+      "chapter": 1
+    },
+    {
+      "start": 177.93199969482794,
+      "end": 180.35200167847051,
+      "text": "Each field line passes through both layers in succession.",
+      "chapter": 1
+    },
+    {
+      "start": 181.1320004577674,
+      "end": 183.77199984741583,
+      "text": "Voltage drops add, so these layers act in series.",
+      "chapter": 1
+    },
+    {
+      "start": 184.61200000000372,
+      "end": 186.43199969482794,
+      "text": "Assume no free charge at the internal interface.",
+      "chapter": 1
+    },
+    {
+      "start": 187.05200244140997,
+      "end": 191.11200000000372,
+      "text": "The normal electric displacement is continuous, and field in the dielectric is",
+      "chapter": 1
+    },
+    {
+      "start": 191.11200000000372,
+      "end": 192.93199969482794,
+      "text": "the vacuum field divided by kappa.",
+      "chapter": 1
+    },
+    {
+      "start": 193.5920033569373,
+      "end": 197.59764324012542,
+      "text": "The voltage is vacuum field times vacuum thickness, plus dielectric field",
+      "chapter": 1
+    },
+    {
+      "start": 197.59764324012542,
+      "end": 197.8720021362342,
+      "text": "times",
+      "chapter": 1
+    },
+    {
+      "start": 197.8720021362342,
+      "end": 198.51200152588262,
+      "text": "slab thickness.",
+      "chapter": 1
+    },
+    {
+      "start": 199.2119984741248,
+      "end": 202.94404836723504,
+      "text": "Dividing charge by that total voltage gives capacitance equal to C zero",
+      "chapter": 1
+    },
+    {
+      "start": 202.94404836723504,
+      "end": 203.3119969482459,
+      "text": "divided",
+      "chapter": 1
+    },
+    {
+      "start": 203.3119969482459,
+      "end": 207.4519972182091,
+      "text": "by one minus g plus g divided by kappa, where g is the slab thickness",
+      "chapter": 1
+    },
+    {
+      "start": 207.4519972182091,
+      "end": 207.9919972534217,
+      "text": "fraction.",
+      "chapter": 1
+    },
+    {
+      "start": 208.7920003051795,
+      "end": 212.3119969482459,
+      "text": "For g one half and kappa three, the multiplier is one point five.",
+      "chapter": 1
+    },
+    {
+      "start": 212.8119969482459,
+      "end": 216.57199908447637,
+      "text": "Our four microfarad capacitor becomes six microfarads, not eight.",
+      "chapter": 1
+    },
+    {
+      "start": 217.1920018310584,
+      "end": 219.8919987793006,
+      "text": "Same material, same word half, different result.",
+      "chapter": 1
+    },
+    {
+      "start": 220.53199816894903,
+      "end": 225.21200228882208,
+      "text": "Check the limits: zero filling gives C zero; complete filling gives kappa C",
+      "chapter": 1
+    },
+    {
+      "start": 225.21200228882208,
+      "end": 227.97200061035528,
+      "text": "zero; kappa one gives the empty value at every fraction.",
+      "chapter": 1
+    },
+    {
+      "start": 228.61200000000372,
+      "end": 231.45199633789434,
+      "text": "We assumed linear uniform dielectric and neglected fringing.",
+      "chapter": 1
+    },
+    {
+      "start": 232.0920033569373,
+      "end": 234.43199969482794,
+      "text": "Real boundary effects can need more detailed treatment.",
+      "chapter": 1
+    },
+    {
+      "start": 235.0920033569373,
+      "end": 239.3196903123159,
+      "text": "For JEE, the sketch tells you whether to add capacitances or add voltage",
+      "chapter": 1
+    },
+    {
+      "start": 239.3196903123159,
+      "end": 239.67199755859747,
+      "text": "drops.",
+      "chapter": 1
+    },
+    {
+      "start": 239.9760000000073,
+      "end": 243.01599996186033,
+      "text": "Let's finish with two shortcuts that need conditions.",
+      "chapter": 2
+    },
+    {
+      "start": 243.9560000190808,
+      "end": 245.79600017166868,
+      "text": "First, dielectric insertion and work.",
+      "chapter": 2
+    },
+    {
+      "start": 246.69599979019895,
+      "end": 250.99600045777098,
+      "text": "Start with two microfarads at ten volts and insert a dielectric of kappa three",
+      "chapter": 2
+    },
+    {
+      "start": 250.99600045777098,
+      "end": 251.61600034333006,
+      "text": "completely.",
+      "chapter": 2
+    },
+    {
+      "start": 252.37599961853758,
+      "end": 253.33599965668455,
+      "text": "Keep the battery connected.",
+      "chapter": 2
+    },
+    {
+      "start": 254.29599969483152,
+      "end": 258.93599908447993,
+      "text": "Voltage stays ten volts, capacitance becomes six microfarads and charge rises",
+      "chapter": 2
+    },
+    {
+      "start": 258.93599908447993,
+      "end": 261.19599931336177,
+      "text": "from twenty to sixty microcoulombs.",
+      "chapter": 2
+    },
+    {
+      "start": 262.1760007629467,
+      "end": 265.9760000000073,
+      "text": "Battery work is voltage times the charge increase: four hundred microjoules.",
+      "chapter": 2
+    },
+    {
+      "start": 266.53599946594966,
+      "end": 270.7360002288891,
+      "text": "Stored energy rises from one hundred to three hundred microjoules, a change of",
+      "chapter": 2
+    },
+    {
+      "start": 270.7360002288891,
+      "end": 271.7360002288891,
+      "text": "two hundred.",
+      "chapter": 2
+    },
+    {
+      "start": 271.7360002288891,
+      "end": 272.59599893189204,
+      "text": "Why are these different?",
+      "chapter": 2
+    },
+    {
+      "start": 273.33600061035884,
+      "end": 277.6359998474194,
+      "text": "During slow lossless insertion, the field pulls the material inward and an",
+      "chapter": 2
+    },
+    {
+      "start": 277.6359998474194,
+      "end": 279.91599862671626,
+      "text": "external agent can extract mechanical energy.",
+      "chapter": 2
+    },
+    {
+      "start": 280.75599877930415,
+      "end": 285.05600183106196,
+      "text": "Energy balance is change in stored energy equals battery work plus external",
+      "chapter": 2
+    },
+    {
+      "start": 285.05600183106196,
+      "end": 285.3959981689526,
+      "text": "work.",
+      "chapter": 2
+    },
+    {
+      "start": 286.09599893189204,
+      "end": 288.55600183106196,
+      "text": "External work is therefore minus two hundred microjoules.",
+      "chapter": 2
+    },
+    {
+      "start": 289.2359983215405,
+      "end": 293.8560010681225,
+      "text": "If we disconnect the battery first, charge stays twenty microcoulombs and no",
+      "chapter": 2
+    },
+    {
+      "start": 293.8560010681225,
+      "end": 294.75599877930415,
+      "text": "battery work occurs.",
+      "chapter": 2
+    },
+    {
+      "start": 295.31600015259517,
+      "end": 299.81600015259517,
+      "text": "Final stored energy is about thirty three point three three microjoules, so",
+      "chapter": 2
+    },
+    {
+      "start": 299.81600015259517,
+      "end": 303.5160009155346,
+      "text": "external work is about minus sixty six point six seven microjoules.",
+      "chapter": 2
+    },
+    {
+      "start": 304.33600061035884,
+      "end": 307.8760015258862,
+      "text": "These results assume quasistatic motion and negligible losses.",
+      "chapter": 2
+    },
+    {
+      "start": 308.73600213623774,
+      "end": 310.8760015258862,
+      "text": "State what is fixed and whose work is requested.",
+      "chapter": 2
+    },
+    {
+      "start": 311.83600061035884,
+      "end": 315.3760015258862,
+      "text": "Second, capacitors in a chain do not always have equal charge magnitudes.",
+      "chapter": 2
+    },
+    {
+      "start": 316.13600366211665,
+      "end": 319.75599877930415,
+      "text": "Picture two microfarads between a twelve volt terminal and a floating node B,",
+      "chapter": 2
+    },
+    {
+      "start": 320.2159978637768,
+      "end": 323.33600061035884,
+      "text": "then four microfarads between B and a zero volt terminal.",
+      "chapter": 2
+    },
+    {
+      "start": 323.33600061035884,
+      "end": 327.4760000000073,
+      "text": "The isolated middle node initially has plus six microcoulombs.",
+      "chapter": 2
+    },
+    {
+      "start": 328.2959996948315,
+      "end": 332.535997558601,
+      "text": "Write the charge on each plate attached to B: two times B minus twelve, plus",
+      "chapter": 2
+    },
+    {
+      "start": 332.535997558601,
+      "end": 334.3159963378979,
+      "text": "four times B, in microcoulombs.",
+      "chapter": 2
+    },
+    {
+      "start": 334.85599725342524,
+      "end": 336.2760030517651,
+      "text": "Their sum must equal six.",
+      "chapter": 2
+    },
+    {
+      "start": 336.75599877930415,
+      "end": 340.75599877930415,
+      "text": "So six B minus twenty four equals six, giving B five volts.",
+      "chapter": 2
+    },
+    {
+      "start": 341.43599908447993,
+      "end": 345.3760015258862,
+      "text": "The left capacitor has seven volts across it and charge magnitude fourteen",
+      "chapter": 2
+    },
+    {
+      "start": 345.3760015258862,
+      "end": 345.93599908447993,
+      "text": "microcoulombs.",
+      "chapter": 2
+    },
+    {
+      "start": 346.55600183106196,
+      "end": 348.93599908447993,
+      "text": "The right has five volts and twenty microcoulombs.",
+      "chapter": 2
+    },
+    {
+      "start": 349.55600183106196,
+      "end": 353.63600366211665,
+      "text": "On the middle node, signed charges are minus fourteen and plus twenty, summing",
+      "chapter": 2
+    },
+    {
+      "start": 353.63600366211665,
+      "end": 355.0160009155346,
+      "text": "to the specified plus six.",
+      "chapter": 2
+    },
+    {
+      "start": 355.23600213623774,
+      "end": 359.25599877930415,
+      "text": "If the node were neutral instead, B would be four volts and both charge",
+      "chapter": 2
+    },
+    {
+      "start": 359.25599877930415,
+      "end": 361.035997558601,
+      "text": "magnitudes sixteen microcoulombs.",
+      "chapter": 2
+    },
+    {
+      "start": 361.63600366211665,
+      "end": 364.43599908447993,
+      "text": "The equal charge shortcut belongs to that neutral node case.",
+      "chapter": 2
+    },
+    {
+      "start": 365.035997558601,
+      "end": 369.2359945068432,
+      "text": "Our routine is to draw connected nodes, preserve signed charge, and then check",
+      "chapter": 2
+    },
+    {
+      "start": 369.2359945068432,
+      "end": 370.67599694824946,
+      "text": "the energy transfers separately.",
+      "chapter": 2
+    }
+  ]
+}

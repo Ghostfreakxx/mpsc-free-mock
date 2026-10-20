@@ -1,0 +1,420 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script. Read every sentence completely and precisely, including the final sentence. Do not summarize.",
+  "title": "Practical chemistry: observations, titrations and experimental reasoning",
+  "subject": "Chemistry",
+  "unit": 20,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 Chemistry syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "NCERT: titrimetric analysis",
+      "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm106.pdf"
+    },
+    {
+      "title": "NCERT: systematic qualitative analysis",
+      "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm107.pdf"
+    },
+    {
+      "title": "NCERT: thermochemistry",
+      "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm103.pdf"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "An observation needs an interpretation and a control",
+      "formula": "Observation -> possible explanations -> interference check -> confirmation",
+      "script": "Welcome to Practical Chemistry. This recorded Chemistry class uses an AI generated Marin voice. An observation in practical chemistry needs a chemical explanation and a check for alternatives. A precipitate, colour change or gas may support a conclusion, but its meaning depends on medium, concentration, reagent sequence and interfering species. Record what happened separately from the proposed identity. A white precipitate is an observation; assigning one particular salt is an interpretation that needs additional evidence. A blank or a comparison under matched conditions can reveal contamination or an interfering response. In an examination problem, combine every stated observation rather than guessing from one familiar colour. A valid identification must explain the full set of evidence. The later chapters connect this approach with titration ratios, selective precipitation, complexes, functional groups, crystallization and heat measurements. These are conceptual interpretations of stated experiments; the aim is to understand why an observation is expected and when it is inconclusive. A failed observation can also reflect inappropriate conditions rather than absence of the target species. Distinguish a useful clue from a uniquely identifying result, and use an independent confirmatory response when the evidence allows several explanations.",
+      "points": [
+        "Observation · Colour / solid / gas · What happened",
+        "Interpretation · Possible species · Explain response",
+        "Confirmation · Selective extra evidence · Reject interference"
+      ],
+      "board": {
+        "heading": "An observation needs an interpretation and a control",
+        "columns": [
+          "Reasoning stage",
+          "Record",
+          "Purpose"
+        ],
+        "rows": [
+          [
+            "Observation",
+            "Colour / solid / gas",
+            "What happened"
+          ],
+          [
+            "Interpretation",
+            "Possible species",
+            "Explain response"
+          ],
+          [
+            "Confirmation",
+            "Selective extra evidence",
+            "Reject interference"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Titrations use stoichiometry at equivalence",
+      "formula": "At equivalence: moles react in the balanced coefficient ratio",
+      "script": "At equivalence, the reacted mole ratio follows the balanced equation. For monoprotic strong acid and monobasic strong base, the acid amount equals the base amount, so their concentration-volume products are equal. A diprotic acid requires the appropriate neutralization stage; do not assume every titration is one-to-one. An indicator endpoint is an observed signal near, but not identical by definition to, equivalence. Select an indicator whose transition suits the steep part of the titration curve. Use the delivered burette volume, not its final reading alone, and keep volume units consistent. Rinsing and parallax control help accuracy but cannot replace the balanced reaction. Twenty millilitres of zero point one zero zero mole per litre hydrochloric acid contains zero point zero zero two zero zero mole. At a one to one equivalence, the same amount of sodium hydroxide is needed. With a base concentration of zero point zero eight zero zero mole per litre, the required volume is twenty five millilitres. Equal moles here do not imply equal volumes.",
+      "points": [
+        "Acid amount · 0.100 × 0.0200 · 0.00200 mol",
+        "Base concentration · Given · 0.0800 mol/L",
+        "Base volume · 0.00200 / 0.0800 · 25.0 mL"
+      ],
+      "board": {
+        "heading": "Titrations use stoichiometry at equivalence",
+        "columns": [
+          "1:1 acid–base example",
+          "Calculation",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Acid amount",
+            "0.100 × 0.0200",
+            "0.00200 mol"
+          ],
+          [
+            "Base concentration",
+            "Given",
+            "0.0800 mol/L"
+          ],
+          [
+            "Base volume",
+            "0.00200 / 0.0800",
+            "25.0 mL"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Acidic permanganate ratios count electrons",
+      "formula": "Acidic ratios: MnO4- : Fe2+ = 1:5; MnO4- : C2O4^2- = 2:5",
+      "script": "Permanganate accepts five electrons when reduced to manganese two plus in suitable acidic medium. iron two plus supplies one electron each, giving one permanganate to five iron(II) ions. Oxalate supplies two electrons per oxalate ion as it becomes two carbon dioxide, giving two permanganate to five oxalate ions. The medium is essential: dilute sulfuric acid is commonly used in these titrations, whereas hydrochloric acid can introduce chloride oxidation and nitric acid can interfere as an oxidant. Permanganate serves as its own colour indicator through a slight persistent excess under suitable conditions. Oxalate oxidation has temperature and rate considerations, so observations are not just colour labels. Ten millilitres of zero point zero two zero zero mole per litre permanganate contains zero point zero zero zero two zero zero mole. Its five electron change corresponds to zero point zero zero one zero zero mole of iron two plus. Oxalate has a two electron change per ion, so two permanganates require five oxalates to balance ten electrons. Check the specified manganese product before applying either ratio.",
+      "points": [
+        "Permanganate → Mn²⁺ · Accepts 5 · MnO₄⁻ : Fe²⁺ = 1:5",
+        "Fe²⁺ → Fe³⁺ · Gives 1 · Balance electrons",
+        "Oxalate → CO₂ · Gives 2 per ion · MnO₄⁻ : oxalate = 2:5"
+      ],
+      "board": {
+        "heading": "Acidic permanganate ratios count electrons",
+        "columns": [
+          "Acidic redox species",
+          "Electron change",
+          "Mole ratio"
+        ],
+        "rows": [
+          [
+            "Permanganate → Mn²⁺",
+            "Accepts 5",
+            "MnO₄⁻ : Fe²⁺ = 1:5"
+          ],
+          [
+            "Fe²⁺ → Fe³⁺",
+            "Gives 1",
+            "Balance electrons"
+          ],
+          [
+            "Oxalate → CO₂",
+            "Gives 2 per ion",
+            "MnO₄⁻ : oxalate = 2:5"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Salt analysis depends on selective precipitation and complex formation",
+      "formula": "A confirmatory test must be interpreted in its stated pH and chemical environment",
+      "script": "Hydroxide precipitation, complex formation and controlled p H help distinguish listed cations. For example, copper two plus can show a blue hydroxide precipitate and a deep-blue ammine solution under suitable ammonia conditions. iron three plus can produce a reddish-brown hydroxide. Amphoteric aluminium and zinc hydroxides can dissolve in excess strong base, so precipitation alone does not uniquely separate them. Anion tests likewise need controls. A carbonate gives carbon dioxide on acidification; sulfate can give a white barium sulfate precipitate in an appropriately acidified test; halides can give silver salts after addressing interferences. Nitrite and nitrate differ in redox behaviour. These examples introduce the principles but do not replace the full scheme for every cation and anion listed by NTA. Copper and iron observations illustrate why solution environment matters. A precipitate can dissolve when a complex forms or when an amphoteric hydroxide reacts with excess base. Those changes are chemical evidence rather than a failure of precipitation. If aluminium and zinc both dissolve under one condition, another selective observation is needed to distinguish them. One shared response cannot uniquely identify either ion.",
+      "points": [
+        "Deep-blue ammine · Copper(II) complex · Suitable ammonia medium",
+        "Reddish-brown hydroxide · Iron(III) · Confirm with context",
+        "Dissolves in excess base · Al / Zn hydroxides · Not unique identity"
+      ],
+      "board": {
+        "heading": "Salt analysis depends on selective precipitation and complex formation",
+        "columns": [
+          "Observation",
+          "Possible evidence",
+          "Qualification"
+        ],
+        "rows": [
+          [
+            "Deep-blue ammine",
+            "Copper(II) complex",
+            "Suitable ammonia medium"
+          ],
+          [
+            "Reddish-brown hydroxide",
+            "Iron(III)",
+            "Confirm with context"
+          ],
+          [
+            "Dissolves in excess base",
+            "Al / Zn hydroxides",
+            "Not unique identity"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Functional-group tests have exceptions",
+      "formula": "Multiple independent observations usually constrain identity better than one test",
+      "script": "A suitable carbonyl reagent can identify many aldehydes and ketones, while Tollens' response supports an oxidizable substrate rather than uniquely proving every aldehyde. Phenolic groups can show characteristic complex or substitution reactions; a carboxylic acid commonly releases carbon dioxide from bicarbonate. An amine's class influences its identification chemistry. The iodoform test responds to suitable methyl-carbonyl compounds and precursors such as ethanol or isopropyl alcohol, not every alcohol. A negative result can arise from an unsuitable test environment. For a question involving several observations, intersect their structural implications and verify that the proposed compound satisfies all of them. Acetaldehyde is compatible with an aldehyde response and a positive iodoform response. Benzaldehyde can give an aldehyde oxidation response while lacking the methyl carbonyl pattern. A proposed structure must satisfy the intersection of the evidence. Also distinguish a true chemical exception from an observation affected by reagent condition, concentration or interference in the stated problem.",
+      "points": [
+        "Acetaldehyde · Yes · Yes",
+        "Benzaldehyde · Yes · No",
+        "Interpretation · Combine responses · Check conditions"
+      ],
+      "board": {
+        "heading": "Functional-group tests have exceptions",
+        "columns": [
+          "Compound",
+          "Oxidizable aldehyde?",
+          "Iodoform pattern?"
+        ],
+        "rows": [
+          [
+            "Acetaldehyde",
+            "Yes",
+            "Yes"
+          ],
+          [
+            "Benzaldehyde",
+            "Yes",
+            "No"
+          ],
+          [
+            "Interpretation",
+            "Combine responses",
+            "Check conditions"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Preparation questions connect reaction with purification",
+      "formula": "Mohr's salt: (NH4)2Fe(SO4)2 with 6H2O of crystallization; potash alum: KAl(SO4)2 with 12H2O",
+      "script": "Mohr's salt is a hydrated double salt containing ammonium and iron(II) sulfate; potash alum is a hydrated potassium-aluminium sulfate double salt. Their preparation principles involve suitable solution chemistry and crystallization rather than inventing a new valence state from the word double. Oxidation of iron two plus and contamination are practical issues to consider. Named organic preparations include acetanilide, p-nitroacetanilide, aniline yellow and iodoform in the official scope. Acetylating aniline forms an amide, and nitration of acetanilide illustrates how a substituent affects aromatic orientation. Product separation, washing and purity checks matter alongside the reaction equation. Detailed reagent handling and recipes require a supervised manual. Crystallization water contributes to molar mass even though it does not change the named metal's oxidation state. Mohr's salt contains iron in the plus two state, whereas the aluminium in potash alum is plus three. In an organic preparation question, identify the intended functional group change and explain how purification separates product from impurities. A balanced equation alone does not establish the recovered material's purity.",
+      "points": [
+        "Mohr salt · Iron in +2 state · 6 waters of crystallization",
+        "Potash alum · Aluminium in +3 state · 12 waters",
+        "Organic preparation · Functional-group change · Purification matters"
+      ],
+      "board": {
+        "heading": "Preparation questions connect reaction with purification",
+        "columns": [
+          "Preparation example",
+          "Relevant fact",
+          "Check"
+        ],
+        "rows": [
+          [
+            "Mohr salt",
+            "Iron in +2 state",
+            "6 waters of crystallization"
+          ],
+          [
+            "Potash alum",
+            "Aluminium in +3 state",
+            "12 waters"
+          ],
+          [
+            "Organic preparation",
+            "Functional-group change",
+            "Purification matters"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Calorimetry measures the surroundings to infer reaction heat",
+      "formula": "q_surroundings = (mc + C_cal) Delta T; q_reaction approximately -q_surroundings in the stated model",
+      "script": "For a stated simple calorimeter model, heat gained by solution is mass times specific heat times temperature change; include the calorimeter heat capacity if supplied. If the reaction warms the surroundings, its heat is negative in that model. Divide by moles reacted to obtain a molar quantity, and state heat-loss or constant-pressure assumptions. The syllabus includes solution enthalpy of copper sulfate and neutralization enthalpy of a strong acid and base. Hydration state and concentration affect dissolution results, so anhydrous and hydrated samples cannot automatically share one value. Strong-acid/strong-base neutralization largely reflects water formation under dilute conditions, but dilution heats and heat losses can affect measured values. If one hundred grams of solution warms by two kelvin with specific heat four point one eight joules per gram per kelvin, it gains eight hundred thirty six joules. With negligible other heat capacity and losses, the reaction loses the same heat. For zero point zero two zero zero mole reacted, this is minus forty one point eight kilojoules per mole. Include a supplied calorimeter heat capacity before drawing that conclusion.",
+      "points": [
+        "Solution heat · 100 × 4.18 × 2 · +836 J",
+        "Reaction heat · Opposite sign · −836 J",
+        "Per 0.0200 mol · −836 / 0.0200 · −41.8 kJ/mol"
+      ],
+      "board": {
+        "heading": "Calorimetry measures the surroundings to infer reaction heat",
+        "columns": [
+          "Calorimetry model",
+          "Calculation",
+          "Sign / value"
+        ],
+        "rows": [
+          [
+            "Solution heat",
+            "100 × 4.18 × 2",
+            "+836 J"
+          ],
+          [
+            "Reaction heat",
+            "Opposite sign",
+            "−836 J"
+          ],
+          [
+            "Per 0.0200 mol",
+            "−836 / 0.0200",
+            "−41.8 kJ/mol"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Colloid and rate observations also need controlled conditions",
+      "formula": "Clock comparison: rate proportional to 1/time only with the same defined threshold and suitable conditions",
+      "script": "Lyophilic sols have stronger affinity between dispersed material and the medium than lyophobic sols in the elementary distinction. Stability and coagulation depend on the actual dispersion and electrolyte environment. Light scattering can reveal dispersed particles but does not alone identify the substance or prove the sample is a true solution. The iodide-hydrogen peroxide kinetic study connects reactant concentrations with the time or amount of iodine formation under specified conditions. Temperature, mixing and any threshold-detection system must be controlled. An inverse clock time can estimate relative rate only when the same product threshold and relevant conditions apply; it is not universally equal to a reaction-rate constant. For the same iodine threshold under comparable clock conditions, a twenty second time versus a forty second time corresponds to twice the average rate to that threshold. It does not by itself give an absolute rate constant. A different threshold, changed temperature or altered detection chemistry can invalidate the simple comparison. Identify the measured quantity before inferring a rate law from an experimental observation.",
+      "points": [
+        "20 s · Same threshold · 2",
+        "40 s · Same conditions · 1",
+        "Changed threshold · Not comparable directly · Reassess model"
+      ],
+      "board": {
+        "heading": "Colloid and rate observations also need controlled conditions",
+        "columns": [
+          "Clock comparison",
+          "Assumption",
+          "Relative rate"
+        ],
+        "rows": [
+          [
+            "20 s",
+            "Same threshold",
+            "2"
+          ],
+          [
+            "40 s",
+            "Same conditions",
+            "1"
+          ],
+          [
+            "Changed threshold",
+            "Not comparable directly",
+            "Reassess model"
+          ]
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "At equivalence, reactant amounts are related by:",
+      "options": [
+        "The balanced equation",
+        "Equal volumes always",
+        "Equal masses always",
+        "The indicator's colour name"
+      ],
+      "answer": 0,
+      "explanation": "Stoichiometric coefficients determine the mole ratio; equal volumes are not required."
+    },
+    {
+      "question": "Acidic MnO4- becoming Mn2+ oxidizes Fe2+ in ratio MnO4- : Fe2+ of:",
+      "options": [
+        "5:1",
+        "1:5",
+        "1:1",
+        "2:1"
+      ],
+      "answer": 1,
+      "explanation": "Permanganate accepts five electrons and each iron(II) supplies one, giving one to five."
+    },
+    {
+      "question": "For that acidic product, MnO4- : oxalate is:",
+      "options": [
+        "1:1",
+        "5:2",
+        "2:5",
+        "1:5"
+      ],
+      "answer": 2,
+      "explanation": "Two permanganates accept ten electrons; five oxalates supply ten electrons."
+    },
+    {
+      "question": "A temperature rise in the stated insulated calorimeter model makes reaction heat:",
+      "options": [
+        "Positive necessarily",
+        "Always zero",
+        "Equal to mc only",
+        "Negative"
+      ],
+      "answer": 3,
+      "explanation": "The surroundings gain heat, so the reacting system loses it under the model assumptions."
+    },
+    {
+      "question": "Reddish-brown hydroxide with suitable conditions is a clue for:",
+      "options": [
+        "Fe3+",
+        "A unique unknown under every condition",
+        "Only a halide ion",
+        "Pure water"
+      ],
+      "answer": 0,
+      "explanation": "Iron(III) hydroxide can give this observation, but medium and confirmatory evidence still matter."
+    },
+    {
+      "question": "Comparing clock rates using inverse times requires:",
+      "options": [
+        "No concentration information ever",
+        "A common threshold and controlled relevant conditions",
+        "Any unrelated endpoints",
+        "Identical colours alone"
+      ],
+      "answer": 1,
+      "explanation": "The same product threshold and appropriate controls are needed before time can indicate relative rate."
+    },
+    {
+      "question": "20.0 mL of 0.100 M monoprotic acid needs what volume of 0.0800 M monobasic base at 1:1 equivalence?",
+      "options": [
+        "16.0 mL",
+        "25.0 mL",
+        "20.0 mL always",
+        "80.0 mL"
+      ],
+      "answer": 1,
+      "explanation": "Moles = 0.00200, so base volume = 0.00200/0.0800 = 0.0250 L."
+    },
+    {
+      "question": "In the stated simple calorimeter, +836 J gained by solution from 0.0200 mol reaction gives approximate molar reaction heat:",
+      "options": [
+        "+41.8 kJ/mol",
+        "−0.836 kJ/mol",
+        "−41.8 kJ/mol",
+        "+836 kJ/mol"
+      ],
+      "answer": 2,
+      "explanation": "Reaction heat is −836 J; divide by 0.0200 mol and convert to kJ/mol."
+    },
+    {
+      "question": "At a matched clock threshold, times of 20 s and 40 s imply the first relative average rate is:",
+      "options": [
+        "Twice the second",
+        "Half the second",
+        "Equal necessarily",
+        "An absolute rate constant of 2"
+      ],
+      "answer": 0,
+      "explanation": "With the same threshold and suitable controls, inverse time gives a factor of 40/20 = 2."
+    },
+    {
+      "question": "Both aluminium and zinc hydroxides dissolve in excess strong base. This observation alone:",
+      "options": [
+        "Proves aluminium uniquely",
+        "Proves zinc uniquely",
+        "Proves no metal was present",
+        "Does not uniquely distinguish the two"
+      ],
+      "answer": 3,
+      "explanation": "A shared response needs additional selective evidence for identification."
+    }
+  ]
+}

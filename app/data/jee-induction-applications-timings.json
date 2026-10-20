@@ -1,0 +1,679 @@
+{
+  "duration": 335.13600000001003,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 114.31200000000344
+    },
+    {
+      "start": 114.31200000000344,
+      "end": 216.4320000000064
+    },
+    {
+      "start": 216.4320000000064,
+      "end": 335.13600000001003
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.9800000190734863,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.799999952316284,
+      "end": 6.637179573376974,
+      "text": "Let's turn motion into electricity, without pretending the magnetic field",
+      "chapter": 0
+    },
+    {
+      "start": 6.637179573376974,
+      "end": 6.900000095367432,
+      "text": "gives",
+      "chapter": 0
+    },
+    {
+      "start": 6.900000095367432,
+      "end": 7.980000019073486,
+      "text": "us free energy.",
+      "chapter": 0
+    },
+    {
+      "start": 8.720000267028809,
+      "end": 12.260000228881836,
+      "text": "Picture a rod sliding right on two rails, with a field into the page.",
+      "chapter": 0
+    },
+    {
+      "start": 12.880000114440918,
+      "end": 15.9399995803833,
+      "text": "The loop gets bigger, so inward magnetic flux increases.",
+      "chapter": 0
+    },
+    {
+      "start": 16.600000381469727,
+      "end": 17.899999618530273,
+      "text": "What should the induced current do?",
+      "chapter": 0
+    },
+    {
+      "start": 18.280000686645508,
+      "end": 18.799999237060547,
+      "text": "Take a moment.",
+      "chapter": 0
+    },
+    {
+      "start": 19.31999969482422,
+      "end": 22.81999969482422,
+      "text": "It produces an outward field to oppose that increase, so current is",
+      "chapter": 0
+    },
+    {
+      "start": 22.81999969482422,
+      "end": 24.799999237060547,
+      "text": "counterclockwise, upward through the rod.",
+      "chapter": 0
+    },
+    {
+      "start": 25.239999771118164,
+      "end": 27.899999618530273,
+      "text": "The resulting force on the rod points left.",
+      "chapter": 0
+    },
+    {
+      "start": 28.559999465942383,
+      "end": 30.700000762939453,
+      "text": "You must pull right to keep the speed constant.",
+      "chapter": 0
+    },
+    {
+      "start": 30.700000762939453,
+      "end": 36.20000076293945,
+      "text": "Here is our example: field zero point five tesla, rod length zero point four",
+      "chapter": 0
+    },
+    {
+      "start": 36.20000076293945,
+      "end": 40.599998474121094,
+      "text": "metres, speed three metres per second, and total resistance two ohms.",
+      "chapter": 0
+    },
+    {
+      "start": 40.599998474121094,
+      "end": 44.81999969482422,
+      "text": "Emf is B times length times speed: zero point six volts.",
+      "chapter": 0
+    },
+    {
+      "start": 45.959999084472656,
+      "end": 47.439998626708984,
+      "text": "Current is zero point three amperes.",
+      "chapter": 0
+    },
+    {
+      "start": 48.29999923706055,
+      "end": 52.220001220703125,
+      "text": "Braking force is B times current times length, zero point zero six newtons.",
+      "chapter": 0
+    },
+    {
+      "start": 52.779998779296875,
+      "end": 56.779998779296875,
+      "text": "Multiply by speed: mechanical input is zero point one eight watts.",
+      "chapter": 0
+    },
+    {
+      "start": 57.41999816894531,
+      "end": 60.400001525878906,
+      "text": "Current squared times resistance gives exactly the same heating power.",
+      "chapter": 0
+    },
+    {
+      "start": 61.18000030517578,
+      "end": 62.900001525878906,
+      "text": "Good, our energy account balances.",
+      "chapter": 0
+    },
+    {
+      "start": 63.720001220703125,
+      "end": 65.66000366210938,
+      "text": "We neglected friction and circuit inductance.",
+      "chapter": 0
+    },
+    {
+      "start": 66.19999694824219,
+      "end": 67.80000305175781,
+      "text": "Now rotate a rod about one end.",
+      "chapter": 0
+    },
+    {
+      "start": 68.54000091552734,
+      "end": 69.86000061035156,
+      "text": "Should we use the tip speed everywhere?",
+      "chapter": 0
+    },
+    {
+      "start": 70.5199966430664,
+      "end": 70.83999633789062,
+      "text": "No.",
+      "chapter": 0
+    },
+    {
+      "start": 71.23999786376953,
+      "end": 74.18000030517578,
+      "text": "At distance s from the pivot, speed is omega times s.",
+      "chapter": 0
+    },
+    {
+      "start": 75,
+      "end": 79.12000274658203,
+      "text": "Integrating B omega s along the rod gives B omega length squared divided by",
+      "chapter": 0
+    },
+    {
+      "start": 79.12000274658203,
+      "end": 79.37999725341797,
+      "text": "two.",
+      "chapter": 0
+    },
+    {
+      "start": 79.66000366210938,
+      "end": 84.55999755859375,
+      "text": "With zero point four tesla, twenty radians per second and half a metre, emf is",
+      "chapter": 0
+    },
+    {
+      "start": 84.55999755859375,
+      "end": 85.0199966430664,
+      "text": "one volt.",
+      "chapter": 0
+    },
+    {
+      "start": 85.86000061035156,
+      "end": 89.31999969482422,
+      "text": "Counterclockwise rotation with field out of the page makes the tip positive.",
+      "chapter": 0
+    },
+    {
+      "start": 89.95999908447266,
+      "end": 93.0999984741211,
+      "text": "An isolated rod can have this voltage without continuous current.",
+      "chapter": 0
+    },
+    {
+      "start": 93.94000244140625,
+      "end": 98.36000061035156,
+      "text": "Add a stationary return path and contacts with five ohms total resistance, and",
+      "chapter": 0
+    },
+    {
+      "start": 98.36000061035156,
+      "end": 99.91999816894531,
+      "text": "current is zero point two amperes.",
+      "chapter": 0
+    },
+    {
+      "start": 100.73999786376953,
+      "end": 105.12000274658203,
+      "text": "Braking torque is B times current times length squared divided by two: zero",
+      "chapter": 0
+    },
+    {
+      "start": 105.12000274658203,
+      "end": 106.36000061035156,
+      "text": "point zero one newton metres.",
+      "chapter": 0
+    },
+    {
+      "start": 107.30000305175781,
+      "end": 111,
+      "text": "Torque times angular speed is zero point two watts, matching resistor heating.",
+      "chapter": 0
+    },
+    {
+      "start": 111.91999816894531,
+      "end": 114.05999755859375,
+      "text": "Different geometry, same conservation check.",
+      "chapter": 0
+    },
+    {
+      "start": 114.31200000000344,
+      "end": 116.71200009537087,
+      "text": "Next, let's give the circuit a little memory.",
+      "chapter": 1
+    },
+    {
+      "start": 117.33199998092995,
+      "end": 118.97199984741555,
+      "text": "An inductor stores magnetic energy.",
+      "chapter": 1
+    },
+    {
+      "start": 119.77200003815041,
+      "end": 123.75199958038674,
+      "text": "For constant inductance, its voltage is L times the rate of change of current,",
+      "chapter": 1
+    },
+    {
+      "start": 124.29199954223976,
+      "end": 125.6120001907383,
+      "text": "using the passive sign convention.",
+      "chapter": 1
+    },
+    {
+      "start": 126.27200003815041,
+      "end": 130.0519997711216,
+      "text": "A finite applied voltage changes the slope of current, not the current",
+      "chapter": 1
+    },
+    {
+      "start": 130.0519997711216,
+      "end": 130.81200000000342,
+      "text": "instantaneously.",
+      "chapter": 1
+    },
+    {
+      "start": 131.8719994659458,
+      "end": 135.81200000000342,
+      "text": "Imagine connecting a ten volt source to five ohms and a zero point five henry",
+      "chapter": 1
+    },
+    {
+      "start": 135.81200000000342,
+      "end": 138.4920003051792,
+      "text": "inductor in series, initially with zero current.",
+      "chapter": 1
+    },
+    {
+      "start": 139.19199916077002,
+      "end": 141.3719994659458,
+      "text": "Right at the start, current is still zero.",
+      "chapter": 1
+    },
+    {
+      "start": 141.93200083923682,
+      "end": 145.85200091553077,
+      "text": "The resistor voltage is zero, and the inductor initially takes the source",
+      "chapter": 1
+    },
+    {
+      "start": 145.85200091553077,
+      "end": 146.2119996185337,
+      "text": "voltage.",
+      "chapter": 1
+    },
+    {
+      "start": 146.9319989318882,
+      "end": 148.53200122070655,
+      "text": "Eventually the current stops changing.",
+      "chapter": 1
+    },
+    {
+      "start": 149.1520001525913,
+      "end": 153.49764028618006,
+      "text": "The ideal inductor then has zero voltage, and current approaches ten divided",
+      "chapter": 1
+    },
+    {
+      "start": 153.49764028618006,
+      "end": 153.61199923706397,
+      "text": "by",
+      "chapter": 1
+    },
+    {
+      "start": 153.61199923706397,
+      "end": 155.03200122070655,
+      "text": "five, two amperes.",
+      "chapter": 1
+    },
+    {
+      "start": 155.63199969482764,
+      "end": 156.03200122070655,
+      "text": "How quickly?",
+      "chapter": 1
+    },
+    {
+      "start": 156.55200167847022,
+      "end": 159.9920003051792,
+      "text": "The time constant is L divided by R, zero point one seconds.",
+      "chapter": 1
+    },
+    {
+      "start": 160.77199908447608,
+      "end": 163.89507559673945,
+      "text": "Growth current is the final current times one minus the exponential of",
+      "chapter": 1
+    },
+    {
+      "start": 163.89507559673945,
+      "end": 164.2519986267124,
+      "text": "negative",
+      "chapter": 1
+    },
+    {
+      "start": 164.2519986267124,
+      "end": 165.79199954223975,
+      "text": "time divided by the time constant.",
+      "chapter": 1
+    },
+    {
+      "start": 166.4920003051792,
+      "end": 171.05200167847022,
+      "text": "At one time constant, that factor is about zero point six three two.",
+      "chapter": 1
+    },
+    {
+      "start": 171.05200167847022,
+      "end": 174.0919987793003,
+      "text": "So current is about one point two six amperes, not two.",
+      "chapter": 1
+    },
+    {
+      "start": 174.61199923706397,
+      "end": 178.05200167847022,
+      "text": "Think of the time constant as a characteristic pace, not a finish line.",
+      "chapter": 1
+    },
+    {
+      "start": 178.67200061035498,
+      "end": 182.73199816894873,
+      "text": "The final stored magnetic energy is one half L times current squared: one",
+      "chapter": 1
+    },
+    {
+      "start": 182.73199816894873,
+      "end": 183.27199908447608,
+      "text": "joule.",
+      "chapter": 1
+    },
+    {
+      "start": 183.67200061035498,
+      "end": 187.65199633789405,
+      "text": "Now remove the source but leave a closed resistor and inductor discharge loop.",
+      "chapter": 1
+    },
+    {
+      "start": 188.4920003051792,
+      "end": 192.0919987793003,
+      "text": "Current decays exponentially, and the stored energy becomes heat in that",
+      "chapter": 1
+    },
+    {
+      "start": 192.0919987793003,
+      "end": 192.35200091553077,
+      "text": "resistor.",
+      "chapter": 1
+    },
+    {
+      "start": 192.9720036621128,
+      "end": 195.95199938965186,
+      "text": "But opening the only current path is a different situation.",
+      "chapter": 1
+    },
+    {
+      "start": 196.65199633789405,
+      "end": 200.13199969482764,
+      "text": "The inductor can develop a large voltage, sometimes causing a spark.",
+      "chapter": 1
+    },
+    {
+      "start": 200.77199908447608,
+      "end": 204.27199908447608,
+      "text": "We do not casually apply the closed loop decay formula to an open circuit.",
+      "chapter": 1
+    },
+    {
+      "start": 205.11200305176123,
+      "end": 209.17200061035498,
+      "text": "For JEE, sketch the circuit before and after switching, state the initial",
+      "chapter": 1
+    },
+    {
+      "start": 209.17200061035498,
+      "end": 212.3920018310581,
+      "text": "current, and identify the actual path available for discharge.",
+      "chapter": 1
+    },
+    {
+      "start": 212.93200274658545,
+      "end": 216.15199633789405,
+      "text": "That picture often matters more than memorizing another formula.",
+      "chapter": 1
+    },
+    {
+      "start": 216.4320000000064,
+      "end": 218.17200000954315,
+      "text": "Finally, an AC puzzle.",
+      "chapter": 2
+    },
+    {
+      "start": 218.77199991417572,
+      "end": 222.45199998093292,
+      "text": "Can a twenty volt source produce two hundred volts across an inductor in a",
+      "chapter": 2
+    },
+    {
+      "start": 222.45199998093292,
+      "end": 222.81200011444733,
+      "text": "passive circuit?",
+      "chapter": 2
+    },
+    {
+      "start": 223.29200013352082,
+      "end": 227.6120003051822,
+      "text": "At series resonance, yes, under the ideal conditions we are about to specify.",
+      "chapter": 2
+    },
+    {
+      "start": 228.29199965668366,
+      "end": 233.311999160773,
+      "text": "Take inductance zero point two henry, capacitance twenty microfarads, total",
+      "chapter": 2
+    },
+    {
+      "start": 233.311999160773,
+      "end": 237.33199961853668,
+      "text": "series resistance ten ohms, and source voltage twenty volts RMS.",
+      "chapter": 2
+    },
+    {
+      "start": 238.35200007630036,
+      "end": 242.37456396172016,
+      "text": "Resonant angular frequency is one divided by the square root of L times C:",
+      "chapter": 2
+    },
+    {
+      "start": 242.37456396172016,
+      "end": 242.59199984741852,
+      "text": "five",
+      "chapter": 2
+    },
+    {
+      "start": 242.59199984741852,
+      "end": 246.21200068665192,
+      "text": "hundred radians per second, about seventy nine point five eight hertz.",
+      "chapter": 2
+    },
+    {
+      "start": 247.21200068665192,
+      "end": 250.6120003051822,
+      "text": "Inductive and capacitive reactances each have magnitude one hundred ohms.",
+      "chapter": 2
+    },
+    {
+      "start": 251.19199832153961,
+      "end": 255.2720001525943,
+      "text": "They have opposite phase, so they cancel in the total impedance, leaving ten",
+      "chapter": 2
+    },
+    {
+      "start": 255.2720001525943,
+      "end": 255.5120018310611,
+      "text": "ohms.",
+      "chapter": 2
+    },
+    {
+      "start": 256.23199923706693,
+      "end": 257.8320015258853,
+      "text": "Current is two amperes RMS.",
+      "chapter": 2
+    },
+    {
+      "start": 258.55199893189115,
+      "end": 262.1520012207095,
+      "text": "Each reactive element has two hundred volts RMS, but their voltage phasors",
+      "chapter": 2
+    },
+    {
+      "start": 262.1520012207095,
+      "end": 262.61200030518216,
+      "text": "oppose.",
+      "chapter": 2
+    },
+    {
+      "start": 262.8320015258853,
+      "end": 266.0319984741275,
+      "text": "We must not add those magnitudes as if they point in the same direction.",
+      "chapter": 2
+    },
+    {
+      "start": 266.79200061035795,
+      "end": 269.73199923706693,
+      "text": "The source supplies forty watts, dissipated in resistance.",
+      "chapter": 2
+    },
+    {
+      "start": 270.6720016784732,
+      "end": 274.6520012207095,
+      "text": "Ideal inductors and capacitors exchange energy but consume no average power.",
+      "chapter": 2
+    },
+    {
+      "start": 275.3519981689517,
+      "end": 277.4920013732974,
+      "text": "Now ask how selective this resonance is.",
+      "chapter": 2
+    },
+    {
+      "start": 278.0319984741275,
+      "end": 282.09200366211576,
+      "text": "With source voltage fixed, half resonant power means current is the resonant",
+      "chapter": 2
+    },
+    {
+      "start": 282.09200366211576,
+      "end": 283.87200244141263,
+      "text": "value divided by the square root of two.",
+      "chapter": 2
+    },
+    {
+      "start": 284.41200335694,
+      "end": 288.19200213623685,
+      "text": "This happens when the magnitude of inductive reactance minus capacitive",
+      "chapter": 2
+    },
+    {
+      "start": 288.19200213623685,
+      "end": 289.69200213623685,
+      "text": "reactance equals resistance.",
+      "chapter": 2
+    },
+    {
+      "start": 290.5319984741275,
+      "end": 293.96093558265295,
+      "text": "Solving the lower and upper cases gives approximately four hundred seventy",
+      "chapter": 2
+    },
+    {
+      "start": 293.96093558265295,
+      "end": 294.1462835344651,
+      "text": "five",
+      "chapter": 2
+    },
+    {
+      "start": 294.1462835344651,
+      "end": 298.79200061035795,
+      "text": "point six two and five hundred twenty five point six two radians per second.",
+      "chapter": 2
+    },
+    {
+      "start": 299.01200183106107,
+      "end": 303.87200244141263,
+      "text": "Subtract: bandwidth is fifty radians per second, exactly R divided by L for",
+      "chapter": 2
+    },
+    {
+      "start": 303.87200244141263,
+      "end": 305.0319984741275,
+      "text": "this ideal series model.",
+      "chapter": 2
+    },
+    {
+      "start": 305.87200244141263,
+      "end": 310.01200183106107,
+      "text": "Quality factor is resonant angular frequency times L divided by R, which is",
+      "chapter": 2
+    },
+    {
+      "start": 310.01200183106107,
+      "end": 310.271996337897,
+      "text": "ten.",
+      "chapter": 2
+    },
+    {
+      "start": 310.71199877930326,
+      "end": 311.5719993896548,
+      "text": "Notice one subtlety.",
+      "chapter": 2
+    },
+    {
+      "start": 312.0520027465884,
+      "end": 315.63199694824857,
+      "text": "The geometric mean of the half power frequencies is the resonance frequency;",
+      "chapter": 2
+    },
+    {
+      "start": 315.87200244141263,
+      "end": 318.51200183106107,
+      "text": "their arithmetic midpoint is not exactly resonance.",
+      "chapter": 2
+    },
+    {
+      "start": 319.271996337897,
+      "end": 321.9519966430728,
+      "text": "Symmetric endpoints are an approximation, not an identity.",
+      "chapter": 2
+    },
+    {
+      "start": 322.6719978637759,
+      "end": 325.63199694824857,
+      "text": "Real losses and component ratings limit voltage magnification.",
+      "chapter": 2
+    },
+    {
+      "start": 326.2519996948306,
+      "end": 330.1453364555227,
+      "text": "Our routine is to name the model, keep RMS separate from peak values, and",
+      "chapter": 2
+    },
+    {
+      "start": 330.1453364555227,
+      "end": 330.41200335694,
+      "text": "check",
+      "chapter": 2
+    },
+    {
+      "start": 330.41200335694,
+      "end": 330.71199877930326,
+      "text": "power.",
+      "chapter": 2
+    },
+    {
+      "start": 331.1719978637759,
+      "end": 334.771996337897,
+      "text": "That is how these equations become useful tools rather than a guessing game.",
+      "chapter": 2
+    }
+  ]
+}

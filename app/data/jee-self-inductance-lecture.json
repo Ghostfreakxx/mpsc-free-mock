@@ -1,0 +1,140 @@
+{
+  "title": "Self and mutual inductance",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 14",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Self-inductance, conceptual reference",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/14-2-self-inductance-and-inductors"
+    },
+    {
+      "title": "OpenStax: Mutual inductance, conceptual reference",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/14-1-mutual-inductance"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "A changing current induces its own response",
+      "formula": "lambda = LI; induced emf = -L dI/dt; passive terminal voltage v_L = +L dI/dt",
+      "points": [
+        "L is constant here; it has units henry.",
+        "Induced emf opposes the change of current, not always the current.",
+        "Terminal voltage uses the passive sign convention."
+      ],
+      "script": "Hey, welcome back. A coil's current creates magnetic flux through its own turns. Change the current and that flux changes too. Faraday's law then gives an induced response in the same coil. This is self-induction. For fixed geometry and a linear magnetic response, flux linkage lambda equals inductance L times current I. Inductance is measured in henries. One henry gives a one-volt induced emf when current changes at one ampere per second. With constant L, the induced emf is minus L times the current derivative. The minus sign opposes the change. If a positive current increases, the induced response resists its growth. If that current decreases, the response tends to sustain it. An inductor does not simply oppose current in every situation. Here is a sign convention to keep tidy: when current enters the terminal marked positive, the terminal voltage across an ideal inductor is plus L times the derivative. That passive terminal voltage and the induced emf are not contradictory formulas; their reference directions differ. For L equal to zero point two henry and current rising at fifteen amperes per second, induced emf is minus three volts in the chosen circulation convention. If L changes, differentiate the whole linkage, not just the current. Our examples keep L constant."
+    },
+    {
+      "title": "Long-solenoid inductance comes from field and linkage",
+      "formula": "L = mu N^2 A / length; air core: mu approximately mu0",
+      "points": [
+        "Use flux linkage, not flux per turn alone.",
+        "N doubles at fixed dimensions: L quadruples.",
+        "Neglect end effects; linear uniform permeability is assumed."
+      ],
+      "script": "Let's derive rather than memorise the solenoid formula. Take a long coil with N turns, cross-sectional area A and length ell. Assume the field inside is approximately uniform and ignore end effects. Its field is permeability mu times N over ell times current. Flux through each turn is that field times area. There are N linked turns, so linkage contains another factor of N. Divide linkage by current and inductance becomes mu times N squared times area divided by ell. The square is not decoration: one N strengthens the field, and the other counts linked turns. For an air-core coil, use mu approximately mu zero. Try four hundred turns, area five times ten to the minus four square meters and length zero point four meter. Using mu zero approximately four pi times ten to the minus seven gives inductance about zero point two five one millihenry. Pause before scaling. Double the turns without changing area, length or permeability. Inductance becomes four times as large. Double the length while keeping total turns fixed and inductance halves. If instead turns per unit length are held fixed, length has a different effect because total turns also change. A real ferromagnetic core can have nonlinear permeability and losses; this simple constant-mu formula does not describe every operating condition."
+    },
+    {
+      "title": "Stored energy and current continuity",
+      "formula": "U = (1/2)LI^2; ideal linear inductor: p = Li dI/dt",
+      "points": [
+        "Energy belongs to the magnetic field, not resistive heating in an ideal inductor.",
+        "Finite applied voltage implies finite current slope.",
+        "Do not treat opening an inductive circuit as a safe experiment."
+      ],
+      "script": "An ideal inductor can absorb energy without permanently dissipating it. Using the passive convention, instantaneous power into it is voltage times current, or L times current times its derivative. Integrating while current grows from zero to I gives magnetic energy one half L I squared. Consider inductance zero point two henry carrying three amperes. Stored energy is zero point nine joule. Double the current: energy quadruples to three point six joules, not one point eight. When current decreases, the inductor can return energy to the circuit. A real coil also has resistance and other losses, so not all stored energy necessarily returns to a source. Now connect this to current continuity. For finite L and finite voltage, current can change only at a finite rate. It cannot jump instantaneously in the ideal finite-voltage model. Interrupting an inductive circuit can therefore produce a large voltage as the system tries to maintain current. That is an explanation, not an invitation to open a live circuit; suitable protection and safe equipment are required. With a constant three volts across a zero point two henry ideal inductor, current slope is fifteen amperes per second. Do not confuse zero voltage at steady current with zero stored energy. Three amperes held constant still stores zero point nine joule."
+    },
+    {
+      "title": "Mutual induction links two different coils",
+      "formula": "lambda_2 due to coil 1 = M I_1; |emf_2| = |M dI_1/dt|",
+      "points": [
+        "The changing current in coil 1 induces emf in coil 2.",
+        "A secondary can have emf while open circuit.",
+        "Winding orientation and terminal conventions determine polarity."
+      ],
+      "script": "Put a second coil near the first. Some of the first coil's field links the second coil. For fixed geometry and linear response, that secondary linkage due to primary current is mutual inductance M times primary current. Differentiate to find the induced emf in the second coil. Its magnitude is M times the magnitude of the primary current slope. Do not use the secondary current slope by mistake. Suppose M is zero point zero three henry and the primary current rises at twenty amperes per second. Secondary induced emf magnitude is zero point six volt. If primary current becomes constant, this mutual contribution to emf becomes zero, even though linked flux may remain nonzero. If primary current then decreases at the same slope magnitude, the induced polarity reverses. Which terminal becomes positive depends on winding orientation and the terminal references. The diagram identifies the coils without pretending that all windings share one automatic polarity. An open secondary can develop an emf without carrying a sustained conduction current. Once it is loaded, its current affects the primary through coupling, and both coils can also have their own self-induced responses. The source supplies the transferred energy. Mutual induction is the bridge to transformers, not an energy multiplier hidden between two disconnected wires."
+    },
+    {
+      "title": "Coupling and a combined numerical check",
+      "formula": "|M| = k sqrt(L1 L2), 0 <= k <= 1; fixed passive reciprocal linear system",
+      "points": [
+        "Coupling depends on how much flux links both coils.",
+        "Mutual-inductance magnitude cannot exceed sqrt(L1 L2) in this model.",
+        "Self and mutual induced contributions must use consistent references."
+      ],
+      "script": "Two coils can be weakly or strongly coupled. In a passive reciprocal linear system, mutual-inductance magnitude is k times the square root of L one times L two. The coupling coefficient k lies between zero and one. Perfect coupling is an ideal limit, not a claim that every nearby pair of coils reaches it. Take L one equal to zero point four henry, L two equal to zero point one henry and k equal to zero point five. The square root of their product is zero point two henry, so mutual-inductance magnitude is zero point one henry. A primary current rising at five amperes per second then induces a secondary emf magnitude of zero point five volt. Take a moment: could the same passive pair have mutual inductance zero point three henry? No; that would exceed the zero point two henry bound for these self-inductances. The bound is tied to nonnegative magnetic energy, not a rule invented to fit a numerical question. Orientation can change the signed mutual term without changing its magnitude. Before a coupled-coil calculation, list which current changes, which coil's linkage you need, whether inductances are constant and how polarity is defined. Those checks let you use compact equations without losing the physical circuit."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "For L = 0.2 H and dI/dt = +15 A/s, induced emf in the chosen circulation convention is:",
+      "options": [
+        "-3 V",
+        "+3 V",
+        "-0.0133 V",
+        "0 V"
+      ],
+      "answer": 0,
+      "explanation": "emf = -L dI/dt = -3 V."
+    },
+    {
+      "question": "Doubling solenoid turns at fixed length, area and permeability changes L by:",
+      "options": [
+        "One half",
+        "Two times",
+        "Four times",
+        "No change"
+      ],
+      "answer": 2,
+      "explanation": "L is proportional to N squared under the stated assumptions."
+    },
+    {
+      "question": "A 0.2 H ideal inductor carrying 3 A stores:",
+      "options": [
+        "0.3 J",
+        "0.9 J",
+        "1.8 J",
+        "3.6 J"
+      ],
+      "answer": 1,
+      "explanation": "U = 0.5 x 0.2 x 3 squared = 0.9 J."
+    },
+    {
+      "question": "M = 0.03 H and primary current slope is 20 A/s. Secondary emf magnitude is:",
+      "options": [
+        "600 V",
+        "0.0015 V",
+        "0.06 V",
+        "0.6 V"
+      ],
+      "answer": 3,
+      "explanation": "|emf2| = M |dI1/dt| = 0.6 V."
+    },
+    {
+      "question": "L1 = 0.4 H, L2 = 0.1 H and k = 0.5 give |M| =",
+      "options": [
+        "0.2 H",
+        "0.1 H",
+        "0.04 H",
+        "0.3 H"
+      ],
+      "answer": 1,
+      "explanation": "|M| = 0.5 sqrt(0.4 x 0.1) = 0.1 H."
+    },
+    {
+      "question": "Finite voltage across a finite ideal inductor allows:",
+      "options": [
+        "An arbitrary instantaneous current jump",
+        "No current change ever",
+        "A finite current slope",
+        "Only zero stored energy"
+      ],
+      "answer": 2,
+      "explanation": "v = L dI/dt implies a finite slope when v and L are finite and L is nonzero."
+    }
+  ]
+}

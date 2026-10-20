@@ -1,0 +1,430 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.520
+Hey, welcome back.
+
+00:00:01.920 --> 00:00:04.980
+Our last classes followed voltages and currents continuously.
+
+00:00:05.780 --> 00:00:09.580
+Digital logic groups signals into two states instead: zero and one.
+
+00:00:10.080 --> 00:00:14.580
+Under positive logic, a low input represents zero and a high input represents
+
+00:00:14.580 --> 00:00:14.960
+one.
+
+00:00:15.520 --> 00:00:18.020
+Real circuits use specified voltage ranges for those states.
+
+00:00:18.540 --> 00:00:22.920
+One is not universally exactly five volts, and an intermediate voltage is not
+
+00:00:22.920 --> 00:00:24.760
+automatically a valid third logic state.
+
+00:00:25.040 --> 00:00:29.540
+For this lesson we use ideal stable binary inputs and ignore propagation
+
+00:00:29.540 --> 00:00:29.940
+delays.
+
+00:00:30.660 --> 00:00:34.340
+A logic gate maps input states to an output state according to a rule.
+
+00:00:35.180 --> 00:00:36.900
+Start with the simplest rule: NOT.
+
+00:00:37.380 --> 00:00:39.240
+It has one input and reverses it.
+
+00:00:39.800 --> 00:00:43.100
+Input zero gives output one; input one gives output zero.
+
+00:00:43.600 --> 00:00:47.420
+The output is often written as A with a bar above it, read as not A.
+
+00:00:47.900 --> 00:00:51.280
+In a gate symbol, a little circle, or bubble, indicates inversion.
+
+00:00:51.840 --> 00:00:55.940
+It is a notation mark, not an extra external component that must be drawn as
+
+00:00:55.940 --> 00:00:56.920
+another separate gate.
+
+00:00:57.760 --> 00:01:00.600
+Picture an indicator that should turn on when a condition is absent.
+
+00:01:01.280 --> 00:01:04.660
+If A means the condition is present, NOT A means it is absent.
+
+00:01:05.360 --> 00:01:09.420
+Now pause: if the input changes from zero to one, what happens to the ideal
+
+00:01:09.420 --> 00:01:09.720
+output?
+
+00:01:09.980 --> 00:01:11.940
+It changes from one to zero.
+
+00:01:12.540 --> 00:01:16.300
+A truth table simply lists every input possibility and the corresponding
+
+00:01:16.300 --> 00:01:16.680
+output.
+
+00:01:17.320 --> 00:01:18.680
+One input needs two rows.
+
+00:01:19.240 --> 00:01:21.540
+Two independent binary inputs need four rows.
+
+00:01:22.020 --> 00:01:25.556
+We will use that complete row list rather than trusting one convenient
+
+00:01:25.556 --> 00:01:25.960
+example.
+
+00:01:26.760 --> 00:01:28.600
+Let's add a second input.
+
+00:01:29.400 --> 00:01:33.380
+An AND gate produces one only when both inputs are one.
+
+00:01:34.380 --> 00:01:38.552
+Think of a device that may operate only when permission is present and a
+
+00:01:38.552 --> 00:01:38.900
+safety
+
+00:01:38.900 --> 00:01:40.020
+condition is satisfied.
+
+00:01:40.500 --> 00:01:44.440
+If either condition is zero, the AND output is zero.
+
+00:01:45.140 --> 00:01:50.600
+In row order zero zero, zero one, one zero, one one, the outputs are
+
+00:01:50.600 --> 00:01:52.440
+zero, zero, zero, one.
+
+00:01:53.280 --> 00:01:57.120
+An OR gate instead gives one when at least one input is one.
+
+00:01:58.360 --> 00:02:01.946
+Imagine an indicator that turns on if either of two independent sensors
+
+00:02:01.946 --> 00:02:02.300
+reports
+
+00:02:02.300 --> 00:02:02.860
+a condition.
+
+00:02:03.580 --> 00:02:07.240
+Its outputs in the same row order are zero, one, one, one.
+
+00:02:08.200 --> 00:02:10.280
+Both inputs being one still gives one.
+
+00:02:10.820 --> 00:02:14.480
+This is inclusive OR, not the different exclusive OR operation.
+
+00:02:15.040 --> 00:02:18.500
+A useful notation trap: Boolean plus means OR.
+
+00:02:19.300 --> 00:02:23.860
+One plus one in this algebra is one, not the ordinary arithmetic result two.
+
+00:02:24.560 --> 00:02:27.720
+A dot means AND, so one dot zero is zero.
+
+00:02:28.780 --> 00:02:31.900
+You are combining truth states, not adding measured voltages.
+
+00:02:33.020 --> 00:02:33.780
+Pause for a comparison.
+
+00:02:34.980 --> 00:02:35.900
+Inputs are one and zero.
+
+00:02:36.280 --> 00:02:37.120
+What are the two outputs?
+
+00:02:37.880 --> 00:02:40.020
+AND gives zero; OR gives one.
+
+00:02:40.640 --> 00:02:44.960
+Testing only the one one row cannot distinguish these two gates because both
+
+00:02:44.960 --> 00:02:45.740
+give one there.
+
+00:02:46.680 --> 00:02:48.000
+A full truth table can.
+
+00:02:48.820 --> 00:02:52.880
+When a JEE question shows switches as an analogy, identify whether both
+
+00:02:52.880 --> 00:02:55.440
+conditions are required or either condition suffices.
+
+00:02:56.020 --> 00:03:00.385
+The meaning of a gate comes from its rule, not from the everyday wording of
+
+00:03:00.385 --> 00:03:00.560
+the
+
+00:03:00.560 --> 00:03:01.880
+word or in isolation.
+
+00:03:02.328 --> 00:03:06.728
+Now we build two very important gates by adding a NOT operation to the whole
+
+00:03:06.728 --> 00:03:07.068
+output.
+
+00:03:08.028 --> 00:03:09.008
+NAND means NOT AND.
+
+00:03:09.748 --> 00:03:12.848
+First evaluate the AND result, then complement it.
+
+00:03:12.888 --> 00:03:18.838
+The NAND outputs for zero zero, zero one, one zero, one one are one, one,
+
+00:03:18.838 --> 00:03:19.888
+one, zero.
+
+00:03:19.888 --> 00:03:22.568
+Its only zero occurs when both inputs are one.
+
+00:03:23.628 --> 00:03:24.668
+NOR means NOT OR.
+
+00:03:25.248 --> 00:03:27.848
+First evaluate OR, then complement the result.
+
+00:03:27.848 --> 00:03:32.288
+Its outputs in that same row order are one, zero, zero, zero.
+
+00:03:32.848 --> 00:03:35.148
+Its only one occurs when both inputs are zero.
+
+00:03:35.688 --> 00:03:37.628
+The placement of the bar or brackets matters.
+
+00:03:38.128 --> 00:03:42.268
+Not the whole expression A AND B is different from simply saying not A AND not
+
+00:03:42.268 --> 00:03:42.528
+B.
+
+00:03:43.108 --> 00:03:48.808
+For example, with A equal to one and B equal to zero, NAND is one, but not A
+
+00:03:48.808 --> 00:03:49.948
+AND not B is zero.
+
+00:03:50.188 --> 00:03:52.588
+That is a quick counterexample to a common error.
+
+00:03:53.148 --> 00:03:56.670
+In a drawing, NAND looks like an AND gate with an inversion bubble at the
+
+00:03:56.670 --> 00:03:57.008
+output.
+
+00:03:57.008 --> 00:03:59.508
+NOR looks like OR with that output bubble.
+
+00:04:00.288 --> 00:04:04.108
+Think for a moment: how can you distinguish NAND from NOR using just one input
+
+00:04:04.108 --> 00:04:04.348
+pair?
+
+00:04:04.968 --> 00:04:05.708
+Choose one zero.
+
+00:04:06.408 --> 00:04:08.168
+NAND gives one, while NOR gives zero.
+
+00:04:08.548 --> 00:04:12.048
+The zero zero row would not distinguish them because both give one there.
+
+00:04:12.048 --> 00:04:17.828
+De Morgan's rules say NOT of A AND B equals NOT A OR NOT B, and NOT of A OR
+
+00:04:17.828 --> 00:04:19.708
+B equals NOT A AND NOT B.
+
+00:04:20.288 --> 00:04:23.428
+Notice that complementing the whole expression also changes the connecting
+
+00:04:23.428 --> 00:04:23.908
+operation.
+
+00:04:24.192 --> 00:04:29.072
+A JEE circuit often has more than one gate, but the method stays friendly.
+
+00:04:29.872 --> 00:04:33.652
+Work from inputs toward output, and label every intermediate signal.
+
+00:04:34.672 --> 00:04:36.392
+Consider A and B entering an OR gate.
+
+00:04:36.892 --> 00:04:40.312
+Its output X then enters an AND gate alongside NOT C.
+
+00:04:41.132 --> 00:04:45.872
+The final rule is Y equals A OR B, in brackets, AND NOT C.
+
+00:04:46.332 --> 00:04:48.992
+Let A be zero, B one, and C one.
+
+00:04:49.312 --> 00:04:52.512
+First, X is zero OR one, so X is one.
+
+00:04:52.512 --> 00:04:54.732
+Next, NOT C is zero.
+
+00:04:55.672 --> 00:04:58.192
+Finally, one AND zero gives Y equal to zero.
+
+00:04:59.032 --> 00:05:02.952
+Do not skip the intermediate step and let the nearby one values persuade you
+
+00:05:02.952 --> 00:05:04.792
+that the final output must be one.
+
+00:05:05.472 --> 00:05:08.552
+Now keep A and B the same but change C to zero.
+
+00:05:09.172 --> 00:05:12.612
+NOT C becomes one, so the final AND output becomes one.
+
+00:05:13.152 --> 00:05:17.432
+This circuit requires at least one of A or B to be active while C is inactive.
+
+00:05:17.932 --> 00:05:21.754
+Its complete truth table has eight rows because three independent binary
+
+00:05:21.754 --> 00:05:22.072
+inputs
+
+00:05:22.072 --> 00:05:23.632
+give two cubed combinations.
+
+00:05:24.312 --> 00:05:27.852
+A convenient order runs from zero zero zero through one one one.
+
+00:05:28.312 --> 00:05:32.992
+For this example, the output is one for zero one zero, one zero zero, and one
+
+00:05:32.992 --> 00:05:35.152
+one zero, and zero in the other rows.
+
+00:05:35.852 --> 00:05:40.532
+Take a short pause and verify the last one: one OR one is one, and NOT zero is
+
+00:05:40.532 --> 00:05:40.872
+one.
+
+00:05:41.472 --> 00:05:45.812
+Real gate outputs respond after finite delay; our stable input truth table
+
+00:05:45.812 --> 00:05:48.112
+exercise ignores that transient behavior.
+
+00:05:48.852 --> 00:05:53.152
+For a worked exam question, translate each symbol, preserve brackets, and
+
+00:05:53.152 --> 00:05:54.152
+compute one gate at a time.
+
+00:05:54.456 --> 00:05:59.156
+Let's finish with why NAND and NOR are called universal gates.
+
+00:06:00.016 --> 00:06:05.476
+Each type can be combined to realize NOT, AND, and OR, and therefore more
+
+00:06:05.476 --> 00:06:06.656
+general Boolean functions.
+
+00:06:07.456 --> 00:06:08.136
+Begin with NOT.
+
+00:06:08.996 --> 00:06:10.476
+Tie both NAND inputs to A.
+
+00:06:10.976 --> 00:06:12.876
+The output is NOT of A AND A.
+
+00:06:13.396 --> 00:06:16.556
+Since A AND A equals A, the result is NOT A.
+
+00:06:17.336 --> 00:06:22.436
+Tying both NOR inputs to A also gives NOT A, because A OR A equals A.
+
+00:06:22.976 --> 00:06:26.116
+These connections are allowed when the component supports the stated input
+
+00:06:26.116 --> 00:06:29.936
+wiring; do not confuse joining inputs with shorting two different outputs
+
+00:06:29.936 --> 00:06:30.396
+together.
+
+00:06:31.236 --> 00:06:37.076
+To make AND using NAND, calculate X as NAND of A and B, then invert X with a
+
+00:06:37.076 --> 00:06:39.056
+second NAND whose inputs are both X.
+
+00:06:39.956 --> 00:06:41.636
+Two inversions leave A AND B.
+
+00:06:42.216 --> 00:06:47.516
+For OR using NAND, first invert A and B with two tied input NAND gates, then
+
+00:06:47.516 --> 00:06:48.876
+NAND those inverted signals.
+
+00:06:49.936 --> 00:06:51.596
+De Morgan's rule gives A OR B.
+
+00:06:52.296 --> 00:06:54.836
+Try the pair A equal to zero, B equal to one.
+
+00:06:55.356 --> 00:06:59.956
+The input inversions are one and zero; NAND of one and zero is one, as OR
+
+00:06:59.956 --> 00:07:00.476
+requires.
+
+00:07:00.736 --> 00:07:02.736
+But do not stop after that one check.
+
+00:07:03.576 --> 00:07:06.236
+Compare all four rows before declaring two networks equivalent.
+
+00:07:06.796 --> 00:07:08.756
+A similar construction works with NOR gates.
+
+00:07:09.476 --> 00:07:14.236
+For JEE, recognize the inversion bubble, the five required gate tables, and
+
+00:07:14.236 --> 00:07:18.356
+simple networks without importing ordinary arithmetic into Boolean operations.
+
+00:07:19.576 --> 00:07:22.336
+Treat every internal wire as a named intermediate result.
+
+00:07:23.016 --> 00:07:27.096
+That turns a complicated looking drawing into a sequence of small, reliable
+
+00:07:27.096 --> 00:07:27.576
+decisions.
