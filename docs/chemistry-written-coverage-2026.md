@@ -5,8 +5,9 @@ Baseline: [official NTA syllabus](https://jeemain.nta.nic.in/document/syllabus-2
 This is a coverage inventory, not a claim that the course is complete.
 There are 22 authored written lessons spanning all 20 Chemistry units.
 This means each unit has at least one foundation, not exhaustive topic coverage.
-Organic Principles, Coordination Compounds, Chemical Kinetics, Chemical Thermodynamics
-and Solutions each have a five-chapter Marin recording. Equilibrium has eight
+Organic Principles, Coordination Compounds and Chemical Kinetics each have a
+five-chapter Marin recording. Chemical Thermodynamics and Solutions each have
+ten chapters. Equilibrium has eight
 chapters and Redox and Electrochemistry has nine. Atomic Structure and Chemical
 Bonding each have eight chapters. Mole Concept and Periodic Trends also have
 eight chapters each. Hydrocarbons and Organic Halogens each have eight chapters.
@@ -101,12 +102,17 @@ polarity, sigma/pi counting, molecular orbitals and hydrogen bonding.
 Each new recording includes twelve original questions. Detailed radial plots,
 quantitative lattice cycles and fuller orbital diagrams remain for further work.
 
-Chemical Thermodynamics and Solutions now each have five narrated chapters,
-aligned captions, visual boards and six original quiz questions. Their written
-companions retain three worked examples each. Recordings are available at
+Chemical Thermodynamics and Solutions now each have ten narrated chapters,
+aligned captions, visual boards and twelve original quiz questions. Their written
+companions each have twelve sections and six worked examples. Thermodynamics adds
+formation-data arithmetic, a lattice-dissociation/hydration cycle, vessel-inclusive
+calorimetry, phase-transition and constant-Cp entropy, and system/surroundings
+entropy balances. Solutions adds density conversion, Henry's-law conventions,
+nonideal mixtures and azeotropes, boiling-elevation molar mass, dissociation and
+isotonic comparisons. Recordings are available at
 `/jee/classes/chemical-thermodynamics` and `/jee/classes/solutions`.
-Detailed entropy integrals, enthalpy cycles, phase diagrams and nonideal activity
-calculations remain beyond these foundations.
+Full Born-Haber cycles, variable heat-capacity integrals, detailed phase diagrams
+and quantitative nonideal activities remain beyond this coverage.
 
 Equilibrium now includes seven worked examples and twelve original MCQs,
 including buffer neutralization, salt hydrolysis, dilution before precipitation

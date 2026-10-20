@@ -1143,8 +1143,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "chemical-thermodynamics", subject: "Chemistry", unit: 4, number: "C04", title: chemicalThermodynamics.title,
-    description: "Five narrated chapters on energy signs, enthalpy, Hess cycles, entropy, Gibbs energy and equilibrium.",
-    scope: "Recorded JEE Main 2026 Chemistry Unit 4 foundation with original practice. Detailed enthalpy cycles, entropy integrals and further mixed problems remain; this is not exhaustive unit coverage or official PYQ material.",
+    description: "Ten narrated chapters on energy signs, enthalpy cycles, calorimetry, entropy calculations, Gibbs energy and equilibrium.",
+    scope: "Recorded JEE Main 2026 Chemistry Unit 4 foundation and worked applications with original practice. Full Born-Haber cycles, variable heat-capacity integrals and further mixed problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.chemical-thermodynamics.lecture.v1",
     audio: "/lectures/chemical-thermodynamics/narration-marin.mp3",
     subtitles: "/lectures/chemical-thermodynamics/english.vtt", timings: chemicalThermodynamicsTimings,
@@ -1153,8 +1153,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "solutions", subject: "Chemistry", unit: 5, number: "C05", title: solutions.title,
-    description: "Five narrated chapters on concentrations, Raoult’s law, freezing-point shifts, osmosis and particle factors.",
-    scope: "Recorded JEE Main 2026 Chemistry Unit 5 foundation with original practice. Detailed phase diagrams, azeotropes, nonideal activities and further mixed problems remain; this is not exhaustive unit coverage or official PYQ material.",
+    description: "Ten narrated chapters on concentration and density, Henry and Raoult laws, azeotropes, colligative calculations and particle factors.",
+    scope: "Recorded JEE Main 2026 Chemistry Unit 5 foundation and worked applications with original practice. Detailed phase diagrams, quantitative nonideal activities and further mixed problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.solutions.lecture.v1",
     audio: "/lectures/solutions/narration-marin.mp3",
     subtitles: "/lectures/solutions/english.vtt", timings: solutionsTimings,

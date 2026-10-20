@@ -1,20 +1,26 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import {createHash} from 'node:crypto';
 import {physicalChemistryLessons} from '../app/jee/classes/physical-chemistry-study.ts';
 for (const [id,unit] of [['chemical-thermodynamics',4],['solutions',5]]) {
  const lesson=JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`));
  test(`${id}: recording matches the written companion and keeps scope explicit`,()=>{
   assert.equal(lesson.subject,'Chemistry');assert.equal(lesson.unit,unit);
-  assert.equal(lesson.chapters.length,5);
+  assert.equal(lesson.chapters.length,10);
   assert.deepEqual(lesson.quiz,physicalChemistryLessons.find(l=>l.id===id).quiz);
-  assert.equal(lesson.quiz.length,6);
+  assert.equal(lesson.quiz.length,12);
+  for(const [i,c]of lesson.chapters.entries()){
+   const hash=createHash('sha256').update(JSON.stringify({script:c.speechInput??c.script,instructions:lesson.voiceInstructions,voice:'marin',model:'gpt-4o-mini-tts'})).digest('hex');
+   assert.equal(fs.readFileSync('public/lectures/'+id+'/chapter-'+String(i+1).padStart(2,'0')+'.sha256','utf8'),hash);
+   if(i>=5){assert.ok(c.script.split(/\s+/).length>=140);assert.equal(c.board.rows.length,3);}
+  }
   assert.match(lesson.chapters[0].script,/AI generated Marin voice/);
   assert.match(lesson.chapters[4].script,/further/);
  });
  test(`${id}: every spoken chapter has complete, bounded captions`,()=>{
   const t=JSON.parse(fs.readFileSync(`app/data/jee-${id}-timings.json`));
-  assert.equal(t.chapters.length,5);assert.ok(t.duration>450 && t.duration<750);
+  assert.equal(t.chapters.length,10);assert.ok(t.duration>850 && t.duration<1400);
   const normalize=s=>s.toLowerCase().replace(/[^a-z0-9]/g,'');
   for(const [i,ch] of t.chapters.entries()){
    assert.equal(ch.start,i?t.chapters[i-1].end:0);

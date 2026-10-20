@@ -7,10 +7,10 @@ test('physical Chemistry lessons map to Units 4 and 5 with recorded companion sc
   assert.deepEqual(lessons.map(l => [l.id, l.unit]), [['chemical-thermodynamics', 4], ['solutions', 5]]);
   for (const lesson of lessons) {
     assert.equal(lesson.subject, 'Chemistry');
-    assert.equal(lesson.sections.length, 7);
-    assert.equal(lesson.examples.length, 3);
-    assert.equal(lesson.quiz.length, 6);
-    assert.match(lesson.remaining, /five-chapter Marin recording/);
+    assert.equal(lesson.sections.length, 12);
+    assert.equal(lesson.examples.length, 6);
+    assert.equal(lesson.quiz.length, 12);
+    assert.match(lesson.remaining, /ten-chapter Marin recording/);
     assert.ok(lesson.sources.some(s => s.url.includes('jeemain.nta.nic.in')));
   }
 });
@@ -22,7 +22,7 @@ test('thermochemistry arithmetic preserves Chemistry work signs, Hess cancellati
   near(-40 - 500 * (-100/1000), 10);
   near((-40)/(-.100), 400);
   near(Math.exp(5744/(8.314*300)), 10, .005);
-  assert.deepEqual(lessons[0].quiz.map(q => q.answer), [1, 2, 0, 3, 1, 2]);
+  assert.deepEqual(lessons[0].quiz.slice(0,6).map(q => q.answer), [1, 2, 0, 3, 1, 2]);
 });
 
 test('solution calculations use solvent mass and solution volume in the correct places', () => {
@@ -33,7 +33,7 @@ test('solution calculations use solvent mass and solution volume in the correct 
   near(2 * .082057 * 300/.246, 200.1390243902439);
   near(.5*80 + .5*40, 60);
   near((.5*80)/60, 2/3);
-  assert.deepEqual(lessons[1].quiz.map(q => q.answer), [2, 0, 3, 1, 2, 0]);
+  assert.deepEqual(lessons[1].quiz.slice(0,6).map(q => q.answer), [2, 0, 3, 1, 2, 0]);
 });
 
 test('particle accounting reproduces dissociation and association limits', () => {
@@ -45,4 +45,22 @@ test('particle accounting reproduces dissociation and association limits', () =>
   near(association(.5, 2), .75);
   near(association(1, 2), .5);
   near(180/.75, 240);
+});
+
+test('extended applications agree with independent heat, entropy and solution balances', () => {
+  const selected=(unit,i)=>lessons[unit].quiz[i].options[lessons[unit].quiz[i].answer];
+  const energy=(-394 + 2*(-286))-(-75);
+  assert.equal(selected(0,6),`${energy} kJ/mol`.replace('-','−'));
+  assert.equal(selected(0,7),'+30 kJ/mol');near(780-750,30);
+  assert.equal(selected(0,8),'1000 J');near((100*4.2+80)*2,1000);
+  assert.equal(selected(0,9),'+20 J/(mol K)');near(6000/300,20);
+  assert.equal(selected(0,10),'20.8 J/(mol K)');near(30*Math.log(600/300),20.8,.01);
+  assert.equal(selected(0,11),'−3 kJ/mol');near(-6-300*(-.010),-3);
+  assert.equal(selected(1,6),'980 g');near(1000*1.04-60,980);
+  assert.equal(selected(1,7),'1.02 mol/kg');near(1/.980,1.02,.001);
+  assert.equal(selected(1,8),'5 × 10⁻⁵');near(2/40000,.00005);
+  assert.equal(selected(1,9),'Have the same composition');
+  assert.equal(selected(1,10),'180 g/mol');near(1.8/((.052/.52)*.1),180);
+  assert.equal(selected(1,11),'0.80');near((2.6-1)/2,.8);
+  near(2.6*(.1/2.6),.1);
 });

@@ -1,4 +1,5 @@
 import type { StudyLesson } from "./course";
+import { physicalChemistryAdditions } from "./physical-chemistry-additions.ts";
 const syllabus = { title: "NTA: JEE Main 2026 Chemistry syllabus", url: "https://jeemain.nta.nic.in/document/syllabus-2026/" };
 
 export const physicalChemistryLessons: StudyLesson[] = [
@@ -7,7 +8,7 @@ export const physicalChemistryLessons: StudyLesson[] = [
     title: "Chemical thermodynamics: energy, direction and equilibrium",
     summary: "Heat and work signs, enthalpy, Hess cycles, entropy and Gibbs-energy calculations.",
     prerequisites: "Balanced equations, moles, temperature in kelvin and basic logarithms.",
-    remaining: "Unit 4 foundation with a five-chapter Marin recording and written notes. Detailed enthalpy cycles for atomization, sublimation, hydration, ionization and dissolution, reversible-process entropy calculations and further mixed problems remain; this is not complete Unit 4 coverage.",
+    remaining: "Unit 4 has a ten-chapter Marin recording and written notes, including formation data, a lattice/hydration cycle, calorimetry and reversible-reference entropy calculations. Full Born-Haber cycles, variable heat-capacity integrals and further mixed problems remain; this is not complete Unit 4 coverage.",
     sections: [
       { title: "Define the system before following energy", paragraphs: [
         "Imagine a reaction in a flask. The chosen reacting contents are the system; everything else is its surroundings. An open system can exchange matter and energy, a closed system can exchange energy but not matter, and an isolated system exchanges neither with its surroundings.",
@@ -58,7 +59,7 @@ export const physicalChemistryLessons: StudyLesson[] = [
     title: "Solutions: concentration, vapour pressure and particle counting",
     summary: "Concentration units, Raoult's law, non-ideality, colligative effects and molar mass.",
     prerequisites: "Mole Concept, ratios, temperature in kelvin and basic gas equations.",
-    remaining: "Unit 5 foundation with a five-chapter Marin recording and written notes. Detailed vapour-composition graphs, azeotropes, quantitative non-ideal activity treatment and wider association/dissociation practice remain; this is not complete solution chemistry.",
+    remaining: "Unit 5 has a ten-chapter Marin recording and written notes, including density conversions, Henry's law, azeotropes, boiling elevation and further dissociation practice. Detailed phase diagrams, quantitative nonideal activities and wider mixed problems remain; this is not complete solution chemistry.",
     sections: [
       { title: "The denominator is part of the definition", paragraphs: [
         "Molarity is solute moles per litre of solution, while molality is solute moles per kilogram of solvent. Dissolve one mole in enough liquid to make two litres of solution and molarity is 0.50 mol/L. Dissolve one mole in 0.50 kg solvent and molality is 2.0 mol/kg. These descriptions cannot be converted into one another without further mass or density information.",
@@ -105,3 +106,28 @@ export const physicalChemistryLessons: StudyLesson[] = [
     sources: [syllabus, { title: "OpenStax: molarity", url: "https://openstax.org/books/chemistry-2e/pages/3-3-molarity" }, { title: "OpenStax: colligative properties", url: "https://openstax.org/books/chemistry-2e/pages/11-4-colligative-properties" }],
   },
 ];
+
+// Keep the expanded written companion and recorded practice in step.
+for (const lesson of physicalChemistryLessons) {
+  const extra = physicalChemistryAdditions[lesson.id as keyof typeof physicalChemistryAdditions];
+  lesson.sections.push(...extra.chapters.map(chapter => ({
+    title: chapter.title, paragraphs: [chapter.script], formula: chapter.formula,
+  })));
+  lesson.quiz.push(...extra.quiz);
+  lesson.sources.push(...(lesson.id === "solutions" ? [
+    { title: "NCERT: Solutions — Henry law and nonideal mixtures", url: "https://ncert.nic.in/textbook/pdf/lech101.pdf" },
+  ] : [
+    { title: "OpenStax: calorimetry", url: "https://openstax.org/books/chemistry-2e/pages/5-2-calorimetry" },
+    { title: "OpenStax: entropy", url: "https://openstax.org/books/chemistry-2e/pages/16-2-entropy" },
+  ]));
+  if (lesson.id === "chemical-thermodynamics") lesson.examples.push(
+    { question: "A solution and vessel have combined heat capacity 500 J/K. A reaction of 0.0500 mol causes a 2.00 K rise. Find its molar heat assuming negligible heat loss.", steps: ["The surroundings absorb 500 × 2 = 1000 J.", "The reaction releases 1.00 kJ, so its heat is negative.", "Divide by 0.0500 mol; at constant pressure with only PV work this gives molar enthalpy."], answer: "−20.0 kJ/mol." },
+    { question: "Use lattice dissociation +780 and total ion hydration −750 kJ/mol for matching endpoint states. Find the enthalpy of solution.", steps: ["Dissociate solid into gaseous ions: +780 kJ/mol.", "Hydrate those ions: −750 kJ/mol.", "Add the stages; the gaseous ions cancel."], answer: "+30 kJ/mol for the supplied illustrative data." },
+    { question: "One mole warms reversibly from 300 to 600 K at constant pressure with constant molar Cp = 30 J/(mol K). Find its entropy change.", steps: ["Integrate Cp/T between the absolute endpoint temperatures.", "ΔS = 30 ln(600/300) J/(mol K).", "ln 2 ≈ 0.6931; the entropy rises."], answer: "+20.8 J/(mol K)." },
+  );
+  else lesson.examples.push(
+    { question: "Convert 1.00 mol/L to molality for solute molar mass 60.0 g/mol and solution density 1.04 g/mL at the same temperature.", steps: ["Choose 1 L: total mass = 1040 g and solute mass = 60 g.", "Solvent mass = 980 g = 0.980 kg.", "Divide 1.00 mol by 0.980 kg solvent."], answer: "1.02 mol/kg." },
+    { question: "A gas obeys p = KH x with KH = 40000 bar at the stated temperature. Find x at gas partial pressure 2.00 bar.", steps: ["Use the partial pressure of this gas.", "x = p/KH = 2.00/40000.", "The pressure units cancel; mole fraction is dimensionless."], answer: "5.00 × 10⁻⁵." },
+    { question: "An ideal dissociation model gives i = 2.60 for a solute producing three ions. Find alpha and the formal concentration isotonic with 0.100 M non-electrolyte at the same temperature.", steps: ["i = 1 + alpha(3 − 1), hence alpha = 0.80.", "Equal osmotic pressures at equal temperature require equal iC.", "C = 0.100/2.60 mol/L."], answer: "80% dissociation; approximately 0.0385 M salt solution." },
+  );
+}
