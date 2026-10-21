@@ -10,9 +10,10 @@ import { jeeTopics } from '../app/data/jee-topics.ts';
 import { neetTopics } from '../app/data/neet-topics.ts';
 import { highYieldTopics } from '../app/data/high-yield-topics.ts';
 import { patternBatchTopics } from '../app/data/pattern-batch-topics.ts';
-import { getMizoTranslation } from '../app/data/mizo-translations.ts';
+import { batchThreeTopics } from '../app/data/batch-three-topics.ts';
+import { getMizoTranslation, mizoPendingTopicIds } from '../app/data/mizo-translations.ts';
 
-const foundationTopics = [...jeeTopics, ...neetTopics, ...highYieldTopics, ...patternBatchTopics];
+const foundationTopics = [...jeeTopics, ...neetTopics, ...highYieldTopics, ...patternBatchTopics, ...batchThreeTopics];
 const foundationCount = stream => foundationTopics.filter(topic => topic.streams.includes(stream)).reduce((total, topic) => total + topic.questions.length, 0);
 
 test('each stream retains its published expansion quota', () => {
@@ -198,8 +199,10 @@ test('high-yield topics are sourced, balanced and published to the intended stre
       assert.ok(new Set(published.map(question => question.options.indexOf(question.answer))).size >= 3, topic.id);
     }
   }
-  // MPSC questions need Mizo translations before publication.
-  assert.ok(!getReviewedQuestions('mpsc').some(question => highYieldTopics.some(topic => question.id.startsWith(`${topic.id}-`))));
+  // Only the polity topic reaches MPSC, in English while its Mizo draft is pending.
+  const mpscHighYield = new Set(getReviewedQuestions('mpsc').filter(question => highYieldTopics.some(topic => question.id.startsWith(`${topic.id}-`))).map(question => question.id.replace(/-\d+$/, '')));
+  assert.deepEqual([...mpscHighYield], ['union-polity']);
+  assert.ok(mizoPendingTopicIds.has('union-polity'));
 });
 
 test('high-yield worked answers are independently recomputed', () => {
@@ -234,11 +237,11 @@ test('pattern batch topics are sourced, balanced and published to the intended s
       for (const question of published) assert.ok(question.sourceLocation && question.explanation, question.id);
     }
   }
-  // Every MPSC question from this batch has a draft Mizo translation; the rest wait for review.
+  // Every MPSC question from this batch has a draft Mizo translation, except the polity topic, which is pending.
   for (const question of getReviewedQuestions('mpsc').filter(q => patternBatchTopics.some(topic => q.id.startsWith(`${topic.id}-`)))) {
-    assert.ok(getMizoTranslation(question), question.id);
+    if (question.id.startsWith('local-government-')) assert.equal(getMizoTranslation(question), undefined, question.id);
+    else assert.ok(getMizoTranslation(question), question.id);
   }
-  assert.ok(!getReviewedQuestions('mpsc').some(question => question.id.startsWith('local-government-')));
   // Each new stream gets fresh questions.
   for (const [stream, minimum] of Object.entries({ mpsc: 20, neet: 90, jee: 80, 'cuet-pg': 50 })) {
     const fresh = getReviewedQuestions(stream).filter(question => patternBatchTopics.some(topic => question.id.startsWith(`${topic.id}-`)));
@@ -277,4 +280,51 @@ test('pattern batch worked answers are independently recomputed', () => {
   assert.equal(answer('mpsc', 'simple-interest-1'), `Rs ${(2000 * 5 * 3) / 100}`);
   assert.equal(answer('mpsc', 'simple-interest-5'), `Rs ${1000 + (1000 * 6 * 4) / 100}`);
   assert.equal(answer('cuet-pg', 'simple-interest-10'), `${(720 * 100) / (3000 * 3)}%`);
+});
+
+test('third batch topics are sourced, balanced and published to the intended streams', () => {
+  for (const topic of batchThreeTopics) {
+    assert.ok(topic.questions.length >= 8 && topic.notes.length > 0 && topic.pitfall, topic.id);
+    assert.equal(new URL(sources[topic.sourceId].url).protocol, 'https:', topic.id);
+    for (const stream of topic.streams) {
+      const published = getReviewedQuestions(stream).filter(question => question.id.startsWith(`${topic.id}-`));
+      assert.equal(published.length, topic.questions.length, `${topic.id} in ${stream}`);
+      assert.ok(new Set(published.map(question => question.options.indexOf(question.answer))).size >= 3, topic.id);
+    }
+    // MPSC topics are either templated into Mizo or explicitly marked as pending, never guessed.
+    if (topic.streams.includes('mpsc')) {
+      for (const question of getReviewedQuestions('mpsc').filter(q => q.id.startsWith(`${topic.id}-`))) {
+        assert.equal(Boolean(getMizoTranslation(question)), !mizoPendingTopicIds.has(topic.id), question.id);
+      }
+    }
+  }
+  for (const [stream, minimum] of Object.entries({ mpsc: 150, neet: 60, jee: 50, 'cuet-pg': 90 })) {
+    const fresh = getReviewedQuestions(stream).filter(question => batchThreeTopics.some(topic => question.id.startsWith(`${topic.id}-`)));
+    assert.ok(fresh.length >= minimum - 30, `${stream} has ${fresh.length} third-batch questions`);
+  }
+});
+
+test('third batch worked answers are independently recomputed', () => {
+  const answer = (stream, id) => getReviewedQuestions(stream).find(question => question.id === id).answer;
+  assert.equal(answer('jee', 'magnetic-force-motion-8'), `${Number((1.6e-19 * 2e6 * 0.5 / 1e-13).toFixed(2))} x 10^-13 N`);
+  assert.equal(answer('neet', 'chemical-equilibrium-10'), String(Number((0.4 ** 2 / 0.2).toFixed(2))));
+  assert.equal(answer('neet', 'chemical-equilibrium-7'), String(1 / 4));
+  assert.equal(answer('jee', 'cell-potentials-4'), `${(0.80 - -2.37).toFixed(2)} V`);
+  assert.equal(answer('jee', 'cell-potentials-7'), `${(0.34 - -0.76).toFixed(2)} V`);
+  assert.equal(answer('neet', 'wave-motion-2'), `${50 * 2} m/s`);
+  assert.equal(answer('jee', 'wave-motion-5'), `${8 / 4} m/s`);
+  assert.equal(answer('jee', 'wave-motion-8'), `${340 / 170} m`);
+  assert.equal(answer('neet', 'wave-motion-9'), `${1 / 25} s`);
+  assert.equal(answer('jee', 'probability-8'), `1/${36 / 6}`);
+  assert.equal(answer('jee', 'probability-9'), `${(3 * 2) / 2}/${(8 * 7) / 2}`);
+  assert.equal(answer('jee', 'probability-7'), String(Number((0.5 + 0.4 - 0.1).toFixed(2))));
+  assert.equal(answer('jee', 'complex-numbers-7'), String(3 ** 2 + 4 ** 2));
+  assert.equal(23 % 4, 3, 'complex-numbers-6: i^23 = i^3 = -i');
+  assert.equal(answer('mpsc', 'averages-1'), String((4 + 8 + 15 + 21) / 4));
+  assert.equal(answer('cuet-pg', 'averages-8'), String(4 * 10 - (8 + 12 + 6)));
+  assert.equal(answer('mpsc', 'ratio-proportion-3'), `Rs ${(1200 * 5) / 8}`);
+  assert.equal(answer('mpsc', 'ratio-proportion-5'), `Rs ${(60 / 4) * 7}`);
+  assert.equal(answer('mpsc', 'discount-tax-commission-4'), `Rs ${640 - 640 * 0.125}`);
+  assert.equal(answer('mpsc', 'discount-tax-commission-5'), `Rs ${500 * 1.08}`);
+  assert.equal(answer('cuet-pg', 'discount-tax-commission-8'), `Rs ${20000 * 0.04}`);
 });

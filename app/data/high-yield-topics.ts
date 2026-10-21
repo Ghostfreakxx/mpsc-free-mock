@@ -176,8 +176,8 @@ export const highYieldTopics: HighYieldTopic[] = [
       ["In mammals, the pulmonary circuit carries blood between the heart and the:", "Lungs", ["Kidneys", "Brain", "Liver"], "Pulmonary circulation oxygenates blood in the lungs.", "Section 40.1: Circulatory System Variation in Animals"],
     ]) },
   { id: "union-polity", subject: "Political Science", title: "Union executive, Parliament and emergencies", sourceId: "constitution",
-    // MPSC needs a Mizo translation for every question before publication, so this starts with CUET PG.
-    streams: ["cuet-pg"],
+    // Published to MPSC in English; its Mizo draft is pending (mizoPendingTopicIds).
+    streams: ["mpsc", "cuet-pg"],
     notes: ["The President (Article 52) is elected by an electoral college (Article 54) for five years (Article 56), must be at least 35 (Article 58), can be impeached (Article 61) and can grant pardons (Article 72). The Vice-President is ex officio Chairman of the Council of States (Article 64).", "Parliament is the President and two Houses (Article 79). The Rajya Sabha is not subject to dissolution (Article 83). Money Bills are defined in Article 110 and the annual financial statement in Article 112. Emergencies: national (Article 352), failure of constitutional machinery in a State (Article 356), financial (Article 360). Amendment is under Article 368."],
     pitfall: "Match each emergency to its article: 352 national, 356 State failure, 360 financial.",
     questions: fromItems([

@@ -71,14 +71,30 @@ Scan date: 2026-09-29. This scan decides which topics get new questions. It does
 | Indian polity (local government) | `local-government` | CUET PG (MPSC after Mizo translation) |
 | MPSC Paper II aptitude | `percentages`, `simple-interest` | MPSC (templated draft Mizo), CUET PG |
 
+## Third batch (2026-10-21)
+
+| Gap from the scan | Added (topic id) | Streams |
+|---|---|---|
+| MPSC: Indian polity and governance | `union-judiciary`, `public-finance`, `constitution-making`; `union-polity` and `local-government` now also on MPSC | MPSC (English, Mizo pending), CUET PG |
+| MPSC: Mizoram politics | `sixth-schedule` | MPSC (English, Mizo pending) |
+| MPSC: modern Indian history and the national movement | `gandhi-national-movement`, `revolt-of-1857` | MPSC (English, Mizo pending), CUET PG |
+| MPSC: Indian geography | `india-location` | MPSC (English, Mizo pending), CUET PG |
+| MPSC: environment | `climate-agreements`, `biodiversity-agreements` | MPSC (English, Mizo pending) |
+| MPSC: general science | `nutrition-vitamins` | MPSC (English, Mizo pending), NEET |
+| MPSC Paper II aptitude | `averages`, `ratio-proportion`, `discount-tax-commission` | MPSC (templated draft Mizo), CUET PG |
+| Physics: magnetic force, waves | `magnetic-force-motion`, `wave-motion` | JEE, NEET |
+| Chemistry: equilibrium, electrochemistry | `chemical-equilibrium`, `cell-potentials` | JEE, NEET |
+| JEE Maths: probability, complex numbers | `probability`, `complex-numbers` | JEE |
+| NEET Biology: neural control, biotechnology | `neuron-signalling`, `biotechnology-tools` | NEET |
+
 ## Still open (next batches)
 
-- **Physics:** magnetic force and fields, alternating current, semiconductors, waves.
-- **Chemistry:** p-block chemistry, chemical equilibrium, electrochemistry, organic reaction mechanisms.
-- **JEE Maths:** limits and continuity, conic sections, probability, complex numbers.
-- **NEET Biology:** plant hormones, neural control, biotechnology, human health and disease.
-- **MPSC:** Mizo translations for `union-polity` and `local-government`, then modern Indian history and the national movement, Indian geography, economy, and general science. Each needs reviewed Mizo text before it is published.
-- **CUET PG:** the real paper covers one domain. The bank mixes subjects, so per-subject depth is still thin, especially in history and geography.
+- **MPSC:** Mizo drafts for every topic in `mizoPendingTopicIds`, from a fluent writer. After that, current events, the economy (planning, banking, budgets), world geography, and more general science (physics and chemistry in daily life).
+- **Physics:** alternating current, semiconductors, gravitation.
+- **Chemistry:** p-block chemistry, organic reaction mechanisms, chemical kinetics.
+- **JEE Maths:** limits and continuity, conic sections, matrices beyond determinants.
+- **NEET Biology:** plant hormones, human health and disease, genetics of populations.
+- **CUET PG:** per-subject depth is still thin, especially in sociology, education and English.
 
 ## Analyses consulted
 

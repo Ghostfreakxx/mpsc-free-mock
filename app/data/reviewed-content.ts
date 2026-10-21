@@ -4,6 +4,7 @@ import { jeeSources, jeeTopics } from "./jee-topics.ts";
 import { neetSources, neetTopics } from "./neet-topics.ts";
 import { highYieldSources, highYieldTopics } from "./high-yield-topics.ts";
 import { patternBatchSources, patternBatchTopics } from "./pattern-batch-topics.ts";
+import { batchThreeSources, batchThreeTopics } from "./batch-three-topics.ts";
 
 export type Stream = "mpsc" | "neet" | "jee" | "cuet-pg";
 export const contentRevision = "2026-09-27";
@@ -28,6 +29,7 @@ export const sources = {
   ...neetSources,
   ...highYieldSources,
   ...patternBatchSources,
+  ...batchThreeSources,
 } as const;
 
 export type SourceId = keyof typeof sources;
@@ -171,7 +173,7 @@ topics.push({
 });
 
 // Foundation topics are fully hand-written, so all their questions are original seeds.
-topics.push(...jeeTopics, ...neetTopics, ...highYieldTopics, ...patternBatchTopics);
+topics.push(...jeeTopics, ...neetTopics, ...highYieldTopics, ...patternBatchTopics, ...batchThreeTopics);
 
 const originalTopicCounts = new Map(topics.map(topic => [topic.id, topic.questions.length]));
 // Append within each topic so existing question IDs and saved progress stay stable.

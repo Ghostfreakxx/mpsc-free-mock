@@ -305,8 +305,8 @@ export const patternBatchTopics: PatternBatchTopic[] = [
       ["Status consistency describes:", "How consistent a person's rank is across factors such as income and education", ["The speed of social change", "A society with no inequality", "The number of social classes"], "Class systems show low status consistency; caste systems show high consistency.", "Section 9.1: status consistency"],
     ]) },
   { id: "local-government", subject: "Political Science", title: "Panchayats and municipalities", sourceId: "constitution",
-    // MPSC needs a Mizo translation for every question before publication, so this starts with CUET PG.
-    streams: ["cuet-pg"],
+    // Published to MPSC in English; its Mizo draft is pending (mizoPendingTopicIds).
+    streams: ["mpsc", "cuet-pg"],
     notes: ["Part IX (Articles 243 to 243O) covers panchayats at the village, intermediate and district levels. Not less than one-third of directly elected seats are reserved for women; panchayats last five years from their first meeting. State Finance Commissions (Article 243I) and State Election Commissions (Article 243K) support them; the Eleventh Schedule lists their possible functions.", "Part IXA covers municipalities: Nagar Panchayats, Municipal Councils and Municipal Corporations (Article 243Q), with functions listed in the Twelfth Schedule. Under Article 243M, Part IX does not apply to Nagaland, Meghalaya and Mizoram, which have their own traditional and district-council institutions."],
     pitfall: "The Eleventh Schedule is for panchayats and the Twelfth for municipalities; State Election Commissions, not the Election Commission of India, conduct their elections.",
     questions: fromItems([

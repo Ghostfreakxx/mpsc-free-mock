@@ -52,7 +52,18 @@ export const mizoCategories: Record<string, string> = {
   "Numerical reasoning": "Chhiarkawp ngaihtuahna",
   Percentages: "Percentage chhutna",
   "Simple interest": "Simple interest chhutna",
+  Averages: "Average chhutna",
+  "Ratio and proportion": "Ratio leh proportion",
+  "Discount, tax and commission": "Discount, tax leh commission",
 };
+
+// MPSC general-studies topics published in English first. Their Mizo drafts need a fluent writer,
+// so they never receive a guessed translation; the practice page shows "Mizo translation pending".
+export const mizoPendingTopicIds = new Set([
+  "union-polity", "local-government", "union-judiciary", "public-finance", "sixth-schedule", "constitution-making",
+  "gandhi-national-movement", "revolt-of-1857", "india-location", "climate-agreements", "biodiversity-agreements", "nutrition-vitamins",
+]);
+const topicIdOf = (questionId: string) => questionId.replace(/-\d+$/, "");
 
 const unchangedTerms = new Set([
   "21 January 1972", "20 February 1987", "25 April 1952", "1 April 1898", "Sixth Schedule", "Assam", "1986", "Ram", "Government of India Act, 1935",
@@ -67,7 +78,7 @@ function term(text: string): string | undefined {
 // These patterns correspond only to the bank's deterministic question templates.
 // Unrecognised future content falls back to English, never a guessed translation.
 export function getMizoTranslation(q: ReviewedQuestion): MizoTranslation | undefined {
-  if (!q.streams.includes("mpsc")) return undefined;
+  if (!q.streams.includes("mpsc") || mizoPendingTopicIds.has(topicIdOf(q.id))) return undefined;
   const finish = (question: string, explanation: string, options = q.options): MizoTranslation => ({ question, options: [...options], explanation, status: "draft" });
   const manual = mizoManual[q.id];
   if (manual) return finish(manual[0], manual[2], manual[1] ?? q.options);
@@ -159,6 +170,55 @@ export function getMizoTranslation(q: ReviewedQuestion): MizoTranslation | undef
   if (match) {
     const [, principal, interest, years] = match;
     return finish(`Rs ${principal} chuan kum ${years}-ah simple interest Rs ${interest} a hlawk. Kum khat interest rate chu eng zat nge?`, `r = (I x 100) / (P x t) = (${interest} x 100) / (${principal} x ${years}) = ${q.answer}.`);
+  }
+  // Averages, ratio and discount templates (batch-three-topics.ts).
+  match = q.question.match(/^Find the mean of ([\d, ]+) and (\d+)\.$/);
+  if (match) {
+    const [, head, last] = match;
+    const values = [...head.split(", "), last].map(Number);
+    return finish(`${head} leh ${last} average (mean) chu eng zat nge?`, `Mean = a vaiin / a zat = ${values.reduce((a, b) => a + b, 0)}/${values.length} = ${q.answer}.`);
+  }
+  match = q.question.match(/^The mean of (\d+) numbers is (\d+)\. What is their sum\?$/);
+  if (match) {
+    const [, count, mean] = match;
+    return finish(`Number ${count} average chu ${mean} a ni. A vaiin chu eng zat nge?`, `A vaiin = a zat x average = ${count} x ${mean} = ${q.answer}.`);
+  }
+  match = q.question.match(/^The mean of 4 numbers is (\d+)\. Three of them are (\d+), (\d+) and (\d+)\. Find the fourth\.$/);
+  if (match) {
+    const [, mean, a, b, c] = match;
+    return finish(`Number 4 average chu ${mean} a ni. A pathum chu ${a}, ${b} leh ${c} an ni. A palina chhut rawh.`, `A pali vaiin = 4 x ${mean} = ${4 * +mean}; a palina = ${4 * +mean} - ${+a + +b + +c} = ${q.answer}.`);
+  }
+  match = q.question.match(/^Divide Rs (\d+) in the ratio (\d+):(\d+)\. What is the larger share\?$/);
+  if (match) {
+    const [, total, a, b] = match;
+    return finish(`Rs ${total} chu ${a}:${b} ratio-in then rawh. A tam zawk chan chu eng zat nge?`, `A tam zawk chan = ${total} x ${b}/(${a} + ${b}) = ${q.answer}.`);
+  }
+  match = q.question.match(/^If (\d+) pens cost Rs (\d+), how much do (\d+) pens cost\?$/);
+  if (match) {
+    const [, count, cost, wanted] = match;
+    return finish(`Pen ${count} man chu Rs ${cost} a ni chuan, pen ${wanted} man chu eng zat nge?`, `Pen pakhat man = ${cost}/${count} = Rs ${+cost / +count}; pen ${wanted} man = ${q.answer}.`);
+  }
+  match = q.question.match(/^Solve for x: x\/(\d+) = (\d+)\/(\d+)\.$/);
+  if (match) {
+    const [, a, b, c] = match;
+    return finish(`x chhut rawh: x/${a} = ${b}/${c}.`, `x = ${a} x ${b}/${c} = ${q.answer}.`);
+  }
+  match = q.question.match(/^An item marked Rs (\d+) is sold at a ([\d.]+)% discount\. What is the sale price\?$/);
+  if (match) {
+    const [, price, rate] = match;
+    const discount = (+price * +rate) / 100;
+    return finish(`Rs ${price} man ziak bungrua chu ${rate}% discount-in hralh a ni. A hralh man chu eng zat nge?`, `Discount = ${price} x ${rate}/100 = Rs ${discount}; hralh man = ${price} - ${discount} = ${q.answer}.`);
+  }
+  match = q.question.match(/^Sales tax of (\d+)% is charged on a Rs (\d+) purchase\. What is the total cost\?$/);
+  if (match) {
+    const [, rate, price] = match;
+    const tax = (+price * +rate) / 100;
+    return finish(`Rs ${price} bungrua lei-ah ${rate}% sales tax a awm. A vaiin man chu eng zat nge?`, `Tax = ${price} x ${rate}/100 = Rs ${tax}; a vaiin = ${price} + ${tax} = ${q.answer}.`);
+  }
+  match = q.question.match(/^A salesperson earns (\d+)% commission on sales of Rs (\d+)\. What is the commission\?$/);
+  if (match) {
+    const [, rate, sales] = match;
+    return finish(`Hralhtu chuan Rs ${sales} a hralh-ah ${rate}% commission a hmu. A commission chu eng zat nge?`, `Commission = ${sales} x ${rate}/100 = ${q.answer}.`);
   }
   return undefined;
 }
