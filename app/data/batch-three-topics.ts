@@ -1,0 +1,360 @@
+import type { QuestionSeed, Stream } from "./reviewed-content";
+import { fromItems, type Item } from "./question-builders.ts";
+
+// Third batch (2026-10-21), weighted towards MPSC Paper I general studies. Every item is original,
+// written in the exam's style, and cites the section or article it was checked against.
+// General-studies topics are published in English first; their Mizo drafts are pending
+// (see mizoPendingTopicIds), and the practice page labels them "Mizo translation pending".
+export const batchThreeSources = {
+  gandhiMovement: { title: "NCERT Themes in Indian History Part III (Class 12): Mahatma Gandhi and the Nationalist Movement", url: "https://ncert.nic.in/textbook.php" },
+  rebelsRaj: { title: "NCERT Themes in Indian History Part III (Class 12): Rebels and the Raj", url: "https://ncert.nic.in/textbook.php" },
+  indiaLocation: { title: "NCERT India: Physical Environment (Class 11), Chapter 1: India - Location", url: "https://ncert.nic.in/textbook.php" },
+  unfccc: { title: "UNFCCC secretariat: the Convention, the Kyoto Protocol and the Paris Agreement", url: "https://unfccc.int/process-and-meetings/the-paris-agreement" },
+  cbd: { title: "Secretariat of the Convention on Biological Diversity: introduction to the Convention", url: "https://www.cbd.int/intro/" },
+  nutrition: { title: "OpenStax Biology 2e: 34.2 Nutrition and Energy Production", url: "https://openstax.org/books/biology-2e/pages/34-2-nutrition-and-energy-production" },
+  magneticMotion: { title: "OpenStax University Physics Volume 2: 11.3 Motion of a Charged Particle in a Magnetic Field", url: "https://openstax.org/books/university-physics-volume-2/pages/11-3-motion-of-a-charged-particle-in-a-magnetic-field" },
+  equilibriumConstants: { title: "OpenStax Chemistry 2e: 13.2 Equilibrium Constants", url: "https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants" },
+  cellPotentials: { title: "OpenStax Chemistry 2e: 17.3 Electrode and Cell Potentials", url: "https://openstax.org/books/chemistry-2e/pages/17-3-electrode-and-cell-potentials" },
+  waves: { title: "OpenStax University Physics Volume 1: 16.2 Mathematics of Waves", url: "https://openstax.org/books/university-physics-volume-1/pages/16-2-mathematics-of-waves" },
+  probability: { title: "OpenStax Precalculus 2e: 11.7 Probability", url: "https://openstax.org/books/precalculus-2e/pages/11-7-probability" },
+  complexNumbers: { title: "OpenStax College Algebra 2e: 2.4 Complex Numbers", url: "https://openstax.org/books/college-algebra-2e/pages/2-4-complex-numbers" },
+  neurons: { title: "OpenStax Biology 2e: 35.2 How Neurons Communicate", url: "https://openstax.org/books/biology-2e/pages/35-2-how-neurons-communicate" },
+  biotechnology: { title: "OpenStax Biology 2e: 17.1 Biotechnology", url: "https://openstax.org/books/biology-2e/pages/17-1-biotechnology" },
+  averages: { title: "OpenStax Prealgebra 2e: 5.5 Averages and Probability", url: "https://openstax.org/books/prealgebra-2e/pages/5-5-averages-and-probability" },
+  proportions: { title: "OpenStax Prealgebra 2e: 6.5 Solve Proportions and their Applications", url: "https://openstax.org/books/prealgebra-2e/pages/6-5-solve-proportions-and-their-applications" },
+  discounts: { title: "OpenStax Prealgebra 2e: 6.3 Solve Sales Tax, Commission, and Discount Applications", url: "https://openstax.org/books/prealgebra-2e/pages/6-3-solve-sales-tax-commission-and-discount-applications" },
+} as const;
+
+type BatchThreeTopic = {
+  id: string; subject: string; title: string;
+  // Constitutional items reuse the existing May 2024 edition source.
+  sourceId: keyof typeof batchThreeSources | "constitution";
+  streams: Stream[]; notes: string[]; pitfall: string; questions: QuestionSeed[];
+};
+
+const round = (value: number) => Number(value.toFixed(1));
+const listOf = (values: readonly number[]) => `${values.slice(0, -1).join(", ")} and ${values.at(-1)}`;
+const sum = (values: readonly number[]) => values.reduce((a, b) => a + b, 0);
+
+// Aptitude items follow fixed English templates so the Mizo draft is generated from the same numbers
+// (see getMizoTranslation). Distractors are the usual slips for each calculation.
+const averageItems: Item[] = [
+  ...([[4, 8, 15, 21], [6, 10, 14, 30], [5, 9, 12, 18, 21], [12, 15, 18]] as const).map((values): Item => {
+    const total = sum(values), mean = round(total / values.length);
+    return [`Find the mean of ${listOf(values)}.`, String(mean), [String(total), String(Math.max(...values) - Math.min(...values)), String(round(total / (values.length - 1)))], `Mean = sum / count = ${total}/${values.length} = ${mean}.`, "Section 5.5: calculate the mean of a set of numbers"];
+  }),
+  ...([[5, 12], [6, 14], [10, 23]] as const).map(([count, mean]): Item => {
+    const total = count * mean;
+    return [`The mean of ${count} numbers is ${mean}. What is their sum?`, String(total), [String(count + mean), String(mean), String(total / 2)], `Sum = count x mean = ${count} x ${mean} = ${total}.`, "Section 5.5: mean = sum / count, rearranged"];
+  }),
+  ...([[10, 8, 12, 6], [25, 20, 30, 22], [15, 10, 18, 20]] as const).map(([mean, a, b, c]): Item => {
+    const fourth = 4 * mean - (a + b + c);
+    return [`The mean of 4 numbers is ${mean}. Three of them are ${a}, ${b} and ${c}. Find the fourth.`, String(fourth), [String(mean), String(4 * mean), String(round((a + b + c) / 3))], `Sum of all four = 4 x ${mean} = ${4 * mean}; fourth = ${4 * mean} - ${a + b + c} = ${fourth}.`, "Section 5.5: mean = sum / count, rearranged"];
+  }),
+];
+
+const proportionItems: Item[] = [
+  ...([[600, 1, 2], [900, 4, 5], [1200, 3, 5], [350, 2, 5]] as const).map(([total, a, b]): Item => {
+    const share = (total * b) / (a + b);
+    return [`Divide Rs ${total} in the ratio ${a}:${b}. What is the larger share?`, `Rs ${share}`, [`Rs ${(total * a) / (a + b)}`, `Rs ${total / 2}`, `Rs ${round((total * b) / a)}`], `Larger share = ${total} x ${b}/(${a} + ${b}) = Rs ${share}.`, "Section 6.5: proportion applications"];
+  }),
+  ...([[4, 60, 7], [5, 80, 12], [3, 45, 10]] as const).map(([count, cost, wanted]): Item => {
+    const price = (cost / count) * wanted;
+    return [`If ${count} pens cost Rs ${cost}, how much do ${wanted} pens cost?`, `Rs ${price}`, [`Rs ${cost / count}`, `Rs ${cost + (wanted - count)}`, `Rs ${round((cost * count) / wanted)}`], `One pen costs ${cost}/${count} = Rs ${cost / count}; ${wanted} pens cost Rs ${price}.`, "Section 6.5: solve proportions"];
+  }),
+  ...([[6, 4, 3], [10, 3, 5], [12, 5, 4]] as const).map(([a, b, c]): Item => {
+    const x = (a * b) / c;
+    return [`Solve for x: x/${a} = ${b}/${c}.`, String(x), [String(round((a * c) / b)), String(round((b * c) / a)), String(a + b - c)], `x = ${a} x ${b}/${c} = ${x}.`, "Section 6.5: solve proportions by cross-multiplication"];
+  }),
+];
+
+const discountItems: Item[] = [
+  ...([[800, 25], [1500, 10], [2400, 15], [640, 12.5]] as const).map(([price, rate]): Item => {
+    const discount = (price * rate) / 100, sale = price - discount;
+    return [`An item marked Rs ${price} is sold at a ${rate}% discount. What is the sale price?`, `Rs ${sale}`, [`Rs ${discount}`, `Rs ${price + discount}`, `Rs ${price - rate}`], `Discount = ${price} x ${rate}/100 = Rs ${discount}; sale price = ${price} - ${discount} = Rs ${sale}.`, "Section 6.3: discount applications"];
+  }),
+  ...([[500, 8], [1200, 5], [250, 12]] as const).map(([price, rate]): Item => {
+    const tax = (price * rate) / 100, total = price + tax;
+    return [`Sales tax of ${rate}% is charged on a Rs ${price} purchase. What is the total cost?`, `Rs ${total}`, [`Rs ${tax}`, `Rs ${price - tax}`, `Rs ${price + rate}`], `Tax = ${price} x ${rate}/100 = Rs ${tax}; total = ${price} + ${tax} = Rs ${total}.`, "Section 6.3: sales tax applications"];
+  }),
+  ...([[20000, 4], [15000, 6], [8500, 2]] as const).map(([sales, rate]): Item => {
+    const commission = (sales * rate) / 100;
+    return [`A salesperson earns ${rate}% commission on sales of Rs ${sales}. What is the commission?`, `Rs ${commission}`, [`Rs ${commission * 10}`, `Rs ${commission / 10}`, `Rs ${sales + commission}`], `Commission = ${sales} x ${rate}/100 = Rs ${commission}.`, "Section 6.3: commission applications"];
+  }),
+];
+
+export const batchThreeTopics: BatchThreeTopic[] = [
+  { id: "union-judiciary", subject: "Political Science", title: "The Union judiciary and High Courts", sourceId: "constitution", streams: ["mpsc", "cuet-pg"],
+    notes: ["Article 124 establishes the Supreme Court; its judges serve until 65, High Court judges until 62 (Article 217). The Supreme Court is a court of record (Article 129) and the law it declares binds all courts (Article 141).", "Jurisdiction: original in Union-State disputes (Article 131), special leave to appeal (Article 136), advisory opinions sought by the President (Article 143). Article 32 lets people approach the Supreme Court for Fundamental Rights; Article 226 gives High Courts wider writ powers."],
+    pitfall: "Article 32 is itself a Fundamental Right limited to Part III; Article 226 also covers 'any other purpose'.",
+    questions: fromItems([
+      ["The Supreme Court of India is established by:", "Article 124", ["Article 214", "Article 32", "Article 141"], "Article 124(1) establishes the Supreme Court of India.", "Article 124(1)"],
+      ["A judge of the Supreme Court holds office until the age of:", "65 years", ["62 years", "60 years", "70 years"], "Article 124(2) fixes retirement at sixty-five.", "Article 124(2)"],
+      ["A judge of a High Court holds office until the age of:", "62 years", ["65 years", "60 years", "58 years"], "Article 217(1) fixes retirement at sixty-two.", "Article 217(1)"],
+      ["The power of High Courts to issue writs, including for purposes other than enforcing Fundamental Rights, is in:", "Article 226", ["Article 32", "Article 124", "Article 143"], "Article 226 lets High Courts issue writs for Part III rights 'and for any other purpose'.", "Article 226(1)"],
+      ["The President may refer a question of law or fact to the Supreme Court for its opinion under:", "Article 143", ["Article 131", "Article 137", "Article 72"], "Article 143 provides the Supreme Court's advisory jurisdiction.", "Article 143(1)"],
+      ["A dispute between the Government of India and one or more States falls within the Supreme Court's original jurisdiction under:", "Article 131", ["Article 143", "Article 226", "Article 136"], "Article 131 gives the Supreme Court original jurisdiction in such disputes.", "Article 131"],
+      ["Under Article 141, the law declared by the Supreme Court is:", "Binding on all courts within India", ["Advisory only", "Binding only on the Supreme Court itself", "Binding only after Parliament approves it"], "Article 141 makes the Supreme Court's declared law binding on all courts in India.", "Article 141"],
+      ["Article 129 declares the Supreme Court to be:", "A court of record, with power to punish for contempt of itself", ["A tribunal under the President", "An advisory body only", "A court of appeal only, without original jurisdiction"], "A court of record's proceedings are preserved as evidence, and it may punish contempt.", "Article 129"],
+      ["A Supreme Court judge can be removed only after an address in each House of Parliament supported by:", "A majority of the House's total membership and two-thirds of members present and voting", ["A simple majority of members present", "Three-fourths of the total membership", "The Prime Minister's recommendation alone"], "Article 124(4) sets this special majority for proved misbehaviour or incapacity.", "Article 124(4)"],
+      ["Special leave to appeal from any court or tribunal in India may be granted by the Supreme Court under:", "Article 136", ["Article 132", "Article 226", "Article 32"], "Article 136 gives the Supreme Court discretionary power to grant special leave to appeal.", "Article 136(1)"],
+    ]) },
+  { id: "public-finance", subject: "Economics", title: "Public finance in the Constitution", sourceId: "constitution", streams: ["mpsc", "cuet-pg"],
+    notes: ["No tax can be levied except by authority of law (Article 265). Revenues go to the Consolidated Fund of India (Article 266); the Contingency Fund (Article 267) meets unforeseen expenditure. The Finance Commission (Article 280) is constituted every fifth year.", "Money Bills start only in the Lok Sabha (Article 109); the Rajya Sabha must return them within 14 days, and the Speaker decides whether a Bill is a Money Bill (Article 110(3)). The GST Council (Article 279A) is chaired by the Union Finance Minister; the CAG is under Article 148."],
+    pitfall: "Article 280 is the Union Finance Commission; Article 243I is the State Finance Commission for panchayats.",
+    questions: fromItems([
+      ["Article 265 provides that no tax shall be levied or collected except:", "By authority of law", ["By order of the President", "With approval of the Finance Commission", "By resolution of the Rajya Sabha"], "Taxation needs a law passed by the legislature.", "Article 265"],
+      ["Revenues received by the Government of India form the Consolidated Fund of India under:", "Article 266", ["Article 267", "Article 280", "Article 148"], "Article 266(1) creates the Consolidated Fund of India.", "Article 266(1)"],
+      ["The Contingency Fund of India, for unforeseen expenditure, is provided for in:", "Article 267", ["Article 266", "Article 280", "Article 360"], "Article 267(1) lets Parliament establish a Contingency Fund placed at the President's disposal.", "Article 267(1)"],
+      ["Under Article 280, the President constitutes a Finance Commission:", "Every fifth year, or earlier if considered necessary", ["Every year", "Every tenth year", "Only during a Financial Emergency"], "Article 280(1) requires a Finance Commission at the expiration of every fifth year.", "Article 280(1)"],
+      ["The Goods and Services Tax Council is provided for in:", "Article 279A", ["Article 280", "Article 246A", "Article 269A"], "Article 279A creates the GST Council; Article 246A gives the power to make GST laws.", "Article 279A(1)"],
+      ["The GST Council is chaired by the:", "Union Finance Minister", ["Prime Minister", "President", "Governor of the Reserve Bank of India"], "Article 279A(2)(a) names the Union Finance Minister as Chairperson.", "Article 279A(2)(a)"],
+      ["The Comptroller and Auditor-General of India is provided for in:", "Article 148", ["Article 76", "Article 280", "Article 324"], "Article 148 provides for the CAG.", "Article 148(1)"],
+      ["A Money Bill can be introduced only in:", "The House of the People (Lok Sabha)", ["The Council of States (Rajya Sabha)", "Either House", "A joint sitting of both Houses"], "Article 109(1) bars introducing a Money Bill in the Council of States.", "Article 109(1)"],
+      ["The Council of States must return a Money Bill, with or without recommendations, within:", "14 days", ["7 days", "30 days", "6 months"], "Article 109(2) gives the Council of States fourteen days.", "Article 109(2)"],
+      ["If a question arises whether a Bill is a Money Bill, the final decision rests with the:", "Speaker of the House of the People", ["President", "Chairman of the Council of States", "Supreme Court"], "Under Article 110(3) the Speaker's decision is final.", "Article 110(3)"],
+    ]) },
+  { id: "sixth-schedule", subject: "Mizoram GK", title: "Sixth Schedule and Mizoram's district councils", sourceId: "constitution", streams: ["mpsc"],
+    notes: ["Article 244(2) applies the Sixth Schedule to tribal areas in Assam, Meghalaya, Tripura and Mizoram. In Mizoram the autonomous districts are the Chakma, Mara and Lai districts.", "A District Council has at most 30 members, of whom up to four are nominated by the Governor; elected members serve five years. Article 371G protects Mizo religious and social practices, customary law and land ownership unless the Mizoram Assembly decides otherwise, and gives the Assembly at least 40 members."],
+    pitfall: "Mizoram's district councils are created under the Sixth Schedule, not Part IX: Article 243M keeps panchayats out of Mizoram.",
+    questions: fromItems([
+      ["Under Article 244(2), the Sixth Schedule applies to tribal areas in:", "Assam, Meghalaya, Tripura and Mizoram", ["Nagaland, Manipur, Sikkim and Mizoram", "Assam, Nagaland, Manipur and Tripura", "Arunachal Pradesh, Meghalaya, Tripura and Mizoram"], "Article 244(2) names these four States.", "Article 244(2)"],
+      ["The autonomous districts of Mizoram listed in the Sixth Schedule are:", "Chakma, Mara and Lai", ["Lai, Mara and Hmar", "Chakma, Riang and Lai", "Mara, Lai and Aizawl"], "Paragraph 20 lists the Chakma, Mara and Lai districts under Mizoram.", "Sixth Schedule, paragraph 20, Part III"],
+      ["A District Council under the Sixth Schedule may have at most how many members?", "30", ["40", "25", "60"], "Paragraph 2(1) allows not more than thirty members.", "Sixth Schedule, paragraph 2(1)"],
+      ["Of a District Council's members, the Governor may nominate not more than:", "Four", ["Two", "Six", "Ten"], "Paragraph 2(1) allows up to four members nominated by the Governor; the rest are elected.", "Sixth Schedule, paragraph 2(1)"],
+      ["Elected members of a District Council normally hold office for:", "Five years", ["Three years", "Four years", "Six years"], "Paragraph 2(6A) fixes a five-year term from the first meeting.", "Sixth Schedule, paragraph 2(6A)"],
+      ["Article 244, on administering Scheduled and Tribal Areas, is in:", "Part X", ["Part IX", "Part XXI", "Part IVA"], "Part X is titled 'The Scheduled and Tribal Areas'.", "Part X, Article 244"],
+      ["Article 371G protects, among other things:", "Mizo customary law and procedure, and land ownership and transfer, unless the Mizoram Assembly decides otherwise", ["A right of Mizoram to leave the Union", "Exemption of Mizoram from all Union taxes", "A separate citizenship for residents of Mizoram"], "Article 371G(a) says Acts of Parliament on these matters apply only if the Assembly so resolves.", "Article 371G(a)"],
+      ["Under Article 371G, the Legislative Assembly of Mizoram must have not less than:", "40 members", ["60 members", "30 members", "50 members"], "Article 371G(b) sets a minimum of forty members.", "Article 371G(b)"],
+    ]) },
+  { id: "constitution-making", subject: "Political Science", title: "Making and basic features of the Constitution", sourceId: "constitution", streams: ["mpsc", "cuet-pg"],
+    notes: ["The Preamble records adoption by the Constituent Assembly on 26 November 1949; most provisions commenced on 26 January 1950 (Article 394). It declares India a Sovereign Socialist Secular Democratic Republic; 'Socialist' and 'Secular' were inserted by the Forty-second Amendment (1976).", "Article 1: India, that is Bharat, is a Union of States. Article 3 lets Parliament form new States and change boundaries or names. Part II covers citizenship at commencement. Article 343 makes Hindi in Devanagari the Union's official language, and the Eighth Schedule lists 22 languages."],
+    pitfall: "26 November 1949 is adoption (Constitution Day); 26 January 1950 is commencement (Republic Day).",
+    questions: fromItems([
+      ["According to the Preamble, the Constituent Assembly adopted the Constitution on:", "26 November 1949", ["26 January 1950", "15 August 1947", "9 December 1946"], "The Preamble ends 'this twenty-sixth day of November, 1949'.", "Preamble"],
+      ["Most provisions of the Constitution came into force on 26 January 1950 under:", "Article 394", ["Article 393", "Article 368", "Article 1"], "Article 394 brought some articles into force at once and the rest on 26 January 1950.", "Article 394"],
+      ["The words 'Socialist' and 'Secular' were inserted into the Preamble by the:", "Forty-second Amendment, 1976", ["First Amendment, 1951", "Forty-fourth Amendment, 1978", "Seventy-third Amendment, 1992"], "The text's footnote records the insertion by the Constitution (Forty-second Amendment) Act, 1976.", "Preamble, footnote"],
+      ["Article 1 declares that India, that is Bharat, shall be:", "A Union of States", ["A federation of provinces", "A confederation of states", "A unitary republic of territories"], "Article 1(1) uses the words 'a Union of States'.", "Article 1(1)"],
+      ["Under Article 343, the official language of the Union is:", "Hindi in Devanagari script", ["English only", "Hindi in any script", "Sanskrit"], "Article 343(1) names Hindi in Devanagari script.", "Article 343(1)"],
+      ["How many languages are listed in the Eighth Schedule?", "22", ["18", "14", "24"], "The Eighth Schedule lists twenty-two languages.", "Eighth Schedule"],
+      ["The Preamble declares India to be a:", "Sovereign Socialist Secular Democratic Republic", ["Sovereign Democratic Federal Republic", "Socialist Democratic Union of Provinces", "Secular Federal Commonwealth"], "These are the Preamble's words as amended.", "Preamble"],
+      ["Parliament may form new States and alter the areas, boundaries or names of existing States under:", "Article 3", ["Article 1", "Article 2", "Article 368"], "Article 3 gives Parliament this power by law.", "Article 3"],
+      ["Citizenship at the commencement of the Constitution is dealt with in:", "Part II", ["Part III", "Part I", "Part IV"], "Part II, Articles 5 to 11, covers citizenship.", "Part II, Articles 5-11"],
+    ]) },
+  { id: "gandhi-national-movement", subject: "History", title: "Gandhi and the national movement", sourceId: "gandhiMovement", streams: ["mpsc", "cuet-pg"],
+    notes: ["Gandhi returned from South Africa in January 1915 and spoke at the opening of Banaras Hindu University in February 1916. Champaran (1917), then Kheda and Ahmedabad (1918), the Rowlatt Satyagraha and Jallianwala Bagh (April 1919) followed.", "Non-Cooperation, joined with the Khilafat Movement, was called off after Chauri Chaura (February 1922). The Lahore Congress (December 1929) resolved on Purna Swaraj, marked on 26 January 1930. The Salt March ran from Sabarmati to Dandi from 12 March 1930; the Gandhi-Irwin Pact (1931) preceded the Second Round Table Conference. Quit India began in August 1942."],
+    pitfall: "Keep the three mass movements in order: Non-Cooperation (1920-22), Civil Disobedience (1930-34), Quit India (1942).",
+    questions: fromItems([
+      ["Gandhi returned to India from South Africa in:", "January 1915", ["January 1919", "August 1909", "March 1920"], "He came back in January 1915 after two decades abroad.", "Chapter: A Leader Announces Himself"],
+      ["Gandhi's first major public speech in India was at the opening of:", "Banaras Hindu University, February 1916", ["Aligarh Muslim University, 1920", "Calcutta University, 1917", "The Lahore Congress, 1929"], "At BHU he criticised the Indian elite for neglecting the labouring poor.", "Chapter: A Leader Announces Himself"],
+      ["Gandhi's 1917 satyagraha for indigo cultivators took place in:", "Champaran", ["Kheda", "Bardoli", "Dandi"], "In Champaran, Bihar, he took up the peasants' grievances against indigo planters.", "Chapter: A Leader Announces Himself"],
+      ["The Jallianwala Bagh massacre at Amritsar took place in:", "April 1919", ["March 1930", "August 1942", "February 1922"], "It followed protests against the Rowlatt Act in 1919.", "Chapter: The Making and Unmaking of Non-cooperation"],
+      ["Gandhi called off the Non-Cooperation Movement after violence at:", "Chauri Chaura, February 1922", ["Amritsar, April 1919", "Dandi, April 1930", "Meerut, May 1857"], "A mob killed policemen at Chauri Chaura, and Gandhi withdrew the movement.", "Chapter: The Making and Unmaking of Non-cooperation"],
+      ["The Non-Cooperation Movement was combined with the:", "Khilafat Movement", ["Swadeshi Movement of 1905", "Quit India Movement", "Revolt of 1857"], "Gandhi joined Non-Cooperation with the Khilafat campaign to bring Hindus and Muslims together.", "Chapter: The Making and Unmaking of Non-cooperation"],
+      ["At its Lahore session in December 1929, the Congress resolved on:", "Purna Swaraj (complete independence)", ["Dominion status", "Partition of India", "Separate electorates"], "Under Jawaharlal Nehru's presidency the Congress committed to complete independence.", "Chapter: The Salt Satyagraha"],
+      ["The Salt March, which began at Sabarmati Ashram on 12 March 1930, ended at:", "Dandi", ["Champaran", "Kheda", "Bardoli"], "Gandhi walked to the coast at Dandi and broke the salt law.", "Chapter: The Salt Satyagraha"],
+      ["26 January 1930 was observed across India as:", "Independence Day (Purna Swaraj Day)", ["Republic Day", "Constitution Day", "Martyrs' Day"], "After the Lahore resolution, 26 January 1930 was marked as Independence Day.", "Chapter: The Salt Satyagraha"],
+      ["The Gandhi-Irwin Pact was signed in:", "1931", ["1929", "1935", "1942"], "The March 1931 pact ended civil disobedience and led to the Second Round Table Conference.", "Chapter: Dialogues"],
+      ["Which Round Table Conference in London did Gandhi attend?", "The Second, in late 1931", ["The First, in 1930", "The Third, in 1932", "All three"], "Gandhi represented the Congress only at the Second Round Table Conference.", "Chapter: Dialogues"],
+      ["The Quit India Movement was launched in:", "August 1942", ["August 1947", "March 1930", "January 1915"], "Gandhi launched Quit India in August 1942, during the Second World War.", "Chapter: Quit India"],
+    ]) },
+  { id: "revolt-of-1857", subject: "History", title: "The revolt of 1857", sourceId: "rebelsRaj", streams: ["mpsc", "cuet-pg"],
+    notes: ["The revolt began with the sepoys' mutiny at Meerut on 10 May 1857; they marched to Delhi and proclaimed Bahadur Shah Zafar their leader. Rumours that Enfield rifle cartridges were greased with cow and pig fat spread alarm.", "Leaders included Nana Sahib (Kanpur), Begum Hazrat Mahal (Lucknow), Rani Lakshmibai (Jhansi) and Kunwar Singh (Arrah, Bihar). Wellesley devised the subsidiary alliance (1798), and Awadh was annexed in 1856."],
+    pitfall: "Link each leader to a place: Lucknow and Begum Hazrat Mahal, Kanpur and Nana Sahib, Jhansi and Lakshmibai, Arrah and Kunwar Singh.",
+    questions: fromItems([
+      ["The revolt of 1857 began with the sepoys' mutiny at Meerut on:", "10 May 1857", ["29 March 1857", "10 May 1858", "1 November 1858"], "The Meerut sepoys rose on 10 May 1857 and rode to Delhi.", "Chapter: Pattern of the Rebellion"],
+      ["The rebel sepoys who reached Delhi proclaimed as their leader:", "Bahadur Shah Zafar, the Mughal emperor", ["Nana Sahib", "Rani Lakshmibai", "Tantia Tope"], "They sought the aged Mughal emperor's blessing for the uprising.", "Chapter: Pattern of the Rebellion"],
+      ["Awadh was annexed by the British in:", "1856", ["1801", "1857", "1848"], "Dalhousie annexed Awadh in 1856, citing misgovernment.", "Chapter: Awadh in Revolt"],
+      ["The subsidiary alliance system was devised by:", "Lord Wellesley", ["Lord Dalhousie", "Lord Canning", "Lord Cornwallis"], "Wellesley introduced the system in 1798.", "Chapter: Awadh in Revolt"],
+      ["In Lucknow, the rebellion was led by:", "Begum Hazrat Mahal", ["Rani Lakshmibai", "Kunwar Singh", "Bahadur Shah Zafar"], "Begum Hazrat Mahal led the revolt in Lucknow.", "Chapter: Leaders and Followers"],
+      ["Kunwar Singh, a local zamindar, led the rebellion in:", "Arrah, Bihar", ["Jhansi", "Kanpur", "Lucknow"], "Kunwar Singh joined the rebel sepoys in Arrah.", "Chapter: Leaders and Followers"],
+      ["Nana Sahib, adopted son of the Peshwa Baji Rao II, led the rebels at:", "Kanpur", ["Lucknow", "Delhi", "Jhansi"], "Nana Sahib led the rebellion in Kanpur.", "Chapter: Leaders and Followers"],
+      ["A rumour that spread among sepoys said the cartridges of the new Enfield rifle were greased with:", "Cow and pig fat", ["Coconut oil", "Mustard oil", "Wax from beehives"], "The rumour offended both Hindu and Muslim sepoys.", "Chapter: Rumours and Prophecies"],
+      ["Rani Lakshmibai led the rebels at:", "Jhansi", ["Arrah", "Meerut", "Barrackpore"], "The Rani of Jhansi became one of the revolt's best-known leaders.", "Chapter: Leaders and Followers"],
+    ]) },
+  { id: "india-location", subject: "Geography", title: "India: location and extent", sourceId: "indiaLocation", streams: ["mpsc", "cuet-pg"],
+    notes: ["Mainland India lies between about 8°4'N and 37°6'N and between 68°7'E and 97°25'E, entirely in the northern hemisphere. The Tropic of Cancer divides the country into roughly equal halves and passes through Tripura and Mizoram in the north-east.", "Indian Standard Time uses 82°30'E; the east-west time difference is about two hours. India's 3.28 million sq km is about 2.4 percent of the world's land, making it the seventh largest country. The land frontier is about 15,200 km and the coastline, with islands, about 7,516.6 km. Lakshadweep is in the Arabian Sea; the Palk Strait and Gulf of Mannar separate India from Sri Lanka."],
+    pitfall: "Latitude sets the climate zones; the longitude span sets the two-hour time difference.",
+    questions: fromItems([
+      ["Mainland India extends in latitude between about:", "8°4'N and 37°6'N", ["0° and 23°30'N", "23°30'N and 45°N", "8°4'S and 37°6'N"], "The southern tip is near 8°4'N and the north reaches about 37°6'N.", "Chapter 1: Location"],
+      ["Mainland India extends in longitude between about:", "68°7'E and 97°25'E", ["82°30'E and 97°25'E", "60°E and 82°30'E", "68°7'W and 97°25'W"], "India spans nearly 30 degrees of longitude.", "Chapter 1: Location"],
+      ["Which line of latitude divides India into roughly two equal halves?", "The Tropic of Cancer", ["The Equator", "The Tropic of Capricorn", "The Arctic Circle"], "The Tropic of Cancer (23°30'N) passes through the middle of the country.", "Chapter 1: Location"],
+      ["Indian Standard Time is based on the meridian of:", "82°30'E", ["68°7'E", "97°25'E", "0° (Greenwich)"], "The standard meridian of 82°30'E passes near Mirzapur.", "Chapter 1: Location"],
+      ["The difference in local time between India's easternmost and westernmost points is about:", "Two hours", ["Thirty minutes", "Five hours", "Twelve hours"], "Thirty degrees of longitude correspond to about two hours.", "Chapter 1: Location"],
+      ["India's area of about 3.28 million sq km is roughly what share of the world's land area?", "2.4 percent", ["17.5 percent", "7 percent", "0.5 percent"], "India covers about 2.4 percent of the world's land surface.", "Chapter 1: Size"],
+      ["By area, India is the world's:", "Seventh largest country", ["Second largest country", "Fifth largest country", "Tenth largest country"], "India ranks seventh in area.", "Chapter 1: Size"],
+      ["The Lakshadweep Islands lie in the:", "Arabian Sea", ["Bay of Bengal", "Andaman Sea", "Palk Strait"], "Lakshadweep lies off the Kerala coast; the Andaman and Nicobar Islands are in the Bay of Bengal.", "Chapter 1: Location"],
+      ["India is separated from Sri Lanka by the:", "Palk Strait and the Gulf of Mannar", ["Ten Degree Channel", "Strait of Malacca", "Duncan Passage"], "The Palk Strait and Gulf of Mannar lie between the two countries.", "Chapter 1: India and its Neighbours"],
+      ["In north-east India, the Tropic of Cancer passes through Tripura and:", "Mizoram", ["Manipur", "Nagaland", "Arunachal Pradesh"], "The Tropic of Cancer crosses Tripura and Mizoram before entering Myanmar.", "Chapter 1: Location; original application"],
+      ["India's land frontier is about:", "15,200 km", ["7,516 km", "3,200 km", "25,000 km"], "The land boundary is about 15,200 km; 7,516.6 km is the coastline including islands.", "Chapter 1: Size"],
+      ["India's coastline, including the islands, is about:", "7,516.6 km", ["6,100 km", "15,200 km", "2,933 km"], "The mainland coast alone is about 6,100 km.", "Chapter 1: Size"],
+    ]) },
+  { id: "climate-agreements", subject: "Environmental Studies", title: "Climate change agreements", sourceId: "unfccc", streams: ["mpsc"],
+    notes: ["The UN Framework Convention on Climate Change was opened for signature at the 1992 Rio Earth Summit; its Conference of the Parties (COP) meets every year. The Kyoto Protocol (1997) set binding targets mainly for developed countries.", "The Paris Agreement was adopted at COP21 in December 2015 and entered into force on 4 November 2016. It aims to keep warming well below 2 °C above pre-industrial levels while pursuing 1.5 °C, through Nationally Determined Contributions updated every five years."],
+    pitfall: "Kyoto gave targets to developed countries only; Paris asks every party for its own NDC.",
+    questions: fromItems([
+      ["The Paris Agreement was adopted at:", "COP21 in Paris, December 2015", ["COP3 in Kyoto, December 1997", "The Rio Earth Summit, June 1992", "COP26 in Glasgow, November 2021"], "Parties adopted it at the 21st Conference of the Parties in Paris.", "The Paris Agreement: overview"],
+      ["The Paris Agreement aims to hold the rise in global average temperature to:", "Well below 2 °C above pre-industrial levels, pursuing 1.5 °C", ["Below 3 °C above pre-industrial levels", "Exactly 1 °C above today's level", "Below 4 °C by 2050"], "This is the Agreement's central temperature goal.", "The Paris Agreement: overview"],
+      ["Under the Paris Agreement, each country's climate action plan is called a:", "Nationally Determined Contribution (NDC)", ["National Adaptation Fund", "Certified Emission Reduction", "Kyoto target"], "Each party prepares and communicates its own NDC.", "The Paris Agreement: NDCs"],
+      ["The Paris Agreement entered into force on:", "4 November 2016", ["12 December 2015", "1 January 2020", "16 February 2005"], "It entered into force once enough parties had ratified it. (16 February 2005 is the Kyoto Protocol's date.)", "The Paris Agreement: overview"],
+      ["Countries are expected to submit new or updated NDCs every:", "Five years", ["Year", "Ten years", "Two years"], "The Agreement works on a five-year cycle of increasingly ambitious action.", "The Paris Agreement: NDCs"],
+      ["The Kyoto Protocol set binding emission-reduction targets mainly for:", "Developed (industrialised) countries", ["All countries equally", "Only developing countries", "Only small island states"], "Kyoto placed the heavier burden on developed countries.", "UNFCCC: the Kyoto Protocol"],
+      ["The UN Framework Convention on Climate Change was opened for signature at:", "The 1992 Rio Earth Summit", ["The 1972 Stockholm Conference", "COP3 in Kyoto, 1997", "COP21 in Paris, 2015"], "The UNFCCC was one of the Rio conventions of 1992.", "UNFCCC: the Convention"],
+      ["The supreme decision-making body of the UNFCCC, meeting every year, is the:", "Conference of the Parties (COP)", ["UN Security Council", "Intergovernmental Panel on Climate Change", "World Meteorological Organization"], "The COP reviews implementation and adopts decisions.", "UNFCCC: bodies"],
+    ]) },
+  { id: "biodiversity-agreements", subject: "Environmental Studies", title: "The Convention on Biological Diversity", sourceId: "cbd", streams: ["mpsc"],
+    notes: ["The Convention on Biological Diversity (CBD) was opened for signature at the 1992 Rio Earth Summit and entered into force in December 1993. Its three objectives are conservation of biodiversity, sustainable use of its components, and fair and equitable sharing of benefits from genetic resources.", "The Cartagena Protocol covers biosafety (living modified organisms) and the Nagoya Protocol covers access and benefit-sharing. The Kunming-Montreal Global Biodiversity Framework (2022) aims to conserve 30 percent of land and oceans by 2030. In-situ conservation protects species in their natural habitats; ex-situ conservation works outside them."],
+    pitfall: "Cartagena is biosafety; Nagoya is benefit-sharing. Both are protocols under the CBD.",
+    questions: fromItems([
+      ["The Convention on Biological Diversity was opened for signature at:", "The 1992 Rio Earth Summit", ["The 1972 Stockholm Conference", "The 1987 Montreal conference", "The 2015 Paris conference"], "The CBD is one of the three Rio conventions.", "Introduction: history of the Convention"],
+      ["The CBD's three objectives are conservation of biodiversity, sustainable use of its components and:", "Fair and equitable sharing of benefits from genetic resources", ["Elimination of all hunting", "Protection of the ozone layer", "Control of trade in hazardous waste"], "These three objectives are set out in Article 1 of the Convention.", "Introduction: objectives (Article 1)"],
+      ["The Cartagena Protocol under the CBD deals with:", "Biosafety: the safe handling of living modified organisms", ["Ozone-depleting substances", "Wetlands of international importance", "Trade in hazardous waste"], "It regulates movements of living modified organisms from biotechnology.", "Introduction: the Cartagena Protocol"],
+      ["The Nagoya Protocol under the CBD deals with:", "Access to genetic resources and sharing of the benefits", ["Greenhouse gas emissions", "Desertification", "Migratory birds"], "It puts the CBD's third objective into practice.", "Introduction: the Nagoya Protocol"],
+      ["The Kunming-Montreal Global Biodiversity Framework (2022) includes a target to conserve, by 2030, at least:", "30 percent of land and of oceans", ["10 percent of land and of oceans", "50 percent of land only", "17 percent of oceans only"], "This is known as the '30 by 30' target.", "Introduction: the Global Biodiversity Framework"],
+      ["The CBD entered into force in:", "December 1993", ["June 1992", "January 2000", "October 2010"], "It entered into force on 29 December 1993.", "Introduction: history of the Convention"],
+      ["Under the CBD, in-situ conservation means:", "Conserving ecosystems and species in their natural surroundings", ["Keeping species only in zoos and seed banks", "Moving all species to protected islands", "Breeding new species in laboratories"], "Article 2 defines in-situ conservation in natural habitats.", "Convention text: Article 2, use of terms"],
+      ["Under the CBD, ex-situ conservation means:", "Conserving components of biodiversity outside their natural habitats", ["Conserving species only in national parks", "Stopping all use of biological resources", "Protecting only marine life"], "Seed banks, botanical gardens and zoos are examples.", "Convention text: Article 2, use of terms"],
+    ]) },
+  { id: "nutrition-vitamins", subject: "Biology", title: "Nutrition: vitamins and minerals", sourceId: "nutrition", streams: ["mpsc", "neet"],
+    notes: ["Essential nutrients are those the body cannot make, including vitamins, minerals and some fatty and amino acids. Vitamins A, D, E and K are fat-soluble; B vitamins and C are water-soluble.", "Deficiencies: vitamin A, night blindness; B1 (thiamine), beriberi; C, scurvy; D, rickets; K, poor clotting. Iron is needed for haemoglobin and iodine for thyroid hormones. Excess glucose is stored as glycogen in the liver and muscles."],
+    pitfall: "Rickets (vitamin D) and scurvy (vitamin C) are often swapped; tie each to its vitamin.",
+    questions: fromItems([
+      ["A deficiency of vitamin C causes:", "Scurvy", ["Rickets", "Beriberi", "Night blindness"], "Vitamin C is needed for collagen; its lack causes scurvy.", "Section 34.2: vitamins"],
+      ["A deficiency of vitamin D in children causes:", "Rickets", ["Scurvy", "Goitre", "Pellagra"], "Vitamin D is needed to absorb calcium for bone growth.", "Section 34.2: vitamins"],
+      ["A deficiency of vitamin A can cause:", "Night blindness", ["Rickets", "Scurvy", "Anaemia"], "Vitamin A is needed for the light-sensitive pigment of the retina.", "Section 34.2: vitamins"],
+      ["Vitamin K is needed mainly for:", "Blood clotting", ["Vision in dim light", "Bone growth", "Making thyroid hormones"], "Vitamin K is required to make clotting factors.", "Section 34.2: vitamins"],
+      ["A deficiency of thiamine (vitamin B1) causes:", "Beriberi", ["Scurvy", "Rickets", "Night blindness"], "Thiamine is needed for carbohydrate metabolism; its lack causes beriberi.", "Section 34.2: vitamins"],
+      ["Which vitamins are fat-soluble?", "A, D, E and K", ["B and C", "A, B, C and D", "C and K only"], "Fat-soluble vitamins are absorbed with dietary fat and stored in the body.", "Section 34.2: vitamins"],
+      ["Excess glucose is stored in liver and muscle cells as:", "Glycogen", ["Starch", "Cellulose", "Chitin"], "Animals store carbohydrate as glycogen; plants store starch.", "Section 34.2: food requirements and energy storage"],
+      ["Nutrients the body cannot make and must obtain from food are called:", "Essential nutrients", ["Non-essential nutrients", "Enzymes", "Hormones"], "Vitamins, minerals and some fatty and amino acids are essential.", "Section 34.2: essential nutrients"],
+      ["The mineral needed to make haemoglobin is:", "Iron", ["Calcium", "Iodine", "Sodium"], "Iron lies at the centre of each haem group; its lack causes anaemia.", "Section 34.2: minerals"],
+      ["Iodine is needed mainly for making:", "Thyroid hormones", ["Insulin", "Haemoglobin", "Bile"], "Iodine deficiency can cause goitre.", "Section 34.2: minerals"],
+    ]) },
+  { id: "magnetic-force-motion", subject: "Physics", title: "Magnetism: force on a moving charge", sourceId: "magneticMotion", streams: ["jee", "neet"],
+    notes: ["The magnetic force on a moving charge is F = q v x B. It is perpendicular to the velocity, so it changes direction but not speed and does no work. A charge moving parallel to B feels no force.", "In a uniform field a charge moving perpendicular to B moves in a circle of radius r = mv/(qB) with period T = 2 pi m/(qB), independent of speed. A velocity component along B gives a helical path."],
+    pitfall: "The period does not depend on speed; the radius does.",
+    questions: fromItems([
+      ["A charged particle moves through a uniform magnetic field. The magnetic force on it:", "Changes its direction but not its speed", ["Changes its speed but not its direction", "Changes both speed and direction", "Always brings it to rest"], "The force is perpendicular to the velocity, so it only bends the path.", "Section 11.3: motion in a uniform field"],
+      ["The magnetic force on a charge moving parallel to a uniform magnetic field is:", "Zero", ["Maximum", "Equal to qvB", "Directed along the field"], "F = qvB sin(theta) and sin 0 = 0.", "Section 11.3: magnetic force"],
+      ["The radius of the circular path of a charge q, mass m, speed v, moving perpendicular to a field B is:", "mv/(qB)", ["qB/(mv)", "mvqB", "m/(qvB)"], "qvB = mv^2/r gives r = mv/(qB).", "Section 11.3: radius of the circular path"],
+      ["The speed of a charged particle moving perpendicular to a uniform field is doubled. The radius of its path:", "Doubles", ["Halves", "Stays the same", "Becomes four times as large"], "r = mv/(qB) is proportional to v.", "Section 11.3: radius of the circular path"],
+      ["The period of a charged particle's circular orbit in a uniform magnetic field:", "Does not depend on its speed", ["Is proportional to its speed", "Is inversely proportional to its speed", "Is proportional to the square of its speed"], "T = 2 pi m/(qB) contains no v.", "Section 11.3: period of the motion"],
+      ["A charged particle's velocity has components both along and perpendicular to a uniform field. Its path is a:", "Helix", ["Straight line", "Circle", "Parabola"], "The parallel component is unchanged while the perpendicular component gives circular motion.", "Section 11.3: helical motion"],
+      ["The magnetic force on a charge q moving with velocity v in a field B is:", "F = q (v x B)", ["F = q (v . B)", "F = qB/v", "F = q v B^2"], "The force is the cross product, perpendicular to both v and B.", "Section 11.3: magnetic force"],
+      ["A proton (charge 1.6 x 10^-19 C) moves at 2 x 10^6 m/s perpendicular to a field of 0.5 T. The magnetic force on it is:", "1.6 x 10^-13 N", ["3.2 x 10^-13 N", "6.4 x 10^-13 N", "1.6 x 10^-12 N"], "F = qvB = 1.6 x 10^-19 x 2 x 10^6 x 0.5 = 1.6 x 10^-13 N.", "Section 11.3: magnetic force; original calculation"],
+      ["The work done by a magnetic field on a moving charged particle is:", "Zero", ["qvB", "Equal to its kinetic energy", "Negative"], "The force is always perpendicular to the displacement.", "Section 11.3: motion in a uniform field"],
+    ]) },
+  { id: "chemical-equilibrium", subject: "Chemistry", title: "Chemical equilibrium: equilibrium constants", sourceId: "equilibriumConstants", streams: ["jee", "neet"],
+    notes: ["For aA + bB <=> cC + dD, Kc = [C]^c[D]^d / ([A]^a[B]^b). The reaction quotient Q has the same form at any moment: Q < K means the reaction moves forward, Q > K backward, and Q = K means equilibrium.", "Pure solids and liquids are left out of K. Reversing a reaction gives 1/K; multiplying the equation by n gives K^n. A large K means products predominate at equilibrium."],
+    pitfall: "Raise each concentration to its coefficient, and leave solids and pure liquids out.",
+    questions: fromItems([
+      ["For aA + bB <=> cC + dD, the equilibrium constant Kc is:", "[C]^c [D]^d / ([A]^a [B]^b)", ["[A]^a [B]^b / ([C]^c [D]^d)", "c[C] + d[D] - a[A] - b[B]", "[C][D] / ([A][B])"], "Products over reactants, each raised to its coefficient.", "Section 13.2: the equilibrium constant"],
+      ["When the reaction quotient Q is less than K, the reaction:", "Proceeds in the forward direction", ["Proceeds in the reverse direction", "Is at equilibrium", "Stops completely"], "Products must increase for Q to rise to K.", "Section 13.2: reaction quotient"],
+      ["When Q equals K, the system is:", "At equilibrium", ["Moving forward", "Moving backward", "Far from equilibrium"], "At equilibrium the reaction quotient equals the equilibrium constant.", "Section 13.2: reaction quotient"],
+      ["A reaction has K = 10^10 at a given temperature. At equilibrium:", "Products predominate", ["Reactants predominate", "Reactants and products are equal", "No reaction occurs"], "A very large K means the equilibrium lies far to the right.", "Section 13.2: magnitude of K"],
+      ["In the equilibrium expression for a heterogeneous equilibrium, pure solids and pure liquids:", "Are left out", ["Are given the concentration 1 M and squared", "Appear in the numerator", "Appear in the denominator"], "Their concentrations are effectively constant.", "Section 13.2: heterogeneous equilibria"],
+      ["For N2 + 3H2 <=> 2NH3, Kc is:", "[NH3]^2 / ([N2][H2]^3)", ["[NH3] / ([N2][H2])", "[N2][H2]^3 / [NH3]^2", "2[NH3] / ([N2] + 3[H2])"], "Each concentration is raised to its coefficient.", "Section 13.2: the equilibrium constant"],
+      ["Kc for A <=> B is 4. Kc for B <=> A is:", "0.25", ["4", "-4", "16"], "The reverse reaction's constant is the reciprocal: 1/4.", "Section 13.2: reversed reactions"],
+      ["An equilibrium equation is multiplied by 2. Its new equilibrium constant is:", "K^2", ["2K", "K/2", "The square root of K"], "Each exponent doubles, so K is squared.", "Section 13.2: multiplying equations"],
+      ["For CaCO3(s) <=> CaO(s) + CO2(g), Kc is:", "[CO2]", ["[CaO][CO2] / [CaCO3]", "[CaCO3] / [CO2]", "1 / [CO2]"], "The two solids are left out of the expression.", "Section 13.2: heterogeneous equilibria"],
+      ["For A <=> 2B, equilibrium concentrations are [A] = 0.2 M and [B] = 0.4 M. Kc is:", "0.8", ["2", "0.4", "1.25"], "Kc = [B]^2/[A] = 0.16/0.2 = 0.8.", "Section 13.2: the equilibrium constant; original calculation"],
+    ]) },
+  { id: "cell-potentials", subject: "Chemistry", title: "Electrochemistry: electrode and cell potentials", sourceId: "cellPotentials", streams: ["jee", "neet"],
+    notes: ["Electrode potentials are measured against the standard hydrogen electrode, assigned 0 V. Standard conditions are 1 M solutes, 1 atm gases and 25 °C. E°cell = E°cathode - E°anode, using standard reduction potentials.", "A positive E°cell means the cell reaction is spontaneous. The species with the most positive reduction potential is the strongest oxidising agent. E° is intensive: multiplying a half-reaction does not change it. In the Daniell cell, zinc is the anode and E° = 1.10 V."],
+    pitfall: "Subtract the anode's reduction potential; never flip a sign and also subtract.",
+    questions: fromItems([
+      ["The reference electrode assigned a standard potential of exactly 0 V is the:", "Standard hydrogen electrode", ["Standard zinc electrode", "Saturated calomel electrode only", "Standard copper electrode"], "The SHE is the agreed zero for electrode potentials.", "Section 17.3: standard hydrogen electrode"],
+      ["The standard cell potential is calculated as:", "E°cathode - E°anode", ["E°anode - E°cathode", "E°cathode + E°anode", "E°cathode x E°anode"], "Both values are standard reduction potentials.", "Section 17.3: standard cell potential"],
+      ["In a galvanic cell, reduction takes place at the:", "Cathode", ["Anode", "Salt bridge", "External wire"], "Oxidation is at the anode and reduction at the cathode.", "Section 17.3: electrodes"],
+      ["E°(Ag+/Ag) = +0.80 V and E°(Mg2+/Mg) = -2.37 V. The standard potential of a Mg/Ag+ cell is:", "3.17 V", ["-1.57 V", "1.57 V", "-3.17 V"], "E°cell = 0.80 - (-2.37) = 3.17 V.", "Section 17.3: standard cell potential; original calculation"],
+      ["A positive standard cell potential means the cell reaction under standard conditions is:", "Spontaneous", ["Non-spontaneous", "At equilibrium", "Impossible"], "A positive E°cell corresponds to a negative free-energy change.", "Section 17.3: interpreting cell potentials"],
+      ["The species with the most positive standard reduction potential is the:", "Strongest oxidising agent", ["Strongest reducing agent", "Weakest oxidising agent", "Most reactive metal"], "It has the greatest tendency to gain electrons.", "Section 17.3: standard reduction potentials"],
+      ["E°(Zn2+/Zn) = -0.76 V and E°(Cu2+/Cu) = +0.34 V. The standard potential of the Daniell cell is:", "1.10 V", ["0.42 V", "-1.10 V", "0.76 V"], "E°cell = 0.34 - (-0.76) = 1.10 V.", "Section 17.3: standard cell potential; original calculation"],
+      ["In the Daniell (zinc-copper) cell, the anode is:", "Zinc", ["Copper", "The salt bridge", "Hydrogen"], "Zinc has the lower reduction potential, so it is oxidised.", "Section 17.3: standard cell potential"],
+      ["Standard electrode potentials are measured with solute concentrations of:", "1 M", ["0.1 M", "10 M", "0.01 M"], "Standard state: 1 M solutes, 1 atm gases, 25 °C.", "Section 17.3: standard conditions"],
+      ["A half-reaction is multiplied by 2 to balance electrons. Its standard potential:", "Does not change", ["Doubles", "Halves", "Changes sign"], "Electrode potential is an intensive property.", "Section 17.3: standard reduction potentials"],
+    ]) },
+  { id: "wave-motion", subject: "Physics", title: "Waves: mathematics of travelling waves", sourceId: "waves", streams: ["jee", "neet"],
+    notes: ["A sinusoidal wave is y(x, t) = A sin(kx - omega t + phi), with wave number k = 2 pi/lambda and angular frequency omega = 2 pi/T. It travels in the +x direction at v = omega/k = lambda/T = f lambda.", "Amplitude A is the maximum displacement. The period T = 1/f. A wave written with kx + omega t travels in the -x direction."],
+    pitfall: "Speed is omega/k, not k/omega; check by units (rad/s divided by rad/m gives m/s).",
+    questions: fromItems([
+      ["The speed of a wave of frequency f and wavelength lambda is:", "f x lambda", ["f / lambda", "lambda / f", "f + lambda"], "One wavelength passes in each period: v = lambda/T = f lambda.", "Section 16.2: wave speed"],
+      ["A wave has frequency 50 Hz and wavelength 2 m. Its speed is:", "100 m/s", ["25 m/s", "52 m/s", "0.04 m/s"], "v = f lambda = 50 x 2 = 100 m/s.", "Section 16.2: wave speed; original calculation"],
+      ["The wave number k of a wave of wavelength lambda is:", "2 pi / lambda", ["lambda / 2 pi", "2 pi lambda", "1 / lambda^2"], "k = 2 pi/lambda, measured in rad/m.", "Section 16.2: wave function"],
+      ["The angular frequency omega of a wave of period T is:", "2 pi / T", ["T / 2 pi", "2 pi T", "1 / T^2"], "omega = 2 pi/T, measured in rad/s.", "Section 16.2: wave function"],
+      ["For y = 0.02 sin(4x - 8t) in SI units, the wave speed is:", "2 m/s", ["0.5 m/s", "32 m/s", "4 m/s"], "v = omega/k = 8/4 = 2 m/s.", "Section 16.2: wave function; original calculation"],
+      ["The amplitude of the wave y = 0.02 sin(4x - 8t) m is:", "0.02 m", ["4 m", "8 m", "0.04 m"], "The coefficient of the sine is the amplitude.", "Section 16.2: wave function"],
+      ["A wave described by y = A sin(kx - omega t) travels:", "In the +x direction", ["In the -x direction", "Along the y-axis", "It is a standing wave"], "A crest at kx - omega t = constant moves to larger x as t increases.", "Section 16.2: wave function"],
+      ["A sound wave travels at 340 m/s with frequency 170 Hz. Its wavelength is:", "2 m", ["0.5 m", "510 m", "57,800 m"], "lambda = v/f = 340/170 = 2 m.", "Section 16.2: wave speed; original calculation"],
+      ["The period of a wave of frequency 25 Hz is:", "0.04 s", ["25 s", "0.4 s", "4 s"], "T = 1/f = 1/25 = 0.04 s.", "Section 16.2: period and frequency"],
+    ]) },
+  { id: "probability", subject: "Mathematics", title: "Probability", sourceId: "probability", streams: ["jee"],
+    notes: ["For equally likely outcomes, P(E) = (number of outcomes in E) / (total outcomes). P(not E) = 1 - P(E).", "P(E or F) = P(E) + P(F) - P(E and F); for mutually exclusive events the last term is zero. Counting methods (combinations) give probabilities for selections."],
+    pitfall: "Subtract the overlap when events can happen together; add directly only when they cannot.",
+    questions: fromItems([
+      ["A fair die is rolled once. The probability of an even number is:", "1/2", ["1/3", "1/6", "2/3"], "Three of the six outcomes (2, 4, 6) are even.", "Section 11.7: equally likely outcomes"],
+      ["For any two events E and F, P(E or F) equals:", "P(E) + P(F) - P(E and F)", ["P(E) + P(F)", "P(E) x P(F)", "P(E) + P(F) + P(E and F)"], "Subtracting the intersection avoids counting it twice.", "Section 11.7: union of two events"],
+      ["E and F are mutually exclusive, with P(E) = 0.3 and P(F) = 0.4. P(E or F) is:", "0.7", ["0.12", "0.1", "0.58"], "With no overlap, P(E or F) = 0.3 + 0.4 = 0.7.", "Section 11.7: mutually exclusive events"],
+      ["If P(E) = 0.35, the probability that E does not occur is:", "0.65", ["0.35", "1.35", "0.5"], "P(not E) = 1 - 0.35 = 0.65.", "Section 11.7: complement rule"],
+      ["Two fair coins are tossed. The probability of at least one head is:", "3/4", ["1/2", "1/4", "1"], "Only TT has no head: 1 - 1/4 = 3/4.", "Section 11.7: complement rule; original calculation"],
+      ["A card is drawn from a standard 52-card deck. The probability that it is a king is:", "1/13", ["1/52", "1/4", "4/13"], "There are 4 kings: 4/52 = 1/13.", "Section 11.7: equally likely outcomes"],
+      ["P(E) = 0.5, P(F) = 0.4 and P(E and F) = 0.1. P(E or F) is:", "0.8", ["0.9", "1.0", "0.2"], "0.5 + 0.4 - 0.1 = 0.8.", "Section 11.7: union of two events"],
+      ["Two fair dice are rolled. The probability that the sum is 7 is:", "1/6", ["1/12", "7/36", "1/36"], "Six of the 36 outcomes sum to 7.", "Section 11.7: equally likely outcomes; original calculation"],
+      ["A bag has 3 red and 5 blue balls. Two are drawn without replacement. The probability that both are red is:", "3/28", ["9/64", "3/8", "1/4"], "C(3,2)/C(8,2) = 3/28.", "Section 11.7: counting and probability; original calculation"],
+    ]) },
+  { id: "complex-numbers", subject: "Mathematics", title: "Complex numbers", sourceId: "complexNumbers", streams: ["jee"],
+    notes: ["A complex number is a + bi with i^2 = -1. Add or subtract real and imaginary parts separately; multiply by expanding and replacing i^2 with -1.", "The conjugate of a + bi is a - bi, and (a + bi)(a - bi) = a^2 + b^2 is real. Divide by multiplying the numerator and denominator by the conjugate of the denominator. Powers of i repeat every four: i, -1, -i, 1."],
+    pitfall: "Reduce the exponent of i modulo 4 before simplifying.",
+    questions: fromItems([
+      ["The value of i^2 is:", "-1", ["1", "i", "-i"], "By definition i is a square root of -1.", "Section 2.4: the imaginary unit"],
+      ["(3 + 2i) + (1 - 5i) equals:", "4 - 3i", ["4 + 7i", "2 - 3i", "3 - 10i"], "Add real parts (3 + 1) and imaginary parts (2 - 5).", "Section 2.4: adding complex numbers"],
+      ["(2 + 3i)(1 - i) equals:", "5 + i", ["-1 + i", "2 - 3i", "5 - i"], "2 - 2i + 3i - 3i^2 = 2 + i + 3 = 5 + i.", "Section 2.4: multiplying complex numbers"],
+      ["The complex conjugate of 4 - 7i is:", "4 + 7i", ["-4 + 7i", "-4 - 7i", "7 - 4i"], "Change the sign of the imaginary part.", "Section 2.4: complex conjugates"],
+      ["(1 + i)/(1 - i) equals:", "i", ["-i", "1", "0"], "Multiply by (1 + i)/(1 + i): (1 + 2i + i^2)/2 = 2i/2 = i.", "Section 2.4: dividing complex numbers"],
+      ["i^23 equals:", "-i", ["i", "1", "-1"], "23 = 4 x 5 + 3, so i^23 = i^3 = -i.", "Section 2.4: powers of i"],
+      ["(3 + 4i)(3 - 4i) equals:", "25", ["9 - 16i", "-7", "7"], "a^2 + b^2 = 9 + 16 = 25.", "Section 2.4: complex conjugates"],
+      ["The square root of -16, written in terms of i, is:", "4i", ["-4", "16i", "4"], "sqrt(-16) = sqrt(16) x sqrt(-1) = 4i.", "Section 2.4: the imaginary unit"],
+      ["The real part of the complex number -2 + 9i is:", "-2", ["9", "9i", "-2i"], "In a + bi, a is the real part and b the imaginary part.", "Section 2.4: standard form"],
+    ]) },
+  { id: "neuron-signalling", subject: "Biology", title: "Neural control: how neurons communicate", sourceId: "neurons", streams: ["neet"],
+    notes: ["A resting neuron's inside is about -70 mV relative to outside, maintained partly by the Na+/K+ pump (3 Na+ out, 2 K+ in). At threshold (about -55 mV) voltage-gated Na+ channels open and Na+ rushes in (depolarisation); K+ leaving repolarises the membrane.", "Action potentials are all-or-none and are followed by a refractory period. Myelin makes them jump between nodes of Ranvier (saltatory conduction). At a chemical synapse Ca2+ entry triggers neurotransmitter release; electrical synapses pass ions directly through gap junctions and are faster."],
+    pitfall: "Na+ in causes depolarisation; K+ out causes repolarisation.",
+    questions: fromItems([
+      ["The resting membrane potential of a typical neuron is about:", "-70 mV", ["+70 mV", "-7 mV", "0 mV"], "The inside of the cell is about 70 mV more negative than the outside.", "Section 35.2: resting membrane potential"],
+      ["Depolarisation during an action potential is caused mainly by:", "Na+ ions flowing into the cell", ["K+ ions flowing into the cell", "Cl- ions flowing out of the cell", "Ca2+ ions leaving the axon"], "Voltage-gated sodium channels open and Na+ rushes in.", "Section 35.2: action potential"],
+      ["Repolarisation after an action potential is caused mainly by:", "K+ ions leaving the cell", ["Na+ ions entering the cell", "Ca2+ ions entering the cell", "Proteins leaving the cell"], "Voltage-gated potassium channels open and K+ flows out.", "Section 35.2: action potential"],
+      ["Each cycle of the sodium-potassium pump moves:", "3 Na+ out and 2 K+ in", ["2 Na+ out and 3 K+ in", "3 K+ out and 2 Na+ in", "1 Na+ out and 1 K+ in"], "This uses ATP and helps maintain the resting potential.", "Section 35.2: resting membrane potential"],
+      ["At a chemical synapse, the arrival of an action potential causes neurotransmitter release by triggering entry of:", "Ca2+ ions", ["Na+ ions", "K+ ions", "Cl- ions"], "Calcium entry makes synaptic vesicles fuse with the membrane.", "Section 35.2: chemical synapses"],
+      ["Myelinated axons conduct impulses faster because the action potential:", "Jumps between nodes of Ranvier (saltatory conduction)", ["Travels inside the myelin", "Skips the axon terminals", "Is larger at each node than at rest"], "Depolarisation occurs only at the gaps in the myelin sheath.", "Section 35.2: myelin and saltatory conduction"],
+      ["An action potential is described as all-or-none because:", "Once threshold is reached, it fires at full strength", ["Its size depends on the stimulus strength", "It travels in both directions at once", "It occurs only in sensory neurons"], "Below threshold nothing fires; above it the full spike fires.", "Section 35.2: action potential"],
+      ["The threshold potential at which a typical neuron fires is about:", "-55 mV", ["-90 mV", "+40 mV", "0 mV"], "Depolarising from -70 mV to about -55 mV triggers an action potential.", "Section 35.2: action potential"],
+      ["Compared with chemical synapses, electrical synapses:", "Pass ions directly through gap junctions, so transmission is faster", ["Use more neurotransmitter", "Are always one-way and slower", "Need calcium to release vesicles"], "Gap junctions connect the cells' cytoplasm directly.", "Section 35.2: electrical synapses"],
+    ]) },
+  { id: "biotechnology-tools", subject: "Biology", title: "Biotechnology: tools and techniques", sourceId: "biotechnology", streams: ["neet"],
+    notes: ["Gel electrophoresis separates DNA fragments by size; DNA is negatively charged and moves towards the positive electrode, small fragments furthest. PCR copies a chosen DNA segment many times using heat-stable Taq polymerase.", "Restriction enzymes cut DNA at specific recognition sequences, DNA ligase joins fragments, and plasmids carry recombinant DNA into bacteria. Southern blots detect DNA and northern blots detect RNA. An organism carrying another species' DNA is transgenic."],
+    pitfall: "Southern blotting is for DNA and northern blotting for RNA.",
+    questions: fromItems([
+      ["Gel electrophoresis separates DNA fragments mainly by:", "Size, with smaller fragments moving further", ["Size, with larger fragments moving further", "Base sequence", "Colour"], "Smaller fragments move more easily through the gel's pores.", "Section 17.1: gel electrophoresis"],
+      ["During gel electrophoresis, DNA moves towards the:", "Positive electrode, because DNA is negatively charged", ["Negative electrode, because DNA is positively charged", "Positive electrode, because DNA is positively charged", "Centre of the gel"], "Phosphate groups give DNA a negative charge.", "Section 17.1: gel electrophoresis"],
+      ["The polymerase chain reaction (PCR) is used to:", "Make many copies of a specific DNA segment", ["Cut DNA at specific sites", "Join DNA fragments together", "Translate mRNA into protein"], "PCR amplifies a target region of DNA.", "Section 17.1: polymerase chain reaction"],
+      ["PCR uses a heat-stable DNA polymerase called:", "Taq polymerase", ["DNA ligase", "Reverse transcriptase", "Restriction endonuclease"], "Taq polymerase comes from a heat-loving bacterium and survives repeated heating.", "Section 17.1: polymerase chain reaction"],
+      ["Restriction enzymes are used in biotechnology to:", "Cut DNA at specific recognition sequences", ["Copy DNA many times", "Join DNA fragments", "Separate DNA by size"], "Each restriction enzyme recognises a particular short sequence.", "Section 17.1: molecular cloning"],
+      ["Small circular DNA molecules in bacteria, used as cloning vectors, are:", "Plasmids", ["Ribosomes", "Chromosomes", "Mitochondria"], "Plasmids replicate independently and can carry foreign DNA.", "Section 17.1: molecular cloning"],
+      ["An organism that carries DNA from another species is called:", "Transgenic", ["Haploid", "Polyploid", "Clonal"], "Transgenic organisms contain introduced foreign genes.", "Section 17.1: genetic engineering"],
+      ["Southern blotting is used to detect specific:", "DNA sequences", ["RNA molecules", "Proteins", "Lipids"], "A Southern blot transfers DNA to a membrane and probes it.", "Section 17.1: blotting techniques"],
+      ["Northern blotting is used to detect specific:", "RNA molecules", ["DNA sequences", "Proteins", "Carbohydrates"], "Northern blotting probes RNA, for example to study gene expression.", "Section 17.1: blotting techniques"],
+      ["In making recombinant DNA, the enzyme that joins DNA fragments is:", "DNA ligase", ["Taq polymerase", "Restriction enzyme", "Helicase"], "Ligase forms bonds in the sugar-phosphate backbone.", "Section 17.1: molecular cloning"],
+    ]) },
+  { id: "averages", subject: "General Aptitude", title: "Averages", sourceId: "averages", streams: ["mpsc", "cuet-pg"],
+    notes: ["The mean is the sum of the values divided by how many there are. Rearranged, sum = count x mean.", "To find a missing value, compute the total the mean requires, then subtract the known values."],
+    pitfall: "Divide by the number of values, not by one less.",
+    questions: fromItems(averageItems) },
+  { id: "ratio-proportion", subject: "General Aptitude", title: "Ratio and proportion", sourceId: "proportions", streams: ["mpsc", "cuet-pg"],
+    notes: ["To divide an amount in the ratio a:b, the shares are amount x a/(a + b) and amount x b/(a + b).", "A proportion states that two ratios are equal; solve by cross-multiplication. Unit price times quantity gives the cost of any quantity."],
+    pitfall: "Divide by the sum of the ratio parts, not by one part.",
+    questions: fromItems(proportionItems) },
+  { id: "discount-tax-commission", subject: "General Aptitude", title: "Discount, tax and commission", sourceId: "discounts", streams: ["mpsc", "cuet-pg"],
+    notes: ["Discount = marked price x rate; sale price = marked price - discount. Sales tax = price x rate; total cost = price + tax.", "Commission = total sales x commission rate. Convert the percent to a fraction of 100 before multiplying."],
+    pitfall: "A discount is subtracted and a tax is added; do not subtract the percentage number itself.",
+    questions: fromItems(discountItems) },
+];
