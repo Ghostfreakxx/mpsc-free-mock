@@ -1,3 +1,4 @@
+import { equilibriumElectrochemistryPracticalAdditions as additions } from "./equilibrium-electrochemistry-practical-additions.ts";
 import type { StudyLesson } from "./course";
 
 const syllabus = { title: "NTA: JEE Main 2026 Chemistry syllabus", url: "https://jeemain.nta.nic.in/document/syllabus-2026/" };
@@ -8,7 +9,7 @@ export const equilibriumElectrochemistryLessons: StudyLesson[] = [
     title: "Equilibrium: competing changes, acids and solubility",
     summary: "Dynamic equilibrium, reaction quotients, pH, buffers and precipitation with explicit approximation checks.",
     prerequisites: "Moles, concentrations, balanced reactions, logarithms and Gibbs energy.",
-    remaining: "Unit 6 foundation with an eight-chapter Marin recording and written notes, not complete unit coverage. Multistage ionization, amphiprotic salts, detailed physical-equilibrium calculations and mixed titration problems still need extended practice.",
+    remaining: "Unit 6 foundation with a thirteen-chapter Marin recording and written notes, not complete unit coverage. Further multistage ionization, nonideal activities, physical-equilibrium calculations and mixed weak-acid titrations still need extended practice.",
     sections: [
       { title: "Equilibrium is movement in both directions", paragraphs: ["Picture water evaporating inside a closed vessel. Initially evaporation dominates; as vapour accumulates, condensation becomes more frequent. At equilibrium the two rates are equal and nonzero. The amounts become constant, but molecules do not stop moving. Equal rates do not require equal amounts of liquid and vapour.", "The same idea applies to melting and freezing, sublimation and deposition, or a reversible gas reaction under suitable conditions. Temperature matters. For a dilute dissolved gas, the convention p = k_H x relates gas partial pressure to dissolved mole fraction. At fixed pressure, a larger k_H means less gas dissolves; other Henry-law conventions use different constants."], formula: "Dynamic equilibrium: forward rate = reverse rate; Henry convention: p = k_H x" },
       { title: "Compare the present mixture with K", paragraphs: ["For a reversible reaction, form Q using product activities divided by reactant activities, raising each to its balanced coefficient. At equilibrium Q equals K. If Q is smaller than K, the forward change brings the mixture towards equilibrium. If Q is larger, the reverse change is favoured. Never compare concentrations without first balancing the equation.", "Pure solids and pure liquids have unit activity in their reference states and are omitted from the usual expression. For dilute ideal solutions, normalized concentrations approximate activities. Textbook K_c and K_p expressions often use unnormalized numerical concentrations and pressures; keep their unit conventions consistent. For ideal gases their conventional relationship is K_p = K_c(RT)^Delta n_g."], formula: "Q < K: forward; Q > K: reverse; Delta n_g = gaseous product coefficients - gaseous reactant coefficients" },
@@ -49,7 +50,7 @@ export const equilibriumElectrochemistryLessons: StudyLesson[] = [
     title: "Redox and electrochemistry: electrons, cells and calculations",
     summary: "Balance electron transfer, distinguish cell electrodes and connect voltage with equilibrium and electrolysis.",
     prerequisites: "Oxidation numbers, moles, ionic equations, concentration and logarithms.",
-    remaining: "Unit 7 foundation with a nine-chapter Marin recording and written notes, not complete unit coverage. Electrode classifications, additional weak-electrolyte conductance data, detailed dry-cell chemistry and broader mixed problems remain for further practice.",
+    remaining: "Unit 7 foundation with a fourteen-chapter Marin recording and written notes, not complete unit coverage. Electrode classifications, additional weak-electrolyte conductance data, detailed dry-cell chemistry and broader mixed problems remain for further practice.",
     sections: [
       { title: "Follow oxidation numbers, not just oxygen", paragraphs: ["Oxidation raises oxidation number; reduction lowers it. The oxidizing agent accepts electrons and is itself reduced. The reducing agent supplies electrons and is itself oxidized. These statements remain useful when a reaction contains no oxygen, such as zinc transferring electrons to copper ions.", "The sum of oxidation numbers equals the species charge. Elemental species have oxidation number zero. Oxygen is usually minus two but is minus one in peroxides; hydrogen is usually plus one but is minus one in metal hydrides. Fluorine in compounds is minus one. Apply exceptions before assigning an unknown value."], formula: "Oxidation: increase; reduction: decrease; sum of oxidation numbers = total charge" },
       { title: "Balance atoms and charge separately", paragraphs: ["In acidic solution, permanganate reduces to Mn2+. Balance oxygen with water, hydrogen with H+, and charge with electrons. Its half-reaction uses eight hydrogen ions and five electrons to form four water molecules. Iron(II) loses one electron to become iron(III), so multiply that half-reaction by five before adding.", "The result is MnO4- + 8H+ + 5Fe2+ -> Mn2+ + 4H2O + 5Fe3+. Both sides have net charge plus seventeen. For basic medium, neutralize any hydrogen ions by adding equal hydroxide ions to both sides, combine water and cancel it where possible. Finally check every element and total charge again."], formula: "MnO4- + 8H+ + 5e- -> Mn2+ + 4H2O in acidic medium" },
@@ -88,3 +89,73 @@ export const equilibriumElectrochemistryLessons: StudyLesson[] = [
     sources: [syllabus, { title: "OpenStax: redox balancing", url: "https://openstax.org/books/chemistry-2e/pages/17-1-review-of-redox-chemistry" }, { title: "OpenStax: batteries and fuel cells", url: "https://openstax.org/books/chemistry-2e/pages/17-5-batteries-and-fuel-cells" }, { title: "OpenStax: galvanic cells", url: "https://openstax.org/books/chemistry-2e/pages/17-2-galvanic-cells" }, { title: "OpenStax: potential, free energy and equilibrium", url: "https://openstax.org/books/chemistry-2e/pages/17-4-potential-free-energy-and-equilibrium" }, { title: "OpenStax: electrolysis", url: "https://openstax.org/books/chemistry-2e/pages/17-7-electrolysis" }],
   },
 ];
+
+const addedExamples: Record<string, StudyLesson["examples"]> = {
+  "equilibrium": [
+    {
+      "question": "Pure N2O4 dissociates by 20.0% at total pressure 1.00 bar. Find dimensionless Kp with p°=1.00 bar, assuming ideal gases.",
+      "steps": [
+        "Start with 1 mol: N2O4=0.800 mol, NO2=0.400 mol, total=1.200 mol.",
+        "Partial pressures are 2/3 bar and 1/3 bar.",
+        "Kp=(1/3)^2/(2/3)=1/6."
+      ],
+      "answer": "Kp = 0.1667 under the stated convention."
+    },
+    {
+      "question": "Titrate 25.0 mL of 0.100 M HCl with 0.100 M NaOH. Find pH after 20.0 and 30.0 mL base, assuming ideal dilute behaviour at 25 °C.",
+      "steps": [
+        "Initial acid=2.50 mmol. At 20.0 mL, 0.500 mmol H+ remains in 45.0 mL.",
+        "[H+]=0.000500/0.0450=0.01111 M; pH=1.95.",
+        "At 30.0 mL, excess OH-=0.500 mmol in 55.0 mL: pOH=2.04 and pH=11.96."
+      ],
+      "answer": "pH approximately 1.95 before equivalence and 11.96 after equivalence."
+    },
+    {
+      "question": "An intermediate amphiprotic salt has pKa1=6.3 and pKa2=10.3 for the same diprotic-acid system. Estimate pH when the amphiprotic approximation applies.",
+      "steps": [
+        "The intermediate species both accepts and donates protons.",
+        "pH≈(pKa1+pKa2)/2=(6.3+10.3)/2.",
+        "At very low concentration water contributions can invalidate this estimate."
+      ],
+      "answer": "pH approximately 8.3, subject to the model assumptions."
+    }
+  ],
+  "redox-electrochemistry": [
+    {
+      "question": "A zinc concentration cell has Zn2+ concentrations 0.0010 M and 0.100 M at 25 °C. Estimate its positive cell voltage, neglecting junction potentials and activity corrections.",
+      "steps": [
+        "The electrodes use the same couple; standard cell voltage is zero.",
+        "The dilute side is the anode; oxidation raises its Zn2+ concentration.",
+        "E=(0.05916/2)log10(0.100/0.0010)=0.05916 V."
+      ],
+      "answer": "0.05916 V; electrons flow from dilute-side zinc to concentrated-side zinc."
+    },
+    {
+      "question": "For a two-electron reaction, E°=0.11832 V at 25 °C. Find K and ΔG° using F=96500 C/mol and the 0.05916 V Nernst factor.",
+      "steps": [
+        "log10 K=nE°/0.05916=4.",
+        "K=10^4=10000.",
+        "ΔG°=−nFE°=−2×96500×0.11832 J/mol."
+      ],
+      "answer": "K = 10000 and ΔG° approximately −22.84 kJ/mol for the written reaction."
+    },
+    {
+      "question": "Pass 1930 C through series cells depositing Cu from Cu2+ and Ag from Ag+. Use F=96500 C/mol, MCu=63.5 g/mol, MAg=107.9 g/mol. Find ideal masses and copper mass at 80% efficiency.",
+      "steps": [
+        "Each cell receives 1930/96500=0.0200 mol electrons.",
+        "Copper mass=0.0200×63.5/2=0.635 g; silver mass=0.0200×107.9=2.158 g.",
+        "At 80% copper efficiency multiply 0.635 by 0.80."
+      ],
+      "answer": "Cu 0.635 g and Ag 2.158 g ideally; Cu 0.508 g at 80% efficiency."
+    }
+  ]
+};
+
+for (const lesson of equilibriumElectrochemistryLessons) {
+  if (!(lesson.id in additions)) continue;
+  const added = additions[lesson.id as keyof typeof additions];
+  lesson.sections.push(...added.chapters.map(chapter => ({title: chapter.title, paragraphs: [chapter.script], formula: chapter.formula})));
+  lesson.examples.push(...addedExamples[lesson.id]);
+  lesson.quiz.push(...added.foundationExtraQuiz, ...added.quiz);
+  lesson.sources.push(...added.sources.filter(source => !lesson.sources.some(existing => existing.url === source.url)));
+}

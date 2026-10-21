@@ -1163,8 +1163,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "equilibrium", subject: "Chemistry", unit: 6, number: "C06", title: equilibrium.title,
-    description: "Eight narrated chapters covering dynamic equilibrium, reaction quotients, gas shifts, acids, buffers, hydrolysis and solubility.",
-    scope: "Recorded JEE Main 2026 Chemistry Unit 6 foundation with original practice. Multistage ionization, amphiprotic salts, detailed physical-equilibrium calculations and mixed titrations remain; not exhaustive coverage or official PYQs.",
+    description: "Thirteen narrated chapters on equilibrium constants, gas dissociation, buffers, hydrolysis, titration pH, solubility and amphiprotic salts.",
+    scope: "Recorded JEE Main 2026 Chemistry Unit 6 foundation with original practice. Further multistage ionization, nonideal activities, physical-equilibrium calculations and mixed weak-acid titrations remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.equilibrium.lecture.v1",
     audio: "/lectures/equilibrium/narration-marin.mp3",
     subtitles: "/lectures/equilibrium/english.vtt", timings: equilibriumTimings,
@@ -1173,7 +1173,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "redox-electrochemistry", subject: "Chemistry", unit: 7, number: "C07", title: electrochemistry.title,
-    description: "Nine narrated chapters covering redox balancing, conductance, galvanic cells, Nernst calculations, electrolysis and batteries.",
+    description: "Fourteen narrated chapters on redox, Nernst and concentration cells, voltage and equilibrium, conductance, series electrolysis, batteries and corrosion.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 7 foundation with original practice. Electrode classifications, detailed dry-cell mechanisms and broader mixed problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.redox-electrochemistry.lecture.v1",
     audio: "/lectures/redox-electrochemistry/narration-marin.mp3",
@@ -1283,7 +1283,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "practical-chemistry", subject: "Chemistry", unit: 20, number: "C18", title: practicalChemistry.title,
-    description: "Eight narrated chapters on observations, titration ratios, permanganate, salt and functional-group evidence, preparations, calorimetry and rate experiments.",
+    description: "Thirteen narrated chapters on titration corrections, measurement bounds, anion and cation evidence, preparations, calorimetry and rate experiments.",
     scope: "Recorded Unit 20 conceptual foundation with original practice. Full ion-analysis schemes, all preparation equations, indicator curves, sol preparation and further kinetic datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.practical-chemistry.lecture.v1",
     audio: "/lectures/practical-chemistry/narration-marin.mp3",
