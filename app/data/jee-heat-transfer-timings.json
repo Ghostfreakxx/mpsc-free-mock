@@ -1,0 +1,759 @@
+{
+  "duration": 409.99200000001105,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 79.56000000000212
+    },
+    {
+      "start": 79.56000000000212,
+      "end": 165.57600000000448
+    },
+    {
+      "start": 165.57600000000448,
+      "end": 245.68800000000664
+    },
+    {
+      "start": 245.68800000000664,
+      "end": 326.6880000000088
+    },
+    {
+      "start": 326.6880000000088,
+      "end": 409.99200000001105
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.7400000095367432,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.740000009536743,
+      "end": 7.019999980926514,
+      "text": "Touch the handle of a metal spoon left in hot soup, watch the soup circulate,",
+      "chapter": 0
+    },
+    {
+      "start": 7.300000190734863,
+      "end": 10.140000343322754,
+      "text": "and feel warmth from a nearby heater without touching it.",
+      "chapter": 0
+    },
+    {
+      "start": 10.960000038146973,
+      "end": 14.140000343322754,
+      "text": "Those experiences point to three different ways energy travels.",
+      "chapter": 0
+    },
+    {
+      "start": 15.140000343322754,
+      "end": 19.239999771118164,
+      "text": "Conduction transfers energy through microscopic interactions without a bulk",
+      "chapter": 0
+    },
+    {
+      "start": 19.239999771118164,
+      "end": 20.1200008392334,
+      "text": "flow of the material.",
+      "chapter": 0
+    },
+    {
+      "start": 20.899999618530273,
+      "end": 24.059999465942383,
+      "text": "In metals, mobile electrons also help carry energy.",
+      "chapter": 0
+    },
+    {
+      "start": 24.940000534057617,
+      "end": 28.979999542236328,
+      "text": "Convection involves fluid moving from place to place and carrying internal",
+      "chapter": 0
+    },
+    {
+      "start": 28.979999542236328,
+      "end": 29.799999237060547,
+      "text": "energy with it.",
+      "chapter": 0
+    },
+    {
+      "start": 30,
+      "end": 34.720001220703125,
+      "text": "Warm fluid often rises because it becomes less dense in a gravitational field,",
+      "chapter": 0
+    },
+    {
+      "start": 35.36000061035156,
+      "end": 38.2400016784668,
+      "text": "but a fan or pump can also drive forced convection.",
+      "chapter": 0
+    },
+    {
+      "start": 39.380001068115234,
+      "end": 43.52000045776367,
+      "text": "Radiation carries energy as electromagnetic waves and does not need any",
+      "chapter": 0
+    },
+    {
+      "start": 43.52000045776367,
+      "end": 45.36000061035156,
+      "text": "material between source and receiver.",
+      "chapter": 0
+    },
+    {
+      "start": 46.279998779296875,
+      "end": 48.7400016784668,
+      "text": "That's how sunlight reaches Earth through space.",
+      "chapter": 0
+    },
+    {
+      "start": 49.380001068115234,
+      "end": 51.91999816894531,
+      "text": "Real situations often involve all three mechanisms.",
+      "chapter": 0
+    },
+    {
+      "start": 52.7599983215332,
+      "end": 56.2599983215332,
+      "text": "A hot cooking vessel conducts through its wall, circulates liquid by",
+      "chapter": 0
+    },
+    {
+      "start": 56.2599983215332,
+      "end": 58.52000045776367,
+      "text": "convection, and radiates to its surroundings.",
+      "chapter": 0
+    },
+    {
+      "start": 59.459999084472656,
+      "end": 63.79999923706055,
+      "text": "So don't force every situation into just one category unless the question asks",
+      "chapter": 0
+    },
+    {
+      "start": 63.79999923706055,
+      "end": 65.04000091552734,
+      "text": "which mechanism dominates.",
+      "chapter": 0
+    },
+    {
+      "start": 65.77999877929688,
+      "end": 69.81999969482422,
+      "text": "We will calculate steady conduction and thermal radiation, then use a simple",
+      "chapter": 0
+    },
+    {
+      "start": 69.81999969482422,
+      "end": 70.41999816894531,
+      "text": "cooling model.",
+      "chapter": 0
+    },
+    {
+      "start": 71.36000061035156,
+      "end": 74.0999984741211,
+      "text": "Keep the distinction between heat and its rate of transfer clear.",
+      "chapter": 0
+    },
+    {
+      "start": 74.9800033569336,
+      "end": 79.12000274658203,
+      "text": "Heat is measured in joules; transfer rate is energy per second, measured in",
+      "chapter": 0
+    },
+    {
+      "start": 79.12000274658203,
+      "end": 79.31999969482422,
+      "text": "watts.",
+      "chapter": 0
+    },
+    {
+      "start": 79.56000000000212,
+      "end": 83.69999986648772,
+      "text": "Imagine a flat slab with one face held warm and the other held cooler.",
+      "chapter": 1
+    },
+    {
+      "start": 84.63999992370817,
+      "end": 88.4599996185324,
+      "text": "After the temperature profile settles, energy crosses the slab at a steady",
+      "chapter": 1
+    },
+    {
+      "start": 88.4599996185324,
+      "end": 88.78000026703093,
+      "text": "rate.",
+      "chapter": 1
+    },
+    {
+      "start": 89.86000019073698,
+      "end": 94.98000007629607,
+      "text": "For uniform material, no internal generation and negligible side losses, that",
+      "chapter": 1
+    },
+    {
+      "start": 94.98000007629607,
+      "end": 99.19999938965056,
+      "text": "rate equals thermal conductivity times area times temperature difference,",
+      "chapter": 1
+    },
+    {
+      "start": 99.60000091552946,
+      "end": 100.60000091552946,
+      "text": "divided by thickness.",
+      "chapter": 1
+    },
+    {
+      "start": 101.50000053405974,
+      "end": 104.68000083923552,
+      "text": "Conductivity tells us how readily the material conducts.",
+      "chapter": 1
+    },
+    {
+      "start": 105.27999931335661,
+      "end": 108.16000038147185,
+      "text": "A larger face offers more parallel paths for transfer.",
+      "chapter": 1
+    },
+    {
+      "start": 108.85999923706267,
+      "end": 111.19999938965056,
+      "text": "Greater thickness makes the transfer path longer.",
+      "chapter": 1
+    },
+    {
+      "start": 112.26000076294157,
+      "end": 117.53999954223845,
+      "text": "Let's use conductivity zero point five watts per metre per kelvin, face area",
+      "chapter": 1
+    },
+    {
+      "start": 117.53999954223845,
+      "end": 122.01999908447478,
+      "text": "two square metres, thickness zero point one metres, and temperature difference",
+      "chapter": 1
+    },
+    {
+      "start": 122.01999908447478,
+      "end": 122.7400003051779,
+      "text": "twenty kelvin.",
+      "chapter": 1
+    },
+    {
+      "start": 123.81999832153532,
+      "end": 128.1599984741232,
+      "text": "Multiply zero point five by two by twenty, then divide by zero point one.",
+      "chapter": 1
+    },
+    {
+      "start": 128.58000045776578,
+      "end": 129.92000061035367,
+      "text": "The rate is two hundred watts.",
+      "chapter": 1
+    },
+    {
+      "start": 130.78000122070523,
+      "end": 134.6599984741232,
+      "text": "Over sixty seconds, it transfers twelve thousand joules if the boundary",
+      "chapter": 1
+    },
+    {
+      "start": 134.6599984741232,
+      "end": 135.71999984741421,
+      "text": "temperatures stay fixed.",
+      "chapter": 1
+    },
+    {
+      "start": 136.51999908447476,
+      "end": 139.28000122070523,
+      "text": "Pause and predict what doubling the thickness does.",
+      "chapter": 1
+    },
+    {
+      "start": 140.2400003051779,
+      "end": 143.7400003051779,
+      "text": "It halves the rate, not the energy per degree stored inside the material.",
+      "chapter": 1
+    },
+    {
+      "start": 144.72000366211148,
+      "end": 147.29999786377164,
+      "text": "Conductivity and specific heat are different properties.",
+      "chapter": 1
+    },
+    {
+      "start": 148.19999938965054,
+      "end": 152.0600000000021,
+      "text": "The minus sign in the differential conduction law describes flow toward lower",
+      "chapter": 1
+    },
+    {
+      "start": 152.0600000000021,
+      "end": 155.68000274658414,
+      "text": "temperature; here we are calculating the positive magnitude.",
+      "chapter": 1
+    },
+    {
+      "start": 156.7400003051779,
+      "end": 159.43999725342007,
+      "text": "Steady state does not mean both slab faces have the same temperature.",
+      "chapter": 1
+    },
+    {
+      "start": 159.89999633789273,
+      "end": 164.28000122070523,
+      "text": "It means the temperature at each location stops changing with time while energy",
+      "chapter": 1
+    },
+    {
+      "start": 164.28000122070523,
+      "end": 165.28000122070523,
+      "text": "continues to flow.",
+      "chapter": 1
+    },
+    {
+      "start": 165.57600000000448,
+      "end": 170.01600005722494,
+      "text": "Now stack two insulating layers, so energy must pass through the first and then",
+      "chapter": 2
+    },
+    {
+      "start": 170.01600005722494,
+      "end": 170.4560001144454,
+      "text": "the second.",
+      "chapter": 2
+    },
+    {
+      "start": 171.19599988556357,
+      "end": 175.63600041962118,
+      "text": "We can make the algebra friendlier by defining thermal resistance: thickness",
+      "chapter": 2
+    },
+    {
+      "start": 175.63600041962118,
+      "end": 177.71600034332724,
+      "text": "divided by conductivity times area.",
+      "chapter": 2
+    },
+    {
+      "start": 178.5559995422408,
+      "end": 180.13600041962118,
+      "text": "Its unit is kelvin per watt.",
+      "chapter": 2
+    },
+    {
+      "start": 181.01599958038778,
+      "end": 184.59600045776816,
+      "text": "A large resistance needs a large temperature difference to pass a given power.",
+      "chapter": 2
+    },
+    {
+      "start": 185.79599931335898,
+      "end": 189.57600000000448,
+      "text": "In steady series conduction, both layers carry the same transfer rate,",
+      "chapter": 2
+    },
+    {
+      "start": 190.03599908447714,
+      "end": 192.5160005340621,
+      "text": "otherwise energy would keep accumulating at their interface.",
+      "chapter": 2
+    },
+    {
+      "start": 193.29599931335898,
+      "end": 194.29599931335898,
+      "text": "Add their resistances.",
+      "chapter": 2
+    },
+    {
+      "start": 195.11600091553183,
+      "end": 199.41600015259237,
+      "text": "If the two resistances are zero point two and zero point three kelvin per watt,",
+      "chapter": 2
+    },
+    {
+      "start": 199.93600061035605,
+      "end": 204.45600106811972,
+      "text": "and the outer faces differ by fifty kelvin, divide fifty by zero point five.",
+      "chapter": 2
+    },
+    {
+      "start": 204.85599877930136,
+      "end": 206.53599908447714,
+      "text": "The rate is one hundred watts.",
+      "chapter": 2
+    },
+    {
+      "start": 207.37599923706503,
+      "end": 209.25600030518027,
+      "text": "How much temperature drop belongs to each layer?",
+      "chapter": 2
+    },
+    {
+      "start": 210.21599938965292,
+      "end": 212.0559995422408,
+      "text": "Multiply the common rate by each resistance.",
+      "chapter": 2
+    },
+    {
+      "start": 212.6360013732955,
+      "end": 214.9760015258834,
+      "text": "The drops are twenty kelvin and thirty kelvin.",
+      "chapter": 2
+    },
+    {
+      "start": 215.41600015259237,
+      "end": 219.77600076294394,
+      "text": "If the hot face is eighty degrees Celsius and the cold face thirty, the",
+      "chapter": 2
+    },
+    {
+      "start": 219.77600076294394,
+      "end": 221.4760015258834,
+      "text": "interface is sixty degrees Celsius.",
+      "chapter": 2
+    },
+    {
+      "start": 222.3959996948287,
+      "end": 224.8959996948287,
+      "text": "Notice that the greater resistance takes the greater temperature drop.",
+      "chapter": 2
+    },
+    {
+      "start": 225.51599862671347,
+      "end": 230.0959966430709,
+      "text": "We assume perfect contact and no side losses; an imperfect contact can",
+      "chapter": 2
+    },
+    {
+      "start": 230.0959966430709,
+      "end": 231.31599786377402,
+      "text": "introduce an extra resistance.",
+      "chapter": 2
+    },
+    {
+      "start": 232.17599847412558,
+      "end": 236.17599847412558,
+      "text": "For separate side by side paths with the same boundary temperatures, add the",
+      "chapter": 2
+    },
+    {
+      "start": 236.17599847412558,
+      "end": 238.55600335693808,
+      "text": "transfer rates instead of adding series resistances.",
+      "chapter": 2
+    },
+    {
+      "start": 239.4159963378951,
+      "end": 241.3760030517623,
+      "text": "First sketch the path energy must follow.",
+      "chapter": 2
+    },
+    {
+      "start": 241.83600213623495,
+      "end": 245.4959981689498,
+      "text": "That simple sketch tells you whether the layers are in series or in parallel.",
+      "chapter": 2
+    },
+    {
+      "start": 245.68800000000664,
+      "end": 249.1480000381536,
+      "text": "Unlike conduction, thermal radiation can cross a vacuum.",
+      "chapter": 3
+    },
+    {
+      "start": 249.9880001907415,
+      "end": 254.12799958038994,
+      "text": "For a body facing a large surrounding enclosure, our simple net radiation model",
+      "chapter": 3
+    },
+    {
+      "start": 254.12799958038994,
+      "end": 259.1480000381536,
+      "text": "uses emissivity times the Stefan Boltzmann constant times area times the",
+      "chapter": 3
+    },
+    {
+      "start": 259.1480000381536,
+      "end": 261.4480002288885,
+      "text": "difference of fourth powers of absolute temperatures.",
+      "chapter": 3
+    },
+    {
+      "start": 262.18800000000664,
+      "end": 266.50799969483086,
+      "text": "The body emits radiation, and it also absorbs radiation from its surroundings.",
+      "chapter": 3
+    },
+    {
+      "start": 267.56799916077324,
+      "end": 270.247999465949,
+      "text": "Net loss means we subtract the incoming contribution.",
+      "chapter": 3
+    },
+    {
+      "start": 271.228000915534,
+      "end": 275.3680003051824,
+      "text": "Take an ideal blackbody of area zero point one square metres, at four hundred",
+      "chapter": 3
+    },
+    {
+      "start": 275.3680003051824,
+      "end": 278.9679987793035,
+      "text": "kelvin, surrounded by a large enclosure at three hundred kelvin.",
+      "chapter": 3
+    },
+    {
+      "start": 280.2080004577703,
+      "end": 283.6279986267156,
+      "text": "Use sigma five point six seven times ten to the power minus eight.",
+      "chapter": 3
+    },
+    {
+      "start": 284.5680010681219,
+      "end": 288.1279986267156,
+      "text": "The difference of the fourth powers is seventeen point five times ten to the",
+      "chapter": 3
+    },
+    {
+      "start": 288.1279986267156,
+      "end": 288.50799969483086,
+      "text": "power nine.",
+      "chapter": 3
+    },
+    {
+      "start": 289.728000915534,
+      "end": 292.68800000000664,
+      "text": "Multiplying gives net power ninety nine point two two five watts.",
+      "chapter": 3
+    },
+    {
+      "start": 293.90800122070976,
+      "end": 297.6279986267156,
+      "text": "Don't put Celsius temperatures into a fourth power formula, and don't subtract",
+      "chapter": 3
+    },
+    {
+      "start": 297.6279986267156,
+      "end": 299.728000915534,
+      "text": "the temperatures before raising to the fourth power.",
+      "chapter": 3
+    },
+    {
+      "start": 300.68800000000664,
+      "end": 304.2680018310613,
+      "text": "Doubling absolute temperature makes the emitted power sixteen times larger if",
+      "chapter": 3
+    },
+    {
+      "start": 304.2680018310613,
+      "end": 305.90800122070976,
+      "text": "area and emissivity stay fixed.",
+      "chapter": 3
+    },
+    {
+      "start": 306.92800167847344,
+      "end": 311.00799969483086,
+      "text": "But net power is not generally multiplied by sixteen, because the surrounding",
+      "chapter": 3
+    },
+    {
+      "start": 311.00799969483086,
+      "end": 312.18800000000664,
+      "text": "temperature term remains.",
+      "chapter": 3
+    },
+    {
+      "start": 312.9679987793035,
+      "end": 314.66800335694023,
+      "text": "A blackbody has emissivity one.",
+      "chapter": 3
+    },
+    {
+      "start": 315.50799969483086,
+      "end": 319.10799816895195,
+      "text": "Real emissivity depends on surface and wavelength; we are using a simple",
+      "chapter": 3
+    },
+    {
+      "start": 319.10799816895195,
+      "end": 320.42799786377617,
+      "text": "effective value.",
+      "chapter": 3
+    },
+    {
+      "start": 320.9679987793035,
+      "end": 324.6280024414129,
+      "text": "Shiny and dark surfaces can behave differently, but colour alone is not a",
+      "chapter": 3
+    },
+    {
+      "start": 324.6280024414129,
+      "end": 326.348003662116,
+      "text": "universal rule for infrared emissivity.",
+      "chapter": 3
+    },
+    {
+      "start": 326.6880000000088,
+      "end": 328.6880000000088,
+      "text": "Let's finish with Newton's law of cooling.",
+      "chapter": 4
+    },
+    {
+      "start": 329.408000028619,
+      "end": 333.3679998283474,
+      "text": "In a useful approximate model, the cooling rate is proportional to how much",
+      "chapter": 4
+    },
+    {
+      "start": 333.3679998283474,
+      "end": 335.26799992371485,
+      "text": "warmer the body is than its surroundings.",
+      "chapter": 4
+    },
+    {
+      "start": 336.04799965668605,
+      "end": 339.64800003815577,
+      "text": "The rate of change of temperature is minus a constant times the temperature",
+      "chapter": 4
+    },
+    {
+      "start": 339.64800003815577,
+      "end": 340.1679995422451,
+      "text": "excess.",
+      "chapter": 4
+    },
+    {
+      "start": 341.10800007630274,
+      "end": 344.7880003814785,
+      "text": "We assume nearly uniform body temperature and conditions that keep this",
+      "chapter": 4
+    },
+    {
+      "start": 344.7880003814785,
+      "end": 346.1679995422451,
+      "text": "constant approximately fixed.",
+      "chapter": 4
+    },
+    {
+      "start": 347.22800091553614,
+      "end": 349.04800061036036,
+      "text": "Suppose the room is twenty degrees Celsius.",
+      "chapter": 4
+    },
+    {
+      "start": 350.14799908448146,
+      "end": 354.0679991607754,
+      "text": "Compare the same body initially at sixty degrees with that body initially at",
+      "chapter": 4
+    },
+    {
+      "start": 354.0679991607754,
+      "end": 354.70800045777247,
+      "text": "forty degrees.",
+      "chapter": 4
+    },
+    {
+      "start": 355.6280005340664,
+      "end": 357.9680006866543,
+      "text": "The excess temperatures are forty and twenty degrees.",
+      "chapter": 4
+    },
+    {
+      "start": 358.6880000000088,
+      "end": 361.2879984741299,
+      "text": "So the first initial cooling rate has twice the magnitude.",
+      "chapter": 4
+    },
+    {
+      "start": 362.06800106812403,
+      "end": 365.4280016784756,
+      "text": "The comparison uses temperature differences, so Celsius is fine here.",
+      "chapter": 4
+    },
+    {
+      "start": 366.1279986267178,
+      "end": 369.1279986267178,
+      "text": "It does not mean the body loses the same number of degrees each minute.",
+      "chapter": 4
+    },
+    {
+      "start": 369.80799893189356,
+      "end": 373.4080012207119,
+      "text": "As it cools, the excess becomes smaller and the cooling slows.",
+      "chapter": 4
+    },
+    {
+      "start": 374.48799923706935,
+      "end": 378.14799908448146,
+      "text": "For a constant model coefficient, temperature excess decays exponentially.",
+      "chapter": 4
+    },
+    {
+      "start": 379.007999694833,
+      "end": 383.48799923706935,
+      "text": "After one interval halves the excess, a second equal interval halves what",
+      "chapter": 4
+    },
+    {
+      "start": 383.48799923706935,
+      "end": 385.4080012207119,
+      "text": "remains, not the original temperature.",
+      "chapter": 4
+    },
+    {
+      "start": 386.20800045777247,
+      "end": 390.56800106812403,
+      "text": "A body starting at sixty in a twenty degree room would then reach forty, then",
+      "chapter": 4
+    },
+    {
+      "start": 390.56800106812403,
+      "end": 392.2879984741299,
+      "text": "thirty, under that example.",
+      "chapter": 4
+    },
+    {
+      "start": 393.14799908448146,
+      "end": 396.74799755860255,
+      "text": "Newton's law is not an exact substitute for the fourth power radiation law at",
+      "chapter": 4
+    },
+    {
+      "start": 396.74799755860255,
+      "end": 397.6079981689541,
+      "text": "arbitrary temperatures.",
+      "chapter": 4
+    },
+    {
+      "start": 398.44800213623927,
+      "end": 402.04800061036036,
+      "text": "For a small difference near a fixed surrounding temperature, radiation can",
+      "chapter": 4
+    },
+    {
+      "start": 402.04800061036036,
+      "end": 404.7079966430752,
+      "text": "approximately contribute a term proportional to the difference.",
+      "chapter": 4
+    },
+    {
+      "start": 405.5880015258877,
+      "end": 409.4880030517666,
+      "text": "Identify the mechanism, the assumptions and the units before choosing your",
+      "chapter": 4
+    },
+    {
+      "start": 409.4880030517666,
+      "end": 409.7680018310635,
+      "text": "equation.",
+      "chapter": 4
+    },
+    {
+      "start": 409.7680018310635,
+      "end": 409.99200000001105,
+      "text": "That's your heat transfer toolkit.",
+      "chapter": 4
+    }
+  ]
+}

@@ -1,0 +1,861 @@
+{
+  "duration": 431.04000000001184,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 83.35200000000226
+    },
+    {
+      "start": 83.35200000000226,
+      "end": 164.76000000000445
+    },
+    {
+      "start": 164.76000000000445,
+      "end": 255.528000000007
+    },
+    {
+      "start": 255.528000000007,
+      "end": 336.38400000000917
+    },
+    {
+      "start": 336.38400000000917,
+      "end": 431.04000000001184
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.3200000524520874,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.940000057220459,
+      "end": 5.71999979019165,
+      "text": "We needed two slits for Young's experiment, but one slit can also produce",
+      "chapter": 0
+    },
+    {
+      "start": 5.71999979019165,
+      "end": 6.960000038146973,
+      "text": "bright and dark structure.",
+      "chapter": 0
+    },
+    {
+      "start": 7.900000095367432,
+      "end": 11.397831577852548,
+      "text": "Different parts of the same illuminated aperture send contributions toward a",
+      "chapter": 0
+    },
+    {
+      "start": 11.397831577852548,
+      "end": 11.720000267028809,
+      "text": "screen.",
+      "chapter": 0
+    },
+    {
+      "start": 12.420000076293945,
+      "end": 14.399999618530273,
+      "text": "Their relative phases depend on direction.",
+      "chapter": 0
+    },
+    {
+      "start": 15.119999885559082,
+      "end": 18.959999084472656,
+      "text": "At the center, the paths from all parts of the slit are equal in the far field",
+      "chapter": 0
+    },
+    {
+      "start": 18.959999084472656,
+      "end": 21.280000686645508,
+      "text": "model, so the contributions reinforce.",
+      "chapter": 0
+    },
+    {
+      "start": 22.100000381469727,
+      "end": 25.18000030517578,
+      "text": "Move away from the center and the phases vary across the aperture.",
+      "chapter": 0
+    },
+    {
+      "start": 25.979999542236328,
+      "end": 29.99923060490535,
+      "text": "For the first dark direction, the path difference between the slit edges is",
+      "chapter": 0
+    },
+    {
+      "start": 29.99923060490535,
+      "end": 30.15999984741211,
+      "text": "one",
+      "chapter": 0
+    },
+    {
+      "start": 30.15999984741211,
+      "end": 30.520000457763672,
+      "text": "wavelength.",
+      "chapter": 0
+    },
+    {
+      "start": 31.440000534057617,
+      "end": 34.7599983215332,
+      "text": "Pair each point in the upper half with the corresponding point half a slit",
+      "chapter": 0
+    },
+    {
+      "start": 34.7599983215332,
+      "end": 35.34000015258789,
+      "text": "width below.",
+      "chapter": 0
+    },
+    {
+      "start": 36.040000915527344,
+      "end": 39.81999969482422,
+      "text": "Each pair differs by half a wavelength, so its two contributions cancel.",
+      "chapter": 0
+    },
+    {
+      "start": 40.58000183105469,
+      "end": 44.2400016784668,
+      "text": "The first minimum satisfies a sine theta equal to wavelength.",
+      "chapter": 0
+    },
+    {
+      "start": 46.060001373291016,
+      "end": 51.79999923706055,
+      "text": "Higher minima satisfy a sine theta equal to m wavelengths, for positive",
+      "chapter": 0
+    },
+    {
+      "start": 51.79999923706055,
+      "end": 54.84000015258789,
+      "text": "integers m, with corresponding symmetric negative angles.",
+      "chapter": 0
+    },
+    {
+      "start": 55.70000076293945,
+      "end": 57.939998626708984,
+      "text": "Do not include m equal to zero as a minimum.",
+      "chapter": 0
+    },
+    {
+      "start": 58.65999984741211,
+      "end": 62.779998779296875,
+      "text": "At zero angle the contributions line up, producing the central maximum.",
+      "chapter": 0
+    },
+    {
+      "start": 63.2599983215332,
+      "end": 67.91999816894531,
+      "text": "Our relation assumes a uniformly illuminated rectangular slit and Fraunhofer",
+      "chapter": 0
+    },
+    {
+      "start": 67.91999816894531,
+      "end": 71.30000305175781,
+      "text": "conditions, such as a far screen or a lens focal plane.",
+      "chapter": 0
+    },
+    {
+      "start": 71.9800033569336,
+      "end": 75.18000030517578,
+      "text": "Real finite distance diffraction can require a different description.",
+      "chapter": 0
+    },
+    {
+      "start": 75.83999633789062,
+      "end": 80.05999755859375,
+      "text": "The key idea is that one opening contains many coherent contributing points;",
+      "chapter": 0
+    },
+    {
+      "start": 80.19999694824219,
+      "end": 83.05999755859375,
+      "text": "you do not need a second physical slit to get cancellation.",
+      "chapter": 0
+    },
+    {
+      "start": 83.35200000000226,
+      "end": 88.17200017166364,
+      "text": "The first single slit minima occur symmetrically where sine theta equals plus",
+      "chapter": 1
+    },
+    {
+      "start": 88.17200017166364,
+      "end": 89.95199990463483,
+      "text": "or minus wavelength over slit width.",
+      "chapter": 1
+    },
+    {
+      "start": 90.63200020981061,
+      "end": 95.17199969482648,
+      "text": "For small angles, each first minimum lies approximately wavelength D over a",
+      "chapter": 1
+    },
+    {
+      "start": 95.71199965667951,
+      "end": 97.85200000000226,
+      "text": "from the center on a screen a distance D away.",
+      "chapter": 1
+    },
+    {
+      "start": 98.51199984741437,
+      "end": 102.59199977112043,
+      "text": "The full central maximum width is therefore twice wavelength D over a.",
+      "chapter": 1
+    },
+    {
+      "start": 103.41199946594465,
+      "end": 107.43199992370832,
+      "text": "Try wavelength five hundred nanometers, slit width zero point two millimeters,",
+      "chapter": 1
+    },
+    {
+      "start": 107.43199992370832,
+      "end": 109.33199954223859,
+      "text": "and screen distance two meters.",
+      "chapter": 1
+    },
+    {
+      "start": 110.03200030517804,
+      "end": 112.41199946594465,
+      "text": "One first minimum is five millimeters from the center.",
+      "chapter": 1
+    },
+    {
+      "start": 113.21200061035383,
+      "end": 116.89200091552961,
+      "text": "The central maximum extends from negative five to positive five millimeters,",
+      "chapter": 1
+    },
+    {
+      "start": 117.43200183105695,
+      "end": 118.9919993896507,
+      "text": "giving a full width of ten millimeters.",
+      "chapter": 1
+    },
+    {
+      "start": 119.75200152588117,
+      "end": 121.03200030517804,
+      "text": "What if we halve the slit width?",
+      "chapter": 1
+    },
+    {
+      "start": 121.95199847412336,
+      "end": 122.79199862671125,
+      "text": "Pause before calculating.",
+      "chapter": 1
+    },
+    {
+      "start": 123.61199832153547,
+      "end": 125.77199816894758,
+      "text": "The central maximum doubles to twenty millimeters.",
+      "chapter": 1
+    },
+    {
+      "start": 126.43200183105695,
+      "end": 128.67199969482647,
+      "text": "A narrower opening spreads the light more in angle.",
+      "chapter": 1
+    },
+    {
+      "start": 129.3920009155296,
+      "end": 133.03200030517803,
+      "text": "This is the opposite of the naive idea that a smaller slit must make a smaller",
+      "chapter": 1
+    },
+    {
+      "start": 133.03200030517803,
+      "end": 133.3920009155296,
+      "text": "patch.",
+      "chapter": 1
+    },
+    {
+      "start": 134.35200000000225,
+      "end": 136.5520007629417,
+      "text": "Increasing wavelength also broadens the pattern.",
+      "chapter": 1
+    },
+    {
+      "start": 137.23200106811748,
+      "end": 141.43200183105694,
+      "text": "The side maxima are weaker than the central one; their exact locations are not",
+      "chapter": 1
+    },
+    {
+      "start": 141.43200183105694,
+      "end": 142.6519992370628,
+      "text": "given by the minimum equation.",
+      "chapter": 1
+    },
+    {
+      "start": 143.45199847412334,
+      "end": 147.8119990844749,
+      "text": "In Young's ideal two slit formula, neighboring fringes have spacing wavelength",
+      "chapter": 1
+    },
+    {
+      "start": 147.8119990844749,
+      "end": 149.15200305176006,
+      "text": "D over slit separation.",
+      "chapter": 1
+    },
+    {
+      "start": 149.95199847412334,
+      "end": 153.3920009155296,
+      "text": "Here we are measuring the full width between the first minima of a single slit",
+      "chapter": 1
+    },
+    {
+      "start": 153.3920009155296,
+      "end": 155.35200000000225,
+      "text": "envelope, which has the factor two.",
+      "chapter": 1
+    },
+    {
+      "start": 156.19199633789287,
+      "end": 159.9919993896507,
+      "text": "Finite width double slits can show both: interference fringes inside a",
+      "chapter": 1
+    },
+    {
+      "start": 159.9919993896507,
+      "end": 160.73199725342022,
+      "text": "diffraction envelope.",
+      "chapter": 1
+    },
+    {
+      "start": 161.3920009155296,
+      "end": 164.76000000000445,
+      "text": "Always identify which width the question is asking for.",
+      "chapter": 1
+    },
+    {
+      "start": 164.76000000000445,
+      "end": 167.0199999904677,
+      "text": "Diffraction shows light's wave nature.",
+      "chapter": 2
+    },
+    {
+      "start": 167.94000006676166,
+      "end": 171.49999977112262,
+      "text": "Polarization tells us that the electromagnetic wave is transverse.",
+      "chapter": 2
+    },
+    {
+      "start": 172.29999996185748,
+      "end": 176.57999969482867,
+      "text": "For a wave traveling forward, its electric field oscillates perpendicular to",
+      "chapter": 2
+    },
+    {
+      "start": 176.57999969482867,
+      "end": 177.76000000000445,
+      "text": "the propagation direction.",
+      "chapter": 2
+    },
+    {
+      "start": 178.8399999237105,
+      "end": 183.1800000762984,
+      "text": "Plane polarized light has a fixed electric field oscillation direction in that",
+      "chapter": 2
+    },
+    {
+      "start": 183.1800000762984,
+      "end": 183.8999993896529,
+      "text": "transverse plane.",
+      "chapter": 2
+    },
+    {
+      "start": 184.76000000000445,
+      "end": 189.3999993896529,
+      "text": "Unpolarized light has rapidly fluctuating polarization directions in the usual",
+      "chapter": 2
+    },
+    {
+      "start": 189.3999993896529,
+      "end": 190.36000038147418,
+      "text": "statistical description.",
+      "chapter": 2
+    },
+    {
+      "start": 191.059999237065,
+      "end": 194.8999993896529,
+      "text": "It is not a beam that needs to turn its propagation direction to change",
+      "chapter": 2
+    },
+    {
+      "start": 194.8999993896529,
+      "end": 195.5200002288863,
+      "text": "polarization.",
+      "chapter": 2
+    },
+    {
+      "start": 196.41999984741656,
+      "end": 200.67999816894977,
+      "text": "An ideal polarizing sheet transmits the electric field component along its",
+      "chapter": 2
+    },
+    {
+      "start": 200.67999816894977,
+      "end": 203.84000183105914,
+      "text": "transmission axis and blocks the perpendicular component.",
+      "chapter": 2
+    },
+    {
+      "start": 204.6400010681197,
+      "end": 208.50000167847125,
+      "text": "On our board, the vertical arrow marks the allowed electric field direction,",
+      "chapter": 2
+    },
+    {
+      "start": 209.19999862671344,
+      "end": 210.85999847412555,
+      "text": "not the direction in which the ray travels.",
+      "chapter": 2
+    },
+    {
+      "start": 211.82000137329547,
+      "end": 215.6400010681197,
+      "text": "Two ideal polarizers with parallel axes can transmit the selected component.",
+      "chapter": 2
+    },
+    {
+      "start": 216.51999832153766,
+      "end": 220.35999847412555,
+      "text": "If their axes are perpendicular, light transmitted by the first is blocked by",
+      "chapter": 2
+    },
+    {
+      "start": 220.35999847412555,
+      "end": 220.8000009155318,
+      "text": "the second.",
+      "chapter": 2
+    },
+    {
+      "start": 221.57999969482867,
+      "end": 225.57999969482867,
+      "text": "Ordinary longitudinal sound waves in air do not have an independent transverse",
+      "chapter": 2
+    },
+    {
+      "start": 225.57999969482867,
+      "end": 227.3999993896529,
+      "text": "oscillation direction to select this way.",
+      "chapter": 2
+    },
+    {
+      "start": 228.32000137329547,
+      "end": 231.90641037965878,
+      "text": "That contrast makes polarization strong evidence for light's transverse",
+      "chapter": 2
+    },
+    {
+      "start": 231.90641037965878,
+      "end": 232.26000000000445,
+      "text": "nature.",
+      "chapter": 2
+    },
+    {
+      "start": 233.26000000000445,
+      "end": 237.3999993896529,
+      "text": "Polarizing filters can reduce suitably polarized reflected glare and are used",
+      "chapter": 2
+    },
+    {
+      "start": 237.3999993896529,
+      "end": 239.24000335693805,
+      "text": "in optical analysis and displays.",
+      "chapter": 2
+    },
+    {
+      "start": 240.09999633789508,
+      "end": 242.99999786377398,
+      "text": "They do not eliminate every reflected ray regardless of angle.",
+      "chapter": 2
+    },
+    {
+      "start": 243.8199975585982,
+      "end": 248.2000024414107,
+      "text": "Real filters also have finite transmission and leakage; we'll use ideal ones",
+      "chapter": 2
+    },
+    {
+      "start": 248.2000024414107,
+      "end": 249.48000122070758,
+      "text": "for the numerical examples.",
+      "chapter": 2
+    },
+    {
+      "start": 250.2000024414107,
+      "end": 253.95692464975656,
+      "text": "Keep field direction, propagation direction, and the filter's transmission",
+      "chapter": 2
+    },
+    {
+      "start": 253.95692464975656,
+      "end": 254.16000152588336,
+      "text": "axis",
+      "chapter": 2
+    },
+    {
+      "start": 254.16000152588336,
+      "end": 255.3000009155318,
+      "text": "distinct in your sketch.",
+      "chapter": 2
+    },
+    {
+      "start": 255.528000000007,
+      "end": 260.2636409720956,
+      "text": "Take already plane polarized light and an analyzer whose axis makes angle",
+      "chapter": 3
+    },
+    {
+      "start": 260.2636409720956,
+      "end": 260.58799994278655,
+      "text": "theta",
+      "chapter": 3
+    },
+    {
+      "start": 260.58799994278655,
+      "end": 261.70799982834563,
+      "text": "with that polarization.",
+      "chapter": 3
+    },
+    {
+      "start": 263.0080000190805,
+      "end": 266.8664613990854,
+      "text": "The transmitted electric field amplitude is the incident amplitude times",
+      "chapter": 3
+    },
+    {
+      "start": 266.8664613990854,
+      "end": 267.1879998474191,
+      "text": "cosine",
+      "chapter": 3
+    },
+    {
+      "start": 267.1879998474191,
+      "end": 267.528000000007,
+      "text": "theta.",
+      "chapter": 3
+    },
+    {
+      "start": 268.50799954224334,
+      "end": 272.6480008392404,
+      "text": "Since intensity is proportional to amplitude squared, transmitted intensity is",
+      "chapter": 3
+    },
+    {
+      "start": 272.6480008392404,
+      "end": 275.028000000007,
+      "text": "input intensity times cosine squared theta.",
+      "chapter": 3
+    },
+    {
+      "start": 275.78800022888885,
+      "end": 276.82799923706756,
+      "text": "This is Malus's law.",
+      "chapter": 3
+    },
+    {
+      "start": 277.56800091553436,
+      "end": 282.1879998474191,
+      "text": "At sixty degrees, cosine is one half, so intensity becomes one quarter of the",
+      "chapter": 3
+    },
+    {
+      "start": 282.1879998474191,
+      "end": 282.8680001525949,
+      "text": "polarized input.",
+      "chapter": 3
+    },
+    {
+      "start": 283.46800053406463,
+      "end": 286.98799908447967,
+      "text": "Now start with unpolarized light of intensity one hundred units.",
+      "chapter": 3
+    },
+    {
+      "start": 287.84799969483123,
+      "end": 291.467998626716,
+      "text": "An ideal first polarizer transmits half on average, giving fifty.",
+      "chapter": 3
+    },
+    {
+      "start": 291.82799923706756,
+      "end": 296.85569139608447,
+      "text": "An analyzer at sixty degrees to the first axis transmits a quarter of fifty,",
+      "chapter": 3
+    },
+    {
+      "start": 296.85569139608447,
+      "end": 296.98799908447967,
+      "text": "or",
+      "chapter": 3
+    },
+    {
+      "start": 296.98799908447967,
+      "end": 298.0480004577707,
+      "text": "twelve point five units.",
+      "chapter": 3
+    },
+    {
+      "start": 299.1479989318918,
+      "end": 302.6279984741281,
+      "text": "Do not divide by two a second time just because there is another sheet.",
+      "chapter": 3
+    },
+    {
+      "start": 302.9479981689523,
+      "end": 305.6080018310617,
+      "text": "The light entering that second sheet is polarized.",
+      "chapter": 3
+    },
+    {
+      "start": 306.4479981689523,
+      "end": 307.1879998474191,
+      "text": "Here's a nice puzzle.",
+      "chapter": 3
+    },
+    {
+      "start": 307.1879998474191,
+      "end": 309.967998626716,
+      "text": "Two crossed polarizers block the ideal beam.",
+      "chapter": 3
+    },
+    {
+      "start": 310.6279984741281,
+      "end": 313.6879998474191,
+      "text": "Put a third between them at forty five degrees to each outer axis.",
+      "chapter": 3
+    },
+    {
+      "start": 314.50799954224334,
+      "end": 315.7879983215402,
+      "text": "Does transmission remain zero?",
+      "chapter": 3
+    },
+    {
+      "start": 317.06800091553436,
+      "end": 317.1879998474191,
+      "text": "Pause.",
+      "chapter": 3
+    },
+    {
+      "start": 317.7879983215402,
+      "end": 319.3680001525949,
+      "text": "After the first sheet we have fifty units.",
+      "chapter": 3
+    },
+    {
+      "start": 319.84799969483123,
+      "end": 323.528000000007,
+      "text": "The middle passes half, giving twenty five, and rotates the selected",
+      "chapter": 3
+    },
+    {
+      "start": 323.528000000007,
+      "end": 325.1080018310617,
+      "text": "polarization to its own axis.",
+      "chapter": 3
+    },
+    {
+      "start": 325.64800274658904,
+      "end": 328.4280015258859,
+      "text": "The last passes half again, giving twelve point five.",
+      "chapter": 3
+    },
+    {
+      "start": 328.84799969483123,
+      "end": 332.06800091553436,
+      "text": "An extra filter can therefore increase the output from zero in this setup.",
+      "chapter": 3
+    },
+    {
+      "start": 332.06800091553436,
+      "end": 336.1775985351645,
+      "text": "Track both intensity and polarization direction after each sheet, not just the",
+      "chapter": 3
+    },
+    {
+      "start": 336.1775985351645,
+      "end": 336.38400000000917,
+      "text": "original beam.",
+      "chapter": 3
+    },
+    {
+      "start": 336.38400000000917,
+      "end": 340.25861548586073,
+      "text": "Polarization can also arise by reflection at a transparent dielectric",
+      "chapter": 4
+    },
+    {
+      "start": 340.25861548586073,
+      "end": 340.7640001144501,
+      "text": "boundary.",
+      "chapter": 4
+    },
+    {
+      "start": 341.5839998092743,
+      "end": 345.00399988556825,
+      "text": "At Brewster's angle, the reflected and refracted rays are perpendicular.",
+      "chapter": 4
+    },
+    {
+      "start": 345.88400000000917,
+      "end": 350.0240003433319,
+      "text": "For ordinary nonmagnetic transparent media, tangent of that incidence angle",
+      "chapter": 4
+    },
+    {
+      "start": 350.0240003433319,
+      "end": 354.6839992370697,
+      "text": "equals the transmitted medium's index divided by the incident medium's index.",
+      "chapter": 4
+    },
+    {
+      "start": 355.28399961853944,
+      "end": 360.1640000508718,
+      "text": "With air as one and glass as one point five, Brewster's angle is about fifty",
+      "chapter": 4
+    },
+    {
+      "start": 360.1640000508718,
+      "end": 361.62399977112733,
+      "text": "six point three degrees.",
+      "chapter": 4
+    },
+    {
+      "start": 362.12399977112733,
+      "end": 366.94399946595155,
+      "text": "The refraction angle is about thirty three point seven, and the two add to",
+      "chapter": 4
+    },
+    {
+      "start": 366.94399946595155,
+      "end": 368.0239993896576,
+      "text": "ninety.",
+      "chapter": 4
+    },
+    {
+      "start": 368.0239993896576,
+      "end": 372.14399832154237,
+      "text": "For ideal unpolarized input at that angle, the reflected light is linearly",
+      "chapter": 4
+    },
+    {
+      "start": 372.14399832154237,
+      "end": 374.38400000000917,
+      "text": "polarized perpendicular to the plane of incidence.",
+      "chapter": 4
+    },
+    {
+      "start": 375.0239993896576,
+      "end": 377.8639995422455,
+      "text": "The transmitted light is generally not completely polarized.",
+      "chapter": 4
+    },
+    {
+      "start": 378.72400015259706,
+      "end": 382.74400061036073,
+      "text": "The plane of incidence contains the incident ray and the normal; don't confuse",
+      "chapter": 4
+    },
+    {
+      "start": 382.74400061036073,
+      "end": 383.90400045777284,
+      "text": "it with the surface itself.",
+      "chapter": 4
+    },
+    {
+      "start": 384.64399832154237,
+      "end": 388.9440013733002,
+      "text": "Now compare our earlier critical angle of forty one point eight degrees for",
+      "chapter": 4
+    },
+    {
+      "start": 388.9440013733002,
+      "end": 389.7039996948334,
+      "text": "glass toward air.",
+      "chapter": 4
+    },
+    {
+      "start": 389.7039996948334,
+      "end": 392.8439990844818,
+      "text": "That was a different direction and a different phenomenon.",
+      "chapter": 4
+    },
+    {
+      "start": 393.96400183106385,
+      "end": 398.08194840691334,
+      "text": "Total internal reflection requires higher to lower index and an incidence",
+      "chapter": 4
+    },
+    {
+      "start": 398.08194840691334,
+      "end": 398.3639995422455,
+      "text": "angle",
+      "chapter": 4
+    },
+    {
+      "start": 398.3639995422455,
+      "end": 399.6839992370697,
+      "text": "above the critical value.",
+      "chapter": 4
+    },
+    {
+      "start": 400.7239963378998,
+      "end": 403.58399694825135,
+      "text": "Brewster incidence describes suppression of one reflected polarization",
+      "chapter": 4
+    },
+    {
+      "start": 403.58399694825135,
+      "end": 404.16399877930604,
+      "text": "component.",
+      "chapter": 4
+    },
+    {
+      "start": 405.16399877930604,
+      "end": 409.56400030518495,
+      "text": "For air entering ordinary glass, Brewster reflection is possible even though",
+      "chapter": 4
+    },
+    {
+      "start": 409.56400030518495,
+      "end": 411.184003051767,
+      "text": "total internal reflection is not.",
+      "chapter": 4
+    },
+    {
+      "start": 411.96400183106385,
+      "end": 416.54400366211854,
+      "text": "Our final optics checklist is: identify the geometry, decide whether the",
+      "chapter": 4
+    },
+    {
+      "start": 416.54400366211854,
+      "end": 421.5239993896576,
+      "text": "question concerns interference, diffraction, or polarization, state the",
+      "chapter": 4
+    },
+    {
+      "start": 421.5239993896576,
+      "end": 423.6239978637787,
+      "text": "assumptions, and only then choose the formula.",
+      "chapter": 4
+    },
+    {
+      "start": 424.48399847413026,
+      "end": 428.36400335694276,
+      "text": "The introductory optics sequence is now connected, but detailed mixed problems",
+      "chapter": 4
+    },
+    {
+      "start": 428.36400335694276,
+      "end": 430.684003051767,
+      "text": "and derivations still deserve their own practice.",
+      "chapter": 4
+    }
+  ]
+}

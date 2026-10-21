@@ -1,0 +1,889 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.240
+Welcome to Equilibrium.
+
+00:00:02.020 --> 00:00:05.520
+This recorded Chemistry class uses an AI generated Marin voice.
+
+00:00:06.400 --> 00:00:10.920
+Equilibrium is dynamic: opposing changes continue at equal, nonzero rates.
+
+00:00:11.780 --> 00:00:14.680
+Imagine liquid water in a closed container at fixed temperature.
+
+00:00:15.600 --> 00:00:17.500
+Water evaporates while vapour condenses.
+
+00:00:18.160 --> 00:00:22.840
+At equilibrium the amounts remain constant because the two rates balance, not
+
+00:00:22.840 --> 00:00:24.340
+because the molecules stop moving.
+
+00:00:24.340 --> 00:00:27.100
+Equal rates do not require equal amounts.
+
+00:00:28.040 --> 00:00:31.600
+Similar reasoning applies to melting and freezing, sublimation and deposition,
+
+00:00:32.180 --> 00:00:33.760
+and reversible chemical reactions.
+
+00:00:34.340 --> 00:00:36.520
+The conditions and phases must be specified.
+
+00:00:37.320 --> 00:00:41.653
+For a gas dissolved in a liquid, one common Henry law convention is gas
+
+00:00:41.653 --> 00:00:42.080
+partial
+
+00:00:42.080 --> 00:00:46.200
+pressure equals Henry's constant times the dissolved gas mole fraction.
+
+00:00:47.020 --> 00:00:51.344
+At fixed temperature and pressure, a larger constant in this convention means
+
+00:00:51.344 --> 00:00:51.400
+a
+
+00:00:51.400 --> 00:00:52.740
+smaller dissolved mole fraction.
+
+00:00:52.740 --> 00:00:57.280
+Suppose the gas partial pressure is two bar and the constant is one thousand
+
+00:00:57.280 --> 00:00:57.660
+bar.
+
+00:00:58.440 --> 00:01:03.640
+Divide two by one thousand to obtain mole fraction zero point zero zero two.
+
+00:01:03.640 --> 00:01:06.900
+Doubling the partial pressure doubles that mole fraction within the dilute
+
+00:01:06.900 --> 00:01:07.180
+model.
+
+00:01:07.820 --> 00:01:11.480
+A different convention can put the concentration on the other side, so do not
+
+00:01:11.480 --> 00:01:13.540
+compare constants before checking definitions.
+
+00:01:14.200 --> 00:01:17.820
+This distinction between a changing rate and a fixed equilibrium composition
+
+00:01:17.820 --> 00:01:19.440
+will guide the remaining chapters.
+
+00:01:20.112 --> 00:01:23.052
+The reaction quotient Q describes the present mixture.
+
+00:01:23.752 --> 00:01:27.712
+The equilibrium constant K describes equilibrium at the specified temperature.
+
+00:01:28.432 --> 00:01:32.112
+For a balanced reaction, multiply product activities raised to their
+
+00:01:32.112 --> 00:01:35.372
+coefficients and divide by the corresponding reactant product.
+
+00:01:36.292 --> 00:01:39.872
+Pure solids and pure liquids have unit activity in their reference states and
+
+00:01:39.872 --> 00:01:41.572
+are omitted from the usual expression.
+
+00:01:42.572 --> 00:01:47.112
+If Q is smaller than K, the forward direction is favoured; if larger, the
+
+00:01:47.112 --> 00:01:49.132
+reverse direction is favoured.
+
+00:01:49.132 --> 00:01:53.950
+Consider hydrogen plus iodine forming two hydrogen iodide molecules, all
+
+00:01:53.950 --> 00:01:54.352
+gases.
+
+00:01:55.232 --> 00:01:59.452
+In the ideal concentration convention, Q is hydrogen iodide concentration
+
+00:01:59.452 --> 00:02:03.652
+squared divided by hydrogen concentration times iodine concentration.
+
+00:02:04.772 --> 00:02:09.332
+Let those concentrations be zero point two zero, zero point one zero, and zero
+
+00:02:09.332 --> 00:02:10.832
+point one zero molar respectively.
+
+00:02:11.512 --> 00:02:12.212
+Q is four.
+
+00:02:12.712 --> 00:02:16.132
+If K is fifty at that temperature, the mixture proceeds forward.
+
+00:02:16.652 --> 00:02:19.292
+Reversing a reaction replaces K with its reciprocal.
+
+00:02:20.412 --> 00:02:22.332
+Doubling every coefficient squares K.
+
+00:02:23.232 --> 00:02:29.052
+For conventional ideal gas expressions, K p equals K c times R T raised to
+
+00:02:29.052 --> 00:02:30.192
+the gaseous mole change.
+
+00:02:30.872 --> 00:02:35.332
+In this example, two gas molecules replace two gas molecules, so the exponent
+
+00:02:35.332 --> 00:02:35.872
+is zero.
+
+00:02:36.632 --> 00:02:40.032
+Keep the pressure, concentration and gas constant conventions consistent.
+
+00:02:41.152 --> 00:02:44.532
+Rigorous thermodynamic equilibrium constants are dimensionless and use
+
+00:02:44.532 --> 00:02:46.312
+activities relative to reference states.
+
+00:02:47.064 --> 00:02:52.084
+Le Chatelier's principle helps predict a response, but checking Q is more
+
+00:02:52.084 --> 00:02:53.684
+reliable than memorizing slogans.
+
+00:02:54.704 --> 00:02:59.664
+For nitrogen plus three hydrogen forming two ammonia molecules, compression at
+
+00:02:59.664 --> 00:03:03.724
+unchanged temperature increases all reacting ideal gas partial pressures.
+
+00:03:04.584 --> 00:03:09.704
+The denominator in Q has total power four, while the numerator has power two.
+
+00:03:10.164 --> 00:03:14.224
+If all partial pressures double, Q falls by a factor of four.
+
+00:03:15.064 --> 00:03:20.064
+Starting at equilibrium, Q is then below K, so formation of ammonia is
+
+00:03:20.064 --> 00:03:21.444
+favoured.
+
+00:03:21.444 --> 00:03:23.824
+Compression does not change K at fixed temperature.
+
+00:03:24.824 --> 00:03:28.624
+Adding an inert ideal gas at fixed volume leaves the reacting gases' partial
+
+00:03:28.624 --> 00:03:31.924
+pressures unchanged, so it causes no shift in this model.
+
+00:03:32.944 --> 00:03:36.904
+At fixed total pressure the volume increases, and the outcome can differ.
+
+00:03:38.124 --> 00:03:40.924
+Heating changes K and favours the endothermic direction.
+
+00:03:41.604 --> 00:03:45.564
+For an exothermic forward reaction, heating favours the reverse direction.
+
+00:03:47.004 --> 00:03:50.704
+A catalyst accelerates the approach to equilibrium without changing its
+
+00:03:50.704 --> 00:03:52.604
+composition or K at the same temperature.
+
+00:03:53.984 --> 00:03:57.824
+Removing a product can favour further product formation, provided the relevant
+
+00:03:57.824 --> 00:03:59.744
+phase and activity actually change.
+
+00:04:00.904 --> 00:04:04.584
+Adding more of a pure solid already present does not simply multiply its
+
+00:04:04.584 --> 00:04:04.904
+activity.
+
+00:04:04.904 --> 00:04:08.424
+State the temperature, volume or pressure constraint.
+
+00:04:09.120 --> 00:04:12.120
+An acid can be described in several ways.
+
+00:04:12.760 --> 00:04:16.540
+An Arrhenius acid increases hydrogen ion concentration in water.
+
+00:04:17.040 --> 00:04:22.180
+A Bronsted acid donates a proton, and a Bronsted base accepts one.
+
+00:04:22.500 --> 00:04:25.280
+A Lewis acid accepts an electron pair.
+
+00:04:25.880 --> 00:04:29.260
+A conjugate acid and base differ by one proton.
+
+00:04:30.260 --> 00:04:32.220
+Ammonia and ammonium are one such pair.
+
+00:04:33.140 --> 00:04:37.621
+Acid strength refers to ionization behaviour, while concentration describes
+
+00:04:37.621 --> 00:04:37.800
+how
+
+00:04:37.800 --> 00:04:38.820
+much acid is present.
+
+00:04:39.520 --> 00:04:42.280
+Do not infer pH from the word strong alone.
+
+00:04:43.180 --> 00:04:47.660
+Strictly, pH is minus the base ten logarithm of hydrogen ion activity.
+
+00:04:48.280 --> 00:04:52.240
+In an elementary dilute model we use the numerical molar concentration.
+
+00:04:53.040 --> 00:04:57.640
+At twenty five degrees Celsius, the water ion product is approximately ten to
+
+00:04:57.640 --> 00:04:59.160
+the minus fourteen.
+
+00:04:59.160 --> 00:05:03.040
+The sum of pH and pOH is then approximately fourteen.
+
+00:05:03.040 --> 00:05:08.880
+A hydrogen ion concentration of ten to the minus three molar gives pH three.
+
+00:05:09.120 --> 00:05:14.420
+A hydroxide concentration of ten to the minus five molar gives pOH five and pH
+
+00:05:14.420 --> 00:05:15.680
+nine at this temperature.
+
+00:05:16.660 --> 00:05:21.040
+Neutrality means equal hydrogen and hydroxide activities, not an unconditional
+
+00:05:21.040 --> 00:05:23.160
+pH of seven at every temperature.
+
+00:05:24.080 --> 00:05:28.840
+Extremely dilute acid solutions require water ionization to be included; a
+
+00:05:28.840 --> 00:05:33.460
+strong acid concentration of ten to the minus eight molar cannot simply be
+
+00:05:33.460 --> 00:05:34.320
+assigned pH eight.
+
+00:05:35.040 --> 00:05:39.860
+For a monoprotic weak acid, let the initial concentration be C and the
+
+00:05:39.860 --> 00:05:41.260
+dissociated amount be x.
+
+00:05:42.280 --> 00:05:46.860
+Ignoring water ionization, the acid constant equals x squared divided by C
+
+00:05:46.860 --> 00:05:47.620
+minus x.
+
+00:05:48.200 --> 00:05:53.320
+If x is much smaller than C, replacing the denominator by C gives x
+
+00:05:53.320 --> 00:05:56.380
+approximately the square root of the acid constant times C.
+
+00:05:56.440 --> 00:06:00.863
+With C equal to zero point one zero zero molar and the acid constant ten to
+
+00:06:00.863 --> 00:06:01.040
+the
+
+00:06:01.040 --> 00:06:05.820
+minus five, x is approximately zero point zero zero one zero zero molar.
+
+00:06:06.540 --> 00:06:09.820
+The pH is about three, and only one percent dissociates.
+
+00:06:10.420 --> 00:06:12.660
+That small fraction supports the approximation.
+
+00:06:13.700 --> 00:06:18.520
+Now take both C and the acid constant as zero point zero zero one zero zero.
+
+00:06:18.520 --> 00:06:22.500
+The shortcut predicts complete dissociation, contradicting its own assumption.
+
+00:06:23.640 --> 00:06:24.760
+Solve the quadratic instead.
+
+00:06:25.340 --> 00:06:29.198
+The positive root is minus the acid constant plus the square root of its
+
+00:06:29.198 --> 00:06:29.520
+square
+
+00:06:29.520 --> 00:06:33.340
+plus four times the acid constant times C, all divided by two.
+
+00:06:33.980 --> 00:06:38.720
+The result is about zero point zero zero zero six one eight molar, giving pH
+
+00:06:38.720 --> 00:06:40.900
+three point two zero nine.
+
+00:06:40.900 --> 00:06:42.720
+About sixty two percent dissociates.
+
+00:06:43.520 --> 00:06:47.380
+The example shows why weak does not automatically mean slightly dissociated at
+
+00:06:47.380 --> 00:06:48.060
+every dilution.
+
+00:06:48.860 --> 00:06:52.880
+Check both the neglected dissociation fraction and whether water's own ions
+
+00:06:52.880 --> 00:06:53.220
+matter.
+
+00:06:53.352 --> 00:06:57.532
+A buffer contains a weak acid and its conjugate base in useful amounts.
+
+00:06:58.272 --> 00:07:02.632
+The acid consumes added base, while the conjugate base consumes added acid.
+
+00:07:03.452 --> 00:07:06.752
+First complete the strong acid or base reaction using moles.
+
+00:07:07.632 --> 00:07:13.192
+Only then apply the Henderson Hasselbalch approximation: pH equals p K a plus
+
+00:07:13.192 --> 00:07:17.612
+the base ten logarithm of remaining conjugate base divided by remaining acid.
+
+00:07:18.352 --> 00:07:22.952
+Suppose the buffer contains twenty millimoles of acid and thirty millimoles of
+
+00:07:22.952 --> 00:07:23.452
+conjugate base.
+
+00:07:24.312 --> 00:07:26.132
+Add five millimoles of strong acid.
+
+00:07:26.852 --> 00:07:30.931
+It consumes five millimoles of conjugate base and forms five millimoles of
+
+00:07:30.931 --> 00:07:31.152
+weak
+
+00:07:31.152 --> 00:07:33.812
+acid, leaving twenty five millimoles of each.
+
+00:07:34.552 --> 00:07:38.872
+Their concentration ratio equals their mole ratio because they share the same
+
+00:07:38.872 --> 00:07:39.532
+final volume.
+
+00:07:39.972 --> 00:07:45.112
+The ratio is one, so with p K a four point seven six, the final pH is
+
+00:07:45.112 --> 00:07:47.972
+approximately four point seven six.
+
+00:07:47.972 --> 00:07:51.512
+Using the original thirty over twenty ratio would ignore the neutralization.
+
+00:07:52.492 --> 00:07:56.432
+A ten to one base to acid ratio would instead add one pH unit.
+
+00:07:57.552 --> 00:08:01.112
+Diluting both partners equally initially preserves their ratio approximately,
+
+00:08:01.572 --> 00:08:02.912
+but reduces buffer capacity.
+
+00:08:03.172 --> 00:08:07.952
+If one partner is exhausted, stop using the two partner buffer formula and
+
+00:08:07.952 --> 00:08:11.372
+account for excess strong reagent and any relevant hydrolysis.
+
+00:08:11.616 --> 00:08:14.096
+Salt solutions need not be neutral.
+
+00:08:15.156 --> 00:08:19.716
+Acetate accepts a proton from water and produces hydroxide, so sodium acetate
+
+00:08:19.716 --> 00:08:21.976
+is basic in the elementary aqueous model.
+
+00:08:23.156 --> 00:08:27.236
+Ammonium can donate a proton to water, so ammonium chloride is acidic.
+
+00:08:28.236 --> 00:08:30.016
+Sodium and chloride are spectators here.
+
+00:08:30.736 --> 00:08:34.876
+For a conjugate pair at a given temperature, the acid constant times the base
+
+00:08:34.876 --> 00:08:37.176
+constant equals the water ion product.
+
+00:08:37.856 --> 00:08:42.576
+Consider zero point one zero zero molar sodium acetate at twenty five degrees
+
+00:08:42.576 --> 00:08:43.016
+Celsius.
+
+00:08:43.736 --> 00:08:48.196
+If the acetic acid constant is ten to the minus five, acetate's base constant
+
+00:08:48.196 --> 00:08:49.656
+is ten to the minus nine.
+
+00:08:50.216 --> 00:08:54.167
+The small hydrolysis estimate gives hydroxide concentration equal to the
+
+00:08:54.167 --> 00:08:54.496
+square
+
+00:08:54.496 --> 00:08:58.656
+root of the base constant times concentration, or ten to the minus five molar.
+
+00:08:59.076 --> 00:09:01.876
+The pOH is five and the pH is nine.
+
+00:09:02.636 --> 00:09:06.956
+Only zero point zero one percent of the acetate hydrolyses, so replacing its
+
+00:09:06.956 --> 00:09:09.956
+remaining concentration by the starting value is justified.
+
+00:09:10.996 --> 00:09:14.536
+The hydroxide concentration is also large compared with the neutral water
+
+00:09:14.536 --> 00:09:15.696
+background in this example.
+
+00:09:16.716 --> 00:09:20.976
+A salt of a strong acid and strong base is approximately neutral when neither
+
+00:09:20.976 --> 00:09:22.476
+ion hydrolyses appreciably.
+
+00:09:23.576 --> 00:09:27.996
+Salts with two reacting ions, amphiprotic species and very dilute solutions
+
+00:09:27.996 --> 00:09:30.356
+need additional equilibrium analysis.
+
+00:09:31.476 --> 00:09:33.936
+Identify the reacting ion before choosing a shortcut.
+
+00:09:34.176 --> 00:09:37.516
+Solubility products depend on stoichiometry.
+
+00:09:38.636 --> 00:09:43.732
+Silver chloride produces one silver ion and one chloride ion, so its dilute
+
+00:09:43.732 --> 00:09:43.936
+ion
+
+00:09:43.936 --> 00:09:45.976
+product is their concentration product.
+
+00:09:46.796 --> 00:09:51.056
+In pure water, molar solubility s gives a product of s squared.
+
+00:09:51.936 --> 00:09:56.596
+If an illustrative solubility product is ten to the minus ten, the solubility
+
+00:09:56.596 --> 00:09:58.656
+is ten to the minus five molar.
+
+00:09:59.296 --> 00:10:03.716
+With zero point zero one zero molar background chloride and no competing
+
+00:10:03.716 --> 00:10:08.296
+reactions, the approximate solubility falls to ten to the minus eight molar.
+
+00:10:09.316 --> 00:10:11.356
+Check that this is small compared with the background.
+
+00:10:12.376 --> 00:10:17.836
+A salt producing one A ion and two B ions instead gives four times s cubed.
+
+00:10:18.976 --> 00:10:22.996
+Mixing requires dilution before comparing the ion product with the solubility
+
+00:10:22.996 --> 00:10:23.456
+product.
+
+00:10:24.476 --> 00:10:28.939
+Mix equal volumes of silver and chloride stock solutions, each two times ten
+
+00:10:28.939 --> 00:10:29.056
+to
+
+00:10:29.056 --> 00:10:29.996
+the minus five molar.
+
+00:10:31.036 --> 00:10:35.616
+Each concentration halves, so the initial ion product is ten to the minus ten.
+
+00:10:36.436 --> 00:10:40.336
+With the illustrative constant above, this is exactly the saturation boundary,
+
+00:10:41.036 --> 00:10:41.976
+not supersaturation.
+
+00:10:42.796 --> 00:10:47.516
+A larger ion product permits precipitation; a smaller one permits more
+
+00:10:47.516 --> 00:10:49.296
+dissolution if solid is available.
+
+00:10:50.336 --> 00:10:55.136
+Common ions usually reduce solubility, but complex formation and acid base
+
+00:10:55.136 --> 00:10:56.976
+reactions can modify the result.
+
+00:10:58.096 --> 00:11:02.176
+Use the seven worked examples and twelve original questions in the notes to
+
+00:11:02.176 --> 00:11:03.016
+practise these checks.
+
+00:11:03.336 --> 00:11:07.436
+Pressure and concentration equilibrium expressions must use compatible
+
+00:11:07.436 --> 00:11:08.016
+conventions.
+
+00:11:08.996 --> 00:11:13.676
+For an ideal gas, partial pressure equals concentration times R T.
+
+00:11:14.536 --> 00:11:17.696
+If the pressure quotient uses each pressure divided by its standard pressure
+
+00:11:18.256 --> 00:11:21.956
+and the concentration quotient uses each concentration divided by its standard
+
+00:11:21.956 --> 00:11:26.776
+concentration, their conversion includes R T times standard concentration
+
+00:11:26.776 --> 00:11:28.256
+divided by standard pressure.
+
+00:11:29.026 --> 00:11:33.416
+Raise that dimensionless factor to the gaseous product mole count minus the
+
+00:11:33.416 --> 00:11:34.476
+gaseous reactant mole count.
+
+00:11:35.576 --> 00:11:39.836
+For dinitrogen tetroxide forming two nitrogen dioxide molecules, the change is
+
+00:11:39.836 --> 00:11:40.156
+one.
+
+00:11:40.856 --> 00:11:44.536
+Take standard concentration one mole per litre, standard pressure one bar,
+
+00:11:45.356 --> 00:11:49.173
+temperature three hundred kelvin and R zero point zero eight three one four
+
+00:11:49.173 --> 00:11:50.556
+litre bar per mole kelvin.
+
+00:11:51.286 --> 00:11:54.956
+The conversion factor is twenty four point nine four two.
+
+00:11:54.956 --> 00:11:59.276
+A supplied concentration based constant of zero point one zero zero therefore
+
+00:11:59.276 --> 00:12:03.356
+corresponds to a pressure based constant about two point four nine four under
+
+00:12:03.356 --> 00:12:04.076
+these conventions.
+
+00:12:05.256 --> 00:12:08.216
+When the gaseous mole change is zero, the factor cancels.
+
+00:12:09.116 --> 00:12:12.816
+Count gaseous species only and state the standards rather than silently
+
+00:12:12.816 --> 00:12:16.996
+combining incompatible units or treating every reported constant as the same
+
+00:12:16.996 --> 00:12:17.856
+numerical quantity.
+
+00:12:18.096 --> 00:12:22.368
+Gas dissociation changes the total number of molecules, so the reacted
+
+00:12:22.368 --> 00:12:22.856
+fraction
+
+00:12:22.856 --> 00:12:25.616
+is not generally the same as the product mole fraction.
+
+00:12:26.656 --> 00:12:29.136
+Begin with one mole of pure dinitrogen tetroxide.
+
+00:12:30.136 --> 00:12:34.916
+If a fraction alpha dissociates, one minus alpha mole remains and two alpha
+
+00:12:34.916 --> 00:12:36.596
+moles of nitrogen dioxide form.
+
+00:12:36.976 --> 00:12:38.836
+The total is one plus alpha.
+
+00:12:39.716 --> 00:12:43.591
+At twenty percent dissociation, the amounts are zero point eight and zero
+
+00:12:43.591 --> 00:12:43.856
+point
+
+00:12:43.856 --> 00:12:46.436
+four mole, with a total of one point two.
+
+00:12:46.436 --> 00:12:51.016
+The nitrogen dioxide mole fraction is therefore one third and the tetroxide
+
+00:12:51.016 --> 00:12:52.256
+fraction two thirds.
+
+00:12:53.116 --> 00:12:56.856
+At total pressure one bar, their partial pressures are one third bar and two
+
+00:12:56.856 --> 00:12:57.276
+thirds bar.
+
+00:12:57.976 --> 00:13:01.556
+With standard pressure one bar, the dimensionless pressure quotient is the
+
+00:13:01.556 --> 00:13:04.876
+square of one third divided by two thirds, giving one sixth.
+
+00:13:05.936 --> 00:13:09.996
+The general expression contains four alpha squared divided by one minus alpha
+
+00:13:09.996 --> 00:13:13.456
+squared, multiplied by total pressure divided by standard pressure.
+
+00:13:14.056 --> 00:13:17.776
+Check both atom balance and total moles before inserting a pressure.
+
+00:13:18.376 --> 00:13:22.416
+This model starts with pure reactant and assumes ideal gases without an inert
+
+00:13:22.416 --> 00:13:24.276
+gas or another competing reaction.
+
+00:13:24.552 --> 00:13:28.872
+In a strong acid strong base titration, calculate the neutralization amounts
+
+00:13:28.872 --> 00:13:30.852
+before the remaining ion concentration.
+
+00:13:31.932 --> 00:13:35.152
+Start with twenty five millilitres of zero point one zero zero molar
+
+00:13:35.152 --> 00:13:36.092
+hydrochloric acid.
+
+00:13:36.852 --> 00:13:40.752
+It contains zero point zero zero two five zero mole of acid.
+
+00:13:41.532 --> 00:13:45.272
+Adding twenty millilitres of equally concentrated sodium hydroxide consumes
+
+00:13:45.272 --> 00:13:50.794
+zero point zero zero two zero zero mole, leaving zero point zero zero zero
+
+00:13:50.794 --> 00:13:51.092
+five
+
+00:13:51.092 --> 00:13:54.552
+zero mole of hydrogen ions in forty five millilitres.
+
+00:13:54.552 --> 00:13:59.172
+The concentration is about zero point zero one one one molar and p H about one
+
+00:13:59.172 --> 00:14:00.912
+point nine five.
+
+00:14:00.912 --> 00:14:04.472
+At twenty five millilitres of base, the stoichiometric amounts are equal.
+
+00:14:05.432 --> 00:14:09.732
+For this ideal strong acid strong base example at twenty five degrees Celsius,
+
+00:14:09.732 --> 00:14:11.692
+p H is approximately seven.
+
+00:14:12.592 --> 00:14:17.452
+At thirty millilitres, excess hydroxide is zero point zero zero zero five zero
+
+00:14:17.452 --> 00:14:22.512
+mole in fifty five millilitres, giving p O H about two point zero four and p H
+
+00:14:22.512 --> 00:14:24.552
+about eleven point nine six.
+
+00:14:24.552 --> 00:14:27.192
+Total volume matters on both sides of equivalence.
+
+00:14:28.012 --> 00:14:32.132
+A weak acid titration has different equilibrium behaviour, so do not transfer
+
+00:14:32.132 --> 00:14:34.772
+the neutral equivalence conclusion to every acid base pair.
+
+00:14:35.016 --> 00:14:40.056
+A solubility product constrains free ion activities, not the total amount of
+
+00:14:40.056 --> 00:14:42.016
+every metal containing species in solution.
+
+00:14:42.996 --> 00:14:47.376
+For a simple dilute silver chloride model, use the concentration product as an
+
+00:14:47.376 --> 00:14:49.176
+approximation to the activity expression.
+
+00:14:50.196 --> 00:14:53.516
+With illustrative solubility product one point eight times ten to the minus
+
+00:14:53.516 --> 00:14:58.776
+ten, pure water gives equal silver and chloride concentrations and a molar
+
+00:14:58.776 --> 00:15:02.836
+solubility about one point three four times ten to the minus five.
+
+00:15:03.476 --> 00:15:07.656
+Now suppose the solution already contains zero point zero one zero molar
+
+00:15:07.656 --> 00:15:08.056
+chloride.
+
+00:15:09.216 --> 00:15:13.156
+If additional dissolution is small, free chloride remains approximately that
+
+00:15:13.156 --> 00:15:13.476
+value.
+
+00:15:14.516 --> 00:15:18.876
+Divide the solubility product by zero point zero one zero to obtain silver
+
+00:15:18.876 --> 00:15:22.256
+concentration one point eight times ten to the minus eight molar.
+
+00:15:23.256 --> 00:15:27.416
+The added dissolution is tiny relative to the initial chloride, so the
+
+00:15:27.416 --> 00:15:28.956
+approximation is self consistent.
+
+00:15:29.916 --> 00:15:33.396
+This common ion lowers simple solubility in the stated model.
+
+00:15:34.656 --> 00:15:38.456
+Complex formation, other equilibria and nonideal activities can alter the
+
+00:15:38.456 --> 00:15:38.656
+result.
+
+00:15:39.476 --> 00:15:43.510
+In particular, total dissolved silver need not equal free silver when
+
+00:15:43.510 --> 00:15:44.036
+complexes
+
+00:15:44.036 --> 00:15:44.716
+are important.
+
+00:15:45.976 --> 00:15:49.576
+Check what concentration the question actually asks for before applying the
+
+00:15:49.576 --> 00:15:50.196
+product expression.
+
+00:15:50.472 --> 00:15:54.632
+An amphiprotic species can accept or donate a proton.
+
+00:15:55.492 --> 00:15:59.272
+Hydrogen carbonate is a familiar intermediate in a diprotic acid system.
+
+00:16:00.012 --> 00:16:03.652
+Its acid behaviour is controlled by the second acid dissociation constant,
+
+00:16:04.272 --> 00:16:08.157
+while its base behaviour is related to the first constant through the water
+
+00:16:08.157 --> 00:16:08.312
+ion
+
+00:16:08.312 --> 00:16:08.772
+product.
+
+00:16:09.712 --> 00:16:13.792
+Under the appropriate intermediate salt approximation, p H is approximately
+
+00:16:13.792 --> 00:16:16.352
+half the sum of the two p K a values.
+
+00:16:17.032 --> 00:16:21.672
+For illustrative values six point three and ten point three, the estimate is
+
+00:16:21.672 --> 00:16:22.432
+eight point three.
+
+00:16:23.052 --> 00:16:26.812
+This is a mildly basic result even though the formula contains hydrogen.
+
+00:16:27.652 --> 00:16:31.795
+Do not classify a salt as acidic simply because its anion still carries a
+
+00:16:31.795 --> 00:16:32.192
+proton.
+
+00:16:32.912 --> 00:16:36.692
+The average formula assumes conditions where the amphiprotic salt contribution
+
+00:16:36.692 --> 00:16:40.692
+dominates water effects and the approximations used in its derivation are
+
+00:16:40.692 --> 00:16:41.052
+adequate.
+
+00:16:41.852 --> 00:16:45.952
+Very dilute solutions, additional acids or bases, and important competing
+
+00:16:45.952 --> 00:16:49.072
+equilibria can require a fuller mass and charge balance.
+
+00:16:50.272 --> 00:16:54.032
+The two constants must refer to the same acid system, solvent and temperature.
+
+00:16:54.852 --> 00:16:58.652
+A useful answer states the model and its limits alongside the numerical
+
+00:16:58.652 --> 00:16:59.132
+average.

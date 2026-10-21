@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Electrostatics applications: build a field from its sources",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Electric fields from continuous distributions",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/5-5-calculating-electric-fields-of-charge-distributions"
+    },
+    {
+      "title": "OpenStax: Electric dipoles",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/5-7-electric-dipoles"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "At the centre of a uniform positively charged ring, with potential zero at infinity:",
+      "options": [
+        "E and V are both zero",
+        "E is nonzero; V is zero",
+        "E is zero; V is positive",
+        "E and V are both negative"
+      ],
+      "answer": 2,
+      "explanation": "Opposite field vectors cancel at the centre, but the equal positive scalar potential contributions add to kQ/a."
+    },
+    {
+      "question": "For a uniform rod with a = 0.30 m, y = 0.40 m, lambda = 2 nC/m and k = 9 x 10^9, bisector field magnitude is:",
+      "options": [
+        "54 N/C",
+        "90 N/C",
+        "108 N/C",
+        "27 N/C"
+      ],
+      "answer": 0,
+      "explanation": "Use the finite-rod expression 2k lambda a/[y sqrt(a^2+y^2)] = 54 N/C, not the infinite-line limit."
+    },
+    {
+      "question": "For q = 1 nC, a = 0.10 m, axial r = 0.30 m and k = 9 x 10^9, exact dipole field magnitude is:",
+      "options": [
+        "133.33 N/C",
+        "225 N/C",
+        "56.25 N/C",
+        "168.75 N/C"
+      ],
+      "answer": 3,
+      "explanation": "The charge distances are 0.20 and 0.40 m. Their fields oppose, giving 225 - 56.25 = 168.75 N/C."
+    },
+    {
+      "question": "On an ideal dipole's perpendicular bisector, its field points:",
+      "options": [
+        "Along p",
+        "Opposite p",
+        "Always zero",
+        "Along the bisector away from both charges"
+      ],
+      "answer": 1,
+      "explanation": "The bisector components cancel while the components parallel to the dipole axis both point from positive toward negative, opposite p."
+    },
+    {
+      "question": "For p = 4 x 10^-11 C m and E = 2 x 10^5 N/C, quasistatic external work from parallel to perpendicular is:",
+      "options": [
+        "-8 microjoules",
+        "0",
+        "+8 microjoules",
+        "+16 microjoules"
+      ],
+      "answer": 2,
+      "explanation": "U changes from -pE to zero, so external work with no kinetic-energy change is +pE = +8 microjoules."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Continuous charge and the ring-axis field",
+      "formula": "dq=lambda ds; ring V=kQ/sqrt(a^2+x^2); E_x=kQx/(a^2+x^2)^(3/2)",
+      "points": [
+        "Integrate vector components for field, signed scalars for potential.",
+        "Opposite ring elements cancel transverse components.",
+        "Zero field at the centre does not mean zero potential."
+      ],
+      "script": "Hey, welcome back. Let's build a field from its sources rather than guess a formula from the shape. For point charges, we add electric-field vectors. A continuous distribution uses the same idea with tiny charge elements, called d q. Each contribution points along the source-to-observation direction for positive charge. Integrate components, not just positive magnitudes. For a line, d q is line density times a small length. Surface and volume densities need area and volume elements instead. Those units are not interchangeable. Now picture a thin uniformly charged ring, radius a, total charge Q. Our point lies a distance x along its central perpendicular axis. All ring elements have the same distance to that point, the square root of a squared plus x squared. Pair opposite elements. Their sideways field components cancel, while axial components add. The axial projection supplies a factor x divided by that same distance. Integrating the charge gives axial field k Q x divided by a squared plus x squared to the power three halves. The sign of x matters: for positive Q, field points away from the centre on either side. Potential is easier because it is a scalar. With zero at infinity, it is k Q divided by the square root of a squared plus x squared. Try a numerical example: one nanocoulomb, radius zero point three metres, and axial x zero point four metres. Use k equal to nine times ten to the ninth in SI units. Distance is half a metre. Potential is eighteen volts, and field is twenty eight point eight newtons per coulomb along positive x. Now think about the centre. Field is zero by cancellation, but potential is positive, thirty volts for this ring. Zero field does not mean zero potential. Differentiating potential with respect to x and changing the sign reproduces the axial field, a useful check. Far away, the ring behaves approximately like a point charge. Close to it, keep the geometry. Symmetry simplifies an integral; it does not replace the need to identify the correct components."
+    },
+    {
+      "title": "Finite rod and the exact dipole distances",
+      "formula": "Rod E_y=2k lambda a/[y sqrt(a^2+y^2)]; axial dipole E=kq[(r-a)^-2-(r+a)^-2]",
+      "points": [
+        "Finite rod symmetry cancels horizontal components, not the entire field.",
+        "Infinite-line limit assumes fixed line density.",
+        "Use exact source distances unless the far-field approximation is justified."
+      ],
+      "script": "Next, put a uniform thin insulating rod on the x axis from minus a to plus a. Observe a point a positive distance y above its midpoint. Elements on opposite sides cancel horizontal components. Their upward components add for positive charge. A source element at coordinate s contributes k times line density times y times d s, divided by s squared plus y squared to the power three halves. Integrate from minus a to plus a. The result is two k times line density times a, divided by y times the square root of a squared plus y squared. Take a zero point three metres, y zero point four metres and line density two nanocoulombs per metre. We get fifty four newtons per coulomb upward. If length becomes very large while line density stays fixed, the end-position factor approaches one, giving the infinite-line field. Keeping total charge fixed instead changes line density and is a different limit. A finite rod does not have the translational symmetry needed for a simple cylindrical Gauss-law field shortcut. Now a dipole. Put minus one nanocoulomb at x minus zero point one metres and plus one nanocoulomb at x plus zero point one metres. Our observation point is x plus zero point three metres. Distances are zero point two and zero point four metres. The positive charge contributes two hundred twenty five newtons per coulomb rightward; the negative charge contributes fifty six point two five leftward. Subtract: exact net field is one hundred sixty eight point seven five newtons per coulomb rightward. The dipole moment is charge magnitude times separation, two times ten to the minus ten coulomb metres. The familiar far-axis formula, two k p divided by r cubed, gives about one hundred thirty three point three three. That is about twenty one percent below the exact result here. The exact axial expression is two k p r divided by the square of r squared minus a squared, for r greater than a. It becomes the far-field formula only when r is much larger than a. A convenient formula needs a valid approximation, not just familiar symbols."
+    },
+    {
+      "title": "Dipole field direction and signed mechanical work",
+      "formula": "Equatorial E_vector=-k p_vector/(r^2+a^2)^(3/2); U=-pE cos(theta); W_external=delta U",
+      "points": [
+        "Dipole equatorial potential is zero while its field is generally nonzero.",
+        "Uniform external fields can produce torque without net force.",
+        "Separate field work from quasistatic external work."
+      ],
+      "script": "Let's finish on the dipole's perpendicular bisector. A point there is equally distant from positive and negative charges, so their scalar potentials cancel exactly, choosing zero at infinity. But the fields do not cancel. Components along the bisector cancel; components along the dipole axis point from positive toward negative and add. The net field is opposite the dipole moment. Its exact magnitude is k p divided by r squared plus a squared to the power three halves. Far away this approaches k p divided by r cubed. Once again, zero potential does not imply zero field. Now place a fixed dipole in a uniform external field. Equal opposite forces give zero net force, but generally form a torque. Torque magnitude is p E sine theta. Orientation energy is minus p E cosine theta, choosing zero when the dipole is perpendicular. Parallel alignment has minimum energy and is stable; opposite alignment has maximum energy and is unstable. Let's work a rotation. Charge magnitude is two nanocoulombs and separation zero point zero two metres, so dipole moment is four times ten to the minus eleven coulomb metres. External field is two times ten to the fifth newtons per coulomb. Rotate slowly from parallel to perpendicular. What sign should external work have? Think first. You move away from the minimum-energy orientation, so stored energy increases. The increase is p E, eight microjoules. External work is plus eight microjoules, while field work is minus eight. We assumed negligible kinetic-energy change and no other transfers. Zero torque at the starting alignment does not mean zero work over the entire rotation. And a zero net force does not mean zero torque. For JEE, state the source geometry, whether a far-field approximation applies, the potential reference and whose work is requested. Then the signs and equations tell one consistent physical story."
+    }
+  ]
+}

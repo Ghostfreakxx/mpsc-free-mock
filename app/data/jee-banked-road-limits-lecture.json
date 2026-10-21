@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Banked roads: derive and check the allowed speed range",
+  "unit": 3,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 official syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: applying Newton laws",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/6-1-solving-problems-with-newtons-laws"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "At high speed, friction acts down the bank",
+      "formula": "vmax squared = rg (tan(theta) + mu)/(1 - mu tan(theta))",
+      "points": [
+        "Inward: N sin(theta) + f cos(theta) = mv squared/r.",
+        "Upward: N cos(theta) - f sin(theta) = mg.",
+        "Only at the impending-slip boundary do we put f = mu N."
+      ],
+      "script": "Welcome back. A banked turn is a lovely example of one diagram doing more work than a pile of memorized equations. We already found the frictionless speed. Now let's find the allowed range when static friction is available. This is an ideal particle model, not driving advice. The road rises toward the outside. Choose horizontal inward and vertical upward axes. The normal reaction points upward and inward. At a speed above the frictionless value, the car tends to slip outward and up the bank, so friction acts down the bank: inward and downward. At the upper limiting speed its magnitude is mu times N. The inward equation is N sine theta plus mu N cosine theta equals m v squared over r. The vertical equation is N cosine theta minus mu N sine theta equals m g. Notice that N is not m g. Divide the first equation by the second. After dividing numerator and denominator by cosine theta, v squared over r g becomes tangent theta plus mu, divided by one minus mu tangent theta. Let's use tangent theta equal to three quarters, mu equal to one quarter, radius twenty-five meters, and g equal to ten. The ratio is one divided by thirteen sixteenths, or sixteen thirteenths. Therefore maximum speed squared is four thousand over thirteen, and maximum speed is approximately seventeen point five four meters per second. Pause before calling that answer valid. The denominator is positive, so the vertical balance permits a positive normal force at this limiting state. If the denominator were zero or negative, do not take a square root of an invalid expression and call it a real speed boundary. Return to the friction inequality and contact assumptions. Our formula is a model with a domain, not a universal rule. For this numerical case, the normal reaction divided by m g at the upper boundary is twenty over thirteen. Friction has a downward component, so the normal's upward component must supply more than the weight. That check helps explain why simply setting N equal to m g would fail."
+    },
+    {
+      "title": "At low speed, reverse the friction direction",
+      "formula": "vmin squared = rg (tan(theta) - mu)/(1 + mu tan(theta)); enforce v squared >= 0",
+      "points": [
+        "Inward: N sin(theta) - f cos(theta) = mv squared/r.",
+        "Upward: N cos(theta) + f sin(theta) = mg.",
+        "A negative algebraic lower bound means zero speed may be allowed; check the static balance."
+      ],
+      "script": "Now reduce the speed. Below the frictionless value, the car tends to slip inward and down the bank. Static friction reverses: it points up the bank, outward and upward. At a positive lower limiting speed, the inward equation is N sine theta minus mu N cosine theta equals m v squared over r. The vertical equation is N cosine theta plus mu N sine theta equals m g. Divide them carefully. The lower speed squared is r g times tangent theta minus mu, divided by one plus mu tangent theta. Use our same twenty-five-meter radius, g ten, tangent theta three quarters, and mu one quarter. The ratio is one half divided by nineteen sixteenths, or eight nineteenths. Minimum speed squared is two thousand over nineteen, so minimum speed is about ten point two six meters per second. The frictionless speed is the square root of one hundred eighty-seven point five, about thirteen point six nine. It lies between the two limits, exactly as we hoped. At that middle speed, friction can be zero; static friction is not always mu N. What if the coefficient were one instead? The expression for the lower squared speed becomes negative. That does not create an imaginary physical speed. At rest, force balance on the slope requires friction divided by normal reaction equal to tangent theta. Our tangent is three quarters, less than the available coefficient one, so rest is possible and the physical lower speed is zero. For the general check, solve for the signed required friction f directed up the bank. Its ratio to N is tangent theta minus q, divided by one plus q tangent theta, where q is v squared over r g. Demand the absolute value of that ratio be no greater than mu. That single inequality checks either friction direction. For example, at ten meters per second in our original quarter-coefficient case, q is zero point four. Required friction divided by N is about zero point two six nine, above one quarter, so that speed is not allowed. At fourteen meters per second it is about minus zero point zero two one four, safely within the bound. The negative sign means friction acts down the bank. State the model, resolve actual forces, and test the inequality before trusting a memorized maximum or minimum."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "For tan(theta)=0.75, mu=0.25, r=25 m and g=10 m/s squared, the maximum allowed speed is approximately:",
+      "options": [
+        "10.26 m/s",
+        "13.69 m/s",
+        "17.54 m/s",
+        "25 m/s"
+      ],
+      "answer": 2,
+      "explanation": "vmax squared = 250(1)/(0.8125) = 4000/13."
+    },
+    {
+      "question": "For the same turn, the minimum allowed speed is approximately:",
+      "options": [
+        "0 m/s",
+        "10.26 m/s",
+        "17.54 m/s",
+        "13.69 m/s"
+      ],
+      "answer": 1,
+      "explanation": "vmin squared = 250(0.5)/(1.1875) = 2000/19."
+    },
+    {
+      "question": "Above the frictionless banked-turn speed, the required static friction acts:",
+      "options": [
+        "Down the bank",
+        "Up the bank",
+        "Always vertically",
+        "Always zero"
+      ],
+      "answer": 0,
+      "explanation": "The tendency is outward/up the bank; friction opposes it."
+    },
+    {
+      "question": "If mu exceeds tan(theta), a negative computed lower speed squared means:",
+      "options": [
+        "All speeds fail",
+        "Use its absolute value",
+        "The road has no normal force",
+        "Rest can be allowed; check equilibrium"
+      ],
+      "answer": 3,
+      "explanation": "At rest the needed f/N is tan(theta), within the static friction bound."
+    }
+  ]
+}

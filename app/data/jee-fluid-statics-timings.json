@@ -1,0 +1,645 @@
+{
+  "duration": 333.84000000000816,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 64.96800000000157
+    },
+    {
+      "start": 64.96800000000157,
+      "end": 129.0240000000031
+    },
+    {
+      "start": 129.0240000000031,
+      "end": 193.63200000000467
+    },
+    {
+      "start": 193.63200000000467,
+      "end": 258.1920000000062
+    },
+    {
+      "start": 258.1920000000062,
+      "end": 333.84000000000816
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.5,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.3399999141693115,
+      "end": 5.820000171661377,
+      "text": "Today, let's make sense of something you can feel: water pushing on you.",
+      "chapter": 0
+    },
+    {
+      "start": 6.340000152587891,
+      "end": 9,
+      "text": "We'll start with pressure, then use it to explain floating.",
+      "chapter": 0
+    },
+    {
+      "start": 10.0600004196167,
+      "end": 12.819999694824219,
+      "text": "Pressure tells us how much normal force acts per unit area.",
+      "chapter": 0
+    },
+    {
+      "start": 13.819999694824219,
+      "end": 17.18000030517578,
+      "text": "Normal here means perpendicular to the surface, not ordinary.",
+      "chapter": 0
+    },
+    {
+      "start": 18.1200008392334,
+      "end": 22.799999237060547,
+      "text": "So pressure equals force divided by area, when the pressure is uniform over",
+      "chapter": 0
+    },
+    {
+      "start": 22.799999237060547,
+      "end": 23.280000686645508,
+      "text": "that area.",
+      "chapter": 0
+    },
+    {
+      "start": 24.260000228881836,
+      "end": 27.65999984741211,
+      "text": "Imagine two hundred newtons spread over zero point zero two square metres.",
+      "chapter": 0
+    },
+    {
+      "start": 28.959999084472656,
+      "end": 33.060001373291016,
+      "text": "Divide two hundred by zero point zero two, and you get ten thousand pascals.",
+      "chapter": 0
+    },
+    {
+      "start": 34.099998474121094,
+      "end": 36.5,
+      "text": "Now spread the same force over twice the area.",
+      "chapter": 0
+    },
+    {
+      "start": 37.34000015258789,
+      "end": 37.880001068115234,
+      "text": "What happens?",
+      "chapter": 0
+    },
+    {
+      "start": 38.619998931884766,
+      "end": 39.2599983215332,
+      "text": "Give it a second.",
+      "chapter": 0
+    },
+    {
+      "start": 39.939998626708984,
+      "end": 40.900001525878906,
+      "text": "The pressure halves.",
+      "chapter": 0
+    },
+    {
+      "start": 41.720001220703125,
+      "end": 43.52000045776367,
+      "text": "Same force, more space to share it.",
+      "chapter": 0
+    },
+    {
+      "start": 44.15999984741211,
+      "end": 47.41999816894531,
+      "text": "A fluid at rest pushes perpendicular to the surfaces touching it.",
+      "chapter": 0
+    },
+    {
+      "start": 48.380001068115234,
+      "end": 52,
+      "text": "Pressure itself is a scalar, even though each pressure force has a direction.",
+      "chapter": 0
+    },
+    {
+      "start": 52.560001373291016,
+      "end": 55.68000030517578,
+      "text": "We'll also need density: mass divided by volume.",
+      "chapter": 0
+    },
+    {
+      "start": 56.880001068115234,
+      "end": 58.099998474121094,
+      "text": "Keep those two ideas separate.",
+      "chapter": 0
+    },
+    {
+      "start": 59.040000915527344,
+      "end": 62.70000076293945,
+      "text": "Density tells us how much mass occupies a volume; pressure tells us how",
+      "chapter": 0
+    },
+    {
+      "start": 62.70000076293945,
+      "end": 64.36000061035156,
+      "text": "intensely a surface is being pushed.",
+      "chapter": 0
+    },
+    {
+      "start": 64.96800000000157,
+      "end": 67.868000095369,
+      "text": "Why do your ears notice when you go deeper underwater?",
+      "chapter": 1
+    },
+    {
+      "start": 68.62800008583226,
+      "end": 71.20799977111973,
+      "text": "There's more water above you, and the pressure increases.",
+      "chapter": 1
+    },
+    {
+      "start": 72.10799986648716,
+      "end": 74.34800011444248,
+      "text": "Picture a stationary vertical column of liquid.",
+      "chapter": 1
+    },
+    {
+      "start": 75.10800034332432,
+      "end": 79.08799988556065,
+      "text": "The force from below must balance the force from above plus the column's",
+      "chapter": 1
+    },
+    {
+      "start": 79.08799988556065,
+      "end": 79.28799969482579,
+      "text": "weight.",
+      "chapter": 1
+    },
+    {
+      "start": 80.28799969482579,
+      "end": 83.92799908447422,
+      "text": "Divide that balance by the column's area, and the pressure increase becomes",
+      "chapter": 1
+    },
+    {
+      "start": 83.92799908447422,
+      "end": 86.40800053405918,
+      "text": "density times g times vertical depth.",
+      "chapter": 1
+    },
+    {
+      "start": 87.04799992370762,
+      "end": 89.16800076294102,
+      "text": "That's rho g h.",
+      "chapter": 1
+    },
+    {
+      "start": 89.16800076294102,
+      "end": 93.38800007629551,
+      "text": "At two metres below the surface of water, use density one thousand kilograms",
+      "chapter": 1
+    },
+    {
+      "start": 93.38800007629551,
+      "end": 95.82800061035313,
+      "text": "per cubic metre and g equal to ten.",
+      "chapter": 1
+    },
+    {
+      "start": 96.7280002288834,
+      "end": 100.30800015258946,
+      "text": "Multiply one thousand by ten by two: twenty thousand pascals.",
+      "chapter": 1
+    },
+    {
+      "start": 101.14800030517735,
+      "end": 105.04800183105625,
+      "text": "That's the pressure above the surface pressure, called gauge pressure when the",
+      "chapter": 1
+    },
+    {
+      "start": 105.04800183105625,
+      "end": 106.20800167846836,
+      "text": "surface is open to the atmosphere.",
+      "chapter": 1
+    },
+    {
+      "start": 107.28799969482579,
+      "end": 111.68800122070469,
+      "text": "If atmospheric pressure is given as one hundred thousand pascals, the absolute",
+      "chapter": 1
+    },
+    {
+      "start": 111.68800122070469,
+      "end": 114.26799923706211,
+      "text": "pressure is one hundred twenty thousand.",
+      "chapter": 1
+    },
+    {
+      "start": 114.26799923706211,
+      "end": 116.46800000000157,
+      "text": "A small but important extra step.",
+      "chapter": 1
+    },
+    {
+      "start": 117.22799832153477,
+      "end": 119.96800000000157,
+      "text": "Use vertical depth, not the distance along a sloping wall.",
+      "chapter": 1
+    },
+    {
+      "start": 120.48800045776524,
+      "end": 124.58799893188633,
+      "text": "And in the same connected stationary liquid of constant density, points at the",
+      "chapter": 1
+    },
+    {
+      "start": 124.58799893188633,
+      "end": 126.00800091552891,
+      "text": "same level have equal pressure.",
+      "chapter": 1
+    },
+    {
+      "start": 126.76799923706211,
+      "end": 128.7679992370621,
+      "text": "The container's shape doesn't get a vote.",
+      "chapter": 1
+    },
+    {
+      "start": 129.0240000000031,
+      "end": 132.62399990463567,
+      "text": "Now for the neat connection: pressure explains buoyancy.",
+      "chapter": 2
+    },
+    {
+      "start": 133.94400007629704,
+      "end": 136.32400019073796,
+      "text": "Imagine a block completely surrounded by still water.",
+      "chapter": 2
+    },
+    {
+      "start": 137.00400001907659,
+      "end": 141.12400038147283,
+      "text": "Its bottom is deeper than its top, so the upward pressure force on the bottom",
+      "chapter": 2
+    },
+    {
+      "start": 141.12400038147283,
+      "end": 143.50399954223943,
+      "text": "is larger than the downward force on the top.",
+      "chapter": 2
+    },
+    {
+      "start": 144.1839998474152,
+      "end": 146.58399946594548,
+      "text": "The side forces cancel horizontally.",
+      "chapter": 2
+    },
+    {
+      "start": 147.364000152591,
+      "end": 149.48399908447576,
+      "text": "What's left is an upward resultant.",
+      "chapter": 2
+    },
+    {
+      "start": 150.4039991607697,
+      "end": 154.364000152591,
+      "text": "Archimedes' principle says this buoyant force equals the weight of the fluid",
+      "chapter": 2
+    },
+    {
+      "start": 154.364000152591,
+      "end": 154.88400061035466,
+      "text": "displaced.",
+      "chapter": 2
+    },
+    {
+      "start": 155.54400045776677,
+      "end": 156.60399992370915,
+      "text": "Not the weight of the object.",
+      "chapter": 2
+    },
+    {
+      "start": 157.364000152591,
+      "end": 158.72400076294255,
+      "text": "That's the detail worth circling.",
+      "chapter": 2
+    },
+    {
+      "start": 160.08399946594548,
+      "end": 163.82399923706365,
+      "text": "Write buoyant force as fluid density times g times displaced volume.",
+      "chapter": 2
+    },
+    {
+      "start": 164.6839998474152,
+      "end": 169.08400137329411,
+      "text": "If the object displaces zero point zero zero two cubic metres of water,",
+      "chapter": 2
+    },
+    {
+      "start": 169.90400106811833,
+      "end": 173.22400076294255,
+      "text": "multiply one thousand by ten by zero point zero zero two.",
+      "chapter": 2
+    },
+    {
+      "start": 173.22400076294255,
+      "end": 175.1040018310578,
+      "text": "You get twenty newtons upward.",
+      "chapter": 2
+    },
+    {
+      "start": 175.46399862671208,
+      "end": 180.08400137329411,
+      "text": "If the object is partly submerged, use only its submerged volume, not its",
+      "chapter": 2
+    },
+    {
+      "start": 180.08400137329411,
+      "end": 180.70400030517888,
+      "text": "entire volume.",
+      "chapter": 2
+    },
+    {
+      "start": 181.424001525882,
+      "end": 185.46399862671208,
+      "text": "We're assuming the fluid surrounds the wetted surfaces and the object isn't",
+      "chapter": 2
+    },
+    {
+      "start": 185.46399862671208,
+      "end": 186.46399862671208,
+      "text": "sealed against the bottom.",
+      "chapter": 2
+    },
+    {
+      "start": 187.34399969482732,
+      "end": 191.64399893188786,
+      "text": "For a rigid, fully submerged object in constant density water, going deeper",
+      "chapter": 2
+    },
+    {
+      "start": 191.64399893188786,
+      "end": 193.63200000000467,
+      "text": "doesn't by itself increase buoyancy: the displaced volume stays the same.",
+      "chapter": 2
+    },
+    {
+      "start": 193.63200000000467,
+      "end": 198.73199990463723,
+      "text": "Let's float a uniform block whose density is six hundred kilograms per cubic",
+      "chapter": 3
+    },
+    {
+      "start": 198.73199990463723,
+      "end": 201.81200030518045,
+      "text": "metre in water of density one thousand.",
+      "chapter": 3
+    },
+    {
+      "start": 201.81200030518045,
+      "end": 203.5520000762986,
+      "text": "How much of it sits below the surface?",
+      "chapter": 3
+    },
+    {
+      "start": 204.41199973297586,
+      "end": 206.03199961853494,
+      "text": "Resist the urge to guess from the picture.",
+      "chapter": 3
+    },
+    {
+      "start": 206.8920002288865,
+      "end": 207.611999542241,
+      "text": "Start with forces.",
+      "chapter": 3
+    },
+    {
+      "start": 208.3319998092698,
+      "end": 212.75200083923806,
+      "text": "For a freely floating block at rest, with no other vertical forces, buoyancy",
+      "chapter": 3
+    },
+    {
+      "start": 212.75200083923806,
+      "end": 213.57200053406228,
+      "text": "equals weight.",
+      "chapter": 3
+    },
+    {
+      "start": 214.2719993896531,
+      "end": 218.97200015259256,
+      "text": "Fluid density times submerged volume times g equals body density times total",
+      "chapter": 3
+    },
+    {
+      "start": 218.97200015259256,
+      "end": 220.03199961853494,
+      "text": "volume times g.",
+      "chapter": 3
+    },
+    {
+      "start": 220.81200030518045,
+      "end": 222.07200053406228,
+      "text": "Cancel g and rearrange.",
+      "chapter": 3
+    },
+    {
+      "start": 222.07200053406228,
+      "end": 227.23199847412576,
+      "text": "Submerged volume divided by total volume equals body density divided by fluid",
+      "chapter": 3
+    },
+    {
+      "start": 227.23199847412576,
+      "end": 227.611999542241,
+      "text": "density.",
+      "chapter": 3
+    },
+    {
+      "start": 227.611999542241,
+      "end": 231.69200137329568,
+      "text": "Six hundred divided by one thousand is zero point six.",
+      "chapter": 3
+    },
+    {
+      "start": 231.97200015259256,
+      "end": 235.75199893188943,
+      "text": "So sixty percent is submerged and forty percent is above water.",
+      "chapter": 3
+    },
+    {
+      "start": 236.53200152588357,
+      "end": 238.57199862671365,
+      "text": "Nice: we didn't need the block's size.",
+      "chapter": 3
+    },
+    {
+      "start": 239.13200000000467,
+      "end": 241.19200137329568,
+      "text": "We're neglecting air buoyancy and surface tension.",
+      "chapter": 3
+    },
+    {
+      "start": 241.81200030518045,
+      "end": 245.672000915532,
+      "text": "If you add a load, the block must displace more water to support the extra",
+      "chapter": 3
+    },
+    {
+      "start": 245.672000915532,
+      "end": 245.91199877930154,
+      "text": "weight.",
+      "chapter": 3
+    },
+    {
+      "start": 246.41199877930154,
+      "end": 249.99200061035623,
+      "text": "It settles lower until the forces balance, provided it can still float.",
+      "chapter": 3
+    },
+    {
+      "start": 249.99200061035623,
+      "end": 252.65200045776834,
+      "text": "A body's average density matters here.",
+      "chapter": 3
+    },
+    {
+      "start": 253.19200137329568,
+      "end": 257.05199816895,
+      "text": "A hollow object can have a much lower average density than the material making",
+      "chapter": 3
+    },
+    {
+      "start": 257.05199816895,
+      "end": 257.55199816895,
+      "text": "its walls.",
+      "chapter": 3
+    },
+    {
+      "start": 258.1920000000062,
+      "end": 260.1920000000062,
+      "text": "Let's finish with a spring balance.",
+      "chapter": 4
+    },
+    {
+      "start": 260.93200000954295,
+      "end": 265.61200007630015,
+      "text": "A three kilogram object hangs at rest and is fully immersed in water without",
+      "chapter": 4
+    },
+    {
+      "start": 265.61200007630015,
+      "end": 266.49200019074107,
+      "text": "touching the container.",
+      "chapter": 4
+    },
+    {
+      "start": 267.49200019074107,
+      "end": 270.67199954224253,
+      "text": "Its volume is zero point zero zero two cubic metres.",
+      "chapter": 4
+    },
+    {
+      "start": 271.79200038147593,
+      "end": 275.7120004577699,
+      "text": "Use g equal to ten and water density one thousand.",
+      "chapter": 4
+    },
+    {
+      "start": 275.7120004577699,
+      "end": 276.872000305182,
+      "text": "What does the balance read?",
+      "chapter": 4
+    },
+    {
+      "start": 277.73200091553355,
+      "end": 280.5119996948304,
+      "text": "First, the gravitational weight is thirty newtons.",
+      "chapter": 4
+    },
+    {
+      "start": 281.15199908447886,
+      "end": 285.29200038147593,
+      "text": "Next, buoyancy is twenty newtons, using the displaced volume.",
+      "chapter": 4
+    },
+    {
+      "start": 286.17199954224253,
+      "end": 291.0320001525941,
+      "text": "Now draw the forces: tension upward, buoyancy upward, and weight downward.",
+      "chapter": 4
+    },
+    {
+      "start": 292.1119981689515,
+      "end": 295.81199893189097,
+      "text": "Since the object is at rest, tension plus buoyancy equals weight.",
+      "chapter": 4
+    },
+    {
+      "start": 296.49199923706675,
+      "end": 299.3519998474183,
+      "text": "The tension is ten newtons, and that's the balance reading.",
+      "chapter": 4
+    },
+    {
+      "start": 300.05200061035777,
+      "end": 301.65199908447886,
+      "text": "The object's mass hasn't changed.",
+      "chapter": 4
+    },
+    {
+      "start": 302.67199954224253,
+      "end": 304.55200061035777,
+      "text": "Water is providing part of the upward support.",
+      "chapter": 4
+    },
+    {
+      "start": 304.55200061035777,
+      "end": 310.2120004577699,
+      "text": "Here's your check: if someone reports minus ten newtons of tension, revisit the",
+      "chapter": 4
+    },
+    {
+      "start": 310.2120004577699,
+      "end": 310.7919984741273,
+      "text": "assumed equilibrium.",
+      "chapter": 4
+    },
+    {
+      "start": 311.83199938965464,
+      "end": 315.7720018310609,
+      "text": "An ordinary string cannot push downward to keep a buoyant object submerged.",
+      "chapter": 4
+    },
+    {
+      "start": 316.57200106812144,
+      "end": 322.15199908447886,
+      "text": "Before each fluid statics problem, ask: absolute or gauge pressure, total or",
+      "chapter": 4
+    },
+    {
+      "start": 322.15199908447886,
+      "end": 324.6119981689515,
+      "text": "submerged volume, and which forces actually act?",
+      "chapter": 4
+    },
+    {
+      "start": 325.2119966430726,
+      "end": 328.3919969482484,
+      "text": "Get those choices right, and the equations become much friendlier.",
+      "chapter": 4
+    },
+    {
+      "start": 329.3520036621156,
+      "end": 333.25199755859995,
+      "text": "Flowing fluids are a different chapter; today's results describe fluids at",
+      "chapter": 4
+    },
+    {
+      "start": 333.25199755859995,
+      "end": 333.55200061035777,
+      "text": "rest.",
+      "chapter": 4
+    }
+  ]
+}

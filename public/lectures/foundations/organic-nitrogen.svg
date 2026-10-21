@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+<title id="title">Carbon counting in amine preparation</title><desc id="desc">Nitrile reduction keeps its carbon; Hofmann amide rearrangement removes the carbonyl carbon from the organic amine.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#18212b"/></marker></defs>
+<rect width="900" height="360" fill="#f8fafc"/>
+<g font-family="Arial,sans-serif" fill="#18212b"><text x="30" y="35" font-size="24" font-weight="bold">Similar starting carbon counts. Different amine sizes.</text>
+<text x="45" y="115" font-size="24">CH3-C#N</text><text x="630" y="115" font-size="24">CH3-CH2-NH2</text>
+<path d="M220 105H585" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/><text x="300" y="85" font-size="18" fill="#087e8b">Suitable nitrile reduction</text>
+<text x="45" y="150" font-size="18">2 carbons</text><text x="630" y="150" font-size="18">2 carbons: ethanamine</text>
+<text x="45" y="250" font-size="24">CH3-CO-NH2</text><text x="630" y="250" font-size="24">CH3-NH2</text>
+<path d="M250 240H585" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/><text x="295" y="220" font-size="18" fill="#b42343">Hofmann rearrangement</text>
+<text x="45" y="285" font-size="18">2 carbons</text><text x="630" y="285" font-size="18">1 carbon: methanamine</text>
+<text x="30" y="347" font-size="16" fill="#475569">Hofmann rearrangement removes the carbonyl carbon from the organic product, not an arbitrary carbon.</text></g></svg>

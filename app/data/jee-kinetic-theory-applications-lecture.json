@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Kinetic theory: derive pressure and compare molecular motion",
+  "sources": [
+    {
+      "title": "Official NTA JEE Main 2026 Physics syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Molecular ideal-gas model",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas"
+    },
+    {
+      "title": "OpenStax: Pressure, temperature and RMS speed",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/2-2-pressure-temperature-and-rms-speed"
+    },
+    {
+      "title": "OpenStax: Heat capacity and equipartition",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/2-3-heat-capacity-and-equipartition-of-energy"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Count molecules and moles consistently; Derive pressure from one wall collision",
+      "formula": "PV = N k_B T = nRT; N = n N_A; number density = N/V; P = N m <v_x^2>/V = (1/3) rho v_rms^2",
+      "points": [
+        "Count molecules and moles consistently",
+        "Derive pressure from one wall collision"
+      ],
+      "script": "Welcome back. In this class we will work through wall-collision derivation, temperature and rms speed, equipartition, heat capacities and mean free path. An ideal gas is a model of many tiny particles in random motion. Their own volume is negligible compared with the container, and intermolecular forces are neglected except during collisions. Assume elastic wall collisions and an equilibrium gas with isotropic random velocities and no overall flow. These assumptions make the derivation manageable, but they become poor approximations in dense gases or near condensation. Use PV equals N Boltzmann constant T when counting molecules and PV equals nRT when counting moles. They agree because N equals n Avogadro constant and R equals Avogadro constant Boltzmann constant. Number density N/V has units of molecules per cubic metre; mass density rho has units of kilograms per cubic metre. A factor of Avogadro's number cannot be silently exchanged for a mass factor. Absolute temperature belongs in these equations; a Celsius reading must first be converted to kelvin. Take a cube of side L and a molecule of mass m with x-component of velocity v_x. At an elastic collision with the wall normal to x, the component reverses. Momentum delivered to that wall has magnitude 2m|v_x|. The time between successive collisions with the same wall is 2L/|v_x|. Divide momentum transfer by time to get the average force contribution m v_x squared/L; negative v_x gives the same squared contribution. Sum over N molecules and divide by wall area L squared. Pressure is m sum(v_x squared)/L cubed, or N m average(v_x squared)/V. Isotropic equilibrium gives average(v_x squared) equals average(v_y squared) equals average(v_z squared) equals average(v squared)/3. Therefore P equals N m average(v squared)/(3V) equals rho v_rms squared/3. The factor one third comes from three-dimensional isotropy, not from an arbitrary correction. This collision picture is an idealization; equilibrium averaging is what lets irregular microscopic impacts produce a steady measured pressure."
+    },
+    {
+      "title": "Temperature sets energy, not a single speed; Degrees of freedom connect particles to heat capacity",
+      "formula": "Mean translational energy = (3/2) k_B T; v_rms = sqrt(3RT/M); U = (f/2)nRT; C_V = fR/2; C_P = C_V+R; gamma = (f+2)/f",
+      "points": [
+        "Temperature sets energy, not a single speed",
+        "Degrees of freedom connect particles to heat capacity"
+      ],
+      "script": "Combine the pressure result with PV equals N Boltzmann constant T. It gives m average(v squared) equals 3Boltzmann constant T, so mean translational kinetic energy per molecule is 3Boltzmann constant T/2. RMS speed is sqrt(3Boltzmann constant T/m), or sqrt(3RT/M) using molar mass M in kilograms per mole. At the same temperature, different ideal gases have equal mean translational energy per molecule but different RMS speeds because their molecular masses differ. For nitrogen at 300 K, M equals 0.028 kilograms per mole and R equals 8.314 give about 517 metres per second. Helium with M equals 0.004 kilograms per mole is the square root of seven times faster at the same temperature. For the same gas, increasing temperature from 300 to 1200 K doubles RMS speed. An equilibrium gas has zero average vector velocity even though its average scalar speed is positive. RMS, mean and most-probable speeds are different statistics; the RMS formula is not the value for every molecule. Classical equipartition assigns half Boltzmann constant T per molecule to each active quadratic energy term. With f active degrees of freedom, internal energy is f nRT/2 when f is constant. The molar heat capacity C V is fR/2. For an ideal gas, C P-C V equals R, giving gamma equals (f+2)/f. A monatomic gas has three translational degrees and gamma equals 5/3. A rigid diatomic model with vibration inactive usually has five and gamma equals 7/5. A vibrational mode, when fully active classically, has both a kinetic and potential quadratic contribution. Active modes depend on temperature; quantum freezing of modes makes constant f an approximation rather than a universal molecular label. Two moles of monatomic ideal gas warmed by 10 K at fixed volume gain 30R joules, about 249.42 J. Constant-volume heat equals that gain because boundary work is zero. At constant pressure the same rise also requires expansion work, so heat uses C P instead."
+    },
+    {
+      "title": "Mean free path is an average with a model",
+      "formula": "lambda = 1/(sqrt(2) pi d^2 N/V); W_by = P_external(V_final-V_initial)",
+      "points": [
+        "Mean free path is an average with a model"
+      ],
+      "script": "For a dilute equilibrium gas of identical hard-sphere molecules with diameter d, the mean free path is 1/(the square root of two pi d squared number_density). The square-root factor accounts for relative molecular motion. This is an average distance between collisions, not a fixed distance every particle must travel. Molecules per volume, not moles per volume or mass density, enter the formula directly. With d equals 3.0 times ten to the power of negative 10 m and number density 2.5 times 10 squared5 per cubic metre, the mean free path is about 1.0 times ten to the power of negative 7 m. At fixed temperature and diameter, doubling pressure doubles number density and halves mean free path. At fixed pressure, increasing absolute temperature reduces number density and increases it. Separately, compression work against a constant external pressure is external pressure the volume change: compressing from 3 to 1 litres at 100000 Pa gives -200 J work by the gas. Collision distance and macroscopic work are different quantities linked by a consistent gas model."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "For rho = 1.2 kg/m^3 and RMS speed 500 m/s, ideal-gas pressure is:",
+      "options": [
+        "200 Pa",
+        "300000 Pa",
+        "100000 Pa",
+        "600 Pa"
+      ],
+      "answer": 2,
+      "explanation": "P = rho v_rms^2/3 = 1.2 x 250000/3 = 100000 Pa; the speed must be squared."
+    },
+    {
+      "question": "At the same temperature, helium and nitrogen ideal gases have the same:",
+      "options": [
+        "Mean translational energy per molecule",
+        "RMS speed",
+        "Molecular mass",
+        "Mean free path always"
+      ],
+      "answer": 0,
+      "explanation": "Mean translational kinetic energy per molecule is 3k_B T/2, independent of molecular mass; RMS speed is not."
+    },
+    {
+      "question": "For the same ideal gas, warming from 300 to 1200 K multiplies RMS speed by:",
+      "options": [
+        "4",
+        "2",
+        "1/2",
+        "16"
+      ],
+      "answer": 1,
+      "explanation": "RMS speed scales as the square root of absolute temperature: sqrt(1200/300) = 2, not four."
+    },
+    {
+      "question": "A rigid diatomic ideal-gas model with vibration inactive has gamma:",
+      "options": [
+        "5/3",
+        "3/2",
+        "9/7",
+        "7/5"
+      ],
+      "answer": 3,
+      "explanation": "Five active quadratic degrees give C_V = 5R/2 and C_P = 7R/2, hence gamma = 7/5."
+    },
+    {
+      "question": "At fixed temperature and hard-sphere diameter, doubling pressure changes mean free path to:",
+      "options": [
+        "Twice",
+        "Unchanged",
+        "Half",
+        "One quarter"
+      ],
+      "answer": 2,
+      "explanation": "Ideal-gas number density doubles when pressure doubles at fixed T. Mean free path is inversely proportional to it."
+    }
+  ]
+}

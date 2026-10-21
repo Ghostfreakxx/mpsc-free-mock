@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { circuitApplicationsLesson as lesson } from '../app/jee/classes/circuit-applications-study.ts';
+const close=(a,b)=>assert.ok(Math.abs(a-b)<1e-10);
+test('Real source conserves power',()=>{const i=12/(4+2);assert.equal(i,2);assert.equal(12-i*2,8);assert.equal(12*i,i*i*4+i*i*2);});
+test('Matched load maximizes fixed-source power',()=>{const p=r=>144*r/(r+2)**2;assert.equal(p(2),18);assert.ok(p(1)<18&&p(3)<18);});
+test('Bridge nodes satisfy both independent equations',()=>{const b=48/7,c=36/7;close((b-12)/3+b/6+(b-c)/3,0);close((c-12)/6+c/3+(c-b)/3,0);close((b-c)/3,4/7);});
+test('Bridge energy and equivalent resistance agree',()=>{const b=48/7,c=36/7;const i=(12-b)/3+(12-c)/6;close(12/i,4.2);const power=(12-b)**2/3+b*b/6+(12-c)**2/6+c*c/3+(b-c)**2/3;close(power,12*i);assert.ok(lesson.examples[2].answer.includes('4.2 ohm'));});
+test('Temperature example distinguishes source constraints',()=>{const r=10*(1+.004*50);assert.equal(r,12);assert.equal(144/r,12);assert.ok(1.2**2*r>1.2**2*10);});
+test('Narrated constant-current example has consistent heating power',()=>{close(1.2**2*12,17.28);});

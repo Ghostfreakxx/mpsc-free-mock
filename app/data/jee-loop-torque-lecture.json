@@ -1,0 +1,136 @@
+{
+  "title": "Current-loop torque and magnetic dipole moment",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 13",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Force and torque on a current loop",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/11-5-force-and-torque-on-a-current-loop"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Zero net force does not mean zero turning effect",
+      "formula": "Rectangular loop: F = IbB on each active side; couple arm = a sin(theta); torque = IAB sin(theta)",
+      "points": [
+        "Equal opposite forces on different lines can form a couple.",
+        "Theta is between the loop's normal and the external field.",
+        "A complete loop in uniform B has zero net force but can have nonzero torque."
+      ],
+      "script": "Hey, welcome back. In our previous class, a complete current loop in a uniform magnetic field had zero net force. Today, that same loop can turn. How can both statements be true? Imagine opening a jar lid with two fingers pushing in opposite directions at different points. The pushes can cancel as forces while adding as a turning effect. That is a couple. Take a rectangular loop of sides a and b carrying steady current in a uniform external field. At the orientation where the field lies in the loop's plane, two opposite sides of length b each feel force I b B. Their forces are opposite, but their lines of action are separated by a. The torque is force times that separation, giving I a b B, or I A B. The other two sides are parallel to the field in this orientation, so their magnetic forces vanish. Tilt the loop. If theta is the angle between its normal and B, the couple's effective arm becomes a sine theta. The torque magnitude becomes I A B sine theta. At ninety degrees between normal and field, torque is largest. At zero degrees it vanishes. Be careful: a normal is a line perpendicular to the loop's plane. Maximum torque occurs when the plane is parallel to B, not when the plane is perpendicular to B. Zero net force means no translational acceleration from these magnetic forces; it does not mean no rotational acceleration."
+    },
+    {
+      "title": "The dipole moment: magnitude and right-hand direction",
+      "formula": "Planar N-turn coil: mu = NIA n_hat; units A m^2; torque vector = mu x B",
+      "points": [
+        "Curl right fingers with conventional current; thumb gives the normal and dipole direction.",
+        "N identical coplanar turns contribute moments in the same direction.",
+        "Reversing current reverses the dipole vector."
+      ],
+      "script": "We can package a loop's area, current and orientation into one useful vector: its magnetic dipole moment. For a single planar loop, its magnitude is I times enclosed area A. Its direction is the right-hand normal. Curl your right fingers along conventional current around the loop; your thumb points along the dipole moment. Viewed from your side of the page, counterclockwise current gives a moment out of the page. Clockwise current gives a moment into the page. The moment points perpendicular to the plane, not along the wire. For N identical turns with their normals aligned, add the moments to get N I A. Area means the area of one turn; multiplying an already summed area by N again would count the turns twice. The unit is ampere meter squared. Suppose a coil has one hundred turns, current zero point two amperes, and area forty square centimeters per turn. Convert the area to zero point zero zero four square meters. Its moment is one hundred times zero point two times zero point zero zero four, or zero point zero eight ampere meter squared. The torque vector is moment cross B. This gives both the sine-angle magnitude and the turning-axis direction. If the moment is out of the page and B points right, the torque vector points upward in the page. Reversing the current reverses the moment and torque for the same field and orientation. Keep the right-hand grip rule for the moment separate from the cross-product rule for torque."
+    },
+    {
+      "title": "A torque calculation: normal angle versus plane angle",
+      "formula": "mu = 0.08 A m^2, B = 0.50 T: torque_max = 0.040 N m; theta = 30 deg gives 0.020 N m",
+      "points": [
+        "Torque uses sine of the angle between moment and B.",
+        "For acute plane angle alpha, theta = 90 deg - alpha and torque = N I A B cos(alpha).",
+        "Convert square centimeters using 1 cm^2 = 10^-4 m^2."
+      ],
+      "script": "Let's use that coil in a field of zero point five zero tesla. Its moment is zero point zero eight ampere meter squared, so moment times field is zero point zero four zero newton meters. That is the maximum torque. If the moment makes thirty degrees with B, multiply by sine thirty, which is one half. The torque is zero point zero two zero newton meters. Now change only the wording. The question says the plane of the coil makes sixty degrees with the field. What do we do? Pause and draw a short normal to the plane. For this acute plane angle, the normal makes thirty degrees with B, so the answer is still zero point zero two zero newton meters. If the plane instead makes thirty degrees with B, the normal angle is sixty degrees. Torque is about zero point zero three four six newton meters. You may write the magnitude using cosine of the acute plane angle, but do not mix that cosine with an angle labeled between the normal and B. And remember that torque is measured in newton meters, while dipole moment is measured in ampere meter squared. Another common slip is area conversion: forty square centimeters is not zero point four square meters. Each centimeter contributes a factor of one hundredth, so a square centimeter is ten to the minus four square meters. Identify the angle, convert the area, find the moment, and only then calculate torque."
+    },
+    {
+      "title": "Energy, alignment and stable equilibrium",
+      "formula": "Fixed moment in uniform B: U = -mu B cos(theta); quasistatic external work = U_final - U_initial",
+      "points": [
+        "Parallel alignment has minimum energy and is stable.",
+        "Antiparallel alignment has zero torque but maximum energy and is unstable.",
+        "The effective orientational energy is for fixed moment and prescribed B."
+      ],
+      "script": "Torque tells us how the coil starts to turn. Potential energy tells us which orientations are favored. For a fixed magnetic dipole moment in a prescribed uniform field, orientational energy is minus moment times field times cosine theta. We choose zero energy at ninety degrees. With our moment times field equal to zero point zero four joules, parallel alignment has energy minus zero point zero four joules. Antiparallel alignment has plus zero point zero four joules. Both positions have zero torque exactly, because sine zero and sine one hundred eighty are zero. But are they equally stable? A small tilt away from parallel alignment produces a restoring torque; it is stable. A small tilt away from antiparallel alignment pushes the dipole farther from that position; it is unstable. Without damping, a displaced dipole need not settle quietly. It can oscillate around the stable direction. Now slowly rotate the fixed-moment dipole from sixty degrees to one hundred twenty degrees, keeping B unchanged. Initial energy is minus zero point zero two joules; final energy is plus zero point zero two joules. The external agent supplies zero point zero four joules of quasistatic work. The magnetic torque does the opposite amount of mechanical work in this ideal orientation model. For a maintained-current coil, an electrical source participates in the energy balance. This is not a claim that magnetic force alone increases an isolated charge's kinetic energy. Keep the model's energy accounting distinct from the single-particle rule we learned earlier."
+    },
+    {
+      "title": "Same wire, different shapes: compare the enclosed area",
+      "formula": "One turn of length ell: A_circle = ell^2/(4pi); A_square = ell^2/16; mu_circle/mu_square = 4/pi",
+      "points": [
+        "At fixed current and turns, moment scales with enclosed area.",
+        "For the same wire length, a circular single turn encloses more area than a square.",
+        "Increasing turns increases moment only if the other relevant quantities stay fixed."
+      ],
+      "script": "Finish with a design-style JEE comparison. The same forty centimeter wire can form either one square turn or one circular turn, with negligible lead length. Current is two amperes in each case. For the square, each side is ten centimeters, so enclosed area is zero point zero one square meters. The moment is zero point zero two ampere meter squared. For the circle, circumference is the wire length. Radius is the length divided by two pi, and area is length squared divided by four pi. Its moment is about zero point zero two five five ampere meter squared. Dividing the circle result by the square result gives four over pi, about one point two seven. The circle has the larger moment and larger maximum torque in the same field. Notice what stayed fixed: current, wire length and one turn. Saying more turns always means a bigger moment can be misleading when each turn shrinks. If the same wire forms N equal circular turns with negligible leads, each circumference is the total length divided by N. Each turn's area falls as one over N squared, so the total moment falls as one over N at fixed current. Two such turns have half the single-turn moment. That does not contradict moment equal to N I A; it changes A while changing N. Before using a proportionality, write what is held constant. We now have the foundation for the moving-coil galvanometer, which will be our next class."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A planar current loop in uniform B experiences maximum torque when its:",
+      "options": [
+        "Plane is parallel to B",
+        "Normal is parallel to B",
+        "Normal is antiparallel to B",
+        "Current is zero"
+      ],
+      "answer": 0,
+      "explanation": "Torque = mu B sin(theta), with theta measured from the normal. Maximum torque has normal perpendicular to B."
+    },
+    {
+      "question": "Counterclockwise conventional current, viewed on the page, produces a magnetic dipole moment:",
+      "options": [
+        "Clockwise along the wire",
+        "Out of the page",
+        "Into the page",
+        "To the right"
+      ],
+      "answer": 1,
+      "explanation": "Curl right fingers along current. The right thumb points out of the page."
+    },
+    {
+      "question": "A 100-turn coil carries 0.20 A, area per turn 40 cm^2, in B = 0.50 T. Its plane is 60 degrees to B. Torque is:",
+      "options": [
+        "0.040 N m",
+        "0.0346 N m",
+        "0.020 N m",
+        "0.20 N m"
+      ],
+      "answer": 2,
+      "explanation": "A = 0.004 m^2, mu = 0.08 A m^2. The normal angle is 30 degrees, so torque = 0.08 x 0.50 x sin(30 degrees)."
+    },
+    {
+      "question": "A fixed magnetic moment antiparallel to uniform B has:",
+      "options": [
+        "Maximum torque and minimum energy",
+        "Zero torque and stable equilibrium",
+        "Nonzero torque and zero energy",
+        "Zero torque and unstable equilibrium"
+      ],
+      "answer": 3,
+      "explanation": "At 180 degrees, sine is zero and U = +mu B is a maximum; a small angular perturbation is not restoring."
+    },
+    {
+      "question": "For fixed mu B = 0.040 J, slowly rotating from normal angle 60 degrees to 120 degrees requires external work:",
+      "options": [
+        "+0.040 J",
+        "-0.040 J",
+        "0 J",
+        "+0.080 J"
+      ],
+      "answer": 0,
+      "explanation": "U changes from -0.020 J to +0.020 J. Quasistatic external work is the increase, +0.040 J."
+    },
+    {
+      "question": "One circular turn and one square turn use the same wire length and carry the same current. mu_circle/mu_square is:",
+      "options": [
+        "pi/4",
+        "4/pi",
+        "1",
+        "2"
+      ],
+      "answer": 1,
+      "explanation": "For wire length ell, A_circle = ell^2/(4pi) and A_square = ell^2/16. The current cancels in the ratio."
+    }
+  ]
+}

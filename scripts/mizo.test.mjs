@@ -9,11 +9,14 @@ const questions = getReviewedQuestions("mpsc");
 
 test("English source bank is unchanged; source edits require translation review", () => {
   // 2026-09-29: numerical distractor order changed; numerical translations reuse English options, so no text needs review.
-  assert.equal(createHash("sha256").update(JSON.stringify(questions)).digest("hex"), "6fc03ee19174ee8614f96edf5146063182813a4ff4a61d43d970c82363d6da82");
+  // 2026-10-20: percentage and simple-interest topics added with templated draft translations; the earlier 500 are unchanged.
+  assert.equal(createHash("sha256").update(JSON.stringify(questions)).digest("hex"), "5756812783ab74e762df8e32e0f74127d3b141a55a90e6001d7edaf9ecc11f01");
+  const earlier = questions.filter(q => !/^(percentages|simple-interest)-/.test(q.id));
+  assert.equal(createHash("sha256").update(JSON.stringify(earlier)).digest("hex"), "6fc03ee19174ee8614f96edf5146063182813a4ff4a61d43d970c82363d6da82");
 });
 
-test("all 500 questions and ten categories have complete draft translations", () => {
-  assert.equal(questions.length, 500);
+test("all 526 questions and twelve categories have complete draft translations", () => {
+  assert.equal(questions.length, 526);
   for (const q of questions) {
     const original = structuredClone(q);
     const translated = getMizoTranslation(q);
@@ -29,7 +32,7 @@ test("all 500 questions and ten categories have complete draft translations", ()
     assert.deepEqual(q, original, "Translation must not mutate scoring or source data");
     assert.equal(translated.answer, undefined, "English bank remains the only answer key");
   }
-  assert.equal(new Set(questions.map(q => q.category)).size, 10);
+  assert.equal(new Set(questions.map(q => q.category)).size, 12);
   assert.ok(Object.keys(mizoManual).every(id => questions.some(q => q.id === id)));
 });
 
@@ -63,6 +66,17 @@ test("numerical translations retain the worked answer and numeric choices", () =
     const translated = getMizoTranslation(q);
     assert.deepEqual(translated.options, q.options, q.id);
     assert.ok(translated.explanation.includes(q.answer), q.id);
+  }
+});
+
+test("percentage and interest translations keep the numeric choices and show the keyed answer", () => {
+  const templated = questions.filter(q => /^(percentages|simple-interest)-/.test(q.id));
+  assert.equal(templated.length, 26);
+  for (const q of templated) {
+    const translated = getMizoTranslation(q);
+    assert.deepEqual(translated.options, q.options, q.id);
+    assert.ok(translated.explanation.endsWith(`${q.answer}.`) || translated.explanation.includes(`= ${q.answer}.`), q.id);
+    for (const number of q.question.match(/\d+(\.\d+)?/g)) assert.ok(translated.question.includes(number), `${q.id} keeps ${number}`);
   }
 });
 

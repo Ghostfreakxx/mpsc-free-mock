@@ -1,0 +1,394 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.160
+Hey, welcome back.
+
+00:00:01.700 --> 00:00:04.160
+A telescope does not bring the Moon physically closer.
+
+00:00:04.780 --> 00:00:07.560
+It makes the Moon occupy a larger angle at your eye.
+
+00:00:08.220 --> 00:00:12.200
+That is our key idea for optical instruments: angular magnification.
+
+00:00:12.700 --> 00:00:18.000
+A small object of height h at distance d subtends an angle approximately h
+
+00:00:18.000 --> 00:00:21.920
+divided by d, when that angle is small and expressed in radians.
+
+00:00:22.840 --> 00:00:26.900
+Bring the object closer and its angular size increases, but your eye cannot
+
+00:00:26.900 --> 00:00:29.320
+focus clearly at arbitrarily small distances.
+
+00:00:30.000 --> 00:00:34.480
+For standard JEE calculations, we take the least distance of distinct vision,
+
+00:00:35.240 --> 00:00:38.480
+D, as twenty five centimeters unless another value is given.
+
+00:00:39.380 --> 00:00:43.020
+It is a conventional reference, not a promise that every person's eye has
+
+00:00:43.020 --> 00:00:44.140
+exactly that near point.
+
+00:00:45.020 --> 00:00:49.320
+A one millimeter object viewed at twenty five centimeters subtends about zero
+
+00:00:49.320 --> 00:00:50.940
+point zero zero four radians.
+
+00:00:51.760 --> 00:00:55.880
+A magnifier lets us see that object under a larger angle while keeping it in
+
+00:00:55.880 --> 00:00:56.140
+focus.
+
+00:00:56.900 --> 00:01:00.420
+Angular magnification compares the angle with the instrument against the
+
+00:01:00.420 --> 00:01:02.040
+specified unaided viewing angle.
+
+00:01:03.120 --> 00:01:07.300
+Image height magnification, such as v over u for a lens, answers a different
+
+00:01:07.300 --> 00:01:07.680
+question.
+
+00:01:08.740 --> 00:01:11.780
+Mixing those two definitions causes trouble in microscope questions.
+
+00:01:12.920 --> 00:01:16.840
+Throughout this class we use ideal paraxial instruments, ignore aberrations,
+
+00:01:17.140 --> 00:01:19.340
+and specify where the final image lies.
+
+00:01:19.820 --> 00:01:24.048
+The final image at infinity corresponds to a relaxed eye in the standard
+
+00:01:24.048 --> 00:01:24.400
+model.
+
+00:01:24.648 --> 00:01:28.608
+A simple magnifier is a converging lens viewed close to the eye.
+
+00:01:29.368 --> 00:01:33.328
+For a final virtual image at infinity, place the object at the lens's focal
+
+00:01:33.328 --> 00:01:33.608
+plane.
+
+00:01:34.408 --> 00:01:38.620
+The outgoing rays are parallel, and the angle they make is approximately h
+
+00:01:38.620 --> 00:01:38.848
+over
+
+00:01:38.848 --> 00:01:39.148
+f.
+
+00:01:39.948 --> 00:01:44.608
+Divide by the unaided reference angle h over D, and angular magnification is D
+
+00:01:44.608 --> 00:01:45.148
+over f.
+
+00:01:45.868 --> 00:01:50.548
+A lens of focal length five centimeters gives magnification five when D is
+
+00:01:50.548 --> 00:01:51.508
+twenty five centimeters.
+
+00:01:51.508 --> 00:01:56.848
+Now bring the object slightly inside the focus and arrange the final virtual
+
+00:01:56.848 --> 00:01:57.868
+image at the near point.
+
+00:01:58.568 --> 00:02:03.308
+With the lens close to the eye, the magnitude becomes one plus D over f, which
+
+00:02:03.308 --> 00:02:04.608
+is six for the same lens.
+
+00:02:05.288 --> 00:02:07.808
+The extra one belongs to this different viewing arrangement.
+
+00:02:08.468 --> 00:02:11.448
+It is not a correction you add to every magnifying power formula.
+
+00:02:12.228 --> 00:02:13.728
+Let's connect this to the lens equation.
+
+00:02:14.508 --> 00:02:18.388
+Set final image distance to negative twenty five centimeters and focal length
+
+00:02:18.388 --> 00:02:19.348
+to positive five.
+
+00:02:19.348 --> 00:02:24.108
+The object distance becomes negative twenty five over six centimeters, about
+
+00:02:24.108 --> 00:02:26.008
+negative four point one seven.
+
+00:02:26.008 --> 00:02:29.068
+That lies inside the five centimeter focus, as expected.
+
+00:02:29.788 --> 00:02:33.548
+The near point arrangement can give greater angular magnification, but the
+
+00:02:33.548 --> 00:02:36.788
+relaxed eye arrangement is often more comfortable in the elementary model.
+
+00:02:37.488 --> 00:02:42.108
+In a numerical problem, underline whether the final image is at infinity or at
+
+00:02:42.108 --> 00:02:43.448
+D before choosing the formula.
+
+00:02:43.656 --> 00:02:49.196
+A compound microscope uses an objective lens close to the small object and an
+
+00:02:49.196 --> 00:02:50.496
+eyepiece close to the eye.
+
+00:02:51.096 --> 00:02:54.796
+The objective makes a real, inverted, enlarged intermediate image.
+
+00:02:55.396 --> 00:02:59.876
+The eyepiece treats that image as its object and magnifies its angular size.
+
+00:03:00.576 --> 00:03:04.856
+Therefore total magnification is the objective's signed linear magnification
+
+00:03:04.856 --> 00:03:08.016
+multiplied by the eyepiece's angular magnification.
+
+00:03:08.756 --> 00:03:11.436
+Let's calculate one exact objective stage.
+
+00:03:11.816 --> 00:03:16.196
+Its focal length is two centimeters, and the object distance is negative two
+
+00:03:16.196 --> 00:03:17.016
+point two centimeters.
+
+00:03:17.876 --> 00:03:21.896
+The lens equation gives image distance positive twenty two centimeters, so
+
+00:03:21.896 --> 00:03:24.076
+objective magnification is negative ten.
+
+00:03:24.956 --> 00:03:29.156
+With an eyepiece focal length five centimeters and final image at infinity,
+
+00:03:29.816 --> 00:03:32.776
+eyepiece magnification is twenty five over five, or five.
+
+00:03:33.436 --> 00:03:35.396
+Total magnification is negative fifty.
+
+00:03:36.016 --> 00:03:40.536
+Its magnitude is fifty, and the minus sign describes inversion relative to the
+
+00:03:40.536 --> 00:03:41.316
+original object.
+
+00:03:42.256 --> 00:03:46.176
+The intermediate image must lie at the eyepiece focal plane, so the lens
+
+00:03:46.176 --> 00:03:48.276
+separation here is twenty seven centimeters.
+
+00:03:49.416 --> 00:03:53.696
+In a high magnification approximation, objective magnification magnitude is
+
+00:03:53.696 --> 00:03:57.216
+about optical tube length L divided by objective focal length.
+
+00:03:57.856 --> 00:04:01.636
+L is the distance from the objective's back focal plane to the intermediate
+
+00:04:01.636 --> 00:04:05.076
+image plane, not blindly every quoted mechanical tube length.
+
+00:04:05.916 --> 00:04:10.636
+That gives the common approximate normal magnification L D over f o f e.
+
+00:04:10.636 --> 00:04:15.696
+For a near point final image, the eyepiece factor becomes one plus D over f e,
+
+00:04:15.696 --> 00:04:17.636
+and the geometry must be adjusted accordingly.
+
+00:04:18.168 --> 00:04:22.308
+For an astronomical telescope, the object is extremely far away.
+
+00:04:23.268 --> 00:04:26.088
+Rays arriving from one point of that object are nearly parallel.
+
+00:04:26.948 --> 00:04:29.628
+The objective lens makes a real image in its focal plane.
+
+00:04:30.548 --> 00:04:34.952
+For normal adjustment, place the eyepiece so this intermediate image is also
+
+00:04:34.952 --> 00:04:35.068
+at
+
+00:04:35.068 --> 00:04:36.808
+the eyepiece's incoming focal plane.
+
+00:04:37.508 --> 00:04:41.248
+The final rays are parallel, allowing the standard relaxed eye view.
+
+00:04:41.748 --> 00:04:46.308
+The objective focal length is usually large, and the eyepiece focal length is
+
+00:04:46.308 --> 00:04:46.548
+small.
+
+00:04:47.268 --> 00:04:51.168
+Angular magnification is negative f o divided by f e.
+
+00:04:51.168 --> 00:04:53.768
+The negative sign means the astronomical image is inverted.
+
+00:04:54.748 --> 00:04:58.248
+If the objective focal length is one hundred centimeters and the eyepiece
+
+00:04:58.248 --> 00:04:58.488
+focal
+
+00:04:58.488 --> 00:05:02.788
+length is five centimeters, the magnification is negative twenty.
+
+00:05:02.788 --> 00:05:07.493
+The magnitude is twenty, and the lens separation is one hundred five
+
+00:05:07.493 --> 00:05:08.008
+centimeters.
+
+00:05:08.008 --> 00:05:09.888
+Why does that focal length ratio appear?
+
+00:05:10.148 --> 00:05:14.888
+A distant object angle produces intermediate image height approximately f o
+
+00:05:14.888 --> 00:05:16.028
+times the incoming angle.
+
+00:05:16.548 --> 00:05:20.888
+The eyepiece converts that height into an outgoing angle approximately height
+
+00:05:20.888 --> 00:05:22.748
+divided by f e.
+
+00:05:22.748 --> 00:05:25.368
+Their ratio is f o over f e.
+
+00:05:25.368 --> 00:05:28.528
+A telescope objective with a large aperture also collects more light.
+
+00:05:29.488 --> 00:05:32.928
+Magnifying power and light collection are different properties; a huge
+
+00:05:32.928 --> 00:05:35.648
+magnification does not automatically reveal more detail.
+
+00:05:36.568 --> 00:05:40.368
+These formulas describe an ideal astronomical refractor in normal adjustment,
+
+00:05:41.128 --> 00:05:44.488
+not an upright terrestrial telescope with additional erecting elements.
+
+00:05:44.736 --> 00:05:49.036
+A reflecting telescope uses a concave primary mirror instead of a large
+
+00:05:49.036 --> 00:05:49.816
+objective lens.
+
+00:05:50.656 --> 00:05:54.496
+Incoming rays from a distant object reflect toward the primary's focal region,
+
+00:05:55.016 --> 00:05:56.836
+where a real intermediate image forms.
+
+00:05:57.436 --> 00:05:59.096
+An eyepiece magnifies that image.
+
+00:05:59.716 --> 00:06:03.636
+A secondary mirror may redirect the beam to a convenient viewing position,
+
+00:06:04.116 --> 00:06:04.976
+depending on the design.
+
+00:06:05.736 --> 00:06:10.416
+Our board shows the primary image eyepiece sequence schematically; it is not a
+
+00:06:10.416 --> 00:06:12.216
+construction drawing for a particular telescope.
+
+00:06:12.216 --> 00:06:17.516
+In an ideal normal arrangement, magnifying power magnitude is approximately
+
+00:06:17.516 --> 00:06:20.696
+primary focal length divided by eyepiece focal length.
+
+00:06:21.296 --> 00:06:24.896
+A two hundred centimeter primary with a four centimeter eyepiece gives
+
+00:06:24.896 --> 00:06:25.896
+magnitude fifty.
+
+00:06:26.676 --> 00:06:29.756
+Reflection does not disperse different wavelengths through an objective lens,
+
+00:06:30.256 --> 00:06:33.656
+so the primary avoids the refractive objective's chromatic aberration.
+
+00:06:34.236 --> 00:06:38.736
+That does not mean every reflector is perfectly sharp: spherical aberration,
+
+00:06:39.596 --> 00:06:43.116
+alignment errors, diffraction, and atmospheric conditions can still matter.
+
+00:06:44.176 --> 00:06:48.136
+Telescope tube length also depends on the folded optical layout, so do not
+
+00:06:48.136 --> 00:06:51.996
+reuse the refractor's simple lens separation expression as the physical length
+
+00:06:51.996 --> 00:06:52.856
+of every reflector.
+
+00:06:53.696 --> 00:06:58.357
+Our final comparison is useful for JEE: a microscope begins with a nearby
+
+00:06:58.357 --> 00:06:58.676
+small
+
+00:06:58.676 --> 00:07:01.896
+object and uses a short focal length objective to enlarge it.
+
+00:07:02.356 --> 00:07:06.756
+An astronomical telescope begins with a distant angular object and commonly
+
+00:07:06.756 --> 00:07:09.156
+uses a long focal length objective or primary.
+
+00:07:09.996 --> 00:07:14.021
+Both then use an eyepiece, and both require the final image condition to
+
+00:07:14.021 --> 00:07:14.356
+choose
+
+00:07:14.356 --> 00:07:16.076
+the correct magnifying power formula.

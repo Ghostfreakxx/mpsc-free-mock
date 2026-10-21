@@ -1,0 +1,975 @@
+{
+  "duration": 470.32800000001333,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 88.80000000000247
+    },
+    {
+      "start": 88.80000000000247,
+      "end": 185.85600000000525
+    },
+    {
+      "start": 185.85600000000525,
+      "end": 285.91200000000816
+    },
+    {
+      "start": 285.91200000000816,
+      "end": 377.4240000000107
+    },
+    {
+      "start": 377.4240000000107,
+      "end": 470.32800000001333
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.3200000524520874,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.299999952316284,
+      "end": 4,
+      "text": "Today we begin optics with mirrors.",
+      "chapter": 0
+    },
+    {
+      "start": 4.840000152587891,
+      "end": 8.754940159349557,
+      "text": "Before collecting formulas, let's ask what a mirror actually does to a ray of",
+      "chapter": 0
+    },
+    {
+      "start": 8.754940159349557,
+      "end": 9.0600004196167,
+      "text": "light.",
+      "chapter": 0
+    },
+    {
+      "start": 9.760000228881836,
+      "end": 14.220000267028809,
+      "text": "At the point where the ray hits, draw a normal: a line perpendicular to the",
+      "chapter": 0
+    },
+    {
+      "start": 14.220000267028809,
+      "end": 15,
+      "text": "reflecting surface.",
+      "chapter": 0
+    },
+    {
+      "start": 15.65999984741211,
+      "end": 19.040000915527344,
+      "text": "The angle of incidence is measured between that normal and the incoming ray.",
+      "chapter": 0
+    },
+    {
+      "start": 19.639999389648438,
+      "end": 23.280000686645508,
+      "text": "The reflected ray makes the same angle with the normal, on the other side.",
+      "chapter": 0
+    },
+    {
+      "start": 23.860000610351562,
+      "end": 26.31999969482422,
+      "text": "These two rays and the normal lie in one plane.",
+      "chapter": 0
+    },
+    {
+      "start": 27.15999984741211,
+      "end": 29.260000228881836,
+      "text": "Simple rule, powerful consequences.",
+      "chapter": 0
+    },
+    {
+      "start": 30.239999771118164,
+      "end": 33.779998779296875,
+      "text": "Suppose a question says the incident ray makes sixty degrees with the mirror",
+      "chapter": 0
+    },
+    {
+      "start": 33.779998779296875,
+      "end": 34.220001220703125,
+      "text": "surface.",
+      "chapter": 0
+    },
+    {
+      "start": 34.86000061035156,
+      "end": 35.939998626708984,
+      "text": "What is the angle of reflection?",
+      "chapter": 0
+    },
+    {
+      "start": 36.81999969482422,
+      "end": 37.31999969482422,
+      "text": "Take a moment.",
+      "chapter": 0
+    },
+    {
+      "start": 37.79999923706055,
+      "end": 40.13999938964844,
+      "text": "It is thirty degrees, not sixty.",
+      "chapter": 0
+    },
+    {
+      "start": 40.13999938964844,
+      "end": 44.540000915527344,
+      "text": "The normal is perpendicular to the surface, so we subtract from ninety before",
+      "chapter": 0
+    },
+    {
+      "start": 44.540000915527344,
+      "end": 45.779998779296875,
+      "text": "using the reflection law.",
+      "chapter": 0
+    },
+    {
+      "start": 46.52000045776367,
+      "end": 47.720001220703125,
+      "text": "Now picture a plane mirror.",
+      "chapter": 0
+    },
+    {
+      "start": 48.47999954223633,
+      "end": 52.459999084472656,
+      "text": "Reflected rays reaching your eyes diverge, but their backward extensions meet",
+      "chapter": 0
+    },
+    {
+      "start": 52.459999084472656,
+      "end": 53.13999938964844,
+      "text": "behind the mirror.",
+      "chapter": 0
+    },
+    {
+      "start": 53.63999938964844,
+      "end": 55.47999954223633,
+      "text": "That meeting point is a virtual image.",
+      "chapter": 0
+    },
+    {
+      "start": 56.099998474121094,
+      "end": 59.08000183105469,
+      "text": "Light does not actually travel through that point behind an opaque mirror.",
+      "chapter": 0
+    },
+    {
+      "start": 59.900001525878906,
+      "end": 63.900001525878906,
+      "text": "For a stationary plane mirror, an object twenty centimeters in front produces",
+      "chapter": 0
+    },
+    {
+      "start": 63.900001525878906,
+      "end": 67.12000274658203,
+      "text": "an upright, same size image twenty centimeters behind it.",
+      "chapter": 0
+    },
+    {
+      "start": 67.69999694824219,
+      "end": 69.76000213623047,
+      "text": "Object and image are forty centimeters apart.",
+      "chapter": 0
+    },
+    {
+      "start": 70.54000091552734,
+      "end": 75.33999633789062,
+      "text": "In a ray diagram, solid lines represent actual light paths; dashed lines show",
+      "chapter": 0
+    },
+    {
+      "start": 75.33999633789062,
+      "end": 76.0999984741211,
+      "text": "backward extensions.",
+      "chapter": 0
+    },
+    {
+      "start": 76.80000305175781,
+      "end": 79.77999877929688,
+      "text": "This distinction will matter even more when we curve the mirror.",
+      "chapter": 0
+    },
+    {
+      "start": 80.41999816894531,
+      "end": 85.45999908447266,
+      "text": "Our first JEE habit is therefore: draw the normal, identify the angle, and",
+      "chapter": 0
+    },
+    {
+      "start": 85.45999908447266,
+      "end": 87.91999816894531,
+      "text": "decide whether actual rays or their extensions meet.",
+      "chapter": 0
+    },
+    {
+      "start": 88.80000000000247,
+      "end": 94.24000005722293,
+      "text": "A concave mirror has its reflecting surface curved inward, facing our object.",
+      "chapter": 1
+    },
+    {
+      "start": 94.91999988556155,
+      "end": 97.80000000000247,
+      "text": "A convex mirror bulges toward the object.",
+      "chapter": 1
+    },
+    {
+      "start": 98.36000041961917,
+      "end": 102.45999984741458,
+      "text": "The pole is the middle of the mirror, and the principal axis joins the pole to",
+      "chapter": 1
+    },
+    {
+      "start": 102.45999984741458,
+      "end": 104.26000003814944,
+      "text": "the sphere's center of curvature.",
+      "chapter": 1
+    },
+    {
+      "start": 104.84000091552981,
+      "end": 109.16000061035403,
+      "text": "Near the axis, parallel rays reflected by a concave mirror meet at its",
+      "chapter": 1
+    },
+    {
+      "start": 109.16000061035403,
+      "end": 109.92000083923587,
+      "text": "principal focus.",
+      "chapter": 1
+    },
+    {
+      "start": 110.42000083923587,
+      "end": 114.98000030517825,
+      "text": "A convex mirror sends them apart; their backward extensions meet at a virtual",
+      "chapter": 1
+    },
+    {
+      "start": 114.98000030517825,
+      "end": 116.00000076294192,
+      "text": "focus behind it.",
+      "chapter": 1
+    },
+    {
+      "start": 116.32000045776614,
+      "end": 121.34000091552981,
+      "text": "For spherical mirrors in the paraxial approximation, the focal length is half",
+      "chapter": 1
+    },
+    {
+      "start": 121.34000091552981,
+      "end": 122.54000167846927,
+      "text": "the radius of curvature.",
+      "chapter": 1
+    },
+    {
+      "start": 123.2799995422388,
+      "end": 127.54000167846927,
+      "text": "Paraxial means rays close to the axis and making small angles with it.",
+      "chapter": 1
+    },
+    {
+      "start": 128.27999954223878,
+      "end": 132.57999877929933,
+      "text": "Farther out rays need not share exactly the same focus: that is spherical",
+      "chapter": 1
+    },
+    {
+      "start": 132.57999877929933,
+      "end": 133.20000152588136,
+      "text": "aberration.",
+      "chapter": 1
+    },
+    {
+      "start": 133.80000000000246,
+      "end": 136.70000152588136,
+      "text": "Now let's prevent the classic sign convention mix up.",
+      "chapter": 1
+    },
+    {
+      "start": 137.39999847412355,
+      "end": 140.16000061035402,
+      "text": "Throughout this lesson, incident light travels left to right.",
+      "chapter": 1
+    },
+    {
+      "start": 140.80000000000246,
+      "end": 144.30000000000246,
+      "text": "Put the pole at zero, and take rightward distances as positive.",
+      "chapter": 1
+    },
+    {
+      "start": 144.88000183105714,
+      "end": 146.77999954223878,
+      "text": "Every distance is measured from the pole.",
+      "chapter": 1
+    },
+    {
+      "start": 147.64000015259035,
+      "end": 151.16000061035402,
+      "text": "A real object on the left has negative object distance, u.",
+      "chapter": 1
+    },
+    {
+      "start": 151.9399993896509,
+      "end": 155.3400009155298,
+      "text": "A concave mirror's focus is on the left, so f is negative.",
+      "chapter": 1
+    },
+    {
+      "start": 155.99999694824464,
+      "end": 159.039997863772,
+      "text": "A convex mirror's focus is on the right, so f is positive.",
+      "chapter": 1
+    },
+    {
+      "start": 159.8400009155298,
+      "end": 163.66000061035402,
+      "text": "Image distance, v, may be negative or positive depending on its location.",
+      "chapter": 1
+    },
+    {
+      "start": 164.39999847412355,
+      "end": 168.61999969482667,
+      "text": "A concave radius of negative twenty centimeters gives f equal to negative ten",
+      "chapter": 1
+    },
+    {
+      "start": 168.61999969482667,
+      "end": 169.07999877929933,
+      "text": "centimeters.",
+      "chapter": 1
+    },
+    {
+      "start": 170.039997863772,
+      "end": 172.8400009155298,
+      "text": "Convex radius positive twenty gives positive ten.",
+      "chapter": 1
+    },
+    {
+      "start": 173.3599975585962,
+      "end": 175.16000061035402,
+      "text": "Some references use a different convention.",
+      "chapter": 1
+    },
+    {
+      "start": 175.7599990844751,
+      "end": 179.3400009155298,
+      "text": "Their physics is the same, but do not borrow their signs while keeping our",
+      "chapter": 1
+    },
+    {
+      "start": 179.3400009155298,
+      "end": 179.66000061035402,
+      "text": "equation.",
+      "chapter": 1
+    },
+    {
+      "start": 180.48000030517824,
+      "end": 185.61999969482667,
+      "text": "Here we use one over f equals one over v plus one over u, consistently.",
+      "chapter": 1
+    },
+    {
+      "start": 185.85600000000525,
+      "end": 188.85600000000525,
+      "text": "Let's build a real image rather than just name it.",
+      "chapter": 2
+    },
+    {
+      "start": 189.2960000572257,
+      "end": 192.23600011444617,
+      "text": "Our concave mirror has focal length negative ten centimeters.",
+      "chapter": 2
+    },
+    {
+      "start": 193.1160002288871,
+      "end": 196.2159996566825,
+      "text": "Place a small upright object thirty centimeters to its left.",
+      "chapter": 2
+    },
+    {
+      "start": 197.2760000762992,
+      "end": 200.07600026703406,
+      "text": "Draw one ray from the object's tip parallel to the axis.",
+      "chapter": 2
+    },
+    {
+      "start": 201.01599984741736,
+      "end": 203.33599954224158,
+      "text": "After reflection, it passes through the focus.",
+      "chapter": 2
+    },
+    {
+      "start": 204.45600038147498,
+      "end": 205.71600061035682,
+      "text": "Draw a second ray to the pole.",
+      "chapter": 2
+    },
+    {
+      "start": 206.53600030518103,
+      "end": 211.07599931335974,
+      "text": "At the pole the normal lies along the axis, so equal angles give its reflected",
+      "chapter": 2
+    },
+    {
+      "start": 211.07599931335974,
+      "end": 211.5560007629447,
+      "text": "direction.",
+      "chapter": 2
+    },
+    {
+      "start": 212.03600030518103,
+      "end": 215.9359999237113,
+      "text": "Where those two reflected rays actually meet, we locate the image tip.",
+      "chapter": 2
+    },
+    {
+      "start": 216.63600068665076,
+      "end": 220.6395897788076,
+      "text": "Our diagram is a paraxial schematic, so the mirror is treated close to its",
+      "chapter": 2
+    },
+    {
+      "start": 220.6395897788076,
+      "end": 220.85600000000525,
+      "text": "pole",
+      "chapter": 2
+    },
+    {
+      "start": 220.85600000000525,
+      "end": 222.01599984741736,
+      "text": "for the ray construction.",
+      "chapter": 2
+    },
+    {
+      "start": 223.75600152588416,
+      "end": 224.45599847412635,
+      "text": "Now calculate.",
+      "chapter": 2
+    },
+    {
+      "start": 225.41600137329627,
+      "end": 227.1559992370658,
+      "text": "Object distance is negative thirty centimeters.",
+      "chapter": 2
+    },
+    {
+      "start": 227.97599893189002,
+      "end": 232.13599877930213,
+      "text": "One over image distance equals one over focal length minus one over object",
+      "chapter": 2
+    },
+    {
+      "start": 232.13599877930213,
+      "end": 232.5560007629447,
+      "text": "distance.",
+      "chapter": 2
+    },
+    {
+      "start": 232.93600183105994,
+      "end": 237.45599847412635,
+      "text": "That is negative one tenth plus one thirtieth, giving negative one fifteenth",
+      "chapter": 2
+    },
+    {
+      "start": 237.45599847412635,
+      "end": 238.1559992370658,
+      "text": "per centimeter.",
+      "chapter": 2
+    },
+    {
+      "start": 238.9959993896537,
+      "end": 241.07600122070838,
+      "text": "Therefore v is negative fifteen centimeters.",
+      "chapter": 2
+    },
+    {
+      "start": 241.5560007629447,
+      "end": 245.56164064613282,
+      "text": "The image lies fifteen centimeters to the left of the mirror, between the",
+      "chapter": 2
+    },
+    {
+      "start": 245.56164064613282,
+      "end": 245.83599954224158,
+      "text": "focus",
+      "chapter": 2
+    },
+    {
+      "start": 245.83599954224158,
+      "end": 247.07600122070838,
+      "text": "and center of curvature.",
+      "chapter": 2
+    },
+    {
+      "start": 247.83599954224158,
+      "end": 250.71600061035682,
+      "text": "It is real because reflected rays actually converge there.",
+      "chapter": 2
+    },
+    {
+      "start": 251.45599847412635,
+      "end": 252.23599725342322,
+      "text": "What about its size?",
+      "chapter": 2
+    },
+    {
+      "start": 252.9959993896537,
+      "end": 255.65600305176307,
+      "text": "Mirror magnification is negative v divided by u.",
+      "chapter": 2
+    },
+    {
+      "start": 256.6359987793021,
+      "end": 259.25600152588413,
+      "text": "Substituting both signed distances gives negative one half.",
+      "chapter": 2
+    },
+    {
+      "start": 259.89600091553257,
+      "end": 263.27599816895054,
+      "text": "The minus sign says inverted; the magnitude says half as tall.",
+      "chapter": 2
+    },
+    {
+      "start": 264.1160021362357,
+      "end": 267.6359987793021,
+      "text": "A two centimeter object therefore has signed image height negative one",
+      "chapter": 2
+    },
+    {
+      "start": 267.6359987793021,
+      "end": 267.97600274658726,
+      "text": "centimeter.",
+      "chapter": 2
+    },
+    {
+      "start": 268.89600091553257,
+      "end": 272.59599786377476,
+      "text": "Notice how three checks agree: the ray intersection, the calculated position,",
+      "chapter": 2
+    },
+    {
+      "start": 273.036000305181,
+      "end": 274.15600305176304,
+      "text": "and the predicted orientation.",
+      "chapter": 2
+    },
+    {
+      "start": 275.07600122070835,
+      "end": 279.09599786377476,
+      "text": "In JEE numerical questions, write signs before arithmetic, keep units",
+      "chapter": 2
+    },
+    {
+      "start": 279.09599786377476,
+      "end": 280.9360018310599,
+      "text": "consistent, then describe the image.",
+      "chapter": 2
+    },
+    {
+      "start": 281.536000305181,
+      "end": 284.84882347850834,
+      "text": "A correct number with the wrong real or virtual interpretation is an",
+      "chapter": 2
+    },
+    {
+      "start": 284.84882347850834,
+      "end": 285.3360033569388,
+      "text": "unfinished",
+      "chapter": 2
+    },
+    {
+      "start": 285.3360033569388,
+      "end": 285.69599633789585,
+      "text": "answer.",
+      "chapter": 2
+    },
+    {
+      "start": 285.91200000000816,
+      "end": 290.56430765710326,
+      "text": "Keep the same concave mirror, but move our object to five centimeters in",
+      "chapter": 3
+    },
+    {
+      "start": 290.56430765710326,
+      "end": 290.9519999618612,
+      "text": "front.",
+      "chapter": 3
+    },
+    {
+      "start": 291.6119998092733,
+      "end": 293.75200015259605,
+      "text": "That puts it between the focus and the pole.",
+      "chapter": 3
+    },
+    {
+      "start": 294.43200045777184,
+      "end": 296.53199988556725,
+      "text": "Do you expect a smaller real image again?",
+      "chapter": 3
+    },
+    {
+      "start": 297.43200045777184,
+      "end": 298.4519999618612,
+      "text": "Pause and look at the rays.",
+      "chapter": 3
+    },
+    {
+      "start": 298.87200003815514,
+      "end": 300.87200003815514,
+      "text": "Now the reflected rays spread apart.",
+      "chapter": 3
+    },
+    {
+      "start": 301.5120003814779,
+      "end": 304.9520009155355,
+      "text": "Their backward extensions meet behind the mirror, above the axis.",
+      "chapter": 3
+    },
+    {
+      "start": 305.29199916077476,
+      "end": 308.2720006103597,
+      "text": "We get a virtual, upright, enlarged image.",
+      "chapter": 3
+    },
+    {
+      "start": 308.2720006103597,
+      "end": 311.1519997711263,
+      "text": "Let's make the calculation explain the picture.",
+      "chapter": 3
+    },
+    {
+      "start": 311.9520009155355,
+      "end": 315.4520009155355,
+      "text": "One over v is negative one tenth minus negative one fifth.",
+      "chapter": 3
+    },
+    {
+      "start": 315.9520009155355,
+      "end": 320.2319996948324,
+      "text": "That becomes positive one tenth per centimeter, so v is positive ten",
+      "chapter": 3
+    },
+    {
+      "start": 320.2319996948324,
+      "end": 321.5719998474203,
+      "text": "centimeters.",
+      "chapter": 3
+    },
+    {
+      "start": 321.5719998474203,
+      "end": 325.0519993896566,
+      "text": "Positive image distance means behind this mirror in our coordinate system.",
+      "chapter": 3
+    },
+    {
+      "start": 325.65200167847496,
+      "end": 330.03199893189293,
+      "text": "Magnification is negative ten divided by negative five, which equals positive",
+      "chapter": 3
+    },
+    {
+      "start": 330.03199893189293,
+      "end": 330.41200000000816,
+      "text": "two.",
+      "chapter": 3
+    },
+    {
+      "start": 330.8919995422445,
+      "end": 333.17199832154137,
+      "text": "The image is twice as tall and upright.",
+      "chapter": 3
+    },
+    {
+      "start": 333.65200167847496,
+      "end": 336.03199893189293,
+      "text": "A virtual image is not automatically smaller.",
+      "chapter": 3
+    },
+    {
+      "start": 336.4520009155355,
+      "end": 338.25200015259605,
+      "text": "That shortcut would fail right here.",
+      "chapter": 3
+    },
+    {
+      "start": 338.9720013732992,
+      "end": 343.2119992370687,
+      "text": "As a useful map for a real object and a concave mirror: beyond the center, the",
+      "chapter": 3
+    },
+    {
+      "start": 343.2119992370687,
+      "end": 347.63584594649126,
+      "text": "image is real and smaller; at the center, it is real and the same size;",
+      "chapter": 3
+    },
+    {
+      "start": 347.63584594649126,
+      "end": 348.0719998474203,
+      "text": "between",
+      "chapter": 3
+    },
+    {
+      "start": 348.0719998474203,
+      "end": 350.39200335694176,
+      "text": "center and focus, it is real and larger.",
+      "chapter": 3
+    },
+    {
+      "start": 351.31200152588707,
+      "end": 353.69199877930504,
+      "text": "Inside the focus, it becomes virtual and larger.",
+      "chapter": 3
+    },
+    {
+      "start": 354.39200335694176,
+      "end": 357.7319996948324,
+      "text": "At the focus itself, reflected paraxial rays are parallel.",
+      "chapter": 3
+    },
+    {
+      "start": 358.3319981689535,
+      "end": 362.43199664307457,
+      "text": "There is no finite image distance; we describe the image as at infinity.",
+      "chapter": 3
+    },
+    {
+      "start": 363.19199877930504,
+      "end": 365.81200152588707,
+      "text": "Do not divide by zero and report an ordinary number.",
+      "chapter": 3
+    },
+    {
+      "start": 366.41200000000816,
+      "end": 368.8520024414144,
+      "text": "Our two worked examples straddle that focal boundary.",
+      "chapter": 3
+    },
+    {
+      "start": 369.5519993896566,
+      "end": 373.41200000000816,
+      "text": "In a JEE problem, first locate the object relative to the focus.",
+      "chapter": 3
+    },
+    {
+      "start": 374.01199847412926,
+      "end": 377.212003051766,
+      "text": "That prediction gives you a quick way to catch an algebraic sign error.",
+      "chapter": 3
+    },
+    {
+      "start": 377.4240000000107,
+      "end": 381.9240000000107,
+      "text": "Now switch to a convex mirror with focal length positive fifteen centimeters.",
+      "chapter": 4
+    },
+    {
+      "start": 382.7640001525986,
+      "end": 387.12399980927586,
+      "text": "Our real object is thirty centimeters in front, so u remains negative thirty.",
+      "chapter": 4
+    },
+    {
+      "start": 387.84400007630467,
+      "end": 392.0039999237168,
+      "text": "One over v equals one fifteenth minus negative one thirtieth.",
+      "chapter": 4
+    },
+    {
+      "start": 392.0039999237168,
+      "end": 393.5039999237168,
+      "text": "That is one tenth per centimeter.",
+      "chapter": 4
+    },
+    {
+      "start": 394.4839994659531,
+      "end": 398.01323139328684,
+      "text": "Image distance is positive ten centimeters, behind the mirror, between the",
+      "chapter": 4
+    },
+    {
+      "start": 398.01323139328684,
+      "end": 398.20400068665623,
+      "text": "pole",
+      "chapter": 4
+    },
+    {
+      "start": 398.36400053406834,
+      "end": 399.36400053406834,
+      "text": "and the virtual focus.",
+      "chapter": 4
+    },
+    {
+      "start": 400.3039991607773,
+      "end": 404.2640001525986,
+      "text": "Magnification is negative ten divided by negative thirty, giving positive one",
+      "chapter": 4
+    },
+    {
+      "start": 404.2640001525986,
+      "end": 404.4240000000107,
+      "text": "third.",
+      "chapter": 4
+    },
+    {
+      "start": 405.1639997711289,
+      "end": 407.58399984742283,
+      "text": "So the image is virtual, upright, and diminished.",
+      "chapter": 4
+    },
+    {
+      "start": 408.323999618541,
+      "end": 411.72399923707127,
+      "text": "Try one more in your head: the same mirror, but a real object fifteen",
+      "chapter": 4
+    },
+    {
+      "start": 411.72399923707127,
+      "end": 412.46400091553807,
+      "text": "centimeters away.",
+      "chapter": 4
+    },
+    {
+      "start": 413.1040003051865,
+      "end": 414.0439989318955,
+      "text": "What is the image distance?",
+      "chapter": 4
+    },
+    {
+      "start": 414.6839983215439,
+      "end": 415.4440004577744,
+      "text": "Give yourself a moment.",
+      "chapter": 4
+    },
+    {
+      "start": 416.1040003051865,
+      "end": 420.3839990844834,
+      "text": "One over v becomes one fifteenth plus one fifteenth, so v is positive seven",
+      "chapter": 4
+    },
+    {
+      "start": 420.3839990844834,
+      "end": 421.24399969483494,
+      "text": "point five centimeters.",
+      "chapter": 4
+    },
+    {
+      "start": 422.56399938965916,
+      "end": 424.06399938965916,
+      "text": "Magnification is positive one half.",
+      "chapter": 4
+    },
+    {
+      "start": 424.58399984742283,
+      "end": 426.40399954224705,
+      "text": "It is still behind the mirror and smaller.",
+      "chapter": 4
+    },
+    {
+      "start": 427.1839983215439,
+      "end": 431.2039987793076,
+      "text": "This explains why convex mirrors can show a wider scene while shrinking the",
+      "chapter": 4
+    },
+    {
+      "start": 431.2039987793076,
+      "end": 431.58399984742283,
+      "text": "objects in it.",
+      "chapter": 4
+    },
+    {
+      "start": 432.2840006103623,
+      "end": 436.30400106812596,
+      "text": "For a real object in front of an ordinary convex mirror, the virtual, upright,",
+      "chapter": 4
+    },
+    {
+      "start": 436.72399923707127,
+      "end": 437.74399969483494,
+      "text": "diminished pattern is dependable.",
+      "chapter": 4
+    },
+    {
+      "start": 438.24399969483494,
+      "end": 442.7840006103623,
+      "text": "The words real object are essential: a virtual object made by another optical",
+      "chapter": 4
+    },
+    {
+      "start": 442.7840006103623,
+      "end": 444.4040033569443,
+      "text": "element needs separate analysis.",
+      "chapter": 4
+    },
+    {
+      "start": 445.5239984741318,
+      "end": 446.9839975586045,
+      "text": "Finally, our sign check routine.",
+      "chapter": 4
+    },
+    {
+      "start": 447.7840006103623,
+      "end": 449.2840006103623,
+      "text": "Fix the pole and positive direction.",
+      "chapter": 4
+    },
+    {
+      "start": 450.0040018310654,
+      "end": 451.26399633790135,
+      "text": "Write signed u and f.",
+      "chapter": 4
+    },
+    {
+      "start": 451.8240015258896,
+      "end": 452.4839975586045,
+      "text": "Solve for v.",
+      "chapter": 4
+    },
+    {
+      "start": 453.3240015258896,
+      "end": 454.5239984741318,
+      "text": "Calculate negative v over u.",
+      "chapter": 4
+    },
+    {
+      "start": 455.0840036621201,
+      "end": 459.3240015258896,
+      "text": "Then interpret position, orientation, and size, and check them against a ray",
+      "chapter": 4
+    },
+    {
+      "start": 459.3240015258896,
+      "end": 459.5840036621201,
+      "text": "sketch.",
+      "chapter": 4
+    },
+    {
+      "start": 460.3240015258896,
+      "end": 464.22400305176853,
+      "text": "For a plane mirror, the same convention gives v equal to negative u and",
+      "chapter": 4
+    },
+    {
+      "start": 464.22400305176853,
+      "end": 465.64400122071385,
+      "text": "magnification positive one.",
+      "chapter": 4
+    },
+    {
+      "start": 466.3839990844834,
+      "end": 469.8240015258896,
+      "text": "Keep this method consistent and mirror questions stop feeling like a guessing",
+      "chapter": 4
+    },
+    {
+      "start": 469.8240015258896,
+      "end": 470.06399938965916,
+      "text": "game.",
+      "chapter": 4
+    }
+  ]
+}

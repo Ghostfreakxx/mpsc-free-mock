@@ -1,0 +1,777 @@
+{
+  "duration": 399.93600000001067,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 79.96800000000214
+    },
+    {
+      "start": 79.96800000000214,
+      "end": 154.92000000000408
+    },
+    {
+      "start": 154.92000000000408,
+      "end": 230.73600000000607
+    },
+    {
+      "start": 230.73600000000607,
+      "end": 309.93600000000816
+    },
+    {
+      "start": 309.93600000000816,
+      "end": 399.93600000001067
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.2400000095367432,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.840000033378601,
+      "end": 6.260000228881836,
+      "text": "A parallel slab shifts a ray sideways but returns it to a parallel direction.",
+      "chapter": 0
+    },
+    {
+      "start": 6.900000095367432,
+      "end": 11.600000381469727,
+      "text": "A prism has faces that are not parallel, so the ray generally emerges in a",
+      "chapter": 0
+    },
+    {
+      "start": 11.600000381469727,
+      "end": 12.239999771118164,
+      "text": "different direction.",
+      "chapter": 0
+    },
+    {
+      "start": 12.880000114440918,
+      "end": 15.479999542236328,
+      "text": "We describe that change by its angle of deviation.",
+      "chapter": 0
+    },
+    {
+      "start": 16.440000534057617,
+      "end": 20.139999389648438,
+      "text": "Work in the prism's principal section and draw a normal at each face.",
+      "chapter": 0
+    },
+    {
+      "start": 20.739999771118164,
+      "end": 22.15999984741211,
+      "text": "The entry angle is i.",
+      "chapter": 0
+    },
+    {
+      "start": 22.719999313354492,
+      "end": 27.239999771118164,
+      "text": "The internal angles are r one and r two, each measured from its local normal.",
+      "chapter": 0
+    },
+    {
+      "start": 27.920000076293945,
+      "end": 29.34000015258789,
+      "text": "The emergence angle is e.",
+      "chapter": 0
+    },
+    {
+      "start": 30.34000015258789,
+      "end": 33.900001525878906,
+      "text": "Geometry gives r one plus r two equal to the prism angle A.",
+      "chapter": 0
+    },
+    {
+      "start": 34.540000915527344,
+      "end": 39.599998474121094,
+      "text": "The overall deviation equals i plus e minus A for the ordinary transmitted",
+      "chapter": 0
+    },
+    {
+      "start": 39.599998474121094,
+      "end": 40.02000045776367,
+      "text": "path.",
+      "chapter": 0
+    },
+    {
+      "start": 40.959999084472656,
+      "end": 44.91999816894531,
+      "text": "Suppose A is sixty degrees, i is forty five, and e is fifty.",
+      "chapter": 0
+    },
+    {
+      "start": 45.13999938964844,
+      "end": 47.34000015258789,
+      "text": "The deviation is thirty five degrees.",
+      "chapter": 0
+    },
+    {
+      "start": 48.02000045776367,
+      "end": 52.060001373291016,
+      "text": "The incidence and emergence angles are not measured from the prism faces, and",
+      "chapter": 0
+    },
+    {
+      "start": 52.060001373291016,
+      "end": 53.720001220703125,
+      "text": "they do not share one common normal.",
+      "chapter": 0
+    },
+    {
+      "start": 54.380001068115234,
+      "end": 56.29999923706055,
+      "text": "That is why a quick sketch is so valuable.",
+      "chapter": 0
+    },
+    {
+      "start": 57,
+      "end": 60.279998779296875,
+      "text": "The relation assumes that the ray enters and leaves through the two intended",
+      "chapter": 0
+    },
+    {
+      "start": 60.279998779296875,
+      "end": 60.65999984741211,
+      "text": "faces.",
+      "chapter": 0
+    },
+    {
+      "start": 61.34000015258789,
+      "end": 65.08000183105469,
+      "text": "At some internal angles, total internal reflection can prevent that emerging",
+      "chapter": 0
+    },
+    {
+      "start": 65.08000183105469,
+      "end": 65.44000244140625,
+      "text": "path.",
+      "chapter": 0
+    },
+    {
+      "start": 65.87999725341797,
+      "end": 69.55999755859375,
+      "text": "Then blindly calculating an emergence angle gives a nonphysical answer.",
+      "chapter": 0
+    },
+    {
+      "start": 70.18000030517578,
+      "end": 74.19999694824219,
+      "text": "Our prism drawings are geometry guides, not scale accurate trajectories for",
+      "chapter": 0
+    },
+    {
+      "start": 74.19999694824219,
+      "end": 75.16000366210938,
+      "text": "every choice of index.",
+      "chapter": 0
+    },
+    {
+      "start": 75.68000030517578,
+      "end": 79.76000213623047,
+      "text": "Start with the path, label the two normals, and only then use the angle sum.",
+      "chapter": 0
+    },
+    {
+      "start": 79.96800000000214,
+      "end": 83.54799992370819,
+      "text": "Rotate an ordinary prism while keeping the incoming ray fixed.",
+      "chapter": 1
+    },
+    {
+      "start": 84.10799986648773,
+      "end": 88.08799988556122,
+      "text": "The deviation first decreases, reaches a minimum, then increases.",
+      "chapter": 1
+    },
+    {
+      "start": 88.72800022888397,
+      "end": 93.06800038147186,
+      "text": "At that minimum for the usual symmetric setup, the internal ray takes a",
+      "chapter": 1
+    },
+    {
+      "start": 93.06800038147186,
+      "end": 98.06800038147186,
+      "text": "symmetric path: i equals e, and r one equals r two.",
+      "chapter": 1
+    },
+    {
+      "start": 98.06800038147186,
+      "end": 101.80800015259003,
+      "text": "Since the internal angles add to A, each is A over two.",
+      "chapter": 1
+    },
+    {
+      "start": 102.84799916076874,
+      "end": 104.92799908447479,
+      "text": "Combine this with Snell's law at the entry face.",
+      "chapter": 1
+    },
+    {
+      "start": 104.92799908447479,
+      "end": 109.60799938965057,
+      "text": "The prism's index relative to its surroundings equals sine of half of A plus",
+      "chapter": 1
+    },
+    {
+      "start": 109.60799938965057,
+      "end": 112.88799816894745,
+      "text": "minimum deviation, divided by sine of half of A.",
+      "chapter": 1
+    },
+    {
+      "start": 113.38799816894745,
+      "end": 117.22799832153534,
+      "text": "Let's use a sixty degree prism with minimum deviation thirty degrees.",
+      "chapter": 1
+    },
+    {
+      "start": 118.00800091552948,
+      "end": 122.22799832153534,
+      "text": "Half of A plus that deviation is forty five degrees; half of A alone is thirty",
+      "chapter": 1
+    },
+    {
+      "start": 122.22799832153534,
+      "end": 122.5879989318869,
+      "text": "degrees.",
+      "chapter": 1
+    },
+    {
+      "start": 122.84800106811737,
+      "end": 127.44799954223846,
+      "text": "The ratio is sine forty five divided by sine thirty, or square root of two.",
+      "chapter": 1
+    },
+    {
+      "start": 127.90799862671112,
+      "end": 130.16800076294157,
+      "text": "This is about one point four one four.",
+      "chapter": 1
+    },
+    {
+      "start": 130.16800076294157,
+      "end": 134.56799847412321,
+      "text": "If the surrounding medium is air approximated as index one, it is also the",
+      "chapter": 1
+    },
+    {
+      "start": 134.56799847412321,
+      "end": 136.12799984741423,
+      "text": "prism's approximate absolute index.",
+      "chapter": 1
+    },
+    {
+      "start": 136.76799923706267,
+      "end": 140.94799954223845,
+      "text": "In another surrounding medium, multiply by that medium's index to obtain the",
+      "chapter": 1
+    },
+    {
+      "start": 140.94799954223845,
+      "end": 141.68800122070525,
+      "text": "absolute prism index.",
+      "chapter": 1
+    },
+    {
+      "start": 142.46800000000212,
+      "end": 145.842360891491,
+      "text": "Do not use the minimum deviation formula when the given path is not at",
+      "chapter": 1
+    },
+    {
+      "start": 145.842360891491,
+      "end": 146.2280021362326,
+      "text": "minimum.",
+      "chapter": 1
+    },
+    {
+      "start": 146.7280021362326,
+      "end": 149.78799969482634,
+      "text": "And do not assume i equals e for every orientation.",
+      "chapter": 1
+    },
+    {
+      "start": 150.44800335693571,
+      "end": 153.90800244140837,
+      "text": "The equality is the special symmetry condition we earned by choosing the",
+      "chapter": 1
+    },
+    {
+      "start": 153.90800244140837,
+      "end": 154.92000000000408,
+      "text": "minimum path, not a universal prism rule.",
+      "chapter": 1
+    },
+    {
+      "start": 154.92000000000408,
+      "end": 156.599999947552,
+      "text": "Now reverse the problem.",
+      "chapter": 2
+    },
+    {
+      "start": 157.2599999141734,
+      "end": 160.53999988556316,
+      "text": "We know a prism's refractive index and want its minimum deviation.",
+      "chapter": 2
+    },
+    {
+      "start": 161.24000017166546,
+      "end": 165.76000015259197,
+      "text": "For a sixty degree glass prism in air with index one point five, the internal",
+      "chapter": 2
+    },
+    {
+      "start": 165.76000015259197,
+      "end": 167.53999988556316,
+      "text": "angle at symmetry is thirty degrees.",
+      "chapter": 2
+    },
+    {
+      "start": 168.26000015259197,
+      "end": 172.92000000000408,
+      "text": "Snell's law gives sine i equal to one point five times sine thirty, or zero",
+      "chapter": 2
+    },
+    {
+      "start": 172.92000000000408,
+      "end": 174.31999961853435,
+      "text": "point seven five.",
+      "chapter": 2
+    },
+    {
+      "start": 174.31999961853435,
+      "end": 177.26000015259197,
+      "text": "The incidence angle is about forty eight point six degrees.",
+      "chapter": 2
+    },
+    {
+      "start": 177.99999992371013,
+      "end": 182.39333335876873,
+      "text": "Minimum deviation is twice that angle minus sixty, approximately thirty seven",
+      "chapter": 2
+    },
+    {
+      "start": 182.39333335876873,
+      "end": 183.42000000000408,
+      "text": "point two degrees.",
+      "chapter": 2
+    },
+    {
+      "start": 184.18000022888592,
+      "end": 185.55999938965252,
+      "text": "Let's pause for an error check.",
+      "chapter": 2
+    },
+    {
+      "start": 186.12000076294353,
+      "end": 187.55999938965252,
+      "text": "Is the index ratio below one?",
+      "chapter": 2
+    },
+    {
+      "start": 188.00000183105877,
+      "end": 191.820001525883,
+      "text": "No, so the ray bends toward the normal on entering, consistent with an",
+      "chapter": 2
+    },
+    {
+      "start": 191.820001525883,
+      "end": 194.37999908447674,
+      "text": "incidence angle larger than the thirty degree internal angle.",
+      "chapter": 2
+    },
+    {
+      "start": 194.6400012207072,
+      "end": 196.67999832153728,
+      "text": "And is the sine argument physically allowed?",
+      "chapter": 2
+    },
+    {
+      "start": 197.19999877930096,
+      "end": 199.10000030517986,
+      "text": "Zero point seven five is below one.",
+      "chapter": 2
+    },
+    {
+      "start": 199.8399981689494,
+      "end": 199.9800013732951,
+      "text": "Good.",
+      "chapter": 2
+    },
+    {
+      "start": 200.51999847412517,
+      "end": 204.97487226828957,
+      "text": "In general, delta minimum equals twice the inverse sine of relative index",
+      "chapter": 2
+    },
+    {
+      "start": 204.97487226828957,
+      "end": 205.28000061035564,
+      "text": "times",
+      "chapter": 2
+    },
+    {
+      "start": 205.28000061035564,
+      "end": 207.69999877930096,
+      "text": "sine of half the prism angle, minus A.",
+      "chapter": 2
+    },
+    {
+      "start": 207.8999995422404,
+      "end": 212.18820510473415,
+      "text": "If that inverse sine argument exceeds one, the usual symmetric transmitted",
+      "chapter": 2
+    },
+    {
+      "start": 212.18820510473415,
+      "end": 212.42000000000408,
+      "text": "path",
+      "chapter": 2
+    },
+    {
+      "start": 212.42000000000408,
+      "end": 213.17999832153728,
+      "text": "cannot exist.",
+      "chapter": 2
+    },
+    {
+      "start": 213.96000091553142,
+      "end": 218.05999938965252,
+      "text": "A calculator error is telling us something physical, not asking for a creative",
+      "chapter": 2
+    },
+    {
+      "start": 218.05999938965252,
+      "end": 218.80000106811931,
+      "text": "replacement number.",
+      "chapter": 2
+    },
+    {
+      "start": 219.51999847412517,
+      "end": 221.1400012207072,
+      "text": "Keep degree and radian modes consistent.",
+      "chapter": 2
+    },
+    {
+      "start": 221.7599963378947,
+      "end": 224.6599978637736,
+      "text": "These angle relations do not require a small angle approximation.",
+      "chapter": 2
+    },
+    {
+      "start": 225.42000000000408,
+      "end": 229.29999725342205,
+      "text": "The thin prism shortcut coming next does, and we should not silently swap the",
+      "chapter": 2
+    },
+    {
+      "start": 229.29999725342205,
+      "end": 229.78000061035564,
+      "text": "two formulas.",
+      "chapter": 2
+    },
+    {
+      "start": 230.73600000000607,
+      "end": 236.17600005722653,
+      "text": "For a thin prism, with a small apex angle and sufficiently small incidence and",
+      "chapter": 3
+    },
+    {
+      "start": 236.17600005722653,
+      "end": 240.69600003815304,
+      "text": "refraction angles, Snell's law simplifies because sine theta is approximately",
+      "chapter": 3
+    },
+    {
+      "start": 240.69600003815304,
+      "end": 241.75600045776974,
+      "text": "theta in radians.",
+      "chapter": 3
+    },
+    {
+      "start": 242.47599977112424,
+      "end": 247.0559996948303,
+      "text": "At entry, i is approximately relative index times r one.",
+      "chapter": 3
+    },
+    {
+      "start": 247.0559996948303,
+      "end": 251.63599961853635,
+      "text": "At exit, e is approximately relative index times r two.",
+      "chapter": 3
+    },
+    {
+      "start": 251.63599961853635,
+      "end": 255.51600068665158,
+      "text": "Add the two equations and use r one plus r two equal to A.",
+      "chapter": 3
+    },
+    {
+      "start": 256.2360000000061,
+      "end": 261.3959998474182,
+      "text": "Subtract A, and we get deviation approximately relative index minus one, times",
+      "chapter": 3
+    },
+    {
+      "start": 261.3959998474182,
+      "end": 261.6159991607727,
+      "text": "A.",
+      "chapter": 3
+    },
+    {
+      "start": 262.57600015259396,
+      "end": 266.6559981689514,
+      "text": "So a small four degree prism with index one point five in air gives an",
+      "chapter": 3
+    },
+    {
+      "start": 266.6559981689514,
+      "end": 268.47600167847287,
+      "text": "approximate deviation of two degrees.",
+      "chapter": 3
+    },
+    {
+      "start": 269.0559996948303,
+      "end": 273.2960013732971,
+      "text": "We derived the relation using radians, but the proportional result works with",
+      "chapter": 3
+    },
+    {
+      "start": 273.2960013732971,
+      "end": 276.7960013732971,
+      "text": "degrees too when A and deviation use the same angular unit.",
+      "chapter": 3
+    },
+    {
+      "start": 277.31600183106076,
+      "end": 280.7159995422424,
+      "text": "This shortcut is not for the sixty degree prism from our earlier example.",
+      "chapter": 3
+    },
+    {
+      "start": 281.6160010681213,
+      "end": 284.22523169650174,
+      "text": "Applying it there would give thirty degrees instead of the more accurate",
+      "chapter": 3
+    },
+    {
+      "start": 284.22523169650174,
+      "end": 284.4426675822001,
+      "text": "thirty",
+      "chapter": 3
+    },
+    {
+      "start": 284.4426675822001,
+      "end": 285.81600183106076,
+      "text": "seven point two at minimum.",
+      "chapter": 3
+    },
+    {
+      "start": 286.35599893189084,
+      "end": 290.69599908447873,
+      "text": "The discrepancy is a warning about the approximation, not a contradiction in",
+      "chapter": 3
+    },
+    {
+      "start": 290.69599908447873,
+      "end": 291.01599877930295,
+      "text": "optics.",
+      "chapter": 3
+    },
+    {
+      "start": 291.7960013732971,
+      "end": 296.71600335693967,
+      "text": "If a JEE question explicitly says a thin prism and gives small angles, this",
+      "chapter": 3
+    },
+    {
+      "start": 296.71600335693967,
+      "end": 297.89600366211545,
+      "text": "relation can save time.",
+      "chapter": 3
+    },
+    {
+      "start": 298.636001525885,
+      "end": 301.81600183106076,
+      "text": "Otherwise use Snell's law and the actual prism geometry.",
+      "chapter": 3
+    },
+    {
+      "start": 302.49600213623654,
+      "end": 306.59600061035763,
+      "text": "The reason a larger index gives more deviation in this ordinary setup is that",
+      "chapter": 3
+    },
+    {
+      "start": 306.59600061035763,
+      "end": 309.6559981689514,
+      "text": "each interface bends the ray more relative to its normal.",
+      "chapter": 3
+    },
+    {
+      "start": 309.93600000000816,
+      "end": 313.8683078485717,
+      "text": "A prism can spread white light into colors because its refractive index",
+      "chapter": 4
+    },
+    {
+      "start": 313.8683078485717,
+      "end": 314.25600017166954,
+      "text": "depends",
+      "chapter": 4
+    },
+    {
+      "start": 314.25600017166954,
+      "end": 314.89600003815514,
+      "text": "on frequency.",
+      "chapter": 4
+    },
+    {
+      "start": 315.53599990464073,
+      "end": 320.0159999237142,
+      "text": "In the ordinary visible normal dispersion region of glass, violet has a larger",
+      "chapter": 4
+    },
+    {
+      "start": 320.0159999237142,
+      "end": 320.8160001144491,
+      "text": "index than red.",
+      "chapter": 4
+    },
+    {
+      "start": 321.8160001144491,
+      "end": 325.19600022889,
+      "text": "Violet is therefore deviated more in the usual prism arrangement.",
+      "chapter": 4
+    },
+    {
+      "start": 325.87599958039146,
+      "end": 328.43600000000816,
+      "text": "The prism is not changing red light into violet light.",
+      "chapter": 4
+    },
+    {
+      "start": 329.1360007629476,
+      "end": 333.2960006103597,
+      "text": "At stationary interfaces the frequency of each component stays the same.",
+      "chapter": 4
+    },
+    {
+      "start": 333.9760009155355,
+      "end": 336.5360003814779,
+      "text": "It redirects the components by different amounts.",
+      "chapter": 4
+    },
+    {
+      "start": 336.5360003814779,
+      "end": 342.1360007629476,
+      "text": "For a thin four degree prism, suppose red has index one point five zero and",
+      "chapter": 4
+    },
+    {
+      "start": 342.1360007629476,
+      "end": 344.9960013732992,
+      "text": "violet has index one point five two.",
+      "chapter": 4
+    },
+    {
+      "start": 344.9960013732992,
+      "end": 347.01600183106285,
+      "text": "Red deviation is approximately two degrees.",
+      "chapter": 4
+    },
+    {
+      "start": 347.9159995422445,
+      "end": 350.05599893189293,
+      "text": "Violet deviation is two point zero eight degrees.",
+      "chapter": 4
+    },
+    {
+      "start": 350.8559981689535,
+      "end": 353.7960006103597,
+      "text": "Their angular separation is zero point zero eight degrees.",
+      "chapter": 4
+    },
+    {
+      "start": 354.51600183106285,
+      "end": 357.19599832154137,
+      "text": "Small, but quite measurable with a suitable arrangement.",
+      "chapter": 4
+    },
+    {
+      "start": 358.3559981689535,
+      "end": 362.53599847412926,
+      "text": "That example also shows why we distinguish deviation of a single color from",
+      "chapter": 4
+    },
+    {
+      "start": 362.53599847412926,
+      "end": 364.05599893189293,
+      "text": "dispersion between two colors.",
+      "chapter": 4
+    },
+    {
+      "start": 364.4760009155355,
+      "end": 369.05599893189293,
+      "text": "If both indices increased equally, both deviations could change without",
+      "chapter": 4
+    },
+    {
+      "start": 369.05599893189293,
+      "end": 371.01600183106285,
+      "text": "changing their separation by the same amount.",
+      "chapter": 4
+    },
+    {
+      "start": 371.7960006103597,
+      "end": 376.2559996948324,
+      "text": "The violet more than red ordering describes ordinary normal dispersion, not",
+      "chapter": 4
+    },
+    {
+      "start": 376.2559996948324,
+      "end": 377.8959990844808,
+      "text": "every material at every frequency.",
+      "chapter": 4
+    },
+    {
+      "start": 378.6560012207113,
+      "end": 380.8760024414144,
+      "text": "Near absorption bands, behavior can differ.",
+      "chapter": 4
+    },
+    {
+      "start": 381.69600213623863,
+      "end": 385.236003051766,
+      "text": "Finally, remember that total internal reflection and dispersion are different",
+      "chapter": 4
+    },
+    {
+      "start": 385.236003051766,
+      "end": 389.51600183106285,
+      "text": "effects: one concerns whether a transmitted ray exists, while the other",
+      "chapter": 4
+    },
+    {
+      "start": 389.51600183106285,
+      "end": 392.11600030518395,
+      "text": "concerns how index varies across spectral components.",
+      "chapter": 4
+    },
+    {
+      "start": 392.6560012207113,
+      "end": 397.5759993896566,
+      "text": "Our JEE routine is to identify the regime, label angles, and apply the",
+      "chapter": 4
+    },
+    {
+      "start": 397.5759993896566,
+      "end": 399.6560012207113,
+      "text": "appropriate exact or approximate relation.",
+      "chapter": 4
+    }
+  ]
+}

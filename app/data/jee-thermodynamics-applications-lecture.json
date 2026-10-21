@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Thermodynamics: paths, work and reversible cycles",
+  "sources": [
+    {
+      "title": "Official NTA JEE Main 2026 Physics syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: First law of thermodynamics",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics"
+    },
+    {
+      "title": "OpenStax: Adiabatic processes",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/3-6-adiabatic-processes-for-an-ideal-gas"
+    },
+    {
+      "title": "OpenStax: Carnot cycle",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Temperature, heat and internal energy are not synonyms; Same endpoints, different work",
+      "formula": "delta U = Q - W_by; ideal gas delta U = n C_V delta T; W_by = integral P_external dV; quasistatic path: W_by = integral P_gas dV",
+      "points": [
+        "Temperature, heat and internal energy are not synonyms",
+        "Same endpoints, different work"
+      ],
+      "script": "Welcome back. In this class we will work through first-law signs, isothermal and adiabatic derivations, path dependence and second-law limits. If systems A and B are each in thermal equilibrium with C, they are in thermal equilibrium with one another. This zeroth-law idea makes a thermometer meaningful: it can compare temperature after reaching equilibrium without measuring every molecule. Temperature is not the amount of heat stored. Heat names energy transferred because of a temperature difference, while internal energy is a state property of the system. Choose work by the gas as positive. The first law then reads the change in internal energy equals Q minus work by the gas. Heat entering is positive Q; expansion work is usually positive work by the gas, while compression work is negative. If 500 J enters and the gas does 200 J of work, internal energy increases by 300 J. The sign convention must be stated because another text may use work on the gas instead. For an ideal gas with fixed composition, internal energy depends on temperature, so equal endpoint temperatures give equal endpoint internal energies. The work done by a gas against its surroundings is the integral of external pressure with respect to volume. On a mechanically quasistatic path the gas pressure is arbitrarily close to the external pressure, so the plotted equilibrium P-V curve can be used. A constant pressure expansion gives the rectangular area P the volume change. An isochoric step has zero volume change and therefore zero boundary work, even when pressure changes. Take endpoints A at 0.001 cubic metres and 100000 Pa, and C at 0.002 cubic metres and 200000 Pa. Expand first at 100000 Pa, then raise pressure at constant volume: work is 100 J. Raise pressure first, then expand at 200000 Pa: work is 200 J. The endpoints and the change in internal energy are the same, but Q differs by 100 J. Heat and work are path quantities. Do not use an endpoint pressure in P the volume change when the actual pressure changes along the path."
+    },
+    {
+      "title": "Derive the reversible isothermal result; Adiabatic is not automatically reversible",
+      "formula": "Reversible ideal-gas isothermal: W_by = nRT ln(V_final/V_initial); Q = W_by; Reversible adiabatic: T V^(gamma-1) = constant; P V^gamma = constant; W_by = n C_V(T_i-T_f)",
+      "points": [
+        "Derive the reversible isothermal result",
+        "Adiabatic is not automatically reversible"
+      ],
+      "script": "For a fixed amount of ideal gas held at constant absolute temperature T, equilibrium pressure is nRT/V. Integrate this pressure from initial to final volume on a reversible isothermal path. Since nRT is constant, work by the gas is nRT ln(V_final/V_initial). Expansion has a positive logarithm; compression has a negative one. The result needs the ideal gas and reversible or quasistatic isothermal model, not just an arbitrary process whose endpoints happen to have the same temperature. Ideal gas internal energy is unchanged, so the first law gives Q equals work by the gas. Isothermal does not mean no heat transfer: heat must enter during reversible expansion to maintain temperature. For one mole at 300 K expanding from V to 2V, use R equals 8.314 and ln 2 equals 0.693. Work and heat are approximately 1729 J. In contrast, ideal-gas free expansion into an insulated vacuum has zero external-pressure work and zero heat, but is irreversible even though its temperature remains unchanged in this model. Adiabatic means Q equals 0. For a reversible adiabatic ideal-gas process, n C V dT equals -P dV. Substitute P equals nRT/V and divide by T: C V dT/T equals -R dV/V. If heat capacities are constant, integrate to obtain T V^(R/C V) constant. Because C P minus C V equals R and gamma equals C P/C V, the exponent is gamma minus one. Combining with the gas law gives P V^gamma constant. For a monatomic ideal gas gamma is 5/3. Doubling the volume lowers temperature to T_initial divided by 2^(2/3), so 300 K becomes about 189 K. Its adiabatic work is n C V(T_initial-T_final). Energy comes from internal energy, not incoming heat. Irreversible adiabatic processes need the first law and actual external work; the reversible P V^gamma relation cannot be assumed. Constant heat capacities are an additional model condition, not a promise for every real gas over every temperature range."
+    },
+    {
+      "title": "A cycle returns energy, not heat and work, to zero",
+      "formula": "Cycle: delta U = 0; net Q = net W_by; Carnot efficiency = 1 - T_cold/T_hot",
+      "points": [
+        "A cycle returns energy, not heat and work, to zero"
+      ],
+      "script": "After a complete cycle the system returns to its initial state, so net the change in internal energy is zero and net Q equals net work by the gas. On a P-V diagram a clockwise quasistatic loop usually represents positive work by the gas; the enclosed signed area gives that work. For a rectangular loop between volumes 0.001 and 0.002 cubic metres and pressures 100000 and 200000 Pa, clockwise work is 100 J. Reversing the cycle reverses the sign. The second law prevents a cyclic engine from converting heat from a single reservoir entirely into work without other effects. A reversible Carnot engine between reservoir temperatures T_hot and T_cold has maximum efficiency 1-T_cold/T_hot, using kelvin. At 600 K and 300 K the limit is 50 percent. A real engine is less efficient under the same two-reservoir conditions. Reversibility requires no entropy production and no finite-gradient dissipative transfer; merely running a process slowly does not remove friction or make it reversible."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A gas receives 500 J heat and does 200 J work. Its delta U is:",
+      "options": [
+        "700 J",
+        "-300 J",
+        "300 J",
+        "-700 J"
+      ],
+      "answer": 2,
+      "explanation": "With work by the gas positive, the first law gives delta U = Q-W_by = 500-200 = +300 J."
+    },
+    {
+      "question": "For a reversible isothermal expansion of an ideal gas:",
+      "options": [
+        "Q = W_by",
+        "Q = 0 always",
+        "W_by = 0 always",
+        "Temperature must increase"
+      ],
+      "answer": 0,
+      "explanation": "Ideal gas internal energy depends on temperature; constant temperature gives delta U = 0, hence Q = W_by."
+    },
+    {
+      "question": "Which condition is insufficient by itself to use P V^gamma = constant?",
+      "options": [
+        "Ideal gas",
+        "Constant heat capacities",
+        "Reversibility",
+        "No heat exchange"
+      ],
+      "answer": 3,
+      "explanation": "Adiabatic alone does not guarantee reversibility. The relation requires the reversible ideal-gas model with constant gamma."
+    },
+    {
+      "question": "A reversible monatomic ideal gas doubles its volume adiabatically. T_final/T_initial is:",
+      "options": [
+        "1/2",
+        "2^(-2/3)",
+        "2^(2/3)",
+        "1"
+      ],
+      "answer": 1,
+      "explanation": "T V^(gamma-1) stays constant. For gamma = 5/3, the temperature ratio is 2^(-2/3), less than one."
+    },
+    {
+      "question": "A Carnot engine works between 600 K and 300 K. Its efficiency is:",
+      "options": [
+        "25%",
+        "100%",
+        "50%",
+        "75%"
+      ],
+      "answer": 2,
+      "explanation": "The reversible two-reservoir limit is 1-T_cold/T_hot = 1-300/600 = 0.50, or 50 percent."
+    }
+  ]
+}

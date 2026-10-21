@@ -1,0 +1,391 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Chemical thermodynamics: energy, direction and equilibrium",
+  "subject": "Chemistry",
+  "unit": 4,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 Chemistry syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: enthalpy and Hess's law",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-3-enthalpy"
+    },
+    {
+      "title": "OpenStax: Gibbs energy",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-4-free-energy"
+    },
+    {
+      "title": "OpenStax: calorimetry",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-2-calorimetry"
+    },
+    {
+      "title": "OpenStax: entropy",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-2-entropy"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Choose the system and account for energy",
+      "formula": "ΔU = q + w; w = −Pext ΔV",
+      "points": [
+        "Heat absorbed is positive; expansion work on the system is negative.",
+        "1 L bar = 100 J; w = −2 × 1 × 100 = −200 J.",
+        "Absorb 500 J and do 200 J of work: ΔU = +300 J."
+      ],
+      "script": "Welcome to Chemical Thermodynamics. This recorded Chemistry class uses an AI generated Marin voice. Begin every energy calculation by choosing the system. An open system exchanges matter and energy with its surroundings. A closed system exchanges energy but not matter. An isolated system exchanges neither. Internal energy, enthalpy and entropy are state functions: their changes depend on initial and final states. Heat and work describe energy transfer along a path. Temperature and pressure are intensive properties; total volume and total internal energy are extensive. In the Chemistry convention, the first law is change in internal energy equals heat plus work done on the system. Heat entering is positive. Compression work is positive, while expansion work is negative. For expansion against a constant external pressure, work is minus external pressure times the volume increase. Consider a closed system that absorbs five hundred joules and expands by one litre against two bar. One litre bar equals one hundred joules. The work is therefore minus two hundred joules, and the internal energy increases by three hundred joules. The system gained heat but returned some energy to the surroundings as work. Notice that external pressure appears in this work expression. If it varies, the appropriate pressure volume integral is needed. Free expansion against zero external pressure does no pressure volume work. Adiabatic means no heat transfer; it does not automatically mean constant temperature. Isothermal means constant temperature. Isochoric means constant volume, and isobaric means constant pressure. For an ideal gas, internal energy depends only on temperature, so an isothermal change has zero internal energy change even though heat and work may each be nonzero. Keep the signs tied to the chosen system, and always convert litre bar into energy units before adding heat and work."
+    },
+    {
+      "title": "Connect enthalpy, heat and gas stoichiometry",
+      "formula": "H = U + PV; ΔH = ΔU + Δng RT",
+      "points": [
+        "At constant pressure, qp = ΔH for a closed system with only PV work.",
+        "N₂ + 3H₂ → 2NH₃: Δng = 2 − 4 = −2.",
+        "At 300 K and ΔU = −90.0 kJ: ΔH ≈ −95.0 kJ."
+      ],
+      "script": "Enthalpy is defined as internal energy plus pressure times volume. For a closed system undergoing only pressure volume work at constant pressure, the heat transferred equals the enthalpy change. At constant volume, with no other work, heat equals the internal energy change. The conditions are part of the result. An exothermic process has a negative enthalpy change, while an endothermic process has a positive one. For ideal gaseous reactants and products at the same temperature, the gas contribution gives change in enthalpy equals change in internal energy plus change in gaseous mole number times R T. In ordinary reaction calculations this form neglects condensed phase pressure volume contributions. Count only gaseous species when finding the gaseous mole change. For one nitrogen plus three hydrogen forming two ammonia, all gases, the change is two minus four, or minus two moles per reaction as written. Suppose the internal energy change is minus ninety point zero kilojoules for that reaction amount at three hundred kelvin. Use R equal to zero point zero zero eight three one four kilojoules per mole kelvin. The correction is minus two times R times three hundred, about minus four point nine nine kilojoules. The enthalpy change is about minus ninety five point zero kilojoules. Reversing the reaction reverses both energy changes and the gaseous mole change. A separate useful relation for one mole of an ideal gas is molar heat capacity at constant pressure minus molar heat capacity at constant volume equals R. It is not a universal identity for liquids, solids or real gases. Heat capacity relates heat to temperature change under specified conditions; if it varies appreciably with temperature, use an integral instead of a constant value. Check the phase labels and the reaction amount before substituting numbers."
+    },
+    {
+      "title": "Build Hess cycles and interpret enthalpy data",
+      "formula": "ΔHreaction = ΣνΔHf°(products) − ΣνΔHf°(reactants)",
+      "points": [
+        "Reverse a reaction → reverse its enthalpy sign.",
+        "C + O₂ → CO₂: −394; reverse CO oxidation: +283 kJ.",
+        "Adding gives C + ½O₂ → CO: ΔH = −111 kJ."
+      ],
+      "script": "Hess's law follows from enthalpy being a state function. A reaction may be assembled from several steps; adding their enthalpy changes gives the same overall change. Reverse a step and reverse its sign. Multiply an equation by a number and multiply its enthalpy by that number. Here is an illustrative cycle. Carbon as graphite plus oxygen forming carbon dioxide has enthalpy minus three hundred ninety four kilojoules per mole of reaction. Carbon monoxide plus half an oxygen forming carbon dioxide has enthalpy minus two hundred eighty three. We want graphite plus half an oxygen forming carbon monoxide. Keep the first equation and reverse the second. Carbon dioxide cancels, leaving the target reaction. Add minus three hundred ninety four to plus two hundred eighty three to obtain minus one hundred eleven kilojoules. These rounded values illustrate the calculation; phases and reference conditions must match. Standard formation enthalpy refers to forming one mole of a substance from its elements in their reference states. The standard formation enthalpy of an element in its reference state is assigned zero; this does not say that its internal energy or entropy is zero. Multiply each formation enthalpy by its stoichiometric coefficient, then subtract the reactant sum from the product sum. Combustion enthalpy concerns complete burning of the specified amount, usually one mole, with product phases stated. Atomization creates gaseous atoms. Sublimation converts solid to gas. Ionization removes an electron from a gaseous species, while hydration brings gaseous ions into water. Dissolution can combine lattice separation and solvation effects. For a gas phase bond estimate, add energies of bonds broken and subtract energies of bonds formed. Average bond enthalpies give an approximation because bond environments differ. Do not mix an average gas bond estimate with a liquid phase reaction without accounting for phase changes."
+    },
+    {
+      "title": "Use entropy and temperature to predict direction",
+      "formula": "ΔG = ΔH − TΔS; Tcross = ΔH/ΔS",
+      "points": [
+        "Spontaneous change: ΔSuniverse > 0; system entropy alone is insufficient.",
+        "ΔH = −40 kJ; ΔS = −0.100 kJ/K → Tcross = 400 K.",
+        "At 300 K: ΔG = −10 kJ; at 500 K: ΔG = +10 kJ."
+      ],
+      "script": "Energy conservation alone does not choose the direction of a process. Entropy supplies the second law criterion: a spontaneous change increases the total entropy of the system and surroundings. The system's entropy may decrease if the surroundings gain more. A reversible ideal limit has zero total entropy production. For a reversible isothermal path, entropy change is reversible heat divided by temperature. More generally, integrate reversible heat divided by temperature along a suitable path between the states. Entropy is a state function, even when the actual path is irreversible. For the usual closed system at constant temperature and pressure, without imposed non pressure volume work, a negative Gibbs energy change identifies a thermodynamically favourable direction. Gibbs energy change is enthalpy change minus temperature times entropy change. Temperature must be in kelvin. Match the energy units before subtracting. Suppose enthalpy change is minus forty kilojoules and entropy change is minus one hundred joules per kelvin. Convert the entropy to minus zero point one zero zero kilojoules per kelvin. At three hundred kelvin, Gibbs energy change is minus forty plus thirty, or minus ten kilojoules. At five hundred kelvin, it is minus forty plus fifty, or plus ten. If both enthalpy and entropy changes are approximately temperature independent over the range, the crossover is four hundred kelvin. This exothermic process with decreasing entropy is favoured at lower temperature. Positive enthalpy and positive entropy favour higher temperature. Negative enthalpy and positive entropy favour the forward direction throughout the temperature range where those signs hold. The opposite pair does not. Finally, favourable does not mean fast. A large activation barrier can make a thermodynamically favourable reaction very slow. Keep the direction question separate from the kinetics question."
+    },
+    {
+      "title": "Distinguish standard Gibbs energy and equilibrium",
+      "formula": "ΔG = ΔG° + RT ln Q; ΔG° = −RT ln K",
+      "points": [
+        "Q describes the current mixture; K describes equilibrium at that temperature.",
+        "At 300 K, ΔG° ≈ −5.744 kJ/mol gives K ≈ 10.",
+        "Q < K: forward favoured; Q > K: reverse favoured."
+      ],
+      "script": "The standard Gibbs energy change and the Gibbs energy change for the current mixture are different quantities. The connection is Gibbs energy change equals standard Gibbs energy change plus R T times the natural logarithm of the reaction quotient Q. The rigorous quotient uses dimensionless activities relative to standard states. For ideal dilute solutions and ideal gases, concentration or pressure ratios provide useful approximations. At equilibrium, the reaction Gibbs energy change is zero and Q equals the equilibrium constant K. Substitution gives standard Gibbs energy change equals minus R T times the natural logarithm of K. Thus a negative standard Gibbs energy change implies K greater than one at that temperature. It does not guarantee that every possible mixture will proceed forward. Take standard Gibbs energy change approximately minus five point seven four four kilojoules per mole at three hundred kelvin. With R equal to zero point zero zero eight three one four kilojoules per mole kelvin, the natural logarithm of K is about two point three zero three. K is approximately ten. If Q is one, the forward direction is favoured. If Q is one hundred, Gibbs energy change is positive, about plus five point seven four kilojoules per mole, and the reverse direction is favoured. If Q is ten, the mixture is at equilibrium. Combining the equations gives Gibbs energy change equals R T times the natural logarithm of Q divided by K. This directly connects composition to direction. Standard conditions do not automatically mean two hundred ninety eight kelvin; always read the stated temperature. Finish with a short checklist: define the system, choose the correct work sign, preserve reaction coefficients and phases, convert entropy units, and distinguish Q from K. Use the worked notes and six original practice questions. This is the core Unit four foundation; detailed enthalpy cycles, entropy integrals and wider mixed problems remain for further study."
+    },
+    {
+      "title": "Formation and bond-enthalpy calculations",
+      "formula": "ΔH°r = ΣνΔH°f(products) − ΣνΔH°f(reactants)",
+      "script": "Formation enthalpies let us assemble a reaction without measuring it directly. Use the balanced coefficients and the physical states in the data. For methane combustion to carbon dioxide gas and liquid water, take illustrative standard formation enthalpies in kilojoules per mole: methane minus seventy five, carbon dioxide minus three hundred ninety four, and liquid water minus two hundred eighty six. Oxygen in its reference state contributes zero. Products contribute minus three hundred ninety four plus twice minus two hundred eighty six, giving minus nine hundred sixty six. Subtract the reactant contribution of minus seventy five. The reaction enthalpy is minus eight hundred ninety one kilojoules per mole of methane for these rounded data. Changing the product to water vapour changes the answer. Average bond enthalpies instead estimate energy for gas phase bonds broken minus bonds formed. They are approximate and do not automatically include condensation or solid lattice effects. An element's zero standard formation enthalpy applies to its reference state, not to every allotrope, gaseous atom or ion. Always label the amount and phase beside a thermochemical result.",
+      "points": [
+        "Products · −394 + 2(−286) · −966",
+        "Reactants · −75 + 2(0) · −75",
+        "Products − reactants · −966 − (−75) · −891 kJ mol⁻¹"
+      ],
+      "board": {
+        "heading": "Formation and bond-enthalpy calculations",
+        "columns": [
+          "Step",
+          "Supplied data / kJ mol⁻¹",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Products",
+            "−394 + 2(−286)",
+            "−966"
+          ],
+          [
+            "Reactants",
+            "−75 + 2(0)",
+            "−75"
+          ],
+          [
+            "Products − reactants",
+            "−966 − (−75)",
+            "−891 kJ mol⁻¹"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Lattice dissociation and hydration",
+      "formula": "ΔHsolution = ΔHlattice(dissociation) + ΣΔHhydration",
+      "script": "An ionic dissolution cycle separates processes that are easily confused. First imagine pulling the solid into separated gaseous ions. Define this lattice dissociation enthalpy as positive. Then hydrate those gaseous ions to the chosen aqueous reference states; hydration enthalpies are normally negative. Adding both stages gives the enthalpy of solution for matching endpoints and concentration conventions. With illustrative values of plus seven hundred eighty kilojoules per mole for lattice dissociation and minus seven hundred fifty for total hydration, dissolution has enthalpy plus thirty kilojoules per mole. A positive result does not by itself prove that dissolution is impossible, because the Gibbs energy also contains an entropy contribution. Some tables instead define lattice enthalpy for forming the solid from gaseous ions. That is the opposite process and has the opposite sign. Never insert a number until its process is clear. Atomization, ionization and electron attachment provide further steps in a full Born Haber cycle. Keep each species and charge balanced when adding them. This two stage example isolates dissolution bookkeeping rather than claiming to reproduce every step of a complete formation cycle.",
+      "points": [
+        "Lattice dissociation · +780 · Solid → gaseous ions",
+        "Total hydration · −750 · Gas ions → aqueous ions",
+        "Dissolution · +30 · Sum matching endpoints"
+      ],
+      "board": {
+        "heading": "Lattice dissociation and hydration",
+        "columns": [
+          "Process",
+          "Illustrative ΔH / kJ mol⁻¹",
+          "Direction"
+        ],
+        "rows": [
+          [
+            "Lattice dissociation",
+            "+780",
+            "Solid → gaseous ions"
+          ],
+          [
+            "Total hydration",
+            "−750",
+            "Gas ions → aqueous ions"
+          ],
+          [
+            "Dissolution",
+            "+30",
+            "Sum matching endpoints"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Calorimetry with the vessel included",
+      "formula": "qsurroundings = (m c + Ccal) ΔT",
+      "script": "A calorimeter records a temperature change in material surrounding the reacting system. Include every heat capacity specified in the problem. Suppose one hundred grams of solution has specific heat capacity four point two joules per gram kelvin, and the calorimeter contributes eighty joules per kelvin. The combined heat capacity is four hundred twenty plus eighty, or five hundred joules per kelvin. A temperature rise of two kelvin means the measured surroundings gain one thousand joules. If heat loss is negligible, the reaction releases one thousand joules. For zero point zero five zero mole reacting as written, the molar heat is minus twenty kilojoules per mole. The negative sign belongs to the reaction, while the solution and vessel gained heat. At approximately constant pressure with only pressure volume work, the reaction heat corresponds to enthalpy change. In a rigid bomb calorimeter, the corresponding constant volume heat gives internal energy change; convert to enthalpy when the gas mole correction is required. Check whether a supplied calorimeter constant already includes the solution before adding its heat capacity again.",
+      "points": [
+        "Total heat capacity · 100 × 4.2 + 80 · 500 J K⁻¹",
+        "Surroundings heat · 500 × 2 · +1000 J",
+        "Per mole reaction · −1.00 / 0.050 · −20 kJ mol⁻¹"
+      ],
+      "board": {
+        "heading": "Calorimetry with the vessel included",
+        "columns": [
+          "Quantity",
+          "Calculation",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Total heat capacity",
+            "100 × 4.2 + 80",
+            "500 J K⁻¹"
+          ],
+          [
+            "Surroundings heat",
+            "500 × 2",
+            "+1000 J"
+          ],
+          [
+            "Per mole reaction",
+            "−1.00 / 0.050",
+            "−20 kJ mol⁻¹"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Entropy from a reversible reference path",
+      "formula": "ΔS = qrev/T; ΔStransition = ΔHtransition/Ttransition",
+      "script": "Entropy change must be evaluated using a reversible reference path between the same endpoints. Heat divided by temperature is not a universal expression for an arbitrary irreversible transfer. At an equilibrium phase transition at constant temperature and pressure, the molar entropy change is the molar transition enthalpy divided by that temperature. For melting with illustrative enthalpy six kilojoules per mole at three hundred kelvin, the entropy increase is twenty joules per mole kelvin. Freezing between the reverse endpoints gives minus twenty. For warming a substance at constant pressure with approximately constant molar heat capacity, integrate heat capacity divided by temperature. The result is molar heat capacity times the natural logarithm of final temperature divided by initial temperature. With thirty joules per mole kelvin and warming from three hundred to six hundred kelvin, the increase is thirty times the natural logarithm of two, about twenty point eight joules per mole kelvin. Both temperatures must be absolute. If heat capacity varies appreciably, retain it inside the integral rather than reusing the constant value shortcut.",
+      "points": [
+        "Melting at equilibrium · 6000 / 300 · +20.0",
+        "Reverse freezing · −6000 / 300 · −20.0",
+        "Constant Cp warming · 30 ln(600/300) · +20.8"
+      ],
+      "board": {
+        "heading": "Entropy from a reversible reference path",
+        "columns": [
+          "Process",
+          "Calculation",
+          "ΔS / J mol⁻¹ K⁻¹"
+        ],
+        "rows": [
+          [
+            "Melting at equilibrium",
+            "6000 / 300",
+            "+20.0"
+          ],
+          [
+            "Reverse freezing",
+            "−6000 / 300",
+            "−20.0"
+          ],
+          [
+            "Constant Cp warming",
+            "30 ln(600/300)",
+            "+20.8"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "System, surroundings and the second law",
+      "formula": "ΔSuniverse = ΔSsystem + ΔSsurroundings",
+      "script": "A system can lose entropy while a spontaneous process increases the total entropy of system and surroundings. Consider an illustrative process at three hundred kelvin and constant pressure that releases six kilojoules per mole into a large thermal reservoir. Assume only pressure volume work and negligible changes elsewhere. The reservoir receives six thousand joules per mole, so its entropy increases by twenty joules per mole kelvin. If the system entropy decreases by ten joules per mole kelvin, the total increases by ten. The process is thermodynamically favourable under those stated conditions. Its Gibbs energy change is minus six kilojoules minus three hundred times minus zero point zero one zero kilojoules per kelvin, giving minus three kilojoules per mole. Negative temperature times the universe entropy change gives the same result under these constraints. The reservoir temperature is effectively constant; do not divide a large varying temperature heat transfer by one arbitrary temperature. This example also shows why exothermic and spontaneous are different labels. Identify the surroundings, constraints and entropy contribution before using the sign of heat as a direction test.",
+      "points": [
+        "Surroundings entropy · +6000 / 300 · +20 J mol⁻¹ K⁻¹",
+        "Universe entropy · −10 + 20 · +10 J mol⁻¹ K⁻¹",
+        "System Gibbs change · −6 − 300(−0.010) · −3 kJ mol⁻¹"
+      ],
+      "board": {
+        "heading": "System, surroundings and the second law",
+        "columns": [
+          "Quantity",
+          "Calculation",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Surroundings entropy",
+            "+6000 / 300",
+            "+20 J mol⁻¹ K⁻¹"
+          ],
+          [
+            "Universe entropy",
+            "−10 + 20",
+            "+10 J mol⁻¹ K⁻¹"
+          ],
+          [
+            "System Gibbs change",
+            "−6 − 300(−0.010)",
+            "−3 kJ mol⁻¹"
+          ]
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "In the Chemistry convention, expansion work against positive external pressure is:",
+      "options": [
+        "Positive",
+        "Negative",
+        "Always zero",
+        "A state function"
+      ],
+      "answer": 1,
+      "explanation": "Expansion has positive Delta V, so work on the system w = -P_external Delta V is negative."
+    },
+    {
+      "question": "A system absorbs 100 J and has 40 J of work done on it. Delta U is:",
+      "options": [
+        "60 J",
+        "-140 J",
+        "140 J",
+        "-60 J"
+      ],
+      "answer": 2,
+      "explanation": "Both incoming transfers are positive: Delta U = q + w = 100 + 40 = 140 J."
+    },
+    {
+      "question": "For a closed system at constant pressure with only PV work, transferred heat equals:",
+      "options": [
+        "Delta H",
+        "Delta G",
+        "Every change in entropy",
+        "Zero in every reaction"
+      ],
+      "answer": 0,
+      "explanation": "Under these constraints, q_p = Delta H; the constraints are essential to this equality."
+    },
+    {
+      "question": "Reversing a thermochemical equation changes its Delta H by:",
+      "options": [
+        "Squaring it",
+        "Keeping its sign",
+        "Setting it to zero",
+        "Reversing its sign"
+      ],
+      "answer": 3,
+      "explanation": "Returning between the same endpoint states reverses the enthalpy difference."
+    },
+    {
+      "question": "Delta H < 0 and Delta S < 0 favour negative Delta G mainly at:",
+      "options": [
+        "Higher temperatures only",
+        "Lower temperatures",
+        "All temperatures necessarily",
+        "No temperature ever"
+      ],
+      "answer": 1,
+      "explanation": "The positive -T Delta S contribution grows with temperature and can overcome the negative enthalpy term."
+    },
+    {
+      "question": "At a given temperature, negative Delta G_standard implies:",
+      "options": [
+        "K = 0",
+        "K < 1",
+        "K > 1",
+        "Every initial mixture has negative actual Delta G"
+      ],
+      "answer": 2,
+      "explanation": "Delta G_standard = -RT ln K makes ln K positive, but actual Delta G also depends on Q."
+    },
+    {
+      "question": "With the supplied methane combustion formation data, products sum to −966 and reactants to −75 kJ/mol. ΔH is:",
+      "options": [
+        "−1041 kJ/mol",
+        "−891 kJ/mol",
+        "+891 kJ/mol",
+        "−75 kJ/mol"
+      ],
+      "answer": 1,
+      "explanation": "Subtract the reactant sum: −966 − (−75) = −891 kJ/mol."
+    },
+    {
+      "question": "Lattice dissociation +780 and total hydration −750 kJ/mol give dissolution enthalpy:",
+      "options": [
+        "−1530 kJ/mol",
+        "−30 kJ/mol",
+        "+30 kJ/mol",
+        "+1530 kJ/mol"
+      ],
+      "answer": 2,
+      "explanation": "Add the stated processes with matching endpoints: 780 − 750 = 30."
+    },
+    {
+      "question": "A combined heat capacity of 500 J/K warms by 2 K. The surroundings absorb:",
+      "options": [
+        "1000 J",
+        "250 J",
+        "−1000 J",
+        "500 J"
+      ],
+      "answer": 0,
+      "explanation": "The surroundings gain heat: q = C ΔT = 500 × 2 = +1000 J."
+    },
+    {
+      "question": "Melting enthalpy 6.00 kJ/mol at equilibrium at 300 K gives entropy change:",
+      "options": [
+        "−20 J/(mol K)",
+        "1800 J/(mol K)",
+        "2 J/(mol K)",
+        "+20 J/(mol K)"
+      ],
+      "answer": 3,
+      "explanation": "Use 6000 J/mol divided by 300 K."
+    },
+    {
+      "question": "Constant molar Cp = 30 J/(mol K), warming from 300 to 600 K, gives ΔS approximately:",
+      "options": [
+        "30 J/(mol K)",
+        "20.8 J/(mol K)",
+        "−20.8 J/(mol K)",
+        "9000 J/(mol K)"
+      ],
+      "answer": 1,
+      "explanation": "ΔS = Cp ln(T2/T1) = 30 ln 2 ≈ 20.8."
+    },
+    {
+      "question": "At 300 K, ΔH = −6 kJ/mol and ΔSsystem = −10 J/(mol K). ΔG is:",
+      "options": [
+        "+3 kJ/mol",
+        "−9 kJ/mol",
+        "−3 kJ/mol",
+        "+6 kJ/mol"
+      ],
+      "answer": 2,
+      "explanation": "Convert entropy to −0.010 kJ/(mol K): −6 − 300(−0.010) = −3."
+    }
+  ]
+}

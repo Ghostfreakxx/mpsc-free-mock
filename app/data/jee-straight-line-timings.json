@@ -1,0 +1,615 @@
+{
+  "duration": 350.0400000000088,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 64.46400000000155
+    },
+    {
+      "start": 64.46400000000155,
+      "end": 126.576000000003
+    },
+    {
+      "start": 126.576000000003,
+      "end": 192.84000000000464
+    },
+    {
+      "start": 192.84000000000464,
+      "end": 267.24000000000655
+    },
+    {
+      "start": 267.24000000000655,
+      "end": 350.0400000000088
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.7999999523162842,
+      "text": "Welcome to Straight line Motion.",
+      "chapter": 0
+    },
+    {
+      "start": 2.619999885559082,
+      "end": 6.980000019073486,
+      "text": "Let us begin with the decision that makes every later equation easier: choose a",
+      "chapter": 0
+    },
+    {
+      "start": 6.980000019073486,
+      "end": 8.779999732971191,
+      "text": "reference point and a positive direction.",
+      "chapter": 0
+    },
+    {
+      "start": 9.920000076293945,
+      "end": 13.760000228881836,
+      "text": "Imagine a bus stop at the origin, and call motion to the right positive.",
+      "chapter": 0
+    },
+    {
+      "start": 14.600000381469727,
+      "end": 18.540000915527344,
+      "text": "A position of plus eighty metres means the bus is eighty metres to the right;",
+      "chapter": 0
+    },
+    {
+      "start": 19.34000015258789,
+      "end": 22.18000030517578,
+      "text": "minus thirty metres means it is thirty metres to the left.",
+      "chapter": 0
+    },
+    {
+      "start": 22.979999542236328,
+      "end": 25.799999237060547,
+      "text": "The sign is information, not a judgment.",
+      "chapter": 0
+    },
+    {
+      "start": 25.799999237060547,
+      "end": 28.520000457763672,
+      "text": "Now watch the difference between distance and displacement.",
+      "chapter": 0
+    },
+    {
+      "start": 29.6200008392334,
+      "end": 32.959999084472656,
+      "text": "Suppose the bus travels eighty metres right, then thirty metres back.",
+      "chapter": 0
+    },
+    {
+      "start": 33.97999954223633,
+      "end": 35.91999816894531,
+      "text": "Pause and predict: what are the two answers?",
+      "chapter": 0
+    },
+    {
+      "start": 36.779998779296875,
+      "end": 40.29999923706055,
+      "text": "The total path is one hundred and ten metres, so that is the distance.",
+      "chapter": 0
+    },
+    {
+      "start": 40.79999923706055,
+      "end": 44.900001525878906,
+      "text": "The final position is fifty metres to the right of the start, so the",
+      "chapter": 0
+    },
+    {
+      "start": 44.900001525878906,
+      "end": 46.459999084472656,
+      "text": "displacement is plus fifty metres.",
+      "chapter": 0
+    },
+    {
+      "start": 47.099998474121094,
+      "end": 51.20000076293945,
+      "text": "In symbols, displacement is final position minus initial position.",
+      "chapter": 0
+    },
+    {
+      "start": 52.2599983215332,
+      "end": 56.939998626708984,
+      "text": "JEE questions often place these two ideas side by side, so always write both",
+      "chapter": 0
+    },
+    {
+      "start": 56.939998626708984,
+      "end": 58.15999984741211,
+      "text": "before calculating further.",
+      "chapter": 0
+    },
+    {
+      "start": 59.13999938964844,
+      "end": 63.400001525878906,
+      "text": "Distance is a scalar path length; displacement is a signed change in position.",
+      "chapter": 0
+    },
+    {
+      "start": 64.46400000000155,
+      "end": 67.30399991417086,
+      "text": "Now let us turn position into a rate of motion.",
+      "chapter": 1
+    },
+    {
+      "start": 68.02399994278109,
+      "end": 71.14399982834017,
+      "text": "Average speed asks, how much path was covered per second?",
+      "chapter": 1
+    },
+    {
+      "start": 72.16399980926668,
+      "end": 76.30400015258944,
+      "text": "Average velocity asks, how quickly did position change in the chosen direction?",
+      "chapter": 1
+    },
+    {
+      "start": 77.18400026703036,
+      "end": 78.30400015258944,
+      "text": "Use the same bus journey.",
+      "chapter": 1
+    },
+    {
+      "start": 79.0439999237076,
+      "end": 82.94399954223788,
+      "text": "The distance was one hundred and ten metres and the displacement was plus fifty",
+      "chapter": 1
+    },
+    {
+      "start": 82.94399954223788,
+      "end": 83.24400068664706,
+      "text": "metres.",
+      "chapter": 1
+    },
+    {
+      "start": 84.00400091552889,
+      "end": 88.10399938964999,
+      "text": "If the whole trip took ten seconds, the average speed is eleven metres per",
+      "chapter": 1
+    },
+    {
+      "start": 88.10399938964999,
+      "end": 88.8840000762955,
+      "text": "second, while",
+      "chapter": 1
+    },
+    {
+      "start": 88.8840000762955,
+      "end": 94.44399954223788,
+      "text": "the average velocity is plus five metres per second.",
+      "chapter": 1
+    },
+    {
+      "start": 94.44399954223788,
+      "end": 95.7639992370621,
+      "text": "Neither calculation is wrong; they answer different questions.",
+      "chapter": 1
+    },
+    {
+      "start": 96.46400000000155,
+      "end": 100.74399877929842,
+      "text": "Here is a common trap: do not average two speeds unless the time intervals are",
+      "chapter": 1
+    },
+    {
+      "start": 100.74399877929842,
+      "end": 101.02400137329256,
+      "text": "equal.",
+      "chapter": 1
+    },
+    {
+      "start": 101.78399969482577,
+      "end": 105.04400183105624,
+      "text": "For motion at one instant, we use instantaneous velocity.",
+      "chapter": 1
+    },
+    {
+      "start": 105.98400045776522,
+      "end": 109.664000762941,
+      "text": "On a position time graph, it is the slope of the tangent at that instant.",
+      "chapter": 1
+    },
+    {
+      "start": 110.36400152588045,
+      "end": 114.56399847412264,
+      "text": "A horizontal graph means position is constant, so velocity is zero.",
+      "chapter": 1
+    },
+    {
+      "start": 115.14400030517733,
+      "end": 118.60399938964999,
+      "text": "A negative slope means the object is moving in the negative direction.",
+      "chapter": 1
+    },
+    {
+      "start": 118.86400152588045,
+      "end": 122.02400137329256,
+      "text": "It does not automatically mean the object is slowing down.",
+      "chapter": 1
+    },
+    {
+      "start": 122.62399984741366,
+      "end": 126.08399893188631,
+      "text": "Keep the graph, the sign convention, and the definition connected.",
+      "chapter": 1
+    },
+    {
+      "start": 126.576000000003,
+      "end": 131.33600022888484,
+      "text": "Velocity can change, and acceleration measures how quickly it changes.",
+      "chapter": 2
+    },
+    {
+      "start": 132.33600022888484,
+      "end": 136.89599969482722,
+      "text": "Imagine a cyclist whose velocity rises from plus two to plus eight metres per",
+      "chapter": 2
+    },
+    {
+      "start": 136.89599969482722,
+      "end": 137.95600011444392,
+      "text": "second in three seconds.",
+      "chapter": 2
+    },
+    {
+      "start": 138.6959998855621,
+      "end": 143.53599908447566,
+      "text": "The change is six metres per second, so the average acceleration is plus two",
+      "chapter": 2
+    },
+    {
+      "start": 143.53599908447566,
+      "end": 144.73599984741512,
+      "text": "metres per second squared.",
+      "chapter": 2
+    },
+    {
+      "start": 145.87599923706355,
+      "end": 150.1359994659454,
+      "text": "The unit tells us that velocity changes by about two metres per second every",
+      "chapter": 2
+    },
+    {
+      "start": 150.1359994659454,
+      "end": 150.4559991607696,
+      "text": "second.",
+      "chapter": 2
+    },
+    {
+      "start": 151.05599954223933,
+      "end": 153.6960008392364,
+      "text": "Now for the sign idea JEE likes to test.",
+      "chapter": 2
+    },
+    {
+      "start": 154.31599977112117,
+      "end": 158.8359983215362,
+      "text": "If velocity and acceleration have the same sign, the magnitude of velocity",
+      "chapter": 2
+    },
+    {
+      "start": 158.8359983215362,
+      "end": 160.85599877929988,
+      "text": "increases, so speed increases.",
+      "chapter": 2
+    },
+    {
+      "start": 161.6560018310577,
+      "end": 164.11600091553035,
+      "text": "If their signs are opposite, speed decreases.",
+      "chapter": 2
+    },
+    {
+      "start": 165.09600045776668,
+      "end": 168.2560003051788,
+      "text": "But negative acceleration is not automatically slowing down.",
+      "chapter": 2
+    },
+    {
+      "start": 168.77600076294246,
+      "end": 171.21599938965144,
+      "text": "An object moving left has negative velocity.",
+      "chapter": 2
+    },
+    {
+      "start": 171.77600076294246,
+      "end": 176.55599954223933,
+      "text": "If its acceleration is also negative, its velocity becomes more negative and",
+      "chapter": 2
+    },
+    {
+      "start": 176.55599954223933,
+      "end": 177.59600045776668,
+      "text": "its speed increases.",
+      "chapter": 2
+    },
+    {
+      "start": 178.23599984741512,
+      "end": 182.85599877929988,
+      "text": "At a turning instant, velocity may be zero while acceleration is still non",
+      "chapter": 2
+    },
+    {
+      "start": 182.85599877929988,
+      "end": 185.9760015258819,
+      "text": "zero; a ball thrown upward is the familiar example.",
+      "chapter": 2
+    },
+    {
+      "start": 186.9760015258819,
+      "end": 191.81599786377254,
+      "text": "Before using a formula, ask: what is the direction, what is changing, and over",
+      "chapter": 2
+    },
+    {
+      "start": 191.81599786377254,
+      "end": 192.5959966430694,
+      "text": "what time interval?",
+      "chapter": 2
+    },
+    {
+      "start": 192.84000000000464,
+      "end": 197.03999980926977,
+      "text": "Let us derive the three equations instead of memorising them blindly.",
+      "chapter": 3
+    },
+    {
+      "start": 197.82000001907812,
+      "end": 202.03999980926977,
+      "text": "When acceleration is constant, velocity changes by the same amount in equal",
+      "chapter": 3
+    },
+    {
+      "start": 202.03999980926977,
+      "end": 202.65999969482885,
+      "text": "time intervals.",
+      "chapter": 3
+    },
+    {
+      "start": 203.60000022888647,
+      "end": 208.0799997711228,
+      "text": "Starting with the definition of acceleration, final velocity v equals initial",
+      "chapter": 3
+    },
+    {
+      "start": 208.0799997711228,
+      "end": 213.9199999237107,
+      "text": "velocity u plus acceleration a multiplied by time t: v equals u plus",
+      "chapter": 3
+    },
+    {
+      "start": 213.9199999237107,
+      "end": 214.31999954224096,
+      "text": "a t.",
+      "chapter": 3
+    },
+    {
+      "start": 214.76000007629858,
+      "end": 218.62000068665014,
+      "text": "On a velocity time graph, constant acceleration gives a straight line.",
+      "chapter": 3
+    },
+    {
+      "start": 218.62000068665014,
+      "end": 224.62000068665014,
+      "text": "The displacement is the signed area under that line, a trapezium, so s equals",
+      "chapter": 3
+    },
+    {
+      "start": 224.62000068665014,
+      "end": 228.42000183105932,
+      "text": "the average velocity, u plus v over two, multiplied by t.",
+      "chapter": 3
+    },
+    {
+      "start": 229.31999954224096,
+      "end": 235.1199987793015,
+      "text": "Substitute v equals u plus a t, and you obtain s equals u t plus one half a",
+      "chapter": 3
+    },
+    {
+      "start": 235.1199987793015,
+      "end": 235.6199987793015,
+      "text": "t squared.",
+      "chapter": 3
+    },
+    {
+      "start": 236.06000122070776,
+      "end": 240.1199987793015,
+      "text": "If time is inconvenient, eliminate it between the two equations to get v",
+      "chapter": 3
+    },
+    {
+      "start": 240.1199987793015,
+      "end": 242.4599989318894,
+      "text": "squared equals u squared plus two a s.",
+      "chapter": 3
+    },
+    {
+      "start": 242.97999938965307,
+      "end": 244.15999969482885,
+      "text": "Let us test the process.",
+      "chapter": 3
+    },
+    {
+      "start": 244.15999969482885,
+      "end": 248.7999990844773,
+      "text": "A cart starts at three metres per second, accelerates at two metres per second",
+      "chapter": 3
+    },
+    {
+      "start": 248.7999990844773,
+      "end": 250.25999816894995,
+      "text": "squared for four seconds.",
+      "chapter": 3
+    },
+    {
+      "start": 250.7999990844773,
+      "end": 255.13999923706518,
+      "text": "The final velocity is three plus two times four, or eleven metres per second.",
+      "chapter": 3
+    },
+    {
+      "start": 255.75999816894995,
+      "end": 259.65999969482885,
+      "text": "The displacement is three times four plus one half times two times four",
+      "chapter": 3
+    },
+    {
+      "start": 259.65999969482885,
+      "end": 261.25999816894995,
+      "text": "squared, which is twenty eight metres.",
+      "chapter": 3
+    },
+    {
+      "start": 261.84000000000464,
+      "end": 266.5200003051804,
+      "text": "The graph check gives the same answer: average velocity seven times four equals",
+      "chapter": 3
+    },
+    {
+      "start": 266.5200003051804,
+      "end": 267.0200003051804,
+      "text": "twenty eight.",
+      "chapter": 3
+    },
+    {
+      "start": 267.24000000000655,
+      "end": 270.2999999427861,
+      "text": "Our final toolkit is graphical reasoning.",
+      "chapter": 4
+    },
+    {
+      "start": 270.8199999237126,
+      "end": 275.08000015259444,
+      "text": "On a velocity time graph, area above the time axis contributes positive",
+      "chapter": 4
+    },
+    {
+      "start": 275.08000015259444,
+      "end": 278.5999996566838,
+      "text": "displacement; area below contributes negative displacement.",
+      "chapter": 4
+    },
+    {
+      "start": 279.62000011444746,
+      "end": 283.4200003051823,
+      "text": "Add signed areas for displacement, but add the magnitudes when the question",
+      "chapter": 4
+    },
+    {
+      "start": 283.4200003051823,
+      "end": 284.36000083923994,
+      "text": "asks for distance.",
+      "chapter": 4
+    },
+    {
+      "start": 285.58000015259444,
+      "end": 287.36000083923994,
+      "text": "Try this JEE style example.",
+      "chapter": 4
+    },
+    {
+      "start": 288.3199999237126,
+      "end": 292.6999990844792,
+      "text": "Velocity changes linearly from plus six metres per second at zero seconds to",
+      "chapter": 4
+    },
+    {
+      "start": 292.6999990844792,
+      "end": 295.1399996185368,
+      "text": "minus two metres per second at four seconds.",
+      "chapter": 4
+    },
+    {
+      "start": 295.1399996185368,
+      "end": 297.7800009155339,
+      "text": "First find when velocity becomes zero.",
+      "chapter": 4
+    },
+    {
+      "start": 298.4200003051823,
+      "end": 302.4200003051823,
+      "text": "The slope is minus two metres per second squared, so the crossing occurs after",
+      "chapter": 4
+    },
+    {
+      "start": 302.4200003051823,
+      "end": 303.1000006103581,
+      "text": "three seconds.",
+      "chapter": 4
+    },
+    {
+      "start": 304.48000167847334,
+      "end": 308.89999984741866,
+      "text": "The positive triangular area is one half times three times six: nine metres.",
+      "chapter": 4
+    },
+    {
+      "start": 309.6000006103581,
+      "end": 313.67999862671553,
+      "text": "The negative triangle is one half times one times two: one metre in the",
+      "chapter": 4
+    },
+    {
+      "start": 313.67999862671553,
+      "end": 314.30000137329756,
+      "text": "negative direction.",
+      "chapter": 4
+    },
+    {
+      "start": 315.0399992370671,
+      "end": 319.379999389655,
+      "text": "Therefore displacement is nine minus one, or plus eight metres, while distance",
+      "chapter": 4
+    },
+    {
+      "start": 319.379999389655,
+      "end": 321.6999990844792,
+      "text": "is nine plus one, or ten metres.",
+      "chapter": 4
+    },
+    {
+      "start": 322.440000762946,
+      "end": 325.65999816895186,
+      "text": "Notice why we split the graph: the object reverses direction.",
+      "chapter": 4
+    },
+    {
+      "start": 326.5199987793034,
+      "end": 330.65999816895186,
+      "text": "For vertical motion, choose your sign convention before using g.",
+      "chapter": 4
+    },
+    {
+      "start": 330.65999816895186,
+      "end": 334.96000122070967,
+      "text": "If upward is positive, acceleration near Earth is minus nine point eight metres",
+      "chapter": 4
+    },
+    {
+      "start": 334.96000122070967,
+      "end": 338.7800009155339,
+      "text": "per second squared; use ten only when the problem allows that approximation.",
+      "chapter": 4
+    },
+    {
+      "start": 339.6800024414128,
+      "end": 344.500002136237,
+      "text": "You now have a reliable routine: define direction, identify the quantity,",
+      "chapter": 4
+    },
+    {
+      "start": 345.1199972534245,
+      "end": 349.15999816895186,
+      "text": "choose the equation or graph, pause to estimate, and then check the sign and",
+      "chapter": 4
+    },
+    {
+      "start": 349.15999816895186,
+      "end": 349.379999389655,
+      "text": "units.",
+      "chapter": 4
+    }
+  ]
+}

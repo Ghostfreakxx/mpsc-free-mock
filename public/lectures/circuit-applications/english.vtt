@@ -1,0 +1,358 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.540
+Hey, welcome back.
+
+00:00:02.280 --> 00:00:06.511
+A battery labelled twelve volts does not always deliver twelve volts across
+
+00:00:06.511 --> 00:00:06.680
+the
+
+00:00:06.680 --> 00:00:06.740
+load.
+
+00:00:07.480 --> 00:00:08.300
+Let's explain why.
+
+00:00:09.280 --> 00:00:13.880
+Model the cell as an ideal emf E in series with internal resistance r.
+
+00:00:14.640 --> 00:00:18.420
+Emf tells us how much energy the source mechanism supplies per unit charge.
+
+00:00:19.280 --> 00:00:22.860
+Some of that energy becomes heat inside the cell, leaving less potential
+
+00:00:22.860 --> 00:00:23.860
+difference at the terminals.
+
+00:00:24.560 --> 00:00:29.860
+Our example has emf twelve volts, internal resistance two ohms and external
+
+00:00:29.860 --> 00:00:31.040
+resistance four ohms.
+
+00:00:31.860 --> 00:00:35.260
+Total resistance is six ohms, so current is two amperes.
+
+00:00:36.020 --> 00:00:39.900
+The internal voltage drop is current times internal resistance, four volts.
+
+00:00:40.920 --> 00:00:42.720
+Terminal voltage is therefore eight volts.
+
+00:00:43.440 --> 00:00:46.080
+It also equals current times the external resistance.
+
+00:00:47.040 --> 00:00:50.000
+Now check power: the source supplies twenty four watts.
+
+00:00:50.000 --> 00:00:54.440
+The load receives sixteen watts, and internal heating takes eight watts.
+
+00:00:55.080 --> 00:00:55.940
+They add correctly.
+
+00:00:56.960 --> 00:01:00.940
+This is a constant parameter model, not a complete description of a real cell
+
+00:01:01.040 --> 00:01:02.660
+as it heats or discharges.
+
+00:01:03.740 --> 00:01:04.880
+Now let's change the load.
+
+00:01:05.580 --> 00:01:08.980
+Would making it very small always give the largest useful power?
+
+00:01:09.820 --> 00:01:10.600
+Think about that.
+
+00:01:11.000 --> 00:01:14.180
+A tiny load draws current, but has little voltage across it.
+
+00:01:14.180 --> 00:01:17.560
+A very large load has voltage but little current.
+
+00:01:18.840 --> 00:01:23.080
+Load power is E squared times R divided by the square of R plus r.
+
+00:01:24.240 --> 00:01:30.045
+Differentiating with respect to R gives E squared times r minus R, divided by
+
+00:01:30.045 --> 00:01:30.120
+R
+
+00:01:30.120 --> 00:01:31.280
+plus r cubed.
+
+00:01:31.280 --> 00:01:34.360
+It changes from positive to negative when R equals r.
+
+00:01:35.040 --> 00:01:39.020
+So our twelve volt, two ohm source gives maximum load power with a two ohm
+
+00:01:39.020 --> 00:01:40.200
+load: eighteen watts.
+
+00:01:40.820 --> 00:01:44.160
+But the internal resistance also dissipates eighteen watts.
+
+00:01:44.160 --> 00:01:46.320
+Efficiency is only fifty percent.
+
+00:01:47.040 --> 00:01:49.580
+Maximum power and maximum efficiency are different goals.
+
+00:01:50.500 --> 00:01:54.080
+With a larger load, the fraction of source power delivered outside improves,
+
+00:01:54.580 --> 00:01:55.760
+but delivered power falls.
+
+00:01:56.700 --> 00:01:59.840
+For JEE, read which objective the question asks for.
+
+00:02:00.420 --> 00:02:04.680
+And never treat the ideal maximum power calculation as advice to short a real
+
+00:02:04.680 --> 00:02:04.840
+battery.
+
+00:02:05.304 --> 00:02:09.284
+Next, a question that sounds simple but hides an important condition.
+
+00:02:10.124 --> 00:02:13.124
+A metal resistor warms up and its resistance increases.
+
+00:02:14.004 --> 00:02:16.464
+Does its electrical power increase or decrease?
+
+00:02:17.524 --> 00:02:20.364
+Before choosing, ask what the source holds constant.
+
+00:02:21.364 --> 00:02:25.984
+Close to a reference temperature, resistance is approximately R zero times one
+
+00:02:25.984 --> 00:02:27.864
+plus alpha times the temperature change.
+
+00:02:28.684 --> 00:02:30.424
+Alpha is defined at that reference temperature.
+
+00:02:30.864 --> 00:02:35.624
+This is a local linear approximation, not a universal rule for every material
+
+00:02:35.624 --> 00:02:36.384
+or temperature.
+
+00:02:37.284 --> 00:02:41.397
+Suppose resistance is ten ohms at twenty degrees Celsius, with alpha zero
+
+00:02:41.397 --> 00:02:41.679
+point
+
+00:02:41.679 --> 00:02:42.964
+zero zero four per kelvin.
+
+00:02:43.924 --> 00:02:45.344
+Warm it to seventy degrees Celsius.
+
+00:02:45.924 --> 00:02:49.844
+The temperature change is fifty degrees, numerically the same as fifty kelvin.
+
+00:02:50.624 --> 00:02:53.624
+Resistance becomes ten times one point two, or twelve ohms.
+
+00:02:54.404 --> 00:02:56.864
+Now use an ideal constant twelve volt supply.
+
+00:02:57.564 --> 00:03:01.824
+Initially current is one point two amperes and power is fourteen point four
+
+00:03:01.824 --> 00:03:02.084
+watts.
+
+00:03:02.704 --> 00:03:06.484
+At twelve ohms, current is one ampere and power is twelve watts.
+
+00:03:07.404 --> 00:03:11.244
+Power decreased because voltage stayed fixed and power is voltage squared
+
+00:03:11.244 --> 00:03:12.284
+divided by resistance.
+
+00:03:13.284 --> 00:03:14.284
+Try the other constraint.
+
+00:03:15.224 --> 00:03:18.044
+Suppose an ideal source holds current at one point two amperes.
+
+00:03:18.624 --> 00:03:21.044
+At ten ohms, power is fourteen point four watts.
+
+00:03:21.724 --> 00:03:24.364
+At twelve ohms it becomes seventeen point two eight watts.
+
+00:03:25.044 --> 00:03:28.864
+It increased because current squared times resistance is now the relevant
+
+00:03:28.864 --> 00:03:29.304
+expression.
+
+00:03:30.024 --> 00:03:32.564
+Same resistor change, opposite power trend.
+
+00:03:33.324 --> 00:03:36.344
+So do not memorize that heating always reduces electrical power.
+
+00:03:37.244 --> 00:03:38.484
+State the source constraint first.
+
+00:03:39.244 --> 00:03:42.904
+Real circuits can also include internal source resistance, and self heating
+
+00:03:42.904 --> 00:03:45.384
+needs a heat loss model if temperature is not prescribed.
+
+00:03:46.244 --> 00:03:50.164
+For our numerical question, geometry changes are neglected and the given
+
+00:03:50.164 --> 00:03:51.244
+temperature is an input.
+
+00:03:51.924 --> 00:03:55.783
+Our routine is to calculate resistance using a temperature difference,
+
+00:03:55.783 --> 00:03:56.224
+identify
+
+00:03:56.224 --> 00:03:59.344
+the source, and only then calculate current and power.
+
+00:04:00.264 --> 00:04:02.964
+Let's finish with a bridge that is not balanced.
+
+00:04:03.584 --> 00:04:05.044
+Keep the diagram beside you.
+
+00:04:05.544 --> 00:04:08.624
+Supply node A is twelve volts and node D is zero.
+
+00:04:09.484 --> 00:04:13.849
+The upper path goes from A through three ohms to B, then through six ohms to
+
+00:04:13.849 --> 00:04:13.964
+D.
+
+00:04:14.524 --> 00:04:18.714
+The lower path goes from A through six ohms to C, then through three ohms to
+
+00:04:18.714 --> 00:04:18.824
+D.
+
+00:04:19.384 --> 00:04:21.464
+A three ohm bridge joins B to C.
+
+00:04:22.164 --> 00:04:25.464
+Can we treat the upper and lower paths as independent voltage dividers?
+
+00:04:25.944 --> 00:04:27.624
+Not while bridge current flows.
+
+00:04:28.044 --> 00:04:31.244
+The middle resistor changes both node potentials.
+
+00:04:31.444 --> 00:04:36.144
+At B, write outgoing currents: B minus twelve divided by three, plus B divided
+
+00:04:36.144 --> 00:04:38.884
+by six, plus B minus C divided by three.
+
+00:04:39.384 --> 00:04:40.244
+Their sum is zero.
+
+00:04:41.024 --> 00:04:45.304
+At C, the outgoing sum is C minus twelve divided by six, plus C divided by
+
+00:04:45.304 --> 00:04:47.804
+three, plus C minus B divided by three.
+
+00:04:49.084 --> 00:04:50.544
+Multiply both equations by six.
+
+00:04:50.964 --> 00:04:55.744
+We get five B minus two C equals twenty four, and minus two B plus five C
+
+00:04:55.744 --> 00:04:56.544
+equals twelve.
+
+00:04:56.544 --> 00:05:01.384
+Solve them together: B is forty eight sevenths volts, and C is thirty six
+
+00:05:01.384 --> 00:05:02.084
+sevenths volts.
+
+00:05:02.984 --> 00:05:05.744
+B is higher, so bridge current goes from B to C.
+
+00:05:06.164 --> 00:05:09.884
+Its value is the difference divided by three ohms: four sevenths of an ampere.
+
+00:05:10.444 --> 00:05:13.844
+A negative current under an assumed arrow would simply tell us the real
+
+00:05:13.844 --> 00:05:14.744
+direction is opposite.
+
+00:05:15.364 --> 00:05:16.024
+Now verify.
+
+00:05:16.764 --> 00:05:20.084
+At B, incoming current from A is twelve sevenths of an ampere.
+
+00:05:20.804 --> 00:05:24.524
+Outgoing current to D is eight sevenths, and to C four sevenths.
+
+00:05:24.524 --> 00:05:26.284
+Charge conservation checks.
+
+00:05:27.064 --> 00:05:30.364
+Supply current is twenty sevenths of an ampere, giving equivalent resistance
+
+00:05:30.364 --> 00:05:31.524
+four point two ohms.
+
+00:05:32.504 --> 00:05:36.124
+Removing the middle branch gives two nine ohm paths in parallel, or four point
+
+00:05:36.124 --> 00:05:36.904
+five ohms.
+
+00:05:37.724 --> 00:05:40.224
+Adding a conducting path reduced resistance, as expected.
+
+00:05:41.504 --> 00:05:45.554
+Finally, source power is twelve times twenty sevenths, or two hundred forty
+
+00:05:45.554 --> 00:05:45.904
+sevenths watts.
+
+00:05:46.744 --> 00:05:50.944
+Adding current squared times resistance over all five resistors gives the same
+
+00:05:50.944 --> 00:05:51.244
+result.
+
+00:05:51.464 --> 00:05:53.084
+That is a strong check.
+
+00:05:53.084 --> 00:05:58.284
+Draw nodes, write signs consistently, solve independent equations, then verify
+
+00:05:58.284 --> 00:05:59.124
+charge and energy.
+
+00:05:59.764 --> 00:06:02.904
+A circuit's appearance is not enough to decide series or parallel.

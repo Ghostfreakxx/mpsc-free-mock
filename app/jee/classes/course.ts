@@ -1,26 +1,28 @@
 export const syllabusSource = "https://jeemain.nta.nic.in/document/syllabus-2026/";
 export const syllabusBaseline = "JEE Main 2026 · Paper 1";
+export const syllabusChecked = "2 October 2026";
+export const syllabusPdf = "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2025/10/202510311323551056.pdf";
 export const subjects = ["Physics", "Chemistry", "Mathematics"] as const;
 export type Subject = typeof subjects[number];
 
 // Unit numbers map to NTA's baseline, not a count of completed teaching chapters.
 export const courseUnits: Record<Subject, string[]> = {
   Physics: [
-    "Measurement", "Kinematics", "Newtonian mechanics", "Work and energy", "Rotation",
-    "Gravity", "Solids, fluids and heat", "Thermodynamics", "Gas kinetics", "Oscillations and waves",
-    "Electrostatics", "Electric circuits", "Magnetism", "Induction and AC", "Electromagnetic waves",
-    "Optics", "Wave-particle duality", "Atomic and nuclear physics", "Semiconductors", "Experimental skills",
+    "Units and Measurements", "Kinematics", "Laws of Motion", "Work, Energy and Power", "Rotational Motion",
+    "Gravitation", "Properties of Solids and Liquids", "Thermodynamics", "Kinetic Theory of Gases", "Oscillations and Waves",
+    "Electrostatics", "Current Electricity", "Magnetic Effects of Current and Magnetism", "Electromagnetic Induction and Alternating Currents", "Electromagnetic Waves",
+    "Optics", "Dual Nature of Matter and Radiation", "Atoms and Nuclei", "Electronic Devices", "Experimental Skills",
   ],
   Chemistry: [
-    "Chemical foundations", "Atomic structure", "Bonding", "Chemical thermodynamics", "Solutions",
-    "Equilibria", "Redox and electrochemistry", "Reaction kinetics", "Periodicity", "p-block",
-    "d/f-block", "Coordination chemistry", "Organic analysis", "Organic foundations", "Hydrocarbons",
-    "Halogen compounds", "Oxygen compounds", "Nitrogen compounds", "Biomolecules", "Practical chemistry",
+    "Some Basic Concepts in Chemistry", "Atomic Structure", "Chemical Bonding and Molecular Structure", "Chemical Thermodynamics", "Solutions",
+    "Equilibrium", "Redox Reactions and Electrochemistry", "Chemical Kinetics", "Classification of Elements and Periodicity in Properties", "p-Block Elements",
+    "d- and f-Block Elements", "Coordination Compounds", "Purification and Characterisation of Organic Compounds", "Some Basic Principles of Organic Chemistry", "Hydrocarbons",
+    "Organic Compounds Containing Halogens", "Organic Compounds Containing Oxygen", "Organic Compounds Containing Nitrogen", "Biomolecules", "Principles Related to Practical Chemistry",
   ],
   Mathematics: [
-    "Sets and mappings", "Complex numbers and quadratics", "Matrices and determinants", "Counting",
-    "Binomial expansion", "Sequences", "Differential calculus", "Integration", "Differential equations",
-    "Plane geometry", "Spatial geometry", "Vectors", "Statistics and probability", "Trigonometry",
+    "Sets, Relations and Functions", "Complex Numbers and Quadratic Equations", "Matrices and Determinants", "Permutations and Combinations",
+    "Binomial Theorem and Its Simple Applications", "Sequence and Series", "Limit, Continuity and Differentiability", "Integral Calculus", "Differential Equations",
+    "Co-ordinate Geometry", "Three Dimensional Geometry", "Vector Algebra", "Statistics and Probability", "Trigonometry",
   ],
 };
 

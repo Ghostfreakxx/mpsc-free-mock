@@ -1,0 +1,874 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.900
+Welcome to Chemical Thermodynamics.
+
+00:00:03.720 --> 00:00:07.620
+This recorded Chemistry class uses an AI generated Marin voice.
+
+00:00:08.620 --> 00:00:11.420
+Begin every energy calculation by choosing the system.
+
+00:00:12.140 --> 00:00:15.600
+An open system exchanges matter and energy with its surroundings.
+
+00:00:16.360 --> 00:00:19.340
+A closed system exchanges energy but not matter.
+
+00:00:19.820 --> 00:00:22.140
+An isolated system exchanges neither.
+
+00:00:23.080 --> 00:00:27.308
+Internal energy, enthalpy and entropy are state functions: their changes
+
+00:00:27.308 --> 00:00:27.660
+depend
+
+00:00:27.660 --> 00:00:29.320
+on initial and final states.
+
+00:00:30.040 --> 00:00:33.420
+Heat and work describe energy transfer along a path.
+
+00:00:34.220 --> 00:00:38.300
+Temperature and pressure are intensive properties; total volume and total
+
+00:00:38.300 --> 00:00:39.740
+internal energy are extensive.
+
+00:00:40.420 --> 00:00:44.580
+In the Chemistry convention, the first law is change in internal energy equals
+
+00:00:44.580 --> 00:00:46.500
+heat plus work done on the system.
+
+00:00:47.080 --> 00:00:48.240
+Heat entering is positive.
+
+00:00:49.180 --> 00:00:52.220
+Compression work is positive, while expansion work is negative.
+
+00:00:52.760 --> 00:00:56.900
+For expansion against a constant external pressure, work is minus external
+
+00:00:56.900 --> 00:00:58.660
+pressure times the volume increase.
+
+00:00:59.740 --> 00:01:03.940
+Consider a closed system that absorbs five hundred joules and expands by one
+
+00:01:03.940 --> 00:01:05.080
+litre against two bar.
+
+00:01:05.840 --> 00:01:07.840
+One litre bar equals one hundred joules.
+
+00:01:08.420 --> 00:01:12.100
+The work is therefore minus two hundred joules, and the internal energy
+
+00:01:12.100 --> 00:01:13.860
+increases by three hundred joules.
+
+00:01:14.220 --> 00:01:18.320
+The system gained heat but returned some energy to the surroundings as work.
+
+00:01:19.140 --> 00:01:21.460
+Notice that external pressure appears in this work expression.
+
+00:01:21.460 --> 00:01:25.260
+If it varies, the appropriate pressure volume integral is needed.
+
+00:01:26.120 --> 00:01:29.520
+Free expansion against zero external pressure does no pressure volume work.
+
+00:01:30.360 --> 00:01:34.040
+Adiabatic means no heat transfer; it does not automatically mean constant
+
+00:01:34.040 --> 00:01:34.460
+temperature.
+
+00:01:35.280 --> 00:01:36.900
+Isothermal means constant temperature.
+
+00:01:37.740 --> 00:01:41.260
+Isochoric means constant volume, and isobaric means constant pressure.
+
+00:01:41.560 --> 00:01:45.640
+For an ideal gas, internal energy depends only on temperature, so an
+
+00:01:45.640 --> 00:01:46.240
+isothermal
+
+00:01:46.240 --> 00:01:50.680
+change has zero internal energy change even though heat and work may each be
+
+00:01:50.680 --> 00:01:52.100
+nonzero.
+
+00:01:52.100 --> 00:01:55.980
+Keep the signs tied to the chosen system, and always convert litre bar into
+
+00:01:55.980 --> 00:01:58.300
+energy units before adding heat and work.
+
+00:01:58.656 --> 00:02:03.236
+Enthalpy is defined as internal energy plus pressure times volume.
+
+00:02:04.176 --> 00:02:08.036
+For a closed system undergoing only pressure volume work at constant pressure,
+
+00:02:08.576 --> 00:02:10.936
+the heat transferred equals the enthalpy change.
+
+00:02:11.476 --> 00:02:15.554
+At constant volume, with no other work, heat equals the internal energy
+
+00:02:15.554 --> 00:02:15.956
+change.
+
+00:02:16.476 --> 00:02:18.296
+The conditions are part of the result.
+
+00:02:19.156 --> 00:02:23.476
+An exothermic process has a negative enthalpy change, while an endothermic
+
+00:02:23.476 --> 00:02:25.076
+process has a positive one.
+
+00:02:25.636 --> 00:02:29.956
+For ideal gaseous reactants and products at the same temperature, the gas
+
+00:02:29.956 --> 00:02:34.556
+contribution gives change in enthalpy equals change in internal energy plus
+
+00:02:34.556 --> 00:02:37.396
+change in gaseous mole number times R T.
+
+00:02:38.296 --> 00:02:42.556
+In ordinary reaction calculations this form neglects condensed phase pressure
+
+00:02:42.556 --> 00:02:43.576
+volume contributions.
+
+00:02:44.796 --> 00:02:47.976
+Count only gaseous species when finding the gaseous mole change.
+
+00:02:48.536 --> 00:02:53.244
+For one nitrogen plus three hydrogen forming two ammonia, all gases, the
+
+00:02:53.244 --> 00:02:53.636
+change
+
+00:02:53.636 --> 00:02:57.396
+is two minus four, or minus two moles per reaction as written.
+
+00:02:58.556 --> 00:03:02.776
+Suppose the internal energy change is minus ninety point zero kilojoules for
+
+00:03:02.776 --> 00:03:04.636
+that reaction amount at three hundred kelvin.
+
+00:03:05.656 --> 00:03:10.236
+Use R equal to zero point zero zero eight three one four kilojoules per mole
+
+00:03:10.236 --> 00:03:10.556
+kelvin.
+
+00:03:11.316 --> 00:03:15.877
+The correction is minus two times R times three hundred, about minus four
+
+00:03:15.877 --> 00:03:16.189
+point
+
+00:03:16.189 --> 00:03:17.116
+nine nine kilojoules.
+
+00:03:18.036 --> 00:03:21.576
+The enthalpy change is about minus ninety five point zero kilojoules.
+
+00:03:22.656 --> 00:03:26.456
+Reversing the reaction reverses both energy changes and the gaseous mole
+
+00:03:26.456 --> 00:03:26.916
+change.
+
+00:03:27.456 --> 00:03:32.216
+A separate useful relation for one mole of an ideal gas is molar heat capacity
+
+00:03:32.216 --> 00:03:37.356
+at constant pressure minus molar heat capacity at constant volume equals R.
+
+00:03:37.956 --> 00:03:41.996
+It is not a universal identity for liquids, solids or real gases.
+
+00:03:43.136 --> 00:03:47.306
+Heat capacity relates heat to temperature change under specified conditions;
+
+00:03:47.306 --> 00:03:47.416
+if
+
+00:03:47.416 --> 00:03:51.436
+it varies appreciably with temperature, use an integral instead of a constant
+
+00:03:51.436 --> 00:03:51.836
+value.
+
+00:03:52.876 --> 00:03:56.336
+Check the phase labels and the reaction amount before substituting numbers.
+
+00:03:56.856 --> 00:03:59.716
+Hess's law follows from enthalpy being a state function.
+
+00:04:00.396 --> 00:04:03.976
+A reaction may be assembled from several steps; adding their enthalpy changes
+
+00:04:03.976 --> 00:04:05.616
+gives the same overall change.
+
+00:04:06.396 --> 00:04:07.916
+Reverse a step and reverse its sign.
+
+00:04:08.756 --> 00:04:11.896
+Multiply an equation by a number and multiply its enthalpy by that number.
+
+00:04:12.716 --> 00:04:13.956
+Here is an illustrative cycle.
+
+00:04:14.856 --> 00:04:19.641
+Carbon as graphite plus oxygen forming carbon dioxide has enthalpy minus three
+
+00:04:19.641 --> 00:04:21.976
+hundred ninety four kilojoules per mole of reaction.
+
+00:04:22.856 --> 00:04:27.436
+Carbon monoxide plus half an oxygen forming carbon dioxide has enthalpy minus
+
+00:04:27.436 --> 00:04:29.036
+two hundred eighty three.
+
+00:04:29.036 --> 00:04:32.176
+We want graphite plus half an oxygen forming carbon monoxide.
+
+00:04:33.056 --> 00:04:35.256
+Keep the first equation and reverse the second.
+
+00:04:36.096 --> 00:04:38.676
+Carbon dioxide cancels, leaving the target reaction.
+
+00:04:39.536 --> 00:04:43.536
+Add minus three hundred ninety four to plus two hundred eighty three to obtain
+
+00:04:43.536 --> 00:04:45.296
+minus one hundred eleven kilojoules.
+
+00:04:45.976 --> 00:04:49.596
+These rounded values illustrate the calculation; phases and reference
+
+00:04:49.596 --> 00:04:50.676
+conditions must match.
+
+00:04:51.596 --> 00:04:55.156
+Standard formation enthalpy refers to forming one mole of a substance from its
+
+00:04:55.156 --> 00:04:56.396
+elements in their reference states.
+
+00:04:56.996 --> 00:05:00.236
+The standard formation enthalpy of an element in its reference state is
+
+00:05:00.236 --> 00:05:04.436
+assigned zero; this does not say that its internal energy or entropy is zero.
+
+00:05:05.436 --> 00:05:09.176
+Multiply each formation enthalpy by its stoichiometric coefficient, then
+
+00:05:09.176 --> 00:05:11.156
+subtract the reactant sum from the product sum.
+
+00:05:11.936 --> 00:05:15.576
+Combustion enthalpy concerns complete burning of the specified amount, usually
+
+00:05:15.576 --> 00:05:17.816
+one mole, with product phases stated.
+
+00:05:18.696 --> 00:05:20.236
+Atomization creates gaseous atoms.
+
+00:05:20.936 --> 00:05:22.576
+Sublimation converts solid to gas.
+
+00:05:23.176 --> 00:05:27.576
+Ionization removes an electron from a gaseous species, while hydration brings
+
+00:05:27.576 --> 00:05:28.816
+gaseous ions into water.
+
+00:05:29.656 --> 00:05:32.796
+Dissolution can combine lattice separation and solvation effects.
+
+00:05:33.476 --> 00:05:37.576
+For a gas phase bond estimate, add energies of bonds broken and subtract
+
+00:05:37.576 --> 00:05:38.856
+energies of bonds formed.
+
+00:05:39.776 --> 00:05:43.308
+Average bond enthalpies give an approximation because bond environments
+
+00:05:43.308 --> 00:05:43.656
+differ.
+
+00:05:44.496 --> 00:05:48.656
+Do not mix an average gas bond estimate with a liquid phase reaction without
+
+00:05:48.656 --> 00:05:49.876
+accounting for phase changes.
+
+00:05:50.520 --> 00:05:54.460
+Energy conservation alone does not choose the direction of a process.
+
+00:05:55.520 --> 00:06:00.340
+Entropy supplies the second law criterion: a spontaneous change increases the
+
+00:06:00.340 --> 00:06:02.600
+total entropy of the system and surroundings.
+
+00:06:03.520 --> 00:06:06.880
+The system's entropy may decrease if the surroundings gain more.
+
+00:06:07.560 --> 00:06:10.920
+A reversible ideal limit has zero total entropy production.
+
+00:06:11.740 --> 00:06:16.780
+For a reversible isothermal path, entropy change is reversible heat divided by
+
+00:06:16.780 --> 00:06:17.140
+temperature.
+
+00:06:17.740 --> 00:06:22.380
+More generally, integrate reversible heat divided by temperature along a
+
+00:06:22.380 --> 00:06:23.640
+suitable path between the states.
+
+00:06:24.500 --> 00:06:28.140
+Entropy is a state function, even when the actual path is irreversible.
+
+00:06:29.100 --> 00:06:32.600
+For the usual closed system at constant temperature and pressure, without
+
+00:06:32.600 --> 00:06:37.620
+imposed non pressure volume work, a negative Gibbs energy change identifies a
+
+00:06:37.620 --> 00:06:39.300
+thermodynamically favourable direction.
+
+00:06:40.020 --> 00:06:44.060
+Gibbs energy change is enthalpy change minus temperature times entropy change.
+
+00:06:44.060 --> 00:06:45.900
+Temperature must be in kelvin.
+
+00:06:46.640 --> 00:06:48.640
+Match the energy units before subtracting.
+
+00:06:49.500 --> 00:06:53.560
+Suppose enthalpy change is minus forty kilojoules and entropy change is minus
+
+00:06:53.560 --> 00:06:54.920
+one hundred joules per kelvin.
+
+00:06:55.800 --> 00:06:59.600
+Convert the entropy to minus zero point one zero zero kilojoules per kelvin.
+
+00:07:00.440 --> 00:07:04.660
+At three hundred kelvin, Gibbs energy change is minus forty plus thirty, or
+
+00:07:04.660 --> 00:07:05.640
+minus ten kilojoules.
+
+00:07:06.240 --> 00:07:10.160
+At five hundred kelvin, it is minus forty plus fifty, or plus ten.
+
+00:07:10.160 --> 00:07:14.420
+If both enthalpy and entropy changes are approximately temperature independent
+
+00:07:14.420 --> 00:07:17.560
+over the range, the crossover is four hundred kelvin.
+
+00:07:18.340 --> 00:07:22.120
+This exothermic process with decreasing entropy is favoured at lower
+
+00:07:22.120 --> 00:07:22.540
+temperature.
+
+00:07:23.340 --> 00:07:26.240
+Positive enthalpy and positive entropy favour higher temperature.
+
+00:07:26.980 --> 00:07:30.560
+Negative enthalpy and positive entropy favour the forward direction throughout
+
+00:07:30.560 --> 00:07:32.320
+the temperature range where those signs hold.
+
+00:07:32.960 --> 00:07:34.220
+The opposite pair does not.
+
+00:07:34.760 --> 00:07:36.920
+Finally, favourable does not mean fast.
+
+00:07:36.920 --> 00:07:41.020
+A large activation barrier can make a thermodynamically favourable reaction
+
+00:07:41.020 --> 00:07:42.000
+very slow.
+
+00:07:42.800 --> 00:07:45.220
+Keep the direction question separate from the kinetics question.
+
+00:07:45.432 --> 00:07:49.352
+The standard Gibbs energy change and the Gibbs energy change for the current
+
+00:07:49.352 --> 00:07:50.932
+mixture are different quantities.
+
+00:07:51.732 --> 00:07:56.752
+The connection is Gibbs energy change equals standard Gibbs energy change plus
+
+00:07:56.752 --> 00:08:00.812
+R T times the natural logarithm of the reaction quotient Q.
+
+00:08:01.732 --> 00:08:05.412
+The rigorous quotient uses dimensionless activities relative to standard
+
+00:08:05.412 --> 00:08:05.812
+states.
+
+00:08:06.872 --> 00:08:11.372
+For ideal dilute solutions and ideal gases, concentration or pressure ratios
+
+00:08:11.372 --> 00:08:13.272
+provide useful approximations.
+
+00:08:13.902 --> 00:08:19.032
+At equilibrium, the reaction Gibbs energy change is zero and Q equals the
+
+00:08:19.032 --> 00:08:20.332
+equilibrium constant K.
+
+00:08:21.432 --> 00:08:26.412
+Substitution gives standard Gibbs energy change equals minus R T times the
+
+00:08:26.412 --> 00:08:27.772
+natural logarithm of K.
+
+00:08:29.012 --> 00:08:33.016
+Thus a negative standard Gibbs energy change implies K greater than one at
+
+00:08:33.016 --> 00:08:33.232
+that
+
+00:08:33.232 --> 00:08:33.512
+temperature.
+
+00:08:34.232 --> 00:08:37.452
+It does not guarantee that every possible mixture will proceed forward.
+
+00:08:38.402 --> 00:08:42.687
+Take standard Gibbs energy change approximately minus five point seven four
+
+00:08:42.687 --> 00:08:45.452
+four kilojoules per mole at three hundred kelvin.
+
+00:08:46.732 --> 00:08:50.892
+With R equal to zero point zero zero eight three one four kilojoules per mole
+
+00:08:50.892 --> 00:08:56.032
+kelvin, the natural logarithm of K is about two point three zero three.
+
+00:08:56.032 --> 00:08:57.452
+K is approximately ten.
+
+00:08:58.332 --> 00:09:00.732
+If Q is one, the forward direction is favoured.
+
+00:09:00.732 --> 00:09:05.105
+If Q is one hundred, Gibbs energy change is positive, about plus five point
+
+00:09:05.105 --> 00:09:09.592
+seven four kilojoules per mole, and the reverse direction is favoured.
+
+00:09:09.592 --> 00:09:11.692
+If Q is ten, the mixture is at equilibrium.
+
+00:09:12.652 --> 00:09:17.412
+Combining the equations gives Gibbs energy change equals R T times the natural
+
+00:09:17.412 --> 00:09:19.292
+logarithm of Q divided by K.
+
+00:09:20.392 --> 00:09:22.512
+This directly connects composition to direction.
+
+00:09:23.712 --> 00:09:26.672
+Standard conditions do not automatically mean two hundred ninety eight kelvin;
+
+00:09:27.232 --> 00:09:28.592
+always read the stated temperature.
+
+00:09:29.332 --> 00:09:33.188
+Finish with a short checklist: define the system, choose the correct work
+
+00:09:33.188 --> 00:09:33.452
+sign,
+
+00:09:34.212 --> 00:09:37.792
+preserve reaction coefficients and phases, convert entropy units, and
+
+00:09:37.792 --> 00:09:39.012
+distinguish Q from K.
+
+00:09:39.852 --> 00:09:42.492
+Use the worked notes and six original practice questions.
+
+00:09:43.232 --> 00:09:47.172
+This is the core Unit four foundation; detailed enthalpy cycles, entropy
+
+00:09:47.172 --> 00:09:50.232
+integrals and wider mixed problems remain for further study.
+
+00:09:50.448 --> 00:09:54.648
+Formation enthalpies let us assemble a reaction without measuring it directly.
+
+00:09:55.888 --> 00:09:58.948
+Use the balanced coefficients and the physical states in the data.
+
+00:09:59.908 --> 00:10:03.988
+For methane combustion to carbon dioxide gas and liquid water, take
+
+00:10:03.988 --> 00:10:08.588
+illustrative standard formation enthalpies in kilojoules per mole: methane
+
+00:10:08.588 --> 00:10:13.348
+minus seventy five, carbon dioxide minus three hundred ninety four, and liquid
+
+00:10:13.348 --> 00:10:16.128
+water minus two hundred eighty six.
+
+00:10:16.128 --> 00:10:18.268
+Oxygen in its reference state contributes zero.
+
+00:10:18.988 --> 00:10:22.803
+Products contribute minus three hundred ninety four plus twice minus two
+
+00:10:22.803 --> 00:10:26.908
+hundred eighty six, giving minus nine hundred sixty six.
+
+00:10:26.908 --> 00:10:30.048
+Subtract the reactant contribution of minus seventy five.
+
+00:10:30.048 --> 00:10:33.928
+The reaction enthalpy is minus eight hundred ninety one kilojoules per mole of
+
+00:10:33.928 --> 00:10:35.288
+methane for these rounded data.
+
+00:10:36.368 --> 00:10:38.428
+Changing the product to water vapour changes the answer.
+
+00:10:39.348 --> 00:10:42.688
+Average bond enthalpies instead estimate energy for gas phase bonds broken
+
+00:10:42.688 --> 00:10:43.788
+minus bonds formed.
+
+00:10:43.788 --> 00:10:48.048
+They are approximate and do not automatically include condensation or solid
+
+00:10:48.048 --> 00:10:49.148
+lattice effects.
+
+00:10:49.448 --> 00:10:53.148
+An element's zero standard formation enthalpy applies to its reference state,
+
+00:10:53.628 --> 00:10:56.128
+not to every allotrope, gaseous atom or ion.
+
+00:10:56.848 --> 00:10:59.848
+Always label the amount and phase beside a thermochemical result.
+
+00:11:00.096 --> 00:11:05.076
+An ionic dissolution cycle separates processes that are easily confused.
+
+00:11:06.096 --> 00:11:09.676
+First imagine pulling the solid into separated gaseous ions.
+
+00:11:10.676 --> 00:11:13.516
+Define this lattice dissociation enthalpy as positive.
+
+00:11:14.236 --> 00:11:18.276
+Then hydrate those gaseous ions to the chosen aqueous reference states;
+
+00:11:19.116 --> 00:11:21.296
+hydration enthalpies are normally negative.
+
+00:11:22.256 --> 00:11:26.436
+Adding both stages gives the enthalpy of solution for matching endpoints and
+
+00:11:26.436 --> 00:11:27.416
+concentration conventions.
+
+00:11:27.416 --> 00:11:32.296
+With illustrative values of plus seven hundred eighty kilojoules per mole for
+
+00:11:32.296 --> 00:11:36.556
+lattice dissociation and minus seven hundred fifty for total hydration,
+
+00:11:37.416 --> 00:11:40.436
+dissolution has enthalpy plus thirty kilojoules per mole.
+
+00:11:41.216 --> 00:11:45.316
+A positive result does not by itself prove that dissolution is impossible,
+
+00:11:46.036 --> 00:11:49.296
+because the Gibbs energy also contains an entropy contribution.
+
+00:11:50.296 --> 00:11:54.996
+Some tables instead define lattice enthalpy for forming the solid from gaseous
+
+00:11:54.996 --> 00:11:55.396
+ions.
+
+00:11:55.836 --> 00:11:59.096
+That is the opposite process and has the opposite sign.
+
+00:12:00.056 --> 00:12:02.636
+Never insert a number until its process is clear.
+
+00:12:03.576 --> 00:12:08.395
+Atomization, ionization and electron attachment provide further steps in a
+
+00:12:08.395 --> 00:12:08.656
+full
+
+00:12:08.656 --> 00:12:09.496
+Born Haber cycle.
+
+00:12:10.456 --> 00:12:12.896
+Keep each species and charge balanced when adding them.
+
+00:12:13.596 --> 00:12:18.234
+This two stage example isolates dissolution bookkeeping rather than claiming
+
+00:12:18.234 --> 00:12:18.356
+to
+
+00:12:18.356 --> 00:12:21.096
+reproduce every step of a complete formation cycle.
+
+00:12:21.648 --> 00:12:25.202
+A calorimeter records a temperature change in material surrounding the
+
+00:12:25.202 --> 00:12:25.608
+reacting
+
+00:12:25.608 --> 00:12:25.988
+system.
+
+00:12:27.088 --> 00:12:29.308
+Include every heat capacity specified in the problem.
+
+00:12:30.388 --> 00:12:34.503
+Suppose one hundred grams of solution has specific heat capacity four point
+
+00:12:34.503 --> 00:12:34.668
+two
+
+00:12:34.668 --> 00:12:38.768
+joules per gram kelvin, and the calorimeter contributes eighty joules per
+
+00:12:38.768 --> 00:12:38.908
+kelvin.
+
+00:12:39.988 --> 00:12:43.888
+The combined heat capacity is four hundred twenty plus eighty, or five hundred
+
+00:12:43.888 --> 00:12:44.688
+joules per kelvin.
+
+00:12:45.228 --> 00:12:48.768
+A temperature rise of two kelvin means the measured surroundings gain one
+
+00:12:48.768 --> 00:12:49.388
+thousand joules.
+
+00:12:50.228 --> 00:12:54.688
+If heat loss is negligible, the reaction releases one thousand joules.
+
+00:12:54.868 --> 00:12:59.042
+For zero point zero five zero mole reacting as written, the molar heat is
+
+00:12:59.042 --> 00:12:59.328
+minus
+
+00:12:59.328 --> 00:13:00.488
+twenty kilojoules per mole.
+
+00:13:01.548 --> 00:13:04.834
+The negative sign belongs to the reaction, while the solution and vessel
+
+00:13:04.834 --> 00:13:05.108
+gained
+
+00:13:05.108 --> 00:13:05.388
+heat.
+
+00:13:06.168 --> 00:13:09.471
+At approximately constant pressure with only pressure volume work, the
+
+00:13:09.471 --> 00:13:09.848
+reaction
+
+00:13:09.848 --> 00:13:11.868
+heat corresponds to enthalpy change.
+
+00:13:12.668 --> 00:13:16.308
+In a rigid bomb calorimeter, the corresponding constant volume heat gives
+
+00:13:16.308 --> 00:13:20.868
+internal energy change; convert to enthalpy when the gas mole correction is
+
+00:13:20.868 --> 00:13:21.228
+required.
+
+00:13:22.228 --> 00:13:25.368
+Check whether a supplied calorimeter constant already includes the solution
+
+00:13:25.368 --> 00:13:27.348
+before adding its heat capacity again.
+
+00:13:28.008 --> 00:13:32.828
+Entropy change must be evaluated using a reversible reference path between the
+
+00:13:32.828 --> 00:13:33.648
+same endpoints.
+
+00:13:34.608 --> 00:13:38.808
+Heat divided by temperature is not a universal expression for an arbitrary
+
+00:13:38.808 --> 00:13:39.908
+irreversible transfer.
+
+00:13:40.868 --> 00:13:45.588
+At an equilibrium phase transition at constant temperature and pressure, the
+
+00:13:45.588 --> 00:13:49.808
+molar entropy change is the molar transition enthalpy divided by that
+
+00:13:49.808 --> 00:13:50.108
+temperature.
+
+00:13:50.988 --> 00:13:55.157
+For melting with illustrative enthalpy six kilojoules per mole at three
+
+00:13:55.157 --> 00:13:55.568
+hundred
+
+00:13:55.568 --> 00:13:59.428
+kelvin, the entropy increase is twenty joules per mole kelvin.
+
+00:14:00.848 --> 00:14:04.748
+Freezing between the reverse endpoints gives minus twenty.
+
+00:14:04.748 --> 00:14:08.528
+For warming a substance at constant pressure with approximately constant molar
+
+00:14:08.528 --> 00:14:11.888
+heat capacity, integrate heat capacity divided by temperature.
+
+00:14:12.708 --> 00:14:17.028
+The result is molar heat capacity times the natural logarithm of final
+
+00:14:17.028 --> 00:14:18.988
+temperature divided by initial temperature.
+
+00:14:19.968 --> 00:14:23.978
+With thirty joules per mole kelvin and warming from three hundred to six
+
+00:14:23.978 --> 00:14:27.928
+hundred kelvin, the increase is thirty times the natural logarithm of two,
+
+00:14:28.408 --> 00:14:30.528
+about twenty point eight joules per mole kelvin.
+
+00:14:31.508 --> 00:14:33.328
+Both temperatures must be absolute.
+
+00:14:34.128 --> 00:14:38.668
+If heat capacity varies appreciably, retain it inside the integral rather than
+
+00:14:38.668 --> 00:14:40.388
+reusing the constant value shortcut.
+
+00:14:40.920 --> 00:14:45.820
+A system can lose entropy while a spontaneous process increases the total
+
+00:14:45.820 --> 00:14:47.580
+entropy of system and surroundings.
+
+00:14:48.820 --> 00:14:52.480
+Consider an illustrative process at three hundred kelvin and constant pressure
+
+00:14:52.480 --> 00:14:56.480
+that releases six kilojoules per mole into a large thermal reservoir.
+
+00:14:57.720 --> 00:15:00.920
+Assume only pressure volume work and negligible changes elsewhere.
+
+00:15:01.820 --> 00:15:06.240
+The reservoir receives six thousand joules per mole, so its entropy increases
+
+00:15:06.240 --> 00:15:08.040
+by twenty joules per mole kelvin.
+
+00:15:08.660 --> 00:15:13.100
+If the system entropy decreases by ten joules per mole kelvin, the total
+
+00:15:13.100 --> 00:15:14.220
+increases by ten.
+
+00:15:15.020 --> 00:15:18.800
+The process is thermodynamically favourable under those stated conditions.
+
+00:15:19.740 --> 00:15:23.839
+Its Gibbs energy change is minus six kilojoules minus three hundred times
+
+00:15:23.839 --> 00:15:24.120
+minus
+
+00:15:24.120 --> 00:15:28.580
+zero point zero one zero kilojoules per kelvin, giving minus three kilojoules
+
+00:15:28.580 --> 00:15:29.080
+per mole.
+
+00:15:30.120 --> 00:15:33.820
+Negative temperature times the universe entropy change gives the same result
+
+00:15:33.820 --> 00:15:34.900
+under these constraints.
+
+00:15:35.590 --> 00:15:39.760
+The reservoir temperature is effectively constant; do not divide a large
+
+00:15:39.760 --> 00:15:42.560
+varying temperature heat transfer by one arbitrary temperature.
+
+00:15:43.320 --> 00:15:47.060
+This example also shows why exothermic and spontaneous are different labels.
+
+00:15:48.160 --> 00:15:52.240
+Identify the surroundings, constraints and entropy contribution before using
+
+00:15:52.240 --> 00:15:54.160
+the sign of heat as a direction test.

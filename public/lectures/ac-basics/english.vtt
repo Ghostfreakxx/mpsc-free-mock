@@ -1,0 +1,397 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.060
+Hey, welcome back.
+
+00:00:02.840 --> 00:00:05.940
+Alternating voltage changes magnitude and sign with time.
+
+00:00:06.700 --> 00:00:11.937
+Our starting model is a sinusoid: voltage equals peak voltage V zero times
+
+00:00:11.937 --> 00:00:12.220
+sine
+
+00:00:12.220 --> 00:00:13.080
+of omega t.
+
+00:00:14.040 --> 00:00:18.645
+Peak voltage is the largest positive value; the negative extreme is minus that
+
+00:00:18.645 --> 00:00:18.940
+peak.
+
+00:00:19.680 --> 00:00:22.460
+Omega is angular frequency in radians per second.
+
+00:00:23.300 --> 00:00:28.200
+Ordinary frequency f counts cycles per second, and omega equals two pi f.
+
+00:00:28.540 --> 00:00:30.320
+The period is one over f.
+
+00:00:31.180 --> 00:00:34.440
+For fifty hertz, a cycle lasts zero point zero two second.
+
+00:00:35.140 --> 00:00:37.600
+One quarter of a cycle lasts five milliseconds.
+
+00:00:38.580 --> 00:00:42.460
+Starting with sine at zero, the voltage reaches its positive peak after that
+
+00:00:42.460 --> 00:00:43.380
+first quarter cycle.
+
+00:00:44.140 --> 00:00:47.635
+Suppose peak voltage is one hundred square root of two volts, about one
+
+00:00:47.635 --> 00:00:47.980
+hundred
+
+00:00:47.980 --> 00:00:49.160
+forty one point four.
+
+00:00:49.460 --> 00:00:53.740
+That is not the same as a one hundred volt heating equivalent supply, although
+
+00:00:53.740 --> 00:00:55.020
+we will connect them soon.
+
+00:00:55.620 --> 00:01:00.262
+The average voltage over a full cycle of a zero offset sinusoid is zero
+
+00:01:00.262 --> 00:01:00.720
+because
+
+00:01:00.720 --> 00:01:02.420
+positive and negative parts cancel.
+
+00:01:03.220 --> 00:01:05.400
+Yet a resistor connected to it heats up.
+
+00:01:06.040 --> 00:01:08.600
+How can zero average voltage still transfer energy?
+
+00:01:09.360 --> 00:01:13.201
+The power depends on the product of voltage and current, not simply the
+
+00:01:13.201 --> 00:01:13.580
+average
+
+00:01:13.580 --> 00:01:13.940
+voltage.
+
+00:01:14.960 --> 00:01:19.140
+Keep instantaneous value, peak, cycle average and RMS in separate mental
+
+00:01:19.140 --> 00:01:19.420
+drawers.
+
+00:01:20.200 --> 00:01:22.880
+A JEE question may switch between them in one line.
+
+00:01:23.112 --> 00:01:25.032
+Let's build RMS carefully.
+
+00:01:25.832 --> 00:01:27.792
+The letters stand for root mean square.
+
+00:01:28.752 --> 00:01:33.172
+Square the changing voltage, average that square over a cycle, then take the
+
+00:01:33.172 --> 00:01:33.552
+square root.
+
+00:01:34.692 --> 00:01:38.352
+Squaring stops positive and negative portions from cancelling.
+
+00:01:38.352 --> 00:01:43.836
+For a sinusoid, the average of sine squared is one half, so RMS voltage is
+
+00:01:43.836 --> 00:01:44.132
+peak
+
+00:01:44.132 --> 00:01:46.512
+voltage divided by square root of two.
+
+00:01:46.992 --> 00:01:49.632
+The same relation holds for sinusoidal current.
+
+00:01:50.412 --> 00:01:55.012
+Our peak voltage of one hundred square root of two volts therefore has RMS
+
+00:01:55.012 --> 00:01:56.692
+value one hundred volts.
+
+00:01:58.232 --> 00:02:03.412
+Across a fifty ohm resistor, RMS current is two amperes, and average heating
+
+00:02:03.412 --> 00:02:06.732
+power is two squared times fifty, or two hundred watts.
+
+00:02:07.412 --> 00:02:11.624
+That is the same heating as a steady one hundred volt DC source across the
+
+00:02:11.624 --> 00:02:11.852
+same
+
+00:02:11.852 --> 00:02:12.152
+resistor.
+
+00:02:12.632 --> 00:02:17.152
+It does not mean the instantaneous AC voltage stays at one hundred volts.
+
+00:02:18.012 --> 00:02:19.952
+Try a peak current of six amperes.
+
+00:02:20.552 --> 00:02:25.372
+Its RMS value is about four point two four amperes, not three and not six.
+
+00:02:26.112 --> 00:02:29.812
+RMS is also not the average of the absolute value; those are different
+
+00:02:29.812 --> 00:02:30.432
+operations.
+
+00:02:31.372 --> 00:02:36.021
+For a square wave or another waveform, return to the RMS definition rather
+
+00:02:36.021 --> 00:02:36.272
+than
+
+00:02:36.272 --> 00:02:38.372
+blindly dividing the peak by square root of two.
+
+00:02:38.892 --> 00:02:42.052
+We use zero offset sinusoids throughout this class.
+
+00:02:42.972 --> 00:02:47.012
+Label peak and RMS values before substituting into any power or impedance
+
+00:02:47.012 --> 00:02:47.372
+formula.
+
+00:02:47.760 --> 00:02:51.820
+Start with the simplest AC element: an ideal resistor.
+
+00:02:52.660 --> 00:02:55.820
+At every instant, current is voltage divided by resistance.
+
+00:02:56.480 --> 00:03:00.560
+If voltage is sinusoidal, current has the same frequency and phase.
+
+00:03:01.240 --> 00:03:03.620
+Their peaks and zero crossings occur together.
+
+00:03:04.340 --> 00:03:08.440
+When voltage is negative, current is negative too, so their product is still
+
+00:03:08.440 --> 00:03:08.820
+positive.
+
+00:03:09.700 --> 00:03:12.620
+Instantaneous power equals current squared times resistance.
+
+00:03:13.020 --> 00:03:17.540
+It rises and falls but never becomes negative in this ideal resistor.
+
+00:03:18.640 --> 00:03:20.740
+Energy is continually converted into heat.
+
+00:03:21.760 --> 00:03:26.606
+For RMS voltage one hundred volts and resistance fifty ohms, RMS current is
+
+00:03:26.606 --> 00:03:26.800
+two
+
+00:03:26.800 --> 00:03:27.300
+amperes.
+
+00:03:28.160 --> 00:03:32.720
+Peak current is two square root of two amperes, about two point eight three.
+
+00:03:32.720 --> 00:03:34.560
+Average power is two hundred watts.
+
+00:03:35.440 --> 00:03:39.640
+Do not multiply peak voltage by RMS current and call that average power.
+
+00:03:40.170 --> 00:03:45.199
+Either use RMS voltage times RMS current for this in phase resistor, or use
+
+00:03:45.199 --> 00:03:45.400
+one
+
+00:03:45.400 --> 00:03:47.020
+half peak voltage times peak current.
+
+00:03:47.500 --> 00:03:48.600
+They give the same result.
+
+00:03:49.380 --> 00:03:53.580
+The waveform diagram shows normalized voltage and current, so equal drawing
+
+00:03:53.580 --> 00:03:56.840
+heights do not mean volts and amperes are numerically equal.
+
+00:03:57.580 --> 00:03:59.280
+The useful information is timing.
+
+00:04:00.060 --> 00:04:03.880
+In a resistor only circuit, changing frequency does not change the ideal
+
+00:04:03.880 --> 00:04:04.420
+resistance.
+
+00:04:05.200 --> 00:04:08.760
+Real components can have parasitic effects at high frequencies, but our
+
+00:04:08.760 --> 00:04:11.100
+elementary lumped element model leaves those out.
+
+00:04:11.280 --> 00:04:15.940
+For an ideal inductor, voltage equals L times the derivative of current.
+
+00:04:16.460 --> 00:04:20.400
+Think about the derivative of a sine: it is a cosine, a quarter cycle ahead.
+
+00:04:21.060 --> 00:04:25.380
+So in sinusoidal steady state, voltage leads current by ninety degrees.
+
+00:04:26.040 --> 00:04:27.900
+Equivalently, current lags voltage.
+
+00:04:28.720 --> 00:04:32.400
+That phrase refers to timing, not to current being slower in the wire.
+
+00:04:33.200 --> 00:04:37.777
+The opposition magnitude is inductive reactance X L, equal to omega L,
+
+00:04:37.777 --> 00:04:38.300
+measured
+
+00:04:38.300 --> 00:04:38.800
+in ohms.
+
+00:04:39.380 --> 00:04:43.400
+At fixed L, higher frequency gives greater reactance because the current must
+
+00:04:43.400 --> 00:04:44.920
+change faster during each cycle.
+
+00:04:45.660 --> 00:04:50.273
+Use omega equal to one thousand radians per second and inductance zero point
+
+00:04:50.273 --> 00:04:51.180
+zero five henry.
+
+00:04:52.200 --> 00:04:53.340
+Reactance is fifty ohms.
+
+00:04:53.980 --> 00:04:57.820
+With RMS voltage one hundred volts, RMS current is two amperes.
+
+00:04:58.380 --> 00:05:01.844
+The arithmetic looks like division by resistance, but the energy story
+
+00:05:01.844 --> 00:05:02.240
+differs.
+
+00:05:02.900 --> 00:05:06.940
+An ideal inductor stores energy during part of the cycle and returns it during
+
+00:05:06.940 --> 00:05:07.520
+another part.
+
+00:05:07.520 --> 00:05:09.880
+Average dissipated power is zero.
+
+00:05:10.800 --> 00:05:12.440
+Instantaneous power need not be zero.
+
+00:05:13.100 --> 00:05:17.300
+A real coil includes resistance and losses, so its phase and power are not
+
+00:05:17.300 --> 00:05:19.200
+exactly those of a pure ideal inductor.
+
+00:05:19.880 --> 00:05:23.920
+The ideal formula also describes sinusoidal steady state, not a switch on
+
+00:05:23.920 --> 00:05:25.860
+transient with arbitrary initial current.
+
+00:05:26.480 --> 00:05:29.060
+Always name the model before using the ninety degree rule.
+
+00:05:29.232 --> 00:05:33.432
+For an ideal capacitor, current equals capacitance times the voltage
+
+00:05:33.432 --> 00:05:33.872
+derivative.
+
+00:05:34.812 --> 00:05:39.112
+A sinusoidal voltage therefore gives current a quarter cycle ahead: current
+
+00:05:39.112 --> 00:05:40.932
+leads voltage by ninety degrees.
+
+00:05:41.992 --> 00:05:44.772
+The capacitive reactance is one divided by omega C.
+
+00:05:45.852 --> 00:05:49.872
+Take omega equal to one thousand radians per second and C equal to twenty
+
+00:05:49.872 --> 00:05:50.512
+microfarads.
+
+00:05:51.592 --> 00:05:54.672
+Convert that capacitance to twenty times ten to the minus six farad.
+
+00:05:55.812 --> 00:05:57.032
+Reactance is fifty ohms.
+
+00:05:57.772 --> 00:06:02.732
+With RMS voltage one hundred volts, RMS current is again two amperes.
+
+00:06:03.432 --> 00:06:07.392
+The same magnitude as our inductor example does not mean the same phase: the
+
+00:06:07.392 --> 00:06:08.572
+lead and lag are opposite.
+
+00:06:10.112 --> 00:06:12.312
+Raise frequency while keeping component values fixed.
+
+00:06:13.432 --> 00:06:16.852
+Inductive reactance increases, but capacitive reactance decreases.
+
+00:06:17.772 --> 00:06:20.812
+Double frequency and X L doubles while X C halves.
+
+00:06:21.692 --> 00:06:26.012
+An ideal capacitor stores and returns electric field energy, giving zero
+
+00:06:26.012 --> 00:06:28.652
+average dissipated power in sinusoidal steady state.
+
+00:06:29.552 --> 00:06:33.072
+It is not a fifty ohm heater simply because its reactance is fifty ohms.
+
+00:06:33.952 --> 00:06:38.332
+At zero frequency steady DC, an ideal capacitor carries no sustained current
+
+00:06:38.332 --> 00:06:42.552
+after charging; do not directly substitute zero into a formula without
+
+00:06:42.552 --> 00:06:43.672
+interpreting the limit.
+
+00:06:44.412 --> 00:06:48.412
+The resistor, inductor and capacitor now give us three timing patterns.
+
+00:06:49.392 --> 00:06:52.872
+Next we will combine them using phasors rather than adding voltage magnitudes
+
+00:06:52.872 --> 00:06:54.432
+as ordinary positive numbers.

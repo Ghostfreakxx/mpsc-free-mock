@@ -1,0 +1,414 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script. Read every sentence completely and precisely, including the final sentence. Do not summarize.",
+  "title": "Periodic trends: explain the pattern before memorising it",
+  "subject": "Chemistry",
+  "unit": 9,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 Chemistry syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: periodic variations",
+      "url": "https://openstax.org/books/chemistry-2e/pages/6-5-periodic-variations-in-element-properties"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Periodic law, periods and blocks",
+      "formula": "Atomic number organizes recurring electron patterns",
+      "script": "Welcome to Periodic Trends. This recorded Chemistry class uses an AI generated Marin voice. The modern periodic law connects recurring properties with atomic number, not merely atomic mass. Increasing nuclear charge determines the electron count of a neutral atom, while recurring outer configurations explain many similarities. Period number usually identifies the highest occupied principal shell in a ground state main group atom. Sodium ends in three s one, placing it in period three and group one. Chlorine ends in three s two, three p five, placing it in period three and group seventeen. Electronic blocks describe the kind of subshell receiving the differentiating electron. Sodium is s block and chlorine is p block. Helium has one s two, so its configuration is s type, yet its closed shell chemistry places it in group eighteen with noble gases. Do not confuse electronic block with group placement. Transition and inner transition series require care because their filling subshells are not the outermost principal shell. Elements in the same group can still differ in their chemical reactions.",
+      "points": [
+        "Na · 3s¹ · Period 3; group 1",
+        "Cl · 3s² 3p⁵ · Period 3; group 17",
+        "He · 1s² · Group 18; s-type"
+      ],
+      "board": {
+        "heading": "Periodic law, periods and blocks",
+        "columns": [
+          "Element",
+          "Outer pattern",
+          "Placement"
+        ],
+        "rows": [
+          [
+            "Na",
+            "3s¹",
+            "Period 3; group 1"
+          ],
+          [
+            "Cl",
+            "3s² 3p⁵",
+            "Period 3; group 17"
+          ],
+          [
+            "He",
+            "1s²",
+            "Group 18; s-type"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Shielding and effective attraction",
+      "formula": "Nuclear attraction competes with shielding and shell size",
+      "script": "An electron feels attraction to the nucleus and repulsion from other electrons. Effective nuclear charge is a model for the net nuclear attraction experienced by a particular electron after shielding is considered. It is not automatically atomic number minus every other electron: shielding effectiveness depends on orbital distribution. Inner electrons generally shield an outer electron more effectively than electrons in the same shell. Across a typical main group period, protons are added while electrons enter the same principal shell, so shielding does not fully cancel the increased nuclear charge. The outer cloud generally contracts. Down a group, additional occupied shells increase typical distance and shielding; the outer size generally grows despite more protons. Penetration also matters: within a shell, an s orbital samples regions nearer the nucleus more strongly than a p orbital in the usual qualitative comparison. This helps explain subshell energy differences in many electron atoms. Use these competing effects to explain a trend before memorizing an arrow. A qualitative effective charge argument is not a numerical calculation unless a specific model is supplied.",
+      "points": [
+        "Across a period · More Z; same shell · Stronger attraction",
+        "Down a group · More occupied shells · Larger outer cloud",
+        "Same-shell orbitals · Different penetration · Different energies"
+      ],
+      "board": {
+        "heading": "Shielding and effective attraction",
+        "columns": [
+          "Change",
+          "Main competition",
+          "Typical outcome"
+        ],
+        "rows": [
+          [
+            "Across a period",
+            "More Z; same shell",
+            "Stronger attraction"
+          ],
+          [
+            "Down a group",
+            "More occupied shells",
+            "Larger outer cloud"
+          ],
+          [
+            "Same-shell orbitals",
+            "Different penetration",
+            "Different energies"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Atomic and ionic radius comparisons",
+      "formula": "Specify radius type before comparing values",
+      "script": "Atomic radius is inferred from distances, so its definition matters. A covalent radius is commonly based on a bonded internuclear distance, while a van der Waals radius describes nonbonded contact. Metallic radii use distances in metallic structures. Do not compare a noble gas nonbonded radius with a neighbouring element's covalent radius and treat the difference as a simple exception to one identical measurement. Within a consistent set, main group atomic radii generally decrease across a period and increase down a group. A positive ion is usually smaller than its neutral parent because electrons are removed and attraction per remaining electron increases; losing an entire outer shell makes the contraction especially strong. A negative ion is usually larger because added electrons increase repulsion in the cloud. Sodium ion is smaller than sodium atom, whereas chloride ion is larger than chlorine atom. Ionic radius values also depend on coordination and the structural convention used to assign them. Always identify whether the question compares atoms, ions or an isoelectronic series before ranking sizes.",
+      "points": [
+        "Na⁺ versus Na · Na⁺ smaller · Outer shell removed",
+        "Cl⁻ versus Cl · Cl⁻ larger · Added repulsion",
+        "Radius tables · Match definitions · Bonded ≠ nonbonded"
+      ],
+      "board": {
+        "heading": "Atomic and ionic radius comparisons",
+        "columns": [
+          "Comparison",
+          "Typical relation",
+          "Reason"
+        ],
+        "rows": [
+          [
+            "Na⁺ versus Na",
+            "Na⁺ smaller",
+            "Outer shell removed"
+          ],
+          [
+            "Cl⁻ versus Cl",
+            "Cl⁻ larger",
+            "Added repulsion"
+          ],
+          [
+            "Radius tables",
+            "Match definitions",
+            "Bonded ≠ nonbonded"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Isoelectronic species and electron counts",
+      "formula": "At equal electron count, larger Z contracts the cloud",
+      "script": "Isoelectronic species have the same number of electrons. That common count makes nuclear charge a useful comparison, provided the species are being compared on a consistent basis. Oxygen two minus has eight protons and ten electrons. Fluoride has nine protons and ten electrons. Sodium plus has eleven protons and ten electrons, while magnesium two plus has twelve protons and ten electrons. The radius decreases in that order because increasing nuclear charge pulls the common electron population inward more strongly. Thus oxide is largest and magnesium two plus smallest in this set. Do the subtraction explicitly: electron count equals atomic number minus signed ionic charge. A negative charge therefore adds electrons. Do not compare raw charge labels without checking which element is involved. An ion with a larger positive charge is not automatically smaller than every other ion in the periodic table, because different occupied shells can dominate. For another ten electron member, aluminium three plus has thirteen protons and lies smaller than magnesium two plus in the same qualitative sequence. This reasoning concerns size, not which isolated ion is easiest to produce.",
+      "points": [
+        "O²⁻; F⁻ · 8; 9 · Largest → smaller",
+        "Na⁺; Mg²⁺ · 11; 12 · Smaller → smaller",
+        "Al³⁺ · 13 · Smallest of this set"
+      ],
+      "board": {
+        "heading": "Isoelectronic species and electron counts",
+        "columns": [
+          "Ten-electron series",
+          "Protons",
+          "Radius order"
+        ],
+        "rows": [
+          [
+            "O²⁻; F⁻",
+            "8; 9",
+            "Largest → smaller"
+          ],
+          [
+            "Na⁺; Mg²⁺",
+            "11; 12",
+            "Smaller → smaller"
+          ],
+          [
+            "Al³⁺",
+            "13",
+            "Smallest of this set"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Ionization energies and familiar exceptions",
+      "formula": "Gaseous X → X⁺ + e⁻ requires energy",
+      "script": "First ionization energy removes one electron from an isolated gaseous atom in its ground state. It is positive for this process. Across a typical main group period it generally increases, and down a group it generally decreases, but electronic details produce important exceptions. Beryllium has a filled two s subshell, whereas boron loses its first two p electron. That higher energy, less penetrating electron is easier to remove, so beryllium has the larger first ionization energy. Nitrogen has three singly occupied two p orbitals. Oxygen introduces a pair into one of them, and removal of a paired electron relieves repulsion. Nitrogen therefore has the larger first ionization energy despite oxygen's greater nuclear charge. Similar reasoning helps with magnesium versus aluminium and phosphorus versus sulfur. These explanations refine the broad trend; they do not justify ignoring all nuclear attraction effects. Ionization energy is not the energy needed to break a chemical bond, nor the tendency to attract shared electrons. Write the gas phase electron removal process before deciding which quantity a question asks about.",
+      "points": [
+        "Be versus B · Be · B loses a 2p electron",
+        "N versus O · N · O has a paired 2p e⁻",
+        "Mg versus Al · Mg · Al loses a 3p electron"
+      ],
+      "board": {
+        "heading": "Ionization energies and familiar exceptions",
+        "columns": [
+          "Comparison",
+          "Larger first IE",
+          "Main explanation"
+        ],
+        "rows": [
+          [
+            "Be versus B",
+            "Be",
+            "B loses a 2p electron"
+          ],
+          [
+            "N versus O",
+            "N",
+            "O has a paired 2p e⁻"
+          ],
+          [
+            "Mg versus Al",
+            "Mg",
+            "Al loses a 3p electron"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Successive removal and valence patterns",
+      "formula": "Large IE jump can reveal a stable inner core",
+      "script": "Successive ionization energies refer to removing electrons one at a time from increasingly positive gaseous ions. The second removes an electron from a singly positive ion, not another fresh neutral atom. Successive removal generally costs more, and a particularly large jump can identify when an inner closed shell must be disrupted. Magnesium has a neon core followed by three s two. Removing two outer electrons gives the neon-like magnesium two plus ion. The third ionization then removes a core electron, so the major jump is between the second and third values. Sodium has only one outer three s electron and shows its core-related jump after the first removal. In simple main group comparisons this connects configurations with common ionic charges. However, oxidation state is formal electron bookkeeping in a compound, not proof that free ions with those charges exist. Chlorine often has minus one in chlorides but can have positive oxidation states in oxygen compounds; fluorine has minus one in its compounds. Group similarity does not mean a single allowed oxidation state for every member.",
+      "points": [
+        "Na · 3s¹ · After first removal",
+        "Mg · 3s² · After second removal",
+        "Al · 3s² 3p¹ · After third removal"
+      ],
+      "board": {
+        "heading": "Successive removal and valence patterns",
+        "columns": [
+          "Atom",
+          "Outer electrons",
+          "Core-related jump"
+        ],
+        "rows": [
+          [
+            "Na",
+            "3s¹",
+            "After first removal"
+          ],
+          [
+            "Mg",
+            "3s²",
+            "After second removal"
+          ],
+          [
+            "Al",
+            "3s² 3p¹",
+            "After third removal"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Electron gain and electronegativity",
+      "formula": "Electron gain enthalpy and bond attraction are different",
+      "script": "For electron gain enthalpy, write a gaseous atom plus an electron forming a gaseous negative ion. If energy is released, the enthalpy change is negative under this convention. Some electron affinity tables instead report the positive magnitude of released energy. Read the sign convention before ordering values. Chlorine has a more negative first electron gain enthalpy than fluorine. Fluorine's compact two p electron cloud produces stronger repulsion for the incoming electron, so the simple expectation from atomic size alone fails. Adding a second electron to an already negative isolated gaseous ion requires energy because the incoming electron encounters repulsion. Formation of a stable ionic solid can still be favourable when the entire energy cycle, including lattice formation, is considered. Electronegativity is different: it describes an atom's attraction for shared electron density in a bond on a chosen scale. Fluorine is more electronegative than chlorine even though chlorine's first electron gain is more exothermic. Keep process energies, sign conventions and bond-based scales in separate columns.",
+      "points": [
+        "First electron gain · X(g) + e⁻ → X⁻(g) · Cl more negative than F",
+        "Second electron gain · X⁻(g) + e⁻ → X²⁻(g) · Requires energy",
+        "Electronegativity · Shared bond electrons · F greater than Cl"
+      ],
+      "board": {
+        "heading": "Electron gain and electronegativity",
+        "columns": [
+          "Quantity",
+          "Meaning",
+          "Key comparison"
+        ],
+        "rows": [
+          [
+            "First electron gain",
+            "X(g) + e⁻ → X⁻(g)",
+            "Cl more negative than F"
+          ],
+          [
+            "Second electron gain",
+            "X⁻(g) + e⁻ → X²⁻(g)",
+            "Requires energy"
+          ],
+          [
+            "Electronegativity",
+            "Shared bond electrons",
+            "F greater than Cl"
+          ]
+        ]
+      },
+      "speechInput": "For electron gain enthalpy, write a gaseous atom plus an electron forming a gaseous negative ion. If energy is released, the enthalpy change is negative under this convention. Some electron affinity tables instead report the positive magnitude of released energy. Read the sign convention before ordering values. Chlorine has a more negative first electron gain enthalpy than fluorine. Fluorine's compact two p electron cloud produces stronger repulsion for the incoming electron, so the simple expectation from atomic size alone fails. Adding a second electron to an already negative isolated gaseous ion requires energy because the incoming electron encounters repulsion. Formation of a stable ionic solid can still be favourable when the entire energy cycle, including lattice formation, is considered. Electronegativity is different: it describes an atom's attraction for shared electron density in a bond on a chosen scale. Fluorine is more electronegative than chlorine even though chlorine's first electron gain is more exothermic. Keep process energies, sign conventions and bond-based scales in separate columns when revising these trends.",
+      "recordingNote": "Closing reminder shortened by TTS; transcript follows independently verified audio. Exact requested input retained for cache provenance."
+    },
+    {
+      "title": "Reactivity, oxides and trend limits",
+      "formula": "Use trends with the stated reaction conditions",
+      "script": "Metallic character generally decreases across a main group period and increases down a group. This supports broad changes in oxide behaviour. Across period three, sodium oxide and magnesium oxide are basic, aluminium oxide is amphoteric, and several nonmetal oxides are acidic. Amphoteric means reacting with both acids and bases under suitable conditions; it does not mean the oxide has no acid base chemistry. Do not extend a broad trend to every oxidation state or every oxide without checking the compound. Alkali metals generally become easier to ionize down the group, but a measured reaction depends on more than ionization alone. Hydration energies, bond breaking, physical state and kinetics can change comparisons. Halogen oxidizing strength in ordinary aqueous chemistry broadly decreases down the group, yet electron gain enthalpy by itself cannot supply the full explanation. For a ranking question, first identify the property, then compare configurations, shells and the relevant process. Finally inspect known exceptions and conditions. The practice questions combine those steps; further group chemistry and detailed transition element trends require separate study.",
+      "points": [
+        "Na₂O; MgO · Basic · React with acids",
+        "Al₂O₃ · Amphoteric · Acids and bases",
+        "SO₃ · Acidic · Acid-forming oxide"
+      ],
+      "board": {
+        "heading": "Reactivity, oxides and trend limits",
+        "columns": [
+          "Period-three oxide",
+          "Broad behaviour",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "Na₂O; MgO",
+            "Basic",
+            "React with acids"
+          ],
+          [
+            "Al₂O₃",
+            "Amphoteric",
+            "Acids and bases"
+          ],
+          [
+            "SO₃",
+            "Acidic",
+            "Acid-forming oxide"
+          ]
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The modern periodic law is based on:",
+      "options": [
+        "Atomic mass alone",
+        "Atomic number",
+        "Neutron count",
+        "Molecular mass"
+      ],
+      "answer": 1,
+      "explanation": "Atomic number determines the nuclear charge and electronic pattern underlying periodic properties."
+    },
+    {
+      "question": "Which is smallest in the listed ten-electron series?",
+      "options": [
+        "O2-",
+        "F-",
+        "Na+",
+        "Mg2+"
+      ],
+      "answer": 3,
+      "explanation": "Mg2+ has the largest nuclear charge while all four species retain ten electrons."
+    },
+    {
+      "question": "Which exception to a simple increasing first-ionization trend is correct?",
+      "options": [
+        "B > Be",
+        "O > N",
+        "Be > B",
+        "Na > Ne"
+      ],
+      "answer": 2,
+      "explanation": "B loses a 2p electron more readily than Be loses a 2s electron, so Be has the higher value."
+    },
+    {
+      "question": "For exothermic X(g) + e- -> X-(g), electron gain enthalpy is:",
+      "options": [
+        "Negative",
+        "Always zero",
+        "Positive",
+        "A radius"
+      ],
+      "answer": 0,
+      "explanation": "The system releases energy, so its enthalpy change is negative under this stated convention."
+    },
+    {
+      "question": "A [Ne]3s2 atom has the largest core-related jump after removal of:",
+      "options": [
+        "One outer electron",
+        "Two outer electrons",
+        "Ten outer electrons",
+        "No electrons"
+      ],
+      "answer": 1,
+      "explanation": "Two outer electrons are removed before ionization starts removing the neon-like core."
+    },
+    {
+      "question": "Which comparison is correct?",
+      "options": [
+        "Fluorine has lower electronegativity than chlorine",
+        "Electron gain enthalpy equals electronegativity",
+        "Second electron gain is always exothermic",
+        "Chlorine's first electron gain enthalpy is more negative than fluorine's"
+      ],
+      "answer": 3,
+      "explanation": "Compact fluorine 2p orbitals create stronger added-electron repulsion; this does not reverse electronegativity."
+    },
+    {
+      "question": "Helium has configuration 1s2 but is placed in:",
+      "options": [
+        "Group 2",
+        "Group 1",
+        "Group 18",
+        "Group 17"
+      ],
+      "answer": 2,
+      "explanation": "Its closed-shell chemistry places helium with the noble gases in group 18."
+    },
+    {
+      "question": "Which radius comparison is normally valid?",
+      "options": [
+        "Na+ is larger than Na",
+        "Cl- is smaller than Cl",
+        "All radius definitions are interchangeable",
+        "Na+ is smaller than Na"
+      ],
+      "answer": 3,
+      "explanation": "Sodium loses its outer shell on forming Na+, producing a smaller ion."
+    },
+    {
+      "question": "Which period-three oxide is amphoteric?",
+      "options": [
+        "Al2O3",
+        "Na2O",
+        "MgO",
+        "SO3"
+      ],
+      "answer": 0,
+      "explanation": "Aluminium oxide reacts with both acids and bases under suitable conditions."
+    },
+    {
+      "question": "Which is smaller within the same ten-electron series?",
+      "options": [
+        "Mg2+ compared with Al3+",
+        "Al3+ compared with Mg2+",
+        "Both must be identical",
+        "Electron count is different"
+      ],
+      "answer": 1,
+      "explanation": "Both have ten electrons; Al3+ has the greater nuclear charge and smaller radius."
+    }
+  ]
+}

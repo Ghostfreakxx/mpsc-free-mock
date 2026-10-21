@@ -1,0 +1,436 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.680
+Hey, welcome back.
+
+00:00:02.400 --> 00:00:04.880
+A capacitor separates charge between conductors.
+
+00:00:05.620 --> 00:00:10.940
+In our simple two plate model, one plate carries plus Q and the other minus Q.
+
+00:00:11.720 --> 00:00:15.660
+The pair can have zero net charge while still storing electrical energy.
+
+00:00:16.580 --> 00:00:20.840
+When we say the charge on the capacitor is Q, we mean the magnitude on one
+
+00:00:20.840 --> 00:00:22.660
+plate, not twice that magnitude.
+
+00:00:23.560 --> 00:00:27.600
+Capacitance is charge magnitude divided by the potential difference magnitude
+
+00:00:27.600 --> 00:00:28.860
+between the conductors.
+
+00:00:29.760 --> 00:00:31.560
+One farad means one coulomb per volt.
+
+00:00:32.260 --> 00:00:35.520
+It tells us how much separated charge this arrangement holds for a given
+
+00:00:35.520 --> 00:00:35.880
+voltage.
+
+00:00:36.820 --> 00:00:40.840
+For an ideal linear capacitor with fixed geometry and material, capacitance
+
+00:00:40.840 --> 00:00:43.740
+doesn't increase just because we apply a higher voltage.
+
+00:00:44.660 --> 00:00:46.100
+Charge increases in the same ratio.
+
+00:00:46.900 --> 00:00:51.220
+If capacitance is three microfarads and voltage is four volts, each plate
+
+00:00:51.220 --> 00:00:53.400
+carries twelve microcoulombs in magnitude.
+
+00:00:54.120 --> 00:00:58.160
+Double voltage to eight volts and charge becomes twenty four microcoulombs,
+
+00:00:58.880 --> 00:01:00.780
+while capacitance remains three microfarads.
+
+00:01:01.680 --> 00:01:05.820
+A microfarad is one millionth of a farad, whereas a picofarad is one
+
+00:01:05.820 --> 00:01:06.360
+trillionth.
+
+00:01:07.000 --> 00:01:08.060
+Keep those prefixes straight.
+
+00:01:08.980 --> 00:01:13.360
+In electrostatic equilibrium the conducting plates are each equipotential, and
+
+00:01:13.360 --> 00:01:15.500
+field within their conducting material is zero.
+
+00:01:16.260 --> 00:01:18.480
+The insulating gap can still have a field.
+
+00:01:19.320 --> 00:01:23.532
+Real capacitors have leakage and voltage limits, so this ideal linear model
+
+00:01:23.532 --> 00:01:23.700
+has
+
+00:01:23.700 --> 00:01:24.640
+a range of validity.
+
+00:01:25.480 --> 00:01:30.297
+For JEE, first identify the two conductors, the voltage between them and what
+
+00:01:30.297 --> 00:01:30.360
+Q
+
+00:01:30.360 --> 00:01:32.240
+represents before applying the ratio.
+
+00:01:32.448 --> 00:01:36.368
+Let's derive the parallel plate result rather than treating it as magic.
+
+00:01:37.328 --> 00:01:42.448
+Take large opposite plates with charge magnitudes Q, area A and separation d,
+
+00:01:42.728 --> 00:01:43.988
+with vacuum in the gap.
+
+00:01:44.968 --> 00:01:49.548
+Well away from the edges, the combined field is approximately Q divided by
+
+00:01:49.548 --> 00:01:50.868
+epsilon zero times area.
+
+00:01:51.648 --> 00:01:54.448
+Potential difference magnitude is field times separation.
+
+00:01:55.308 --> 00:01:59.568
+Divide Q by that potential difference, and capacitance becomes epsilon zero
+
+00:01:59.568 --> 00:02:01.608
+times area divided by separation.
+
+00:02:02.648 --> 00:02:05.508
+Charge cancels, because the geometry sets the ratio.
+
+00:02:06.168 --> 00:02:09.748
+Bigger plates spread a given charge over more area and reduce the voltage
+
+00:02:09.748 --> 00:02:10.728
+needed to hold it.
+
+00:02:11.468 --> 00:02:15.128
+Bringing plates closer also lowers that voltage, increasing capacitance.
+
+00:02:16.308 --> 00:02:19.888
+Use area zero point zero two square meters and separation one millimeter.
+
+00:02:20.368 --> 00:02:23.788
+With epsilon zero equal to eight point eight five times ten to the minus
+
+00:02:23.788 --> 00:02:27.288
+twelve, capacitance is one hundred and seventy seven picofarads.
+
+00:02:28.148 --> 00:02:31.528
+At twelve volts the gap field is twelve thousand newtons per coulomb.
+
+00:02:32.288 --> 00:02:36.331
+This model ignores edge fringing and assumes the gap is small relative to
+
+00:02:36.331 --> 00:02:36.608
+plate
+
+00:02:36.608 --> 00:02:37.088
+dimensions.
+
+00:02:37.608 --> 00:02:42.088
+If a uniform linear dielectric completely fills the gap, multiply the vacuum
+
+00:02:42.088 --> 00:02:44.768
+capacitance by its relative permittivity, kappa.
+
+00:02:45.368 --> 00:02:49.228
+Partial filling requires a different geometry calculation; don't apply that
+
+00:02:49.228 --> 00:02:51.408
+multiplier to the entire capacitor automatically.
+
+00:02:52.428 --> 00:02:56.208
+Also, changing separation has different consequences depending on whether a
+
+00:02:56.208 --> 00:02:59.428
+battery maintains voltage or whether the disconnected plates retain their
+
+00:02:59.428 --> 00:02:59.648
+charge.
+
+00:03:00.568 --> 00:03:03.528
+We'll use that fixed quantity reasoning throughout the rest of this class.
+
+00:03:03.768 --> 00:03:07.664
+In a network, identify connected nodes rather than relying on how close
+
+00:03:07.664 --> 00:03:08.048
+symbols
+
+00:03:08.048 --> 00:03:09.148
+look on the page.
+
+00:03:10.028 --> 00:03:13.348
+Capacitors are in parallel when both connect across the same two nodes.
+
+00:03:14.028 --> 00:03:18.348
+They share voltage, so total separated charge is the sum of each capacitance
+
+00:03:18.348 --> 00:03:19.568
+times that voltage.
+
+00:03:20.428 --> 00:03:22.368
+Equivalent capacitance is the sum.
+
+00:03:23.108 --> 00:03:27.468
+Two and three microfarads in parallel across ten volts give five microfarads
+
+00:03:27.468 --> 00:03:31.528
+overall, with charges twenty and thirty microcoulombs.
+
+00:03:32.188 --> 00:03:36.348
+Now connect the two capacitors in a simple series chain that starts uncharged,
+
+00:03:36.568 --> 00:03:39.448
+with an isolated neutral intermediate node.
+
+00:03:40.588 --> 00:03:42.308
+The plate charge magnitudes are equal.
+
+00:03:43.228 --> 00:03:47.401
+Their voltage drops add, so the reciprocal of equivalent capacitance is the
+
+00:03:47.401 --> 00:03:47.568
+sum
+
+00:03:47.568 --> 00:03:49.108
+of the individual reciprocals.
+
+00:03:50.488 --> 00:03:53.808
+Two and three microfarads in series give one point two microfarads.
+
+00:03:54.768 --> 00:03:58.848
+Across ten volts, each capacitor carries twelve microcoulombs in magnitude.
+
+00:03:59.588 --> 00:04:04.155
+Their voltages are six volts across the two microfarad capacitor and four
+
+00:04:04.155 --> 00:04:04.468
+volts
+
+00:04:04.468 --> 00:04:06.268
+across the three microfarad capacitor.
+
+00:04:07.488 --> 00:04:11.188
+The smaller capacitance gets the larger voltage, because voltage equals the
+
+00:04:11.188 --> 00:04:13.088
+common charge divided by capacitance.
+
+00:04:14.528 --> 00:04:17.788
+Pause and check: six plus four returns the applied ten volts.
+
+00:04:18.908 --> 00:04:22.908
+Series equivalent capacitance is smaller than either component; parallel
+
+00:04:22.908 --> 00:04:24.348
+equivalent is larger than either.
+
+00:04:24.348 --> 00:04:29.368
+If an internal node already has net charge or another connection, the simple
+
+00:04:29.368 --> 00:04:30.988
+equal charge assumption may fail.
+
+00:04:32.228 --> 00:04:36.928
+For more complicated JEE networks, label nodes, simplify valid series or
+
+00:04:36.928 --> 00:04:40.988
+parallel groups, and then work backward to recover individual charges and
+
+00:04:40.988 --> 00:04:41.268
+voltages.
+
+00:04:42.216 --> 00:04:47.556
+Why is stored energy one half Q V instead of Q V?
+
+00:04:47.556 --> 00:04:52.016
+While charging an initially uncharged ideal capacitor, the voltage rises from
+
+00:04:52.016 --> 00:04:53.556
+zero to its final value.
+
+00:04:54.376 --> 00:04:58.696
+Each small added charge needs work equal to the voltage at that moment times
+
+00:04:58.696 --> 00:04:59.536
+the added charge.
+
+00:05:00.596 --> 00:05:04.656
+Integrating those contributions gives Q squared divided by twice capacitance.
+
+00:05:05.816 --> 00:05:11.696
+Substitute Q equals C V to get one half C V squared, or one half Q V.
+
+00:05:11.696 --> 00:05:14.956
+These are equivalent expressions, not three different kinds of energy.
+
+00:05:15.896 --> 00:05:20.496
+For two microfarads at ten volts, stored energy is one hundred microjoules and
+
+00:05:20.496 --> 00:05:21.896
+charge is twenty microcoulombs.
+
+00:05:22.616 --> 00:05:26.796
+If this capacitor stays disconnected with no leakage and its plate separation
+
+00:05:26.796 --> 00:05:28.656
+doubles, capacitance halves.
+
+00:05:29.316 --> 00:05:32.356
+Charge stays fixed, so energy doubles and voltage doubles.
+
+00:05:32.976 --> 00:05:36.136
+An external agent must do work to pull the attracting plates apart.
+
+00:05:36.996 --> 00:05:41.076
+If instead an ideal battery holds the voltage at ten volts while separation
+
+00:05:41.076 --> 00:05:45.576
+doubles, capacitance halves, plate charge halves and stored energy halves.
+
+00:05:46.156 --> 00:05:49.944
+In that case charge flows back toward the source, and the source belongs in
+
+00:05:49.944 --> 00:05:50.096
+the
+
+00:05:50.096 --> 00:05:50.736
+energy account.
+
+00:05:51.456 --> 00:05:54.636
+Don't infer mechanical work from the capacitor energy change alone.
+
+00:05:55.436 --> 00:06:00.296
+In vacuum, the field energy per unit volume is one half epsilon zero times
+
+00:06:00.296 --> 00:06:00.936
+field squared.
+
+00:06:01.276 --> 00:06:05.774
+For the ideal parallel plate geometry, multiplying by the gap volume
+
+00:06:05.774 --> 00:06:06.436
+reproduces
+
+00:06:06.436 --> 00:06:07.516
+the capacitor energy.
+
+00:06:08.316 --> 00:06:11.696
+Your formula choice should follow the constraint, not whichever expression
+
+00:06:11.696 --> 00:06:12.516
+looks shortest.
+
+00:06:12.816 --> 00:06:17.056
+A dielectric is an insulating material whose charges respond to the electric
+
+00:06:17.056 --> 00:06:18.316
+field through polarization.
+
+00:06:19.316 --> 00:06:21.456
+Opposite bound charges appear near its faces.
+
+00:06:22.256 --> 00:06:25.596
+They are not the same as freely conducting charges moving across the gap.
+
+00:06:26.316 --> 00:06:30.696
+With fixed free plate charge, polarization reduces the gap field and voltage,
+
+00:06:31.216 --> 00:06:33.616
+so the ratio Q over V increases.
+
+00:06:34.276 --> 00:06:38.596
+Let's completely fill a capacitor's gap with a uniform linear dielectric of
+
+00:06:38.596 --> 00:06:41.216
+kappa three, keeping plate geometry unchanged.
+
+00:06:41.996 --> 00:06:46.778
+Start with two microfarads at ten volts: charge twenty microcoulombs and
+
+00:06:46.778 --> 00:06:47.176
+energy
+
+00:06:47.176 --> 00:06:48.376
+one hundred microjoules.
+
+00:06:49.396 --> 00:06:51.576
+Disconnect the battery first, assuming no leakage.
+
+00:06:52.576 --> 00:06:56.576
+Capacitance becomes six microfarads, charge remains twenty microcoulombs,
+
+00:06:57.416 --> 00:07:01.296
+voltage becomes about three point three three volts, and energy becomes about
+
+00:07:01.296 --> 00:07:02.876
+thirty three point three microjoules.
+
+00:07:03.696 --> 00:07:08.276
+The energy reduction is available for mechanical work and any losses; it has
+
+00:07:08.276 --> 00:07:08.816
+not vanished.
+
+00:07:09.576 --> 00:07:13.496
+Now repeat from the same initial state but keep the ideal ten volt battery
+
+00:07:13.496 --> 00:07:14.016
+connected.
+
+00:07:15.176 --> 00:07:19.176
+Capacitance still becomes six microfarads, but voltage stays ten volts.
+
+00:07:20.316 --> 00:07:23.736
+Charge increases to sixty microcoulombs and stored energy to three hundred
+
+00:07:23.736 --> 00:07:24.376
+microjoules.
+
+00:07:25.436 --> 00:07:30.036
+The battery supplies additional energy, so the increased capacitor energy does
+
+00:07:30.036 --> 00:07:32.716
+not contradict attraction pulling the dielectric inward.
+
+00:07:33.176 --> 00:07:38.816
+With fixed gap and fixed voltage, the average gap field stays V over d; the
+
+00:07:38.816 --> 00:07:41.616
+battery's extra free charge compensates for polarization.
+
+00:07:42.756 --> 00:07:45.276
+Real materials also have dielectric breakdown limits.
+
+00:07:46.056 --> 00:07:50.876
+Our final checklist is: state the geometry, name the material model, identify
+
+00:07:50.876 --> 00:07:56.008
+whether Q or V is fixed, then calculate capacitance, charge, voltage and
+
+00:07:56.008 --> 00:07:56.436
+energy
+
+00:07:56.676 --> 00:07:57.056
+consistently.

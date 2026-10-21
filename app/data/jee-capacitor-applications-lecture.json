@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Capacitor applications: charge sharing and dielectric geometry",
+  "sources": [
+    {
+      "title": "OpenStax: energy stored in a capacitor",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/8-3-energy-stored-in-a-capacitor"
+    },
+    {
+      "title": "OpenStax: capacitor with a dielectric",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/8-4-capacitor-with-a-dielectric"
+    },
+    {
+      "title": "Official JEE Main 2026 syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Corresponding plates of 2 microF at 12 V and uncharged 4 microF are joined. What is the settled voltage?",
+      "options": [
+        "12 V",
+        "4 V",
+        "6 V",
+        "8 V"
+      ],
+      "answer": 1,
+      "explanation": "The isolated joined node has 24 microC and total capacitance 6 microF. Charge conservation gives 24/6 = 4 V."
+    },
+    {
+      "question": "A kappa=3 dielectric covers half the area and the full gap. What is C/C0, ignoring fringing?",
+      "options": [
+        "3",
+        "1.5",
+        "0.5",
+        "2"
+      ],
+      "answer": 3,
+      "explanation": "The two area regions share the same voltage and add in parallel: 0.5 + 3 x 0.5 = 2."
+    },
+    {
+      "question": "A kappa=3 slab covers all the area and half the gap. What is C/C0, ignoring fringing?",
+      "options": [
+        "1.5",
+        "2",
+        "3",
+        "0.75"
+      ],
+      "answer": 0,
+      "explanation": "Successive thickness layers add voltage drops. The ratio is 1/(0.5+0.5/3) = 1.5, not the half-area result."
+    },
+    {
+      "question": "At fixed 10 V, capacitance rises from 2 to 6 microF during lossless quasistatic insertion. What is external work?",
+      "options": [
+        "+200 microJ",
+        "+400 microJ",
+        "-200 microJ",
+        "-400 microJ"
+      ],
+      "answer": 2,
+      "explanation": "The battery supplies 400 microJ but stored energy rises by 200 microJ. External work is delta U minus battery work: -200 microJ."
+    },
+    {
+      "question": "A +6 microC node lies between 2 microF to 12 V and 4 microF to 0 V. What is its potential?",
+      "options": [
+        "4 V",
+        "5 V",
+        "6 V",
+        "7 V"
+      ],
+      "answer": 1,
+      "explanation": "Signed node charge gives 2(V_B-12)+4V_B=6. Solving gives 5 V; equal capacitor charge magnitudes would incorrectly assume a neutral node."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Charge sharing: conserve the signed node charge",
+      "formula": "V_final=(C1 V1+C2 V2)/(C1+C2); U=CV^2/2",
+      "points": [
+        "Use one consistent voltage orientation before joining plates.",
+        "Charge is conserved on the isolated joined node.",
+        "Real equilibration releases stored energy; charge does not disappear."
+      ],
+      "script": "Hey, welcome back. Two capacitors share charge, but they do not automatically share energy equally. Let's see why. Start with a two microfarad capacitor at twelve volts and an uncharged four microfarad capacitor. Disconnect any battery, then join corresponding plates so the capacitors end up in parallel. The joined positive node initially holds twenty four microcoulombs. After the real circuit settles, both capacitors have the same voltage. Why? Their plates connect to the same two nodes. Total capacitance is six microfarads, so final voltage is twenty four divided by six, four volts. The two microfarad capacitor now holds eight microcoulombs and the four microfarad capacitor sixteen. Their sum is still twenty four. Charge conservation checks. Now pause and predict: is stored energy also unchanged? Initial energy is one half times two microfarads times twelve volts squared, one hundred forty four microjoules. Final energy is one half times six microfarads times four volts squared, forty eight microjoules. Ninety six microjoules have left the electric-field store. During a real transient, resistance and possibly radiation carry that energy away. The charge has not vanished. An exactly zero-resistance, zero-inductance connection does not describe the settling transient, so we assume eventual real equilibration. For the general case, final voltage is C one V one plus C two V two, divided by the sum of capacitances. Both initial voltages must use the same orientation. If the second capacitor is reversed, its voltage enters with a negative sign. Do not add positive charge magnitudes just because they look easier. The released energy, for fixed capacitances and no battery, is one half times C one C two divided by their sum, times the initial voltage difference squared. It is nonnegative and becomes zero when the initial voltages already agree. Those two checks help catch sign mistakes before they become wrong answers."
+    },
+    {
+      "title": "Partial dielectric filling: area versus thickness",
+      "formula": "Area fraction f: C=C0[(1-f)+kappa f]; thickness fraction g: C=C0/[1-g+g/kappa]",
+      "points": [
+        "Side-by-side full-gap regions share voltage and act in parallel.",
+        "Successive thickness layers add voltage drops and act in series.",
+        "Half-filled must specify the geometry; neglect fringing only when stated."
+      ],
+      "script": "Now a phrase that can cause trouble: half-filled with dielectric. Half of what? Draw the geometry before selecting a formula. First, the dielectric covers half the plate area and spans the full separation. The remaining area contains vacuum. Both regions run between the same two plates, so they have the same voltage. Their capacitances add in parallel. If empty capacitance is C zero and area fraction is f, the total is C zero times one minus f plus kappa times f. Kappa is the relative permittivity. With half the area filled and kappa three, the multiplier is one half plus three halves, two. An empty four microfarad capacitor becomes eight microfarads. At equal voltage, the dielectric region stores more free charge; do not force equal charges in the two regions. Now rotate the arrangement mentally. A slab covers the whole area, but only half the plate separation. The rest of the separation is vacuum. Each field line passes through both layers in succession. Voltage drops add, so these layers act in series. Assume no free charge at the internal interface. The normal electric displacement is continuous, and field in the dielectric is the vacuum field divided by kappa. The voltage is vacuum field times vacuum thickness, plus dielectric field times slab thickness. Dividing charge by that total voltage gives capacitance equal to C zero divided by one minus g plus g divided by kappa, where g is the slab thickness fraction. For g one half and kappa three, the multiplier is one point five. Our four microfarad capacitor becomes six microfarads, not eight. Same material, same word half, different result. Check the limits: zero filling gives C zero; complete filling gives kappa C zero; kappa one gives the empty value at every fraction. We assumed linear uniform dielectric and neglected fringing. Real boundary effects can need more detailed treatment. For JEE, the sketch tells you whether to add capacitances or add voltage drops."
+    },
+    {
+      "title": "Battery work and the initially charged middle node",
+      "formula": "Fixed V: W_battery=V^2 delta C; W_external=delta U-W_battery; Q_B=sum[C_i(V_B-V_i)]",
+      "points": [
+        "Connected battery fixes voltage; disconnected capacitor fixes charge.",
+        "External mechanical work is not always the capacitor energy change.",
+        "Equal series charge magnitudes require a neutral internal node in the simple chain."
+      ],
+      "script": "Let's finish with two shortcuts that need conditions. First, dielectric insertion and work. Start with two microfarads at ten volts and insert a dielectric of kappa three completely. Keep the battery connected. Voltage stays ten volts, capacitance becomes six microfarads and charge rises from twenty to sixty microcoulombs. Battery work is voltage times the charge increase: four hundred microjoules. Stored energy rises from one hundred to three hundred microjoules, a change of two hundred. Why are these different? During slow lossless insertion, the field pulls the material inward and an external agent can extract mechanical energy. Energy balance is change in stored energy equals battery work plus external work. External work is therefore minus two hundred microjoules. If we disconnect the battery first, charge stays twenty microcoulombs and no battery work occurs. Final stored energy is about thirty three point three three microjoules, so external work is about minus sixty six point six seven microjoules. These results assume quasistatic motion and negligible losses. State what is fixed and whose work is requested. Second, capacitors in a chain do not always have equal charge magnitudes. Picture two microfarads between a twelve volt terminal and a floating node B, then four microfarads between B and a zero volt terminal. The isolated middle node initially has plus six microcoulombs. Write the charge on each plate attached to B: two times B minus twelve, plus four times B, in microcoulombs. Their sum must equal six. So six B minus twenty four equals six, giving B five volts. The left capacitor has seven volts across it and charge magnitude fourteen microcoulombs. The right has five volts and twenty microcoulombs. On the middle node, signed charges are minus fourteen and plus twenty, summing to the specified plus six. If the node were neutral instead, B would be four volts and both charge magnitudes sixteen microcoulombs. The equal-charge shortcut belongs to that neutral-node case. Our routine is to draw connected nodes, preserve signed charge, and then check the energy transfers separately."
+    }
+  ]
+}

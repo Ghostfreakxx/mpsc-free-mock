@@ -1,0 +1,325 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.860
+Welcome back.
+
+00:00:01.340 --> 00:00:04.520
+Let's connect gravity on the ground with escape into space.
+
+00:00:05.200 --> 00:00:08.040
+Our planet is spherical, and we ignore rotation.
+
+00:00:08.920 --> 00:00:14.580
+Outside it, gravitational force is G times capital M times little m, divided
+
+00:00:14.580 --> 00:00:15.720
+by radius squared.
+
+00:00:16.640 --> 00:00:19.720
+Divide by the test mass to get gravitational acceleration.
+
+00:00:20.660 --> 00:00:24.340
+Radius means distance from the centre, not height above the ground.
+
+00:00:24.340 --> 00:00:27.240
+At height h, radius is R plus h.
+
+00:00:28.160 --> 00:00:29.640
+Surface gravity is g zero.
+
+00:00:30.260 --> 00:00:34.300
+The gravity ratio is R divided by R plus h, all squared.
+
+00:00:35.060 --> 00:00:37.800
+Try a height equal to the planet's radius. Pause.
+
+00:00:38.280 --> 00:00:42.283
+The centre distance doubles, so gravity becomes one quarter of surface
+
+00:00:42.283 --> 00:00:42.740
+gravity.
+
+00:00:43.580 --> 00:00:47.868
+For height much smaller than R, the ratio is approximately one minus two h
+
+00:00:47.868 --> 00:00:48.100
+over
+
+00:00:48.100 --> 00:00:48.340
+R.
+
+00:00:48.880 --> 00:00:50.760
+Do not use that shortcut at height R.
+
+00:00:50.760 --> 00:00:55.240
+Inside a uniform density planet, outer spherical shells cancel their field.
+
+00:00:56.100 --> 00:01:00.020
+Enclosed mass grows as radius cubed, so gravity grows linearly with radius.
+
+00:01:00.600 --> 00:01:04.620
+At depth d, gravity is g zero times one minus d over R.
+
+00:01:05.000 --> 00:01:09.560
+For one quarter of surface gravity, solve one minus d over R equals one
+
+00:01:09.560 --> 00:01:09.780
+quarter.
+
+00:01:10.260 --> 00:01:12.080
+The depth is three quarters of R.
+
+00:01:12.580 --> 00:01:15.880
+The outside height was R; same gravity, different locations.
+
+00:01:16.400 --> 00:01:20.260
+Real Earth has varying density, so the interior line is an ideal model.
+
+00:01:21.000 --> 00:01:22.840
+Now choose potential zero at infinity.
+
+00:01:23.820 --> 00:01:26.580
+Outside, potential V is minus G M over r.
+
+00:01:27.240 --> 00:01:29.140
+Potential energy is little m times V.
+
+00:01:29.940 --> 00:01:34.922
+Moving outward makes energy less negative: lifting from R to two R requires G
+
+00:01:34.922 --> 00:01:34.987
+M
+
+00:01:34.987 --> 00:01:37.800
+m over two R if initial and final speeds are zero.
+
+00:01:38.380 --> 00:01:41.680
+Constant g times m times h works only for small heights.
+
+00:01:42.600 --> 00:01:43.740
+Field and potential are different.
+
+00:01:44.460 --> 00:01:48.140
+Equal masses on opposite sides cancel their fields at the midpoint, but their
+
+00:01:48.140 --> 00:01:49.340
+negative potentials add.
+
+00:01:50.080 --> 00:01:55.213
+Inside our uniform sphere, potential is minus G M times three R squared minus
+
+00:01:55.213 --> 00:01:55.280
+r
+
+00:01:55.280 --> 00:01:57.320
+squared, divided by two R cubed.
+
+00:01:57.980 --> 00:02:02.880
+At the centre, field is zero but potential is minus three G M over two R.
+
+00:02:02.880 --> 00:02:07.060
+Finally, escape needs just enough energy to reach infinity with zero final
+
+00:02:07.060 --> 00:02:07.340
+speed.
+
+00:02:07.340 --> 00:02:12.020
+One half m v squared minus G M m over r equals zero.
+
+00:02:12.800 --> 00:02:17.120
+Escape speed is the square root of two G M over r, independent of test mass.
+
+00:02:17.840 --> 00:02:22.360
+For a radial surface launch at half escape speed, kinetic energy is G M m over
+
+00:02:22.360 --> 00:02:23.660
+four R.
+
+00:02:23.660 --> 00:02:27.200
+Total energy is minus three G M m over four R.
+
+00:02:27.200 --> 00:02:29.220
+At the highest point, speed is zero.
+
+00:02:30.140 --> 00:02:33.740
+Solving gives radius four R over three, hence height R over three.
+
+00:02:34.200 --> 00:02:36.280
+This assumes no drag or later propulsion.
+
+00:02:37.000 --> 00:02:41.320
+A nonradial orbit retains tangential speed at its turning point, so that last
+
+00:02:41.320 --> 00:02:42.680
+step cannot be copied blindly.
+
+00:02:43.104 --> 00:02:46.224
+A satellite keeps falling, yet keeps missing the ground.
+
+00:02:47.164 --> 00:02:48.904
+Gravity changes the direction of its velocity.
+
+00:02:49.564 --> 00:02:54.724
+For a circular orbit, G M m over r squared equals m v squared over r.
+
+00:02:55.364 --> 00:03:00.244
+Cancel mass and one radius: circular speed is the square root of G M over r.
+
+00:03:00.844 --> 00:03:05.784
+Period is circumference divided by speed, giving two pi times the square root
+
+00:03:05.784 --> 00:03:08.304
+of r cubed over G M.
+
+00:03:08.304 --> 00:03:10.624
+Always add the planet's radius to the supplied height.
+
+00:03:11.224 --> 00:03:15.784
+Let's compare equal mass satellites at radii r and four r around the same
+
+00:03:15.784 --> 00:03:16.064
+planet.
+
+00:03:16.664 --> 00:03:18.164
+What happens to speed and period?
+
+00:03:18.164 --> 00:03:20.024
+Pause.
+
+00:03:20.024 --> 00:03:22.964
+Speed halves because it scales as the inverse square root of radius.
+
+00:03:23.924 --> 00:03:27.444
+Period multiplies by eight because it scales as radius to the power three
+
+00:03:27.444 --> 00:03:27.784
+halves.
+
+00:03:28.764 --> 00:03:31.264
+Potential energy is minus G M m over r.
+
+00:03:32.064 --> 00:03:37.324
+Circular kinetic energy is positive G M m over two r, so total energy is
+
+00:03:37.324 --> 00:03:39.164
+negative G M m over two r.
+
+00:03:39.164 --> 00:03:44.764
+In the outer orbit, total energy is minus G M m over eight r.
+
+00:03:44.764 --> 00:03:49.924
+Subtract the inner value: the increase is positive three G M m over eight r.
+
+00:03:49.924 --> 00:03:53.484
+Raising an orbit requires energy even though its circular speed decreases.
+
+00:03:54.304 --> 00:03:58.324
+This difference is not a single burn instruction; actual transfers involve
+
+00:03:58.324 --> 00:03:59.344
+intermediate motion.
+
+00:04:00.244 --> 00:04:03.504
+Astronauts float because they and their spacecraft accelerate together.
+
+00:04:03.504 --> 00:04:08.524
+Gravity still acts, but a freely floating astronaut has nearly zero support
+
+00:04:08.524 --> 00:04:08.904
+force.
+
+00:04:09.704 --> 00:04:13.545
+A geostationary satellite needs a circular equatorial orbit in Earth's
+
+00:04:13.545 --> 00:04:13.984
+rotation
+
+00:04:13.984 --> 00:04:18.304
+direction with the sidereal period, approximately eighty six thousand one
+
+00:04:18.304 --> 00:04:19.604
+hundred sixty four seconds.
+
+00:04:20.184 --> 00:04:22.104
+A one day period alone is insufficient.
+
+00:04:22.824 --> 00:04:24.504
+Now extend the picture to an ellipse.
+
+00:04:25.364 --> 00:04:29.524
+Kepler's first law places the attracting body at one focus, not the centre.
+
+00:04:29.524 --> 00:04:32.744
+The second law gives equal swept areas in equal times.
+
+00:04:32.744 --> 00:04:33.484
+Why?
+
+00:04:34.104 --> 00:04:37.744
+Gravity is central, so its torque about the attracting centre is zero.
+
+00:04:38.544 --> 00:04:42.312
+Angular momentum stays constant, and the areal rate is angular momentum
+
+00:04:42.312 --> 00:04:42.684
+divided
+
+00:04:42.684 --> 00:04:44.124
+by twice the orbiting mass.
+
+00:04:44.804 --> 00:04:48.484
+At nearest and farthest points, velocity is perpendicular to radius.
+
+00:04:49.104 --> 00:04:53.024
+Therefore nearest radius times nearest speed equals farthest radius times
+
+00:04:53.024 --> 00:04:53.644
+farthest speed.
+
+00:04:54.284 --> 00:04:58.164
+If the farthest radius is three times the nearest, the nearest speed is three
+
+00:04:58.164 --> 00:04:59.204
+times the farthest speed.
+
+00:04:59.884 --> 00:05:02.064
+Equal areas do not mean equal distances.
+
+00:05:02.624 --> 00:05:07.564
+Kepler's third law says period squared scales as semi major axis cubed for
+
+00:05:07.564 --> 00:05:09.764
+bodies around the same dominant central mass.
+
+00:05:10.444 --> 00:05:14.656
+With nearest radius R and farthest radius three R, the semi major axis is
+
+00:05:14.656 --> 00:05:14.944
+their
+
+00:05:14.944 --> 00:05:16.984
+average, two R.
+
+00:05:16.984 --> 00:05:20.644
+Compared with a circle of radius R, the period is two times the square root of
+
+00:05:20.644 --> 00:05:20.924
+two.
+
+00:05:21.644 --> 00:05:26.584
+Elliptical total energy is minus G M m over twice the semi major axis, giving
+
+00:05:26.584 --> 00:05:28.704
+minus G M m over four R here.
+
+00:05:28.704 --> 00:05:32.364
+Do not replace that axis by the changing instantaneous radius.
+
+00:05:33.144 --> 00:05:36.244
+These are ideal two body results with negligible satellite mass.
+
+00:05:37.044 --> 00:05:40.884
+Use the written lesson for additional steps, then test the radius, energy and
+
+00:05:40.884 --> 00:05:41.808
+model assumptions before trusting an answer.

@@ -1,0 +1,595 @@
+{
+  "duration": 315.12000000000927,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 99.91200000000289
+    },
+    {
+      "start": 99.91200000000289,
+      "end": 206.71200000000604
+    },
+    {
+      "start": 206.71200000000604,
+      "end": 315.12000000000927
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.940000057220459,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.5,
+      "end": 6.260000228881836,
+      "text": "A diode problem is really a circuit problem plus a consistency check.",
+      "chapter": 0
+    },
+    {
+      "start": 7.099999904632568,
+      "end": 11.215384721755981,
+      "text": "Use a stated zero point seven volt forward drop model, with reverse leakage",
+      "chapter": 0
+    },
+    {
+      "start": 11.215384721755981,
+      "end": 11.380000114440918,
+      "text": "and",
+      "chapter": 0
+    },
+    {
+      "start": 11.380000114440918,
+      "end": 12.199999809265137,
+      "text": "breakdown neglected.",
+      "chapter": 0
+    },
+    {
+      "start": 13.140000343322754,
+      "end": 15.800000190734863,
+      "text": "Connect a source through one kilo ohm to an output node.",
+      "chapter": 0
+    },
+    {
+      "start": 16.34000015258789,
+      "end": 20.360000610351562,
+      "text": "From that node to ground, place a ten kilo ohm load and a diode in parallel.",
+      "chapter": 0
+    },
+    {
+      "start": 20.899999618530273,
+      "end": 23.239999771118164,
+      "text": "Its anode is at the node and cathode at ground.",
+      "chapter": 0
+    },
+    {
+      "start": 24.079999923706055,
+      "end": 25.639999389648438,
+      "text": "Start with a positive five volt source.",
+      "chapter": 0
+    },
+    {
+      "start": 26.18000030517578,
+      "end": 29.799999237060547,
+      "text": "If the diode were off, the divider would give about four point five five volts",
+      "chapter": 0
+    },
+    {
+      "start": 29.799999237060547,
+      "end": 30.299999237060547,
+      "text": "at the node.",
+      "chapter": 0
+    },
+    {
+      "start": 31,
+      "end": 33.97999954223633,
+      "text": "That would forward bias our diode, so off is inconsistent.",
+      "chapter": 0
+    },
+    {
+      "start": 34.7599983215332,
+      "end": 37.619998931884766,
+      "text": "With the diode on, output is zero point seven volts.",
+      "chapter": 0
+    },
+    {
+      "start": 38.29999923706055,
+      "end": 42.53000068664551,
+      "text": "The series resistor current is five minus zero point seven, divided by one",
+      "chapter": 0
+    },
+    {
+      "start": 42.53000068664551,
+      "end": 44.58000183105469,
+      "text": "thousand, or four point three milliamperes.",
+      "chapter": 0
+    },
+    {
+      "start": 45.060001373291016,
+      "end": 47,
+      "text": "But does all that current enter the diode?",
+      "chapter": 0
+    },
+    {
+      "start": 47.70000076293945,
+      "end": 48.880001068115234,
+      "text": "Pause and check the load branch.",
+      "chapter": 0
+    },
+    {
+      "start": 49.36000061035156,
+      "end": 53.85333251953125,
+      "text": "The load takes zero point seven divided by ten thousand amperes, or zero point",
+      "chapter": 0
+    },
+    {
+      "start": 53.85333251953125,
+      "end": 55.099998474121094,
+      "text": "zero seven milliamperes.",
+      "chapter": 0
+    },
+    {
+      "start": 56.619998931884766,
+      "end": 59.15999984741211,
+      "text": "Kirchhoff's current law leaves four point two three milliamperes through the",
+      "chapter": 0
+    },
+    {
+      "start": 59.15999984741211,
+      "end": 60.5,
+      "text": "diode, in its allowed direction.",
+      "chapter": 0
+    },
+    {
+      "start": 61.2599983215332,
+      "end": 63.540000915527344,
+      "text": "Now change the source to negative zero point five volts.",
+      "chapter": 0
+    },
+    {
+      "start": 64.18000030517578,
+      "end": 68.5199966430664,
+      "text": "An on assumption would require a negative forward diode current, so reject it.",
+      "chapter": 0
+    },
+    {
+      "start": 68.87999725341797,
+      "end": 72.68246041322367,
+      "text": "With the diode off, the divider gives output negative zero point four five",
+      "chapter": 0
+    },
+    {
+      "start": 72.68246041322367,
+      "end": 72.88799896240235,
+      "text": "four",
+      "chapter": 0
+    },
+    {
+      "start": 72.88799896240235,
+      "end": 73.95999908447266,
+      "text": "five volts approximately.",
+      "chapter": 0
+    },
+    {
+      "start": 74.55999755859375,
+      "end": 76.55999755859375,
+      "text": "That reverse biases the diode consistently.",
+      "chapter": 0
+    },
+    {
+      "start": 76.73999786376953,
+      "end": 81.0199966430664,
+      "text": "We did not simply clamp every output to zero point seven regardless of input.",
+      "chapter": 0
+    },
+    {
+      "start": 81.9000015258789,
+      "end": 86.13999938964844,
+      "text": "Label the diode orientation, assume a state, solve the remaining circuit, and",
+      "chapter": 0
+    },
+    {
+      "start": 86.13999938964844,
+      "end": 88.13999938964844,
+      "text": "verify the resulting voltage and current.",
+      "chapter": 0
+    },
+    {
+      "start": 88.87999725341797,
+      "end": 92.9800033569336,
+      "text": "Real diode curves are smooth and temperature dependent; zero point seven is",
+      "chapter": 0
+    },
+    {
+      "start": 92.9800033569336,
+      "end": 95.33999633789062,
+      "text": "only the chosen approximation for this exercise.",
+      "chapter": 0
+    },
+    {
+      "start": 96.0999984741211,
+      "end": 99.62000274658203,
+      "text": "Any practical circuit also needs current limits and component ratings.",
+      "chapter": 0
+    },
+    {
+      "start": 100.63200002861312,
+      "end": 104.19200020981124,
+      "text": "A Zener does not hold its rated voltage under every possible load.",
+      "chapter": 1
+    },
+    {
+      "start": 104.81200009537032,
+      "end": 108.41200000000289,
+      "text": "In the simplified regulator, a series resistor supplies a parallel combination",
+      "chapter": 1
+    },
+    {
+      "start": 108.41200000000289,
+      "end": 110.91200000000289,
+      "text": "of the reverse biased Zener and the load.",
+      "chapter": 1
+    },
+    {
+      "start": 111.87200003814986,
+      "end": 115.59200030517867,
+      "text": "Use Zener voltage five point one volts, series resistance three hundred thirty",
+      "chapter": 1
+    },
+    {
+      "start": 115.59200030517867,
+      "end": 118.05199938965133,
+      "text": "ohms and load resistance one kilo ohm.",
+      "chapter": 1
+    },
+    {
+      "start": 118.67200022888473,
+      "end": 122.69199941508265,
+      "text": "At twelve volts input, series current is six point nine divided by three",
+      "chapter": 1
+    },
+    {
+      "start": 122.69199941508265,
+      "end": 126.17200022888473,
+      "text": "hundred thirty, or about twenty point nine zero nine milliamperes.",
+      "chapter": 1
+    },
+    {
+      "start": 126.53200083923629,
+      "end": 129.1720002288847,
+      "text": "The load takes five point one milliamperes.",
+      "chapter": 1
+    },
+    {
+      "start": 129.1720002288847,
+      "end": 132.75200015259077,
+      "text": "Zener current is the difference, about fifteen point eight zero nine",
+      "chapter": 1
+    },
+    {
+      "start": 132.75200015259077,
+      "end": 133.35199862671186,
+      "text": "milliamperes.",
+      "chapter": 1
+    },
+    {
+      "start": 134.35199862671186,
+      "end": 138.41200000000288,
+      "text": "Suppose our specified usable Zener window is five to twenty five milliamperes.",
+      "chapter": 1
+    },
+    {
+      "start": 139.03199893188764,
+      "end": 140.7319996948271,
+      "text": "The nominal point is inside it.",
+      "chapter": 1
+    },
+    {
+      "start": 141.19199877929975,
+      "end": 145.67199959310184,
+      "text": "To keep that same load regulated, minimum input is five point one plus three",
+      "chapter": 1
+    },
+    {
+      "start": 145.67199959310184,
+      "end": 149.03199893188764,
+      "text": "hundred thirty times the sum of five milliamperes and load current.",
+      "chapter": 1
+    },
+    {
+      "start": 149.571999847415,
+      "end": 151.43200045776655,
+      "text": "That gives eight point four three three volts.",
+      "chapter": 1
+    },
+    {
+      "start": 152.03199893188764,
+      "end": 155.9720013732939,
+      "text": "The upper current limit gives maximum input fifteen point zero three three",
+      "chapter": 1
+    },
+    {
+      "start": 155.9720013732939,
+      "end": 156.27200061035444,
+      "text": "volts.",
+      "chapter": 1
+    },
+    {
+      "start": 156.27200061035444,
+      "end": 160.27200061035444,
+      "text": "These bounds belong to this fixed load, constant Zener voltage model.",
+      "chapter": 1
+    },
+    {
+      "start": 161.071999847415,
+      "end": 164.39200335693647,
+      "text": "Now replace the load by two hundred twenty ohms while keeping twelve volts",
+      "chapter": 1
+    },
+    {
+      "start": 164.39200335693647,
+      "end": 164.79199725342085,
+      "text": "input.",
+      "chapter": 1
+    },
+    {
+      "start": 165.47199755859663,
+      "end": 169.08000079345993,
+      "text": "At a supposed five point one volts, the load would demand twenty three point",
+      "chapter": 1
+    },
+    {
+      "start": 169.08000079345993,
+      "end": 172.45200091553022,
+      "text": "one eight milliamperes, more than the series resistor supplies.",
+      "chapter": 1
+    },
+    {
+      "start": 173.07200366211225,
+      "end": 176.17200213623335,
+      "text": "A negative computed Zener current tells us regulation failed.",
+      "chapter": 1
+    },
+    {
+      "start": 177.07200366211225,
+      "end": 181.17200213623335,
+      "text": "Neglecting leakage below breakdown, the off Zener divider gives output four",
+      "chapter": 1
+    },
+    {
+      "start": 181.17200213623335,
+      "end": 182.3319981689482,
+      "text": "point eight volts instead.",
+      "chapter": 1
+    },
+    {
+      "start": 182.93199664306928,
+      "end": 186.7120030517607,
+      "text": "Never report five point one volts just because that number is printed beside",
+      "chapter": 1
+    },
+    {
+      "start": 186.7120030517607,
+      "end": 187.2120030517607,
+      "text": "the device.",
+      "chapter": 1
+    },
+    {
+      "start": 188.07200366211225,
+      "end": 192.23999987793258,
+      "text": "At the nominal regulated point, Zener power is approximately zero point zero",
+      "chapter": 1
+    },
+    {
+      "start": 192.23999987793258,
+      "end": 193.47199755859663,
+      "text": "eight zero six watts.",
+      "chapter": 1
+    },
+    {
+      "start": 194.29199725342085,
+      "end": 196.47199755859663,
+      "text": "Resistor power and device ratings also need checking.",
+      "chapter": 1
+    },
+    {
+      "start": 197.2120030517607,
+      "end": 200.61199694824506,
+      "text": "Real knee currents, tolerances and thermal effects change the bounds.",
+      "chapter": 1
+    },
+    {
+      "start": 201.51199847412397,
+      "end": 205.87199908447553,
+      "text": "JEE's clean routine is current balance, operating window check, and power",
+      "chapter": 1
+    },
+    {
+      "start": 205.87199908447553,
+      "end": 206.71200000000604,
+      "text": "check, in that order.",
+      "chapter": 1
+    },
+    {
+      "start": 206.71200000000604,
+      "end": 209.89200006676325,
+      "text": "Let's move from current paths to logical states.",
+      "chapter": 2
+    },
+    {
+      "start": 210.67200003815302,
+      "end": 213.8119999046386,
+      "text": "We use ideal binary inputs zero and one.",
+      "chapter": 2
+    },
+    {
+      "start": 214.71200000000604,
+      "end": 216.67200003815302,
+      "text": "A NAND output is the negation of AND.",
+      "chapter": 2
+    },
+    {
+      "start": 217.59200011444696,
+      "end": 222.73200045776971,
+      "text": "Tie its two inputs together and you obtain NOT: NAND of A with A is not A.",
+      "chapter": 2
+    },
+    {
+      "start": 223.49200068665155,
+      "end": 224.43199931336054,
+      "text": "Do the same to B.",
+      "chapter": 2
+    },
+    {
+      "start": 225.37199984741815,
+      "end": 227.69199954224237,
+      "text": "Feed those two inverted signals into a third NAND.",
+      "chapter": 2
+    },
+    {
+      "start": 228.27199946594843,
+      "end": 231.2520009155334,
+      "text": "Its result is not of not A AND not B.",
+      "chapter": 2
+    },
+    {
+      "start": 231.2520009155334,
+      "end": 234.2520009155334,
+      "text": "De Morgan's identity turns that into A OR B.",
+      "chapter": 2
+    },
+    {
+      "start": 235.0720006103576,
+      "end": 238.5720006103576,
+      "text": "Rather than trusting a familiar looking symbol, build its complete table.",
+      "chapter": 2
+    },
+    {
+      "start": 239.37199984741815,
+      "end": 243.87199984741815,
+      "text": "For inputs zero zero, the first two outputs are one one, and the final NAND",
+      "chapter": 2
+    },
+    {
+      "start": 243.87199984741815,
+      "end": 244.49199877930292,
+      "text": "gives zero.",
+      "chapter": 2
+    },
+    {
+      "start": 245.15199862671503,
+      "end": 248.39200030518182,
+      "text": "For zero one, they are one zero, and output is one.",
+      "chapter": 2
+    },
+    {
+      "start": 249.0720006103576,
+      "end": 251.15199862671503,
+      "text": "For one zero, output is also one.",
+      "chapter": 2
+    },
+    {
+      "start": 251.6719990844787,
+      "end": 255.5720006103576,
+      "text": "For one one, the intermediate pair is zero zero, and output is one.",
+      "chapter": 2
+    },
+    {
+      "start": 255.93200122070917,
+      "end": 259.2920018310607,
+      "text": "The resulting sequence is zero, one, one, one: OR.",
+      "chapter": 2
+    },
+    {
+      "start": 259.2920018310607,
+      "end": 262.25200091553336,
+      "text": "Now use three NOR gates in the analogous pattern.",
+      "chapter": 2
+    },
+    {
+      "start": 262.9719983215392,
+      "end": 265.09200106812125,
+      "text": "A tied input NOR also makes NOT.",
+      "chapter": 2
+    },
+    {
+      "start": 265.8119984741271,
+      "end": 270.09200106812125,
+      "text": "The final NOR gives not of not A OR not B, which is A AND B.",
+      "chapter": 2
+    },
+    {
+      "start": 270.69199954224234,
+      "end": 272.8920003051818,
+      "text": "Its table is zero, zero, zero, one.",
+      "chapter": 2
+    },
+    {
+      "start": 273.77199755859976,
+      "end": 277.3720036621154,
+      "text": "Pause and predict the all one input before checking: both inverted signals",
+      "chapter": 2
+    },
+    {
+      "start": 277.3720036621154,
+      "end": 279.7920018310607,
+      "text": "become zero, and the last NOR gives one.",
+      "chapter": 2
+    },
+    {
+      "start": 280.3920003051818,
+      "end": 283.75200091553336,
+      "text": "These constructions explain why NAND and NOR are called universal gates.",
+      "chapter": 2
+    },
+    {
+      "start": 284.4720021362365,
+      "end": 288.3920003051818,
+      "text": "More complicated networks can be simplified with Boolean algebra, but checking",
+      "chapter": 2
+    },
+    {
+      "start": 288.3920003051818,
+      "end": 292.1120015258849,
+      "text": "all combinations remains an excellent safeguard for a small network.",
+      "chapter": 2
+    },
+    {
+      "start": 292.7920018310607,
+      "end": 297.77199755859976,
+      "text": "Do not use ordinary arithmetic addition for OR: one OR one is one, not two.",
+      "chapter": 2
+    },
+    {
+      "start": 298.3119984741271,
+      "end": 302.6120015258849,
+      "text": "These are ideal logic models with stable defined inputs; practical voltage",
+      "chapter": 2
+    },
+    {
+      "start": 302.6120015258849,
+      "end": 306.2058454261253,
+      "text": "thresholds, delays and floating input behaviour require a device",
+      "chapter": 2
+    },
+    {
+      "start": 306.2058454261253,
+      "end": 306.9919987793029,
+      "text": "specification.",
+      "chapter": 2
+    },
+    {
+      "start": 307.75200091553336,
+      "end": 312.4119969482482,
+      "text": "For JEE, annotate the intermediate signals and test the full table, especially",
+      "chapter": 2
+    },
+    {
+      "start": 312.4119969482482,
+      "end": 314.8920003051818,
+      "text": "any inversion bubbles that are easy to overlook.",
+      "chapter": 2
+    }
+  ]
+}

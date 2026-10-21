@@ -1,0 +1,414 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script. Read every sentence completely and precisely, including the final sentence. Do not summarize.",
+  "title": "The mole: connecting particles, mass and reactions",
+  "subject": "Chemistry",
+  "unit": 1,
+  "sources": [
+    {
+      "title": "OpenStax: formula mass and the mole",
+      "url": "https://openstax.org/books/chemistry-2e/pages/3-1-formula-mass-and-the-mole-concept"
+    },
+    {
+      "title": "OpenStax: reaction yields",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-4-reaction-yields"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Chemical laws and particle models",
+      "formula": "Balance atoms; conserve mass in a closed system",
+      "script": "Welcome to the Mole Concept. This recorded Chemistry class uses an AI generated Marin voice. Begin with what a chemical equation is allowed to change. In an ordinary chemical reaction, atoms are rearranged; the nuclei are not converted into different elements. For a closed system, total mass is conserved to the accuracy of ordinary chemical measurements. Gas escaping from an open vessel can make the measured vessel contents lighter without violating conservation. The law of definite proportions describes the fixed elemental mass ratio of a specified pure compound. Using rounded masses, water has hydrogen to oxygen mass ratio two to sixteen, or one to eight. Hydrogen peroxide is a different compound with a different ratio. The law of multiple proportions compares different compounds formed from the same two elements: for a fixed mass of one element, the other masses occur in small whole number ratios. Carbon monoxide and carbon dioxide illustrate oxygen masses sixteen and thirty two for carbon mass twelve. Dalton's model helped explain these laws, but modern atoms have subatomic structure and isotopes. Distinguish a useful historical model from its later corrections.",
+      "points": [
+        "Conservation · Closed reaction · Same total mass",
+        "Definite ratio · Water H:O = 1:8 · Specified compound",
+        "Multiple ratios · CO versus CO₂ · O masses 1:2"
+      ],
+      "board": {
+        "heading": "Chemical laws and particle models",
+        "columns": [
+          "Principle",
+          "Example",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "Conservation",
+            "Closed reaction",
+            "Same total mass"
+          ],
+          [
+            "Definite ratio",
+            "Water H:O = 1:8",
+            "Specified compound"
+          ],
+          [
+            "Multiple ratios",
+            "CO versus CO₂",
+            "O masses 1:2"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Moles count specified entities",
+      "formula": "N = n Nₐ; n = m/M",
+      "script": "A mole counts specified entities, just as a dozen counts twelve objects. The Avogadro constant is exactly six point zero two two one four zero seven six times ten to the twenty three per mole. For routine examples we will use six point zero two two times ten to the twenty three. Always name the counted entity: atoms, molecules, ions or formula units. One mole of oxygen molecules contains two moles of oxygen atoms. One mole of sodium chloride solid describes formula units in a lattice, not a collection of separate sodium chloride molecules. Molar mass connects mass with amount: divide mass by molar mass to obtain moles. Using hydrogen one and oxygen sixteen grams per mole, water has molar mass eighteen grams per mole. Nine grams of water is therefore half a mole of molecules, or about three point zero one one times ten to the twenty three molecules. That same sample contains one mole of hydrogen atoms and half a mole of oxygen atoms. A mole has a fixed entity count, but its mass depends on the substance.",
+      "points": [
+        "H₂O molecules · 0.50 mol · 0.50 Nₐ",
+        "H atoms · 1.00 mol · 1.00 Nₐ",
+        "O atoms · 0.50 mol · 0.50 Nₐ"
+      ],
+      "board": {
+        "heading": "Moles count specified entities",
+        "columns": [
+          "9 g water",
+          "Amount",
+          "Entity count"
+        ],
+        "rows": [
+          [
+            "H₂O molecules",
+            "0.50 mol",
+            "0.50 Nₐ"
+          ],
+          [
+            "H atoms",
+            "1.00 mol",
+            "1.00 Nₐ"
+          ],
+          [
+            "O atoms",
+            "0.50 mol",
+            "0.50 Nₐ"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Formula mass and composition",
+      "formula": "Mass % = constituent mass / total mass × 100",
+      "script": "Read every subscript before calculating formula mass. Parentheses multiply the whole enclosed group. Calcium hydroxide contains one calcium, two oxygen and two hydrogen atoms per formula unit. Using calcium forty, oxygen sixteen and hydrogen one, its formula mass is forty plus twice seventeen, or seventy four. Its molar mass is seventy four grams per mole under those rounded assumptions. Thus seven point four grams corresponds to zero point one mole of formula units and zero point two mole of hydroxide groups. Counting these groups is not a claim that every solid sample is already dissolved into free ions. Percentage composition is the elemental mass contribution divided by total formula mass, multiplied by one hundred. For water, oxygen contributes sixteen out of eighteen, about eighty eight point nine percent by mass. A relative molecular mass is dimensionless; the mass of one molecule may be expressed in atomic mass units, while molar mass has units such as grams per mole. These quantities are related but should not be assigned interchangeable units. Use the atomic masses given in the question.",
+      "points": [
+        "Ca · 1 × 40 · 40",
+        "O · 2 × 16 · 32",
+        "H · 2 × 1 · 2; total = 74"
+      ],
+      "board": {
+        "heading": "Formula mass and composition",
+        "columns": [
+          "Ca(OH)₂",
+          "Contribution",
+          "Using rounded masses"
+        ],
+        "rows": [
+          [
+            "Ca",
+            "1 × 40",
+            "40"
+          ],
+          [
+            "O",
+            "2 × 16",
+            "32"
+          ],
+          [
+            "H",
+            "2 × 1",
+            "2; total = 74"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Empirical and molecular formulas",
+      "formula": "Molecular multiplier = M / empirical-formula mass",
+      "script": "An empirical formula gives the simplest whole number atom ratio. A molecular formula gives the actual atom counts in one molecule. Suppose a compound is forty point zero percent carbon, six point seven percent hydrogen and fifty three point three percent oxygen by mass. Assume one hundred grams. Divide by the rounded atomic molar masses twelve, one and sixteen: the amounts are approximately three point three three, six point seven and three point three three moles. Divide all by the smallest amount to obtain approximately one to two to one. The empirical formula is C H two O. Its formula mass is thirty. If the measured molar mass is one hundred eighty grams per mole, the multiplier is six and the molecular formula is C six H twelve O six. Percentage rounding explains small deviations from ideal integers. Do not round one point five directly to two: multiply every ratio by two instead. Composition alone cannot distinguish all molecular formulas sharing the same simplest ratio, so additional molar mass information is essential. Check that the final formula reproduces the approximate percentages.",
+      "points": [
+        "Convert masses · 40/12; 6.7/1; 53.3/16 · ≈ 3.33 : 6.7 : 3.33",
+        "Divide by smallest · ≈ 1 : 2 : 1 · CH₂O",
+        "Apply molar mass · 180 / 30 = 6 · C₆H₁₂O₆"
+      ],
+      "board": {
+        "heading": "Empirical and molecular formulas",
+        "columns": [
+          "Step",
+          "Calculation",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Convert masses",
+            "40/12; 6.7/1; 53.3/16",
+            "≈ 3.33 : 6.7 : 3.33"
+          ],
+          [
+            "Divide by smallest",
+            "≈ 1 : 2 : 1",
+            "CH₂O"
+          ],
+          [
+            "Apply molar mass",
+            "180 / 30 = 6",
+            "C₆H₁₂O₆"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Balanced equations and limiting reactants",
+      "formula": "Compare n / stoichiometric coefficient",
+      "script": "A balanced equation is a recipe in amounts of substance, not generally in equal masses. Nitrogen plus three hydrogen molecules produces two ammonia molecules. The same coefficients relate moles. Start with two moles of nitrogen and three moles of hydrogen. Divide each available amount by its reactant coefficient: nitrogen gives two, while hydrogen gives one. The smaller value identifies hydrogen as limiting. One mole of nitrogen reacts with three moles of hydrogen, forming two moles of ammonia and leaving one mole of nitrogen. Using nitrogen fourteen and hydrogen one grams per mole, the initial masses are fifty six grams of nitrogen and six grams of hydrogen. The products and remainder are thirty four grams of ammonia plus twenty eight grams of nitrogen, again sixty two grams total. A limiting reactant is not necessarily the one with the smaller mass or smaller raw mole amount. Convert to moles and compare against the balanced coefficients. This theoretical result assumes the stated reaction proceeds completely without competing chemistry.",
+      "points": [
+        "N₂ · 2 mol · 1 mol remains",
+        "H₂ · 3 mol · 0 mol remains",
+        "NH₃ · 0 mol · 2 mol forms"
+      ],
+      "board": {
+        "heading": "Balanced equations and limiting reactants",
+        "columns": [
+          "N₂ + 3H₂ → 2NH₃",
+          "Initial amount",
+          "After complete reaction"
+        ],
+        "rows": [
+          [
+            "N₂",
+            "2 mol",
+            "1 mol remains"
+          ],
+          [
+            "H₂",
+            "3 mol",
+            "0 mol remains"
+          ],
+          [
+            "NH₃",
+            "0 mol",
+            "2 mol forms"
+          ]
+        ]
+      },
+      "speechInput": "A balanced equation is a recipe in amounts of substance, not generally in equal masses. Nitrogen plus three hydrogen molecules produces two ammonia molecules. The same coefficients relate moles. Start with two moles of nitrogen and three moles of hydrogen. Divide each available amount by its reactant coefficient: nitrogen gives two, while hydrogen gives one. The smaller value identifies hydrogen as limiting. One mole of nitrogen reacts with three moles of hydrogen, forming two moles of ammonia and leaving one mole of nitrogen. Using nitrogen fourteen and hydrogen one grams per mole, the initial masses are fifty six grams of nitrogen and six grams of hydrogen. The products and remainder are thirty four grams of ammonia plus twenty eight grams of nitrogen, again sixty two grams total. A limiting reactant is not necessarily the one with the smaller mass or smaller raw mole amount. Convert to moles and compare against the balanced coefficients. This theoretical result assumes the stated reaction proceeds completely without competing chemistry. Actual recovery may be smaller.",
+      "recordingNote": "Closing reminder shortened by TTS; transcript follows independently verified audio. Exact requested input retained for cache provenance."
+    },
+    {
+      "title": "Purity and percentage yield",
+      "formula": "Actual yield = theoretical yield × yield fraction",
+      "script": "Purity changes the amount of reactive material available before the reaction starts. Percentage yield compares the actual product obtained with the theoretical product predicted from that available material. Keep those two factors separate. Imagine ten grams of limestone containing eighty percent calcium carbonate by mass, with inert impurities. The reactive calcium carbonate mass is eight grams. On complete thermal decomposition, calcium carbonate gives calcium oxide and carbon dioxide in a one to one mole ratio. Using molar masses one hundred for calcium carbonate and forty four for carbon dioxide, eight grams is zero point zero eight mole and predicts three point five two grams of carbon dioxide. If the actual recovered carbon dioxide is two point eight one six grams, the percentage yield is eighty percent. The original twenty percent impurity must not be subtracted a second time. A measured yield above one hundred percent usually signals wet or impure product, a mistaken assumption or measurement error, rather than creation of extra matter. State whether impurities react before treating them as inert.",
+      "points": [
+        "80% CaCO₃ · 10 × 0.80 · 8.00 g reactive",
+        "Theoretical CO₂ · 8 / 100 × 44 · 3.52 g",
+        "80% recovery · 3.52 × 0.80 · 2.816 g CO₂"
+      ],
+      "board": {
+        "heading": "Purity and percentage yield",
+        "columns": [
+          "10 g sample",
+          "Calculation",
+          "Result"
+        ],
+        "rows": [
+          [
+            "80% CaCO₃",
+            "10 × 0.80",
+            "8.00 g reactive"
+          ],
+          [
+            "Theoretical CO₂",
+            "8 / 100 × 44",
+            "3.52 g"
+          ],
+          [
+            "80% recovery",
+            "3.52 × 0.80",
+            "2.816 g CO₂"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Gas volumes and solution amounts",
+      "formula": "PV = nRT; c = n / solution volume",
+      "script": "For an ideal gas, pressure times volume equals amount times the gas constant times absolute temperature. Gas volume is therefore not a universal measure of moles unless temperature and pressure are specified. At two hundred seventy three point one five kelvin and one atmosphere, one mole of ideal gas occupies about twenty two point four one litres. At the same temperature and one bar, the value is about twenty two point seven one litres. Do not silently interchange these conventions. Equal gas volumes at equal temperature and pressure contain equal amounts in the ideal gas approximation. For solutions, molarity is solute moles divided by solution volume in litres. Zero point two zero mole in five hundred millilitres of solution gives zero point four zero mole per litre. During dilution without reaction or loss, solute amount stays constant, so initial concentration times initial volume equals final concentration times final volume. Taking fifty millilitres of this solution and diluting to two hundred millilitres gives zero point one zero mole per litre. Use final solution volume, not merely the volume of water added.",
+      "points": [
+        "Ideal gas, 273.15 K · 1 atm / 1 bar · 22.41 / 22.71 L mol⁻¹",
+        "Solution · 0.20 mol / 0.500 L · 0.40 mol L⁻¹",
+        "Dilution · 0.40 × 50 / 200 · 0.10 mol L⁻¹"
+      ],
+      "board": {
+        "heading": "Gas volumes and solution amounts",
+        "columns": [
+          "Situation",
+          "Condition or calculation",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Ideal gas, 273.15 K",
+            "1 atm / 1 bar",
+            "22.41 / 22.71 L mol⁻¹"
+          ],
+          [
+            "Solution",
+            "0.20 mol / 0.500 L",
+            "0.40 mol L⁻¹"
+          ],
+          [
+            "Dilution",
+            "0.40 × 50 / 200",
+            "0.10 mol L⁻¹"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Mixed calculations and sensible precision",
+      "formula": "Mass → moles → reaction ratio → requested quantity",
+      "script": "A reliable mixed problem follows a chain of quantities with units attached. Suppose five grams of a sample contains eighty percent magnesium by mass and inert material. Excess acid reacts with magnesium to give magnesium ions and hydrogen gas, one mole of hydrogen per mole of magnesium. With magnesium molar mass twenty four grams per mole, the reactive mass is four grams and the amount is one sixth of a mole. At the stated ideal gas molar volume of twenty four litres per mole, complete reaction predicts four litres of hydrogen. If only seventy five percent of that theoretical gas is recovered, the collected volume is three litres at those same conditions. The acid is explicitly in excess; otherwise its amount would also need checking. Do not multiply by a percentage twice or apply a mass ratio directly as a mole ratio. Keep extra digits during calculation and round at the end according to the supplied measurements. Exact coefficients and entity definitions do not limit significant figures. Use the practice questions to check each conversion before attempting longer reaction chains.",
+      "points": [
+        "Reactive mass · 5 g × 80% · 4 g Mg",
+        "Theoretical H₂ · (4/24) mol × 24 L/mol · 4 L",
+        "Collected H₂ · 4 L × 75% · 3 L"
+      ],
+      "board": {
+        "heading": "Mixed calculations and sensible precision",
+        "columns": [
+          "Mixed magnesium problem",
+          "Step",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Reactive mass",
+            "5 g × 80%",
+            "4 g Mg"
+          ],
+          [
+            "Theoretical H₂",
+            "(4/24) mol × 24 L/mol",
+            "4 L"
+          ],
+          [
+            "Collected H₂",
+            "4 L × 75%",
+            "3 L"
+          ]
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Using M(H2O) = 18 g/mol, how many moles are in 36 g water?",
+      "options": [
+        "0.5 mol",
+        "2 mol",
+        "18 mol",
+        "648 mol"
+      ],
+      "answer": 1,
+      "explanation": "n = m/M = 36/18 = 2 mol. Multiplication would give the wrong units."
+    },
+    {
+      "question": "How many moles of oxygen atoms are in 0.25 mol CO2?",
+      "options": [
+        "0.125 mol",
+        "0.25 mol",
+        "0.50 mol",
+        "0.75 mol"
+      ],
+      "answer": 2,
+      "explanation": "Each molecule contains two oxygen atoms, so 2 × 0.25 = 0.50 mol of oxygen atoms. The total atom amount would be 0.75 mol."
+    },
+    {
+      "question": "What is the empirical formula of C6H12O6?",
+      "options": [
+        "C6H12O6",
+        "CH2O",
+        "C2H4O2",
+        "CHO"
+      ],
+      "answer": 1,
+      "explanation": "Divide all three subscripts by their greatest common factor, 6, giving the simplest ratio 1:2:1."
+    },
+    {
+      "question": "For N2 + 3H2 → 2NH3, 2 mol N2 and 3 mol H2 can form at most how much NH3?",
+      "options": [
+        "1 mol",
+        "2 mol",
+        "3 mol",
+        "4 mol"
+      ],
+      "answer": 1,
+      "explanation": "N2/coefficient = 2, while H2/coefficient = 3/3 = 1. Hydrogen limits the reaction, allowing 2 mol ammonia."
+    },
+    {
+      "question": "Which quantity is identical for 1 mol He atoms and 1 mol CO2 molecules?",
+      "options": [
+        "Mass",
+        "Number of atoms",
+        "Number of specified entities",
+        "Volume at every temperature and pressure"
+      ],
+      "answer": 2,
+      "explanation": "Both contain Avogadro's number of specified entities. CO2 has three atoms per molecule; their masses are different."
+    },
+    {
+      "question": "Using Ca = 40, O = 16 and H = 1, the molar mass of Ca(OH)2 is:",
+      "options": [
+        "57 g/mol",
+        "74 g/mol",
+        "58 g/mol",
+        "114 g/mol"
+      ],
+      "answer": 1,
+      "explanation": "40 + 2 × (16 + 1) = 74 g/mol."
+    },
+    {
+      "question": "A 10 g sample is 80% CaCO3 with inert impurities. Using molar masses 100 and 44 g/mol, theoretical CO2 from complete decomposition is:",
+      "options": [
+        "4.40 g",
+        "8.00 g",
+        "3.52 g",
+        "2.816 g"
+      ],
+      "answer": 2,
+      "explanation": "Reactive mass = 8 g; (8/100) × 44 = 3.52 g. The last option additionally assumes an 80% yield, which was not given."
+    },
+    {
+      "question": "Actual product is 2.816 g and theoretical product is 3.52 g. Percentage yield is:",
+      "options": [
+        "80%",
+        "125%",
+        "20%",
+        "100%"
+      ],
+      "answer": 0,
+      "explanation": "2.816/3.52 × 100 = 80%."
+    },
+    {
+      "question": "50 mL of 0.40 mol/L solution is diluted to 200 mL without reaction. The final concentration is:",
+      "options": [
+        "1.60 mol/L",
+        "0.40 mol/L",
+        "0.20 mol/L",
+        "0.10 mol/L"
+      ],
+      "answer": 3,
+      "explanation": "Solute amount is constant: 0.40 × 50/200 = 0.10 mol/L."
+    },
+    {
+      "question": "Equal volumes of ideal gases have equal amounts of substance when:",
+      "options": [
+        "Their molar masses match only",
+        "Temperature and pressure are equal",
+        "Their colours match",
+        "Their temperatures may be arbitrary"
+      ],
+      "answer": 1,
+      "explanation": "PV = nRT gives equal n for equal V, P and T."
+    }
+  ]
+}

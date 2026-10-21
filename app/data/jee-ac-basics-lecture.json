@@ -1,0 +1,136 @@
+{
+  "title": "AC fundamentals: RMS, reactance and phase",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 14",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Simple AC circuits, conceptual reference",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "A sinusoid has more than one useful value",
+      "formula": "v(t) = V0 sin(omega t); omega = 2pi f; period T = 1/f",
+      "points": [
+        "Peak is the amplitude, not the average over a cycle.",
+        "A full-cycle average of a zero-offset sinusoid is zero.",
+        "Frequency in Hz differs from angular frequency in rad/s."
+      ],
+      "script": "Hey, welcome back. Alternating voltage changes magnitude and sign with time. Our starting model is a sinusoid: voltage equals peak voltage V zero times sine of omega t. Peak voltage is the largest positive value; the negative extreme is minus that peak. Omega is angular frequency in radians per second. Ordinary frequency f counts cycles per second, and omega equals two pi f. The period is one over f. For fifty hertz, a cycle lasts zero point zero two second. One quarter of a cycle lasts five milliseconds. Starting with sine at zero, the voltage reaches its positive peak after that first quarter-cycle. Suppose peak voltage is one hundred square root of two volts, about one hundred forty-one point four. That is not the same as a one-hundred-volt heating-equivalent supply, although we will connect them soon. The average voltage over a full cycle of a zero-offset sinusoid is zero because positive and negative parts cancel. Yet a resistor connected to it heats up. How can zero average voltage still transfer energy? The power depends on the product of voltage and current, not simply the average voltage. Keep instantaneous value, peak, cycle average and RMS in separate mental drawers. A JEE question may switch between them in one line."
+    },
+    {
+      "title": "RMS measures the equivalent heating effect",
+      "formula": "Vrms = sqrt(mean(v^2)); sinusoid: Vrms = V0/sqrt(2); Irms = I0/sqrt(2)",
+      "points": [
+        "Square first, average next, then take the square root.",
+        "RMS is nonnegative and is not the mean absolute value.",
+        "The peak/sqrt(2) shortcut is waveform-specific."
+      ],
+      "script": "Let's build RMS carefully. The letters stand for root mean square. Square the changing voltage, average that square over a cycle, then take the square root. Squaring stops positive and negative portions from cancelling. For a sinusoid, the average of sine squared is one half, so RMS voltage is peak voltage divided by square root of two. The same relation holds for sinusoidal current. Our peak voltage of one hundred square root of two volts therefore has RMS value one hundred volts. Across a fifty-ohm resistor, RMS current is two amperes, and average heating power is two squared times fifty, or two hundred watts. That is the same heating as a steady one-hundred-volt DC source across the same resistor. It does not mean the instantaneous AC voltage stays at one hundred volts. Try a peak current of six amperes. Its RMS value is about four point two four amperes, not three and not six. RMS is also not the average of the absolute value; those are different operations. For a square wave or another waveform, return to the RMS definition rather than blindly dividing the peak by square root of two. We use zero-offset sinusoids throughout this class. Label peak and RMS values before substituting into any power or impedance formula."
+    },
+    {
+      "title": "An ideal resistor keeps voltage and current in phase",
+      "formula": "i(t) = v(t)/R; Irms = Vrms/R; Pavg = Irms^2 R",
+      "points": [
+        "Voltage and current cross zero together.",
+        "Both signs reverse together, so instantaneous power is nonnegative.",
+        "Resistance does not create a ninety-degree phase shift."
+      ],
+      "script": "Start with the simplest AC element: an ideal resistor. At every instant, current is voltage divided by resistance. If voltage is sinusoidal, current has the same frequency and phase. Their peaks and zero crossings occur together. When voltage is negative, current is negative too, so their product is still positive. Instantaneous power equals current squared times resistance. It rises and falls but never becomes negative in this ideal resistor. Energy is continually converted into heat. For RMS voltage one hundred volts and resistance fifty ohms, RMS current is two amperes. Peak current is two square root of two amperes, about two point eight three. Average power is two hundred watts. Do not multiply peak voltage by RMS current and call that average power. Either use RMS voltage times RMS current for this in-phase resistor, or use one half peak voltage times peak current. They give the same result. The waveform diagram shows normalized voltage and current, so equal drawing heights do not mean volts and amperes are numerically equal. The useful information is timing. In a resistor-only circuit, changing frequency does not change the ideal resistance. Real components can have parasitic effects at high frequencies, but our elementary lumped-element model leaves those out."
+    },
+    {
+      "title": "An ideal inductor makes current lag",
+      "formula": "XL = omega L; I0 = V0/XL; current lags voltage by 90 degrees",
+      "points": [
+        "Voltage is proportional to the current derivative.",
+        "Higher frequency gives greater inductive reactance.",
+        "An ideal inductor has zero average dissipated power in sinusoidal steady state."
+      ],
+      "script": "For an ideal inductor, voltage equals L times the derivative of current. Think about the derivative of a sine: it is a cosine, a quarter-cycle ahead. So in sinusoidal steady state, voltage leads current by ninety degrees. Equivalently, current lags voltage. That phrase refers to timing, not to current being slower in the wire. The opposition magnitude is inductive reactance X L, equal to omega L, measured in ohms. At fixed L, higher frequency gives greater reactance because the current must change faster during each cycle. Use omega equal to one thousand radians per second and inductance zero point zero five henry. Reactance is fifty ohms. With RMS voltage one hundred volts, RMS current is two amperes. The arithmetic looks like division by resistance, but the energy story differs. An ideal inductor stores energy during part of the cycle and returns it during another part. Average dissipated power is zero. Instantaneous power need not be zero. A real coil includes resistance and losses, so its phase and power are not exactly those of a pure ideal inductor. The ideal formula also describes sinusoidal steady state, not a switch-on transient with arbitrary initial current. Always name the model before using the ninety-degree rule."
+    },
+    {
+      "title": "A capacitor makes current lead; compare frequency trends",
+      "formula": "XC = 1/(omega C); I0 = V0/XC; current leads voltage by 90 degrees",
+      "points": [
+        "Capacitor current is C dv/dt.",
+        "Higher frequency gives smaller capacitive reactance.",
+        "Ideal capacitive and inductive reactances are not heating resistances."
+      ],
+      "script": "For an ideal capacitor, current equals capacitance times the voltage derivative. A sinusoidal voltage therefore gives current a quarter-cycle ahead: current leads voltage by ninety degrees. The capacitive reactance is one divided by omega C. Take omega equal to one thousand radians per second and C equal to twenty microfarads. Convert that capacitance to twenty times ten to the minus six farad. Reactance is fifty ohms. With RMS voltage one hundred volts, RMS current is again two amperes. The same magnitude as our inductor example does not mean the same phase: the lead and lag are opposite. Raise frequency while keeping component values fixed. Inductive reactance increases, but capacitive reactance decreases. Double frequency and X L doubles while X C halves. An ideal capacitor stores and returns electric-field energy, giving zero average dissipated power in sinusoidal steady state. It is not a fifty-ohm heater simply because its reactance is fifty ohms. At zero-frequency steady DC, an ideal capacitor carries no sustained current after charging; do not directly substitute zero into a formula without interpreting the limit. The resistor, inductor and capacitor now give us three timing patterns. Next we will combine them using phasors rather than adding voltage magnitudes as ordinary positive numbers."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "For f = 50 Hz, the period is:",
+      "options": [
+        "0.02 s",
+        "50 s",
+        "0.2 s",
+        "0.005 s"
+      ],
+      "answer": 0,
+      "explanation": "T = 1/f = 0.02 s."
+    },
+    {
+      "question": "A sinusoidal voltage has peak 100 sqrt(2) V. Its RMS value is:",
+      "options": [
+        "50 V",
+        "141.4 V",
+        "100 V",
+        "200 V"
+      ],
+      "answer": 2,
+      "explanation": "Vrms = V0/sqrt(2) = 100 V."
+    },
+    {
+      "question": "Vrms = 100 V across R = 50 ohm gives average power:",
+      "options": [
+        "100 W",
+        "200 W",
+        "400 W",
+        "0 W"
+      ],
+      "answer": 1,
+      "explanation": "Irms = 2 A and Pavg = I^2R = 200 W."
+    },
+    {
+      "question": "At omega = 1000 rad/s, L = 0.05 H has reactance:",
+      "options": [
+        "0.00005 ohm",
+        "20 ohm",
+        "50000 ohm",
+        "50 ohm"
+      ],
+      "answer": 3,
+      "explanation": "XL = omega L = 50 ohm."
+    },
+    {
+      "question": "At omega = 1000 rad/s, C = 20 microF has reactance:",
+      "options": [
+        "50 ohm",
+        "0.02 ohm",
+        "20000 ohm",
+        "5 ohm"
+      ],
+      "answer": 0,
+      "explanation": "XC = 1/(1000 x 20 x 10^-6) = 50 ohm."
+    },
+    {
+      "question": "In an ideal capacitor under sinusoidal steady-state voltage, current:",
+      "options": [
+        "Lags by 90 degrees",
+        "Leads by 90 degrees",
+        "Is always in phase",
+        "Is always zero"
+      ],
+      "answer": 1,
+      "explanation": "i = C dv/dt gives a quarter-cycle lead."
+    }
+  ]
+}

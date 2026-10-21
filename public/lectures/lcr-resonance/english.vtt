@@ -1,0 +1,382 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.540
+Hey, welcome back.
+
+00:00:02.340 --> 00:00:06.660
+Connect a resistor, inductor and capacitor in series to a sinusoidal source.
+
+00:00:07.360 --> 00:00:11.530
+There is only one series current, but the three element voltages do not peak
+
+00:00:11.530 --> 00:00:11.640
+at
+
+00:00:11.640 --> 00:00:12.280
+the same time.
+
+00:00:12.920 --> 00:00:16.720
+That is why adding their magnitudes as ordinary positive numbers gives the
+
+00:00:16.720 --> 00:00:17.740
+wrong source voltage.
+
+00:00:18.820 --> 00:00:20.360
+Use current as our phasor reference.
+
+00:00:21.300 --> 00:00:22.780
+Resistor voltage points along current.
+
+00:00:23.760 --> 00:00:26.720
+Inductor voltage leads it by ninety degrees, so draw it upward.
+
+00:00:27.740 --> 00:00:30.920
+Capacitor voltage lags by ninety degrees, so draw it downward.
+
+00:00:31.860 --> 00:00:35.180
+The inductive and capacitive voltage phasors oppose each other.
+
+00:00:35.660 --> 00:00:40.580
+Their net vertical contribution is current times X L minus X C.
+
+00:00:41.340 --> 00:00:44.100
+The horizontal contribution is current times R.
+
+00:00:44.640 --> 00:00:46.420
+The source voltage is the vector sum.
+
+00:00:47.100 --> 00:00:51.720
+Here, all phasor lengths represent RMS magnitudes; peak values would also work
+
+00:00:51.720 --> 00:00:52.740
+if used consistently.
+
+00:00:53.740 --> 00:00:59.740
+Suppose RMS current is two amperes, R is thirty ohms, X L is
+
+00:00:59.740 --> 00:01:00.840
+seventy ohms and X C is thirty ohms.
+
+00:01:01.780 --> 00:01:03.080
+Resistor voltage is sixty volts.
+
+00:01:03.800 --> 00:01:07.838
+Inductor voltage is one hundred forty volts, capacitor voltage sixty volts,
+
+00:01:07.838 --> 00:01:08.000
+and
+
+00:01:08.000 --> 00:01:09.360
+their difference eighty volts.
+
+00:01:10.120 --> 00:01:13.680
+The source magnitude is the square root of sixty squared plus eighty squared:
+
+00:01:13.680 --> 00:01:14.960
+one hundred volts.
+
+00:01:15.680 --> 00:01:17.220
+It is not two hundred sixty volts.
+
+00:01:18.200 --> 00:01:21.840
+Phasors encode time relationships; they are not literal spatial voltage arrows
+
+00:01:21.840 --> 00:01:22.368
+inside the wires.
+
+00:01:22.368 --> 00:01:28.148
+Factor current out of the phasor triangle and you get impedance Z: square root
+
+00:01:28.148 --> 00:01:32.928
+of R squared plus the square of X L minus X C.
+
+00:01:32.928 --> 00:01:37.408
+Impedance has units ohms, but includes timing effects as well as resistance.
+
+00:01:38.408 --> 00:01:41.868
+RMS current equals RMS source voltage divided by Z.
+
+00:01:42.608 --> 00:01:46.668
+The phase angle phi is source voltage phase minus current phase, and its
+
+00:01:46.668 --> 00:01:50.168
+tangent is X L minus X C divided by R.
+
+00:01:50.488 --> 00:01:55.748
+With R thirty ohms and net reactance forty ohms, impedance is fifty ohms.
+
+00:01:56.648 --> 00:01:59.868
+A one hundred volt RMS source gives two amperes RMS.
+
+00:02:00.788 --> 00:02:03.248
+The phase angle is about fifty three point one degrees.
+
+00:02:04.128 --> 00:02:08.468
+Because net reactance is positive, source voltage leads current, or current
+
+00:02:08.468 --> 00:02:08.988
+lags.
+
+00:02:09.728 --> 00:02:14.328
+Now swap the reactances: X L thirty ohms and X C seventy ohms.
+
+00:02:15.408 --> 00:02:20.008
+Impedance still equals fifty ohms and current magnitude stays two amperes, but
+
+00:02:20.008 --> 00:02:21.008
+phi is negative.
+
+00:02:21.888 --> 00:02:24.988
+Current now leads the source voltage by the same angle magnitude.
+
+00:02:26.148 --> 00:02:28.388
+Magnitude alone cannot tell you the lead or lag.
+
+00:02:29.148 --> 00:02:30.888
+The sign of net reactance matters.
+
+00:02:31.708 --> 00:02:36.808
+Our formula assumes a series circuit, ideal L and C, positive total resistance
+
+00:02:37.208 --> 00:02:38.508
+and sinusoidal steady state.
+
+00:02:39.208 --> 00:02:43.568
+Do not reuse it unchanged for a parallel circuit, and do not mix RMS source
+
+00:02:43.568 --> 00:02:46.468
+voltage with peak current when calculating impedance.
+
+00:02:46.680 --> 00:02:50.180
+Resonance occurs when inductive and capacitive reactances match.
+
+00:02:50.860 --> 00:02:53.380
+Set omega L equal to one over omega C.
+
+00:02:54.320 --> 00:02:59.380
+Rearranging gives resonance angular frequency one over square root of L C.
+
+00:02:59.380 --> 00:03:03.480
+Ordinary resonance frequency is that angular frequency divided by two pi.
+
+00:03:04.200 --> 00:03:09.130
+At resonance, net reactance is zero, impedance equals resistance and current
+
+00:03:09.130 --> 00:03:09.260
+is
+
+00:03:09.260 --> 00:03:10.620
+in phase with the source voltage.
+
+00:03:10.880 --> 00:03:15.260
+For a fixed source amplitude and constant total resistance, the series current
+
+00:03:15.260 --> 00:03:16.440
+reaches its maximum.
+
+00:03:17.480 --> 00:03:21.820
+Try L equal to zero point one henry and C equal to one hundred microfarads.
+
+00:03:22.500 --> 00:03:26.180
+Their product is ten to the minus five, giving angular frequency about three
+
+00:03:26.180 --> 00:03:30.541
+hundred sixteen point two radians per second and ordinary frequency about
+
+00:03:30.541 --> 00:03:30.840
+fifty
+
+00:03:30.840 --> 00:03:31.540
+point three hertz.
+
+00:03:32.240 --> 00:03:37.260
+With RMS source voltage one hundred volts and R twenty ohms, resonance current
+
+00:03:37.260 --> 00:03:38.860
+is five amperes RMS.
+
+00:03:39.300 --> 00:03:41.840
+Do the inductor and capacitor voltages vanish?
+
+00:03:41.840 --> 00:03:43.380
+Pause before answering.
+
+00:03:44.380 --> 00:03:44.500
+No.
+
+00:03:45.120 --> 00:03:49.180
+Each reactance is about thirty one point six ohms, so each element voltage is
+
+00:03:49.180 --> 00:03:51.120
+about one hundred fifty eight volts RMS.
+
+00:03:51.640 --> 00:03:53.820
+Their phasors cancel each other in the source sum.
+
+00:03:54.460 --> 00:03:58.280
+An element voltage can exceed the source voltage without violating energy
+
+00:03:58.280 --> 00:03:58.800
+conservation.
+
+00:03:59.580 --> 00:04:02.000
+Our finite resistance model keeps current finite.
+
+00:04:02.560 --> 00:04:07.334
+The ideal zero resistance driven resonant system needs a transient analysis;
+
+00:04:07.334 --> 00:04:07.460
+do
+
+00:04:07.460 --> 00:04:10.220
+not promise an ordinary finite steady state current there.
+
+00:04:10.392 --> 00:04:15.572
+The source voltage and current may be out of phase, so multiplying their RMS
+
+00:04:15.572 --> 00:04:18.932
+magnitudes does not always give average transferred power.
+
+00:04:19.852 --> 00:04:24.772
+The correct expression is RMS voltage times RMS current times cosine phi.
+
+00:04:25.612 --> 00:04:27.372
+That cosine is the power factor.
+
+00:04:28.112 --> 00:04:30.692
+In our series model it equals R over Z.
+
+00:04:31.812 --> 00:04:36.352
+For the thirty ohm resistor and fifty ohm impedance example, power factor is
+
+00:04:36.352 --> 00:04:37.332
+zero point six.
+
+00:04:38.212 --> 00:04:43.572
+RMS voltage one hundred volts and RMS current two amperes give average power
+
+00:04:43.572 --> 00:04:44.672
+one hundred twenty watts.
+
+00:04:45.972 --> 00:04:50.632
+Check another way: current squared times resistance is four times thirty, also
+
+00:04:50.632 --> 00:04:51.712
+one hundred twenty watts.
+
+00:04:52.752 --> 00:04:57.492
+The product V RMS times I RMS is two hundred volt amperes of apparent power,
+
+00:04:58.172 --> 00:05:00.532
+not two hundred watts of real power in this example.
+
+00:05:01.752 --> 00:05:06.112
+Ideal inductors and capacitors store and return energy, giving zero average
+
+00:05:06.112 --> 00:05:07.232
+dissipation individually.
+
+00:05:08.412 --> 00:05:11.632
+Real components add losses, which belong in a more complete model.
+
+00:05:12.752 --> 00:05:16.312
+At series resonance, phi is zero and power factor is one.
+
+00:05:17.172 --> 00:05:21.652
+An ideal pure reactive circuit has zero average power despite nonzero voltage
+
+00:05:21.652 --> 00:05:22.212
+and current.
+
+00:05:22.992 --> 00:05:25.892
+That does not mean instantaneous power is always zero.
+
+00:05:26.752 --> 00:05:28.292
+Energy goes back and forth over the cycle.
+
+00:05:28.852 --> 00:05:33.410
+In JEE numericals, first establish whether the provided voltage and current
+
+00:05:33.410 --> 00:05:33.592
+are
+
+00:05:33.592 --> 00:05:37.132
+peak or RMS, then check whether a power factor is needed.
+
+00:05:38.160 --> 00:05:41.180
+Let's combine the ideas in one frequency test.
+
+00:05:41.920 --> 00:05:47.220
+Keep L zero point one henry, C one hundred microfarads, R twenty ohms
+
+00:05:47.700 --> 00:05:50.040
+and RMS source voltage one hundred volts.
+
+00:05:51.080 --> 00:05:55.200
+Set angular frequency to two hundred radians per second, below the resonance
+
+00:05:55.200 --> 00:05:58.140
+value of about three hundred sixteen.
+
+00:05:58.140 --> 00:06:00.020
+Inductive reactance is twenty ohms.
+
+00:06:00.940 --> 00:06:02.580
+Capacitive reactance is fifty ohms.
+
+00:06:03.140 --> 00:06:08.180
+Net reactance is minus thirty ohms, so the circuit is capacitive and current
+
+00:06:08.180 --> 00:06:09.600
+leads the voltage.
+
+00:06:10.020 --> 00:06:13.400
+Impedance is square root of twenty squared plus thirty squared, about thirty
+
+00:06:13.400 --> 00:06:14.720
+six point one ohms.
+
+00:06:15.520 --> 00:06:18.180
+RMS current is about two point seven seven amperes.
+
+00:06:18.960 --> 00:06:23.710
+Power factor is twenty over thirty six point one, about zero point five five
+
+00:06:23.710 --> 00:06:24.160
+five.
+
+00:06:24.160 --> 00:06:26.540
+Average power is about one hundred fifty four watts.
+
+00:06:27.260 --> 00:06:31.720
+At resonance the current would be five amperes and average power five hundred
+
+00:06:31.720 --> 00:06:34.000
+watts for this same fixed source and resistor.
+
+00:06:34.920 --> 00:06:37.630
+Now raise angular frequency to five hundred.
+
+00:06:37.630 --> 00:06:41.480
+X L becomes fifty ohms and X C becomes twenty ohms.
+
+00:06:42.280 --> 00:06:45.080
+Net reactance is plus thirty ohms: current lags.
+
+00:06:45.620 --> 00:06:49.140
+The impedance and current magnitude happen to match our lower frequency case,
+
+00:06:49.500 --> 00:06:50.500
+but phase reverses.
+
+00:06:51.100 --> 00:06:54.820
+That matching is specific to these numbers, not a general equal spacing
+
+00:06:54.820 --> 00:06:55.640
+frequency rule.
+
+00:06:56.400 --> 00:07:00.700
+Recalculate both reactances whenever frequency changes, then use their
+
+00:07:00.700 --> 00:07:02.780
+difference, the impedance and the power factor.

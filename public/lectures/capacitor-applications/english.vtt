@@ -1,0 +1,364 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.800
+Hey, welcome back.
+
+00:00:02.340 --> 00:00:06.060
+Two capacitors share charge, but they do not automatically share energy
+
+00:00:06.060 --> 00:00:06.520
+equally.
+
+00:00:07.780 --> 00:00:08.500
+Let's see why.
+
+00:00:09.660 --> 00:00:14.120
+Start with a two microfarad capacitor at twelve volts and an uncharged four
+
+00:00:14.120 --> 00:00:15.040
+microfarad capacitor.
+
+00:00:16.220 --> 00:00:20.546
+Disconnect any battery, then join corresponding plates so the capacitors end
+
+00:00:20.546 --> 00:00:20.660
+up
+
+00:00:20.660 --> 00:00:21.180
+in parallel.
+
+00:00:21.700 --> 00:00:26.220
+The joined positive node initially holds twenty four microcoulombs.
+
+00:00:26.220 --> 00:00:29.820
+After the real circuit settles, both capacitors have the same voltage.
+
+00:00:30.680 --> 00:00:30.760
+Why?
+
+00:00:31.180 --> 00:00:32.960
+Their plates connect to the same two nodes.
+
+00:00:33.760 --> 00:00:38.180
+Total capacitance is six microfarads, so final voltage is twenty four divided
+
+00:00:38.180 --> 00:00:40.340
+by six, four volts.
+
+00:00:40.340 --> 00:00:44.500
+The two microfarad capacitor now holds eight microcoulombs and the four
+
+00:00:44.500 --> 00:00:46.560
+microfarad capacitor sixteen.
+
+00:00:46.560 --> 00:00:48.720
+Their sum is still twenty four.
+
+00:00:48.720 --> 00:00:49.900
+Charge conservation checks.
+
+00:00:50.480 --> 00:00:53.700
+Now pause and predict: is stored energy also unchanged?
+
+00:00:54.540 --> 00:00:58.420
+Initial energy is one half times two microfarads times twelve volts squared,
+
+00:00:58.420 --> 00:01:01.400
+one hundred forty four microjoules.
+
+00:01:01.400 --> 00:01:05.747
+Final energy is one half times six microfarads times four volts squared, forty
+
+00:01:05.747 --> 00:01:07.000
+eight microjoules.
+
+00:01:07.000 --> 00:01:10.500
+Ninety six microjoules have left the electric field store.
+
+00:01:11.260 --> 00:01:15.260
+During a real transient, resistance and possibly radiation carry that energy
+
+00:01:15.260 --> 00:01:15.560
+away.
+
+00:01:16.240 --> 00:01:17.420
+The charge has not vanished.
+
+00:01:18.040 --> 00:01:22.740
+An exactly zero resistance, zero inductance connection does not describe the
+
+00:01:22.740 --> 00:01:25.880
+settling transient, so we assume eventual real equilibration.
+
+00:01:26.740 --> 00:01:31.456
+For the general case, final voltage is C one V one plus C two V two, divided
+
+00:01:31.456 --> 00:01:31.580
+by
+
+00:01:31.580 --> 00:01:32.700
+the sum of capacitances.
+
+00:01:33.560 --> 00:01:35.940
+Both initial voltages must use the same orientation.
+
+00:01:36.620 --> 00:01:40.280
+If the second capacitor is reversed, its voltage enters with a negative sign.
+
+00:01:41.040 --> 00:01:44.140
+Do not add positive charge magnitudes just because they look easier.
+
+00:01:44.520 --> 00:01:49.254
+The released energy, for fixed capacitances and no battery, is one half times
+
+00:01:49.254 --> 00:01:49.315
+C
+
+00:01:49.315 --> 00:01:53.380
+one C two divided by their sum, times the initial voltage difference squared.
+
+00:01:54.100 --> 00:01:57.780
+It is nonnegative and becomes zero when the initial voltages already agree.
+
+00:01:58.620 --> 00:02:01.820
+Those two checks help catch sign mistakes before they become wrong answers.
+
+00:02:02.112 --> 00:02:05.892
+Now a phrase that can cause trouble: half filled with dielectric.
+
+00:02:06.612 --> 00:02:07.072
+Half of what?
+
+00:02:07.672 --> 00:02:10.192
+Draw the geometry before selecting a formula.
+
+00:02:10.412 --> 00:02:13.917
+First, the dielectric covers half the plate area and spans the full
+
+00:02:13.917 --> 00:02:14.492
+separation.
+
+00:02:15.112 --> 00:02:16.752
+The remaining area contains vacuum.
+
+00:02:17.612 --> 00:02:21.092
+Both regions run between the same two plates, so they have the same voltage.
+
+00:02:21.312 --> 00:02:23.412
+Their capacitances add in parallel.
+
+00:02:31.452 --> 00:02:32.132
+If empty capacitance is C zero and area fraction is f, the total is C zero
+
+00:02:32.132 --> 00:02:32.472
+times one minus f plus kappa times f.
+
+00:02:32.472 --> 00:02:33.432
+Kappa is the relative permittivity.
+
+00:02:34.192 --> 00:02:37.952
+With half the area filled and kappa three, the multiplier is one half plus
+
+00:02:37.952 --> 00:02:39.192
+three halves, two.
+
+00:02:39.652 --> 00:02:42.932
+An empty four microfarad capacitor becomes eight microfarads.
+
+00:02:43.512 --> 00:02:47.472
+At equal voltage, the dielectric region stores more free charge; do not force
+
+00:02:47.472 --> 00:02:48.872
+equal charges in the two regions.
+
+00:02:49.532 --> 00:02:51.152
+Now rotate the arrangement mentally.
+
+00:02:51.632 --> 00:02:55.072
+A slab covers the whole area, but only half the plate separation.
+
+00:02:55.652 --> 00:02:57.352
+The rest of the separation is vacuum.
+
+00:02:57.932 --> 00:03:00.352
+Each field line passes through both layers in succession.
+
+00:03:01.132 --> 00:03:03.772
+Voltage drops add, so these layers act in series.
+
+00:03:04.612 --> 00:03:06.432
+Assume no free charge at the internal interface.
+
+00:03:07.052 --> 00:03:11.112
+The normal electric displacement is continuous, and field in the dielectric is
+
+00:03:11.112 --> 00:03:12.932
+the vacuum field divided by kappa.
+
+00:03:13.592 --> 00:03:17.598
+The voltage is vacuum field times vacuum thickness, plus dielectric field
+
+00:03:17.598 --> 00:03:17.872
+times
+
+00:03:17.872 --> 00:03:18.512
+slab thickness.
+
+00:03:19.212 --> 00:03:22.944
+Dividing charge by that total voltage gives capacitance equal to C zero
+
+00:03:22.944 --> 00:03:23.312
+divided
+
+00:03:23.312 --> 00:03:27.452
+by one minus g plus g divided by kappa, where g is the slab thickness
+
+00:03:27.452 --> 00:03:27.992
+fraction.
+
+00:03:28.792 --> 00:03:32.312
+For g one half and kappa three, the multiplier is one point five.
+
+00:03:32.812 --> 00:03:36.572
+Our four microfarad capacitor becomes six microfarads, not eight.
+
+00:03:37.192 --> 00:03:39.892
+Same material, same word half, different result.
+
+00:03:40.532 --> 00:03:45.212
+Check the limits: zero filling gives C zero; complete filling gives kappa C
+
+00:03:45.212 --> 00:03:47.972
+zero; kappa one gives the empty value at every fraction.
+
+00:03:48.612 --> 00:03:51.452
+We assumed linear uniform dielectric and neglected fringing.
+
+00:03:52.092 --> 00:03:54.432
+Real boundary effects can need more detailed treatment.
+
+00:03:55.092 --> 00:03:59.320
+For JEE, the sketch tells you whether to add capacitances or add voltage
+
+00:03:59.320 --> 00:03:59.672
+drops.
+
+00:03:59.976 --> 00:04:03.016
+Let's finish with two shortcuts that need conditions.
+
+00:04:03.956 --> 00:04:05.796
+First, dielectric insertion and work.
+
+00:04:06.696 --> 00:04:10.996
+Start with two microfarads at ten volts and insert a dielectric of kappa three
+
+00:04:10.996 --> 00:04:11.616
+completely.
+
+00:04:12.376 --> 00:04:13.336
+Keep the battery connected.
+
+00:04:14.296 --> 00:04:18.936
+Voltage stays ten volts, capacitance becomes six microfarads and charge rises
+
+00:04:18.936 --> 00:04:21.196
+from twenty to sixty microcoulombs.
+
+00:04:22.176 --> 00:04:25.976
+Battery work is voltage times the charge increase: four hundred microjoules.
+
+00:04:26.536 --> 00:04:30.736
+Stored energy rises from one hundred to three hundred microjoules, a change of
+
+00:04:30.736 --> 00:04:31.736
+two hundred.
+
+00:04:31.736 --> 00:04:32.596
+Why are these different?
+
+00:04:33.336 --> 00:04:37.636
+During slow lossless insertion, the field pulls the material inward and an
+
+00:04:37.636 --> 00:04:39.916
+external agent can extract mechanical energy.
+
+00:04:40.756 --> 00:04:45.056
+Energy balance is change in stored energy equals battery work plus external
+
+00:04:45.056 --> 00:04:45.396
+work.
+
+00:04:46.096 --> 00:04:48.556
+External work is therefore minus two hundred microjoules.
+
+00:04:49.236 --> 00:04:53.856
+If we disconnect the battery first, charge stays twenty microcoulombs and no
+
+00:04:53.856 --> 00:04:54.756
+battery work occurs.
+
+00:04:55.316 --> 00:04:59.816
+Final stored energy is about thirty three point three three microjoules, so
+
+00:04:59.816 --> 00:05:03.516
+external work is about minus sixty six point six seven microjoules.
+
+00:05:04.336 --> 00:05:07.876
+These results assume quasistatic motion and negligible losses.
+
+00:05:08.736 --> 00:05:10.876
+State what is fixed and whose work is requested.
+
+00:05:11.836 --> 00:05:15.376
+Second, capacitors in a chain do not always have equal charge magnitudes.
+
+00:05:16.136 --> 00:05:19.756
+Picture two microfarads between a twelve volt terminal and a floating node B,
+
+00:05:20.216 --> 00:05:23.336
+then four microfarads between B and a zero volt terminal.
+
+00:05:23.336 --> 00:05:27.476
+The isolated middle node initially has plus six microcoulombs.
+
+00:05:28.296 --> 00:05:32.536
+Write the charge on each plate attached to B: two times B minus twelve, plus
+
+00:05:32.536 --> 00:05:34.316
+four times B, in microcoulombs.
+
+00:05:34.856 --> 00:05:36.276
+Their sum must equal six.
+
+00:05:36.756 --> 00:05:40.756
+So six B minus twenty four equals six, giving B five volts.
+
+00:05:41.436 --> 00:05:45.376
+The left capacitor has seven volts across it and charge magnitude fourteen
+
+00:05:45.376 --> 00:05:45.936
+microcoulombs.
+
+00:05:46.556 --> 00:05:48.936
+The right has five volts and twenty microcoulombs.
+
+00:05:49.556 --> 00:05:53.636
+On the middle node, signed charges are minus fourteen and plus twenty, summing
+
+00:05:53.636 --> 00:05:55.016
+to the specified plus six.
+
+00:05:55.236 --> 00:05:59.256
+If the node were neutral instead, B would be four volts and both charge
+
+00:05:59.256 --> 00:06:01.036
+magnitudes sixteen microcoulombs.
+
+00:06:01.636 --> 00:06:04.436
+The equal charge shortcut belongs to that neutral node case.
+
+00:06:05.036 --> 00:06:09.236
+Our routine is to draw connected nodes, preserve signed charge, and then check
+
+00:06:09.236 --> 00:06:10.676
+the energy transfers separately.

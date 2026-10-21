@@ -1,0 +1,397 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.920
+Hey, welcome back.
+
+00:00:02.620 --> 00:00:04.780
+Imagine sending a small pulse along a stretched rope.
+
+00:00:05.340 --> 00:00:09.000
+The pulse travels toward your friend, but a little mark on the rope moves up
+
+00:00:09.000 --> 00:00:11.040
+and down, not all the way to your friend.
+
+00:00:11.560 --> 00:00:15.460
+That's our first distinction: the disturbance travels while the material
+
+00:00:15.460 --> 00:00:16.440
+oscillates locally.
+
+00:00:17.220 --> 00:00:18.680
+Mechanical waves need a medium.
+
+00:00:19.380 --> 00:00:23.040
+In a transverse wave, particle motion is perpendicular to propagation.
+
+00:00:23.800 --> 00:00:28.500
+In a longitudinal wave, such as sound in air, it is parallel, producing
+
+00:00:28.500 --> 00:00:30.280
+compressions and rarefactions.
+
+00:00:31.180 --> 00:00:34.880
+For a sinusoidal wave, wavelength is the spacing between neighboring points
+
+00:00:34.880 --> 00:00:37.420
+with the same phase, such as two crests.
+
+00:00:38.420 --> 00:00:40.040
+Frequency counts oscillations per second.
+
+00:00:40.660 --> 00:00:44.640
+In one period the pattern advances one wavelength, so wave speed equals
+
+00:00:44.640 --> 00:00:45.880
+frequency times wavelength.
+
+00:00:46.600 --> 00:00:51.480
+We can write displacement as amplitude times sine of k x minus omega t plus
+
+00:00:51.480 --> 00:00:51.840
+phase.
+
+00:00:52.580 --> 00:00:57.180
+Here k equals two pi divided by wavelength, and omega equals two pi times
+
+00:00:57.180 --> 00:00:57.600
+frequency.
+
+00:00:58.460 --> 00:01:02.340
+Holding phase constant shows that this minus sign form travels in the positive
+
+00:01:02.340 --> 00:01:02.980
+x direction.
+
+00:01:03.780 --> 00:01:07.140
+With a plus sign before omega t, it travels in the negative direction.
+
+00:01:08.060 --> 00:01:10.380
+Take wavelength half a meter and frequency forty hertz.
+
+00:01:10.940 --> 00:01:12.760
+The pattern moves at twenty meters per second.
+
+00:01:13.420 --> 00:01:15.000
+That is not the speed of a marked particle.
+
+00:01:16.000 --> 00:01:19.380
+Particle velocity comes from differentiating displacement with respect to time
+
+00:01:19.380 --> 00:01:20.520
+at a fixed position.
+
+00:01:20.520 --> 00:01:26.140
+In JEE, identify which velocity the question actually asks for before touching
+
+00:01:26.140 --> 00:01:26.620
+a formula.
+
+00:01:27.000 --> 00:01:30.620
+Why does a tighter rope transmit a disturbance faster?
+
+00:01:31.800 --> 00:01:34.960
+Tension supplies the restoring influence that pulls neighboring parts into
+
+00:01:34.960 --> 00:01:35.240
+motion.
+
+00:01:36.220 --> 00:01:38.340
+Greater mass per unit length means more inertia.
+
+00:01:39.300 --> 00:01:43.820
+For small transverse waves on an ideal uniform string, speed is the square root
+
+00:01:43.820 --> 00:01:46.200
+of tension divided by mass per unit length.
+
+00:01:46.920 --> 00:01:51.020
+We use mu for that linear mass density, measured in kilograms per meter.
+
+00:01:51.780 --> 00:01:53.920
+Do not substitute volume density here.
+
+00:01:54.660 --> 00:01:58.900
+Suppose a two meter string has mass four grams and tension eight newtons.
+
+00:01:59.880 --> 00:02:02.660
+Convert four grams to zero point zero zero four kilograms.
+
+00:02:03.560 --> 00:02:07.560
+Divide by two meters: mu is zero point zero zero two kilograms per meter.
+
+00:02:08.400 --> 00:02:12.160
+The wave speed is the square root of four thousand, about sixty three point two
+
+00:02:12.160 --> 00:02:12.920
+meters per second.
+
+00:02:13.740 --> 00:02:17.660
+If tension becomes four times larger while mu stays fixed, predict the new
+
+00:02:17.660 --> 00:02:17.840
+speed.
+
+00:02:18.560 --> 00:02:19.100
+Pause for a moment.
+
+00:02:19.520 --> 00:02:22.060
+The square root makes the speed twice as large.
+
+00:02:22.700 --> 00:02:25.000
+Now imagine changing only the driving frequency.
+
+00:02:25.720 --> 00:02:29.380
+With the same string and tension, wave speed remains the same in this ideal
+
+00:02:29.380 --> 00:02:29.660
+model.
+
+00:02:30.580 --> 00:02:34.320
+Since speed equals frequency times wavelength, doubling frequency halves
+
+00:02:34.320 --> 00:02:34.760
+wavelength.
+
+00:02:35.280 --> 00:02:37.280
+That's a very useful consistency check.
+
+00:02:38.020 --> 00:02:41.720
+On a different medium the wavelength may change, but a wave transmitted across
+
+00:02:41.720 --> 00:02:44.380
+a stationary boundary retains the driving frequency.
+
+00:02:45.100 --> 00:02:48.264
+The particles and restoring forces determine the propagation speed; the source
+
+00:02:48.264 --> 00:02:48.360
+sets the frequency.
+
+00:02:48.360 --> 00:02:49.880
+Two pulses meet on a rope.
+
+00:02:50.580 --> 00:02:52.460
+Do they collide like two solid objects?
+
+00:02:53.280 --> 00:02:55.020
+In the linear wave model, no.
+
+00:02:55.520 --> 00:02:59.480
+Their displacements add while they overlap, and then the pulses continue.
+
+00:03:00.240 --> 00:03:01.280
+That is superposition.
+
+00:03:02.160 --> 00:03:06.300
+Add signed displacements at the same position and time, not just the positive
+
+00:03:06.300 --> 00:03:07.540
+heights drawn on a page.
+
+00:03:08.220 --> 00:03:11.980
+A displacement of three centimeters upward combined with two centimeters
+
+00:03:11.980 --> 00:03:14.020
+downward gives one centimeter upward.
+
+00:03:14.520 --> 00:03:19.280
+For two coherent sinusoidal waves of the same frequency, with equal amplitude A
+
+00:03:19.280 --> 00:03:23.880
+and constant phase difference, the resultant amplitude is twice A times the
+
+00:03:23.880 --> 00:03:26.080
+absolute value of cosine of half the phase difference.
+
+00:03:26.660 --> 00:03:30.800
+In phase, they reinforce; opposite in phase, they cancel.
+
+00:03:31.580 --> 00:03:35.280
+With each amplitude two centimeters and a phase difference of one hundred and
+
+00:03:35.280 --> 00:03:39.420
+twenty degrees, the resultant amplitude is two centimeters, not four.
+
+00:03:40.100 --> 00:03:44.100
+Here cancellation means a local resultant displacement pattern; it does not
+
+00:03:44.100 --> 00:03:47.000
+mean energy simply disappears from the entire wave system.
+
+00:03:47.980 --> 00:03:50.600
+Now reflect a pulse from an ideal fixed end of a string.
+
+00:03:51.440 --> 00:03:54.980
+The end cannot move, so the reflected displacement pulse is inverted.
+
+00:03:55.720 --> 00:03:58.900
+At an ideal free end it reflects without displacement inversion.
+
+00:03:59.640 --> 00:04:03.480
+These statements concern transverse string displacement, not a universal rule
+
+00:04:03.480 --> 00:04:05.120
+for every pressure wave or boundary.
+
+00:04:06.040 --> 00:04:08.360
+Incident and reflected waves can repeatedly overlap.
+
+00:04:09.040 --> 00:04:13.220
+If their frequency, amplitude and boundary conditions match appropriately, that
+
+00:04:13.220 --> 00:04:15.700
+overlap creates the standing patterns we'll study next.
+
+00:04:15.960 --> 00:04:20.900
+Combine two identical sinusoidal waves traveling in opposite directions.
+
+00:04:21.600 --> 00:04:27.400
+Their sum can be written as twice A times sine of k x times cosine of omega
+
+00:04:27.400 --> 00:04:30.160
+t, after choosing a suitable phase origin.
+
+00:04:31.080 --> 00:04:35.260
+Notice the separation: position determines the local amplitude, while time
+
+00:04:35.260 --> 00:04:36.560
+makes each point oscillate.
+
+00:04:37.140 --> 00:04:38.960
+The pattern doesn't march along the string.
+
+00:04:39.800 --> 00:04:43.880
+Nodes stay at zero displacement; antinodes have the greatest amplitude.
+
+00:04:44.500 --> 00:04:49.120
+Adjacent nodes are half a wavelength apart, and a node to its nearest antinode
+
+00:04:49.120 --> 00:04:50.320
+is a quarter wavelength.
+
+00:04:51.120 --> 00:04:54.200
+For a string fixed at both ends, both ends must be nodes.
+
+00:04:54.840 --> 00:04:57.540
+Its length must fit an integer number of half wavelengths.
+
+00:04:58.460 --> 00:05:03.440
+That gives wavelength two L divided by n, and frequency n times wave speed
+
+00:05:03.440 --> 00:05:05.080
+divided by two L.
+
+00:05:05.080 --> 00:05:06.760
+The first harmonic is the fundamental.
+
+00:05:07.320 --> 00:05:10.900
+On this string the second harmonic is the first overtone, and the third
+
+00:05:10.900 --> 00:05:12.480
+harmonic is the second overtone.
+
+00:05:13.260 --> 00:05:16.780
+Let's use length one meter and speed one hundred meters per second.
+
+00:05:17.380 --> 00:05:18.880
+The fundamental is fifty hertz.
+
+00:05:19.620 --> 00:05:23.720
+At the third harmonic, frequency is one hundred and fifty hertz and wavelength
+
+00:05:23.720 --> 00:05:24.880
+is two thirds of a meter.
+
+00:05:25.540 --> 00:05:29.860
+There are three loops, four nodes including the endpoints, and three antinodes.
+
+00:05:30.760 --> 00:05:32.040
+Don't count loops as nodes.
+
+00:05:32.640 --> 00:05:37.880
+An ideal standing wave formed by equal opposite traveling waves has no net time
+
+00:05:37.880 --> 00:05:41.880
+averaged energy transport along the string, unlike either traveling wave on its
+
+00:05:41.880 --> 00:05:42.060
+own.
+
+00:05:42.360 --> 00:05:44.900
+Let's move from a string to air in a pipe.
+
+00:05:45.860 --> 00:05:46.740
+Sound is longitudinal.
+
+00:05:47.560 --> 00:05:51.680
+An ideal open end is a displacement antinode and approximately a pressure node.
+
+00:05:52.300 --> 00:05:55.840
+A closed end is a displacement node and a pressure antinode.
+
+00:05:56.700 --> 00:06:00.280
+Keep the quantity straight: pressure and displacement have opposite node
+
+00:06:00.280 --> 00:06:00.660
+patterns.
+
+00:06:01.680 --> 00:06:05.980
+Ignoring end correction, an open pipe at both ends fits half wavelengths and
+
+00:06:05.980 --> 00:06:07.420
+has all integer harmonics.
+
+00:06:07.940 --> 00:06:12.240
+A pipe closed at one end and open at the other fits an odd number of quarter
+
+00:06:12.240 --> 00:06:14.720
+wavelengths, so only odd harmonics occur.
+
+00:06:15.680 --> 00:06:18.760
+Its first overtone is the third harmonic, not the second.
+
+00:06:19.640 --> 00:06:23.240
+For length half a meter and sound speed three hundred and forty meters per
+
+00:06:23.240 --> 00:06:27.020
+second, a closed open pipe has fundamental one hundred and seventy hertz.
+
+00:06:27.780 --> 00:06:30.440
+Its first overtone is five hundred and ten hertz.
+
+00:06:31.280 --> 00:06:35.200
+Real open ends require an effective length correction, so use it if the
+
+00:06:35.200 --> 00:06:36.200
+question supplies one.
+
+00:06:37.040 --> 00:06:41.260
+Finally, hear two tones of two hundred and fifty six and two hundred and sixty
+
+00:06:41.260 --> 00:06:41.940
+hertz together.
+
+00:06:42.720 --> 00:06:46.900
+Their relative phase changes slowly, causing alternating reinforcement and
+
+00:06:46.900 --> 00:06:47.200
+weakening.
+
+00:06:48.040 --> 00:06:51.340
+You hear four beats per second: the absolute frequency difference.
+
+00:06:52.380 --> 00:06:56.080
+Beats are easiest to notice for nearby frequencies and comparable amplitudes.
+
+00:06:57.040 --> 00:07:00.340
+Unequal amplitudes need not produce complete silence at the minima.
+
+00:07:01.140 --> 00:07:05.100
+To solve JEE wave problems, first name the wave quantity and boundary
+
+00:07:05.100 --> 00:07:07.100
+conditions, then choose the relation.
+
+00:07:07.740 --> 00:07:11.240
+A correct picture prevents far more errors than a longer formula list.

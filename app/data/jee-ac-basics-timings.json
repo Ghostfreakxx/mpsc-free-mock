@@ -1,0 +1,819 @@
+{
+  "duration": 416.4480000000113,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 83.11200000000225
+    },
+    {
+      "start": 83.11200000000225,
+      "end": 167.76000000000457
+    },
+    {
+      "start": 167.76000000000457,
+      "end": 251.28000000000685
+    },
+    {
+      "start": 251.28000000000685,
+      "end": 329.2320000000089
+    },
+    {
+      "start": 329.2320000000089,
+      "end": 416.4480000000113
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.059999942779541,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.8399999141693115,
+      "end": 5.940000057220459,
+      "text": "Alternating voltage changes magnitude and sign with time.",
+      "chapter": 0
+    },
+    {
+      "start": 6.699999809265137,
+      "end": 11.936923320476826,
+      "text": "Our starting model is a sinusoid: voltage equals peak voltage V zero times",
+      "chapter": 0
+    },
+    {
+      "start": 11.936923320476826,
+      "end": 12.220000267028809,
+      "text": "sine",
+      "chapter": 0
+    },
+    {
+      "start": 12.220000267028809,
+      "end": 13.079999923706055,
+      "text": "of omega t.",
+      "chapter": 0
+    },
+    {
+      "start": 14.039999961853027,
+      "end": 18.644819776695897,
+      "text": "Peak voltage is the largest positive value; the negative extreme is minus that",
+      "chapter": 0
+    },
+    {
+      "start": 18.644819776695897,
+      "end": 18.940000534057617,
+      "text": "peak.",
+      "chapter": 0
+    },
+    {
+      "start": 19.68000030517578,
+      "end": 22.459999084472656,
+      "text": "Omega is angular frequency in radians per second.",
+      "chapter": 0
+    },
+    {
+      "start": 23.299999237060547,
+      "end": 28.200000762939453,
+      "text": "Ordinary frequency f counts cycles per second, and omega equals two pi f.",
+      "chapter": 0
+    },
+    {
+      "start": 28.540000915527344,
+      "end": 30.31999969482422,
+      "text": "The period is one over f.",
+      "chapter": 0
+    },
+    {
+      "start": 31.18000030517578,
+      "end": 34.439998626708984,
+      "text": "For fifty hertz, a cycle lasts zero point zero two second.",
+      "chapter": 0
+    },
+    {
+      "start": 35.13999938964844,
+      "end": 37.599998474121094,
+      "text": "One quarter of a cycle lasts five milliseconds.",
+      "chapter": 0
+    },
+    {
+      "start": 38.58000183105469,
+      "end": 42.459999084472656,
+      "text": "Starting with sine at zero, the voltage reaches its positive peak after that",
+      "chapter": 0
+    },
+    {
+      "start": 42.459999084472656,
+      "end": 43.380001068115234,
+      "text": "first quarter cycle.",
+      "chapter": 0
+    },
+    {
+      "start": 44.13999938964844,
+      "end": 47.63538622733874,
+      "text": "Suppose peak voltage is one hundred square root of two volts, about one",
+      "chapter": 0
+    },
+    {
+      "start": 47.63538622733874,
+      "end": 47.980001831054686,
+      "text": "hundred",
+      "chapter": 0
+    },
+    {
+      "start": 47.980001831054686,
+      "end": 49.15999984741211,
+      "text": "forty one point four.",
+      "chapter": 0
+    },
+    {
+      "start": 49.459999084472656,
+      "end": 53.7400016784668,
+      "text": "That is not the same as a one hundred volt heating equivalent supply, although",
+      "chapter": 0
+    },
+    {
+      "start": 53.7400016784668,
+      "end": 55.02000045776367,
+      "text": "we will connect them soon.",
+      "chapter": 0
+    },
+    {
+      "start": 55.619998931884766,
+      "end": 60.26230870760404,
+      "text": "The average voltage over a full cycle of a zero offset sinusoid is zero",
+      "chapter": 0
+    },
+    {
+      "start": 60.26230870760404,
+      "end": 60.720001220703125,
+      "text": "because",
+      "chapter": 0
+    },
+    {
+      "start": 60.720001220703125,
+      "end": 62.41999816894531,
+      "text": "positive and negative parts cancel.",
+      "chapter": 0
+    },
+    {
+      "start": 63.220001220703125,
+      "end": 65.4000015258789,
+      "text": "Yet a resistor connected to it heats up.",
+      "chapter": 0
+    },
+    {
+      "start": 66.04000091552734,
+      "end": 68.5999984741211,
+      "text": "How can zero average voltage still transfer energy?",
+      "chapter": 0
+    },
+    {
+      "start": 69.36000061035156,
+      "end": 73.20128377278645,
+      "text": "The power depends on the product of voltage and current, not simply the",
+      "chapter": 0
+    },
+    {
+      "start": 73.20128377278645,
+      "end": 73.58000183105469,
+      "text": "average",
+      "chapter": 0
+    },
+    {
+      "start": 73.58000183105469,
+      "end": 73.94000244140625,
+      "text": "voltage.",
+      "chapter": 0
+    },
+    {
+      "start": 74.95999908447266,
+      "end": 79.13999938964844,
+      "text": "Keep instantaneous value, peak, cycle average and RMS in separate mental",
+      "chapter": 0
+    },
+    {
+      "start": 79.13999938964844,
+      "end": 79.41999816894531,
+      "text": "drawers.",
+      "chapter": 0
+    },
+    {
+      "start": 80.19999694824219,
+      "end": 82.87999725341797,
+      "text": "A JEE question may switch between them in one line.",
+      "chapter": 0
+    },
+    {
+      "start": 83.11200000000225,
+      "end": 85.03199995708691,
+      "text": "Let's build RMS carefully.",
+      "chapter": 1
+    },
+    {
+      "start": 85.83200002861248,
+      "end": 87.79199982834088,
+      "text": "The letters stand for root mean square.",
+      "chapter": 1
+    },
+    {
+      "start": 88.75199986648785,
+      "end": 93.17200041961895,
+      "text": "Square the changing voltage, average that square over a cycle, then take the",
+      "chapter": 1
+    },
+    {
+      "start": 93.17200041961895,
+      "end": 93.55199958038556,
+      "text": "square root.",
+      "chapter": 1
+    },
+    {
+      "start": 94.69199992370831,
+      "end": 98.35199977112042,
+      "text": "Squaring stops positive and negative portions from cancelling.",
+      "chapter": 1
+    },
+    {
+      "start": 98.35199977112042,
+      "end": 103.83559016614308,
+      "text": "For a sinusoid, the average of sine squared is one half, so RMS voltage is",
+      "chapter": 1
+    },
+    {
+      "start": 103.83559016614308,
+      "end": 104.13200045776593,
+      "text": "peak",
+      "chapter": 1
+    },
+    {
+      "start": 104.13200045776593,
+      "end": 106.51199961853253,
+      "text": "voltage divided by square root of two.",
+      "chapter": 1
+    },
+    {
+      "start": 106.99199916076886,
+      "end": 109.63200045776593,
+      "text": "The same relation holds for sinusoidal current.",
+      "chapter": 1
+    },
+    {
+      "start": 110.4119992370628,
+      "end": 115.01199961853253,
+      "text": "Our peak voltage of one hundred square root of two volts therefore has RMS",
+      "chapter": 1
+    },
+    {
+      "start": 115.01199961853253,
+      "end": 116.69200183105694,
+      "text": "value one hundred volts.",
+      "chapter": 1
+    },
+    {
+      "start": 118.23199893188702,
+      "end": 123.4119992370628,
+      "text": "Across a fifty ohm resistor, RMS current is two amperes, and average heating",
+      "chapter": 1
+    },
+    {
+      "start": 123.4119992370628,
+      "end": 126.73199893188702,
+      "text": "power is two squared times fifty, or two hundred watts.",
+      "chapter": 1
+    },
+    {
+      "start": 127.4119992370628,
+      "end": 131.6243092455764,
+      "text": "That is the same heating as a steady one hundred volt DC source across the",
+      "chapter": 1
+    },
+    {
+      "start": 131.6243092455764,
+      "end": 131.85200167846904,
+      "text": "same",
+      "chapter": 1
+    },
+    {
+      "start": 131.85200167846904,
+      "end": 132.15200091552958,
+      "text": "resistor.",
+      "chapter": 1
+    },
+    {
+      "start": 132.6320004577659,
+      "end": 137.15200091552958,
+      "text": "It does not mean the instantaneous AC voltage stays at one hundred volts.",
+      "chapter": 1
+    },
+    {
+      "start": 138.01200152588115,
+      "end": 139.95200015259013,
+      "text": "Try a peak current of six amperes.",
+      "chapter": 1
+    },
+    {
+      "start": 140.55199862671122,
+      "end": 145.37199832153544,
+      "text": "Its RMS value is about four point two four amperes, not three and not six.",
+      "chapter": 1
+    },
+    {
+      "start": 146.11200000000224,
+      "end": 149.81199694824443,
+      "text": "RMS is also not the average of the absolute value; those are different",
+      "chapter": 1
+    },
+    {
+      "start": 149.81199694824443,
+      "end": 150.43199969482646,
+      "text": "operations.",
+      "chapter": 1
+    },
+    {
+      "start": 151.3720021362327,
+      "end": 156.02072153257936,
+      "text": "For a square wave or another waveform, return to the RMS definition rather",
+      "chapter": 1
+    },
+    {
+      "start": 156.02072153257936,
+      "end": 156.27200366211162,
+      "text": "than",
+      "chapter": 1
+    },
+    {
+      "start": 156.27200366211162,
+      "end": 158.3720021362327,
+      "text": "blindly dividing the peak by square root of two.",
+      "chapter": 1
+    },
+    {
+      "start": 158.89199877929912,
+      "end": 162.0520024414085,
+      "text": "We use zero offset sinusoids throughout this class.",
+      "chapter": 1
+    },
+    {
+      "start": 162.9720006103538,
+      "end": 167.01200152588115,
+      "text": "Label peak and RMS values before substituting into any power or impedance",
+      "chapter": 1
+    },
+    {
+      "start": 167.01200152588115,
+      "end": 167.3720021362327,
+      "text": "formula.",
+      "chapter": 1
+    },
+    {
+      "start": 167.76000000000457,
+      "end": 171.8199999427841,
+      "text": "Start with the simplest AC element: an ideal resistor.",
+      "chapter": 2
+    },
+    {
+      "start": 172.660000095372,
+      "end": 175.82000041962127,
+      "text": "At every instant, current is voltage divided by resistance.",
+      "chapter": 2
+    },
+    {
+      "start": 176.48000026703338,
+      "end": 180.56000019073943,
+      "text": "If voltage is sinusoidal, current has the same frequency and phase.",
+      "chapter": 2
+    },
+    {
+      "start": 181.2399995422409,
+      "end": 183.6199996566818,
+      "text": "Their peaks and zero crossings occur together.",
+      "chapter": 2
+    },
+    {
+      "start": 184.33999992371062,
+      "end": 188.44000030518035,
+      "text": "When voltage is negative, current is negative too, so their product is still",
+      "chapter": 2
+    },
+    {
+      "start": 188.44000030518035,
+      "end": 188.81999946594695,
+      "text": "positive.",
+      "chapter": 2
+    },
+    {
+      "start": 189.70000053406218,
+      "end": 192.62000061035613,
+      "text": "Instantaneous power equals current squared times resistance.",
+      "chapter": 2
+    },
+    {
+      "start": 193.0200002288864,
+      "end": 197.54000068665007,
+      "text": "It rises and falls but never becomes negative in this ideal resistor.",
+      "chapter": 2
+    },
+    {
+      "start": 198.63999916077117,
+      "end": 200.7399995422409,
+      "text": "Energy is continually converted into heat.",
+      "chapter": 2
+    },
+    {
+      "start": 201.76000000000457,
+      "end": 206.60615472647316,
+      "text": "For RMS voltage one hundred volts and resistance fifty ohms, RMS current is",
+      "chapter": 2
+    },
+    {
+      "start": 206.60615472647316,
+      "end": 206.8000009155319,
+      "text": "two",
+      "chapter": 2
+    },
+    {
+      "start": 206.8000009155319,
+      "end": 207.3000009155319,
+      "text": "amperes.",
+      "chapter": 2
+    },
+    {
+      "start": 208.16000152588347,
+      "end": 212.71999908447722,
+      "text": "Peak current is two square root of two amperes, about two point eight three.",
+      "chapter": 2
+    },
+    {
+      "start": 212.71999908447722,
+      "end": 214.5599992370651,
+      "text": "Average power is two hundred watts.",
+      "chapter": 2
+    },
+    {
+      "start": 215.44000030518035,
+      "end": 219.6400010681198,
+      "text": "Do not multiply peak voltage by RMS current and call that average power.",
+      "chapter": 2
+    },
+    {
+      "start": 220.16999984741668,
+      "end": 225.19884556110546,
+      "text": "Either use RMS voltage times RMS current for this in phase resistor, or use",
+      "chapter": 2
+    },
+    {
+      "start": 225.19884556110546,
+      "end": 225.399999389653,
+      "text": "one",
+      "chapter": 2
+    },
+    {
+      "start": 225.399999389653,
+      "end": 227.01999832153777,
+      "text": "half peak voltage times peak current.",
+      "chapter": 2
+    },
+    {
+      "start": 227.50000167847136,
+      "end": 228.60000015259246,
+      "text": "They give the same result.",
+      "chapter": 2
+    },
+    {
+      "start": 229.37999893188933,
+      "end": 233.57999969482879,
+      "text": "The waveform diagram shows normalized voltage and current, so equal drawing",
+      "chapter": 2
+    },
+    {
+      "start": 233.57999969482879,
+      "end": 236.84000183105925,
+      "text": "heights do not mean volts and amperes are numerically equal.",
+      "chapter": 2
+    },
+    {
+      "start": 237.57999969482879,
+      "end": 239.27999664307097,
+      "text": "The useful information is timing.",
+      "chapter": 2
+    },
+    {
+      "start": 240.06000305176238,
+      "end": 243.8800027465866,
+      "text": "In a resistor only circuit, changing frequency does not change the ideal",
+      "chapter": 2
+    },
+    {
+      "start": 243.8800027465866,
+      "end": 244.42000366211394,
+      "text": "resistance.",
+      "chapter": 2
+    },
+    {
+      "start": 245.20000244141082,
+      "end": 248.76000000000457,
+      "text": "Real components can have parasitic effects at high frequencies, but our",
+      "chapter": 2
+    },
+    {
+      "start": 248.76000000000457,
+      "end": 251.0999963378952,
+      "text": "elementary lumped element model leaves those out.",
+      "chapter": 2
+    },
+    {
+      "start": 251.28000000000685,
+      "end": 255.93999984741896,
+      "text": "For an ideal inductor, voltage equals L times the derivative of current.",
+      "chapter": 3
+    },
+    {
+      "start": 256.4599998283455,
+      "end": 260.39999988556593,
+      "text": "Think about the derivative of a sine: it is a cosine, a quarter cycle ahead.",
+      "chapter": 3
+    },
+    {
+      "start": 261.05999973297804,
+      "end": 265.3800003814766,
+      "text": "So in sinusoidal steady state, voltage leads current by ninety degrees.",
+      "chapter": 3
+    },
+    {
+      "start": 266.0400002288887,
+      "end": 267.90000083924025,
+      "text": "Equivalently, current lags voltage.",
+      "chapter": 3
+    },
+    {
+      "start": 268.72000053406447,
+      "end": 272.40000083924025,
+      "text": "That phrase refers to timing, not to current being slower in the wire.",
+      "chapter": 3
+    },
+    {
+      "start": 273.2000000763008,
+      "end": 277.7769234955685,
+      "text": "The opposition magnitude is inductive reactance X L, equal to omega L,",
+      "chapter": 3
+    },
+    {
+      "start": 277.7769234955685,
+      "end": 278.3000004577705,
+      "text": "measured",
+      "chapter": 3
+    },
+    {
+      "start": 278.3000004577705,
+      "end": 278.8000004577705,
+      "text": "in ohms.",
+      "chapter": 3
+    },
+    {
+      "start": 279.3800003814766,
+      "end": 283.3999989318916,
+      "text": "At fixed L, higher frequency gives greater reactance because the current must",
+      "chapter": 3
+    },
+    {
+      "start": 283.3999989318916,
+      "end": 284.9199993896553,
+      "text": "change faster during each cycle.",
+      "chapter": 3
+    },
+    {
+      "start": 285.6600010681221,
+      "end": 290.27333445231807,
+      "text": "Use omega equal to one thousand radians per second and inductance zero point",
+      "chapter": 3
+    },
+    {
+      "start": 290.27333445231807,
+      "end": 291.18000152588576,
+      "text": "zero five henry.",
+      "chapter": 3
+    },
+    {
+      "start": 292.19999816895216,
+      "end": 293.34000137329787,
+      "text": "Reactance is fifty ohms.",
+      "chapter": 3
+    },
+    {
+      "start": 293.9800007629463,
+      "end": 297.8200009155342,
+      "text": "With RMS voltage one hundred volts, RMS current is two amperes.",
+      "chapter": 3
+    },
+    {
+      "start": 298.37999847412794,
+      "end": 301.8441015859819,
+      "text": "The arithmetic looks like division by resistance, but the energy story",
+      "chapter": 3
+    },
+    {
+      "start": 301.8441015859819,
+      "end": 302.2399990844795,
+      "text": "differs.",
+      "chapter": 3
+    },
+    {
+      "start": 302.8999989318916,
+      "end": 306.93999984741896,
+      "text": "An ideal inductor stores energy during part of the cycle and returns it during",
+      "chapter": 3
+    },
+    {
+      "start": 306.93999984741896,
+      "end": 307.52000167847365,
+      "text": "another part.",
+      "chapter": 3
+    },
+    {
+      "start": 307.52000167847365,
+      "end": 309.87999847412794,
+      "text": "Average dissipated power is zero.",
+      "chapter": 3
+    },
+    {
+      "start": 310.8000004577705,
+      "end": 312.43999984741896,
+      "text": "Instantaneous power need not be zero.",
+      "chapter": 3
+    },
+    {
+      "start": 313.09999969483107,
+      "end": 317.29999664307326,
+      "text": "A real coil includes resistance and losses, so its phase and power are not",
+      "chapter": 3
+    },
+    {
+      "start": 317.29999664307326,
+      "end": 319.19999816895216,
+      "text": "exactly those of a pure ideal inductor.",
+      "chapter": 3
+    },
+    {
+      "start": 319.87999847412794,
+      "end": 323.9199993896553,
+      "text": "The ideal formula also describes sinusoidal steady state, not a switch on",
+      "chapter": 3
+    },
+    {
+      "start": 323.9199993896553,
+      "end": 325.86000183106154,
+      "text": "transient with arbitrary initial current.",
+      "chapter": 3
+    },
+    {
+      "start": 326.47999694824904,
+      "end": 329.0599987793037,
+      "text": "Always name the model before using the ninety degree rule.",
+      "chapter": 3
+    },
+    {
+      "start": 329.2320000000089,
+      "end": 333.43199980927403,
+      "text": "For an ideal capacitor, current equals capacitance times the voltage",
+      "chapter": 4
+    },
+    {
+      "start": 333.43199980927403,
+      "end": 333.8719998664945,
+      "text": "derivative.",
+      "chapter": 4
+    },
+    {
+      "start": 334.81199992371495,
+      "end": 339.1120001144498,
+      "text": "A sinusoidal voltage therefore gives current a quarter cycle ahead: current",
+      "chapter": 4
+    },
+    {
+      "start": 339.1120001144498,
+      "end": 340.93199980927403,
+      "text": "leads voltage by ninety degrees.",
+      "chapter": 4
+    },
+    {
+      "start": 341.99200022889073,
+      "end": 344.7719999618619,
+      "text": "The capacitive reactance is one divided by omega C.",
+      "chapter": 4
+    },
+    {
+      "start": 345.8520008392423,
+      "end": 349.87199938965733,
+      "text": "Take omega equal to one thousand radians per second and C equal to twenty",
+      "chapter": 4
+    },
+    {
+      "start": 349.87199938965733,
+      "end": 350.5120006866544,
+      "text": "microfarads.",
+      "chapter": 4
+    },
+    {
+      "start": 351.59200061036046,
+      "end": 354.6720005340665,
+      "text": "Convert that capacitance to twenty times ten to the minus six farad.",
+      "chapter": 4
+    },
+    {
+      "start": 355.81199992371495,
+      "end": 357.03199923706944,
+      "text": "Reactance is fifty ohms.",
+      "chapter": 4
+    },
+    {
+      "start": 357.77200091553624,
+      "end": 362.7320000000089,
+      "text": "With RMS voltage one hundred volts, RMS current is again two amperes.",
+      "chapter": 4
+    },
+    {
+      "start": 363.43200076294835,
+      "end": 367.391999847421,
+      "text": "The same magnitude as our inductor example does not mean the same phase: the",
+      "chapter": 4
+    },
+    {
+      "start": 367.391999847421,
+      "end": 368.5720001525968,
+      "text": "lead and lag are opposite.",
+      "chapter": 4
+    },
+    {
+      "start": 370.11200106812413,
+      "end": 372.3120018310636,
+      "text": "Raise frequency while keeping component values fixed.",
+      "chapter": 4
+    },
+    {
+      "start": 373.43200076294835,
+      "end": 376.85199893189366,
+      "text": "Inductive reactance increases, but capacitive reactance decreases.",
+      "chapter": 4
+    },
+    {
+      "start": 377.77200091553624,
+      "end": 380.8120018310636,
+      "text": "Double frequency and X L doubles while X C halves.",
+      "chapter": 4
+    },
+    {
+      "start": 381.69199908448155,
+      "end": 386.01199877930577,
+      "text": "An ideal capacitor stores and returns electric field energy, giving zero",
+      "chapter": 4
+    },
+    {
+      "start": 386.01199877930577,
+      "end": 388.6519981689542,
+      "text": "average dissipated power in sinusoidal steady state.",
+      "chapter": 4
+    },
+    {
+      "start": 389.5519996948331,
+      "end": 393.0720001525968,
+      "text": "It is not a fifty ohm heater simply because its reactance is fifty ohms.",
+      "chapter": 4
+    },
+    {
+      "start": 393.952001220712,
+      "end": 398.33199847413,
+      "text": "At zero frequency steady DC, an ideal capacitor carries no sustained current",
+      "chapter": 4
+    },
+    {
+      "start": 398.33199847413,
+      "end": 402.5519996948331,
+      "text": "after charging; do not directly substitute zero into a formula without",
+      "chapter": 4
+    },
+    {
+      "start": 402.5519996948331,
+      "end": 403.67200244141515,
+      "text": "interpreting the limit.",
+      "chapter": 4
+    },
+    {
+      "start": 404.4120003051847,
+      "end": 408.4120003051847,
+      "text": "The resistor, inductor and capacitor now give us three timing patterns.",
+      "chapter": 4
+    },
+    {
+      "start": 409.39200366211827,
+      "end": 412.87199938965733,
+      "text": "Next we will combine them using phasors rather than adding voltage magnitudes",
+      "chapter": 4
+    },
+    {
+      "start": 412.87199938965733,
+      "end": 414.4319969482511,
+      "text": "as ordinary positive numbers.",
+      "chapter": 4
+    }
+  ]
+}

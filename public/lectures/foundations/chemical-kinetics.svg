@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+<title id="title">First-order decay</title><desc id="desc">Fraction remaining falls exponentially: one half after each successive half-life.</desc>
+<rect width="900" height="360" fill="#f8fafc"/>
+<g font-family="Arial,sans-serif" fill="#18212b"><text x="30" y="35" font-size="24" font-weight="bold">Same fraction lost in each half-life</text>
+<path d="M85 65V285H550" fill="none" stroke="#334155" stroke-width="2"/>
+<text x="25" y="225" font-size="17" transform="rotate(-90 25 225)">Fraction remaining</text><text x="210" y="330" font-size="18">Elapsed half-lives</text>
+<path d="M100 85L115 98.39L130 110.88L145 122.53L160 133.43L175 143.58L190 153.05L205 161.90L220 170.14L235 177.86L250 185L265 191.70L280 197.94L295 203.77L310 209.21L325 214.29L340 219.03L355 223.45L370 227.57L385 231.43L400 235L415 238.35L430 241.47L445 244.38L460 247.11L475 249.64L490 252.01L505 254.22L520 256.29L535 258.21L550 260" fill="none" stroke="#087e8b" stroke-width="4"/>
+<g fill="#b42343"><circle cx="100" cy="85" r="5"/><circle cx="250" cy="185" r="5"/><circle cx="400" cy="235" r="5"/><circle cx="550" cy="260" r="5"/></g>
+<g font-size="17"><text x="95" y="307">0</text><text x="245" y="307">1</text><text x="395" y="307">2</text><text x="545" y="307">3</text><text x="105" y="75">1</text><text x="255" y="175">1/2</text><text x="405" y="225">1/4</text><text x="545" y="246">1/8</text></g>
+<text x="605" y="115" font-size="21" font-weight="bold">First-order model</text><text x="605" y="160" font-size="18">Fraction = exp(-kt)</text><text x="605" y="200" font-size="18">Half-life = ln(2)/k</text><text x="605" y="245" font-size="18">Not a straight-line decay</text>
+<text x="30" y="353" font-size="15" fill="#475569">Ideal first-order law at fixed conditions; plotted fractions are calculated, not experimental data.</text></g></svg>

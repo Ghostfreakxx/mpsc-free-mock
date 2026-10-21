@@ -1,0 +1,909 @@
+{
+  "duration": 489.8880000000141,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 96.12000000000275
+    },
+    {
+      "start": 96.12000000000275,
+      "end": 189.5280000000054
+    },
+    {
+      "start": 189.5280000000054,
+      "end": 290.88000000000835
+    },
+    {
+      "start": 290.88000000000835,
+      "end": 392.8800000000113
+    },
+    {
+      "start": 392.8800000000113,
+      "end": 489.8880000000141
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.559999942779541,
+      "text": "Welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.140000104904175,
+      "end": 6.539999961853027,
+      "text": "Today we begin current electricity by asking a very simple question: what does",
+      "chapter": 0
+    },
+    {
+      "start": 6.539999961853027,
+      "end": 8.239999771118164,
+      "text": "it mean for charge to flow?",
+      "chapter": 0
+    },
+    {
+      "start": 9.260000228881836,
+      "end": 12.15999984741211,
+      "text": "Current is the rate at which charge crosses a chosen cross section.",
+      "chapter": 0
+    },
+    {
+      "start": 12.979999542236328,
+      "end": 16.200000762939453,
+      "text": "For a steady flow, current is charge divided by time.",
+      "chapter": 0
+    },
+    {
+      "start": 16.920000076293945,
+      "end": 19.780000686645508,
+      "text": "More generally, I equals dQ by dt.",
+      "chapter": 0
+    },
+    {
+      "start": 20.899999618530273,
+      "end": 22.760000228881836,
+      "text": "Imagine a wire cut by an invisible ring.",
+      "chapter": 0
+    },
+    {
+      "start": 23.479999542236328,
+      "end": 27.200000762939453,
+      "text": "Every coulomb crossing that ring each second contributes one ampere.",
+      "chapter": 0
+    },
+    {
+      "start": 27.799999237060547,
+      "end": 32.2400016784668,
+      "text": "In a metal, electrons already move rapidly in random directions, but those",
+      "chapter": 0
+    },
+    {
+      "start": 32.2400016784668,
+      "end": 34.15999984741211,
+      "text": "random motions cancel on average.",
+      "chapter": 0
+    },
+    {
+      "start": 34.7400016784668,
+      "end": 37.18000030517578,
+      "text": "An electric field adds a tiny organized drift.",
+      "chapter": 0
+    },
+    {
+      "start": 37.779998779296875,
+      "end": 41.939998626708984,
+      "text": "That drift is slow, yet the electrical response of a circuit is established",
+      "chapter": 0
+    },
+    {
+      "start": 41.939998626708984,
+      "end": 43.81999969482422,
+      "text": "through the field throughout the conductor.",
+      "chapter": 0
+    },
+    {
+      "start": 44.5,
+      "end": 46.08000183105469,
+      "text": "Here is the microscopic connection.",
+      "chapter": 0
+    },
+    {
+      "start": 46.65999984741211,
+      "end": 50.47999954223633,
+      "text": "If n is the number of free electrons per unit volume, each with charge",
+      "chapter": 0
+    },
+    {
+      "start": 50.47999954223633,
+      "end": 55.18000030517578,
+      "text": "magnitude e, the cross sectional area is A, and the drift speed is v sub d,",
+      "chapter": 0
+    },
+    {
+      "start": 55.779998779296875,
+      "end": 58.36000061035156,
+      "text": "then I equals n e A v sub d.",
+      "chapter": 0
+    },
+    {
+      "start": 59.380001068115234,
+      "end": 63.421537937262116,
+      "text": "Notice the product: in one second, a slice of length v sub d moves through",
+      "chapter": 0
+    },
+    {
+      "start": 63.421537937262116,
+      "end": 63.63999938964844,
+      "text": "area",
+      "chapter": 0
+    },
+    {
+      "start": 63.63999938964844,
+      "end": 64,
+      "text": "A.",
+      "chapter": 0
+    },
+    {
+      "start": 64.41999816894531,
+      "end": 68.80000305175781,
+      "text": "Its volume is A v sub d, so the number of carriers is n A v sub d.",
+      "chapter": 0
+    },
+    {
+      "start": 69.22000122070312,
+      "end": 70.81999969482422,
+      "text": "Each contributes charge e.",
+      "chapter": 0
+    },
+    {
+      "start": 71.44000244140625,
+      "end": 74.94000244140625,
+      "text": "One careful sign point: conventional current is defined in the direction",
+      "chapter": 0
+    },
+    {
+      "start": 74.94000244140625,
+      "end": 76.30000305175781,
+      "text": "positive charge would move.",
+      "chapter": 0
+    },
+    {
+      "start": 76.86000061035156,
+      "end": 78.68000030517578,
+      "text": "Electrons drift opposite to that direction.",
+      "chapter": 0
+    },
+    {
+      "start": 79.18000030517578,
+      "end": 84.5069242624136,
+      "text": "Try this: if two times ten to the 18 electrons cross a section each second,",
+      "chapter": 0
+    },
+    {
+      "start": 84.5069242624136,
+      "end": 84.72000122070312,
+      "text": "the",
+      "chapter": 0
+    },
+    {
+      "start": 84.72000122070312,
+      "end": 89.18000030517578,
+      "text": "current magnitude is three point two tenths of an ampere, using e equal to one",
+      "chapter": 0
+    },
+    {
+      "start": 89.18000030517578,
+      "end": 91.58000183105469,
+      "text": "point six times ten to the minus 19 coulomb.",
+      "chapter": 0
+    },
+    {
+      "start": 92.36000061035156,
+      "end": 95.86000061035156,
+      "text": "That direction convention will matter in every graph and circuit we meet next.",
+      "chapter": 0
+    },
+    {
+      "start": 96.12000000000275,
+      "end": 100.85999977112091,
+      "text": "The total current depends on how much wire we capture, so physicists also use",
+      "chapter": 1
+    },
+    {
+      "start": 100.85999977112091,
+      "end": 101.58000003814972,
+      "text": "current density.",
+      "chapter": 1
+    },
+    {
+      "start": 102.48000013351715,
+      "end": 105.2600003433255,
+      "text": "Current density J is current per cross sectional area.",
+      "chapter": 1
+    },
+    {
+      "start": 106.08000003814972,
+      "end": 111.84000026703156,
+      "text": "For a uniform wire, J equals I over A, and the microscopic expression becomes",
+      "chapter": 1
+    },
+    {
+      "start": 111.84000026703156,
+      "end": 113.64000045776642,
+      "text": "n e v sub d.",
+      "chapter": 1
+    },
+    {
+      "start": 114.33999931335724,
+      "end": 118.06000053406036,
+      "text": "This is useful because it separates the local material response from the size",
+      "chapter": 1
+    },
+    {
+      "start": 118.06000053406036,
+      "end": 118.56000053406036,
+      "text": "of the wire.",
+      "chapter": 1
+    },
+    {
+      "start": 119.30000030517853,
+      "end": 124.2038468258225,
+      "text": "In a simple conductor, drift speed is proportional to the electric field: v",
+      "chapter": 1
+    },
+    {
+      "start": 124.2038468258225,
+      "end": 124.40000068664826,
+      "text": "sub",
+      "chapter": 1
+    },
+    {
+      "start": 124.40000068664826,
+      "end": 126.35999977112091,
+      "text": "d equals mobility times E.",
+      "chapter": 1
+    },
+    {
+      "start": 127.22000038147247,
+      "end": 131.16000091553008,
+      "text": "Mobility, written mu, tells us how easily carriers respond to the field.",
+      "chapter": 1
+    },
+    {
+      "start": 132.18000137329375,
+      "end": 134.7399989318875,
+      "text": "Combine those statements and J equals n e mu E.",
+      "chapter": 1
+    },
+    {
+      "start": 135.27999984741484,
+      "end": 139.96000015259062,
+      "text": "The factor n e mu is called conductivity, sigma, so J equals sigma E.",
+      "chapter": 1
+    },
+    {
+      "start": 140.41999923706328,
+      "end": 142.3200007629422,
+      "text": "Its reciprocal is resistivity, rho.",
+      "chapter": 1
+    },
+    {
+      "start": 142.3200007629422,
+      "end": 144.09999954223906,
+      "text": "Let us use a quick application.",
+      "chapter": 1
+    },
+    {
+      "start": 144.86000167846953,
+      "end": 148.05999862671172,
+      "text": "A wire carries two amperes through an area of one square millimeter.",
+      "chapter": 1
+    },
+    {
+      "start": 148.05999862671172,
+      "end": 151.87999832153594,
+      "text": "Convert the area to one times ten to the minus six square meters.",
+      "chapter": 1
+    },
+    {
+      "start": 152.86000167846953,
+      "end": 156.25999938965117,
+      "text": "The current density is therefore two times ten to the six amperes per square",
+      "chapter": 1
+    },
+    {
+      "start": 156.25999938965117,
+      "end": 156.46000015259062,
+      "text": "meter.",
+      "chapter": 1
+    },
+    {
+      "start": 157.25999938965117,
+      "end": 161.35999786377226,
+      "text": "It is not two amperes per millimeter in a vague sense; unit conversion is part",
+      "chapter": 1
+    },
+    {
+      "start": 161.35999786377226,
+      "end": 161.93999969482695,
+      "text": "of the physics.",
+      "chapter": 1
+    },
+    {
+      "start": 162.62000000000273,
+      "end": 164.84000122070586,
+      "text": "Now imagine the same current in a thinner wire.",
+      "chapter": 1
+    },
+    {
+      "start": 165.63999664306914,
+      "end": 169.9999972534207,
+      "text": "The current may be unchanged in a series path, but J becomes larger because A",
+      "chapter": 1
+    },
+    {
+      "start": 169.9999972534207,
+      "end": 170.4999972534207,
+      "text": "is smaller.",
+      "chapter": 1
+    },
+    {
+      "start": 171.16000091553008,
+      "end": 174.4800006103543,
+      "text": "That larger current density is associated with stronger heating risk.",
+      "chapter": 1
+    },
+    {
+      "start": 175.03999816894805,
+      "end": 180.56000244140898,
+      "text": "For JEE, keep the chain visible: microscopic carriers give drift speed, drift",
+      "chapter": 1
+    },
+    {
+      "start": 180.56000244140898,
+      "end": 184.20358999399312,
+      "text": "speed gives current density, and conductivity links current density to",
+      "chapter": 1
+    },
+    {
+      "start": 184.20358999399312,
+      "end": 184.62000000000273,
+      "text": "electric",
+      "chapter": 1
+    },
+    {
+      "start": 184.62000000000273,
+      "end": 184.95999633789336,
+      "text": "field.",
+      "chapter": 1
+    },
+    {
+      "start": 185.70000183105742,
+      "end": 189.0799990844754,
+      "text": "The equations are connected, not a collection of unrelated formulas.",
+      "chapter": 1
+    },
+    {
+      "start": 189.5280000000054,
+      "end": 192.92800009537282,
+      "text": "Now connect the field picture to a measurable circuit relation.",
+      "chapter": 2
+    },
+    {
+      "start": 193.62799990463796,
+      "end": 197.167999866491,
+      "text": "For an ohmic conductor at fixed temperature and fixed physical conditions,",
+      "chapter": 2
+    },
+    {
+      "start": 197.64799988556447,
+      "end": 199.78800022888723,
+      "text": "potential difference is proportional to current.",
+      "chapter": 2
+    },
+    {
+      "start": 200.6879998474175,
+      "end": 203.4679995803887,
+      "text": "We write V equals I R.",
+      "chapter": 2
+    },
+    {
+      "start": 204.48800003815236,
+      "end": 208.06800091553274,
+      "text": "Resistance measures how strongly the element opposes charge flow in that",
+      "chapter": 2
+    },
+    {
+      "start": 208.06800091553274,
+      "end": 208.3479996948296,
+      "text": "condition.",
+      "chapter": 2
+    },
+    {
+      "start": 209.00799954224172,
+      "end": 211.16799938965383,
+      "text": "The phrase fixed conditions matters.",
+      "chapter": 2
+    },
+    {
+      "start": 211.82799923706594,
+      "end": 216.968000534063,
+      "text": "A metal filament heats as current rises, so its resistance changes; a diode is",
+      "chapter": 2
+    },
+    {
+      "start": 216.968000534063,
+      "end": 218.36800015259328,
+      "text": "even more clearly non ohmic.",
+      "chapter": 2
+    },
+    {
+      "start": 218.98799908447805,
+      "end": 222.04800045776906,
+      "text": "On a graph, read the axes before grabbing a slope.",
+      "chapter": 2
+    },
+    {
+      "start": 222.72800076294484,
+      "end": 226.54800045776906,
+      "text": "If vertical is V and horizontal is I, the slope is R.",
+      "chapter": 2
+    },
+    {
+      "start": 227.20800030518117,
+      "end": 231.5280000000054,
+      "text": "If vertical is I and horizontal is V, the slope is one over R.",
+      "chapter": 2
+    },
+    {
+      "start": 232.16799938965383,
+      "end": 235.0280000000054,
+      "text": "That small habit prevents many JEE mistakes.",
+      "chapter": 2
+    },
+    {
+      "start": 235.80799877930227,
+      "end": 236.70800030518117,
+      "text": "Here is a short example.",
+      "chapter": 2
+    },
+    {
+      "start": 237.38800061035695,
+      "end": 240.80799877930227,
+      "text": "A resistor has twelve volts across it and carries three amperes.",
+      "chapter": 2
+    },
+    {
+      "start": 241.4280015258843,
+      "end": 243.12799847412649,
+      "text": "Its resistance is four ohms.",
+      "chapter": 2
+    },
+    {
+      "start": 243.7879983215386,
+      "end": 247.29569344623812,
+      "text": "If the same resistor remains at the same temperature and we apply twenty",
+      "chapter": 2
+    },
+    {
+      "start": 247.29569344623812,
+      "end": 247.5880013732964,
+      "text": "volts,",
+      "chapter": 2
+    },
+    {
+      "start": 248.1879998474175,
+      "end": 249.72800076294484,
+      "text": "the current becomes five amperes.",
+      "chapter": 2
+    },
+    {
+      "start": 250.96799862671438,
+      "end": 253.48799908447805,
+      "text": "Pause and ask: what assumption allowed that prediction?",
+      "chapter": 2
+    },
+    {
+      "start": 254.0479966430718,
+      "end": 258.70800030518114,
+      "text": "It was not merely the label resistor; it was the ohmic, fixed condition model.",
+      "chapter": 2
+    },
+    {
+      "start": 259.8280030517632,
+      "end": 261.80799877930224,
+      "text": "The microscopic story also makes sense.",
+      "chapter": 2
+    },
+    {
+      "start": 262.487999084478,
+      "end": 266.62799847412646,
+      "text": "A stronger field gives carriers more drift between collisions, so current",
+      "chapter": 2
+    },
+    {
+      "start": 266.62799847412646,
+      "end": 270.60800183106005,
+      "text": "density rises proportionally while the material and geometry stay stable.",
+      "chapter": 2
+    },
+    {
+      "start": 271.30799877930224,
+      "end": 276.3440018920952,
+      "text": "A graph that bends tells us the proportionality has changed.",
+      "chapter": 2
+    },
+    {
+      "start": 276.3440018920952,
+      "end": 279.987999084478,
+      "text": "In practice, contact resistance, heating and material behavior can matter.",
+      "chapter": 2
+    },
+    {
+      "start": 280.9479981689507,
+      "end": 285.487999084478,
+      "text": "In JEE questions, identify the model first, then use the graph or equation.",
+      "chapter": 2
+    },
+    {
+      "start": 286.367996337896,
+      "end": 290.2317192056399,
+      "text": "Never call every two terminal device ohmic just because it has a voltage and a",
+      "chapter": 2
+    },
+    {
+      "start": 290.2317192056399,
+      "end": 290.62799847412646,
+      "text": "current.",
+      "chapter": 2
+    },
+    {
+      "start": 290.88000000000835,
+      "end": 292.6599999713981,
+      "text": "Resistance has two layers.",
+      "chapter": 3
+    },
+    {
+      "start": 293.7399998951042,
+      "end": 299.10000026703716,
+      "text": "Geometry matters through R equals rho L over A, while resistivity rho belongs",
+      "chapter": 3
+    },
+    {
+      "start": 299.10000026703716,
+      "end": 301.0799998092735,
+      "text": "to the material and its physical condition.",
+      "chapter": 3
+    },
+    {
+      "start": 301.9800003814781,
+      "end": 306.72000015259624,
+      "text": "A longer uniform wire gives carriers more length over which collisions can",
+      "chapter": 3
+    },
+    {
+      "start": 306.72000015259624,
+      "end": 307.1400002288902,
+      "text": "impede drift.",
+      "chapter": 3
+    },
+    {
+      "start": 307.88000000000835,
+      "end": 312.5800007629478,
+      "text": "A larger cross section offers more parallel paths, so resistance falls.",
+      "chapter": 3
+    },
+    {
+      "start": 313.400000457772,
+      "end": 317.72000015259624,
+      "text": "For a given metal over a modest temperature range, we often model resistivity",
+      "chapter": 3
+    },
+    {
+      "start": 317.72000015259624,
+      "end": 323.22000015259624,
+      "text": "as rho equals rho zero times one plus alpha times T minus T zero.",
+      "chapter": 3
+    },
+    {
+      "start": 324.38000000000835,
+      "end": 327.72000015259624,
+      "text": "Metals usually have positive alpha: heating increases resistivity.",
+      "chapter": 3
+    },
+    {
+      "start": 328.6000012207115,
+      "end": 331.94000137329937,
+      "text": "Semiconductors can behave differently, so do not transfer the metal sign",
+      "chapter": 3
+    },
+    {
+      "start": 331.94000137329937,
+      "end": 332.4999989318931,
+      "text": "automatically.",
+      "chapter": 3
+    },
+    {
+      "start": 333.6000012207115,
+      "end": 334.7400006103599,
+      "text": "Try a geometry question.",
+      "chapter": 3
+    },
+    {
+      "start": 335.44000137329937,
+      "end": 339.0199993896568,
+      "text": "A uniform wire is stretched to twice its original length, with volume",
+      "chapter": 3
+    },
+    {
+      "start": 339.0199993896568,
+      "end": 339.4999989318931,
+      "text": "conserved.",
+      "chapter": 3
+    },
+    {
+      "start": 340.1000012207115,
+      "end": 344.53999984742046,
+      "text": "If its radius becomes r prime, the volume relation says the new area is half",
+      "chapter": 3
+    },
+    {
+      "start": 344.53999984742046,
+      "end": 345.28000152588726,
+      "text": "the old area.",
+      "chapter": 3
+    },
+    {
+      "start": 346.1799992370689,
+      "end": 350.4035884250822,
+      "text": "Since resistance is proportional to L over A, the new resistance is two",
+      "chapter": 3
+    },
+    {
+      "start": 350.4035884250822,
+      "end": 350.81999862671734,
+      "text": "divided",
+      "chapter": 3
+    },
+    {
+      "start": 350.81999862671734,
+      "end": 353.2600010681236,
+      "text": "by one half, or four times the original.",
+      "chapter": 3
+    },
+    {
+      "start": 354.1799992370689,
+      "end": 357.89999664307476,
+      "text": "This answer uses a hidden assumption: uniform stretching and constant",
+      "chapter": 3
+    },
+    {
+      "start": 357.89999664307476,
+      "end": 358.47999847412945,
+      "text": "resistivity.",
+      "chapter": 3
+    },
+    {
+      "start": 359.29999816895366,
+      "end": 363.39999664307476,
+      "text": "If the wire is heated substantially, rho may change too, and the simple factor",
+      "chapter": 3
+    },
+    {
+      "start": 363.39999664307476,
+      "end": 364.7599972534263,
+      "text": "of four is incomplete.",
+      "chapter": 3
+    },
+    {
+      "start": 365.6400021362388,
+      "end": 369.9230784959143,
+      "text": "Another useful distinction: resistivity has units ohm meter and does not",
+      "chapter": 3
+    },
+    {
+      "start": 369.9230784959143,
+      "end": 370.28000152588726,
+      "text": "depend",
+      "chapter": 3
+    },
+    {
+      "start": 370.28000152588726,
+      "end": 374.6000012207115,
+      "text": "on the sample's length or area, while resistance has units ohm and does.",
+      "chapter": 3
+    },
+    {
+      "start": 375.219996337899,
+      "end": 379.7599972534263,
+      "text": "A material can have low resistivity but still form a large resistance if made",
+      "chapter": 3
+    },
+    {
+      "start": 379.7599972534263,
+      "end": 381.2599972534263,
+      "text": "into a very long, thin wire.",
+      "chapter": 3
+    },
+    {
+      "start": 382.2400006103599,
+      "end": 386.5000027465904,
+      "text": "In a graph or numerical question, list what changed: material, temperature,",
+      "chapter": 3
+    },
+    {
+      "start": 387.07999694825054,
+      "end": 388.56000030518413,
+      "text": "length, area or all four.",
+      "chapter": 3
+    },
+    {
+      "start": 389.1199978637779,
+      "end": 392.2338477971087,
+      "text": "That checklist keeps geometry and material effects from getting mixed",
+      "chapter": 3
+    },
+    {
+      "start": 392.2338477971087,
+      "end": 392.6400021362388,
+      "text": "together.",
+      "chapter": 3
+    },
+    {
+      "start": 392.8800000000113,
+      "end": 395.7199999141806,
+      "text": "Finally, let us track what the circuit is doing with energy.",
+      "chapter": 4
+    },
+    {
+      "start": 396.580000047695,
+      "end": 400.4999998855704,
+      "text": "Electrical power is the rate of energy transfer, P equals V I.",
+      "chapter": 4
+    },
+    {
+      "start": 400.4999998855704,
+      "end": 406.4999998855704,
+      "text": "For an ohmic resistor, substitute V equals I R to get P equals I squared R, or",
+      "chapter": 4
+    },
+    {
+      "start": 406.4999998855704,
+      "end": 410.6600006866568,
+      "text": "substitute I equals V over R to get P equals V squared over R.",
+      "chapter": 4
+    },
+    {
+      "start": 411.24000061036287,
+      "end": 414.51999938965974,
+      "text": "These forms are equivalent only when the same resistor model applies.",
+      "chapter": 4
+    },
+    {
+      "start": 415.24000061036287,
+      "end": 419.2599991607779,
+      "text": "The safest choice depends on what the question gives and what remains fixed.",
+      "chapter": 4
+    },
+    {
+      "start": 419.83999908448396,
+      "end": 422.35999954224764,
+      "text": "A six ohm heater carries two amperes.",
+      "chapter": 4
+    },
+    {
+      "start": 423.0399998474234,
+      "end": 427.1399983215445,
+      "text": "Its power is I squared R, which is four times six, or twenty four watts.",
+      "chapter": 4
+    },
+    {
+      "start": 428.01999938965974,
+      "end": 432.58000076295076,
+      "text": "In five minutes, the energy transferred is power times time: twenty four",
+      "chapter": 4
+    },
+    {
+      "start": 432.58000076295076,
+      "end": 436.9400013733023,
+      "text": "multiplied by three hundred seconds, or seven thousand two hundred joules.",
+      "chapter": 4
+    },
+    {
+      "start": 437.3800000000113,
+      "end": 440.26000106812654,
+      "text": "Now compare two resistors across the same ideal voltage.",
+      "chapter": 4
+    },
+    {
+      "start": 440.9999989318961,
+      "end": 445.3938470576473,
+      "text": "Since P equals V squared over R, the smaller resistance takes the larger",
+      "chapter": 4
+    },
+    {
+      "start": 445.3938470576473,
+      "end": 445.76000106812654,
+      "text": "power.",
+      "chapter": 4
+    },
+    {
+      "start": 446.17999923707185,
+      "end": 450.42000091553865,
+      "text": "With the same current through them, P equals I squared R, so the larger",
+      "chapter": 4
+    },
+    {
+      "start": 450.42000091553865,
+      "end": 452.1999996948355,
+      "text": "resistance takes the larger power.",
+      "chapter": 4
+    },
+    {
+      "start": 453.24000061036287,
+      "end": 455.85999954224764,
+      "text": "Same symbols, different constraint, different comparison.",
+      "chapter": 4
+    },
+    {
+      "start": 456.7200001525992,
+      "end": 458.50000274659334,
+      "text": "That is a classic JEE trap.",
+      "chapter": 4
+    },
+    {
+      "start": 459.5600003051871,
+      "end": 463.83999908448396,
+      "text": "Power is not the same as energy: watts measure joules per second, while energy",
+      "chapter": 4
+    },
+    {
+      "start": 463.83999908448396,
+      "end": 464.92000091553865,
+      "text": "is measured in joules.",
+      "chapter": 4
+    },
+    {
+      "start": 465.7800015258902,
+      "end": 470.2599972534293,
+      "text": "In a real resistor, electrical energy becomes internal energy and then often",
+      "chapter": 4
+    },
+    {
+      "start": 470.2599972534293,
+      "end": 471.92000091553865,
+      "text": "heat transferred to the surroundings.",
+      "chapter": 4
+    },
+    {
+      "start": 472.3600033569449,
+      "end": 477.2599972534293,
+      "text": "We have now built a clean foundation: charge flow gives current, the material",
+      "chapter": 4
+    },
+    {
+      "start": 477.2599972534293,
+      "end": 481.61999786378084,
+      "text": "and geometry give resistance, and voltage current conditions determine power.",
+      "chapter": 4
+    },
+    {
+      "start": 482.460001831066,
+      "end": 486.0161527076247,
+      "text": "The next classes will use these ideas in resistor networks, cells and",
+      "chapter": 4
+    },
+    {
+      "start": 486.0161527076247,
+      "end": 486.4799984741324,
+      "text": "Kirchhoff",
+      "chapter": 4
+    },
+    {
+      "start": 486.4799984741324,
+      "end": 489.7999981689566,
+      "text": "laws, where node by node bookkeeping becomes the main skill.",
+      "chapter": 4
+    }
+  ]
+}

@@ -1,0 +1,783 @@
+{
+  "duration": 422.4480000000115,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 77.61600000000205
+    },
+    {
+      "start": 77.61600000000205,
+      "end": 163.2720000000044
+    },
+    {
+      "start": 163.2720000000044,
+      "end": 252.5760000000069
+    },
+    {
+      "start": 252.5760000000069,
+      "end": 334.9440000000091
+    },
+    {
+      "start": 334.9440000000091,
+      "end": 422.4480000000115
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.0800000429153442,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.6399999856948853,
+      "end": 3.140000104904175,
+      "text": "Ray optics helped us locate images.",
+      "chapter": 0
+    },
+    {
+      "start": 4.039999961853027,
+      "end": 7.119999885559082,
+      "text": "Now we need wave optics to explain bright and dark bands.",
+      "chapter": 0
+    },
+    {
+      "start": 7.820000171661377,
+      "end": 10.720000267028809,
+      "text": "A wavefront is a surface joining points with the same phase.",
+      "chapter": 0
+    },
+    {
+      "start": 11.300000190734863,
+      "end": 16.31999969482422,
+      "text": "A point source in a uniform medium produces spherical wavefronts; far from a",
+      "chapter": 0
+    },
+    {
+      "start": 16.31999969482422,
+      "end": 19.139999389648438,
+      "text": "source, a small patch can be treated as a plane wavefront.",
+      "chapter": 0
+    },
+    {
+      "start": 19.860000610351562,
+      "end": 23.8799991607666,
+      "text": "In an isotropic medium, rays point perpendicular to the wavefront in the",
+      "chapter": 0
+    },
+    {
+      "start": 23.8799991607666,
+      "end": 24.639999389648438,
+      "text": "direction of travel.",
+      "chapter": 0
+    },
+    {
+      "start": 25.559999465942383,
+      "end": 30,
+      "text": "Huygens's principle treats every point on an existing front as a source of",
+      "chapter": 0
+    },
+    {
+      "start": 30,
+      "end": 30.399999618530273,
+      "text": "secondary wavelets.",
+      "chapter": 0
+    },
+    {
+      "start": 31.139999389648438,
+      "end": 34.7599983215332,
+      "text": "After a short time, each wavelet has radius speed times that time.",
+      "chapter": 0
+    },
+    {
+      "start": 35.2400016784668,
+      "end": 37.52000045776367,
+      "text": "The advancing envelope gives the next wavefront.",
+      "chapter": 0
+    },
+    {
+      "start": 38.220001220703125,
+      "end": 42.060001373291016,
+      "text": "This is a construction for propagation, not a claim that we have installed a",
+      "chapter": 0
+    },
+    {
+      "start": 42.060001373291016,
+      "end": 43.560001373291016,
+      "text": "separate physical lamp at every point.",
+      "chapter": 0
+    },
+    {
+      "start": 44.08000183105469,
+      "end": 48.779998779296875,
+      "text": "For a plane wave in a uniform medium, all those radii are equal, and the new",
+      "chapter": 0
+    },
+    {
+      "start": 48.779998779296875,
+      "end": 50.31999969482422,
+      "text": "envelope is another parallel plane.",
+      "chapter": 0
+    },
+    {
+      "start": 50.779998779296875,
+      "end": 54.916409614758614,
+      "text": "In a medium of lower phase speed, the wavelets grow more slowly during the",
+      "chapter": 0
+    },
+    {
+      "start": 54.916409614758614,
+      "end": 55.13999938964844,
+      "text": "same",
+      "chapter": 0
+    },
+    {
+      "start": 55.13999938964844,
+      "end": 55.599998474121094,
+      "text": "time interval.",
+      "chapter": 0
+    },
+    {
+      "start": 56.18000030517578,
+      "end": 60.15999984741211,
+      "text": "That difference will let us derive refraction rather than merely quote Snell's",
+      "chapter": 0
+    },
+    {
+      "start": 60.15999984741211,
+      "end": 60.279998779296875,
+      "text": "law.",
+      "chapter": 0
+    },
+    {
+      "start": 60.79999923706055,
+      "end": 65.08000183105469,
+      "text": "It also explains why apertures can spread light into directions that a single",
+      "chapter": 0
+    },
+    {
+      "start": 65.08000183105469,
+      "end": 66.31999969482422,
+      "text": "straight ray sketch misses.",
+      "chapter": 0
+    },
+    {
+      "start": 66.95999908447266,
+      "end": 71.05999755859375,
+      "text": "The full quantitative treatment needs superposition and phase information;",
+      "chapter": 0
+    },
+    {
+      "start": 71.80000305175781,
+      "end": 75.72000122070312,
+      "text": "Huygens's simple picture is our conceptual starting point, not a complete",
+      "chapter": 0
+    },
+    {
+      "start": 75.72000122070312,
+      "end": 77.4000015258789,
+      "text": "intensity calculation by itself.",
+      "chapter": 0
+    },
+    {
+      "start": 77.61600000000205,
+      "end": 80.5560000572225,
+      "text": "Let a tilted plane wavefront reach a flat mirror.",
+      "chapter": 1
+    },
+    {
+      "start": 81.57600003814902,
+      "end": 85.25599986648764,
+      "text": "One end reaches the mirror first and begins contributing reflected wavelets",
+      "chapter": 1
+    },
+    {
+      "start": 85.73599988556113,
+      "end": 87.07600003814902,
+      "text": "while the other end is still approaching.",
+      "chapter": 1
+    },
+    {
+      "start": 88.03600007629599,
+      "end": 91.93599969482626,
+      "text": "During the same time interval, both incident and reflected light travel at the",
+      "chapter": 1
+    },
+    {
+      "start": 91.93599969482626,
+      "end": 93.45600015258994,
+      "text": "same speed in the same medium.",
+      "chapter": 1
+    },
+    {
+      "start": 94.93599969482626,
+      "end": 98.97600061035361,
+      "text": "The two construction triangles have equal traveled distances, and geometry",
+      "chapter": 1
+    },
+    {
+      "start": 98.97600061035361,
+      "end": 101.23600083923544,
+      "text": "gives equal incidence and reflection angles.",
+      "chapter": 1
+    },
+    {
+      "start": 102.05600053405966,
+      "end": 104.43599969482626,
+      "text": "That is the ray law recovered from wavefronts.",
+      "chapter": 1
+    },
+    {
+      "start": 105.4159992370626,
+      "end": 109.03600007629599,
+      "text": "For refraction, repeat the construction at a boundary between two media.",
+      "chapter": 1
+    },
+    {
+      "start": 110.25599938965048,
+      "end": 113.75599938965048,
+      "text": "While the last part of the incident front travels a distance v one times delta",
+      "chapter": 1
+    },
+    {
+      "start": 113.75599938965048,
+      "end": 117.69600183105673,
+      "text": "t, the first transmitted part travels v two times delta t.",
+      "chapter": 1
+    },
+    {
+      "start": 118.71599847412314,
+      "end": 120.9159992370626,
+      "text": "The triangles share the relevant diagonal length.",
+      "chapter": 1
+    },
+    {
+      "start": 122.01600152588095,
+      "end": 127.59599954223837,
+      "text": "Their sine ratio gives sine i over sine r equal to v one over v two.",
+      "chapter": 1
+    },
+    {
+      "start": 127.59599954223837,
+      "end": 132.55599862671102,
+      "text": "Since v equals c over n, that speed ratio is n two over n one.",
+      "chapter": 1
+    },
+    {
+      "start": 132.55599862671102,
+      "end": 137.05599862671102,
+      "text": "Rearranging gives Snell's law: n one sine i equals n two sine r.",
+      "chapter": 1
+    },
+    {
+      "start": 137.93599969482625,
+      "end": 142.03599816894734,
+      "text": "If the second speed is smaller, its front advances less during that time, and",
+      "chapter": 1
+    },
+    {
+      "start": 142.03599816894734,
+      "end": 143.75599938965047,
+      "text": "the transmitted ray turns toward the normal.",
+      "chapter": 1
+    },
+    {
+      "start": 144.95599633789266,
+      "end": 149.19600183105672,
+      "text": "This derivation assumes homogeneous isotropic media and angles measured from",
+      "chapter": 1
+    },
+    {
+      "start": 149.19600183105672,
+      "end": 150.03599816894734,
+      "text": "the boundary normal.",
+      "chapter": 1
+    },
+    {
+      "start": 151.2960003051778,
+      "end": 155.3760021362325,
+      "text": "Frequency matches at the stationary boundary; the changed speed therefore also",
+      "chapter": 1
+    },
+    {
+      "start": 155.3760021362325,
+      "end": 156.13599664306844,
+      "text": "changes wavelength.",
+      "chapter": 1
+    },
+    {
+      "start": 157.11600000000203,
+      "end": 160.81599694824422,
+      "text": "Wavefront geometry and the earlier ray calculations are two compatible",
+      "chapter": 1
+    },
+    {
+      "start": 160.81599694824422,
+      "end": 162.85599786377156,
+      "text": "descriptions, not rival rules.",
+      "chapter": 1
+    },
+    {
+      "start": 163.2720000000044,
+      "end": 166.71200005722486,
+      "text": "When two light waves reach a point, their electric fields add.",
+      "chapter": 2
+    },
+    {
+      "start": 167.19200007629834,
+      "end": 169.91199986649,
+      "text": "If their phases line up, the combined field is stronger.",
+      "chapter": 2
+    },
+    {
+      "start": 170.7919999809309,
+      "end": 173.8320004196211,
+      "text": "If they oppose, it can be weaker or even vanish.",
+      "chapter": 2
+    },
+    {
+      "start": 174.67199961853467,
+      "end": 179.83199946594678,
+      "text": "A steady pattern needs coherent sources: a stable relative phase and the same",
+      "chapter": 2
+    },
+    {
+      "start": 179.83199946594678,
+      "end": 181.73199908447705,
+      "text": "frequency in the elementary model.",
+      "chapter": 2
+    },
+    {
+      "start": 182.87200038147412,
+      "end": 187.4919993133589,
+      "text": "Two ordinary independent lamps do not usually maintain that relationship, so",
+      "chapter": 2
+    },
+    {
+      "start": 187.4919993133589,
+      "end": 189.8920008392378,
+      "text": "the fast changing pattern averages away.",
+      "chapter": 2
+    },
+    {
+      "start": 191.23199908447705,
+      "end": 194.1120001525923,
+      "text": "Young's arrangement illuminates two narrow slits from a common source.",
+      "chapter": 2
+    },
+    {
+      "start": 194.91199938965283,
+      "end": 197.31200091553174,
+      "text": "The slits act as related secondary sources.",
+      "chapter": 2
+    },
+    {
+      "start": 198.21199862671338,
+      "end": 202.71199862671338,
+      "text": "For equal initial phase, an extra path length of one wavelength produces an",
+      "chapter": 2
+    },
+    {
+      "start": 202.71199862671338,
+      "end": 205.3320013732954,
+      "text": "extra phase of two pi and restores alignment.",
+      "chapter": 2
+    },
+    {
+      "start": 206.2720000000044,
+      "end": 209.9319998474165,
+      "text": "A half wavelength path difference produces a phase difference of pi and",
+      "chapter": 2
+    },
+    {
+      "start": 209.9319998474165,
+      "end": 210.3719984741255,
+      "text": "opposition.",
+      "chapter": 2
+    },
+    {
+      "start": 211.6720015258833,
+      "end": 214.6120001525923,
+      "text": "Constructive interference occurs at path difference m times wavelength.",
+      "chapter": 2
+    },
+    {
+      "start": 215.81200091553174,
+      "end": 219.5120016784712,
+      "text": "Destructive interference occurs at m plus one half, times wavelength, for",
+      "chapter": 2
+    },
+    {
+      "start": 219.5120016784712,
+      "end": 222.5120016784712,
+      "text": "nonnegative order labels or corresponding signed positions.",
+      "chapter": 2
+    },
+    {
+      "start": 223.39199893188916,
+      "end": 227.15200106811963,
+      "text": "If the slits start with a nonzero fixed phase offset, the pattern shifts.",
+      "chapter": 2
+    },
+    {
+      "start": 228.11199633789502,
+      "end": 232.93200366211377,
+      "text": "For fully interfering, same polarization waves, intensity is I one plus I two",
+      "chapter": 2
+    },
+    {
+      "start": 232.93200366211377,
+      "end": 236.47199694824658,
+      "text": "plus twice the square root of their product times cosine of the phase",
+      "chapter": 2
+    },
+    {
+      "start": 236.47199694824658,
+      "end": 236.8719984741255,
+      "text": "difference.",
+      "chapter": 2
+    },
+    {
+      "start": 237.89200274658643,
+      "end": 242.23199908447705,
+      "text": "Equal intensities of nine units each give maximum thirty six and minimum zero.",
+      "chapter": 2
+    },
+    {
+      "start": 242.99200122070752,
+      "end": 246.752003356938,
+      "text": "Different intensities of four and nine give maximum twenty five and minimum",
+      "chapter": 2
+    },
+    {
+      "start": 246.752003356938,
+      "end": 247.1919981689497,
+      "text": "one.",
+      "chapter": 2
+    },
+    {
+      "start": 248.15199725342237,
+      "end": 251.65199725342237,
+      "text": "Unequal amplitudes therefore prevent completely dark minima, even when",
+      "chapter": 2
+    },
+    {
+      "start": 251.65199725342237,
+      "end": 252.43200366211377,
+      "text": "coherence is good.",
+      "chapter": 2
+    },
+    {
+      "start": 252.5760000000069,
+      "end": 256.7159998664925,
+      "text": "Put the slit separation at d and the screen distance at D.",
+      "chapter": 3
+    },
+    {
+      "start": 257.31599977112506,
+      "end": 261.15599992371295,
+      "text": "For a point a small vertical distance y from the central line, the path",
+      "chapter": 3
+    },
+    {
+      "start": 261.15599992371295,
+      "end": 265.7477949402707,
+      "text": "difference is approximately d times y divided by D, when the screen is far",
+      "chapter": 3
+    },
+    {
+      "start": 265.7477949402707,
+      "end": 265.99600007630085,
+      "text": "away",
+      "chapter": 3
+    },
+    {
+      "start": 265.99600007630085,
+      "end": 267.2560003051827,
+      "text": "and the angle is small.",
+      "chapter": 3
+    },
+    {
+      "start": 267.9759996185372,
+      "end": 270.43600061035846,
+      "text": "Set this equal to m wavelengths for a bright fringe.",
+      "chapter": 3
+    },
+    {
+      "start": 271.11600091553424,
+      "end": 273.8560006866524,
+      "text": "Its position is m times wavelength D over d.",
+      "chapter": 3
+    },
+    {
+      "start": 274.49600007630085,
+      "end": 278.87599923706745,
+      "text": "Consecutive bright fringes are separated by beta, the fringe width, equal to",
+      "chapter": 3
+    },
+    {
+      "start": 278.87599923706745,
+      "end": 280.0160005340645,
+      "text": "wavelength D over d.",
+      "chapter": 3
+    },
+    {
+      "start": 280.43600061035846,
+      "end": 284.3959996948311,
+      "text": "The dark fringes lie halfway between those bright positions for equal initial",
+      "chapter": 3
+    },
+    {
+      "start": 284.3959996948311,
+      "end": 284.8160016784737,
+      "text": "phase.",
+      "chapter": 3
+    },
+    {
+      "start": 285.5159986267159,
+      "end": 288.95600106812213,
+      "text": "Let's calculate with wavelength five hundred nanometers, screen distance two",
+      "chapter": 3
+    },
+    {
+      "start": 288.95600106812213,
+      "end": 291.0960004577706,
+      "text": "meters, and slit separation one millimeter.",
+      "chapter": 3
+    },
+    {
+      "start": 292.0159986267159,
+      "end": 295.5960004577706,
+      "text": "Convert carefully: wavelength is five times ten to the negative seven meters,",
+      "chapter": 3
+    },
+    {
+      "start": 295.5960004577706,
+      "end": 298.93600061035846,
+      "text": "and slit separation is ten to the negative three meters.",
+      "chapter": 3
+    },
+    {
+      "start": 299.95600106812213,
+      "end": 302.9959981689522,
+      "text": "Fringe width is ten to the negative three meters, or one millimeter.",
+      "chapter": 3
+    },
+    {
+      "start": 303.6360013732979,
+      "end": 306.45600106812213,
+      "text": "The second bright fringe from the center is at two millimeters.",
+      "chapter": 3
+    },
+    {
+      "start": 307.29600122071,
+      "end": 311.77600076294635,
+      "text": "Increase screen distance and the fringes spread; increase slit separation and",
+      "chapter": 3
+    },
+    {
+      "start": 311.77600076294635,
+      "end": 312.5559995422432,
+      "text": "they crowd together.",
+      "chapter": 3
+    },
+    {
+      "start": 313.21599938965534,
+      "end": 317.8559987793038,
+      "text": "If the entire propagation region is filled by a uniform medium of index one",
+      "chapter": 3
+    },
+    {
+      "start": 317.8559987793038,
+      "end": 321.90258328286393,
+      "text": "point five, frequency stays fixed and wavelength becomes smaller by that",
+      "chapter": 3
+    },
+    {
+      "start": 321.90258328286393,
+      "end": 322.29600122071,
+      "text": "factor.",
+      "chapter": 3
+    },
+    {
+      "start": 323.175998474128,
+      "end": 326.1560018310616,
+      "text": "Fringe width becomes about zero point six six seven millimeters.",
+      "chapter": 3
+    },
+    {
+      "start": 326.8559987793038,
+      "end": 331.11600091553424,
+      "text": "These formulas assume coherent equal phase illumination and the distant screen",
+      "chapter": 3
+    },
+    {
+      "start": 331.11600091553424,
+      "end": 334.61600091553424,
+      "text": "small angle geometry, not every possible two source arrangement.",
+      "chapter": 3
+    },
+    {
+      "start": 334.9440000000091,
+      "end": 339.0639998855682,
+      "text": "Now cover one slit with a thin transparent parallel sheet.",
+      "chapter": 4
+    },
+    {
+      "start": 339.9639999809356,
+      "end": 342.84400009537654,
+      "text": "Light travels through material instead of the same thickness of air.",
+      "chapter": 4
+    },
+    {
+      "start": 343.42399954224544,
+      "end": 348.3839995803924,
+      "text": "The extra optical path is n minus one, times sheet thickness t, taking air",
+      "chapter": 4
+    },
+    {
+      "start": 348.3839995803924,
+      "end": 349.14399980927425,
+      "text": "index as one.",
+      "chapter": 4
+    },
+    {
+      "start": 349.70400022889095,
+      "end": 353.784000152597,
+      "text": "It is optical path, not simply the physical distance between slit and screen.",
+      "chapter": 4
+    },
+    {
+      "start": 354.58399938965755,
+      "end": 358.3747698469987,
+      "text": "Suppose the sheet index is one point five and its thickness is two",
+      "chapter": 4
+    },
+    {
+      "start": 358.3747698469987,
+      "end": 359.0640008392425,
+      "text": "micrometers.",
+      "chapter": 4
+    },
+    {
+      "start": 359.76399969483333,
+      "end": 361.9640004577728,
+      "text": "The added optical path is one micrometer.",
+      "chapter": 4
+    },
+    {
+      "start": 362.8040006103607,
+      "end": 367.1240003051849,
+      "text": "With wavelength half a micrometer, that equals two wavelengths, so the pattern",
+      "chapter": 4
+    },
+    {
+      "start": 367.1240003051849,
+      "end": 368.64400076294856,
+      "text": "shifts by two fringe widths.",
+      "chapter": 4
+    },
+    {
+      "start": 369.223998779306,
+      "end": 373.223998779306,
+      "text": "In our one millimeter fringe example, the shift magnitude is two millimeters.",
+      "chapter": 4
+    },
+    {
+      "start": 373.9440000000091,
+      "end": 375.8040006103607,
+      "text": "Which direction does the central fringe move?",
+      "chapter": 4
+    },
+    {
+      "start": 376.7039983215423,
+      "end": 379.24399923706966,
+      "text": "Pause and picture the covered slit above the uncovered one.",
+      "chapter": 4
+    },
+    {
+      "start": 379.8639981689544,
+      "end": 381.9640004577728,
+      "text": "The sheet has added delay to the upper path.",
+      "chapter": 4
+    },
+    {
+      "start": 382.48400091553646,
+      "end": 386.5240018310638,
+      "text": "To restore equal total optical paths, the observation point moves upward,",
+      "chapter": 4
+    },
+    {
+      "start": 387.3040006103607,
+      "end": 388.8040006103607,
+      "text": "making the geometric upper path shorter.",
+      "chapter": 4
+    },
+    {
+      "start": 389.48400091553646,
+      "end": 391.284000152597,
+      "text": "The center moves toward the covered slit.",
+      "chapter": 4
+    },
+    {
+      "start": 392.0639989318939,
+      "end": 396.5639989318939,
+      "text": "The fringe spacing itself is unchanged in this ideal thin sheet setup because",
+      "chapter": 4
+    },
+    {
+      "start": 396.5639989318939,
+      "end": 399.6439969482513,
+      "text": "the sheet contributes a nearly constant additional path difference.",
+      "chapter": 4
+    },
+    {
+      "start": 400.4639966430755,
+      "end": 404.26374508824404,
+      "text": "A sheet across the whole apparatus, or a strongly angle dependent optical",
+      "chapter": 4
+    },
+    {
+      "start": 404.26374508824404,
+      "end": 404.5240018310638,
+      "text": "path,",
+      "chapter": 4
+    },
+    {
+      "start": 404.90399908448177,
+      "end": 405.88400244141536,
+      "text": "is a different problem.",
+      "chapter": 4
+    },
+    {
+      "start": 406.7040021362396,
+      "end": 411.344001525888,
+      "text": "Finally, don't call a missing dark fringe proof of lost coherence without",
+      "chapter": 4
+    },
+    {
+      "start": 411.344001525888,
+      "end": 413.0439984741302,
+      "text": "checking intensities and polarizations.",
+      "chapter": 4
+    },
+    {
+      "start": 413.40399908448177,
+      "end": 418.6240003051849,
+      "text": "Our checklist is source phase, optical path, wavelength, geometry, and then",
+      "chapter": 4
+    },
+    {
+      "start": 418.6240003051849,
+      "end": 419.00399755860286,
+      "text": "intensity.",
+      "chapter": 4
+    },
+    {
+      "start": 419.7440030517669,
+      "end": 421.6439969482513,
+      "text": "Those same habits will carry us into diffraction.",
+      "chapter": 4
+    }
+  ]
+}

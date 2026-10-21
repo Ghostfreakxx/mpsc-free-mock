@@ -1,0 +1,439 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.300
+Hey, welcome back.
+
+00:00:01.940 --> 00:00:05.580
+Last time, a changing magnetic field created an induced emf.
+
+00:00:06.180 --> 00:00:09.300
+Today the field can stay constant while a conductor moves.
+
+00:00:10.320 --> 00:00:14.660
+Picture a vertical metal rod moving to the right through a uniform field into
+
+00:00:14.660 --> 00:00:15.140
+the page.
+
+00:00:16.140 --> 00:00:17.840
+Charges inside the rod share its motion.
+
+00:00:18.580 --> 00:00:22.740
+The magnetic force on a positive charge is q times velocity cross B.
+
+00:00:23.540 --> 00:00:27.020
+Use your right hand: right crossed with into the page points upward.
+
+00:00:28.060 --> 00:00:31.920
+Positive charge accumulates near the upper end, and electrons shift toward the
+
+00:00:31.920 --> 00:00:32.360
+lower end.
+
+00:00:33.020 --> 00:00:34.560
+The upper end becomes positive.
+
+00:00:35.340 --> 00:00:37.600
+This separation creates a downward electric field.
+
+00:00:38.300 --> 00:00:42.460
+In the ideal open circuit steady state, electric and magnetic forces balance
+
+00:00:42.460 --> 00:00:43.160
+along the rod.
+
+00:00:43.840 --> 00:00:48.640
+The electric field magnitude is v B, so the voltage magnitude across a rod of
+
+00:00:48.640 --> 00:00:51.000
+length l is B l v.
+
+00:00:51.000 --> 00:00:54.980
+This shortcut assumes the rod, velocity and field are mutually perpendicular
+
+00:00:55.440 --> 00:00:57.400
+and the motion is uniform across the rod.
+
+00:00:57.960 --> 00:01:01.960
+More generally, the motional contribution is the line integral of velocity
+
+00:01:01.960 --> 00:01:04.140
+cross B dotted with the length element.
+
+00:01:04.940 --> 00:01:08.120
+Do not multiply three magnitudes when the geometry does not support it.
+
+00:01:08.860 --> 00:01:13.360
+For B equal to zero point five tesla, length zero point four meter and speed
+
+00:01:13.360 --> 00:01:16.680
+three meters per second, the voltage is zero point six volt.
+
+00:01:17.380 --> 00:01:21.300
+There is no complete external circuit, so no sustained circulating current.
+
+00:01:22.180 --> 00:01:23.800
+Voltage and current are different questions.
+
+00:01:24.700 --> 00:01:27.780
+Reverse the motion or the field, and the end polarity reverses.
+
+00:01:27.960 --> 00:01:32.472
+Now place the same moving rod across two horizontal conducting rails,
+
+00:01:32.472 --> 00:01:33.060
+connected
+
+00:01:33.060 --> 00:01:34.960
+through a resistor on the left.
+
+00:01:35.620 --> 00:01:36.800
+The rod completes a circuit.
+
+00:01:37.600 --> 00:01:40.380
+As it moves right, the enclosed rectangle grows wider.
+
+00:01:41.120 --> 00:01:46.360
+Its area is rod length times position x, so the magnitude of flux is B times l
+
+00:01:46.360 --> 00:01:47.060
+times x.
+
+00:01:48.060 --> 00:01:49.300
+Differentiate with respect to time.
+
+00:01:49.900 --> 00:01:55.680
+Since the rate of change of x is speed v, the induced emf magnitude is B l v.
+
+00:01:55.680 --> 00:01:58.560
+The charge force picture and the changing flux picture agree.
+
+00:01:59.260 --> 00:02:00.440
+Let's get direction without guessing.
+
+00:02:01.120 --> 00:02:03.820
+The field goes into the page, and the circuit area grows.
+
+00:02:04.580 --> 00:02:05.560
+Inward flux is increasing.
+
+00:02:06.380 --> 00:02:09.660
+Lenz's law requires an outward induced field, which corresponds to
+
+00:02:09.660 --> 00:02:12.680
+counterclockwise conventional current when viewed facing the page.
+
+00:02:13.680 --> 00:02:16.160
+Along the right hand moving rod, that current goes upward.
+
+00:02:16.780 --> 00:02:18.360
+Along the top rail it goes left.
+
+00:02:18.760 --> 00:02:23.140
+Use our previous numbers: field zero point five tesla, rod length zero point
+
+00:02:23.140 --> 00:02:25.700
+four meter and speed three meters per second.
+
+00:02:26.660 --> 00:02:28.240
+Emf is zero point six volt.
+
+00:02:29.260 --> 00:02:33.180
+If the total circuit resistance is two ohms, current is zero point three
+
+00:02:33.180 --> 00:02:33.700
+ampere.
+
+00:02:34.520 --> 00:02:38.400
+We assume good sliding contacts, negligible lead resistance beyond the stated
+
+00:02:38.400 --> 00:02:40.880
+total, and negligible self inductive effects.
+
+00:02:41.620 --> 00:02:45.240
+Immediately after a sudden change, appreciable inductance could alter the
+
+00:02:45.240 --> 00:02:45.840
+current response.
+
+00:02:46.320 --> 00:02:50.400
+In this elementary resistive model, emf divided by resistance is appropriate.
+
+00:02:51.680 --> 00:02:54.820
+Opening the connection stops the sustained loop current even though the moving
+
+00:02:54.820 --> 00:02:56.900
+rod can still develop an end to end voltage.
+
+00:02:57.408 --> 00:03:01.348
+Current is now flowing, so the rod experiences a magnetic force.
+
+00:03:02.268 --> 00:03:04.468
+Current points up and field points into the page.
+
+00:03:05.148 --> 00:03:07.068
+Up crossed with into the page points left.
+
+00:03:07.728 --> 00:03:10.048
+That force opposes the rod's rightward motion.
+
+00:03:10.768 --> 00:03:14.728
+To maintain constant speed, an external agent must pull right with equal
+
+00:03:14.728 --> 00:03:17.588
+magnitude, if friction and other forces are neglected.
+
+00:03:18.548 --> 00:03:22.168
+The magnetic force magnitude is current times rod length times field.
+
+00:03:22.788 --> 00:03:28.088
+Substitute current B l v over R and you obtain B squared times l squared times
+
+00:03:28.088 --> 00:03:28.968
+v over R.
+
+00:03:29.948 --> 00:03:31.428
+Let's calculate with the same circuit.
+
+00:03:32.348 --> 00:03:36.484
+Current is zero point three ampere, length zero point four meter and field
+
+00:03:36.484 --> 00:03:36.708
+zero
+
+00:03:36.708 --> 00:03:37.688
+point five tesla.
+
+00:03:38.508 --> 00:03:40.448
+The drag force is zero point zero six newton.
+
+00:03:41.208 --> 00:03:44.728
+At speed three meters per second, the pulling power is zero point one eight
+
+00:03:44.728 --> 00:03:45.028
+watt.
+
+00:03:45.808 --> 00:03:49.248
+Now calculate electrical heating: current squared times resistance.
+
+00:03:50.048 --> 00:03:53.348
+Zero point three squared times two is also zero point one eight watt.
+
+00:03:53.348 --> 00:03:56.028
+Lovely: the energy accounts match.
+
+00:03:56.728 --> 00:04:00.188
+The resistor's heating comes from mechanical work, not an inexhaustible
+
+00:04:00.188 --> 00:04:01.248
+magnetic energy gift.
+
+00:04:01.908 --> 00:04:04.508
+At constant speed, kinetic energy is unchanged.
+
+00:04:05.128 --> 00:04:09.468
+If you release the rod, this simple model predicts deceleration as mechanical
+
+00:04:09.468 --> 00:04:10.928
+energy is converted into heat.
+
+00:04:11.208 --> 00:04:14.888
+The drag decreases with speed; it is not a fixed friction force.
+
+00:04:14.888 --> 00:04:19.628
+Doubling speed with the other quantities fixed doubles current and force, but
+
+00:04:19.628 --> 00:04:20.788
+quadruples heating power.
+
+00:04:21.468 --> 00:04:24.168
+Those different scaling laws are useful JEE checks.
+
+00:04:25.272 --> 00:04:27.292
+Here is a trap worth slowing down for.
+
+00:04:27.932 --> 00:04:31.472
+A rectangular conducting loop moves right into a region with uniform magnetic
+
+00:04:31.472 --> 00:04:32.612
+field into the page.
+
+00:04:33.452 --> 00:04:35.832
+Does motion always mean a nonzero net emf?
+
+00:04:36.392 --> 00:04:36.732
+No.
+
+00:04:37.472 --> 00:04:40.152
+During entry, the area of the loop inside the field increases.
+
+00:04:40.792 --> 00:04:45.313
+If its vertical side length is w, the overlapping area grows at rate w times
+
+00:04:45.313 --> 00:04:45.432
+v.
+
+00:04:46.072 --> 00:04:49.272
+The emf magnitude is B w v.
+
+00:04:49.992 --> 00:04:54.057
+Inward flux increases, so current is counterclockwise as viewed facing the
+
+00:04:54.057 --> 00:04:54.332
+page.
+
+00:04:54.792 --> 00:05:00.012
+Once the entire rigid loop is inside the uniform, static field, its area and
+
+00:05:00.012 --> 00:05:00.792
+orientation remain fixed.
+
+00:05:01.552 --> 00:05:04.412
+Flux is constant, so net induced emf is zero.
+
+00:05:05.292 --> 00:05:07.952
+Opposite side motional contributions cancel around the loop.
+
+00:05:08.812 --> 00:05:12.292
+Charges may redistribute locally, but this does not create a sustained loop
+
+00:05:12.292 --> 00:05:14.252
+current in our resistive steady state model.
+
+00:05:14.892 --> 00:05:17.232
+As the loop exits, inward flux decreases.
+
+00:05:17.852 --> 00:05:19.052
+The current becomes clockwise.
+
+00:05:19.692 --> 00:05:24.192
+Try field zero point four tesla, vertical width zero point three meter and
+
+00:05:24.192 --> 00:05:25.372
+speed two meters per second.
+
+00:05:26.352 --> 00:05:29.512
+Entry or exit emf magnitude is zero point two four volt.
+
+00:05:30.532 --> 00:05:34.692
+With total resistance one point two ohms and negligible inductance, current
+
+00:05:34.692 --> 00:05:36.752
+magnitude is zero point two ampere.
+
+00:05:37.152 --> 00:05:38.552
+Fully inside, current is zero.
+
+00:05:39.172 --> 00:05:43.032
+The ideal abrupt boundaries separate three regimes; real field edges are
+
+00:05:43.032 --> 00:05:43.292
+smoother.
+
+00:05:44.072 --> 00:05:47.741
+Mechanical drag acts while flux is changing, not throughout every uniform
+
+00:05:47.741 --> 00:05:47.992
+field
+
+00:05:47.992 --> 00:05:48.532
+translation.
+
+00:05:49.352 --> 00:05:52.812
+Check overlap area before using B l v for the net circuit emf.
+
+00:05:52.920 --> 00:05:55.660
+A circuit does not always need visible wires.
+
+00:05:56.160 --> 00:05:59.900
+A solid metal plate contains many possible closed conducting paths.
+
+00:06:00.780 --> 00:06:05.360
+If linked magnetic flux changes through those paths, circulating currents can
+
+00:06:05.360 --> 00:06:06.580
+form inside the plate.
+
+00:06:07.280 --> 00:06:08.680
+We call them eddy currents.
+
+00:06:09.680 --> 00:06:12.940
+Picture a conducting plate moving through a localized magnetic field.
+
+00:06:14.000 --> 00:06:18.400
+Different parts enter and leave the field region, so the linked flux changes.
+
+00:06:18.880 --> 00:06:22.880
+The induced currents interact with the field and can oppose the motion,
+
+00:06:23.780 --> 00:06:25.540
+converting mechanical energy into heat.
+
+00:06:26.380 --> 00:06:29.420
+This gives magnetic damping without rubbing surfaces together.
+
+00:06:30.160 --> 00:06:34.860
+But do not claim that any metal moving anywhere in a uniform static field must
+
+00:06:34.860 --> 00:06:37.380
+experience eddy current braking.
+
+00:06:37.380 --> 00:06:39.500
+Geometry and changing linked flux matter.
+
+00:06:40.180 --> 00:06:44.240
+A stationary ordinary conductor in a static field does not continuously
+
+00:06:44.240 --> 00:06:45.320
+generate eddy currents.
+
+00:06:45.320 --> 00:06:49.180
+A changing applied field can induce them even without motion.
+
+00:06:50.200 --> 00:06:54.480
+For transformer cores, unwanted circulating currents waste energy as heat.
+
+00:06:55.500 --> 00:06:59.880
+Thin insulated laminations interrupt large conducting paths and reduce those
+
+00:06:59.880 --> 00:07:00.060
+losses.
+
+00:07:01.200 --> 00:07:04.950
+Slots in a conducting plate can similarly weaken damping by obstructing
+
+00:07:04.950 --> 00:07:05.320
+current
+
+00:07:05.320 --> 00:07:05.680
+paths.
+
+00:07:06.440 --> 00:07:10.200
+These methods reduce currents; they do not abolish electromagnetic induction
+
+00:07:10.200 --> 00:07:10.780
+itself.
+
+00:07:11.500 --> 00:07:16.440
+Induction heating deliberately uses changing fields to transfer energy into a
+
+00:07:16.440 --> 00:07:17.000
+conducting workpiece.
+
+00:07:17.680 --> 00:07:19.400
+The power supply provides that energy.
+
+00:07:20.120 --> 00:07:24.920
+We will not assign one universal B l v circuit to an entire plate: its current
+
+00:07:24.920 --> 00:07:28.720
+distribution depends on shape, conductivity and field variation.
+
+00:07:29.520 --> 00:07:34.560
+Your final checklist is motion geometry, flux change, closed paths, resistance
+
+00:07:34.720 --> 00:07:35.820
+and the energy source.
+
+00:07:35.820 --> 00:07:39.740
+That is how the rod and the plate belong to the same physical story.

@@ -1,0 +1,619 @@
+{
+  "duration": 377.8560000000116,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 139.05600000000436
+    },
+    {
+      "start": 139.05600000000436,
+      "end": 307.65600000000984
+    },
+    {
+      "start": 307.65600000000984,
+      "end": 377.8560000000116
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 0.7400000095367432,
+      "text": "Welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.340000033378601,
+      "end": 5.239999771118164,
+      "text": "In this class we will work through wall collision derivation, temperature and",
+      "chapter": 0
+    },
+    {
+      "start": 5.239999771118164,
+      "end": 9.520000457763672,
+      "text": "rms speed, equipartition, heat capacities and mean free path.",
+      "chapter": 0
+    },
+    {
+      "start": 10.100000381469727,
+      "end": 13.640000343322754,
+      "text": "An ideal gas is a model of many tiny particles in random motion.",
+      "chapter": 0
+    },
+    {
+      "start": 14.380000114440918,
+      "end": 18.040000915527344,
+      "text": "Their own volume is negligible compared with the container, and intermolecular",
+      "chapter": 0
+    },
+    {
+      "start": 18.040000915527344,
+      "end": 20.440000534057617,
+      "text": "forces are neglected except during collisions.",
+      "chapter": 0
+    },
+    {
+      "start": 21.520000457763672,
+      "end": 25.399999618530273,
+      "text": "Assume elastic wall collisions and an equilibrium gas with isotropic random",
+      "chapter": 0
+    },
+    {
+      "start": 25.399999618530273,
+      "end": 27.200000762939453,
+      "text": "velocities and no overall flow.",
+      "chapter": 0
+    },
+    {
+      "start": 28.260000228881836,
+      "end": 31.739999771118164,
+      "text": "These assumptions make the derivation manageable, but they become poor",
+      "chapter": 0
+    },
+    {
+      "start": 31.739999771118164,
+      "end": 34.880001068115234,
+      "text": "approximations in dense gases or near condensation.",
+      "chapter": 0
+    },
+    {
+      "start": 35.939998626708984,
+      "end": 40.91999816894531,
+      "text": "Use PV equals N Boltzmann constant T when counting molecules and PV equals nRT",
+      "chapter": 0
+    },
+    {
+      "start": 40.91999816894531,
+      "end": 41.91999816894531,
+      "text": "when counting moles.",
+      "chapter": 0
+    },
+    {
+      "start": 42.65999984741211,
+      "end": 47.47999954223633,
+      "text": "They agree because N equals n Avogadro constant and R equals Avogadro constant",
+      "chapter": 0
+    },
+    {
+      "start": 47.47999954223633,
+      "end": 48.34000015258789,
+      "text": "Boltzmann constant.",
+      "chapter": 0
+    },
+    {
+      "start": 49.099998474121094,
+      "end": 53.54230880737305,
+      "text": "Number density N/V has units of molecules per cubic metre; mass density rho",
+      "chapter": 0
+    },
+    {
+      "start": 53.54230880737305,
+      "end": 53.720001220703125,
+      "text": "has",
+      "chapter": 0
+    },
+    {
+      "start": 53.720001220703125,
+      "end": 55.2400016784668,
+      "text": "units of kilograms per cubic metre.",
+      "chapter": 0
+    },
+    {
+      "start": 55.84000015258789,
+      "end": 60.720001220703125,
+      "text": "A factor of Avogadro's number cannot be silently exchanged for a mass factor.",
+      "chapter": 0
+    },
+    {
+      "start": 60.720001220703125,
+      "end": 64.44000244140625,
+      "text": "Absolute temperature belongs in these equations; a Celsius reading must first",
+      "chapter": 0
+    },
+    {
+      "start": 64.44000244140625,
+      "end": 65.36000061035156,
+      "text": "be converted to kelvin.",
+      "chapter": 0
+    },
+    {
+      "start": 66.41999816894531,
+      "end": 70.45999908447266,
+      "text": "Take a cube of side L and a molecule of mass m with x component of velocity",
+      "chapter": 0
+    },
+    {
+      "start": 70.45999908447266,
+      "end": 71,
+      "text": "v_x.",
+      "chapter": 0
+    },
+    {
+      "start": 71.81999969482422,
+      "end": 75.9000015258789,
+      "text": "At an elastic collision with the wall normal to x, the component reverses.",
+      "chapter": 0
+    },
+    {
+      "start": 76.22000122070312,
+      "end": 79.04000091552734,
+      "text": "Momentum delivered to that wall has magnitude 2m|v_x|.",
+      "chapter": 0
+    },
+    {
+      "start": 79.04000091552734,
+      "end": 84.05999755859375,
+      "text": "The time between successive collisions with the same wall is",
+      "chapter": 0
+    },
+    {
+      "start": 84.05999755859375,
+      "end": 87.4800033569336,
+      "text": "2L/|v_x|.",
+      "chapter": 0
+    },
+    {
+      "start": 87.4800033569336,
+      "end": 92.18000030517578,
+      "text": "Divide momentum transfer by time to get the average force contribution m v_x",
+      "chapter": 0
+    },
+    {
+      "start": 92.18000030517578,
+      "end": 96.37999725341797,
+      "text": "squared/L; negative v_x gives the same squared contribution.",
+      "chapter": 0
+    },
+    {
+      "start": 97.22000122070312,
+      "end": 100.23999786376953,
+      "text": "Sum over N molecules and divide by wall area L squared.",
+      "chapter": 0
+    },
+    {
+      "start": 100.95999908447266,
+      "end": 105.55999755859375,
+      "text": "Pressure is m sum(v_x squared)/L cubed, or N m",
+      "chapter": 0
+    },
+    {
+      "start": 105.55999755859375,
+      "end": 108.69999694824219,
+      "text": "average(v_x squared)/V.",
+      "chapter": 0
+    },
+    {
+      "start": 108.69999694824219,
+      "end": 112.63999938964844,
+      "text": "Isotropic equilibrium gives average(v_x squared) equals average(v_y squared)",
+      "chapter": 0
+    },
+    {
+      "start": 112.63999938964844,
+      "end": 117.31999969482422,
+      "text": "equals average(v_z squared) equals average(v squared)/3.",
+      "chapter": 0
+    },
+    {
+      "start": 117.31999969482422,
+      "end": 123.30666859944661,
+      "text": "Therefore P equals N m average(v squared)/(3V) equals rho",
+      "chapter": 0
+    },
+    {
+      "start": 123.30666859944661,
+      "end": 125.31999969482422,
+      "text": "v_rms squared/3.",
+      "chapter": 0
+    },
+    {
+      "start": 125.31999969482422,
+      "end": 129.72000122070312,
+      "text": "The factor one third comes from three dimensional isotropy, not from an",
+      "chapter": 0
+    },
+    {
+      "start": 129.72000122070312,
+      "end": 130.13999938964844,
+      "text": "arbitrary correction.",
+      "chapter": 0
+    },
+    {
+      "start": 130.60000610351562,
+      "end": 135.02000427246094,
+      "text": "This collision picture is an idealization; equilibrium averaging is what lets",
+      "chapter": 0
+    },
+    {
+      "start": 135.02000427246094,
+      "end": 138.22000122070312,
+      "text": "irregular microscopic impacts produce a steady measured pressure.",
+      "chapter": 0
+    },
+    {
+      "start": 139.05600000000436,
+      "end": 145.01600003815133,
+      "text": "Combine the pressure result with PV equals N Boltzmann constant T.",
+      "chapter": 1
+    },
+    {
+      "start": 145.67599988556344,
+      "end": 151.1960003433271,
+      "text": "It gives m average(v squared) equals 3Boltzmann constant T,",
+      "chapter": 1
+    },
+    {
+      "start": 151.93600011444528,
+      "end": 157.87599969482858,
+      "text": "so mean translational kinetic energy per molecule is 3Boltzmann constant",
+      "chapter": 1
+    },
+    {
+      "start": 157.87599969482858,
+      "end": 159.8559992370649,
+      "text": "T/2.",
+      "chapter": 1
+    },
+    {
+      "start": 159.8559992370649,
+      "end": 165.5359995422407,
+      "text": "RMS speed is sqrt(3Boltzmann constant T/m), or",
+      "chapter": 1
+    },
+    {
+      "start": 165.5359995422407,
+      "end": 171.45600152588327,
+      "text": "sqrt(3RT/M) using molar mass M in kilograms",
+      "chapter": 1
+    },
+    {
+      "start": 171.45600152588327,
+      "end": 171.89600015259225,
+      "text": "per mole.",
+      "chapter": 1
+    },
+    {
+      "start": 173.07600045776803,
+      "end": 177.29600167847116,
+      "text": "At the same temperature, different ideal gases have equal mean translational",
+      "chapter": 1
+    },
+    {
+      "start": 177.29600167847116,
+      "end": 181.6959993896528,
+      "text": "energy per molecule but different RMS speeds because their molecular masses",
+      "chapter": 1
+    },
+    {
+      "start": 181.6959993896528,
+      "end": 182.05600000000436,
+      "text": "differ.",
+      "chapter": 1
+    },
+    {
+      "start": 182.97599816894967,
+      "end": 188.83599877930124,
+      "text": "For nitrogen at 300 K, M equals 0.028 kilograms per mole and",
+      "chapter": 1
+    },
+    {
+      "start": 188.83599877930124,
+      "end": 193.95600152588327,
+      "text": "R equals 8.314 give about 517 metres per second.",
+      "chapter": 1
+    },
+    {
+      "start": 193.95600152588327,
+      "end": 199.95600152588327,
+      "text": "Helium with M equals 0.004 kilograms per mole is the square",
+      "chapter": 1
+    },
+    {
+      "start": 199.95600152588327,
+      "end": 202.27600122070749,
+      "text": "root of seven times faster at the same temperature.",
+      "chapter": 1
+    },
+    {
+      "start": 203.55600000000436,
+      "end": 208.91600061035592,
+      "text": "For the same gas, increasing temperature from 300 to 1200 K doubles RMS speed.",
+      "chapter": 1
+    },
+    {
+      "start": 210.0960009155317,
+      "end": 214.39599633789499,
+      "text": "An equilibrium gas has zero average vector velocity even though its average",
+      "chapter": 1
+    },
+    {
+      "start": 214.39599633789499,
+      "end": 215.5960009155317,
+      "text": "scalar speed is positive.",
+      "chapter": 1
+    },
+    {
+      "start": 216.55600000000436,
+      "end": 221.48625403145468,
+      "text": "RMS, mean and most probable speeds are different statistics; the RMS formula",
+      "chapter": 1
+    },
+    {
+      "start": 221.48625403145468,
+      "end": 221.6159975585981,
+      "text": "is",
+      "chapter": 1
+    },
+    {
+      "start": 221.6159975585981,
+      "end": 222.95600152588327,
+      "text": "not the value for every molecule.",
+      "chapter": 1
+    },
+    {
+      "start": 223.89599633789499,
+      "end": 229.31600213623483,
+      "text": "Classical equipartition assigns half Boltzmann constant T per molecule to each",
+      "chapter": 1
+    },
+    {
+      "start": 229.31600213623483,
+      "end": 230.85600305176217,
+      "text": "active quadratic energy term.",
+      "chapter": 1
+    },
+    {
+      "start": 231.6760027465864,
+      "end": 235.01599908447702,
+      "text": "With f active degrees of freedom, internal energy is f",
+      "chapter": 1
+    },
+    {
+      "start": 235.01599908447702,
+      "end": 239.41600061035592,
+      "text": "nRT/2 when f is constant.",
+      "chapter": 1
+    },
+    {
+      "start": 240.4960024414106,
+      "end": 245.73600030518014,
+      "text": "The molar heat capacity C V is fR/2.",
+      "chapter": 1
+    },
+    {
+      "start": 245.73600030518014,
+      "end": 251.45600152588327,
+      "text": "For an ideal gas, C P C V equals",
+      "chapter": 1
+    },
+    {
+      "start": 251.45600152588327,
+      "end": 257.31600213623483,
+      "text": "R, giving gamma equals (f+2)/f.",
+      "chapter": 1
+    },
+    {
+      "start": 257.31600213623483,
+      "end": 262.4160006103559,
+      "text": "A monatomic gas has three translational degrees and gamma equals 5/3.",
+      "chapter": 1
+    },
+    {
+      "start": 262.4160006103559,
+      "end": 267.83599877930124,
+      "text": "A rigid diatomic model with vibration inactive usually has five and gamma",
+      "chapter": 1
+    },
+    {
+      "start": 267.83599877930124,
+      "end": 269.75599694824655,
+      "text": "equals 7/5.",
+      "chapter": 1
+    },
+    {
+      "start": 269.75599694824655,
+      "end": 274.2359926757856,
+      "text": "A vibrational mode, when fully active classically, has both a kinetic and",
+      "chapter": 1
+    },
+    {
+      "start": 274.7960054931684,
+      "end": 275.8560030517622,
+      "text": "potential quadratic contribution.",
+      "chapter": 1
+    },
+    {
+      "start": 277.0359957275434,
+      "end": 281.21600366211374,
+      "text": "Active modes depend on temperature; quantum freezing of modes makes constant f",
+      "chapter": 1
+    },
+    {
+      "start": 281.21600366211374,
+      "end": 284.4160006103559,
+      "text": "an approximation rather than a universal molecular label.",
+      "chapter": 1
+    },
+    {
+      "start": 285.43600488281686,
+      "end": 290.4759981689497,
+      "text": "Two moles of monatomic ideal gas warmed by 10 K at fixed volume gain",
+      "chapter": 1
+    },
+    {
+      "start": 290.4759981689497,
+      "end": 295.25599694824655,
+      "text": "30R joules, about 249.42 J.",
+      "chapter": 1
+    },
+    {
+      "start": 295.25599694824655,
+      "end": 299.2359926757856,
+      "text": "Constant volume heat equals that gain because boundary work is zero.",
+      "chapter": 1
+    },
+    {
+      "start": 300.17599511719186,
+      "end": 305.77330853350173,
+      "text": "At constant pressure the same rise also requires expansion work, so heat uses",
+      "chapter": 1
+    },
+    {
+      "start": 305.77330853350173,
+      "end": 305.8460009155317,
+      "text": "C",
+      "chapter": 1
+    },
+    {
+      "start": 305.8460009155317,
+      "end": 307.45599389648874,
+      "text": "P instead.",
+      "chapter": 1
+    },
+    {
+      "start": 307.65600000000984,
+      "end": 311.895999771128,
+      "text": "For a dilute equilibrium gas of identical hard sphere molecules with diameter",
+      "chapter": 2
+    },
+    {
+      "start": 311.895999771128,
+      "end": 316.9560001907447,
+      "text": "d, the mean free path is 1/(the square root of two pi d squared",
+      "chapter": 2
+    },
+    {
+      "start": 316.9560001907447,
+      "end": 317.355999809275,
+      "text": "number_density).",
+      "chapter": 2
+    },
+    {
+      "start": 317.355999809275,
+      "end": 321.63599954224617,
+      "text": "The square root factor accounts for relative molecular motion.",
+      "chapter": 2
+    },
+    {
+      "start": 322.4560001907447,
+      "end": 326.1159990844825,
+      "text": "This is an average distance between collisions, not a fixed distance every",
+      "chapter": 2
+    },
+    {
+      "start": 326.1159990844825,
+      "end": 326.9559992370704,
+      "text": "particle must travel.",
+      "chapter": 2
+    },
+    {
+      "start": 328.09600053406746,
+      "end": 331.7959993896583,
+      "text": "Molecules per volume, not moles per volume or mass density, enter the formula",
+      "chapter": 2
+    },
+    {
+      "start": 331.7959993896583,
+      "end": 332.25600038147957,
+      "text": "directly.",
+      "chapter": 2
+    },
+    {
+      "start": 332.87599931336433,
+      "end": 338.6960009155372,
+      "text": "With d equals 3.0 times ten to the power of negative 10 m and number density",
+      "chapter": 2
+    },
+    {
+      "start": 338.6960009155372,
+      "end": 344.5360010681251,
+      "text": "2.5 times 10 squared5 per cubic metre, the mean free path is about 1.0",
+      "chapter": 2
+    },
+    {
+      "start": 344.5360010681251,
+      "end": 347.0959986267188,
+      "text": "times ten to the power of negative 7 m.",
+      "chapter": 2
+    },
+    {
+      "start": 347.0959986267188,
+      "end": 350.9998461010371,
+      "text": "At fixed temperature and diameter, doubling pressure doubles number density",
+      "chapter": 2
+    },
+    {
+      "start": 350.9998461010371,
+      "end": 351.15600000000984,
+      "text": "and",
+      "chapter": 2
+    },
+    {
+      "start": 351.15600000000984,
+      "end": 352.2360018310645,
+      "text": "halves mean free path.",
+      "chapter": 2
+    },
+    {
+      "start": 352.9359987793067,
+      "end": 357.47599969483406,
+      "text": "At fixed pressure, increasing absolute temperature reduces number density and",
+      "chapter": 2
+    },
+    {
+      "start": 357.47599969483406,
+      "end": 358.0959986267188,
+      "text": "increases it.",
+      "chapter": 2
+    },
+    {
+      "start": 358.0959986267188,
+      "end": 363.0160006103614,
+      "text": "Separately, compression work against a constant external pressure is external",
+      "chapter": 2
+    },
+    {
+      "start": 363.0160006103614,
+      "end": 368.43600068665535,
+      "text": "pressure the volume change: compressing from 3 to 1 litres at 100000",
+      "chapter": 2
+    },
+    {
+      "start": 368.43600068665535,
+      "end": 371.67599664307625,
+      "text": "Pa gives 200 J work by the gas.",
+      "chapter": 2
+    },
+    {
+      "start": 372.55600152588875,
+      "end": 377.1159990844825,
+      "text": "Collision distance and macroscopic work are different quantities linked by a",
+      "chapter": 2
+    },
+    {
+      "start": 377.1159990844825,
+      "end": 377.67599664307625,
+      "text": "consistent gas model.",
+      "chapter": 2
+    }
+  ]
+}

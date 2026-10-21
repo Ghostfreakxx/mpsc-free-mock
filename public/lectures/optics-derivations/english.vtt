@@ -1,0 +1,400 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:00.760
+Welcome back.
+
+00:00:01.500 --> 00:00:05.400
+Let's see where the mirror equation comes from, instead of treating it as a
+
+00:00:05.400 --> 00:00:05.740
+password.
+
+00:00:06.040 --> 00:00:10.320
+Our picture is a concave spherical mirror, a real upright object beyond the
+
+00:00:10.320 --> 00:00:11.900
+focus, and a real inverted image.
+
+00:00:12.860 --> 00:00:17.320
+For this derivation only, capital U, V and F are positive distance magnitudes
+
+00:00:17.320 --> 00:00:18.400
+measured from the pole.
+
+00:00:19.300 --> 00:00:22.780
+Object height is h, and inverted image height magnitude is H.
+
+00:00:23.400 --> 00:00:25.460
+One ray goes from the object tip to the pole.
+
+00:00:25.460 --> 00:00:30.925
+Equal angles of reflection give two similar triangles, so H divided by h
+
+00:00:30.925 --> 00:00:31.380
+equals
+
+00:00:31.380 --> 00:00:32.340
+V divided by U.
+
+00:00:33.040 --> 00:00:36.680
+A second ray travels parallel to the axis and reflects through the focus.
+
+00:00:37.320 --> 00:00:40.960
+In the paraxial approximation its reflection point is effectively in the pole
+
+00:00:40.960 --> 00:00:42.220
+plane, at height h.
+
+00:00:42.560 --> 00:00:47.160
+On its reflected path, the height falls from h to zero over distance F, then
+
+00:00:47.160 --> 00:00:50.040
+from zero to minus H over distance V minus F.
+
+00:00:50.760 --> 00:00:55.840
+Those similar triangles give H divided by h equal to V minus F, divided by F.
+
+00:00:56.620 --> 00:00:57.900
+Set our two ratios equal.
+
+00:00:58.540 --> 00:01:00.620
+V over U equals V over F minus one.
+
+00:01:01.260 --> 00:01:05.480
+Divide by V and rearrange: one over U plus one over V equals one over F.
+
+00:01:06.120 --> 00:01:09.340
+This is why both ray geometry and the equation locate the same image.
+
+00:01:10.100 --> 00:01:12.440
+Now translate, don't mix, sign conventions.
+
+00:01:13.140 --> 00:01:16.880
+With incident light rightward and the pole at zero, this real concave mirror
+
+00:01:16.880 --> 00:01:21.420
+case has u equals minus U, v equals minus V, and f equals minus F.
+
+00:01:22.180 --> 00:01:26.200
+The Cartesian result is one over u plus one over v equals one over f.
+
+00:01:26.920 --> 00:01:28.900
+Signed magnification is minus v over u.
+
+00:01:29.640 --> 00:01:32.180
+Try u minus thirty centimeters and f minus ten.
+
+00:01:32.760 --> 00:01:36.740
+The equation gives v minus fifteen, and magnification minus one half.
+
+00:01:37.040 --> 00:01:40.640
+A two centimeter upright object gives an inverted one centimeter image.
+
+00:01:41.400 --> 00:01:43.840
+Now why is focal length half the spherical radius?
+
+00:01:43.840 --> 00:01:48.240
+A near axis parallel ray meets a normal tilted by a small angle theta.
+
+00:01:49.360 --> 00:01:52.680
+Reflection turns the return ray through twice that angle relative to the axis.
+
+00:01:53.580 --> 00:01:57.520
+Using tangent theta approximately theta, the same ray height divided by focus
+
+00:01:57.520 --> 00:02:00.080
+distance is twice height divided by radius.
+
+00:02:00.980 --> 00:02:03.240
+Thus F is R magnitude over two.
+
+00:02:04.000 --> 00:02:07.220
+Wider rays violate that small angle step and can produce spherical aberration.
+
+00:02:07.720 --> 00:02:11.767
+We have explained the formula and its limits, not claimed that every ray from
+
+00:02:11.767 --> 00:02:11.820
+a
+
+00:02:11.820 --> 00:02:13.820
+wide spherical mirror shares one exact focus.
+
+00:02:15.048 --> 00:02:17.988
+Let's build the curved refraction equation from Snell's law.
+
+00:02:18.508 --> 00:02:22.468
+Light travels left to right, from index n one to index n two.
+
+00:02:22.468 --> 00:02:25.008
+Draw a surface convex toward a real object on the left.
+
+00:02:25.568 --> 00:02:29.528
+Its center is on the right, and for our pictured case a real image is also on
+
+00:02:29.528 --> 00:02:29.828
+the right.
+
+00:02:30.248 --> 00:02:33.288
+A ray meets the surface a small height h above the axis.
+
+00:02:33.828 --> 00:02:38.508
+The incoming ray rises by angle alpha; the outgoing ray falls by angle beta.
+
+00:02:39.088 --> 00:02:42.868
+The radius through the point of incidence supplies the normal, whose rightward
+
+00:02:42.868 --> 00:02:44.588
+direction falls by angle gamma.
+
+00:02:45.228 --> 00:02:49.708
+Therefore incidence angle is alpha plus gamma, while refraction angle is gamma
+
+00:02:49.708 --> 00:02:51.488
+minus beta in this configuration.
+
+00:02:52.468 --> 00:02:56.208
+Snell's law says n one sine incidence equals n two sine refraction.
+
+00:02:56.828 --> 00:03:00.028
+At small angles in radians, replace each sine by its angle.
+
+00:03:00.608 --> 00:03:05.108
+We get n one times alpha plus gamma equal to n two times gamma minus beta.
+
+00:03:05.668 --> 00:03:10.808
+Move terms: n one alpha plus n two beta equals n two minus n one, times gamma.
+
+00:03:11.368 --> 00:03:13.248
+Now connect angles to distances.
+
+00:03:13.808 --> 00:03:19.186
+Alpha is approximately h over minus u, beta is h over v, and gamma is h over
+
+00:03:19.186 --> 00:03:19.328
+R.
+
+00:03:20.148 --> 00:03:20.748
+Divide by h.
+
+00:03:21.128 --> 00:03:26.628
+The result is n two over v minus n one over u equals n two minus n one over R.
+
+00:03:26.828 --> 00:03:30.557
+Unlike a mirror, light proceeds into the second medium, and both indices
+
+00:03:30.557 --> 00:03:30.868
+belong
+
+00:03:30.868 --> 00:03:31.448
+in the equation.
+
+00:03:32.148 --> 00:03:37.308
+Let's check the existing example: n one one, n two one point five, u minus
+
+00:03:37.308 --> 00:03:39.948
+sixty centimeters, R plus twenty.
+
+00:03:39.948 --> 00:03:42.408
+The curvature term is one fortieth per centimeter.
+
+00:03:43.328 --> 00:03:48.008
+Subtract one sixtieth to find one point five over v equal to one one hundred
+
+00:03:48.008 --> 00:03:48.528
+twentieth.
+
+00:03:48.528 --> 00:03:50.508
+Thus v is plus one hundred eighty centimeters.
+
+00:03:50.508 --> 00:03:54.708
+Pause: a longer image distance is reasonable here because this surface only
+
+00:03:54.708 --> 00:03:56.328
+weakly converges the incident beam.
+
+00:03:57.108 --> 00:03:58.208
+Let R tend to infinity.
+
+00:03:58.708 --> 00:03:59.848
+The curvature term vanishes.
+
+00:04:00.588 --> 00:04:04.421
+For an object twenty centimeters inside water of index four thirds, viewed
+
+00:04:04.421 --> 00:04:04.628
+near
+
+00:04:04.628 --> 00:04:09.363
+normally from air through a plane surface, set u minus twenty and swap n one
+
+00:04:09.363 --> 00:04:09.488
+to
+
+00:04:09.488 --> 00:04:11.208
+four thirds, n two to one.
+
+00:04:11.728 --> 00:04:15.739
+The equation gives v minus fifteen centimeters: a virtual image closer to the
+
+00:04:15.739 --> 00:04:16.208
+boundary.
+
+00:04:16.928 --> 00:04:20.328
+Our sketch's positive small angles are a route to the equation for that
+
+00:04:20.328 --> 00:04:21.188
+pictured configuration.
+
+00:04:22.128 --> 00:04:25.842
+Virtual images or reversed curvature require signed geometry, not an
+
+00:04:25.842 --> 00:04:26.388
+assumption
+
+00:04:26.388 --> 00:04:28.528
+that every angle keeps the pictured sign.
+
+00:04:29.188 --> 00:04:33.348
+Keep the pole, incident direction and media labels visible in a JEE solution.
+
+00:04:33.504 --> 00:04:36.704
+A telescope formula depends on where the final image is.
+
+00:04:37.224 --> 00:04:41.191
+Normal adjustment means final image at infinity: relaxed viewing,
+
+00:04:41.191 --> 00:04:41.984
+magnification
+
+00:04:41.984 --> 00:04:46.144
+minus objective focal length over eyepiece focal length, and refractor lens
+
+00:04:46.144 --> 00:04:48.124
+separation their sum.
+
+00:04:48.124 --> 00:04:52.304
+Now put the final virtual image at the near point, a distance D from the
+
+00:04:52.304 --> 00:04:53.564
+eyepiece in our ideal model.
+
+00:04:53.764 --> 00:04:56.644
+We neglect separation between eye and eyepiece.
+
+00:04:57.024 --> 00:05:00.844
+D is twenty five centimeters for the standard reference eye, not a fixed
+
+00:05:00.844 --> 00:05:01.984
+property of every person.
+
+00:05:02.624 --> 00:05:05.004
+The eyepiece image distance is minus D.
+
+00:05:05.684 --> 00:05:10.744
+Its thin lens equation gives one over f e equal to minus one over D minus one
+
+00:05:10.744 --> 00:05:12.184
+over u e.
+
+00:05:12.184 --> 00:05:15.664
+Therefore the intermediate image lies on its incoming side at distance
+
+00:05:15.664 --> 00:05:20.524
+magnitude s equal to f e times D divided by D plus f e.
+
+00:05:20.524 --> 00:05:21.984
+This is less than f e.
+
+00:05:21.984 --> 00:05:26.524
+The objective still forms its intermediate image approximately f o from itself
+
+00:05:26.524 --> 00:05:27.804
+for a distant object.
+
+00:05:28.244 --> 00:05:32.664
+So lens separation is f o plus s, slightly less than the normal adjustment
+
+00:05:32.664 --> 00:05:33.064
+length.
+
+00:05:33.904 --> 00:05:37.715
+The incoming object angle makes intermediate height magnitude approximately f
+
+00:05:37.715 --> 00:05:37.764
+o
+
+00:05:37.764 --> 00:05:38.584
+times that angle.
+
+00:05:39.444 --> 00:05:43.044
+The outgoing angle at the eyepiece is approximately that height divided by s.
+
+00:05:43.924 --> 00:05:49.655
+Hence signed magnification is minus f o over s, or minus f o over f e times
+
+00:05:49.655 --> 00:05:49.884
+one
+
+00:05:49.884 --> 00:05:50.964
+plus f e over D.
+
+00:05:51.324 --> 00:05:55.884
+Let's use f o one hundred centimeters, f e five, and D twenty five.
+
+00:05:55.884 --> 00:06:00.444
+s is twenty five sixths centimeters, about four point one seven.
+
+00:06:00.444 --> 00:06:03.164
+Lens separation is one hundred four point one seven centimeters.
+
+00:06:04.184 --> 00:06:07.824
+Magnification is minus twenty four, compared with minus twenty and separation
+
+00:06:07.824 --> 00:06:10.144
+one hundred five centimeters in normal adjustment.
+
+00:06:11.284 --> 00:06:14.434
+Greater angular magnification here needs accommodation; it is not
+
+00:06:14.434 --> 00:06:15.064
+automatically
+
+00:06:15.064 --> 00:06:16.904
+the most comfortable or clearest view.
+
+00:06:18.024 --> 00:06:21.901
+Think before swapping in the microscope formula: the microscope's nearby
+
+00:06:21.901 --> 00:06:22.224
+object
+
+00:06:22.224 --> 00:06:25.464
+and objective linear magnification create a different first stage.
+
+00:06:25.884 --> 00:06:29.844
+For a reflecting telescope, the concave primary replaces the refracting
+
+00:06:29.844 --> 00:06:33.144
+objective and the eyepiece uses the same final image reasoning.
+
+00:06:33.904 --> 00:06:37.624
+A two hundred centimeter primary and four centimeter eyepiece give normal
+
+00:06:37.624 --> 00:06:39.344
+magnifying power magnitude fifty.
+
+00:06:40.224 --> 00:06:44.144
+Do not equate that optical focal length sum to every reflector's physical tube
+
+00:06:44.144 --> 00:06:46.564
+length: a secondary can fold the beam.
+
+00:06:47.384 --> 00:06:50.384
+Magnification, aperture, resolution and brightness remain distinct.
+
+00:06:51.284 --> 00:06:55.364
+These are ideal paraxial classroom calculations, not instructions to view the
+
+00:06:55.364 --> 00:06:57.724
+Sun or build unprotected optical equipment.

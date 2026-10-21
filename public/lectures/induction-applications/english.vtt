@@ -1,0 +1,331 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.980
+Hey, welcome back.
+
+00:00:02.800 --> 00:00:06.637
+Let's turn motion into electricity, without pretending the magnetic field
+
+00:00:06.637 --> 00:00:06.900
+gives
+
+00:00:06.900 --> 00:00:07.980
+us free energy.
+
+00:00:08.720 --> 00:00:12.260
+Picture a rod sliding right on two rails, with a field into the page.
+
+00:00:12.880 --> 00:00:15.940
+The loop gets bigger, so inward magnetic flux increases.
+
+00:00:16.600 --> 00:00:17.900
+What should the induced current do?
+
+00:00:18.280 --> 00:00:18.800
+Take a moment.
+
+00:00:19.320 --> 00:00:22.820
+It produces an outward field to oppose that increase, so current is
+
+00:00:22.820 --> 00:00:24.800
+counterclockwise, upward through the rod.
+
+00:00:25.240 --> 00:00:27.900
+The resulting force on the rod points left.
+
+00:00:28.560 --> 00:00:30.700
+You must pull right to keep the speed constant.
+
+00:00:30.700 --> 00:00:36.200
+Here is our example: field zero point five tesla, rod length zero point four
+
+00:00:36.200 --> 00:00:40.600
+metres, speed three metres per second, and total resistance two ohms.
+
+00:00:40.600 --> 00:00:44.820
+Emf is B times length times speed: zero point six volts.
+
+00:00:45.960 --> 00:00:47.440
+Current is zero point three amperes.
+
+00:00:48.300 --> 00:00:52.220
+Braking force is B times current times length, zero point zero six newtons.
+
+00:00:52.780 --> 00:00:56.780
+Multiply by speed: mechanical input is zero point one eight watts.
+
+00:00:57.420 --> 00:01:00.400
+Current squared times resistance gives exactly the same heating power.
+
+00:01:01.180 --> 00:01:02.900
+Good, our energy account balances.
+
+00:01:03.720 --> 00:01:05.660
+We neglected friction and circuit inductance.
+
+00:01:06.200 --> 00:01:07.800
+Now rotate a rod about one end.
+
+00:01:08.540 --> 00:01:09.860
+Should we use the tip speed everywhere?
+
+00:01:10.520 --> 00:01:10.840
+No.
+
+00:01:11.240 --> 00:01:14.180
+At distance s from the pivot, speed is omega times s.
+
+00:01:15.000 --> 00:01:19.120
+Integrating B omega s along the rod gives B omega length squared divided by
+
+00:01:19.120 --> 00:01:19.380
+two.
+
+00:01:19.660 --> 00:01:24.560
+With zero point four tesla, twenty radians per second and half a metre, emf is
+
+00:01:24.560 --> 00:01:25.020
+one volt.
+
+00:01:25.860 --> 00:01:29.320
+Counterclockwise rotation with field out of the page makes the tip positive.
+
+00:01:29.960 --> 00:01:33.100
+An isolated rod can have this voltage without continuous current.
+
+00:01:33.940 --> 00:01:38.360
+Add a stationary return path and contacts with five ohms total resistance, and
+
+00:01:38.360 --> 00:01:39.920
+current is zero point two amperes.
+
+00:01:40.740 --> 00:01:45.120
+Braking torque is B times current times length squared divided by two: zero
+
+00:01:45.120 --> 00:01:46.360
+point zero one newton metres.
+
+00:01:47.300 --> 00:01:51.000
+Torque times angular speed is zero point two watts, matching resistor heating.
+
+00:01:51.920 --> 00:01:54.060
+Different geometry, same conservation check.
+
+00:01:54.312 --> 00:01:56.712
+Next, let's give the circuit a little memory.
+
+00:01:57.332 --> 00:01:58.972
+An inductor stores magnetic energy.
+
+00:01:59.772 --> 00:02:03.752
+For constant inductance, its voltage is L times the rate of change of current,
+
+00:02:04.292 --> 00:02:05.612
+using the passive sign convention.
+
+00:02:06.272 --> 00:02:10.052
+A finite applied voltage changes the slope of current, not the current
+
+00:02:10.052 --> 00:02:10.812
+instantaneously.
+
+00:02:11.872 --> 00:02:15.812
+Imagine connecting a ten volt source to five ohms and a zero point five henry
+
+00:02:15.812 --> 00:02:18.492
+inductor in series, initially with zero current.
+
+00:02:19.192 --> 00:02:21.372
+Right at the start, current is still zero.
+
+00:02:21.932 --> 00:02:25.852
+The resistor voltage is zero, and the inductor initially takes the source
+
+00:02:25.852 --> 00:02:26.212
+voltage.
+
+00:02:26.932 --> 00:02:28.532
+Eventually the current stops changing.
+
+00:02:29.152 --> 00:02:33.498
+The ideal inductor then has zero voltage, and current approaches ten divided
+
+00:02:33.498 --> 00:02:33.612
+by
+
+00:02:33.612 --> 00:02:35.032
+five, two amperes.
+
+00:02:35.632 --> 00:02:36.032
+How quickly?
+
+00:02:36.552 --> 00:02:39.992
+The time constant is L divided by R, zero point one seconds.
+
+00:02:40.772 --> 00:02:43.895
+Growth current is the final current times one minus the exponential of
+
+00:02:43.895 --> 00:02:44.252
+negative
+
+00:02:44.252 --> 00:02:45.792
+time divided by the time constant.
+
+00:02:46.492 --> 00:02:51.052
+At one time constant, that factor is about zero point six three two.
+
+00:02:51.052 --> 00:02:54.092
+So current is about one point two six amperes, not two.
+
+00:02:54.612 --> 00:02:58.052
+Think of the time constant as a characteristic pace, not a finish line.
+
+00:02:58.672 --> 00:03:02.732
+The final stored magnetic energy is one half L times current squared: one
+
+00:03:02.732 --> 00:03:03.272
+joule.
+
+00:03:03.672 --> 00:03:07.652
+Now remove the source but leave a closed resistor and inductor discharge loop.
+
+00:03:08.492 --> 00:03:12.092
+Current decays exponentially, and the stored energy becomes heat in that
+
+00:03:12.092 --> 00:03:12.352
+resistor.
+
+00:03:12.972 --> 00:03:15.952
+But opening the only current path is a different situation.
+
+00:03:16.652 --> 00:03:20.132
+The inductor can develop a large voltage, sometimes causing a spark.
+
+00:03:20.772 --> 00:03:24.272
+We do not casually apply the closed loop decay formula to an open circuit.
+
+00:03:25.112 --> 00:03:29.172
+For JEE, sketch the circuit before and after switching, state the initial
+
+00:03:29.172 --> 00:03:32.392
+current, and identify the actual path available for discharge.
+
+00:03:32.932 --> 00:03:36.152
+That picture often matters more than memorizing another formula.
+
+00:03:36.432 --> 00:03:38.172
+Finally, an AC puzzle.
+
+00:03:38.772 --> 00:03:42.452
+Can a twenty volt source produce two hundred volts across an inductor in a
+
+00:03:42.452 --> 00:03:42.812
+passive circuit?
+
+00:03:43.292 --> 00:03:47.612
+At series resonance, yes, under the ideal conditions we are about to specify.
+
+00:03:48.292 --> 00:03:53.312
+Take inductance zero point two henry, capacitance twenty microfarads, total
+
+00:03:53.312 --> 00:03:57.332
+series resistance ten ohms, and source voltage twenty volts RMS.
+
+00:03:58.352 --> 00:04:02.375
+Resonant angular frequency is one divided by the square root of L times C:
+
+00:04:02.375 --> 00:04:02.592
+five
+
+00:04:02.592 --> 00:04:06.212
+hundred radians per second, about seventy nine point five eight hertz.
+
+00:04:07.212 --> 00:04:10.612
+Inductive and capacitive reactances each have magnitude one hundred ohms.
+
+00:04:11.192 --> 00:04:15.272
+They have opposite phase, so they cancel in the total impedance, leaving ten
+
+00:04:15.272 --> 00:04:15.512
+ohms.
+
+00:04:16.232 --> 00:04:17.832
+Current is two amperes RMS.
+
+00:04:18.552 --> 00:04:22.152
+Each reactive element has two hundred volts RMS, but their voltage phasors
+
+00:04:22.152 --> 00:04:22.612
+oppose.
+
+00:04:22.832 --> 00:04:26.032
+We must not add those magnitudes as if they point in the same direction.
+
+00:04:26.792 --> 00:04:29.732
+The source supplies forty watts, dissipated in resistance.
+
+00:04:30.672 --> 00:04:34.652
+Ideal inductors and capacitors exchange energy but consume no average power.
+
+00:04:35.352 --> 00:04:37.492
+Now ask how selective this resonance is.
+
+00:04:38.032 --> 00:04:42.092
+With source voltage fixed, half resonant power means current is the resonant
+
+00:04:42.092 --> 00:04:43.872
+value divided by the square root of two.
+
+00:04:44.412 --> 00:04:48.192
+This happens when the magnitude of inductive reactance minus capacitive
+
+00:04:48.192 --> 00:04:49.692
+reactance equals resistance.
+
+00:04:50.532 --> 00:04:53.961
+Solving the lower and upper cases gives approximately four hundred seventy
+
+00:04:53.961 --> 00:04:54.146
+five
+
+00:04:54.146 --> 00:04:58.792
+point six two and five hundred twenty five point six two radians per second.
+
+00:04:59.012 --> 00:05:03.872
+Subtract: bandwidth is fifty radians per second, exactly R divided by L for
+
+00:05:03.872 --> 00:05:05.032
+this ideal series model.
+
+00:05:05.872 --> 00:05:10.012
+Quality factor is resonant angular frequency times L divided by R, which is
+
+00:05:10.012 --> 00:05:10.272
+ten.
+
+00:05:10.712 --> 00:05:11.572
+Notice one subtlety.
+
+00:05:12.052 --> 00:05:15.632
+The geometric mean of the half power frequencies is the resonance frequency;
+
+00:05:15.872 --> 00:05:18.512
+their arithmetic midpoint is not exactly resonance.
+
+00:05:19.272 --> 00:05:21.952
+Symmetric endpoints are an approximation, not an identity.
+
+00:05:22.672 --> 00:05:25.632
+Real losses and component ratings limit voltage magnification.
+
+00:05:26.252 --> 00:05:30.145
+Our routine is to name the model, keep RMS separate from peak values, and
+
+00:05:30.145 --> 00:05:30.412
+check
+
+00:05:30.412 --> 00:05:30.712
+power.
+
+00:05:31.172 --> 00:05:34.772
+That is how these equations become useful tools rather than a guessing game.

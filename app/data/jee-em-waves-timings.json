@@ -1,0 +1,867 @@
+{
+  "duration": 434.928000000012,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 90.76800000000254
+    },
+    {
+      "start": 90.76800000000254,
+      "end": 172.12800000000473
+    },
+    {
+      "start": 172.12800000000473,
+      "end": 251.92800000000688
+    },
+    {
+      "start": 251.92800000000688,
+      "end": 335.3280000000091
+    },
+    {
+      "start": 335.3280000000091,
+      "end": 434.928000000012
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.7999999523162842,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.759999990463257,
+      "end": 3.9600000381469727,
+      "text": "Imagine charging a capacitor.",
+      "chapter": 0
+    },
+    {
+      "start": 5.039999961853027,
+      "end": 9.220000267028809,
+      "text": "Current flows in the wires, but no conduction charge crosses an ideal vacuum",
+      "chapter": 0
+    },
+    {
+      "start": 9.220000267028809,
+      "end": 10.359999656677246,
+      "text": "gap between the plates.",
+      "chapter": 0
+    },
+    {
+      "start": 11.039999961853027,
+      "end": 13.880000114440918,
+      "text": "Does the magnetic field description simply break at the gap?",
+      "chapter": 0
+    },
+    {
+      "start": 14.640000343322754,
+      "end": 16.81999969482422,
+      "text": "Maxwell's correction makes the account consistent.",
+      "chapter": 0
+    },
+    {
+      "start": 17.520000457763672,
+      "end": 21.780000686645508,
+      "text": "A changing electric flux contributes to the magnetic circulation just as",
+      "chapter": 0
+    },
+    {
+      "start": 21.780000686645508,
+      "end": 22.700000762939453,
+      "text": "conduction current does.",
+      "chapter": 0
+    },
+    {
+      "start": 23.360000610351562,
+      "end": 27.95897430028671,
+      "text": "In vacuum, displacement current equals epsilon zero times the rate of change",
+      "chapter": 0
+    },
+    {
+      "start": 27.95897430028671,
+      "end": 28.079999923706055,
+      "text": "of",
+      "chapter": 0
+    },
+    {
+      "start": 28.079999923706055,
+      "end": 28.760000228881836,
+      "text": "electric flux.",
+      "chapter": 0
+    },
+    {
+      "start": 29.65999984741211,
+      "end": 33.91999816894531,
+      "text": "Its units are amperes, but it is not electrons flying across the vacuum gap.",
+      "chapter": 0
+    },
+    {
+      "start": 34.720001220703125,
+      "end": 39.02000045776367,
+      "text": "For an ideal parallel plate vacuum capacitor, neglecting fringing, electric",
+      "chapter": 0
+    },
+    {
+      "start": 39.02000045776367,
+      "end": 42.599998474121094,
+      "text": "flux through the full plate area is charge divided by epsilon zero.",
+      "chapter": 0
+    },
+    {
+      "start": 43.540000915527344,
+      "end": 46.65999984741211,
+      "text": "Differentiate and displacement current equals the rate of change of plate",
+      "chapter": 0
+    },
+    {
+      "start": 46.65999984741211,
+      "end": 47,
+      "text": "charge.",
+      "chapter": 0
+    },
+    {
+      "start": 47.599998474121094,
+      "end": 49.459999084472656,
+      "text": "That matches the wire's charging current.",
+      "chapter": 0
+    },
+    {
+      "start": 50.02000045776367,
+      "end": 54.68000030517578,
+      "text": "Since charge equals C V for fixed capacitance, displacement current is C times",
+      "chapter": 0
+    },
+    {
+      "start": 54.68000030517578,
+      "end": 55.65999984741211,
+      "text": "the voltage derivative.",
+      "chapter": 0
+    },
+    {
+      "start": 56.58000183105469,
+      "end": 60.223589383638824,
+      "text": "Take capacitance two nanofarads and voltage increasing at five hundred",
+      "chapter": 0
+    },
+    {
+      "start": 60.223589383638824,
+      "end": 60.63999938964844,
+      "text": "thousand",
+      "chapter": 0
+    },
+    {
+      "start": 60.63999938964844,
+      "end": 61.41999816894531,
+      "text": "volts per second.",
+      "chapter": 0
+    },
+    {
+      "start": 62.439998626708984,
+      "end": 65.62000274658203,
+      "text": "Convert capacitance to two times ten to the minus nine farad.",
+      "chapter": 0
+    },
+    {
+      "start": 66.05999755859375,
+      "end": 69.94000244140625,
+      "text": "The current is zero point zero zero one ampere, or one milliampere.",
+      "chapter": 0
+    },
+    {
+      "start": 70.55999755859375,
+      "end": 74.8861563266852,
+      "text": "A constant capacitor voltage gives zero displacement current in this model",
+      "chapter": 0
+    },
+    {
+      "start": 74.8861563266852,
+      "end": 75.12000274658203,
+      "text": "even",
+      "chapter": 0
+    },
+    {
+      "start": 75.12000274658203,
+      "end": 77.91999816894531,
+      "text": "though the electric field can be nonzero.",
+      "chapter": 0
+    },
+    {
+      "start": 77.91999816894531,
+      "end": 80.44000244140625,
+      "text": "The electric flux formula stated here uses vacuum.",
+      "chapter": 0
+    },
+    {
+      "start": 81.0999984741211,
+      "end": 85.4000015258789,
+      "text": "In matter, the general description uses electric displacement and must include",
+      "chapter": 0
+    },
+    {
+      "start": 85.4000015258789,
+      "end": 86.44000244140625,
+      "text": "the material response.",
+      "chapter": 0
+    },
+    {
+      "start": 87.19999694824219,
+      "end": 90.5199966430664,
+      "text": "Do not use the vacuum expression as a universal dielectric shortcut.",
+      "chapter": 0
+    },
+    {
+      "start": 90.76800000000254,
+      "end": 94.12799989509837,
+      "text": "Faraday's law connects changing magnetic fields to electric fields.",
+      "chapter": 1
+    },
+    {
+      "start": 95.0480002098109,
+      "end": 97.72800003814952,
+      "text": "Maxwell's correction completes the changing electric field side.",
+      "chapter": 1
+    },
+    {
+      "start": 98.66800009536998,
+      "end": 102.16799961853282,
+      "text": "Together, the equations allow electromagnetic disturbances to travel even",
+      "chapter": 1
+    },
+    {
+      "start": 102.16799961853282,
+      "end": 102.70799958038585,
+      "text": "through vacuum.",
+      "chapter": 1
+    },
+    {
+      "start": 103.44800030517833,
+      "end": 106.18800007629649,
+      "text": "We do not need air or a vibrating material string.",
+      "chapter": 1
+    },
+    {
+      "start": 107.20800053406016,
+      "end": 109.68800007629649,
+      "text": "Accelerated charges can produce electromagnetic radiation.",
+      "chapter": 1
+    },
+    {
+      "start": 109.82799946594493,
+      "end": 114.14799916076915,
+      "text": "For a plane wave travelling in vacuum, the electric and magnetic fields are",
+      "chapter": 1
+    },
+    {
+      "start": 114.14799916076915,
+      "end": 117.58799969482676,
+      "text": "perpendicular to one another, and both are perpendicular to the propagation",
+      "chapter": 1
+    },
+    {
+      "start": 117.58799969482676,
+      "end": 118.1280006103541,
+      "text": "direction.",
+      "chapter": 1
+    },
+    {
+      "start": 118.1280006103541,
+      "end": 120.16799961853282,
+      "text": "That makes the wave transverse.",
+      "chapter": 1
+    },
+    {
+      "start": 120.92799984741465,
+      "end": 124.66800152588145,
+      "text": "At a given point, the electric and magnetic oscillations are in phase in this",
+      "chapter": 1
+    },
+    {
+      "start": 124.66800152588145,
+      "end": 125.50800167846934,
+      "text": "travelling wave model.",
+      "chapter": 1
+    },
+    {
+      "start": 126.1280006103541,
+      "end": 128.5479987792994,
+      "text": "They reach corresponding zeroes and extrema together.",
+      "chapter": 1
+    },
+    {
+      "start": 128.5479987792994,
+      "end": 134.24799954223886,
+      "text": "Their amplitudes are not numerically equal in SI units: E zero equals c times",
+      "chapter": 1
+    },
+    {
+      "start": 134.24799954223886,
+      "end": 135.5479987792994,
+      "text": "B zero.",
+      "chapter": 1
+    },
+    {
+      "start": 135.5479987792994,
+      "end": 138.0479987792994,
+      "text": "Suppose electric field amplitude is ninety volts per meter.",
+      "chapter": 1
+    },
+    {
+      "start": 138.84800183105722,
+      "end": 142.84800183105722,
+      "text": "With c approximately three times ten to the eight meters per second, magnetic",
+      "chapter": 1
+    },
+    {
+      "start": 142.84800183105722,
+      "end": 147.34800183105722,
+      "text": "amplitude is three times ten to the minus seven tesla, or zero point three",
+      "chapter": 1
+    },
+    {
+      "start": 147.34800183105722,
+      "end": 147.96800076294198,
+      "text": "microtesla.",
+      "chapter": 1
+    },
+    {
+      "start": 148.74799954223886,
+      "end": 149.7880004577662,
+      "text": "Now use a direction check.",
+      "chapter": 1
+    },
+    {
+      "start": 150.32800137329355,
+      "end": 155.24800335693612,
+      "text": "If E points along positive y and B along positive z at an instant, E cross B",
+      "chapter": 1
+    },
+    {
+      "start": 155.24800335693612,
+      "end": 156.528002136233,
+      "text": "points along positive x.",
+      "chapter": 1
+    },
+    {
+      "start": 157.0479987792994,
+      "end": 159.32799755859628,
+      "text": "That is the energy flow and propagation direction.",
+      "chapter": 1
+    },
+    {
+      "start": 159.96799694824472,
+      "end": 164.08799969482675,
+      "text": "At the opposite half cycle, both fields reverse, so their cross product still",
+      "chapter": 1
+    },
+    {
+      "start": 164.08799969482675,
+      "end": 164.66800152588144,
+      "text": "points forward.",
+      "chapter": 1
+    },
+    {
+      "start": 165.1479972534205,
+      "end": 169.18799816894784,
+      "text": "The sketch shows directions at one location; it is not a picture of a single",
+      "chapter": 1
+    },
+    {
+      "start": 169.18799816894784,
+      "end": 171.80800091552987,
+      "text": "charge moving through space along every drawn field arrow.",
+      "chapter": 1
+    },
+    {
+      "start": 172.12800000000473,
+      "end": 176.3679997711229,
+      "text": "Frequency counts oscillations per second, and wavelength is the spatial repeat",
+      "chapter": 2
+    },
+    {
+      "start": 176.3679997711229,
+      "end": 176.76799986649033,
+      "text": "distance.",
+      "chapter": 2
+    },
+    {
+      "start": 177.4280001907396,
+      "end": 181.2680003433275,
+      "text": "For any travelling periodic wave, speed equals frequency times wavelength.",
+      "chapter": 2
+    },
+    {
+      "start": 182.06799958038803,
+      "end": 186.60799954224106,
+      "text": "In vacuum, the electromagnetic wave speed is c, approximately three hundred",
+      "chapter": 2
+    },
+    {
+      "start": 186.60799954224106,
+      "end": 187.78799984741684,
+      "text": "million meters per second.",
+      "chapter": 2
+    },
+    {
+      "start": 188.5879990844774,
+      "end": 192.62800000000473,
+      "text": "Radio waves and visible light share that vacuum speed; higher frequency does",
+      "chapter": 2
+    },
+    {
+      "start": 192.62800000000473,
+      "end": 194.32800076294419,
+      "text": "not mean faster travel in vacuum.",
+      "chapter": 2
+    },
+    {
+      "start": 194.7079999237108,
+      "end": 198.2079999237108,
+      "text": "Let's calculate for frequency six times ten to the fourteen hertz.",
+      "chapter": 2
+    },
+    {
+      "start": 198.88800022888657,
+      "end": 203.52800057220932,
+      "text": "Divide c by frequency to get five times ten to the minus seven meter, or five",
+      "chapter": 2
+    },
+    {
+      "start": 203.52800057220932,
+      "end": 204.20800183105942,
+      "text": "hundred nanometers.",
+      "chapter": 2
+    },
+    {
+      "start": 205.20800183105942,
+      "end": 206.62800000000473,
+      "text": "Take a moment with the powers of ten.",
+      "chapter": 2
+    },
+    {
+      "start": 207.2479989318895,
+      "end": 211.07799885559555,
+      "text": "One nanometer is ten to the minus nine meter, so the conversion is five",
+      "chapter": 2
+    },
+    {
+      "start": 211.07799885559555,
+      "end": 212.02800152588364,
+      "text": "hundred, not five.",
+      "chapter": 2
+    },
+    {
+      "start": 212.76799938965317,
+      "end": 216.86800167847153,
+      "text": "Now let this wave enter a stationary transparent medium with refractive index",
+      "chapter": 2
+    },
+    {
+      "start": 216.86800167847153,
+      "end": 218.70800183105942,
+      "text": "one point five at that frequency.",
+      "chapter": 2
+    },
+    {
+      "start": 219.32800076294419,
+      "end": 223.2479989318895,
+      "text": "Its phase speed is c over n, or two hundred million meters per second.",
+      "chapter": 2
+    },
+    {
+      "start": 223.70800183105942,
+      "end": 227.6480004577684,
+      "text": "The source and interface keep the frequency at six times ten to the fourteen",
+      "chapter": 2
+    },
+    {
+      "start": 227.6480004577684,
+      "end": 227.96800015259262,
+      "text": "hertz.",
+      "chapter": 2
+    },
+    {
+      "start": 229.02800152588364,
+      "end": 231.78799984741684,
+      "text": "Wavelength becomes about three hundred thirty three nanometers in the medium.",
+      "chapter": 2
+    },
+    {
+      "start": 232.56799862671372,
+      "end": 235.20800183105942,
+      "text": "Do not change the frequency just because the speed changed.",
+      "chapter": 2
+    },
+    {
+      "start": 236.02800152588364,
+      "end": 240.0079972534227,
+      "text": "Spectrum classifications ordinarily quote vacuum wavelength; the shorter",
+      "chapter": 2
+    },
+    {
+      "start": 240.0079972534227,
+      "end": 243.22799847412583,
+      "text": "wavelength inside glass does not turn the light into a different frequency",
+      "chapter": 2
+    },
+    {
+      "start": 243.22799847412583,
+      "end": 243.54799816895004,
+      "text": "band.",
+      "chapter": 2
+    },
+    {
+      "start": 244.3880021362352,
+      "end": 248.26799938965317,
+      "text": "Real media can be dispersive, so refractive index can depend on frequency.",
+      "chapter": 2
+    },
+    {
+      "start": 248.26799938965317,
+      "end": 251.5879990844774,
+      "text": "We use the stated index at this particular frequency.",
+      "chapter": 2
+    },
+    {
+      "start": 251.92800000000688,
+      "end": 256.2080002098152,
+      "text": "The electromagnetic spectrum is one continuous family, not seven unrelated",
+      "chapter": 3
+    },
+    {
+      "start": 256.2080002098152,
+      "end": 256.9479999809334,
+      "text": "kinds of wave.",
+      "chapter": 3
+    },
+    {
+      "start": 257.8280000953743,
+      "end": 261.44800045777055,
+      "text": "Starting from lower frequency and moving upward, the usual teaching order is",
+      "chapter": 3
+    },
+    {
+      "start": 261.44800045777055,
+      "end": 266.3080001144478,
+      "text": "radio, microwave, infrared, visible, ultraviolet, X rays and gamma rays.",
+      "chapter": 3
+    },
+    {
+      "start": 267.1480002670357,
+      "end": 271.087999847419,
+      "text": "Vacuum wavelength runs in the opposite direction because c equals frequency",
+      "chapter": 3
+    },
+    {
+      "start": 271.087999847419,
+      "end": 271.8680005340645,
+      "text": "times wavelength.",
+      "chapter": 3
+    },
+    {
+      "start": 272.64799931336137,
+      "end": 277.00799992371293,
+      "text": "The board uses equal width named bands only as an ordering guide, not a linear",
+      "chapter": 3
+    },
+    {
+      "start": 277.00799992371293,
+      "end": 277.78800061035844,
+      "text": "frequency scale.",
+      "chapter": 3
+    },
+    {
+      "start": 278.44800045777055,
+      "end": 282.62800076294633,
+      "text": "Microwaves are often treated as a subset of radio waves, so the labels are not",
+      "chapter": 3
+    },
+    {
+      "start": 282.62800076294633,
+      "end": 283.9880013732979,
+      "text": "perfectly exclusive boxes.",
+      "chapter": 3
+    },
+    {
+      "start": 284.94800045777055,
+      "end": 286.587999847419,
+      "text": "Visible light is a small part of the spectrum.",
+      "chapter": 3
+    },
+    {
+      "start": 287.36799862671586,
+      "end": 290.60800030518266,
+      "text": "A useful approximate classroom range is four hundred to seven hundred",
+      "chapter": 3
+    },
+    {
+      "start": 290.60800030518266,
+      "end": 294.587999847419,
+      "text": "nanometers in vacuum, with actual visibility limits depending on conditions.",
+      "chapter": 3
+    },
+    {
+      "start": 295.4079995422432,
+      "end": 298.86799862671586,
+      "text": "Red is toward the longer wavelength end; violet toward the shorter wavelength",
+      "chapter": 3
+    },
+    {
+      "start": 298.86799862671586,
+      "end": 299.2279992370674,
+      "text": "end.",
+      "chapter": 3
+    },
+    {
+      "start": 299.9880013732979,
+      "end": 303.587999847419,
+      "text": "Infrared lies beyond the red side and ultraviolet beyond the violet side.",
+      "chapter": 3
+    },
+    {
+      "start": 304.28800061035844,
+      "end": 307.4280000000069,
+      "text": "Suppose wave A has frequency twice that of wave B in vacuum.",
+      "chapter": 3
+    },
+    {
+      "start": 308.1680016784737,
+      "end": 309.02799847412797,
+      "text": "What happens to wavelength?",
+      "chapter": 3
+    },
+    {
+      "start": 309.5679993896553,
+      "end": 312.1680016784737,
+      "text": "It halves, while their vacuum speeds remain the same.",
+      "chapter": 3
+    },
+    {
+      "start": 313.12800076294633,
+      "end": 316.70799877930375,
+      "text": "Exact boundaries between bands are conventions, not abrupt changes in the laws",
+      "chapter": 3
+    },
+    {
+      "start": 316.70799877930375,
+      "end": 317.18800213623734,
+      "text": "of physics.",
+      "chapter": 3
+    },
+    {
+      "start": 317.7679963378975,
+      "end": 321.7679963378975,
+      "text": "In particular, X ray and gamma ray frequency ranges can overlap; their",
+      "chapter": 3
+    },
+    {
+      "start": 321.7679963378975,
+      "end": 323.9879975586006,
+      "text": "production mechanisms can help distinguish the names.",
+      "chapter": 3
+    },
+    {
+      "start": 324.68800213623734,
+      "end": 328.0480027465889,
+      "text": "Learn the order, the inverse wavelength trend and the shared wave properties.",
+      "chapter": 3
+    },
+    {
+      "start": 328.68800213623734,
+      "end": 332.50800183106156,
+      "text": "Later, photon energy calculations will give another way to compare frequencies",
+      "chapter": 3
+    },
+    {
+      "start": 332.50800183106156,
+      "end": 334.28800061035844,
+      "text": "without changing this spectrum picture.",
+      "chapter": 3
+    },
+    {
+      "start": 335.3280000000091,
+      "end": 339.6480001716705,
+      "text": "Applications become easier to remember when you connect them to interactions",
+      "chapter": 4
+    },
+    {
+      "start": 340.1480001716705,
+      "end": 341.4479998855682,
+      "text": "rather than learning a random list.",
+      "chapter": 4
+    },
+    {
+      "start": 342.2480000763031,
+      "end": 344.2279996185394,
+      "text": "Radio waves carry communication signals.",
+      "chapter": 4
+    },
+    {
+      "start": 345.2880000381561,
+      "end": 349.168000152597,
+      "text": "Microwaves are useful for radar and many communication links; suitable",
+      "chapter": 4
+    },
+    {
+      "start": 349.168000152597,
+      "end": 352.64799969483335,
+      "text": "microwave fields can also transfer energy to food through absorption.",
+      "chapter": 4
+    },
+    {
+      "start": 353.5679997711273,
+      "end": 357.7879990844818,
+      "text": "These examples do not mean every material absorbs every microwave frequency",
+      "chapter": 4
+    },
+    {
+      "start": 357.7879990844818,
+      "end": 358.2279996185394,
+      "text": "equally.",
+      "chapter": 4
+    },
+    {
+      "start": 359.10800068665463,
+      "end": 361.8280000000091,
+      "text": "Infrared is important in thermal sensing and remote controls.",
+      "chapter": 4
+    },
+    {
+      "start": 362.5379990844818,
+      "end": 367.0679997711273,
+      "text": "Thermal radiation is not exclusively infrared; its distribution depends on",
+      "chapter": 4
+    },
+    {
+      "start": 367.0679997711273,
+      "end": 367.46799938965756,
+      "text": "temperature.",
+      "chapter": 4
+    },
+    {
+      "start": 368.48799984742124,
+      "end": 371.4479989318939,
+      "text": "Visible light supports illumination, photography and vision.",
+      "chapter": 4
+    },
+    {
+      "start": 372.39799969483335,
+      "end": 376.2879990844818,
+      "text": "Ultraviolet has controlled applications such as germicidal equipment and",
+      "chapter": 4
+    },
+    {
+      "start": 376.2879990844818,
+      "end": 377.3280000000091,
+      "text": "fluorescence excitation.",
+      "chapter": 4
+    },
+    {
+      "start": 378.4279984741302,
+      "end": 381.668000152597,
+      "text": "X rays support imaging because different materials attenuate them differently.",
+      "chapter": 4
+    },
+    {
+      "start": 382.4479989318939,
+      "end": 386.5080003051849,
+      "text": "Gamma rays are associated with energetic nuclear processes and have controlled",
+      "chapter": 4
+    },
+    {
+      "start": 386.5080003051849,
+      "end": 388.46799938965756,
+      "text": "scientific and industrial applications.",
+      "chapter": 4
+    },
+    {
+      "start": 389.38800137330014,
+      "end": 394.13800005282803,
+      "text": "Penetration and biological effects depend on photon energy and material; do",
+      "chapter": 4
+    },
+    {
+      "start": 394.13800005282803,
+      "end": 394.3280000000091,
+      "text": "not",
+      "chapter": 4
+    },
+    {
+      "start": 394.3280000000091,
+      "end": 396.107998779306,
+      "text": "infer safety from a band name alone.",
+      "chapter": 4
+    },
+    {
+      "start": 396.98799984742124,
+      "end": 400.9880036621185,
+      "text": "Our lesson is a physics overview, not instructions for operating radiation",
+      "chapter": 4
+    },
+    {
+      "start": 400.9880036621185,
+      "end": 401.4279984741302,
+      "text": "equipment.",
+      "chapter": 4
+    },
+    {
+      "start": 402.56799786377866,
+      "end": 404.04800122071225,
+      "text": "Let's finish with two calculations.",
+      "chapter": 4
+    },
+    {
+      "start": 404.8280000000091,
+      "end": 409.0080003051849,
+      "text": "A three gigahertz signal has frequency three times ten to the nine hertz, so",
+      "chapter": 4
+    },
+    {
+      "start": 409.0080003051849,
+      "end": 413.0080003051849,
+      "text": "vacuum wavelength is zero point one meter, ten centimeters.",
+      "chapter": 4
+    },
+    {
+      "start": 413.0080003051849,
+      "end": 417.16799633789975,
+      "text": "A wave at three times ten to the fourteen hertz has wavelength one micrometer,",
+      "chapter": 4
+    },
+    {
+      "start": 417.16799633789975,
+      "end": 418.62800305176694,
+      "text": "in the infrared region.",
+      "chapter": 4
+    },
+    {
+      "start": 419.5880021362396,
+      "end": 421.3879975586029,
+      "text": "Both still travel at c in vacuum.",
+      "chapter": 4
+    },
+    {
+      "start": 422.2680024414154,
+      "end": 426.2879990844818,
+      "text": "Your checklist is electric flux change, field directions, the propagation",
+      "chapter": 4
+    },
+    {
+      "start": 426.2879990844818,
+      "end": 430.8080033569427,
+      "text": "medium, frequency wavelength conversion and the interaction relevant to the",
+      "chapter": 4
+    },
+    {
+      "start": 430.8080033569427,
+      "end": 431.22800152588803,
+      "text": "application.",
+      "chapter": 4
+    },
+    {
+      "start": 432.14799969483335,
+      "end": 434.6880006103607,
+      "text": "Those links make the spectrum a useful physical map.",
+      "chapter": 4
+    }
+  ]
+}

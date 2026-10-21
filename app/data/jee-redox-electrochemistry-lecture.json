@@ -1,0 +1,730 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script. Read every sentence completely and precisely, including the final sentence. Do not summarize.",
+  "title": "Redox and electrochemistry: electrons, cells and calculations",
+  "subject": "Chemistry",
+  "unit": 7,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 Chemistry syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: redox balancing",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-1-review-of-redox-chemistry"
+    },
+    {
+      "title": "OpenStax: batteries and fuel cells",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-5-batteries-and-fuel-cells"
+    },
+    {
+      "title": "OpenStax: galvanic cells",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-2-galvanic-cells"
+    },
+    {
+      "title": "OpenStax: potential, free energy and equilibrium",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-4-potential-free-energy-and-equilibrium"
+    },
+    {
+      "title": "OpenStax: electrolysis",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-7-electrolysis"
+    },
+    {
+      "title": "OpenStax: corrosion",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-6-corrosion"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Follow oxidation numbers, not just oxygen",
+      "formula": "Oxidation: increase; reduction: decrease; sum of oxidation numbers = total charge",
+      "points": [
+        "MnO₄⁻ · +7 · Starting form",
+        "Mn²⁺ · +2 · 5",
+        "MnO₂ · +4 · 3"
+      ],
+      "script": "Welcome to Redox and Electrochemistry. This recorded Chemistry class uses an AI generated Marin voice. Oxidation raises oxidation number, while reduction lowers it. The oxidizing agent accepts electrons and is itself reduced. The reducing agent supplies electrons and is itself oxidized. No oxygen atom is required for a redox reaction: zinc can transfer electrons directly to copper ions. Oxidation numbers sum to the overall species charge. An element in its elemental form has oxidation number zero. Oxygen is usually minus two, but in a peroxide it is minus one. Hydrogen is usually plus one, but in metal hydrides it is minus one. Fluorine in its compounds is minus one. For permanganate, four oxygens contribute minus eight, and the ion's total charge is minus one. Manganese must therefore be plus seven. Reduction to manganese two plus requires five electrons per manganese. Reduction to manganese dioxide instead ends at plus four and requires three. The final product fixes the electron count. In a balanced redox equation, electrons lost equal electrons gained. Assign oxidation numbers first, identify the two changes, and then use electron balance to establish the stoichiometric ratio.",
+      "board": {
+        "heading": "The product fixes the electron count",
+        "columns": [
+          "Manganese form",
+          "Oxidation no.",
+          "Electrons gained"
+        ],
+        "rows": [
+          [
+            "MnO₄⁻",
+            "+7",
+            "Starting form"
+          ],
+          [
+            "Mn²⁺",
+            "+2",
+            "5"
+          ],
+          [
+            "MnO₂",
+            "+4",
+            "3"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Balance atoms and charge separately",
+      "formula": "MnO4- + 8H+ + 5e- -> Mn2+ + 4H2O in acidic medium",
+      "points": [
+        "Mn²⁺ · Acidic · 5",
+        "MnO₂ · Basic · 3",
+        "0.0200 mol → MnO₂ · 3 × 0.0200 · 0.0600 mol e⁻"
+      ],
+      "script": "To balance redox half reactions in acidic medium, balance the main element, oxygen with water, hydrogen with hydrogen ions, and charge with electrons. For permanganate becoming manganese two plus, place four waters on the product side, eight hydrogen ions on the reactant side, and five electrons on the reactant side. Iron two plus loses one electron to form iron three plus. Multiply its half reaction by five and add. The combined equation consumes one permanganate, eight hydrogen ions and five iron two plus ions. It produces one manganese two plus, four waters and five iron three plus ions. Both sides have total charge plus seventeen. Thus zero point zero two zero zero moles of permanganate require zero point one zero zero moles of iron two plus. In basic medium with manganese dioxide as the specified product, the balanced reduction consumes one permanganate, two waters and three electrons, forming one manganese dioxide and four hydroxide ions. Each side has one manganese, six oxygen and four hydrogen atoms, with charge minus four. Zero point zero two zero zero moles now require zero point zero six zero zero moles of electrons. Do not copy the acidic five electron count into a reaction with a different product.",
+      "board": {
+        "heading": "Balance atoms AND charge",
+        "columns": [
+          "Reduction product",
+          "Medium",
+          "e⁻ per Mn"
+        ],
+        "rows": [
+          [
+            "Mn²⁺",
+            "Acidic",
+            "5"
+          ],
+          [
+            "MnO₂",
+            "Basic",
+            "3"
+          ],
+          [
+            "0.0200 mol → MnO₂",
+            "3 × 0.0200",
+            "0.0600 mol e⁻"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Conductivity and molar conductivity answer different questions",
+      "formula": "G = 1/R; kappa = G(l/A); Lambda_m = 1000 kappa/c with the stated units",
+      "points": [
+        "G / S · 1/200 · 0.00500",
+        "κ / S cm⁻¹ · 0.005 × 1.20 · 0.00600",
+        "Λm / S cm² mol⁻¹ · 1000κ / 0.0500 · 120"
+      ],
+      "script": "Conductance is the reciprocal of resistance. Conductivity removes the effect of sample geometry: multiply conductance by the cell constant, which is electrode separation divided by area. Molar conductivity compares conductivity with molar concentration. With conductivity in siemens per centimetre and concentration in moles per litre, molar conductivity is one thousand times conductivity divided by concentration, in siemens centimetres squared per mole. The factor one thousand comes from the volume unit conversion. Consider resistance two hundred ohms, cell constant one point two zero per centimetre, and concentration zero point zero five zero zero molar. Conductance is zero point zero zero five zero zero siemens. Conductivity is zero point zero zero six zero zero siemens per centimetre. Molar conductivity is one hundred twenty siemens centimetres squared per mole. On dilution, conductivity usually falls because a unit volume contains fewer ions, while molar conductivity rises as interionic effects decrease and, for weak electrolytes, ionization increases. These trends refer to different quantities and are not contradictory. At infinite dilution, Kohlrausch's law adds the limiting ionic contributions with their stoichiometric coefficients. A salt releasing two identical anions contributes that anion term twice. Always write the units before using a numerical conductivity formula.",
+      "board": {
+        "heading": "Geometry and concentration matter",
+        "columns": [
+          "Quantity",
+          "Calculation",
+          "Result"
+        ],
+        "rows": [
+          [
+            "G / S",
+            "1/200",
+            "0.00500"
+          ],
+          [
+            "κ / S cm⁻¹",
+            "0.005 × 1.20",
+            "0.00600"
+          ],
+          [
+            "Λm / S cm² mol⁻¹",
+            "1000κ / 0.0500",
+            "120"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Build a cell by separating two reactions",
+      "formula": "Zn | Zn2+ || Cu2+ | Cu; external electrons: anode -> cathode",
+      "points": [
+        "Zinc anode · Oxidation · Negative",
+        "Copper cathode · Reduction · Positive",
+        "External electrons · Zinc → copper · Bridge: ions"
+      ],
+      "script": "A galvanic cell separates oxidation and reduction so electrons can pass through an external circuit. In a Daniell cell, zinc loses electrons at the anode, and copper ions gain them at the cathode. Electrons flow through the wire from zinc to copper. The salt bridge carries ions that maintain charge balance; electrons do not travel through its solution. Anode means oxidation and cathode means reduction in both galvanic and electrolytic cells. In a functioning galvanic cell the anode is negative and cathode positive. An external power supply drives an electrolytic cell, whose electrode polarities differ, but those reaction based definitions remain. Cell notation conventionally places the anode on the left and cathode on the right. A single line marks a phase boundary, while a double line represents the electrolyte junction. Standard reduction potentials are measured relative to a reference electrode, conventionally the standard hydrogen electrode. A single isolated electrode potential is not measured without a comparison. Before calculating voltage, write the oxidation and reduction processes and balance their electrons. A correct subtraction formula cannot rescue a reaction whose anode and cathode were assigned inconsistently.",
+      "board": {
+        "heading": "Daniell galvanic cell",
+        "columns": [
+          "Electrode",
+          "Reaction",
+          "Polarity"
+        ],
+        "rows": [
+          [
+            "Zinc anode",
+            "Oxidation",
+            "Negative"
+          ],
+          [
+            "Copper cathode",
+            "Reduction",
+            "Positive"
+          ],
+          [
+            "External electrons",
+            "Zinc → copper",
+            "Bridge: ions"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Subtract reduction potentials without scaling them",
+      "formula": "E_cell_standard = E_cathode_standard - E_anode_standard; Delta G = -nFE_cell",
+      "points": [
+        "E° / V · 0.34 − (−0.76) · +1.10",
+        "n · Balanced reaction · 2",
+        "ΔG° / kJ mol⁻¹ · −2F × 1.10 / 1000 · −212.3"
+      ],
+      "script": "Using standard reduction potentials, the standard cell voltage equals the cathode potential minus the anode potential. Copper two plus to copper has the illustrative value plus zero point three four volts, while zinc two plus to zinc has minus zero point seven six. Their difference is plus one point one zero volts. Do not multiply electrode potentials when multiplying half reactions to balance electrons. Voltage is an intensive quantity. Gibbs energy change for the balanced reaction equals minus n times Faraday's constant times reversible cell voltage. Here n is two. With Faraday's constant approximately ninety six thousand five hundred coulombs per mole, the standard Gibbs energy change is minus two hundred twelve point three kilojoules per mole of reaction as written. Doubling the entire reaction doubles n and the Gibbs energy change, while leaving voltage unchanged. Combining this relationship with standard Gibbs energy equals minus R T times natural log K gives natural log K equals n F times standard voltage divided by R T. A positive standard cell voltage therefore implies K greater than one. At reaction equilibrium the actual voltage is zero, while the standard voltage need not be zero. Keep the standard state separate from the present composition.",
+      "board": {
+        "heading": "Potentials are not multiplied",
+        "columns": [
+          "Quantity",
+          "Calculation",
+          "Result"
+        ],
+        "rows": [
+          [
+            "E° / V",
+            "0.34 − (−0.76)",
+            "+1.10"
+          ],
+          [
+            "n",
+            "Balanced reaction",
+            "2"
+          ],
+          [
+            "ΔG° / kJ mol⁻¹",
+            "−2F × 1.10 / 1000",
+            "−212.3"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "The mixture changes the voltage",
+      "formula": "At 298 K: E = E_standard - (0.05916/n) log10 Q",
+      "points": [
+        "0.10 · −1 · 1.12958",
+        "1 · 0 · 1.10000",
+        "10 · +1 · 1.07042"
+      ],
+      "script": "The Nernst equation corrects the standard voltage for the current mixture. Cell voltage equals standard voltage minus R T divided by n F, multiplied by the natural logarithm of the reaction quotient Q. For a base ten logarithm at approximately two hundred ninety eight kelvin, the coefficient is about zero point zero five nine one six volts divided by n. For zinc reacting with copper two plus, Q is approximately zinc ion concentration divided by copper ion concentration in the ideal dilute model. Pure solid metals are omitted. With zinc ions at zero point one zero molar and copper ions at one point zero molar, Q is zero point one zero. Its logarithm is minus one. With n equal to two and standard voltage one point one zero volts, subtracting the negative correction gives approximately one point one three volts. In the opposite concentration ratio, Q equal to ten lowers the voltage to about one point zero seven volts. Use dimensionless activities for the rigorous expression, and the stated ideal approximation for these examples. At equilibrium, Q equals K and actual reversible voltage is zero. A concentration cell can have zero standard voltage but a nonzero actual voltage because its two sides have different activities.",
+      "board": {
+        "heading": "Nernst: n = 2, E° = 1.10 V",
+        "columns": [
+          "Q",
+          "log₁₀ Q",
+          "E / V at 298 K"
+        ],
+        "rows": [
+          [
+            "0.10",
+            "−1",
+            "1.12958"
+          ],
+          [
+            "1",
+            "0",
+            "1.10000"
+          ],
+          [
+            "10",
+            "+1",
+            "1.07042"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Count charge to predict deposited mass",
+      "formula": "Q_electric = It; deposited mass m = MIt/(zF), at 100 percent current efficiency",
+      "points": [
+        "Charge · 2 A × 4825 s · 9650 C",
+        "Ideal mass · (9650/96500)/2 × 63.5 · 3.175 g",
+        "80% efficiency · 0.800 × 3.175 · 2.540 g"
+      ],
+      "script": "Electrolysis calculations begin with charge, not voltage. Charge passed is current times time in seconds. Divide by Faraday's constant to obtain moles of electrons. Divide again by the electrons required per product particle, then multiply by molar mass. Copper two plus requires two electrons to produce one copper atom. Suppose two point zero zero amperes flow for four thousand eight hundred twenty five seconds. The charge is nine thousand six hundred fifty coulombs. With Faraday's constant ninety six thousand five hundred coulombs per mole, this supplies zero point one zero zero moles of electrons and can form zero point zero five zero zero moles of copper. Using molar mass sixty three point five grams per mole gives three point one seven five grams, or three point one eight grams to three significant figures. That assumes all current produces the desired copper. At eighty percent current efficiency, multiply by zero point eight zero zero to obtain two point five four grams. Do not divide by the efficiency. Competing reactions reduce the desired yield for a given charge. When several cells carry the same charge, each product amount still depends on its own electron requirement and molar mass.",
+      "board": {
+        "heading": "Copper deposition: 2e⁻ per Cu",
+        "columns": [
+          "Step",
+          "Calculation",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Charge",
+            "2 A × 4825 s",
+            "9650 C"
+          ],
+          [
+            "Ideal mass",
+            "(9650/96500)/2 × 63.5",
+            "3.175 g"
+          ],
+          [
+            "80% efficiency",
+            "0.800 × 3.175",
+            "2.540 g"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Batteries store reactants; fuel cells receive them",
+      "formula": "Hydrogen-oxygen fuel cell overall: 2H2 + O2 -> 2H2O",
+      "points": [
+        "Lead · 0 → +2 · PbSO₄",
+        "Lead dioxide · +4 → +2 · PbSO₄",
+        "Net chemistry · Acid consumed · Water forms"
+      ],
+      "script": "A primary cell is not designed for normal repeated recharging. The familiar zinc carbon dry cell uses zinc oxidation and manganese dioxide cathode chemistry. Secondary cells are designed for recharging by driving the net chemistry in reverse. During lead acid battery discharge, lead is oxidized at the negative electrode and lead dioxide is reduced at the positive electrode. Both form lead sulfate. The net reaction consumes lead, lead dioxide and two sulfuric acid units, producing two lead sulfate units and two waters. Acid is consumed during discharge. The fact that both electrodes form the same sulfate does not mean both were oxidized: lead changes from zero to plus two, while lead in lead dioxide changes from plus four to plus two. Charging reverses the net chemistry with an external energy supply. A hydrogen oxygen fuel cell receives reactants continuously from outside and produces water overall. Two hydrogen molecules combine with one oxygen molecule to form two waters. Continued operation requires fuel, oxidant and appropriate operating conditions; it is not unlimited energy. Distinguish the storage of reactants inside a battery from their external supply to a fuel cell. Detailed dry cell mechanisms and electrode classifications remain for further study.",
+      "board": {
+        "heading": "Lead acid battery: discharge",
+        "columns": [
+          "Electrode",
+          "Pb oxidation no.",
+          "Product"
+        ],
+        "rows": [
+          [
+            "Lead",
+            "0 → +2",
+            "PbSO₄"
+          ],
+          [
+            "Lead dioxide",
+            "+4 → +2",
+            "PbSO₄"
+          ],
+          [
+            "Net chemistry",
+            "Acid consumed",
+            "Water forms"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Infer ionization from conductance",
+      "formula": "α ≈ Λm/Λm∞; Ka ≈ Cα²/(1−α)",
+      "points": [
+        "α · 20.0 / 400 · 0.0500",
+        "C / M · Given · 0.0100",
+        "Ka ≈ Cα²/(1−α) · 0.0100 × 0.05²/0.95 · 2.63 × 10⁻⁵"
+      ],
+      "script": "Conductivity can also estimate how much a weak electrolyte ionizes in a suitable dilute model. Divide measured molar conductivity by its limiting molar conductivity to estimate the ionization fraction alpha. Suppose a monoprotic acid has molar conductivity twenty and limiting molar conductivity four hundred, in the same units. The fraction is zero point zero five zero zero, or five percent. For starting concentration zero point zero one zero zero molar, the acid constant is approximately concentration times alpha squared divided by one minus alpha. Substitution gives about two point six three times ten to the minus five in the conventional concentration model. Retaining the denominator accounts for the undissociated fraction. Limiting conductivity may be assembled from limiting ionic contributions using Kohlrausch's law when direct extrapolation for a weak electrolyte is unreliable. This estimate assumes the conductivity ratio is an appropriate measure of ionization and neglects additional activity effects. It is not a universal exact acid constant measurement. Check whether the supplied quantity is conductivity or molar conductivity, whether the units agree, and whether the concentration is in the required units. Use the twelve original quiz questions and seven worked examples to connect these calculations with cells, redox balance and electrolysis.",
+      "board": {
+        "heading": "Weak electrolyte conductance model",
+        "columns": [
+          "Step",
+          "Calculation",
+          "Result"
+        ],
+        "rows": [
+          [
+            "α",
+            "20.0 / 400",
+            "0.0500"
+          ],
+          [
+            "C / M",
+            "Given",
+            "0.0100"
+          ],
+          [
+            "Ka ≈ Cα²/(1−α)",
+            "0.0100 × 0.05²/0.95",
+            "2.63 × 10⁻⁵"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Concentration cells can have nonzero voltage",
+      "formula": "Zn concentration cell at 25 °C: E = (0.05916/2) log10(acathode/aanode)",
+      "script": "Two identical metal electrodes can produce a cell voltage when their ion activities differ. Consider zinc electrodes in an ideal dilute model at twenty five degrees Celsius, with zinc ion concentrations zero point zero zero one zero and zero point one zero zero molar. The standard cell voltage is zero because the electrode couples are the same. The actual voltage is not zero: concentration contributes through the Nernst equation. The concentrated compartment acts as the cathode in the spontaneous orientation, consuming zinc ions by reduction. The dilute compartment acts as the anode, producing zinc ions by oxidation. With two electrons transferred, the voltage is zero point zero five nine one six divided by two, times the base ten logarithm of one hundred, giving zero point zero five nine one six volt. The process tends to reduce the concentration difference. Use activities when nonideality matters, and neglect liquid junction contributions only within the stated model. Identical electrode materials therefore do not guarantee identical electrode potentials. Label the compartments and electron direction before writing the concentration ratio, because reversing the cell reverses the voltage sign.",
+      "points": [
+        "Dilute Zn²⁺ side · 0.0010 M · Anode: Zn oxidizes",
+        "Concentrated Zn²⁺ side · 0.100 M · Cathode: Zn²⁺ reduces",
+        "Voltage at 25 °C · (0.05916/2) log10 100 · +0.05916 V"
+      ],
+      "board": {
+        "heading": "Concentration cells can have nonzero voltage",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Dilute Zn²⁺ side",
+            "0.0010 M",
+            "Anode: Zn oxidizes"
+          ],
+          [
+            "Concentrated Zn²⁺ side",
+            "0.100 M",
+            "Cathode: Zn²⁺ reduces"
+          ],
+          [
+            "Voltage at 25 °C",
+            "(0.05916/2) log10 100",
+            "+0.05916 V"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Connect standard voltage to equilibrium",
+      "formula": "At 25 °C: log10 K = nE°/0.05916; ΔG° = −nFE°",
+      "script": "Standard cell voltage connects electrochemistry with both Gibbs energy and the equilibrium constant. At twenty five degrees Celsius, the base ten logarithm of the dimensionless equilibrium constant equals electron number times standard voltage divided by approximately zero point zero five nine one six volt. Suppose a defined two electron reaction has standard voltage zero point one one eight three two volt. The logarithm is four and the equilibrium constant is ten thousand. The corresponding standard Gibbs energy is minus electron number times the Faraday constant times standard voltage. Using Faraday constant ninety six thousand five hundred coulombs per mole gives about minus twenty two point eight four kilojoules per mole of reaction as written. Doubling a reaction doubles the electron count and Gibbs energy change, but it does not double its electrode voltage. The equilibrium constant for the doubled equation is squared. Actual reaction direction also depends on composition through the reaction quotient. A positive standard voltage is therefore not a guarantee that every possible initial mixture operates spontaneously in the written direction. Keep equation scaling, standard states and actual mixture conditions separate.",
+      "points": [
+        "n = 2; E° = 0.11832 V · nE°/0.05916 · log10 K = 4",
+        "Equilibrium constant · 10⁴ · K = 10000",
+        "F = 96500 C mol⁻¹ · −2 × 96500 × 0.11832 · ΔG° ≈ −22.84 kJ mol⁻¹"
+      ],
+      "board": {
+        "heading": "Connect standard voltage to equilibrium",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "n = 2; E° = 0.11832 V",
+            "nE°/0.05916",
+            "log10 K = 4"
+          ],
+          [
+            "Equilibrium constant",
+            "10⁴",
+            "K = 10000"
+          ],
+          [
+            "F = 96500 C mol⁻¹",
+            "−2 × 96500 × 0.11832",
+            "ΔG° ≈ −22.84 kJ mol⁻¹"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Use ionic conductances to infer dissociation",
+      "formula": "Λ∞(HA) = Λ∞(HCl) + Λ∞(NaA) − Λ∞(NaCl)",
+      "script": "Independent ionic migration at infinite dilution allows useful conductance combinations. For a weak monoprotic acid H A, combine the limiting molar conductances of hydrochloric acid and the sodium salt of A, then subtract sodium chloride. The sodium and chloride contributions cancel, leaving hydrogen ion plus A ion. With illustrative values four hundred twenty six, ninety one and one hundred twenty six in compatible conductance units, the result is three hundred ninety one. Suppose a zero point zero one zero zero molar acid has conductivity one point five six four times ten to the minus four siemens per centimetre. Its molar conductivity is one thousand times conductivity divided by concentration, or fifteen point six four siemens square centimetres per mole. Dividing by the limiting value gives an approximate ionized fraction zero point zero four zero. In the simple weak acid model, K a is concentration times alpha squared divided by one minus alpha, about one point six seven times ten to the minus five. This inference assumes the stated dilute solution and ion mobility approximations; activities, water ionization and other dissolved electrolytes can require a fuller treatment.",
+      "points": [
+        "Limiting conductance · 426 + 91 − 126 · 391 S cm² mol⁻¹",
+        "Molar conductance · 1000κ/c = 15.64 · α ≈ 15.64/391 = 0.040",
+        "Weak-acid model · cα²/(1−α) · Ka ≈ 1.67 × 10⁻⁵"
+      ],
+      "board": {
+        "heading": "Use ionic conductances to infer dissociation",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Limiting conductance",
+            "426 + 91 − 126",
+            "391 S cm² mol⁻¹"
+          ],
+          [
+            "Molar conductance",
+            "1000κ/c = 15.64",
+            "α ≈ 15.64/391 = 0.040"
+          ],
+          [
+            "Weak-acid model",
+            "cα²/(1−α)",
+            "Ka ≈ 1.67 × 10⁻⁵"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Same charge does not mean equal metal masses",
+      "formula": "m = η Q M/(zF)",
+      "script": "Cells connected in series receive the same charge, but their deposited masses depend on molar mass and electron stoichiometry. Take one thousand nine hundred thirty coulombs through a copper two ion cell and a silver ion cell. Using Faraday constant ninety six thousand five hundred, the charge corresponds to zero point zero two zero zero mole of electrons. Copper deposition needs two electrons per atom, giving zero point zero one zero zero mole of copper. With illustrative molar mass sixty three point five, the ideal mass is zero point six three five gram. Silver requires one electron per atom, giving zero point zero two zero zero mole and mass two point one five eight grams for molar mass one hundred seven point nine. If only eighty percent of charge produces copper, its deposited mass becomes zero point five zero eight gram. Do not apply that efficiency to a different cell unless specified. Equal current and time establish equal charge, not equal moles of deposited atoms. Check the actual electrode product and electron number before using the equivalent mass ratio.",
+      "points": [
+        "Shared charge · 1930/96500 · 0.0200 mol e⁻",
+        "Cu²⁺; ideal · 0.0200/2 × 63.5 · 0.635 g Cu",
+        "Ag⁺; ideal · 0.0200 × 107.9 · 2.158 g Ag"
+      ],
+      "board": {
+        "heading": "Same charge does not mean equal metal masses",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Shared charge",
+            "1930/96500",
+            "0.0200 mol e⁻"
+          ],
+          [
+            "Cu²⁺; ideal",
+            "0.0200/2 × 63.5",
+            "0.635 g Cu"
+          ],
+          [
+            "Ag⁺; ideal",
+            "0.0200 × 107.9",
+            "2.158 g Ag"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Corrosion is a coupled electrochemical process",
+      "formula": "Iron oxidation can couple to oxygen reduction in a moist environment",
+      "script": "Corrosion can involve different anodic and cathodic regions on a metal surface. In a common neutral aerated water model, iron oxidizes to iron two ions while oxygen is reduced with water to hydroxide ions. The oxygen half equation consumes four electrons per oxygen molecule and produces four hydroxide ions. Two iron oxidation events supply those four electrons. Further reactions lead to hydrated iron oxide materials commonly called rust; the complete material is not captured by one simple dissolved ion alone. A sacrificial zinc coating or connected zinc piece can preferentially oxidize while electrical contact and suitable environmental conditions are maintained, helping protect iron. A tin coating can serve as a barrier, but a damaged coating exposes a different galvanic situation and does not provide the same sacrificial protection. Do not decide behaviour from a coating's appearance alone. Oxygen supply, moisture, electrical contact and the actual solution affect the process. Distinguish prevention by excluding the environment from prevention by directing oxidation to a more readily oxidized metal. Standard potential tables are a starting guide, not a substitute for the real corrosion conditions.",
+      "points": [
+        "Anodic iron step · Fe → Fe²⁺ + 2e⁻ · Two events supply 4e⁻",
+        "Cathodic oxygen step · O₂ + 2H₂O + 4e⁻ → 4OH⁻ · Neutral aerated model",
+        "Sacrificial zinc · Electrical contact matters · Zinc can oxidize first"
+      ],
+      "board": {
+        "heading": "Corrosion is a coupled electrochemical process",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Anodic iron step",
+            "Fe → Fe²⁺ + 2e⁻",
+            "Two events supply 4e⁻"
+          ],
+          [
+            "Cathodic oxygen step",
+            "O₂ + 2H₂O + 4e⁻ → 4OH⁻",
+            "Neutral aerated model"
+          ],
+          [
+            "Sacrificial zinc",
+            "Electrical contact matters",
+            "Zinc can oxidize first"
+          ]
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "An oxidizing agent is itself:",
+      "options": [
+        "Always oxidized",
+        "Reduced",
+        "Always oxygen",
+        "Unchanged in charge necessarily"
+      ],
+      "answer": 1,
+      "explanation": "It accepts electrons from another species and is reduced during electron transfer."
+    },
+    {
+      "question": "Reduction occurs at which electrode in both galvanic and electrolytic cells?",
+      "options": [
+        "Anode",
+        "Salt bridge",
+        "Cathode",
+        "External wire"
+      ],
+      "answer": 2,
+      "explanation": "Cathode is defined by reduction, regardless of whether an external source drives the cell."
+    },
+    {
+      "question": "Using +0.34 V and -0.76 V as cathode and anode reduction potentials, E_standard is:",
+      "options": [
+        "-1.10 V",
+        "-0.42 V",
+        "+0.42 V",
+        "+1.10 V"
+      ],
+      "answer": 3,
+      "explanation": "Subtract the anode reduction potential: 0.34 - (-0.76) = 1.10 V."
+    },
+    {
+      "question": "Doubling a balanced cell reaction changes its standard cell voltage by:",
+      "options": [
+        "No change",
+        "Doubling it",
+        "Halving it",
+        "Making it zero"
+      ],
+      "answer": 0,
+      "explanation": "Both electron amount and Gibbs-energy change double; their ratio defining voltage does not."
+    },
+    {
+      "question": "At 298 K, lowering Q below one changes E relative to E_standard by:",
+      "options": [
+        "Always lowering E",
+        "Increasing E",
+        "Setting E to zero",
+        "Changing the electron coefficient"
+      ],
+      "answer": 1,
+      "explanation": "A negative log10 Q makes the subtracted Nernst correction positive."
+    },
+    {
+      "question": "9650 C deposits how many moles of Cu from Cu2+ at full efficiency, with F = 96500 C/mol?",
+      "options": [
+        "0.100 mol",
+        "0.200 mol",
+        "0.0500 mol",
+        "2.00 mol"
+      ],
+      "answer": 2,
+      "explanation": "The charge supplies 0.100 mol electrons; two electrons are needed per copper atom."
+    },
+    {
+      "question": "When MnO4- reduces to MnO2, electrons accepted per manganese are:",
+      "options": [
+        "Three",
+        "Five",
+        "One",
+        "Seven"
+      ],
+      "answer": 0,
+      "explanation": "Manganese changes from +7 to +4, so three electrons are accepted. The product, not just the reactant, fixes the count."
+    },
+    {
+      "question": "In MnO4- + 2H2O + 3e- -> MnO2 + xOH-, x equals:",
+      "options": [
+        "Two",
+        "Four",
+        "Six",
+        "Eight"
+      ],
+      "answer": 1,
+      "explanation": "Four hydroxides balance four hydrogen atoms, six oxygen atoms in total and net charge minus four."
+    },
+    {
+      "question": "With R = 200 ohm and cell constant 1.20 cm^-1, conductivity is:",
+      "options": [
+        "240 S/cm",
+        "0.00417 S/cm",
+        "0.00600 S/cm",
+        "120 S/cm"
+      ],
+      "answer": 2,
+      "explanation": "Conductance is 0.00500 S. Multiply, not divide, by the cell constant to obtain conductivity."
+    },
+    {
+      "question": "A weak electrolyte has Lambda_m = 20 and limiting Lambda_m = 400 in the same units. Its estimated ionization fraction is:",
+      "options": [
+        "20",
+        "0.95",
+        "0.50",
+        "0.05"
+      ],
+      "answer": 3,
+      "explanation": "The dilute model uses alpha = Lambda_m/Lambda_m_infinity = 20/400 = 0.05."
+    },
+    {
+      "question": "During normal lead-acid battery discharge, the net reaction:",
+      "options": [
+        "Consumes sulfuric acid",
+        "Creates sulfuric acid overall",
+        "Consumes no electrode material",
+        "Oxidizes both electrodes"
+      ],
+      "answer": 0,
+      "explanation": "Both electrodes form PbSO4 and sulfuric acid is consumed overall; lead oxidizes while lead dioxide is reduced."
+    },
+    {
+      "question": "An ideal copper deposit is 3.175 g. At 80.0 percent current efficiency, the actual mass is:",
+      "options": [
+        "3.97 g",
+        "2.54 g",
+        "3.175 g",
+        "0.635 g"
+      ],
+      "answer": 1,
+      "explanation": "Multiply the ideal mass by 0.800. Reduced efficiency decreases the desired deposit, not increases it."
+    },
+    {
+      "question": "For the stated Zn concentration cell at 25 °C, [Zn2+] values 0.0010 and 0.100 M give spontaneous E approximately:",
+      "options": [
+        "0 V",
+        "0.05916 V",
+        "0.11832 V",
+        "−0.05916 V"
+      ],
+      "answer": 1,
+      "explanation": "The ratio is 100; (0.05916/2)log10(100)=0.05916 V in the spontaneous orientation."
+    },
+    {
+      "question": "At 25 °C, n=2 and E°=0.11832 V give equilibrium K:",
+      "options": [
+        "4",
+        "100",
+        "10000",
+        "0.0001"
+      ],
+      "answer": 2,
+      "explanation": "log10 K = 2×0.11832/0.05916 = 4, hence K=10^4."
+    },
+    {
+      "question": "Illustrative limiting molar conductances 426, 91 and 126 combine as Λ∞(HA)=:",
+      "options": [
+        "391 S cm²/mol",
+        "643 S cm²/mol",
+        "461 S cm²/mol",
+        "209 S cm²/mol"
+      ],
+      "answer": 0,
+      "explanation": "Add HCl and NaA and subtract NaCl: 426+91−126=391."
+    },
+    {
+      "question": "With Q=1930 C, F=96500 C/mol, Cu2+ and M(Cu)=63.5 g/mol, ideal copper mass is:",
+      "options": [
+        "1.270 g",
+        "2.158 g",
+        "0.508 g",
+        "0.635 g"
+      ],
+      "answer": 3,
+      "explanation": "0.0200 mol electrons deposits 0.0100 mol Cu, giving 0.635 g at 100% current efficiency."
+    },
+    {
+      "question": "At 80% current efficiency for that copper deposition, mass is:",
+      "options": [
+        "0.794 g",
+        "0.508 g",
+        "0.635 g",
+        "1.016 g"
+      ],
+      "answer": 1,
+      "explanation": "Multiply the ideal mass by the specified efficiency: 0.8×0.635=0.508 g."
+    },
+    {
+      "question": "Sacrificial zinc protection of iron relies on:",
+      "options": [
+        "Zinc never reacting",
+        "Removing every possible cathodic reaction",
+        "Preferential zinc oxidation with suitable electrical contact",
+        "A coating colour identifying the anode"
+      ],
+      "answer": 2,
+      "explanation": "The sacrificial metal can oxidize in place of iron while the galvanic conditions and contact support protection."
+    }
+  ]
+}

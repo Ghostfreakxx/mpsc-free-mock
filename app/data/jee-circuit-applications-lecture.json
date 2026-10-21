@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Circuit applications: sources, power and unbalanced bridges",
+  "sources": [
+    {
+      "title": "OpenStax: Kirchhoff's rules",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules"
+    },
+    {
+      "title": "Official JEE Main 2026 syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A 12 V cell with r=2 ohm drives R=4 ohm. What is terminal voltage?",
+      "options": [
+        "12 V",
+        "8 V",
+        "6 V",
+        "4 V"
+      ],
+      "answer": 1,
+      "explanation": "Current is 12/(4+2)=2 A. Internal voltage drop is 4 V, leaving an 8 V potential difference across the load."
+    },
+    {
+      "question": "For fixed E and positive r, what load maximizes delivered power?",
+      "options": [
+        "R=0",
+        "R=2r",
+        "R=r",
+        "R approaches infinity"
+      ],
+      "answer": 2,
+      "explanation": "The derivative of E squared R/(R+r) squared changes from positive to negative at R=r. Efficiency there is only 50 percent."
+    },
+    {
+      "question": "A 10 ohm resistor at 20 C has alpha=0.004/K. What is its resistance at 70 C in the linear model?",
+      "options": [
+        "12 ohm",
+        "10.2 ohm",
+        "8 ohm",
+        "14 ohm"
+      ],
+      "answer": 0,
+      "explanation": "The change is 50 K, giving 10[1+0.004 x 50]=12 ohm. Use a temperature difference, not the final absolute temperature."
+    },
+    {
+      "question": "In the described bridge, B=48/7 V and C=36/7 V with 3 ohm between them. Find current B to C.",
+      "options": [
+        "12/7 A",
+        "20/7 A",
+        "0 A",
+        "4/7 A"
+      ],
+      "answer": 3,
+      "explanation": "The bridge voltage is 12/7 V. Divide by its own 3 ohm resistance to get 4/7 A; the supply current is a different quantity."
+    },
+    {
+      "question": "A resistor's resistance increases while an ideal source holds its current constant. What happens to its power?",
+      "options": [
+        "Decreases",
+        "Increases",
+        "Stays fixed",
+        "Becomes zero"
+      ],
+      "answer": 1,
+      "explanation": "For constant current, P=I squared R increases with resistance. The decreasing-power conclusion applies instead to a constant-voltage source."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Real sources: voltage, power and efficiency",
+      "formula": "I=E/(R+r); V=E-Ir; P_load=E^2 R/(R+r)^2; maximum at R=r",
+      "points": [
+        "Terminal voltage differs from emf while a real cell supplies current.",
+        "Check source power against load power plus internal heating.",
+        "Maximum load power gives 50 percent efficiency in this model."
+      ],
+      "script": "Hey, welcome back. A battery labelled twelve volts does not always deliver twelve volts across the load. Let's explain why. Model the cell as an ideal emf E in series with internal resistance r. Emf tells us how much energy the source mechanism supplies per unit charge. Some of that energy becomes heat inside the cell, leaving less potential difference at the terminals. Our example has emf twelve volts, internal resistance two ohms and external resistance four ohms. Total resistance is six ohms, so current is two amperes. The internal voltage drop is current times internal resistance, four volts. Terminal voltage is therefore eight volts. It also equals current times the external resistance. Now check power: the source supplies twenty four watts. The load receives sixteen watts, and internal heating takes eight watts. They add correctly. This is a constant-parameter model, not a complete description of a real cell as it heats or discharges. Now let's change the load. Would making it very small always give the largest useful power? Think about that. A tiny load draws current, but has little voltage across it. A very large load has voltage but little current. Load power is E squared times R divided by the square of R plus r. Differentiating with respect to R gives E squared times r minus R, divided by R plus r cubed. It changes from positive to negative when R equals r. So our twelve volt, two ohm source gives maximum load power with a two ohm load: eighteen watts. But the internal resistance also dissipates eighteen watts. Efficiency is only fifty percent. Maximum power and maximum efficiency are different goals. With a larger load, the fraction of source power delivered outside improves, but delivered power falls. For JEE, read which objective the question asks for. And never treat the ideal maximum-power calculation as advice to short a real battery."
+    },
+    {
+      "title": "Temperature and the source constraint",
+      "formula": "R(T)=R0[1+alpha(T-T0)]; fixed V: P=V^2/R; fixed I: P=I^2 R",
+      "points": [
+        "Use temperature difference and the stated reference coefficient.",
+        "Fixed voltage and fixed current give opposite power trends.",
+        "The linear model has a limited temperature range."
+      ],
+      "script": "Next, a question that sounds simple but hides an important condition. A metal resistor warms up and its resistance increases. Does its electrical power increase or decrease? Before choosing, ask what the source holds constant. Close to a reference temperature, resistance is approximately R zero times one plus alpha times the temperature change. Alpha is defined at that reference temperature. This is a local linear approximation, not a universal rule for every material or temperature. Suppose resistance is ten ohms at twenty degrees Celsius, with alpha zero point zero zero four per kelvin. Warm it to seventy degrees Celsius. The temperature change is fifty degrees, numerically the same as fifty kelvin. Resistance becomes ten times one point two, or twelve ohms. Now use an ideal constant twelve volt supply. Initially current is one point two amperes and power is fourteen point four watts. At twelve ohms, current is one ampere and power is twelve watts. Power decreased because voltage stayed fixed and power is voltage squared divided by resistance. Try the other constraint. Suppose an ideal source holds current at one point two amperes. At ten ohms, power is fourteen point four watts. At twelve ohms it becomes seventeen point two eight watts. It increased because current squared times resistance is now the relevant expression. Same resistor change, opposite power trend. So do not memorize that heating always reduces electrical power. State the source constraint first. Real circuits can also include internal source resistance, and self-heating needs a heat-loss model if temperature is not prescribed. For our numerical question, geometry changes are neglected and the given temperature is an input. Our routine is to calculate resistance using a temperature difference, identify the source, and only then calculate current and power."
+    },
+    {
+      "title": "Unbalanced bridge: solve and check the nodes",
+      "formula": "5B-2C=24; -2B+5C=12; B=48/7 V; C=36/7 V; I_bridge=4/7 A",
+      "points": [
+        "The middle branch loads the two outer voltage dividers.",
+        "Signed outgoing currents at each node sum to zero.",
+        "Supply current, equivalent resistance and power provide independent checks."
+      ],
+      "script": "Let's finish with a bridge that is not balanced. Keep the diagram beside you. Supply node A is twelve volts and node D is zero. The upper path goes from A through three ohms to B, then through six ohms to D. The lower path goes from A through six ohms to C, then through three ohms to D. A three ohm bridge joins B to C. Can we treat the upper and lower paths as independent voltage dividers? Not while bridge current flows. The middle resistor changes both node potentials. At B, write outgoing currents: B minus twelve divided by three, plus B divided by six, plus B minus C divided by three. Their sum is zero. At C, the outgoing sum is C minus twelve divided by six, plus C divided by three, plus C minus B divided by three. Multiply both equations by six. We get five B minus two C equals twenty four, and minus two B plus five C equals twelve. Solve them together: B is forty eight sevenths volts, and C is thirty six sevenths volts. B is higher, so bridge current goes from B to C. Its value is the difference divided by three ohms: four sevenths of an ampere. A negative current under an assumed arrow would simply tell us the real direction is opposite. Now verify. At B, incoming current from A is twelve sevenths of an ampere. Outgoing current to D is eight sevenths, and to C four sevenths. Charge conservation checks. Supply current is twenty sevenths of an ampere, giving equivalent resistance four point two ohms. Removing the middle branch gives two nine ohm paths in parallel, or four point five ohms. Adding a conducting path reduced resistance, as expected. Finally, source power is twelve times twenty sevenths, or two hundred forty sevenths watts. Adding current squared times resistance over all five resistors gives the same result. That is a strong check. Draw nodes, write signs consistently, solve independent equations, then verify charge and energy. A circuit's appearance is not enough to decide series or parallel."
+    }
+  ]
+}

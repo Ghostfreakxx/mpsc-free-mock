@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "title": "Refraction and total internal reflection",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 16",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Refraction",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/1-3-refraction"
+    },
+    {
+      "title": "OpenStax: Total internal reflection",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/1-4-total-internal-reflection"
+    },
+    {
+      "title": "OpenStax: Refracting surfaces; Cartesian signs adapted",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/2-3-images-formed-by-refraction"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Snell's law is about angles to the normal",
+      "formula": "n1 sin i = n2 sin r; v = c/n",
+      "points": [
+        "Higher refractive index means lower phase speed.",
+        "At a stationary interface, frequency is unchanged.",
+        "For ordinary isotropic media, the transmitted ray bends toward the normal on entering higher n."
+      ],
+      "script": "Hey, welcome back. A straw can look bent in water without actually bending. The light changes direction at the boundary, and your eyes trace the arriving rays backward. That is our starting point for refraction. Refractive index, n, is the vacuum speed of light divided by its phase speed in the medium. A larger index means a smaller speed, not necessarily a larger mass density. Draw the normal at the crossing point. Snell's law says n one times sine of the incidence angle equals n two times sine of the refraction angle. Both angles are measured from the normal. If light enters glass from air at thirty degrees, with glass index one point five, sine of r is one third. So r is about nineteen point five degrees. It bends toward the normal. Why doesn't the frequency change? At a stationary boundary, successive oscillations must match on both sides. The frequency stays fixed, while speed and wavelength change. With glass index one point five, a vacuum wavelength of six hundred nanometers becomes four hundred nanometers in glass. At normal incidence the ray does not turn, even though its speed changes. So refraction does not always mean a visible bend. Our calculations assume ordinary transparent isotropic media and a stated index at the light's frequency."
+    },
+    {
+      "title": "A parallel slab shifts the ray, not its final direction",
+      "formula": "s = t sin(i-r)/cos r for a parallel slab",
+      "points": [
+        "The slab has parallel faces and the same outside medium on both sides.",
+        "The emergent ray is parallel to the incident ray.",
+        "The lateral displacement s is perpendicular to the emergent ray."
+      ],
+      "script": "Let's send a ray through a glass slab with parallel faces. At entry it bends toward the normal. At exit it bends away. Because the faces are parallel and the outside medium is the same on both sides, the outgoing angle equals the original incoming angle. The emergent ray is parallel to the incident ray, but it is displaced sideways. That last distinction is a favorite trap: parallel does not mean the very same line. On our board, extend the incident line straight ahead. The shortest perpendicular distance between that line and the emerging ray is the lateral shift. For slab thickness t, measured perpendicular to its faces, the shift is t times sine of i minus r, divided by cosine r. Suppose the slab is two centimeters thick, the incidence angle is forty-five degrees, and refraction inside is thirty degrees. Its index relative to the outside is about one point four one four. The shift is two times sine fifteen divided by cosine thirty, about zero point six zero centimeters. Larger thickness increases this shift at fixed angles. At normal incidence, i and r are both zero, and the lateral shift vanishes. Remember the assumptions: parallel faces and the same outside index. A prism has nonparallel faces, so its ray need not emerge parallel. We'll give prisms their own class."
+    },
+    {
+      "title": "Apparent depth comes from backward extensions",
+      "formula": "Near normal viewing: apparent depth = real depth x n_observer/n_object",
+      "points": [
+        "Small viewing angles justify sin theta approximately tan theta.",
+        "An underwater object viewed from air appears shallower.",
+        "This is not an exact formula for every oblique viewing angle."
+      ],
+      "script": "Now imagine looking almost vertically down at a small object in water. Light leaving the water bends away from the normal on entering air. Your eye assumes a straight path and traces those rays backward to a point closer to the surface. The apparent position is shallower than the actual object. For near-normal viewing at a plane interface, apparent depth equals real depth times the observer medium's index divided by the object medium's index. Water has index four thirds and air is approximately one. A twelve-centimeter depth therefore appears as nine centimeters. The apparent upward shift is three centimeters. Let's see why that ratio makes sense. Snell's law connects the angles. For small angles, sine and tangent are approximately the same. The same sideways ray displacement, divided by two different depths, gives those tangent angles. Combining the geometry and Snell's law gives the index ratio. That is an approximation with a reason, not a rule for arbitrary viewing directions. If the observer is instead inside a higher-index medium, the ratio can exceed one. Do not automatically divide by whatever index appears in the question. Identify where the object is, where the observer is, and whether the near-normal approximation is justified. In multilayer questions, each layer's apparent contribution can be added only within the matching paraxial setup."
+    },
+    {
+      "title": "Total internal reflection needs two conditions",
+      "formula": "For n1 > n2: sin critical angle = n2/n1; TIR requires i > critical angle",
+      "points": [
+        "Light must approach the boundary from higher n toward lower n.",
+        "At the critical angle, the transmitted ray is along the surface.",
+        "Above it, there is no propagating transmitted ray in the elementary lossless model."
+      ],
+      "script": "What happens as a ray inside glass meets air at larger and larger incidence angles? Snell's law predicts a refracted angle larger than the incident one. Eventually the refracted angle reaches ninety degrees. The corresponding incidence angle is the critical angle. Beyond it, the equation would demand a sine larger than one. That means no ordinary propagating refracted ray exists in the lower-index medium. We have total internal reflection. Check both conditions: the ray must approach from higher index toward lower index, and the angle must exceed the critical angle. For glass index one point five facing air, sine of the critical angle is two thirds. The angle is about forty-one point eight degrees. At fifty degrees we get total internal reflection; at thirty degrees we do not. Exactly at the critical angle is the grazing limit, not the same as strictly above it. A core of higher index surrounded by lower-index cladding can guide light through repeated total internal reflection. That is the simple ray picture of an optical fiber. The incidence angle at the core boundary is measured from that boundary's normal, not automatically from the fiber axis. Our ideal explanation assumes a lossless interface. Real fibers have losses, and wave optics includes an evanescent field outside. Neither detail changes our basic JEE threshold check."
+    },
+    {
+      "title": "A spherical refracting surface has its own equation",
+      "formula": "n2/v - n1/u = (n2-n1)/R; Cartesian pole-origin distances",
+      "points": [
+        "Incident light travels left to right; rightward distances are positive.",
+        "R is positive when the center of curvature is on the right.",
+        "This is one paraxial interface, not automatically a complete lens."
+      ],
+      "script": "A curved refracting boundary can form an image, even before we have a complete lens. Use the Cartesian convention: incident light travels left to right, the surface pole is the origin, and rightward distances are positive. Object distance is u, image distance is v, and radius R points from the pole to the center of curvature. The equation is n two over v minus n one over u equals n two minus n one, divided by R. This relation applies to paraxial rays at a single spherical interface. Let's try air entering a semi-infinite glass medium with index one point five. The real object is sixty centimeters to the left, so u is negative sixty. The center of curvature is twenty centimeters to the right, so R is positive twenty. Our right side is zero point five over twenty, or one fortieth per centimeter. On the left, subtracting one over negative sixty adds one sixtieth. Thus one point five over v is one one-hundred-twentieth, and v is positive one hundred eighty centimeters. The refracted rays converge inside the glass. If we set R to infinity, the curvature term becomes zero, recovering the plane-interface limit. Be careful: this is not the mirror equation. And if another boundary follows, its refraction must be handled too. That's exactly the bridge to our next class on lenses."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Air (n = 1) enters glass (n = 1.5) at i = 30 degrees. Approximately r is:",
+      "options": [
+        "30 degrees",
+        "45 degrees",
+        "19.5 degrees",
+        "60 degrees"
+      ],
+      "answer": 2,
+      "explanation": "sin r = sin30/1.5 = 1/3."
+    },
+    {
+      "question": "At a stationary air-glass interface, which quantity remains unchanged?",
+      "options": [
+        "Phase speed",
+        "Wavelength",
+        "Frequency",
+        "Ray direction always"
+      ],
+      "answer": 2,
+      "explanation": "Oscillations match at the stationary interface; frequency stays fixed."
+    },
+    {
+      "question": "A 12 cm water depth (n = 4/3) viewed nearly normally from air appears:",
+      "options": [
+        "16 cm",
+        "9 cm",
+        "12 cm",
+        "3 cm"
+      ],
+      "answer": 1,
+      "explanation": "12 x 1/(4/3) = 9 cm; the upward shift is 3 cm."
+    },
+    {
+      "question": "Glass n = 1.5 to air has critical angle approximately:",
+      "options": [
+        "19.5 degrees",
+        "30 degrees",
+        "41.8 degrees",
+        "56.3 degrees"
+      ],
+      "answer": 2,
+      "explanation": "sin critical angle = 1/1.5."
+    },
+    {
+      "question": "For glass n = 1.5 toward air at i = 50 degrees, the elementary model predicts:",
+      "options": [
+        "Total internal reflection",
+        "Normal transmission",
+        "No reflection",
+        "Frequency doubles"
+      ],
+      "answer": 0,
+      "explanation": "50 degrees exceeds 41.8 degrees, and light approaches from higher n."
+    },
+    {
+      "question": "A single air-glass surface has n2 = 1.5, u = -60 cm, R = +20 cm. The paraxial image distance is:",
+      "options": [
+        "+180 cm",
+        "-180 cm",
+        "+20 cm",
+        "-60 cm"
+      ],
+      "answer": 0,
+      "explanation": "1.5/v + 1/60 = 0.5/20, giving v = +180 cm."
+    }
+  ]
+}

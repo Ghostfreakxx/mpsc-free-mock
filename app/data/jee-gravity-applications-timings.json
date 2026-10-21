@@ -1,0 +1,663 @@
+{
+  "duration": 341.80800000001113,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 163.10400000000527
+    },
+    {
+      "start": 163.10400000000527,
+      "end": 341.80800000001113
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 0.8600000143051147,
+      "text": "Welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.340000033378601,
+      "end": 4.519999980926514,
+      "text": "Let's connect gravity on the ground with escape into space.",
+      "chapter": 0
+    },
+    {
+      "start": 5.199999809265137,
+      "end": 8.039999961853027,
+      "text": "Our planet is spherical, and we ignore rotation.",
+      "chapter": 0
+    },
+    {
+      "start": 8.920000076293945,
+      "end": 14.579999923706055,
+      "text": "Outside it, gravitational force is G times capital M times little m, divided",
+      "chapter": 0
+    },
+    {
+      "start": 14.579999923706055,
+      "end": 15.720000267028809,
+      "text": "by radius squared.",
+      "chapter": 0
+    },
+    {
+      "start": 16.639999389648438,
+      "end": 19.719999313354492,
+      "text": "Divide by the test mass to get gravitational acceleration.",
+      "chapter": 0
+    },
+    {
+      "start": 20.65999984741211,
+      "end": 24.34000015258789,
+      "text": "Radius means distance from the centre, not height above the ground.",
+      "chapter": 0
+    },
+    {
+      "start": 24.34000015258789,
+      "end": 27.239999771118164,
+      "text": "At height h, radius is R plus h.",
+      "chapter": 0
+    },
+    {
+      "start": 28.15999984741211,
+      "end": 29.639999389648438,
+      "text": "Surface gravity is g zero.",
+      "chapter": 0
+    },
+    {
+      "start": 30.260000228881836,
+      "end": 34.29999923706055,
+      "text": "The gravity ratio is R divided by R plus h, all squared.",
+      "chapter": 0
+    },
+    {
+      "start": 35.060001373291016,
+      "end": 37.79999923706055,
+      "text": "Try a height equal to the planet's radius. Pause.",
+      "chapter": 0
+    },
+    {
+      "start": 38.279998779296875,
+      "end": 42.28256548368014,
+      "text": "The centre distance doubles, so gravity becomes one quarter of surface",
+      "chapter": 0
+    },
+    {
+      "start": 42.28256548368014,
+      "end": 42.7400016784668,
+      "text": "gravity.",
+      "chapter": 0
+    },
+    {
+      "start": 43.58000183105469,
+      "end": 47.86820377447666,
+      "text": "For height much smaller than R, the ratio is approximately one minus two h",
+      "chapter": 0
+    },
+    {
+      "start": 47.86820377447666,
+      "end": 48.099998474121094,
+      "text": "over",
+      "chapter": 0
+    },
+    {
+      "start": 48.099998474121094,
+      "end": 48.34000015258789,
+      "text": "R.",
+      "chapter": 0
+    },
+    {
+      "start": 48.880001068115234,
+      "end": 50.7599983215332,
+      "text": "Do not use that shortcut at height R.",
+      "chapter": 0
+    },
+    {
+      "start": 50.7599983215332,
+      "end": 55.2400016784668,
+      "text": "Inside a uniform density planet, outer spherical shells cancel their field.",
+      "chapter": 0
+    },
+    {
+      "start": 56.099998474121094,
+      "end": 60.02000045776367,
+      "text": "Enclosed mass grows as radius cubed, so gravity grows linearly with radius.",
+      "chapter": 0
+    },
+    {
+      "start": 60.599998474121094,
+      "end": 64.62000274658203,
+      "text": "At depth d, gravity is g zero times one minus d over R.",
+      "chapter": 0
+    },
+    {
+      "start": 65,
+      "end": 69.55999755859375,
+      "text": "For one quarter of surface gravity, solve one minus d over R equals one",
+      "chapter": 0
+    },
+    {
+      "start": 69.55999755859375,
+      "end": 69.77999877929688,
+      "text": "quarter.",
+      "chapter": 0
+    },
+    {
+      "start": 70.26000213623047,
+      "end": 72.08000183105469,
+      "text": "The depth is three quarters of R.",
+      "chapter": 0
+    },
+    {
+      "start": 72.58000183105469,
+      "end": 75.87999725341797,
+      "text": "The outside height was R; same gravity, different locations.",
+      "chapter": 0
+    },
+    {
+      "start": 76.4000015258789,
+      "end": 80.26000213623047,
+      "text": "Real Earth has varying density, so the interior line is an ideal model.",
+      "chapter": 0
+    },
+    {
+      "start": 81,
+      "end": 82.83999633789062,
+      "text": "Now choose potential zero at infinity.",
+      "chapter": 0
+    },
+    {
+      "start": 83.81999969482422,
+      "end": 86.58000183105469,
+      "text": "Outside, potential V is minus G M over r.",
+      "chapter": 0
+    },
+    {
+      "start": 87.23999786376953,
+      "end": 89.13999938964844,
+      "text": "Potential energy is little m times V.",
+      "chapter": 0
+    },
+    {
+      "start": 89.94000244140625,
+      "end": 94.92196554200262,
+      "text": "Moving outward makes energy less negative: lifting from R to two R requires G",
+      "chapter": 0
+    },
+    {
+      "start": 94.92196554200262,
+      "end": 94.98666636149089,
+      "text": "M",
+      "chapter": 0
+    },
+    {
+      "start": 94.98666636149089,
+      "end": 97.80000305175781,
+      "text": "m over two R if initial and final speeds are zero.",
+      "chapter": 0
+    },
+    {
+      "start": 98.37999725341797,
+      "end": 101.68000030517578,
+      "text": "Constant g times m times h works only for small heights.",
+      "chapter": 0
+    },
+    {
+      "start": 102.5999984741211,
+      "end": 103.73999786376953,
+      "text": "Field and potential are different.",
+      "chapter": 0
+    },
+    {
+      "start": 104.45999908447266,
+      "end": 108.13999938964844,
+      "text": "Equal masses on opposite sides cancel their fields at the midpoint, but their",
+      "chapter": 0
+    },
+    {
+      "start": 108.13999938964844,
+      "end": 109.33999633789062,
+      "text": "negative potentials add.",
+      "chapter": 0
+    },
+    {
+      "start": 110.08000183105469,
+      "end": 115.21333215175531,
+      "text": "Inside our uniform sphere, potential is minus G M times three R squared minus",
+      "chapter": 0
+    },
+    {
+      "start": 115.21333215175531,
+      "end": 115.27999877929688,
+      "text": "r",
+      "chapter": 0
+    },
+    {
+      "start": 115.27999877929688,
+      "end": 117.31999969482422,
+      "text": "squared, divided by two R cubed.",
+      "chapter": 0
+    },
+    {
+      "start": 117.9800033569336,
+      "end": 122.87999725341797,
+      "text": "At the centre, field is zero but potential is minus three G M over two R.",
+      "chapter": 0
+    },
+    {
+      "start": 122.87999725341797,
+      "end": 127.05999755859375,
+      "text": "Finally, escape needs just enough energy to reach infinity with zero final",
+      "chapter": 0
+    },
+    {
+      "start": 127.05999755859375,
+      "end": 127.33999633789062,
+      "text": "speed.",
+      "chapter": 0
+    },
+    {
+      "start": 127.33999633789062,
+      "end": 132.02000427246094,
+      "text": "One half m v squared minus G M m over r equals zero.",
+      "chapter": 0
+    },
+    {
+      "start": 132.8000030517578,
+      "end": 137.1199951171875,
+      "text": "Escape speed is the square root of two G M over r, independent of test mass.",
+      "chapter": 0
+    },
+    {
+      "start": 137.83999633789062,
+      "end": 142.36000061035156,
+      "text": "For a radial surface launch at half escape speed, kinetic energy is G M m over",
+      "chapter": 0
+    },
+    {
+      "start": 142.36000061035156,
+      "end": 143.66000366210938,
+      "text": "four R.",
+      "chapter": 0
+    },
+    {
+      "start": 143.66000366210938,
+      "end": 147.1999969482422,
+      "text": "Total energy is minus three G M m over four R.",
+      "chapter": 0
+    },
+    {
+      "start": 147.1999969482422,
+      "end": 149.22000122070312,
+      "text": "At the highest point, speed is zero.",
+      "chapter": 0
+    },
+    {
+      "start": 150.13999938964844,
+      "end": 153.74000549316406,
+      "text": "Solving gives radius four R over three, hence height R over three.",
+      "chapter": 0
+    },
+    {
+      "start": 154.1999969482422,
+      "end": 156.27999877929688,
+      "text": "This assumes no drag or later propulsion.",
+      "chapter": 0
+    },
+    {
+      "start": 157,
+      "end": 161.32000732421875,
+      "text": "A nonradial orbit retains tangential speed at its turning point, so that last",
+      "chapter": 0
+    },
+    {
+      "start": 161.32000732421875,
+      "end": 162.67999267578125,
+      "text": "step cannot be copied blindly.",
+      "chapter": 0
+    },
+    {
+      "start": 163.10400000000527,
+      "end": 166.22399988556435,
+      "text": "A satellite keeps falling, yet keeps missing the ground.",
+      "chapter": 1
+    },
+    {
+      "start": 167.1639999427848,
+      "end": 168.90400019074013,
+      "text": "Gravity changes the direction of its velocity.",
+      "chapter": 1
+    },
+    {
+      "start": 169.56400003815224,
+      "end": 174.72399988556435,
+      "text": "For a circular orbit, G M m over r squared equals m v squared over r.",
+      "chapter": 1
+    },
+    {
+      "start": 175.3640002288871,
+      "end": 180.2439993896537,
+      "text": "Cancel mass and one radius: circular speed is the square root of G M over r.",
+      "chapter": 1
+    },
+    {
+      "start": 180.84399977112344,
+      "end": 185.78400030518105,
+      "text": "Period is circumference divided by speed, giving two pi times the square root",
+      "chapter": 1
+    },
+    {
+      "start": 185.78400030518105,
+      "end": 188.30400076294472,
+      "text": "of r cubed over G M.",
+      "chapter": 1
+    },
+    {
+      "start": 188.30400076294472,
+      "end": 190.62400045776894,
+      "text": "Always add the planet's radius to the supplied height.",
+      "chapter": 1
+    },
+    {
+      "start": 191.22400083923867,
+      "end": 195.78400030518105,
+      "text": "Let's compare equal mass satellites at radii r and four r around the same",
+      "chapter": 1
+    },
+    {
+      "start": 195.78400030518105,
+      "end": 196.06399908447793,
+      "text": "planet.",
+      "chapter": 1
+    },
+    {
+      "start": 196.6640013732963,
+      "end": 198.1640013732963,
+      "text": "What happens to speed and period?",
+      "chapter": 1
+    },
+    {
+      "start": 198.1640013732963,
+      "end": 200.02399816895058,
+      "text": "Pause.",
+      "chapter": 1
+    },
+    {
+      "start": 200.02399816895058,
+      "end": 202.96400061035683,
+      "text": "Speed halves because it scales as the inverse square root of radius.",
+      "chapter": 1
+    },
+    {
+      "start": 203.9239996948295,
+      "end": 207.44400015259316,
+      "text": "Period multiplies by eight because it scales as radius to the power three",
+      "chapter": 1
+    },
+    {
+      "start": 207.44400015259316,
+      "end": 207.78400030518105,
+      "text": "halves.",
+      "chapter": 1
+    },
+    {
+      "start": 208.76399984741738,
+      "end": 211.26399984741738,
+      "text": "Potential energy is minus G M m over r.",
+      "chapter": 1
+    },
+    {
+      "start": 212.06399908447793,
+      "end": 217.3240012207084,
+      "text": "Circular kinetic energy is positive G M m over two r, so total energy is",
+      "chapter": 1
+    },
+    {
+      "start": 217.3240012207084,
+      "end": 219.1640013732963,
+      "text": "negative G M m over two r.",
+      "chapter": 1
+    },
+    {
+      "start": 219.1640013732963,
+      "end": 224.76399984741738,
+      "text": "In the outer orbit, total energy is minus G M m over eight r.",
+      "chapter": 1
+    },
+    {
+      "start": 224.76399984741738,
+      "end": 229.9239996948295,
+      "text": "Subtract the inner value: the increase is positive three G M m over eight r.",
+      "chapter": 1
+    },
+    {
+      "start": 229.9239996948295,
+      "end": 233.48399725342324,
+      "text": "Raising an orbit requires energy even though its circular speed decreases.",
+      "chapter": 1
+    },
+    {
+      "start": 234.30399694824746,
+      "end": 238.3240012207084,
+      "text": "This difference is not a single burn instruction; actual transfers involve",
+      "chapter": 1
+    },
+    {
+      "start": 238.3240012207084,
+      "end": 239.3439978637748,
+      "text": "intermediate motion.",
+      "chapter": 1
+    },
+    {
+      "start": 240.2439993896537,
+      "end": 243.50400152588418,
+      "text": "Astronauts float because they and their spacecraft accelerate together.",
+      "chapter": 1
+    },
+    {
+      "start": 243.50400152588418,
+      "end": 248.52399816895058,
+      "text": "Gravity still acts, but a freely floating astronaut has nearly zero support",
+      "chapter": 1
+    },
+    {
+      "start": 248.52399816895058,
+      "end": 248.90400305176308,
+      "text": "force.",
+      "chapter": 1
+    },
+    {
+      "start": 249.70399847412637,
+      "end": 253.5450230196492,
+      "text": "A geostationary satellite needs a circular equatorial orbit in Earth's",
+      "chapter": 1
+    },
+    {
+      "start": 253.5450230196492,
+      "end": 253.98399725342324,
+      "text": "rotation",
+      "chapter": 1
+    },
+    {
+      "start": 253.98399725342324,
+      "end": 258.30400130790144,
+      "text": "direction with the sidereal period, approximately eighty six thousand one",
+      "chapter": 1
+    },
+    {
+      "start": 258.30400130790144,
+      "end": 259.60400000000527,
+      "text": "hundred sixty four seconds.",
+      "chapter": 1
+    },
+    {
+      "start": 260.18400183105996,
+      "end": 262.10400000000527,
+      "text": "A one day period alone is insufficient.",
+      "chapter": 1
+    },
+    {
+      "start": 262.8240012207084,
+      "end": 264.5040015258842,
+      "text": "Now extend the picture to an ellipse.",
+      "chapter": 1
+    },
+    {
+      "start": 265.36400213623574,
+      "end": 269.5239981689506,
+      "text": "Kepler's first law places the attracting body at one focus, not the centre.",
+      "chapter": 1
+    },
+    {
+      "start": 269.5239981689506,
+      "end": 272.7439993896537,
+      "text": "The second law gives equal swept areas in equal times.",
+      "chapter": 1
+    },
+    {
+      "start": 272.7439993896537,
+      "end": 273.48399725342324,
+      "text": "Why?",
+      "chapter": 1
+    },
+    {
+      "start": 274.10400000000527,
+      "end": 277.7439993896537,
+      "text": "Gravity is central, so its torque about the attracting centre is zero.",
+      "chapter": 1
+    },
+    {
+      "start": 278.5440024414115,
+      "end": 282.31246342429665,
+      "text": "Angular momentum stays constant, and the areal rate is angular momentum",
+      "chapter": 1
+    },
+    {
+      "start": 282.31246342429665,
+      "end": 282.68400183105996,
+      "text": "divided",
+      "chapter": 1
+    },
+    {
+      "start": 282.68400183105996,
+      "end": 284.1239966430717,
+      "text": "by twice the orbiting mass.",
+      "chapter": 1
+    },
+    {
+      "start": 284.80399694824746,
+      "end": 288.48399725342324,
+      "text": "At nearest and farthest points, velocity is perpendicular to radius.",
+      "chapter": 1
+    },
+    {
+      "start": 289.10400000000527,
+      "end": 293.0239981689506,
+      "text": "Therefore nearest radius times nearest speed equals farthest radius times",
+      "chapter": 1
+    },
+    {
+      "start": 293.0239981689506,
+      "end": 293.6439932861381,
+      "text": "farthest speed.",
+      "chapter": 1
+    },
+    {
+      "start": 294.2839926757865,
+      "end": 298.163997558599,
+      "text": "If the farthest radius is three times the nearest, the nearest speed is three",
+      "chapter": 1
+    },
+    {
+      "start": 298.163997558599,
+      "end": 299.2040061035209,
+      "text": "times the farthest speed.",
+      "chapter": 1
+    },
+    {
+      "start": 299.88399877930215,
+      "end": 302.06400671387246,
+      "text": "Equal areas do not mean equal distances.",
+      "chapter": 1
+    },
+    {
+      "start": 302.6240042724662,
+      "end": 307.56400671387246,
+      "text": "Kepler's third law says period squared scales as semi major axis cubed for",
+      "chapter": 1
+    },
+    {
+      "start": 307.56400671387246,
+      "end": 309.76400366211465,
+      "text": "bodies around the same dominant central mass.",
+      "chapter": 1
+    },
+    {
+      "start": 310.4439963378959,
+      "end": 314.65553479943435,
+      "text": "With nearest radius R and farthest radius three R, the semi major axis is",
+      "chapter": 1
+    },
+    {
+      "start": 314.65553479943435,
+      "end": 314.9439963378959,
+      "text": "their",
+      "chapter": 1
+    },
+    {
+      "start": 314.9439963378959,
+      "end": 316.98400488281777,
+      "text": "average, two R.",
+      "chapter": 1
+    },
+    {
+      "start": 316.98400488281777,
+      "end": 320.6439932861381,
+      "text": "Compared with a circle of radius R, the period is two times the square root of",
+      "chapter": 1
+    },
+    {
+      "start": 320.6439932861381,
+      "end": 320.924007324224,
+      "text": "two.",
+      "chapter": 1
+    },
+    {
+      "start": 321.6439932861381,
+      "end": 326.58399572754433,
+      "text": "Elliptical total energy is minus G M m over twice the semi major axis, giving",
+      "chapter": 1
+    },
+    {
+      "start": 326.58399572754433,
+      "end": 328.7040061035209,
+      "text": "minus G M m over four R here.",
+      "chapter": 1
+    },
+    {
+      "start": 328.7040061035209,
+      "end": 332.3639945068412,
+      "text": "Do not replace that axis by the changing instantaneous radius.",
+      "chapter": 1
+    },
+    {
+      "start": 333.1439932861381,
+      "end": 336.2439993896537,
+      "text": "These are ideal two body results with negligible satellite mass.",
+      "chapter": 1
+    },
+    {
+      "start": 337.0440024414115,
+      "end": 340.88399877930215,
+      "text": "Use the written lesson for additional steps, then test the radius, energy and",
+      "chapter": 1
+    },
+    {
+      "start": 340.88399877930215,
+      "end": 341.80800000001113,
+      "text": "model assumptions before trusting an answer.",
+      "chapter": 1
+    }
+  ]
+}

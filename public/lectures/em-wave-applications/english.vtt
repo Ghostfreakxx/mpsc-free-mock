@@ -1,0 +1,337 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.260
+Hey, welcome back.
+
+00:00:01.780 --> 00:00:02.820
+Let's start with a puzzle.
+
+00:00:03.400 --> 00:00:07.640
+A wire carries current into a charging capacitor, but no charge crosses its
+
+00:00:07.640 --> 00:00:08.680
+ideal vacuum gap.
+
+00:00:09.440 --> 00:00:12.120
+How can the magnetic field around the circuit be consistent?
+
+00:00:12.980 --> 00:00:15.760
+Maxwell's correction includes changing electric flux.
+
+00:00:16.640 --> 00:00:20.500
+Displacement current is epsilon zero times the rate of change of electric flux
+
+00:00:20.500 --> 00:00:21.040
+in vacuum.
+
+00:00:21.500 --> 00:00:24.100
+It is not a stream of particles crossing the gap.
+
+00:00:25.180 --> 00:00:29.820
+For ideal parallel plates, charge is epsilon zero times electric field times
+
+00:00:29.820 --> 00:00:30.440
+plate area.
+
+00:00:31.480 --> 00:00:35.680
+Differentiate: the displacement current across the full plate area equals the
+
+00:00:35.680 --> 00:00:36.520
+charging current in the wire.
+
+00:00:37.320 --> 00:00:41.460
+The magnetic circulation law includes conduction current plus displacement
+
+00:00:41.460 --> 00:00:43.160
+current through the chosen surface.
+
+00:00:44.160 --> 00:00:48.300
+Now give the plates circular radius a and assume uniform electric field,
+
+00:00:48.860 --> 00:00:51.280
+negligible fringing and a quasistatic situation.
+
+00:00:52.340 --> 00:00:56.600
+Take a circular magnetic loop of radius r less than a, concentric with the
+
+00:00:56.600 --> 00:00:58.240
+plate axis, between the plates.
+
+00:00:59.040 --> 00:01:01.040
+What fraction of electric flux does it enclose?
+
+00:01:01.860 --> 00:01:03.760
+It is r squared divided by a squared.
+
+00:01:04.520 --> 00:01:08.120
+So enclosed displacement current is charging current times that fraction.
+
+00:01:09.180 --> 00:01:12.420
+Symmetry lets magnetic field magnitude be constant around the circular loop,
+
+00:01:13.000 --> 00:01:13.740
+tangent to it.
+
+00:01:14.480 --> 00:01:16.800
+Magnetic circulation is B times two pi r.
+
+00:01:17.740 --> 00:01:21.969
+Equating it to mu zero times the enclosed displacement current gives B equal
+
+00:01:21.969 --> 00:01:22.080
+to
+
+00:01:22.080 --> 00:01:24.820
+mu zero I r divided by two pi a squared.
+
+00:01:25.840 --> 00:01:29.060
+Notice the field increases linearly with r inside the plate area.
+
+00:01:29.800 --> 00:01:34.300
+Try a equals zero point one metres, r equals zero point zero five metres and
+
+00:01:34.300 --> 00:01:36.600
+charging current zero point two amperes.
+
+00:01:36.900 --> 00:01:40.851
+Using mu zero divided by two pi approximately two times ten to the minus
+
+00:01:40.851 --> 00:01:41.180
+seven,
+
+00:01:41.620 --> 00:01:43.800
+the result is zero point two microtesla.
+
+00:01:44.260 --> 00:01:46.980
+At the plate edge it is zero point four microtesla.
+
+00:01:47.380 --> 00:01:50.540
+The current direction sets the circulation by the right hand rule.
+
+00:01:51.400 --> 00:01:55.560
+This ideal capacitor model is not a universal field formula for arbitrary
+
+00:01:55.560 --> 00:01:58.280
+leads, fringing or rapidly varying circuits.
+
+00:01:58.940 --> 00:02:02.940
+Our key idea is to choose the surface carefully and include changing electric
+
+00:02:02.940 --> 00:02:05.460
+flux where conduction current alone is not enough.
+
+00:02:06.168 --> 00:02:09.848
+Now let the fields travel as a sinusoidal plane wave in vacuum.
+
+00:02:10.768 --> 00:02:13.908
+Electric field, magnetic field and propagation direction are mutually
+
+00:02:13.908 --> 00:02:14.448
+perpendicular.
+
+00:02:15.488 --> 00:02:17.948
+Propagation follows electric field cross magnetic field.
+
+00:02:18.508 --> 00:02:22.788
+Their peak magnitudes obey E zero equals c times B zero.
+
+00:02:22.788 --> 00:02:26.828
+In vacuum, electric energy density is one half epsilon zero E squared.
+
+00:02:27.808 --> 00:02:30.688
+Magnetic energy density is B squared divided by two mu zero.
+
+00:02:31.388 --> 00:02:35.528
+Since B equals E divided by c and c squared equals one divided by mu zero
+
+00:02:35.528 --> 00:02:39.028
+epsilon zero, those two densities are equal at each instant.
+
+00:02:39.888 --> 00:02:42.108
+Total energy density is epsilon zero E squared.
+
+00:02:42.888 --> 00:02:45.748
+The energy flux magnitude is c times that total density.
+
+00:02:46.488 --> 00:02:48.188
+But intensity means the time average.
+
+00:02:48.828 --> 00:02:52.408
+For a sinusoid, average E squared is half the peak amplitude squared.
+
+00:02:53.208 --> 00:02:56.708
+Therefore intensity is one half epsilon zero c E zero squared.
+
+00:02:57.028 --> 00:03:02.028
+If the field is given as RMS instead, intensity is epsilon zero c E RMS
+
+00:03:02.028 --> 00:03:03.608
+squared, with no extra half.
+
+00:03:04.428 --> 00:03:07.268
+Pause before substituting: is your number peak or RMS?
+
+00:03:08.008 --> 00:03:10.628
+Let peak electric field be one hundred twenty volts per metre.
+
+00:03:11.348 --> 00:03:14.728
+Use epsilon zero approximately eight point eight five times ten to the minus
+
+00:03:14.728 --> 00:03:18.868
+twelve and c approximately three times ten to the eighth.
+
+00:03:18.868 --> 00:03:21.108
+Peak magnetic field is zero point four microtesla.
+
+00:03:21.968 --> 00:03:25.668
+Average intensity is nineteen point one one six watts per square metre, about
+
+00:03:25.668 --> 00:03:26.648
+nineteen point one.
+
+00:03:27.228 --> 00:03:30.528
+RMS electric field is one hundred twenty divided by the square root of two,
+
+00:03:31.468 --> 00:03:33.328
+approximately eighty four point eight five volts per metre.
+
+00:03:34.248 --> 00:03:36.768
+Putting that into the RMS formula gives the same intensity.
+
+00:03:37.708 --> 00:03:40.348
+Double the amplitude and intensity becomes four times as large.
+
+00:03:41.128 --> 00:03:45.435
+These relations assume a vacuum plane wave; do not automatically replace c
+
+00:03:45.435 --> 00:03:45.668
+with
+
+00:03:45.668 --> 00:03:48.508
+a medium speed while keeping every vacuum formula unchanged.
+
+00:03:49.128 --> 00:03:52.373
+For the numerical answer, keep enough digits during calculation and round at
+
+00:03:52.373 --> 00:03:52.536
+the end.
+
+00:03:52.536 --> 00:03:54.736
+Finally, light can push.
+
+00:03:55.516 --> 00:03:59.976
+At normal incidence, a completely absorbing surface receives momentum from the
+
+00:03:59.976 --> 00:04:00.796
+incoming wave.
+
+00:04:01.576 --> 00:04:04.336
+Average radiation pressure is intensity divided by c.
+
+00:04:05.216 --> 00:04:09.516
+An ideal perfectly reflecting surface reverses the normal momentum, giving
+
+00:04:09.516 --> 00:04:10.456
+twice that pressure.
+
+00:04:11.336 --> 00:04:15.756
+These are normal incidence limiting cases, not formulas for every tilted or
+
+00:04:15.756 --> 00:04:16.996
+partly reflecting surface.
+
+00:04:18.136 --> 00:04:22.197
+Consider a beam with intensity six hundred watts per square metre striking
+
+00:04:22.197 --> 00:04:22.416
+area
+
+00:04:22.416 --> 00:04:24.776
+zero point zero two square metres normally.
+
+00:04:26.656 --> 00:04:28.176
+Absorbed power is twelve watts.
+
+00:04:29.256 --> 00:04:33.582
+Absorbing pressure is two times ten to the minus six pascals, and force is
+
+00:04:33.582 --> 00:04:33.816
+four
+
+00:04:33.816 --> 00:04:35.376
+times ten to the minus eight newtons.
+
+00:04:36.296 --> 00:04:40.376
+For perfect reflection, force doubles to eight times ten to the minus eight
+
+00:04:40.376 --> 00:04:40.656
+newtons.
+
+00:04:41.456 --> 00:04:45.236
+A tiny force can still matter for light objects or sustained illumination.
+
+00:04:46.136 --> 00:04:50.156
+Do not confuse force, measured in newtons, with pressure, measured in newtons
+
+00:04:50.156 --> 00:04:50.896
+per square metre.
+
+00:04:51.656 --> 00:04:55.476
+Now imagine an ideal source radiating one hundred twenty watts isotropically
+
+00:04:55.476 --> 00:04:56.456
+into free space.
+
+00:04:57.356 --> 00:05:02.036
+At distance two metres, power spreads over a sphere of area four pi r squared.
+
+00:05:03.156 --> 00:05:07.163
+Intensity is one hundred twenty divided by sixteen pi, about two point three
+
+00:05:07.163 --> 00:05:08.296
+nine watts per square metre.
+
+00:05:09.316 --> 00:05:14.556
+At four metres it is one quarter as large, about zero point five nine seven.
+
+00:05:14.556 --> 00:05:14.876
+Why?
+
+00:05:15.596 --> 00:05:19.276
+Doubling radius makes the sphere's area four times larger while total emitted
+
+00:05:19.276 --> 00:05:20.396
+power stays the same.
+
+00:05:21.496 --> 00:05:25.176
+Plane wave local intensity formulas and spherical spreading describe different
+
+00:05:25.176 --> 00:05:28.820
+aspects of the model; do not demand inverse square decay from an ideal
+
+00:05:28.820 --> 00:05:29.236
+infinite
+
+00:05:29.236 --> 00:05:29.776
+plane wave.
+
+00:05:30.736 --> 00:05:35.016
+In this far field isotropic model, field amplitude scales as one over distance
+
+00:05:35.716 --> 00:05:37.796
+because intensity scales with amplitude squared.
+
+00:05:38.816 --> 00:05:42.736
+Real antennas, lasers, absorption and near fields can change the spatial
+
+00:05:42.736 --> 00:05:43.076
+pattern.
+
+00:05:44.016 --> 00:05:47.716
+The routine is to identify the wave model, decide whether the surface absorbs
+
+00:05:47.716 --> 00:05:51.996
+or reflects, and distinguish total source power from the intensity arriving at
+
+00:05:51.996 --> 00:05:52.476
+the surface.

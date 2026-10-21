@@ -17,13 +17,14 @@
     "test": "npm run test:content && npm run test:mizo && npm run test:question-rotation && npm run test:guidance && npm run test:exam-simulator && npm run test:lecture",
     "typecheck": "tsc --noEmit",
     "check": "npm run validate:banks && npm test && npm run lint && npm run typecheck",
-    "smoke": "node scripts/smoke.mjs"
+    "smoke": "node scripts/smoke.mjs",
+    "audit": "node scripts/audit.mjs"
   },
   "dependencies": {
-    "lucide-react": "^1.48.0",
+    "lucide-react": "^1.59.0",
     "next": "^16.3.6",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -32,7 +33,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "^16.3.6",
-    "playwright": "1.56.1",
+    "playwright": "1.64.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

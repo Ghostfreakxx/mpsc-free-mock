@@ -1,0 +1,140 @@
+{
+  "title": "Magnetic flux, Faraday's law and Lenz's law",
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "sources": [
+    {
+      "title": "NTA: Official JEE Main 2026 syllabus, Physics Unit 14",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Faraday's law, conceptual reference",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/13-1-faradays-law"
+    },
+    {
+      "title": "OpenStax: Lenz's law, conceptual reference",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/13-2-lenzs-law"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Flux: use the surface normal, not the plane",
+      "formula": "Phi = integral B dot dA; uniform B, flat surface: Phi = BA cos(theta); 1 Wb = 1 T m^2",
+      "points": [
+        "theta is measured between B and the chosen surface normal.",
+        "Flux is signed; reversing the normal reverses its sign.",
+        "Flux through the open surface of a loop need not be zero."
+      ],
+      "script": "Hey, welcome back. A magnetic field can exist around a circuit without producing any induced current. The key question is what changes. Before we answer it, let's build the quantity that tracks the field through a loop: magnetic flux. Choose a surface spanning the loop and an arrow perpendicular to it. That arrow is the surface normal. For a uniform field and a flat surface, flux equals field strength times area times cosine of the angle between the field and the normal. Not the angle with the plane. That little distinction does a lot of work. When the field follows the normal, flux is positive B A. When it lies in the plane, flux is zero. Reverse the chosen normal and the signed flux reverses, without changing the physical field. Try a uniform field of zero point four tesla through an area of zero point zero two square meters. The field makes sixty degrees with the normal. Pause and find the flux. It is zero point zero zero four weber, because cosine sixty is one half. If sixty degrees were measured from the plane instead, the angle with the normal would be thirty degrees. One weber is one tesla square meter. For a nonuniform field, add the contributions of small area elements using the flux integral. Also, zero net magnetic flux through a closed surface does not mean zero flux through the open surface bounded by a loop."
+    },
+    {
+      "title": "Faraday's law: change of flux linkage",
+      "formula": "lambda = N Phi for identical linked turns; emf = -d(lambda)/dt; fixed N: emf = -N dPhi/dt",
+      "points": [
+        "A large constant flux produces no induced emf in a stationary unchanged loop.",
+        "N Phi applies when each turn links the same signed flux.",
+        "I = |emf|/R here assumes a closed resistive circuit with negligible inductive effects."
+      ],
+      "script": "Now we can ask the right question: how fast does the flux linkage change? For a coil with N identical turns, each linking the same flux, flux linkage is N times the flux through one turn. Faraday's law says the induced electromotive force, or emf, is minus the time derivative of that linkage. Despite the name, emf is measured in volts, not newtons. The minus sign contains direction information; we will unpack it next. For magnitude, faster flux change means greater induced emf. A large constant flux gives zero induced emf in a stationary, unchanged loop. Field strength, loop area or orientation can change the linkage. Our first example keeps area and orientation fixed. An eighty-turn coil has area zero point zero zero five square meters per turn. A uniform field perpendicular to its plane rises by zero point three tesla in zero point two seconds, at a constant rate. The rate is one point five tesla per second. Multiply eighty by area by that rate. The induced emf magnitude is zero point six volt. In a closed circuit with total resistance six ohms, the current magnitude is zero point one ampere, assuming inductive effects are negligible. An open circuit can have induced emf without a circulating conduction current. If turns link different fluxes, add their individual linkages instead of automatically writing N times one flux. Separate the flux calculation, the rate calculation and the circuit response."
+    },
+    {
+      "title": "Lenz's law: oppose the change, not always the field",
+      "formula": "Increasing B into page: induced B out, current counterclockwise; decreasing B into page: induced B in, current clockwise",
+      "points": [
+        "Current directions are viewed facing the page.",
+        "Use the right-hand rule for the field made by the induced current.",
+        "The induced response opposes the flux change, not necessarily the original field."
+      ],
+      "script": "Let's turn the minus sign into a picture. Face the page. A stationary conducting loop lies in the page, and the external magnetic field points into it. Crosses represent into the page. Suppose that inward field is increasing. What field would oppose the increase? Take a moment. An outward induced field. Curl the fingers of your right hand in the current direction so the thumb points out toward you. The induced conventional current is counterclockwise, as viewed facing the page. Now keep the external field pointing inward, but let its magnitude decrease. Does the current stay counterclockwise? No. The response now tries to maintain the disappearing inward flux. The induced field points inward, so the current is clockwise. The same original field direction gave opposite current directions because the change reversed. Lenz's law opposes the change in magnetic flux, not always the magnetic field itself. Choose the normal out of the page. Increasing inward flux becomes more negative, so its derivative is negative and induced emf is positive in the counterclockwise sense. Decreasing inward flux gives the opposite signs. Reversing the normal reverses both mathematical conventions, not the real current. The induced field need not cancel the external field completely. In a resistive circuit, its size follows the circuit response. Lenz's law also expresses energy conservation: induction does not supply unlimited electrical energy for free. The source changing the field or moving the apparatus must account for the energy transferred."
+    },
+    {
+      "title": "Read a flux-time graph by its slope",
+      "formula": "For N = 50: DeltaPhi = +0.006 Wb in 0.3 s gives emf = -1 V; plateau: 0; fall over 0.6 s: +0.5 V",
+      "points": [
+        "The graph here shows signed flux through one turn, not total linkage.",
+        "Faraday's law uses slope, not the height of the graph.",
+        "At an ideal sharp corner, the two neighbouring interval slopes differ."
+      ],
+      "script": "A flux-time graph is a shortcut, provided you know what the vertical axis means. Our graph shows signed flux through one turn of a fifty-turn coil. The normal and positive circulation direction are fixed. First, flux rises linearly from zero to zero point zero zero six weber in zero point three seconds. Its slope is positive zero point zero two weber per second. Multiply by minus fifty. The induced emf is minus one volt. Next comes a plateau: the flux stays at zero point zero zero six weber from zero point three to zero point six seconds. What is the emf there? Think slope, not height. It is zero. A nonzero flux is not enough. Finally, flux falls linearly to zero over the next zero point six seconds. The slope is minus zero point zero one weber per second, so emf is plus zero point five volt. The return takes twice as long as the rise, so the magnitude is half as large. The signs refer to our chosen positive circulation direction. If the graph instead showed total flux linkage, we would not multiply by N again. At ideal sharp corners, a unique derivative is not defined; use the appropriate open time interval rather than assigning both slopes to one instant. Real transitions are smoothed. Sketching the corresponding emf graph gives three constant levels: minus one, zero and plus one half volt."
+    },
+    {
+      "title": "Instantaneous emf: differentiate before substituting",
+      "formula": "B(t) = 0.1 + 0.2t^2 T; N = 40, A = 0.03 m^2; emf = -0.48t V; at t = 2 s: -0.96 V",
+      "points": [
+        "The field follows the fixed chosen normal and is uniform.",
+        "Average change over an interval is not generally the instantaneous rate.",
+        "R = 8 ohm gives |I| = 0.12 A only under the stated resistive approximation."
+      ],
+      "script": "For a curved flux-time graph, average and instantaneous emf can differ. Let's solve one clean JEE-style problem. A fixed forty-turn coil has area zero point zero three square meters per turn. A uniform magnetic field follows its chosen normal. Field strength as a function of time is zero point one plus zero point two times t squared, in tesla, with t in seconds. Find the induced emf at two seconds. First write the flux linkage: forty times area times B. The angle is zero, so cosine contributes one. Differentiate before substituting the time. The derivative of B is zero point four times t tesla per second. Multiply by minus forty times zero point zero three. The emf is minus zero point four eight times t volts. At two seconds, that is minus zero point nine six volt. With total resistance eight ohms and negligible inductive effects, current magnitude is zero point one two ampere. Its circulation is opposite our positive right-hand convention. Now compare an interval from zero to two seconds. B changes by zero point eight tesla, giving an average rate of zero point four tesla per second. Average emf is minus zero point four eight volt, not the final instantaneous value. Constant initial field contributes flux, but no derivative. Before finishing any induction problem, check the normal, linked turns, the time dependence, your direction convention and whether the circuit model permits current equal to emf over resistance."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A uniform 0.4 T field makes 60 degrees with the normal to a 0.02 m^2 surface. Flux is:",
+      "options": [
+        "0.008 Wb",
+        "0.004 Wb",
+        "0.00693 Wb",
+        "0 Wb"
+      ],
+      "answer": 1,
+      "explanation": "Phi = BA cos60 = 0.4 x 0.02 x 0.5 = 0.004 Wb. The angle is with the normal."
+    },
+    {
+      "question": "An 80-turn coil of area 0.005 m^2 per turn has a perpendicular field rise by 0.3 T in 0.2 s. Emf magnitude is:",
+      "options": [
+        "0.12 V",
+        "6 V",
+        "0.0075 V",
+        "0.6 V"
+      ],
+      "answer": 3,
+      "explanation": "|emf| = NA |DeltaB/Delta t| = 80 x 0.005 x 1.5 = 0.6 V."
+    },
+    {
+      "question": "Viewed facing the page, a field into the page is increasing through a closed resistive loop. Induced current is:",
+      "options": [
+        "Clockwise",
+        "Zero because the loop is stationary",
+        "Counterclockwise",
+        "Its direction is independent of the change"
+      ],
+      "answer": 2,
+      "explanation": "The induced field opposes the increasing inward flux by pointing outward; the right-hand rule gives counterclockwise current."
+    },
+    {
+      "question": "The external field remains into the page but decreases. Viewed facing the page, current is:",
+      "options": [
+        "Clockwise",
+        "Counterclockwise",
+        "Necessarily zero",
+        "The same as for an increasing inward field"
+      ],
+      "answer": 0,
+      "explanation": "The induced field supports the decreasing inward flux; clockwise current produces an inward field."
+    },
+    {
+      "question": "For a 50-turn coil, flux per turn drops from 0.006 Wb to zero in 0.6 s. Signed emf is:",
+      "options": [
+        "-0.5 V",
+        "+0.01 V",
+        "+0.5 V",
+        "0 V"
+      ],
+      "answer": 2,
+      "explanation": "emf = -N DeltaPhi/Delta t = -50 x (-0.006)/0.6 = +0.5 V relative to the fixed circulation convention."
+    },
+    {
+      "question": "N = 40, A = 0.03 m^2 and normal field B = 0.1 + 0.2t^2 T. At t = 2 s, signed emf is:",
+      "options": [
+        "-0.48 V",
+        "+0.96 V",
+        "-0.216 V",
+        "-0.96 V"
+      ],
+      "answer": 3,
+      "explanation": "emf = -NA dB/dt = -40 x 0.03 x (0.4t) = -0.48t V; at 2 s it is -0.96 V."
+    }
+  ]
+}

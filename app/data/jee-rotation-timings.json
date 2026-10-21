@@ -1,0 +1,729 @@
+{
+  "duration": 376.6080000000098,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 71.80800000000183
+    },
+    {
+      "start": 71.80800000000183,
+      "end": 137.92800000000344
+    },
+    {
+      "start": 137.92800000000344,
+      "end": 206.54400000000516
+    },
+    {
+      "start": 206.54400000000516,
+      "end": 291.45600000000746
+    },
+    {
+      "start": 291.45600000000746,
+      "end": 376.6080000000098
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 0.7200000286102295,
+      "text": "Welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 1.600000023841858,
+      "end": 3.5199999809265137,
+      "text": "Imagine a wheel turning about a fixed axle.",
+      "chapter": 0
+    },
+    {
+      "start": 4.539999961853027,
+      "end": 8.84000015258789,
+      "text": "A dot near the rim travels farther than a dot near the centre during the same",
+      "chapter": 0
+    },
+    {
+      "start": 8.84000015258789,
+      "end": 9.140000343322754,
+      "text": "turn.",
+      "chapter": 0
+    },
+    {
+      "start": 9.819999694824219,
+      "end": 12.140000343322754,
+      "text": "Yet both dots turn through the same angle.",
+      "chapter": 0
+    },
+    {
+      "start": 12.819999694824219,
+      "end": 15.199999809265137,
+      "text": "That distinction is the starting point of rotation.",
+      "chapter": 0
+    },
+    {
+      "start": 16.020000457763672,
+      "end": 18.18000030517578,
+      "text": "We measure angular displacement in radians.",
+      "chapter": 0
+    },
+    {
+      "start": 18.860000610351562,
+      "end": 21.440000534057617,
+      "text": "One radian means the arc length equals the radius.",
+      "chapter": 0
+    },
+    {
+      "start": 22.079999923706055,
+      "end": 26.520000457763672,
+      "text": "So arc length equals radius times angular displacement, provided the angle is",
+      "chapter": 0
+    },
+    {
+      "start": 26.520000457763672,
+      "end": 27.059999465942383,
+      "text": "in radians.",
+      "chapter": 0
+    },
+    {
+      "start": 27.639999389648438,
+      "end": 31.059999465942383,
+      "text": "A point half a metre from the axle turns through two radians.",
+      "chapter": 0
+    },
+    {
+      "start": 31.84000015258789,
+      "end": 33.2400016784668,
+      "text": "Its arc length is one metre.",
+      "chapter": 0
+    },
+    {
+      "start": 34.20000076293945,
+      "end": 37.959999084472656,
+      "text": "Notice that this is distance along a circular arc, not the straight line",
+      "chapter": 0
+    },
+    {
+      "start": 37.959999084472656,
+      "end": 39.619998931884766,
+      "text": "displacement between its endpoints.",
+      "chapter": 0
+    },
+    {
+      "start": 40.619998931884766,
+      "end": 43.29999923706055,
+      "text": "Angular velocity tells us how quickly the angle changes.",
+      "chapter": 0
+    },
+    {
+      "start": 43.959999084472656,
+      "end": 44.880001068115234,
+      "text": "We call it omega.",
+      "chapter": 0
+    },
+    {
+      "start": 45.84000015258789,
+      "end": 48.29999923706055,
+      "text": "Tangential speed equals radius times omega.",
+      "chapter": 0
+    },
+    {
+      "start": 48.97999954223633,
+      "end": 53.119998931884766,
+      "text": "If our wheel turns at four radians per second, the dot half a metre from the",
+      "chapter": 0
+    },
+    {
+      "start": 53.119998931884766,
+      "end": 54.900001525878906,
+      "text": "axle moves at two metres per second.",
+      "chapter": 0
+    },
+    {
+      "start": 55.400001525878906,
+      "end": 57.380001068115234,
+      "text": "What about a dot halfway to that rim?",
+      "chapter": 0
+    },
+    {
+      "start": 58.119998931884766,
+      "end": 58.599998474121094,
+      "text": "Take a moment.",
+      "chapter": 0
+    },
+    {
+      "start": 59.15999984741211,
+      "end": 62.65999984741211,
+      "text": "It has the same angular velocity, but half the tangential speed.",
+      "chapter": 0
+    },
+    {
+      "start": 63.41999816894531,
+      "end": 67.81999969482422,
+      "text": "In JEE questions, always distinguish angular quantities from linear quantities,",
+      "chapter": 0
+    },
+    {
+      "start": 67.9800033569336,
+      "end": 71.05999755859375,
+      "text": "and check which radius belongs to the point being discussed.",
+      "chapter": 0
+    },
+    {
+      "start": 71.80800000000183,
+      "end": 75.92799988556091,
+      "text": "Why is a long wrench easier to turn than a short one?",
+      "chapter": 1
+    },
+    {
+      "start": 77.18800011444274,
+      "end": 81.00799980926696,
+      "text": "The turning effect of a force depends not only on the force, but also on where",
+      "chapter": 1
+    },
+    {
+      "start": 81.00799980926696,
+      "end": 81.86800041961853,
+      "text": "and how it acts.",
+      "chapter": 1
+    },
+    {
+      "start": 82.56800022888366,
+      "end": 84.36800041961853,
+      "text": "That turning effect is torque.",
+      "chapter": 1
+    },
+    {
+      "start": 84.94800034332458,
+      "end": 89.58800068664733,
+      "text": "For motion in a plane, the torque magnitude about a chosen axis is radius times",
+      "chapter": 1
+    },
+    {
+      "start": 89.58800068664733,
+      "end": 91.92800083923522,
+      "text": "force times sine of the angle between them.",
+      "chapter": 1
+    },
+    {
+      "start": 92.58800068664733,
+      "end": 96.3280004577655,
+      "text": "Here radius means the position vector from the axis to the point where the",
+      "chapter": 1
+    },
+    {
+      "start": 96.3280004577655,
+      "end": 96.72800007629577,
+      "text": "force acts.",
+      "chapter": 1
+    },
+    {
+      "start": 97.2079996185321,
+      "end": 101.54799977111999,
+      "text": "An equivalent method is force times the perpendicular distance from the axis to",
+      "chapter": 1
+    },
+    {
+      "start": 101.54799977111999,
+      "end": 102.62799969482604,
+      "text": "the force's line of action.",
+      "chapter": 1
+    },
+    {
+      "start": 103.42800083923522,
+      "end": 105.16800061035339,
+      "text": "That distance is the lever arm.",
+      "chapter": 1
+    },
+    {
+      "start": 106.04800167846862,
+      "end": 109.50800076294128,
+      "text": "Push perpendicular to a wrench, twenty five centimetres from the bolt, with",
+      "chapter": 1
+    },
+    {
+      "start": 109.50800076294128,
+      "end": 110.12799969482604,
+      "text": "twenty newtons.",
+      "chapter": 1
+    },
+    {
+      "start": 110.86800137329284,
+      "end": 112.96799984741394,
+      "text": "Convert the length to zero point two five metres.",
+      "chapter": 1
+    },
+    {
+      "start": 113.54800167846862,
+      "end": 115.0879987792987,
+      "text": "The torque is five newton metres.",
+      "chapter": 1
+    },
+    {
+      "start": 115.84800091552917,
+      "end": 118.00800076294128,
+      "text": "Now push directly along the wrench toward the bolt.",
+      "chapter": 1
+    },
+    {
+      "start": 118.74799862671081,
+      "end": 119.94799938965026,
+      "text": "Predict the torque before calculating.",
+      "chapter": 1
+    },
+    {
+      "start": 120.56799832153503,
+      "end": 123.98800030517761,
+      "text": "It is zero, because the force's line of action passes through the axis.",
+      "chapter": 1
+    },
+    {
+      "start": 124.8280004577655,
+      "end": 129.20800152588072,
+      "text": "Choose an anticlockwise positive sign, then add clockwise torques with a",
+      "chapter": 1
+    },
+    {
+      "start": 129.20800152588072,
+      "end": 129.72799816894712,
+      "text": "negative sign.",
+      "chapter": 1
+    },
+    {
+      "start": 130.2479986267108,
+      "end": 134.20800152588072,
+      "text": "Torque uses newton metres, but we do not call it energy in joules: torque",
+      "chapter": 1
+    },
+    {
+      "start": 134.20800152588072,
+      "end": 137.62799969482603,
+      "text": "describes turning tendency, while work describes energy transfer.",
+      "chapter": 1
+    },
+    {
+      "start": 137.92800000000344,
+      "end": 142.34800007629738,
+      "text": "Mass tells us how strongly an object resists a change in linear motion.",
+      "chapter": 2
+    },
+    {
+      "start": 143.027999904636,
+      "end": 147.24799969482766,
+      "text": "For rotation, we also need to know where that mass sits relative to the axis.",
+      "chapter": 2
+    },
+    {
+      "start": 148.10800030517922,
+      "end": 151.28799965668068,
+      "text": "This is moment of inertia, represented by capital I.",
+      "chapter": 2
+    },
+    {
+      "start": 152.08799984741555,
+      "end": 155.58799984741555,
+      "text": "For point particles, add each mass multiplied by the square of its",
+      "chapter": 2
+    },
+    {
+      "start": 155.58799984741555,
+      "end": 157.20800068664894,
+      "text": "perpendicular distance from the axis.",
+      "chapter": 2
+    },
+    {
+      "start": 157.84800007629738,
+      "end": 163.0413340199823,
+      "text": "A one kilogram point mass half a metre from the axis contributes zero point two",
+      "chapter": 2
+    },
+    {
+      "start": 163.0413340199823,
+      "end": 164.70800068664894,
+      "text": "five kilogram metres squared.",
+      "chapter": 2
+    },
+    {
+      "start": 164.70800068664894,
+      "end": 169.72799923706398,
+      "text": "Move it to one metre, and the contribution becomes one kilogram metre squared.",
+      "chapter": 2
+    },
+    {
+      "start": 169.72799923706398,
+      "end": 172.24799969482766,
+      "text": "Doubling the distance has quadrupled the moment of inertia.",
+      "chapter": 2
+    },
+    {
+      "start": 173.00800183105812,
+      "end": 176.72799923706398,
+      "text": "That squared distance is the reason mass near the rim matters so much.",
+      "chapter": 2
+    },
+    {
+      "start": 177.52799847412453,
+      "end": 181.58799984741555,
+      "text": "For a thin ring about its central perpendicular axis, the moment of inertia is",
+      "chapter": 2
+    },
+    {
+      "start": 181.58799984741555,
+      "end": 183.02799847412453,
+      "text": "mass times radius squared.",
+      "chapter": 2
+    },
+    {
+      "start": 183.68799832153664,
+      "end": 188.22799923706398,
+      "text": "For a uniform solid disk about the equivalent axis, it is one half mass times",
+      "chapter": 2
+    },
+    {
+      "start": 188.22799923706398,
+      "end": 188.8879990844761,
+      "text": "radius squared.",
+      "chapter": 2
+    },
+    {
+      "start": 189.26800015259133,
+      "end": 193.32800152588234,
+      "text": "The disk has some mass closer to the centre, so its moment of inertia is",
+      "chapter": 2
+    },
+    {
+      "start": 193.32800152588234,
+      "end": 195.08799984741555,
+      "text": "smaller for the same mass and radius.",
+      "chapter": 2
+    },
+    {
+      "start": 195.86799862671242,
+      "end": 199.7079987793003,
+      "text": "These formulas are not interchangeable, and changing the axis changes the",
+      "chapter": 2
+    },
+    {
+      "start": 199.7079987793003,
+      "end": 199.8879990844761,
+      "text": "answer.",
+      "chapter": 2
+    },
+    {
+      "start": 200.74799969482766,
+      "end": 204.5880036621128,
+      "text": "Before using a formula in an exam, identify the shape, the mass distribution,",
+      "chapter": 2
+    },
+    {
+      "start": 204.92800000000344,
+      "end": 206.14800122070656,
+      "text": "and the axis explicitly.",
+      "chapter": 2
+    },
+    {
+      "start": 206.54400000000516,
+      "end": 209.26400002861538,
+      "text": "Now combine the ideas in a worked problem.",
+      "chapter": 3
+    },
+    {
+      "start": 210.04400000000516,
+      "end": 214.76400026703396,
+      "text": "A uniform solid disk rotates about a fixed axle through its centre,",
+      "chapter": 3
+    },
+    {
+      "start": 214.76400026703396,
+      "end": 215.9039996566824,
+      "text": "perpendicular to its face.",
+      "chapter": 3
+    },
+    {
+      "start": 216.48399958038846,
+      "end": 219.9640000762991,
+      "text": "Its mass is two kilograms and its radius is half a metre.",
+      "chapter": 3
+    },
+    {
+      "start": 220.60400041962185,
+      "end": 223.44399961853543,
+      "text": "A constant net torque of one newton metre acts on it.",
+      "chapter": 3
+    },
+    {
+      "start": 223.88400015259305,
+      "end": 224.82400068665066,
+      "text": "It starts from rest.",
+      "chapter": 3
+    },
+    {
+      "start": 225.78399977112332,
+      "end": 227.92399916077176,
+      "text": "Find its angular speed after three seconds.",
+      "chapter": 3
+    },
+    {
+      "start": 228.66400083923855,
+      "end": 233.42399916077176,
+      "text": "First calculate the moment of inertia: one half times two times half squared",
+      "chapter": 3
+    },
+    {
+      "start": 233.42399916077176,
+      "end": 236.64400038147488,
+      "text": "gives zero point two five kilogram metres squared.",
+      "chapter": 3
+    },
+    {
+      "start": 237.5039990844778,
+      "end": 242.04400000000516,
+      "text": "For a rigid body rotating about a fixed axis, net torque about that axis equals",
+      "chapter": 3
+    },
+    {
+      "start": 242.04400000000516,
+      "end": 244.4240010681204,
+      "text": "moment of inertia times angular acceleration.",
+      "chapter": 3
+    },
+    {
+      "start": 245.44400152588406,
+      "end": 247.82399877930203,
+      "text": "Divide one by zero point two five.",
+      "chapter": 3
+    },
+    {
+      "start": 247.82399877930203,
+      "end": 250.78400167847195,
+      "text": "The angular acceleration is four radians per second squared.",
+      "chapter": 3
+    },
+    {
+      "start": 251.86399969482937,
+      "end": 255.5039990844778,
+      "text": "Constant angular acceleration means we can use the rotational version of our",
+      "chapter": 3
+    },
+    {
+      "start": 255.5039990844778,
+      "end": 256.38400015259305,
+      "text": "straight line equations.",
+      "chapter": 3
+    },
+    {
+      "start": 257.10400137329617,
+      "end": 261.22400030518094,
+      "text": "Final angular velocity equals initial angular velocity plus angular",
+      "chapter": 3
+    },
+    {
+      "start": 261.22400030518094,
+      "end": 262.5840009155325,
+      "text": "acceleration times time.",
+      "chapter": 3
+    },
+    {
+      "start": 263.60400137329617,
+      "end": 267.0640004577688,
+      "text": "Starting from rest gives twelve radians per second after three seconds.",
+      "chapter": 3
+    },
+    {
+      "start": 268.1639989318899,
+      "end": 271.96399816895047,
+      "text": "The angle turned is one half alpha t squared, or eighteen radians.",
+      "chapter": 3
+    },
+    {
+      "start": 273.04400000000516,
+      "end": 274.06399664307156,
+      "text": "Here is an energy check.",
+      "chapter": 3
+    },
+    {
+      "start": 274.8040021362356,
+      "end": 279.24399694824734,
+      "text": "Rotational kinetic energy is one half I omega squared, giving eighteen joules.",
+      "chapter": 3
+    },
+    {
+      "start": 280.0039990844778,
+      "end": 283.84400305176297,
+      "text": "Constant torque times angular displacement also gives eighteen joules of work.",
+      "chapter": 3
+    },
+    {
+      "start": 284.4239972534231,
+      "end": 285.44400152588406,
+      "text": "Two approaches agree.",
+      "chapter": 3
+    },
+    {
+      "start": 285.44400152588406,
+      "end": 289.70400366211453,
+      "text": "Remember: the torque supplied in this question is the net torque, after",
+      "chapter": 3
+    },
+    {
+      "start": 289.70400366211453,
+      "end": 291.24399694824734,
+      "text": "including any opposing torques.",
+      "chapter": 3
+    },
+    {
+      "start": 291.45600000000746,
+      "end": 296.55599990464003,
+      "text": "A wheel rolling along the ground does two things: its centre moves forward, and",
+      "chapter": 4
+    },
+    {
+      "start": 296.55599990464003,
+      "end": 298.8760000763014,
+      "text": "the wheel rotates about its centre.",
+      "chapter": 4
+    },
+    {
+      "start": 298.8760000763014,
+      "end": 301.2759996948317,
+      "text": "We must include both parts of the kinetic energy.",
+      "chapter": 4
+    },
+    {
+      "start": 302.23599973297866,
+      "end": 305.3159996566847,
+      "text": "Translational energy is one half mass times centre speed squared.",
+      "chapter": 4
+    },
+    {
+      "start": 306.2560001907423,
+      "end": 310.85599961853774,
+      "text": "Rotational energy is one half moment of inertia about the centre times angular",
+      "chapter": 4
+    },
+    {
+      "start": 310.85599961853774,
+      "end": 311.5359999237135,
+      "text": "speed squared.",
+      "chapter": 4
+    },
+    {
+      "start": 312.63600030518325,
+      "end": 316.6159998474196,
+      "text": "For rolling without slipping on a stationary surface, centre speed equals",
+      "chapter": 4
+    },
+    {
+      "start": 316.6159998474196,
+      "end": 318.0959993896559,
+      "text": "radius times angular speed.",
+      "chapter": 4
+    },
+    {
+      "start": 318.9359995422438,
+      "end": 321.816000610359,
+      "text": "Do not apply that constraint to a wheel that is skidding.",
+      "chapter": 4
+    },
+    {
+      "start": 323.0959993896559,
+      "end": 327.85600152588637,
+      "text": "Try a uniform solid disk of mass two kilograms and radius half a metre, rolling",
+      "chapter": 4
+    },
+    {
+      "start": 327.85600152588637,
+      "end": 330.8759981689528,
+      "text": "without slipping at a centre speed of two metres per second.",
+      "chapter": 4
+    },
+    {
+      "start": 331.73599877930434,
+      "end": 333.8360010681227,
+      "text": "Its angular speed is four radians per second.",
+      "chapter": 4
+    },
+    {
+      "start": 335.05599847412856,
+      "end": 336.53600183106215,
+      "text": "Translational energy is four joules.",
+      "chapter": 4
+    },
+    {
+      "start": 337.2759996948317,
+      "end": 341.05599847412856,
+      "text": "Its moment of inertia is zero point two five kilogram metres squared, so",
+      "chapter": 4
+    },
+    {
+      "start": 341.05599847412856,
+      "end": 342.7759996948317,
+      "text": "rotational energy is two joules.",
+      "chapter": 4
+    },
+    {
+      "start": 343.63600030518325,
+      "end": 345.3759981689528,
+      "text": "Total kinetic energy is six joules.",
+      "chapter": 4
+    },
+    {
+      "start": 345.9159990844801,
+      "end": 349.9359995422438,
+      "text": "What changes for a thin ring with the same mass, radius, and centre speed?",
+      "chapter": 4
+    },
+    {
+      "start": 351.4159990844801,
+      "end": 352.7759996948317,
+      "text": "Pause and compare the moments of inertia.",
+      "chapter": 4
+    },
+    {
+      "start": 353.53600183106215,
+      "end": 357.61600366211684,
+      "text": "The ring has twice the rotational inertia, so its rotational energy is four",
+      "chapter": 4
+    },
+    {
+      "start": 357.61600366211684,
+      "end": 359.5959993896559,
+      "text": "joules and its total is eight joules.",
+      "chapter": 4
+    },
+    {
+      "start": 360.43600335694106,
+      "end": 363.8960024414137,
+      "text": "That does not mean it has a greater centre speed; the speeds were specified",
+      "chapter": 4
+    },
+    {
+      "start": 363.8960024414137,
+      "end": 364.35600152588637,
+      "text": "equal.",
+      "chapter": 4
+    },
+    {
+      "start": 365.15599694824965,
+      "end": 369.4960009155348,
+      "text": "Your final checklist is axis, torque, moment of inertia, and any rolling",
+      "chapter": 4
+    },
+    {
+      "start": 369.4960009155348,
+      "end": 369.95600000000746,
+      "text": "constraint.",
+      "chapter": 4
+    },
+    {
+      "start": 370.63600030518325,
+      "end": 374.63600030518325,
+      "text": "These are foundations; angular momentum, axis theorems, and more advanced",
+      "chapter": 4
+    },
+    {
+      "start": 374.63600030518325,
+      "end": 376.3960024414137,
+      "text": "rolling problems need further study.",
+      "chapter": 4
+    }
+  ]
+}

@@ -1,4 +1,22 @@
 import type { StudyLesson } from "./course";
+import { chemistryFoundationsLesson } from "./chemistry-foundations-study.ts";
+import { chemistryExpansionLessons } from "./chemistry-expansion-study.ts";
+import { physicalChemistryLessons } from "./physical-chemistry-study.ts";
+import { equilibriumElectrochemistryLessons } from "./equilibrium-electrochemistry-study.ts";
+import { chemistryCoreLessons } from "./chemistry-core-study.ts";
+import { organicReactionLessons } from "./organic-reactions-study.ts";
+import { oxygenNitrogenLessons } from "./organic-oxygen-nitrogen-study.ts";
+import { biomoleculesAnalysisLessons } from "./biomolecules-analysis-study.ts";
+import { inorganicPracticalLessons } from "./inorganic-practical-study.ts";
+import { nextStudyLessons } from "./study-lessons-two.ts";
+import { rotationApplicationsLesson } from "./rotation-applications-study.ts";
+import { gravityApplicationsLesson } from "./gravity-applications-study.ts";
+import { thermalApplicationsLessons } from "./thermal-applications-study.ts";
+import { electrostaticsApplicationsLesson } from "./electrostatics-applications-study.ts";
+import { capacitorApplicationsLesson } from "./capacitor-applications-study.ts";
+import { circuitApplicationsLesson } from "./circuit-applications-study.ts";
+import { magneticApplicationsLesson } from "./magnetic-applications-study.ts";
+import { inductionApplicationsLesson } from "./induction-applications-study.ts";
 
 export const studyLessons: StudyLesson[] = [
   {
@@ -48,7 +66,7 @@ export const studyLessons: StudyLesson[] = [
     title: "The mole: connecting particles, mass and reactions",
     summary: "Particle counting, molar mass, composition and limiting reactants.",
     prerequisites: "Ratios, scientific notation and reading chemical formulas.",
-    remaining: "Atomic theory, laws of chemical combination and further stoichiometry problems remain to complete this unit.",
+    remaining: "Written companion to the eight-chapter Marin recording for Unit 1. The recording adds chemical laws, purity, yield, gas volumes and dilution. Longer reaction chains, combustion analysis and further experimental problems remain; this is not complete unit coverage.",
     sections: [
       { title: "A counting unit, not a fixed mass", paragraphs: [
         "A dozen counts twelve objects regardless of what those objects are. A mole similarly counts specified entities, but the count is much larger: exactly 6.02214076 × 10²³ entities per mole. The entities might be atoms, molecules, ions or formula units; always name them.",
@@ -127,4 +145,22 @@ export const studyLessons: StudyLesson[] = [
     ],
     sources: [{ title: "OpenStax: functions and notation", url: "https://openstax.org/books/college-algebra-2e/pages/3-1-functions-and-function-notation" }],
   },
+  ...nextStudyLessons,
+  chemistryFoundationsLesson,
+  ...chemistryExpansionLessons,
+  ...physicalChemistryLessons,
+  ...equilibriumElectrochemistryLessons,
+  ...chemistryCoreLessons,
+  ...organicReactionLessons,
+  ...oxygenNitrogenLessons,
+  ...biomoleculesAnalysisLessons,
+  ...inorganicPracticalLessons,
+  rotationApplicationsLesson,
+  gravityApplicationsLesson,
+  ...thermalApplicationsLessons,
+  electrostaticsApplicationsLesson,
+  capacitorApplicationsLesson,
+  circuitApplicationsLesson,
+  magneticApplicationsLesson,
+  inductionApplicationsLesson,
 ];

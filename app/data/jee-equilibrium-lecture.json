@@ -1,0 +1,693 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script. Read every sentence completely and precisely, including the final sentence. Do not summarize.",
+  "title": "Equilibrium: competing changes, acids and solubility",
+  "subject": "Chemistry",
+  "unit": 6,
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 Chemistry syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: equilibrium constants",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants"
+    },
+    {
+      "title": "OpenStax: buffers",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-6-buffers"
+    },
+    {
+      "title": "OpenStax: precipitation and dissolution",
+      "url": "https://openstax.org/books/chemistry-2e/pages/15-1-precipitation-and-dissolution"
+    },
+    {
+      "title": "OpenStax: acid-base titrations",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations"
+    },
+    {
+      "title": "OpenStax: coupled equilibria",
+      "url": "https://openstax.org/books/chemistry-2e/pages/15-3-coupled-equilibria"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Equilibrium is movement in both directions",
+      "formula": "Dynamic equilibrium: forward rate = reverse rate; Henry convention: p = k_H x",
+      "points": [
+        "Water · Evaporation · Condensation",
+        "At equilibrium · Rate r · Rate r",
+        "Henry: p = kH x · 2/1000 · x = 0.002"
+      ],
+      "script": "Welcome to Equilibrium. This recorded Chemistry class uses an AI generated Marin voice. Equilibrium is dynamic: opposing changes continue at equal, nonzero rates. Imagine liquid water in a closed container at fixed temperature. Water evaporates while vapour condenses. At equilibrium the amounts remain constant because the two rates balance, not because the molecules stop moving. Equal rates do not require equal amounts. Similar reasoning applies to melting and freezing, sublimation and deposition, and reversible chemical reactions. The conditions and phases must be specified. For a gas dissolved in a liquid, one common Henry law convention is gas partial pressure equals Henry's constant times the dissolved gas mole fraction. At fixed temperature and pressure, a larger constant in this convention means a smaller dissolved mole fraction. Suppose the gas partial pressure is two bar and the constant is one thousand bar. Divide two by one thousand to obtain mole fraction zero point zero zero two. Doubling the partial pressure doubles that mole fraction within the dilute model. A different convention can put the concentration on the other side, so do not compare constants before checking definitions. This distinction between a changing rate and a fixed equilibrium composition will guide the remaining chapters.",
+      "board": {
+        "heading": "Opposing rates continue",
+        "columns": [
+          "Process",
+          "Forward",
+          "Reverse"
+        ],
+        "rows": [
+          [
+            "Water",
+            "Evaporation",
+            "Condensation"
+          ],
+          [
+            "At equilibrium",
+            "Rate r",
+            "Rate r"
+          ],
+          [
+            "Henry: p = kH x",
+            "2/1000",
+            "x = 0.002"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Compare the present mixture with K",
+      "formula": "Q < K: forward; Q > K: reverse; Delta n_g = gaseous product coefficients - gaseous reactant coefficients",
+      "points": [
+        "Q · 0.20²/(0.10²) · 4",
+        "K at stated T · Given · 50",
+        "Q < K · Forward · HI forms"
+      ],
+      "script": "The reaction quotient Q describes the present mixture. The equilibrium constant K describes equilibrium at the specified temperature. For a balanced reaction, multiply product activities raised to their coefficients and divide by the corresponding reactant product. Pure solids and pure liquids have unit activity in their reference states and are omitted from the usual expression. If Q is smaller than K, the forward direction is favoured; if larger, the reverse direction is favoured. Consider hydrogen plus iodine forming two hydrogen iodide molecules, all gases. In the ideal concentration convention, Q is hydrogen iodide concentration squared divided by hydrogen concentration times iodine concentration. Let those concentrations be zero point two zero, zero point one zero, and zero point one zero molar respectively. Q is four. If K is fifty at that temperature, the mixture proceeds forward. Reversing a reaction replaces K with its reciprocal. Doubling every coefficient squares K. For conventional ideal gas expressions, K p equals K c times R T raised to the gaseous mole change. In this example, two gas molecules replace two gas molecules, so the exponent is zero. Keep the pressure, concentration and gas constant conventions consistent. Rigorous thermodynamic equilibrium constants are dimensionless and use activities relative to reference states.",
+      "board": {
+        "heading": "H₂ + I₂ ⇌ 2HI",
+        "columns": [
+          "Quantity",
+          "Calculation",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Q",
+            "0.20²/(0.10²)",
+            "4"
+          ],
+          [
+            "K at stated T",
+            "Given",
+            "50"
+          ],
+          [
+            "Q < K",
+            "Forward",
+            "HI forms"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Disturb the mixture, not the rules",
+      "formula": "Delta G_standard = -RT ln K",
+      "points": [
+        "Double each p · 2²/2⁴ = 1/4 · Forward",
+        "Inert gas, fixed V · No change · No shift",
+        "Catalyst · K unchanged · Faster approach"
+      ],
+      "script": "Le Chatelier's principle helps predict a response, but checking Q is more reliable than memorizing slogans. For nitrogen plus three hydrogen forming two ammonia molecules, compression at unchanged temperature increases all reacting ideal gas partial pressures. The denominator in Q has total power four, while the numerator has power two. If all partial pressures double, Q falls by a factor of four. Starting at equilibrium, Q is then below K, so formation of ammonia is favoured. Compression does not change K at fixed temperature. Adding an inert ideal gas at fixed volume leaves the reacting gases' partial pressures unchanged, so it causes no shift in this model. At fixed total pressure the volume increases, and the outcome can differ. Heating changes K and favours the endothermic direction. For an exothermic forward reaction, heating favours the reverse direction. A catalyst accelerates the approach to equilibrium without changing its composition or K at the same temperature. Removing a product can favour further product formation, provided the relevant phase and activity actually change. Adding more of a pure solid already present does not simply multiply its activity. State the temperature, volume or pressure constraint.",
+      "board": {
+        "heading": "N₂ + 3H₂ ⇌ 2NH₃",
+        "columns": [
+          "Change",
+          "Effect on Q",
+          "At fixed T"
+        ],
+        "rows": [
+          [
+            "Double each p",
+            "2²/2⁴ = 1/4",
+            "Forward"
+          ],
+          [
+            "Inert gas, fixed V",
+            "No change",
+            "No shift"
+          ],
+          [
+            "Catalyst",
+            "K unchanged",
+            "Faster approach"
+          ]
+        ]
+      },
+      "speechInput": "Le Chatelier's principle helps predict a response, but checking Q is more reliable than memorizing slogans. For nitrogen plus three hydrogen forming two ammonia molecules, compression at unchanged temperature increases all reacting ideal gas partial pressures. The denominator in Q has total power four, while the numerator has power two. If all partial pressures double, Q falls by a factor of four. Starting at equilibrium, Q is then below K, so formation of ammonia is favoured. Compression does not change K at fixed temperature. Adding an inert ideal gas at fixed volume leaves the reacting gases' partial pressures unchanged, so it causes no shift in this model. At fixed total pressure the volume increases, and the outcome can differ. Heating changes K and favours the endothermic direction. For an exothermic forward reaction, heating favours the reverse direction. A catalyst accelerates the approach to equilibrium without changing its composition or K at the same temperature. Removing a product can favour further product formation, provided the relevant phase and activity actually change. Adding more of a pure solid already present does not simply multiply its activity. State the temperature, volume or pressure constraint before choosing the predicted shift.",
+      "recordingNote": "Closing reminder shortened by TTS; transcript follows the independently verified audio. Exact requested input retained for cache provenance."
+    },
+    {
+      "title": "Acid strength is not concentration",
+      "formula": "K_w = a(H+) a(OH-); pH + pOH = pK_w",
+      "points": [
+        "[H⁺] = 10⁻³ · pH = 3 · 3",
+        "[OH⁻] = 10⁻⁵ · pOH = 5 · 9",
+        "Neutral water · Equal activities · ≈ 7 here"
+      ],
+      "script": "An acid can be described in several ways. An Arrhenius acid increases hydrogen ion concentration in water. A Bronsted acid donates a proton, and a Bronsted base accepts one. A Lewis acid accepts an electron pair. A conjugate acid and base differ by one proton. Ammonia and ammonium are one such pair. Acid strength refers to ionization behaviour, while concentration describes how much acid is present. Do not infer pH from the word strong alone. Strictly, pH is minus the base ten logarithm of hydrogen ion activity. In an elementary dilute model we use the numerical molar concentration. At twenty five degrees Celsius, the water ion product is approximately ten to the minus fourteen. The sum of pH and pOH is then approximately fourteen. A hydrogen ion concentration of ten to the minus three molar gives pH three. A hydroxide concentration of ten to the minus five molar gives pOH five and pH nine at this temperature. Neutrality means equal hydrogen and hydroxide activities, not an unconditional pH of seven at every temperature. Extremely dilute acid solutions require water ionization to be included; a strong acid concentration of ten to the minus eight molar cannot simply be assigned pH eight.",
+      "board": {
+        "heading": "At 25 °C: pH + pOH ≈ 14",
+        "columns": [
+          "Given / M",
+          "Log result",
+          "pH"
+        ],
+        "rows": [
+          [
+            "[H⁺] = 10⁻³",
+            "pH = 3",
+            "3"
+          ],
+          [
+            "[OH⁻] = 10⁻⁵",
+            "pOH = 5",
+            "9"
+          ],
+          [
+            "Neutral water",
+            "Equal activities",
+            "≈ 7 here"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Check a weak-acid shortcut before using it",
+      "formula": "x = (-K_a + sqrt(K_a^2 + 4 K_a C))/2 when water ionization is neglected",
+      "points": [
+        "0.100 · 10⁻⁵ · x/C ≈ 1%",
+        "0.00100 · 0.00100 · Quadratic",
+        "Quadratic result · x = 0.000618 · pH ≈ 3.209"
+      ],
+      "script": "For a monoprotic weak acid, let the initial concentration be C and the dissociated amount be x. Ignoring water ionization, the acid constant equals x squared divided by C minus x. If x is much smaller than C, replacing the denominator by C gives x approximately the square root of the acid constant times C. With C equal to zero point one zero zero molar and the acid constant ten to the minus five, x is approximately zero point zero zero one zero zero molar. The pH is about three, and only one percent dissociates. That small fraction supports the approximation. Now take both C and the acid constant as zero point zero zero one zero zero. The shortcut predicts complete dissociation, contradicting its own assumption. Solve the quadratic instead. The positive root is minus the acid constant plus the square root of its square plus four times the acid constant times C, all divided by two. The result is about zero point zero zero zero six one eight molar, giving pH three point two zero nine. About sixty two percent dissociates. The example shows why weak does not automatically mean slightly dissociated at every dilution. Check both the neglected dissociation fraction and whether water's own ions matter.",
+      "board": {
+        "heading": "Weak acid: test the approximation",
+        "columns": [
+          "C / M",
+          "Ka",
+          "Method"
+        ],
+        "rows": [
+          [
+            "0.100",
+            "10⁻⁵",
+            "x/C ≈ 1%"
+          ],
+          [
+            "0.00100",
+            "0.00100",
+            "Quadratic"
+          ],
+          [
+            "Quadratic result",
+            "x = 0.000618",
+            "pH ≈ 3.209"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A buffer has two partners and finite capacity",
+      "formula": "Buffer: pH approximately pK_a + log10([A-]/[HA])",
+      "points": [
+        "Initially · 20 · 30",
+        "Add 5 mmol H⁺ · +5 · −5",
+        "After reaction · 25 · 25"
+      ],
+      "script": "A buffer contains a weak acid and its conjugate base in useful amounts. The acid consumes added base, while the conjugate base consumes added acid. First complete the strong acid or base reaction using moles. Only then apply the Henderson Hasselbalch approximation: pH equals p K a plus the base ten logarithm of remaining conjugate base divided by remaining acid. Suppose the buffer contains twenty millimoles of acid and thirty millimoles of conjugate base. Add five millimoles of strong acid. It consumes five millimoles of conjugate base and forms five millimoles of weak acid, leaving twenty five millimoles of each. Their concentration ratio equals their mole ratio because they share the same final volume. The ratio is one, so with p K a four point seven six, the final pH is approximately four point seven six. Using the original thirty over twenty ratio would ignore the neutralization. A ten to one base to acid ratio would instead add one pH unit. Diluting both partners equally initially preserves their ratio approximately, but reduces buffer capacity. If one partner is exhausted, stop using the two partner buffer formula and account for excess strong reagent and any relevant hydrolysis.",
+      "board": {
+        "heading": "Neutralize before using the buffer ratio",
+        "columns": [
+          "Amounts / mmol",
+          "HA",
+          "A⁻"
+        ],
+        "rows": [
+          [
+            "Initially",
+            "20",
+            "30"
+          ],
+          [
+            "Add 5 mmol H⁺",
+            "+5",
+            "−5"
+          ],
+          [
+            "After reaction",
+            "25",
+            "25"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Salt ions can react with water",
+      "formula": "Conjugate pair: K_a K_b = K_w",
+      "points": [
+        "Kb · 10⁻¹⁴ / 10⁻⁵ · 10⁻⁹",
+        "[OH⁻] · √(10⁻⁹ × 0.1) · 10⁻⁵ M",
+        "pH · 14 − 5 · 9.00"
+      ],
+      "script": "Salt solutions need not be neutral. Acetate accepts a proton from water and produces hydroxide, so sodium acetate is basic in the elementary aqueous model. Ammonium can donate a proton to water, so ammonium chloride is acidic. Sodium and chloride are spectators here. For a conjugate pair at a given temperature, the acid constant times the base constant equals the water ion product. Consider zero point one zero zero molar sodium acetate at twenty five degrees Celsius. If the acetic acid constant is ten to the minus five, acetate's base constant is ten to the minus nine. The small hydrolysis estimate gives hydroxide concentration equal to the square root of the base constant times concentration, or ten to the minus five molar. The pOH is five and the pH is nine. Only zero point zero one percent of the acetate hydrolyses, so replacing its remaining concentration by the starting value is justified. The hydroxide concentration is also large compared with the neutral water background in this example. A salt of a strong acid and strong base is approximately neutral when neither ion hydrolyses appreciably. Salts with two reacting ions, amphiprotic species and very dilute solutions need additional equilibrium analysis. Identify the reacting ion before choosing a shortcut.",
+      "board": {
+        "heading": "Acetate hydrolysis at 25 °C",
+        "columns": [
+          "Step",
+          "Calculation",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Kb",
+            "10⁻¹⁴ / 10⁻⁵",
+            "10⁻⁹"
+          ],
+          [
+            "[OH⁻]",
+            "√(10⁻⁹ × 0.1)",
+            "10⁻⁵ M"
+          ],
+          [
+            "pH",
+            "14 − 5",
+            "9.00"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Precipitation follows the ion product",
+      "formula": "AgCl: K_sp approximately [Ag+][Cl-]; Q_sp > K_sp permits precipitation",
+      "points": [
+        "Stock · 2 × 10⁻⁵ · 2 × 10⁻⁵",
+        "After mixing · 1 × 10⁻⁵ · 1 × 10⁻⁵",
+        "Qsp = 10⁻¹⁰ · Equals Ksp · Saturated"
+      ],
+      "script": "Solubility products depend on stoichiometry. Silver chloride produces one silver ion and one chloride ion, so its dilute ion product is their concentration product. In pure water, molar solubility s gives a product of s squared. If an illustrative solubility product is ten to the minus ten, the solubility is ten to the minus five molar. With zero point zero one zero molar background chloride and no competing reactions, the approximate solubility falls to ten to the minus eight molar. Check that this is small compared with the background. A salt producing one A ion and two B ions instead gives four times s cubed. Mixing requires dilution before comparing the ion product with the solubility product. Mix equal volumes of silver and chloride stock solutions, each two times ten to the minus five molar. Each concentration halves, so the initial ion product is ten to the minus ten. With the illustrative constant above, this is exactly the saturation boundary, not supersaturation. A larger ion product permits precipitation; a smaller one permits more dissolution if solid is available. Common ions usually reduce solubility, but complex formation and acid base reactions can modify the result. Use the seven worked examples and twelve original questions in the notes to practise these checks.",
+      "board": {
+        "heading": "Dilute first, then test precipitation",
+        "columns": [
+          "Equal volumes",
+          "[Ag⁺] / M",
+          "[Cl⁻] / M"
+        ],
+        "rows": [
+          [
+            "Stock",
+            "2 × 10⁻⁵",
+            "2 × 10⁻⁵"
+          ],
+          [
+            "After mixing",
+            "1 × 10⁻⁵",
+            "1 × 10⁻⁵"
+          ],
+          [
+            "Qsp = 10⁻¹⁰",
+            "Equals Ksp",
+            "Saturated"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Convert gas equilibrium conventions",
+      "formula": "Kp = Kc (RT c°/p°)^Δng for the stated ideal-gas standards",
+      "script": "Pressure and concentration equilibrium expressions must use compatible conventions. For an ideal gas, partial pressure equals concentration times R T. If the pressure quotient uses each pressure divided by its standard pressure and the concentration quotient uses each concentration divided by its standard concentration, their conversion includes R T times standard concentration divided by standard pressure. Raise that dimensionless factor to the gaseous product mole count minus the gaseous reactant mole count. For dinitrogen tetroxide forming two nitrogen dioxide molecules, the change is one. Take standard concentration one mole per litre, standard pressure one bar, temperature three hundred kelvin and R zero point zero eight three one four litre bar per mole kelvin. The conversion factor is twenty four point nine four two. A supplied concentration based constant of zero point one zero zero therefore corresponds to a pressure based constant about two point four nine four under these conventions. When the gaseous mole change is zero, the factor cancels. Count gaseous species only and state the standards rather than silently combining incompatible units or treating every reported constant as the same numerical quantity.",
+      "points": [
+        "N₂O₄ ⇌ 2NO₂ · Δng = 2 − 1 · 1",
+        "Stated standards at 300 K · RT c°/p° · 24.942",
+        "Kc = 0.100 · 0.100 × 24.942 · Kp ≈ 2.494"
+      ],
+      "board": {
+        "heading": "Convert gas equilibrium conventions",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "N₂O₄ ⇌ 2NO₂",
+            "Δng = 2 − 1",
+            "1"
+          ],
+          [
+            "Stated standards at 300 K",
+            "RT c°/p°",
+            "24.942"
+          ],
+          [
+            "Kc = 0.100",
+            "0.100 × 24.942",
+            "Kp ≈ 2.494"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Use dissociation extent and total pressure",
+      "formula": "N₂O₄ ⇌ 2NO₂: Kp = [4α²/(1−α²)](P/p°)",
+      "script": "Gas dissociation changes the total number of molecules, so the reacted fraction is not generally the same as the product mole fraction. Begin with one mole of pure dinitrogen tetroxide. If a fraction alpha dissociates, one minus alpha mole remains and two alpha moles of nitrogen dioxide form. The total is one plus alpha. At twenty percent dissociation, the amounts are zero point eight and zero point four mole, with a total of one point two. The nitrogen dioxide mole fraction is therefore one third and the tetroxide fraction two thirds. At total pressure one bar, their partial pressures are one third bar and two thirds bar. With standard pressure one bar, the dimensionless pressure quotient is the square of one third divided by two thirds, giving one sixth. The general expression contains four alpha squared divided by one minus alpha squared, multiplied by total pressure divided by standard pressure. Check both atom balance and total moles before inserting a pressure. This model starts with pure reactant and assumes ideal gases without an inert gas or another competing reaction.",
+      "points": [
+        "At α = 0.20 · n(N₂O₄)=0.80; n(NO₂)=0.40 · ntotal = 1.20",
+        "Mole fractions · 0.80/1.20; 0.40/1.20 · 2/3; 1/3",
+        "At P = p° = 1 bar · (1/3)² ÷ (2/3) · Kp = 1/6"
+      ],
+      "board": {
+        "heading": "Use dissociation extent and total pressure",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "At α = 0.20",
+            "n(N₂O₄)=0.80; n(NO₂)=0.40",
+            "ntotal = 1.20"
+          ],
+          [
+            "Mole fractions",
+            "0.80/1.20; 0.40/1.20",
+            "2/3; 1/3"
+          ],
+          [
+            "At P = p° = 1 bar",
+            "(1/3)² ÷ (2/3)",
+            "Kp = 1/6"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Titration requires reaction before pH",
+      "formula": "25.00 mL 0.100 M HCl titrated with 0.100 M NaOH at 25 °C",
+      "script": "In a strong acid strong base titration, calculate the neutralization amounts before the remaining ion concentration. Start with twenty five millilitres of zero point one zero zero molar hydrochloric acid. It contains zero point zero zero two five zero mole of acid. Adding twenty millilitres of equally concentrated sodium hydroxide consumes zero point zero zero two zero zero mole, leaving zero point zero zero zero five zero mole of hydrogen ions in forty five millilitres. The concentration is about zero point zero one one one molar and p H about one point nine five. At twenty five millilitres of base, the stoichiometric amounts are equal. For this ideal strong acid strong base example at twenty five degrees Celsius, p H is approximately seven. At thirty millilitres, excess hydroxide is zero point zero zero zero five zero mole in fifty five millilitres, giving p O H about two point zero four and p H about eleven point nine six. Total volume matters on both sides of equivalence. A weak acid titration has different equilibrium behaviour, so do not transfer the neutral equivalence conclusion to every acid base pair.",
+      "points": [
+        "20.00 mL base · Excess H⁺ / 45.00 mL · pH ≈ 1.95",
+        "25.00 mL base · Strong acid/base equivalence · pH ≈ 7.00",
+        "30.00 mL base · Excess OH⁻ / 55.00 mL · pH ≈ 11.96"
+      ],
+      "board": {
+        "heading": "Titration requires reaction before pH",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "20.00 mL base",
+            "Excess H⁺ / 45.00 mL",
+            "pH ≈ 1.95"
+          ],
+          [
+            "25.00 mL base",
+            "Strong acid/base equivalence",
+            "pH ≈ 7.00"
+          ],
+          [
+            "30.00 mL base",
+            "Excess OH⁻ / 55.00 mL",
+            "pH ≈ 11.96"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Common ions suppress simple solubility",
+      "formula": "AgCl: Ksp = aAg⁺ aCl⁻; dilute approximation [Ag⁺][Cl⁻]",
+      "script": "A solubility product constrains free ion activities, not the total amount of every metal containing species in solution. For a simple dilute silver chloride model, use the concentration product as an approximation to the activity expression. With illustrative solubility product one point eight times ten to the minus ten, pure water gives equal silver and chloride concentrations and a molar solubility about one point three four times ten to the minus five. Now suppose the solution already contains zero point zero one zero molar chloride. If additional dissolution is small, free chloride remains approximately that value. Divide the solubility product by zero point zero one zero to obtain silver concentration one point eight times ten to the minus eight molar. The added dissolution is tiny relative to the initial chloride, so the approximation is self consistent. This common ion lowers simple solubility in the stated model. Complex formation, other equilibria and nonideal activities can alter the result. In particular, total dissolved silver need not equal free silver when complexes are important. Check what concentration the question actually asks for before applying the product expression.",
+      "points": [
+        "AgCl in pure water · s = √(1.8 × 10⁻¹⁰) · s ≈ 1.34 × 10⁻⁵ M",
+        "Initial Cl⁻ = 0.010 M · [Ag⁺] ≈ Ksp/[Cl⁻] · 1.8 × 10⁻⁸ M",
+        "Approximation check · s ≪ 0.010 M · Ignore complexes only if stated"
+      ],
+      "board": {
+        "heading": "Common ions suppress simple solubility",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "AgCl in pure water",
+            "s = √(1.8 × 10⁻¹⁰)",
+            "s ≈ 1.34 × 10⁻⁵ M"
+          ],
+          [
+            "Initial Cl⁻ = 0.010 M",
+            "[Ag⁺] ≈ Ksp/[Cl⁻]",
+            "1.8 × 10⁻⁸ M"
+          ],
+          [
+            "Approximation check",
+            "s ≪ 0.010 M",
+            "Ignore complexes only if stated"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Amphiprotic salts need two acid constants",
+      "formula": "For a suitable intermediate salt: pH ≈ ½(pKa1 + pKa2)",
+      "script": "An amphiprotic species can accept or donate a proton. Hydrogen carbonate is a familiar intermediate in a diprotic acid system. Its acid behaviour is controlled by the second acid dissociation constant, while its base behaviour is related to the first constant through the water ion product. Under the appropriate intermediate salt approximation, p H is approximately half the sum of the two p K a values. For illustrative values six point three and ten point three, the estimate is eight point three. This is a mildly basic result even though the formula contains hydrogen. Do not classify a salt as acidic simply because its anion still carries a proton. The average formula assumes conditions where the amphiprotic salt contribution dominates water effects and the approximations used in its derivation are adequate. Very dilute solutions, additional acids or bases, and important competing equilibria can require a fuller mass and charge balance. The two constants must refer to the same acid system, solvent and temperature. A useful answer states the model and its limits alongside the numerical average.",
+      "points": [
+        "Intermediate species · Can gain or lose H⁺ · Amphiprotic",
+        "Illustrative pKa values · 6.3 and 10.3 · pH ≈ 8.3",
+        "Model limitation · Very dilute / competing species · Use full balances if needed"
+      ],
+      "board": {
+        "heading": "Amphiprotic salts need two acid constants",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Intermediate species",
+            "Can gain or lose H⁺",
+            "Amphiprotic"
+          ],
+          [
+            "Illustrative pKa values",
+            "6.3 and 10.3",
+            "pH ≈ 8.3"
+          ],
+          [
+            "Model limitation",
+            "Very dilute / competing species",
+            "Use full balances if needed"
+          ]
+        ]
+      }
+    }
+  ],
+  "quiz": [
+    {
+      "question": "At dynamic equilibrium the forward and reverse rates are:",
+      "options": [
+        "Equal and nonzero",
+        "Both necessarily zero",
+        "Equal to the concentrations",
+        "Always unequal"
+      ],
+      "answer": 0,
+      "explanation": "Opposing changes continue at equal rates, leaving macroscopic composition constant."
+    },
+    {
+      "question": "At fixed temperature, Q greater than K favours:",
+      "options": [
+        "Only forward reaction",
+        "The reverse direction",
+        "A larger K automatically",
+        "No possible change"
+      ],
+      "answer": 1,
+      "explanation": "The reverse direction reduces the reaction quotient towards its equilibrium value."
+    },
+    {
+      "question": "A catalyst at unchanged temperature changes:",
+      "options": [
+        "K",
+        "Equilibrium composition necessarily",
+        "The time to approach equilibrium",
+        "The balanced coefficients"
+      ],
+      "answer": 2,
+      "explanation": "It accelerates both opposing pathways without changing the equilibrium constant."
+    },
+    {
+      "question": "At 25 degrees Celsius, pH 3 corresponds approximately to [H+] of:",
+      "options": [
+        "3 M",
+        "10^-11 M",
+        "10^3 M",
+        "10^-3 M"
+      ],
+      "answer": 3,
+      "explanation": "The dilute concentration approximation uses [H+] = 10^(-pH) mol/L."
+    },
+    {
+      "question": "A suitable buffer with equal acid and conjugate-base concentrations has pH approximately:",
+      "options": [
+        "pK_a",
+        "Always seven",
+        "Zero",
+        "Twice pK_a"
+      ],
+      "answer": 0,
+      "explanation": "The ratio is one, so its base-ten logarithm contributes zero to the buffer expression."
+    },
+    {
+      "question": "For AB2 dissolving as A2+ + 2B-, with no background ions, K_sp is approximately:",
+      "options": [
+        "s^2",
+        "4s^3",
+        "2s",
+        "s/2"
+      ],
+      "answer": 1,
+      "explanation": "The concentrations are s and 2s, giving s(2s)^2 = 4s^3."
+    },
+    {
+      "question": "A buffer initially has 20 mmol HA and 30 mmol A-. After adding 5 mmol strong acid, the remaining A-/HA mole ratio is:",
+      "options": [
+        "30/20",
+        "35/15",
+        "1",
+        "0"
+      ],
+      "answer": 2,
+      "explanation": "The acid consumes 5 mmol A- and forms 5 mmol HA, leaving 25 mmol of each. Both share the final volume."
+    },
+    {
+      "question": "If added strong base consumes all HA in an HA/A- buffer, which next step is correct?",
+      "options": [
+        "Use the old buffer ratio",
+        "Assume pH equals pK_a",
+        "Ignore the added base",
+        "Account for excess base and any relevant hydrolysis"
+      ],
+      "answer": 3,
+      "explanation": "The two-partner buffer model no longer applies after HA is exhausted. Stoichiometry determines whether strong base remains."
+    },
+    {
+      "question": "At 25 degrees Celsius, an acid has K_a = 10^-5. Its conjugate base has K_b approximately:",
+      "options": [
+        "10^-9",
+        "10^-5",
+        "10^9",
+        "10^-19"
+      ],
+      "answer": 0,
+      "explanation": "At this temperature K_a K_b = 10^-14, so K_b = 10^-14/10^-5 = 10^-9."
+    },
+    {
+      "question": "Equal volumes of Ag+ and Cl- stock solutions, each 2 x 10^-5 M, are mixed. Before precipitation their ion product is:",
+      "options": [
+        "4 x 10^-10",
+        "1 x 10^-10",
+        "2 x 10^-5",
+        "1 x 10^-5"
+      ],
+      "answer": 1,
+      "explanation": "Mixing halves each concentration to 10^-5 M. Their product is 10^-10; using stock concentrations would overestimate it."
+    },
+    {
+      "question": "For a weak-acid calculation, sqrt(K_a C) equals C. What does this indicate?",
+      "options": [
+        "The shortcut is certainly exact",
+        "Water always dominates",
+        "The small-dissociation approximation fails",
+        "The acid concentration is zero"
+      ],
+      "answer": 2,
+      "explanation": "Replacing C-x by C requires x much smaller than C. An estimate equal to C contradicts that assumption."
+    },
+    {
+      "question": "Illustrative K_sp for AB2 is 4 x 10^-12. In pure water, neglecting other reactions, its molar solubility is:",
+      "options": [
+        "2 x 10^-6 M",
+        "4 x 10^-12 M",
+        "1 x 10^-6 M",
+        "1 x 10^-4 M"
+      ],
+      "answer": 3,
+      "explanation": "K_sp = 4s^3, so s^3 = 10^-12 and s = 10^-4 M. The ion coefficient must be included before taking the cube root."
+    },
+    {
+      "question": "For N2O4 ⇌ 2NO2 at 300 K with the stated 1 M and 1 bar standards, RTc°/p°=24.942 and Kc=0.100. Kp is:",
+      "options": [
+        "0.00401",
+        "2.4942",
+        "24.942",
+        "0.100"
+      ],
+      "answer": 1,
+      "explanation": "Δng=1, so multiply the concentration-based constant by the stated dimensionless conversion factor."
+    },
+    {
+      "question": "Starting from pure N2O4 with α=0.20, the NO2 mole fraction is:",
+      "options": [
+        "0.20",
+        "0.40",
+        "1/3",
+        "2/3"
+      ],
+      "answer": 2,
+      "explanation": "NO2 amount is 0.40 and total amount 1.20 per initial mole, giving one third."
+    },
+    {
+      "question": "25.00 mL 0.100 M HCl plus 20.00 mL 0.100 M NaOH has approximate ideal pH:",
+      "options": [
+        "1.95",
+        "7.00",
+        "11.96",
+        "0.70"
+      ],
+      "answer": 0,
+      "explanation": "0.00050 mol H+ remains in 0.04500 L, giving pH≈1.95."
+    },
+    {
+      "question": "With AgCl Ksp=1.8×10^−10 and initial chloride 0.010 M in the stated simple model, free Ag+ is approximately:",
+      "options": [
+        "1.34×10^−5 M",
+        "1.8×10^−10 M",
+        "0.010 M",
+        "1.8×10^−8 M"
+      ],
+      "answer": 3,
+      "explanation": "Use Ksp/[Cl−] and check that additional dissolution is negligible relative to initial chloride."
+    },
+    {
+      "question": "For an intermediate amphiprotic salt under the stated approximation, pKa1=6.3 and pKa2=10.3 give pH:",
+      "options": [
+        "4.0",
+        "8.3",
+        "16.6",
+        "6.3"
+      ],
+      "answer": 1,
+      "explanation": "The appropriate estimate is half the sum: (6.3+10.3)/2=8.3."
+    },
+    {
+      "question": "At α=0.20 for pure N2O4 dissociation and P=p°=1 bar, dimensionless Kp is:",
+      "options": [
+        "1/3",
+        "2/3",
+        "1/6",
+        "1"
+      ],
+      "answer": 2,
+      "explanation": "Use y(NO2)^2/y(N2O4)=(1/3)^2/(2/3)=1/6."
+    }
+  ]
+}

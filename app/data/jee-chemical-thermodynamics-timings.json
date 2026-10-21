@@ -1,0 +1,1793 @@
+{
+  "duration": 954.3840000000272,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 118.6560000000036
+    },
+    {
+      "start": 118.6560000000036,
+      "end": 236.85600000000719
+    },
+    {
+      "start": 236.85600000000719,
+      "end": 350.5200000000106
+    },
+    {
+      "start": 350.5200000000106,
+      "end": 465.43200000001406
+    },
+    {
+      "start": 465.43200000001406,
+      "end": 590.4480000000179
+    },
+    {
+      "start": 590.4480000000179,
+      "end": 660.0960000000197
+    },
+    {
+      "start": 660.0960000000197,
+      "end": 741.6480000000219
+    },
+    {
+      "start": 741.6480000000219,
+      "end": 808.0080000000235
+    },
+    {
+      "start": 808.0080000000235,
+      "end": 880.9200000000253
+    },
+    {
+      "start": 880.9200000000253,
+      "end": 954.3840000000272
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.9000000953674316,
+      "text": "Welcome to Chemical Thermodynamics.",
+      "chapter": 0
+    },
+    {
+      "start": 3.7200000286102295,
+      "end": 7.619999885559082,
+      "text": "This recorded Chemistry class uses an AI generated Marin voice.",
+      "chapter": 0
+    },
+    {
+      "start": 8.619999885559082,
+      "end": 11.420000076293945,
+      "text": "Begin every energy calculation by choosing the system.",
+      "chapter": 0
+    },
+    {
+      "start": 12.140000343322754,
+      "end": 15.600000381469727,
+      "text": "An open system exchanges matter and energy with its surroundings.",
+      "chapter": 0
+    },
+    {
+      "start": 16.360000610351562,
+      "end": 19.34000015258789,
+      "text": "A closed system exchanges energy but not matter.",
+      "chapter": 0
+    },
+    {
+      "start": 19.81999969482422,
+      "end": 22.139999389648438,
+      "text": "An isolated system exchanges neither.",
+      "chapter": 0
+    },
+    {
+      "start": 23.079999923706055,
+      "end": 27.307692160973183,
+      "text": "Internal energy, enthalpy and entropy are state functions: their changes",
+      "chapter": 0
+    },
+    {
+      "start": 27.307692160973183,
+      "end": 27.65999984741211,
+      "text": "depend",
+      "chapter": 0
+    },
+    {
+      "start": 27.65999984741211,
+      "end": 29.31999969482422,
+      "text": "on initial and final states.",
+      "chapter": 0
+    },
+    {
+      "start": 30.040000915527344,
+      "end": 33.41999816894531,
+      "text": "Heat and work describe energy transfer along a path.",
+      "chapter": 0
+    },
+    {
+      "start": 34.220001220703125,
+      "end": 38.29999923706055,
+      "text": "Temperature and pressure are intensive properties; total volume and total",
+      "chapter": 0
+    },
+    {
+      "start": 38.29999923706055,
+      "end": 39.7400016784668,
+      "text": "internal energy are extensive.",
+      "chapter": 0
+    },
+    {
+      "start": 40.41999816894531,
+      "end": 44.58000183105469,
+      "text": "In the Chemistry convention, the first law is change in internal energy equals",
+      "chapter": 0
+    },
+    {
+      "start": 44.58000183105469,
+      "end": 46.5,
+      "text": "heat plus work done on the system.",
+      "chapter": 0
+    },
+    {
+      "start": 47.08000183105469,
+      "end": 48.2400016784668,
+      "text": "Heat entering is positive.",
+      "chapter": 0
+    },
+    {
+      "start": 49.18000030517578,
+      "end": 52.220001220703125,
+      "text": "Compression work is positive, while expansion work is negative.",
+      "chapter": 0
+    },
+    {
+      "start": 52.7599983215332,
+      "end": 56.900001525878906,
+      "text": "For expansion against a constant external pressure, work is minus external",
+      "chapter": 0
+    },
+    {
+      "start": 56.900001525878906,
+      "end": 58.65999984741211,
+      "text": "pressure times the volume increase.",
+      "chapter": 0
+    },
+    {
+      "start": 59.7400016784668,
+      "end": 63.939998626708984,
+      "text": "Consider a closed system that absorbs five hundred joules and expands by one",
+      "chapter": 0
+    },
+    {
+      "start": 63.939998626708984,
+      "end": 65.08000183105469,
+      "text": "litre against two bar.",
+      "chapter": 0
+    },
+    {
+      "start": 65.83999633789062,
+      "end": 67.83999633789062,
+      "text": "One litre bar equals one hundred joules.",
+      "chapter": 0
+    },
+    {
+      "start": 68.41999816894531,
+      "end": 72.0999984741211,
+      "text": "The work is therefore minus two hundred joules, and the internal energy",
+      "chapter": 0
+    },
+    {
+      "start": 72.0999984741211,
+      "end": 73.86000061035156,
+      "text": "increases by three hundred joules.",
+      "chapter": 0
+    },
+    {
+      "start": 74.22000122070312,
+      "end": 78.31999969482422,
+      "text": "The system gained heat but returned some energy to the surroundings as work.",
+      "chapter": 0
+    },
+    {
+      "start": 79.13999938964844,
+      "end": 81.45999908447266,
+      "text": "Notice that external pressure appears in this work expression.",
+      "chapter": 0
+    },
+    {
+      "start": 81.45999908447266,
+      "end": 85.26000213623047,
+      "text": "If it varies, the appropriate pressure volume integral is needed.",
+      "chapter": 0
+    },
+    {
+      "start": 86.12000274658203,
+      "end": 89.5199966430664,
+      "text": "Free expansion against zero external pressure does no pressure volume work.",
+      "chapter": 0
+    },
+    {
+      "start": 90.36000061035156,
+      "end": 94.04000091552734,
+      "text": "Adiabatic means no heat transfer; it does not automatically mean constant",
+      "chapter": 0
+    },
+    {
+      "start": 94.04000091552734,
+      "end": 94.45999908447266,
+      "text": "temperature.",
+      "chapter": 0
+    },
+    {
+      "start": 95.27999877929688,
+      "end": 96.9000015258789,
+      "text": "Isothermal means constant temperature.",
+      "chapter": 0
+    },
+    {
+      "start": 97.73999786376953,
+      "end": 101.26000213623047,
+      "text": "Isochoric means constant volume, and isobaric means constant pressure.",
+      "chapter": 0
+    },
+    {
+      "start": 101.55999755859375,
+      "end": 105.63999782464442,
+      "text": "For an ideal gas, internal energy depends only on temperature, so an",
+      "chapter": 0
+    },
+    {
+      "start": 105.63999782464442,
+      "end": 106.23999786376953,
+      "text": "isothermal",
+      "chapter": 0
+    },
+    {
+      "start": 106.23999786376953,
+      "end": 110.68000030517578,
+      "text": "change has zero internal energy change even though heat and work may each be",
+      "chapter": 0
+    },
+    {
+      "start": 110.68000030517578,
+      "end": 112.0999984741211,
+      "text": "nonzero.",
+      "chapter": 0
+    },
+    {
+      "start": 112.0999984741211,
+      "end": 115.9800033569336,
+      "text": "Keep the signs tied to the chosen system, and always convert litre bar into",
+      "chapter": 0
+    },
+    {
+      "start": 115.9800033569336,
+      "end": 118.30000305175781,
+      "text": "energy units before adding heat and work.",
+      "chapter": 0
+    },
+    {
+      "start": 118.6560000000036,
+      "end": 123.23599992370966,
+      "text": "Enthalpy is defined as internal energy plus pressure times volume.",
+      "chapter": 1
+    },
+    {
+      "start": 124.17599998093011,
+      "end": 128.0360001144445,
+      "text": "For a closed system undergoing only pressure volume work at constant pressure,",
+      "chapter": 1
+    },
+    {
+      "start": 128.57600007629753,
+      "end": 130.93599973297478,
+      "text": "the heat transferred equals the enthalpy change.",
+      "chapter": 1
+    },
+    {
+      "start": 131.4759996948278,
+      "end": 135.5539479960942,
+      "text": "At constant volume, with no other work, heat equals the internal energy",
+      "chapter": 1
+    },
+    {
+      "start": 135.5539479960942,
+      "end": 135.95599923706413,
+      "text": "change.",
+      "chapter": 1
+    },
+    {
+      "start": 136.4759996948278,
+      "end": 138.29599938965202,
+      "text": "The conditions are part of the result.",
+      "chapter": 1
+    },
+    {
+      "start": 139.1560000000036,
+      "end": 143.4759996948278,
+      "text": "An exothermic process has a negative enthalpy change, while an endothermic",
+      "chapter": 1
+    },
+    {
+      "start": 143.4759996948278,
+      "end": 145.07600007629753,
+      "text": "process has a positive one.",
+      "chapter": 1
+    },
+    {
+      "start": 145.63599954223992,
+      "end": 149.95599923706413,
+      "text": "For ideal gaseous reactants and products at the same temperature, the gas",
+      "chapter": 1
+    },
+    {
+      "start": 149.95599923706413,
+      "end": 154.5560015258825,
+      "text": "contribution gives change in enthalpy equals change in internal energy plus",
+      "chapter": 1
+    },
+    {
+      "start": 154.5560015258825,
+      "end": 157.39600167847038,
+      "text": "change in gaseous mole number times R T.",
+      "chapter": 1
+    },
+    {
+      "start": 158.29599938965202,
+      "end": 162.5560015258825,
+      "text": "In ordinary reaction calculations this form neglects condensed phase pressure",
+      "chapter": 1
+    },
+    {
+      "start": 162.5560015258825,
+      "end": 163.5759981689489,
+      "text": "volume contributions.",
+      "chapter": 1
+    },
+    {
+      "start": 164.79599938965202,
+      "end": 167.9759996948278,
+      "text": "Count only gaseous species when finding the gaseous mole change.",
+      "chapter": 1
+    },
+    {
+      "start": 168.53600106811882,
+      "end": 173.2436919673075,
+      "text": "For one nitrogen plus three hydrogen forming two ammonia, all gases, the",
+      "chapter": 1
+    },
+    {
+      "start": 173.2436919673075,
+      "end": 173.63599954223992,
+      "text": "change",
+      "chapter": 1
+    },
+    {
+      "start": 173.63599954223992,
+      "end": 177.39600167847038,
+      "text": "is two minus four, or minus two moles per reaction as written.",
+      "chapter": 1
+    },
+    {
+      "start": 178.5560015258825,
+      "end": 182.77600274658562,
+      "text": "Suppose the internal energy change is minus ninety point zero kilojoules for",
+      "chapter": 1
+    },
+    {
+      "start": 182.77600274658562,
+      "end": 184.63600335693718,
+      "text": "that reaction amount at three hundred kelvin.",
+      "chapter": 1
+    },
+    {
+      "start": 185.6560000000036,
+      "end": 190.23600183105827,
+      "text": "Use R equal to zero point zero zero eight three one four kilojoules per mole",
+      "chapter": 1
+    },
+    {
+      "start": 190.23600183105827,
+      "end": 190.5560015258825,
+      "text": "kelvin.",
+      "chapter": 1
+    },
+    {
+      "start": 191.31600366211296,
+      "end": 195.87693754956206,
+      "text": "The correction is minus two times R times three hundred, about minus four",
+      "chapter": 1
+    },
+    {
+      "start": 195.87693754956206,
+      "end": 196.18933028157912,
+      "text": "point",
+      "chapter": 1
+    },
+    {
+      "start": 196.18933028157912,
+      "end": 197.11599908447624,
+      "text": "nine nine kilojoules.",
+      "chapter": 1
+    },
+    {
+      "start": 198.03599725342156,
+      "end": 201.5759981689489,
+      "text": "The enthalpy change is about minus ninety five point zero kilojoules.",
+      "chapter": 1
+    },
+    {
+      "start": 202.6560000000036,
+      "end": 206.4560030517614,
+      "text": "Reversing the reaction reverses both energy changes and the gaseous mole",
+      "chapter": 1
+    },
+    {
+      "start": 206.4560030517614,
+      "end": 206.91600213623406,
+      "text": "change.",
+      "chapter": 1
+    },
+    {
+      "start": 207.4560030517614,
+      "end": 212.21599755859734,
+      "text": "A separate useful relation for one mole of an ideal gas is molar heat capacity",
+      "chapter": 1
+    },
+    {
+      "start": 212.21599755859734,
+      "end": 217.35599694824577,
+      "text": "at constant pressure minus molar heat capacity at constant volume equals R.",
+      "chapter": 1
+    },
+    {
+      "start": 217.9560030517614,
+      "end": 221.9959963378942,
+      "text": "It is not a universal identity for liquids, solids or real gases.",
+      "chapter": 1
+    },
+    {
+      "start": 223.13600335693718,
+      "end": 227.30625857779054,
+      "text": "Heat capacity relates heat to temperature change under specified conditions;",
+      "chapter": 1
+    },
+    {
+      "start": 227.30625857779054,
+      "end": 227.41600213623406,
+      "text": "if",
+      "chapter": 1
+    },
+    {
+      "start": 227.41600213623406,
+      "end": 231.43599877930046,
+      "text": "it varies appreciably with temperature, use an integral instead of a constant",
+      "chapter": 1
+    },
+    {
+      "start": 231.43599877930046,
+      "end": 231.83600030517937,
+      "text": "value.",
+      "chapter": 1
+    },
+    {
+      "start": 232.8760012207067,
+      "end": 236.33600030517937,
+      "text": "Check the phase labels and the reaction amount before substituting numbers.",
+      "chapter": 1
+    },
+    {
+      "start": 236.85600000000719,
+      "end": 239.715999895103,
+      "text": "Hess's law follows from enthalpy being a state function.",
+      "chapter": 2
+    },
+    {
+      "start": 240.3959999618602,
+      "end": 243.97599988556627,
+      "text": "A reaction may be assembled from several steps; adding their enthalpy changes",
+      "chapter": 2
+    },
+    {
+      "start": 243.97599988556627,
+      "end": 245.61600022888902,
+      "text": "gives the same overall change.",
+      "chapter": 2
+    },
+    {
+      "start": 246.3959999618602,
+      "end": 247.91600041962388,
+      "text": "Reverse a step and reverse its sign.",
+      "chapter": 2
+    },
+    {
+      "start": 248.75599961853746,
+      "end": 251.8959999618602,
+      "text": "Multiply an equation by a number and multiply its enthalpy by that number.",
+      "chapter": 2
+    },
+    {
+      "start": 252.71599965668443,
+      "end": 253.9560003814769,
+      "text": "Here is an illustrative cycle.",
+      "chapter": 2
+    },
+    {
+      "start": 254.85600000000719,
+      "end": 259.64099984741927,
+      "text": "Carbon as graphite plus oxygen forming carbon dioxide has enthalpy minus three",
+      "chapter": 2
+    },
+    {
+      "start": 259.64099984741927,
+      "end": 261.97600083924056,
+      "text": "hundred ninety four kilojoules per mole of reaction.",
+      "chapter": 2
+    },
+    {
+      "start": 262.85600000000716,
+      "end": 267.4359999237132,
+      "text": "Carbon monoxide plus half an oxygen forming carbon dioxide has enthalpy minus",
+      "chapter": 2
+    },
+    {
+      "start": 267.4359999237132,
+      "end": 269.03600030518294,
+      "text": "two hundred eighty three.",
+      "chapter": 2
+    },
+    {
+      "start": 269.03600030518294,
+      "end": 272.1759996948314,
+      "text": "We want graphite plus half an oxygen forming carbon monoxide.",
+      "chapter": 2
+    },
+    {
+      "start": 273.0560007629466,
+      "end": 275.25600152588606,
+      "text": "Keep the first equation and reverse the second.",
+      "chapter": 2
+    },
+    {
+      "start": 276.09600167847395,
+      "end": 278.6759996948314,
+      "text": "Carbon dioxide cancels, leaving the target reaction.",
+      "chapter": 2
+    },
+    {
+      "start": 279.53600030518294,
+      "end": 283.53600030518294,
+      "text": "Add minus three hundred ninety four to plus two hundred eighty three to obtain",
+      "chapter": 2
+    },
+    {
+      "start": 283.53600030518294,
+      "end": 285.29599862671614,
+      "text": "minus one hundred eleven kilojoules.",
+      "chapter": 2
+    },
+    {
+      "start": 285.9759989318919,
+      "end": 289.59600167847395,
+      "text": "These rounded values illustrate the calculation; phases and reference",
+      "chapter": 2
+    },
+    {
+      "start": 289.59600167847395,
+      "end": 290.6759996948314,
+      "text": "conditions must match.",
+      "chapter": 2
+    },
+    {
+      "start": 291.59600167847395,
+      "end": 295.1559992370677,
+      "text": "Standard formation enthalpy refers to forming one mole of a substance from its",
+      "chapter": 2
+    },
+    {
+      "start": 295.1559992370677,
+      "end": 296.3960009155345,
+      "text": "elements in their reference states.",
+      "chapter": 2
+    },
+    {
+      "start": 296.9959993896556,
+      "end": 300.2360010681224,
+      "text": "The standard formation enthalpy of an element in its reference state is",
+      "chapter": 2
+    },
+    {
+      "start": 300.2360010681224,
+      "end": 304.43600183106184,
+      "text": "assigned zero; this does not say that its internal energy or entropy is zero.",
+      "chapter": 2
+    },
+    {
+      "start": 305.43600183106184,
+      "end": 309.1759996948314,
+      "text": "Multiply each formation enthalpy by its stoichiometric coefficient, then",
+      "chapter": 2
+    },
+    {
+      "start": 309.1759996948314,
+      "end": 311.15600305176497,
+      "text": "subtract the reactant sum from the product sum.",
+      "chapter": 2
+    },
+    {
+      "start": 311.93600183106184,
+      "end": 315.5760012207103,
+      "text": "Combustion enthalpy concerns complete burning of the specified amount, usually",
+      "chapter": 2
+    },
+    {
+      "start": 315.5760012207103,
+      "end": 317.8159990844798,
+      "text": "one mole, with product phases stated.",
+      "chapter": 2
+    },
+    {
+      "start": 318.6959963378978,
+      "end": 320.2359972534251,
+      "text": "Atomization creates gaseous atoms.",
+      "chapter": 2
+    },
+    {
+      "start": 320.93600183106184,
+      "end": 322.5760012207103,
+      "text": "Sublimation converts solid to gas.",
+      "chapter": 2
+    },
+    {
+      "start": 323.1759996948314,
+      "end": 327.5760012207103,
+      "text": "Ionization removes an electron from a gaseous species, while hydration brings",
+      "chapter": 2
+    },
+    {
+      "start": 327.5760012207103,
+      "end": 328.8159990844798,
+      "text": "gaseous ions into water.",
+      "chapter": 2
+    },
+    {
+      "start": 329.65600305176497,
+      "end": 332.7960024414134,
+      "text": "Dissolution can combine lattice separation and solvation effects.",
+      "chapter": 2
+    },
+    {
+      "start": 333.4760027465892,
+      "end": 337.5760012207103,
+      "text": "For a gas phase bond estimate, add energies of bonds broken and subtract",
+      "chapter": 2
+    },
+    {
+      "start": 337.5760012207103,
+      "end": 338.85600000000716,
+      "text": "energies of bonds formed.",
+      "chapter": 2
+    },
+    {
+      "start": 339.77599816895247,
+      "end": 343.3077974853587,
+      "text": "Average bond enthalpies give an approximation because bond environments",
+      "chapter": 2
+    },
+    {
+      "start": 343.3077974853587,
+      "end": 343.65600305176497,
+      "text": "differ.",
+      "chapter": 2
+    },
+    {
+      "start": 344.4959993896556,
+      "end": 348.65600305176497,
+      "text": "Do not mix an average gas bond estimate with a liquid phase reaction without",
+      "chapter": 2
+    },
+    {
+      "start": 348.65600305176497,
+      "end": 349.87599664307356,
+      "text": "accounting for phase changes.",
+      "chapter": 2
+    },
+    {
+      "start": 350.5200000000106,
+      "end": 354.46000005723107,
+      "text": "Energy conservation alone does not choose the direction of a process.",
+      "chapter": 3
+    },
+    {
+      "start": 355.5200000000106,
+      "end": 360.33999969483483,
+      "text": "Entropy supplies the second law criterion: a spontaneous change increases the",
+      "chapter": 3
+    },
+    {
+      "start": 360.33999969483483,
+      "end": 362.59999992371667,
+      "text": "total entropy of the system and surroundings.",
+      "chapter": 3
+    },
+    {
+      "start": 363.5200000000106,
+      "end": 366.8800006103622,
+      "text": "The system's entropy may decrease if the surroundings gain more.",
+      "chapter": 3
+    },
+    {
+      "start": 367.56000091553796,
+      "end": 370.9199996185409,
+      "text": "A reversible ideal limit has zero total entropy production.",
+      "chapter": 3
+    },
+    {
+      "start": 371.7399993133651,
+      "end": 376.78000022889245,
+      "text": "For a reversible isothermal path, entropy change is reversible heat divided by",
+      "chapter": 3
+    },
+    {
+      "start": 376.78000022889245,
+      "end": 377.140000839244,
+      "text": "temperature.",
+      "chapter": 3
+    },
+    {
+      "start": 377.7399993133651,
+      "end": 382.3800006103622,
+      "text": "More generally, integrate reversible heat divided by temperature along a",
+      "chapter": 3
+    },
+    {
+      "start": 382.3800006103622,
+      "end": 383.6399989318954,
+      "text": "suitable path between the states.",
+      "chapter": 3
+    },
+    {
+      "start": 384.49999954224694,
+      "end": 388.1399989318954,
+      "text": "Entropy is a state function, even when the actual path is irreversible.",
+      "chapter": 3
+    },
+    {
+      "start": 389.1000018310653,
+      "end": 392.6000018310653,
+      "text": "For the usual closed system at constant temperature and pressure, without",
+      "chapter": 3
+    },
+    {
+      "start": 392.6000018310653,
+      "end": 397.6199984741317,
+      "text": "imposed non pressure volume work, a negative Gibbs energy change identifies a",
+      "chapter": 3
+    },
+    {
+      "start": 397.6199984741317,
+      "end": 399.2999987793075,
+      "text": "thermodynamically favourable direction.",
+      "chapter": 3
+    },
+    {
+      "start": 400.0200000000106,
+      "end": 404.06000091553796,
+      "text": "Gibbs energy change is enthalpy change minus temperature times entropy change.",
+      "chapter": 3
+    },
+    {
+      "start": 404.06000091553796,
+      "end": 405.90000106812585,
+      "text": "Temperature must be in kelvin.",
+      "chapter": 3
+    },
+    {
+      "start": 406.6399989318954,
+      "end": 408.6399989318954,
+      "text": "Match the energy units before subtracting.",
+      "chapter": 3
+    },
+    {
+      "start": 409.49999954224694,
+      "end": 413.56000091553796,
+      "text": "Suppose enthalpy change is minus forty kilojoules and entropy change is minus",
+      "chapter": 3
+    },
+    {
+      "start": 413.56000091553796,
+      "end": 414.9200015258895,
+      "text": "one hundred joules per kelvin.",
+      "chapter": 3
+    },
+    {
+      "start": 415.7999987793075,
+      "end": 419.6000018310653,
+      "text": "Convert the entropy to minus zero point one zero zero kilojoules per kelvin.",
+      "chapter": 3
+    },
+    {
+      "start": 420.4399981689559,
+      "end": 424.65999938965905,
+      "text": "At three hundred kelvin, Gibbs energy change is minus forty plus thirty, or",
+      "chapter": 3
+    },
+    {
+      "start": 424.65999938965905,
+      "end": 425.64000274659264,
+      "text": "minus ten kilojoules.",
+      "chapter": 3
+    },
+    {
+      "start": 426.24000122071374,
+      "end": 430.15999938965905,
+      "text": "At five hundred kelvin, it is minus forty plus fifty, or plus ten.",
+      "chapter": 3
+    },
+    {
+      "start": 430.15999938965905,
+      "end": 434.4200015258895,
+      "text": "If both enthalpy and entropy changes are approximately temperature independent",
+      "chapter": 3
+    },
+    {
+      "start": 434.4200015258895,
+      "end": 437.56000091553796,
+      "text": "over the range, the crossover is four hundred kelvin.",
+      "chapter": 3
+    },
+    {
+      "start": 438.33999969483483,
+      "end": 442.1199984741317,
+      "text": "This exothermic process with decreasing entropy is favoured at lower",
+      "chapter": 3
+    },
+    {
+      "start": 442.1199984741317,
+      "end": 442.539996643077,
+      "text": "temperature.",
+      "chapter": 3
+    },
+    {
+      "start": 443.33999969483483,
+      "end": 446.24000122071374,
+      "text": "Positive enthalpy and positive entropy favour higher temperature.",
+      "chapter": 3
+    },
+    {
+      "start": 446.97999908448327,
+      "end": 450.56000091553796,
+      "text": "Negative enthalpy and positive entropy favour the forward direction throughout",
+      "chapter": 3
+    },
+    {
+      "start": 450.56000091553796,
+      "end": 452.3200030517684,
+      "text": "the temperature range where those signs hold.",
+      "chapter": 3
+    },
+    {
+      "start": 452.96000244141686,
+      "end": 454.2199969482528,
+      "text": "The opposite pair does not.",
+      "chapter": 3
+    },
+    {
+      "start": 454.75999786378014,
+      "end": 456.9200015258895,
+      "text": "Finally, favourable does not mean fast.",
+      "chapter": 3
+    },
+    {
+      "start": 456.9200015258895,
+      "end": 461.0200000000106,
+      "text": "A large activation barrier can make a thermodynamically favourable reaction",
+      "chapter": 3
+    },
+    {
+      "start": 461.0200000000106,
+      "end": 462.0000033569442,
+      "text": "very slow.",
+      "chapter": 3
+    },
+    {
+      "start": 462.7999987793075,
+      "end": 465.2199969482528,
+      "text": "Keep the direction question separate from the kinetics question.",
+      "chapter": 3
+    },
+    {
+      "start": 465.43200000001406,
+      "end": 469.352000076308,
+      "text": "The standard Gibbs energy change and the Gibbs energy change for the current",
+      "chapter": 4
+    },
+    {
+      "start": 469.352000076308,
+      "end": 470.93200000001406,
+      "text": "mixture are different quantities.",
+      "chapter": 4
+    },
+    {
+      "start": 471.7320001907489,
+      "end": 476.7519996948383,
+      "text": "The connection is Gibbs energy change equals standard Gibbs energy change plus",
+      "chapter": 4
+    },
+    {
+      "start": 476.7519996948383,
+      "end": 480.812000114455,
+      "text": "R T times the natural logarithm of the reaction quotient Q.",
+      "chapter": 4
+    },
+    {
+      "start": 481.7319992370746,
+      "end": 485.4119995422504,
+      "text": "The rigorous quotient uses dimensionless activities relative to standard",
+      "chapter": 4
+    },
+    {
+      "start": 485.4119995422504,
+      "end": 485.81199916078066,
+      "text": "states.",
+      "chapter": 4
+    },
+    {
+      "start": 486.8720005340717,
+      "end": 491.3720005340717,
+      "text": "For ideal dilute solutions and ideal gases, concentration or pressure ratios",
+      "chapter": 4
+    },
+    {
+      "start": 491.3720005340717,
+      "end": 493.27200015260195,
+      "text": "provide useful approximations.",
+      "chapter": 4
+    },
+    {
+      "start": 493.90199931336855,
+      "end": 499.03199847413515,
+      "text": "At equilibrium, the reaction Gibbs energy change is zero and Q equals the",
+      "chapter": 4
+    },
+    {
+      "start": 499.03199847413515,
+      "end": 500.33200152589296,
+      "text": "equilibrium constant K.",
+      "chapter": 4
+    },
+    {
+      "start": 501.43200000001406,
+      "end": 506.4119995422504,
+      "text": "Substitution gives standard Gibbs energy change equals minus R T times the",
+      "chapter": 4
+    },
+    {
+      "start": 506.4119995422504,
+      "end": 507.77200015260195,
+      "text": "natural logarithm of K.",
+      "chapter": 4
+    },
+    {
+      "start": 509.01200183106874,
+      "end": 513.0155891136898,
+      "text": "Thus a negative standard Gibbs energy change implies K greater than one at",
+      "chapter": 4
+    },
+    {
+      "start": 513.0155891136898,
+      "end": 513.2319992370747,
+      "text": "that",
+      "chapter": 4
+    },
+    {
+      "start": 513.2319992370747,
+      "end": 513.5120018310688,
+      "text": "temperature.",
+      "chapter": 4
+    },
+    {
+      "start": 514.2319992370747,
+      "end": 517.4520004577778,
+      "text": "It does not guarantee that every possible mixture will proceed forward.",
+      "chapter": 4
+    },
+    {
+      "start": 518.4020012207172,
+      "end": 522.687000114455,
+      "text": "Take standard Gibbs energy change approximately minus five point seven four",
+      "chapter": 4
+    },
+    {
+      "start": 522.687000114455,
+      "end": 525.4520004577778,
+      "text": "four kilojoules per mole at three hundred kelvin.",
+      "chapter": 4
+    },
+    {
+      "start": 526.7319992370747,
+      "end": 530.8919990844868,
+      "text": "With R equal to zero point zero zero eight three one four kilojoules per mole",
+      "chapter": 4
+    },
+    {
+      "start": 530.8919990844868,
+      "end": 536.0319984741352,
+      "text": "kelvin, the natural logarithm of K is about two point three zero three.",
+      "chapter": 4
+    },
+    {
+      "start": 536.0319984741352,
+      "end": 537.4519966430805,
+      "text": "K is approximately ten.",
+      "chapter": 4
+    },
+    {
+      "start": 538.332001525893,
+      "end": 540.7320030517719,
+      "text": "If Q is one, the forward direction is favoured.",
+      "chapter": 4
+    },
+    {
+      "start": 540.7320030517719,
+      "end": 545.105334757501,
+      "text": "If Q is one hundred, Gibbs energy change is positive, about plus five point",
+      "chapter": 4
+    },
+    {
+      "start": 545.105334757501,
+      "end": 549.5920036621235,
+      "text": "seven four kilojoules per mole, and the reverse direction is favoured.",
+      "chapter": 4
+    },
+    {
+      "start": 549.5920036621235,
+      "end": 551.6920021362446,
+      "text": "If Q is ten, the mixture is at equilibrium.",
+      "chapter": 4
+    },
+    {
+      "start": 552.6520012207172,
+      "end": 557.4120033569477,
+      "text": "Combining the equations gives Gibbs energy change equals R T times the natural",
+      "chapter": 4
+    },
+    {
+      "start": 557.4120033569477,
+      "end": 559.2920006103657,
+      "text": "logarithm of Q divided by K.",
+      "chapter": 4
+    },
+    {
+      "start": 560.3919990844868,
+      "end": 562.5120018310688,
+      "text": "This directly connects composition to direction.",
+      "chapter": 4
+    },
+    {
+      "start": 563.711998779311,
+      "end": 566.6719978637836,
+      "text": "Standard conditions do not automatically mean two hundred ninety eight kelvin;",
+      "chapter": 4
+    },
+    {
+      "start": 567.2320030517719,
+      "end": 568.5920036621235,
+      "text": "always read the stated temperature.",
+      "chapter": 4
+    },
+    {
+      "start": 569.332001525893,
+      "end": 573.1878943919787,
+      "text": "Finish with a short checklist: define the system, choose the correct work",
+      "chapter": 4
+    },
+    {
+      "start": 573.1878943919787,
+      "end": 573.4519966430805,
+      "text": "sign,",
+      "chapter": 4
+    },
+    {
+      "start": 574.211998779311,
+      "end": 577.7920006103657,
+      "text": "preserve reaction coefficients and phases, convert entropy units, and",
+      "chapter": 4
+    },
+    {
+      "start": 577.7920006103657,
+      "end": 579.0120018310688,
+      "text": "distinguish Q from K.",
+      "chapter": 4
+    },
+    {
+      "start": 579.8519981689594,
+      "end": 582.4919975586079,
+      "text": "Use the worked notes and six original practice questions.",
+      "chapter": 4
+    },
+    {
+      "start": 583.2320030517719,
+      "end": 587.1719978637836,
+      "text": "This is the core Unit four foundation; detailed enthalpy cycles, entropy",
+      "chapter": 4
+    },
+    {
+      "start": 587.1719978637836,
+      "end": 590.2320030517719,
+      "text": "integrals and wider mixed problems remain for further study.",
+      "chapter": 4
+    },
+    {
+      "start": 590.4480000000179,
+      "end": 594.6479998092831,
+      "text": "Formation enthalpies let us assemble a reaction without measuring it directly.",
+      "chapter": 5
+    },
+    {
+      "start": 595.8880000572384,
+      "end": 598.9480000000179,
+      "text": "Use the balanced coefficients and the physical states in the data.",
+      "chapter": 5
+    },
+    {
+      "start": 599.9080000381649,
+      "end": 603.987999961871,
+      "text": "For methane combustion to carbon dioxide gas and liquid water, take",
+      "chapter": 5
+    },
+    {
+      "start": 603.987999961871,
+      "end": 608.5879993896664,
+      "text": "illustrative standard formation enthalpies in kilojoules per mole: methane",
+      "chapter": 5
+    },
+    {
+      "start": 608.5879993896664,
+      "end": 613.3479996185482,
+      "text": "minus seventy five, carbon dioxide minus three hundred ninety four, and liquid",
+      "chapter": 5
+    },
+    {
+      "start": 613.3479996185482,
+      "end": 616.1280003051937,
+      "text": "water minus two hundred eighty six.",
+      "chapter": 5
+    },
+    {
+      "start": 616.1280003051937,
+      "end": 618.2679996948422,
+      "text": "Oxygen in its reference state contributes zero.",
+      "chapter": 5
+    },
+    {
+      "start": 618.9880009155453,
+      "end": 622.8029995422543,
+      "text": "Products contribute minus three hundred ninety four plus twice minus two",
+      "chapter": 5
+    },
+    {
+      "start": 622.8029995422543,
+      "end": 626.9079990844906,
+      "text": "hundred eighty six, giving minus nine hundred sixty six.",
+      "chapter": 5
+    },
+    {
+      "start": 626.9079990844906,
+      "end": 630.047998474139,
+      "text": "Subtract the reactant contribution of minus seventy five.",
+      "chapter": 5
+    },
+    {
+      "start": 630.047998474139,
+      "end": 633.9279995422543,
+      "text": "The reaction enthalpy is minus eight hundred ninety one kilojoules per mole of",
+      "chapter": 5
+    },
+    {
+      "start": 633.9279995422543,
+      "end": 635.2880001526058,
+      "text": "methane for these rounded data.",
+      "chapter": 5
+    },
+    {
+      "start": 636.3679981689633,
+      "end": 638.4279995422543,
+      "text": "Changing the product to water vapour changes the answer.",
+      "chapter": 5
+    },
+    {
+      "start": 639.3480015258968,
+      "end": 642.6880016784847,
+      "text": "Average bond enthalpies instead estimate energy for gas phase bonds broken",
+      "chapter": 5
+    },
+    {
+      "start": 642.6880016784847,
+      "end": 643.7880001526058,
+      "text": "minus bonds formed.",
+      "chapter": 5
+    },
+    {
+      "start": 643.7880001526058,
+      "end": 648.047998474139,
+      "text": "They are approximate and do not automatically include condensation or solid",
+      "chapter": 5
+    },
+    {
+      "start": 648.047998474139,
+      "end": 649.1480007629574,
+      "text": "lattice effects.",
+      "chapter": 5
+    },
+    {
+      "start": 649.4480000000179,
+      "end": 653.1480007629574,
+      "text": "An element's zero standard formation enthalpy applies to its reference state,",
+      "chapter": 5
+    },
+    {
+      "start": 653.6280003051937,
+      "end": 656.1280003051937,
+      "text": "not to every allotrope, gaseous atom or ion.",
+      "chapter": 5
+    },
+    {
+      "start": 656.8480015258968,
+      "end": 659.8480015258968,
+      "text": "Always label the amount and phase beside a thermochemical result.",
+      "chapter": 5
+    },
+    {
+      "start": 660.0960000000197,
+      "end": 665.0760000190932,
+      "text": "An ionic dissolution cycle separates processes that are easily confused.",
+      "chapter": 6
+    },
+    {
+      "start": 666.0960000000197,
+      "end": 669.6759999237257,
+      "text": "First imagine pulling the solid into separated gaseous ions.",
+      "chapter": 6
+    },
+    {
+      "start": 670.6759999237257,
+      "end": 673.5160000763136,
+      "text": "Define this lattice dissociation enthalpy as positive.",
+      "chapter": 6
+    },
+    {
+      "start": 674.2360003433424,
+      "end": 678.2760003051955,
+      "text": "Then hydrate those gaseous ions to the chosen aqueous reference states;",
+      "chapter": 6
+    },
+    {
+      "start": 679.1160004577833,
+      "end": 681.2960007629591,
+      "text": "hydration enthalpies are normally negative.",
+      "chapter": 6
+    },
+    {
+      "start": 682.2559998474318,
+      "end": 686.4360001526076,
+      "text": "Adding both stages gives the enthalpy of solution for matching endpoints and",
+      "chapter": 6
+    },
+    {
+      "start": 686.4360001526076,
+      "end": 687.4159996948439,
+      "text": "concentration conventions.",
+      "chapter": 6
+    },
+    {
+      "start": 687.4159996948439,
+      "end": 692.2960007629591,
+      "text": "With illustrative values of plus seven hundred eighty kilojoules per mole for",
+      "chapter": 6
+    },
+    {
+      "start": 692.2960007629591,
+      "end": 696.5559990844923,
+      "text": "lattice dissociation and minus seven hundred fifty for total hydration,",
+      "chapter": 6
+    },
+    {
+      "start": 697.4159996948439,
+      "end": 700.4360001526076,
+      "text": "dissolution has enthalpy plus thirty kilojoules per mole.",
+      "chapter": 6
+    },
+    {
+      "start": 701.2159989319044,
+      "end": 705.3160012207228,
+      "text": "A positive result does not by itself prove that dissolution is impossible,",
+      "chapter": 6
+    },
+    {
+      "start": 706.0359986267287,
+      "end": 709.2960007629591,
+      "text": "because the Gibbs energy also contains an entropy contribution.",
+      "chapter": 6
+    },
+    {
+      "start": 710.2960007629591,
+      "end": 714.9960015258986,
+      "text": "Some tables instead define lattice enthalpy for forming the solid from gaseous",
+      "chapter": 6
+    },
+    {
+      "start": 714.9960015258986,
+      "end": 715.3959992370802,
+      "text": "ions.",
+      "chapter": 6
+    },
+    {
+      "start": 715.8360016784865,
+      "end": 719.0960000000197,
+      "text": "That is the opposite process and has the opposite sign.",
+      "chapter": 6
+    },
+    {
+      "start": 720.0559990844923,
+      "end": 722.636000915547,
+      "text": "Never insert a number until its process is clear.",
+      "chapter": 6
+    },
+    {
+      "start": 723.575999542256,
+      "end": 728.3954848398258,
+      "text": "Atomization, ionization and electron attachment provide further steps in a",
+      "chapter": 6
+    },
+    {
+      "start": 728.3954848398258,
+      "end": 728.6559975586134,
+      "text": "full",
+      "chapter": 6
+    },
+    {
+      "start": 728.6559975586134,
+      "end": 729.4960015258986,
+      "text": "Born Haber cycle.",
+      "chapter": 6
+    },
+    {
+      "start": 730.4560006103712,
+      "end": 732.8960030517775,
+      "text": "Keep each species and charge balanced when adding them.",
+      "chapter": 6
+    },
+    {
+      "start": 733.5960000000197,
+      "end": 738.2339507994237,
+      "text": "This two stage example isolates dissolution bookkeeping rather than claiming",
+      "chapter": 6
+    },
+    {
+      "start": 738.2339507994237,
+      "end": 738.3560021362501,
+      "text": "to",
+      "chapter": 6
+    },
+    {
+      "start": 738.3560021362501,
+      "end": 741.0960000000197,
+      "text": "reproduce every step of a complete formation cycle.",
+      "chapter": 6
+    },
+    {
+      "start": 741.6480000000219,
+      "end": 745.2018461881024,
+      "text": "A calorimeter records a temperature change in material surrounding the",
+      "chapter": 7
+    },
+    {
+      "start": 745.2018461881024,
+      "end": 745.6080000381688,
+      "text": "reacting",
+      "chapter": 7
+    },
+    {
+      "start": 745.6080000381688,
+      "end": 745.9880001526097,
+      "text": "system.",
+      "chapter": 7
+    },
+    {
+      "start": 747.0880000572423,
+      "end": 749.307999847434,
+      "text": "Include every heat capacity specified in the problem.",
+      "chapter": 7
+    },
+    {
+      "start": 750.38799977114,
+      "end": 754.5033850467607,
+      "text": "Suppose one hundred grams of solution has specific heat capacity four point",
+      "chapter": 7
+    },
+    {
+      "start": 754.5033850467607,
+      "end": 754.6680004577855,
+      "text": "two",
+      "chapter": 7
+    },
+    {
+      "start": 754.6680004577855,
+      "end": 758.7680008392553,
+      "text": "joules per gram kelvin, and the calorimeter contributes eighty joules per",
+      "chapter": 7
+    },
+    {
+      "start": 758.7680008392553,
+      "end": 758.9080002289037,
+      "text": "kelvin.",
+      "chapter": 7
+    },
+    {
+      "start": 759.9880001526097,
+      "end": 763.88799977114,
+      "text": "The combined heat capacity is four hundred twenty plus eighty, or five hundred",
+      "chapter": 7
+    },
+    {
+      "start": 763.88799977114,
+      "end": 764.6880009155492,
+      "text": "joules per kelvin.",
+      "chapter": 7
+    },
+    {
+      "start": 765.2279999237279,
+      "end": 768.7680008392553,
+      "text": "A temperature rise of two kelvin means the measured surroundings gain one",
+      "chapter": 7
+    },
+    {
+      "start": 768.7680008392553,
+      "end": 769.38799977114,
+      "text": "thousand joules.",
+      "chapter": 7
+    },
+    {
+      "start": 770.2279999237279,
+      "end": 774.6880009155492,
+      "text": "If heat loss is negligible, the reaction releases one thousand joules.",
+      "chapter": 7
+    },
+    {
+      "start": 774.868001220725,
+      "end": 779.0421029279878,
+      "text": "For zero point zero five zero mole reacting as written, the molar heat is",
+      "chapter": 7
+    },
+    {
+      "start": 779.0421029279878,
+      "end": 779.3280003051976,
+      "text": "minus",
+      "chapter": 7
+    },
+    {
+      "start": 779.3280003051976,
+      "end": 780.4880001526097,
+      "text": "twenty kilojoules per mole.",
+      "chapter": 7
+    },
+    {
+      "start": 781.5480015259008,
+      "end": 784.8341531184489,
+      "text": "The negative sign belongs to the reaction, while the solution and vessel",
+      "chapter": 7
+    },
+    {
+      "start": 784.8341531184489,
+      "end": 785.1079990844945,
+      "text": "gained",
+      "chapter": 7
+    },
+    {
+      "start": 785.1079990844945,
+      "end": 785.3880016784886,
+      "text": "heat.",
+      "chapter": 7
+    },
+    {
+      "start": 786.1680004577855,
+      "end": 789.4705648342253,
+      "text": "At approximately constant pressure with only pressure volume work, the",
+      "chapter": 7
+    },
+    {
+      "start": 789.4705648342253,
+      "end": 789.8480007629613,
+      "text": "reaction",
+      "chapter": 7
+    },
+    {
+      "start": 789.8480007629613,
+      "end": 791.868001220725,
+      "text": "heat corresponds to enthalpy change.",
+      "chapter": 7
+    },
+    {
+      "start": 792.6680004577855,
+      "end": 796.307999847434,
+      "text": "In a rigid bomb calorimeter, the corresponding constant volume heat gives",
+      "chapter": 7
+    },
+    {
+      "start": 796.307999847434,
+      "end": 800.868001220725,
+      "text": "internal energy change; convert to enthalpy when the gas mole correction is",
+      "chapter": 7
+    },
+    {
+      "start": 800.868001220725,
+      "end": 801.2280018310765,
+      "text": "required.",
+      "chapter": 7
+    },
+    {
+      "start": 802.2280018310765,
+      "end": 805.368001220725,
+      "text": "Check whether a supplied calorimeter constant already includes the solution",
+      "chapter": 7
+    },
+    {
+      "start": 805.368001220725,
+      "end": 807.347996948264,
+      "text": "before adding its heat capacity again.",
+      "chapter": 7
+    },
+    {
+      "start": 808.0080000000235,
+      "end": 812.8280001716848,
+      "text": "Entropy change must be evaluated using a reversible reference path between the",
+      "chapter": 8
+    },
+    {
+      "start": 812.8280001716848,
+      "end": 813.647999866509,
+      "text": "same endpoints.",
+      "chapter": 8
+    },
+    {
+      "start": 814.607999904656,
+      "end": 818.8080001907583,
+      "text": "Heat divided by temperature is not a universal expression for an arbitrary",
+      "chapter": 8
+    },
+    {
+      "start": 818.8080001907583,
+      "end": 819.9079996185537,
+      "text": "irreversible transfer.",
+      "chapter": 8
+    },
+    {
+      "start": 820.8679996567007,
+      "end": 825.5879999237295,
+      "text": "At an equilibrium phase transition at constant temperature and pressure, the",
+      "chapter": 8
+    },
+    {
+      "start": 825.5879999237295,
+      "end": 829.807999237084,
+      "text": "molar entropy change is the molar transition enthalpy divided by that",
+      "chapter": 8
+    },
+    {
+      "start": 829.807999237084,
+      "end": 830.1080003814932,
+      "text": "temperature.",
+      "chapter": 8
+    },
+    {
+      "start": 830.9879995422598,
+      "end": 835.1569738317871,
+      "text": "For melting with illustrative enthalpy six kilojoules per mole at three",
+      "chapter": 8
+    },
+    {
+      "start": 835.1569738317871,
+      "end": 835.5679994659658,
+      "text": "hundred",
+      "chapter": 8
+    },
+    {
+      "start": 835.5679994659658,
+      "end": 839.4280000763174,
+      "text": "kelvin, the entropy increase is twenty joules per mole kelvin.",
+      "chapter": 8
+    },
+    {
+      "start": 840.8480001526113,
+      "end": 844.7480016784903,
+      "text": "Freezing between the reverse endpoints gives minus twenty.",
+      "chapter": 8
+    },
+    {
+      "start": 844.7480016784903,
+      "end": 848.5280004577871,
+      "text": "For warming a substance at constant pressure with approximately constant molar",
+      "chapter": 8
+    },
+    {
+      "start": 848.5280004577871,
+      "end": 851.8880010681387,
+      "text": "heat capacity, integrate heat capacity divided by temperature.",
+      "chapter": 8
+    },
+    {
+      "start": 852.7080007629629,
+      "end": 857.0280004577871,
+      "text": "The result is molar heat capacity times the natural logarithm of final",
+      "chapter": 8
+    },
+    {
+      "start": 857.0280004577871,
+      "end": 858.9879995422598,
+      "text": "temperature divided by initial temperature.",
+      "chapter": 8
+    },
+    {
+      "start": 859.9679990844961,
+      "end": 863.9780012207266,
+      "text": "With thirty joules per mole kelvin and warming from three hundred to six",
+      "chapter": 8
+    },
+    {
+      "start": 863.9780012207266,
+      "end": 867.9279981689688,
+      "text": "hundred kelvin, the increase is thirty times the natural logarithm of two,",
+      "chapter": 8
+    },
+    {
+      "start": 868.4080015259024,
+      "end": 870.5280004577871,
+      "text": "about twenty point eight joules per mole kelvin.",
+      "chapter": 8
+    },
+    {
+      "start": 871.5080000000235,
+      "end": 873.3279996948477,
+      "text": "Both temperatures must be absolute.",
+      "chapter": 8
+    },
+    {
+      "start": 874.1280027466055,
+      "end": 878.6680036621328,
+      "text": "If heat capacity varies appreciably, retain it inside the integral rather than",
+      "chapter": 8
+    },
+    {
+      "start": 878.6680036621328,
+      "end": 880.3879972534414,
+      "text": "reusing the constant value shortcut.",
+      "chapter": 8
+    },
+    {
+      "start": 880.9200000000253,
+      "end": 885.8200000953927,
+      "text": "A system can lose entropy while a spontaneous process increases the total",
+      "chapter": 9
+    },
+    {
+      "start": 885.8200000953927,
+      "end": 887.5799998474374,
+      "text": "entropy of system and surroundings.",
+      "chapter": 9
+    },
+    {
+      "start": 888.8200000953927,
+      "end": 892.480000419642,
+      "text": "Consider an illustrative process at three hundred kelvin and constant pressure",
+      "chapter": 9
+    },
+    {
+      "start": 892.480000419642,
+      "end": 896.480000419642,
+      "text": "that releases six kilojoules per mole into a large thermal reservoir.",
+      "chapter": 9
+    },
+    {
+      "start": 897.7199992370859,
+      "end": 900.9200000000253,
+      "text": "Assume only pressure volume work and negligible changes elsewhere.",
+      "chapter": 9
+    },
+    {
+      "start": 901.8199996185556,
+      "end": 906.2399996948495,
+      "text": "The reservoir receives six thousand joules per mole, so its entropy increases",
+      "chapter": 9
+    },
+    {
+      "start": 906.2399996948495,
+      "end": 908.0400008392587,
+      "text": "by twenty joules per mole kelvin.",
+      "chapter": 9
+    },
+    {
+      "start": 908.6599997711435,
+      "end": 913.1000003052011,
+      "text": "If the system entropy decreases by ten joules per mole kelvin, the total",
+      "chapter": 9
+    },
+    {
+      "start": 913.1000003052011,
+      "end": 914.2199992370859,
+      "text": "increases by ten.",
+      "chapter": 9
+    },
+    {
+      "start": 915.0199984741464,
+      "end": 918.8000010681405,
+      "text": "The process is thermodynamically favourable under those stated conditions.",
+      "chapter": 9
+    },
+    {
+      "start": 919.7399996948495,
+      "end": 923.8392314637266,
+      "text": "Its Gibbs energy change is minus six kilojoules minus three hundred times",
+      "chapter": 9
+    },
+    {
+      "start": 923.8392314637266,
+      "end": 924.1200007629648,
+      "text": "minus",
+      "chapter": 9
+    },
+    {
+      "start": 924.1200007629648,
+      "end": 928.5799998474374,
+      "text": "zero point zero one zero kilojoules per kelvin, giving minus three kilojoules",
+      "chapter": 9
+    },
+    {
+      "start": 928.5799998474374,
+      "end": 929.0799998474374,
+      "text": "per mole.",
+      "chapter": 9
+    },
+    {
+      "start": 930.1200007629648,
+      "end": 933.8200015259042,
+      "text": "Negative temperature times the universe entropy change gives the same result",
+      "chapter": 9
+    },
+    {
+      "start": 933.8200015259042,
+      "end": 934.8999995422616,
+      "text": "under these constraints.",
+      "chapter": 9
+    },
+    {
+      "start": 935.5899981689706,
+      "end": 939.7600001526132,
+      "text": "The reservoir temperature is effectively constant; do not divide a large",
+      "chapter": 9
+    },
+    {
+      "start": 939.7600001526132,
+      "end": 942.5599993896737,
+      "text": "varying temperature heat transfer by one arbitrary temperature.",
+      "chapter": 9
+    },
+    {
+      "start": 943.3200015259042,
+      "end": 947.0599993896737,
+      "text": "This example also shows why exothermic and spontaneous are different labels.",
+      "chapter": 9
+    },
+    {
+      "start": 948.1599978637948,
+      "end": 952.2399996948495,
+      "text": "Identify the surroundings, constraints and entropy contribution before using",
+      "chapter": 9
+    },
+    {
+      "start": 952.2399996948495,
+      "end": 954.1599978637948,
+      "text": "the sign of heat as a direction test.",
+      "chapter": 9
+    }
+  ]
+}

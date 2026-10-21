@@ -1,0 +1,382 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.040
+Hey, welcome back.
+
+00:00:01.580 --> 00:00:04.700
+A coil's current creates magnetic flux through its own turns.
+
+00:00:05.440 --> 00:00:07.320
+Change the current and that flux changes too.
+
+00:00:07.900 --> 00:00:10.840
+Faraday's law then gives an induced response in the same coil.
+
+00:00:11.380 --> 00:00:12.620
+This is self induction.
+
+00:00:13.400 --> 00:00:18.060
+For fixed geometry and a linear magnetic response, flux linkage lambda equals
+
+00:00:18.060 --> 00:00:20.500
+inductance L times current I.
+
+00:00:21.040 --> 00:00:22.580
+Inductance is measured in henries.
+
+00:00:23.100 --> 00:00:27.760
+One henry gives a one volt induced emf when current changes at one ampere per
+
+00:00:27.760 --> 00:00:27.960
+second.
+
+00:00:28.400 --> 00:00:32.980
+With constant L, the induced emf is minus L times the current derivative.
+
+00:00:33.700 --> 00:00:35.520
+The minus sign opposes the change.
+
+00:00:36.180 --> 00:00:39.740
+If a positive current increases, the induced response resists its growth.
+
+00:00:40.240 --> 00:00:43.500
+If that current decreases, the response tends to sustain it.
+
+00:00:44.100 --> 00:00:47.240
+An inductor does not simply oppose current in every situation.
+
+00:00:48.240 --> 00:00:51.988
+Here is a sign convention to keep tidy: when current enters the terminal
+
+00:00:51.988 --> 00:00:52.300
+marked
+
+00:00:52.300 --> 00:00:57.393
+positive, the terminal voltage across an ideal inductor is plus L times the
+
+00:00:57.393 --> 00:00:58.140
+derivative.
+
+00:00:58.900 --> 00:01:02.820
+That passive terminal voltage and the induced emf are not contradictory
+
+00:01:02.820 --> 00:01:05.360
+formulas; their reference directions differ.
+
+00:01:06.340 --> 00:01:10.900
+For L equal to zero point two henry and current rising at fifteen amperes per
+
+00:01:10.900 --> 00:01:15.640
+second, induced emf is minus three volts in the chosen circulation convention.
+
+00:01:16.380 --> 00:01:20.380
+If L changes, differentiate the whole linkage, not just the current.
+
+00:01:20.380 --> 00:01:20.616
+Our examples keep L constant.
+
+00:01:20.616 --> 00:01:23.816
+Let's derive rather than memorise the solenoid formula.
+
+00:01:24.656 --> 00:01:29.996
+Take a long coil with N turns, cross sectional area A and length ell.
+
+00:01:29.996 --> 00:01:33.756
+Assume the field inside is approximately uniform and ignore end effects.
+
+00:01:34.456 --> 00:01:38.516
+Its field is permeability mu times N over ell times current.
+
+00:01:39.496 --> 00:01:41.696
+Flux through each turn is that field times area.
+
+00:01:41.956 --> 00:01:45.976
+There are N linked turns, so linkage contains another factor of N.
+
+00:01:46.616 --> 00:01:51.436
+Divide linkage by current and inductance becomes mu times N squared times area
+
+00:01:51.436 --> 00:01:53.276
+divided by ell.
+
+00:01:53.276 --> 00:01:57.448
+The square is not decoration: one N strengthens the field, and the other
+
+00:01:57.448 --> 00:01:57.796
+counts
+
+00:01:57.796 --> 00:01:58.436
+linked turns.
+
+00:01:59.136 --> 00:02:02.156
+For an air core coil, use mu approximately mu zero.
+
+00:02:02.996 --> 00:02:07.381
+Try four hundred turns, area five times ten to the minus four square meters
+
+00:02:07.381 --> 00:02:07.556
+and
+
+00:02:07.556 --> 00:02:08.696
+length zero point four meter.
+
+00:02:09.496 --> 00:02:13.556
+Using mu zero approximately four pi times ten to the minus seven gives
+
+00:02:13.556 --> 00:02:16.236
+inductance about zero point two five one millihenry.
+
+00:02:16.876 --> 00:02:17.996
+Pause before scaling.
+
+00:02:18.796 --> 00:02:21.516
+Double the turns without changing area, length or permeability.
+
+00:02:22.416 --> 00:02:24.056
+Inductance becomes four times as large.
+
+00:02:24.816 --> 00:02:27.876
+Double the length while keeping total turns fixed and inductance halves.
+
+00:02:28.556 --> 00:02:32.276
+If instead turns per unit length are held fixed, length has a different effect
+
+00:02:32.276 --> 00:02:33.976
+because total turns also change.
+
+00:02:34.616 --> 00:02:39.436
+A real ferromagnetic core can have nonlinear permeability and losses; this
+
+00:02:39.436 --> 00:02:43.156
+simple constant mu formula does not describe every operating condition.
+
+00:02:43.320 --> 00:02:47.740
+An ideal inductor can absorb energy without permanently dissipating it.
+
+00:02:48.300 --> 00:02:52.500
+Using the passive convention, instantaneous power into it is voltage times
+
+00:02:52.500 --> 00:02:55.460
+current, or L times current times its derivative.
+
+00:02:56.620 --> 00:03:01.378
+Integrating while current grows from zero to I gives magnetic energy one half
+
+00:03:01.378 --> 00:03:01.440
+L
+
+00:03:01.440 --> 00:03:02.000
+I squared.
+
+00:03:03.020 --> 00:03:06.560
+Consider inductance zero point two henry carrying three amperes.
+
+00:03:07.460 --> 00:03:09.160
+Stored energy is zero point nine joule.
+
+00:03:09.620 --> 00:03:14.080
+Double the current: energy quadruples to three point six joules, not one point
+
+00:03:14.080 --> 00:03:14.760
+eight.
+
+00:03:15.040 --> 00:03:18.600
+When current decreases, the inductor can return energy to the circuit.
+
+00:03:19.380 --> 00:03:24.040
+A real coil also has resistance and other losses, so not all stored energy
+
+00:03:24.040 --> 00:03:25.920
+necessarily returns to a source.
+
+00:03:26.860 --> 00:03:28.900
+Now connect this to current continuity.
+
+00:03:29.640 --> 00:03:34.000
+For finite L and finite voltage, current can change only at a finite rate.
+
+00:03:34.620 --> 00:03:38.080
+It cannot jump instantaneously in the ideal finite voltage model.
+
+00:03:38.840 --> 00:03:43.040
+Interrupting an inductive circuit can therefore produce a large voltage as the
+
+00:03:43.040 --> 00:03:44.400
+system tries to maintain current.
+
+00:03:45.620 --> 00:03:50.260
+That is an explanation, not an invitation to open a live circuit; suitable
+
+00:03:50.260 --> 00:03:52.200
+protection and safe equipment are required.
+
+00:03:53.040 --> 00:03:56.840
+With a constant three volts across a zero point two henry ideal inductor,
+
+00:03:57.160 --> 00:03:59.420
+current slope is fifteen amperes per second.
+
+00:04:00.220 --> 00:04:04.360
+Do not confuse zero voltage at steady current with zero stored energy.
+
+00:04:04.360 --> 00:04:08.720
+Three amperes held constant still stores zero point nine joule.
+
+00:04:08.976 --> 00:04:11.156
+Put a second coil near the first.
+
+00:04:11.716 --> 00:04:14.536
+Some of the first coil's field links the second coil.
+
+00:04:15.256 --> 00:04:19.976
+For fixed geometry and linear response, that secondary linkage due to primary
+
+00:04:19.976 --> 00:04:23.056
+current is mutual inductance M times primary current.
+
+00:04:23.836 --> 00:04:26.716
+Differentiate to find the induced emf in the second coil.
+
+00:04:27.416 --> 00:04:32.276
+Its magnitude is M times the magnitude of the primary current slope.
+
+00:04:32.276 --> 00:04:34.616
+Do not use the secondary current slope by mistake.
+
+00:04:35.156 --> 00:04:40.356
+Suppose M is zero point zero three henry and the primary current rises at
+
+00:04:40.356 --> 00:04:41.636
+twenty amperes per second.
+
+00:04:43.196 --> 00:04:45.916
+Secondary induced emf magnitude is zero point six volt.
+
+00:04:46.656 --> 00:04:50.936
+If primary current becomes constant, this mutual contribution to emf becomes
+
+00:04:50.936 --> 00:04:54.856
+zero, even though linked flux may remain nonzero.
+
+00:04:54.856 --> 00:04:58.896
+If primary current then decreases at the same slope magnitude, the induced
+
+00:04:58.896 --> 00:04:59.996
+polarity reverses.
+
+00:05:00.336 --> 00:05:04.303
+Which terminal becomes positive depends on winding orientation and the
+
+00:05:04.303 --> 00:05:04.756
+terminal
+
+00:05:04.756 --> 00:05:05.196
+references.
+
+00:05:06.136 --> 00:05:10.694
+The diagram identifies the coils without pretending that all windings share
+
+00:05:10.694 --> 00:05:10.876
+one
+
+00:05:10.876 --> 00:05:11.816
+automatic polarity.
+
+00:05:12.576 --> 00:05:17.036
+An open secondary can develop an emf without carrying a sustained conduction
+
+00:05:17.036 --> 00:05:17.436
+current.
+
+00:05:18.256 --> 00:05:22.356
+Once it is loaded, its current affects the primary through coupling, and both
+
+00:05:22.356 --> 00:05:25.176
+coils can also have their own self induced responses.
+
+00:05:25.716 --> 00:05:27.936
+The source supplies the transferred energy.
+
+00:05:28.456 --> 00:05:32.647
+Mutual induction is the bridge to transformers, not an energy multiplier
+
+00:05:32.647 --> 00:05:32.996
+hidden
+
+00:05:32.996 --> 00:05:34.456
+between two disconnected wires.
+
+00:05:34.824 --> 00:05:37.364
+Two coils can be weakly or strongly coupled.
+
+00:05:38.144 --> 00:05:43.224
+In a passive reciprocal linear system, mutual inductance magnitude is k times
+
+00:05:43.224 --> 00:05:46.224
+the square root of L one times L two.
+
+00:05:46.224 --> 00:05:49.204
+The coupling coefficient k lies between zero and one.
+
+00:05:50.304 --> 00:05:54.104
+Perfect coupling is an ideal limit, not a claim that every nearby pair of
+
+00:05:54.104 --> 00:05:54.364
+coils
+
+00:05:54.364 --> 00:05:54.864
+reaches it.
+
+00:05:55.704 --> 00:06:00.404
+Take L one equal to zero point four henry, L two equal to zero point one henry
+
+00:06:00.624 --> 00:06:02.884
+and k equal to zero point five.
+
+00:06:03.334 --> 00:06:08.044
+The square root of their product is zero point two henry, so mutual inductance
+
+00:06:08.044 --> 00:06:10.044
+magnitude is zero point one henry.
+
+00:06:10.864 --> 00:06:15.224
+A primary current rising at five amperes per second then induces a secondary
+
+00:06:15.224 --> 00:06:17.804
+emf magnitude of zero point five volt.
+
+00:06:18.664 --> 00:06:22.204
+Take a moment: could the same passive pair have mutual inductance zero point
+
+00:06:22.204 --> 00:06:22.904
+three henry?
+
+00:06:23.444 --> 00:06:27.404
+No; that would exceed the zero point two henry bound for these self
+
+00:06:27.404 --> 00:06:27.824
+inductances.
+
+00:06:28.444 --> 00:06:33.384
+The bound is tied to nonnegative magnetic energy, not a rule invented to fit a
+
+00:06:33.384 --> 00:06:33.864
+numerical question.
+
+00:06:34.824 --> 00:06:38.584
+Orientation can change the signed mutual term without changing its magnitude.
+
+00:06:39.364 --> 00:06:43.784
+Before a coupled coil calculation, list which current changes, which coil's
+
+00:06:43.784 --> 00:06:47.697
+linkage you need, whether inductances are constant and how polarity is
+
+00:06:47.697 --> 00:06:48.144
+defined.
+
+00:06:48.784 --> 00:06:52.517
+Those checks let you use compact equations without losing the physical
+
+00:06:52.517 --> 00:06:52.944
+circuit.

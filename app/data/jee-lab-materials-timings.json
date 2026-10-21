@@ -1,0 +1,939 @@
+{
+  "duration": 491.0400000000141,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 93.50400000000265
+    },
+    {
+      "start": 93.50400000000265,
+      "end": 187.1040000000053
+    },
+    {
+      "start": 187.1040000000053,
+      "end": 282.120000000008
+    },
+    {
+      "start": 282.120000000008,
+      "end": 383.47200000001095
+    },
+    {
+      "start": 383.47200000001095,
+      "end": 491.0400000000141
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.6200000047683716,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.4000000953674316,
+      "end": 6.179999828338623,
+      "text": "Today we use observations to measure material properties rather than just",
+      "chapter": 0
+    },
+    {
+      "start": 6.179999828338623,
+      "end": 8.119999885559082,
+      "text": "substitute a value supplied by a textbook.",
+      "chapter": 0
+    },
+    {
+      "start": 8.979999542236328,
+      "end": 10.279999732971191,
+      "text": "Start with a wire under tension.",
+      "chapter": 0
+    },
+    {
+      "start": 11.100000381469727,
+      "end": 14.920000076293945,
+      "text": "Measure its original length and diameter, then observe the extension caused by",
+      "chapter": 0
+    },
+    {
+      "start": 14.920000076293945,
+      "end": 16.139999389648438,
+      "text": "a known additional load.",
+      "chapter": 0
+    },
+    {
+      "start": 16.719999313354492,
+      "end": 20.559999465942383,
+      "text": "A reference wire in a comparison arrangement helps reduce changes due to",
+      "chapter": 0
+    },
+    {
+      "start": 20.559999465942383,
+      "end": 22.799999237060547,
+      "text": "support motion and common temperature effects.",
+      "chapter": 0
+    },
+    {
+      "start": 23.360000610351562,
+      "end": 27.639999389648438,
+      "text": "An initial preload can straighten small kinks; use a consistent baseline for",
+      "chapter": 0
+    },
+    {
+      "start": 27.639999389648438,
+      "end": 29.579999923706055,
+      "text": "the added force and added extension.",
+      "chapter": 0
+    },
+    {
+      "start": 30.520000457763672,
+      "end": 32.91999816894531,
+      "text": "Young's modulus is stress divided by strain.",
+      "chapter": 0
+    },
+    {
+      "start": 33.86000061035156,
+      "end": 37.79999923706055,
+      "text": "Stress is force divided by cross sectional area, and strain is extension",
+      "chapter": 0
+    },
+    {
+      "start": 37.79999923706055,
+      "end": 39.13999938964844,
+      "text": "divided by original length.",
+      "chapter": 0
+    },
+    {
+      "start": 39.939998626708984,
+      "end": 44.84000015258789,
+      "text": "Therefore Y equals F L divided by pi r squared times extension.",
+      "chapter": 0
+    },
+    {
+      "start": 45.5,
+      "end": 49.57846128023588,
+      "text": "Our original example has length two meters, radius zero point five",
+      "chapter": 0
+    },
+    {
+      "start": 49.57846128023588,
+      "end": 50.31999969482422,
+      "text": "millimeters,",
+      "chapter": 0
+    },
+    {
+      "start": 51,
+      "end": 54.47999954223633,
+      "text": "added force twenty newtons, and added extension zero point two five",
+      "chapter": 0
+    },
+    {
+      "start": 54.47999954223633,
+      "end": 54.959999084472656,
+      "text": "millimeters.",
+      "chapter": 0
+    },
+    {
+      "start": 54.959999084472656,
+      "end": 58.36000061035156,
+      "text": "Convert both millimeter values to meters before calculating.",
+      "chapter": 0
+    },
+    {
+      "start": 59.13999938964844,
+      "end": 62.7400016784668,
+      "text": "The result is about two point zero four times ten to the eleven pascals.",
+      "chapter": 0
+    },
+    {
+      "start": 63.560001373291016,
+      "end": 67.12000274658203,
+      "text": "Notice that the force is already given in newtons; do not multiply it by g",
+      "chapter": 0
+    },
+    {
+      "start": 67.12000274658203,
+      "end": 67.4800033569336,
+      "text": "again.",
+      "chapter": 0
+    },
+    {
+      "start": 68.13999938964844,
+      "end": 71.73999786376953,
+      "text": "With several loads, plot force vertically against extension horizontally.",
+      "chapter": 0
+    },
+    {
+      "start": 72.5199966430664,
+      "end": 77.71897418682391,
+      "text": "The elastic straight line slope is Y A divided by L, so Y is slope times L",
+      "chapter": 0
+    },
+    {
+      "start": 77.71897418682391,
+      "end": 78,
+      "text": "over",
+      "chapter": 0
+    },
+    {
+      "start": 78,
+      "end": 78.30000305175781,
+      "text": "area.",
+      "chapter": 0
+    },
+    {
+      "start": 78.86000061035156,
+      "end": 82.87999725341797,
+      "text": "Add and remove loads gently, stay within the elastic limit, and look for",
+      "chapter": 0
+    },
+    {
+      "start": 82.87999725341797,
+      "end": 84.04000091552734,
+      "text": "consistent return readings.",
+      "chapter": 0
+    },
+    {
+      "start": 84.69999694824219,
+      "end": 88.41999816894531,
+      "text": "Diameter matters twice in the area, making its fractional measurement error",
+      "chapter": 0
+    },
+    {
+      "start": 88.41999816894531,
+      "end": 89.55999755859375,
+      "text": "especially influential.",
+      "chapter": 0
+    },
+    {
+      "start": 90.22000122070312,
+      "end": 93.04000091552734,
+      "text": "A smooth graph cannot rescue an incorrectly measured radius.",
+      "chapter": 0
+    },
+    {
+      "start": 93.50400000000265,
+      "end": 97.38400011444357,
+      "text": "A narrow clean tube can make water rise above the surrounding surface.",
+      "chapter": 1
+    },
+    {
+      "start": 98.0839999237087,
+      "end": 101.85323052176716,
+      "text": "At equilibrium, the upward vertical component of surface tension force",
+      "chapter": 1
+    },
+    {
+      "start": 101.85323052176716,
+      "end": 102.28399973297384,
+      "text": "balances",
+      "chapter": 1
+    },
+    {
+      "start": 102.28399973297384,
+      "end": 104.5839999237087,
+      "text": "the weight of the raised liquid in the simple model.",
+      "chapter": 1
+    },
+    {
+      "start": 105.62399988556173,
+      "end": 109.89169258597224,
+      "text": "The contact line has circumference two pi r, giving upward force two pi r",
+      "chapter": 1
+    },
+    {
+      "start": 109.89169258597224,
+      "end": 110.18400030517843,
+      "text": "gamma",
+      "chapter": 1
+    },
+    {
+      "start": 110.18400030517843,
+      "end": 110.9240000762966,
+      "text": "cosine theta.",
+      "chapter": 1
+    },
+    {
+      "start": 111.94400053406027,
+      "end": 115.48399954223898,
+      "text": "The liquid column weight is approximately pi r squared h rho g.",
+      "chapter": 1
+    },
+    {
+      "start": 116.34400015259054,
+      "end": 121.38399916076925,
+      "text": "Cancel the common factors and solve: gamma equals rho g h r divided by twice",
+      "chapter": 1
+    },
+    {
+      "start": 121.38399916076925,
+      "end": 122.0839999237087,
+      "text": "cosine theta.",
+      "chapter": 1
+    },
+    {
+      "start": 122.81399946594503,
+      "end": 126.50566797638204,
+      "text": "For clean water wetting glass, theta is small and cosine theta is",
+      "chapter": 1
+    },
+    {
+      "start": 126.50566797638204,
+      "end": 127.24400167846944,
+      "text": "approximately",
+      "chapter": 1
+    },
+    {
+      "start": 127.24400167846944,
+      "end": 127.84400015259054,
+      "text": "one.",
+      "chapter": 1
+    },
+    {
+      "start": 128.50400000000263,
+      "end": 131.44399862671162,
+      "text": "Measure the rise vertically from the outside liquid level to the meniscus",
+      "chapter": 1
+    },
+    {
+      "start": 131.44399862671162,
+      "end": 133.88400106811787,
+      "text": "reference, and use the internal tube radius.",
+      "chapter": 1
+    },
+    {
+      "start": 134.60399847412373,
+      "end": 139.08400183105732,
+      "text": "Our original example uses density one thousand kilograms per cubic meter, g",
+      "chapter": 1
+    },
+    {
+      "start": 139.08400183105732,
+      "end": 143.6239989318874,
+      "text": "equal to nine point eight, rise three centimeters, and radius zero point five",
+      "chapter": 1
+    },
+    {
+      "start": 143.6239989318874,
+      "end": 144.74400167846943,
+      "text": "millimeters.",
+      "chapter": 1
+    },
+    {
+      "start": 144.74400167846943,
+      "end": 148.81399946594502,
+      "text": "With the small contact angle approximation, gamma is zero point zero seven",
+      "chapter": 1
+    },
+    {
+      "start": 148.81399946594502,
+      "end": 150.16399984741474,
+      "text": "three five newtons per meter.",
+      "chapter": 1
+    },
+    {
+      "start": 151.00400000000263,
+      "end": 155.42399816894795,
+      "text": "This estimate neglects the small meniscus volume correction; precise work can",
+      "chapter": 1
+    },
+    {
+      "start": 155.42399816894795,
+      "end": 155.98399954223896,
+      "text": "require it.",
+      "chapter": 1
+    },
+    {
+      "start": 156.5240004577663,
+      "end": 160.24399786377217,
+      "text": "The tube must be clean and vertical, and the radius must be measured reliably.",
+      "chapter": 1
+    },
+    {
+      "start": 161.30400305176045,
+      "end": 163.90400152588154,
+      "text": "Now add a small amount of detergent in a controlled comparison.",
+      "chapter": 1
+    },
+    {
+      "start": 164.92399816894795,
+      "end": 168.72400122070576,
+      "text": "Detergent usually reduces surface tension and can reduce capillary rise if",
+      "chapter": 1
+    },
+    {
+      "start": 168.72400122070576,
+      "end": 172.40400152588154,
+      "text": "radius, density, temperature, and contact angle effects are sufficiently",
+      "chapter": 1
+    },
+    {
+      "start": 172.40400152588154,
+      "end": 172.82399969482685,
+      "text": "controlled.",
+      "chapter": 1
+    },
+    {
+      "start": 173.58400183105732,
+      "end": 177.14399938965107,
+      "text": "Do not attribute every height change solely to surface tension when wetting",
+      "chapter": 1
+    },
+    {
+      "start": 177.14399938965107,
+      "end": 178.18400030517842,
+      "text": "conditions also change.",
+      "chapter": 1
+    },
+    {
+      "start": 178.7839987792995,
+      "end": 182.48400335693623,
+      "text": "Pause before calculating: a stated diameter is twice the radius.",
+      "chapter": 1
+    },
+    {
+      "start": 183.2640021362331,
+      "end": 186.50400000000263,
+      "text": "Using it unchanged would double the inferred surface tension in this formula.",
+      "chapter": 1
+    },
+    {
+      "start": 187.1040000000053,
+      "end": 190.16399994278484,
+      "text": "Let's drop a small sphere through a viscous liquid.",
+      "chapter": 2
+    },
+    {
+      "start": 191.06400003815227,
+      "end": 194.54400005722576,
+      "text": "Initially it accelerates, so the early falling speed is not automatically",
+      "chapter": 2
+    },
+    {
+      "start": 194.54400005722576,
+      "end": 195.3839997329765,
+      "text": "terminal speed.",
+      "chapter": 2
+    },
+    {
+      "start": 196.2639998474174,
+      "end": 201.18399992371135,
+      "text": "After drag grows enough, weight balances buoyancy plus viscous drag, and the",
+      "chapter": 2
+    },
+    {
+      "start": 201.18399992371135,
+      "end": 202.90400019074016,
+      "text": "speed becomes approximately constant.",
+      "chapter": 2
+    },
+    {
+      "start": 204.02400007629925,
+      "end": 207.2639998474174,
+      "text": "Time the motion between marks below the initial acceleration region.",
+      "chapter": 2
+    },
+    {
+      "start": 207.7240008392387,
+      "end": 212.9839991607719,
+      "text": "For a sphere in creeping flow, Stokes drag is six pi eta r v.",
+      "chapter": 2
+    },
+    {
+      "start": 212.9839991607719,
+      "end": 217.1040000000053,
+      "text": "Combining it with the weight and buoyancy gives eta equal to two r squared",
+      "chapter": 2
+    },
+    {
+      "start": 217.1040000000053,
+      "end": 221.64400091553264,
+      "text": "times the sphere minus liquid density difference times g, divided by nine",
+      "chapter": 2
+    },
+    {
+      "start": 221.64400091553264,
+      "end": 222.3639983215385,
+      "text": "terminal speed.",
+      "chapter": 2
+    },
+    {
+      "start": 223.54399862671428,
+      "end": 227.8440016784721,
+      "text": "Our original data use radius zero point five millimeters, sphere density seven",
+      "chapter": 2
+    },
+    {
+      "start": 227.8440016784721,
+      "end": 231.4440001525932,
+      "text": "thousand eight hundred, and liquid density one thousand two hundred sixty",
+      "chapter": 2
+    },
+    {
+      "start": 231.4440001525932,
+      "end": 232.88399877930217,
+      "text": "kilograms per cubic meter.",
+      "chapter": 2
+    },
+    {
+      "start": 233.4440001525932,
+      "end": 238.62400045776897,
+      "text": "The sphere covers twelve centimeters in sixty seconds at constant speed, so v",
+      "chapter": 2
+    },
+    {
+      "start": 238.62400045776897,
+      "end": 241.06399908447796,
+      "text": "is zero point zero zero two meters per second.",
+      "chapter": 2
+    },
+    {
+      "start": 241.5040015258842,
+      "end": 245.8639983215385,
+      "text": "With g equal to nine point eight, viscosity is about one point seven eight",
+      "chapter": 2
+    },
+    {
+      "start": 245.8639983215385,
+      "end": 246.7639998474174,
+      "text": "pascal seconds.",
+      "chapter": 2
+    },
+    {
+      "start": 247.98400106812053,
+      "end": 251.3039969482475,
+      "text": "It is not an acceleration and not measured in pascals alone.",
+      "chapter": 2
+    },
+    {
+      "start": 252.26400366211467,
+      "end": 255.86400213623577,
+      "text": "Check that equal distances take approximately equal times in the timed region.",
+      "chapter": 2
+    },
+    {
+      "start": 256.6239966430717,
+      "end": 260.2439993896537,
+      "text": "Use a container much wider than the sphere, avoid the walls, and record",
+      "chapter": 2
+    },
+    {
+      "start": 260.2439993896537,
+      "end": 262.58400335693887,
+      "text": "temperature because viscosity is temperature dependent.",
+      "chapter": 2
+    },
+    {
+      "start": 263.60400000000527,
+      "end": 267.26400366211465,
+      "text": "Stokes' formula assumes slow, low Reynolds number flow; it is not a universal",
+      "chapter": 2
+    },
+    {
+      "start": 267.26400366211465,
+      "end": 268.9439963378959,
+      "text": "drag law for any fast object.",
+      "chapter": 2
+    },
+    {
+      "start": 269.6739996948295,
+      "end": 273.78400030518105,
+      "text": "For multiple sphere sizes under the same valid conditions, terminal speed",
+      "chapter": 2
+    },
+    {
+      "start": 273.78400030518105,
+      "end": 276.8240012207084,
+      "text": "plotted against radius squared should be approximately linear.",
+      "chapter": 2
+    },
+    {
+      "start": 277.6440009155326,
+      "end": 281.2240027465873,
+      "text": "A size dependent deviation can signal that the assumptions or wall corrections",
+      "chapter": 2
+    },
+    {
+      "start": 281.2240027465873,
+      "end": 281.88399877930215,
+      "text": "need attention.",
+      "chapter": 2
+    },
+    {
+      "start": 282.120000000008,
+      "end": 285.4399999332508,
+      "text": "Calorimetry asks where the thermal energy goes.",
+      "chapter": 3
+    },
+    {
+      "start": 286.29999982834664,
+      "end": 289.9400001716694,
+      "text": "A hot solid is transferred into cooler water in an insulated calorimeter.",
+      "chapter": 3
+    },
+    {
+      "start": 290.88000022888986,
+      "end": 295.8000003051838,
+      "text": "The solid loses energy, while both the water and the calorimeter gain energy.",
+      "chapter": 3
+    },
+    {
+      "start": 296.3999997329792,
+      "end": 300.56000053406564,
+      "text": "If heat exchange with the surroundings is negligible, these changes balance.",
+      "chapter": 3
+    },
+    {
+      "start": 301.8000003051838,
+      "end": 305.59999954224435,
+      "text": "Write hot solid mass times its specific heat times its temperature fall.",
+      "chapter": 3
+    },
+    {
+      "start": 306.66000091553536,
+      "end": 310.93999969483224,
+      "text": "Set that equal to water heat capacity plus calorimeter heat capacity, all",
+      "chapter": 3
+    },
+    {
+      "start": 310.93999969483224,
+      "end": 312.4000006866535,
+      "text": "multiplied by their temperature rise.",
+      "chapter": 3
+    },
+    {
+      "start": 313.3399993133625,
+      "end": 315.8799983215412,
+      "text": "The calorimeter is not magically thermally invisible.",
+      "chapter": 3
+    },
+    {
+      "start": 316.68000137329904,
+      "end": 321.1799994659504,
+      "text": "Our original example has a zero point one kilogram solid initially at one",
+      "chapter": 3
+    },
+    {
+      "start": 321.1799994659504,
+      "end": 322.16000091553536,
+      "text": "hundred degrees Celsius.",
+      "chapter": 3
+    },
+    {
+      "start": 323.09999954224435,
+      "end": 325.9800006103596,
+      "text": "Water mass is zero point two kilograms at twenty degrees.",
+      "chapter": 3
+    },
+    {
+      "start": 326.7000018310627,
+      "end": 330.3799983215412,
+      "text": "Its specific heat is four thousand two hundred joules per kilogram kelvin.",
+      "chapter": 3
+    },
+    {
+      "start": 331.18000137329904,
+      "end": 335.4800006103596,
+      "text": "The calorimeter's effective heat capacity is twenty joules per kelvin, and the",
+      "chapter": 3
+    },
+    {
+      "start": 335.4800006103596,
+      "end": 337.25999938965646,
+      "text": "final temperature is twenty four degrees.",
+      "chapter": 3
+    },
+    {
+      "start": 338.16000091553536,
+      "end": 341.5799990844807,
+      "text": "Water and container together gain three thousand four hundred forty joules.",
+      "chapter": 3
+    },
+    {
+      "start": 342.66000091553536,
+      "end": 345.7858984942394,
+      "text": "Divide by zero point one times the solid's seventy six degree temperature",
+      "chapter": 3
+    },
+    {
+      "start": 345.7858984942394,
+      "end": 346.00000106812325,
+      "text": "fall.",
+      "chapter": 3
+    },
+    {
+      "start": 346.6399966430744,
+      "end": 350.3515356914894,
+      "text": "The solid's inferred specific heat is about four hundred fifty three joules",
+      "chapter": 3
+    },
+    {
+      "start": 350.3515356914894,
+      "end": 350.499997253426,
+      "text": "per",
+      "chapter": 3
+    },
+    {
+      "start": 350.499997253426,
+      "end": 351.5799990844807,
+      "text": "kilogram kelvin.",
+      "chapter": 3
+    },
+    {
+      "start": 352.6399966430744,
+      "end": 356.1000033569416,
+      "text": "Temperature differences in Celsius and kelvin have the same numerical size.",
+      "chapter": 3
+    },
+    {
+      "start": 356.93999969483224,
+      "end": 361.2800036621174,
+      "text": "In a real supervised experiment, measure the hot solid's temperature, transfer",
+      "chapter": 3
+    },
+    {
+      "start": 361.2800036621174,
+      "end": 365.6399966430744,
+      "text": "promptly, minimize carried hot water, and stir gently for a uniform reading.",
+      "chapter": 3
+    },
+    {
+      "start": 365.95999633789864,
+      "end": 370.2800036621174,
+      "text": "If the liquid's specific heat is unknown instead, use a solid of known heat",
+      "chapter": 3
+    },
+    {
+      "start": 370.2800036621174,
+      "end": 372.7199984741291,
+      "text": "capacity and solve the same balance for the liquid.",
+      "chapter": 3
+    },
+    {
+      "start": 373.92000305176583,
+      "end": 377.35999786377755,
+      "text": "Never leave both specific heats unknown with only one balance equation.",
+      "chapter": 3
+    },
+    {
+      "start": 378.2800036621174,
+      "end": 381.8199969482502,
+      "text": "These ideal calculations do not remove heat loss uncertainty from actual",
+      "chapter": 3
+    },
+    {
+      "start": 381.8199969482502,
+      "end": 382.3000003051838,
+      "text": "observations.",
+      "chapter": 3
+    },
+    {
+      "start": 383.47200000001095,
+      "end": 388.1919997902026,
+      "text": "Let's finish with the skill that links every experiment: making an honest",
+      "chapter": 4
+    },
+    {
+      "start": 388.1919997902026,
+      "end": 390.1719998092761,
+      "text": "inference from imperfect data.",
+      "chapter": 4
+    },
+    {
+      "start": 391.2920001716723,
+      "end": 395.4320000381579,
+      "text": "Repeat readings to reveal scatter, use their mean when appropriate, and apply",
+      "chapter": 4
+    },
+    {
+      "start": 395.4320000381579,
+      "end": 397.9519995422473,
+      "text": "calibration or zero corrections consistently.",
+      "chapter": 4
+    },
+    {
+      "start": 398.7119997711291,
+      "end": 402.7719992370715,
+      "text": "A fixed zero error does not disappear just because you measured ten times.",
+      "chapter": 4
+    },
+    {
+      "start": 403.31200015259884,
+      "end": 407.9319990844836,
+      "text": "That is the difference between reducing random variation and correcting a",
+      "chapter": 4
+    },
+    {
+      "start": 407.9319990844836,
+      "end": 408.35199916077755,
+      "text": "systematic offset.",
+      "chapter": 4
+    },
+    {
+      "start": 409.9920004577746,
+      "end": 412.7320002288928,
+      "text": "Graphs help reveal relationships and unusual points.",
+      "chapter": 4
+    },
+    {
+      "start": 413.65200030518673,
+      "end": 418.45969261287905,
+      "text": "Label each axis with the measured quantity and unit, choose a useful scale,",
+      "chapter": 4
+    },
+    {
+      "start": 418.45969261287905,
+      "end": 418.65200030518673,
+      "text": "and",
+      "chapter": 4
+    },
+    {
+      "start": 418.65200030518673,
+      "end": 422.47200000001095,
+      "text": "fit a trend to the data rather than joining every point with a jagged line.",
+      "chapter": 4
+    },
+    {
+      "start": 423.37200152588986,
+      "end": 427.83353940055184,
+      "text": "For a straight relationship, calculate slope using well separated points on",
+      "chapter": 4
+    },
+    {
+      "start": 427.83353940055184,
+      "end": 428.0120009155383,
+      "text": "the",
+      "chapter": 4
+    },
+    {
+      "start": 428.0120009155383,
+      "end": 428.31200015259884,
+      "text": "fitted line.",
+      "chapter": 4
+    },
+    {
+      "start": 429.03200137330197,
+      "end": 432.9519995422473,
+      "text": "Do not automatically force a line through the origin unless the physical model",
+      "chapter": 4
+    },
+    {
+      "start": 432.9519995422473,
+      "end": 435.31200015259884,
+      "text": "and corrected observations justify it.",
+      "chapter": 4
+    },
+    {
+      "start": 436.37200152588986,
+      "end": 438.21200167847775,
+      "text": "Here is a JEE error example.",
+      "chapter": 4
+    },
+    {
+      "start": 438.21200167847775,
+      "end": 441.2519987793078,
+      "text": "Young's modulus depends on inverse radius squared.",
+      "chapter": 4
+    },
+    {
+      "start": 441.97200000001095,
+      "end": 445.57199847413204,
+      "text": "If radius has a small two percent error and the other contributions are",
+      "chapter": 4
+    },
+    {
+      "start": 445.57199847413204,
+      "end": 449.9319990844836,
+      "text": "negligible, its contribution to the maximum fractional error in Y is",
+      "chapter": 4
+    },
+    {
+      "start": 449.9319990844836,
+      "end": 451.6320036621203,
+      "text": "approximately four percent.",
+      "chapter": 4
+    },
+    {
+      "start": 451.6320036621203,
+      "end": 455.15200030518673,
+      "text": "The same inverse square dependence holds when the diameter is used",
+      "chapter": 4
+    },
+    {
+      "start": 455.15200030518673,
+      "end": 455.79199969483517,
+      "text": "consistently",
+      "chapter": 4
+    },
+    {
+      "start": 455.79199969483517,
+      "end": 456.45200335694454,
+      "text": "in area.",
+      "chapter": 4
+    },
+    {
+      "start": 457.1320036621203,
+      "end": 462.1119993896594,
+      "text": "A conservative maximum error sum uses absolute fractional contributions; an",
+      "chapter": 4
+    },
+    {
+      "start": 462.1119993896594,
+      "end": 465.53072022189724,
+      "text": "independent statistical uncertainty calculation can use a different",
+      "chapter": 4
+    },
+    {
+      "start": 465.53072022189724,
+      "end": 466.092002746593,
+      "text": "combination",
+      "chapter": 4
+    },
+    {
+      "start": 466.092002746593,
+      "end": 466.39199816895626,
+      "text": "rule.",
+      "chapter": 4
+    },
+    {
+      "start": 467.27200305176876,
+      "end": 469.57199847413204,
+      "text": "State which kind of error estimate you are making.",
+      "chapter": 4
+    },
+    {
+      "start": 470.55200183106564,
+      "end": 474.07199847413204,
+      "text": "Before accepting a result, check dimensions, radius versus diameter,",
+      "chapter": 4
+    },
+    {
+      "start": 474.7320021362414,
+      "end": 477.0120009155383,
+      "text": "temperature, and whether the experiment met its assumptions.",
+      "chapter": 4
+    },
+    {
+      "start": 477.6119993896594,
+      "end": 481.25610221981265,
+      "text": "A neat numerical answer is useful only when the measurement model is",
+      "chapter": 4
+    },
+    {
+      "start": 481.25610221981265,
+      "end": 481.79199969483517,
+      "text": "justified.",
+      "chapter": 4
+    },
+    {
+      "start": 482.57199847413204,
+      "end": 486.49199664307736,
+      "text": "Our worked data are original classroom examples, not claims that we performed",
+      "chapter": 4
+    },
+    {
+      "start": 486.49199664307736,
+      "end": 489.49199664307736,
+      "text": "these experiments or reproduced an official exam question.",
+      "chapter": 4
+    }
+  ]
+}

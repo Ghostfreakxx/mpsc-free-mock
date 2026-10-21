@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+<title id="title">Chromatographic travel ratio</title><desc id="desc">A spot travels three centimetres while the solvent front travels five from the same baseline, so Rf is 0.60.</desc>
+<rect width="900" height="360" fill="#f8fafc"/>
+<g font-family="Arial,sans-serif" fill="#18212b"><text x="30" y="35" font-size="24" font-weight="bold">Measure both distances from the same baseline</text>
+<rect x="95" y="55" width="245" height="255" fill="#e6f0ef" stroke="#334155" stroke-width="2"/>
+<path d="M95 280H340" stroke="#334155" stroke-width="2"/><path d="M95 80H340" stroke="#087e8b" stroke-width="2" stroke-dasharray="6 5"/>
+<circle cx="215" cy="160" r="10" fill="#b42343"/>
+<path d="M365 280V160M355 280H375M355 160H375M445 280V80M435 280H455M435 80H455" fill="none" stroke="#334155" stroke-width="2"/>
+<text x="355" y="145" font-size="18">3 cm</text><text x="425" y="65" font-size="18">5 cm</text>
+<text x="105" y="300" font-size="16">Baseline</text><text x="105" y="73" font-size="16">Solvent front</text>
+<text x="530" y="115" font-size="22" font-weight="bold">Rf = 3 / 5 = 0.60</text><text x="530" y="160" font-size="18">A ratio, with no units</text><text x="530" y="205" font-size="18">Depends on system and conditions</text><text x="530" y="250" font-size="18">Not proof of identity by itself</text>
+<text x="30" y="345" font-size="16" fill="#475569">Schematic example: vertical distances share a common scale and starting line.</text></g></svg>

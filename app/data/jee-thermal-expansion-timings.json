@@ -1,0 +1,801 @@
+{
+  "duration": 419.1120000000114,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 86.25600000000237
+    },
+    {
+      "start": 86.25600000000237,
+      "end": 169.36800000000463
+    },
+    {
+      "start": 169.36800000000463,
+      "end": 251.28000000000685
+    },
+    {
+      "start": 251.28000000000685,
+      "end": 333.60000000000906
+    },
+    {
+      "start": 333.60000000000906,
+      "end": 419.1120000000114
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 1.5,
+      "text": "Hey, welcome back.",
+      "chapter": 0
+    },
+    {
+      "start": 2.180000066757202,
+      "end": 5.139999866485596,
+      "text": "Have you noticed the small gaps between sections of a long bridge?",
+      "chapter": 0
+    },
+    {
+      "start": 5.820000171661377,
+      "end": 10.079999923706055,
+      "text": "Those gaps give the material room to change size as the weather changes.",
+      "chapter": 0
+    },
+    {
+      "start": 10.960000038146973,
+      "end": 15.15999984741211,
+      "text": "Today we're studying thermal expansion, part of Properties of Solids and",
+      "chapter": 0
+    },
+    {
+      "start": 15.15999984741211,
+      "end": 17.84000015258789,
+      "text": "Liquids in the official JEE Main syllabus.",
+      "chapter": 0
+    },
+    {
+      "start": 18.739999771118164,
+      "end": 22.459999084472656,
+      "text": "In an ordinary solid, heating makes atoms vibrate more energetically.",
+      "chapter": 0
+    },
+    {
+      "start": 23.399999618530273,
+      "end": 27.360000610351562,
+      "text": "Because the forces between atoms are not perfectly symmetric, their average",
+      "chapter": 0
+    },
+    {
+      "start": 27.360000610351562,
+      "end": 29.040000915527344,
+      "text": "separation usually increases.",
+      "chapter": 0
+    },
+    {
+      "start": 29.639999389648438,
+      "end": 33.060001373291016,
+      "text": "The atoms themselves are not simply swelling like tiny balloons.",
+      "chapter": 0
+    },
+    {
+      "start": 34.15999984741211,
+      "end": 39,
+      "text": "For a rod that is free to expand, the increase in length equals alpha times its",
+      "chapter": 0
+    },
+    {
+      "start": 39,
+      "end": 41.31999969482422,
+      "text": "original length times the temperature rise.",
+      "chapter": 0
+    },
+    {
+      "start": 42.2599983215332,
+      "end": 44.599998474121094,
+      "text": "Alpha is the coefficient of linear expansion.",
+      "chapter": 0
+    },
+    {
+      "start": 45.400001525878906,
+      "end": 49.86000061035156,
+      "text": "It tells us the fractional length change per degree, and its unit is inverse",
+      "chapter": 0
+    },
+    {
+      "start": 49.86000061035156,
+      "end": 50.13999938964844,
+      "text": "kelvin.",
+      "chapter": 0
+    },
+    {
+      "start": 51.060001373291016,
+      "end": 55.47999954223633,
+      "text": "Let's warm a two metre rod by fifty kelvin, with alpha twelve times ten to the",
+      "chapter": 0
+    },
+    {
+      "start": 55.47999954223633,
+      "end": 56.900001525878906,
+      "text": "power minus six per kelvin.",
+      "chapter": 0
+    },
+    {
+      "start": 58.099998474121094,
+      "end": 62.18000030517578,
+      "text": "Multiply twelve times ten to the power minus six, by two, by fifty.",
+      "chapter": 0
+    },
+    {
+      "start": 62.97999954223633,
+      "end": 67.41999816894531,
+      "text": "The extension is zero point zero zero one two metres, or one point two",
+      "chapter": 0
+    },
+    {
+      "start": 67.41999816894531,
+      "end": 68.66000366210938,
+      "text": "millimetres.",
+      "chapter": 0
+    },
+    {
+      "start": 68.66000366210938,
+      "end": 71.37999725341797,
+      "text": "That's a small change, but definitely not zero.",
+      "chapter": 0
+    },
+    {
+      "start": 72,
+      "end": 75,
+      "text": "The final length is two point zero zero one two metres.",
+      "chapter": 0
+    },
+    {
+      "start": 75.91999816894531,
+      "end": 79.83999633789062,
+      "text": "Notice the distinction: extension and final length are different answers.",
+      "chapter": 0
+    },
+    {
+      "start": 80.55999755859375,
+      "end": 85.44000244140625,
+      "text": "We assume uniform heating, a nearly constant coefficient and a small fractional",
+      "chapter": 0
+    },
+    {
+      "start": 85.44000244140625,
+      "end": 85.83999633789062,
+      "text": "expansion.",
+      "chapter": 0
+    },
+    {
+      "start": 86.25600000000237,
+      "end": 89.95600004768609,
+      "text": "Let's turn that equation into a JEE style problem.",
+      "chapter": 1
+    },
+    {
+      "start": 91.07600017166375,
+      "end": 92.49599977112054,
+      "text": "First, a little temperature trap.",
+      "chapter": 1
+    },
+    {
+      "start": 93.2959999618554,
+      "end": 97.61599965667962,
+      "text": "If a rod warms from twenty degrees Celsius to seventy degrees Celsius, the",
+      "chapter": 1
+    },
+    {
+      "start": 97.61599965667962,
+      "end": 100.8560003814721,
+      "text": "change is fifty degrees Celsius, which is also fifty kelvin.",
+      "chapter": 1
+    },
+    {
+      "start": 101.67600007629632,
+      "end": 106.16400018310785,
+      "text": "Do not put seventy into the expansion equation, and do not add two hundred and",
+      "chapter": 1
+    },
+    {
+      "start": 106.16400018310785,
+      "end": 107.71599908447503,
+      "text": "seventy three to a temperature difference.",
+      "chapter": 1
+    },
+    {
+      "start": 108.39599938965081,
+      "end": 112.61600061035394,
+      "text": "Now picture two rods facing one another with a three millimetre gap.",
+      "chapter": 1
+    },
+    {
+      "start": 113.43600030517815,
+      "end": 117.49599977112054,
+      "text": "Their outer ends are held fixed, so both free inner ends move toward the gap",
+      "chapter": 1
+    },
+    {
+      "start": 117.49599977112054,
+      "end": 117.99599977112054,
+      "text": "when heated.",
+      "chapter": 1
+    },
+    {
+      "start": 118.99600167846917,
+      "end": 120.49600167846917,
+      "text": "Each rod starts one metre long.",
+      "chapter": 1
+    },
+    {
+      "start": 121.45600076294183,
+      "end": 125.49600167846917,
+      "text": "The first coefficient is twenty times ten to the power minus six per kelvin,",
+      "chapter": 1
+    },
+    {
+      "start": 126.09600015259026,
+      "end": 128.7359995422387,
+      "text": "and the second is ten times ten to the power minus six.",
+      "chapter": 1
+    },
+    {
+      "start": 129.53599877929923,
+      "end": 131.47600122070548,
+      "text": "How fast does the gap close per degree?",
+      "chapter": 1
+    },
+    {
+      "start": 132.15600152588127,
+      "end": 134.27600045776603,
+      "text": "Think about both rods, not just one.",
+      "chapter": 1
+    },
+    {
+      "start": 134.67599816894767,
+      "end": 135.41599984741447,
+      "text": "Add their extensions.",
+      "chapter": 1
+    },
+    {
+      "start": 136.43600030517814,
+      "end": 139.9560007629418,
+      "text": "Together they close thirty times ten to the power minus six metres per kelvin,",
+      "chapter": 1
+    },
+    {
+      "start": 140.37599893188712,
+      "end": 142.9560007629418,
+      "text": "or zero point zero three millimetres per kelvin.",
+      "chapter": 1
+    },
+    {
+      "start": 143.83600183105705,
+      "end": 147.57599969482658,
+      "text": "Divide three millimetres by zero point zero three millimetres per kelvin.",
+      "chapter": 1
+    },
+    {
+      "start": 148.61600061035392,
+      "end": 150.33600183105705,
+      "text": "The temperature rise is one hundred kelvin.",
+      "chapter": 1
+    },
+    {
+      "start": 151.13599725342033,
+      "end": 153.05600305176017,
+      "text": "The units cancel exactly as we want.",
+      "chapter": 1
+    },
+    {
+      "start": 153.61600061035392,
+      "end": 156.6960024414086,
+      "text": "Until contact, both rods expand freely toward the gap.",
+      "chapter": 1
+    },
+    {
+      "start": 157.57599969482658,
+      "end": 161.7960009155297,
+      "text": "After contact, the same free expansion calculation no longer describes the",
+      "chapter": 1
+    },
+    {
+      "start": 161.7960009155297,
+      "end": 164.33600183105705,
+      "text": "actual motion, because mechanical constraints matter.",
+      "chapter": 1
+    },
+    {
+      "start": 165.27599664306877,
+      "end": 169.13599725342033,
+      "text": "Always sketch which ends are fixed before adding or subtracting length changes.",
+      "chapter": 1
+    },
+    {
+      "start": 169.36800000000463,
+      "end": 171.3280000381516,
+      "text": "Now a favourite conceptual question.",
+      "chapter": 2
+    },
+    {
+      "start": 172.12799999046788,
+      "end": 173.688000171666,
+      "text": "A metal plate has a circular hole.",
+      "chapter": 2
+    },
+    {
+      "start": 174.4879998855637,
+      "end": 178.3880004577683,
+      "text": "When the entire plate is heated uniformly and can expand freely, does the hole",
+      "chapter": 2
+    },
+    {
+      "start": 178.3880004577683,
+      "end": 179.6079997711228,
+      "text": "get smaller or larger?",
+      "chapter": 2
+    },
+    {
+      "start": 180.4879998855637,
+      "end": 181.70800015259252,
+      "text": "Take a moment to picture it.",
+      "chapter": 2
+    },
+    {
+      "start": 182.30799958038793,
+      "end": 182.96800038147435,
+      "text": "It gets larger.",
+      "chapter": 2
+    },
+    {
+      "start": 184.14799973297582,
+      "end": 186.98800083923803,
+      "text": "Imagine putting the missing metal disc back into the hole before heating.",
+      "chapter": 2
+    },
+    {
+      "start": 187.66799923706517,
+      "end": 191.52799984741674,
+      "text": "The whole sheet, including that imaginary disc, expands together.",
+      "chapter": 2
+    },
+    {
+      "start": 192.48800083923803,
+      "end": 195.28800007629857,
+      "text": "Remove the disc again, and the enlarged opening remains.",
+      "chapter": 2
+    },
+    {
+      "start": 195.927999465947,
+      "end": 199.40800091553197,
+      "text": "Expansion is not metal simply flowing inward into empty space.",
+      "chapter": 2
+    },
+    {
+      "start": 200.48800083923803,
+      "end": 203.68799969482885,
+      "text": "Every length scales by approximately one plus alpha times the temperature",
+      "chapter": 2
+    },
+    {
+      "start": 203.68799969482885,
+      "end": 204.06800076294408,
+      "text": "change.",
+      "chapter": 2
+    },
+    {
+      "start": 204.9879989318894,
+      "end": 209.02799984741674,
+      "text": "For a ten millimetre hole radius, alpha twenty times ten to the power minus",
+      "chapter": 2
+    },
+    {
+      "start": 209.02799984741674,
+      "end": 214.2980003051804,
+      "text": "six, and a rise of one hundred kelvin, the fractional change is zero point zero",
+      "chapter": 2
+    },
+    {
+      "start": 214.2980003051804,
+      "end": 215.10800167847142,
+      "text": "zero two.",
+      "chapter": 2
+    },
+    {
+      "start": 215.10800167847142,
+      "end": 219.51800057220922,
+      "text": "The radius increases by zero point zero two millimetres, reaching ten point",
+      "chapter": 2
+    },
+    {
+      "start": 219.51800057220922,
+      "end": 220.92800137329564,
+      "text": "zero two millimetres.",
+      "chapter": 2
+    },
+    {
+      "start": 220.92800137329564,
+      "end": 221.58800122070775,
+      "text": "What about area?",
+      "chapter": 2
+    },
+    {
+      "start": 222.06800076294408,
+      "end": 223.6479987793015,
+      "text": "Both length and width expand.",
+      "chapter": 2
+    },
+    {
+      "start": 223.6479987793015,
+      "end": 227.82799908447728,
+      "text": "Multiplying their two scale factors gives approximately one plus twice alpha",
+      "chapter": 2
+    },
+    {
+      "start": 227.82799908447728,
+      "end": 231.8079986267136,
+      "text": "times the temperature change, when we neglect the very small squared term.",
+      "chapter": 2
+    },
+    {
+      "start": 232.84799954224096,
+      "end": 235.88799664307103,
+      "text": "Volume has three expanding dimensions, so its fractional change is",
+      "chapter": 2
+    },
+    {
+      "start": 235.88799664307103,
+      "end": 238.7280006103562,
+      "text": "approximately three times alpha times the temperature change.",
+      "chapter": 2
+    },
+    {
+      "start": 239.66800305176244,
+      "end": 243.92799755859838,
+      "text": "These two and three factors apply to an isotropic solid in the small expansion",
+      "chapter": 2
+    },
+    {
+      "start": 243.92799755859838,
+      "end": 244.28799816894994,
+      "text": "limit.",
+      "chapter": 2
+    },
+    {
+      "start": 245.36800000000463,
+      "end": 249.46799847412572,
+      "text": "Don't automatically use three alpha for an arbitrary liquid whose volume",
+      "chapter": 2
+    },
+    {
+      "start": 249.46799847412572,
+      "end": 250.96799847412572,
+      "text": "coefficient is given independently.",
+      "chapter": 2
+    },
+    {
+      "start": 251.28000000000685,
+      "end": 255.68000009537428,
+      "text": "Let's fill a container right to the brim, then heat the container and liquid",
+      "chapter": 3
+    },
+    {
+      "start": 255.68000009537428,
+      "end": 256.16000011444777,
+      "text": "together.",
+      "chapter": 3
+    },
+    {
+      "start": 256.8199999618599,
+      "end": 259.7599995422432,
+      "text": "Does the overflow equal the liquid's entire increase in volume?",
+      "chapter": 3
+    },
+    {
+      "start": 260.3000004577705,
+      "end": 260.89999988556593,
+      "text": "Not quite.",
+      "chapter": 3
+    },
+    {
+      "start": 261.50000026703566,
+      "end": 263.3599999237129,
+      "text": "The container also makes extra room.",
+      "chapter": 3
+    },
+    {
+      "start": 264.00000026703566,
+      "end": 267.3200009155342,
+      "text": "That's why we distinguish real expansion from apparent expansion.",
+      "chapter": 3
+    },
+    {
+      "start": 268.0799992370674,
+      "end": 270.7599995422432,
+      "text": "Real expansion is the liquid's actual volume increase.",
+      "chapter": 3
+    },
+    {
+      "start": 271.49999931336134,
+      "end": 275.40000083924025,
+      "text": "Apparent expansion is what we observe relative to the changing capacity of its",
+      "chapter": 3
+    },
+    {
+      "start": 275.40000083924025,
+      "end": 275.7399990844795,
+      "text": "container.",
+      "chapter": 3
+    },
+    {
+      "start": 276.3599999237129,
+      "end": 279.7000000763008,
+      "text": "Suppose the initial volume is five hundred millilitres.",
+      "chapter": 3
+    },
+    {
+      "start": 279.7000000763008,
+      "end": 283.7599995422432,
+      "text": "The liquid's volume expansion coefficient is one times ten to the power minus",
+      "chapter": 3
+    },
+    {
+      "start": 283.7599995422432,
+      "end": 284.52000167847365,
+      "text": "three per kelvin.",
+      "chapter": 3
+    },
+    {
+      "start": 285.3000004577705,
+      "end": 289.3200009155342,
+      "text": "The container's volume coefficient is three times ten to the power minus five",
+      "chapter": 3
+    },
+    {
+      "start": 289.3200009155342,
+      "end": 289.8000004577705,
+      "text": "per kelvin.",
+      "chapter": 3
+    },
+    {
+      "start": 290.62000015259474,
+      "end": 295.53999832154005,
+      "text": "For a twenty kelvin rise, the liquid gains ten millilitres, while the container",
+      "chapter": 3
+    },
+    {
+      "start": 295.53999832154005,
+      "end": 298.0799992370674,
+      "text": "gains zero point three millilitres of capacity.",
+      "chapter": 3
+    },
+    {
+      "start": 299.1600010681221,
+      "end": 300.4800007629463,
+      "text": "Pause and subtract those changes.",
+      "chapter": 3
+    },
+    {
+      "start": 300.4800007629463,
+      "end": 305.00000122071,
+      "text": "The overflow is approximately nine point seven millilitres.",
+      "chapter": 3
+    },
+    {
+      "start": 305.00000122071,
+      "end": 308.3999989318916,
+      "text": "Equivalently, multiply the initial volume by the difference between the two",
+      "chapter": 3
+    },
+    {
+      "start": 308.3999989318916,
+      "end": 310.78000000000685,
+      "text": "volume coefficients and by the temperature rise.",
+      "chapter": 3
+    },
+    {
+      "start": 311.7399990844795,
+      "end": 313.8200009155342,
+      "text": "Notice that both coefficients here describe volume.",
+      "chapter": 3
+    },
+    {
+      "start": 314.4199993896553,
+      "end": 318.7200024414131,
+      "text": "If a question gives the solid container's linear coefficient instead, first use",
+      "chapter": 3
+    },
+    {
+      "start": 318.7200024414131,
+      "end": 322.86000183106154,
+      "text": "three times that value for its volume coefficient, within the isotropic small",
+      "chapter": 3
+    },
+    {
+      "start": 322.86000183106154,
+      "end": 323.78000000000685,
+      "text": "expansion approximation.",
+      "chapter": 3
+    },
+    {
+      "start": 324.5599987793037,
+      "end": 328.0599987793037,
+      "text": "We also assume no evaporation, leakage or phase change.",
+      "chapter": 3
+    },
+    {
+      "start": 328.2200024414131,
+      "end": 332.5599987793037,
+      "text": "If the container expands more than the liquid, the level can fall rather than",
+      "chapter": 3
+    },
+    {
+      "start": 332.5599987793037,
+      "end": 333.0599987793037,
+      "text": "producing overflow.",
+      "chapter": 3
+    },
+    {
+      "start": 333.60000000000906,
+      "end": 336.37999997139883,
+      "text": "Let's finish by connecting expansion to density.",
+      "chapter": 4
+    },
+    {
+      "start": 337.1599999427886,
+      "end": 338.7799998283477,
+      "text": "Density is mass divided by volume.",
+      "chapter": 4
+    },
+    {
+      "start": 339.3399997711272,
+      "end": 342.1799999237151,
+      "text": "If no material enters or leaves, the mass stays constant.",
+      "chapter": 4
+    },
+    {
+      "start": 342.7400003433318,
+      "end": 345.16000041962576,
+      "text": "A larger volume therefore means a smaller density.",
+      "chapter": 4
+    },
+    {
+      "start": 346.12000045777273,
+      "end": 350.62000045777273,
+      "text": "Within our volume expansion model, divide the original density by one plus the",
+      "chapter": 4
+    },
+    {
+      "start": 350.62000045777273,
+      "end": 352.8000007629485,
+      "text": "volume coefficient times the temperature change.",
+      "chapter": 4
+    },
+    {
+      "start": 353.65999946595144,
+      "end": 357.72000083924246,
+      "text": "Suppose a sample starts at one thousand kilograms per cubic metre and its",
+      "chapter": 4
+    },
+    {
+      "start": 357.72000083924246,
+      "end": 359.81999931336355,
+      "text": "volume increases by one percent.",
+      "chapter": 4
+    },
+    {
+      "start": 359.81999931336355,
+      "end": 362.8600002288909,
+      "text": "Divide one thousand by one point zero one.",
+      "chapter": 4
+    },
+    {
+      "start": 362.8600002288909,
+      "end": 367.0599990844817,
+      "text": "The density becomes approximately nine hundred and ninety point one kilograms",
+      "chapter": 4
+    },
+    {
+      "start": 367.0599990844817,
+      "end": 368.10000000000906,
+      "text": "per cubic metre.",
+      "chapter": 4
+    },
+    {
+      "start": 369.1600013733001,
+      "end": 373.18000183106375,
+      "text": "Simply subtracting one percent gives nine hundred and ninety, a useful first",
+      "chapter": 4
+    },
+    {
+      "start": 373.18000183106375,
+      "end": 377.19999847413015,
+      "text": "order estimate, but the division gives the more precise result for the stated",
+      "chapter": 4
+    },
+    {
+      "start": 377.19999847413015,
+      "end": 377.9800010681243,
+      "text": "volume change.",
+      "chapter": 4
+    },
+    {
+      "start": 378.94000015259695,
+      "end": 380.69999847413015,
+      "text": "One important exception deserves attention.",
+      "chapter": 4
+    },
+    {
+      "start": 381.34000167847586,
+      "end": 385.10000000000906,
+      "text": "At ordinary pressure, liquid water contracts when heated from zero to about",
+      "chapter": 4
+    },
+    {
+      "start": 385.10000000000906,
+      "end": 385.9800010681243,
+      "text": "four degrees Celsius.",
+      "chapter": 4
+    },
+    {
+      "start": 386.7199989318938,
+      "end": 390.60000000000906,
+      "text": "Its density increases over that interval and is greatest near four degrees",
+      "chapter": 4
+    },
+    {
+      "start": 390.60000000000906,
+      "end": 390.94000015259695,
+      "text": "Celsius.",
+      "chapter": 4
+    },
+    {
+      "start": 391.44000015259695,
+      "end": 395.4600006103606,
+      "text": "So don't apply a constant positive expansion coefficient across that range.",
+      "chapter": 4
+    },
+    {
+      "start": 396.50000152588797,
+      "end": 400.3399978637786,
+      "text": "Before solving a thermal expansion question, check four things: what dimension",
+      "chapter": 4
+    },
+    {
+      "start": 400.3399978637786,
+      "end": 404.5400024414153,
+      "text": "is changing, what original size is given, what temperature difference applies,",
+      "chapter": 4
+    },
+    {
+      "start": 404.9600006103606,
+      "end": 406.7200027465911,
+      "text": "and whether the object can expand freely.",
+      "chapter": 4
+    },
+    {
+      "start": 407.2200027465911,
+      "end": 409.6400009155364,
+      "text": "If it cannot, stress may develop instead.",
+      "chapter": 4
+    },
+    {
+      "start": 410.4000030517669,
+      "end": 412.3200012207122,
+      "text": "Today we've built the expansion foundation.",
+      "chapter": 4
+    },
+    {
+      "start": 413.0400024414153,
+      "end": 417.7399993896575,
+      "text": "Heat capacity, calorimetry, phase changes and heat transfer are other topics in",
+      "chapter": 4
+    },
+    {
+      "start": 417.7399993896575,
+      "end": 419.1120000000114,
+      "text": "the same official unit, and we'll teach them separately.",
+      "chapter": 4
+    }
+  ]
+}

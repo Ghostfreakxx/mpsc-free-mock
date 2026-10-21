@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, engaging female teacher with a natural General American English accent. Relaxed, welcoming and lightly playful, with a gentle smile and conversational rhythm. Keep scientific terms precise and avoid an announcer cadence. Slow down for equations, numbers and conversions. Give brief natural thinking pauses after questions. Do not add words or laughter absent from the script.",
+  "unit": 19,
+  "title": "Electronic-device applications: diode states, Zener limits and gate networks",
+  "sources": [
+    {
+      "title": "NTA: JEE Main 2026 official syllabus",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "NCERT: semiconductor electronics background",
+      "url": "https://ncert.nic.in/textbook/pdf/leph206.pdf"
+    },
+    {
+      "title": "Nexperia: Zener current and power ratings",
+      "url": "https://assets.nexperia.com/documents/data-sheet/BZX84_SER.pdf"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Assume a diode state, solve, then check it",
+      "formula": "On: VD=0.7 V with ID >= 0; off: ID=0 with VD below the stated turn-on level",
+      "points": [
+        "This is a constant-drop teaching model, not a universal physical threshold.",
+        "At a junction, resistor current can split between the load and diode.",
+        "An inconsistent current sign rejects the assumed state."
+      ],
+      "script": "Hey, welcome back. A diode problem is really a circuit problem plus a consistency check. Use a stated zero point seven volt forward-drop model, with reverse leakage and breakdown neglected. Connect a source through one kilo-ohm to an output node. From that node to ground, place a ten-kilo-ohm load and a diode in parallel. Its anode is at the node and cathode at ground. Start with a positive five-volt source. If the diode were off, the divider would give about four point five five volts at the node. That would forward bias our diode, so off is inconsistent. With the diode on, output is zero point seven volts. The series resistor current is five minus zero point seven, divided by one thousand, or four point three milliamperes. But does all that current enter the diode? Pause and check the load branch. The load takes zero point seven divided by ten thousand amperes, or zero point zero seven milliamperes. Kirchhoff's current law leaves four point two three milliamperes through the diode, in its allowed direction. Now change the source to negative zero point five volts. An on assumption would require a negative forward diode current, so reject it. With the diode off, the divider gives output negative zero point four five four five volts approximately. That reverse biases the diode consistently. We did not simply clamp every output to zero point seven regardless of input. Label the diode orientation, assume a state, solve the remaining circuit, and verify the resulting voltage and current. Real diode curves are smooth and temperature dependent; zero point seven is only the chosen approximation for this exercise. Any practical circuit also needs current limits and component ratings."
+    },
+    {
+      "title": "A Zener regulator has a current window",
+      "formula": "IS = (Vin - VZ)/R; IZ = IS - IL; require IZmin <= IZ <= IZmax",
+      "points": [
+        "A predicted negative Zener current invalidates the regulation assumption.",
+        "Test the worst input and load cases, not just one nominal operating point.",
+        "Check Zener and resistor power within the stated component model."
+      ],
+      "script": "A Zener does not hold its rated voltage under every possible load. In the simplified regulator, a series resistor supplies a parallel combination of the reverse-biased Zener and the load. Use Zener voltage five point one volts, series resistance three hundred thirty ohms and load resistance one kilo-ohm. At twelve volts input, series current is six point nine divided by three hundred thirty, or about twenty point nine zero nine milliamperes. The load takes five point one milliamperes. Zener current is the difference, about fifteen point eight zero nine milliamperes. Suppose our specified usable Zener window is five to twenty-five milliamperes. The nominal point is inside it. To keep that same load regulated, minimum input is five point one plus three hundred thirty times the sum of five milliamperes and load current. That gives eight point four three three volts. The upper current limit gives maximum input fifteen point zero three three volts. These bounds belong to this fixed-load, constant-Zener-voltage model. Now replace the load by two hundred twenty ohms while keeping twelve volts input. At a supposed five point one volts, the load would demand twenty-three point one eight milliamperes, more than the series resistor supplies. A negative computed Zener current tells us regulation failed. Neglecting leakage below breakdown, the off-Zener divider gives output four point eight volts instead. Never report five point one volts just because that number is printed beside the device. At the nominal regulated point, Zener power is approximately zero point zero eight zero six watts. Resistor power and device ratings also need checking. Real knee currents, tolerances and thermal effects change the bounds. JEE's clean routine is current balance, operating-window check, and power check, in that order."
+    },
+    {
+      "title": "Use De Morgan to build and check gate networks",
+      "formula": "OR = NAND(NAND(A,A), NAND(B,B)); AND = NOR(NOR(A,A), NOR(B,B))",
+      "points": [
+        "A NAND or NOR with tied inputs acts as NOT.",
+        "Follow each intermediate output for every input combination.",
+        "Boolean identities describe ideal logic, not analog threshold behaviour."
+      ],
+      "script": "Let's move from current paths to logical states. We use ideal binary inputs zero and one. A NAND output is the negation of AND. Tie its two inputs together and you obtain NOT: NAND of A with A is not A. Do the same to B. Feed those two inverted signals into a third NAND. Its result is not of not A AND not B. De Morgan's identity turns that into A OR B. Rather than trusting a familiar-looking symbol, build its complete table. For inputs zero zero, the first two outputs are one one, and the final NAND gives zero. For zero one, they are one zero, and output is one. For one zero, output is also one. For one one, the intermediate pair is zero zero, and output is one. The resulting sequence is zero, one, one, one: OR. Now use three NOR gates in the analogous pattern. A tied-input NOR also makes NOT. The final NOR gives not of not A OR not B, which is A AND B. Its table is zero, zero, zero, one. Pause and predict the all-one input before checking: both inverted signals become zero, and the last NOR gives one. These constructions explain why NAND and NOR are called universal gates. More complicated networks can be simplified with Boolean algebra, but checking all combinations remains an excellent safeguard for a small network. Do not use ordinary arithmetic addition for OR: one OR one is one, not two. These are ideal logic models with stable defined inputs; practical voltage thresholds, delays and floating-input behaviour require a device specification. For JEE, annotate the intermediate signals and test the full table, especially any inversion bubbles that are easy to overlook."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "For the 5 V clamp circuit, the series current is 4.3 mA and load current 0.07 mA. Diode current is:",
+      "options": [
+        "4.37 mA",
+        "4.23 mA",
+        "4.3 mA",
+        "0.07 mA"
+      ],
+      "answer": 1,
+      "explanation": "Current balance: 4.3 - 0.07 = 4.23 mA."
+    },
+    {
+      "question": "A negative calculated reverse-breakdown Zener current in the assumed regulated circuit indicates:",
+      "options": [
+        "Perfect regulation",
+        "A larger regulated voltage always",
+        "The assumed regulated state is inconsistent",
+        "The resistor has no current"
+      ],
+      "answer": 2,
+      "explanation": "Re-solve with the appropriate off/below-breakdown model."
+    },
+    {
+      "question": "For Vin=12 V, R=330 ohm and a 220 ohm load with the stated Zener off, output is:",
+      "options": [
+        "4.8 V",
+        "5.1 V",
+        "12 V",
+        "0 V"
+      ],
+      "answer": 0,
+      "explanation": "Voltage divider: 12 x 220/(330+220) = 4.8 V."
+    },
+    {
+      "question": "NAND(NAND(A,A), NAND(B,B)) implements:",
+      "options": [
+        "AND",
+        "NOR",
+        "NOT A",
+        "OR"
+      ],
+      "answer": 3,
+      "explanation": "By De Morgan, NOT((NOT A) AND (NOT B)) = A OR B."
+    },
+    {
+      "question": "NOR(NOR(A,A), NOR(B,B)) has outputs for 00,01,10,11:",
+      "options": [
+        "0,1,1,1",
+        "0,0,0,1",
+        "1,1,1,0",
+        "1,0,0,0"
+      ],
+      "answer": 1,
+      "explanation": "The network implements AND."
+    }
+  ]
+}
