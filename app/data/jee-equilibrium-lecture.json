@@ -21,6 +21,14 @@
     {
       "title": "OpenStax: precipitation and dissolution",
       "url": "https://openstax.org/books/chemistry-2e/pages/15-1-precipitation-and-dissolution"
+    },
+    {
+      "title": "OpenStax: acid-base titrations",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations"
+    },
+    {
+      "title": "OpenStax: coupled equilibria",
+      "url": "https://openstax.org/books/chemistry-2e/pages/15-3-coupled-equilibria"
     }
   ],
   "chapters": [
@@ -305,6 +313,181 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Convert gas equilibrium conventions",
+      "formula": "Kp = Kc (RT c°/p°)^Δng for the stated ideal-gas standards",
+      "script": "Pressure and concentration equilibrium expressions must use compatible conventions. For an ideal gas, partial pressure equals concentration times R T. If the pressure quotient uses each pressure divided by its standard pressure and the concentration quotient uses each concentration divided by its standard concentration, their conversion includes R T times standard concentration divided by standard pressure. Raise that dimensionless factor to the gaseous product mole count minus the gaseous reactant mole count. For dinitrogen tetroxide forming two nitrogen dioxide molecules, the change is one. Take standard concentration one mole per litre, standard pressure one bar, temperature three hundred kelvin and R zero point zero eight three one four litre bar per mole kelvin. The conversion factor is twenty four point nine four two. A supplied concentration based constant of zero point one zero zero therefore corresponds to a pressure based constant about two point four nine four under these conventions. When the gaseous mole change is zero, the factor cancels. Count gaseous species only and state the standards rather than silently combining incompatible units or treating every reported constant as the same numerical quantity.",
+      "points": [
+        "N₂O₄ ⇌ 2NO₂ · Δng = 2 − 1 · 1",
+        "Stated standards at 300 K · RT c°/p° · 24.942",
+        "Kc = 0.100 · 0.100 × 24.942 · Kp ≈ 2.494"
+      ],
+      "board": {
+        "heading": "Convert gas equilibrium conventions",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "N₂O₄ ⇌ 2NO₂",
+            "Δng = 2 − 1",
+            "1"
+          ],
+          [
+            "Stated standards at 300 K",
+            "RT c°/p°",
+            "24.942"
+          ],
+          [
+            "Kc = 0.100",
+            "0.100 × 24.942",
+            "Kp ≈ 2.494"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Use dissociation extent and total pressure",
+      "formula": "N₂O₄ ⇌ 2NO₂: Kp = [4α²/(1−α²)](P/p°)",
+      "script": "Gas dissociation changes the total number of molecules, so the reacted fraction is not generally the same as the product mole fraction. Begin with one mole of pure dinitrogen tetroxide. If a fraction alpha dissociates, one minus alpha mole remains and two alpha moles of nitrogen dioxide form. The total is one plus alpha. At twenty percent dissociation, the amounts are zero point eight and zero point four mole, with a total of one point two. The nitrogen dioxide mole fraction is therefore one third and the tetroxide fraction two thirds. At total pressure one bar, their partial pressures are one third bar and two thirds bar. With standard pressure one bar, the dimensionless pressure quotient is the square of one third divided by two thirds, giving one sixth. The general expression contains four alpha squared divided by one minus alpha squared, multiplied by total pressure divided by standard pressure. Check both atom balance and total moles before inserting a pressure. This model starts with pure reactant and assumes ideal gases without an inert gas or another competing reaction.",
+      "points": [
+        "At α = 0.20 · n(N₂O₄)=0.80; n(NO₂)=0.40 · ntotal = 1.20",
+        "Mole fractions · 0.80/1.20; 0.40/1.20 · 2/3; 1/3",
+        "At P = p° = 1 bar · (1/3)² ÷ (2/3) · Kp = 1/6"
+      ],
+      "board": {
+        "heading": "Use dissociation extent and total pressure",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "At α = 0.20",
+            "n(N₂O₄)=0.80; n(NO₂)=0.40",
+            "ntotal = 1.20"
+          ],
+          [
+            "Mole fractions",
+            "0.80/1.20; 0.40/1.20",
+            "2/3; 1/3"
+          ],
+          [
+            "At P = p° = 1 bar",
+            "(1/3)² ÷ (2/3)",
+            "Kp = 1/6"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Titration requires reaction before pH",
+      "formula": "25.00 mL 0.100 M HCl titrated with 0.100 M NaOH at 25 °C",
+      "script": "In a strong acid strong base titration, calculate the neutralization amounts before the remaining ion concentration. Start with twenty five millilitres of zero point one zero zero molar hydrochloric acid. It contains zero point zero zero two five zero mole of acid. Adding twenty millilitres of equally concentrated sodium hydroxide consumes zero point zero zero two zero zero mole, leaving zero point zero zero zero five zero mole of hydrogen ions in forty five millilitres. The concentration is about zero point zero one one one molar and p H about one point nine five. At twenty five millilitres of base, the stoichiometric amounts are equal. For this ideal strong acid strong base example at twenty five degrees Celsius, p H is approximately seven. At thirty millilitres, excess hydroxide is zero point zero zero zero five zero mole in fifty five millilitres, giving p O H about two point zero four and p H about eleven point nine six. Total volume matters on both sides of equivalence. A weak acid titration has different equilibrium behaviour, so do not transfer the neutral equivalence conclusion to every acid base pair.",
+      "points": [
+        "20.00 mL base · Excess H⁺ / 45.00 mL · pH ≈ 1.95",
+        "25.00 mL base · Strong acid/base equivalence · pH ≈ 7.00",
+        "30.00 mL base · Excess OH⁻ / 55.00 mL · pH ≈ 11.96"
+      ],
+      "board": {
+        "heading": "Titration requires reaction before pH",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "20.00 mL base",
+            "Excess H⁺ / 45.00 mL",
+            "pH ≈ 1.95"
+          ],
+          [
+            "25.00 mL base",
+            "Strong acid/base equivalence",
+            "pH ≈ 7.00"
+          ],
+          [
+            "30.00 mL base",
+            "Excess OH⁻ / 55.00 mL",
+            "pH ≈ 11.96"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Common ions suppress simple solubility",
+      "formula": "AgCl: Ksp = aAg⁺ aCl⁻; dilute approximation [Ag⁺][Cl⁻]",
+      "script": "A solubility product constrains free ion activities, not the total amount of every metal containing species in solution. For a simple dilute silver chloride model, use the concentration product as an approximation to the activity expression. With illustrative solubility product one point eight times ten to the minus ten, pure water gives equal silver and chloride concentrations and a molar solubility about one point three four times ten to the minus five. Now suppose the solution already contains zero point zero one zero molar chloride. If additional dissolution is small, free chloride remains approximately that value. Divide the solubility product by zero point zero one zero to obtain silver concentration one point eight times ten to the minus eight molar. The added dissolution is tiny relative to the initial chloride, so the approximation is self consistent. This common ion lowers simple solubility in the stated model. Complex formation, other equilibria and nonideal activities can alter the result. In particular, total dissolved silver need not equal free silver when complexes are important. Check what concentration the question actually asks for before applying the product expression.",
+      "points": [
+        "AgCl in pure water · s = √(1.8 × 10⁻¹⁰) · s ≈ 1.34 × 10⁻⁵ M",
+        "Initial Cl⁻ = 0.010 M · [Ag⁺] ≈ Ksp/[Cl⁻] · 1.8 × 10⁻⁸ M",
+        "Approximation check · s ≪ 0.010 M · Ignore complexes only if stated"
+      ],
+      "board": {
+        "heading": "Common ions suppress simple solubility",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "AgCl in pure water",
+            "s = √(1.8 × 10⁻¹⁰)",
+            "s ≈ 1.34 × 10⁻⁵ M"
+          ],
+          [
+            "Initial Cl⁻ = 0.010 M",
+            "[Ag⁺] ≈ Ksp/[Cl⁻]",
+            "1.8 × 10⁻⁸ M"
+          ],
+          [
+            "Approximation check",
+            "s ≪ 0.010 M",
+            "Ignore complexes only if stated"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Amphiprotic salts need two acid constants",
+      "formula": "For a suitable intermediate salt: pH ≈ ½(pKa1 + pKa2)",
+      "script": "An amphiprotic species can accept or donate a proton. Hydrogen carbonate is a familiar intermediate in a diprotic acid system. Its acid behaviour is controlled by the second acid dissociation constant, while its base behaviour is related to the first constant through the water ion product. Under the appropriate intermediate salt approximation, p H is approximately half the sum of the two p K a values. For illustrative values six point three and ten point three, the estimate is eight point three. This is a mildly basic result even though the formula contains hydrogen. Do not classify a salt as acidic simply because its anion still carries a proton. The average formula assumes conditions where the amphiprotic salt contribution dominates water effects and the approximations used in its derivation are adequate. Very dilute solutions, additional acids or bases, and important competing equilibria can require a fuller mass and charge balance. The two constants must refer to the same acid system, solvent and temperature. A useful answer states the model and its limits alongside the numerical average.",
+      "points": [
+        "Intermediate species · Can gain or lose H⁺ · Amphiprotic",
+        "Illustrative pKa values · 6.3 and 10.3 · pH ≈ 8.3",
+        "Model limitation · Very dilute / competing species · Use full balances if needed"
+      ],
+      "board": {
+        "heading": "Amphiprotic salts need two acid constants",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Intermediate species",
+            "Can gain or lose H⁺",
+            "Amphiprotic"
+          ],
+          [
+            "Illustrative pKa values",
+            "6.3 and 10.3",
+            "pH ≈ 8.3"
+          ],
+          [
+            "Model limitation",
+            "Very dilute / competing species",
+            "Use full balances if needed"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -439,6 +622,72 @@
       ],
       "answer": 3,
       "explanation": "K_sp = 4s^3, so s^3 = 10^-12 and s = 10^-4 M. The ion coefficient must be included before taking the cube root."
+    },
+    {
+      "question": "For N2O4 ⇌ 2NO2 at 300 K with the stated 1 M and 1 bar standards, RTc°/p°=24.942 and Kc=0.100. Kp is:",
+      "options": [
+        "0.00401",
+        "2.4942",
+        "24.942",
+        "0.100"
+      ],
+      "answer": 1,
+      "explanation": "Δng=1, so multiply the concentration-based constant by the stated dimensionless conversion factor."
+    },
+    {
+      "question": "Starting from pure N2O4 with α=0.20, the NO2 mole fraction is:",
+      "options": [
+        "0.20",
+        "0.40",
+        "1/3",
+        "2/3"
+      ],
+      "answer": 2,
+      "explanation": "NO2 amount is 0.40 and total amount 1.20 per initial mole, giving one third."
+    },
+    {
+      "question": "25.00 mL 0.100 M HCl plus 20.00 mL 0.100 M NaOH has approximate ideal pH:",
+      "options": [
+        "1.95",
+        "7.00",
+        "11.96",
+        "0.70"
+      ],
+      "answer": 0,
+      "explanation": "0.00050 mol H+ remains in 0.04500 L, giving pH≈1.95."
+    },
+    {
+      "question": "With AgCl Ksp=1.8×10^−10 and initial chloride 0.010 M in the stated simple model, free Ag+ is approximately:",
+      "options": [
+        "1.34×10^−5 M",
+        "1.8×10^−10 M",
+        "0.010 M",
+        "1.8×10^−8 M"
+      ],
+      "answer": 3,
+      "explanation": "Use Ksp/[Cl−] and check that additional dissolution is negligible relative to initial chloride."
+    },
+    {
+      "question": "For an intermediate amphiprotic salt under the stated approximation, pKa1=6.3 and pKa2=10.3 give pH:",
+      "options": [
+        "4.0",
+        "8.3",
+        "16.6",
+        "6.3"
+      ],
+      "answer": 1,
+      "explanation": "The appropriate estimate is half the sum: (6.3+10.3)/2=8.3."
+    },
+    {
+      "question": "At α=0.20 for pure N2O4 dissociation and P=p°=1 bar, dimensionless Kp is:",
+      "options": [
+        "1/3",
+        "2/3",
+        "1/6",
+        "1"
+      ],
+      "answer": 2,
+      "explanation": "Use y(NO2)^2/y(N2O4)=(1/3)^2/(2/3)=1/6."
     }
   ]
 }

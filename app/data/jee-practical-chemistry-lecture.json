@@ -21,6 +21,14 @@
     {
       "title": "NCERT: thermochemistry",
       "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm103.pdf"
+    },
+    {
+      "title": "NCERT: systematic qualitative analysis",
+      "url": "https://www.ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXI/chemistry/kelm207.pdf"
+    },
+    {
+      "title": "OpenStax: calorimetry",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-2-calorimetry"
     }
   ],
   "chapters": [
@@ -303,6 +311,181 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Read a burette and subtract a blank",
+      "formula": "Corrected titre = final reading − initial reading − blank",
+      "script": "A titre is a delivered volume, not simply the final burette reading. Suppose the initial reading is three point one zero millilitres and the final reading twenty one point five zero. The delivered volume is eighteen point four zero millilitres. If a valid blank correction for the same analysis is zero point four zero millilitre, the corrected titre is eighteen point zero zero. For illustrative zero point zero two zero zero molar permanganate reducing to manganese two in acid, each mole accepts five electrons. Iron two becoming iron three supplies one electron per ion. The corrected amount therefore corresponds to zero point zero zero one eight zero mole of iron two. If that came from a twenty five point zero zero millilitre sample aliquot, its concentration is zero point zero seven two zero molar. State the reaction medium and use the appropriate electron factor. A blank correction addresses background consumption defined by the method; it is not an arbitrary adjustment to make repeated titres agree. Check delivered volume, correction sign, stoichiometry and sample volume as separate steps.",
+      "points": [
+        "Delivered volume · 21.50 − 3.10 · 18.40 mL",
+        "Corrected titre · 18.40 − 0.40 · 18.00 mL",
+        "Fe²⁺ in 25.00 mL · 5 × 0.0200 × 0.01800 · 0.0720 M"
+      ],
+      "board": {
+        "heading": "Read a burette and subtract a blank",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Delivered volume",
+            "21.50 − 3.10",
+            "18.40 mL"
+          ],
+          [
+            "Corrected titre",
+            "18.40 − 0.40",
+            "18.00 mL"
+          ],
+          [
+            "Fe²⁺ in 25.00 mL",
+            "5 × 0.0200 × 0.01800",
+            "0.0720 M"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Distinguish uncertainty bounds from statistics",
+      "formula": "For small worst-case relative bounds, add contributions in a product/ratio",
+      "script": "A measurement uncertainty statement must identify whether it is a bound or a statistical estimate. For a concentration calculated as standard concentration times titre volume divided by sample volume, small worst case relative bounds add in a first order estimate. Suppose the standard concentration contributes zero point two zero percent, the titre zero point one zero percent and the sample volume zero point one five percent. The estimated worst case relative bound is zero point four five percent. At a central result zero point one zero zero zero molar, that corresponds to about zero point zero zero zero four five molar. This is not automatically a one standard deviation uncertainty or a ninety five percent confidence interval. Independent random standard uncertainties would use a different combination rule. Repeated close titres demonstrate precision under repeatability conditions; they do not by themselves remove calibration error or an incorrect endpoint. A consistent meniscus reading error can remain systematic across many trials. Match the reported significant figures to the actual uncertainty, and keep the meaning of the quoted error clear when comparing two analytical results.",
+      "points": [
+        "Relative contributions · 0.20% + 0.10% + 0.15% · ≈0.45% worst-case bound",
+        "Central C = 0.1000 M · 0.1000 × 0.0045 · ≈0.00045 M bound",
+        "Repeated close results · Precision evidence · Not automatic accuracy"
+      ],
+      "board": {
+        "heading": "Distinguish uncertainty bounds from statistics",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Relative contributions",
+            "0.20% + 0.10% + 0.15%",
+            "≈0.45% worst-case bound"
+          ],
+          [
+            "Central C = 0.1000 M",
+            "0.1000 × 0.0045",
+            "≈0.00045 M bound"
+          ],
+          [
+            "Repeated close results",
+            "Precision evidence",
+            "Not automatic accuracy"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Interpret confirmatory anion evidence",
+      "formula": "Use a defined test scheme; one observation is not a universal identifier",
+      "script": "Qualitative analysis builds a case from a defined sequence of observations and controlled interferences. In the standard carbonate comparison, acid treatment releases a gas that can turn limewater milky, consistent with carbon dioxide formation. Other acid reactive samples and gases require discrimination, so effervescence alone does not uniquely prove carbonate. A sulfate confirmation can involve a white barium sulfate precipitate that persists under the specified dilute acid conditions. For chloride, the familiar silver chloride precipitate is white and can dissolve in dilute aqueous ammonia under the appropriate test scheme. Those observations refer to different reagent systems; they must not be combined into one unlabelled result. Precipitation and complex formation can change what remains available for the next test. The meaning of an observation therefore depends on which aliquot, reagent and prior treatment produced it. Use the supplied method and comparison evidence rather than treating every white solid as the same substance. This chapter interprets analytical data and does not replace supervised laboratory handling, separation or disposal procedures.",
+      "points": [
+        "Carbonate evidence · Gas; limewater response · Effervescence alone insufficient",
+        "Sulfate evidence · BaSO₄ precipitate · Persists in stated dilute acid",
+        "Chloride evidence · White AgCl; ammonia response · Interpret within defined scheme"
+      ],
+      "board": {
+        "heading": "Interpret confirmatory anion evidence",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Carbonate evidence",
+            "Gas; limewater response",
+            "Effervescence alone insufficient"
+          ],
+          [
+            "Sulfate evidence",
+            "BaSO₄ precipitate",
+            "Persists in stated dilute acid"
+          ],
+          [
+            "Chloride evidence",
+            "White AgCl; ammonia response",
+            "Interpret within defined scheme"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Cation evidence includes complex formation",
+      "formula": "Colour, precipitation and solubility are complementary observations",
+      "script": "A cation can change its visible behaviour when its coordination environment changes. In a familiar copper two comparison, aqueous ammonia under suitable conditions can give a deep blue copper ammonia complex. Iron three with thiocyanate can give a strong red complex colour in the stated medium. These are useful pieces of evidence, not promises that colour alone identifies an arbitrary mixture. Concentration, acidity, competing ligands and other coloured species can affect what is observed. Aluminium hydroxide provides a different kind of evidence: its amphoteric behaviour allows dissolution in excess alkali through hydroxo species. Zinc hydroxide can also show amphoteric dissolution, so that observation is not unique to aluminium. Distinguish the original cation from the new precipitate or dissolved complex when explaining a result. A valid analysis often needs separation and more than one confirmation before assigning an ion. The purpose is to connect observed changes with equilibria and coordination chemistry, while retaining the limits of an individual test. Do not infer a complete systematic analysis from one familiar colour name.",
+      "points": [
+        "Cu²⁺ with suitable NH₃ · Ammine complex · Deep blue evidence",
+        "Fe³⁺ with SCN⁻ · Complex formation · Red evidence",
+        "Al hydroxide in excess base · Amphoteric dissolution · Zn hydroxide can behave similarly"
+      ],
+      "board": {
+        "heading": "Cation evidence includes complex formation",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Cu²⁺ with suitable NH₃",
+            "Ammine complex",
+            "Deep blue evidence"
+          ],
+          [
+            "Fe³⁺ with SCN⁻",
+            "Complex formation",
+            "Red evidence"
+          ],
+          [
+            "Al hydroxide in excess base",
+            "Amphoteric dissolution",
+            "Zn hydroxide can behave similarly"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Include the vessel in a mixing heat balance",
+      "formula": "100c(80−T) = (200c + Ccal)(T−20)",
+      "script": "A mixing temperature calculation must account for every specified heat capacity and initial temperature. Mix one hundred grams of water at eighty degrees Celsius with two hundred grams at twenty degrees in a calorimeter initially at twenty degrees. Assume no heat loss, no phase change and constant water specific heat capacity four point two joules per gram kelvin. If the vessel heat capacity were negligible, the final temperature would be forty degrees Celsius. Now include a calorimeter heat capacity of eighty four joules per kelvin. This equals the heat capacity of twenty grams of water in the stated approximation. Heat lost by hot water equals heat gained by cold water and vessel. The weighted temperature is therefore eight thousand plus four thousand plus four hundred, divided by three hundred twenty, giving thirty eight point seven five degrees Celsius. The final temperature lies between the initial temperatures and is lower than the vessel free estimate because the vessel also warms. Do not include its heat capacity twice if a supplied combined calorimeter constant already contains the water contribution. State the insulation and constant heat capacity assumptions before treating the result as an experimental prediction.",
+      "points": [
+        "Ignoring vessel · (100×80 + 200×20)/300 · 40.00 °C",
+        "Vessel heat capacity · 84/4.2 · 20 g water equivalent",
+        "Including vessel at 20 °C · 12400/320 · 38.75 °C"
+      ],
+      "board": {
+        "heading": "Include the vessel in a mixing heat balance",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Ignoring vessel",
+            "(100×80 + 200×20)/300",
+            "40.00 °C"
+          ],
+          [
+            "Vessel heat capacity",
+            "84/4.2",
+            "20 g water equivalent"
+          ],
+          [
+            "Including vessel at 20 °C",
+            "12400/320",
+            "38.75 °C"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -415,6 +598,72 @@
       ],
       "answer": 3,
       "explanation": "A shared response needs additional selective evidence for identification."
+    },
+    {
+      "question": "Burette readings 3.10 to 21.50 mL with a valid 0.40 mL blank give corrected titre:",
+      "options": [
+        "18.40 mL",
+        "18.00 mL",
+        "21.10 mL",
+        "24.60 mL"
+      ],
+      "answer": 1,
+      "explanation": "Delivered volume is 21.50−3.10=18.40 mL; subtract the stated blank to get 18.00 mL."
+    },
+    {
+      "question": "That corrected titre of 0.0200 M permanganate becoming Mn2+ in acid represents Fe2+ concentration in a 25.00 mL aliquot of:",
+      "options": [
+        "0.0144 M",
+        "0.360 M",
+        "0.0720 M",
+        "0.00360 M"
+      ],
+      "answer": 2,
+      "explanation": "Five Fe2+ per permanganate gives 5×0.0200×0.01800/0.02500=0.0720 M."
+    },
+    {
+      "question": "Small worst-case relative bounds 0.20%, 0.10% and 0.15% combine to a first-order bound of:",
+      "options": [
+        "0.45%",
+        "0.15%",
+        "0.003%",
+        "45%"
+      ],
+      "answer": 0,
+      "explanation": "For the stated product/ratio worst-case approximation, add the three relative contributions."
+    },
+    {
+      "question": "Amphoteric hydroxide dissolution in excess base uniquely proves aluminium:",
+      "options": [
+        "Always, regardless of other ions",
+        "Only from the colour white",
+        "Because zinc hydroxide never dissolves",
+        "No; zinc hydroxide can also show this behaviour"
+      ],
+      "answer": 3,
+      "explanation": "The observation supports an amphoteric hydroxide but is not unique to aluminium."
+    },
+    {
+      "question": "For the stated water-mixing example including Ccal=84 J/K initially at 20 °C, final temperature is:",
+      "options": [
+        "40.00 °C",
+        "38.75 °C",
+        "42.00 °C",
+        "60.00 °C"
+      ],
+      "answer": 1,
+      "explanation": "The vessel equals 20 g water heat capacity: (100×80+200×20+20×20)/320=38.75 °C."
+    },
+    {
+      "question": "Many close repeated titres establish mainly:",
+      "options": [
+        "Absence of every calibration error",
+        "A unique chemical identity",
+        "Repeatability precision under those conditions",
+        "Automatic 100% accuracy"
+      ],
+      "answer": 2,
+      "explanation": "Systematic calibration or endpoint errors can persist even when repeated results are close."
     }
   ]
 }

@@ -29,6 +29,10 @@
     {
       "title": "OpenStax: electrolysis",
       "url": "https://openstax.org/books/chemistry-2e/pages/17-7-electrolysis"
+    },
+    {
+      "title": "OpenStax: corrosion",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-6-corrosion"
     }
   ],
   "chapters": [
@@ -346,6 +350,181 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Concentration cells can have nonzero voltage",
+      "formula": "Zn concentration cell at 25 °C: E = (0.05916/2) log10(acathode/aanode)",
+      "script": "Two identical metal electrodes can produce a cell voltage when their ion activities differ. Consider zinc electrodes in an ideal dilute model at twenty five degrees Celsius, with zinc ion concentrations zero point zero zero one zero and zero point one zero zero molar. The standard cell voltage is zero because the electrode couples are the same. The actual voltage is not zero: concentration contributes through the Nernst equation. The concentrated compartment acts as the cathode in the spontaneous orientation, consuming zinc ions by reduction. The dilute compartment acts as the anode, producing zinc ions by oxidation. With two electrons transferred, the voltage is zero point zero five nine one six divided by two, times the base ten logarithm of one hundred, giving zero point zero five nine one six volt. The process tends to reduce the concentration difference. Use activities when nonideality matters, and neglect liquid junction contributions only within the stated model. Identical electrode materials therefore do not guarantee identical electrode potentials. Label the compartments and electron direction before writing the concentration ratio, because reversing the cell reverses the voltage sign.",
+      "points": [
+        "Dilute Zn²⁺ side · 0.0010 M · Anode: Zn oxidizes",
+        "Concentrated Zn²⁺ side · 0.100 M · Cathode: Zn²⁺ reduces",
+        "Voltage at 25 °C · (0.05916/2) log10 100 · +0.05916 V"
+      ],
+      "board": {
+        "heading": "Concentration cells can have nonzero voltage",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Dilute Zn²⁺ side",
+            "0.0010 M",
+            "Anode: Zn oxidizes"
+          ],
+          [
+            "Concentrated Zn²⁺ side",
+            "0.100 M",
+            "Cathode: Zn²⁺ reduces"
+          ],
+          [
+            "Voltage at 25 °C",
+            "(0.05916/2) log10 100",
+            "+0.05916 V"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Connect standard voltage to equilibrium",
+      "formula": "At 25 °C: log10 K = nE°/0.05916; ΔG° = −nFE°",
+      "script": "Standard cell voltage connects electrochemistry with both Gibbs energy and the equilibrium constant. At twenty five degrees Celsius, the base ten logarithm of the dimensionless equilibrium constant equals electron number times standard voltage divided by approximately zero point zero five nine one six volt. Suppose a defined two electron reaction has standard voltage zero point one one eight three two volt. The logarithm is four and the equilibrium constant is ten thousand. The corresponding standard Gibbs energy is minus electron number times the Faraday constant times standard voltage. Using Faraday constant ninety six thousand five hundred coulombs per mole gives about minus twenty two point eight four kilojoules per mole of reaction as written. Doubling a reaction doubles the electron count and Gibbs energy change, but it does not double its electrode voltage. The equilibrium constant for the doubled equation is squared. Actual reaction direction also depends on composition through the reaction quotient. A positive standard voltage is therefore not a guarantee that every possible initial mixture operates spontaneously in the written direction. Keep equation scaling, standard states and actual mixture conditions separate.",
+      "points": [
+        "n = 2; E° = 0.11832 V · nE°/0.05916 · log10 K = 4",
+        "Equilibrium constant · 10⁴ · K = 10000",
+        "F = 96500 C mol⁻¹ · −2 × 96500 × 0.11832 · ΔG° ≈ −22.84 kJ mol⁻¹"
+      ],
+      "board": {
+        "heading": "Connect standard voltage to equilibrium",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "n = 2; E° = 0.11832 V",
+            "nE°/0.05916",
+            "log10 K = 4"
+          ],
+          [
+            "Equilibrium constant",
+            "10⁴",
+            "K = 10000"
+          ],
+          [
+            "F = 96500 C mol⁻¹",
+            "−2 × 96500 × 0.11832",
+            "ΔG° ≈ −22.84 kJ mol⁻¹"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Use ionic conductances to infer dissociation",
+      "formula": "Λ∞(HA) = Λ∞(HCl) + Λ∞(NaA) − Λ∞(NaCl)",
+      "script": "Independent ionic migration at infinite dilution allows useful conductance combinations. For a weak monoprotic acid H A, combine the limiting molar conductances of hydrochloric acid and the sodium salt of A, then subtract sodium chloride. The sodium and chloride contributions cancel, leaving hydrogen ion plus A ion. With illustrative values four hundred twenty six, ninety one and one hundred twenty six in compatible conductance units, the result is three hundred ninety one. Suppose a zero point zero one zero zero molar acid has conductivity one point five six four times ten to the minus four siemens per centimetre. Its molar conductivity is one thousand times conductivity divided by concentration, or fifteen point six four siemens square centimetres per mole. Dividing by the limiting value gives an approximate ionized fraction zero point zero four zero. In the simple weak acid model, K a is concentration times alpha squared divided by one minus alpha, about one point six seven times ten to the minus five. This inference assumes the stated dilute solution and ion mobility approximations; activities, water ionization and other dissolved electrolytes can require a fuller treatment.",
+      "points": [
+        "Limiting conductance · 426 + 91 − 126 · 391 S cm² mol⁻¹",
+        "Molar conductance · 1000κ/c = 15.64 · α ≈ 15.64/391 = 0.040",
+        "Weak-acid model · cα²/(1−α) · Ka ≈ 1.67 × 10⁻⁵"
+      ],
+      "board": {
+        "heading": "Use ionic conductances to infer dissociation",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Limiting conductance",
+            "426 + 91 − 126",
+            "391 S cm² mol⁻¹"
+          ],
+          [
+            "Molar conductance",
+            "1000κ/c = 15.64",
+            "α ≈ 15.64/391 = 0.040"
+          ],
+          [
+            "Weak-acid model",
+            "cα²/(1−α)",
+            "Ka ≈ 1.67 × 10⁻⁵"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Same charge does not mean equal metal masses",
+      "formula": "m = η Q M/(zF)",
+      "script": "Cells connected in series receive the same charge, but their deposited masses depend on molar mass and electron stoichiometry. Take one thousand nine hundred thirty coulombs through a copper two ion cell and a silver ion cell. Using Faraday constant ninety six thousand five hundred, the charge corresponds to zero point zero two zero zero mole of electrons. Copper deposition needs two electrons per atom, giving zero point zero one zero zero mole of copper. With illustrative molar mass sixty three point five, the ideal mass is zero point six three five gram. Silver requires one electron per atom, giving zero point zero two zero zero mole and mass two point one five eight grams for molar mass one hundred seven point nine. If only eighty percent of charge produces copper, its deposited mass becomes zero point five zero eight gram. Do not apply that efficiency to a different cell unless specified. Equal current and time establish equal charge, not equal moles of deposited atoms. Check the actual electrode product and electron number before using the equivalent mass ratio.",
+      "points": [
+        "Shared charge · 1930/96500 · 0.0200 mol e⁻",
+        "Cu²⁺; ideal · 0.0200/2 × 63.5 · 0.635 g Cu",
+        "Ag⁺; ideal · 0.0200 × 107.9 · 2.158 g Ag"
+      ],
+      "board": {
+        "heading": "Same charge does not mean equal metal masses",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Shared charge",
+            "1930/96500",
+            "0.0200 mol e⁻"
+          ],
+          [
+            "Cu²⁺; ideal",
+            "0.0200/2 × 63.5",
+            "0.635 g Cu"
+          ],
+          [
+            "Ag⁺; ideal",
+            "0.0200 × 107.9",
+            "2.158 g Ag"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Corrosion is a coupled electrochemical process",
+      "formula": "Iron oxidation can couple to oxygen reduction in a moist environment",
+      "script": "Corrosion can involve different anodic and cathodic regions on a metal surface. In a common neutral aerated water model, iron oxidizes to iron two ions while oxygen is reduced with water to hydroxide ions. The oxygen half equation consumes four electrons per oxygen molecule and produces four hydroxide ions. Two iron oxidation events supply those four electrons. Further reactions lead to hydrated iron oxide materials commonly called rust; the complete material is not captured by one simple dissolved ion alone. A sacrificial zinc coating or connected zinc piece can preferentially oxidize while electrical contact and suitable environmental conditions are maintained, helping protect iron. A tin coating can serve as a barrier, but a damaged coating exposes a different galvanic situation and does not provide the same sacrificial protection. Do not decide behaviour from a coating's appearance alone. Oxygen supply, moisture, electrical contact and the actual solution affect the process. Distinguish prevention by excluding the environment from prevention by directing oxidation to a more readily oxidized metal. Standard potential tables are a starting guide, not a substitute for the real corrosion conditions.",
+      "points": [
+        "Anodic iron step · Fe → Fe²⁺ + 2e⁻ · Two events supply 4e⁻",
+        "Cathodic oxygen step · O₂ + 2H₂O + 4e⁻ → 4OH⁻ · Neutral aerated model",
+        "Sacrificial zinc · Electrical contact matters · Zinc can oxidize first"
+      ],
+      "board": {
+        "heading": "Corrosion is a coupled electrochemical process",
+        "columns": [
+          "Quantity / case",
+          "Calculation / condition",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Anodic iron step",
+            "Fe → Fe²⁺ + 2e⁻",
+            "Two events supply 4e⁻"
+          ],
+          [
+            "Cathodic oxygen step",
+            "O₂ + 2H₂O + 4e⁻ → 4OH⁻",
+            "Neutral aerated model"
+          ],
+          [
+            "Sacrificial zinc",
+            "Electrical contact matters",
+            "Zinc can oxidize first"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -480,6 +659,72 @@
       ],
       "answer": 1,
       "explanation": "Multiply the ideal mass by 0.800. Reduced efficiency decreases the desired deposit, not increases it."
+    },
+    {
+      "question": "For the stated Zn concentration cell at 25 °C, [Zn2+] values 0.0010 and 0.100 M give spontaneous E approximately:",
+      "options": [
+        "0 V",
+        "0.05916 V",
+        "0.11832 V",
+        "−0.05916 V"
+      ],
+      "answer": 1,
+      "explanation": "The ratio is 100; (0.05916/2)log10(100)=0.05916 V in the spontaneous orientation."
+    },
+    {
+      "question": "At 25 °C, n=2 and E°=0.11832 V give equilibrium K:",
+      "options": [
+        "4",
+        "100",
+        "10000",
+        "0.0001"
+      ],
+      "answer": 2,
+      "explanation": "log10 K = 2×0.11832/0.05916 = 4, hence K=10^4."
+    },
+    {
+      "question": "Illustrative limiting molar conductances 426, 91 and 126 combine as Λ∞(HA)=:",
+      "options": [
+        "391 S cm²/mol",
+        "643 S cm²/mol",
+        "461 S cm²/mol",
+        "209 S cm²/mol"
+      ],
+      "answer": 0,
+      "explanation": "Add HCl and NaA and subtract NaCl: 426+91−126=391."
+    },
+    {
+      "question": "With Q=1930 C, F=96500 C/mol, Cu2+ and M(Cu)=63.5 g/mol, ideal copper mass is:",
+      "options": [
+        "1.270 g",
+        "2.158 g",
+        "0.508 g",
+        "0.635 g"
+      ],
+      "answer": 3,
+      "explanation": "0.0200 mol electrons deposits 0.0100 mol Cu, giving 0.635 g at 100% current efficiency."
+    },
+    {
+      "question": "At 80% current efficiency for that copper deposition, mass is:",
+      "options": [
+        "0.794 g",
+        "0.508 g",
+        "0.635 g",
+        "1.016 g"
+      ],
+      "answer": 1,
+      "explanation": "Multiply the ideal mass by the specified efficiency: 0.8×0.635=0.508 g."
+    },
+    {
+      "question": "Sacrificial zinc protection of iron relies on:",
+      "options": [
+        "Zinc never reacting",
+        "Removing every possible cathodic reaction",
+        "Preferential zinc oxidation with suitable electrical contact",
+        "A coating colour identifying the anode"
+      ],
+      "answer": 2,
+      "explanation": "The sacrificial metal can oxidize in place of iron while the galvanic conditions and contact support protection."
     }
   ]
 }

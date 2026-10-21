@@ -4,9 +4,9 @@ import { equilibriumElectrochemistryLessons } from '../app/jee/classes/equilibri
 
 const lesson = equilibriumElectrochemistryLessons.find(l => l.id === 'equilibrium');
 test('expanded equilibrium practice preserves the original foundation', () => {
-  assert.equal(lesson.sections.length, 8);
-  assert.equal(lesson.examples.length, 7);
-  assert.equal(lesson.quiz.length, 12);
+  assert.equal(lesson.sections.length, 13);
+  assert.equal(lesson.examples.length, 10);
+  assert.equal(lesson.quiz.length, 18);
   assert.match(lesson.remaining, /Marin recording and written notes, not complete unit coverage/);
 });
 test('buffer reaction precedes its equilibrium calculation', () => {

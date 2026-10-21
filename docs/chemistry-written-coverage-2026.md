@@ -7,12 +7,12 @@ There are 22 authored written lessons spanning all 20 Chemistry units.
 This means each unit has at least one foundation, not exhaustive topic coverage.
 Organic Principles has a thirteen-chapter Marin recording. Coordination Compounds,
 Chemical Kinetics, Chemical Thermodynamics and Solutions each have ten chapters.
-Equilibrium has eight
-chapters and Redox and Electrochemistry has nine. Atomic Structure and Chemical
+Equilibrium has thirteen
+chapters and Redox and Electrochemistry has fourteen. Atomic Structure and Chemical
 Bonding each have eight chapters. Mole Concept and Periodic Trends also have
 eight chapters each. Hydrocarbons and Organic Halogens each have thirteen chapters.
 Organic Oxygen has fifteen chapters; Organic Nitrogen and Biomolecules each have
-thirteen. Purification and Analysis and Practical Chemistry each have eight chapters.
+thirteen. Purification and Analysis has eight chapters; Practical Chemistry has thirteen.
 P-block and D/F-block each have ten chapters. All twenty recordings include
 timed captions and chapter visuals. Every Chemistry unit has a recorded foundation.
 Chemistry Foundations and Atomic Spectra retain written material without separate recordings. Existing
@@ -178,3 +178,14 @@ E/Z drawings, one-centre Fischer mirror images, formal charge, controlled acidit
 comparisons, proton-transfer constants and ethane Newman projections. Full CIP
 tie-breaking, multiple-centre stereochemistry, additional solvent datasets and
 mechanism practice remain. The material does not claim exhaustive unit coverage.
+
+Equilibrium now includes gas-standard conversion, dissociation fractions, strong-acid/base
+titration pH, common-ion solubility and amphiprotic salts: thirteen written sections,
+ten worked examples and eighteen MCQs. Redox and Electrochemistry includes concentration
+cells, voltage/equilibrium relations, limiting conductance, series electrolysis and
+corrosion: fifteen sections, ten examples and eighteen MCQs. Practical Chemistry
+includes blank-corrected titres, worst-case measurement bounds, anion/cation evidence
+and calorimeter heat capacity: thirteen sections, six examples and sixteen MCQs.
+Each expansion has five new narrated chapters with aligned captions. These remain
+foundations; nonideal equilibria, broader electrode chemistry, complete analytical
+schemes and additional mixed problems remain.

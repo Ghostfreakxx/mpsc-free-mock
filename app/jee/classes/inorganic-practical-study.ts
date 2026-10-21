@@ -1,3 +1,4 @@
+import { equilibriumElectrochemistryPracticalAdditions as additions } from "./equilibrium-electrochemistry-practical-additions.ts";
 import type { StudyLesson } from "./course";
 
 const syllabus = { title: "NTA: JEE Main 2026 Chemistry syllabus", url: "https://jeemain.nta.nic.in/document/syllabus-2026/" };
@@ -70,7 +71,7 @@ export const inorganicPracticalLessons: StudyLesson[] = [
     title: "Practical chemistry: observations, titrations and experimental reasoning",
     summary: "Interpret lab observations and calculate titration ratios while distinguishing evidence, interference and safe supervised practice.",
     prerequisites: "Equilibrium, redox, concentration, thermodynamics and functional-group chemistry.",
-    remaining: "Written companion to the eight-chapter Marin recording for Unit 20, not complete unit coverage. Full systematic schemes for every listed ion, all named preparation reactions, indicator curves, sol recipes and iodide-peroxide datasets remain. This is conceptual revision, not an unsupervised experimental manual.",
+    remaining: "Written companion to the thirteen-chapter Marin recording for Unit 20, not complete unit coverage. Full systematic schemes for every listed ion, all named preparation reactions, indicator curves, sol recipes and iodide-peroxide datasets remain. This is conceptual revision, not an unsupervised experimental manual.",
     sections: [
       { title: "An observation needs an interpretation and a control", paragraphs: ["A precipitate, colour change or gas can support a chemical conclusion, but an isolated observation is rarely absolute proof. The medium, reagent order, concentration and interfering species matter. Record what was observed separately from the proposed identity and seek a suitable confirmatory reaction rather than guessing from a familiar colour.", "Organic element detection and functional-group tests overlap with the analytical and organic lessons. Sodium fusion, volatile toxic reagents and gas-generating tests require trained supervision and approved apparatus. Never identify a gas by deliberately inhaling it or taste a sample. Here the aim is to reason from stated exam observations, not perform unknown-sample chemistry at home."], formula: "Observation -> possible explanations -> interference check -> confirmation" },
       { title: "Titrations use stoichiometry at equivalence", paragraphs: ["At equivalence, the reacted mole ratio follows the balanced equation. For monoprotic strong acid and monobasic strong base, n(acid)=n(base), so their concentration-volume products are equal. A diprotic acid requires the appropriate neutralization stage; do not assume every titration is one-to-one.", "An indicator endpoint is an observed signal near, but not identical by definition to, equivalence. Select an indicator whose transition suits the steep part of the titration curve. Use the delivered burette volume, not its final reading alone, and keep volume units consistent. Rinsing and parallax control help accuracy but cannot replace the balanced reaction."], formula: "At equivalence: moles react in the balanced coefficient ratio" },
@@ -97,3 +98,44 @@ export const inorganicPracticalLessons: StudyLesson[] = [
     sources: [syllabus, { title: "NCERT: titrimetric analysis", url: "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm106.pdf" }, { title: "NCERT: systematic qualitative analysis", url: "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm107.pdf" }, { title: "NCERT: thermochemistry", url: "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm103.pdf" }],
   },
 ];
+
+const addedExamples: Record<string, StudyLesson["examples"]> = {
+  "practical-chemistry": [
+    {
+      "question": "Burette readings are 3.10 and 21.50 mL, with 0.40 mL blank. With 0.0200 M permanganate becoming Mn2+ in acid, find Fe2+ concentration in a 25.00 mL aliquot.",
+      "steps": [
+        "Delivered titre=18.40 mL; corrected titre=18.00 mL.",
+        "MnO4- amount=0.0200×0.01800=0.000360 mol; Fe2+ amount=5×0.000360=0.001800 mol.",
+        "Concentration=0.001800/0.02500."
+      ],
+      "answer": "Fe2+ concentration = 0.0720 M for the stated reaction and blank model."
+    },
+    {
+      "question": "A concentration is proportional to standard concentration and titre and inversely proportional to aliquot volume. Their small worst-case bounds are 0.20%, 0.10%, 0.15%. Estimate the bound for 0.1000 M.",
+      "steps": [
+        "Add magnitudes for a first-order worst-case bound on a product/quotient.",
+        "Relative bound=0.20%+0.10%+0.15%=0.45%.",
+        "Absolute bound≈0.1000×0.0045=0.00045 M; this is not a statistical standard deviation."
+      ],
+      "answer": "Approximate worst-case bound ±0.00045 M (±0.45%)."
+    },
+    {
+      "question": "Mix 100 g water at 80 °C with 200 g at 20 °C in a calorimeter initially at 20 °C, heat capacity 84 J/K. Use c=4.2 J/(g K), no heat loss and constant heat capacities. Find final temperature.",
+      "steps": [
+        "Calorimeter water equivalent=84/4.2=20 g.",
+        "Heat balance: 100(80−T)=220(T−20).",
+        "T=(8000+4400)/320=38.75 °C; include vessel heat capacity only once."
+      ],
+      "answer": "38.75 °C; neglecting the vessel would give 40 °C."
+    }
+  ]
+};
+
+for (const lesson of inorganicPracticalLessons) {
+  if (!(lesson.id in additions)) continue;
+  const added = additions[lesson.id as keyof typeof additions];
+  lesson.sections.push(...added.chapters.map(chapter => ({title: chapter.title, paragraphs: [chapter.script], formula: chapter.formula})));
+  lesson.examples.push(...addedExamples[lesson.id]);
+  lesson.quiz.push(...added.foundationExtraQuiz, ...added.quiz);
+  lesson.sources.push(...added.sources.filter(source => !lesson.sources.some(existing => existing.url === source.url)));
+}
