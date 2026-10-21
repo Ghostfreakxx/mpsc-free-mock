@@ -26,7 +26,7 @@ jobs:
       - name: Question banks, tests, lint and types
         run: npm run check
       - name: Dependency audit (fails on high or critical)
-        run: npm audit --audit-level=high
+        run: npm run audit
       - run: npm run build
 
   browser:
