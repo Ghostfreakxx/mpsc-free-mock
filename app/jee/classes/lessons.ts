@@ -1243,8 +1243,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-oxygen", subject: "Chemistry", unit: 17, number: "C14", title: organicOxygen.title,
-    description: "Ten narrated chapters on alcohols, phenols, ethers, carbonyl additions, reduction, aldol, identification and carboxylic acids.",
-    scope: "Recorded Unit 17 foundation with original practice. Further preparation routes, detailed mechanisms, carbonyl stereochemical drawings and mixed synthesis problems remain; not exhaustive coverage or official PYQs.",
+    description: "Fifteen narrated chapters on oxygen groups, reduction selectivity, named phenol reactions, chemical tests, carbon ledgers and esterification equilibrium.",
+    scope: "Recorded Unit 17 foundation and worked applications with original practice. Full mechanisms, carbonyl spatial drawings and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-oxygen.lecture.v1",
     audio: "/lectures/organic-oxygen/narration-marin.mp3",
     subtitles: "/lectures/organic-oxygen/english.vtt", timings: organicOxygenTimings,
@@ -1253,8 +1253,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-nitrogen", subject: "Chemistry", unit: 18, number: "C15", title: organicNitrogen.title,
-    description: "Eight narrated chapters on amine classification, basicity, preparation, identification, diazonium replacement and azo coupling.",
-    scope: "Recorded Unit 18 foundation with original practice. Further aqueous basicity comparisons, complete identification equations, diazonium mechanisms and multistep synthesis remain; not exhaustive coverage or official PYQs.",
+    description: "Thirteen narrated chapters on amines, preparation carbon counts, acylation, Hinsberg tests, diazonium routes and quantitative basicity.",
+    scope: "Recorded Unit 18 foundation and worked applications with original practice. Full mechanisms, identification equations, wider solvent datasets and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-nitrogen.lecture.v1",
     audio: "/lectures/organic-nitrogen/narration-marin.mp3",
     subtitles: "/lectures/organic-nitrogen/english.vtt", timings: organicNitrogenTimings,
@@ -1263,8 +1263,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "biomolecules", subject: "Chemistry", unit: 19, number: "C16", title: biomolecules.title,
-    description: "Eight narrated chapters on sugars, hydrolysis, polysaccharides, peptides, protein structure, enzymes, vitamins and nucleic acids.",
-    scope: "Recorded Unit 19 foundation with original practice. Detailed sugar stereochemical drawings, named vitamin-function tables, further hormone examples and mixed identification remain; not exhaustive coverage or official PYQs.",
+    description: "Thirteen narrated chapters on biomolecules, glucose Fischer and anomer drawings, reducing ends, hydrolysis, amino-acid charge and peptide calculations.",
+    scope: "Recorded Unit 19 foundation and worked applications with original practice. Full chair and fructose structures, vitamin-function tables and broader hormone examples remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.biomolecules.lecture.v1",
     audio: "/lectures/biomolecules/narration-marin.mp3",
     subtitles: "/lectures/biomolecules/english.vtt", timings: biomoleculesTimings,

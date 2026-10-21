@@ -2,13 +2,23 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { biomoleculesAnalysisLessons as lessons } from '../app/jee/classes/biomolecules-analysis-study.ts';
 
+test('expanded sugar, charge and peptide practice keeps numbering, atoms and water balances',()=>{
+  const answer=i=>lessons[0].quiz[i].options[lessons[0].quiz[i].answer];
+  assert.equal(answer(10),'Right, left, right, right');assert.equal(answer(11),'Alpha');
+  assert.equal(answer(12),'One mole each of glucose and fructose');assert.equal(342+18,180+180);
+  assert.deepEqual({C:12,H:22+2,O:11+1},{C:2*6,H:2*12,O:2*6});
+  assert.equal(answer(13),'Net zero with opposite internal charges');assert.equal(1+(-1),0);
+  assert.equal(answer(14),'4');assert.equal(5-1,4);
+  assert.equal(answer(15),'146 g/mol');assert.equal(75+89-18,146);
+});
+
 test('biomolecules and analysis map to official units with honest written scope', () => {
   assert.deepEqual(lessons.map(l => l.unit), [19, 13]);
   for (const l of lessons) {
-    assert.equal(l.sections.length, 8);
-    assert.equal(l.examples.length, 3);
-    assert.equal(l.quiz.length, 6);
-    assert.match(l.remaining, /eight-chapter Marin recording/);
+    assert.equal(l.sections.length, l.id==='biomolecules'?13:8);
+    assert.equal(l.examples.length, l.id==='biomolecules'?6:3);
+    assert.equal(l.quiz.length, l.id==='biomolecules'?16:6);
+    assert.match(l.remaining, l.id==='biomolecules'?/thirteen-chapter Marin recording/:/eight-chapter Marin recording/);
   }
 });
 test('peptide and DNA examples retain topology and double-strand assumptions', () => {
