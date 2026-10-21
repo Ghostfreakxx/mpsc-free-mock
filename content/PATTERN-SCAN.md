@@ -47,14 +47,38 @@ Scan date: 2026-09-29. This scan decides which topics get new questions. It does
 | Human physiology | `digestion`, `gas-exchange`, `circulation` | NEET |
 | Indian polity (Union executive, Parliament, emergencies) | `union-polity` | CUET PG (MPSC after Mizo translation) |
 
+## Second batch (2026-10-20)
+
+| Gap from the scan | Added (topic id) | Streams |
+|---|---|---|
+| Electrostatics | `coulombs-law` | JEE, NEET |
+| Ray optics | `thin-lenses` | JEE, NEET |
+| Thermodynamics | `first-law-thermodynamics` | JEE, NEET |
+| Magnetism and EMI | `faraday-induction` | JEE, NEET |
+| Periodic trends | `periodic-trends` | JEE, NEET |
+| Chemical thermodynamics | `enthalpy-hess` | JEE, NEET |
+| Hydrocarbons | `hydrocarbons` | JEE, NEET |
+| Definite integration | `definite-integrals` | JEE |
+| Differential equations | `separable-equations` | JEE |
+| 3D geometry | `lines-planes-3d` | JEE |
+| Ecology | `ecosystem-energy` | NEET |
+| Human reproduction | `human-reproduction` | NEET |
+| Evolution | `evolution-evidence` | NEET |
+| Excretion | `kidney-excretion` | NEET |
+| Plant physiology | `plant-water-transport` | NEET |
+| CUET PG economics depth | `price-elasticity` | CUET PG |
+| CUET PG sociology depth | `social-stratification` | CUET PG |
+| Indian polity (local government) | `local-government` | CUET PG (MPSC after Mizo translation) |
+| MPSC Paper II aptitude | `percentages`, `simple-interest` | MPSC (templated draft Mizo), CUET PG |
+
 ## Still open (next batches)
 
-- **JEE/NEET Physics:** electrostatics, ray optics, thermodynamics, magnetism and EMI.
-- **Chemistry:** periodic trends and p-block, thermodynamics, hydrocarbons and organic reactions.
-- **JEE Maths:** definite integration, differential equations, 3D geometry.
-- **NEET Biology:** ecology, human reproduction, plant physiology, evolution, excretion.
-- **MPSC:** Mizo translations for `union-polity`, then modern Indian history and the national movement, Indian geography, economy, and general science.
-- **CUET PG:** the real paper covers one domain. The bank mixes subjects, so per-subject depth is still thin.
+- **Physics:** magnetic force and fields, alternating current, semiconductors, waves.
+- **Chemistry:** p-block chemistry, chemical equilibrium, electrochemistry, organic reaction mechanisms.
+- **JEE Maths:** limits and continuity, conic sections, probability, complex numbers.
+- **NEET Biology:** plant hormones, neural control, biotechnology, human health and disease.
+- **MPSC:** Mizo translations for `union-polity` and `local-government`, then modern Indian history and the national movement, Indian geography, economy, and general science. Each needs reviewed Mizo text before it is published.
+- **CUET PG:** the real paper covers one domain. The bank mixes subjects, so per-subject depth is still thin, especially in history and geography.
 
 ## Analyses consulted
 

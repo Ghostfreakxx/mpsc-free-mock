@@ -50,6 +50,8 @@ export const mizoCategories: Record<string, string> = {
   "Latitude and location": "Latitude leh hmun dinhmun",
   "Assessment for learning": "Zirna tih that nana tehna",
   "Numerical reasoning": "Chhiarkawp ngaihtuahna",
+  Percentages: "Percentage chhutna",
+  "Simple interest": "Simple interest chhutna",
 };
 
 const unchangedTerms = new Set([
@@ -121,6 +123,42 @@ export function getMizoTranslation(q: ReviewedQuestion): MizoTranslation | undef
   if (match) {
     const [, demand, supply] = match;
     return finish(`Man Q-ah leituten unit ${demand} an duh a, hralhtuten unit ${supply} an pe chhuak. Indaih lohna (shortage) chu eng zat nge?`, `Shortage = lei duh zat - pek chhuah zat = ${demand} - ${supply} = ${+demand - +supply} units.`);
+  }
+  // Percentage and simple-interest templates (pattern-batch-topics.ts). The worked line repeats
+  // the English answer so the Mizo explanation always shows the keyed value.
+  match = q.question.match(/^What is ([\d.]+)% of (\d+)\?$/);
+  if (match) {
+    const [, percent, whole] = match;
+    return finish(`${whole}-a ${percent}% chu eng zat nge?`, `${percent}/100 x ${whole} = ${q.answer}.`);
+  }
+  match = q.question.match(/^(\d+) is what percent of (\d+)\?$/);
+  if (match) {
+    const [, part, whole] = match;
+    return finish(`${part} hi ${whole}-a percent engzat nge?`, `${part}/${whole} x 100 = ${q.answer}.`);
+  }
+  match = q.question.match(/^A price (rises|falls) from Rs (\d+) to Rs (\d+)\. What is the percentage (?:increase|decrease)\?$/);
+  if (match) {
+    const [, direction, from, to] = match;
+    const change = Math.abs(+to - +from);
+    const verb = direction === "rises" ? "a san" : "a tlahniam";
+    const noun = direction === "rises" ? "A pun zat" : "A tlahniam zat";
+    return finish(`Man chu Rs ${from} atangin Rs ${to}-ah ${verb}. ${noun} chu percent engzat nge?`, `${noun} = ${change}; ${change}/${from} x 100 = ${q.answer}. A hmasa zat (${from}) hmangin then tur a ni.`);
+  }
+  match = q.question.match(/^Find the simple interest on Rs (\d+) at (\d+)% per year for (\d+) years\.$/);
+  if (match) {
+    const [, principal, rate, years] = match;
+    return finish(`Rs ${principal} chu kum khatah ${rate}% interest-in kum ${years} chhung dah a ni. Simple interest chhut rawh.`, `I = P x r x t = ${principal} x ${rate}/100 x ${years} = ${q.answer}.`);
+  }
+  match = q.question.match(/^Rs (\d+) is invested at (\d+)% simple interest per year for (\d+) years\. What is the total amount at the end\?$/);
+  if (match) {
+    const [, principal, rate, years] = match;
+    const interest = (+principal * +rate * +years) / 100;
+    return finish(`Rs ${principal} chu kum khatah ${rate}% simple interest-in kum ${years} chhung dah a ni. A tawpah a vaiin eng zat nge a nih?`, `I = ${principal} x ${rate}/100 x ${years} = Rs ${interest}; a vaiin = ${principal} + ${interest} = ${q.answer}.`);
+  }
+  match = q.question.match(/^Rs (\d+) earns Rs (\d+) simple interest in (\d+) years\. What is the annual interest rate\?$/);
+  if (match) {
+    const [, principal, interest, years] = match;
+    return finish(`Rs ${principal} chuan kum ${years}-ah simple interest Rs ${interest} a hlawk. Kum khat interest rate chu eng zat nge?`, `r = (I x 100) / (P x t) = (${interest} x 100) / (${principal} x ${years}) = ${q.answer}.`);
   }
   return undefined;
 }
