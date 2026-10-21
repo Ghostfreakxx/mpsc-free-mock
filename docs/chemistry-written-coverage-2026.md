@@ -10,7 +10,7 @@ Chemical Kinetics, Chemical Thermodynamics and Solutions each have ten chapters.
 Equilibrium has eight
 chapters and Redox and Electrochemistry has nine. Atomic Structure and Chemical
 Bonding each have eight chapters. Mole Concept and Periodic Trends also have
-eight chapters each. Hydrocarbons and Organic Halogens each have eight chapters.
+eight chapters each. Hydrocarbons and Organic Halogens each have thirteen chapters.
 Organic Oxygen has ten chapters and Organic Nitrogen has eight.
 Biomolecules, Purification and Analysis, and Practical Chemistry each have eight chapters.
 P-block and D/F-block each have ten chapters. All twenty recordings include
@@ -75,13 +75,19 @@ basicity, preparation, identification, diazotization, replacement and azo coupli
 Each has ten original questions. Further detailed mechanisms, stereochemical
 drawings and multistep synthesis remain for additional lessons.
 
-Hydrocarbons now has eight narrated chapters at `/jee/classes/hydrocarbons`,
+Hydrocarbons now has thirteen narrated chapters at `/jee/classes/hydrocarbons`,
 including unsaturation, radical chains, reagent-specific addition, reductive
-ozonolysis, acetylides, selective reduction and aromatic substitution. Organic
-Halogens has eight chapters at `/jee/classes/organic-halogens`, covering reaction
+ozonolysis, acetylides, selective reduction and aromatic substitution. Additions
+cover alkyne hydration, reverse ozonolysis, aromaticity criteria, labelled directing
+positions and benzylic oxidation. Organic Halogens has thirteen chapters at
+`/jee/classes/organic-halogens`, covering reaction
 centres, preparation, SN1/SN2, elimination, activated haloarenes, Grignard quenching,
-coupling and compound properties. Each includes ten original questions. Detailed
-stereochemical drawings, alkyne hydration and longer synthesis problems remain.
+coupling and compound properties. Additions cover inversion versus R/S labels,
+SN1 stereochemical limits, substitution/elimination competition, cyanide connectivity
+and carbon counting, and aryl/vinyl/benzyl reaction centres. Each class includes
+sixteen original questions; each written companion has thirteen sections and six
+worked examples. Further full spatial mechanism drawings, preparation routes,
+polymerization and longer synthesis problems remain.
 
 Mole Concept now has eight narrated chapters at `/jee/classes/mole-concept`,
 covering chemical laws, particle and mass conversions, composition, formulas,

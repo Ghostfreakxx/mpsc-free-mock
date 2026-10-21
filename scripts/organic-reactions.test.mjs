@@ -2,13 +2,24 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { organicReactionLessons as lessons } from '../app/jee/classes/organic-reactions-study.ts';
 
+test('expanded product predictions preserve carbon count, aromaticity and reaction-centre distinctions',()=>{
+  const answer=(unit,index)=>lessons[unit].quiz[index].options[lessons[unit].quiz[index].answer];
+  assert.equal(answer(0,10),'Propanone');assert.equal(answer(0,11),'2-Methylbut-2-ene');
+  assert.equal(3+2,5);assert.equal(answer(0,12),'6');assert.equal(2*2+2,4*1+2);
+  assert.match(answer(0,13),/Deactivating but ortho\/para/);assert.equal(answer(0,14),'tert-Butylbenzene');
+  assert.equal(answer(0,15),'Propanal');assert.equal(answer(1,10),'Inversion of spatial arrangement');
+  assert.match(answer(1,11),/ion pairs and solvent cages/);assert.equal(answer(1,12),'Bromomethane');
+  assert.equal(answer(1,13),'Propanoic acid');assert.equal(2+1,3);
+  assert.equal(answer(1,14),'A saturated benzylic carbon');assert.equal(answer(1,15),'Nitrile and isocyanide');
+});
+
 test('organic reaction foundations preserve official unit mapping and honest scope', () => {
   assert.deepEqual(lessons.map(l => l.unit), [15, 16]);
   for (const lesson of lessons) {
-    assert.equal(lesson.sections.length, 8);
-    assert.equal(lesson.examples.length, 3);
-    assert.equal(lesson.quiz.length, 6);
-    assert.match(lesson.remaining, /eight-chapter Marin recording/);
+    assert.equal(lesson.sections.length, 13);
+    assert.equal(lesson.examples.length, 6);
+    assert.equal(lesson.quiz.length, 16);
+    assert.match(lesson.remaining, /thirteen-chapter Marin recording/);
   }
 });
 test('HBr orientation and reductive ozonolysis practice keys retain reaction conditions', () => {

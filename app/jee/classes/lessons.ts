@@ -1223,8 +1223,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "hydrocarbons", subject: "Chemistry", unit: 15, number: "C12", title: hydrocarbons.title,
-    description: "Eight narrated chapters on hydrocarbon frameworks, radical chains, addition, ozonolysis, alkynes and aromatic substitution.",
-    scope: "Recorded Unit 15 foundation with original practice. Detailed conformational drawings, additional preparation routes, alkyne hydration and longer synthesis problems remain; not exhaustive coverage or official PYQs.",
+    description: "Thirteen narrated chapters on additions, ozonolysis reconstruction, alkyne hydration, aromaticity, directing effects and benzylic reactions.",
+    scope: "Recorded Unit 15 foundation and worked applications with original practice. Further preparation routes, polymerization mechanisms and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.hydrocarbons.lecture.v1",
     audio: "/lectures/hydrocarbons/narration-marin.mp3",
     subtitles: "/lectures/hydrocarbons/english.vtt", timings: hydrocarbonsTimings,
@@ -1233,8 +1233,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-halogens", subject: "Chemistry", unit: 16, number: "C13", title: organicHalogens.title,
-    description: "Eight narrated chapters on preparation, SN1/SN2, elimination, haloarenes, Grignard reagents, coupling and compound properties.",
-    scope: "Recorded Unit 16 foundation with original practice. Detailed stereochemical drawings, additional preparation routes, special haloarene mechanisms and extended compound comparisons remain; not exhaustive coverage or official PYQs.",
+    description: "Thirteen narrated chapters on halides, substitution stereochemistry, elimination competition, ambidentate reagents and reaction-centre comparisons.",
+    scope: "Recorded Unit 16 foundation and worked applications with original practice. Full spatial mechanism drawings, further preparations, special haloarene pathways and detailed compound comparisons remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-halogens.lecture.v1",
     audio: "/lectures/organic-halogens/narration-marin.mp3",
     subtitles: "/lectures/organic-halogens/english.vtt", timings: organicHalogensTimings,
