@@ -21,6 +21,14 @@
     {
       "title": "OpenStax: electrophilic aromatic bromination",
       "url": "https://openstax.org/books/organic-chemistry/pages/16-1-electrophilic-aromatic-substitution-reactions-bromination"
+    },
+    {
+      "title": "OpenStax: alkyne hydration",
+      "url": "https://openstax.org/books/organic-chemistry/pages/9-4-hydration-of-alkynes"
+    },
+    {
+      "title": "OpenStax: aromatic ions",
+      "url": "https://openstax.org/books/organic-chemistry/pages/15-4-aromatic-ions"
     }
   ],
   "chapters": [
@@ -307,6 +315,181 @@
       },
       "speechInput": "A substituent influences both how rapidly an aromatic ring reacts and where a new group is introduced. An alkyl group generally activates the ring and favours ortho and para substitution. A nitro group deactivates the ring and favours meta substitution. Halogens are an important mixed case: they deactivate overall through electron withdrawal but direct toward ortho and para positions through resonance donation. A directing preference does not promise one pure positional product. Friedel Crafts alkylation introduces an alkyl group under suitable Lewis acid conditions, but rearrangements and repeated alkylation can complicate the result. Acylation introduces an acyl group and avoids the analogous carbocation skeleton rearrangement. Strongly deactivated rings and catalyst binding groups can prevent the usual reaction, so do not apply the name without checking the substrate. In a short synthesis, mark the reaction centre, count carbons, state the reagent and inspect competing pathways at each arrow. Use the practice questions to connect these choices rather than memorizing product names alone. More preparation routes and detailed stereochemical drawings remain useful further study.",
       "recordingNote": "Closing reminder shortened by TTS; transcript follows independently verified audio. Exact requested input retained for cache provenance."
+    },
+    {
+      "title": "Alkyne hydration gives carbonyl products",
+      "formula": "Propyne: Hg²⁺/acid hydration → propanone; hydroboration–oxidation → propanal",
+      "script": "Alkyne hydration usually requires following an initially formed enol to its carbonyl tautomer. An enol has hydroxyl attached to an alkene carbon; the final carbonyl product is not obtained by simply leaving that double bond unchanged. For propyne, aqueous acid with mercury two catalysis gives the Markovnikov hydration pattern and, after tautomerization, propanone. A suitable bulky borane followed by alkaline peroxide oxidation instead gives the terminal alkyne the complementary hydration orientation, leading to the aldehyde C H three, C H two, C H O, also called propionaldehyde. Both products retain the three carbon skeleton. They have the same molecular formula but different carbonyl positions and functional classes. Ethyne is an important special case: its acid catalysed hydration gives the aldehyde C H three, C H O, also called acetaldehyde, rather than a methyl ketone. Internal unsymmetrical alkynes can give product mixtures, so a terminal alkyne shortcut must not be applied indiscriminately. Read the catalyst and workup before selecting a product. Tautomerization moves a proton and changes bond placement; it is not merely resonance between drawings with the same hydrogen attachments. This distinction connects hydrocarbon reactions with the carbonyl chemistry developed in the Organic Oxygen class.",
+      "points": [
+        "Propyne · Hg²⁺, aqueous acid · Propanone",
+        "Propyne · Bulky borane; oxidation · Propanal",
+        "Ethyne · Acid-catalysed hydration · Ethanal exception"
+      ],
+      "board": {
+        "heading": "Alkyne hydration gives carbonyl products",
+        "columns": [
+          "Case",
+          "Key condition",
+          "Result / check"
+        ],
+        "rows": [
+          [
+            "Propyne",
+            "Hg²⁺, aqueous acid",
+            "Propanone"
+          ],
+          [
+            "Propyne",
+            "Bulky borane; oxidation",
+            "Propanal"
+          ],
+          [
+            "Ethyne",
+            "Acid-catalysed hydration",
+            "Ethanal exception"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Reconstruct an alkene from carbonyl fragments",
+      "formula": "Reductive ozonolysis: join the two carbonyl carbons with C=C",
+      "script": "Reductive ozonolysis can be read backward as well as forward. Each carbon of the original double bond becomes a carbonyl carbon while retaining its attached carbon groups. Suppose the products are one molecule of propanone and one of acetaldehyde, the two carbon aldehyde C H three, C H O. Propanone's carbonyl carbon carries two methyl groups. This aldehyde's carbonyl carbon carries one methyl group and one hydrogen. Join those two carbonyl carbons with a double bond and remove the carbonyl oxygens in the reconstruction. The original alkene is two methylbut two ene. It contains five carbons, matching three plus two in the products. This reconstruction determines connectivity, but carbonyl fragments alone do not generally recover an alkene's original E or Z geometry. In this particular alkene, two identical methyl groups on one double bonded carbon prevent E and Z isomerism. The workup matters: oxidative ozonolysis can further oxidize aldehyde products, changing the evidence used for reconstruction. State reductive conditions before treating an aldehyde as the final fragment. Finish by counting carbon atoms and checking which double bonded carbon had a hydrogen.",
+      "points": [
+        "Fragment 1 · Propanone · Two methyl groups",
+        "Fragment 2 · Ethanal · Methyl and H",
+        "Reconstructed alkene · Join carbonyl carbons · 2-methylbut-2-ene"
+      ],
+      "board": {
+        "heading": "Reconstruct an alkene from carbonyl fragments",
+        "columns": [
+          "Case",
+          "Key condition",
+          "Result / check"
+        ],
+        "rows": [
+          [
+            "Fragment 1",
+            "Propanone",
+            "Two methyl groups"
+          ],
+          [
+            "Fragment 2",
+            "Ethanal",
+            "Methyl and H"
+          ],
+          [
+            "Reconstructed alkene",
+            "Join carbonyl carbons",
+            "2-methylbut-2-ene"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Check aromaticity before counting alone",
+      "formula": "Cyclic, planar, continuously conjugated; 4n + 2 π electrons",
+      "script": "Aromaticity in the simple Hückel model requires more than a special electron count. The ring must be cyclic, approximately planar and continuously conjugated, with a suitable p orbital at each position. A closed shell ring with four n plus two pi electrons can then be aromatic. Benzene has six pi electrons, corresponding to n equal to one. The cyclopentadienyl anion also has six: four from two double bonds and two from the relevant lone pair in its conjugated ring. The cycloheptatrienyl cation has six pi electrons from three double bonds and an empty p orbital at the cationic position. Charge alone therefore does not prohibit aromaticity. A planar fully conjugated four pi electron ring instead fits the antiaromatic pattern. A nonplanar molecule that avoids continuous effective overlap may be nonaromatic rather than antiaromatic, even if a naive count gives four n electrons. Cyclooctatetraene is the familiar nonplanar example. Always check geometry and conjugation before applying the electron rule. The model here concerns simple monocyclic systems and is not a universal classification shortcut for every fused or unusual structure.",
+      "points": [
+        "Benzene · Planar conjugated ring · 6 π; aromatic",
+        "Cyclopentadienyl anion · Lone pair participates · 6 π; aromatic",
+        "Cyclooctatetraene · Nonplanar ground state · Nonaromatic"
+      ],
+      "board": {
+        "heading": "Check aromaticity before counting alone",
+        "columns": [
+          "Case",
+          "Key condition",
+          "Result / check"
+        ],
+        "rows": [
+          [
+            "Benzene",
+            "Planar conjugated ring",
+            "6 π; aromatic"
+          ],
+          [
+            "Cyclopentadienyl anion",
+            "Lone pair participates",
+            "6 π; aromatic"
+          ],
+          [
+            "Cyclooctatetraene",
+            "Nonplanar ground state",
+            "Nonaromatic"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Separate directing effects from activation",
+      "formula": "Halogens: deactivating yet ortho/para-directing in electrophilic substitution",
+      "script": "An existing substituent affects both how fast an aromatic ring reacts and where a new group preferentially enters. Those are separate questions. Relative to carbon one bearing the substituent, carbons two and six are ortho, three and five are meta, and carbon four is para. A methyl group commonly activates the ring toward electrophilic substitution and favours ortho and para products. A nitro group strongly deactivates and favours meta substitution. Halogens are the important combination: they deactivate the ring overall but still direct predominantly ortho and para. Their inductive withdrawal and resonance donation influence different aspects of the comparison. Do not infer that an ortho para director must always make the ring more reactive than benzene. Nor does directing preference promise one pure product. Steric effects, electrophile, medium and additional substituents can affect the product mixture. The labelled rings show relative positions rather than exact yields. For several substituents, compare their competing effects and blocked sites before predicting the next position. Keep electrophilic ring substitution distinct from radical reaction at an alkyl side chain.",
+      "points": [
+        "Methyl substituent · Electrophilic substitution · Activating; ortho/para",
+        "Nitro substituent · Electrophilic substitution · Deactivating; meta",
+        "Halogen substituent · Electrophilic substitution · Deactivating; ortho/para"
+      ],
+      "board": {
+        "heading": "Separate directing effects from activation",
+        "columns": [
+          "Case",
+          "Key condition",
+          "Result / check"
+        ],
+        "rows": [
+          [
+            "Methyl substituent",
+            "Electrophilic substitution",
+            "Activating; ortho/para"
+          ],
+          [
+            "Nitro substituent",
+            "Electrophilic substitution",
+            "Deactivating; meta"
+          ],
+          [
+            "Halogen substituent",
+            "Electrophilic substitution",
+            "Deactivating; ortho/para"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Benzylic reactions need the right site",
+      "formula": "Side-chain oxidation usually requires at least one benzylic H",
+      "script": "The benzylic carbon is directly attached to an aromatic ring. Its chemistry differs from that of a carbon bearing hydrogen within the ring itself. Under the usual strong side chain oxidation conditions, an alkylbenzene with at least one benzylic hydrogen can yield a carboxyl group at the ring attachment, followed by acid workup. Toluene and ethylbenzene therefore both give benzoic acid in that introductory comparison. The extra carbon in ethylbenzene does not become a longer carboxylic acid side chain. Carbon lost from the side chain must be accounted for in a full balanced oxidation, rather than silently assumed to remain in the main organic product. Tert butylbenzene has no hydrogen on its benzylic carbon and does not follow this ordinary side chain oxidation shortcut. Radical halogenation under suitable light or radical initiating conditions can also target benzylic positions, whereas electrophilic aromatic halogenation uses a different pathway and catalyst context. Identify the reacting carbon, the presence of its hydrogen and the reagent conditions before deciding whether the ring or side chain changes.",
+      "points": [
+        "Toluene · Benzylic H present · Benzoic acid after workup",
+        "Ethylbenzene · Benzylic H present · Benzoic acid after workup",
+        "tert-Butylbenzene · No benzylic H · Shortcut does not apply"
+      ],
+      "board": {
+        "heading": "Benzylic reactions need the right site",
+        "columns": [
+          "Case",
+          "Key condition",
+          "Result / check"
+        ],
+        "rows": [
+          [
+            "Toluene",
+            "Benzylic H present",
+            "Benzoic acid after workup"
+          ],
+          [
+            "Ethylbenzene",
+            "Benzylic H present",
+            "Benzoic acid after workup"
+          ],
+          [
+            "tert-Butylbenzene",
+            "No benzylic H",
+            "Shortcut does not apply"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -419,6 +602,72 @@
       ],
       "answer": 2,
       "explanation": "Nitro deactivates and directs meta. Chlorine deactivates but directs ortho/para."
+    },
+    {
+      "question": "Propyne under aqueous acid/Hg(II) hydration gives mainly:",
+      "options": [
+        "Propanal",
+        "Propanone",
+        "Propanoic acid",
+        "Propane"
+      ],
+      "answer": 1,
+      "explanation": "The initial enol tautomerizes to propanone under the stated Markovnikov hydration conditions."
+    },
+    {
+      "question": "Propanone and ethanal from reductive ozonolysis reconstruct:",
+      "options": [
+        "But-2-ene",
+        "Pent-1-ene",
+        "2-Methylbut-2-ene",
+        "Ethene"
+      ],
+      "answer": 2,
+      "explanation": "Join the carbonyl carbons: one bears two methyls and the other methyl plus H; total carbon count is five."
+    },
+    {
+      "question": "The cyclopentadienyl anion has how many π electrons in its aromatic ring?",
+      "options": [
+        "6",
+        "4",
+        "5",
+        "8"
+      ],
+      "answer": 0,
+      "explanation": "Two double bonds contribute four and the conjugated lone pair contributes two."
+    },
+    {
+      "question": "A halogen substituent in ordinary electrophilic aromatic substitution is:",
+      "options": [
+        "Activating and meta-directing",
+        "Always activating",
+        "Deactivating and only meta-directing",
+        "Deactivating but ortho/para-directing"
+      ],
+      "answer": 3,
+      "explanation": "Overall inductive deactivation coexists with ortho/para directing resonance effects."
+    },
+    {
+      "question": "Which lacks a benzylic hydrogen for the ordinary alkylbenzene oxidation shortcut?",
+      "options": [
+        "Toluene",
+        "tert-Butylbenzene",
+        "Ethylbenzene",
+        "Propylbenzene"
+      ],
+      "answer": 1,
+      "explanation": "The ring-attached carbon in tert-butylbenzene is bonded to three methyl groups and has no H."
+    },
+    {
+      "question": "Propyne with suitable bulky-borane hydroboration followed by oxidation gives:",
+      "options": [
+        "Propanone",
+        "Ethanal",
+        "Propanal",
+        "Propene"
+      ],
+      "answer": 2,
+      "explanation": "The complementary hydration orientation of this terminal alkyne gives the aldehyde propanal."
     }
   ]
 }

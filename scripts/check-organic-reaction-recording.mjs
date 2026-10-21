@@ -49,7 +49,7 @@ try {
  assert.ok(notes.includes(data.chapters.at(-1).script));
  await page.goto(`${base}/jee/classes/study/${id}`);
  await page.getByRole('link',{name:'Watch the Marin class'}).waitFor();
- assert.equal(await page.locator('fieldset').count(),6);
+ assert.equal(await page.locator('fieldset').count(),data.quiz.length);
  await page.goto(`${base}/jee/classes`);await page.getByRole('button',{name:'Chemistry',exact:true}).click();
  const unit=page.getByRole('region',{name:'Chemistry course map'}).locator('li').filter({has:page.locator(`a[href="/jee/classes/${id}"]`)});
  assert.match(await unit.textContent(),/Recorded/);

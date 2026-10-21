@@ -21,6 +21,14 @@
     {
       "title": "OpenStax: nucleic acids",
       "url": "https://openstax.org/books/biology-2e/pages/3-5-nucleic-acids"
+    },
+    {
+      "title": "OpenStax: cyclic monosaccharides and anomers",
+      "url": "https://openstax.org/books/organic-chemistry/pages/25-5-cyclic-structures-of-monosaccharides-anomers"
+    },
+    {
+      "title": "OpenStax: amino acids",
+      "url": "https://openstax.org/books/organic-chemistry/pages/26-1-structures-of-amino-acids"
     }
   ],
   "chapters": [
@@ -303,6 +311,181 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Read the Fischer pattern of D-glucose",
+      "formula": "Open chain: OH positions C2–C5 = right, left, right, right",
+      "script": "A Fischer projection encodes stereochemistry and is not simply a vertical decorative formula. For open chain D glucose, place the aldehyde group at the top and the terminal hydroxymethyl group at the bottom. The hydroxyl positions from carbon two through carbon five are right, left, right and right. Horizontal bonds point toward the viewer and vertical bonds point away in this projection convention. Carbon one belongs to the aldehyde; carbon six belongs to the terminal hydroxymethyl group. The D label is assigned by the configuration at the highest numbered stereogenic centre in this standard comparison, which is carbon five here. It does not mean every hydroxyl lies on the right. Nor does D automatically predict positive optical rotation. Changing one stereogenic centre can give a different sugar; merely rotating a whole spatial molecule does not. The projection is a useful open chain representation even though aqueous glucose is mainly cyclic. Keep carbon numbering visible when connecting the chain to a ring so that the anomeric carbon can be identified correctly.",
+      "points": [
+        "Carbon numbering · CHO at C1; CH₂OH at C6 · Six carbons",
+        "OH at C2, C3, C4, C5 · Right, left, right, right · D-glucose pattern",
+        "D label · Configuration at C5 here · Not optical-rotation sign"
+      ],
+      "board": {
+        "heading": "Read the Fischer pattern of D-glucose",
+        "columns": [
+          "Example",
+          "Reasoning",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Carbon numbering",
+            "CHO at C1; CH₂OH at C6",
+            "Six carbons"
+          ],
+          [
+            "OH at C2, C3, C4, C5",
+            "Right, left, right, right",
+            "D-glucose pattern"
+          ],
+          [
+            "D label",
+            "Configuration at C5 here",
+            "Not optical-rotation sign"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Distinguish alpha and beta glucose",
+      "formula": "For D-glucopyranose: anomeric OH trans / cis to CH₂OH gives α / β",
+      "script": "When glucose forms a six membered pyranose ring, the carbon five hydroxyl oxygen connects with the carbon one aldehyde carbon to make a cyclic hemiacetal. Carbon one becomes the anomeric centre. Two configurations are possible there while the other stereogenic centres retain their relationships. In the standard Haworth representation of D glucopyranose with the hydroxymethyl group drawn up, an anomeric hydroxyl drawn down is alpha and one drawn up is beta. More generally, compare the anomeric hydroxyl with the reference hydroxymethyl group: trans gives alpha and cis gives beta for this representation. The schematic highlights those groups and does not show every hydroxyl. The two anomers can interconvert through ring opening and closure in solution, producing mutarotation. They are not different molecular formulas and they are not simply two conformations of one unchanged anomeric configuration. Alpha and beta labels also do not mean the signs of optical rotation. A chair conformation supplies further three dimensional information beyond this simplified ring projection, which should not be treated as an exact planar molecular shape.",
+      "points": [
+        "Ring formation · C5 oxygen joins C1 · C1 is anomeric",
+        "α-D-glucopyranose · OH down; CH₂OH up · Opposite sides",
+        "β-D-glucopyranose · OH up; CH₂OH up · Same side"
+      ],
+      "board": {
+        "heading": "Distinguish alpha and beta glucose",
+        "columns": [
+          "Example",
+          "Reasoning",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Ring formation",
+            "C5 oxygen joins C1",
+            "C1 is anomeric"
+          ],
+          [
+            "α-D-glucopyranose",
+            "OH down; CH₂OH up",
+            "Opposite sides"
+          ],
+          [
+            "β-D-glucopyranose",
+            "OH up; CH₂OH up",
+            "Same side"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Reducing ends and sugar hydrolysis",
+      "formula": "Sucrose + H₂O → glucose + fructose; 342 + 18 = 180 + 180",
+      "script": "A free anomeric hemiacetal can open to a carbonyl form and provides a useful way to identify a reducing end. Maltose and lactose retain a free anomeric centre and are reducing disaccharides in the usual comparison. Sucrose links the anomeric centres of its glucose and fructose units, so it lacks that free reducing end before hydrolysis. Its hydrolysis gives one mole of glucose and one mole of fructose per mole of sucrose. With rounded molar masses, three hundred forty two grams of sucrose reacts with eighteen grams of water to give one hundred eighty grams of each monosaccharide. The total product mass is three hundred sixty grams; water has become part of the products rather than mass appearing from nowhere. Fructose can give reducing test behaviour under suitable alkaline conditions despite its open chain ketone classification, so aldehyde naming alone is not the complete criterion. Distinguish a sugar before hydrolysis from the mixture produced afterward. A change in a test result can reveal a changed linkage or newly accessible reducing end.",
+      "points": [
+        "Maltose / lactose · Free anomeric centre · Reducing",
+        "Sucrose before hydrolysis · Both anomeric centres linked · Nonreducing",
+        "1 mol sucrose + water · 342 g + 18 g · 180 g glucose + 180 g fructose"
+      ],
+      "board": {
+        "heading": "Reducing ends and sugar hydrolysis",
+        "columns": [
+          "Example",
+          "Reasoning",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Maltose / lactose",
+            "Free anomeric centre",
+            "Reducing"
+          ],
+          [
+            "Sucrose before hydrolysis",
+            "Both anomeric centres linked",
+            "Nonreducing"
+          ],
+          [
+            "1 mol sucrose + water",
+            "342 g + 18 g",
+            "180 g glucose + 180 g fructose"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Amino acids change charge with pH",
+      "formula": "Glycine: +1 in acid; net 0 zwitterion; −1 in base",
+      "script": "An amino acid contains groups that can gain or lose protons, so its predominant charge depends on p H. Glycine provides a simple example without an ionizable side chain. In sufficiently acidic solution, its amino group is protonated and its carboxyl group is mostly neutral, giving net charge plus one. In the intermediate zwitterionic form, the amino group remains positive while the carboxylate is negative, giving net charge zero. In sufficiently basic solution, the carboxylate remains negative and the amino group is neutral, giving net charge minus one. A zwitterion is therefore not a structure with no formal charges; it has opposite charges in the same molecule. At the isoelectric point, the average net charge is zero under the stated conditions. This does not mean every molecule has permanently lost both acid base functions. Amino acids with ionizable side chains need additional protonation states and cannot be analysed by copying glycine's pattern alone. Identify all ionizable groups, compare the p H with the relevant dissociation constants, and then add their charges.",
+      "points": [
+        "Acidic glycine · NH₃⁺ and COOH · Net +1",
+        "Zwitterionic glycine · NH₃⁺ and COO⁻ · Net 0; internal charges",
+        "Basic glycine · NH₂ and COO⁻ · Net −1"
+      ],
+      "board": {
+        "heading": "Amino acids change charge with pH",
+        "columns": [
+          "Example",
+          "Reasoning",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Acidic glycine",
+            "NH₃⁺ and COOH",
+            "Net +1"
+          ],
+          [
+            "Zwitterionic glycine",
+            "NH₃⁺ and COO⁻",
+            "Net 0; internal charges"
+          ],
+          [
+            "Basic glycine",
+            "NH₂ and COO⁻",
+            "Net −1"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Peptide direction and condensation mass",
+      "formula": "Linear n-residue chain: n − 1 peptide links and n − 1 waters lost",
+      "script": "A peptide bond joins a carboxyl carbon of one amino acid to the nitrogen of another, with loss of water in the simplified condensation account. A linear chain with five residues has four peptide links and loses four water molecules when assembled from those free amino acids. A cyclic chain has different end group bookkeeping, so the linear rule must be stated. Sequence is directional: glycine followed by alanine is not the same connectivity as alanine followed by glycine, although the two dipeptides have the same total composition. Write from the amino terminus to the carboxyl terminus in the usual sequence convention. Using illustrative rounded molar masses of seventy five for glycine and eighty nine for alanine, forming one dipeptide gives seventy five plus eighty nine minus eighteen, or one hundred forty six grams per mole. Hydrolysis reverses the water balance. This calculation concerns one condensation link, not the loss of an entire hydroxyl or amino group from the residue count. Distinguish sequence, number of residues, number of links and mass balance before comparing peptide formulas.",
+      "points": [
+        "Five-residue linear chain · n − 1 links · 4 peptide links",
+        "Gly–Ala / Ala–Gly · Different sequence · Same total composition",
+        "Rounded molar masses · 75 + 89 − 18 · 146 g mol⁻¹"
+      ],
+      "board": {
+        "heading": "Peptide direction and condensation mass",
+        "columns": [
+          "Example",
+          "Reasoning",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Five-residue linear chain",
+            "n − 1 links",
+            "4 peptide links"
+          ],
+          [
+            "Gly–Ala / Ala–Gly",
+            "Different sequence",
+            "Same total composition"
+          ],
+          [
+            "Rounded molar masses",
+            "75 + 89 − 18",
+            "146 g mol⁻¹"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -415,6 +598,72 @@
       ],
       "answer": 3,
       "explanation": "Catalysis changes the kinetic pathway while preserving the equilibrium constant at fixed conditions."
+    },
+    {
+      "question": "In the standard open-chain Fischer projection of D-glucose, OH positions C2–C5 are:",
+      "options": [
+        "Right, right, right, right",
+        "Right, left, right, right",
+        "Left, right, left, left",
+        "Left, left, right, right"
+      ],
+      "answer": 1,
+      "explanation": "The standard D-glucose pattern is right–left–right–right; D refers to its reference stereocentre."
+    },
+    {
+      "question": "For the stated D-glucopyranose Haworth drawing with CH2OH up, anomeric OH down is:",
+      "options": [
+        "Beta",
+        "An open-chain aldehyde only",
+        "Alpha",
+        "A different molecular formula"
+      ],
+      "answer": 2,
+      "explanation": "The anomeric OH is trans to the reference CH2OH group in the stated alpha arrangement."
+    },
+    {
+      "question": "One mole of sucrose hydrolyses to:",
+      "options": [
+        "One mole each of glucose and fructose",
+        "Two moles of glucose only",
+        "One mole of lactose",
+        "No monosaccharides"
+      ],
+      "answer": 0,
+      "explanation": "Hydrolysis consumes one mole of water and releases one glucose and one fructose unit."
+    },
+    {
+      "question": "Glycine drawn with NH3+ and COO− is:",
+      "options": [
+        "Uncharged on every atom",
+        "Net +2",
+        "Net −2",
+        "Net zero with opposite internal charges"
+      ],
+      "answer": 3,
+      "explanation": "The zwitterion contains +1 and −1 groups whose sum is zero."
+    },
+    {
+      "question": "A linear peptide of five amino acid residues has how many peptide links?",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "10"
+      ],
+      "answer": 1,
+      "explanation": "Joining n residues in one linear chain creates n−1 links."
+    },
+    {
+      "question": "Using rounded glycine 75 and alanine 89 g/mol, their dipeptide molar mass is:",
+      "options": [
+        "164 g/mol",
+        "182 g/mol",
+        "146 g/mol",
+        "128 g/mol"
+      ],
+      "answer": 2,
+      "explanation": "One condensation loses one water: 75 + 89 − 18 = 146 g/mol."
     }
   ]
 }

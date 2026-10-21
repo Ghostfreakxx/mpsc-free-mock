@@ -1,4 +1,5 @@
 import type { StudyLesson } from "./course";
+import { oxygenNitrogenBiomoleculesAdditions } from "./oxygen-nitrogen-biomolecules-additions.ts";
 
 const syllabus = { title: "NTA: JEE Main 2026 Chemistry syllabus", url: "https://jeemain.nta.nic.in/document/syllabus-2026/" };
 
@@ -8,7 +9,7 @@ export const biomoleculesAnalysisLessons: StudyLesson[] = [
     title: "Biomolecules: sugars, proteins and genetic building blocks",
     summary: "Connect molecular building blocks with carbohydrate classification, peptide bonds, protein structure and nucleic acids.",
     prerequisites: "Oxygen and nitrogen functional groups, condensation, hydrolysis and hydrogen bonding.",
-    remaining: "Written companion to the eight-chapter Marin recording for Unit 19, not complete unit coverage. Detailed glucose/fructose stereochemical drawings, named vitamin-function tables, additional hormone examples and mixed structure-identification practice remain. Questions are original practice, not official PYQs.",
+    remaining: "Written companion to the thirteen-chapter Marin recording for Unit 19, including a D-glucose Fischer drawing, alpha/beta ring schematics, reducing-end and hydrolysis balances, amino-acid charge and peptide sequence/mass calculations. Full chair structures, fructose stereochemistry, vitamin-function tables and broader hormone examples remain. Original practice, not exhaustive coverage or official PYQs.",
     sections: [
       { title: "A sugar's functional group helps classify it", paragraphs: ["Carbohydrates include sugars and their larger assemblies. Monosaccharides cannot be hydrolysed into simpler carbohydrate units. An aldose has an aldehyde group in its open-chain representation; a ketose has a ketone. Glucose is an aldohexose and fructose a ketohexose: both have six carbons, but their carbonyl positions differ.", "Many sugars spend most of their time in cyclic forms in solution, so an open-chain formula is a useful representation rather than the only structure present. Ring formation creates an anomeric centre. Do not identify a carbohydrate solely from the often-used C_n(H2O)_n pattern; some compounds fit it without being carbohydrates and some carbohydrate derivatives do not fit it."], formula: "Glucose: aldohexose; fructose: ketohexose; both C6H12O6" },
       { title: "Hydrolysis tells us the units in a disaccharide", paragraphs: ["Sucrose contains glucose and fructose units. Maltose contains two glucose units, while lactose contains galactose and glucose. Joining two monosaccharides with a glycosidic bond has the net composition change of losing one water molecule; hydrolysis adds water and separates the units. Structural bonding details distinguish the three despite related overall formulas.", "A reducing sugar can access a reactive carbonyl form under the relevant test conditions. Sucrose has both anomeric centres involved in its linkage and is nonreducing before hydrolysis. Maltose and lactose retain a suitable free anomeric centre and are reducing. Fructose can respond in alkaline reducing-sugar tests through rearrangement even though it is a ketose."], formula: "C12H22O11 + H2O -> two C6H12O6 units for these disaccharides" },
@@ -66,3 +67,14 @@ export const biomoleculesAnalysisLessons: StudyLesson[] = [
     sources: [syllabus, { title: "NCERT: organic principles and techniques", url: "https://ncert.nic.in/textbook/pdf/kech202.pdf" }, { title: "OpenStax: empirical and molecular formulas", url: "https://openstax.org/books/chemistry-2e/pages/3-2-determining-empirical-and-molecular-formulas" }, { title: "OpenStax: physical separation and mixtures", url: "https://openstax.org/books/chemistry-2e/pages/1-2-phases-and-classification-of-matter" }],
   },
 ];
+
+const biomolecules=biomoleculesAnalysisLessons.find(l=>l.id==='biomolecules')!;
+const addition=oxygenNitrogenBiomoleculesAdditions.biomolecules;
+biomolecules.sections.push(...addition.chapters.map(ch=>({title:ch.title,paragraphs:[ch.script],formula:ch.formula})));
+biomolecules.quiz.push(...addition.foundationExtraQuiz,...addition.quiz);
+for(const source of addition.sources)if(!biomolecules.sources.some(s=>s.url===source.url))biomolecules.sources.push(source);
+biomolecules.examples.push(
+  {question:'Read OH positions C2–C5 in a standard open-chain Fischer projection of D-glucose. Does D specify the optical rotation sign?',steps:['Place CHO at C1 at the top and CH2OH at C6 at the bottom.','Read right, left, right, right; the C5 configuration supplies the reference D assignment here.','The configurational label is distinct from measured rotation sign.'],answer:'Right–left–right–right; D does not itself specify positive rotation.'},
+  {question:'Using rounded molar masses, find the product mass from 342 g sucrose undergoing complete hydrolysis with sufficient water.',steps:['One mole sucrose consumes one mole water.','342+18=360 g total products.','The products are one mole glucose and one mole fructose, 180 g each in this rounded calculation.'],answer:'180 g glucose plus 180 g fructose; total 360 g including incorporated water.'},
+  {question:'Using rounded glycine 75 and alanine 89 g/mol, compare Gly–Ala and Ala–Gly and calculate a dipeptide molar mass.',steps:['Two residues form one peptide link with one water lost.','75+89−18=146 g/mol.','Opposite sequences have different connectivity but the same total composition.'],answer:'Both are 146 g/mol in the rounded calculation; their sequences differ.'},
+);

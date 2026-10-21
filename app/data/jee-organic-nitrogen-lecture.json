@@ -301,6 +301,181 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Choose amine routes by carbon count",
+      "formula": "Nitrile reduction retains C; Hofmann amide rearrangement loses one C",
+      "script": "Amine preparation routes can give different carbon skeletons even when all products are primary amines. Reduction of propanenitrile retains its nitrile carbon, producing the three carbon primary amine propylamine. In contrast, Hofmann rearrangement of propanamide produces ethylamine, with one fewer carbon than the starting amide. The amide carbonyl carbon does not remain in that amine skeleton. Gabriel synthesis provides another planning route: a suitable primary alkyl halide is converted through a phthalimide intermediate and then released as a primary amine. Bromoethane can therefore lead to ethylamine without adding a carbon to its ethyl group. Ordinary Gabriel alkylation is not a general preparation of aniline from an aryl halide, because the required substitution chemistry is different. Do not confuse the names Hofmann rearrangement and Hofmann elimination; they describe different transformations. Write the carbon count beside both starting material and proposed product before choosing a named reaction. The route must fit the substrate as well as the desired nitrogen substitution class.",
+      "points": [
+        "Propanenitrile reduction · Retain nitrile carbon · Propylamine; 3 C",
+        "Propanamide rearrangement · Lose carbonyl carbon · Ethylamine; 2 C",
+        "Gabriel: ethyl halide · Suitable alkyl substitution · Ethylamine; 2 C"
+      ],
+      "board": {
+        "heading": "Choose amine routes by carbon count",
+        "columns": [
+          "Example",
+          "Reasoning",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Propanenitrile reduction",
+            "Retain nitrile carbon",
+            "Propylamine; 3 C"
+          ],
+          [
+            "Propanamide rearrangement",
+            "Lose carbonyl carbon",
+            "Ethylamine; 2 C"
+          ],
+          [
+            "Gabriel: ethyl halide",
+            "Suitable alkyl substitution",
+            "Ethylamine; 2 C"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Amine acylation and protection",
+      "formula": "Primary / secondary amines form amides; ordinary tertiary amines lack N–H",
+      "script": "Acylation attaches an acyl group to a nitrogen nucleophile and changes its electronic properties. A primary or secondary amine with a nitrogen hydrogen can form an amide with a suitable acylating reagent. A tertiary amine has no nitrogen hydrogen and does not give the same ordinary neutral amide by this substitution. It may still participate in other reactions or act as a base, so the absence of that product is not universal inertness. Aniline can be converted into acetanilide by introducing an acetyl group on nitrogen. The nitrogen lone pair then interacts with the carbonyl, reducing its availability and moderating the strong activation associated with free amino substitution on the ring. This is useful in reaction planning where the amino group must be protected or its reactivity controlled. Subsequent suitable hydrolysis can restore the amine. Acylation is distinct from alkylation: the new group contains a carbonyl and the product is an amide. Track the atom receiving the group instead of assuming every new carbon group on nitrogen produces another simple amine.",
+      "points": [
+        "Primary / secondary amine · N–H available · Amide formation possible",
+        "Tertiary amine · No N–H · Not the same neutral amide",
+        "Aniline acylation · Acetyl group on N · Acetanilide; moderated reactivity"
+      ],
+      "board": {
+        "heading": "Amine acylation and protection",
+        "columns": [
+          "Example",
+          "Reasoning",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Primary / secondary amine",
+            "N–H available",
+            "Amide formation possible"
+          ],
+          [
+            "Tertiary amine",
+            "No N–H",
+            "Not the same neutral amide"
+          ],
+          [
+            "Aniline acylation",
+            "Acetyl group on N",
+            "Acetanilide; moderated reactivity"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Interpret Hinsberg observations",
+      "formula": "Sulfonamide N–H controls the introductory alkali-solubility distinction",
+      "script": "The Hinsberg comparison distinguishes amine classes through reaction and solubility evidence rather than by counting alkyl groups in a name alone. In the standard model, a primary amine forms a sulfonamide that retains a nitrogen hydrogen. That hydrogen can be removed by alkali, giving a soluble ionic form under the stated conditions. Acidification can return the neutral sulfonamide. A secondary amine forms a sulfonamide without that nitrogen hydrogen, so it lacks the same alkali dissolution step in the introductory comparison. A tertiary amine does not form the corresponding sulfonamide in this test but can dissolve in dilute acid by forming an ammonium salt. Distinguish absence of a derivative from inability to form any salt. The observations depend on the specified substrate and medium, and solubility on its own is not a complete structure identification. Draw the nitrogen substituents in the proposed derivative before selecting the class. This reasoning concerns interpretation of a supplied test sequence, not a procedure for handling the reagent in a laboratory.",
+      "points": [
+        "Primary amine derivative · Sulfonamide N–H remains · Can dissolve in alkali",
+        "Secondary amine derivative · No sulfonamide N–H · No same dissolution step",
+        "Tertiary amine · No corresponding derivative · Can form acid-soluble salt"
+      ],
+      "board": {
+        "heading": "Interpret Hinsberg observations",
+        "columns": [
+          "Example",
+          "Reasoning",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Primary amine derivative",
+            "Sulfonamide N–H remains",
+            "Can dissolve in alkali"
+          ],
+          [
+            "Secondary amine derivative",
+            "No sulfonamide N–H",
+            "No same dissolution step"
+          ],
+          [
+            "Tertiary amine",
+            "No corresponding derivative",
+            "Can form acid-soluble salt"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Diazonium replacements and carbon ledgers",
+      "formula": "Ring–N₂⁺ can be replaced; incoming CN adds one carbon",
+      "script": "An aromatic diazonium group is a useful junction for several replacement reactions. In the usual aniline preparation, nitrous acid is generated under cold acidic conditions and the diazonium salt is handled as a condition dependent intermediate. Different reagents then lead to different ring substituents. Copper one chloride or bromide supports the corresponding halogen replacement in the familiar Sandmeyer pattern. Copper one cyanide introduces a nitrile group, while suitable warm aqueous conditions can lead to phenol with nitrogen release. Count carbons when the incoming group contains carbon. Starting from a six carbon aniline ring, replacement by hydroxyl gives a six carbon phenol, but replacement by cyanide gives seven carbon benzonitrile. Hydrolysis of that nitrile can then give seven carbon benzoic acid. The nitrogen atoms in the departing diazonium group do not become the nitrile nitrogen by simple retention; identify the incoming reagent. Reaction maps should label both the replacing group and the conditions, rather than drawing one unspecified arrow that could mean several incompatible products.",
+      "points": [
+        "Ring–N₂⁺ → ring–OH · Suitable aqueous conversion · Phenol; 6 C",
+        "Ring–N₂⁺ → ring–CN · Cu(I) cyanide pattern · Benzonitrile; 7 C",
+        "Benzonitrile hydrolysis · Retain nitrile carbon · Benzoic acid; 7 C"
+      ],
+      "board": {
+        "heading": "Diazonium replacements and carbon ledgers",
+        "columns": [
+          "Example",
+          "Reasoning",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Ring–N₂⁺ → ring–OH",
+            "Suitable aqueous conversion",
+            "Phenol; 6 C"
+          ],
+          [
+            "Ring–N₂⁺ → ring–CN",
+            "Cu(I) cyanide pattern",
+            "Benzonitrile; 7 C"
+          ],
+          [
+            "Benzonitrile hydrolysis",
+            "Retain nitrile carbon",
+            "Benzoic acid; 7 C"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Quantify base strength with pKb",
+      "formula": "At 25 °C in water: pKa(BH⁺) + pKb(B) ≈ 14",
+      "script": "Base strength comparisons become quantitative when the constants refer to the same solvent and temperature. A smaller p K b means a larger base dissociation constant. For illustrative bases with p K b values four and nine in water at twenty five degrees Celsius, their base constants are ten to the minus four and ten to the minus nine. The first is one hundred thousand times larger. This ratio does not mean the hydroxide concentrations must have the same ratio in arbitrary solutions, because concentration and equilibrium balances still matter. For a conjugate acid and base pair in water, their constants multiply to the water ion product. At this temperature, p K a of the conjugate acid plus p K b of the base is approximately fourteen. Thus a base with p K b four has conjugate acid p K a about ten. At a different temperature, use the appropriate water constant. Do not combine a gas phase basicity ranking with aqueous constants or assume that electron donation, resonance and solvation always produce the same amine ordering.",
+      "points": [
+        "Base A: pKb 4 · Kb = 10⁻⁴ · Stronger than B",
+        "Base B: pKb 9 · Kb = 10⁻⁹ · Kb(A)/Kb(B) = 10⁵",
+        "Conjugate pair at 25 °C · pKa + pKb ≈ 14 · For A: pKa ≈ 10"
+      ],
+      "board": {
+        "heading": "Quantify base strength with pKb",
+        "columns": [
+          "Example",
+          "Reasoning",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Base A: pKb 4",
+            "Kb = 10⁻⁴",
+            "Stronger than B"
+          ],
+          [
+            "Base B: pKb 9",
+            "Kb = 10⁻⁹",
+            "Kb(A)/Kb(B) = 10⁵"
+          ],
+          [
+            "Conjugate pair at 25 °C",
+            "pKa + pKb ≈ 14",
+            "For A: pKa ≈ 10"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -413,6 +588,72 @@
       ],
       "answer": 1,
       "explanation": "Six plus six carbons gives twelve; the N=N bridge contributes nitrogen and no carbon."
+    },
+    {
+      "question": "Propanamide under a suitable Hofmann rearrangement gives mainly:",
+      "options": [
+        "Propylamine",
+        "Ethylamine",
+        "Methylamine",
+        "Aniline"
+      ],
+      "answer": 1,
+      "explanation": "The amide carbonyl carbon is lost from the amine skeleton: three starting carbons give two."
+    },
+    {
+      "question": "Acylation of aniline with an acetyl group on nitrogen gives:",
+      "options": [
+        "A tertiary alkylamine only",
+        "Nitrobenzene",
+        "Acetanilide",
+        "Benzoic acid"
+      ],
+      "answer": 2,
+      "explanation": "The product is an amide, with the nitrogen attached to an acetyl carbonyl group."
+    },
+    {
+      "question": "The primary-amine sulfonamide in the standard Hinsberg comparison retains:",
+      "options": [
+        "An N–H that can be deprotonated by alkali",
+        "No nitrogen atom",
+        "A diazonium group",
+        "A mandatory carbon–carbon triple bond"
+      ],
+      "answer": 0,
+      "explanation": "Its remaining nitrogen hydrogen explains the introductory alkali-solubility distinction."
+    },
+    {
+      "question": "Aniline → diazonium → nitrile → carboxylic acid gives a final main organic product with:",
+      "options": [
+        "5 carbons",
+        "6 carbons",
+        "8 carbons",
+        "7 carbons"
+      ],
+      "answer": 3,
+      "explanation": "Incoming cyanide adds one carbon to the six-carbon ring, retained on nitrile hydrolysis."
+    },
+    {
+      "question": "Two bases have pKb 4 and 9 in the same medium. Kb(first)/Kb(second) is:",
+      "options": [
+        "5",
+        "100000",
+        "0.00001",
+        "13"
+      ],
+      "answer": 1,
+      "explanation": "10^−4 divided by 10^−9 equals 10^5."
+    },
+    {
+      "question": "At 25 °C in water, pKb(B)=4 gives approximate pKa(BH+) of:",
+      "options": [
+        "4",
+        "14",
+        "10",
+        "18"
+      ],
+      "answer": 2,
+      "explanation": "Use pKa(BH+) + pKb(B) ≈ 14 for a conjugate pair under the stated conditions."
     }
   ]
 }

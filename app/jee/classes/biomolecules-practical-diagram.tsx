@@ -2,9 +2,11 @@ import biomolecules from "../../data/jee-biomolecules-lecture.json";
 import purification from "../../data/jee-purification-analysis-lecture.json";
 import practical from "../../data/jee-practical-chemistry-lecture.json";
 import styles from "./lecture.module.css";
+import BiomoleculeStructureDiagram from './biomolecule-structure-diagram';
 
 const recordings={biomolecules,"purification-analysis":purification,"practical-chemistry":practical};
 export default function BiomoleculesPracticalDiagram({lesson,chapter}:{lesson:keyof typeof recordings;chapter:number}) {
+ if(lesson==='biomolecules'&&(chapter===8||chapter===9))return <BiomoleculeStructureDiagram chapter={chapter}/>;
  const board=recordings[lesson].chapters[chapter].board;
  return <svg className={styles.diagram} viewBox="0 0 460 310" role="img" aria-label={board.heading}>
   <title>{board.heading}</title><rect width="460" height="310" rx="12" fill="#f5faf7" />
