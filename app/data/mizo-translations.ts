@@ -55,6 +55,8 @@ export const mizoCategories: Record<string, string> = {
   Averages: "Average chhutna",
   "Ratio and proportion": "Ratio leh proportion",
   "Discount, tax and commission": "Discount, tax leh commission",
+  "Speed, distance and time": "Speed, distance leh time",
+  "Profit, loss and mark-up": "Profit, loss leh mark-up",
 };
 
 // MPSC general-studies topics published in English first. Their Mizo drafts need a fluent writer,
@@ -62,6 +64,8 @@ export const mizoCategories: Record<string, string> = {
 export const mizoPendingTopicIds = new Set([
   "union-polity", "local-government", "union-judiciary", "public-finance", "sixth-schedule", "constitution-making",
   "gandhi-national-movement", "revolt-of-1857", "india-location", "climate-agreements", "biodiversity-agreements", "nutrition-vitamins",
+  "fundamental-rights-dpsp", "state-executive", "colonial-countryside", "framing-the-constitution", "early-states-mauryas", "vijayanagara",
+  "mughal-chronicles", "india-drainage", "atmosphere-layers", "money-functions", "monetary-policy", "acids-bases-ph", "adaptive-immunity",
 ]);
 const topicIdOf = (questionId: string) => questionId.replace(/-\d+$/, "");
 
@@ -219,6 +223,39 @@ export function getMizoTranslation(q: ReviewedQuestion): MizoTranslation | undef
   if (match) {
     const [, rate, sales] = match;
     return finish(`Hralhtu chuan Rs ${sales} a hralh-ah ${rate}% commission a hmu. A commission chu eng zat nge?`, `Commission = ${sales} x ${rate}/100 = ${q.answer}.`);
+  }
+  // Speed and profit templates (batch-four-topics.ts).
+  match = q.question.match(/^A car travels (\d+) km in (\d+) hours\. What is its average speed\?$/);
+  if (match) {
+    const [, distance, hours] = match;
+    return finish(`Car chuan darkar ${hours}-ah km ${distance} a kal. A speed average chu eng zat nge?`, `Speed = distance / time = ${distance}/${hours} = ${q.answer}.`);
+  }
+  match = q.question.match(/^A train moves at (\d+) km\/h\. How far does it travel in (\d+) hours\?$/);
+  if (match) {
+    const [, speed, hours] = match;
+    return finish(`Train chu darkar khatah km ${speed} a kal. Darkar ${hours}-ah km engzat nge a kal ang?`, `Distance = speed x time = ${speed} x ${hours} = ${q.answer}.`);
+  }
+  match = q.question.match(/^How long does it take to cover (\d+) km at (\d+) km\/h\?$/);
+  if (match) {
+    const [, distance, speed] = match;
+    return finish(`Darkar khatah km ${speed} speed-in km ${distance} kal turin darkar engzat nge a ngai?`, `Time = distance / speed = ${distance}/${speed} = ${q.answer}.`);
+  }
+  match = q.question.match(/^A shopkeeper buys an item for Rs (\d+) and sells it for Rs (\d+)\. What is the profit percent\?$/);
+  if (match) {
+    const [, cost, sale] = match;
+    return finish(`Dawrkaiin bungrua Rs ${cost}-in a lei a, Rs ${sale}-in a hralh. A hlawkna (profit) chu percent engzat nge?`, `Profit = ${sale} - ${cost} = Rs ${+sale - +cost}; ${+sale - +cost}/${cost} x 100 = ${q.answer}. A lei man (cost) hmangin then tur a ni.`);
+  }
+  match = q.question.match(/^An item bought for Rs (\d+) is sold at a loss of (\d+)%\. What is the selling price\?$/);
+  if (match) {
+    const [, cost, rate] = match;
+    const loss = (+cost * +rate) / 100;
+    return finish(`Rs ${cost}-a lei bungrua chu ${rate}% loss-in hralh a ni. A hralh man chu eng zat nge?`, `Loss = ${cost} x ${rate}/100 = Rs ${loss}; hralh man = ${cost} - ${loss} = ${q.answer}.`);
+  }
+  match = q.question.match(/^A shop marks up an item costing Rs (\d+) by (\d+)%\. What is the marked price\?$/);
+  if (match) {
+    const [, cost, rate] = match;
+    const markup = (+cost * +rate) / 100;
+    return finish(`Dawr chuan Rs ${cost} man bungrua chu ${rate}% mark-up-in man a ziak. A man ziak chu eng zat nge?`, `Mark-up = ${cost} x ${rate}/100 = Rs ${markup}; man ziak = ${cost} + ${markup} = ${q.answer}.`);
   }
   return undefined;
 }

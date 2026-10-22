@@ -11,9 +11,10 @@ import { neetTopics } from '../app/data/neet-topics.ts';
 import { highYieldTopics } from '../app/data/high-yield-topics.ts';
 import { patternBatchTopics } from '../app/data/pattern-batch-topics.ts';
 import { batchThreeTopics } from '../app/data/batch-three-topics.ts';
+import { batchFourTopics } from '../app/data/batch-four-topics.ts';
 import { getMizoTranslation, mizoPendingTopicIds } from '../app/data/mizo-translations.ts';
 
-const foundationTopics = [...jeeTopics, ...neetTopics, ...highYieldTopics, ...patternBatchTopics, ...batchThreeTopics];
+const foundationTopics = [...jeeTopics, ...neetTopics, ...highYieldTopics, ...patternBatchTopics, ...batchThreeTopics, ...batchFourTopics];
 const foundationCount = stream => foundationTopics.filter(topic => topic.streams.includes(stream)).reduce((total, topic) => total + topic.questions.length, 0);
 
 test('each stream retains its published expansion quota', () => {
@@ -327,4 +328,48 @@ test('third batch worked answers are independently recomputed', () => {
   assert.equal(answer('mpsc', 'discount-tax-commission-4'), `Rs ${640 - 640 * 0.125}`);
   assert.equal(answer('mpsc', 'discount-tax-commission-5'), `Rs ${500 * 1.08}`);
   assert.equal(answer('cuet-pg', 'discount-tax-commission-8'), `Rs ${20000 * 0.04}`);
+});
+
+test('fourth batch topics are sourced, balanced and published to the intended streams', () => {
+  for (const topic of batchFourTopics) {
+    assert.ok(topic.questions.length >= 8 && topic.notes.length > 0 && topic.pitfall, topic.id);
+    assert.equal(new URL(sources[topic.sourceId].url).protocol, 'https:', topic.id);
+    for (const stream of topic.streams) {
+      const published = getReviewedQuestions(stream).filter(question => question.id.startsWith(`${topic.id}-`));
+      assert.equal(published.length, topic.questions.length, `${topic.id} in ${stream}`);
+      assert.ok(new Set(published.map(question => question.options.indexOf(question.answer))).size >= 3, topic.id);
+    }
+    if (topic.streams.includes('mpsc')) {
+      for (const question of getReviewedQuestions('mpsc').filter(q => q.id.startsWith(`${topic.id}-`))) {
+        assert.equal(Boolean(getMizoTranslation(question)), !mizoPendingTopicIds.has(topic.id), question.id);
+      }
+    }
+  }
+  for (const [stream, minimum] of Object.entries({ mpsc: 130, neet: 55, jee: 55, 'cuet-pg': 110 })) {
+    const fresh = getReviewedQuestions(stream).filter(question => batchFourTopics.some(topic => question.id.startsWith(`${topic.id}-`)));
+    assert.ok(fresh.length >= minimum, `${stream} has ${fresh.length} fourth-batch questions`);
+  }
+});
+
+test('fourth batch worked answers are independently recomputed', () => {
+  const answer = (stream, id) => getReviewedQuestions(stream).find(question => question.id === id).answer;
+  assert.equal(answer('jee', 'acids-bases-ph-3'), String(-Math.log10(1e-3)));
+  assert.equal(answer('neet', 'acids-bases-ph-5'), String(14 - 4));
+  assert.equal(answer('mpsc', 'acids-bases-ph-8'), String(14 - -Math.log10(1e-2)));
+  assert.equal(answer('neet', 'gravitation-8'), `${60 * 1.6} N`);
+  assert.equal(answer('jee', 'integrated-rate-laws-3'), `${Math.round(0.693 / 0.0693)} s`);
+  assert.equal(answer('neet', 'integrated-rate-laws-5'), `${100 / 2 ** 3} g`);
+  assert.equal(answer('jee', 'limit-laws-1'), String(2 ** 2 + 3 * 2));
+  assert.equal(answer('jee', 'limit-laws-7'), String(3 * 2 ** 2 - 5));
+  const product = [[1 * 2 + 2 * 1, 1 * 0 + 2 * 3], [3 * 2 + 4 * 1, 3 * 0 + 4 * 3]];
+  assert.equal(answer('jee', 'matrix-operations-5'), `[${product[0].join(' ')}; ${product[1].join(' ')}]`);
+  assert.equal(answer('jee', 'parabola-1'), `(${12 / 4}, 0)`);
+  assert.equal(answer('neet', 'hardy-weinberg-3'), String(Number((2 * 0.7 * 0.3).toFixed(2))));
+  assert.equal(answer('neet', 'hardy-weinberg-4'), String(Math.sqrt(0.16)));
+  assert.equal(answer('neet', 'hardy-weinberg-8'), String(Math.round(0.1 ** 2 * 1000)));
+  assert.equal(answer('mpsc', 'speed-distance-time-1'), `${180 / 3} km/h`);
+  assert.equal(answer('mpsc', 'speed-distance-time-7'), `${300 / 60} hours`);
+  assert.equal(answer('cuet-pg', 'profit-loss-markup-1'), `${((500 - 400) / 400) * 100}%`);
+  assert.equal(answer('mpsc', 'profit-loss-markup-6'), `Rs ${960 * 0.75}`);
+  assert.equal(answer('mpsc', 'profit-loss-markup-10'), `Rs ${640 * 1.25}`);
 });

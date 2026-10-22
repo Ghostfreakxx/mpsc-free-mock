@@ -87,14 +87,29 @@ Scan date: 2026-09-29. This scan decides which topics get new questions. It does
 | JEE Maths: probability, complex numbers | `probability`, `complex-numbers` | JEE |
 | NEET Biology: neural control, biotechnology | `neuron-signalling`, `biotechnology-tools` | NEET |
 
+## Fourth batch (2026-10-22)
+
+| Gap from the scan | Added (topic id) | Streams |
+|---|---|---|
+| MPSC: Indian polity | `fundamental-rights-dpsp`, `state-executive` | MPSC (English, Mizo pending), CUET PG |
+| MPSC: Indian history (ancient, medieval, colonial, constitution-making) | `early-states-mauryas`, `vijayanagara`, `mughal-chronicles`, `colonial-countryside`, `framing-the-constitution` | MPSC (English, Mizo pending), CUET PG |
+| MPSC: Indian and physical geography | `india-drainage`, `atmosphere-layers` | MPSC (English, Mizo pending), CUET PG |
+| MPSC: economy (money and banking) | `money-functions`, `monetary-policy` | MPSC (English, Mizo pending), CUET PG |
+| MPSC: general science | `acids-bases-ph`, `adaptive-immunity` | MPSC (English, Mizo pending), NEET (and JEE for pH) |
+| MPSC Paper II aptitude | `speed-distance-time`, `profit-loss-markup` | MPSC (templated draft Mizo), CUET PG |
+| Physics: gravitation, semiconductors | `gravitation`, `semiconductors` | JEE, NEET |
+| Chemistry: kinetics | `integrated-rate-laws` | JEE, NEET |
+| JEE Maths: limits, matrices, conic sections | `limit-laws`, `matrix-operations`, `parabola` | JEE |
+| NEET Biology: plant hormones, population genetics | `plant-hormones`, `hardy-weinberg` | NEET |
+
 ## Still open (next batches)
 
-- **MPSC:** Mizo drafts for every topic in `mizoPendingTopicIds`, from a fluent writer. After that, current events, the economy (planning, banking, budgets), world geography, and more general science (physics and chemistry in daily life).
-- **Physics:** alternating current, semiconductors, gravitation.
-- **Chemistry:** p-block chemistry, organic reaction mechanisms, chemical kinetics.
-- **JEE Maths:** limits and continuity, conic sections, matrices beyond determinants.
-- **NEET Biology:** plant hormones, human health and disease, genetics of populations.
-- **CUET PG:** per-subject depth is still thin, especially in sociology, education and English.
+- **MPSC:** Mizo drafts for every topic in `mizoPendingTopicIds`, from a fluent writer. After that, current events, Indian economic planning and the budget, world geography, and physics in daily life.
+- **Physics:** alternating current, optics of the eye and instruments, rotational motion.
+- **Chemistry:** p-block chemistry, organic reaction mechanisms, solutions and colligative properties.
+- **JEE Maths:** continuity and differentiability, ellipse and hyperbola, straight lines.
+- **NEET Biology:** human health and disease, molecular basis of inheritance, ecosystems and biodiversity conservation.
+- **CUET PG:** per-subject depth in sociology, education and English is still thin.
 
 ## Analyses consulted
 
