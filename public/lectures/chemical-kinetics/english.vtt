@@ -842,3 +842,264 @@ Keep potential energy sketches, thermodynamic direction and experimentally
 
 00:14:37.236 --> 00:14:38.596
 measured rates distinct.
+
+00:14:39.120 --> 00:14:43.472
+An Arrhenius graph is useful only after identifying both axes and the
+
+00:14:43.472 --> 00:14:44.040
+logarithm
+
+00:14:44.040 --> 00:14:44.540
+convention.
+
+00:14:45.320 --> 00:14:49.320
+For a fixed mechanism with an approximately constant pre exponential factor,
+
+00:14:50.100 --> 00:14:53.686
+the natural logarithm of the rate constant equals the natural logarithm of
+
+00:14:53.686 --> 00:14:53.880
+that
+
+00:14:53.880 --> 00:14:57.520
+factor minus activation energy divided by R T.
+
+00:14:58.260 --> 00:15:01.920
+A graph of natural logarithm k against reciprocal absolute temperature
+
+00:15:01.920 --> 00:15:05.700
+therefore has slope minus activation energy divided by R.
+
+00:15:06.480 --> 00:15:09.660
+Suppose its measured slope is minus six thousand kelvin.
+
+00:15:10.700 --> 00:15:14.520
+Multiplying the positive magnitude by R, eight point three one four joules per
+
+00:15:14.520 --> 00:15:18.940
+mole kelvin, gives activation energy forty nine point eight eight four
+
+00:15:18.940 --> 00:15:19.800
+kilojoules per mole.
+
+00:15:20.660 --> 00:15:25.720
+If the vertical axis instead uses base ten logarithm k, the slope contains an
+
+00:15:25.720 --> 00:15:29.100
+additional factor two point three zero three in the denominator.
+
+00:15:30.240 --> 00:15:33.260
+Applying the natural logarithm formula to that graph would give the wrong
+
+00:15:33.260 --> 00:15:33.580
+energy.
+
+00:15:34.140 --> 00:15:38.800
+Also inspect horizontal scaling: a graph against one thousand divided by
+
+00:15:38.800 --> 00:15:42.500
+temperature does not have the same numerical slope as one against reciprocal
+
+00:15:42.500 --> 00:15:42.960
+temperature.
+
+00:15:43.700 --> 00:15:47.681
+A straight segment supports a useful model over its measured range; it does
+
+00:15:47.681 --> 00:15:47.840
+not
+
+00:15:47.840 --> 00:15:51.660
+prove the mechanism and pre exponential factor remain unchanged at every
+
+00:15:51.660 --> 00:15:51.960
+temperature.
+
+00:15:52.176 --> 00:15:56.456
+Experimental reaction order need not be an integer and need not equal a
+
+00:15:56.456 --> 00:15:57.456
+balanced equation coefficient.
+
+00:15:58.676 --> 00:16:01.636
+Consider three initial rate measurements at the same temperature and with the
+
+00:16:01.636 --> 00:16:02.916
+same preparation conditions.
+
+00:16:03.736 --> 00:16:08.021
+In the first experiment, A and B concentrations are both zero point one zero
+
+00:16:08.021 --> 00:16:12.896
+zero molar, and the initial rate is zero point zero zero two zero molar per
+
+00:16:12.896 --> 00:16:13.136
+second.
+
+00:16:13.876 --> 00:16:18.116
+In the second, A is increased fourfold while B stays fixed, and the rate
+
+00:16:18.116 --> 00:16:18.396
+doubles.
+
+00:16:18.896 --> 00:16:23.156
+Thus four raised to the order in A equals two, giving order one half.
+
+00:16:23.916 --> 00:16:27.756
+In the third experiment, return A to its original value and triple B.
+
+00:16:28.376 --> 00:16:31.216
+If the initial rate triples, the order in B is one.
+
+00:16:31.716 --> 00:16:33.396
+The overall order is three halves.
+
+00:16:34.176 --> 00:16:37.476
+Dividing rate by the square root of A concentration and by B concentration
+
+00:16:37.476 --> 00:16:41.756
+gives a rate constant with units molarity to the negative one half per second.
+
+00:16:42.756 --> 00:16:46.790
+Fractional order describes an observed rate law; molecularity is a count for
+
+00:16:46.790 --> 00:16:46.896
+an
+
+00:16:46.896 --> 00:16:49.696
+elementary event and is not assigned a fractional value.
+
+00:16:50.676 --> 00:16:54.356
+Use initial rates so changing composition during a run does not obscure the
+
+00:16:54.356 --> 00:16:55.036
+controlled comparison.
+
+00:16:56.688 --> 00:17:00.928
+A sudden concentration decrease is not always evidence that reactant has been
+
+00:17:00.928 --> 00:17:01.228
+consumed.
+
+00:17:02.128 --> 00:17:06.348
+Take a first order reaction in a closed well mixed liquid, with rate constant
+
+00:17:06.348 --> 00:17:09.328
+zero point zero six nine three one per minute.
+
+00:17:10.188 --> 00:17:14.300
+At the selected instant there are zero point one zero zero moles of reactant
+
+00:17:14.300 --> 00:17:14.408
+in
+
+00:17:14.408 --> 00:17:15.928
+one litre.
+
+00:17:15.928 --> 00:17:20.508
+Add inert solvent rapidly so the volume becomes two litres, with no reaction
+
+00:17:20.508 --> 00:17:22.208
+during the idealized mixing step.
+
+00:17:22.648 --> 00:17:27.069
+The amount remains zero point one zero zero moles, but concentration falls
+
+00:17:27.069 --> 00:17:27.308
+from
+
+00:17:27.308 --> 00:17:31.188
+zero point one zero zero to zero point zero five zero zero molar.
+
+00:17:32.068 --> 00:17:35.948
+After mixing, assume the temperature, medium effects and first order rate
+
+00:17:35.948 --> 00:17:37.268
+constant remain unchanged.
+
+00:17:38.228 --> 00:17:42.200
+Ten minutes later, about half the amount remains: zero point zero five zero
+
+00:17:42.200 --> 00:17:46.728
+zero moles in two litres, or zero point zero two five zero zero molar.
+
+00:17:47.468 --> 00:17:51.348
+Using the original concentration as though no dilution occurred would mistake
+
+00:17:51.348 --> 00:17:52.788
+mixing for additional reaction.
+
+00:17:53.728 --> 00:17:57.448
+Real dilution may alter a rate constant through solvent or ionic effects;
+
+00:17:58.588 --> 00:17:59.828
+constancy is an assumption here.
+
+00:18:00.588 --> 00:18:04.208
+Keep separate records of amount, volume and elapsed reaction time before
+
+00:18:04.208 --> 00:18:06.208
+choosing an integrated concentration ratio.
+
+00:18:06.408 --> 00:18:12.001
+As a supporting rate law application, suppose one reactant can form either B
+
+00:18:12.001 --> 00:18:12.148
+or
+
+00:18:12.148 --> 00:18:15.868
+C through independent irreversible first order pathways.
+
+00:18:17.208 --> 00:18:22.018
+Let the rate constants be zero point zero two zero and zero point zero three
+
+00:18:22.018 --> 00:18:23.668
+zero per minute, respectively.
+
+00:18:24.848 --> 00:18:28.768
+Assume both stay constant, the products do not react further, and the initial
+
+00:18:28.768 --> 00:18:29.728
+products are absent.
+
+00:18:30.528 --> 00:18:34.508
+Reactant disappears through both channels, so its total first order loss
+
+00:18:34.508 --> 00:18:37.328
+constant is zero point zero five zero per minute.
+
+00:18:38.368 --> 00:18:43.088
+Its half life is the natural logarithm of two divided by that total, about
+
+00:18:43.088 --> 00:18:44.748
+thirteen point eight six minutes.
+
+00:18:45.648 --> 00:18:49.548
+Product formation rates have ratio two to three at every instant, because both
+
+00:18:49.548 --> 00:18:51.768
+contain the same current reactant concentration.
+
+00:18:52.588 --> 00:18:57.028
+Integrating gives forty percent of reacted A as B and sixty percent as C in
+
+00:18:57.028 --> 00:18:57.808
+this ideal model.
+
+00:18:58.428 --> 00:19:03.148
+When half of an initial one mole has reacted, B amount is zero point two zero
+
+00:19:03.148 --> 00:19:05.768
+mole and C amount zero point three zero mole.
+
+00:19:06.488 --> 00:19:09.868
+These are fractions of reacted material, not fractions of the remaining
+
+00:19:09.868 --> 00:19:10.428
+reactant.
+
+00:19:11.408 --> 00:19:15.148
+Reversible steps, product loss or different orders require another model;
+
+00:19:15.888 --> 00:19:19.168
+adding constants blindly is not a general rule for reaction networks.

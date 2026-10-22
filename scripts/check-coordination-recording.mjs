@@ -24,7 +24,7 @@ try {
  await audio.evaluate(a=>a.pause());
  assert.equal((await page.request.get(`${base}/lectures/coordination-compounds/english.vtt`)).status(),200);
  const chapters=page.getByRole('complementary',{name:'Class chapters'}).getByRole('button');
- assert.equal(await chapters.count(),10);
+ assert.equal(await chapters.count(),data.chapters.length);
  for(let i=0;i<data.chapters.length;i++) {
    await chapters.nth(i).click();
    await page.waitForFunction(i=>document.querySelector('[aria-label="Class chapters"] button[aria-current="step"]')?.textContent.includes(i), data.chapters[i].title);
@@ -60,5 +60,5 @@ try {
  await page.locator('audio').evaluate(a=>a.play());
  await page.waitForFunction(()=>document.querySelector('audio').currentTime>.3);
  await page.locator('audio').evaluate(a=>a.pause());
- assert.deepEqual(errors,[]);console.log('PASS: Chemistry entry, all ten boards, playback, captions, resume, all answers, notes, course map and responsive layouts.');
+ assert.deepEqual(errors,[]);console.log('PASS: Chemistry entry, all chapter boards, playback, captions, resume, all answers, notes, course map and responsive layouts.');
 } finally {await browser.close();}

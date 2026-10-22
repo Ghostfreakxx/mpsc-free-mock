@@ -15,7 +15,7 @@ test('zero-order depletion, mixed rate ratios and successive half-lives agree', 
   assert.equal(3 ** 2 * 0.5, 4.5);
   assert.equal(0.5 ** 4, 1 - 0.9375);
   assert.equal(0.12 / 60, 0.002);
-  assert.equal(lesson.examples.length, 7);
-  assert.equal(lesson.quiz.length, 12);
-  assert.match(lesson.remaining, /five-chapter Marin recording/);
+  assert.equal(lesson.examples.length, 13);
+  assert.equal(lesson.quiz.length, 26);
+  assert.match(lesson.remaining, /fourteen-chapter Marin recording/);
 });
