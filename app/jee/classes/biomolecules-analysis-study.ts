@@ -1,3 +1,4 @@
+import { extendMoleAnalysisDFLesson } from "./mole-analysis-d-f-study.ts";
 import type { StudyLesson } from "./course";
 import { oxygenNitrogenBiomoleculesAdditions } from "./oxygen-nitrogen-biomolecules-additions.ts";
 
@@ -40,7 +41,7 @@ export const biomoleculesAnalysisLessons: StudyLesson[] = [
     title: "Purification and characterisation: separation and composition",
     summary: "Choose a separation principle, interpret elementary composition data and distinguish qualitative from quantitative analysis.",
     prerequisites: "Mole concept, mass percentages, solubility, phase changes and organic functional groups.",
-    remaining: "Written companion to the eight-chapter Marin recording for Unit 13, not complete unit coverage. Detailed analytical reaction equations, phosphorus estimation calculations, extraction partition problems and larger quantitative datasets remain. Hazardous laboratory methods are discussed as principles only, not home procedures.",
+    remaining: "Written companion to the thirteen-chapter Marin recording for Unit 13, not complete unit coverage. Further analytical reaction equations, sulfur/phosphorus estimation calculations and nonideal extraction datasets remain. Hazardous laboratory methods are discussed as principles only, not home procedures.",
     sections: [
       { title: "Choose the property that differs between components", paragraphs: ["Purification separates a desired substance from impurities by exploiting differences in properties. It does not normally change the desired compound into a new chemical. A mixture of an insoluble solid and a solution may be filtered, but filtering a dissolved impurity does not remove it merely because its particles are invisible.", "Qualitative analysis asks which elements or groups are present; quantitative analysis measures how much. Characterisation may combine composition with physical or chemical behaviour. A sharp melting range can support purity for a suitable solid, but one measurement alone does not prove identity or perfect purity under every circumstance."], formula: "Separation: exploit a property difference; analysis: identify or measure composition" },
       { title: "Crystallization uses temperature-dependent solubility", paragraphs: ["A suitable recrystallization solvent dissolves much of the desired solid when hot and less when cold, allowing crystals to form on cooling. Impurities may remain in solution or be removed as insoluble material at a suitable stage. The choice must avoid unwanted chemical reaction with the compound.", "Cooling does not force every last molecule into crystals; some desired product remains dissolved, so yield and purity are different goals. If the solvent dissolves the product equally well hot and cold, simple cooling is less useful. Sublimation instead exploits a solid's ability to enter the vapour phase and redeposit, separating it from suitably nonvolatile impurities."], formula: "Recrystallization needs a useful difference between hot and cold solubility" },
@@ -78,3 +79,5 @@ biomolecules.examples.push(
   {question:'Using rounded molar masses, find the product mass from 342 g sucrose undergoing complete hydrolysis with sufficient water.',steps:['One mole sucrose consumes one mole water.','342+18=360 g total products.','The products are one mole glucose and one mole fructose, 180 g each in this rounded calculation.'],answer:'180 g glucose plus 180 g fructose; total 360 g including incorporated water.'},
   {question:'Using rounded glycine 75 and alanine 89 g/mol, compare Gly–Ala and Ala–Gly and calculate a dipeptide molar mass.',steps:['Two residues form one peptide link with one water lost.','75+89−18=146 g/mol.','Opposite sequences have different connectivity but the same total composition.'],answer:'Both are 146 g/mol in the rounded calculation; their sequences differ.'},
 );
+
+for (const lesson of biomoleculesAnalysisLessons) extendMoleAnalysisDFLesson(lesson);

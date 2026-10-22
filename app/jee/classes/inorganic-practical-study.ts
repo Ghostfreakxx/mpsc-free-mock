@@ -1,3 +1,4 @@
+import { extendMoleAnalysisDFLesson } from "./mole-analysis-d-f-study.ts";
 import { equilibriumElectrochemistryPracticalAdditions as additions } from "./equilibrium-electrochemistry-practical-additions.ts";
 import type { StudyLesson } from "./course";
 
@@ -40,7 +41,7 @@ export const inorganicPracticalLessons: StudyLesson[] = [
     title: "D and f block: configurations, properties and oxidants",
     summary: "Count d electrons correctly and connect transition-metal behaviour with redox chemistry and lanthanoid contraction.",
     prerequisites: "Electronic configurations, oxidation numbers, redox balancing and coordination compounds.",
-    remaining: "Written companion to the ten-chapter Marin recording for Unit 11, not complete unit coverage. Full dichromate/permanganate preparation schemes, element-specific occurrence and uses, actinoid configurations and extended trend comparisons remain. Examples are original practice, not official PYQs.",
+    remaining: "Written companion to the fifteen-chapter Marin recording for Unit 11, not complete unit coverage. Further preparation conditions and product structures, element-specific occurrence and uses, actinoid configurations and extended trend comparisons remain. Examples are original practice, not official PYQs.",
     sections: [
       { title: "Remove outer s electrons before counting d electrons", paragraphs: ["The d-block involves filling a d subshell, but neutral-atom configurations have important exceptions. Chromium is commonly written [Ar]3d5 4s1 and copper [Ar]3d10 4s1. These observed patterns should not be replaced by an inflexible filling rule. Configuration describes the actual species, not just its position in a table.", "When forming common first-row cations, remove 4s electrons before 3d electrons. Iron is [Ar]3d6 4s2, so Fe2+ is d6 and Fe3+ is d5. A transition element has an incomplete d subshell in its atom or an important cation; zinc's common atom and Zn2+ are d10, so its d-block position does not make it a typical transition element by that definition."], formula: "Fe2+: d6; Fe3+: d5; Cu2+: d9; Zn2+: d10" },
       { title: "Nearby orbital energies permit variable oxidation states", paragraphs: ["The relatively close energies of outer s and d electrons allow different numbers to participate in bonding. Across the first transition series, several oxidation states occur, but their stability varies with the element, ligands and medium. Mn(VII) in permanganate does not imply an ordinary free aqueous Mn7+ ion.", "The highest oxidation states often occur with oxygen or fluorine. Later first-row elements commonly favour lower states such as +2 or +3. Atomic radii vary less dramatically across much of the series than a simple main-group expectation because added d electrons and nuclear attraction compete. Ionization and melting-point trends also have exceptions that require actual data."], formula: "Oxidation state is formal electron bookkeeping within a species, not always a free-ion charge" },
@@ -139,3 +140,5 @@ for (const lesson of inorganicPracticalLessons) {
   lesson.quiz.push(...added.foundationExtraQuiz, ...added.quiz);
   lesson.sources.push(...added.sources.filter(source => !lesson.sources.some(existing => existing.url === source.url)));
 }
+
+for (const lesson of inorganicPracticalLessons) extendMoleAnalysisDFLesson(lesson);

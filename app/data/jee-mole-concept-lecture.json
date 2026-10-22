@@ -13,6 +13,14 @@
     {
       "title": "OpenStax: reaction yields",
       "url": "https://openstax.org/books/chemistry-2e/pages/4-4-reaction-yields"
+    },
+    {
+      "title": "OpenStax: reaction stoichiometry",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-3-reaction-stoichiometry"
+    },
+    {
+      "title": "OpenStax: other concentration units",
+      "url": "https://openstax.org/books/chemistry-2e/pages/3-4-other-units-for-solution-concentrations"
     }
   ],
   "chapters": [
@@ -297,6 +305,181 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Find water of crystallization from mass data",
+      "formula": "CuSO₄·xH₂O: x = n(water lost)/n(anhydrous salt)",
+      "script": "A hydrate calculation uses the mole ratio of water to the anhydrous salt, not the ratio of their measured masses. Suppose supplied analysis says a two and one half gram hydrated copper sulfate sample corresponds to one point six zero grams of anhydrous copper sulfate after complete loss of water. Assume only water is lost, no salt decomposes, and the sample has the stated pure composition. Water mass is zero point nine zero gram. Using rounded molar masses eighteen for water and one hundred sixty grams per mole for anhydrous copper sulfate gives zero point zero five zero mole water and zero point zero one zero mole salt. Their ratio is five, so the formula is copper sulfate with five waters of crystallization. The anhydrous formula unit remains the reference entity. Incomplete water removal or loss of other material would invalidate the interpretation. A near integer ratio should be judged against the supplied measurement precision rather than rounded aggressively from incompatible data. This is interpretation of provided analytical results, not an instruction to heat a substance without an appropriate supervised method.",
+      "points": [
+        "Water mass · 2.50 − 1.60 · 0.90 g",
+        "Mole amounts · 0.90/18; 1.60/160 · 0.050; 0.010 mol",
+        "Hydration number · 0.050 / 0.010 · x = 5"
+      ],
+      "board": {
+        "heading": "Find water of crystallization from mass data",
+        "columns": [
+          "Quantity / case",
+          "Balance / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Water mass",
+            "2.50 − 1.60",
+            "0.90 g"
+          ],
+          [
+            "Mole amounts",
+            "0.90/18; 1.60/160",
+            "0.050; 0.010 mol"
+          ],
+          [
+            "Hydration number",
+            "0.050 / 0.010",
+            "x = 5"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Solve a carbonate mixture with two balances",
+      "formula": "a + b = n(CO₂); 106a + 84b = sample mass",
+      "script": "Two independent measurements can determine a binary mixture when the reaction model is specified. Take a four point six four gram mixture containing only anhydrous sodium carbonate and sodium hydrogen carbonate. Complete reaction with sufficient strong acid gives two point two zero grams of carbon dioxide. Using carbon dioxide molar mass forty four gives zero point zero five zero mole gas. Each formula unit of either salt gives one carbon dioxide, so their mole amounts a and b satisfy a plus b equals zero point zero five zero. The mass equation is one hundred six a plus eighty four b equals four point six four. Substitution gives a equals zero point zero two zero and b equals zero point zero three zero mole. The acid requirement is different: carbonate consumes two hydrogen ions per formula unit, while hydrogen carbonate consumes one. Total hydrogen ion consumption is therefore zero point zero seven zero mole. Do not confuse equal gas coefficients with equal acid coefficients. Check nonnegative amounts and reconstruct both total mass and gas yield before accepting the solution; additional impurities or incomplete gas recovery require a different model.",
+      "points": [
+        "CO₂ amount · 2.20 / 44 · a + b = 0.050 mol",
+        "Mass balance · 106a + 84b = 4.64 · a=0.020; b=0.030 mol",
+        "H⁺ requirement · 2a + b · 0.070 mol"
+      ],
+      "board": {
+        "heading": "Solve a carbonate mixture with two balances",
+        "columns": [
+          "Quantity / case",
+          "Balance / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "CO₂ amount",
+            "2.20 / 44",
+            "a + b = 0.050 mol"
+          ],
+          [
+            "Mass balance",
+            "106a + 84b = 4.64",
+            "a=0.020; b=0.030 mol"
+          ],
+          [
+            "H⁺ requirement",
+            "2a + b",
+            "0.070 mol"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Apply yields stage by stage",
+      "formula": "For stated conditional yields: overall fractional yield = y₁y₂",
+      "script": "A reaction chain requires both stoichiometric coefficients and the yield of each stage. Consider the supplied abstract equations two A giving one B, followed by one B giving three C. Start with zero point one zero zero mole A. At complete first stage conversion the theoretical B amount would be zero point zero five zero mole. An eighty percent isolated first stage yield supplies zero point zero four zero mole B to the second stage. That B could theoretically give zero point one two zero mole C. A seventy five percent second stage yield therefore gives zero point zero nine zero mole C. Relative to the original A, the full ideal chain could have produced zero point one five zero mole C, so the overall yield is sixty percent. Multiplying zero point eight by zero point seven five gives the same fractional result because the second yield is defined relative to the intermediate actually supplied. Do not add the percentages or apply both yields directly to the initial mole amount while ignoring coefficient changes. Side reactions, intermediate purity and recycled material need additional information before this simplified chain model can be used.",
+      "points": [
+        "First stage: 2A → B · 0.100/2 × 0.80 · 0.0400 mol B",
+        "Second stage: B → 3C · 0.0400 × 3 × 0.75 · 0.0900 mol C",
+        "Overall ideal C = 0.150 mol · 0.0900 / 0.150 · 60.0% yield"
+      ],
+      "board": {
+        "heading": "Apply yields stage by stage",
+        "columns": [
+          "Quantity / case",
+          "Balance / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "First stage: 2A → B",
+            "0.100/2 × 0.80",
+            "0.0400 mol B"
+          ],
+          [
+            "Second stage: B → 3C",
+            "0.0400 × 3 × 0.75",
+            "0.0900 mol C"
+          ],
+          [
+            "Overall ideal C = 0.150 mol",
+            "0.0900 / 0.150",
+            "60.0% yield"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Read a hydrocarbon from combustion products",
+      "formula": "CₓHᵧ + (x + y/4)O₂ → xCO₂ + (y/2)H₂O",
+      "script": "Complete combustion products can reveal a hydrocarbon formula when the amount of fuel is independently known. Suppose zero point one zero zero mole of a pure hydrocarbon gives zero point three zero zero mole carbon dioxide and zero point four zero zero mole water. Each carbon dioxide contains one carbon atom, so each fuel molecule contains three carbons. Each water contains two hydrogen atoms, giving eight hydrogens per fuel molecule. The molecular formula is therefore C three H eight, not merely its carbon to hydrogen empirical ratio. The balanced combustion equation consumes five oxygen molecules per fuel molecule, producing three carbon dioxide and four water molecules. For the stated fuel amount, oxygen demand is zero point five zero zero mole. Oxygen atoms in the products total one point zero zero mole of atoms, equivalent to half that many moles of diatomic oxygen. Keep atoms and molecules distinct. This inference assumes complete combustion and quantitative product accounting. If the fuel contains oxygen or the starting fuel mole amount is unknown, the same two product measurements alone require a different analysis. Physical states also matter when converting product moles into measured gas volumes.",
+      "points": [
+        "Per 0.100 mol fuel · 0.300 mol CO₂; 0.400 mol H₂O · C₃H₈",
+        "Balanced coefficients · C₃H₈ + 5O₂ → 3CO₂ + 4H₂O · Oxygen coefficient 5",
+        "For 0.100 mol fuel · 5 × 0.100 · 0.500 mol O₂"
+      ],
+      "board": {
+        "heading": "Read a hydrocarbon from combustion products",
+        "columns": [
+          "Quantity / case",
+          "Balance / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Per 0.100 mol fuel",
+            "0.300 mol CO₂; 0.400 mol H₂O",
+            "C₃H₈"
+          ],
+          [
+            "Balanced coefficients",
+            "C₃H₈ + 5O₂ → 3CO₂ + 4H₂O",
+            "Oxygen coefficient 5"
+          ],
+          [
+            "For 0.100 mol fuel",
+            "5 × 0.100",
+            "0.500 mol O₂"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Connect mass fraction density and molarity",
+      "formula": "Molarity uses solution volume; molality uses solvent mass",
+      "script": "Mass fraction, molarity and molality describe different denominators. Take a supplied twenty point zero percent by mass sodium hydroxide solution with density one point two zero grams per millilitre at the stated temperature. A one litre sample has total mass twelve hundred grams. Twenty percent of that is two hundred forty grams sodium hydroxide, or six point zero zero moles using molar mass forty. Dividing by one litre gives six point zero zero molar. The solvent mass is twelve hundred minus two hundred forty, or nine hundred sixty grams. Dividing six moles by zero point nine six zero kilogram solvent gives molality six point two five moles per kilogram. The two numerical concentrations are different because one denominator is solution volume and the other solvent mass. Density supplies the link between the given mass fraction and solution volume; it does not justify assuming that volumes of solute and solvent add exactly. Molarity depends on temperature through solution volume. For this conversion use the density corresponding to the same specified solution and temperature, and do not substitute solvent density for solution density.",
+      "points": [
+        "1.00 L solution · 1.20 g/mL × 1000 mL · 1200 g solution",
+        "NaOH: 20.0% by mass · 240 g / 40 g/mol · 6.00 mol; 6.00 M",
+        "Solvent mass = 0.960 kg · 6.00 / 0.960 · 6.25 mol/kg"
+      ],
+      "board": {
+        "heading": "Connect mass fraction density and molarity",
+        "columns": [
+          "Quantity / case",
+          "Balance / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "1.00 L solution",
+            "1.20 g/mL × 1000 mL",
+            "1200 g solution"
+          ],
+          [
+            "NaOH: 20.0% by mass",
+            "240 g / 40 g/mol",
+            "6.00 mol; 6.00 M"
+          ],
+          [
+            "Solvent mass = 0.960 kg",
+            "6.00 / 0.960",
+            "6.25 mol/kg"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -364,7 +547,7 @@
         "114 g/mol"
       ],
       "answer": 1,
-      "explanation": "40 + 2 × (16 + 1) = 74 g/mol."
+      "explanation": "40 + 2 × (16 + 1) = 74 g/mol. The subscript two multiplies the entire OH group, so oxygen and hydrogen are both counted twice."
     },
     {
       "question": "A 10 g sample is 80% CaCO3 with inert impurities. Using molar masses 100 and 44 g/mol, theoretical CO2 from complete decomposition is:",
@@ -386,7 +569,7 @@
         "100%"
       ],
       "answer": 0,
-      "explanation": "2.816/3.52 × 100 = 80%."
+      "explanation": "2.816/3.52 × 100 = 80%. Compare actual isolated product with theoretical product for the same limiting-reactant basis."
     },
     {
       "question": "50 mL of 0.40 mol/L solution is diluted to 200 mL without reaction. The final concentration is:",
@@ -397,7 +580,7 @@
         "0.10 mol/L"
       ],
       "answer": 3,
-      "explanation": "Solute amount is constant: 0.40 × 50/200 = 0.10 mol/L."
+      "explanation": "Solute amount is constant: 0.40 × 50/200 = 0.10 mol/L. Dilution preserves moles in the stated no-reaction model; use consistent volume units."
     },
     {
       "question": "Equal volumes of ideal gases have equal amounts of substance when:",
@@ -408,7 +591,73 @@
         "Their temperatures may be arbitrary"
       ],
       "answer": 1,
-      "explanation": "PV = nRT gives equal n for equal V, P and T."
+      "explanation": "PV = nRT gives equal n for equal V, P and T in the stated ideal-gas comparison. Equal mole amounts do not imply equal masses for different gases."
+    },
+    {
+      "question": "A 2.50 g CuSO4·xH2O sample corresponds to 1.60 g anhydrous CuSO4. With molar masses 160 and 18, and only water lost, x is:",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "9"
+      ],
+      "answer": 2,
+      "explanation": "Water is 0.90/18=0.050 mol and salt 1.60/160=0.010 mol; their ratio is five."
+    },
+    {
+      "question": "A 4.64 g Na2CO3/NaHCO3 mixture gives 2.20 g CO2 on complete acid reaction. Using 106, 84 and 44 g/mol, Na2CO3 amount is:",
+      "options": [
+        "0.050 mol",
+        "0.020 mol",
+        "0.030 mol",
+        "0.070 mol"
+      ],
+      "answer": 1,
+      "explanation": "Solve a+b=0.050 and 106a+84b=4.64; subtracting 84(a+b) gives 22a=0.44."
+    },
+    {
+      "question": "The hydrogen-ion amount required by that mixture is:",
+      "options": [
+        "0.020 mol",
+        "0.030 mol",
+        "0.050 mol",
+        "0.070 mol"
+      ],
+      "answer": 3,
+      "explanation": "Carbonate needs two H+ per formula unit and hydrogen carbonate one: 2×0.020+0.030=0.070 mol."
+    },
+    {
+      "question": "For 2A→B then B→3C, start with 0.100 mol A and apply conditional yields 80% then 75%. C obtained is:",
+      "options": [
+        "0.0900 mol",
+        "0.150 mol",
+        "0.0600 mol",
+        "0.225 mol"
+      ],
+      "answer": 0,
+      "explanation": "First isolate 0.100/2×0.80=0.0400 mol B, then obtain 0.0400×3×0.75=0.0900 mol C."
+    },
+    {
+      "question": "Complete combustion of 0.100 mol hydrocarbon gives 0.300 mol CO2 and 0.400 mol H2O. Oxygen required is:",
+      "options": [
+        "0.250 mol",
+        "0.350 mol",
+        "0.500 mol",
+        "1.00 mol"
+      ],
+      "answer": 2,
+      "explanation": "The hydrocarbon is C3H8, requiring five O2 per fuel molecule; multiply by 0.100 mol."
+    },
+    {
+      "question": "A 20.0% by-mass NaOH solution has density 1.20 g/mL. With M(NaOH)=40 g/mol, its molarity is:",
+      "options": [
+        "5.00 M",
+        "6.00 M",
+        "6.25 M",
+        "0.600 M"
+      ],
+      "answer": 1,
+      "explanation": "One litre weighs 1200 g and contains 240 g=6.00 mol NaOH. Molality would instead be 6.25 mol/kg."
     }
   ]
 }

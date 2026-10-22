@@ -21,6 +21,14 @@
     {
       "title": "OpenStax: physical separation and mixtures",
       "url": "https://openstax.org/books/chemistry-2e/pages/1-2-phases-and-classification-of-matter"
+    },
+    {
+      "title": "NCERT CIET: quantitative organic analysis",
+      "url": "https://ciet.nic.in/moocspdf/Chemistry02/kech_21204_eText.pdf"
+    },
+    {
+      "title": "OpenStax: quantitative chemical analysis",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-5-quantitative-chemical-analysis"
     }
   ],
   "chapters": [
@@ -303,6 +311,181 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Correct nitrogen gas for water vapour",
+      "formula": "Pdry = Ptotal − Pwater; n(N₂) = PdryV/(RT)",
+      "script": "Dumas style nitrogen analysis requires the amount of dry nitrogen gas, not an uncorrected wet gas volume at an assumed standard condition. Suppose supplied results for a zero point two five zero gram suitable sample give twenty point zero millilitres nitrogen collected over water at three hundred kelvin. Total pressure is one hundred kilopascals and the supplied water vapour pressure is three point zero zero kilopascals. The nitrogen partial pressure is therefore ninety seven point zero kilopascals. Convert the volume to zero point zero two zero zero litre and use R eight point three one four litre kilopascal per mole kelvin. The ideal gas calculation gives about zero point zero zero zero seven seven seven eight mole nitrogen molecules. Each molecule contains two nitrogen atoms, so the nitrogen mass uses molar mass twenty eight grams per mole of gas, giving about zero point zero two one eight gram. Relative to the sample, nitrogen is about eight point seven one percent. Assume quantitative conversion and gas collection with no other gases present after the stated analytical treatment. If the gas is already dry, do not subtract water pressure again. Temperature, pressure units and the two nitrogen atoms per molecule must all be handled explicitly.",
+      "points": [
+        "Dry nitrogen pressure · 100 − 3.00 · 97.0 kPa",
+        "Gas amount at 300 K · 97.0×0.0200/(8.314×300) · 0.0007778 mol N₂",
+        "Nitrogen in 0.250 g sample · 28n / 0.250 × 100 · 8.71% N"
+      ],
+      "board": {
+        "heading": "Correct nitrogen gas for water vapour",
+        "columns": [
+          "Quantity / case",
+          "Balance / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Dry nitrogen pressure",
+            "100 − 3.00",
+            "97.0 kPa"
+          ],
+          [
+            "Gas amount at 300 K",
+            "97.0×0.0200/(8.314×300)",
+            "0.0007778 mol N₂"
+          ],
+          [
+            "Nitrogen in 0.250 g sample",
+            "28n / 0.250 × 100",
+            "8.71% N"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Back titration counts captured ammonia",
+      "formula": "n(NH₃) = initial acid equivalents − residual acid equivalents",
+      "script": "A Kjeldahl style numerical problem counts ammonia formed from nitrogen that the stated method converts quantitatively. Use supplied results for a zero point five zero zero gram suitable sample. Its ammonia is captured by twenty five point zero millilitres of zero point one zero zero molar hydrochloric acid. The remaining acid requires ten point zero millilitres of zero point one zero zero molar sodium hydroxide. Initial acid amount is two point five zero millimoles and the residual amount one point zero zero millimole. The difference, one point five zero millimoles, equals captured ammonia and therefore nitrogen atom amount in this model. Multiplying by fourteen gives zero point zero two one zero gram nitrogen, or four point two zero percent of the original sample. Using all the initial acid would overestimate nitrogen. The standard textbook method is not generally applicable to nitrogen in nitro or azo groups or pyridine type rings without appropriate modification; quantitative conversion cannot be assumed for every nitrogen compound. These are interpretation and stoichiometry steps for supplied analytical data, not a procedure for carrying out hazardous digestion or handling laboratory reagents.",
+      "points": [
+        "Initial HCl · 25.0 mL × 0.100 mol/L · 2.50 mmol",
+        "Residual acid from NaOH · 10.0 mL × 0.100 mol/L · 1.00 mmol",
+        "Nitrogen = 1.50 mmol · 0.00150 × 14 / 0.500 × 100 · 4.20% N"
+      ],
+      "board": {
+        "heading": "Back titration counts captured ammonia",
+        "columns": [
+          "Quantity / case",
+          "Balance / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Initial HCl",
+            "25.0 mL × 0.100 mol/L",
+            "2.50 mmol"
+          ],
+          [
+            "Residual acid from NaOH",
+            "10.0 mL × 0.100 mol/L",
+            "1.00 mmol"
+          ],
+          [
+            "Nitrogen = 1.50 mmol",
+            "0.00150 × 14 / 0.500 × 100",
+            "4.20% N"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Convert a silver-halide mass to halogen mass",
+      "formula": "One mole AgCl contains one mole Cl atoms",
+      "script": "Gravimetric halogen analysis measures a compound containing the halogen, not a pure mass of the halogen itself. Suppose a supplied halogen analysis result says zero point two zero zero gram of a suitable chlorine containing organic sample yields zero point one four three five gram silver chloride. Assume the collected solid is pure dry silver chloride and the conversion and recovery are quantitative. With supplied molar masses one hundred forty three point five for silver chloride and thirty five point five for chlorine, the precipitate amount is zero point zero zero one zero zero mole. Each formula unit contains one chlorine, so chlorine mass is zero point zero three five five gram. The sample chlorine percentage is seventeen point seven five. Do not treat the entire silver chloride mass as chlorine or divide by chlorine gas molar mass seventy one when counting individual chlorine atoms in the salt. Different halogens require the corresponding silver halide molar mass, and mixed precipitates need additional information. Contamination, light induced changes or incomplete recovery can invalidate the simple mass conversion. This chapter uses reported results and chemical accounting; it does not provide a sealed tube experimental recipe.",
+      "points": [
+        "AgCl from analysis · 0.1435 / 143.5 · 0.00100 mol AgCl",
+        "Chlorine mass · 0.00100 × 35.5 · 0.0355 g Cl",
+        "Sample = 0.200 g · 0.0355 / 0.200 × 100 · 17.75% Cl"
+      ],
+      "board": {
+        "heading": "Convert a silver-halide mass to halogen mass",
+        "columns": [
+          "Quantity / case",
+          "Balance / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "AgCl from analysis",
+            "0.1435 / 143.5",
+            "0.00100 mol AgCl"
+          ],
+          [
+            "Chlorine mass",
+            "0.00100 × 35.5",
+            "0.0355 g Cl"
+          ],
+          [
+            "Sample = 0.200 g",
+            "0.0355 / 0.200 × 100",
+            "17.75% Cl"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Compare one extraction with repeated portions",
+      "formula": "Fraction left in water = Vaq/(Vaq + K Vorg) in the stated partition model",
+      "script": "Repeated solvent portions can remove more solute than one extraction using the same total solvent volume. Consider a neutral solute with constant partition ratio K equal to organic concentration divided by aqueous concentration, taking value four. Assume two immiscible phases with unchanged volumes, complete equilibration, no reaction or ionization and negligible mutual solubility. Begin with one hundred millilitres aqueous phase. A single fresh twenty five millilitre organic portion leaves aqueous fraction one hundred divided by one hundred plus four times twenty five, or one half. Now use two fresh twelve point five millilitre portions in sequence, separating each organic portion before the next contact. Each leaves fraction one hundred divided by one hundred plus fifty, or two thirds, of the solute then present in water. After both, the remaining fraction is four ninths, so about fifty five point six percent has been extracted rather than fifty percent. The second contact acts on the remainder, not the original amount. This calculation assumes a fixed partition ratio for the specified chemical form; changing p H or allowing association can require a more complete distribution model.",
+      "points": [
+        "One 25.0 mL portion · 100/(100 + 4×25) · 50.0% remains",
+        "Each of two 12.5 mL portions · 100/(100 + 4×12.5) · 2/3 of current amount remains",
+        "Two fresh portions combined · (2/3)² = 4/9 remains · 55.6% extracted"
+      ],
+      "board": {
+        "heading": "Compare one extraction with repeated portions",
+        "columns": [
+          "Quantity / case",
+          "Balance / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "One 25.0 mL portion",
+            "100/(100 + 4×25)",
+            "50.0% remains"
+          ],
+          [
+            "Each of two 12.5 mL portions",
+            "100/(100 + 4×12.5)",
+            "2/3 of current amount remains"
+          ],
+          [
+            "Two fresh portions combined",
+            "(2/3)² = 4/9 remains",
+            "55.6% extracted"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Chromatographic agreement is evidence not identity",
+      "formula": "Rf = solute travel / solvent-front travel for the same run",
+      "script": "Chromatography compares movement under specified stationary phase, mobile phase and experimental conditions. Suppose the solvent front travels five point zero zero centimetres while two sample spots travel two point zero zero and three point five zero centimetres from the same origin. Their retention factors are zero point four zero and zero point seven zero. Both ratios are dimensionless and use the solvent front distance rather than the plate height or the distance between spots. A reference substance with retention factor zero point four zero under the same conditions supports a possible assignment of the first spot, but matching one value does not uniquely prove chemical identity. Different compounds can migrate together, and an apparently single spot does not guarantee absolute purity. Changing solvent composition or using another suitable analytical method can supply independent evidence. When calculating recovery, compare recovered analyte mass with the amount originally present; the mass of an isolated fraction can include solvent or impurities. Keep separation, recovery and identification as distinct claims. Record the run conditions and the observed number of resolved components rather than treating a familiar retention factor as an invariant molecular constant.",
+      "points": [
+        "Front 5.00 cm; spot 2.00 cm · 2.00 / 5.00 · Rf = 0.40",
+        "Second spot 3.50 cm · 3.50 / 5.00 · Rf = 0.70",
+        "Matching a reference Rf · Same conditions required · Supporting evidence, not proof"
+      ],
+      "board": {
+        "heading": "Chromatographic agreement is evidence not identity",
+        "columns": [
+          "Quantity / case",
+          "Balance / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Front 5.00 cm; spot 2.00 cm",
+            "2.00 / 5.00",
+            "Rf = 0.40"
+          ],
+          [
+            "Second spot 3.50 cm",
+            "3.50 / 5.00",
+            "Rf = 0.70"
+          ],
+          [
+            "Matching a reference Rf",
+            "Same conditions required",
+            "Supporting evidence, not proof"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -415,6 +598,72 @@
       ],
       "answer": 1,
       "explanation": "Use the dry nitrogen partial pressure and appropriate temperature and volume in the gas relation."
+    },
+    {
+      "question": "A 0.250 g sample gives 20.0 mL N2 over water at 300 K. Ptotal=100 kPa, Pwater=3.00 kPa and R=8.314 L kPa/(mol K). Nitrogen percentage is approximately:",
+      "options": [
+        "4.36%",
+        "8.71%",
+        "8.98%",
+        "17.4%"
+      ],
+      "answer": 1,
+      "explanation": "Use dry pressure 97.0 kPa, convert 20.0 mL to 0.0200 L and calculate gas moles. Multiply by 28 g/mol for N2, then divide by 0.250 g and multiply by 100."
+    },
+    {
+      "question": "In the stated suitable nitrogen analysis, 25.0 mL 0.100 M HCl captures ammonia and residual acid needs 10.0 mL 0.100 M NaOH. Nitrogen percentage for a 0.500 g sample is:",
+      "options": [
+        "7.00%",
+        "2.80%",
+        "4.20%",
+        "14.0%"
+      ],
+      "answer": 2,
+      "explanation": "Captured ammonia is (2.50−1.00) mmol, corresponding to 0.0210 g nitrogen; divide by sample mass."
+    },
+    {
+      "question": "A 0.200 g sample yields 0.1435 g pure AgCl. Using M(AgCl)=143.5 and Ar(Cl)=35.5, chlorine percentage is:",
+      "options": [
+        "17.75%",
+        "71.75%",
+        "35.50%",
+        "7.175%"
+      ],
+      "answer": 0,
+      "explanation": "The precipitate is 0.00100 mol AgCl and contains 0.0355 g Cl; the rest of its mass includes silver."
+    },
+    {
+      "question": "For K=corg/caq=4, Vaq=100 mL and one fresh Vorg=25 mL portion, the aqueous fraction left is:",
+      "options": [
+        "1/4",
+        "2/3",
+        "4/9",
+        "1/2"
+      ],
+      "answer": 3,
+      "explanation": "Mass balance gives Vaq/(Vaq+KVorg)=100/200; this uses the stated unchanged-volume partition model."
+    },
+    {
+      "question": "With the same total 25 mL organic solvent split into two fresh 12.5 mL portions, the fraction left in water is:",
+      "options": [
+        "1/2",
+        "4/9",
+        "2/3",
+        "1/9"
+      ],
+      "answer": 1,
+      "explanation": "Each contact leaves 2/3 of the current amount; multiply the two remaining fractions to obtain 4/9."
+    },
+    {
+      "question": "Two spots travel 2.00 and 3.50 cm with solvent front 5.00 cm. Their Rf values are:",
+      "options": [
+        "0.40 and 0.70",
+        "0.70 and 0.40",
+        "2.50 and 1.43",
+        "0.57 and 1.00"
+      ],
+      "answer": 0,
+      "explanation": "Divide each spot distance from the origin by the solvent-front distance from that same origin."
     }
   ]
 }

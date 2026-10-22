@@ -17,6 +17,10 @@
     {
       "title": "OpenStax: transition-metal properties",
       "url": "https://openstax.org/books/chemistry-2e/pages/19-1-occurrence-preparation-and-properties-of-transition-metals-and-their-compounds"
+    },
+    {
+      "title": "NCERT: d- and f-block elements",
+      "url": "https://www.ncert.nic.in/textbook/pdf/lech104.pdf"
     }
   ],
   "chapters": [
@@ -369,6 +373,181 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Track oxidation from chromite to chromate",
+      "formula": "4FeCr₂O₄ + 8Na₂CO₃ + 7O₂ → 8Na₂CrO₄ + 2Fe₂O₃ + 8CO₂",
+      "script": "Preparation equations become easier to understand when oxidation numbers are checked alongside atom balance. Chromite has formula iron chromium two oxygen four, with iron two and chromium three in the elementary oxidation state description. In the stated oxidative carbonate conversion, chromium becomes plus six in chromate while iron becomes plus three in iron oxide. The balanced equation uses four chromite units, eight sodium carbonate units and seven oxygen molecules, giving eight sodium chromate, two iron oxide and eight carbon dioxide units. Eight chromium atoms each lose three electrons, while four iron atoms each lose one, making twenty eight electrons transferred. Seven oxygen molecules accept that total when oxygen changes from zero to minus two. Carbon remains plus four, so carbonate is not the redox donor merely because carbon dioxide appears. The sodium chromate product supplies the chromium containing intermediate for subsequent dichromate chemistry. Check chromium, iron, sodium, carbon and oxygen independently before deciding coefficients. These equations summarize chemical principles and the relationship between ore and product, rather than specifying an operational preparation method or claiming that the solid mixture behaves as a simple aqueous ionic reaction.",
+      "points": [
+        "Cr: +3 → +6 · 8 atoms × 3 electrons · 24 electrons lost",
+        "Fe: +2 → +3 · 4 atoms × 1 electron · 4 electrons lost",
+        "O₂: 7 molecules · 7 × 4 electrons accepted · 28 electrons balanced"
+      ],
+      "board": {
+        "heading": "Track oxidation from chromite to chromate",
+        "columns": [
+          "Quantity / case",
+          "Balance / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Cr: +3 → +6",
+            "8 atoms × 3 electrons",
+            "24 electrons lost"
+          ],
+          [
+            "Fe: +2 → +3",
+            "4 atoms × 1 electron",
+            "4 electrons lost"
+          ],
+          [
+            "O₂: 7 molecules",
+            "7 × 4 electrons accepted",
+            "28 electrons balanced"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Chromate and dichromate interconvert without redox",
+      "formula": "2CrO₄²⁻ + 2H⁺ ⇌ Cr₂O₇²⁻ + H₂O",
+      "script": "Chromate and dichromate provide a useful distinction between acid base equilibrium and oxidation reduction. Their interconversion can be written as two chromate ions plus two hydrogen ions giving one dichromate ion and water, with a reversible arrow. Chromium remains in oxidation state plus six on both sides. Acidification therefore changes the balance between these species without requiring electrons in the net equation. In the common qualitative comparison, chromate is yellow and dichromate orange. Increasing hydroxide concentration consumes hydrogen ions and favours chromate within the stated equilibrium conditions. A basic form of the reverse conversion uses one dichromate plus two hydroxides to give two chromates and one water. Charge is minus four on each side of that equation. The preparation of potassium dichromate can exploit the lower solubility of its salt relative to the corresponding sodium salt under the specified crystallization conditions; it is not explained by changing chromium's oxidation number during salt exchange. Actual speciation depends on concentration and acidity, so the two ion equation is an organizing model rather than a claim that every chromium six solution contains only one species of a single colour.",
+      "points": [
+        "Acid-favoured comparison · 2CrO₄²⁻ + 2H⁺ ⇌ Cr₂O₇²⁻ + H₂O · Yellow ↔ orange",
+        "Basic reverse · Cr₂O₇²⁻ + 2OH⁻ → 2CrO₄²⁻ + H₂O · Charges: −4 each side",
+        "Chromium oxidation state · +6 in both ions · No electron transfer"
+      ],
+      "board": {
+        "heading": "Chromate and dichromate interconvert without redox",
+        "columns": [
+          "Quantity / case",
+          "Balance / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Acid-favoured comparison",
+            "2CrO₄²⁻ + 2H⁺ ⇌ Cr₂O₇²⁻ + H₂O",
+            "Yellow ↔ orange"
+          ],
+          [
+            "Basic reverse",
+            "Cr₂O₇²⁻ + 2OH⁻ → 2CrO₄²⁻ + H₂O",
+            "Charges: −4 each side"
+          ],
+          [
+            "Chromium oxidation state",
+            "+6 in both ions",
+            "No electron transfer"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Distinguish manganate from permanganate preparation",
+      "formula": "MnO₄²⁻ → MnO₄⁻ + e⁻; manganese +6 → +7",
+      "script": "Manganate and permanganate differ by one unit of ionic charge and one unit of manganese oxidation state. The green manganate ion has manganese plus six, while the purple permanganate ion has manganese plus seven. In the usual preparation scheme, manganese dioxide is first converted under alkaline oxidizing conditions to manganate. An electrolytic oxidation can then remove one electron per manganate to form permanganate. The oxidation half equation is manganate giving permanganate plus an electron; oxygen atom count is unchanged. Manganate can also undergo disproportionation under suitable less strongly basic conditions. The balanced acidic representation uses three manganate ions and four hydrogen ions to form two permanganate ions, one manganese dioxide and two waters. Two manganese centres rise from six to seven, losing two electrons in total, while one falls from six to four and gains two. This is not simply a colour change caused by dilution. State the chemical conditions and distinguish oxidation of all manganate from simultaneous oxidation and reduction of different manganese centres. These are reaction relationships for interpreting preparation chemistry, not a laboratory recipe or a claim that every solution follows the same pathway regardless of p H.",
+      "points": [
+        "Manganate → permanganate · Mn(+6) → Mn(+7) · Lose 1 electron per Mn",
+        "Disproportionation: 3 Mn(+6) · 2 rise to +7; 1 falls to +4 · 2 electrons lost and gained",
+        "Net acidic representation · 3MnO₄²⁻ + 4H⁺ → 2MnO₄⁻ + MnO₂ + 2H₂O · Atoms and charge balanced"
+      ],
+      "board": {
+        "heading": "Distinguish manganate from permanganate preparation",
+        "columns": [
+          "Quantity / case",
+          "Balance / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Manganate → permanganate",
+            "Mn(+6) → Mn(+7)",
+            "Lose 1 electron per Mn"
+          ],
+          [
+            "Disproportionation: 3 Mn(+6)",
+            "2 rise to +7; 1 falls to +4",
+            "2 electrons lost and gained"
+          ],
+          [
+            "Net acidic representation",
+            "3MnO₄²⁻ + 4H⁺ → 2MnO₄⁻ + MnO₂ + 2H₂O",
+            "Atoms and charge balanced"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "The permanganate product fixes the electron factor",
+      "formula": "Mn(+7) → Mn(+2), Mn(+4), Mn(+6): 5, 3, 1 electrons",
+      "script": "The electron factor of permanganate is not one fixed number independent of the product. In the familiar sufficiently acidic reduction to manganese two, manganese changes from plus seven to plus two and accepts five electrons. A balanced acidic half equation also consumes eight hydrogen ions and forms four waters. When the specified reduction product is manganese dioxide, manganese ends at plus four and accepts three electrons. A basic half equation uses permanganate, two waters and three electrons to form manganese dioxide and four hydroxides. When the stated strongly alkaline comparison gives manganate, manganese ends at plus six and accepts one electron, with the same four oxygen atoms. For one millimole permanganate, those three product assumptions correspond to five, three or one millimole electrons. Consequently an equivalent mass or a titration ratio must refer to the actual product and reaction conditions. Medium influences products, but the reducing agent, concentration and kinetics also matter; a p H label alone does not guarantee the same outcome for every reaction. Balance atoms and total charge after selecting the stated product instead of memorizing an electron factor without its chemical context.",
+      "points": [
+        "MnO₄⁻ → Mn²⁺ · +7 to +2 · 5 electrons per Mn",
+        "MnO₄⁻ → MnO₂ · +7 to +4 · 3 electrons per Mn",
+        "MnO₄⁻ → MnO₄²⁻ · +7 to +6 · 1 electron per Mn"
+      ],
+      "board": {
+        "heading": "The permanganate product fixes the electron factor",
+        "columns": [
+          "Quantity / case",
+          "Balance / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "MnO₄⁻ → Mn²⁺",
+            "+7 to +2",
+            "5 electrons per Mn"
+          ],
+          [
+            "MnO₄⁻ → MnO₂",
+            "+7 to +4",
+            "3 electrons per Mn"
+          ],
+          [
+            "MnO₄⁻ → MnO₄²⁻",
+            "+7 to +6",
+            "1 electron per Mn"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Count selected lanthanoid f configurations",
+      "formula": "Ce⁴⁺: 4f⁰; Eu²⁺: 4f⁷; Yb²⁺: 4f¹⁴",
+      "script": "Selected lanthanoid oxidation states become clearer when the actual ion configuration is written. Cerium three has one electron in the four f subshell in the usual ionic description, while cerium four has an empty four f subshell. Europium three has six four f electrons, and europium two has seven, giving a half filled four f set. Ytterbium three has thirteen four f electrons, while ytterbium two has fourteen and a filled set. A four f subshell contains seven spatial orbitals and at most fourteen electrons. In the elementary Hund filling picture, the half filled seven electron set has one electron in each orbital, whereas the fourteen electron set has all seven pairs. Empty, half filled or filled arrangements can help rationalize particular oxidation state patterns, but electronic bookkeeping alone does not determine stability in every chemical environment. Lattice, hydration and redox energies also contribute. Do not assume that the common plus three state gives the same f count for every element or that every lanthanoid readily exhibits all these alternatives. The purpose of the comparison is to connect element identity, ionic charge and occupancy before discussing periodic trends or magnetic evidence.",
+      "points": [
+        "Cerium comparison · Ce³⁺: 4f¹ → Ce⁴⁺: 4f⁰ · Empty 4f in Ce⁴⁺",
+        "Europium comparison · Eu³⁺: 4f⁶ → Eu²⁺: 4f⁷ · Half-filled 4f in Eu²⁺",
+        "Ytterbium comparison · Yb³⁺: 4f¹³ → Yb²⁺: 4f¹⁴ · Filled 4f in Yb²⁺"
+      ],
+      "board": {
+        "heading": "Count selected lanthanoid f configurations",
+        "columns": [
+          "Quantity / case",
+          "Balance / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Cerium comparison",
+            "Ce³⁺: 4f¹ → Ce⁴⁺: 4f⁰",
+            "Empty 4f in Ce⁴⁺"
+          ],
+          [
+            "Europium comparison",
+            "Eu³⁺: 4f⁶ → Eu²⁺: 4f⁷",
+            "Half-filled 4f in Eu²⁺"
+          ],
+          [
+            "Ytterbium comparison",
+            "Yb³⁺: 4f¹³ → Yb²⁺: 4f¹⁴",
+            "Filled 4f in Yb²⁺"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -503,6 +682,72 @@
       ],
       "answer": 1,
       "explanation": "Contraction associated with imperfect f-electron shielding helps account for the close sizes."
+    },
+    {
+      "question": "In the stated chromite-to-chromate equation, four FeCr2O4 units lose how many electrons in total through Fe and Cr oxidation?",
+      "options": [
+        "24",
+        "4",
+        "14",
+        "28"
+      ],
+      "answer": 3,
+      "explanation": "Eight Cr atoms lose 3 electrons each and four Fe atoms lose 1 each: 24+4=28."
+    },
+    {
+      "question": "Chromium oxidation states in chromate and dichromate are respectively:",
+      "options": [
+        "+6 and +6",
+        "+6 and +3",
+        "+3 and +6",
+        "+7 and +6"
+      ],
+      "answer": 0,
+      "explanation": "Both oxygen-based charge balances give Cr(+6); their interconversion is not itself a redox reaction."
+    },
+    {
+      "question": "In Cr2O7^2− + aOH− → 2CrO4^2− + bH2O, (a,b) are:",
+      "options": [
+        "(1,2)",
+        "(2,1)",
+        "(4,2)",
+        "(2,2)"
+      ],
+      "answer": 1,
+      "explanation": "Two hydroxides and one water conserve Cr, O, H and total charge −4 on both sides."
+    },
+    {
+      "question": "Oxidizing one manganate ion to permanganate releases:",
+      "options": [
+        "5 electrons",
+        "3 electrons",
+        "1 electron",
+        "No electron"
+      ],
+      "answer": 2,
+      "explanation": "Manganese changes from +6 to +7; the oxidation half-equation releases one electron."
+    },
+    {
+      "question": "One mmol permanganate reduced specifically to MnO2 accepts:",
+      "options": [
+        "1 mmol electrons",
+        "5 mmol electrons",
+        "7 mmol electrons",
+        "3 mmol electrons"
+      ],
+      "answer": 3,
+      "explanation": "Manganese changes from +7 to +4, so each ion accepts three electrons for this specified product."
+    },
+    {
+      "question": "Which sequence gives 4f occupancies of Ce4+, Eu2+ and Yb2+?",
+      "options": [
+        "0, 7, 14",
+        "1, 6, 13",
+        "4, 7, 14",
+        "0, 6, 13"
+      ],
+      "answer": 0,
+      "explanation": "The selected ions correspond respectively to empty, half-filled and filled 4f subshells in the stated ionic model."
     }
   ]
 }

@@ -11,7 +11,7 @@ try {
   page.on('pageerror', error => errors.push(error.message));
   const cases = [
     ['Physics', 'straight-line-motion', 68, [1, 2, 1, 2, 1]],
-    ['Chemistry', 'mole-concept', 20, [1, 2, 1, 1, 2]],
+    ['Chemistry', 'mole-concept', 20, [1, 2, 1, 1, 2, 1, 2, 0, 3, 1, 2, 1, 3, 0, 2, 1]],
     ['Mathematics', 'sets-and-functions', 14, [2, 0, 2, 1, 0]],
     ['Physics', 'newtons-laws', 68, [1, 1, 1, 2, 1]],
     ['Chemistry', 'atomic-structure', 20, [0, 2, 2, 3, 1, 1, 2, 0, 3, 1, 2, 2, 2, 3, 0, 1, 0, 3]],

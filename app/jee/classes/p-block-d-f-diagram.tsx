@@ -1,9 +1,12 @@
 import pBlock from "../../data/jee-p-block-lecture.json";
 import dFBlock from "../../data/jee-d-f-block-lecture.json";
+import AnalysisFOccupancyDiagram from "./analysis-f-occupancy-diagram";
 import styles from "./lecture.module.css";
 
 const recordings={"p-block":pBlock,"d-f-block":dFBlock};
 export default function PBlockDFDiagram({lesson,chapter}:{lesson:keyof typeof recordings;chapter:number}) {
+ if(lesson==="d-f-block" && chapter===12)return <AnalysisFOccupancyDiagram kind="manganate"/>;
+ if(lesson==="d-f-block" && chapter===14)return <AnalysisFOccupancyDiagram kind="f-occupancy"/>;
  const board=recordings[lesson].chapters[chapter].board;
  return <svg className={styles.diagram} viewBox="0 0 460 310" role="img" aria-label={board.heading}>
   <title>{board.heading}</title><rect width="460" height="310" rx="12" fill="#f5faf7" />

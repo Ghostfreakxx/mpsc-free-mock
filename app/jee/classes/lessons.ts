@@ -1203,8 +1203,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "mole-concept", subject: "Chemistry", unit: 1, number: "C10", title: moleConcept.title,
-    description: "Eight narrated chapters on chemical laws, entity counting, composition, formulas, limiting reactants, purity, yield, gases and dilution.",
-    scope: "Recorded Unit 1 foundation with original practice. Longer multi-reaction problems, combustion analysis and additional experimental applications remain; not exhaustive coverage or official PYQs.",
+    description: "Thirteen narrated chapters on mole calculations, hydrates, carbonate mixtures, stage yields, combustion and solution concentration conversions.",
+    scope: "Recorded Unit 1 foundation with original practice. Further multi-step reaction networks and additional experimental datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.mole-concept.lecture.v1",
     audio: "/lectures/mole-concept/narration-marin.mp3",
     subtitles: "/lectures/mole-concept/english.vtt", timings: moleConceptTimings,
@@ -1273,7 +1273,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "purification-analysis", subject: "Chemistry", unit: 13, number: "C17", title: purificationAnalysis.title,
-    description: "Eight narrated chapters on separation, crystallization, distillation, extraction, chromatography, element detection and composition calculations.",
+    description: "Thirteen narrated chapters on separation, Dumas and Kjeldahl calculations, silver-halide gravimetry, repeated extraction and chromatographic evidence.",
     scope: "Recorded Unit 13 foundation with original practice. Detailed analytical equations, phosphorus calculations, partition calculations and larger datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.purification-analysis.lecture.v1",
     audio: "/lectures/purification-analysis/narration-marin.mp3",
@@ -1303,8 +1303,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "d-f-block", subject: "Chemistry", unit: 11, number: "C20", title: dFBlock.title,
-    description: "Ten narrated chapters on configurations, oxidation states, magnetism, colour, solids, oxidants, f-block comparisons and worked calculations.",
-    scope: "Recorded Unit 11 foundation with original practice. Full oxidant preparation schemes, occurrence and uses, detailed actinoid configurations and extended comparisons remain; not exhaustive coverage or official PYQs.",
+    description: "Fifteen narrated chapters on d/f-block trends, chromite oxidation, chromate equilibria, manganate and permanganate, and selected lanthanoid configurations.",
+    scope: "Recorded Unit 11 foundation with original practice. Further preparation conditions and structures, occurrence and uses, detailed actinoid configurations and extended comparisons remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.d-f-block.lecture.v1",
     audio: "/lectures/d-f-block/narration-marin.mp3",
     subtitles: "/lectures/d-f-block/english.vtt", timings: dFBlockTimings,
