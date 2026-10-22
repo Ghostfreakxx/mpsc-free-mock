@@ -256,6 +256,181 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Use the exact binary nonvolatile-solute ratio",
+      "formula": "Relative vapour-pressure lowering = xsolute for the stated ideal model",
+      "script": "For an ideal binary solution with a nonvolatile solute, the solvent vapour pressure equals solvent mole fraction times pure solvent vapour pressure. Take one point zero zero mole solvent and zero point one zero zero mole solute, with pure solvent pressure twenty seven point zero kilopascals. The solvent mole fraction is one divided by one point one, or about zero point nine zero nine one. Solution vapour pressure is therefore about twenty four point five five kilopascals. The relative lowering is one minus the solvent mole fraction, equal to solute mole fraction zero point zero nine zero nine one. Replacing the total mole denominator by the solvent amount alone would give zero point one zero zero; that is a dilute approximation rather than the exact binary mole fraction. The difference is already visible at the supplied composition. This model assumes the solute contributes negligible vapour and the solvent follows ideal behaviour. A volatile second component requires its own partial pressure, and an electrolyte or associating solute can require additional particle and activity treatment. State the species counted and the ideality assumptions before converting a measured pressure lowering into a molar mass or composition.",
+      "points": [
+        "nsolvent=1.00; nsolute=0.100 · xsolvent = 1.00/1.10 · 0.9091",
+        "Pure pressure 27.0 kPa · 27.0×0.9091 · 24.55 kPa",
+        "Relative lowering · 0.100/1.100 · 0.09091, not exactly 0.100"
+      ],
+      "board": {
+        "heading": "Use the exact binary nonvolatile-solute ratio",
+        "columns": [
+          "Case / quantity",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "nsolvent=1.00; nsolute=0.100",
+            "xsolvent = 1.00/1.10",
+            "0.9091"
+          ],
+          [
+            "Pure pressure 27.0 kPa",
+            "27.0×0.9091",
+            "24.55 kPa"
+          ],
+          [
+            "Relative lowering",
+            "0.100/1.100",
+            "0.09091, not exactly 0.100"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Add particles from more than one solute",
+      "formula": "Dilute ideal comparison: ΔTf = Kf Σ(i m)",
+      "script": "A colligative effect depends on the combined effective particle amount when several solutes share the same solvent. Consider zero point zero one zero zero mole glucose and zero point zero two zero zero mole sodium chloride in zero point one zero zero kilogram water. Assume a dilute ideal comparison, negligible solute interactions and complete sodium chloride dissociation into two ions. Glucose contributes zero point zero one zero zero mole particles, while the salt contributes zero point zero four zero zero. Total effective particle amount is zero point zero five zero zero mole. Dividing by the common solvent mass gives zero point five zero zero mole particles per kilogram. With the supplied freezing point constant one point eight six kelvin kilogram per mole, the depression is zero point nine three zero kelvin. Do not give each solute a separate full solvent mass and then add solvent amounts, or treat the electrolyte as one undissociated particle under the stated assumption. In an actual electrolyte solution, an effective factor can differ from the integer ion count because of nonideal interactions. The calculation is an ideal particle accounting exercise, not a guarantee of exact experimental freezing temperature for an arbitrary concentrated mixture.",
+      "points": [
+        "Glucose particles · 0.0100 × 1 · 0.0100 mol",
+        "NaCl particles: stated i=2 · 0.0200 × 2 · 0.0400 mol",
+        "Total / 0.100 kg water · 1.86×(0.0500/0.100) · ΔTf = 0.930 K"
+      ],
+      "board": {
+        "heading": "Add particles from more than one solute",
+        "columns": [
+          "Case / quantity",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Glucose particles",
+            "0.0100 × 1",
+            "0.0100 mol"
+          ],
+          [
+            "NaCl particles: stated i=2",
+            "0.0200 × 2",
+            "0.0400 mol"
+          ],
+          [
+            "Total / 0.100 kg water",
+            "1.86×(0.0500/0.100)",
+            "ΔTf = 0.930 K"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Infer dimerization without changing molecular identity",
+      "formula": "2A ⇌ A₂: i = 1−α/2; i = Mtrue/Mapp in the stated model",
+      "script": "Association reduces the number of independently moving solute particles without removing the mass of the original material. Consider an elementary dimerization model in which two monomers join to form one dimer. If a fraction alpha of the original monomer units associates, starting from one mole of monomer units leaves one minus alpha mole monomers and alpha divided by two mole dimers. The total particle amount is one minus alpha divided by two, which gives the ideal particle factor. Suppose true monomer molar mass is sixty and a suitable colligative calculation, made while ignoring association, reports apparent molar mass eighty grams per mole. The particle factor is sixty divided by eighty, or zero point seven five. Solving gives alpha one half. Thus half the original monomer units are incorporated into dimers. From one initial mole of units, there are zero point five zero mole free monomers and zero point two five zero mole dimers, or zero point seven five zero mole particles. Apparent molar mass eighty is not a new molecular formula mass of a pure dimer. The inference assumes only this association process and a suitable dilute ideal colligative model.",
+      "points": [
+        "Given true 60; apparent 80 · i = 60/80 · 0.750",
+        "Dimer association · α = 2(1−i) · 0.500",
+        "From 1 mol initial units · 0.500 mol A + 0.250 mol A₂ · 0.750 mol particles"
+      ],
+      "board": {
+        "heading": "Infer dimerization without changing molecular identity",
+        "columns": [
+          "Case / quantity",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Given true 60; apparent 80",
+            "i = 60/80",
+            "0.750"
+          ],
+          [
+            "Dimer association",
+            "α = 2(1−i)",
+            "0.500"
+          ],
+          [
+            "From 1 mol initial units",
+            "0.500 mol A + 0.250 mol A₂",
+            "0.750 mol particles"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Reverse osmosis compares opposing pressure differences",
+      "formula": "At equal T: Δπ = RT(Chigh−Clow) for ideal non-electrolytes",
+      "script": "A membrane that passes solvent but excludes the stated solutes can separate osmotic and applied pressure effects. Compare ideal dilute non electrolyte solutions at three hundred kelvin with particle concentrations zero point one zero zero and zero point two zero zero molar. With equal initial hydrostatic pressure, solvent tends toward the more concentrated side. The opposing osmotic pressure difference is R T times the concentration difference. Using R zero point zero eight two zero five seven litre atmosphere per mole kelvin gives about two point four six atmospheres. Applying that pressure difference to the concentrated side can balance the ideal osmotic tendency. A larger applied difference, such as three point zero zero atmospheres in this model, can drive solvent in the reverse direction toward the dilute side. This is the thermodynamic comparison underlying reverse osmosis, not a prediction of a particular membrane's flow rate. Real membranes, concentration polarization, solute passage and solution nonideality affect performance. The relevant threshold here is the pressure difference between the two specified solutions, rather than the concentrated solution's osmotic pressure relative to pure solvent. Keep the applied side and the direction of each driving effect explicit.",
+      "points": [
+        "Chigh=0.200; Clow=0.100 M · Δπ = 0.082057×300×0.100 · 2.46 atm",
+        "No applied pressure difference · Solvent toward higher concentration · Ordinary osmosis",
+        "Apply 3.00 atm on high side · 3.00 > 2.46 atm · Reverse direction possible"
+      ],
+      "board": {
+        "heading": "Reverse osmosis compares opposing pressure differences",
+        "columns": [
+          "Case / quantity",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Chigh=0.200; Clow=0.100 M",
+            "Δπ = 0.082057×300×0.100",
+            "2.46 atm"
+          ],
+          [
+            "No applied pressure difference",
+            "Solvent toward higher concentration",
+            "Ordinary osmosis"
+          ],
+          [
+            "Apply 3.00 atm on high side",
+            "3.00 > 2.46 atm",
+            "Reverse direction possible"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "One pressure datum does not prove an azeotrope",
+      "formula": "Compare measured total pressure with the same-composition Raoult reference",
+      "script": "Deviation from an ideal vapour pressure prediction can be identified from a defined comparison, but an azeotrope requires additional evidence. Suppose a binary liquid at fixed temperature has equal liquid mole fractions and pure component vapour pressures eighty and forty kilopascals. Raoult's ideal total pressure prediction is one half times eighty plus one half times forty, giving sixty kilopascals. If the measured total is seventy five at the same temperature and composition, that point lies above the ideal reference and shows positive total pressure deviation. It does not by itself prove that an azeotrope exists. At an azeotropic composition, equilibrium vapour and liquid compositions match under the specified conditions. A full composition dependent dataset or suitable boiling behaviour is needed to establish that special point. Likewise positive deviation does not force an azeotrope at equal mole fractions, and not every nonideal mixture has one. Use mixing enthalpy, volume and interaction information only when actually supplied rather than inventing them from one pressure value. This is a data interpretation method: match temperature, liquid composition and reference definitions before deciding which claim the evidence supports.",
+      "points": [
+        "xA=xB=0.500 · 0.5×80 + 0.5×40 · Ideal total 60 kPa",
+        "Measured total 75 kPa · 75 > 60 at same T and x · Positive pressure deviation",
+        "Azeotropic evidence · Need vapour/liquid compositions · One total-pressure datum is insufficient"
+      ],
+      "board": {
+        "heading": "One pressure datum does not prove an azeotrope",
+        "columns": [
+          "Case / quantity",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "xA=xB=0.500",
+            "0.5×80 + 0.5×40",
+            "Ideal total 60 kPa"
+          ],
+          [
+            "Measured total 75 kPa",
+            "75 > 60 at same T and x",
+            "Positive pressure deviation"
+          ],
+          [
+            "Azeotropic evidence",
+            "Need vapour/liquid compositions",
+            "One total-pressure datum is insufficient"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -390,6 +565,72 @@
       ],
       "answer": 0,
       "explanation": "i = 1 + 2α, so α = (2.60 − 1)/2 = 0.80."
+    },
+    {
+      "question": "An ideal binary solution contains 1.00 mol solvent and 0.100 mol nonvolatile solute. With pure solvent pressure 27.0 kPa, solution pressure is approximately:",
+      "options": [
+        "24.55 kPa",
+        "27.00 kPa",
+        "2.455 kPa",
+        "24.30 kPa"
+      ],
+      "answer": 0,
+      "explanation": "Use solvent mole fraction 1.00/1.100, not a solute-to-solvent approximation: pressure=27.0/1.1."
+    },
+    {
+      "question": "For 0.0100 mol glucose plus 0.0200 mol NaCl in 0.100 kg water, assume i(glucose)=1 and i(NaCl)=2. With Kf=1.86, freezing depression is:",
+      "options": [
+        "0.558 K",
+        "0.372 K",
+        "0.930 K",
+        "1.86 K"
+      ],
+      "answer": 2,
+      "explanation": "Effective particles total 0.0100+2×0.0200=0.0500 mol; divide by 0.100 kg and multiply by 1.86."
+    },
+    {
+      "question": "In the ideal dimerization model, Mtrue=60 and Mapp=80 g/mol imply the fraction of original monomer units associated is:",
+      "options": [
+        "0.250",
+        "0.750",
+        "1.00",
+        "0.500"
+      ],
+      "answer": 3,
+      "explanation": "i=Mtrue/Mapp=0.750 and i=1−alpha/2, giving alpha=0.500."
+    },
+    {
+      "question": "Starting with 1.00 mol monomer units at that association fraction, the amount of dimers is:",
+      "options": [
+        "0.500 mol",
+        "0.250 mol",
+        "0.750 mol",
+        "1.00 mol"
+      ],
+      "answer": 1,
+      "explanation": "Half the units associate, but each dimer contains two units: alpha/2=0.250 mol dimers."
+    },
+    {
+      "question": "For ideal non-electrolyte solutions 0.100 and 0.200 M at 300 K, R=0.082057 L atm/(mol K) gives opposing osmotic pressure difference approximately:",
+      "options": [
+        "2.46 atm",
+        "4.92 atm",
+        "7.39 atm",
+        "0.246 atm"
+      ],
+      "answer": 0,
+      "explanation": "Use the concentration difference: Δpi=RT(0.200−0.100), rather than the high concentration alone."
+    },
+    {
+      "question": "At fixed T, xA=xB=0.5 and pure vapour pressures 80 and 40 kPa give ideal total 60 kPa. Measured total 75 kPa alone establishes:",
+      "options": [
+        "An azeotrope at xA=0.5 necessarily",
+        "Ideal behaviour",
+        "Positive total-pressure deviation at that composition",
+        "A unique vapour composition without further data"
+      ],
+      "answer": 2,
+      "explanation": "The measured point exceeds the matching Raoult reference. Azeotropy also requires matching equilibrium phase compositions, not just one pressure."
     }
   ]
 }

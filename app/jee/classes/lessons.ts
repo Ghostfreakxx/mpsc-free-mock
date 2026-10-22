@@ -1143,7 +1143,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "chemical-thermodynamics", subject: "Chemistry", unit: 4, number: "C04", title: chemicalThermodynamics.title,
-    description: "Ten narrated chapters on energy signs, enthalpy cycles, calorimetry, entropy calculations, Gibbs energy and equilibrium.",
+    description: "Fifteen narrated chapters on energy signs, enthalpy cycles, calorimetry, entropy calculations, Gibbs energy and equilibrium.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 4 foundation and worked applications with original practice. Full Born-Haber cycles, variable heat-capacity integrals and further mixed problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.chemical-thermodynamics.lecture.v1",
     audio: "/lectures/chemical-thermodynamics/narration-marin.mp3",
@@ -1153,7 +1153,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "solutions", subject: "Chemistry", unit: 5, number: "C05", title: solutions.title,
-    description: "Ten narrated chapters on concentration and density, Henry and Raoult laws, azeotropes, colligative calculations and particle factors.",
+    description: "Fifteen narrated chapters on concentration and density, Henry and Raoult laws, azeotropes, colligative calculations and particle factors.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 5 foundation and worked applications with original practice. Detailed phase diagrams, quantitative nonideal activities and further mixed problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.solutions.lecture.v1",
     audio: "/lectures/solutions/narration-marin.mp3",
@@ -1293,7 +1293,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "p-block", subject: "Chemistry", unit: 10, number: "C19", title: pBlock.title,
-    description: "Ten narrated chapters on groups 13–18, first-member differences, oxidation states, hydride comparisons and worked oxygen exceptions.",
+    description: "Fifteen narrated chapters on groups 13–18, first-member differences, oxidation states, hydride comparisons and worked oxygen exceptions.",
     scope: "Recorded Unit 10 trend foundation with original practice. Further element-specific comparisons, physical-property datasets and detailed structural drawings remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.p-block.lecture.v1",
     audio: "/lectures/p-block/narration-marin.mp3",

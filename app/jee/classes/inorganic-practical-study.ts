@@ -1,3 +1,4 @@
+import { extendPBlockThermoSolutionsLesson } from "./p-block-thermo-solutions-study.ts";
 import { extendMoleAnalysisDFLesson } from "./mole-analysis-d-f-study.ts";
 import { equilibriumElectrochemistryPracticalAdditions as additions } from "./equilibrium-electrochemistry-practical-additions.ts";
 import type { StudyLesson } from "./course";
@@ -10,7 +11,7 @@ export const inorganicPracticalLessons: StudyLesson[] = [
     title: "P-block: group trends and first-element exceptions",
     summary: "Read the valence configurations of Groups 13 to 18 and explain trends without erasing their exceptions.",
     prerequisites: "Periodic trends, chemical bonding, oxidation states and intermolecular forces.",
-    remaining: "Written companion to the ten-chapter Marin recording for Unit 10, not complete unit coverage. Detailed element-by-element comparisons and additional physical-property datasets remain. Selected compounds illustrate the official trend-focused scope; this is not a claim that every older p-block preparation is required.",
+    remaining: "Written companion to the fifteen-chapter Marin recording for Unit 10, not complete unit coverage. Detailed element-by-element comparisons and additional physical-property datasets remain. Selected compounds illustrate the official trend-focused scope; this is not a claim that every older p-block preparation is required.",
     sections: [
       { title: "Valence configurations provide a starting map", paragraphs: ["The p-block spans Groups 13 to 18. Their usual outer configurations run from ns2 np1 to ns2 np6. Helium is an important exception: it belongs with the noble gases because of its filled shell and behaviour, but its configuration is 1s2. Use both electronic structure and group behaviour rather than forcing every element into one formula.", "Across a period, increasing effective nuclear attraction generally reduces size and increases nonmetallic character. Down a group, extra shells generally increase size and metallic character. Melting points and bonding patterns need closer inspection: network solids, molecular substances and metals do not follow one universal smooth melting-point trend."], formula: "Groups 13-18: ns2 np1 through ns2 np6; helium: 1s2" },
       { title: "First members differ for structural reasons", paragraphs: ["Boron, carbon, nitrogen, oxygen and fluorine have small second-period valence shells. Their size, electronegativity and bonding options make them differ from heavier members. Second-period atoms cannot be treated as having arbitrarily expandable octets. Explain an exception by its bonding and electronic environment rather than merely memorizing the word anomalous.", "Down several heavier p-block groups, lower oxidation states become more stable relative to higher ones, often discussed through the inert-pair effect. For example, +1 becomes important for thallium and +2 for lead. This is a relative-stability trend, not a rule that the higher states never occur or that the s electrons are completely unavailable in every compound."], formula: "Compare competing oxidation states in their actual compounds, not only the group maximum" },
@@ -142,3 +143,5 @@ for (const lesson of inorganicPracticalLessons) {
 }
 
 for (const lesson of inorganicPracticalLessons) extendMoleAnalysisDFLesson(lesson);
+
+for (const lesson of inorganicPracticalLessons) extendPBlockThermoSolutionsLesson(lesson);

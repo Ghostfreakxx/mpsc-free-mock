@@ -19,13 +19,13 @@ Questions are original practice, not represented as official PYQs.
 | 1 | [Mole Concept](/jee/classes/mole-concept) | 13 | 10 | 6 | 16 / 16 |
 | 2 | [Atomic Structure](/jee/classes/atomic-structure) | 13 | 10 | 6 | 18 / 18 |
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 13 | 12 | 6 | 18 / 18 |
-| 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 10 | 12 | 6 | 12 / 12 |
-| 5 | [Solutions](/jee/classes/solutions) | 10 | 12 | 6 | 12 / 12 |
+| 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 15 | 17 | 9 | 18 / 18 |
+| 5 | [Solutions](/jee/classes/solutions) | 15 | 17 | 9 | 18 / 18 |
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 13 | 13 | 10 | 18 / 18 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 14 | 15 | 10 | 18 / 18 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 10 | 13 | 10 | 18 / 18 |
 | 9 | [Periodic Trends](/jee/classes/periodic-trends) | 13 | 11 | 6 | 16 / 16 |
-| 10 | [P-Block](/jee/classes/p-block) | 10 | 8 | 3 | 12 / 6 |
+| 10 | [P-Block](/jee/classes/p-block) | 15 | 13 | 6 | 18 / 18 |
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 15 | 13 | 6 | 18 / 18 |
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 10 | 13 | 10 | 18 / 18 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 13 | 13 | 6 | 16 / 16 |
@@ -39,22 +39,11 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Mole Concept adds five chapters on hydration-number data, carbonate mixtures,
-conditional stage yields, hydrocarbon combustion and mass-fraction/density
-conversions. Its worked examples check water and salt amounts, independent mixture
-balances, and the different denominators of molarity and molality.
+P-Block adds molecular white phosphorus, diborane electron accounting, silicon tetrachloride hydrolysis, oxoacid comparisons and interhalogen shapes. Selected compounds illustrate trends rather than asserting every historic preparation is required.
 
-Purification and Analysis adds five chapters on Dumas dry-gas calculations,
-Kjeldahl back titration, silver-halide gravimetry, repeated extraction and
-chromatographic evidence. Calculations explicitly state method applicability,
-quantitative recovery, phase-volume and partition-model assumptions. Laboratory
-methods are interpreted through supplied data rather than presented as home recipes.
+Chemical Thermodynamics adds reversible and irreversible isothermal work, reaction entropy and gas-mole enthalpy corrections. Reversible adiabatic compression and Kirchhoff temperature corrections are labelled supporting applications.
 
-D/F-Block adds five chapters on chromite oxidation, chromate/dichromate equilibrium,
-manganate-to-permanganate relationships, product-dependent electron factors and
-selected lanthanoid f configurations. Seven-orbital diagrams distinguish empty,
-half-filled and filled 4f subshells without treating configuration as the sole
-criterion of redox stability.
+Solutions adds exact ideal vapour-pressure lowering, mixed-solute freezing depression, dimer association, pressure differences across a membrane and limits of one-point deviation data. Calculations state dilute and ideal assumptions.
 
 Together this expansion adds fifteen narrated chapters, eighteen new original MCQs
 and nine worked examples. Additional existing class questions are now also included
