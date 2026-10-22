@@ -24,3 +24,13 @@ CI (`.github/workflows/ci.yml`) runs all of this on every pull request. Do not m
 - Links that open a new tab need `rel="noreferrer"`.
 - Validate anything read back from `localStorage`; it can be corrupt or edited.
 - `npm run audit` must pass: no high or critical advisory anywhere in the tree. The only exception is an entry in `scripts/audit.mjs`'s allowlist, which needs three things: no fixed release exists, the package is dev-only, and the entry has a review date. Never allowlist a production dependency. Review Dependabot PRs promptly.
+
+# Performance rules
+
+Many students use phones on slow mobile data, so keep each page's download small.
+
+- Never import the question bank (`app/data/reviewed-content.ts`, the `*-topics.ts` files) or the Mizo engine (`mizo-translations.ts`, `mizo-concepts.ts`, `mizo-manual.ts`) at runtime in a `"use client"` file. `npm test` enforces this (`scripts/client-bundle.test.mjs`).
+- Practice pages and the simulator load questions from `/question-bank/<stream>` (`app/question-bank/[stream]/route.ts`, built from `app/data/practice-data.ts`). Use `useQuestionBank` or `loadQuestionBank` from `app/lib/use-question-bank.ts`. Small Mizo constants live in `app/data/mizo-meta.ts`.
+- Do not pass large data as props to client components on pages that other pages link to. Next.js prefetches linked pages, including their props.
+- Links to heavy pages such as `/jee/classes` use `prefetch={false}`.
+- Keep saved-progress keys unchanged when you refactor a practice page, so students keep their progress.

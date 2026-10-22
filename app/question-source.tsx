@@ -1,10 +1,9 @@
-import { sources, type ReviewedQuestion } from "./data/reviewed-content";
+import type { PracticeQuestion } from "./data/practice-data";
 
-export default function QuestionSource({ question }: { question: ReviewedQuestion }) {
-  const source = sources[question.sourceId];
+export default function QuestionSource({ question }: { question: PracticeQuestion }) {
   return <div className="question-source">
     <strong>Source-checked original practice</strong>
-    <a href={source.url} target="_blank" rel="noreferrer">{source.title}</a>
+    <a href={question.source.url} target="_blank" rel="noreferrer">{question.source.title}</a>
     <span>{question.sourceLocation}</span>
     <small>Checked {question.reviewedOn}. Not an official previous-year question.</small>
   </div>;

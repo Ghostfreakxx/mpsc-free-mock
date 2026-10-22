@@ -37,8 +37,9 @@ const openingMessage: ChatMessage = {
 
 class AssistantError extends Error {}
 
-export default function ChatAssistant() {
-  const [isOpen, setIsOpen] = useState(false);
+// Loaded on demand by ChatLauncher; opens straight away when the student asked for it.
+export default function ChatAssistant({ initialOpen = false }: { initialOpen?: boolean }) {
+  const [isOpen, setIsOpen] = useState(initialOpen);
   const [draft, setDraft] = useState("");
   const [isSending, setIsSending] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([openingMessage]);

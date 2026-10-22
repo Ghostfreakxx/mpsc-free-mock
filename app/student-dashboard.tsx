@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import InstallAppButton from "./install-app-button";
-import { getReviewedQuestions } from "./data/reviewed-content";
+import { practiceKeyHash } from "./lib/practice-key";
 import {
   Activity,
   Atom,
@@ -42,7 +42,6 @@ type PlannerHistory = Record<string, string[]>;
 
 const PLANNER_KEY = "mpsc.academy.planner.v1";
 const PRACTICE_KEY = "mpsc.practice.responses.v1";
-const reviewedKeys = new Set(getReviewedQuestions("mpsc").map(question => `${question.category}::${question.question}`));
 
 const tasks = [
   { id: "practice", title: "Answer a set of MPSC questions", detail: "Build recall with focused practice", href: "/mock-test", icon: ClipboardCheck },
@@ -158,7 +157,10 @@ function getGreeting(date: Date | null) {
   return "Good evening";
 }
 
-export default function StudentDashboard() {
+// reviewedKeyHashes: hashes of the published MPSC questions' response keys (see practiceKeyHash),
+// so saved answers to archived questions are not counted.
+export default function StudentDashboard({ reviewedKeyHashes }: { reviewedKeyHashes: number[] }) {
+  const reviewedKeys = useMemo(() => new Set(reviewedKeyHashes), [reviewedKeyHashes]);
   const [view, setView] = useState<View>("overview");
   const [search, setSearch] = useState("");
   const [plannerHistory, setPlannerHistory] = useState<PlannerHistory>({});
@@ -197,7 +199,7 @@ export default function StudentDashboard() {
         if (savedAnswers) {
           const parsed: unknown = JSON.parse(savedAnswers);
           if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
-            const answers = Object.entries(parsed as Record<string, unknown>).filter(([key]) => reviewedKeys.has(key)).map(([, answer]) => answer).filter(
+            const answers = Object.entries(parsed as Record<string, unknown>).filter(([key]) => reviewedKeys.has(practiceKeyHash(key))).map(([, answer]) => answer).filter(
               (answer): answer is PracticeAnswer =>
                 Boolean(answer) &&
                 typeof answer === "object" &&
@@ -214,7 +216,7 @@ export default function StudentDashboard() {
     };
     const timer = window.setTimeout(restore, 0);
     return () => window.clearTimeout(timer);
-  }, []);
+  }, [reviewedKeys]);
 
   useEffect(() => {
     if (!ready) return;
@@ -346,7 +348,7 @@ export default function StudentDashboard() {
           {courses.slice(1).map((course) => {
             const Icon = course.icon;
             return (
-              <Link href={course.href} key={course.href} className="sidebar-link">
+              <Link href={course.href} key={course.href} prefetch={course.href === "/jee/classes" ? false : undefined} className="sidebar-link">
                 <Icon size={18} strokeWidth={1.9} /><span>{course.title}</span>
               </Link>
             );
@@ -556,7 +558,7 @@ function CourseCard({ course, compact = false }: { course: (typeof courses)[numb
   return (
     <article className={`course-card ${compact ? "course-card-compact" : ""}`}>
       <div className={`course-card-top course-${course.theme}`}><span className="course-mark"><Icon size={20} strokeWidth={1.8} /></span><span className="course-format">{course.format}</span><span className="course-corner"><ArrowUpRight size={17} /></span></div>
-      <div className="course-card-body"><span className="course-subject">{course.subject}</span><h3>{course.title}</h3><p>{course.description}</p><Link href={course.href} className="course-open">Open learning <ArrowRight size={15} /></Link></div>
+      <div className="course-card-body"><span className="course-subject">{course.subject}</span><h3>{course.title}</h3><p>{course.description}</p><Link href={course.href} prefetch={course.href === "/jee/classes" ? false : undefined} className="course-open">Open learning <ArrowRight size={15} /></Link></div>
     </article>
   );
 }
