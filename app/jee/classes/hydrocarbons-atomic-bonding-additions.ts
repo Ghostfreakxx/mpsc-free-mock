@@ -1,0 +1,761 @@
+// Authored by scripts/expand-hydrocarbons-atomic-bonding.mjs.
+export const hydrocarbonsAtomicBondingAdditions = {
+  "chemical-bonding": {
+    "base": 13,
+    "quizBase": 18,
+    "chapters": [
+      {
+        "title": "A divalent lattice cycle needs both ionization steps",
+        "formula": "MgCl₂ cycle: two chloride electron gains, one first and one second metal ionization",
+        "script": "A Born Haber cycle for a divalent metal chloride must account for the full ionic formula. Use supplied illustrative energy terms for forming one mole of magnesium chloride solid from magnesium solid and chlorine gas. Magnesium atomization is plus one hundred forty eight kilojoules per mole, the first and second magnesium ionizations are plus seven hundred thirty eight and plus fourteen hundred fifty one, and converting one chlorine molecule into two gas atoms costs plus two hundred forty three. Each chlorine atom gains one electron with energy change minus three hundred forty nine, so that term occurs twice. These steps before lattice formation sum to plus eighteen hundred eighty two kilojoules per mole. If the supplied overall formation enthalpy is minus six hundred forty two, the lattice formation enthalpy is minus twenty five hundred twenty four kilojoules per mole. The corresponding lattice dissociation value has the opposite sign for the same states. Using only the first magnesium ionization would leave the metal charge wrong. Using only one chlorine electron gain would fail the formula count. Label initial and final states and write the energy equation before solving for the missing term.",
+        "points": [
+          "Metal steps · 148 + 738 + 1451 · Mg²⁺(g) requires both ionizations",
+          "Chlorine steps · 243 + 2(−349) · Two Cl⁻(g) formed",
+          "Cycle: −642 = 1882 + L · L = −2524 kJ/mol · Formation negative; dissociation positive"
+        ],
+        "board": {
+          "heading": "A divalent lattice cycle needs both ionization steps",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "Metal steps",
+              "148 + 738 + 1451",
+              "Mg²⁺(g) requires both ionizations"
+            ],
+            [
+              "Chlorine steps",
+              "243 + 2(−349)",
+              "Two Cl⁻(g) formed"
+            ],
+            [
+              "Cycle: −642 = 1882 + L",
+              "L = −2524 kJ/mol",
+              "Formation negative; dissociation positive"
+            ]
+          ]
+        },
+        "speechInput": "A Born Haber cycle for a divalent metal chloride must account for the full ionic formula. Use supplied illustrative energy terms for forming one mole of magnesium chloride solid from magnesium solid and chlorine gas. Magnesium atomization is plus one hundred forty eight kilojoules per mole, the first and second magnesium ionizations are plus seven hundred thirty eight and plus fourteen hundred fifty one, and converting one chlorine molecule into two gas atoms costs plus two hundred forty three. Each chlorine atom gains one electron with energy change minus three hundred forty nine, so that term occurs twice. These steps before lattice formation sum to plus eighteen hundred eighty two kilojoules per mole. If the supplied overall formation enthalpy is minus six hundred forty two, the lattice formation enthalpy is minus twenty five hundred twenty four kilojoules per mole. The corresponding lattice dissociation value has the opposite sign for the same states. Using only the first magnesium ionization would leave the metal charge wrong. Using only one chlorine electron gain would fail the formula count. Label initial and final states and write the energy equation before solving for the missing term. These supplied rounded data illustrate the cycle rather than asserting a universal lattice constant.",
+        "recordingNote": "Closing reminder omitted by the generated recording; transcript follows independently reviewed speech. Original requested input retained for audio cache provenance."
+      },
+      {
+        "title": "Nitrite and nitronium differ by two electrons",
+        "formula": "NO₂⁻: 18 valence electrons, bent; NO₂⁺: 16, linear",
+        "script": "A small change in ionic charge can change both electron count and molecular shape. For the nitrite ion, nitrogen contributes five valence electrons, two oxygens contribute twelve, and the negative charge adds one, giving eighteen. In the ordinary octet Lewis description, nitrogen has two oxygen neighbours and one lone pair. One double and one single bond can be drawn in either of two equivalent resonance contributors. Three electron domains around nitrogen give a bent molecular shape, while resonance makes the equivalent oxygen positions share the bonding description. The nitronium ion has the same atom count but two fewer electrons because its charge is positive rather than negative. Sixteen valence electrons support the familiar two double bond Lewis arrangement with no central nitrogen lone pair. Two electron domains give a linear molecular shape. A double bond counts as one domain for this purpose. Do not confuse either closed shell ion with neutral nitrogen dioxide, which has seventeen valence electrons and an odd electron. Count charge before applying a memorized shape or copying a Lewis diagram. Geometry follows the relevant electronic description, not the atom formula with the charge silently omitted.",
+        "points": [
+          "NO₂⁻ · 5 + 12 + 1 = 18 electrons · AX₂E; bent",
+          "NO₂⁺ · 5 + 12 − 1 = 16 electrons · AX₂; linear",
+          "Neutral NO₂ · 5 + 12 = 17 electrons · Odd-electron species; separate case"
+        ],
+        "board": {
+          "heading": "Nitrite and nitronium differ by two electrons",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "NO₂⁻",
+              "5 + 12 + 1 = 18 electrons",
+              "AX₂E; bent"
+            ],
+            [
+              "NO₂⁺",
+              "5 + 12 − 1 = 16 electrons",
+              "AX₂; linear"
+            ],
+            [
+              "Neutral NO₂",
+              "5 + 12 = 17 electrons",
+              "Odd-electron species; separate case"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Use average bond energies as an approximate gas-phase ledger",
+        "formula": "ΔH ≈ sum E(bonds broken) − sum E(bonds formed)",
+        "script": "Average bond enthalpies estimate reaction energy by breaking gas phase reactant bonds and forming gas phase product bonds. Consider ethene plus hydrogen giving ethane. Use supplied average values in kilojoules per mole: carbon carbon double bond six hundred fourteen, hydrogen hydrogen four hundred thirty six, carbon carbon single bond three hundred forty seven, and carbon hydrogen four hundred thirteen. Four carbon hydrogen bonds occur on each side and cancel from a net bookkeeping list. The changed bond set breaks one carbon carbon double bond and one hydrogen hydrogen bond, costing ten hundred fifty kilojoules per mole. It forms one carbon carbon single bond and two additional carbon hydrogen bonds, releasing eleven hundred seventy three. The estimated net is minus one hundred twenty three kilojoules per mole. Forgetting the retained sigma bond in the product or subtracting all product energy with the wrong sign changes the result. Average bond values depend on molecular environment and do not make this an exact enthalpy of hydrogenation. Liquid and solid phase changes need separate terms if the reaction states differ from the gas phase model. State the bond inventory and the approximation before interpreting the sign.",
+        "points": [
+          "Changed bonds broken · 614 + 436 · 1050 kJ/mol absorbed",
+          "Changed bonds formed · 347 + 2×413 · 1173 kJ/mol released",
+          "Approximate gas-phase net · 1050 − 1173 · −123 kJ/mol"
+        ],
+        "board": {
+          "heading": "Use average bond energies as an approximate gas-phase ledger",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "Changed bonds broken",
+              "614 + 436",
+              "1050 kJ/mol absorbed"
+            ],
+            [
+              "Changed bonds formed",
+              "347 + 2×413",
+              "1173 kJ/mol released"
+            ],
+            [
+              "Approximate gas-phase net",
+              "1050 − 1173",
+              "−123 kJ/mol"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Introductory heteronuclear counts: CO and NO",
+        "formula": "CO: 10 valence electrons, bond order 3; NO: 11, bond order 2.5 in the model",
+        "script": "Different atoms in a diatomic molecule require more care than copying every feature of a homonuclear orbital diagram. Carbon monoxide has ten valence electrons, while nitric oxide has eleven. In the introductory molecular orbital counting model, carbon monoxide has bond order three and all electrons paired. Nitric oxide has one electron in an antibonding pi orbital, giving bond order two point five and one unpaired electron. It is therefore paramagnetic in this elementary comparison. Removing that antibonding electron from nitric oxide gives the nitrosonium ion, with ten valence electrons, bond order three and a paired configuration in the same model. The general counting expression is one half the bonding minus antibonding electron populations. However, heteronuclear atomic orbitals begin at unequal energies, and the resulting molecular orbitals need not have equal contributions on both atoms. Electron count alone therefore does not prove equal dipole moments, identical orbital energies or identical bond lengths for different molecules. This chapter supplies an introductory population comparison, not a complete heteronuclear orbital derivation. Use the stated filling model and identify the orbital from which an electron is removed rather than assuming every ionization weakens every bond.",
+        "points": [
+          "CO · 10 valence electrons · Bond order 3; paired",
+          "NO · 11; one π* electron · Bond order 2.5; 1 unpaired",
+          "NO⁺ · Remove the π* electron · Bond order 3; paired in model"
+        ],
+        "board": {
+          "heading": "Introductory heteronuclear counts: CO and NO",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "CO",
+              "10 valence electrons",
+              "Bond order 3; paired"
+            ],
+            [
+              "NO",
+              "11; one π* electron",
+              "Bond order 2.5; 1 unpaired"
+            ],
+            [
+              "NO⁺",
+              "Remove the π* electron",
+              "Bond order 3; paired in model"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "For the supplied MgCl2 cycle, metal terms are 148+738+1451 and chlorine terms 243+2(−349), all kJ/mol. Their sum before lattice formation is:",
+        "options": [
+          "1882 kJ/mol",
+          "2524 kJ/mol",
+          "−1882 kJ/mol",
+          "642 kJ/mol"
+        ],
+        "answer": 0,
+        "explanation": "Both Mg ionizations and both Cl electron gains are required; the specified subtotal is 1882 kJ/mol."
+      },
+      {
+        "question": "If overall formation enthalpy is −642 kJ/mol and subtotal is +1882, lattice formation enthalpy is:",
+        "options": [
+          "+2524 kJ/mol",
+          "−2524 kJ/mol",
+          "−1240 kJ/mol",
+          "+1240 kJ/mol"
+        ],
+        "answer": 1,
+        "explanation": "Solve −642=1882+L, so L=−2524 kJ/mol. Dissociation between the reversed states has the opposite sign."
+      },
+      {
+        "question": "Nitrite NO2− has valence-electron count and molecular shape:",
+        "options": [
+          "16, linear",
+          "17, linear",
+          "18, bent",
+          "18, tetrahedral"
+        ],
+        "answer": 2,
+        "explanation": "5+2×6+1=18; two bonded domains and one central lone pair give a bent AX2E description."
+      },
+      {
+        "question": "Nitronium NO2+ in the ordinary Lewis/domain model is:",
+        "options": [
+          "Bent with two central lone pairs",
+          "An 18-electron ion",
+          "An odd-electron neutral molecule",
+          "Linear with no central lone pair"
+        ],
+        "answer": 3,
+        "explanation": "There are sixteen valence electrons and two central bonded domains; a double bond counts as one domain."
+      },
+      {
+        "question": "For the supplied ethene hydrogenation model, broken changed bonds cost 614+436 and formed changed bonds release 347+2×413. Estimated ΔH is:",
+        "options": [
+          "−123 kJ/mol",
+          "+123 kJ/mol",
+          "−2100 kJ/mol",
+          "+1173 kJ/mol"
+        ],
+        "answer": 0,
+        "explanation": "Use bonds broken minus bonds formed: 1050−1173=−123 kJ/mol."
+      },
+      {
+        "question": "That average-bond-energy result is:",
+        "options": [
+          "Exact for every liquid and solid reaction",
+          "An approximate gas-phase estimate requiring separate phase terms when relevant",
+          "Independent of bond inventory",
+          "Proof that every C–H bond has one universal exact energy"
+        ],
+        "answer": 1,
+        "explanation": "Average bond enthalpies depend on molecular environment and refer to the gas-phase bookkeeping model."
+      },
+      {
+        "question": "In the stated introductory MO model, NO has bond order and unpaired count:",
+        "options": [
+          "3, zero",
+          "2, two",
+          "2.5, one",
+          "1, zero"
+        ],
+        "answer": 2,
+        "explanation": "Its eleven valence electrons include one electron in a pi antibonding orbital, giving one unpaired electron and bond order 2.5."
+      },
+      {
+        "question": "Removing that antibonding electron from NO gives NO+ with model bond order:",
+        "options": [
+          "2",
+          "2.5",
+          "1",
+          "3"
+        ],
+        "answer": 3,
+        "explanation": "Removing one antibonding electron increases the bond order by one half, from 2.5 to 3 in the stated model."
+      }
+    ],
+    "sources": [
+      {
+        "title": "OpenStax: ionic and covalent bond strengths",
+        "url": "https://openstax.org/books/chemistry-2e/pages/7-5-strengths-of-ionic-and-covalent-bonds"
+      },
+      {
+        "title": "OpenStax: molecular structure and polarity",
+        "url": "https://openstax.org/books/chemistry-2e/pages/7-6-molecular-structure-and-polarity"
+      },
+      {
+        "title": "OpenStax: molecular orbital theory",
+        "url": "https://openstax.org/books/chemistry-2e/pages/8-4-molecular-orbital-theory"
+      },
+      {
+        "title": "IIT Kanpur SATHEE: chemical bonding",
+        "url": "https://sathee.iitk.ac.in/sathee-icar/student-corner/ncert-books/class-11/nb-che-11/chemistry-11-chapter-4-chemical-bonding-and-moleuclar-structure/"
+      }
+    ]
+  },
+  "atomic-structure": {
+    "base": 13,
+    "quizBase": 18,
+    "chapters": [
+      {
+        "title": "Hydrogen-like shell degeneracy needs its model",
+        "formula": "Nonrelativistic one-electron Coulomb model: energy depends on n, not l or ml",
+        "script": "In the elementary nonrelativistic one electron Coulomb model, all orbitals with the same principal quantum number have the same energy. For the shell with n equal to three, the allowed subshells are three s, three p and three d. They contain one, three and five spatial orbitals respectively, giving nine orbitals in total. Including the two possible spin states per orbital gives eighteen one electron spin states for that shell. This state count is not eighteen electrons actually present in a hydrogen atom; hydrogen has one electron whose state can be selected from the allowed possibilities. The same simple degeneracy applies to a hydrogen like one electron ion when the nuclear charge changes the energy scale. It does not transfer unchanged to a general many electron atom, where electron repulsion, shielding and penetration separate subshell energies. External fields and finer relativistic or spin dependent corrections can also split levels that the elementary model treats as equal. State whether the question asks for orbitals, spin states or actual occupied electrons before multiplying by two. The n squared spatial orbital count and twice n squared shell capacity are related statements, not interchangeable answers to every counting question.",
+        "points": [
+          "n=3 subshells · 3s, 3p, 3d · 1 + 3 + 5 = 9 orbitals",
+          "Include spin choices · 2 states per orbital · 18 possible spin states",
+          "Hydrogen atom occupancy · Only one electron present · State count ≠ electron count"
+        ],
+        "board": {
+          "heading": "Hydrogen-like shell degeneracy needs its model",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "n=3 subshells",
+              "3s, 3p, 3d",
+              "1 + 3 + 5 = 9 orbitals"
+            ],
+            [
+              "Include spin choices",
+              "2 states per orbital",
+              "18 possible spin states"
+            ],
+            [
+              "Hydrogen atom occupancy",
+              "Only one electron present",
+              "State count ≠ electron count"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Radial probability is not probability density per volume",
+        "formula": "Hydrogen-like 1s: x=Zr/a₀; radial distribution in x is 4x²e^(−2x)",
+        "script": "For a hydrogen like one s state, probability density per unit volume is largest at the nucleus and decreases exponentially with distance. A radial distribution asks a different question: how much probability lies in a thin spherical shell at a given radius. The shell volume includes a factor proportional to radius squared. Consequently the radial distribution is zero at zero radius, rises to a maximum, and then falls, even though the density per unit volume is largest at the origin. Define the dimensionless radius x as nuclear charge times radius divided by the Bohr radius. The normalized radial distribution with respect to x is four x squared times the exponential of minus two x. Its maximum occurs at x equal to one, so the most probable radius in this one s model is the Bohr radius divided by nuclear charge. For hydrogen this is about zero point five two nine angstrom, while a one electron helium ion gives half that radius. This maximum is neither a fixed classical orbit nor the radius containing all probability. Probability over an interval requires integrating the distribution, and the mean radius is a different statistical quantity.",
+        "points": [
+          "Density per unit volume · Largest at r=0 · Exponential decrease",
+          "Radial shell distribution · 4x² exp(−2x) · Zero at x=0; maximum at x=1",
+          "Most probable 1s radius · r=a₀/Z · H: 0.529 Å; He⁺: 0.2645 Å"
+        ],
+        "board": {
+          "heading": "Radial probability is not probability density per volume",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "Density per unit volume",
+              "Largest at r=0",
+              "Exponential decrease"
+            ],
+            [
+              "Radial shell distribution",
+              "4x² exp(−2x)",
+              "Zero at x=0; maximum at x=1"
+            ],
+            [
+              "Most probable 1s radius",
+              "r=a₀/Z",
+              "H: 0.529 Å; He⁺: 0.2645 Å"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "An excited configuration is not a forbidden configuration",
+        "formula": "Check electron count and Pauli capacity before ground-state ordering",
+        "script": "Electron configuration questions should distinguish an allowed excited state from a violation of orbital capacity. A neutral neon atom has ten electrons. Its familiar ground configuration fills one s, two s and two p as two, two and six electrons. A configuration with two electrons in one s, two in two s, five in two p and one in three s still totals ten. It respects the maximum of two electrons in an individual spatial orbital and can represent an excited configuration, although it is not the ground state. By contrast, writing three electrons in one s violates the Pauli capacity of that single spatial orbital even if another occupancy is adjusted to preserve the total electron count. The Aufbau filling order is a ground state organizing principle, so a promoted electron is not automatically evidence of a physically impossible state. A subshell occupancy alone may not specify one unique spin state or all details of the actual energy eigenstate. Check the task's level of description: count electrons, check available orbitals and spin restrictions, then decide whether ground state ordering is required. An invalid quantum number set cannot be repaired simply by calling it excited.",
+        "points": [
+          "Ne ground configuration · 1s²2s²2p⁶ · 10 electrons; ground pattern",
+          "Promoted configuration · 1s²2s²2p⁵3s¹ · 10 electrons; allowed excited pattern",
+          "Three electrons in 1s · One orbital holds at most 2 · Forbidden by Pauli capacity"
+        ],
+        "board": {
+          "heading": "An excited configuration is not a forbidden configuration",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "Ne ground configuration",
+              "1s²2s²2p⁶",
+              "10 electrons; ground pattern"
+            ],
+            [
+              "Promoted configuration",
+              "1s²2s²2p⁵3s¹",
+              "10 electrons; allowed excited pattern"
+            ],
+            [
+              "Three electrons in 1s",
+              "One orbital holds at most 2",
+              "Forbidden by Pauli capacity"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Identify a one-electron ion from a spectral energy",
+        "formula": "ΔE=13.6 Z²(1/nlower²−1/nupper²) eV",
+        "script": "Hydrogen like spectra can identify a nuclear charge only after the one electron model and transition are supplied. Suppose a photon of seventeen point zero electron volts is emitted by a one electron ion falling from principal level three to level two. In the elementary model, the energy difference is thirteen point six times nuclear charge squared times one quarter minus one ninth, in electron volts. The bracket is five thirty sixths. Dividing seventeen by thirteen point six times that bracket gives nuclear charge squared equal to nine, so the positive nuclear charge number is three. The species is therefore lithium with two electrons removed, leaving one electron. It is not neutral lithium, which has three electrons and does not obey this simple one electron energy formula. Using the supplied photon relation twelve hundred forty electron volt nanometres gives wavelength about seventy two point nine four nanometres. The photon energy is positive while the atom's energy change during emission is negative by the same magnitude. Finite nuclear mass and finer corrections are neglected here. The calculation identifies a model consistent ion from the specified line; it does not infer a complete spectrum from one unlabelled measured wavelength.",
+        "points": [
+          "nupper=3; nlower=2 · 1/4 − 1/9 = 5/36 · Photon ΔE = 17.0 eV",
+          "Solve 13.6Z²×5/36=17 · Z²=9; Z=3 · One-electron Li²⁺",
+          "Wavelength from supplied hc · 1240/17.0 · About 72.94 nm"
+        ],
+        "board": {
+          "heading": "Identify a one-electron ion from a spectral energy",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "nupper=3; nlower=2",
+              "1/4 − 1/9 = 5/36",
+              "Photon ΔE = 17.0 eV"
+            ],
+            [
+              "Solve 13.6Z²×5/36=17",
+              "Z²=9; Z=3",
+              "One-electron Li²⁺"
+            ],
+            [
+              "Wavelength from supplied hc",
+              "1240/17.0",
+              "About 72.94 nm"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "In the elementary one-electron model, n=3 contains how many spatial orbitals?",
+        "options": [
+          "3",
+          "9",
+          "18",
+          "6"
+        ],
+        "answer": 1,
+        "explanation": "For n=3 the allowed subshells are 3s, 3p and 3d. Their spatial-orbital counts sum to 1+3+5=9, before counting spin."
+      },
+      {
+        "question": "Including spin, the number of possible one-electron states in that n=3 shell is:",
+        "options": [
+          "9",
+          "3",
+          "18",
+          "36"
+        ],
+        "answer": 2,
+        "explanation": "Each of nine spatial orbitals permits two spin states, giving eighteen possible states rather than eighteen occupied electrons in H."
+      },
+      {
+        "question": "For a hydrogen-like 1s state, radial probability distribution with respect to radius is zero at r=0 mainly because:",
+        "options": [
+          "The nucleus has no charge",
+          "The wavefunction is identically zero everywhere",
+          "The electron has a fixed orbit at infinity",
+          "The spherical-shell volume factor contains r²"
+        ],
+        "answer": 3,
+        "explanation": "Radial distribution includes shell volume, unlike probability density per unit volume, which is largest at the origin for 1s."
+      },
+      {
+        "question": "With a0=0.529 Å, the most probable 1s radius in the simple He+ model is:",
+        "options": [
+          "0.2645 Å",
+          "1.058 Å",
+          "0.529 Å",
+          "2.116 Å"
+        ],
+        "answer": 0,
+        "explanation": "Use a0/Z with Z=2; this is a radial-distribution maximum, not a fixed electron path."
+      },
+      {
+        "question": "Ne represented by 1s2 2s2 2p5 3s1 is, at this occupancy level:",
+        "options": [
+          "Forbidden because excited states cannot exist",
+          "An allowed excited configuration",
+          "A neutral atom with eleven electrons",
+          "The usual ground configuration"
+        ],
+        "answer": 1,
+        "explanation": "The total is ten and no subshell capacity is exceeded; the promotion makes it an excited configuration."
+      },
+      {
+        "question": "Writing three electrons in one 1s spatial orbital violates:",
+        "options": [
+          "Only a naming convention",
+          "No physical restriction",
+          "The Pauli capacity of an orbital",
+          "Only the mass number"
+        ],
+        "answer": 2,
+        "explanation": "A spatial orbital can hold at most two electrons with opposite spin."
+      },
+      {
+        "question": "A one-electron n=3→2 line has energy 17.0 eV using 13.6Z²(1/4−1/9). Z is:",
+        "options": [
+          "1",
+          "2",
+          "9",
+          "3"
+        ],
+        "answer": 3,
+        "explanation": "The equation gives Z²=9; the positive nuclear charge number is Z=3."
+      },
+      {
+        "question": "The corresponding one-electron ion is:",
+        "options": [
+          "Li2+",
+          "Neutral Li",
+          "He2+",
+          "H−"
+        ],
+        "answer": 0,
+        "explanation": "Lithium has nuclear charge three; removing two electrons leaves the one electron required by the model."
+      }
+    ],
+    "sources": [
+      {
+        "title": "OpenStax: quantum theory and orbitals",
+        "url": "https://openstax.org/books/chemistry-2e/pages/6-3-development-of-quantum-theory"
+      },
+      {
+        "title": "OpenStax: electron configurations",
+        "url": "https://openstax.org/books/chemistry-2e/pages/6-4-electronic-structure-of-atoms-electron-configurations"
+      },
+      {
+        "title": "OpenStax: Bohr model",
+        "url": "https://openstax.org/books/chemistry-2e/pages/6-2-the-bohr-model"
+      }
+    ]
+  },
+  "hydrocarbons": {
+    "base": 13,
+    "quizBase": 16,
+    "chapters": [
+      {
+        "title": "Hydrogen uptake does not count every ring",
+        "formula": "A simple C₆H₁₀ skeleton has DBE 2; hydrogenation evidence needs a reaction model",
+        "script": "Molecular formula and hydrogen uptake provide complementary evidence, rather than a unique structure by themselves. For an ordinary neutral hydrocarbon with six carbons and ten hydrogens, the degree of unsaturation is two. One ring and one double bond, two double bonds, or one triple bond can each account for that value. Now suppose a supplied hydrogenation model saturates ordinary carbon carbon multiple bonds while retaining the carbon skeleton and not opening rings. A cycloalkene with one ring and one double bond consumes one mole hydrogen per mole molecule, giving a saturated monocyclic hydrocarbon. An acyclic diene consumes two, while an acyclic alkyne also consumes two on complete reduction to the alkane. Thus two moles hydrogen uptake cannot distinguish a diene from an alkyne without additional evidence. A ring contributes to the formula based unsaturation count even when it does not consume hydrogen in the stated reaction model. Real catalyst and substrate chemistry can be more complicated, especially for strained rings or aromatic systems, so the restriction is essential. Count formula units, reactive multiple bonds and structural possibilities separately before claiming that one measurement identifies a unique hydrocarbon.",
+        "points": [
+          "C₆H₁₀ · DBE = (2×6+2−10)/2 · 2 unsaturation units",
+          "One ring + one C=C · Saturate C=C; ring retained · 1 mol H₂ per mol molecule",
+          "Acyclic diene or alkyne · Complete multiple-bond saturation · 2 mol H₂; not unique identity"
+        ],
+        "board": {
+          "heading": "Hydrogen uptake does not count every ring",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "C₆H₁₀",
+              "DBE = (2×6+2−10)/2",
+              "2 unsaturation units"
+            ],
+            [
+              "One ring + one C=C",
+              "Saturate C=C; ring retained",
+              "1 mol H₂ per mol molecule"
+            ],
+            [
+              "Acyclic diene or alkyne",
+              "Complete multiple-bond saturation",
+              "2 mol H₂; not unique identity"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Terminal alkyne alkylation joins carbon fragments",
+        "formula": "Acetylide + suitable primary alkyl halide → a new C–C bond",
+        "script": "A terminal alkyne can form a carbon nucleophile after its terminal proton is removed in a suitable acid base step. In the elementary acetylide alkylation model, that carbon nucleophile attacks a suitable primary alkyl halide through substitution and makes a new carbon carbon bond. Consider the anion derived from ethyne and an ethyl halide. The two carbon acetylide fragment joins the two carbon ethyl fragment, giving a four carbon alkyne, but one yne. The triple bond remains; substitution replaces the halide on the alkyl partner rather than hydrogenating the alkyne. Starting instead with the three carbon terminal alkyne propyne and a methyl halide gives the four carbon internal alkyne but two yne. The location of the triple bond follows the connectivity of the joined fragments, not just their total carbon count. Secondary and tertiary alkyl halides can favour elimination with a strongly basic acetylide, so they are not interchangeable with a suitable primary substrate in a simple selective route. Proton donors can also consume the acetylide. Treat these examples as reaction planning and carbon ledgers under the stated model, not as instructions for preparing or handling the reagent.",
+        "points": [
+          "Ethyne-derived C₂ fragment · Join an ethyl C₂ fragment · But-1-yne: 4 carbons",
+          "Propyne-derived C₃ fragment · Join a methyl C₁ fragment · But-2-yne: 4 carbons",
+          "Substrate boundary · Suitable primary halide · Hindered partners may eliminate"
+        ],
+        "board": {
+          "heading": "Terminal alkyne alkylation joins carbon fragments",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "Ethyne-derived C₂ fragment",
+              "Join an ethyl C₂ fragment",
+              "But-1-yne: 4 carbons"
+            ],
+            [
+              "Propyne-derived C₃ fragment",
+              "Join a methyl C₁ fragment",
+              "But-2-yne: 4 carbons"
+            ],
+            [
+              "Substrate boundary",
+              "Suitable primary halide",
+              "Hindered partners may eliminate"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Addition polymers preserve the monomer atom inventory",
+        "formula": "n CH₂=CH₂ → [–CH₂–CH₂–]n: no small-molecule loss in the ideal addition step",
+        "script": "Addition polymerization changes how monomer units are connected without requiring a water molecule to be removed from every link. In the ideal ethene example, the carbon carbon double bond opens into chain connectivity and each repeat unit retains the monomer's two carbons and four hydrogens. The repeat unit mass is approximately twenty eight grams per mole using the supplied integer atomic masses. If a hypothetical chain has molar mass twenty eight thousand grams per mole and end group masses are neglected, its degree of polymerization is about one thousand repeat units. That is not one thousand carbon atoms: the repeat units together contain about two thousand carbons. One mole of such ideal chains represents about one thousand moles of incorporated monomer units. Real polymer samples contain a distribution of chain lengths, and a reported average molar mass must be interpreted with its averaging convention. Initiator fragments, end groups, branching and unreacted monomer can affect actual mass accounting. The elementary repeat unit calculation therefore supplies an approximate chain size under stated assumptions, rather than proving that every molecule in a sample has exactly the same length or that a condensation water loss should be subtracted.",
+        "points": [
+          "Ethene repeat unit · C₂H₄; supplied mass 28 g/mol · No link-by-link H₂O loss",
+          "Chain M ≈ 28000 g/mol · 28000/28 · About 1000 repeat units",
+          "Carbon count in ideal chain · 2 × 1000 · About 2000 carbon atoms"
+        ],
+        "board": {
+          "heading": "Addition polymers preserve the monomer atom inventory",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "Ethene repeat unit",
+              "C₂H₄; supplied mass 28 g/mol",
+              "No link-by-link H₂O loss"
+            ],
+            [
+              "Chain M ≈ 28000 g/mol",
+              "28000/28",
+              "About 1000 repeat units"
+            ],
+            [
+              "Carbon count in ideal chain",
+              "2 × 1000",
+              "About 2000 carbon atoms"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Two substituents can reinforce or conflict in direction",
+        "formula": "Number the ring before combining directing preferences",
+        "script": "A disubstituted aromatic ring requires combining the effects of both existing groups. Consider a ring numbered with a methyl group at carbon one and a carboxyl group at carbon four. In the usual introductory electrophilic substitution comparison, methyl favours ortho and para positions relative to itself. Its free ortho positions are two and six, while its para position is already occupied. The carboxyl group is a meta director, and positions two and six are also meta to carbon four. Thus both preferences point toward the same two symmetry related sites in this example. Positions two and six describe the same constitutional monoproduct after the appropriate ring symmetry is considered, rather than two guaranteed different products. This agreement does not mean the ring reacts faster than benzene overall or that all other products are impossible. The electron withdrawing group can reduce reactivity, and the observed selectivity depends on conditions. If two groups favour different sites, their relative influence and steric effects need to be considered instead of applying a mechanical one group rule. State the numbering, occupied positions and symmetry.",
+        "points": [
+          "CH₃ at ring position 1 · Ortho preference; para occupied · Free preferred sites 2 and 6",
+          "COOH at position 4 · Meta preference · Sites 2 and 6 agree",
+          "Symmetry-related sites · 2 and 6 equivalent here · One preferred connectivity"
+        ],
+        "board": {
+          "heading": "Two substituents can reinforce or conflict in direction",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "CH₃ at ring position 1",
+              "Ortho preference; para occupied",
+              "Free preferred sites 2 and 6"
+            ],
+            [
+              "COOH at position 4",
+              "Meta preference",
+              "Sites 2 and 6 agree"
+            ],
+            [
+              "Symmetry-related sites",
+              "2 and 6 equivalent here",
+              "One preferred connectivity"
+            ]
+          ]
+        },
+        "speechInput": "A disubstituted aromatic ring requires combining the effects of both existing groups. Consider a ring numbered with a methyl group at carbon one and a carboxyl group at carbon four. In the usual introductory electrophilic substitution comparison, methyl favours ortho and para positions relative to itself. Its free ortho positions are two and six, while its para position is already occupied. The carboxyl group is a meta director, and positions two and six are also meta to carbon four. Thus both preferences point toward the same two symmetry related sites in this example. Positions two and six describe the same constitutional monoproduct after the appropriate ring symmetry is considered, rather than two guaranteed different products. This agreement does not mean the ring reacts faster than benzene overall or that all other products are impossible. The electron withdrawing group can reduce reactivity, and the observed selectivity depends on conditions. If two groups favour different sites, their relative influence and steric effects need to be considered instead of applying a mechanical one group rule. State the numbering, occupied positions and symmetry before counting positional products.",
+        "recordingNote": "Closing reminder omitted by the generated recording; transcript follows independently reviewed speech. Original requested input retained for audio cache provenance."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "For an ordinary neutral hydrocarbon C6H10, DBE is:",
+        "options": [
+          "2",
+          "1",
+          "3",
+          "6"
+        ],
+        "answer": 0,
+        "explanation": "Use (2C+2−H)/2=(12+2−10)/2=2; rings and multiple bonds can contribute."
+      },
+      {
+        "question": "Under a model that saturates one C=C but retains a cycloalkene ring, H2 uptake per molecule is:",
+        "options": [
+          "Zero necessarily",
+          "One molecule",
+          "Two molecules necessarily",
+          "Six molecules"
+        ],
+        "answer": 1,
+        "explanation": "The stated one double bond consumes one H2; the retained ring contributes DBE without consuming another H2."
+      },
+      {
+        "question": "Ethyne-derived acetylide joins an ethyl fragment by suitable alkyl substitution. The product connectivity is:",
+        "options": [
+          "Ethyne",
+          "Propyne",
+          "But-1-yne",
+          "Butane"
+        ],
+        "answer": 2,
+        "explanation": "Two carbon fragments join to form a four-carbon terminal alkyne while the triple bond is retained."
+      },
+      {
+        "question": "Propyne-derived acetylide joins a methyl fragment in the same model. The product is:",
+        "options": [
+          "But-1-ene",
+          "Pent-1-yne",
+          "Propane",
+          "But-2-yne"
+        ],
+        "answer": 3,
+        "explanation": "CH3–C≡C− joins CH3 to give CH3–C≡C–CH3, an internal four-carbon alkyne."
+      },
+      {
+        "question": "An ideal polyethene chain has M=28000 g/mol and repeat mass 28 g/mol, neglecting ends. Its degree of polymerization is:",
+        "options": [
+          "1000",
+          "2000",
+          "28",
+          "28000"
+        ],
+        "answer": 0,
+        "explanation": "Degree of polymerization counts repeat units: divide chain mass by repeat unit mass."
+      },
+      {
+        "question": "The approximate carbon count in that ideal chain is:",
+        "options": [
+          "1000",
+          "2000",
+          "4000",
+          "28"
+        ],
+        "answer": 1,
+        "explanation": "Each ethene-derived repeat unit contains two carbon atoms, so 1000 repeats contain 2000 carbons."
+      },
+      {
+        "question": "A ring has CH3 at position 1 and COOH at position 4. The usual directing preferences agree at:",
+        "options": [
+          "Only occupied positions 1 and 4",
+          "Positions 3 and 5",
+          "Positions 2 and 6",
+          "Every site equally"
+        ],
+        "answer": 2,
+        "explanation": "Positions 2 and 6 are ortho to methyl and meta to carboxyl in the specified numbering."
+      },
+      {
+        "question": "Those symmetry-related preferred sites in this disubstituted ring give how many distinct preferred monoproduct connectivities?",
+        "options": [
+          "Four",
+          "Three",
+          "Two",
+          "One"
+        ],
+        "answer": 3,
+        "explanation": "Reflection exchanges positions 2 and 6 while preserving both existing substituent positions; they lead to the same connectivity."
+      }
+    ],
+    "sources": [
+      {
+        "title": "OpenStax: alkylation of acetylide anions",
+        "url": "https://openstax.org/books/organic-chemistry/pages/9-8-alkylation-of-acetylide-anions"
+      },
+      {
+        "title": "OpenStax: aromatic substituent effects",
+        "url": "https://openstax.org/books/organic-chemistry/pages/16-4-substituent-effects-in-electrophilic-substitutions"
+      },
+      {
+        "title": "OpenStax: chain-growth polymers",
+        "url": "https://openstax.org/books/organic-chemistry/pages/31-1-chain-growth-polymers"
+      }
+    ]
+  }
+} as const;

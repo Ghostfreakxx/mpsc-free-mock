@@ -29,6 +29,22 @@
     {
       "title": "OpenStax: aromatic ions",
       "url": "https://openstax.org/books/organic-chemistry/pages/15-4-aromatic-ions"
+    },
+    {
+      "title": "OpenStax: alkylation of acetylide anions",
+      "url": "https://openstax.org/books/organic-chemistry/pages/9-7-alkylation-of-acetylide-anions"
+    },
+    {
+      "title": "OpenStax: aromatic substituent effects",
+      "url": "https://openstax.org/books/organic-chemistry/pages/16-4-substituent-effects-in-electrophilic-substitutions"
+    },
+    {
+      "title": "OpenStax: chain-growth polymers",
+      "url": "https://openstax.org/books/organic-chemistry/pages/31-1-chain-growth-polymers"
+    },
+    {
+      "title": "OpenStax: alkylation of acetylide anions",
+      "url": "https://openstax.org/books/organic-chemistry/pages/9-8-alkylation-of-acetylide-anions"
     }
   ],
   "chapters": [
@@ -490,6 +506,148 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Hydrogen uptake does not count every ring",
+      "formula": "A simple C₆H₁₀ skeleton has DBE 2; hydrogenation evidence needs a reaction model",
+      "script": "Molecular formula and hydrogen uptake provide complementary evidence, rather than a unique structure by themselves. For an ordinary neutral hydrocarbon with six carbons and ten hydrogens, the degree of unsaturation is two. One ring and one double bond, two double bonds, or one triple bond can each account for that value. Now suppose a supplied hydrogenation model saturates ordinary carbon carbon multiple bonds while retaining the carbon skeleton and not opening rings. A cycloalkene with one ring and one double bond consumes one mole hydrogen per mole molecule, giving a saturated monocyclic hydrocarbon. An acyclic diene consumes two, while an acyclic alkyne also consumes two on complete reduction to the alkane. Thus two moles hydrogen uptake cannot distinguish a diene from an alkyne without additional evidence. A ring contributes to the formula based unsaturation count even when it does not consume hydrogen in the stated reaction model. Real catalyst and substrate chemistry can be more complicated, especially for strained rings or aromatic systems, so the restriction is essential. Count formula units, reactive multiple bonds and structural possibilities separately before claiming that one measurement identifies a unique hydrocarbon.",
+      "points": [
+        "C₆H₁₀ · DBE = (2×6+2−10)/2 · 2 unsaturation units",
+        "One ring + one C=C · Saturate C=C; ring retained · 1 mol H₂ per mol molecule",
+        "Acyclic diene or alkyne · Complete multiple-bond saturation · 2 mol H₂; not unique identity"
+      ],
+      "board": {
+        "heading": "Hydrogen uptake does not count every ring",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "C₆H₁₀",
+            "DBE = (2×6+2−10)/2",
+            "2 unsaturation units"
+          ],
+          [
+            "One ring + one C=C",
+            "Saturate C=C; ring retained",
+            "1 mol H₂ per mol molecule"
+          ],
+          [
+            "Acyclic diene or alkyne",
+            "Complete multiple-bond saturation",
+            "2 mol H₂; not unique identity"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Terminal alkyne alkylation joins carbon fragments",
+      "formula": "Acetylide + suitable primary alkyl halide → a new C–C bond",
+      "script": "A terminal alkyne can form a carbon nucleophile after its terminal proton is removed in a suitable acid base step. In the elementary acetylide alkylation model, that carbon nucleophile attacks a suitable primary alkyl halide through substitution and makes a new carbon carbon bond. Consider the anion derived from ethyne and an ethyl halide. The two carbon acetylide fragment joins the two carbon ethyl fragment, giving a four carbon alkyne, but one yne. The triple bond remains; substitution replaces the halide on the alkyl partner rather than hydrogenating the alkyne. Starting instead with the three carbon terminal alkyne propyne and a methyl halide gives the four carbon internal alkyne but two yne. The location of the triple bond follows the connectivity of the joined fragments, not just their total carbon count. Secondary and tertiary alkyl halides can favour elimination with a strongly basic acetylide, so they are not interchangeable with a suitable primary substrate in a simple selective route. Proton donors can also consume the acetylide. Treat these examples as reaction planning and carbon ledgers under the stated model, not as instructions for preparing or handling the reagent.",
+      "points": [
+        "Ethyne-derived C₂ fragment · Join an ethyl C₂ fragment · But-1-yne: 4 carbons",
+        "Propyne-derived C₃ fragment · Join a methyl C₁ fragment · But-2-yne: 4 carbons",
+        "Substrate boundary · Suitable primary halide · Hindered partners may eliminate"
+      ],
+      "board": {
+        "heading": "Terminal alkyne alkylation joins carbon fragments",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Ethyne-derived C₂ fragment",
+            "Join an ethyl C₂ fragment",
+            "But-1-yne: 4 carbons"
+          ],
+          [
+            "Propyne-derived C₃ fragment",
+            "Join a methyl C₁ fragment",
+            "But-2-yne: 4 carbons"
+          ],
+          [
+            "Substrate boundary",
+            "Suitable primary halide",
+            "Hindered partners may eliminate"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Addition polymers preserve the monomer atom inventory",
+      "formula": "n CH₂=CH₂ → [–CH₂–CH₂–]n: no small-molecule loss in the ideal addition step",
+      "script": "Addition polymerization changes how monomer units are connected without requiring a water molecule to be removed from every link. In the ideal ethene example, the carbon carbon double bond opens into chain connectivity and each repeat unit retains the monomer's two carbons and four hydrogens. The repeat unit mass is approximately twenty eight grams per mole using the supplied integer atomic masses. If a hypothetical chain has molar mass twenty eight thousand grams per mole and end group masses are neglected, its degree of polymerization is about one thousand repeat units. That is not one thousand carbon atoms: the repeat units together contain about two thousand carbons. One mole of such ideal chains represents about one thousand moles of incorporated monomer units. Real polymer samples contain a distribution of chain lengths, and a reported average molar mass must be interpreted with its averaging convention. Initiator fragments, end groups, branching and unreacted monomer can affect actual mass accounting. The elementary repeat unit calculation therefore supplies an approximate chain size under stated assumptions, rather than proving that every molecule in a sample has exactly the same length or that a condensation water loss should be subtracted.",
+      "points": [
+        "Ethene repeat unit · C₂H₄; supplied mass 28 g/mol · No link-by-link H₂O loss",
+        "Chain M ≈ 28000 g/mol · 28000/28 · About 1000 repeat units",
+        "Carbon count in ideal chain · 2 × 1000 · About 2000 carbon atoms"
+      ],
+      "board": {
+        "heading": "Addition polymers preserve the monomer atom inventory",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Ethene repeat unit",
+            "C₂H₄; supplied mass 28 g/mol",
+            "No link-by-link H₂O loss"
+          ],
+          [
+            "Chain M ≈ 28000 g/mol",
+            "28000/28",
+            "About 1000 repeat units"
+          ],
+          [
+            "Carbon count in ideal chain",
+            "2 × 1000",
+            "About 2000 carbon atoms"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Two substituents can reinforce or conflict in direction",
+      "formula": "Number the ring before combining directing preferences",
+      "script": "A disubstituted aromatic ring requires combining the effects of both existing groups. Consider a ring numbered with a methyl group at carbon one and a carboxyl group at carbon four. In the usual introductory electrophilic substitution comparison, methyl favours ortho and para positions relative to itself. Its free ortho positions are two and six, while its para position is already occupied. The carboxyl group is a meta director, and positions two and six are also meta to carbon four. Thus both preferences point toward the same two symmetry related sites in this example. Positions two and six describe the same constitutional monoproduct after the appropriate ring symmetry is considered, rather than two guaranteed different products. This agreement does not mean the ring reacts faster than benzene overall or that all other products are impossible. The electron withdrawing group can reduce reactivity, and the observed selectivity depends on conditions. If two groups favour different sites, their relative influence and steric effects need to be considered instead of applying a mechanical one group rule. State the numbering, occupied positions and symmetry.",
+      "points": [
+        "CH₃ at ring position 1 · Ortho preference; para occupied · Free preferred sites 2 and 6",
+        "COOH at position 4 · Meta preference · Sites 2 and 6 agree",
+        "Symmetry-related sites · 2 and 6 equivalent here · One preferred connectivity"
+      ],
+      "board": {
+        "heading": "Two substituents can reinforce or conflict in direction",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "CH₃ at ring position 1",
+            "Ortho preference; para occupied",
+            "Free preferred sites 2 and 6"
+          ],
+          [
+            "COOH at position 4",
+            "Meta preference",
+            "Sites 2 and 6 agree"
+          ],
+          [
+            "Symmetry-related sites",
+            "2 and 6 equivalent here",
+            "One preferred connectivity"
+          ]
+        ]
+      },
+      "speechInput": "A disubstituted aromatic ring requires combining the effects of both existing groups. Consider a ring numbered with a methyl group at carbon one and a carboxyl group at carbon four. In the usual introductory electrophilic substitution comparison, methyl favours ortho and para positions relative to itself. Its free ortho positions are two and six, while its para position is already occupied. The carboxyl group is a meta director, and positions two and six are also meta to carbon four. Thus both preferences point toward the same two symmetry related sites in this example. Positions two and six describe the same constitutional monoproduct after the appropriate ring symmetry is considered, rather than two guaranteed different products. This agreement does not mean the ring reacts faster than benzene overall or that all other products are impossible. The electron withdrawing group can reduce reactivity, and the observed selectivity depends on conditions. If two groups favour different sites, their relative influence and steric effects need to be considered instead of applying a mechanical one group rule. State the numbering, occupied positions and symmetry before counting positional products.",
+      "recordingNote": "Closing reminder omitted by the generated recording; transcript follows independently reviewed speech. Original requested input retained for audio cache provenance."
     }
   ],
   "quiz": [
@@ -668,6 +826,94 @@
       ],
       "answer": 2,
       "explanation": "The complementary hydration orientation of this terminal alkyne gives the aldehyde propanal."
+    },
+    {
+      "question": "For an ordinary neutral hydrocarbon C6H10, DBE is:",
+      "options": [
+        "2",
+        "1",
+        "3",
+        "6"
+      ],
+      "answer": 0,
+      "explanation": "Use (2C+2−H)/2=(12+2−10)/2=2; rings and multiple bonds can contribute."
+    },
+    {
+      "question": "Under a model that saturates one C=C but retains a cycloalkene ring, H2 uptake per molecule is:",
+      "options": [
+        "Zero necessarily",
+        "One molecule",
+        "Two molecules necessarily",
+        "Six molecules"
+      ],
+      "answer": 1,
+      "explanation": "The stated one double bond consumes one H2; the retained ring contributes DBE without consuming another H2."
+    },
+    {
+      "question": "Ethyne-derived acetylide joins an ethyl fragment by suitable alkyl substitution. The product connectivity is:",
+      "options": [
+        "Ethyne",
+        "Propyne",
+        "But-1-yne",
+        "Butane"
+      ],
+      "answer": 2,
+      "explanation": "Two carbon fragments join to form a four-carbon terminal alkyne while the triple bond is retained."
+    },
+    {
+      "question": "Propyne-derived acetylide joins a methyl fragment in the same model. The product is:",
+      "options": [
+        "But-1-ene",
+        "Pent-1-yne",
+        "Propane",
+        "But-2-yne"
+      ],
+      "answer": 3,
+      "explanation": "CH3–C≡C− joins CH3 to give CH3–C≡C–CH3, an internal four-carbon alkyne."
+    },
+    {
+      "question": "An ideal polyethene chain has M=28000 g/mol and repeat mass 28 g/mol, neglecting ends. Its degree of polymerization is:",
+      "options": [
+        "1000",
+        "2000",
+        "28",
+        "28000"
+      ],
+      "answer": 0,
+      "explanation": "Degree of polymerization counts repeat units: divide chain mass by repeat unit mass."
+    },
+    {
+      "question": "The approximate carbon count in that ideal chain is:",
+      "options": [
+        "1000",
+        "2000",
+        "4000",
+        "28"
+      ],
+      "answer": 1,
+      "explanation": "Each ethene-derived repeat unit contains two carbon atoms, so 1000 repeats contain 2000 carbons."
+    },
+    {
+      "question": "A ring has CH3 at position 1 and COOH at position 4. The usual directing preferences agree at:",
+      "options": [
+        "Only occupied positions 1 and 4",
+        "Positions 3 and 5",
+        "Positions 2 and 6",
+        "Every site equally"
+      ],
+      "answer": 2,
+      "explanation": "Positions 2 and 6 are ortho to methyl and meta to carboxyl in the specified numbering."
+    },
+    {
+      "question": "Those symmetry-related preferred sites in this disubstituted ring give how many distinct preferred monoproduct connectivities?",
+      "options": [
+        "Four",
+        "Three",
+        "Two",
+        "One"
+      ],
+      "answer": 3,
+      "explanation": "Reflection exchanges positions 2 and 6 while preserving both existing substituent positions; they lead to the same connectivity."
     }
   ]
 }

@@ -2,8 +2,10 @@ import atomicStructure from "../../data/jee-atomic-structure-lecture.json";
 import chemicalBonding from "../../data/jee-chemical-bonding-lecture.json";
 import BondingApplicationsDiagram from "./bonding-applications-diagram";
 import styles from "./lecture.module.css";
+import RadialProbabilityDiagram from "./radial-probability-diagram";
 
 export default function AtomicBondingDiagram({lesson,chapter}:{lesson:"atomic-structure"|"chemical-bonding";chapter:number}) {
+ if(lesson==="atomic-structure"&&chapter===14)return <RadialProbabilityDiagram/>;
  if (lesson==="chemical-bonding" && (chapter===9 || chapter===12)) return <BondingApplicationsDiagram chapter={chapter}/>;
  const board=(lesson==="atomic-structure"?atomicStructure:chemicalBonding).chapters[chapter].board;
  return <svg className={styles.diagram} viewBox="0 0 460 310" role="img" aria-label={board.heading}>

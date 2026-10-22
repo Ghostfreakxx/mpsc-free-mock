@@ -17,8 +17,8 @@ Questions are original practice, not represented as official PYQs.
 | Unit | Recorded class | Chapters | Written sections | Worked examples | Class MCQs / Written MCQs |
 | --- | --- | --- | --- | --- | --- |
 | 1 | [Mole Concept](/jee/classes/mole-concept) | 13 | 10 | 6 | 16 / 16 |
-| 2 | [Atomic Structure](/jee/classes/atomic-structure) | 13 | 10 | 6 | 18 / 18 |
-| 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 13 | 12 | 6 | 18 / 18 |
+| 2 | [Atomic Structure](/jee/classes/atomic-structure) | 17 | 14 | 9 | 26 / 26 |
+| 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 17 | 16 | 9 | 26 / 26 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 15 | 17 | 9 | 18 / 18 |
 | 5 | [Solutions](/jee/classes/solutions) | 15 | 17 | 9 | 18 / 18 |
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 17 | 17 | 13 | 26 / 26 |
@@ -30,7 +30,7 @@ Questions are original practice, not represented as official PYQs.
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 14 | 17 | 13 | 26 / 26 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 13 | 13 | 6 | 16 / 16 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 13 | 16 | 11 | 20 / 20 |
-| 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 13 | 13 | 6 | 16 / 16 |
+| 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 17 | 17 | 9 | 24 / 24 |
 | 16 | [Organic Halogens](/jee/classes/organic-halogens) | 17 | 17 | 9 | 24 / 24 |
 | 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 19 | 17 | 9 | 24 / 24 |
 | 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 17 | 17 | 9 | 24 / 24 |
@@ -39,18 +39,18 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Organic Nitrogen adds Gabriel substrate limits, a quantitative dry-nitrogen gas model for a primary aliphatic amine, amide-versus-amine lone-pair behaviour and diazonium/azo nitrogen ledgers. Gas collection and atom-tracing assumptions are explicit.
+Hydrocarbons adds formula-versus-hydrogen-uptake evidence, acetylide carbon coupling, ideal addition-polymer repeat counts and the combined directing preferences of two substituents. Product counts and ideal chain calculations retain explicit limits.
 
-Practical Chemistry adds equilibrium crystal recovery, a hydrated Mohr's salt assay, melting-range interpretation and supplied colloid coagulation thresholds. Recovery, purity and measurement calibration are separate conclusions. Laboratory material is interpreted through data rather than given as unsupervised procedures.
+Atomic Structure adds one-electron shell degeneracy, density versus the 1s radial probability distribution, excited-versus-forbidden configurations and spectral identification of a one-electron ion. The radial diagram plots its stated analytic functions; it does not depict a fixed electron orbit.
 
-Periodic Trends adds configuration-to-position calculations, isotope/ion identity, sequential electron-gain energies and a labelled supporting conversion between per-atom ionization energy, molar energy and photon wavelength. The new energy diagram preserves both electron-gain signs and distinguishes isolated ions from solid formation.
+Chemical Bonding adds a divalent MgCl2 lattice cycle, nitrite/nitronium electron and domain counts, a supplied average-bond-energy hydrogenation estimate, and introductory CO/NO/NO+ population comparisons. Full heteronuclear orbital derivations remain outside this introductory addition.
 
-Together this batch adds twelve narrated chapters, twenty-four original MCQs and nine worked examples. All three written quizzes match their recorded companions. Further coverage remains; the photon conversion is a supporting application rather than a new syllabus claim.
+Together this batch adds twelve narrated chapters, twenty-four original MCQs and nine worked examples. Each written quiz matches its recorded companion. Independently reviewed caption endings follow the generated speech, with original TTS input retained for cache provenance where a closing reminder was omitted.
 
 ## Remaining scope
 
 The individual companions retain their specific remaining-work statements. Further
-reaction networks, full radial wavefunction plots, heteronuclear MO schemes,
+reaction networks, excited-orbital radial wavefunction plots, heteronuclear MO schemes,
 nonideal equilibrium and solution datasets, detailed group-specific comparisons,
 actinoid configurations, sulfur/phosphorus estimation, nonideal extraction,
 complete systematic ion analysis and broader organic synthesis practice remain.
@@ -59,7 +59,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific primary references, including OpenStax amine and amide chemistry, periodic properties and atomic symbolism, alongside NCERT laboratory resources and IIT Kanpur SATHEE colloid chemistry. Numerical data and MCQs in this batch are original practice.
+The notes contain lesson-specific primary references, including OpenStax acetylide and polymer chemistry, quantum theory, ionic/covalent bond energies and molecular-orbital theory, alongside IIT Kanpur SATHEE bonding material. Numerical data and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

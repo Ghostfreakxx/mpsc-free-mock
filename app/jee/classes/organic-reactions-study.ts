@@ -1,3 +1,4 @@
+import { extendHydrocarbonsAtomicBondingLesson } from "./hydrocarbons-atomic-bonding-study.ts";
 import { extendHalogensOxygenBiomoleculesLesson } from "./halogens-oxygen-biomolecules-study.ts";
 import type { StudyLesson } from "./course";
 import { organicReactionAdditions } from "./organic-reaction-additions.ts";
@@ -10,7 +11,7 @@ export const organicReactionLessons: StudyLesson[] = [
     title: "Hydrocarbons: addition, radical chains and aromatic reactions",
     summary: "Connect hydrocarbon structure with reaction pathways, product orientation and carbon-skeleton checks.",
     prerequisites: "Organic principles, hybridization, intermediate stability and bond counting.",
-    remaining: "Written companion to the thirteen-chapter Marin recording for Unit 15, including alkyne hydration, ozonolysis reconstruction, aromaticity, directing effects and benzylic reactions. Further preparation routes, polymerization mechanisms and longer synthesis problems remain. Original practice, not exhaustive coverage or official PYQs. Organic Principles supplies ethane Newman drawings.",
+    remaining: "Written companion to the seventeen-chapter Marin recording for Unit 15, including alkyne hydration, ozonolysis reconstruction, aromaticity, directing effects and benzylic reactions. Further preparation routes, polymerization mechanisms and longer synthesis problems remain. Original practice, not exhaustive coverage or official PYQs. Organic Principles supplies ethane Newman drawings.",
     sections: [
       { title: "Classify the carbon framework first", paragraphs: ["Hydrocarbons contain only carbon and hydrogen. An acyclic saturated alkane has formula C_nH_(2n+2); an acyclic molecule with one double bond has C_nH_(2n), and one triple bond gives C_nH_(2n-2). A ring also lowers the hydrogen count, so formula alone cannot uniquely identify the structure.", "Number the parent to locate multiple bonds and substituents under the appropriate naming rules. CH3CH=CHCH3 is but-2-ene. Its two double-bonded carbons each carry different substituents, permitting geometrical isomers. Double-bond rotation requires disrupting the pi interaction; rotation around a simple carbon-carbon single bond instead gives conformations."], formula: "Acyclic alkane: C_nH_(2n+2); one double bond or ring removes two H" },
       { title: "Conformations and radical substitution are different changes", paragraphs: ["View ethane along its carbon-carbon bond in a Newman projection. Staggered conformations place front and back bonds between each other; eclipsed conformations align them. Staggered ethane is lower in energy in the elementary model. Interconversion rotates a single bond without breaking connectivity, so these are conformations rather than different constitutional isomers.", "Alkane halogenation under light follows a radical chain. Initiation splits a halogen molecule homolytically. Propagation removes hydrogen with a halogen radical and lets the resulting alkyl radical react with another halogen molecule, regenerating a radical. Termination combines radicals. Further substitution can occur, so a reaction mixture need not contain only a single monohalogenated product."], formula: "Propagation: Cl radical + CH4 -> HCl + CH3 radical; CH3 radical + Cl2 -> CH3Cl + Cl radical" },
@@ -87,3 +88,5 @@ for(const lesson of organicReactionLessons){
 }
 
 for (const lesson of organicReactionLessons) extendHalogensOxygenBiomoleculesLesson(lesson);
+
+for (const lesson of organicReactionLessons) extendHydrocarbonsAtomicBondingLesson(lesson);

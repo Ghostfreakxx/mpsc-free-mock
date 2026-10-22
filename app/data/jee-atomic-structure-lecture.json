@@ -25,6 +25,10 @@
     {
       "title": "OpenStax: Bohr model",
       "url": "https://openstax.org/books/chemistry-2e/pages/6-2-the-bohr-model"
+    },
+    {
+      "title": "OpenStax: electron configurations",
+      "url": "https://openstax.org/books/chemistry-2e/pages/6-4-electronic-structure-of-atoms-electron-configurations"
     }
   ],
   "chapters": [
@@ -486,6 +490,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Hydrogen-like shell degeneracy needs its model",
+      "formula": "Nonrelativistic one-electron Coulomb model: energy depends on n, not l or ml",
+      "script": "In the elementary nonrelativistic one electron Coulomb model, all orbitals with the same principal quantum number have the same energy. For the shell with n equal to three, the allowed subshells are three s, three p and three d. They contain one, three and five spatial orbitals respectively, giving nine orbitals in total. Including the two possible spin states per orbital gives eighteen one electron spin states for that shell. This state count is not eighteen electrons actually present in a hydrogen atom; hydrogen has one electron whose state can be selected from the allowed possibilities. The same simple degeneracy applies to a hydrogen like one electron ion when the nuclear charge changes the energy scale. It does not transfer unchanged to a general many electron atom, where electron repulsion, shielding and penetration separate subshell energies. External fields and finer relativistic or spin dependent corrections can also split levels that the elementary model treats as equal. State whether the question asks for orbitals, spin states or actual occupied electrons before multiplying by two. The n squared spatial orbital count and twice n squared shell capacity are related statements, not interchangeable answers to every counting question.",
+      "points": [
+        "n=3 subshells · 3s, 3p, 3d · 1 + 3 + 5 = 9 orbitals",
+        "Include spin choices · 2 states per orbital · 18 possible spin states",
+        "Hydrogen atom occupancy · Only one electron present · State count ≠ electron count"
+      ],
+      "board": {
+        "heading": "Hydrogen-like shell degeneracy needs its model",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "n=3 subshells",
+            "3s, 3p, 3d",
+            "1 + 3 + 5 = 9 orbitals"
+          ],
+          [
+            "Include spin choices",
+            "2 states per orbital",
+            "18 possible spin states"
+          ],
+          [
+            "Hydrogen atom occupancy",
+            "Only one electron present",
+            "State count ≠ electron count"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Radial probability is not probability density per volume",
+      "formula": "Hydrogen-like 1s: x=Zr/a₀; radial distribution in x is 4x²e^(−2x)",
+      "script": "For a hydrogen like one s state, probability density per unit volume is largest at the nucleus and decreases exponentially with distance. A radial distribution asks a different question: how much probability lies in a thin spherical shell at a given radius. The shell volume includes a factor proportional to radius squared. Consequently the radial distribution is zero at zero radius, rises to a maximum, and then falls, even though the density per unit volume is largest at the origin. Define the dimensionless radius x as nuclear charge times radius divided by the Bohr radius. The normalized radial distribution with respect to x is four x squared times the exponential of minus two x. Its maximum occurs at x equal to one, so the most probable radius in this one s model is the Bohr radius divided by nuclear charge. For hydrogen this is about zero point five two nine angstrom, while a one electron helium ion gives half that radius. This maximum is neither a fixed classical orbit nor the radius containing all probability. Probability over an interval requires integrating the distribution, and the mean radius is a different statistical quantity.",
+      "points": [
+        "Density per unit volume · Largest at r=0 · Exponential decrease",
+        "Radial shell distribution · 4x² exp(−2x) · Zero at x=0; maximum at x=1",
+        "Most probable 1s radius · r=a₀/Z · H: 0.529 Å; He⁺: 0.2645 Å"
+      ],
+      "board": {
+        "heading": "Radial probability is not probability density per volume",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Density per unit volume",
+            "Largest at r=0",
+            "Exponential decrease"
+          ],
+          [
+            "Radial shell distribution",
+            "4x² exp(−2x)",
+            "Zero at x=0; maximum at x=1"
+          ],
+          [
+            "Most probable 1s radius",
+            "r=a₀/Z",
+            "H: 0.529 Å; He⁺: 0.2645 Å"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "An excited configuration is not a forbidden configuration",
+      "formula": "Check electron count and Pauli capacity before ground-state ordering",
+      "script": "Electron configuration questions should distinguish an allowed excited state from a violation of orbital capacity. A neutral neon atom has ten electrons. Its familiar ground configuration fills one s, two s and two p as two, two and six electrons. A configuration with two electrons in one s, two in two s, five in two p and one in three s still totals ten. It respects the maximum of two electrons in an individual spatial orbital and can represent an excited configuration, although it is not the ground state. By contrast, writing three electrons in one s violates the Pauli capacity of that single spatial orbital even if another occupancy is adjusted to preserve the total electron count. The Aufbau filling order is a ground state organizing principle, so a promoted electron is not automatically evidence of a physically impossible state. A subshell occupancy alone may not specify one unique spin state or all details of the actual energy eigenstate. Check the task's level of description: count electrons, check available orbitals and spin restrictions, then decide whether ground state ordering is required. An invalid quantum number set cannot be repaired simply by calling it excited.",
+      "points": [
+        "Ne ground configuration · 1s²2s²2p⁶ · 10 electrons; ground pattern",
+        "Promoted configuration · 1s²2s²2p⁵3s¹ · 10 electrons; allowed excited pattern",
+        "Three electrons in 1s · One orbital holds at most 2 · Forbidden by Pauli capacity"
+      ],
+      "board": {
+        "heading": "An excited configuration is not a forbidden configuration",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Ne ground configuration",
+            "1s²2s²2p⁶",
+            "10 electrons; ground pattern"
+          ],
+          [
+            "Promoted configuration",
+            "1s²2s²2p⁵3s¹",
+            "10 electrons; allowed excited pattern"
+          ],
+          [
+            "Three electrons in 1s",
+            "One orbital holds at most 2",
+            "Forbidden by Pauli capacity"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Identify a one-electron ion from a spectral energy",
+      "formula": "ΔE=13.6 Z²(1/nlower²−1/nupper²) eV",
+      "script": "Hydrogen like spectra can identify a nuclear charge only after the one electron model and transition are supplied. Suppose a photon of seventeen point zero electron volts is emitted by a one electron ion falling from principal level three to level two. In the elementary model, the energy difference is thirteen point six times nuclear charge squared times one quarter minus one ninth, in electron volts. The bracket is five thirty sixths. Dividing seventeen by thirteen point six times that bracket gives nuclear charge squared equal to nine, so the positive nuclear charge number is three. The species is therefore lithium with two electrons removed, leaving one electron. It is not neutral lithium, which has three electrons and does not obey this simple one electron energy formula. Using the supplied photon relation twelve hundred forty electron volt nanometres gives wavelength about seventy two point nine four nanometres. The photon energy is positive while the atom's energy change during emission is negative by the same magnitude. Finite nuclear mass and finer corrections are neglected here. The calculation identifies a model consistent ion from the specified line; it does not infer a complete spectrum from one unlabelled measured wavelength.",
+      "points": [
+        "nupper=3; nlower=2 · 1/4 − 1/9 = 5/36 · Photon ΔE = 17.0 eV",
+        "Solve 13.6Z²×5/36=17 · Z²=9; Z=3 · One-electron Li²⁺",
+        "Wavelength from supplied hc · 1240/17.0 · About 72.94 nm"
+      ],
+      "board": {
+        "heading": "Identify a one-electron ion from a spectral energy",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "nupper=3; nlower=2",
+            "1/4 − 1/9 = 5/36",
+            "Photon ΔE = 17.0 eV"
+          ],
+          [
+            "Solve 13.6Z²×5/36=17",
+            "Z²=9; Z=3",
+            "One-electron Li²⁺"
+          ],
+          [
+            "Wavelength from supplied hc",
+            "1240/17.0",
+            "About 72.94 nm"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -686,6 +830,94 @@
       ],
       "answer": 3,
       "explanation": "There is one ml=0 orbital for each l=0,1,2 and one permitted spin state per orbital."
+    },
+    {
+      "question": "In the elementary one-electron model, n=3 contains how many spatial orbitals?",
+      "options": [
+        "3",
+        "9",
+        "18",
+        "6"
+      ],
+      "answer": 1,
+      "explanation": "For n=3 the allowed subshells are 3s, 3p and 3d. Their spatial-orbital counts sum to 1+3+5=9, before counting spin."
+    },
+    {
+      "question": "Including spin, the number of possible one-electron states in that n=3 shell is:",
+      "options": [
+        "9",
+        "3",
+        "18",
+        "36"
+      ],
+      "answer": 2,
+      "explanation": "Each of nine spatial orbitals permits two spin states, giving eighteen possible states rather than eighteen occupied electrons in H."
+    },
+    {
+      "question": "For a hydrogen-like 1s state, radial probability distribution with respect to radius is zero at r=0 mainly because:",
+      "options": [
+        "The nucleus has no charge",
+        "The wavefunction is identically zero everywhere",
+        "The electron has a fixed orbit at infinity",
+        "The spherical-shell volume factor contains r²"
+      ],
+      "answer": 3,
+      "explanation": "Radial distribution includes shell volume, unlike probability density per unit volume, which is largest at the origin for 1s."
+    },
+    {
+      "question": "With a0=0.529 Å, the most probable 1s radius in the simple He+ model is:",
+      "options": [
+        "0.2645 Å",
+        "1.058 Å",
+        "0.529 Å",
+        "2.116 Å"
+      ],
+      "answer": 0,
+      "explanation": "Use a0/Z with Z=2; this is a radial-distribution maximum, not a fixed electron path."
+    },
+    {
+      "question": "Ne represented by 1s2 2s2 2p5 3s1 is, at this occupancy level:",
+      "options": [
+        "Forbidden because excited states cannot exist",
+        "An allowed excited configuration",
+        "A neutral atom with eleven electrons",
+        "The usual ground configuration"
+      ],
+      "answer": 1,
+      "explanation": "The total is ten and no subshell capacity is exceeded; the promotion makes it an excited configuration."
+    },
+    {
+      "question": "Writing three electrons in one 1s spatial orbital violates:",
+      "options": [
+        "Only a naming convention",
+        "No physical restriction",
+        "The Pauli capacity of an orbital",
+        "Only the mass number"
+      ],
+      "answer": 2,
+      "explanation": "A spatial orbital can hold at most two electrons with opposite spin."
+    },
+    {
+      "question": "A one-electron n=3→2 line has energy 17.0 eV using 13.6Z²(1/4−1/9). Z is:",
+      "options": [
+        "1",
+        "2",
+        "9",
+        "3"
+      ],
+      "answer": 3,
+      "explanation": "The equation gives Z²=9; the positive nuclear charge number is Z=3."
+    },
+    {
+      "question": "The corresponding one-electron ion is:",
+      "options": [
+        "Li2+",
+        "Neutral Li",
+        "He2+",
+        "H−"
+      ],
+      "answer": 0,
+      "explanation": "Lithium has nuclear charge three; removing two electrons leaves the one electron required by the model."
     }
   ]
 }

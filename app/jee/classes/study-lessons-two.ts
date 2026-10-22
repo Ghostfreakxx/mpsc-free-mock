@@ -1,3 +1,4 @@
+import { extendHydrocarbonsAtomicBondingLesson } from "./hydrocarbons-atomic-bonding-study.ts";
 import { extendAtomicBondingPeriodicLesson } from "./atomic-bonding-periodic-study.ts";
 import type { StudyLesson } from "./course";
 
@@ -52,7 +53,7 @@ export const nextStudyLessons: StudyLesson[] = [
     title: "Atomic structure: shells, orbitals and electron arrangements",
     summary: "Particle counts, energy levels, quantum numbers and orbital filling.",
     prerequisites: "Atomic symbols, the mole concept and simple integer arithmetic.",
-    remaining: "Written companion to the thirteen-chapter Marin recording for Unit 2. The recording and Atomic Spectra notes add photons, Bohr relations, spectra, matter waves, uncertainty, nodes and configuration examples. Detailed radial plots, fuller derivations and additional mixed problems remain; this is not complete unit coverage.",
+    remaining: "Written companion to the seventeen-chapter Marin recording for Unit 2. The recording and Atomic Spectra notes add photons, Bohr relations, spectra, matter waves, uncertainty, nodes and configuration examples. Further excited-orbital radial plots, fuller derivations and additional mixed problems remain; this is not complete unit coverage.",
     sections: [
       { title: "Count particles before discussing orbitals", paragraphs: [
         "The atomic number Z counts protons and determines the element. The mass number A counts protons plus neutrons in a specified isotope. Therefore neutrons = A - Z. A neutral atom has Z electrons, while an ion's electron count changes with its charge. Removing electrons makes a positive ion; adding electrons makes a negative ion.",
@@ -137,3 +138,5 @@ export const nextStudyLessons: StudyLesson[] = [
 ];
 
 for (const lesson of nextStudyLessons) extendAtomicBondingPeriodicLesson(lesson);
+
+for (const lesson of nextStudyLessons) extendHydrocarbonsAtomicBondingLesson(lesson);

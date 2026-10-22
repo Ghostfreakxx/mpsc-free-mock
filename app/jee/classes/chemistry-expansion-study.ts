@@ -1,3 +1,4 @@
+import { extendHydrocarbonsAtomicBondingLesson } from "./hydrocarbons-atomic-bonding-study.ts";
 import { extendNitrogenPracticalPeriodicLesson } from "./nitrogen-practical-periodic-study.ts";
 import { extendAtomicBondingPeriodicLesson } from "./atomic-bonding-periodic-study.ts";
 import type { StudyLesson } from "./course";
@@ -107,7 +108,7 @@ export const chemistryExpansionLessons: StudyLesson[] = [
     title: "Chemical bonding: from electrons to shape and properties",
     summary: "Lewis structures, charge bookkeeping, VSEPR, polarity, overlap and molecular orbitals.",
     prerequisites: "Valence electrons, periodic trends and basic orbital terminology.",
-    remaining: "Written companion to the thirteen-chapter Marin recording for Unit 3. The recording adds polarization comparisons, five- and six-domain shapes, bond counting and hydrogen bonding. Further multivalent lattice cycles, complete heteronuclear molecular-orbital diagrams and additional shape comparisons remain; this is not complete unit coverage.",
+    remaining: "Written companion to the seventeen-chapter Marin recording for Unit 3. The recording adds polarization comparisons, five- and six-domain shapes, bond counting and hydrogen bonding. Complete heteronuclear molecular-orbital diagrams, broader lattice datasets and additional shape comparisons remain; this is not complete unit coverage.",
     sections: [
       { title: "Bond formation must lower the appropriate energy", paragraphs: [
         "Atoms do not bond merely because someone tells them to complete an octet. Bond formation can lower a system's energy through interactions among nuclei and electrons. The octet rule is a useful bookkeeping pattern with exceptions, including electron-deficient and odd-electron species.",
@@ -162,3 +163,5 @@ export const chemistryExpansionLessons: StudyLesson[] = [
 for (const lesson of chemistryExpansionLessons) extendAtomicBondingPeriodicLesson(lesson);
 
 for (const lesson of chemistryExpansionLessons) extendNitrogenPracticalPeriodicLesson(lesson);
+
+for (const lesson of chemistryExpansionLessons) extendHydrocarbonsAtomicBondingLesson(lesson);

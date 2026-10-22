@@ -29,6 +29,10 @@
     {
       "title": "OpenStax: ionic and covalent bond strengths",
       "url": "https://openstax.org/books/chemistry-2e/pages/7-5-strengths-of-ionic-and-covalent-bonds"
+    },
+    {
+      "title": "IIT Kanpur SATHEE: chemical bonding",
+      "url": "https://sathee.iitk.ac.in/sathee-icar/student-corner/ncert-books/class-11/nb-che-11/chemistry-11-chapter-4-chemical-bonding-and-moleuclar-structure/"
     }
   ],
   "chapters": [
@@ -486,6 +490,148 @@
           ]
         ]
       }
+    },
+    {
+      "title": "A divalent lattice cycle needs both ionization steps",
+      "formula": "MgCl₂ cycle: two chloride electron gains, one first and one second metal ionization",
+      "script": "A Born Haber cycle for a divalent metal chloride must account for the full ionic formula. Use supplied illustrative energy terms for forming one mole of magnesium chloride solid from magnesium solid and chlorine gas. Magnesium atomization is plus one hundred forty eight kilojoules per mole, the first and second magnesium ionizations are plus seven hundred thirty eight and plus fourteen hundred fifty one, and converting one chlorine molecule into two gas atoms costs plus two hundred forty three. Each chlorine atom gains one electron with energy change minus three hundred forty nine, so that term occurs twice. These steps before lattice formation sum to plus eighteen hundred eighty two kilojoules per mole. If the supplied overall formation enthalpy is minus six hundred forty two, the lattice formation enthalpy is minus twenty five hundred twenty four kilojoules per mole. The corresponding lattice dissociation value has the opposite sign for the same states. Using only the first magnesium ionization would leave the metal charge wrong. Using only one chlorine electron gain would fail the formula count. Label initial and final states and write the energy equation before solving for the missing term.",
+      "points": [
+        "Metal steps · 148 + 738 + 1451 · Mg²⁺(g) requires both ionizations",
+        "Chlorine steps · 243 + 2(−349) · Two Cl⁻(g) formed",
+        "Cycle: −642 = 1882 + L · L = −2524 kJ/mol · Formation negative; dissociation positive"
+      ],
+      "board": {
+        "heading": "A divalent lattice cycle needs both ionization steps",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Metal steps",
+            "148 + 738 + 1451",
+            "Mg²⁺(g) requires both ionizations"
+          ],
+          [
+            "Chlorine steps",
+            "243 + 2(−349)",
+            "Two Cl⁻(g) formed"
+          ],
+          [
+            "Cycle: −642 = 1882 + L",
+            "L = −2524 kJ/mol",
+            "Formation negative; dissociation positive"
+          ]
+        ]
+      },
+      "speechInput": "A Born Haber cycle for a divalent metal chloride must account for the full ionic formula. Use supplied illustrative energy terms for forming one mole of magnesium chloride solid from magnesium solid and chlorine gas. Magnesium atomization is plus one hundred forty eight kilojoules per mole, the first and second magnesium ionizations are plus seven hundred thirty eight and plus fourteen hundred fifty one, and converting one chlorine molecule into two gas atoms costs plus two hundred forty three. Each chlorine atom gains one electron with energy change minus three hundred forty nine, so that term occurs twice. These steps before lattice formation sum to plus eighteen hundred eighty two kilojoules per mole. If the supplied overall formation enthalpy is minus six hundred forty two, the lattice formation enthalpy is minus twenty five hundred twenty four kilojoules per mole. The corresponding lattice dissociation value has the opposite sign for the same states. Using only the first magnesium ionization would leave the metal charge wrong. Using only one chlorine electron gain would fail the formula count. Label initial and final states and write the energy equation before solving for the missing term. These supplied rounded data illustrate the cycle rather than asserting a universal lattice constant.",
+      "recordingNote": "Closing reminder omitted by the generated recording; transcript follows independently reviewed speech. Original requested input retained for audio cache provenance."
+    },
+    {
+      "title": "Nitrite and nitronium differ by two electrons",
+      "formula": "NO₂⁻: 18 valence electrons, bent; NO₂⁺: 16, linear",
+      "script": "A small change in ionic charge can change both electron count and molecular shape. For the nitrite ion, nitrogen contributes five valence electrons, two oxygens contribute twelve, and the negative charge adds one, giving eighteen. In the ordinary octet Lewis description, nitrogen has two oxygen neighbours and one lone pair. One double and one single bond can be drawn in either of two equivalent resonance contributors. Three electron domains around nitrogen give a bent molecular shape, while resonance makes the equivalent oxygen positions share the bonding description. The nitronium ion has the same atom count but two fewer electrons because its charge is positive rather than negative. Sixteen valence electrons support the familiar two double bond Lewis arrangement with no central nitrogen lone pair. Two electron domains give a linear molecular shape. A double bond counts as one domain for this purpose. Do not confuse either closed shell ion with neutral nitrogen dioxide, which has seventeen valence electrons and an odd electron. Count charge before applying a memorized shape or copying a Lewis diagram. Geometry follows the relevant electronic description, not the atom formula with the charge silently omitted.",
+      "points": [
+        "NO₂⁻ · 5 + 12 + 1 = 18 electrons · AX₂E; bent",
+        "NO₂⁺ · 5 + 12 − 1 = 16 electrons · AX₂; linear",
+        "Neutral NO₂ · 5 + 12 = 17 electrons · Odd-electron species; separate case"
+      ],
+      "board": {
+        "heading": "Nitrite and nitronium differ by two electrons",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "NO₂⁻",
+            "5 + 12 + 1 = 18 electrons",
+            "AX₂E; bent"
+          ],
+          [
+            "NO₂⁺",
+            "5 + 12 − 1 = 16 electrons",
+            "AX₂; linear"
+          ],
+          [
+            "Neutral NO₂",
+            "5 + 12 = 17 electrons",
+            "Odd-electron species; separate case"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Use average bond energies as an approximate gas-phase ledger",
+      "formula": "ΔH ≈ sum E(bonds broken) − sum E(bonds formed)",
+      "script": "Average bond enthalpies estimate reaction energy by breaking gas phase reactant bonds and forming gas phase product bonds. Consider ethene plus hydrogen giving ethane. Use supplied average values in kilojoules per mole: carbon carbon double bond six hundred fourteen, hydrogen hydrogen four hundred thirty six, carbon carbon single bond three hundred forty seven, and carbon hydrogen four hundred thirteen. Four carbon hydrogen bonds occur on each side and cancel from a net bookkeeping list. The changed bond set breaks one carbon carbon double bond and one hydrogen hydrogen bond, costing ten hundred fifty kilojoules per mole. It forms one carbon carbon single bond and two additional carbon hydrogen bonds, releasing eleven hundred seventy three. The estimated net is minus one hundred twenty three kilojoules per mole. Forgetting the retained sigma bond in the product or subtracting all product energy with the wrong sign changes the result. Average bond values depend on molecular environment and do not make this an exact enthalpy of hydrogenation. Liquid and solid phase changes need separate terms if the reaction states differ from the gas phase model. State the bond inventory and the approximation before interpreting the sign.",
+      "points": [
+        "Changed bonds broken · 614 + 436 · 1050 kJ/mol absorbed",
+        "Changed bonds formed · 347 + 2×413 · 1173 kJ/mol released",
+        "Approximate gas-phase net · 1050 − 1173 · −123 kJ/mol"
+      ],
+      "board": {
+        "heading": "Use average bond energies as an approximate gas-phase ledger",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Changed bonds broken",
+            "614 + 436",
+            "1050 kJ/mol absorbed"
+          ],
+          [
+            "Changed bonds formed",
+            "347 + 2×413",
+            "1173 kJ/mol released"
+          ],
+          [
+            "Approximate gas-phase net",
+            "1050 − 1173",
+            "−123 kJ/mol"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Introductory heteronuclear counts: CO and NO",
+      "formula": "CO: 10 valence electrons, bond order 3; NO: 11, bond order 2.5 in the model",
+      "script": "Different atoms in a diatomic molecule require more care than copying every feature of a homonuclear orbital diagram. Carbon monoxide has ten valence electrons, while nitric oxide has eleven. In the introductory molecular orbital counting model, carbon monoxide has bond order three and all electrons paired. Nitric oxide has one electron in an antibonding pi orbital, giving bond order two point five and one unpaired electron. It is therefore paramagnetic in this elementary comparison. Removing that antibonding electron from nitric oxide gives the nitrosonium ion, with ten valence electrons, bond order three and a paired configuration in the same model. The general counting expression is one half the bonding minus antibonding electron populations. However, heteronuclear atomic orbitals begin at unequal energies, and the resulting molecular orbitals need not have equal contributions on both atoms. Electron count alone therefore does not prove equal dipole moments, identical orbital energies or identical bond lengths for different molecules. This chapter supplies an introductory population comparison, not a complete heteronuclear orbital derivation. Use the stated filling model and identify the orbital from which an electron is removed rather than assuming every ionization weakens every bond.",
+      "points": [
+        "CO · 10 valence electrons · Bond order 3; paired",
+        "NO · 11; one π* electron · Bond order 2.5; 1 unpaired",
+        "NO⁺ · Remove the π* electron · Bond order 3; paired in model"
+      ],
+      "board": {
+        "heading": "Introductory heteronuclear counts: CO and NO",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "CO",
+            "10 valence electrons",
+            "Bond order 3; paired"
+          ],
+          [
+            "NO",
+            "11; one π* electron",
+            "Bond order 2.5; 1 unpaired"
+          ],
+          [
+            "NO⁺",
+            "Remove the π* electron",
+            "Bond order 3; paired in model"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -686,6 +832,94 @@
       ],
       "answer": 1,
       "explanation": "The removed electron is bonding in the stated N2 diagram and antibonding in O2."
+    },
+    {
+      "question": "For the supplied MgCl2 cycle, metal terms are 148+738+1451 and chlorine terms 243+2(−349), all kJ/mol. Their sum before lattice formation is:",
+      "options": [
+        "1882 kJ/mol",
+        "2524 kJ/mol",
+        "−1882 kJ/mol",
+        "642 kJ/mol"
+      ],
+      "answer": 0,
+      "explanation": "Both Mg ionizations and both Cl electron gains are required; the specified subtotal is 1882 kJ/mol."
+    },
+    {
+      "question": "If overall formation enthalpy is −642 kJ/mol and subtotal is +1882, lattice formation enthalpy is:",
+      "options": [
+        "+2524 kJ/mol",
+        "−2524 kJ/mol",
+        "−1240 kJ/mol",
+        "+1240 kJ/mol"
+      ],
+      "answer": 1,
+      "explanation": "Solve −642=1882+L, so L=−2524 kJ/mol. Dissociation between the reversed states has the opposite sign."
+    },
+    {
+      "question": "Nitrite NO2− has valence-electron count and molecular shape:",
+      "options": [
+        "16, linear",
+        "17, linear",
+        "18, bent",
+        "18, tetrahedral"
+      ],
+      "answer": 2,
+      "explanation": "5+2×6+1=18; two bonded domains and one central lone pair give a bent AX2E description."
+    },
+    {
+      "question": "Nitronium NO2+ in the ordinary Lewis/domain model is:",
+      "options": [
+        "Bent with two central lone pairs",
+        "An 18-electron ion",
+        "An odd-electron neutral molecule",
+        "Linear with no central lone pair"
+      ],
+      "answer": 3,
+      "explanation": "There are sixteen valence electrons and two central bonded domains; a double bond counts as one domain."
+    },
+    {
+      "question": "For the supplied ethene hydrogenation model, broken changed bonds cost 614+436 and formed changed bonds release 347+2×413. Estimated ΔH is:",
+      "options": [
+        "−123 kJ/mol",
+        "+123 kJ/mol",
+        "−2100 kJ/mol",
+        "+1173 kJ/mol"
+      ],
+      "answer": 0,
+      "explanation": "Use bonds broken minus bonds formed: 1050−1173=−123 kJ/mol."
+    },
+    {
+      "question": "That average-bond-energy result is:",
+      "options": [
+        "Exact for every liquid and solid reaction",
+        "An approximate gas-phase estimate requiring separate phase terms when relevant",
+        "Independent of bond inventory",
+        "Proof that every C–H bond has one universal exact energy"
+      ],
+      "answer": 1,
+      "explanation": "Average bond enthalpies depend on molecular environment and refer to the gas-phase bookkeeping model."
+    },
+    {
+      "question": "In the stated introductory MO model, NO has bond order and unpaired count:",
+      "options": [
+        "3, zero",
+        "2, two",
+        "2.5, one",
+        "1, zero"
+      ],
+      "answer": 2,
+      "explanation": "Its eleven valence electrons include one electron in a pi antibonding orbital, giving one unpaired electron and bond order 2.5."
+    },
+    {
+      "question": "Removing that antibonding electron from NO gives NO+ with model bond order:",
+      "options": [
+        "2",
+        "2.5",
+        "1",
+        "3"
+      ],
+      "answer": 3,
+      "explanation": "Removing one antibonding electron increases the bond order by one half, from 2.5 to 3 in the stated model."
     }
   ]
 }
