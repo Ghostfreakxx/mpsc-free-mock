@@ -2,7 +2,7 @@
 
 Published practice is the source-checked, original foundation set in `app/data/reviewed-content.ts`. It is not a comprehensive exam bank, an official PYQ collection, or a prediction of examination content. Review date: 2026-09-27. Review was AI-assisted, not certification by an examination body or independent subject expert.
 
-The second release added 200 practice slots to each of the four exam streams, and MPSC was later expanded further. Current totals (2026-10-21): MPSC 678, NEET 582, JEE 520 and CUET PG 384. Some questions are shared across streams: the 2,164 stream slots come from 1,480 unique questions, 684 of which appear in more than one stream, and they are not 1,480 distinct concepts. Additions include deterministic numerical variants and paired recall/matching variants within the existing foundation topics. Their source locations explicitly identify those variants. The larger count does not expand this into full-syllabus coverage. Generation is deterministic and does not call an AI service at runtime. Question IDs from the first release are retained.
+The second release added 200 practice slots to each of the four exam streams, and MPSC was later expanded further. Current totals (2026-10-22): MPSC 817, NEET 645, JEE 583 and CUET PG 505. Some questions are shared across streams: the 2,550 stream slots come from 1,691 unique questions, 850 of which appear in more than one stream, and they are not 1,691 distinct concepts. Additions include deterministic numerical variants and paired recall/matching variants within the existing foundation topics. Their source locations explicitly identify those variants. The larger count does not expand this into full-syllabus coverage. Generation is deterministic and does not call an AI service at runtime. Question IDs from the first release are retained.
 
 The JEE foundation extension (2026-09-29) adds 99 hand-written questions in eleven topics defined in `app/data/jee-topics.ts`: Physics (constant-acceleration kinematics, projectile motion, work-energy theorem), Chemistry (mole concept, molarity and dilution, gas laws) and Mathematics (arithmetic and geometric sequences, logarithms, permutations and combinations, differentiation rules), taking JEE to 308 published questions. Each item cites an OpenStax section; worked answers for representative numericals are recomputed in `scripts/content.test.mjs`. Review was AI-assisted, as above.
 
@@ -20,6 +20,15 @@ The third batch (2026-10-21) adds 201 original questions in twenty-one topics (`
 - **NEET:** neurons, biotechnology tools, and vitamins and minerals.
 
 Constitutional items cite the May 2024 edition. The history and geography items cite NCERT chapters by name through the NCERT textbook portal, because the build environment could not reach the PDFs to confirm file codes. The climate and biodiversity items cite the UNFCCC and CBD secretariats. Worked answers for representative numericals are recomputed in `scripts/content.test.mjs`. Review was AI-assisted, as above.
+
+The fourth batch (2026-10-22) adds 211 original questions in twenty-one topics (`app/data/batch-four-topics.ts`), again weighted towards MPSC. It follows the same rules as the third batch.
+- **MPSC general studies (English, Mizo pending):** Fundamental Rights and Directive Principles, the State executive and legislature, colonialism and the countryside, framing the Constitution, early states and the Mauryas, Vijayanagara, the Mughals and their chronicles, India's drainage system, layers of the atmosphere, money and its functions, monetary policy tools, pH and pOH, and the adaptive immune response.
+- **MPSC and CUET PG aptitude (templated draft Mizo):** speed, distance and time; and profit, loss and mark-up.
+- **JEE and NEET:** gravitation, semiconductors and doping, integrated rate laws, and pH and pOH.
+- **JEE:** limits, matrices and the parabola.
+- **NEET:** plant hormones, Hardy-Weinberg equilibrium, and the adaptive immune response.
+
+The atmosphere items cite NOAA JetStream. The other sources follow the third batch. Worked answers for representative numericals are recomputed in `scripts/content.test.mjs`. Review was AI-assisted, as above.
 
 The original 3,291 question records are preserved verbatim as structured data in `archive/` (MPSC 931, NEET 515, JEE 601, CUET PG 1,244). They are excluded from scored practice while provenance and factual answers await review. Legacy college notes remain visible with a review-pending notice. Historical device responses are retained; current scores include only published questions.
 

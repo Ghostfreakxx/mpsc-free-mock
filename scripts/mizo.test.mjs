@@ -4,27 +4,32 @@ import { createHash } from "node:crypto";
 import { getReviewedQuestions } from "../app/data/reviewed-content.ts";
 import { getMizoTranslation, mizoCategories, mizoPendingTopicIds } from "../app/data/mizo-translations.ts";
 import { mizoManual } from "../app/data/mizo-manual.ts";
+import { batchFourTopics } from "../app/data/batch-four-topics.ts";
 
 const questions = getReviewedQuestions("mpsc");
 const topicOf = q => q.id.replace(/-\d+$/, "");
 const pending = questions.filter(q => mizoPendingTopicIds.has(topicOf(q)));
 const translatable = questions.filter(q => !mizoPendingTopicIds.has(topicOf(q)));
+const batchFour = new Set(batchFourTopics.map(topic => topic.id));
 const batchThree = /^(union-polity|local-government|union-judiciary|public-finance|sixth-schedule|constitution-making|gandhi-national-movement|revolt-of-1857|india-location|climate-agreements|biodiversity-agreements|nutrition-vitamins|averages|ratio-proportion|discount-tax-commission)-\d+$/;
 
 test("English source bank is unchanged; source edits require translation review", () => {
   // 2026-09-29: numerical distractor order changed; numerical translations reuse English options, so no text needs review.
   // 2026-10-20: percentage and simple-interest topics added with templated draft translations; the earlier 500 are unchanged.
   // 2026-10-21: third batch added (general studies in English, Mizo pending; aptitude templated); the earlier 526 are unchanged.
-  assert.equal(createHash("sha256").update(JSON.stringify(questions)).digest("hex"), "10571f30938bb7315051539169889d6f3f3fa3a9df6430d522a64a8a03fb1e78");
-  const earlier = questions.filter(q => !batchThree.test(q.id));
+  // 2026-10-22: fourth batch added the same way; the earlier 678 are unchanged.
+  assert.equal(createHash("sha256").update(JSON.stringify(questions)).digest("hex"), "5a2a8990e7f85f4ab1f672a8255b1c251ac1e2a9735e170df8258165bf1f52a5");
+  const beforeFour = questions.filter(q => !batchFour.has(topicOf(q)));
+  assert.equal(createHash("sha256").update(JSON.stringify(beforeFour)).digest("hex"), "10571f30938bb7315051539169889d6f3f3fa3a9df6430d522a64a8a03fb1e78");
+  const earlier = beforeFour.filter(q => !batchThree.test(q.id));
   assert.equal(createHash("sha256").update(JSON.stringify(earlier)).digest("hex"), "5756812783ab74e762df8e32e0f74127d3b141a55a90e6001d7edaf9ecc11f01");
   const first = earlier.filter(q => !/^(percentages|simple-interest)-/.test(q.id));
   assert.equal(createHash("sha256").update(JSON.stringify(first)).digest("hex"), "6fc03ee19174ee8614f96edf5146063182813a4ff4a61d43d970c82363d6da82");
 });
 
-test("all 556 translatable questions and fifteen categories have complete draft translations", () => {
-  assert.equal(questions.length, 678);
-  assert.equal(translatable.length, 556);
+test("all 576 translatable questions and seventeen categories have complete draft translations", () => {
+  assert.equal(questions.length, 817);
+  assert.equal(translatable.length, 576);
   for (const q of translatable) {
     const original = structuredClone(q);
     const translated = getMizoTranslation(q);
@@ -40,15 +45,15 @@ test("all 556 translatable questions and fifteen categories have complete draft 
     assert.deepEqual(q, original, "Translation must not mutate scoring or source data");
     assert.equal(translated.answer, undefined, "English bank remains the only answer key");
   }
-  assert.equal(new Set(translatable.map(q => q.category)).size, 15);
+  assert.equal(new Set(translatable.map(q => q.category)).size, 17);
   assert.ok(Object.keys(mizoManual).every(id => questions.some(q => q.id === id)));
 });
 
 test("general-studies topics awaiting a fluent Mizo writer get no guessed translation", () => {
-  assert.equal(pending.length, 122);
+  assert.equal(pending.length, 241);
   for (const q of pending) assert.equal(getMizoTranslation(q), undefined, q.id);
-  // Only whole topics are pending, and none of the earlier translated bank is.
-  assert.ok(pending.every(q => batchThree.test(q.id)));
+  // Only whole topics from the third and fourth batches are pending; none of the earlier translated bank is.
+  assert.ok(pending.every(q => batchThree.test(q.id) || batchFour.has(topicOf(q))));
 });
 
 test("known answer positions remain aligned in both languages", () => {
@@ -85,8 +90,8 @@ test("numerical translations retain the worked answer and numeric choices", () =
 });
 
 test("percentage and interest translations keep the numeric choices and show the keyed answer", () => {
-  const templated = questions.filter(q => /^(percentages|simple-interest|averages|ratio-proportion|discount-tax-commission)-/.test(q.id));
-  assert.equal(templated.length, 56);
+  const templated = questions.filter(q => /^(percentages|simple-interest|averages|ratio-proportion|discount-tax-commission|speed-distance-time|profit-loss-markup)-/.test(q.id));
+  assert.equal(templated.length, 76);
   for (const q of templated) {
     const translated = getMizoTranslation(q);
     assert.deepEqual(translated.options, q.options, q.id);
