@@ -15,7 +15,7 @@ import {
   RotateCw,
 } from "lucide-react";
 import InstallAppButton from "./install-app-button";
-import type { ReviewedQuestion } from "./data/reviewed-content";
+import type { PracticeQuestion } from "./data/practice-data";
 import QuestionSource from "./question-source";
 
 type RotationSummary = {
@@ -26,7 +26,7 @@ type RotationSummary = {
   isReview: boolean;
 };
 
-type ExamQuestion = ReviewedQuestion;
+type ExamQuestion = PracticeQuestion;
 
 type FilterGroup = {
   label: string;
@@ -47,6 +47,9 @@ type Props = {
   selectedAnswer: string;
   onSelectAnswer: (option: string) => void;
   onNext: () => void;
+  // Questions arrive from a static file after the page loads.
+  loadState?: "loading" | "failed" | "ready";
+  onRetry?: () => void;
 };
 
 const navigation = [
@@ -72,6 +75,8 @@ export default function ExamPracticeShell({
   selectedAnswer,
   onSelectAnswer,
   onNext,
+  loadState = "ready",
+  onRetry,
 }: Props) {
   const selectedIsCorrect = Boolean(
     currentQuestion && selectedAnswer === currentQuestion.answer,
@@ -95,6 +100,8 @@ export default function ExamPracticeShell({
             return (
               <Link
                 href={item.href}
+                // The classes library is large; load it on demand instead of prefetching it from every page.
+                prefetch={item.href === "/jee/classes" ? false : undefined}
                 className={`sidebar-link ${active ? "is-active" : ""}`}
                 aria-current={active ? "page" : undefined}
                 key={item.href}
@@ -141,7 +148,7 @@ export default function ExamPracticeShell({
             <div className="metric-item"><span className="metric-icon metric-coral"><ClipboardCheck size={18} /></span><div><span className="metric-label">SPACED REVIEWS</span><strong>{summary?.reviewsPending ?? 0}</strong><span className="metric-note">missed answers to revisit</span></div></div>
           </section>
           <p className="content-review-notice">Source-checked foundation practice. Original questions, not official PYQs or a complete syllabus.</p>
-          {activeRoute === "/jee" && <Link href="/jee/classes" className="button button-outline">Open JEE classes <ArrowUpRight size={15} /></Link>}
+          {activeRoute === "/jee" && <Link href="/jee/classes" prefetch={false} className="button button-outline">Open JEE classes <ArrowUpRight size={15} /></Link>}
 
           <section className="practice-category-panel exam-filter-panel" aria-label="Filter questions">
             <div className="practice-section-heading"><div><span className="section-kicker">FOCUS YOUR SESSION</span><h2>Choose {filters.length > 1 ? "subject and topic" : "subject"}</h2></div><span>{totalQuestions.toLocaleString()} questions</span></div>
@@ -192,7 +199,9 @@ export default function ExamPracticeShell({
                   <div className="practice-question-actions"><span>{summary.reviewsDue > 0 ? `${summary.reviewsDue} review${summary.reviewsDue === 1 ? "" : "s"} due` : "Missed questions return later for review"}</span><button type="button" className="button button-dark" onClick={onNext}>Next question <ArrowUpRight size={15} /></button></div>
                 </>
               ) : (
-                <div className="practice-loading" role="status">{totalQuestions ? "Preparing your question set…" : "No questions found for these filters."}</div>
+                loadState === "failed"
+                  ? <div className="practice-loading" role="alert">The questions could not be loaded. Check your connection. <button type="button" className="button button-outline" onClick={onRetry}>Try again</button></div>
+                  : <div className="practice-loading" role="status">{loadState === "loading" ? "Loading questions…" : totalQuestions ? "Preparing your question set…" : "No questions found for these filters."}</div>
               )}
             </div>
 

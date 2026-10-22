@@ -2,19 +2,30 @@
 
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Bookmark, Clock, Eraser, Grid3x3, RotateCcw, Send } from "lucide-react";
-import { Fragment, useEffect, useMemo, useState } from "react";
-import { getReviewedQuestions, reviewedQuestions } from "../data/reviewed-content";
+import { Fragment, useCallback, useEffect, useMemo, useState } from "react";
+import type { ReviewedQuestion, Stream } from "../data/reviewed-content";
 import {
-  addToHistory, attemptOnArrival, clearAnswer, examConfigs, formatClock, goTo, maxLength, questionStatus, restoreAttempt, scoreAttempt,
+  addToHistory, attemptOnArrival, clearAnswer, examConfigs, formatClock, goTo, questionStatus, restoreAttempt, scoreAttempt,
   selectAnswer, selectQuestions, startAttempt, statusCounts, submitAttempt, summarize, toggleMark,
   type Attempt, type AttemptResult, type AttemptSummary, type ExamId, type QuestionStatus,
 } from "../lib/exam-simulator";
+import { isQuestionList, loadQuestionBank } from "../lib/use-question-bank";
 import styles from "./simulator.module.css";
 
 const ATTEMPT_KEY = "exam-simulator:attempt:v1";
 const HISTORY_KEY = "exam-simulator:history:v1";
 const examOrder: ExamId[] = ["jee", "neet", "cuet-pg", "mpsc"];
-const questionsById = new Map(reviewedQuestions.map(question => [question.id, question]));
+// Each stream's questions are a static JSON file (app/question-bank), fetched only when needed.
+const loadPool = (stream: Stream) => loadQuestionBank<unknown>(stream).then(value => {
+  if (!isQuestionList<ReviewedQuestion>(value)) throw new Error(`Question bank ${stream}: unexpected format`);
+  return value;
+});
+function savedExamId(serialized: string | null): ExamId | null {
+  try {
+    const value = serialized ? JSON.parse(serialized) as { examId?: unknown } : null;
+    return typeof value?.examId === "string" && value.examId in examConfigs ? value.examId as ExamId : null;
+  } catch { return null; }
+}
 const statusLabels: Record<QuestionStatus, string> = {
   "not-visited": "Not visited",
   "not-answered": "Not answered",
@@ -47,8 +58,12 @@ const seconds = (ms: number) => {
 const clockNow = () => Date.now();
 const formatScore = (value: number) => Number.isInteger(value) ? String(value) : value.toFixed(2);
 
-export default function ExamSimulator() {
+export default function ExamSimulator({ poolSizes }: { poolSizes: Record<Stream, number> }) {
   const [loaded, setLoaded] = useState(false);
+  const [pools, setPools] = useState<Partial<Record<Stream, ReviewedQuestion[]>>>({});
+  const [loadError, setLoadError] = useState(false);
+  const [starting, setStarting] = useState(false);
+  const questionsById = useMemo(() => new Map(Object.values(pools).flat().map(question => [question.id, question])), [pools]);
   const [attempt, setAttempt] = useState<Attempt | null>(null);
   const [history, setHistory] = useState<AttemptSummary[]>([]);
   const [examId, setExamId] = useState<ExamId>("jee");
@@ -59,10 +74,26 @@ export default function ExamSimulator() {
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [reviewFilter, setReviewFilter] = useState<"all" | "wrong" | "skipped">("wrong");
 
-  // Restore after mount so server and client render the same first frame.
+  // Restore after mount so server and client render the same first frame. A saved paper needs
+  // its stream's questions, so those are fetched before the attempt is restored.
   useEffect(() => {
-    const timer = window.setTimeout(() => {
-      const saved = restoreAttempt(readStorage(ATTEMPT_KEY), questionsById);
+    let cancelled = false;
+    const timer = window.setTimeout(async () => {
+      const raw = readStorage(ATTEMPT_KEY);
+      const savedExam = savedExamId(raw);
+      let saved: Attempt | null = null;
+      if (savedExam) {
+        const stream = examConfigs[savedExam].stream;
+        try {
+          const pool = await loadPool(stream);
+          if (cancelled) return;
+          setPools(current => ({ ...current, [stream]: pool }));
+          saved = restoreAttempt(raw, new Map(pool.map(question => [question.id, question])));
+        } catch {
+          if (!cancelled) setLoadError(true);
+        }
+      }
+      if (cancelled) return;
       const requested = new URLSearchParams(window.location.search).get("exam");
       if (requested && requested in examConfigs) {
         const config = examConfigs[requested as ExamId];
@@ -73,7 +104,7 @@ export default function ExamSimulator() {
       setNow(Date.now());
       setLoaded(true);
     }, 0);
-    return () => window.clearTimeout(timer);
+    return () => { cancelled = true; window.clearTimeout(timer); };
   }, []);
 
   useEffect(() => {
@@ -90,11 +121,11 @@ export default function ExamSimulator() {
 
   const config = attempt ? examConfigs[attempt.examId] : examConfigs[examId];
   const result = useMemo<AttemptResult | null>(
-    () => attempt?.submittedAt !== undefined ? scoreAttempt(attempt, examConfigs[attempt.examId], questionsById) : null,
-    [attempt],
+    () => attempt?.submittedAt !== undefined && questionsById.has(attempt.questionIds[0]) ? scoreAttempt(attempt, examConfigs[attempt.examId], questionsById) : null,
+    [attempt, questionsById],
   );
 
-  function finish(current: Attempt, at: number) {
+  const finish = useCallback((current: Attempt, at: number) => {
     const submitted = submitAttempt(current, at);
     const summary = summarize(submitted, scoreAttempt(submitted, examConfigs[submitted.examId], questionsById));
     const nextHistory = addToHistory(readHistory(), summary);
@@ -103,7 +134,7 @@ export default function ExamSimulator() {
     setConfirming(false);
     setAttempt(submitted);
     window.scrollTo({ top: 0 });
-  }
+  }, [questionsById]);
 
   // Submit automatically when time runs out, as the real exam does.
   useEffect(() => {
@@ -111,7 +142,7 @@ export default function ExamSimulator() {
       const timer = window.setTimeout(() => finish(attempt, attempt.deadline), 0);
       return () => window.clearTimeout(timer);
     }
-  }, [attempt, now]);
+  }, [attempt, now, finish]);
 
   function chooseExam(id: ExamId) {
     setExamId(id);
@@ -119,14 +150,25 @@ export default function ExamSimulator() {
     setMarkingId(examConfigs[id].markingOptions[0].id);
   }
 
-  function begin(id = examId, count = length, marking = markingId) {
+  async function begin(id = examId, count = length, marking = markingId) {
     const selected = examConfigs[id];
-    const pool = getReviewedQuestions(selected.stream);
+    setStarting(true);
+    setLoadError(false);
+    let pool: ReviewedQuestion[];
+    try {
+      pool = await loadPool(selected.stream);
+    } catch {
+      setLoadError(true);
+      setStarting(false);
+      return;
+    }
     const paper = selectQuestions(selected, pool, count, Math.floor(Math.random() * 2 ** 31));
     const at = Date.now();
+    setPools(current => ({ ...current, [selected.stream]: pool }));
     setNow(at);
     setReviewFilter("wrong");
     setAttempt(startAttempt(selected, marking, paper, at));
+    setStarting(false);
     window.scrollTo({ top: 0 });
   }
 
@@ -140,7 +182,7 @@ export default function ExamSimulator() {
     return <main className={styles.page}><div className={styles.wrap}><p className={styles.muted} role="status">Loading exam simulator…</p></div></main>;
   }
 
-  if (attempt && attempt.submittedAt === undefined) {
+  if (attempt && attempt.submittedAt === undefined && questionsById.has(attempt.questionIds[attempt.current])) {
     const question = questionsById.get(attempt.questionIds[attempt.current])!;
     const response = attempt.responses[question.id];
     const remaining = attempt.deadline - now;
@@ -271,7 +313,7 @@ export default function ExamSimulator() {
         </section>
 
         <div className={styles.startRow}>
-          <button type="button" className={`button button-dark ${styles.bigButton}`} onClick={() => begin(attempt.examId, attempt.questionIds.length, attempt.markingId)}><RotateCcw size={15} /> New paper, same settings</button>
+          <button type="button" className={`button button-dark ${styles.bigButton}`} disabled={starting} onClick={() => void begin(attempt.examId, attempt.questionIds.length, attempt.markingId)}><RotateCcw size={15} /> New paper, same settings</button>
           <button type="button" className={`button button-outline ${styles.bigButton}`} onClick={() => { setExamId(attempt.examId); setLength(attempt.questionIds.length); setMarkingId(attempt.markingId); setAttempt(null); }}>Change settings</button>
         </div>
 
@@ -298,8 +340,8 @@ export default function ExamSimulator() {
     </main>;
   }
 
-  const pool = getReviewedQuestions(config.stream);
-  const lengths = config.lengths.filter(value => value <= maxLength(config, pool));
+  const available = Math.min(Math.max(...config.lengths), poolSizes[config.stream]);
+  const lengths = config.lengths.filter(value => value <= available);
   return <main className={styles.page}>
     <Header />
     <div className={`${styles.wrap} ${styles.stack}`}>
@@ -338,9 +380,10 @@ export default function ExamSimulator() {
       <p className={styles.muted}>{config.note} Check the current information bulletin before your exam.</p>
 
       <div className={styles.startRow}>
-        <button type="button" className={`button button-dark ${styles.bigButton}`} onClick={() => begin()}>Start {length}-question {config.name} paper <ArrowRight size={15} /></button>
+        <button type="button" className={`button button-dark ${styles.bigButton}`} disabled={starting} onClick={() => void begin()}>{starting ? "Preparing paper…" : <>Start {length}-question {config.name} paper <ArrowRight size={15} /></>}</button>
         <span className={styles.muted}>The timer starts immediately. Your progress is saved on this device if you leave.</span>
       </div>
+      {loadError && <p className={styles.muted} role="alert">The questions could not be loaded. Check your connection and press Start again; a saved paper will reopen once it loads.</p>}
 
       {history.length > 0 && <section className={styles.panel} aria-labelledby="history-title">
         <h2 id="history-title" className={styles.sectionTitle}>Your recent papers</h2>

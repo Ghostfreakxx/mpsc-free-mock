@@ -1,4 +1,13 @@
-const CACHE_NAME = "mpsc-free-mock-v11";
+const CACHE_NAME = "mpsc-free-mock-v12";
+// Hashed build files get their own capped cache: each deploy adds new names, so drop the oldest
+// entries instead of letting old builds fill the phone's storage.
+const STATIC_CACHE = "mpsc-free-mock-static";
+const STATIC_LIMIT = 150;
+
+async function trimCache(cache, limit) {
+  const keys = await cache.keys();
+  await Promise.all(keys.slice(0, Math.max(0, keys.length - limit)).map((key) => cache.delete(key)));
+}
 
 const urlsToCache = [
   "/",
@@ -29,7 +38,7 @@ self.addEventListener("activate", (event) => {
     caches.keys().then((cacheNames) =>
       Promise.all(
         cacheNames
-          .filter((cacheName) => cacheName.startsWith("mpsc-free-mock-") && cacheName !== CACHE_NAME)
+          .filter((cacheName) => cacheName.startsWith("mpsc-free-mock-") && cacheName !== CACHE_NAME && cacheName !== STATIC_CACHE)
           .map((cacheName) => caches.delete(cacheName)),
       ),
     ).then(() => self.clients.claim()),
@@ -47,11 +56,26 @@ self.addEventListener("fetch", (event) => {
   }
 
   const url = new URL(request.url);
+  // Build assets under /_next/static/ have content-hashed names and never change, so serve them
+  // from the cache first: repeat visits start faster and work offline.
+  if (url.pathname.startsWith("/_next/static/") && !url.search) {
+    event.respondWith(
+      caches.match(request).then((cached) => cached || fetch(request).then(async (response) => {
+        if (response.ok && response.type === "basic") {
+          const cache = await caches.open(STATIC_CACHE);
+          await cache.put(request, response.clone()).catch(() => {});
+          event.waitUntil(trimCache(cache, STATIC_LIMIT));
+        }
+        return response;
+      })),
+    );
+    return;
+  }
   // Cache public page navigations and static assets, not API or RSC payloads.
   // Navigations with a query string (e.g. /exam-simulator?exam=jee) are served
   // network-first too, and fall back to the cached page for the same path offline.
   const navigation = request.mode === "navigate";
-  const cacheable = (navigation || !url.search) && (navigation || url.pathname.startsWith("/_next/static/") || url.pathname.startsWith("/downloads/") || urlsToCache.includes(url.pathname));
+  const cacheable = (navigation || !url.search) && (navigation || url.pathname.startsWith("/downloads/") || url.pathname.startsWith("/question-bank/") || urlsToCache.includes(url.pathname));
   if (!cacheable || request.headers.get("RSC") === "1") return;
   event.respondWith(
     fetch(request).then(async (response) => {

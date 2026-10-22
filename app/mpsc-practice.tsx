@@ -1,7 +1,9 @@
 "use client";
-import { getReviewedQuestions } from "./data/reviewed-content";
-import { getMizoTranslation, mizoCategories, mizoEnglishGlossary, mizoReferences, mizoTranslationStatus } from "./data/mizo-translations";
+import type { PracticeQuestion } from "./data/practice-data";
+import type { MizoTranslation } from "./data/mizo-translations";
+import { mizoCategories, mizoEnglishGlossary, mizoReferences, mizoTranslationStatus } from "./data/mizo-meta";
 import QuestionSource from "./question-source";
+import { isQuestionList, isTranslationMap, useQuestionBank } from "./lib/use-question-bank";
 
 
 import Link from "next/link";
@@ -22,11 +24,16 @@ import { useEffect, useMemo, useState } from "react";
 import InstallAppButton from "./install-app-button";
 import { useQuestionRotation } from "./lib/use-question-rotation";
 
-const questions = getReviewedQuestions("mpsc");
+const noQuestions: PracticeQuestion[] = [];
 
-const categories = ["All", ...Array.from(new Set(questions.map((q) => q.category)))];
-
+// Questions (and, on the bilingual page, precomputed draft Mizo translations keyed by question id)
+// load from static files after the page renders, so the page itself stays small.
 export default function MpscPractice({ bilingual = false }: { bilingual?: boolean }) {
+  const bank = useQuestionBank("mpsc", isQuestionList<PracticeQuestion>);
+  const mizo = useQuestionBank(bilingual ? "mpsc-mizo" : null, isTranslationMap<MizoTranslation>);
+  const questions = bank.data ?? noQuestions;
+  const translations = mizo.data;
+  const categories = useMemo(() => ["All", ...new Set(questions.map(question => question.category))], [questions]);
   const [category, setCategory] = useState("All");
   const [responses, setResponses] = useState<Record<string, { category: string; correct: boolean }>>({});
   const [responsesReady, setResponsesReady] = useState(false);
@@ -63,7 +70,7 @@ export default function MpscPractice({ bilingual = false }: { bilingual?: boolea
   const filteredQuestions = useMemo(() => {
     if (category === "All") return questions;
     return questions.filter((q) => q.category === category);
-  }, [category]);
+  }, [questions, category]);
 
   const rotation = useQuestionRotation(
     filteredQuestions,
@@ -71,7 +78,7 @@ export default function MpscPractice({ bilingual = false }: { bilingual?: boolea
   );
   const currentQuestion = rotation.currentQuestion;
   const selectedAnswer = rotation.selectedAnswer;
-  const translated = bilingual && currentQuestion ? getMizoTranslation(currentQuestion) : undefined;
+  const translated = bilingual && currentQuestion ? translations?.[currentQuestion.id] : undefined;
 
   function nextQuestion() {
     rotation.nextQuestion();
@@ -216,7 +223,8 @@ return (
                   <h2 className="practice-question-title" lang="lus">{translated.question}</h2>
                   <p className="practice-english-question" lang="en">{currentQuestion.question}</p>
                 </> : <h2 className="practice-question-title">{currentQuestion.question}</h2>}
-                {bilingual && !translated && <p className="translation-status">Mizo translation pending</p>}
+                {bilingual && translations && !translated && <p className="translation-status">Mizo translation pending</p>}
+                {bilingual && mizo.failed && <p className="translation-status" role="alert">Mizo text could not load. <button type="button" className="button button-outline" onClick={mizo.retry}>Try again</button></p>}
                 <div className="practice-options">
                   {currentQuestion.options?.map((option, index) => {
                     const selected = selectedAnswer === option;
@@ -243,7 +251,9 @@ return (
                 </div>
               </>
             ) : (
-              <div className="practice-loading" role="status">Preparing your question set…</div>
+              bank.failed
+                ? <div className="practice-loading" role="alert">The questions could not be loaded. Check your connection. <button type="button" className="button button-outline" onClick={bank.retry}>Try again</button></div>
+                : <div className="practice-loading" role="status">{bank.data ? "Preparing your question set…" : "Loading questions…"}</div>
             )}
           </div>
 
