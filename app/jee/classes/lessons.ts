@@ -1183,7 +1183,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "atomic-structure", subject: "Chemistry", unit: 2, number: "C08", title: atomicStructure.title,
-    description: "Eight narrated chapters covering particle counts, photons, Bohr levels, spectra, matter waves, orbitals, nodes and configurations.",
+    description: "Thirteen narrated chapters on atomic structure, excitation and ionization, cascade line counts, restricted quantum states, nodes and uncertainty calculations.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 2 foundation with original practice. The Atomic Structure and Atomic Spectra written lessons complement this class. Detailed radial plots, fuller derivations and additional configuration problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.atomic-structure.lecture.v1",
     audio: "/lectures/atomic-structure/narration-marin.mp3",
@@ -1193,8 +1193,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "chemical-bonding", subject: "Chemistry", unit: 3, number: "C09", title: chemicalBonding.title,
-    description: "Eight narrated chapters on ionic lattices, Lewis structures, resonance, VSEPR, polarity, overlap, molecular orbitals and hydrogen bonds.",
-    scope: "Recorded JEE Main 2026 Chemistry Unit 3 foundation with original practice. Quantitative lattice cycles, fuller molecular-orbital diagrams and additional shape comparisons remain; not exhaustive coverage or official PYQs.",
+    description: "Thirteen narrated chapters on bonding, Born–Haber cycles, molecular-orbital ionization, lone-pair geometries, resonance averages and dipole vectors.",
+    scope: "Recorded JEE Main 2026 Chemistry Unit 3 foundation with original practice. Further multivalent lattice cycles, complete heteronuclear molecular-orbital diagrams and additional shape comparisons remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.chemical-bonding.lecture.v1",
     audio: "/lectures/chemical-bonding/narration-marin.mp3",
     subtitles: "/lectures/chemical-bonding/english.vtt", timings: chemicalBondingTimings,
@@ -1213,7 +1213,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "periodic-trends", subject: "Chemistry", unit: 9, number: "C11", title: periodicTrends.title,
-    description: "Eight narrated chapters on blocks, shielding, radii, isoelectronic ions, ionization, electron gain, electronegativity and oxide trends.",
+    description: "Thirteen narrated chapters on periodic trends, successive-ionization data, electron-gain signs, radius conventions, oxide equations and aqueous reducing power.",
     scope: "Recorded Unit 9 foundation with original practice. Detailed group chemistry, transition-element trends and further exceptions remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.periodic-trends.lecture.v1",
     audio: "/lectures/periodic-trends/narration-marin.mp3",

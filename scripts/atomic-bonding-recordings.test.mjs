@@ -5,10 +5,10 @@ import {createHash} from 'node:crypto';
 import {nextStudyLessons} from '../app/jee/classes/study-lessons-two.ts';
 import {chemistryExpansionLessons} from '../app/jee/classes/chemistry-expansion-study.ts';
 const written=[...nextStudyLessons,...chemistryExpansionLessons];
-for(const [id,count] of [['atomic-structure',8],['chemical-bonding',8]]){
+for(const [id,count] of [['atomic-structure',13],['chemical-bonding',13]]){
  const lesson=JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`));
  test(`${id}: substantive chapters, quiz parity and reviewed audio provenance`,()=>{
-  assert.equal(lesson.chapters.length,count);assert.equal(lesson.quiz.length,12);
+  assert.equal(lesson.chapters.length,count);assert.equal(lesson.quiz.length,18);
   const companion=written.find(l=>l.id===id);
   assert.deepEqual(lesson.quiz.slice(0,companion.quiz.length),companion.quiz);
   for(const [i,c] of lesson.chapters.entries()){

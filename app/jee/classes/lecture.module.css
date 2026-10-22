@@ -107,3 +107,6 @@
   font-size: 14px;
   color: #52606d;
 }
+
+/* Long scientific expressions in notes must wrap on narrow screens. */
+.reading, .notes { overflow-wrap: anywhere; }

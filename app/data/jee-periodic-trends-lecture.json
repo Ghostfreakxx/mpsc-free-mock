@@ -13,6 +13,10 @@
     {
       "title": "OpenStax: periodic variations",
       "url": "https://openstax.org/books/chemistry-2e/pages/6-5-periodic-variations-in-element-properties"
+    },
+    {
+      "title": "OpenStax: electrode potentials",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-3-electrode-and-cell-potentials"
     }
   ],
   "chapters": [
@@ -297,6 +301,181 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Infer valence from a successive-energy jump",
+      "formula": "Large jump after IEₖ suggests k outer electrons in a suitable main-group model",
+      "script": "Successive ionization data can reveal a valence pattern when a much larger energy is required after the outer electrons have been removed. Take supplied values five hundred seventy eight, one thousand eight hundred seventeen, two thousand seven hundred forty five and eleven thousand five hundred seventy seven kilojoules per mole. The conspicuous jump is between the third and fourth removals. In a suitable main group interpretation this suggests three outer electrons before a more tightly bound inner shell is reached. It is consistent with group thirteen behaviour, but these four values alone are not a general proof of an exact atomic number. Each successive ionization starts from a different, more positively charged gaseous ion, so the terms are not repeated removals from an unchanged neutral atom. To form the triply charged gaseous ion from the neutral gaseous atom, add the first three energies, giving five thousand one hundred forty. Do not use only the third energy for the whole process. Configuration, periodic position and the stated model should support the assignment, especially when transition elements or unusual electronic states are possible.",
+      "points": [
+        "Supplied IE₁, IE₂, IE₃ · 578; 1817; 2745 · Sum = 5140 kJ/mol",
+        "IE₄ = 11577 · Large jump after third · 3 outer electrons suggested",
+        "Main-group interpretation · ns² np¹ pattern · Group 13 consistent"
+      ],
+      "board": {
+        "heading": "Infer valence from a successive-energy jump",
+        "columns": [
+          "Quantity / case",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Supplied IE₁, IE₂, IE₃",
+            "578; 1817; 2745",
+            "Sum = 5140 kJ/mol"
+          ],
+          [
+            "IE₄ = 11577",
+            "Large jump after third",
+            "3 outer electrons suggested"
+          ],
+          [
+            "Main-group interpretation",
+            "ns² np¹ pattern",
+            "Group 13 consistent"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Keep electron-gain energy signs explicit",
+      "formula": "X(g) + e⁻ → X⁻(g): negative ΔH means energy release",
+      "script": "Electron gain enthalpy describes the energy change when a gaseous species accepts an electron. Under the enthalpy change convention, an exothermic addition has a negative value. A table of electron affinity may instead report a positive magnitude for energy released, so the same physical event can appear with a different sign convention. Read the defining reaction and heading first. Suppose illustrative first electron gain enthalpies are minus three hundred twenty eight for fluorine and minus three hundred forty nine kilojoules per mole for chlorine. Chlorine releases more energy in this comparison, despite fluorine being higher in the group. The compact fluorine valence shell produces stronger repulsions for the added electron. Now distinguish adding an electron to a neutral oxygen atom from adding another to an oxygen anion. The second addition faces electrostatic repulsion and is endothermic for the isolated gaseous ion. The existence of oxide ions in solids does not contradict that fact: lattice formation and other steps contribute to the overall thermodynamic cycle. One electron gain term alone cannot decide whether an entire ionic compound forms.",
+      "points": [
+        "Enthalpy-change convention · X(g) + e⁻ → X⁻(g) · Negative = exothermic",
+        "Illustrative F and Cl · −328 versus −349 kJ/mol · Cl releases 21 kJ/mol more",
+        "Second addition to O⁻ · Repulsion from an anion · Endothermic isolated-ion step"
+      ],
+      "board": {
+        "heading": "Keep electron-gain energy signs explicit",
+        "columns": [
+          "Quantity / case",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Enthalpy-change convention",
+            "X(g) + e⁻ → X⁻(g)",
+            "Negative = exothermic"
+          ],
+          [
+            "Illustrative F and Cl",
+            "−328 versus −349 kJ/mol",
+            "Cl releases 21 kJ/mol more"
+          ],
+          [
+            "Second addition to O⁻",
+            "Repulsion from an anion",
+            "Endothermic isolated-ion step"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Compare radii defined by the same method",
+      "formula": "Covalent, metallic, van der Waals and ionic radii use different definitions",
+      "script": "An atomic radius is an operational description, not a sharply defined surface around an electron cloud. A covalent radius can be obtained from half the internuclear distance between identical bonded atoms. If a supplied homonuclear single bond distance is one hundred ninety eight picometres, that convention gives ninety nine picometres for the atom. A van der Waals radius uses nonbonded contacts and is usually larger for the same element. Metallic and ionic radii come from other structural environments. An ionic radius also depends on the stated coordination and oxidation state convention. Therefore a ranking that mixes a noble gas van der Waals value with a neighbour's covalent value can produce an apparent exception that reflects the measurement definition. Within a consistent isoelectronic series, increasing nuclear charge commonly contracts the electronic distribution; within one element, a cation is generally smaller than its neutral atom under suitable comparisons. These useful trends do not remove the need to compare compatible datasets. Check charge, electron count, coordination environment and radius definition before explaining a small numerical difference as a new periodic law.",
+      "points": [
+        "Homonuclear distance 198 pm · Covalent radius = d/2 · 99 pm",
+        "Nonbonded contact radius · Different operational definition · Do not mix blindly",
+        "Ionic radius comparison · Charge and coordination matter · Use compatible tables"
+      ],
+      "board": {
+        "heading": "Compare radii defined by the same method",
+        "columns": [
+          "Quantity / case",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Homonuclear distance 198 pm",
+            "Covalent radius = d/2",
+            "99 pm"
+          ],
+          [
+            "Nonbonded contact radius",
+            "Different operational definition",
+            "Do not mix blindly"
+          ],
+          [
+            "Ionic radius comparison",
+            "Charge and coordination matter",
+            "Use compatible tables"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Use oxide equations to support classification",
+      "formula": "Amphoteric oxides react with both acids and bases under suitable conditions",
+      "script": "Oxide acid base classification should be supported by the actual compound and a balanced reaction. Sodium oxide reacts with hydrochloric acid to form sodium chloride and water: one sodium oxide requires two hydrogen chloride units. Aluminium oxide can react with acid as well. One aluminium oxide plus six hydrogen chloride units forms two aluminium chloride units and three waters in a simplified formula equation. Under suitable aqueous strongly basic conditions, aluminium oxide can form tetrahydroxoaluminate. A balanced representation uses one aluminium oxide, two hydroxide ions and three waters to form two tetrahydroxoaluminate ions. This acid and base behaviour supports the word amphoteric. It does not mean the oxide is neutral or reacts equally rapidly under arbitrary conditions. Silicon dioxide can show acidic oxide behaviour through reactions with suitable strong bases, while conditions and product conventions must be stated. Oxidation state matters too: different oxides of the same element need not share one classification. Use a broad across period trend to organize examples, then check the actual chemistry rather than treating a left to right arrow as a substitute for an equation.",
+      "points": [
+        "Na₂O + 2HCl · → 2NaCl + H₂O · Basic oxide evidence",
+        "Al₂O₃ + 6HCl · → 2AlCl₃ + 3H₂O · Reaction with acid",
+        "Al₂O₃ + 2OH⁻ + 3H₂O · → 2[Al(OH)₄]⁻ · Reaction with base"
+      ],
+      "board": {
+        "heading": "Use oxide equations to support classification",
+        "columns": [
+          "Quantity / case",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Na₂O + 2HCl",
+            "→ 2NaCl + H₂O",
+            "Basic oxide evidence"
+          ],
+          [
+            "Al₂O₃ + 6HCl",
+            "→ 2AlCl₃ + 3H₂O",
+            "Reaction with acid"
+          ],
+          [
+            "Al₂O₃ + 2OH⁻ + 3H₂O",
+            "→ 2[Al(OH)₄]⁻",
+            "Reaction with base"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Aqueous reducing power needs the full process",
+      "formula": "More negative standard reduction potential can indicate a stronger reverse reducing tendency",
+      "script": "A gas phase ionization trend does not by itself determine the reducing strength of a metal in aqueous standard conditions. Converting a solid metal to an aqueous cation involves atomization, ionization and hydration contributions. Compare the supplied standard reduction potentials for lithium, sodium and potassium ions becoming their metals: minus three point zero four, minus two point seven one and minus two point nine three volts respectively. Reversing each half reaction describes metal oxidation. In this comparison lithium has the most negative reduction potential and the strongest standard thermodynamic reducing tendency of the three metals. This does not follow the simple expectation obtained by looking only at how easily a gas phase electron is removed down the group. Strong stabilization of the small aqueous lithium ion is part of the explanation. These potentials do not rank the observed speed or violence of a metal reacting with water. Surface condition, melting, mass transfer and reaction pathways affect that observation. Keep thermodynamic tendency, individual energy terms and reaction rate distinct. Use the stated solvent and standard conditions; changing the medium can change the comparison.",
+      "points": [
+        "Supplied E°red: Li; Na; K · −3.04; −2.71; −2.93 V · Li most negative",
+        "Reverse to metal oxidation · Consider full aqueous process · Hydration contributes",
+        "Observed reaction speed · Surface, transport and pathways · Not ranked by E° alone"
+      ],
+      "board": {
+        "heading": "Aqueous reducing power needs the full process",
+        "columns": [
+          "Quantity / case",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Supplied E°red: Li; Na; K",
+            "−3.04; −2.71; −2.93 V",
+            "Li most negative"
+          ],
+          [
+            "Reverse to metal oxidation",
+            "Consider full aqueous process",
+            "Hydration contributes"
+          ],
+          [
+            "Observed reaction speed",
+            "Surface, transport and pathways",
+            "Not ranked by E° alone"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -409,6 +588,72 @@
       ],
       "answer": 1,
       "explanation": "Both have ten electrons; Al3+ has the greater nuclear charge and smaller radius."
+    },
+    {
+      "question": "Successive IE data 578, 1817, 2745, 11577 kJ/mol show the major jump after removal number:",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "The largest jump is from IE3 to IE4, consistent with three outer electrons in the stated main-group model."
+    },
+    {
+      "question": "Using those data, energy for M(g) → M3+(g) + 3e− is:",
+      "options": [
+        "2745 kJ/mol",
+        "5140 kJ/mol",
+        "11577 kJ/mol",
+        "16600 kJ/mol"
+      ],
+      "answer": 1,
+      "explanation": "Add IE1+IE2+IE3: 578+1817+2745=5140 kJ/mol."
+    },
+    {
+      "question": "With electron-gain enthalpies F=−328 and Cl=−349 kJ/mol, chlorine releases:",
+      "options": [
+        "21 kJ/mol more",
+        "21 kJ/mol less",
+        "677 kJ/mol more",
+        "No energy"
+      ],
+      "answer": 0,
+      "explanation": "The chlorine step is 21 kJ/mol more exothermic under this enthalpy-change convention."
+    },
+    {
+      "question": "A supplied homonuclear single-bond distance of 198 pm gives covalent radius:",
+      "options": [
+        "198 pm",
+        "396 pm",
+        "49.5 pm",
+        "99 pm"
+      ],
+      "answer": 3,
+      "explanation": "The same-atom covalent radius convention takes half the internuclear distance."
+    },
+    {
+      "question": "In Al2O3 + aOH− + bH2O → 2[Al(OH)4]−, the balanced values (a,b) are:",
+      "options": [
+        "(6,0)",
+        "(2,3)",
+        "(3,2)",
+        "(1,6)"
+      ],
+      "answer": 1,
+      "explanation": "Two hydroxides conserve charge −2, and three waters complete the oxygen and hydrogen balance."
+    },
+    {
+      "question": "Given E°red Li=−3.04, Na=−2.71 and K=−2.93 V, which metal has strongest standard aqueous reducing tendency in this comparison?",
+      "options": [
+        "Na",
+        "K",
+        "Li",
+        "All reaction speeds must be equal"
+      ],
+      "answer": 2,
+      "explanation": "Li has the most negative reduction potential of the supplied three; observed reaction rate is a separate issue."
     }
   ]
 }

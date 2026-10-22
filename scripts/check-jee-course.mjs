@@ -14,7 +14,7 @@ try {
     ['Chemistry', 'mole-concept', 20, [1, 2, 1, 1, 2]],
     ['Mathematics', 'sets-and-functions', 14, [2, 0, 2, 1, 0]],
     ['Physics', 'newtons-laws', 68, [1, 1, 1, 2, 1]],
-    ['Chemistry', 'atomic-structure', 20, [0, 2, 2, 3, 1]],
+    ['Chemistry', 'atomic-structure', 20, [0, 2, 2, 3, 1, 1, 2, 0, 3, 1, 2, 2, 2, 3, 0, 1, 0, 3]],
     ['Mathematics', 'quadratic-equations', 14, [1, 1, 2, 1, 2]],
   ];
   for (const [subject, slug, count, answers] of cases) {
@@ -26,12 +26,12 @@ try {
     await page.getByRole('img').waitFor();
     await page.waitForFunction(() => [...document.images].every(image => image.complete && image.naturalWidth > 0));
     assert.equal(await page.locator('audio').count(), 0);
-    assert.equal(await page.locator('fieldset').count(), 5);
+    assert.equal(await page.locator('fieldset').count(), answers.length);
     for (const [index, answer] of answers.entries()) await page.locator('fieldset').nth(index).getByRole('radio').nth(answer).check();
-    assert.match(await page.getByRole('region', { name: 'Lesson practice' }).textContent(), /5 \/ 5 answered · 5 correct/);
+    assert.match(await page.getByRole('region', { name: 'Lesson practice' }).textContent(), new RegExp(`${answers.length} / ${answers.length} answered · ${answers.length} correct`));
     await page.reload();
-    await page.waitForFunction(() => document.querySelectorAll('input:checked').length === 5);
-    assert.equal(await page.locator('fieldset input:disabled').count(), 20);
+    await page.waitForFunction(count => document.querySelectorAll('input:checked').length === count, answers.length);
+    assert.equal(await page.locator('fieldset input:disabled').count(), answers.length * 4);
     const downloadEvent = page.waitForEvent('download');
     await page.getByRole('button', { name: 'Download notes' }).click();
     const download = await downloadEvent;

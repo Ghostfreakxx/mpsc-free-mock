@@ -9,8 +9,8 @@ Organic Principles has a thirteen-chapter Marin recording. Coordination Compound
 Chemical Kinetics, Chemical Thermodynamics and Solutions each have ten chapters.
 Equilibrium has thirteen
 chapters and Redox and Electrochemistry has fourteen. Atomic Structure and Chemical
-Bonding each have eight chapters. Mole Concept and Periodic Trends also have
-eight chapters each. Hydrocarbons and Organic Halogens each have thirteen chapters.
+Bonding each have thirteen chapters. Mole Concept has eight chapters and Periodic Trends
+has thirteen. Hydrocarbons and Organic Halogens each have thirteen chapters.
 Organic Oxygen has fifteen chapters; Organic Nitrogen and Biomolecules each have
 thirteen. Purification and Analysis has eight chapters; Practical Chemistry has thirteen.
 P-block and D/F-block each have ten chapters. All twenty recordings include
@@ -189,3 +189,13 @@ and calorimeter heat capacity: thirteen sections, six examples and sixteen MCQs.
 Each expansion has five new narrated chapters with aligned captions. These remain
 foundations; nonideal equilibria, broader electrode chemistry, complete analytical
 schemes and additional mixed problems remain.
+
+Atomic Structure, Chemical Bonding and Periodic Trends now each have thirteen narrated
+chapters. Their written companions contain ten, twelve and eleven sections respectively,
+with six worked examples each and eighteen, eighteen and sixteen original MCQs.
+Added coverage includes excitation thresholds, ensemble spectral line counting, restricted
+quantum states, orbital nodes, uncertainty bounds, Born–Haber signs, bonding versus
+antibonding ionization, lone-pair geometries, resonance averages, dipole vectors,
+successive-ionization datasets, electron-gain conventions, radius definitions, oxide
+equations and standard aqueous reducing tendencies. Complete wavefunction plots,
+heteronuclear MO schemes and further group-specific datasets remain.
