@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 // (built from app/data/practice-data.ts) and small Mizo constants from app/data/mizo-meta.ts.
 // The same goes for the JEE class data (every lecture's cues and every written lesson): the class
 // library gets slim summaries from app/jee/classes/library-summary.ts through its server page.
-const heavy = /^(?:\.\.?\/)+(?:data\/)?(reviewed-content|mizo-translations|mizo-concepts|mizo-manual|practice-data|additional-questions|expanded-practice|[a-z-]*-topics|lessons|study-lessons(?:-two)?|library-summary|[a-z-]*-study|[a-z-]*-additions)(?:\.ts)?$|^(?:\.\.?\/)+data\/jee-[a-z-]+\.json$/;
+const heavy = /^(?:\.\.?\/)+(?:data\/)?(reviewed-content|mizo-translations|mizo-concepts|mizo-manual|practice-data|additional-questions|expanded-practice|[a-z-]*-topics|lessons|study-lessons(?:-two)?|library-summary|[a-z-]*-study)(?:\.ts)?$|^(?:\.\.?\/)+data\/jee-[a-z-]+\.json$/;
 
 function* sourceFiles(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -49,5 +49,6 @@ test('the rule catches a runtime import and allows a type-only one', () => {
   assert.ok(!heavy.test('./data/mizo-meta'));
   assert.ok(!heavy.test('./study-download'));
   assert.ok(!heavy.test('./practice-quiz'));
+  assert.ok(!heavy.test('./kinetics-coordination-additions'));
   assert.ok(!/^import\s+(?!type\b)/.test('import type { PracticeQuestion } from "./data/practice-data";'));
 });
