@@ -4,14 +4,14 @@ import Link from "next/link";
 import { useState } from "react";
 import { ArrowRight, BookOpen, Clock } from "lucide-react";
 import { courseUnits, subjects, syllabusBaseline, syllabusPdf, type Subject } from "./course";
-import { lectures } from "./lessons";
-import { studyLessons } from "./study-lessons";
+import type { RecordingSummary, WrittenSummary } from "./library-summary";
 import ClassProgress from "./class-progress";
 import { physicsCoverage } from "./physics-coverage";
 import { groupRecordings } from "./recording-groups";
 import styles from "./lecture.module.css";
 
-export default function CourseLibrary() {
+// The server page passes slim summaries; importing the lessons here would ship every lecture's cues.
+export default function CourseLibrary({ lectures, studyLessons }: { lectures: RecordingSummary[]; studyLessons: WrittenSummary[] }) {
   const [subject, setSubject] = useState<Subject>("Physics");
   const available = studyLessons.filter(lesson => lesson.subject === subject);
   const subjectRecordings = lectures.filter(lesson => (lesson.subject ?? "Physics") === subject);
@@ -34,7 +34,7 @@ export default function CourseLibrary() {
       {available.map(lesson => <article key={lesson.id}>
         <div className={styles.lessonNumber}><BookOpen size={28} /><span>U{lesson.unit}</span></div>
         <div><h3>{lesson.title}</h3><p>{lesson.summary}</p>
-          <p className={styles.lessonMeta}>{subjectRecordings.some(recording => recording.id === lesson.id) ? "Written notes + recorded class" : "Written lesson"} <span>{lesson.examples.length} worked examples</span><span>{lesson.quiz.length} practice checks</span></p>
+          <p className={styles.lessonMeta}>{subjectRecordings.some(recording => recording.id === lesson.id) ? "Written notes + recorded class" : "Written lesson"} <span>{lesson.exampleCount} worked examples</span><span>{lesson.quizCount} practice checks</span></p>
           {lectures.some(recording => recording.id === lesson.id) ? <Link href={`/jee/classes/${lesson.id}`}>Watch recorded class <ArrowRight size={17} /></Link> : <p>Marin recording not yet available</p>}
           <Link href={`/jee/classes/study/${lesson.id}`}>Read lesson <ArrowRight size={17} /></Link>
         </div>
