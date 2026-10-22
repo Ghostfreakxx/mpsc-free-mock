@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 // Browser code must not import the full question bank or the Mizo translation engine: they would be
 // bundled into every page's JavaScript. Pages get their stream's questions from /question-bank/<stream>
@@ -20,7 +21,7 @@ function* sourceFiles(dir) {
 
 test('client components import no question-bank, Mizo-engine or JEE class-data modules at runtime', () => {
   const offenders = [];
-  for (const file of sourceFiles(new URL('../app', import.meta.url).pathname)) {
+  for (const file of sourceFiles(fileURLToPath(new URL('../app', import.meta.url)))) {
     const source = fs.readFileSync(file, 'utf8');
     if (!/^\s*["']use client["']/.test(source)) continue;
     for (const match of source.matchAll(/^import\s+(?!type\b)[^;]*?from\s+["']([^"']+)["']/gm)) {

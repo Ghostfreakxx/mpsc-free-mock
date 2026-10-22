@@ -25,6 +25,10 @@
     {
       "title": "OpenStax: entropy",
       "url": "https://openstax.org/books/chemistry-2e/pages/16-2-entropy"
+    },
+    {
+      "title": "OpenStax: adiabatic ideal-gas processes (supporting application)",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/3-6-adiabatic-processes-for-an-ideal-gas"
     }
   ],
   "chapters": [
@@ -252,6 +256,181 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Compare reversible and constant-pressure expansion",
+      "formula": "wrev = −nRT ln(V₂/V₁); wconstant = −PextΔV",
+      "script": "Work depends on the path even when an ideal gas begins and ends at the same temperature and volumes. Consider one mole at three hundred kelvin expanding from two to four litres. For a reversible isothermal path, work done on the gas in the Chemistry sign convention is minus n R T times the natural logarithm of two. Using R eight point three one four joules per mole kelvin gives about minus one point seven two nine kilojoules. Now compare an isothermal expansion against constant external pressure equal to the final ideal gas pressure. The final pressure is n R T divided by the final volume. Multiplying that pressure by the two litre volume increase gives work about minus one point two four seven kilojoules. Use compatible volume units in both factors. The reversible path supplies a greater magnitude of expansion work between these endpoints. For the ideal gas, internal energy change is zero in both isothermal cases, so heat entering balances the negative work. Reversible does not mean zero work, and isothermal does not mean zero heat. The comparison assumes only pressure volume work, the stated ideal gas model and suitable heat exchange to maintain temperature.",
+      "points": [
+        "Reversible isothermal · −8.314×300×ln 2 · w ≈ −1.729 kJ",
+        "Constant Pext = final pressure · −nRT(1 − V₁/V₂) · w ≈ −1.247 kJ",
+        "Both ideal-gas isothermal paths · ΔU = 0; q = −w · Heat is path dependent"
+      ],
+      "board": {
+        "heading": "Compare reversible and constant-pressure expansion",
+        "columns": [
+          "Case / quantity",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Reversible isothermal",
+            "−8.314×300×ln 2",
+            "w ≈ −1.729 kJ"
+          ],
+          [
+            "Constant Pext = final pressure",
+            "−nRT(1 − V₁/V₂)",
+            "w ≈ −1.247 kJ"
+          ],
+          [
+            "Both ideal-gas isothermal paths",
+            "ΔU = 0; q = −w",
+            "Heat is path dependent"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Adiabatic compression need not be isothermal",
+      "formula": "Reversible ideal gas: TV^(γ−1) = constant; q = 0",
+      "script": "Adiabatic means no heat transfer, not unchanged temperature. As a supporting ideal gas application, take one mole of a monatomic gas initially at three hundred kelvin. Compress it reversibly and adiabatically to half its initial volume, using constant molar heat capacities and gamma equal to five thirds. The reversible ideal gas relation gives final temperature equal to three hundred times two raised to the two thirds power, or about four hundred seventy six point two kelvin. Internal energy rises by n C V times the temperature increase. With C V equal to three halves R, the rise is about two point one nine eight kilojoules using R eight point three one four. Heat is zero, so work done on the gas is positive by that amount in the Chemistry convention. An irreversible adiabatic change still has zero heat, but it cannot automatically use the same reversible volume temperature relation. Likewise a gas with temperature dependent heat capacities needs a more careful calculation. State reversibility, ideal behaviour and constant heat capacities before applying this power law. The example reinforces first law signs rather than replacing the separate Physics treatment of complete gas cycles.",
+      "points": [
+        "V₂ = V₁/2; γ = 5/3 · T₂ = 300×2^(2/3) · 476.2 K",
+        "CV = 3R/2 · nCV(T₂ − T₁) · ΔU ≈ +2.198 kJ",
+        "Adiabatic: q = 0 · ΔU = q + w · w ≈ +2.198 kJ"
+      ],
+      "board": {
+        "heading": "Adiabatic compression need not be isothermal",
+        "columns": [
+          "Case / quantity",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "V₂ = V₁/2; γ = 5/3",
+            "T₂ = 300×2^(2/3)",
+            "476.2 K"
+          ],
+          [
+            "CV = 3R/2",
+            "nCV(T₂ − T₁)",
+            "ΔU ≈ +2.198 kJ"
+          ],
+          [
+            "Adiabatic: q = 0",
+            "ΔU = q + w",
+            "w ≈ +2.198 kJ"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Correct a reaction enthalpy for temperature",
+      "formula": "Constant ΔCp model: ΔH(T₂) = ΔH(T₁) + ΔCp(T₂−T₁)",
+      "script": "A reaction enthalpy quoted at one temperature need not have exactly the same value at another. A Hess cycle can connect the temperatures by warming reactants and products through their respective heat capacities. The reaction heat capacity change is the sum of product heat capacities with stoichiometric coefficients minus the corresponding reactant sum. If that difference is approximately constant over the range and no phase transition intervenes, the enthalpy correction is reaction heat capacity change times the temperature increase. Take a supplied reaction enthalpy minus one hundred kilojoules per mole at two hundred ninety eight kelvin and reaction heat capacity change plus fifty joules per mole kelvin. Raising the temperature to three hundred ninety eight kelvin adds plus five kilojoules per mole, so the corrected reaction enthalpy is minus ninety five. The reaction remains exothermic in this model but is less exothermic at the higher temperature. Convert joules into kilojoules before adding. If heat capacity varies, keep it inside the temperature integral; if a phase transition occurs, include its enthalpy separately. This is a supporting temperature correction derived from state functions, not permission to extrapolate a constant heat capacity indefinitely.",
+      "points": [
+        "Supplied ΔH at 298 K · −100 kJ/mol · Reference temperature",
+        "ΔCp = +50 J/(mol K) · 50×(398−298) / 1000 · +5.00 kJ/mol correction",
+        "Corrected ΔH at 398 K · −100 + 5.00 · −95.0 kJ/mol"
+      ],
+      "board": {
+        "heading": "Correct a reaction enthalpy for temperature",
+        "columns": [
+          "Case / quantity",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Supplied ΔH at 298 K",
+            "−100 kJ/mol",
+            "Reference temperature"
+          ],
+          [
+            "ΔCp = +50 J/(mol K)",
+            "50×(398−298) / 1000",
+            "+5.00 kJ/mol correction"
+          ],
+          [
+            "Corrected ΔH at 398 K",
+            "−100 + 5.00",
+            "−95.0 kJ/mol"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Build reaction entropy from a balanced table",
+      "formula": "ΔrS° = ΣνS°products − ΣνS°reactants",
+      "script": "Standard molar entropy values are combined with the balanced reaction coefficients, not simply compared one species at a time. Use the written reaction one nitrogen molecule plus three hydrogen molecules giving two ammonia molecules, all gaseous. Suppose supplied standard molar entropies are one hundred ninety two, one hundred thirty one and one hundred ninety three joules per mole kelvin for nitrogen, hydrogen and ammonia respectively. The product sum is two times one hundred ninety three, or three hundred eighty six. The reactant sum is one hundred ninety two plus three times one hundred thirty one, or five hundred eighty five. Reaction entropy is therefore minus one hundred ninety nine joules per mole of reaction kelvin. All individual entropy values are positive while their reaction difference is negative. If the supplied reaction enthalpy is minus ninety two kilojoules per mole of reaction at two hundred ninety eight kelvin, standard Gibbs energy is about minus thirty two point seven kilojoules after converting the entropy units. The coefficients define the reaction amount throughout. This calculation uses the stated standard states and supplied rounded data, not a claim that every entropy can be inferred solely from counting gas molecules.",
+      "points": [
+        "Product entropy sum · 2×193 · 386 J/(mol reaction K)",
+        "Reactant entropy sum · 192 + 3×131 · 585 J/(mol reaction K)",
+        "ΔrS° = −199 J/(mol K) · −92 − 298×(−0.199) · ΔrG° ≈ −32.7 kJ/mol"
+      ],
+      "board": {
+        "heading": "Build reaction entropy from a balanced table",
+        "columns": [
+          "Case / quantity",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Product entropy sum",
+            "2×193",
+            "386 J/(mol reaction K)"
+          ],
+          [
+            "Reactant entropy sum",
+            "192 + 3×131",
+            "585 J/(mol reaction K)"
+          ],
+          [
+            "ΔrS° = −199 J/(mol K)",
+            "−92 − 298×(−0.199)",
+            "ΔrG° ≈ −32.7 kJ/mol"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Match constant-volume heat to the written reaction",
+      "formula": "For ideal gases: ΔrH = ΔrU + ΔngRT",
+      "script": "A constant volume heat measurement and a reaction enthalpy are not automatically the same number. For a closed reaction system with only pressure volume work, constant volume heat gives internal energy change. At constant pressure the corresponding heat gives enthalpy change under the usual conditions. Consider the supplied illustrative reaction data for two hydrogen molecules plus one oxygen molecule forming two liquid water molecules at three hundred kelvin. Let internal energy change be minus five hundred sixty kilojoules per mole of that written reaction. Only gaseous species enter the ideal gas mole correction: there are zero gaseous product moles and three gaseous reactant moles, so the change is minus three. Using R zero point zero zero eight three one four kilojoules per mole kelvin, the enthalpy is minus five hundred sixty minus seven point four eight three, or about minus five hundred sixty seven point four eight kilojoules per mole of reaction. Producing one mole of liquid water corresponds to half the written reaction, so both energy changes must be halved for that basis. Including liquid water in the gas count would give the wrong correction. Preserve phases, coefficients and the stated reaction basis before comparing heat measurements.",
+      "points": [
+        "2H₂(g) + O₂(g) → 2H₂O(l) · Δng = 0 − 3 · −3",
+        "Given ΔrU = −560 kJ/mol · ΔngRT = −3×0.008314×300 · −7.483 kJ/mol",
+        "ΔrH for written reaction · −560 − 7.483 · −567.48 kJ/mol"
+      ],
+      "board": {
+        "heading": "Match constant-volume heat to the written reaction",
+        "columns": [
+          "Case / quantity",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "2H₂(g) + O₂(g) → 2H₂O(l)",
+            "Δng = 0 − 3",
+            "−3"
+          ],
+          [
+            "Given ΔrU = −560 kJ/mol",
+            "ΔngRT = −3×0.008314×300",
+            "−7.483 kJ/mol"
+          ],
+          [
+            "ΔrH for written reaction",
+            "−560 − 7.483",
+            "−567.48 kJ/mol"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -386,6 +565,72 @@
       ],
       "answer": 2,
       "explanation": "Convert entropy to −0.010 kJ/(mol K): −6 − 300(−0.010) = −3."
+    },
+    {
+      "question": "One mol ideal gas expands reversibly and isothermally from 2 to 4 L at 300 K. With R=8.314 J/(mol K), work on the gas is approximately:",
+      "options": [
+        "+1.729 kJ",
+        "−1.247 kJ",
+        "−1.729 kJ",
+        "0 kJ"
+      ],
+      "answer": 2,
+      "explanation": "Use Chemistry work sign w=−nRT ln(V2/V1); expansion work is negative, and ln2 gives about −1.729 kJ."
+    },
+    {
+      "question": "For reversible adiabatic compression of a constant-CV ideal monatomic gas from 300 K to half volume, γ=5/3 gives T2 approximately:",
+      "options": [
+        "150 K",
+        "300 K",
+        "600 K",
+        "476.2 K"
+      ],
+      "answer": 3,
+      "explanation": "TV^(γ−1) is constant, so T2=300×2^(2/3). This supporting application requires the reversible ideal-gas assumptions."
+    },
+    {
+      "question": "With ΔH298=−100 kJ/mol and constant ΔCp=+50 J/(mol K), ΔH398 is:",
+      "options": [
+        "−95.0 kJ/mol",
+        "−105 kJ/mol",
+        "+50 kJ/mol",
+        "−50 kJ/mol"
+      ],
+      "answer": 0,
+      "explanation": "The 100 K increase adds +5000 J/mol=+5 kJ/mol to the supplied reaction enthalpy."
+    },
+    {
+      "question": "For N2+3H2→2NH3 with supplied S° values 192, 131, 193 J/(mol K), ΔrS° is:",
+      "options": [
+        "+199 J/(mol K)",
+        "−199 J/(mol K)",
+        "−68 J/(mol K)",
+        "+386 J/(mol K)"
+      ],
+      "answer": 1,
+      "explanation": "Multiply by coefficients before subtracting: 2×193−192−3×131=−199 J/(mol reaction K)."
+    },
+    {
+      "question": "Using that ΔrS°, ΔrH°=−92 kJ/mol and T=298 K gives ΔrG° approximately:",
+      "options": [
+        "−151.3 kJ/mol",
+        "+32.7 kJ/mol",
+        "−32.7 kJ/mol",
+        "+151.3 kJ/mol"
+      ],
+      "answer": 2,
+      "explanation": "Convert −199 J/(mol K) to −0.199 kJ/(mol K), then calculate −92−298×(−0.199)."
+    },
+    {
+      "question": "For 2H2(g)+O2(g)→2H2O(l), given ΔrU=−560 kJ/mol at 300 K and R=0.008314 kJ/(mol K), ΔrH is approximately:",
+      "options": [
+        "−557.51 kJ/mol",
+        "−562.49 kJ/mol",
+        "−552.52 kJ/mol",
+        "−567.48 kJ/mol"
+      ],
+      "answer": 3,
+      "explanation": "Only gases count: Δng=−3. Add −3RT to the supplied internal energy for the written reaction."
     }
   ]
 }

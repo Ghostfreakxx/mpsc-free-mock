@@ -1,3 +1,4 @@
+import { pBlockThermoSolutionsAdditions } from "./p-block-thermo-solutions-additions";
 import styles from "./lecture.module.css";
 import { physicalChemistryAdditions } from "./physical-chemistry-additions";
 
@@ -8,7 +9,7 @@ const headings={
 
 export default function PhysicalChemistryDiagram({lesson,chapter}:{lesson:keyof typeof headings;chapter:number}) {
  if (chapter >= 5) {
-  const board = physicalChemistryAdditions[lesson].chapters[chapter - 5].board;
+  const board = chapter >= 10 ? pBlockThermoSolutionsAdditions[lesson].chapters[chapter - 10].board : physicalChemistryAdditions[lesson].chapters[chapter - 5].board;
   return <svg className={styles.diagram} viewBox="0 0 460 310" role="img" aria-label={board.heading}>
    <title>{board.heading}</title><rect width="460" height="310" rx="12" fill="#f5faf7" />
    <g fill="#20483e" fontFamily="Arial, sans-serif" fontSize="14">

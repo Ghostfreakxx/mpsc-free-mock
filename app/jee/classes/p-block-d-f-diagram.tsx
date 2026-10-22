@@ -7,6 +7,13 @@ const recordings={"p-block":pBlock,"d-f-block":dFBlock};
 export default function PBlockDFDiagram({lesson,chapter}:{lesson:keyof typeof recordings;chapter:number}) {
  if(lesson==="d-f-block" && chapter===12)return <AnalysisFOccupancyDiagram kind="manganate"/>;
  if(lesson==="d-f-block" && chapter===14)return <AnalysisFOccupancyDiagram kind="f-occupancy"/>;
+ if(lesson==="p-block" && chapter===11)return <svg className={styles.diagram} viewBox="0 0 460 310" role="img" aria-label="Diborane connectivity: four terminal bonds and two electron-deficient bridges">
+ <title>Diborane: connectivity projection</title><rect width="460" height="310" rx="12" fill="#f5faf7"/>
+ <g fontFamily="Arial, sans-serif" fill="#20483e" textAnchor="middle"><text x="230" y="30" fontSize="18">Diborane: connectivity projection</text>
+ <path d="M155 150L85 100M155 150L85 200M305 150L375 100M305 150L375 200" stroke="#146b55" strokeWidth="3"/>
+ <path d="M155 150L230 75L305 150M155 150L230 225L305 150" stroke="#b54e32" strokeWidth="3" strokeDasharray="7 5" fill="none"/>
+ {[[155,150,'B'],[305,150,'B'],[75,95,'H'],[75,210,'H'],[385,95,'H'],[385,210,'H'],[230,70,'H'],[230,240,'H']].map(([x,y,label],i)=><g key={i}><circle cx={x} cy={Number(y)-6} r="15" fill="#f5faf7"/><text x={x} y={y} fontSize="21">{label}</text></g>)}
+ <text x="230" y="155" fontSize="14">No ordinary B–B bond</text><text x="230" y="277" fontSize="15">Each dashed B–H–B bridge shares 2 electrons</text><text x="230" y="299" fontSize="13">4 terminal bonds: 8 e⁻ · 2 bridges: 4 e⁻</text></g></svg>;
  const board=recordings[lesson].chapters[chapter].board;
  return <svg className={styles.diagram} viewBox="0 0 460 310" role="img" aria-label={board.heading}>
   <title>{board.heading}</title><rect width="460" height="310" rx="12" fill="#f5faf7" />
