@@ -1,3 +1,4 @@
+import { extendHalogensOxygenBiomoleculesLesson } from "./halogens-oxygen-biomolecules-study.ts";
 import type { StudyLesson } from "./course";
 import { oxygenNitrogenBiomoleculesAdditions } from "./oxygen-nitrogen-biomolecules-additions.ts";
 
@@ -9,7 +10,7 @@ export const oxygenNitrogenLessons: StudyLesson[] = [
     title: "Organic oxygen: alcohols, carbonyls and carboxylic acids",
     summary: "Recognize oxygen functional groups and connect acidity, oxidation and carbonyl reactions with structure.",
     prerequisites: "Organic principles, hydrocarbons, nucleophiles and reaction-condition reasoning.",
-    remaining: "Written companion to the fifteen-chapter Marin recording for Unit 17. It includes reduction selectivity, chemical-test evidence, phenol named reactions, aldol/Cannizzaro carbon ledgers and esterification equilibrium. Full mechanisms, carbonyl stereochemical drawings and longer synthesis problems remain. Original practice, not exhaustive coverage or official PYQs.",
+    remaining: "Written companion to the nineteen-chapter Marin recording for Unit 17. It includes reduction selectivity, chemical-test evidence, phenol named reactions, aldol/Cannizzaro carbon ledgers and esterification equilibrium. Full mechanisms, carbonyl stereochemical drawings and longer synthesis problems remain. Original practice, not exhaustive coverage or official PYQs.",
     sections: [
       { title: "Identify where oxygen is bonded", paragraphs: ["An alcohol has OH attached to a saturated carbon; a phenol has OH directly on an aromatic ring. An ether links two carbon groups through oxygen. An aldehyde has a carbonyl carbon attached to at least one hydrogen, whereas a ketone has two carbon substituents. A carboxylic acid contains a carbonyl and OH at the same carbon.", "Classify alcohols by the number of carbon groups attached to the carbon carrying OH, not by counting every OH in the molecule. Ethanol is primary, propan-2-ol secondary and 2-methylpropan-2-ol tertiary. This classification helps predict oxidation and dehydration, but the reagent still decides what reaction actually occurs."], formula: "Alcohol: R-OH; ether: R-O-R'; aldehyde: R-CHO; ketone: R-CO-R'; acid: R-COOH" },
       { title: "Oxidation and dehydration change different bonds", paragraphs: ["A primary alcohol can oxidize to an aldehyde under suitable controlled conditions, or further to a carboxylic acid with stronger aqueous oxidation. A secondary alcohol gives a ketone. A tertiary alcohol lacks the hydrogen on its OH-bearing carbon needed for the usual direct oxidation; harsh oxidation may instead break carbon-carbon bonds.", "Acid-catalysed dehydration removes water to make an alkene. Protonating OH makes water a better leaving group. Secondary and tertiary substrates can involve carbocations and rearrangement; do not require a free primary carbocation for every primary alcohol. Heating ethanol with suitable acid can form ethene, while different temperatures and conditions can favour ether formation."], formula: "CH3CH2OH -> CH3CHO -> CH3COOH: successive oxidation, with suitable reagents" },
@@ -84,3 +85,5 @@ for(const lesson of oxygenNitrogenLessons){
     {question:'In water at 25 °C, compare bases with pKb 4 and 9, then find the conjugate-acid pKa of the first.',steps:['Kb values are 10^−4 and 10^−9, a ratio 10^5.','The smaller pKb identifies the stronger base under matched conditions.','For the conjugate pair, pKa+pKb≈14, so pKa≈10.'],answer:'The first Kb is 100000 times larger; its conjugate-acid pKa is approximately 10.'},
   );
 }
+
+for (const lesson of oxygenNitrogenLessons) extendHalogensOxygenBiomoleculesLesson(lesson);

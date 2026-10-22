@@ -29,6 +29,10 @@
     {
       "title": "OpenStax: amino acids",
       "url": "https://openstax.org/books/organic-chemistry/pages/26-1-structures-of-amino-acids"
+    },
+    {
+      "title": "NPTEL: mutarotation and carbohydrate structures",
+      "url": "https://archive.nptel.ac.in/content/storage2/courses/104103071/module11/lec30/3.html"
     }
   ],
   "chapters": [
@@ -486,6 +490,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "DNA base percentages require a defined strand set",
+      "formula": "Canonical paired double-stranded DNA: A = T and G = C overall",
+      "script": "A DNA base percentage problem must say whether its data describe one strand or the complete paired molecule. For ordinary double stranded DNA with canonical complementary pairing, adenine pairs with thymine and guanine with cytosine. Across the complete two strand molecule, adenine and thymine counts are equal, and guanine and cytosine counts are equal. If adenine is thirty percent of all bases, thymine is also thirty percent, leaving forty percent shared equally between guanine and cytosine. Each of those is twenty percent. Take a molecule containing one thousand base pairs, hence two thousand individual bases. The counts are six hundred adenines, six hundred thymines, four hundred guanines and four hundred cytosines. There are six hundred A T pairs and four hundred G C pairs. Counting two hydrogen bonds per A T pair and three per G C pair gives two thousand four hundred in the standard pairing model. One isolated strand need not have equal adenine and thymine percentages. Mismatches, single stranded material or noncanonical chemistry require the stated model to be reconsidered. Hydrogen bond counts alone also do not determine a DNA melting temperature, which depends on more structural and solution factors.",
+      "points": [
+        "A = 30% of all bases · T=30%; G=C=20% · Both strands counted together",
+        "1000 base pairs · 600 AT + 400 GC pairs · 2000 individual bases",
+        "Canonical H-bond count · 2×600 + 3×400 · 2400 hydrogen bonds"
+      ],
+      "board": {
+        "heading": "DNA base percentages require a defined strand set",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "A = 30% of all bases",
+            "T=30%; G=C=20%",
+            "Both strands counted together"
+          ],
+          [
+            "1000 base pairs",
+            "600 AT + 400 GC pairs",
+            "2000 individual bases"
+          ],
+          [
+            "Canonical H-bond count",
+            "2×600 + 3×400",
+            "2400 hydrogen bonds"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A nucleotide is not just a base or a nucleoside",
+      "formula": "Base + sugar = nucleoside; addition of phosphate gives a nucleotide",
+      "script": "The terms base, nucleoside and nucleotide identify different amounts of molecular structure. A nitrogenous base attached to a pentose sugar is a nucleoside. Including phosphate gives a nucleotide. In the familiar nucleic acid backbone, phosphodiester links connect the three prime position of one sugar with the five prime position associated with the next nucleotide. The primes distinguish sugar carbon numbering from the base numbering. DNA normally contains deoxyribose, whereas RNA contains ribose with a hydroxyl at the two prime position. That sugar difference is separate from the usual thymine versus uracil base comparison. For an unbranched linear strand containing ten nucleotide residues, there are nine internucleotide phosphodiester links. This does not mean there are always exactly nine phosphate groups: a terminal phosphate may add another, depending on how the ends are specified. A circular unbranched strand has a different link count because its ends join. Likewise, a double stranded DNA fragment consists of two covalently separate backbones connected through base pairing, not one continuous strand crossing between the bases. Count residues, links and terminal groups as distinct quantities before inferring composition.",
+      "points": [
+        "Base + pentose · No phosphate required · Nucleoside",
+        "Nucleoside + phosphate · Sugar numbering uses primes · Nucleotide",
+        "10-residue linear strand · n − 1 internucleotide links · 9 links; ends specified separately"
+      ],
+      "board": {
+        "heading": "A nucleotide is not just a base or a nucleoside",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Base + pentose",
+            "No phosphate required",
+            "Nucleoside"
+          ],
+          [
+            "Nucleoside + phosphate",
+            "Sugar numbering uses primes",
+            "Nucleotide"
+          ],
+          [
+            "10-residue linear strand",
+            "n − 1 internucleotide links",
+            "9 links; ends specified separately"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Protein denaturation and peptide hydrolysis are different",
+      "formula": "Ordinary denaturation changes folding without normally cleaving the peptide backbone",
+      "script": "Protein structure can change without cutting its amino acid sequence into separate molecules. Ordinary denaturation disrupts the interactions that maintain a native fold, so secondary, tertiary or quaternary organization and biological activity can be altered. The peptide backbone is not normally hydrolyzed merely by calling a process denaturation. Hydrolysis instead cleaves peptide bonds with chemical consumption of water and creates additional chain ends. For one ideal linear pentapeptide with no crosslinks, there are four peptide bonds. Complete hydrolysis consumes four water molecules per peptide molecule and gives five amino acid molecules. Breaking only one internal peptide bond gives two shorter peptide fragments, not five free amino acids. Disulfide bridges are another covalent connection: changing their oxidation state is distinct from cleaving an amide bond in the main chain. Real unfolding can be accompanied by aggregation, side reactions or loss of disulfide structure under particular treatments, so reversibility is not guaranteed. The useful distinction is which bonds and interactions are specified to change. Do not infer complete amino acid release or a new primary sequence solely from loss of native shape or enzyme activity.",
+      "points": [
+        "Native fold disrupted · Peptide sequence usually retained · Denaturation ≠ full hydrolysis",
+        "Linear pentapeptide · 5 residues − 1 · 4 peptide bonds",
+        "Complete hydrolysis · Consume 4 H₂O per molecule · 5 free amino acid molecules"
+      ],
+      "board": {
+        "heading": "Protein denaturation and peptide hydrolysis are different",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Native fold disrupted",
+            "Peptide sequence usually retained",
+            "Denaturation ≠ full hydrolysis"
+          ],
+          [
+            "Linear pentapeptide",
+            "5 residues − 1",
+            "4 peptide bonds"
+          ],
+          [
+            "Complete hydrolysis",
+            "Consume 4 H₂O per molecule",
+            "5 free amino acid molecules"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Estimate anomer fractions from supplied rotation data",
+      "formula": "Rotationmix = fα rotationα + (1−fα) rotationβ",
+      "script": "Mutarotation describes a change in optical rotation as an interconverting sugar mixture approaches its equilibrium composition. For a numerical glucose example, suppose the supplied specific rotations are plus one hundred twelve for the alpha form, plus eighteen point seven for the beta form, and plus fifty two point seven for the equilibrium mixture, all at matching measurement conditions. Use an explicit two form model that neglects minor open chain and other ring forms. Let the alpha fraction be f. The weighted rotation is one hundred twelve times f plus eighteen point seven times one minus f. Solving gives f equal to thirty four divided by ninety three point three, approximately zero point three six four. The beta fraction is therefore about zero point six three six. Both pure forms are dextrorotatory in this example, so the equilibrium is not a racemate with zero rotation. Alpha and beta describe the anomeric relationship, while D describes configuration relative to a reference structure; these labels do not by themselves state the sign of optical rotation for every sugar. The estimate uses the supplied rotations and additive mixture model, rather than claiming that every glucose solution at every temperature has exactly these fractions.",
+      "points": [
+        "Given α +112; β +18.7 · Mixture +52.7 · Same measurement conditions",
+        "Alpha fraction · (52.7−18.7)/(112−18.7) · fα ≈ 0.364",
+        "Two-form approximation · fβ = 1 − fα · β ≈ 63.6%; not a racemate"
+      ],
+      "board": {
+        "heading": "Estimate anomer fractions from supplied rotation data",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Given α +112; β +18.7",
+            "Mixture +52.7",
+            "Same measurement conditions"
+          ],
+          [
+            "Alpha fraction",
+            "(52.7−18.7)/(112−18.7)",
+            "fα ≈ 0.364"
+          ],
+          [
+            "Two-form approximation",
+            "fβ = 1 − fα",
+            "β ≈ 63.6%; not a racemate"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -664,6 +808,94 @@
       ],
       "answer": 2,
       "explanation": "One condensation loses one water: 75 + 89 − 18 = 146 g/mol."
+    },
+    {
+      "question": "Canonical double-stranded DNA has adenine 30% of all bases. Guanine is:",
+      "options": [
+        "30%",
+        "40%",
+        "20%",
+        "70%"
+      ],
+      "answer": 2,
+      "explanation": "A=T=30% leaves 40% for G+C; complementary pairing gives G=C=20% overall."
+    },
+    {
+      "question": "For 1000 canonical DNA base pairs with 600 AT pairs and 400 GC pairs, the standard hydrogen-bond count is:",
+      "options": [
+        "2000",
+        "3000",
+        "1400",
+        "2400"
+      ],
+      "answer": 3,
+      "explanation": "Two bonds for each AT pair and three for each GC pair give 1200+1200=2400."
+    },
+    {
+      "question": "A base attached to a pentose but without phosphate is a:",
+      "options": [
+        "Nucleoside",
+        "Nucleotide triphosphate",
+        "Peptide",
+        "Phosphodiester link"
+      ],
+      "answer": 0,
+      "explanation": "The base-plus-sugar unit is a nucleoside; phosphate distinguishes a nucleotide."
+    },
+    {
+      "question": "An unbranched linear 10-residue nucleic-acid strand has how many internucleotide phosphodiester links?",
+      "options": [
+        "10",
+        "9",
+        "20",
+        "11"
+      ],
+      "answer": 1,
+      "explanation": "Joining n residues in a linear chain requires n−1 links. Terminal phosphate groups are a separate count."
+    },
+    {
+      "question": "Ordinary protein denaturation by itself normally:",
+      "options": [
+        "Completely releases all amino acids",
+        "Reverses every peptide bond",
+        "Alters native folding while retaining the peptide sequence",
+        "Converts DNA into RNA"
+      ],
+      "answer": 2,
+      "explanation": "Denaturation changes higher-order organization; complete peptide hydrolysis is a different chemical change."
+    },
+    {
+      "question": "Complete hydrolysis of one ideal linear pentapeptide with no crosslinks consumes how many water molecules?",
+      "options": [
+        "5",
+        "1",
+        "6",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "Five residues form four peptide bonds, each requiring one water for hydrolytic cleavage."
+    },
+    {
+      "question": "Using the two-form supplied-rotation model with alpha +112, beta +18.7 and mixture +52.7, the alpha fraction is about:",
+      "options": [
+        "0.364",
+        "0.636",
+        "0.500",
+        "0.187"
+      ],
+      "answer": 0,
+      "explanation": "Solve f=(52.7−18.7)/(112−18.7)=34/93.3≈0.364."
+    },
+    {
+      "question": "The positive equilibrium rotation in that glucose example means the mixture is:",
+      "options": [
+        "Necessarily an equal enantiomer mixture",
+        "Not a zero-rotation racemate",
+        "Entirely open chain",
+        "Always exactly half alpha"
+      ],
+      "answer": 1,
+      "explanation": "The anomer mixture has a positive weighted rotation; alpha and beta are not an enantiomeric racemate."
     }
   ]
 }

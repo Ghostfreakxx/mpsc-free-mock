@@ -31,21 +31,21 @@ Questions are original practice, not represented as official PYQs.
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 13 | 13 | 6 | 16 / 16 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 13 | 16 | 11 | 20 / 20 |
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 13 | 13 | 6 | 16 / 16 |
-| 16 | [Organic Halogens](/jee/classes/organic-halogens) | 13 | 13 | 6 | 16 / 16 |
-| 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 15 | 13 | 6 | 16 / 16 |
+| 16 | [Organic Halogens](/jee/classes/organic-halogens) | 17 | 17 | 9 | 24 / 24 |
+| 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 19 | 17 | 9 | 24 / 24 |
 | 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 13 | 13 | 6 | 16 / 16 |
-| 19 | [Biomolecules](/jee/classes/biomolecules) | 13 | 13 | 6 | 16 / 16 |
+| 19 | [Biomolecules](/jee/classes/biomolecules) | 17 | 17 | 9 | 24 / 24 |
 | 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 13 | 13 | 6 | 16 / 16 |
 
 ## Latest expansion
 
-Kinetics adds Arrhenius axis conventions, fractional initial-rate orders, dilution versus chemical conversion and a clearly labelled supporting model of competing first-order pathways.
+Organic Halogens adds halogen-exchange conditions, mixed Wurtz connectivity counts, Grignard carbonyl carbon ledgers and separate elimination connectivity/stereoisomer counts. Counts of possible products do not imply equal yields.
 
-Coordination Compounds adds coordination and hydrate isomerism, intact-sphere chloride accounting, octahedral versus tetrahedral d³ stabilization and EDTA donor-count/titration problems. The orbital diagram distinguishes equal unpaired counts from different orbital energy contributions.
+Organic Oxygen adds mixed-aldol donor/acceptor roles, limiting hydroxide in ester hydrolysis, cyanohydrin carbon and chirality accounting, and acid-constant versus hydrogen-ion ratios under explicit approximation conditions.
 
-Equilibrium adds reaction-equation transformations of K, pure-solid coexistence and partial pressure, a weak-base quadratic with an invalid small-ionization shortcut, and selective precipitation onset and separation limits.
+Biomolecules adds double-stranded DNA base and hydrogen-bond counts, nucleotide terminology and backbone links, denaturation versus peptide hydrolysis, and anomer fractions from supplied rotation data. Minor glucose forms are explicitly neglected only in the stated two-form calculation.
 
-Together this batch adds twelve narrated chapters, twenty-four original MCQs and nine worked examples. All three written quizzes match their recorded companions. Competing pathways are supporting applications rather than a claim of a newly required syllabus item.
+Together this batch adds twelve narrated chapters, twenty-four original MCQs and nine worked examples. Each written quiz matches its recorded companion. Narrated names distinguish aldehydes from similarly named alcohols.
 
 ## Remaining scope
 
@@ -59,7 +59,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific primary references, including OpenStax rate laws, coordination chemistry, crystal-field properties, equilibrium calculations and precipitation equilibria. Numerical data and MCQs in this batch are original practice.
+The notes contain lesson-specific primary references, including NCERT halogen chemistry, OpenStax carbonyl additions and esters, nucleic-acid and protein structure, and NPTEL carbohydrate stereochemistry. Numerical data and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

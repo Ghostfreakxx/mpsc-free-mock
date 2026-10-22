@@ -4,9 +4,11 @@ import practical from "../../data/jee-practical-chemistry-lecture.json";
 import AnalysisFOccupancyDiagram from "./analysis-f-occupancy-diagram";
 import styles from "./lecture.module.css";
 import BiomoleculeStructureDiagram from './biomolecule-structure-diagram';
+import DnaBaseCountDiagram from './dna-base-count-diagram';
 
 const recordings={biomolecules,"purification-analysis":purification,"practical-chemistry":practical};
 export default function BiomoleculesPracticalDiagram({lesson,chapter}:{lesson:keyof typeof recordings;chapter:number}) {
+ if(lesson==='biomolecules'&&chapter===13)return <DnaBaseCountDiagram/>;
  if(lesson==='biomolecules'&&(chapter===8||chapter===9))return <BiomoleculeStructureDiagram chapter={chapter}/>;
  if(lesson==="purification-analysis" && chapter===11)return <AnalysisFOccupancyDiagram kind="extraction"/>;
  const board=recordings[lesson].chapters[chapter].board;
