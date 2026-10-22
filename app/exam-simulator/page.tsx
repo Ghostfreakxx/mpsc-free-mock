@@ -1,3 +1,4 @@
+import { streamPoolSizes } from "../data/practice-data";
 import ExamSimulator from "./exam-simulator";
 
 export const metadata = {
@@ -6,5 +7,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <ExamSimulator />;
+  return <ExamSimulator poolSizes={streamPoolSizes()} />;
 }
