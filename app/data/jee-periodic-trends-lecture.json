@@ -17,6 +17,14 @@
     {
       "title": "OpenStax: electrode potentials",
       "url": "https://openstax.org/books/chemistry-2e/pages/17-3-electrode-and-cell-potentials"
+    },
+    {
+      "title": "OpenStax: atomic structure and isotopes",
+      "url": "https://openstax.org/books/chemistry-2e/pages/2-3-atomic-structure-and-symbolism"
+    },
+    {
+      "title": "OpenStax: electromagnetic energy",
+      "url": "https://openstax.org/books/chemistry-2e/pages/6-1-electromagnetic-energy"
     }
   ],
   "chapters": [
@@ -476,6 +484,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Locate an element from a main-group configuration",
+      "formula": "[Ne]3s²3p³: period 3, group 15, p block",
+      "script": "An electron configuration can locate a neutral main group atom when the subshell pattern is read carefully. Consider a supplied configuration with a neon core, two electrons in three s and three in three p. The largest occupied principal quantum number is three, so this atom lies in period three. Five electrons occupy the outer s and p subshells together, giving group fifteen in the usual main group numbering. The differentiating electron enters a p subshell, so it is a p block element. The total electron count is ten plus two plus three, or fifteen; for the neutral atom the atomic number is also fifteen. Do not identify group three merely from the superscript on the p subshell, and do not identify the period from the number of valence electrons. An ion requires another step: the configuration describes its remaining electrons, not necessarily the neutral parent atomic number. Helium is a familiar boundary case, with a filled one s shell but placement in group eighteen based on the periodic organization. The simple s and p group shortcut should not be extended unchanged to transition metal configurations.",
+      "points": [
+        "[Ne]3s²3p³ · Largest n = 3 · Period 3",
+        "Outer s + p electrons · 2 + 3 = 5 · Group 15; p block",
+        "Neutral electron count · 10 + 2 + 3 · Z = 15"
+      ],
+      "board": {
+        "heading": "Locate an element from a main-group configuration",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "[Ne]3s²3p³",
+            "Largest n = 3",
+            "Period 3"
+          ],
+          [
+            "Outer s + p electrons",
+            "2 + 3 = 5",
+            "Group 15; p block"
+          ],
+          [
+            "Neutral electron count",
+            "10 + 2 + 3",
+            "Z = 15"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Isotopes share a periodic position because Z is unchanged",
+      "formula": "Atomic number counts protons; isotope mass does not set a new group",
+      "script": "The modern periodic table organizes elements by atomic number, not by assigning a separate chemical position to each isotope mass. Consider chlorine thirty five and chlorine thirty seven, both with seventeen protons. Neutral atoms of each have seventeen electrons, giving the same ordinary electron configuration pattern and the same periodic group and period. Their neutron counts differ: eighteen for mass number thirty five and twenty for mass number thirty seven. A chloride ion has one extra electron, eighteen in total, but its nucleus still has seventeen protons. It remains chlorine rather than turning into argon, whose nucleus has eighteen protons. Thus isotope formation, ion formation and changing the element are distinct operations. Chemical properties of isotopes are similar because of their electronic structures, though isotope effects mean they are not identical in every measurable process. Mass number is the integer proton plus neutron count for a specified nuclide, while relative atomic mass of a natural sample is an isotopic average. Reading an average near thirty five point five as an individual atom with a fractional neutron count would confuse these two quantities. Always identify charge and nuclide information before counting electrons or locating the element.",
+      "points": [
+        "³⁵Cl; ³⁷Cl · Both have 17 protons · Same periodic position",
+        "Neutron counts · 35−17; 37−17 · 18; 20 neutrons",
+        "Cl⁻ electron count · 17 + 1 = 18 · Still chlorine; Z unchanged"
+      ],
+      "board": {
+        "heading": "Isotopes share a periodic position because Z is unchanged",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "³⁵Cl; ³⁷Cl",
+            "Both have 17 protons",
+            "Same periodic position"
+          ],
+          [
+            "Neutron counts",
+            "35−17; 37−17",
+            "18; 20 neutrons"
+          ],
+          [
+            "Cl⁻ electron count",
+            "17 + 1 = 18",
+            "Still chlorine; Z unchanged"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Two electron-gain steps need separate energy signs",
+      "formula": "O(g) + 2e⁻ → O²⁻(g): sum both supplied step energies",
+      "script": "The energy of adding a second electron cannot be copied from the first electron gain. For an isolated gas phase oxygen atom, the first addition makes an anion, whereas the second addition brings another negative electron toward an already negative ion. The second step is generally energetically costly for forming such a multiply charged isolated anion. Use supplied illustrative step values of minus one hundred forty one and plus seven hundred forty four kilojoules per mole for the first and second oxygen electron additions. The total energy change for forming gas phase oxide ions from gas phase oxygen atoms and two electrons is plus six hundred three kilojoules per mole. Thus the complete two electron gas phase process is endothermic under those supplied values even though the first step is exothermic. This does not mean oxide solids cannot be stable. Formation of a solid includes other contributions, especially favourable lattice formation, and any full formation calculation also needs the appropriate atomization and metal ionization steps. Keep the isolated ion process distinct from the complete solid formation cycle. State whether a quoted electron affinity uses an energy released convention or an electron gain enthalpy convention before attaching a sign.",
+      "points": [
+        "First O electron gain · Supplied −141 kJ/mol · Exothermic first step",
+        "Second gain to O⁻ · Supplied +744 kJ/mol · Costly isolated-ion step",
+        "Net two-electron gain · −141 + 744 · +603 kJ/mol; endothermic"
+      ],
+      "board": {
+        "heading": "Two electron-gain steps need separate energy signs",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "First O electron gain",
+            "Supplied −141 kJ/mol",
+            "Exothermic first step"
+          ],
+          [
+            "Second gain to O⁻",
+            "Supplied +744 kJ/mol",
+            "Costly isolated-ion step"
+          ],
+          [
+            "Net two-electron gain",
+            "−141 + 744",
+            "+603 kJ/mol; endothermic"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting conversion: molar ionization energy and photons",
+      "formula": "1 eV per particle = 96.485 kJ/mol; E(eV) ≈ 1240/λ(nm)",
+      "script": "As a supporting connection to atomic energy calculations, convert an ionization energy without mixing particle and mole units. Suppose a hypothetical isolated gas phase atom has first ionization threshold five point zero zero electron volts per atom. With the supplied conversion one electron volt per particle equals ninety six point four eight five kilojoules per mole, the molar threshold is four hundred eighty two point four two five kilojoules per mole. That number is not the energy of one individual atom in kilojoules. For a photon comparison, use the supplied relation photon energy in electron volts equals approximately twelve hundred forty divided by wavelength in nanometres. A threshold of five electron volts corresponds to about two hundred forty eight nanometres. A two hundred nanometre photon has about six point two electron volts, exceeding this ideal threshold, whereas a three hundred nanometre photon has about four point one three and is below it. These are energy comparisons for the stipulated one photon isolated atom model, not predictions of an experimental ionization yield. Cross sections, states and experimental conditions matter. Keep the periodic trend in ionization energy separate from the unit conversion used to express a particular supplied value.",
+      "points": [
+        "Threshold 5.00 eV/atom · 5.00 × 96.485 · 482.425 kJ/mol",
+        "Threshold photon · λ = 1240/5.00 · 248 nm",
+        "Compare photon energies · 200 nm: 6.20 eV; 300 nm: 4.13 · Above; below given threshold"
+      ],
+      "board": {
+        "heading": "Supporting conversion: molar ionization energy and photons",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Threshold 5.00 eV/atom",
+            "5.00 × 96.485",
+            "482.425 kJ/mol"
+          ],
+          [
+            "Threshold photon",
+            "λ = 1240/5.00",
+            "248 nm"
+          ],
+          [
+            "Compare photon energies",
+            "200 nm: 6.20 eV; 300 nm: 4.13",
+            "Above; below given threshold"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -654,6 +802,94 @@
       ],
       "answer": 2,
       "explanation": "Li has the most negative reduction potential of the supplied three; observed reaction rate is a separate issue."
+    },
+    {
+      "question": "Neutral [Ne]3s2 3p3 is in which period and group?",
+      "options": [
+        "Period 3, group 3",
+        "Period 5, group 3",
+        "Period 3, group 15",
+        "Period 15, group 3"
+      ],
+      "answer": 2,
+      "explanation": "Largest occupied n gives period three; five outer s+p electrons give main group fifteen."
+    },
+    {
+      "question": "The neutral atomic number for that configuration is:",
+      "options": [
+        "5",
+        "13",
+        "18",
+        "15"
+      ],
+      "answer": 3,
+      "explanation": "The neon core has ten electrons and the outer subshells add five; a neutral atom has the same proton count."
+    },
+    {
+      "question": "35Cl and 37Cl share a periodic position because they share:",
+      "options": [
+        "Atomic number 17",
+        "The same neutron count",
+        "Exactly the same mass number",
+        "Different proton counts"
+      ],
+      "answer": 0,
+      "explanation": "Isotopes of one element have the same proton count and ordinary neutral electron configuration pattern."
+    },
+    {
+      "question": "A 37Cl− ion has proton, neutron and electron counts:",
+      "options": [
+        "17, 18, 18",
+        "17, 20, 18",
+        "18, 19, 17",
+        "17, 20, 16"
+      ],
+      "answer": 1,
+      "explanation": "Protons=17; neutrons=37−17=20; one negative charge gives 18 electrons."
+    },
+    {
+      "question": "O first and second electron-gain energies are supplied as −141 and +744 kJ/mol. Their sum is:",
+      "options": [
+        "−885 kJ/mol",
+        "−603 kJ/mol",
+        "+603 kJ/mol",
+        "+885 kJ/mol"
+      ],
+      "answer": 2,
+      "explanation": "Add the sequential energy changes with signs: −141+744=+603 kJ/mol."
+    },
+    {
+      "question": "That endothermic isolated-ion sum means:",
+      "options": [
+        "Every oxide solid must be unstable",
+        "Lattice formation has zero energy",
+        "The first electron gain was endothermic",
+        "A full solid-formation cycle needs other energy contributions"
+      ],
+      "answer": 3,
+      "explanation": "Isolated gas-phase ion formation is only part of a cycle; lattice, atomization and ionization terms also matter."
+    },
+    {
+      "question": "With 1 eV per particle = 96.485 kJ/mol, a 5.00 eV ionization threshold equals:",
+      "options": [
+        "482.425 kJ/mol",
+        "19.297 kJ/mol",
+        "5.00 kJ/mol",
+        "0.0518 kJ/mol"
+      ],
+      "answer": 0,
+      "explanation": "Multiply the per-particle electron-volt value by the supplied molar conversion."
+    },
+    {
+      "question": "Using E(eV)=1240/λ(nm), the wavelength corresponding to 5.00 eV is:",
+      "options": [
+        "6200 nm",
+        "248 nm",
+        "1240 nm",
+        "200 nm"
+      ],
+      "answer": 1,
+      "explanation": "Solve λ=1240/5.00=248 nm for the supplied ideal photon-energy relation."
     }
   ]
 }

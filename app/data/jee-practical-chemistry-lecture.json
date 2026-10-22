@@ -29,6 +29,18 @@
     {
       "title": "OpenStax: calorimetry",
       "url": "https://openstax.org/books/chemistry-2e/pages/5-2-calorimetry"
+    },
+    {
+      "title": "NCERT: laboratory chemistry resources",
+      "url": "https://ncert.nic.in/science-laboratory-manual.php"
+    },
+    {
+      "title": "OpenStax: quantitative chemical analysis",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-5-quantitative-chemical-analysis"
+    },
+    {
+      "title": "IIT Kanpur SATHEE: surface chemistry",
+      "url": "https://sathee.iitk.ac.in/ncert-books/udaan/udaan-che-12/chem-12-unit-05-surface-chemistry/"
     }
   ],
   "chapters": [
@@ -486,6 +498,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Crystal recovery and purity are different measurements",
+      "formula": "Recoverable mass = dissolved hot mass − mass left in cold mother liquor",
+      "script": "Crystallization can separate material because solubility changes with temperature, but recovery is not a direct purity measurement. Consider supplied solubility data of twenty grams solute per one hundred grams water at the hot condition and five grams per one hundred grams water at the cold condition. Suppose ten grams of the target is fully dissolved in fifty grams water at the hot condition, then cooled without solvent loss. At the cold condition, fifty grams water can still hold two point five grams of target in solution. The ideal recovered crystal mass is therefore seven point five grams, or seventy five percent of the original target. This calculation assumes equilibrium solubilities, no target decomposition, no mechanical loss and the stated solvent mass throughout. Washing can remove adhering impurities but may also dissolve target, depending on the wash conditions. A higher recovered mass could include retained solvent or impurities rather than better recovery of pure material. A lower mass could reflect incomplete collection as well as solubility. Keep the mother liquor mass balance separate from evidence of chemical identity and purity; one percentage cannot establish all three conclusions.",
+      "points": [
+        "Hot: 20 g per 100 g water · 50 g water holds 10 g · Initial target fully dissolved",
+        "Cold: 5 g per 100 g water · 50 g water retains 2.50 g · Mother-liquor target",
+        "Ideal recovered target · 10.0 − 2.50 = 7.50 g · 75.0% target recovery"
+      ],
+      "board": {
+        "heading": "Crystal recovery and purity are different measurements",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Hot: 20 g per 100 g water",
+            "50 g water holds 10 g",
+            "Initial target fully dissolved"
+          ],
+          [
+            "Cold: 5 g per 100 g water",
+            "50 g water retains 2.50 g",
+            "Mother-liquor target"
+          ],
+          [
+            "Ideal recovered target",
+            "10.0 − 2.50 = 7.50 g",
+            "75.0% target recovery"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A hydrated salt standard needs its full formula mass",
+      "formula": "Mohr’s salt: one Fe²⁺ per (NH₄)₂Fe(SO₄)₂·6H₂O formula unit",
+      "script": "A weighed hydrated salt must be converted into amount using the formula actually supplied. Mohr's salt contains one iron two ion per formula unit together with ammonium, sulfate and six waters of crystallization. For an illustrative pure sample, use supplied formula mass three hundred ninety two grams per mole. Dissolving three point nine two grams to a final solution volume of two hundred fifty millilitres gives zero point zero one zero zero mole formula units and the same iron two amount. The formal iron concentration is zero point zero four zero zero molar. A twenty five point zero millilitre aliquot then contains zero point zero zero one zero zero mole iron two. Under a specified quantitative acidic permanganate reaction with five iron two ions per permanganate ion, that aliquot requires zero point zero zero zero two zero zero mole permanganate. At zero point zero two zero zero molar titrant, its volume is ten point zero millilitres. Ignoring the waters gives the wrong weighed-mass conversion. Oxidation of iron two or sample impurity can change an actual assay, so these predictions depend on the supplied purity and reaction conditions rather than on the salt name alone.",
+      "points": [
+        "3.92 g; M=392 g/mol · 0.0100 mol / 0.250 L · Fe²⁺ formal C = 0.0400 M",
+        "25.0 mL aliquot · 0.00100 mol Fe²⁺ · Divide by 5 for MnO₄⁻",
+        "Titrant 0.0200 M · 0.000200 / 0.0200 L · 10.0 mL at stated endpoint"
+      ],
+      "board": {
+        "heading": "A hydrated salt standard needs its full formula mass",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "3.92 g; M=392 g/mol",
+            "0.0100 mol / 0.250 L",
+            "Fe²⁺ formal C = 0.0400 M"
+          ],
+          [
+            "25.0 mL aliquot",
+            "0.00100 mol Fe²⁺",
+            "Divide by 5 for MnO₄⁻"
+          ],
+          [
+            "Titrant 0.0200 M",
+            "0.000200 / 0.0200 L",
+            "10.0 mL at stated endpoint"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A melting range is evidence rather than a unique identity",
+      "formula": "Compare ranges under matching measurement conditions",
+      "script": "A reported melting observation is usually a range, not a universal exact temperature from one glance. Suppose a reference crystalline material is supplied as melting from one hundred twenty one to one hundred twenty two degrees Celsius under the stated method. A sample melting across one hundred twelve to one hundred nineteen has a lower and broader range. That is consistent with impurity or other sample and measurement problems, but it does not identify a particular contaminant by itself. Heating rate, thermometer calibration, residual solvent, sample packing and decomposition can affect the observation. A sharp range matching a reference supports identity and purity when combined with other evidence; it does not prove them uniquely. Different compounds can have similar melting ranges, and some mixtures can show relatively sharp eutectic melting. A mixed melting point with a known reference can add evidence when the material and method are appropriate, but interpretation still needs care. If a thermometer has a stated positive one degree bias, correct the observed reading downward by one degree before comparison. Precision, calibration and a chemical conclusion are separate steps. State which observation changed and which possible explanations remain rather than replacing evidence with a memorized rule.",
+      "points": [
+        "Reference range · 121–122 °C supplied · Compare matching method",
+        "Sample range · 112–119 °C observed · Lower and broader; not unique cause",
+        "Thermometer bias +1 °C · Correct observed value −1 °C · Calibration before interpretation"
+      ],
+      "board": {
+        "heading": "A melting range is evidence rather than a unique identity",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Reference range",
+            "121–122 °C supplied",
+            "Compare matching method"
+          ],
+          [
+            "Sample range",
+            "112–119 °C observed",
+            "Lower and broader; not unique cause"
+          ],
+          [
+            "Thermometer bias +1 °C",
+            "Correct observed value −1 °C",
+            "Calibration before interpretation"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Coagulation evidence starts with the colloid charge",
+      "formula": "The oppositely charged ion is the counter-ion in the elementary comparison",
+      "script": "Colloid coagulation comparisons begin with the sign of the dispersed particles, not with memorizing one order of salt names. For a negatively charged sol, cations act as the counter ions in the elementary charge neutralization comparison. With otherwise comparable conditions, higher counter ion charge commonly increases coagulating power, although real systems also depend on specific ion chemistry and the medium. Suppose supplied critical coagulation concentrations are fifty millimolar sodium chloride, one millimolar magnesium chloride and zero point one millimolar aluminium chloride. Lower required concentration means stronger action in that measured comparison. Using reciprocal thresholds gives relative powers one, fifty and five hundred after normalization to the sodium salt. This is an interpretation of supplied data, not a universal numerical law for every colloid. For a positively charged sol, the relevant counter ions are anions instead; chloride, sulfate and phosphate cannot be ranked by the cation attached to them alone. Changes in p H or complexation can alter particle charge and invalidate a simple comparison. Identify the measured endpoint, charge and concentration units before translating an observation into a coagulation argument.",
+      "points": [
+        "Negative sol · Cations oppose particle charge · Counter-ions are positive",
+        "Thresholds: Na 50; Mg 1; Al 0.1 mM · Lower threshold is stronger · Relative power 1 : 50 : 500",
+        "Positive sol · Anions oppose particle charge · Reassess ions and conditions"
+      ],
+      "board": {
+        "heading": "Coagulation evidence starts with the colloid charge",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Negative sol",
+            "Cations oppose particle charge",
+            "Counter-ions are positive"
+          ],
+          [
+            "Thresholds: Na 50; Mg 1; Al 0.1 mM",
+            "Lower threshold is stronger",
+            "Relative power 1 : 50 : 500"
+          ],
+          [
+            "Positive sol",
+            "Anions oppose particle charge",
+            "Reassess ions and conditions"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -664,6 +816,94 @@
       ],
       "answer": 2,
       "explanation": "Systematic calibration or endpoint errors can persist even when repeated results are close."
+    },
+    {
+      "question": "A target has cold solubility 5.00 g per 100 g water. With 50.0 g water and no solvent loss, target remaining dissolved is:",
+      "options": [
+        "0.500 g",
+        "2.50 g",
+        "5.00 g",
+        "10.0 g"
+      ],
+      "answer": 1,
+      "explanation": "Scale the supplied solubility by 50.0/100; the denominator is solvent mass."
+    },
+    {
+      "question": "If 10.0 g target initially dissolved and 2.50 g stays in the cold mother liquor, ideal crystal recovery is:",
+      "options": [
+        "25%",
+        "100%",
+        "75%",
+        "7.5%"
+      ],
+      "answer": 2,
+      "explanation": "Recovered target=7.50 g, so recovery=100×7.50/10.0=75% under the stated assumptions."
+    },
+    {
+      "question": "Pure Mohr’s salt with supplied M=392 g/mol is dissolved: 3.92 g in 0.250 L. Formal Fe2+ concentration is:",
+      "options": [
+        "0.0100 M",
+        "0.392 M",
+        "0.00400 M",
+        "0.0400 M"
+      ],
+      "answer": 3,
+      "explanation": "Each formula unit contains one Fe2+: 3.92/392=0.0100 mol; divide by 0.250 L."
+    },
+    {
+      "question": "A 0.0250 L aliquot of that solution is assayed at Fe2+:MnO4−=5:1 with 0.0200 M titrant. Required volume is:",
+      "options": [
+        "10.0 mL",
+        "50.0 mL",
+        "2.00 mL",
+        "100 mL"
+      ],
+      "answer": 0,
+      "explanation": "Aliquot iron=0.00100 mol; permanganate=0.000200 mol; V=0.0100 L."
+    },
+    {
+      "question": "A lower, broader melting range relative to a reference is:",
+      "options": [
+        "Proof of one unique impurity",
+        "Evidence consistent with impurity or measurement/sample issues",
+        "Proof that the sample has no impurity",
+        "A direct molecular formula measurement"
+      ],
+      "answer": 1,
+      "explanation": "Melting behaviour supplies evidence, but residual solvent, calibration, heating and other causes can affect it."
+    },
+    {
+      "question": "A thermometer reads 123.0 °C with a known +1.0 °C bias. The corrected reading is:",
+      "options": [
+        "124.0 °C",
+        "123.0 °C",
+        "122.0 °C",
+        "1.0 °C"
+      ],
+      "answer": 2,
+      "explanation": "A positive bias means the instrument reads high; subtract the bias from the observation."
+    },
+    {
+      "question": "For a negatively charged sol in the elementary comparison, the counter-ions are:",
+      "options": [
+        "Only anions",
+        "Always neutral atoms",
+        "The solvent molecules only",
+        "Cations"
+      ],
+      "answer": 3,
+      "explanation": "Counter-ions carry charge opposite to the dispersed particles; a negative sol has positive counter-ions."
+    },
+    {
+      "question": "Coagulation thresholds are 50, 1 and 0.1 mM. Inverse-threshold powers normalized to the first are:",
+      "options": [
+        "1 : 50 : 500",
+        "50 : 1 : 0.1",
+        "1 : 1 : 1",
+        "500 : 50 : 1"
+      ],
+      "answer": 0,
+      "explanation": "Use reciprocals then divide by 1/50. This ranks the supplied data rather than asserting a universal ratio."
     }
   ]
 }

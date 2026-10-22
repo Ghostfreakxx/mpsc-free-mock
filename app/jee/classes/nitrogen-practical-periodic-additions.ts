@@ -1,0 +1,753 @@
+// Authored by scripts/expand-nitrogen-practical-periodic.mjs.
+export const nitrogenPracticalPeriodicAdditions = {
+  "periodic-trends": {
+    "base": 13,
+    "quizBase": 16,
+    "chapters": [
+      {
+        "title": "Locate an element from a main-group configuration",
+        "formula": "[Ne]3s²3p³: period 3, group 15, p block",
+        "script": "An electron configuration can locate a neutral main group atom when the subshell pattern is read carefully. Consider a supplied configuration with a neon core, two electrons in three s and three in three p. The largest occupied principal quantum number is three, so this atom lies in period three. Five electrons occupy the outer s and p subshells together, giving group fifteen in the usual main group numbering. The differentiating electron enters a p subshell, so it is a p block element. The total electron count is ten plus two plus three, or fifteen; for the neutral atom the atomic number is also fifteen. Do not identify group three merely from the superscript on the p subshell, and do not identify the period from the number of valence electrons. An ion requires another step: the configuration describes its remaining electrons, not necessarily the neutral parent atomic number. Helium is a familiar boundary case, with a filled one s shell but placement in group eighteen based on the periodic organization. The simple s and p group shortcut should not be extended unchanged to transition metal configurations.",
+        "points": [
+          "[Ne]3s²3p³ · Largest n = 3 · Period 3",
+          "Outer s + p electrons · 2 + 3 = 5 · Group 15; p block",
+          "Neutral electron count · 10 + 2 + 3 · Z = 15"
+        ],
+        "board": {
+          "heading": "Locate an element from a main-group configuration",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "[Ne]3s²3p³",
+              "Largest n = 3",
+              "Period 3"
+            ],
+            [
+              "Outer s + p electrons",
+              "2 + 3 = 5",
+              "Group 15; p block"
+            ],
+            [
+              "Neutral electron count",
+              "10 + 2 + 3",
+              "Z = 15"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Isotopes share a periodic position because Z is unchanged",
+        "formula": "Atomic number counts protons; isotope mass does not set a new group",
+        "script": "The modern periodic table organizes elements by atomic number, not by assigning a separate chemical position to each isotope mass. Consider chlorine thirty five and chlorine thirty seven, both with seventeen protons. Neutral atoms of each have seventeen electrons, giving the same ordinary electron configuration pattern and the same periodic group and period. Their neutron counts differ: eighteen for mass number thirty five and twenty for mass number thirty seven. A chloride ion has one extra electron, eighteen in total, but its nucleus still has seventeen protons. It remains chlorine rather than turning into argon, whose nucleus has eighteen protons. Thus isotope formation, ion formation and changing the element are distinct operations. Chemical properties of isotopes are similar because of their electronic structures, though isotope effects mean they are not identical in every measurable process. Mass number is the integer proton plus neutron count for a specified nuclide, while relative atomic mass of a natural sample is an isotopic average. Reading an average near thirty five point five as an individual atom with a fractional neutron count would confuse these two quantities. Always identify charge and nuclide information before counting electrons or locating the element.",
+        "points": [
+          "³⁵Cl; ³⁷Cl · Both have 17 protons · Same periodic position",
+          "Neutron counts · 35−17; 37−17 · 18; 20 neutrons",
+          "Cl⁻ electron count · 17 + 1 = 18 · Still chlorine; Z unchanged"
+        ],
+        "board": {
+          "heading": "Isotopes share a periodic position because Z is unchanged",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "³⁵Cl; ³⁷Cl",
+              "Both have 17 protons",
+              "Same periodic position"
+            ],
+            [
+              "Neutron counts",
+              "35−17; 37−17",
+              "18; 20 neutrons"
+            ],
+            [
+              "Cl⁻ electron count",
+              "17 + 1 = 18",
+              "Still chlorine; Z unchanged"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Two electron-gain steps need separate energy signs",
+        "formula": "O(g) + 2e⁻ → O²⁻(g): sum both supplied step energies",
+        "script": "The energy of adding a second electron cannot be copied from the first electron gain. For an isolated gas phase oxygen atom, the first addition makes an anion, whereas the second addition brings another negative electron toward an already negative ion. The second step is generally energetically costly for forming such a multiply charged isolated anion. Use supplied illustrative step values of minus one hundred forty one and plus seven hundred forty four kilojoules per mole for the first and second oxygen electron additions. The total energy change for forming gas phase oxide ions from gas phase oxygen atoms and two electrons is plus six hundred three kilojoules per mole. Thus the complete two electron gas phase process is endothermic under those supplied values even though the first step is exothermic. This does not mean oxide solids cannot be stable. Formation of a solid includes other contributions, especially favourable lattice formation, and any full formation calculation also needs the appropriate atomization and metal ionization steps. Keep the isolated ion process distinct from the complete solid formation cycle. State whether a quoted electron affinity uses an energy released convention or an electron gain enthalpy convention before attaching a sign.",
+        "points": [
+          "First O electron gain · Supplied −141 kJ/mol · Exothermic first step",
+          "Second gain to O⁻ · Supplied +744 kJ/mol · Costly isolated-ion step",
+          "Net two-electron gain · −141 + 744 · +603 kJ/mol; endothermic"
+        ],
+        "board": {
+          "heading": "Two electron-gain steps need separate energy signs",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "First O electron gain",
+              "Supplied −141 kJ/mol",
+              "Exothermic first step"
+            ],
+            [
+              "Second gain to O⁻",
+              "Supplied +744 kJ/mol",
+              "Costly isolated-ion step"
+            ],
+            [
+              "Net two-electron gain",
+              "−141 + 744",
+              "+603 kJ/mol; endothermic"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Supporting conversion: molar ionization energy and photons",
+        "formula": "1 eV per particle = 96.485 kJ/mol; E(eV) ≈ 1240/λ(nm)",
+        "script": "As a supporting connection to atomic energy calculations, convert an ionization energy without mixing particle and mole units. Suppose a hypothetical isolated gas phase atom has first ionization threshold five point zero zero electron volts per atom. With the supplied conversion one electron volt per particle equals ninety six point four eight five kilojoules per mole, the molar threshold is four hundred eighty two point four two five kilojoules per mole. That number is not the energy of one individual atom in kilojoules. For a photon comparison, use the supplied relation photon energy in electron volts equals approximately twelve hundred forty divided by wavelength in nanometres. A threshold of five electron volts corresponds to about two hundred forty eight nanometres. A two hundred nanometre photon has about six point two electron volts, exceeding this ideal threshold, whereas a three hundred nanometre photon has about four point one three and is below it. These are energy comparisons for the stipulated one photon isolated atom model, not predictions of an experimental ionization yield. Cross sections, states and experimental conditions matter. Keep the periodic trend in ionization energy separate from the unit conversion used to express a particular supplied value.",
+        "points": [
+          "Threshold 5.00 eV/atom · 5.00 × 96.485 · 482.425 kJ/mol",
+          "Threshold photon · λ = 1240/5.00 · 248 nm",
+          "Compare photon energies · 200 nm: 6.20 eV; 300 nm: 4.13 · Above; below given threshold"
+        ],
+        "board": {
+          "heading": "Supporting conversion: molar ionization energy and photons",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "Threshold 5.00 eV/atom",
+              "5.00 × 96.485",
+              "482.425 kJ/mol"
+            ],
+            [
+              "Threshold photon",
+              "λ = 1240/5.00",
+              "248 nm"
+            ],
+            [
+              "Compare photon energies",
+              "200 nm: 6.20 eV; 300 nm: 4.13",
+              "Above; below given threshold"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Neutral [Ne]3s2 3p3 is in which period and group?",
+        "options": [
+          "Period 3, group 3",
+          "Period 5, group 3",
+          "Period 3, group 15",
+          "Period 15, group 3"
+        ],
+        "answer": 2,
+        "explanation": "Largest occupied n gives period three; five outer s+p electrons give main group fifteen."
+      },
+      {
+        "question": "The neutral atomic number for that configuration is:",
+        "options": [
+          "5",
+          "13",
+          "18",
+          "15"
+        ],
+        "answer": 3,
+        "explanation": "The neon core has ten electrons and the outer subshells add five; a neutral atom has the same proton count."
+      },
+      {
+        "question": "35Cl and 37Cl share a periodic position because they share:",
+        "options": [
+          "Atomic number 17",
+          "The same neutron count",
+          "Exactly the same mass number",
+          "Different proton counts"
+        ],
+        "answer": 0,
+        "explanation": "Isotopes of one element have the same proton count and ordinary neutral electron configuration pattern."
+      },
+      {
+        "question": "A 37Cl− ion has proton, neutron and electron counts:",
+        "options": [
+          "17, 18, 18",
+          "17, 20, 18",
+          "18, 19, 17",
+          "17, 20, 16"
+        ],
+        "answer": 1,
+        "explanation": "Protons=17; neutrons=37−17=20; one negative charge gives 18 electrons."
+      },
+      {
+        "question": "O first and second electron-gain energies are supplied as −141 and +744 kJ/mol. Their sum is:",
+        "options": [
+          "−885 kJ/mol",
+          "−603 kJ/mol",
+          "+603 kJ/mol",
+          "+885 kJ/mol"
+        ],
+        "answer": 2,
+        "explanation": "Add the sequential energy changes with signs: −141+744=+603 kJ/mol."
+      },
+      {
+        "question": "That endothermic isolated-ion sum means:",
+        "options": [
+          "Every oxide solid must be unstable",
+          "Lattice formation has zero energy",
+          "The first electron gain was endothermic",
+          "A full solid-formation cycle needs other energy contributions"
+        ],
+        "answer": 3,
+        "explanation": "Isolated gas-phase ion formation is only part of a cycle; lattice, atomization and ionization terms also matter."
+      },
+      {
+        "question": "With 1 eV per particle = 96.485 kJ/mol, a 5.00 eV ionization threshold equals:",
+        "options": [
+          "482.425 kJ/mol",
+          "19.297 kJ/mol",
+          "5.00 kJ/mol",
+          "0.0518 kJ/mol"
+        ],
+        "answer": 0,
+        "explanation": "Multiply the per-particle electron-volt value by the supplied molar conversion."
+      },
+      {
+        "question": "Using E(eV)=1240/λ(nm), the wavelength corresponding to 5.00 eV is:",
+        "options": [
+          "6200 nm",
+          "248 nm",
+          "1240 nm",
+          "200 nm"
+        ],
+        "answer": 1,
+        "explanation": "Solve λ=1240/5.00=248 nm for the supplied ideal photon-energy relation."
+      }
+    ],
+    "sources": [
+      {
+        "title": "OpenStax: electronic structure and periodic properties",
+        "url": "https://openstax.org/books/chemistry-2e/pages/6-5-periodic-variations-in-element-properties"
+      },
+      {
+        "title": "OpenStax: atomic structure and isotopes",
+        "url": "https://openstax.org/books/chemistry-2e/pages/2-3-atomic-structure-and-symbolism"
+      },
+      {
+        "title": "OpenStax: electromagnetic energy",
+        "url": "https://openstax.org/books/chemistry-2e/pages/6-1-electromagnetic-energy"
+      }
+    ]
+  },
+  "practical-chemistry": {
+    "base": 13,
+    "quizBase": 16,
+    "chapters": [
+      {
+        "title": "Crystal recovery and purity are different measurements",
+        "formula": "Recoverable mass = dissolved hot mass − mass left in cold mother liquor",
+        "script": "Crystallization can separate material because solubility changes with temperature, but recovery is not a direct purity measurement. Consider supplied solubility data of twenty grams solute per one hundred grams water at the hot condition and five grams per one hundred grams water at the cold condition. Suppose ten grams of the target is fully dissolved in fifty grams water at the hot condition, then cooled without solvent loss. At the cold condition, fifty grams water can still hold two point five grams of target in solution. The ideal recovered crystal mass is therefore seven point five grams, or seventy five percent of the original target. This calculation assumes equilibrium solubilities, no target decomposition, no mechanical loss and the stated solvent mass throughout. Washing can remove adhering impurities but may also dissolve target, depending on the wash conditions. A higher recovered mass could include retained solvent or impurities rather than better recovery of pure material. A lower mass could reflect incomplete collection as well as solubility. Keep the mother liquor mass balance separate from evidence of chemical identity and purity; one percentage cannot establish all three conclusions.",
+        "points": [
+          "Hot: 20 g per 100 g water · 50 g water holds 10 g · Initial target fully dissolved",
+          "Cold: 5 g per 100 g water · 50 g water retains 2.50 g · Mother-liquor target",
+          "Ideal recovered target · 10.0 − 2.50 = 7.50 g · 75.0% target recovery"
+        ],
+        "board": {
+          "heading": "Crystal recovery and purity are different measurements",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "Hot: 20 g per 100 g water",
+              "50 g water holds 10 g",
+              "Initial target fully dissolved"
+            ],
+            [
+              "Cold: 5 g per 100 g water",
+              "50 g water retains 2.50 g",
+              "Mother-liquor target"
+            ],
+            [
+              "Ideal recovered target",
+              "10.0 − 2.50 = 7.50 g",
+              "75.0% target recovery"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "A hydrated salt standard needs its full formula mass",
+        "formula": "Mohr’s salt: one Fe²⁺ per (NH₄)₂Fe(SO₄)₂·6H₂O formula unit",
+        "script": "A weighed hydrated salt must be converted into amount using the formula actually supplied. Mohr's salt contains one iron two ion per formula unit together with ammonium, sulfate and six waters of crystallization. For an illustrative pure sample, use supplied formula mass three hundred ninety two grams per mole. Dissolving three point nine two grams to a final solution volume of two hundred fifty millilitres gives zero point zero one zero zero mole formula units and the same iron two amount. The formal iron concentration is zero point zero four zero zero molar. A twenty five point zero millilitre aliquot then contains zero point zero zero one zero zero mole iron two. Under a specified quantitative acidic permanganate reaction with five iron two ions per permanganate ion, that aliquot requires zero point zero zero zero two zero zero mole permanganate. At zero point zero two zero zero molar titrant, its volume is ten point zero millilitres. Ignoring the waters gives the wrong weighed-mass conversion. Oxidation of iron two or sample impurity can change an actual assay, so these predictions depend on the supplied purity and reaction conditions rather than on the salt name alone.",
+        "points": [
+          "3.92 g; M=392 g/mol · 0.0100 mol / 0.250 L · Fe²⁺ formal C = 0.0400 M",
+          "25.0 mL aliquot · 0.00100 mol Fe²⁺ · Divide by 5 for MnO₄⁻",
+          "Titrant 0.0200 M · 0.000200 / 0.0200 L · 10.0 mL at stated endpoint"
+        ],
+        "board": {
+          "heading": "A hydrated salt standard needs its full formula mass",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "3.92 g; M=392 g/mol",
+              "0.0100 mol / 0.250 L",
+              "Fe²⁺ formal C = 0.0400 M"
+            ],
+            [
+              "25.0 mL aliquot",
+              "0.00100 mol Fe²⁺",
+              "Divide by 5 for MnO₄⁻"
+            ],
+            [
+              "Titrant 0.0200 M",
+              "0.000200 / 0.0200 L",
+              "10.0 mL at stated endpoint"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "A melting range is evidence rather than a unique identity",
+        "formula": "Compare ranges under matching measurement conditions",
+        "script": "A reported melting observation is usually a range, not a universal exact temperature from one glance. Suppose a reference crystalline material is supplied as melting from one hundred twenty one to one hundred twenty two degrees Celsius under the stated method. A sample melting across one hundred twelve to one hundred nineteen has a lower and broader range. That is consistent with impurity or other sample and measurement problems, but it does not identify a particular contaminant by itself. Heating rate, thermometer calibration, residual solvent, sample packing and decomposition can affect the observation. A sharp range matching a reference supports identity and purity when combined with other evidence; it does not prove them uniquely. Different compounds can have similar melting ranges, and some mixtures can show relatively sharp eutectic melting. A mixed melting point with a known reference can add evidence when the material and method are appropriate, but interpretation still needs care. If a thermometer has a stated positive one degree bias, correct the observed reading downward by one degree before comparison. Precision, calibration and a chemical conclusion are separate steps. State which observation changed and which possible explanations remain rather than replacing evidence with a memorized rule.",
+        "points": [
+          "Reference range · 121–122 °C supplied · Compare matching method",
+          "Sample range · 112–119 °C observed · Lower and broader; not unique cause",
+          "Thermometer bias +1 °C · Correct observed value −1 °C · Calibration before interpretation"
+        ],
+        "board": {
+          "heading": "A melting range is evidence rather than a unique identity",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "Reference range",
+              "121–122 °C supplied",
+              "Compare matching method"
+            ],
+            [
+              "Sample range",
+              "112–119 °C observed",
+              "Lower and broader; not unique cause"
+            ],
+            [
+              "Thermometer bias +1 °C",
+              "Correct observed value −1 °C",
+              "Calibration before interpretation"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Coagulation evidence starts with the colloid charge",
+        "formula": "The oppositely charged ion is the counter-ion in the elementary comparison",
+        "script": "Colloid coagulation comparisons begin with the sign of the dispersed particles, not with memorizing one order of salt names. For a negatively charged sol, cations act as the counter ions in the elementary charge neutralization comparison. With otherwise comparable conditions, higher counter ion charge commonly increases coagulating power, although real systems also depend on specific ion chemistry and the medium. Suppose supplied critical coagulation concentrations are fifty millimolar sodium chloride, one millimolar magnesium chloride and zero point one millimolar aluminium chloride. Lower required concentration means stronger action in that measured comparison. Using reciprocal thresholds gives relative powers one, fifty and five hundred after normalization to the sodium salt. This is an interpretation of supplied data, not a universal numerical law for every colloid. For a positively charged sol, the relevant counter ions are anions instead; chloride, sulfate and phosphate cannot be ranked by the cation attached to them alone. Changes in p H or complexation can alter particle charge and invalidate a simple comparison. Identify the measured endpoint, charge and concentration units before translating an observation into a coagulation argument.",
+        "points": [
+          "Negative sol · Cations oppose particle charge · Counter-ions are positive",
+          "Thresholds: Na 50; Mg 1; Al 0.1 mM · Lower threshold is stronger · Relative power 1 : 50 : 500",
+          "Positive sol · Anions oppose particle charge · Reassess ions and conditions"
+        ],
+        "board": {
+          "heading": "Coagulation evidence starts with the colloid charge",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "Negative sol",
+              "Cations oppose particle charge",
+              "Counter-ions are positive"
+            ],
+            [
+              "Thresholds: Na 50; Mg 1; Al 0.1 mM",
+              "Lower threshold is stronger",
+              "Relative power 1 : 50 : 500"
+            ],
+            [
+              "Positive sol",
+              "Anions oppose particle charge",
+              "Reassess ions and conditions"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "A target has cold solubility 5.00 g per 100 g water. With 50.0 g water and no solvent loss, target remaining dissolved is:",
+        "options": [
+          "0.500 g",
+          "2.50 g",
+          "5.00 g",
+          "10.0 g"
+        ],
+        "answer": 1,
+        "explanation": "Scale the supplied solubility by 50.0/100; the denominator is solvent mass."
+      },
+      {
+        "question": "If 10.0 g target initially dissolved and 2.50 g stays in the cold mother liquor, ideal crystal recovery is:",
+        "options": [
+          "25%",
+          "100%",
+          "75%",
+          "7.5%"
+        ],
+        "answer": 2,
+        "explanation": "Recovered target=7.50 g, so recovery=100×7.50/10.0=75% under the stated assumptions."
+      },
+      {
+        "question": "Pure Mohr’s salt with supplied M=392 g/mol is dissolved: 3.92 g in 0.250 L. Formal Fe2+ concentration is:",
+        "options": [
+          "0.0100 M",
+          "0.392 M",
+          "0.00400 M",
+          "0.0400 M"
+        ],
+        "answer": 3,
+        "explanation": "Each formula unit contains one Fe2+: 3.92/392=0.0100 mol; divide by 0.250 L."
+      },
+      {
+        "question": "A 0.0250 L aliquot of that solution is assayed at Fe2+:MnO4−=5:1 with 0.0200 M titrant. Required volume is:",
+        "options": [
+          "10.0 mL",
+          "50.0 mL",
+          "2.00 mL",
+          "100 mL"
+        ],
+        "answer": 0,
+        "explanation": "Aliquot iron=0.00100 mol; permanganate=0.000200 mol; V=0.0100 L."
+      },
+      {
+        "question": "A lower, broader melting range relative to a reference is:",
+        "options": [
+          "Proof of one unique impurity",
+          "Evidence consistent with impurity or measurement/sample issues",
+          "Proof that the sample has no impurity",
+          "A direct molecular formula measurement"
+        ],
+        "answer": 1,
+        "explanation": "Melting behaviour supplies evidence, but residual solvent, calibration, heating and other causes can affect it."
+      },
+      {
+        "question": "A thermometer reads 123.0 °C with a known +1.0 °C bias. The corrected reading is:",
+        "options": [
+          "124.0 °C",
+          "123.0 °C",
+          "122.0 °C",
+          "1.0 °C"
+        ],
+        "answer": 2,
+        "explanation": "A positive bias means the instrument reads high; subtract the bias from the observation."
+      },
+      {
+        "question": "For a negatively charged sol in the elementary comparison, the counter-ions are:",
+        "options": [
+          "Only anions",
+          "Always neutral atoms",
+          "The solvent molecules only",
+          "Cations"
+        ],
+        "answer": 3,
+        "explanation": "Counter-ions carry charge opposite to the dispersed particles; a negative sol has positive counter-ions."
+      },
+      {
+        "question": "Coagulation thresholds are 50, 1 and 0.1 mM. Inverse-threshold powers normalized to the first are:",
+        "options": [
+          "1 : 50 : 500",
+          "50 : 1 : 0.1",
+          "1 : 1 : 1",
+          "500 : 50 : 1"
+        ],
+        "answer": 0,
+        "explanation": "Use reciprocals then divide by 1/50. This ranks the supplied data rather than asserting a universal ratio."
+      }
+    ],
+    "sources": [
+      {
+        "title": "NCERT: laboratory chemistry resources",
+        "url": "https://ncert.nic.in/science-laboratory-manual.php"
+      },
+      {
+        "title": "OpenStax: quantitative chemical analysis",
+        "url": "https://openstax.org/books/chemistry-2e/pages/4-5-quantitative-chemical-analysis"
+      },
+      {
+        "title": "IIT Kanpur SATHEE: surface chemistry",
+        "url": "https://sathee.iitk.ac.in/ncert-books/udaan/udaan-che-12/chem-12-unit-05-surface-chemistry/"
+      }
+    ]
+  },
+  "organic-nitrogen": {
+    "base": 13,
+    "quizBase": 16,
+    "chapters": [
+      {
+        "title": "Gabriel synthesis has a substrate boundary",
+        "formula": "Suitable primary alkyl halide → primary alkylamine; not an ordinary aryl substitution",
+        "script": "The Gabriel synthesis is a reaction planning tool for a suitable primary alkylamine, rather than a promise that every halide gives any desired amine. In the elementary scheme, a phthalimide nitrogen nucleophile displaces halide from a suitable alkyl carbon. Subsequent cleavage of the protecting imide framework releases the primary amine. With a two carbon alkyl fragment, the resulting amine contains that same two carbon fragment attached to nitrogen. The imide ring is a temporary carrier; its carbons are not all incorporated into the target alkylamine. Ordinary unactivated chlorobenzene does not undergo the same backside displacement at its aromatic carbon, so this simple route is not a general preparation of aniline from chlorobenzene. Tertiary alkyl substrates also do not become good ordinary backside substitution partners merely because the named reaction is requested. The method avoids describing an uncontrolled sequence of repeated alkylations as a selective preparation of one primary amine. Identify the reacting carbon, its substitution pattern, and the nitrogen containing fragment that remains after release. These are connectivity predictions for the stated model, not experimental handling instructions or a claim that every substrate gives quantitative conversion.",
+        "points": [
+          "Suitable ethyl halide · Attach fragment to imide N · Release ethylamine",
+          "Temporary imide framework · Carrier carbons removed separately · Target retains ethyl carbons",
+          "Unactivated aryl chloride · No ordinary backside substitution · Not this route to aniline"
+        ],
+        "board": {
+          "heading": "Gabriel synthesis has a substrate boundary",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "Suitable ethyl halide",
+              "Attach fragment to imide N",
+              "Release ethylamine"
+            ],
+            [
+              "Temporary imide framework",
+              "Carrier carbons removed separately",
+              "Target retains ethyl carbons"
+            ],
+            [
+              "Unactivated aryl chloride",
+              "No ordinary backside substitution",
+              "Not this route to aniline"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Nitrous-acid gas data need the amine class",
+        "formula": "Ideal primary aliphatic amine model: 1 mol amine → 1 mol N₂",
+        "script": "Gas evolution from a nitrogen reaction must be interpreted with the substrate class and the gas collection model stated. A simple primary aliphatic amine can react through an unstable aliphatic diazonium intermediate that loses nitrogen gas. In the elementary quantitative model, each mole of reacting primary amine gives one mole of nitrogen molecules, although the organic product distribution need not be uniquely predicted for every substrate. Suppose a supplied experiment reports twenty four point zero millilitres of dry nitrogen at three hundred kelvin and one hundred kilopascals, with ideal gas behaviour and quantitative collection. Use R equal to eight point three one four litre kilopascals per mole kelvin. The nitrogen amount is about zero point zero zero zero nine six two mole. That is also the reacting amine amount under the one to one model. A twenty five point zero millilitre aliquot would therefore contain about zero point zero three eight five molar reactive primary amine. Wet gas would need a water vapour correction. A primary aromatic amine can instead form an arenediazonium salt under the specified diazotization conditions; do not automatically apply the same immediate gas assay to every nitrogen compound.",
+        "points": [
+          "Dry N₂: 24.0 mL · P=100 kPa; T=300 K · n=PV/RT≈0.000962 mol",
+          "Primary aliphatic model · 1 mol amine per mol N₂ · Amine amount≈0.000962 mol",
+          "Aliquot volume 25.0 mL · Divide by 0.0250 L · Reactive amine≈0.0385 M"
+        ],
+        "board": {
+          "heading": "Nitrous-acid gas data need the amine class",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "Dry N₂: 24.0 mL",
+              "P=100 kPa; T=300 K",
+              "n=PV/RT≈0.000962 mol"
+            ],
+            [
+              "Primary aliphatic model",
+              "1 mol amine per mol N₂",
+              "Amine amount≈0.000962 mol"
+            ],
+            [
+              "Aliquot volume 25.0 mL",
+              "Divide by 0.0250 L",
+              "Reactive amine≈0.0385 M"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "An amide nitrogen is not a simple alkylamine nitrogen",
+        "formula": "Carbonyl delocalization reduces availability of the amide nitrogen lone pair",
+        "script": "The presence of a nitrogen atom does not make every nitrogen compound equally basic. In a simple alkylamine, the nitrogen lone pair can accept a proton, with measured basicity also depending on solvent and other structural effects. In an amide, that lone pair interacts with the adjacent carbonyl system. Resonance descriptions include a contribution with positive charge on nitrogen and negative charge on oxygen, while the real molecule is not switching between isolated drawings. The carbon nitrogen bond consequently has partial double bond character, and the nitrogen lone pair is less freely available than in the corresponding simple amine. Under ordinary strongly acidic protonation discussions, amides commonly protonate preferentially on oxygen rather than behaving exactly like an alkylamine at nitrogen. This explains why converting an amine into an amide changes its basicity and is useful in protection strategies. It does not mean every amide is completely unable to interact with acid or that a resonance drawing supplies a numerical base constant. Compare actual structures and matching solvent data. An amine classification based on carbon groups directly bonded to nitrogen also should not silently replace the distinct functional group identification of an amide.",
+        "points": [
+          "Alkylamine nitrogen · Lone pair accepts H⁺ · Solvent affects basicity",
+          "Amide: N beside C=O · Delocalization into carbonyl · Partial C–N double character",
+          "Acid interaction with amide · O protonation commonly favoured · Not ordinary amine behaviour"
+        ],
+        "board": {
+          "heading": "An amide nitrogen is not a simple alkylamine nitrogen",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "Alkylamine nitrogen",
+              "Lone pair accepts H⁺",
+              "Solvent affects basicity"
+            ],
+            [
+              "Amide: N beside C=O",
+              "Delocalization into carbonyl",
+              "Partial C–N double character"
+            ],
+            [
+              "Acid interaction with amide",
+              "O protonation commonly favoured",
+              "Not ordinary amine behaviour"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Track both nitrogens in diazonium reactions",
+        "formula": "Diazonium replacement loses N₂; azo coupling retains the N–N unit",
+        "script": "A nitrogen atom ledger distinguishes diazonium replacement from azo coupling. In the elementary diazotization accounting, one nitrogen comes from the original primary aromatic amino group and another from the nitrosating source. The arenediazonium group therefore contains two nitrogen atoms attached as a single group to the aromatic framework. In a replacement reaction that releases nitrogen gas, both atoms leave that organic framework together as one nitrogen molecule. The incoming replacement group can have its own atoms, so product composition must still be counted separately. In azo coupling with an appropriate activated aromatic partner, the nitrogen nitrogen unit is retained between the two aromatic fragments instead. A benzene derived diazonium fragment has six carbons; a phenol partner contributes another six. The simple hydroxyazobenzene connectivity contains twelve carbons and two azo nitrogens. If an isotope marks one of the nitrogen sources in the ideal accounting model, replacement sends that marked atom into the released nitrogen, while coupling retains it in the azo unit. This ledger does not specify every isotope exchange pathway, the coupling position under every condition, or an experimental isolation procedure. Use it to distinguish which bond connection and which atom inventory are actually being tested.",
+        "points": [
+          "Diazonium nitrogen sources · Amino N + nitrosating N · Two N atoms in the group",
+          "Replacement releasing gas · Both group N atoms leave · One N₂ molecule",
+          "Azo coupling with phenol · 6 + 6 carbons; retain N–N · 12 carbons; 2 azo nitrogens"
+        ],
+        "board": {
+          "heading": "Track both nitrogens in diazonium reactions",
+          "columns": [
+            "Case / given",
+            "Reason / calculation",
+            "Result / condition"
+          ],
+          "rows": [
+            [
+              "Diazonium nitrogen sources",
+              "Amino N + nitrosating N",
+              "Two N atoms in the group"
+            ],
+            [
+              "Replacement releasing gas",
+              "Both group N atoms leave",
+              "One N₂ molecule"
+            ],
+            [
+              "Azo coupling with phenol",
+              "6 + 6 carbons; retain N–N",
+              "12 carbons; 2 azo nitrogens"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "In a suitable Gabriel synthesis starting with an ethyl fragment, the released target primary amine is:",
+        "options": [
+          "Ethylamine",
+          "Aniline necessarily",
+          "A tertiary amine necessarily",
+          "An amine containing every imide carbon"
+        ],
+        "answer": 0,
+        "explanation": "The alkyl fragment remains attached to nitrogen; the protecting imide framework is removed separately."
+      },
+      {
+        "question": "Why is ordinary unactivated chlorobenzene outside that simple Gabriel displacement model?",
+        "options": [
+          "It contains no carbon",
+          "Its aryl carbon is not an ordinary backside-substitution site",
+          "Every chloride is inert in all chemistry",
+          "It already contains an amino group"
+        ],
+        "answer": 1,
+        "explanation": "The standard alkyl SN2 route cannot simply be transferred to an unactivated aromatic carbon."
+      },
+      {
+        "question": "Dry N2 occupies 0.0240 L at 100 kPa and 300 K. With R=8.314 L kPa/(mol K), its amount is about:",
+        "options": [
+          "0.0240 mol",
+          "0.962 mol",
+          "0.000962 mol",
+          "0.00962 mol"
+        ],
+        "answer": 2,
+        "explanation": "n=PV/RT=100×0.0240/(8.314×300), using litre units throughout."
+      },
+      {
+        "question": "In a quantitative 1:1 primary-aliphatic-amine gas model, that amount in a 0.0250 L aliquot gives concentration about:",
+        "options": [
+          "0.962 M",
+          "0.000962 M",
+          "0.0240 M",
+          "0.0385 M"
+        ],
+        "answer": 3,
+        "explanation": "Divide the gas-derived reacting amount by the aliquot solution volume, not by the gas volume."
+      },
+      {
+        "question": "The reduced availability of an amide nitrogen lone pair is chiefly associated with:",
+        "options": [
+          "Delocalization into the adjacent carbonyl",
+          "Absence of nitrogen electrons",
+          "Mandatory cleavage of the carbon chain",
+          "A change in nitrogen atomic number"
+        ],
+        "answer": 0,
+        "explanation": "The lone pair participates in the conjugated amide system rather than behaving like a freely available alkylamine lone pair."
+      },
+      {
+        "question": "In common strong-acid protonation discussions, an amide often preferentially protonates at:",
+        "options": [
+          "Every carbon equally",
+          "Oxygen",
+          "Only an unrelated counter ion",
+          "A nonexistent third nitrogen"
+        ],
+        "answer": 1,
+        "explanation": "Carbonyl oxygen is commonly the preferred amide protonation site; conditions and structure still matter."
+      },
+      {
+        "question": "A diazonium replacement that releases N2 removes how many nitrogens from the diazonium group?",
+        "options": [
+          "Zero",
+          "One",
+          "Two",
+          "Four"
+        ],
+        "answer": 2,
+        "explanation": "The two nitrogen atoms of the group leave together as one nitrogen molecule in the specified replacement."
+      },
+      {
+        "question": "A simple benzene-derived diazonium fragment couples with a phenol ring. The product carbon count is:",
+        "options": [
+          "6",
+          "7",
+          "18",
+          "12"
+        ],
+        "answer": 3,
+        "explanation": "Each aromatic fragment contributes six carbons; retaining the azo unit does not add carbon atoms."
+      }
+    ],
+    "sources": [
+      {
+        "title": "OpenStax: synthesis of amines",
+        "url": "https://openstax.org/books/organic-chemistry/pages/24-6-synthesis-of-amines"
+      },
+      {
+        "title": "OpenStax: reactions of arylamines",
+        "url": "https://openstax.org/books/organic-chemistry/pages/24-8-reactions-of-arylamines"
+      },
+      {
+        "title": "OpenStax: chemistry of amides",
+        "url": "https://openstax.org/books/organic-chemistry/pages/21-7-chemistry-of-amides"
+      }
+    ]
+  }
+} as const;

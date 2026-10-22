@@ -1,3 +1,4 @@
+import { extendNitrogenPracticalPeriodicLesson } from "./nitrogen-practical-periodic-study.ts";
 import { extendPBlockThermoSolutionsLesson } from "./p-block-thermo-solutions-study.ts";
 import { extendMoleAnalysisDFLesson } from "./mole-analysis-d-f-study.ts";
 import { equilibriumElectrochemistryPracticalAdditions as additions } from "./equilibrium-electrochemistry-practical-additions.ts";
@@ -73,7 +74,7 @@ export const inorganicPracticalLessons: StudyLesson[] = [
     title: "Practical chemistry: observations, titrations and experimental reasoning",
     summary: "Interpret lab observations and calculate titration ratios while distinguishing evidence, interference and safe supervised practice.",
     prerequisites: "Equilibrium, redox, concentration, thermodynamics and functional-group chemistry.",
-    remaining: "Written companion to the thirteen-chapter Marin recording for Unit 20, not complete unit coverage. Full systematic schemes for every listed ion, all named preparation reactions, indicator curves, sol recipes and iodide-peroxide datasets remain. This is conceptual revision, not an unsupervised experimental manual.",
+    remaining: "Written companion to the seventeen-chapter Marin recording for Unit 20, not complete unit coverage. Full systematic schemes for every listed ion, all named preparation reactions, indicator curves, sol recipes and iodide-peroxide datasets remain. This is conceptual revision, not an unsupervised experimental manual.",
     sections: [
       { title: "An observation needs an interpretation and a control", paragraphs: ["A precipitate, colour change or gas can support a chemical conclusion, but an isolated observation is rarely absolute proof. The medium, reagent order, concentration and interfering species matter. Record what was observed separately from the proposed identity and seek a suitable confirmatory reaction rather than guessing from a familiar colour.", "Organic element detection and functional-group tests overlap with the analytical and organic lessons. Sodium fusion, volatile toxic reagents and gas-generating tests require trained supervision and approved apparatus. Never identify a gas by deliberately inhaling it or taste a sample. Here the aim is to reason from stated exam observations, not perform unknown-sample chemistry at home."], formula: "Observation -> possible explanations -> interference check -> confirmation" },
       { title: "Titrations use stoichiometry at equivalence", paragraphs: ["At equivalence, the reacted mole ratio follows the balanced equation. For monoprotic strong acid and monobasic strong base, n(acid)=n(base), so their concentration-volume products are equal. A diprotic acid requires the appropriate neutralization stage; do not assume every titration is one-to-one.", "An indicator endpoint is an observed signal near, but not identical by definition to, equivalence. Select an indicator whose transition suits the steep part of the titration curve. Use the delivered burette volume, not its final reading alone, and keep volume units consistent. Rinsing and parallax control help accuracy but cannot replace the balanced reaction."], formula: "At equivalence: moles react in the balanced coefficient ratio" },
@@ -145,3 +146,5 @@ for (const lesson of inorganicPracticalLessons) {
 for (const lesson of inorganicPracticalLessons) extendMoleAnalysisDFLesson(lesson);
 
 for (const lesson of inorganicPracticalLessons) extendPBlockThermoSolutionsLesson(lesson);
+
+for (const lesson of inorganicPracticalLessons) extendNitrogenPracticalPeriodicLesson(lesson);

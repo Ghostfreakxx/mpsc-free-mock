@@ -1213,7 +1213,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "periodic-trends", subject: "Chemistry", unit: 9, number: "C11", title: periodicTrends.title,
-    description: "Thirteen narrated chapters on periodic trends, successive-ionization data, electron-gain signs, radius conventions, oxide equations and aqueous reducing power.",
+    description: "Seventeen narrated chapters on periodic trends, successive-ionization data, electron-gain signs, radius conventions, oxide equations and aqueous reducing power.",
     scope: "Recorded Unit 9 foundation with original practice. Detailed group chemistry, transition-element trends and further exceptions remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.periodic-trends.lecture.v1",
     audio: "/lectures/periodic-trends/narration-marin.mp3",
@@ -1253,7 +1253,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-nitrogen", subject: "Chemistry", unit: 18, number: "C15", title: organicNitrogen.title,
-    description: "Thirteen narrated chapters on amines, preparation carbon counts, acylation, Hinsberg tests, diazonium routes and quantitative basicity.",
+    description: "Seventeen narrated chapters on amines, preparation carbon counts, acylation, Hinsberg tests, diazonium routes and quantitative basicity.",
     scope: "Recorded Unit 18 foundation and worked applications with original practice. Full mechanisms, identification equations, wider solvent datasets and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-nitrogen.lecture.v1",
     audio: "/lectures/organic-nitrogen/narration-marin.mp3",
@@ -1283,7 +1283,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "practical-chemistry", subject: "Chemistry", unit: 20, number: "C18", title: practicalChemistry.title,
-    description: "Thirteen narrated chapters on titration corrections, measurement bounds, anion and cation evidence, preparations, calorimetry and rate experiments.",
+    description: "Seventeen narrated chapters on titration corrections, measurement bounds, anion and cation evidence, preparations, calorimetry and rate experiments.",
     scope: "Recorded Unit 20 conceptual foundation with original practice. Full ion-analysis schemes, all preparation equations, indicator curves, sol preparation and further kinetic datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.practical-chemistry.lecture.v1",
     audio: "/lectures/practical-chemistry/narration-marin.mp3",

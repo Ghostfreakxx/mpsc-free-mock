@@ -17,6 +17,14 @@
     {
       "title": "OpenStax: synthesis of amines",
       "url": "https://openstax.org/books/organic-chemistry/pages/24-6-synthesis-of-amines"
+    },
+    {
+      "title": "OpenStax: reactions of arylamines",
+      "url": "https://openstax.org/books/organic-chemistry/pages/24-8-reactions-of-arylamines"
+    },
+    {
+      "title": "OpenStax: chemistry of amides",
+      "url": "https://openstax.org/books/organic-chemistry/pages/21-7-chemistry-of-amides"
     }
   ],
   "chapters": [
@@ -476,6 +484,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Gabriel synthesis has a substrate boundary",
+      "formula": "Suitable primary alkyl halide → primary alkylamine; not an ordinary aryl substitution",
+      "script": "The Gabriel synthesis is a reaction planning tool for a suitable primary alkylamine, rather than a promise that every halide gives any desired amine. In the elementary scheme, a phthalimide nitrogen nucleophile displaces halide from a suitable alkyl carbon. Subsequent cleavage of the protecting imide framework releases the primary amine. With a two carbon alkyl fragment, the resulting amine contains that same two carbon fragment attached to nitrogen. The imide ring is a temporary carrier; its carbons are not all incorporated into the target alkylamine. Ordinary unactivated chlorobenzene does not undergo the same backside displacement at its aromatic carbon, so this simple route is not a general preparation of aniline from chlorobenzene. Tertiary alkyl substrates also do not become good ordinary backside substitution partners merely because the named reaction is requested. The method avoids describing an uncontrolled sequence of repeated alkylations as a selective preparation of one primary amine. Identify the reacting carbon, its substitution pattern, and the nitrogen containing fragment that remains after release. These are connectivity predictions for the stated model, not experimental handling instructions or a claim that every substrate gives quantitative conversion.",
+      "points": [
+        "Suitable ethyl halide · Attach fragment to imide N · Release ethylamine",
+        "Temporary imide framework · Carrier carbons removed separately · Target retains ethyl carbons",
+        "Unactivated aryl chloride · No ordinary backside substitution · Not this route to aniline"
+      ],
+      "board": {
+        "heading": "Gabriel synthesis has a substrate boundary",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Suitable ethyl halide",
+            "Attach fragment to imide N",
+            "Release ethylamine"
+          ],
+          [
+            "Temporary imide framework",
+            "Carrier carbons removed separately",
+            "Target retains ethyl carbons"
+          ],
+          [
+            "Unactivated aryl chloride",
+            "No ordinary backside substitution",
+            "Not this route to aniline"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Nitrous-acid gas data need the amine class",
+      "formula": "Ideal primary aliphatic amine model: 1 mol amine → 1 mol N₂",
+      "script": "Gas evolution from a nitrogen reaction must be interpreted with the substrate class and the gas collection model stated. A simple primary aliphatic amine can react through an unstable aliphatic diazonium intermediate that loses nitrogen gas. In the elementary quantitative model, each mole of reacting primary amine gives one mole of nitrogen molecules, although the organic product distribution need not be uniquely predicted for every substrate. Suppose a supplied experiment reports twenty four point zero millilitres of dry nitrogen at three hundred kelvin and one hundred kilopascals, with ideal gas behaviour and quantitative collection. Use R equal to eight point three one four litre kilopascals per mole kelvin. The nitrogen amount is about zero point zero zero zero nine six two mole. That is also the reacting amine amount under the one to one model. A twenty five point zero millilitre aliquot would therefore contain about zero point zero three eight five molar reactive primary amine. Wet gas would need a water vapour correction. A primary aromatic amine can instead form an arenediazonium salt under the specified diazotization conditions; do not automatically apply the same immediate gas assay to every nitrogen compound.",
+      "points": [
+        "Dry N₂: 24.0 mL · P=100 kPa; T=300 K · n=PV/RT≈0.000962 mol",
+        "Primary aliphatic model · 1 mol amine per mol N₂ · Amine amount≈0.000962 mol",
+        "Aliquot volume 25.0 mL · Divide by 0.0250 L · Reactive amine≈0.0385 M"
+      ],
+      "board": {
+        "heading": "Nitrous-acid gas data need the amine class",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Dry N₂: 24.0 mL",
+            "P=100 kPa; T=300 K",
+            "n=PV/RT≈0.000962 mol"
+          ],
+          [
+            "Primary aliphatic model",
+            "1 mol amine per mol N₂",
+            "Amine amount≈0.000962 mol"
+          ],
+          [
+            "Aliquot volume 25.0 mL",
+            "Divide by 0.0250 L",
+            "Reactive amine≈0.0385 M"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "An amide nitrogen is not a simple alkylamine nitrogen",
+      "formula": "Carbonyl delocalization reduces availability of the amide nitrogen lone pair",
+      "script": "The presence of a nitrogen atom does not make every nitrogen compound equally basic. In a simple alkylamine, the nitrogen lone pair can accept a proton, with measured basicity also depending on solvent and other structural effects. In an amide, that lone pair interacts with the adjacent carbonyl system. Resonance descriptions include a contribution with positive charge on nitrogen and negative charge on oxygen, while the real molecule is not switching between isolated drawings. The carbon nitrogen bond consequently has partial double bond character, and the nitrogen lone pair is less freely available than in the corresponding simple amine. Under ordinary strongly acidic protonation discussions, amides commonly protonate preferentially on oxygen rather than behaving exactly like an alkylamine at nitrogen. This explains why converting an amine into an amide changes its basicity and is useful in protection strategies. It does not mean every amide is completely unable to interact with acid or that a resonance drawing supplies a numerical base constant. Compare actual structures and matching solvent data. An amine classification based on carbon groups directly bonded to nitrogen also should not silently replace the distinct functional group identification of an amide.",
+      "points": [
+        "Alkylamine nitrogen · Lone pair accepts H⁺ · Solvent affects basicity",
+        "Amide: N beside C=O · Delocalization into carbonyl · Partial C–N double character",
+        "Acid interaction with amide · O protonation commonly favoured · Not ordinary amine behaviour"
+      ],
+      "board": {
+        "heading": "An amide nitrogen is not a simple alkylamine nitrogen",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Alkylamine nitrogen",
+            "Lone pair accepts H⁺",
+            "Solvent affects basicity"
+          ],
+          [
+            "Amide: N beside C=O",
+            "Delocalization into carbonyl",
+            "Partial C–N double character"
+          ],
+          [
+            "Acid interaction with amide",
+            "O protonation commonly favoured",
+            "Not ordinary amine behaviour"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Track both nitrogens in diazonium reactions",
+      "formula": "Diazonium replacement loses N₂; azo coupling retains the N–N unit",
+      "script": "A nitrogen atom ledger distinguishes diazonium replacement from azo coupling. In the elementary diazotization accounting, one nitrogen comes from the original primary aromatic amino group and another from the nitrosating source. The arenediazonium group therefore contains two nitrogen atoms attached as a single group to the aromatic framework. In a replacement reaction that releases nitrogen gas, both atoms leave that organic framework together as one nitrogen molecule. The incoming replacement group can have its own atoms, so product composition must still be counted separately. In azo coupling with an appropriate activated aromatic partner, the nitrogen nitrogen unit is retained between the two aromatic fragments instead. A benzene derived diazonium fragment has six carbons; a phenol partner contributes another six. The simple hydroxyazobenzene connectivity contains twelve carbons and two azo nitrogens. If an isotope marks one of the nitrogen sources in the ideal accounting model, replacement sends that marked atom into the released nitrogen, while coupling retains it in the azo unit. This ledger does not specify every isotope exchange pathway, the coupling position under every condition, or an experimental isolation procedure. Use it to distinguish which bond connection and which atom inventory are actually being tested.",
+      "points": [
+        "Diazonium nitrogen sources · Amino N + nitrosating N · Two N atoms in the group",
+        "Replacement releasing gas · Both group N atoms leave · One N₂ molecule",
+        "Azo coupling with phenol · 6 + 6 carbons; retain N–N · 12 carbons; 2 azo nitrogens"
+      ],
+      "board": {
+        "heading": "Track both nitrogens in diazonium reactions",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Diazonium nitrogen sources",
+            "Amino N + nitrosating N",
+            "Two N atoms in the group"
+          ],
+          [
+            "Replacement releasing gas",
+            "Both group N atoms leave",
+            "One N₂ molecule"
+          ],
+          [
+            "Azo coupling with phenol",
+            "6 + 6 carbons; retain N–N",
+            "12 carbons; 2 azo nitrogens"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -654,6 +802,94 @@
       ],
       "answer": 2,
       "explanation": "Use pKa(BH+) + pKb(B) ≈ 14 for a conjugate pair under the stated conditions."
+    },
+    {
+      "question": "In a suitable Gabriel synthesis starting with an ethyl fragment, the released target primary amine is:",
+      "options": [
+        "Ethylamine",
+        "Aniline necessarily",
+        "A tertiary amine necessarily",
+        "An amine containing every imide carbon"
+      ],
+      "answer": 0,
+      "explanation": "The alkyl fragment remains attached to nitrogen; the protecting imide framework is removed separately."
+    },
+    {
+      "question": "Why is ordinary unactivated chlorobenzene outside that simple Gabriel displacement model?",
+      "options": [
+        "It contains no carbon",
+        "Its aryl carbon is not an ordinary backside-substitution site",
+        "Every chloride is inert in all chemistry",
+        "It already contains an amino group"
+      ],
+      "answer": 1,
+      "explanation": "The standard alkyl SN2 route cannot simply be transferred to an unactivated aromatic carbon."
+    },
+    {
+      "question": "Dry N2 occupies 0.0240 L at 100 kPa and 300 K. With R=8.314 L kPa/(mol K), its amount is about:",
+      "options": [
+        "0.0240 mol",
+        "0.962 mol",
+        "0.000962 mol",
+        "0.00962 mol"
+      ],
+      "answer": 2,
+      "explanation": "n=PV/RT=100×0.0240/(8.314×300), using litre units throughout."
+    },
+    {
+      "question": "In a quantitative 1:1 primary-aliphatic-amine gas model, that amount in a 0.0250 L aliquot gives concentration about:",
+      "options": [
+        "0.962 M",
+        "0.000962 M",
+        "0.0240 M",
+        "0.0385 M"
+      ],
+      "answer": 3,
+      "explanation": "Divide the gas-derived reacting amount by the aliquot solution volume, not by the gas volume."
+    },
+    {
+      "question": "The reduced availability of an amide nitrogen lone pair is chiefly associated with:",
+      "options": [
+        "Delocalization into the adjacent carbonyl",
+        "Absence of nitrogen electrons",
+        "Mandatory cleavage of the carbon chain",
+        "A change in nitrogen atomic number"
+      ],
+      "answer": 0,
+      "explanation": "The lone pair participates in the conjugated amide system rather than behaving like a freely available alkylamine lone pair."
+    },
+    {
+      "question": "In common strong-acid protonation discussions, an amide often preferentially protonates at:",
+      "options": [
+        "Every carbon equally",
+        "Oxygen",
+        "Only an unrelated counter ion",
+        "A nonexistent third nitrogen"
+      ],
+      "answer": 1,
+      "explanation": "Carbonyl oxygen is commonly the preferred amide protonation site; conditions and structure still matter."
+    },
+    {
+      "question": "A diazonium replacement that releases N2 removes how many nitrogens from the diazonium group?",
+      "options": [
+        "Zero",
+        "One",
+        "Two",
+        "Four"
+      ],
+      "answer": 2,
+      "explanation": "The two nitrogen atoms of the group leave together as one nitrogen molecule in the specified replacement."
+    },
+    {
+      "question": "A simple benzene-derived diazonium fragment couples with a phenol ring. The product carbon count is:",
+      "options": [
+        "6",
+        "7",
+        "18",
+        "12"
+      ],
+      "answer": 3,
+      "explanation": "Each aromatic fragment contributes six carbons; retaining the azo unit does not add carbon atoms."
     }
   ]
 }
