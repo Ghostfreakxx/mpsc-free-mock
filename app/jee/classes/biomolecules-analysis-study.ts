@@ -1,3 +1,4 @@
+import { extendHalogensOxygenBiomoleculesLesson } from "./halogens-oxygen-biomolecules-study.ts";
 import { extendMoleAnalysisDFLesson } from "./mole-analysis-d-f-study.ts";
 import type { StudyLesson } from "./course";
 import { oxygenNitrogenBiomoleculesAdditions } from "./oxygen-nitrogen-biomolecules-additions.ts";
@@ -10,7 +11,7 @@ export const biomoleculesAnalysisLessons: StudyLesson[] = [
     title: "Biomolecules: sugars, proteins and genetic building blocks",
     summary: "Connect molecular building blocks with carbohydrate classification, peptide bonds, protein structure and nucleic acids.",
     prerequisites: "Oxygen and nitrogen functional groups, condensation, hydrolysis and hydrogen bonding.",
-    remaining: "Written companion to the thirteen-chapter Marin recording for Unit 19, including a D-glucose Fischer drawing, alpha/beta ring schematics, reducing-end and hydrolysis balances, amino-acid charge and peptide sequence/mass calculations. Full chair structures, fructose stereochemistry, vitamin-function tables and broader hormone examples remain. Original practice, not exhaustive coverage or official PYQs.",
+    remaining: "Written companion to the seventeen-chapter Marin recording for Unit 19, including a D-glucose Fischer drawing, alpha/beta ring schematics, reducing-end and hydrolysis balances, amino-acid charge and peptide sequence/mass calculations. Full chair structures, fructose stereochemistry, vitamin-function tables and broader hormone examples remain. Original practice, not exhaustive coverage or official PYQs.",
     sections: [
       { title: "A sugar's functional group helps classify it", paragraphs: ["Carbohydrates include sugars and their larger assemblies. Monosaccharides cannot be hydrolysed into simpler carbohydrate units. An aldose has an aldehyde group in its open-chain representation; a ketose has a ketone. Glucose is an aldohexose and fructose a ketohexose: both have six carbons, but their carbonyl positions differ.", "Many sugars spend most of their time in cyclic forms in solution, so an open-chain formula is a useful representation rather than the only structure present. Ring formation creates an anomeric centre. Do not identify a carbohydrate solely from the often-used C_n(H2O)_n pattern; some compounds fit it without being carbohydrates and some carbohydrate derivatives do not fit it."], formula: "Glucose: aldohexose; fructose: ketohexose; both C6H12O6" },
       { title: "Hydrolysis tells us the units in a disaccharide", paragraphs: ["Sucrose contains glucose and fructose units. Maltose contains two glucose units, while lactose contains galactose and glucose. Joining two monosaccharides with a glycosidic bond has the net composition change of losing one water molecule; hydrolysis adds water and separates the units. Structural bonding details distinguish the three despite related overall formulas.", "A reducing sugar can access a reactive carbonyl form under the relevant test conditions. Sucrose has both anomeric centres involved in its linkage and is nonreducing before hydrolysis. Maltose and lactose retain a suitable free anomeric centre and are reducing. Fructose can respond in alkaline reducing-sugar tests through rearrangement even though it is a ketose."], formula: "C12H22O11 + H2O -> two C6H12O6 units for these disaccharides" },
@@ -81,3 +82,5 @@ biomolecules.examples.push(
 );
 
 for (const lesson of biomoleculesAnalysisLessons) extendMoleAnalysisDFLesson(lesson);
+
+for (const lesson of biomoleculesAnalysisLessons) extendHalogensOxygenBiomoleculesLesson(lesson);

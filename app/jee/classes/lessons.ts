@@ -1233,7 +1233,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-halogens", subject: "Chemistry", unit: 16, number: "C13", title: organicHalogens.title,
-    description: "Thirteen narrated chapters on halides, substitution stereochemistry, elimination competition, ambidentate reagents and reaction-centre comparisons.",
+    description: "Seventeen narrated chapters on halides, substitution stereochemistry, elimination competition, ambidentate reagents and reaction-centre comparisons.",
     scope: "Recorded Unit 16 foundation and worked applications with original practice. Full spatial mechanism drawings, further preparations, special haloarene pathways and detailed compound comparisons remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-halogens.lecture.v1",
     audio: "/lectures/organic-halogens/narration-marin.mp3",
@@ -1243,7 +1243,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-oxygen", subject: "Chemistry", unit: 17, number: "C14", title: organicOxygen.title,
-    description: "Fifteen narrated chapters on oxygen groups, reduction selectivity, named phenol reactions, chemical tests, carbon ledgers and esterification equilibrium.",
+    description: "Nineteen narrated chapters on oxygen groups, reduction selectivity, named phenol reactions, chemical tests, carbon ledgers and esterification equilibrium.",
     scope: "Recorded Unit 17 foundation and worked applications with original practice. Full mechanisms, carbonyl spatial drawings and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-oxygen.lecture.v1",
     audio: "/lectures/organic-oxygen/narration-marin.mp3",
@@ -1263,7 +1263,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "biomolecules", subject: "Chemistry", unit: 19, number: "C16", title: biomolecules.title,
-    description: "Thirteen narrated chapters on biomolecules, glucose Fischer and anomer drawings, reducing ends, hydrolysis, amino-acid charge and peptide calculations.",
+    description: "Seventeen narrated chapters on biomolecules, glucose Fischer and anomer drawings, reducing ends, hydrolysis, amino-acid charge and peptide calculations.",
     scope: "Recorded Unit 19 foundation and worked applications with original practice. Full chair and fructose structures, vitamin-function tables and broader hormone examples remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.biomolecules.lecture.v1",
     audio: "/lectures/biomolecules/narration-marin.mp3",

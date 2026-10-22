@@ -16,10 +16,10 @@ test('expanded product predictions preserve carbon count, aromaticity and reacti
 test('organic reaction foundations preserve official unit mapping and honest scope', () => {
   assert.deepEqual(lessons.map(l => l.unit), [15, 16]);
   for (const lesson of lessons) {
-    assert.equal(lesson.sections.length, 13);
-    assert.equal(lesson.examples.length, 6);
-    assert.equal(lesson.quiz.length, 16);
-    assert.match(lesson.remaining, /thirteen-chapter Marin recording/);
+    assert.equal(lesson.sections.length, lesson.id==='organic-halogens'?17:13);
+    assert.equal(lesson.examples.length, lesson.id==='organic-halogens'?9:6);
+    assert.equal(lesson.quiz.length, lesson.id==='organic-halogens'?24:16);
+    assert.match(lesson.remaining, lesson.id==='organic-halogens'?/seventeen-chapter Marin recording/:/thirteen-chapter Marin recording/);
   }
 });
 test('HBr orientation and reductive ozonolysis practice keys retain reaction conditions', () => {

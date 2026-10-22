@@ -41,6 +41,18 @@
     {
       "title": "OpenStax: alcohols from carbonyl reduction",
       "url": "https://openstax.org/books/organic-chemistry/pages/17-4-alcohols-from-carbonyl-compounds-reduction"
+    },
+    {
+      "title": "OpenStax: mixed aldol reactions",
+      "url": "https://openstax.org/books/organic-chemistry/pages/23-5-mixed-aldol-reactions"
+    },
+    {
+      "title": "OpenStax: cyanohydrin formation",
+      "url": "https://openstax.org/books/organic-chemistry/pages/19-6-nucleophilic-addition-of-hcn-cyanohydrin-formation"
+    },
+    {
+      "title": "OpenStax: ester chemistry",
+      "url": "https://openstax.org/books/organic-chemistry/pages/21-6-chemistry-of-esters"
     }
   ],
   "chapters": [
@@ -570,6 +582,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Mixed aldol reactions need donor and acceptor choices",
+      "formula": "Two enolizable carbonyl partners can give two self and two crossed connectivities",
+      "script": "An aldol question has two roles: an enolate donor and a carbonyl acceptor. If acetaldehyde and propionaldehyde are mixed under an idealized ordinary base catalyzed aldol model, both have alpha hydrogens and can supply enolate donors. Each donor can attack either aldehyde. The elementary first addition list therefore has two self aldol connectivities and two crossed connectivities, four in total. Acetaldehyde acting as donor and propionaldehyde as acceptor is not the same connectivity as propionaldehyde donating to acetaldehyde, because the carbonyl group retained in the product belongs to the donor. Stereoisomers and later dehydration products can enlarge a more detailed product list. Thus four is a restricted connectivity count, not a complete description of every species present after unrestricted reaction. Benzaldehyde has no alpha hydrogen at its aldehyde side chain and cannot supply the ordinary enolate in this comparison. Pairing it with a suitable enolizable carbonyl can reduce the donor choices, but selectivity still depends on the specified conditions. Identify which partner donates, which carbonyl is attacked and whether the question asks for addition or condensation before drawing a single preferred product.",
+      "points": [
+        "Acetaldehyde + propionaldehyde · Both supply enolate donors · 2 donor choices",
+        "Each donor chooses acceptor · Self or crossed addition · 4 first-addition connectivities",
+        "Benzaldehyde comparison · No aldehyde alpha hydrogen · Not the ordinary enolate donor"
+      ],
+      "board": {
+        "heading": "Mixed aldol reactions need donor and acceptor choices",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Acetaldehyde + propionaldehyde",
+            "Both supply enolate donors",
+            "2 donor choices"
+          ],
+          [
+            "Each donor chooses acceptor",
+            "Self or crossed addition",
+            "4 first-addition connectivities"
+          ],
+          [
+            "Benzaldehyde comparison",
+            "No aldehyde alpha hydrogen",
+            "Not the ordinary enolate donor"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Ester hydrolysis has different acid and base accounting",
+      "formula": "CH₃COOC₂H₅ + OH⁻ → CH₃COO⁻ + C₂H₅OH",
+      "script": "Ester hydrolysis should distinguish an acid catalyzed equilibrium from a base promoted net conversion. For ethyl ethanoate, acid catalyzed hydrolysis connects the ester and water with ethanoic acid and ethanol. The catalyst changes the route and rate, but not the equilibrium constant at a fixed temperature. In the basic net equation, hydroxide is consumed and the acid derived product remains mainly carboxylate under the stated basic conditions. One mole of this simple ester consumes one mole hydroxide to give one mole ethanoate and one mole ethanol. Suppose an illustrative mixture contains zero point zero two zero zero mole ester and zero point zero one five zero mole hydroxide, and assume this net reaction reaches the stated stoichiometric endpoint with no competing processes. Hydroxide limits conversion to zero point zero one five zero mole. Ester remaining is zero point zero zero five zero zero mole, and ethanol formed is zero point zero one five zero mole. Do not describe hydroxide as a recovered acid catalyst in that balance. The carboxylate is not the isolated neutral acid unless a separate acidification is specified. This calculation concerns chemical accounting rather than a practical preparation.",
+      "points": [
+        "Ethyl ethanoate + OH⁻ · One-to-one net consumption · Ethanoate + ethanol",
+        "Ester 0.0200; OH⁻ 0.0150 mol · Hydroxide limits conversion · 0.0150 mol ester reacts",
+        "After stipulated endpoint · 0.0200 − 0.0150 · 0.00500 mol ester remains"
+      ],
+      "board": {
+        "heading": "Ester hydrolysis has different acid and base accounting",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Ethyl ethanoate + OH⁻",
+            "One-to-one net consumption",
+            "Ethanoate + ethanol"
+          ],
+          [
+            "Ester 0.0200; OH⁻ 0.0150 mol",
+            "Hydroxide limits conversion",
+            "0.0150 mol ester reacts"
+          ],
+          [
+            "After stipulated endpoint",
+            "0.0200 − 0.0150",
+            "0.00500 mol ester remains"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Cyanohydrin addition changes carbon count and chirality",
+      "formula": "CH₃CHO + HCN ⇌ CH₃CH(OH)CN: one new carbon",
+      "script": "A carbonyl addition product can introduce both a new carbon and a stereochemical question. In cyanohydrin formation, the cyanide carbon forms a bond to the carbonyl carbon, followed by proton transfer to oxygen. For acetaldehyde, the product has a carbon bearing hydroxyl, hydrogen, methyl and cyano groups. These four groups differ, so the former planar carbonyl carbon becomes a stereogenic centre. In an achiral environment with no chiral influence, attack at the two enantiotopic faces gives the two enantiomers in equal amounts in the elementary model. The mixture is racemic, rather than a single assigned configuration. Acetaldehyde contributes two carbons and the cyano group one, giving three carbons overall. The corresponding propanone cyanohydrin contains two identical methyl groups at the hydroxyl bearing carbon, so that carbon is not stereogenic despite the same general addition pattern. A carbon count alone therefore cannot establish chirality. The process is reversible and its extent depends on substrate and conditions; the connectivity exercise does not assert complete conversion. Read the cyano carbon explicitly instead of confusing nucleophilic addition with replacement of an existing carbon atom.",
+      "points": [
+        "Acetaldehyde cyanohydrin · H, OH, CH₃ and CN at one C · Stereogenic; 3 carbons total",
+        "Achiral reaction model · Equal face access · Racemic enantiomer pair",
+        "Propanone cyanohydrin · Two identical methyl groups · That carbon is not stereogenic"
+      ],
+      "board": {
+        "heading": "Cyanohydrin addition changes carbon count and chirality",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Acetaldehyde cyanohydrin",
+            "H, OH, CH₃ and CN at one C",
+            "Stereogenic; 3 carbons total"
+          ],
+          [
+            "Achiral reaction model",
+            "Equal face access",
+            "Racemic enantiomer pair"
+          ],
+          [
+            "Propanone cyanohydrin",
+            "Two identical methyl groups",
+            "That carbon is not stereogenic"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Use supplied pKa data before ranking acid amounts",
+      "formula": "Ka ratio = 10^(pKa,weak − pKa,strong)",
+      "script": "Acid strength and the amount of acid in a solution answer different questions. Compare two supplied monoprotic carboxylic acids in the same solvent at the same temperature, with p K a values three and five. The lower p K a corresponds to the larger acid dissociation constant. Their constant ratio is ten squared, or one hundred, so the first acid is stronger on that defined scale. This does not mean every equal concentration solution has one hundred times the hydrogen ion concentration. Dissociation must also satisfy mass balance and any approximations used. In an ideal weak acid range, where both acids remain only slightly ionized and water ionization is negligible, hydrogen ion concentration scales approximately with the square root of K a times analytical concentration. At equal concentration, a hundredfold K a ratio would then give roughly a tenfold hydrogen ion ratio. Check the small ionization assumption for each acid before applying that estimate. Electron withdrawing substituents can stabilize a carboxylate and increase acidity, while their distance and structural position matter. Supplied same solvent data support the numerical ranking without pretending that a substituent name alone determines every measured p H.",
+      "points": [
+        "Acid A pKa=3; B pKa=5 · Ka,A/Ka,B = 10² · A is 100× larger in Ka",
+        "Equal C; both weakly ionized · [H⁺] ≈ √(Ka C) · Approximate [H⁺] ratio 10",
+        "Check the assumptions · Same solvent and temperature · Strength is not concentration"
+      ],
+      "board": {
+        "heading": "Use supplied pKa data before ranking acid amounts",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Acid A pKa=3; B pKa=5",
+            "Ka,A/Ka,B = 10²",
+            "A is 100× larger in Ka"
+          ],
+          [
+            "Equal C; both weakly ionized",
+            "[H⁺] ≈ √(Ka C)",
+            "Approximate [H⁺] ratio 10"
+          ],
+          [
+            "Check the assumptions",
+            "Same solvent and temperature",
+            "Strength is not concentration"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -748,6 +900,94 @@
       ],
       "answer": 2,
       "explanation": "Carbon dioxide supplies the new carboxyl carbon in the phenol-derived acid."
+    },
+    {
+      "question": "Acetaldehyde and propionaldehyde both provide enolate donors. Counting only elementary first aldol addition connectivities gives:",
+      "options": [
+        "1",
+        "4",
+        "8",
+        "Only two stereoisomers"
+      ],
+      "answer": 1,
+      "explanation": "Two donor choices times two acceptor choices gives two self and two crossed connectivities, excluding stereoisomers and later reactions."
+    },
+    {
+      "question": "In a crossed aldol addition, the carbonyl group retained before dehydration belongs to the:",
+      "options": [
+        "Solvent only",
+        "Leaving water",
+        "Enolate donor",
+        "Counter ion"
+      ],
+      "answer": 2,
+      "explanation": "The donor enolate re-forms its carbonyl while the acceptor carbonyl becomes the alcohol-bearing site."
+    },
+    {
+      "question": "In base-promoted ethyl ethanoate hydrolysis, the immediate acid-derived species under basic conditions is:",
+      "options": [
+        "Only neutral ethanoic acid",
+        "Methane",
+        "Ethene",
+        "Ethanoate"
+      ],
+      "answer": 3,
+      "explanation": "The net reaction consumes hydroxide and forms the carboxylate plus ethanol."
+    },
+    {
+      "question": "0.0200 mol simple ester meets 0.0150 mol hydroxide. At the stipulated complete 1:1 net endpoint, ester remaining is:",
+      "options": [
+        "0.00500 mol",
+        "0.0150 mol",
+        "0.0350 mol",
+        "Zero necessarily"
+      ],
+      "answer": 0,
+      "explanation": "Hydroxide limits conversion to 0.0150 mol; subtract this from the initial ester amount."
+    },
+    {
+      "question": "Acetaldehyde cyanohydrin contains how many carbon atoms?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "answer": 1,
+      "explanation": "Two carbons originate in acetaldehyde and one is supplied by the cyano carbon."
+    },
+    {
+      "question": "Under the elementary achiral model, acetaldehyde cyanohydrin is formed as:",
+      "options": [
+        "Only one guaranteed enantiomer",
+        "A meso product",
+        "A racemic pair",
+        "An achiral carbon with two methyl groups"
+      ],
+      "answer": 2,
+      "explanation": "The new carbon has four different groups, and equal attack on the two enantiotopic faces gives a racemate."
+    },
+    {
+      "question": "Acids A and B have pKa 3 and 5 at matching conditions. Ka,A/Ka,B is:",
+      "options": [
+        "2",
+        "10",
+        "0.01",
+        "100"
+      ],
+      "answer": 3,
+      "explanation": "Ka=10^(−pKa), so the ratio is 10^(5−3)=100."
+    },
+    {
+      "question": "Only when both equal-concentration acids satisfy the small-ionization model, that Ka ratio predicts an approximate hydrogen-ion ratio of:",
+      "options": [
+        "10",
+        "100",
+        "10000",
+        "1"
+      ],
+      "answer": 0,
+      "explanation": "The weak-acid approximation gives hydrogen-ion concentration proportional to sqrt(Ka C), so sqrt(100)=10."
     }
   ]
 }

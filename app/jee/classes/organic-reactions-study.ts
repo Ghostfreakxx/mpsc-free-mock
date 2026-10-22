@@ -1,3 +1,4 @@
+import { extendHalogensOxygenBiomoleculesLesson } from "./halogens-oxygen-biomolecules-study.ts";
 import type { StudyLesson } from "./course";
 import { organicReactionAdditions } from "./organic-reaction-additions.ts";
 
@@ -40,7 +41,7 @@ export const organicReactionLessons: StudyLesson[] = [
     title: "Organic halogens: substitution, elimination and reaction conditions",
     summary: "Distinguish haloalkanes from haloarenes and predict substitution or elimination using substrate, reagent and solvent.",
     prerequisites: "Organic principles, hydrocarbon reactions, nucleophiles, carbocations and rate laws.",
-    remaining: "Written companion to the thirteen-chapter Marin recording for Unit 16, including substitution stereochemistry, competing elimination, ambidentate connectivity and aryl/vinyl/benzyl comparisons. Full spatial mechanism drawings, extended preparation routes, special haloarene pathways and detailed compound/environment comparisons remain. Original practice, not exhaustive coverage or official PYQs.",
+    remaining: "Written companion to the seventeen-chapter Marin recording for Unit 16, including substitution stereochemistry, competing elimination, ambidentate connectivity and aryl/vinyl/benzyl comparisons. Full spatial mechanism drawings, extended preparation routes, special haloarene pathways and detailed compound/environment comparisons remain. Original practice, not exhaustive coverage or official PYQs.",
     sections: [
       { title: "The carbon carrying the halogen matters", paragraphs: ["A haloalkane has a halogen bonded to a saturated carbon, whereas a haloarene has it directly attached to an aromatic-ring carbon. Benzyl chloride, C6H5CH2Cl, is not the same substrate type as chlorobenzene, C6H5Cl. In the first, the chlorine-bearing carbon is outside the ring and is sp3 hybridized.", "The carbon-halogen bond is usually polarized towards the halogen. Its strength, the leaving group's stability and the surrounding structure all affect reactivity. For comparable simple substrates in many substitution settings, iodide is a better leaving group than bromide, which is better than chloride; fluoride is generally poor. This is not a universal ranking independent of solvent and mechanism."], formula: "Haloarene: Ar-X; benzylic halide: Ar-CH2-X" },
       { title: "Preparation conditions decide which bond changes", paragraphs: ["Alcohols can be converted to haloalkanes using suitable hydrogen halides or reagents such as thionyl chloride for chlorides. The substrate and conditions affect side reactions and mechanism; do not assume all alcohols follow one pathway. Adding HX to an alkene instead replaces a pi bond with new carbon-hydrogen and carbon-halogen bonds.", "Radical halogenation of an alkane uses light or other initiating conditions and can form mixtures. Electrophilic halogenation of benzene usually needs a suitable Lewis-acid catalyst. Ring halogenation and side-chain halogenation are different transformations. Before predicting a product, circle the actual carbon being changed and check whether a radical or ionic pathway is intended."], formula: "Different routes: alcohol replacement, alkene addition, alkane radical substitution, aromatic substitution" },
@@ -84,3 +85,5 @@ for(const lesson of organicReactionLessons){
     {question:"Classify the carbon bonded to chlorine in chlorobenzene, vinyl chloride and benzyl chloride.",steps:["Chlorobenzene: chlorine directly on the aromatic ring.","Vinyl chloride: chlorine on an alkene carbon.","Benzyl chloride: chlorine on Ph–CH2, a saturated carbon adjacent to the ring."],answer:"Aryl, vinylic and benzylic, respectively; alkyl substitution shortcuts do not apply equally."},
   );
 }
+
+for (const lesson of organicReactionLessons) extendHalogensOxygenBiomoleculesLesson(lesson);

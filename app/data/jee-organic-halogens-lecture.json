@@ -25,6 +25,14 @@
     {
       "title": "NCERT: haloalkanes and haloarenes",
       "url": "https://ncert.nic.in/textbook/pdf/lech201.pdf"
+    },
+    {
+      "title": "NCERT: Haloalkanes and Haloarenes",
+      "url": "https://ncert.nic.in/textbook/pdf/lech106.pdf"
+    },
+    {
+      "title": "OpenStax: Grignard additions to carbonyls",
+      "url": "https://openstax.org/books/organic-chemistry/pages/19-7-nucleophilic-addition-of-hydride-and-grignard-reagents-alcohol-formation"
     }
   ],
   "chapters": [
@@ -486,6 +494,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Halogen exchange depends on the substrate and medium",
+      "formula": "Finkelstein: alkyl chloride/bromide → iodide; Swarts: alkyl fluoride",
+      "script": "A named reaction is a useful map only when the substrate and conditions match. In the standard Finkelstein comparison, an appropriate alkyl chloride or bromide undergoes halogen exchange with iodide in acetone. The sodium chloride or bromide formed has low solubility in this medium, so its precipitation helps drive the exchange. For a suitable primary substrate, the substitution can follow a concerted backside attack. The carbon skeleton stays unchanged: a two carbon alkyl bromide gives a two carbon alkyl iodide, rather than adding the iodide as a new carbon fragment. The Swarts name instead refers to preparing alkyl fluorides by halogen exchange using suitable metal fluorides. These labels do not make every aryl or vinyl halide behave like a primary alkyl substrate. Chlorobenzene, for example, does not enter ordinary backside substitution at its ring carbon simply because iodide is present. Nor should a solvent precipitation argument be transferred to water without checking salt solubilities. Use the reaction names to identify the exchanged atom, the preserved carbon framework and the stated substrate class. Product bookkeeping is different from an experimental preparation protocol.",
+      "points": [
+        "Finkelstein comparison · R–Br or R–Cl with iodide · R–I; same carbon skeleton",
+        "Acetone medium · Low salt solubility · Precipitation assists exchange",
+        "Swarts comparison · Suitable metal fluoride · Alkyl fluoride; not R–I"
+      ],
+      "board": {
+        "heading": "Halogen exchange depends on the substrate and medium",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Finkelstein comparison",
+            "R–Br or R–Cl with iodide",
+            "R–I; same carbon skeleton"
+          ],
+          [
+            "Acetone medium",
+            "Low salt solubility",
+            "Precipitation assists exchange"
+          ],
+          [
+            "Swarts comparison",
+            "Suitable metal fluoride",
+            "Alkyl fluoride; not R–I"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Mixed Wurtz coupling is not automatically selective",
+      "formula": "R–X and R′–X can give R–R, R–R′ and R′–R′",
+      "script": "Carbon coupling needs a selectivity check as well as a carbon count. In the elementary Wurtz scheme, two alkyl halide fragments couple in the presence of sodium, with salt as another product. If only one suitable alkyl halide is used, joining two identical fragments gives a symmetrical alkane. Mixing methyl and ethyl halides does not guarantee pure propane. The possible simple coupling connectivities are methyl with methyl, methyl with ethyl, and ethyl with ethyl, giving ethane, propane and butane respectively. The two possible orders of joining methyl to ethyl describe the same propane connectivity, not two different constitutional products. Thus the elementary list contains three alkane connectivities, not four. This count is not a prediction of equal amounts or a fixed statistical yield. Different substrate reactivities, side reactions and conditions affect the actual product mixture. Wurtz coupling is generally more useful for an appropriate symmetrical target than as an unqualified route to one unsymmetrical alkane from a mixed feed. Balance two sodium atoms for two halide ions in the simple overall coupling equation, and keep product identity separate from an assumed product distribution.",
+      "points": [
+        "Methyl + methyl · 1 + 1 carbon atoms · Ethane: C₂",
+        "Methyl + ethyl · 1 + 2 carbon atoms · Propane: C₃",
+        "Ethyl + ethyl · 2 + 2 carbon atoms · Butane: C₄; amounts not fixed"
+      ],
+      "board": {
+        "heading": "Mixed Wurtz coupling is not automatically selective",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Methyl + methyl",
+            "1 + 1 carbon atoms",
+            "Ethane: C₂"
+          ],
+          [
+            "Methyl + ethyl",
+            "1 + 2 carbon atoms",
+            "Propane: C₃"
+          ],
+          [
+            "Ethyl + ethyl",
+            "2 + 2 carbon atoms",
+            "Butane: C₄; amounts not fixed"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Grignard addition combines two carbon ledgers",
+      "formula": "CH₃MgBr + CH₃CHO, then protonation → CH₃CH(OH)CH₃",
+      "script": "An organomagnesium reagent contributes its carbon fragment to a carbonyl compound in the familiar Grignard addition model. Take methylmagnesium bromide and acetaldehyde, followed by a separate protonation step. The carbon bearing magnesium forms a bond to the former carbonyl carbon. Acetaldehyde supplies two carbon atoms and the methyl fragment supplies one, giving a three carbon alcohol, propan two ol. The carbonyl oxygen becomes an alkoxide oxygen first and is protonated later; the alcohol proton need not come from the original aldehyde. Compare a methyl reagent with formaldehyde: one plus one carbon gives ethanol, a primary alcohol. With propanone, three plus one gives a four carbon tertiary alcohol. These examples classify the alcohol by the groups on its oxygen bearing carbon, not by the total carbon count alone. Water or another suitable proton donor present before addition can instead consume the organomagnesium reagent through an acid base reaction, producing the corresponding hydrocarbon. Therefore carbonyl addition and proton quenching are competing descriptions only after the order of exposure is specified. This is a connectivity and stoichiometry exercise, not a laboratory handling recipe.",
+      "points": [
+        "Methyl fragment + formaldehyde · 1 + 1 carbons · Ethanol; primary",
+        "Methyl fragment + acetaldehyde · 1 + 2 carbons · Propan-2-ol; secondary",
+        "Methyl fragment + propanone · 1 + 3 carbons · 2-Methylpropan-2-ol; tertiary"
+      ],
+      "board": {
+        "heading": "Grignard addition combines two carbon ledgers",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Methyl fragment + formaldehyde",
+            "1 + 1 carbons",
+            "Ethanol; primary"
+          ],
+          [
+            "Methyl fragment + acetaldehyde",
+            "1 + 2 carbons",
+            "Propan-2-ol; secondary"
+          ],
+          [
+            "Methyl fragment + propanone",
+            "1 + 3 carbons",
+            "2-Methylpropan-2-ol; tertiary"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Count substitution and elimination products separately",
+      "formula": "2-Bromobutane: substitution gives butan-2-ol; elimination can give butenes",
+      "script": "A product count must state whether it counts connectivity or stereochemistry. Consider two bromobutane as a substrate and compare idealized substitution with elimination. Replacing bromine by hydroxyl at the same carbon gives butan two ol as the substitution connectivity. In elimination, removing a beta hydrogen from either adjacent carbon can place the double bond at the end of the chain or in its middle. The constitutional alkene products are but one ene and but two ene. The internal alkene has two distinct groups at each double bond carbon, so it can occur as E and Z geometrical isomers. The terminal alkene has a carbon bearing two hydrogens and therefore has no E Z pair. Counting alkene stereoisomers separately gives three alkene products in this elementary set, while counting alkene connectivities gives two. This enumeration does not claim that all are formed in equal amounts or that substitution is absent under every elimination condition. Base size, solvent, temperature and the available conformations affect competition and selectivity. In an E two pathway, the removed hydrogen and leaving group require a suitable antiperiplanar arrangement; a flat formula alone does not determine the relative yields.",
+      "points": [
+        "Substitution connectivity · Replace Br by OH · Butan-2-ol",
+        "Elimination connectivities · Double bond at C1 or C2 · But-1-ene; but-2-ene",
+        "Resolve alkene geometry · But-2-ene has E and Z · 3 alkene stereoisomers total"
+      ],
+      "board": {
+        "heading": "Count substitution and elimination products separately",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Substitution connectivity",
+            "Replace Br by OH",
+            "Butan-2-ol"
+          ],
+          [
+            "Elimination connectivities",
+            "Double bond at C1 or C2",
+            "But-1-ene; but-2-ene"
+          ],
+          [
+            "Resolve alkene geometry",
+            "But-2-ene has E and Z",
+            "3 alkene stereoisomers total"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -664,6 +812,94 @@
       ],
       "answer": 2,
       "explanation": "The alkyl group is bonded to carbon in the nitrile and to nitrogen in the isocyanide."
+    },
+    {
+      "question": "A suitable alkyl bromide undergoes Finkelstein exchange with iodide. The carbon skeleton:",
+      "options": [
+        "Stays unchanged",
+        "Gains one carbon from iodide",
+        "Always loses one carbon",
+        "Becomes an aromatic ring"
+      ],
+      "answer": 0,
+      "explanation": "Halogen exchange replaces the halogen; iodide introduces no carbon atom."
+    },
+    {
+      "question": "In the standard acetone Finkelstein comparison, which effect assists the exchange?",
+      "options": [
+        "Water always supplies an alkyl group",
+        "Precipitation of sodium chloride or bromide",
+        "Breaking every carbon bond",
+        "Formation of an extra carbonyl"
+      ],
+      "answer": 1,
+      "explanation": "Low solubility of the product sodium halide in acetone helps remove it from the solution equilibrium."
+    },
+    {
+      "question": "The elementary alkane connectivity list from mixed methyl and ethyl Wurtz fragments contains:",
+      "options": [
+        "Only propane",
+        "Two products",
+        "Three products",
+        "Four distinct propane connectivities"
+      ],
+      "answer": 2,
+      "explanation": "Methyl–methyl, methyl–ethyl and ethyl–ethyl give ethane, propane and butane."
+    },
+    {
+      "question": "Which statement about that mixed coupling product list follows from connectivity alone?",
+      "options": [
+        "Equal yields are guaranteed",
+        "Propane must be the only product",
+        "Butane cannot form",
+        "Relative yields are not determined"
+      ],
+      "answer": 3,
+      "explanation": "Enumeration identifies possible connectivities but supplies no kinetics or selectivity data."
+    },
+    {
+      "question": "Methylmagnesium bromide adds to acetaldehyde before protonation. The alcohol is:",
+      "options": [
+        "Propan-2-ol",
+        "Ethanol",
+        "Butan-1-ol",
+        "Methanol"
+      ],
+      "answer": 0,
+      "explanation": "The methyl fragment contributes one carbon to the two-carbon aldehyde, giving a secondary three-carbon alcohol."
+    },
+    {
+      "question": "Methyl addition to propanone followed by protonation gives an alcohol whose oxygen-bearing carbon is:",
+      "options": [
+        "Primary",
+        "Tertiary",
+        "Secondary",
+        "An unchanged carbonyl carbon"
+      ],
+      "answer": 1,
+      "explanation": "The oxygen-bearing carbon is bonded to three methyl carbon groups after addition."
+    },
+    {
+      "question": "The alkene constitutional products of simple elimination from 2-bromobutane are:",
+      "options": [
+        "Only ethene",
+        "Three different carbon skeletons",
+        "But-1-ene and but-2-ene",
+        "Only cyclobutane"
+      ],
+      "answer": 2,
+      "explanation": "The two adjacent beta positions place the double bond at C1 or C2 without changing the four-carbon chain."
+    },
+    {
+      "question": "Counting E/Z separately, that elementary butene set contains:",
+      "options": [
+        "1 alkene",
+        "2 alkenes",
+        "4 alkenes",
+        "3 alkenes"
+      ],
+      "answer": 3,
+      "explanation": "But-1-ene contributes one and but-2-ene contributes E and Z; this is a count, not a yield claim."
     }
   ]
 }
