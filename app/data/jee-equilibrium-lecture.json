@@ -29,6 +29,14 @@
     {
       "title": "OpenStax: coupled equilibria",
       "url": "https://openstax.org/books/chemistry-2e/pages/15-3-coupled-equilibria"
+    },
+    {
+      "title": "OpenStax: equilibrium calculations",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-4-equilibrium-calculations"
+    },
+    {
+      "title": "OpenStax: acid and base equilibria",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-3-relative-strengths-of-acids-and-bases"
     }
   ],
   "chapters": [
@@ -488,6 +496,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Transform equilibrium constants with the equation",
+      "formula": "Reverse: 1/K; multiply coefficients by n: Kⁿ",
+      "script": "An equilibrium constant belongs to a balanced reaction at a stated temperature. Changing the equation changes the corresponding constant. Suppose the supplied dimensionless constant for nitrogen plus three hydrogen forming two ammonia molecules is sixteen. Reversing that equation inverts the reaction quotient, so the reverse constant is one sixteenth. Halving every coefficient takes the square root, giving four for half nitrogen plus three halves hydrogen forming one ammonia. Reversing and then halving gives one quarter, not one eighth. Adding two reactions multiplies their constants because the corresponding quotients multiply and any common intermediate activities cancel. For a supplied reaction converting X to Y with constant five, followed by Y to Z with constant four, the net X to Z constant is twenty. These operations use the same temperature and compatible standard state conventions. The constant is not multiplied by two merely because every reaction coefficient was doubled. Write the transformed quotient or combine standard Gibbs energies if unsure. These bookkeeping rules do not supply the new constant at another temperature; temperature dependence requires additional thermodynamic information.",
+      "points": [
+        "Given forward K = 16 · Reverse equation · Kreverse = 1/16",
+        "Halve all coefficients · Take square root · Khalf = 4",
+        "X→Y K=5; Y→Z K=4 · Add reactions; cancel Y · X→Z K=20"
+      ],
+      "board": {
+        "heading": "Transform equilibrium constants with the equation",
+        "columns": [
+          "Given / case",
+          "Calculation / reason",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Given forward K = 16",
+            "Reverse equation",
+            "Kreverse = 1/16"
+          ],
+          [
+            "Halve all coefficients",
+            "Take square root",
+            "Khalf = 4"
+          ],
+          [
+            "X→Y K=5; Y→Z K=4",
+            "Add reactions; cancel Y",
+            "X→Z K=20"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Pure solids and pressure in heterogeneous equilibrium",
+      "formula": "CaCO₃(s) ⇌ CaO(s) + CO₂(g): Kp = pCO₂/p°",
+      "script": "A pure solid does not appear as a variable concentration factor in the usual equilibrium expression while that pure phase is present. Consider calcium carbonate solid reversibly forming calcium oxide solid and carbon dioxide gas at a fixed temperature. If both pure solid phases coexist, their activities are one in the chosen standard states, and the dimensionless equilibrium constant is carbon dioxide partial pressure divided by standard pressure. Suppose the supplied constant is zero point two zero zero and standard pressure is one bar. The equilibrium carbon dioxide pressure is then zero point two zero zero bar. Adding more calcium carbonate alone does not raise that equilibrium pressure when both solids remain present. Compressing the gas volume initially raises its carbon dioxide pressure; reaction can then proceed in the reverse direction until the equilibrium pressure is restored, provided enough appropriate solid remains. Adding an inert gas at fixed volume leaves carbon dioxide partial pressure unchanged in an ideal gas mixture, even though total pressure rises. If a solid phase is exhausted or the temperature changes, the simple coexistence pressure conclusion must be reconsidered. Identify partial pressure and phase presence before using a shortcut.",
+      "points": [
+        "Both pure solids present · Kp = pCO₂/p° = 0.200 · pCO₂ = 0.200 bar",
+        "Add more pure CaCO₃ · Solid activity stays 1 · Same coexistence pressure",
+        "Inert gas; fixed V and T · pCO₂ stays unchanged · No ideal-gas shift"
+      ],
+      "board": {
+        "heading": "Pure solids and pressure in heterogeneous equilibrium",
+        "columns": [
+          "Given / case",
+          "Calculation / reason",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Both pure solids present",
+            "Kp = pCO₂/p° = 0.200",
+            "pCO₂ = 0.200 bar"
+          ],
+          [
+            "Add more pure CaCO₃",
+            "Solid activity stays 1",
+            "Same coexistence pressure"
+          ],
+          [
+            "Inert gas; fixed V and T",
+            "pCO₂ stays unchanged",
+            "No ideal-gas shift"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Solve a weak-base balance before using the shortcut",
+      "formula": "Kb = x²/(C−x); x = (−Kb + √(Kb²+4KbC))/2",
+      "script": "A weak base calculation should check whether its ionization is small enough for a square root approximation. Take an uncharged base in water with supplied concentration zero point zero zero one zero zero molar and base constant one times ten to the minus four. Assume ideal dilute behaviour and neglect water autoionization relative to the hydroxide produced. Let x be the equilibrium hydroxide concentration. The conjugate acid concentration is also x, while unreacted base is C minus x. The base constant is x squared divided by C minus x. Solving the quadratic gives approximately zero point zero zero zero two seven zero molar hydroxide. This is about twenty seven percent of the initial base concentration, so replacing C minus x by C is not justified. The square root estimate would be zero point zero zero zero three one six molar, noticeably higher. Using the quadratic value gives p O H about three point five seven and, with supplied p K w fourteen at twenty five degrees Celsius, p H about ten point four three. The subtraction from fourteen is temperature dependent through the ionic product of water. A very dilute base may require including water ionization as well.",
+      "points": [
+        "C = 1.00×10⁻³ M · Kb = 1.00×10⁻⁴ · Solve quadratic balance",
+        "Hydroxide positive root · x ≈ 2.70×10⁻⁴ M · x/C ≈ 27.0%",
+        "pKw = 14.00 supplied · pOH ≈ 3.57 · pH ≈ 10.43"
+      ],
+      "board": {
+        "heading": "Solve a weak-base balance before using the shortcut",
+        "columns": [
+          "Given / case",
+          "Calculation / reason",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "C = 1.00×10⁻³ M",
+            "Kb = 1.00×10⁻⁴",
+            "Solve quadratic balance"
+          ],
+          [
+            "Hydroxide positive root",
+            "x ≈ 2.70×10⁻⁴ M",
+            "x/C ≈ 27.0%"
+          ],
+          [
+            "pKw = 14.00 supplied",
+            "pOH ≈ 3.57",
+            "pH ≈ 10.43"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Compare precipitation thresholds after dilution",
+      "formula": "Onset for MX: [X⁻]threshold = Ksp/[M⁺]",
+      "script": "Selective precipitation begins with comparing ion products, not simply choosing the smaller printed solubility constant without regard to composition. Consider two hypothetical one to one salts, A X and B X, whose cations are each initially zero point zero one zero zero molar after any mixing dilution. Their supplied solubility products are one times ten to the minus ten and one times ten to the minus eight. Assume ideal behaviour, no complexation and negligible volume change while adding the common anion X. The onset anion concentrations are one times ten to the minus eight molar for A X and one times ten to the minus six for B X. Thus A X begins precipitating first. Just as B X reaches its onset, the remaining dissolved A concentration set by A X saturation is one times ten to the minus four molar. Relative to the original zero point zero one zero zero, ninety nine percent of A has been removed. Equality of ion product and constant marks saturation, not an already large precipitate amount. For different stoichiometries, unequal starting concentrations or significant dilution, recalculate the full expressions before predicting separation quality.",
+      "points": [
+        "AX: Ksp=10⁻¹⁰; [A⁺]=0.0100 · [X⁻] = Ksp/[A⁺] · Onset 10⁻⁸ M",
+        "BX: Ksp=10⁻⁸; [B⁺]=0.0100 · [X⁻] = Ksp/[B⁺] · Onset 10⁻⁶ M",
+        "At BX onset · [A⁺]=10⁻¹⁰/10⁻⁶ · 10⁻⁴ M; 99% A removed"
+      ],
+      "board": {
+        "heading": "Compare precipitation thresholds after dilution",
+        "columns": [
+          "Given / case",
+          "Calculation / reason",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "AX: Ksp=10⁻¹⁰; [A⁺]=0.0100",
+            "[X⁻] = Ksp/[A⁺]",
+            "Onset 10⁻⁸ M"
+          ],
+          [
+            "BX: Ksp=10⁻⁸; [B⁺]=0.0100",
+            "[X⁻] = Ksp/[B⁺]",
+            "Onset 10⁻⁶ M"
+          ],
+          [
+            "At BX onset",
+            "[A⁺]=10⁻¹⁰/10⁻⁶",
+            "10⁻⁴ M; 99% A removed"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -688,6 +836,94 @@
       ],
       "answer": 2,
       "explanation": "Use y(NO2)^2/y(N2O4)=(1/3)^2/(2/3)=1/6."
+    },
+    {
+      "question": "A reaction has K=16. Halving every coefficient gives:",
+      "options": [
+        "8",
+        "4",
+        "256",
+        "1/16"
+      ],
+      "answer": 1,
+      "explanation": "The quotient and constant are raised to the power 1/2."
+    },
+    {
+      "question": "For X→Y with K=5 and Y→Z with K=4 at the same temperature, net X→Z has K:",
+      "options": [
+        "1",
+        "9",
+        "20",
+        "5/4"
+      ],
+      "answer": 2,
+      "explanation": "Adding reactions multiplies their constants."
+    },
+    {
+      "question": "Both pure CaCO3 and CaO coexist with CO2. Kp=0.200 dimensionless and p°=1 bar. The CO2 equilibrium pressure is:",
+      "options": [
+        "5 bar",
+        "1 bar",
+        "0.0400 bar",
+        "0.200 bar"
+      ],
+      "answer": 3,
+      "explanation": "Kp=pCO2/p° when both solid activities are one."
+    },
+    {
+      "question": "Adding ideal inert gas at fixed volume and temperature to that equilibrium:",
+      "options": [
+        "Leaves CO2 partial pressure unchanged",
+        "Always doubles CO2 partial pressure",
+        "Consumes all CaO",
+        "Changes Kp"
+      ],
+      "answer": 0,
+      "explanation": "pCO2=nCO2RT/V is initially unchanged."
+    },
+    {
+      "question": "For C=0.00100 M and Kb=0.000100, the quadratic gives hydroxide approximately:",
+      "options": [
+        "0.00100 M",
+        "0.000270 M",
+        "0.000316 M exactly",
+        "0.0100 M"
+      ],
+      "answer": 1,
+      "explanation": "The positive root of x²+Kb x−Kb C=0 is 2.70156×10⁻4 M."
+    },
+    {
+      "question": "The fraction ionized in that weak-base example is approximately:",
+      "options": [
+        "0.027%",
+        "2.7%",
+        "27%",
+        "0.27%"
+      ],
+      "answer": 2,
+      "explanation": "x/C≈0.270. The small-ionization shortcut is not justified."
+    },
+    {
+      "question": "A 1:1 salt has Ksp=10⁻10 and dissolved cation 0.0100 M before onset. Threshold anion concentration is:",
+      "options": [
+        "10⁻12 M",
+        "10⁻10 M",
+        "10⁻6 M",
+        "10⁻8 M"
+      ],
+      "answer": 3,
+      "explanation": "Threshold=Ksp/cation concentration."
+    },
+    {
+      "question": "At anion concentration 10⁻6 M, AX saturation with Ksp=10⁻10 leaves [A+]=10⁻4 M. Starting from 0.0100 M with negligible volume change, percent removed is:",
+      "options": [
+        "99%",
+        "1%",
+        "90%",
+        "99.99%"
+      ],
+      "answer": 0,
+      "explanation": "Remaining fraction=10⁻4/10⁻2=0.01; removed fraction=0.99."
     }
   ]
 }

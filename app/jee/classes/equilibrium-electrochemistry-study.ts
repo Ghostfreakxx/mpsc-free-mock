@@ -1,3 +1,4 @@
+import { extendKineticsCoordinationEquilibriumLesson } from "./kinetics-coordination-equilibrium-study.ts";
 import { equilibriumElectrochemistryPracticalAdditions as additions } from "./equilibrium-electrochemistry-practical-additions.ts";
 import type { StudyLesson } from "./course";
 
@@ -9,7 +10,7 @@ export const equilibriumElectrochemistryLessons: StudyLesson[] = [
     title: "Equilibrium: competing changes, acids and solubility",
     summary: "Dynamic equilibrium, reaction quotients, pH, buffers and precipitation with explicit approximation checks.",
     prerequisites: "Moles, concentrations, balanced reactions, logarithms and Gibbs energy.",
-    remaining: "Unit 6 foundation with a thirteen-chapter Marin recording and written notes, not complete unit coverage. Further multistage ionization, nonideal activities, physical-equilibrium calculations and mixed weak-acid titrations still need extended practice.",
+    remaining: "Unit 6 foundation with a seventeen-chapter Marin recording and written notes, not complete unit coverage. Further multistage ionization, nonideal activities, physical-equilibrium calculations and mixed weak-acid titrations still need extended practice.",
     sections: [
       { title: "Equilibrium is movement in both directions", paragraphs: ["Picture water evaporating inside a closed vessel. Initially evaporation dominates; as vapour accumulates, condensation becomes more frequent. At equilibrium the two rates are equal and nonzero. The amounts become constant, but molecules do not stop moving. Equal rates do not require equal amounts of liquid and vapour.", "The same idea applies to melting and freezing, sublimation and deposition, or a reversible gas reaction under suitable conditions. Temperature matters. For a dilute dissolved gas, the convention p = k_H x relates gas partial pressure to dissolved mole fraction. At fixed pressure, a larger k_H means less gas dissolves; other Henry-law conventions use different constants."], formula: "Dynamic equilibrium: forward rate = reverse rate; Henry convention: p = k_H x" },
       { title: "Compare the present mixture with K", paragraphs: ["For a reversible reaction, form Q using product activities divided by reactant activities, raising each to its balanced coefficient. At equilibrium Q equals K. If Q is smaller than K, the forward change brings the mixture towards equilibrium. If Q is larger, the reverse change is favoured. Never compare concentrations without first balancing the equation.", "Pure solids and pure liquids have unit activity in their reference states and are omitted from the usual expression. For dilute ideal solutions, normalized concentrations approximate activities. Textbook K_c and K_p expressions often use unnormalized numerical concentrations and pressures; keep their unit conventions consistent. For ideal gases their conventional relationship is K_p = K_c(RT)^Delta n_g."], formula: "Q < K: forward; Q > K: reverse; Delta n_g = gaseous product coefficients - gaseous reactant coefficients" },
@@ -159,3 +160,5 @@ for (const lesson of equilibriumElectrochemistryLessons) {
   lesson.quiz.push(...added.foundationExtraQuiz, ...added.quiz);
   lesson.sources.push(...added.sources.filter(source => !lesson.sources.some(existing => existing.url === source.url)));
 }
+
+for (const lesson of equilibriumElectrochemistryLessons) extendKineticsCoordinationEquilibriumLesson(lesson);

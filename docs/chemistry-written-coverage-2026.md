@@ -21,13 +21,13 @@ Questions are original practice, not represented as official PYQs.
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 13 | 12 | 6 | 18 / 18 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 15 | 17 | 9 | 18 / 18 |
 | 5 | [Solutions](/jee/classes/solutions) | 15 | 17 | 9 | 18 / 18 |
-| 6 | [Equilibrium](/jee/classes/equilibrium) | 13 | 13 | 10 | 18 / 18 |
+| 6 | [Equilibrium](/jee/classes/equilibrium) | 17 | 17 | 13 | 26 / 26 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 14 | 15 | 10 | 18 / 18 |
-| 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 10 | 13 | 10 | 18 / 18 |
+| 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 14 | 17 | 13 | 26 / 26 |
 | 9 | [Periodic Trends](/jee/classes/periodic-trends) | 13 | 11 | 6 | 16 / 16 |
 | 10 | [P-Block](/jee/classes/p-block) | 15 | 13 | 6 | 18 / 18 |
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 15 | 13 | 6 | 18 / 18 |
-| 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 10 | 13 | 10 | 18 / 18 |
+| 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 14 | 17 | 13 | 26 / 26 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 13 | 13 | 6 | 16 / 16 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 13 | 16 | 11 | 20 / 20 |
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 13 | 13 | 6 | 16 / 16 |
@@ -39,15 +39,13 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-P-Block adds molecular white phosphorus, diborane electron accounting, silicon tetrachloride hydrolysis, oxoacid comparisons and interhalogen shapes. Selected compounds illustrate trends rather than asserting every historic preparation is required.
+Kinetics adds Arrhenius axis conventions, fractional initial-rate orders, dilution versus chemical conversion and a clearly labelled supporting model of competing first-order pathways.
 
-Chemical Thermodynamics adds reversible and irreversible isothermal work, reaction entropy and gas-mole enthalpy corrections. Reversible adiabatic compression and Kirchhoff temperature corrections are labelled supporting applications.
+Coordination Compounds adds coordination and hydrate isomerism, intact-sphere chloride accounting, octahedral versus tetrahedral d³ stabilization and EDTA donor-count/titration problems. The orbital diagram distinguishes equal unpaired counts from different orbital energy contributions.
 
-Solutions adds exact ideal vapour-pressure lowering, mixed-solute freezing depression, dimer association, pressure differences across a membrane and limits of one-point deviation data. Calculations state dilute and ideal assumptions.
+Equilibrium adds reaction-equation transformations of K, pure-solid coexistence and partial pressure, a weak-base quadratic with an invalid small-ionization shortcut, and selective precipitation onset and separation limits.
 
-Together this expansion adds fifteen narrated chapters, eighteen new original MCQs
-and nine worked examples. Additional existing class questions are now also included
-in the written companions; the inventory reports both quiz totals explicitly.
+Together this batch adds twelve narrated chapters, twenty-four original MCQs and nine worked examples. All three written quizzes match their recorded companions. Competing pathways are supporting applications rather than a claim of a newly required syllabus item.
 
 ## Remaining scope
 
@@ -61,11 +59,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific primary references. This expansion uses
-[NCERT d- and f-block elements](https://www.ncert.nic.in/textbook/pdf/lech104.pdf),
-[NCERT CIET quantitative organic analysis](https://ciet.nic.in/moocspdf/Chemistry02/kech_21204_eText.pdf)
-and [OpenStax quantitative chemical analysis](https://openstax.org/books/chemistry-2e/pages/4-5-quantitative-chemical-analysis),
-alongside the existing stoichiometry and concentration references.
+The notes contain lesson-specific primary references, including OpenStax rate laws, coordination chemistry, crystal-field properties, equilibrium calculations and precipitation equilibria. Numerical data and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

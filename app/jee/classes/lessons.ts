@@ -1123,7 +1123,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "coordination-compounds", subject: "Chemistry", unit: 12, number: "C02", title: coordinationCompounds.title,
-    description: "Ten narrated chapters on ligands, naming, isomerism, spin energies, magnetism, chelation, formation constants and applications.",
+    description: "Fourteen narrated chapters on ligands, naming, isomerism, spin energies, magnetism, chelation, formation constants and applications.",
     scope: "Recorded Unit 12 foundation and worked applications with original practice. Detailed optical-isomer models, extended nomenclature and quantitative extraction/analysis sequences remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.coordination-compounds.lecture.v1",
     audio: "/lectures/coordination-compounds/narration-marin.mp3",
@@ -1133,7 +1133,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "chemical-kinetics", subject: "Chemistry", unit: 8, number: "C03", title: chemicalKinetics.title,
-    description: "Ten narrated chapters on rate laws, zero and first order, pressure measurements, pseudo-first-order conditions, graphs and catalyst barriers.",
+    description: "Fourteen narrated chapters on rate laws, zero and first order, pressure measurements, pseudo-first-order conditions, graphs and catalyst barriers.",
     scope: "Recorded Unit 8 foundation and worked applications with original practice. Further mixed experimental datasets and mechanism-based problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.chemical-kinetics.lecture.v1",
     audio: "/lectures/chemical-kinetics/narration-marin.mp3",
@@ -1163,7 +1163,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "equilibrium", subject: "Chemistry", unit: 6, number: "C06", title: equilibrium.title,
-    description: "Thirteen narrated chapters on equilibrium constants, gas dissociation, buffers, hydrolysis, titration pH, solubility and amphiprotic salts.",
+    description: "Seventeen narrated chapters on equilibrium constants, gas dissociation, buffers, hydrolysis, titration pH, weak-base balances and selective precipitation.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 6 foundation with original practice. Further multistage ionization, nonideal activities, physical-equilibrium calculations and mixed weak-acid titrations remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.equilibrium.lecture.v1",
     audio: "/lectures/equilibrium/narration-marin.mp3",

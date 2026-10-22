@@ -250,6 +250,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Coordination isomerism exchanges ligand distributions",
+      "formula": "Both cation and anion are complex ions in this example",
+      "script": "Coordination isomerism concerns how ligands are distributed between a complex cation and a complex anion. Compare a salt containing hexaamminecobalt three plus and hexacyanidochromate three minus with a salt containing hexaamminechromium three plus and hexacyanidocobaltate three minus. The total atom inventory is the same, but the metal to ligand connections differ. In each cation, six neutral ammonia ligands surround a metal in oxidation state plus three. In each anion, six cyanido ligands of charge minus one surround a metal in oxidation state plus three, giving overall charge minus three. Six donor atoms coordinate to each metal in this monodentate example. This exchange is different from linkage isomerism, where one ambidentate ligand changes its donor atom, and different from ionization isomerism, where coordinated and counter ions exchange roles. A formula comparison should establish the same overall composition before applying an isomer label. Merely changing an oxidation number in a written name does not create a valid pair. The example classifies connectivity; it does not imply that every conceivable exchanged salt has equal stability or can be prepared under identical conditions.",
+      "points": [
+        "[Co(NH₃)₆][Cr(CN)₆] · Both metals +3 · Cation +3; anion −3",
+        "[Cr(NH₃)₆][Co(CN)₆] · Same total composition · Ligand distribution differs",
+        "Isomer classification · Complex cation and anion · Coordination isomerism"
+      ],
+      "board": {
+        "heading": "Coordination isomerism exchanges ligand distributions",
+        "columns": [
+          "Given / case",
+          "Calculation / reason",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "[Co(NH₃)₆][Cr(CN)₆]",
+            "Both metals +3",
+            "Cation +3; anion −3"
+          ],
+          [
+            "[Cr(NH₃)₆][Co(CN)₆]",
+            "Same total composition",
+            "Ligand distribution differs"
+          ],
+          [
+            "Isomer classification",
+            "Complex cation and anion",
+            "Coordination isomerism"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Hydrate isomerism distinguishes coordinated water",
+      "formula": "Inside-sphere water occupies donor positions; crystal water does not",
+      "script": "Water shown in a coordination formula can be a ligand or a molecule of crystallization. Compare hexaaquachromium three chloride, with six water ligands inside the coordination sphere and three chloride counter ions, against pentaaquachloridochromium three chloride monohydrate. In the second compound, five waters and one chloride occupy six donor positions around chromium. Two chlorides remain outside and one water is outside as water of crystallization. Both have the same total inventory of chromium, three chlorines and six waters, while their coordination spheres differ. This is a hydrate or solvate isomerism comparison. In an ideal immediate chloride precipitation test that leaves the coordination sphere intact, one mole of the first compound gives three moles of silver chloride, while one mole of the second gives two. For zero point zero one zero zero mole of each, with supplied silver chloride molar mass one hundred forty three point five grams per mole, the predicted masses are four point three zero five and two point eight seven zero grams. Slow ligand substitution or other side processes can invalidate a simple outer sphere count, so the test conditions and time scale matter.",
+      "points": [
+        "[Cr(H₂O)₆]Cl₃ · 6 donor waters; 3 free Cl⁻ · 0.0100 mol → 4.305 g AgCl",
+        "[Cr(H₂O)₅Cl]Cl₂·H₂O · 5 waters + 1 Cl donor · 0.0100 mol → 2.870 g AgCl",
+        "Both formulas · CrCl₃·6H₂O total · Sphere kept intact in test"
+      ],
+      "board": {
+        "heading": "Hydrate isomerism distinguishes coordinated water",
+        "columns": [
+          "Given / case",
+          "Calculation / reason",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "[Cr(H₂O)₆]Cl₃",
+            "6 donor waters; 3 free Cl⁻",
+            "0.0100 mol → 4.305 g AgCl"
+          ],
+          [
+            "[Cr(H₂O)₅Cl]Cl₂·H₂O",
+            "5 waters + 1 Cl donor",
+            "0.0100 mol → 2.870 g AgCl"
+          ],
+          [
+            "Both formulas",
+            "CrCl₃·6H₂O total",
+            "Sphere kept intact in test"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Compare octahedral and tetrahedral d3 stabilization",
+      "formula": "Octahedral d³: −1.2Δo; tetrahedral d³: −0.8Δt",
+      "script": "Crystal field stabilization is measured relative to a chosen orbital energy barycentre. For an octahedral d three ion in the elementary model, three electrons occupy the lower three orbitals singly. Each contributes minus zero point four times the octahedral splitting, giving total minus one point two times that splitting, with three unpaired electrons. A tetrahedral d three ion instead fills two lower orbitals singly, then places the third electron in one of the upper three orbitals under the usual high spin assumption. Lower orbitals contribute minus zero point six times the tetrahedral splitting each; the upper electron contributes plus zero point four, giving net minus zero point eight times the tetrahedral splitting. Both arrangements have three unpaired electrons, so equal unpaired counts do not imply equal orbital stabilization or equal geometry. In a supplied ideal comparison, the tetrahedral splitting is four ninths of the octahedral value for otherwise comparable fields. If octahedral splitting is eighteen thousand reciprocal centimetres, tetrahedral splitting is eight thousand, and the two stabilizations are minus twenty one thousand six hundred and minus six thousand four hundred reciprocal centimetres. Actual geometry selection involves more than this one energy contribution.",
+      "points": [
+        "Octahedral d³ · 3 × (−0.4Δo) · −1.2Δo; 3 unpaired",
+        "Tetrahedral d³ · 2 × (−0.6Δt) + 0.4Δt · −0.8Δt; 3 unpaired",
+        "Given Δo = 18000 cm⁻¹ · Assume Δt = (4/9)Δo · Δt = 8000 cm⁻¹"
+      ],
+      "board": {
+        "heading": "Compare octahedral and tetrahedral d3 stabilization",
+        "columns": [
+          "Given / case",
+          "Calculation / reason",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Octahedral d³",
+            "3 × (−0.4Δo)",
+            "−1.2Δo; 3 unpaired"
+          ],
+          [
+            "Tetrahedral d³",
+            "2 × (−0.6Δt) + 0.4Δt",
+            "−0.8Δt; 3 unpaired"
+          ],
+          [
+            "Given Δo = 18000 cm⁻¹",
+            "Assume Δt = (4/9)Δo",
+            "Δt = 8000 cm⁻¹"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Count EDTA ligands and metal titration amounts",
+      "formula": "One hexadentate EDTA ligand can occupy six donor positions",
+      "script": "Ligand count and coordination number are different quantities. In a simple metal complex with one fully bound hexadentate EDTA ligand, the ligand uses two nitrogen and four oxygen donor atoms. One ligand can therefore account for six donor positions. Treating six donor atoms as six separate EDTA molecules would give the wrong composition and titration ratio. Consider a supplied one to one metal binding model at a suitable buffered p H, with no interfering ions. A twenty five point zero millilitre metal aliquot consumes twenty point zero millilitres of zero point zero one zero zero molar EDTA. Titrant amount is zero point zero zero zero two zero zero mole, equal to metal amount in the stated model. Dividing by zero point zero two five zero litre gives metal concentration zero point zero zero eight zero zero molar. EDTA protonation and metal hydrolysis depend on p H, so its effective binding strength is conditional; a large formal formation constant alone does not guarantee quantitative titration in every solution. The calculation assumes suitable reaction completion and endpoint detection. It illustrates ligand denticity and analytical stoichiometry, not an instruction to conduct a titration without a laboratory protocol.",
+      "points": [
+        "One fully bound EDTA · 2 N + 4 O donors · 1 ligand; 6 positions",
+        "20.0 mL × 0.0100 M · 0.000200 mol EDTA · Same metal amount",
+        "25.0 mL metal aliquot · 0.000200 / 0.0250 · 0.00800 M metal"
+      ],
+      "board": {
+        "heading": "Count EDTA ligands and metal titration amounts",
+        "columns": [
+          "Given / case",
+          "Calculation / reason",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "One fully bound EDTA",
+            "2 N + 4 O donors",
+            "1 ligand; 6 positions"
+          ],
+          [
+            "20.0 mL × 0.0100 M",
+            "0.000200 mol EDTA",
+            "Same metal amount"
+          ],
+          [
+            "25.0 mL metal aliquot",
+            "0.000200 / 0.0250",
+            "0.00800 M metal"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -450,6 +590,94 @@
       ],
       "answer": 2,
       "explanation": "The coordinated metal identities are magnesium, iron and cobalt, respectively."
+    },
+    {
+      "question": "Exchanging ammine and cyanido ligand distributions between complex cation and complex anion illustrates:",
+      "options": [
+        "Linkage only",
+        "Coordination isomerism",
+        "Optical rotation only",
+        "A change in isotope"
+      ],
+      "answer": 1,
+      "explanation": "Coordination isomerism redistributes ligands between complex cation and complex anion at fixed total composition."
+    },
+    {
+      "question": "The metal oxidation state in [Cr(CN)6]3− is:",
+      "options": [
+        "0",
+        "+6",
+        "+3",
+        "−3"
+      ],
+      "answer": 2,
+      "explanation": "Six cyanido ligands contribute −6 charge. Charge balance x−6=−3 gives metal oxidation state +3."
+    },
+    {
+      "question": "With sphere intact, 0.0100 mol [Cr(H2O)6]Cl3 gives AgCl mass for M=143.5 g/mol:",
+      "options": [
+        "1.435 g",
+        "2.870 g",
+        "0.4305 g",
+        "4.305 g"
+      ],
+      "answer": 3,
+      "explanation": "Three outer chloride ions give 0.0300 mol AgCl."
+    },
+    {
+      "question": "The coordination number of Cr in [Cr(H2O)5Cl]Cl2·H2O is:",
+      "options": [
+        "6",
+        "5",
+        "8",
+        "3"
+      ],
+      "answer": 0,
+      "explanation": "Five water donors plus one coordinated chloride give six. Crystal water is outside."
+    },
+    {
+      "question": "The octahedral d3 crystal field stabilization, excluding other energy terms, is:",
+      "options": [
+        "−0.8Δo",
+        "−1.2Δo",
+        "+1.2Δo",
+        "−2.4Δo"
+      ],
+      "answer": 1,
+      "explanation": "Three lower t2g electrons each contribute −0.4Δo."
+    },
+    {
+      "question": "For high-spin tetrahedral d3, the orbital stabilization is:",
+      "options": [
+        "−1.2Δt",
+        "+0.8Δt",
+        "−0.8Δt",
+        "−1.8Δt"
+      ],
+      "answer": 2,
+      "explanation": "Two lower e electrons and one upper t2 electron give −1.2Δt+0.4Δt."
+    },
+    {
+      "question": "One fully hexadentate EDTA ligand supplies how many donor positions?",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "6"
+      ],
+      "answer": 3,
+      "explanation": "Two nitrogen and four oxygen atoms donate in the stated binding mode."
+    },
+    {
+      "question": "25.0 mL metal consumes 20.0 mL 0.0100 M EDTA in a quantitative 1:1 model. Metal concentration is:",
+      "options": [
+        "0.00800 M",
+        "0.0125 M",
+        "0.0200 M",
+        "0.000200 M"
+      ],
+      "answer": 0,
+      "explanation": "Metal moles=0.0200×0.0100=0.000200; divide by 0.0250 L."
     }
   ]
 }

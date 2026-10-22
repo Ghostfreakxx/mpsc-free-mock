@@ -256,6 +256,146 @@
       },
       "speechInput": "An energy profile separates a barrier from the energy difference between products and reactants. In an illustrative single barrier enthalpy diagram, set reactants at zero and products at minus thirty kilojoules per mole. An uncatalysed peak at plus eighty gives a forward barrier of eighty and a reverse barrier of one hundred ten. The reverse barrier is measured upward from the lower product level, not from zero. If an alternative catalytic path has a peak at plus sixty with the same endpoints, its forward and reverse barriers are sixty and ninety. Both decrease, while the reaction enthalpy remains minus thirty. A real catalytic mechanism can contain several intermediates and barriers; this simple diagram illustrates the bookkeeping. The catalyst does not change the equilibrium constant at fixed temperature, although it can change how quickly equilibrium is approached. Barrier differences alone do not guarantee a numerical rate ratio unless the relevant prefactors and kinetic model are also specified. Keep potential energy sketches, thermodynamic direction and experimentally measured rates distinct when interpreting a graph.",
       "recordingNote": "Closing reminder shortened in the recording; transcript follows independently verified audio. Exact requested input retained for cache provenance."
+    },
+    {
+      "title": "Read the logarithm before using the Arrhenius slope",
+      "formula": "ln k versus 1/T: slope = −Ea/R",
+      "script": "An Arrhenius graph is useful only after identifying both axes and the logarithm convention. For a fixed mechanism with an approximately constant pre exponential factor, the natural logarithm of the rate constant equals the natural logarithm of that factor minus activation energy divided by R T. A graph of natural logarithm k against reciprocal absolute temperature therefore has slope minus activation energy divided by R. Suppose its measured slope is minus six thousand kelvin. Multiplying the positive magnitude by R, eight point three one four joules per mole kelvin, gives activation energy forty nine point eight eight four kilojoules per mole. If the vertical axis instead uses base ten logarithm k, the slope contains an additional factor two point three zero three in the denominator. Applying the natural logarithm formula to that graph would give the wrong energy. Also inspect horizontal scaling: a graph against one thousand divided by temperature does not have the same numerical slope as one against reciprocal temperature. A straight segment supports a useful model over its measured range; it does not prove the mechanism and pre exponential factor remain unchanged at every temperature.",
+      "points": [
+        "ln k vs 1/T · Slope = −6000 K · Ea = 49.884 kJ/mol",
+        "log₁₀ k vs 1/T · Slope = −Ea/(2.303R) · Different slope convention",
+        "Horizontal axis scaling · 1000/T differs from 1/T · Read units first"
+      ],
+      "board": {
+        "heading": "Read the logarithm before using the Arrhenius slope",
+        "columns": [
+          "Given / case",
+          "Calculation / reason",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "ln k vs 1/T",
+            "Slope = −6000 K",
+            "Ea = 49.884 kJ/mol"
+          ],
+          [
+            "log₁₀ k vs 1/T",
+            "Slope = −Ea/(2.303R)",
+            "Different slope convention"
+          ],
+          [
+            "Horizontal axis scaling",
+            "1000/T differs from 1/T",
+            "Read units first"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Infer fractional orders from controlled initial rates",
+      "formula": "r = k[A]^(1/2)[B]; overall order = 3/2",
+      "script": "Experimental reaction order need not be an integer and need not equal a balanced equation coefficient. Consider three initial rate measurements at the same temperature and with the same preparation conditions. In the first experiment, A and B concentrations are both zero point one zero zero molar, and the initial rate is zero point zero zero two zero molar per second. In the second, A is increased fourfold while B stays fixed, and the rate doubles. Thus four raised to the order in A equals two, giving order one half. In the third experiment, return A to its original value and triple B. If the initial rate triples, the order in B is one. The overall order is three halves. Dividing rate by the square root of A concentration and by B concentration gives a rate constant with units molarity to the negative one half per second. Fractional order describes an observed rate law; molecularity is a count for an elementary event and is not assigned a fractional value. Use initial rates so changing composition during a run does not obscure the controlled comparison.",
+      "points": [
+        "A ×4; B fixed · Initial rate ×2 · Order in A = 1/2",
+        "A fixed; B ×3 · Initial rate ×3 · Order in B = 1",
+        "Overall order 3/2 · Rate units M/s · k units M⁻¹ᐟ² s⁻¹"
+      ],
+      "board": {
+        "heading": "Infer fractional orders from controlled initial rates",
+        "columns": [
+          "Given / case",
+          "Calculation / reason",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "A ×4; B fixed",
+            "Initial rate ×2",
+            "Order in A = 1/2"
+          ],
+          [
+            "A fixed; B ×3",
+            "Initial rate ×3",
+            "Order in B = 1"
+          ],
+          [
+            "Overall order 3/2",
+            "Rate units M/s",
+            "k units M⁻¹ᐟ² s⁻¹"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Separate dilution from chemical conversion",
+      "formula": "Instant dilution changes concentration, not the surviving amount",
+      "script": "A sudden concentration decrease is not always evidence that reactant has been consumed. Take a first order reaction in a closed well mixed liquid, with rate constant zero point zero six nine three one per minute. At the selected instant there are zero point one zero zero moles of reactant in one litre. Add inert solvent rapidly so the volume becomes two litres, with no reaction during the idealized mixing step. The amount remains zero point one zero zero moles, but concentration falls from zero point one zero zero to zero point zero five zero zero molar. After mixing, assume the temperature, medium effects and first order rate constant remain unchanged. Ten minutes later, about half the amount remains: zero point zero five zero zero moles in two litres, or zero point zero two five zero zero molar. Using the original concentration as though no dilution occurred would mistake mixing for additional reaction. Real dilution may alter a rate constant through solvent or ionic effects; constancy is an assumption here. Keep separate records of amount, volume and elapsed reaction time before choosing an integrated concentration ratio.",
+      "points": [
+        "Before mixing · 0.100 mol / 1.00 L · 0.100 M",
+        "Immediately after dilution · 0.100 mol / 2.00 L · 0.0500 M",
+        "After one 10 min half-life · 0.0500 mol / 2.00 L · 0.0250 M"
+      ],
+      "board": {
+        "heading": "Separate dilution from chemical conversion",
+        "columns": [
+          "Given / case",
+          "Calculation / reason",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Before mixing",
+            "0.100 mol / 1.00 L",
+            "0.100 M"
+          ],
+          [
+            "Immediately after dilution",
+            "0.100 mol / 2.00 L",
+            "0.0500 M"
+          ],
+          [
+            "After one 10 min half-life",
+            "0.0500 mol / 2.00 L",
+            "0.0250 M"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting application: competing first-order pathways",
+      "formula": "A → B and A → C: ktotal = kB + kC",
+      "script": "As a supporting rate law application, suppose one reactant can form either B or C through independent irreversible first order pathways. Let the rate constants be zero point zero two zero and zero point zero three zero per minute, respectively. Assume both stay constant, the products do not react further, and the initial products are absent. Reactant disappears through both channels, so its total first order loss constant is zero point zero five zero per minute. Its half life is the natural logarithm of two divided by that total, about thirteen point eight six minutes. Product formation rates have ratio two to three at every instant, because both contain the same current reactant concentration. Integrating gives forty percent of reacted A as B and sixty percent as C in this ideal model. When half of an initial one mole has reacted, B amount is zero point two zero mole and C amount zero point three zero mole. These are fractions of reacted material, not fractions of the remaining reactant. Reversible steps, product loss or different orders require another model; adding constants blindly is not a general rule for reaction networks.",
+      "points": [
+        "kB = 0.020; kC = 0.030 · Sum = 0.050 min⁻¹ · Half-life = 13.86 min",
+        "Product branch fractions · 0.020/0.050; 0.030/0.050 · B 40%; C 60%",
+        "Start 1.00 mol; 50% reacts · 0.500 × branch fraction · B 0.200; C 0.300 mol"
+      ],
+      "board": {
+        "heading": "Supporting application: competing first-order pathways",
+        "columns": [
+          "Given / case",
+          "Calculation / reason",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "kB = 0.020; kC = 0.030",
+            "Sum = 0.050 min⁻¹",
+            "Half-life = 13.86 min"
+          ],
+          [
+            "Product branch fractions",
+            "0.020/0.050; 0.030/0.050",
+            "B 40%; C 60%"
+          ],
+          [
+            "Start 1.00 mol; 50% reacts",
+            "0.500 × branch fraction",
+            "B 0.200; C 0.300 mol"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -456,6 +596,94 @@
       ],
       "answer": 2,
       "explanation": "Its concentration is incorporated into kobs only while it changes negligibly."
+    },
+    {
+      "question": "The slope of ln k versus 1/T is −6000 K. With R=8.314 J/(mol K), Ea is:",
+      "options": [
+        "49.884 kJ/mol",
+        "6 kJ/mol",
+        "−49.884 kJ/mol",
+        "114.9 J/mol"
+      ],
+      "answer": 0,
+      "explanation": "Ea is minus slope times R; convert 49884 J/mol to kJ/mol."
+    },
+    {
+      "question": "For log10 k versus 1/T, the slope is:",
+      "options": [
+        "−Ea/R",
+        "−Ea/(2.303R)",
+        "+Ea/R",
+        "2.303Ea/R"
+      ],
+      "answer": 1,
+      "explanation": "Converting natural to common logarithms divides the slope magnitude by 2.303."
+    },
+    {
+      "question": "Quadrupling A at fixed B doubles the initial rate. Order in A is:",
+      "options": [
+        "2",
+        "1",
+        "1/2",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "The controlled rate ratio gives 4^m=2; taking logarithms gives experimental order m=1/2."
+    },
+    {
+      "question": "For r=k[A]^(1/2)[B], the units of k when rate is M/s are:",
+      "options": [
+        "M/s",
+        "s⁻¹",
+        "M⁻¹ s⁻¹",
+        "M⁻¹ᐟ² s⁻¹"
+      ],
+      "answer": 3,
+      "explanation": "The concentration product has units M^(3/2). Dividing M/s by that product gives M^(-1/2) s^(-1)."
+    },
+    {
+      "question": "A sample has 0.100 mol A. Instant dilution from 1 to 2 L without reaction leaves:",
+      "options": [
+        "0.100 mol A",
+        "0.0500 mol A",
+        "0.200 mol A",
+        "Zero A"
+      ],
+      "answer": 0,
+      "explanation": "Only concentration halves; amount is unchanged during the stated no-reaction mixing step."
+    },
+    {
+      "question": "After dilution to 0.0500 M, one first-order half-life at fixed volume gives:",
+      "options": [
+        "0.100 M",
+        "0.0250 M",
+        "0.0125 M",
+        "0.0500 M"
+      ],
+      "answer": 1,
+      "explanation": "Use the concentration after mixing as the start of this time interval."
+    },
+    {
+      "question": "Two independent irreversible first-order channels have constants 0.020 and 0.030 min⁻¹. The loss constant is:",
+      "options": [
+        "0.010",
+        "0.600",
+        "0.050",
+        "0.0006"
+      ],
+      "answer": 2,
+      "explanation": "The two loss rates add: (kB+kC)[A]."
+    },
+    {
+      "question": "In that two-channel model, the fraction of reacted A forming the 0.030 min⁻¹ channel is:",
+      "options": [
+        "0.030",
+        "0.40",
+        "0.50",
+        "0.60"
+      ],
+      "answer": 3,
+      "explanation": "Branch fraction=0.030/(0.020+0.030)=0.60."
     }
   ]
 }
