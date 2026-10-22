@@ -6,9 +6,9 @@ test('Chemistry expansion preserves explicit scope, units and original practice'
   assert.deepEqual(lessons.map(l => [l.id, l.unit]), [['atomic-spectra', 2], ['periodic-trends', 9], ['chemical-bonding', 3]]);
   for (const lesson of lessons) {
     assert.equal(lesson.subject, 'Chemistry');
-    assert.match(lesson.remaining, lesson.id!=='atomic-spectra' ? /eight-chapter Marin recording/ : /not a Marin recording/);
-    assert.equal(lesson.quiz.length, 6);
-    assert.equal(lesson.examples.length, 3);
+    assert.match(lesson.remaining, lesson.id!=='atomic-spectra' ? /thirteen-chapter Marin recording/ : /not a Marin recording/);
+    assert.equal(lesson.quiz.length, lesson.id==='atomic-spectra'?6:lesson.id==='periodic-trends'?16:18);
+    assert.equal(lesson.examples.length, lesson.id==='atomic-spectra'?3:6);
     assert.ok(lesson.sources.some(s => s.url.includes('jeemain.nta.nic.in')));
   }
 });
@@ -28,7 +28,7 @@ test('atomic examples independently satisfy energy, radius and wavelength relati
 test('periodic comparisons fix electron count before comparing nuclear charge', () => {
   const z = [8, 9, 11, 12], charges = [-2, -1, 1, 2];
   assert.deepEqual(z.map((n, i) => n - charges[i]), [10, 10, 10, 10]);
-  assert.deepEqual(lessons[1].quiz.map(q => q.answer), [1, 3, 2, 0, 1, 3]);
+  assert.deepEqual(lessons[1].quiz.slice(0,6).map(q => q.answer), [1, 3, 2, 0, 1, 3]);
 });
 
 test('bonding examples preserve formal charge and antibonding population arithmetic', () => {
@@ -38,5 +38,5 @@ test('bonding examples preserve formal charge and antibonding population arithme
   assert.equal((bonding - antibonding) / 2, 2);
   assert.equal((bonding - (antibonding - 1)) / 2, 2.5);
   assert.equal((bonding - (antibonding + 1)) / 2, 1.5);
-  assert.deepEqual(lessons[2].quiz.map(q => q.answer), [2, 1, 3, 0, 2, 1]);
+  assert.deepEqual(lessons[2].quiz.slice(0,6).map(q => q.answer), [2, 1, 3, 0, 2, 1]);
 });

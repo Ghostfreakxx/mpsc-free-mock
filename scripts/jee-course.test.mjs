@@ -21,14 +21,16 @@ test('published written lessons have substantive content, practice and figures',
     const sections = { 'atomic-spectra': 6, 'periodic-trends': 6, 'chemical-bonding': 7, 'chemical-thermodynamics': 7, solutions: 7, equilibrium: 8, 'redox-electrochemistry': 8, 'chemical-kinetics': 8, 'coordination-compounds': 8, 'organic-principles': 8, hydrocarbons: 8, 'organic-halogens': 8, 'organic-oxygen': 8, 'organic-nitrogen': 8, biomolecules: 8, 'purification-analysis': 8, 'p-block': 8, 'd-f-block': 8, 'practical-chemistry': 8 };
     const extendedElectrochemistry = lesson.id === 'redox-electrochemistry';
     const expandedEquilibrium = lesson.id === 'equilibrium';
+    const atomicBondingPeriodic = ['atomic-structure','chemical-bonding','periodic-trends'].includes(lesson.id);
+    const atomicBondingSections = {'atomic-structure':10,'chemical-bonding':12,'periodic-trends':11};
     const expandedPractice = ['equilibrium', 'redox-electrochemistry', 'chemical-kinetics', 'coordination-compounds', 'organic-principles'].includes(lesson.id);
     const extendedChemistry = ['hydrocarbons','organic-halogens','organic-oxygen','organic-nitrogen','biomolecules','practical-chemistry'].includes(lesson.id);
     const organicExpansion = lesson.id === 'organic-principles';
     const kineticsCoordination = ['chemical-kinetics', 'coordination-compounds'].includes(lesson.id);
     const physicalApplications = ['chemical-thermodynamics', 'solutions'].includes(lesson.id);
-    assert.equal(lesson.sections.length, extendedChemistry ? 13 : organicExpansion ? 16 : kineticsCoordination ? 13 : physicalApplications ? 12 : extendedElectrochemistry ? 15 : expandedEquilibrium ? 13 : newFoundation ? 8 : expansion ? sections[lesson.id] : 5);
-    assert.equal(lesson.examples.length, extendedChemistry ? 6 : organicExpansion ? 11 : kineticsCoordination ? 10 : physicalApplications ? 6 : extendedElectrochemistry || expandedEquilibrium ? 10 : expandedPractice ? 7 : newFoundation ? 4 : 3);
-    assert.equal(lesson.quiz.length, extendedChemistry ? 16 : organicExpansion ? 20 : kineticsCoordination ? 18 : extendedElectrochemistry || expandedEquilibrium ? 18 : physicalApplications || expandedPractice ? 12 : newFoundation ? 8 : expansion ? 6 : 5);
+    assert.equal(lesson.sections.length, atomicBondingPeriodic ? atomicBondingSections[lesson.id] : extendedChemistry ? 13 : organicExpansion ? 16 : kineticsCoordination ? 13 : physicalApplications ? 12 : extendedElectrochemistry ? 15 : expandedEquilibrium ? 13 : newFoundation ? 8 : expansion ? sections[lesson.id] : 5);
+    assert.equal(lesson.examples.length, atomicBondingPeriodic ? 6 : extendedChemistry ? 6 : organicExpansion ? 11 : kineticsCoordination ? 10 : physicalApplications ? 6 : extendedElectrochemistry || expandedEquilibrium ? 10 : expandedPractice ? 7 : newFoundation ? 4 : 3);
+    assert.equal(lesson.quiz.length, atomicBondingPeriodic ? (lesson.id==='periodic-trends'?16:18) : extendedChemistry ? 16 : organicExpansion ? 20 : kineticsCoordination ? 18 : extendedElectrochemistry || expandedEquilibrium ? 18 : physicalApplications || expandedPractice ? 12 : newFoundation ? 8 : expansion ? 6 : 5);
     assert.ok(lesson.remaining.length > 50);
     assert.ok(lesson.sections.flatMap(section => section.paragraphs).join(' ').split(/\s+/).length > 400);
     for (const question of lesson.quiz) {

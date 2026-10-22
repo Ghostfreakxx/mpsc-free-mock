@@ -311,6 +311,181 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Separate excitation from ionization",
+      "formula": "Hydrogen: Eₙ = −13.6/n² eV; ionization ends at E = 0",
+      "script": "Exciting an atom and ionizing it are different energy changes. Begin with hydrogen in its ground state at minus thirteen point six electron volts. Absorbing ten point two electron volts raises its energy to minus three point four, corresponding to principal level two. The electron remains bound because its energy is still negative relative to the stated continuum. Removing it from that excited level requires another three point four electron volts. These two steps add to the ground state ionization energy, thirteen point six. A photon below the remaining ionization threshold cannot ionize this isolated atom in the elementary single photon model, although it may match an allowed bound transition. For a one electron helium ion, nuclear charge is two, so all these level energies scale by four within the hydrogen like approximation. Its level two energy is therefore minus thirteen point six electron volts and ionization from that level requires positive thirteen point six. Specify the initial state before quoting an ionization energy. Do not use the ground state threshold automatically for an excited atom or apply one electron formulas to neutral helium.",
+      "points": [
+        "H ground → n=2 · −3.4 − (−13.6) · Absorb 10.2 eV",
+        "H n=2 → continuum · 0 − (−3.4) · Absorb 3.4 eV",
+        "He⁺ n=2 → continuum · Z² = 4 · Absorb 13.6 eV"
+      ],
+      "board": {
+        "heading": "Separate excitation from ionization",
+        "columns": [
+          "Quantity / case",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "H ground → n=2",
+            "−3.4 − (−13.6)",
+            "Absorb 10.2 eV"
+          ],
+          [
+            "H n=2 → continuum",
+            "0 − (−3.4)",
+            "Absorb 3.4 eV"
+          ],
+          [
+            "He⁺ n=2 → continuum",
+            "Z² = 4",
+            "Absorb 13.6 eV"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Count possible lines across an ensemble",
+      "formula": "Maximum pairwise energy differences among n levels: n(n−1)/2",
+      "script": "A spectral line corresponds to an energy difference, not simply to the number written on an excited level. Consider many hydrogen atoms prepared in principal level four. Across an ensemble that can populate all lower levels through allowed cascades, the elementary level model permits six distinct principal level differences: four to three, four to two, four to one, three to two, three to one and two to one. The pair count is four times three divided by two. This is a maximum set across the ensemble, not a promise that one atom emits six photons. A single downward sequence from four through three and two to one contains three emissions. A direct four to one transition emits just one. For the four to two Balmer line, energy is thirteen point six times one quarter minus one sixteenth, giving two point five five electron volts. With the supplied conversion twelve hundred forty electron volt nanometres, its wavelength is about four hundred eighty six point three nanometres. Selection rules and experimental populations affect which lines appear. Keep the simplified principal level counting assumption separate from a claim about every detailed atomic transition.",
+      "points": [
+        "Levels 1 to 4 · 4 × 3 / 2 · Up to 6 differences",
+        "Single 4 → 3 → 2 → 1 · Three downward steps · 3 emitted photons",
+        "Hydrogen 4 → 2 · 1240 / 2.55 · λ ≈ 486.3 nm"
+      ],
+      "board": {
+        "heading": "Count possible lines across an ensemble",
+        "columns": [
+          "Quantity / case",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Levels 1 to 4",
+            "4 × 3 / 2",
+            "Up to 6 differences"
+          ],
+          [
+            "Single 4 → 3 → 2 → 1",
+            "Three downward steps",
+            "3 emitted photons"
+          ],
+          [
+            "Hydrogen 4 → 2",
+            "1240 / 2.55",
+            "λ ≈ 486.3 nm"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Count orbitals with restricted quantum numbers",
+      "formula": "For each allowed l: ml = −l,…,+l; two spins per spatial orbital",
+      "script": "A restricted quantum number question requires counting the permitted states rather than substituting the full shell capacity automatically. In principal shell four, angular quantum number can be zero, one, two or three. If the question allows only angular values two and three, the available subshells are four d and four f. They contain five and seven spatial orbitals, so together they can hold twenty four electrons. The familiar full shell capacity thirty two includes the excluded s and p states and would be wrong here. In shell three, suppose the magnetic quantum number must be zero. Each of the three allowed angular values has one such orbital, giving three orbitals and at most six electrons. If spin is also fixed to plus one half, only one of the two spin states in each orbital remains, so the count becomes three electrons. Count allowed angular values, then magnetic values, then spin choices. Pauli exclusion limits occupation of each complete state, and the capacity calculation does not imply that every permitted state is occupied in a particular ground state atom.",
+      "points": [
+        "n=4; l=2 or 3 · 5 + 7 spatial orbitals · 24 electrons maximum",
+        "n=3; ml=0 · One orbital for each l · 6 electrons maximum",
+        "Also fix ms=+½ · One spin state per orbital · 3 electrons maximum"
+      ],
+      "board": {
+        "heading": "Count orbitals with restricted quantum numbers",
+        "columns": [
+          "Quantity / case",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "n=4; l=2 or 3",
+            "5 + 7 spatial orbitals",
+            "24 electrons maximum"
+          ],
+          [
+            "n=3; ml=0",
+            "One orbital for each l",
+            "6 electrons maximum"
+          ],
+          [
+            "Also fix ms=+½",
+            "One spin state per orbital",
+            "3 electrons maximum"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Separate radial nodes from angular nodes",
+      "formula": "Hydrogen-like orbitals: radial n−l−1; angular l; total n−1",
+      "script": "Orbital node questions distinguish radial and angular structure. A hydrogen like orbital has angular node count equal to angular quantum number, radial node count equal to principal number minus angular number minus one, and total node count principal number minus one. For a three p orbital, angular number is one. There is one radial node and one angular node, giving two in total. For a four d orbital, angular number is two, leaving one radial node and two angular nodes, or three total. A node is a region where the wavefunction is zero; the probability density is also zero there. A sign change in an orbital drawing indicates wavefunction phase, not positive versus negative electric charge. Do not count a radial probability maximum as a node. Also distinguish the radial wavefunction from the radial probability distribution, which includes the spherical volume factor. The zero of that volume factor at the origin is not an extra spherical radial node in this standard counting rule. Use these counts within the stated hydrogen like orbital description rather than treating every approximate many electron orbital as exactly the same mathematical function.",
+      "points": [
+        "3p: n=3, l=1 · Radial 1; angular 1 · Total 2 nodes",
+        "4d: n=4, l=2 · Radial 1; angular 2 · Total 3 nodes",
+        "Probability maximum · Nonzero peak · Not a node"
+      ],
+      "board": {
+        "heading": "Separate radial nodes from angular nodes",
+        "columns": [
+          "Quantity / case",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "3p: n=3, l=1",
+            "Radial 1; angular 1",
+            "Total 2 nodes"
+          ],
+          [
+            "4d: n=4, l=2",
+            "Radial 1; angular 2",
+            "Total 3 nodes"
+          ],
+          [
+            "Probability maximum",
+            "Nonzero peak",
+            "Not a node"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Use uncertainty as a lower bound",
+      "formula": "Δx Δp ≥ ℏ/2; nonrelativistic Δp = m Δv",
+      "script": "The uncertainty relation gives a lower bound on the product of position and momentum spreads. It does not state that an electron follows a classical orbit with an unknown but exact radius. Suppose position spread is one times ten to the minus ten metre. Using reduced Planck constant one point zero five five times ten to the minus thirty four joule second, the minimum momentum spread is about five point two seven five times ten to the minus twenty five kilogram metre per second. Dividing by the supplied electron mass nine point one one times ten to the minus thirty one kilogram gives a minimum velocity spread about five point seven nine times ten to the five metres per second in the nonrelativistic relation. This is a spread, not the electron's measured speed or mean velocity. Halving position spread doubles the minimum momentum spread. Equality is attained only for suitable minimum uncertainty states; it is not automatic for an arbitrary wavefunction. State which uncertainty convention is used, preserve the factor of two, and compare dimensions before interpreting the result. This limitation comes from the quantum description rather than merely from careless measurement equipment.",
+      "points": [
+        "Δx = 1.0 × 10⁻¹⁰ m · ℏ/(2Δx) · Δpmin = 5.275 × 10⁻²⁵",
+        "Electron mass supplied · Δpmin / me · Δvmin ≈ 5.79 × 10⁵ m/s",
+        "Halve Δx · Fixed lower-bound product · Double minimum Δp"
+      ],
+      "board": {
+        "heading": "Use uncertainty as a lower bound",
+        "columns": [
+          "Quantity / case",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Δx = 1.0 × 10⁻¹⁰ m",
+            "ℏ/(2Δx)",
+            "Δpmin = 5.275 × 10⁻²⁵"
+          ],
+          [
+            "Electron mass supplied",
+            "Δpmin / me",
+            "Δvmin ≈ 5.79 × 10⁵ m/s"
+          ],
+          [
+            "Halve Δx",
+            "Fixed lower-bound product",
+            "Double minimum Δp"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -445,6 +620,72 @@
       ],
       "answer": 2,
       "explanation": "For n=3 and l=1, radial nodes are n-l-1=1 and angular nodes are l=1."
+    },
+    {
+      "question": "Hydrogen initially at n=2 needs how much energy to reach the continuum in the stated Bohr model?",
+      "options": [
+        "10.2 eV",
+        "−3.4 eV",
+        "3.4 eV",
+        "13.6 eV"
+      ],
+      "answer": 2,
+      "explanation": "Ionization changes energy from −3.4 eV to zero; the required input is positive 3.4 eV."
+    },
+    {
+      "question": "Across an ensemble with levels 1 through 4 accessible in the simple principal-level model, the maximum distinct energy differences are:",
+      "options": [
+        "3",
+        "4",
+        "12",
+        "6"
+      ],
+      "answer": 3,
+      "explanation": "There are 4×3/2=6 pairs; this is not six photons from a single atom."
+    },
+    {
+      "question": "For n=4 restricted to l=2 or l=3, the maximum electron count is:",
+      "options": [
+        "24",
+        "32",
+        "12",
+        "14"
+      ],
+      "answer": 0,
+      "explanation": "The d and f subshells contain 5+7 spatial orbitals, each with two spin states."
+    },
+    {
+      "question": "A hydrogen-like 4d orbital has radial and angular node counts respectively:",
+      "options": [
+        "2 and 1",
+        "1 and 2",
+        "3 and 0",
+        "0 and 3"
+      ],
+      "answer": 1,
+      "explanation": "With n=4 and l=2, radial nodes=4−2−1=1 and angular nodes=2. Their total is n−1=3; a probability maximum is not a node."
+    },
+    {
+      "question": "With Δx=10^−10 m, ℏ=1.055×10^−34 J s and me=9.11×10^−31 kg, the minimum velocity spread is approximately:",
+      "options": [
+        "5.79×10^5 m/s",
+        "5.79×10^−5 m/s",
+        "The mean speed necessarily",
+        "Zero"
+      ],
+      "answer": 0,
+      "explanation": "Use ℏ/(2meΔx). This is a minimum spread, not a mean or measured speed."
+    },
+    {
+      "question": "At n=3 with ml=0 and ms fixed at +1/2, the maximum allowed electron count is:",
+      "options": [
+        "6",
+        "9",
+        "18",
+        "3"
+      ],
+      "answer": 3,
+      "explanation": "There is one ml=0 orbital for each l=0,1,2 and one permitted spin state per orbital."
     }
   ]
 }

@@ -25,6 +25,10 @@
     {
       "title": "OpenStax: molecular orbitals",
       "url": "https://openstax.org/books/chemistry-2e/pages/8-4-molecular-orbital-theory"
+    },
+    {
+      "title": "OpenStax: ionic and covalent bond strengths",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-5-strengths-of-ionic-and-covalent-bonds"
     }
   ],
   "chapters": [
@@ -307,6 +311,181 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Close a Born–Haber cycle with signs",
+      "formula": "ΔHf = sublimation + ionization + ½ dissociation + electron gain + lattice formation",
+      "script": "A Born Haber cycle relates formation of an ionic solid to a sequence of gaseous atom and ion steps. Use the supplied illustrative sodium chloride data in kilojoules per mole: sodium sublimation plus one hundred eight, sodium ionization plus four hundred ninety six, half the chlorine bond dissociation plus one hundred twenty two, and chlorine electron gain minus three hundred forty nine. Suppose solid formation from the elements is minus four hundred eleven. The nonlattice steps sum to plus three hundred seventy seven, so lattice formation must be minus seven hundred eighty eight to close the cycle. This is the enthalpy for gaseous sodium and chloride ions forming solid sodium chloride. Reversing that process gives lattice dissociation plus seven hundred eighty eight. Some tables use the opposite lattice convention, so copy the defining reaction before the sign. The chlorine contribution is half a mole of diatomic molecules for one mole of salt; using the full dissociation value would double that step incorrectly. The cycle uses Hess's law, not a new independent empirical sign rule. Check both the balanced overall reaction and the physical states of every intermediate.",
+      "points": [
+        "Nonlattice steps · 108 + 496 + 122 − 349 · +377 kJ/mol",
+        "Lattice formation · −411 − 377 · −788 kJ/mol",
+        "Lattice dissociation · Reverse formation step · +788 kJ/mol"
+      ],
+      "board": {
+        "heading": "Close a Born–Haber cycle with signs",
+        "columns": [
+          "Quantity / case",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Nonlattice steps",
+            "108 + 496 + 122 − 349",
+            "+377 kJ/mol"
+          ],
+          [
+            "Lattice formation",
+            "−411 − 377",
+            "−788 kJ/mol"
+          ],
+          [
+            "Lattice dissociation",
+            "Reverse formation step",
+            "+788 kJ/mol"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Ionization can strengthen or weaken a bond",
+      "formula": "Bond order = ½(Nbonding − Nantibonding)",
+      "script": "Removing an electron does not always strengthen a chemical bond. The result depends on whether that electron occupied a bonding or an antibonding molecular orbital. In the elementary nitrogen molecule diagram, nitrogen has bond order three and its highest occupied orbital is a sigma bonding orbital. Removing one electron to form the nitrogen molecular cation lowers bond order to two point five and leaves an unpaired electron. Oxygen starts with bond order two and two unpaired electrons in the degenerate pi antibonding set. Removing one of those antibonding electrons raises bond order to two point five and leaves one unpaired electron. Thus the same operation, ionization, produces opposite bond order changes in these two examples. Their equal final bond orders do not prove identical bond lengths or bond energies, because the atoms and orbital energies differ. For a given related molecular series, bond order often helps compare length and strength, but it is not a universal numerical conversion between different elements. State the appropriate orbital energy ordering, locate the electron being removed, and then recount bonding, antibonding and unpaired electrons before assigning stability or magnetism.",
+      "points": [
+        "N₂ → N₂⁺ · Remove bonding electron · Bond order 3 → 2.5",
+        "O₂ → O₂⁺ · Remove antibonding electron · Bond order 2 → 2.5",
+        "Compare unlike molecules · Same bond order alone · Not identical bond energy"
+      ],
+      "board": {
+        "heading": "Ionization can strengthen or weaken a bond",
+        "columns": [
+          "Quantity / case",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "N₂ → N₂⁺",
+            "Remove bonding electron",
+            "Bond order 3 → 2.5"
+          ],
+          [
+            "O₂ → O₂⁺",
+            "Remove antibonding electron",
+            "Bond order 2 → 2.5"
+          ],
+          [
+            "Compare unlike molecules",
+            "Same bond order alone",
+            "Not identical bond energy"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Place lone pairs before naming the shape",
+      "formula": "AX₄E: seesaw; AX₃E₂: T-shaped; AX₄E₂: square planar",
+      "script": "Molecular shape describes the positions of atoms, while electron domain geometry includes lone pairs. Sulfur tetrafluoride has four bonding domains and one lone pair in the elementary valence shell model. Five domains adopt a trigonal bipyramidal arrangement. Placing the lone pair in an equatorial site reduces the number of ninety degree interactions, leaving a seesaw arrangement of atoms. Chlorine trifluoride has three bonds and two lone pairs, again five domains. The two lone pairs preferentially occupy equatorial sites, leaving a T shaped atomic arrangement. Xenon tetrafluoride instead has six domains: four bonds and two lone pairs. An octahedral domain arrangement with the lone pairs opposite each other leaves four fluorine atoms in one square plane. All three molecules have different domain and atomic descriptions; counting bonds alone cannot distinguish them. These are qualitative valence shell geometries, and actual bond angles can deviate from ideal drawings. Use a valid electron count and molecular charge before assigning the number of lone pairs. A drawing should label lone pairs separately from atoms so an electron domain diagram is not mistaken for the observed molecular shape.",
+      "points": [
+        "SF₄: AX₄E · 5 domains; equatorial lone pair · Seesaw",
+        "ClF₃: AX₃E₂ · 5 domains; 2 equatorial pairs · T-shaped",
+        "XeF₄: AX₄E₂ · 6 domains; opposite lone pairs · Square planar"
+      ],
+      "board": {
+        "heading": "Place lone pairs before naming the shape",
+        "columns": [
+          "Quantity / case",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "SF₄: AX₄E",
+            "5 domains; equatorial lone pair",
+            "Seesaw"
+          ],
+          [
+            "ClF₃: AX₃E₂",
+            "5 domains; 2 equatorial pairs",
+            "T-shaped"
+          ],
+          [
+            "XeF₄: AX₄E₂",
+            "6 domains; opposite lone pairs",
+            "Square planar"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Average equivalent resonance bonds carefully",
+      "formula": "Equivalent contributors can give an average Lewis bond order",
+      "script": "Resonance contributors represent one delocalized electronic structure, not molecules rapidly switching between different drawings. In nitrate, three equivalent oxygen positions can share the double bond in the simplest equivalent Lewis contributors. Each contributor has one double and two single nitrogen oxygen bonds, so the total Lewis bond order across those three links is four. The average for each equivalent link is four thirds. In nitrite, the two equivalent oxygen positions share one single and one double link in the elementary contributors, giving average one point five. These bookkeeping averages are useful descriptions, not a promise that bond order is always an exactly measured fractional observable. Equivalent atom positions and contributor weights matter. For unequally weighted contributors, taking a simple unweighted average can mislead. Also keep the overall ionic charge fixed while moving electrons; resonance does not move the nuclei or create a different atom connectivity. Formal charges in individual nitrate contributors add to minus one even though their distribution changes. Compare equivalent bonds within the same species and distinguish an average resonance representation from assigning one permanently short double bond and separate permanently long single bonds.",
+      "points": [
+        "Nitrate: 3 equivalent links · (2 + 1 + 1) / 3 · Average 4/3",
+        "Nitrite: 2 equivalent links · (2 + 1) / 2 · Average 1.5",
+        "Resonance transformation · Move electrons; keep nuclei · Same connectivity and charge"
+      ],
+      "board": {
+        "heading": "Average equivalent resonance bonds carefully",
+        "columns": [
+          "Quantity / case",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Nitrate: 3 equivalent links",
+            "(2 + 1 + 1) / 3",
+            "Average 4/3"
+          ],
+          [
+            "Nitrite: 2 equivalent links",
+            "(2 + 1) / 2",
+            "Average 1.5"
+          ],
+          [
+            "Resonance transformation",
+            "Move electrons; keep nuclei",
+            "Same connectivity and charge"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Add bond dipoles with the angle included",
+      "formula": "Two equal bond vectors: μresultant = 2μ cos(θ/2)",
+      "script": "A molecular dipole is a vector sum, so equal bond dipoles do not automatically cancel. Consider a simple two bond model in which the vectors have equal magnitude mu and included angle theta. Adding their components along the angle bisector gives resultant two times mu times the cosine of half theta. At one hundred eighty degrees, the equal opposing vectors cancel. At one hundred twenty degrees, cosine sixty is one half, so the resultant equals one bond dipole rather than zero. At ninety degrees, the magnitude is square root two times mu. These comparisons use the specified vector model; they are not an exact method for predicting every molecule's measured dipole moment from an isolated bond table. Lone pairs and the full electron distribution can affect real molecular values. A symmetric molecule with several bonds may cancel all vector components, but the actual geometry and identities must support that cancellation. Draw arrows consistently and specify whether a chemistry dipole arrow or the physical electric dipole vector convention is being used. Reversing all arrows together preserves the calculated magnitude, while reversing just one changes the model.",
+      "points": [
+        "Two equal vectors: 180° · 2μ cos 90° · 0",
+        "Two equal vectors: 120° · 2μ cos 60° · μ",
+        "Two equal vectors: 90° · 2μ cos 45° · √2 μ"
+      ],
+      "board": {
+        "heading": "Add bond dipoles with the angle included",
+        "columns": [
+          "Quantity / case",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Two equal vectors: 180°",
+            "2μ cos 90°",
+            "0"
+          ],
+          [
+            "Two equal vectors: 120°",
+            "2μ cos 60°",
+            "μ"
+          ],
+          [
+            "Two equal vectors: 90°",
+            "2μ cos 45°",
+            "√2 μ"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -441,6 +620,72 @@
       ],
       "answer": 1,
       "explanation": "An acceptor need not contain its own O-H donor. Ether oxygen can accept from water."
+    },
+    {
+      "question": "For the supplied NaCl cycle, ΔHf=−411 and nonlattice sum=+377 kJ/mol. Lattice formation enthalpy is:",
+      "options": [
+        "+788 kJ/mol",
+        "−34 kJ/mol",
+        "−788 kJ/mol",
+        "+34 kJ/mol"
+      ],
+      "answer": 2,
+      "explanation": "Formation must close the Hess cycle: −411−377=−788; dissociation reverses its sign."
+    },
+    {
+      "question": "Removing one electron from the highest occupied bonding orbital of N2 gives N2+ bond order:",
+      "options": [
+        "3.5",
+        "2.5",
+        "3",
+        "2"
+      ],
+      "answer": 1,
+      "explanation": "Removing a bonding electron lowers bond order by one half."
+    },
+    {
+      "question": "Which pair has molecular shapes T-shaped and square planar respectively?",
+      "options": [
+        "SF4 and NH3",
+        "XeF4 and ClF3",
+        "CO2 and BF3",
+        "ClF3 and XeF4"
+      ],
+      "answer": 3,
+      "explanation": "AX3E2 leaves a T shape from five domains; AX4E2 leaves a square plane from six domains."
+    },
+    {
+      "question": "The simple equivalent-contributor average N–O bond order in nitrate is:",
+      "options": [
+        "4/3",
+        "3/2",
+        "2",
+        "1/3"
+      ],
+      "answer": 0,
+      "explanation": "One double plus two single links gives total four over three equivalent N–O positions."
+    },
+    {
+      "question": "Two equal dipole vectors, each 1.50 D, have included angle 120°. Their resultant magnitude is:",
+      "options": [
+        "0 D",
+        "3.00 D",
+        "1.50 D",
+        "2.12 D"
+      ],
+      "answer": 2,
+      "explanation": "2×1.50×cos60°=1.50 D in the stated vector model."
+    },
+    {
+      "question": "Why do N2 and O2 show opposite bond-order changes on removing their highest occupied electron?",
+      "options": [
+        "Every cation has the same bond order",
+        "Different occupied orbital types: bonding versus antibonding",
+        "Nitrogen loses a proton",
+        "Oxygen cannot lose electrons"
+      ],
+      "answer": 1,
+      "explanation": "The removed electron is bonding in the stated N2 diagram and antibonding in O2."
     }
   ]
 }
