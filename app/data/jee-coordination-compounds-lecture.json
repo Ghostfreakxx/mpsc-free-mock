@@ -21,6 +21,10 @@
     {
       "title": "OpenStax: Lewis acids, bases and formation equilibria",
       "url": "https://openstax.org/books/chemistry-2e/pages/15-2-lewis-acids-and-bases"
+    },
+    {
+      "title": "OpenStax: free energy",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-4-free-energy"
     }
   ],
   "chapters": [
@@ -390,6 +394,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Compare d5 spin states with pairing included",
+      "formula": "Octahedral d⁵: ELS−EHS = −2Δo+2P in the stated model",
+      "script": "A crystal field contribution alone is not the total cost of changing spin state. For an octahedral d five ion in the elementary model, high spin places three electrons in the lower set and two in the upper set, all unpaired. Its crystal field contribution is zero, and it has no electron pairs. Low spin places all five electrons in the lower set, giving two pairs and one unpaired electron. Its crystal field contribution is minus two times the octahedral splitting. If each additional pair costs P, the low spin energy relative to high spin is minus two delta plus two P. With supplied splitting eighteen thousand reciprocal centimetres and pairing cost twenty thousand in the same units, the difference is plus four thousand. High spin is favoured by this limited comparison. The low spin field term is negative, yet its extra pairing cost is larger. Spin only moments are approximately five point nine two and one point seven three Bohr magnetons respectively. Real spin energetics require more detailed interactions than this simplified accounting.",
+      "points": [
+        "High-spin d⁵ · t₂g³eg²; 0 pairs; 5 unpaired · Field contribution 0",
+        "Low-spin d⁵ · t₂g⁵; 2 pairs; 1 unpaired · Field contribution −2Δo",
+        "Δo=18000; P=20000 cm⁻¹ · ELS−EHS=−36000+40000 · +4000 cm⁻¹; high spin favoured"
+      ],
+      "board": {
+        "heading": "Compare d5 spin states with pairing included",
+        "columns": [
+          "Given / model",
+          "Calculation / reason",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "High-spin d⁵",
+            "t₂g³eg²; 0 pairs; 5 unpaired",
+            "Field contribution 0"
+          ],
+          [
+            "Low-spin d⁵",
+            "t₂g⁵; 2 pairs; 1 unpaired",
+            "Field contribution −2Δo"
+          ],
+          [
+            "Δo=18000; P=20000 cm⁻¹",
+            "ELS−EHS=−36000+40000",
+            "+4000 cm⁻¹; high spin favoured"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Convert an absorption band into a splitting estimate",
+      "formula": "Δ = hc/λ; molar energy = NAhc/λ",
+      "script": "An absorption wavelength can estimate a level separation when the transition assignment is supplied. In a simplified octahedral d one example, suppose the band maximum at six hundred nanometres represents the lower to upper d level splitting. Use the supplied molar constant N A h c equal to zero point one one nine six two six joule metre per mole. Dividing by six hundred times ten to the minus nine metre gives about one hundred ninety nine point four kilojoules per mole. A second assigned band at five hundred nanometres corresponds to about two hundred thirty nine point three kilojoules per mole, a larger splitting. Shorter wavelength means higher photon energy. Do not confuse energy per photon with energy per mole of absorbed photons. Nor does an absorption maximum directly name the observed solution colour: the transmitted or reflected spectrum depends on which wavelengths are removed and on the full band shape. Other complexes may have multiple d transitions or charge transfer bands, so the assignment of a measured maximum to one splitting must be justified rather than assumed universally.",
+      "points": [
+        "Supplied NAhc=0.119626 J m/mol · λ=600×10⁻⁹ m · Δ≈199.4 kJ/mol",
+        "Assigned comparison at 500 nm · 0.119626/(500×10⁻⁹) · Δ≈239.3 kJ/mol",
+        "Shorter wavelength · Higher photon energy · Band assignment is a model input"
+      ],
+      "board": {
+        "heading": "Convert an absorption band into a splitting estimate",
+        "columns": [
+          "Given / model",
+          "Calculation / reason",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Supplied NAhc=0.119626 J m/mol",
+            "λ=600×10⁻⁹ m",
+            "Δ≈199.4 kJ/mol"
+          ],
+          [
+            "Assigned comparison at 500 nm",
+            "0.119626/(500×10⁻⁹)",
+            "Δ≈239.3 kJ/mol"
+          ],
+          [
+            "Shorter wavelength",
+            "Higher photon energy",
+            "Band assignment is a model input"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Ligand concentration can offset a formation constant",
+      "formula": "[ML₂]/[MX₂] = (βL/βX)([L]/[X])² in the supplied dilute model",
+      "script": "A larger formation constant does not alone fix which complex dominates when free ligand concentrations differ. Consider a supplied dilute solution model with one metal ion and two competing neutral monodentate ligands, L and X. The complexes are M L two and M X two, with overall formation constants one hundred million and one million respectively, using consistent concentration conventions. Free ligand concentrations are zero point zero zero one zero zero molar L and zero point zero one zero zero molar X. Dividing the two formation expressions cancels the same free metal concentration. The complex ratio is one hundred times the square of one tenth, which equals one. Thus the two complex concentrations are equal under these specified free ligand conditions. The larger L formation constant is exactly offset by its lower free concentration in this example. Total ligand added is not automatically equal to free ligand concentration, because binding and other equilibria can consume it. The model omits mixed ligand complexes, protonation, hydrolysis and precipitation. Full speciation requires those extra balances when they are relevant.",
+      "points": [
+        "βL=10⁸; βX=10⁶ · Free [L]=0.00100; [X]=0.0100 M · Matched two-ligand complexes",
+        "Divide formation expressions · 100×(0.00100/0.0100)² · [ML₂]/[MX₂]=1.00",
+        "Free is not total · Ligand binding changes availability · Other species omitted by model"
+      ],
+      "board": {
+        "heading": "Ligand concentration can offset a formation constant",
+        "columns": [
+          "Given / model",
+          "Calculation / reason",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "βL=10⁸; βX=10⁶",
+            "Free [L]=0.00100; [X]=0.0100 M",
+            "Matched two-ligand complexes"
+          ],
+          [
+            "Divide formation expressions",
+            "100×(0.00100/0.0100)²",
+            "[ML₂]/[MX₂]=1.00"
+          ],
+          [
+            "Free is not total",
+            "Ligand binding changes availability",
+            "Other species omitted by model"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Chelation can be favoured despite positive enthalpy",
+      "formula": "ΔrG°=ΔrH°−TΔrS°; chelate stability needs the whole balance",
+      "script": "Chelation often benefits from entropy, but its thermodynamic preference must be evaluated for a specified balanced reaction. Consider an illustrative ligand exchange with supplied standard reaction enthalpy plus six point zero zero kilojoules per mole and standard reaction entropy plus forty point zero joules per mole kelvin. At three hundred kelvin, the entropy term is twelve point zero kilojoules per mole. Standard reaction Gibbs energy is therefore minus six point zero zero kilojoules per mole, despite the positive enthalpy. With R equal to eight point three one four joules per mole kelvin, the dimensionless equilibrium constant is exponential six thousand divided by eight point three one four times three hundred, about eleven point one. This example shows how the entropy term can outweigh an enthalpy cost. It does not claim that every chelate exchange has these signs or that counting liberated molecules alone supplies a numerical entropy. Solvation, ligand structure and standard states also matter. Keep reaction stoichiometry and the stated temperature attached to each thermodynamic quantity before making a stability comparison.",
+      "points": [
+        "Supplied exchange data · ΔH°=+6.00 kJ/mol; ΔS°=+40.0 J/mol/K · Illustrative balanced-reaction data",
+        "At 300 K · ΔG°=6.00−300×0.0400 · −6.00 kJ/mol",
+        "Dimensionless equilibrium constant · K=exp[6000/(8.314×300)] · About 11.1; not universal chelation data"
+      ],
+      "board": {
+        "heading": "Chelation can be favoured despite positive enthalpy",
+        "columns": [
+          "Given / model",
+          "Calculation / reason",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Supplied exchange data",
+            "ΔH°=+6.00 kJ/mol; ΔS°=+40.0 J/mol/K",
+            "Illustrative balanced-reaction data"
+          ],
+          [
+            "At 300 K",
+            "ΔG°=6.00−300×0.0400",
+            "−6.00 kJ/mol"
+          ],
+          [
+            "Dimensionless equilibrium constant",
+            "K=exp[6000/(8.314×300)]",
+            "About 11.1; not universal chelation data"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -678,6 +822,94 @@
       ],
       "answer": 0,
       "explanation": "Metal moles=0.0200×0.0100=0.000200; divide by 0.0250 L."
+    },
+    {
+      "question": "High-spin octahedral d5 in the elementary model has how many unpaired electrons?",
+      "options": [
+        "Three",
+        "Five",
+        "One",
+        "Zero"
+      ],
+      "answer": 1,
+      "explanation": "The high-spin arrangement t2g3 eg2 occupies all five d orbitals singly."
+    },
+    {
+      "question": "For d5 with Δo=18000 and pairing cost P=20000 cm−1, ELS−EHS=−2Δo+2P is:",
+      "options": [
+        "−4000 cm−1",
+        "−36000 cm−1",
+        "+4000 cm−1",
+        "0 cm−1"
+      ],
+      "answer": 2,
+      "explanation": "The low-spin field advantage is −36000 but two extra pairs cost +40000, giving +4000 cm−1."
+    },
+    {
+      "question": "Using NAhc=0.119626 J m/mol, an assigned 600 nm splitting corresponds approximately to:",
+      "options": [
+        "0.1994 kJ/mol",
+        "119.6 kJ/mol",
+        "600 kJ/mol",
+        "199.4 kJ/mol"
+      ],
+      "answer": 3,
+      "explanation": "Convert 600 nm to 600×10−9 m, divide the supplied molar constant by that length, and convert J to kJ."
+    },
+    {
+      "question": "For otherwise comparable assigned bands at 500 and 600 nm, the larger splitting belongs to:",
+      "options": [
+        "500 nm",
+        "600 nm",
+        "Both must be equal",
+        "Whichever sample looks darker"
+      ],
+      "answer": 0,
+      "explanation": "Photon energy varies as inverse wavelength; 500 nm corresponds to the higher energy separation."
+    },
+    {
+      "question": "For ML2/MX2, βL/βX=100 and free [L]/[X]=0.10. Complex concentration ratio is:",
+      "options": [
+        "100",
+        "1.00",
+        "0.10",
+        "10.0"
+      ],
+      "answer": 1,
+      "explanation": "The ligand ratio is squared for these two-ligand complexes: 100×0.10²=1.00."
+    },
+    {
+      "question": "The ligand concentrations in that ratio formula must be:",
+      "options": [
+        "Always total amounts added",
+        "Always equal to metal concentration",
+        "Free ligand concentrations under the stated model",
+        "Ignored when formation constants are known"
+      ],
+      "answer": 2,
+      "explanation": "Formation expressions use available free ligand; bound ligand is not automatically part of that concentration."
+    },
+    {
+      "question": "A supplied exchange has ΔH°=+6.00 kJ/mol and ΔS°=+40.0 J/mol/K. At 300 K, ΔG° is:",
+      "options": [
+        "+18.0 kJ/mol",
+        "+6.00 kJ/mol",
+        "0 kJ/mol",
+        "−6.00 kJ/mol"
+      ],
+      "answer": 3,
+      "explanation": "Convert entropy to 0.0400 kJ/mol/K, then compute 6.00−300×0.0400=−6.00 kJ/mol."
+    },
+    {
+      "question": "For that exchange with ΔG°=−6000 J/mol, R=8.314 J/mol/K and T=300 K, K is approximately:",
+      "options": [
+        "11.1",
+        "0.0902",
+        "6000",
+        "1.00"
+      ],
+      "answer": 0,
+      "explanation": "Use the dimensionless thermodynamic relation K=exp(−ΔG°/RT)=exp[6000/(8.314×300)]≈11.1."
     }
   ]
 }

@@ -1123,7 +1123,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "coordination-compounds", subject: "Chemistry", unit: 12, number: "C02", title: coordinationCompounds.title,
-    description: "Fourteen narrated chapters on ligands, naming, isomerism, spin energies, magnetism, chelation, formation constants and applications.",
+    description: "Eighteen narrated chapters on ligands, isomerism, d5 spin energies, absorption wavelengths, ligand competition, chelation and formation constants.",
     scope: "Recorded Unit 12 foundation and worked applications with original practice. Detailed optical-isomer models, extended nomenclature and quantitative extraction/analysis sequences remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.coordination-compounds.lecture.v1",
     audio: "/lectures/coordination-compounds/narration-marin.mp3",
@@ -1133,7 +1133,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "chemical-kinetics", subject: "Chemistry", unit: 8, number: "C03", title: chemicalKinetics.title,
-    description: "Fourteen narrated chapters on rate laws, zero and first order, pressure measurements, pseudo-first-order conditions, graphs and catalyst barriers.",
+    description: "Eighteen narrated chapters on rate laws, signal baselines, temperature stages, Arrhenius prefactors and a supporting sequential first-order model.",
     scope: "Recorded Unit 8 foundation and worked applications with original practice. Further mixed experimental datasets and mechanism-based problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.chemical-kinetics.lecture.v1",
     audio: "/lectures/chemical-kinetics/narration-marin.mp3",

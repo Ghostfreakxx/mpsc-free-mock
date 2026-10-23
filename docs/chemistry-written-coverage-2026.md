@@ -23,11 +23,11 @@ Questions are original practice, not represented as official PYQs.
 | 5 | [Solutions](/jee/classes/solutions) | 19 | 21 | 12 | 26 / 26 |
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 17 | 17 | 13 | 26 / 26 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 18 | 19 | 13 | 26 / 26 |
-| 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 14 | 17 | 13 | 26 / 26 |
+| 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 18 | 21 | 16 | 34 / 34 |
 | 9 | [Periodic Trends](/jee/classes/periodic-trends) | 17 | 15 | 9 | 24 / 24 |
 | 10 | [P-Block](/jee/classes/p-block) | 15 | 13 | 6 | 18 / 18 |
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 19 | 17 | 9 | 26 / 26 |
-| 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 14 | 17 | 13 | 26 / 26 |
+| 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 18 | 21 | 16 | 34 / 34 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 17 | 17 | 9 | 24 / 24 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 17 | 20 | 14 | 28 / 28 |
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 17 | 17 | 9 | 24 / 24 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Redox and Electrochemistry adds matched-step potential combination through Gibbs energies, copper(I) disproportionation with supplied rounded potentials, hydrogen-electrode pH comparisons and ideal water-electrolysis gas balances. The gas model excludes competing anode products and distinguishes circuit charge from gas amounts.
+Chemical Kinetics adds a baseline-corrected signal model, piecewise constant-temperature first-order exposure, Arrhenius comparisons with unequal prefactors and a clearly labelled supporting equal-rate sequential-reaction model. The signal graph uses its stated analytic calibration and first-order law.
 
-Organic Principles adds single-centre R/S assignment with an explicit viewing diagram, binary enantiomeric excess with a supplied additive rotation model, homolytic versus heterolytic cleavage and keto–enol tautomerism versus resonance. Full CIP tie-breaking and multiple-centre stereochemistry remain beyond this introductory addition.
+Coordination Compounds adds octahedral d5 pairing-energy comparisons, assigned absorption-wavelength calculations, competition between two ligands at supplied free concentrations and a thermodynamic chelation example. Band assignments, omitted species and simplified spin assumptions remain explicit.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific primary references, including OpenStax electrode potentials, electrolysis, sequence rules, optical activity, reaction mechanisms and keto–enol tautomerism. Numerical data and MCQs in this batch are original practice.
+The notes contain lesson-specific primary references, including OpenStax integrated rate laws, collision theory, coordination chemistry, spectroscopic and magnetic properties, and free energy. Numerical data and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

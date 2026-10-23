@@ -1103,3 +1103,249 @@ Reversible steps, product loss or different orders require another model;
 
 00:19:15.888 --> 00:19:19.168
 adding constants blindly is not a general rule for reaction networks.
+
+00:19:19.968 --> 00:19:23.874
+A measured signal can track concentration without being equal to
+
+00:19:23.874 --> 00:19:24.728
+concentration.
+
+00:19:25.928 --> 00:19:30.252
+Suppose a first order disappearance is monitored by a calibrated signal S
+
+00:19:30.252 --> 00:19:30.548
+equal
+
+00:19:30.548 --> 00:19:35.148
+to a constant baseline plus a constant factor times reactant concentration.
+
+00:19:36.228 --> 00:19:41.818
+The baseline is zero point one zero zero, the initial signal zero point nine
+
+00:19:41.818 --> 00:19:46.828
+zero zero, and the signal after ten minutes zero point five zero zero.
+
+00:19:46.828 --> 00:19:51.770
+Subtracting the baseline gives an initial excess zero point eight zero zero
+
+00:19:51.770 --> 00:19:51.968
+and
+
+00:19:51.968 --> 00:19:55.428
+a later excess zero point four zero zero.
+
+00:19:55.428 --> 00:19:59.868
+The concentration fraction remaining is one half, so the rate constant is
+
+00:19:59.868 --> 00:20:05.041
+natural logarithm two divided by ten, or zero point zero six nine three one
+
+00:20:05.041 --> 00:20:05.248
+per
+
+00:20:05.248 --> 00:20:05.468
+minute.
+
+00:20:06.508 --> 00:20:10.548
+Using the raw ratio zero point five divided by zero point nine would be
+
+00:20:10.548 --> 00:20:10.948
+incorrect.
+
+00:20:11.368 --> 00:20:16.208
+This analysis assumes a linear calibration, a constant response factor and an
+
+00:20:16.208 --> 00:20:19.328
+endpoint signal that represents complete reactant disappearance.
+
+00:20:20.268 --> 00:20:23.848
+Other absorbing species or instrumental drift require their own model.
+
+00:20:24.568 --> 00:20:28.628
+A fitted first order constant describes the observed kinetic law, not
+
+00:20:28.628 --> 00:20:30.248
+necessarily an elementary step.
+
+00:20:31.080 --> 00:20:35.340
+A reaction experiencing two temperature stages cannot generally use a simple
+
+00:20:35.340 --> 00:20:36.980
+arithmetic average of rate constants.
+
+00:20:38.080 --> 00:20:41.840
+Consider a first order disappearance in a fixed volume with no material added
+
+00:20:41.840 --> 00:20:42.400
+or removed.
+
+00:20:43.300 --> 00:20:47.020
+During the first ten minutes, the supplied rate constant is natural logarithm
+
+00:20:47.340 --> 00:20:49.100
+two divided by ten per minute.
+
+00:20:50.020 --> 00:20:51.560
+Half of the initial reactant remains.
+
+00:20:52.380 --> 00:20:56.100
+During the next five minutes at a different temperature, the rate constant is
+
+00:20:56.400 --> 00:20:58.800
+natural logarithm two divided by five per minute.
+
+00:20:59.420 --> 00:21:03.360
+This stage removes half of what remains, leaving one quarter of the initial
+
+00:21:03.360 --> 00:21:04.520
+amount overall.
+
+00:21:05.280 --> 00:21:09.060
+Each segment contributes its own dimensionless exposure, k times time.
+
+00:21:09.680 --> 00:21:12.500
+The total exposure is two natural logarithms of two.
+
+00:21:13.140 --> 00:21:16.780
+An effective constant for the whole fifteen minutes is this sum divided by
+
+00:21:16.780 --> 00:21:20.360
+fifteen, about zero point zero nine two four two per minute.
+
+00:21:20.640 --> 00:21:24.880
+It is a time weighted summary for this schedule, not the rate constant at an
+
+00:21:24.880 --> 00:21:25.280
+average temperature.
+
+00:21:25.920 --> 00:21:30.120
+This model treats temperature changes as instantaneous and ignores conversion
+
+00:21:30.120 --> 00:21:31.080
+during the transitions.
+
+00:21:32.020 --> 00:21:35.280
+Finite heating ramps instead require an integral of the temperature dependent
+
+00:21:35.280 --> 00:21:36.220
+constant over time.
+
+00:21:37.200 --> 00:21:41.440
+Comparing activation energies alone is insufficient when Arrhenius prefactors
+
+00:21:41.440 --> 00:21:41.800
+differ.
+
+00:21:42.720 --> 00:21:45.480
+Use two supplied first order processes at three hundred kelvin.
+
+00:21:46.580 --> 00:21:50.840
+Process X has a prefactor one tenth that of process Y, while its activation
+
+00:21:50.840 --> 00:21:54.920
+energy is lower by R T times natural logarithm ten at this temperature.
+
+00:21:55.540 --> 00:22:00.160
+The energy advantage is about five point seven four kilojoules per mole using
+
+00:22:00.160 --> 00:22:00.220
+R
+
+00:22:00.220 --> 00:22:03.320
+equal to eight point three one four joules per mole kelvin.
+
+00:22:03.320 --> 00:22:08.240
+In the ratio of Arrhenius constants, the prefactor contributes zero point one
+
+00:22:08.560 --> 00:22:10.340
+and the exponential contributes ten.
+
+00:22:11.060 --> 00:22:14.500
+Their product is one, so the two rate constants are equal at three hundred
+
+00:22:14.500 --> 00:22:14.800
+kelvin.
+
+00:22:15.720 --> 00:22:19.400
+This equality need not hold at another temperature if the activation energies
+
+00:22:19.400 --> 00:22:20.920
+and prefactors remain fixed.
+
+00:22:21.780 --> 00:22:26.280
+A prefactor has the units of its own rate constant; numerical comparisons
+
+00:22:26.280 --> 00:22:28.800
+require compatible rate law definitions and units.
+
+00:22:29.440 --> 00:22:33.400
+The example does not infer an elementary mechanism or a universal compensation
+
+00:22:33.400 --> 00:22:34.280
+rule.
+
+00:22:34.980 --> 00:22:37.880
+Separate the energy dependent exponential from collision frequency and
+
+00:22:37.880 --> 00:22:41.920
+orientation contributions before turning a barrier comparison into a numerical
+
+00:22:41.920 --> 00:22:42.620
+rate prediction.
+
+00:22:43.560 --> 00:22:48.400
+A sequential reaction can make an intermediate accumulate and then disappear.
+
+00:22:49.320 --> 00:22:53.340
+This is a supporting application of first order laws, not an additional
+
+00:22:53.340 --> 00:22:55.180
+required integrated order formula.
+
+00:22:56.380 --> 00:23:02.380
+Consider the ideal sequence A forming B, followed by B forming C, with both
+
+00:23:02.380 --> 00:23:06.320
+irreversible steps having the same constant k in a fixed volume.
+
+00:23:07.320 --> 00:23:11.540
+Initially only A is present, and each step has one to one stoichiometry.
+
+00:23:12.280 --> 00:23:17.800
+Use the supplied result: the fraction present as B is k t times exponential
+
+00:23:18.140 --> 00:23:19.180
+minus k t.
+
+00:23:20.080 --> 00:23:24.720
+At time one divided by k, that fraction reaches its maximum, one divided by e,
+
+00:23:25.200 --> 00:23:27.460
+about zero point three six eight.
+
+00:23:27.460 --> 00:23:32.220
+At that instant A also has fraction one divided by e, and C has fraction one
+
+00:23:32.220 --> 00:23:35.580
+minus two divided by e, about zero point two six four.
+
+00:23:35.580 --> 00:23:37.520
+The three fractions sum to one.
+
+00:23:38.100 --> 00:23:42.400
+If k is zero point one zero zero per minute, the intermediate peaks at ten
+
+00:23:42.400 --> 00:23:42.740
+minutes.
+
+00:23:43.800 --> 00:23:48.000
+Unequal rate constants, reverse reactions or material removal change these
+
+00:23:48.000 --> 00:23:48.420
+expressions.
+
+00:23:49.260 --> 00:23:52.560
+A falling intermediate concentration does not mean its formation has stopped;
+
+00:23:53.220 --> 00:23:56.000
+it means its consumption rate exceeds its formation rate.

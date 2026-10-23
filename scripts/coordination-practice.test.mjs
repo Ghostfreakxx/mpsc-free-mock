@@ -18,9 +18,9 @@ test('nickel and paired d6 examples retain correct model distinctions', () => {
   assert.equal(lesson.quiz[10].options[lesson.quiz[10].answer], '-2 Delta_o + 2P');
 });
 test('expanded practice includes naming and fac geometry with written scope', () => {
-  assert.equal(lesson.examples.length, 13);
-  assert.equal(lesson.quiz.length, 26);
+  assert.equal(lesson.examples.length, 16);
+  assert.equal(lesson.quiz.length, 34);
   assert.equal(lesson.quiz[8].options[lesson.quiz[8].answer], 'Ammine');
   assert.equal(lesson.quiz[11].options[lesson.quiz[11].answer], 'All three A-A pairs cis');
-  assert.match(lesson.remaining, /fourteen-chapter Marin recording/);
+  assert.match(lesson.remaining, /eighteen-chapter Marin recording/);
 });

@@ -396,6 +396,148 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Subtract the baseline before fitting first order",
+      "formula": "For signal S=S∞+b[A], (Sₜ−S∞)/(S₀−S∞)=exp(−kt)",
+      "script": "A measured signal can track concentration without being equal to concentration. Suppose a first order disappearance is monitored by a calibrated signal S equal to a constant baseline plus a constant factor times reactant concentration. The baseline is zero point one zero zero, the initial signal zero point nine zero zero, and the signal after ten minutes zero point five zero zero. Subtracting the baseline gives an initial excess zero point eight zero zero and a later excess zero point four zero zero. The concentration fraction remaining is one half, so the rate constant is natural logarithm two divided by ten, or zero point zero six nine three one per minute. Using the raw ratio zero point five divided by zero point nine would be incorrect. This analysis assumes a linear calibration, a constant response factor and an endpoint signal that represents complete reactant disappearance. Other absorbing species or instrumental drift require their own model. A fitted first order constant describes the observed kinetic law, not necessarily an elementary step.",
+      "points": [
+        "S₀=0.900; S₁₀=0.500; S∞=0.100 · Excesses 0.800 and 0.400 · Concentration ratio = 0.500",
+        "First-order calibration model · k=ln(0.800/0.400)/10 · 0.06931 min⁻¹",
+        "Raw signal is not reactant amount · Subtract the same constant baseline · Linear calibration assumed"
+      ],
+      "board": {
+        "heading": "Subtract the baseline before fitting first order",
+        "columns": [
+          "Given / model",
+          "Calculation / reason",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "S₀=0.900; S₁₀=0.500; S∞=0.100",
+            "Excesses 0.800 and 0.400",
+            "Concentration ratio = 0.500"
+          ],
+          [
+            "First-order calibration model",
+            "k=ln(0.800/0.400)/10",
+            "0.06931 min⁻¹"
+          ],
+          [
+            "Raw signal is not reactant amount",
+            "Subtract the same constant baseline",
+            "Linear calibration assumed"
+          ]
+        ]
+      },
+      "speechInput": "A measured signal can track concentration without being equal to concentration. Suppose a first order disappearance is monitored by a calibrated signal S equal to a constant baseline plus a constant factor times reactant concentration. The baseline is zero point one zero zero, the initial signal zero point nine zero zero, and the signal after ten minutes zero point five zero zero. Subtracting the baseline gives an initial excess zero point eight zero zero and a later excess zero point four zero zero. The concentration fraction remaining is one half, so the rate constant is natural logarithm two divided by ten, or zero point zero six nine three one per minute. Using the raw ratio zero point five divided by zero point nine would be incorrect. This analysis assumes a linear calibration, a constant response factor and an endpoint signal that represents complete reactant disappearance. Other absorbing species or instrumental drift require their own model. A fitted first order constant describes the observed kinetic law, not necessarily an elementary step. Check the measurement-to-concentration relationship before selecting a logarithmic plot.",
+      "recordingNote": "Independent transcription review confirmed that the recording omits the final reminder sentence. The displayed transcript follows the spoken ending; speechInput retains the exact original synthesis request for cache provenance."
+    },
+    {
+      "title": "Add first-order exposure across temperature stages",
+      "formula": "[A]final/[A]initial = exp(−k₁t₁−k₂t₂)",
+      "script": "A reaction experiencing two temperature stages cannot generally use a simple arithmetic average of rate constants. Consider a first order disappearance in a fixed volume with no material added or removed. During the first ten minutes, the supplied rate constant is natural logarithm two divided by ten per minute. Half of the initial reactant remains. During the next five minutes at a different temperature, the rate constant is natural logarithm two divided by five per minute. This stage removes half of what remains, leaving one quarter of the initial amount overall. Each segment contributes its own dimensionless exposure, k times time. The total exposure is two natural logarithms of two. An effective constant for the whole fifteen minutes is this sum divided by fifteen, about zero point zero nine two four two per minute. It is a time weighted summary for this schedule, not the rate constant at an average temperature. This model treats temperature changes as instantaneous and ignores conversion during the transitions. Finite heating ramps instead require an integral of the temperature dependent constant over time.",
+      "points": [
+        "Stage 1: 10 min · k₁=ln 2/10 · Fraction remaining 1/2",
+        "Stage 2: 5 min · k₂=ln 2/5 · Half of the remainder; final 1/4",
+        "Total exposure / total time · (ln 2+ln 2)/15 · keffective=0.09242 min⁻¹"
+      ],
+      "board": {
+        "heading": "Add first-order exposure across temperature stages",
+        "columns": [
+          "Given / model",
+          "Calculation / reason",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Stage 1: 10 min",
+            "k₁=ln 2/10",
+            "Fraction remaining 1/2"
+          ],
+          [
+            "Stage 2: 5 min",
+            "k₂=ln 2/5",
+            "Half of the remainder; final 1/4"
+          ],
+          [
+            "Total exposure / total time",
+            "(ln 2+ln 2)/15",
+            "keffective=0.09242 min⁻¹"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A smaller barrier does not alone fix a rate ratio",
+      "formula": "kX/kY = (AX/AY) exp[−(EaX−EaY)/(RT)]",
+      "script": "Comparing activation energies alone is insufficient when Arrhenius prefactors differ. Use two supplied first order processes at three hundred kelvin. Process X has a prefactor one tenth that of process Y, while its activation energy is lower by R T times natural logarithm ten at this temperature. The energy advantage is about five point seven four kilojoules per mole using R equal to eight point three one four joules per mole kelvin. In the ratio of Arrhenius constants, the prefactor contributes zero point one and the exponential contributes ten. Their product is one, so the two rate constants are equal at three hundred kelvin. This equality need not hold at another temperature if the activation energies and prefactors remain fixed. A prefactor has the units of its own rate constant; numerical comparisons require compatible rate-law definitions and units. The example does not infer an elementary mechanism or a universal compensation rule. Separate the energy-dependent exponential from collision frequency and orientation contributions before turning a barrier comparison into a numerical rate prediction.",
+      "points": [
+        "At 300 K: AX/AY=0.10 · EaY−EaX=RT ln 10 · About 5.74 kJ/mol",
+        "Arrhenius ratio · 0.10×exp(ln 10) · kX/kY=1.00",
+        "Compatibility check · Same rate-constant units and definitions · Equality is temperature-specific"
+      ],
+      "board": {
+        "heading": "A smaller barrier does not alone fix a rate ratio",
+        "columns": [
+          "Given / model",
+          "Calculation / reason",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "At 300 K: AX/AY=0.10",
+            "EaY−EaX=RT ln 10",
+            "About 5.74 kJ/mol"
+          ],
+          [
+            "Arrhenius ratio",
+            "0.10×exp(ln 10)",
+            "kX/kY=1.00"
+          ],
+          [
+            "Compatibility check",
+            "Same rate-constant units and definitions",
+            "Equality is temperature-specific"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting extension: an intermediate can rise and fall",
+      "formula": "For A→B→C with equal first-order k: [B]/[A]₀=kt exp(−kt)",
+      "script": "A sequential reaction can make an intermediate accumulate and then disappear. This is a supporting application of first order laws, not an additional required integrated-order formula. Consider the ideal sequence A forming B, followed by B forming C, with both irreversible steps having the same constant k in a fixed volume. Initially only A is present, and each step has one to one stoichiometry. Use the supplied result: the fraction present as B is k t times exponential minus k t. At time one divided by k, that fraction reaches its maximum, one divided by e, about zero point three six eight. At that instant A also has fraction one divided by e, and C has fraction one minus two divided by e, about zero point two six four. The three fractions sum to one. If k is zero point one zero zero per minute, the intermediate peaks at ten minutes. Unequal rate constants, reverse reactions or material removal change these expressions. A falling intermediate concentration does not mean its formation has stopped; it means its consumption rate exceeds its formation rate.",
+      "points": [
+        "Equal k; only A initially · B/A₀=kt exp(−kt) · Supporting sequential model",
+        "B maximum at t=1/k · For k=0.100 min⁻¹ · 10.0 min; B/A₀=1/e≈0.368",
+        "At the maximum · A/A₀=1/e; C/A₀=1−2/e · Fractions sum to one"
+      ],
+      "board": {
+        "heading": "Supporting extension: an intermediate can rise and fall",
+        "columns": [
+          "Given / model",
+          "Calculation / reason",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Equal k; only A initially",
+            "B/A₀=kt exp(−kt)",
+            "Supporting sequential model"
+          ],
+          [
+            "B maximum at t=1/k",
+            "For k=0.100 min⁻¹",
+            "10.0 min; B/A₀=1/e≈0.368"
+          ],
+          [
+            "At the maximum",
+            "A/A₀=1/e; C/A₀=1−2/e",
+            "Fractions sum to one"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -684,6 +826,94 @@
       ],
       "answer": 3,
       "explanation": "Branch fraction=0.030/(0.020+0.030)=0.60."
+    },
+    {
+      "question": "For S=S∞+b[A], S0=0.900, S10=0.500 and S∞=0.100. Fraction of reactant remaining is:",
+      "options": [
+        "0.500",
+        "0.556",
+        "0.400",
+        "0.800"
+      ],
+      "answer": 0,
+      "explanation": "Subtract the baseline from both signals: (0.500−0.100)/(0.900−0.100)=0.500."
+    },
+    {
+      "question": "Under the first-order model, that ten-minute measurement gives k approximately:",
+      "options": [
+        "0.100 min−1",
+        "0.06931 min−1",
+        "0.6931 min−1",
+        "0.05878 min−1"
+      ],
+      "answer": 1,
+      "explanation": "A half remains after ten minutes, so k=ln 2/10=0.06931 per minute."
+    },
+    {
+      "question": "Two successive temperature stages each remove half of the reactant present at that stage. Final initial-amount fraction is:",
+      "options": [
+        "1/2",
+        "0",
+        "1/4",
+        "3/4"
+      ],
+      "answer": 2,
+      "explanation": "Multiply the successive remaining fractions: (1/2)×(1/2)=1/4."
+    },
+    {
+      "question": "The two stages last 10 and 5 min, each with exposure ln 2. Effective first-order k over the 15 min is:",
+      "options": [
+        "0.1386 min−1",
+        "0.06931 min−1",
+        "0.1040 min−1",
+        "0.09242 min−1"
+      ],
+      "answer": 3,
+      "explanation": "Total exposure is 2 ln 2; dividing by total time 15 min gives 0.09242 per minute."
+    },
+    {
+      "question": "At the same temperature, AX/AY=0.10 and EaY−EaX=RT ln 10. Arrhenius ratio kX/kY is:",
+      "options": [
+        "1.00",
+        "0.10",
+        "10.0",
+        "100"
+      ],
+      "answer": 0,
+      "explanation": "The lower barrier contributes exp(ln 10)=10, cancelling the prefactor ratio 0.10."
+    },
+    {
+      "question": "To compare numerical Arrhenius prefactors meaningfully, first check:",
+      "options": [
+        "Only molecular colour",
+        "Compatible rate-constant definitions and units",
+        "That activation energies are zero",
+        "That every reaction is elementary"
+      ],
+      "answer": 1,
+      "explanation": "Prefactors have the units of their rate constants; unlike definitions or units invalidate a direct numerical comparison."
+    },
+    {
+      "question": "For the supplied equal-k sequence A→B→C, B peaks at t=1/k. If k=0.100 min−1, peak time is:",
+      "options": [
+        "0.100 min",
+        "1.00 min",
+        "10.0 min",
+        "100 min"
+      ],
+      "answer": 2,
+      "explanation": "Substitute into the stated supporting model: 1/(0.100 per minute)=10.0 minutes."
+    },
+    {
+      "question": "At that sequential-model maximum, B/A0 equals:",
+      "options": [
+        "1",
+        "1/2",
+        "1−2/e",
+        "1/e"
+      ],
+      "answer": 3,
+      "explanation": "With kt=1, the supplied fraction kt exp(−kt) becomes exp(−1)=1/e, about 0.368."
     }
   ]
 }

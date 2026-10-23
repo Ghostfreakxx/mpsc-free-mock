@@ -1,0 +1,501 @@
+// Authored by scripts/expand-kinetics-coordination-measurement.mjs.
+export const kineticsCoordinationMeasurementAdditions = {
+  "chemical-kinetics": {
+    "base": 14,
+    "quizBase": 26,
+    "chapters": [
+      {
+        "title": "Subtract the baseline before fitting first order",
+        "formula": "For signal S=S∞+b[A], (Sₜ−S∞)/(S₀−S∞)=exp(−kt)",
+        "script": "A measured signal can track concentration without being equal to concentration. Suppose a first order disappearance is monitored by a calibrated signal S equal to a constant baseline plus a constant factor times reactant concentration. The baseline is zero point one zero zero, the initial signal zero point nine zero zero, and the signal after ten minutes zero point five zero zero. Subtracting the baseline gives an initial excess zero point eight zero zero and a later excess zero point four zero zero. The concentration fraction remaining is one half, so the rate constant is natural logarithm two divided by ten, or zero point zero six nine three one per minute. Using the raw ratio zero point five divided by zero point nine would be incorrect. This analysis assumes a linear calibration, a constant response factor and an endpoint signal that represents complete reactant disappearance. Other absorbing species or instrumental drift require their own model. A fitted first order constant describes the observed kinetic law, not necessarily an elementary step.",
+        "points": [
+          "S₀=0.900; S₁₀=0.500; S∞=0.100 · Excesses 0.800 and 0.400 · Concentration ratio = 0.500",
+          "First-order calibration model · k=ln(0.800/0.400)/10 · 0.06931 min⁻¹",
+          "Raw signal is not reactant amount · Subtract the same constant baseline · Linear calibration assumed"
+        ],
+        "board": {
+          "heading": "Subtract the baseline before fitting first order",
+          "columns": [
+            "Given / model",
+            "Calculation / reason",
+            "Result / limit"
+          ],
+          "rows": [
+            [
+              "S₀=0.900; S₁₀=0.500; S∞=0.100",
+              "Excesses 0.800 and 0.400",
+              "Concentration ratio = 0.500"
+            ],
+            [
+              "First-order calibration model",
+              "k=ln(0.800/0.400)/10",
+              "0.06931 min⁻¹"
+            ],
+            [
+              "Raw signal is not reactant amount",
+              "Subtract the same constant baseline",
+              "Linear calibration assumed"
+            ]
+          ]
+        },
+        "speechInput": "A measured signal can track concentration without being equal to concentration. Suppose a first order disappearance is monitored by a calibrated signal S equal to a constant baseline plus a constant factor times reactant concentration. The baseline is zero point one zero zero, the initial signal zero point nine zero zero, and the signal after ten minutes zero point five zero zero. Subtracting the baseline gives an initial excess zero point eight zero zero and a later excess zero point four zero zero. The concentration fraction remaining is one half, so the rate constant is natural logarithm two divided by ten, or zero point zero six nine three one per minute. Using the raw ratio zero point five divided by zero point nine would be incorrect. This analysis assumes a linear calibration, a constant response factor and an endpoint signal that represents complete reactant disappearance. Other absorbing species or instrumental drift require their own model. A fitted first order constant describes the observed kinetic law, not necessarily an elementary step. Check the measurement-to-concentration relationship before selecting a logarithmic plot.",
+        "recordingNote": "Independent transcription review confirmed that the recording omits the final reminder sentence. The displayed transcript follows the spoken ending; speechInput retains the exact original synthesis request for cache provenance."
+      },
+      {
+        "title": "Add first-order exposure across temperature stages",
+        "formula": "[A]final/[A]initial = exp(−k₁t₁−k₂t₂)",
+        "script": "A reaction experiencing two temperature stages cannot generally use a simple arithmetic average of rate constants. Consider a first order disappearance in a fixed volume with no material added or removed. During the first ten minutes, the supplied rate constant is natural logarithm two divided by ten per minute. Half of the initial reactant remains. During the next five minutes at a different temperature, the rate constant is natural logarithm two divided by five per minute. This stage removes half of what remains, leaving one quarter of the initial amount overall. Each segment contributes its own dimensionless exposure, k times time. The total exposure is two natural logarithms of two. An effective constant for the whole fifteen minutes is this sum divided by fifteen, about zero point zero nine two four two per minute. It is a time weighted summary for this schedule, not the rate constant at an average temperature. This model treats temperature changes as instantaneous and ignores conversion during the transitions. Finite heating ramps instead require an integral of the temperature dependent constant over time.",
+        "points": [
+          "Stage 1: 10 min · k₁=ln 2/10 · Fraction remaining 1/2",
+          "Stage 2: 5 min · k₂=ln 2/5 · Half of the remainder; final 1/4",
+          "Total exposure / total time · (ln 2+ln 2)/15 · keffective=0.09242 min⁻¹"
+        ],
+        "board": {
+          "heading": "Add first-order exposure across temperature stages",
+          "columns": [
+            "Given / model",
+            "Calculation / reason",
+            "Result / limit"
+          ],
+          "rows": [
+            [
+              "Stage 1: 10 min",
+              "k₁=ln 2/10",
+              "Fraction remaining 1/2"
+            ],
+            [
+              "Stage 2: 5 min",
+              "k₂=ln 2/5",
+              "Half of the remainder; final 1/4"
+            ],
+            [
+              "Total exposure / total time",
+              "(ln 2+ln 2)/15",
+              "keffective=0.09242 min⁻¹"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "A smaller barrier does not alone fix a rate ratio",
+        "formula": "kX/kY = (AX/AY) exp[−(EaX−EaY)/(RT)]",
+        "script": "Comparing activation energies alone is insufficient when Arrhenius prefactors differ. Use two supplied first order processes at three hundred kelvin. Process X has a prefactor one tenth that of process Y, while its activation energy is lower by R T times natural logarithm ten at this temperature. The energy advantage is about five point seven four kilojoules per mole using R equal to eight point three one four joules per mole kelvin. In the ratio of Arrhenius constants, the prefactor contributes zero point one and the exponential contributes ten. Their product is one, so the two rate constants are equal at three hundred kelvin. This equality need not hold at another temperature if the activation energies and prefactors remain fixed. A prefactor has the units of its own rate constant; numerical comparisons require compatible rate-law definitions and units. The example does not infer an elementary mechanism or a universal compensation rule. Separate the energy-dependent exponential from collision frequency and orientation contributions before turning a barrier comparison into a numerical rate prediction.",
+        "points": [
+          "At 300 K: AX/AY=0.10 · EaY−EaX=RT ln 10 · About 5.74 kJ/mol",
+          "Arrhenius ratio · 0.10×exp(ln 10) · kX/kY=1.00",
+          "Compatibility check · Same rate-constant units and definitions · Equality is temperature-specific"
+        ],
+        "board": {
+          "heading": "A smaller barrier does not alone fix a rate ratio",
+          "columns": [
+            "Given / model",
+            "Calculation / reason",
+            "Result / limit"
+          ],
+          "rows": [
+            [
+              "At 300 K: AX/AY=0.10",
+              "EaY−EaX=RT ln 10",
+              "About 5.74 kJ/mol"
+            ],
+            [
+              "Arrhenius ratio",
+              "0.10×exp(ln 10)",
+              "kX/kY=1.00"
+            ],
+            [
+              "Compatibility check",
+              "Same rate-constant units and definitions",
+              "Equality is temperature-specific"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Supporting extension: an intermediate can rise and fall",
+        "formula": "For A→B→C with equal first-order k: [B]/[A]₀=kt exp(−kt)",
+        "script": "A sequential reaction can make an intermediate accumulate and then disappear. This is a supporting application of first order laws, not an additional required integrated-order formula. Consider the ideal sequence A forming B, followed by B forming C, with both irreversible steps having the same constant k in a fixed volume. Initially only A is present, and each step has one to one stoichiometry. Use the supplied result: the fraction present as B is k t times exponential minus k t. At time one divided by k, that fraction reaches its maximum, one divided by e, about zero point three six eight. At that instant A also has fraction one divided by e, and C has fraction one minus two divided by e, about zero point two six four. The three fractions sum to one. If k is zero point one zero zero per minute, the intermediate peaks at ten minutes. Unequal rate constants, reverse reactions or material removal change these expressions. A falling intermediate concentration does not mean its formation has stopped; it means its consumption rate exceeds its formation rate.",
+        "points": [
+          "Equal k; only A initially · B/A₀=kt exp(−kt) · Supporting sequential model",
+          "B maximum at t=1/k · For k=0.100 min⁻¹ · 10.0 min; B/A₀=1/e≈0.368",
+          "At the maximum · A/A₀=1/e; C/A₀=1−2/e · Fractions sum to one"
+        ],
+        "board": {
+          "heading": "Supporting extension: an intermediate can rise and fall",
+          "columns": [
+            "Given / model",
+            "Calculation / reason",
+            "Result / limit"
+          ],
+          "rows": [
+            [
+              "Equal k; only A initially",
+              "B/A₀=kt exp(−kt)",
+              "Supporting sequential model"
+            ],
+            [
+              "B maximum at t=1/k",
+              "For k=0.100 min⁻¹",
+              "10.0 min; B/A₀=1/e≈0.368"
+            ],
+            [
+              "At the maximum",
+              "A/A₀=1/e; C/A₀=1−2/e",
+              "Fractions sum to one"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "For S=S∞+b[A], S0=0.900, S10=0.500 and S∞=0.100. Fraction of reactant remaining is:",
+        "options": [
+          "0.500",
+          "0.556",
+          "0.400",
+          "0.800"
+        ],
+        "answer": 0,
+        "explanation": "Subtract the baseline from both signals: (0.500−0.100)/(0.900−0.100)=0.500."
+      },
+      {
+        "question": "Under the first-order model, that ten-minute measurement gives k approximately:",
+        "options": [
+          "0.100 min−1",
+          "0.06931 min−1",
+          "0.6931 min−1",
+          "0.05878 min−1"
+        ],
+        "answer": 1,
+        "explanation": "A half remains after ten minutes, so k=ln 2/10=0.06931 per minute."
+      },
+      {
+        "question": "Two successive temperature stages each remove half of the reactant present at that stage. Final initial-amount fraction is:",
+        "options": [
+          "1/2",
+          "0",
+          "1/4",
+          "3/4"
+        ],
+        "answer": 2,
+        "explanation": "Multiply the successive remaining fractions: (1/2)×(1/2)=1/4."
+      },
+      {
+        "question": "The two stages last 10 and 5 min, each with exposure ln 2. Effective first-order k over the 15 min is:",
+        "options": [
+          "0.1386 min−1",
+          "0.06931 min−1",
+          "0.1040 min−1",
+          "0.09242 min−1"
+        ],
+        "answer": 3,
+        "explanation": "Total exposure is 2 ln 2; dividing by total time 15 min gives 0.09242 per minute."
+      },
+      {
+        "question": "At the same temperature, AX/AY=0.10 and EaY−EaX=RT ln 10. Arrhenius ratio kX/kY is:",
+        "options": [
+          "1.00",
+          "0.10",
+          "10.0",
+          "100"
+        ],
+        "answer": 0,
+        "explanation": "The lower barrier contributes exp(ln 10)=10, cancelling the prefactor ratio 0.10."
+      },
+      {
+        "question": "To compare numerical Arrhenius prefactors meaningfully, first check:",
+        "options": [
+          "Only molecular colour",
+          "Compatible rate-constant definitions and units",
+          "That activation energies are zero",
+          "That every reaction is elementary"
+        ],
+        "answer": 1,
+        "explanation": "Prefactors have the units of their rate constants; unlike definitions or units invalidate a direct numerical comparison."
+      },
+      {
+        "question": "For the supplied equal-k sequence A→B→C, B peaks at t=1/k. If k=0.100 min−1, peak time is:",
+        "options": [
+          "0.100 min",
+          "1.00 min",
+          "10.0 min",
+          "100 min"
+        ],
+        "answer": 2,
+        "explanation": "Substitute into the stated supporting model: 1/(0.100 per minute)=10.0 minutes."
+      },
+      {
+        "question": "At that sequential-model maximum, B/A0 equals:",
+        "options": [
+          "1",
+          "1/2",
+          "1−2/e",
+          "1/e"
+        ],
+        "answer": 3,
+        "explanation": "With kt=1, the supplied fraction kt exp(−kt) becomes exp(−1)=1/e, about 0.368."
+      }
+    ],
+    "sources": [
+      {
+        "title": "OpenStax: integrated rate laws",
+        "url": "https://openstax.org/books/chemistry-2e/pages/12-4-integrated-rate-laws"
+      },
+      {
+        "title": "OpenStax: collision theory and Arrhenius equation",
+        "url": "https://openstax.org/books/chemistry-2e/pages/12-5-collision-theory"
+      }
+    ]
+  },
+  "coordination-compounds": {
+    "base": 14,
+    "quizBase": 26,
+    "chapters": [
+      {
+        "title": "Compare d5 spin states with pairing included",
+        "formula": "Octahedral d⁵: ELS−EHS = −2Δo+2P in the stated model",
+        "script": "A crystal field contribution alone is not the total cost of changing spin state. For an octahedral d five ion in the elementary model, high spin places three electrons in the lower set and two in the upper set, all unpaired. Its crystal field contribution is zero, and it has no electron pairs. Low spin places all five electrons in the lower set, giving two pairs and one unpaired electron. Its crystal field contribution is minus two times the octahedral splitting. If each additional pair costs P, the low spin energy relative to high spin is minus two delta plus two P. With supplied splitting eighteen thousand reciprocal centimetres and pairing cost twenty thousand in the same units, the difference is plus four thousand. High spin is favoured by this limited comparison. The low spin field term is negative, yet its extra pairing cost is larger. Spin only moments are approximately five point nine two and one point seven three Bohr magnetons respectively. Real spin energetics require more detailed interactions than this simplified accounting.",
+        "points": [
+          "High-spin d⁵ · t₂g³eg²; 0 pairs; 5 unpaired · Field contribution 0",
+          "Low-spin d⁵ · t₂g⁵; 2 pairs; 1 unpaired · Field contribution −2Δo",
+          "Δo=18000; P=20000 cm⁻¹ · ELS−EHS=−36000+40000 · +4000 cm⁻¹; high spin favoured"
+        ],
+        "board": {
+          "heading": "Compare d5 spin states with pairing included",
+          "columns": [
+            "Given / model",
+            "Calculation / reason",
+            "Result / limit"
+          ],
+          "rows": [
+            [
+              "High-spin d⁵",
+              "t₂g³eg²; 0 pairs; 5 unpaired",
+              "Field contribution 0"
+            ],
+            [
+              "Low-spin d⁵",
+              "t₂g⁵; 2 pairs; 1 unpaired",
+              "Field contribution −2Δo"
+            ],
+            [
+              "Δo=18000; P=20000 cm⁻¹",
+              "ELS−EHS=−36000+40000",
+              "+4000 cm⁻¹; high spin favoured"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Convert an absorption band into a splitting estimate",
+        "formula": "Δ = hc/λ; molar energy = NAhc/λ",
+        "script": "An absorption wavelength can estimate a level separation when the transition assignment is supplied. In a simplified octahedral d one example, suppose the band maximum at six hundred nanometres represents the lower to upper d level splitting. Use the supplied molar constant N A h c equal to zero point one one nine six two six joule metre per mole. Dividing by six hundred times ten to the minus nine metre gives about one hundred ninety nine point four kilojoules per mole. A second assigned band at five hundred nanometres corresponds to about two hundred thirty nine point three kilojoules per mole, a larger splitting. Shorter wavelength means higher photon energy. Do not confuse energy per photon with energy per mole of absorbed photons. Nor does an absorption maximum directly name the observed solution colour: the transmitted or reflected spectrum depends on which wavelengths are removed and on the full band shape. Other complexes may have multiple d transitions or charge transfer bands, so the assignment of a measured maximum to one splitting must be justified rather than assumed universally.",
+        "points": [
+          "Supplied NAhc=0.119626 J m/mol · λ=600×10⁻⁹ m · Δ≈199.4 kJ/mol",
+          "Assigned comparison at 500 nm · 0.119626/(500×10⁻⁹) · Δ≈239.3 kJ/mol",
+          "Shorter wavelength · Higher photon energy · Band assignment is a model input"
+        ],
+        "board": {
+          "heading": "Convert an absorption band into a splitting estimate",
+          "columns": [
+            "Given / model",
+            "Calculation / reason",
+            "Result / limit"
+          ],
+          "rows": [
+            [
+              "Supplied NAhc=0.119626 J m/mol",
+              "λ=600×10⁻⁹ m",
+              "Δ≈199.4 kJ/mol"
+            ],
+            [
+              "Assigned comparison at 500 nm",
+              "0.119626/(500×10⁻⁹)",
+              "Δ≈239.3 kJ/mol"
+            ],
+            [
+              "Shorter wavelength",
+              "Higher photon energy",
+              "Band assignment is a model input"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Ligand concentration can offset a formation constant",
+        "formula": "[ML₂]/[MX₂] = (βL/βX)([L]/[X])² in the supplied dilute model",
+        "script": "A larger formation constant does not alone fix which complex dominates when free ligand concentrations differ. Consider a supplied dilute solution model with one metal ion and two competing neutral monodentate ligands, L and X. The complexes are M L two and M X two, with overall formation constants one hundred million and one million respectively, using consistent concentration conventions. Free ligand concentrations are zero point zero zero one zero zero molar L and zero point zero one zero zero molar X. Dividing the two formation expressions cancels the same free metal concentration. The complex ratio is one hundred times the square of one tenth, which equals one. Thus the two complex concentrations are equal under these specified free ligand conditions. The larger L formation constant is exactly offset by its lower free concentration in this example. Total ligand added is not automatically equal to free ligand concentration, because binding and other equilibria can consume it. The model omits mixed ligand complexes, protonation, hydrolysis and precipitation. Full speciation requires those extra balances when they are relevant.",
+        "points": [
+          "βL=10⁸; βX=10⁶ · Free [L]=0.00100; [X]=0.0100 M · Matched two-ligand complexes",
+          "Divide formation expressions · 100×(0.00100/0.0100)² · [ML₂]/[MX₂]=1.00",
+          "Free is not total · Ligand binding changes availability · Other species omitted by model"
+        ],
+        "board": {
+          "heading": "Ligand concentration can offset a formation constant",
+          "columns": [
+            "Given / model",
+            "Calculation / reason",
+            "Result / limit"
+          ],
+          "rows": [
+            [
+              "βL=10⁸; βX=10⁶",
+              "Free [L]=0.00100; [X]=0.0100 M",
+              "Matched two-ligand complexes"
+            ],
+            [
+              "Divide formation expressions",
+              "100×(0.00100/0.0100)²",
+              "[ML₂]/[MX₂]=1.00"
+            ],
+            [
+              "Free is not total",
+              "Ligand binding changes availability",
+              "Other species omitted by model"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Chelation can be favoured despite positive enthalpy",
+        "formula": "ΔrG°=ΔrH°−TΔrS°; chelate stability needs the whole balance",
+        "script": "Chelation often benefits from entropy, but its thermodynamic preference must be evaluated for a specified balanced reaction. Consider an illustrative ligand exchange with supplied standard reaction enthalpy plus six point zero zero kilojoules per mole and standard reaction entropy plus forty point zero joules per mole kelvin. At three hundred kelvin, the entropy term is twelve point zero kilojoules per mole. Standard reaction Gibbs energy is therefore minus six point zero zero kilojoules per mole, despite the positive enthalpy. With R equal to eight point three one four joules per mole kelvin, the dimensionless equilibrium constant is exponential six thousand divided by eight point three one four times three hundred, about eleven point one. This example shows how the entropy term can outweigh an enthalpy cost. It does not claim that every chelate exchange has these signs or that counting liberated molecules alone supplies a numerical entropy. Solvation, ligand structure and standard states also matter. Keep reaction stoichiometry and the stated temperature attached to each thermodynamic quantity before making a stability comparison.",
+        "points": [
+          "Supplied exchange data · ΔH°=+6.00 kJ/mol; ΔS°=+40.0 J/mol/K · Illustrative balanced-reaction data",
+          "At 300 K · ΔG°=6.00−300×0.0400 · −6.00 kJ/mol",
+          "Dimensionless equilibrium constant · K=exp[6000/(8.314×300)] · About 11.1; not universal chelation data"
+        ],
+        "board": {
+          "heading": "Chelation can be favoured despite positive enthalpy",
+          "columns": [
+            "Given / model",
+            "Calculation / reason",
+            "Result / limit"
+          ],
+          "rows": [
+            [
+              "Supplied exchange data",
+              "ΔH°=+6.00 kJ/mol; ΔS°=+40.0 J/mol/K",
+              "Illustrative balanced-reaction data"
+            ],
+            [
+              "At 300 K",
+              "ΔG°=6.00−300×0.0400",
+              "−6.00 kJ/mol"
+            ],
+            [
+              "Dimensionless equilibrium constant",
+              "K=exp[6000/(8.314×300)]",
+              "About 11.1; not universal chelation data"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "High-spin octahedral d5 in the elementary model has how many unpaired electrons?",
+        "options": [
+          "Three",
+          "Five",
+          "One",
+          "Zero"
+        ],
+        "answer": 1,
+        "explanation": "The high-spin arrangement t2g3 eg2 occupies all five d orbitals singly."
+      },
+      {
+        "question": "For d5 with Δo=18000 and pairing cost P=20000 cm−1, ELS−EHS=−2Δo+2P is:",
+        "options": [
+          "−4000 cm−1",
+          "−36000 cm−1",
+          "+4000 cm−1",
+          "0 cm−1"
+        ],
+        "answer": 2,
+        "explanation": "The low-spin field advantage is −36000 but two extra pairs cost +40000, giving +4000 cm−1."
+      },
+      {
+        "question": "Using NAhc=0.119626 J m/mol, an assigned 600 nm splitting corresponds approximately to:",
+        "options": [
+          "0.1994 kJ/mol",
+          "119.6 kJ/mol",
+          "600 kJ/mol",
+          "199.4 kJ/mol"
+        ],
+        "answer": 3,
+        "explanation": "Convert 600 nm to 600×10−9 m, divide the supplied molar constant by that length, and convert J to kJ."
+      },
+      {
+        "question": "For otherwise comparable assigned bands at 500 and 600 nm, the larger splitting belongs to:",
+        "options": [
+          "500 nm",
+          "600 nm",
+          "Both must be equal",
+          "Whichever sample looks darker"
+        ],
+        "answer": 0,
+        "explanation": "Photon energy varies as inverse wavelength; 500 nm corresponds to the higher energy separation."
+      },
+      {
+        "question": "For ML2/MX2, βL/βX=100 and free [L]/[X]=0.10. Complex concentration ratio is:",
+        "options": [
+          "100",
+          "1.00",
+          "0.10",
+          "10.0"
+        ],
+        "answer": 1,
+        "explanation": "The ligand ratio is squared for these two-ligand complexes: 100×0.10²=1.00."
+      },
+      {
+        "question": "The ligand concentrations in that ratio formula must be:",
+        "options": [
+          "Always total amounts added",
+          "Always equal to metal concentration",
+          "Free ligand concentrations under the stated model",
+          "Ignored when formation constants are known"
+        ],
+        "answer": 2,
+        "explanation": "Formation expressions use available free ligand; bound ligand is not automatically part of that concentration."
+      },
+      {
+        "question": "A supplied exchange has ΔH°=+6.00 kJ/mol and ΔS°=+40.0 J/mol/K. At 300 K, ΔG° is:",
+        "options": [
+          "+18.0 kJ/mol",
+          "+6.00 kJ/mol",
+          "0 kJ/mol",
+          "−6.00 kJ/mol"
+        ],
+        "answer": 3,
+        "explanation": "Convert entropy to 0.0400 kJ/mol/K, then compute 6.00−300×0.0400=−6.00 kJ/mol."
+      },
+      {
+        "question": "For that exchange with ΔG°=−6000 J/mol, R=8.314 J/mol/K and T=300 K, K is approximately:",
+        "options": [
+          "11.1",
+          "0.0902",
+          "6000",
+          "1.00"
+        ],
+        "answer": 0,
+        "explanation": "Use the dimensionless thermodynamic relation K=exp(−ΔG°/RT)=exp[6000/(8.314×300)]≈11.1."
+      }
+    ],
+    "sources": [
+      {
+        "title": "OpenStax: spectroscopic and magnetic properties",
+        "url": "https://openstax.org/books/chemistry-2e/pages/19-3-spectroscopic-and-magnetic-properties-of-coordination-compounds"
+      },
+      {
+        "title": "OpenStax: coordination chemistry",
+        "url": "https://openstax.org/books/chemistry-2e/pages/19-2-coordination-chemistry-of-transition-metals"
+      },
+      {
+        "title": "OpenStax: free energy",
+        "url": "https://openstax.org/books/chemistry-2e/pages/16-4-free-energy"
+      }
+    ]
+  }
+} as const;

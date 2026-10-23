@@ -1,3 +1,5 @@
+import { kineticsCoordinationMeasurementAdditions } from "./kinetics-coordination-measurement-additions";
+import KineticBaselineDiagram from "./kinetic-baseline-diagram";
 import { kineticsCoordinationEquilibriumAdditions as extra } from "./kinetics-coordination-equilibrium-additions";
 import D3FieldDiagram from "./d3-field-diagram";
 import { kineticsCoordinationAdditions } from "./kinetics-coordination-additions";
@@ -6,7 +8,8 @@ import styles from "./lecture.module.css";
 const recordings=kineticsCoordinationAdditions;
 export default function KineticsCoordinationDiagram({lesson,chapter}:{lesson:keyof typeof recordings;chapter:number}) {
  if (lesson === "coordination-compounds" && chapter === 12) return <D3FieldDiagram />;
- const board=chapter >= 10 ? extra[lesson].chapters[chapter - 10].board : recordings[lesson].chapters[chapter - 5].board;
+ if(lesson === "chemical-kinetics" && chapter === 14)return <KineticBaselineDiagram/>;
+ const board=chapter >= 14 ? kineticsCoordinationMeasurementAdditions[lesson].chapters[chapter - 14].board : chapter >= 10 ? extra[lesson].chapters[chapter - 10].board : recordings[lesson].chapters[chapter - 5].board;
  if (lesson === "coordination-compounds" && chapter === 6) return <svg className={styles.diagram} viewBox="0 0 460 340" role="img" aria-label="Octahedral fac and mer: opposite ends of one axis are trans">
   <title>Octahedral fac and mer: labelled positions</title><rect width="460" height="340" rx="12" fill="#f5faf7" />
   <g fontFamily="Arial, sans-serif" fill="#20483e" textAnchor="middle">

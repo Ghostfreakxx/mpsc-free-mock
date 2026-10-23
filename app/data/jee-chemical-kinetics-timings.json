@@ -1,5 +1,5 @@
 {
-  "duration": 1159.9680000000315,
+  "duration": 1436.1600000000387,
   "chapters": [
     {
       "start": 0,
@@ -56,6 +56,22 @@
     {
       "start": 1086.4080000000295,
       "end": 1159.9680000000315
+    },
+    {
+      "start": 1159.9680000000315,
+      "end": 1231.0800000000334
+    },
+    {
+      "start": 1231.0800000000334,
+      "end": 1297.200000000035
+    },
+    {
+      "start": 1297.200000000035,
+      "end": 1363.5600000000368
+    },
+    {
+      "start": 1363.5600000000368,
+      "end": 1436.1600000000387
     }
   ],
   "cues": [
@@ -2266,6 +2282,498 @@
       "end": 1159.16800213626,
       "text": "adding constants blindly is not a general rule for reaction networks.",
       "chapter": 13
+    },
+    {
+      "start": 1159.9680000000315,
+      "end": 1163.8736412134729,
+      "text": "A measured signal can track concentration without being equal to",
+      "chapter": 14
+    },
+    {
+      "start": 1163.8736412134729,
+      "end": 1164.7280002289133,
+      "text": "concentration.",
+      "chapter": 14
+    },
+    {
+      "start": 1165.9280000381784,
+      "end": 1170.2518460849196,
+      "text": "Suppose a first order disappearance is monitored by a calibrated signal S",
+      "chapter": 14
+    },
+    {
+      "start": 1170.2518460849196,
+      "end": 1170.5479999237375,
+      "text": "equal",
+      "chapter": 14
+    },
+    {
+      "start": 1170.5479999237375,
+      "end": 1175.1480003052072,
+      "text": "to a constant baseline plus a constant factor times reactant concentration.",
+      "chapter": 14
+    },
+    {
+      "start": 1176.2280002289133,
+      "end": 1181.8180003815012,
+      "text": "The baseline is zero point one zero zero, the initial signal zero point nine",
+      "chapter": 14
+    },
+    {
+      "start": 1181.8180003815012,
+      "end": 1186.828000610383,
+      "text": "zero zero, and the signal after ten minutes zero point five zero zero.",
+      "chapter": 14
+    },
+    {
+      "start": 1186.828000610383,
+      "end": 1191.7703077158142,
+      "text": "Subtracting the baseline gives an initial excess zero point eight zero zero",
+      "chapter": 14
+    },
+    {
+      "start": 1191.7703077158142,
+      "end": 1191.9680000000315,
+      "text": "and",
+      "chapter": 14
+    },
+    {
+      "start": 1191.9680000000315,
+      "end": 1195.427999084504,
+      "text": "a later excess zero point four zero zero.",
+      "chapter": 14
+    },
+    {
+      "start": 1195.427999084504,
+      "end": 1199.8680015259104,
+      "text": "The concentration fraction remaining is one half, so the rate constant is",
+      "chapter": 14
+    },
+    {
+      "start": 1199.8680015259104,
+      "end": 1205.041075808043,
+      "text": "natural logarithm two divided by ten, or zero point zero six nine three one",
+      "chapter": 14
+    },
+    {
+      "start": 1205.041075808043,
+      "end": 1205.2479987793283,
+      "text": "per",
+      "chapter": 14
+    },
+    {
+      "start": 1205.2479987793283,
+      "end": 1205.4680000000315,
+      "text": "minute.",
+      "chapter": 14
+    },
+    {
+      "start": 1206.5080009155588,
+      "end": 1210.5480018310861,
+      "text": "Using the raw ratio zero point five divided by zero point nine would be",
+      "chapter": 14
+    },
+    {
+      "start": 1210.5480018310861,
+      "end": 1210.9479995422678,
+      "text": "incorrect.",
+      "chapter": 14
+    },
+    {
+      "start": 1211.3680015259104,
+      "end": 1216.2080016784982,
+      "text": "This analysis assumes a linear calibration, a constant response factor and an",
+      "chapter": 14
+    },
+    {
+      "start": 1216.2080016784982,
+      "end": 1219.328000610383,
+      "text": "endpoint signal that represents complete reactant disappearance.",
+      "chapter": 14
+    },
+    {
+      "start": 1220.267999237092,
+      "end": 1223.8480010681467,
+      "text": "Other absorbing species or instrumental drift require their own model.",
+      "chapter": 14
+    },
+    {
+      "start": 1224.5679984741525,
+      "end": 1228.6280036621408,
+      "text": "A fitted first order constant describes the observed kinetic law, not",
+      "chapter": 14
+    },
+    {
+      "start": 1228.6280036621408,
+      "end": 1230.2479987793283,
+      "text": "necessarily an elementary step.",
+      "chapter": 14
+    },
+    {
+      "start": 1231.0800000000334,
+      "end": 1235.3400002289152,
+      "text": "A reaction experiencing two temperature stages cannot generally use a simple",
+      "chapter": 15
+    },
+    {
+      "start": 1235.3400002289152,
+      "end": 1236.9800000954008,
+      "text": "arithmetic average of rate constants.",
+      "chapter": 15
+    },
+    {
+      "start": 1238.0800000000334,
+      "end": 1241.8400002289152,
+      "text": "Consider a first order disappearance in a fixed volume with no material added",
+      "chapter": 15
+    },
+    {
+      "start": 1241.8400002289152,
+      "end": 1242.3999996948576,
+      "text": "or removed.",
+      "chapter": 15
+    },
+    {
+      "start": 1243.3000002670622,
+      "end": 1247.0199995804167,
+      "text": "During the first ten minutes, the supplied rate constant is natural logarithm",
+      "chapter": 15
+    },
+    {
+      "start": 1247.3400002289152,
+      "end": 1249.100000457797,
+      "text": "two divided by ten per minute.",
+      "chapter": 15
+    },
+    {
+      "start": 1250.020000534091,
+      "end": 1251.5599995422697,
+      "text": "Half of the initial reactant remains.",
+      "chapter": 15
+    },
+    {
+      "start": 1252.379999237094,
+      "end": 1256.100000457797,
+      "text": "During the next five minutes at a different temperature, the rate constant is",
+      "chapter": 15
+    },
+    {
+      "start": 1256.3999996948576,
+      "end": 1258.7999993133878,
+      "text": "natural logarithm two divided by five per minute.",
+      "chapter": 15
+    },
+    {
+      "start": 1259.4200001526212,
+      "end": 1263.3599987793302,
+      "text": "This stage removes half of what remains, leaving one quarter of the initial",
+      "chapter": 15
+    },
+    {
+      "start": 1263.3599987793302,
+      "end": 1264.5199986267423,
+      "text": "amount overall.",
+      "chapter": 15
+    },
+    {
+      "start": 1265.2800007629728,
+      "end": 1269.0599995422697,
+      "text": "Each segment contributes its own dimensionless exposure, k times time.",
+      "chapter": 15
+    },
+    {
+      "start": 1269.6799984741544,
+      "end": 1272.4999981689787,
+      "text": "The total exposure is two natural logarithms of two.",
+      "chapter": 15
+    },
+    {
+      "start": 1273.1400013733244,
+      "end": 1276.7800007629728,
+      "text": "An effective constant for the whole fifteen minutes is this sum divided by",
+      "chapter": 15
+    },
+    {
+      "start": 1276.7800007629728,
+      "end": 1280.3599987793302,
+      "text": "fifteen, about zero point zero nine two four two per minute.",
+      "chapter": 15
+    },
+    {
+      "start": 1280.6400013733244,
+      "end": 1284.879999237094,
+      "text": "It is a time weighted summary for this schedule, not the rate constant at an",
+      "chapter": 15
+    },
+    {
+      "start": 1284.879999237094,
+      "end": 1285.2800007629728,
+      "text": "average temperature.",
+      "chapter": 15
+    },
+    {
+      "start": 1285.9200001526212,
+      "end": 1290.1200009155607,
+      "text": "This model treats temperature changes as instantaneous and ignores conversion",
+      "chapter": 15
+    },
+    {
+      "start": 1290.1200009155607,
+      "end": 1291.0800000000334,
+      "text": "during the transitions.",
+      "chapter": 15
+    },
+    {
+      "start": 1292.0199986267423,
+      "end": 1295.2799969482755,
+      "text": "Finite heating ramps instead require an integral of the temperature dependent",
+      "chapter": 15
+    },
+    {
+      "start": 1295.2799969482755,
+      "end": 1296.2199993896818,
+      "text": "constant over time.",
+      "chapter": 15
+    },
+    {
+      "start": 1297.200000000035,
+      "end": 1301.4399997711532,
+      "text": "Comparing activation energies alone is insufficient when Arrhenius prefactors",
+      "chapter": 16
+    },
+    {
+      "start": 1301.4399997711532,
+      "end": 1301.7999999046676,
+      "text": "differ.",
+      "chapter": 16
+    },
+    {
+      "start": 1302.7199999809616,
+      "end": 1305.4799997330063,
+      "text": "Use two supplied first order processes at three hundred kelvin.",
+      "chapter": 16
+    },
+    {
+      "start": 1306.580000114476,
+      "end": 1310.8400003433578,
+      "text": "Process X has a prefactor one tenth that of process Y, while its activation",
+      "chapter": 16
+    },
+    {
+      "start": 1310.8400003433578,
+      "end": 1314.9199993133896,
+      "text": "energy is lower by R T times natural logarithm ten at this temperature.",
+      "chapter": 16
+    },
+    {
+      "start": 1315.540000152623,
+      "end": 1320.1600004538861,
+      "text": "The energy advantage is about five point seven four kilojoules per mole using",
+      "chapter": 16
+    },
+    {
+      "start": 1320.1600004538861,
+      "end": 1320.2200004577987,
+      "text": "R",
+      "chapter": 16
+    },
+    {
+      "start": 1320.2200004577987,
+      "end": 1323.3200008392685,
+      "text": "equal to eight point three one four joules per mole kelvin.",
+      "chapter": 16
+    },
+    {
+      "start": 1323.3200008392685,
+      "end": 1328.2400009155624,
+      "text": "In the ratio of Arrhenius constants, the prefactor contributes zero point one",
+      "chapter": 16
+    },
+    {
+      "start": 1328.5600006103866,
+      "end": 1330.3399993896835,
+      "text": "and the exponential contributes ten.",
+      "chapter": 16
+    },
+    {
+      "start": 1331.0600006103866,
+      "end": 1334.4999992370956,
+      "text": "Their product is one, so the two rate constants are equal at three hundred",
+      "chapter": 16
+    },
+    {
+      "start": 1334.4999992370956,
+      "end": 1334.7999984741562,
+      "text": "kelvin.",
+      "chapter": 16
+    },
+    {
+      "start": 1335.7200004577987,
+      "end": 1339.4000007629745,
+      "text": "This equality need not hold at another temperature if the activation energies",
+      "chapter": 16
+    },
+    {
+      "start": 1339.4000007629745,
+      "end": 1340.9200012207382,
+      "text": "and prefactors remain fixed.",
+      "chapter": 16
+    },
+    {
+      "start": 1341.7800018310897,
+      "end": 1346.2800018310897,
+      "text": "A prefactor has the units of its own rate constant; numerical comparisons",
+      "chapter": 16
+    },
+    {
+      "start": 1346.2800018310897,
+      "end": 1348.7999984741562,
+      "text": "require compatible rate law definitions and units.",
+      "chapter": 16
+    },
+    {
+      "start": 1349.4400016785019,
+      "end": 1353.4000007629745,
+      "text": "The example does not infer an elementary mechanism or a universal compensation",
+      "chapter": 16
+    },
+    {
+      "start": 1353.4000007629745,
+      "end": 1354.2800018310897,
+      "text": "rule.",
+      "chapter": 16
+    },
+    {
+      "start": 1354.979998779332,
+      "end": 1357.8800003052108,
+      "text": "Separate the energy dependent exponential from collision frequency and",
+      "chapter": 16
+    },
+    {
+      "start": 1357.8800003052108,
+      "end": 1361.9200012207382,
+      "text": "orientation contributions before turning a barrier comparison into a numerical",
+      "chapter": 16
+    },
+    {
+      "start": 1361.9200012207382,
+      "end": 1362.6199981689804,
+      "text": "rate prediction.",
+      "chapter": 16
+    },
+    {
+      "start": 1363.5600000000368,
+      "end": 1368.4000001526247,
+      "text": "A sequential reaction can make an intermediate accumulate and then disappear.",
+      "chapter": 17
+    },
+    {
+      "start": 1369.3200002289186,
+      "end": 1373.339999733008,
+      "text": "This is a supporting application of first order laws, not an additional",
+      "chapter": 17
+    },
+    {
+      "start": 1373.339999733008,
+      "end": 1375.1799998855959,
+      "text": "required integrated order formula.",
+      "chapter": 17
+    },
+    {
+      "start": 1376.379999694861,
+      "end": 1382.379999694861,
+      "text": "Consider the ideal sequence A forming B, followed by B forming C, with both",
+      "chapter": 17
+    },
+    {
+      "start": 1382.379999694861,
+      "end": 1386.3200002289186,
+      "text": "irreversible steps having the same constant k in a fixed volume.",
+      "chapter": 17
+    },
+    {
+      "start": 1387.3200002289186,
+      "end": 1391.539999542273,
+      "text": "Initially only A is present, and each step has one to one stoichiometry.",
+      "chapter": 17
+    },
+    {
+      "start": 1392.2799993133913,
+      "end": 1397.8000016785036,
+      "text": "Use the supplied result: the fraction present as B is k t times exponential",
+      "chapter": 17
+    },
+    {
+      "start": 1398.1400018310915,
+      "end": 1399.1799989319215,
+      "text": "minus k t.",
+      "chapter": 17
+    },
+    {
+      "start": 1400.0800004578005,
+      "end": 1404.719999847449,
+      "text": "At time one divided by k, that fraction reaches its maximum, one divided by e,",
+      "chapter": 17
+    },
+    {
+      "start": 1405.1999993896852,
+      "end": 1407.4600015259157,
+      "text": "about zero point three six eight.",
+      "chapter": 17
+    },
+    {
+      "start": 1407.4600015259157,
+      "end": 1412.219999847449,
+      "text": "At that instant A also has fraction one divided by e, and C has fraction one",
+      "chapter": 17
+    },
+    {
+      "start": 1412.219999847449,
+      "end": 1415.5800004578005,
+      "text": "minus two divided by e, about zero point two six four.",
+      "chapter": 17
+    },
+    {
+      "start": 1415.5800004578005,
+      "end": 1417.5199990845094,
+      "text": "The three fractions sum to one.",
+      "chapter": 17
+    },
+    {
+      "start": 1418.1000009155641,
+      "end": 1422.4000001526247,
+      "text": "If k is zero point one zero zero per minute, the intermediate peaks at ten",
+      "chapter": 17
+    },
+    {
+      "start": 1422.4000001526247,
+      "end": 1422.7400003052126,
+      "text": "minutes.",
+      "chapter": 17
+    },
+    {
+      "start": 1423.8000016785036,
+      "end": 1428.000002441443,
+      "text": "Unequal rate constants, reverse reactions or material removal change these",
+      "chapter": 17
+    },
+    {
+      "start": 1428.000002441443,
+      "end": 1428.4200006103883,
+      "text": "expressions.",
+      "chapter": 17
+    },
+    {
+      "start": 1429.259996948279,
+      "end": 1432.5600000000368,
+      "text": "A falling intermediate concentration does not mean its formation has stopped;",
+      "chapter": 17
+    },
+    {
+      "start": 1433.2200036621462,
+      "end": 1436.000002441443,
+      "text": "it means its consumption rate exceeds its formation rate.",
+      "chapter": 17
     }
   ]
 }
