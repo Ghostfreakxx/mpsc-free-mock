@@ -19,8 +19,8 @@ Questions are original practice, not represented as official PYQs.
 | 1 | [Mole Concept](/jee/classes/mole-concept) | 17 | 14 | 9 | 24 / 24 |
 | 2 | [Atomic Structure](/jee/classes/atomic-structure) | 17 | 14 | 9 | 26 / 26 |
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 17 | 16 | 9 | 26 / 26 |
-| 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 15 | 17 | 9 | 18 / 18 |
-| 5 | [Solutions](/jee/classes/solutions) | 15 | 17 | 9 | 18 / 18 |
+| 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 19 | 21 | 12 | 26 / 26 |
+| 5 | [Solutions](/jee/classes/solutions) | 19 | 21 | 12 | 26 / 26 |
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 17 | 17 | 13 | 26 / 26 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 14 | 15 | 10 | 18 / 18 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 14 | 17 | 13 | 26 / 26 |
@@ -39,13 +39,11 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Mole Concept adds carbonate back titration, iron-oxide mixture balances, isotope pair probabilities and binary hydrocarbon combustion balances. The isotope grid distinguishes atomic abundance from molecular fractions.
+Chemical Thermodynamics adds reaction extent and extensive heat, reversible phase-change entropy, entropy generation between fixed-temperature reservoirs, and actual versus standard reaction Gibbs energy. The reservoir diagram separates energy conservation from entropy generation.
 
-Purification and Analysis adds sulfur and phosphorus gravimetry, oxygen by difference with explicit validity limits, and ideal immiscible steam-distillation pressure and mass ratios.
+Solutions adds hydration-water solvent accounting, inference of density from consistent molarity/molality data, a boiling/freezing cross-check, and inverse ideal liquid–vapour composition. Model assumptions remain explicit.
 
-D/F-Block adds a supplied uranium electron-removal model, a chromium/manganese redox-potential comparison, iron-carbide mass balances and chromium-oxide acid/base equations. Formal oxidation states and supplied models retain their limitations.
-
-Together this batch adds twelve narrated chapters, twenty-four original MCQs and nine worked examples, with matched written companions and recorded practice.
+Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
 ## Remaining scope
 
@@ -59,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific primary references, including OpenStax stoichiometry, isotopes, quantitative analysis and electrochemistry, together with NCERT transition-element material. Numerical data and MCQs in this batch are original practice.
+The notes contain lesson-specific primary references, including OpenStax enthalpy, entropy, Gibbs energy, concentration and colligative properties. Numerical data and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

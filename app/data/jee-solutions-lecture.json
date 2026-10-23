@@ -431,6 +431,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Hydration water joins the solvent inventory",
+      "formula": "Hydrate dissolution: count solute formula units and released water separately",
+      "script": "A crystalline hydrate contains water that can become part of the solvent after complete dissolution. Consider a supplied ideal model: two hundred fifty grams of a hydrate with molar mass two hundred fifty grams per mole contains five waters of crystallization per formula unit. Each water has molar mass eighteen. The sample therefore contains one mole of anhydrous salt formula units and ninety grams hydration water. Dissolve it in nine hundred ten grams added water. The final solvent water mass is one thousand grams, so the formal salt molality is one point zero zero mole per kilogram. Dividing by the added water alone would give an incorrect denominator for this model. If that salt then dissociates ideally into two ions per formula unit, the ideal solute-particle molality is two point zero zero moles per kilogram. Do not count hydration water as extra solute particles after it has joined the solvent. This is a stated complete-dissolution model without hydrolysis, retained bound complexes or other reactions; actual hydration and activities may require a more detailed description.",
+      "points": [
+        "250 g hydrate; M=250 · One mole salt; 5×18 g water · 90 g hydration water",
+        "Added water 910 g · 910+90=1000 g solvent · Formal molality 1.00 mol/kg",
+        "If ideal two-ion dissociation · i=2; particle molality=i m · 2.00 mol particles/kg"
+      ],
+      "board": {
+        "heading": "Hydration water joins the solvent inventory",
+        "columns": [
+          "Given / model",
+          "Calculation / reason",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "250 g hydrate; M=250",
+            "One mole salt; 5×18 g water",
+            "90 g hydration water"
+          ],
+          [
+            "Added water 910 g",
+            "910+90=1000 g solvent",
+            "Formal molality 1.00 mol/kg"
+          ],
+          [
+            "If ideal two-ion dissociation",
+            "i=2; particle molality=i m",
+            "2.00 mol particles/kg"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Molarity and molality can determine density",
+      "formula": "ρ = c(1000/m + M)/1000 in g/mL",
+      "script": "Concentration conversions can be reversed to infer a solution density when consistent data are supplied. Suppose a solution has molarity two point zero zero moles per litre and molality two point five zero moles per kilogram, for a solute with molar mass sixty point zero grams per mole. Choose one litre of solution. It contains two moles solute with mass one hundred twenty grams. Molality gives solvent mass two divided by two point five zero, or zero point eight zero zero kilogram. Total solution mass is therefore nine hundred twenty grams in one thousand millilitres, giving density zero point nine two zero gram per millilitre. The two concentrations refer to the same sample and temperature. Molarity uses solution volume, while molality uses solvent mass, so they cannot be equated just because both count moles. The inferred density is a consistency result for supplied data, not a universal density for that solute. Temperature can change volume and molarity even when composition and molality remain unchanged in a closed sample.",
+      "points": [
+        "One litre at c=2.00 mol/L · Solute mass=2×60 · 120 g solute",
+        "Molality m=2.50 mol/kg · Solvent mass=2/2.50 · 800 g solvent",
+        "Total mass / volume · 920 g / 1000 mL · ρ=0.920 g/mL"
+      ],
+      "board": {
+        "heading": "Molarity and molality can determine density",
+        "columns": [
+          "Given / model",
+          "Calculation / reason",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "One litre at c=2.00 mol/L",
+            "Solute mass=2×60",
+            "120 g solute"
+          ],
+          [
+            "Molality m=2.50 mol/kg",
+            "Solvent mass=2/2.50",
+            "800 g solvent"
+          ],
+          [
+            "Total mass / volume",
+            "920 g / 1000 mL",
+            "ρ=0.920 g/mL"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Two colligative measurements cross-check one model",
+      "formula": "For the same ideal dilute sample: ΔTᵦ/ΔT𝒻 = Kᵦ/K𝒻",
+      "script": "Two colligative measurements on the same solution can check whether a single ideal particle-count model is internally consistent. Use a supplied solvent with boiling elevation constant zero point five two zero and freezing depression constant one point eight six kelvin kilogram per mole. An ideal dilute solution shows boiling elevation zero point two six zero kelvin. The effective particle molality is therefore zero point five zero zero mole per kilogram. The same particle inventory predicts freezing depression zero point nine three zero kelvin. Dividing the two shifts cancels both the formal molality and van't Hoff factor. This cancellation does not by itself reveal the solute molar mass or its dissociation fraction: additional composition information is required. A mismatch may indicate measurement error, different samples, concentration-dependent association, nonideality or an inappropriate approximation. The solute must satisfy the conditions of both dilute-solution relations, including negligible volatility for the boiling-elevation model. Treat both shifts as positive magnitudes relative to the pure solvent, and distinguish a cross-check from an independent molecular identification.",
+      "points": [
+        "Kb=0.520; ΔTb=0.260 K · i m=0.260/0.520 · 0.500 mol particles/kg",
+        "Kf=1.86 · ΔTf=1.86×0.500 · 0.930 K",
+        "Same dilute particle model · ΔTb/ΔTf=Kb/Kf · Does not identify i and m separately"
+      ],
+      "board": {
+        "heading": "Two colligative measurements cross-check one model",
+        "columns": [
+          "Given / model",
+          "Calculation / reason",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Kb=0.520; ΔTb=0.260 K",
+            "i m=0.260/0.520",
+            "0.500 mol particles/kg"
+          ],
+          [
+            "Kf=1.86",
+            "ΔTf=1.86×0.500",
+            "0.930 K"
+          ],
+          [
+            "Same dilute particle model",
+            "ΔTb/ΔTf=Kb/Kf",
+            "Does not identify i and m separately"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A vapour sample can reveal the ideal liquid composition",
+      "formula": "yA = xA pA°/[xA pA°+(1−xA)pB°]",
+      "script": "Raoult's law can be solved backward from a vapour composition when the liquid mixture is ideal and both components are volatile. Suppose the pure-component vapour pressures at one temperature are eighty kilopascals for A and forty for B. The equilibrium vapour contains A with mole fraction zero point eight zero zero. Let x be the liquid mole fraction of A. Its partial pressure is eighty x, while B contributes forty times one minus x. Setting eighty x divided by forty plus forty x equal to zero point eight gives x equal to two thirds. The total pressure is then sixty six point six seven kilopascals. The vapour is enriched in the more volatile component A compared with the liquid. The vapour sample composition is not the overall composition of an arbitrary closed two-phase sample; a phase-fraction balance would also be required for that question. The inference assumes equilibrium at the same temperature, an ideal liquid and approximately ideal vapour behaviour. Nonideal mixtures require activities or other supplied equilibrium data instead of this direct expression.",
+      "points": [
+        "pA°=80; pB°=40 kPa · yA=0.800 · Ideal liquid and vapour model",
+        "Solve 80x/(40+40x)=0.800 · 80x=32+32x · Liquid xA=2/3",
+        "Total pressure · 80(2/3)+40(1/3) · 66.67 kPa; yA>xA"
+      ],
+      "board": {
+        "heading": "A vapour sample can reveal the ideal liquid composition",
+        "columns": [
+          "Given / model",
+          "Calculation / reason",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "pA°=80; pB°=40 kPa",
+            "yA=0.800",
+            "Ideal liquid and vapour model"
+          ],
+          [
+            "Solve 80x/(40+40x)=0.800",
+            "80x=32+32x",
+            "Liquid xA=2/3"
+          ],
+          [
+            "Total pressure",
+            "80(2/3)+40(1/3)",
+            "66.67 kPa; yA>xA"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -631,6 +771,94 @@
       ],
       "answer": 2,
       "explanation": "The measured point exceeds the matching Raoult reference. Azeotropy also requires matching equilibrium phase compositions, not just one pressure."
+    },
+    {
+      "question": "250 g hydrate of M=250 g/mol contains five waters per formula unit (water M=18). Hydration water mass is:",
+      "options": [
+        "18 g",
+        "90 g",
+        "160 g",
+        "250 g"
+      ],
+      "answer": 1,
+      "explanation": "There is one mole hydrate and five moles water, so the water contribution is 5×18=90 g."
+    },
+    {
+      "question": "That hydrate dissolves completely into 910 g added water. Formal salt molality is:",
+      "options": [
+        "1.10 mol/kg",
+        "0.910 mol/kg",
+        "1.00 mol/kg",
+        "2.00 mol/kg"
+      ],
+      "answer": 2,
+      "explanation": "Released hydration water joins the solvent: 910+90=1000 g, containing one mole salt formula units."
+    },
+    {
+      "question": "A 2.00 M solution is 2.50 mol/kg, with solute M=60 g/mol. Solvent mass per litre is:",
+      "options": [
+        "120 g",
+        "920 g",
+        "1000 g",
+        "800 g"
+      ],
+      "answer": 3,
+      "explanation": "Two moles per litre divided by 2.50 moles per kilogram gives 0.800 kg solvent."
+    },
+    {
+      "question": "For that same sample the density is:",
+      "options": [
+        "0.920 g/mL",
+        "1.120 g/mL",
+        "0.800 g/mL",
+        "2.50 g/mL"
+      ],
+      "answer": 0,
+      "explanation": "One litre contains 800 g solvent plus 120 g solute: 920 g in 1000 mL gives 0.920 g/mL."
+    },
+    {
+      "question": "Kb=0.520 K kg/mol and boiling elevation is 0.260 K. Effective particle molality is:",
+      "options": [
+        "0.135 mol/kg",
+        "0.500 mol/kg",
+        "2.00 mol/kg",
+        "0.260 mol/kg"
+      ],
+      "answer": 1,
+      "explanation": "Divide the observed elevation by Kb to obtain the product i m, here 0.500 mol/kg."
+    },
+    {
+      "question": "For the same ideal dilute sample with Kf=1.86 K kg/mol, predicted freezing depression is:",
+      "options": [
+        "0.260 K",
+        "1.86 K",
+        "0.930 K",
+        "3.72 K"
+      ],
+      "answer": 2,
+      "explanation": "The same particle molality is 0.500 mol/kg, giving 1.86×0.500=0.930 K."
+    },
+    {
+      "question": "Ideal volatile A/B has pA°=80 and pB°=40 kPa. Vapour yA=0.800 implies liquid xA:",
+      "options": [
+        "0.800",
+        "0.500",
+        "0.333",
+        "2/3"
+      ],
+      "answer": 3,
+      "explanation": "Solve 80x/[80x+40(1−x)]=0.800 to obtain 48x=32 and x=2/3."
+    },
+    {
+      "question": "Total equilibrium pressure for that ideal liquid is:",
+      "options": [
+        "66.67 kPa",
+        "80 kPa",
+        "40 kPa",
+        "120 kPa"
+      ],
+      "answer": 0,
+      "explanation": "Add the liquid-composition-weighted partial pressures: 80×2/3+40×1/3=66.67 kPa."
     }
   ]
 }

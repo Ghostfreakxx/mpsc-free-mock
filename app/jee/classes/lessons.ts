@@ -1143,7 +1143,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "chemical-thermodynamics", subject: "Chemistry", unit: 4, number: "C04", title: chemicalThermodynamics.title,
-    description: "Fifteen narrated chapters on energy signs, enthalpy cycles, calorimetry, entropy calculations, Gibbs energy and equilibrium.",
+    description: "Nineteen narrated chapters on energy signs, reaction extent, enthalpy cycles, calorimetry, phase-change and reservoir entropy, and actual versus standard Gibbs energy.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 4 foundation and worked applications with original practice. Full Born-Haber cycles, variable heat-capacity integrals and further mixed problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.chemical-thermodynamics.lecture.v1",
     audio: "/lectures/chemical-thermodynamics/narration-marin.mp3",
@@ -1153,7 +1153,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "solutions", subject: "Chemistry", unit: 5, number: "C05", title: solutions.title,
-    description: "Fifteen narrated chapters on concentration and density, Henry and Raoult laws, azeotropes, colligative calculations and particle factors.",
+    description: "Nineteen narrated chapters on concentration and density, hydration-water balances, Henry and Raoult laws, azeotropes, colligative cross-checks and liquid–vapour composition.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 5 foundation and worked applications with original practice. Detailed phase diagrams, quantitative nonideal activities and further mixed problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.solutions.lecture.v1",
     audio: "/lectures/solutions/narration-marin.mp3",

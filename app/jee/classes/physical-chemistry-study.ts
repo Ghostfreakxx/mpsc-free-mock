@@ -1,3 +1,4 @@
+import { extendThermoSolutionBalancesLesson } from "./thermo-solution-balances-study.ts";
 import { extendPBlockThermoSolutionsLesson } from "./p-block-thermo-solutions-study.ts";
 import type { StudyLesson } from "./course";
 import { physicalChemistryAdditions } from "./physical-chemistry-additions.ts";
@@ -9,7 +10,7 @@ export const physicalChemistryLessons: StudyLesson[] = [
     title: "Chemical thermodynamics: energy, direction and equilibrium",
     summary: "Heat and work signs, enthalpy, Hess cycles, entropy and Gibbs-energy calculations.",
     prerequisites: "Balanced equations, moles, temperature in kelvin and basic logarithms.",
-    remaining: "Unit 4 has a fifteen-chapter Marin recording and written notes, including formation data, a lattice/hydration cycle, calorimetry and reversible-reference entropy calculations. Full Born-Haber cycles, variable heat-capacity integrals and further mixed problems remain; this is not complete Unit 4 coverage.",
+    remaining: "Unit 4 has a nineteen-chapter Marin recording and written notes, including formation data, a lattice/hydration cycle, calorimetry and reversible-reference entropy calculations. Full Born-Haber cycles, variable heat-capacity integrals and further mixed problems remain; this is not complete Unit 4 coverage.",
     sections: [
       { title: "Define the system before following energy", paragraphs: [
         "Imagine a reaction in a flask. The chosen reacting contents are the system; everything else is its surroundings. An open system can exchange matter and energy, a closed system can exchange energy but not matter, and an isolated system exchanges neither with its surroundings.",
@@ -60,7 +61,7 @@ export const physicalChemistryLessons: StudyLesson[] = [
     title: "Solutions: concentration, vapour pressure and particle counting",
     summary: "Concentration units, Raoult's law, non-ideality, colligative effects and molar mass.",
     prerequisites: "Mole Concept, ratios, temperature in kelvin and basic gas equations.",
-    remaining: "Unit 5 has a fifteen-chapter Marin recording and written notes, including density conversions, Henry's law, azeotropes, boiling elevation and further dissociation practice. Detailed phase diagrams, quantitative nonideal activities and wider mixed problems remain; this is not complete solution chemistry.",
+    remaining: "Unit 5 has a nineteen-chapter Marin recording and written notes, including density conversions, Henry's law, azeotropes, boiling elevation and further dissociation practice. Detailed phase diagrams, quantitative nonideal activities and wider mixed problems remain; this is not complete solution chemistry.",
     sections: [
       { title: "The denominator is part of the definition", paragraphs: [
         "Molarity is solute moles per litre of solution, while molality is solute moles per kilogram of solvent. Dissolve one mole in enough liquid to make two litres of solution and molarity is 0.50 mol/L. Dissolve one mole in 0.50 kg solvent and molality is 2.0 mol/kg. These descriptions cannot be converted into one another without further mass or density information.",
@@ -134,3 +135,5 @@ for (const lesson of physicalChemistryLessons) {
 }
 
 for (const lesson of physicalChemistryLessons) extendPBlockThermoSolutionsLesson(lesson);
+
+for (const lesson of physicalChemistryLessons) extendThermoSolutionBalancesLesson(lesson);
