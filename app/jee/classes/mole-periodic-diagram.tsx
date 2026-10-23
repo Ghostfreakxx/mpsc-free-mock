@@ -2,9 +2,11 @@ import moleConcept from "../../data/jee-mole-concept-lecture.json";
 import periodicTrends from "../../data/jee-periodic-trends-lecture.json";
 import styles from "./lecture.module.css";
 import ElectronGainStepsDiagram from "./electron-gain-steps-diagram";
+import IsotopePairingDiagram from "./isotope-pairing-diagram";
 
 export default function MolePeriodicDiagram({lesson,chapter}:{lesson:"mole-concept"|"periodic-trends";chapter:number}) {
  if(lesson==="periodic-trends"&&chapter===15)return <ElectronGainStepsDiagram/>;
+ if(lesson==="mole-concept"&&chapter===15)return <IsotopePairingDiagram/>;
  const board=(lesson==="mole-concept"?moleConcept:periodicTrends).chapters[chapter].board;
  return <svg className={styles.diagram} viewBox="0 0 460 310" role="img" aria-label={board.heading}>
   <title>{board.heading}</title><rect width="460" height="310" rx="12" fill="#f5faf7" />

@@ -16,7 +16,7 @@ Questions are original practice, not represented as official PYQs.
 
 | Unit | Recorded class | Chapters | Written sections | Worked examples | Class MCQs / Written MCQs |
 | --- | --- | --- | --- | --- | --- |
-| 1 | [Mole Concept](/jee/classes/mole-concept) | 13 | 10 | 6 | 16 / 16 |
+| 1 | [Mole Concept](/jee/classes/mole-concept) | 17 | 14 | 9 | 24 / 24 |
 | 2 | [Atomic Structure](/jee/classes/atomic-structure) | 17 | 14 | 9 | 26 / 26 |
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 17 | 16 | 9 | 26 / 26 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 15 | 17 | 9 | 18 / 18 |
@@ -26,9 +26,9 @@ Questions are original practice, not represented as official PYQs.
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 14 | 17 | 13 | 26 / 26 |
 | 9 | [Periodic Trends](/jee/classes/periodic-trends) | 17 | 15 | 9 | 24 / 24 |
 | 10 | [P-Block](/jee/classes/p-block) | 15 | 13 | 6 | 18 / 18 |
-| 11 | [D/F-Block](/jee/classes/d-f-block) | 15 | 13 | 6 | 18 / 18 |
+| 11 | [D/F-Block](/jee/classes/d-f-block) | 19 | 17 | 9 | 26 / 26 |
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 14 | 17 | 13 | 26 / 26 |
-| 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 13 | 13 | 6 | 16 / 16 |
+| 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 17 | 17 | 9 | 24 / 24 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 13 | 16 | 11 | 20 / 20 |
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 17 | 17 | 9 | 24 / 24 |
 | 16 | [Organic Halogens](/jee/classes/organic-halogens) | 17 | 17 | 9 | 24 / 24 |
@@ -39,27 +39,27 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Hydrocarbons adds formula-versus-hydrogen-uptake evidence, acetylide carbon coupling, ideal addition-polymer repeat counts and the combined directing preferences of two substituents. Product counts and ideal chain calculations retain explicit limits.
+Mole Concept adds carbonate back titration, iron-oxide mixture balances, isotope pair probabilities and binary hydrocarbon combustion balances. The isotope grid distinguishes atomic abundance from molecular fractions.
 
-Atomic Structure adds one-electron shell degeneracy, density versus the 1s radial probability distribution, excited-versus-forbidden configurations and spectral identification of a one-electron ion. The radial diagram plots its stated analytic functions; it does not depict a fixed electron orbit.
+Purification and Analysis adds sulfur and phosphorus gravimetry, oxygen by difference with explicit validity limits, and ideal immiscible steam-distillation pressure and mass ratios.
 
-Chemical Bonding adds a divalent MgCl2 lattice cycle, nitrite/nitronium electron and domain counts, a supplied average-bond-energy hydrogenation estimate, and introductory CO/NO/NO+ population comparisons. Full heteronuclear orbital derivations remain outside this introductory addition.
+D/F-Block adds a supplied uranium electron-removal model, a chromium/manganese redox-potential comparison, iron-carbide mass balances and chromium-oxide acid/base equations. Formal oxidation states and supplied models retain their limitations.
 
-Together this batch adds twelve narrated chapters, twenty-four original MCQs and nine worked examples. Each written quiz matches its recorded companion. Independently reviewed caption endings follow the generated speech, with original TTS input retained for cache provenance where a closing reminder was omitted.
+Together this batch adds twelve narrated chapters, twenty-four original MCQs and nine worked examples, with matched written companions and recorded practice.
 
 ## Remaining scope
 
 The individual companions retain their specific remaining-work statements. Further
 reaction networks, excited-orbital radial wavefunction plots, heteronuclear MO schemes,
 nonideal equilibrium and solution datasets, detailed group-specific comparisons,
-actinoid configurations, sulfur/phosphorus estimation, nonideal extraction,
+broader actinoid configurations, extended elemental analysis, nonideal extraction,
 complete systematic ion analysis and broader organic synthesis practice remain.
 P-block compounds illustrate the official trend-focused scope; inclusion is not a
 claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific primary references, including OpenStax acetylide and polymer chemistry, quantum theory, ionic/covalent bond energies and molecular-orbital theory, alongside IIT Kanpur SATHEE bonding material. Numerical data and MCQs in this batch are original practice.
+The notes contain lesson-specific primary references, including OpenStax stoichiometry, isotopes, quantitative analysis and electrochemistry, together with NCERT transition-element material. Numerical data and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

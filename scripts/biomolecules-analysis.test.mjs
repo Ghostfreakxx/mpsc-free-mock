@@ -15,10 +15,10 @@ test('expanded sugar, charge and peptide practice keeps numbering, atoms and wat
 test('biomolecules and analysis map to official units with honest written scope', () => {
   assert.deepEqual(lessons.map(l => l.unit), [19, 13]);
   for (const l of lessons) {
-    assert.equal(l.sections.length, l.id==='biomolecules'?17:13);
-    assert.equal(l.examples.length, l.id==='biomolecules'?9:6);
-    assert.equal(l.quiz.length, l.id==='biomolecules'?24:16);
-    assert.match(l.remaining, l.id==='biomolecules'?/seventeen-chapter Marin recording/:/thirteen-chapter Marin recording/);
+    assert.equal(l.sections.length, 17);
+    assert.equal(l.examples.length, 9);
+    assert.equal(l.quiz.length, 24);
+    assert.match(l.remaining, /seventeen-chapter Marin recording/);
   }
 });
 test('peptide and DNA examples retain topology and double-strand assumptions', () => {

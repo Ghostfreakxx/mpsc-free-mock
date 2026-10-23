@@ -1,3 +1,4 @@
+import { extendMoleAnalysisTransitionLesson } from "./mole-analysis-transition-study.ts";
 import { extendMoleAnalysisDFLesson } from "./mole-analysis-d-f-study.ts";
 import type { StudyLesson } from "./course";
 import { chemistryFoundationsLesson } from "./chemistry-foundations-study.ts";
@@ -67,7 +68,7 @@ export const studyLessons: StudyLesson[] = [
     title: "The mole: connecting particles, mass and reactions",
     summary: "Particle counting, molar mass, composition and limiting reactants.",
     prerequisites: "Ratios, scientific notation and reading chemical formulas.",
-    remaining: "Written companion to the thirteen-chapter Marin recording for Unit 1. The recording adds chemical laws, purity, yield, gas volumes and dilution. Further multi-step reaction networks and additional experimental datasets remain; this is not complete unit coverage.",
+    remaining: "Written companion to the seventeen-chapter Marin recording for Unit 1. The recording adds chemical laws, purity, yield, gas volumes and dilution. Further multi-step reaction networks and additional experimental datasets remain; this is not complete unit coverage.",
     sections: [
       { title: "A counting unit, not a fixed mass", paragraphs: [
         "A dozen counts twelve objects regardless of what those objects are. A mole similarly counts specified entities, but the count is much larger: exactly 6.02214076 × 10²³ entities per mole. The entities might be atoms, molecules, ions or formula units; always name them.",
@@ -168,3 +169,5 @@ export const studyLessons: StudyLesson[] = [
 
 const moleConceptCompanion = studyLessons.find(lesson=>lesson.id==="mole-concept");
 if (moleConceptCompanion) extendMoleAnalysisDFLesson(moleConceptCompanion);
+
+if (moleConceptCompanion) extendMoleAnalysisTransitionLesson(moleConceptCompanion);

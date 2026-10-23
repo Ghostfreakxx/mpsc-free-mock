@@ -1,3 +1,4 @@
+import { extendMoleAnalysisTransitionLesson } from "./mole-analysis-transition-study.ts";
 import { extendHalogensOxygenBiomoleculesLesson } from "./halogens-oxygen-biomolecules-study.ts";
 import { extendMoleAnalysisDFLesson } from "./mole-analysis-d-f-study.ts";
 import type { StudyLesson } from "./course";
@@ -42,7 +43,7 @@ export const biomoleculesAnalysisLessons: StudyLesson[] = [
     title: "Purification and characterisation: separation and composition",
     summary: "Choose a separation principle, interpret elementary composition data and distinguish qualitative from quantitative analysis.",
     prerequisites: "Mole concept, mass percentages, solubility, phase changes and organic functional groups.",
-    remaining: "Written companion to the thirteen-chapter Marin recording for Unit 13, not complete unit coverage. Further analytical reaction equations, sulfur/phosphorus estimation calculations and nonideal extraction datasets remain. Hazardous laboratory methods are discussed as principles only, not home procedures.",
+    remaining: "Written companion to the seventeen-chapter Marin recording for Unit 13, not complete unit coverage. Further analytical reaction equations, broader gravimetric uncertainty datasets and nonideal extraction datasets remain. Hazardous laboratory methods are discussed as principles only, not home procedures.",
     sections: [
       { title: "Choose the property that differs between components", paragraphs: ["Purification separates a desired substance from impurities by exploiting differences in properties. It does not normally change the desired compound into a new chemical. A mixture of an insoluble solid and a solution may be filtered, but filtering a dissolved impurity does not remove it merely because its particles are invisible.", "Qualitative analysis asks which elements or groups are present; quantitative analysis measures how much. Characterisation may combine composition with physical or chemical behaviour. A sharp melting range can support purity for a suitable solid, but one measurement alone does not prove identity or perfect purity under every circumstance."], formula: "Separation: exploit a property difference; analysis: identify or measure composition" },
       { title: "Crystallization uses temperature-dependent solubility", paragraphs: ["A suitable recrystallization solvent dissolves much of the desired solid when hot and less when cold, allowing crystals to form on cooling. Impurities may remain in solution or be removed as insoluble material at a suitable stage. The choice must avoid unwanted chemical reaction with the compound.", "Cooling does not force every last molecule into crystals; some desired product remains dissolved, so yield and purity are different goals. If the solvent dissolves the product equally well hot and cold, simple cooling is less useful. Sublimation instead exploits a solid's ability to enter the vapour phase and redeposit, separating it from suitably nonvolatile impurities."], formula: "Recrystallization needs a useful difference between hot and cold solubility" },
@@ -84,3 +85,5 @@ biomolecules.examples.push(
 for (const lesson of biomoleculesAnalysisLessons) extendMoleAnalysisDFLesson(lesson);
 
 for (const lesson of biomoleculesAnalysisLessons) extendHalogensOxygenBiomoleculesLesson(lesson);
+
+for (const lesson of biomoleculesAnalysisLessons) extendMoleAnalysisTransitionLesson(lesson);

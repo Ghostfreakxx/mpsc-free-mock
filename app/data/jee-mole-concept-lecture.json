@@ -21,6 +21,14 @@
     {
       "title": "OpenStax: other concentration units",
       "url": "https://openstax.org/books/chemistry-2e/pages/3-4-other-units-for-solution-concentrations"
+    },
+    {
+      "title": "OpenStax: atomic structure and isotopes",
+      "url": "https://openstax.org/books/chemistry-2e/pages/2-3-atomic-structure-and-symbolism"
+    },
+    {
+      "title": "OpenStax: quantitative chemical analysis",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-5-quantitative-chemical-analysis"
     }
   ],
   "chapters": [
@@ -480,6 +488,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "A back titration counts the acid actually consumed",
+      "formula": "CaCO₃ + 2H⁺ → Ca²⁺ + CO₂ + H₂O",
+      "script": "A back titration uses an excess reagent, then measures how much remains. Suppose a one point zero zero gram sample contains calcium carbonate and an impurity that does not consume acid. The supplied acid amount is forty point zero millilitres of zero point five zero zero molar hydrochloric acid. After the carbonate reaction, the remaining acid consumes ten point zero millilitres of zero point four zero zero molar sodium hydroxide in a quantitative one to one neutralization. Initial hydrogen ion amount is zero point zero two zero zero mole. Remaining amount is zero point zero zero four zero zero mole, so the sample consumed zero point zero one six zero mole. Calcium carbonate needs two hydrogen ions per formula unit, giving zero point zero zero eight zero zero mole carbonate. With supplied molar mass one hundred grams per mole, its mass is zero point eight zero zero gram and the sample purity is eighty percent. This inference needs complete carbonate reaction, the stated acid-inert impurity and a valid residual-acid endpoint. Other acid-consuming substances would change what the assay measures.",
+      "points": [
+        "Initial acid · 0.0400 L × 0.500 M · 0.0200 mol H⁺",
+        "Residual acid · 0.0100 L × 0.400 M · 0.00400 mol H⁺",
+        "Consumed acid; carbonate · 0.0160/2 × 100 g/mol · 0.800 g; 80.0% sample"
+      ],
+      "board": {
+        "heading": "A back titration counts the acid actually consumed",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Initial acid",
+            "0.0400 L × 0.500 M",
+            "0.0200 mol H⁺"
+          ],
+          [
+            "Residual acid",
+            "0.0100 L × 0.400 M",
+            "0.00400 mol H⁺"
+          ],
+          [
+            "Consumed acid; carbonate",
+            "0.0160/2 × 100 g/mol",
+            "0.800 g; 80.0% sample"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "An oxide mixture needs independent atom balances",
+      "formula": "For FeO/Fe₂O₃: a+2b = nFe and a+3b = nO",
+      "script": "An oxide mixture can be solved from independent iron and oxygen balances. Consider a supplied two point three two gram mixture containing only iron two oxide and iron three oxide. Complete reduction gives one point six eight grams iron, with all original oxygen removed as water. Use atomic masses iron fifty six and oxygen sixteen. Iron amount is zero point zero three zero zero mole atoms. The removed oxygen mass is zero point six four gram, corresponding to zero point zero four zero zero mole oxygen atoms. Let a and b be moles of iron two oxide and iron three oxide. Iron balance gives a plus two b equal to zero point zero three zero zero. Oxygen balance gives a plus three b equal to zero point zero four zero zero. Subtraction gives b zero point zero one zero zero mole and then a the same amount. Their masses are zero point seven two zero and one point six zero grams. The atom balances also predict zero point zero four zero zero mole water if each removed oxygen forms one water molecule in the stipulated complete reduction model.",
+      "points": [
+        "Iron after reduction · 1.68/56 · 0.0300 mol Fe atoms",
+        "Oxygen removed · (2.32−1.68)/16 · 0.0400 mol O atoms",
+        "Solve a+2b; a+3b · a=b=0.0100 mol · FeO 0.720 g; Fe₂O₃ 1.60 g"
+      ],
+      "board": {
+        "heading": "An oxide mixture needs independent atom balances",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Iron after reduction",
+            "1.68/56",
+            "0.0300 mol Fe atoms"
+          ],
+          [
+            "Oxygen removed",
+            "(2.32−1.68)/16",
+            "0.0400 mol O atoms"
+          ],
+          [
+            "Solve a+2b; a+3b",
+            "a=b=0.0100 mol",
+            "FeO 0.720 g; Fe₂O₃ 1.60 g"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Isotope fractions and molecular pair fractions differ",
+      "formula": "Random pairing with light fraction 0.75: LL:LH:HH = 9:6:1",
+      "script": "An average atomic mass can give isotope number fractions under a stated two isotope model. Suppose chlorine has only mass thirty five and mass thirty seven isotopes, with supplied average mass thirty five point five. If f is the heavy isotope fraction, thirty five times one minus f plus thirty seven times f equals thirty five point five, giving f one quarter. The light isotope fraction is three quarters. For independent random pairing into diatomic chlorine, the light light fraction is nine sixteenths. The mixed pair fraction is six sixteenths, because light heavy and heavy light are two ways of obtaining the same mixed isotopologue. The heavy heavy fraction is one sixteenth. The molecular mass labels are seventy, seventy two and seventy four in this integer-mass model, and their weighted average is seventy one. These are number fractions, not isotope mass fractions. Actual isotope masses differ from integer mass numbers, and random pairing is an explicit statistical assumption. Identify the counted entity before transferring an atomic abundance directly into a molecular peak ratio.",
+      "points": [
+        "Mean atomic mass 35.5 · 35(1−f)+37f=35.5 · Heavy f=0.25; light=0.75",
+        "Independent diatomic pairing · 0.75² : 2×0.75×0.25 : 0.25² · LL:LH:HH = 9:6:1",
+        "Integer molecular mass labels · 70, 72, 74 · Weighted mean 71"
+      ],
+      "board": {
+        "heading": "Isotope fractions and molecular pair fractions differ",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Mean atomic mass 35.5",
+            "35(1−f)+37f=35.5",
+            "Heavy f=0.25; light=0.75"
+          ],
+          [
+            "Independent diatomic pairing",
+            "0.75² : 2×0.75×0.25 : 0.25²",
+            "LL:LH:HH = 9:6:1"
+          ],
+          [
+            "Integer molecular mass labels",
+            "70, 72, 74",
+            "Weighted mean 71"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Combustion data resolve a binary gas mixture",
+      "formula": "CH₄/C₂H₆: a+b = total moles; a+2b = CO₂ moles",
+      "script": "A binary hydrocarbon mixture needs both a total-amount balance and a carbon balance. Suppose zero point one zero zero mole of a gas mixture contains only methane and ethane. Complete combustion produces zero point one six zero mole carbon dioxide. Let a and b be the methane and ethane amounts. The total balance is a plus b equal to zero point one zero zero. Since methane contributes one carbon and ethane two, the carbon dioxide balance is a plus two b equal to zero point one six zero. Therefore ethane is zero point zero six zero zero mole and methane zero point zero four zero zero mole. Their mole fractions are sixty and forty percent respectively. Water production is two a plus three b, or zero point two six zero mole. Oxygen demand is two a plus three point five b, or zero point two nine zero mole. With supplied molar masses sixteen and thirty, mean mixture molar mass is twenty four point four grams per mole. These results assume only the two named gases and complete formation of carbon dioxide and water.",
+      "points": [
+        "Total and carbon balances · a+b=0.100; a+2b=0.160 · a=0.0400; b=0.0600 mol",
+        "Water and oxygen · 2a+3b; 2a+3.5b · 0.260 mol H₂O; 0.290 mol O₂",
+        "Mean molar mass · 0.40×16 + 0.60×30 · 24.4 g/mol"
+      ],
+      "board": {
+        "heading": "Combustion data resolve a binary gas mixture",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Total and carbon balances",
+            "a+b=0.100; a+2b=0.160",
+            "a=0.0400; b=0.0600 mol"
+          ],
+          [
+            "Water and oxygen",
+            "2a+3b; 2a+3.5b",
+            "0.260 mol H₂O; 0.290 mol O₂"
+          ],
+          [
+            "Mean molar mass",
+            "0.40×16 + 0.60×30",
+            "24.4 g/mol"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -658,6 +806,94 @@
       ],
       "answer": 1,
       "explanation": "One litre weighs 1200 g and contains 240 g=6.00 mol NaOH. Molality would instead be 6.25 mol/kg."
+    },
+    {
+      "question": "Initial acid is 40.0 mL 0.500 M HCl. Remaining acid equals 10.0 mL 0.400 M NaOH. Acid consumed is:",
+      "options": [
+        "0.0160 mol",
+        "0.0240 mol",
+        "0.00400 mol",
+        "0.0200 mol"
+      ],
+      "answer": 0,
+      "explanation": "Initial 0.0200 minus residual 0.00400 gives 0.0160 mol hydrogen ions consumed."
+    },
+    {
+      "question": "If only CaCO3 consumes that acid, with M=100 g/mol, its mass in a 1.00 g sample is:",
+      "options": [
+        "0.400 g",
+        "0.800 g",
+        "1.60 g",
+        "0.160 g"
+      ],
+      "answer": 1,
+      "explanation": "Carbonate moles are 0.0160/2=0.00800; multiply by 100 g/mol to obtain 0.800 g."
+    },
+    {
+      "question": "A 2.32 g FeO/Fe2O3 mixture gives 1.68 g Fe on complete reduction. With Fe=56 and O=16, oxygen-atom amount removed is:",
+      "options": [
+        "0.0300 mol",
+        "0.0100 mol",
+        "0.0400 mol",
+        "0.640 mol"
+      ],
+      "answer": 2,
+      "explanation": "Oxygen mass is 2.32−1.68=0.64 g; divide by 16 g/mol for oxygen atoms."
+    },
+    {
+      "question": "For that mixture, a+2b=0.0300 and a+3b=0.0400. Moles a of FeO and b of Fe2O3 are:",
+      "options": [
+        "0.0200 and 0.0100",
+        "0.0100 and 0.0200",
+        "0.0300 and 0.0400",
+        "0.0100 and 0.0100"
+      ],
+      "answer": 3,
+      "explanation": "Subtract the balances to obtain b=0.0100, then substitute to obtain a=0.0100."
+    },
+    {
+      "question": "A two-isotope integer-mass model uses 35 and 37 with mean 35.5. Heavy-isotope number fraction is:",
+      "options": [
+        "0.25",
+        "0.75",
+        "0.50",
+        "0.35"
+      ],
+      "answer": 0,
+      "explanation": "Solve 35(1−f)+37f=35.5, giving 2f=0.5 and f=0.25, the number fraction of heavy atoms."
+    },
+    {
+      "question": "Independent random pairing with light fraction 0.75 gives LL:LH:HH fractions in ratio:",
+      "options": [
+        "3:1:1",
+        "9:6:1",
+        "9:3:1",
+        "1:6:9"
+      ],
+      "answer": 1,
+      "explanation": "The mixed pair includes two orderings, so probabilities are 0.75², 2×0.75×0.25 and 0.25²."
+    },
+    {
+      "question": "0.100 mol CH4/C2H6 produces 0.160 mol CO2 on complete combustion. Ethane amount is:",
+      "options": [
+        "0.0400 mol",
+        "0.100 mol",
+        "0.0600 mol",
+        "0.160 mol"
+      ],
+      "answer": 2,
+      "explanation": "Subtract a+b=0.100 from a+2b=0.160; b=0.0600 mol of ethane in the original binary mixture."
+    },
+    {
+      "question": "For methane/ethane mole fractions 0.40/0.60 and supplied molar masses 16/30, the mixture molar mass is:",
+      "options": [
+        "23.0 g/mol",
+        "46.0 g/mol",
+        "19.6 g/mol",
+        "24.4 g/mol"
+      ],
+      "answer": 3,
+      "explanation": "Use the mole-fraction-weighted mean: 0.40×16+0.60×30=24.4 g/mol."
     }
   ]
 }

@@ -29,6 +29,14 @@
     {
       "title": "OpenStax: quantitative chemical analysis",
       "url": "https://openstax.org/books/chemistry-2e/pages/4-5-quantitative-chemical-analysis"
+    },
+    {
+      "title": "NCERT: organic chemistry and quantitative analysis",
+      "url": "https://ncert.nic.in/textbook/pdf/kech206.pdf"
+    },
+    {
+      "title": "Government teaching module: quantitative organic analysis",
+      "url": "https://www.repository.tribal.gov.in/bitstream/123456789/75128/1/SCST_2018_book_0477.pdf"
     }
   ],
   "chapters": [
@@ -486,6 +494,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Sulfur gravimetry counts the sulfur in a weighed product",
+      "formula": "Pure BaSO₄ contains one sulfur per formula unit",
+      "script": "Gravimetric elemental analysis converts an element into a product of known composition and measures that product mass. In a supplied quantitative sulfur model, all sample sulfur is recovered in pure dry barium sulfate. Use molar masses barium sulfate two hundred thirty three and sulfur thirty two grams per mole. A zero point two zero zero gram sample gives zero point two three three gram barium sulfate. Product amount is zero point zero zero one zero zero mole, and each formula unit contains one sulfur atom, so the sulfur amount is the same. Sulfur mass is zero point zero three two zero gram, giving sixteen percent of the original sample mass. Do not assign the entire precipitate mass to sulfur; most of it is barium and oxygen. The calculation assumes complete conversion, quantitative collection and the specified dry product. Retained moisture or unrelated coprecipitated material would bias an actual mass, while incomplete collection could lower recovery. These supplied-data assumptions connect an observation to a composition calculation. They are not an experimental oxidation or precipitation procedure.",
+      "points": [
+        "BaSO₄ product mass · 0.233/233 · 0.00100 mol product",
+        "One sulfur per formula unit · 0.00100 × 32 · 0.0320 g sulfur",
+        "Sample mass 0.200 g · 100×0.0320/0.200 · 16.0% sulfur"
+      ],
+      "board": {
+        "heading": "Sulfur gravimetry counts the sulfur in a weighed product",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "BaSO₄ product mass",
+            "0.233/233",
+            "0.00100 mol product"
+          ],
+          [
+            "One sulfur per formula unit",
+            "0.00100 × 32",
+            "0.0320 g sulfur"
+          ],
+          [
+            "Sample mass 0.200 g",
+            "100×0.0320/0.200",
+            "16.0% sulfur"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Phosphorus gravimetry needs the factor of two",
+      "formula": "Mg₂P₂O₇ contains two phosphorus atoms per formula unit",
+      "script": "A gravimetric product can contain more than one atom of the element being estimated. In a supplied phosphorus analysis model, all sample phosphorus is recovered as pure dry magnesium pyrophosphate. Its formula contains two magnesium, two phosphorus and seven oxygen atoms. Use supplied molar mass two hundred twenty two grams per mole and phosphorus atomic mass thirty one. Suppose a zero point three one zero gram sample gives zero point two two two gram of the specified product. That is zero point zero zero one zero zero mole product, containing zero point zero zero two zero zero mole phosphorus atoms. Phosphorus mass is zero point zero six two zero gram and its sample mass percentage is twenty. Using one phosphorus atom per product unit would halve the answer incorrectly. Likewise, a different weighed form would require its own formula factor rather than reuse this conversion unchanged. Quantitative recovery and a defined dry product are assumptions, and this numerical model does not supply hazardous sample-conversion steps. Start from the product formula and the counted atom before writing a shortcut percentage expression.",
+      "points": [
+        "Mg₂P₂O₇ mass 0.222 g · 0.222/222 · 0.00100 mol product",
+        "Two P atoms per unit · 2×0.00100×31 · 0.0620 g phosphorus",
+        "Sample mass 0.310 g · 100×0.0620/0.310 · 20.0% phosphorus"
+      ],
+      "board": {
+        "heading": "Phosphorus gravimetry needs the factor of two",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Mg₂P₂O₇ mass 0.222 g",
+            "0.222/222",
+            "0.00100 mol product"
+          ],
+          [
+            "Two P atoms per unit",
+            "2×0.00100×31",
+            "0.0620 g phosphorus"
+          ],
+          [
+            "Sample mass 0.310 g",
+            "100×0.0620/0.310",
+            "20.0% phosphorus"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Oxygen by difference needs a complete mass basis",
+      "formula": "O% = 100 − sum(other measured mass percentages), only when the remainder is oxygen",
+      "script": "An elemental percentage obtained by difference is conditional on what the remainder can contain. Suppose a dry sample contains only carbon, hydrogen, nitrogen, sulfur and oxygen. Supplied measured mass percentages are sixty, eight, twelve and four for the first four elements respectively. They sum to eighty four, leaving sixteen percent oxygen under the stated complete composition model. A half gram sample would then contain zero point zero eight zero gram oxygen. Unmeasured halogens, inorganic residue or retained water would make the same subtraction an unreliable oxygen determination unless separately accounted for. All percentages must also refer to the same sample basis; mixing dry basis carbon with a wet basis sample mass breaks the balance. Difference calculations combine measurement uncertainty. If the four supplied small worst case bounds are zero point three, zero point one, zero point two and zero point one percentage points, their conservative sum is zero point seven percentage points for the inferred oxygen fraction. This is not automatically a statistical standard deviation. State the composition model, sample basis and uncertainty interpretation along with the remainder.",
+      "points": [
+        "Measured C,H,N,S · 60+8+12+4=84% · O=16% under stated model",
+        "Sample mass 0.500 g · 0.16×0.500 · 0.0800 g oxygen",
+        "Worst-case supplied bounds · 0.3+0.1+0.2+0.1 · ±0.7 percentage points"
+      ],
+      "board": {
+        "heading": "Oxygen by difference needs a complete mass basis",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Measured C,H,N,S",
+            "60+8+12+4=84%",
+            "O=16% under stated model"
+          ],
+          [
+            "Sample mass 0.500 g",
+            "0.16×0.500",
+            "0.0800 g oxygen"
+          ],
+          [
+            "Worst-case supplied bounds",
+            "0.3+0.1+0.2+0.1",
+            "±0.7 percentage points"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Steam-distillation mole and mass ratios are different",
+      "formula": "Ideal immiscible phases present: nA/nwater = pA°/pwater°",
+      "script": "Steam distillation of a suitable immiscible pair uses the vapour pressures contributed by both liquid phases at the same temperature. In an idealized supplied example, the organic component contributes ten kilopascals and water ninety. Their sum is one hundred kilopascals, so the mixture can boil against that external pressure while both liquid phases remain present. The vapour organic mole fraction is one tenth. The mole ratio of organic vapour to water vapour is one to nine. A mass ratio also needs molar masses. With organic molar mass one hundred eighty and water eighteen grams per mole, organic mass divided by water mass is ten times one hundred eighty divided by ninety times eighteen, or ten ninths. Thus a representative condensed fraction containing ten grams water would contain about eleven point one grams organic component under this model. Applying liquid mole fractions as though the liquids formed one ideal miscible solution would describe a different model. Phase exhaustion, appreciable mutual solubility, entrainment or chemical instability can invalidate the simple ratio. Keep phase presence, vapour composition and condensed mass accounting explicit.",
+      "points": [
+        "Partial pressures 10 and 90 kPa · Total = 100 kPa · Organic vapour fraction 0.100",
+        "Mole ratio organic/water · 10/90 · 1/9",
+        "Mass ratio with M=180 and 18 · (10×180)/(90×18) · 10/9; 10 g water → 11.1 g organic"
+      ],
+      "board": {
+        "heading": "Steam-distillation mole and mass ratios are different",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Partial pressures 10 and 90 kPa",
+            "Total = 100 kPa",
+            "Organic vapour fraction 0.100"
+          ],
+          [
+            "Mole ratio organic/water",
+            "10/90",
+            "1/9"
+          ],
+          [
+            "Mass ratio with M=180 and 18",
+            "(10×180)/(90×18)",
+            "10/9; 10 g water → 11.1 g organic"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -664,6 +812,94 @@
       ],
       "answer": 0,
       "explanation": "Divide each spot distance from the origin by the solvent-front distance from that same origin."
+    },
+    {
+      "question": "A quantitative sulfur model gives 0.233 g dry BaSO4 with M=233 g/mol. Sulfur-atom amount is:",
+      "options": [
+        "0.00200 mol",
+        "0.00100 mol",
+        "0.233 mol",
+        "0.000500 mol"
+      ],
+      "answer": 1,
+      "explanation": "There is one S per BaSO4 formula unit; product amount is 0.233/233=0.00100 mol."
+    },
+    {
+      "question": "With S=32 g/mol and sample mass 0.200 g, sulfur percentage is:",
+      "options": [
+        "8%",
+        "32%",
+        "16%",
+        "100%"
+      ],
+      "answer": 2,
+      "explanation": "Sulfur mass=0.00100×32=0.0320 g; divide by 0.200 g sample and multiply by 100."
+    },
+    {
+      "question": "0.00100 mol Mg2P2O7 contains phosphorus-atom amount:",
+      "options": [
+        "0.000500 mol",
+        "0.00100 mol",
+        "0.00700 mol",
+        "0.00200 mol"
+      ],
+      "answer": 3,
+      "explanation": "The product formula has two phosphorus atoms per formula unit."
+    },
+    {
+      "question": "0.222 g Mg2P2O7 with M=222 g/mol comes from 0.310 g sample. With P=31, phosphorus percentage is:",
+      "options": [
+        "20%",
+        "10%",
+        "31%",
+        "62%"
+      ],
+      "answer": 0,
+      "explanation": "P mass=2×(0.222/222)×31=0.0620 g; percentage=100×0.0620/0.310=20%."
+    },
+    {
+      "question": "A dry sample contains only C,H,N,S,O. Measured C,H,N,S are 60,8,12,4 mass percent. Oxygen is:",
+      "options": [
+        "84%",
+        "16%",
+        "12%",
+        "4%"
+      ],
+      "answer": 1,
+      "explanation": "The other four percentages sum to 84; only under the complete composition model is the 16% remainder oxygen."
+    },
+    {
+      "question": "For that oxygen-by-difference result, which condition is essential?",
+      "options": [
+        "Ignore all unmeasured elements",
+        "Use mixed dry and wet bases",
+        "The remainder must be oxygen on the same mass basis",
+        "Assume every uncertainty is zero"
+      ],
+      "answer": 2,
+      "explanation": "Unmeasured elements, residue or inconsistent sample bases break the simple difference inference."
+    },
+    {
+      "question": "An ideal immiscible steam-distillation model has organic/water partial pressures 10/90 kPa. Organic vapour mole fraction is:",
+      "options": [
+        "0.900",
+        "1/9",
+        "10/9",
+        "0.100"
+      ],
+      "answer": 3,
+      "explanation": "The fraction is 10/(10+90)=0.100; the organic/water mole ratio is a different quantity, 1/9."
+    },
+    {
+      "question": "For organic/water molar masses 180/18 and partial pressures 10/90, condensed organic/water mass ratio is:",
+      "options": [
+        "10/9",
+        "1/9",
+        "1/10",
+        "9/10"
+      ],
+      "answer": 0,
+      "explanation": "Multiply the vapour mole ratio by the molar-mass ratio: (10/90)×(180/18)=10/9."
     }
   ]
 }

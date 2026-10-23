@@ -21,6 +21,10 @@
     {
       "title": "NCERT: d- and f-block elements",
       "url": "https://www.ncert.nic.in/textbook/pdf/lech104.pdf"
+    },
+    {
+      "title": "OpenStax: galvanic cells and potentials",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-2-galvanic-cells"
     }
   ],
   "chapters": [
@@ -548,6 +552,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Actinoid charge and f counts need a stated model",
+      "formula": "U: [Rn]5f³6d¹7s²; simple U⁴⁺ count gives [Rn]5f²",
+      "script": "Actinoid configurations require specifying the actual species rather than copying a neutral atom label onto every ion. Use the supplied elementary neutral uranium configuration with a radon core, three five f electrons, one six d electron and two seven s electrons. In the simple isolated ion bookkeeping used here, forming uranium four plus removes four outer electrons: the two seven s electrons, the six d electron and one five f electron. The remaining count is five f two. The corresponding formal six plus uranium count is five f zero in this model. Now consider the uranyl ion, containing uranium and two oxygens, with overall charge plus two. Assigning each oxygen minus two makes uranium oxidation state plus six, despite the whole ion having charge plus two. Formal oxidation states and actual molecular electron density are different descriptions, so this does not claim that uranyl consists of a free bare uranium six plus ion. More detailed actinoid bonding includes covalency and closely spaced orbitals. Read overall charge, ligand oxidation assignments and the specified electron-count model separately before reporting an f configuration.",
+      "points": [
+        "Neutral U supplied · [Rn]5f³6d¹7s² · 6 electrons beyond radon",
+        "Simple U⁴⁺ removal · Remove 2 from 7s, 1 from 6d, 1 from 5f · [Rn]5f²",
+        "UO₂²⁺ formal balance · x + 2(−2) = +2 · U +6; formal f⁰ count"
+      ],
+      "board": {
+        "heading": "Actinoid charge and f counts need a stated model",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Neutral U supplied",
+            "[Rn]5f³6d¹7s²",
+            "6 electrons beyond radon"
+          ],
+          [
+            "Simple U⁴⁺ removal",
+            "Remove 2 from 7s, 1 from 6d, 1 from 5f",
+            "[Rn]5f²"
+          ],
+          [
+            "UO₂²⁺ formal balance",
+            "x + 2(−2) = +2",
+            "U +6; formal f⁰ count"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Two d4 ions can have different redox roles",
+      "formula": "E°cell = E°red(Mn³⁺/Mn²⁺) − E°red(Cr³⁺/Cr²⁺)",
+      "script": "Matching d electron counts do not guarantee matching redox behaviour. Chromium two plus and manganese three plus both have a formal d four count, yet their supplied aqueous reduction potentials differ. Use minus zero point four one volt for chromium three plus accepting one electron to become chromium two plus, and plus one point five one volts for manganese three plus accepting one electron to become manganese two plus. Combining manganese reduction with chromium two plus oxidation gives manganese three plus plus chromium two plus forming manganese two plus plus chromium three plus. The standard cell potential is one point five one minus minus zero point four one, or plus one point nine two volts. One electron is transferred per written reaction. With supplied Faraday constant ninety six thousand four hundred eighty five coulombs per mole, standard Gibbs energy change is approximately minus one hundred eighty five kilojoules per mole of reaction. The resulting d five manganese two plus and d three chromium three plus counts help organize the comparison, but measured potentials include the full specified chemical environment. Complexation, concentration and p H can change an actual redox comparison.",
+      "points": [
+        "Cr³⁺ + e⁻ → Cr²⁺ · Supplied E°red = −0.41 V · Reverse this step for oxidation",
+        "Mn³⁺ + e⁻ → Mn²⁺ · Supplied E°red = +1.51 V · Manganese reduction",
+        "Combined one-electron reaction · 1.51 − (−0.41) · E°=+1.92 V; ΔG°≈−185 kJ/mol"
+      ],
+      "board": {
+        "heading": "Two d4 ions can have different redox roles",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Cr³⁺ + e⁻ → Cr²⁺",
+            "Supplied E°red = −0.41 V",
+            "Reverse this step for oxidation"
+          ],
+          [
+            "Mn³⁺ + e⁻ → Mn²⁺",
+            "Supplied E°red = +1.51 V",
+            "Manganese reduction"
+          ],
+          [
+            "Combined one-electron reaction",
+            "1.51 − (−0.41)",
+            "E°=+1.92 V; ΔG°≈−185 kJ/mol"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Carbide composition is not an alloy property prediction",
+      "formula": "Fe₃C with supplied Fe=56, C=12: carbon mass fraction = 12/180",
+      "script": "A carbide formula can support a composition calculation without determining every property of an alloy. Cementite has the formula iron three carbide, with three iron atoms for each carbon atom. Using supplied atomic masses iron fifty six and carbon twelve gives formula mass one hundred eighty grams per mole. The carbon mass fraction is twelve divided by one hundred eighty, or about six point six seven percent. Thus one point eight zero grams of pure ideal cementite contains zero point one two zero gram carbon and one point six eight grams iron. Now use a stipulated two component mass model containing ten percent cementite and ninety percent pure iron. Since the pure iron component contributes no carbon, overall carbon percentage is one tenth of the cementite carbon percentage, about zero point six six seven percent. This does not mean a real steel is always described by only those two components or that hardness is a linear function of carbon fraction. Microstructure, phase distribution and processing also matter. Count formula units and mass fractions before connecting a composition to any independently supplied materials-property data.",
+      "points": [
+        "Fe₃C formula mass · 3×56 + 12 · 180 g/mol",
+        "Pure cementite carbon fraction · 12/180 · 6.67% by mass",
+        "Ideal mixture: 10% Fe₃C, rest Fe · 0.10×6.67% · About 0.667% total carbon"
+      ],
+      "board": {
+        "heading": "Carbide composition is not an alloy property prediction",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Fe₃C formula mass",
+            "3×56 + 12",
+            "180 g/mol"
+          ],
+          [
+            "Pure cementite carbon fraction",
+            "12/180",
+            "6.67% by mass"
+          ],
+          [
+            "Ideal mixture: 10% Fe₃C, rest Fe",
+            "0.10×6.67%",
+            "About 0.667% total carbon"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Chromium oxide acidity changes with oxidation state",
+      "formula": "CrO: Cr(II); Cr₂O₃: Cr(III); CrO₃: Cr(VI)",
+      "script": "Oxide acid base behaviour can vary across oxidation states of the same transition element. In the introductory chromium comparison, chromium two oxide is mainly basic, chromium three oxide is amphoteric, and chromium six oxide is acidic. Charge balance gives chromium oxidation states plus two in the monoxide, plus three in the two chromium three oxygen formula, and plus six in the trioxide. A simple acid reaction for the monoxide uses two hydrogen ions to give chromium two ions and water. For chromium three oxide, six hydrogen ions give two chromium three ions and three waters. Amphoteric behaviour also requires reaction with suitable base conditions; its products depend on the stated medium. Chromium trioxide can react with two hydroxide ions to give a chromate ion and water, with chromium remaining plus six. This last equation is acid base conversion, not a chromium oxidation state change. The comparison illustrates a useful trend toward acidic oxides at higher oxidation state, rather than a universal classification rule for every transition metal compound. Keep oxide formula, oxidation state, reaction medium and redox classification as separate checks.",
+      "points": [
+        "CrO; Cr₂O₃; CrO₃ · Cr oxidation states +2, +3, +6 · Basic; amphoteric; acidic",
+        "Cr₂O₃ + 6H⁺ · → 2Cr³⁺ + 3H₂O · Atom and charge balance",
+        "CrO₃ + 2OH⁻ · → CrO₄²⁻ + H₂O · Cr stays +6; acid–base conversion"
+      ],
+      "board": {
+        "heading": "Chromium oxide acidity changes with oxidation state",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "CrO; Cr₂O₃; CrO₃",
+            "Cr oxidation states +2, +3, +6",
+            "Basic; amphoteric; acidic"
+          ],
+          [
+            "Cr₂O₃ + 6H⁺",
+            "→ 2Cr³⁺ + 3H₂O",
+            "Atom and charge balance"
+          ],
+          [
+            "CrO₃ + 2OH⁻",
+            "→ CrO₄²⁻ + H₂O",
+            "Cr stays +6; acid–base conversion"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -748,6 +892,94 @@
       ],
       "answer": 0,
       "explanation": "The selected ions correspond respectively to empty, half-filled and filled 4f subshells in the stated ionic model."
+    },
+    {
+      "question": "Using supplied U=[Rn]5f3 6d1 7s2 and the stated simple removal model, U4+ has:",
+      "options": [
+        "5f0",
+        "5f1",
+        "5f2",
+        "5f3"
+      ],
+      "answer": 2,
+      "explanation": "Four removals take the two 7s electrons, one 6d electron and one 5f electron, leaving 5f2."
+    },
+    {
+      "question": "Assign O=−2 in UO2²+. Uranium formal oxidation state is:",
+      "options": [
+        "+2",
+        "+4",
+        "0",
+        "+6"
+      ],
+      "answer": 3,
+      "explanation": "x−4=+2 gives x=+6. The charge of the complete ion is not the uranium oxidation state."
+    },
+    {
+      "question": "Supplied reduction potentials are Mn3+/Mn2+ +1.51 V and Cr3+/Cr2+ −0.41 V. Mn3+ reduction coupled to Cr2+ oxidation has E°:",
+      "options": [
+        "+1.92 V",
+        "+1.10 V",
+        "−1.92 V",
+        "−1.10 V"
+      ],
+      "answer": 0,
+      "explanation": "Subtract the reduction potential of the reversed chromium couple: 1.51−(−0.41)=1.92 V."
+    },
+    {
+      "question": "For Mn3+ + Cr2+ → Mn2+ + Cr3+, electrons transferred per written reaction are:",
+      "options": [
+        "Two",
+        "One",
+        "Three",
+        "Five"
+      ],
+      "answer": 1,
+      "explanation": "Mn gains one electron while Cr loses one; no coefficient scaling is needed."
+    },
+    {
+      "question": "With Fe=56 and C=12, pure Fe3C carbon mass percentage is approximately:",
+      "options": [
+        "12%",
+        "3.00%",
+        "6.67%",
+        "20.0%"
+      ],
+      "answer": 2,
+      "explanation": "Formula mass=3×56+12=180; carbon mass fraction=12/180."
+    },
+    {
+      "question": "In the stipulated mixture of 10.0 mass% Fe3C and 90.0 mass% pure Fe, carbon mass percentage is about:",
+      "options": [
+        "6.67%",
+        "10.0%",
+        "60.0%",
+        "0.667%"
+      ],
+      "answer": 3,
+      "explanation": "Only the carbide contributes carbon in this model: 0.10×6.667%=0.6667%."
+    },
+    {
+      "question": "Chromium oxidation states in CrO, Cr2O3 and CrO3 are respectively:",
+      "options": [
+        "+2, +3, +6",
+        "+1, +2, +3",
+        "+2, +6, +3",
+        "−2, −3, −6"
+      ],
+      "answer": 0,
+      "explanation": "Use oxygen −2 and charge neutrality for each oxide formula separately."
+    },
+    {
+      "question": "In CrO3 + 2OH− → CrO4²− + H2O, chromium:",
+      "options": [
+        "Is reduced from +6 to +3",
+        "Stays +6 in an acid–base conversion",
+        "Is oxidized from +3 to +6",
+        "Becomes elemental chromium"
+      ],
+      "answer": 1,
+      "explanation": "Both chromium species have formal oxidation state +6; the equation changes acid–base form rather than chromium redox state."
     }
   ]
 }

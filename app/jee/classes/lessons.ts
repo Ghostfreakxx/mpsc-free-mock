@@ -1203,7 +1203,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "mole-concept", subject: "Chemistry", unit: 1, number: "C10", title: moleConcept.title,
-    description: "Thirteen narrated chapters on mole calculations, hydrates, carbonate mixtures, stage yields, combustion and solution concentration conversions.",
+    description: "Seventeen narrated chapters on mole calculations, hydrates, carbonate mixtures, stage yields, combustion and solution concentration conversions.",
     scope: "Recorded Unit 1 foundation with original practice. Further multi-step reaction networks and additional experimental datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.mole-concept.lecture.v1",
     audio: "/lectures/mole-concept/narration-marin.mp3",
@@ -1273,7 +1273,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "purification-analysis", subject: "Chemistry", unit: 13, number: "C17", title: purificationAnalysis.title,
-    description: "Thirteen narrated chapters on separation, Dumas and Kjeldahl calculations, silver-halide gravimetry, repeated extraction and chromatographic evidence.",
+    description: "Seventeen narrated chapters on separation, Dumas and Kjeldahl calculations, silver-halide gravimetry, repeated extraction and chromatographic evidence.",
     scope: "Recorded Unit 13 foundation with original practice. Detailed analytical equations, phosphorus calculations, partition calculations and larger datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.purification-analysis.lecture.v1",
     audio: "/lectures/purification-analysis/narration-marin.mp3",
@@ -1303,7 +1303,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "d-f-block", subject: "Chemistry", unit: 11, number: "C20", title: dFBlock.title,
-    description: "Fifteen narrated chapters on d/f-block trends, chromite oxidation, chromate equilibria, manganate and permanganate, and selected lanthanoid configurations.",
+    description: "Nineteen narrated chapters on d/f-block trends, chromite oxidation, chromate equilibria, manganate and permanganate, and selected lanthanoid configurations.",
     scope: "Recorded Unit 11 foundation with original practice. Further preparation conditions and structures, occurrence and uses, detailed actinoid configurations and extended comparisons remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.d-f-block.lecture.v1",
     audio: "/lectures/d-f-block/narration-marin.mp3",
