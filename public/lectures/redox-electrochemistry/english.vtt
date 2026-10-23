@@ -959,3 +959,258 @@ Standard potential tables are a starting guide, not a substitute for the real
 
 00:18:19.680 --> 00:18:20.520
 corrosion conditions.
+
+00:18:20.688 --> 00:18:24.328
+Electrode potentials cannot generally be added like reaction energies.
+
+00:18:25.368 --> 00:18:28.828
+Consider supplied reduction steps for the same element in one consistent
+
+00:18:28.828 --> 00:18:29.228
+medium.
+
+00:18:30.068 --> 00:18:34.288
+The three plus ion accepts one electron to become the two plus ion, with
+
+00:18:34.288 --> 00:18:37.228
+standard reduction potential plus zero point six zero volt.
+
+00:18:38.068 --> 00:18:42.528
+The two plus ion accepts two electrons to form the metal, with potential minus
+
+00:18:42.528 --> 00:18:43.848
+zero point three zero volt.
+
+00:18:44.428 --> 00:18:47.028
+The overall step transfers three electrons.
+
+00:18:47.848 --> 00:18:52.828
+Convert each potential to standard Gibbs energy using minus n F E, add the two
+
+00:18:52.828 --> 00:18:55.948
+energies, then divide by minus three F.
+
+00:18:55.948 --> 00:19:00.548
+The resulting potential is zero volt, because one times zero point six zero
+
+00:19:00.548 --> 00:19:03.468
+plus two times minus zero point three zero equals zero.
+
+00:19:04.128 --> 00:19:08.168
+The simple arithmetic mean would instead give plus zero point one five volt,
+
+00:19:08.588 --> 00:19:09.168
+which is wrong.
+
+00:19:09.888 --> 00:19:13.228
+All endpoint states and standard state conventions must match for this
+
+00:19:13.228 --> 00:19:13.588
+cancellation.
+
+00:19:14.268 --> 00:19:18.488
+Zero standard potential means zero standard Gibbs energy for the combined half
+
+00:19:18.488 --> 00:19:23.068
+reaction relative to the chosen reference, not that every actual mixture is at
+
+00:19:23.068 --> 00:19:23.548
+equilibrium.
+
+00:19:24.728 --> 00:19:26.848
+Composition can still change the electrode potential.
+
+00:19:27.192 --> 00:19:32.072
+Disproportionation converts one oxidation state into both a higher and a lower
+
+00:19:32.072 --> 00:19:33.132
+oxidation state.
+
+00:19:33.732 --> 00:19:37.792
+Use supplied rounded aqueous copper reduction potentials: copper one plus
+
+00:19:37.792 --> 00:19:42.292
+accepting one electron to become copper metal has plus zero point five two
+
+00:19:42.292 --> 00:19:47.132
+volt, and copper two plus accepting one electron to become copper one plus has
+
+00:19:47.132 --> 00:19:48.912
+plus zero point one five volt.
+
+00:19:50.032 --> 00:19:53.652
+Reverse the second half reaction to oxidize one copper one plus ion.
+
+00:19:53.652 --> 00:19:56.812
+Add it to reduction of another copper one plus ion.
+
+00:19:57.652 --> 00:20:02.075
+The balanced result is two copper one plus ions forming one copper two plus
+
+00:20:02.075 --> 00:20:02.252
+ion
+
+00:20:02.252 --> 00:20:03.572
+and one copper atom.
+
+00:20:04.652 --> 00:20:09.192
+Standard cell potential is zero point five two minus zero point one five, or
+
+00:20:09.192 --> 00:20:10.932
+plus zero point three seven volt.
+
+00:20:11.852 --> 00:20:16.272
+One electron transfers per written reaction, so standard Gibbs energy is minus
+
+00:20:16.272 --> 00:20:17.592
+zero point three seven F.
+
+00:20:18.552 --> 00:20:22.632
+Positive standard voltage favours disproportionation under the stated standard
+
+00:20:22.632 --> 00:20:23.152
+conditions.
+
+00:20:23.832 --> 00:20:26.832
+It does not guarantee the same behaviour in every ligand environment:
+
+00:20:27.712 --> 00:20:31.172
+complexation, precipitation and activities can alter the comparison.
+
+00:20:32.172 --> 00:20:36.032
+Check atom balance, charge balance and the electron count before inferring a
+
+00:20:36.032 --> 00:20:36.632
+redox direction.
+
+00:20:36.840 --> 00:20:41.860
+A hydrogen electrode is at zero standard potential only under its specified
+
+00:20:41.860 --> 00:20:42.880
+standard conditions.
+
+00:20:43.760 --> 00:20:47.960
+Write the reduction as two hydrogen ions plus two electrons forming hydrogen
+
+00:20:47.960 --> 00:20:48.380
+gas.
+
+00:20:49.240 --> 00:20:52.880
+At two hundred ninety eight kelvin, with hydrogen pressure equal to the
+
+00:20:52.880 --> 00:20:57.000
+standard pressure and approximately ideal gas behaviour, the Nernst equation
+
+00:20:57.000 --> 00:21:02.780
+gives potential minus zero point zero five nine one six times p H in volts
+
+00:21:02.780 --> 00:21:04.820
+relative to the standard hydrogen electrode.
+
+00:21:04.820 --> 00:21:10.140
+Thus p H three gives minus zero point one seven seven four eight volt,
+
+00:21:10.800 --> 00:21:14.500
+while p H five gives minus zero point two nine five eight zero volt.
+
+00:21:15.420 --> 00:21:18.700
+The potential difference between these otherwise matched electrodes has
+
+00:21:18.700 --> 00:21:21.280
+magnitude zero point one one eight three two volt.
+
+00:21:22.120 --> 00:21:26.100
+The lower p H side has the more positive reduction potential and acts as the
+
+00:21:26.100 --> 00:21:27.220
+cathode in the ideal cell.
+
+00:21:28.080 --> 00:21:31.375
+This model neglects liquid junction potentials and uses hydrogen ion
+
+00:21:31.375 --> 00:21:31.860
+activities
+
+00:21:31.860 --> 00:21:34.240
+through the definition of p H.
+
+00:21:34.240 --> 00:21:36.640
+A nonstandard gas pressure adds its own term.
+
+00:21:37.640 --> 00:21:40.709
+Always state temperature, gas pressure and reference before treating a
+
+00:21:40.709 --> 00:21:41.060
+measured
+
+00:21:41.060 --> 00:21:42.540
+potential as a p H indicator.
+
+00:21:42.792 --> 00:21:46.870
+Water electrolysis produces different gas amounts at the two electrodes
+
+00:21:46.870 --> 00:21:47.272
+because
+
+00:21:47.272 --> 00:21:48.852
+their electron requirements differ.
+
+00:21:49.592 --> 00:21:53.892
+In a supplied ideal acidified water model with inert electrodes, the cathode
+
+00:21:53.892 --> 00:21:59.212
+reduces hydrogen ions to hydrogen, while the anode oxidizes water to oxygen.
+
+00:22:00.112 --> 00:22:04.632
+Each hydrogen molecule corresponds to two electrons, and each oxygen molecule
+
+00:22:04.632 --> 00:22:05.352
+to four.
+
+00:22:06.232 --> 00:22:10.968
+Suppose the same circuit passes nineteen thousand three hundred coulombs,
+
+00:22:10.968 --> 00:22:11.292
+using
+
+00:22:11.292 --> 00:22:15.012
+Faraday constant ninety six thousand five hundred coulombs per mole.
+
+00:22:16.092 --> 00:22:18.832
+The electron amount is zero point two zero zero mole.
+
+00:22:20.172 --> 00:22:24.092
+At full current efficiency, hydrogen production is zero point one zero zero
+
+00:22:24.092 --> 00:22:28.312
+mole and oxygen production zero point zero five zero zero mole.
+
+00:22:29.572 --> 00:22:34.192
+At the same temperature and pressure, with approximately ideal gas behaviour,
+
+00:22:34.192 --> 00:22:36.852
+their dry volumes are in ratio two to one.
+
+00:22:37.672 --> 00:22:41.372
+Do not add the electrode electron amounts: the same circuit charge passes
+
+00:22:41.372 --> 00:22:42.492
+through both electrodes.
+
+00:22:44.032 --> 00:22:48.132
+Competing electrode reactions, gas dissolution, leakage and collection over
+
+00:22:48.132 --> 00:22:51.432
+water can change observed amounts or require corrections.
+
+00:22:52.292 --> 00:22:56.292
+This model specifically excludes chloride or other species that could change
+
+00:22:56.292 --> 00:22:57.132
+the anode product.
+
+00:22:58.632 --> 00:23:01.792
+Balance each half reaction before translating charge into a collected gas
+
+00:23:01.792 --> 00:23:02.052
+amount.

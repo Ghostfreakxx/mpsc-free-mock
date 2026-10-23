@@ -1113,7 +1113,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-principles", subject: "Chemistry", unit: 14, number: "C01", title: organicPrinciples.title,
-    description: "Thirteen narrated chapters on naming, unsaturation, stereochemistry, electron arrows, formal charge, acidity, proton transfer and conformations.",
+    description: "Seventeen narrated chapters on naming, R/S and E/Z, enantiomeric excess, bond cleavage, tautomerism, electron arrows, acidity and conformations.",
     scope: "Recorded Unit 14 foundation and worked applications with original practice. Full CIP tie-breaking, multiple-centre stereochemistry, additional solvent datasets and mechanisms remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-principles.lecture.v1",
     audio: "/lectures/organic-principles/narration-marin.mp3",
@@ -1173,7 +1173,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "redox-electrochemistry", subject: "Chemistry", unit: 7, number: "C07", title: electrochemistry.title,
-    description: "Fourteen narrated chapters on redox, Nernst and concentration cells, voltage and equilibrium, conductance, series electrolysis, batteries and corrosion.",
+    description: "Eighteen narrated chapters on redox, combined potentials, disproportionation, hydrogen-electrode pH, gas electrolysis, conductance, batteries and corrosion.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 7 foundation with original practice. Electrode classifications, detailed dry-cell mechanisms and broader mixed problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.redox-electrochemistry.lecture.v1",
     audio: "/lectures/redox-electrochemistry/narration-marin.mp3",

@@ -41,6 +41,18 @@
     {
       "title": "OpenStax: substituent effects on acidity",
       "url": "https://openstax.org/books/organic-chemistry/pages/20-4-substituent-effects-on-acidity"
+    },
+    {
+      "title": "OpenStax: sequence rules for configuration",
+      "url": "https://openstax.org/books/organic-chemistry/pages/5-5-sequence-rules-for-specifying-configuration"
+    },
+    {
+      "title": "OpenStax: optical activity",
+      "url": "https://openstax.org/books/organic-chemistry/pages/5-3-optical-activity"
+    },
+    {
+      "title": "OpenStax: keto–enol tautomerism",
+      "url": "https://openstax.org/books/organic-chemistry/pages/22-1-keto-enol-tautomerism"
     }
   ],
   "chapters": [
@@ -373,6 +385,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "R and S require priority and viewing direction",
+      "formula": "Lowest priority away: clockwise 1→2→3 is R; anticlockwise is S",
+      "script": "An R or S label describes a spatial arrangement, not the sign of optical rotation. Consider a tetrahedral carbon attached to bromine, chlorine, fluorine and hydrogen. Their directly attached atomic numbers give priorities bromine first, chlorine second, fluorine third and hydrogen fourth. In the stated viewing diagram, hydrogen points directly away from the viewer. Bromine is at the top, chlorine at the lower right and fluorine at the lower left. Following priorities one, two and three is clockwise, so this arrangement is R. Interchanging the chlorine and fluorine positions gives S. If the lowest priority group points toward the viewer instead, the apparent clockwise or anticlockwise result must be reversed. Rotating a molecule in space does not interchange its configuration, while exchanging one pair of groups reverses a single tetrahedral centre. This example avoids priority ties; comparing carbon chains or multiple bonds requires additional sequence rules. Do not infer a positive optical rotation from R or a negative rotation from S: that relationship requires experimental information.",
+      "points": [
+        "Br, Cl, F, H · Atomic numbers 35>17>9>1 · Priorities 1,2,3,4",
+        "H away; Br top; Cl lower right · F lower left; 1→2→3 clockwise · R for the stated view",
+        "Exchange Cl and F · One pair interchanged · S; rotation sign not implied"
+      ],
+      "board": {
+        "heading": "R and S require priority and viewing direction",
+        "columns": [
+          "Given / case",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Br, Cl, F, H",
+            "Atomic numbers 35>17>9>1",
+            "Priorities 1,2,3,4"
+          ],
+          [
+            "H away; Br top; Cl lower right",
+            "F lower left; 1→2→3 clockwise",
+            "R for the stated view"
+          ],
+          [
+            "Exchange Cl and F",
+            "One pair interchanged",
+            "S; rotation sign not implied"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Enantiomeric excess is a difference in fractions",
+      "formula": "ee = |xR−xS|; a binary mixture has xmajor=(1+ee)/2",
+      "script": "A mixture containing two enantiomers can have unequal amounts without being a pure enantiomer. Suppose a sample contains seventy percent R and thirty percent S by amount, with no other components. Enantiomeric excess is the absolute difference, forty percent in favour of R. It is not seventy percent. Conversely, forty percent excess of one enantiomer means seventy percent major and thirty percent minor, because their fractions sum to one as well as differing by zero point four zero. In a supplied ideal linear optical-rotation model, suppose pure R has specific rotation plus fifty under fixed solvent, temperature and wavelength conditions. Pure S then has minus fifty under the same conditions, and the mixture has plus twenty. This inference assumes only that enantiomeric pair contributes and the stated additive model applies. The sign assigned to R is supplied experimental information, not a consequence of the R label. Zero net rotation can result from a racemic mixture, but it does not prove every molecule is achiral. Other components or changing measurement conditions can invalidate a simple excess calculation.",
+      "points": [
+        "Binary sample: R 70%, S 30% · ee=70−30 · 40% excess R",
+        "Given pure R rotation +50 · 0.70(+50)+0.30(−50) · Mixture rotation +20",
+        "Given ee=0.40 · xmajor=(1+0.40)/2 · 0.70 major; 0.30 minor"
+      ],
+      "board": {
+        "heading": "Enantiomeric excess is a difference in fractions",
+        "columns": [
+          "Given / case",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Binary sample: R 70%, S 30%",
+            "ee=70−30",
+            "40% excess R"
+          ],
+          [
+            "Given pure R rotation +50",
+            "0.70(+50)+0.30(−50)",
+            "Mixture rotation +20"
+          ],
+          [
+            "Given ee=0.40",
+            "xmajor=(1+0.40)/2",
+            "0.70 major; 0.30 minor"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Bond cleavage tracks one electron or an electron pair",
+      "formula": "Homolysis: A–B → A· + B·; heterolysis: A–B → A⁺ + B⁻",
+      "script": "The products of bond cleavage depend on where the two bonding electrons go. In homolytic cleavage of a neutral single bond, one electron goes to each fragment. The elementary products are two radicals, represented with dots for unpaired electrons, and electron movement uses single headed fishhook arrows. In heterolytic cleavage, both bonding electrons go to one fragment. For the stated neutral A B bond with both electrons assigned to B, the elementary products are A plus and B minus, shown with a full headed curved arrow from the bond toward B. Overall charge is conserved in both descriptions. The labels do not imply that any chosen bond will cleave spontaneously, or that isolated ions remain stable in every solvent. Bond energy, light, temperature, solvent and the surrounding mechanism determine which pathway is relevant. Radicals are not automatically positively charged, and a negative ion can have paired electrons. Start each electron arrow at an existing electron source and keep electron count separate from formal charge when checking a proposed elementary step.",
+      "points": [
+        "Homolysis of neutral A–B · One bonding electron to each · A· + B·; fishhook arrows",
+        "Heterolysis; pair goes to B · Both bonding electrons to B · A⁺ + B⁻; pair arrow",
+        "Conservation checks · Two electrons; total charge zero · Path depends on actual conditions"
+      ],
+      "board": {
+        "heading": "Bond cleavage tracks one electron or an electron pair",
+        "columns": [
+          "Given / case",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Homolysis of neutral A–B",
+            "One bonding electron to each",
+            "A· + B·; fishhook arrows"
+          ],
+          [
+            "Heterolysis; pair goes to B",
+            "Both bonding electrons to B",
+            "A⁺ + B⁻; pair arrow"
+          ],
+          [
+            "Conservation checks",
+            "Two electrons; total charge zero",
+            "Path depends on actual conditions"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Tautomers move atoms; resonance contributors do not",
+      "formula": "CH₃–C(=O)–CH₃ ⇌ CH₂=C(OH)–CH₃ is keto–enol tautomerism",
+      "script": "Keto enol tautomerism and resonance are different structural relationships. Acetone has three carbon atoms, six hydrogens and one oxygen. A corresponding enol has a carbon carbon double bond, an oxygen hydrogen bond and the same overall molecular formula. In this interconversion, a hydrogen changes its attachment and the positions of the double bonds change. The two neutral structures are constitutional isomers that can be in chemical equilibrium, not alternative resonance drawings of one fixed atomic arrangement. By contrast, resonance contributors of an enolate keep every atom in place and differ in electron placement and formal charges. Acetone has six alpha hydrogens on two symmetry equivalent methyl groups; these give one distinct constitutional monoenol connectivity. This statement does not count different conformations. The simple enolization route needs an alpha hydrogen on a carbon adjacent to the carbonyl. The equilibrium proportion is not fixed at fifty percent and depends on the actual compound and conditions. Recognize whether a drawing changes an atom attachment before choosing an equilibrium arrow or a resonance arrow.",
+      "points": [
+        "Acetone ⇌ its enol · H attachment and bond positions change · Tautomers; formula C₃H₆O",
+        "Enolate resonance contributors · Atomic positions unchanged · Electrons and formal charges differ",
+        "Acetone symmetry · Six equivalent alpha H atoms · One constitutional monoenol"
+      ],
+      "board": {
+        "heading": "Tautomers move atoms; resonance contributors do not",
+        "columns": [
+          "Given / case",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Acetone ⇌ its enol",
+            "H attachment and bond positions change",
+            "Tautomers; formula C₃H₆O"
+          ],
+          [
+            "Enolate resonance contributors",
+            "Atomic positions unchanged",
+            "Electrons and formal charges differ"
+          ],
+          [
+            "Acetone symmetry",
+            "Six equivalent alpha H atoms",
+            "One constitutional monoenol"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -595,6 +747,94 @@
       ],
       "answer": 3,
       "explanation": "Rotation changes torsion while preserving connectivity and the same ethane molecule."
+    },
+    {
+      "question": "For a tetrahedral carbon attached directly to Br, Cl, F and H, the highest-priority substituent is:",
+      "options": [
+        "H",
+        "Br",
+        "Cl",
+        "F"
+      ],
+      "answer": 1,
+      "explanation": "Directly attached atomic number decides this untied case: Br 35 outranks Cl 17, F 9 and H 1."
+    },
+    {
+      "question": "With priority 4 pointing away, the path 1→2→3 is clockwise. Configuration is:",
+      "options": [
+        "S",
+        "Racemic",
+        "R",
+        "Always optically positive"
+      ],
+      "answer": 2,
+      "explanation": "Clockwise gives R only after the lowest-priority substituent is oriented away from the viewer."
+    },
+    {
+      "question": "A binary enantiomer mixture is 70% R and 30% S. Enantiomeric excess is:",
+      "options": [
+        "70% R",
+        "30% S",
+        "100% R",
+        "40% R"
+      ],
+      "answer": 3,
+      "explanation": "The excess is the difference 70−30=40%, in favour of the R enantiomer."
+    },
+    {
+      "question": "In a supplied additive model, pure R has specific rotation +50 and pure S −50. A 70:30 R/S mixture gives:",
+      "options": [
+        "+20",
+        "+40",
+        "+50",
+        "−20"
+      ],
+      "answer": 0,
+      "explanation": "Use the stated same-condition linear model: 0.70×50+0.30×(−50)=+20."
+    },
+    {
+      "question": "Homolysis of a neutral A–B single bond gives the elementary products:",
+      "options": [
+        "A+ and B−",
+        "A radical and B radical",
+        "Two cations",
+        "Two anions"
+      ],
+      "answer": 1,
+      "explanation": "One bonding electron goes to each fragment; each product is a radical in this elementary model."
+    },
+    {
+      "question": "Heterolysis of neutral A–B assigning both bond electrons to B gives:",
+      "options": [
+        "A− and B+",
+        "A radical and B radical",
+        "A+ and B−",
+        "A+ and B+"
+      ],
+      "answer": 2,
+      "explanation": "The entire bonding pair goes to B, giving A+ and B− while conserving the overall neutral charge."
+    },
+    {
+      "question": "Acetone and CH2=C(OH)CH3 are related as:",
+      "options": [
+        "Resonance contributors",
+        "Conformers only",
+        "Enantiomers",
+        "Keto–enol tautomers"
+      ],
+      "answer": 3,
+      "explanation": "Hydrogen attachment changes along with bond order, so these are distinct constitutional tautomers."
+    },
+    {
+      "question": "Ignoring conformations, acetone gives how many distinct constitutional monoenol connectivities by ordinary alpha enolization?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Six"
+      ],
+      "answer": 0,
+      "explanation": "Its two methyl groups are symmetry equivalent; the six alpha hydrogens lead to the same monoenol connectivity."
     }
   ]
 }

@@ -33,6 +33,10 @@
     {
       "title": "OpenStax: corrosion",
       "url": "https://openstax.org/books/chemistry-2e/pages/17-6-corrosion"
+    },
+    {
+      "title": "OpenStax: electrode and cell potentials",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-3-electrode-and-cell-potentials"
     }
   ],
   "chapters": [
@@ -525,6 +529,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Combine electrode steps through Gibbs energies",
+      "formula": "E°overall = (n₁E°₁+n₂E°₂)/(n₁+n₂) for sequential reductions",
+      "script": "Electrode potentials cannot generally be added like reaction energies. Consider supplied reduction steps for the same element in one consistent medium. The three plus ion accepts one electron to become the two plus ion, with standard reduction potential plus zero point six zero volt. The two plus ion accepts two electrons to form the metal, with potential minus zero point three zero volt. The overall step transfers three electrons. Convert each potential to standard Gibbs energy using minus n F E, add the two energies, then divide by minus three F. The resulting potential is zero volt, because one times zero point six zero plus two times minus zero point three zero equals zero. The simple arithmetic mean would instead give plus zero point one five volt, which is wrong. All endpoint states and standard-state conventions must match for this cancellation. Zero standard potential means zero standard Gibbs energy for the combined half-reaction relative to the chosen reference, not that every actual mixture is at equilibrium. Composition can still change the electrode potential.",
+      "points": [
+        "M³⁺ + e⁻ → M²⁺ · n₁=1; E°₁=+0.60 V · ΔG°₁=−0.60F",
+        "M²⁺ + 2e⁻ → M · n₂=2; E°₂=−0.30 V · ΔG°₂=+0.60F",
+        "M³⁺ + 3e⁻ → M · E°=(0.60−0.60)/3 · 0.00 V; match endpoint states"
+      ],
+      "board": {
+        "heading": "Combine electrode steps through Gibbs energies",
+        "columns": [
+          "Given / case",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "M³⁺ + e⁻ → M²⁺",
+            "n₁=1; E°₁=+0.60 V",
+            "ΔG°₁=−0.60F"
+          ],
+          [
+            "M²⁺ + 2e⁻ → M",
+            "n₂=2; E°₂=−0.30 V",
+            "ΔG°₂=+0.60F"
+          ],
+          [
+            "M³⁺ + 3e⁻ → M",
+            "E°=(0.60−0.60)/3",
+            "0.00 V; match endpoint states"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Disproportionation oxidizes and reduces one species",
+      "formula": "2Cu⁺ → Cu²⁺ + Cu; E° = 0.52−0.15 = +0.37 V",
+      "script": "Disproportionation converts one oxidation state into both a higher and a lower oxidation state. Use supplied rounded aqueous copper reduction potentials: copper one plus accepting one electron to become copper metal has plus zero point five two volt, and copper two plus accepting one electron to become copper one plus has plus zero point one five volt. Reverse the second half-reaction to oxidize one copper one plus ion. Add it to reduction of another copper one plus ion. The balanced result is two copper one plus ions forming one copper two plus ion and one copper atom. Standard cell potential is zero point five two minus zero point one five, or plus zero point three seven volt. One electron transfers per written reaction, so standard Gibbs energy is minus zero point three seven F. Positive standard voltage favours disproportionation under the stated standard conditions. It does not guarantee the same behaviour in every ligand environment: complexation, precipitation and activities can alter the comparison. Check atom balance, charge balance and the electron count before inferring a redox direction.",
+      "points": [
+        "Reduction: Cu⁺ + e⁻ → Cu · Supplied E°=+0.52 V · Cu(+1) becomes Cu(0)",
+        "Oxidation: Cu⁺ → Cu²⁺ + e⁻ · Reverse E°red=+0.15 V · Cu(+1) becomes Cu(+2)",
+        "Net: 2Cu⁺ → Cu²⁺ + Cu · 0.52−0.15=+0.37 V · n=1; stated aqueous conditions"
+      ],
+      "board": {
+        "heading": "Disproportionation oxidizes and reduces one species",
+        "columns": [
+          "Given / case",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Reduction: Cu⁺ + e⁻ → Cu",
+            "Supplied E°=+0.52 V",
+            "Cu(+1) becomes Cu(0)"
+          ],
+          [
+            "Oxidation: Cu⁺ → Cu²⁺ + e⁻",
+            "Reverse E°red=+0.15 V",
+            "Cu(+1) becomes Cu(+2)"
+          ],
+          [
+            "Net: 2Cu⁺ → Cu²⁺ + Cu",
+            "0.52−0.15=+0.37 V",
+            "n=1; stated aqueous conditions"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Hydrogen-electrode potential depends on pH",
+      "formula": "At 298 K and pH₂/p°=1: E = −0.05916 pH volts",
+      "script": "A hydrogen electrode is at zero standard potential only under its specified standard conditions. Write the reduction as two hydrogen ions plus two electrons forming hydrogen gas. At two hundred ninety eight kelvin, with hydrogen pressure equal to the standard pressure and approximately ideal gas behaviour, the Nernst equation gives potential minus zero point zero five nine one six times p H in volts relative to the standard hydrogen electrode. Thus p H three gives minus zero point one seven seven four eight volt, while p H five gives minus zero point two nine five eight zero volt. The potential difference between these otherwise matched electrodes has magnitude zero point one one eight three two volt. The lower p H side has the more positive reduction potential and acts as the cathode in the ideal cell. This model neglects liquid junction potentials and uses hydrogen ion activities through the definition of p H. A nonstandard gas pressure adds its own term. Always state temperature, gas pressure and reference before treating a measured potential as a p H indicator.",
+      "points": [
+        "298 K; hydrogen p/p°=1 · E=−0.05916 pH · Relative to standard H electrode",
+        "pH 3 versus pH 5 · −0.17748 versus −0.29580 V · Lower pH has higher Ered",
+        "Matched ideal cell · Ecathode−Eanode · +0.11832 V; junction neglected"
+      ],
+      "board": {
+        "heading": "Hydrogen-electrode potential depends on pH",
+        "columns": [
+          "Given / case",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "298 K; hydrogen p/p°=1",
+            "E=−0.05916 pH",
+            "Relative to standard H electrode"
+          ],
+          [
+            "pH 3 versus pH 5",
+            "−0.17748 versus −0.29580 V",
+            "Lower pH has higher Ered"
+          ],
+          [
+            "Matched ideal cell",
+            "Ecathode−Eanode",
+            "+0.11832 V; junction neglected"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Water electrolysis links charge to two gas amounts",
+      "formula": "2H₂O → 2H₂ + O₂; n(H₂)=Q/(2F), n(O₂)=Q/(4F)",
+      "script": "Water electrolysis produces different gas amounts at the two electrodes because their electron requirements differ. In a supplied ideal acidified-water model with inert electrodes, the cathode reduces hydrogen ions to hydrogen, while the anode oxidizes water to oxygen. Each hydrogen molecule corresponds to two electrons, and each oxygen molecule to four. Suppose the same circuit passes nineteen thousand three hundred coulombs, using Faraday constant ninety six thousand five hundred coulombs per mole. The electron amount is zero point two zero zero mole. At full current efficiency, hydrogen production is zero point one zero zero mole and oxygen production zero point zero five zero zero mole. At the same temperature and pressure, with approximately ideal gas behaviour, their dry volumes are in ratio two to one. Do not add the electrode electron amounts: the same circuit charge passes through both electrodes. Competing electrode reactions, gas dissolution, leakage and collection over water can change observed amounts or require corrections. This model specifically excludes chloride or other species that could change the anode product. Balance each half-reaction before translating charge into a collected gas amount.",
+      "points": [
+        "Cathode: 2H⁺ + 2e⁻ → H₂ · Q/F=19300/96500 · 0.200 mol electrons",
+        "Anode: 2H₂O → O₂ + 4H⁺ + 4e⁻ · H₂=0.200/2; O₂=0.200/4 · 0.100 mol H₂; 0.0500 mol O₂",
+        "Same T and P; ideal dry gases · Volume ratio follows mole ratio · H₂:O₂ = 2:1; full efficiency"
+      ],
+      "board": {
+        "heading": "Water electrolysis links charge to two gas amounts",
+        "columns": [
+          "Given / case",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Cathode: 2H⁺ + 2e⁻ → H₂",
+            "Q/F=19300/96500",
+            "0.200 mol electrons"
+          ],
+          [
+            "Anode: 2H₂O → O₂ + 4H⁺ + 4e⁻",
+            "H₂=0.200/2; O₂=0.200/4",
+            "0.100 mol H₂; 0.0500 mol O₂"
+          ],
+          [
+            "Same T and P; ideal dry gases",
+            "Volume ratio follows mole ratio",
+            "H₂:O₂ = 2:1; full efficiency"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -725,6 +869,94 @@
       ],
       "answer": 2,
       "explanation": "The sacrificial metal can oxidize in place of iron while the galvanic conditions and contact support protection."
+    },
+    {
+      "question": "Sequential reductions transfer one electron at +0.60 V, then two electrons at −0.30 V. Combined standard potential is:",
+      "options": [
+        "0.00 V",
+        "+0.15 V",
+        "+0.30 V",
+        "−0.90 V"
+      ],
+      "answer": 0,
+      "explanation": "Add standard Gibbs energies, giving the electron-weighted potential (1×0.60+2×−0.30)/3=0.00 V."
+    },
+    {
+      "question": "The thermodynamic quantity added when combining matched electrode half-reactions is:",
+      "options": [
+        "Electrode potential without weighting",
+        "Standard Gibbs energy change",
+        "pH",
+        "Current efficiency"
+      ],
+      "answer": 1,
+      "explanation": "Gibbs energy is extensive and additive for matched reaction steps; electrode potential is not."
+    },
+    {
+      "question": "Supplied E°red(Cu+/Cu)=+0.52 V and E°red(Cu2+/Cu+)=+0.15 V. For 2Cu+→Cu2++Cu, E° is:",
+      "options": [
+        "−0.37 V",
+        "+0.67 V",
+        "+0.37 V",
+        "0.00 V"
+      ],
+      "answer": 2,
+      "explanation": "Reduce one Cu+ and oxidize another: 0.52−0.15=+0.37 V for disproportionation."
+    },
+    {
+      "question": "For that written disproportionation, the electron transfer count n in ΔG°=−nFE° is:",
+      "options": [
+        "Two because two Cu+ react",
+        "Three",
+        "Zero",
+        "One"
+      ],
+      "answer": 3,
+      "explanation": "One Cu+ loses one electron while another accepts it; n is one for the reaction as written."
+    },
+    {
+      "question": "At 298 K and standard hydrogen gas pressure, hydrogen electrode potential at pH 3 is:",
+      "options": [
+        "−0.17748 V",
+        "+0.17748 V",
+        "−0.05916 V",
+        "0 V at every pH"
+      ],
+      "answer": 0,
+      "explanation": "The supplied Nernst form is E=−0.05916 pH V, giving −0.17748 V relative to SHE."
+    },
+    {
+      "question": "In an ideal hydrogen-electrode cell at pH 3 and pH 5 with equal standard gas pressures, the cathode is:",
+      "options": [
+        "The pH 5 side",
+        "The pH 3 side",
+        "Neither side can reduce",
+        "Determined only by electrode size"
+      ],
+      "answer": 1,
+      "explanation": "The pH 3 electrode has the more positive reduction potential and is the cathode in this model."
+    },
+    {
+      "question": "Ideal water electrolysis passes 19300 C with F=96500 C/mol. At full efficiency, hydrogen amount is:",
+      "options": [
+        "0.200 mol",
+        "0.0500 mol",
+        "0.100 mol",
+        "0.400 mol"
+      ],
+      "answer": 2,
+      "explanation": "The charge is 0.200 mol electrons; forming each H2 molecule requires two electrons, giving 0.100 mol H2."
+    },
+    {
+      "question": "For that ideal acidified-water electrolysis, the oxygen amount is:",
+      "options": [
+        "0.200 mol",
+        "0.100 mol",
+        "0.0250 mol",
+        "0.0500 mol"
+      ],
+      "answer": 3,
+      "explanation": "Each O2 molecule corresponds to four electrons, so 0.200 mol electrons gives 0.0500 mol O2."
     }
   ]
 }

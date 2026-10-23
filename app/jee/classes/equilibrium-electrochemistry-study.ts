@@ -1,3 +1,4 @@
+import { extendRedoxStereochemistryLesson } from "./redox-stereochemistry-study.ts";
 import { extendKineticsCoordinationEquilibriumLesson } from "./kinetics-coordination-equilibrium-study.ts";
 import { equilibriumElectrochemistryPracticalAdditions as additions } from "./equilibrium-electrochemistry-practical-additions.ts";
 import type { StudyLesson } from "./course";
@@ -51,7 +52,7 @@ export const equilibriumElectrochemistryLessons: StudyLesson[] = [
     title: "Redox and electrochemistry: electrons, cells and calculations",
     summary: "Balance electron transfer, distinguish cell electrodes and connect voltage with equilibrium and electrolysis.",
     prerequisites: "Oxidation numbers, moles, ionic equations, concentration and logarithms.",
-    remaining: "Unit 7 foundation with a fourteen-chapter Marin recording and written notes, not complete unit coverage. Electrode classifications, additional weak-electrolyte conductance data, detailed dry-cell chemistry and broader mixed problems remain for further practice.",
+    remaining: "Unit 7 foundation with a eighteen-chapter Marin recording and written notes, not complete unit coverage. Electrode classifications, additional weak-electrolyte conductance data, detailed dry-cell chemistry and broader mixed problems remain for further practice.",
     sections: [
       { title: "Follow oxidation numbers, not just oxygen", paragraphs: ["Oxidation raises oxidation number; reduction lowers it. The oxidizing agent accepts electrons and is itself reduced. The reducing agent supplies electrons and is itself oxidized. These statements remain useful when a reaction contains no oxygen, such as zinc transferring electrons to copper ions.", "The sum of oxidation numbers equals the species charge. Elemental species have oxidation number zero. Oxygen is usually minus two but is minus one in peroxides; hydrogen is usually plus one but is minus one in metal hydrides. Fluorine in compounds is minus one. Apply exceptions before assigning an unknown value."], formula: "Oxidation: increase; reduction: decrease; sum of oxidation numbers = total charge" },
       { title: "Balance atoms and charge separately", paragraphs: ["In acidic solution, permanganate reduces to Mn2+. Balance oxygen with water, hydrogen with H+, and charge with electrons. Its half-reaction uses eight hydrogen ions and five electrons to form four water molecules. Iron(II) loses one electron to become iron(III), so multiply that half-reaction by five before adding.", "The result is MnO4- + 8H+ + 5Fe2+ -> Mn2+ + 4H2O + 5Fe3+. Both sides have net charge plus seventeen. For basic medium, neutralize any hydrogen ions by adding equal hydroxide ions to both sides, combine water and cancel it where possible. Finally check every element and total charge again."], formula: "MnO4- + 8H+ + 5e- -> Mn2+ + 4H2O in acidic medium" },
@@ -162,3 +163,5 @@ for (const lesson of equilibriumElectrochemistryLessons) {
 }
 
 for (const lesson of equilibriumElectrochemistryLessons) extendKineticsCoordinationEquilibriumLesson(lesson);
+
+for (const lesson of equilibriumElectrochemistryLessons) extendRedoxStereochemistryLesson(lesson);
