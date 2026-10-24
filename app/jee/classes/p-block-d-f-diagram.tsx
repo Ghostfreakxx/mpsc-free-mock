@@ -1,3 +1,4 @@
+import SulfurPeroxoDiagram from './sulfur-peroxo-diagram';
 import PhosphorusOxoacidDiagram from "./phosphorus-oxoacid-diagram";
 import pBlock from "../../data/jee-p-block-lecture.json";
 import dFBlock from "../../data/jee-d-f-block-lecture.json";
@@ -6,6 +7,7 @@ import styles from "./lecture.module.css";
 
 const recordings={"p-block":pBlock,"d-f-block":dFBlock};
 export default function PBlockDFDiagram({lesson,chapter}:{lesson:keyof typeof recordings;chapter:number}) {
+ if(lesson==="p-block" && chapter===21)return <SulfurPeroxoDiagram/>;
  if(lesson==="p-block" && chapter===16)return <PhosphorusOxoacidDiagram/>;
  if(lesson==="d-f-block" && chapter===12)return <AnalysisFOccupancyDiagram kind="manganate"/>;
  if(lesson==="d-f-block" && chapter===14)return <AnalysisFOccupancyDiagram kind="f-occupancy"/>;

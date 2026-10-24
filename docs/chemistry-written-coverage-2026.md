@@ -25,8 +25,8 @@ Questions are original practice, not represented as official PYQs.
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 18 | 19 | 13 | 26 / 26 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 18 | 21 | 16 | 34 / 34 |
 | 9 | [Periodic Trends](/jee/classes/periodic-trends) | 21 | 19 | 12 | 32 / 32 |
-| 10 | [P-Block](/jee/classes/p-block) | 19 | 17 | 9 | 26 / 26 |
-| 11 | [D/F-Block](/jee/classes/d-f-block) | 19 | 17 | 9 | 26 / 26 |
+| 10 | [P-Block](/jee/classes/p-block) | 23 | 21 | 12 | 34 / 34 |
+| 11 | [D/F-Block](/jee/classes/d-f-block) | 23 | 21 | 12 | 34 / 34 |
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 18 | 21 | 16 | 34 / 34 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 21 | 21 | 12 | 32 / 32 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 21 | 24 | 17 | 36 / 36 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Organic Principles adds CIP tie-breaking with isotope and multiple-bond conventions, meso stereoisomer counting, anti/gauche butane Newman drawings and systematic C4H10O constitutional versus configurational enumeration.
+P-Block adds lower-state redox evidence with lead dioxide, nitrogen oxide association versus disproportionation, sulfur oxoacid peroxide connectivity and xenon domain/shape counts. Selected compounds illustrate the official trend-focused scope rather than claiming that every historical preparation is required.
 
-Purification and Analysis adds silver-test interference reasoning, mixed AgCl/AgBr gravimetric balances, two-solute crystallization and wash recovery, and ideal liquid/vapour composition for distillation. The calculations state their ideality, recovery and purity assumptions.
+D/F-Block adds environment-dependent Cu(I) stability and CuI precipitation, transition absorption energies, consequences of lanthanoid contraction and a balanced iron redox catalytic cycle. Reaction stages are bookkeeping models, not necessarily elementary collisions or laboratory recipes.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific primary references, including OpenStax CIP rules, meso compounds, conformations, ether naming, quantitative analysis and Raoult-law distillation; IIT Kanpur SATHEE elemental analysis; and University of York recrystallization guidance. Numerical data and MCQs in this batch are original practice.
+The notes contain lesson-specific primary references, including OpenStax periodicity, nitrogen and coordination spectroscopy; IGNOU Group 16 oxoacids; IIT Kanpur SATHEE p-block structures; Chemguide copper chemistry and transition-metal catalytic cycles; and Karpagam Academy lanthanoid teaching notes. Numerical data and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

@@ -1293,7 +1293,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "p-block", subject: "Chemistry", unit: 10, number: "C19", title: pBlock.title,
-    description: "Nineteen narrated chapters on groups 13–18, boric acid, phosphorus oxoacid structures, ozone, carbon allotropes and first-member differences.",
+    description: "Twenty-three narrated chapters on groups 13–18, lower-state redox, nitrogen oxides, sulfur peroxide links, xenon shapes, oxoacids and first-member differences.",
     scope: "Recorded Unit 10 trend foundation with original practice. Further element-specific comparisons, physical-property datasets and detailed structural drawings remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.p-block.lecture.v1",
     audio: "/lectures/p-block/narration-marin.mp3",
@@ -1303,7 +1303,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "d-f-block", subject: "Chemistry", unit: 11, number: "C20", title: dFBlock.title,
-    description: "Nineteen narrated chapters on d/f-block trends, chromite oxidation, chromate equilibria, manganate and permanganate, and selected lanthanoid configurations.",
+    description: "Twenty-three narrated chapters on d/f-block trends, copper iodide chemistry, absorption energies, contraction, iron catalysis and oxidation-state balances.",
     scope: "Recorded Unit 11 foundation with original practice. Further preparation conditions and structures, occurrence and uses, detailed actinoid configurations and extended comparisons remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.d-f-block.lecture.v1",
     audio: "/lectures/d-f-block/narration-marin.mp3",
