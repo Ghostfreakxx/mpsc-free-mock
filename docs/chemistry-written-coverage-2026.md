@@ -21,11 +21,11 @@ Questions are original practice, not represented as official PYQs.
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 17 | 16 | 9 | 26 / 26 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 19 | 21 | 12 | 26 / 26 |
 | 5 | [Solutions](/jee/classes/solutions) | 19 | 21 | 12 | 26 / 26 |
-| 6 | [Equilibrium](/jee/classes/equilibrium) | 17 | 17 | 13 | 26 / 26 |
+| 6 | [Equilibrium](/jee/classes/equilibrium) | 21 | 21 | 16 | 34 / 34 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 18 | 19 | 13 | 26 / 26 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 18 | 21 | 16 | 34 / 34 |
 | 9 | [Periodic Trends](/jee/classes/periodic-trends) | 17 | 15 | 9 | 24 / 24 |
-| 10 | [P-Block](/jee/classes/p-block) | 15 | 13 | 6 | 18 / 18 |
+| 10 | [P-Block](/jee/classes/p-block) | 19 | 17 | 9 | 26 / 26 |
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 19 | 17 | 9 | 26 / 26 |
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 18 | 21 | 16 | 34 / 34 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 17 | 17 | 9 | 24 / 24 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Chemical Kinetics adds a baseline-corrected signal model, piecewise constant-temperature first-order exposure, Arrhenius comparisons with unequal prefactors and a clearly labelled supporting equal-rate sequential-reaction model. The signal graph uses its stated analytic calibration and first-order law.
+P-Block adds boric acid as an aqueous Lewis-acid example, phosphorus oxoacid basicity with an O–H/P–H structural diagram, ozone resonance and carbon allotrope connectivity. These representative compounds illustrate structure/property comparisons; they are not a claim that every historical p-block preparation is required by the current syllabus.
 
-Coordination Compounds adds octahedral d5 pairing-energy comparisons, assigned absorption-wavelength calculations, competition between two ligands at supplied free concentrations and a thermodynamic chelation example. Band assignments, omitted species and simplified spin assumptions remain explicit.
+Equilibrium adds water ionization in a very dilute strong-acid model, the distinction between ionized fraction and hydrogen-ion concentration on dilution, A2B3 solubility stoichiometry and a pH-dependent hydroxide-precipitation model. Free-ion, ideality and competing-equilibrium exclusions remain explicit.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific primary references, including OpenStax integrated rate laws, collision theory, coordination chemistry, spectroscopic and magnetic properties, and free energy. Numerical data and MCQs in this batch are original practice.
+The notes contain lesson-specific primary references, including NCERT p-block examples, Andrew R. Barron’s phosphorus oxoacid teaching text and OpenStax nonmetal structures, resonance, acid/base equilibria, precipitation and coupled equilibria. Numerical data and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

@@ -1163,7 +1163,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "equilibrium", subject: "Chemistry", unit: 6, number: "C06", title: equilibrium.title,
-    description: "Seventeen narrated chapters on equilibrium constants, gas dissociation, buffers, hydrolysis, titration pH, weak-base balances and selective precipitation.",
+    description: "Twenty-one narrated chapters on equilibrium constants, very dilute acids, ionization fractions, buffers, hydrolysis, solubility stoichiometry and pH-dependent precipitation.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 6 foundation with original practice. Further multistage ionization, nonideal activities, physical-equilibrium calculations and mixed weak-acid titrations remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.equilibrium.lecture.v1",
     audio: "/lectures/equilibrium/narration-marin.mp3",
@@ -1293,7 +1293,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "p-block", subject: "Chemistry", unit: 10, number: "C19", title: pBlock.title,
-    description: "Fifteen narrated chapters on groups 13–18, first-member differences, oxidation states, hydride comparisons and worked oxygen exceptions.",
+    description: "Nineteen narrated chapters on groups 13–18, boric acid, phosphorus oxoacid structures, ozone, carbon allotropes and first-member differences.",
     scope: "Recorded Unit 10 trend foundation with original practice. Further element-specific comparisons, physical-property datasets and detailed structural drawings remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.p-block.lecture.v1",
     audio: "/lectures/p-block/narration-marin.mp3",

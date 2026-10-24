@@ -25,6 +25,18 @@
     {
       "title": "OpenStax: relative acid strengths",
       "url": "https://openstax.org/books/chemistry-atoms-first-2e/pages/14-3-relative-strengths-of-acids-and-bases"
+    },
+    {
+      "title": "OpenStax: nonmetal structures and allotropes",
+      "url": "https://openstax.org/books/chemistry-2e/pages/18-4-structure-and-general-properties-of-the-nonmetals"
+    },
+    {
+      "title": "OpenStax: formal charges and resonance",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-4-formal-charges-and-resonance"
+    },
+    {
+      "title": "Andrew R. Barron: phosphorus oxides and oxoacids",
+      "url": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Chemistry_of_the_Main_Group_Elements_(Barron)/08%3A_Group_15_-_The_Pnictogens/8.04%3A_Oxides_and_Oxoacids"
     }
   ],
   "chapters": [
@@ -552,6 +564,148 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Boric acid accepts a pair rather than losing three protons",
+      "formula": "B(OH)₃ + 2H₂O ⇌ B(OH)₄⁻ + H₃O⁺",
+      "script": "The three hydrogens in boric acid do not make it a tribasic acid in its usual aqueous behaviour. Boric acid acts as a Lewis acid by accepting an electron pair from hydroxide to form tetrahydroxyborate. One useful net equation writes boric acid plus two waters in equilibrium with tetrahydroxyborate and hydronium. Check the inventory: both sides contain one boron, five oxygens and seven hydrogens, with total charge zero. In the elementary structural description, the boron environment changes from three coordinate in boric acid to four coordinate in the borate product. The familiar description as a weak monobasic acid refers to this aqueous acid base behaviour, not removal of all three written hydrogens as independent protons. Its formal formula alone is insufficient for predicting acid basicity. The equation describes an equilibrium, so it does not mean every boric acid molecule converts completely in water. Other ligands and solution conditions can change speciation. Use electron pair acceptance, the actual product and charge balance together.",
+      "points": [
+        "B(OH)₃ + OH⁻ ⇌ B(OH)₄⁻ · B accepts an electron pair · Lewis acid behaviour",
+        "Net aqueous equation · B(OH)₃ + 2H₂O ⇌ B(OH)₄⁻ + H₃O⁺ · Balanced atoms and total charge",
+        "B environment in simple model · Three donors → four donors · Weak monobasic behaviour in water"
+      ],
+      "board": {
+        "heading": "Boric acid accepts a pair rather than losing three protons",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "B(OH)₃ + OH⁻ ⇌ B(OH)₄⁻",
+            "B accepts an electron pair",
+            "Lewis acid behaviour"
+          ],
+          [
+            "Net aqueous equation",
+            "B(OH)₃ + 2H₂O ⇌ B(OH)₄⁻ + H₃O⁺",
+            "Balanced atoms and total charge"
+          ],
+          [
+            "B environment in simple model",
+            "Three donors → four donors",
+            "Weak monobasic behaviour in water"
+          ]
+        ]
+      },
+      "speechInput": "The three hydrogens in boric acid do not make it a tribasic acid in its usual aqueous behaviour. Boric acid acts as a Lewis acid by accepting an electron pair from hydroxide to form tetrahydroxyborate. One useful net equation writes boric acid plus two waters in equilibrium with tetrahydroxyborate and hydronium. Check the inventory: both sides contain one boron, five oxygens and seven hydrogens, with total charge zero. In the elementary structural description, the boron environment changes from three coordinate in boric acid to four coordinate in the borate product. The familiar description as a weak monobasic acid refers to this aqueous acid base behaviour, not removal of all three written hydrogens as independent protons. Its formal formula alone is insufficient for predicting acid basicity. The equation describes an equilibrium, so it does not mean every boric acid molecule converts completely in water. Other ligands and solution conditions can change speciation. Use electron pair acceptance, the actual product and charge balance together before assigning a Lewis acid role.",
+      "recordingNote": "Independent transcription review confirmed that the recording ends at together and omits the final reminder phrase. Captions follow the recorded ending; speechInput retains the exact synthesis request for cache provenance."
+    },
+    {
+      "title": "Phosphorus oxoacid basicity follows O–H connectivity",
+      "formula": "H₃PO₂: 1 OH; H₃PO₃: 2 OH; H₃PO₄: 3 OH",
+      "script": "Phosphorus oxoacids illustrate why a molecular formula does not reveal every acidic hydrogen. In the usual structural descriptions, hypophosphorous acid has one oxygen hydrogen group and two phosphorus hydrogen bonds. Phosphorous acid has two oxygen hydrogen groups and one phosphorus hydrogen bond. Phosphoric acid has three oxygen hydrogen groups and no phosphorus hydrogen bond. Their ordinary aqueous acid basicities are therefore one, two and three respectively. The phosphorus hydrogen bonds are not counted as ordinary ionizable protons in this comparison. All three formulas contain three hydrogens, yet their neutralization capacities differ. In a stipulated complete neutralization model, zero point zero one zero zero mole phosphorous acid consumes zero point zero two zero zero mole hydroxide. Its phosphorus oxidation number is plus three by hydrogen plus one and oxygen minus two bookkeeping. The corresponding oxidation numbers in the other two acids are plus one and plus five. Basicity counts the relevant ionizable hydrogens; oxidation number is a different formal quantity. Neither count alone determines the numerical acid dissociation constants or the actual titration endpoint under unspecified conditions.",
+      "points": [
+        "H₃PO₂: H₂P(=O)(OH) · One O–H; two P–H · Monobasic; P +1",
+        "H₃PO₃: HP(=O)(OH)₂ · Two O–H; one P–H · Dibasic; P +3",
+        "H₃PO₄: P(=O)(OH)₃ · Three O–H; no P–H · Tribasic; P +5"
+      ],
+      "board": {
+        "heading": "Phosphorus oxoacid basicity follows O–H connectivity",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "H₃PO₂: H₂P(=O)(OH)",
+            "One O–H; two P–H",
+            "Monobasic; P +1"
+          ],
+          [
+            "H₃PO₃: HP(=O)(OH)₂",
+            "Two O–H; one P–H",
+            "Dibasic; P +3"
+          ],
+          [
+            "H₃PO₄: P(=O)(OH)₃",
+            "Three O–H; no P–H",
+            "Tribasic; P +5"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Ozone resonance does not mean alternating molecules",
+      "formula": "O₃: 18 valence electrons; equivalent O–O links in the resonance hybrid",
+      "script": "Oxygen has molecular allotropes with different structures. Ozone contains three oxygen atoms and eighteen valence electrons. Its usual octet Lewis contributors each have one single oxygen oxygen bond and one double bond, with the central oxygen carrying formal charge plus one and the singly bonded terminal oxygen minus one. The two contributors exchange electron placement, not atomic positions. They describe one bent molecule with equivalent oxygen oxygen links, rather than a molecule repeatedly switching between two unequal bond arrangements. Averaging the single and double bond labels gives one point five per link in this introductory resonance description. This is an illustrative Lewis bond order, not a complete molecular orbital calculation. Ozone is not simply three separate oxygen atoms, and its structure and reactivity cannot be copied from diatomic oxygen. The molecular formulas also imply different molar masses: using oxygen sixteen, ozone has forty eight grams per mole and dioxygen thirty two. A comparison of equal mole amounts therefore differs from a comparison of equal masses. Keep molecular identity, electron count and counted amount separate.",
+      "points": [
+        "O₃ valence electrons · 3×6 · 18 electrons",
+        "Two octet contributors · Central +1; one terminal −1 · Total formal charge zero",
+        "Equivalent links in the hybrid · Average Lewis labels (1+2)/2 · 1.5 per link; bent molecule"
+      ],
+      "board": {
+        "heading": "Ozone resonance does not mean alternating molecules",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "O₃ valence electrons",
+            "3×6",
+            "18 electrons"
+          ],
+          [
+            "Two octet contributors",
+            "Central +1; one terminal −1",
+            "Total formal charge zero"
+          ],
+          [
+            "Equivalent links in the hybrid",
+            "Average Lewis labels (1+2)/2",
+            "1.5 per link; bent molecule"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Carbon allotropes connect structure to properties",
+      "formula": "Diamond: 3D four-connected network; graphite: three-connected layers; C₆₀: molecules",
+      "script": "Different allotropes contain the same element but organize its atoms differently. In diamond, each carbon has four near neighbours in a three dimensional covalent network. In graphite, each carbon has three near neighbours within extended layers, with delocalized electrons contributing to electrical conduction, especially along those layers. Weak interlayer attractions help explain easy sliding, while the strong bonding inside a layer remains important. These descriptions do not make graphite a collection of isolated six carbon molecules. Buckminsterfullerene instead consists of discrete sixty carbon cage molecules, with each carbon connected to three neighbours in the ideal cage. Counting every cage edge once gives sixty times three divided by two, or ninety carbon carbon connections. Using supplied carbon atomic mass twelve, a mole of these cage molecules has mass seven hundred twenty grams. A mole of carbon atoms still has mass twelve grams regardless of allotrope. Pure ordinary diamond is an electrical insulator, but defects, doping and measurement conditions can alter actual materials. Relate properties to connectivity and electronic structure rather than assigning one universal property to elemental carbon.",
+      "points": [
+        "Diamond versus graphite · Four-connected 3D versus three-connected layers · Same element; different structures",
+        "Ideal C₆₀ cage connections · 60×3/2 · 90 edges; each counted once",
+        "Molar mass with C=12 · 60×12 · 720 g/mol C₆₀ molecules"
+      ],
+      "board": {
+        "heading": "Carbon allotropes connect structure to properties",
+        "columns": [
+          "Case / given",
+          "Reason / calculation",
+          "Result / condition"
+        ],
+        "rows": [
+          [
+            "Diamond versus graphite",
+            "Four-connected 3D versus three-connected layers",
+            "Same element; different structures"
+          ],
+          [
+            "Ideal C₆₀ cage connections",
+            "60×3/2",
+            "90 edges; each counted once"
+          ],
+          [
+            "Molar mass with C=12",
+            "60×12",
+            "720 g/mol C₆₀ molecules"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -752,6 +906,94 @@
       ],
       "answer": 2,
       "explanation": "Five bonds and one central lone pair give AX5E: octahedral electron-domain geometry and square pyramidal atomic shape."
+    },
+    {
+      "question": "In its usual aqueous Lewis-acid description, B(OH)3 accepts an electron pair to form:",
+      "options": [
+        "B(OH)4−",
+        "B3+ as the only dissolved species",
+        "Three free protons per molecule",
+        "Neutral B(OH)4"
+      ],
+      "answer": 0,
+      "explanation": "Hydroxide donates an electron pair to boron, giving the tetrahydroxyborate anion B(OH)4−."
+    },
+    {
+      "question": "Boric acid is ordinarily described in water as:",
+      "options": [
+        "Strong tribasic",
+        "Weak monobasic",
+        "Strong dibasic",
+        "A base because it contains OH"
+      ],
+      "answer": 1,
+      "explanation": "Its usual aqueous acid behaviour involves formation of B(OH)4−; three formula hydrogens do not imply tribasicity."
+    },
+    {
+      "question": "Ordinary aqueous basicities of H3PO2, H3PO3 and H3PO4 are respectively:",
+      "options": [
+        "3,3,3",
+        "2,1,3",
+        "1,2,3",
+        "1,3,2"
+      ],
+      "answer": 2,
+      "explanation": "Their usual structures contain one, two and three O–H groups; P–H bonds are not counted in this acid-basicity comparison."
+    },
+    {
+      "question": "Under stipulated complete neutralization, 0.0100 mol H3PO3 requires hydroxide amount:",
+      "options": [
+        "0.0100 mol",
+        "0.0300 mol",
+        "0.00500 mol",
+        "0.0200 mol"
+      ],
+      "answer": 3,
+      "explanation": "Phosphorous acid is dibasic in the stated model, so each mole consumes two moles hydroxide."
+    },
+    {
+      "question": "The total valence-electron count of neutral ozone is:",
+      "options": [
+        "18",
+        "16",
+        "24",
+        "12"
+      ],
+      "answer": 0,
+      "explanation": "Each of the three oxygen atoms supplies six valence electrons, for a total of eighteen."
+    },
+    {
+      "question": "The two equivalent ozone Lewis contributors describe:",
+      "options": [
+        "Two molecules in a fast chemical equilibrium",
+        "One resonance hybrid with unchanged atomic positions",
+        "A linear triatomic molecule",
+        "Oxygen atoms exchanging positions"
+      ],
+      "answer": 1,
+      "explanation": "Resonance changes electron placement in the drawings; the actual molecule is one bent structure with equivalent links."
+    },
+    {
+      "question": "An ideal C60 cage has three neighbours per carbon. Counting each C–C connection once gives:",
+      "options": [
+        "60",
+        "180",
+        "90",
+        "30"
+      ],
+      "answer": 2,
+      "explanation": "The sum of vertex degrees is 60×3; each edge contributes twice, giving 90 distinct connections."
+    },
+    {
+      "question": "With carbon atomic mass 12, molar mass of C60 molecules is:",
+      "options": [
+        "12 g/mol",
+        "60 g/mol",
+        "360 g/mol",
+        "720 g/mol"
+      ],
+      "answer": 3,
+      "explanation": "Each molecule contains sixty carbon atoms, so its molar mass is 60×12=720 g/mol."
     }
   ]
 }
