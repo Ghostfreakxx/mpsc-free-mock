@@ -18,13 +18,13 @@ Questions are original practice, not represented as official PYQs.
 | --- | --- | --- | --- | --- | --- |
 | 1 | [Mole Concept](/jee/classes/mole-concept) | 21 | 18 | 12 | 32 / 32 |
 | 2 | [Atomic Structure](/jee/classes/atomic-structure) | 21 | 18 | 12 | 34 / 34 |
-| 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 17 | 16 | 9 | 26 / 26 |
+| 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 21 | 20 | 12 | 34 / 34 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 19 | 21 | 12 | 26 / 26 |
 | 5 | [Solutions](/jee/classes/solutions) | 19 | 21 | 12 | 26 / 26 |
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 21 | 21 | 16 | 34 / 34 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 18 | 19 | 13 | 26 / 26 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 18 | 21 | 16 | 34 / 34 |
-| 9 | [Periodic Trends](/jee/classes/periodic-trends) | 17 | 15 | 9 | 24 / 24 |
+| 9 | [Periodic Trends](/jee/classes/periodic-trends) | 21 | 19 | 12 | 32 / 32 |
 | 10 | [P-Block](/jee/classes/p-block) | 19 | 17 | 9 | 26 / 26 |
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 19 | 17 | 9 | 26 / 26 |
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 18 | 21 | 16 | 34 / 34 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Mole Concept adds mass-based ppm with density, mole versus mass fractions and gas partial pressures, ionic precipitation with excess reactant, and supporting atom economy versus isolated yield.
+Chemical Bonding adds lower-Z diatomic MO occupations with a B2/C2/N2 diagram, ammonia–BF3 donor–acceptor bookkeeping, nitrophenol intramolecular versus intermolecular hydrogen bonding, and extended sigma/pi bond counts.
 
-Atomic Structure adds a classical head-on closest-approach model, normalized hydrogen 2s/2p radial plots and node geometry, equal-speed versus equal-energy matter waves, and photon-rate/current calculations with a stated overall collection yield. The excited radial plot is supporting detail, not a claim that every advanced wavefunction formula is required by the syllabus.
+Periodic Trends adds selected diagonal similarities and nitride hydrolysis balances, hydride acidity with solvent and bond-strength limits, structure-based Period 3 melting comparisons and the F–F bond-strength exception with per-atom energy accounting. Diagonal examples support periodic reasoning and do not imply that every historical s-block preparation is required.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific primary references, including OpenStax concentration units, gas mixtures, precipitation, hydrogen quantum theory, matter waves and photon counting; the American Chemical Society on atom economy; and the Physlet Quantum Physics closest-approach model. Numerical data and MCQs in this batch are original practice.
+The notes contain lesson-specific primary references, including OpenStax molecular orbitals, multiple bonds, acid strength and bond energies; the Open University on dative bonds; NCERT phenol hydrogen bonding; IIT Kanpur SATHEE diagonal similarities; and Jim Clark’s original Chemguide treatment of Period 3 structures. Numerical data and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

@@ -6,9 +6,9 @@ test('Chemistry expansion preserves explicit scope, units and original practice'
   assert.deepEqual(lessons.map(l => [l.id, l.unit]), [['atomic-spectra', 2], ['periodic-trends', 9], ['chemical-bonding', 3]]);
   for (const lesson of lessons) {
     assert.equal(lesson.subject, 'Chemistry');
-    assert.match(lesson.remaining, lesson.id!=='atomic-spectra' ? /seventeen-chapter Marin recording/ : /not a Marin recording/);
-    assert.equal(lesson.quiz.length, lesson.id==='atomic-spectra'?6:lesson.id==='periodic-trends'?24:26);
-    assert.equal(lesson.examples.length, lesson.id==='atomic-spectra'?3:9);
+    assert.match(lesson.remaining, lesson.id!=='atomic-spectra' ? /twenty-one-chapter Marin recording/ : /not a Marin recording/);
+    assert.equal(lesson.quiz.length, lesson.id==='atomic-spectra'?6:lesson.id==='periodic-trends'?32:34);
+    assert.equal(lesson.examples.length, lesson.id==='atomic-spectra'?3:12);
     assert.ok(lesson.sources.some(s => s.url.includes('jeemain.nta.nic.in')));
   }
 });

@@ -12,7 +12,7 @@ test('atomic states and radial distribution distinguish capacity, occupancy and 
  const Z=Math.sqrt(17/(13.6*(1/4-1/9)));near(Z,3);assert.equal(answer(a,24),String(Math.round(Z)));assert.equal(answer(a,25),'Li2+');near(1240/17,72.94,.002);
 });
 test('bonding energy and electron ledgers conserve counts and signs',()=>{
- assert.deepEqual(b.quiz.slice(18).map(q=>q.answer),[0,1,2,3,0,1,2,3]);const subtotal=148+738+1451+243-2*349;assert.equal(answer(b,18),`${subtotal} kJ/mol`);assert.equal(answer(b,19),`${-642-subtotal} kJ/mol`.replace('-','−'));
+ assert.deepEqual(b.quiz.slice(18).map(q=>q.answer),[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3]);const subtotal=148+738+1451+243-2*349;assert.equal(answer(b,18),`${subtotal} kJ/mol`);assert.equal(answer(b,19),`${-642-subtotal} kJ/mol`.replace('-','−'));
  assert.equal(5+2*6+1,18);assert.equal(5+2*6-1,16);assert.equal(answer(b,20),'18, bent');assert.match(answer(b,21),/^Linear/);
  const net=614+436-(347+2*413);assert.equal(answer(b,22),`${net} kJ/mol`.replace('-','−'));near((8-3)/2,2.5);near((8-2)/2,3);assert.equal(answer(b,24),'2.5, one');assert.equal(answer(b,25),'3');
 });

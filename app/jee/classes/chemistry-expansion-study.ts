@@ -1,3 +1,4 @@
+import { extendBondingPeriodicStructureLesson } from './bonding-periodic-structure-study.ts';
 import { extendHydrocarbonsAtomicBondingLesson } from "./hydrocarbons-atomic-bonding-study.ts";
 import { extendNitrogenPracticalPeriodicLesson } from "./nitrogen-practical-periodic-study.ts";
 import { extendAtomicBondingPeriodicLesson } from "./atomic-bonding-periodic-study.ts";
@@ -61,7 +62,7 @@ export const chemistryExpansionLessons: StudyLesson[] = [
     title: "Periodic trends: explain the pattern before memorising it",
     summary: "Electronic blocks, shielding, radii, ionization, electron gain and reactivity.",
     prerequisites: "Electron configurations and the Atomic Structure foundation.",
-    remaining: "Written companion to the seventeen-chapter Marin recording for Unit 9. The recording adds shielding, valence patterns and oxide behaviour. Detailed group reactivity, transition-element trends and further exceptions remain; this is not complete inorganic Chemistry.",
+    remaining: "Written companion to the twenty-one-chapter Marin recording for Unit 9. The recording adds shielding, valence patterns and oxide behaviour. Selected diagonal similarities, hydride acidity, Period 3 structures and the F–F bond-strength exception are included. Detailed group reactivity, transition-element trends and further exceptions remain; this is not complete inorganic Chemistry.",
     sections: [
       { title: "Read the table as a repeating electron pattern", paragraphs: [
         "The modern periodic law relates recurring properties to atomic number, not increasing atomic mass. Periods track occupied-shell patterns, while similar outer configurations explain many group similarities. Do not infer that all members react identically.",
@@ -108,7 +109,7 @@ export const chemistryExpansionLessons: StudyLesson[] = [
     title: "Chemical bonding: from electrons to shape and properties",
     summary: "Lewis structures, charge bookkeeping, VSEPR, polarity, overlap and molecular orbitals.",
     prerequisites: "Valence electrons, periodic trends and basic orbital terminology.",
-    remaining: "Written companion to the seventeen-chapter Marin recording for Unit 3. The recording adds polarization comparisons, five- and six-domain shapes, bond counting and hydrogen bonding. Complete heteronuclear molecular-orbital diagrams, broader lattice datasets and additional shape comparisons remain; this is not complete unit coverage.",
+    remaining: "Written companion to the twenty-one-chapter Marin recording for Unit 3. The recording adds polarization comparisons, five- and six-domain shapes, bond counting and hydrogen bonding. Lower-Z diatomic MO filling, donor–acceptor adducts, nitrophenol hydrogen bonding and extended sigma/pi counts are included. Complete heteronuclear MO diagrams, broader lattice datasets and additional shape comparisons remain; this is not complete unit coverage.",
     sections: [
       { title: "Bond formation must lower the appropriate energy", paragraphs: [
         "Atoms do not bond merely because someone tells them to complete an octet. Bond formation can lower a system's energy through interactions among nuclei and electrons. The octet rule is a useful bookkeeping pattern with exceptions, including electron-deficient and odd-electron species.",
@@ -165,3 +166,5 @@ for (const lesson of chemistryExpansionLessons) extendAtomicBondingPeriodicLesso
 for (const lesson of chemistryExpansionLessons) extendNitrogenPracticalPeriodicLesson(lesson);
 
 for (const lesson of chemistryExpansionLessons) extendHydrocarbonsAtomicBondingLesson(lesson);
+
+for (const lesson of chemistryExpansionLessons) extendBondingPeriodicStructureLesson(lesson);

@@ -33,6 +33,18 @@
     {
       "title": "IIT Kanpur SATHEE: chemical bonding",
       "url": "https://sathee.iitk.ac.in/sathee-icar/student-corner/ncert-books/class-11/nb-che-11/chemistry-11-chapter-4-chemical-bonding-and-moleuclar-structure/"
+    },
+    {
+      "title": "Open University: dative bonds",
+      "url": "https://www.open.edu/openlearn/mod/oucontent/view.php?id=87848&section=_unit5.1.7"
+    },
+    {
+      "title": "NCERT: alcohols, phenols and ethers",
+      "url": "https://ncert.nic.in/textbook/pdf/lech202.pdf"
+    },
+    {
+      "title": "OpenStax: multiple bonds and orbital overlap",
+      "url": "https://openstax.org/books/chemistry-2e/pages/8-3-multiple-bonds"
     }
   ],
   "chapters": [
@@ -632,6 +644,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Fill the lower-Z diatomic molecular orbitals",
+      "formula": "For B₂, C₂, N₂: π2p below σ2p; bond order=(bonding−antibonding electrons)/2",
+      "script": "The relative order of sigma and pi molecular orbitals is not identical for every second period diatomic molecule. In the introductory valence orbital diagram for boron two, carbon two and nitrogen two, the bonding pi two p pair lies below the bonding sigma two p orbital. The filled sigma two s and sigma star two s orbitals contribute equal bonding and antibonding populations, cancelling in the bond order. Boron two has six valence electrons. Its final two occupy the two degenerate bonding pi orbitals singly with parallel spins, giving bond order one and two unpaired electrons. It is paramagnetic in this model. Carbon two has eight valence electrons and fills both pi orbitals, giving bond order two with all electrons paired. Nitrogen two adds two electrons to the bonding sigma two p orbital, giving bond order three and a paired configuration. Filled core orbitals have been omitted because their bonding contributions cancel here. Do not transfer the oxygen two orbital ordering unchanged to these three molecules. Use the appropriate energy order, Pauli exclusion and Hund's rule together before assigning bond order or magnetism.",
+      "points": [
+        "B₂: 6 valence electrons · π2p singly occupied in each orbital · Bond order 1; two unpaired",
+        "C₂: 8 valence electrons · Both π2p orbitals filled · Bond order 2; diamagnetic",
+        "N₂: 10 valence electrons · π2p filled, then σ2p filled · Bond order 3; diamagnetic"
+      ],
+      "board": {
+        "heading": "Fill the lower-Z diatomic molecular orbitals",
+        "columns": [
+          "Species / structure",
+          "Electron / atom ledger",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "B₂: 6 valence electrons",
+            "π2p singly occupied in each orbital",
+            "Bond order 1; two unpaired"
+          ],
+          [
+            "C₂: 8 valence electrons",
+            "Both π2p orbitals filled",
+            "Bond order 2; diamagnetic"
+          ],
+          [
+            "N₂: 10 valence electrons",
+            "π2p filled, then σ2p filled",
+            "Bond order 3; diamagnetic"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A donor pair forms the ammonia–boron trifluoride adduct",
+      "formula": "H₃N: + BF₃ → H₃N→BF₃; Lewis formal charges N=+1 and B=−1",
+      "script": "A coordinate bond describes the origin of an electron pair in a bond forming step. Ammonia has a nitrogen lone pair and can act as a Lewis base. In the simple Lewis structure of boron trifluoride, boron has only six electrons around it and can accept a pair as a Lewis acid. Donation from nitrogen to boron gives the ammonia boron trifluoride adduct. The donor arrow points from nitrogen toward boron; it does not represent a proton transfer. In the resulting single bond Lewis drawing, nitrogen has four bonds and no lone pair, so its formal charge is five minus four, or plus one. Boron also has four bonds, giving three minus four, or minus one. The total adduct remains neutral. These formal charges are electron bookkeeping, not proof of complete ionic separation or measured atomic charges. Around each bonded nitrogen and boron centre there are four bond domains, approximately tetrahedral rather than the original trigonal planar boron arrangement. No new electrons were created: the nitrogen pair became shared. After formation, the bond is a shared electron pair interaction, not a separate physical class exempt from ordinary bonding principles.",
+      "points": [
+        "NH₃ lone pair → BF₃ boron · Lewis base donates; Lewis acid accepts · Arrow N → B; no proton transfer",
+        "N: four single bonds, no lone pair · Formal charge 5−4 · N=+1; B=3−4=−1",
+        "Adduct has total charge zero · Four bond domains at N and B · Approximately tetrahedral centres"
+      ],
+      "board": {
+        "heading": "A donor pair forms the ammonia–boron trifluoride adduct",
+        "columns": [
+          "Species / structure",
+          "Electron / atom ledger",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "NH₃ lone pair → BF₃ boron",
+            "Lewis base donates; Lewis acid accepts",
+            "Arrow N → B; no proton transfer"
+          ],
+          [
+            "N: four single bonds, no lone pair",
+            "Formal charge 5−4",
+            "N=+1; B=3−4=−1"
+          ],
+          [
+            "Adduct has total charge zero",
+            "Four bond domains at N and B",
+            "Approximately tetrahedral centres"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Hydrogen bonding can stay within one molecule",
+      "formula": "2-Nitrophenol: intramolecular O–H···O; 4-nitrophenol: intermolecular association",
+      "script": "Hydrogen bonding can link molecules or connect suitable sites within one molecule. In two nitrophenol, the hydroxyl group and neighbouring nitro group can form an intramolecular hydrogen bond from the hydroxyl hydrogen to a nitro oxygen. The nearby positions permit a favourable internal arrangement. In four nitrophenol, the para positions do not allow that same local connection, and intermolecular hydrogen bonding becomes important. The difference affects association between molecules and helps explain why the ortho isomer is more steam volatile in the familiar separation comparison. This does not mean that an internally hydrogen bonded molecule has no interactions with water or with other molecules. Nor does one hydrogen bond label uniquely determine every solubility or melting point. Crystal packing, molecular shape, solvent and temperature also matter. Identify the donor and acceptor explicitly: a hydroxyl group supplies the donor hydrogen, while a suitable nitro oxygen acts as acceptor. The nitro group contains no nitrogen hydrogen donor simply because nitrogen is present. Compare the geometry and competing interactions before turning a structural observation into a physical property prediction.",
+      "points": [
+        "2-Nitrophenol: adjacent OH / NO₂ · O–H donor to nitro O within molecule · Intramolecular H bond possible",
+        "4-Nitrophenol: para groups · Intermolecular association important · Less steam volatile in usual comparison",
+        "Donor H must be appropriately bonded · Nitro O can accept; NO₂ has no N–H · Packing and solvent also matter"
+      ],
+      "board": {
+        "heading": "Hydrogen bonding can stay within one molecule",
+        "columns": [
+          "Species / structure",
+          "Electron / atom ledger",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "2-Nitrophenol: adjacent OH / NO₂",
+            "O–H donor to nitro O within molecule",
+            "Intramolecular H bond possible"
+          ],
+          [
+            "4-Nitrophenol: para groups",
+            "Intermolecular association important",
+            "Less steam volatile in usual comparison"
+          ],
+          [
+            "Donor H must be appropriately bonded",
+            "Nitro O can accept; NO₂ has no N–H",
+            "Packing and solvent also matter"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Count sigma connections before counting pi bonds",
+      "formula": "HC≡CH: 3σ, 2π; CH₂=CH–C≡N: 6σ, 3π; benzene: 12σ and delocalized 6π electrons",
+      "script": "A reliable sigma and pi count begins with the molecular connectivity. Every bonded atom pair has one sigma connection in the elementary localized description. A double bond contributes one additional pi bond and a triple bond contributes two. Ethyne has two carbon hydrogen sigma bonds and one carbon carbon sigma bond, giving three sigma and two pi bonds altogether. Now read the structure of acrylonitrile as a carbon bearing two hydrogens, double bonded to a carbon bearing one hydrogen, then single bonded to a carbon which is triple bonded to nitrogen. There are three carbon hydrogen connections and three connections along the heavy atom chain, giving six sigma bonds. The carbon carbon double bond supplies one pi bond and the nitrile supplies two, for three pi bonds. In benzene, six ring connections and six carbon hydrogen bonds give twelve sigma bonds. A drawing with alternating single and double bonds contains three formal pi bonds, but the actual six pi electrons are delocalized over the ring rather than confined permanently to three selected links. Count implicit hydrogens and distinguish an electron count from a bond count. A structural drawing is essential; molecular formula alone need not determine the arrangement of all bonds.",
+      "points": [
+        "HC≡CH · Two C–H plus one C–C σ · 3σ and 2π",
+        "CH₂=CH–C≡N · Three C–H plus three heavy-atom σ · 6σ and 3π",
+        "Benzene · Six ring σ plus six C–H σ · 12σ; six delocalized π electrons"
+      ],
+      "board": {
+        "heading": "Count sigma connections before counting pi bonds",
+        "columns": [
+          "Species / structure",
+          "Electron / atom ledger",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "HC≡CH",
+            "Two C–H plus one C–C σ",
+            "3σ and 2π"
+          ],
+          [
+            "CH₂=CH–C≡N",
+            "Three C–H plus three heavy-atom σ",
+            "6σ and 3π"
+          ],
+          [
+            "Benzene",
+            "Six ring σ plus six C–H σ",
+            "12σ; six delocalized π electrons"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -920,6 +1072,94 @@
       ],
       "answer": 3,
       "explanation": "Removing one antibonding electron increases the bond order by one half, from 2.5 to 3 in the stated model."
+    },
+    {
+      "question": "In the introductory valence MO model for B2, its last two electrons occupy:",
+      "options": [
+        "Two degenerate bonding π2p orbitals singly",
+        "One antibonding σ2p orbital as a pair",
+        "Only core 1s orbitals",
+        "Two antibonding π2p orbitals singly"
+      ],
+      "answer": 0,
+      "explanation": "For B2 the bonding π2p pair lies below σ2p; Hund filling gives two unpaired electrons and bond order one."
+    },
+    {
+      "question": "Using the appropriate lower-Z diatomic ordering, C2 and N2 have bond orders respectively:",
+      "options": [
+        "1 and 2",
+        "2 and 3",
+        "3 and 2",
+        "2 and 2"
+      ],
+      "answer": 1,
+      "explanation": "C2 fills bonding π2p orbitals; N2 additionally fills bonding σ2p, giving bond orders two and three."
+    },
+    {
+      "question": "In NH3→BF3, the electron pair donor and acceptor are respectively:",
+      "options": [
+        "Boron and nitrogen",
+        "Hydrogen and fluorine",
+        "Nitrogen and boron",
+        "Fluorine and hydrogen"
+      ],
+      "answer": 2,
+      "explanation": "The nitrogen lone pair is donated to electron-deficient boron; this is a Lewis pair donation, not proton transfer."
+    },
+    {
+      "question": "In a four-single-bond Lewis drawing of NH3BF3, the N and B formal charges are respectively:",
+      "options": [
+        "−1 and +1",
+        "0 and 0",
+        "+1 and +1",
+        "+1 and −1"
+      ],
+      "answer": 3,
+      "explanation": "Nitrogen has formal charge 5−4=+1 and boron 3−4=−1, leaving the complete adduct neutral."
+    },
+    {
+      "question": "The familiar intramolecular hydrogen bond in 2-nitrophenol connects:",
+      "options": [
+        "Hydroxyl H with a neighbouring nitro O",
+        "A nitro N–H bond with carbon",
+        "Two different para nitrophenol molecules only",
+        "Two aromatic carbon atoms by a new covalent bond"
+      ],
+      "answer": 0,
+      "explanation": "The adjacent groups allow the hydroxyl donor hydrogen to interact with a nitro oxygen within the same molecule."
+    },
+    {
+      "question": "Which statement best explains the usual steam-volatility comparison of nitrophenol isomers?",
+      "options": [
+        "Para nitrophenol has no intermolecular interactions",
+        "Internal hydrogen bonding in the ortho isomer reduces association between molecules",
+        "All hydrogen bonding is absent in the ortho isomer",
+        "Molecular formula alone fixes volatility"
+      ],
+      "answer": 1,
+      "explanation": "Intramolecular association competes with intermolecular bonding; the ortho isomer is more steam volatile in the familiar comparison."
+    },
+    {
+      "question": "In the elementary localized count, HC≡CH contains:",
+      "options": [
+        "2σ and 3π",
+        "1σ and 2π",
+        "3σ and 2π",
+        "3σ and 1π"
+      ],
+      "answer": 2,
+      "explanation": "Two C–H connections plus one C–C sigma connection give three sigma bonds; the triple bond supplies two pi bonds."
+    },
+    {
+      "question": "The structure CH2=CH–C≡N contains:",
+      "options": [
+        "5σ and 2π",
+        "6σ and 2π",
+        "7σ and 3π",
+        "6σ and 3π"
+      ],
+      "answer": 3,
+      "explanation": "Three C–H sigma bonds and three heavy-atom sigma connections give six; the double and triple bonds supply three pi bonds."
     }
   ]
 }

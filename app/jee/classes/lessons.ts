@@ -1193,7 +1193,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "chemical-bonding", subject: "Chemistry", unit: 3, number: "C09", title: chemicalBonding.title,
-    description: "Seventeen narrated chapters on bonding, Born–Haber cycles, molecular-orbital ionization, lone-pair geometries, resonance averages and dipole vectors.",
+    description: "Twenty-one narrated chapters on bonding, B2/C2/N2 orbital filling, donor–acceptor bonds, hydrogen bonding, sigma/pi counts, lattice cycles and molecular shape.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 3 foundation with original practice. Further multivalent lattice cycles, complete heteronuclear molecular-orbital diagrams and additional shape comparisons remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.chemical-bonding.lecture.v1",
     audio: "/lectures/chemical-bonding/narration-marin.mp3",
@@ -1213,7 +1213,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "periodic-trends", subject: "Chemistry", unit: 9, number: "C11", title: periodicTrends.title,
-    description: "Seventeen narrated chapters on periodic trends, successive-ionization data, electron-gain signs, radius conventions, oxide equations and aqueous reducing power.",
+    description: "Twenty-one narrated chapters on periodic trends, diagonal similarities, hydride acidity, Period 3 structures, bond-strength exceptions and quantitative energy comparisons.",
     scope: "Recorded Unit 9 foundation with original practice. Detailed group chemistry, transition-element trends and further exceptions remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.periodic-trends.lecture.v1",
     audio: "/lectures/periodic-trends/narration-marin.mp3",
