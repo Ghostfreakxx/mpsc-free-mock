@@ -5,7 +5,7 @@ test('hydrocarbon applications independently check unsaturation, repeat units an
  const methylSites=[2,6],carboxylMeta=[2,6];assert.deepEqual(methylSites.filter(x=>carboxylMeta.includes(x)),[2,6]);assert.equal(answer(h,22),'Positions 2 and 6');assert.equal(answer(h,23),'One');
 });
 test('atomic states and radial distribution distinguish capacity, occupancy and probability meanings',()=>{
- assert.deepEqual(a.quiz.slice(18).map(q=>q.answer),[1,2,3,0,1,2,3,0]);let spatial=0;for(let l=0;l<3;l++)spatial+=2*l+1;assert.equal(answer(a,18),String(spatial));assert.equal(answer(a,19),String(2*spatial));assert.equal(answer(a,21),`${.529/2} Å`);
+ assert.deepEqual(a.quiz.slice(18).map(q=>q.answer),[1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]);let spatial=0;for(let l=0;l<3;l++)spatial+=2*l+1;assert.equal(answer(a,18),String(spatial));assert.equal(answer(a,19),String(2*spatial));assert.equal(answer(a,21),`${.529/2} Å`);
  const radial=x=>4*x*x*Math.exp(-2*x);assert.equal(radial(0),0);assert.ok(radial(1)>radial(.9)&&radial(1)>radial(1.1));
  let integral=0;const dx=.0005;for(let x=dx/2;x<15;x+=dx)integral+=radial(x)*dx;near(integral,1,1e-8);
  assert.equal(2+2+5+1,10);assert.equal(answer(a,22),'An allowed excited configuration');assert.match(answer(a,23),/Pauli/);

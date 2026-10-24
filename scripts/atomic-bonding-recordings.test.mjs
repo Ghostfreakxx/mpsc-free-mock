@@ -5,10 +5,10 @@ import {createHash} from 'node:crypto';
 import {nextStudyLessons} from '../app/jee/classes/study-lessons-two.ts';
 import {chemistryExpansionLessons} from '../app/jee/classes/chemistry-expansion-study.ts';
 const written=[...nextStudyLessons,...chemistryExpansionLessons];
-for(const [id,count] of [['atomic-structure',17],['chemical-bonding',17]]){
+for(const [id,count] of [['atomic-structure',21],['chemical-bonding',17]]){
  const lesson=JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`));
  test(`${id}: substantive chapters, quiz parity and reviewed audio provenance`,()=>{
-  assert.equal(lesson.chapters.length,count);assert.equal(lesson.quiz.length,26);
+  assert.equal(lesson.chapters.length,count);assert.equal(lesson.quiz.length,id==='atomic-structure'?34:26);
   const companion=written.find(l=>l.id===id);
   assert.deepEqual(lesson.quiz.slice(0,companion.quiz.length),companion.quiz);
   for(const [i,c] of lesson.chapters.entries()){
@@ -19,7 +19,7 @@ for(const [id,count] of [['atomic-structure',17],['chemical-bonding',17]]){
  });
  test(`${id}: full transcript has readable, ordered captions for every chapter`,()=>{
   const t=JSON.parse(fs.readFileSync(`app/data/jee-${id}-timings.json`));
-  assert.equal(t.chapters.length,count);assert.ok(t.duration>500 && t.duration<1450);
+  assert.equal(t.chapters.length,count);assert.ok(t.duration>500 && t.duration<(id==='atomic-structure'?1800:1450));
   const normalize=s=>s.toLowerCase().replace(/[^a-z0-9]/g,'');
   for(const [i,ch] of t.chapters.entries()){
    assert.equal(ch.start,i?t.chapters[i-1].end:0);

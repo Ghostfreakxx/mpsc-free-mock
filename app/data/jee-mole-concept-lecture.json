@@ -29,6 +29,18 @@
     {
       "title": "OpenStax: quantitative chemical analysis",
       "url": "https://openstax.org/books/chemistry-2e/pages/4-5-quantitative-chemical-analysis"
+    },
+    {
+      "title": "OpenStax: ideal gas mixtures and partial pressures",
+      "url": "https://openstax.org/books/chemistry-2e/pages/9-3-stoichiometry-of-gaseous-substances-mixtures-and-reactions"
+    },
+    {
+      "title": "OpenStax: precipitation reactions",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions"
+    },
+    {
+      "title": "American Chemical Society: atom economy and green chemistry",
+      "url": "https://www.acs.org/green-chemistry-sustainability/principles/12-principles-of-green-chemistry.html"
     }
   ],
   "chapters": [
@@ -628,6 +640,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Trace concentration needs a stated ppm basis",
+      "formula": "Mass ppm = mass solute / mass solution × 10⁶; 1 mass ppm = 1 mg/kg",
+      "script": "Parts per million is a ratio, so first identify whether the stated basis is mass, volume or particle number. On a mass basis, one part per million means one milligram solute per kilogram of solution. It is not automatically one milligram per litre. Consider a supplied solution with solute mass concentration three point zero zero milligrams per litre and density one point two zero kilograms per litre. One litre therefore has solution mass one point two zero kilograms. Dividing three milligrams by that mass gives two point five zero milligrams per kilogram, or two point five zero mass parts per million. In a dilute aqueous solution whose density is approximately one kilogram per litre, milligrams per litre can numerically approximate mass parts per million, but the density assumption must be stated. Mass parts per billion use a factor of one billion instead of one million, so one mass part per million equals one thousand mass parts per billion. The denominator is the total solution mass, not just the solvent mass. Keep the concentration basis attached to the number rather than using a trace unit as a universal shortcut.",
+      "points": [
+        "Mass ppm definition · 1 mg per kg of solution · Basis must be stated",
+        "3.00 mg/L; density 1.20 kg/L · 3.00/1.20 mg/kg · 2.50 mass ppm",
+        "Density about 1 kg/L only · mg/L approximately mass ppm · 1 mass ppm = 1000 mass ppb"
+      ],
+      "board": {
+        "heading": "Trace concentration needs a stated ppm basis",
+        "columns": [
+          "Given / model",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Mass ppm definition",
+            "1 mg per kg of solution",
+            "Basis must be stated"
+          ],
+          [
+            "3.00 mg/L; density 1.20 kg/L",
+            "3.00/1.20 mg/kg",
+            "2.50 mass ppm"
+          ],
+          [
+            "Density about 1 kg/L only",
+            "mg/L approximately mass ppm",
+            "1 mass ppm = 1000 mass ppb"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Mole fraction and mass fraction are different",
+      "formula": "Ideal mixture: pi=xiP; mean M=ΣxiMi; mass fraction uses niMi",
+      "script": "Gas mixture composition can be expressed in several different ways. Suppose an ideal mixture contains two moles helium and one mole nitrogen molecules at a common temperature. The total amount is three moles, so the helium mole fraction is two thirds. If the total pressure is three bar, Dalton's law gives a helium partial pressure of two bar and nitrogen partial pressure of one bar. With supplied molar masses four and twenty eight grams per mole, the helium mass is eight grams and nitrogen mass twenty eight grams. Helium therefore contributes only eight of the thirty six grams, a mass fraction of two ninths rather than two thirds. The mean molar mass is total mass divided by total amount, or twelve grams per mole. In the ideal gas model, density equals pressure times mean molar mass divided by the gas constant and absolute temperature, using consistent units. This relation can connect density to composition, but cannot uniquely identify every possible mixture without knowing which gases are present. Mole fraction counts chemical entities, whereas mass fraction weights each entity by its molar mass.",
+      "points": [
+        "2 mol He + 1 mol N₂ · xHe=2/3; total P=3 bar · pHe=2 bar; pN₂=1 bar",
+        "He=4; N₂=28 g/mol · Masses 8 g and 28 g · He mass fraction=8/36=2/9",
+        "Total mass 36 g; total amount 3 mol · Mean M=12 g/mol · Ideal density ρ=P mean M/(RT)"
+      ],
+      "board": {
+        "heading": "Mole fraction and mass fraction are different",
+        "columns": [
+          "Given / model",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "2 mol He + 1 mol N₂",
+            "xHe=2/3; total P=3 bar",
+            "pHe=2 bar; pN₂=1 bar"
+          ],
+          [
+            "He=4; N₂=28 g/mol",
+            "Masses 8 g and 28 g",
+            "He mass fraction=8/36=2/9"
+          ],
+          [
+            "Total mass 36 g; total amount 3 mol",
+            "Mean M=12 g/mol",
+            "Ideal density ρ=P mean M/(RT)"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Precipitation tracks reacting ions and excess",
+      "formula": "Ag⁺ + Cl⁻ → AgCl(s); amount precipitated = smaller initial reacting-ion amount",
+      "script": "A precipitation calculation starts with the ions that actually react rather than every ion written in the molecular equation. Mix twenty five point zero zero millilitres of zero point one zero zero molar silver nitrate with forty point zero zero millilitres of zero point zero five zero zero molar sodium chloride. The initial silver ion amount is two point five zero millimoles and chloride amount two point zero zero millimoles. In the simplified complete precipitation model, the one to one net ionic equation makes chloride limiting, giving two point zero zero millimoles silver chloride. Using the supplied molar mass one hundred forty three point five grams per mole, the precipitate mass is zero point two eight seven gram. Excess silver ion is zero point five zero zero millimole. If final liquid volume is approximated by the sum, sixty five millilitres, its excess silver concentration is about zero point zero zero seven six nine molar. Sodium and nitrate are spectator ions in this net reaction; they have not disappeared from solution. Finite solubility, complex formation and volume changes would require a more detailed model. State those approximations before treating the limiting ion result as exact experimental recovery.",
+      "points": [
+        "Ag⁺ initially 2.50 mmol · Cl⁻ initially 2.00 mmol · Cl⁻ limits; AgCl=2.00 mmol",
+        "AgCl M=143.5 g/mol · 0.00200×143.5 · 0.287 g theoretical precipitate",
+        "Ag⁺ excess 0.500 mmol · Assume total liquid volume 65.00 mL · [Ag⁺]excess ≈ 0.00769 M"
+      ],
+      "board": {
+        "heading": "Precipitation tracks reacting ions and excess",
+        "columns": [
+          "Given / model",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Ag⁺ initially 2.50 mmol",
+            "Cl⁻ initially 2.00 mmol",
+            "Cl⁻ limits; AgCl=2.00 mmol"
+          ],
+          [
+            "AgCl M=143.5 g/mol",
+            "0.00200×143.5",
+            "0.287 g theoretical precipitate"
+          ],
+          [
+            "Ag⁺ excess 0.500 mmol",
+            "Assume total liquid volume 65.00 mL",
+            "[Ag⁺]excess ≈ 0.00769 M"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Atom economy and isolated yield measure different things",
+      "formula": "Atom economy = stoichiometric mass of desired product / mass of stoichiometric reactants × 100%",
+      "script": "Atom economy is a supporting stoichiometric measure of how much reactant mass enters the desired product in a balanced net reaction. It differs from the percentage yield measured in a particular experiment. Consider ethanoic acid plus ethanol forming ethyl ethanoate and water. Use rounded molar masses sixty, forty six, eighty eight and eighteen grams per mole, respectively. One stoichiometric reaction unit starts with one hundred six grams of reactants and forms eighty eight grams of desired ester plus eighteen grams of water. The ester atom economy is therefore eighty eight divided by one hundred six, or about eighty three point zero percent. Even a hypothetical one hundred percent ester yield would not change that stoichiometric fraction. If an experiment starting with the stated stoichiometric amounts instead isolates ester at eighty percent of theoretical yield, its ester mass is seventy point four grams. Product purity is yet another question: an impure recovered sample mass cannot automatically be counted as pure ester. This simplified atom economy calculation excludes solvents and other process inputs and therefore does not measure every environmental impact or practical waste stream. Keep balanced reaction design, reaction yield and recovered sample purity as separate quantities.",
+      "points": [
+        "Acid 60 + alcohol 46 g/mol · Ester 88 + water 18 g/mol · Total mass 106 g per reaction unit",
+        "Desired ester atom economy · 88/106×100 · About 83.0%; not isolated yield",
+        "80.0% of 88 g theoretical ester · Pure isolated ester=70.4 g · Purity and process inputs are separate"
+      ],
+      "board": {
+        "heading": "Atom economy and isolated yield measure different things",
+        "columns": [
+          "Given / model",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Acid 60 + alcohol 46 g/mol",
+            "Ester 88 + water 18 g/mol",
+            "Total mass 106 g per reaction unit"
+          ],
+          [
+            "Desired ester atom economy",
+            "88/106×100",
+            "About 83.0%; not isolated yield"
+          ],
+          [
+            "80.0% of 88 g theoretical ester",
+            "Pure isolated ester=70.4 g",
+            "Purity and process inputs are separate"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -894,6 +1046,94 @@
       ],
       "answer": 3,
       "explanation": "Use the mole-fraction-weighted mean: 0.40×16+0.60×30=24.4 g/mol."
+    },
+    {
+      "question": "A solution contains 3.00 mg solute per litre and has density 1.20 kg/L. Its mass-based ppm is:",
+      "options": [
+        "2.50 ppm",
+        "3.60 ppm",
+        "3.00 ppm",
+        "0.400 ppm"
+      ],
+      "answer": 0,
+      "explanation": "One litre has 1.20 kg solution, so 3.00/1.20=2.50 mg/kg, equal to 2.50 mass ppm."
+    },
+    {
+      "question": "One mass-based ppm equals:",
+      "options": [
+        "One mg/L at every density",
+        "1000 mass-based ppb",
+        "One g per g solution",
+        "100 mass-based ppb"
+      ],
+      "answer": 1,
+      "explanation": "The mass-fraction factors are 10^6 and 10^9; the same fraction is 1000 times as many ppb."
+    },
+    {
+      "question": "An ideal mixture has 2 mol He and 1 mol N2 at total pressure 3 bar. The helium partial pressure is:",
+      "options": [
+        "1 bar",
+        "3 bar",
+        "2 bar",
+        "2/9 bar"
+      ],
+      "answer": 2,
+      "explanation": "Helium mole fraction is 2/3, so its partial pressure is (2/3)×3=2 bar."
+    },
+    {
+      "question": "For that mixture, using He=4 and N2=28 g/mol, helium mass fraction is:",
+      "options": [
+        "2/3",
+        "1/3",
+        "7/9",
+        "2/9"
+      ],
+      "answer": 3,
+      "explanation": "Helium mass is 8 g and total mass 36 g, so its mass fraction is 8/36=2/9."
+    },
+    {
+      "question": "Mix 2.50 mmol Ag+ with 2.00 mmol Cl− in the complete AgCl precipitation model. With AgCl=143.5 g/mol, precipitate mass is:",
+      "options": [
+        "0.287 g",
+        "0.35875 g",
+        "0.07175 g",
+        "0.574 g"
+      ],
+      "answer": 0,
+      "explanation": "The 1:1 reaction is limited by 2.00 mmol chloride: 0.00200×143.5=0.287 g."
+    },
+    {
+      "question": "The same mixture leaves 0.500 mmol excess Ag+ in an assumed 65.00 mL liquid volume. Its excess concentration is approximately:",
+      "options": [
+        "0.0308 M",
+        "0.00769 M",
+        "0.0385 M",
+        "0.000500 M"
+      ],
+      "answer": 1,
+      "explanation": "Divide 0.000500 mol by 0.06500 L; spectator-ion amounts do not replace the reacting-ion balance."
+    },
+    {
+      "question": "For acid 60 + alcohol 46 → desired ester 88 + water 18, ester atom economy is approximately:",
+      "options": [
+        "100%",
+        "80.0%",
+        "83.0%",
+        "70.4%"
+      ],
+      "answer": 2,
+      "explanation": "Use the balanced stoichiometric masses: 88/(60+46)×100≈83.0%."
+    },
+    {
+      "question": "If theoretical pure ester is 88.0 g and isolated pure-product yield is 80.0%, recovered ester mass is:",
+      "options": [
+        "88.0 g",
+        "106 g",
+        "83.0 g",
+        "70.4 g"
+      ],
+      "answer": 3,
+      "explanation": "Isolated yield applies to theoretical product: 0.800×88.0=70.4 g; it is distinct from atom economy."
     }
   ]
 }

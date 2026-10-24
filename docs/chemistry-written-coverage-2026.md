@@ -16,8 +16,8 @@ Questions are original practice, not represented as official PYQs.
 
 | Unit | Recorded class | Chapters | Written sections | Worked examples | Class MCQs / Written MCQs |
 | --- | --- | --- | --- | --- | --- |
-| 1 | [Mole Concept](/jee/classes/mole-concept) | 17 | 14 | 9 | 24 / 24 |
-| 2 | [Atomic Structure](/jee/classes/atomic-structure) | 17 | 14 | 9 | 26 / 26 |
+| 1 | [Mole Concept](/jee/classes/mole-concept) | 21 | 18 | 12 | 32 / 32 |
+| 2 | [Atomic Structure](/jee/classes/atomic-structure) | 21 | 18 | 12 | 34 / 34 |
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 17 | 16 | 9 | 26 / 26 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 19 | 21 | 12 | 26 / 26 |
 | 5 | [Solutions](/jee/classes/solutions) | 19 | 21 | 12 | 26 / 26 |
@@ -39,16 +39,16 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Hydrocarbons adds hydroboration versus acid hydration, condition-dependent oxidative cleavage, common-product hydrogenation enthalpy comparisons and mixed Wurtz coupling product skeletons. Reagent sequences, carbon conservation and selectivity are treated separately.
+Mole Concept adds mass-based ppm with density, mole versus mass fractions and gas partial pressures, ionic precipitation with excess reactant, and supporting atom economy versus isolated yield.
 
-Practical Chemistry adds indicator selection and half equivalence, two-endpoint carbonate/bicarbonate balances, aliquot scaling in a whole-sample iron assay and fixed-threshold iodine-clock reasoning. These are stated theoretical models, not unsupervised experiment recipes.
+Atomic Structure adds a classical head-on closest-approach model, normalized hydrogen 2s/2p radial plots and node geometry, equal-speed versus equal-energy matter waves, and photon-rate/current calculations with a stated overall collection yield. The excited radial plot is supporting detail, not a claim that every advanced wavefunction formula is required by the syllabus.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
 ## Remaining scope
 
 The individual companions retain their specific remaining-work statements. Further
-reaction networks, excited-orbital radial wavefunction plots, heteronuclear MO schemes,
+reaction networks, higher excited-orbital wavefunction plots, heteronuclear MO schemes,
 nonideal equilibrium and solution datasets, detailed group-specific comparisons,
 broader actinoid configurations, extended elemental analysis, nonideal extraction,
 complete systematic ion analysis and broader organic synthesis practice remain.
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific primary references, including OpenStax alkene hydration, oxidation, hydrogenation energetics, titration curves and quantitative analysis; NCERT hydrocarbon chemistry; NSEC carbonate-alkalinity teaching notes; and Royal Society of Chemistry iodine-clock teaching material. Numerical data and MCQs in this batch are original practice.
+The notes contain lesson-specific primary references, including OpenStax concentration units, gas mixtures, precipitation, hydrogen quantum theory, matter waves and photon counting; the American Chemical Society on atom economy; and the Physlet Quantum Physics closest-approach model. Numerical data and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

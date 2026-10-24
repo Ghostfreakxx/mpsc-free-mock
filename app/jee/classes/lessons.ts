@@ -1183,7 +1183,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "atomic-structure", subject: "Chemistry", unit: 2, number: "C08", title: atomicStructure.title,
-    description: "Seventeen narrated chapters on atomic structure, excitation and ionization, cascade line counts, restricted quantum states, nodes and uncertainty calculations.",
+    description: "Twenty-one narrated chapters on atomic structure, closest approach, 2s/2p radial plots, matter-wave comparisons, photon rates, spectra and quantum states.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 2 foundation with original practice. The Atomic Structure and Atomic Spectra written lessons complement this class. Detailed radial plots, fuller derivations and additional configuration problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.atomic-structure.lecture.v1",
     audio: "/lectures/atomic-structure/narration-marin.mp3",
@@ -1203,7 +1203,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "mole-concept", subject: "Chemistry", unit: 1, number: "C10", title: moleConcept.title,
-    description: "Seventeen narrated chapters on mole calculations, hydrates, carbonate mixtures, stage yields, combustion and solution concentration conversions.",
+    description: "Twenty-one narrated chapters on mole calculations, trace concentrations, gas fractions, precipitation, atom economy, hydrates, mixtures and reaction yields.",
     scope: "Recorded Unit 1 foundation with original practice. Further multi-step reaction networks and additional experimental datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.mole-concept.lecture.v1",
     audio: "/lectures/mole-concept/narration-marin.mp3",
