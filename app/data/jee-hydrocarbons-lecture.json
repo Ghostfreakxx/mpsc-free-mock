@@ -45,6 +45,22 @@
     {
       "title": "OpenStax: alkylation of acetylide anions",
       "url": "https://openstax.org/books/organic-chemistry/pages/9-8-alkylation-of-acetylide-anions"
+    },
+    {
+      "title": "OpenStax: alkene hydroboration–oxidation",
+      "url": "https://openstax.org/books/organic-chemistry/pages/8-5-hydration-of-alkenes-addition-of-h2o-by-hydroboration"
+    },
+    {
+      "title": "OpenStax: alkene stability and hydrogenation",
+      "url": "https://openstax.org/books/organic-chemistry/pages/7-6-stability-of-alkenes"
+    },
+    {
+      "title": "OpenStax: alkene oxidation and cleavage",
+      "url": "https://openstax.org/books/organic-chemistry/pages/8-8-oxidation-of-alkenes-cleavage-to-carbonyl-compounds"
+    },
+    {
+      "title": "NCERT: alkyl halides and Wurtz coupling",
+      "url": "https://ncert.nic.in/textbook/pdf/lech201.pdf"
     }
   ],
   "chapters": [
@@ -648,6 +664,146 @@
       },
       "speechInput": "A disubstituted aromatic ring requires combining the effects of both existing groups. Consider a ring numbered with a methyl group at carbon one and a carboxyl group at carbon four. In the usual introductory electrophilic substitution comparison, methyl favours ortho and para positions relative to itself. Its free ortho positions are two and six, while its para position is already occupied. The carboxyl group is a meta director, and positions two and six are also meta to carbon four. Thus both preferences point toward the same two symmetry related sites in this example. Positions two and six describe the same constitutional monoproduct after the appropriate ring symmetry is considered, rather than two guaranteed different products. This agreement does not mean the ring reacts faster than benzene overall or that all other products are impossible. The electron withdrawing group can reduce reactivity, and the observed selectivity depends on conditions. If two groups favour different sites, their relative influence and steric effects need to be considered instead of applying a mechanical one group rule. State the numbering, occupied positions and symmetry before counting positional products.",
       "recordingNote": "Closing reminder omitted by the generated recording; transcript follows independently reviewed speech. Original requested input retained for audio cache provenance."
+    },
+    {
+      "title": "Hydroboration changes hydration orientation",
+      "formula": "Propene: acid hydration → propan-2-ol; hydroboration–oxidation → propan-1-ol",
+      "script": "Two alkene hydration routes can give different alcohols while retaining the same carbon skeleton. In ordinary acid catalysed hydration of propene, the hydroxyl group appears mainly on the central carbon, giving propan two ol. Hydroboration followed by suitable oxidation instead gives propan one ol, placing the hydroxyl group on the less substituted terminal carbon. During hydroboration, boron and hydrogen add from the same face of the double bond. Oxidation replaces the carbon boron bond with a carbon oxygen bond with retention at that carbon, so the overall addition of hydrogen and hydroxyl is syn. This is a stereochemical statement, while the less substituted carbon preference is a regiochemical statement. Neither should be confused with the radical peroxide effect for hydrogen bromide. The hydroboration step does not proceed through a free carbocation, so the familiar carbocation rearrangement argument is not the pathway used here. Both propene products have three carbons and the alcohol formula three carbons, eight hydrogens and one oxygen. Their different hydroxyl positions make them constitutional isomers. Always name both the reagent sequence and the product connectivity before applying an orientation label.",
+      "points": [
+        "Propene; acid-catalysed hydration · OH mainly on central carbon · Propan-2-ol; three carbons",
+        "Hydroboration, then oxidation · OH on less substituted carbon · Propan-1-ol; three carbons",
+        "B and H add on same face · Oxidation retains configuration · Net syn H / OH; no free carbocation"
+      ],
+      "board": {
+        "heading": "Hydroboration changes hydration orientation",
+        "columns": [
+          "Given / system",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Propene; acid-catalysed hydration",
+            "OH mainly on central carbon",
+            "Propan-2-ol; three carbons"
+          ],
+          [
+            "Hydroboration, then oxidation",
+            "OH on less substituted carbon",
+            "Propan-1-ol; three carbons"
+          ],
+          [
+            "B and H add on same face",
+            "Oxidation retains configuration",
+            "Net syn H / OH; no free carbocation"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Oxidative cleavage depends on carbon substitution",
+      "formula": "Strong alkene oxidation, then acid workup: =CH₂ → CO₂; =CHR → RCOOH; =CR₂ → ketone",
+      "script": "Cleavage of an alkene does not always stop at the same products as reductive ozonolysis. Under the standard strong oxidative cleavage model using hot permanganate with an appropriate acid workup, examine each original double bonded carbon separately. A carbon carrying one hydrogen gives a carboxylic acid fragment. A carbon carrying no hydrogen gives a ketone fragment. A terminal methylene carbon can be oxidized through smaller intermediates to carbon dioxide in the complete oxidation model. Thus propene gives ethanoic acid and carbon dioxide after the specified workup, accounting for two organic carbons plus one inorganic carbon. Two methylbut two ene instead gives propanone and ethanoic acid: its more substituted double bond carbon becomes a ketone and its hydrogen bearing partner becomes an acid. The total carbon count remains five. Cold dilute permanganate under mild conditions can instead favour addition to form a vicinal diol, so the reagent name alone does not fix the oxidation extent. Carboxylate salts can be present before acid workup. State conditions and workup before choosing between diol formation, aldehyde formation and further oxidative cleavage.",
+      "points": [
+        "Original alkene carbon =CHR · Strong cleavage; acid workup · RCOOH; =CR₂ gives ketone",
+        "Propene; complete model · Terminal =CH₂ carbon → CO₂ · Ethanoic acid + CO₂: 2 + 1 C",
+        "2-Methylbut-2-ene · Ketone end plus acid end · Propanone + ethanoic acid: 3 + 2 C"
+      ],
+      "board": {
+        "heading": "Oxidative cleavage depends on carbon substitution",
+        "columns": [
+          "Given / system",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Original alkene carbon =CHR",
+            "Strong cleavage; acid workup",
+            "RCOOH; =CR₂ gives ketone"
+          ],
+          [
+            "Propene; complete model",
+            "Terminal =CH₂ carbon → CO₂",
+            "Ethanoic acid + CO₂: 2 + 1 C"
+          ],
+          [
+            "2-Methylbut-2-ene",
+            "Ketone end plus acid end",
+            "Propanone + ethanoic acid: 3 + 2 C"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Hydrogenation enthalpy compares starting alkenes",
+      "formula": "Same hydrogenation product: H(A) − H(B) = ΔHhyd(B) − ΔHhyd(A)",
+      "script": "Hydrogenation energy can compare two starting alkenes only when the reaction endpoints are properly matched. Suppose two isomeric alkenes each consume one mole of hydrogen to form the same alkane in the same physical state. Use illustrative hydrogenation enthalpies of minus one hundred twenty kilojoules per mole for A and minus one hundred sixteen for B. Because both routes finish at the same enthalpy, A must start four kilojoules per mole above B. It releases more heat because its initial enthalpy is higher, so B is the more enthalpically stable alkene in this comparison. The less negative hydrogenation enthalpy therefore corresponds to the lower starting enthalpy when the endpoints match. This does not establish which alkene hydrogenates faster: activation barriers control reaction rates. It also does not directly provide an equilibrium constant, which depends on Gibbs energy and therefore includes entropy. Comparing different product alkanes without correcting their enthalpies would invalidate the simple subtraction. In exam data, first verify equal reaction stoichiometry and a common final product, then subtract the signed enthalpies before interpreting stability.",
+      "points": [
+        "A → same alkane; illustrative data · ΔHhyd(A)=−120 kJ/mol · A releases more heat",
+        "B → same alkane; same states · ΔHhyd(B)=−116 kJ/mol · B starts 4 kJ/mol lower",
+        "Common endpoint is essential · Enthalpy difference ≠ rate barrier · No equilibrium K without ΔG"
+      ],
+      "board": {
+        "heading": "Hydrogenation enthalpy compares starting alkenes",
+        "columns": [
+          "Given / system",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "A → same alkane; illustrative data",
+            "ΔHhyd(A)=−120 kJ/mol",
+            "A releases more heat"
+          ],
+          [
+            "B → same alkane; same states",
+            "ΔHhyd(B)=−116 kJ/mol",
+            "B starts 4 kJ/mol lower"
+          ],
+          [
+            "Common endpoint is essential",
+            "Enthalpy difference ≠ rate barrier",
+            "No equilibrium K without ΔG"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Mixed Wurtz coupling gives several skeletons",
+      "formula": "RBr + R′Br + sodium: R–R, R–R′ and R′–R′ are possible couplings",
+      "script": "The Wurtz reaction illustrates why a carbon joining reaction is not automatically a selective synthesis. In the simple net model, two alkyl bromide molecules react with two sodium atoms to give one coupled alkane and two sodium bromide units. With only a suitable primary ethyl halide, the carbon groups can join to give butane. Now consider a mixture of methyl and ethyl halides. Methyl with methyl gives ethane, methyl with ethyl gives propane, and ethyl with ethyl gives butane. The cross coupled product is therefore accompanied by two possible self coupling skeletons. Listing those three products does not prove that they occur in equal amounts, or that the desired cross product has a fixed yield. Reactivity, competing reactions and conditions affect the actual mixture. The mixed route is consequently a poor general way to claim selective preparation of an unsymmetrical alkane. Carbon accounting still provides a reliable check: combine the carbon counts of the two groups that actually join, rather than adding all the starting carbons into every product. Treat the net equation as transformation bookkeeping and keep selectivity separate from theoretical stoichiometry.",
+      "points": [
+        "One suitable primary ethyl halide · Two two-carbon groups couple · Butane; net 2RBr + 2Na",
+        "Mixed methyl and ethyl halides · Self coupling and cross coupling · Ethane, propane and butane possible",
+        "Carbon pairs: 1+1, 1+2, 2+2 · Products need not be equal amounts · Poor selective unsymmetrical route"
+      ],
+      "board": {
+        "heading": "Mixed Wurtz coupling gives several skeletons",
+        "columns": [
+          "Given / system",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "One suitable primary ethyl halide",
+            "Two two-carbon groups couple",
+            "Butane; net 2RBr + 2Na"
+          ],
+          [
+            "Mixed methyl and ethyl halides",
+            "Self coupling and cross coupling",
+            "Ethane, propane and butane possible"
+          ],
+          [
+            "Carbon pairs: 1+1, 1+2, 2+2",
+            "Products need not be equal amounts",
+            "Poor selective unsymmetrical route"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -914,6 +1070,94 @@
       ],
       "answer": 3,
       "explanation": "Reflection exchanges positions 2 and 6 while preserving both existing substituent positions; they lead to the same connectivity."
+    },
+    {
+      "question": "Propene under suitable hydroboration followed by oxidation gives mainly:",
+      "options": [
+        "Propan-1-ol",
+        "Propan-2-ol",
+        "Ethanoic acid",
+        "Butan-1-ol"
+      ],
+      "answer": 0,
+      "explanation": "The net hydroxyl placement is on the less substituted carbon, retaining the three-carbon skeleton."
+    },
+    {
+      "question": "The overall H/OH addition in standard hydroboration–oxidation is:",
+      "options": [
+        "Anti through a free carbocation",
+        "Syn, with the hydroboration step avoiding a free carbocation",
+        "A radical HBr chain reaction",
+        "A carbon-chain shortening"
+      ],
+      "answer": 1,
+      "explanation": "B and H add from one face, and oxidation replaces B with OH with retention."
+    },
+    {
+      "question": "Under complete strong oxidative cleavage followed by acid workup, propene gives:",
+      "options": [
+        "Propan-1-ol only",
+        "Two ethanal molecules",
+        "Ethanoic acid and carbon dioxide",
+        "Propanone and methanal"
+      ],
+      "answer": 2,
+      "explanation": "The CH3CH= carbon becomes the two-carbon acid and terminal =CH2 is fully oxidized to CO2."
+    },
+    {
+      "question": "Strong oxidative cleavage of 2-methylbut-2-ene with acid workup gives:",
+      "options": [
+        "Two propanone molecules",
+        "Methanal and butanal",
+        "Only a five-carbon alcohol",
+        "Propanone and ethanoic acid"
+      ],
+      "answer": 3,
+      "explanation": "The carbon without a double-bond hydrogen gives a ketone; the other gives an acid, preserving 3+2=5 carbons."
+    },
+    {
+      "question": "A and B hydrogenate to the same alkane with illustrative ΔH values −120 and −116 kJ/mol. Which statement follows?",
+      "options": [
+        "B starts 4 kJ/mol lower in enthalpy",
+        "A starts 4 kJ/mol lower",
+        "B must hydrogenate faster",
+        "The equilibrium constant is exactly 4"
+      ],
+      "answer": 0,
+      "explanation": "A releases four more kJ/mol to reach the common endpoint, so A starts higher."
+    },
+    {
+      "question": "The simple subtraction of hydrogenation enthalpies requires:",
+      "options": [
+        "Different unrelated product alkanes",
+        "A common product and matched stoichiometry and states",
+        "Equal reaction rates",
+        "A catalyst with zero activation barrier"
+      ],
+      "answer": 1,
+      "explanation": "The endpoint must cancel in the enthalpy cycle; reaction rate is a separate issue."
+    },
+    {
+      "question": "Mixed methyl and ethyl halides in a Wurtz coupling model can give which alkane skeletons?",
+      "options": [
+        "Methane and pentane only",
+        "Propane only",
+        "Ethane, propane and butane",
+        "Ethene and ethyne only"
+      ],
+      "answer": 2,
+      "explanation": "The pairings are methyl/methyl, methyl/ethyl and ethyl/ethyl."
+    },
+    {
+      "question": "Why is mixed Wurtz coupling generally unsuitable for claiming a pure unsymmetrical alkane?",
+      "options": [
+        "Carbon atoms disappear",
+        "Sodium supplies extra carbons",
+        "Only self coupling can ever occur",
+        "Self and cross coupling can produce a mixture"
+      ],
+      "answer": 3,
+      "explanation": "Possible competing pairings limit selectivity; the net equation does not guarantee a product ratio."
     }
   ]
 }

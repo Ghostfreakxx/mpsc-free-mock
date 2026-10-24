@@ -41,6 +41,18 @@
     {
       "title": "IIT Kanpur SATHEE: surface chemistry",
       "url": "https://sathee.iitk.ac.in/ncert-books/udaan/udaan-che-12/chem-12-unit-05-surface-chemistry/"
+    },
+    {
+      "title": "OpenStax: acid–base titration curves and indicators",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations"
+    },
+    {
+      "title": "NSEC: carbonate alkalinity and two endpoints",
+      "url": "https://www.nsec.ac.in/images/bes_ACID%20%E2%80%93%20BASE%20TITRATION.pdf"
+    },
+    {
+      "title": "Royal Society of Chemistry: iodine clock reaction",
+      "url": "https://edu.rsc.org/experiments/iodine-clock-reaction-demonstration-method/744.article"
     }
   ],
   "chapters": [
@@ -638,6 +650,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Choose an indicator from the equivalence region",
+      "formula": "Strong/strong: near pH 7 at 25 °C; weak acid/strong base: above 7",
+      "script": "Indicator selection follows the titration curve rather than a rule that every equivalence point has p H seven. For an ordinary dilute strong acid and strong base titration at twenty five degrees Celsius, equivalence is near neutral. A weak acid titrated by a strong base instead leaves its conjugate base in solution, so hydrolysis makes the equivalence solution basic. A weak base titrated by a strong acid leaves a conjugate acid and gives an acidic equivalence solution. Choose an indicator whose transition lies within the steep p H change for the actual concentration and system. Phenolphthalein is commonly suitable for a typical ethanoic acid and sodium hydroxide titration, while methyl orange would change too early in that comparison. This is not a guarantee that one named indicator works at every dilution. The observed colour endpoint is also not identical by definition to the stoichiometric equivalence point. For a weak acid with supplied p K a four point seven six, the ideal half equivalence buffer has equal acid and conjugate base amounts, giving p H four point seven six. Half equivalence and equivalence therefore answer different questions.",
+      "points": [
+        "Strong acid / strong base; 25 °C · Matched dilute system · Equivalence near pH 7",
+        "Weak acid / strong base · Conjugate base hydrolysis · Equivalence above 7; suitable basic indicator",
+        "Weak acid; half equivalence · [A⁻]=[HA] in ideal buffer · pH=pKa; not equivalence pH"
+      ],
+      "board": {
+        "heading": "Choose an indicator from the equivalence region",
+        "columns": [
+          "Given / system",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Strong acid / strong base; 25 °C",
+            "Matched dilute system",
+            "Equivalence near pH 7"
+          ],
+          [
+            "Weak acid / strong base",
+            "Conjugate base hydrolysis",
+            "Equivalence above 7; suitable basic indicator"
+          ],
+          [
+            "Weak acid; half equivalence",
+            "[A⁻]=[HA] in ideal buffer",
+            "pH=pKa; not equivalence pH"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Two carbonate endpoints separate a mixture",
+      "formula": "Carbonate + bicarbonate only: n(CO₃²⁻)=cVP; n(HCO₃⁻)=c(VT−2VP)",
+      "script": "A two endpoint acid titration can distinguish carbonate from bicarbonate when the sample composition is restricted appropriately. Assume the only acid consuming bases are carbonate and bicarbonate. At the first idealized endpoint, carbonate has accepted one proton to become bicarbonate. The acid amount used to that stage therefore equals the initial carbonate amount. At the total second endpoint, each initial carbonate has accepted two protons and each initial bicarbonate one. If the same acid concentration is used, the initial bicarbonate amount equals concentration times the total volume minus twice the first endpoint volume. Use litres for volumes. For zero point one zero zero molar acid, a first endpoint at ten point zero zero millilitres and a total endpoint at twenty six point zero zero correspond to one point zero zero millimole carbonate and zero point six zero zero millimole bicarbonate. The second stage alone consumes sixteen millilitres, which is different from the total twenty six. A negative calculated bicarbonate amount flags a failed assumption or inconsistent data in this restricted model. Other bases, dissolved carbon dioxide behaviour and endpoint uncertainty require separate treatment in real analysis.",
+      "points": [
+        "Only CO₃²⁻ and HCO₃⁻ consume acid · First endpoint: one H⁺ per CO₃²⁻ · n(CO₃²⁻)=cVP",
+        "Total endpoint from original reading · Two H⁺ / carbonate; one / bicarbonate · n(HCO₃⁻)=c(VT−2VP)",
+        "c=0.100 M; VP=10.00; VT=26.00 mL · Carbonate 1.00 mmol · Bicarbonate 0.600 mmol"
+      ],
+      "board": {
+        "heading": "Two carbonate endpoints separate a mixture",
+        "columns": [
+          "Given / system",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Only CO₃²⁻ and HCO₃⁻ consume acid",
+            "First endpoint: one H⁺ per CO₃²⁻",
+            "n(CO₃²⁻)=cVP"
+          ],
+          [
+            "Total endpoint from original reading",
+            "Two H⁺ / carbonate; one / bicarbonate",
+            "n(HCO₃⁻)=c(VT−2VP)"
+          ],
+          [
+            "c=0.100 M; VP=10.00; VT=26.00 mL",
+            "Carbonate 1.00 mmol",
+            "Bicarbonate 0.600 mmol"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "An aliquot result must be scaled to the whole sample",
+      "formula": "Whole-sample analyte = aliquot analyte × total solution volume / aliquot volume",
+      "script": "A titration measures the analyte in the portion actually transferred to the flask. To report the whole sample amount, restore any dilution and aliquot factors explicitly. Suppose a one point zero zero zero gram sample is completely dissolved and made to two hundred fifty point zero millilitres, with all relevant iron present as iron two. A twenty five point zero zero millilitre aliquot consumes ten point zero zero millilitres of zero point zero two zero zero molar permanganate in the stipulated acidic iron two titration. The permanganate amount is zero point two zero zero millimole. The one to five ratio gives one point zero zero millimole iron in that aliquot. The volumetric flask contains ten such aliquots, so the whole sample contains ten point zero millimoles iron. Using the supplied rounded iron molar mass of fifty six grams per mole, this is zero point five six zero gram iron, or fifty six point zero percent by mass. The result assumes quantitative transfer, complete reaction and no interfering reductants. The flask volume scales the measured amount; it does not replace the aliquot volume in the original reaction stoichiometry.",
+      "points": [
+        "10.00 mL of 0.0200 M MnO₄⁻ · Acidic Fe²⁺ ratio 1:5 · 1.00 mmol Fe²⁺ in aliquot",
+        "250.0 mL flask; 25.00 mL aliquot · Scale factor 250.0/25.00=10 · 10.0 mmol Fe in whole sample",
+        "Fe=56 g/mol; sample=1.000 g · Mass Fe=0.560 g · 56.0% Fe; no interfering reductants"
+      ],
+      "board": {
+        "heading": "An aliquot result must be scaled to the whole sample",
+        "columns": [
+          "Given / system",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "10.00 mL of 0.0200 M MnO₄⁻",
+            "Acidic Fe²⁺ ratio 1:5",
+            "1.00 mmol Fe²⁺ in aliquot"
+          ],
+          [
+            "250.0 mL flask; 25.00 mL aliquot",
+            "Scale factor 250.0/25.00=10",
+            "10.0 mmol Fe in whole sample"
+          ],
+          [
+            "Fe=56 g/mol; sample=1.000 g",
+            "Mass Fe=0.560 g",
+            "56.0% Fe; no interfering reductants"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Iodine-clock time measures a fixed conversion threshold",
+      "formula": "I₂ + 2S₂O₃²⁻ → 2I⁻ + S₄O₆²⁻; at fixed threshold, average rate ∝ 1/t",
+      "script": "An iodine clock separates formation of a species from the later appearance of a visible signal. In a suitable acidic iodide and peroxide system, iodine is produced while added thiosulfate consumes it. One iodine molecule reacts with two thiosulfate ions. The familiar starch colour becomes persistent only when the scavenger is exhausted and iodine species can accumulate. A delayed colour therefore does not mean that no iodine was formed earlier. For an idealized initial thiosulfate amount of one point zero zero millimole, exhaustion corresponds to zero point five zero zero millimole iodine consumed by that reaction. If two otherwise comparable mixtures have the same total volume and threshold but times of forty and twenty seconds, the second has twice the average iodine formation rate to the threshold. This is an average over the induction interval, not automatically an instantaneous rate constant. Inferring a reaction order also requires knowing which concentration changed while other conditions were held fixed. Temperature, mixing, reagent volumes and scavenger amount can all change the time. Keep a fixed conversion threshold before using reciprocal time as a rate proxy.",
+      "points": [
+        "Iodine forms before persistent colour · Thiosulfate consumes I₂ in 2:1 ratio · No colour does not mean no reaction",
+        "Initial S₂O₃²⁻=1.00 mmol · I₂ consumed at exhaustion=half · 0.500 mmol; fixed threshold",
+        "Same threshold and volume; 40 s → 20 s · Average formation rate doubles · 1/t proxy is not itself rate constant"
+      ],
+      "board": {
+        "heading": "Iodine-clock time measures a fixed conversion threshold",
+        "columns": [
+          "Given / system",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Iodine forms before persistent colour",
+            "Thiosulfate consumes I₂ in 2:1 ratio",
+            "No colour does not mean no reaction"
+          ],
+          [
+            "Initial S₂O₃²⁻=1.00 mmol",
+            "I₂ consumed at exhaustion=half",
+            "0.500 mmol; fixed threshold"
+          ],
+          [
+            "Same threshold and volume; 40 s → 20 s",
+            "Average formation rate doubles",
+            "1/t proxy is not itself rate constant"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -904,6 +1056,94 @@
       ],
       "answer": 0,
       "explanation": "Use reciprocals then divide by 1/50. This ranks the supplied data rather than asserting a universal ratio."
+    },
+    {
+      "question": "At equivalence in a typical weak-acid/strong-base titration at 25 °C, the solution is basic mainly because:",
+      "options": [
+        "Every equivalence point is pH 14",
+        "The conjugate base hydrolyses",
+        "The acid never reacts",
+        "An indicator creates hydroxide stoichiometrically"
+      ],
+      "answer": 1,
+      "explanation": "The weak acid has become its conjugate base, which reacts with water to produce OH−."
+    },
+    {
+      "question": "An ideal weak-acid buffer is at half equivalence with supplied pKa=4.76. Its pH is:",
+      "options": [
+        "7.00",
+        "9.52",
+        "4.76",
+        "2.38"
+      ],
+      "answer": 2,
+      "explanation": "Equal acid and conjugate-base concentrations give pH=pKa in the ideal buffer approximation."
+    },
+    {
+      "question": "For carbonate/bicarbonate only, 0.100 M acid gives VP=10.00 mL and total VT=26.00 mL. Initial bicarbonate is:",
+      "options": [
+        "2.60 mmol",
+        "1.60 mmol",
+        "1.00 mmol",
+        "0.600 mmol"
+      ],
+      "answer": 3,
+      "explanation": "n(HCO3−)=0.100×(0.02600−2×0.01000)=0.000600 mol."
+    },
+    {
+      "question": "With those endpoint volumes, the acid volume added during the second stage alone is:",
+      "options": [
+        "16.00 mL",
+        "26.00 mL",
+        "10.00 mL",
+        "36.00 mL"
+      ],
+      "answer": 0,
+      "explanation": "The second stage is the difference VT−VP, not the total volume from the start."
+    },
+    {
+      "question": "A 25.00 mL aliquot from a 250.0 mL sample solution contains 1.00 mmol Fe. The whole solution contains:",
+      "options": [
+        "1.00 mmol",
+        "10.0 mmol",
+        "0.100 mmol",
+        "250 mmol"
+      ],
+      "answer": 1,
+      "explanation": "The flask contains ten equal aliquots, so multiply the aliquot amount by ten."
+    },
+    {
+      "question": "That whole solution contains 0.0100 mol Fe from a 1.000 g sample. Using Fe=56 g/mol, iron mass percent is:",
+      "options": [
+        "5.60%",
+        "0.560%",
+        "56.0%",
+        "560%"
+      ],
+      "answer": 2,
+      "explanation": "Iron mass is 0.0100×56=0.560 g, or 56.0% of the original sample."
+    },
+    {
+      "question": "An iodine clock initially has 1.00 mmol thiosulfate. Ideal exhaustion consumes how much I2?",
+      "options": [
+        "2.00 mmol",
+        "1.00 mmol",
+        "0.250 mmol",
+        "0.500 mmol"
+      ],
+      "answer": 3,
+      "explanation": "I2 consumes two thiosulfate ions, so the iodine amount is half the thiosulfate amount."
+    },
+    {
+      "question": "At equal clock threshold and total volume, times change from 40 s to 20 s. The average iodine formation rate changes by:",
+      "options": [
+        "A factor of 2 increase",
+        "A factor of 2 decrease",
+        "No change",
+        "A factor of 4 increase"
+      ],
+      "answer": 0,
+      "explanation": "The same conversion in half the time gives twice the average formation rate; this does not by itself determine a rate constant."
     }
   ]
 }

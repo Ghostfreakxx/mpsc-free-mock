@@ -1223,7 +1223,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "hydrocarbons", subject: "Chemistry", unit: 15, number: "C12", title: hydrocarbons.title,
-    description: "Seventeen narrated chapters on additions, ozonolysis reconstruction, alkyne hydration, aromaticity, directing effects and benzylic reactions.",
+    description: "Twenty-one narrated chapters on hydrocarbon additions, hydroboration, oxidative cleavage, hydrogenation enthalpy, Wurtz coupling and aromatic reactions.",
     scope: "Recorded Unit 15 foundation and worked applications with original practice. Further preparation routes, polymerization mechanisms and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.hydrocarbons.lecture.v1",
     audio: "/lectures/hydrocarbons/narration-marin.mp3",
@@ -1283,7 +1283,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "practical-chemistry", subject: "Chemistry", unit: 20, number: "C18", title: practicalChemistry.title,
-    description: "Seventeen narrated chapters on titration corrections, measurement bounds, anion and cation evidence, preparations, calorimetry and rate experiments.",
+    description: "Twenty-one narrated chapters on titration corrections, indicator selection, carbonate endpoints, aliquot assays, iodine-clock observations and experimental evidence.",
     scope: "Recorded Unit 20 conceptual foundation with original practice. Full ion-analysis schemes, all preparation equations, indicator curves, sol preparation and further kinetic datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.practical-chemistry.lecture.v1",
     audio: "/lectures/practical-chemistry/narration-marin.mp3",
