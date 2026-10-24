@@ -33,15 +33,15 @@ Questions are original practice, not represented as official PYQs.
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 17 | 17 | 9 | 24 / 24 |
 | 16 | [Organic Halogens](/jee/classes/organic-halogens) | 21 | 21 | 12 | 32 / 32 |
 | 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 23 | 21 | 12 | 32 / 32 |
-| 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 17 | 17 | 9 | 24 / 24 |
-| 19 | [Biomolecules](/jee/classes/biomolecules) | 17 | 17 | 9 | 24 / 24 |
+| 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 21 | 21 | 12 | 32 / 32 |
+| 19 | [Biomolecules](/jee/classes/biomolecules) | 21 | 21 | 12 | 32 / 32 |
 | 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 17 | 17 | 9 | 24 / 24 |
 
 ## Latest expansion
 
-Organic Halogens adds alcohol activation and PBr3 net stoichiometry, double elimination through a vinyl halide, Grignard carbon dioxide addition versus proton quenching, and the distinction between halogen deactivation and ortho/para direction in electrophilic substitution.
+Organic Nitrogen adds the carbylamine net equation and carbon source, successive methylation to quaternary ammonium, known-pH protonation fractions and protected-aniline bromination. Net equations and stipulated conversions are bookkeeping models, not laboratory prescriptions.
 
-Organic Oxygen adds oxime and hydrazone condensation with a derivative diagram, medium-dependent phenol bromination, soda-lime versus ideal Kolbe anodic carbon ledgers and ester aminolysis. Net equations do not prescribe experimental conditions or guarantee conversion.
+Biomolecules adds fat- and water-soluble vitamin function links, the B12 storage exception, an open-chain D-fructose Fischer drawing and DNA reverse complements with strand direction, hydrogen bonds and backbone counts.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific primary references, including OpenStax alcohol conversion, alkyne preparation, Grignard carboxylation, aromatic substituent effects, carbonyl derivatives and ester chemistry, together with IGNOU carboxylate transformations and university phenol teaching notes. Numerical data and MCQs in this batch are original practice.
+The notes contain lesson-specific primary references, including NCERT amines, OpenStax amine reactions, conjugate-pair ratios, sugar configuration and DNA structure, together with NIH ODS vitamin fact sheets and MedlinePlus B12 storage information. Numerical data and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

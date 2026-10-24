@@ -1,3 +1,4 @@
+import { extendNitrogenBiomoleculeApplicationsLesson } from './nitrogen-biomolecule-applications-study.ts';
 import { extendHalogenOxygenTransformationsLesson } from "./halogen-oxygen-transformations-study.ts";
 import { extendNitrogenPracticalPeriodicLesson } from "./nitrogen-practical-periodic-study.ts";
 import { extendHalogensOxygenBiomoleculesLesson } from "./halogens-oxygen-biomolecules-study.ts";
@@ -43,7 +44,7 @@ export const oxygenNitrogenLessons: StudyLesson[] = [
     title: "Organic nitrogen: amines, basicity and diazonium chemistry",
     summary: "Classify amines, reason about basicity and follow carbon counts through preparation and aromatic transformations.",
     prerequisites: "Organic principles, resonance, acids and bases, halide substitution and carbonyl chemistry.",
-    remaining: "Written companion to the seventeen-chapter Marin recording for Unit 18. It includes amine route carbon counts, acylation, Hinsberg interpretation, diazonium carbon ledgers and quantitative aqueous basicity. Full mechanism drawings, identification equations, broader solvent datasets and longer syntheses remain. Original practice, not exhaustive coverage or official PYQs.",
+    remaining: "Written companion to the twenty-one-chapter Marin recording for Unit 18. It includes amine route carbon counts, acylation, Hinsberg interpretation, diazonium carbon ledgers and quantitative aqueous basicity. Carbylamine equations, repeated alkylation, known-pH fractions and protected-aniline bromination are included. Full mechanism drawings, broader solvent datasets and longer syntheses remain. Original practice, not exhaustive coverage or official PYQs.",
     sections: [
       { title: "Count the carbon groups bonded to nitrogen", paragraphs: ["A primary amine is RNH2, a secondary amine R2NH and a tertiary amine R3N. Count groups attached directly to nitrogen, not the branching of a neighbouring carbon. Thus (CH3)3CNH2 is a primary amine even though its carbon group is tertiary. A quaternary ammonium ion has four carbon groups and a positive charge; it is not a neutral tertiary amine.", "CH3CH2NH2 is ethanamine; C6H5NH2 is aniline, with nitrogen directly attached to an aromatic ring. Benzylamine, C6H5CH2NH2, has a different environment because a saturated carbon separates nitrogen from the ring. Naming and classification help determine whether the lone pair can conjugate with aromatic orbitals."], formula: "Primary RNH2; secondary R2NH; tertiary R3N; quaternary R4N+" },
       { title: "The lone pair accepts a proton", paragraphs: ["An amine can act as a base by using its nitrogen lone pair to bind H+. Its conjugate acid is an ammonium species. For a given temperature, stronger basicity means a larger K_b and usually a conjugate acid with larger pK_a. State the solvent before comparing compounds because solvent stabilization affects the equilibrium.", "For simple alkylamines, electron donation can favour proton acceptance. In aniline the nitrogen lone pair participates in conjugation with the aromatic ring, reducing its availability relative to many alkylamines. Electron-withdrawing ring substituents can reduce basicity further. Resonance and inductive effects compete, so one word such as aromatic is not a complete explanation of every substituted comparison."], formula: "RNH2 + H2O <=> RNH3+ + OH-" },
@@ -93,3 +94,5 @@ for (const lesson of oxygenNitrogenLessons) extendHalogensOxygenBiomoleculesLess
 for (const lesson of oxygenNitrogenLessons) extendNitrogenPracticalPeriodicLesson(lesson);
 
 for (const lesson of oxygenNitrogenLessons) extendHalogenOxygenTransformationsLesson(lesson);
+
+for (const lesson of oxygenNitrogenLessons) extendNitrogenBiomoleculeApplicationsLesson(lesson);

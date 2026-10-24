@@ -1,0 +1,531 @@
+// Authored by scripts/expand-nitrogen-biomolecule-applications.mjs.
+export const nitrogenBiomoleculeApplicationsAdditions = {
+  "organic-nitrogen": {
+    "base": 17,
+    "quizBase": 24,
+    "chapters": [
+      {
+        "title": "Carbylamine equation and the extra carbon",
+        "formula": "RNH₂ + CHCl₃ + 3KOH → RNC + 3KCl + 3H₂O",
+        "script": "The carbylamine reaction is useful as a structural identification principle for primary amines. In its familiar net equation, one primary amine combines with one chloroform and three potassium hydroxide units to form an isocyanide, three potassium chloride units and three water molecules. Both primary aliphatic and primary aromatic amines can fit this standard test. Ordinary secondary and tertiary amines do not give the corresponding positive test. The product connectivity matters: an isocyanide has the organic group bonded to nitrogen, followed by the terminal carbon. A nitrile instead has the organic group bonded directly to the nitrile carbon. Starting with ethylamine, the two carbon ethyl group remains attached to nitrogen, while chloroform supplies a third carbon to the isocyanide group. This does not extend the ethyl carbon chain into a propyl group. In a stipulated complete net conversion of zero point zero one zero zero mole primary amine, the theoretical isocyanide amount is the same and the hydroxide amount is three times as large. This equation is an atom ledger and identification concept, not an instruction to perform or smell a hazardous test.",
+        "points": [
+          "Primary RNH₂ · CHCl₃ + 3KOH in net equation · R–N≡C; not R–C≡N",
+          "Ethylamine: two carbons · CHCl₃ supplies terminal C · Ethyl isocyanide: three carbons",
+          "0.0100 mol amine; ideal model · Product 1:1; KOH 3:1 · 0.0100 mol RNC; 0.0300 mol KOH"
+        ],
+        "board": {
+          "heading": "Carbylamine equation and the extra carbon",
+          "columns": [
+            "Case / structure",
+            "Reason / calculation",
+            "Result / limit"
+          ],
+          "rows": [
+            [
+              "Primary RNH₂",
+              "CHCl₃ + 3KOH in net equation",
+              "R–N≡C; not R–C≡N"
+            ],
+            [
+              "Ethylamine: two carbons",
+              "CHCl₃ supplies terminal C",
+              "Ethyl isocyanide: three carbons"
+            ],
+            [
+              "0.0100 mol amine; ideal model",
+              "Product 1:1; KOH 3:1",
+              "0.0100 mol RNC; 0.0300 mol KOH"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Successive methylation ends in an ammonium salt",
+        "formula": "CH₃NH₂ → (CH₃)₂NH → (CH₃)₃N → [(CH₃)₄N]⁺",
+        "script": "An amine alkylation question must distinguish a desired substitution from further reaction of the product. Consider a stipulated sequence of successive methylations beginning with methylamine. The first added methyl group gives dimethylamine, and a second gives trimethylamine. These steps replace nitrogen hydrogen bonds with nitrogen carbon bonds after the necessary proton transfer. A third added methyl group gives tetramethylammonium, which can be present as its iodide salt when methyl iodide supplies the groups. Count the carbons: the starting amine contains one methyl carbon and the final cation contains four. Count nitrogen bonds separately. Trimethylamine has three carbon bonds and a lone pair, whereas the quaternary ammonium ion has four carbon bonds and a positive formal charge. It is not normally classified as a fourth degree amine with an available lone pair for ordinary amine protonation. In actual alkylation, product mixtures and repeated alkylation can make selective preparation difficult. The arrow sequence therefore describes possible successive transformations, not a promise that each reagent addition yields one pure intermediate. Track added groups, nitrogen hydrogen bonds and charge at every stage.",
+        "points": [
+          "Methylamine → dimethylamine · One methyl group added · Two methyl carbons on N",
+          "Dimethylamine → trimethylamine · Another methyl; proton transfer · Three bonds and a lone pair",
+          "Trimethylamine → quaternary salt · Fourth C–N bond; N becomes +1 · Four carbons; counterion required"
+        ],
+        "board": {
+          "heading": "Successive methylation ends in an ammonium salt",
+          "columns": [
+            "Case / structure",
+            "Reason / calculation",
+            "Result / limit"
+          ],
+          "rows": [
+            [
+              "Methylamine → dimethylamine",
+              "One methyl group added",
+              "Two methyl carbons on N"
+            ],
+            [
+              "Dimethylamine → trimethylamine",
+              "Another methyl; proton transfer",
+              "Three bonds and a lone pair"
+            ],
+            [
+              "Trimethylamine → quaternary salt",
+              "Fourth C–N bond; N becomes +1",
+              "Four carbons; counterion required"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Known pH fixes the protonated amine fraction",
+        "formula": "[BH⁺]/[B] = 10^(pKaH − pH); neutral fraction = 1/(1 + ratio)",
+        "script": "The basicity of an amine also determines how much is neutral at a specified solution pH. Write the conjugate acid equilibrium as protonated base giving neutral base and a proton. In the ideal concentration approximation, the ratio of protonated to neutral base equals ten raised to the conjugate acid p K a minus the p H. Suppose the supplied conjugate acid p K a is nine and an external system maintains p H seven. The ratio is one hundred to one, so the neutral fraction is one divided by one hundred and one, approximately zero point nine nine percent. The protonated fraction is approximately ninety nine point zero one percent. At maintained p H eleven the ratio reverses to one to one hundred, and the neutral fraction becomes approximately ninety nine point zero one percent. These calculations use the stated p H; they do not determine the p H of an isolated weak base solution from its analytical concentration. Acidic aqueous conditions can therefore favour an ammonium salt, while increased p H can increase the neutral amine fraction. Partition into another phase would need additional equilibrium information.",
+        "points": [
+          "pKaH=9; maintained pH=7 · [BH⁺]/[B]=100 · Neutral B=1/101 ≈ 0.990%",
+          "pKaH=9; maintained pH=11 · [BH⁺]/[B]=0.01 · Neutral B=100/101 ≈ 99.01%",
+          "Known pH; ideal activities · Calculate fraction, not isolated pH · Partition needs more data"
+        ],
+        "board": {
+          "heading": "Known pH fixes the protonated amine fraction",
+          "columns": [
+            "Case / structure",
+            "Reason / calculation",
+            "Result / limit"
+          ],
+          "rows": [
+            [
+              "pKaH=9; maintained pH=7",
+              "[BH⁺]/[B]=100",
+              "Neutral B=1/101 ≈ 0.990%"
+            ],
+            [
+              "pKaH=9; maintained pH=11",
+              "[BH⁺]/[B]=0.01",
+              "Neutral B=100/101 ≈ 99.01%"
+            ],
+            [
+              "Known pH; ideal activities",
+              "Calculate fraction, not isolated pH",
+              "Partition needs more data"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Protection changes aniline bromination selectivity",
+        "formula": "Aniline → acetanilide → mainly para-bromoacetanilide → para-bromoaniline",
+        "script": "The amino group strongly activates an aromatic ring toward electrophilic substitution. In the familiar bromine water comparison, aniline can give two four six tribromoaniline rather than stopping at one bromine substituent. A protection strategy changes that behaviour. Acylating the amino group gives acetanilide, whose nitrogen lone pair is also involved with the carbonyl group. Under suitable controlled bromination conditions, the protected ring gives mainly the para brominated product. Hydrolysis of the protecting group then gives para bromoaniline. The para preference is a usual major product description, not a universal claim of complete selectivity under every condition. Follow the temporary carbon inventory as well as the bromine count. Aniline begins with six carbons, acetyl protection adds two, and bromination leaves all eight carbons in the protected molecule. Removal of the acetyl group returns the target amine to six carbons. Direct tribromination installs three bromines, whereas the protected monobromination route targets one. A protecting group therefore changes reactivity temporarily and is later removed; it is not an extra carbon fragment retained in the intended final aromatic amine.",
+        "points": [
+          "Direct aniline; Br₂ / water · Strong ring activation · Standard 2,4,6-tribromo product",
+          "Acetanilide; controlled bromination · Activation moderated; mainly para · Protected monobromo product",
+          "Protection → substitution → hydrolysis · Carbon ledger: 6 → 8 → 8 → 6 · Final para-bromoaniline: one Br"
+        ],
+        "board": {
+          "heading": "Protection changes aniline bromination selectivity",
+          "columns": [
+            "Case / structure",
+            "Reason / calculation",
+            "Result / limit"
+          ],
+          "rows": [
+            [
+              "Direct aniline; Br₂ / water",
+              "Strong ring activation",
+              "Standard 2,4,6-tribromo product"
+            ],
+            [
+              "Acetanilide; controlled bromination",
+              "Activation moderated; mainly para",
+              "Protected monobromo product"
+            ],
+            [
+              "Protection → substitution → hydrolysis",
+              "Carbon ledger: 6 → 8 → 8 → 6",
+              "Final para-bromoaniline: one Br"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "In the net carbylamine equation, 0.0100 mol primary amine theoretically corresponds to KOH amount:",
+        "options": [
+          "0.0300 mol",
+          "0.0100 mol",
+          "0.00333 mol",
+          "0.0200 mol"
+        ],
+        "answer": 0,
+        "explanation": "The balanced net equation contains three KOH per primary amine."
+      },
+      {
+        "question": "The extra carbon in ethyl isocyanide made by the carbylamine reaction comes from:",
+        "options": [
+          "The hydroxide ion",
+          "Chloroform",
+          "Potassium chloride",
+          "A third carbon already in ethylamine"
+        ],
+        "answer": 1,
+        "explanation": "Chloroform supplies the terminal isocyanide carbon; the ethyl group remains attached to nitrogen."
+      },
+      {
+        "question": "Stipulated successive methylations convert methylamine to tetramethylammonium. How many methyl groups were added?",
+        "options": [
+          "One",
+          "Two",
+          "Three",
+          "Four"
+        ],
+        "answer": 2,
+        "explanation": "The starting nitrogen already bears one methyl group and the final ion bears four."
+      },
+      {
+        "question": "Tetramethylammonium differs from trimethylamine because its nitrogen has:",
+        "options": [
+          "Three bonds and a lone pair",
+          "No carbon bonds",
+          "A negative formal charge",
+          "Four carbon bonds and a positive formal charge"
+        ],
+        "answer": 3,
+        "explanation": "The quaternary ammonium nitrogen has four bonds and no ordinary amine lone pair available for protonation."
+      },
+      {
+        "question": "At maintained pH 7 with supplied pKaH=9, the neutral amine fraction is:",
+        "options": [
+          "1/101",
+          "100/101",
+          "1/2",
+          "1/10000"
+        ],
+        "answer": 0,
+        "explanation": "BH+/B=10^(9−7)=100, so B/(B+BH+)=1/101."
+      },
+      {
+        "question": "For the same pKaH=9 at maintained pH 11, BH+/B equals:",
+        "options": [
+          "100",
+          "0.01",
+          "1",
+          "0.1"
+        ],
+        "answer": 1,
+        "explanation": "The ratio is 10^(9−11)=0.01 in the ideal concentration approximation."
+      },
+      {
+        "question": "The standard direct reaction of aniline with bromine water gives mainly:",
+        "options": [
+          "Benzonitrile",
+          "Only meta-bromoaniline",
+          "2,4,6-Tribromoaniline",
+          "Acetanilide"
+        ],
+        "answer": 2,
+        "explanation": "The strongly activating amino group favours multiple ring brominations in this standard comparison."
+      },
+      {
+        "question": "Carbon counts through aniline → acetanilide → bromoacetanilide → bromoaniline are:",
+        "options": [
+          "6 → 6 → 8 → 8",
+          "6 → 8 → 10 → 10",
+          "6 → 7 → 7 → 6",
+          "6 → 8 → 8 → 6"
+        ],
+        "answer": 3,
+        "explanation": "Acetyl protection temporarily adds two carbons; ring bromination adds none and deprotection removes the acetyl group."
+      }
+    ],
+    "sources": [
+      {
+        "title": "OpenStax: reactions of amines",
+        "url": "https://openstax.org/books/organic-chemistry/pages/24-7-reactions-of-amines"
+      },
+      {
+        "title": "OpenStax: reactions of arylamines",
+        "url": "https://openstax.org/books/organic-chemistry/pages/24-8-reactions-of-arylamines"
+      },
+      {
+        "title": "NCERT: amines",
+        "url": "https://ncert.nic.in/textbook/pdf/lech204.pdf"
+      },
+      {
+        "title": "OpenStax: buffers and conjugate-pair ratios",
+        "url": "https://openstax.org/books/chemistry-2e/pages/14-6-buffers"
+      }
+    ]
+  },
+  "biomolecules": {
+    "base": 17,
+    "quizBase": 24,
+    "chapters": [
+      {
+        "title": "Fat-soluble vitamins have distinct functions",
+        "formula": "A: vision; D: mineral balance; E: antioxidant; K: clotting-protein activation",
+        "script": "Remembering that vitamins A D E and K are fat soluble is only the first classification step. Their physiological roles are distinct. Vitamin A contributes to the visual system, including the light sensitive retinal pigment system, and deficiency can cause night blindness. Vitamin D supports calcium and phosphate handling and normal bone mineralization; deficiency in children can cause rickets. Vitamin E acts as an antioxidant that helps protect cell membranes against oxidative damage. Vitamin K supports the activation of proteins involved in blood clotting, rather than serving as the physical material from which a clot is built. These are useful textbook associations, not a claim that every symptom identifies one vitamin or that each vitamin has only one function. None should be treated as a carbohydrate fuel simply because vitamins support normal metabolism. Solubility class also does not make the four molecules chemically identical or interchangeable. In a matching question, first read whether the prompt asks about solubility, a physiological role or a familiar deficiency association. Keeping those categories separate prevents a correct class label from becoming an incorrect functional answer.",
+        "points": [
+          "A: visual system · D: calcium / phosphate handling · Night blindness / childhood rickets",
+          "E: antioxidant action · Helps protect cell membranes · Distinct from a fuel function",
+          "K: clotting-related proteins · Supports protein activation · A, D, E, K are fat soluble"
+        ],
+        "board": {
+          "heading": "Fat-soluble vitamins have distinct functions",
+          "columns": [
+            "Case / structure",
+            "Reason / calculation",
+            "Result / limit"
+          ],
+          "rows": [
+            [
+              "A: visual system",
+              "D: calcium / phosphate handling",
+              "Night blindness / childhood rickets"
+            ],
+            [
+              "E: antioxidant action",
+              "Helps protect cell membranes",
+              "Distinct from a fuel function"
+            ],
+            [
+              "K: clotting-related proteins",
+              "Supports protein activation",
+              "A, D, E, K are fat soluble"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Water-soluble vitamins and the storage exception",
+        "formula": "B₁: cofactor metabolism; B₁₂: blood / nerves; C: collagen synthesis",
+        "script": "Water soluble vitamins include the B group and vitamin C, but this category contains many different molecular functions. Thiamine, vitamin B one, contributes through its active cofactor form to important metabolic reactions, including carbohydrate metabolism. Beriberi is a familiar deficiency association. Vitamin B twelve supports normal red blood cell formation, DNA synthesis and nervous system function. Although it is water soluble, substantial body stores, especially in the liver, can last for years. Therefore the statement that every water soluble vitamin is immediately lost without storage is false. Vitamin C, also called ascorbic acid, is required for normal collagen synthesis; severe deficiency causes scurvy. Collagen is a structural protein, while vitamin C supports the biochemical processes needed to make it properly. The vitamin does not become a peptide residue merely because it helps protein formation. These examples are educational function and deficiency links, not diagnostic rules for an individual. In exam matching, use the named vitamin and the particular role together instead of treating every B vitamin as a substitute for every other one.",
+        "points": [
+          "B₁: thiamine · Metabolic cofactor functions · Deficiency association: beriberi",
+          "B₁₂: water soluble · Blood, DNA and nerve function · Liver stores can last years",
+          "C: ascorbic acid · Supports collagen synthesis · Severe deficiency: scurvy"
+        ],
+        "board": {
+          "heading": "Water-soluble vitamins and the storage exception",
+          "columns": [
+            "Case / structure",
+            "Reason / calculation",
+            "Result / limit"
+          ],
+          "rows": [
+            [
+              "B₁: thiamine",
+              "Metabolic cofactor functions",
+              "Deficiency association: beriberi"
+            ],
+            [
+              "B₁₂: water soluble",
+              "Blood, DNA and nerve function",
+              "Liver stores can last years"
+            ],
+            [
+              "C: ascorbic acid",
+              "Supports collagen synthesis",
+              "Severe deficiency: scurvy"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Reading the D-fructose Fischer projection",
+        "formula": "Open chain: C2=O; OH at C3 left, C4 right, C5 right",
+        "script": "Compare the open chain Fischer projections of glucose and fructose without confusing carbonyl position with configuration. D fructose has six carbons, with terminal hydroxymethyl groups at carbon one and carbon six. Its carbonyl is a ketone at carbon two. In the standard projection with carbon one at the top, the hydroxyl groups at carbons three, four and five lie left, right and right, respectively. These three carbons are stereogenic in the open chain structure, whereas the carbonyl carbon is not a tetrahedral stereocentre. For the fixed unbranched two ketohexose connectivity, three independent stereocentres allow eight configurations. D fructose is one of them. The right hand hydroxyl at the highest numbered stereocentre, carbon five, provides the D reference here; D does not by itself predict the sign of optical rotation. Fischer horizontal bonds point toward the viewer and vertical bonds away. In solution, fructose also forms cyclic structures, where the former carbonyl carbon two becomes the anomeric centre. This open chain drawing is therefore a configuration reference, not a claim that every dissolved molecule remains in that form.",
+        "points": [
+          "C1 CH₂OH; C2 ketone · OH pattern C3 / C4 / C5 · Left / right / right",
+          "Three open-chain stereocentres · Fixed 2-ketohexose: 2³ · Eight configurations; D-fructose one",
+          "C5 OH right sets D here · Cyclization uses former C2=O · C2 becomes anomeric; D ≠ rotation sign"
+        ],
+        "board": {
+          "heading": "Reading the D-fructose Fischer projection",
+          "columns": [
+            "Case / structure",
+            "Reason / calculation",
+            "Result / limit"
+          ],
+          "rows": [
+            [
+              "C1 CH₂OH; C2 ketone",
+              "OH pattern C3 / C4 / C5",
+              "Left / right / right"
+            ],
+            [
+              "Three open-chain stereocentres",
+              "Fixed 2-ketohexose: 2³",
+              "Eight configurations; D-fructose one"
+            ],
+            [
+              "C5 OH right sets D here",
+              "Cyclization uses former C2=O",
+              "C2 becomes anomeric; D ≠ rotation sign"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "DNA reverse complement requires strand direction",
+        "formula": "5′-AGTC-3′ pairs with 3′-TCAG-5′; reverse complement is 5′-GACT-3′",
+        "script": "A DNA complement question is incomplete until the strand directions are specified. Take the sequence adenine guanine thymine cytosine written from five prime to three prime. Directly beneath it, base pairing gives thymine cytosine adenine guanine, but that aligned complementary strand runs from three prime to five prime. If the answer must also be written from five prime to three prime, reverse the order of that complementary sequence. The answer is guanine adenine cytosine thymine. Merely replacing each letter without reversing gives an aligned complement in the opposite direction, not the requested five prime sequence. The short double stranded segment contains four base pairs and eight nucleotides in total. Two pairs are adenine thymine and two are guanine cytosine, giving ten interbase hydrogen bonds in the standard counting model. Each linear four nucleotide strand has three internucleotide phosphodiester connections, so the two backbones contain six such connections. That link count does not specify the exact number of terminal phosphate groups, because the end chemistry has not been given. Sequence direction, base pairing and backbone counting answer different parts of the same structural problem.",
+        "points": [
+          "Given 5′-AGTC-3′ · Aligned complement · 3′-TCAG-5′",
+          "Write complement 5′ → 3′ · Reverse aligned letter order · 5′-GACT-3′",
+          "4 pairs: 2 AT + 2 GC · Hydrogen bonds: 2×2 + 2×3 · 10 H bonds; 6 backbone links"
+        ],
+        "board": {
+          "heading": "DNA reverse complement requires strand direction",
+          "columns": [
+            "Case / structure",
+            "Reason / calculation",
+            "Result / limit"
+          ],
+          "rows": [
+            [
+              "Given 5′-AGTC-3′",
+              "Aligned complement",
+              "3′-TCAG-5′"
+            ],
+            [
+              "Write complement 5′ → 3′",
+              "Reverse aligned letter order",
+              "5′-GACT-3′"
+            ],
+            [
+              "4 pairs: 2 AT + 2 GC",
+              "Hydrogen bonds: 2×2 + 2×3",
+              "10 H bonds; 6 backbone links"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Which vitamin has the standard association with vision and deficiency-related night blindness?",
+        "options": [
+          "Vitamin K",
+          "Vitamin A",
+          "Vitamin C",
+          "Vitamin B1"
+        ],
+        "answer": 1,
+        "explanation": "Vitamin A supports the visual system; the association is not a diagnosis from one symptom."
+      },
+      {
+        "question": "Which fat-soluble vitamin supports calcium/phosphate handling and normal bone mineralization?",
+        "options": [
+          "Vitamin C",
+          "Vitamin B12",
+          "Vitamin D",
+          "Vitamin B1"
+        ],
+        "answer": 2,
+        "explanation": "Vitamin D supports mineral balance; childhood deficiency can cause rickets."
+      },
+      {
+        "question": "Beriberi is the familiar deficiency association for:",
+        "options": [
+          "Vitamin E",
+          "Vitamin K",
+          "Vitamin C",
+          "Vitamin B1"
+        ],
+        "answer": 3,
+        "explanation": "Thiamine is vitamin B1 and has metabolic cofactor functions."
+      },
+      {
+        "question": "Which statement about vitamin C is correct?",
+        "options": [
+          "It supports collagen synthesis; severe deficiency causes scurvy",
+          "It is a peptide residue in collagen",
+          "It is a fat-soluble vitamin",
+          "It is interchangeable with vitamin K"
+        ],
+        "answer": 0,
+        "explanation": "Ascorbic acid supports normal collagen biosynthesis without becoming a peptide residue."
+      },
+      {
+        "question": "The open-chain D-fructose OH pattern at C3, C4 and C5 in the standard Fischer drawing is:",
+        "options": [
+          "Right, left, right",
+          "Left, right, right",
+          "Left, left, right",
+          "Right, right, left"
+        ],
+        "answer": 1,
+        "explanation": "D-fructose has OH left at C3 and right at C4 and C5, with the ketone at C2."
+      },
+      {
+        "question": "Three independent stereocentres in a fixed unbranched open-chain 2-ketohexose allow how many configurations?",
+        "options": [
+          "Three",
+          "Six",
+          "Eight",
+          "Sixteen"
+        ],
+        "answer": 2,
+        "explanation": "The count is 2^3=8; this refers to the fixed connectivity and includes D-fructose as one configuration."
+      },
+      {
+        "question": "Write the complementary DNA strand to 5′-AGTC-3′ in its own 5′→3′ direction:",
+        "options": [
+          "5′-TCAG-3′",
+          "5′-AGTC-3′",
+          "5′-CTGA-3′",
+          "5′-GACT-3′"
+        ],
+        "answer": 3,
+        "explanation": "The aligned antiparallel complement is 3′-TCAG-5′; reverse its order to write 5′-GACT-3′."
+      },
+      {
+        "question": "The linear four-base-pair DNA segment AGTC and its complement contains, in the standard model:",
+        "options": [
+          "10 interbase H bonds and 6 internucleotide backbone links",
+          "8 interbase H bonds and 8 backbone links",
+          "12 interbase H bonds and 4 backbone links",
+          "10 interbase H bonds and exactly 10 terminal phosphates"
+        ],
+        "answer": 0,
+        "explanation": "Two AT and two GC pairs give 2×2+2×3=10 H bonds; two linear four-nucleotide strands have 2×3=6 internucleotide links."
+      }
+    ],
+    "sources": [
+      {
+        "title": "NIH ODS: vitamin A",
+        "url": "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/"
+      },
+      {
+        "title": "NIH ODS: vitamin D",
+        "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/"
+      },
+      {
+        "title": "NIH ODS: vitamin E",
+        "url": "https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional/"
+      },
+      {
+        "title": "NIH ODS: vitamin K",
+        "url": "https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/"
+      },
+      {
+        "title": "NIH ODS: thiamin",
+        "url": "https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/"
+      },
+      {
+        "title": "NIH ODS: vitamin C",
+        "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/"
+      },
+      {
+        "title": "MedlinePlus: vitamin B12 and body stores",
+        "url": "https://medlineplus.gov/ency/article/002403.htm"
+      },
+      {
+        "title": "OpenStax: D and L sugars",
+        "url": "https://openstax.org/books/organic-chemistry/pages/25-3-d-l-sugars"
+      },
+      {
+        "title": "OpenStax: DNA structure and sequencing",
+        "url": "https://openstax.org/books/biology-2e/pages/14-2-dna-structure-and-sequencing"
+      }
+    ]
+  }
+} as const;

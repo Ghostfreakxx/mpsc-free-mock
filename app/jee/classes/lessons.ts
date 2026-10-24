@@ -1253,8 +1253,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-nitrogen", subject: "Chemistry", unit: 18, number: "C15", title: organicNitrogen.title,
-    description: "Seventeen narrated chapters on amines, preparation carbon counts, acylation, Hinsberg tests, diazonium routes and quantitative basicity.",
-    scope: "Recorded Unit 18 foundation and worked applications with original practice. Full mechanisms, identification equations, wider solvent datasets and longer syntheses remain; not exhaustive coverage or official PYQs.",
+    description: "Twenty-one narrated chapters on amines, carbylamine equations, repeated alkylation, known-pH fractions, protected bromination and diazonium routes.",
+    scope: "Recorded Unit 18 foundation and worked applications with original practice. Full mechanisms, wider solvent datasets and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-nitrogen.lecture.v1",
     audio: "/lectures/organic-nitrogen/narration-marin.mp3",
     subtitles: "/lectures/organic-nitrogen/english.vtt", timings: organicNitrogenTimings,
@@ -1263,8 +1263,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "biomolecules", subject: "Chemistry", unit: 19, number: "C16", title: biomolecules.title,
-    description: "Seventeen narrated chapters on biomolecules, glucose Fischer and anomer drawings, reducing ends, hydrolysis, amino-acid charge and peptide calculations.",
-    scope: "Recorded Unit 19 foundation and worked applications with original practice. Full chair and fructose structures, vitamin-function tables and broader hormone examples remain; not exhaustive coverage or official PYQs.",
+    description: "Twenty-one narrated chapters on biomolecules, glucose and fructose Fischer drawings, vitamin functions, DNA direction, hydrolysis and peptide calculations.",
+    scope: "Recorded Unit 19 foundation and worked applications with original practice. Full chair structures, advanced cyclic fructose comparisons and broader hormone examples remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.biomolecules.lecture.v1",
     audio: "/lectures/biomolecules/narration-marin.mp3",
     subtitles: "/lectures/biomolecules/english.vtt", timings: biomoleculesTimings,

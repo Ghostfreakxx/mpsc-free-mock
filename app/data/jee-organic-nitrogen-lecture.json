@@ -25,6 +25,18 @@
     {
       "title": "OpenStax: chemistry of amides",
       "url": "https://openstax.org/books/organic-chemistry/pages/21-7-chemistry-of-amides"
+    },
+    {
+      "title": "OpenStax: reactions of amines",
+      "url": "https://openstax.org/books/organic-chemistry/pages/24-7-reactions-of-amines"
+    },
+    {
+      "title": "OpenStax: buffers and conjugate-pair ratios",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-6-buffers"
+    },
+    {
+      "title": "NCERT: amines",
+      "url": "https://ncert.nic.in/textbook/pdf/lech204.pdf"
     }
   ],
   "chapters": [
@@ -624,6 +636,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Carbylamine equation and the extra carbon",
+      "formula": "RNH₂ + CHCl₃ + 3KOH → RNC + 3KCl + 3H₂O",
+      "script": "The carbylamine reaction is useful as a structural identification principle for primary amines. In its familiar net equation, one primary amine combines with one chloroform and three potassium hydroxide units to form an isocyanide, three potassium chloride units and three water molecules. Both primary aliphatic and primary aromatic amines can fit this standard test. Ordinary secondary and tertiary amines do not give the corresponding positive test. The product connectivity matters: an isocyanide has the organic group bonded to nitrogen, followed by the terminal carbon. A nitrile instead has the organic group bonded directly to the nitrile carbon. Starting with ethylamine, the two carbon ethyl group remains attached to nitrogen, while chloroform supplies a third carbon to the isocyanide group. This does not extend the ethyl carbon chain into a propyl group. In a stipulated complete net conversion of zero point zero one zero zero mole primary amine, the theoretical isocyanide amount is the same and the hydroxide amount is three times as large. This equation is an atom ledger and identification concept, not an instruction to perform or smell a hazardous test.",
+      "points": [
+        "Primary RNH₂ · CHCl₃ + 3KOH in net equation · R–N≡C; not R–C≡N",
+        "Ethylamine: two carbons · CHCl₃ supplies terminal C · Ethyl isocyanide: three carbons",
+        "0.0100 mol amine; ideal model · Product 1:1; KOH 3:1 · 0.0100 mol RNC; 0.0300 mol KOH"
+      ],
+      "board": {
+        "heading": "Carbylamine equation and the extra carbon",
+        "columns": [
+          "Case / structure",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Primary RNH₂",
+            "CHCl₃ + 3KOH in net equation",
+            "R–N≡C; not R–C≡N"
+          ],
+          [
+            "Ethylamine: two carbons",
+            "CHCl₃ supplies terminal C",
+            "Ethyl isocyanide: three carbons"
+          ],
+          [
+            "0.0100 mol amine; ideal model",
+            "Product 1:1; KOH 3:1",
+            "0.0100 mol RNC; 0.0300 mol KOH"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Successive methylation ends in an ammonium salt",
+      "formula": "CH₃NH₂ → (CH₃)₂NH → (CH₃)₃N → [(CH₃)₄N]⁺",
+      "script": "An amine alkylation question must distinguish a desired substitution from further reaction of the product. Consider a stipulated sequence of successive methylations beginning with methylamine. The first added methyl group gives dimethylamine, and a second gives trimethylamine. These steps replace nitrogen hydrogen bonds with nitrogen carbon bonds after the necessary proton transfer. A third added methyl group gives tetramethylammonium, which can be present as its iodide salt when methyl iodide supplies the groups. Count the carbons: the starting amine contains one methyl carbon and the final cation contains four. Count nitrogen bonds separately. Trimethylamine has three carbon bonds and a lone pair, whereas the quaternary ammonium ion has four carbon bonds and a positive formal charge. It is not normally classified as a fourth degree amine with an available lone pair for ordinary amine protonation. In actual alkylation, product mixtures and repeated alkylation can make selective preparation difficult. The arrow sequence therefore describes possible successive transformations, not a promise that each reagent addition yields one pure intermediate. Track added groups, nitrogen hydrogen bonds and charge at every stage.",
+      "points": [
+        "Methylamine → dimethylamine · One methyl group added · Two methyl carbons on N",
+        "Dimethylamine → trimethylamine · Another methyl; proton transfer · Three bonds and a lone pair",
+        "Trimethylamine → quaternary salt · Fourth C–N bond; N becomes +1 · Four carbons; counterion required"
+      ],
+      "board": {
+        "heading": "Successive methylation ends in an ammonium salt",
+        "columns": [
+          "Case / structure",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Methylamine → dimethylamine",
+            "One methyl group added",
+            "Two methyl carbons on N"
+          ],
+          [
+            "Dimethylamine → trimethylamine",
+            "Another methyl; proton transfer",
+            "Three bonds and a lone pair"
+          ],
+          [
+            "Trimethylamine → quaternary salt",
+            "Fourth C–N bond; N becomes +1",
+            "Four carbons; counterion required"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Known pH fixes the protonated amine fraction",
+      "formula": "[BH⁺]/[B] = 10^(pKaH − pH); neutral fraction = 1/(1 + ratio)",
+      "script": "The basicity of an amine also determines how much is neutral at a specified solution pH. Write the conjugate acid equilibrium as protonated base giving neutral base and a proton. In the ideal concentration approximation, the ratio of protonated to neutral base equals ten raised to the conjugate acid p K a minus the p H. Suppose the supplied conjugate acid p K a is nine and an external system maintains p H seven. The ratio is one hundred to one, so the neutral fraction is one divided by one hundred and one, approximately zero point nine nine percent. The protonated fraction is approximately ninety nine point zero one percent. At maintained p H eleven the ratio reverses to one to one hundred, and the neutral fraction becomes approximately ninety nine point zero one percent. These calculations use the stated p H; they do not determine the p H of an isolated weak base solution from its analytical concentration. Acidic aqueous conditions can therefore favour an ammonium salt, while increased p H can increase the neutral amine fraction. Partition into another phase would need additional equilibrium information.",
+      "points": [
+        "pKaH=9; maintained pH=7 · [BH⁺]/[B]=100 · Neutral B=1/101 ≈ 0.990%",
+        "pKaH=9; maintained pH=11 · [BH⁺]/[B]=0.01 · Neutral B=100/101 ≈ 99.01%",
+        "Known pH; ideal activities · Calculate fraction, not isolated pH · Partition needs more data"
+      ],
+      "board": {
+        "heading": "Known pH fixes the protonated amine fraction",
+        "columns": [
+          "Case / structure",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "pKaH=9; maintained pH=7",
+            "[BH⁺]/[B]=100",
+            "Neutral B=1/101 ≈ 0.990%"
+          ],
+          [
+            "pKaH=9; maintained pH=11",
+            "[BH⁺]/[B]=0.01",
+            "Neutral B=100/101 ≈ 99.01%"
+          ],
+          [
+            "Known pH; ideal activities",
+            "Calculate fraction, not isolated pH",
+            "Partition needs more data"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Protection changes aniline bromination selectivity",
+      "formula": "Aniline → acetanilide → mainly para-bromoacetanilide → para-bromoaniline",
+      "script": "The amino group strongly activates an aromatic ring toward electrophilic substitution. In the familiar bromine water comparison, aniline can give two four six tribromoaniline rather than stopping at one bromine substituent. A protection strategy changes that behaviour. Acylating the amino group gives acetanilide, whose nitrogen lone pair is also involved with the carbonyl group. Under suitable controlled bromination conditions, the protected ring gives mainly the para brominated product. Hydrolysis of the protecting group then gives para bromoaniline. The para preference is a usual major product description, not a universal claim of complete selectivity under every condition. Follow the temporary carbon inventory as well as the bromine count. Aniline begins with six carbons, acetyl protection adds two, and bromination leaves all eight carbons in the protected molecule. Removal of the acetyl group returns the target amine to six carbons. Direct tribromination installs three bromines, whereas the protected monobromination route targets one. A protecting group therefore changes reactivity temporarily and is later removed; it is not an extra carbon fragment retained in the intended final aromatic amine.",
+      "points": [
+        "Direct aniline; Br₂ / water · Strong ring activation · Standard 2,4,6-tribromo product",
+        "Acetanilide; controlled bromination · Activation moderated; mainly para · Protected monobromo product",
+        "Protection → substitution → hydrolysis · Carbon ledger: 6 → 8 → 8 → 6 · Final para-bromoaniline: one Br"
+      ],
+      "board": {
+        "heading": "Protection changes aniline bromination selectivity",
+        "columns": [
+          "Case / structure",
+          "Reason / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Direct aniline; Br₂ / water",
+            "Strong ring activation",
+            "Standard 2,4,6-tribromo product"
+          ],
+          [
+            "Acetanilide; controlled bromination",
+            "Activation moderated; mainly para",
+            "Protected monobromo product"
+          ],
+          [
+            "Protection → substitution → hydrolysis",
+            "Carbon ledger: 6 → 8 → 8 → 6",
+            "Final para-bromoaniline: one Br"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -890,6 +1042,94 @@
       ],
       "answer": 3,
       "explanation": "Each aromatic fragment contributes six carbons; retaining the azo unit does not add carbon atoms."
+    },
+    {
+      "question": "In the net carbylamine equation, 0.0100 mol primary amine theoretically corresponds to KOH amount:",
+      "options": [
+        "0.0300 mol",
+        "0.0100 mol",
+        "0.00333 mol",
+        "0.0200 mol"
+      ],
+      "answer": 0,
+      "explanation": "The balanced net equation contains three KOH per primary amine."
+    },
+    {
+      "question": "The extra carbon in ethyl isocyanide made by the carbylamine reaction comes from:",
+      "options": [
+        "The hydroxide ion",
+        "Chloroform",
+        "Potassium chloride",
+        "A third carbon already in ethylamine"
+      ],
+      "answer": 1,
+      "explanation": "Chloroform supplies the terminal isocyanide carbon; the ethyl group remains attached to nitrogen."
+    },
+    {
+      "question": "Stipulated successive methylations convert methylamine to tetramethylammonium. How many methyl groups were added?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answer": 2,
+      "explanation": "The starting nitrogen already bears one methyl group and the final ion bears four."
+    },
+    {
+      "question": "Tetramethylammonium differs from trimethylamine because its nitrogen has:",
+      "options": [
+        "Three bonds and a lone pair",
+        "No carbon bonds",
+        "A negative formal charge",
+        "Four carbon bonds and a positive formal charge"
+      ],
+      "answer": 3,
+      "explanation": "The quaternary ammonium nitrogen has four bonds and no ordinary amine lone pair available for protonation."
+    },
+    {
+      "question": "At maintained pH 7 with supplied pKaH=9, the neutral amine fraction is:",
+      "options": [
+        "1/101",
+        "100/101",
+        "1/2",
+        "1/10000"
+      ],
+      "answer": 0,
+      "explanation": "BH+/B=10^(9−7)=100, so B/(B+BH+)=1/101."
+    },
+    {
+      "question": "For the same pKaH=9 at maintained pH 11, BH+/B equals:",
+      "options": [
+        "100",
+        "0.01",
+        "1",
+        "0.1"
+      ],
+      "answer": 1,
+      "explanation": "The ratio is 10^(9−11)=0.01 in the ideal concentration approximation."
+    },
+    {
+      "question": "The standard direct reaction of aniline with bromine water gives mainly:",
+      "options": [
+        "Benzonitrile",
+        "Only meta-bromoaniline",
+        "2,4,6-Tribromoaniline",
+        "Acetanilide"
+      ],
+      "answer": 2,
+      "explanation": "The strongly activating amino group favours multiple ring brominations in this standard comparison."
+    },
+    {
+      "question": "Carbon counts through aniline → acetanilide → bromoacetanilide → bromoaniline are:",
+      "options": [
+        "6 → 6 → 8 → 8",
+        "6 → 8 → 10 → 10",
+        "6 → 7 → 7 → 6",
+        "6 → 8 → 8 → 6"
+      ],
+      "answer": 3,
+      "explanation": "Acetyl protection temporarily adds two carbons; ring bromination adds none and deprotection removes the acetyl group."
     }
   ]
 }
