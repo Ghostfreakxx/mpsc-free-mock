@@ -53,6 +53,22 @@
     {
       "title": "OpenStax: keto–enol tautomerism",
       "url": "https://openstax.org/books/organic-chemistry/pages/22-1-keto-enol-tautomerism"
+    },
+    {
+      "title": "OpenStax: meso compounds",
+      "url": "https://openstax.org/books/organic-chemistry/pages/5-7-meso-compounds"
+    },
+    {
+      "title": "OpenStax: butane conformations",
+      "url": "https://openstax.org/books/organic-chemistry/pages/3-7-conformations-of-other-alkanes"
+    },
+    {
+      "title": "OpenStax: alcohol and ether naming",
+      "url": "https://openstax.org/books/organic-chemistry/pages/17-1-naming-alcohols-and-phenols"
+    },
+    {
+      "title": "OpenStax: naming ethers",
+      "url": "https://openstax.org/books/organic-chemistry/pages/18-1-names-and-properties-of-ethers"
     }
   ],
   "chapters": [
@@ -525,6 +541,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Break CIP ties one layer at a time",
+      "formula": "Direct atom first; then descending neighbour lists; isotope mass breaks same-element ties",
+      "script": "Priority rules compare the atoms directly attached to a stereogenic centre before considering the rest of each group. Oxygen outranks carbon because its atomic number is larger, even if the carbon substituent has a much greater total mass. If the directly attached atoms tie, compare the attached atom lists in descending atomic number order until the first difference. An ethyl group starts with a carbon attached onward to carbon, hydrogen and hydrogen. A methyl carbon instead has hydrogen, hydrogen and hydrogen, so ethyl outranks methyl. A hydroxymethyl carbon has oxygen, hydrogen and hydrogen and outranks ethyl at that first comparison. For multiple bonds, use the standard duplicate atom convention: an aldehyde carbon attached to oxygen by a double bond is compared using oxygen, oxygen and hydrogen. It therefore outranks hydroxymethyl in this comparison. Isotopes of the same element are ranked by mass number, so deuterium outranks ordinary hydrogen. Do not sum the atomic numbers in a whole substituent or rank groups by molecular mass. Establish the ordered groups first, then apply the viewing direction needed for an R or S assignment.",
+      "points": [
+        "All groups begin with carbon · CH₃: H,H,H; CH₂CH₃: C,H,H · Ethyl outranks methyl",
+        "CH₂OH versus CHO · O,H,H versus O,O,H · CHO outranks CH₂OH",
+        "Direct atoms first; isotopes second · O outranks C; ²H outranks ¹H · No total substituent-mass shortcut"
+      ],
+      "board": {
+        "heading": "Break CIP ties one layer at a time",
+        "columns": [
+          "Given / comparison",
+          "Reason / accounting",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "All groups begin with carbon",
+            "CH₃: H,H,H; CH₂CH₃: C,H,H",
+            "Ethyl outranks methyl"
+          ],
+          [
+            "CH₂OH versus CHO",
+            "O,H,H versus O,O,H",
+            "CHO outranks CH₂OH"
+          ],
+          [
+            "Direct atoms first; isotopes second",
+            "O outranks C; ²H outranks ¹H",
+            "No total substituent-mass shortcut"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Two stereocentres can give a meso compound",
+      "formula": "2,3-Dibromobutane: RR and SS are enantiomers; RS and SR describe one meso form",
+      "script": "The familiar two to the power n count is a maximum for n independent tetrahedral stereocentres, not a guaranteed count for every molecule. Consider two three dibromobutane, whose two stereogenic carbons lie between identical methyl ends. The formal assignments R R and S S give a pair of nonsuperimposable mirror images. The mixed assignments R S and S R instead describe the same meso stereoisomer after the molecular symmetry is recognized. This form is achiral overall despite containing two stereogenic centres. There are therefore three configurational stereoisomers rather than four: one enantiomeric pair and one meso form. A meso sample is not a fifty fifty mixture of two enantiomers. Its lack of optical activity follows from the achiral molecular structure, while a racemic mixture has cancellation between equal amounts of opposite enantiomers under ordinary matched conditions. Nor does every molecule with one R and one S centre have to be meso. The substituent pattern and a valid symmetry or superposition argument must support that conclusion. Check actual connectivity and identical ends before reducing the maximum stereoisomer count.",
+      "points": [
+        "Two centres: formal maximum 2² · Check identical ends and symmetry · Maximum need not be achieved",
+        "2,3-Dibromobutane RR / SS · Mirror-image pair · Two distinct enantiomers",
+        "RS and SR for this connectivity · Same meso stereoisomer · Three total; meso is not a racemate"
+      ],
+      "board": {
+        "heading": "Two stereocentres can give a meso compound",
+        "columns": [
+          "Given / comparison",
+          "Reason / accounting",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Two centres: formal maximum 2²",
+            "Check identical ends and symmetry",
+            "Maximum need not be achieved"
+          ],
+          [
+            "2,3-Dibromobutane RR / SS",
+            "Mirror-image pair",
+            "Two distinct enantiomers"
+          ],
+          [
+            "RS and SR for this connectivity",
+            "Same meso stereoisomer",
+            "Three total; meso is not a racemate"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Butane has distinct staggered conformations",
+      "formula": "Along C2–C3: anti CH₃/CH₃ dihedral 180°; gauche ±60°; both staggered",
+      "script": "Rotation about the central carbon carbon single bond of butane changes conformation without changing connectivity or configurational stereocentres. In a Newman projection viewed along carbon two to carbon three, each visible carbon carries a methyl group and two hydrogens. In the anti staggered arrangement, the methyl groups are separated by a dihedral angle of one hundred eighty degrees. In either gauche staggered arrangement, their separation is sixty degrees in one direction or the other. Both are staggered, but they are not equal in energy: the anti form is lower in the usual introductory comparison because the methyl groups are farther apart. The fully eclipsed arrangement with methyl groups aligned has a larger steric and torsional penalty. The two gauche positions do not mean two new constitutional compounds, and rapid rotation means a sample need not remain frozen in its lowest energy drawing. At ordinary conditions more than one conformation can be populated. Read the front carbon bonds from the central point and the rear carbon bonds from the surrounding circle. A flat sketch without that viewing convention can hide which groups actually overlap.",
+      "points": [
+        "View along C2–C3 · Each carbon: CH₃, H and H · Same butane connectivity",
+        "Anti versus gauche · CH₃ dihedral 180° versus ±60° · Both staggered; anti lower in usual model",
+        "Rotation changes dihedral angle · Fully eclipsed methyls align · Conformations, not new constitutional isomers"
+      ],
+      "board": {
+        "heading": "Butane has distinct staggered conformations",
+        "columns": [
+          "Given / comparison",
+          "Reason / accounting",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "View along C2–C3",
+            "Each carbon: CH₃, H and H",
+            "Same butane connectivity"
+          ],
+          [
+            "Anti versus gauche",
+            "CH₃ dihedral 180° versus ±60°",
+            "Both staggered; anti lower in usual model"
+          ],
+          [
+            "Rotation changes dihedral angle",
+            "Fully eclipsed methyls align",
+            "Conformations, not new constitutional isomers"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Enumerate C4H10O without double counting",
+      "formula": "Acyclic saturated C₄H₁₀O: four alcohol connectivities plus three ether connectivities",
+      "script": "A systematic isomer count needs a defined class and a rule for avoiding duplicate drawings. For ordinary neutral acyclic saturated compounds with formula four carbons, ten hydrogens and one oxygen, consider alcohols and ethers. Alcohols can use the straight four carbon skeleton with hydroxyl at carbon one or carbon two, giving butan one ol and butan two ol. The branched skeleton gives two methylpropan one ol and two methylpropan two ol. These are four alcohol connectivities. For ethers, split the four carbons between the two oxygen bonded groups as one plus three or two plus two. A methyl group can join either a straight propyl or an isopropyl group, giving two ether connectivities. Two ethyl groups give a third. Reversing the left and right groups around oxygen does not make another constitutional isomer. Thus there are seven constitutional isomers in the stated class. Butan two ol has a stereogenic carbon and two enantiomers, so counting individual configurational forms instead gives eight total structures under that different convention. State whether stereoisomers are being distinguished before presenting a single number.",
+      "points": [
+        "Alcohols: straight and branched skeletons · Two OH positions on each skeleton · Four alcohol connectivities",
+        "Ethers: carbon splits 1+3 or 2+2 · Two propyl choices; one ethyl/ethyl · Three ether connectivities",
+        "Constitutional count versus stereochemical count · Only butan-2-ol adds an enantiomer · Seven connectivities; eight individual forms"
+      ],
+      "board": {
+        "heading": "Enumerate C4H10O without double counting",
+        "columns": [
+          "Given / comparison",
+          "Reason / accounting",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Alcohols: straight and branched skeletons",
+            "Two OH positions on each skeleton",
+            "Four alcohol connectivities"
+          ],
+          [
+            "Ethers: carbon splits 1+3 or 2+2",
+            "Two propyl choices; one ethyl/ethyl",
+            "Three ether connectivities"
+          ],
+          [
+            "Constitutional count versus stereochemical count",
+            "Only butan-2-ol adds an enantiomer",
+            "Seven connectivities; eight individual forms"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -835,6 +991,94 @@
       ],
       "answer": 0,
       "explanation": "Its two methyl groups are symmetry equivalent; the six alpha hydrogens lead to the same monoenol connectivity."
+    },
+    {
+      "question": "Under ordinary CIP rules, compare –CHO and –CH2OH attached through carbon. Which has higher priority?",
+      "options": [
+        "–CH2OH because it has more hydrogens",
+        "–CHO because O,O,H outranks O,H,H",
+        "They always remain tied",
+        "Whichever group has the longer drawn bond"
+      ],
+      "answer": 1,
+      "explanation": "The multiple-bond duplicate convention gives the aldehyde carbon an O,O,H comparison list, which outranks O,H,H."
+    },
+    {
+      "question": "For directly attached isotopes of hydrogen, the higher CIP priority is:",
+      "options": [
+        "Ordinary 1H",
+        "Whichever is drawn on a wedge",
+        "Deuterium 2H",
+        "They can never be distinguished"
+      ],
+      "answer": 2,
+      "explanation": "Isotopes of the same element are ranked by mass number, so 2H outranks 1H."
+    },
+    {
+      "question": "How many configurational stereoisomers does ordinary 2,3-dibromobutane have after accounting for its meso form?",
+      "options": [
+        "One",
+        "Two",
+        "Four",
+        "Three"
+      ],
+      "answer": 3,
+      "explanation": "RR and SS are enantiomers, while RS and SR describe the same meso stereoisomer for this symmetric connectivity."
+    },
+    {
+      "question": "A meso form differs from a racemic mixture because the meso form is:",
+      "options": [
+        "An achiral molecular structure, rather than an equal mixture of opposite enantiomers",
+        "Always a mixture of RR and SS molecules",
+        "A molecule with no stereogenic centres by definition",
+        "Necessarily optically active"
+      ],
+      "answer": 0,
+      "explanation": "Meso describes molecular achirality despite stereogenic centres; racemic describes equal amounts of opposite enantiomers."
+    },
+    {
+      "question": "The methyl–methyl dihedral angle in anti butane viewed along C2–C3 is:",
+      "options": [
+        "0°",
+        "180°",
+        "60°",
+        "90°"
+      ],
+      "answer": 1,
+      "explanation": "Anti staggered butane places the methyl groups opposite each other, giving a 180° dihedral angle."
+    },
+    {
+      "question": "Which statement about anti and gauche butane is correct?",
+      "options": [
+        "They have different molecular formulas",
+        "Gauche is always eclipsed",
+        "Both are staggered conformations of the same connectivity",
+        "Anti and gauche must be different constitutional isomers"
+      ],
+      "answer": 2,
+      "explanation": "Single-bond rotation changes conformation; anti and gauche are both staggered but differ in methyl-group separation and energy."
+    },
+    {
+      "question": "Counting only constitutional isomers of ordinary neutral acyclic saturated C4H10O gives:",
+      "options": [
+        "Four total",
+        "Six total",
+        "Eight total",
+        "Seven total: four alcohols and three ethers"
+      ],
+      "answer": 3,
+      "explanation": "Four alcohol connectivities and three ether connectivities give seven; reversing ether ends does not make a new isomer."
+    },
+    {
+      "question": "If individual configurational forms are also distinguished in that C4H10O set, the total becomes:",
+      "options": [
+        "Eight, because butan-2-ol contributes an enantiomeric pair",
+        "Fourteen, because every connectivity is chiral",
+        "Seven, because no alcohol can be chiral",
+        "Nine, because every ether has E/Z isomers"
+      ],
+      "answer": 0,
+      "explanation": "Only butan-2-ol in the stated set has a stereogenic centre, replacing one connectivity by two enantiomeric forms."
     }
   ]
 }

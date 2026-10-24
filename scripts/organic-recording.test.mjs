@@ -5,7 +5,7 @@ import {createHash} from 'node:crypto';
 import {chemistryCoreLessons} from '../app/jee/classes/chemistry-core-study.ts';
 const data = JSON.parse(fs.readFileSync('app/data/jee-organic-principles-lecture.json'));
 const timing = JSON.parse(fs.readFileSync('app/data/jee-organic-principles-timings.json'));
-test('organic recording has complete monotonic captions within seventeen audio chapters', () => {
+test('organic recording has complete monotonic captions within twenty-one audio chapters', () => {
   assert.deepEqual(data.quiz,chemistryCoreLessons.find(l=>l.id==='organic-principles').quiz);
   for(const [i,c]of data.chapters.entries()){
    const hash=createHash('sha256').update(JSON.stringify({script:c.speechInput??c.script,instructions:data.voiceInstructions,voice:'marin',model:'gpt-4o-mini-tts'})).digest('hex');
@@ -13,9 +13,9 @@ test('organic recording has complete monotonic captions within seventeen audio c
    if(i>=5){assert.ok(c.script.split(/\s+/).length>=140);assert.equal(c.board.rows.length,3);}
   }
   assert.equal(data.subject, 'Chemistry'); assert.equal(data.unit, 14);
-  assert.equal(data.chapters.length, 17); assert.equal(data.quiz.length, 28);
-  assert.equal(timing.chapters.length, 17);
-  assert.ok(timing.duration > 1000 && timing.duration < 1700);
+  assert.equal(data.chapters.length, 21); assert.equal(data.quiz.length, 36);
+  assert.equal(timing.chapters.length, 21);
+  assert.ok(timing.duration > 1000 && timing.duration < 2100);
   assert.ok(fs.statSync('public/lectures/organic-principles/narration-marin.mp3').size > 1e6);
   for (const [i, chapter] of timing.chapters.entries()) {
     assert.ok(chapter.end > chapter.start);

@@ -1113,7 +1113,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-principles", subject: "Chemistry", unit: 14, number: "C01", title: organicPrinciples.title,
-    description: "Seventeen narrated chapters on naming, R/S and E/Z, enantiomeric excess, bond cleavage, tautomerism, electron arrows, acidity and conformations.",
+    description: "Twenty-one narrated chapters on naming, CIP ties, meso compounds, butane conformations, isomer counting, R/S and E/Z, electron arrows and acidity.",
     scope: "Recorded Unit 14 foundation and worked applications with original practice. Full CIP tie-breaking, multiple-centre stereochemistry, additional solvent datasets and mechanisms remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-principles.lecture.v1",
     audio: "/lectures/organic-principles/narration-marin.mp3",
@@ -1273,7 +1273,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "purification-analysis", subject: "Chemistry", unit: 13, number: "C17", title: purificationAnalysis.title,
-    description: "Seventeen narrated chapters on separation, Dumas and Kjeldahl calculations, silver-halide gravimetry, repeated extraction and chromatographic evidence.",
+    description: "Twenty-one narrated chapters on separation, analytical interferences, mixed-halide balances, crystallization recovery, distillation composition and elemental analysis.",
     scope: "Recorded Unit 13 foundation with original practice. Detailed analytical equations, phosphorus calculations, partition calculations and larger datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.purification-analysis.lecture.v1",
     audio: "/lectures/purification-analysis/narration-marin.mp3",

@@ -1,11 +1,14 @@
+import ButaneNewmanDiagram from './butane-newman-diagram';
+import { organicAnalysisReasoningAdditions } from './organic-analysis-reasoning-additions';
 import { redoxStereochemistryAdditions } from "./redox-stereochemistry-additions";
 import ConfigurationViewDiagram from "./configuration-view-diagram";
 import { organicPrinciplesAdditions } from "./organic-principles-additions";
 import styles from "./lecture.module.css";
 
 export default function OrganicExtensionDiagram({chapter}:{chapter:number}) {
+ if(chapter===19)return <ButaneNewmanDiagram/>;
  if(chapter===13)return <ConfigurationViewDiagram/>;
- const board=chapter>=13 ? redoxStereochemistryAdditions["organic-principles"].chapters[chapter - 13].board : organicPrinciplesAdditions.chapters[chapter - 5].board;
+ const board=chapter>=17 ? organicAnalysisReasoningAdditions['organic-principles'].chapters[chapter-17].board : chapter>=13 ? redoxStereochemistryAdditions["organic-principles"].chapters[chapter - 13].board : organicPrinciplesAdditions.chapters[chapter - 5].board;
  if(chapter===7)return <svg className={styles.diagram} viewBox="0 0 460 310" role="img" aria-label="Z has Br and Cl on the same side; E has them on opposite sides">
   <title>E and Z from higher-priority substituents</title><rect width="460" height="310" rx="12" fill="#f5faf7" />
   <g fontFamily="Arial, sans-serif" fill="#20483e" textAnchor="middle">

@@ -1277,3 +1277,267 @@ Recognize whether a drawing changes an atom attachment before choosing an
 
 00:23:08.680 --> 00:23:10.520
 equilibrium arrow or a resonance arrow.
+
+00:23:10.776 --> 00:23:15.176
+Priority rules compare the atoms directly attached to a stereogenic centre
+
+00:23:15.176 --> 00:23:17.496
+before considering the rest of each group.
+
+00:23:18.736 --> 00:23:22.596
+Oxygen outranks carbon because its atomic number is larger, even if the carbon
+
+00:23:22.596 --> 00:23:24.796
+substituent has a much greater total mass.
+
+00:23:25.316 --> 00:23:29.756
+If the directly attached atoms tie, compare the attached atom lists in
+
+00:23:29.756 --> 00:23:32.576
+descending atomic number order until the first difference.
+
+00:23:33.476 --> 00:23:37.636
+An ethyl group starts with a carbon attached onward to carbon, hydrogen and
+
+00:23:37.636 --> 00:23:37.916
+hydrogen.
+
+00:23:38.576 --> 00:23:43.976
+A methyl carbon instead has hydrogen, hydrogen and hydrogen, so ethyl outranks
+
+00:23:43.976 --> 00:23:44.336
+methyl.
+
+00:23:45.296 --> 00:23:50.256
+A hydroxymethyl carbon has oxygen, hydrogen and hydrogen and outranks ethyl at
+
+00:23:50.256 --> 00:23:51.156
+that first comparison.
+
+00:23:52.236 --> 00:23:56.576
+For multiple bonds, use the standard duplicate atom convention: an aldehyde
+
+00:23:56.576 --> 00:24:01.114
+carbon attached to oxygen by a double bond is compared using oxygen, oxygen
+
+00:24:01.114 --> 00:24:01.296
+and
+
+00:24:01.296 --> 00:24:01.556
+hydrogen.
+
+00:24:02.116 --> 00:24:04.796
+It therefore outranks hydroxymethyl in this comparison.
+
+00:24:05.796 --> 00:24:10.276
+Isotopes of the same element are ranked by mass number, so deuterium outranks
+
+00:24:10.276 --> 00:24:11.236
+ordinary hydrogen.
+
+00:24:12.136 --> 00:24:15.736
+Do not sum the atomic numbers in a whole substituent or rank groups by
+
+00:24:15.736 --> 00:24:16.456
+molecular mass.
+
+00:24:17.696 --> 00:24:21.254
+Establish the ordered groups first, then apply the viewing direction needed
+
+00:24:21.254 --> 00:24:21.396
+for
+
+00:24:21.396 --> 00:24:22.676
+an R or S assignment.
+
+00:24:22.944 --> 00:24:27.784
+The familiar two to the power n count is a maximum for n independent
+
+00:24:27.784 --> 00:24:31.324
+tetrahedral stereocentres, not a guaranteed count for every molecule.
+
+00:24:32.224 --> 00:24:36.244
+Consider two three dibromobutane, whose two stereogenic carbons lie between
+
+00:24:36.244 --> 00:24:37.324
+identical methyl ends.
+
+00:24:37.944 --> 00:24:42.064
+The formal assignments R R and S S give a pair of nonsuperimposable mirror
+
+00:24:42.064 --> 00:24:42.464
+images.
+
+00:24:43.184 --> 00:24:48.184
+The mixed assignments R S and S R instead describe the same meso stereoisomer
+
+00:24:48.184 --> 00:24:50.604
+after the molecular symmetry is recognized.
+
+00:24:51.264 --> 00:24:56.184
+This form is achiral overall despite containing two stereogenic centres.
+
+00:24:56.184 --> 00:25:00.484
+There are therefore three configurational stereoisomers rather than four: one
+
+00:25:00.484 --> 00:25:03.124
+enantiomeric pair and one meso form.
+
+00:25:03.124 --> 00:25:06.284
+A meso sample is not a fifty fifty mixture of two enantiomers.
+
+00:25:06.944 --> 00:25:10.684
+Its lack of optical activity follows from the achiral molecular structure,
+
+00:25:11.224 --> 00:25:15.184
+while a racemic mixture has cancellation between equal amounts of opposite
+
+00:25:15.184 --> 00:25:17.744
+enantiomers under ordinary matched conditions.
+
+00:25:18.644 --> 00:25:22.324
+Nor does every molecule with one R and one S centre have to be meso.
+
+00:25:22.804 --> 00:25:26.844
+The substituent pattern and a valid symmetry or superposition argument must
+
+00:25:26.844 --> 00:25:27.764
+support that conclusion.
+
+00:25:28.764 --> 00:25:32.944
+Check actual connectivity and identical ends before reducing the maximum
+
+00:25:32.944 --> 00:25:33.944
+stereoisomer count.
+
+00:25:34.104 --> 00:25:38.424
+Rotation about the central carbon carbon single bond of butane changes
+
+00:25:38.424 --> 00:25:43.704
+conformation without changing connectivity or configurational stereocentres.
+
+00:25:43.704 --> 00:25:47.924
+In a Newman projection viewed along carbon two to carbon three, each visible
+
+00:25:47.924 --> 00:25:50.504
+carbon carries a methyl group and two hydrogens.
+
+00:25:51.304 --> 00:25:54.904
+In the anti staggered arrangement, the methyl groups are separated by a
+
+00:25:54.904 --> 00:25:56.984
+dihedral angle of one hundred eighty degrees.
+
+00:25:57.684 --> 00:26:01.604
+In either gauche staggered arrangement, their separation is sixty degrees in
+
+00:26:01.604 --> 00:26:02.704
+one direction or the other.
+
+00:26:03.584 --> 00:26:08.397
+Both are staggered, but they are not equal in energy: the anti form is lower
+
+00:26:08.397 --> 00:26:08.524
+in
+
+00:26:08.524 --> 00:26:12.164
+the usual introductory comparison because the methyl groups are farther apart.
+
+00:26:13.084 --> 00:26:16.924
+The fully eclipsed arrangement with methyl groups aligned has a larger steric
+
+00:26:16.924 --> 00:26:17.824
+and torsional penalty.
+
+00:26:18.764 --> 00:26:22.824
+The two gauche positions do not mean two new constitutional compounds, and
+
+00:26:22.824 --> 00:26:26.824
+rapid rotation means a sample need not remain frozen in its lowest energy
+
+00:26:26.824 --> 00:26:27.184
+drawing.
+
+00:26:28.024 --> 00:26:31.304
+At ordinary conditions more than one conformation can be populated.
+
+00:26:32.064 --> 00:26:35.464
+Read the front carbon bonds from the central point and the rear carbon bonds
+
+00:26:35.464 --> 00:26:36.504
+from the surrounding circle.
+
+00:26:37.304 --> 00:26:41.024
+A flat sketch without that viewing convention can hide which groups actually
+
+00:26:41.024 --> 00:26:41.424
+overlap.
+
+00:26:41.760 --> 00:26:46.480
+A systematic isomer count needs a defined class and a rule for avoiding
+
+00:26:46.480 --> 00:26:47.560
+duplicate drawings.
+
+00:26:48.600 --> 00:26:53.523
+For ordinary neutral acyclic saturated compounds with formula four carbons,
+
+00:26:53.523 --> 00:26:53.720
+ten
+
+00:26:53.720 --> 00:26:57.540
+hydrogens and one oxygen, consider alcohols and ethers.
+
+00:26:58.300 --> 00:27:02.440
+Alcohols can use the straight four carbon skeleton with hydroxyl at carbon one
+
+00:27:02.440 --> 00:27:06.740
+or carbon two, giving butan one ol and butan two ol.
+
+00:27:07.280 --> 00:27:11.900
+The branched skeleton gives two methylpropan one ol and two methylpropan two
+
+00:27:11.900 --> 00:27:12.400
+ol.
+
+00:27:13.220 --> 00:27:14.880
+These are four alcohol connectivities.
+
+00:27:15.720 --> 00:27:20.200
+For ethers, split the four carbons between the two oxygen bonded groups as one
+
+00:27:20.200 --> 00:27:21.940
+plus three or two plus two.
+
+00:27:22.680 --> 00:27:26.640
+A methyl group can join either a straight propyl or an isopropyl group, giving
+
+00:27:26.640 --> 00:27:27.920
+two ether connectivities.
+
+00:27:28.680 --> 00:27:29.940
+Two ethyl groups give a third.
+
+00:27:30.520 --> 00:27:33.940
+Reversing the left and right groups around oxygen does not make another
+
+00:27:33.940 --> 00:27:35.000
+constitutional isomer.
+
+00:27:35.700 --> 00:27:38.940
+Thus there are seven constitutional isomers in the stated class.
+
+00:27:39.840 --> 00:27:44.400
+Butan two ol has a stereogenic carbon and two enantiomers, so counting
+
+00:27:44.400 --> 00:27:48.180
+individual configurational forms instead gives eight total structures under
+
+00:27:48.180 --> 00:27:49.140
+that different convention.
+
+00:27:50.240 --> 00:27:53.760
+State whether stereoisomers are being distinguished before presenting a single
+
+00:27:53.760 --> 00:27:54.020
+number.
