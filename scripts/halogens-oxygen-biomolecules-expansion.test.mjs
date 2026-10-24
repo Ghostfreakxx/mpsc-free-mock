@@ -1,14 +1,14 @@
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
 const read=id=>JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`));const h=read('organic-halogens'),o=read('organic-oxygen'),b=read('biomolecules');const a=(l,i)=>l.quiz[i].options[l.quiz[i].answer];const near=(x,y,t=1e-10)=>assert.ok(Math.abs(x-y)<t);
 test('new halogen practice preserves skeletons, coupling identity and alcohol classification',()=>{
- assert.deepEqual(h.quiz.slice(16).map(q=>q.answer),[0,1,2,3,0,1,2,3]);
+ assert.deepEqual(h.quiz.slice(16).map(q=>q.answer),[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3]);
  const pairs=new Set();for(const x of [1,2])for(const y of [1,2])pairs.add([x,y].sort().join('+'));
  assert.equal(pairs.size,3);assert.equal(a(h,18),'Three products');
  assert.equal(a(h,20),'Propan-2-ol');assert.equal(1+2,3);assert.equal(a(h,21),'Tertiary');
  assert.equal(a(h,22),'But-1-ene and but-2-ene');assert.equal(a(h,23),'3 alkenes');assert.equal(1+2,3);
 });
 test('oxygen practice checks donor roles, limiting hydroxide, chirality and conditional acid ratios',()=>{
- assert.deepEqual(o.quiz.slice(16).map(q=>q.answer),[1,2,3,0,1,2,3,0]);
+ assert.deepEqual(o.quiz.slice(16).map(q=>q.answer),[1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]);
  assert.equal(a(o,16),String(2*2));assert.equal(a(o,17),'Enolate donor');assert.equal(a(o,18),'Ethanoate');
  assert.equal(a(o,19),`${(.0200-Math.min(.0200,.0150)).toFixed(5)} mol`);
  assert.equal(a(o,20),String(2+1));assert.equal(a(o,21),'A racemic pair');

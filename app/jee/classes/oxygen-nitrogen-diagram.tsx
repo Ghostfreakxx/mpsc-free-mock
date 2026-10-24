@@ -1,8 +1,10 @@
+import CarbonylDerivativeDiagram from "./carbonyl-derivative-diagram";
 import organicOxygen from "../../data/jee-organic-oxygen-lecture.json";
 import organicNitrogen from "../../data/jee-organic-nitrogen-lecture.json";
 import styles from "./lecture.module.css";
 
 export default function OxygenNitrogenDiagram({lesson,chapter}:{lesson:"organic-oxygen"|"organic-nitrogen";chapter:number}) {
+ if(lesson==="organic-oxygen" && chapter===19)return <CarbonylDerivativeDiagram/>;
  const board=(lesson==="organic-oxygen"?organicOxygen:organicNitrogen).chapters[chapter].board;
  return <svg className={styles.diagram} viewBox="0 0 460 310" role="img" aria-label={board.heading}>
   <title>{board.heading}</title><rect width="460" height="310" rx="12" fill="#f5faf7" />

@@ -33,6 +33,22 @@
     {
       "title": "OpenStax: Grignard additions to carbonyls",
       "url": "https://openstax.org/books/organic-chemistry/pages/19-7-nucleophilic-addition-of-hydride-and-grignard-reagents-alcohol-formation"
+    },
+    {
+      "title": "OpenStax: alkyl halides from alcohols",
+      "url": "https://openstax.org/books/organic-chemistry/pages/10-5-preparing-alkyl-halides-from-alcohols"
+    },
+    {
+      "title": "OpenStax: preparation of alkynes",
+      "url": "https://openstax.org/books/organic-chemistry/pages/9-2-preparation-of-alkynes-elimination-reactions-of-dihalides"
+    },
+    {
+      "title": "OpenStax: preparing carboxylic acids",
+      "url": "https://openstax.org/books/organic-chemistry/pages/20-5-preparing-carboxylic-acids"
+    },
+    {
+      "title": "OpenStax: substituent effects in electrophilic substitutions",
+      "url": "https://openstax.org/books/organic-chemistry/pages/16-4-substituent-effects-in-electrophilic-substitutions"
     }
   ],
   "chapters": [
@@ -634,6 +650,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Alcohol activation changes the leaving group problem",
+      "formula": "3ROH + PBr₃ → 3RBr + H₃PO₃ in the net conversion model",
+      "script": "An alcohol does not usually undergo a simple substitution by expelling free hydroxide without activation. For suitable primary and secondary alcohols, phosphorus tribromide can enable conversion of the carbon oxygen bond into a carbon bromine bond. The net bookkeeping equation uses three alcohol molecules for one phosphorus tribromide, forming three alkyl bromides and phosphorous acid. This balances oxygen and hydrogen as well as bromine. For a stipulated quantitative conversion of zero point zero three zero zero mole ethanol, the theoretical phosphorus tribromide amount from this equation is zero point zero one zero zero mole and bromoethane amount zero point zero three zero zero mole. This is stoichiometric bookkeeping, not a complete experimental reagent prescription. A suitable secondary stereogenic alcohol can undergo inversion at the reacting carbon in the usual substitution pathway. That does not imply an automatic reversal of its R or S letter without checking product priorities. Tertiary substrates do not follow this same simple backside displacement model. Choose the actual substrate class and leaving group activation before copying a reagent rule onto every alcohol.",
+      "points": [
+        "Suitable primary / secondary ROH · Activate OH for substitution · Carbon skeleton retained",
+        "Net equation · 3ROH + PBr₃ → 3RBr + H₃PO₃ · Three alcohols per PBr₃",
+        "0.0300 mol ethanol; ideal conversion · PBr₃=0.0300/3 · 0.0100 mol PBr₃; 0.0300 mol RBr"
+      ],
+      "board": {
+        "heading": "Alcohol activation changes the leaving group problem",
+        "columns": [
+          "Case / substrate",
+          "Transformation / reason",
+          "Product / limit"
+        ],
+        "rows": [
+          [
+            "Suitable primary / secondary ROH",
+            "Activate OH for substitution",
+            "Carbon skeleton retained"
+          ],
+          [
+            "Net equation",
+            "3ROH + PBr₃ → 3RBr + H₃PO₃",
+            "Three alcohols per PBr₃"
+          ],
+          [
+            "0.0300 mol ethanol; ideal conversion",
+            "PBr₃=0.0300/3",
+            "0.0100 mol PBr₃; 0.0300 mol RBr"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Two eliminations from a dihalide make a triple bond",
+      "formula": "BrCH₂CH₂Br − 2HBr → HC≡CH as formal atom accounting",
+      "script": "A vicinal dihalide contains halogens on adjacent carbon atoms. In an appropriate double dehydrohalogenation sequence, two eliminations can convert that skeleton into an alkyne. For one two dibromoethane, the starting formula is two carbons, four hydrogens and two bromines. Removing two hydrogen bromide units leaves two carbons and two hydrogens, the formula of ethyne. The first elimination produces a vinyl halide with a carbon carbon double bond. The second elimination acts on that different bonding environment and generally requires a suitably strong base; it is not simply a repeat of the easiest alkyl halide reaction. The overall carbon count remains two. Formal loss of two hydrogen bromide units counts the two elimination events, but does not establish that exactly two equivalents of base suffice in every preparative system. A terminal alkyne can also undergo deprotonation by a sufficiently strong base, followed by separate protonation on workup. Distinguish transformation stoichiometry, intermediate identity and reagent consumption rather than treating a net atom ledger as a complete mechanism or procedure.",
+      "points": [
+        "Vicinal BrCH₂CH₂Br · First elimination · Vinyl halide intermediate",
+        "Second suitable elimination · Formal loss of another HBr · Ethyne; carbon count stays two",
+        "Net atom ledger · C₂H₄Br₂ − 2HBr · C₂H₂; actual base demand may differ"
+      ],
+      "board": {
+        "heading": "Two eliminations from a dihalide make a triple bond",
+        "columns": [
+          "Case / substrate",
+          "Transformation / reason",
+          "Product / limit"
+        ],
+        "rows": [
+          [
+            "Vicinal BrCH₂CH₂Br",
+            "First elimination",
+            "Vinyl halide intermediate"
+          ],
+          [
+            "Second suitable elimination",
+            "Formal loss of another HBr",
+            "Ethyne; carbon count stays two"
+          ],
+          [
+            "Net atom ledger",
+            "C₂H₄Br₂ − 2HBr",
+            "C₂H₂; actual base demand may differ"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Carbon dioxide and proton quenching give different Grignard products",
+      "formula": "RMgX + CO₂, then protonation → RCOOH; proton quench → RH",
+      "script": "The fate of a Grignard reagent depends on whether it meets a carbon electrophile or a proton source. Ethylmagnesium bromide contains a two carbon organic group. Addition to carbon dioxide followed by separate protonation gives propanoic acid, whose carboxyl carbon came from carbon dioxide. The product has three carbons. Direct proton quenching of the same reagent instead gives ethane, retaining only the original two carbons. Phenylmagnesium bromide similarly gives benzoic acid after carbon dioxide addition and protonation, so six ring carbons become a seven carbon acid. These transformations do not imply that a carboxylic acid itself is an interchangeable carbon dioxide reagent: an acidic proton can consume the organomagnesium reagent by acid base reaction. The initial addition product in carboxylation is a metal carboxylate, not the fully protonated acid. Other acidic groups or reactive functions in the substrate can prevent a simple Grignard route. Track the source of the added carbon and the timing of protonation before choosing between a carbon forming reaction and a reagent destroying quench.",
+      "points": [
+        "Ethylmagnesium bromide: two C · CO₂ addition, then protonation · Propanoic acid: three C",
+        "Same ethyl reagent · Direct proton source · Ethane: two C",
+        "Phenylmagnesium bromide: six C · CO₂ supplies carboxyl carbon · Benzoic acid: seven C"
+      ],
+      "board": {
+        "heading": "Carbon dioxide and proton quenching give different Grignard products",
+        "columns": [
+          "Case / substrate",
+          "Transformation / reason",
+          "Product / limit"
+        ],
+        "rows": [
+          [
+            "Ethylmagnesium bromide: two C",
+            "CO₂ addition, then protonation",
+            "Propanoic acid: three C"
+          ],
+          [
+            "Same ethyl reagent",
+            "Direct proton source",
+            "Ethane: two C"
+          ],
+          [
+            "Phenylmagnesium bromide: six C",
+            "CO₂ supplies carboxyl carbon",
+            "Benzoic acid: seven C"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Halogens deactivate a ring but direct ortho and para",
+      "formula": "Electrophilic substitution: halogen is deactivating and ortho/para directing",
+      "script": "A substituent can influence overall reaction speed and positional preference in different ways. In ordinary electrophilic aromatic substitution, chlorine withdraws electron density inductively, making chlorobenzene less reactive than benzene under comparable conditions. Yet its lone pairs can contribute resonance stabilization to the intermediates for ortho and para attack relative to meta attack. Thus a halogen is a deactivating ortho and para director, not an activating group merely because of those preferred positions. For a simple nitration comparison, ortho and para chloronitrobenzene are the usual favoured positional products, while the carbon chlorine bond remains intact. This is not nucleophilic aromatic substitution, where a nucleophile replaces the leaving group under an appropriate activation pattern. Nor does an ortho para label specify a universal numerical product ratio. Steric effects, electrophile identity and reaction conditions affect the distribution. Keep three separate questions visible: what kind of substitution occurs, which bond changes, and how the existing substituent affects rate and position. A single directing arrow cannot answer all three.",
+      "points": [
+        "Chlorobenzene in electrophilic substitution · Net inductive withdrawal · Less reactive than benzene",
+        "Relative positional preference · Lone-pair resonance contributions · Ortho / para directing",
+        "Ring nitration versus aryl substitution · Ring H replaced versus C–Cl replaced · Different reaction classes"
+      ],
+      "board": {
+        "heading": "Halogens deactivate a ring but direct ortho and para",
+        "columns": [
+          "Case / substrate",
+          "Transformation / reason",
+          "Product / limit"
+        ],
+        "rows": [
+          [
+            "Chlorobenzene in electrophilic substitution",
+            "Net inductive withdrawal",
+            "Less reactive than benzene"
+          ],
+          [
+            "Relative positional preference",
+            "Lone-pair resonance contributions",
+            "Ortho / para directing"
+          ],
+          [
+            "Ring nitration versus aryl substitution",
+            "Ring H replaced versus C–Cl replaced",
+            "Different reaction classes"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -900,6 +1056,94 @@
       ],
       "answer": 3,
       "explanation": "But-1-ene contributes one and but-2-ene contributes E and Z; this is a count, not a yield claim."
+    },
+    {
+      "question": "In the net model 3ROH+PBr3→3RBr+H3PO3, converting 0.0300 mol suitable alcohol theoretically uses PBr3 amount:",
+      "options": [
+        "0.0100 mol",
+        "0.0300 mol",
+        "0.0900 mol",
+        "0.0150 mol"
+      ],
+      "answer": 0,
+      "explanation": "The balanced net equation has three alcohol molecules per PBr3, so 0.0300/3=0.0100 mol."
+    },
+    {
+      "question": "The simple PBr3 backside-substitution model is most appropriate for:",
+      "options": [
+        "Every tertiary alcohol",
+        "Suitable primary and secondary alcohols",
+        "Only aromatic C–OH bonds",
+        "All alcohols without activation"
+      ],
+      "answer": 1,
+      "explanation": "Substrate class matters; the usual primary/secondary substitution pathway cannot simply be imposed on tertiary centres."
+    },
+    {
+      "question": "Formal loss of 2HBr from C2H4Br2 leaves formula:",
+      "options": [
+        "C2H4",
+        "C2H3Br",
+        "C2H2",
+        "C2Br2"
+      ],
+      "answer": 2,
+      "explanation": "Subtract two hydrogens and two bromines from the vicinal dihalide formula; the two carbon atoms remain."
+    },
+    {
+      "question": "The intermediate after one elimination from 1,2-dibromoethane is a:",
+      "options": [
+        "Carboxylic acid",
+        "Saturated alcohol",
+        "Grignard reagent",
+        "Vinyl halide"
+      ],
+      "answer": 3,
+      "explanation": "One elimination creates a double bond while leaving one halogen; the second elimination acts on a vinyl-halide environment."
+    },
+    {
+      "question": "Ethylmagnesium bromide reacts with CO2 and is then protonated. The organic acid has:",
+      "options": [
+        "Three carbons",
+        "Two carbons",
+        "One carbon",
+        "Four carbons"
+      ],
+      "answer": 0,
+      "explanation": "The two-carbon ethyl group gains the carboxyl carbon supplied by carbon dioxide, giving propanoic acid."
+    },
+    {
+      "question": "Direct proton quenching of ethylmagnesium bromide instead gives:",
+      "options": [
+        "Propanoic acid",
+        "Ethane",
+        "Ethene",
+        "Benzoic acid"
+      ],
+      "answer": 1,
+      "explanation": "A proton source converts the ethyl group to ethane without adding a carbon atom."
+    },
+    {
+      "question": "In ordinary electrophilic aromatic substitution, chlorine on benzene is:",
+      "options": [
+        "Activating and meta directing",
+        "Activating and ortho/para directing",
+        "Deactivating and ortho/para directing",
+        "Deactivating and exclusively meta directing"
+      ],
+      "answer": 2,
+      "explanation": "Net inductive withdrawal reduces overall reactivity, while resonance effects favour ortho/para over meta attack."
+    },
+    {
+      "question": "In nitration of chlorobenzene, the usual substitution changes:",
+      "options": [
+        "The C–Cl bond only",
+        "Every ring bond into a single bond",
+        "Chlorine into a carbonyl group",
+        "A ring C–H bond while C–Cl remains"
+      ],
+      "answer": 3,
+      "explanation": "Electrophilic ring substitution replaces a ring hydrogen; it is distinct from nucleophilic replacement of the aryl halogen."
     }
   ]
 }

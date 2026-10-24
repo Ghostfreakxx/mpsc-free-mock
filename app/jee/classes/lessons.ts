@@ -1233,7 +1233,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-halogens", subject: "Chemistry", unit: 16, number: "C13", title: organicHalogens.title,
-    description: "Seventeen narrated chapters on halides, substitution stereochemistry, elimination competition, ambidentate reagents and reaction-centre comparisons.",
+    description: "Twenty-one narrated chapters on halides, alcohol activation, double elimination, Grignard carboxylation, aromatic directing effects and substitution stereochemistry.",
     scope: "Recorded Unit 16 foundation and worked applications with original practice. Full spatial mechanism drawings, further preparations, special haloarene pathways and detailed compound comparisons remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-halogens.lecture.v1",
     audio: "/lectures/organic-halogens/narration-marin.mp3",
@@ -1243,7 +1243,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-oxygen", subject: "Chemistry", unit: 17, number: "C14", title: organicOxygen.title,
-    description: "Nineteen narrated chapters on oxygen groups, reduction selectivity, named phenol reactions, chemical tests, carbon ledgers and esterification equilibrium.",
+    description: "Twenty-three narrated chapters on oxygen groups, oxime and hydrazone derivatives, phenol bromination, carboxylate carbon loss, ester aminolysis and chemical tests.",
     scope: "Recorded Unit 17 foundation and worked applications with original practice. Full mechanisms, carbonyl spatial drawings and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-oxygen.lecture.v1",
     audio: "/lectures/organic-oxygen/narration-marin.mp3",
