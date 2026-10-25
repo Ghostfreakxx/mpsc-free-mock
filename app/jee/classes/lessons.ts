@@ -1243,7 +1243,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-oxygen", subject: "Chemistry", unit: 17, number: "C14", title: organicOxygen.title,
-    description: "Twenty-three narrated chapters on oxygen groups, oxime and hydrazone derivatives, phenol bromination, carboxylate carbon loss, ester aminolysis and chemical tests.",
+    description: "Twenty-seven narrated chapters on oxygen groups, hydrogen bonding, alpha halogenation, crossed Cannizzaro, carbonyl derivatives, a supporting acetal map and chemical tests.",
     scope: "Recorded Unit 17 foundation and worked applications with original practice. Full mechanisms, carbonyl spatial drawings and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-oxygen.lecture.v1",
     audio: "/lectures/organic-oxygen/narration-marin.mp3",
@@ -1253,7 +1253,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-nitrogen", subject: "Chemistry", unit: 18, number: "C15", title: organicNitrogen.title,
-    description: "Twenty-one narrated chapters on amines, carbylamine equations, repeated alkylation, known-pH fractions, protected bromination and diazonium routes.",
+    description: "Twenty-five narrated chapters on amines, nitro-reduction electron balances, nitration speciation, Lewis-acid compatibility, a supporting Hofmann elimination map and diazonium routes.",
     scope: "Recorded Unit 18 foundation and worked applications with original practice. Full mechanisms, wider solvent datasets and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-nitrogen.lecture.v1",
     audio: "/lectures/organic-nitrogen/narration-marin.mp3",
@@ -1263,7 +1263,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "biomolecules", subject: "Chemistry", unit: 19, number: "C16", title: biomolecules.title,
-    description: "Twenty-one narrated chapters on biomolecules, glucose and fructose Fischer drawings, vitamin functions, DNA direction, hydrolysis and peptide calculations.",
+    description: "Twenty-five narrated chapters on biomolecules, glucose oxidation evidence, Fischer and epimer comparisons, disulfide versus peptide links, DNA connectivity and vitamin functions.",
     scope: "Recorded Unit 19 foundation and worked applications with original practice. Full chair structures, advanced cyclic fructose comparisons and broader hormone examples remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.biomolecules.lecture.v1",
     audio: "/lectures/biomolecules/narration-marin.mp3",

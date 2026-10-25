@@ -69,6 +69,18 @@
     {
       "title": "OpenStax: DNA structure and sequencing",
       "url": "https://openstax.org/books/biology-2e/pages/14-2-dna-structure-and-sequencing"
+    },
+    {
+      "title": "IIT Kanpur SATHEE: NCERT glucose structural evidence",
+      "url": "https://sathee.iitk.ac.in/ncert-books/jee-ncert-books/jee-nb-che-12/chem-12-unit-14-biomolecules/"
+    },
+    {
+      "title": "Kwantlen Polytechnic University: carbohydrate configurations and epimers",
+      "url": "https://kpu.pressbooks.pub/organicchemistry2/chapter/9-1-classification-and-configurations-of-carbohydrates-and-monosaccharides/"
+    },
+    {
+      "title": "Essentials of Glycobiology: monosaccharide epimers",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK579981/?report=printable"
     }
   ],
   "chapters": [
@@ -806,6 +818,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Glucose oxidation probes which terminal groups change",
+      "formula": "Bromine-water model: gluconic acid; stronger nitric-acid model: glucaric / saccharic acid",
+      "script": "Different reactions of glucose provide different structural evidence. In the familiar mild bromine water oxidation model, the accessible aldehyde end becomes a carboxyl group, giving the six carbon monocarboxylic product gluconic acid. In the stronger nitric acid oxidation comparison, both the aldehyde end and the terminal primary alcohol are oxidized, giving a six carbon dicarboxylic product called glucaric or saccharic acid. No carbon has been added in either change. Hydroxylamine reaction provides separate carbonyl evidence through oxime formation; it does not establish that every molecule remains in the open chain form in water. Acetylation to a pentaacetate supports the presence of five hydroxyl groups in glucose, while the cyclic equilibrium explains why a single static open chain drawing is incomplete. These observations answer different questions and should be combined rather than treated as interchangeable test names. For the supplied oxidation maps, first label carbon one and carbon six, then identify which end changes oxidation level. Product identity depends on the stated oxidant and conditions; a carboxylic acid name alone does not specify whether one or both terminal groups were oxidized.",
+      "points": [
+        "Mild Br₂-water oxidation · C1 aldehyde → carboxyl · Gluconic acid; one COOH",
+        "Stronger nitric-acid comparison · C1 and terminal C6 oxidized · Glucaric / saccharic; two COOH",
+        "Both retain six carbons · Oxime / pentaacetate add evidence · Carbonyl / five hydroxyl groups"
+      ],
+      "board": {
+        "heading": "Glucose oxidation probes which terminal groups change",
+        "columns": [
+          "Structure / condition",
+          "Atom / bond evidence",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Mild Br₂-water oxidation",
+            "C1 aldehyde → carboxyl",
+            "Gluconic acid; one COOH"
+          ],
+          [
+            "Stronger nitric-acid comparison",
+            "C1 and terminal C6 oxidized",
+            "Glucaric / saccharic; two COOH"
+          ],
+          [
+            "Both retain six carbons",
+            "Oxime / pentaacetate add evidence",
+            "Carbonyl / five hydroxyl groups"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Epimers differ at one specified stereocentre",
+      "formula": "D-Glucose / D-mannose: C2 epimers; D-glucose / D-galactose: C4 epimers",
+      "script": "A pair of epimers differs in configuration at one stereogenic centre while retaining the same connectivity and the other configurations. Compare the open chain Fischer projections of three D aldohexoses. From carbon two through carbon five, glucose has hydroxyl positions right, left, right, right. Mannose has left, left, right, right, differing only at carbon two. Galactose has right, left, left, right, differing from glucose only at carbon four. Thus glucose and mannose are carbon two epimers, while glucose and galactose are carbon four epimers. Mannose and galactose differ at two centres, so they are diastereomers but not epimers of one another. All three remain D sugars because the highest numbered stereogenic centre has the same relative configuration. D does not mean positive optical rotation: configuration and the measured sign of rotation are separate descriptors. Anomers are the special cyclic comparison at the newly created anomeric centre, not a synonym for changing any Fischer position. Always identify the carbon number and projection convention before calling two sugar drawings an epimeric pair.",
+      "points": [
+        "OH order C2 → C5 · Glucose R L R R · Mannose L L R R",
+        "Galactose R L L R · Glucose differs at C4 · Mannose differs at C2",
+        "Mannose versus galactose · Different at C2 and C4 · Diastereomers, not epimers"
+      ],
+      "board": {
+        "heading": "Epimers differ at one specified stereocentre",
+        "columns": [
+          "Structure / condition",
+          "Atom / bond evidence",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "OH order C2 → C5",
+            "Glucose R L R R",
+            "Mannose L L R R"
+          ],
+          [
+            "Galactose R L L R",
+            "Glucose differs at C4",
+            "Mannose differs at C2"
+          ],
+          [
+            "Mannose versus galactose",
+            "Different at C2 and C4",
+            "Diastereomers, not epimers"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Disulfide cross-links are not peptide bonds",
+      "formula": "2 cysteine –SH → one –S–S– cross-link; no new peptide linkage",
+      "script": "A protein can contain covalent links of different chemical types. A peptide linkage joins a carbonyl carbon to nitrogen along a polypeptide backbone. A disulfide instead joins sulfur atoms from two cysteine side chains after oxidation of their thiol groups. In formal atom bookkeeping, two thiols become one sulfur sulfur bond with loss of two hydrogen equivalents; this is not the condensation water loss used to count peptide assembly. Consider two separate linear tripeptide chains, each with one cysteine residue. Each chain has two peptide bonds, giving four in total. Joining the cysteine side chains with one interchain disulfide adds one cross link while leaving the peptide bond count at four. The connected structure still has two polypeptide backbones, not one newly lengthened six residue peptide backbone. Reducing that disulfide can separate the chains without hydrolysing their peptide bonds. Conversely, cutting a peptide bond is a backbone change and cannot be described solely as reducing sulfur. Distinguish side chain connectivity, chain count and backbone sequence before inferring which chemical treatment changed a protein sample.",
+      "points": [
+        "Two linear tripeptide chains · 2 peptide bonds per chain · 4 peptide bonds total",
+        "One cysteine –SH per chain · Oxidation joins sulfur atoms · One interchain S–S cross-link",
+        "After disulfide formation · Backbone sequences unchanged · Still four peptide bonds"
+      ],
+      "board": {
+        "heading": "Disulfide cross-links are not peptide bonds",
+        "columns": [
+          "Structure / condition",
+          "Atom / bond evidence",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Two linear tripeptide chains",
+            "2 peptide bonds per chain",
+            "4 peptide bonds total"
+          ],
+          [
+            "One cysteine –SH per chain",
+            "Oxidation joins sulfur atoms",
+            "One interchain S–S cross-link"
+          ],
+          [
+            "After disulfide formation",
+            "Backbone sequences unchanged",
+            "Still four peptide bonds"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "DNA backbone links and base-pair hydrogen bonds count differently",
+      "formula": "Two intact linear N-nucleotide strands: 2(N−1) internal phosphodiester linkages",
+      "script": "DNA contains both covalent backbone links and noncovalent interactions between complementary bases. Count them separately. Consider an intact linear double stranded fragment with ten base pairs, six adenine thymine pairs and four guanine cytosine pairs. There are twenty nucleotides, ten in each strand. Within each linear strand, ten nucleotide units are joined by nine internal phosphodiester bridges, giving eighteen internucleotide linkages in both backbones. A terminal phosphate does not create an extra bridge to a missing nucleotide. Using the standard paired base model, the six adenine thymine pairs contribute twelve hydrogen bonds and the four guanine cytosine pairs contribute twelve more, twenty four total. These hydrogen bonds are not the covalent links that hold each individual strand together. Count one internucleotide phosphodiester linkage per joining phosphate bridge, rather than confusing that bridge with each individual phosphorus oxygen ester bond. Circular closure, nicks or unpaired bases would change the assumptions. Strand separation can disrupt base pairing without requiring hydrolysis of all eighteen backbone linkages. Always state linearity, strand length and pairing before applying a counting shortcut.",
+      "points": [
+        "10 paired positions · 10 nucleotides per strand · 20 nucleotides total",
+        "Two intact linear backbones · 2 × (10−1) · 18 phosphodiester linkages",
+        "6 AT pairs + 4 GC pairs · 6×2 + 4×3 · 24 base-pair H bonds"
+      ],
+      "board": {
+        "heading": "DNA backbone links and base-pair hydrogen bonds count differently",
+        "columns": [
+          "Structure / condition",
+          "Atom / bond evidence",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "10 paired positions",
+            "10 nucleotides per strand",
+            "20 nucleotides total"
+          ],
+          [
+            "Two intact linear backbones",
+            "2 × (10−1)",
+            "18 phosphodiester linkages"
+          ],
+          [
+            "6 AT pairs + 4 GC pairs",
+            "6×2 + 4×3",
+            "24 base-pair H bonds"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1160,6 +1312,94 @@
       ],
       "answer": 0,
       "explanation": "Two AT and two GC pairs give 2×2+2×3=10 H bonds; two linear four-nucleotide strands have 2×3=6 internucleotide links."
+    },
+    {
+      "question": "The familiar mild bromine-water oxidation product of glucose is:",
+      "options": [
+        "Glucose pentaacetate",
+        "Benzyl alcohol",
+        "Gluconic acid",
+        "Nitrobenzene"
+      ],
+      "answer": 2,
+      "explanation": "This supplied mild oxidation changes the accessible aldehyde end to a carboxyl group while retaining all six carbons."
+    },
+    {
+      "question": "Compared with gluconic acid, glucaric/saccharic acid in the stated stronger oxidation model has:",
+      "options": [
+        "One fewer carbon",
+        "No carboxyl group",
+        "An added benzene ring",
+        "Two carboxyl ends instead of one"
+      ],
+      "answer": 3,
+      "explanation": "Both terminal C1 and C6 are oxidized in the familiar nitric-acid comparison; the carbon count remains six."
+    },
+    {
+      "question": "D-Glucose and D-mannose differ at which Fischer stereocentre?",
+      "options": [
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "answer": 0,
+      "explanation": "Their C2–C5 OH sequences RLRR and LLRR differ only at C2."
+    },
+    {
+      "question": "D-Mannose and D-galactose, with OH sequences LLRR and RLLR, are:",
+      "options": [
+        "Enantiomers with every centre inverted",
+        "Diastereomers differing at two centres, not epimers",
+        "Identical compounds",
+        "Anomers differing only at a new cyclic C1"
+      ],
+      "answer": 1,
+      "explanation": "They differ at C2 and C4, so they do not meet the one-centre epimer criterion."
+    },
+    {
+      "question": "Two linear tripeptides each have one cysteine. After one interchain disulfide forms, total peptide bonds are:",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 2,
+      "explanation": "Each three-residue backbone has two peptide bonds; the S–S bridge adds no peptide bond."
+    },
+    {
+      "question": "Reducing only that interchain disulfide directly changes:",
+      "options": [
+        "Every peptide bond into free amino acids",
+        "The nucleotide backbone",
+        "The number of carbonyl carbons",
+        "The sulfur side-chain cross-link while preserving peptide backbones"
+      ],
+      "answer": 3,
+      "explanation": "Disulfide reduction and peptide hydrolysis affect different covalent connections."
+    },
+    {
+      "question": "Two intact linear DNA strands of ten nucleotides each contain internal phosphodiester linkages total:",
+      "options": [
+        "18",
+        "20",
+        "24",
+        "9"
+      ],
+      "answer": 0,
+      "explanation": "Each linear strand has N−1 joining bridges, so the total is 2×9=18."
+    },
+    {
+      "question": "In the standard pairing model, a ten-base-pair fragment with 6 AT and 4 GC pairs contains base-pair hydrogen bonds:",
+      "options": [
+        "18",
+        "24",
+        "20",
+        "30"
+      ],
+      "answer": 1,
+      "explanation": "Use two per AT and three per GC pair: 6×2+4×3=24."
     }
   ]
 }

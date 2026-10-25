@@ -1,3 +1,5 @@
+import EpimerFischerDiagram from './epimer-fischer-diagram';
+import DnaLinkageDiagram from './dna-linkage-diagram';
 import FructoseFischerDiagram from './fructose-fischer-diagram';
 import biomolecules from "../../data/jee-biomolecules-lecture.json";
 import purification from "../../data/jee-purification-analysis-lecture.json";
@@ -9,6 +11,8 @@ import DnaBaseCountDiagram from './dna-base-count-diagram';
 
 const recordings={biomolecules,"purification-analysis":purification,"practical-chemistry":practical};
 export default function BiomoleculesPracticalDiagram({lesson,chapter}:{lesson:keyof typeof recordings;chapter:number}) {
+ if(lesson==='biomolecules'&&chapter===22)return <EpimerFischerDiagram/>;
+ if(lesson==='biomolecules'&&chapter===24)return <DnaLinkageDiagram/>;
  if(lesson==='biomolecules'&&chapter===19)return <FructoseFischerDiagram/>;
  if(lesson==='biomolecules'&&chapter===13)return <DnaBaseCountDiagram/>;
  if(lesson==='biomolecules'&&(chapter===8||chapter===9))return <BiomoleculeStructureDiagram chapter={chapter}/>;

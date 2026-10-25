@@ -17,9 +17,9 @@ test('new oxygen and nitrogen practice preserves reaction classes, carbons and e
 test('oxygen and nitrogen foundations map to official units with explicit written scope', () => {
   assert.deepEqual(lessons.map(l => l.unit), [17, 18]);
   for (const l of lessons) {
-    assert.equal(l.sections.length, 21);
-    assert.equal(l.examples.length, 12);
-    assert.equal(l.quiz.length, 32);
+    assert.equal(l.sections.length, 25);
+    assert.equal(l.examples.length, 15);
+    assert.equal(l.quiz.length, 40);
     assert.match(l.remaining, /Marin recording/);
   }
 });

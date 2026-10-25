@@ -1,7 +1,7 @@
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
 const read=id=>JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`));const n=read('organic-nitrogen'),p=read('practical-chemistry'),t=read('periodic-trends');const a=(l,i)=>l.quiz[i].options[l.quiz[i].answer];
 test('amine questions retain substrate limits, dry gas units and nitrogen ledgers',()=>{
- assert.deepEqual(n.quiz.slice(16).map(q=>q.answer),[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3]);
+ assert.deepEqual(n.quiz.slice(16).map(q=>q.answer),[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,1,2,3,0,1,2,3,0]);
  assert.equal(a(n,16),'Ethylamine');assert.match(a(n,17),/not an ordinary backside/);
  const gasAmount=100*.0240/(8.314*300);assert.equal(a(n,18),`${gasAmount.toFixed(6)} mol`);assert.equal(a(n,19),`${(gasAmount/.0250).toFixed(4)} M`);
  assert.match(a(n,20),/adjacent carbonyl/);assert.equal(a(n,21),'Oxygen');assert.equal(a(n,22),'Two');assert.equal(a(n,23),String(6+6));

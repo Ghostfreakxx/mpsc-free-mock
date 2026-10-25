@@ -65,6 +65,22 @@
     {
       "title": "IGNOU: monocarboxylic acids and carboxylate transformations",
       "url": "https://www.egyankosh.ac.in/bitstream/123456789/15723/1/Unit-15.pdf"
+    },
+    {
+      "title": "IIT Kanpur SATHEE: nitrophenol hydrogen-bonding comparison",
+      "url": "https://sathee.iitk.ac.in/ncert-books/neet-ncert-exemplar/ncert_c12_exemplar/alcohols_phenols_and_ethers/"
+    },
+    {
+      "title": "OpenStax: alpha-substitution reaction summary including HVZ",
+      "url": "https://openstax.org/books/organic-chemistry/pages/22-summary-of-reactions"
+    },
+    {
+      "title": "CBSE: crossed Cannizzaro reaction teaching examples",
+      "url": "https://cbseacademic.nic.in/web_material/Manuals/Chemistry_G12_Vol1_2023.pdf"
+    },
+    {
+      "title": "OpenStax: acetal formation and protection",
+      "url": "https://openstax.org/books/organic-chemistry/pages/19-10-nucleophilic-addition-of-alcohols-acetal-formation"
     }
   ],
   "chapters": [
@@ -876,6 +892,146 @@
       },
       "speechInput": "An ester can react with ammonia under suitable conditions to give an amide and an alcohol. In the simple ethyl ethanoate example, the acyl fragment contains two carbons and the ethoxy fragment contains two more. Aminolysis produces ethanamide from the two carbon acyl fragment and ethanol from the two carbon ethoxy fragment. The total carbon count remains four across the two organic products. The net equation consumes one ammonia per ester and does not eliminate water in this ester to amide accounting. That differs from writing a direct carboxylic acid plus ammonia condensation without considering initial salt formation or conditions. In the usual nucleophilic acyl substitution description, ammonia attacks the carbonyl carbon, a tetrahedral intermediate forms, proton transfers occur and the alcohol-derived group departs. This is not ordinary backside displacement at the ethyl carbon. A neutral amide product contains a carbonyl bonded to nitrogen, while the alcohol retains the ester alkoxy oxygen in this simple unlabelled structural ledger. Reaction rate, competing hydrolysis and conversion depend on the actual ester and conditions; the net equation alone supplies stoichiometry rather than a guaranteed yield.",
       "recordingNote": "Independent transcription review confirmed that the recording ends at stoichiometry, omitting the final reminder phrase. Captions follow that spoken ending; speechInput preserves the exact original synthesis request for cache provenance."
+    },
+    {
+      "title": "Hydrogen bonding can occur inside one molecule",
+      "formula": "o-Nitrophenol: intramolecular O–H···O contact; p-isomer: intermolecular association",
+      "script": "The position of a substituent can change how hydrogen bonding affects a physical property. In ortho nitrophenol, the phenolic hydrogen can interact with an oxygen of the adjacent nitro group within the same molecule. This intramolecular contact reduces the tendency to form the same extended intermolecular associations as the para isomer. In the usual textbook comparison, ortho nitrophenol is more readily steam volatile, while para nitrophenol has stronger intermolecular association. The para positions are too far apart for the analogous local internal contact in a single molecule. Both isomers still contain hydrogen bond donor and acceptor groups; intramolecular bonding does not delete those atoms or forbid every interaction with water. Do not turn the comparison into a universal solubility rule independent of temperature, ionization and solvent. In alkaline solution, deprotonation changes the species being compared. Identify whether a proposed dashed hydrogen bond joins two different molecules or two sites in one molecule before using it to explain boiling, volatility or association. The molecular formula alone cannot distinguish these positional isomers.",
+      "points": [
+        "Ortho OH / NO₂ neighbours · Internal O–H···O contact · Intramolecular H bond",
+        "Para OH / NO₂ separated · Association between molecules · Intermolecular H bonding",
+        "Usual neutral-isomer comparison · Ortho more steam volatile · Check solvent and ionization"
+      ],
+      "board": {
+        "heading": "Hydrogen bonding can occur inside one molecule",
+        "columns": [
+          "Structure / condition",
+          "Atom / bond evidence",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Ortho OH / NO₂ neighbours",
+            "Internal O–H···O contact",
+            "Intramolecular H bond"
+          ],
+          [
+            "Para OH / NO₂ separated",
+            "Association between molecules",
+            "Intermolecular H bonding"
+          ],
+          [
+            "Usual neutral-isomer comparison",
+            "Ortho more steam volatile",
+            "Check solvent and ionization"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Alpha halogenation of an acid needs an alpha hydrogen",
+      "formula": "CH₃CH₂CH₂COOH → CH₃CH₂CHBrCOOH in the stated HVZ monobromination model",
+      "script": "The Hell Volhard Zelinsky transformation replaces an alpha hydrogen of a suitable carboxylic acid by halogen. The alpha carbon is the carbon next to the carboxyl carbon, not the carbonyl carbon itself. In a supplied monobromination model, butanoic acid gives two bromobutanoic acid after the specified hydrolytic workup. All four carbons remain in the product. Its alpha carbon now bears hydrogen, bromine, an ethyl group and a carboxyl group, so it is a new stereogenic centre. Under ordinary achiral conditions an idealized product is racemic rather than a single assigned enantiomer. The familiar bromination sequence involves an acyl bromide and its enol; simply naming bromine without the reaction context is incomplete. Benzoic acid does not have the required ordinary alpha hydrogen for this pathway, and two methylpropanoic acid does have an alpha hydrogen despite being branched. Always draw the adjacent carbon before deciding that a substrate is excluded. This named transformation is substitution near the carboxyl group, not removal of its carbon as in decarboxylation.",
+      "points": [
+        "Butanoic acid: 4 carbons · Replace α-H by Br · 2-Bromobutanoic acid",
+        "Product α carbon · H, Br, ethyl, carboxyl · New stereocentre; racemic model",
+        "Eligibility requires α-H · Branched acid may have one · Benzoic acid lacks this site"
+      ],
+      "board": {
+        "heading": "Alpha halogenation of an acid needs an alpha hydrogen",
+        "columns": [
+          "Structure / condition",
+          "Atom / bond evidence",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Butanoic acid: 4 carbons",
+            "Replace α-H by Br",
+            "2-Bromobutanoic acid"
+          ],
+          [
+            "Product α carbon",
+            "H, Br, ethyl, carboxyl",
+            "New stereocentre; racemic model"
+          ],
+          [
+            "Eligibility requires α-H",
+            "Branched acid may have one",
+            "Benzoic acid lacks this site"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Crossed Cannizzaro keeps the two carbon ledgers separate",
+      "formula": "C₆H₅CHO + HCHO + OH⁻ → C₆H₅CH₂OH + HCOO⁻",
+      "script": "A useful crossed Cannizzaro model pairs benzaldehyde with excess formaldehyde in the stated alkaline conditions. Formaldehyde acts as the preferred oxidation partner, while benzaldehyde is reduced to benzyl alcohol. The one carbon formaldehyde unit becomes formate in the basic mixture, not a carbon inserted into the benzene ring. The seven carbon benzaldehyde unit becomes seven carbon benzyl alcohol. Adding one hydroxide gives a balanced net equation with eight carbons, nine hydrogens, three oxygens and negative one charge on each side. Under an ideal complete conversion model, zero point zero one zero zero mole benzaldehyde can give zero point zero one zero zero mole benzyl alcohol while the coupled pathway makes the same amount of formate. Excess formaldehyde may undergo other conversion, so that statement counts only the specified coupled pathway. Acid workup changes formate to formic acid. Do not confuse this selected crossed reaction with self Cannizzaro of two benzaldehydes, which gives benzoate and benzyl alcohol. Neither pathway is a carbon carbon joining reaction like aldol addition.",
+      "points": [
+        "Benzaldehyde: C7 · Reduction keeps its C7 skeleton · Benzyl alcohol: C7",
+        "Formaldehyde: C1 · Oxidation partner in cross model · Formate: C1 in base",
+        ".0100 mol coupled conversion · 1:1 alcohol / formate · Not an eight-carbon alcohol"
+      ],
+      "board": {
+        "heading": "Crossed Cannizzaro keeps the two carbon ledgers separate",
+        "columns": [
+          "Structure / condition",
+          "Atom / bond evidence",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Benzaldehyde: C7",
+            "Reduction keeps its C7 skeleton",
+            "Benzyl alcohol: C7"
+          ],
+          [
+            "Formaldehyde: C1",
+            "Oxidation partner in cross model",
+            "Formate: C1 in base"
+          ],
+          [
+            ".0100 mol coupled conversion",
+            "1:1 alcohol / formate",
+            "Not an eight-carbon alcohol"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting map: acetals can temporarily mask a carbonyl",
+      "formula": "CH₃CHO + 2CH₃OH ⇌ CH₃CH(OCH₃)₂ + H₂O; acid-catalysed equilibrium",
+      "script": "An acetal has two oxygen linked carbon groups attached to the same former carbonyl carbon. In a supporting functional group map, the aldehyde acetaldehyde and two methanol molecules can give its dimethyl acetal and one water under suitable acid catalysis. The acetal contains four carbons: the original two carbon aldehyde skeleton and one carbon from each methanol. No reduction has turned the aldehyde into ethanol. The carbonyl oxygen environment has instead been replaced through a reversible addition and substitution sequence. A hemiacetal has one hydroxyl and one alkoxy group on that carbon, whereas the full acetal has two alkoxy groups. Acidic aqueous conditions can regenerate the carbonyl, so acetal formation is useful as a temporary protection strategy. Ordinary acetals are generally stable to many basic conditions, but that does not promise compatibility with every imaginable reagent or solvent. This is a supporting connection to carbonyl and carbohydrate chemistry, not a claim that every protecting group sequence is an additional required syllabus reaction. Track the external alcohol carbons separately from the original carbonyl skeleton.",
+      "points": [
+        "Ethanal C2 + 2 methanol C1 · Full acetal + one H₂O · Acetal has 4 carbons",
+        "Hemiacetal: OH and OR · Full acetal: OR and OR · Same central carbon",
+        "Acid-catalysed reversible map · Aqueous acid can unmask C=O · Protection, not reduction"
+      ],
+      "board": {
+        "heading": "Supporting map: acetals can temporarily mask a carbonyl",
+        "columns": [
+          "Structure / condition",
+          "Atom / bond evidence",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Ethanal C2 + 2 methanol C1",
+            "Full acetal + one H₂O",
+            "Acetal has 4 carbons"
+          ],
+          [
+            "Hemiacetal: OH and OR",
+            "Full acetal: OR and OR",
+            "Same central carbon"
+          ],
+          [
+            "Acid-catalysed reversible map",
+            "Aqueous acid can unmask C=O",
+            "Protection, not reduction"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1230,6 +1386,94 @@
       ],
       "answer": 0,
       "explanation": "The net products are an amide and an alcohol; no water is eliminated in this ester-to-amide atom ledger."
+    },
+    {
+      "question": "The characteristic internal interaction in neutral o-nitrophenol is:",
+      "options": [
+        "Phenolic O–H with a neighbouring nitro oxygen",
+        "A new carbon–carbon bond",
+        "A peptide bond",
+        "Permanent proton loss in every solvent"
+      ],
+      "answer": 0,
+      "explanation": "Adjacent groups permit intramolecular hydrogen bonding without changing the molecular connectivity."
+    },
+    {
+      "question": "In the usual neutral-isomer textbook comparison, which is more readily steam volatile?",
+      "options": [
+        "p-Nitrophenol",
+        "o-Nitrophenol",
+        "Both must be identical because their formulas match",
+        "Neither can hydrogen bond"
+      ],
+      "answer": 1,
+      "explanation": "Intramolecular bonding in the ortho isomer reduces intermolecular association relative to the para comparison."
+    },
+    {
+      "question": "The supplied HVZ monobromination product of butanoic acid is:",
+      "options": [
+        "Bromomethane",
+        "3-Bromobutanoic acid",
+        "2-Bromobutanoic acid",
+        "Benzoic acid"
+      ],
+      "answer": 2,
+      "explanation": "The alpha carbon is carbon 2 next to the carboxyl carbon; the four-carbon skeleton is retained."
+    },
+    {
+      "question": "Which acid lacks the ordinary alpha hydrogen required by this HVZ pathway?",
+      "options": [
+        "Butanoic acid",
+        "Propanoic acid",
+        "2-Methylpropanoic acid",
+        "Benzoic acid"
+      ],
+      "answer": 3,
+      "explanation": "Benzoic acid has no ordinary adjacent aliphatic alpha C–H of the stated substrate type."
+    },
+    {
+      "question": "In the selected benzaldehyde/formaldehyde crossed Cannizzaro net pathway, formaldehyde becomes:",
+      "options": [
+        "Formate in the basic mixture",
+        "Benzoate",
+        "An extra ring carbon",
+        "Ethene"
+      ],
+      "answer": 0,
+      "explanation": "The C1 partner is oxidized to formate while the C7 aldehyde is reduced to benzyl alcohol."
+    },
+    {
+      "question": "Complete .0100 mol benzaldehyde conversion through that coupled net pathway gives benzyl alcohol amount:",
+      "options": [
+        ".00500 mol",
+        ".0100 mol",
+        ".0200 mol",
+        ".0800 mol"
+      ],
+      "answer": 1,
+      "explanation": "The selected crossed equation has a 1:1 ratio of benzaldehyde to benzyl alcohol."
+    },
+    {
+      "question": "Ethanal plus two methanols gives a dimethyl acetal containing how many carbons?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "answer": 2,
+      "explanation": "The two aldehyde carbons and two alcohol carbons all remain in the acetal."
+    },
+    {
+      "question": "Which comparison distinguishes a hemiacetal from a full acetal at the former carbonyl carbon?",
+      "options": [
+        "Both contain a peptide linkage",
+        "The full acetal is simply an aldehyde reduced to ethanol",
+        "Only the hemiacetal contains any oxygen",
+        "Hemiacetal has OH and OR; full acetal has two OR groups"
+      ],
+      "answer": 3,
+      "explanation": "The distinction concerns oxygen substituents on the same carbon; acid-catalysed hydrolysis can restore the carbonyl."
     }
   ]
 }

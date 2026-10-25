@@ -32,18 +32,20 @@ Questions are original practice, not represented as official PYQs.
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 21 | 24 | 17 | 36 / 36 |
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 21 | 21 | 12 | 32 / 32 |
 | 16 | [Organic Halogens](/jee/classes/organic-halogens) | 21 | 21 | 12 | 32 / 32 |
-| 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 23 | 21 | 12 | 32 / 32 |
-| 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 21 | 21 | 12 | 32 / 32 |
-| 19 | [Biomolecules](/jee/classes/biomolecules) | 21 | 21 | 12 | 32 / 32 |
+| 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 27 | 25 | 15 | 40 / 40 |
+| 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 25 | 25 | 15 | 40 / 40 |
+| 19 | [Biomolecules](/jee/classes/biomolecules) | 25 | 25 | 15 | 40 / 40 |
 | 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 21 | 21 | 12 | 32 / 32 |
 
 ## Latest expansion
 
-Redox and Electrochemistry adds conductivity-cell calibration, charge integration for changing current, alkaline permanganate/sulfite balancing and ideal lead-acid charge capacity with reactant consumption.
+Organic Oxygen adds nitrophenol intramolecular hydrogen bonding, HVZ alpha-halogenation, crossed Cannizzaro carbon ledgers and a supporting acetal-protection map.
 
-Chemical Kinetics adds calibrated clock-threshold interpretation, tangent versus finite-interval rates, a supporting changing-volume material balance and a supporting reversible first-order relaxation model with an equilibrium-plateau figure. Supporting extensions are not presented as additional required integrated-order equations.
+Organic Nitrogen adds nitro-reduction electron/proton accounting, a supporting Hofmann elimination distinction, nitration under changing protonation states and aniline/Lewis-acid incompatibility.
 
-Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
+Biomolecules adds glucose oxidation evidence, labelled Fischer epimer comparisons, disulfide versus peptide connectivity and separate DNA backbone/base-pair counts. Supporting reaction maps are not presented as additional compulsory syllabus coverage.
+
+Together this batch adds twelve narrated chapters, twenty-four original MCQs and nine worked examples, with matching written companions and recorded practice.
 
 ## Remaining scope
 
@@ -57,7 +59,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific primary references, including IIT Kanpur SATHEE/NCERT conductivity calibration; OpenStax redox, electrolysis, batteries and reaction rates; Indiana University East clock kinetics; University of Michigan material balances; and Texas A&M reversible kinetics. Numerical datasets and MCQs in this batch are supplied original practice.
+The notes contain lesson-specific primary references, including IIT Kanpur SATHEE/NCERT and CBSE teaching material, OpenStax organic reaction and biomolecule texts, Kwantlen Polytechnic University carbohydrate teaching notes and Essentials of Glycobiology. Numerical datasets and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks
