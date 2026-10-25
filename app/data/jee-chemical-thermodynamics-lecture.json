@@ -33,6 +33,18 @@
     {
       "title": "OpenStax: second and third laws",
       "url": "https://openstax.org/books/chemistry-2e/pages/16-3-the-second-and-third-laws-of-thermodynamics"
+    },
+    {
+      "title": "CSU East Bay: Born–Haber cycles",
+      "url": "https://chemistry.csueastbay.edu/~pfleming/chem/351/chap03/Born_Haber.htm"
+    },
+    {
+      "title": "CSU East Bay: thermodynamics of ideal mixing",
+      "url": "https://chemistry.csueastbay.edu/~pfleming/chem/351/chap07/mixing.htm"
+    },
+    {
+      "title": "OpenStax: equilibrium constants and equation operations",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants"
     }
   ],
   "chapters": [
@@ -575,6 +587,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Close a complete Born–Haber cycle",
+      "formula": "ΔfH° = ΔsubH° + IE₁ + ½D(Cl₂) + ΔegH° + Δlatt,formH°",
+      "script": "A Born Haber cycle makes every intermediate in an ionic formation calculation explicit. Start with one mole of solid sodium and half a mole of gaseous chlorine, ending with one mole of solid sodium chloride. In a supplied teaching dataset, sodium sublimation costs one hundred eight kilojoules per mole. Its first ionization costs four hundred ninety six. Half the chlorine bond dissociation costs one hundred twenty two, and electron gain by gaseous chlorine releases three hundred forty nine. These signed stages total positive three hundred seventy seven kilojoules before lattice formation. If the standard formation enthalpy is negative four hundred eleven, gaseous ions must release seven hundred eighty eight kilojoules on forming the solid. Reversing that last arrow gives positive seven hundred eighty eight for lattice dissociation. The chlorine bond term is halved because the formation equation uses half a molecule of chlorine per formula unit. Electron gain is entered as a signed enthalpy change here, not as an unsigned affinity magnitude. State the arrow and convention before substituting any value.",
+      "points": [
+        "Elements → gaseous ions · 108 + 496 + 122 − 349 · +377 kJ/mol",
+        "Elements → NaCl(s) · Formation enthalpy −411 · Lattice formation −788",
+        "NaCl(s) → gaseous ions · Reverse only lattice arrow · Dissociation +788 kJ/mol"
+      ],
+      "board": {
+        "heading": "Close a complete Born–Haber cycle",
+        "columns": [
+          "Specified model",
+          "Balance / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Elements → gaseous ions",
+            "108 + 496 + 122 − 349",
+            "+377 kJ/mol"
+          ],
+          [
+            "Elements → NaCl(s)",
+            "Formation enthalpy −411",
+            "Lattice formation −788"
+          ],
+          [
+            "NaCl(s) → gaseous ions",
+            "Reverse only lattice arrow",
+            "Dissociation +788 kJ/mol"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Integrate a changing reaction heat capacity",
+      "formula": "ΔrH(T₂) = ΔrH(T₁) + ∫ΔrCp(T) dT",
+      "script": "A constant heat capacity correction is a useful approximation, but a supplied temperature dependent function must be integrated. Keep the balanced reaction and its amount basis fixed. Suppose its product minus reactant heat capacity is ten plus zero point zero two zero times temperature, in joules per mole of reaction per kelvin. Take the standard reaction enthalpy at three hundred kelvin as negative fifty point zero kilojoules per mole. Between three hundred and five hundred kelvin, the constant term contributes two thousand joules per mole. The linear term integrates to zero point zero one zero times the difference of the squared temperatures, adding one thousand six hundred joules per mole. The total correction is positive three point six zero kilojoules, making the new enthalpy negative forty six point four zero. Do not insert one endpoint heat capacity into the constant formula and call it an exact integral. This supplied linear model is valid only over its stated interval with unchanged phases. A phase transition or different reaction normalization requires additional accounting rather than silently extending the same polynomial.",
+      "points": [
+        "ΔrCp = 10 + 0.020T · 300 K → 500 K · J/(mol reaction K)",
+        "Integral: 2000 + 1600 · Correction +3.60 kJ/mol · Not endpoint Cp × ΔT",
+        "ΔrH(300 K) = −50.0 · Add +3.60 kJ/mol · ΔrH(500 K) = −46.40"
+      ],
+      "board": {
+        "heading": "Integrate a changing reaction heat capacity",
+        "columns": [
+          "Specified model",
+          "Balance / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "ΔrCp = 10 + 0.020T",
+            "300 K → 500 K",
+            "J/(mol reaction K)"
+          ],
+          [
+            "Integral: 2000 + 1600",
+            "Correction +3.60 kJ/mol",
+            "Not endpoint Cp × ΔT"
+          ],
+          [
+            "ΔrH(300 K) = −50.0",
+            "Add +3.60 kJ/mol",
+            "ΔrH(500 K) = −46.40"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Mixing different ideal gases increases entropy",
+      "formula": "ΔmixS = −RΣnᵢ ln xᵢ; equal 1 mol samples: 2R ln 2",
+      "script": "Consider one mole each of two chemically different ideal gases, initially separated at the same temperature and pressure. Their starting volumes are equal. Removing the partition lets each component spread into twice its initial volume. A reversible reference expansion for each gas gives an entropy increase of the gas constant times the natural logarithm of two. Adding the contributions gives about eleven point five three joules per kelvin for the two mole sample. This is a total entropy change, not a value per mole of mixture. At three hundred kelvin the corresponding ideal mixing Gibbs change is about negative three point four six kilojoules, since ideal mixing at fixed temperature has zero enthalpy change. The spontaneous partition removal itself need not be reversible; entropy is evaluated through a reference path. If both compartments instead contain the same gas at identical temperature and pressure, removing their artificial partition creates no thermodynamic mixing entropy. Do not label identical particles as different chemical components simply to force a positive answer. Real gas interactions or unequal initial conditions require a different calculation.",
+      "points": [
+        "1 mol A + 1 mol B · Different ideal gases; same T,p · xA = xB = ½",
+        "Each expands to twice V · ΔS total = 2R ln 2 · +11.53 J/K",
+        "At T = 300 K · ΔHmix = 0; ΔG = −TΔS · −3.46 kJ for sample"
+      ],
+      "board": {
+        "heading": "Mixing different ideal gases increases entropy",
+        "columns": [
+          "Specified model",
+          "Balance / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "1 mol A + 1 mol B",
+            "Different ideal gases; same T,p",
+            "xA = xB = ½"
+          ],
+          [
+            "Each expands to twice V",
+            "ΔS total = 2R ln 2",
+            "+11.53 J/K"
+          ],
+          [
+            "At T = 300 K",
+            "ΔHmix = 0; ΔG = −TΔS",
+            "−3.46 kJ for sample"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Rescaling a reaction changes its standard Gibbs value",
+      "formula": "Reaction × a: ΔrG° × a and K → Kᵃ; reversal: K → 1/K",
+      "script": "An equilibrium constant belongs to a written reaction at a specified temperature. Standard reaction Gibbs energy is also tied to that stoichiometric normalization. Suppose an original reaction has dimensionless equilibrium constant nine. Doubling every coefficient doubles its standard reaction Gibbs energy, so the new constant is eighty one, not eighteen. Reversing the original reaction changes the sign of its standard Gibbs energy and gives one ninth for its equilibrium constant. Halving the original coefficients instead gives the square root, which is three. These operations follow from standard reaction Gibbs energy equals negative R T times the natural logarithm of K. Multiplying an energy therefore multiplies the logarithm, rather than the constant itself. This bookkeeping does not change the physical equilibrium mixture: the new quotient is transformed by the same power, and it still equals the matching constant at equilibrium. Keep temperature fixed throughout the comparison and use dimensionless thermodynamic activities. Merely changing the initial amounts without changing the written reaction does not rescale its constant. Distinguish equation normalization from changing temperature or from moving a mixture away from equilibrium.",
+      "points": [
+        "Original K = 9 · Double coefficients · ΔrG° doubles; K = 81",
+        "Reverse original equation · Change sign of ΔrG° · K = 1/9",
+        "Halve original equation · Half the logarithm · K = √9 = 3"
+      ],
+      "board": {
+        "heading": "Rescaling a reaction changes its standard Gibbs value",
+        "columns": [
+          "Specified model",
+          "Balance / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Original K = 9",
+            "Double coefficients",
+            "ΔrG° doubles; K = 81"
+          ],
+          [
+            "Reverse original equation",
+            "Change sign of ΔrG°",
+            "K = 1/9"
+          ],
+          [
+            "Halve original equation",
+            "Half the logarithm",
+            "K = √9 = 3"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -863,6 +1015,94 @@
       ],
       "answer": 3,
       "explanation": "Actual direction follows RT ln(Q/K); the standard-state Gibbs energy alone does not fix direction at the current composition."
+    },
+    {
+      "question": "Signed gaseous-ion preparation stages are +108,+496,+122,−349 kJ/mol. With ΔfH°=−411 kJ/mol, lattice formation enthalpy is:",
+      "options": [
+        "−788 kJ/mol",
+        "+788 kJ/mol",
+        "−34 kJ/mol",
+        "+377 kJ/mol"
+      ],
+      "answer": 0,
+      "explanation": "The stages to gaseous ions sum to +377; −411=377+Δlattice, so lattice formation is −788."
+    },
+    {
+      "question": "Why is only half the Cl2 bond dissociation enthalpy used for Na(s)+½Cl2(g)→NaCl(s)?",
+      "options": [
+        "Chlorine has half an electron",
+        "One mole of formula units requires one mole of Cl atoms",
+        "All bond energies must be halved",
+        "Lattice enthalpy is always halved"
+      ],
+      "answer": 1,
+      "explanation": "Half a mole of Cl2 yields the one mole of chlorine atoms required per mole of NaCl."
+    },
+    {
+      "question": "For ΔrCp=10+0.020T J/(mol K), the enthalpy correction from 300 to 500 K is:",
+      "options": [
+        "+2.00 kJ/mol",
+        "+4.00 kJ/mol",
+        "+3.60 kJ/mol",
+        "−3.60 kJ/mol"
+      ],
+      "answer": 2,
+      "explanation": "Integrate: 10(500−300)+0.010(500²−300²)=3600 J/mol."
+    },
+    {
+      "question": "Starting with ΔrH(300 K)=−50.0 kJ/mol, that correction gives ΔrH(500 K):",
+      "options": [
+        "−53.60 kJ/mol",
+        "+46.40 kJ/mol",
+        "−50.0 kJ/mol",
+        "−46.40 kJ/mol"
+      ],
+      "answer": 3,
+      "explanation": "Add the +3.60 kJ/mol correction to the starting reaction enthalpy."
+    },
+    {
+      "question": "One mole each of different ideal gases mix from equal T,p. Total entropy change, with R=8.314 J/(mol K), is approximately:",
+      "options": [
+        "+11.53 J/K",
+        "+5.76 J/K",
+        "0 J/K",
+        "−11.53 J/K"
+      ],
+      "answer": 0,
+      "explanation": "Two contributions R ln 2 give 2R ln 2=11.53 J/K for the whole sample."
+    },
+    {
+      "question": "Removing a partition between identical ideal gases initially at equal T,p produces thermodynamic mixing entropy:",
+      "options": [
+        "+2R ln 2 always",
+        "Zero under these matched conditions",
+        "Negative infinity",
+        "Positive only because labels differ"
+      ],
+      "answer": 1,
+      "explanation": "Identical gas at equal intensive conditions does not become a new chemical mixture on removing an artificial partition."
+    },
+    {
+      "question": "At fixed temperature, doubling a reaction with dimensionless K=9 gives the new K:",
+      "options": [
+        "18",
+        "3",
+        "81",
+        "1/9"
+      ],
+      "answer": 2,
+      "explanation": "The logarithm of K doubles, hence the equilibrium constant is squared."
+    },
+    {
+      "question": "Reversing that original reaction with K=9 gives:",
+      "options": [
+        "−9",
+        "9",
+        "81",
+        "1/9"
+      ],
+      "answer": 3,
+      "explanation": "Reversal changes the sign of standard reaction Gibbs energy and reciprocates K."
     }
   ]
 }

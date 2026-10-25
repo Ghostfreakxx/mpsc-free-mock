@@ -1436,3 +1436,249 @@ instead
 
 00:26:01.988 --> 00:26:03.108
 of this direct expression.
+
+00:26:03.648 --> 00:26:08.048
+Vapour composition and the amount removed are separate pieces of information.
+
+00:26:09.608 --> 00:26:13.748
+Consider an idealized batch balance starting with ten moles of a binary liquid
+
+00:26:13.748 --> 00:26:16.288
+containing six moles of A and four of B.
+
+00:26:17.328 --> 00:26:21.008
+Suppose one mole of vapour is removed, with its measured average composition
+
+00:26:21.008 --> 00:26:23.008
+stated to be eighty mole percent A.
+
+00:26:24.548 --> 00:26:28.968
+The withdrawn sample therefore contains zero point eight mole A and zero point
+
+00:26:28.968 --> 00:26:29.768
+two mole B.
+
+00:26:30.768 --> 00:26:34.748
+The remaining liquid contains five point two moles A and three point eight
+
+00:26:34.748 --> 00:26:36.808
+moles B, nine moles in total.
+
+00:26:37.808 --> 00:26:42.568
+Its A mole fraction is five point two divided by nine, about zero point five
+
+00:26:42.568 --> 00:26:43.568
+seven eight.
+
+00:26:43.568 --> 00:26:47.368
+Neither the initial fraction zero point six nor the withdrawn vapour fraction
+
+00:26:47.368 --> 00:26:49.928
+zero point eight describes that residual liquid.
+
+00:26:51.208 --> 00:26:55.568
+The stated average composition avoids pretending a finite batch withdrawal has
+
+00:26:55.568 --> 00:26:58.248
+the initial equilibrium vapour composition throughout.
+
+00:26:58.968 --> 00:27:03.246
+In a real equilibrium distillation the instantaneous vapour composition
+
+00:27:03.246 --> 00:27:03.668
+changes
+
+00:27:03.668 --> 00:27:08.013
+as the liquid changes, and a model or measurements are needed to integrate
+
+00:27:08.013 --> 00:27:08.248
+that
+
+00:27:08.248 --> 00:27:08.668
+process.
+
+00:27:09.708 --> 00:27:13.568
+First conserve each component, then form a mole fraction using the correct
+
+00:27:13.568 --> 00:27:14.188
+final total.
+
+00:27:14.352 --> 00:27:19.341
+Osmosis can occur between two solutions, not only between pure solvent and a
+
+00:27:19.341 --> 00:27:19.932
+solution.
+
+00:27:21.112 --> 00:27:25.032
+Suppose a membrane passes solvent but retains both solutes.
+
+00:27:26.132 --> 00:27:30.732
+Initially the left compartment has zero point zero one zero mole of a non
+
+00:27:30.732 --> 00:27:33.352
+electrolyte in one hundred millilitres of solution.
+
+00:27:34.212 --> 00:27:38.972
+The right has zero point zero two zero mole in the same initial volume.
+
+00:27:39.532 --> 00:27:43.637
+At the same temperature, the right has twice the ideal dilute osmotic
+
+00:27:43.637 --> 00:27:44.172
+pressure,
+
+00:27:45.092 --> 00:27:47.552
+so solvent initially moves from left to right.
+
+00:27:48.412 --> 00:27:52.109
+For an idealized final state with equal mechanical pressures, additive
+
+00:27:52.109 --> 00:27:52.532
+solution
+
+00:27:52.532 --> 00:27:56.932
+volumes and negligible solute volume effects, equal osmotic pressures require
+
+00:27:56.932 --> 00:27:58.692
+equal final molar concentrations.
+
+00:28:00.112 --> 00:28:03.972
+The conserved total solute amount is zero point zero three zero mole in zero
+
+00:28:03.972 --> 00:28:07.812
+point two zero zero litre, giving zero point one five zero molar in each
+
+00:28:07.812 --> 00:28:08.132
+compartment.
+
+00:28:09.092 --> 00:28:12.985
+The final left volume is about sixty six point seven millilitres, and the
+
+00:28:12.985 --> 00:28:13.252
+right
+
+00:28:13.252 --> 00:28:14.952
+about one hundred thirty three point three.
+
+00:28:15.752 --> 00:28:18.532
+Thus about thirty three point three millilitres move right.
+
+00:28:19.212 --> 00:28:22.872
+If a hydrostatic pressure difference builds, concentrations need not become
+
+00:28:22.872 --> 00:28:26.172
+equal; mechanical pressure can balance the osmotic difference.
+
+00:28:26.712 --> 00:28:31.072
+A Henry law calculation needs the partial pressure of the particular dissolved
+
+00:28:31.072 --> 00:28:34.012
+gas, rather than the entire headspace pressure.
+
+00:28:35.152 --> 00:28:39.312
+State the convention first: gas partial pressure equals the Henry constant
+
+00:28:39.312 --> 00:28:41.212
+times its dissolved mole fraction.
+
+00:28:42.392 --> 00:28:46.272
+Suppose an ideal wet gas has total pressure five point zero zero bar.
+
+00:28:47.112 --> 00:28:52.212
+Its water vapour contributes a supplied zero point zero four zero bar, and A
+
+00:28:52.212 --> 00:28:54.992
+makes up twenty five percent of the remaining dry gas.
+
+00:28:55.752 --> 00:29:00.172
+Subtract the water contribution to get four point nine six bar of dry gas.
+
+00:29:01.252 --> 00:29:04.992
+The partial pressure of A is one quarter of that, one point two four bar.
+
+00:29:05.992 --> 00:29:09.732
+With the supplied Henry constant twenty thousand bar at that temperature, the
+
+00:29:09.732 --> 00:29:13.672
+dissolved mole fraction of A is six point two zero times ten to the negative
+
+00:29:13.672 --> 00:29:13.992
+five.
+
+00:29:14.952 --> 00:29:19.192
+Using five bar directly would count water and the other gases as though all
+
+00:29:19.192 --> 00:29:19.612
+were A.
+
+00:29:19.932 --> 00:29:24.451
+The dry composition convention matters: a mole fraction already defined for
+
+00:29:24.451 --> 00:29:24.632
+the
+
+00:29:24.632 --> 00:29:28.172
+complete wet mixture would instead multiply the total pressure directly.
+
+00:29:29.412 --> 00:29:33.712
+Assume dilute dissolved A, gas ideality and an unchanged temperature and
+
+00:29:33.712 --> 00:29:34.772
+solvent for this model.
+
+00:29:35.064 --> 00:29:39.844
+Evaporating solvent changes the denominator of molality even when the
+
+00:29:39.844 --> 00:29:42.004
+nonvolatile solute amount stays fixed.
+
+00:29:42.944 --> 00:29:47.374
+Begin with zero point zero one zero zero mole of a non electrolyte in two
+
+00:29:47.374 --> 00:29:48.304
+hundred grams of water.
+
+00:29:49.124 --> 00:29:54.104
+Its molality is zero point zero five zero zero mole per kilogram of solvent.
+
+00:29:54.844 --> 00:29:59.664
+In a supplied model, fifty grams of water are removed while no solute is lost,
+
+00:30:00.024 --> 00:30:03.864
+and all solute remains dissolved without reaction or association.
+
+00:30:03.864 --> 00:30:09.059
+The remaining water mass is one hundred fifty grams, or zero point one five
+
+00:30:09.059 --> 00:30:09.824
+zero kilogram.
+
+00:30:10.744 --> 00:30:14.784
+The new molality is zero point zero six six seven.
+
+00:30:14.784 --> 00:30:18.804
+With the water freezing constant one point eight six kelvin kilogram per mole
+
+00:30:18.804 --> 00:30:24.224
+and van't Hoff factor one, the predicted freezing depression changes from zero
+
+00:30:24.224 --> 00:30:27.744
+point zero nine three zero to zero point one two four kelvin.
+
+00:30:28.624 --> 00:30:33.364
+Do not subtract the evaporated mass from the solute amount, and do not treat
+
+00:30:33.364 --> 00:30:35.344
+total solution mass as solvent mass.
+
+00:30:36.164 --> 00:30:40.104
+This dilute colligative model describes equilibrium freezing onset after
+
+00:30:40.104 --> 00:30:43.884
+cooling; it is not a claim that freezing occurs during evaporation.
+
+00:30:44.904 --> 00:30:49.284
+Precipitation, solute volatility or a changing particle factor would require a
+
+00:30:49.284 --> 00:30:50.084
+revised balance.

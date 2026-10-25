@@ -19,8 +19,8 @@ Questions are original practice, not represented as official PYQs.
 | 1 | [Mole Concept](/jee/classes/mole-concept) | 21 | 18 | 12 | 32 / 32 |
 | 2 | [Atomic Structure](/jee/classes/atomic-structure) | 21 | 18 | 12 | 34 / 34 |
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 21 | 20 | 12 | 34 / 34 |
-| 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 19 | 21 | 12 | 26 / 26 |
-| 5 | [Solutions](/jee/classes/solutions) | 19 | 21 | 12 | 26 / 26 |
+| 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 23 | 25 | 15 | 34 / 34 |
+| 5 | [Solutions](/jee/classes/solutions) | 23 | 25 | 15 | 34 / 34 |
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 21 | 21 | 16 | 34 / 34 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 18 | 19 | 13 | 26 / 26 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 18 | 21 | 16 | 34 / 34 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-P-Block adds lower-state redox evidence with lead dioxide, nitrogen oxide association versus disproportionation, sulfur oxoacid peroxide connectivity and xenon domain/shape counts. Selected compounds illustrate the official trend-focused scope rather than claiming that every historical preparation is required.
+Chemical Thermodynamics adds a complete NaCl Born-Haber cycle with explicit lattice sign conventions, an integrated variable reaction heat capacity, ideal-gas mixing entropy and equilibrium-constant changes under reaction normalization.
 
-D/F-Block adds environment-dependent Cu(I) stability and CuI precipitation, transition absorption energies, consequences of lanthanoid contraction and a balanced iron redox catalytic cycle. Reaction stages are bookkeeping models, not necessarily elementary collisions or laboratory recipes.
+Solutions adds a vapour-withdrawal component balance, solvent transfer between two solutions, dry versus wet gas partial pressure in Henry law, and colligative changes after solvent loss. Each model states its ideality and conservation assumptions.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific primary references, including OpenStax periodicity, nitrogen and coordination spectroscopy; IGNOU Group 16 oxoacids; IIT Kanpur SATHEE p-block structures; Chemguide copper chemistry and transition-metal catalytic cycles; and Karpagam Academy lanthanoid teaching notes. Numerical data and MCQs in this batch are original practice.
+The notes contain lesson-specific primary references, including CSU East Bay thermodynamics teaching notes on Born-Haber cycles and ideal mixing; OpenStax equilibrium constants, gas solubility and colligative properties. Numerical datasets and MCQs in this batch are supplied original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

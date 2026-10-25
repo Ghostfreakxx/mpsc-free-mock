@@ -21,6 +21,10 @@
     {
       "title": "NCERT: Solutions — Henry law and nonideal mixtures",
       "url": "https://ncert.nic.in/textbook/pdf/lech101.pdf"
+    },
+    {
+      "title": "OpenStax: gas solubility and Henry law",
+      "url": "https://openstax.org/books/chemistry-2e/pages/11-3-solubility"
     }
   ],
   "chapters": [
@@ -571,6 +575,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "A vapour withdrawal needs a component balance",
+      "formula": "Initial A = vapour A + residual-liquid A; final xA = nA,res/nres",
+      "script": "Vapour composition and the amount removed are separate pieces of information. Consider an idealized batch balance starting with ten moles of a binary liquid containing six moles of A and four of B. Suppose one mole of vapour is removed, with its measured average composition stated to be eighty mole percent A. The withdrawn sample therefore contains zero point eight mole A and zero point two mole B. The remaining liquid contains five point two moles A and three point eight moles B, nine moles in total. Its A mole fraction is five point two divided by nine, about zero point five seven eight. Neither the initial fraction zero point six nor the withdrawn vapour fraction zero point eight describes that residual liquid. The stated average composition avoids pretending a finite batch withdrawal has the initial equilibrium vapour composition throughout. In a real equilibrium distillation the instantaneous vapour composition changes as the liquid changes, and a model or measurements are needed to integrate that process. First conserve each component, then form a mole fraction using the correct final total.",
+      "points": [
+        "Initially: 10 mol liquid · A = 6 mol; B = 4 mol · xA = 0.600",
+        "Remove 1 mol; mean yA=.80 · A removed .80; B .20 · Stated mean, not fixed VLE",
+        "Residual liquid: 9 mol · A = 5.20; B = 3.80 · xA = 5.20/9 = .578"
+      ],
+      "board": {
+        "heading": "A vapour withdrawal needs a component balance",
+        "columns": [
+          "Specified model",
+          "Balance / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Initially: 10 mol liquid",
+            "A = 6 mol; B = 4 mol",
+            "xA = 0.600"
+          ],
+          [
+            "Remove 1 mol; mean yA=.80",
+            "A removed .80; B .20",
+            "Stated mean, not fixed VLE"
+          ],
+          [
+            "Residual liquid: 9 mol",
+            "A = 5.20; B = 3.80",
+            "xA = 5.20/9 = .578"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Two solutions can exchange solvent across a membrane",
+      "formula": "Equal pressure, ideal dilute limit: nA/VA = nB/VB; VA+VB = constant",
+      "script": "Osmosis can occur between two solutions, not only between pure solvent and a solution. Suppose a membrane passes solvent but retains both solutes. Initially the left compartment has zero point zero one zero mole of a non electrolyte in one hundred millilitres of solution. The right has zero point zero two zero mole in the same initial volume. At the same temperature, the right has twice the ideal dilute osmotic pressure, so solvent initially moves from left to right. For an idealized final state with equal mechanical pressures, additive solution volumes and negligible solute volume effects, equal osmotic pressures require equal final molar concentrations. The conserved total solute amount is zero point zero three zero mole in zero point two zero zero litre, giving zero point one five zero molar in each compartment. The final left volume is about sixty six point seven millilitres, and the right about one hundred thirty three point three. Thus about thirty three point three millilitres move right. If a hydrostatic pressure difference builds, concentrations need not become equal; mechanical pressure can balance the osmotic difference.",
+      "points": [
+        "Initially: 100 mL each · Left .010 mol; right .020 · Solvent initially moves right",
+        "Final equal pressures · Total .030 mol / .200 L · Both C = .150 mol/L",
+        "Solutes cannot cross · Left 66.7; right 133.3 mL · 33.3 mL transferred right"
+      ],
+      "board": {
+        "heading": "Two solutions can exchange solvent across a membrane",
+        "columns": [
+          "Specified model",
+          "Balance / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Initially: 100 mL each",
+            "Left .010 mol; right .020",
+            "Solvent initially moves right"
+          ],
+          [
+            "Final equal pressures",
+            "Total .030 mol / .200 L",
+            "Both C = .150 mol/L"
+          ],
+          [
+            "Solutes cannot cross",
+            "Left 66.7; right 133.3 mL",
+            "33.3 mL transferred right"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Henry calculations use the gas partial pressure",
+      "formula": "pA = yA,dry(ptotal − pwater); pA = KH,A xA",
+      "script": "A Henry law calculation needs the partial pressure of the particular dissolved gas, rather than the entire headspace pressure. State the convention first: gas partial pressure equals the Henry constant times its dissolved mole fraction. Suppose an ideal wet gas has total pressure five point zero zero bar. Its water vapour contributes a supplied zero point zero four zero bar, and A makes up twenty five percent of the remaining dry gas. Subtract the water contribution to get four point nine six bar of dry gas. The partial pressure of A is one quarter of that, one point two four bar. With the supplied Henry constant twenty thousand bar at that temperature, the dissolved mole fraction of A is six point two zero times ten to the negative five. Using five bar directly would count water and the other gases as though all were A. The dry composition convention matters: a mole fraction already defined for the complete wet mixture would instead multiply the total pressure directly. Assume dilute dissolved A, gas ideality and an unchanged temperature and solvent for this model.",
+      "points": [
+        "Wet gas: total 5.00 bar · Water contribution .040 bar · Dry total 4.96 bar",
+        "Dry gas: yA = .250 · pA = .250 × 4.96 · pA = 1.24 bar",
+        "KH,A = 20000 bar · xA = pA / KH,A · xA = 6.20 × 10⁻⁵"
+      ],
+      "board": {
+        "heading": "Henry calculations use the gas partial pressure",
+        "columns": [
+          "Specified model",
+          "Balance / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Wet gas: total 5.00 bar",
+            "Water contribution .040 bar",
+            "Dry total 4.96 bar"
+          ],
+          [
+            "Dry gas: yA = .250",
+            "pA = .250 × 4.96",
+            "pA = 1.24 bar"
+          ],
+          [
+            "KH,A = 20000 bar",
+            "xA = pA / KH,A",
+            "xA = 6.20 × 10⁻⁵"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Solvent loss changes molality before freezing depression",
+      "formula": "nsolute fixed; m = nsolute / kg solvent remaining; ΔTf = iKf m",
+      "script": "Evaporating solvent changes the denominator of molality even when the nonvolatile solute amount stays fixed. Begin with zero point zero one zero zero mole of a non electrolyte in two hundred grams of water. Its molality is zero point zero five zero zero mole per kilogram of solvent. In a supplied model, fifty grams of water are removed while no solute is lost, and all solute remains dissolved without reaction or association. The remaining water mass is one hundred fifty grams, or zero point one five zero kilogram. The new molality is zero point zero six six seven. With the water freezing constant one point eight six kelvin kilogram per mole and van't Hoff factor one, the predicted freezing depression changes from zero point zero nine three zero to zero point one two four kelvin. Do not subtract the evaporated mass from the solute amount, and do not treat total solution mass as solvent mass. This dilute colligative model describes equilibrium freezing onset after cooling; it is not a claim that freezing occurs during evaporation. Precipitation, solute volatility or a changing particle factor would require a revised balance.",
+      "points": [
+        ".0100 mol solute; 200 g water · Initial m = .0500 mol/kg · Initial ΔTf = .0930 K",
+        "Lose 50.0 g water only · Remaining solvent .150 kg · Final m = .0667 mol/kg",
+        "i = 1; Kf = 1.86 · ΔTf = 1.86 × .0100/.150 · Final depression .124 K"
+      ],
+      "board": {
+        "heading": "Solvent loss changes molality before freezing depression",
+        "columns": [
+          "Specified model",
+          "Balance / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            ".0100 mol solute; 200 g water",
+            "Initial m = .0500 mol/kg",
+            "Initial ΔTf = .0930 K"
+          ],
+          [
+            "Lose 50.0 g water only",
+            "Remaining solvent .150 kg",
+            "Final m = .0667 mol/kg"
+          ],
+          [
+            "i = 1; Kf = 1.86",
+            "ΔTf = 1.86 × .0100/.150",
+            "Final depression .124 K"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -859,6 +1003,94 @@
       ],
       "answer": 0,
       "explanation": "Add the liquid-composition-weighted partial pressures: 80×2/3+40×1/3=66.67 kPa."
+    },
+    {
+      "question": "Ten moles of liquid initially contain 6 mol A. Removing 1 mol vapour with measured mean yA=0.80 leaves A amount:",
+      "options": [
+        "4.80 mol",
+        "5.20 mol",
+        "6.80 mol",
+        "0.80 mol"
+      ],
+      "answer": 1,
+      "explanation": "The removed vapour contains 0.80 mol A, leaving 6.00−0.80=5.20 mol."
+    },
+    {
+      "question": "The residual-liquid A mole fraction in that balance is approximately:",
+      "options": [
+        "0.800",
+        "0.600",
+        "0.578",
+        "0.520"
+      ],
+      "answer": 2,
+      "explanation": "Nine moles remain in total, so xA=5.20/9=0.5778."
+    },
+    {
+      "question": "A solvent-only membrane separates 0.010 mol and 0.020 mol non-electrolyte, each initially in 100 mL. At equal initial pressures solvent moves:",
+      "options": [
+        "Right to left",
+        "Equally in neither direction because volumes match",
+        "Only if solute crosses",
+        "Left to right in the stated ideal dilute model"
+      ],
+      "answer": 3,
+      "explanation": "The right concentration and osmotic pressure are higher; solvent initially moves toward it."
+    },
+    {
+      "question": "With equal final mechanical pressures and conserved additive total volume 200 mL, the ideal final right volume is:",
+      "options": [
+        "133.3 mL",
+        "100.0 mL",
+        "66.7 mL",
+        "200.0 mL"
+      ],
+      "answer": 0,
+      "explanation": "Equal final concentrations are 0.0300/0.200=0.150 M; right volume=0.0200/0.150=0.1333 L."
+    },
+    {
+      "question": "Wet gas total pressure is 5.00 bar, water contributes .040 bar, and dry gas yA=.250. The partial pressure pA is:",
+      "options": [
+        "1.25 bar",
+        "1.24 bar",
+        "4.96 bar",
+        "5.00 bar"
+      ],
+      "answer": 1,
+      "explanation": "Subtract water first, then use the dry fraction: .250(5.00−.040)=1.24 bar."
+    },
+    {
+      "question": "For pA=KH xA with KH=20000 bar and pA=1.24 bar, dissolved xA is:",
+      "options": [
+        "4.03×10⁻⁵",
+        "2.50×10⁻⁴",
+        "6.20×10⁻⁵",
+        "1.61×10⁴"
+      ],
+      "answer": 2,
+      "explanation": "The dimensionless dissolved fraction is 1.24/20000=6.20×10⁻⁵."
+    },
+    {
+      "question": "After removing 50.0 g water from .0100 mol nonvolatile solute in 200 g water, the unchanged dissolved solute has molality:",
+      "options": [
+        ".0500 mol/kg",
+        ".0400 mol/kg",
+        ".100 mol/kg",
+        ".0667 mol/kg"
+      ],
+      "answer": 3,
+      "explanation": "Remaining solvent is .150 kg; molality=.0100/.150=.0667 mol/kg."
+    },
+    {
+      "question": "For that final solution with i=1 and Kf=1.86 K kg/mol, the predicted freezing depression is:",
+      "options": [
+        ".124 K",
+        ".0930 K",
+        ".186 K",
+        "1.24 K"
+      ],
+      "answer": 0,
+      "explanation": "Use the remaining solvent: ΔTf=1.86×.0100/.150=.124 K."
     }
   ]
 }

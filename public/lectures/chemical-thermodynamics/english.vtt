@@ -1469,3 +1469,267 @@ Thermodynamic preference does not specify how quickly equilibrium is
 
 00:26:34.636 --> 00:26:34.896
 approached.
+
+00:26:36.432 --> 00:26:41.132
+A Born Haber cycle makes every intermediate in an ionic formation calculation
+
+00:26:41.132 --> 00:26:41.752
+explicit.
+
+00:26:42.752 --> 00:26:46.814
+Start with one mole of solid sodium and half a mole of gaseous chlorine,
+
+00:26:46.814 --> 00:26:47.152
+ending
+
+00:26:47.152 --> 00:26:49.312
+with one mole of solid sodium chloride.
+
+00:26:50.112 --> 00:26:54.537
+In a supplied teaching dataset, sodium sublimation costs one hundred eight
+
+00:26:54.537 --> 00:26:55.652
+kilojoules per mole.
+
+00:26:56.052 --> 00:26:59.312
+Its first ionization costs four hundred ninety six.
+
+00:26:59.312 --> 00:27:04.152
+Half the chlorine bond dissociation costs one hundred twenty two, and electron
+
+00:27:04.152 --> 00:27:08.012
+gain by gaseous chlorine releases three hundred forty nine.
+
+00:27:08.012 --> 00:27:11.312
+These signed stages total positive three hundred seventy seven kilojoules
+
+00:27:11.312 --> 00:27:12.912
+before lattice formation.
+
+00:27:13.912 --> 00:27:17.712
+If the standard formation enthalpy is negative four hundred eleven, gaseous
+
+00:27:17.712 --> 00:27:21.392
+ions must release seven hundred eighty eight kilojoules on forming the solid.
+
+00:27:22.612 --> 00:27:25.998
+Reversing that last arrow gives positive seven hundred eighty eight for
+
+00:27:25.998 --> 00:27:26.332
+lattice
+
+00:27:26.332 --> 00:27:27.052
+dissociation.
+
+00:27:27.572 --> 00:27:31.912
+The chlorine bond term is halved because the formation equation uses half a
+
+00:27:31.912 --> 00:27:33.652
+molecule of chlorine per formula unit.
+
+00:27:34.632 --> 00:27:38.332
+Electron gain is entered as a signed enthalpy change here, not as an unsigned
+
+00:27:38.332 --> 00:27:39.252
+affinity magnitude.
+
+00:27:40.352 --> 00:27:42.792
+State the arrow and convention before substituting any value.
+
+00:27:43.488 --> 00:27:47.848
+A constant heat capacity correction is a useful approximation, but a supplied
+
+00:27:47.848 --> 00:27:49.948
+temperature dependent function must be integrated.
+
+00:27:50.828 --> 00:27:53.268
+Keep the balanced reaction and its amount basis fixed.
+
+00:27:54.168 --> 00:27:58.488
+Suppose its product minus reactant heat capacity is ten plus zero point zero
+
+00:27:58.488 --> 00:28:02.128
+two zero times temperature, in joules per mole of reaction per kelvin.
+
+00:28:02.848 --> 00:28:06.228
+Take the standard reaction enthalpy at three hundred kelvin as negative fifty
+
+00:28:06.228 --> 00:28:07.628
+point zero kilojoules per mole.
+
+00:28:07.628 --> 00:28:11.848
+Between three hundred and five hundred kelvin, the constant term contributes
+
+00:28:11.848 --> 00:28:13.208
+two thousand joules per mole.
+
+00:28:14.088 --> 00:28:18.008
+The linear term integrates to zero point zero one zero times the difference of
+
+00:28:18.008 --> 00:28:21.528
+the squared temperatures, adding one thousand six hundred joules per mole.
+
+00:28:22.808 --> 00:28:26.968
+The total correction is positive three point six zero kilojoules, making the
+
+00:28:26.968 --> 00:28:30.948
+new enthalpy negative forty six point four zero.
+
+00:28:30.948 --> 00:28:34.648
+Do not insert one endpoint heat capacity into the constant formula and call it
+
+00:28:34.648 --> 00:28:35.448
+an exact integral.
+
+00:28:35.988 --> 00:28:39.708
+This supplied linear model is valid only over its stated interval with
+
+00:28:39.708 --> 00:28:40.488
+unchanged phases.
+
+00:28:41.208 --> 00:28:44.788
+A phase transition or different reaction normalization requires additional
+
+00:28:44.788 --> 00:28:47.708
+accounting rather than silently extending the same polynomial.
+
+00:28:48.240 --> 00:28:52.800
+Consider one mole each of two chemically different ideal gases, initially
+
+00:28:52.800 --> 00:28:54.760
+separated at the same temperature and pressure.
+
+00:28:55.580 --> 00:28:57.040
+Their starting volumes are equal.
+
+00:28:58.220 --> 00:29:01.520
+Removing the partition lets each component spread into twice its initial
+
+00:29:01.520 --> 00:29:01.860
+volume.
+
+00:29:02.840 --> 00:29:06.700
+A reversible reference expansion for each gas gives an entropy increase of the
+
+00:29:06.700 --> 00:29:09.000
+gas constant times the natural logarithm of two.
+
+00:29:09.980 --> 00:29:13.720
+Adding the contributions gives about eleven point five three joules per kelvin
+
+00:29:13.720 --> 00:29:15.100
+for the two mole sample.
+
+00:29:15.680 --> 00:29:19.360
+This is a total entropy change, not a value per mole of mixture.
+
+00:29:20.180 --> 00:29:24.260
+At three hundred kelvin the corresponding ideal mixing Gibbs change is about
+
+00:29:24.260 --> 00:29:28.220
+negative three point four six kilojoules, since ideal mixing at fixed
+
+00:29:28.220 --> 00:29:30.140
+temperature has zero enthalpy change.
+
+00:29:31.180 --> 00:29:35.560
+The spontaneous partition removal itself need not be reversible; entropy is
+
+00:29:35.560 --> 00:29:36.980
+evaluated through a reference path.
+
+00:29:37.540 --> 00:29:41.580
+If both compartments instead contain the same gas at identical temperature and
+
+00:29:41.580 --> 00:29:46.000
+pressure, removing their artificial partition creates no thermodynamic mixing
+
+00:29:46.000 --> 00:29:46.400
+entropy.
+
+00:29:47.500 --> 00:29:51.480
+Do not label identical particles as different chemical components simply to
+
+00:29:51.480 --> 00:29:52.340
+force a positive answer.
+
+00:29:53.340 --> 00:29:57.060
+Real gas interactions or unequal initial conditions require a different
+
+00:29:57.060 --> 00:29:57.540
+calculation.
+
+00:29:58.008 --> 00:30:01.788
+An equilibrium constant belongs to a written reaction at a specified
+
+00:30:01.788 --> 00:30:02.288
+temperature.
+
+00:30:03.428 --> 00:30:06.828
+Standard reaction Gibbs energy is also tied to that stoichiometric
+
+00:30:06.828 --> 00:30:07.588
+normalization.
+
+00:30:08.828 --> 00:30:12.448
+Suppose an original reaction has dimensionless equilibrium constant nine.
+
+00:30:13.508 --> 00:30:17.368
+Doubling every coefficient doubles its standard reaction Gibbs energy, so the
+
+00:30:17.368 --> 00:30:21.148
+new constant is eighty one, not eighteen.
+
+00:30:21.148 --> 00:30:24.268
+Reversing the original reaction changes the sign of its standard Gibbs energy
+
+00:30:24.268 --> 00:30:27.048
+and gives one ninth for its equilibrium constant.
+
+00:30:28.328 --> 00:30:31.608
+Halving the original coefficients instead gives the square root, which is
+
+00:30:31.608 --> 00:30:31.868
+three.
+
+00:30:33.068 --> 00:30:37.866
+These operations follow from standard reaction Gibbs energy equals negative R
+
+00:30:37.866 --> 00:30:37.928
+T
+
+00:30:37.928 --> 00:30:39.668
+times the natural logarithm of K.
+
+00:30:40.468 --> 00:30:44.168
+Multiplying an energy therefore multiplies the logarithm, rather than the
+
+00:30:44.168 --> 00:30:44.668
+constant itself.
+
+00:30:45.428 --> 00:30:49.728
+This bookkeeping does not change the physical equilibrium mixture: the new
+
+00:30:49.728 --> 00:30:53.348
+quotient is transformed by the same power, and it still equals the matching
+
+00:30:53.348 --> 00:30:54.468
+constant at equilibrium.
+
+00:30:55.388 --> 00:30:58.928
+Keep temperature fixed throughout the comparison and use dimensionless
+
+00:30:58.928 --> 00:31:00.128
+thermodynamic activities.
+
+00:31:01.548 --> 00:31:04.908
+Merely changing the initial amounts without changing the written reaction does
+
+00:31:04.908 --> 00:31:06.108
+not rescale its constant.
+
+00:31:07.228 --> 00:31:11.128
+Distinguish equation normalization from changing temperature or from moving a
+
+00:31:11.128 --> 00:31:12.068
+mixture away from equilibrium.
