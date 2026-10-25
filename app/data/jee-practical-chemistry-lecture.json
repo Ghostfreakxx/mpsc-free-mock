@@ -53,6 +53,10 @@
     {
       "title": "Royal Society of Chemistry: iodine clock reaction",
       "url": "https://edu.rsc.org/experiments/iodine-clock-reaction-demonstration-method/744.article"
+    },
+    {
+      "title": "OpenStax: precipitation and dissolution equilibria",
+      "url": "https://openstax.org/books/chemistry-2e/pages/15-1-precipitation-and-dissolution"
     }
   ],
   "chapters": [
@@ -790,6 +794,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Gravimetry converts precipitate mass into analyte mass",
+      "formula": "n(SO₄²⁻)=m(BaSO₄,corrected)/M(BaSO₄); sulfate mass is not precipitate mass",
+      "script": "A gravimetric precipitate contains the analyte plus atoms supplied by the precipitating reagent. In a supplied sulfate analysis, a zero point six zero zero zero gram sample gives a measured barium sulfate mass zero point four seven one zero gram. A matched additive blank contributes zero point zero zero five zero gram, leaving corrected precipitate mass zero point four six six zero. Use the supplied rounded barium sulfate molar mass two hundred thirty three grams per mole. The corrected precipitate represents zero point zero zero two zero zero zero mole sulfate, since each formula unit contains one sulfate. Multiplying by the sulfate molar mass ninety six gives zero point one nine two gram sulfate, or thirty two point zero percent of the original sample. Calling the entire precipitate mass sulfate would count the added barium as analyte. This result assumes the isolated material has the stated composition, quantitative recovery and a valid blank correction. Retained liquid or coprecipitated material can bias mass upward, whereas incomplete precipitation or transfer loss can bias it downward. A larger recovered mass does not automatically demonstrate a more accurate analysis.",
+      "points": [
+        "Sample .6000 g; precipitate .4710 g · Subtract matched blank .0050 g · Corrected BaSO₄ .4660 g",
+        "MBaSO₄=233; MSO₄=96 · n=.4660/233=.002000 mol · Sulfate mass .1920 g",
+        "Mass fraction = .1920/.6000 · Added Ba is not sulfate · 32.0% sulfate by mass"
+      ],
+      "board": {
+        "heading": "Gravimetry converts precipitate mass into analyte mass",
+        "columns": [
+          "Specified model",
+          "Count / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Sample .6000 g; precipitate .4710 g",
+            "Subtract matched blank .0050 g",
+            "Corrected BaSO₄ .4660 g"
+          ],
+          [
+            "MBaSO₄=233; MSO₄=96",
+            "n=.4660/233=.002000 mol",
+            "Sulfate mass .1920 g"
+          ],
+          [
+            "Mass fraction = .1920/.6000",
+            "Added Ba is not sulfate",
+            "32.0% sulfate by mass"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Selective precipitation starts with free-ion thresholds",
+      "formula": "At onset: Ksp=[Mⁿ⁺][OH⁻]ⁿ; pH model uses Kw=10⁻¹⁴ at 25 °C",
+      "script": "Selective precipitation needs a defined free ion model rather than a colour observation alone. Take initial free iron three and magnesium two concentrations both zero point zero one zero zero molar. Use supplied idealized solubility products ten to the negative thirty eight for iron hydroxide and ten to the negative eleven for magnesium hydroxide, with water ion product ten to the negative fourteen at twenty five degrees Celsius. The iron hydroxide onset requires hydroxide concentration equal to the cube root of ten to the negative thirty six, or ten to the negative twelve molar. That corresponds to p H two. Magnesium hydroxide onset instead needs the square root of ten to the negative nine, about three point one six times ten to the negative five molar, giving p H nine point five. In this simplified comparison a p H of five can precipitate iron hydroxide without reaching magnesium hydroxide saturation. These are onset and selectivity calculations, not a complete salt analysis protocol. Metal hydrolysis, other complexes, activities and changing free ion concentrations can alter real boundaries. Use the hydroxide stoichiometric exponent before comparing two numerical solubility products.",
+      "points": [
+        "Initial free metal: .0100 M each · Fe(OH)₃: Ksp=10⁻³⁸ · Onset [OH⁻]=10⁻¹²; pH 2",
+        "Mg(OH)₂: Ksp=10⁻¹¹ · [OH⁻]=√10⁻⁹ · Onset pH 9.5",
+        "At pH 5 in stated ideal model · Fe precipitates; Mg unsaturated · Complexation can change boundaries"
+      ],
+      "board": {
+        "heading": "Selective precipitation starts with free-ion thresholds",
+        "columns": [
+          "Specified model",
+          "Count / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Initial free metal: .0100 M each",
+            "Fe(OH)₃: Ksp=10⁻³⁸",
+            "Onset [OH⁻]=10⁻¹²; pH 2"
+          ],
+          [
+            "Mg(OH)₂: Ksp=10⁻¹¹",
+            "[OH⁻]=√10⁻⁹",
+            "Onset pH 9.5"
+          ],
+          [
+            "At pH 5 in stated ideal model",
+            "Fe precipitates; Mg unsaturated",
+            "Complexation can change boundaries"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Standardize the titrant before using its concentration",
+      "formula": "Primary-standard acid amount → standardized NaOH → unknown acid equivalents",
+      "script": "A titrant label is not a substitute for a measured concentration. In a supplied standardization dataset, zero point five one zero five gram of pure potassium hydrogen phthalate, abbreviated K H P, is neutralized by twenty five point zero zero millilitres of sodium hydroxide. Use molar mass two hundred four point two grams per mole and one neutralizable proton per formula unit. The standard amount is zero point zero zero two five zero zero mole, so sodium hydroxide concentration is zero point one zero zero zero molar. Now a separate zero point two five zero zero gram sample of a pure diprotic acid consumes twenty point zero zero millilitres of this base at the stipulated complete two proton equivalence. The base amount is zero point zero zero two zero zero zero mole, corresponding to zero point zero zero one zero zero zero mole acid. Its inferred molar mass is two hundred fifty grams per mole. The second calculation uses the standardized concentration and the acid's two equivalent stoichiometry. It assumes complete neutralization, a suitable endpoint and no other base consuming species. These are original data interpretation exercises rather than instructions to prepare either solution.",
+      "points": [
+        "KHP .5105 g; M=204.2 · One acid equivalent per mole · n=.002500 mol",
+        "NaOH volume .02500 L · C=.002500/.02500 · .1000 mol/L NaOH",
+        "H₂A .2500 g uses .02000 L · nacid=nOH/2=.001000 mol · M(H₂A)=250 g/mol"
+      ],
+      "board": {
+        "heading": "Standardize the titrant before using its concentration",
+        "columns": [
+          "Specified model",
+          "Count / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "KHP .5105 g; M=204.2",
+            "One acid equivalent per mole",
+            "n=.002500 mol"
+          ],
+          [
+            "NaOH volume .02500 L",
+            "C=.002500/.02500",
+            ".1000 mol/L NaOH"
+          ],
+          [
+            "H₂A .2500 g uses .02000 L",
+            "nacid=nOH/2=.001000 mol",
+            "M(H₂A)=250 g/mol"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Back titration subtracts amounts before applying ratios",
+      "formula": "Acid consumed by carbonate = acid added − residual acid; n(CaCO₃)=n(H⁺ consumed)/2",
+      "script": "Back titration determines an analyte from a known excess reagent and the amount left afterward. Consider a supplied one point zero zero zero gram sample containing calcium carbonate and an acid inert residue. It consumes part of twenty five point zero zero millilitres of one point zero zero zero molar hydrochloric acid. A separate residual strong acid determination requires fifteen point zero zero millilitres of zero point five zero zero zero molar sodium hydroxide. Initial acid amount is zero point zero two five zero zero mole and residual acid zero point zero zero seven five zero zero mole. Their difference is zero point zero one seven five zero mole of hydrogen ions consumed by carbonate. Each calcium carbonate consumes two hydrogen ions to give calcium ions, carbon dioxide and water. The carbonate amount is therefore zero point zero zero eight seven five zero mole. Using rounded molar mass one hundred gives zero point eight seven five zero gram carbonate, or eighty seven point five percent purity. This stated model excludes other acid consuming impurities and interference from dissolved carbon dioxide in the residual acid measurement. Subtracting the two volumes directly would be wrong because their concentrations differ.",
+      "points": [
+        "Added HCl: .02500 L × 1.000 · Residual: .01500 L × .5000 · Consumed H⁺=.01750 mol",
+        "CaCO₃ + 2H⁺ reaction · nCaCO₃=.01750/2 · .008750 mol carbonate",
+        "MCaCO₃=100; sample 1.000 g · Carbonate mass .8750 g · 87.5% purity; stated interference limits"
+      ],
+      "board": {
+        "heading": "Back titration subtracts amounts before applying ratios",
+        "columns": [
+          "Specified model",
+          "Count / calculation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Added HCl: .02500 L × 1.000",
+            "Residual: .01500 L × .5000",
+            "Consumed H⁺=.01750 mol"
+          ],
+          [
+            "CaCO₃ + 2H⁺ reaction",
+            "nCaCO₃=.01750/2",
+            ".008750 mol carbonate"
+          ],
+          [
+            "MCaCO₃=100; sample 1.000 g",
+            "Carbonate mass .8750 g",
+            "87.5% purity; stated interference limits"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1144,6 +1288,94 @@
       ],
       "answer": 0,
       "explanation": "The same conversion in half the time gives twice the average formation rate; this does not by itself determine a rate constant."
+    },
+    {
+      "question": "A .4710 g BaSO4 measurement includes a matched additive .0050 g blank. Corrected precipitate mass is:",
+      "options": [
+        ".4760 g",
+        ".4660 g",
+        ".0050 g",
+        ".1920 g"
+      ],
+      "answer": 1,
+      "explanation": "Subtract the specified additive blank from measured precipitate mass."
+    },
+    {
+      "question": "For .4660 g corrected BaSO4 with M=233 g/mol, MSO4=96 g/mol and .6000 g sample, sulfate mass percentage is:",
+      "options": [
+        "77.7%",
+        "46.6%",
+        "32.0%",
+        "19.2%"
+      ],
+      "answer": 2,
+      "explanation": "Sulfate amount=.4660/233=.002000 mol; sulfate mass=.1920 g; percentage=.1920/.6000×100=32.0%."
+    },
+    {
+      "question": "For free [Fe3+]=.0100 M and supplied Ksp(Fe(OH)3)=10⁻³⁸, onset [OH−] is:",
+      "options": [
+        "10⁻¹⁸ M",
+        "10⁻⁹ M",
+        "10⁻⁶ M",
+        "10⁻¹² M"
+      ],
+      "answer": 3,
+      "explanation": "Solve [OH−]³=10⁻³⁸/.0100=10⁻³⁶, giving [OH−]=10⁻¹² M."
+    },
+    {
+      "question": "For free [Mg2+]=.0100 M, Ksp(Mg(OH)2)=10⁻¹¹ and Kw=10⁻¹⁴, the ideal onset pH is:",
+      "options": [
+        "9.5",
+        "2.0",
+        "4.5",
+        "12.0"
+      ],
+      "answer": 0,
+      "explanation": "[OH−]=√(10⁻¹¹/.0100)=10⁻⁴·⁵; pH=14−4.5=9.5."
+    },
+    {
+      "question": "Pure monoprotic KHP .5105 g, M=204.2 g/mol, consumes 25.00 mL NaOH. The standardized NaOH concentration is:",
+      "options": [
+        ".01000 M",
+        ".1000 M",
+        "1.000 M",
+        ".2000 M"
+      ],
+      "answer": 1,
+      "explanation": "KHP amount=.002500 mol; the 1:1 neutralization gives CNaOH=.002500/.02500=.1000 M."
+    },
+    {
+      "question": "A pure diprotic acid sample .2500 g consumes 20.00 mL of that .1000 M base at complete two-proton equivalence. Its molar mass is:",
+      "options": [
+        "125 g/mol",
+        "500 g/mol",
+        "250 g/mol",
+        "25.0 g/mol"
+      ],
+      "answer": 2,
+      "explanation": "The base amount is .002000 mol, so acid amount is half that; M=.2500/.001000=250 g/mol."
+    },
+    {
+      "question": "Back titration adds .02500 mol HCl and finds .007500 mol residual strong acid. Hydrogen ions consumed by the sample are:",
+      "options": [
+        ".03250 mol",
+        ".007500 mol",
+        ".02500 mol",
+        ".01750 mol"
+      ],
+      "answer": 3,
+      "explanation": "Subtract amounts: .02500−.007500=.01750 mol H+ consumed."
+    },
+    {
+      "question": "If only CaCO3 consumes that .01750 mol H+ in a 1.000 g sample, using MCaCO3=100 g/mol, purity is:",
+      "options": [
+        "87.5%",
+        "175%",
+        "43.75%",
+        "17.5%"
+      ],
+      "answer": 0,
+      "explanation": "Each carbonate consumes two protons; .008750 mol corresponds to .8750 g or 87.5% of the sample."
     }
   ]
 }

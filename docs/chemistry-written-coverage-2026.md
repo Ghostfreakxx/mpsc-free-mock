@@ -27,7 +27,7 @@ Questions are original practice, not represented as official PYQs.
 | 9 | [Periodic Trends](/jee/classes/periodic-trends) | 21 | 19 | 12 | 32 / 32 |
 | 10 | [P-Block](/jee/classes/p-block) | 23 | 21 | 12 | 34 / 34 |
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 23 | 21 | 12 | 34 / 34 |
-| 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 18 | 21 | 16 | 34 / 34 |
+| 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 22 | 25 | 19 | 42 / 42 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 21 | 21 | 12 | 32 / 32 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 21 | 24 | 17 | 36 / 36 |
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 21 | 21 | 12 | 32 / 32 |
@@ -35,17 +35,15 @@ Questions are original practice, not represented as official PYQs.
 | 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 27 | 25 | 15 | 40 / 40 |
 | 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 25 | 25 | 15 | 40 / 40 |
 | 19 | [Biomolecules](/jee/classes/biomolecules) | 25 | 25 | 15 | 40 / 40 |
-| 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 21 | 21 | 12 | 32 / 32 |
+| 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 25 | 25 | 15 | 40 / 40 |
 
 ## Latest expansion
 
-Organic Oxygen adds nitrophenol intramolecular hydrogen bonding, HVZ alpha-halogenation, crossed Cannizzaro carbon ledgers and a supporting acetal-protection map.
+Coordination Compounds adds ideal octahedral d4 energy and spin accounting, bridging-ligand contacts, bis-chelate geometrical versus optical counts and formation strength versus labelled-ligand exchange kinetics.
 
-Organic Nitrogen adds nitro-reduction electron/proton accounting, a supporting Hofmann elimination distinction, nitration under changing protonation states and aniline/Lewis-acid incompatibility.
+Practical Chemistry adds gravimetric sulfate with a matched blank, ideal selective hydroxide-precipitation thresholds, titrant standardization transferred to an unknown diprotic acid and carbonate back-titration purity. Supplied data and interference assumptions are explicit; these are conceptual analyses rather than unsupervised laboratory procedures.
 
-Biomolecules adds glucose oxidation evidence, labelled Fischer epimer comparisons, disulfide versus peptide connectivity and separate DNA backbone/base-pair counts. Supporting reaction maps are not presented as additional compulsory syllabus coverage.
-
-Together this batch adds twelve narrated chapters, twenty-four original MCQs and nine worked examples, with matching written companions and recorded practice.
+Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
 ## Remaining scope
 
@@ -59,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific primary references, including IIT Kanpur SATHEE/NCERT and CBSE teaching material, OpenStax organic reaction and biomolecule texts, Kwantlen Polytechnic University carbohydrate teaching notes and Essentials of Glycobiology. Numerical datasets and MCQs in this batch are original practice.
+The notes contain lesson-specific primary references, including OpenStax coordination fields, quantitative analysis, precipitation and titration; IUPAC bridging-ligand terminology; University of Sargodha stereoisomerism; and Karpagam Academy ligand-substitution notes. Numerical datasets and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

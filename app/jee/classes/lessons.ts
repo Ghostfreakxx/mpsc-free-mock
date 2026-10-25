@@ -1123,7 +1123,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "coordination-compounds", subject: "Chemistry", unit: 12, number: "C02", title: coordinationCompounds.title,
-    description: "Eighteen narrated chapters on ligands, isomerism, d5 spin energies, absorption wavelengths, ligand competition, chelation and formation constants.",
+    description: "Twenty-two narrated chapters on ligands, d4 and d5 spin energies, bridging contacts, bis-chelate stereochemistry, spectroscopy and formation versus exchange.",
     scope: "Recorded Unit 12 foundation and worked applications with original practice. Detailed optical-isomer models, extended nomenclature and quantitative extraction/analysis sequences remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.coordination-compounds.lecture.v1",
     audio: "/lectures/coordination-compounds/narration-marin.mp3",
@@ -1283,7 +1283,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "practical-chemistry", subject: "Chemistry", unit: 20, number: "C18", title: practicalChemistry.title,
-    description: "Twenty-one narrated chapters on titration corrections, indicator selection, carbonate endpoints, aliquot assays, iodine-clock observations and experimental evidence.",
+    description: "Twenty-five narrated chapters on gravimetric sulfate, precipitation thresholds, standardization, back titration, indicators, clock observations and experimental evidence.",
     scope: "Recorded Unit 20 conceptual foundation with original practice. Full ion-analysis schemes, all preparation equations, indicator curves, sol preparation and further kinetic datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.practical-chemistry.lecture.v1",
     audio: "/lectures/practical-chemistry/narration-marin.mp3",

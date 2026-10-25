@@ -7,7 +7,7 @@ test('amine questions retain substrate limits, dry gas units and nitrogen ledger
  assert.match(a(n,20),/adjacent carbonyl/);assert.equal(a(n,21),'Oxygen');assert.equal(a(n,22),'Two');assert.equal(a(n,23),String(6+6));
 });
 test('practical calculations conserve target mass, hydrate formula units and titration electrons',()=>{
- assert.deepEqual(p.quiz.slice(16).map(q=>q.answer),[1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]);
+ assert.deepEqual(p.quiz.slice(16).map(q=>q.answer),[1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]);
  const dissolved=5*50/100,recovered=10-dissolved;assert.equal(a(p,16),`${dissolved.toFixed(2)} g`);assert.equal(a(p,17),`${100*recovered/10}%`);
  const formalC=(3.92/392)/.250;assert.equal(a(p,18),`${formalC.toFixed(4)} M`);assert.equal(a(p,19),`${(formalC*.0250/5/.0200*1000).toFixed(1)} mL`);
  assert.equal(a(p,21),`${(123-1).toFixed(1)} °C`);assert.equal(a(p,22),'Cations');
