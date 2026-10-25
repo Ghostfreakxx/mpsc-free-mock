@@ -1,8 +1,12 @@
+import CombustionVolumeDiagram from './combustion-volume-diagram';
+import TransDiaxialSiteDiagram from './trans-diaxial-site-diagram';
 import hydrocarbons from "../../data/jee-hydrocarbons-lecture.json";
 import organicHalogens from "../../data/jee-organic-halogens-lecture.json";
 import styles from "./lecture.module.css";
 
 export default function OrganicReactionDiagram({lesson,chapter}:{lesson:"hydrocarbons"|"organic-halogens";chapter:number}) {
+ if(lesson==='hydrocarbons'&&chapter===24)return <CombustionVolumeDiagram/>;
+ if(lesson==='organic-halogens'&&chapter===21)return <TransDiaxialSiteDiagram/>;
  const board=(lesson==="hydrocarbons"?hydrocarbons:organicHalogens).chapters[chapter].board;
  if(lesson==='hydrocarbons'&&chapter===11)return <svg className={styles.diagram} viewBox="0 0 460 330" role="img" aria-label="Benzene positions: methyl directs ortho and para; nitro directs meta">
   <title>Electrophilic substitution: relative positions</title><rect width="460" height="330" rx="12" fill="#f5faf7"/>

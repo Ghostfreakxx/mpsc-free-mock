@@ -49,6 +49,22 @@
     {
       "title": "OpenStax: substituent effects in electrophilic substitutions",
       "url": "https://openstax.org/books/organic-chemistry/pages/16-4-substituent-effects-in-electrophilic-substitutions"
+    },
+    {
+      "title": "OpenStax: E2 reactions and cyclohexane conformation",
+      "url": "https://openstax.org/books/organic-chemistry/pages/11-9-the-e2-reaction-and-cyclohexane-conformation"
+    },
+    {
+      "title": "University of Delaware: silver nitrate and alkyl-halide evidence",
+      "url": "https://www1.udel.edu/chem/CHEM322/Handouts/unknowns_lab_handout.pdf"
+    },
+    {
+      "title": "Michigan State University: silver-assisted alkyl-halide ionization",
+      "url": "https://www2.chemistry.msu.edu/faculty/reusch/VirtTxtJml/alhalrx2.htm"
+    },
+    {
+      "title": "IIT Kanpur SATHEE: qualitative halogen analysis",
+      "url": "https://sathee.iitk.ac.in/important-formula/chemistry/qualitative_analysis/"
     }
   ],
   "chapters": [
@@ -790,6 +806,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "A cyclohexane E2 pathway needs the right axial hydrogen",
+      "formula": "Ordinary chair E2: axial leaving group and anti-periplanar axial β-H on a neighbouring carbon",
+      "script": "Chair geometry can restrict elimination before alkene substitution preferences are compared. In the ordinary cyclohexane chair E two model, a leaving group and the removed beta hydrogen must be trans diaxial: axial on adjacent carbons and pointing in opposite directions. Consider a supplied chair with bromine axial up at carbon one. Carbon two has methyl axial down, so its hydrogen is equatorial and cannot supply the required axial hydrogen on that side. Carbon six instead has an axial down hydrogen. Elimination can therefore form the bond between carbons one and six in this chair, rather than the more substituted alternative between one and two. The methyl group occupies a needed hydrogen position; it does not itself become a leaving group. If bromine is equatorial in another chair, the ordinary trans diaxial pathway requires a suitable ring flip first. A flip exchanges axial and equatorial positions while retaining each substituent's up or down identity. This is an analysis of the supplied chair geometry, not a universal rule that the most substituted alkene always wins or that all equatorial halides are permanently unable to eliminate.",
+      "points": [
+        "C1: Br axial up · Adjacent β-H must be axial down · Trans-diaxial requirement",
+        "C2: CH₃ axial down · C2-H is equatorial · C1=C2 route blocked in this chair",
+        "C6: H axial down · Eligible C1 / C6 pair · Geometry checked before substitution rule"
+      ],
+      "board": {
+        "heading": "A cyclohexane E2 pathway needs the right axial hydrogen",
+        "columns": [
+          "Specified structure",
+          "Reaction / observation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "C1: Br axial up",
+            "Adjacent β-H must be axial down",
+            "Trans-diaxial requirement"
+          ],
+          [
+            "C2: CH₃ axial down",
+            "C2-H is equatorial",
+            "C1=C2 route blocked in this chair"
+          ],
+          [
+            "C6: H axial down",
+            "Eligible C1 / C6 pair",
+            "Geometry checked before substitution rule"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Solvent changes nucleophile availability in SN2",
+      "formula": "Polar protic solvation can suppress anionic nucleophilicity; polar aprotic media often favour suitable SN2 reactions",
+      "script": "A nucleophile ranking must state the solvent and the reaction being compared. Polar protic solvents such as water or alcohols can form hydrogen bond shells around anionic nucleophiles. This stabilization can reduce their availability for backside attack on a suitable alkyl substrate. Polar aprotic solvents such as acetone or dimethyl sulfoxide often support faster S N two reactions of suitable dissolved anionic nucleophiles, because the solvation environment is different. Do not call those anions completely unsolvated or infer an identical rate increase for every salt. Counterions, solubility, substrate crowding, temperature and competing elimination still matter. In an original matched rate dataset, let the same substrate and nucleophile concentrations give rate constant zero point zero one zero and zero point two zero zero litre per mole per second in two stated solvents. The second reaction is twenty times faster at the same concentrations, but this ratio is supplied evidence for that comparison rather than a universal solvent constant. Basicity concerns proton acceptance, while nucleophilicity concerns reaction with the electrophilic substrate; the two descriptors need not give one solvent independent ordering.",
+      "points": [
+        "Polar protic medium · Hydrogen-bond solvation of anions · Can reduce SN2 availability",
+        "Polar aprotic comparison · Different ion-solvation environment · Often faster for suitable dissolved anions",
+        "Supplied k: .010 vs .200 L/(mol s) · Matched concentrations; ratio .200/.010 · 20-fold rate ratio, not universal"
+      ],
+      "board": {
+        "heading": "Solvent changes nucleophile availability in SN2",
+        "columns": [
+          "Specified structure",
+          "Reaction / observation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Polar protic medium",
+            "Hydrogen-bond solvation of anions",
+            "Can reduce SN2 availability"
+          ],
+          [
+            "Polar aprotic comparison",
+            "Different ion-solvation environment",
+            "Often faster for suitable dissolved anions"
+          ],
+          [
+            "Supplied k: .010 vs .200 L/(mol s)",
+            "Matched concentrations; ratio .200/.010",
+            "20-fold rate ratio, not universal"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Silver-nitrate timing probes halide release, not total halogen",
+      "formula": "RX must release X⁻ before Ag⁺ + X⁻ → AgX; observation depends on the whole test system",
+      "script": "A silver halide precipitate reports available halide ions, not merely a halogen atom somewhere in an organic formula. In a supplied silver nitrate in ethanol comparison, ionization prone tertiary, benzylic or allylic halides may release halide more readily than an ordinary primary substrate. Silver ion can itself assist halide departure, so this is not a measurement of an entirely unaffected isolated carbon halogen bond. Aryl and vinyl halides do not follow the same ordinary ionization pathway. A negative or slow result therefore does not prove that an unknown contains no covalently bonded halogen. Time to visible precipitation also depends on temperature, solvent composition, concentrations, mixing and the detection threshold. Compare known reference compounds under matching conditions before assigning a structural class. The precipitate colour or its subsequent solubility may help distinguish the halide, but one timing observation alone does not uniquely identify an organic molecule or prove a single mechanism under all conditions. This chapter interprets a stipulated test system rather than giving an experimental recipe or transferring its ranking to a polar aprotic S N two reaction.",
+      "points": [
+        "Silver nitrate / ethanol comparison · Available X⁻ gives AgX · Halide must first be released",
+        "Ionization-prone substrates · Tertiary / benzylic / allylic can respond rapidly · System and reference conditions matter",
+        "Aryl or vinyl halide may respond poorly · Slow result ≠ no organic halogen · Do not transplant ranking to SN2"
+      ],
+      "board": {
+        "heading": "Silver-nitrate timing probes halide release, not total halogen",
+        "columns": [
+          "Specified structure",
+          "Reaction / observation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Silver nitrate / ethanol comparison",
+            "Available X⁻ gives AgX",
+            "Halide must first be released"
+          ],
+          [
+            "Ionization-prone substrates",
+            "Tertiary / benzylic / allylic can respond rapidly",
+            "System and reference conditions matter"
+          ],
+          [
+            "Aryl or vinyl halide may respond poorly",
+            "Slow result ≠ no organic halogen",
+            "Do not transplant ranking to SN2"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Elemental halogen evidence needs a clean ionic extract",
+      "formula": "Covalent organic halogen → prepared ionic extract; reagent chloride can create a false positive",
+      "script": "Elemental analysis and direct substitution tests answer different questions. In the standard sodium fusion concept, covalently bound halogen is converted into an ionic form so a prepared extract can be examined for chloride, bromide or iodide. Simply mixing an unchanged organochlorine compound with aqueous silver nitrate need not release its chlorine as chloride. The analysis scheme also needs controls on the reagents and interfering ions. Introducing hydrochloric acid would add chloride from outside the sample and could give silver chloride even when the sample contributed none. The prescribed nitric acid medium avoids that particular added chloride source. Cyanide or sulfide in an untreated extract can also interfere with silver precipitation, which is why the specified interference removal is part of the analytical scheme. This is interpretation of a prepared extract and its controls, not instructions for conducting sodium fusion or acid treatment. Once ionic chloride is independently established, the net precipitation equation is one silver ion plus one chloride giving one silver chloride formula unit. Keep the original organic molecule, the converted extract species and reagent contamination as three separate sources of evidence.",
+      "points": [
+        "Organic C–Cl is covalent · Prepared extract converts halogen to ions · Direct AgNO₃ may not detect it",
+        "HCl introduces external chloride · AgCl could come from reagent · Nitric acid avoids that chloride source",
+        "CN⁻ / S²⁻ can interfere · Use a controlled prepared-extract scheme · Ag⁺ + Cl⁻ → AgCl is 1:1"
+      ],
+      "board": {
+        "heading": "Elemental halogen evidence needs a clean ionic extract",
+        "columns": [
+          "Specified structure",
+          "Reaction / observation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Organic C–Cl is covalent",
+            "Prepared extract converts halogen to ions",
+            "Direct AgNO₃ may not detect it"
+          ],
+          [
+            "HCl introduces external chloride",
+            "AgCl could come from reagent",
+            "Nitric acid avoids that chloride source"
+          ],
+          [
+            "CN⁻ / S²⁻ can interfere",
+            "Use a controlled prepared-extract scheme",
+            "Ag⁺ + Cl⁻ → AgCl is 1:1"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1144,6 +1300,94 @@
       ],
       "answer": 3,
       "explanation": "Electrophilic ring substitution replaces a ring hydrogen; it is distinct from nucleophilic replacement of the aryl halogen."
+    },
+    {
+      "question": "The ordinary E2 requirement for a cyclohexane chair is:",
+      "options": [
+        "Any equatorial H and any halogen",
+        "A trans-diaxial leaving group and adjacent beta H",
+        "A beta methyl group acting as a leaving group",
+        "A planar aromatic ring"
+      ],
+      "answer": 1,
+      "explanation": "The usual anti-periplanar geometry in a chair requires appropriately opposed axial groups."
+    },
+    {
+      "question": "In the supplied chair, C1-Br is axial up, C2-CH3 axial down and C6-H axial down. Which new double bond is eligible?",
+      "options": [
+        "C1=C2 only",
+        "C2=C3 only",
+        "C1=C6",
+        "No bond can form even after all ring flips"
+      ],
+      "answer": 2,
+      "explanation": "The methyl group occupies the C2 axial site, but C6 provides the required axial beta H."
+    },
+    {
+      "question": "Why can a polar protic solvent slow a suitable anionic SN2 nucleophile?",
+      "options": [
+        "It always removes every electron",
+        "It converts every substrate into an aryl halide",
+        "It makes the reaction stoichiometry zero",
+        "Hydrogen-bond solvation can reduce the anion’s reaction availability"
+      ],
+      "answer": 3,
+      "explanation": "The effect concerns solvation of the reacting nucleophile, not a universal change in its identity."
+    },
+    {
+      "question": "Matched SN2 datasets have k=.010 and .200 L/(mol s) at equal reactant concentrations. The rate ratio second/first is:",
+      "options": [
+        "20",
+        "2",
+        ".05",
+        "2000"
+      ],
+      "answer": 0,
+      "explanation": "The concentration factors cancel in this specified comparison, leaving .200/.010=20."
+    },
+    {
+      "question": "A slow silver nitrate/ethanol response from chlorobenzene means:",
+      "options": [
+        "The molecule certainly contains no chlorine",
+        "The covalent aryl C–Cl does not release chloride readily through that ordinary test pathway",
+        "It is necessarily a primary alkyl chloride",
+        "All chloride salts also react equally slowly"
+      ],
+      "answer": 1,
+      "explanation": "Elemental presence is distinct from release of a free halide under a particular reaction system."
+    },
+    {
+      "question": "Which is a valid limitation of interpreting precipitation time?",
+      "options": [
+        "It uniquely identifies every organic structure",
+        "It is independent of temperature",
+        "It depends on solvent, concentration and the detection threshold as well as substrate",
+        "It directly counts total covalent halogen atoms without conversion"
+      ],
+      "answer": 2,
+      "explanation": "Timing observations need controlled comparisons and are not a universal mechanism or identity test."
+    },
+    {
+      "question": "A reagent blank contains .00100 mol HCl and excess Ag+. If chloride precipitates quantitatively, reagent-derived AgCl amount is:",
+      "options": [
+        "0 mol",
+        ".000500 mol",
+        ".00200 mol",
+        ".00100 mol"
+      ],
+      "answer": 3,
+      "explanation": "Added HCl supplies .00100 mol chloride, which can give .00100 mol AgCl even without sample-derived chloride."
+    },
+    {
+      "question": "The conceptual purpose of converting organic halogen into a prepared ionic extract is:",
+      "options": [
+        "To make ionic halide evidence accessible after controlled conversion",
+        "To add an extra carbon to every organic molecule",
+        "To prove all haloarenes undergo rapid SN1",
+        "To eliminate the need for interference controls"
+      ],
+      "answer": 0,
+      "explanation": "The original covalent species and the analyzable ionic halide are different forms; controls still matter."
     }
   ]
 }

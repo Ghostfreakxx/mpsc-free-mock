@@ -30,8 +30,8 @@ Questions are original practice, not represented as official PYQs.
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 22 | 25 | 19 | 42 / 42 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 21 | 21 | 12 | 32 / 32 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 21 | 24 | 17 | 36 / 36 |
-| 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 21 | 21 | 12 | 32 / 32 |
-| 16 | [Organic Halogens](/jee/classes/organic-halogens) | 21 | 21 | 12 | 32 / 32 |
+| 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 25 | 25 | 15 | 40 / 40 |
+| 16 | [Organic Halogens](/jee/classes/organic-halogens) | 25 | 25 | 15 | 40 / 40 |
 | 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 27 | 25 | 15 | 40 / 40 |
 | 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 25 | 25 | 15 | 40 / 40 |
 | 19 | [Biomolecules](/jee/classes/biomolecules) | 25 | 25 | 15 | 40 / 40 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Coordination Compounds adds ideal octahedral d4 energy and spin accounting, bridging-ligand contacts, bis-chelate geometrical versus optical counts and formation strength versus labelled-ligand exchange kinetics.
+Hydrocarbons adds anti-bromination meso versus racemic outcomes, complete alkyne oxidative-cleavage carbon ledgers, reversible aromatic sulfonation and ideal combustion gas-volume analysis.
 
-Practical Chemistry adds gravimetric sulfate with a matched blank, ideal selective hydroxide-precipitation thresholds, titrant standardization transferred to an unknown diprotic acid and carbonate back-titration purity. Supplied data and interference assumptions are explicit; these are conceptual analyses rather than unsupervised laboratory procedures.
+Organic Halogens adds trans-diaxial E2 site restrictions, solvent-specific SN2 evidence, interpretation limits of silver nitrate/ethanol observations and contamination/interference controls for prepared ionic extracts. The axial-site diagram explicitly represents the supplied site pattern rather than pretending to be a perspective chair.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific primary references, including OpenStax coordination fields, quantitative analysis, precipitation and titration; IUPAC bridging-ligand terminology; University of Sargodha stereoisomerism; and Karpagam Academy ligand-substitution notes. Numerical datasets and MCQs in this batch are original practice.
+The notes contain lesson-specific primary references, including OpenStax alkene addition, alkyne oxidation, aromatic substitution, SN2 solvent effects and cyclohexane E2; University of Delaware and Michigan State alkyl-halide teaching notes; and IIT Kanpur SATHEE qualitative-analysis material. Numerical datasets and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks
