@@ -45,6 +45,18 @@
     {
       "title": "OpenStax: multiple bonds and orbital overlap",
       "url": "https://openstax.org/books/chemistry-2e/pages/8-3-multiple-bonds"
+    },
+    {
+      "title": "Peter Chieh: molecular orbitals of hydrogen fluoride",
+      "url": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_%28Physical_and_Theoretical_Chemistry%29/Chemical_Bonding/Molecular_Orbital_Theory/MO_for_HF"
+    },
+    {
+      "title": "IUPAC: spectroscopic and ground-state bond dissociation energies",
+      "url": "https://goldbook.iupac.org/terms/view/BT07006"
+    },
+    {
+      "title": "OpenStax Chemistry: nitrogen dioxide and dimerization",
+      "url": "https://openstax.org/books/chemistry-2e/pages/18-7-occurrence-preparation-and-properties-of-nitrogen"
     }
   ],
   "chapters": [
@@ -784,6 +796,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Read a simplified heteronuclear HF orbital diagram",
+      "formula": "H 1s + axial F 2p → σ, σ*; eight valence electrons; approximate bond order 1",
+      "script": "A heteronuclear molecular orbital diagram must respect orbital symmetry and unequal atomic energies. Take the hydrogen fluoride bond as the z axis. In a supplied simplified valence model, hydrogen one s interacts most usefully with fluorine two p z to form a sigma bonding and a sigma antibonding orbital. The perpendicular fluorine two p x and two p y orbitals have the wrong symmetry for this overlap with hydrogen one s and are treated as nonbonding. The much deeper fluorine two s level is also treated as largely nonbonding in this introductory model. Hydrogen contributes one valence electron and fluorine seven. Place two in the low fluorine two s derived level, two in the sigma bond and four across the two perpendicular nonbonding orbitals. Sigma star remains empty. The bonding minus antibonding count divided by two gives bond order one, and every occupied orbital is paired, consistent with diamagnetism. The occupied molecular orbitals need not contain equal hydrogen and fluorine contributions. The diagram is qualitative and omits core electrons and detailed mixing; homonuclear gerade and ungerade labels do not apply to this unequal atom molecule.",
+      "points": [
+        "8 valence electrons; z along H–F · σ bonding 2; σ* empty · Approximate bond order 1",
+        "F 2pₓ and 2pᵧ perpendicular · Two nonbonding pairs · Symmetry blocks H 1s overlap",
+        "Deep F 2s largely nonbonding · All 8 valence electrons paired · Qualitative model; no g/u labels"
+      ],
+      "board": {
+        "heading": "Read a simplified heteronuclear HF orbital diagram",
+        "columns": [
+          "Stated model",
+          "Calculation / observation",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "8 valence electrons; z along H–F",
+            "σ bonding 2; σ* empty",
+            "Approximate bond order 1"
+          ],
+          [
+            "F 2pₓ and 2pᵧ perpendicular",
+            "Two nonbonding pairs",
+            "Symmetry blocks H 1s overlap"
+          ],
+          [
+            "Deep F 2s largely nonbonding",
+            "All 8 valence electrons paired",
+            "Qualitative model; no g/u labels"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Separate a bond well depth from its ground-state dissociation energy",
+      "formula": "D₀=Dₑ−Ezero-point; F=−dV/dr; equilibrium rₑ is a potential minimum",
+      "script": "A bond potential curve measures energy against internuclear separation, rather than plotting a reaction rate. Choose separated ground state atoms as zero potential energy. At very short distance, strong repulsion raises the curve; attraction lowers it toward a minimum at the equilibrium separation. At that minimum the slope is zero, so the net force is zero. This does not mean that separating the atoms costs no energy. The vertical depth from the minimum to separated atoms is called D e. A supporting quantum refinement recognizes that the lowest vibrational level lies above the minimum by its zero point energy. Dissociation from that level therefore requires D zero, equal to D e minus the zero point contribution. For illustrative values of four hundred fifty kilojoules per mole for the well depth and twenty five for the zero point energy, D zero is four hundred twenty five kilojoules per mole. These are supplied model values, not a measured bond assignment or an average bond enthalpy at an unspecified temperature. On the long distance side of the minimum the force attracts the atoms back; on the short distance side it pushes them apart.",
+      "points": [
+        "Separated atoms: V=0 · Minimum: V=−Dₑ at rₑ · Slope zero; bound molecule",
+        "Dₑ=450; zero-point=25 kJ/mol · D₀=450−25 · 425 kJ/mol",
+        "F=−dV/dr · Short side repulsive; long side attractive · D₀ differs from well depth"
+      ],
+      "board": {
+        "heading": "Separate a bond well depth from its ground-state dissociation energy",
+        "columns": [
+          "Stated model",
+          "Calculation / observation",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "Separated atoms: V=0",
+            "Minimum: V=−Dₑ at rₑ",
+            "Slope zero; bound molecule"
+          ],
+          [
+            "Dₑ=450; zero-point=25 kJ/mol",
+            "D₀=450−25",
+            "425 kJ/mol"
+          ],
+          [
+            "F=−dV/dr",
+            "Short side repulsive; long side attractive",
+            "D₀ differs from well depth"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "An odd electron changes the nitrogen dioxide comparison",
+      "formula": "NO₂⁺: 16; NO₂: 17; NO₂⁻: 18 valence electrons; 2NO₂ ⇌ N₂O₄",
+      "script": "Insert neutral nitrogen dioxide between the familiar nitronium and nitrite ions. Nitrogen contributes five valence electrons and two oxygens contribute twelve. Removing one electron gives sixteen for nitronium, leaving seventeen for neutral nitrogen dioxide and adding one gives eighteen for nitrite. The isolated neutral molecule therefore cannot have every electron paired. Its ground state is a bent radical and is paramagnetic. Nitronium is linear in the ordinary closed shell model, whereas nitrite is bent with a central lone pair. Do not assign the neutral radical a closed shell electron pair picture merely because it shares the same atom skeleton. Nor does a one electron change simply mean that one complete bond disappears. Two nitrogen dioxide radicals can combine to form dinitrogen tetroxide, whose usual ground state has paired electrons. Their gas mixture is an equilibrium composition that depends on temperature and pressure, so a sample's magnetic or colour observation need not correspond to pure isolated nitrogen dioxide molecules alone. Counting an odd number establishes at least one unpaired electron; it does not by itself determine the exact bond angle or every detail of the molecular orbital diagram.",
+      "points": [
+        "NO₂⁺ / NO₂ / NO₂⁻ · 16 / 17 / 18 valence electrons · Neutral NO₂ is an odd-electron radical",
+        "Usual isolated ground-state shapes · Linear / bent / bent · Do not treat odd electron as full lone pair",
+        "2NO₂ ⇌ N₂O₄ · Radical pairing in usual dimer · Sample composition depends on conditions"
+      ],
+      "board": {
+        "heading": "An odd electron changes the nitrogen dioxide comparison",
+        "columns": [
+          "Stated model",
+          "Calculation / observation",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "NO₂⁺ / NO₂ / NO₂⁻",
+            "16 / 17 / 18 valence electrons",
+            "Neutral NO₂ is an odd-electron radical"
+          ],
+          [
+            "Usual isolated ground-state shapes",
+            "Linear / bent / bent",
+            "Do not treat odd electron as full lone pair"
+          ],
+          [
+            "2NO₂ ⇌ N₂O₄",
+            "Radical pairing in usual dimer",
+            "Sample composition depends on conditions"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Compare ortho, meta and para dipoles with a stated vector model",
+      "formula": "Two equal radial bond dipoles μ: μnet=2μ|cos(θ/2)|; angles 60°,120°,180°",
+      "script": "A positional isomer comparison tests whether a vector rule survives a change in geometry. Use an explicitly idealized planar regular benzene ring with two equal outward radial carbon chlorine bond dipoles, and neglect other dipole contributions. Adjacent ortho substitution puts the two vectors sixty degrees apart, meta substitution gives one hundred twenty degrees, and opposite para substitution gives one hundred eighty degrees. The magnitude of their sum is twice the individual magnitude times the absolute cosine of half their angle. The predicted magnitudes are square root three times mu, mu, and zero, respectively. For an illustrative individual contribution of one point five zero debye, the model gives approximately two point six zero, one point five zero, and zero debye. Equal chemical bonds cancel only when their vectors oppose with matching magnitudes; their equality alone is insufficient. Para symmetry supports cancellation for the symmetric molecule, but the numerical ortho and meta estimates are model outputs, not guaranteed measured dipole moments. Real electron redistribution and geometry can modify local bond contributions. Changing one substituent also removes the equal vector assumption, so opposite placement by itself no longer guarantees cancellation.",
+      "points": [
+        "Ortho: θ=60° · 2μ cos30°=√3μ · For μ=1.50 D: 2.60 D",
+        "Meta: θ=120° · 2μ cos60°=μ · For μ=1.50 D: 1.50 D",
+        "Para: θ=180° · Equal opposite vectors cancel · Unequal substituents need a new sum"
+      ],
+      "board": {
+        "heading": "Compare ortho, meta and para dipoles with a stated vector model",
+        "columns": [
+          "Stated model",
+          "Calculation / observation",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "Ortho: θ=60°",
+            "2μ cos30°=√3μ",
+            "For μ=1.50 D: 2.60 D"
+          ],
+          [
+            "Meta: θ=120°",
+            "2μ cos60°=μ",
+            "For μ=1.50 D: 1.50 D"
+          ],
+          [
+            "Para: θ=180°",
+            "Equal opposite vectors cancel",
+            "Unequal substituents need a new sum"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1160,6 +1312,94 @@
       ],
       "answer": 3,
       "explanation": "Three C–H sigma bonds and three heavy-atom sigma connections give six; the double and triple bonds supply three pi bonds."
+    },
+    {
+      "question": "With the H–F axis chosen as z, which fluorine orbital has the appropriate symmetry for direct σ overlap with H 1s?",
+      "options": [
+        "F 2pₓ only",
+        "F 2pᵧ only",
+        "F 2p_z",
+        "Every 2p orbital equally"
+      ],
+      "answer": 2,
+      "explanation": "The axial 2p_z orbital has sigma symmetry; perpendicular 2p orbitals are nonbonding in the supplied simplified model."
+    },
+    {
+      "question": "In the supplied eight-valence-electron HF model, σ bonding has 2 electrons and σ* has 0. The prediction is:",
+      "options": [
+        "Bond order 0; all electrons unpaired",
+        "Bond order 2; paramagnetic",
+        "Bond order 4; no nonbonding electrons",
+        "Bond order 1; all occupied orbitals paired"
+      ],
+      "answer": 3,
+      "explanation": "The other six valence electrons occupy largely nonbonding levels; bond order=(2−0)/2=1."
+    },
+    {
+      "question": "An illustrative bond well has Dₑ=450 kJ/mol and zero-point energy 25 kJ/mol. Its D₀ is:",
+      "options": [
+        "425 kJ/mol",
+        "475 kJ/mol",
+        "225 kJ/mol",
+        "25 kJ/mol"
+      ],
+      "answer": 0,
+      "explanation": "D₀ is measured upward from the vibrational ground level rather than the potential minimum: 450−25=425."
+    },
+    {
+      "question": "At the minimum of a stable diatomic potential well, which statement is valid?",
+      "options": [
+        "Dissociation energy must be zero",
+        "Net force is zero although separating atoms still costs energy",
+        "The potential slope is positive and maximal",
+        "Both atoms have disappeared"
+      ],
+      "answer": 1,
+      "explanation": "F=−dV/dr vanishes at the minimum; the well remains below the separated-atom energy."
+    },
+    {
+      "question": "The valence electron counts for NO₂⁺, NO₂ and NO₂⁻, respectively, are:",
+      "options": [
+        "18, 17, 16",
+        "16, 16, 16",
+        "16, 17, 18",
+        "17, 18, 19"
+      ],
+      "answer": 2,
+      "explanation": "The neutral total is 5+2×6=17; positive charge removes and negative charge adds one electron."
+    },
+    {
+      "question": "An isolated neutral ground-state NO₂ molecule is:",
+      "options": [
+        "Linear and necessarily closed shell",
+        "Bent with all electrons paired",
+        "A noble-gas atom",
+        "A bent paramagnetic radical"
+      ],
+      "answer": 3,
+      "explanation": "Its odd electron count precludes complete pairing; its usual ground-state structure is bent."
+    },
+    {
+      "question": "For two equal radial dipoles μ on a regular ring, the ideal ortho:meta:para resultant magnitudes are:",
+      "options": [
+        "√3μ : μ : 0",
+        "0 : μ : √3μ",
+        "μ : μ : μ",
+        "2μ : 2μ : 2μ"
+      ],
+      "answer": 0,
+      "explanation": "The angles are 60°,120°,180°; insert each into 2μ|cos(θ/2)|."
+    },
+    {
+      "question": "Two opposed bond dipole vectors have magnitudes 1.5 D and 1.0 D. Their resultant magnitude in this two-vector model is:",
+      "options": [
+        "0 D",
+        "0.5 D",
+        "2.5 D",
+        "1.5 D"
+      ],
+      "answer": 1,
+      "explanation": "Opposed unequal vectors subtract in magnitude. Opposite placement alone does not establish cancellation."
     }
   ]
 }

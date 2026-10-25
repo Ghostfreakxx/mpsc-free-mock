@@ -45,6 +45,22 @@
     {
       "title": "OpenStax: photon energies and photon rates",
       "url": "https://openstax.org/books/college-physics-2e/pages/29-3-photon-energies-and-the-electromagnetic-spectrum"
+    },
+    {
+      "title": "University of Washington: hydrogen–deuterium isotope shift and reduced mass",
+      "url": "https://courses.washington.edu/phys432/HD/HD_mass_diff.php"
+    },
+    {
+      "title": "Daniel Fischer: hydrogen orbital nodes and radial structure",
+      "url": "https://fsch-d.github.io/mod3/orbitals.html"
+    },
+    {
+      "title": "OpenStax University Physics: the photoelectric effect",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/6-2-photoelectric-effect"
+    },
+    {
+      "title": "OpenStax University Physics: uncertainty principle",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/7-2-the-heisenberg-uncertainty-principle"
     }
   ],
   "chapters": [
@@ -786,6 +802,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Locate both radial nodes of hydrogen 3s",
+      "formula": "x=r/a₀; R ∝ (27−18x+2x²)e^(−x/3); nodes x=(9±3√3)/2",
+      "script": "A higher excited orbital can have several radial regions without describing several separate electrons. For hydrogen three s, use the supplied unnormalized radial factor: twenty seven minus eighteen x plus two x squared, multiplied by exponential minus x over three, where x is radius divided by the Bohr radius. The exponential never vanishes at a finite radius. Set the quadratic factor to zero instead. Its two positive roots are nine plus or minus three square root three, all divided by two: approximately one point nine zero and seven point one zero Bohr radii. These are spherical radial nodes, not angular planes. The signed radial factor changes from positive to negative and back to positive across those roots. Its square is never negative. Radial probability includes the additional radius squared factor, so it is zero at the origin even though the three s radial factor there is nonzero. The origin is not counted as an extra radial node. The quantum number rule predicts three minus zero minus one, or two radial nodes, agreeing with the supplied function. Probability peaks lie between zeros; a node is not a most probable radius.",
+      "points": [
+        "R polynomial: 2x²−18x+27 · Roots: 1.90 and 7.10 · Two spherical radial nodes",
+        "n=3; l=0 · n−l−1=2; l=0 · Two radial; zero angular nodes",
+        "P ∝ x²|R|² · P(0)=0; R(0) ≠ 0 · Origin is not another radial node"
+      ],
+      "board": {
+        "heading": "Locate both radial nodes of hydrogen 3s",
+        "columns": [
+          "Stated model",
+          "Calculation / observation",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "R polynomial: 2x²−18x+27",
+            "Roots: 1.90 and 7.10",
+            "Two spherical radial nodes"
+          ],
+          [
+            "n=3; l=0",
+            "n−l−1=2; l=0",
+            "Two radial; zero angular nodes"
+          ],
+          [
+            "P ∝ x²|R|²",
+            "P(0)=0; R(0) ≠ 0",
+            "Origin is not another radial node"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A finite nuclear mass shifts an isotope spectrum",
+      "formula": "μ/mₑ=M/(M+mₑ); R_M=R∞ μ/mₑ; compare identical electronic transitions",
+      "script": "The elementary hydrogen spectrum often treats the nucleus as infinitely heavy. A supporting refinement allows both electron and nucleus to move about their common centre of mass. The two body calculation uses reduced mass: electron mass times nuclear mass divided by their sum. In the supplied nonrelativistic model, the isotope specific Rydberg factor is the infinite mass factor multiplied by reduced mass divided by electron mass. Use illustrative nuclear masses of eighteen hundred thirty six electron masses for hydrogen and thirty six hundred seventy for deuterium. The corresponding factors are eighteen thirty six over eighteen thirty seven and thirty six seventy over thirty six seventy one. Deuterium has the slightly larger reduced mass, so the same principal quantum number transition has a slightly larger frequency and a shorter vacuum wavelength. The frequency ratio is approximately one point zero zero zero two seven two. This is a small isotope shift, not a doubling of frequency when nuclear mass nearly doubles. Both neutral isotopes still have nuclear charge one and one electron. Fine structure, nuclear size and other corrections are outside this supplied reduced mass model; this chapter is an extension of the basic Bohr comparison.",
+      "points": [
+        "Hydrogen: M/mₑ=1836 · μ/mₑ=1836/1837 · Slightly below 1",
+        "Deuterium: M/mₑ=3670 · μ/mₑ=3670/3671 · Larger reduced mass",
+        "Same n transition; same Z · fD/fH ≈ 1.000272 · λD/λH ≈ 0.999728"
+      ],
+      "board": {
+        "heading": "A finite nuclear mass shifts an isotope spectrum",
+        "columns": [
+          "Stated model",
+          "Calculation / observation",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "Hydrogen: M/mₑ=1836",
+            "μ/mₑ=1836/1837",
+            "Slightly below 1"
+          ],
+          [
+            "Deuterium: M/mₑ=3670",
+            "μ/mₑ=3670/3671",
+            "Larger reduced mass"
+          ],
+          [
+            "Same n transition; same Z",
+            "fD/fH ≈ 1.000272",
+            "λD/λH ≈ 0.999728"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Uncertainty gives a kinetic-energy lower bound",
+      "formula": "⟨pₓ⟩=0 ⇒ ⟨Kₓ⟩ ≥ ℏ²/[8m(Δx)²]; one-dimensional nonrelativistic model",
+      "script": "Uncertainty can constrain an energy distribution as well as a momentum spread. In one dimension, the position and momentum standard deviations obey delta x times delta p x at least h bar over two. For a nonrelativistic particle, mean kinetic energy in that direction is mean momentum squared divided by twice its mass. If the mean momentum is zero, mean squared momentum equals its variance, so the kinetic energy lower bound becomes h bar squared divided by eight times mass times delta x squared. For an electron with delta x equal to one times ten to the minus ten metre, use h bar one point zero five five times ten to the minus thirty four joule second and electron mass nine point one one times ten to the minus thirty one kilogram. The bound is approximately zero point nine five three three electron volt. Halving the position spread raises this lower bound by four. It does not force every measurement to return that energy, nor supply the exact total energy of an atom. A nonzero mean momentum adds a positive mean motion term; the uncertainty bound concerns the spread rather than a minimum signed velocity.",
+      "points": [
+        "Δx=1.00×10⁻¹⁰ m; mean pₓ=0 · ⟨Kₓ⟩ ≥ ℏ²/[8m(Δx)²] · Bound ≈ 0.9533 eV",
+        "Δx becomes Δx/2 · Inverse-square dependence · Lower bound becomes 4 times",
+        "Nonzero mean momentum · Add ⟨pₓ⟩²/(2m) · Not an exact atomic total energy"
+      ],
+      "board": {
+        "heading": "Uncertainty gives a kinetic-energy lower bound",
+        "columns": [
+          "Stated model",
+          "Calculation / observation",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "Δx=1.00×10⁻¹⁰ m; mean pₓ=0",
+            "⟨Kₓ⟩ ≥ ℏ²/[8m(Δx)²]",
+            "Bound ≈ 0.9533 eV"
+          ],
+          [
+            "Δx becomes Δx/2",
+            "Inverse-square dependence",
+            "Lower bound becomes 4 times"
+          ],
+          [
+            "Nonzero mean momentum",
+            "Add ⟨pₓ⟩²/(2m)",
+            "Not an exact atomic total energy"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Read a photoelectric graph backward",
+      "formula": "Kmax=hf−φ; slope gives h, intercept gives −φ, threshold f₀=φ/h",
+      "script": "A straight line graph can reveal a metal's work function without giving it directly. In an ideal photoelectric dataset, maximum electron kinetic energies are zero point four eight one six electron volt at six times ten to the fourteen hertz and one point three zero eight eight electron volt at eight times ten to the fourteen hertz. The rise in energy is zero point eight two seven two electron volt, divided by a frequency rise of two times ten to the fourteen hertz. Thus the slope is four point one three six times ten to the minus fifteen electron volt second, the supplied Planck constant in those units. Substitute either point into maximum kinetic energy equals h f minus work function. The work function is two electron volts and the threshold is approximately four point eight three six times ten to the fourteen hertz. The extrapolated negative vertical intercept is a parameter of the line, not a physical negative kinetic energy below threshold. Increasing intensity at fixed frequency above threshold can increase emitted current under suitable collection conditions, but does not move that frequency's maximum kinetic energy upward in this single photon model.",
+      "points": [
+        "f=6 and 8 ×10¹⁴ Hz · K=0.4816 and 1.3088 eV · Slope 4.136×10⁻¹⁵ eV s",
+        "φ=hf−K · φ=2.000 eV · f₀ ≈ 4.836×10¹⁴ Hz",
+        "Below f₀: no single-photon emission · Negative extrapolation is not K · Intensity does not change Kmax at fixed f"
+      ],
+      "board": {
+        "heading": "Read a photoelectric graph backward",
+        "columns": [
+          "Stated model",
+          "Calculation / observation",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "f=6 and 8 ×10¹⁴ Hz",
+            "K=0.4816 and 1.3088 eV",
+            "Slope 4.136×10⁻¹⁵ eV s"
+          ],
+          [
+            "φ=hf−K",
+            "φ=2.000 eV",
+            "f₀ ≈ 4.836×10¹⁴ Hz"
+          ],
+          [
+            "Below f₀: no single-photon emission",
+            "Negative extrapolation is not K",
+            "Intensity does not change Kmax at fixed f"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1162,6 +1318,94 @@
       ],
       "answer": 0,
       "explanation": "Apply the overall collected yield once: I=eηP/Eγ=(1.60×10^−19)×0.200×6.25×10^15=0.000200 A=0.200 mA."
+    },
+    {
+      "question": "For supplied hydrogen 3s R ∝ (27−18x+2x²)e^(−x/3), the two finite positive radial nodes are approximately:",
+      "options": [
+        "1.90 and 7.10 a₀",
+        "0 and 1 a₀",
+        "3 and 9 a₀",
+        "Only 2 a₀"
+      ],
+      "answer": 0,
+      "explanation": "The exponential is nonzero at finite radius; solve 2x²−18x+27=0 for x=r/a₀."
+    },
+    {
+      "question": "Why does P(r) ∝ r²|R(r)|² vanish at r=0 for hydrogen 3s without adding a third radial node?",
+      "options": [
+        "R must be zero at the nucleus",
+        "The r² factor vanishes while R(0) is nonzero",
+        "The probability is negative there",
+        "3s has three angular planes"
+      ],
+      "answer": 1,
+      "explanation": "Finite positive zeros of the radial wavefunction count radial nodes; the shell-volume factor separately vanishes at the origin."
+    },
+    {
+      "question": "In the supplied reduced-mass model, the same electronic transition in deuterium rather than hydrogen has:",
+      "options": [
+        "Twice the frequency",
+        "Half the frequency",
+        "Slightly higher frequency and shorter vacuum wavelength",
+        "Exactly the same reduced mass"
+      ],
+      "answer": 2,
+      "explanation": "The heavier nucleus raises μ toward mₑ, raising the isotope-specific Rydberg factor slightly at fixed Z and n values."
+    },
+    {
+      "question": "With nuclear masses 1836mₑ and 3670mₑ, fD/fH is closest to:",
+      "options": [
+        "2",
+        "0.5",
+        "0.999728",
+        "1.000272"
+      ],
+      "answer": 3,
+      "explanation": "At the same electronic transition, divide the reduced-mass factors: (3670/3671)/(1836/1837). The nuclear-mass ratio is not the spectral ratio."
+    },
+    {
+      "question": "At zero mean momentum, halving Δx changes the uncertainty lower bound on one-dimensional mean nonrelativistic kinetic energy by:",
+      "options": [
+        "A factor of 4 upward",
+        "A factor of 2 downward",
+        "No change",
+        "A factor of 4 downward"
+      ],
+      "answer": 0,
+      "explanation": "The bound ℏ²/[8m(Δx)²] depends on inverse position variance: replacing Δx by Δx/2 multiplies the bound by four."
+    },
+    {
+      "question": "For m=9.11×10⁻³¹ kg, ℏ=1.055×10⁻³⁴ J s and Δx=10⁻¹⁰ m, the one-dimensional mean kinetic-energy lower bound is about (1 eV=1.602×10⁻¹⁹ J):",
+      "options": [
+        "9.53 eV",
+        "0.9533 eV",
+        "95.3 eV",
+        "−0.9533 eV"
+      ],
+      "answer": 1,
+      "explanation": "Insert the stated SI constants into ℏ²/(8mΔx²), then divide joules by joules per eV."
+    },
+    {
+      "question": "A Kmax versus frequency line passes through (6×10¹⁴ Hz, .4816 eV) and (8×10¹⁴ Hz, 1.3088 eV). Its work function is:",
+      "options": [
+        ".4816 eV",
+        "4.136 eV",
+        "2.000 eV",
+        "1.3088 eV"
+      ],
+      "answer": 2,
+      "explanation": "The slope is 4.136×10⁻¹⁵ eV s; φ=hf−K=2.000 eV at either point."
+    },
+    {
+      "question": "The ideal photoelectric line extrapolates to Kmax<0 below f₀. This means:",
+      "options": [
+        "Emitted electrons have negative kinetic energy",
+        "Every intensity produces single-photon emission",
+        "The work function becomes negative",
+        "There is no single-photon emission there; the negative extension is not a physical Kmax"
+      ],
+      "answer": 3,
+      "explanation": "Emission requires hf≥φ; the extrapolated line below threshold does not describe negative-energy electrons."
     }
   ]
 }

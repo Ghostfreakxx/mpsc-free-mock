@@ -17,8 +17,8 @@ Questions are original practice, not represented as official PYQs.
 | Unit | Recorded class | Chapters | Written sections | Worked examples | Class MCQs / Written MCQs |
 | --- | --- | --- | --- | --- | --- |
 | 1 | [Mole Concept](/jee/classes/mole-concept) | 21 | 18 | 12 | 32 / 32 |
-| 2 | [Atomic Structure](/jee/classes/atomic-structure) | 21 | 18 | 12 | 34 / 34 |
-| 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 21 | 20 | 12 | 34 / 34 |
+| 2 | [Atomic Structure](/jee/classes/atomic-structure) | 25 | 22 | 15 | 42 / 42 |
+| 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 25 | 24 | 15 | 42 / 42 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 23 | 25 | 15 | 34 / 34 |
 | 5 | [Solutions](/jee/classes/solutions) | 23 | 25 | 15 | 34 / 34 |
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 21 | 21 | 16 | 34 / 34 |
@@ -39,16 +39,16 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Hydrocarbons adds anti-bromination meso versus racemic outcomes, complete alkyne oxidative-cleavage carbon ledgers, reversible aromatic sulfonation and ideal combustion gas-volume analysis.
+Atomic Structure adds hydrogen 3s radial-node plots, a supplied reduced-mass isotope-shift model, uncertainty kinetic-energy bounds and inverse photoelectric graph analysis. Reduced-mass and kinetic-energy refinements are identified as supporting extensions.
 
-Organic Halogens adds trans-diaxial E2 site restrictions, solvent-specific SN2 evidence, interpretation limits of silver nitrate/ethanol observations and contamination/interference controls for prepared ionic extracts. The axial-site diagram explicitly represents the supplied site pattern rather than pretending to be a perspective chair.
+Chemical Bonding adds a simplified HF valence MO diagram, a bond potential with distinct well-depth and ground-state dissociation energies, NO2 radical/dimer comparisons and ortho/meta/para dipole models. Numerical dipole estimates are explicitly idealized.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
 ## Remaining scope
 
 The individual companions retain their specific remaining-work statements. Further
-reaction networks, higher excited-orbital wavefunction plots, heteronuclear MO schemes,
+reaction networks, fuller excited-orbital derivations, detailed heteronuclear orbital mixing,
 nonideal equilibrium and solution datasets, detailed group-specific comparisons,
 broader actinoid configurations, extended elemental analysis, nonideal extraction,
 complete systematic ion analysis and broader organic synthesis practice remain.
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific primary references, including OpenStax alkene addition, alkyne oxidation, aromatic substitution, SN2 solvent effects and cyclohexane E2; University of Delaware and Michigan State alkyl-halide teaching notes; and IIT Kanpur SATHEE qualitative-analysis material. Numerical datasets and MCQs in this batch are original practice.
+The notes contain lesson-specific references to University of Washington isotope-shift teaching, hydrogen-orbital teaching by Daniel Fischer, OpenStax photoelectric/uncertainty and nitrogen/polarity chapters, Peter Chieh’s HF MO notes and IUPAC dissociation-energy definitions. Numerical datasets and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

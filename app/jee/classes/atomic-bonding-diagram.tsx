@@ -1,3 +1,4 @@
+import AtomicBondingEvidenceDiagram from './atomic-bonding-evidence-diagram';
 import LowerZDiatomicDiagram from './lower-z-diatomic-diagram';
 import ExcitedRadialDiagram from './excited-radial-diagram';
 import atomicStructure from "../../data/jee-atomic-structure-lecture.json";
@@ -7,6 +8,7 @@ import styles from "./lecture.module.css";
 import RadialProbabilityDiagram from "./radial-probability-diagram";
 
 export default function AtomicBondingDiagram({lesson,chapter}:{lesson:"atomic-structure"|"chemical-bonding";chapter:number}) {
+ if(chapter===21 || (lesson==='chemical-bonding'&&chapter===22))return <AtomicBondingEvidenceDiagram lesson={lesson} chapter={chapter}/>;
  if(lesson==="chemical-bonding"&&chapter===17)return <LowerZDiatomicDiagram/>;
  if(lesson==="atomic-structure"&&chapter===18)return <ExcitedRadialDiagram/>;
  if(lesson==="atomic-structure"&&chapter===14)return <RadialProbabilityDiagram/>;
