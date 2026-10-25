@@ -1,5 +1,5 @@
 {
-  "duration": 1382.3040000000365,
+  "duration": 1664.8320000000438,
   "chapters": [
     {
       "start": 0,
@@ -72,6 +72,22 @@
     {
       "start": 1302.7920000000342,
       "end": 1382.3040000000365
+    },
+    {
+      "start": 1382.3040000000365,
+      "end": 1453.7040000000384
+    },
+    {
+      "start": 1453.7040000000384,
+      "end": 1521.86400000004
+    },
+    {
+      "start": 1521.86400000004,
+      "end": 1593.024000000042
+    },
+    {
+      "start": 1593.024000000042,
+      "end": 1664.8320000000438
     }
   ],
   "cues": [
@@ -2504,6 +2520,510 @@
       "end": 1382.0520021362647,
       "text": "amount.",
       "chapter": 17
+    },
+    {
+      "start": 1382.3040000000365,
+      "end": 1387.5640002289183,
+      "text": "A measured resistance depends on both the liquid and the electrode geometry.",
+      "chapter": 18
+    },
+    {
+      "start": 1387.5640002289183,
+      "end": 1390.6040001907713,
+      "text": "Calibrate the cell with a standard of known conductivity at the stated",
+      "chapter": 18
+    },
+    {
+      "start": 1390.6040001907713,
+      "end": 1391.0839997330077,
+      "text": "temperature.",
+      "chapter": 18
+    },
+    {
+      "start": 1392.0240002670653,
+      "end": 1396.1239996948607,
+      "text": "Suppose the standard conductivity is zero point zero zero one two zero siemens",
+      "chapter": 18
+    },
+    {
+      "start": 1396.1239996948607,
+      "end": 1399.6440001526244,
+      "text": "per centimetre and its measured resistance is one hundred ohms.",
+      "chapter": 18
+    },
+    {
+      "start": 1400.664000610388,
+      "end": 1404.943999389685,
+      "text": "Multiplying gives cell constant zero point one two zero per centimetre.",
+      "chapter": 18
+    },
+    {
+      "start": 1404.943999389685,
+      "end": 1407.7039996185667,
+      "text": "Now put the unknown solution in the same unchanged cell.",
+      "chapter": 18
+    },
+    {
+      "start": 1407.933999160803,
+      "end": 1412.5840728655053,
+      "text": "A resistance of three hundred ohms gives conductivity zero point zero zero",
+      "chapter": 18
+    },
+    {
+      "start": 1412.5840728655053,
+      "end": 1412.8354282008945,
+      "text": "zero",
+      "chapter": 18
+    },
+    {
+      "start": 1412.8354282008945,
+      "end": 1416.0440016785033,
+      "text": "four zero zero siemens per centimetre.",
+      "chapter": 18
+    },
+    {
+      "start": 1416.0440016785033,
+      "end": 1420.603999237097,
+      "text": "If its analytical concentration is zero point zero zero two zero zero mole per",
+      "chapter": 18
+    },
+    {
+      "start": 1420.603999237097,
+      "end": 1425.0639983215697,
+      "text": "litre, multiply conductivity by one thousand and divide by that concentration",
+      "chapter": 18
+    },
+    {
+      "start": 1425.0639983215697,
+      "end": 1429.3840018310912,
+      "text": "to obtain molar conductivity two hundred siemens square centimetres per mole.",
+      "chapter": 18
+    },
+    {
+      "start": 1430.1440001526244,
+      "end": 1434.0639983215697,
+      "text": "Resistance is not simply the reciprocal of conductivity: its reciprocal is",
+      "chapter": 18
+    },
+    {
+      "start": 1434.0639983215697,
+      "end": 1436.164000610388,
+      "text": "conductance, which still contains geometry.",
+      "chapter": 18
+    },
+    {
+      "start": 1436.5440016785033,
+      "end": 1440.664000610388,
+      "text": "The factor one thousand converts the litre concentration convention to the",
+      "chapter": 18
+    },
+    {
+      "start": 1440.664000610388,
+      "end": 1441.7439986267455,
+      "text": "centimetre volume convention.",
+      "chapter": 18
+    },
+    {
+      "start": 1442.5639983215697,
+      "end": 1446.3239966431029,
+      "text": "Keep temperature, immersion geometry and units consistent between calibration",
+      "chapter": 18
+    },
+    {
+      "start": 1446.3239966431029,
+      "end": 1447.0240012207396,
+      "text": "and measurement.",
+      "chapter": 18
+    },
+    {
+      "start": 1447.7440024414427,
+      "end": 1452.3440009155638,
+      "text": "These supplied values illustrate calibration arithmetic rather than certify a",
+      "chapter": 18
+    },
+    {
+      "start": 1452.3440009155638,
+      "end": 1453.443999389685,
+      "text": "particular commercial reference solution.",
+      "chapter": 18
+    },
+    {
+      "start": 1453.7040000000384,
+      "end": 1458.5640001335528,
+      "text": "Faraday calculations begin with charge, not with a current reading taken at an",
+      "chapter": 19
+    },
+    {
+      "start": 1458.5640001335528,
+      "end": 1459.383999828377,
+      "text": "arbitrary instant.",
+      "chapter": 19
+    },
+    {
+      "start": 1460.1240000763323,
+      "end": 1464.1140003242876,
+      "text": "Suppose current rises linearly from two amperes to four amperes during six",
+      "chapter": 19
+    },
+    {
+      "start": 1464.1140003242876,
+      "end": 1464.8639998474505,
+      "text": "hundred seconds.",
+      "chapter": 19
+    },
+    {
+      "start": 1465.724000457802,
+      "end": 1469.5291284575235,
+      "text": "The current time area is a rectangle of twelve hundred coulombs plus a",
+      "chapter": 19
+    },
+    {
+      "start": 1469.5291284575235,
+      "end": 1469.9640002289202,
+      "text": "triangle",
+      "chapter": 19
+    },
+    {
+      "start": 1469.9640002289202,
+      "end": 1473.003999237099,
+      "text": "of six hundred, giving eighteen hundred coulombs in total.",
+      "chapter": 19
+    },
+    {
+      "start": 1473.8639998474505,
+      "end": 1477.503999237099,
+      "text": "Equivalently, the average of the two endpoint currents is three amperes for",
+      "chapter": 19
+    },
+    {
+      "start": 1477.503999237099,
+      "end": 1478.2639994659808,
+      "text": "this linear ramp.",
+      "chapter": 19
+    },
+    {
+      "start": 1478.8240008392718,
+      "end": 1482.790666107216,
+      "text": "Using the final current for the entire interval would wrongly give twenty four",
+      "chapter": 19
+    },
+    {
+      "start": 1482.790666107216,
+      "end": 1483.9840006866839,
+      "text": "hundred coulombs.",
+      "chapter": 19
+    },
+    {
+      "start": 1484.4239993133929,
+      "end": 1488.2040000000384,
+      "text": "In a supplied copper deposition model, only eighty percent of the charge",
+      "chapter": 19
+    },
+    {
+      "start": 1488.2040000000384,
+      "end": 1492.3439993896868,
+      "text": "reduces copper two ions to metal; the remainder goes to other electrode",
+      "chapter": 19
+    },
+    {
+      "start": 1492.3439993896868,
+      "end": 1492.9440016785052,
+      "text": "processes.",
+      "chapter": 19
+    },
+    {
+      "start": 1494.163999084511,
+      "end": 1496.2040000000384,
+      "text": "Copper receives fourteen hundred forty coulombs.",
+      "chapter": 19
+    },
+    {
+      "start": 1496.9440016785052,
+      "end": 1501.0159987488178,
+      "text": "With two electrons per copper atom, Faraday constant ninety six thousand five",
+      "chapter": 19
+    },
+    {
+      "start": 1501.0159987488178,
+      "end": 1505.3239989319231,
+      "text": "hundred coulombs per mole and copper molar mass sixty three point five grams",
+      "chapter": 19
+    },
+    {
+      "start": 1505.3239989319231,
+      "end": 1509.503999237099,
+      "text": "per mole, the deposited mass is about zero point four seven four gram.",
+      "chapter": 19
+    },
+    {
+      "start": 1510.56400061039,
+      "end": 1514.3039984741595,
+      "text": "Current efficiency allocates charge, not the number of electrons required by",
+      "chapter": 19
+    },
+    {
+      "start": 1514.3039984741595,
+      "end": 1515.3039984741595,
+      "text": "the copper half reaction.",
+      "chapter": 19
+    },
+    {
+      "start": 1516.0840010681536,
+      "end": 1520.4640021362688,
+      "text": "An endpoint average is exact for this linear ramp, but a general current trace",
+      "chapter": 19
+    },
+    {
+      "start": 1520.4640021362688,
+      "end": 1521.56400061039,
+      "text": "needs its actual area.",
+      "chapter": 19
+    },
+    {
+      "start": 1521.86400000004,
+      "end": 1526.1039997711582,
+      "text": "Oxidation numbers determine electron exchange, but they do not finish an",
+      "chapter": 20
+    },
+    {
+      "start": 1526.1039997711582,
+      "end": 1526.7640000954075,
+      "text": "aqueous equation.",
+      "chapter": 20
+    },
+    {
+      "start": 1527.4839998855991,
+      "end": 1531.8039995804234,
+      "text": "In a supplied alkaline model, permanganate is reduced to manganese dioxide",
+      "chapter": 20
+    },
+    {
+      "start": 1532.204000152628,
+      "end": 1534.784000076334,
+      "text": "while sulfite is oxidized to sulfate.",
+      "chapter": 20
+    },
+    {
+      "start": 1535.3840004578037,
+      "end": 1539.4030237017776,
+      "text": "Manganese changes from plus seven to plus four, accepting three electrons per",
+      "chapter": 20
+    },
+    {
+      "start": 1539.4030237017776,
+      "end": 1539.6639992371006,
+      "text": "atom.",
+      "chapter": 20
+    },
+    {
+      "start": 1540.7240006103916,
+      "end": 1544.4640003815098,
+      "text": "Sulfur changes from plus four to plus six, losing two electrons per atom.",
+      "chapter": 20
+    },
+    {
+      "start": 1545.2639996185703,
+      "end": 1549.7240006103916,
+      "text": "The smallest shared electron count is six, so use two permanganates and three",
+      "chapter": 20
+    },
+    {
+      "start": 1549.7240006103916,
+      "end": 1550.1440006866856,
+      "text": "sulfites.",
+      "chapter": 20
+    },
+    {
+      "start": 1550.9239994659824,
+      "end": 1554.3840004578037,
+      "text": "Completing the basic half reaction balance and cancelling common water and",
+      "chapter": 20
+    },
+    {
+      "start": 1554.3840004578037,
+      "end": 1558.9639984741611,
+      "text": "hydroxide gives two permanganates, three sulfites and one water forming two",
+      "chapter": 20
+    },
+    {
+      "start": 1558.9639984741611,
+      "end": 1561.9639984741611,
+      "text": "manganese dioxides, three sulfates and two hydroxides.",
+      "chapter": 20
+    },
+    {
+      "start": 1562.7440010681553,
+      "end": 1566.9040009155674,
+      "text": "Each side contains two manganese atoms, three sulfur atoms, eighteen oxygen",
+      "chapter": 20
+    },
+    {
+      "start": 1566.9040009155674,
+      "end": 1568.143998779337,
+      "text": "atoms and two hydrogens.",
+      "chapter": 20
+    },
+    {
+      "start": 1568.803998626749,
+      "end": 1570.9839989319248,
+      "text": "Total charge is negative eight on each side.",
+      "chapter": 20
+    },
+    {
+      "start": 1571.8439995422764,
+      "end": 1576.2680008545321,
+      "text": "Thus zero point zero two zero zero mole permanganate corresponds to zero point",
+      "chapter": 20
+    },
+    {
+      "start": 1576.2680008545321,
+      "end": 1580.36400000004,
+      "text": "zero three zero zero mole sulfite consumed in this stated net conversion.",
+      "chapter": 20
+    },
+    {
+      "start": 1581.4440018310947,
+      "end": 1585.36400000004,
+      "text": "Do not carry over the five electron acidic permanganate factor: the selected",
+      "chapter": 20
+    },
+    {
+      "start": 1585.36400000004,
+      "end": 1587.2240006103916,
+      "text": "manganese product is different.",
+      "chapter": 20
+    },
+    {
+      "start": 1587.8239990845127,
+      "end": 1591.743997253458,
+      "text": "Medium and endpoint species must be specified before assigning the redox",
+      "chapter": 20
+    },
+    {
+      "start": 1591.743997253458,
+      "end": 1592.4639984741611,
+      "text": "equivalent factor.",
+      "chapter": 20
+    },
+    {
+      "start": 1593.024000000042,
+      "end": 1597.7439997902336,
+      "text": "Battery capacity in ampere hours is an amount of charge, not an amount of",
+      "chapter": 21
+    },
+    {
+      "start": 1597.7439997902336,
+      "end": 1598.063999961895,
+      "text": "energy.",
+      "chapter": 21
+    },
+    {
+      "start": 1598.8240001907768,
+      "end": 1601.8439996948662,
+      "text": "One ampere hour equals three thousand six hundred coulombs.",
+      "chapter": 21
+    },
+    {
+      "start": 1602.603999923748,
+      "end": 1607.3839996567192,
+      "text": "For an ideal lead acid cell discharging by the stated overall reaction, one",
+      "chapter": 21
+    },
+    {
+      "start": 1607.3839996567192,
+      "end": 1612.183999847454,
+      "text": "mole of lead metal and one mole of lead dioxide consume two moles of sulfuric",
+      "chapter": 21
+    },
+    {
+      "start": 1612.183999847454,
+      "end": 1615.9039991608086,
+      "text": "acid while two moles of electrons pass through the external circuit.",
+      "chapter": 21
+    },
+    {
+      "start": 1616.6639993896904,
+      "end": 1621.2490003815117,
+      "text": "Thus an ideal one ampere hour discharge corresponds to three thousand six",
+      "chapter": 21
+    },
+    {
+      "start": 1621.2490003815117,
+      "end": 1625.0440004578056,
+      "text": "hundred divided by twice the Faraday constant moles of reaction.",
+      "chapter": 21
+    },
+    {
+      "start": 1625.3039987793388,
+      "end": 1629.7626155348976,
+      "text": "Using ninety six thousand five hundred coulombs per mole gives about zero",
+      "chapter": 21
+    },
+    {
+      "start": 1629.7626155348976,
+      "end": 1630.0680002441825,
+      "text": "point",
+      "chapter": 21
+    },
+    {
+      "start": 1630.0680002441825,
+      "end": 1635.3840006103935,
+      "text": "zero one eight seven mole each of lead and lead dioxide consumed, and zero",
+      "chapter": 21
+    },
+    {
+      "start": 1635.3840006103935,
+      "end": 1637.9439981689873,
+      "text": "point zero three seven three mole sulfuric acid.",
+      "chapter": 21
+    },
+    {
+      "start": 1638.2839983215752,
+      "end": 1642.4240015259209,
+      "text": "The acid is a reactant, not merely an unchanged conducting medium.",
+      "chapter": 21
+    },
+    {
+      "start": 1643.0640009155693,
+      "end": 1646.9439981689873,
+      "text": "These are theoretical stoichiometric amounts for one cell under the stated",
+      "chapter": 21
+    },
+    {
+      "start": 1646.9439981689873,
+      "end": 1647.7240007629814,
+      "text": "discharge model.",
+      "chapter": 21
+    },
+    {
+      "start": 1648.4040010681572,
+      "end": 1652.8516741560534,
+      "text": "Actual usable capacity depends on accessible material, operating conditions",
+      "chapter": 21
+    },
+    {
+      "start": 1652.8516741560534,
+      "end": 1653.5039995422783,
+      "text": "and losses.",
+      "chapter": 21
+    },
+    {
+      "start": 1654.2640016785087,
+      "end": 1658.144002746624,
+      "text": "To calculate electrical energy, integrate cell voltage against transferred",
+      "chapter": 21
+    },
+    {
+      "start": 1658.144002746624,
+      "end": 1663.5040033569755,
+      "text": "charge, or use a justified average voltage; an ampere hour rating alone does",
+      "chapter": 21
+    },
+    {
+      "start": 1663.5040033569755,
+      "end": 1664.6040018310966,
+      "text": "not supply that voltage.",
+      "chapter": 21
     }
   ]
 }

@@ -22,8 +22,8 @@ Questions are original practice, not represented as official PYQs.
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 23 | 25 | 15 | 34 / 34 |
 | 5 | [Solutions](/jee/classes/solutions) | 23 | 25 | 15 | 34 / 34 |
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 21 | 21 | 16 | 34 / 34 |
-| 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 18 | 19 | 13 | 26 / 26 |
-| 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 18 | 21 | 16 | 34 / 34 |
+| 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 22 | 23 | 16 | 34 / 34 |
+| 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 22 | 25 | 19 | 42 / 42 |
 | 9 | [Periodic Trends](/jee/classes/periodic-trends) | 21 | 19 | 12 | 32 / 32 |
 | 10 | [P-Block](/jee/classes/p-block) | 23 | 21 | 12 | 34 / 34 |
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 23 | 21 | 12 | 34 / 34 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Chemical Thermodynamics adds a complete NaCl Born-Haber cycle with explicit lattice sign conventions, an integrated variable reaction heat capacity, ideal-gas mixing entropy and equilibrium-constant changes under reaction normalization.
+Redox and Electrochemistry adds conductivity-cell calibration, charge integration for changing current, alkaline permanganate/sulfite balancing and ideal lead-acid charge capacity with reactant consumption.
 
-Solutions adds a vapour-withdrawal component balance, solvent transfer between two solutions, dry versus wet gas partial pressure in Henry law, and colligative changes after solvent loss. Each model states its ideality and conservation assumptions.
+Chemical Kinetics adds calibrated clock-threshold interpretation, tangent versus finite-interval rates, a supporting changing-volume material balance and a supporting reversible first-order relaxation model with an equilibrium-plateau figure. Supporting extensions are not presented as additional required integrated-order equations.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific primary references, including CSU East Bay thermodynamics teaching notes on Born-Haber cycles and ideal mixing; OpenStax equilibrium constants, gas solubility and colligative properties. Numerical datasets and MCQs in this batch are supplied original practice.
+The notes contain lesson-specific primary references, including IIT Kanpur SATHEE/NCERT conductivity calibration; OpenStax redox, electrolysis, batteries and reaction rates; Indiana University East clock kinetics; University of Michigan material balances; and Texas A&M reversible kinetics. Numerical datasets and MCQs in this batch are supplied original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

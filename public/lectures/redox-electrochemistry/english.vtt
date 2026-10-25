@@ -1214,3 +1214,255 @@ Balance each half reaction before translating charge into a collected gas
 
 00:23:01.792 --> 00:23:02.052
 amount.
+
+00:23:02.304 --> 00:23:07.564
+A measured resistance depends on both the liquid and the electrode geometry.
+
+00:23:07.564 --> 00:23:10.604
+Calibrate the cell with a standard of known conductivity at the stated
+
+00:23:10.604 --> 00:23:11.084
+temperature.
+
+00:23:12.024 --> 00:23:16.124
+Suppose the standard conductivity is zero point zero zero one two zero siemens
+
+00:23:16.124 --> 00:23:19.644
+per centimetre and its measured resistance is one hundred ohms.
+
+00:23:20.664 --> 00:23:24.944
+Multiplying gives cell constant zero point one two zero per centimetre.
+
+00:23:24.944 --> 00:23:27.704
+Now put the unknown solution in the same unchanged cell.
+
+00:23:27.934 --> 00:23:32.584
+A resistance of three hundred ohms gives conductivity zero point zero zero
+
+00:23:32.584 --> 00:23:32.835
+zero
+
+00:23:32.835 --> 00:23:36.044
+four zero zero siemens per centimetre.
+
+00:23:36.044 --> 00:23:40.604
+If its analytical concentration is zero point zero zero two zero zero mole per
+
+00:23:40.604 --> 00:23:45.064
+litre, multiply conductivity by one thousand and divide by that concentration
+
+00:23:45.064 --> 00:23:49.384
+to obtain molar conductivity two hundred siemens square centimetres per mole.
+
+00:23:50.144 --> 00:23:54.064
+Resistance is not simply the reciprocal of conductivity: its reciprocal is
+
+00:23:54.064 --> 00:23:56.164
+conductance, which still contains geometry.
+
+00:23:56.544 --> 00:24:00.664
+The factor one thousand converts the litre concentration convention to the
+
+00:24:00.664 --> 00:24:01.744
+centimetre volume convention.
+
+00:24:02.564 --> 00:24:06.324
+Keep temperature, immersion geometry and units consistent between calibration
+
+00:24:06.324 --> 00:24:07.024
+and measurement.
+
+00:24:07.744 --> 00:24:12.344
+These supplied values illustrate calibration arithmetic rather than certify a
+
+00:24:12.344 --> 00:24:13.444
+particular commercial reference solution.
+
+00:24:13.704 --> 00:24:18.564
+Faraday calculations begin with charge, not with a current reading taken at an
+
+00:24:18.564 --> 00:24:19.384
+arbitrary instant.
+
+00:24:20.124 --> 00:24:24.114
+Suppose current rises linearly from two amperes to four amperes during six
+
+00:24:24.114 --> 00:24:24.864
+hundred seconds.
+
+00:24:25.724 --> 00:24:29.529
+The current time area is a rectangle of twelve hundred coulombs plus a
+
+00:24:29.529 --> 00:24:29.964
+triangle
+
+00:24:29.964 --> 00:24:33.004
+of six hundred, giving eighteen hundred coulombs in total.
+
+00:24:33.864 --> 00:24:37.504
+Equivalently, the average of the two endpoint currents is three amperes for
+
+00:24:37.504 --> 00:24:38.264
+this linear ramp.
+
+00:24:38.824 --> 00:24:42.791
+Using the final current for the entire interval would wrongly give twenty four
+
+00:24:42.791 --> 00:24:43.984
+hundred coulombs.
+
+00:24:44.424 --> 00:24:48.204
+In a supplied copper deposition model, only eighty percent of the charge
+
+00:24:48.204 --> 00:24:52.344
+reduces copper two ions to metal; the remainder goes to other electrode
+
+00:24:52.344 --> 00:24:52.944
+processes.
+
+00:24:54.164 --> 00:24:56.204
+Copper receives fourteen hundred forty coulombs.
+
+00:24:56.944 --> 00:25:01.016
+With two electrons per copper atom, Faraday constant ninety six thousand five
+
+00:25:01.016 --> 00:25:05.324
+hundred coulombs per mole and copper molar mass sixty three point five grams
+
+00:25:05.324 --> 00:25:09.504
+per mole, the deposited mass is about zero point four seven four gram.
+
+00:25:10.564 --> 00:25:14.304
+Current efficiency allocates charge, not the number of electrons required by
+
+00:25:14.304 --> 00:25:15.304
+the copper half reaction.
+
+00:25:16.084 --> 00:25:20.464
+An endpoint average is exact for this linear ramp, but a general current trace
+
+00:25:20.464 --> 00:25:21.564
+needs its actual area.
+
+00:25:21.864 --> 00:25:26.104
+Oxidation numbers determine electron exchange, but they do not finish an
+
+00:25:26.104 --> 00:25:26.764
+aqueous equation.
+
+00:25:27.484 --> 00:25:31.804
+In a supplied alkaline model, permanganate is reduced to manganese dioxide
+
+00:25:32.204 --> 00:25:34.784
+while sulfite is oxidized to sulfate.
+
+00:25:35.384 --> 00:25:39.403
+Manganese changes from plus seven to plus four, accepting three electrons per
+
+00:25:39.403 --> 00:25:39.664
+atom.
+
+00:25:40.724 --> 00:25:44.464
+Sulfur changes from plus four to plus six, losing two electrons per atom.
+
+00:25:45.264 --> 00:25:49.724
+The smallest shared electron count is six, so use two permanganates and three
+
+00:25:49.724 --> 00:25:50.144
+sulfites.
+
+00:25:50.924 --> 00:25:54.384
+Completing the basic half reaction balance and cancelling common water and
+
+00:25:54.384 --> 00:25:58.964
+hydroxide gives two permanganates, three sulfites and one water forming two
+
+00:25:58.964 --> 00:26:01.964
+manganese dioxides, three sulfates and two hydroxides.
+
+00:26:02.744 --> 00:26:06.904
+Each side contains two manganese atoms, three sulfur atoms, eighteen oxygen
+
+00:26:06.904 --> 00:26:08.144
+atoms and two hydrogens.
+
+00:26:08.804 --> 00:26:10.984
+Total charge is negative eight on each side.
+
+00:26:11.844 --> 00:26:16.268
+Thus zero point zero two zero zero mole permanganate corresponds to zero point
+
+00:26:16.268 --> 00:26:20.364
+zero three zero zero mole sulfite consumed in this stated net conversion.
+
+00:26:21.444 --> 00:26:25.364
+Do not carry over the five electron acidic permanganate factor: the selected
+
+00:26:25.364 --> 00:26:27.224
+manganese product is different.
+
+00:26:27.824 --> 00:26:31.744
+Medium and endpoint species must be specified before assigning the redox
+
+00:26:31.744 --> 00:26:32.464
+equivalent factor.
+
+00:26:33.024 --> 00:26:37.744
+Battery capacity in ampere hours is an amount of charge, not an amount of
+
+00:26:37.744 --> 00:26:38.064
+energy.
+
+00:26:38.824 --> 00:26:41.844
+One ampere hour equals three thousand six hundred coulombs.
+
+00:26:42.604 --> 00:26:47.384
+For an ideal lead acid cell discharging by the stated overall reaction, one
+
+00:26:47.384 --> 00:26:52.184
+mole of lead metal and one mole of lead dioxide consume two moles of sulfuric
+
+00:26:52.184 --> 00:26:55.904
+acid while two moles of electrons pass through the external circuit.
+
+00:26:56.664 --> 00:27:01.249
+Thus an ideal one ampere hour discharge corresponds to three thousand six
+
+00:27:01.249 --> 00:27:05.044
+hundred divided by twice the Faraday constant moles of reaction.
+
+00:27:05.304 --> 00:27:09.763
+Using ninety six thousand five hundred coulombs per mole gives about zero
+
+00:27:09.763 --> 00:27:10.068
+point
+
+00:27:10.068 --> 00:27:15.384
+zero one eight seven mole each of lead and lead dioxide consumed, and zero
+
+00:27:15.384 --> 00:27:17.944
+point zero three seven three mole sulfuric acid.
+
+00:27:18.284 --> 00:27:22.424
+The acid is a reactant, not merely an unchanged conducting medium.
+
+00:27:23.064 --> 00:27:26.944
+These are theoretical stoichiometric amounts for one cell under the stated
+
+00:27:26.944 --> 00:27:27.724
+discharge model.
+
+00:27:28.404 --> 00:27:32.852
+Actual usable capacity depends on accessible material, operating conditions
+
+00:27:32.852 --> 00:27:33.504
+and losses.
+
+00:27:34.264 --> 00:27:38.144
+To calculate electrical energy, integrate cell voltage against transferred
+
+00:27:38.144 --> 00:27:43.504
+charge, or use a justified average voltage; an ampere hour rating alone does
+
+00:27:43.504 --> 00:27:44.604
+not supply that voltage.

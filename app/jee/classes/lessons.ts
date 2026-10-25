@@ -1133,7 +1133,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "chemical-kinetics", subject: "Chemistry", unit: 8, number: "C03", title: chemicalKinetics.title,
-    description: "Eighteen narrated chapters on rate laws, signal baselines, temperature stages, Arrhenius prefactors and a supporting sequential first-order model.",
+    description: "Twenty-two narrated chapters on rate laws, clock thresholds, tangent and mean rates, temperature effects and supporting sequential, variable-volume and reversible-relaxation models.",
     scope: "Recorded Unit 8 foundation and worked applications with original practice. Further mixed experimental datasets and mechanism-based problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.chemical-kinetics.lecture.v1",
     audio: "/lectures/chemical-kinetics/narration-marin.mp3",
@@ -1173,7 +1173,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "redox-electrochemistry", subject: "Chemistry", unit: 7, number: "C07", title: electrochemistry.title,
-    description: "Eighteen narrated chapters on redox, combined potentials, disproportionation, hydrogen-electrode pH, gas electrolysis, conductance, batteries and corrosion.",
+    description: "Twenty-two narrated chapters on redox, electrode potentials, conductivity calibration, changing-current electrolysis, alkaline sulfite balances, battery capacity and corrosion.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 7 foundation with original practice. Electrode classifications, detailed dry-cell mechanisms and broader mixed problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.redox-electrochemistry.lecture.v1",
     audio: "/lectures/redox-electrochemistry/narration-marin.mp3",

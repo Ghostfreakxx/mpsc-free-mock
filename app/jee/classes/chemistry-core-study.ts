@@ -1,3 +1,4 @@
+import { extendElectrochemistryKineticBalancesLesson } from './electrochemistry-kinetic-balances-study.ts';
 import { extendOrganicAnalysisReasoningLesson } from './organic-analysis-reasoning-study.ts';
 import { extendKineticsCoordinationMeasurementLesson } from "./kinetics-coordination-measurement-study.ts";
 import { extendRedoxStereochemistryLesson } from "./redox-stereochemistry-study.ts";
@@ -14,7 +15,7 @@ export const chemistryCoreLessons: StudyLesson[] = [
     title: "Chemical kinetics: rates, half-lives and activation energy",
     summary: "Read experimental rate data, distinguish reaction order from molecularity and solve zero- and first-order problems.",
     prerequisites: "Concentration, balanced equations, logarithms and temperature in kelvin.",
-    remaining: "Written companion to the eighteen-chapter Marin recording for Unit 8, including rate normalization, pseudo-first-order conditions, graph interpretation, completion times and catalyst profiles. Further mixed datasets and mechanism-based practice remain. Second-order integrated equations are not presented as required Unit 8 content.",
+    remaining: "Written companion to the twenty-two-chapter Marin recording for Unit 8, including rate normalization, pseudo-first-order conditions, graph interpretation, completion times and catalyst profiles. Clock thresholds, tangent rates and supporting variable-volume and reversible-relaxation models are included. Further mixed datasets and mechanism-based practice remain. Second-order integrated equations are not presented as required Unit 8 content.",
     sections: [
       { title: "Rate tells us how quickly, not how far", paragraphs: ["A thermodynamically favourable reaction can be slow. Equilibrium describes the preferred composition; kinetics describes how rapidly the system changes. To measure an average disappearance rate, divide the concentration lost by the elapsed time. An instantaneous rate is the local slope of the concentration-time curve, rather than the slope across a long interval.", "For 2A -> B at constant volume, A disappears twice as fast as B forms. Define reaction rate by dividing each species' concentration change by its balanced coefficient, using a minus sign for disappearing reactants. This makes a single positive forward rate. A question asking the disappearance rate of A may deliberately omit that normalization."], formula: "For aA -> bB: rate = -(1/a)d[A]/dt = (1/b)d[B]/dt" },
       { title: "Use experiments to determine the rate law", paragraphs: ["A measured law such as rate = k[A]^m[B]^n tells us how the rate responds to concentrations under stated conditions. The total order is m+n. Do not copy exponents from the overall balanced equation: an overall reaction can contain several elementary steps, and its experimentally observed rate law reflects the mechanism.", "Hold B fixed and double A. If the initial rate doubles, the order in A is one; if it quadruples, the order is two. Hold A fixed to investigate B separately. Use initial rates to avoid accidental changes in several concentrations during reaction progress. Rate constants depend on temperature and reaction conditions, not simply on the amount of reactant."], formula: "rate = k[A]^m[B]^n; total order = m+n" },
@@ -176,3 +177,5 @@ for (const lesson of chemistryCoreLessons) extendRedoxStereochemistryLesson(less
 for (const lesson of chemistryCoreLessons) extendKineticsCoordinationMeasurementLesson(lesson);
 
 for (const lesson of chemistryCoreLessons) extendOrganicAnalysisReasoningLesson(lesson);
+
+for (const lesson of chemistryCoreLessons) extendElectrochemistryKineticBalancesLesson(lesson);

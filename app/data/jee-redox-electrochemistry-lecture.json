@@ -37,6 +37,10 @@
     {
       "title": "OpenStax: electrode and cell potentials",
       "url": "https://openstax.org/books/chemistry-2e/pages/17-3-electrode-and-cell-potentials"
+    },
+    {
+      "title": "IIT Kanpur SATHEE: NCERT electrochemistry and conductivity-cell calibration",
+      "url": "https://sathee.iitk.ac.in/ncert-books/ncert-books-theory/class-12/nbt-che-12/chem-12-unit-3-electrochemistry/"
     }
   ],
   "chapters": [
@@ -669,6 +673,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Calibrate the conductivity cell before comparing solutions",
+      "formula": "Cell constant = κstandard Rstandard; κunknown = cell constant / Runknown",
+      "script": "A measured resistance depends on both the liquid and the electrode geometry. Calibrate the cell with a standard of known conductivity at the stated temperature. Suppose the standard conductivity is zero point zero zero one two zero siemens per centimetre and its measured resistance is one hundred ohms. Multiplying gives cell constant zero point one two zero per centimetre. Now put the unknown solution in the same unchanged cell. A resistance of three hundred ohms gives conductivity zero point zero zero zero four zero zero siemens per centimetre. If its analytical concentration is zero point zero zero two zero zero mole per litre, multiply conductivity by one thousand and divide by that concentration to obtain molar conductivity two hundred siemens square centimetres per mole. Resistance is not simply the reciprocal of conductivity: its reciprocal is conductance, which still contains geometry. The factor one thousand converts the litre concentration convention to the centimetre volume convention. Keep temperature, immersion geometry and units consistent between calibration and measurement. These supplied values illustrate calibration arithmetic rather than certify a particular commercial reference solution.",
+      "points": [
+        "Standard: κ=.00120 S/cm · R = 100 Ω; multiply κR · Cell constant .120 cm⁻¹",
+        "Unknown: R = 300 Ω · κ = .120 / 300 · .000400 S/cm",
+        "c = .00200 mol/L · Λm = 1000κ / c · 200 S cm²/mol"
+      ],
+      "board": {
+        "heading": "Calibrate the conductivity cell before comparing solutions",
+        "columns": [
+          "Specified measurement",
+          "Balance / relation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Standard: κ=.00120 S/cm",
+            "R = 100 Ω; multiply κR",
+            "Cell constant .120 cm⁻¹"
+          ],
+          [
+            "Unknown: R = 300 Ω",
+            "κ = .120 / 300",
+            ".000400 S/cm"
+          ],
+          [
+            "c = .00200 mol/L",
+            "Λm = 1000κ / c",
+            "200 S cm²/mol"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Changing current requires an area under the curve",
+      "formula": "Q = ∫I(t)dt; mCu = ηQMCu/(2F)",
+      "script": "Faraday calculations begin with charge, not with a current reading taken at an arbitrary instant. Suppose current rises linearly from two amperes to four amperes during six hundred seconds. The current time area is a rectangle of twelve hundred coulombs plus a triangle of six hundred, giving eighteen hundred coulombs in total. Equivalently, the average of the two endpoint currents is three amperes for this linear ramp. Using the final current for the entire interval would wrongly give twenty four hundred coulombs. In a supplied copper deposition model, only eighty percent of the charge reduces copper two ions to metal; the remainder goes to other electrode processes. Copper receives fourteen hundred forty coulombs. With two electrons per copper atom, Faraday constant ninety six thousand five hundred coulombs per mole and copper molar mass sixty three point five grams per mole, the deposited mass is about zero point four seven four gram. Current efficiency allocates charge, not the number of electrons required by the copper half reaction. An endpoint average is exact for this linear ramp, but a general current trace needs its actual area.",
+      "points": [
+        "Linear ramp: 2 → 4 A · 600 s; mean current 3 A · Total Q = 1800 C",
+        "Cu²⁺ + 2e⁻ → Cu · 80% current efficiency · Cu charge = 1440 C",
+        "MCu=63.5; F=96500 · m = 1440 × 63.5 / (2F) · Approximately .474 g"
+      ],
+      "board": {
+        "heading": "Changing current requires an area under the curve",
+        "columns": [
+          "Specified measurement",
+          "Balance / relation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Linear ramp: 2 → 4 A",
+            "600 s; mean current 3 A",
+            "Total Q = 1800 C"
+          ],
+          [
+            "Cu²⁺ + 2e⁻ → Cu",
+            "80% current efficiency",
+            "Cu charge = 1440 C"
+          ],
+          [
+            "MCu=63.5; F=96500",
+            "m = 1440 × 63.5 / (2F)",
+            "Approximately .474 g"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Alkaline redox balancing must keep hydroxide",
+      "formula": "2MnO₄⁻ + 3SO₃²⁻ + H₂O → 2MnO₂ + 3SO₄²⁻ + 2OH⁻",
+      "script": "Oxidation numbers determine electron exchange, but they do not finish an aqueous equation. In a supplied alkaline model, permanganate is reduced to manganese dioxide while sulfite is oxidized to sulfate. Manganese changes from plus seven to plus four, accepting three electrons per atom. Sulfur changes from plus four to plus six, losing two electrons per atom. The smallest shared electron count is six, so use two permanganates and three sulfites. Completing the basic half reaction balance and cancelling common water and hydroxide gives two permanganates, three sulfites and one water forming two manganese dioxides, three sulfates and two hydroxides. Each side contains two manganese atoms, three sulfur atoms, eighteen oxygen atoms and two hydrogens. Total charge is negative eight on each side. Thus zero point zero two zero zero mole permanganate corresponds to zero point zero three zero zero mole sulfite consumed in this stated net conversion. Do not carry over the five electron acidic permanganate factor: the selected manganese product is different. Medium and endpoint species must be specified before assigning the redox equivalent factor.",
+      "points": [
+        "Mn: +7 → +4; S: +4 → +6 · 3e⁻ accepted; 2e⁻ lost · LCM: 6 electrons",
+        "2MnO₄⁻ + 3SO₃²⁻ + H₂O · 2MnO₂ + 3SO₄²⁻ + 2OH⁻ · Charge −8; O18; H2 each",
+        ".0200 mol permanganate · Sulfite / permanganate = 3/2 · .0300 mol sulfite"
+      ],
+      "board": {
+        "heading": "Alkaline redox balancing must keep hydroxide",
+        "columns": [
+          "Specified measurement",
+          "Balance / relation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Mn: +7 → +4; S: +4 → +6",
+            "3e⁻ accepted; 2e⁻ lost",
+            "LCM: 6 electrons"
+          ],
+          [
+            "2MnO₄⁻ + 3SO₃²⁻ + H₂O",
+            "2MnO₂ + 3SO₄²⁻ + 2OH⁻",
+            "Charge −8; O18; H2 each"
+          ],
+          [
+            ".0200 mol permanganate",
+            "Sulfite / permanganate = 3/2",
+            ".0300 mol sulfite"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Battery capacity counts electrons and active reactants",
+      "formula": "Pb + PbO₂ + 2H₂SO₄ → 2PbSO₄ + 2H₂O; Q = 2Fξ",
+      "script": "Battery capacity in ampere hours is an amount of charge, not an amount of energy. One ampere hour equals three thousand six hundred coulombs. For an ideal lead acid cell discharging by the stated overall reaction, one mole of lead metal and one mole of lead dioxide consume two moles of sulfuric acid while two moles of electrons pass through the external circuit. Thus an ideal one ampere hour discharge corresponds to three thousand six hundred divided by twice the Faraday constant moles of reaction. Using ninety six thousand five hundred coulombs per mole gives about zero point zero one eight seven mole each of lead and lead dioxide consumed, and zero point zero three seven three mole sulfuric acid. The acid is a reactant, not merely an unchanged conducting medium. These are theoretical stoichiometric amounts for one cell under the stated discharge model. Actual usable capacity depends on accessible material, operating conditions and losses. To calculate electrical energy, integrate cell voltage against transferred charge, or use a justified average voltage; an ampere hour rating alone does not supply that voltage.",
+      "points": [
+        "Capacity 1.00 A h · Q = 1.00 × 3600 · 3600 C; not an energy",
+        "One reaction transfers 2e⁻ · ξ = Q/(2F) · .0187 mol Pb and PbO₂",
+        "H₂SO₄ coefficient 2 · Acid consumed = 2ξ · .0373 mol; ideal model"
+      ],
+      "board": {
+        "heading": "Battery capacity counts electrons and active reactants",
+        "columns": [
+          "Specified measurement",
+          "Balance / relation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Capacity 1.00 A h",
+            "Q = 1.00 × 3600",
+            "3600 C; not an energy"
+          ],
+          [
+            "One reaction transfers 2e⁻",
+            "ξ = Q/(2F)",
+            ".0187 mol Pb and PbO₂"
+          ],
+          [
+            "H₂SO₄ coefficient 2",
+            "Acid consumed = 2ξ",
+            ".0373 mol; ideal model"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -957,6 +1101,94 @@
       ],
       "answer": 3,
       "explanation": "Each O2 molecule corresponds to four electrons, so 0.200 mol electrons gives 0.0500 mol O2."
+    },
+    {
+      "question": "A conductivity standard has κ=.00120 S/cm and R=100 Ω. The calibrated cell constant is:",
+      "options": [
+        ".120 cm⁻¹",
+        "120 cm⁻¹",
+        ".000012 cm⁻¹",
+        "83333 cm⁻¹"
+      ],
+      "answer": 0,
+      "explanation": "The cell constant equals κR=.00120×100=.120 cm⁻¹."
+    },
+    {
+      "question": "That cell measures an unknown R=300 Ω at c=.00200 mol/L. Its molar conductivity is:",
+      "options": [
+        ".400 S cm²/mol",
+        "200 S cm²/mol",
+        "2.00 S cm²/mol",
+        "600 S cm²/mol"
+      ],
+      "answer": 1,
+      "explanation": "κ=.120/300=.000400 S/cm; Λm=1000κ/c=200 S cm²/mol."
+    },
+    {
+      "question": "Current rises linearly from 2 to 4 A over 600 s. Total charge is:",
+      "options": [
+        "1200 C",
+        "2400 C",
+        "1800 C",
+        "3600 C"
+      ],
+      "answer": 2,
+      "explanation": "The mean current is 3 A for this linear ramp; Q=3×600=1800 C."
+    },
+    {
+      "question": "For that charge, Cu²⁺ deposition at 80% efficiency with F=96500 C/mol and MCu=63.5 g/mol gives approximately:",
+      "options": [
+        ".592 g",
+        ".948 g",
+        ".237 g",
+        ".474 g"
+      ],
+      "answer": 3,
+      "explanation": "Only 1440 C deposits copper, so m=1440×63.5/(2×96500)=.474 g."
+    },
+    {
+      "question": "In the stated alkaline MnO4−→MnO2 and SO3²−→SO4²− model, the permanganate:sulfite coefficient ratio is:",
+      "options": [
+        "2:3",
+        "1:5",
+        "3:2",
+        "1:1"
+      ],
+      "answer": 0,
+      "explanation": "Manganese accepts three electrons and sulfur loses two; the smallest common exchange is six."
+    },
+    {
+      "question": "For .0200 mol MnO4− completely converted to MnO2 in that net model, consumed sulfite is:",
+      "options": [
+        ".0200 mol",
+        ".0300 mol",
+        ".0500 mol",
+        ".0133 mol"
+      ],
+      "answer": 1,
+      "explanation": "The balanced ratio SO3²−:MnO4− is 3:2, giving .0300 mol sulfite."
+    },
+    {
+      "question": "A capacity rating of 1.00 A h corresponds to charge:",
+      "options": [
+        "1 C",
+        "60 C",
+        "3600 C",
+        "96500 C"
+      ],
+      "answer": 2,
+      "explanation": "One hour is 3600 seconds, and one ampere equals one coulomb per second."
+    },
+    {
+      "question": "For an ideal single lead-acid cell transferring 3600 C on discharge, the stated overall equation predicts H2SO4 consumption approximately:",
+      "options": [
+        ".0187 mol",
+        ".00933 mol",
+        ".0746 mol",
+        ".0373 mol"
+      ],
+      "answer": 3,
+      "explanation": "There are two acid molecules per two transferred electrons; acid amount=Q/F≈.0373 mol."
     }
   ]
 }

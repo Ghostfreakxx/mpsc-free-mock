@@ -3,7 +3,7 @@ const read=id=>JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`));
 const k=read('chemical-kinetics'),c=read('coordination-compounds'),e=read('equilibrium');
 const a=(l,i)=>l.quiz[i].options[l.quiz[i].answer];const near=(actual,expected,tolerance=1e-10)=>assert.ok(Math.abs(actual-expected)<tolerance,`${actual} != ${expected}`);
 test('new rate questions preserve axis conventions, order units, amount and branch balances',()=>{
- assert.deepEqual(k.quiz.slice(18).map(q=>q.answer),[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3]);
+ assert.deepEqual(k.quiz.slice(18).map(q=>q.answer),[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3]);
  assert.equal(a(k,18),`${6000*8.314/1000} kJ/mol`);assert.equal(a(k,20),'1/2');near(Math.log(2)/Math.log(4),.5);
  assert.equal(a(k,21),'M⁻¹ᐟ² s⁻¹');near(1-(.5+1),-.5);
  assert.equal(a(k,22),'0.100 mol A');assert.equal(a(k,23),'0.0250 M');near(.100*Math.exp(-Math.log(2))/2,.025);

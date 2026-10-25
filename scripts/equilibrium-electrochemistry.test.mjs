@@ -5,9 +5,9 @@ import { equilibriumElectrochemistryLessons as lessons } from '../app/jee/classe
 test('equilibrium and electrochemistry remain written foundations mapped to Units 6 and 7', () => {
   assert.deepEqual(lessons.map(l => l.unit), [6, 7]);
   for (const lesson of lessons) {
-    assert.equal(lesson.sections.length, lesson.id === 'equilibrium' ? 21 : 19);
-    assert.equal(lesson.examples.length, lesson.id === 'equilibrium' ? 16 : 13);
-    assert.equal(lesson.quiz.length, lesson.id === 'equilibrium' ? 34 : 26);
+    assert.equal(lesson.sections.length, lesson.id === 'equilibrium' ? 21 : 23);
+    assert.equal(lesson.examples.length, 16);
+    assert.equal(lesson.quiz.length, 34);
     assert.match(lesson.remaining, /Marin recording and written notes, not complete unit coverage/);
   }
 });

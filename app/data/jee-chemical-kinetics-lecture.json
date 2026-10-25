@@ -25,6 +25,22 @@
     {
       "title": "OpenStax: catalysis",
       "url": "https://openstax.org/books/chemistry-2e/pages/12-7-catalysis"
+    },
+    {
+      "title": "OpenStax: average and instantaneous reaction rates",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-1-chemical-reaction-rates"
+    },
+    {
+      "title": "Indiana University East: interpreting iodine-clock kinetics",
+      "url": "https://iu.pressbooks.pub/iuegenchemlabs/chapter/kinetics-of-the-iodine-clock-reaction/"
+    },
+    {
+      "title": "University of Michigan: batch mole-balance derivation",
+      "url": "https://websites.umich.edu/~elements/7e/02chap/summary-derive_batch.html"
+    },
+    {
+      "title": "Texas A&M: reversible reaction rates and relaxation",
+      "url": "https://www.chem.tamu.edu/class/majors/chem328/CHEM%20328_Chapter%2020.pdf"
     }
   ],
   "chapters": [
@@ -538,6 +554,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "A clock time measures a specified product threshold",
+      "formula": "Mean formation rate = cumulative product threshold / elapsed time",
+      "script": "A clock measurement records the time needed to reach a specified chemical threshold. It does not directly measure a rate constant. Suppose a calibrated iodine clock signals after a cumulative iodine production of zero point zero zero zero two zero zero mole per litre of final mixture. This is iodine produced over the interval, not necessarily free iodine accumulated, because a fast auxiliary reaction can consume iodine until its scavenger is exhausted. Reaching that same threshold in twenty seconds gives average iodine formation rate one point zero zero times ten to the negative five mole per litre per second. Forty seconds gives half that rate. Comparing reciprocal times is valid only when the threshold and volume convention match. If conversion is small enough that reactant concentrations barely change, these averages may approximate initial rates. A large threshold, changing scavenger amount, mixing delay or a different detection criterion can invalidate that shortcut. In the thiosulfate clock model, two thiosulfates consume one iodine, so the cumulative iodine threshold is half the initial thiosulfate concentration in the final mixture. This is interpretation of supplied measurements, not a preparation procedure.",
+      "points": [
+        "Same iodine threshold · .000200 mol/L cumulative · Not necessarily free [I₂]",
+        "Clock times: 20 s and 40 s · Divide threshold by time · 1.00×10⁻⁵ and 5.00×10⁻⁶",
+        "Use reciprocal-time ratios · Fixed threshold; small conversion · Approximate initial rates only"
+      ],
+      "board": {
+        "heading": "A clock time measures a specified product threshold",
+        "columns": [
+          "Specified measurement",
+          "Balance / relation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Same iodine threshold",
+            ".000200 mol/L cumulative",
+            "Not necessarily free [I₂]"
+          ],
+          [
+            "Clock times: 20 s and 40 s",
+            "Divide threshold by time",
+            "1.00×10⁻⁵ and 5.00×10⁻⁶"
+          ],
+          [
+            "Use reciprocal-time ratios",
+            "Fixed threshold; small conversion",
+            "Approximate initial rates only"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A tangent rate differs from a finite-interval average",
+      "formula": "For [A]=[A]₀e⁻ᵏᵗ: instantaneous disappearance rate = k[A](t)",
+      "script": "Average and instantaneous rates answer different questions about the same concentration curve. Consider a supplied first order disappearance at fixed volume with initial concentration zero point one zero zero molar and rate constant zero point one zero zero per minute. After ten minutes, concentration is zero point one times exponential minus one, about zero point zero three six eight molar. The mean disappearance rate over those ten minutes is the lost concentration divided by ten, about zero point zero zero six three two molar per minute. At the midpoint, five minutes, the instantaneous rate is instead k times the concentration at that instant, about zero point zero zero six zero seven molar per minute. A secant slope over an interval and a tangent slope at one time need not agree, even if that time is the interval midpoint. For this decaying exponential the rate falls continuously as reactant disappears. Shortening an interval around a chosen instant makes its mean approach the tangent value, subject to measurement uncertainty. A straight line concentration trace would be a different case in which interval and tangent slopes are equal.",
+      "points": [
+        "[A]₀=.100 M; k=.100/min · [A](10)=.100e⁻¹ · .0368 M remaining",
+        "Mean over 0–10 min · (.100 − .0368)/10 · .00632 M/min",
+        "Instantaneous at 5 min · .100 × .100e⁻⁰·⁵ · .00607 M/min"
+      ],
+      "board": {
+        "heading": "A tangent rate differs from a finite-interval average",
+        "columns": [
+          "Specified measurement",
+          "Balance / relation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "[A]₀=.100 M; k=.100/min",
+            "[A](10)=.100e⁻¹",
+            ".0368 M remaining"
+          ],
+          [
+            "Mean over 0–10 min",
+            "(.100 − .0368)/10",
+            ".00632 M/min"
+          ],
+          [
+            "Instantaneous at 5 min",
+            ".100 × .100e⁻⁰·⁵",
+            ".00607 M/min"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting balance: changing volume also changes concentration",
+      "formula": "nA = CA V; dCA/dt = −rA,loss − (CA/V)(dV/dt)",
+      "script": "Concentration can fall because a substance reacts and because its occupied volume increases. As a supporting material balance, consider a uniform closed reacting system whose boundary can move, with no inflow or outflow of A. Write its amount as concentration times volume. Differentiating that product gives amount change equal to volume times concentration change plus concentration times volume change. Define the positive chemical disappearance rate per current volume as r. Then the concentration derivative is negative r minus concentration divided by volume times the volume derivative. At a specified instant let volume be one litre, A concentration zero point one zero zero molar, chemical disappearance rate zero point zero zero two zero zero molar per second and expansion rate zero point zero one zero zero litre per second. The expansion contributes an additional concentration decrease of zero point zero zero one zero zero molar per second. The observed concentration slope is therefore negative zero point zero zero three zero zero, while chemical amount loss is only zero point zero zero two zero zero mole per second. This distinction extends the constant volume rate definition; it is not an additional required integrated-order law.",
+      "points": [
+        "At an instant: V=1.00 L · CA=.100 M; dV/dt=.0100 L/s · Closed to flow of A",
+        "Chemical loss r=.00200 M/s · Expansion term=.00100 M/s · dCA/dt=−.00300 M/s",
+        "Amount balance: −dnA/dt=rV · Chemical loss=.00200 mol/s · Concentration loss ≠ reaction alone"
+      ],
+      "board": {
+        "heading": "Supporting balance: changing volume also changes concentration",
+        "columns": [
+          "Specified measurement",
+          "Balance / relation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "At an instant: V=1.00 L",
+            "CA=.100 M; dV/dt=.0100 L/s",
+            "Closed to flow of A"
+          ],
+          [
+            "Chemical loss r=.00200 M/s",
+            "Expansion term=.00100 M/s",
+            "dCA/dt=−.00300 M/s"
+          ],
+          [
+            "Amount balance: −dnA/dt=rV",
+            "Chemical loss=.00200 mol/s",
+            "Concentration loss ≠ reaction alone"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting model: reversible first-order relaxation",
+      "formula": "A ⇌ B: krelax = kf + kr; [B]eq/[A]eq = kf/kr",
+      "script": "A reversible first order model approaches an equilibrium plateau rather than consuming all reactant. Consider a fixed volume closed system with one to one conversion between A and B. Let forward and reverse constants be zero point one zero zero and zero point zero five zero zero per minute, and let their conserved total concentration be zero point three zero zero molar. Equal opposing rates at equilibrium give B to A concentration ratio two. The equilibrium concentrations are therefore zero point two zero zero molar B and zero point one zero zero molar A. The supplied relaxation result says displacement from equilibrium decays with the sum of the two constants, zero point one five zero per minute. Its half time is natural logarithm two divided by that sum, about four point six two minutes. Starting with only A, after one such half time B is zero point one zero zero molar and A is zero point two zero zero. This halves the distance to equilibrium, not the initial A concentration. It is a supporting kinetic model, not a universal formula for every reversible mechanism. The ratio of these two constants describes equilibrium only for the stated compatible rate laws.",
+      "points": [
+        "kf=.100/min; kr=.0500/min · A+B=.300 M; ratio B/A=2 · Aeq=.100; Beq=.200 M",
+        "Deviation from equilibrium · Decays with kf+kr=.150/min · Half-time ln2/.150=4.62 min",
+        "Initially only A; one half-time · A=.200 M; B=.100 M · Distance to equilibrium halves"
+      ],
+      "board": {
+        "heading": "Supporting model: reversible first-order relaxation",
+        "columns": [
+          "Specified measurement",
+          "Balance / relation",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "kf=.100/min; kr=.0500/min",
+            "A+B=.300 M; ratio B/A=2",
+            "Aeq=.100; Beq=.200 M"
+          ],
+          [
+            "Deviation from equilibrium",
+            "Decays with kf+kr=.150/min",
+            "Half-time ln2/.150=4.62 min"
+          ],
+          [
+            "Initially only A; one half-time",
+            "A=.200 M; B=.100 M",
+            "Distance to equilibrium halves"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -914,6 +1070,94 @@
       ],
       "answer": 3,
       "explanation": "With kt=1, the supplied fraction kt exp(−kt) becomes exp(−1)=1/e, about 0.368."
+    },
+    {
+      "question": "A clock threshold is .000200 mol/L of cumulative iodine formed in 20.0 s. Mean iodine formation rate is:",
+      "options": [
+        "1.00×10⁻⁵ mol/(L s)",
+        "1.00×10⁻² mol/(L s)",
+        "4.00×10⁻³ mol/(L s)",
+        "1.00×10⁻⁴ mol/(L s)"
+      ],
+      "answer": 0,
+      "explanation": "Divide the supplied cumulative production by elapsed time: .000200/20=1.00×10⁻⁵."
+    },
+    {
+      "question": "Comparing reciprocal clock times as approximate initial rates requires:",
+      "options": [
+        "Different thresholds for each run",
+        "The same calibrated threshold and sufficiently small conversion",
+        "No knowledge of the final mixture volume convention",
+        "A first-order mechanism in every case"
+      ],
+      "answer": 1,
+      "explanation": "The fixed-threshold ratio gives mean-rate ratios; small conversion is needed for an initial-rate approximation."
+    },
+    {
+      "question": "For [A]0=.100 M and k=.100/min, the mean disappearance rate over 0–10 min is approximately:",
+      "options": [
+        ".0100 M/min",
+        ".00368 M/min",
+        ".00632 M/min",
+        ".100 M/min"
+      ],
+      "answer": 2,
+      "explanation": "The mean is (.100−.100e⁻¹)/10=.006321 M/min."
+    },
+    {
+      "question": "For the same first-order model, instantaneous disappearance rate at 5 min is approximately:",
+      "options": [
+        ".00632 M/min",
+        ".0100 M/min",
+        ".0607 M/min",
+        ".00607 M/min"
+      ],
+      "answer": 3,
+      "explanation": "Use k[A](5)=.100×.100e⁻⁰·⁵=.006065 M/min."
+    },
+    {
+      "question": "At V=1.00 L, CA=.100 M, dV/dt=.0100 L/s and positive chemical loss r=.00200 M/s, dCA/dt is:",
+      "options": [
+        "−.00300 M/s",
+        "−.00200 M/s",
+        "−.00100 M/s",
+        "+.00300 M/s"
+      ],
+      "answer": 0,
+      "explanation": "The expansion term is −(CA/V)dV/dt=−.00100 M/s, added to chemical concentration loss −.00200 M/s."
+    },
+    {
+      "question": "In that closed, uniformly reacting system, the positive chemical amount-loss rate is:",
+      "options": [
+        ".00300 mol/s",
+        ".00200 mol/s",
+        ".00100 mol/s",
+        ".0100 mol/s"
+      ],
+      "answer": 1,
+      "explanation": "Chemical loss is rV=.00200×1.00=.00200 mol/s; expansion alone does not destroy A."
+    },
+    {
+      "question": "For A⇌B with kf=.100/min, kr=.0500/min and total concentration .300 M, equilibrium [B] is:",
+      "options": [
+        ".100 M",
+        ".150 M",
+        ".200 M",
+        ".300 M"
+      ],
+      "answer": 2,
+      "explanation": "Equal opposing rates require B/A=2; with A+B=.300 M, B=.200 M."
+    },
+    {
+      "question": "Starting with only A in that model, one relaxation half-time gives:",
+      "options": [
+        "A=.150 M, B=.150 M",
+        "A=.100 M, B=.200 M",
+        "A=0, B=.300 M",
+        "A=.200 M, B=.100 M"
+      ],
+      "answer": 3,
+      "explanation": "The distance to equilibrium halves in ln2/(kf+kr)≈4.62 min; this is not necessarily halving A itself."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "duration": 1436.1600000000387,
+  "duration": 1730.5200000000466,
   "chapters": [
     {
       "start": 0,
@@ -72,6 +72,22 @@
     {
       "start": 1363.5600000000368,
       "end": 1436.1600000000387
+    },
+    {
+      "start": 1436.1600000000387,
+      "end": 1514.424000000041
+    },
+    {
+      "start": 1514.424000000041,
+      "end": 1585.2720000000427
+    },
+    {
+      "start": 1585.2720000000427,
+      "end": 1660.3200000000447
+    },
+    {
+      "start": 1660.3200000000447,
+      "end": 1730.5200000000466
     }
   ],
   "cues": [
@@ -2774,6 +2790,540 @@
       "end": 1436.000002441443,
       "text": "it means its consumption rate exceeds its formation rate.",
       "chapter": 17
+    },
+    {
+      "start": 1436.1600000000387,
+      "end": 1440.1799999809652,
+      "text": "A clock measurement records the time needed to reach a specified chemical",
+      "chapter": 18
+    },
+    {
+      "start": 1440.1799999809652,
+      "end": 1440.6600000000387,
+      "text": "threshold.",
+      "chapter": 18
+    },
+    {
+      "start": 1441.3399998283774,
+      "end": 1443.4600001907736,
+      "text": "It does not directly measure a rate constant.",
+      "chapter": 18
+    },
+    {
+      "start": 1444.479999694863,
+      "end": 1448.6200000381857,
+      "text": "Suppose a calibrated iodine clock signals after a cumulative iodine production",
+      "chapter": 18
+    },
+    {
+      "start": 1448.6200000381857,
+      "end": 1454.0800000763327,
+      "text": "of zero point zero zero zero two zero zero mole per litre of final mixture.",
+      "chapter": 18
+    },
+    {
+      "start": 1454.8600007629782,
+      "end": 1459.1199990845114,
+      "text": "This is iodine produced over the interval, not necessarily free iodine",
+      "chapter": 18
+    },
+    {
+      "start": 1459.1199990845114,
+      "end": 1464.0800000763327,
+      "text": "accumulated, because a fast auxiliary reaction can consume iodine until its",
+      "chapter": 18
+    },
+    {
+      "start": 1464.0800000763327,
+      "end": 1465.2199994659811,
+      "text": "scavenger is exhausted.",
+      "chapter": 18
+    },
+    {
+      "start": 1466.4200002289206,
+      "end": 1470.3600007629782,
+      "text": "Reaching that same threshold in twenty seconds gives average iodine formation",
+      "chapter": 18
+    },
+    {
+      "start": 1470.3600007629782,
+      "end": 1475.2799989319235,
+      "text": "rate one point zero zero times ten to the negative five mole per litre per",
+      "chapter": 18
+    },
+    {
+      "start": 1475.2799989319235,
+      "end": 1475.5000001526266,
+      "text": "second.",
+      "chapter": 18
+    },
+    {
+      "start": 1476.2599984741598,
+      "end": 1478.2200013733298,
+      "text": "Forty seconds gives half that rate.",
+      "chapter": 18
+    },
+    {
+      "start": 1479.3199998474508,
+      "end": 1482.979999694863,
+      "text": "Comparing reciprocal times is valid only when the threshold and volume",
+      "chapter": 18
+    },
+    {
+      "start": 1482.979999694863,
+      "end": 1483.8199998474508,
+      "text": "convention match.",
+      "chapter": 18
+    },
+    {
+      "start": 1484.579998168984,
+      "end": 1488.7541034464123,
+      "text": "If conversion is small enough that reactant concentrations barely change,",
+      "chapter": 18
+    },
+    {
+      "start": 1488.7541034464123,
+      "end": 1489.040001068154,
+      "text": "these",
+      "chapter": 18
+    },
+    {
+      "start": 1489.040001068154,
+      "end": 1490.9399987793356,
+      "text": "averages may approximate initial rates.",
+      "chapter": 18
+    },
+    {
+      "start": 1491.6199990845114,
+      "end": 1495.919998321572,
+      "text": "A large threshold, changing scavenger amount, mixing delay or a different",
+      "chapter": 18
+    },
+    {
+      "start": 1495.919998321572,
+      "end": 1498.5200006103903,
+      "text": "detection criterion can invalidate that shortcut.",
+      "chapter": 18
+    },
+    {
+      "start": 1499.2200013733298,
+      "end": 1504.1799966431051,
+      "text": "In the thiosulfate clock model, two thiosulfates consume one iodine, so the",
+      "chapter": 18
+    },
+    {
+      "start": 1504.1799966431051,
+      "end": 1508.4600030517965,
+      "text": "cumulative iodine threshold is half the initial thiosulfate concentration in",
+      "chapter": 18
+    },
+    {
+      "start": 1508.4600030517965,
+      "end": 1509.1799966431051,
+      "text": "the final mixture.",
+      "chapter": 18
+    },
+    {
+      "start": 1510.1400033569723,
+      "end": 1514.2400018310934,
+      "text": "This is interpretation of supplied measurements, not a preparation procedure.",
+      "chapter": 18
+    },
+    {
+      "start": 1514.424000000041,
+      "end": 1518.583999847453,
+      "text": "Average and instantaneous rates answer different questions about the same",
+      "chapter": 19
+    },
+    {
+      "start": 1518.583999847453,
+      "end": 1519.3840000381879,
+      "text": "concentration curve.",
+      "chapter": 19
+    },
+    {
+      "start": 1520.6439997902326,
+      "end": 1524.6440002670697,
+      "text": "Consider a supplied first order disappearance at fixed volume with initial",
+      "chapter": 19
+    },
+    {
+      "start": 1524.6440002670697,
+      "end": 1529.3240000954083,
+      "text": "concentration zero point one zero zero molar and rate constant zero point one",
+      "chapter": 19
+    },
+    {
+      "start": 1529.3240000954083,
+      "end": 1530.4839994659833,
+      "text": "zero zero per minute.",
+      "chapter": 19
+    },
+    {
+      "start": 1531.2239992371015,
+      "end": 1535.512204799595,
+      "text": "After ten minutes, concentration is zero point one times exponential minus",
+      "chapter": 19
+    },
+    {
+      "start": 1535.512204799595,
+      "end": 1535.7439996948651,
+      "text": "one,",
+      "chapter": 19
+    },
+    {
+      "start": 1536.2640001526288,
+      "end": 1538.3640005340985,
+      "text": "about zero point zero three six eight molar.",
+      "chapter": 19
+    },
+    {
+      "start": 1539.2640001526288,
+      "end": 1543.1040003052167,
+      "text": "The mean disappearance rate over those ten minutes is the lost concentration",
+      "chapter": 19
+    },
+    {
+      "start": 1543.1040003052167,
+      "end": 1548.0439989319257,
+      "text": "divided by ten, about zero point zero zero six three two molar per minute.",
+      "chapter": 19
+    },
+    {
+      "start": 1548.8439981689862,
+      "end": 1553.424000000041,
+      "text": "At the midpoint, five minutes, the instantaneous rate is instead k times the",
+      "chapter": 19
+    },
+    {
+      "start": 1553.424000000041,
+      "end": 1558.2439996948651,
+      "text": "concentration at that instant, about zero point zero zero six zero seven molar",
+      "chapter": 19
+    },
+    {
+      "start": 1558.2439996948651,
+      "end": 1558.8040010681561,
+      "text": "per minute.",
+      "chapter": 19
+    },
+    {
+      "start": 1559.4640009155682,
+      "end": 1563.728615314231,
+      "text": "A secant slope over an interval and a tangent slope at one time need not",
+      "chapter": 19
+    },
+    {
+      "start": 1563.728615314231,
+      "end": 1564.083999847453,
+      "text": "agree,",
+      "chapter": 19
+    },
+    {
+      "start": 1564.644001220744,
+      "end": 1566.4039995422772,
+      "text": "even if that time is the interval midpoint.",
+      "chapter": 19
+    },
+    {
+      "start": 1567.0040018310956,
+      "end": 1571.083999847453,
+      "text": "For this decaying exponential the rate falls continuously as reactant",
+      "chapter": 19
+    },
+    {
+      "start": 1571.083999847453,
+      "end": 1571.644001220744,
+      "text": "disappears.",
+      "chapter": 19
+    },
+    {
+      "start": 1572.683998321574,
+      "end": 1576.2640001526288,
+      "text": "Shortening an interval around a chosen instant makes its mean approach the",
+      "chapter": 19
+    },
+    {
+      "start": 1576.2640001526288,
+      "end": 1578.5840036621503,
+      "text": "tangent value, subject to measurement uncertainty.",
+      "chapter": 19
+    },
+    {
+      "start": 1579.4040033569745,
+      "end": 1582.9757943945096,
+      "text": "A straight line concentration trace would be a different case in which",
+      "chapter": 19
+    },
+    {
+      "start": 1582.9757943945096,
+      "end": 1583.3839990845136,
+      "text": "interval",
+      "chapter": 19
+    },
+    {
+      "start": 1583.3839990845136,
+      "end": 1584.9640009155682,
+      "text": "and tangent slopes are equal.",
+      "chapter": 19
+    },
+    {
+      "start": 1586.0519999714325,
+      "end": 1589.7919999809692,
+      "text": "Concentration can fall because a substance reacts and because its occupied",
+      "chapter": 20
+    },
+    {
+      "start": 1589.7919999809692,
+      "end": 1591.632000133557,
+      "text": "volume increases.",
+      "chapter": 20
+    },
+    {
+      "start": 1591.632000133557,
+      "end": 1595.5320002289245,
+      "text": "As a supporting material balance, consider a uniform closed reacting system",
+      "chapter": 20
+    },
+    {
+      "start": 1595.5320002289245,
+      "end": 1598.9120003433654,
+      "text": "whose boundary can move, with no inflow or outflow of A.",
+      "chapter": 20
+    },
+    {
+      "start": 1599.9120003433654,
+      "end": 1601.9520003052185,
+      "text": "Write its amount as concentration times volume.",
+      "chapter": 20
+    },
+    {
+      "start": 1602.9520003052185,
+      "end": 1606.331999465985,
+      "text": "Differentiating that product gives amount change equal to volume times",
+      "chapter": 20
+    },
+    {
+      "start": 1606.331999465985,
+      "end": 1609.5119997711608,
+      "text": "concentration change plus concentration times volume change.",
+      "chapter": 20
+    },
+    {
+      "start": 1610.4319998474548,
+      "end": 1613.7920004578064,
+      "text": "Define the positive chemical disappearance rate per current volume as r.",
+      "chapter": 20
+    },
+    {
+      "start": 1613.7920004578064,
+      "end": 1619.1120001526306,
+      "text": "Then the concentration derivative is negative r minus concentration divided by",
+      "chapter": 20
+    },
+    {
+      "start": 1619.1120001526306,
+      "end": 1620.9319998474548,
+      "text": "volume times the volume derivative.",
+      "chapter": 20
+    },
+    {
+      "start": 1622.2920004578064,
+      "end": 1627.1819998474548,
+      "text": "At a specified instant let volume be one litre, A concentration zero point one",
+      "chapter": 20
+    },
+    {
+      "start": 1627.1819998474548,
+      "end": 1631.252000716032,
+      "text": "zero zero molar, chemical disappearance rate zero point zero zero two zero",
+      "chapter": 20
+    },
+    {
+      "start": 1631.252000716032,
+      "end": 1631.4720007629821,
+      "text": "zero",
+      "chapter": 20
+    },
+    {
+      "start": 1631.4720007629821,
+      "end": 1635.81200091557,
+      "text": "molar per second and expansion rate zero point zero one zero zero litre per",
+      "chapter": 20
+    },
+    {
+      "start": 1635.81200091557,
+      "end": 1636.0120016785095,
+      "text": "second.",
+      "chapter": 20
+    },
+    {
+      "start": 1636.0120016785095,
+      "end": 1640.7553316803405,
+      "text": "The expansion contributes an additional concentration decrease of zero point",
+      "chapter": 20
+    },
+    {
+      "start": 1640.7553316803405,
+      "end": 1642.8320013733337,
+      "text": "zero zero one zero zero molar per second.",
+      "chapter": 20
+    },
+    {
+      "start": 1643.8719984741638,
+      "end": 1647.8020006866882,
+      "text": "The observed concentration slope is therefore negative zero point zero zero",
+      "chapter": 20
+    },
+    {
+      "start": 1647.8020006866882,
+      "end": 1652.111998881065,
+      "text": "three zero zero, while chemical amount loss is only zero point zero zero two",
+      "chapter": 20
+    },
+    {
+      "start": 1652.111998881065,
+      "end": 1653.4520003052185,
+      "text": "zero zero mole per second.",
+      "chapter": 20
+    },
+    {
+      "start": 1654.212002441449,
+      "end": 1658.2520033569763,
+      "text": "This distinction extends the constant volume rate definition; it is not an",
+      "chapter": 20
+    },
+    {
+      "start": 1658.2520033569763,
+      "end": 1660.1119963379333,
+      "text": "additional required integrated order law.",
+      "chapter": 20
+    },
+    {
+      "start": 1660.3200000000447,
+      "end": 1665.1800001335591,
+      "text": "A reversible first order model approaches an equilibrium plateau rather than",
+      "chapter": 21
+    },
+    {
+      "start": 1665.1800001335591,
+      "end": 1666.3000000191182,
+      "text": "consuming all reactant.",
+      "chapter": 21
+    },
+    {
+      "start": 1667.7600000572652,
+      "end": 1671.4799998474568,
+      "text": "Consider a fixed volume closed system with one to one conversion between A and",
+      "chapter": 21
+    },
+    {
+      "start": 1671.4799998474568,
+      "end": 1671.6600001526326,
+      "text": "B.",
+      "chapter": 21
+    },
+    {
+      "start": 1672.4600003433675,
+      "end": 1676.1200000000447,
+      "text": "Let forward and reverse constants be zero point one zero zero and zero point",
+      "chapter": 21
+    },
+    {
+      "start": 1676.1200000000447,
+      "end": 1680.3999999237508,
+      "text": "zero five zero zero per minute, and let their conserved total concentration be",
+      "chapter": 21
+    },
+    {
+      "start": 1680.3999999237508,
+      "end": 1681.8999999237508,
+      "text": "zero point three zero zero molar.",
+      "chapter": 21
+    },
+    {
+      "start": 1682.6800006103963,
+      "end": 1686.7400000763387,
+      "text": "Equal opposing rates at equilibrium give B to A concentration ratio two.",
+      "chapter": 21
+    },
+    {
+      "start": 1687.719999618575,
+      "end": 1691.559999771163,
+      "text": "The equilibrium concentrations are therefore zero point two zero zero molar B",
+      "chapter": 21
+    },
+    {
+      "start": 1691.559999771163,
+      "end": 1693.9399989319295,
+      "text": "and zero point one zero zero molar A.",
+      "chapter": 21
+    },
+    {
+      "start": 1694.73999816899,
+      "end": 1698.4399989319295,
+      "text": "The supplied relaxation result says displacement from equilibrium decays with",
+      "chapter": 21
+    },
+    {
+      "start": 1698.4399989319295,
+      "end": 1701.799999542281,
+      "text": "the sum of the two constants, zero point one five zero per minute.",
+      "chapter": 21
+    },
+    {
+      "start": 1702.7599986267537,
+      "end": 1707.31333318079,
+      "text": "Its half time is natural logarithm two divided by that sum, about four point",
+      "chapter": 21
+    },
+    {
+      "start": 1707.31333318079,
+      "end": 1708.0400012207479,
+      "text": "six two minutes.",
+      "chapter": 21
+    },
+    {
+      "start": 1709.20000106816,
+      "end": 1712.6600001526326,
+      "text": "Starting with only A, after one such half time B is zero point one zero zero",
+      "chapter": 21
+    },
+    {
+      "start": 1712.6600001526326,
+      "end": 1715.4799998474568,
+      "text": "molar and A is zero point two zero zero.",
+      "chapter": 21
+    },
+    {
+      "start": 1715.4799998474568,
+      "end": 1719.5999987793416,
+      "text": "This halves the distance to equilibrium, not the initial A concentration.",
+      "chapter": 21
+    },
+    {
+      "start": 1720.3200000000447,
+      "end": 1724.1600001526326,
+      "text": "It is a supporting kinetic model, not a universal formula for every reversible",
+      "chapter": 21
+    },
+    {
+      "start": 1724.1600001526326,
+      "end": 1724.6200030518025,
+      "text": "mechanism.",
+      "chapter": 21
+    },
+    {
+      "start": 1725.1999972534627,
+      "end": 1728.8000033569783,
+      "text": "The ratio of these two constants describes equilibrium only for the stated",
+      "chapter": 21
+    },
+    {
+      "start": 1728.8000033569783,
+      "end": 1729.8000033569783,
+      "text": "compatible rate laws.",
+      "chapter": 21
     }
   ]
 }

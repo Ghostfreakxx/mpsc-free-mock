@@ -1349,3 +1349,270 @@ A falling intermediate concentration does not mean its formation has stopped;
 
 00:23:53.220 --> 00:23:56.000
 it means its consumption rate exceeds its formation rate.
+
+00:23:56.160 --> 00:24:00.180
+A clock measurement records the time needed to reach a specified chemical
+
+00:24:00.180 --> 00:24:00.660
+threshold.
+
+00:24:01.340 --> 00:24:03.460
+It does not directly measure a rate constant.
+
+00:24:04.480 --> 00:24:08.620
+Suppose a calibrated iodine clock signals after a cumulative iodine production
+
+00:24:08.620 --> 00:24:14.080
+of zero point zero zero zero two zero zero mole per litre of final mixture.
+
+00:24:14.860 --> 00:24:19.120
+This is iodine produced over the interval, not necessarily free iodine
+
+00:24:19.120 --> 00:24:24.080
+accumulated, because a fast auxiliary reaction can consume iodine until its
+
+00:24:24.080 --> 00:24:25.220
+scavenger is exhausted.
+
+00:24:26.420 --> 00:24:30.360
+Reaching that same threshold in twenty seconds gives average iodine formation
+
+00:24:30.360 --> 00:24:35.280
+rate one point zero zero times ten to the negative five mole per litre per
+
+00:24:35.280 --> 00:24:35.500
+second.
+
+00:24:36.260 --> 00:24:38.220
+Forty seconds gives half that rate.
+
+00:24:39.320 --> 00:24:42.980
+Comparing reciprocal times is valid only when the threshold and volume
+
+00:24:42.980 --> 00:24:43.820
+convention match.
+
+00:24:44.580 --> 00:24:48.754
+If conversion is small enough that reactant concentrations barely change,
+
+00:24:48.754 --> 00:24:49.040
+these
+
+00:24:49.040 --> 00:24:50.940
+averages may approximate initial rates.
+
+00:24:51.620 --> 00:24:55.920
+A large threshold, changing scavenger amount, mixing delay or a different
+
+00:24:55.920 --> 00:24:58.520
+detection criterion can invalidate that shortcut.
+
+00:24:59.220 --> 00:25:04.180
+In the thiosulfate clock model, two thiosulfates consume one iodine, so the
+
+00:25:04.180 --> 00:25:08.460
+cumulative iodine threshold is half the initial thiosulfate concentration in
+
+00:25:08.460 --> 00:25:09.180
+the final mixture.
+
+00:25:10.140 --> 00:25:14.240
+This is interpretation of supplied measurements, not a preparation procedure.
+
+00:25:14.424 --> 00:25:18.584
+Average and instantaneous rates answer different questions about the same
+
+00:25:18.584 --> 00:25:19.384
+concentration curve.
+
+00:25:20.644 --> 00:25:24.644
+Consider a supplied first order disappearance at fixed volume with initial
+
+00:25:24.644 --> 00:25:29.324
+concentration zero point one zero zero molar and rate constant zero point one
+
+00:25:29.324 --> 00:25:30.484
+zero zero per minute.
+
+00:25:31.224 --> 00:25:35.512
+After ten minutes, concentration is zero point one times exponential minus
+
+00:25:35.512 --> 00:25:35.744
+one,
+
+00:25:36.264 --> 00:25:38.364
+about zero point zero three six eight molar.
+
+00:25:39.264 --> 00:25:43.104
+The mean disappearance rate over those ten minutes is the lost concentration
+
+00:25:43.104 --> 00:25:48.044
+divided by ten, about zero point zero zero six three two molar per minute.
+
+00:25:48.844 --> 00:25:53.424
+At the midpoint, five minutes, the instantaneous rate is instead k times the
+
+00:25:53.424 --> 00:25:58.244
+concentration at that instant, about zero point zero zero six zero seven molar
+
+00:25:58.244 --> 00:25:58.804
+per minute.
+
+00:25:59.464 --> 00:26:03.729
+A secant slope over an interval and a tangent slope at one time need not
+
+00:26:03.729 --> 00:26:04.084
+agree,
+
+00:26:04.644 --> 00:26:06.404
+even if that time is the interval midpoint.
+
+00:26:07.004 --> 00:26:11.084
+For this decaying exponential the rate falls continuously as reactant
+
+00:26:11.084 --> 00:26:11.644
+disappears.
+
+00:26:12.684 --> 00:26:16.264
+Shortening an interval around a chosen instant makes its mean approach the
+
+00:26:16.264 --> 00:26:18.584
+tangent value, subject to measurement uncertainty.
+
+00:26:19.404 --> 00:26:22.976
+A straight line concentration trace would be a different case in which
+
+00:26:22.976 --> 00:26:23.384
+interval
+
+00:26:23.384 --> 00:26:24.964
+and tangent slopes are equal.
+
+00:26:26.052 --> 00:26:29.792
+Concentration can fall because a substance reacts and because its occupied
+
+00:26:29.792 --> 00:26:31.632
+volume increases.
+
+00:26:31.632 --> 00:26:35.532
+As a supporting material balance, consider a uniform closed reacting system
+
+00:26:35.532 --> 00:26:38.912
+whose boundary can move, with no inflow or outflow of A.
+
+00:26:39.912 --> 00:26:41.952
+Write its amount as concentration times volume.
+
+00:26:42.952 --> 00:26:46.332
+Differentiating that product gives amount change equal to volume times
+
+00:26:46.332 --> 00:26:49.512
+concentration change plus concentration times volume change.
+
+00:26:50.432 --> 00:26:53.792
+Define the positive chemical disappearance rate per current volume as r.
+
+00:26:53.792 --> 00:26:59.112
+Then the concentration derivative is negative r minus concentration divided by
+
+00:26:59.112 --> 00:27:00.932
+volume times the volume derivative.
+
+00:27:02.292 --> 00:27:07.182
+At a specified instant let volume be one litre, A concentration zero point one
+
+00:27:07.182 --> 00:27:11.252
+zero zero molar, chemical disappearance rate zero point zero zero two zero
+
+00:27:11.252 --> 00:27:11.472
+zero
+
+00:27:11.472 --> 00:27:15.812
+molar per second and expansion rate zero point zero one zero zero litre per
+
+00:27:15.812 --> 00:27:16.012
+second.
+
+00:27:16.012 --> 00:27:20.755
+The expansion contributes an additional concentration decrease of zero point
+
+00:27:20.755 --> 00:27:22.832
+zero zero one zero zero molar per second.
+
+00:27:23.872 --> 00:27:27.802
+The observed concentration slope is therefore negative zero point zero zero
+
+00:27:27.802 --> 00:27:32.112
+three zero zero, while chemical amount loss is only zero point zero zero two
+
+00:27:32.112 --> 00:27:33.452
+zero zero mole per second.
+
+00:27:34.212 --> 00:27:38.252
+This distinction extends the constant volume rate definition; it is not an
+
+00:27:38.252 --> 00:27:40.112
+additional required integrated order law.
+
+00:27:40.320 --> 00:27:45.180
+A reversible first order model approaches an equilibrium plateau rather than
+
+00:27:45.180 --> 00:27:46.300
+consuming all reactant.
+
+00:27:47.760 --> 00:27:51.480
+Consider a fixed volume closed system with one to one conversion between A and
+
+00:27:51.480 --> 00:27:51.660
+B.
+
+00:27:52.460 --> 00:27:56.120
+Let forward and reverse constants be zero point one zero zero and zero point
+
+00:27:56.120 --> 00:28:00.400
+zero five zero zero per minute, and let their conserved total concentration be
+
+00:28:00.400 --> 00:28:01.900
+zero point three zero zero molar.
+
+00:28:02.680 --> 00:28:06.740
+Equal opposing rates at equilibrium give B to A concentration ratio two.
+
+00:28:07.720 --> 00:28:11.560
+The equilibrium concentrations are therefore zero point two zero zero molar B
+
+00:28:11.560 --> 00:28:13.940
+and zero point one zero zero molar A.
+
+00:28:14.740 --> 00:28:18.440
+The supplied relaxation result says displacement from equilibrium decays with
+
+00:28:18.440 --> 00:28:21.800
+the sum of the two constants, zero point one five zero per minute.
+
+00:28:22.760 --> 00:28:27.313
+Its half time is natural logarithm two divided by that sum, about four point
+
+00:28:27.313 --> 00:28:28.040
+six two minutes.
+
+00:28:29.200 --> 00:28:32.660
+Starting with only A, after one such half time B is zero point one zero zero
+
+00:28:32.660 --> 00:28:35.480
+molar and A is zero point two zero zero.
+
+00:28:35.480 --> 00:28:39.600
+This halves the distance to equilibrium, not the initial A concentration.
+
+00:28:40.320 --> 00:28:44.160
+It is a supporting kinetic model, not a universal formula for every reversible
+
+00:28:44.160 --> 00:28:44.620
+mechanism.
+
+00:28:45.200 --> 00:28:48.800
+The ratio of these two constants describes equilibrium only for the stated
+
+00:28:48.800 --> 00:28:49.800
+compatible rate laws.
