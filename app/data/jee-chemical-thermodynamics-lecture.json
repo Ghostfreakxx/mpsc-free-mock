@@ -45,6 +45,14 @@
     {
       "title": "OpenStax: equilibrium constants and equation operations",
       "url": "https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants"
+    },
+    {
+      "title": "OpenStax: entropy and reversible reference paths",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy"
+    },
+    {
+      "title": "Patrick Fleming, CSU East Bay: integrated van’t Hoff equation",
+      "url": "https://chemistry.csueastbay.edu/~pfleming/chem/351/chap10/vantHoff.htm"
     }
   ],
   "chapters": [
@@ -727,6 +735,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Insulated free expansion can generate entropy without heat",
+      "formula": "Ideal gas; q=0, w=0, ΔU=0, ΔT=0; ΔS=nR ln(V₂/V₁)>0",
+      "script": "Zero heat transfer does not force zero entropy change in an irreversible process. Consider one mole of an ideal gas initially confined to half of a rigid insulated container, with vacuum in the other half. Removing the internal partition doubles the volume available to the gas. External pressure opposing this free expansion is zero, so pressure volume work is zero. The insulated outer walls give zero heat transfer. In the Chemistry convention, internal energy change equals heat plus work and is therefore zero. For an ideal gas, internal energy depends only on temperature, so the final equilibrium temperature equals the initial one. Nevertheless entropy rises. Evaluate it through a reversible isothermal reference path between those same endpoints, giving R times the natural logarithm of two, approximately five point seven six joules per kelvin. This reference path calculates a state function; it is not the actual gas motion inside the vessel. The isolated whole has positive entropy generation while its surroundings exchange no heat. A real gas can show a temperature change in an analogous expansion, and the reversible adiabatic volume temperature power law cannot be imposed on this irreversible event.",
+      "points": [
+        "Rigid insulated container; initial vacuum · q=0; external pressure=0; w=0 · ΔU=0",
+        "One mole ideal gas; V₂=2V₁ · ΔT=0; ΔS=R ln2 · ΔS≈+5.76 J/K",
+        "Irreversible actual expansion · Use reversible path only to calculate ΔS · Do not use reversible adiabatic power law"
+      ],
+      "board": {
+        "heading": "Insulated free expansion can generate entropy without heat",
+        "columns": [
+          "Specified model",
+          "Balance / calculation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Rigid insulated container; initial vacuum",
+            "q=0; external pressure=0; w=0",
+            "ΔU=0"
+          ],
+          [
+            "One mole ideal gas; V₂=2V₁",
+            "ΔT=0; ΔS=R ln2",
+            "ΔS≈+5.76 J/K"
+          ],
+          [
+            "Irreversible actual expansion",
+            "Use reversible path only to calculate ΔS",
+            "Do not use reversible adiabatic power law"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Two gas endpoints need both thermal and volume entropy terms",
+      "formula": "ΔS=nCv ln(T₂/T₁)+nR ln(V₂/V₁) for an ideal gas with constant Cv",
+      "script": "When an ideal gas changes both temperature and volume, keeping just one entropy term misses part of the endpoint change. Construct a reversible reference path consisting of constant volume warming followed by isothermal expansion at the final temperature. For constant molar heat capacity, the warming contribution is n C V times the natural logarithm of final over initial temperature. The expansion contribution is n R times the logarithm of final over initial volume. Add them because entropy is a state function. Take one mole of a monatomic ideal gas with C V equal to three halves R, temperature increasing from three hundred to six hundred kelvin and volume from ten to twenty litres. Each logarithm is the natural logarithm of two, so the sum is five halves R times that logarithm, approximately fourteen point four one joules per kelvin. Reversing both endpoints changes the sign. These endpoints even have the same ideal gas pressure because temperature and volume double together, but that does not make the entropy change zero. The actual process may follow a different path; its heat and work are not fixed by this entropy calculation alone.",
+      "points": [
+        "n=1; Cv=3R/2; 300→600 K · Thermal term=(3R/2) ln2 · Use absolute temperatures",
+        "Volume 10→20 L · Volume term=R ln2 · Only the ratio needs matching volume units",
+        "Total: (5R/2) ln2 · ΔS≈+14.41 J/K · Same endpoint pressure does not mean ΔS=0"
+      ],
+      "board": {
+        "heading": "Two gas endpoints need both thermal and volume entropy terms",
+        "columns": [
+          "Specified model",
+          "Balance / calculation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "n=1; Cv=3R/2; 300→600 K",
+            "Thermal term=(3R/2) ln2",
+            "Use absolute temperatures"
+          ],
+          [
+            "Volume 10→20 L",
+            "Volume term=R ln2",
+            "Only the ratio needs matching volume units"
+          ],
+          [
+            "Total: (5R/2) ln2",
+            "ΔS≈+14.41 J/K",
+            "Same endpoint pressure does not mean ΔS=0"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Use a temperature interval to predict a new equilibrium constant",
+      "formula": "ln(K₂/K₁)=−ΔH°/R × (1/T₂−1/T₁); approximately constant reaction enthalpy",
+      "script": "An equilibrium constant belongs to a specified temperature as well as a specified balanced reaction. A supporting integrated van't Hoff calculation predicts its temperature change when reaction enthalpy is approximately constant over the interval. The natural logarithm of K two divided by K one equals minus standard reaction enthalpy divided by R, multiplied by one over temperature two minus one over temperature one. Suppose the supplied reaction has enthalpy plus thirty kilojoules per mole, with K equal to two at three hundred kelvin. At three hundred thirty kelvin, first convert the enthalpy to thirty thousand joules per mole to match R eight point three one four. The logarithm of the constant ratio is approximately one point zero nine three, giving a ratio about two point nine eight five and a new constant about five point nine seven. The increase agrees with the endothermic sign. For a negative reaction enthalpy over the same heating interval, the constant would decrease. Do not replace the natural logarithm with a base ten logarithm without its conversion factor, or hold enthalpy constant across a phase change without checking the model.",
+      "points": [
+        "ΔH°=+30000 J/mol; K₁=2.00 · T₁=300 K; T₂=330 K · Use R=8.314 J/(mol K)",
+        "ln(K₂/K₁)≈1.09345 · K₂/K₁≈2.98454 · K₂≈5.97",
+        "Positive enthalpy; heating · K increases for this equation · Constant ΔH° approximation; natural log"
+      ],
+      "board": {
+        "heading": "Use a temperature interval to predict a new equilibrium constant",
+        "columns": [
+          "Specified model",
+          "Balance / calculation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "ΔH°=+30000 J/mol; K₁=2.00",
+            "T₁=300 K; T₂=330 K",
+            "Use R=8.314 J/(mol K)"
+          ],
+          [
+            "ln(K₂/K₁)≈1.09345",
+            "K₂/K₁≈2.98454",
+            "K₂≈5.97"
+          ],
+          [
+            "Positive enthalpy; heating",
+            "K increases for this equation",
+            "Constant ΔH° approximation; natural log"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A neutralization cycle can isolate an ionization enthalpy",
+      "formula": "HA→H⁺+A⁻ plus H⁺+OH⁻→H₂O gives HA+OH⁻→A⁻+H₂O",
+      "script": "Neutralization data can reveal a hidden ionization step if all reactions and states are matched. In a supplied dilute solution Hess model, hydrogen ion plus hydroxide forms water with enthalpy minus fifty seven kilojoules per mole water. A weak acid H A reacting with hydroxide gives A minus and water with enthalpy minus fifty five kilojoules per mole water. Add the formal ionization of H A into hydrogen ion and A minus to the first reaction. Hydrogen ions cancel, leaving the weak acid neutralization equation. Therefore ionization enthalpy plus minus fifty seven equals minus fifty five, and ionization enthalpy is plus two kilojoules per mole. In this dataset the endothermic ionization step offsets some heat released by water formation. This is not a universal numerical value for every weak acid, and weak ionization is not automatically an endothermic process in every case. Compare like amounts of water and compatible dilute solution states before subtracting measurements. Heat absorbed by a calorimeter has the opposite sign to the reaction heat, so an observed temperature rise must first be converted to a consistently signed reaction enthalpy.",
+      "points": [
+        "H⁺+OH⁻→H₂O · ΔH=−57 kJ/mol water · Matched dilute-state baseline",
+        "HA+OH⁻→A⁻+H₂O · ΔH=−55 kJ/mol water · Ionization step is included",
+        "ΔHion−57=−55 · ΔHion=+2 kJ/mol · Dataset-specific; preserve reaction signs"
+      ],
+      "board": {
+        "heading": "A neutralization cycle can isolate an ionization enthalpy",
+        "columns": [
+          "Specified model",
+          "Balance / calculation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "H⁺+OH⁻→H₂O",
+            "ΔH=−57 kJ/mol water",
+            "Matched dilute-state baseline"
+          ],
+          [
+            "HA+OH⁻→A⁻+H₂O",
+            "ΔH=−55 kJ/mol water",
+            "Ionization step is included"
+          ],
+          [
+            "ΔHion−57=−55",
+            "ΔHion=+2 kJ/mol",
+            "Dataset-specific; preserve reaction signs"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1103,6 +1251,94 @@
       ],
       "answer": 3,
       "explanation": "Reversal changes the sign of standard reaction Gibbs energy and reciprocates K."
+    },
+    {
+      "question": "One mole ideal gas freely expands into vacuum in a rigid insulated vessel, doubling its available volume. The final equilibrium changes are:",
+      "options": [
+        "q=0, w=0, ΔU=0, ΔT=0, ΔS>0",
+        "q>0, w>0, ΔU>0, ΔS=0",
+        "q=0 but reversible adiabatic compression occurs",
+        "ΔS=0 because no heat crosses the wall"
+      ],
+      "answer": 0,
+      "explanation": "The actual expansion has no heat or pressure-volume work, but its irreversible entropy generation is R ln2 for these ideal-gas endpoints."
+    },
+    {
+      "question": "For that ideal-gas free expansion, ΔS for one mole is approximately (R=8.314 J/(mol K)):",
+      "options": [
+        "0 J/K",
+        "+5.76 J/K",
+        "−5.76 J/K",
+        "+1729 J/K at every temperature"
+      ],
+      "answer": 1,
+      "explanation": "Use a reversible isothermal reference path to calculate the state change: ΔS=R ln(V₂/V₁)=R ln2."
+    },
+    {
+      "question": "One mole monatomic ideal gas has constant Cv=3R/2, doubles T and doubles V. Its entropy change is:",
+      "options": [
+        "R ln2",
+        "0 because pressure is unchanged",
+        "(5R/2) ln2",
+        "−(5R/2) ln2"
+      ],
+      "answer": 2,
+      "explanation": "Both endpoint contributions matter: Cv ln(T₂/T₁)+R ln(V₂/V₁)=(3R/2+R)ln2."
+    },
+    {
+      "question": "With R=8.314 J/(mol K), the preceding two-state entropy increase is approximately:",
+      "options": [
+        "5.76 J/K",
+        "8.64 J/K",
+        "0 J/K",
+        "14.41 J/K"
+      ],
+      "answer": 3,
+      "explanation": "The thermal contribution is 8.644 J/K and the volume contribution 5.763 J/K; add them to obtain 14.407 J/K."
+    },
+    {
+      "question": "A reaction has approximately constant ΔH°=+30.0 kJ/mol and K=2.00 at 300 K. With R=8.314 J/(mol K), its K at 330 K is closest to:",
+      "options": [
+        "5.97",
+        ".670",
+        "2.00",
+        "1.093"
+      ],
+      "answer": 0,
+      "explanation": "ln(K₂/2)=−30000/8.314×(1/330−1/300)=1.09345; exponentiate before multiplying by 2."
+    },
+    {
+      "question": "For approximately constant negative ΔH°, heating a reaction from T₁ to T₂>T₁ changes its equilibrium constant how?",
+      "options": [
+        "It must always double",
+        "It decreases",
+        "It is independent of temperature",
+        "It equals the rate constant"
+      ],
+      "answer": 1,
+      "explanation": "The integrated van’t Hoff expression has a negative logarithm of K₂/K₁ for an exothermic reaction heated over the stated interval."
+    },
+    {
+      "question": "Matched reaction enthalpies are −57 kJ/mol for H⁺+OH⁻→H₂O and −55 for HA+OH⁻→A⁻+H₂O. The formal HA ionization enthalpy is:",
+      "options": [
+        "−112 kJ/mol",
+        "−2 kJ/mol",
+        "+2 kJ/mol",
+        "+112 kJ/mol"
+      ],
+      "answer": 2,
+      "explanation": "Hess addition requires ΔHion+(−57)=−55, giving +2 kJ/mol for the supplied ionization reaction."
+    },
+    {
+      "question": "Why must neutralization enthalpy comparisons use compatible reaction states and normalization?",
+      "options": [
+        "Every weak acid has the same ionization enthalpy",
+        "Calorimeter heat always equals reaction heat with the same sign",
+        "One mole acid always makes two moles water",
+        "Hess subtraction compares specified reactions, including phases and amount of water formed"
+      ],
+      "answer": 3,
+      "explanation": "Different reaction amounts, solution states or sign conventions can change the difference; the supplied cycle does not justify a universal weak-acid value."
     }
   ]
 }

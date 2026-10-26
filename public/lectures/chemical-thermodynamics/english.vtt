@@ -1733,3 +1733,264 @@ Distinguish equation normalization from changing temperature or from moving a
 
 00:31:11.128 --> 00:31:12.068
 mixture away from equilibrium.
+
+00:31:12.408 --> 00:31:16.808
+Zero heat transfer does not force zero entropy change in an irreversible
+
+00:31:16.808 --> 00:31:17.348
+process.
+
+00:31:18.328 --> 00:31:22.148
+Consider one mole of an ideal gas initially confined to half of a rigid
+
+00:31:22.148 --> 00:31:25.048
+insulated container, with vacuum in the other half.
+
+00:31:26.188 --> 00:31:29.268
+Removing the internal partition doubles the volume available to the gas.
+
+00:31:30.208 --> 00:31:34.231
+External pressure opposing this free expansion is zero, so pressure volume
+
+00:31:34.231 --> 00:31:34.448
+work
+
+00:31:34.448 --> 00:31:35.068
+is zero.
+
+00:31:35.748 --> 00:31:38.108
+The insulated outer walls give zero heat transfer.
+
+00:31:38.488 --> 00:31:42.728
+In the Chemistry convention, internal energy change equals heat plus work and
+
+00:31:42.728 --> 00:31:43.568
+is therefore zero.
+
+00:31:44.328 --> 00:31:48.668
+For an ideal gas, internal energy depends only on temperature, so the final
+
+00:31:48.668 --> 00:31:50.768
+equilibrium temperature equals the initial one.
+
+00:31:51.548 --> 00:31:52.968
+Nevertheless entropy rises.
+
+00:31:54.028 --> 00:31:57.448
+Evaluate it through a reversible isothermal reference path between those same
+
+00:31:57.448 --> 00:32:02.068
+endpoints, giving R times the natural logarithm of two, approximately five
+
+00:32:02.068 --> 00:32:03.668
+point seven six joules per kelvin.
+
+00:32:04.488 --> 00:32:08.448
+This reference path calculates a state function; it is not the actual gas
+
+00:32:08.448 --> 00:32:09.588
+motion inside the vessel.
+
+00:32:10.648 --> 00:32:14.208
+The isolated whole has positive entropy generation while its surroundings
+
+00:32:14.208 --> 00:32:15.168
+exchange no heat.
+
+00:32:15.988 --> 00:32:20.028
+A real gas can show a temperature change in an analogous expansion, and the
+
+00:32:20.028 --> 00:32:23.928
+reversible adiabatic volume temperature power law cannot be imposed on this
+
+00:32:23.928 --> 00:32:24.788
+irreversible event.
+
+00:32:25.128 --> 00:32:29.825
+When an ideal gas changes both temperature and volume, keeping just one
+
+00:32:29.825 --> 00:32:30.288
+entropy
+
+00:32:30.288 --> 00:32:32.488
+term misses part of the endpoint change.
+
+00:32:33.528 --> 00:32:37.228
+Construct a reversible reference path consisting of constant volume warming
+
+00:32:37.228 --> 00:32:40.468
+followed by isothermal expansion at the final temperature.
+
+00:32:41.288 --> 00:32:46.728
+For constant molar heat capacity, the warming contribution is n C V times the
+
+00:32:46.728 --> 00:32:48.828
+natural logarithm of final over initial temperature.
+
+00:32:49.528 --> 00:32:54.308
+The expansion contribution is n R times the logarithm of final over initial
+
+00:32:54.308 --> 00:32:54.708
+volume.
+
+00:32:55.128 --> 00:32:57.988
+Add them because entropy is a state function.
+
+00:32:58.888 --> 00:33:03.428
+Take one mole of a monatomic ideal gas with C V equal to three halves R,
+
+00:33:04.028 --> 00:33:08.278
+temperature increasing from three hundred to six hundred kelvin and volume
+
+00:33:08.278 --> 00:33:08.508
+from
+
+00:33:08.508 --> 00:33:10.788
+ten to twenty litres.
+
+00:33:10.788 --> 00:33:15.508
+Each logarithm is the natural logarithm of two, so the sum is five halves R
+
+00:33:15.508 --> 00:33:19.688
+times that logarithm, approximately fourteen point four one joules per kelvin.
+
+00:33:21.208 --> 00:33:23.108
+Reversing both endpoints changes the sign.
+
+00:33:23.608 --> 00:33:27.688
+These endpoints even have the same ideal gas pressure because temperature and
+
+00:33:27.688 --> 00:33:31.528
+volume double together, but that does not make the entropy change zero.
+
+00:33:32.368 --> 00:33:36.673
+The actual process may follow a different path; its heat and work are not
+
+00:33:36.673 --> 00:33:36.968
+fixed
+
+00:33:36.968 --> 00:33:38.628
+by this entropy calculation alone.
+
+00:33:38.736 --> 00:33:42.716
+An equilibrium constant belongs to a specified temperature as well as a
+
+00:33:42.716 --> 00:33:43.976
+specified balanced reaction.
+
+00:33:44.676 --> 00:33:48.076
+A supporting integrated van't Hoff calculation predicts its temperature change
+
+00:33:48.076 --> 00:33:51.396
+when reaction enthalpy is approximately constant over the interval.
+
+00:33:52.196 --> 00:33:57.176
+The natural logarithm of K two divided by K one equals minus standard reaction
+
+00:33:57.176 --> 00:34:02.416
+enthalpy divided by R, multiplied by one over temperature two minus one over
+
+00:34:02.416 --> 00:34:03.636
+temperature one.
+
+00:34:03.636 --> 00:34:07.196
+Suppose the supplied reaction has enthalpy plus thirty kilojoules per mole,
+
+00:34:07.736 --> 00:34:10.236
+with K equal to two at three hundred kelvin.
+
+00:34:11.016 --> 00:34:14.966
+At three hundred thirty kelvin, first convert the enthalpy to thirty thousand
+
+00:34:14.966 --> 00:34:19.116
+joules per mole to match R eight point three one four.
+
+00:34:19.116 --> 00:34:23.399
+The logarithm of the constant ratio is approximately one point zero nine
+
+00:34:23.399 --> 00:34:23.756
+three,
+
+00:34:23.756 --> 00:34:27.936
+giving a ratio about two point nine eight five and a new constant about five
+
+00:34:27.936 --> 00:34:29.096
+point nine seven.
+
+00:34:29.096 --> 00:34:31.476
+The increase agrees with the endothermic sign.
+
+00:34:31.936 --> 00:34:35.656
+For a negative reaction enthalpy over the same heating interval, the constant
+
+00:34:35.656 --> 00:34:36.356
+would decrease.
+
+00:34:37.636 --> 00:34:41.296
+Do not replace the natural logarithm with a base ten logarithm without its
+
+00:34:41.296 --> 00:34:45.676
+conversion factor, or hold enthalpy constant across a phase change without
+
+00:34:45.676 --> 00:34:46.376
+checking the model.
+
+00:34:46.584 --> 00:34:51.604
+Neutralization data can reveal a hidden ionization step if all reactions and
+
+00:34:51.604 --> 00:34:52.324
+states are matched.
+
+00:34:52.964 --> 00:34:58.184
+In a supplied dilute solution Hess model, hydrogen ion plus hydroxide forms
+
+00:34:58.184 --> 00:35:01.864
+water with enthalpy minus fifty seven kilojoules per mole water.
+
+00:35:02.884 --> 00:35:08.064
+A weak acid H A reacting with hydroxide gives A minus and water with enthalpy
+
+00:35:08.064 --> 00:35:10.544
+minus fifty five kilojoules per mole water.
+
+00:35:11.444 --> 00:35:16.264
+Add the formal ionization of H A into hydrogen ion and A minus to the first
+
+00:35:16.264 --> 00:35:16.684
+reaction.
+
+00:35:17.724 --> 00:35:21.364
+Hydrogen ions cancel, leaving the weak acid neutralization equation.
+
+00:35:22.264 --> 00:35:26.964
+Therefore ionization enthalpy plus minus fifty seven equals minus fifty five,
+
+00:35:26.964 --> 00:35:29.864
+and ionization enthalpy is plus two kilojoules per mole.
+
+00:35:30.684 --> 00:35:34.864
+In this dataset the endothermic ionization step offsets some heat released by
+
+00:35:34.864 --> 00:35:35.464
+water formation.
+
+00:35:36.244 --> 00:35:40.364
+This is not a universal numerical value for every weak acid, and weak
+
+00:35:40.364 --> 00:35:44.004
+ionization is not automatically an endothermic process in every case.
+
+00:35:45.004 --> 00:35:48.484
+Compare like amounts of water and compatible dilute solution states before
+
+00:35:48.484 --> 00:35:49.464
+subtracting measurements.
+
+00:35:50.624 --> 00:35:54.584
+Heat absorbed by a calorimeter has the opposite sign to the reaction heat, so
+
+00:35:54.584 --> 00:35:58.324
+an observed temperature rise must first be converted to a consistently signed
+
+00:35:58.324 --> 00:35:59.084
+reaction enthalpy.

@@ -7,10 +7,10 @@ test('physical Chemistry lessons map to Units 4 and 5 with recorded companion sc
   assert.deepEqual(lessons.map(l => [l.id, l.unit]), [['chemical-thermodynamics', 4], ['solutions', 5]]);
   for (const lesson of lessons) {
     assert.equal(lesson.subject, 'Chemistry');
-    assert.equal(lesson.sections.length, 25);
-    assert.equal(lesson.examples.length, 15);
-    assert.equal(lesson.quiz.length, 34);
-    assert.match(lesson.remaining, /twenty-three-chapter Marin recording/);
+    assert.equal(lesson.sections.length, 29);
+    assert.equal(lesson.examples.length, 18);
+    assert.equal(lesson.quiz.length, 42);
+    assert.match(lesson.remaining, /twenty-seven-chapter Marin recording/);
     assert.ok(lesson.sources.some(s => s.url.includes('jeemain.nta.nic.in')));
   }
 });
@@ -67,8 +67,8 @@ test('extended applications agree with independent heat, entropy and solution ba
 
 test('new thermodynamic and solution quiz answers agree with independent balances', () => {
  const selected=(unit,i)=>lessons[unit].quiz[i].options[lessons[unit].quiz[i].answer];
- assert.deepEqual(lessons[0].quiz.slice(12).map(q=>q.answer),[2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3]);
- assert.deepEqual(lessons[1].quiz.slice(12).map(q=>q.answer),[0,2,3,1,0,2,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]);
+ assert.deepEqual(lessons[0].quiz.slice(12).map(q=>q.answer),[2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3]);
+ assert.deepEqual(lessons[1].quiz.slice(12).map(q=>q.answer),[0,2,3,1,0,2,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,2,3,0,1,2,3,0,1]);
  near(-8.314*300*Math.log(4/2)/1000,-1.729,.001);
  near(300*2**(2/3),476.2,.03);
  near(-100+50*(398-298)/1000,-95);

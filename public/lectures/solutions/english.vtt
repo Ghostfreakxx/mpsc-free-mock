@@ -1682,3 +1682,270 @@ Precipitation, solute volatility or a changing particle factor would require a
 
 00:30:49.284 --> 00:30:50.084
 revised balance.
+
+00:30:51.264 --> 00:30:55.944
+Osmotic pressure can appear as a hydrostatic level difference rather than a
+
+00:30:55.944 --> 00:30:57.224
+reading in atmospheres.
+
+00:30:58.384 --> 00:31:01.972
+Consider a membrane that passes solvent but retains the chosen non
+
+00:31:01.972 --> 00:31:02.624
+electrolyte,
+
+00:31:03.064 --> 00:31:06.384
+with both free surfaces exposed to the same atmospheric pressure.
+
+00:31:07.644 --> 00:31:12.464
+In a supplied dilute model with nearly equal constant liquid densities, a
+
+00:31:12.464 --> 00:31:16.464
+height difference h provides opposing pressure rho g h.
+
+00:31:16.464 --> 00:31:20.244
+At osmotic equilibrium this balances the osmotic pressure difference.
+
+00:31:21.044 --> 00:31:25.674
+Let the final measured solution concentration be zero point zero zero two zero
+
+00:31:25.674 --> 00:31:30.084
+zero mole per litre, with pure solvent on the other side, at three hundred
+
+00:31:30.084 --> 00:31:30.404
+kelvin.
+
+00:31:31.524 --> 00:31:35.529
+Convert concentration to two moles per cubic metre before using R eight point
+
+00:31:35.529 --> 00:31:37.064
+three one four in S I units.
+
+00:31:38.024 --> 00:31:41.184
+The osmotic pressure is four thousand nine hundred eighty eight point four
+
+00:31:41.184 --> 00:31:42.324
+pascals.
+
+00:31:42.324 --> 00:31:46.309
+With density one thousand kilograms per cubic metre and g nine point eight
+
+00:31:46.309 --> 00:31:46.524
+zero
+
+00:31:46.524 --> 00:31:51.856
+metres per second squared, the level difference is about zero point five zero
+
+00:31:51.856 --> 00:31:52.944
+nine metre.
+
+00:31:52.944 --> 00:31:57.544
+This uses the final concentration: solvent entering during equilibration can
+
+00:31:57.544 --> 00:31:59.284
+dilute an initially prepared solution.
+
+00:32:00.264 --> 00:32:04.284
+Unequal column densities, membrane leakage or an external pressure difference
+
+00:32:04.284 --> 00:32:07.264
+require a revised mechanical and solution balance.
+
+00:32:07.680 --> 00:32:12.300
+Two gases can dissolve in proportions very different from their proportions in
+
+00:32:12.300 --> 00:32:13.460
+the surrounding gas.
+
+00:32:14.180 --> 00:32:18.260
+Use the specified Henry convention: partial pressure equals Henry constant
+
+00:32:18.260 --> 00:32:19.640
+times dissolved mole fraction.
+
+00:32:20.320 --> 00:32:25.020
+An ideal gas reservoir has total gas pressure one bar, with eighty percent A
+
+00:32:25.020 --> 00:32:29.580
+and twenty percent B by mole; any solvent vapour contribution is already
+
+00:32:29.580 --> 00:32:29.860
+excluded.
+
+00:32:30.660 --> 00:32:34.580
+At the stated temperature, supplied Henry constants are one thousand bar for A
+
+00:32:34.580 --> 00:32:36.260
+and one hundred bar for B.
+
+00:32:37.020 --> 00:32:40.420
+Their partial pressures are zero point eight and zero point two bar.
+
+00:32:41.620 --> 00:32:45.400
+Dissolved mole fractions in the complete liquid mixture are therefore zero
+
+00:32:45.400 --> 00:32:49.480
+point zero zero zero eight and zero point zero zero two.
+
+00:32:49.480 --> 00:32:54.028
+Among the dissolved gas molecules alone, A's fraction is zero point zero zero
+
+00:32:54.028 --> 00:32:58.480
+zero eight divided by their sum zero point zero zero two eight, or two
+
+00:32:58.480 --> 00:32:59.060
+sevenths.
+
+00:32:59.620 --> 00:33:03.800
+Thus B dominates the dissolved gas population even though it was the minority
+
+00:33:03.800 --> 00:33:04.720
+in the headspace.
+
+00:33:05.580 --> 00:33:09.640
+In this convention the smaller Henry constant indicates greater solubility at
+
+00:33:09.640 --> 00:33:10.560
+equal partial pressure.
+
+00:33:11.820 --> 00:33:16.000
+Assume dilute nonreacting gases, the same solvent and temperature, and a
+
+00:33:16.000 --> 00:33:20.080
+sufficiently large gas reservoir so dissolution does not change its stipulated
+
+00:33:20.080 --> 00:33:20.480
+composition.
+
+00:33:20.880 --> 00:33:24.500
+A measured vapour composition can supply the evidence missing from a total
+
+00:33:24.500 --> 00:33:25.500
+pressure value alone.
+
+00:33:26.480 --> 00:33:30.446
+Consider a specified binary liquid at its boiling equilibrium, with liquid
+
+00:33:30.446 --> 00:33:30.660
+mole
+
+00:33:30.660 --> 00:33:34.340
+fraction A equal to zero point four zero zero.
+
+00:33:34.340 --> 00:33:38.340
+At that temperature its measured partial vapour pressures are thirty two and
+
+00:33:38.340 --> 00:33:41.360
+forty eight kilopascals, so total pressure is eighty.
+
+00:33:42.260 --> 00:33:46.640
+Dalton's relation gives vapour mole fraction A equal to thirty two divided by
+
+00:33:46.640 --> 00:33:49.880
+eighty, or zero point four zero zero.
+
+00:33:49.880 --> 00:33:54.280
+Liquid and vapour compositions match at this nonpure composition: the supplied
+
+00:33:54.280 --> 00:33:56.020
+equilibrium point is azeotropic.
+
+00:33:56.820 --> 00:34:00.460
+An equilibrium vaporization stage there gives no composition enrichment.
+
+00:34:01.640 --> 00:34:05.440
+Now compare the ideal pressure reference at the same temperature, with pure
+
+00:34:05.440 --> 00:34:08.620
+liquid vapour pressures sixty and fifty kilopascals.
+
+00:34:09.360 --> 00:34:13.514
+The ideal total is zero point four times sixty plus zero point six times
+
+00:34:13.514 --> 00:34:13.860
+fifty,
+
+00:34:14.180 --> 00:34:17.160
+or fifty four kilopascals, below the measured eighty.
+
+00:34:17.890 --> 00:34:21.020
+This shows positive total deviation as a separate observation.
+
+00:34:22.060 --> 00:34:25.900
+It is the composition match, not merely that pressure difference, that
+
+00:34:25.900 --> 00:34:28.000
+establishes the azeotropic point in this dataset.
+
+00:34:29.000 --> 00:34:33.620
+Do not assume equal component amounts, a fixed molecular compound formula, or
+
+00:34:33.620 --> 00:34:36.580
+an unchanged azeotropic composition at every pressure.
+
+00:34:36.840 --> 00:34:41.260
+Partial freezing changes the liquid concentration because the solid need not
+
+00:34:41.260 --> 00:34:42.400
+carry the solute with it.
+
+00:34:42.900 --> 00:34:47.080
+In a supplied dilute water model, dissolve eighteen grams of a non electrolyte
+
+00:34:47.080 --> 00:34:50.640
+of molar mass sixty grams per mole in one kilogram of water.
+
+00:34:51.140 --> 00:34:53.920
+The solute amount is zero point three zero zero mole.
+
+00:34:54.880 --> 00:34:58.760
+With freezing constant one point eight six kelvin kilogram per mole, the
+
+00:34:58.760 --> 00:35:02.579
+initial liquid's freezing onset is depressed by zero point five five eight
+
+00:35:02.579 --> 00:35:02.940
+kelvin.
+
+00:35:02.940 --> 00:35:08.293
+Now suppose zero point four zero zero kilogram of pure ice has separated,
+
+00:35:08.293 --> 00:35:08.660
+while
+
+00:35:08.660 --> 00:35:12.040
+every solute molecule stays dissolved in the remaining liquid.
+
+00:35:13.140 --> 00:35:17.320
+Liquid water mass is zero point six zero zero kilogram and liquid molality
+
+00:35:17.320 --> 00:35:20.000
+rises to zero point five zero zero.
+
+00:35:20.000 --> 00:35:24.260
+Its equilibrium freezing depression is then zero point nine three zero kelvin.
+
+00:35:25.020 --> 00:35:29.000
+The original water total still includes the ice, but that ice is not part of
+
+00:35:29.000 --> 00:35:30.280
+the liquid solvent denominator.
+
+00:35:30.280 --> 00:35:34.680
+Continuing freezing therefore changes the temperature at which this remaining
+
+00:35:34.680 --> 00:35:36.240
+liquid can coexist with ice.
+
+00:35:36.980 --> 00:35:40.560
+The colligative expression alone does not determine heat removal or the amount
+
+00:35:40.560 --> 00:35:41.480
+of ice formed.
+
+00:35:42.100 --> 00:35:46.680
+Solute crystallization, solid solution formation, association or strong
+
+00:35:46.680 --> 00:35:50.980
+nonideality would invalidate the stipulated pure ice and dilute liquid model.

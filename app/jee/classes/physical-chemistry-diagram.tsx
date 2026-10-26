@@ -1,3 +1,5 @@
+import ThermalPhaseEvidenceDiagram from './thermal-phase-evidence-diagram';
+import {thermalPhaseEvidenceAdditions} from './thermal-phase-evidence-additions';
 import BornHaberCycleDiagram from "./born-haber-cycle-diagram";
 import { thermoSolutionProcessesAdditions } from "./thermo-solution-processes-additions";
 import { thermoSolutionBalancesAdditions } from "./thermo-solution-balances-additions";
@@ -12,10 +14,11 @@ const headings={
 };
 
 export default function PhysicalChemistryDiagram({lesson,chapter}:{lesson:keyof typeof headings;chapter:number}) {
+ if(chapter===23)return <ThermalPhaseEvidenceDiagram lesson={lesson}/>;
  if (lesson === "chemical-thermodynamics" && chapter === 17) return <ReservoirEntropyDiagram/>;
  if (lesson === "chemical-thermodynamics" && chapter === 19) return <BornHaberCycleDiagram/>;
  if (chapter >= 5) {
-  const board = chapter >= 19 ? thermoSolutionProcessesAdditions[lesson].chapters[chapter - 19].board : chapter >= 15 ? thermoSolutionBalancesAdditions[lesson].chapters[chapter - 15].board : chapter >= 10 ? pBlockThermoSolutionsAdditions[lesson].chapters[chapter - 10].board : physicalChemistryAdditions[lesson].chapters[chapter - 5].board;
+  const board = chapter >= 23 ? thermalPhaseEvidenceAdditions[lesson].chapters[chapter - 23].board : chapter >= 19 ? thermoSolutionProcessesAdditions[lesson].chapters[chapter - 19].board : chapter >= 15 ? thermoSolutionBalancesAdditions[lesson].chapters[chapter - 15].board : chapter >= 10 ? pBlockThermoSolutionsAdditions[lesson].chapters[chapter - 10].board : physicalChemistryAdditions[lesson].chapters[chapter - 5].board;
   return <svg className={styles.diagram} viewBox="0 0 460 310" role="img" aria-label={board.heading}>
    <title>{board.heading}</title><rect width="460" height="310" rx="12" fill="#f5faf7" />
    <g fill="#20483e" fontFamily="Arial, sans-serif" fontSize="14">

@@ -19,8 +19,8 @@ Questions are original practice, not represented as official PYQs.
 | 1 | [Mole Concept](/jee/classes/mole-concept) | 21 | 18 | 12 | 32 / 32 |
 | 2 | [Atomic Structure](/jee/classes/atomic-structure) | 25 | 22 | 15 | 42 / 42 |
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 25 | 24 | 15 | 42 / 42 |
-| 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 23 | 25 | 15 | 34 / 34 |
-| 5 | [Solutions](/jee/classes/solutions) | 23 | 25 | 15 | 34 / 34 |
+| 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 27 | 29 | 18 | 42 / 42 |
+| 5 | [Solutions](/jee/classes/solutions) | 27 | 29 | 18 | 42 / 42 |
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 25 | 25 | 19 | 42 / 42 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 26 | 27 | 19 | 42 / 42 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 22 | 25 | 19 | 42 / 42 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Equilibrium adds salts with two hydrolysing ions, two-stage diprotic titrations, common-hydrogen-ion balances for mixed weak acids and complex-ion-enhanced solubility. The titration plot uses the full stated ideal charge balance rather than joining approximate midpoint labels.
+Chemical Thermodynamics adds insulated ideal-gas free expansion, combined temperature/volume entropy changes, integrated van’t Hoff temperature comparisons and neutralization/ionization Hess cycles. The van’t Hoff calculation is labelled a supporting constant-enthalpy application.
 
-Redox and Electrochemistry adds active/inert copper-sulfate anode inventories, specified separated aqueous brine products, fuel-cell Gibbs work and enthalpy-basis efficiency, and complexation-shifted silver potentials. Free ligand, free metal and total dissolved metal are distinguished in both classes.
+Solutions adds osmotic hydrostatic heights, two-gas dissolved composition, measured liquid/vapour equality at an azeotropic point and solute rejection during partial freezing. Every numerical model states the relevant pressure, concentration or phase assumptions.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific OpenStax references for salt hydrolysis, titrations, coupled equilibria, electrolysis and Nernst relations, alongside the US Department of Energy Fuel Cell Handbook for the reversible electrical-efficiency basis. Numerical datasets and MCQs in this batch are original practice.
+The notes contain OpenStax references for free expansion, entropy, Hess cycles, colligative properties, gas solubility and partial pressures, alongside Patrick Fleming’s CSU East Bay teaching notes for the integrated van’t Hoff equation. Numerical datasets and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks
