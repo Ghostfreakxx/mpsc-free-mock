@@ -18,7 +18,7 @@ test('coordination problems independently count charge, outer chloride and split
  assert.equal(a(c,24),'6');assert.equal(2+4,6);assert.equal(a(c,25),`${(.0200*.0100/.0250).toFixed(5)} M`);
 });
 test('equilibrium calculations respect quotient powers, phase conventions and mass balance',()=>{
- assert.deepEqual(e.quiz.slice(18).map(q=>q.answer),[1,2,3,0,1,2,3,0,2,3,0,1,2,3,0,1]);
+ assert.deepEqual(e.quiz.slice(18).map(q=>q.answer),[1,2,3,0,1,2,3,0,2,3,0,1,2,3,0,1,0,1,2,3,0,1,2,3]);
  assert.equal(a(e,18),String(Math.sqrt(16)));assert.equal(a(e,19),String(5*4));
  assert.equal(a(e,20),`${(.200*1).toFixed(3)} bar`);
  const C=.001,Kb=.0001,x=(-Kb+Math.sqrt(Kb*Kb+4*Kb*C))/2;

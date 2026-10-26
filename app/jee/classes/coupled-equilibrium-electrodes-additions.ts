@@ -1,0 +1,507 @@
+// Authored by scripts/expand-coupled-equilibrium-electrodes.mjs.
+export const coupledEquilibriumElectrodesAdditions = {
+  "equilibrium": {
+    "base": 21,
+    "quizBase": 34,
+    "chapters": [
+      {
+        "title": "Both ions of a weak-acid weak-base salt can hydrolyse",
+        "formula": "BH⁺A⁻; pH ≈ ½[pKw + pKa(HA) − pKb(B)] for the stated moderately concentrated ideal model",
+        "script": "A salt can contain both an acidic cation and a basic anion. Let the cation be B H plus, conjugate to weak base B, and the anion be A minus, conjugate to weak acid H A. Their reactions with water compete; neither ion should automatically be called a spectator. For a moderately concentrated ideal solution with small hydrolysis and water background negligible in the charge balance, the approximate p H is half of p K w plus p K a of H A minus p K b of B. Use a supplied zero point one zero molar salt at twenty five degrees Celsius, acid constant ten to the minus five and original base constant ten to the minus four. The p H estimate is seven point five, so the salt is mildly basic. The cation's acid constant is ten to the minus ten and the anion's base constant ten to the minus nine, consistent with the stronger basic contribution. This formula compares the parent acid and base, not two unrelated constants. At extreme dilution or extensive hydrolysis, solve mass balance, charge balance and water ionization together instead of claiming that concentration never matters.",
+        "points": [
+          "Parent HA: Ka=10⁻⁵; B: Kb=10⁻⁴ · pH ≈ ½(14+5−4) · 7.50; mildly basic",
+          "BH⁺ acid; A⁻ base · Ka(BH⁺)=10⁻¹⁰; Kb(A⁻)=10⁻⁹ · Both ions react with water",
+          "Moderate C; small hydrolysis · Approximate analytical model · Very dilute solutions need full balances"
+        ],
+        "board": {
+          "heading": "Both ions of a weak-acid weak-base salt can hydrolyse",
+          "columns": [
+            "Specified system",
+            "Balance / calculation",
+            "Meaning / limit"
+          ],
+          "rows": [
+            [
+              "Parent HA: Ka=10⁻⁵; B: Kb=10⁻⁴",
+              "pH ≈ ½(14+5−4)",
+              "7.50; mildly basic"
+            ],
+            [
+              "BH⁺ acid; A⁻ base",
+              "Ka(BH⁺)=10⁻¹⁰; Kb(A⁻)=10⁻⁹",
+              "Both ions react with water"
+            ],
+            [
+              "Moderate C; small hydrolysis",
+              "Approximate analytical model",
+              "Very dilute solutions need full balances"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "A diprotic titration has two buffer midpoints",
+        "formula": "H₂A → HA⁻ → A²⁻; half steps: pH≈pKa₁ and pKa₂; first equivalence ≈½(pKa₁+pKa₂)",
+        "script": "A diprotic acid can show two successive neutralization stages when its acid constants are well separated. Consider zero point zero one zero zero mole of a hypothetical acid H two A, with supplied p K a values four and nine, titrated by a strong base. At zero point zero zero five zero zero mole of added hydroxide, the first buffer pair contains approximately equal amounts of H two A and H A minus. Its p H is therefore approximately four. The first stoichiometric equivalence is at zero point zero one zero zero mole hydroxide, where H A minus predominates and can either accept or donate a proton. In the usual amphiprotic approximation its p H is half of four plus nine, or six point five. At zero point zero one five zero mole hydroxide, the second buffer pair, H A minus and A two minus, has equal amounts, giving p H approximately nine. Full neutralization requires zero point zero two zero zero mole hydroxide, not the first equivalence amount. These are well separated equilibrium approximations at suitable concentration, not exact values for arbitrary dilution. Past the second equivalence, calculate excess hydroxide and total volume before p H.",
+        "points": [
+          "n(H₂A)=0.0100 mol; pKa₁=4, pKa₂=9 · OH⁻=0.00500 / 0.0150 mol · Buffer midpoints pH≈4 / 9",
+          "First equivalence: OH⁻=0.0100 mol · HA⁻ is amphiprotic · pH≈(4+9)/2=6.50",
+          "Second equivalence: OH⁻=0.0200 mol · Both acidic protons neutralized · Do not label first equivalence complete"
+        ],
+        "board": {
+          "heading": "A diprotic titration has two buffer midpoints",
+          "columns": [
+            "Specified system",
+            "Balance / calculation",
+            "Meaning / limit"
+          ],
+          "rows": [
+            [
+              "n(H₂A)=0.0100 mol; pKa₁=4, pKa₂=9",
+              "OH⁻=0.00500 / 0.0150 mol",
+              "Buffer midpoints pH≈4 / 9"
+            ],
+            [
+              "First equivalence: OH⁻=0.0100 mol",
+              "HA⁻ is amphiprotic",
+              "pH≈(4+9)/2=6.50"
+            ],
+            [
+              "Second equivalence: OH⁻=0.0200 mol",
+              "Both acidic protons neutralized",
+              "Do not label first equivalence complete"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Two weak acids share one hydrogen-ion concentration",
+        "formula": "h² ≈ Ka₁C₁ + Ka₂C₂; exact ideal balance h=Kw/h+Σ[CiKai/(h+Kai)]",
+        "script": "Mixing acid solutions does not mean averaging their p H values. Consider two distinct monoprotic weak acids whose analytical concentrations after mixing are each zero point one zero molar. Their supplied acid constants are ten to the minus five and four times ten to the minus five. Both acids establish equilibrium with the same hydrogen ion concentration. Each conjugate base concentration is its analytical concentration times its acid constant, divided by hydrogen ion concentration plus that acid constant. Charge balance adds those two anion concentrations and hydroxide to match hydrogen ions. If dissociation is small and hydrogen ions dominate water's contribution, hydrogen concentration squared is approximately the sum of acid constant times concentration for both acids. The sum here is five times ten to the minus six, giving hydrogen ions about two point two four times ten to the minus three molar and p H approximately two point six five. Check that each acid constant is small compared with this hydrogen concentration before trusting that shortcut. An exact ideal charge balance gives a nearby result. The common hydrogen ions suppress the individual dissociation fractions; neither isolated acid's p H can simply be added or averaged into the mixture answer.",
+        "points": [
+          "After mixing: C₁=C₂=0.100 M · Ka₁=10⁻⁵; Ka₂=4×10⁻⁵ · Use the same h for both acids",
+          "h²≈10⁻⁵×0.1+4×10⁻⁵×0.1 · h≈2.24×10⁻³ M · pH≈2.65",
+          "Exact anion: CiKai/(h+Kai) · h=OH⁻+[A₁⁻]+[A₂⁻] · Check approximation; do not average pH"
+        ],
+        "board": {
+          "heading": "Two weak acids share one hydrogen-ion concentration",
+          "columns": [
+            "Specified system",
+            "Balance / calculation",
+            "Meaning / limit"
+          ],
+          "rows": [
+            [
+              "After mixing: C₁=C₂=0.100 M",
+              "Ka₁=10⁻⁵; Ka₂=4×10⁻⁵",
+              "Use the same h for both acids"
+            ],
+            [
+              "h²≈10⁻⁵×0.1+4×10⁻⁵×0.1",
+              "h≈2.24×10⁻³ M",
+              "pH≈2.65"
+            ],
+            [
+              "Exact anion: CiKai/(h+Kai)",
+              "h=OH⁻+[A₁⁻]+[A₂⁻]",
+              "Check approximation; do not average pH"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Complex formation changes total solubility, not the Ksp definition",
+        "formula": "AgCl(s)+2NH₃ ⇌ [Ag(NH₃)₂]⁺+Cl⁻; Koverall=KspKf; s²=Ksp(1+KfL²)",
+        "script": "A soluble complex can increase a sparingly soluble salt's total dissolved amount while free metal ions remain scarce. Use a supplied ideal silver chloride model with solubility product ten to the minus ten and formation constant ten to the seven for the diamminesilver ion. Hold the free ammonia concentration at zero point one zero molar, neglecting other complexes and reactions. If s is total dissolved silver and no chloride was initially added, chloride concentration also equals s. Free silver is only s divided by one plus formation constant times free ammonia squared. Substituting into the solubility product gives s squared equal to ten to the minus ten times one hundred thousand and one. Thus total solubility is approximately zero point zero zero three one six molar, while free silver is approximately three point one six times ten to the minus eight molar. Multiplying dissolution and complex formation constants also gives the overall reaction constant. The ligand concentration in these expressions is free ammonia, not the amount initially poured in. Bound ammonia consumes almost two ligand units per dissolved silver here, so maintaining the stipulated free concentration requires an adequate ligand inventory.",
+        "points": [
+          "Ksp=10⁻¹⁰; Kf=10⁷; free L=0.100 M · 1+KfL²=100001 · s≈0.00316 M",
+          "[Cl⁻]=s; free Ag⁺=s/100001 · [Ag⁺][Cl⁻]=Ksp · Free Ag⁺≈3.16×10⁻⁸ M",
+          "Add dissolution and complex equations · Koverall=KspKf=10⁻³ · Free ligand differs from total ligand"
+        ],
+        "board": {
+          "heading": "Complex formation changes total solubility, not the Ksp definition",
+          "columns": [
+            "Specified system",
+            "Balance / calculation",
+            "Meaning / limit"
+          ],
+          "rows": [
+            [
+              "Ksp=10⁻¹⁰; Kf=10⁷; free L=0.100 M",
+              "1+KfL²=100001",
+              "s≈0.00316 M"
+            ],
+            [
+              "[Cl⁻]=s; free Ag⁺=s/100001",
+              "[Ag⁺][Cl⁻]=Ksp",
+              "Free Ag⁺≈3.16×10⁻⁸ M"
+            ],
+            [
+              "Add dissolution and complex equations",
+              "Koverall=KspKf=10⁻³",
+              "Free ligand differs from total ligand"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "At 25°C, a moderately concentrated ideal BH⁺A⁻ salt has parent acid Ka(HA)=10⁻⁵ and parent base Kb(B)=10⁻⁴. The small-hydrolysis pH estimate is:",
+        "options": [
+          "7.50",
+          "6.50",
+          "5.00",
+          "9.00"
+        ],
+        "answer": 0,
+        "explanation": "Use ½[pKw+pKa(HA)−pKb(B)]=½(14+5−4)=7.50; both salt ions can hydrolyse."
+      },
+      {
+        "question": "For that salt, the cation acid constant and anion base constant are respectively:",
+        "options": [
+          "10⁻⁴ and 10⁻⁵",
+          "10⁻¹⁰ and 10⁻⁹",
+          "10⁻⁹ and 10⁻¹⁰",
+          "Both exactly zero"
+        ],
+        "answer": 1,
+        "explanation": "Use Ka(BH⁺)=Kw/Kb(B) and Kb(A⁻)=Kw/Ka(HA), keeping the parent constants separate."
+      },
+      {
+        "question": "A well-separated diprotic acid has pKa₁=4 and pKa₂=9. Its approximate first-equivalence pH in the usual amphiprotic regime is:",
+        "options": [
+          "4.00",
+          "9.00",
+          "6.50",
+          "7.00 for every concentration"
+        ],
+        "answer": 2,
+        "explanation": "The predominant intermediate HA⁻ is amphiprotic; the usual approximation gives ½(4+9)=6.50."
+      },
+      {
+        "question": "For .0100 mol H₂A, which added OH⁻ amount reaches the second buffer midpoint in the well-separated approximation?",
+        "options": [
+          ".00500 mol",
+          ".0100 mol",
+          ".0200 mol",
+          ".0150 mol"
+        ],
+        "answer": 3,
+        "explanation": "First convert all .0100 mol H₂A to HA⁻, then convert half of that intermediate to A²⁻ using another .00500 mol OH⁻."
+      },
+      {
+        "question": "Two weak monoprotic acids after mixing each have C=.100 M, with Ka=10⁻⁵ and 4×10⁻⁵. The small-dissociation h² estimate is:",
+        "options": [
+          "5.00×10⁻⁶ M²",
+          "5.00×10⁻⁵ M²",
+          "4.00×10⁻¹⁰ M²",
+          "The arithmetic mean of their isolated pH values"
+        ],
+        "answer": 0,
+        "explanation": "Both contribute to one charge balance: h²≈Ka₁C₁+Ka₂C₂=10⁻⁶+4×10⁻⁶ M²."
+      },
+      {
+        "question": "For h≈√(5×10⁻⁶) M in that mixed-acid model, pH is approximately:",
+        "options": [
+          "5.00",
+          "2.65",
+          "7.50",
+          "−2.65"
+        ],
+        "answer": 1,
+        "explanation": "The hydrogen concentration is approximately .002236 M, whose negative base-ten logarithm is 2.6505."
+      },
+      {
+        "question": "AgCl has supplied Ksp=10⁻¹⁰, Ag(NH₃)₂⁺ has Kf=10⁷ and free NH₃=.100 M. With no initial chloride, total AgCl solubility is approximately:",
+        "options": [
+          "10⁻⁵ M",
+          "10⁻¹⁰ M",
+          ".00316 M",
+          "100001 M"
+        ],
+        "answer": 2,
+        "explanation": "With total dissolved silver s and chloride s, s²=Ksp(1+KfL²)=1.00001×10⁻⁵ M²."
+      },
+      {
+        "question": "In that complex-solubility expression, L means:",
+        "options": [
+          "Total ammonia including every bound ligand",
+          "Total dissolved silver",
+          "Chloride concentration",
+          "Free unbound ammonia concentration"
+        ],
+        "answer": 3,
+        "explanation": "The formation expression uses free ligand activity, represented here by its ideal concentration; bound ligand needs a separate inventory."
+      }
+    ],
+    "sources": [
+      {
+        "title": "OpenStax: hydrolysis of salts",
+        "url": "https://openstax.org/books/chemistry-2e/pages/14-4-hydrolysis-of-salts"
+      },
+      {
+        "title": "OpenStax: acid–base titrations",
+        "url": "https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations"
+      },
+      {
+        "title": "OpenStax: coupled equilibria and complex-ion solubility",
+        "url": "https://openstax.org/books/chemistry-2e/pages/15-3-coupled-equilibria"
+      }
+    ]
+  },
+  "redox-electrochemistry": {
+    "base": 22,
+    "quizBase": 34,
+    "chapters": [
+      {
+        "title": "A copper anode and an inert anode change different inventories",
+        "formula": "Cu anode: Cu→Cu²⁺+2e⁻; inert anode: 2H₂O→O₂+4H⁺+4e⁻ in the stipulated sulfate model",
+        "script": "The material of an electrode can change the overall electrolysis reaction even when the cathode deposits the same metal. Compare two stipulated copper sulfate cells with enough copper ions, complete copper deposition at the cathode and one thousand nine hundred thirty coulombs passed. With Faraday constant ninety six thousand five hundred, each cell transfers zero point zero two zero zero mole electrons and deposits zero point zero one zero zero mole copper. At a copper anode, oxidation dissolves the same copper amount, so the anode loses zero point six three five gram while the cathode gains that mass for molar mass sixty three point five. The ideal bulk copper ion inventory is replenished. With a suitable inert anode and water oxidation as the only anode reaction, oxygen production is zero point zero zero five zero zero mole and hydrogen ion production zero point zero two zero zero mole. Copper ions are consumed without metal replacement from that anode. Sulfate is a spectator in this model. Electrode labels describe oxidation and reduction, not whether the electrode must always dissolve. Actual competing reactions, current efficiency and solution composition must be checked before applying these ideal inventories.",
+        "points": [
+          "Q=1930 C; F=96500 C/mol · n(e⁻)=0.0200; cathode Cu=0.0100 mol · Cu mass gain=0.635 g",
+          "Copper anode dissolves · Cu loss=0.0100 mol=0.635 g · Bulk Cu²⁺ replenished ideally",
+          "Inert anode; water oxidation only · O₂=0.00500; H⁺=0.0200 mol · Cu²⁺ consumed; no Cu replenishment"
+        ],
+        "board": {
+          "heading": "A copper anode and an inert anode change different inventories",
+          "columns": [
+            "Specified system",
+            "Balance / calculation",
+            "Meaning / limit"
+          ],
+          "rows": [
+            [
+              "Q=1930 C; F=96500 C/mol",
+              "n(e⁻)=0.0200; cathode Cu=0.0100 mol",
+              "Cu mass gain=0.635 g"
+            ],
+            [
+              "Copper anode dissolves",
+              "Cu loss=0.0100 mol=0.635 g",
+              "Bulk Cu²⁺ replenished ideally"
+            ],
+            [
+              "Inert anode; water oxidation only",
+              "O₂=0.00500; H⁺=0.0200 mol",
+              "Cu²⁺ consumed; no Cu replenishment"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Aqueous brine does not give the molten-salt products",
+        "formula": "Cathode: 2H₂O+2e⁻→H₂+2OH⁻; anode: 2Cl⁻→Cl₂+2e⁻ in the stated brine model",
+        "script": "An aqueous sodium chloride cell contains water as a possible reactant, so its products need not match molten sodium chloride. In the stipulated concentrated brine model with suitable electrodes, water reduction gives hydrogen and hydroxide at the cathode rather than deposition of sodium metal. Chloride oxidation gives chlorine at the anode. Adding the half equations cancels electrons and yields two chlorides plus two waters forming one hydrogen molecule, one chlorine molecule and two hydroxides. Sodium ions remain counterions. For zero point one zero zero mole electrons at complete efficiency for those specified products, hydrogen and chlorine amounts are each zero point zero five zero zero mole and hydroxide amount zero point one zero zero mole. These are separate compartment production amounts before crossover or secondary reactions. Chlorine contacting hydroxide can change the final products, so the simple ledger assumes effective separation. The selected anode product depends on concentration, electrode surface and overpotential; a standard potential table alone does not guarantee chlorine under every aqueous condition. This comparison explains a supplied cell's observations and charge balance, rather than providing a procedure for generating or collecting these reactive gases.",
+        "points": [
+          "Aqueous brine: stipulated pathways · Cathode H₂; anode Cl₂ · Na⁺ remains a counterion",
+          "n(e⁻)=0.100 mol; 100% efficiencies · H₂=0.0500; Cl₂=0.0500 mol · OH⁻=0.100 mol",
+          "Products kept in separate compartments · Concentration and overpotential matter · Secondary reactions excluded"
+        ],
+        "board": {
+          "heading": "Aqueous brine does not give the molten-salt products",
+          "columns": [
+            "Specified system",
+            "Balance / calculation",
+            "Meaning / limit"
+          ],
+          "rows": [
+            [
+              "Aqueous brine: stipulated pathways",
+              "Cathode H₂; anode Cl₂",
+              "Na⁺ remains a counterion"
+            ],
+            [
+              "n(e⁻)=0.100 mol; 100% efficiencies",
+              "H₂=0.0500; Cl₂=0.0500 mol",
+              "OH⁻=0.100 mol"
+            ],
+            [
+              "Products kept in separate compartments",
+              "Concentration and overpotential matter",
+              "Secondary reactions excluded"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Fuel-cell voltage and efficiency use Gibbs energy",
+        "formula": "H₂+½O₂→H₂O(l); Erev=−ΔG/(2F); ideal enthalpy-basis efficiency=|ΔG|/|ΔH|",
+        "script": "A fuel cell's reversible electrical work is linked to Gibbs energy, not automatically to all the heat available from combustion. Use the supplied standard reaction for one mole hydrogen and half a mole oxygen forming one mole liquid water at the stated temperature. Let the reaction Gibbs change be minus two hundred thirty seven kilojoules per mole and the enthalpy change minus two hundred eighty six. Two moles of electrons move through the external circuit per mole hydrogen. Dividing two hundred thirty seven thousand joules by twice Faraday constant ninety six thousand five hundred gives a reversible cell voltage of approximately one point two two eight volts. On the specified liquid water enthalpy basis, the reversible electrical efficiency is two hundred thirty seven divided by two hundred eighty six, approximately eighty two point nine percent. This does not state that every operating device achieves that efficiency. Finite current voltage losses, fuel utilization and auxiliary power can reduce delivered electrical output. Changing temperature or using water vapour and a different heating value changes the comparison. A cell voltage is an energy per charge, while efficiency is a dimensionless ratio with an explicit energy basis.",
+        "points": [
+          "Per H₂: ΔG=−237; ΔH=−286 kJ/mol · n=2; Erev=237000/(2F) · Erev≈1.228 V",
+          "Liquid-water enthalpy basis · ηrev=237/286 · ηrev≈82.9%",
+          "Operating current and losses · Delivered voltage below reversible limit · State temperature and water phase"
+        ],
+        "board": {
+          "heading": "Fuel-cell voltage and efficiency use Gibbs energy",
+          "columns": [
+            "Specified system",
+            "Balance / calculation",
+            "Meaning / limit"
+          ],
+          "rows": [
+            [
+              "Per H₂: ΔG=−237; ΔH=−286 kJ/mol",
+              "n=2; Erev=237000/(2F)",
+              "Erev≈1.228 V"
+            ],
+            [
+              "Liquid-water enthalpy basis",
+              "ηrev=237/286",
+              "ηrev≈82.9%"
+            ],
+            [
+              "Operating current and losses",
+              "Delivered voltage below reversible limit",
+              "State temperature and water phase"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Complexation shifts a silver electrode through free ions",
+        "formula": "E=E°+0.05916 log₁₀[Ag⁺] at 25°C; [Ag⁺]=CAg/(1+KfL²) in the stipulated ideal model",
+        "script": "A metal electrode responds to the activity of the reacting free ion, not automatically the total concentration of every complex containing that metal. Consider silver metal in a stipulated solution at twenty five degrees Celsius, with total dissolved silver zero point zero one zero zero molar and free ammonia held at zero point one zero molar. Use formation constant ten to the seven for the diamminesilver ion, and neglect other complexes, precipitation and activity corrections. Free silver concentration is total silver divided by one plus formation constant times ammonia squared. It is therefore approximately ten to the minus seven molar. For the reduction silver ion plus electron giving silver metal, the Nernst expression is standard potential plus zero point zero five nine one six times the logarithm of free silver concentration relative to one molar. With standard potential zero point eight zero zero volt, the electrode potential is approximately zero point three eight six volt. Using the total zero point zero one zero zero molar instead would incorrectly give about zero point six eight two volt. Complexation lowers the free ion activity here. The resulting electrode potential remains relative to the same reference; it is not a complete cell voltage without a second electrode.",
+        "points": [
+          "CAg=0.0100 M; free NH₃=0.100 M · Kf=10⁷; free Ag⁺≈10⁻⁷ M · Do not insert total silver into Nernst",
+          "Ag⁺+e⁻→Ag; E°=0.800 V · E≈0.800+0.05916 log(10⁻⁷) · E≈0.386 V vs same reference",
+          "Uncomplexed 0.0100 M comparison · E≈0.682 V · Complexation lowers E by ≈0.296 V"
+        ],
+        "board": {
+          "heading": "Complexation shifts a silver electrode through free ions",
+          "columns": [
+            "Specified system",
+            "Balance / calculation",
+            "Meaning / limit"
+          ],
+          "rows": [
+            [
+              "CAg=0.0100 M; free NH₃=0.100 M",
+              "Kf=10⁷; free Ag⁺≈10⁻⁷ M",
+              "Do not insert total silver into Nernst"
+            ],
+            [
+              "Ag⁺+e⁻→Ag; E°=0.800 V",
+              "E≈0.800+0.05916 log(10⁻⁷)",
+              "E≈0.386 V vs same reference"
+            ],
+            [
+              "Uncomplexed 0.0100 M comparison",
+              "E≈0.682 V",
+              "Complexation lowers E by ≈0.296 V"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Passing 1930 C through the stipulated CuSO₄ cell with a copper anode and 100% copper efficiency at both electrodes gives (F=96500 C/mol, MCu=63.5 g/mol):",
+        "options": [
+          "Cathode loses .635 g; anode gains .635 g",
+          "Both electrodes gain .635 g",
+          "Cathode gains .635 g; anode loses .635 g",
+          "No electrode mass change"
+        ],
+        "answer": 2,
+        "explanation": "The charge is .0200 mol electrons, giving .0100 mol copper deposited at the cathode and dissolved at the copper anode."
+      },
+      {
+        "question": "With the same charge but an inert anode producing only O₂ by water oxidation, its oxygen amount is:",
+        "options": [
+          ".0200 mol",
+          ".0100 mol",
+          ".100 mol",
+          ".00500 mol"
+        ],
+        "answer": 3,
+        "explanation": "Water oxidation releases four electrons per O₂, so .0200/4=.00500 mol O₂; copper ions are not replenished by that anode."
+      },
+      {
+        "question": "For the stated concentrated aqueous brine pathways, the cathode product is:",
+        "options": [
+          "Hydrogen from water reduction",
+          "Sodium metal as in molten NaCl",
+          "Chlorine from reduction",
+          "Copper without any copper source"
+        ],
+        "answer": 0,
+        "explanation": "Water reduction produces H₂ and OH⁻ in this aqueous model, whereas molten NaCl has a different set of available reactants."
+      },
+      {
+        "question": "At 100% stipulated efficiencies, .100 mol electrons in a separated brine cell forms H₂, Cl₂ and OH⁻ amounts respectively:",
+        "options": [
+          ".100, .100, .0500 mol",
+          ".0500, .0500, .100 mol",
+          ".0250, .0500, .200 mol",
+          ".100, .0500, zero mol"
+        ],
+        "answer": 1,
+        "explanation": "The half equations require two electrons per H₂ and per Cl₂, while one hydroxide is formed per electron at the cathode."
+      },
+      {
+        "question": "Per mole H₂ forming liquid water, supplied ΔG=−237 kJ/mol and n=2. With F=96500 C/mol, reversible voltage is approximately:",
+        "options": [
+          "2.456 V",
+          ".614 V",
+          "1.228 V",
+          "82.9 V"
+        ],
+        "answer": 2,
+        "explanation": "Maximum electrical work magnitude is 237000 J/mol; divide by 2×96500 C/mol to obtain volts."
+      },
+      {
+        "question": "For the same fuel-cell reaction with ΔH=−286 kJ/mol, the ideal liquid-water enthalpy-basis electrical efficiency is:",
+        "options": [
+          "100% for every operating device",
+          "120.7%",
+          "47.2%",
+          "82.9%"
+        ],
+        "answer": 3,
+        "explanation": "The reversible ratio is |ΔG|/|ΔH|=237/286≈.829 on this specified enthalpy basis; operating losses can lower delivery."
+      },
+      {
+        "question": "In the stipulated silver/ammonia model, CAg=.0100 M, Kf=10⁷ and free L=.100 M. Free Ag⁺ concentration is approximately:",
+        "options": [
+          "1.00×10⁻⁷ M",
+          ".0100 M",
+          ".100 M",
+          "100001 M"
+        ],
+        "answer": 0,
+        "explanation": "Divide total dissolved silver by 1+KfL²=100001; the reacting free ion is only a small part of the inventory."
+      },
+      {
+        "question": "At 25°C with free Ag⁺≈10⁻⁷ M and E°=.800 V, E for Ag⁺+e⁻→Ag is approximately:",
+        "options": [
+          ".682 V",
+          ".386 V",
+          "1.214 V",
+          "−.800 V"
+        ],
+        "answer": 1,
+        "explanation": "Use E=.800+.05916 log₁₀(10⁻⁷)=.38588 V relative to the same reference, rather than inserting total silver."
+      }
+    ],
+    "sources": [
+      {
+        "title": "OpenStax: electrolysis, aqueous products and active electrodes",
+        "url": "https://openstax.org/books/chemistry-2e/pages/17-7-electrolysis"
+      },
+      {
+        "title": "OpenStax: Nernst equation and nonstandard conditions",
+        "url": "https://openstax.org/books/chemistry-2e/pages/17-4-potential-free-energy-and-equilibrium"
+      },
+      {
+        "title": "US Department of Energy: Fuel Cell Handbook, reversible efficiency",
+        "url": "https://www.netl.doe.gov/sites/default/files/netl-file/FCHandbook7.pdf"
+      },
+      {
+        "title": "OpenStax: complex-ion formation balances",
+        "url": "https://openstax.org/books/chemistry-2e/pages/15-3-coupled-equilibria"
+      }
+    ]
+  }
+} as const;

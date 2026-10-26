@@ -21,8 +21,8 @@ Questions are original practice, not represented as official PYQs.
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 25 | 24 | 15 | 42 / 42 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 23 | 25 | 15 | 34 / 34 |
 | 5 | [Solutions](/jee/classes/solutions) | 23 | 25 | 15 | 34 / 34 |
-| 6 | [Equilibrium](/jee/classes/equilibrium) | 21 | 21 | 16 | 34 / 34 |
-| 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 22 | 23 | 16 | 34 / 34 |
+| 6 | [Equilibrium](/jee/classes/equilibrium) | 25 | 25 | 19 | 42 / 42 |
+| 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 26 | 27 | 19 | 42 / 42 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 22 | 25 | 19 | 42 / 42 |
 | 9 | [Periodic Trends](/jee/classes/periodic-trends) | 21 | 19 | 12 | 32 / 32 |
 | 10 | [P-Block](/jee/classes/p-block) | 23 | 21 | 12 | 34 / 34 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Atomic Structure adds hydrogen 3s radial-node plots, a supplied reduced-mass isotope-shift model, uncertainty kinetic-energy bounds and inverse photoelectric graph analysis. Reduced-mass and kinetic-energy refinements are identified as supporting extensions.
+Equilibrium adds salts with two hydrolysing ions, two-stage diprotic titrations, common-hydrogen-ion balances for mixed weak acids and complex-ion-enhanced solubility. The titration plot uses the full stated ideal charge balance rather than joining approximate midpoint labels.
 
-Chemical Bonding adds a simplified HF valence MO diagram, a bond potential with distinct well-depth and ground-state dissociation energies, NO2 radical/dimer comparisons and ortho/meta/para dipole models. Numerical dipole estimates are explicitly idealized.
+Redox and Electrochemistry adds active/inert copper-sulfate anode inventories, specified separated aqueous brine products, fuel-cell Gibbs work and enthalpy-basis efficiency, and complexation-shifted silver potentials. Free ligand, free metal and total dissolved metal are distinguished in both classes.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain lesson-specific references to University of Washington isotope-shift teaching, hydrogen-orbital teaching by Daniel Fischer, OpenStax photoelectric/uncertainty and nitrogen/polarity chapters, Peter Chieh’s HF MO notes and IUPAC dissociation-energy definitions. Numerical datasets and MCQs in this batch are original practice.
+The notes contain lesson-specific OpenStax references for salt hydrolysis, titrations, coupled equilibria, electrolysis and Nernst relations, alongside the US Department of Energy Fuel Cell Handbook for the reversible electrical-efficiency basis. Numerical datasets and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

@@ -3,10 +3,10 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {equilibriumElectrochemistryLessons as written} from '../app/jee/classes/equilibrium-electrochemistry-study.ts';
-for(const [id,count] of [['equilibrium',21],['redox-electrochemistry',22]]){
+for(const [id,count] of [['equilibrium',25],['redox-electrochemistry',26]]){
  const lesson=JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`));
  test(`${id}: substantive chapters, quiz parity and reviewed audio provenance`,()=>{
-  assert.equal(lesson.chapters.length,count);assert.equal(lesson.quiz.length,34);
+  assert.equal(lesson.chapters.length,count);assert.equal(lesson.quiz.length,42);
   assert.deepEqual(lesson.quiz,written.find(l=>l.id===id).quiz);
   for(const [i,c] of lesson.chapters.entries()){
    assert.ok(c.script.split(/\s+/).length>=150);assert.equal(c.board.rows.length,3);
@@ -16,7 +16,7 @@ for(const [id,count] of [['equilibrium',21],['redox-electrochemistry',22]]){
  });
  test(`${id}: full transcript has readable, ordered captions for every chapter`,()=>{
   const t=JSON.parse(fs.readFileSync(`app/data/jee-${id}-timings.json`));
-  assert.equal(t.chapters.length,count);assert.ok(t.duration>500 && t.duration<(id==='equilibrium'?1800:2100));
+  assert.equal(t.chapters.length,count);assert.ok(t.duration>count*50 && t.duration<count*95);
   const normalize=s=>s.toLowerCase().replace(/[^a-z0-9]/g,'');
   for(const [i,ch] of t.chapters.entries()){
    assert.equal(ch.start,i?t.chapters[i-1].end:0);

@@ -45,6 +45,10 @@
     {
       "title": "OpenStax: precipitation and dissolution",
       "url": "https://openstax.org/books/chemistry-atoms-first-2e/pages/15-1-precipitation-and-dissolution"
+    },
+    {
+      "title": "OpenStax: hydrolysis of salts",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-4-hydrolysis-of-salts"
     }
   ],
   "chapters": [
@@ -784,6 +788,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Both ions of a weak-acid weak-base salt can hydrolyse",
+      "formula": "BH⁺A⁻; pH ≈ ½[pKw + pKa(HA) − pKb(B)] for the stated moderately concentrated ideal model",
+      "script": "A salt can contain both an acidic cation and a basic anion. Let the cation be B H plus, conjugate to weak base B, and the anion be A minus, conjugate to weak acid H A. Their reactions with water compete; neither ion should automatically be called a spectator. For a moderately concentrated ideal solution with small hydrolysis and water background negligible in the charge balance, the approximate p H is half of p K w plus p K a of H A minus p K b of B. Use a supplied zero point one zero molar salt at twenty five degrees Celsius, acid constant ten to the minus five and original base constant ten to the minus four. The p H estimate is seven point five, so the salt is mildly basic. The cation's acid constant is ten to the minus ten and the anion's base constant ten to the minus nine, consistent with the stronger basic contribution. This formula compares the parent acid and base, not two unrelated constants. At extreme dilution or extensive hydrolysis, solve mass balance, charge balance and water ionization together instead of claiming that concentration never matters.",
+      "points": [
+        "Parent HA: Ka=10⁻⁵; B: Kb=10⁻⁴ · pH ≈ ½(14+5−4) · 7.50; mildly basic",
+        "BH⁺ acid; A⁻ base · Ka(BH⁺)=10⁻¹⁰; Kb(A⁻)=10⁻⁹ · Both ions react with water",
+        "Moderate C; small hydrolysis · Approximate analytical model · Very dilute solutions need full balances"
+      ],
+      "board": {
+        "heading": "Both ions of a weak-acid weak-base salt can hydrolyse",
+        "columns": [
+          "Specified system",
+          "Balance / calculation",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "Parent HA: Ka=10⁻⁵; B: Kb=10⁻⁴",
+            "pH ≈ ½(14+5−4)",
+            "7.50; mildly basic"
+          ],
+          [
+            "BH⁺ acid; A⁻ base",
+            "Ka(BH⁺)=10⁻¹⁰; Kb(A⁻)=10⁻⁹",
+            "Both ions react with water"
+          ],
+          [
+            "Moderate C; small hydrolysis",
+            "Approximate analytical model",
+            "Very dilute solutions need full balances"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A diprotic titration has two buffer midpoints",
+      "formula": "H₂A → HA⁻ → A²⁻; half steps: pH≈pKa₁ and pKa₂; first equivalence ≈½(pKa₁+pKa₂)",
+      "script": "A diprotic acid can show two successive neutralization stages when its acid constants are well separated. Consider zero point zero one zero zero mole of a hypothetical acid H two A, with supplied p K a values four and nine, titrated by a strong base. At zero point zero zero five zero zero mole of added hydroxide, the first buffer pair contains approximately equal amounts of H two A and H A minus. Its p H is therefore approximately four. The first stoichiometric equivalence is at zero point zero one zero zero mole hydroxide, where H A minus predominates and can either accept or donate a proton. In the usual amphiprotic approximation its p H is half of four plus nine, or six point five. At zero point zero one five zero mole hydroxide, the second buffer pair, H A minus and A two minus, has equal amounts, giving p H approximately nine. Full neutralization requires zero point zero two zero zero mole hydroxide, not the first equivalence amount. These are well separated equilibrium approximations at suitable concentration, not exact values for arbitrary dilution. Past the second equivalence, calculate excess hydroxide and total volume before p H.",
+      "points": [
+        "n(H₂A)=0.0100 mol; pKa₁=4, pKa₂=9 · OH⁻=0.00500 / 0.0150 mol · Buffer midpoints pH≈4 / 9",
+        "First equivalence: OH⁻=0.0100 mol · HA⁻ is amphiprotic · pH≈(4+9)/2=6.50",
+        "Second equivalence: OH⁻=0.0200 mol · Both acidic protons neutralized · Do not label first equivalence complete"
+      ],
+      "board": {
+        "heading": "A diprotic titration has two buffer midpoints",
+        "columns": [
+          "Specified system",
+          "Balance / calculation",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "n(H₂A)=0.0100 mol; pKa₁=4, pKa₂=9",
+            "OH⁻=0.00500 / 0.0150 mol",
+            "Buffer midpoints pH≈4 / 9"
+          ],
+          [
+            "First equivalence: OH⁻=0.0100 mol",
+            "HA⁻ is amphiprotic",
+            "pH≈(4+9)/2=6.50"
+          ],
+          [
+            "Second equivalence: OH⁻=0.0200 mol",
+            "Both acidic protons neutralized",
+            "Do not label first equivalence complete"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Two weak acids share one hydrogen-ion concentration",
+      "formula": "h² ≈ Ka₁C₁ + Ka₂C₂; exact ideal balance h=Kw/h+Σ[CiKai/(h+Kai)]",
+      "script": "Mixing acid solutions does not mean averaging their p H values. Consider two distinct monoprotic weak acids whose analytical concentrations after mixing are each zero point one zero molar. Their supplied acid constants are ten to the minus five and four times ten to the minus five. Both acids establish equilibrium with the same hydrogen ion concentration. Each conjugate base concentration is its analytical concentration times its acid constant, divided by hydrogen ion concentration plus that acid constant. Charge balance adds those two anion concentrations and hydroxide to match hydrogen ions. If dissociation is small and hydrogen ions dominate water's contribution, hydrogen concentration squared is approximately the sum of acid constant times concentration for both acids. The sum here is five times ten to the minus six, giving hydrogen ions about two point two four times ten to the minus three molar and p H approximately two point six five. Check that each acid constant is small compared with this hydrogen concentration before trusting that shortcut. An exact ideal charge balance gives a nearby result. The common hydrogen ions suppress the individual dissociation fractions; neither isolated acid's p H can simply be added or averaged into the mixture answer.",
+      "points": [
+        "After mixing: C₁=C₂=0.100 M · Ka₁=10⁻⁵; Ka₂=4×10⁻⁵ · Use the same h for both acids",
+        "h²≈10⁻⁵×0.1+4×10⁻⁵×0.1 · h≈2.24×10⁻³ M · pH≈2.65",
+        "Exact anion: CiKai/(h+Kai) · h=OH⁻+[A₁⁻]+[A₂⁻] · Check approximation; do not average pH"
+      ],
+      "board": {
+        "heading": "Two weak acids share one hydrogen-ion concentration",
+        "columns": [
+          "Specified system",
+          "Balance / calculation",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "After mixing: C₁=C₂=0.100 M",
+            "Ka₁=10⁻⁵; Ka₂=4×10⁻⁵",
+            "Use the same h for both acids"
+          ],
+          [
+            "h²≈10⁻⁵×0.1+4×10⁻⁵×0.1",
+            "h≈2.24×10⁻³ M",
+            "pH≈2.65"
+          ],
+          [
+            "Exact anion: CiKai/(h+Kai)",
+            "h=OH⁻+[A₁⁻]+[A₂⁻]",
+            "Check approximation; do not average pH"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Complex formation changes total solubility, not the Ksp definition",
+      "formula": "AgCl(s)+2NH₃ ⇌ [Ag(NH₃)₂]⁺+Cl⁻; Koverall=KspKf; s²=Ksp(1+KfL²)",
+      "script": "A soluble complex can increase a sparingly soluble salt's total dissolved amount while free metal ions remain scarce. Use a supplied ideal silver chloride model with solubility product ten to the minus ten and formation constant ten to the seven for the diamminesilver ion. Hold the free ammonia concentration at zero point one zero molar, neglecting other complexes and reactions. If s is total dissolved silver and no chloride was initially added, chloride concentration also equals s. Free silver is only s divided by one plus formation constant times free ammonia squared. Substituting into the solubility product gives s squared equal to ten to the minus ten times one hundred thousand and one. Thus total solubility is approximately zero point zero zero three one six molar, while free silver is approximately three point one six times ten to the minus eight molar. Multiplying dissolution and complex formation constants also gives the overall reaction constant. The ligand concentration in these expressions is free ammonia, not the amount initially poured in. Bound ammonia consumes almost two ligand units per dissolved silver here, so maintaining the stipulated free concentration requires an adequate ligand inventory.",
+      "points": [
+        "Ksp=10⁻¹⁰; Kf=10⁷; free L=0.100 M · 1+KfL²=100001 · s≈0.00316 M",
+        "[Cl⁻]=s; free Ag⁺=s/100001 · [Ag⁺][Cl⁻]=Ksp · Free Ag⁺≈3.16×10⁻⁸ M",
+        "Add dissolution and complex equations · Koverall=KspKf=10⁻³ · Free ligand differs from total ligand"
+      ],
+      "board": {
+        "heading": "Complex formation changes total solubility, not the Ksp definition",
+        "columns": [
+          "Specified system",
+          "Balance / calculation",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "Ksp=10⁻¹⁰; Kf=10⁷; free L=0.100 M",
+            "1+KfL²=100001",
+            "s≈0.00316 M"
+          ],
+          [
+            "[Cl⁻]=s; free Ag⁺=s/100001",
+            "[Ag⁺][Cl⁻]=Ksp",
+            "Free Ag⁺≈3.16×10⁻⁸ M"
+          ],
+          [
+            "Add dissolution and complex equations",
+            "Koverall=KspKf=10⁻³",
+            "Free ligand differs from total ligand"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1160,6 +1304,94 @@
       ],
       "answer": 1,
       "explanation": "The remaining fraction is 0.00100/0.0100=0.10, so 90% is removed under the stated exclusions."
+    },
+    {
+      "question": "At 25°C, a moderately concentrated ideal BH⁺A⁻ salt has parent acid Ka(HA)=10⁻⁵ and parent base Kb(B)=10⁻⁴. The small-hydrolysis pH estimate is:",
+      "options": [
+        "7.50",
+        "6.50",
+        "5.00",
+        "9.00"
+      ],
+      "answer": 0,
+      "explanation": "Use ½[pKw+pKa(HA)−pKb(B)]=½(14+5−4)=7.50; both salt ions can hydrolyse."
+    },
+    {
+      "question": "For that salt, the cation acid constant and anion base constant are respectively:",
+      "options": [
+        "10⁻⁴ and 10⁻⁵",
+        "10⁻¹⁰ and 10⁻⁹",
+        "10⁻⁹ and 10⁻¹⁰",
+        "Both exactly zero"
+      ],
+      "answer": 1,
+      "explanation": "Use Ka(BH⁺)=Kw/Kb(B) and Kb(A⁻)=Kw/Ka(HA), keeping the parent constants separate."
+    },
+    {
+      "question": "A well-separated diprotic acid has pKa₁=4 and pKa₂=9. Its approximate first-equivalence pH in the usual amphiprotic regime is:",
+      "options": [
+        "4.00",
+        "9.00",
+        "6.50",
+        "7.00 for every concentration"
+      ],
+      "answer": 2,
+      "explanation": "The predominant intermediate HA⁻ is amphiprotic; the usual approximation gives ½(4+9)=6.50."
+    },
+    {
+      "question": "For .0100 mol H₂A, which added OH⁻ amount reaches the second buffer midpoint in the well-separated approximation?",
+      "options": [
+        ".00500 mol",
+        ".0100 mol",
+        ".0200 mol",
+        ".0150 mol"
+      ],
+      "answer": 3,
+      "explanation": "First convert all .0100 mol H₂A to HA⁻, then convert half of that intermediate to A²⁻ using another .00500 mol OH⁻."
+    },
+    {
+      "question": "Two weak monoprotic acids after mixing each have C=.100 M, with Ka=10⁻⁵ and 4×10⁻⁵. The small-dissociation h² estimate is:",
+      "options": [
+        "5.00×10⁻⁶ M²",
+        "5.00×10⁻⁵ M²",
+        "4.00×10⁻¹⁰ M²",
+        "The arithmetic mean of their isolated pH values"
+      ],
+      "answer": 0,
+      "explanation": "Both contribute to one charge balance: h²≈Ka₁C₁+Ka₂C₂=10⁻⁶+4×10⁻⁶ M²."
+    },
+    {
+      "question": "For h≈√(5×10⁻⁶) M in that mixed-acid model, pH is approximately:",
+      "options": [
+        "5.00",
+        "2.65",
+        "7.50",
+        "−2.65"
+      ],
+      "answer": 1,
+      "explanation": "The hydrogen concentration is approximately .002236 M, whose negative base-ten logarithm is 2.6505."
+    },
+    {
+      "question": "AgCl has supplied Ksp=10⁻¹⁰, Ag(NH₃)₂⁺ has Kf=10⁷ and free NH₃=.100 M. With no initial chloride, total AgCl solubility is approximately:",
+      "options": [
+        "10⁻⁵ M",
+        "10⁻¹⁰ M",
+        ".00316 M",
+        "100001 M"
+      ],
+      "answer": 2,
+      "explanation": "With total dissolved silver s and chloride s, s²=Ksp(1+KfL²)=1.00001×10⁻⁵ M²."
+    },
+    {
+      "question": "In that complex-solubility expression, L means:",
+      "options": [
+        "Total ammonia including every bound ligand",
+        "Total dissolved silver",
+        "Chloride concentration",
+        "Free unbound ammonia concentration"
+      ],
+      "answer": 3,
+      "explanation": "The formation expression uses free ligand activity, represented here by its ideal concentration; bound ligand needs a separate inventory."
     }
   ]
 }

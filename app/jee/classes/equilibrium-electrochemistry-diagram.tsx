@@ -1,9 +1,11 @@
+import CoupledEquilibriumElectrodesDiagram from './coupled-equilibrium-electrodes-diagram';
 import equilibrium from "../../data/jee-equilibrium-lecture.json";
 import electrochemistry from "../../data/jee-redox-electrochemistry-lecture.json";
 import EquilibriumCellDiagram from "./equilibrium-cell-diagram";
 import styles from "./lecture.module.css";
 
 export default function EquilibriumElectrochemistryDiagram({lesson,chapter}:{lesson:"equilibrium"|"redox-electrochemistry";chapter:number}) {
+ if(chapter===22)return <CoupledEquilibriumElectrodesDiagram lesson={lesson}/>;
  if ((lesson==="equilibrium" && chapter===10) || (lesson==="redox-electrochemistry" && chapter===9)) return <EquilibriumCellDiagram lesson={lesson} />;
  const board=(lesson==="equilibrium"?equilibrium:electrochemistry).chapters[chapter].board;
  return <svg className={styles.diagram} viewBox="0 0 460 310" role="img" aria-label={board.heading}>

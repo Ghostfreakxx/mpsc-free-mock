@@ -1163,8 +1163,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "equilibrium", subject: "Chemistry", unit: 6, number: "C06", title: equilibrium.title,
-    description: "Twenty-one narrated chapters on equilibrium constants, very dilute acids, ionization fractions, buffers, hydrolysis, solubility stoichiometry and pH-dependent precipitation.",
-    scope: "Recorded JEE Main 2026 Chemistry Unit 6 foundation with original practice. Further multistage ionization, nonideal activities, physical-equilibrium calculations and mixed weak-acid titrations remain; not exhaustive coverage or official PYQs.",
+    description: "Twenty-five narrated chapters on equilibrium, two-ion salt hydrolysis, diprotic titrations, mixed weak acids, complex-ion solubility, buffers and precipitation.",
+    scope: "Recorded JEE Main 2026 Chemistry Unit 6 foundation with original practice. Further multistage ionization, nonideal activities, physical-equilibrium calculations and broader mixed titrations remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.equilibrium.lecture.v1",
     audio: "/lectures/equilibrium/narration-marin.mp3",
     subtitles: "/lectures/equilibrium/english.vtt", timings: equilibriumTimings,
@@ -1173,8 +1173,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "redox-electrochemistry", subject: "Chemistry", unit: 7, number: "C07", title: electrochemistry.title,
-    description: "Twenty-two narrated chapters on redox, electrode potentials, conductivity calibration, changing-current electrolysis, alkaline sulfite balances, battery capacity and corrosion.",
-    scope: "Recorded JEE Main 2026 Chemistry Unit 7 foundation with original practice. Electrode classifications, detailed dry-cell mechanisms and broader mixed problems remain; not exhaustive coverage or official PYQs.",
+    description: "Twenty-six narrated chapters on redox, active/inert electrodes, aqueous brine products, fuel-cell efficiency, complexation-shifted potentials, conductivity and corrosion.",
+    scope: "Recorded JEE Main 2026 Chemistry Unit 7 foundation with original practice. Detailed dry-cell mechanisms, overpotential datasets and broader mixed electrochemical problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.redox-electrochemistry.lecture.v1",
     audio: "/lectures/redox-electrochemistry/narration-marin.mp3",
     subtitles: "/lectures/redox-electrochemistry/english.vtt", timings: electrochemistryTimings,
