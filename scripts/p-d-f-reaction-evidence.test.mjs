@@ -4,7 +4,7 @@ import fs from 'node:fs';
 const read=id=>JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`));
 const near=(a,b)=>assert.ok(Math.abs(a-b)<1e-9,`${a} differs from ${b}`);
 test('p-block reaction questions preserve redox, peroxide and electron ledgers',()=>{
- assert.deepEqual(read('p-block').quiz.slice(26).map(q=>q.answer),[0,1,2,3,0,1,2,3]);
+ assert.deepEqual(read('p-block').quiz.slice(26).map(q=>q.answer),[0,1,2,3,0,1,2,3,2,3,0,1,2,3,0,1]);
  assert.deepEqual({Pb:1,O:2,H:4,I:2,charge:4-2},{Pb:1,O:2,H:4,I:2,charge:2});
  near(.0100*1,.0100);near(.0100*2,.0200);
  assert.equal(2*2,4);assert.equal(4*2/2,4);
@@ -15,7 +15,7 @@ test('p-block reaction questions preserve redox, peroxide and electron ledgers',
  assert.deepEqual([5+1,3+1,4+0],[6,4,4]);
 });
 test('d/f-block precipitation, photon energy and catalytic balances agree',()=>{
- assert.deepEqual(read('d-f-block').quiz.slice(26).map(q=>q.answer),[2,3,0,1,2,3,0,1]);
+ assert.deepEqual(read('d-f-block').quiz.slice(26).map(q=>q.answer),[2,3,0,1,2,3,0,1,0,1,2,3,0,1,2,3]);
  assert.deepEqual({Cu:2,I:4,charge:2*2-4},{Cu:2,I:2+2,charge:0});
  near(.0100/2,.00500);near(.0100*2,.0200);
  near(1240/500,2.48);near(1240/500*96.485,239.2828);assert.equal(72-71,1);

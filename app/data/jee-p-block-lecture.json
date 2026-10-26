@@ -49,6 +49,18 @@
     {
       "title": "IIT Kanpur SATHEE: p-block structures",
       "url": "https://sathee.iitk.ac.in/sathee-neet/notes-class-12/chemistry/p-block-elements/"
+    },
+    {
+      "title": "OpenStax: phosphorus halides and solid PCl₅ ions",
+      "url": "https://openstax.org/books/chemistry-2e/pages/18-8-occurrence-preparation-and-properties-of-phosphorus"
+    },
+    {
+      "title": "Purdue University: halogen reactions with hydroxide",
+      "url": "https://chemed.chem.purdue.edu/genchem/topicreview/bp/ch10/group7.php"
+    },
+    {
+      "title": "Bickelhaupt and coauthors: donor-dependent boron trihalide interactions",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7756781/"
     }
   ],
   "chapters": [
@@ -858,6 +870,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Phosphorus pentachloride changes structural description with phase",
+      "formula": "Molecular PCl₅: trigonal bipyramidal; ordinary solid: [PCl₄]⁺[PCl₆]⁻ = 2 empirical PCl₅ units",
+      "script": "A chemical formula does not guarantee the same structural unit in every phase. In the molecular gas description, phosphorus pentachloride has five phosphorus chlorine bonds and trigonal bipyramidal geometry. Ordinary solid phosphorus pentachloride is instead described by tetrachlorophosphonium cations and hexachlorophosphate anions. The cation has four chlorine atoms and tetrahedral geometry, while the anion has six and octahedral geometry in the elementary electron domain model. One cation and one anion together contain two phosphorus atoms and ten chlorines. That pair therefore corresponds to two empirical phosphorus pentachloride units, not one. The cation's valence electron count is five plus four times seven minus one, or thirty two. The anion's is five plus six times seven plus one, or forty eight. Terminal chlorine lone pairs and the stated bonds account for those electrons without a central lone pair in either ion. Phosphorus oxidation state remains plus five in both charged species; overall ion charge is not its oxidation state. This phase comparison does not claim that every hot vapour remains entirely undissociated or that every phosphorus halide has the same solid structure.",
+      "points": [
+        "Molecular gas PCl₅ · 5 bonds; 40 valence electrons · Trigonal bipyramidal",
+        "Solid [PCl₄]⁺ and [PCl₆]⁻ · 32 / 48 valence electrons · Tetrahedral / octahedral",
+        "One cation + one anion · P₂Cl₁₀; total charge zero · Equivalent to 2 empirical PCl₅ units"
+      ],
+      "board": {
+        "heading": "Phosphorus pentachloride changes structural description with phase",
+        "columns": [
+          "Specified species",
+          "Accounting / evidence",
+          "Interpretation / limit"
+        ],
+        "rows": [
+          [
+            "Molecular gas PCl₅",
+            "5 bonds; 40 valence electrons",
+            "Trigonal bipyramidal"
+          ],
+          [
+            "Solid [PCl₄]⁺ and [PCl₆]⁻",
+            "32 / 48 valence electrons",
+            "Tetrahedral / octahedral"
+          ],
+          [
+            "One cation + one anion",
+            "P₂Cl₁₀; total charge zero",
+            "Equivalent to 2 empirical PCl₅ units"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Chlorine disproportionation has two different product ledgers",
+      "formula": "Cl₂+2OH⁻→Cl⁻+ClO⁻+H₂O; 3Cl₂+6OH⁻→5Cl⁻+ClO₃⁻+3H₂O",
+      "script": "Disproportionation puts atoms of the same starting element into both lower and higher oxidation states. In the usual cold dilute alkali comparison, chlorine gives chloride and hypochlorite, with chlorine oxidation numbers minus one and plus one. One chlorine molecule and two hydroxides form one of each ion and one water. In the familiar hot concentrated alkali comparison, the idealized overall products are chloride and chlorate. Chlorate has chlorine plus five, so one chlorine atom losing five electrons must be balanced by five chlorine atoms each gaining one. The net equation therefore uses three chlorine molecules and six hydroxides to form five chlorides, one chlorate and three waters. Five sixths of the chlorine atoms are reduced and one sixth oxidized in this second ledger. For zero point zero three zero zero mole chlorine completely following that stipulated endpoint, chlorate amount is zero point zero one zero zero mole and chloride zero point zero five zero zero mole. These are alternative condition dependent overall comparisons, not two identical product ratios. The equations balance atoms and charge but do not specify an elementary mechanism, a universal reaction rate or an experimental preparation procedure.",
+      "points": [
+        "Cold dilute alkali comparison · Cl oxidation: 0→−1 and +1 · Chloride : hypochlorite = 1:1",
+        "Hot concentrated alkali comparison · Cl oxidation: 0→−1 and +5 · Chloride : chlorate = 5:1",
+        "0.0300 mol Cl₂; second endpoint · ClO₃⁻=.0100; Cl⁻=.0500 mol · 1/6 of Cl atoms oxidized; 5/6 reduced"
+      ],
+      "board": {
+        "heading": "Chlorine disproportionation has two different product ledgers",
+        "columns": [
+          "Specified species",
+          "Accounting / evidence",
+          "Interpretation / limit"
+        ],
+        "rows": [
+          [
+            "Cold dilute alkali comparison",
+            "Cl oxidation: 0→−1 and +1",
+            "Chloride : hypochlorite = 1:1"
+          ],
+          [
+            "Hot concentrated alkali comparison",
+            "Cl oxidation: 0→−1 and +5",
+            "Chloride : chlorate = 5:1"
+          ],
+          [
+            "0.0300 mol Cl₂; second endpoint",
+            "ClO₃⁻=.0100; Cl⁻=.0500 mol",
+            "1/6 of Cl atoms oxidized; 5/6 reduced"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A boron Lewis-acid comparison must name the donor and energy measure",
+      "formula": "BX₃+L→L→BX₃; supplied matched ΔH values: BF₃ −80, BCl₃ −100, BBr₃ −115 kJ/mol adduct",
+      "script": "Boron trihalides can accept a lone pair from a Lewis base, but ranking them requires a specified comparison. Let the same donor L form one to one adducts with boron trifluoride, trichloride and tribromide in a supplied matched state model. Their illustrative formation enthalpies are minus eighty, minus one hundred and minus one hundred fifteen kilojoules per mole adduct. Tribromide formation is most exothermic in this dataset. The planar three coordinate boron parent becomes approximately four coordinate in the adduct, so binding includes the energy needed to deform the parent as well as the new donor acceptor interaction. Electron donation within the parent molecule can influence its bonding, but one electronegativity arrow or a simple octet count does not account for all these energy terms. The familiar acidity ordering toward suitable strong donors need not be an invariant ranking toward every weak donor or in every solvent. Nor do the supplied enthalpies alone determine equilibrium constants: Gibbs energy also includes entropy at the stated temperature. These original numbers illustrate matched data interpretation, not a set of measured universal constants or proof that an acid base equilibrium is a redox reaction.",
+      "points": [
+        "Same L; same stated conditions · ΔH: −80 / −100 / −115 kJ/mol · BBr₃ adduct most exothermic here",
+        "BX₃: planar parent → four-coordinate adduct · Deformation and interaction both matter · Do not use electronegativity alone",
+        "Equilibrium depends on ΔG=ΔH−TΔS · No entropy data supplied · Enthalpy ranking alone does not fix all K values"
+      ],
+      "board": {
+        "heading": "A boron Lewis-acid comparison must name the donor and energy measure",
+        "columns": [
+          "Specified species",
+          "Accounting / evidence",
+          "Interpretation / limit"
+        ],
+        "rows": [
+          [
+            "Same L; same stated conditions",
+            "ΔH: −80 / −100 / −115 kJ/mol",
+            "BBr₃ adduct most exothermic here"
+          ],
+          [
+            "BX₃: planar parent → four-coordinate adduct",
+            "Deformation and interaction both matter",
+            "Do not use electronegativity alone"
+          ],
+          [
+            "Equilibrium depends on ΔG=ΔH−TΔS",
+            "No entropy data supplied",
+            "Enthalpy ranking alone does not fix all K values"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Shared tetrahedron corners determine an ideal silicate ratio",
+      "formula": "If k corners per SiO₄ tetrahedron are shared: O/Si=4−k/2; net unit charge per Si=k−4",
+      "script": "Silicate formulas can be understood by counting shared oxygen corners rather than treating every silicon oxygen unit as an isolated molecule. In the supplied ideal model, every silicon is surrounded by four oxygens, and a bridging oxygen belongs to two silicon centres. If k corners per tetrahedron are shared, the oxygen count per silicon is four minus k over two. With silicon plus four and oxygen minus two, net charge per silicon formula unit is k minus four. An isolated tetrahedron, with no shared corners, is silicon oxygen four carrying charge minus four. A pair sharing one corner has two silicons and seven oxygens, with total charge minus six. An ideal infinite chain with two shared corners per tetrahedron has repeating ratio silicon oxygen three and charge minus two per silicon. A fully corner shared pure silica framework has ratio silicon oxygen two and zero net formal charge. Finite chain ends, hydroxyl groups, aluminium substitution and counterions require additional bookkeeping, so these simple ratios do not describe every mineral without modification. A shared silicon oxygen silicon bridge is not an oxygen oxygen peroxide bond. The counting graph identifies connectivity; it does not make the actual tetrahedra planar.",
+      "points": [
+        "k=0: isolated; k=1: paired · SiO₄⁴⁻; Si₂O₇⁶⁻ · Each bridging O counted once overall",
+        "k=2: ideal infinite chain · O/Si=3; charge per Si=−2 · Repeat ratio (SiO₃)²⁻",
+        "k=4: pure corner-shared framework · O/Si=2; formal charge zero · SiO₂; finite ends/substitutions excluded"
+      ],
+      "board": {
+        "heading": "Shared tetrahedron corners determine an ideal silicate ratio",
+        "columns": [
+          "Specified species",
+          "Accounting / evidence",
+          "Interpretation / limit"
+        ],
+        "rows": [
+          [
+            "k=0: isolated; k=1: paired",
+            "SiO₄⁴⁻; Si₂O₇⁶⁻",
+            "Each bridging O counted once overall"
+          ],
+          [
+            "k=2: ideal infinite chain",
+            "O/Si=3; charge per Si=−2",
+            "Repeat ratio (SiO₃)²⁻"
+          ],
+          [
+            "k=4: pure corner-shared framework",
+            "O/Si=2; formal charge zero",
+            "SiO₂; finite ends/substitutions excluded"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1234,6 +1386,94 @@
       ],
       "answer": 3,
       "explanation": "The formal domain counts are AX3E for XeO3 and AX4 for XeO4; multiple bonds each count as one domain."
+    },
+    {
+      "question": "One [PCl₄]⁺ cation plus one [PCl₆]⁻ anion contains the same P/Cl inventory as:",
+      "options": [
+        "One PCl₅ unit",
+        "One PCl₃ unit",
+        "Two PCl₅ units",
+        "Two PCl₃ units"
+      ],
+      "answer": 2,
+      "explanation": "The ionic pair contains P₂Cl₁₀ with zero net charge, requiring two empirical PCl₅ units for the same atom inventory."
+    },
+    {
+      "question": "The elementary geometries of [PCl₄]⁺ and [PCl₆]⁻ are respectively:",
+      "options": [
+        "Square planar and trigonal prismatic",
+        "Trigonal bipyramidal and tetrahedral",
+        "Tetrahedral and square pyramidal",
+        "Tetrahedral and octahedral"
+      ],
+      "answer": 3,
+      "explanation": "The cation has four bond domains and no central lone pair; the anion has six bond domains and no central lone pair in this model."
+    },
+    {
+      "question": "In 3Cl₂+6OH⁻→5Cl⁻+ClO₃⁻+3H₂O, the chloride:chlorate mole ratio is:",
+      "options": [
+        "5:1",
+        "1:1",
+        "1:5",
+        "3:6"
+      ],
+      "answer": 0,
+      "explanation": "One chlorine atom oxidized from 0 to +5 loses five electrons, balanced by five atoms each reduced from 0 to −1."
+    },
+    {
+      "question": "If .0300 mol Cl₂ completely follows that chlorate endpoint, chlorate amount is:",
+      "options": [
+        ".0300 mol",
+        ".0100 mol",
+        ".0500 mol",
+        ".0600 mol"
+      ],
+      "answer": 1,
+      "explanation": "The balanced equation produces one mole chlorate per three moles chlorine molecules, so divide .0300 by three."
+    },
+    {
+      "question": "Matched original adduct-formation enthalpies are BF₃ −80, BCl₃ −100 and BBr₃ −115 kJ/mol with the same donor L. Which is most exothermic in this dataset?",
+      "options": [
+        "BF₃",
+        "All three equally",
+        "BBr₃",
+        "BCl₃"
+      ],
+      "answer": 2,
+      "explanation": "The most negative supplied enthalpy is −115 kJ/mol for BBr₃; this specified energy comparison is not a universal donor-independent ranking."
+    },
+    {
+      "question": "Why do those adduct enthalpies alone not determine every equilibrium constant?",
+      "options": [
+        "Lewis acid–base addition must change oxidation states",
+        "Entropy never affects binding",
+        "All Lewis donors give identical interactions",
+        "Gibbs energy also depends on entropy, temperature and the defined chemical conditions"
+      ],
+      "answer": 3,
+      "explanation": "Use ΔG=ΔH−TΔS and ΔG°=−RT lnK; matched enthalpy data alone do not supply all missing entropy or medium information."
+    },
+    {
+      "question": "Two SiO₄ tetrahedra sharing one oxygen corner have the ideal combined anion formula:",
+      "options": [
+        "Si₂O₇⁶⁻",
+        "Si₂O₈⁸⁻",
+        "SiO₂",
+        "Si₂O₆⁴⁻"
+      ],
+      "answer": 0,
+      "explanation": "Start with eight oxygen corners and count the shared oxygen only once: seven O, with charge 2(+4)+7(−2)=−6."
+    },
+    {
+      "question": "An ideal infinite silicate chain sharing two corners per SiO₄ tetrahedron has oxygen-to-silicon ratio:",
+      "options": [
+        "4",
+        "3",
+        "2",
+        "7/2"
+      ],
+      "answer": 1,
+      "explanation": "Each shared corner counts half an oxygen per Si; O/Si=4−2/2=3, excluding finite chain-end corrections."
     }
   ]
 }
