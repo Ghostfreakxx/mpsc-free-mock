@@ -1,3 +1,4 @@
+import { extendPeriodicSeparationEvidenceLesson } from './periodic-separation-evidence-study.ts';
 import { extendAtomicBondingEvidenceLesson } from './atomic-bonding-evidence-study.ts';
 import { extendBondingPeriodicStructureLesson } from './bonding-periodic-structure-study.ts';
 import { extendHydrocarbonsAtomicBondingLesson } from "./hydrocarbons-atomic-bonding-study.ts";
@@ -63,7 +64,7 @@ export const chemistryExpansionLessons: StudyLesson[] = [
     title: "Periodic trends: explain the pattern before memorising it",
     summary: "Electronic blocks, shielding, radii, ionization, electron gain and reactivity.",
     prerequisites: "Electron configurations and the Atomic Structure foundation.",
-    remaining: "Written companion to the twenty-one-chapter Marin recording for Unit 9. The recording adds shielding, valence patterns and oxide behaviour. Selected diagonal similarities, hydride acidity, Period 3 structures and the F–F bond-strength exception are included. Detailed group reactivity, transition-element trends and further exceptions remain; this is not complete inorganic Chemistry.",
+    remaining: "Written companion to the twenty-five-chapter Marin recording for Unit 9. The recording adds shielding, valence patterns and oxide behaviour. Selected diagonal similarities, hydride acidity, Period 3 structures and the F–F bond-strength exception are included. Oxygen-ion species, halogen displacement, Group 2 salt solubility and carbonate stability are included as selected trend applications. Detailed group reactivity, transition-element trends and further exceptions remain; this is not complete inorganic Chemistry.",
     sections: [
       { title: "Read the table as a repeating electron pattern", paragraphs: [
         "The modern periodic law relates recurring properties to atomic number, not increasing atomic mass. Periods track occupied-shell patterns, while similar outer configurations explain many group similarities. Do not infer that all members react identically.",
@@ -170,3 +171,4 @@ for (const lesson of chemistryExpansionLessons) extendHydrocarbonsAtomicBondingL
 
 for (const lesson of chemistryExpansionLessons) extendBondingPeriodicStructureLesson(lesson);
 for (const lesson of chemistryExpansionLessons) extendAtomicBondingEvidenceLesson(lesson);
+for (const lesson of chemistryExpansionLessons) extendPeriodicSeparationEvidenceLesson(lesson);

@@ -1213,8 +1213,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "periodic-trends", subject: "Chemistry", unit: 9, number: "C11", title: periodicTrends.title,
-    description: "Twenty-one narrated chapters on periodic trends, diagonal similarities, hydride acidity, Period 3 structures, bond-strength exceptions and quantitative energy comparisons.",
-    scope: "Recorded Unit 9 foundation with original practice. Detailed group chemistry, transition-element trends and further exceptions remain; not exhaustive coverage or official PYQs.",
+    description: "Twenty-five narrated chapters on periodic trends, oxygen-ion species, halogen displacement, Group 2 solubility, carbonate stability and quantitative comparisons.",
+    scope: "Recorded Unit 9 foundation with original practice. These selected group compounds illustrate periodic trends. Detailed group chemistry, transition-element trends and further exceptions remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.periodic-trends.lecture.v1",
     audio: "/lectures/periodic-trends/narration-marin.mp3",
     subtitles: "/lectures/periodic-trends/english.vtt", timings: periodicTrendsTimings,
@@ -1273,8 +1273,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "purification-analysis", subject: "Chemistry", unit: 13, number: "C17", title: purificationAnalysis.title,
-    description: "Twenty-one narrated chapters on separation, analytical interferences, mixed-halide balances, crystallization recovery, distillation composition and elemental analysis.",
-    scope: "Recorded Unit 13 foundation with original practice. Detailed analytical equations, phosphorus calculations, partition calculations and larger datasets remain; not exhaustive coverage or official PYQs.",
+    description: "Twenty-five narrated chapters on separation, pH-dependent extraction, chromatographic retention, corrected combustion, sublimation recovery and elemental analysis.",
+    scope: "Recorded Unit 13 foundation with original practice. Further analytical equations, gravimetric uncertainty, nonideal extraction and larger datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.purification-analysis.lecture.v1",
     audio: "/lectures/purification-analysis/narration-marin.mp3",
     subtitles: "/lectures/purification-analysis/english.vtt", timings: purificationAnalysisTimings,

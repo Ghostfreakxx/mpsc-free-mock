@@ -1,3 +1,4 @@
+import PeriodicSeparationEvidenceDiagram from './periodic-separation-evidence-diagram';
 import moleConcept from "../../data/jee-mole-concept-lecture.json";
 import periodicTrends from "../../data/jee-periodic-trends-lecture.json";
 import styles from "./lecture.module.css";
@@ -5,6 +6,7 @@ import ElectronGainStepsDiagram from "./electron-gain-steps-diagram";
 import IsotopePairingDiagram from "./isotope-pairing-diagram";
 
 export default function MolePeriodicDiagram({lesson,chapter}:{lesson:"mole-concept"|"periodic-trends";chapter:number}) {
+ if(lesson==='periodic-trends'&&chapter===22)return <PeriodicSeparationEvidenceDiagram kind="halogens"/>;
  if(lesson==="periodic-trends"&&chapter===15)return <ElectronGainStepsDiagram/>;
  if(lesson==="mole-concept"&&chapter===15)return <IsotopePairingDiagram/>;
  const board=(lesson==="mole-concept"?moleConcept:periodicTrends).chapters[chapter].board;

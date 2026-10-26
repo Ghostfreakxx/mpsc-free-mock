@@ -24,11 +24,11 @@ Questions are original practice, not represented as official PYQs.
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 25 | 25 | 19 | 42 / 42 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 26 | 27 | 19 | 42 / 42 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 22 | 25 | 19 | 42 / 42 |
-| 9 | [Periodic Trends](/jee/classes/periodic-trends) | 21 | 19 | 12 | 32 / 32 |
+| 9 | [Periodic Trends](/jee/classes/periodic-trends) | 25 | 23 | 15 | 40 / 40 |
 | 10 | [P-Block](/jee/classes/p-block) | 23 | 21 | 12 | 34 / 34 |
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 23 | 21 | 12 | 34 / 34 |
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 22 | 25 | 19 | 42 / 42 |
-| 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 21 | 21 | 12 | 32 / 32 |
+| 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 25 | 25 | 15 | 40 / 40 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 21 | 24 | 17 | 36 / 36 |
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 25 | 25 | 15 | 40 / 40 |
 | 16 | [Organic Halogens](/jee/classes/organic-halogens) | 25 | 25 | 15 | 40 / 40 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Chemical Thermodynamics adds insulated ideal-gas free expansion, combined temperature/volume entropy changes, integrated van’t Hoff temperature comparisons and neutralization/ionization Hess cycles. The van’t Hoff calculation is labelled a supporting constant-enthalpy application.
+Periodic Trends adds oxide/peroxide/superoxide identity, a halogen displacement-potential matrix, Group 2 hydroxide/sulfate solubility comparisons and carbonate thermal-stability/CO2-pressure reasoning. The selected compounds illustrate trends rather than claiming every historical s-block preparation is required.
 
-Solutions adds osmotic hydrostatic heights, two-gas dissolved composition, measured liquid/vapour equality at an azeotropic point and solute rejection during partial freezing. Every numerical model states the relevant pressure, concentration or phase assumptions.
+Purification and Analysis adds a maintained-pH weak-acid extraction model, adsorption versus partition retention, separate reagent-blank and sample-moisture corrections in combustion analysis, and assayed sublimation recovery. The extraction graph uses the stated neutral-species partition and phase-volume model.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes contain OpenStax references for free expansion, entropy, Hess cycles, colligative properties, gas solubility and partial pressures, alongside Patrick Fleming’s CSU East Bay teaching notes for the integrated van’t Hoff equation. Numerical datasets and MCQs in this batch are original practice.
+The notes reference OpenStax oxygen-ion and quantitative-analysis chapters, Purdue halogen teaching, Jim Clark’s authored Group 1/2 trend notes and Lisa Nichols’s extraction, TLC and sublimation teaching. Numerical datasets and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

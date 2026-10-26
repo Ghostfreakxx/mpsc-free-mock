@@ -1,0 +1,22 @@
+import type {StudyLesson} from './course';
+import {periodicSeparationEvidenceAdditions as additions} from './periodic-separation-evidence-additions.ts';
+const examples:Record<string,StudyLesson['examples']>={
+ 'periodic-trends':[
+  {question:'Distinguish the oxygen species in Li₂O, Na₂O₂ and KO₂. Assign oxygen oxidation numbers and total electron counts of the oxygen units.',steps:['With Li assigned +1, Li₂O contains atomic O²⁻: oxygen oxidation number −2 and 8+2=10 electrons.','Na₂O₂ contains O₂²⁻: two oxygens share −2, giving −1 each and 16+2=18 electrons.','KO₂ contains O₂⁻: two oxygens share −1, giving average −½ each and 16+1=17 electrons.'],answer:'Oxide / peroxide / superoxide; oxygen oxidation numbers −2 / −1 / −½. In the elementary isolated-ion orbital model, superoxide has one unpaired electron and peroxide is paired.'},
+  {question:'Use a stipulated ideal pure-water M(OH)₂ model with Ksp=2.56×10⁻⁴. Find molar solubility and explain why taking √Ksp gives the wrong stoichiometric expression.',steps:['Let dissolved metal concentration be s, so hydroxide concentration is 2s.','Ksp=[M²⁺][OH⁻]²=s(2s)²=4s³.','s=(2.56×10⁻⁴/4)^(1/3)=.0400 M; the corresponding ideal hydroxide concentration is .0800 M.'],answer:'Molar solubility .0400 M in the specified model. Activities, other equilibria and water background are excluded; a 1:1 salt’s square-root expression does not apply.'},
+  {question:'A supplied endpoint converts 5.00 g pure CaCO₃ completely to CaO and CO₂. Use molar masses 100, 56 and 44 g/mol. Find both product masses and explain the effect of added CO₂ at equilibrium.',steps:['n(CaCO₃)=5.00/100=.0500 mol; the 1:1:1 equation gives .0500 mol each product.','CaO mass=.0500×56=2.80 g; CO₂ mass=.0500×44=2.20 g; their sum is 5.00 g.','When both pure solids are present at fixed T, raising CO₂ pressure raises the decomposition quotient and favours the reverse direction.'],answer:'2.80 g CaO and 2.20 g CO₂ at the stipulated complete endpoint. Added CO₂ opposes decomposition; complete conversion cannot be assumed for every closed-system condition.'}
+ ],
+ 'purification-analysis':[
+  {question:'Neutral HA has P=[HA]org/[HA]aq=10 and pKa=4; only neutral HA enters organic phase. At maintained pH 4 and 6, find D and the organic fraction for Vaq=100 mL, Vo=50 mL.',steps:['Aqueous A⁻/HA=10^(pH−pKa); D=P/(1+10^(pH−pKa)).','At pH 4, D=5 and organic fraction=5×50/(100+5×50)=5/7≈71.4%.','At pH 6, D=10/101 and the fraction is (10/101)×50/[100+(10/101)×50]=5/106≈4.72%.'],answer:'Ionization greatly lowers total extraction into organic phase in this supplied model. P concerns neutral HA, D concerns total analytical acid, and pH must be maintained.'},
+  {question:'A .5000 g wet sample contains .0500 g original water. Collected CO₂=.6800 g (blank .0200); water=.3290 g (blank .0090). Correct the dry CHO-only composition and find an empirical formula using C=12, H=1, O=16.',steps:['Dry analyte=.4500 g. Analyte CO₂=.6600 g, so C=.6600×12/44=.1800 g; dry C=40.0%.','Hydrogen-derived water=.3290−.0090−.0500=.2700 g, so H=.2700×2/18=.0300 g.','For CHO-only analyte, O=.4500−.1800−.0300=.2400 g. Atom amounts .0150:.0300:.0150 reduce to 1:2:1.'],answer:'Dry masses C .1800 g, H .0300 g, O .2400 g; empirical formula CH₂O. Blank and sample moisture are separate corrections; molecular formula still needs molar mass.'},
+  {question:'An initial solid mixture contains 2.00 g desired compound. A sublimation fraction weighs 1.50 g and independent assay gives 96.0% desired compound. Find recovered analyte and recovery.',steps:['Collected fraction includes analyte and impurity; desired mass=1.50×.960=1.44 g.','The remaining .0600 g of that fraction is impurity by the supplied assay.','Recovery=1.44/2.00×100=72.0%; 1.50/2.00 would count impurity as product.'],answer:'1.44 g desired compound recovered; 72.0% recovery. The fraction’s 96.0% purity is a different measurement.'}
+ ]
+};
+export function extendPeriodicSeparationEvidenceLesson(lesson:StudyLesson){
+ if(!(lesson.id in additions))return;
+ const added=additions[lesson.id as keyof typeof additions];
+ lesson.sections.push(...added.chapters.map(ch=>({title:ch.title,formula:ch.formula,paragraphs:[ch.script]})));
+ lesson.examples.push(...examples[lesson.id]);
+ lesson.quiz.push(...added.quiz.map(item=>({...item,options:[...item.options]})));
+ lesson.sources.push(...added.sources.filter(source=>!lesson.sources.some(old=>old.url===source.url)));
+}

@@ -41,6 +41,26 @@
     {
       "title": "OpenStax: covalent bond strengths",
       "url": "https://openstax.org/books/chemistry-2e/pages/7-5-strengths-of-ionic-and-covalent-bonds"
+    },
+    {
+      "title": "OpenStax: oxygen compounds and peroxide/superoxide ions",
+      "url": "https://openstax.org/books/chemistry-2e/pages/18-9-occurrence-preparation-and-compounds-of-oxygen"
+    },
+    {
+      "title": "Purdue University: halogen chemistry and redox trends",
+      "url": "https://chemed.chem.purdue.edu/genchem/topicreview/bp/ch10/group7.php"
+    },
+    {
+      "title": "Jim Clark: Group 2 hydroxide and sulfate solubility",
+      "url": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_%28Inorganic_Chemistry%29/Descriptive_Chemistry/Elements_Organized_by_Block/1_s-Block_Elements/Group__2_Elements%253A_The_Alkaline_Earth_Metals/1Group_2%253A_Chemical_Reactions_of_Alkali_Earth_Metals/The_Solubility_of_the_Hydroxides_Sulfates_and_Carbonates"
+    },
+    {
+      "title": "Jim Clark: carbonate thermal-stability comparison",
+      "url": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_%28Inorganic_Chemistry%29/Descriptive_Chemistry/Elements_Organized_by_Block/1_s-Block_Elements/Group__2_Elements%3A_The_Alkaline_Earth_Metals/1Group_2%3A_Chemical_Reactions_of_Alkali_Earth_Metals/The_Thermal_Stability_of_the_Nitrates_and_Carbonates"
+    },
+    {
+      "title": "Jim Clark: lithium carbonate and Group 1 compounds",
+      "url": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_%28Inorganic_Chemistry%29/Descriptive_Chemistry/Elements_Organized_by_Block/1_s-Block_Elements/Group__1%3A_The_Alkali_Metals/2Reactions_of_the_Group_1_Elements/Group_1_Compounds"
     }
   ],
   "chapters": [
@@ -780,6 +800,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Oxide, peroxide and superoxide contain different oxygen species",
+      "formula": "Li₂O: O²⁻; Na₂O₂: O₂²⁻; KO₂: O₂⁻; oxygen oxidation numbers −2, −1, −½",
+      "script": "Similar looking oxygen formulas can represent different anions. Lithium oxide contains an oxide ion, one oxygen atom with charge minus two. Sodium peroxide contains a peroxide unit, two oxygens sharing total charge minus two. Potassium superoxide contains a superoxide unit, two oxygens sharing total charge minus one. With the metal assigned plus one, oxygen oxidation numbers are therefore minus two, minus one and minus one half, respectively. The fractional superoxide value is an average oxidation number, not a claim that an isolated oxygen atom has half an electron attached. An oxide ion has ten total electrons; peroxide and superoxide molecular ions have eighteen and seventeen, respectively. In the elementary isolated oxygen ion orbital model, peroxide has all electrons paired whereas superoxide has one unpaired electron. This connects charge bookkeeping to magnetic predictions without confusing an atomic ion with a two atom ion. These named compounds illustrate selected size and charge density trends in alkali metal chemistry. Actual oxygen reaction products depend on conditions and can include mixtures, so do not turn this illustrative sequence into a guarantee that each metal forms only one oxygen compound under every circumstance.",
+      "points": [
+        "Li₂O: one O²⁻ ion · O oxidation number −2; ion has 10 e⁻ · Atomic oxide ion",
+        "Na₂O₂: one O₂²⁻ unit · Each O: −1; unit has 18 e⁻ · Paired in elementary ion model",
+        "KO₂: one O₂⁻ unit · Each O: −½; unit has 17 e⁻ · One unpaired e⁻ in elementary model"
+      ],
+      "board": {
+        "heading": "Oxide, peroxide and superoxide contain different oxygen species",
+        "columns": [
+          "Specified comparison",
+          "Balance / evidence",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Li₂O: one O²⁻ ion",
+            "O oxidation number −2; ion has 10 e⁻",
+            "Atomic oxide ion"
+          ],
+          [
+            "Na₂O₂: one O₂²⁻ unit",
+            "Each O: −1; unit has 18 e⁻",
+            "Paired in elementary ion model"
+          ],
+          [
+            "KO₂: one O₂⁻ unit",
+            "Each O: −½; unit has 17 e⁻",
+            "One unpaired e⁻ in elementary model"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Halogen displacement follows the specified oxidizing comparison",
+      "formula": "E°cell=E°(halogen reduced)−E°(halide oxidized); Cl₂+2Br⁻→2Cl⁻+Br₂",
+      "script": "A periodic oxidizing trend becomes a testable electron transfer comparison when both half reactions are specified. Use supplied standard reduction potentials one point three six volts for chlorine to chloride, one point zero seven for bromine to bromide and zero point five four for iodine accepting electrons to form the anion I minus. Chlorine accepting electrons while bromide loses them gives cell potential one point three six minus one point zero seven, or plus zero point two nine volt. The balanced net reaction is one chlorine molecule plus two bromides forming two chlorides and one bromine molecule. Bromine accepting electrons from iodide anions, written I minus, similarly gives plus zero point five three volt. Iodine oxidizing chloride instead gives zero point five four minus one point three six, or minus zero point eight two volt, so that written direction is not standard thermodynamically favoured in this comparison. Chlorine, bromine and iodine therefore form the stated descending oxidizing sequence. Equal amounts of gas and salt are not generally the reaction ratio: one mole halogen consumes two moles monovalent halide. These standard state predictions do not specify reaction speed or replace concentration and solvent checks. Fluorine's reaction with water prevents treating it as an interchangeable ordinary aqueous displacement test.",
+      "points": [
+        "Cl₂ reduced; Br⁻ oxidized · E°=1.36−1.07=+0.29 V · Cl₂+2Br⁻→2Cl⁻+Br₂",
+        "Br₂ reduced; I⁻ oxidized · E°=1.07−0.54=+0.53 V · Br₂+2I⁻→2Br⁻+I₂",
+        "I₂ reduced; Cl⁻ oxidized · E°=0.54−1.36=−0.82 V · Written direction not standard-favoured"
+      ],
+      "board": {
+        "heading": "Halogen displacement follows the specified oxidizing comparison",
+        "columns": [
+          "Specified comparison",
+          "Balance / evidence",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Cl₂ reduced; Br⁻ oxidized",
+            "E°=1.36−1.07=+0.29 V",
+            "Cl₂+2Br⁻→2Cl⁻+Br₂"
+          ],
+          [
+            "Br₂ reduced; I⁻ oxidized",
+            "E°=1.07−0.54=+0.53 V",
+            "Br₂+2I⁻→2Br⁻+I₂"
+          ],
+          [
+            "I₂ reduced; Cl⁻ oxidized",
+            "E°=0.54−1.36=−0.82 V",
+            "Written direction not standard-favoured"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Group 2 hydroxides and sulfates do not share one solubility arrow",
+      "formula": "For M(OH)₂ in the stated ideal pure-water model: Ksp=[M²⁺][OH⁻]²=4s³",
+      "script": "A group trend must name the anion as well as the metal. From magnesium toward barium, hydroxide solubility generally increases, while sulfate solubility generally decreases in the usual aqueous comparison. There is no single rule saying that every salt becomes more soluble down this group. Lattice separation, hydration and entropy all contribute to dissolution free energy, and their balance depends on the compound. Use an explicitly ideal pure water calculation for a divalent metal hydroxide, excluding complexation, hydrolysis and water's small background contribution. If its molar solubility is s, dissolved metal concentration is s and hydroxide concentration twice s, giving solubility product four s cubed. With supplied illustrative barium hydroxide constant two point five six times ten to the minus four, the model solubility is zero point zero four zero zero molar. A supplied magnesium hydroxide constant one point zero eight times ten to the minus eleven gives about one point three nine times ten to the minus four molar under that same model. These concentration based results are not promises of exact measured values when activity effects become appreciable. Do not reuse a one to one salt's square root formula for this hydroxide stoichiometry.",
+      "points": [
+        "Mg→Ba, usual aqueous comparison · Hydroxides: more soluble; sulfates: less · Specify the anion and conditions",
+        "M(OH)₂ gives s metal and 2s hydroxide · Ksp=s(2s)²=4s³ · Ideal pure-water model",
+        "Supplied Ba(OH)₂ Ksp=2.56×10⁻⁴ · s=(Ksp/4)^(1/3)=0.0400 M · Activities and other equilibria excluded"
+      ],
+      "board": {
+        "heading": "Group 2 hydroxides and sulfates do not share one solubility arrow",
+        "columns": [
+          "Specified comparison",
+          "Balance / evidence",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Mg→Ba, usual aqueous comparison",
+            "Hydroxides: more soluble; sulfates: less",
+            "Specify the anion and conditions"
+          ],
+          [
+            "M(OH)₂ gives s metal and 2s hydroxide",
+            "Ksp=s(2s)²=4s³",
+            "Ideal pure-water model"
+          ],
+          [
+            "Supplied Ba(OH)₂ Ksp=2.56×10⁻⁴",
+            "s=(Ksp/4)^(1/3)=0.0400 M",
+            "Activities and other equilibria excluded"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Carbonate stability needs the cation and carbon dioxide pressure",
+      "formula": "MCO₃(s) ⇌ MO(s)+CO₂(g); Li₂CO₃(s) ⇌ Li₂O(s)+CO₂(g)",
+      "script": "Thermal stability describes a tendency under specified conditions, not a universal temperature printed on a formula. Magnesium to barium carbonates generally become harder to decompose in the usual group comparison. The smaller divalent cation polarizes carbonate more strongly, a useful qualitative contribution to this pattern. Lithium carbonate is less thermally stable than the other familiar alkali metal carbonates and can form lithium oxide plus carbon dioxide under appropriate conditions. This selected exception does not make lithium divalent; its decomposition equation contains lithium two carbonate and lithium two oxide, both with lithium plus one. Carbon dioxide pressure also matters. For a divalent carbonate in equilibrium with its oxide, when both pure solids are present, the equilibrium quotient involves carbon dioxide pressure relative to its standard pressure. Increasing that pressure opposes the decomposition direction at fixed temperature. In a supplied complete calcium carbonate decomposition ledger, five point zero zero grams with molar mass one hundred gives zero point zero five zero zero mole carbon dioxide. Its mass is two point two zero grams, leaving two point eight zero grams calcium oxide. The complete conversion ledger is a stipulated endpoint, not a prediction that a closed sample must fully decompose at any temperature.",
+      "points": [
+        "Mg→Ba carbonate comparison · Thermal stability generally increases · Conditions and polarization matter",
+        "Li₂CO₃→Li₂O+CO₂ · Lithium remains +1 · Do not copy MCO₃ stoichiometry blindly",
+        "5.00 g CaCO₃; complete conversion · 2.20 g CO₂ + 2.80 g CaO · More CO₂ pressure opposes decomposition"
+      ],
+      "board": {
+        "heading": "Carbonate stability needs the cation and carbon dioxide pressure",
+        "columns": [
+          "Specified comparison",
+          "Balance / evidence",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Mg→Ba carbonate comparison",
+            "Thermal stability generally increases",
+            "Conditions and polarization matter"
+          ],
+          [
+            "Li₂CO₃→Li₂O+CO₂",
+            "Lithium remains +1",
+            "Do not copy MCO₃ stoichiometry blindly"
+          ],
+          [
+            "5.00 g CaCO₃; complete conversion",
+            "2.20 g CO₂ + 2.80 g CaO",
+            "More CO₂ pressure opposes decomposition"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1134,6 +1294,94 @@
       ],
       "answer": 1,
       "explanation": "Compact lone-pair repulsions contribute to weak F–F bonding; bond identity and the full process must be kept distinct."
+    },
+    {
+      "question": "Oxygen oxidation numbers in Li₂O, Na₂O₂ and KO₂ are respectively:",
+      "options": [
+        "−2, −1, −½",
+        "−1, −2, −2",
+        "−2, −2, −2",
+        "+2, +1, +½"
+      ],
+      "answer": 0,
+      "explanation": "Assign each alkali metal +1, then distinguish the oxide atom, peroxide pair and superoxide pair when balancing total charge."
+    },
+    {
+      "question": "Within the elementary isolated oxygen-ion model, which named compound contains the oxygen unit with one unpaired electron?",
+      "options": [
+        "Li₂O",
+        "KO₂",
+        "Na₂O₂",
+        "All three necessarily have identical oxygen-ion occupancy"
+      ],
+      "answer": 1,
+      "explanation": "KO₂ contains the 17-electron superoxide ion O₂⁻; peroxide has 18 and is paired in this elementary model."
+    },
+    {
+      "question": "Given E°(Cl₂/Cl⁻)=1.36 V and E°(Br₂/Br⁻)=1.07 V, E° for Cl₂+2Br⁻→2Cl⁻+Br₂ is:",
+      "options": [
+        "2.43 V",
+        "−.29 V",
+        "+.29 V",
+        "+.58 V"
+      ],
+      "answer": 2,
+      "explanation": "Subtract the bromine reduction potential from the chlorine reduction potential; multiplying reaction coefficients does not multiply electrode potentials."
+    },
+    {
+      "question": "Complete ideal displacement of excess bromide by .0100 mol Cl₂ consumes bromide amount:",
+      "options": [
+        ".00500 mol",
+        ".0100 mol",
+        ".0400 mol",
+        ".0200 mol"
+      ],
+      "answer": 3,
+      "explanation": "One chlorine molecule accepts two electrons from two bromide ions, so the bromide amount is twice the chlorine amount."
+    },
+    {
+      "question": "If M(OH)₂ alone dissolves to molar solubility s under the stated ideal model, its Ksp is:",
+      "options": [
+        "4s³",
+        "s²",
+        "2s²",
+        "s³/4"
+      ],
+      "answer": 0,
+      "explanation": "Metal concentration is s and hydroxide is 2s; multiply s by (2s)², retaining the hydroxide exponent."
+    },
+    {
+      "question": "For supplied Ksp=2.56×10⁻⁴ in that M(OH)₂ model, molar solubility is:",
+      "options": [
+        ".0160 M",
+        ".0400 M",
+        ".0800 M",
+        ".000256 M"
+      ],
+      "answer": 1,
+      "explanation": "s=(Ksp/4)^(1/3)=(6.40×10⁻⁵)^(1/3)=.0400 M under the specified concentration approximation."
+    },
+    {
+      "question": "Five grams pure CaCO₃ fully decompose in a stipulated endpoint model. With molar masses CaCO₃=100, CO₂=44 and CaO=56 g/mol, residue mass is:",
+      "options": [
+        "5.00 g",
+        "2.20 g",
+        "2.80 g",
+        "7.20 g"
+      ],
+      "answer": 2,
+      "explanation": "The starting .0500 mol forms .0500 mol CaO, giving .0500×56=2.80 g; the missing 2.20 g is CO₂."
+    },
+    {
+      "question": "For MCO₃(s)⇌MO(s)+CO₂(g) with both pure solids present, adding CO₂ at fixed temperature tends to:",
+      "options": [
+        "Force more carbonate decomposition",
+        "Change the equilibrium constant solely by adding gas",
+        "Turn lithium into a divalent metal",
+        "Oppose the decomposition direction"
+      ],
+      "answer": 3,
+      "explanation": "The gas activity raises the reaction quotient; the equilibrium response favours carbonate relative to the stated decomposition direction."
     }
   ]
 }

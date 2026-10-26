@@ -1,0 +1,515 @@
+// Authored by scripts/expand-periodic-separation-evidence.mjs.
+export const periodicSeparationEvidenceAdditions = {
+  "periodic-trends": {
+    "base": 21,
+    "quizBase": 32,
+    "chapters": [
+      {
+        "title": "Oxide, peroxide and superoxide contain different oxygen species",
+        "formula": "Li₂O: O²⁻; Na₂O₂: O₂²⁻; KO₂: O₂⁻; oxygen oxidation numbers −2, −1, −½",
+        "script": "Similar looking oxygen formulas can represent different anions. Lithium oxide contains an oxide ion, one oxygen atom with charge minus two. Sodium peroxide contains a peroxide unit, two oxygens sharing total charge minus two. Potassium superoxide contains a superoxide unit, two oxygens sharing total charge minus one. With the metal assigned plus one, oxygen oxidation numbers are therefore minus two, minus one and minus one half, respectively. The fractional superoxide value is an average oxidation number, not a claim that an isolated oxygen atom has half an electron attached. An oxide ion has ten total electrons; peroxide and superoxide molecular ions have eighteen and seventeen, respectively. In the elementary isolated oxygen ion orbital model, peroxide has all electrons paired whereas superoxide has one unpaired electron. This connects charge bookkeeping to magnetic predictions without confusing an atomic ion with a two atom ion. These named compounds illustrate selected size and charge density trends in alkali metal chemistry. Actual oxygen reaction products depend on conditions and can include mixtures, so do not turn this illustrative sequence into a guarantee that each metal forms only one oxygen compound under every circumstance.",
+        "points": [
+          "Li₂O: one O²⁻ ion · O oxidation number −2; ion has 10 e⁻ · Atomic oxide ion",
+          "Na₂O₂: one O₂²⁻ unit · Each O: −1; unit has 18 e⁻ · Paired in elementary ion model",
+          "KO₂: one O₂⁻ unit · Each O: −½; unit has 17 e⁻ · One unpaired e⁻ in elementary model"
+        ],
+        "board": {
+          "heading": "Oxide, peroxide and superoxide contain different oxygen species",
+          "columns": [
+            "Specified comparison",
+            "Balance / evidence",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "Li₂O: one O²⁻ ion",
+              "O oxidation number −2; ion has 10 e⁻",
+              "Atomic oxide ion"
+            ],
+            [
+              "Na₂O₂: one O₂²⁻ unit",
+              "Each O: −1; unit has 18 e⁻",
+              "Paired in elementary ion model"
+            ],
+            [
+              "KO₂: one O₂⁻ unit",
+              "Each O: −½; unit has 17 e⁻",
+              "One unpaired e⁻ in elementary model"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Halogen displacement follows the specified oxidizing comparison",
+        "formula": "E°cell=E°(halogen reduced)−E°(halide oxidized); Cl₂+2Br⁻→2Cl⁻+Br₂",
+        "script": "A periodic oxidizing trend becomes a testable electron transfer comparison when both half reactions are specified. Use supplied standard reduction potentials one point three six volts for chlorine to chloride, one point zero seven for bromine to bromide and zero point five four for iodine accepting electrons to form the anion I minus. Chlorine accepting electrons while bromide loses them gives cell potential one point three six minus one point zero seven, or plus zero point two nine volt. The balanced net reaction is one chlorine molecule plus two bromides forming two chlorides and one bromine molecule. Bromine accepting electrons from iodide anions, written I minus, similarly gives plus zero point five three volt. Iodine oxidizing chloride instead gives zero point five four minus one point three six, or minus zero point eight two volt, so that written direction is not standard thermodynamically favoured in this comparison. Chlorine, bromine and iodine therefore form the stated descending oxidizing sequence. Equal amounts of gas and salt are not generally the reaction ratio: one mole halogen consumes two moles monovalent halide. These standard state predictions do not specify reaction speed or replace concentration and solvent checks. Fluorine's reaction with water prevents treating it as an interchangeable ordinary aqueous displacement test.",
+        "points": [
+          "Cl₂ reduced; Br⁻ oxidized · E°=1.36−1.07=+0.29 V · Cl₂+2Br⁻→2Cl⁻+Br₂",
+          "Br₂ reduced; I⁻ oxidized · E°=1.07−0.54=+0.53 V · Br₂+2I⁻→2Br⁻+I₂",
+          "I₂ reduced; Cl⁻ oxidized · E°=0.54−1.36=−0.82 V · Written direction not standard-favoured"
+        ],
+        "board": {
+          "heading": "Halogen displacement follows the specified oxidizing comparison",
+          "columns": [
+            "Specified comparison",
+            "Balance / evidence",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "Cl₂ reduced; Br⁻ oxidized",
+              "E°=1.36−1.07=+0.29 V",
+              "Cl₂+2Br⁻→2Cl⁻+Br₂"
+            ],
+            [
+              "Br₂ reduced; I⁻ oxidized",
+              "E°=1.07−0.54=+0.53 V",
+              "Br₂+2I⁻→2Br⁻+I₂"
+            ],
+            [
+              "I₂ reduced; Cl⁻ oxidized",
+              "E°=0.54−1.36=−0.82 V",
+              "Written direction not standard-favoured"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Group 2 hydroxides and sulfates do not share one solubility arrow",
+        "formula": "For M(OH)₂ in the stated ideal pure-water model: Ksp=[M²⁺][OH⁻]²=4s³",
+        "script": "A group trend must name the anion as well as the metal. From magnesium toward barium, hydroxide solubility generally increases, while sulfate solubility generally decreases in the usual aqueous comparison. There is no single rule saying that every salt becomes more soluble down this group. Lattice separation, hydration and entropy all contribute to dissolution free energy, and their balance depends on the compound. Use an explicitly ideal pure water calculation for a divalent metal hydroxide, excluding complexation, hydrolysis and water's small background contribution. If its molar solubility is s, dissolved metal concentration is s and hydroxide concentration twice s, giving solubility product four s cubed. With supplied illustrative barium hydroxide constant two point five six times ten to the minus four, the model solubility is zero point zero four zero zero molar. A supplied magnesium hydroxide constant one point zero eight times ten to the minus eleven gives about one point three nine times ten to the minus four molar under that same model. These concentration based results are not promises of exact measured values when activity effects become appreciable. Do not reuse a one to one salt's square root formula for this hydroxide stoichiometry.",
+        "points": [
+          "Mg→Ba, usual aqueous comparison · Hydroxides: more soluble; sulfates: less · Specify the anion and conditions",
+          "M(OH)₂ gives s metal and 2s hydroxide · Ksp=s(2s)²=4s³ · Ideal pure-water model",
+          "Supplied Ba(OH)₂ Ksp=2.56×10⁻⁴ · s=(Ksp/4)^(1/3)=0.0400 M · Activities and other equilibria excluded"
+        ],
+        "board": {
+          "heading": "Group 2 hydroxides and sulfates do not share one solubility arrow",
+          "columns": [
+            "Specified comparison",
+            "Balance / evidence",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "Mg→Ba, usual aqueous comparison",
+              "Hydroxides: more soluble; sulfates: less",
+              "Specify the anion and conditions"
+            ],
+            [
+              "M(OH)₂ gives s metal and 2s hydroxide",
+              "Ksp=s(2s)²=4s³",
+              "Ideal pure-water model"
+            ],
+            [
+              "Supplied Ba(OH)₂ Ksp=2.56×10⁻⁴",
+              "s=(Ksp/4)^(1/3)=0.0400 M",
+              "Activities and other equilibria excluded"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Carbonate stability needs the cation and carbon dioxide pressure",
+        "formula": "MCO₃(s) ⇌ MO(s)+CO₂(g); Li₂CO₃(s) ⇌ Li₂O(s)+CO₂(g)",
+        "script": "Thermal stability describes a tendency under specified conditions, not a universal temperature printed on a formula. Magnesium to barium carbonates generally become harder to decompose in the usual group comparison. The smaller divalent cation polarizes carbonate more strongly, a useful qualitative contribution to this pattern. Lithium carbonate is less thermally stable than the other familiar alkali metal carbonates and can form lithium oxide plus carbon dioxide under appropriate conditions. This selected exception does not make lithium divalent; its decomposition equation contains lithium two carbonate and lithium two oxide, both with lithium plus one. Carbon dioxide pressure also matters. For a divalent carbonate in equilibrium with its oxide, when both pure solids are present, the equilibrium quotient involves carbon dioxide pressure relative to its standard pressure. Increasing that pressure opposes the decomposition direction at fixed temperature. In a supplied complete calcium carbonate decomposition ledger, five point zero zero grams with molar mass one hundred gives zero point zero five zero zero mole carbon dioxide. Its mass is two point two zero grams, leaving two point eight zero grams calcium oxide. The complete conversion ledger is a stipulated endpoint, not a prediction that a closed sample must fully decompose at any temperature.",
+        "points": [
+          "Mg→Ba carbonate comparison · Thermal stability generally increases · Conditions and polarization matter",
+          "Li₂CO₃→Li₂O+CO₂ · Lithium remains +1 · Do not copy MCO₃ stoichiometry blindly",
+          "5.00 g CaCO₃; complete conversion · 2.20 g CO₂ + 2.80 g CaO · More CO₂ pressure opposes decomposition"
+        ],
+        "board": {
+          "heading": "Carbonate stability needs the cation and carbon dioxide pressure",
+          "columns": [
+            "Specified comparison",
+            "Balance / evidence",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "Mg→Ba carbonate comparison",
+              "Thermal stability generally increases",
+              "Conditions and polarization matter"
+            ],
+            [
+              "Li₂CO₃→Li₂O+CO₂",
+              "Lithium remains +1",
+              "Do not copy MCO₃ stoichiometry blindly"
+            ],
+            [
+              "5.00 g CaCO₃; complete conversion",
+              "2.20 g CO₂ + 2.80 g CaO",
+              "More CO₂ pressure opposes decomposition"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Oxygen oxidation numbers in Li₂O, Na₂O₂ and KO₂ are respectively:",
+        "options": [
+          "−2, −1, −½",
+          "−1, −2, −2",
+          "−2, −2, −2",
+          "+2, +1, +½"
+        ],
+        "answer": 0,
+        "explanation": "Assign each alkali metal +1, then distinguish the oxide atom, peroxide pair and superoxide pair when balancing total charge."
+      },
+      {
+        "question": "Within the elementary isolated oxygen-ion model, which named compound contains the oxygen unit with one unpaired electron?",
+        "options": [
+          "Li₂O",
+          "KO₂",
+          "Na₂O₂",
+          "All three necessarily have identical oxygen-ion occupancy"
+        ],
+        "answer": 1,
+        "explanation": "KO₂ contains the 17-electron superoxide ion O₂⁻; peroxide has 18 and is paired in this elementary model."
+      },
+      {
+        "question": "Given E°(Cl₂/Cl⁻)=1.36 V and E°(Br₂/Br⁻)=1.07 V, E° for Cl₂+2Br⁻→2Cl⁻+Br₂ is:",
+        "options": [
+          "2.43 V",
+          "−.29 V",
+          "+.29 V",
+          "+.58 V"
+        ],
+        "answer": 2,
+        "explanation": "Subtract the bromine reduction potential from the chlorine reduction potential; multiplying reaction coefficients does not multiply electrode potentials."
+      },
+      {
+        "question": "Complete ideal displacement of excess bromide by .0100 mol Cl₂ consumes bromide amount:",
+        "options": [
+          ".00500 mol",
+          ".0100 mol",
+          ".0400 mol",
+          ".0200 mol"
+        ],
+        "answer": 3,
+        "explanation": "One chlorine molecule accepts two electrons from two bromide ions, so the bromide amount is twice the chlorine amount."
+      },
+      {
+        "question": "If M(OH)₂ alone dissolves to molar solubility s under the stated ideal model, its Ksp is:",
+        "options": [
+          "4s³",
+          "s²",
+          "2s²",
+          "s³/4"
+        ],
+        "answer": 0,
+        "explanation": "Metal concentration is s and hydroxide is 2s; multiply s by (2s)², retaining the hydroxide exponent."
+      },
+      {
+        "question": "For supplied Ksp=2.56×10⁻⁴ in that M(OH)₂ model, molar solubility is:",
+        "options": [
+          ".0160 M",
+          ".0400 M",
+          ".0800 M",
+          ".000256 M"
+        ],
+        "answer": 1,
+        "explanation": "s=(Ksp/4)^(1/3)=(6.40×10⁻⁵)^(1/3)=.0400 M under the specified concentration approximation."
+      },
+      {
+        "question": "Five grams pure CaCO₃ fully decompose in a stipulated endpoint model. With molar masses CaCO₃=100, CO₂=44 and CaO=56 g/mol, residue mass is:",
+        "options": [
+          "5.00 g",
+          "2.20 g",
+          "2.80 g",
+          "7.20 g"
+        ],
+        "answer": 2,
+        "explanation": "The starting .0500 mol forms .0500 mol CaO, giving .0500×56=2.80 g; the missing 2.20 g is CO₂."
+      },
+      {
+        "question": "For MCO₃(s)⇌MO(s)+CO₂(g) with both pure solids present, adding CO₂ at fixed temperature tends to:",
+        "options": [
+          "Force more carbonate decomposition",
+          "Change the equilibrium constant solely by adding gas",
+          "Turn lithium into a divalent metal",
+          "Oppose the decomposition direction"
+        ],
+        "answer": 3,
+        "explanation": "The gas activity raises the reaction quotient; the equilibrium response favours carbonate relative to the stated decomposition direction."
+      }
+    ],
+    "sources": [
+      {
+        "title": "OpenStax: oxygen compounds and peroxide/superoxide ions",
+        "url": "https://openstax.org/books/chemistry-2e/pages/18-9-occurrence-preparation-and-compounds-of-oxygen"
+      },
+      {
+        "title": "Purdue University: halogen chemistry and redox trends",
+        "url": "https://chemed.chem.purdue.edu/genchem/topicreview/bp/ch10/group7.php"
+      },
+      {
+        "title": "Jim Clark: Group 2 hydroxide and sulfate solubility",
+        "url": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_%28Inorganic_Chemistry%29/Descriptive_Chemistry/Elements_Organized_by_Block/1_s-Block_Elements/Group__2_Elements%253A_The_Alkaline_Earth_Metals/1Group_2%253A_Chemical_Reactions_of_Alkali_Earth_Metals/The_Solubility_of_the_Hydroxides_Sulfates_and_Carbonates"
+      },
+      {
+        "title": "Jim Clark: carbonate thermal-stability comparison",
+        "url": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_%28Inorganic_Chemistry%29/Descriptive_Chemistry/Elements_Organized_by_Block/1_s-Block_Elements/Group__2_Elements%3A_The_Alkaline_Earth_Metals/1Group_2%3A_Chemical_Reactions_of_Alkali_Earth_Metals/The_Thermal_Stability_of_the_Nitrates_and_Carbonates"
+      },
+      {
+        "title": "Jim Clark: lithium carbonate and Group 1 compounds",
+        "url": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_%28Inorganic_Chemistry%29/Descriptive_Chemistry/Elements_Organized_by_Block/1_s-Block_Elements/Group__1%3A_The_Alkali_Metals/2Reactions_of_the_Group_1_Elements/Group_1_Compounds"
+      }
+    ]
+  },
+  "purification-analysis": {
+    "base": 21,
+    "quizBase": 32,
+    "chapters": [
+      {
+        "title": "Ionization changes a weak acid’s extraction distribution",
+        "formula": "D=P/(1+10^(pH−pKa)); fraction in organic phase=DVo/(Vaq+DVo) in the stated model",
+        "script": "An extraction coefficient must distinguish one neutral species from all analytical forms of an acid. In a supplied supporting model, neutral H A partitions between immiscible organic and aqueous phases with coefficient P equal to ten, defined as organic neutral concentration divided by aqueous neutral concentration. Its ionized form A minus stays in water. At maintained aqueous p H and acid constant p K a four, the ratio of aqueous ionized to neutral acid is ten raised to p H minus p K a. The total analytical distribution ratio D is therefore P divided by one plus that ratio. At p H four, D is five. With one hundred millilitres aqueous phase and fifty millilitres organic phase, the equilibrium fraction of the acid inventory in organic solution is five times fifty divided by one hundred plus five times fifty, or five sevenths, about seventy one point four percent. At p H six, D drops to ten over one hundred one, and the fraction falls to about four point seven two percent. This assumes maintained p H, no organic ion transfer, no association and unchanged phase volumes; it is a specified equilibrium model, not a universal solvent preference or experimental procedure.",
+        "points": [
+          "Neutral P=10; pKa=4; ion stays aqueous · D=P/(1+10^(pH−pKa)) · P and total D are different",
+          "Vaq=100 mL; Vo=50 mL; pH=4 · D=5; fraction=250/350=5/7 · 71.4% in organic phase",
+          "Same model at maintained pH=6 · D=10/101; fraction=5/106 · 4.72% in organic phase"
+        ],
+        "board": {
+          "heading": "Ionization changes a weak acid’s extraction distribution",
+          "columns": [
+            "Specified comparison",
+            "Balance / evidence",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "Neutral P=10; pKa=4; ion stays aqueous",
+              "D=P/(1+10^(pH−pKa))",
+              "P and total D are different"
+            ],
+            [
+              "Vaq=100 mL; Vo=50 mL; pH=4",
+              "D=5; fraction=250/350=5/7",
+              "71.4% in organic phase"
+            ],
+            [
+              "Same model at maintained pH=6",
+              "D=10/101; fraction=5/106",
+              "4.72% in organic phase"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Adsorption and partition describe different retention models",
+        "formula": "Normal-phase silica TLC: stronger adsorption usually means smaller Rf under matched conditions",
+        "script": "Chromatography requires naming both phases and the retention mechanism, rather than treating every chromatogram as the same process. In a stipulated normal phase thin layer model, polar silica is the stationary solid and a relatively nonpolar liquid is the mobile phase. A compound that interacts more strongly with the silica spends less time moving with the solvent and can show a lower retention factor. Suppose under the same run conditions sample A travels one point two five centimetres, sample B three point seven five, and the solvent front five point zero zero. Their retention factors are zero point two five and zero point seven five. The observations are consistent with stronger retention of A in that system, not a universal molecular polarity measurement. A more strongly eluting mobile phase often competes more effectively for adsorption sites and changes both movements. In a simple partition chromatography teaching model, retention instead follows distribution between a stationary liquid and the moving phase; water associated with paper can play that stationary liquid role. Real surfaces can involve mixed interactions. State the model, solvent and stationary material before predicting a direction or transferring a ranking to another chromatographic system.",
+        "points": [
+          "Normal-phase model: polar silica solid · Stronger stationary-phase interaction · Usually lower Rf at matched conditions",
+          "A=1.25; B=3.75; front=5.00 cm · Rf,A=.25; Rf,B=.75 · A is more retained in this run",
+          "Simple paper partition model · Stationary associated liquid / mobile phase · Different mechanism; mixed interactions possible"
+        ],
+        "board": {
+          "heading": "Adsorption and partition describe different retention models",
+          "columns": [
+            "Specified comparison",
+            "Balance / evidence",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "Normal-phase model: polar silica solid",
+              "Stronger stationary-phase interaction",
+              "Usually lower Rf at matched conditions"
+            ],
+            [
+              "A=1.25; B=3.75; front=5.00 cm",
+              "Rf,A=.25; Rf,B=.75",
+              "A is more retained in this run"
+            ],
+            [
+              "Simple paper partition model",
+              "Stationary associated liquid / mobile phase",
+              "Different mechanism; mixed interactions possible"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Combustion blanks and sample moisture need separate corrections",
+        "formula": "Dry sample=.5000−.0500=.4500 g; corrected CO₂=.6600 g; reaction H₂O=.2700 g",
+        "script": "A wet sample and an instrumental blank contribute different masses to a combustion analysis. Consider a supplied sample of zero point five zero zero zero gram with independently measured water content zero point zero five zero zero gram. Dry analyte mass is therefore zero point four five zero zero gram. Collected carbon dioxide is zero point six eight zero zero gram, including a reagent blank of zero point zero two zero zero, so analyte carbon dioxide is zero point six six zero zero gram. Using carbon twelve and carbon dioxide forty four gives zero point one eight zero zero gram carbon, or forty percent on the dry basis. Collected water is zero point three two nine zero gram. Subtract its zero point zero zero nine zero blank and the sample's original zero point zero five zero zero water, leaving zero point two seven zero zero gram water produced from analyte hydrogen. That corresponds to zero point zero three zero zero gram hydrogen. If the dry compound contains only carbon, hydrogen and oxygen, oxygen by difference is zero point two four zero zero gram, and the empirical ratio is one to two to one. The formula is C H two O; a molecular formula still needs molar mass evidence.",
+        "points": [
+          "Wet sample .5000 g; original water .0500 g · Dry analyte=.4500 g · Use a dry reporting basis",
+          "CO₂: .6800−.0200=.6600 g · Carbon=.1800 g; dry C=40.0% · Blank does not come from analyte",
+          "H₂O: .3290−.0090−.0500=.2700 g · H=.0300 g; O by difference=.2400 g · CHO-only empirical ratio 1:2:1"
+        ],
+        "board": {
+          "heading": "Combustion blanks and sample moisture need separate corrections",
+          "columns": [
+            "Specified comparison",
+            "Balance / evidence",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "Wet sample .5000 g; original water .0500 g",
+              "Dry analyte=.4500 g",
+              "Use a dry reporting basis"
+            ],
+            [
+              "CO₂: .6800−.0200=.6600 g",
+              "Carbon=.1800 g; dry C=40.0%",
+              "Blank does not come from analyte"
+            ],
+            [
+              "H₂O: .3290−.0090−.0500=.2700 g",
+              "H=.0300 g; O by difference=.2400 g",
+              "CHO-only empirical ratio 1:2:1"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Sublimation separates volatility but does not certify purity",
+        "formula": "Solid→vapour→solid; recovered analyte mass=collected fraction mass × assayed purity",
+        "script": "Sublimation can separate a suitably volatile solid from a much less volatile impurity without requiring a stable liquid intermediate. Solid molecules enter the vapour phase and can deposit again as solid elsewhere. In an appropriate comparison, camphor is much more volatile than sodium chloride, so this property can support a separation. The method still needs adequate vapour pressure and chemical stability; a compound that decomposes is not automatically purified merely because material appears at another location. Mechanical entrainment or another volatile impurity can contaminate the collected fraction. In a supplied recovery ledger, an initial mixture contains two point zero zero grams desired solid. A collected fraction has total mass one point five zero grams and independent assay gives ninety six point zero percent desired compound. Recovered analyte is one point four four grams, giving seventy two point zero percent recovery. Dividing one point five zero directly by two point zero zero would give seventy five percent, but would count impurity as product. Purity describes the composition of the collected fraction; recovery describes the desired amount retained from the original inventory. This is interpretation of phase behaviour and assay data, not an apparatus or heating procedure.",
+        "points": [
+          "Suitable stable volatile solid · Solid→vapour→solid · Less volatile impurity can remain behind",
+          "Collected=1.50 g; assayed purity=96.0% · Desired recovered=1.50×.960=1.44 g · Fraction mass is not analyte mass",
+          "Initial desired=2.00 g · Recovery=1.44/2.00=72.0% · Separate purity from recovery"
+        ],
+        "board": {
+          "heading": "Sublimation separates volatility but does not certify purity",
+          "columns": [
+            "Specified comparison",
+            "Balance / evidence",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "Suitable stable volatile solid",
+              "Solid→vapour→solid",
+              "Less volatile impurity can remain behind"
+            ],
+            [
+              "Collected=1.50 g; assayed purity=96.0%",
+              "Desired recovered=1.50×.960=1.44 g",
+              "Fraction mass is not analyte mass"
+            ],
+            [
+              "Initial desired=2.00 g",
+              "Recovery=1.44/2.00=72.0%",
+              "Separate purity from recovery"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "In the supplied extraction model, neutral P=10, pKa=4 and maintained pH=4. Total analytical distribution ratio D is:",
+        "options": [
+          "10",
+          "1",
+          "5",
+          ".1"
+        ],
+        "answer": 2,
+        "explanation": "At pH=pKa, aqueous neutral and ionized forms have equal concentration, so D=P/(1+1)=5."
+      },
+      {
+        "question": "With D=5, Vaq=100 mL and Vo=50 mL, the fraction of the total acid inventory in organic phase is:",
+        "options": [
+          "1/2",
+          "1/6",
+          "1/7",
+          "5/7"
+        ],
+        "answer": 3,
+        "explanation": "The organic fraction is DVo/(Vaq+DVo)=250/(100+250)=5/7; distribution ratios are not directly mass fractions."
+      },
+      {
+        "question": "In the stated normal-phase silica comparison, A travels 1.25 cm and the solvent front 5.00 cm. Its retention factor is:",
+        "options": [
+          ".25",
+          ".75",
+          "4.00",
+          "6.25"
+        ],
+        "answer": 0,
+        "explanation": "Divide the spot displacement by the solvent-front displacement from the same origin: 1.25/5.00=.25."
+      },
+      {
+        "question": "Compared under the same stated normal-phase silica conditions, a more strongly adsorbed compound generally has:",
+        "options": [
+          "A larger Rf regardless of mobile phase",
+          "A smaller Rf",
+          "No interaction with the stationary phase",
+          "A retention factor equal to its molar mass"
+        ],
+        "answer": 1,
+        "explanation": "Stronger retention on the stationary material reduces migration relative to the solvent front in this specified adsorption model."
+      },
+      {
+        "question": "A .5000 g sample contains .0500 g original water. CO₂ collected=.6800 g with .0200 g reagent blank. With C=12 and CO₂=44 g/mol, dry-basis carbon percentage is:",
+        "options": [
+          "36.0%",
+          "41.2%",
+          "40.0%",
+          "44.0%"
+        ],
+        "answer": 2,
+        "explanation": "Corrected carbon=.6600×12/44=.1800 g; divide by dry analyte .4500 g, not by the wet sample mass."
+      },
+      {
+        "question": "After correct blank/moisture subtraction, dry CHO-only analyte has C=.1800 g, H=.0300 g, O=.2400 g. Its empirical formula is:",
+        "options": [
+          "C₂H₂O",
+          "CHO",
+          "CH₄O",
+          "CH₂O"
+        ],
+        "answer": 3,
+        "explanation": "Mole amounts are .0150 C, .0300 H and .0150 O, giving the simplest ratio 1:2:1; molecular mass is still unknown."
+      },
+      {
+        "question": "A sublimation fraction weighs 1.50 g and assay gives 96.0% desired compound. Desired compound recovered is:",
+        "options": [
+          "1.44 g",
+          "1.50 g",
+          "1.56 g",
+          ".960 g"
+        ],
+        "answer": 0,
+        "explanation": "Multiply collected mass by the independent purity fraction: 1.50×.960=1.44 g of analyte."
+      },
+      {
+        "question": "If the initial mixture contained 2.00 g desired compound and the fraction contains 1.44 g desired compound, recovery is:",
+        "options": [
+          "96.0%",
+          "72.0%",
+          "75.0%",
+          "100% because sublimation guarantees purity"
+        ],
+        "answer": 1,
+        "explanation": "Recovery compares desired mass recovered with desired mass originally present: 1.44/2.00×100=72.0%, separately from fraction purity."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Lisa Nichols: acid–base extraction",
+        "url": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/04%3A_Extraction/4.08%3A_Acid-Base_Extraction"
+      },
+      {
+        "title": "Lisa Nichols: TLC separation theory",
+        "url": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/02%3A_Chromatography/2.03%3A_Thin_Layer_Chromatography_(TLC)/2.3D%3A_Separation_Theory"
+      },
+      {
+        "title": "Lisa Nichols: sublimation principles",
+        "url": "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Organic_Chemistry_Lab_Techniques_(Nichols)/06%3A_Miscellaneous_Techniques/6.03%3A_Sublimation"
+      },
+      {
+        "title": "OpenStax: quantitative chemical analysis and composition balances",
+        "url": "https://openstax.org/books/chemistry-2e/pages/4-5-quantitative-chemical-analysis"
+      }
+    ]
+  }
+} as const;
