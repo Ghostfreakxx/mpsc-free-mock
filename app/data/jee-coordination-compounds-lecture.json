@@ -37,6 +37,10 @@
     {
       "title": "Karpagam Academy: substitution lability and inertness",
       "url": "https://kahedu.edu.in/naac/C-3/Additional%20documents/E-content/641.pdf"
+    },
+    {
+      "title": "David Harvey: complexation titrations and conditional formation constants",
+      "url": "https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_by_David_Harvey/Analytical_Chemistry_2.1_(Harvey)/09%3A_Titrimetric_Methods/9.03%3A_Complexation_Titrations"
     }
   ],
   "chapters": [
@@ -688,6 +692,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Name mixed ligands after solving the charge ledger",
+      "formula": "[Cr(NH₃)₄(H₂O)Cl]Cl₂: tetraammineaquachloridochromium(III) chloride; K₂[PtCl₆]: potassium hexachloridoplatinate(IV)",
+      "script": "Mixed ligand names require two separate decisions: charge accounting and alphabetical ligand order. Consider a salt written as a chromium complex containing four ammonia ligands, one water and one coordinated chloride, with two chloride counterions outside the brackets. The complex has charge plus two. Ammonia and water are neutral, while the bound chloride contributes minus one, so chromium is plus three. There are six donor atoms and coordination number six. For the additive name, use ammine with two m letters for ammonia, aqua for water, and chlorido for coordinated chloride. Alphabetize the ligand names without using the numerical prefix tetra to choose their order. The complex cation is tetraammineaquachloridochromium three, with three written as a Roman numeral, followed by chloride for the counterion. Compare potassium hexachloridoplatinate four: two potassium ions imply a complex charge minus two; six chlorides then require platinum plus four. The anionic complex uses the metal ending ate, here platinate. Oxidation state and complex charge are different quantities. This name determines composition but does not by itself specify every possible geometrical arrangement of the mixed ligand complex.",
+      "points": [
+        "[Cr(NH₃)₄(H₂O)Cl]Cl₂ · Complex +2; Cr +3; six donors · ammine → aqua → chlorido",
+        "Ignore tetra when alphabetizing · tetraammineaquachloridochromium(III) · Then chloride counterion",
+        "K₂[PtCl₆]: complex −2 · Pt−6=−2 ⇒ Pt +4 · potassium hexachloridoplatinate(IV)"
+      ],
+      "board": {
+        "heading": "Name mixed ligands after solving the charge ledger",
+        "columns": [
+          "Given / model",
+          "Reasoning",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "[Cr(NH₃)₄(H₂O)Cl]Cl₂",
+            "Complex +2; Cr +3; six donors",
+            "ammine → aqua → chlorido"
+          ],
+          [
+            "Ignore tetra when alphabetizing",
+            "tetraammineaquachloridochromium(III)",
+            "Then chloride counterion"
+          ],
+          [
+            "K₂[PtCl₆]: complex −2",
+            "Pt−6=−2 ⇒ Pt +4",
+            "potassium hexachloridoplatinate(IV)"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A d8 count alone does not determine geometry or magnetism",
+      "formula": "[NiCl₄]²⁻: tetrahedral d8, 2 unpaired; [Ni(CN)₄]²⁻: square-planar d8, 0 unpaired in the standard model",
+      "script": "A d electron count is a starting point, not a complete geometry prediction. Compare the usual introductory descriptions of tetrachloridonickelate two minus and tetracyanidonickelate two minus. In each complex, four ligands each carry charge minus one and the overall charge is minus two. Nickel is therefore plus two and has a d eight count in both cases. The chloride complex is normally described as tetrahedral with two unpaired electrons, whereas the cyanide complex is square planar with all electrons paired. Their spin only moments are consequently square root of eight, about two point eight three Bohr magnetons, and zero respectively. These are model values; measured moments can contain additional contributions. For a separate square planar platinum two complex with two ammonia and two chloride ligands, cis and trans arrangements are distinguishable because adjacent and opposite positions are inequivalent. An ideal tetrahedral complex with two ligands of each type has no corresponding cis and trans pair, since all vertex pairs are equivalent. Geometry must therefore be established before counting this kind of geometrical isomerism. Do not infer identical magnetism or identical isomer counts merely from the common d eight count.",
+      "points": [
+        "Both [NiCl₄]²⁻ and [Ni(CN)₄]²⁻ · Ni(+2), d8; four donor atoms · Same d count, different splitting",
+        "Typical tetrahedral chloride complex · 2 unpaired; μspin-only=√8 · Typical square-planar cyanide: paired",
+        "Square-planar MA₂B₂ has cis/trans · Ideal tetrahedral MA₂B₂ has one arrangement · Geometry precedes isomer counting"
+      ],
+      "board": {
+        "heading": "A d8 count alone does not determine geometry or magnetism",
+        "columns": [
+          "Given / model",
+          "Reasoning",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "Both [NiCl₄]²⁻ and [Ni(CN)₄]²⁻",
+            "Ni(+2), d8; four donor atoms",
+            "Same d count, different splitting"
+          ],
+          [
+            "Typical tetrahedral chloride complex",
+            "2 unpaired; μspin-only=√8",
+            "Typical square-planar cyanide: paired"
+          ],
+          [
+            "Square-planar MA₂B₂ has cis/trans",
+            "Ideal tetrahedral MA₂B₂ has one arrangement",
+            "Geometry precedes isomer counting"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Octahedral d7 adds one pairing cost when it goes low spin",
+      "formula": "HS t₂g⁵eg²: E=−.8Δo+2P, n=3; LS t₂g⁶eg¹: E=−1.8Δo+3P, n=1",
+      "script": "The high spin and low spin ledgers must be rebuilt for each electron count. In an ideal octahedral d seven configuration, the high spin filling has five electrons in the lower set and two in the upper set. There are two doubly occupied orbitals and three unpaired electrons. Its crystal field term is negative zero point eight times the octahedral splitting, and its pairing contribution is twice the supplied cost per pair. Low spin has six electrons in the lower set and one in the upper set. It contains three pairs and one unpaired electron. Its energy is negative one point eight times the splitting plus three pairing costs. Subtract high spin from low spin: the difference is pairing cost minus splitting. With supplied splitting two hundred twenty and pairing cost one hundred sixty kilojoules per mole, the low spin model is lower by sixty kilojoules per mole. The corresponding spin only moments are approximately three point eight seven and one point seven three Bohr magnetons. Both forms are paramagnetic in this simple count. These energies use the same spherical barycentre reference and a simplified constant pairing cost; a negative crystal field contribution alone is not the entire energy comparison.",
+      "points": [
+        "High spin t₂g⁵eg² · 2 pairs; 3 unpaired · EHS=−.8Δo+2P",
+        "Low spin t₂g⁶eg¹ · 3 pairs; 1 unpaired · ELS=−1.8Δo+3P",
+        "Δo=220; P=160 kJ/mol · ELS−EHS=P−Δo=−60 kJ/mol · μHS≈3.87; μLS≈1.73 μB"
+      ],
+      "board": {
+        "heading": "Octahedral d7 adds one pairing cost when it goes low spin",
+        "columns": [
+          "Given / model",
+          "Reasoning",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "High spin t₂g⁵eg²",
+            "2 pairs; 3 unpaired",
+            "EHS=−.8Δo+2P"
+          ],
+          [
+            "Low spin t₂g⁶eg¹",
+            "3 pairs; 1 unpaired",
+            "ELS=−1.8Δo+3P"
+          ],
+          [
+            "Δo=220; P=160 kJ/mol",
+            "ELS−EHS=P−Δo=−60 kJ/mol",
+            "μHS≈3.87; μLS≈1.73 μB"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting analysis: protonation changes a conditional chelation constant",
+      "formula": "β′=αY⁴⁻β; [MY]/[M]=β′CU; fbound=β′CU/(1+β′CU) for supplied free-ligand pool CU",
+      "script": "A metal formation constant can be large while protonation reduces the ligand fraction available in its binding form. Consider a supporting EDTA model at fixed temperature and buffered pH. Define beta for metal plus fully deprotonated Y four minus forming one metal EDTA complex. Define the uncomplexed ligand pool as the sum of all free protonation forms, excluding ligand already bound to metal. If alpha is the fraction of that pool present as Y four minus, the conditional concentration formation constant is alpha times beta. Use a hypothetical beta of ten to the eight per molar and a supplied free ligand pool of one tenth millimolar. At alpha equal to ten to the minus four, the conditional constant is ten to the four per molar, so bound to free metal ratio is one and half the metal is complexed. At alpha equal to ten to the minus two with the same pool, the ratio becomes one hundred and the bound fraction one hundred over one hundred one. These alpha values are supplied, not assigned to particular pH values. The calculation excludes competing metals, metal hydrolysis and other complexes. Total added EDTA cannot replace the free pool when binding substantially depletes it.",
+      "points": [
+        "β=10⁸ M⁻¹; free pool CU=10⁻⁴ M · [Y⁴⁻]=αCU; β′=αβ · Pool excludes metal-bound EDTA",
+        "α=10⁻⁴ gives β′CU=1 · [MY]/[M]=1 · fbound=1/2",
+        "α=10⁻² gives β′CU=100 · fbound=100/101≈.9901 · No hydrolysis, competitors or depletion model"
+      ],
+      "board": {
+        "heading": "Supporting analysis: protonation changes a conditional chelation constant",
+        "columns": [
+          "Given / model",
+          "Reasoning",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "β=10⁸ M⁻¹; free pool CU=10⁻⁴ M",
+            "[Y⁴⁻]=αCU; β′=αβ",
+            "Pool excludes metal-bound EDTA"
+          ],
+          [
+            "α=10⁻⁴ gives β′CU=1",
+            "[MY]/[M]=1",
+            "fbound=1/2"
+          ],
+          [
+            "α=10⁻² gives β′CU=100",
+            "fbound=100/101≈.9901",
+            "No hydrolysis, competitors or depletion model"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1152,6 +1296,94 @@
       ],
       "answer": 3,
       "explanation": "Use t½=ln2/k=.693147/.00100≈693 min."
+    },
+    {
+      "question": "In [Cr(NH₃)₄(H₂O)Cl]Cl₂, the chromium oxidation state and complex charge are:",
+      "options": [
+        "+2 and +3",
+        "+3 and +2",
+        "+1 and +2",
+        "+3 and 0"
+      ],
+      "answer": 1,
+      "explanation": "Two outer chlorides require a +2 complex; neutral NH₃/H₂O and one bound Cl− then give Cr(+3)."
+    },
+    {
+      "question": "When ordering the ligands ammine, aqua and chlorido in its additive name, the prefix tetra is:",
+      "options": [
+        "Used to put ammine last",
+        "An oxidation-state label",
+        "Ignored for alphabetical ordering",
+        "A reason to call water oxido"
+      ],
+      "answer": 2,
+      "explanation": "Alphabetize the ligand names themselves: ammine, aqua, chlorido; tetra states multiplicity."
+    },
+    {
+      "question": "The standard introductory descriptions of [NiCl₄]²⁻ and [Ni(CN)₄]²⁻ respectively are:",
+      "options": [
+        "Both necessarily tetrahedral and paired",
+        "Both octahedral",
+        "Square planar with 0, tetrahedral with 2 unpaired",
+        "Tetrahedral with 2, square planar with 0 unpaired"
+      ],
+      "answer": 3,
+      "explanation": "Both have Ni(+2), d8, but their usual geometries and orbital fillings differ."
+    },
+    {
+      "question": "Which statement about ideal MA₂B₂ geometry is correct?",
+      "options": [
+        "Square planar can have cis/trans; tetrahedral has no such pair",
+        "Both always have two cis/trans forms",
+        "Tetrahedral alone has cis/trans",
+        "Neither can have any geometric distinction"
+      ],
+      "answer": 0,
+      "explanation": "Adjacent and opposite positions differ in a square, while all vertex pairs in an ideal tetrahedron are equivalent."
+    },
+    {
+      "question": "For ideal octahedral d7, the high-spin and low-spin unpaired-electron counts respectively are:",
+      "options": [
+        "5 and 3",
+        "3 and 1",
+        "2 and 0",
+        "4 and 2"
+      ],
+      "answer": 1,
+      "explanation": "HS t2g5eg2 has three unpaired; LS t2g6eg1 has one. Both are paramagnetic in this model."
+    },
+    {
+      "question": "Using the stated d7 ledger, Δo=220 and P=160 kJ/mol gives ELS−EHS:",
+      "options": [
+        "+60 kJ/mol",
+        "−220 kJ/mol",
+        "−60 kJ/mol",
+        "0"
+      ],
+      "answer": 2,
+      "explanation": "Going low spin gains one Δo of crystal-field stabilization but costs one additional pair: P−Δo=−60."
+    },
+    {
+      "question": "For β=10⁸ M⁻¹, α=10⁻⁴ and supplied uncomplexed ligand pool CU=10⁻⁴ M, the metal fraction bound is:",
+      "options": [
+        "1",
+        "10⁻⁴",
+        "1/101",
+        "1/2"
+      ],
+      "answer": 3,
+      "explanation": "β′=αβ=10⁴ M⁻¹; β′CU=1; fbound=1/(1+1)."
+    },
+    {
+      "question": "In that conditional formation expression, CU means:",
+      "options": [
+        "Sum of free ligand protonation forms, excluding metal-bound ligand",
+        "Total added EDTA regardless of binding",
+        "Only the already bound ligand",
+        "Only free Y⁴⁻"
+      ],
+      "answer": 0,
+      "explanation": "Alpha converts the uncomplexed ligand pool CU to [Y4−]. Total added ligand requires an additional mass balance."
     }
   ]
 }

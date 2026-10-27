@@ -3,7 +3,7 @@ const read=id=>JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`));
 const k=read('chemical-kinetics'),c=read('coordination-compounds'),e=read('equilibrium');
 const a=(l,i)=>l.quiz[i].options[l.quiz[i].answer];const near=(actual,expected,tolerance=1e-10)=>assert.ok(Math.abs(actual-expected)<tolerance,`${actual} != ${expected}`);
 test('new rate questions preserve axis conventions, order units, amount and branch balances',()=>{
- assert.deepEqual(k.quiz.slice(18).map(q=>q.answer),[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3]);
+ assert.deepEqual(k.quiz.slice(18).map(q=>q.answer),[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3]);
  assert.equal(a(k,18),`${6000*8.314/1000} kJ/mol`);assert.equal(a(k,20),'1/2');near(Math.log(2)/Math.log(4),.5);
  assert.equal(a(k,21),'M⁻¹ᐟ² s⁻¹');near(1-(.5+1),-.5);
  assert.equal(a(k,22),'0.100 mol A');assert.equal(a(k,23),'0.0250 M');near(.100*Math.exp(-Math.log(2))/2,.025);
@@ -11,7 +11,7 @@ test('new rate questions preserve axis conventions, order units, amount and bran
  near(Math.log(2)/(.020+.030),13.862943611198904);
 });
 test('coordination problems independently count charge, outer chloride and split-orbital energies',()=>{
- assert.deepEqual(c.quiz.slice(18).map(q=>q.answer),[1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,0,1,2,3,0,1,2,3]);
+ assert.deepEqual(c.quiz.slice(18).map(q=>q.answer),[1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,0,1,2,3,0,1,2,3,1,2,3,0,1,2,3,0]);
  assert.equal(a(c,19),'+3');assert.equal(3+6*(-1),-3);
  assert.equal(a(c,20),`${(.0100*3*143.5).toFixed(3)} g`);assert.equal(a(c,21),String(5+1));
  near(3*(-.4),-1.2);near(2*(-.6)+.4,-.8);near(18000*4/9,8000);

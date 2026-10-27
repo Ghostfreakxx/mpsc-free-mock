@@ -41,6 +41,14 @@
     {
       "title": "Texas A&M: reversible reaction rates and relaxation",
       "url": "https://www.chem.tamu.edu/class/majors/chem328/CHEM%20328_Chapter%2020.pdf"
+    },
+    {
+      "title": "OpenStax: ideal-gas partial pressures",
+      "url": "https://openstax.org/books/chemistry-2e/pages/9-3-stoichiometry-of-gaseous-substances-mixtures-and-reactions"
+    },
+    {
+      "title": "OpenStax: elementary steps and pre-equilibrium mechanisms",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-6-reaction-mechanisms"
     }
   ],
   "chapters": [
@@ -694,6 +702,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "A ten-kelvin rate multiplier depends on the starting temperature",
+      "formula": "ln(k₂/k₁)=(Ea/R)(1/T₁−1/T₂); k₃₂₀/k₃₁₀=2^(300/320)≈1.915",
+      "script": "The statement that a reaction doubles its rate constant for every ten degree rise is an approximate shortcut, not a universal Arrhenius identity. Suppose the rate constant doubles between three hundred and three hundred ten kelvin. Assume one unchanged mechanism, a temperature independent activation energy and a constant pre exponential factor across the small range. The logarithm of the rate constant ratio equals activation energy over the gas constant times the difference of reciprocal absolute temperatures. Using the gas constant eight point three one four gives an activation energy about fifty three point six kilojoules per mole. For the next interval, three hundred ten to three hundred twenty kelvin, the reciprocal temperature difference is smaller. Divide that new difference by the first difference to obtain three hundred over three hundred twenty. The next multiplier is therefore two raised to that ratio, approximately one point nine one five, rather than exactly two. This calculation compares rate constants. Actual reaction rates also depend on concentrations through the experimental rate law. Use kelvin throughout, preserve the sign, and do not extrapolate a fitted activation energy across a mechanism change.",
+      "points": [
+        "k310/k300=2; constant Ea and prefactor · Ea=R ln2/(1/300−1/310) · Ea≈53.6 kJ/mol",
+        "Compare 310→320 with 300→310 · Reciprocal-T difference ratio=300/320 · k320/k310≈1.915",
+        "Rate constants versus measured rates · Concentrations may also change · No universal ten-degree doubling rule"
+      ],
+      "board": {
+        "heading": "A ten-kelvin rate multiplier depends on the starting temperature",
+        "columns": [
+          "Given / model",
+          "Reasoning",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "k310/k300=2; constant Ea and prefactor",
+            "Ea=R ln2/(1/300−1/310)",
+            "Ea≈53.6 kJ/mol"
+          ],
+          [
+            "Compare 310→320 with 300→310",
+            "Reciprocal-T difference ratio=300/320",
+            "k320/k310≈1.915"
+          ],
+          [
+            "Rate constants versus measured rates",
+            "Concentrations may also change",
+            "No universal ten-degree doubling rule"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "An inert gas changes the total-pressure bookkeeping",
+      "formula": "A→2B; pA=2pA,0+pI−Ptotal at fixed T,V; k=ln(pA,0/pA)/t for first order",
+      "script": "A total pressure measurement contains every gas, including an inert gas that does not react. Consider a closed rigid vessel at constant temperature. Initially reactant A has partial pressure eighty kilopascals and an inert gas has forty kilopascals. There is initially no product. The only reaction is one A forming two B. Let the pressure equivalent of the reacted amount be x. Reactant pressure becomes eighty minus x, product pressure becomes twice x, and inert pressure stays forty. Total pressure is therefore one hundred twenty plus x. At a measured total pressure of one hundred sixty kilopascals, x is forty, leaving reactant pressure forty and product pressure eighty. If disappearance is first order and this reading occurs after one hundred seconds, the rate constant is the natural logarithm of two divided by one hundred, about zero point zero zero six nine three per second. The correct reconstruction uses twice the initial reactant partial pressure plus inert pressure minus total pressure. Twice the initial total pressure minus the current total pressure would give the wrong result. These equations require ideal gases, fixed temperature and volume, and the supplied single reaction.",
+      "points": [
+        "Initial pA=80; pI=40 kPa; no B · Ptotal,0=120 kPa; A→2B · pI constant at fixed T,V",
+        "Ptotal=160 kPa gives x=40 kPa · pA=40; pB=80; pI=40 · pA=2pA,0+pI−Ptotal",
+        "At t=100 s; first-order disappearance · k=ln(80/40)/100 · k≈.00693 s⁻¹"
+      ],
+      "board": {
+        "heading": "An inert gas changes the total-pressure bookkeeping",
+        "columns": [
+          "Given / model",
+          "Reasoning",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "Initial pA=80; pI=40 kPa; no B",
+            "Ptotal,0=120 kPa; A→2B",
+            "pI constant at fixed T,V"
+          ],
+          [
+            "Ptotal=160 kPa gives x=40 kPa",
+            "pA=40; pB=80; pI=40",
+            "pA=2pA,0+pI−Ptotal"
+          ],
+          [
+            "At t=100 s; first-order disappearance",
+            "k=ln(80/40)/100",
+            "k≈.00693 s⁻¹"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting inference: a measured fraction gives a range of rate constants",
+      "formula": "f∈[.48,.52] at 100 s ⇒ k=−ln(f)/100∈[.006539,.007340] s⁻¹",
+      "script": "A calculated rate constant inherits the uncertainty of the measurement used to obtain it. Consider a supporting inference exercise under an already accepted irreversible first order model, at fixed temperature and volume. After one hundred seconds, a calibrated experiment bounds the fraction remaining between zero point four eight and zero point five two. Treat these as supplied bounds, not as a statistical confidence interval, and neglect timing error. The rate constant equals negative natural logarithm of the fraction divided by time. Because the logarithm increases with its argument, the larger remaining fraction gives the smaller disappearance constant. The lower constant is negative logarithm of zero point five two divided by one hundred, about zero point zero zero six five three nine per second. The upper constant uses zero point four eight, about zero point zero zero seven three four zero per second. Half life is natural logarithm of two divided by the constant, so its bounds run in the opposite order: approximately ninety four point four to one hundred six seconds. A midpoint measurement would suggest one hundred seconds, but cannot erase the supplied interval. One bounded reading also does not establish the reaction order by itself.",
+      "points": [
+        "At 100 s, measured remaining fraction .48–.52 · Assume first order; time error neglected · Bounds are not a confidence claim",
+        "k=−ln(f)/100 decreases as f increases · kmin from .52; kmax from .48 · .006539–.007340 s⁻¹",
+        "t½=ln2/k decreases as k increases · t½,min from kmax · About 94.4–106 s"
+      ],
+      "board": {
+        "heading": "Supporting inference: a measured fraction gives a range of rate constants",
+        "columns": [
+          "Given / model",
+          "Reasoning",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "At 100 s, measured remaining fraction .48–.52",
+            "Assume first order; time error neglected",
+            "Bounds are not a confidence claim"
+          ],
+          [
+            "k=−ln(f)/100 decreases as f increases",
+            "kmin from .52; kmax from .48",
+            ".006539–.007340 s⁻¹"
+          ],
+          [
+            "t½=ln2/k decreases as k increases",
+            "t½,min from kmax",
+            "About 94.4–106 s"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting mechanism: cancel species before deriving an apparent law",
+      "formula": "Fast A+B⇌I; slow I+C→P+B; net A+C→P; v=k₂Kc[A][B][C] under pre-equilibrium",
+      "script": "A proposed mechanism can contain species absent from the net reaction, yet those species can affect its rate. Use a hypothetical supporting mechanism with a fast reversible association of A and B to form intermediate I, followed by a slow elementary reaction of I with C to give P and regenerate B. Adding the forward steps cancels I and B, leaving A plus C forming P. Intermediate I is produced first and consumed later. Catalyst B is consumed first and regenerated later. If the fast first step remains close to equilibrium while the slow step consumes I, its concentration is the concentration equilibrium constant times free A times free B. The slow elementary step has rate constant k two times I times C. Substitution gives k two times the equilibrium constant times free A, free B and C: an apparent third order law in this specified regime. The two elementary forward steps are each bimolecular; there is no three body elementary collision implied by the overall third order law. Free B must not automatically be replaced by total catalyst when appreciable B is bound in I. This conditional derivation illustrates reasoning, not proof that a real reaction follows this mechanism.",
+      "points": [
+        "Fast A+B⇌I; slow I+C→P+B · Cancel I and B in the forward sum · Net A+C→P; B is regenerated",
+        "Pre-equilibrium: [I]=Kc[A][B] · v=k₂[I][C] · v=k₂Kc[A][B][C]",
+        "Free [B], not automatically total B · Both forward elementary steps bimolecular · Apparent order 3 is not molecularity 3"
+      ],
+      "board": {
+        "heading": "Supporting mechanism: cancel species before deriving an apparent law",
+        "columns": [
+          "Given / model",
+          "Reasoning",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "Fast A+B⇌I; slow I+C→P+B",
+            "Cancel I and B in the forward sum",
+            "Net A+C→P; B is regenerated"
+          ],
+          [
+            "Pre-equilibrium: [I]=Kc[A][B]",
+            "v=k₂[I][C]",
+            "v=k₂Kc[A][B][C]"
+          ],
+          [
+            "Free [B], not automatically total B",
+            "Both forward elementary steps bimolecular",
+            "Apparent order 3 is not molecularity 3"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1158,6 +1306,94 @@
       ],
       "answer": 3,
       "explanation": "The distance to equilibrium halves in ln2/(kf+kr)≈4.62 min; this is not necessarily halving A itself."
+    },
+    {
+      "question": "If k310/k300=2 with constant Arrhenius Ea and prefactor, the predicted k320/k310 is closest to:",
+      "options": [
+        "1.915",
+        "2.000 exactly",
+        "4.000",
+        "0.500"
+      ],
+      "answer": 0,
+      "explanation": "The ratio of reciprocal-temperature differences is 300/320; the multiplier is 2^(300/320)≈1.915."
+    },
+    {
+      "question": "The Arrhenius temperatures in this comparison must be entered as:",
+      "options": [
+        "Degrees Celsius without conversion",
+        "Absolute temperatures in kelvin",
+        "Temperature differences alone",
+        "Any scale because the formula contains a ratio"
+      ],
+      "answer": 1,
+      "explanation": "Reciprocal absolute temperatures appear; Celsius values cannot be substituted directly."
+    },
+    {
+      "question": "For A→2B at fixed T,V, initial pA=80 kPa, inert pI=40 kPa and no B. At Ptotal=160 kPa, pA is:",
+      "options": [
+        "80 kPa",
+        "120 kPa",
+        "40 kPa",
+        "0 kPa"
+      ],
+      "answer": 2,
+      "explanation": "Total pressure rises from 120 by x=40; pA=80−40=40 kPa."
+    },
+    {
+      "question": "If that reading is at 100 s and A disappearance is first order, k is approximately:",
+      "options": [
+        ".400 s⁻¹",
+        ".01386 s⁻¹",
+        ".00100 s⁻¹",
+        ".00693 s⁻¹"
+      ],
+      "answer": 3,
+      "explanation": "k=ln(80/40)/100=ln2/100≈.00693 s⁻¹; use reactant partial pressure."
+    },
+    {
+      "question": "For fixed t and first-order k=−ln(f)/t, which fraction gives the smallest k within f=.48–.52?",
+      "options": [
+        ".52",
+        ".50",
+        ".48",
+        "Both endpoints give the same k"
+      ],
+      "answer": 0,
+      "explanation": "More reactant remaining after the same time means a smaller disappearance constant."
+    },
+    {
+      "question": "The corresponding first-order half-life range for f=.48–.52 at 100 s is approximately:",
+      "options": [
+        "48–52 s",
+        "94.4–106 s",
+        "6.54–7.34 s",
+        "Exactly 100 s without uncertainty"
+      ],
+      "answer": 1,
+      "explanation": "Use ln2/kmax for the lower half-life and ln2/kmin for the upper half-life."
+    },
+    {
+      "question": "For fast A+B⇌I followed by slow I+C→P+B, the catalyst and intermediate respectively are:",
+      "options": [
+        "I and B",
+        "A and P",
+        "B and I",
+        "C and A"
+      ],
+      "answer": 2,
+      "explanation": "B is consumed then regenerated; I is formed then consumed. Both cancel from the net forward reaction."
+    },
+    {
+      "question": "Under the stated pre-equilibrium mechanism, the apparent law is:",
+      "options": [
+        "k₂[A][C] regardless of B",
+        "k₂[I] with no C",
+        "k₂Kc[A][C]/[B]",
+        "k₂Kc[A][B][C] using free concentrations"
+      ],
+      "answer": 3,
+      "explanation": "[I]=Kc[A][B] and v=k₂[I][C]. Its third apparent order does not make an elementary step termolecular."
     }
   ]
 }

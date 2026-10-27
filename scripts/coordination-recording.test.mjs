@@ -6,7 +6,7 @@ import {chemistryCoreLessons} from '../app/jee/classes/chemistry-core-study.ts';
 const lesson=JSON.parse(fs.readFileSync('app/data/jee-coordination-compounds-lecture.json'));
 test('narrated worked examples preserve charge, precipitate and spin energy results',()=>{
  assert.equal(lesson.subject,'Chemistry'); assert.equal(lesson.unit,12);
- assert.equal(lesson.chapters.length,22); assert.equal(lesson.quiz.length,42);
+ assert.equal(lesson.chapters.length,26); assert.equal(lesson.quiz.length,50);
  assert.deepEqual(lesson.quiz,chemistryCoreLessons.find(l=>l.id==='coordination-compounds').quiz);
  for(const [i,c]of lesson.chapters.entries()){
   const hash=createHash('sha256').update(JSON.stringify({script:c.speechInput??c.script,instructions:lesson.voiceInstructions,voice:'marin',model:'gpt-4o-mini-tts'})).digest('hex');
@@ -25,7 +25,7 @@ test('narrated worked examples preserve charge, precipitate and spin energy resu
 test('recording captions match every chapter and remain within audio bounds',()=>{
  const timings=JSON.parse(fs.readFileSync('app/data/jee-coordination-compounds-timings.json'));
  assert.ok(timings.duration>850 && timings.duration<2200);
- assert.equal(timings.chapters.length,22);
+ assert.equal(timings.chapters.length,26);
  const words=t=>t.toLowerCase().replace(/[^a-z0-9]/g,'');
  for(const [i,chapter] of timings.chapters.entries()){
   assert.equal(chapter.start,i?timings.chapters[i-1].end:0);

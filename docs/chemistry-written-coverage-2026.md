@@ -23,11 +23,11 @@ Questions are original practice, not represented as official PYQs.
 | 5 | [Solutions](/jee/classes/solutions) | 27 | 29 | 18 | 42 / 42 |
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 25 | 25 | 19 | 42 / 42 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 26 | 27 | 19 | 42 / 42 |
-| 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 22 | 25 | 19 | 42 / 42 |
+| 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 26 | 29 | 22 | 50 / 50 |
 | 9 | [Periodic Trends](/jee/classes/periodic-trends) | 25 | 23 | 15 | 40 / 40 |
 | 10 | [P-Block](/jee/classes/p-block) | 27 | 25 | 15 | 42 / 42 |
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 27 | 25 | 15 | 42 / 42 |
-| 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 22 | 25 | 19 | 42 / 42 |
+| 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 26 | 29 | 22 | 50 / 50 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 25 | 25 | 15 | 40 / 40 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 25 | 28 | 20 | 44 / 44 |
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 25 | 25 | 15 | 40 / 40 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Mole Concept adds three-isotope identifiability, reaction-dependent equivalent concentration, dimer dissociation inferred from gas density and supporting conversion/selectivity/recycle balances. The selectivity denominator is explicitly defined rather than assumed universal.
+Chemical Kinetics adds temperature-dependent ten-kelvin multipliers, inert-gas pressure reconstruction, supplied measurement-bound propagation and a supporting pre-equilibrium mechanism with explicit free catalyst concentration.
 
-Organic Principles adds structural conditions for simple Hückel aromaticity, a conserved-atom hydride-shift map, Fischer transformation rules and a substituted-alkene cis/E–Z counterexample. The three Fischer drawings are checked with signed 3D tetrahedral orientation under the stated projection convention.
+Coordination Compounds adds mixed-ligand charge/name bookkeeping, d8 geometry and magnetism comparisons, an octahedral d7 pairing ledger and a supporting pH-dependent conditional EDTA model. The latter uses supplied alpha fractions and a free uncomplexed-ligand pool, not total added EDTA.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax isotope/gas and organic-stereochemistry teaching, the IUPAC equivalent-entity definition and Colorado State University’s process-balance definitions. Numerical datasets and MCQs in this batch are original practice.
+The notes reference OpenStax rate-law, Arrhenius, mechanism and coordination teaching, plus David Harvey’s analytical-chemistry treatment of conditional formation constants. Numerical datasets and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

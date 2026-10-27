@@ -1123,7 +1123,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "coordination-compounds", subject: "Chemistry", unit: 12, number: "C02", title: coordinationCompounds.title,
-    description: "Twenty-two narrated chapters on ligands, d4 and d5 spin energies, bridging contacts, bis-chelate stereochemistry, spectroscopy and formation versus exchange.",
+    description: "Twenty-six narrated chapters on ligands, mixed-ligand naming, d4/d5/d7 spin energies, d8 geometry, stereochemistry and supporting conditional chelation.",
     scope: "Recorded Unit 12 foundation and worked applications with original practice. Detailed optical-isomer models, extended nomenclature and quantitative extraction/analysis sequences remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.coordination-compounds.lecture.v1",
     audio: "/lectures/coordination-compounds/narration-marin.mp3",
@@ -1133,7 +1133,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "chemical-kinetics", subject: "Chemistry", unit: 8, number: "C03", title: chemicalKinetics.title,
-    description: "Twenty-two narrated chapters on rate laws, clock thresholds, tangent and mean rates, temperature effects and supporting sequential, variable-volume and reversible-relaxation models.",
+    description: "Twenty-six narrated chapters on rate laws, Arrhenius temperature predictions, inert-gas pressure corrections, measurement bounds and supporting mechanism and relaxation models.",
     scope: "Recorded Unit 8 foundation and worked applications with original practice. Further mixed experimental datasets and mechanism-based problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.chemical-kinetics.lecture.v1",
     audio: "/lectures/chemical-kinetics/narration-marin.mp3",
