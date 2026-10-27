@@ -30,8 +30,8 @@ Questions are original practice, not represented as official PYQs.
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 26 | 29 | 22 | 50 / 50 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 25 | 25 | 15 | 40 / 40 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 25 | 28 | 20 | 44 / 44 |
-| 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 25 | 25 | 15 | 40 / 40 |
-| 16 | [Organic Halogens](/jee/classes/organic-halogens) | 25 | 25 | 15 | 40 / 40 |
+| 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 29 | 29 | 18 | 48 / 48 |
+| 16 | [Organic Halogens](/jee/classes/organic-halogens) | 29 | 29 | 18 | 48 / 48 |
 | 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 27 | 25 | 15 | 40 / 40 |
 | 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 25 | 25 | 15 | 40 / 40 |
 | 19 | [Biomolecules](/jee/classes/biomolecules) | 25 | 25 | 15 | 40 / 40 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Chemical Kinetics adds temperature-dependent ten-kelvin multipliers, inert-gas pressure reconstruction, supplied measurement-bound propagation and a supporting pre-equilibrium mechanism with explicit free catalyst concentration.
+Hydrocarbons adds site-weighted radical product estimates, syn hydroxylation stereochemistry, connected cyclic-alkene cleavage and carbocation rearrangement during ionic addition. Reaction conditions and competing capture are explicit.
 
-Coordination Compounds adds mixed-ligand charge/name bookkeeping, d8 geometry and magnetism comparisons, an octahedral d7 pairing ledger and a supporting pH-dependent conditional EDTA model. The latter uses supplied alpha fractions and a free uncomplexed-ligand pool, not total added EDTA.
+Organic Halogens adds activated aryl fluoride comparisons, supporting intramolecular ether formation and epoxide Grignard extension, plus an explicit SN2 inversion that keeps the R descriptor after priority reassignment. The Fischer diagram is checked by signed 3D orientation; the substituted haloalcohol is a stipulated local pathway rather than an exclusive synthetic prediction.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax rate-law, Arrhenius, mechanism and coordination teaching, plus David Harvey’s analytical-chemistry treatment of conditional formation constants. Numerical datasets and MCQs in this batch are original practice.
+The notes reference OpenStax alkene oxidation, rearrangement, SN2, ether and epoxide teaching, plus Chris Schaller’s university notes on aromatic addition–elimination. Numerical datasets, reaction maps and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

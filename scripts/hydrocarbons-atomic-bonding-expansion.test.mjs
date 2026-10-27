@@ -1,6 +1,6 @@
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';const read=id=>JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`));const h=read('hydrocarbons'),a=read('atomic-structure'),b=read('chemical-bonding');const answer=(l,i)=>l.quiz[i].options[l.quiz[i].answer];const near=(x,y,t=1e-10)=>assert.ok(Math.abs(x-y)<t);
 test('hydrocarbon applications independently check unsaturation, repeat units and ring symmetry',()=>{
- assert.deepEqual(h.quiz.slice(16).map(q=>q.answer),[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3]);assert.equal(answer(h,16),String((2*6+2-10)/2));assert.equal(answer(h,18),'But-1-yne');assert.equal(answer(h,19),'But-2-yne');assert.equal(2+2,3+1);
+ assert.deepEqual(h.quiz.slice(16).map(q=>q.answer),[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3]);assert.equal(answer(h,16),String((2*6+2-10)/2));assert.equal(answer(h,18),'But-1-yne');assert.equal(answer(h,19),'But-2-yne');assert.equal(2+2,3+1);
  assert.equal(answer(h,20),String(28000/28));assert.equal(answer(h,21),String(2*28000/28));
  const methylSites=[2,6],carboxylMeta=[2,6];assert.deepEqual(methylSites.filter(x=>carboxylMeta.includes(x)),[2,6]);assert.equal(answer(h,22),'Positions 2 and 6');assert.equal(answer(h,23),'One');
 });

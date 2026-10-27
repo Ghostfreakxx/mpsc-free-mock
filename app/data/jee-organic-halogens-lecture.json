@@ -65,6 +65,34 @@
     {
       "title": "IIT Kanpur SATHEE: qualitative halogen analysis",
       "url": "https://sathee.iitk.ac.in/important-formula/chemistry/qualitative_analysis/"
+    },
+    {
+      "title": "OpenStax: activated nucleophilic aromatic substitution",
+      "url": "https://openstax.org/books/organic-chemistry/pages/16-6-nucleophilic-aromatic-substitution"
+    },
+    {
+      "title": "OpenStax: Williamson ether synthesis",
+      "url": "https://openstax.org/books/organic-chemistry/pages/18-2-synthesis-of-ethers"
+    },
+    {
+      "title": "OpenStax: epoxide opening with Grignard reagents",
+      "url": "https://openstax.org/books/organic-chemistry/pages/18-5-reactions-of-epoxides-ring-opening"
+    },
+    {
+      "title": "OpenStax: SN2 stereochemistry",
+      "url": "https://openstax.org/books/organic-chemistry/pages/11-2-the-sn2-reaction"
+    },
+    {
+      "title": "OpenStax: CIP priority comparison and multiple bonds",
+      "url": "https://openstax.org/books/organic-chemistry/pages/5-5-sequence-rules-for-specifying-configuration"
+    },
+    {
+      "title": "Chris Schaller: addition-limited aromatic substitution and fluoride",
+      "url": "https://employees.csbsju.edu/cschaller/Reactivity/carbonyl/COaromsub.htm"
+    },
+    {
+      "title": "OpenStax: Williamson ether synthesis",
+      "url": "https://openstax.org/books/organic-chemistry/pages/18-2-preparing-ethers"
     }
   ],
   "chapters": [
@@ -946,6 +974,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Activated aromatic fluoride can outrun chloride in a specified pathway",
+      "formula": "Addition-limited SNAr comparison: p-NO₂–C₆H₄–F can react faster than p-NO₂–C₆H₄–Cl under comparable conditions",
+      "script": "A leaving group ranking learned for ordinary alkyl substitution cannot be transferred unchanged to every aromatic mechanism. Consider a specified addition elimination nucleophilic aromatic substitution on otherwise comparable para nitro aryl halides, with nucleophile addition as the rate controlling stage. The nitro group opposite the halogen can stabilize negative charge developed in the addition intermediate through resonance. Fluorine strongly withdraws inductively and can facilitate that initial addition, so the activated aryl fluoride can react faster than the corresponding chloride in this regime despite the strong carbon fluorine bond. Fluoride departs in the later stage as aromaticity is restored. This does not mean fluoride is the best leaving group for an ordinary alkyl S N two displacement, nor that unactivated fluorobenzene is automatically reactive under mild conditions. Moving the nitro group to a meta position removes the same direct resonance stabilization in the usual intermediate comparison. The observed ranking depends on substrate activation, nucleophile, solvent and which elementary stage controls the rate. This chapter treats the supplied addition limited pathway rather than all modern aromatic substitution mechanisms. Locate the activating group and identify the rate controlling event before using bond strength alone to rank reactivity.",
+      "points": [
+        "Comparable p-nitro aryl F and Cl · Specified addition-limited SNAr · Aryl F can react faster",
+        "Nitro ortho/para to attacked carbon · Stabilizes negative charge in addition stage · Meta does not provide the same resonance path",
+        "Aromaticity restored when X leaves · Different from ordinary alkyl SN2 · No universal fluoride ranking"
+      ],
+      "board": {
+        "heading": "Activated aromatic fluoride can outrun chloride in a specified pathway",
+        "columns": [
+          "Substrate / condition",
+          "Track the change",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Comparable p-nitro aryl F and Cl",
+            "Specified addition-limited SNAr",
+            "Aryl F can react faster"
+          ],
+          [
+            "Nitro ortho/para to attacked carbon",
+            "Stabilizes negative charge in addition stage",
+            "Meta does not provide the same resonance path"
+          ],
+          [
+            "Aromaticity restored when X leaves",
+            "Different from ordinary alkyl SN2",
+            "No universal fluoride ranking"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting ring closure: count the oxygen as a ring atom",
+      "formula": "⁻O–CH₂–CH₂–CH₂–CH₂–Br → cyclic (OCH₂CH₂CH₂CH₂) + Br⁻; five-membered ether ring",
+      "script": "An intramolecular substitution can make a ring without adding any carbon atoms. Use a supporting reaction map for the alkoxide derived from four bromobutan one ol. Label its existing chain from the oxygen bearing carbon one to the bromine bearing carbon four. In the specified intramolecular Williamson pathway, oxygen attacks carbon four from the backside while the carbon bromine bond breaks. The new ring contains oxygen and all four chain carbons, giving a five membered cyclic ether, tetrahydrofuran, with formula carbon four hydrogen eight oxygen. Counting only the four carbons would incorrectly call it a four membered ring. The oxygen carbon one bond was already present; the newly made bond joins oxygen to carbon four. The attacking end carries charge minus one, and bromide leaves with minus one, so overall charge is conserved while the organic ring becomes neutral. The precursor alcohol differs from its alkoxide by one proton, which must be accounted for separately in a full preparation. Intermolecular reactions and other pathways can compete, so this connectivity map is not a promise of exclusive yield. It illustrates a suitable primary substitution site and favourable ring size, not a rule that every chain cyclizes equally well.",
+      "points": [
+        "Alkoxide ⁻O–(CH₂)₄–Br · O attacks primary terminal C4 · New O–C4 bond; C4–Br breaks",
+        "Existing O–C1 and four-carbon path retained · Ring atoms: O + 4 C · Five-membered tetrahydrofuran",
+        "C₄H₈BrO⁻ → C₄H₈O + Br⁻ · Atoms and total charge conserved · Supporting local pathway, not exclusive yield"
+      ],
+      "board": {
+        "heading": "Supporting ring closure: count the oxygen as a ring atom",
+        "columns": [
+          "Substrate / condition",
+          "Track the change",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Alkoxide ⁻O–(CH₂)₄–Br",
+            "O attacks primary terminal C4",
+            "New O–C4 bond; C4–Br breaks"
+          ],
+          [
+            "Existing O–C1 and four-carbon path retained",
+            "Ring atoms: O + 4 C",
+            "Five-membered tetrahydrofuran"
+          ],
+          [
+            "C₄H₈BrO⁻ → C₄H₈O + Br⁻",
+            "Atoms and total charge conserved",
+            "Supporting local pathway, not exclusive yield"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "An epoxide extends a Grignard chain by two carbons",
+      "formula": "C₂H₅MgBr + ethylene oxide; then proton workup ⇒ CH₃CH₂CH₂CH₂OH",
+      "script": "An organomagnesium reagent can form a carbon carbon bond by opening an epoxide as well as by adding to a carbonyl. Use ethylmagnesium bromide and the symmetrical two carbon epoxide ethylene oxide in a supporting carbon counting map. The ethyl carbon bearing the magnesium association attacks one epoxide carbon, and the bond from that attacked carbon to oxygen breaks. The two original epoxide carbons remain joined to one another. Oxygen stays attached to the other epoxide carbon as an alkoxide before the later proton workup. The final organic product is butan one ol, containing the two ethyl carbons plus the two epoxide carbons in one four carbon chain. The oxygen atom in the alcohol comes from the epoxide, while the hydroxyl proton is supplied at workup. This differs from formaldehyde addition, which extends the ethyl carbon skeleton by one carbon to propan one ol. Water present before the planned bond formation can instead quench the Grignard reagent to ethane. The two epoxide carbons here are equivalent, so there is no regioisomer choice in this particular example. Unsymmetrical epoxides require an additional attack site analysis, and acidic groups elsewhere on a substrate can change the outcome.",
+      "points": [
+        "Ethyl Grignard contributes C2 · Ethylene oxide contributes C2 and O · One C4 alkoxide skeleton",
+        "Break attacked epoxide C–O bond · Other C–O bond remains; then protonate · Butan-1-ol",
+        "Compare formaldehyde: adds C1 · Ethyl + formaldehyde gives propan-1-ol · Early water instead quenches to ethane"
+      ],
+      "board": {
+        "heading": "An epoxide extends a Grignard chain by two carbons",
+        "columns": [
+          "Substrate / condition",
+          "Track the change",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Ethyl Grignard contributes C2",
+            "Ethylene oxide contributes C2 and O",
+            "One C4 alkoxide skeleton"
+          ],
+          [
+            "Break attacked epoxide C–O bond",
+            "Other C–O bond remains; then protonate",
+            "Butan-1-ol"
+          ],
+          [
+            "Compare formaldehyde: adds C1",
+            "Ethyl + formaldehyde gives propan-1-ol",
+            "Early water instead quenches to ethane"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A stipulated SN2 inversion can keep the same R descriptor",
+      "formula": "HOCH₂–CH(Br)–CH₃ → HOCH₂–CH(CN)–CH₃: Br>CH₂OH>CH₃>H becomes CH₂OH>CN>CH₃>H",
+      "script": "Spatial inversion and a change of the printed R or S descriptor are different questions. Use a stipulated single S N two displacement on a stereogenic carbon bonded to bromine, hydroxymethyl, methyl and hydrogen. Begin with the R configuration. Its priorities are bromine first, hydroxymethyl second, methyl third and hydrogen fourth. Replace bromine by a carbon bonded cyanide group in an ideal backside displacement, excluding competing pathways for this local stereochemical exercise. The product priorities must be rebuilt. Hydroxymethyl and cyanide both begin with carbon, but their next comparison lists are oxygen hydrogen hydrogen and nitrogen nitrogen nitrogen respectively; the multiple bond duplication rule supplies the repeated nitrogen entries. Since oxygen outranks nitrogen, hydroxymethyl is now first and cyanide second. Methyl remains third and hydrogen fourth. Physical inversion alone reverses orientation, but the exchange of the first two priority identities reverses the naming comparison again. The product therefore also receives R in this stated example, despite actual inversion at the reacting carbon. This is not spatial retention and does not guarantee a particular experimental yield or pathway for every haloalcohol. The nitrile carbon adds one carbon to the organic inventory.",
+      "points": [
+        "Initial centre: Br, CH₂OH, CH₃, H · Priorities 1,2,3,4; original R · Stipulate one backside SN2 step",
+        "Product comparison: CH₂OH versus CN · [O,H,H] outranks [N,N,N] · CH₂OH first; CN second",
+        "Spatial inversion plus priority interchange · Two sign changes in descriptor calculation · Product also R; not spatial retention"
+      ],
+      "board": {
+        "heading": "A stipulated SN2 inversion can keep the same R descriptor",
+        "columns": [
+          "Substrate / condition",
+          "Track the change",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Initial centre: Br, CH₂OH, CH₃, H",
+            "Priorities 1,2,3,4; original R",
+            "Stipulate one backside SN2 step"
+          ],
+          [
+            "Product comparison: CH₂OH versus CN",
+            "[O,H,H] outranks [N,N,N]",
+            "CH₂OH first; CN second"
+          ],
+          [
+            "Spatial inversion plus priority interchange",
+            "Two sign changes in descriptor calculation",
+            "Product also R; not spatial retention"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1388,6 +1556,94 @@
       ],
       "answer": 0,
       "explanation": "The original covalent species and the analyzable ionic halide are different forms; controls still matter."
+    },
+    {
+      "question": "In the specified addition-limited SNAr comparison, p-nitroaryl fluoride can react faster than the chloride because:",
+      "options": [
+        "Fluoride is always the best alkyl leaving group",
+        "Its inductive effect can facilitate the rate-controlling nucleophile addition",
+        "Every C–F bond is weaker than C–Cl",
+        "A free phenyl cation is required"
+      ],
+      "answer": 1,
+      "explanation": "The rate-controlling addition stage and nitro stabilization matter; the usual alkyl SN2 leaving-group shortcut does not determine this comparison."
+    },
+    {
+      "question": "A nitro group meta rather than para to the attacked carbon in that usual SNAr intermediate comparison:",
+      "options": [
+        "Always gives stronger direct resonance stabilization",
+        "Makes the substrate an alkyl halide",
+        "Lacks the same direct resonance stabilization of the relevant intermediate",
+        "Eliminates every possible aromatic pathway"
+      ],
+      "answer": 2,
+      "explanation": "The statement concerns the standard addition-elimination activation pattern, not universal chemical inertness."
+    },
+    {
+      "question": "Intramolecular attack of ⁻O–(CH₂)₄–Br at the terminal C–Br site gives a ring containing:",
+      "options": [
+        "Four atoms because only carbon counts",
+        "Six atoms because bromine remains in the ring",
+        "Three atoms",
+        "Five atoms: oxygen and four carbons"
+      ],
+      "answer": 3,
+      "explanation": "The new O–C bond closes a five-membered ether ring; bromide leaves."
+    },
+    {
+      "question": "The organic product formula and leaving ion in that stipulated ring closure are:",
+      "options": [
+        "C₄H₈O and Br⁻",
+        "C₄H₁₀O and Br⁺",
+        "C₃H₆O and CH₃Br",
+        "C₄H₈BrO⁻ with no ion released"
+      ],
+      "answer": 0,
+      "explanation": "The alkoxide substrate C4H8BrO− becomes neutral C4H8O plus Br−, preserving atoms and total charge."
+    },
+    {
+      "question": "Ethylmagnesium bromide plus ethylene oxide followed by proton workup gives:",
+      "options": [
+        "Propan-1-ol",
+        "Butan-1-ol",
+        "Butan-2-ol",
+        "Ethanol"
+      ],
+      "answer": 1,
+      "explanation": "Two ethyl carbons and two epoxide carbons form a C4 chain with terminal OH."
+    },
+    {
+      "question": "In that product, the alcohol oxygen is supplied by:",
+      "options": [
+        "The magnesium atom",
+        "The bromide ion",
+        "The original epoxide oxygen",
+        "A new carbonyl oxygen from nowhere"
+      ],
+      "answer": 2,
+      "explanation": "Ring opening retains one epoxide C–O bond; later workup protonates the alkoxide oxygen."
+    },
+    {
+      "question": "For the stipulated product centre bearing CH₂OH, CN, CH₃ and H, the highest priority is:",
+      "options": [
+        "CN, because nitrogen always outranks oxygen",
+        "CH₃",
+        "H",
+        "CH₂OH, because [O,H,H] outranks [N,N,N]"
+      ],
+      "answer": 3,
+      "explanation": "The directly attached carbons tie; the next layer is decided by O(8)>N(7)."
+    },
+    {
+      "question": "For the specified R haloalcohol centre undergoing one backside SN2 replacement of Br by carbon-bonded CN, the product is:",
+      "options": [
+        "R despite spatial inversion, because the priority order changes",
+        "R because no spatial inversion occurred",
+        "S in every substitution regardless of priorities",
+        "Achiral because every nitrile lacks stereocentres"
+      ],
+      "answer": 0,
+      "explanation": "Actual inversion and interchange of the first two priority identities give two sign changes in the descriptor comparison. This is a local stipulated map, not an experimental-yield claim."
     }
   ]
 }

@@ -1223,7 +1223,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "hydrocarbons", subject: "Chemistry", unit: 15, number: "C12", title: hydrocarbons.title,
-    description: "Twenty-five narrated chapters on hydrocarbon additions, meso versus racemic outcomes, alkene and alkyne cleavage, reversible sulfonation, combustion gas balances and aromatic reactions.",
+    description: "Twenty-nine narrated chapters on radical product estimates, syn and anti stereochemistry, cyclic alkene cleavage, rearranged addition, combustion balances and aromatic reactions.",
     scope: "Recorded Unit 15 foundation and worked applications with original practice. Further preparation routes, polymerization mechanisms and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.hydrocarbons.lecture.v1",
     audio: "/lectures/hydrocarbons/narration-marin.mp3",
@@ -1233,7 +1233,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-halogens", subject: "Chemistry", unit: 16, number: "C13", title: organicHalogens.title,
-    description: "Twenty-five narrated chapters on halides, trans-diaxial elimination, solvent effects, silver-assisted halide tests, ionic-extract controls, Grignard chemistry and substitution stereochemistry.",
+    description: "Twenty-nine narrated chapters on halides, activated aromatic substitution, ring closure, epoxide Grignard extension, SN2 priority changes, elimination and analytical evidence.",
     scope: "Recorded Unit 16 foundation and worked applications with original practice. Full spatial mechanism drawings, further preparations, special haloarene pathways and detailed compound comparisons remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-halogens.lecture.v1",
     audio: "/lectures/organic-halogens/narration-marin.mp3",

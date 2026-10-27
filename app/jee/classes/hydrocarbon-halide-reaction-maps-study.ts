@@ -1,0 +1,22 @@
+import type {StudyLesson} from './course';
+import {hydrocarbonHalideReactionMapsAdditions as additions} from './hydrocarbon-halide-reaction-maps-additions.ts';
+const examples:Record<string,StudyLesson['examples']>={
+ hydrocarbons:[
+  {question:'In an original low-conversion propane monochlorination model, per-H primary:secondary reactivity is supplied as 1:4. Find the two constitutional-product fractions.',steps:['Propane has six equivalent primary H across its two ends and two secondary H at its central carbon.','Weights are 6×1=6 for one-chloropropane and 2×4=8 for two-chloropropane.','Normalize by total weight 14; equivalent ends do not make different constitutional products.'],answer:'One-chloropropane 3/7≈42.9%; two-chloropropane 4/7≈57.1%. The supplied per-H reactivities are condition-specific model inputs.'},
+  {question:'Compare ideal stereospecific syn hydroxylation of cis- and trans-but-2-ene under achiral equal-face conditions. Does zero optical rotation identify the product class?',steps:['Syn OH delivery to cis-but-2-ene yields opposite-configured centres in meso butane-2,3-diol.','The trans alkene yields equal (2R,3R) and (2S,3S) diols.','Meso molecular achirality and racemic cancellation can both give zero sample rotation.'],answer:'Cis→meso; trans→racemic pair under these assumptions. The map differs from anti bromination, and rotation alone does not distinguish them.'},
+  {question:'Track cyclohexene through reductive ozonolysis. How many organic product molecules arise from .0200 mol starting alkene in the stipulated quantitative map?',steps:['Remove the C1=C2 connection but retain C1–C6–C5–C4–C3–C2, the other path around the ring.','Each original alkene carbon has H and becomes an aldehyde end: OHC–(CH₂)₄–CHO.','The remaining carbon graph is still connected and contains all six carbons.'],answer:'.0200 mol hexane-1,6-dial, C6H10O2. Two carbonyl groups do not imply two separate product molecules.'}
+ ],
+ 'organic-halogens':[
+  {question:'In the stipulated intramolecular SN2 map for ⁻O–CH₂CH₂CH₂CH₂–Br, identify the new bond, ring size, product formula and charge balance.',steps:['The existing O–C1 bond and four-carbon chain are retained; form O–C4 and break C4–Br.','Ring atom count is oxygen plus four carbons=5, giving tetrahydrofuran.','C4H8BrO− becomes C4H8O plus Br−. The initial alcohol-to-alkoxide proton loss belongs to a separate step.'],answer:'A five-membered ether ring, neutral C4H8O, plus Br−. This is a specified local pathway; competing intermolecular chemistry is not excluded by the structural formula alone.'},
+  {question:'Compare ethylmagnesium bromide reacting with ethylene oxide versus formaldehyde, each followed by proton workup. Track carbon and oxygen sources.',steps:['Ethyl contributes two carbons. Ethylene oxide contributes two joined carbons and its oxygen; opening gives a C4 alkoxide.','Proton workup gives butan-1-ol; the epoxide supplied its oxygen.','Formaldehyde contributes one carbon instead, giving C3 propan-1-ol.'],answer:'Epoxide route: butan-1-ol (C4). Formaldehyde route: propan-1-ol (C3). Water before bond formation can instead quench the ethyl Grignard to ethane.'},
+  {question:'A Fischer drawing of R-HOCH₂–CH(Br)–CH₃ has CH₂OH top, Br right, CH₃ bottom and H left. For a stipulated single backside SN2 Br→CN step, assign the descriptor after rebuilding priorities.',steps:['Initial priorities: Br>CH₂OH>CH₃>H. For the product, CH₂OH outranks CN because [O,H,H]>[N,N,N].','An inverted product can be represented with CH₃ top, CN right, CH₂OH bottom and H left. The unchanged substituents have undergone an odd permutation in this Fischer representation.','Product priorities CH₂OH>CN>CH₃>H give R again: physical inversion and priority interchange each reverse one sign.'],answer:'R product despite spatial inversion. This is not retention of spatial arrangement and does not establish an exclusive experimental pathway for a real haloalcohol.'}
+ ]
+};
+export function extendHydrocarbonHalideReactionMapsLesson(lesson:StudyLesson){
+ if(!(lesson.id in additions))return;
+ const added=additions[lesson.id as keyof typeof additions];
+ lesson.sections.push(...added.chapters.map(ch=>({title:ch.title,formula:ch.formula,paragraphs:[ch.script]})));
+ lesson.examples.push(...examples[lesson.id]);
+ lesson.quiz.push(...added.quiz.map(item=>({...item,options:[...item.options]})));
+ lesson.sources.push(...added.sources.filter(source=>!lesson.sources.some(old=>old.url===source.url)));
+}

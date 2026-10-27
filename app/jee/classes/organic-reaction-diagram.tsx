@@ -1,3 +1,4 @@
+import ReactionMapDiagram from './reaction-map-diagram';
 import CombustionVolumeDiagram from './combustion-volume-diagram';
 import TransDiaxialSiteDiagram from './trans-diaxial-site-diagram';
 import hydrocarbons from "../../data/jee-hydrocarbons-lecture.json";
@@ -5,6 +6,8 @@ import organicHalogens from "../../data/jee-organic-halogens-lecture.json";
 import styles from "./lecture.module.css";
 
 export default function OrganicReactionDiagram({lesson,chapter}:{lesson:"hydrocarbons"|"organic-halogens";chapter:number}) {
+ if(lesson==='hydrocarbons'&&chapter===27)return <ReactionMapDiagram kind="cyclic"/>;
+ if(lesson==='organic-halogens'&&chapter===28)return <ReactionMapDiagram kind="sn2"/>;
  if(lesson==='hydrocarbons'&&chapter===24)return <CombustionVolumeDiagram/>;
  if(lesson==='organic-halogens'&&chapter===21)return <TransDiaxialSiteDiagram/>;
  const board=(lesson==="hydrocarbons"?hydrocarbons:organicHalogens).chapters[chapter].board;

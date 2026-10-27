@@ -73,6 +73,18 @@
     {
       "title": "OpenStax: chemical equation stoichiometry",
       "url": "https://openstax.org/books/chemistry-2e/pages/4-3-reaction-stoichiometry"
+    },
+    {
+      "title": "OpenStax: radical halogenation of alkanes",
+      "url": "https://openstax.org/books/organic-chemistry/pages/10-2-preparing-alkyl-halides-from-alkanes-radical-halogenation"
+    },
+    {
+      "title": "OpenStax: syn hydroxylation of alkenes",
+      "url": "https://openstax.org/books/organic-chemistry/pages/8-7-oxidation-of-alkenes-epoxidation-and-hydroxylation"
+    },
+    {
+      "title": "OpenStax: carbocation rearrangements in electrophilic addition",
+      "url": "https://openstax.org/books/organic-chemistry/pages/7-11-evidence-for-the-mechanism-of-electrophilic-additions-carbocation-rearrangements"
     }
   ],
   "chapters": [
@@ -956,6 +968,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Radical product proportions count sites and per-hydrogen reactivity",
+      "formula": "Propane: 6 primary H and 2 secondary H; supplied ksecondary/kprimary=4 ⇒ weights 6:8 ⇒ products 3:4",
+      "script": "The more reactive type of hydrogen does not automatically supply the product ratio by itself. Consider an original low conversion monochlorination model for propane. Its two equivalent methyl ends contain six primary hydrogens in total, and its middle carbon contains two secondary hydrogens. Suppose the supplied relative abstraction rate per secondary hydrogen is four, while that per primary hydrogen is one under the stated conditions. Multiply the number of each type of hydrogen by its per hydrogen reactivity. The primary substitution channel has weight six times one, or six. The secondary channel has weight two times four, or eight. Normalize by the total fourteen to obtain three sevenths one chloropropane and four sevenths two chloropropane, approximately forty two point nine and fifty seven point one percent. The two equivalent chain ends give the same primary constitutional product. Neither the raw six to two hydrogen count nor the bare one to four reactivity ratio is the final product ratio. The value four is supplied for this exercise, not a universal chlorination constant. Repeated substitution, changing conditions and substantial conversion can invalidate the simple two channel estimate.",
+      "points": [
+        "Propane: CH₃–CH₂–CH₃ · 6 primary H; 2 secondary H · Equivalent ends give one primary product",
+        "Supplied per-H rates: primary 1, secondary 4 · Weights=6×1 and 2×4 · 1-chloro : 2-chloro = 3:4",
+        "Normalize by 6+8=14 · Fractions 3/7 and 4/7 · Low-conversion monochlorination model"
+      ],
+      "board": {
+        "heading": "Radical product proportions count sites and per-hydrogen reactivity",
+        "columns": [
+          "Substrate / condition",
+          "Track the change",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Propane: CH₃–CH₂–CH₃",
+            "6 primary H; 2 secondary H",
+            "Equivalent ends give one primary product"
+          ],
+          [
+            "Supplied per-H rates: primary 1, secondary 4",
+            "Weights=6×1 and 2×4",
+            "1-chloro : 2-chloro = 3:4"
+          ],
+          [
+            "Normalize by 6+8=14",
+            "Fractions 3/7 and 4/7",
+            "Low-conversion monochlorination model"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Syn hydroxylation gives a different stereochemical map from anti addition",
+      "formula": "Ideal syn OH addition: cis-but-2-ene→meso butane-2,3-diol; trans→(2R,3R)+(2S,3S) under achiral conditions",
+      "script": "Two reactions that add groups to the same double bond can produce different stereochemical outcomes because their addition geometries differ. Use an ideal stereospecific syn hydroxylation of but two ene, meaning both oxygen groups are delivered from the same alkene face and then appear as adjacent hydroxyl groups after the stated workup. The carbon skeleton stays intact and the product is butane two three diol. Starting from the cis alkene gives the meso configuration, with opposite R and S centres; its alternative R S and S R labels describe the same molecule under the end to end symmetry. Starting from the trans alkene gives the R R and S S enantiomer pair when both faces react equally under achiral conditions. Compare this with the earlier anti bromination map: the stereochemical relationship is reversed. Do not transfer the word meso from one reaction to another without checking syn versus anti delivery and the actual substituents. Both a meso sample and an exactly racemic sample can have zero net optical rotation for different reasons. These statements assume the specified stereospecific pathway, an achiral environment and no later stereochemical scrambling; they are not a claim that every oxidizing condition gives an intact diol.",
+      "points": [
+        "Specified syn hydroxylation; intact C4 chain · Two OH groups delivered from one face · Butane-2,3-diol",
+        "cis-but-2-ene · Opposite R/S centres with internal symmetry · Meso diol",
+        "trans-but-2-ene; achiral equal-face reaction · (2R,3R) and (2S,3S) · Racemic pair; different from anti map"
+      ],
+      "board": {
+        "heading": "Syn hydroxylation gives a different stereochemical map from anti addition",
+        "columns": [
+          "Substrate / condition",
+          "Track the change",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Specified syn hydroxylation; intact C4 chain",
+            "Two OH groups delivered from one face",
+            "Butane-2,3-diol"
+          ],
+          [
+            "cis-but-2-ene",
+            "Opposite R/S centres with internal symmetry",
+            "Meso diol"
+          ],
+          [
+            "trans-but-2-ene; achiral equal-face reaction",
+            "(2R,3R) and (2S,3S)",
+            "Racemic pair; different from anti map"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Cleaving a cyclic double bond can leave one connected molecule",
+      "formula": "Cyclohexene + reductive ozonolysis ⇒ OHC–(CH₂)₄–CHO; one hexane-1,6-dial per ring",
+      "script": "Breaking a double bond does not always split an organic molecule into two separate molecules. Consider cyclohexene with one double bond between labelled ring carbons one and two. In reductive ozonolysis, remove the bond between those two carbons and replace each double bonded carbon by a carbonyl carbon while retaining its other original neighbours. Each alkene carbon originally bears a hydrogen, so each becomes an aldehyde end under the stated reductive workup. The remaining path through carbons three, four, five and six still connects the two former double bond carbons. The product is therefore a single six carbon chain with an aldehyde at each end: hexane one six dial, written O H C, four methylene groups, then C H O. Its formula is carbon six hydrogen ten oxygen two. One mole of the starting monocyclic alkene gives one mole of this dialdehyde in the ideal quantitative map, not two moles of three carbon aldehyde. The ring has opened, but the carbon inventory remains six. Further oxidation can convert aldehyde ends to acids, so the workup must be stated. More complicated polycyclic substrates require tracing every remaining carbon connection rather than applying a universal two fragment rule.",
+      "points": [
+        "Label cyclohexene C1=C2 · Delete that edge; keep the other ring path · All six carbons remain connected",
+        "Each alkene carbon has one H · Reductive workup gives two CHO ends · OHC–(CH₂)₄–CHO",
+        "Ideal 1 mol cyclohexene · 1 mol hexane-1,6-dial, C₆H₁₀O₂ · Ring opening need not give two molecules"
+      ],
+      "board": {
+        "heading": "Cleaving a cyclic double bond can leave one connected molecule",
+        "columns": [
+          "Substrate / condition",
+          "Track the change",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "Label cyclohexene C1=C2",
+            "Delete that edge; keep the other ring path",
+            "All six carbons remain connected"
+          ],
+          [
+            "Each alkene carbon has one H",
+            "Reductive workup gives two CHO ends",
+            "OHC–(CH₂)₄–CHO"
+          ],
+          [
+            "Ideal 1 mol cyclohexene",
+            "1 mol hexane-1,6-dial, C₆H₁₀O₂",
+            "Ring opening need not give two molecules"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "An electrophilic addition can rearrange before halide capture",
+      "formula": "CH₂=CH–CH(CH₃)–CH₃ + HCl: secondary C2 cation → 1,2-H shift → tertiary C3 cation → rearranged chloride",
+      "script": "An orientation rule for proton addition is not the last step when a carbocation can rearrange. Use three methylbut one ene with its four carbon chain labelled one through four and a methyl branch at carbon three. In a conventional ionic hydrogen chloride addition description, proton attachment at terminal carbon one leaves a secondary carbocation at carbon two. A neighbouring carbon three hydrogen can migrate with its bond pair to carbon two, moving the positive site to carbon three and giving a tertiary carbocation. Chloride capture there yields the rearranged connectivity two chloro two methylbutane after renumbering the product. Direct capture before the shift instead gives the unrearranged connectivity two chloro three methylbutane. Both retain five carbons and have formula carbon five hydrogen eleven chlorine. Their relative amounts depend on competing pathways; a stability comparison alone does not justify declaring a single quantitative product. This is a specified ionic H C l example, not the peroxide initiated hydrogen bromide chain mechanism. Track the labelled carbons through protonation, hydrogen migration and capture before renumbering the final name. The migrating hydrogen carries an electron pair; no carbon atom or free hydride reagent is inserted.",
+      "points": [
+        "3-methylbut-1-ene; ionic HCl addition · H adds C1; secondary cation at C2 · Check rearrangement before capture",
+        "C3–H bond pair migrates to C2 · Tertiary cation at original C3 · Cl capture: 2-chloro-2-methylbutane",
+        "Direct C2 capture can compete · 2-chloro-3-methylbutane · Both C₅H₁₁Cl; no yield ratio assumed"
+      ],
+      "board": {
+        "heading": "An electrophilic addition can rearrange before halide capture",
+        "columns": [
+          "Substrate / condition",
+          "Track the change",
+          "Result / limit"
+        ],
+        "rows": [
+          [
+            "3-methylbut-1-ene; ionic HCl addition",
+            "H adds C1; secondary cation at C2",
+            "Check rearrangement before capture"
+          ],
+          [
+            "C3–H bond pair migrates to C2",
+            "Tertiary cation at original C3",
+            "Cl capture: 2-chloro-2-methylbutane"
+          ],
+          [
+            "Direct C2 capture can compete",
+            "2-chloro-3-methylbutane",
+            "Both C₅H₁₁Cl; no yield ratio assumed"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1398,6 +1550,94 @@
       ],
       "answer": 3,
       "explanation": "x=60/20=3 and x+y/4=100/20=5, hence y=8."
+    },
+    {
+      "question": "For the supplied propane monochlorination model with 6 primary H, 2 secondary H and per-H rates 1:4, one-chloropropane fraction is:",
+      "options": [
+        "3/7",
+        "1/4",
+        "3/4",
+        "1/7"
+      ],
+      "answer": 0,
+      "explanation": "Site-weighted rates are 6 and 8; primary product fraction=6/(6+8)=3/7."
+    },
+    {
+      "question": "Why are the two propane ends not counted as different primary constitutional products?",
+      "options": [
+        "They have no hydrogens",
+        "They are related by the carbon-skeleton symmetry",
+        "Every chlorination is stereospecific",
+        "The secondary carbon is absent"
+      ],
+      "answer": 1,
+      "explanation": "Substitution at either equivalent methyl end gives the same one-chloropropane connectivity."
+    },
+    {
+      "question": "Ideal stereospecific syn hydroxylation of cis-but-2-ene gives:",
+      "options": [
+        "Only (2R,3R) diol",
+        "Only (2S,3S) diol",
+        "Meso butane-2,3-diol",
+        "Two disconnected aldehydes"
+      ],
+      "answer": 2,
+      "explanation": "The syn map from cis-but-2-ene produces opposite R/S centres in an internally symmetric diol."
+    },
+    {
+      "question": "The corresponding trans-but-2-ene syn hydroxylation under achiral equal-face conditions gives:",
+      "options": [
+        "Only meso diol",
+        "Only an achiral ketone",
+        "No new stereocentres",
+        "Equal (2R,3R) and (2S,3S) diols"
+      ],
+      "answer": 3,
+      "explanation": "The two alkene faces lead to the enantiomer pair. Zero sample rotation would not alone distinguish this from a meso sample."
+    },
+    {
+      "question": "Reductive ozonolysis of cyclohexene gives the principal carbon skeleton:",
+      "options": [
+        "One OHC–(CH₂)₄–CHO molecule",
+        "Two propanal molecules",
+        "One four-carbon aldehyde only",
+        "Six formaldehyde molecules"
+      ],
+      "answer": 0,
+      "explanation": "The other five ring edges keep all six carbons connected after the alkene edge is cleaved."
+    },
+    {
+      "question": "Under the stipulated quantitative reductive cleavage map, .0200 mol cyclohexene gives how much hexane-1,6-dial?",
+      "options": [
+        ".0400 mol",
+        ".0200 mol",
+        ".0100 mol",
+        ".1200 mol"
+      ],
+      "answer": 1,
+      "explanation": "One monocyclic starting molecule becomes one connected dialdehyde molecule, despite having two carbonyl groups."
+    },
+    {
+      "question": "In the supplied ionic HCl addition to 3-methylbut-1-ene, shifting H with its bond pair from original C3 toward C2 places the positive site at:",
+      "options": [
+        "Original C1",
+        "The migrating free proton",
+        "Original C3",
+        "The external chloride ion"
+      ],
+      "answer": 2,
+      "explanation": "The C3–H electron pair fills C2’s deficiency, leaving a tertiary carbocation at original C3."
+    },
+    {
+      "question": "Chloride capture at that rearranged tertiary site gives the connectivity:",
+      "options": [
+        "1-chloro-3-methylbutane",
+        "2-chloro-3-methylbutane only",
+        "Chlorobenzene",
+        "2-chloro-2-methylbutane"
+      ],
+      "answer": 3,
+      "explanation": "After capture and product renumbering, the tertiary chloride is 2-chloro-2-methylbutane; direct unrearranged capture can compete."
     }
   ]
 }
