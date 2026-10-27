@@ -16,13 +16,13 @@ test('methyl substitution preserves elemental inventory and charge', () => {
   assert.equal(lesson.quiz[8].options[lesson.quiz[8].answer], 'The C-Br bond');
 });
 test('naming and resonance questions retain unambiguous keyed answers', () => {
-  assert.equal(lesson.examples.length, 17);
-  assert.equal(lesson.quiz.length, 36);
+  assert.equal(lesson.examples.length, 20);
+  assert.equal(lesson.quiz.length, 44);
   assert.match(lesson.examples[3].answer, /3-Methylbutan-2-ol; C5H12O/);
   assert.equal(lesson.quiz[9].options[lesson.quiz[9].answer], 'CH2=CH-CH2+');
   assert.equal(lesson.quiz[11].options[lesson.quiz[11].answer], 'Moving an attached hydrogen to a different carbon');
   for (const q of lesson.quiz) assert.equal(new Set(q.options).size, 4);
-  assert.match(lesson.remaining, /twenty-one-chapter Marin recording/);
+  assert.match(lesson.remaining, /twenty-five-chapter Marin recording/);
 });
 
 test('new organic calculations preserve unsaturation, formal charge and proton-transfer direction',()=>{
@@ -36,5 +36,5 @@ test('new organic calculations preserve unsaturation, formal charge and proton-t
   assert.equal(answer(16),'+1');assert.match(answer(17),/Inductive stabilization/);
   assert.equal(answer(18),'10000');assert.equal(10**-5/10**-9,10000);
   assert.equal(10**(5-9),.0001);assert.match(answer(19),/Conformers/);
-  assert.equal(lesson.sections.length,24);assert.equal(lesson.examples.length,17);
+  assert.equal(lesson.sections.length,28);assert.equal(lesson.examples.length,20);
 });

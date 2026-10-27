@@ -41,6 +41,18 @@
     {
       "title": "American Chemical Society: atom economy and green chemistry",
       "url": "https://www.acs.org/green-chemistry-sustainability/principles/12-principles-of-green-chemistry.html"
+    },
+    {
+      "title": "IUPAC: equivalent entity and reaction-based counting",
+      "url": "https://goldbook.iupac.org/terms/view/E02192"
+    },
+    {
+      "title": "OpenStax: ideal-gas densities and molar masses",
+      "url": "https://openstax.org/books/chemistry-2e/pages/9-2-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law"
+    },
+    {
+      "title": "Colorado State University: conversion, yield and selectivity definitions",
+      "url": "https://www.engr.colostate.edu/CBE101/topics/reactor_design.html"
     }
   ],
   "chapters": [
@@ -780,6 +792,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Three isotope fractions need enough independent information",
+      "formula": "f₂₄+f₂₅+f₂₆=1; 24f₂₄+25f₂₅+26f₂₆=24.30 ⇒ f₂₅+2f₂₆=.30",
+      "script": "An average mass does not always determine every isotope abundance. Use a hypothetical element with only three isotopes, assigned integer masses twenty four, twenty five and twenty six, and supplied average twenty four point three zero atomic mass units. Their number fractions add to one. The weighted mass equation gives twenty four times the first fraction plus twenty five times the second plus twenty six times the third equal to twenty four point three zero. Subtract twenty four times the fraction sum to obtain second fraction plus twice the third equal to zero point three zero. That leaves one free choice, not a unique three isotope composition. For example, fractions zero point seven zero, zero point three zero and zero satisfy both equations, as do zero point eight five, zero and zero point one five. Now add an independent measurement that the mass twenty five isotope fraction is zero point one zero. The heavy fraction becomes zero point one zero and the light fraction zero point eight zero. All fractions must remain nonnegative. These are number fractions in a stated integer mass model, not isotope mass fractions or a claim that every real element has those exact isotopic masses.",
+      "points": [
+        "Three unknown number fractions · Sum=1; mean mass=24.30 · Only two independent constraints",
+        "f₂₅+2f₂₆=.30 · (.70,.30,0) and (.85,0,.15) both work · Mean alone is not unique",
+        "Independent f₂₅=.100 · f₂₆=.100; f₂₄=.800 · Use the additional measurement"
+      ],
+      "board": {
+        "heading": "Three isotope fractions need enough independent information",
+        "columns": [
+          "Specified model",
+          "Balance / interpretation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Three unknown number fractions",
+            "Sum=1; mean mass=24.30",
+            "Only two independent constraints"
+          ],
+          [
+            "f₂₅+2f₂₆=.30",
+            "(.70,.30,0) and (.85,0,.15) both work",
+            "Mean alone is not unique"
+          ],
+          [
+            "Independent f₂₅=.100",
+            "f₂₆=.100; f₂₄=.800",
+            "Use the additional measurement"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Equivalent concentration depends on the specified reaction",
+      "formula": "Equivalent concentration=nfactor×molarity; H₃PO₄→HPO₄²⁻ consumes 2 OH⁻ per acid molecule",
+      "script": "An equivalent amount is defined relative to a reaction, so it should not be treated as a new fixed molecular identity. In an acid base comparison, specify how many protons each acid molecule transfers at the stated stoichiometric endpoint. Phosphoric acid taken to dihydrogen phosphate consumes one hydroxide per acid molecule. Taken to hydrogen phosphate, it consumes two; taken formally to phosphate, it consumes three. A zero point one zero zero molar solution therefore corresponds to zero point one zero zero, zero point two zero zero or zero point three zero zero equivalents per litre for those respective definitions. These are often called normalities, but the underlying acid molarity has not changed merely because the selected reaction endpoint changed. Consider two hundred fifty millilitres of that acid taken to hydrogen phosphate. Acid amount is twenty five millimoles, requiring fifty millimoles hydroxide. A zero point two zero zero molar hydroxide solution supplies this in two hundred fifty millilitres. This is formal endpoint stoichiometry, not a claim that all three acid dissociations are equally strong or that every indicator detects every endpoint. Read the reaction before choosing an equivalence factor.",
+      "points": [
+        "0.100 M H₃PO₄; specified acid-base endpoint · To H₂PO₄⁻ / HPO₄²⁻ / PO₄³⁻ · 0.100 / 0.200 / 0.300 eq/L",
+        "250 mL acid; endpoint HPO₄²⁻ · nacid=.0250; nOH⁻=.0500 mol · 250 mL of .200 M hydroxide",
+        "Same formal acid molarity · Reaction definition changes nfactor · Equivalent concentration is reaction-dependent"
+      ],
+      "board": {
+        "heading": "Equivalent concentration depends on the specified reaction",
+        "columns": [
+          "Specified model",
+          "Balance / interpretation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "0.100 M H₃PO₄; specified acid-base endpoint",
+            "To H₂PO₄⁻ / HPO₄²⁻ / PO₄³⁻",
+            "0.100 / 0.200 / 0.300 eq/L"
+          ],
+          [
+            "250 mL acid; endpoint HPO₄²⁻",
+            "nacid=.0250; nOH⁻=.0500 mol",
+            "250 mL of .200 M hydroxide"
+          ],
+          [
+            "Same formal acid molarity",
+            "Reaction definition changes nfactor",
+            "Equivalent concentration is reaction-dependent"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Gas density counts the particles after dissociation",
+      "formula": "N₂O₄→2NO₂; Mmean=92/(1+α); Drelative to H₂=Mmean/2 under the stated ideal comparison",
+      "script": "Gas density can reveal a change in molecule count without any loss of mass. Consider an ideal gas initially containing only dinitrogen tetroxide, with supplied molar mass ninety two grams per mole. If fraction alpha dissociates into nitrogen dioxide, an initial amount n zero becomes n zero times one minus alpha of dinitrogen tetroxide and twice n zero alpha of nitrogen dioxide. Total gas amount is n zero times one plus alpha, so mean molar mass is ninety two divided by one plus alpha. At matched temperature and pressure, relative density compared with hydrogen gas is the molar mass ratio; use supplied hydrogen molar mass two. An observed relative density about thirty point six seven therefore corresponds to mean molar mass about sixty one point three three and dissociation fraction about one half. Starting with one hundred millimoles gives approximately fifty millimoles dimer and one hundred millimoles monomer, total one hundred fifty millimoles gas. The nitrogen dioxide mole fraction is two thirds, not one half. The original mass remains nine point two zero grams. Other gases, nonideal behaviour or changing comparison conditions would require another model.",
+      "points": [
+        "Initial .100 mol N₂O₄; α≈.500 · N₂O₄≈.0500; NO₂≈.100 mol · Total≈.150 mol; NO₂ mole fraction≈2/3",
+        "Mmean=92/(1+α) · Relative density to H₂=Mmean/2 · D≈30.67 ⇒ α≈.500",
+        "Mass before=mass after=9.20 g · More molecules, lower mean molar mass · Same T,p and ideal gases assumed"
+      ],
+      "board": {
+        "heading": "Gas density counts the particles after dissociation",
+        "columns": [
+          "Specified model",
+          "Balance / interpretation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Initial .100 mol N₂O₄; α≈.500",
+            "N₂O₄≈.0500; NO₂≈.100 mol",
+            "Total≈.150 mol; NO₂ mole fraction≈2/3"
+          ],
+          [
+            "Mmean=92/(1+α)",
+            "Relative density to H₂=Mmean/2",
+            "D≈30.67 ⇒ α≈.500"
+          ],
+          [
+            "Mass before=mass after=9.20 g",
+            "More molecules, lower mean molar mass",
+            "Same T,p and ideal gases assumed"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Conversion, selectivity and feed-based yield use different denominators",
+      "formula": "X=Areacted/Afeed; S=Bformed/Areacted; Y=Bformed/Afeed=XS for the stated 1:1 pathways",
+      "script": "A high conversion does not guarantee that every reacted molecule becomes the desired product. Use a supporting inventory model with two hypothetical one to one isomerization pathways: A forms desired B or undesired C. Feed one hundred millimoles A and observe twenty unreacted A, sixty B and twenty C. Conversion is reacted A divided by feed A: eighty percent. Define selectivity here as desired B divided by reacted A, giving sixty over eighty, or seventy five percent. Feed based desired yield is sixty over one hundred, or sixty percent. Under these stated one to one definitions, yield equals conversion times selectivity. Some contexts instead quote a desired to undesired product ratio, which here is three; always read the definition rather than assuming those numbers mean the same thing. If ninety percent of the unreacted twenty millimoles A is recovered for a new pass, eighteen can be recycled. Maintaining a one hundred millimole reactor feed then requires eighty two millimoles fresh A. Do not count the desired or undesired products as recovered unreacted reagent. Other reaction coefficients, recycle compositions or product recovery losses require expanded balances.",
+      "points": [
+        "Feed: 100 mmol A; outlet: 20 A, 60 B, 20 C · Reacted A=80 mmol · Conversion=80%",
+        "Define S=B/reacted A; Y=B/feed A · S=60/80=75%; Y=60/100=60% · Here Y=XS; other selectivity definitions exist",
+        "Recover 90% of unreacted 20 mmol A · Recycle=18; fresh=100−18 · Fresh makeup=82 mmol A"
+      ],
+      "board": {
+        "heading": "Conversion, selectivity and feed-based yield use different denominators",
+        "columns": [
+          "Specified model",
+          "Balance / interpretation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Feed: 100 mmol A; outlet: 20 A, 60 B, 20 C",
+            "Reacted A=80 mmol",
+            "Conversion=80%"
+          ],
+          [
+            "Define S=B/reacted A; Y=B/feed A",
+            "S=60/80=75%; Y=60/100=60%",
+            "Here Y=XS; other selectivity definitions exist"
+          ],
+          [
+            "Recover 90% of unreacted 20 mmol A",
+            "Recycle=18; fresh=100−18",
+            "Fresh makeup=82 mmol A"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1134,6 +1286,94 @@
       ],
       "answer": 3,
       "explanation": "Isolated yield applies to theoretical product: 0.800×88.0=70.4 g; it is distinct from atom economy."
+    },
+    {
+      "question": "A hypothetical three-isotope element has only masses 24, 25 and 26 and mean mass 24.30. With only the fraction sum and mean mass known, its isotope fractions are:",
+      "options": [
+        "Not uniquely determined",
+        "Necessarily all equal",
+        "Necessarily .800, .100, .100",
+        "Impossible because the mean is not an integer"
+      ],
+      "answer": 0,
+      "explanation": "Three fractions and only two independent constraints leave one degree of freedom, subject to nonnegative fractions."
+    },
+    {
+      "question": "If the mass-25 number fraction is independently .100 in that integer-mass model, fractions for masses 24, 25 and 26 are:",
+      "options": [
+        ".700, .100, .200",
+        ".800, .100, .100",
+        ".850, .100, .050",
+        ".100, .800, .100"
+      ],
+      "answer": 1,
+      "explanation": "The mean condition gives f25+2f26=.30; .100+2f26=.30 gives f26=.100 and f24=.800."
+    },
+    {
+      "question": "For .100 M H₃PO₄ formally neutralized to HPO₄²⁻, equivalent concentration for that reaction is:",
+      "options": [
+        ".100 eq/L",
+        ".300 eq/L",
+        ".200 eq/L",
+        ".0500 eq/L"
+      ],
+      "answer": 2,
+      "explanation": "Two protons are removed per acid molecule at this specified endpoint, so nfactor=2 and equivalent concentration=2×.100."
+    },
+    {
+      "question": "A 250 mL .100 M H₃PO₄ sample is taken to HPO₄²⁻. Volume of .200 M hydroxide needed by the specified stoichiometry is:",
+      "options": [
+        "125 mL",
+        "375 mL",
+        "500 mL",
+        "250 mL"
+      ],
+      "answer": 3,
+      "explanation": "Acid=.250×.100=.0250 mol; hydroxide=2×.0250=.0500 mol, requiring .0500/.200=.250 L."
+    },
+    {
+      "question": "Initially pure N₂O₄ gas (M=92 g/mol) has observed ideal relative density to H₂ about 30.67 at matched T,p (MH₂=2 g/mol). Dissociation fraction α is approximately:",
+      "options": [
+        ".500",
+        ".333",
+        ".667",
+        "1.00"
+      ],
+      "answer": 0,
+      "explanation": "Mmean≈2×30.67≈61.34 g/mol, and α=92/Mmean−1≈.500; density counts final gas particles."
+    },
+    {
+      "question": "From .100 mol initial N₂O₄ at α=.500 in N₂O₄→2NO₂, total final gas amount is:",
+      "options": [
+        ".100 mol",
+        ".150 mol",
+        ".0500 mol",
+        ".200 mol"
+      ],
+      "answer": 1,
+      "explanation": "Remaining dimer=.0500 mol and formed monomer=.100 mol; total=n0(1+α)=.150 mol."
+    },
+    {
+      "question": "In the stated 1:1 pathways, 100 mmol feed A gives 20 A unreacted, 60 desired B and 20 C. Selectivity defined as B/reacted A and feed-based B yield are:",
+      "options": [
+        "60% and 75%",
+        "80% and 60%",
+        "75% and 60%",
+        "75% and 80%"
+      ],
+      "answer": 2,
+      "explanation": "Reacted A=80; S=60/80=.75 while Y=60/100=.60. Conversion is the separate 80% value."
+    },
+    {
+      "question": "Recovering 90% of that unreacted 20 mmol A supplies how much fresh A makeup to maintain a 100 mmol next-pass reactor feed?",
+      "options": [
+        "18 mmol",
+        "20 mmol",
+        "80 mmol",
+        "82 mmol"
+      ],
+      "answer": 3,
+      "explanation": "Recovered A=.90×20=18 mmol; fresh makeup=100−18=82 mmol in this stipulated pure-recycle model."
     }
   ]
 }

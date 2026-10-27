@@ -1113,7 +1113,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-principles", subject: "Chemistry", unit: 14, number: "C01", title: organicPrinciples.title,
-    description: "Twenty-one narrated chapters on naming, CIP ties, meso compounds, butane conformations, isomer counting, R/S and E/Z, electron arrows and acidity.",
+    description: "Twenty-five narrated chapters on organic principles, aromaticity, hydride shifts, Fischer transformations, cis/E–Z comparisons, stereochemistry, naming and acidity.",
     scope: "Recorded Unit 14 foundation and worked applications with original practice. Full CIP tie-breaking, multiple-centre stereochemistry, additional solvent datasets and mechanisms remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-principles.lecture.v1",
     audio: "/lectures/organic-principles/narration-marin.mp3",
@@ -1203,7 +1203,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "mole-concept", subject: "Chemistry", unit: 1, number: "C10", title: moleConcept.title,
-    description: "Twenty-one narrated chapters on mole calculations, trace concentrations, gas fractions, precipitation, atom economy, hydrates, mixtures and reaction yields.",
+    description: "Twenty-five narrated chapters on mole calculations, isotope constraints, reaction-defined equivalents, dissociation density, conversion, selectivity and reaction balances.",
     scope: "Recorded Unit 1 foundation with original practice. Further multi-step reaction networks and additional experimental datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.mole-concept.lecture.v1",
     audio: "/lectures/mole-concept/narration-marin.mp3",

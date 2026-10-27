@@ -5,10 +5,10 @@ import { chemistryCoreLessons as lessons } from '../app/jee/classes/chemistry-co
 test('new Chemistry foundations map to official units and distinguish written scope from recordings', () => {
   assert.deepEqual(lessons.map(l => l.unit), [8, 12, 14]);
   for (const l of lessons) {
-    assert.equal(l.sections.length, l.id === 'organic-principles' ? 24 : 25);
-    assert.equal(l.examples.length, l.id === 'organic-principles' ? 17 : 19);
-    assert.equal(l.quiz.length, l.id === 'organic-principles' ? 36 : 42);
-    assert.match(l.remaining, l.id === 'organic-principles' ? /twenty-one-chapter Marin recording/ : /twenty-two-chapter Marin recording/);
+    assert.equal(l.sections.length, l.id === 'organic-principles' ? 28 : 25);
+    assert.equal(l.examples.length, l.id === 'organic-principles' ? 20 : 19);
+    assert.equal(l.quiz.length, l.id === 'organic-principles' ? 44 : 42);
+    assert.match(l.remaining, l.id === 'organic-principles' ? /twenty-five-chapter Marin recording/ : /twenty-two-chapter Marin recording/);
   }
 });
 test('initial-rate orders, first-order times and Arrhenius example agree independently', () => {

@@ -16,7 +16,7 @@ Questions are original practice, not represented as official PYQs.
 
 | Unit | Recorded class | Chapters | Written sections | Worked examples | Class MCQs / Written MCQs |
 | --- | --- | --- | --- | --- | --- |
-| 1 | [Mole Concept](/jee/classes/mole-concept) | 21 | 18 | 12 | 32 / 32 |
+| 1 | [Mole Concept](/jee/classes/mole-concept) | 25 | 22 | 15 | 40 / 40 |
 | 2 | [Atomic Structure](/jee/classes/atomic-structure) | 25 | 22 | 15 | 42 / 42 |
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 25 | 24 | 15 | 42 / 42 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 27 | 29 | 18 | 42 / 42 |
@@ -29,7 +29,7 @@ Questions are original practice, not represented as official PYQs.
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 27 | 25 | 15 | 42 / 42 |
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 22 | 25 | 19 | 42 / 42 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 25 | 25 | 15 | 40 / 40 |
-| 14 | [Organic Principles](/jee/classes/organic-principles) | 21 | 24 | 17 | 36 / 36 |
+| 14 | [Organic Principles](/jee/classes/organic-principles) | 25 | 28 | 20 | 44 / 44 |
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 25 | 25 | 15 | 40 / 40 |
 | 16 | [Organic Halogens](/jee/classes/organic-halogens) | 25 | 25 | 15 | 40 / 40 |
 | 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 27 | 25 | 15 | 40 / 40 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-P-Block adds phase-dependent phosphorus pentachloride species, two chlorine disproportionation ledgers, donor-specific Lewis-adduct enthalpy comparisons and ideal silicate oxygen-sharing counts. The silicate diagram is a connectivity graph, not a planar molecular geometry.
+Mole Concept adds three-isotope identifiability, reaction-dependent equivalent concentration, dimer dissociation inferred from gas density and supporting conversion/selectivity/recycle balances. The selectivity denominator is explicitly defined rather than assumed universal.
 
-D/F-Block adds linked dichromate iodometry, acidic permanganate–oxalate stoichiometry and autocatalysis, cerium/europium redox and supporting density/molar-volume comparisons. Indirect assay conditions and original numerical datasets are explicit.
+Organic Principles adds structural conditions for simple Hückel aromaticity, a conserved-atom hydride-shift map, Fischer transformation rules and a substituted-alkene cis/E–Z counterexample. The three Fischer drawings are checked with signed 3D tetrahedral orientation under the stated projection convention.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax phosphorus/silicate and transition-metal teaching, Purdue halogen chemistry, primary boron-adduct and permanganate–oxalate studies, CSU Dominguez Hills iodometry notes and IChO preparatory analysis problems. Numerical datasets and MCQs in this batch are original practice.
+The notes reference OpenStax isotope/gas and organic-stereochemistry teaching, the IUPAC equivalent-entity definition and Colorado State University’s process-balance definitions. Numerical datasets and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

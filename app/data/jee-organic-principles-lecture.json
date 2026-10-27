@@ -69,6 +69,26 @@
     {
       "title": "OpenStax: naming ethers",
       "url": "https://openstax.org/books/organic-chemistry/pages/18-1-names-and-properties-of-ethers"
+    },
+    {
+      "title": "OpenStax Organic Chemistry: Hückel aromaticity conditions",
+      "url": "https://openstax.org/books/organic-chemistry/pages/15-3-aromaticity-and-the-huckel-4n-2-rule"
+    },
+    {
+      "title": "OpenStax Organic Chemistry: aromatic ions and lone-pair counting",
+      "url": "https://openstax.org/books/organic-chemistry/pages/15-4-aromatic-ions"
+    },
+    {
+      "title": "OpenStax Organic Chemistry: carbocation rearrangements",
+      "url": "https://openstax.org/books/organic-chemistry/pages/7-11-evidence-for-the-mechanism-of-electrophilic-additions-carbocation-rearrangements"
+    },
+    {
+      "title": "OpenStax Organic Chemistry: Fischer projection transformations",
+      "url": "https://openstax.org/books/organic-chemistry/pages/25-2-representing-carbohydrate-stereochemistry-fischer-projections"
+    },
+    {
+      "title": "OpenStax Organic Chemistry: E/Z sequence rules",
+      "url": "https://openstax.org/books/organic-chemistry/pages/7-5-alkene-stereochemistry-and-the-e-z-designation"
     }
   ],
   "chapters": [
@@ -681,6 +701,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Aromaticity needs a continuous ring before an electron count",
+      "formula": "Simple Hückel model: cyclic, planar, fully conjugated; aromatic 4n+2 π electrons; planar closed-shell 4n model antiaromatic",
+      "script": "An electron count is useful only after the structural conditions for cyclic conjugation are checked. In the simple Hückel treatment, an aromatic ring has suitable overlapping p orbitals around a planar cycle and four n plus two pi electrons, with n a nonnegative integer. Benzene has six pi electrons. The cyclopentadienyl anion also has six: two double bonds contribute four and the appropriately oriented lone pair at the negatively charged carbon contributes two. The corresponding neutral cyclopentadiene has a saturated carbon interrupting the continuous p orbital ring, so the same aromatic description does not apply. A planar fully conjugated closed shell four n electron model is antiaromatic, but a molecule can avoid that geometry. Cyclooctatetraene has eight pi electrons yet normally adopts a nonplanar tub form and is classified as nonaromatic in this introductory comparison. Do not label every eight electron ring antiaromatic without checking its shape and orbital continuity. A negative charge is not itself an aromaticity label, and aromatic does not mean every bond is an isolated alternating single or double bond. This chapter treats simple ring models; fused systems and advanced excited state rules require additional analysis.",
+      "points": [
+        "Benzene; cyclopentadienyl anion · 6 π; anion count=4+2 · Aromatic in the stated simple model",
+        "Neutral cyclopentadiene · Saturated carbon interrupts cyclic p overlap · Not aromatic",
+        "Cyclooctatetraene: 8 π, nonplanar tub · 4n count alone is insufficient · Normally nonaromatic, not planar antiaromatic"
+      ],
+      "board": {
+        "heading": "Aromaticity needs a continuous ring before an electron count",
+        "columns": [
+          "Specified model",
+          "Balance / interpretation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Benzene; cyclopentadienyl anion",
+            "6 π; anion count=4+2",
+            "Aromatic in the stated simple model"
+          ],
+          [
+            "Neutral cyclopentadiene",
+            "Saturated carbon interrupts cyclic p overlap",
+            "Not aromatic"
+          ],
+          [
+            "Cyclooctatetraene: 8 π, nonplanar tub",
+            "4n count alone is insufficient",
+            "Normally nonaromatic, not planar antiaromatic"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A hydride shift moves a bond pair and the positive site",
+      "formula": "CH₃–CH⁺–CH(CH₃)–CH₃ → CH₃–CH₂–C⁺(CH₃)–CH₃; C3–H pair shifts to C2",
+      "script": "A carbocation rearrangement is electron pair movement, not a hydrogen nucleus jumping independently of electrons. Label a five carbon example as a four carbon chain C one through C four, with a methyl branch C five attached at C three. Begin with the positive charge at C two and one hydrogen on C three. The initial carbon two cation is secondary. In the stated one two hydride shift, the C three hydrogen bond pair moves toward the electron deficient C two site, making a new C two hydrogen bond. Carbon two becomes a neutral methylene group, while carbon three becomes the positive tertiary carbon. The formula remains carbon five hydrogen eleven with overall charge plus one. No carbon has left, no new hydrogen reagent was added, and the migrating hydrogen does not appear as a free hydride ion in solution in this description. The curved arrow begins at the original C three hydrogen bond, not at the positive charge. Such a path can lead to a more stabilized cation when geometry and kinetics permit, but a stability ranking alone does not prove every substrate rearranges. The supplied local step does not specify the final nucleophile capture product or a complete reaction mechanism.",
+      "points": [
+        "Initial charge C2; H attached at C3 · Arrow from C3–H bond pair to C2 · Migrating H retains its electron pair",
+        "After shift: C2 is CH₂; C3 bears + · Secondary cation → tertiary cation · Five-carbon connectivity retained",
+        "Before and after: C₅H₁₁⁺ · Same atoms; same total charge · No free hydride reagent is implied"
+      ],
+      "board": {
+        "heading": "A hydride shift moves a bond pair and the positive site",
+        "columns": [
+          "Specified model",
+          "Balance / interpretation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Initial charge C2; H attached at C3",
+            "Arrow from C3–H bond pair to C2",
+            "Migrating H retains its electron pair"
+          ],
+          [
+            "After shift: C2 is CH₂; C3 bears +",
+            "Secondary cation → tertiary cation",
+            "Five-carbon connectivity retained"
+          ],
+          [
+            "Before and after: C₅H₁₁⁺",
+            "Same atoms; same total charge",
+            "No free hydride reagent is implied"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A Fischer redraw needs the projection conventions preserved",
+      "formula": "Horizontal bonds toward viewer; vertical bonds away; 180° page rotation preserves configuration, 90° reinterpretation inverts one centre",
+      "script": "A Fischer projection encodes three dimensional bond directions, so manipulating its cross is not arbitrary artwork. Horizontal bonds point toward the viewer and vertical bonds away. Consider glyceraldehyde drawn with aldehyde at the top, hydroxymethyl below, hydroxyl at the right and hydrogen at the left. Priorities are hydroxyl first, aldehyde second, hydroxymethyl third and hydrogen fourth. The carbon substituents tie initially, but the aldehyde comparison list oxygen oxygen hydrogen outranks oxygen hydrogen hydrogen. Applying the toward viewer correction for the horizontal hydrogen gives R for this drawing. Rotating the whole Fischer drawing on the page by one hundred eighty degrees preserves that configuration. Rotating its labels by ninety degrees and interpreting the resulting cross afresh with horizontal bonds toward and vertical bonds away instead represents the opposite single centre configuration. That is a changed projection interpretation, not a claim that physically turning a molecule in space changes its handedness. Interchanging one pair of substituents likewise inverts a single tetrahedral centre, while two pair exchanges preserve it. R and S still do not determine the measured sign of optical rotation. Use these rules for the stated single centre rather than assuming every multi centre manipulation has the same net effect.",
+      "points": [
+        "CHO top; CH₂OH bottom; OH right; H left · CIP: OH > CHO > CH₂OH > H · Original Fischer drawing is R",
+        "Rotate page drawing by 180° · Horizontal/vertical direction classes retained · Same R configuration",
+        "90° label rotation; reinterpret as Fischer · Horizontal and vertical direction classes exchange · Opposite single-centre configuration"
+      ],
+      "board": {
+        "heading": "A Fischer redraw needs the projection conventions preserved",
+        "columns": [
+          "Specified model",
+          "Balance / interpretation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "CHO top; CH₂OH bottom; OH right; H left",
+            "CIP: OH > CHO > CH₂OH > H",
+            "Original Fischer drawing is R"
+          ],
+          [
+            "Rotate page drawing by 180°",
+            "Horizontal/vertical direction classes retained",
+            "Same R configuration"
+          ],
+          [
+            "90° label rotation; reinterpret as Fischer",
+            "Horizontal and vertical direction classes exchange",
+            "Opposite single-centre configuration"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A cis pair can correspond to E when priorities choose other groups",
+      "formula": "cis-2-bromobut-2-ene relative to CH₃ groups is E; trans relative to CH₃ groups is Z",
+      "script": "Cis and trans describe chosen relative groups, whereas E and Z compare the higher priority substituent at each alkene carbon. Use two bromo but two ene, with a methyl and bromine on carbon two, and a methyl and hydrogen on carbon three. Each double bond carbon has two different substituents, so E and Z are defined. Bromine outranks the methyl carbon on the left, while the methyl carbon outranks hydrogen on the right. Now draw the two methyl groups on the same side of the double bond. They are cis relative to one another, but the priority groups bromine and the other methyl are on opposite sides, giving E. Putting the methyl groups opposite makes that relative description trans, while the two higher priority groups are now together, giving Z. Nothing about the double bond changed except the chosen geometrical arrangement; the descriptor systems answer different comparisons. This example does not make cis universally equal to E either. For but two ene, methyl groups are the higher priority pair and cis corresponds to Z. If one alkene carbon bears identical groups, the starting condition fails and neither E nor Z can be assigned to that ordinary double bond.",
+      "points": [
+        "2-Bromobut-2-ene priorities · At C2: Br>CH₃; at C3: CH₃>H · Choose priority independently at each end",
+        "CH₃ groups same side: relative cis · Br and other CH₃ opposite · E",
+        "CH₃ groups opposite: relative trans · Br and other CH₃ same side · Z; not a universal cis/E rule"
+      ],
+      "board": {
+        "heading": "A cis pair can correspond to E when priorities choose other groups",
+        "columns": [
+          "Specified model",
+          "Balance / interpretation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "2-Bromobut-2-ene priorities",
+            "At C2: Br>CH₃; at C3: CH₃>H",
+            "Choose priority independently at each end"
+          ],
+          [
+            "CH₃ groups same side: relative cis",
+            "Br and other CH₃ opposite",
+            "E"
+          ],
+          [
+            "CH₃ groups opposite: relative trans",
+            "Br and other CH₃ same side",
+            "Z; not a universal cis/E rule"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1079,6 +1239,94 @@
       ],
       "answer": 0,
       "explanation": "Only butan-2-ol in the stated set has a stereogenic centre, replacing one connectivity by two enantiomeric forms."
+    },
+    {
+      "question": "In the simple planar conjugated model, cyclopentadienyl anion π electron count and classification are:",
+      "options": [
+        "4, necessarily nonaromatic",
+        "5, aromatic",
+        "6, aromatic",
+        "8, antiaromatic"
+      ],
+      "answer": 2,
+      "explanation": "Two double bonds supply four π electrons and the appropriately oriented anionic lone pair supplies two, making six in the continuous ring."
+    },
+    {
+      "question": "Why is ordinary cyclooctatetraene not automatically called antiaromatic simply from its eight π electrons?",
+      "options": [
+        "Every ring is aromatic",
+        "A negative charge is always required for antiaromaticity",
+        "Electron count never matters",
+        "Its nonplanar tub geometry avoids the continuous planar overlap required by that simple antiaromatic model"
+      ],
+      "answer": 3,
+      "explanation": "Check cyclic conjugation and geometry before applying a 4n count; ordinary cyclooctatetraene is nonaromatic in this comparison."
+    },
+    {
+      "question": "In the supplied CH₃–CH⁺–CH(CH₃)–CH₃ hydride shift from C3 toward C2, the new positive site is:",
+      "options": [
+        "C3",
+        "C2 with no other change",
+        "The migrating free hydrogen ion only",
+        "An external solvent carbon"
+      ],
+      "answer": 0,
+      "explanation": "The C3–H bond pair forms a new C2–H bond, filling C2’s electron deficiency and leaving the positive site at C3."
+    },
+    {
+      "question": "The curved arrow for that elementary local hydride-shift description begins at:",
+      "options": [
+        "The positive charge on C2",
+        "The C3–H sigma-bond electron pair",
+        "A free proton from nowhere",
+        "A carbon nucleus"
+      ],
+      "answer": 1,
+      "explanation": "A full-headed curved arrow tracks an electron pair; here it starts at the migrating C3–H bond and ends at the C2 site."
+    },
+    {
+      "question": "For the stated single-centre Fischer drawing, a 180° rotation of the complete drawing in the page gives:",
+      "options": [
+        "The enantiomer in every case",
+        "A molecule with no stereocentre",
+        "The same configuration",
+        "A changed molecular formula"
+      ],
+      "answer": 2,
+      "explanation": "A 180° page rotation retains horizontal/toward and vertical/away bond direction classes and preserves the single-centre configuration."
+    },
+    {
+      "question": "Rotating a single-centre Fischer cross’s labels by 90° and then applying the Fischer horizontal/toward and vertical/away convention afresh represents:",
+      "options": [
+        "The same configuration merely because the paper moved",
+        "A resonance contributor",
+        "A change from R to positive optical rotation",
+        "The opposite configuration at that centre"
+      ],
+      "answer": 3,
+      "explanation": "The reinterpretation exchanges the direction classes; it is not equivalent to an ordinary physical rotation of the original molecule."
+    },
+    {
+      "question": "For 2-bromobut-2-ene with the two CH₃ groups on the same side (relative cis), its E/Z descriptor is:",
+      "options": [
+        "E",
+        "Z",
+        "Neither, because bromine prevents geometric isomerism",
+        "R"
+      ],
+      "answer": 0,
+      "explanation": "Br has priority over CH₃ at C2, while CH₃ outranks H at C3; these priority groups lie on opposite sides in the stated cis-methyl drawing."
+    },
+    {
+      "question": "For the same alkene with the two CH₃ groups on opposite sides (relative trans), its E/Z descriptor is:",
+      "options": [
+        "E",
+        "Z",
+        "S",
+        "Undefined because every trans drawing lacks E/Z"
+      ],
+      "answer": 1,
+      "explanation": "Switching to trans methyl groups places Br and the higher-priority methyl on the same side, giving Z for this particular substitution pattern."
     }
   ]
 }
