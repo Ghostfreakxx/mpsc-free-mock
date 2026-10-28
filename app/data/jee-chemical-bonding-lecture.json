@@ -57,6 +57,18 @@
     {
       "title": "OpenStax Chemistry: nitrogen dioxide and dimerization",
       "url": "https://openstax.org/books/chemistry-2e/pages/18-7-occurrence-preparation-and-properties-of-nitrogen"
+    },
+    {
+      "title": "OpenStax: resonance and fixed nuclear arrangements",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-4-formal-charges-and-resonance"
+    },
+    {
+      "title": "Frank Rioux: XeF2 molecular-orbital model",
+      "url": "https://www.users.csbsju.edu/~frioux/c60/XEF2MOT.pdf"
+    },
+    {
+      "title": "Chemistry LibreTexts: Group3A multicentre bonding",
+      "url": "https://chem.libretexts.org/@api/deki/pages/89551/pdf/18.5%253A%2BGroup%2B3A%2BElements.pdf"
     }
   ],
   "chapters": [
@@ -936,6 +948,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Orbital interference concerns phase rather than electric charge",
+      "formula": "Qualitative1s combinations: ψbonding∝φA+φB; ψantibonding∝φA−φB; midpoint cancellation creates an internuclear node",
+      "script": "Molecular orbital construction combines wavefunctions, not coloured electric charges. Take two same phase one s atomic orbitals on equivalent centres in a qualitative diatomic model. Their sum reinforces amplitude between the nuclei and forms the usual lower energy bonding combination. Their difference cancels at the symmetry midpoint and creates a nodal plane between the nuclei in the antibonding combination. The sign of a wavefunction lobe indicates phase, not a positive or negative cloud of electron charge. Probability density is proportional to the squared magnitude of the combined wavefunction, so its interference term matters. An overall change of sign leaves the probability density unchanged; a relative sign change between the two contributions can change the interference. Proper normalization and overlap are needed for quantitative calculations, so the simple plus and minus drawings are not complete numerical wavefunctions. Two atomic basis functions generate two molecular orbital combinations in this model. Filling bonding or antibonding orbitals then affects the energy and formal bond order, rather than the act of drawing two overlapping circles proving a bond. The phase and nodal description explains the origin of the familiar bonding and antibonding labels.",
+      "points": [
+        "Two same-phase1s basis functions · Sum reinforces; difference cancels at midpoint · Bonding and antibonding combinations",
+        "Lobe sign means wavefunction phase · Density=|ψ|², not signed electron charge · Relative phase changes interference",
+        "Antibonding combination has an internuclear node · Two basis functions give two combinations · Normalization needed for quantitative density"
+      ],
+      "board": {
+        "heading": "Orbital interference concerns phase rather than electric charge",
+        "columns": [
+          "Model / given",
+          "Count / interpretation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Two same-phase1s basis functions",
+            "Sum reinforces; difference cancels at midpoint",
+            "Bonding and antibonding combinations"
+          ],
+          [
+            "Lobe sign means wavefunction phase",
+            "Density=|ψ|², not signed electron charge",
+            "Relative phase changes interference"
+          ],
+          [
+            "Antibonding combination has an internuclear node",
+            "Two basis functions give two combinations",
+            "Normalization needed for quantitative density"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Diborane bridges cannot all be ordinary two-centre electron pairs",
+      "formula": "B₂H₆ has12 valence electrons: four terminal B–H bonds use8; two B–H–B bridges use2 electrons each",
+      "script": "An electron deficient molecule can require a bonding description beyond ordinary two centre electron pairs. Diborane has two boron atoms and six hydrogens, giving twelve valence electrons in total. Four terminal boron hydrogen bonds can be counted as four ordinary two centre two electron bonds, using eight electrons. The remaining four electrons occupy two bridging boron hydrogen boron bonding units, with two electrons shared over three centres in each bridge. The two bridging hydrogens are distinct from the four terminal hydrogens. Counting each of the four bridge contacts as its own conventional two electron bond would require eight bridge electrons instead of the four available. The three centre description fixes that electron inventory problem without inserting an extra ordinary boron boron bond into the elementary ledger. It does not assign a full measured bond order or identical bond length to every terminal and bridging contact. The shape of a bridge and the distribution of its electron pair require molecular orbital reasoning. This selected compound illustrates electron deficiency and the limits of a universal octet shortcut; it is not a claim that every boron hydride has the same bridge pattern.",
+      "points": [
+        "Valence count:2×3+6×1=12 · Four terminal B–H pairs use8 electrons · Four electrons remain",
+        "Two B–H–B bridging units · Each is three-centre two-electron · Two bridging H; four terminal H",
+        "Four separate ordinary bridge-contact pairs need8 e⁻ · Only4 bridge electrons are available · Do not add an extra ordinary B–B pair"
+      ],
+      "board": {
+        "heading": "Diborane bridges cannot all be ordinary two-centre electron pairs",
+        "columns": [
+          "Model / given",
+          "Count / interpretation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Valence count:2×3+6×1=12",
+            "Four terminal B–H pairs use8 electrons",
+            "Four electrons remain"
+          ],
+          [
+            "Two B–H–B bridging units",
+            "Each is three-centre two-electron",
+            "Two bridging H; four terminal H"
+          ],
+          [
+            "Four separate ordinary bridge-contact pairs need8 e⁻",
+            "Only4 bridge electrons are available",
+            "Do not add an extra ordinary B–B pair"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting XeF2 model fills a three-centre four-electron system",
+      "formula": "Axial F–Xe–F subset: bonding² nonbonding² antibonding⁰; formal total bond order1 spread over two equivalent links",
+      "script": "A three centre bonding model can be electron rich rather than electron deficient. For a supporting qualitative description of linear xenon difluoride, consider the axial fluorine xenon fluorine orbital subset. Three appropriately oriented basis orbitals combine into bonding, nonbonding and antibonding molecular orbitals. Four electrons in this subset occupy the bonding level as a pair and the nonbonding level as another pair, leaving the antibonding level empty. This differs from a three centre two electron bridge, where only the bonding level is filled. In the ideal symmetric bookkeeping model, two bonding electrons and no antibonding electrons correspond to one total formal bond order distributed across two equivalent xenon fluorine links, often described as one half per link. That is a simplified model quantity, not a direct claim of an exactly measured half bond. The xenon five s lone pair, its two other p lone pairs and the remaining ligand electrons lie outside this chosen axial subset. The model explains why useful hypervalent bonding descriptions need not rely on large xenon d orbital participation. Geometry and a Lewis electron domain picture can still be discussed separately. These three energy levels are qualitative; real heteronuclear orbital energies and mixing are not equal by assumption.",
+      "points": [
+        "Axial F–Xe–F subset · Three basis orbitals; three combinations · Bonding, nonbonding, antibonding",
+        "Four subset electrons · Occupancy2,2,0 · Not the same filling as a3c2e bridge",
+        "Formal total bond order=(2−0)/2=1 · Symmetric elementary model:½ per link · Qualitative model, not measured exact bond orders"
+      ],
+      "board": {
+        "heading": "Supporting XeF2 model fills a three-centre four-electron system",
+        "columns": [
+          "Model / given",
+          "Count / interpretation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Axial F–Xe–F subset",
+            "Three basis orbitals; three combinations",
+            "Bonding, nonbonding, antibonding"
+          ],
+          [
+            "Four subset electrons",
+            "Occupancy2,2,0",
+            "Not the same filling as a3c2e bridge"
+          ],
+          [
+            "Formal total bond order=(2−0)/2=1",
+            "Symmetric elementary model:½ per link",
+            "Qualitative model, not measured exact bond orders"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Protonating carbonate changes which oxygen sites are equivalent",
+      "formula": "CO₃²⁻: three equivalent C–O bonds in the simple resonance model; HCO₃⁻: keep H fixed, two main non-OH contributors",
+      "script": "Resonance contributors preserve the positions and connections of nuclei. In carbonate, three symmetry related oxygen sites permit three equivalent major Lewis contributors with the carbon oxygen double bond placed at each site in turn. The simple equal contributor average gives formal bond order four thirds for each carbon oxygen link. Now attach a proton to a particular oxygen to describe hydrogen carbonate. That oxygen is the hydroxyl site, and moving the proton to another oxygen would change a nuclear connection rather than draw a resonance contributor of the same fixed structure. In the usual dominant contributor model, the double bond and negative charge are delocalized over the two nonhydroxyl oxygens. Their formal averaged bond orders are one point five each, while the hydroxyl carbon oxygen bond is represented as one. Minor charge separated contributors and the environment can change the quantitative description, so these fractions are teaching model averages rather than exact measured bond lengths. Carbonate and hydrogen carbonate are also different protonation states with different total charges. Keep proton transfer, resonance electron movement and the symmetry of the actual fixed nuclear framework separate before claiming that every oxygen bond must be equivalent.",
+      "points": [
+        "CO₃²⁻: three equivalent major contributors · One double+two single C–O bonds each · Equal average4/3 on each link",
+        "HCO₃⁻: H fixed on one oxygen · Two dominant non-OH resonance contributors · Non-OH averages1.5; OH link1",
+        "Moving H changes a nuclear connection · Not resonance of one fixed structure · Formal averages are not exact measured lengths"
+      ],
+      "board": {
+        "heading": "Protonating carbonate changes which oxygen sites are equivalent",
+        "columns": [
+          "Model / given",
+          "Count / interpretation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "CO₃²⁻: three equivalent major contributors",
+            "One double+two single C–O bonds each",
+            "Equal average4/3 on each link"
+          ],
+          [
+            "HCO₃⁻: H fixed on one oxygen",
+            "Two dominant non-OH resonance contributors",
+            "Non-OH averages1.5; OH link1"
+          ],
+          [
+            "Moving H changes a nuclear connection",
+            "Not resonance of one fixed structure",
+            "Formal averages are not exact measured lengths"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1400,6 +1552,94 @@
       ],
       "answer": 1,
       "explanation": "Opposed unequal vectors subtract in magnitude. Opposite placement alone does not establish cancellation."
+    },
+    {
+      "question": "The plus/minus signs on atomic orbital lobes represent:",
+      "options": [
+        "Positive and negative electron charges",
+        "Wavefunction phase",
+        "Different proton numbers",
+        "The number of nuclei"
+      ],
+      "answer": 1,
+      "explanation": "Electron charge does not switch sign between lobes; interference depends on relative wavefunction phase."
+    },
+    {
+      "question": "For equivalent same-phase1s orbitals, the difference combination has at the symmetry midpoint:",
+      "options": [
+        "Twice the electron charge",
+        "A third nucleus",
+        "Cancellation and a node",
+        "No relation to wavefunctions"
+      ],
+      "answer": 2,
+      "explanation": "At the midpoint the two amplitudes are equal; their difference is zero in the stated model."
+    },
+    {
+      "question": "In the elementary B₂H₆ valence ledger, electrons remaining for both bridges after four terminal B–H pairs are:",
+      "options": [
+        "12",
+        "8",
+        "2",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "Total valence electrons=2×3+6=12; terminal pairs use8, leaving4 for two3c2e bridges."
+    },
+    {
+      "question": "The diborane hydrogen count in that model is:",
+      "options": [
+        "Four terminal and two bridging",
+        "Two terminal and four bridging",
+        "Six bridging only",
+        "Eight terminal"
+      ],
+      "answer": 0,
+      "explanation": "B2H6 has four terminal H and two H each participating in a B–H–B three-centre unit."
+    },
+    {
+      "question": "The stated XeF₂ axial three-centre four-electron occupancy is:",
+      "options": [
+        "2,0,2",
+        "2,2,0",
+        "4,0,0",
+        "0,2,2"
+      ],
+      "answer": 1,
+      "explanation": "Fill bonding then nonbonding as pairs, with the antibonding level empty in the simplified subset."
+    },
+    {
+      "question": "The formal per-link bond-order description in that ideal symmetric subset is:",
+      "options": [
+        "Exactly two measured bonds per link",
+        "No bonding because a nonbonding level is occupied",
+        "One half per link from one total formal bond order",
+        "Three per link"
+      ],
+      "answer": 2,
+      "explanation": "The elementary bonding-minus-antibonding ledger gives one total bond order spread over two equivalent links; this is a model, not an exact measured value."
+    },
+    {
+      "question": "Which operation is not a resonance redraw of a fixed HCO₃⁻ nuclear framework?",
+      "options": [
+        "Moving a π electron pair between the two non-OH C–O links",
+        "Redistributing the corresponding lone-pair charge",
+        "Keeping all nuclei fixed",
+        "Moving H to a different oxygen"
+      ],
+      "answer": 3,
+      "explanation": "Resonance moves electrons while nuclei and their connections remain fixed; proton relocation is different chemistry."
+    },
+    {
+      "question": "In the stated dominant-contributor HCO₃⁻ model, the two non-OH C–O formal averages are:",
+      "options": [
+        "1.5 each",
+        "4/3 on all three links automatically",
+        "2 each",
+        "0.5 each"
+      ],
+      "answer": 0,
+      "explanation": "The two major contributors interchange a single and double bond over the two non-OH sites, giving1.5 each in that simplified average."
     }
   ]
 }

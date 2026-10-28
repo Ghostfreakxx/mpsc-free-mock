@@ -17,8 +17,8 @@ Questions are original practice, not represented as official PYQs.
 | Unit | Recorded class | Chapters | Written sections | Worked examples | Class MCQs / Written MCQs |
 | --- | --- | --- | --- | --- | --- |
 | 1 | [Mole Concept](/jee/classes/mole-concept) | 25 | 22 | 15 | 40 / 40 |
-| 2 | [Atomic Structure](/jee/classes/atomic-structure) | 25 | 22 | 15 | 42 / 42 |
-| 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 25 | 24 | 15 | 42 / 42 |
+| 2 | [Atomic Structure](/jee/classes/atomic-structure) | 29 | 26 | 18 | 50 / 50 |
+| 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 29 | 28 | 18 | 50 / 50 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 27 | 29 | 18 | 42 / 42 |
 | 5 | [Solutions](/jee/classes/solutions) | 27 | 29 | 18 | 42 / 42 |
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 25 | 25 | 19 | 42 / 42 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Purification and Analysis adds independent two-solute crystallization balances, reduced-pressure boiling from supplied data, supporting column retention/resolution and worst-case gravimetric bounds. The chromatography diagram keeps the same peak centres while changing their widths.
+Atomic Structure adds orbital angular momentum, supporting Pauli occupation counting, electron-collision excitation and electric-dipole transition rules. The counting diagram distinguishes spin orbitals, occupation patterns and energy levels.
 
-Practical Chemistry adds combined silver-halide/ammonia evidence, Al/Fe hydroxide comparisons, sulfate/sulfite acid response and ammonium proton-transfer accounting. The individual observations are contextual evidence rather than a claim of complete systematic ion analysis.
+Chemical Bonding adds orbital-phase interference, diborane bridges, a supporting XeF2 three-centre model and fixed-proton bicarbonate resonance. Formal bond orders and selected orbital subsets are labelled as models.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference Lisa Nichols’s crystallization and vacuum-distillation teaching, David Harvey’s chromatography theory, OpenStax coupled equilibria and NCERT’s qualitative-analysis laboratory manual. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference OpenStax quantum mechanics and molecular orbitals, Frank Rioux’s XeF2 orbital model, and authored teaching material on diborane and resonance. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

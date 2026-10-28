@@ -61,6 +61,14 @@
     {
       "title": "OpenStax University Physics: uncertainty principle",
       "url": "https://openstax.org/books/university-physics-volume-3/pages/7-2-the-heisenberg-uncertainty-principle"
+    },
+    {
+      "title": "University of Nebraska: discrete hydrogen excitation energies",
+      "url": "https://astro.unl.edu/naap/hydrogen/transitions.html"
+    },
+    {
+      "title": "OpenStax University Physics: dipole selection rules",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/8-5-atomic-spectra-and-x-rays"
     }
   ],
   "chapters": [
@@ -942,6 +950,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Orbital angular momentum uses l rather than the Bohr orbit rule",
+      "formula": "L=√[l(l+1)]ℏ; Lz=mlℏ; 3s,3p,3d have L=0,√2ℏ,√6ℏ",
+      "script": "Angular momentum must be interpreted within the model being used. In the elementary Bohr model, a circular orbit carries angular momentum n times reduced Planck constant. A quantum orbital is not that circular trajectory. Its orbital angular momentum magnitude is the square root of l times l plus one, multiplied by reduced Planck constant, while the measured projection along a chosen axis is m l times that constant. For principal quantum number three, the allowed orbital quantum numbers are zero, one and two, corresponding to three s, three p and three d. Their orbital angular momentum magnitudes are zero, square root of two and square root of six in the stated units. A three d state has five allowed projection values, from minus two to plus two, but its magnitude is square root of six rather than two or three. Hydrogen one s has zero orbital angular momentum in this quantum description, although the electron still has spin angular momentum. These statements do not imply an electron at rest at the nucleus. Keep orbital magnitude, its projection, spin and a classical orbit as distinct ideas.",
+      "points": [
+        "Quantum orbital: L=√[l(l+1)]ℏ · Lz=mlℏ; ml=−l…+l · Magnitude differs from a projection",
+        "n=3 permits l=0,1,2 · 3s:0; 3p:√2ℏ; 3d:√6ℏ · 3d has five ml projections",
+        "Quantum 1s has l=0 · Orbital L=0; electron spin still exists · Do not substitute Bohr circular-orbit nℏ"
+      ],
+      "board": {
+        "heading": "Orbital angular momentum uses l rather than the Bohr orbit rule",
+        "columns": [
+          "Model / given",
+          "Count / interpretation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Quantum orbital: L=√[l(l+1)]ℏ",
+            "Lz=mlℏ; ml=−l…+l",
+            "Magnitude differs from a projection"
+          ],
+          [
+            "n=3 permits l=0,1,2",
+            "3s:0; 3p:√2ℏ; 3d:√6ℏ",
+            "3d has five ml projections"
+          ],
+          [
+            "Quantum 1s has l=0",
+            "Orbital L=0; electron spin still exists",
+            "Do not substitute Bohr circular-orbit nℏ"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting Pauli counting: p2 has fifteen spin-orbital occupations",
+      "formula": "Six p spin orbitals choose two: C(6,2)=15=3 same-spatial-orbital pairs+12 different-orbital occupations",
+      "script": "A subshell capacity and the number of ways to occupy it are different counts. In a supporting Pauli counting exercise, a p subshell has three spatial orbitals labelled by m l minus one, zero and plus one. Each offers spin projection plus one half or minus one half, giving six distinct spin orbitals. Place two indistinguishable electrons in different spin orbitals. Choosing two of six gives fifteen allowed occupation patterns; choosing an order for electron one and electron two would double count them. Check the result another way. Both electrons may occupy the same spatial orbital only with opposite spins, giving three possibilities. Or choose two different spatial orbitals in three ways, with four possible spin assignments for each pair, giving twelve more. The total is three plus twelve. These occupation patterns are not fifteen different chemical elements or necessarily fifteen distinct energy levels. Electron electron interactions and the proper atomic state combinations require further analysis. Hund's rule selects the usual lowest energy filling pattern; it does not erase every other Pauli allowed occupation. This chapter counts an ideal basis for a fixed p squared configuration, without deriving atomic term symbols.",
+      "points": [
+        "Three p orbitals × two spin values · Six distinct spin orbitals · Two electrons occupy different spin orbitals",
+        "Unordered selection C(6,2) · 6×5/2=15 · Electron labels must not double count",
+        "Same spatial orbital:3 opposite-spin pairs · Different orbitals:3×4=12 · 15 occupations, not necessarily15 energy levels"
+      ],
+      "board": {
+        "heading": "Supporting Pauli counting: p2 has fifteen spin-orbital occupations",
+        "columns": [
+          "Model / given",
+          "Count / interpretation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Three p orbitals × two spin values",
+            "Six distinct spin orbitals",
+            "Two electrons occupy different spin orbitals"
+          ],
+          [
+            "Unordered selection C(6,2)",
+            "6×5/2=15",
+            "Electron labels must not double count"
+          ],
+          [
+            "Same spatial orbital:3 opposite-spin pairs",
+            "Different orbitals:3×4=12",
+            "15 occupations, not necessarily15 energy levels"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Collision excitation need not consume all incident kinetic energy",
+      "formula": "Ground-state H: ΔE1→2=10.2 eV; incident electron11.0 eV can leave about .8 eV after excitation in a recoil-neglected model",
+      "script": "An incident photon and an incident electron do not transfer energy in the same way. Use a supporting collision model for a hydrogen atom initially in its ground state, with atomic recoil and fine structure neglected. The energy needed to reach principal level two is ten point two electron volts. An incoming electron with eleven electron volts can transfer that excitation energy and retain about zero point eight electron volt as outgoing kinetic energy. The threshold for level three is about twelve point zero nine electron volts, and ionization requires thirteen point six, so neither is energetically accessible in that stated collision. Having enough energy makes a channel possible, not certain; collision probabilities require more information. In the ideal narrow line single photon absorption comparison, a photon is absorbed as a whole. An eleven electron volt photon does not match the ground to level two gap and is below the ionization threshold, so it cannot simply deposit ten point two and continue as the same partly spent photon in that absorption model. Scattering and line broadening are separate questions. Follow the energy ledger and the interaction mechanism rather than treating every incoming particle as an interchangeable photon.",
+      "points": [
+        "Ground H; recoil/fine structure neglected · ΔE1→2=10.2 eV · Incident electron11.0 eV can excite n=2",
+        "Outgoing electron energy≈11.0−10.2 · About .8 eV remains · n=3 threshold≈12.09; ionization13.6 eV",
+        "Ideal single-photon absorption · Whole photon must fit an allowed gap · 11 eV photon is not the same energy-transfer model"
+      ],
+      "board": {
+        "heading": "Collision excitation need not consume all incident kinetic energy",
+        "columns": [
+          "Model / given",
+          "Count / interpretation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Ground H; recoil/fine structure neglected",
+            "ΔE1→2=10.2 eV",
+            "Incident electron11.0 eV can excite n=2"
+          ],
+          [
+            "Outgoing electron energy≈11.0−10.2",
+            "About .8 eV remains",
+            "n=3 threshold≈12.09; ionization13.6 eV"
+          ],
+          [
+            "Ideal single-photon absorption",
+            "Whole photon must fit an allowed gap",
+            "11 eV photon is not the same energy-transfer model"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting transition rules distinguish a gap from a dipole-allowed line",
+      "formula": "Single-electron electric-dipole approximation: Δl=±1, Δml=0,±1; spin projection unchanged",
+      "script": "A difference between two bound energies does not by itself guarantee a strong electric dipole spectral line. In the supporting nonrelativistic single electron electric dipole approximation, the orbital quantum number changes by plus or minus one, while its magnetic projection changes by zero, plus one or minus one. The electric dipole operator does not flip electron spin in this simplified model. Thus a two p to one s transition passes the orbital rule, whereas two s to one s does not. A three d to two p transition can pass it, but three d to one s fails because l would change by two. These are rules for a specified radiation interaction, not a declaration that every excluded excited state can never decay. Hydrogen two s, for example, can decay by a two photon process outside the one photon electric dipole comparison. Polarization, magnetic sublevels and actual transition strengths require additional information. The earlier principal level line counting exercises count possible energy differences under their stated simplified model; detailed observed line intensities and allowed pathways need these extra conditions. Do not turn a model-specific forbidden label into an absolute ban on every physical process.",
+      "points": [
+        "One-photon electric-dipole model · Δl=±1; Δml=0,±1 · Spin projection unchanged in this approximation",
+        "2p→1s and3d→2p pass Δl · 2s→1s and3d→1s fail Δl · A gap alone does not fix dipole intensity",
+        "Dipole-forbidden is model-specific · 2s can decay by a two-photon pathway · Supporting extension beyond principal-level counting"
+      ],
+      "board": {
+        "heading": "Supporting transition rules distinguish a gap from a dipole-allowed line",
+        "columns": [
+          "Model / given",
+          "Count / interpretation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "One-photon electric-dipole model",
+            "Δl=±1; Δml=0,±1",
+            "Spin projection unchanged in this approximation"
+          ],
+          [
+            "2p→1s and3d→2p pass Δl",
+            "2s→1s and3d→1s fail Δl",
+            "A gap alone does not fix dipole intensity"
+          ],
+          [
+            "Dipole-forbidden is model-specific",
+            "2s can decay by a two-photon pathway",
+            "Supporting extension beyond principal-level counting"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1406,6 +1554,94 @@
       ],
       "answer": 3,
       "explanation": "Emission requires hf≥φ; the extrapolated line below threshold does not describe negative-energy electrons."
+    },
+    {
+      "question": "In the stated quantum description, a3d electron has orbital angular momentum magnitude:",
+      "options": [
+        "√6ℏ",
+        "3ℏ",
+        "2ℏ",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "For d,l=2, so L=√[2(2+1)]ℏ=√6ℏ; ml labels projections rather than that magnitude."
+    },
+    {
+      "question": "Quantum hydrogen1s has which orbital angular momentum?",
+      "options": [
+        "ℏ because n=1 in every model",
+        "Zero, while electron spin still exists",
+        "√2ℏ",
+        "No allowed state"
+      ],
+      "answer": 1,
+      "explanation": "The s orbital has l=0. The Bohr circular-orbit rule is a different model; orbital L=0 does not remove spin."
+    },
+    {
+      "question": "How many unordered two-electron occupations exist among the six p spin orbitals under Pauli exclusion?",
+      "options": [
+        "6",
+        "30",
+        "15",
+        "3"
+      ],
+      "answer": 2,
+      "explanation": "Choose two distinct spin orbitals without electron-label order:6×5/2=15."
+    },
+    {
+      "question": "Those15 occupation patterns should not automatically be called15 distinct energy levels because:",
+      "options": [
+        "Pauli exclusion is optional",
+        "Every p electron must be labelled permanently",
+        "There are no interactions in real atoms",
+        "Atomic state combinations and electron interactions require further analysis"
+      ],
+      "answer": 3,
+      "explanation": "The counting gives a basis for p2, not a complete atomic energy spectrum or term-symbol derivation."
+    },
+    {
+      "question": "In the supplied recoil-neglected collision model, an11.0 eV electron excites ground H to n=2 at10.2 eV. Its outgoing kinetic energy is approximately:",
+      "options": [
+        ".8 eV",
+        "10.2 eV",
+        "13.6 eV",
+        "0 in every collision"
+      ],
+      "answer": 0,
+      "explanation": "The excitation takes10.2 eV, leaving11.0−10.2=.8 eV; an energetically accessible channel is not guaranteed to occur."
+    },
+    {
+      "question": "Why is an11 eV photon different in the specified ideal single-photon ground-H absorption comparison?",
+      "options": [
+        "Every photon can deposit an arbitrary fraction",
+        "Whole-photon energy must match an allowed discrete gap below ionization",
+        "The H ground state has no levels",
+        "Photons have no energy"
+      ],
+      "answer": 1,
+      "explanation": "11 eV does not match the stated bound-state gaps and lies below13.6 eV; scattering is a separate process."
+    },
+    {
+      "question": "Which pair passes the stated Δl=±1 electric-dipole rule?",
+      "options": [
+        "2s→1s",
+        "3d→1s",
+        "2p→1s",
+        "1s→1s"
+      ],
+      "answer": 2,
+      "explanation": "p→s changes l from1 to0. This tests only the stated angular rule, not a full intensity calculation."
+    },
+    {
+      "question": "Calling2s→1s forbidden in this one-photon electric-dipole comparison means:",
+      "options": [
+        "No decay is possible by any mechanism",
+        "Energy is not conserved",
+        "Spin vanishes",
+        "That approximation excludes it; a two-photon process can still occur"
+      ],
+      "answer": 3,
+      "explanation": "A forbidden label belongs to a specified interaction model, not every physical process."
     }
   ]
 }

@@ -1,4 +1,5 @@
 import { extendPeriodicSeparationEvidenceLesson } from './periodic-separation-evidence-study.ts';
+import { extendAtomicBondingModelMapsLesson } from './atomic-bonding-model-maps-study.ts';
 import { extendAtomicBondingEvidenceLesson } from './atomic-bonding-evidence-study.ts';
 import { extendBondingPeriodicStructureLesson } from './bonding-periodic-structure-study.ts';
 import { extendHydrocarbonsAtomicBondingLesson } from "./hydrocarbons-atomic-bonding-study.ts";
@@ -111,7 +112,7 @@ export const chemistryExpansionLessons: StudyLesson[] = [
     title: "Chemical bonding: from electrons to shape and properties",
     summary: "Lewis structures, charge bookkeeping, VSEPR, polarity, overlap and molecular orbitals.",
     prerequisites: "Valence electrons, periodic trends and basic orbital terminology.",
-    remaining: "Written companion to the twenty-five-chapter Marin recording for Unit 3. The recording adds polarization comparisons, five- and six-domain shapes, bond counting and hydrogen bonding. Lower-Z diatomic MO filling, donor–acceptor adducts, nitrophenol hydrogen bonding and extended sigma/pi counts are included. A simplified HF valence MO diagram, bond-well and zero-point distinctions, NO2 radicals and positional dipole models are included. More detailed heteronuclear mixing, broader lattice datasets and additional shape comparisons remain; this is not complete unit coverage.",
+    remaining: "Written companion to the twenty-nine-chapter Marin recording for Unit 3. The recording adds polarization comparisons, five- and six-domain shapes, bond counting and hydrogen bonding. Lower-Z diatomic MO filling, donor–acceptor adducts, nitrophenol hydrogen bonding and extended sigma/pi counts are included. A simplified HF valence MO diagram, bond-well and zero-point distinctions, NO2 radicals and positional dipole models are included. Orbital phase, diborane bridges, supporting XeF2 multicentre bonding and fixed-proton bicarbonate resonance are included. More detailed heteronuclear mixing, broader lattice datasets and additional shape comparisons remain; this is not complete unit coverage.",
     sections: [
       { title: "Bond formation must lower the appropriate energy", paragraphs: [
         "Atoms do not bond merely because someone tells them to complete an octet. Bond formation can lower a system's energy through interactions among nuclei and electrons. The octet rule is a useful bookkeeping pattern with exceptions, including electron-deficient and odd-electron species.",
@@ -172,3 +173,4 @@ for (const lesson of chemistryExpansionLessons) extendHydrocarbonsAtomicBondingL
 for (const lesson of chemistryExpansionLessons) extendBondingPeriodicStructureLesson(lesson);
 for (const lesson of chemistryExpansionLessons) extendAtomicBondingEvidenceLesson(lesson);
 for (const lesson of chemistryExpansionLessons) extendPeriodicSeparationEvidenceLesson(lesson);
+for (const lesson of chemistryExpansionLessons) extendAtomicBondingModelMapsLesson(lesson);

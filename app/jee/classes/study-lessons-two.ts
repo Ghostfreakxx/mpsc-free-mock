@@ -1,3 +1,4 @@
+import { extendAtomicBondingModelMapsLesson } from './atomic-bonding-model-maps-study.ts';
 import { extendAtomicBondingEvidenceLesson } from './atomic-bonding-evidence-study.ts';
 import { extendMoleAtomicMeasurementsLesson } from './mole-atomic-measurements-study.ts';
 import { extendHydrocarbonsAtomicBondingLesson } from "./hydrocarbons-atomic-bonding-study.ts";
@@ -55,7 +56,7 @@ export const nextStudyLessons: StudyLesson[] = [
     title: "Atomic structure: shells, orbitals and electron arrangements",
     summary: "Particle counts, energy levels, quantum numbers and orbital filling.",
     prerequisites: "Atomic symbols, the mole concept and simple integer arithmetic.",
-    remaining: "Written companion to the twenty-five-chapter Marin recording for Unit 2. The recording and Atomic Spectra notes add photons, Bohr relations, spectra, matter waves, uncertainty, nodes and configuration examples. Hydrogen 2s/2p radial plots, closest-approach energy, equal-energy matter waves and photon-rate examples are included. Hydrogen 3s plots, reduced-mass isotope shifts, uncertainty energy bounds and inverse photoelectric graphs are included. Fuller wavefunction derivations and additional mixed problems remain; this is not complete unit coverage.",
+    remaining: "Written companion to the twenty-nine-chapter Marin recording for Unit 2. The recording and Atomic Spectra notes add photons, Bohr relations, spectra, matter waves, uncertainty, nodes and configuration examples. Hydrogen 2s/2p radial plots, closest-approach energy, equal-energy matter waves and photon-rate examples are included. Hydrogen 3s plots, reduced-mass isotope shifts, uncertainty energy bounds and inverse photoelectric graphs are included. Orbital angular momentum, Pauli occupation counting, collision excitation and supporting electric-dipole selection rules are included. Fuller wavefunction derivations and additional mixed problems remain; this is not complete unit coverage.",
     sections: [
       { title: "Count particles before discussing orbitals", paragraphs: [
         "The atomic number Z counts protons and determines the element. The mass number A counts protons plus neutrons in a specified isotope. Therefore neutrons = A - Z. A neutral atom has Z electrons, while an ion's electron count changes with its charge. Removing electrons makes a positive ion; adding electrons makes a negative ion.",
@@ -145,3 +146,4 @@ for (const lesson of nextStudyLessons) extendHydrocarbonsAtomicBondingLesson(les
 
 for (const lesson of nextStudyLessons) extendMoleAtomicMeasurementsLesson(lesson);
 for (const lesson of nextStudyLessons) extendAtomicBondingEvidenceLesson(lesson);
+for (const lesson of nextStudyLessons) extendAtomicBondingModelMapsLesson(lesson);

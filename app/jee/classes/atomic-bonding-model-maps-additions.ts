@@ -1,0 +1,511 @@
+// Authored by scripts/expand-atomic-bonding-model-maps.mjs.
+export const atomicBondingModelMapsAdditions = {
+  "atomic-structure": {
+    "base": 25,
+    "quizBase": 42,
+    "chapters": [
+      {
+        "title": "Orbital angular momentum uses l rather than the Bohr orbit rule",
+        "formula": "L=√[l(l+1)]ℏ; Lz=mlℏ; 3s,3p,3d have L=0,√2ℏ,√6ℏ",
+        "script": "Angular momentum must be interpreted within the model being used. In the elementary Bohr model, a circular orbit carries angular momentum n times reduced Planck constant. A quantum orbital is not that circular trajectory. Its orbital angular momentum magnitude is the square root of l times l plus one, multiplied by reduced Planck constant, while the measured projection along a chosen axis is m l times that constant. For principal quantum number three, the allowed orbital quantum numbers are zero, one and two, corresponding to three s, three p and three d. Their orbital angular momentum magnitudes are zero, square root of two and square root of six in the stated units. A three d state has five allowed projection values, from minus two to plus two, but its magnitude is square root of six rather than two or three. Hydrogen one s has zero orbital angular momentum in this quantum description, although the electron still has spin angular momentum. These statements do not imply an electron at rest at the nucleus. Keep orbital magnitude, its projection, spin and a classical orbit as distinct ideas.",
+        "points": [
+          "Quantum orbital: L=√[l(l+1)]ℏ · Lz=mlℏ; ml=−l…+l · Magnitude differs from a projection",
+          "n=3 permits l=0,1,2 · 3s:0; 3p:√2ℏ; 3d:√6ℏ · 3d has five ml projections",
+          "Quantum 1s has l=0 · Orbital L=0; electron spin still exists · Do not substitute Bohr circular-orbit nℏ"
+        ],
+        "board": {
+          "heading": "Orbital angular momentum uses l rather than the Bohr orbit rule",
+          "columns": [
+            "Model / given",
+            "Count / interpretation",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "Quantum orbital: L=√[l(l+1)]ℏ",
+              "Lz=mlℏ; ml=−l…+l",
+              "Magnitude differs from a projection"
+            ],
+            [
+              "n=3 permits l=0,1,2",
+              "3s:0; 3p:√2ℏ; 3d:√6ℏ",
+              "3d has five ml projections"
+            ],
+            [
+              "Quantum 1s has l=0",
+              "Orbital L=0; electron spin still exists",
+              "Do not substitute Bohr circular-orbit nℏ"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Supporting Pauli counting: p2 has fifteen spin-orbital occupations",
+        "formula": "Six p spin orbitals choose two: C(6,2)=15=3 same-spatial-orbital pairs+12 different-orbital occupations",
+        "script": "A subshell capacity and the number of ways to occupy it are different counts. In a supporting Pauli counting exercise, a p subshell has three spatial orbitals labelled by m l minus one, zero and plus one. Each offers spin projection plus one half or minus one half, giving six distinct spin orbitals. Place two indistinguishable electrons in different spin orbitals. Choosing two of six gives fifteen allowed occupation patterns; choosing an order for electron one and electron two would double count them. Check the result another way. Both electrons may occupy the same spatial orbital only with opposite spins, giving three possibilities. Or choose two different spatial orbitals in three ways, with four possible spin assignments for each pair, giving twelve more. The total is three plus twelve. These occupation patterns are not fifteen different chemical elements or necessarily fifteen distinct energy levels. Electron electron interactions and the proper atomic state combinations require further analysis. Hund's rule selects the usual lowest energy filling pattern; it does not erase every other Pauli allowed occupation. This chapter counts an ideal basis for a fixed p squared configuration, without deriving atomic term symbols.",
+        "points": [
+          "Three p orbitals × two spin values · Six distinct spin orbitals · Two electrons occupy different spin orbitals",
+          "Unordered selection C(6,2) · 6×5/2=15 · Electron labels must not double count",
+          "Same spatial orbital:3 opposite-spin pairs · Different orbitals:3×4=12 · 15 occupations, not necessarily15 energy levels"
+        ],
+        "board": {
+          "heading": "Supporting Pauli counting: p2 has fifteen spin-orbital occupations",
+          "columns": [
+            "Model / given",
+            "Count / interpretation",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "Three p orbitals × two spin values",
+              "Six distinct spin orbitals",
+              "Two electrons occupy different spin orbitals"
+            ],
+            [
+              "Unordered selection C(6,2)",
+              "6×5/2=15",
+              "Electron labels must not double count"
+            ],
+            [
+              "Same spatial orbital:3 opposite-spin pairs",
+              "Different orbitals:3×4=12",
+              "15 occupations, not necessarily15 energy levels"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Collision excitation need not consume all incident kinetic energy",
+        "formula": "Ground-state H: ΔE1→2=10.2 eV; incident electron11.0 eV can leave about .8 eV after excitation in a recoil-neglected model",
+        "script": "An incident photon and an incident electron do not transfer energy in the same way. Use a supporting collision model for a hydrogen atom initially in its ground state, with atomic recoil and fine structure neglected. The energy needed to reach principal level two is ten point two electron volts. An incoming electron with eleven electron volts can transfer that excitation energy and retain about zero point eight electron volt as outgoing kinetic energy. The threshold for level three is about twelve point zero nine electron volts, and ionization requires thirteen point six, so neither is energetically accessible in that stated collision. Having enough energy makes a channel possible, not certain; collision probabilities require more information. In the ideal narrow line single photon absorption comparison, a photon is absorbed as a whole. An eleven electron volt photon does not match the ground to level two gap and is below the ionization threshold, so it cannot simply deposit ten point two and continue as the same partly spent photon in that absorption model. Scattering and line broadening are separate questions. Follow the energy ledger and the interaction mechanism rather than treating every incoming particle as an interchangeable photon.",
+        "points": [
+          "Ground H; recoil/fine structure neglected · ΔE1→2=10.2 eV · Incident electron11.0 eV can excite n=2",
+          "Outgoing electron energy≈11.0−10.2 · About .8 eV remains · n=3 threshold≈12.09; ionization13.6 eV",
+          "Ideal single-photon absorption · Whole photon must fit an allowed gap · 11 eV photon is not the same energy-transfer model"
+        ],
+        "board": {
+          "heading": "Collision excitation need not consume all incident kinetic energy",
+          "columns": [
+            "Model / given",
+            "Count / interpretation",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "Ground H; recoil/fine structure neglected",
+              "ΔE1→2=10.2 eV",
+              "Incident electron11.0 eV can excite n=2"
+            ],
+            [
+              "Outgoing electron energy≈11.0−10.2",
+              "About .8 eV remains",
+              "n=3 threshold≈12.09; ionization13.6 eV"
+            ],
+            [
+              "Ideal single-photon absorption",
+              "Whole photon must fit an allowed gap",
+              "11 eV photon is not the same energy-transfer model"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Supporting transition rules distinguish a gap from a dipole-allowed line",
+        "formula": "Single-electron electric-dipole approximation: Δl=±1, Δml=0,±1; spin projection unchanged",
+        "script": "A difference between two bound energies does not by itself guarantee a strong electric dipole spectral line. In the supporting nonrelativistic single electron electric dipole approximation, the orbital quantum number changes by plus or minus one, while its magnetic projection changes by zero, plus one or minus one. The electric dipole operator does not flip electron spin in this simplified model. Thus a two p to one s transition passes the orbital rule, whereas two s to one s does not. A three d to two p transition can pass it, but three d to one s fails because l would change by two. These are rules for a specified radiation interaction, not a declaration that every excluded excited state can never decay. Hydrogen two s, for example, can decay by a two photon process outside the one photon electric dipole comparison. Polarization, magnetic sublevels and actual transition strengths require additional information. The earlier principal level line counting exercises count possible energy differences under their stated simplified model; detailed observed line intensities and allowed pathways need these extra conditions. Do not turn a model-specific forbidden label into an absolute ban on every physical process.",
+        "points": [
+          "One-photon electric-dipole model · Δl=±1; Δml=0,±1 · Spin projection unchanged in this approximation",
+          "2p→1s and3d→2p pass Δl · 2s→1s and3d→1s fail Δl · A gap alone does not fix dipole intensity",
+          "Dipole-forbidden is model-specific · 2s can decay by a two-photon pathway · Supporting extension beyond principal-level counting"
+        ],
+        "board": {
+          "heading": "Supporting transition rules distinguish a gap from a dipole-allowed line",
+          "columns": [
+            "Model / given",
+            "Count / interpretation",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "One-photon electric-dipole model",
+              "Δl=±1; Δml=0,±1",
+              "Spin projection unchanged in this approximation"
+            ],
+            [
+              "2p→1s and3d→2p pass Δl",
+              "2s→1s and3d→1s fail Δl",
+              "A gap alone does not fix dipole intensity"
+            ],
+            [
+              "Dipole-forbidden is model-specific",
+              "2s can decay by a two-photon pathway",
+              "Supporting extension beyond principal-level counting"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "In the stated quantum description, a3d electron has orbital angular momentum magnitude:",
+        "options": [
+          "√6ℏ",
+          "3ℏ",
+          "2ℏ",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "For d,l=2, so L=√[2(2+1)]ℏ=√6ℏ; ml labels projections rather than that magnitude."
+      },
+      {
+        "question": "Quantum hydrogen1s has which orbital angular momentum?",
+        "options": [
+          "ℏ because n=1 in every model",
+          "Zero, while electron spin still exists",
+          "√2ℏ",
+          "No allowed state"
+        ],
+        "answer": 1,
+        "explanation": "The s orbital has l=0. The Bohr circular-orbit rule is a different model; orbital L=0 does not remove spin."
+      },
+      {
+        "question": "How many unordered two-electron occupations exist among the six p spin orbitals under Pauli exclusion?",
+        "options": [
+          "6",
+          "30",
+          "15",
+          "3"
+        ],
+        "answer": 2,
+        "explanation": "Choose two distinct spin orbitals without electron-label order:6×5/2=15."
+      },
+      {
+        "question": "Those15 occupation patterns should not automatically be called15 distinct energy levels because:",
+        "options": [
+          "Pauli exclusion is optional",
+          "Every p electron must be labelled permanently",
+          "There are no interactions in real atoms",
+          "Atomic state combinations and electron interactions require further analysis"
+        ],
+        "answer": 3,
+        "explanation": "The counting gives a basis for p2, not a complete atomic energy spectrum or term-symbol derivation."
+      },
+      {
+        "question": "In the supplied recoil-neglected collision model, an11.0 eV electron excites ground H to n=2 at10.2 eV. Its outgoing kinetic energy is approximately:",
+        "options": [
+          ".8 eV",
+          "10.2 eV",
+          "13.6 eV",
+          "0 in every collision"
+        ],
+        "answer": 0,
+        "explanation": "The excitation takes10.2 eV, leaving11.0−10.2=.8 eV; an energetically accessible channel is not guaranteed to occur."
+      },
+      {
+        "question": "Why is an11 eV photon different in the specified ideal single-photon ground-H absorption comparison?",
+        "options": [
+          "Every photon can deposit an arbitrary fraction",
+          "Whole-photon energy must match an allowed discrete gap below ionization",
+          "The H ground state has no levels",
+          "Photons have no energy"
+        ],
+        "answer": 1,
+        "explanation": "11 eV does not match the stated bound-state gaps and lies below13.6 eV; scattering is a separate process."
+      },
+      {
+        "question": "Which pair passes the stated Δl=±1 electric-dipole rule?",
+        "options": [
+          "2s→1s",
+          "3d→1s",
+          "2p→1s",
+          "1s→1s"
+        ],
+        "answer": 2,
+        "explanation": "p→s changes l from1 to0. This tests only the stated angular rule, not a full intensity calculation."
+      },
+      {
+        "question": "Calling2s→1s forbidden in this one-photon electric-dipole comparison means:",
+        "options": [
+          "No decay is possible by any mechanism",
+          "Energy is not conserved",
+          "Spin vanishes",
+          "That approximation excludes it; a two-photon process can still occur"
+        ],
+        "answer": 3,
+        "explanation": "A forbidden label belongs to a specified interaction model, not every physical process."
+      }
+    ],
+    "sources": [
+      {
+        "title": "OpenStax University Physics: dipole selection rules",
+        "url": "https://openstax.org/books/university-physics-volume-3/pages/8-5-atomic-spectra-and-x-rays"
+      },
+      {
+        "title": "OpenStax University Physics: hydrogen angular momentum and transitions",
+        "url": "https://openstax.org/books/university-physics-volume-3/pages/8-1-the-hydrogen-atom"
+      },
+      {
+        "title": "OpenStax Chemistry: quantum numbers and Pauli exclusion",
+        "url": "https://openstax.org/books/chemistry-2e/pages/6-4-electronic-structure-of-atoms-electron-configurations"
+      },
+      {
+        "title": "University of Nebraska: discrete hydrogen excitation energies",
+        "url": "https://astro.unl.edu/naap/hydrogen/transitions.html"
+      }
+    ]
+  },
+  "chemical-bonding": {
+    "base": 25,
+    "quizBase": 42,
+    "chapters": [
+      {
+        "title": "Orbital interference concerns phase rather than electric charge",
+        "formula": "Qualitative1s combinations: ψbonding∝φA+φB; ψantibonding∝φA−φB; midpoint cancellation creates an internuclear node",
+        "script": "Molecular orbital construction combines wavefunctions, not coloured electric charges. Take two same phase one s atomic orbitals on equivalent centres in a qualitative diatomic model. Their sum reinforces amplitude between the nuclei and forms the usual lower energy bonding combination. Their difference cancels at the symmetry midpoint and creates a nodal plane between the nuclei in the antibonding combination. The sign of a wavefunction lobe indicates phase, not a positive or negative cloud of electron charge. Probability density is proportional to the squared magnitude of the combined wavefunction, so its interference term matters. An overall change of sign leaves the probability density unchanged; a relative sign change between the two contributions can change the interference. Proper normalization and overlap are needed for quantitative calculations, so the simple plus and minus drawings are not complete numerical wavefunctions. Two atomic basis functions generate two molecular orbital combinations in this model. Filling bonding or antibonding orbitals then affects the energy and formal bond order, rather than the act of drawing two overlapping circles proving a bond. The phase and nodal description explains the origin of the familiar bonding and antibonding labels.",
+        "points": [
+          "Two same-phase1s basis functions · Sum reinforces; difference cancels at midpoint · Bonding and antibonding combinations",
+          "Lobe sign means wavefunction phase · Density=|ψ|², not signed electron charge · Relative phase changes interference",
+          "Antibonding combination has an internuclear node · Two basis functions give two combinations · Normalization needed for quantitative density"
+        ],
+        "board": {
+          "heading": "Orbital interference concerns phase rather than electric charge",
+          "columns": [
+            "Model / given",
+            "Count / interpretation",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "Two same-phase1s basis functions",
+              "Sum reinforces; difference cancels at midpoint",
+              "Bonding and antibonding combinations"
+            ],
+            [
+              "Lobe sign means wavefunction phase",
+              "Density=|ψ|², not signed electron charge",
+              "Relative phase changes interference"
+            ],
+            [
+              "Antibonding combination has an internuclear node",
+              "Two basis functions give two combinations",
+              "Normalization needed for quantitative density"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Diborane bridges cannot all be ordinary two-centre electron pairs",
+        "formula": "B₂H₆ has12 valence electrons: four terminal B–H bonds use8; two B–H–B bridges use2 electrons each",
+        "script": "An electron deficient molecule can require a bonding description beyond ordinary two centre electron pairs. Diborane has two boron atoms and six hydrogens, giving twelve valence electrons in total. Four terminal boron hydrogen bonds can be counted as four ordinary two centre two electron bonds, using eight electrons. The remaining four electrons occupy two bridging boron hydrogen boron bonding units, with two electrons shared over three centres in each bridge. The two bridging hydrogens are distinct from the four terminal hydrogens. Counting each of the four bridge contacts as its own conventional two electron bond would require eight bridge electrons instead of the four available. The three centre description fixes that electron inventory problem without inserting an extra ordinary boron boron bond into the elementary ledger. It does not assign a full measured bond order or identical bond length to every terminal and bridging contact. The shape of a bridge and the distribution of its electron pair require molecular orbital reasoning. This selected compound illustrates electron deficiency and the limits of a universal octet shortcut; it is not a claim that every boron hydride has the same bridge pattern.",
+        "points": [
+          "Valence count:2×3+6×1=12 · Four terminal B–H pairs use8 electrons · Four electrons remain",
+          "Two B–H–B bridging units · Each is three-centre two-electron · Two bridging H; four terminal H",
+          "Four separate ordinary bridge-contact pairs need8 e⁻ · Only4 bridge electrons are available · Do not add an extra ordinary B–B pair"
+        ],
+        "board": {
+          "heading": "Diborane bridges cannot all be ordinary two-centre electron pairs",
+          "columns": [
+            "Model / given",
+            "Count / interpretation",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "Valence count:2×3+6×1=12",
+              "Four terminal B–H pairs use8 electrons",
+              "Four electrons remain"
+            ],
+            [
+              "Two B–H–B bridging units",
+              "Each is three-centre two-electron",
+              "Two bridging H; four terminal H"
+            ],
+            [
+              "Four separate ordinary bridge-contact pairs need8 e⁻",
+              "Only4 bridge electrons are available",
+              "Do not add an extra ordinary B–B pair"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Supporting XeF2 model fills a three-centre four-electron system",
+        "formula": "Axial F–Xe–F subset: bonding² nonbonding² antibonding⁰; formal total bond order1 spread over two equivalent links",
+        "script": "A three centre bonding model can be electron rich rather than electron deficient. For a supporting qualitative description of linear xenon difluoride, consider the axial fluorine xenon fluorine orbital subset. Three appropriately oriented basis orbitals combine into bonding, nonbonding and antibonding molecular orbitals. Four electrons in this subset occupy the bonding level as a pair and the nonbonding level as another pair, leaving the antibonding level empty. This differs from a three centre two electron bridge, where only the bonding level is filled. In the ideal symmetric bookkeeping model, two bonding electrons and no antibonding electrons correspond to one total formal bond order distributed across two equivalent xenon fluorine links, often described as one half per link. That is a simplified model quantity, not a direct claim of an exactly measured half bond. The xenon five s lone pair, its two other p lone pairs and the remaining ligand electrons lie outside this chosen axial subset. The model explains why useful hypervalent bonding descriptions need not rely on large xenon d orbital participation. Geometry and a Lewis electron domain picture can still be discussed separately. These three energy levels are qualitative; real heteronuclear orbital energies and mixing are not equal by assumption.",
+        "points": [
+          "Axial F–Xe–F subset · Three basis orbitals; three combinations · Bonding, nonbonding, antibonding",
+          "Four subset electrons · Occupancy2,2,0 · Not the same filling as a3c2e bridge",
+          "Formal total bond order=(2−0)/2=1 · Symmetric elementary model:½ per link · Qualitative model, not measured exact bond orders"
+        ],
+        "board": {
+          "heading": "Supporting XeF2 model fills a three-centre four-electron system",
+          "columns": [
+            "Model / given",
+            "Count / interpretation",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "Axial F–Xe–F subset",
+              "Three basis orbitals; three combinations",
+              "Bonding, nonbonding, antibonding"
+            ],
+            [
+              "Four subset electrons",
+              "Occupancy2,2,0",
+              "Not the same filling as a3c2e bridge"
+            ],
+            [
+              "Formal total bond order=(2−0)/2=1",
+              "Symmetric elementary model:½ per link",
+              "Qualitative model, not measured exact bond orders"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Protonating carbonate changes which oxygen sites are equivalent",
+        "formula": "CO₃²⁻: three equivalent C–O bonds in the simple resonance model; HCO₃⁻: keep H fixed, two main non-OH contributors",
+        "script": "Resonance contributors preserve the positions and connections of nuclei. In carbonate, three symmetry related oxygen sites permit three equivalent major Lewis contributors with the carbon oxygen double bond placed at each site in turn. The simple equal contributor average gives formal bond order four thirds for each carbon oxygen link. Now attach a proton to a particular oxygen to describe hydrogen carbonate. That oxygen is the hydroxyl site, and moving the proton to another oxygen would change a nuclear connection rather than draw a resonance contributor of the same fixed structure. In the usual dominant contributor model, the double bond and negative charge are delocalized over the two nonhydroxyl oxygens. Their formal averaged bond orders are one point five each, while the hydroxyl carbon oxygen bond is represented as one. Minor charge separated contributors and the environment can change the quantitative description, so these fractions are teaching model averages rather than exact measured bond lengths. Carbonate and hydrogen carbonate are also different protonation states with different total charges. Keep proton transfer, resonance electron movement and the symmetry of the actual fixed nuclear framework separate before claiming that every oxygen bond must be equivalent.",
+        "points": [
+          "CO₃²⁻: three equivalent major contributors · One double+two single C–O bonds each · Equal average4/3 on each link",
+          "HCO₃⁻: H fixed on one oxygen · Two dominant non-OH resonance contributors · Non-OH averages1.5; OH link1",
+          "Moving H changes a nuclear connection · Not resonance of one fixed structure · Formal averages are not exact measured lengths"
+        ],
+        "board": {
+          "heading": "Protonating carbonate changes which oxygen sites are equivalent",
+          "columns": [
+            "Model / given",
+            "Count / interpretation",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "CO₃²⁻: three equivalent major contributors",
+              "One double+two single C–O bonds each",
+              "Equal average4/3 on each link"
+            ],
+            [
+              "HCO₃⁻: H fixed on one oxygen",
+              "Two dominant non-OH resonance contributors",
+              "Non-OH averages1.5; OH link1"
+            ],
+            [
+              "Moving H changes a nuclear connection",
+              "Not resonance of one fixed structure",
+              "Formal averages are not exact measured lengths"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "The plus/minus signs on atomic orbital lobes represent:",
+        "options": [
+          "Positive and negative electron charges",
+          "Wavefunction phase",
+          "Different proton numbers",
+          "The number of nuclei"
+        ],
+        "answer": 1,
+        "explanation": "Electron charge does not switch sign between lobes; interference depends on relative wavefunction phase."
+      },
+      {
+        "question": "For equivalent same-phase1s orbitals, the difference combination has at the symmetry midpoint:",
+        "options": [
+          "Twice the electron charge",
+          "A third nucleus",
+          "Cancellation and a node",
+          "No relation to wavefunctions"
+        ],
+        "answer": 2,
+        "explanation": "At the midpoint the two amplitudes are equal; their difference is zero in the stated model."
+      },
+      {
+        "question": "In the elementary B₂H₆ valence ledger, electrons remaining for both bridges after four terminal B–H pairs are:",
+        "options": [
+          "12",
+          "8",
+          "2",
+          "4"
+        ],
+        "answer": 3,
+        "explanation": "Total valence electrons=2×3+6=12; terminal pairs use8, leaving4 for two3c2e bridges."
+      },
+      {
+        "question": "The diborane hydrogen count in that model is:",
+        "options": [
+          "Four terminal and two bridging",
+          "Two terminal and four bridging",
+          "Six bridging only",
+          "Eight terminal"
+        ],
+        "answer": 0,
+        "explanation": "B2H6 has four terminal H and two H each participating in a B–H–B three-centre unit."
+      },
+      {
+        "question": "The stated XeF₂ axial three-centre four-electron occupancy is:",
+        "options": [
+          "2,0,2",
+          "2,2,0",
+          "4,0,0",
+          "0,2,2"
+        ],
+        "answer": 1,
+        "explanation": "Fill bonding then nonbonding as pairs, with the antibonding level empty in the simplified subset."
+      },
+      {
+        "question": "The formal per-link bond-order description in that ideal symmetric subset is:",
+        "options": [
+          "Exactly two measured bonds per link",
+          "No bonding because a nonbonding level is occupied",
+          "One half per link from one total formal bond order",
+          "Three per link"
+        ],
+        "answer": 2,
+        "explanation": "The elementary bonding-minus-antibonding ledger gives one total bond order spread over two equivalent links; this is a model, not an exact measured value."
+      },
+      {
+        "question": "Which operation is not a resonance redraw of a fixed HCO₃⁻ nuclear framework?",
+        "options": [
+          "Moving a π electron pair between the two non-OH C–O links",
+          "Redistributing the corresponding lone-pair charge",
+          "Keeping all nuclei fixed",
+          "Moving H to a different oxygen"
+        ],
+        "answer": 3,
+        "explanation": "Resonance moves electrons while nuclei and their connections remain fixed; proton relocation is different chemistry."
+      },
+      {
+        "question": "In the stated dominant-contributor HCO₃⁻ model, the two non-OH C–O formal averages are:",
+        "options": [
+          "1.5 each",
+          "4/3 on all three links automatically",
+          "2 each",
+          "0.5 each"
+        ],
+        "answer": 0,
+        "explanation": "The two major contributors interchange a single and double bond over the two non-OH sites, giving1.5 each in that simplified average."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Frank Rioux: XeF2 molecular-orbital model",
+        "url": "https://www.users.csbsju.edu/~frioux/c60/XEF2MOT.pdf"
+      },
+      {
+        "title": "OpenStax: bonding and antibonding molecular orbitals",
+        "url": "https://openstax.org/books/chemistry-2e/pages/8-4-molecular-orbital-theory"
+      },
+      {
+        "title": "Chemistry LibreTexts: Group3A multicentre bonding",
+        "url": "https://chem.libretexts.org/@api/deki/pages/89551/pdf/18.5%253A%2BGroup%2B3A%2BElements.pdf"
+      },
+      {
+        "title": "OpenStax: resonance and fixed nuclear arrangements",
+        "url": "https://openstax.org/books/chemistry-2e/pages/7-4-formal-charges-and-resonance"
+      }
+    ]
+  }
+} as const;

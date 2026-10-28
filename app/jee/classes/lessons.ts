@@ -1183,7 +1183,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "atomic-structure", subject: "Chemistry", unit: 2, number: "C08", title: atomicStructure.title,
-    description: "Twenty-five narrated chapters on atomic structure, 3s radial nodes, isotope shifts, uncertainty energy bounds, photoelectric graphs, spectra and quantum states.",
+    description: "Twenty-nine narrated chapters on atomic structure, angular momentum, Pauli counting, collision excitation, spectra and supporting transition rules.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 2 foundation with original practice. The Atomic Structure and Atomic Spectra written lessons complement this class. Fuller wavefunction derivations and additional configuration problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.atomic-structure.lecture.v1",
     audio: "/lectures/atomic-structure/narration-marin.mp3",
@@ -1193,7 +1193,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "chemical-bonding", subject: "Chemistry", unit: 3, number: "C09", title: chemicalBonding.title,
-    description: "Twenty-five narrated chapters on bonding, simplified HF orbitals, bond-energy curves, NO2 radicals, positional dipoles, lattice cycles and molecular shape.",
+    description: "Twenty-nine narrated chapters on bonding, orbital phase, diborane bridges, supporting XeF2 multicentre models, resonance, lattice cycles and molecular shape.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 3 foundation with original practice. Further multivalent lattice cycles, detailed heteronuclear orbital mixing and additional shape comparisons remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.chemical-bonding.lecture.v1",
     audio: "/lectures/chemical-bonding/narration-marin.mp3",
