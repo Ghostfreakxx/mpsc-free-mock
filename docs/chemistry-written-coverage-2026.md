@@ -19,8 +19,8 @@ Questions are original practice, not represented as official PYQs.
 | 1 | [Mole Concept](/jee/classes/mole-concept) | 25 | 22 | 15 | 40 / 40 |
 | 2 | [Atomic Structure](/jee/classes/atomic-structure) | 29 | 26 | 18 | 50 / 50 |
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 29 | 28 | 18 | 50 / 50 |
-| 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 27 | 29 | 18 | 42 / 42 |
-| 5 | [Solutions](/jee/classes/solutions) | 27 | 29 | 18 | 42 / 42 |
+| 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 31 | 33 | 21 | 50 / 50 |
+| 5 | [Solutions](/jee/classes/solutions) | 31 | 33 | 21 | 50 / 50 |
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 25 | 25 | 19 | 42 / 42 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 26 | 27 | 19 | 42 / 42 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 26 | 29 | 22 | 50 / 50 |
@@ -39,7 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Organic Oxygen adds Lucas-test limitations, unrearranged dehydration isomer counts, ester–Grignard carbon ledgers, acid-proton quenching, strong hydride ester reduction, phenol O-acylation, keto–enol distinctions and balanced haloform limiting-reagent calculations. A comparative diagram tracks both ester carbon fragments through work-up. Conditions and ideal stoichiometric assumptions remain explicit.
+Thermodynamics adds matched-state isomer combustion cycles, water-phase enthalpy corrections, the fixed-temperature/pressure useful-work limit and a supporting piecewise correction across reactant melting.
+
+Solutions adds supporting ideal bubble/dew comparisons, inverse two-solute composition, closed-vessel Henry-law balances and anhydrous-solute crystallization. Diagrams show the phase-dependent enthalpy jump and distinguish the first liquid drop from the first vapor bubble.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -55,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax’s organic chemistry teaching, Lisa Nichols’s chemical-test observations and William Reusch’s haloform reaction text. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference OpenStax’s thermochemistry and solution teaching, the Shepherd thermodynamics supplement and the Kitchin Research Group’s ideal phase calculations. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

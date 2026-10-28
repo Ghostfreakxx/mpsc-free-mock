@@ -29,6 +29,10 @@
     {
       "title": "OpenStax: partial pressures of gas mixtures",
       "url": "https://openstax.org/books/chemistry-2e/pages/9-3-stoichiometry-of-gaseous-substances-mixtures-and-reactions"
+    },
+    {
+      "title": "Kitchin Research Group: ideal bubble and dew calculations",
+      "url": "https://kitchingroup.cheme.cmu.edu/differentiable-flowsheets/docs/thermodynamics.html"
     }
   ],
   "chapters": [
@@ -859,6 +863,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Supporting dew-point calculation starts with vapour composition",
+      "formula": "1/Pdew=yA/PA*+yB/PB*; xi=yiPdew/Pi* for an ideal binary system",
+      "script": "A liquid composition and a vapor composition are different inputs to a phase equilibrium calculation. This supporting binary example assumes ideal liquid behavior and ideal vapor with no other gas; it excludes nonideal mixtures and azeotropes. At a fixed temperature, component A has a pure vapor pressure of one hundred kilopascals, while component B has forty kilopascals. If a liquid has equal mole fractions of the two components, Raoult's law gives a bubble pressure of seventy kilopascals. The first vapor bubble is richer in the more volatile component A, with mole fraction five sevenths. Now start instead with a vapor having equal mole fractions. To find the pressure where its first liquid drop appears, write each liquid fraction as its vapor fraction times total pressure divided by its pure vapor pressure. The two liquid fractions must sum to one. The reciprocal dew pressure is therefore one half over one hundred plus one half over forty, giving pressure four hundred sevenths, about fifty seven point one four kilopascals. The first drop has A fraction two sevenths and B fraction five sevenths. Equal vapor fractions do not mean equal liquid fractions.",
+      "points": [
+        "PA*=100; PB*=40 kPa · Equal liquid: Pbubble=70 · First vapour yA=5/7",
+        "Equal vapour yA=yB=.5 · 1/P=.5/100+.5/40 · Pdew=400/7≈57.14 kPa",
+        "First liquid xA=yAP/PA* · xA=2/7; xB=5/7 · Liquid and vapour differ"
+      ],
+      "board": {
+        "heading": "Supporting dew-point calculation starts with vapour composition",
+        "columns": [
+          "Given / state",
+          "Calculation",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "PA*=100; PB*=40 kPa",
+            "Equal liquid: Pbubble=70",
+            "First vapour yA=5/7"
+          ],
+          [
+            "Equal vapour yA=yB=.5",
+            "1/P=.5/100+.5/40",
+            "Pdew=400/7≈57.14 kPa"
+          ],
+          [
+            "First liquid xA=yAP/PA*",
+            "xA=2/7; xB=5/7",
+            "Liquid and vapour differ"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Mass and particle amount can resolve a two-solute mixture",
+      "formula": "nU+nG=πV/(RT); 60nU+180nG=total solute mass in grams",
+      "script": "A colligative observation usually measures total dissolved particle amount rather than identifying each solute. A second independent mass constraint can make a two component composition problem solvable. Use an ideal dilute mixture containing only urea and glucose, neither dissociating nor associating. Assign molar masses sixty and one hundred eighty grams per mole. Suppose the total solute mass is four point eight zero grams and an osmotic measurement gives total particle amount zero point zero four zero zero mole through pressure times solution volume divided by R T. Let urea and glucose amounts be u and g. Particle counting gives u plus g equals zero point zero four zero zero. Mass gives sixty u plus one hundred eighty g equals four point eight zero. Subtract sixty times the particle equation from the mass equation. The result is one hundred twenty times the glucose amount equals two point four zero grams, so glucose amount is zero point zero two zero zero mole and the urea amount is the same. Their masses are one point two zero and three point six zero grams. A second colligative measurement proportional to the same particle amount would only cross check that constraint, not automatically add independent chemical identification.",
+      "points": [
+        "Urea60; glucose180 g/mol · nU+nG=.0400 mol · Total mass4.80 g",
+        "Subtract60×particle equation · 120nG=2.40 g · nG=nU=.0200 mol",
+        "Masses1.20 and3.60 g · Need independent constraints · Another particle count may be redundant"
+      ],
+      "board": {
+        "heading": "Mass and particle amount can resolve a two-solute mixture",
+        "columns": [
+          "Given / state",
+          "Calculation",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "Urea60; glucose180 g/mol",
+            "nU+nG=.0400 mol",
+            "Total mass4.80 g"
+          ],
+          [
+            "Subtract60×particle equation",
+            "120nG=2.40 g",
+            "nG=nU=.0200 mol"
+          ],
+          [
+            "Masses1.20 and3.60 g",
+            "Need independent constraints",
+            "Another particle count may be redundant"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Closed-vessel gas dissolution couples Henry law to conservation",
+      "formula": "Dilute model: ntotal=P[Vgas/(RT)+nsolvent/kH], using P=kH x and x≈ndiss/nsolvent",
+      "script": "Henry's law relates dissolved gas to its equilibrium partial pressure, but a sealed vessel does not provide an unlimited gas reservoir. The pressure must also satisfy conservation of the gas between headspace and liquid. Use a supplied dilute model for one nonreacting gas, neglecting solvent vapor and changes in liquid or headspace volume. Henry's convention is pressure equals k H times dissolved mole fraction. Approximate that mole fraction by dissolved gas moles divided by solvent moles. Let solvent amount be ten moles, k H one thousand bar, headspace volume one liter, and R T twenty five liter bar per mole. The gas phase contains pressure times one over twenty five moles, while the dissolved amount is pressure times ten over one thousand moles. Together these are zero point zero five times pressure in bar. With total gas zero point zero five zero mole, pressure is approximately one bar, partitioned into zero point zero four zero mole in the headspace and zero point zero one zero mole dissolved. The dissolved fraction is twenty percent in this stated approximation. Henry constants and the gas volume term have different roles. Open reservoir reasoning cannot replace the sealed vessel balance.",
+      "points": [
+        "nsolvent10 mol; kH1000 bar · Vgas1 L; RT25 L bar/mol · ntotal=.050 mol",
+        "ngas=.040P; ndiss≈.010P · Conservation:.050=.050P · P≈1 bar",
+        "ngas≈.040; ndiss≈.010 mol · 20% of gas dissolved · Dilute approximation; sealed vessel"
+      ],
+      "board": {
+        "heading": "Closed-vessel gas dissolution couples Henry law to conservation",
+        "columns": [
+          "Given / state",
+          "Calculation",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "nsolvent10 mol; kH1000 bar",
+            "Vgas1 L; RT25 L bar/mol",
+            "ntotal=.050 mol"
+          ],
+          [
+            "ngas=.040P; ndiss≈.010P",
+            "Conservation:.050=.050P",
+            "P≈1 bar"
+          ],
+          [
+            "ngas≈.040; ndiss≈.010 mol",
+            "20% of gas dissolved",
+            "Dilute approximation; sealed vessel"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Solute crystals do not count as dissolved colligative particles",
+      "formula": "Use dissolved solute mass after equilibration; anhydrous solute precipitation leaves solvent mass unchanged",
+      "script": "A colligative formula must use particles actually dissolved in the liquid, not every gram originally placed in the vessel. Consider a stipulated equilibrium endpoint containing one hundred grams of liquid water and twenty grams total of an anhydrous nonvolatile nonelectrolyte. Its molar mass is one hundred grams per mole, and the supplied solubility at the endpoint is ten grams per one hundred grams of water. Assume no evaporation, no ice, no hydrate formation and no other reaction. Only ten grams can remain dissolved at this equilibrium; the other ten grams are solute crystals. The dissolved amount is zero point one zero mole in zero point one zero kilogram of solvent, so the liquid molality is one point zero, rather than two point zero from counting all twenty grams. If a problem applies an ideal freezing depression model to this stipulated liquid composition with cryoscopic constant one point eight six, the predicted depression is one point eight six kelvin. That calculation is not a complete cooling path: solubility can change with temperature and ice formation would change the solvent inventory. State which solid phase has separated before updating the denominator or counting particles.",
+      "points": [
+        "100 g water;20 g total solute · Solubility10 g/100 g water · 10 g dissolved;10 g crystals",
+        "Msolute=100 g/mol · ndiss=.10 mol; water=.10 kg · Liquid molality1.0 m",
+        "Ideal Kf=1.86 at this composition · ΔTf=1.86 K in model · No ice or hydrate in supplied endpoint"
+      ],
+      "board": {
+        "heading": "Solute crystals do not count as dissolved colligative particles",
+        "columns": [
+          "Given / state",
+          "Calculation",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "100 g water;20 g total solute",
+            "Solubility10 g/100 g water",
+            "10 g dissolved;10 g crystals"
+          ],
+          [
+            "Msolute=100 g/mol",
+            "ndiss=.10 mol; water=.10 kg",
+            "Liquid molality1.0 m"
+          ],
+          [
+            "Ideal Kf=1.86 at this composition",
+            "ΔTf=1.86 K in model",
+            "No ice or hydrate in supplied endpoint"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1323,6 +1467,94 @@
       ],
       "answer": 1,
       "explanation": "Use the remaining liquid molality .500 mol/kg: ΔTf=1.86×.500=.930 K, rather than reusing the initial denominator."
+    },
+    {
+      "question": "For ideal PA*=100,PB*=40 kPa and equal vapor fractions, the dew pressure is:",
+      "options": [
+        "70 kPa",
+        "400/7 kPa",
+        "100 kPa",
+        "40 kPa"
+      ],
+      "answer": 1,
+      "explanation": "1/P=.5/100+.5/40=.0175 kPa−1, so P=400/7≈57.14 kPa."
+    },
+    {
+      "question": "The first liquid drop in that equal-vapor example has xA:",
+      "options": [
+        "1/2",
+        "5/7",
+        "2/7",
+        "1"
+      ],
+      "answer": 2,
+      "explanation": "Raoult and Dalton give xA=yAP/PA*=.5×(400/7)/100=2/7 for the first liquid drop, not the vapor."
+    },
+    {
+      "question": "An ideal urea/glucose mixture has4.80 g total mass and.0400 mol total particles, with molar masses60 and180. The glucose amount is:",
+      "options": [
+        ".0400 mol",
+        ".0100 mol",
+        ".0300 mol",
+        ".0200 mol"
+      ],
+      "answer": 3,
+      "explanation": "Subtract60(nU+nG)=2.40 g from the mass equation:120nG=2.40 g."
+    },
+    {
+      "question": "Which extra datum independently resolves two known solutes after their total particle amount is known?",
+      "options": [
+        "Their total mass when their known molar masses differ",
+        "Any second number proportional to the same particle amount",
+        "The color of the container",
+        "A repeated reading of identical information"
+      ],
+      "answer": 0,
+      "explanation": "Mass and particle amount supply independent equations when the molar masses differ."
+    },
+    {
+      "question": "In the supplied closed-gas dilute model,.050 mol=P(.040+.010) mol/bar. P is:",
+      "options": [
+        "5 bar",
+        "1 bar",
+        ".050 bar",
+        "25 bar"
+      ],
+      "answer": 1,
+      "explanation": "The gas and dissolved inventories add; P=.050/.050=1 bar in the stipulated approximation."
+    },
+    {
+      "question": "The approximate dissolved fraction of total gas in that model is:",
+      "options": [
+        "80%",
+        "1%",
+        "20%",
+        "100%"
+      ],
+      "answer": 2,
+      "explanation": ".010 mol dissolved out of.050 mol total gives20%; the remainder is in the headspace."
+    },
+    {
+      "question": "20 g total solute is equilibrated with100 g water, but only10 g is soluble at the stated endpoint. Msolute=100 g/mol. Liquid molality is:",
+      "options": [
+        "2.0 m",
+        ".10 m",
+        "10 m",
+        "1.0 m"
+      ],
+      "answer": 3,
+      "explanation": "Only the dissolved10 g counts:10/100=.10 mol, then.10/.100=1.0 mol/kg."
+    },
+    {
+      "question": "Which separated solid leaves solvent mass unchanged in the stipulated no-evaporation model?",
+      "options": [
+        "Anhydrous solute crystals",
+        "Pure ice",
+        "A hydrate incorporating solvent",
+        "All solids under every condition"
+      ],
+      "answer": 0,
+      "explanation": "Anhydrous solute crystals remove solute only; ice or hydrate formation changes the liquid solvent inventory."
     }
   ]
 }

@@ -1949,3 +1949,255 @@ Solute crystallization, solid solution formation, association or strong
 
 00:35:46.680 --> 00:35:50.980
 nonideality would invalidate the stipulated pure ice and dilute liquid model.
+
+00:35:51.144 --> 00:35:55.104
+A liquid composition and a vapor composition are different inputs to a phase
+
+00:35:55.104 --> 00:35:56.204
+equilibrium calculation.
+
+00:35:56.984 --> 00:36:00.664
+This supporting binary example assumes ideal liquid behavior and ideal vapor
+
+00:36:00.924 --> 00:36:05.084
+with no other gas; it excludes nonideal mixtures and azeotropes.
+
+00:36:05.664 --> 00:36:09.424
+At a fixed temperature, component A has a pure vapor pressure of one hundred
+
+00:36:09.424 --> 00:36:13.124
+kilopascals, while component B has forty kilopascals.
+
+00:36:14.124 --> 00:36:18.084
+If a liquid has equal mole fractions of the two components, Raoult's law gives
+
+00:36:18.084 --> 00:36:20.304
+a bubble pressure of seventy kilopascals.
+
+00:36:21.304 --> 00:36:25.304
+The first vapor bubble is richer in the more volatile component A, with mole
+
+00:36:25.304 --> 00:36:26.664
+fraction five sevenths.
+
+00:36:27.664 --> 00:36:30.224
+Now start instead with a vapor having equal mole fractions.
+
+00:36:31.004 --> 00:36:34.384
+To find the pressure where its first liquid drop appears, write each liquid
+
+00:36:34.384 --> 00:36:38.144
+fraction as its vapor fraction times total pressure divided by its pure vapor
+
+00:36:38.144 --> 00:36:38.464
+pressure.
+
+00:36:39.144 --> 00:36:41.204
+The two liquid fractions must sum to one.
+
+00:36:41.904 --> 00:36:46.124
+The reciprocal dew pressure is therefore one half over one hundred plus one
+
+00:36:46.124 --> 00:36:50.223
+half over forty, giving pressure four hundred sevenths, about fifty seven
+
+00:36:50.223 --> 00:36:50.504
+point
+
+00:36:50.504 --> 00:36:51.844
+one four kilopascals.
+
+00:36:52.824 --> 00:36:57.224
+The first drop has A fraction two sevenths and B fraction five sevenths.
+
+00:36:57.564 --> 00:36:59.964
+Equal vapor fractions do not mean equal liquid fractions.
+
+00:37:00.408 --> 00:37:05.088
+A colligative observation usually measures total dissolved particle amount
+
+00:37:05.088 --> 00:37:07.388
+rather than identifying each solute.
+
+00:37:08.148 --> 00:37:11.868
+A second independent mass constraint can make a two component composition
+
+00:37:11.868 --> 00:37:12.948
+problem solvable.
+
+00:37:14.088 --> 00:37:18.348
+Use an ideal dilute mixture containing only urea and glucose, neither
+
+00:37:18.348 --> 00:37:20.408
+dissociating nor associating.
+
+00:37:21.588 --> 00:37:24.828
+Assign molar masses sixty and one hundred eighty grams per mole.
+
+00:37:25.628 --> 00:37:30.328
+Suppose the total solute mass is four point eight zero grams and an osmotic
+
+00:37:30.328 --> 00:37:34.708
+measurement gives total particle amount zero point zero four zero zero mole
+
+00:37:35.268 --> 00:37:39.488
+through pressure times solution volume divided by R T.
+
+00:37:39.488 --> 00:37:41.948
+Let urea and glucose amounts be u and g.
+
+00:37:42.948 --> 00:37:48.148
+Particle counting gives u plus g equals zero point zero four zero zero.
+
+00:37:48.148 --> 00:37:53.128
+Mass gives sixty u plus one hundred eighty g equals four point eight zero.
+
+00:37:53.128 --> 00:37:56.828
+Subtract sixty times the particle equation from the mass equation.
+
+00:37:57.688 --> 00:38:01.477
+The result is one hundred twenty times the glucose amount equals two point
+
+00:38:01.477 --> 00:38:01.681
+four
+
+00:38:01.681 --> 00:38:06.928
+zero grams, so glucose amount is zero point zero two zero zero mole and the
+
+00:38:06.928 --> 00:38:07.908
+urea amount is the same.
+
+00:38:08.708 --> 00:38:12.208
+Their masses are one point two zero and three point six zero grams.
+
+00:38:12.908 --> 00:38:16.558
+A second colligative measurement proportional to the same particle amount
+
+00:38:16.558 --> 00:38:16.808
+would
+
+00:38:16.808 --> 00:38:21.088
+only cross check that constraint, not automatically add independent chemical
+
+00:38:21.088 --> 00:38:21.588
+identification.
+
+00:38:22.056 --> 00:38:27.396
+Henry's law relates dissolved gas to its equilibrium partial pressure, but a
+
+00:38:27.396 --> 00:38:30.016
+sealed vessel does not provide an unlimited gas reservoir.
+
+00:38:30.876 --> 00:38:35.196
+The pressure must also satisfy conservation of the gas between headspace and
+
+00:38:35.196 --> 00:38:35.396
+liquid.
+
+00:38:36.436 --> 00:38:40.656
+Use a supplied dilute model for one nonreacting gas, neglecting solvent vapor
+
+00:38:41.096 --> 00:38:43.096
+and changes in liquid or headspace volume.
+
+00:38:43.876 --> 00:38:47.996
+Henry's convention is pressure equals k H times dissolved mole fraction.
+
+00:38:48.716 --> 00:38:52.888
+Approximate that mole fraction by dissolved gas moles divided by solvent
+
+00:38:52.888 --> 00:38:53.236
+moles.
+
+00:38:54.236 --> 00:38:58.876
+Let solvent amount be ten moles, k H one thousand bar, headspace volume one
+
+00:38:58.876 --> 00:39:01.616
+liter, and R T twenty five liter bar per mole.
+
+00:39:02.156 --> 00:39:06.416
+The gas phase contains pressure times one over twenty five moles, while the
+
+00:39:06.416 --> 00:39:09.636
+dissolved amount is pressure times ten over one thousand moles.
+
+00:39:10.416 --> 00:39:13.416
+Together these are zero point zero five times pressure in bar.
+
+00:39:13.976 --> 00:39:19.076
+With total gas zero point zero five zero mole, pressure is approximately one
+
+00:39:19.076 --> 00:39:23.636
+bar, partitioned into zero point zero four zero mole in the headspace and zero
+
+00:39:23.636 --> 00:39:25.336
+point zero one zero mole dissolved.
+
+00:39:26.356 --> 00:39:29.856
+The dissolved fraction is twenty percent in this stated approximation.
+
+00:39:30.756 --> 00:39:33.756
+Henry constants and the gas volume term have different roles.
+
+00:39:34.496 --> 00:39:37.696
+Open reservoir reasoning cannot replace the sealed vessel balance.
+
+00:39:37.968 --> 00:39:42.508
+A colligative formula must use particles actually dissolved in the liquid, not
+
+00:39:42.508 --> 00:39:44.428
+every gram originally placed in the vessel.
+
+00:39:45.688 --> 00:39:49.488
+Consider a stipulated equilibrium endpoint containing one hundred grams of
+
+00:39:49.488 --> 00:39:53.349
+liquid water and twenty grams total of an anhydrous nonvolatile
+
+00:39:53.349 --> 00:39:54.268
+nonelectrolyte.
+
+00:39:54.688 --> 00:39:58.368
+Its molar mass is one hundred grams per mole, and the supplied solubility at
+
+00:39:58.368 --> 00:40:00.908
+the endpoint is ten grams per one hundred grams of water.
+
+00:40:01.748 --> 00:40:05.788
+Assume no evaporation, no ice, no hydrate formation and no other reaction.
+
+00:40:05.788 --> 00:40:10.308
+Only ten grams can remain dissolved at this equilibrium; the other ten grams
+
+00:40:10.308 --> 00:40:11.308
+are solute crystals.
+
+00:40:12.448 --> 00:40:16.088
+The dissolved amount is zero point one zero mole in zero point one zero
+
+00:40:16.088 --> 00:40:20.728
+kilogram of solvent, so the liquid molality is one point zero, rather than two
+
+00:40:20.728 --> 00:40:22.508
+point zero from counting all twenty grams.
+
+00:40:23.368 --> 00:40:26.968
+If a problem applies an ideal freezing depression model to this stipulated
+
+00:40:26.968 --> 00:40:31.548
+liquid composition with cryoscopic constant one point eight six, the predicted
+
+00:40:31.548 --> 00:40:33.528
+depression is one point eight six kelvin.
+
+00:40:34.308 --> 00:40:38.548
+That calculation is not a complete cooling path: solubility can change with
+
+00:40:38.548 --> 00:40:41.528
+temperature and ice formation would change the solvent inventory.
+
+00:40:42.868 --> 00:40:46.248
+State which solid phase has separated before updating the denominator or
+
+00:40:46.248 --> 00:40:46.908
+counting particles.

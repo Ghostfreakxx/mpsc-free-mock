@@ -53,6 +53,10 @@
     {
       "title": "Patrick Fleming, CSU East Bay: integrated van’t Hoff equation",
       "url": "https://chemistry.csueastbay.edu/~pfleming/chem/351/chap10/vantHoff.htm"
+    },
+    {
+      "title": "Shepherd supplement: molar reaction enthalpy and Kirchhoff equation",
+      "url": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Chemical_Thermodynamics_(Supplement_to_Shepherd_et_al.)/18%3A_Fundamental_13_-_Composition_Changes/18.04%3A_Molar_Reaction_Enthalpy"
     }
   ],
   "chapters": [
@@ -875,6 +879,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Isomer combustion cycles compare enthalpies at matched states",
+      "formula": "ΔH(A→B)=ΔcH(A)−ΔcH(B), when both combustion endpoints match",
+      "script": "Two isomers can have the same molecular formula but different enthalpies. A combustion cycle can measure their difference if the product amounts, product phases and temperature match. Use supplied illustrative molar combustion enthalpies minus three thousand kilojoules for isomer A and minus two thousand nine hundred eighty for isomer B, each leading to the same carbon dioxide and liquid water endpoint. Burn A, then reverse the combustion equation for B. Oxygen and all combustion products cancel, leaving A converting into B. The enthalpy change is minus three thousand minus minus two thousand nine hundred eighty, giving minus twenty kilojoules per mole. B is therefore lower in enthalpy by twenty kilojoules per mole for the stated phases and conditions. Do not reverse this conclusion because A releases more heat on combustion: its larger release starts from the higher enthalpy state. Enthalpy ordering alone does not establish a Gibbs energy ordering, an equilibrium composition or a reaction rate. Entropy, temperature and activation barriers are separate information. If the combustion data use different water phases or different temperatures, correct those endpoints before subtracting the numbers.",
+      "points": [
+        "A and B: same formula · Same combustion products/phases · Subtract only matched endpoints",
+        "ΔcH(A)=−3000; B=−2980 · ΔH(A→B)=−20 kJ/mol · B is lower in enthalpy",
+        "H ordering is not G ordering · Entropy and T still matter · No rate or yield follows"
+      ],
+      "board": {
+        "heading": "Isomer combustion cycles compare enthalpies at matched states",
+        "columns": [
+          "Given / state",
+          "Calculation",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "A and B: same formula",
+            "Same combustion products/phases",
+            "Subtract only matched endpoints"
+          ],
+          [
+            "ΔcH(A)=−3000; B=−2980",
+            "ΔH(A→B)=−20 kJ/mol",
+            "B is lower in enthalpy"
+          ],
+          [
+            "H ordering is not G ordering",
+            "Entropy and T still matter",
+            "No rate or yield follows"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Changing product water phase changes combustion enthalpy",
+      "formula": "ΔcH(to H2O(g))=ΔcH(to H2O(l))+ν(H2O)ΔvapH",
+      "script": "A combustion enthalpy is incomplete unless the product states are specified. Producing water vapor leaves the products at a higher enthalpy than producing liquid water at the same temperature. In a supplied methane example, take the combustion enthalpy to carbon dioxide gas and two liquid water molecules as minus eight hundred ninety kilojoules per mole of methane. Use an illustrative water vaporization enthalpy of forty four kilojoules per mole at that same temperature. To change the endpoint to two water vapor molecules, add two vaporization steps, a total of plus eighty eight kilojoules. The gas water combustion enthalpy is therefore minus eight hundred two kilojoules per mole. It remains exothermic but releases less heat in magnitude because the water has not condensed. Reversing the endpoint change requires subtracting those vaporization contributions. The coefficient is the number of water moles produced per written reaction, not the number of hydrogen atoms. These are matched temperature enthalpy corrections, not an instruction to use a boiling point latent heat at an unrelated temperature without adjustment. Always attach the phase labels before comparing fuel energy data.",
+      "points": [
+        "CH4 gives 2 H2O · Liquid-water endpoint:−890 · Units: kJ/mol CH4",
+        "At same T: ΔvapH=44 · Add 2×44=88 kJ/mol · Gas-water endpoint:−802",
+        "Vapor endpoint has higher H · Less exothermic by88 · Do not mix temperatures"
+      ],
+      "board": {
+        "heading": "Changing product water phase changes combustion enthalpy",
+        "columns": [
+          "Given / state",
+          "Calculation",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "CH4 gives 2 H2O",
+            "Liquid-water endpoint:−890",
+            "Units: kJ/mol CH4"
+          ],
+          [
+            "At same T: ΔvapH=44",
+            "Add 2×44=88 kJ/mol",
+            "Gas-water endpoint:−802"
+          ],
+          [
+            "Vapor endpoint has higher H",
+            "Less exothermic by88",
+            "Do not mix temperatures"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Maximum useful work needs a sign convention and fixed conditions",
+      "formula": "At fixed T,p: wnon-PV,on,rev=ΔG; maximum useful work delivered=−ΔG for ΔG<0",
+      "script": "Gibbs energy connects a process to a limit on useful work when temperature and pressure are held fixed. Use the chemistry sign convention in which work done on the system is positive. For a reversible process between specified states at fixed temperature and pressure, the nonexpansion work done on the system equals its Gibbs energy change. If that change is minus forty kilojoules, the maximum useful work delivered to the surroundings has positive magnitude forty kilojoules. The work on the system is negative forty; these are two descriptions with opposite sign conventions, not contradictory answers. Pressure volume displacement work is excluded from this useful nonexpansion work limit. Actual irreversible operation delivers less useful work for the same specified overall state change. A device delivering twenty five kilojoules in this example falls below the forty kilojoule limit; it does not violate energy conservation because heat and other energy transfers also enter the full balance. Do not substitute enthalpy for Gibbs energy or use a standard reaction value for an arbitrary nonstandard finite transformation. Identify the actual states, the environmental constraints and whether the requested answer is work on the system or work delivered.",
+      "points": [
+        "Fixed T,p; specified states · Reversible non-PV work on = ΔG · Pressure-volume work excluded",
+        "ΔG=−40 kJ · Maximum delivered magnitude40 · Work on system=−40",
+        "Irreversible delivered work25 · Below the40 kJ limit · Not all enthalpy becomes useful work"
+      ],
+      "board": {
+        "heading": "Maximum useful work needs a sign convention and fixed conditions",
+        "columns": [
+          "Given / state",
+          "Calculation",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "Fixed T,p; specified states",
+            "Reversible non-PV work on = ΔG",
+            "Pressure-volume work excluded"
+          ],
+          [
+            "ΔG=−40 kJ",
+            "Maximum delivered magnitude40",
+            "Work on system=−40"
+          ],
+          [
+            "Irreversible delivered work25",
+            "Below the40 kJ limit",
+            "Not all enthalpy becomes useful work"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A melting reactant adds a discontinuity to a temperature correction",
+      "formula": "ΔH400=ΔH300+∫300^350ΔCp,s dT−ΔfusH(A)+∫350^400ΔCp,l dT",
+      "script": "A reaction enthalpy temperature correction must follow the actual phases. Consider an illustrative one to one conversion of A into B at a fixed pressure. At three hundred kelvin both substances are solids and the reaction enthalpy is twenty kilojoules per mole. A melts at three hundred fifty kelvin with fusion enthalpy five kilojoules per mole, while B remains solid to four hundred kelvin. Use constant molar heat capacities thirty for solid A, fifty for liquid A and forty for solid B, all in joules per mole kelvin. From three hundred to three hundred fifty, products minus reactants gives plus ten joules per mole kelvin, raising the reaction enthalpy by half a kilojoule. Melting raises the reactant enthalpy by five kilojoules, so the reaction enthalpy drops by five, not rises. Above the transition, the heat capacity difference is minus ten, giving another negative half kilojoule. The final reaction enthalpy for liquid A becoming solid B at four hundred kelvin is fifteen kilojoules per mole. A single heat capacity integral that omits fusion cannot connect these endpoints. This supporting piecewise model assumes no other transition or temperature dependence.",
+      "points": [
+        "300→350 K; both solids · ΔCp=40−30=+10 J/mol K · ΔH:20→20.5 kJ/mol",
+        "A melts at350 K · Reactant H rises by5 · Reaction ΔH drops to15.5",
+        "350→400 K; A liquid · ΔCp=40−50=−10 · Final ΔH=15 kJ/mol"
+      ],
+      "board": {
+        "heading": "A melting reactant adds a discontinuity to a temperature correction",
+        "columns": [
+          "Given / state",
+          "Calculation",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "300→350 K; both solids",
+            "ΔCp=40−30=+10 J/mol K",
+            "ΔH:20→20.5 kJ/mol"
+          ],
+          [
+            "A melts at350 K",
+            "Reactant H rises by5",
+            "Reaction ΔH drops to15.5"
+          ],
+          [
+            "350→400 K; A liquid",
+            "ΔCp=40−50=−10",
+            "Final ΔH=15 kJ/mol"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1339,6 +1483,94 @@
       ],
       "answer": 3,
       "explanation": "Different reaction amounts, solution states or sign conventions can change the difference; the supplied cycle does not justify a universal weak-acid value."
+    },
+    {
+      "question": "Matched isomer combustion enthalpies are A:−3000 and B:−2980 kJ/mol. ΔH for A→B is:",
+      "options": [
+        "−20 kJ/mol",
+        "+20 kJ/mol",
+        "−5980 kJ/mol",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "Burn A and reverse B combustion:−3000−(−2980)=−20 kJ/mol."
+    },
+    {
+      "question": "What follows from that negative isomerization enthalpy alone?",
+      "options": [
+        "B must form instantly",
+        "B is lower in enthalpy in the stated phases; Gibbs preference needs more data",
+        "All entropy changes vanish",
+        "Equilibrium must contain only B"
+      ],
+      "answer": 1,
+      "explanation": "Enthalpy is not Gibbs energy or activation energy; T and entropy are still needed."
+    },
+    {
+      "question": "Methane combustion to2H2O(l) has ΔH=−890 kJ/mol. At the same T, ΔvapH(H2O)=44 kJ/mol. The gas-water endpoint has ΔH:",
+      "options": [
+        "−934 kJ/mol",
+        "−978 kJ/mol",
+        "−802 kJ/mol",
+        "+802 kJ/mol"
+      ],
+      "answer": 2,
+      "explanation": "Add2×44=88 to−890, because vapor products have higher enthalpy."
+    },
+    {
+      "question": "The phase-correction multiplier2 in that methane example counts:",
+      "options": [
+        "Hydrogen atoms per water",
+        "All reactant gas moles",
+        "Carbon dioxide atoms",
+        "Moles of water produced per written methane reaction"
+      ],
+      "answer": 3,
+      "explanation": "Each of the two product water moles is vaporized once."
+    },
+    {
+      "question": "For a specified fixed-T,p process with ΔG=−40 kJ, maximum reversible useful work delivered has magnitude:",
+      "options": [
+        "40 kJ",
+        "−40 kJ as a positive magnitude",
+        "25 kJ necessarily",
+        "Equal to ΔH in every process"
+      ],
+      "answer": 0,
+      "explanation": "Useful work delivered has magnitude−ΔG=40 kJ; non-PV work on the system is−40 kJ."
+    },
+    {
+      "question": "Which work is excluded from this Gibbs useful-work limit?",
+      "options": [
+        "Electrical work",
+        "Pressure–volume displacement work",
+        "Every kind of work",
+        "Only work expressed in joules"
+      ],
+      "answer": 1,
+      "explanation": "At fixed T,p, ΔG bounds nonexpansion work; it is not a total-work formula including PV work."
+    },
+    {
+      "question": "In the supplied phase-crossing model, ΔH300=20 kJ/mol, corrections are+.5,−5 and−.5 kJ/mol. ΔH400 is:",
+      "options": [
+        "25 kJ/mol",
+        "20 kJ/mol",
+        "15 kJ/mol",
+        "14 kJ/mol"
+      ],
+      "answer": 2,
+      "explanation": "20+.5−5−.5=15 kJ/mol, for liquid A becoming solid B at400 K."
+    },
+    {
+      "question": "Why does melting only the reactant lower the reaction enthalpy at the transition?",
+      "options": [
+        "Fusion removes all energy",
+        "Reaction H is reactants minus products",
+        "The product must melt too",
+        "Reactant enthalpy rises, and ΔrH is products minus reactants"
+      ],
+      "answer": 3,
+      "explanation": "A positive fusion enthalpy raises the reactant term that is subtracted."
     }
   ]
 }
