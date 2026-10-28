@@ -28,20 +28,20 @@ Questions are original practice, not represented as official PYQs.
 | 10 | [P-Block](/jee/classes/p-block) | 27 | 25 | 15 | 42 / 42 |
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 27 | 25 | 15 | 42 / 42 |
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 26 | 29 | 22 | 50 / 50 |
-| 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 25 | 25 | 15 | 40 / 40 |
+| 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 29 | 29 | 18 | 48 / 48 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 25 | 28 | 20 | 44 / 44 |
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 29 | 29 | 18 | 48 / 48 |
 | 16 | [Organic Halogens](/jee/classes/organic-halogens) | 29 | 29 | 18 | 48 / 48 |
 | 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 27 | 25 | 15 | 40 / 40 |
 | 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 29 | 29 | 18 | 48 / 48 |
 | 19 | [Biomolecules](/jee/classes/biomolecules) | 29 | 29 | 18 | 48 / 48 |
-| 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 25 | 25 | 15 | 40 / 40 |
+| 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 29 | 29 | 18 | 48 / 48 |
 
 ## Latest expansion
 
-Organic Nitrogen adds classical diazonium fluorination, removal of a temporary amino directing group, reductive amination and a supporting maintained-pH extraction model with explicit neutral partitioning.
+Purification and Analysis adds independent two-solute crystallization balances, reduced-pressure boiling from supplied data, supporting column retention/resolution and worst-case gravimetric bounds. The chromatography diagram keeps the same peak centres while changing their widths.
 
-Biomolecules adds glucose pentaacetate carbonyl evidence, directed peptide-fragment inference, supporting side-chain pI estimates and a structure–reactivity explanation of RNA backbone cleavage. The peptide and charge-state diagrams use independently checked data; the scope does not imply full sequencing or advanced nucleic-acid mechanism coverage.
+Practical Chemistry adds combined silver-halide/ammonia evidence, Al/Fe hydroxide comparisons, sulfate/sulfite acid response and ammonium proton-transfer accounting. The individual observations are contextual evidence rather than a claim of complete systematic ion analysis.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference NCERT amine/glucose reaction evidence, OpenStax arylamine, reductive-amination, peptide and amino-acid teaching, and UC San Diego phosphate-transfer notes. Numerical datasets, reaction maps and MCQs in this batch are original practice.
+The notes reference Lisa Nichols’s crystallization and vacuum-distillation teaching, David Harvey’s chromatography theory, OpenStax coupled equilibria and NCERT’s qualitative-analysis laboratory manual. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

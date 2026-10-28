@@ -34,7 +34,7 @@ test('proper octahedral rotations yield a cis mirror pair and one trans bis-chel
  assert.equal(groups.cis.size,2);assert.equal(groups.trans.size,1);
 });
 test('gravimetric, precipitation and two-stage titration calculations conserve analyte amounts',()=>{
- assert.deepEqual(read('practical-chemistry').quiz.slice(32).map(q=>q.answer),[1,2,3,0,1,2,3,0]);
+ assert.deepEqual(read('practical-chemistry').quiz.slice(32).map(q=>q.answer),[1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]);
  const sulfate=(.471-.005)/233;near(sulfate,.002);near(sulfate*96/.600*100,32);
  near(14+Math.log10((1e-38/.01)**(1/3)),2);near(14+Math.log10(Math.sqrt(1e-11/.01)),9.5);
  assert.ok(.01*(1e-9)**2<1e-11);assert.ok(.01*(1e-9)**3>1e-38);

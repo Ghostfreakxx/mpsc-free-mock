@@ -1273,8 +1273,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "purification-analysis", subject: "Chemistry", unit: 13, number: "C17", title: purificationAnalysis.title,
-    description: "Twenty-five narrated chapters on separation, pH-dependent extraction, chromatographic retention, corrected combustion, sublimation recovery and elemental analysis.",
-    scope: "Recorded Unit 13 foundation with original practice. Further analytical equations, gravimetric uncertainty, nonideal extraction and larger datasets remain; not exhaustive coverage or official PYQs.",
+    description: "Twenty-nine narrated chapters on separation, two-solute crystallization, vacuum boiling, chromatographic resolution, gravimetric bounds and elemental analysis.",
+    scope: "Recorded Unit 13 foundation with original practice. Further analytical equations, correlated uncertainty, nonideal extraction and larger datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.purification-analysis.lecture.v1",
     audio: "/lectures/purification-analysis/narration-marin.mp3",
     subtitles: "/lectures/purification-analysis/english.vtt", timings: purificationAnalysisTimings,
@@ -1283,7 +1283,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "practical-chemistry", subject: "Chemistry", unit: 20, number: "C18", title: practicalChemistry.title,
-    description: "Twenty-five narrated chapters on gravimetric sulfate, precipitation thresholds, standardization, back titration, indicators, clock observations and experimental evidence.",
+    description: "Twenty-nine narrated chapters on qualitative ion evidence, silver-halide comparisons, amphoteric hydroxides, sulfate/sulfite distinctions, titration and gravimetric analysis.",
     scope: "Recorded Unit 20 conceptual foundation with original practice. Full ion-analysis schemes, all preparation equations, indicator curves, sol preparation and further kinetic datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.practical-chemistry.lecture.v1",
     audio: "/lectures/practical-chemistry/narration-marin.mp3",

@@ -57,6 +57,10 @@
     {
       "title": "OpenStax: precipitation and dissolution equilibria",
       "url": "https://openstax.org/books/chemistry-2e/pages/15-1-precipitation-and-dissolution"
+    },
+    {
+      "title": "OpenStax: coupled precipitation and complex-ion equilibria",
+      "url": "https://openstax.org/books/chemistry-2e/pages/15-2-coupled-equilibria"
     }
   ],
   "chapters": [
@@ -934,6 +938,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Silver halides need colour and ammonia behaviour together",
+      "formula": "AgCl: white, dissolves in dilute NH₃; AgBr: cream, requires concentrated NH₃ in the usual comparison; AgI: yellow, remains",
+      "script": "A silver halide comparison combines precipitation with complex formation rather than relying only on colour. In the standard introductory comparison under a controlled analytical scheme, silver chloride is white and dissolves in dilute aqueous ammonia. Silver bromide is cream and is much less soluble in dilute ammonia, while concentrated ammonia can dissolve it under the usual comparison conditions. Silver iodide is yellow and remains essentially undissolved in that concentrated ammonia comparison. Ammonia binds dissolved silver ions as a diamminesilver complex, lowering the free silver concentration and allowing more solid to dissolve when the combined equilibria permit. The differing silver halide solubilities mean that the same ligand does not produce the same observation for all three. These are qualitative comparison conditions, not claims of absolute zero solubility or a universal endpoint independent of concentration. Mixtures, lighting, small precipitate amounts and interfering ions can make colour alone misleading. Earlier clean extract and acid choice controls still apply. The observation should refer to the defined precipitate and reagent stage, rather than treating every pale solid that responds to ammonia as an infallible identity test.",
+      "points": [
+        "AgCl white; AgBr cream; AgI yellow · Compare the defined precipitates · Colour alone is insufficient",
+        "Dilute ammonia dissolves AgCl · Concentrated ammonia can dissolve AgBr · AgI remains in the usual comparison",
+        "Ag⁺ + 2NH₃ ⇌ [Ag(NH₃)₂]⁺ · Complexation lowers free Ag⁺ · Interpret with solubility and interference controls"
+      ],
+      "board": {
+        "heading": "Silver halides need colour and ammonia behaviour together",
+        "columns": [
+          "Given / observation",
+          "Balance / explanation",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "AgCl white; AgBr cream; AgI yellow",
+            "Compare the defined precipitates",
+            "Colour alone is insufficient"
+          ],
+          [
+            "Dilute ammonia dissolves AgCl",
+            "Concentrated ammonia can dissolve AgBr",
+            "AgI remains in the usual comparison"
+          ],
+          [
+            "Ag⁺ + 2NH₃ ⇌ [Ag(NH₃)₂]⁺",
+            "Complexation lowers free Ag⁺",
+            "Interpret with solubility and interference controls"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Aluminium and iron hydroxides differ in excess alkali",
+      "formula": "Al³⁺+3OH⁻→Al(OH)₃; Al(OH)₃+OH⁻→[Al(OH)₄]⁻; Fe(OH)₃ remains in the usual excess-NaOH comparison",
+      "script": "A precipitate should be followed through the next reagent condition before assigning an ion. In the standard aluminium three versus iron three comparison, hydroxide can give a gelatinous white aluminium hydroxide and a reddish brown iron three hydroxide. In suitable excess sodium hydroxide, the amphoteric aluminium hydroxide dissolves through formation of soluble hydroxoaluminate, commonly written as the tetrahydroxoaluminate ion in this aqueous model. The equation aluminium hydroxide plus hydroxide giving that ion balances four oxygens, four hydrogens and charge minus one. Iron three hydroxide does not show the same dissolution in the ordinary excess alkali comparison. This provides a distinction between the specified pair after appropriate separation and controls. It does not identify aluminium uniquely among all possible ions, since zinc hydroxide also shows amphoteric dissolution. The precipitated aluminium has not changed its plus three oxidation state merely because the dissolved complex carries charge minus one. Solution conditions and competing ligands can alter observations, so keep the supplied test scheme explicit. Explain the transition from free cation to precipitate to complex rather than calling disappearance of a solid disappearance of the element.",
+      "points": [
+        "Al³⁺ +3OH⁻ → white Al(OH)₃ · Excess OH⁻ gives [Al(OH)₄]⁻ · Al stays in oxidation state +3",
+        "Fe³⁺ gives reddish-brown Fe(OH)₃ · No analogous dissolution in usual excess NaOH · Distinguishes this specified pair",
+        "Zn(OH)₂ can also be amphoteric · Dissolution is not unique proof of Al · Need separation and additional evidence"
+      ],
+      "board": {
+        "heading": "Aluminium and iron hydroxides differ in excess alkali",
+        "columns": [
+          "Given / observation",
+          "Balance / explanation",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "Al³⁺ +3OH⁻ → white Al(OH)₃",
+            "Excess OH⁻ gives [Al(OH)₄]⁻",
+            "Al stays in oxidation state +3"
+          ],
+          [
+            "Fe³⁺ gives reddish-brown Fe(OH)₃",
+            "No analogous dissolution in usual excess NaOH",
+            "Distinguishes this specified pair"
+          ],
+          [
+            "Zn(OH)₂ can also be amphoteric",
+            "Dissolution is not unique proof of Al",
+            "Need separation and additional evidence"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Acid persistence separates sulfate from a sulfite comparison",
+      "formula": "BaSO₃+2H⁺→Ba²⁺+SO₂+H₂O; BaSO₄ persists under the specified dilute-acid conditions",
+      "script": "A white barium precipitate is not by itself a unique sulfate identification. Compare sulfate and sulfite within a supplied controlled analytical scheme. Barium sulfate remains as a white solid under the usual dilute hydrochloric acid comparison, whereas barium sulfite can dissolve on acid treatment as sulfur dioxide and water form. The sulfite ion consumes two protons to give sulfur dioxide and water; with the barium ion released, the full precipitate equation balances both atoms and total charge. Carbonate can also give an acid reactive barium solid but releases carbon dioxide rather than sulfur dioxide, so dissolution or effervescence alone is insufficient. Sulfur dioxide can reduce a suitable oxidant under the stated confirmatory conditions, providing different evidence from a simple carbonate gas response. Gas identity is inferred through a controlled scheme, never by tasting or deliberately smelling it. Oxidation of sulfite to sulfate before observation can change the result, and mixtures require additional separation. Keep the original anion, the precipitate and the acid reaction as distinct stages. A persistent barium precipitate is supporting evidence under specified conditions, not a complete analysis of an arbitrary unknown sample.",
+      "points": [
+        "White barium salt alone · Could reflect different anions · Need the acid-response stage",
+        "BaSO₃ +2H⁺ → Ba²⁺+SO₂+H₂O · Solid dissolves; sulfur stays at +4 · Controlled confirmatory gas evidence",
+        "BaSO₄ persists in usual dilute acid · Carbonate instead releases CO₂ · Oxidation and mixtures can interfere"
+      ],
+      "board": {
+        "heading": "Acid persistence separates sulfate from a sulfite comparison",
+        "columns": [
+          "Given / observation",
+          "Balance / explanation",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "White barium salt alone",
+            "Could reflect different anions",
+            "Need the acid-response stage"
+          ],
+          [
+            "BaSO₃ +2H⁺ → Ba²⁺+SO₂+H₂O",
+            "Solid dissolves; sulfur stays at +4",
+            "Controlled confirmatory gas evidence"
+          ],
+          [
+            "BaSO₄ persists in usual dilute acid",
+            "Carbonate instead releases CO₂",
+            "Oxidation and mixtures can interfere"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Ammonium evidence follows proton transfer without changing nitrogen oxidation state",
+      "formula": "NH₄⁺+OH⁻→NH₃+H₂O; liberated basic gas is evidence within a controlled salt-analysis scheme",
+      "script": "Ammonium identification begins with an acid base change rather than a nitrogen oxidation reaction. In the standard analytical model, ammonium ion reacts with hydroxide to form ammonia and water. Nitrogen, hydrogen, oxygen and total charge all balance, and nitrogen remains at oxidation state minus three in both ammonium and ammonia. The ammonium ion carries charge plus one, whereas the ammonia molecule is neutral; a charge change of the species does not by itself imply oxidation. A supplied observation that liberated gas turns moist red litmus blue is consistent with a basic gas such as ammonia. Moisture matters because the indicator response requires the aqueous acid base environment. That one response is not unique proof for every possible unknown, since other volatile bases can interfere. Within a controlled inorganic salt scheme, sample blanks and exclusion of interfering species make the ammonium interpretation stronger. Nitrate does not simply become ammonia by this same hydroxide proton transfer equation; such a transformation would require additional reduction chemistry. Treat the gas observation and balanced equation as connected pieces of evidence, without inventing a reducing reagent or identifying a substance by its smell.",
+      "points": [
+        "NH₄⁺ + OH⁻ → NH₃ + H₂O · Total charge +1−1=0 · Nitrogen remains −3",
+        "Supplied gas turns moist red litmus blue · Consistent with ammonia/basic gas · Moisture enables indicator response",
+        "Volatile bases can interfere · Nitrate requires reduction to reach NH₃ · Controlled scheme, not smell identification"
+      ],
+      "board": {
+        "heading": "Ammonium evidence follows proton transfer without changing nitrogen oxidation state",
+        "columns": [
+          "Given / observation",
+          "Balance / explanation",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "NH₄⁺ + OH⁻ → NH₃ + H₂O",
+            "Total charge +1−1=0",
+            "Nitrogen remains −3"
+          ],
+          [
+            "Supplied gas turns moist red litmus blue",
+            "Consistent with ammonia/basic gas",
+            "Moisture enables indicator response"
+          ],
+          [
+            "Volatile bases can interfere",
+            "Nitrate requires reduction to reach NH₃",
+            "Controlled scheme, not smell identification"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1376,6 +1520,94 @@
       ],
       "answer": 0,
       "explanation": "Each carbonate consumes two protons; .008750 mol corresponds to .8750 g or 87.5% of the sample."
+    },
+    {
+      "question": "In the usual controlled silver-halide comparison, the precipitate readily dissolved by dilute aqueous ammonia is:",
+      "options": [
+        "AgI",
+        "AgCl",
+        "Every silver salt equally",
+        "BaSO₄"
+      ],
+      "answer": 1,
+      "explanation": "Complex formation permits AgCl dissolution under the standard dilute-ammonia comparison; AgBr requires different conditions and AgI remains."
+    },
+    {
+      "question": "Which combined observation is consistent with AgI in that comparison?",
+      "options": [
+        "White and dissolves readily in dilute ammonia",
+        "Cream and always completely soluble in water",
+        "Yellow and remains in the concentrated-ammonia comparison",
+        "Reddish brown hydroxide"
+      ],
+      "answer": 2,
+      "explanation": "Use both the stated colour and ammonia behaviour, with interference controls."
+    },
+    {
+      "question": "The soluble aluminium species in the supplied excess-OH− model is:",
+      "options": [
+        "Al⁻",
+        "AlO₄⁵⁻",
+        "Fe(OH)₄⁻",
+        "[Al(OH)₄]⁻"
+      ],
+      "answer": 3,
+      "explanation": "Al(OH)3+OH−→[Al(OH)4]− balances atoms and charge while Al remains +3."
+    },
+    {
+      "question": "Why does excess-alkali dissolution alone not uniquely prove Al³⁺ in an arbitrary unknown?",
+      "options": [
+        "Zinc hydroxide can also show amphoteric dissolution",
+        "All metals are aluminium",
+        "Iron must disappear in every solution",
+        "Al changes into Zn"
+      ],
+      "answer": 0,
+      "explanation": "The response distinguishes a specified pair but is shared by other ions, requiring separation and confirmation."
+    },
+    {
+      "question": "Acid reaction of the supplied BaSO₃ precipitate produces the gas:",
+      "options": [
+        "N₂",
+        "SO₂",
+        "NH₃",
+        "H₂"
+      ],
+      "answer": 1,
+      "explanation": "BaSO3+2H+→Ba2++SO2+H2O. The sulfur oxidation state remains +4 in this acid-base conversion."
+    },
+    {
+      "question": "A white barium precipitate that persists in the specified usual dilute-acid comparison is consistent with:",
+      "options": [
+        "Only carbonate in every case",
+        "Ammonium hydroxide",
+        "BaSO₄",
+        "A proof of every anion in a mixture"
+      ],
+      "answer": 2,
+      "explanation": "BaSO4 persistence supports sulfate under the defined scheme; one observation is not a complete arbitrary-mixture analysis."
+    },
+    {
+      "question": "In NH₄⁺+OH⁻→NH₃+H₂O, the nitrogen oxidation state:",
+      "options": [
+        "Changes from+1 to0",
+        "Changes from+5 to−3",
+        "Becomes equal to molecular charge",
+        "Remains−3"
+      ],
+      "answer": 3,
+      "explanation": "Both NH4+ and NH3 have nitrogen−3; this is proton transfer, not reduction."
+    },
+    {
+      "question": "Why does a basic liberated gas turning moist red litmus blue need additional context?",
+      "options": [
+        "Other volatile bases can interfere",
+        "Every basic gas is uniquely ammonium",
+        "Dry indicator is always sufficient",
+        "Nitrate automatically releases NH₃ with no reduction"
+      ],
+      "answer": 0,
+      "explanation": "The observation is consistent with ammonia but needs the controlled scheme and interference exclusions."
     }
   ]
 }
