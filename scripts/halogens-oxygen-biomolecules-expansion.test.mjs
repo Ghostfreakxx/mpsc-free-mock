@@ -8,7 +8,7 @@ test('new halogen practice preserves skeletons, coupling identity and alcohol cl
  assert.equal(a(h,22),'But-1-ene and but-2-ene');assert.equal(a(h,23),'3 alkenes');assert.equal(1+2,3);
 });
 test('oxygen practice checks donor roles, limiting hydroxide, chirality and conditional acid ratios',()=>{
- assert.deepEqual(o.quiz.slice(16).map(q=>q.answer),[1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,0,1,2,3,0,1,2,3]);
+ assert.deepEqual(o.quiz.slice(16).map(q=>q.answer),[1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3]);
  assert.equal(a(o,16),String(2*2));assert.equal(a(o,17),'Enolate donor');assert.equal(a(o,18),'Ethanoate');
  assert.equal(a(o,19),`${(.0200-Math.min(.0200,.0150)).toFixed(5)} mol`);
  assert.equal(a(o,20),String(2+1));assert.equal(a(o,21),'A racemic pair');

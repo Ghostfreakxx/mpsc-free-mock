@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 const read=id=>JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`));
 test('oxygen reaction maps preserve carbon, hydrogen, oxygen and net charge',()=>{
- assert.deepEqual(read('organic-oxygen').quiz.slice(32).map(q=>q.answer),[0,1,2,3,0,1,2,3]);
+ assert.deepEqual(read('organic-oxygen').quiz.slice(32).map(q=>q.answer),[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3]);
  // Benzaldehyde plus formaldehyde plus hydroxide versus benzyl alcohol plus formate.
  assert.deepEqual({C:7+1,H:6+2+1,O:1+1+1,charge:-1},{C:7+1,H:8+1,O:1+2,charge:-1});
  assert.equal(.0100*1,.0100);

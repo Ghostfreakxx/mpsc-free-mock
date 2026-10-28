@@ -32,16 +32,14 @@ Questions are original practice, not represented as official PYQs.
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 25 | 28 | 20 | 44 / 44 |
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 29 | 29 | 18 | 48 / 48 |
 | 16 | [Organic Halogens](/jee/classes/organic-halogens) | 29 | 29 | 18 | 48 / 48 |
-| 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 27 | 25 | 15 | 40 / 40 |
+| 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 35 | 33 | 21 | 56 / 56 |
 | 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 29 | 29 | 18 | 48 / 48 |
 | 19 | [Biomolecules](/jee/classes/biomolecules) | 29 | 29 | 18 | 48 / 48 |
 | 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 29 | 29 | 18 | 48 / 48 |
 
 ## Latest expansion
 
-Atomic Structure adds orbital angular momentum, supporting Pauli occupation counting, electron-collision excitation and electric-dipole transition rules. The counting diagram distinguishes spin orbitals, occupation patterns and energy levels.
-
-Chemical Bonding adds orbital-phase interference, diborane bridges, a supporting XeF2 three-centre model and fixed-proton bicarbonate resonance. Formal bond orders and selected orbital subsets are labelled as models.
+Organic Oxygen adds Lucas-test limitations, unrearranged dehydration isomer counts, ester–Grignard carbon ledgers, acid-proton quenching, strong hydride ester reduction, phenol O-acylation, keto–enol distinctions and balanced haloform limiting-reagent calculations. A comparative diagram tracks both ester carbon fragments through work-up. Conditions and ideal stoichiometric assumptions remain explicit.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +55,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax quantum mechanics and molecular orbitals, Frank Rioux’s XeF2 orbital model, and authored teaching material on diborane and resonance. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference OpenStax’s organic chemistry teaching, Lisa Nichols’s chemical-test observations and William Reusch’s haloform reaction text. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

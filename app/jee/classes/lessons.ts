@@ -1243,7 +1243,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-oxygen", subject: "Chemistry", unit: 17, number: "C14", title: organicOxygen.title,
-    description: "Twenty-seven narrated chapters on oxygen groups, hydrogen bonding, alpha halogenation, crossed Cannizzaro, carbonyl derivatives, a supporting acetal map and chemical tests.",
+    description: "Thirty-five narrated chapters on oxygen groups, alcohol-test limits, dehydration isomers, ester reaction ledgers, phenol acylation, tautomerism and haloform stoichiometry.",
     scope: "Recorded Unit 17 foundation and worked applications with original practice. Full mechanisms, carbonyl spatial drawings and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-oxygen.lecture.v1",
     audio: "/lectures/organic-oxygen/narration-marin.mp3",
