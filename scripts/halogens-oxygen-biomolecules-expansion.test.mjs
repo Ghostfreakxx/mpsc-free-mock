@@ -17,7 +17,7 @@ test('oxygen practice checks donor roles, limiting hydroxide, chirality and cond
  assert.ok(root(KaA)/C<.05 && root(KaB)/C<.05);near(root(KaA)/root(KaB),10,.15);
 });
 test('biomolecule arithmetic distinguishes base pairs, residues, links and rotation fractions',()=>{
- assert.deepEqual(b.quiz.slice(16).map(q=>q.answer),[2,3,0,1,2,3,0,1,1,2,3,0,1,2,3,0,2,3,0,1,2,3,0,1]);
+ assert.deepEqual(b.quiz.slice(16).map(q=>q.answer),[2,3,0,1,2,3,0,1,1,2,3,0,1,2,3,0,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1]);
  const bases=2*1000,A=.30*bases,T=A,G=(bases-A-T)/2;assert.equal(a(b,16),`${100*G/bases}%`);
  assert.equal(a(b,17),String(2*A+3*G));assert.equal(A+T+2*G,bases);
  assert.equal(a(b,18),'Nucleoside');assert.equal(a(b,19),String(10-1));assert.equal(a(b,21),String(5-1));

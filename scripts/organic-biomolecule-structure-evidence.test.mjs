@@ -13,14 +13,14 @@ test('oxygen reaction maps preserve carbon, hydrogen, oxygen and net charge',()=
  assert.equal(new Set(['H','Br','ethyl','carboxyl']).size,4);
 });
 test('nitro reduction and supporting ammonium elimination conserve electrons and atoms',()=>{
- assert.deepEqual(read('organic-nitrogen').quiz.slice(32).map(q=>q.answer),[1,2,3,0,1,2,3,0]);
+ assert.deepEqual(read('organic-nitrogen').quiz.slice(32).map(q=>q.answer),[1,2,3,0,1,2,3,0,0,1,2,3,0,1,2,3]);
  assert.equal(3-(-3),6);assert.equal(.0100*6,.0600);
  assert.deepEqual({N:1,O:2,H:6,charge:6-6},{N:1,O:2,H:2+2*2,charge:0});
  assert.deepEqual({N:1,O:2,H:7,charge:7-6},{N:1,O:2,H:3+2*2,charge:1});
  assert.deepEqual({C:5,H:15,N:1,O:1},{C:2+3,H:4+9+2,N:1,O:1});
 });
 test('sugar epimers change one numbered centre rather than every stereocentre',()=>{
- assert.deepEqual(read('biomolecules').quiz.slice(32).map(q=>q.answer),[2,3,0,1,2,3,0,1]);
+ assert.deepEqual(read('biomolecules').quiz.slice(32).map(q=>q.answer),[2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1]);
  const glucose='RLRR',mannose='LLRR',galactose='RLLR';
  const differences=(a,b)=>[...a].flatMap((s,i)=>s===b[i]?[]:[i+2]);
  assert.deepEqual(differences(glucose,mannose),[2]);assert.deepEqual(differences(glucose,galactose),[4]);assert.deepEqual(differences(mannose,galactose),[2,4]);

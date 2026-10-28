@@ -81,6 +81,22 @@
     {
       "title": "Essentials of Glycobiology: monosaccharide epimers",
       "url": "https://www.ncbi.nlm.nih.gov/books/NBK579981/?report=printable"
+    },
+    {
+      "title": "NCERT Chemistry: glucose and its protected derivative evidence",
+      "url": "https://ncert.nic.in/textbook/pdf/lech205.pdf"
+    },
+    {
+      "title": "OpenStax: peptide structure and sequence determination",
+      "url": "https://openstax.org/books/organic-chemistry/pages/26-5-amino-acid-analysis-of-peptides"
+    },
+    {
+      "title": "OpenStax: amino-acid isoelectric points",
+      "url": "https://openstax.org/books/organic-chemistry/pages/26-2-amino-acids-and-the-henderson-hasselbalch-equation-isoelectric-points"
+    },
+    {
+      "title": "UC San Diego: phosphate transfer and RNA cleavage",
+      "url": "https://chemistry.ucsd.edu/undergraduate/student-resources/CHEM40-Chapter09-UCSD-ED-23-24.pdf"
     }
   ],
   "chapters": [
@@ -958,6 +974,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Glucose pentaacetate distinguishes free carbonyl evidence from a protected ring",
+      "formula": "Glucose forms an oxime; glucose pentaacetate does not in the usual textbook comparison; five acetylated OH groups do not imply a free CHO group",
+      "script": "Structural evidence must identify which form of a sugar is actually being tested. Unmodified glucose can react with hydroxylamine to give an oxime through its accessible carbonyl chemistry, even though cyclic hemiacetal forms predominate in water. Acetylation gives glucose pentaacetate, supporting the presence of five hydroxyl groups available for that transformation. In the usual textbook comparison, glucose pentaacetate does not react with hydroxylamine to give the analogous oxime. The protected cyclic structure lacks the freely available aldehyde behaviour assumed by a permanent open chain drawing. Acetylating the anomeric hydroxyl prevents the ordinary hemiacetal ring opening equilibrium without first changing the protected groups. This does not mean that glucose never has an open chain form, or that every acetate group is a new aldehyde. The two observations ask different questions: how many hydroxyl groups can be acetylated, and whether the tested derivative has an accessible carbonyl under the specified conditions. Hydrolysis or deprotection can change that answer, so the derivative and reaction conditions must remain explicit. Combine these observations with the other glucose evidence rather than treating one negative test as a complete structure proof.",
+      "points": [
+        "Unmodified glucose · Accessible carbonyl chemistry with NH₂OH · Oxime formation is possible",
+        "Glucose pentaacetate · Five OH groups acetylated, including anomeric OH · No analogous oxime in textbook comparison",
+        "Protected cyclic derivative differs from glucose · Ring opening would require changing protection · Negative test is condition-dependent evidence"
+      ],
+      "board": {
+        "heading": "Glucose pentaacetate distinguishes free carbonyl evidence from a protected ring",
+        "columns": [
+          "Given / structure",
+          "Follow the change",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "Unmodified glucose",
+            "Accessible carbonyl chemistry with NH₂OH",
+            "Oxime formation is possible"
+          ],
+          [
+            "Glucose pentaacetate",
+            "Five OH groups acetylated, including anomeric OH",
+            "No analogous oxime in textbook comparison"
+          ],
+          [
+            "Protected cyclic derivative differs from glucose",
+            "Ring opening would require changing protection",
+            "Negative test is condition-dependent evidence"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Partial peptide fragments can distinguish identical total compositions",
+      "formula": "Two Ala + one Gly: AAG, AGA, GAA; observed contiguous AG and GA fragments select AGA in the stated model",
+      "script": "Complete hydrolysis can reveal peptide composition without fixing the order of residues. Suppose a supplied linear tripeptide contains two alanine residues and one glycine residue, with no modified residues or cyclization. Write sequences from amino terminus to carboxyl terminus and abbreviate alanine A and glycine G. The distinct composition compatible sequences are A A G, A G A and G A A; exchanging the two identical alanines does not make a fourth sequence. Now suppose controlled partial hydrolysis identifies both A G and G A as contiguous dipeptide fragments from the same pure tripeptide, with no rearrangement or transpeptidation in the stated evidence model. Only A G A contains both directed adjacent pairs. A A G contains A A and A G, while G A A contains G A and A A. All three candidates have two peptide bonds and the same mass computed from two free alanines plus one glycine minus two waters. Sequence evidence therefore adds information that mass and total amino acid counts cannot supply. Real sequence determination needs appropriate controls and fragment identification; this small overlap puzzle is a supporting inference exercise rather than a universal sequencing method.",
+      "points": [
+        "Composition: 2 Ala + 1 Gly; linear tripeptide · Distinct N→C sequences: AAG, AGA, GAA · Same composition and condensation mass",
+        "Directed contiguous fragments AG and GA observed · AGA contains both; other candidates contain AA · AGA selected under stated evidence model",
+        "Two peptide links in every candidate · 2×89+75−2×18=217 g/mol · Mass alone cannot fix sequence"
+      ],
+      "board": {
+        "heading": "Partial peptide fragments can distinguish identical total compositions",
+        "columns": [
+          "Given / structure",
+          "Follow the change",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "Composition: 2 Ala + 1 Gly; linear tripeptide",
+            "Distinct N→C sequences: AAG, AGA, GAA",
+            "Same composition and condensation mass"
+          ],
+          [
+            "Directed contiguous fragments AG and GA observed",
+            "AGA contains both; other candidates contain AA",
+            "AGA selected under stated evidence model"
+          ],
+          [
+            "Two peptide links in every candidate",
+            "2×89+75−2×18=217 g/mol",
+            "Mass alone cannot fix sequence"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting pI calculation uses the two steps surrounding net zero charge",
+      "formula": "Asp model pKa 2.1,3.9,9.8 ⇒ pI≈3.0; Lys model 2.2,9.0,10.5 ⇒ pI≈9.75",
+      "script": "An ionizable side chain changes which dissociation steps surround an amino acid's net neutral form. Use a supporting dominant state calculation with supplied stepwise p K a values, rather than averaging every number automatically. For an aspartic acid model, the values are two point one, three point nine and nine point eight. Increasing p H removes protons through net charge states plus one, zero, minus one and minus two. The neutral state lies between the first two steps, so its approximate isoelectric point is their average, three point zero. For a lysine model with values two point two, nine point zero and ten point five, the successive net charges are plus two, plus one, zero and minus one. Here the neutral state lies between the last two steps, giving approximate isoelectric point nine point seven five. These are supplied illustrative constants and the usual adjacent state approximation, not universal values for every solvent and temperature. At the isoelectric point the average net charge is zero; charged groups within individual zwitterions still exist. Identify every ionizable group and the charge ladder before selecting the two constants.",
+      "points": [
+        "Asp supplied pKa: 2.1,3.9,9.8 · Charge ladder +1 → 0 → −1 → −2 · pI≈(2.1+3.9)/2=3.0",
+        "Lys supplied pKa: 2.2,9.0,10.5 · Charge ladder +2 → +1 → 0 → −1 · pI≈(9.0+10.5)/2=9.75",
+        "Use steps adjacent to net-neutral state · Dominant adjacent-state approximation · Do not average all three pKa values"
+      ],
+      "board": {
+        "heading": "Supporting pI calculation uses the two steps surrounding net zero charge",
+        "columns": [
+          "Given / structure",
+          "Follow the change",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "Asp supplied pKa: 2.1,3.9,9.8",
+            "Charge ladder +1 → 0 → −1 → −2",
+            "pI≈(2.1+3.9)/2=3.0"
+          ],
+          [
+            "Lys supplied pKa: 2.2,9.0,10.5",
+            "Charge ladder +2 → +1 → 0 → −1",
+            "pI≈(9.0+10.5)/2=9.75"
+          ],
+          [
+            "Use steps adjacent to net-neutral state",
+            "Dominant adjacent-state approximation",
+            "Do not average all three pKa values"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting RNA cleavage depends on the nearby two-prime hydroxyl",
+      "formula": "RNA 2′-O⁻ attacks adjacent phosphate → 2′,3′-cyclic phosphate + downstream 5′-OH; DNA lacks the same 2′-OH pathway",
+      "script": "The sugar difference between R N A and D N A affects backbone chemistry as well as molecular naming. In a supporting alkaline cleavage model, the two prime hydroxyl of an R N A ribose can lose a proton and provide a nearby oxygen nucleophile. That oxygen attacks the phosphorus of the adjacent three prime phosphate linkage within the same chain. The downstream phosphorus oxygen five prime connection breaks, leaving a two prime three prime cyclic phosphate on one fragment and a five prime hydroxyl on the other after proton transfer. The initial cleavage is an intramolecular transesterification; later opening of the cyclic phosphate can give additional hydrolysis products. This is different from merely separating complementary bases or denaturing a duplex. A D N A sugar has hydrogen rather than hydroxyl at two prime, so it cannot use this same neighbouring hydroxyl attack pathway. That distinction does not mean D N A is indestructible or that every R N A linkage cleaves at an identical rate. Sequence, conformation and conditions matter. For one specified internal cleavage in a linear chain, the number of covalently connected backbone pieces increases from one to two without creating or deleting nucleotide residues.",
+      "points": [
+        "RNA ribose has 2′-OH; DNA has 2′-H · Nearby RNA oxygen can attack phosphate · Structure changes available pathway",
+        "Initial P–O5′ cleavage · 2′,3′-cyclic phosphate + downstream 5′-OH · Intramolecular transesterification first",
+        "One internal cut in a linear strand · One backbone becomes two pieces · Residues conserved; not just duplex denaturation"
+      ],
+      "board": {
+        "heading": "Supporting RNA cleavage depends on the nearby two-prime hydroxyl",
+        "columns": [
+          "Given / structure",
+          "Follow the change",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "RNA ribose has 2′-OH; DNA has 2′-H",
+            "Nearby RNA oxygen can attack phosphate",
+            "Structure changes available pathway"
+          ],
+          [
+            "Initial P–O5′ cleavage",
+            "2′,3′-cyclic phosphate + downstream 5′-OH",
+            "Intramolecular transesterification first"
+          ],
+          [
+            "One internal cut in a linear strand",
+            "One backbone becomes two pieces",
+            "Residues conserved; not just duplex denaturation"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1400,6 +1556,94 @@
       ],
       "answer": 1,
       "explanation": "Use two per AT and three per GC pair: 6×2+4×3=24."
+    },
+    {
+      "question": "In the usual textbook hydroxylamine comparison, which statement is correct?",
+      "options": [
+        "Glucose and every protected derivative must react identically",
+        "Glucose has no accessible carbonyl chemistry",
+        "Glucose can form an oxime; its pentaacetate does not give the analogous response",
+        "Pentaacetate means five aldehyde groups"
+      ],
+      "answer": 2,
+      "explanation": "The protected cyclic derivative differs from unmodified glucose; acetylation evidence for five OH groups does not establish a free CHO group in the derivative."
+    },
+    {
+      "question": "What would invalidate directly transferring that negative pentaacetate test result to a later sample?",
+      "options": [
+        "Using the same derivative under the same conditions",
+        "Counting its carbon atoms",
+        "Recognizing cyclic glucose",
+        "Hydrolysis or deprotection that changes the tested structure"
+      ],
+      "answer": 3,
+      "explanation": "Changing protected groups can restore different ring opening or carbonyl chemistry, so sample identity and conditions must be explicit."
+    },
+    {
+      "question": "How many distinct N→C linear tripeptide sequences contain exactly two identical Ala residues and one Gly?",
+      "options": [
+        "3",
+        "6",
+        "2",
+        "1"
+      ],
+      "answer": 0,
+      "explanation": "The distinct sequences are AAG, AGA and GAA; the two Ala residues are not distinguishable labels."
+    },
+    {
+      "question": "Under the stated pure-tripeptide partial-hydrolysis model, both directed contiguous AG and GA dipeptides identify:",
+      "options": [
+        "AAG",
+        "AGA",
+        "GAA",
+        "All three equally"
+      ],
+      "answer": 1,
+      "explanation": "Only AGA contains both A→G and G→A adjacent pairs without rearrangement."
+    },
+    {
+      "question": "For supplied Asp stepwise pKa values 2.1,3.9,9.8 and charge ladder +1,0,−1,−2, the adjacent-state pI estimate is:",
+      "options": [
+        "5.95",
+        "6.85",
+        "3.0",
+        "9.8"
+      ],
+      "answer": 2,
+      "explanation": "Net zero lies between the first two dissociation steps; average 2.1 and 3.9."
+    },
+    {
+      "question": "For supplied Lys pKa values 2.2,9.0,10.5 and charge ladder +2,+1,0,−1, the estimate is:",
+      "options": [
+        "5.6",
+        "6.35",
+        "7.23",
+        "9.75"
+      ],
+      "answer": 3,
+      "explanation": "Net zero lies between the second and third steps; average 9.0 and 10.5."
+    },
+    {
+      "question": "The nearby group enabling the specified intramolecular alkaline RNA cleavage is:",
+      "options": [
+        "The ribose 2′-OH",
+        "A thymine methyl group",
+        "An amino acid side chain",
+        "An extra peptide bond"
+      ],
+      "answer": 0,
+      "explanation": "The deprotonated 2′ oxygen can attack the adjacent phosphate; DNA lacks the same 2′-OH."
+    },
+    {
+      "question": "One specified internal phosphodiester cleavage in a linear 10-residue RNA chain gives initially:",
+      "options": [
+        "Two 10-residue chains with duplicated material",
+        "Two backbone fragments containing 10 residues in total",
+        "Ten fragments necessarily",
+        "Only loss of base-pair hydrogen bonds"
+      ],
+      "answer": 1,
+      "explanation": "One internal cut splits the covalent chain into two pieces while preserving the total nucleotide-residue inventory."
     }
   ]
 }

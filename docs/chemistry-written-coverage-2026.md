@@ -33,15 +33,15 @@ Questions are original practice, not represented as official PYQs.
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 29 | 29 | 18 | 48 / 48 |
 | 16 | [Organic Halogens](/jee/classes/organic-halogens) | 29 | 29 | 18 | 48 / 48 |
 | 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 27 | 25 | 15 | 40 / 40 |
-| 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 25 | 25 | 15 | 40 / 40 |
-| 19 | [Biomolecules](/jee/classes/biomolecules) | 25 | 25 | 15 | 40 / 40 |
+| 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 29 | 29 | 18 | 48 / 48 |
+| 19 | [Biomolecules](/jee/classes/biomolecules) | 29 | 29 | 18 | 48 / 48 |
 | 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 25 | 25 | 15 | 40 / 40 |
 
 ## Latest expansion
 
-Hydrocarbons adds site-weighted radical product estimates, syn hydroxylation stereochemistry, connected cyclic-alkene cleavage and carbocation rearrangement during ionic addition. Reaction conditions and competing capture are explicit.
+Organic Nitrogen adds classical diazonium fluorination, removal of a temporary amino directing group, reductive amination and a supporting maintained-pH extraction model with explicit neutral partitioning.
 
-Organic Halogens adds activated aryl fluoride comparisons, supporting intramolecular ether formation and epoxide Grignard extension, plus an explicit SN2 inversion that keeps the R descriptor after priority reassignment. The Fischer diagram is checked by signed 3D orientation; the substituted haloalcohol is a stipulated local pathway rather than an exclusive synthetic prediction.
+Biomolecules adds glucose pentaacetate carbonyl evidence, directed peptide-fragment inference, supporting side-chain pI estimates and a structure–reactivity explanation of RNA backbone cleavage. The peptide and charge-state diagrams use independently checked data; the scope does not imply full sequencing or advanced nucleic-acid mechanism coverage.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax alkene oxidation, rearrangement, SN2, ether and epoxide teaching, plus Chris Schaller’s university notes on aromatic addition–elimination. Numerical datasets, reaction maps and MCQs in this batch are original practice.
+The notes reference NCERT amine/glucose reaction evidence, OpenStax arylamine, reductive-amination, peptide and amino-acid teaching, and UC San Diego phosphate-transfer notes. Numerical datasets, reaction maps and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

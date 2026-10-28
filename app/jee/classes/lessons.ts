@@ -1253,7 +1253,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-nitrogen", subject: "Chemistry", unit: 18, number: "C15", title: organicNitrogen.title,
-    description: "Twenty-five narrated chapters on amines, nitro-reduction electron balances, nitration speciation, Lewis-acid compatibility, a supporting Hofmann elimination map and diazonium routes.",
+    description: "Twenty-nine narrated chapters on amines, nitro-reduction electron balances, nitration speciation, Lewis-acid compatibility, a supporting Hofmann elimination map and diazonium routes.",
     scope: "Recorded Unit 18 foundation and worked applications with original practice. Full mechanisms, wider solvent datasets and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-nitrogen.lecture.v1",
     audio: "/lectures/organic-nitrogen/narration-marin.mp3",
@@ -1263,7 +1263,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "biomolecules", subject: "Chemistry", unit: 19, number: "C16", title: biomolecules.title,
-    description: "Twenty-five narrated chapters on biomolecules, glucose oxidation evidence, Fischer and epimer comparisons, disulfide versus peptide links, DNA connectivity and vitamin functions.",
+    description: "Twenty-nine narrated chapters on biomolecules, glucose oxidation evidence, Fischer and epimer comparisons, disulfide versus peptide links, DNA connectivity and vitamin functions.",
     scope: "Recorded Unit 19 foundation and worked applications with original practice. Full chair structures, advanced cyclic fructose comparisons and broader hormone examples remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.biomolecules.lecture.v1",
     audio: "/lectures/biomolecules/narration-marin.mp3",

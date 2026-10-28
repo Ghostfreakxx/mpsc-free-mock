@@ -1,3 +1,4 @@
+import PeptidePiDiagram from './peptide-pi-diagram';
 import PeriodicSeparationEvidenceDiagram from './periodic-separation-evidence-diagram';
 import EpimerFischerDiagram from './epimer-fischer-diagram';
 import DnaLinkageDiagram from './dna-linkage-diagram';
@@ -12,6 +13,7 @@ import DnaBaseCountDiagram from './dna-base-count-diagram';
 
 const recordings={biomolecules,"purification-analysis":purification,"practical-chemistry":practical};
 export default function BiomoleculesPracticalDiagram({lesson,chapter}:{lesson:keyof typeof recordings;chapter:number}) {
+ if(lesson==='biomolecules'&&(chapter===26||chapter===27))return <PeptidePiDiagram kind={chapter===26?'peptide':'pi'}/>;
  if(lesson==='purification-analysis'&&chapter===21)return <PeriodicSeparationEvidenceDiagram kind="extraction"/>;
  if(lesson==='biomolecules'&&chapter===22)return <EpimerFischerDiagram/>;
  if(lesson==='biomolecules'&&chapter===24)return <DnaLinkageDiagram/>;

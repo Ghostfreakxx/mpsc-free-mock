@@ -924,6 +924,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Diazonium fluorination uses a different reagent map",
+      "formula": "ArN₂⁺BF₄⁻ → ArF + N₂ + BF₃ in the classical Balz–Schiemann map",
+      "script": "A diazonium replacement must name the incoming group and the appropriate reaction route. In the classical Balz Schiemann map, an arenediazonium tetrafluoroborate gives an aryl fluoride with nitrogen gas and boron trifluoride on decomposition under the specified reaction conditions. For a benzene derived example, the organic product is fluorobenzene, with the six ring carbons retained. The net atom ledger starts with four fluorines in tetrafluoroborate: one enters the aryl fluoride and three remain with boron in boron trifluoride. Both nitrogens of the diazonium group leave together as one nitrogen molecule. This differs from the familiar copper one chloride or bromide replacement maps; drawing copper fluoride as though all copper assisted replacement reagents were interchangeable is not the intended classical route. Replacing the amino derived diazonium group by fluorine adds no carbon and leaves no nitrogen in the selected organic product. The reaction name describes a controlled chemical transformation, not a guarantee that every substituted ring behaves identically. This chapter supplies reaction and atom accounting, not instructions for isolating or heating a diazonium salt. Keep the counterion, organic substitution and gaseous products distinct.",
+      "points": [
+        "ArN₂⁺BF₄⁻; classical Schiemann map · Replace diazonium group by F · ArF + N₂ + BF₃",
+        "Four F atoms in the starting counterion · 1 in ArF; 3 in BF₃ · B and F inventory conserved",
+        "Benzene-derived ring: six carbons · Both diazonium N leave as N₂ · Not a generic Cu-halide interchange"
+      ],
+      "board": {
+        "heading": "Diazonium fluorination uses a different reagent map",
+        "columns": [
+          "Given / structure",
+          "Follow the change",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "ArN₂⁺BF₄⁻; classical Schiemann map",
+            "Replace diazonium group by F",
+            "ArF + N₂ + BF₃"
+          ],
+          [
+            "Four F atoms in the starting counterion",
+            "1 in ArF; 3 in BF₃",
+            "B and F inventory conserved"
+          ],
+          [
+            "Benzene-derived ring: six carbons",
+            "Both diazonium N leave as N₂",
+            "Not a generic Cu-halide interchange"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Diazotization can remove a temporary amino directing group",
+      "formula": "ArNH₂ → ArN₂⁺ → ArH using the specified diazotization then H₃PO₂ reduction map",
+      "script": "An amino group can help choose where another group enters an aromatic ring and then be removed from the final framework. In the familiar deamination map, a primary aromatic amine is first converted to an arenediazonium species. Reduction with hypophosphorous acid replaces the diazonium group by hydrogen while nitrogen gas is released. Consider a ring labelled with amino at carbon one, methyl at carbon four, and bromines already at carbons two and six. Those bromines are ortho to the amino group in the supplied precursor. Replacing the amino derived diazonium group by hydrogen preserves the ring and methyl carbons. Renumbering the product from its methyl substituent places the bromines at positions three and five, giving three five dibromotoluene. The bromine atoms have not migrated; only the naming reference changed after the directing group was removed. This can achieve a substitution pattern that direct bromination of toluene would not normally favour. The example starts from the specified substituted precursor and does not assume an unqualified bromination gives a single pure product. Follow the original ring labels through replacement before assigning the final product name.",
+      "points": [
+        "Precursor: NH₂ at C1; CH₃ at C4 · Br at original C2 and C6 · Specified substituted aromatic framework",
+        "Diazotization, then H₃PO₂ reduction · Original C1 gains H; N₂ leaves · Ring, methyl and Br positions retained",
+        "Renumber relative to CH₃ · Br become positions 3 and 5 · 3,5-dibromotoluene; no Br migration"
+      ],
+      "board": {
+        "heading": "Diazotization can remove a temporary amino directing group",
+        "columns": [
+          "Given / structure",
+          "Follow the change",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "Precursor: NH₂ at C1; CH₃ at C4",
+            "Br at original C2 and C6",
+            "Specified substituted aromatic framework"
+          ],
+          [
+            "Diazotization, then H₃PO₂ reduction",
+            "Original C1 gains H; N₂ leaves",
+            "Ring, methyl and Br positions retained"
+          ],
+          [
+            "Renumber relative to CH₃",
+            "Br become positions 3 and 5",
+            "3,5-dibromotoluene; no Br migration"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Reductive amination retains the substituent already attached to nitrogen",
+      "formula": "CH₃CHO + CH₃NH₂ ⇌ CH₃CH=NCH₃ + H₂O; reduction → CH₃CH₂NHCH₃",
+      "script": "The class of an amine product depends on which groups remain attached to nitrogen, not just on whether a carbonyl was reduced. Use a specified reductive amination map starting from acetaldehyde and methylamine. Condensation gives an imine intermediate, meaning a carbon nitrogen double bond compound, with an ethylidene carbon nitrogen double bond and the original methyl group still bonded to nitrogen. The carbonyl oxygen leaves in the water balance rather than remaining in the selected carbon nitrogen double bond intermediate. Reducing the carbon nitrogen double bond then gives ethylmethylamine. Nitrogen is bonded to an ethyl group, a methyl group and one hydrogen, so the product is a secondary amine. The organic inventory is three carbons: two from acetaldehyde and one from methylamine. In formal atom bookkeeping, acetaldehyde plus methylamine plus two reducing hydrogen equivalents gives the three carbon amine plus water. Direct reduction of acetaldehyde alone would instead give ethanol, a different functional group. Actual reductive amination requires suitable control of condensation and reduction, and competing reactions can affect yield. This supporting reaction map identifies connectivity and atom sources rather than prescribing a complete reagent sequence or claiming exclusive conversion.",
+      "points": [
+        "Ethanal C2 + methylamine C1 · Imine CH₃CH=NCH₃ + H₂O · Original N–CH₃ bond retained",
+        "Reduce C=N; preserve all three carbons · CH₃CH₂NHCH₃ · Secondary amine: two C groups on N",
+        "Formal net: C₂H₄O + CH₅N + 2[H] · C₃H₉N + H₂O · Direct carbonyl reduction alone gives alcohol"
+      ],
+      "board": {
+        "heading": "Reductive amination retains the substituent already attached to nitrogen",
+        "columns": [
+          "Given / structure",
+          "Follow the change",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "Ethanal C2 + methylamine C1",
+            "Imine CH₃CH=NCH₃ + H₂O",
+            "Original N–CH₃ bond retained"
+          ],
+          [
+            "Reduce C=N; preserve all three carbons",
+            "CH₃CH₂NHCH₃",
+            "Secondary amine: two C groups on N"
+          ],
+          [
+            "Formal net: C₂H₄O + CH₅N + 2[H]",
+            "C₃H₉N + H₂O",
+            "Direct carbonyl reduction alone gives alcohol"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting extraction: protonation changes the amine distribution ratio",
+      "formula": "D=P/(1+10^(pKa(BH⁺)−pH)); forg=D Vorg/(Vaq+D Vorg)",
+      "script": "Partition of an amine requires both its acid base equilibrium and its neutral species partition coefficient. In a supplied supporting model, neutral base B distributes between an organic phase and water with coefficient P equal to twenty, defined as organic neutral concentration divided by aqueous neutral concentration. Protonated base remains in water. The conjugate acid has supplied p K a ten, and an external buffer maintains the stated aqueous p H. The ratio of protonated to neutral base in water is ten raised to p K a minus p H. The total organic to aqueous analytical distribution ratio is consequently P divided by one plus that ratio. At p H eight, D is twenty over one hundred one. For one hundred millilitres water and fifty millilitres organic phase, the fraction of total amine in organic solution is ten over one hundred eleven, about nine point zero one percent. At p H ten, D becomes ten and the organic fraction five sixths, about eighty three point three percent. These results assume equilibrium, unchanged phase volumes, no ion transfer into organic solution and no additional association. The supplied p H is maintained rather than calculated from the amine alone.",
+      "points": [
+        "Pneutral=20; pKa(BH⁺)=10 · BH⁺ stays aqueous; maintained pH · D=20/(1+10^(10−pH))",
+        "Vaq=100 mL; Vorg=50 mL; pH8 · D=20/101; forg=10/111 · About 9.01% organic",
+        "Same volumes; pH10 · D=10; forg=5/6 · About 83.3%; model assumptions explicit"
+      ],
+      "board": {
+        "heading": "Supporting extraction: protonation changes the amine distribution ratio",
+        "columns": [
+          "Given / structure",
+          "Follow the change",
+          "Result / boundary"
+        ],
+        "rows": [
+          [
+            "Pneutral=20; pKa(BH⁺)=10",
+            "BH⁺ stays aqueous; maintained pH",
+            "D=20/(1+10^(10−pH))"
+          ],
+          [
+            "Vaq=100 mL; Vorg=50 mL; pH8",
+            "D=20/101; forg=10/111",
+            "About 9.01% organic"
+          ],
+          [
+            "Same volumes; pH10",
+            "D=10; forg=5/6",
+            "About 83.3%; model assumptions explicit"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1366,6 +1506,94 @@
       ],
       "answer": 0,
       "explanation": "The new acyl group attaches to nitrogen; that is distinct from making a ring carbon–carbon bond."
+    },
+    {
+      "question": "The classical thermal reaction map for ArN₂⁺BF₄⁻ gives:",
+      "options": [
+        "ArF + N₂ + BF₃",
+        "ArCl + N₂ + BF₄",
+        "ArCN + BF₃",
+        "ArNH₂ + F₂"
+      ],
+      "answer": 0,
+      "explanation": "One fluorine enters the aryl fluoride, three remain with boron, and both diazonium nitrogens leave as N2."
+    },
+    {
+      "question": "For benzenediazonium tetrafluoroborate in that map, the selected organic product contains:",
+      "options": [
+        "Seven carbons and one nitrogen",
+        "Six carbons and no nitrogen",
+        "Six carbons and two nitrogen atoms",
+        "Five carbons and one boron"
+      ],
+      "answer": 1,
+      "explanation": "Fluorobenzene retains the six-carbon ring and has no nitrogen; N2 and BF3 are separate products."
+    },
+    {
+      "question": "The specified H₃PO₂ reduction of an arenediazonium group replaces that group by:",
+      "options": [
+        "CN",
+        "OH",
+        "H",
+        "Br"
+      ],
+      "answer": 2,
+      "explanation": "The deamination map gives ArH with nitrogen loss, allowing a temporary amino directing group to be removed."
+    },
+    {
+      "question": "A precursor has NH₂ at ring C1, CH₃ at C4 and Br at C2/C6. Removing the amino group through the specified diazonium reduction gives:",
+      "options": [
+        "2,6-dibromotoluene by bromine migration",
+        "Benzene with all substituents removed",
+        "Only an azo dye",
+        "3,5-dibromotoluene after renumbering from methyl"
+      ],
+      "answer": 3,
+      "explanation": "The original bromines stay at their carbons. Changing the naming reference to methyl makes those positions 3 and 5."
+    },
+    {
+      "question": "Specified reductive amination of acetaldehyde with methylamine gives:",
+      "options": [
+        "Ethylmethylamine, a secondary amine",
+        "Ethylamine, a primary amine with only two carbons",
+        "Ethanol as the amination product",
+        "Trimethylamine necessarily"
+      ],
+      "answer": 0,
+      "explanation": "The nitrogen retains its methyl group and gains the reduced two-carbon fragment, giving CH3CH2NHCH3."
+    },
+    {
+      "question": "The carbon count in that selected amine product is:",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "One"
+      ],
+      "answer": 1,
+      "explanation": "Two carbons come from acetaldehyde and one from methylamine; condensation removes water, not a carbon."
+    },
+    {
+      "question": "For the supplied amine extraction model P=20, pKa(BH⁺)=10, pH8, Vaq=100 mL and Vorg=50 mL, organic fraction is:",
+      "options": [
+        "20/21",
+        "5/6",
+        "10/111",
+        "100/101"
+      ],
+      "answer": 2,
+      "explanation": "D=20/101 and forg=D×50/(100+D×50)=10/111."
+    },
+    {
+      "question": "At maintained pH10 with the same supplied model and volumes, the organic fraction becomes:",
+      "options": [
+        "1/2",
+        "10/111",
+        "1/6",
+        "5/6"
+      ],
+      "answer": 3,
+      "explanation": "At pH=pKa the aqueous BH+/B ratio is one, D=20/2=10 and forg=500/600=5/6."
     }
   ]
 }
