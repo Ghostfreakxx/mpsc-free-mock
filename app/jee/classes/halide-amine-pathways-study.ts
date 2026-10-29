@@ -1,0 +1,20 @@
+import type {StudyLesson} from './course';
+import {halideAminePathwaysAdditions as additions} from './halide-amine-pathways-additions.ts';
+const examples:Record<string,StudyLesson['examples']>={
+ 'organic-halogens':[
+ {question:'Track a carbon isotope at the original C1–X site through the stipulated C1–C2 benzyne and subsequent amide-ion capture.',steps:['Removal of X at C1 and H at adjacent C2 creates the specified reactive unit; the carbon label remains C1.','Capture at C1 gives aniline with NH2 attached to the labelled carbon.','Capture at C2 gives aniline with the labelled carbon adjacent to the NH2-bearing carbon.'],answer:'Two isotope relationships are possible in this scheme. Unlabelled products have the same aniline connectivity; no universal product ratio is assumed.'},
+ {question:'40 mmol EtMgBr first encounters15 mmol ethanol, then excess propanone. Find the ideal addition-product ceiling and carbon count.',steps:['EtOH consumes one reagent equivalent per OH proton, giving15 mmol ethane.','40−15=25 mmol reagent remain for propanone addition.','The3-carbon ketone and2-carbon ethyl group give a5-carbon tertiary alcohol after workup.'],answer:'At most25 mmol 2-methylbutan-2-ol under the stated ideal sequence. Ethane is a separate quench product, not available carbonyl-addition reagent.'},
+ {question:'Find the net reaction of Cl•+O3→ClO•+O2 and ClO•+O→Cl•+O2.',steps:['Add both equations without changing their coefficients.','Cancel one Cl atom and one ClO radical from each side.','The remaining oxygen balance is three plus one atoms on the left and two times two on the right.'],answer:'O3+O→2O2. Chlorine is regenerated; this selected cycle is not a complete atmospheric model.'}
+ ],
+ 'organic-nitrogen':[
+ {question:'Compare benzamide under suitable amide reduction and Hofmann rearrangement; then identify the Hofmann product of phenylacetamide.',steps:['PhCONH2 has7 carbons; reduction retains the carbonyl carbon as CH2, giving PhCH2NH2.','Hofmann rearrangement removes that carbon from the organic amine, giving6-carbon PhNH2.','PhCH2CONH2 has8 carbons; its rearrangement leaves7-carbon PhCH2NH2.'],answer:'Benzamide reduction: benzylamine; benzamide rearrangement: aniline; phenylacetamide rearrangement: benzylamine. The two named primary amines differ in whether N is attached directly to the ring.'},
+ {question:'A sample contains only primary and tertiary aliphatic monoamines. Total sites are30 mmol; a corrected selective nitrous-acid measurement gives10 mmol N2. Find amounts and primary mole fraction.',steps:['The stipulated one-to-one response gives10 mmol primary amine.','The total-site balance gives30−10=20 mmol tertiary amine.','Primary mole fraction is10/30=1/3; a mass fraction requires molar masses.'],answer:'10 mmol primary,20 mmol tertiary; primary mole fraction1/3. Other acid-consuming or gas-forming substances would invalidate this two-component inference.'},
+ {question:'A pure1.460 g monobasic amine sample has amount20 mmol. Calculate anhydrous hydrochloride mass using36.5 g/mol HCl and assess whether the amine class is identified.',steps:['The amine molar mass is1.460/.020=73 g/mol.','One proton per basic nitrogen consumes.020 mol HCl, adding.730 g.','The dry salt mass is1.460+.730=2.190 g; primary, secondary and tertiary monoamines can each accept one proton.'],answer:'2.190 g anhydrous hydrochloride in the stipulated model. Protonation stoichiometry and molar mass do not uniquely establish the nitrogen substitution class or structure.'}
+ ]
+};
+export function extendHalideAminePathwaysLesson(lesson:StudyLesson){
+ if(!(lesson.id in additions))return;const a=additions[lesson.id as keyof typeof additions];
+ lesson.sections.push(...a.chapters.map(ch=>({title:ch.title,formula:ch.formula,paragraphs:[ch.script]})));
+ lesson.examples.push(...examples[lesson.id]);lesson.quiz.push(...a.quiz.map(q=>({...q,options:[...q.options]})));
+ lesson.sources.push(...a.sources.filter(s=>!lesson.sources.some(old=>old.url===s.url)));
+}

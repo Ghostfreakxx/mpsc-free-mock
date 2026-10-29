@@ -31,17 +31,17 @@ Questions are original practice, not represented as official PYQs.
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 29 | 29 | 18 | 48 / 48 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 29 | 32 | 23 | 52 / 52 |
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 33 | 33 | 21 | 56 / 56 |
-| 16 | [Organic Halogens](/jee/classes/organic-halogens) | 29 | 29 | 18 | 48 / 48 |
+| 16 | [Organic Halogens](/jee/classes/organic-halogens) | 33 | 33 | 21 | 56 / 56 |
 | 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 35 | 33 | 21 | 56 / 56 |
-| 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 29 | 29 | 18 | 48 / 48 |
+| 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 33 | 33 | 21 | 56 / 56 |
 | 19 | [Biomolecules](/jee/classes/biomolecules) | 33 | 33 | 21 | 56 / 56 |
 | 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 29 | 29 | 18 | 48 / 48 |
 
 ## Latest expansion
 
-Hydrocarbons adds Friedel–Crafts carbon-skeleton selection, repeat-substitution limits, xylene site symmetry and a stated benzene hydrogenation benchmark.
+Organic Halogens adds benzyne isotope tracking, allylic capture maps, ordered Grignard quenching and a selected chlorine–ozone catalytic cycle.
 
-Biomolecules adds L versus CIP configuration, ideal alpha-helix contact counts, methyl glucoside and supporting enzyme saturation. Diagrams show site equivalence, Fischer priorities and the supplied saturation curve.
+Organic Nitrogen adds azo-coupling conditions, aromatic amide reduction/rearrangement maps, selective binary-mixture inference and dry amine-salt balances. Diagrams distinguish labelled ring sites and retained versus removed carbonyl carbon.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax aromatic reactions, benzene stability, amino acids, protein structure and glycosides, plus Schaller enzyme kinetics. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference OpenStax substitution, organomagnesium and amine chemistry, NCERT amines via IIT Kanpur SATHEE, and NOAA ozone chemistry. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

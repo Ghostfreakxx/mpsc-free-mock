@@ -5,10 +5,10 @@ import {createHash} from 'node:crypto';
 import {studyLessons} from '../app/jee/classes/study-lessons.ts';
 import {chemistryExpansionLessons} from '../app/jee/classes/chemistry-expansion-study.ts';
 const written=[...studyLessons,...chemistryExpansionLessons];
-for(const [id,count] of [['organic-oxygen',35],['organic-nitrogen',29]]){
+for(const [id,count] of [['organic-oxygen',35],['organic-nitrogen',33]]){
  const lesson=JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`));
  test(`${id}: substantive chapters, quiz parity and reviewed audio provenance`,()=>{
-  assert.equal(lesson.chapters.length,count);assert.equal(lesson.quiz.length,id==='organic-nitrogen'?48:56);
+  assert.equal(lesson.chapters.length,count);assert.equal(lesson.quiz.length,56);
   const companion=written.find(l=>l.id===id);
   assert.deepEqual(lesson.quiz.slice(0,companion.quiz.length),companion.quiz);
   for(const [i,c] of lesson.chapters.entries()){
@@ -19,7 +19,7 @@ for(const [id,count] of [['organic-oxygen',35],['organic-nitrogen',29]]){
  });
  test(`${id}: full transcript has readable, ordered captions for every chapter`,()=>{
   const t=JSON.parse(fs.readFileSync(`app/data/jee-${id}-timings.json`));
-  assert.equal(t.chapters.length,count);assert.ok(t.duration>400 && t.duration<(id==='organic-oxygen'?35*90:2200));
+  assert.equal(t.chapters.length,count);assert.ok(t.duration>400 && t.duration<(count*90));
   const normalize=s=>s.toLowerCase().replace(/[^a-z0-9]/g,'');
   for(const [i,ch] of t.chapters.entries()){
    assert.equal(ch.start,i?t.chapters[i-1].end:0);

@@ -45,6 +45,10 @@
     {
       "title": "OpenStax: Friedel–Crafts substrate limitations",
       "url": "https://openstax.org/books/organic-chemistry/pages/16-3-alkylation-and-acylation-of-aromatic-rings-the-friedel-crafts-reaction"
+    },
+    {
+      "title": "NCERT via IIT Kanpur SATHEE: amines",
+      "url": "https://sathee.iitk.ac.in/ncert-books/ncert-books-theory/class-12/nbt-che-12/chem-12-unit-13-amines/"
     }
   ],
   "chapters": [
@@ -1064,6 +1068,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Azo coupling needs both an activated ring and suitable solution conditions",
+      "formula": "Ar–N2+ + activated Ar′–H → Ar–N=N–Ar′ + H+; ring carbon joins the azo group",
+      "script": "A diazonium ion can act as an electrophile toward a sufficiently activated aromatic ring. In a selected coupling with phenol, the new bond joins a carbon of the phenol ring to the terminal nitrogen of the diazonium group. The product contains an azo bridge between two aromatic systems; it is not made by simply joining the two oxygen atoms or removing both nitrogen atoms. If the para position of phenol is available, para coupling is commonly favoured in the elementary map, while a blocked position changes the available sites. Solution conditions matter because phenoxide is a stronger ring activator than neutral phenol. For an arylamine coupling component, excessive protonation of the amino group instead reduces its ability to activate the ring. These observations do not justify choosing an arbitrarily extreme pH: the diazonium partner also has condition-dependent stability and competing reactions. Treat the stated medium as part of the reaction identity. Colour is consistent with an extended conjugated product, but colour alone does not establish the complete connectivity or purity of an unknown dye.",
+      "points": [
+        "Diazonium + activated ring · Ar–N=N–Ar′ · New C–N bond",
+        "Phenol: para site open · Para often favoured · Blocked sites change map",
+        "Phenoxide / anilinium · Activation differs · Use stated medium"
+      ],
+      "board": {
+        "heading": "The coupling partner and medium both matter",
+        "columns": [
+          "Starting map",
+          "Result / count",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Diazonium + activated ring",
+            "Ar–N=N–Ar′",
+            "New C–N bond"
+          ],
+          [
+            "Phenol: para site open",
+            "Para often favoured",
+            "Blocked sites change map"
+          ],
+          [
+            "Phenoxide / anilinium",
+            "Activation differs",
+            "Use stated medium"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Aromatic amide reduction and rearrangement give different amines",
+      "formula": "PhCONH2 → PhCH2NH2 by suitable reduction; PhCONH2 → PhNH2 by Hofmann rearrangement",
+      "script": "Two transformations of the same primary amide can produce amines with different carbon skeletons. Take benzamide, with a benzene ring directly attached to a carbonyl carbon and that carbonyl attached to an amino group. Suitable amide reduction converts the carbonyl carbon into a methylene without deleting it. The product is benzylamine, in which nitrogen is bonded to a saturated carbon outside the ring. In a Hofmann rearrangement of a primary amide, the carbonyl carbon is removed from the organic amine skeleton. Benzamide therefore gives aniline instead, with nitrogen directly attached to the aromatic ring. Both products are primary amines because nitrogen has one carbon substituent, but only aniline is an arylamine in this comparison. Apply the same bookkeeping to phenylacetamide, which already has a methylene between ring and carbonyl: its Hofmann product is benzylamine, not aniline. Count and mark the carbonyl carbon before choosing the product name. Reagent compatibility and actual yield remain separate questions, and Hofmann rearrangement must not be confused with elimination from a quaternary ammonium hydroxide.",
+      "points": [
+        "PhCONH2: reduction · PhCH2NH2;7 C · Carbonyl C retained",
+        "PhCONH2: rearrangement · PhNH2;6 C · Carbonyl C removed",
+        "PhCH2CONH2: rearrange · PhCH2NH2;7 C · Existing CH2 retained"
+      ],
+      "board": {
+        "heading": "Mark the carbonyl carbon before naming",
+        "columns": [
+          "Starting map",
+          "Result / count",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "PhCONH2: reduction",
+            "PhCH2NH2;7 C",
+            "Carbonyl C retained"
+          ],
+          [
+            "PhCONH2: rearrangement",
+            "PhNH2;6 C",
+            "Carbonyl C removed"
+          ],
+          [
+            "PhCH2CONH2: rearrange",
+            "PhCH2NH2;7 C",
+            "Existing CH2 retained"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Gas and total-base data can resolve a stipulated two-amine mixture",
+      "formula": "n(primary) = n(N2); n(tertiary) = n(total monobasic amines) − n(N2)",
+      "script": "One measurement rarely identifies every component of an arbitrary mixture. A selected two-component problem becomes solvable only after its chemical assumptions are stated. Suppose a sample contains just a primary aliphatic monoamine and a tertiary aliphatic monoamine, with no other acid-consuming species. A separate aliquot establishes thirty millimoles of total monobasic amine sites. Under the specified quantitative nitrous-acid comparison, only the primary component supplies the measured nitrogen gas, and ten millimoles of nitrogen are collected after suitable corrections. The primary amine amount is therefore ten millimoles, and subtraction gives twenty millimoles of the tertiary component. The primary mole fraction is one third, not automatically its mass fraction. The nitrogen molecule contains one nitrogen atom from the amine and one supplied by the nitrosating reagent; it does not require two primary amine molecules per nitrogen molecule. Gas dissolution, water vapour, other nitrogen-forming species and incomplete conversion would need correction in a real analysis. Without the two-component and selective-response assumptions, these two numbers need not uniquely determine the composition.",
+      "points": [
+        "Total monoamine sites · 30 mmol · Separate measurement",
+        "Corrected N2 amount · 10 mmol primary amine · Stated selective model",
+        "Tertiary:30−10 · 20 mmol; primary x=1/3 · Not mass fraction"
+      ],
+      "board": {
+        "heading": "Two independent measurements, stated assumptions",
+        "columns": [
+          "Starting map",
+          "Result / count",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Total monoamine sites",
+            "30 mmol",
+            "Separate measurement"
+          ],
+          [
+            "Corrected N2 amount",
+            "10 mmol primary amine",
+            "Stated selective model"
+          ],
+          [
+            "Tertiary:30−10",
+            "20 mmol; primary x=1/3",
+            "Not mass fraction"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Amine salt mass measures protonation equivalents, not nitrogen substitution class",
+      "formula": "B + HCl → BH+Cl−; 0.020 mol monoamine binds0.020 mol HCl in the stated dry-salt ledger",
+      "script": "A primary, secondary or tertiary monoamine can each accept one proton at its available nitrogen lone pair. The number of carbon groups bonded to nitrogen is not the number of hydrogen chloride equivalents needed for ordinary complete protonation. In a selected dry-salt calculation, a pure monobasic amine sample has amount twenty millimoles and mass one point four six grams. Complete formation of its anhydrous hydrochloride increases the mass by twenty millimoles times thirty-six point five grams per mole, or zero point seven three grams. The ideal salt mass is therefore two point one nine grams, and the starting amine molar mass is seventy-three grams per mole. These numbers do not distinguish primary, secondary and tertiary structural isomers with that molar mass. Salt formation adds a proton and chloride counterion without adding an organic carbon group. A diamine, a hydrate, residual solvent or incomplete drying would require a different ledger. Acid-base stoichiometry, nitrogen substitution class and a molecular structural assignment are three separate tasks; use additional evidence before claiming a unique amine.",
+      "points": [
+        "20 mmol monoamine · 20 mmol HCl · One basic site each",
+        "Mass gain:.020×36.5 · 0.730 g · Anhydrous salt model",
+        "1.460+.730 · 2.190 g salt; M(B)=73 · Class not determined"
+      ],
+      "board": {
+        "heading": "A salt balance does not identify an isomer",
+        "columns": [
+          "Starting map",
+          "Result / count",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "20 mmol monoamine",
+            "20 mmol HCl",
+            "One basic site each"
+          ],
+          [
+            "Mass gain:.020×36.5",
+            "0.730 g",
+            "Anhydrous salt model"
+          ],
+          [
+            "1.460+.730",
+            "2.190 g salt; M(B)=73",
+            "Class not determined"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1594,6 +1738,94 @@
       ],
       "answer": 3,
       "explanation": "At pH=pKa the aqueous BH+/B ratio is one, D=20/2=10 and forg=500/600=5/6."
+    },
+    {
+      "question": "In selected phenol azo coupling, which new connection forms?",
+      "options": [
+        "O–O between two phenols",
+        "A ring C–N bond to an azo bridge",
+        "Deletion of both diazonium nitrogen atoms",
+        "A carbon–magnesium bond"
+      ],
+      "answer": 1,
+      "explanation": "The activated ring carbon bonds to the diazonium nitrogen end, yielding Ar–N=N–Ar′."
+    },
+    {
+      "question": "Why must medium be considered in an azo-coupling problem?",
+      "options": [
+        "pH never affects either partner",
+        "Strongest possible acid always maximizes phenoxide",
+        "Phenol/phenoxide and amine/anilinium have different activation, and diazonium stability also matters",
+        "Any coloured product proves one unique structure"
+      ],
+      "answer": 2,
+      "explanation": "Protonation changes activation; both coupling partner and diazonium reagent must be compatible with the stated conditions."
+    },
+    {
+      "question": "Suitable reduction versus Hofmann rearrangement of benzamide gives which ordered pair?",
+      "options": [
+        "Aniline; benzylamine",
+        "Benzene; phenol",
+        "Two identical aniline products",
+        "Benzylamine; aniline"
+      ],
+      "answer": 3,
+      "explanation": "Reduction retains the carbonyl carbon as CH2; rearrangement removes it from the amine skeleton."
+    },
+    {
+      "question": "Hofmann rearrangement of PhCH2CONH2 gives which organic amine?",
+      "options": [
+        "PhCH2NH2",
+        "PhNH2",
+        "PhCH2CH2NH2",
+        "PhCONH2"
+      ],
+      "answer": 0,
+      "explanation": "The carbonyl carbon is removed, but the pre-existing benzylic CH2 remains."
+    },
+    {
+      "question": "A stipulated primary/tertiary aliphatic monoamine mixture contains30 mmol total sites and gives10 mmol N2 only from the primary amine. Tertiary amount?",
+      "options": [
+        "10 mmol",
+        "20 mmol",
+        "30 mmol",
+        "40 mmol"
+      ],
+      "answer": 1,
+      "explanation": "One primary amine supplies one N2 in this stated response;30−10=20 mmol tertiary amine."
+    },
+    {
+      "question": "For that30 mmol mixture with10 mmol primary amine, what is the primary mole fraction?",
+      "options": [
+        "2/3",
+        "1/2",
+        "1/3",
+        "Its mass fraction must be1/3"
+      ],
+      "answer": 2,
+      "explanation": "10/30=1/3; mass fractions additionally depend on molar masses."
+    },
+    {
+      "question": "A1.460 g,20 mmol monobasic amine forms an anhydrous hydrochloride completely. Use M(HCl)=36.5. Salt mass?",
+      "options": [
+        "1.460 g",
+        "1.825 g",
+        "0.730 g",
+        "2.190 g"
+      ],
+      "answer": 3,
+      "explanation": "The salt gains.020×36.5=.730 g, giving2.190 g."
+    },
+    {
+      "question": "Does one HCl equivalent per monoamine establish whether it is primary, secondary or tertiary?",
+      "options": [
+        "No; each can accept one proton at its one basic nitrogen",
+        "Yes; only primary amines protonate",
+        "Yes; tertiary amines require three equivalents",
+        "Yes; salt formation adds an organic carbon group"
+      ],
+      "answer": 0,
+      "explanation": "Protonation equivalents count available basic sites, not the number of carbon substituents on nitrogen."
     }
   ]
 }

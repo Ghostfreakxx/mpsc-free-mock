@@ -1233,7 +1233,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-halogens", subject: "Chemistry", unit: 16, number: "C13", title: organicHalogens.title,
-    description: "Twenty-nine narrated chapters on halides, activated aromatic substitution, ring closure, epoxide Grignard extension, SN2 priority changes, elimination and analytical evidence.",
+    description: "Thirty-three narrated chapters on halides, benzyne isotope tracking, allylic capture, Grignard equivalent balances, a selected ozone cycle and substitution evidence.",
     scope: "Recorded Unit 16 foundation and worked applications with original practice. Full spatial mechanism drawings, further preparations, special haloarene pathways and detailed compound comparisons remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-halogens.lecture.v1",
     audio: "/lectures/organic-halogens/narration-marin.mp3",
@@ -1253,7 +1253,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-nitrogen", subject: "Chemistry", unit: 18, number: "C15", title: organicNitrogen.title,
-    description: "Twenty-nine narrated chapters on amines, nitro-reduction electron balances, nitration speciation, Lewis-acid compatibility, a supporting Hofmann elimination map and diazonium routes.",
+    description: "Thirty-three narrated chapters on amines, azo-coupling conditions, aromatic amide routes, selective mixture calculations, dry-salt balances and diazonium chemistry.",
     scope: "Recorded Unit 18 foundation and worked applications with original practice. Full mechanisms, wider solvent datasets and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-nitrogen.lecture.v1",
     audio: "/lectures/organic-nitrogen/narration-marin.mp3",
