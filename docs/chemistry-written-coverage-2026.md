@@ -17,13 +17,13 @@ Questions are original practice, not represented as official PYQs.
 | Unit | Recorded class | Chapters | Written sections | Worked examples | Class MCQs / Written MCQs |
 | --- | --- | --- | --- | --- | --- |
 | 1 | [Mole Concept](/jee/classes/mole-concept) | 29 | 26 | 18 | 48 / 48 |
-| 2 | [Atomic Structure](/jee/classes/atomic-structure) | 29 | 26 | 18 | 50 / 50 |
-| 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 29 | 28 | 18 | 50 / 50 |
+| 2 | [Atomic Structure](/jee/classes/atomic-structure) | 33 | 30 | 21 | 58 / 58 |
+| 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 33 | 32 | 21 | 58 / 58 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 31 | 33 | 21 | 50 / 50 |
 | 5 | [Solutions](/jee/classes/solutions) | 31 | 33 | 21 | 50 / 50 |
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 29 | 29 | 22 | 50 / 50 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 30 | 31 | 22 | 50 / 50 |
-| 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 26 | 29 | 22 | 50 / 50 |
+| 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 30 | 33 | 25 | 58 / 58 |
 | 9 | [Periodic Trends](/jee/classes/periodic-trends) | 29 | 27 | 18 | 48 / 48 |
 | 10 | [P-Block](/jee/classes/p-block) | 31 | 29 | 18 | 50 / 50 |
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 31 | 29 | 18 | 50 / 50 |
@@ -35,15 +35,15 @@ Questions are original practice, not represented as official PYQs.
 | 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 35 | 33 | 21 | 56 / 56 |
 | 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 33 | 33 | 21 | 56 / 56 |
 | 19 | [Biomolecules](/jee/classes/biomolecules) | 33 | 33 | 21 | 56 / 56 |
-| 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 29 | 29 | 18 | 48 / 48 |
+| 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 33 | 33 | 21 | 56 / 56 |
 
 ## Latest expansion
 
-Organic Halogens adds benzyne isotope tracking, allylic capture maps, ordered Grignard quenching and a selected chlorine–ozone catalytic cycle.
+Atomic Structure adds accelerating-voltage comparisons, wavelength-window counting, orbital projections and common chromium/copper cation configurations. Chemical Bonding adds electron-deficient adducts, common-factor ionic energy comparisons, CO charge conventions and the oxygen molecular-ion series.
 
-Organic Nitrogen adds azo-coupling conditions, aromatic amide reduction/rearrangement maps, selective binary-mixture inference and dry amine-salt balances. Diagrams distinguish labelled ring sites and retained versus removed carbonyl carbon.
+Kinetics adds independent concentration perturbations, conditional collision filtering, depletion/feed boundaries and a supporting mixed-population decay model. Practical Chemistry adds nickel dimethylglyoxime, calcium oxalate acid response, flame-test blanks and phosphate-molybdate confirmation.
 
-Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
+Together this batch adds sixteen narrated chapters, thirty-two original MCQs and twelve worked examples, with matching written companions and recorded practice.
 
 ## Remaining scope
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax substitution, organomagnesium and amine chemistry, NCERT amines via IIT Kanpur SATHEE, and NOAA ozone chemistry. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference OpenStax atomic, bonding and kinetics theory, UNT octet comparisons, Virtual Labs nickel confirmation, Malik calcium analysis, NCERT flame comparisons and Arizona Geological Survey phosphate evidence. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

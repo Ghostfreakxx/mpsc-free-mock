@@ -1889,3 +1889,267 @@ This conditional derivation illustrates reasoning, not proof that a real
 
 00:33:47.964 --> 00:33:49.404
 reaction follows this mechanism.
+
+00:33:49.584 --> 00:33:54.024
+An experimental rate law is a claim about independently controlled variables,
+
+00:33:54.804 --> 00:33:56.204
+not just a pattern in one table.
+
+00:33:57.524 --> 00:34:02.124
+Suppose the law is rate equals k times concentration A to power m times
+
+00:34:02.124 --> 00:34:03.824
+concentration B to power n.
+
+00:34:04.744 --> 00:34:08.904
+A first comparison doubles both concentrations and gives a fourfold rate.
+
+00:34:09.504 --> 00:34:13.484
+This fixes the sum of the two orders at two, but it does not establish that
+
+00:34:13.484 --> 00:34:14.404
+each order is one.
+
+00:34:14.984 --> 00:34:19.804
+Orders two and zero, one and one, or zero and two all satisfy that comparison.
+
+00:34:20.884 --> 00:34:24.844
+Now use an additional experiment that doubles A alone while keeping B and
+
+00:34:24.844 --> 00:34:25.524
+temperature fixed.
+
+00:34:26.164 --> 00:34:29.444
+If this also gives a fourfold rate, the order in A is two.
+
+00:34:30.564 --> 00:34:34.564
+Combining that result with the earlier sum gives order zero in B over the
+
+00:34:34.564 --> 00:34:35.164
+tested range.
+
+00:34:35.624 --> 00:34:39.704
+The zero order is an empirical local statement, not proof that B never
+
+00:34:39.704 --> 00:34:41.464
+participates in any molecular step.
+
+00:34:42.284 --> 00:34:46.824
+Uncontrolled temperature, dilution or catalyst changes would compromise the
+
+00:34:46.824 --> 00:34:47.184
+inference.
+
+00:34:47.644 --> 00:34:51.804
+Design the extra comparison to break the ambiguity instead of reading balanced
+
+00:34:51.804 --> 00:34:54.204
+equation coefficients as measured exponents.
+
+00:34:54.600 --> 00:34:58.820
+Collision theory separates encounter frequency from the chance that an
+
+00:34:58.820 --> 00:35:00.240
+encounter produces a reaction.
+
+00:35:01.000 --> 00:35:06.100
+In a selected elementary gas collision model, stipulate that two percent of
+
+00:35:06.100 --> 00:35:08.080
+collisions satisfy the chosen energy criterion.
+
+00:35:08.880 --> 00:35:12.720
+Among those energetic collisions, only one tenth have a suitable relative
+
+00:35:12.720 --> 00:35:13.320
+orientation.
+
+00:35:14.100 --> 00:35:18.274
+The fraction satisfying both requirements is two percent times one tenth,
+
+00:35:18.274 --> 00:35:18.560
+which
+
+00:35:18.560 --> 00:35:20.780
+is zero point two percent of all collisions.
+
+00:35:20.780 --> 00:35:25.340
+If the system has a supplied total collision count of one million per second,
+
+00:35:26.040 --> 00:35:29.640
+this ideal comparison predicts two thousand successful events per second.
+
+00:35:31.340 --> 00:35:35.054
+That event count is not automatically a molar rate constant; converting
+
+00:35:35.054 --> 00:35:35.420
+between
+
+00:35:35.420 --> 00:35:39.080
+event counts and concentration based rates requires the appropriate amount,
+
+00:35:39.660 --> 00:35:41.380
+volume and pair count conventions.
+
+00:35:42.320 --> 00:35:46.140
+Increasing an orientation factor in this fixed comparison need not mean
+
+00:35:46.140 --> 00:35:47.520
+lowering the activation energy.
+
+00:35:48.320 --> 00:35:52.740
+Likewise, increasing temperature changes the energy distribution and can also
+
+00:35:52.740 --> 00:35:53.780
+affect collision frequency.
+
+00:35:54.700 --> 00:35:58.272
+The factor multiplication here uses the stated conditional orientation
+
+00:35:58.272 --> 00:35:58.680
+fraction
+
+00:35:58.680 --> 00:36:03.220
+among energetic encounters, so no extra assumption that the two properties are
+
+00:36:03.220 --> 00:36:04.760
+statistically independent is needed.
+
+00:36:05.520 --> 00:36:09.271
+This simple model is not a universal quantitative description of every
+
+00:36:09.271 --> 00:36:09.700
+solution
+
+00:36:09.700 --> 00:36:10.820
+or surface reaction.
+
+00:36:11.016 --> 00:36:15.557
+A straight concentration versus time line is not permission to predict
+
+00:36:15.557 --> 00:36:16.076
+negative
+
+00:36:16.076 --> 00:36:16.916
+material.
+
+00:36:17.396 --> 00:36:21.436
+Consider a stipulated zero order disappearance with initial concentration zero
+
+00:36:21.436 --> 00:36:25.856
+point zero eight molar and a constant loss rate of zero point zero zero two
+
+00:36:25.856 --> 00:36:26.556
+molar per second.
+
+00:36:27.496 --> 00:36:29.316
+The line reaches zero at forty seconds.
+
+00:36:29.916 --> 00:36:33.696
+In an ideal model that maintains this rate until depletion and has no other
+
+00:36:33.696 --> 00:36:37.136
+source of A, there is no A left between forty and sixty seconds.
+
+00:36:37.676 --> 00:36:39.636
+A feed pulse is applied at sixty seconds.
+
+00:36:40.006 --> 00:36:44.206
+It establishes concentration zero point zero four molar, with negligible
+
+00:36:44.206 --> 00:36:44.556
+volume
+
+00:36:44.556 --> 00:36:44.936
+change.
+
+00:36:45.836 --> 00:36:49.840
+If the same zero order regime resumes immediately, ten more seconds remove
+
+00:36:49.840 --> 00:36:50.056
+zero
+
+00:36:50.056 --> 00:36:54.156
+point zero two molar, leaving zero point zero two molar at seventy seconds.
+
+00:36:55.516 --> 00:36:58.796
+Applying the original line continuously through the pause and pulse would lose
+
+00:36:58.796 --> 00:37:01.396
+both the depletion boundary and the added material.
+
+00:37:02.156 --> 00:37:05.896
+Real zero order behaviour may fail before complete depletion, so the abrupt
+
+00:37:05.896 --> 00:37:09.096
+stop and restart are explicit assumptions of this exercise.
+
+00:37:10.156 --> 00:37:13.716
+Specify each interval and its starting concentration before using the
+
+00:37:13.716 --> 00:37:14.356
+integrated equation.
+
+00:37:14.736 --> 00:37:19.560
+A total signal can combine two independent contributions even when each
+
+00:37:19.560 --> 00:37:20.036
+follows
+
+00:37:20.036 --> 00:37:21.796
+a simple first order law.
+
+00:37:22.356 --> 00:37:26.476
+In a supporting model, let two noninterconverting populations contribute
+
+00:37:26.476 --> 00:37:28.556
+equally to the initial calibrated signal.
+
+00:37:29.456 --> 00:37:33.496
+One population has a ten minute half life and the other a twenty minute half
+
+00:37:33.496 --> 00:37:33.716
+life.
+
+00:37:34.636 --> 00:37:38.396
+Assume signal is linear in their remaining amounts with the stated equal
+
+00:37:38.396 --> 00:37:40.996
+initial weights and that neither product contributes.
+
+00:37:41.836 --> 00:37:45.976
+After twenty minutes, the fast population retains one quarter and the slow
+
+00:37:45.976 --> 00:37:47.276
+population one half.
+
+00:37:47.956 --> 00:37:50.456
+Their weighted sum is three eighths of the initial signal.
+
+00:37:51.536 --> 00:37:55.276
+After forty minutes, the corresponding fractions are one sixteenth and one
+
+00:37:55.276 --> 00:37:59.276
+quarter, giving a total fraction of five divided by thirty two.
+
+00:37:59.276 --> 00:38:03.556
+The signal ratio from twenty to forty minutes is therefore five twelfths, not
+
+00:38:03.556 --> 00:38:05.956
+the same multiplier as in the first twenty minute interval.
+
+00:38:06.746 --> 00:38:11.816
+The total is a sum of exponentials, not generally one exponential with an
+
+00:38:11.816 --> 00:38:12.356
+averaged half life.
+
+00:38:13.096 --> 00:38:16.956
+The surviving signal becomes increasingly dominated by the slower population.
+
+00:38:17.756 --> 00:38:22.276
+A curved logarithmic plot can flag a failed single population model, but it
+
+00:38:22.276 --> 00:38:26.176
+does not by itself uniquely prove this particular two component explanation.

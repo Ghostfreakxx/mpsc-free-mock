@@ -1,0 +1,2 @@
+export function hydrogenGapCandidates(maxN:number=4){const result:{initial:number;final:number;nanometres:number}[]=[];for(let initial=2;initial<=maxN;initial++)for(let final=1;final<initial;final++)result.push({initial,final,nanometres:1e9/(1.097e7*(1/final**2-1/initial**2))});return result;}
+export const oxygenAntibondingSeries=[{label:'O2',valence:12,bonding:8,antibonding:4,piStar:2},{label:'O2−',valence:13,bonding:8,antibonding:5,piStar:3},{label:'O2²−',valence:14,bonding:8,antibonding:6,piStar:4}]as const;

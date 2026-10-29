@@ -19,7 +19,7 @@ test('alkaline manganese and sulfite balance conserves atoms and charge',()=>{
  near(.0200*3/2,.0300);
 });
 test('clock threshold, instantaneous rates and changing-volume amount balance agree',()=>{
- assert.deepEqual(read('chemical-kinetics').quiz.slice(34).map(q=>q.answer),[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3]);
+ assert.deepEqual(read('chemical-kinetics').quiz.slice(34).map(q=>q.answer),[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,1,2,3,0,1,2,3,0]);
  near(.000200/20,1e-5);near(.000200/40,5e-6);
  const c=t=>.1*Math.exp(-.1*t),instant=.1*c(5),mean=(c(0)-c(10))/10;
  near(mean,.006321205588285577);near(instant,.006065306597126335);assert.ok(mean>instant);

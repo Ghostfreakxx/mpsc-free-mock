@@ -6,7 +6,7 @@ import {chemistryCoreLessons} from '../app/jee/classes/chemistry-core-study.ts';
 const lesson=JSON.parse(fs.readFileSync('app/data/jee-chemical-kinetics-lecture.json'));
 test('kinetics recording preserves experimental and integrated-law examples',()=>{
  assert.equal(lesson.subject,'Chemistry');assert.equal(lesson.unit,8);
- assert.equal(lesson.chapters.length,26);assert.equal(lesson.quiz.length,50);
+ assert.equal(lesson.chapters.length,30);assert.equal(lesson.quiz.length,58);
  assert.deepEqual(lesson.quiz,chemistryCoreLessons.find(l=>l.id==='chemical-kinetics').quiz);
  for(const [i,c]of lesson.chapters.entries()){
   const hash=createHash('sha256').update(JSON.stringify({script:c.speechInput??c.script,instructions:lesson.voiceInstructions,voice:'marin',model:'gpt-4o-mini-tts'})).digest('hex');
@@ -21,9 +21,9 @@ test('kinetics recording preserves experimental and integrated-law examples',()=
  assert.match(lesson.chapters[3].script,/no other gases or reactions/);
  assert.match(lesson.chapters[4].script,/does not change the equilibrium constant/);
 });
-test('all twenty-six chapters have complete, bounded and readable captions',()=>{
+test('all thirty chapters have complete, bounded and readable captions',()=>{
  const t=JSON.parse(fs.readFileSync('app/data/jee-chemical-kinetics-timings.json'));
- assert.equal(t.chapters.length,26);assert.ok(t.duration>850 && t.duration<2200);
+ assert.equal(t.chapters.length,30);assert.ok(t.duration>850 && t.duration<30*90);
  const normalize=s=>s.toLowerCase().replace(/[^a-z0-9]/g,'');
  for(const [i,ch] of t.chapters.entries()){
   assert.equal(ch.start,i?t.chapters[i-1].end:0);

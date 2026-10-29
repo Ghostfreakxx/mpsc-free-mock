@@ -69,6 +69,10 @@
     {
       "title": "OpenStax University Physics: dipole selection rules",
       "url": "https://openstax.org/books/university-physics-volume-3/pages/8-5-atomic-spectra-and-x-rays"
+    },
+    {
+      "title": "OpenStax: matter waves and accelerating voltage",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/6-6-wave-particle-duality"
     }
   ],
   "chapters": [
@@ -1090,6 +1094,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Accelerating voltage fixes kinetic energy before it fixes wavelength",
+      "formula": "Nonrelativistic particle accelerated from rest: K=|q|V; λ=h/√(2m|q|V)",
+      "script": "An accelerating potential gives energy per unit charge, not the same speed to every particle. For a particle starting effectively from rest, the kinetic energy gained is the magnitude of its charge times the accelerating potential difference. In the nonrelativistic model, momentum is the square root of twice mass times this kinetic energy, so the de Broglie wavelength follows by dividing Planck's constant by momentum. For one electron species, quadrupling the accelerating voltage doubles momentum and halves wavelength. Using the stated rounded electron estimate, one hundred volts gives about zero point one two three nanometres, while four hundred volts gives about half that value. Different charged particles require both mass and charge in the comparison. A bare alpha particle has approximately four proton masses and twice the proton charge. At the same accelerating voltage, its wavelength is the proton wavelength divided by the square root of eight. These comparisons neglect initial thermal motion, energy losses and relativistic corrections. Equal potential difference must not be replaced by equal kinetic energy when the particle charges differ.",
+      "points": [
+        "Same electron:V→4V · p×2; λ÷2 · Nonrelativistic",
+        "Proton vs bare alpha · mα≈4mp;qα=2e · Same V gives different K",
+        "λα/λp · 1/√8 · From rest; no losses"
+      ],
+      "board": {
+        "heading": "Voltage, charge and mass enter separately",
+        "columns": [
+          "Model / given",
+          "Result / count",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Same electron:V→4V",
+            "p×2; λ÷2",
+            "Nonrelativistic"
+          ],
+          [
+            "Proton vs bare alpha",
+            "mα≈4mp;qα=2e",
+            "Same V gives different K"
+          ],
+          [
+            "λα/λp",
+            "1/√8",
+            "From rest; no losses"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A detector window filters possible hydrogen emission wavelengths",
+      "formula": "Potential transitions among n=1,2,3,4 give six gaps; a400–700 nm window includes only4→2 and3→2",
+      "script": "Counting possible energy gaps is different from counting lines within a detector's wavelength range. Consider an ensemble with access to hydrogen levels one through four in a simplified one electron energy model. The all pairs downward count is six, but a detector that accepts only wavelengths from four hundred to seven hundred nanometres does not record all six. Using the supplied Rydberg relation, the transitions from four to two and three to two have wavelengths about four hundred eighty-six and six hundred fifty-six nanometres. They lie inside this chosen window. The three transitions ending at level one are ultraviolet, with wavelengths around ninety-seven to one hundred twenty-two nanometres, and the transition from four to three is near one thousand eight hundred seventy-five nanometres in the infrared. This is a wavelength-filtered list of potential energy-gap lines, not a claim that a single atom emits every line or that intensities are equal. Population preparation, dipole selection rules, detector sensitivity and line broadening are separate issues. State both the accessible levels and the detection window before reporting an observed line count.",
+      "points": [
+        "Levels1 through4 · 6 possible downward gaps · Ensemble gap model",
+        "400–700 nm window · 4→2:486;3→2:656 · 2 candidate lines",
+        "Ends at1;4→3 · UV; infrared · Outside this window"
+      ],
+      "board": {
+        "heading": "Possible gaps are not all detected lines",
+        "columns": [
+          "Model / given",
+          "Result / count",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Levels1 through4",
+            "6 possible downward gaps",
+            "Ensemble gap model"
+          ],
+          [
+            "400–700 nm window",
+            "4→2:486;3→2:656",
+            "2 candidate lines"
+          ],
+          [
+            "Ends at1;4→3",
+            "UV; infrared",
+            "Outside this window"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Zero orbital projection does not mean zero orbital angular momentum",
+      "formula": "For l=2: |L|=√6 ħ; Lz=ml ħ with ml=−2,−1,0,1,2",
+      "script": "An angular momentum magnitude and its component along a selected axis answer different questions. In the orbital angular momentum model, a state with quantum number l has magnitude square root of l times l plus one, multiplied by h bar. Its projection along a chosen z axis is m l times h bar. For a d state, l equals two, so the magnitude is square root of six h bar. The five allowed projection labels run from minus two through zero to plus two. A state with projection label zero therefore has zero z component while retaining the same nonzero orbital angular momentum magnitude as the other d states. Even the largest positive projection, two h bar, is smaller than the magnitude square root of six h bar. These statements concern quantum observables and must not be drawn as a classical electron travelling on one definite tilted circle. The five projection states are five spatial orbital states in this angular basis; adding two allowed electron spin projections gives ten spin orbitals, not ten distinct values of m l. An external environment can change energies without changing these label definitions.",
+      "points": [
+        "d state:l=2 · |L|=√6 ħ · Same magnitude for all ml",
+        "ml=−2,−1,0,1,2 · 5 Lz possibilities · ml=0 still has L≠0",
+        "2 spin projections each · 10 spin orbitals · Not10 spatial orbitals"
+      ],
+      "board": {
+        "heading": "A component can vanish while the magnitude remains",
+        "columns": [
+          "Model / given",
+          "Result / count",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "d state:l=2",
+            "|L|=√6 ħ",
+            "Same magnitude for all ml"
+          ],
+          [
+            "ml=−2,−1,0,1,2",
+            "5 Lz possibilities",
+            "ml=0 still has L≠0"
+          ],
+          [
+            "2 spin projections each",
+            "10 spin orbitals",
+            "Not10 spatial orbitals"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Chromium and copper ions require the observed neutral configuration first",
+      "formula": "Cr:[Ar]3d5 4s1;Cu:[Ar]3d10 4s1; common cations lose the4s electron before further3d electrons",
+      "script": "A neutral atom's observed ground configuration is the starting inventory, not a license to remove electrons in the order orbitals were first introduced in a filling mnemonic. Chromium has the common neutral configuration argon core, three d five, four s one. Copper has argon core, three d ten, four s one. For the selected common atomic cations, remove the four s electron first. Chromium three plus then loses two more electrons from the d set and has three d three. Copper one plus has three d ten, while copper two plus has three d nine. The electron totals provide an independent check: chromium three plus has twenty-one electrons and copper one plus twenty-eight. In the elementary atomic d orbital occupation picture, d three has three unpaired electrons, d ten has none, and d nine has one. These counts are not a complete prediction of a bulk solid's magnetism or a substitute for a ligand field treatment of every complex. Keep nuclear charge, ionic charge, orbital occupation and the stated magnetic model separate instead of treating all copper species as having the same electron arrangement.",
+      "points": [
+        "Cr3+:24−3=21 e− · [Ar]3d3 · 3 unpaired in atomic map",
+        "Cu+:29−1=28 e− · [Ar]3d10 · No unpaired d electron",
+        "Cu2+:29−2=27 e− · [Ar]3d9 · 1 unpaired in atomic map"
+      ],
+      "board": {
+        "heading": "Recount the ion after removing4s first",
+        "columns": [
+          "Model / given",
+          "Result / count",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Cr3+:24−3=21 e−",
+            "[Ar]3d3",
+            "3 unpaired in atomic map"
+          ],
+          [
+            "Cu+:29−1=28 e−",
+            "[Ar]3d10",
+            "No unpaired d electron"
+          ],
+          [
+            "Cu2+:29−2=27 e−",
+            "[Ar]3d9",
+            "1 unpaired in atomic map"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1642,6 +1786,94 @@
       ],
       "answer": 3,
       "explanation": "A forbidden label belongs to a specified interaction model, not every physical process."
+    },
+    {
+      "question": "For a fixed nonrelativistic electron species accelerated from rest, voltage rises from V to4V. Wavelength changes how?",
+      "options": [
+        "Doubles",
+        "Halves",
+        "Quadruples",
+        "Stays unchanged"
+      ],
+      "answer": 1,
+      "explanation": "Momentum scales as√V, so λ=h/p scales as1/√V under the stated assumptions."
+    },
+    {
+      "question": "At equal accelerating voltage, use mα=4mp and qα=2e for a bare alpha particle. Find λα/λp.",
+      "options": [
+        "1/2",
+        "1/4",
+        "1/√8",
+        "√8"
+      ],
+      "answer": 2,
+      "explanation": "The product m|q| is eight times larger, so the wavelength is smaller by√8. Equal voltage is not equal kinetic energy here."
+    },
+    {
+      "question": "In the stated n≤4 hydrogen gap model, how many candidate lines lie within400–700 nm?",
+      "options": [
+        "6",
+        "3",
+        "1",
+        "2"
+      ],
+      "answer": 3,
+      "explanation": "4→2 is about486 nm and3→2 about656 nm; the Lyman gaps and4→3 are outside the window."
+    },
+    {
+      "question": "Which candidate hydrogen transition among n≤4 is near1875 nm and excluded by that visible window?",
+      "options": [
+        "4→3",
+        "4→2",
+        "3→2",
+        "2→1"
+      ],
+      "answer": 0,
+      "explanation": "The small4-to3 energy gap corresponds to infrared light; a possible gap is not automatically a detected visible line."
+    },
+    {
+      "question": "A d state has ml=0. Which relation is correct in the orbital model?",
+      "options": [
+        "|L|=0 and Lz=0",
+        "|L|=√6 ħ and Lz=0",
+        "|L|=2 ħ and Lz=√6 ħ",
+        "|L|=√6 ħ and Lz=3 ħ"
+      ],
+      "answer": 1,
+      "explanation": "l=2 fixes the magnitude√[l(l+1)]ħ, while ml=0 fixes only the z component."
+    },
+    {
+      "question": "How many spatial ml states and spin orbitals belong to one d subshell?",
+      "options": [
+        "10 spatial;10 spin orbitals",
+        "5 spatial;5 spin orbitals",
+        "5 spatial;10 spin orbitals",
+        "2 spatial;5 spin orbitals"
+      ],
+      "answer": 2,
+      "explanation": "ml has five values; each spatial state allows two electron spin projections."
+    },
+    {
+      "question": "Which ordered set gives Cr3+,Cu+,Cu2+ d occupations in the stated common atomic cation map?",
+      "options": [
+        "d5,d9,d10",
+        "d3,d9,d10",
+        "d4,d10,d8",
+        "d3,d10,d9"
+      ],
+      "answer": 3,
+      "explanation": "Start from Cr3d5 4s1 and Cu3d10 4s1; remove4s before the further d electrons."
+    },
+    {
+      "question": "How many electrons are in Cr3+ and Cu+,using Z=24 and29?",
+      "options": [
+        "21 and28",
+        "27 and30",
+        "24 and29",
+        "18 and18"
+      ],
+      "answer": 0,
+      "explanation": "The electron number is Z minus the positive ionic charge; the argon core alone is not the whole ion."
     }
   ]
 }

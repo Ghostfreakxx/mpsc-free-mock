@@ -1133,7 +1133,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "chemical-kinetics", subject: "Chemistry", unit: 8, number: "C03", title: chemicalKinetics.title,
-    description: "Twenty-six narrated chapters on rate laws, Arrhenius temperature predictions, inert-gas pressure corrections, measurement bounds and supporting mechanism and relaxation models.",
+    description: "Thirty narrated chapters on rate laws, independent perturbations, collision filters, depletion limits, supporting mixed-population signals and temperature effects.",
     scope: "Recorded Unit 8 foundation and worked applications with original practice. Further mixed experimental datasets and mechanism-based problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.chemical-kinetics.lecture.v1",
     audio: "/lectures/chemical-kinetics/narration-marin.mp3",
@@ -1183,7 +1183,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "atomic-structure", subject: "Chemistry", unit: 2, number: "C08", title: atomicStructure.title,
-    description: "Twenty-nine narrated chapters on atomic structure, angular momentum, Pauli counting, collision excitation, spectra and supporting transition rules.",
+    description: "Thirty-three narrated chapters on accelerating-voltage wavelengths, filtered spectra, orbital projections, common ion configurations and quantum models.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 2 foundation with original practice. The Atomic Structure and Atomic Spectra written lessons complement this class. Fuller wavefunction derivations and additional configuration problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.atomic-structure.lecture.v1",
     audio: "/lectures/atomic-structure/narration-marin.mp3",
@@ -1193,7 +1193,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "chemical-bonding", subject: "Chemistry", unit: 3, number: "C09", title: chemicalBonding.title,
-    description: "Twenty-nine narrated chapters on bonding, orbital phase, diborane bridges, supporting XeF2 multicentre models, resonance, lattice cycles and molecular shape.",
+    description: "Thirty-three narrated chapters on electron-deficient adducts, ionic energy comparisons, CO charge conventions, oxygen molecular ions and bonding models.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 3 foundation with original practice. Further multivalent lattice cycles, detailed heteronuclear orbital mixing and additional shape comparisons remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.chemical-bonding.lecture.v1",
     audio: "/lectures/chemical-bonding/narration-marin.mp3",
@@ -1283,7 +1283,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "practical-chemistry", subject: "Chemistry", unit: 20, number: "C18", title: practicalChemistry.title,
-    description: "Twenty-nine narrated chapters on qualitative ion evidence, silver-halide comparisons, amphoteric hydroxides, sulfate/sulfite distinctions, titration and gravimetric analysis.",
+    description: "Thirty-three narrated chapters on qualitative evidence, nickel and calcium confirmations, flame-test blanks, phosphate comparisons, titration and gravimetry.",
     scope: "Recorded Unit 20 conceptual foundation with original practice. Full ion-analysis schemes, all preparation equations, indicator curves, sol preparation and further kinetic datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.practical-chemistry.lecture.v1",
     audio: "/lectures/practical-chemistry/narration-marin.mp3",
