@@ -1,3 +1,4 @@
+import InorganicRedoxMeasurementsDiagram from './inorganic-redox-measurements-diagram';
 import InorganicStructureAssaysDiagram from './inorganic-structure-assays-diagram';
 import SulfurPeroxoDiagram from './sulfur-peroxo-diagram';
 import PhosphorusOxoacidDiagram from "./phosphorus-oxoacid-diagram";
@@ -8,6 +9,8 @@ import styles from "./lecture.module.css";
 
 const recordings={"p-block":pBlock,"d-f-block":dFBlock};
 export default function PBlockDFDiagram({lesson,chapter}:{lesson:keyof typeof recordings;chapter:number}) {
+ if(lesson==='p-block'&&chapter===29)return <InorganicRedoxMeasurementsDiagram kind="peroxide"/>;
+ if(lesson==='d-f-block'&&chapter===29)return <InorganicRedoxMeasurementsDiagram kind="magnetism"/>;
  if(lesson==='p-block'&&chapter===26)return <InorganicStructureAssaysDiagram kind="silicate"/>;
  if(lesson==='d-f-block'&&chapter===23)return <InorganicStructureAssaysDiagram kind="iodometry"/>;
  if(lesson==="p-block" && chapter===21)return <SulfurPeroxoDiagram/>;

@@ -57,6 +57,18 @@
     {
       "title": "OpenStax: density as a mass-to-volume property",
       "url": "https://openstax.org/books/chemistry-2e/pages/1-4-measurements"
+    },
+    {
+      "title": "OpenStax: Nernst equation and reaction quotient",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-4-potential-free-energy-and-equilibrium"
+    },
+    {
+      "title": "Kutztown University: magnetic properties and Curie law",
+      "url": "https://chem.libretexts.org/Courses/Kutztown_University_of_Pennsylvania/CHM_320%3A_Advanced_Inorganic_Chemistry_textbook/09%3A_Spectroscopic_and_Magnetic_Properties/9.05%3A_Magnetic_Properties_of_Materials"
+    },
+    {
+      "title": "David Harvey: Beer law and calibration assumptions",
+      "url": "https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Instrumental_Analysis_(LibreTexts)/13%3A_Introduction_to_Ultraviolet_Visible_Absorption_Spectrometry/13.02%3A_Beer%27s_Law"
     }
   ],
   "chapters": [
@@ -1004,6 +1016,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Permanganate potential depends on acidity as well as products",
+      "formula": "MnO4−+8H++5e−→Mn2++4H2O; at298 K and unit Mn activities,E=E°−(8×.0592/5)pH",
+      "script": "Specifying an oxidant's reduction product does not remove its dependence on acidity. Reaction stoichiometry sets the pH coefficient. Consider the acidic permanganate to manganese two half reaction at two hundred ninety eight kelvin. One permanganate consumes eight hydrogen ions and five electrons to form one manganese two ion and four waters. In a supplied ideal activity comparison, keep permanganate and manganese two activities at one and take standard potential one point five one volt. The reaction quotient then contains the reciprocal eighth power of hydrogen ion activity. Applying the Nernst equation gives potential one point five one minus eight times zero point zero five nine two divided by five, multiplied by pH. Raising pH from zero to two lowers the predicted potential by about zero point one eight nine four volt, giving about one point three two zero six volt. This is a comparison of the same specified acidic half reaction. It must not be extrapolated through every pH range while forcing manganese two to remain the product. Other manganese species, precipitation and activity effects can change the relevant comparison.",
+      "points": [
+        "MnO4−→Mn2+ in acid · 8 H+ and5e− perMn · Q=1/a(H+)^8 at unit Mn activities",
+        "E°=1.51 V at298 K · pH slope=−8(.0592)/5 · −.09472 V per pH unit",
+        "pH0→2 in stated model · E≈1.32056 V · Do not extrapolate to changed products"
+      ],
+      "board": {
+        "heading": "Permanganate potential depends on acidity as well as products",
+        "columns": [
+          "Species / model",
+          "Balance / calculation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "MnO4−→Mn2+ in acid",
+            "8 H+ and5e− perMn",
+            "Q=1/a(H+)^8 at unit Mn activities"
+          ],
+          [
+            "E°=1.51 V at298 K",
+            "pH slope=−8(.0592)/5",
+            "−.09472 V per pH unit"
+          ],
+          [
+            "pH0→2 in stated model",
+            "E≈1.32056 V",
+            "Do not extrapolate to changed products"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Dichromate back titration subtracts unused oxidant capacity",
+      "formula": "n(Fe2+)sample=6n(Cr2O7²−)initial−n(Fe2+)back, for the stipulated reactions",
+      "script": "A back titration measures the oxidant left over, not the oxidant consumed by the sample. Use a supplied ideal iron assay in which every sample iron atom has first been converted to iron two, no other sample component reduces dichromate, and the specified reactions go to completion. One dichromate ion accepts six electrons in acid, while each iron two ion loses one electron. An initial three millimoles of dichromate therefore offers eighteen millimoles of electron accepting capacity. After the sample reacts, the unused dichromate requires four millimoles of a separate iron two standard in the back titration. Those four millimoles measure residual oxidizing capacity and must be subtracted from eighteen, leaving fourteen millimoles attributable to sample iron. Using rounded iron molar mass fifty six grams per mole gives zero point seven eight four gram iron. For a one gram sample, the ideal iron mass fraction is seventy eight point four percent. The original dichromate amount cannot be treated as entirely consumed by the sample. Interfering reductants or incomplete conversion would invalidate the stipulated assay interpretation.",
+      "points": [
+        "Initial Cr2O7²−=3 mmol · 6e− capacity per dichromate · 18 mmol electron capacity",
+        "Back titrant Fe2+=4 mmol · Measures unused capacity · Sample Fe2+=18−4=14 mmol",
+        "MFe=56 g/mol;sample1 g · Iron mass=.784 g · 78.4% under stated assay assumptions"
+      ],
+      "board": {
+        "heading": "Dichromate back titration subtracts unused oxidant capacity",
+        "columns": [
+          "Species / model",
+          "Balance / calculation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Initial Cr2O7²−=3 mmol",
+            "6e− capacity per dichromate",
+            "18 mmol electron capacity"
+          ],
+          [
+            "Back titrant Fe2+=4 mmol",
+            "Measures unused capacity",
+            "Sample Fe2+=18−4=14 mmol"
+          ],
+          [
+            "MFe=56 g/mol;sample1 g",
+            "Iron mass=.784 g",
+            "78.4% under stated assay assumptions"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting magnetic mixtures average moment squares in the Curie model",
+      "formula": "μeff²=(1−f)μFeII²+fμFeIII²; high-spin spin-only endpoints24 and35 in μB²",
+      "script": "A measured effective magnetic moment of a mixture need not equal the moment of any one isolated ion. Use a supporting ideal Curie model with noninteracting high spin iron two and iron three centers at the same temperature. Assume orbital contributions and diamagnetism have been excluded and normalize susceptibility per mole of total iron. High spin iron two has four unpaired electrons, giving spin only moment squared four times six, or twenty four in squared Bohr magneton units. High spin iron three has five, giving five times seven, or thirty five. Susceptibility contributions add in proportion to these squared moments, so a fraction f of iron three gives mixture moment squared twenty four plus eleven f. If the supplied corrected effective moment squared is thirty point six, solving gives f equal to zero point six, or sixty percent iron three. The effective moment is about five point five three Bohr magnetons, but averaging the two moment magnitudes directly is not the Curie mixture calculation. Real orbital contributions, magnetic interactions or different normalization would require a different model.",
+      "points": [
+        "High-spin Fe2+:4 unpaired · μ²=4(4+2)=24 · Spin-only endpoints stipulated",
+        "High-spin Fe3+:5 unpaired · μ²=5(5+2)=35 · Corrected Curie susceptibilities add",
+        "Mixture μeff²=30.6 · fFeIII=(30.6−24)/11=.60 · Average μ²; not μ magnitudes"
+      ],
+      "board": {
+        "heading": "Supporting magnetic mixtures average moment squares in the Curie model",
+        "columns": [
+          "Species / model",
+          "Balance / calculation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "High-spin Fe2+:4 unpaired",
+            "μ²=4(4+2)=24",
+            "Spin-only endpoints stipulated"
+          ],
+          [
+            "High-spin Fe3+:5 unpaired",
+            "μ²=5(5+2)=35",
+            "Corrected Curie susceptibilities add"
+          ],
+          [
+            "Mixture μeff²=30.6",
+            "fFeIII=(30.6−24)/11=.60",
+            "Average μ²; not μ magnitudes"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting colour measurements separate absorbance from transmittance",
+      "formula": "A=εbc=−log10(T); cOriginal=dilutionFactor×cMeasured in the stipulated unchanged-species model",
+      "script": "An absorption wavelength gives an energy difference, while absorbance at a fixed wavelength can provide concentration information under additional assumptions. In a supporting Beer Lambert model, absorbance equals molar absorptivity times optical path length times concentration. Use an illustrative diluted permanganate sample whose chemical form is unchanged, with blank corrected absorbance zero point four zero zero, path length one centimeter and supplied molar absorptivity two thousand liters divided by moles and centimeters. The measured concentration is zero point four divided by two thousand, giving two times ten to the minus four molar. If this sample was made by a fivefold dilution, the original concentration was one times ten to the minus three molar. Absorbance is dimensionless and is not the fraction of light absorbed. Transmittance is ten to the power minus absorbance, about zero point three nine eight here, or thirty nine point eight percent transmission. The model assumes an appropriate calibration range, fixed wavelength, clear solution and no chemical change. Scattering, stray light or changing manganese speciation can invalidate the simple concentration inference.",
+      "points": [
+        "A=.400;ε=2000 L/(mol cm) · b=1 cm;A=εbc · cMeasured=2e−4 M",
+        "Fivefold dilution · cOriginal=5cMeasured · cOriginal=1e−3 M",
+        "T=10^(−.400)≈.398 · Transmission≈39.8% · A is not percent light absorbed"
+      ],
+      "board": {
+        "heading": "Supporting colour measurements separate absorbance from transmittance",
+        "columns": [
+          "Species / model",
+          "Balance / calculation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "A=.400;ε=2000 L/(mol cm)",
+            "b=1 cm;A=εbc",
+            "cMeasured=2e−4 M"
+          ],
+          [
+            "Fivefold dilution",
+            "cOriginal=5cMeasured",
+            "cOriginal=1e−3 M"
+          ],
+          [
+            "T=10^(−.400)≈.398",
+            "Transmission≈39.8%",
+            "A is not percent light absorbed"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1468,6 +1620,94 @@
       ],
       "answer": 3,
       "explanation": "The ratio is (M₂/M₁)/(Vm,₂/Vm,₁)=1.5/2=.750; increased atomic mass alone does not fix density."
+    },
+    {
+      "question": "For the stipulated acidic MnO4−/Mn2+ comparison,E=1.51−.09472pH. At pH2,E is approximately:",
+      "options": [
+        "1.69944 V",
+        "1.32056 V",
+        "1.51000 V",
+        ".18944 V"
+      ],
+      "answer": 1,
+      "explanation": "Eight H+ and five electrons give slope−8(.0592)/5=−.09472 V per pH unit."
+    },
+    {
+      "question": "Why can that one half-reaction formula not be applied blindly over all pH values?",
+      "options": [
+        "Kinetic rates never depend on pH",
+        "Electrons have no charge",
+        "Different manganese products, precipitates or activities may become relevant",
+        "The balanced half reaction contains no H+"
+      ],
+      "answer": 2,
+      "explanation": "The Nernst expression belongs to its specified species and activities; changed speciation requires a new comparison."
+    },
+    {
+      "question": "3 mmol initial dichromate offers18 mmol electron capacity. Residual oxidant consumes4 mmol Fe2+ back titrant. Sample Fe2+ amount is:",
+      "options": [
+        "18 mmol",
+        "4 mmol",
+        "22 mmol",
+        "14 mmol"
+      ],
+      "answer": 3,
+      "explanation": "The back titration measures unused capacity:18−4=14 mmol attributable to the stipulated sample iron."
+    },
+    {
+      "question": "Using MFe=56 g/mol, that assay on a1.00 g sample gives iron mass fraction:",
+      "options": [
+        "78.4%",
+        "100.8%",
+        "22.4%",
+        "14.0%"
+      ],
+      "answer": 0,
+      "explanation": ".014 mol×56=.784 g iron; .784/1.00×100=78.4% under the stated selectivity assumptions."
+    },
+    {
+      "question": "In the supplied high-spin Curie mixture model, μeff²=24+11f=30.6. FeIII fraction f is:",
+      "options": [
+        ".40",
+        ".60",
+        ".50",
+        ".90"
+      ],
+      "answer": 1,
+      "explanation": "f=(30.6−24)/11=.60. Susceptibility contributions follow moment squares in this model."
+    },
+    {
+      "question": "Which average belongs to this corrected noninteracting Curie mixture model?",
+      "options": [
+        "The arithmetic mean of moment magnitudes in every mixture",
+        "The sum of oxidation numbers",
+        "The fraction-weighted mean of squared moments",
+        "Rounding the apparent moment to an integer unpaired count"
+      ],
+      "answer": 2,
+      "explanation": "At the same T with the stated molar normalization, susceptibilities add proportionally to μ²."
+    },
+    {
+      "question": "For A=.400,ε=2000 L/(mol cm),b=1 cm and fivefold sample dilution, original concentration is:",
+      "options": [
+        "2e−4 M",
+        "5e−3 M",
+        ".400 M",
+        "1e−3 M"
+      ],
+      "answer": 3,
+      "explanation": "Measured c=A/(εb)=2e−4 M; multiplying by dilution factor5 gives1e−3 M."
+    },
+    {
+      "question": "Absorbance.400 corresponds to approximately which percent transmittance?",
+      "options": [
+        "39.8%",
+        "60.0%",
+        "40.0% exactly",
+        "0.4%"
+      ],
+      "answer": 0,
+      "explanation": "T=10^(−.400)≈.398, or39.8%; absorbance is logarithmic and is not a directly absorbed fraction."
     }
   ]
 }

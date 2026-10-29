@@ -61,6 +61,22 @@
     {
       "title": "Bickelhaupt and coauthors: donor-dependent boron trihalide interactions",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7756781/"
+    },
+    {
+      "title": "OpenStax/SUNY: phosphorus compounds and complete hydrolysis products",
+      "url": "https://courses.lumenlearning.com/suny-chemistryformajorsxmaster/chapter/occurrence-preparation-and-properties-of-phosphorus-missing-formulas/"
+    },
+    {
+      "title": "NCERT via IIT Kanpur SATHEE: selected p-block compound comparisons",
+      "url": "https://sathee.iitk.ac.in/sathee-icar/student-corner/ncert-books/class-12/nb-che-12/chem-12-unit-7-the-p-block-elements/"
+    },
+    {
+      "title": "IIT Kanpur SATHEE: peroxide oxidation and reduction",
+      "url": "https://sathee.iitk.ac.in/sathee-neet/important-formula/chemistry/hydrogen/"
+    },
+    {
+      "title": "CCEA: iodate–iodide stoichiometry",
+      "url": "https://ccea.org.uk/downloads/docs/Support/eGuide/2021/A2%202%20Chemistry%20eGuide%3A%20Practical%20Manual.pdf"
     }
   ],
   "chapters": [
@@ -1010,6 +1026,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Phosphorus halide hydrolysis preserves two different oxidation states",
+      "formula": "PCl3+3H2O→H3PO3+3HCl; PCl5+4H2O→H3PO4+5HCl, complete hydrolysis endpoints",
+      "script": "Similar halide names do not imply identical hydrolysis products. In the selected complete hydrolysis comparison, phosphorus trichloride gives phosphorous acid and three hydrogen chloride units, using three waters per phosphorus. Phosphorus pentachloride gives phosphoric acid and five hydrogen chloride units, using four waters per phosphorus. Phosphorus stays at oxidation state plus three in the first reaction and plus five in the second, so neither net hydrolysis is itself a phosphorus redox change. The familiar structures of the acid products also differ. Phosphorous acid has two oxygen hydrogen groups and one phosphorus hydrogen bond, giving two ordinarily ionizable protons in this comparison. Phosphoric acid has three oxygen hydrogen groups and is triprotic. Counting the three hydrogens in each formula without checking connectivity would give the wrong basicity for phosphorous acid. Limited water can give different intermediate endpoints for the pentachloride, so the complete hydrolysis equations must not be applied indiscriminately. These selected compound balances support structural comparisons. They are conceptual equations, not handling instructions or a claim that every historical preparation belongs to the current trend focused syllabus.",
+      "points": [
+        "PCl3+3H2O · H3PO3+3HCl · P:+3→+3; no P redox",
+        "PCl5+4H2O · H3PO4+5HCl · P:+5→+5; complete endpoint",
+        "H3PO3:2 O–H and1 P–H · H3PO4:3 O–H · Two versus three ionizable protons"
+      ],
+      "board": {
+        "heading": "Phosphorus halide hydrolysis preserves two different oxidation states",
+        "columns": [
+          "Species / model",
+          "Balance / calculation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "PCl3+3H2O",
+            "H3PO3+3HCl",
+            "P:+3→+3; no P redox"
+          ],
+          [
+            "PCl5+4H2O",
+            "H3PO4+5HCl",
+            "P:+5→+5; complete endpoint"
+          ],
+          [
+            "H3PO3:2 O–H and1 P–H",
+            "H3PO4:3 O–H",
+            "Two versus three ionizable protons"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Sulfur dioxide can donate or accept electrons",
+      "formula": "SO2→SO4²−:S(+4) loses2e−; SO2+2H2S→3S+2H2O:S(+4) accepts4e−",
+      "script": "An intermediate oxidation state can participate in different redox roles depending on the reaction partner. Sulfur in sulfur dioxide is plus four. When sulfur dioxide is oxidized to sulfate, sulfur becomes plus six and loses two electrons per sulfur atom. In a supplied aqueous bromine comparison, the balanced net equation contains one sulfur dioxide, one bromine molecule and two waters, forming sulfate, four hydrogen ions and two bromides. Sulfur dioxide acts as the reducing agent because it is oxidized. Contrast the selected reaction with hydrogen sulfide: one sulfur dioxide plus two hydrogen sulfide molecules gives three elemental sulfur atoms and two waters. Sulfur in sulfur dioxide falls from plus four to zero, accepting four electrons, while each sulfide sulfur rises from minus two to zero and loses two. Sulfur dioxide is the oxidizing agent in that comparison. The two starting sulfur oxidation states converge to an intermediate state, which is comproportionation rather than disproportionation. An oxidation number identifies possible electron changes, but does not by itself establish every reaction's feasibility or rate. Always name the partner and the stated products.",
+      "points": [
+        "SO2 sulfur:+4→+6 · Loses2e−; Br2 accepts2e− · SO2 is reducing agent",
+        "SO2 sulfur:+4→0 · Accepts4e− from2 sulfide S · SO2 is oxidizing agent",
+        "+4 and−2 converge to0 · SO2+2H2S→3S+2H2O · Comproportionation, not disproportionation"
+      ],
+      "board": {
+        "heading": "Sulfur dioxide can donate or accept electrons",
+        "columns": [
+          "Species / model",
+          "Balance / calculation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "SO2 sulfur:+4→+6",
+            "Loses2e−; Br2 accepts2e−",
+            "SO2 is reducing agent"
+          ],
+          [
+            "SO2 sulfur:+4→0",
+            "Accepts4e− from2 sulfide S",
+            "SO2 is oxidizing agent"
+          ],
+          [
+            "+4 and−2 converge to0",
+            "SO2+2H2S→3S+2H2O",
+            "Comproportionation, not disproportionation"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Peroxide oxygen can move toward water or oxygen gas",
+      "formula": "H2O2+2H++2e−→2H2O; H2O2→O2+2H++2e−",
+      "script": "Hydrogen peroxide illustrates why a reagent should not receive one universal redox label. Each peroxide oxygen has oxidation number minus one. In an acidic reduction half reaction, one peroxide molecule accepts two electrons and two hydrogen ions to form two waters. Its oxygen reaches minus two, so peroxide acts as an oxidizing agent when paired with iodide oxidation. The net equation gives one iodine molecule and two waters from one peroxide, two iodides and two hydrogen ions. Peroxide can instead lose two electrons per molecule and form oxygen gas, with oxygen oxidation number zero. Against acidic permanganate it therefore acts as a reducing agent. Combining the electron counts gives two permanganates, five peroxides and six hydrogen ions forming two manganese two ions, five oxygen molecules and eight waters. One hundredth mole of peroxide would correspond ideally to four thousandths mole permanganate and one hundredth mole oxygen for this specified complete reaction. These are theoretical stoichiometric amounts, not claims about arbitrary mixtures or decomposition yields. Track the peroxide oxygen's destination and the partner half reaction before assigning its role.",
+      "points": [
+        "Peroxide O starts−1 · To H2O:O becomes−2 · H2O2 accepts2e− per molecule",
+        "To O2:O becomes0 · H2O2 donates2e− per molecule · Role depends on reaction partner",
+        "2MnO4−:5H2O2 in acid · .010 molH2O2→.004 molMnO4− · .010 molO2 in ideal net reaction"
+      ],
+      "board": {
+        "heading": "Peroxide oxygen can move toward water or oxygen gas",
+        "columns": [
+          "Species / model",
+          "Balance / calculation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Peroxide O starts−1",
+            "To H2O:O becomes−2",
+            "H2O2 accepts2e− per molecule"
+          ],
+          [
+            "To O2:O becomes0",
+            "H2O2 donates2e− per molecule",
+            "Role depends on reaction partner"
+          ],
+          [
+            "2MnO4−:5H2O2 in acid",
+            ".010 molH2O2→.004 molMnO4−",
+            ".010 molO2 in ideal net reaction"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Iodate and iodide converge to iodine with a five-to-one ratio",
+      "formula": "IO3−+5I−+6H+→3I2+3H2O; compare n(IO3−) with n(I−)/5",
+      "script": "A balanced halogen redox equation is needed before using a limiting reagent ratio. In the supplied acidic iodate iodide reaction, iodine at plus five in iodate and iodine at minus one in iodide both end at zero in molecular iodine. One iodate iodine accepts five electrons. Five iodide iodines each lose one electron, giving six iodine atoms in three iodine molecules. Balancing oxygen and hydrogen adds six hydrogen ions on the left and three waters on the right. This is comproportionation of two oxidation states of the same element. Suppose a stipulated complete reaction starts with two millimoles of iodate, eight millimoles of iodide and sufficient acid. Compare two millimoles of iodate with eight divided by five, or one point six millimoles of reaction extent supported by iodide. Iodide limits the extent. The theoretical iodine product is three times one point six, giving four point eight millimoles, while zero point four millimole iodate remains. Do not equate one iodate molecule to one iodine molecule. Solution speciation and competing reactions require additional information outside this simple net equation.",
+      "points": [
+        "IO3− iodine:+5→0 · 5 iodides:−1→0 · 5 electrons transferred per iodate",
+        "2 mmolIO3−;8 mmolI− · Extent=min(2,8/5)=1.6 mmol · Iodide is limiting",
+        "3 I2 per reaction extent · I2=4.8 mmol;IO3−left=.4 · Products stipulated; sufficient acid"
+      ],
+      "board": {
+        "heading": "Iodate and iodide converge to iodine with a five-to-one ratio",
+        "columns": [
+          "Species / model",
+          "Balance / calculation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "IO3− iodine:+5→0",
+            "5 iodides:−1→0",
+            "5 electrons transferred per iodate"
+          ],
+          [
+            "2 mmolIO3−;8 mmolI−",
+            "Extent=min(2,8/5)=1.6 mmol",
+            "Iodide is limiting"
+          ],
+          [
+            "3 I2 per reaction extent",
+            "I2=4.8 mmol;IO3−left=.4",
+            "Products stipulated; sufficient acid"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1474,6 +1630,94 @@
       ],
       "answer": 1,
       "explanation": "Each shared corner counts half an oxygen per Si; O/Si=4−2/2=3, excluding finite chain-end corrections."
+    },
+    {
+      "question": "Complete hydrolysis of one PCl3 gives which acid in the selected comparison?",
+      "options": [
+        "H3PO3",
+        "H3PO4",
+        "HClO3",
+        "H2SO3"
+      ],
+      "answer": 0,
+      "explanation": "P stays+3 and the balanced endpoint is PCl3+3H2O→H3PO3+3HCl."
+    },
+    {
+      "question": "Why does H3PO3 ordinarily supply only two ionizable protons in this comparison?",
+      "options": [
+        "One hydrogen is absent",
+        "It has two O–H groups and one P–H bond",
+        "All three H are attached to chlorine",
+        "Phosphorus changes oxidation state on each ionization"
+      ],
+      "answer": 1,
+      "explanation": "The P–H hydrogen is not an ordinary acid proton in the stated oxoacid comparison."
+    },
+    {
+      "question": "When SO2 becomes sulfate in the supplied bromine reaction, SO2 acts as:",
+      "options": [
+        "An inert spectator",
+        "An oxidizing agent only",
+        "A reducing agent, losing two electrons per sulfur",
+        "A catalyst with unchanged oxidation state"
+      ],
+      "answer": 2,
+      "explanation": "Sulfur rises from+4 to+6, donating two electrons to bromine."
+    },
+    {
+      "question": "SO2+2H2S→3S+2H2O is classified as:",
+      "options": [
+        "Disproportionation of a single initial state",
+        "A non-redox hydration",
+        "A change where all S loses electrons",
+        "Comproportionation of sulfur+4 and−2 to0"
+      ],
+      "answer": 3,
+      "explanation": "The two initial oxidation states converge to sulfur0; SO2 accepts four electrons from two sulfide sulfurs."
+    },
+    {
+      "question": "In peroxide reduction to water, oxygen changes from:",
+      "options": [
+        "−1 to−2",
+        "−2 to0",
+        "0 to−1",
+        "+1 to+2"
+      ],
+      "answer": 0,
+      "explanation": "Each peroxide oxygen begins−1 and reaches−2 in water; H2O2 accepts two electrons per molecule."
+    },
+    {
+      "question": "For the stated acidic permanganate reaction,.010 mol H2O2 requires how much MnO4− ideally?",
+      "options": [
+        ".025 mol",
+        ".004 mol",
+        ".010 mol",
+        ".020 mol"
+      ],
+      "answer": 1,
+      "explanation": "The balanced permanganate:peroxide ratio is2:5, so.010×2/5=.004 mol."
+    },
+    {
+      "question": "For2 mmol IO3− and8 mmol I− with excess acid, maximum I2 from the supplied net equation is:",
+      "options": [
+        "2.0 mmol",
+        "6.0 mmol",
+        "4.8 mmol",
+        "8.0 mmol"
+      ],
+      "answer": 2,
+      "explanation": "Iodide limits extent to8/5=1.6 mmol; three I2 per extent gives4.8 mmol."
+    },
+    {
+      "question": "How much iodate remains in that ideal complete-reaction ledger?",
+      "options": [
+        "1.6 mmol",
+        "0",
+        "2.0 mmol",
+        ".4 mmol"
+      ],
+      "answer": 3,
+      "explanation": "Only1.6 mmol of the original2.0 mmol iodate reacts because iodide is limiting."
     }
   ]
 }

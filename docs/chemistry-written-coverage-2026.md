@@ -25,8 +25,8 @@ Questions are original practice, not represented as official PYQs.
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 30 | 31 | 22 | 50 / 50 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 26 | 29 | 22 | 50 / 50 |
 | 9 | [Periodic Trends](/jee/classes/periodic-trends) | 25 | 23 | 15 | 40 / 40 |
-| 10 | [P-Block](/jee/classes/p-block) | 27 | 25 | 15 | 42 / 42 |
-| 11 | [D/F-Block](/jee/classes/d-f-block) | 27 | 25 | 15 | 42 / 42 |
+| 10 | [P-Block](/jee/classes/p-block) | 31 | 29 | 18 | 50 / 50 |
+| 11 | [D/F-Block](/jee/classes/d-f-block) | 31 | 29 | 18 | 50 / 50 |
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 26 | 29 | 22 | 50 / 50 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 29 | 29 | 18 | 48 / 48 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 25 | 28 | 20 | 44 / 44 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Equilibrium adds inert-gas constraint comparisons, buffer-capacity inventories, selective-precipitation removal targets and indicator colour ratios. The precipitation diagram distinguishes early onset from a quantitative separation target.
+P-Block adds selected complete phosphorus-halide hydrolysis comparisons, sulfur dioxide and peroxide redox roles, and iodate–iodide limiting-reagent balances. A peroxide diagram distinguishes electron acceptance from donation.
 
-Electrochemistry adds current-efficiency electron partitions, supporting ideal selective-deposition limits, conductometric titration with spectator ions and standard voltage-temperature thermodynamics. The titration diagram includes changing solution volume and a nonzero conductivity minimum.
+D/F-Block adds the acidity dependence of a specified permanganate half reaction, a dichromate back-titration ledger, a supporting corrected Curie mixture and a Beer–Lambert concentration model. The magnetic diagram averages squared moments under explicit ideal assumptions.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax’s equilibrium and electrochemistry teaching, IIT Roorkee’s conductometric titration theory and DeVoe’s electrochemical thermodynamics. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference OpenStax and NCERT compound comparisons, CCEA iodate stoichiometry, university Curie-law teaching and David Harvey’s Beer-law calibration discussion. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

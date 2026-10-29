@@ -1293,7 +1293,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "p-block", subject: "Chemistry", unit: 10, number: "C19", title: pBlock.title,
-    description: "Twenty-seven narrated chapters on p-block trends, phase-dependent PCl5, chlorine disproportionation, donor-dependent Lewis acidity, silicate connectivity and oxoacids.",
+    description: "Thirty-one narrated chapters on p-block trends, selected phosphorus hydrolysis, sulfur and peroxide redox roles, iodate balances, silicates and oxoacids.",
     scope: "Recorded Unit 10 trend foundation with original practice. Further element-specific comparisons, physical-property datasets and detailed structural drawings remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.p-block.lecture.v1",
     audio: "/lectures/p-block/narration-marin.mp3",
@@ -1303,7 +1303,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "d-f-block", subject: "Chemistry", unit: 11, number: "C20", title: dFBlock.title,
-    description: "Twenty-seven narrated chapters on d/f-block chemistry, indirect iodometry, permanganate–oxalate autocatalysis, lanthanoid redox, density, contraction and oxidation states.",
+    description: "Thirty-one narrated chapters on d/f-block chemistry, pH-dependent oxidants, back titration, supporting magnetic mixtures, colour measurements and lanthanoid redox.",
     scope: "Recorded Unit 11 foundation with original practice. Further preparation conditions and structures, occurrence and uses, detailed actinoid configurations and extended comparisons remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.d-f-block.lecture.v1",
     audio: "/lectures/d-f-block/narration-marin.mp3",

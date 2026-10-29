@@ -1,0 +1,507 @@
+// Authored by scripts/expand-inorganic-redox-measurements.mjs.
+export const inorganicRedoxMeasurementsAdditions = {
+  "p-block": {
+    "chapters": [
+      {
+        "title": "Phosphorus halide hydrolysis preserves two different oxidation states",
+        "formula": "PCl3+3H2O→H3PO3+3HCl; PCl5+4H2O→H3PO4+5HCl, complete hydrolysis endpoints",
+        "script": "Similar halide names do not imply identical hydrolysis products. In the selected complete hydrolysis comparison, phosphorus trichloride gives phosphorous acid and three hydrogen chloride units, using three waters per phosphorus. Phosphorus pentachloride gives phosphoric acid and five hydrogen chloride units, using four waters per phosphorus. Phosphorus stays at oxidation state plus three in the first reaction and plus five in the second, so neither net hydrolysis is itself a phosphorus redox change. The familiar structures of the acid products also differ. Phosphorous acid has two oxygen hydrogen groups and one phosphorus hydrogen bond, giving two ordinarily ionizable protons in this comparison. Phosphoric acid has three oxygen hydrogen groups and is triprotic. Counting the three hydrogens in each formula without checking connectivity would give the wrong basicity for phosphorous acid. Limited water can give different intermediate endpoints for the pentachloride, so the complete hydrolysis equations must not be applied indiscriminately. These selected compound balances support structural comparisons. They are conceptual equations, not handling instructions or a claim that every historical preparation belongs to the current trend focused syllabus.",
+        "points": [
+          "PCl3+3H2O · H3PO3+3HCl · P:+3→+3; no P redox",
+          "PCl5+4H2O · H3PO4+5HCl · P:+5→+5; complete endpoint",
+          "H3PO3:2 O–H and1 P–H · H3PO4:3 O–H · Two versus three ionizable protons"
+        ],
+        "board": {
+          "heading": "Phosphorus halide hydrolysis preserves two different oxidation states",
+          "columns": [
+            "Species / model",
+            "Balance / calculation",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "PCl3+3H2O",
+              "H3PO3+3HCl",
+              "P:+3→+3; no P redox"
+            ],
+            [
+              "PCl5+4H2O",
+              "H3PO4+5HCl",
+              "P:+5→+5; complete endpoint"
+            ],
+            [
+              "H3PO3:2 O–H and1 P–H",
+              "H3PO4:3 O–H",
+              "Two versus three ionizable protons"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Sulfur dioxide can donate or accept electrons",
+        "formula": "SO2→SO4²−:S(+4) loses2e−; SO2+2H2S→3S+2H2O:S(+4) accepts4e−",
+        "script": "An intermediate oxidation state can participate in different redox roles depending on the reaction partner. Sulfur in sulfur dioxide is plus four. When sulfur dioxide is oxidized to sulfate, sulfur becomes plus six and loses two electrons per sulfur atom. In a supplied aqueous bromine comparison, the balanced net equation contains one sulfur dioxide, one bromine molecule and two waters, forming sulfate, four hydrogen ions and two bromides. Sulfur dioxide acts as the reducing agent because it is oxidized. Contrast the selected reaction with hydrogen sulfide: one sulfur dioxide plus two hydrogen sulfide molecules gives three elemental sulfur atoms and two waters. Sulfur in sulfur dioxide falls from plus four to zero, accepting four electrons, while each sulfide sulfur rises from minus two to zero and loses two. Sulfur dioxide is the oxidizing agent in that comparison. The two starting sulfur oxidation states converge to an intermediate state, which is comproportionation rather than disproportionation. An oxidation number identifies possible electron changes, but does not by itself establish every reaction's feasibility or rate. Always name the partner and the stated products.",
+        "points": [
+          "SO2 sulfur:+4→+6 · Loses2e−; Br2 accepts2e− · SO2 is reducing agent",
+          "SO2 sulfur:+4→0 · Accepts4e− from2 sulfide S · SO2 is oxidizing agent",
+          "+4 and−2 converge to0 · SO2+2H2S→3S+2H2O · Comproportionation, not disproportionation"
+        ],
+        "board": {
+          "heading": "Sulfur dioxide can donate or accept electrons",
+          "columns": [
+            "Species / model",
+            "Balance / calculation",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "SO2 sulfur:+4→+6",
+              "Loses2e−; Br2 accepts2e−",
+              "SO2 is reducing agent"
+            ],
+            [
+              "SO2 sulfur:+4→0",
+              "Accepts4e− from2 sulfide S",
+              "SO2 is oxidizing agent"
+            ],
+            [
+              "+4 and−2 converge to0",
+              "SO2+2H2S→3S+2H2O",
+              "Comproportionation, not disproportionation"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Peroxide oxygen can move toward water or oxygen gas",
+        "formula": "H2O2+2H++2e−→2H2O; H2O2→O2+2H++2e−",
+        "script": "Hydrogen peroxide illustrates why a reagent should not receive one universal redox label. Each peroxide oxygen has oxidation number minus one. In an acidic reduction half reaction, one peroxide molecule accepts two electrons and two hydrogen ions to form two waters. Its oxygen reaches minus two, so peroxide acts as an oxidizing agent when paired with iodide oxidation. The net equation gives one iodine molecule and two waters from one peroxide, two iodides and two hydrogen ions. Peroxide can instead lose two electrons per molecule and form oxygen gas, with oxygen oxidation number zero. Against acidic permanganate it therefore acts as a reducing agent. Combining the electron counts gives two permanganates, five peroxides and six hydrogen ions forming two manganese two ions, five oxygen molecules and eight waters. One hundredth mole of peroxide would correspond ideally to four thousandths mole permanganate and one hundredth mole oxygen for this specified complete reaction. These are theoretical stoichiometric amounts, not claims about arbitrary mixtures or decomposition yields. Track the peroxide oxygen's destination and the partner half reaction before assigning its role.",
+        "points": [
+          "Peroxide O starts−1 · To H2O:O becomes−2 · H2O2 accepts2e− per molecule",
+          "To O2:O becomes0 · H2O2 donates2e− per molecule · Role depends on reaction partner",
+          "2MnO4−:5H2O2 in acid · .010 molH2O2→.004 molMnO4− · .010 molO2 in ideal net reaction"
+        ],
+        "board": {
+          "heading": "Peroxide oxygen can move toward water or oxygen gas",
+          "columns": [
+            "Species / model",
+            "Balance / calculation",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "Peroxide O starts−1",
+              "To H2O:O becomes−2",
+              "H2O2 accepts2e− per molecule"
+            ],
+            [
+              "To O2:O becomes0",
+              "H2O2 donates2e− per molecule",
+              "Role depends on reaction partner"
+            ],
+            [
+              "2MnO4−:5H2O2 in acid",
+              ".010 molH2O2→.004 molMnO4−",
+              ".010 molO2 in ideal net reaction"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Iodate and iodide converge to iodine with a five-to-one ratio",
+        "formula": "IO3−+5I−+6H+→3I2+3H2O; compare n(IO3−) with n(I−)/5",
+        "script": "A balanced halogen redox equation is needed before using a limiting reagent ratio. In the supplied acidic iodate iodide reaction, iodine at plus five in iodate and iodine at minus one in iodide both end at zero in molecular iodine. One iodate iodine accepts five electrons. Five iodide iodines each lose one electron, giving six iodine atoms in three iodine molecules. Balancing oxygen and hydrogen adds six hydrogen ions on the left and three waters on the right. This is comproportionation of two oxidation states of the same element. Suppose a stipulated complete reaction starts with two millimoles of iodate, eight millimoles of iodide and sufficient acid. Compare two millimoles of iodate with eight divided by five, or one point six millimoles of reaction extent supported by iodide. Iodide limits the extent. The theoretical iodine product is three times one point six, giving four point eight millimoles, while zero point four millimole iodate remains. Do not equate one iodate molecule to one iodine molecule. Solution speciation and competing reactions require additional information outside this simple net equation.",
+        "points": [
+          "IO3− iodine:+5→0 · 5 iodides:−1→0 · 5 electrons transferred per iodate",
+          "2 mmolIO3−;8 mmolI− · Extent=min(2,8/5)=1.6 mmol · Iodide is limiting",
+          "3 I2 per reaction extent · I2=4.8 mmol;IO3−left=.4 · Products stipulated; sufficient acid"
+        ],
+        "board": {
+          "heading": "Iodate and iodide converge to iodine with a five-to-one ratio",
+          "columns": [
+            "Species / model",
+            "Balance / calculation",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "IO3− iodine:+5→0",
+              "5 iodides:−1→0",
+              "5 electrons transferred per iodate"
+            ],
+            [
+              "2 mmolIO3−;8 mmolI−",
+              "Extent=min(2,8/5)=1.6 mmol",
+              "Iodide is limiting"
+            ],
+            [
+              "3 I2 per reaction extent",
+              "I2=4.8 mmol;IO3−left=.4",
+              "Products stipulated; sufficient acid"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Complete hydrolysis of one PCl3 gives which acid in the selected comparison?",
+        "options": [
+          "H3PO3",
+          "H3PO4",
+          "HClO3",
+          "H2SO3"
+        ],
+        "answer": 0,
+        "explanation": "P stays+3 and the balanced endpoint is PCl3+3H2O→H3PO3+3HCl."
+      },
+      {
+        "question": "Why does H3PO3 ordinarily supply only two ionizable protons in this comparison?",
+        "options": [
+          "One hydrogen is absent",
+          "It has two O–H groups and one P–H bond",
+          "All three H are attached to chlorine",
+          "Phosphorus changes oxidation state on each ionization"
+        ],
+        "answer": 1,
+        "explanation": "The P–H hydrogen is not an ordinary acid proton in the stated oxoacid comparison."
+      },
+      {
+        "question": "When SO2 becomes sulfate in the supplied bromine reaction, SO2 acts as:",
+        "options": [
+          "An inert spectator",
+          "An oxidizing agent only",
+          "A reducing agent, losing two electrons per sulfur",
+          "A catalyst with unchanged oxidation state"
+        ],
+        "answer": 2,
+        "explanation": "Sulfur rises from+4 to+6, donating two electrons to bromine."
+      },
+      {
+        "question": "SO2+2H2S→3S+2H2O is classified as:",
+        "options": [
+          "Disproportionation of a single initial state",
+          "A non-redox hydration",
+          "A change where all S loses electrons",
+          "Comproportionation of sulfur+4 and−2 to0"
+        ],
+        "answer": 3,
+        "explanation": "The two initial oxidation states converge to sulfur0; SO2 accepts four electrons from two sulfide sulfurs."
+      },
+      {
+        "question": "In peroxide reduction to water, oxygen changes from:",
+        "options": [
+          "−1 to−2",
+          "−2 to0",
+          "0 to−1",
+          "+1 to+2"
+        ],
+        "answer": 0,
+        "explanation": "Each peroxide oxygen begins−1 and reaches−2 in water; H2O2 accepts two electrons per molecule."
+      },
+      {
+        "question": "For the stated acidic permanganate reaction,.010 mol H2O2 requires how much MnO4− ideally?",
+        "options": [
+          ".025 mol",
+          ".004 mol",
+          ".010 mol",
+          ".020 mol"
+        ],
+        "answer": 1,
+        "explanation": "The balanced permanganate:peroxide ratio is2:5, so.010×2/5=.004 mol."
+      },
+      {
+        "question": "For2 mmol IO3− and8 mmol I− with excess acid, maximum I2 from the supplied net equation is:",
+        "options": [
+          "2.0 mmol",
+          "6.0 mmol",
+          "4.8 mmol",
+          "8.0 mmol"
+        ],
+        "answer": 2,
+        "explanation": "Iodide limits extent to8/5=1.6 mmol; three I2 per extent gives4.8 mmol."
+      },
+      {
+        "question": "How much iodate remains in that ideal complete-reaction ledger?",
+        "options": [
+          "1.6 mmol",
+          "0",
+          "2.0 mmol",
+          ".4 mmol"
+        ],
+        "answer": 3,
+        "explanation": "Only1.6 mmol of the original2.0 mmol iodate reacts because iodide is limiting."
+      }
+    ],
+    "sources": [
+      {
+        "title": "OpenStax/SUNY: phosphorus compounds and complete hydrolysis products",
+        "url": "https://courses.lumenlearning.com/suny-chemistryformajorsxmaster/chapter/occurrence-preparation-and-properties-of-phosphorus-missing-formulas/"
+      },
+      {
+        "title": "NCERT via IIT Kanpur SATHEE: selected p-block compound comparisons",
+        "url": "https://sathee.iitk.ac.in/sathee-icar/student-corner/ncert-books/class-12/nb-che-12/chem-12-unit-7-the-p-block-elements/"
+      },
+      {
+        "title": "IIT Kanpur SATHEE: peroxide oxidation and reduction",
+        "url": "https://sathee.iitk.ac.in/sathee-neet/important-formula/chemistry/hydrogen/"
+      },
+      {
+        "title": "CCEA: iodate–iodide stoichiometry",
+        "url": "https://ccea.org.uk/downloads/docs/Support/eGuide/2021/A2%202%20Chemistry%20eGuide%3A%20Practical%20Manual.pdf"
+      }
+    ]
+  },
+  "d-f-block": {
+    "chapters": [
+      {
+        "title": "Permanganate potential depends on acidity as well as products",
+        "formula": "MnO4−+8H++5e−→Mn2++4H2O; at298 K and unit Mn activities,E=E°−(8×.0592/5)pH",
+        "script": "Specifying an oxidant's reduction product does not remove its dependence on acidity. Reaction stoichiometry sets the pH coefficient. Consider the acidic permanganate to manganese two half reaction at two hundred ninety eight kelvin. One permanganate consumes eight hydrogen ions and five electrons to form one manganese two ion and four waters. In a supplied ideal activity comparison, keep permanganate and manganese two activities at one and take standard potential one point five one volt. The reaction quotient then contains the reciprocal eighth power of hydrogen ion activity. Applying the Nernst equation gives potential one point five one minus eight times zero point zero five nine two divided by five, multiplied by pH. Raising pH from zero to two lowers the predicted potential by about zero point one eight nine four volt, giving about one point three two zero six volt. This is a comparison of the same specified acidic half reaction. It must not be extrapolated through every pH range while forcing manganese two to remain the product. Other manganese species, precipitation and activity effects can change the relevant comparison.",
+        "points": [
+          "MnO4−→Mn2+ in acid · 8 H+ and5e− perMn · Q=1/a(H+)^8 at unit Mn activities",
+          "E°=1.51 V at298 K · pH slope=−8(.0592)/5 · −.09472 V per pH unit",
+          "pH0→2 in stated model · E≈1.32056 V · Do not extrapolate to changed products"
+        ],
+        "board": {
+          "heading": "Permanganate potential depends on acidity as well as products",
+          "columns": [
+            "Species / model",
+            "Balance / calculation",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "MnO4−→Mn2+ in acid",
+              "8 H+ and5e− perMn",
+              "Q=1/a(H+)^8 at unit Mn activities"
+            ],
+            [
+              "E°=1.51 V at298 K",
+              "pH slope=−8(.0592)/5",
+              "−.09472 V per pH unit"
+            ],
+            [
+              "pH0→2 in stated model",
+              "E≈1.32056 V",
+              "Do not extrapolate to changed products"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Dichromate back titration subtracts unused oxidant capacity",
+        "formula": "n(Fe2+)sample=6n(Cr2O7²−)initial−n(Fe2+)back, for the stipulated reactions",
+        "script": "A back titration measures the oxidant left over, not the oxidant consumed by the sample. Use a supplied ideal iron assay in which every sample iron atom has first been converted to iron two, no other sample component reduces dichromate, and the specified reactions go to completion. One dichromate ion accepts six electrons in acid, while each iron two ion loses one electron. An initial three millimoles of dichromate therefore offers eighteen millimoles of electron accepting capacity. After the sample reacts, the unused dichromate requires four millimoles of a separate iron two standard in the back titration. Those four millimoles measure residual oxidizing capacity and must be subtracted from eighteen, leaving fourteen millimoles attributable to sample iron. Using rounded iron molar mass fifty six grams per mole gives zero point seven eight four gram iron. For a one gram sample, the ideal iron mass fraction is seventy eight point four percent. The original dichromate amount cannot be treated as entirely consumed by the sample. Interfering reductants or incomplete conversion would invalidate the stipulated assay interpretation.",
+        "points": [
+          "Initial Cr2O7²−=3 mmol · 6e− capacity per dichromate · 18 mmol electron capacity",
+          "Back titrant Fe2+=4 mmol · Measures unused capacity · Sample Fe2+=18−4=14 mmol",
+          "MFe=56 g/mol;sample1 g · Iron mass=.784 g · 78.4% under stated assay assumptions"
+        ],
+        "board": {
+          "heading": "Dichromate back titration subtracts unused oxidant capacity",
+          "columns": [
+            "Species / model",
+            "Balance / calculation",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "Initial Cr2O7²−=3 mmol",
+              "6e− capacity per dichromate",
+              "18 mmol electron capacity"
+            ],
+            [
+              "Back titrant Fe2+=4 mmol",
+              "Measures unused capacity",
+              "Sample Fe2+=18−4=14 mmol"
+            ],
+            [
+              "MFe=56 g/mol;sample1 g",
+              "Iron mass=.784 g",
+              "78.4% under stated assay assumptions"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Supporting magnetic mixtures average moment squares in the Curie model",
+        "formula": "μeff²=(1−f)μFeII²+fμFeIII²; high-spin spin-only endpoints24 and35 in μB²",
+        "script": "A measured effective magnetic moment of a mixture need not equal the moment of any one isolated ion. Use a supporting ideal Curie model with noninteracting high spin iron two and iron three centers at the same temperature. Assume orbital contributions and diamagnetism have been excluded and normalize susceptibility per mole of total iron. High spin iron two has four unpaired electrons, giving spin only moment squared four times six, or twenty four in squared Bohr magneton units. High spin iron three has five, giving five times seven, or thirty five. Susceptibility contributions add in proportion to these squared moments, so a fraction f of iron three gives mixture moment squared twenty four plus eleven f. If the supplied corrected effective moment squared is thirty point six, solving gives f equal to zero point six, or sixty percent iron three. The effective moment is about five point five three Bohr magnetons, but averaging the two moment magnitudes directly is not the Curie mixture calculation. Real orbital contributions, magnetic interactions or different normalization would require a different model.",
+        "points": [
+          "High-spin Fe2+:4 unpaired · μ²=4(4+2)=24 · Spin-only endpoints stipulated",
+          "High-spin Fe3+:5 unpaired · μ²=5(5+2)=35 · Corrected Curie susceptibilities add",
+          "Mixture μeff²=30.6 · fFeIII=(30.6−24)/11=.60 · Average μ²; not μ magnitudes"
+        ],
+        "board": {
+          "heading": "Supporting magnetic mixtures average moment squares in the Curie model",
+          "columns": [
+            "Species / model",
+            "Balance / calculation",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "High-spin Fe2+:4 unpaired",
+              "μ²=4(4+2)=24",
+              "Spin-only endpoints stipulated"
+            ],
+            [
+              "High-spin Fe3+:5 unpaired",
+              "μ²=5(5+2)=35",
+              "Corrected Curie susceptibilities add"
+            ],
+            [
+              "Mixture μeff²=30.6",
+              "fFeIII=(30.6−24)/11=.60",
+              "Average μ²; not μ magnitudes"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Supporting colour measurements separate absorbance from transmittance",
+        "formula": "A=εbc=−log10(T); cOriginal=dilutionFactor×cMeasured in the stipulated unchanged-species model",
+        "script": "An absorption wavelength gives an energy difference, while absorbance at a fixed wavelength can provide concentration information under additional assumptions. In a supporting Beer Lambert model, absorbance equals molar absorptivity times optical path length times concentration. Use an illustrative diluted permanganate sample whose chemical form is unchanged, with blank corrected absorbance zero point four zero zero, path length one centimeter and supplied molar absorptivity two thousand liters divided by moles and centimeters. The measured concentration is zero point four divided by two thousand, giving two times ten to the minus four molar. If this sample was made by a fivefold dilution, the original concentration was one times ten to the minus three molar. Absorbance is dimensionless and is not the fraction of light absorbed. Transmittance is ten to the power minus absorbance, about zero point three nine eight here, or thirty nine point eight percent transmission. The model assumes an appropriate calibration range, fixed wavelength, clear solution and no chemical change. Scattering, stray light or changing manganese speciation can invalidate the simple concentration inference.",
+        "points": [
+          "A=.400;ε=2000 L/(mol cm) · b=1 cm;A=εbc · cMeasured=2e−4 M",
+          "Fivefold dilution · cOriginal=5cMeasured · cOriginal=1e−3 M",
+          "T=10^(−.400)≈.398 · Transmission≈39.8% · A is not percent light absorbed"
+        ],
+        "board": {
+          "heading": "Supporting colour measurements separate absorbance from transmittance",
+          "columns": [
+            "Species / model",
+            "Balance / calculation",
+            "Conclusion / limit"
+          ],
+          "rows": [
+            [
+              "A=.400;ε=2000 L/(mol cm)",
+              "b=1 cm;A=εbc",
+              "cMeasured=2e−4 M"
+            ],
+            [
+              "Fivefold dilution",
+              "cOriginal=5cMeasured",
+              "cOriginal=1e−3 M"
+            ],
+            [
+              "T=10^(−.400)≈.398",
+              "Transmission≈39.8%",
+              "A is not percent light absorbed"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "For the stipulated acidic MnO4−/Mn2+ comparison,E=1.51−.09472pH. At pH2,E is approximately:",
+        "options": [
+          "1.69944 V",
+          "1.32056 V",
+          "1.51000 V",
+          ".18944 V"
+        ],
+        "answer": 1,
+        "explanation": "Eight H+ and five electrons give slope−8(.0592)/5=−.09472 V per pH unit."
+      },
+      {
+        "question": "Why can that one half-reaction formula not be applied blindly over all pH values?",
+        "options": [
+          "Kinetic rates never depend on pH",
+          "Electrons have no charge",
+          "Different manganese products, precipitates or activities may become relevant",
+          "The balanced half reaction contains no H+"
+        ],
+        "answer": 2,
+        "explanation": "The Nernst expression belongs to its specified species and activities; changed speciation requires a new comparison."
+      },
+      {
+        "question": "3 mmol initial dichromate offers18 mmol electron capacity. Residual oxidant consumes4 mmol Fe2+ back titrant. Sample Fe2+ amount is:",
+        "options": [
+          "18 mmol",
+          "4 mmol",
+          "22 mmol",
+          "14 mmol"
+        ],
+        "answer": 3,
+        "explanation": "The back titration measures unused capacity:18−4=14 mmol attributable to the stipulated sample iron."
+      },
+      {
+        "question": "Using MFe=56 g/mol, that assay on a1.00 g sample gives iron mass fraction:",
+        "options": [
+          "78.4%",
+          "100.8%",
+          "22.4%",
+          "14.0%"
+        ],
+        "answer": 0,
+        "explanation": ".014 mol×56=.784 g iron; .784/1.00×100=78.4% under the stated selectivity assumptions."
+      },
+      {
+        "question": "In the supplied high-spin Curie mixture model, μeff²=24+11f=30.6. FeIII fraction f is:",
+        "options": [
+          ".40",
+          ".60",
+          ".50",
+          ".90"
+        ],
+        "answer": 1,
+        "explanation": "f=(30.6−24)/11=.60. Susceptibility contributions follow moment squares in this model."
+      },
+      {
+        "question": "Which average belongs to this corrected noninteracting Curie mixture model?",
+        "options": [
+          "The arithmetic mean of moment magnitudes in every mixture",
+          "The sum of oxidation numbers",
+          "The fraction-weighted mean of squared moments",
+          "Rounding the apparent moment to an integer unpaired count"
+        ],
+        "answer": 2,
+        "explanation": "At the same T with the stated molar normalization, susceptibilities add proportionally to μ²."
+      },
+      {
+        "question": "For A=.400,ε=2000 L/(mol cm),b=1 cm and fivefold sample dilution, original concentration is:",
+        "options": [
+          "2e−4 M",
+          "5e−3 M",
+          ".400 M",
+          "1e−3 M"
+        ],
+        "answer": 3,
+        "explanation": "Measured c=A/(εb)=2e−4 M; multiplying by dilution factor5 gives1e−3 M."
+      },
+      {
+        "question": "Absorbance.400 corresponds to approximately which percent transmittance?",
+        "options": [
+          "39.8%",
+          "60.0%",
+          "40.0% exactly",
+          "0.4%"
+        ],
+        "answer": 0,
+        "explanation": "T=10^(−.400)≈.398, or39.8%; absorbance is logarithmic and is not a directly absorbed fraction."
+      }
+    ],
+    "sources": [
+      {
+        "title": "OpenStax: Nernst equation and reaction quotient",
+        "url": "https://openstax.org/books/chemistry-2e/pages/17-4-potential-free-energy-and-equilibrium"
+      },
+      {
+        "title": "OpenStax: transition-metal oxidation states",
+        "url": "https://openstax.org/books/chemistry-2e/pages/19-1-occurrence-preparation-and-properties-of-transition-metals-and-their-compounds"
+      },
+      {
+        "title": "Kutztown University: magnetic properties and Curie law",
+        "url": "https://chem.libretexts.org/Courses/Kutztown_University_of_Pennsylvania/CHM_320%3A_Advanced_Inorganic_Chemistry_textbook/09%3A_Spectroscopic_and_Magnetic_Properties/9.05%3A_Magnetic_Properties_of_Materials"
+      },
+      {
+        "title": "David Harvey: Beer law and calibration assumptions",
+        "url": "https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Instrumental_Analysis_(LibreTexts)/13%3A_Introduction_to_Ultraviolet_Visible_Absorption_Spectrometry/13.02%3A_Beer%27s_Law"
+      }
+    ]
+  }
+} as const;
