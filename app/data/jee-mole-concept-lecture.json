@@ -53,6 +53,10 @@
     {
       "title": "Colorado State University: conversion, yield and selectivity definitions",
       "url": "https://www.engr.colostate.edu/CBE101/topics/reactor_design.html"
+    },
+    {
+      "title": "University of Colorado LearnChemE: recycle mass balances",
+      "url": "https://learncheme.com/quiz-yourself/interactive-self-study-modules/recycle-mass-balances/recycle-mass-balances-screencasts/"
     }
   ],
   "chapters": [
@@ -932,6 +936,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "A wet gas pressure includes water vapour",
+      "formula": "Pdry=Ptotal−PH2O; ndry=PdryV/(RT), with actual gas pressure and common T specified",
+      "script": "A gas collected over water can contain both the intended gas and water vapor. In the ideal mixture comparison, total gas pressure is the sum of their partial pressures. Use the actual gas pressure supplied for the sample, not an atmospheric value that might require a separate liquid level correction. In a stipulated example at one common temperature, total pressure is one atmosphere, water vapor partial pressure is zero point zero three zero atmosphere, gas volume is two point four five liters, and the supplied R T product is twenty four point five liter atmospheres per mole. Dry gas partial pressure is zero point nine seven zero atmosphere. Its amount is therefore zero point nine seven times two point four five divided by twenty four point five, or zero point zero nine seven zero mole. Using total pressure would instead count zero point one zero zero mole of the whole gas mixture. This correction assumes the collected gas does not react significantly with water and that the given vapor pressure applies. Identify the gas species being counted before using a molar volume shortcut.",
+      "points": [
+        "Ptotal1;Pwater.030 atm · Pdry=.970 atm · Sample pressure given",
+        "V2.45 L;RT24.5 L atm/mol · ndry=.970×2.45/24.5 · .0970 mol dry gas",
+        "Wet total=.100 mol · Includes water vapour · Water is not analyte"
+      ],
+      "board": {
+        "heading": "Subtract water vapour first",
+        "columns": [
+          "Given / structure",
+          "Count / transformation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Ptotal1;Pwater.030 atm",
+            "Pdry=.970 atm",
+            "Sample pressure given"
+          ],
+          [
+            "V2.45 L;RT24.5 L atm/mol",
+            "ndry=.970×2.45/24.5",
+            ".0970 mol dry gas"
+          ],
+          [
+            "Wet total=.100 mol",
+            "Includes water vapour",
+            "Water is not analyte"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Equal gas masses do not give equal mole fractions",
+      "formula": "Mmix=1/Σ(wi/Mi); equivalently Mmix=Σ(yiMi), with wi mass and yi mole fractions",
+      "script": "A gas mixture's average molar mass depends on which fractions are supplied. Equal masses are not equal mole amounts when molar masses differ. Use rounded atomic molar masses four for helium and twenty for neon, in grams per mole. A mixture containing ten grams of each has two point five moles helium and zero point five mole neon. Total amount is three moles and total mass twenty grams, so mean molar mass is twenty thirds, about six point six seven grams per mole. Helium mole fraction is five sixths and neon mole fraction one sixth. Weighting the two molar masses by those mole fractions gives the same result. For mass fractions instead, calculate the reciprocal of the sum of each mass fraction divided by its species molar mass. Simply averaging four and twenty would give twelve, which belongs to equal mole amounts rather than the equal mass mixture here. These noble gases are monatomic, so the counted gas entities are atoms. Ideal gas density can then use this mean molar mass at a specified pressure and temperature.",
+      "points": [
+        "10 gHe;10 gNe · nHe=2.5;nNe=.5 mol · Total20 g and3 mol",
+        "Mmix=20/3≈6.67 g/mol · yHe=5/6;yNe=1/6 · Mole average agrees",
+        "Mass fractions are.5,.5 · 1/Mmix=.5/4+.5/20 · 12 assumes equal moles"
+      ],
+      "board": {
+        "heading": "Equal masses are not equal moles",
+        "columns": [
+          "Given / structure",
+          "Count / transformation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "10 gHe;10 gNe",
+            "nHe=2.5;nNe=.5 mol",
+            "Total20 g and3 mol"
+          ],
+          [
+            "Mmix=20/3≈6.67 g/mol",
+            "yHe=5/6;yNe=1/6",
+            "Mole average agrees"
+          ],
+          [
+            "Mass fractions are.5,.5",
+            "1/Mmix=.5/4+.5/20",
+            "12 assumes equal moles"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Incomplete combustion requires every carbon-containing product",
+      "formula": "CH4+1.875O2→.75CO2+.25CO+2H2O in the stipulated complete material ledger",
+      "script": "A combustion calculation must not silently place all carbon into carbon dioxide if carbon monoxide is also a stated product. Consider a supplied material balance in which one mole of methane is consumed completely, producing zero point seven five mole carbon dioxide, zero point two five mole carbon monoxide and two moles water, with no other carbon or hydrogen products. Carbon is conserved because the two carbon containing products sum to one mole of carbon atoms. Hydrogen is conserved because two waters contain four moles hydrogen atoms. Oxygen atoms in the products total twice zero point seven five, plus zero point two five, plus two, giving three point seven five moles. The oxygen molecule requirement is half that amount, one point eight seven five moles. Using rounded molar masses gives sixteen grams methane plus sixty grams oxygen, matching thirty three grams carbon dioxide, seven grams carbon monoxide and thirty six grams water. Complete methane consumption is not the same as complete oxidation of every carbon to carbon dioxide. Use the supplied products and check each element before applying a familiar combustion ratio.",
+      "points": [
+        "1 molCH4 fully consumed · .75 molCO2+.25 molCO · Carbon total1 mol atoms",
+        "2 molH2O contains4 molH · Product O atoms=3.75 mol · O2 consumption=1.875 mol",
+        "Masses:16+60 g · Products33+7+36 g · CO is not complete C ox."
+      ],
+      "board": {
+        "heading": "Count CO as well as CO2",
+        "columns": [
+          "Given / structure",
+          "Count / transformation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "1 molCH4 fully consumed",
+            ".75 molCO2+.25 molCO",
+            "Carbon total1 mol atoms"
+          ],
+          [
+            "2 molH2O contains4 molH",
+            "Product O atoms=3.75 mol",
+            "O2 consumption=1.875 mol"
+          ],
+          [
+            "Masses:16+60 g",
+            "Products33+7+36 g",
+            "CO is not complete C ox."
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting steady recycle changes the reactor-feed denominator",
+      "formula": "Freactor=Ffresh+(1−Xpass)Freactor; perfect A recycle for A→B gives Freactor=Ffresh/Xpass",
+      "script": "A steady recycle balance differs from counting one isolated reaction pass. Use a supporting ideal process with one to one conversion of A into B, no side reaction, complete separation of B, perfect recycle of unreacted A and no purge. All rates are in moles per hour. Fresh A enters at one hundred, while the reactor converts forty percent of its own A feed each pass. Let total reactor A feed be F. The unconverted sixty percent returns, so the mixer balance is F equals one hundred plus zero point six F. Solving gives reactor feed two hundred fifty, recycle one hundred fifty and product B one hundred. Single pass conversion is forty percent, but overall fresh feed conversion is one hundred percent in this ideal steady state because no A leaves the process boundary. Recycle does not create new atoms; it counts the same unreacted material on repeated internal passages. Losses, purge, incomplete separation or side reactions change the overall balance. Distinguish the process boundary from the reactor boundary before assigning a conversion denominator.",
+      "points": [
+        "Fresh100;pass40% · F=100+.60F · ReactorA feed250 mol/h",
+        "Recycle=.60×250=150 · B product=.40×250=100 · No purge;perfect split",
+        "Pass conversion40% · Overall conversion100% · Recycle is internal"
+      ],
+      "board": {
+        "heading": "Steady recycle: two boundaries",
+        "columns": [
+          "Given / structure",
+          "Count / transformation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Fresh100;pass40%",
+            "F=100+.60F",
+            "ReactorA feed250 mol/h"
+          ],
+          [
+            "Recycle=.60×250=150",
+            "B product=.40×250=100",
+            "No purge;perfect split"
+          ],
+          [
+            "Pass conversion40%",
+            "Overall conversion100%",
+            "Recycle is internal"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1374,6 +1518,94 @@
       ],
       "answer": 3,
       "explanation": "Recovered A=.90×20=18 mmol; fresh makeup=100−18=82 mmol in this stipulated pure-recycle model."
+    },
+    {
+      "question": "For the supplied wet gas,Ptotal=1.000 atm and PH2O=.030 atm. Dry analyte pressure is:",
+      "options": [
+        ".970 atm",
+        "1.030 atm",
+        "1.000 atm",
+        ".030 atm"
+      ],
+      "answer": 0,
+      "explanation": "Subtract the water partial pressure from the actual total sample pressure in the specified ideal mixture."
+    },
+    {
+      "question": "Using V=2.45 L and RT=24.5 L atm/mol with that dry pressure, dry gas amount is:",
+      "options": [
+        ".100 mol",
+        ".0970 mol",
+        ".0030 mol",
+        "9.70 mol"
+      ],
+      "answer": 1,
+      "explanation": "n=.970×2.45/24.5=.0970 mol; .100 mol would count the entire wet mixture."
+    },
+    {
+      "question": "10 gHe and10 gNe have rounded molar masses4 and20 g/mol. Mean gas molar mass is:",
+      "options": [
+        "12 g/mol",
+        "24 g/mol",
+        "20/3 g/mol",
+        "3 g/mol"
+      ],
+      "answer": 2,
+      "explanation": "First convert each mass to moles:2.5+.5=3 mol. Divide the total20 g by3 mol to get20/3 g/mol."
+    },
+    {
+      "question": "The helium mole fraction in that equal-mass mixture is:",
+      "options": [
+        "1/2",
+        "1/6",
+        "1/3",
+        "5/6"
+      ],
+      "answer": 3,
+      "explanation": "Helium supplies2.5 of the total3 mol atoms, so its mole fraction is5/6."
+    },
+    {
+      "question": "The stipulated products.75CO2+.25CO+2H2O per CH4 require how much O2?",
+      "options": [
+        "1.875 mol",
+        "2.000 mol",
+        "3.750 mol",
+        "1.500 mol"
+      ],
+      "answer": 0,
+      "explanation": "Product oxygen atoms total1.50+.25+2=3.75 mol; divide by2 for O2 molecules."
+    },
+    {
+      "question": "Why is complete CH4 consumption not identical to complete carbon oxidation in this example?",
+      "options": [
+        "No hydrogen is present",
+        "Some carbon ends in CO rather than CO2",
+        "The input contains no carbon",
+        "Carbon mass is lost"
+      ],
+      "answer": 1,
+      "explanation": "Conversion of the reactant and the oxidation state reached by its carbon products are separate questions."
+    },
+    {
+      "question": "Perfect steady recycle, fresh A100 mol/h and40% single-pass conversion for A→B give total reactor A feed:",
+      "options": [
+        "100 mol/h",
+        "150 mol/h",
+        "250 mol/h",
+        "40 mol/h"
+      ],
+      "answer": 2,
+      "explanation": "The mixer includes fresh feed plus internal recycle:F=100+.60F. Thus.40F=100 and total reactor feed is250 mol/h."
+    },
+    {
+      "question": "In that ideal no-purge process, recycle and B output are respectively:",
+      "options": [
+        "60 and40 mol/h",
+        "100 and150 mol/h",
+        "250 and100 mol/h",
+        "150 and100 mol/h"
+      ],
+      "answer": 3,
+      "explanation": "The reactor returns60% of its250 mol/h A feed as recycle, or150 mol/h, while40% becomes100 mol/h B."
     }
   ]
 }

@@ -89,6 +89,22 @@
     {
       "title": "OpenStax Organic Chemistry: E/Z sequence rules",
       "url": "https://openstax.org/books/organic-chemistry/pages/7-5-alkene-stereochemistry-and-the-e-z-designation"
+    },
+    {
+      "title": "OpenStax: carbocation structure, orbital alignment and stability",
+      "url": "https://openstax.org/books/organic-chemistry/pages/7-9-carbocation-structure-and-stability"
+    },
+    {
+      "title": "OpenStax: substituted cyclohexane conformers",
+      "url": "https://openstax.org/books/organic-chemistry/pages/4-7-conformations-of-monosubstituted-cyclohexanes"
+    },
+    {
+      "title": "OpenStax: disubstituted cyclohexanes",
+      "url": "https://openstax.org/books/organic-chemistry/pages/4-8-conformations-of-disubstituted-cyclohexanes"
+    },
+    {
+      "title": "Rutgers University: allene axial chirality",
+      "url": "https://roche.camden.rutgers.edu/files/Ch05.pdf"
     }
   ],
   "chapters": [
@@ -841,6 +857,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Count adjacent C–H bonds before a hyperconjugation comparison",
+      "formula": "Simple neighbouring-C–H inventory: CH3CH2+:3; (CH3)2CH+:6; (CH3)3C+:9; CH3+:0",
+      "script": "A useful hyperconjugation comparison starts by locating the electron deficient carbon and its neighboring bonds. In a simple adjacent carbon hydrogen bond inventory, the ethyl carbocation has one neighboring methyl group and three such bonds. The isopropyl carbocation has two neighboring methyl groups, giving six, while the tert butyl carbocation has three, giving nine. The methyl carbocation has no neighboring carbon and therefore none in this inventory. Do not count hydrogens attached directly to the positively charged carbon as neighboring carbon donors. These counts describe potentially relevant neighboring bonds across conformations. They do not mean every bond is equally aligned with the empty p orbital at one instant, or that nine identical stabilization energies should be added numerically. Orbital orientation matters, and carbon carbon sigma donation can require a broader treatment. Among comparable simple alkyl cations, donation helps rationalize the familiar tertiary over secondary over primary tendency. Resonance, inductive effects, solvent and structural constraints can change other comparisons. State which bonds are being counted rather than using a bare hydrogen total as a universal stability formula.",
+      "points": [
+        "Ethyl:1 adjacentCH3 · 3 neighbouring C–H bonds · Exclude H on charged C",
+        "iPr:2CH3;tBu:3CH3 · Counts6,9;methyl0 · Bond inventory only",
+        "Alignment matters · Not equal donor energies · Stability needs context"
+      ],
+      "board": {
+        "heading": "Count neighbouring C–H bonds",
+        "columns": [
+          "Given / structure",
+          "Count / transformation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Ethyl:1 adjacentCH3",
+            "3 neighbouring C–H bonds",
+            "Exclude H on charged C"
+          ],
+          [
+            "iPr:2CH3;tBu:3CH3",
+            "Counts6,9;methyl0",
+            "Bond inventory only"
+          ],
+          [
+            "Alignment matters",
+            "Not equal donor energies",
+            "Stability needs context"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A chair flip exchanges axial and equatorial without reversing up and down",
+      "formula": "Ring flip: axial-up↔equatorial-up; axial-down↔equatorial-down; connectivity and face are retained",
+      "script": "A cyclohexane chair has axial and equatorial positions, but axial does not mean up at every carbon. Axial directions alternate up and down around the ring, while the equatorial direction at each carbon lies on the opposite face from its axial direction. A ring flip exchanges axial and equatorial positions while preserving whether each substituent points up or down. Thus an axial up methyl becomes equatorial up, not equatorial down. The process changes conformation without breaking the substituent bond or changing its connectivity. For methylcyclohexane, the equatorial conformer is usually favored because an axial methyl has unfavorable one three diaxial contacts. A supporting two state example supplies the axial conformer as seven point five kilojoules per mole higher in Gibbs energy at three hundred kelvin. The equatorial to axial population ratio is the exponential of seven thousand five hundred divided by R T, about twenty to one using R eight point three one four. This population ratio is not a ring flip rate or an activation barrier. Use the supplied free energy difference and retain the substituent face.",
+      "points": [
+        "Axial up/down alternates · Equatorial face opposite · Axial is not always up",
+        "Flip keeps up/down · Axial-up↔equatorial-up · Same connectivity",
+        "Given Gax−Geq=7.5 kJ/mol · neq/nax=exp(7500/RT) · Two-state ratio≈20:1"
+      ],
+      "board": {
+        "heading": "Chair flips keep up/down",
+        "columns": [
+          "Given / structure",
+          "Count / transformation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Axial up/down alternates",
+            "Equatorial face opposite",
+            "Axial is not always up"
+          ],
+          [
+            "Flip keeps up/down",
+            "Axial-up↔equatorial-up",
+            "Same connectivity"
+          ],
+          [
+            "Given Gax−Geq=7.5 kJ/mol",
+            "neq/nax=exp(7500/RT)",
+            "Two-state ratio≈20:1"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Cis and trans chairs depend on ring positions as well as faces",
+      "formula": "1,2-cis:a,e↔e,a; 1,2-trans:a,a↔e,e; 1,3-cis:a,a↔e,e",
+      "script": "For a disubstituted cyclohexane, cis means the two groups lie on the same ring face, not that both are axial or both equatorial. Start with a chair whose carbon one axial direction is up and carbon two axial direction down. If methyl groups at carbons one and two are both up, they are cis, but one must be axial and the other equatorial. Ring flipping exchanges their axial and equatorial roles while retaining both up labels. A trans one two pair can instead be both axial in one chair and both equatorial in the flipped chair. In the usual simple dimethyl comparison, the diequatorial trans conformer is favored. Change the substitution positions to one and three: their axial directions are on the same face. A cis one three pair can therefore interconvert between diaxial and diequatorial forms, while a trans one three pair always has one axial and one equatorial substituent. Identify the numbered carbons and up down faces before choosing a chair. Different substituent sizes or interactions can change conformer energies without changing the cis trans definition.",
+      "points": [
+        "1,2-cis:same face · One axial,one equatorial · Flip:a,e↔e,a",
+        "1,2-trans:opposite faces · Diaxial or diequatorial · Dimethyl favors e,e",
+        "1,3 axial faces match · Cis:a,a/e,e;trans:a,e · Check ring numbering"
+      ],
+      "board": {
+        "heading": "Read faces before axial/equatorial",
+        "columns": [
+          "Given / structure",
+          "Count / transformation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "1,2-cis:same face",
+            "One axial,one equatorial",
+            "Flip:a,e↔e,a"
+          ],
+          [
+            "1,2-trans:opposite faces",
+            "Diaxial or diequatorial",
+            "Dimethyl favors e,e"
+          ],
+          [
+            "1,3 axial faces match",
+            "Cis:a,a/e,e;trans:a,e",
+            "Check ring numbering"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting allene chirality does not require a tetrahedral stereocentre",
+      "formula": "For a simple allene a,bC=C=Cc,d: a≠b and c≠d permit axial chirality; terminal substituent planes are perpendicular",
+      "script": "A molecule can be chiral without a tetrahedral carbon attached to four different groups. A supporting example is an appropriately substituted allene, whose central carbon is bonded by two cumulated double bonds. The central carbon uses two perpendicular p orbitals, placing the substituents at the two ends in perpendicular planes. For a simple allene, if each terminal carbon bears two different substituents, an axis of chirality can result. Penta two three diene has hydrogen and methyl at each end and exists as a pair of nonsuperimposable mirror images despite lacking the ordinary tetrahedral stereocenter. Unsubstituted propadiene has two hydrogens at each terminal carbon and does not have this axial chirality. Merely seeing two double bonds is therefore not enough. Do not flatten the two end planes and assign ordinary alkene E and Z labels from that false picture. The whole molecular geometry determines whether the mirror image is superimposable. This chapter identifies the structural origin of the allene pair; it does not assign axial stereodescriptors or generalize the same rule to every length of cumulene.",
+      "points": [
+        "Central C:2 p orbitals · End planes perpendicular · Whole geometry matters",
+        "Penta-2,3-diene ends:H/Me · Both end pairs differ · Axial enantiomer pair",
+        "Propadiene ends:H/H · No terminal distinction · No such axial chirality"
+      ],
+      "board": {
+        "heading": "Allene ends occupy two planes",
+        "columns": [
+          "Given / structure",
+          "Count / transformation",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Central C:2 p orbitals",
+            "End planes perpendicular",
+            "Whole geometry matters"
+          ],
+          [
+            "Penta-2,3-diene ends:H/Me",
+            "Both end pairs differ",
+            "Axial enantiomer pair"
+          ],
+          [
+            "Propadiene ends:H/H",
+            "No terminal distinction",
+            "No such axial chirality"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1327,6 +1483,94 @@
       ],
       "answer": 1,
       "explanation": "Switching to trans methyl groups places Br and the higher-priority methyl on the same side, giving Z for this particular substitution pattern."
+    },
+    {
+      "question": "In the stated neighboring-carbon C–H inventory, CH3CH2+ has how many eligible adjacent C–H bonds?",
+      "options": [
+        "0",
+        "3",
+        "5",
+        "2"
+      ],
+      "answer": 1,
+      "explanation": "The neighboring CH3 supplies three; hydrogens directly on the cationic carbon are not counted in this inventory."
+    },
+    {
+      "question": "The corresponding inventory for(CH3)3C+ is:",
+      "options": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ],
+      "answer": 2,
+      "explanation": "Three neighboring methyl groups each supply three C–H bonds. This is not a claim that all nine have equal alignment at once."
+    },
+    {
+      "question": "An axial-up methyl undergoes a cyclohexane chair flip. It becomes:",
+      "options": [
+        "Axial-down",
+        "Equatorial-down",
+        "An OH group",
+        "Equatorial-up"
+      ],
+      "answer": 3,
+      "explanation": "Ring flipping exchanges axial/equatorial but preserves up/down face and connectivity."
+    },
+    {
+      "question": "The supplied20:1 conformer population ratio directly describes:",
+      "options": [
+        "Relative equilibrium populations in the two-state model",
+        "A20-fold rate constant in every ring flip",
+        "The activation barrier in joules",
+        "A change in molecular formula"
+      ],
+      "answer": 0,
+      "explanation": "A supplied conformer Gibbs-energy difference fixes a population ratio, not an interconversion rate."
+    },
+    {
+      "question": "A cis-1,2-dimethylcyclohexane chair has which axial/equatorial pattern?",
+      "options": [
+        "Both axial in every chair",
+        "One axial and one equatorial",
+        "Both equatorial in every chair",
+        "No possible chair"
+      ],
+      "answer": 1,
+      "explanation": "Adjacent axial directions are opposite faces, so a same-face1,2 pair requires one axial and one equatorial group."
+    },
+    {
+      "question": "Which pair can interconvert between diaxial and diequatorial chairs?",
+      "options": [
+        "cis-1,2 only",
+        "trans-1,3 only",
+        "trans-1,2 and cis-1,3",
+        "Every cis pair at every numbering"
+      ],
+      "answer": 2,
+      "explanation": "The axial directions are opposite for1,2 and matching for1,3; retain the actual up/down faces during flipping."
+    },
+    {
+      "question": "Why can penta-2,3-diene be chiral without a tetrahedral stereocentre?",
+      "options": [
+        "Its two end planes are forced to be identical",
+        "Every molecule with two double bonds is chiral",
+        "Its molecular formula changes in the mirror",
+        "Perpendicular terminal planes with different groups at each end create an axis of chirality"
+      ],
+      "answer": 3,
+      "explanation": "The allene geometry and distinct terminal substituents permit nonsuperimposable mirror images."
+    },
+    {
+      "question": "Why does propadiene lack that simple allene axial chirality?",
+      "options": [
+        "Each terminal carbon has two identical hydrogens",
+        "Its central carbon has no bonds",
+        "All of its carbons are tetrahedral",
+        "Every allene is achiral"
+      ],
+      "answer": 0,
+      "explanation": "Identical groups at the terminal sites remove the required end distinctions in the stated simple-allene comparison."
     }
   ]
 }

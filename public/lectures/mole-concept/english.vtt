@@ -1601,3 +1601,261 @@ Other reaction coefficients, recycle compositions or product recovery losses
 
 00:29:33.084 --> 00:29:34.764
 require expanded balances.
+
+00:29:35.544 --> 00:29:39.944
+A gas collected over water can contain both the intended gas and water vapor.
+
+00:29:40.804 --> 00:29:44.536
+In the ideal mixture comparison, total gas pressure is the sum of their
+
+00:29:44.536 --> 00:29:44.904
+partial
+
+00:29:44.904 --> 00:29:45.304
+pressures.
+
+00:29:46.284 --> 00:29:50.704
+Use the actual gas pressure supplied for the sample, not an atmospheric value
+
+00:29:50.704 --> 00:29:53.344
+that might require a separate liquid level correction.
+
+00:29:54.024 --> 00:29:58.184
+In a stipulated example at one common temperature, total pressure is one
+
+00:29:58.184 --> 00:30:03.180
+atmosphere, water vapor partial pressure is zero point zero three zero
+
+00:30:03.180 --> 00:30:07.564
+atmosphere, gas volume is two point four five liters, and the supplied R T
+
+00:30:07.564 --> 00:30:11.964
+product is twenty four point five liter atmospheres per mole.
+
+00:30:11.964 --> 00:30:16.264
+Dry gas partial pressure is zero point nine seven zero atmosphere.
+
+00:30:16.264 --> 00:30:20.233
+Its amount is therefore zero point nine seven times two point four five
+
+00:30:20.233 --> 00:30:20.624
+divided
+
+00:30:20.624 --> 00:30:25.624
+by twenty four point five, or zero point zero nine seven zero mole.
+
+00:30:25.624 --> 00:30:29.564
+Using total pressure would instead count zero point one zero zero mole of the
+
+00:30:29.564 --> 00:30:30.324
+whole gas mixture.
+
+00:30:31.164 --> 00:30:35.124
+This correction assumes the collected gas does not react significantly with
+
+00:30:35.124 --> 00:30:37.444
+water and that the given vapor pressure applies.
+
+00:30:38.284 --> 00:30:41.664
+Identify the gas species being counted before using a molar volume shortcut.
+
+00:30:42.696 --> 00:30:46.596
+A gas mixture's average molar mass depends on which fractions are supplied.
+
+00:30:47.456 --> 00:30:50.356
+Equal masses are not equal mole amounts when molar masses differ.
+
+00:30:51.176 --> 00:30:56.276
+Use rounded atomic molar masses four for helium and twenty for neon, in grams
+
+00:30:56.276 --> 00:30:56.656
+per mole.
+
+00:30:57.296 --> 00:31:01.945
+A mixture containing ten grams of each has two point five moles helium and
+
+00:31:01.945 --> 00:31:02.196
+zero
+
+00:31:02.196 --> 00:31:03.256
+point five mole neon.
+
+00:31:04.016 --> 00:31:08.916
+Total amount is three moles and total mass twenty grams, so mean molar mass is
+
+00:31:08.916 --> 00:31:12.476
+twenty thirds, about six point six seven grams per mole.
+
+00:31:13.196 --> 00:31:17.536
+Helium mole fraction is five sixths and neon mole fraction one sixth.
+
+00:31:18.496 --> 00:31:21.836
+Weighting the two molar masses by those mole fractions gives the same result.
+
+00:31:22.596 --> 00:31:26.716
+For mass fractions instead, calculate the reciprocal of the sum of each mass
+
+00:31:26.716 --> 00:31:29.176
+fraction divided by its species molar mass.
+
+00:31:30.216 --> 00:31:33.916
+Simply averaging four and twenty would give twelve, which belongs to equal
+
+00:31:33.916 --> 00:31:34.116
+mole
+
+00:31:34.116 --> 00:31:36.536
+amounts rather than the equal mass mixture here.
+
+00:31:37.296 --> 00:31:41.136
+These noble gases are monatomic, so the counted gas entities are atoms.
+
+00:31:42.196 --> 00:31:46.484
+Ideal gas density can then use this mean molar mass at a specified pressure
+
+00:31:46.484 --> 00:31:46.656
+and
+
+00:31:46.656 --> 00:31:46.876
+temperature.
+
+00:31:47.544 --> 00:31:51.968
+A combustion calculation must not silently place all carbon into carbon
+
+00:31:51.968 --> 00:31:52.404
+dioxide
+
+00:31:52.804 --> 00:31:55.144
+if carbon monoxide is also a stated product.
+
+00:31:56.264 --> 00:31:59.764
+Consider a supplied material balance in which one mole of methane is consumed
+
+00:31:59.764 --> 00:32:04.552
+completely, producing zero point seven five mole carbon dioxide, zero point
+
+00:32:04.552 --> 00:32:04.744
+two
+
+00:32:04.744 --> 00:32:08.908
+five mole carbon monoxide and two moles water, with no other carbon or
+
+00:32:08.908 --> 00:32:09.384
+hydrogen
+
+00:32:09.384 --> 00:32:09.844
+products.
+
+00:32:10.864 --> 00:32:14.544
+Carbon is conserved because the two carbon containing products sum to one mole
+
+00:32:14.544 --> 00:32:15.384
+of carbon atoms.
+
+00:32:16.144 --> 00:32:20.084
+Hydrogen is conserved because two waters contain four moles hydrogen atoms.
+
+00:32:21.224 --> 00:32:25.036
+Oxygen atoms in the products total twice zero point seven five, plus zero
+
+00:32:25.036 --> 00:32:25.297
+point
+
+00:32:25.297 --> 00:32:28.684
+two five, plus two, giving three point seven five moles.
+
+00:32:29.364 --> 00:32:33.273
+The oxygen molecule requirement is half that amount, one point eight seven
+
+00:32:33.273 --> 00:32:33.484
+five
+
+00:32:33.484 --> 00:32:33.784
+moles.
+
+00:32:34.724 --> 00:32:38.529
+Using rounded molar masses gives sixteen grams methane plus sixty grams
+
+00:32:38.529 --> 00:32:38.904
+oxygen,
+
+00:32:39.364 --> 00:32:43.764
+matching thirty three grams carbon dioxide, seven grams carbon monoxide and
+
+00:32:43.764 --> 00:32:44.844
+thirty six grams water.
+
+00:32:45.444 --> 00:32:49.384
+Complete methane consumption is not the same as complete oxidation of every
+
+00:32:49.384 --> 00:32:50.584
+carbon to carbon dioxide.
+
+00:32:51.524 --> 00:32:55.004
+Use the supplied products and check each element before applying a familiar
+
+00:32:55.004 --> 00:32:55.844
+combustion ratio.
+
+00:32:56.112 --> 00:33:00.472
+A steady recycle balance differs from counting one isolated reaction pass.
+
+00:33:01.352 --> 00:33:06.112
+Use a supporting ideal process with one to one conversion of A into B, no side
+
+00:33:06.112 --> 00:33:11.212
+reaction, complete separation of B, perfect recycle of unreacted A and no
+
+00:33:11.212 --> 00:33:11.552
+purge.
+
+00:33:12.252 --> 00:33:13.792
+All rates are in moles per hour.
+
+00:33:14.812 --> 00:33:18.812
+Fresh A enters at one hundred, while the reactor converts forty percent of its
+
+00:33:18.812 --> 00:33:20.192
+own A feed each pass.
+
+00:33:20.972 --> 00:33:23.072
+Let total reactor A feed be F.
+
+00:33:23.712 --> 00:33:28.292
+The unconverted sixty percent returns, so the mixer balance is F equals one
+
+00:33:28.292 --> 00:33:30.212
+hundred plus zero point six F.
+
+00:33:31.052 --> 00:33:35.472
+Solving gives reactor feed two hundred fifty, recycle one hundred fifty and
+
+00:33:35.472 --> 00:33:37.412
+product B one hundred.
+
+00:33:37.412 --> 00:33:41.572
+Single pass conversion is forty percent, but overall fresh feed conversion is
+
+00:33:41.572 --> 00:33:45.952
+one hundred percent in this ideal steady state because no A leaves the process
+
+00:33:45.952 --> 00:33:46.292
+boundary.
+
+00:33:47.112 --> 00:33:51.432
+Recycle does not create new atoms; it counts the same unreacted material on
+
+00:33:51.432 --> 00:33:52.612
+repeated internal passages.
+
+00:33:53.572 --> 00:33:57.252
+Losses, purge, incomplete separation or side reactions change the overall
+
+00:33:57.252 --> 00:33:57.672
+balance.
+
+00:33:58.752 --> 00:34:02.612
+Distinguish the process boundary from the reactor boundary before assigning a
+
+00:34:02.612 --> 00:34:03.092
+conversion denominator.

@@ -16,7 +16,7 @@ Questions are original practice, not represented as official PYQs.
 
 | Unit | Recorded class | Chapters | Written sections | Worked examples | Class MCQs / Written MCQs |
 | --- | --- | --- | --- | --- | --- |
-| 1 | [Mole Concept](/jee/classes/mole-concept) | 25 | 22 | 15 | 40 / 40 |
+| 1 | [Mole Concept](/jee/classes/mole-concept) | 29 | 26 | 18 | 48 / 48 |
 | 2 | [Atomic Structure](/jee/classes/atomic-structure) | 29 | 26 | 18 | 50 / 50 |
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 29 | 28 | 18 | 50 / 50 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 31 | 33 | 21 | 50 / 50 |
@@ -29,7 +29,7 @@ Questions are original practice, not represented as official PYQs.
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 31 | 29 | 18 | 50 / 50 |
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 26 | 29 | 22 | 50 / 50 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 29 | 29 | 18 | 48 / 48 |
-| 14 | [Organic Principles](/jee/classes/organic-principles) | 25 | 28 | 20 | 44 / 44 |
+| 14 | [Organic Principles](/jee/classes/organic-principles) | 29 | 32 | 23 | 52 / 52 |
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 29 | 29 | 18 | 48 / 48 |
 | 16 | [Organic Halogens](/jee/classes/organic-halogens) | 29 | 29 | 18 | 48 / 48 |
 | 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 35 | 33 | 21 | 56 / 56 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-P-Block adds selected complete phosphorus-halide hydrolysis comparisons, sulfur dioxide and peroxide redox roles, and iodate–iodide limiting-reagent balances. A peroxide diagram distinguishes electron acceptance from donation.
+Mole Concept adds wet-gas corrections, equal-mass gas-mixture averaging, incomplete-combustion atom balances and a supporting ideal steady recycle model. The flow diagram distinguishes external fresh feed from repeated internal passage.
 
-D/F-Block adds the acidity dependence of a specified permanganate half reaction, a dichromate back-titration ledger, a supporting corrected Curie mixture and a Beer–Lambert concentration model. The magnetic diagram averages squared moments under explicit ideal assumptions.
+Organic Principles adds neighboring C–H inventories, chair flips, substituted-chair face ledgers and supporting allene axial chirality. The chair orientation diagram preserves up/down labels while axial and equatorial positions exchange.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax and NCERT compound comparisons, CCEA iodate stoichiometry, university Curie-law teaching and David Harvey’s Beer-law calibration discussion. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference OpenStax gas stoichiometry and organic structure, LearnChemE recycle teaching and Rutgers allene stereochemistry. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks
