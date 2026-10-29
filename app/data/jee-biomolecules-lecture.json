@@ -97,6 +97,18 @@
     {
       "title": "UC San Diego: phosphate transfer and RNA cleavage",
       "url": "https://chemistry.ucsd.edu/undergraduate/student-resources/CHEM40-Chapter09-UCSD-ED-23-24.pdf"
+    },
+    {
+      "title": "OpenStax: protein structure and alpha-helix contacts",
+      "url": "https://openstax.org/books/organic-chemistry/pages/26-9-protein-structure"
+    },
+    {
+      "title": "OpenStax: monosaccharide reactions and glycosides",
+      "url": "https://openstax.org/books/organic-chemistry/pages/25-6-reactions-of-monosaccharides"
+    },
+    {
+      "title": "Schaller: mathematics and assumptions of enzyme kinetics",
+      "url": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Book%3A_Structure_and_Reactivity_in_Organic_Biological_and_Inorganic_Chemistry_(Schaller)/IV%3A__Reactivity_in_Organic_Biological_and_Inorganic_Chemistry_2/02%3A_Mathematical_Tools_in_Reaction_Kinetics/2.06%3A_Characterization-__The_Mathematics_Behind_Enzyme_Kinetics"
     }
   ],
   "chapters": [
@@ -1114,6 +1126,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "L and D labels do not directly assign R and S to amino acids",
+      "formula": "L-alanine:S; L-cysteine:R at the alpha carbon; glycine has two alpha H and is achiral",
+      "script": "Relative configuration and sequence rule configuration are different labels. In the standard amino acid Fischer comparison, place the carboxyl group at the top, the side chain at the bottom and the amino group on the left to describe the usual L reference arrangement. L alanine has the S configuration at its alpha carbon. L cysteine instead has the R configuration there, because the sulfur containing side chain changes the priority order relative to the carboxyl group. This is not inversion of the L reference arrangement; it is a different sequence rule ranking of attached groups. Nitrogen has higher first atom priority than carbon and hydrogen, while ties between the two carbon groups are compared one layer farther out. Sulfur outranks oxygen in that later comparison for cysteine. Glycine has two identical alpha hydrogens, so it does not possess that alpha stereocenter at all. The L label also does not directly specify a positive or negative optical rotation. Apply the appropriate definition rather than treating L, S and levorotatory as interchangeable words.",
+      "points": [
+        "L reference is relative · Alanine alpha:S · Cysteine alpha:R",
+        "Cysteine CH2SH vsCOOH · S outranks O in tie-break · Same L arrangement,new priorities",
+        "Glycine alpha has2 H · No alpha stereocentre · L/D≠rotation sign"
+      ],
+      "board": {
+        "heading": "Relative labels and priority labels",
+        "columns": [
+          "Given / structure",
+          "Count / result",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "L reference is relative",
+            "Alanine alpha:S",
+            "Cysteine alpha:R"
+          ],
+          [
+            "Cysteine CH2SH vsCOOH",
+            "S outranks O in tie-break",
+            "Same L arrangement,new priorities"
+          ],
+          [
+            "Glycine alpha has2 H",
+            "No alpha stereocentre",
+            "L/D≠rotation sign"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "An ideal alpha helix has a different bond count from its peptide backbone",
+      "formula": "Ideal fully helical n-residue segment:peptide bonds n−1; internal i→i+4 H bonds max(n−4,0)",
+      "script": "A peptide bond and a secondary structure hydrogen bond are different connections. In the ideal alpha helix pattern, a backbone carbonyl oxygen at residue i accepts a hydrogen bond from a backbone nitrogen hydrogen group four residues later, at i plus four. This is an intrachain folding interaction, not formation of another peptide bond or loss of another water molecule. For a stipulated fully helical segment of twenty residues with every required donor and acceptor available, the allowed internal pairs run from one to five through sixteen to twenty. There are sixteen such hydrogen bonds in that ideal count. The continuous unbranched peptide backbone still contains nineteen peptide bonds between twenty residues. Real chain ends, capping groups, proline residues and nonhelical regions can alter the hydrogen bonding pattern, so the simple count must not be applied indiscriminately to every protein. Beta sheet hydrogen bonds can connect different segments of one chain or different chains and need their own geometry. State the model, count the pair endpoints, and keep covalent sequence bonds separate from folding contacts.",
+      "points": [
+        "20 residues;linear chain · Peptide bonds20−1=19 · Covalent backbone links",
+        "Ideal alpha pattern:i→i+4 · Pairs1→5 through16→20 · 16 internal H bonds",
+        "All donors/acceptors available · No caps or irregularity counted · Real proteins need actual geometry"
+      ],
+      "board": {
+        "heading": "Sequence bonds versus helix contacts",
+        "columns": [
+          "Given / structure",
+          "Count / result",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "20 residues;linear chain",
+            "Peptide bonds20−1=19",
+            "Covalent backbone links"
+          ],
+          [
+            "Ideal alpha pattern:i→i+4",
+            "Pairs1→5 through16→20",
+            "16 internal H bonds"
+          ],
+          [
+            "All donors/acceptors available",
+            "No caps or irregularity counted",
+            "Real proteins need actual geometry"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A methyl glucoside keeps its anomeric acetal locked until hydrolysis",
+      "formula": "Glucose cyclic hemiacetal→methyl glucoside acetal; four free OH remain; no ordinary mutarotation while intact",
+      "script": "A free anomeric hemiacetal can open and close, whereas converting it to an acetal changes the reaction options. In a selected glucose comparison, replacing the anomeric hydroxyl by a methoxy group gives a methyl glucoside. The anomeric carbon is then bonded to the ring oxygen and the methoxy oxygen as an acetal. Four other free hydroxyl groups remain on the glucose framework. While this acetal stays intact, ordinary ring opening to a free aldehyde and the usual mutarotation pathway are blocked, so the alpha and beta methyl glucosides are distinct configurations rather than the ordinary aqueous glucose equilibrium pair. Suitable hydrolysis can restore glucose and methanol, after which the glucose can undergo its usual anomer equilibration. The net formation ledger is glucose plus methanol minus water, giving formula C seven H fourteen O six and rounded molar mass one hundred ninety four. This does not mean every glycosidic bond in every larger carbohydrate removes all reducing behavior; a separate free anomeric center may remain elsewhere. Check the actual anomeric connection before assigning a test result.",
+      "points": [
+        "Free glucose:hemiacetal · Methyl glucoside:acetal · Anomeric OH becomesOMe",
+        "Intact acetal:4 free OH · Ordinary opening blocked · No usual mutarotation",
+        "C6H12O6+CH4O−H2O · C7H14O6;M≈194 · Hydrolysis restores glucose"
+      ],
+      "board": {
+        "heading": "Check the anomeric connection",
+        "columns": [
+          "Given / structure",
+          "Count / result",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "Free glucose:hemiacetal",
+            "Methyl glucoside:acetal",
+            "Anomeric OH becomesOMe"
+          ],
+          [
+            "Intact acetal:4 free OH",
+            "Ordinary opening blocked",
+            "No usual mutarotation"
+          ],
+          [
+            "C6H12O6+CH4O−H2O",
+            "C7H14O6;M≈194",
+            "Hydrolysis restores glucose"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting enzyme saturation makes rate nonlinear in substrate",
+      "formula": "Stipulated initial-rate model:v=Vmax[S]/(Km+[S]); at[S]=Km,v=Vmax/2",
+      "script": "A catalyst can become nearly saturated with substrate without being consumed by the reaction. In a supporting initial rate model for a suitable simple enzyme system, rate equals maximum rate times substrate concentration divided by K m plus substrate concentration. Hold enzyme amount and conditions fixed, and use supplied K m two millimolar with maximum rate one hundred micromolar per minute. At substrate two millimolar, rate is fifty micromolar per minute. At eight millimolar, it is eighty, so quadrupling substrate gives only a one point six fold rate increase in this comparison. At very high substrate the rate approaches the maximum rather than increasing without bound. K m is the substrate concentration giving half maximum rate in this model; it must not automatically be equated to a binding dissociation constant for every mechanism. The equation is a stipulated supporting approximation, not a claim that all enzymes follow one simple law. It does not change the reaction equilibrium constant, and an initial rate curve alone does not establish the final equilibrium composition.",
+      "points": [
+        "Given Km=2 mM;Vmax=100 · [S]=2 mM→v50 · Rate units:µM/min",
+        "[S]=8 mM→v80 · 4×substrate gives1.6×rate · Fixed enzyme and conditions",
+        "At[S]=Km:v=Vmax/2 · Large[S]:v approachesVmax · Supporting initial-rate model"
+      ],
+      "board": {
+        "heading": "Saturation is not catalyst consumption",
+        "columns": [
+          "Given / structure",
+          "Count / result",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "Given Km=2 mM;Vmax=100",
+            "[S]=2 mM→v50",
+            "Rate units:µM/min"
+          ],
+          [
+            "[S]=8 mM→v80",
+            "4×substrate gives1.6×rate",
+            "Fixed enzyme and conditions"
+          ],
+          [
+            "At[S]=Km:v=Vmax/2",
+            "Large[S]:v approachesVmax",
+            "Supporting initial-rate model"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1644,6 +1796,94 @@
       ],
       "answer": 1,
       "explanation": "One internal cut splits the covalent chain into two pieces while preserving the total nucleotide-residue inventory."
+    },
+    {
+      "question": "Which comparison correctly separates L/D from R/S?",
+      "options": [
+        "L always means S",
+        "L-alanine is S but L-cysteine is R at the alpha carbon",
+        "L always means negative optical rotation",
+        "Glycine has an L alpha stereocentre"
+      ],
+      "answer": 1,
+      "explanation": "The reference arrangement and CIP priority assignment are different; sulfur changes the side-chain tie-break in cysteine."
+    },
+    {
+      "question": "Why does glycine have no ordinary alpha stereocentre?",
+      "options": [
+        "It contains no carbon",
+        "Its amino group is absent",
+        "Its alpha carbon has two identical hydrogens",
+        "All amino acids are achiral"
+      ],
+      "answer": 2,
+      "explanation": "Two identical substituents prevent that tetrahedral carbon from being stereogenic."
+    },
+    {
+      "question": "In the stipulated ideal20-residue fully alpha-helical segment,peptide bonds and internal i→i+4 H bonds are respectively:",
+      "options": [
+        "20 and20",
+        "16 and19",
+        "19 and20",
+        "19 and16"
+      ],
+      "answer": 3,
+      "explanation": "A linear chain has20−1 peptide links. The ideal internal helix pairs have starting positions1 through16."
+    },
+    {
+      "question": "The acceptor in that ideal alpha helix i→i+4 pattern is:",
+      "options": [
+        "Backbone carbonyl oxygen at residue i",
+        "An extra peptide bond formed at every contact",
+        "A newly formed disulfide at every contact",
+        "Always a side-chain methyl group"
+      ],
+      "answer": 0,
+      "explanation": "The carbonyl oxygen accepts an H bond from an N–H donor four residues later; no new covalent peptide link is made."
+    },
+    {
+      "question": "An intact methyl glucoside has how many free hydroxyl groups on the glucose framework?",
+      "options": [
+        "5",
+        "4",
+        "3",
+        "0"
+      ],
+      "answer": 1,
+      "explanation": "The anomeric hydroxyl is replaced by OMe while the four other glucose hydroxyls remain free."
+    },
+    {
+      "question": "Why does an intact methyl glucoside not show ordinary glucose mutarotation?",
+      "options": [
+        "It has no oxygen atoms",
+        "Its carbon skeleton disappears",
+        "The anomeric acetal blocks the ordinary ring-opening pathway",
+        "Its alpha carbon must become a ketone immediately"
+      ],
+      "answer": 2,
+      "explanation": "Mutarotation through free glucose ring opening requires the hemiacetal connection; hydrolysis can restore that connection."
+    },
+    {
+      "question": "For the supplied saturation model,Vmax100 µM/min,Km2 mM and[S]=8 mM,the initial rate is:",
+      "options": [
+        "50 µM/min",
+        "400 µM/min",
+        "100 µM/min",
+        "80 µM/min"
+      ],
+      "answer": 3,
+      "explanation": "v=100×8/(2+8)=80 µM/min with enzyme amount and conditions fixed."
+    },
+    {
+      "question": "When[S]=Km in that stipulated model,v equals:",
+      "options": [
+        "Vmax/2",
+        "2Vmax",
+        "Zero",
+        "Vmax at every concentration"
+      ],
+      "answer": 0,
+      "explanation": "The denominator is2Km and the numerator VmaxKm,so the rate is half maximum; this does not specify a new equilibrium constant."
     }
   ]
 }

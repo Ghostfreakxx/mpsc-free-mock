@@ -30,18 +30,18 @@ Questions are original practice, not represented as official PYQs.
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 30 | 33 | 25 | 58 / 58 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 29 | 29 | 18 | 48 / 48 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 29 | 32 | 23 | 52 / 52 |
-| 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 29 | 29 | 18 | 48 / 48 |
+| 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 33 | 33 | 21 | 56 / 56 |
 | 16 | [Organic Halogens](/jee/classes/organic-halogens) | 29 | 29 | 18 | 48 / 48 |
 | 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 35 | 33 | 21 | 56 / 56 |
 | 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 29 | 29 | 18 | 48 / 48 |
-| 19 | [Biomolecules](/jee/classes/biomolecules) | 29 | 29 | 18 | 48 / 48 |
+| 19 | [Biomolecules](/jee/classes/biomolecules) | 33 | 33 | 21 | 56 / 56 |
 | 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 29 | 29 | 18 | 48 / 48 |
 
 ## Latest expansion
 
-Periodic Trends adds ion-configuration identity, six-coordinate spin-specific FeII radius comparisons, separate amphoteric-hydroxide endpoints and period-block capacities. The radius diagram keeps the charge and coordination context explicit.
+Hydrocarbons adds Friedel–Crafts carbon-skeleton selection, repeat-substitution limits, xylene site symmetry and a stated benzene hydrogenation benchmark.
 
-Coordination adds square-planar trans-pair counting, an octahedral d6 spin and pairing ledger, selected carbonyl donation and a supporting18-electron comparison with a16-electron counterexample. Diagrams show distinct planar arrangements and both d6 fillings.
+Biomolecules adds L versus CIP configuration, ideal alpha-helix contact counts, methyl glucoside and supporting enzyme saturation. Diagrams show site equivalence, Fischer priorities and the supplied saturation curve.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax configurations and coordination theory, IUCr spin-specific radius analysis, NCERT isomer comparisons and a National Science Review carbonyl discussion. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference OpenStax aromatic reactions, benzene stability, amino acids, protein structure and glycosides, plus Schaller enzyme kinetics. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

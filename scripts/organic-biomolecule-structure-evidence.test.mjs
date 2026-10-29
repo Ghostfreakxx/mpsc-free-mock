@@ -20,7 +20,7 @@ test('nitro reduction and supporting ammonium elimination conserve electrons and
  assert.deepEqual({C:5,H:15,N:1,O:1},{C:2+3,H:4+9+2,N:1,O:1});
 });
 test('sugar epimers change one numbered centre rather than every stereocentre',()=>{
- assert.deepEqual(read('biomolecules').quiz.slice(32).map(q=>q.answer),[2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1]);
+ assert.deepEqual(read('biomolecules').quiz.slice(32).map(q=>q.answer),[2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,1,2,3,0,1,2,3,0]);
  const glucose='RLRR',mannose='LLRR',galactose='RLLR';
  const differences=(a,b)=>[...a].flatMap((s,i)=>s===b[i]?[]:[i+2]);
  assert.deepEqual(differences(glucose,mannose),[2]);assert.deepEqual(differences(glucose,galactose),[4]);assert.deepEqual(differences(mannose,galactose),[2,4]);

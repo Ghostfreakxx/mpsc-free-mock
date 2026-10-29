@@ -1223,7 +1223,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "hydrocarbons", subject: "Chemistry", unit: 15, number: "C12", title: hydrocarbons.title,
-    description: "Twenty-nine narrated chapters on radical product estimates, syn and anti stereochemistry, cyclic alkene cleavage, rearranged addition, combustion balances and aromatic reactions.",
+    description: "Thirty-three narrated chapters on hydrocarbon reactions, Friedel–Crafts skeleton selection and limits, xylene site symmetry and a stated benzene hydrogenation benchmark.",
     scope: "Recorded Unit 15 foundation and worked applications with original practice. Further preparation routes, polymerization mechanisms and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.hydrocarbons.lecture.v1",
     audio: "/lectures/hydrocarbons/narration-marin.mp3",
@@ -1263,7 +1263,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "biomolecules", subject: "Chemistry", unit: 19, number: "C16", title: biomolecules.title,
-    description: "Twenty-nine narrated chapters on biomolecules, glucose oxidation evidence, Fischer and epimer comparisons, disulfide versus peptide links, DNA connectivity and vitamin functions.",
+    description: "Thirty-three narrated chapters on biomolecules, L and CIP configuration, ideal helix contacts, methyl glucoside, supporting enzyme saturation and DNA connectivity.",
     scope: "Recorded Unit 19 foundation and worked applications with original practice. Full chair structures, advanced cyclic fructose comparisons and broader hormone examples remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.biomolecules.lecture.v1",
     audio: "/lectures/biomolecules/narration-marin.mp3",

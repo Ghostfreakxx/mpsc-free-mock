@@ -1898,3 +1898,246 @@ connected backbone pieces increases from one to two without creating or
 
 00:35:05.672 --> 00:35:07.032
 deleting nucleotide residues.
+
+00:35:07.320 --> 00:35:11.420
+Relative configuration and sequence rule configuration are different labels.
+
+00:35:12.160 --> 00:35:16.540
+In the standard amino acid Fischer comparison, place the carboxyl group at the
+
+00:35:16.540 --> 00:35:21.000
+top, the side chain at the bottom and the amino group on the left to describe
+
+00:35:21.000 --> 00:35:22.760
+the usual L reference arrangement.
+
+00:35:23.700 --> 00:35:26.400
+L alanine has the S configuration at its alpha carbon.
+
+00:35:27.060 --> 00:35:30.878
+L cysteine instead has the R configuration there, because the sulfur
+
+00:35:30.878 --> 00:35:31.440
+containing
+
+00:35:31.440 --> 00:35:35.200
+side chain changes the priority order relative to the carboxyl group.
+
+00:35:35.200 --> 00:35:39.280
+This is not inversion of the L reference arrangement; it is a different
+
+00:35:39.280 --> 00:35:41.140
+sequence rule ranking of attached groups.
+
+00:35:42.000 --> 00:35:45.940
+Nitrogen has higher first atom priority than carbon and hydrogen, while ties
+
+00:35:45.940 --> 00:35:48.960
+between the two carbon groups are compared one layer farther out.
+
+00:35:49.760 --> 00:35:52.620
+Sulfur outranks oxygen in that later comparison for cysteine.
+
+00:35:53.600 --> 00:35:57.500
+Glycine has two identical alpha hydrogens, so it does not possess that alpha
+
+00:35:57.500 --> 00:35:58.620
+stereocenter at all.
+
+00:35:59.160 --> 00:36:03.260
+The L label also does not directly specify a positive or negative optical
+
+00:36:03.260 --> 00:36:03.740
+rotation.
+
+00:36:04.360 --> 00:36:09.420
+Apply the appropriate definition rather than treating L, S and levorotatory as
+
+00:36:09.420 --> 00:36:10.360
+interchangeable words.
+
+00:36:10.584 --> 00:36:14.824
+A peptide bond and a secondary structure hydrogen bond are different
+
+00:36:14.824 --> 00:36:15.284
+connections.
+
+00:36:16.124 --> 00:36:21.064
+In the ideal alpha helix pattern, a backbone carbonyl oxygen at residue i
+
+00:36:21.064 --> 00:36:25.524
+accepts a hydrogen bond from a backbone nitrogen hydrogen group four residues
+
+00:36:25.524 --> 00:36:27.344
+later, at i plus four.
+
+00:36:27.964 --> 00:36:32.624
+This is an intrachain folding interaction, not formation of another peptide
+
+00:36:32.624 --> 00:36:34.904
+bond or loss of another water molecule.
+
+00:36:34.904 --> 00:36:40.164
+For a stipulated fully helical segment of twenty residues with every required
+
+00:36:40.164 --> 00:36:44.544
+donor and acceptor available, the allowed internal pairs run from one to five
+
+00:36:44.844 --> 00:36:46.824
+through sixteen to twenty.
+
+00:36:46.824 --> 00:36:49.824
+There are sixteen such hydrogen bonds in that ideal count.
+
+00:36:50.724 --> 00:36:54.924
+The continuous unbranched peptide backbone still contains nineteen peptide
+
+00:36:54.924 --> 00:36:56.384
+bonds between twenty residues.
+
+00:36:57.284 --> 00:37:02.184
+Real chain ends, capping groups, proline residues and nonhelical regions can
+
+00:37:02.184 --> 00:37:06.324
+alter the hydrogen bonding pattern, so the simple count must not be applied
+
+00:37:06.324 --> 00:37:08.024
+indiscriminately to every protein.
+
+00:37:09.044 --> 00:37:12.664
+Beta sheet hydrogen bonds can connect different segments of one chain or
+
+00:37:12.664 --> 00:37:15.024
+different chains and need their own geometry.
+
+00:37:15.964 --> 00:37:20.024
+State the model, count the pair endpoints, and keep covalent sequence bonds
+
+00:37:20.024 --> 00:37:21.704
+separate from folding contacts.
+
+00:37:22.944 --> 00:37:28.564
+A free anomeric hemiacetal can open and close, whereas converting it to an
+
+00:37:28.564 --> 00:37:30.624
+acetal changes the reaction options.
+
+00:37:31.544 --> 00:37:36.464
+In a selected glucose comparison, replacing the anomeric hydroxyl by a methoxy
+
+00:37:36.464 --> 00:37:39.084
+group gives a methyl glucoside.
+
+00:37:39.084 --> 00:37:43.702
+The anomeric carbon is then bonded to the ring oxygen and the methoxy oxygen
+
+00:37:43.702 --> 00:37:43.824
+as
+
+00:37:43.824 --> 00:37:44.384
+an acetal.
+
+00:37:45.244 --> 00:37:48.564
+Four other free hydroxyl groups remain on the glucose framework.
+
+00:37:48.564 --> 00:37:54.284
+While this acetal stays intact, ordinary ring opening to a free aldehyde and
+
+00:37:54.284 --> 00:37:58.904
+the usual mutarotation pathway are blocked, so the alpha and beta methyl
+
+00:37:58.904 --> 00:38:02.927
+glucosides are distinct configurations rather than the ordinary aqueous
+
+00:38:02.927 --> 00:38:03.324
+glucose
+
+00:38:03.324 --> 00:38:04.324
+equilibrium pair.
+
+00:38:05.504 --> 00:38:09.784
+Suitable hydrolysis can restore glucose and methanol, after which the glucose
+
+00:38:09.784 --> 00:38:12.284
+can undergo its usual anomer equilibration.
+
+00:38:12.834 --> 00:38:18.662
+The net formation ledger is glucose plus methanol minus water, giving formula
+
+00:38:18.662 --> 00:38:18.737
+C
+
+00:38:18.737 --> 00:38:23.784
+seven H fourteen O six and rounded molar mass one hundred ninety four.
+
+00:38:23.784 --> 00:38:28.164
+This does not mean every glycosidic bond in every larger carbohydrate removes
+
+00:38:28.164 --> 00:38:32.864
+all reducing behavior; a separate free anomeric center may remain elsewhere.
+
+00:38:34.004 --> 00:38:37.324
+Check the actual anomeric connection before assigning a test result.
+
+00:38:37.752 --> 00:38:42.858
+A catalyst can become nearly saturated with substrate without being consumed
+
+00:38:42.858 --> 00:38:42.992
+by
+
+00:38:42.992 --> 00:38:43.512
+the reaction.
+
+00:38:44.372 --> 00:38:48.812
+In a supporting initial rate model for a suitable simple enzyme system, rate
+
+00:38:48.812 --> 00:38:54.652
+equals maximum rate times substrate concentration divided by K m plus
+
+00:38:54.652 --> 00:38:55.712
+substrate concentration.
+
+00:38:56.912 --> 00:39:01.612
+Hold enzyme amount and conditions fixed, and use supplied K m two millimolar
+
+00:39:01.612 --> 00:39:04.632
+with maximum rate one hundred micromolar per minute.
+
+00:39:05.312 --> 00:39:09.272
+At substrate two millimolar, rate is fifty micromolar per minute.
+
+00:39:09.992 --> 00:39:14.872
+At eight millimolar, it is eighty, so quadrupling substrate gives only a one
+
+00:39:14.872 --> 00:39:17.112
+point six fold rate increase in this comparison.
+
+00:39:18.172 --> 00:39:22.452
+At very high substrate the rate approaches the maximum rather than increasing
+
+00:39:22.452 --> 00:39:23.172
+without bound.
+
+00:39:23.172 --> 00:39:28.772
+K m is the substrate concentration giving half maximum rate in this model; it
+
+00:39:28.772 --> 00:39:32.712
+must not automatically be equated to a binding dissociation constant for every
+
+00:39:32.712 --> 00:39:33.072
+mechanism.
+
+00:39:33.652 --> 00:39:38.452
+The equation is a stipulated supporting approximation, not a claim that all
+
+00:39:38.452 --> 00:39:40.072
+enzymes follow one simple law.
+
+00:39:40.932 --> 00:39:44.769
+It does not change the reaction equilibrium constant, and an initial rate
+
+00:39:44.769 --> 00:39:45.032
+curve
+
+00:39:45.032 --> 00:39:48.192
+alone does not establish the final equilibrium composition.

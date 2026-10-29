@@ -1,0 +1,21 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
+import {xyleneSiteClasses,aminoFischerPatterns,initialEnzymeRate,enzymeSaturationModel} from '../app/jee/classes/aromatic-biomolecule-patterns-data.ts';
+const read=id=>JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`)),h=read('hydrocarbons'),b=read('biomolecules');const answer=(l,i)=>l.quiz[i].options[l.quiz[i].answer];const near=(a,b)=>assert.ok(Math.abs(a-b)<1e-10);
+test('acyl route carbonyl carbon becomes the benzylic carbon without deleting the propyl chain',()=>{
+ const ring=6,side=[{name:'carbonyl',carbons:1},{name:'methylene',carbons:1},{name:'methyl',carbons:1}];assert.equal(ring+side.reduce((s,v)=>s+v.carbons,0),9);const after=side.map(s=>s.name==='carbonyl'?{...s,name:'methylene'}:s);assert.equal(after.reduce((s,v)=>s+v.carbons,0),3);assert.deepEqual(after.map(v=>v.name),['methylene','methylene','methyl']);assert.equal(answer(h,48),'PhCH2CH2CH3');assert.match(answer(h,49),/rearranged secondary electrophile/);assert.match(answer(h,50),/deactivates/);assert.match(answer(h,51),/repeat alkylation/);
+});
+test('independent ring-symmetry enumeration reproduces the xylene site classes',()=>{
+ const permutations=[];for(const sign of [1,-1])for(let shift=0;shift<6;shift++)permutations.push(Array.from({length:6},(_,i)=>(sign*i+shift+12)%6));
+ for(const pattern of xyleneSiteClasses){const methyl=new Set(pattern.methyl),valid=permutations.filter(p=>[...methyl].every(i=>methyl.has(p[i]))),available=Array.from({length:6},(_,i)=>i).filter(i=>!methyl.has(i));const orbits=[],seen=new Set();for(const i of available){if(seen.has(i))continue;const orbit=[...new Set(valid.map(p=>p[i]))].sort((a,b)=>a-b);orbit.forEach(v=>seen.add(v));orbits.push(orbit);}const key=sets=>sets.map(s=>[...s].sort((a,b)=>a-b).join(',')).sort();assert.deepEqual(key(orbits),key(pattern.classes));}assert.equal(answer(h,52),'2,3,1');assert.match(answer(h,53),/Equal product yields/);
+});
+test('hypothetical hydrogenation reference gives the signed initial-enthalpy difference',()=>{const benchmark=3*(-120),benzene=-208;assert.equal(benchmark,-360);assert.equal(benzene-benchmark,152);const final=0;assert.equal((final-benchmark)-(final-benzene),152);assert.equal(answer(h,54),'152 kJ/mol');assert.match(answer(h,55),/hypothetical additive benchmark/);});
+test('Fischer priority swap gives S alanine and R cysteine with H pointing toward the viewer',()=>{
+ const point={amino:[-1,0],top:[0,1],side:[0,-1]},cross=(a,b,c)=>(b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);const identify=(second,third)=>cross(point.amino,point[second],point[third])<0?'S':'R';assert.equal(identify('top','side'),'S');assert.equal(identify('side','top'),'R');assert.ok(16>8);assert.deepEqual(aminoFischerPatterns.map(a=>[a.carboxylPriority,a.sidePriority]),[[2,3],[3,2]]);assert.match(answer(b,48),/L-cysteine is R/);assert.match(answer(b,49),/two identical hydrogens/);
+});
+test('ideal alpha-helical contacts are explicit i to i+4 pairs rather than peptide links',()=>{const residues=20,pairs=Array.from({length:residues},(_,i)=>i+1).filter(i=>i+4<=residues).map(i=>[i,i+4]);assert.equal(pairs.length,16);assert.deepEqual(pairs[0],[1,5]);assert.deepEqual(pairs.at(-1),[16,20]);assert.equal(residues-1,19);assert.equal(answer(b,50),'19 and16');assert.match(answer(b,51),/carbonyl oxygen/);});
+test('methyl glucoside formation and hydrolysis conserve formula and retain four free hydroxyls',()=>{
+ const glucose=[6,12,6],methanol=[1,4,1],water=[0,2,1],product=glucose.map((v,i)=>v+methanol[i]-water[i]);assert.deepEqual(product,[7,14,6]);assert.equal(product[0]*12+product[1]+product[2]*16,194);assert.equal(5-1,4);assert.equal(answer(b,52),'4');assert.match(answer(b,53),/acetal blocks/);
+});
+test('enzyme saturation model gives half maximum and a nonlinear fourfold substrate response',()=>{
+ const m=enzymeSaturationModel;near(initialEnzymeRate(m.kmMillimolar),m.vmaxMicromolarPerMinute/2);near(initialEnzymeRate(8),80);near(initialEnzymeRate(8)/initialEnzymeRate(2),1.6);near(initialEnzymeRate(0),0);assert.ok(initialEnzymeRate(1e6)<m.vmaxMicromolarPerMinute);assert.ok(initialEnzymeRate(8)>initialEnzymeRate(2));assert.equal(answer(b,54),'80 µM/min');assert.equal(answer(b,55),'Vmax/2');
+});

@@ -85,6 +85,14 @@
     {
       "title": "OpenStax: carbocation rearrangements in electrophilic addition",
       "url": "https://openstax.org/books/organic-chemistry/pages/7-11-evidence-for-the-mechanism-of-electrophilic-additions-carbocation-rearrangements"
+    },
+    {
+      "title": "OpenStax: Friedel–Crafts alkylation and acylation",
+      "url": "https://openstax.org/books/organic-chemistry/pages/16-3-alkylation-and-acylation-of-aromatic-rings-the-friedel-crafts-reaction"
+    },
+    {
+      "title": "OpenStax: benzene structure and stability",
+      "url": "https://openstax.org/books/organic-chemistry/pages/15-2-structure-and-stability-of-benzene"
     }
   ],
   "chapters": [
@@ -1108,6 +1116,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "An acylation route can preserve a side-chain skeleton that direct alkylation rearranges",
+      "formula": "C6H5COCH2CH3 → C6H5CH2CH2CH3 by suitable carbonyl deoxygenation; all three side-chain carbons remain",
+      "script": "A desired alkylbenzene skeleton should be checked against the electrophile pathway, not inferred from the starting halide name alone. In the usual selected Friedel Crafts comparison, direct benzene alkylation with a normal propyl halide can favor rearranged isopropylbenzene because a more stable secondary carbocation like electrophile becomes accessible. This is not a guarantee of a single pure product for every condition. An alternative route introduces a propanoyl group by acylation, giving benzene bonded to carbonyl carbon, then methylene and methyl. Suitable carbonyl deoxygenation converts that carbonyl carbon to a methylene while retaining the three carbon side chain, producing normal propylbenzene. Both final alkylbenzene skeletons have nine total carbons, but their connectivity differs. The acylium type electrophile does not undergo the same ordinary alkyl carbocation rearrangement. Reagent compatibility still matters when removing the carbonyl, especially if other sensitive groups are present. This is a conceptual reaction map rather than a promise that any reducing agent removes oxygen. Follow the carbonyl carbon into the final benzylic carbon before naming the product.",
+      "points": [
+        "Direct propyl alkylation · Rearrangement can occur · Isopropyl product can predominate",
+        "Acyl route:PhCOCH2CH3 · Deoxygenate C=O suitably · PhCH2CH2CH3",
+        "Both final products have9 C · Connectivity differs · Carbonyl carbon is retained"
+      ],
+      "board": {
+        "heading": "Keep the side-chain carbon ledger",
+        "columns": [
+          "Given / structure",
+          "Count / result",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "Direct propyl alkylation",
+            "Rearrangement can occur",
+            "Isopropyl product can predominate"
+          ],
+          [
+            "Acyl route:PhCOCH2CH3",
+            "Deoxygenate C=O suitably",
+            "PhCH2CH2CH3"
+          ],
+          [
+            "Both final products have9 C",
+            "Connectivity differs",
+            "Carbonyl carbon is retained"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Ring activation changes the chance of repeated Friedel–Crafts substitution",
+      "formula": "Alkyl substitution usually activates; acyl substitution usually deactivates the ring in the ordinary comparison",
+      "script": "The first aromatic substitution changes the substrate that faces the next electrophile. An alkyl group generally donates electron density and activates a benzene ring toward further electrophilic substitution. A newly formed alkylbenzene can therefore react again, which helps explain why Friedel Crafts alkylation may give repeated substitution rather than cleanly stopping after one added group. An acyl group has a carbonyl attached to the ring and withdraws electron density in the usual comparison. The resulting acylbenzene is less reactive toward installation of a second acyl group under ordinary Friedel Crafts conditions. This suppresses repeat introduction of a carbonyl-containing substituent. This difference is about ring reactivity as well as the earlier distinction in skeletal rearrangement. Strongly deactivated substrates such as nitrobenzene do not normally undergo the standard Friedel Crafts reaction merely because an alkyl halide and a Lewis acid are named. Catalyst binding by other functional groups can add another limitation. Directing effects, activation and isolated yield are separate pieces of information. Do not infer an exact product percentage from the word activating, or assume the same reaction map applies to every substituted aromatic compound.",
+      "points": [
+        "Alkyl group on ring · Usually activates · Repeat alkylation possible",
+        "Acyl group on ring · Usually deactivates · Repeat acylation suppressed",
+        "Nitrobenzene strongly deactivated · Standard FC map restricted · No universal yield prediction"
+      ],
+      "board": {
+        "heading": "The first product has new reactivity",
+        "columns": [
+          "Given / structure",
+          "Count / result",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "Alkyl group on ring",
+            "Usually activates",
+            "Repeat alkylation possible"
+          ],
+          [
+            "Acyl group on ring",
+            "Usually deactivates",
+            "Repeat acylation suppressed"
+          ],
+          [
+            "Nitrobenzene strongly deactivated",
+            "Standard FC map restricted",
+            "No universal yield prediction"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Symmetry-distinct aromatic sites are not the same as equal product yields",
+      "formula": "Formal ring mononitration placements in o-,m-,p-xylene:2,3,1 constitutional patterns respectively",
+      "script": "Before applying directing preferences, identify which aromatic positions are constitutionally equivalent by symmetry. Consider formal ring mononitration of the three xylene isomers, replacing one remaining ring hydrogen with a nitro group while leaving the two identical methyl groups fixed as a substitution pattern. In ortho xylene, positions three and six are equivalent, while four and five form a second equivalent pair. There are two symmetry distinct constitutional placements. In meta xylene, position two is unique, positions four and six are equivalent, and position five is another unique site, giving three patterns. In para xylene, all four remaining ring positions are equivalent, giving one pattern. These are counts of distinct placements, not a statement that every placement is formed in an equal amount or is readily isolated under one chosen set of conditions. Electronic directing preferences and steric effects influence actual product proportions. Rotating or reflecting the same substituted ring drawing must not create a new constitutional product. State that side chain substitution and further nitration are excluded from this counting problem.",
+      "points": [
+        "o-Xylene:3/6 and4/5 · 2 site classes · Formal ring substitution only",
+        "m-Xylene:2;4/6;5 · 3 site classes · Direction affects proportions",
+        "p-Xylene:2/3/5/6 equivalent · 1 site class · Equivalent drawings are one product"
+      ],
+      "board": {
+        "heading": "Count distinct sites before yields",
+        "columns": [
+          "Given / structure",
+          "Count / result",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "o-Xylene:3/6 and4/5",
+            "2 site classes",
+            "Formal ring substitution only"
+          ],
+          [
+            "m-Xylene:2;4/6;5",
+            "3 site classes",
+            "Direction affects proportions"
+          ],
+          [
+            "p-Xylene:2/3/5/6 equivalent",
+            "1 site class",
+            "Equivalent drawings are one product"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A benzene hydrogenation benchmark is a model comparison with matched endpoints",
+      "formula": "Hypothetical localized-triene benchmark:3(−120)=−360 kJ/mol; benzene:−208; difference152 kJ/mol",
+      "script": "Hydrogenation data can illustrate aromatic stabilization only when the reference comparison is stated. Use an illustrative isolated double bond benchmark of minus one hundred twenty kilojoules per mole. Assign a hypothetical localized three double bond structure the additive estimate three times that value, or minus three hundred sixty, for hydrogenation to one mole of cyclohexane. Compare benzene hydrogenation to that same product state using minus two hundred eight kilojoules per mole. The difference is one hundred fifty two kilojoules per mole. Within this benchmark construction, benzene begins lower in enthalpy than the hypothetical localized reference, so it releases less heat on reaching the common endpoint. This is not a direct measurement of a freely existing localized cyclohexatriene, nor a universal bond energy that can be transferred unchanged to every aromatic molecule. Different bond environments and reference choices matter. The comparison also does not give a reaction rate or a Gibbs equilibrium constant. Count the three hydrogen molecules required by benzene and keep the product amount and phase matched before interpreting the enthalpy difference.",
+      "points": [
+        "Localized model:3×(−120) · Estimated ΔH=−360 · Same1 molcyclohexane endpoint",
+        "Benzene ΔH=−208 · Benchmark difference152 · Benzene lower in model H",
+        "Reference is hypothetical · Not a universal bond energy · No rate or K follows"
+      ],
+      "board": {
+        "heading": "State the hydrogenation reference",
+        "columns": [
+          "Given / structure",
+          "Count / result",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "Localized model:3×(−120)",
+            "Estimated ΔH=−360",
+            "Same1 molcyclohexane endpoint"
+          ],
+          [
+            "Benzene ΔH=−208",
+            "Benchmark difference152",
+            "Benzene lower in model H"
+          ],
+          [
+            "Reference is hypothetical",
+            "Not a universal bond energy",
+            "No rate or K follows"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1638,6 +1786,94 @@
       ],
       "answer": 3,
       "explanation": "After capture and product renumbering, the tertiary chloride is 2-chloro-2-methylbutane; direct unrearranged capture can compete."
+    },
+    {
+      "question": "Suitable deoxygenation of PhCOCH2CH3 retains the carbonyl carbon and gives:",
+      "options": [
+        "PhCH2CH2CH3",
+        "PhCH(CH3)2 necessarily",
+        "PhCH3 with two lost carbons",
+        "Only benzene"
+      ],
+      "answer": 0,
+      "explanation": "The carbonyl carbon becomes the benzylic methylene; the other two side-chain carbons stay attached in sequence."
+    },
+    {
+      "question": "Why can direct Friedel–Crafts alkylation with a normal propyl halide complicate a normal-propylbenzene target?",
+      "options": [
+        "Every aromatic ring is inert",
+        "A rearranged secondary electrophile can favor isopropyl connectivity",
+        "No carbon enters the ring",
+        "Acyl groups always rearrange first"
+      ],
+      "answer": 1,
+      "explanation": "The ordinary alkylation pathway can rearrange before capture, whereas the selected acylation/deoxygenation map retains the acyl skeleton."
+    },
+    {
+      "question": "Why is repeated ordinary Friedel–Crafts acylation usually suppressed after the first acyl group is installed?",
+      "options": [
+        "The ring gains unlimited electron density",
+        "The product loses all carbon atoms",
+        "The acyl group deactivates the ring",
+        "Every acylbenzene becomes an alkane"
+      ],
+      "answer": 2,
+      "explanation": "The carbonyl-containing substituent withdraws electron density and lowers reactivity toward the next ordinary acylation."
+    },
+    {
+      "question": "Which statement about an alkyl substituent is appropriate in this ordinary comparison?",
+      "options": [
+        "It guarantees one pure product",
+        "It permanently prevents another substitution",
+        "It must make every reaction faster by the same factor",
+        "It often activates the ring and can promote repeat alkylation"
+      ],
+      "answer": 3,
+      "explanation": "Activation is a comparative reactivity tendency; actual selectivity and yields still depend on substrate and conditions."
+    },
+    {
+      "question": "Formal symmetry-distinct ring mononitration placements for o-,m-,p-xylene are respectively:",
+      "options": [
+        "2,3,1",
+        "3,2,1",
+        "1,2,3",
+        "4,4,4"
+      ],
+      "answer": 0,
+      "explanation": "The equivalent-site classes are o:{3,6}/{4,5}; m:{2}/{4,6}/{5}; p:{2,3,5,6}."
+    },
+    {
+      "question": "Those symmetry counts alone do not establish:",
+      "options": [
+        "Which drawings are equivalent",
+        "Equal product yields or isolation of every formal placement",
+        "The number of ring carbons",
+        "That methyl groups are identical"
+      ],
+      "answer": 1,
+      "explanation": "Electronic directing effects and steric effects affect proportions separately from the constitutional equivalence count."
+    },
+    {
+      "question": "For the supplied localized benchmark−360 and benzene−208 kJ/mol to the same endpoint, the enthalpy difference is:",
+      "options": [
+        "−568 kJ/mol",
+        "208 kJ/mol",
+        "152 kJ/mol",
+        "360 kJ/mol"
+      ],
+      "answer": 2,
+      "explanation": "The magnitude of the difference is360−208=152 kJ/mol, with benzene lower in starting enthalpy in this model."
+    },
+    {
+      "question": "What limitation belongs to that hydrogenation comparison?",
+      "options": [
+        "It directly measures the rate constant",
+        "It proves every aromatic system has identical stabilization",
+        "It measures an isolated stable localized cyclohexatriene",
+        "Its reference is a hypothetical additive benchmark,not a universal transferable energy"
+      ],
+      "answer": 3,
+      "explanation": "The reference construction and matched endpoint are essential; the enthalpy difference is not a rate or universal bond-energy rule."
     }
   ]
 }
