@@ -24,10 +24,10 @@ Questions are original practice, not represented as official PYQs.
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 29 | 29 | 22 | 50 / 50 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 30 | 31 | 22 | 50 / 50 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 26 | 29 | 22 | 50 / 50 |
-| 9 | [Periodic Trends](/jee/classes/periodic-trends) | 25 | 23 | 15 | 40 / 40 |
+| 9 | [Periodic Trends](/jee/classes/periodic-trends) | 29 | 27 | 18 | 48 / 48 |
 | 10 | [P-Block](/jee/classes/p-block) | 31 | 29 | 18 | 50 / 50 |
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 31 | 29 | 18 | 50 / 50 |
-| 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 26 | 29 | 22 | 50 / 50 |
+| 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 30 | 33 | 25 | 58 / 58 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 29 | 29 | 18 | 48 / 48 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 29 | 32 | 23 | 52 / 52 |
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 29 | 29 | 18 | 48 / 48 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Mole Concept adds wet-gas corrections, equal-mass gas-mixture averaging, incomplete-combustion atom balances and a supporting ideal steady recycle model. The flow diagram distinguishes external fresh feed from repeated internal passage.
+Periodic Trends adds ion-configuration identity, six-coordinate spin-specific FeII radius comparisons, separate amphoteric-hydroxide endpoints and period-block capacities. The radius diagram keeps the charge and coordination context explicit.
 
-Organic Principles adds neighboring C–H inventories, chair flips, substituted-chair face ledgers and supporting allene axial chirality. The chair orientation diagram preserves up/down labels while axial and equatorial positions exchange.
+Coordination adds square-planar trans-pair counting, an octahedral d6 spin and pairing ledger, selected carbonyl donation and a supporting18-electron comparison with a16-electron counterexample. Diagrams show distinct planar arrangements and both d6 fillings.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax gas stoichiometry and organic structure, LearnChemE recycle teaching and Rutgers allene stereochemistry. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference OpenStax configurations and coordination theory, IUCr spin-specific radius analysis, NCERT isomer comparisons and a National Science Review carbonyl discussion. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

@@ -61,6 +61,22 @@
     {
       "title": "Jim Clark: lithium carbonate and Group 1 compounds",
       "url": "https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_%28Inorganic_Chemistry%29/Descriptive_Chemistry/Elements_Organized_by_Block/1_s-Block_Elements/Group__1%3A_The_Alkali_Metals/2Reactions_of_the_Group_1_Elements/Group_1_Compounds"
+    },
+    {
+      "title": "OpenStax: electronic configurations of atoms and ions",
+      "url": "https://openstax.org/books/chemistry-2e/pages/6-4-electronic-structure-of-atoms-electron-configurations"
+    },
+    {
+      "title": "OpenStax: periodicity and amphoteric comparisons",
+      "url": "https://openstax.org/books/chemistry-2e/pages/18-1-periodicity"
+    },
+    {
+      "title": "IUCr: spin-specific effective FeII radii and structural context",
+      "url": "https://journals.iucr.org/d/issues/2017/04/00/jm5022/index.html"
+    },
+    {
+      "title": "Shannon: effective ionic radii conventions",
+      "url": "https://doi.org/10.1107/S0567739476001551"
     }
   ],
   "chapters": [
@@ -940,6 +956,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "An ion configuration needs its charge before it identifies the element",
+      "formula": "Z=electron count+positive charge; [Ar]3d5 has23 electrons: Mn2+ and Fe3+ share that count",
+      "script": "An electron configuration identifies the electrons present, but an ion's charge is also needed to recover its element. Argon core plus five d electrons gives twenty three electrons. If the ion charge is plus two, atomic number is twenty five and the element is manganese. If the charge is plus three, atomic number is twenty six and the element is iron. Manganese two and iron three therefore share this electron count and configuration while belonging to different elements. Their periodic positions are assigned from the neutral elements, not from the largest principal shell still occupied in the ions. Neutral manganese and iron have fourth period positions even though these familiar ions have lost their four s electrons. In the usual introductory configuration accounting, remove the outer four s electrons before further three d removal. The ion configuration alone, without a charge or other constraint, cannot distinguish these two examples. Do not assign an element to period three merely because its ion's written configuration ends in three d. Atomic number defines the element; the charge describes its electron inventory.",
+      "points": [
+        "[Ar]3d5 counts23 e− · Charge+2 gives Z25 · Mn2+;neutral in period4",
+        "Same23 e−;charge+3 · Z26 identifies Fe3+ · Neutral Fe in period4",
+        "Ion loses outer4s first · Ion shell count≠period · Need charge to recover Z"
+      ],
+      "board": {
+        "heading": "Recover Z from the ion",
+        "columns": [
+          "Given / structure",
+          "Count / result",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "[Ar]3d5 counts23 e−",
+            "Charge+2 gives Z25",
+            "Mn2+;neutral in period4"
+          ],
+          [
+            "Same23 e−;charge+3",
+            "Z26 identifies Fe3+",
+            "Neutral Fe in period4"
+          ],
+          [
+            "Ion loses outer4s first",
+            "Ion shell count≠period",
+            "Need charge to recover Z"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "An ionic radius comparison must specify coordination and spin",
+      "formula": "Supplied six-coordinate FeII effective radii: high spin.78 Å; low spin.61 Å; difference.17 Å",
+      "script": "An ionic radius is a context dependent effective quantity, not one immutable sphere size for each element name. A useful comparison keeps the charge, coordination number and radius convention explicit. The reported six coordinate iron two effective radii used here are zero point seven eight angstrom for high spin and zero point six one angstrom for low spin. Both entries have iron in oxidation state plus two with a formal d six count, yet their spin and orbital occupations differ. In an octahedral description, high spin d six has two electrons in the higher e g set, while low spin has none there. The radius difference is zero point one seven angstrom in this supplied comparison. This does not mean charge has become irrelevant to size trends; it means charge alone is not enough to compare every coordination environment. Changing coordination number, bonding or the chosen radius convention can also change the assigned value. The entries are effective ionic radii extracted through structural conventions, not a direct measurement of a sharp electron cloud boundary. Compare matched definitions before making a universal size arrow.",
+      "points": [
+        "Six-coordinate FeII · High spin:.78 Å · Low spin:.61 Å",
+        "Same charge and d6 count · Different orbital occupation · Radius difference.17 Å",
+        "Specify radius convention · Spin and coordination matter · Not a sharp cloud boundary"
+      ],
+      "board": {
+        "heading": "Same ion, different spin context",
+        "columns": [
+          "Given / structure",
+          "Count / result",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "Six-coordinate FeII",
+            "High spin:.78 Å",
+            "Low spin:.61 Å"
+          ],
+          [
+            "Same charge and d6 count",
+            "Different orbital occupation",
+            "Radius difference.17 Å"
+          ],
+          [
+            "Specify radius convention",
+            "Spin and coordination matter",
+            "Not a sharp cloud boundary"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Amphoteric hydroxide has two different acid and base ledgers",
+      "formula": "Al(OH)3+3H+→Al3++3H2O; Al(OH)3+OH−→[Al(OH)4]− in the stipulated aqueous endpoints",
+      "script": "Amphoteric behavior means that a compound can respond to both acidic and basic conditions, but the two reaction ledgers need not have matching coefficients. For aluminum hydroxide in a selected aqueous comparison, the acidic endpoint uses three hydrogen ions per formula unit to form an aluminum three ion and three waters. The simplified aluminum ion notation leaves its hydration implicit. In the alkaline endpoint, one hydroxide ion combines with one aluminum hydroxide unit to form the tetrahydroxoaluminate ion with charge minus one. Aluminum remains at oxidation state plus three in both equations. These are acid base and complex formation comparisons, not reduction of aluminum metal. Separate samples containing zero point zero one zero mole of aluminum hydroxide would therefore require zero point zero three zero mole hydrogen ions for the stated acidic endpoint or zero point zero one zero mole hydroxide for the stated alkaline endpoint. Do not consume both reagent amounts in one imagined sample unless the problem specifies a combined sequence. Actual solubility and speciation depend on pH and conditions; the equations provide the stipulated stoichiometric endpoints.",
+      "points": [
+        "Acid:1 Al(OH)3 +3H+ · Al3+ +3H2O · 3 molH+ per molsolid",
+        "Base:1 Al(OH)3 +1OH− · [Al(OH)4]− · 1 molOH− per molsolid",
+        "Al stays+3 in both · Separate endpoint samples · Not aluminum-metal redox"
+      ],
+      "board": {
+        "heading": "Two amphoteric endpoints",
+        "columns": [
+          "Given / structure",
+          "Count / result",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "Acid:1 Al(OH)3 +3H+",
+            "Al3+ +3H2O",
+            "3 molH+ per molsolid"
+          ],
+          [
+            "Base:1 Al(OH)3 +1OH−",
+            "[Al(OH)4]−",
+            "1 molOH− per molsolid"
+          ],
+          [
+            "Al stays+3 in both",
+            "Separate endpoint samples",
+            "Not aluminum-metal redox"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Period lengths follow filling blocks rather than one shell capacity",
+      "formula": "Period3:3s+3p=2+6=8; period4:4s+3d+4p=18; period6:6s+4f+5d+6p=32",
+      "script": "A principal shell's maximum electron capacity is not automatically the number of elements in that period. The third principal shell can contain s, p and d orbitals, but the third period contains only the three s and three p filling blocks, giving two plus six, or eight elements. The three d block belongs to the fourth period's filling pattern. That period combines four s, three d and four p blocks, with capacities two, ten and six, totaling eighteen elements. The sixth period includes six s, four f, five d and six p blocks, totaling two plus fourteen plus ten plus six, or thirty two. These are block capacities based on the numbers of orbitals and two electron occupancy, not a claim that every neutral atom follows one perfectly rigid energy sequence without configuration exceptions. The first period is a separate two element s block case. Do not insert a complete d block into the third period simply because the shell capacity formula permits d orbitals at principal number three. Distinguish a shell capacity from a periodic filling ledger.",
+      "points": [
+        "Period3:3s and3p · 2+6=8 elements · 3d fills in period4",
+        "Period4:4s,3d,4p · 2+10+6=18 · Not2n² period length",
+        "Period6:6s,4f,5d,6p · 2+14+10+6=32 · Block ledger;exceptions"
+      ],
+      "board": {
+        "heading": "Shell capacity is not period length",
+        "columns": [
+          "Given / structure",
+          "Count / result",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "Period3:3s and3p",
+            "2+6=8 elements",
+            "3d fills in period4"
+          ],
+          [
+            "Period4:4s,3d,4p",
+            "2+10+6=18",
+            "Not2n² period length"
+          ],
+          [
+            "Period6:6s,4f,5d,6p",
+            "2+14+10+6=32",
+            "Block ledger;exceptions"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1382,6 +1538,94 @@
       ],
       "answer": 3,
       "explanation": "The gas activity raises the reaction quotient; the equilibrium response favours carbonate relative to the stated decomposition direction."
+    },
+    {
+      "question": "An ion has configuration[Ar]3d5 and charge+2. Its atomic number is:",
+      "options": [
+        "25",
+        "23",
+        "26",
+        "18"
+      ],
+      "answer": 0,
+      "explanation": "The ion contains18+5=23 electrons. Adding its positive charge2 gives Z=25, manganese."
+    },
+    {
+      "question": "Why does the same configuration not determine one element if charge is omitted?",
+      "options": [
+        "All elements have the same nucleus",
+        "Mn2+ and Fe3+ both have23 electrons",
+        "Configurations never count electrons",
+        "Every d5 ion belongs to period3"
+      ],
+      "answer": 1,
+      "explanation": "Different nuclear charges can leave the same electron inventory at different ionic charges; recover Z using charge."
+    },
+    {
+      "question": "The supplied six-coordinate FeII radii are.78 Å high spin and.61 Å low spin. Their difference is:",
+      "options": [
+        "1.39 Å",
+        ".07 Å",
+        ".17 Å",
+        ".61 Å"
+      ],
+      "answer": 2,
+      "explanation": "Subtract.61 from.78 to get.17 Å. Charge and coordination are matched but spin occupation differs."
+    },
+    {
+      "question": "Which context must be stated before treating an ionic radius as a universal trend datum?",
+      "options": [
+        "Only the element name",
+        "Only its atomic mass",
+        "The color of the table",
+        "Charge,coordination,spin and radius convention"
+      ],
+      "answer": 3,
+      "explanation": "Effective radii depend on these structural and electronic contexts; they are not unique sharp cloud boundaries."
+    },
+    {
+      "question": "For separate.010 mol Al(OH)3 samples, the stipulated acidic and alkaline endpoints require respectively:",
+      "options": [
+        ".030 molH+ and.010 molOH−",
+        ".010 molH+ and.030 molOH−",
+        ".030 mol of both",
+        "No reacting ions"
+      ],
+      "answer": 0,
+      "explanation": "The equations use3H+ per solid unit in acid but1OH− per unit to form[Al(OH)4]− in the stated base endpoint."
+    },
+    {
+      "question": "Aluminum oxidation state during those two endpoint reactions is:",
+      "options": [
+        "Reduced from+3 to0",
+        "Unchanged at+3 in both",
+        "Oxidized from+3 to+5",
+        "Always−1"
+      ],
+      "answer": 1,
+      "explanation": "The acid/base and complex formation ledgers keep aluminum+3; complex charge is not the metal oxidation state."
+    },
+    {
+      "question": "Why does period3 contain8 elements rather than the full n=3 shell capacity18?",
+      "options": [
+        "d orbitals cannot exist at n=3",
+        "Every period contains8 elements",
+        "Its filling blocks are3s and3p; the3d block occurs in period4",
+        "The exclusion principle fails"
+      ],
+      "answer": 2,
+      "explanation": "The third-period ledger is2+6; shell capacity and the order of periodic filling are different concepts."
+    },
+    {
+      "question": "The block-capacity sum for period6 is:",
+      "options": [
+        "2+6=8",
+        "2+10+6=18",
+        "2+14=16",
+        "2+14+10+6=32"
+      ],
+      "answer": 3,
+      "explanation": "6s,4f,5d and6p blocks contain2,14,10 and6 available electron places across the sixth period."
     }
   ]
 }

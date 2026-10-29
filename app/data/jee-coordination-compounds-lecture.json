@@ -41,6 +41,14 @@
     {
       "title": "David Harvey: complexation titrations and conditional formation constants",
       "url": "https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_by_David_Harvey/Analytical_Chemistry_2.1_(Harvey)/09%3A_Titrimetric_Methods/9.03%3A_Complexation_Titrations"
+    },
+    {
+      "title": "National Science Review: carbonyl donation and18-electron examples",
+      "url": "https://academic.oup.com/nsr/article/6/1/8/5173123"
+    },
+    {
+      "title": "NCERT via IIT Kanpur SATHEE: coordination isomer counts",
+      "url": "https://sathee.iitk.ac.in/sathee-icar/student-corner/ncert-books/class-12/nb-che-12/chem-12-unit-9-coordination-compounds/"
     }
   ],
   "chapters": [
@@ -832,6 +840,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Four distinct square-planar ligands give three trans-pair patterns",
+      "formula": "Square-planar MABCD with achiral point donors: A transB, A transC or A transD; three geometric isomers",
+      "script": "A geometric isomer count must identify the geometry and remove drawings related by whole molecule rotation. Consider an ideal square planar complex with four distinct achiral monodentate ligands A, B, C and D, with no additional ligand stereochemistry. Fix A at one position. Its opposite ligand can be B, C or D, giving three distinct trans pair patterns. Once the opposite pair is selected, exchanging the remaining two positions does not generate another independent geometric pattern. The count is therefore three rather than twenty four labeled drawings. Compare a square planar complex with two identical A ligands plus B and C. The two A ligands can be adjacent or opposite, giving two geometric isomers. An ideal square planar array of achiral point ligands also has its molecular plane as a mirror plane, so these patterns do not independently create an optical pair in this model. This conclusion must not be transferred to tetrahedral geometry or ligands with their own chirality. Count opposite relationships, then test which redrawings preserve them.",
+      "points": [
+        "Square-planar MABCD · A transB,transC ortransD · Three geometric patterns",
+        "Square-planar MA2BC · A pair adjacent or opposite · Two geometric patterns",
+        "Achiral point donors only · Plane is a mirror · No extra optical pair here"
+      ],
+      "board": {
+        "heading": "Fix A and choose its opposite",
+        "columns": [
+          "Given / structure",
+          "Count / result",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "Square-planar MABCD",
+            "A transB,transC ortransD",
+            "Three geometric patterns"
+          ],
+          [
+            "Square-planar MA2BC",
+            "A pair adjacent or opposite",
+            "Two geometric patterns"
+          ],
+          [
+            "Achiral point donors only",
+            "Plane is a mirror",
+            "No extra optical pair here"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Octahedral d6 changes two pairing costs when it goes low spin",
+      "formula": "HS:t2g4eg2, E=−.4Δo+P; LS:t2g6, E=−2.4Δo+3P; ELS−EHS=−2Δo+2P",
+      "script": "A d electron count does not by itself determine the spin state of an octahedral complex. For d six, the high spin arrangement places four electrons in the lower t two g set and two in the higher e g set. It has one paired orbital and four unpaired electrons. The low spin arrangement places all six electrons in t two g, producing three pairs and no unpaired electrons. Using a consistent bookkeeping convention with pairing cost P for each electron pair, high spin energy is minus zero point four times the splitting plus P. Low spin energy is minus two point four times the splitting plus three P. Subtracting gives low minus high equal to minus two splitting units plus two pairing costs. The simplified model therefore favors low spin when the splitting exceeds P. With supplied splitting two hundred and pairing cost one hundred fifty kilojoules per mole, low minus high is minus one hundred kilojoules per mole. This model comparison omits other energetic and thermal terms. State the pairing reference before comparing two energy expressions.",
+      "points": [
+        "High spin d6:t2g4eg2 · 1 pair;4 unpaired · EHS=−.4Δo+P",
+        "Low spin d6:t2g6 · 3 pairs;0 unpaired · ELS=−2.4Δo+3P",
+        "Low minus high=−2Δo+2P · Δo200;P150 kJ/mol · Difference−100 kJ/mol"
+      ],
+      "board": {
+        "heading": "A d6 ion has two spin ledgers",
+        "columns": [
+          "Given / structure",
+          "Count / result",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "High spin d6:t2g4eg2",
+            "1 pair;4 unpaired",
+            "EHS=−.4Δo+P"
+          ],
+          [
+            "Low spin d6:t2g6",
+            "3 pairs;0 unpaired",
+            "ELS=−2.4Δo+3P"
+          ],
+          [
+            "Low minus high=−2Δo+2P",
+            "Δo200;P150 kJ/mol",
+            "Difference−100 kJ/mol"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Carbonyl bonding combines sigma donation and pi back-donation",
+      "formula": "CO→M sigma donation; occupied metal orbital→CO pi-star back-donation in the selected transition-metal carbonyl model",
+      "script": "A carbonyl ligand is not described completely by a one way arrow from ligand to metal. In the usual transition metal carbonyl model, carbon monoxide donates through a carbon centered lone pair into a suitable metal orbital, making a sigma bonding contribution. Occupied metal orbitals can also donate electron density back into carbon monoxide pi star antibonding orbitals. These two contributions can reinforce the metal carbon interaction and are often called synergic bonding. Putting electron density into a carbon oxygen antibonding orbital weakens the internal carbon oxygen bond in this model. In suitable comparable transition metal carbonyl series, greater back donation is commonly associated with a lower carbon oxygen stretching frequency. This is not permission to assign every observed spectral shift from one orbital argument alone; charge, other ligands and the actual structure matter. The formal ligand charge of carbon monoxide remains zero in the ordinary oxidation state ledger even though electron density is shared. Distinguish a formal charge assignment from a claim that no bonding electron density has moved. This chapter is a selected bonding comparison, not a universal description of every metal carbon interaction.",
+      "points": [
+        "CO→metal · Carbon lone-pair donation · Sigma contribution",
+        "Metal→CO pi-star · Into CO pi-star · C–O weakens in model",
+        "CO formal ligand charge0 · Density still shared · Shifts need context"
+      ],
+      "board": {
+        "heading": "Two directions of carbonyl bonding",
+        "columns": [
+          "Given / structure",
+          "Count / result",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "CO→metal",
+            "Carbon lone-pair donation",
+            "Sigma contribution"
+          ],
+          [
+            "Metal→CO pi-star",
+            "Into CO pi-star",
+            "C–O weakens in model"
+          ],
+          [
+            "CO formal ligand charge0",
+            "Density still shared",
+            "Shifts need context"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting 18-electron counting is useful but not a universal stability test",
+      "formula": "Ionic count: Cr(CO)6:d6+12=18; Ni(CO)4:d10+8=18; [PtCl4]2−:d8+8=16",
+      "script": "Electron counting in a coordination complex includes both the metal's formal d electrons and the ligand donated electrons in the chosen convention. In a supporting ionic counting comparison, carbon monoxide is a neutral two electron donor. Neutral chromium hexacarbonyl has chromium oxidation state zero and a formal d six count; six carbonyl ligands supply twelve more electrons, giving eighteen. Nickel tetracarbonyl similarly has nickel zero with d ten, plus eight donated electrons from four ligands, again eighteen. This total is not an eighteen electron d subshell: the ligand contribution is included in a valence bonding count. Nor does an eighteen electron rule establish every complex's geometry or stability. Tetrachloroplatinate two minus provides a counterexample to an absolute eighteen electron requirement. Four chloride ligands assign platinum plus two and formal d eight. In the same ionic counting convention, four two electron chloride donors add eight, giving sixteen. Such square planar d eight complexes can be stable. Keep the counting convention, oxidation state and coordination environment explicit before using an electron total as a useful organizing pattern.",
+      "points": [
+        "Cr(CO)6:Cr0,d6 · 6 neutralCO donate12 · Total18 valence e−",
+        "Ni(CO)4:Ni0,d10 · 4 neutralCO donate8 · 18 total;not18 d e−",
+        "[PtCl4]2−:PtII,d8 · 4Cl− donate8 (ionic) · Stable16e counterexample"
+      ],
+      "board": {
+        "heading": "18 electrons is a pattern, not a ban",
+        "columns": [
+          "Given / structure",
+          "Count / result",
+          "Meaning / limit"
+        ],
+        "rows": [
+          [
+            "Cr(CO)6:Cr0,d6",
+            "6 neutralCO donate12",
+            "Total18 valence e−"
+          ],
+          [
+            "Ni(CO)4:Ni0,d10",
+            "4 neutralCO donate8",
+            "18 total;not18 d e−"
+          ],
+          [
+            "[PtCl4]2−:PtII,d8",
+            "4Cl− donate8 (ionic)",
+            "Stable16e counterexample"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1384,6 +1532,94 @@
       ],
       "answer": 0,
       "explanation": "Alpha converts the uncomplexed ligand pool CU to [Y4−]. Total added ligand requires an additional mass balance."
+    },
+    {
+      "question": "An ideal square-planar MABCD has four distinct achiral monodentate ligands. Geometric isomer count is:",
+      "options": [
+        "1",
+        "3",
+        "6",
+        "24"
+      ],
+      "answer": 1,
+      "explanation": "Fix A; B,C or D can be trans to it. The remaining redrawings related by spatial rotation do not add patterns."
+    },
+    {
+      "question": "An ideal square-planar MA2BC with no internal ligand stereochemistry has how many geometric patterns?",
+      "options": [
+        "1",
+        "3",
+        "2",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "The identical A ligands can be adjacent or opposite, giving two geometric patterns."
+    },
+    {
+      "question": "Octahedral d6 high spin and low spin have how many unpaired electrons respectively?",
+      "options": [
+        "6 and2",
+        "2 and0",
+        "4 and2",
+        "4 and0"
+      ],
+      "answer": 3,
+      "explanation": "HS t2g4eg2 has four unpaired electrons; LS t2g6 has all electrons paired."
+    },
+    {
+      "question": "Using the supplied pairing convention, Δo=200 and P=150 kJ/mol give ELS−EHS:",
+      "options": [
+        "−100 kJ/mol",
+        "+100 kJ/mol",
+        "−50 kJ/mol",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "Low minus high is−2Δo+2P=−400+300=−100 kJ/mol in the simplified model."
+    },
+    {
+      "question": "In the selected carbonyl model, metal back-donation enters which CO orbital type?",
+      "options": [
+        "A filled core orbital only",
+        "Pi-star antibonding orbitals",
+        "Only an oxygen1s orbital",
+        "No ligand orbital"
+      ],
+      "answer": 1,
+      "explanation": "Donation from occupied metal orbitals into CO pi-star antibonding orbitals weakens the internal C–O bond in that model."
+    },
+    {
+      "question": "CO remains a neutral formal ligand in the oxidation-state ledger. This means:",
+      "options": [
+        "No electron density is shared",
+        "Back-donation is forbidden",
+        "Formal charge is bookkeeping and does not exclude shared bonding density",
+        "Every metal carbonyl is ionic"
+      ],
+      "answer": 2,
+      "explanation": "Formal ligand charge0 can coexist with ligand-to-metal donation and metal-to-ligand back-donation."
+    },
+    {
+      "question": "In the stated ionic count, Cr(CO)6 and Ni(CO)4 have total valence electron counts respectively:",
+      "options": [
+        "6 and10",
+        "12 and8",
+        "16 and16",
+        "18 and18"
+      ],
+      "answer": 3,
+      "explanation": "Cr0 contributes d6 plus6×2; Ni0 contributes d10 plus4×2. These totals include ligand donation."
+    },
+    {
+      "question": "Which example shows why18 electrons is not a universal stability requirement?",
+      "options": [
+        "Square-planar[PtCl4]2− has a valid16-electron ionic count",
+        "Every d subshell holds18 electrons",
+        "All16-electron complexes decompose instantly",
+        "CO must carry charge−2"
+      ],
+      "answer": 0,
+      "explanation": "PtII is d8 and four chloride donors add8 in the ionic method, totaling16 for a stable square-planar complex."
     }
   ]
 }

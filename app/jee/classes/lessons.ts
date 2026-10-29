@@ -1213,7 +1213,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "periodic-trends", subject: "Chemistry", unit: 9, number: "C11", title: periodicTrends.title,
-    description: "Twenty-five narrated chapters on periodic trends, oxygen-ion species, halogen displacement, Group 2 solubility, carbonate stability and quantitative comparisons.",
+    description: "Twenty-nine narrated chapters on periodic trends, ion-configuration identity, spin-specific radii, amphoteric hydroxides, period lengths and group comparisons.",
     scope: "Recorded Unit 9 foundation with original practice. These selected group compounds illustrate periodic trends. Detailed group chemistry, transition-element trends and further exceptions remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.periodic-trends.lecture.v1",
     audio: "/lectures/periodic-trends/narration-marin.mp3",
