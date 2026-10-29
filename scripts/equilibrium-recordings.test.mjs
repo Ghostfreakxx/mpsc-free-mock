@@ -3,10 +3,10 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {equilibriumElectrochemistryLessons as written} from '../app/jee/classes/equilibrium-electrochemistry-study.ts';
-for(const [id,count] of [['equilibrium',25],['redox-electrochemistry',26]]){
+for(const [id,count] of [['equilibrium',29],['redox-electrochemistry',30]]){
  const lesson=JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`));
  test(`${id}: substantive chapters, quiz parity and reviewed audio provenance`,()=>{
-  assert.equal(lesson.chapters.length,count);assert.equal(lesson.quiz.length,42);
+  assert.equal(lesson.chapters.length,count);assert.equal(lesson.quiz.length,50);
   assert.deepEqual(lesson.quiz,written.find(l=>l.id===id).quiz);
   for(const [i,c] of lesson.chapters.entries()){
    assert.ok(c.script.split(/\s+/).length>=150);assert.equal(c.board.rows.length,3);

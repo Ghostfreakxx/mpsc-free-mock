@@ -21,8 +21,8 @@ Questions are original practice, not represented as official PYQs.
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 29 | 28 | 18 | 50 / 50 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 31 | 33 | 21 | 50 / 50 |
 | 5 | [Solutions](/jee/classes/solutions) | 31 | 33 | 21 | 50 / 50 |
-| 6 | [Equilibrium](/jee/classes/equilibrium) | 25 | 25 | 19 | 42 / 42 |
-| 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 26 | 27 | 19 | 42 / 42 |
+| 6 | [Equilibrium](/jee/classes/equilibrium) | 29 | 29 | 22 | 50 / 50 |
+| 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 30 | 31 | 22 | 50 / 50 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 26 | 29 | 22 | 50 / 50 |
 | 9 | [Periodic Trends](/jee/classes/periodic-trends) | 25 | 23 | 15 | 40 / 40 |
 | 10 | [P-Block](/jee/classes/p-block) | 27 | 25 | 15 | 42 / 42 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Thermodynamics adds matched-state isomer combustion cycles, water-phase enthalpy corrections, the fixed-temperature/pressure useful-work limit and a supporting piecewise correction across reactant melting.
+Equilibrium adds inert-gas constraint comparisons, buffer-capacity inventories, selective-precipitation removal targets and indicator colour ratios. The precipitation diagram distinguishes early onset from a quantitative separation target.
 
-Solutions adds supporting ideal bubble/dew comparisons, inverse two-solute composition, closed-vessel Henry-law balances and anhydrous-solute crystallization. Diagrams show the phase-dependent enthalpy jump and distinguish the first liquid drop from the first vapor bubble.
+Electrochemistry adds current-efficiency electron partitions, supporting ideal selective-deposition limits, conductometric titration with spectator ions and standard voltage-temperature thermodynamics. The titration diagram includes changing solution volume and a nonzero conductivity minimum.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax’s thermochemistry and solution teaching, the Shepherd thermodynamics supplement and the Kitchin Research Group’s ideal phase calculations. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference OpenStax’s equilibrium and electrochemistry teaching, IIT Roorkee’s conductometric titration theory and DeVoe’s electrochemical thermodynamics. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

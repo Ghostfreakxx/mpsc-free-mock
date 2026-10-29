@@ -49,6 +49,14 @@
     {
       "title": "OpenStax: complex-ion formation balances",
       "url": "https://openstax.org/books/chemistry-2e/pages/15-3-coupled-equilibria"
+    },
+    {
+      "title": "IIT Roorkee: conductometric titration theory",
+      "url": "https://vlab.iitr.ac.in/assets/explore-labs/Environmental%20Chemistry%20Lab/labs/exp8/theory.html"
+    },
+    {
+      "title": "DeVoe: thermodynamic cell calculations and temperature coefficients",
+      "url": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/DeVoes_Thermodynamics_and_Chemistry/14%3A_Galvanic_Cells/14.07%3A_Chapter_14_Problems"
     }
   ],
   "chapters": [
@@ -961,6 +969,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Current efficiency partitions electrons between cathode products",
+      "formula": "n(e−)total=Q/F; useful silver electrons=ηQ/F; n(H2)=(1−η)Q/(2F) in the stipulated two-channel model",
+      "script": "Faraday's law must use the charge actually assigned to the desired electrode reaction. In a supplied cathode ledger, total charge corresponds to zero point zero five zero mole of electrons. Assume eighty percent of that charge deposits silver from silver ions, while the remaining twenty percent makes hydrogen, with no other cathode process. Silver reduction needs one electron per silver atom. Its electron allocation is zero point zero four zero mole, so the deposited silver amount is the same. Using the supplied rounded molar mass one hundred eight grams per mole gives four point three two grams of silver. The hydrogen allocation is zero point zero one zero mole of electrons, and two electrons are needed per hydrogen molecule, giving zero point zero zero five zero mole of hydrogen. The product mole amounts must not simply be assigned an eighty to twenty ratio because their electron requirements differ. The two electron allocations, not the product amounts, sum to the total electron amount. This is a stipulated current partition, not a prediction from standard electrode potentials alone. Current efficiency, reaction selectivity and thermodynamic voltage answer different questions. Any additional electrode process would need its own electron ledger.",
+      "points": [
+        "Total charge=.050 mol e− · 80% toAg;20% toH2 · Stipulated two-channel current split",
+        "Ag+:1 e− perAg · nAg=.040 mol;M=108 · Silver mass4.32 g",
+        "H2:2 e− per molecule · nH2=.010/2=.0050 mol · Sum electron allocations, not products"
+      ],
+      "board": {
+        "heading": "Current efficiency partitions electrons between cathode products",
+        "columns": [
+          "Specified conditions",
+          "Calculation / cause",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Total charge=.050 mol e−",
+            "80% toAg;20% toH2",
+            "Stipulated two-channel current split"
+          ],
+          [
+            "Ag+:1 e− perAg",
+            "nAg=.040 mol;M=108",
+            "Silver mass4.32 g"
+          ],
+          [
+            "H2:2 e− per molecule",
+            "nH2=.010/2=.0050 mol",
+            "Sum electron allocations, not products"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting selective deposition compares actual electrode potentials",
+      "formula": "Illustrative M+/M:E°=.600 V; N2+/N:E°=.304 V; at298 K, EM=.600+.0592log a(M+)",
+      "script": "Selective metal deposition depends on actual reduction potentials. Use a supporting illustrative model with two hypothetical metals at two hundred ninety eight kelvin. The first metal, labelled M, has singly charged ions and standard potential zero point six zero zero volt. The second metal, labelled N, has doubly charged ions and standard potential zero point three zero four volt. The second ion activity stays one. All activities are dimensionless. Initially the first ion activity is zero point zero one. Its potential is zero point six zero zero plus zero point zero five nine two times log zero point zero one, giving zero point four eight one six volt. It is the more positive couple. Removing the first metal lowers its dissolved ion activity and potential. Equality with the second couple occurs when the logarithm of the first ion activity is minus five. That first ion activity is ten to the minus five. This ideal potential comparison excludes overpotential, transport limits, complexation and solvent reactions; practical separation needs those additional checks.",
+      "points": [
+        "Hypothetical M+,N2+;298 K · E°M=.600;E°N=.304 V · a(N2+)=1;EN=.304 V",
+        "a(M+)=.010 initially · EM=.600−2×.0592=.4816 · M initially more positive",
+        "Equality:log a(M+)=−5 · a(M+)=1e−5 · Ideal limit; kinetics/solvent excluded"
+      ],
+      "board": {
+        "heading": "Supporting selective deposition compares actual electrode potentials",
+        "columns": [
+          "Specified conditions",
+          "Calculation / cause",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "Hypothetical M+,N2+;298 K",
+            "E°M=.600;E°N=.304 V",
+            "a(N2+)=1;EN=.304 V"
+          ],
+          [
+            "a(M+)=.010 initially",
+            "EM=.600−2×.0592=.4816",
+            "M initially more positive"
+          ],
+          [
+            "Equality:log a(M+)=−5",
+            "a(M+)=1e−5",
+            "Ideal limit; kinetics/solvent excluded"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting conductometric titration keeps spectator ions",
+      "formula": "κ=Σλici/1000 for ci in mol/L and λi in S cm²/mol; fixed-λ ideal ionic model",
+      "script": "A conductivity minimum during acid base titration does not mean that all ions vanish. In a supporting ideal model, titrate fifty milliliters of zero point one zero zero molar hydrochloric acid with sodium hydroxide at the same concentration. Supplied fixed ionic molar conductivities are three hundred fifty for hydrogen, fifty for sodium, seventy six for chloride and one hundred ninety eight for hydroxide. Their units are siemens multiplied by square centimeters, divided by moles. Neutralization replaces highly mobile hydrogen ions with less mobile sodium ions before equivalence. Chloride remains as a spectator. Include the changing total volume. At fifty milliliters of added base, five millimoles of acid have reacted in one hundred milliliters total solution. Sodium and chloride are each zero point zero five zero molar. Their conductivity contribution is zero point zero zero six three siemens per centimeter, not zero. Beyond equivalence, excess hydroxide raises conductivity in this model. Fixed ionic conductivities are approximate, while measured conductance also depends on cell geometry.",
+      "points": [
+        "50 mL.100 M HCl · Titrate with.100 M NaOH · Equivalence at50 mL added",
+        "At equivalence:100 mL total · [Na+]=[Cl−]=.050 M · κ=(50+76).050/1000=.0063",
+        "Before:H+ replaced byNa+ · After:excessOH− contributes · Minimum is not zero conductivity"
+      ],
+      "board": {
+        "heading": "Supporting conductometric titration keeps spectator ions",
+        "columns": [
+          "Specified conditions",
+          "Calculation / cause",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "50 mL.100 M HCl",
+            "Titrate with.100 M NaOH",
+            "Equivalence at50 mL added"
+          ],
+          [
+            "At equivalence:100 mL total",
+            "[Na+]=[Cl−]=.050 M",
+            "κ=(50+76).050/1000=.0063"
+          ],
+          [
+            "Before:H+ replaced byNa+",
+            "After:excessOH− contributes",
+            "Minimum is not zero conductivity"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting voltage-temperature data give reaction entropy",
+      "formula": "ΔG°=−nFE°; ΔS°=nF(dE°/dT)p; ΔH°=ΔG°+TΔS° for the same reaction",
+      "script": "A cell's voltage variation with temperature can connect electrochemistry to reaction entropy. Use the standard reversible cell potential for one specified reaction and its fixed pressure temperature derivative. Since standard Gibbs energy is minus n F E, differentiating with respect to temperature and using the Gibbs entropy relation gives standard reaction entropy equal to n F times the voltage temperature slope. This is a supporting thermodynamic extension; it concerns the reversible standard potential, not an arbitrary loaded terminal voltage. In a supplied example at three hundred kelvin, let electron number be two, Faraday constant ninety six thousand five hundred coulombs per mole, standard voltage zero point three zero zero volt, and slope minus zero point zero zero zero two zero volt per kelvin. Standard Gibbs energy is minus fifty seven point nine kilojoules per mole of the written reaction. Standard entropy is minus thirty eight point six joules per mole kelvin. Adding T times that entropy to Gibbs energy gives standard enthalpy minus sixty nine point four eight kilojoules per mole. Convert entropy to consistent energy units before combining. A falling voltage therefore indicates negative reaction entropy in this comparison, not automatically a nonspontaneous reaction.",
+      "points": [
+        "n=2;F=96500;T=300 K · E°=.300 V;slope−.00020 V/K · Standard reversible potential data",
+        "ΔG°=−57.9 kJ/mol · ΔS°=−38.6 J/mol K · Derivative taken at fixed pressure",
+        "ΔH°=ΔG°+TΔS° · −57.9−11.58=−69.48 · Loaded terminal voltage is different"
+      ],
+      "board": {
+        "heading": "Supporting voltage-temperature data give reaction entropy",
+        "columns": [
+          "Specified conditions",
+          "Calculation / cause",
+          "Conclusion / limit"
+        ],
+        "rows": [
+          [
+            "n=2;F=96500;T=300 K",
+            "E°=.300 V;slope−.00020 V/K",
+            "Standard reversible potential data"
+          ],
+          [
+            "ΔG°=−57.9 kJ/mol",
+            "ΔS°=−38.6 J/mol K",
+            "Derivative taken at fixed pressure"
+          ],
+          [
+            "ΔH°=ΔG°+TΔS°",
+            "−57.9−11.58=−69.48",
+            "Loaded terminal voltage is different"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1425,6 +1573,94 @@
       ],
       "answer": 1,
       "explanation": "Use E=.800+.05916 log₁₀(10⁻⁷)=.38588 V relative to the same reference, rather than inserting total silver."
+    },
+    {
+      "question": "Q/F=.050 mol e− and80% of charge deposits Ag from Ag+. Using MAg=108 g/mol, silver mass is:",
+      "options": [
+        "5.40 g",
+        "4.32 g",
+        "2.16 g",
+        ".432 g"
+      ],
+      "answer": 1,
+      "explanation": "Ag receives.80×.050=.040 mol e−; one electron perAg gives.040×108=4.32 g."
+    },
+    {
+      "question": "The remaining20% charge makes H2 only. Its amount is:",
+      "options": [
+        ".010 mol",
+        ".025 mol",
+        ".0050 mol",
+        ".050 mol"
+      ],
+      "answer": 2,
+      "explanation": "Hydrogen receives.010 mol e− and needs two electrons per molecule, so nH2=.0050 mol."
+    },
+    {
+      "question": "In the supplied hypothetical model, EM=.600+.0592log a(M+). At a(M+)=.010, EM is:",
+      "options": [
+        ".600 V",
+        ".304 V",
+        ".7184 V",
+        ".4816 V"
+      ],
+      "answer": 3,
+      "explanation": "log(.010)=−2; .600−.1184=.4816 V."
+    },
+    {
+      "question": "Equality with EN=.304 V occurs at which M+ activity in that model?",
+      "options": [
+        "1e−5",
+        "1e−2",
+        "1",
+        "1e5"
+      ],
+      "answer": 0,
+      "explanation": "log a=(.304−.600)/.0592=−5, so dimensionless activity is10^−5."
+    },
+    {
+      "question": "50 mL.100 M HCl is titrated by.100 M NaOH. Equivalence requires:",
+      "options": [
+        "25 mL",
+        "50 mL",
+        "100 mL",
+        "5 mL"
+      ],
+      "answer": 1,
+      "explanation": "There are5 mmol acid; .100 mmol/mL base requires50 mL for1:1 neutralization."
+    },
+    {
+      "question": "At equivalence in the supplied fixed-λ model,[Na+]=[Cl−]=.050 M,λNa=50,λCl=76. κ is:",
+      "options": [
+        "0",
+        ".063 S/cm",
+        ".0063 S/cm",
+        "6.3 S/cm"
+      ],
+      "answer": 2,
+      "explanation": "κ=(50+76)×.050/1000=.0063 S/cm; spectator ions still conduct."
+    },
+    {
+      "question": "For n=2,F=96500 and dE°/dT=−.00020 V/K, ΔS° is:",
+      "options": [
+        "+38.6 J/mol K",
+        "−57.9 kJ/mol",
+        "0",
+        "−38.6 J/mol K"
+      ],
+      "answer": 3,
+      "explanation": "ΔS°=nF(dE°/dT)=2×96500×(−.00020)=−38.6 J/mol K."
+    },
+    {
+      "question": "With E°=.300 V,T=300 K and those same n,F,slope values, ΔH° is:",
+      "options": [
+        "−69.48 kJ/mol",
+        "−57.90 kJ/mol",
+        "+69.48 kJ/mol",
+        "−46.32 kJ/mol"
+      ],
+      "answer": 0,
+      "explanation": "ΔG°=−57.9 kJ/mol and TΔS°=−11.58 kJ/mol, so ΔH°=−69.48 kJ/mol."
     }
   ]
 }
