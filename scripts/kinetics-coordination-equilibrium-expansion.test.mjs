@@ -11,7 +11,7 @@ test('new rate questions preserve axis conventions, order units, amount and bran
  near(Math.log(2)/(.020+.030),13.862943611198904);
 });
 test('coordination problems independently count charge, outer chloride and split-orbital energies',()=>{
- assert.deepEqual(c.quiz.slice(18).map(q=>q.answer),[1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,0,1,2,3,0,1,2,3,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]);
+ assert.deepEqual(c.quiz.slice(18).map(q=>q.answer),[1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,0,1,2,3,0,1,2,3,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]);
  assert.equal(a(c,19),'+3');assert.equal(3+6*(-1),-3);
  assert.equal(a(c,20),`${(.0100*3*143.5).toFixed(3)} g`);assert.equal(a(c,21),String(5+1));
  near(3*(-.4),-1.2);near(2*(-.6)+.4,-.8);near(18000*4/9,8000);

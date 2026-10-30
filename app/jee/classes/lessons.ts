@@ -1123,7 +1123,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "coordination-compounds", subject: "Chemistry", unit: 12, number: "C02", title: coordinationCompounds.title,
-    description: "Twenty-six narrated chapters on ligands, mixed-ligand naming, d4/d5/d7 spin energies, d8 geometry, stereochemistry and supporting conditional chelation.",
+    description: "Thirty-four narrated chapters on coordination chemistry, intact-ion particle counts, finite-ligand balances, supporting d9 distortion and d8 field comparisons.",
     scope: "Recorded Unit 12 foundation and worked applications with original practice. Detailed optical-isomer models, extended nomenclature and quantitative extraction/analysis sequences remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.coordination-compounds.lecture.v1",
     audio: "/lectures/coordination-compounds/narration-marin.mp3",
@@ -1213,7 +1213,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "periodic-trends", subject: "Chemistry", unit: 9, number: "C11", title: periodicTrends.title,
-    description: "Twenty-nine narrated chapters on periodic trends, ion-configuration identity, spin-specific radii, amphoteric hydroxides, period lengths and group comparisons.",
+    description: "Thirty-three narrated chapters on periodic properties, electron-gain conventions, supplied shielding estimates, oxoacid families and bond polarity.",
     scope: "Recorded Unit 9 foundation with original practice. These selected group compounds illustrate periodic trends. Detailed group chemistry, transition-element trends and further exceptions remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.periodic-trends.lecture.v1",
     audio: "/lectures/periodic-trends/narration-marin.mp3",

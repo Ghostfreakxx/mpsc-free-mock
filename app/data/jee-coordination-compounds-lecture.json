@@ -49,6 +49,14 @@
     {
       "title": "NCERT via IIT Kanpur SATHEE: coordination isomer counts",
       "url": "https://sathee.iitk.ac.in/sathee-icar/student-corner/ncert-books/class-12/nb-che-12/chem-12-unit-9-coordination-compounds/"
+    },
+    {
+      "title": "OpenStax: ideal ion particle counts",
+      "url": "https://openstax.org/books/chemistry-2e/pages/11-4-colligative-properties"
+    },
+    {
+      "title": "IIT Kanpur: supporting d9 distortion",
+      "url": "https://home.iitk.ac.in/~madhavr/CHM102/Lec4.pdf"
     }
   ],
   "chapters": [
@@ -980,6 +988,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Intact complex ions and outer counterions set an ideal particle count",
+      "formula": "Ideal complete outer-sphere dissociation:[Co(NH3)6]Cl3 gives4 ions;[Co(NH3)5Cl]Cl2 gives3;[Co(NH3)4Cl2]Cl gives2",
+      "script": "An intact coordination entity counts as one dissolved particle even when it contains many ligands. In a stipulated ideal dissociation comparison, hexaamminecobalt three chloride gives one complex cation and three outer chloride ions, or four ions per formula unit. The pentaammine chlorido salt with two outer chlorides gives three ions, while the tetraammine dichlorido salt with one outer chloride gives two. The cobalt oxidation state remains plus three in all three selected formulas. Their coordination numbers are each six because the inner ammine and chlorido donor contacts sum to six. At zero point zero one zero molar formula concentration, the first salt therefore has a formal total dissolved particle concentration of zero point zero four zero molar if the sphere remains intact and ideal complete outer dissociation is assumed. Four particles per formula unit is an ideal van't Hoff factor, not a promise of an exact measured value in every solution. Ion pairing and chemical changes can alter the result. Conductivity is also not simply a particle counter because ionic charges, mobilities, concentration and temperature matter. Keep donor count, counterion count and ideal osmotic particle count in three separate columns.",
+      "points": [
+        "[Co(NH3)6]Cl3 · 1 complex+3 chloride=4 ions · Co+3;CN6",
+        "[Co(NH3)5Cl]Cl2 · 1 complex+2 chloride=3 ions · Co+3;CN6",
+        "[Co(NH3)4Cl2]Cl · 1 complex+1 chloride=2 ions · Intact-sphere ideal model"
+      ],
+      "board": {
+        "heading": "Count the intact complex once and outer counterions separately",
+        "columns": [
+          "Species / model",
+          "Result / inference",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "[Co(NH3)6]Cl3",
+            "1 complex+3 chloride=4 ions",
+            "Co+3;CN6"
+          ],
+          [
+            "[Co(NH3)5Cl]Cl2",
+            "1 complex+2 chloride=3 ions",
+            "Co+3;CN6"
+          ],
+          [
+            "[Co(NH3)4Cl2]Cl",
+            "1 complex+1 chloride=2 ions",
+            "Intact-sphere ideal model"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A finite ligand inventory requires both metal and ligand mass balances",
+      "formula": "M+L⇌ML;equal totals C=.0100 M;Kd=10−4 M;free s satisfies s²/(C−s)=Kd",
+      "script": "A large formation constant does not remove the need to conserve the available ligand. Consider a supporting one to one complexation model in which metal and ligand both start with total concentration zero point zero one zero zero molar. The only species are free metal, free ligand and their one to one complex. Use a supplied conditional dissociation constant of ten to the minus four molar, defined through concentrations under the chosen conditions. Equal analytical totals make the two free concentrations equal; call each of them s. The complex concentration is then zero point zero one zero zero minus s, so the equilibrium equation is s squared divided by that complex concentration equals the supplied dissociation constant. Its positive physical root gives free concentration near zero point zero zero zero nine five one molar and complex concentration near zero point zero zero nine zero four nine molar. About ninety point five percent of the metal is bound. Treating the entire analytical ligand concentration as free ligand would overestimate the binding. The model excludes protonation, competing complexes and other stoichiometries. The exact species list and concentration convention must be established before interpreting any real analytical mixture.",
+      "points": [
+        "Totals M=L=.0100 M · [M]=[L]=s;[ML]=C−s · Only three species allowed",
+        "Kd=.0001 M · s≈.000951 M · Physical quadratic root",
+        "[ML]≈.009049 M · Bound fraction≈90.5% · Total ligand is not free ligand"
+      ],
+      "board": {
+        "heading": "Finite ligand depletion changes the complexation calculation",
+        "columns": [
+          "Species / model",
+          "Result / inference",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Totals M=L=.0100 M",
+            "[M]=[L]=s;[ML]=C−s",
+            "Only three species allowed"
+          ],
+          [
+            "Kd=.0001 M",
+            "s≈.000951 M",
+            "Physical quadratic root"
+          ],
+          [
+            "[ML]≈.009049 M",
+            "Bound fraction≈90.5%",
+            "Total ligand is not free ligand"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting d9 distortion splits an unevenly occupied orbital pair",
+      "formula": "Octahedral d9:t2g6 eg3;selected z elongation lowers dz² relative to dx²−y²;eg-only shifts−δ,+δ give2(−δ)+δ=−δ",
+      "script": "An ideal octahedral splitting diagram can hide an instability when degenerate orbitals are unevenly occupied. In a supporting d nine model, the lower set contains six electrons and the upper e g set contains three. The two upper orbitals therefore do not have identical populations in a localized occupancy picture. A selected distortion that lengthens the axial metal ligand contacts reduces the axial interaction and lowers the orbital directed along the z axis relative to the in plane upper orbital. The three upper electrons can then occupy the lower member as a pair and the higher member singly. For a supplied symmetric upper set splitting of minus delta and plus delta relative to their original level, that orbital contribution changes by two times minus delta plus delta, or minus delta. This is not the entire energy of distortion: the lower orbitals, ligand positions, elastic costs and real bonding also matter. The chosen elongated diagram is one model, not a universal prediction that every d nine complex has identical bond lengths or distortion size. One unpaired electron remains in this selected occupancy. Use the distortion to explain a loss of ideal equivalence without assigning an exact measured structure from electron count alone.",
+      "points": [
+        "Ideal octahedral d9 · t2g6 eg3 · Uneven upper-set occupancy",
+        "Selected axial elongation · dz² below dx²−y² · Not every d9 has one fixed geometry",
+        "Upper-set shifts−δ,+δ · 2(−δ)+δ=−δ · Orbital term,not full distortion energy"
+      ],
+      "board": {
+        "heading": "A supplied distortion lifts the upper-orbital degeneracy",
+        "columns": [
+          "Species / model",
+          "Result / inference",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Ideal octahedral d9",
+            "t2g6 eg3",
+            "Uneven upper-set occupancy"
+          ],
+          [
+            "Selected axial elongation",
+            "dz² below dx²−y²",
+            "Not every d9 has one fixed geometry"
+          ],
+          [
+            "Upper-set shifts−δ,+δ",
+            "2(−δ)+δ=−δ",
+            "Orbital term,not full distortion energy"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Octahedral and tetrahedral d8 can share a spin count but have different field energies",
+      "formula": "Octahedral:t2g6 eg2,CFSE=−1.2Δo;tetrahedral:e4 t2^4,CFSE=−.8Δt;both selected occupancies have2 unpaired electrons",
+      "script": "Two complexes can have the same unpaired electron count without having the same geometry or crystal field stabilization. Compare ideal octahedral and tetrahedral d eight occupancies. In the octahedral picture, six electrons fill the lower three orbitals and two occupy the upper pair singly. The crystal field contribution is six times negative zero point four plus two times positive zero point six, giving negative one point two times the octahedral splitting. In the tetrahedral picture, four electrons fill the lower pair and four occupy the upper three orbitals as one pair and two single electrons. Its contribution is four times negative zero point six plus four times positive zero point four, giving negative zero point eight times the tetrahedral splitting. Each selected configuration has two unpaired electrons and three electron pairs. The spin only estimate is therefore the square root of eight, about two point eight three Bohr magnetons, for both. For separately supplied splittings of two hundred for octahedral and eighty for tetrahedral, in kilojoules per mole, the field terms are negative two hundred forty and negative sixty-four respectively. These field contributions alone do not choose the actual molecular geometry. Ligand bonding, other energy terms and the separate square planar possibility must also be considered.",
+      "points": [
+        "Octahedral d8:t2g6 eg2 · CFSE−1.2Δo;2 unpaired · Three electron pairs",
+        "Tetrahedral d8:e4 t2^4 · CFSE−.8Δt;2 unpaired · Three electron pairs",
+        "Supplied Δo200;Δt80 kJ/mol · Field terms−240;−64 kJ/mol · Not complete geometry energies"
+      ],
+      "board": {
+        "heading": "Equal spin counts do not imply equal orbital splitting or geometry",
+        "columns": [
+          "Species / model",
+          "Result / inference",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Octahedral d8:t2g6 eg2",
+            "CFSE−1.2Δo;2 unpaired",
+            "Three electron pairs"
+          ],
+          [
+            "Tetrahedral d8:e4 t2^4",
+            "CFSE−.8Δt;2 unpaired",
+            "Three electron pairs"
+          ],
+          [
+            "Supplied Δo200;Δt80 kJ/mol",
+            "Field terms−240;−64 kJ/mol",
+            "Not complete geometry energies"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1620,6 +1768,94 @@
       ],
       "answer": 0,
       "explanation": "PtII is d8 and four chloride donors add8 in the ionic method, totaling16 for a stable square-planar complex."
+    },
+    {
+      "question": "With an intact coordination sphere and ideal complete outer dissociation, [Co(NH3)6]Cl3 gives how many ions per formula unit?",
+      "options": [
+        "3",
+        "4",
+        "6",
+        "9"
+      ],
+      "answer": 1,
+      "explanation": "The intact complex is one cation and the three outer chlorides are three additional ions, giving four total."
+    },
+    {
+      "question": "Which ideal particle factors apply to [Co(NH3)5Cl]Cl2 and [Co(NH3)4Cl2]Cl respectively?",
+      "options": [
+        "6 and6",
+        "2 and1",
+        "3 and2",
+        "4 and3"
+      ],
+      "answer": 2,
+      "explanation": "The first formula gives one complex plus two outer chlorides; the second gives one complex plus one outer chloride."
+    },
+    {
+      "question": "For equal totals C=.0100 M and Kd=.0001 M in the specified M+L⇌ML model, which equation uses both balances?",
+      "options": [
+        "s²/.0100=Kd always",
+        "s/(C+s)=Kd",
+        "s²/(C+s)=Kd",
+        "s²/(C−s)=Kd"
+      ],
+      "answer": 3,
+      "explanation": "Equal totals give free metal=free ligand=s and complex concentration C−s; Kd=[M][L]/[ML]."
+    },
+    {
+      "question": "The physical root is s≈.000951 M. The metal fraction bound is approximately:",
+      "options": [
+        "90.5%",
+        "99.0%",
+        "9.5%",
+        "100% exactly"
+      ],
+      "answer": 0,
+      "explanation": "The complex is .0100−.000951=.009049 M, so .009049/.0100≈.905."
+    },
+    {
+      "question": "In the stated ideal octahedral d9 model, the upper eg occupancy is:",
+      "options": [
+        "eg2",
+        "eg3",
+        "eg4",
+        "eg0"
+      ],
+      "answer": 1,
+      "explanation": "The lower t2g set contains six of the nine electrons, leaving three in eg."
+    },
+    {
+      "question": "For selected eg shifts−δ,+δ and occupations2,1, the eg-only energy change is:",
+      "options": [
+        "+δ",
+        "−3δ",
+        "−δ",
+        "0"
+      ],
+      "answer": 2,
+      "explanation": "Two electrons at−δ and one at+δ sum to−δ relative to the original common level; this excludes other distortion energy terms."
+    },
+    {
+      "question": "Which CFSE expressions fit the selected octahedral and tetrahedral d8 populations?",
+      "options": [
+        "−.8Δo and−1.2Δt",
+        "−1.2Δo and+.8Δt",
+        "+1.2Δo and−.8Δt",
+        "−1.2Δo and−.8Δt"
+      ],
+      "answer": 3,
+      "explanation": "Octahedral gives6(−.4)+2(.6)=−1.2; tetrahedral gives4(−.6)+4(.4)=−.8."
+    },
+    {
+      "question": "Both displayed d8 occupancies have two unpaired electrons. Their spin-only moment estimate is:",
+      "options": [
+        "√8≈2.83 μB",
+        "0 μB",
+        "√3≈1.73 μB",
+        "√24≈4.90 μB"
+      ],
+      "answer": 0,
+      "explanation": "For n=2 unpaired electrons, μ=√[n(n+2)]=√8 μB; equal spin counts do not identify the same geometry."
     }
   ]
 }

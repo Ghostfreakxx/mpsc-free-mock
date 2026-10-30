@@ -1,0 +1,2 @@
+export const shieldingExamples=[{name:'Na',Z:11,same:0,inner:8,deeper:2},{name:'Mg',Z:12,same:1,inner:8,deeper:2}] as const;
+export const d8Fields=[{name:'Octahedral',lower:[2,2,2],upper:[1,1],lowerEnergy:-.4,upperEnergy:.6,splitting:200,lowerLabel:'t2g:−.4Δo',upperLabel:'eg:+.6Δo',result:'CFSE=−1.2Δo=−240 kJ/mol'},{name:'Tetrahedral',lower:[2,2],upper:[2,1,1],lowerEnergy:-.6,upperEnergy:.4,splitting:80,lowerLabel:'e:−.6Δt',upperLabel:'t2:+.4Δt',result:'CFSE=−.8Δt=−64 kJ/mol'}] as const;

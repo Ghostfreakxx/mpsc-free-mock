@@ -1,3 +1,4 @@
+import PeriodicCoordinationModelsDiagram from './periodic-coordination-models-diagram';
 import MoleOrganicBasisDiagram from './mole-organic-basis-diagram';
 import PeriodicCoordinationContextDiagram from './periodic-coordination-context-diagram';
 import MoleChairBalancesDiagram from './mole-chair-balances-diagram';
@@ -17,6 +18,7 @@ export default function MolePeriodicDiagram({lesson,chapter}:{lesson:"mole-conce
  if(lesson==="periodic-trends"&&chapter===15)return <ElectronGainStepsDiagram/>;
  if(lesson==="mole-concept"&&chapter===15)return <IsotopePairingDiagram/>;
  if(lesson==='mole-concept'&&chapter===30)return <MoleOrganicBasisDiagram kind="dilution"/>;
+ if(lesson==='periodic-trends'&&chapter===30)return <PeriodicCoordinationModelsDiagram kind="shielding"/>;
  const board=(lesson==="mole-concept"?moleConcept:periodicTrends).chapters[chapter].board;
  return <svg className={styles.diagram} viewBox="0 0 460 310" role="img" aria-label={board.heading}>
   <title>{board.heading}</title><rect width="460" height="310" rx="12" fill="#f5faf7" />

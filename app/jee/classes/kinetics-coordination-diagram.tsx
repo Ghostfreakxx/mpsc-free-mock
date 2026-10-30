@@ -1,3 +1,5 @@
+import PeriodicCoordinationModelsDiagram from './periodic-coordination-models-diagram';
+import{periodicCoordinationModelsAdditions}from'./periodic-coordination-models-additions';
 import KineticsPracticalControlsDiagram from './kinetics-practical-controls-diagram';
 import {kineticsPracticalControlsAdditions}from'./kinetics-practical-controls-additions';
 import PeriodicCoordinationContextDiagram from './periodic-coordination-context-diagram';
@@ -25,7 +27,8 @@ export default function KineticsCoordinationDiagram({lesson,chapter}:{lesson:key
  if(lesson === "chemical-kinetics" && chapter === 21)return <ReversibleRelaxationDiagram/>;
  if(lesson === "coordination-compounds" && (chapter === 18 || chapter === 19))return <CoordinationCountingDiagram kind={chapter===18?'d4':'bridge'}/>;
  if(lesson==='chemical-kinetics'&&chapter===29)return <KineticsPracticalControlsDiagram kind="mixture"/>;
- const board=lesson==='chemical-kinetics'&&chapter>=26?kineticsPracticalControlsAdditions[lesson].chapters[chapter-26].board:lesson==='coordination-compounds'&&chapter>=26 ? periodicCoordinationContextAdditions[lesson].chapters[chapter-26].board : chapter>=22 ? kineticsCoordinationInferenceAdditions[lesson].chapters[chapter-22].board : lesson === "coordination-compounds" && chapter >= 18 ? coordinationPracticalEvidenceAdditions[lesson].chapters[chapter - 18].board : lesson === "chemical-kinetics" && chapter >= 18 ? electrochemistryKineticBalancesAdditions[lesson].chapters[chapter - 18].board : chapter >= 14 ? kineticsCoordinationMeasurementAdditions[lesson].chapters[chapter - 14].board : chapter >= 10 ? extra[lesson].chapters[chapter - 10].board : recordings[lesson].chapters[chapter - 5].board;
+ if(lesson==='coordination-compounds'&&chapter===33)return <PeriodicCoordinationModelsDiagram kind="d8"/>;
+ const board=lesson==='coordination-compounds'&&chapter>=30 ? periodicCoordinationModelsAdditions[lesson].chapters[chapter-30].board : lesson==='chemical-kinetics'&&chapter>=26?kineticsPracticalControlsAdditions[lesson].chapters[chapter-26].board:lesson==='coordination-compounds'&&chapter>=26 ? periodicCoordinationContextAdditions[lesson].chapters[chapter-26].board : chapter>=22 ? kineticsCoordinationInferenceAdditions[lesson].chapters[chapter-22].board : lesson === "coordination-compounds" && chapter >= 18 ? coordinationPracticalEvidenceAdditions[lesson].chapters[chapter - 18].board : lesson === "chemical-kinetics" && chapter >= 18 ? electrochemistryKineticBalancesAdditions[lesson].chapters[chapter - 18].board : chapter >= 14 ? kineticsCoordinationMeasurementAdditions[lesson].chapters[chapter - 14].board : chapter >= 10 ? extra[lesson].chapters[chapter - 10].board : recordings[lesson].chapters[chapter - 5].board;
  if (lesson === "coordination-compounds" && chapter === 6) return <svg className={styles.diagram} viewBox="0 0 460 340" role="img" aria-label="Octahedral fac and mer: opposite ends of one axis are trans">
   <title>Octahedral fac and mer: labelled positions</title><rect width="460" height="340" rx="12" fill="#f5faf7" />
   <g fontFamily="Arial, sans-serif" fill="#20483e" textAnchor="middle">

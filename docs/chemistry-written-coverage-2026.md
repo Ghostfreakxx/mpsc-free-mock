@@ -24,10 +24,10 @@ Questions are original practice, not represented as official PYQs.
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 33 | 33 | 25 | 58 / 58 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 34 | 35 | 25 | 58 / 58 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 30 | 33 | 25 | 58 / 58 |
-| 9 | [Periodic Trends](/jee/classes/periodic-trends) | 29 | 27 | 18 | 48 / 48 |
+| 9 | [Periodic Trends](/jee/classes/periodic-trends) | 33 | 31 | 21 | 56 / 56 |
 | 10 | [P-Block](/jee/classes/p-block) | 35 | 33 | 21 | 58 / 58 |
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 35 | 33 | 21 | 58 / 58 |
-| 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 30 | 33 | 25 | 58 / 58 |
+| 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 34 | 37 | 28 | 66 / 66 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 33 | 33 | 21 | 56 / 56 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 33 | 36 | 26 | 60 / 60 |
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 33 | 33 | 21 | 56 / 56 |
@@ -39,7 +39,7 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Mole Concept adds measured-volume mixing, repeated withdrawal/replacement, dry/wet combustion gas bases and moisture-adjusted purity. Organic Principles adds conjugation continuity, methyl intermediate electron counts and geometry, racemate resolution limits and labelled methyl-shift connectivity. This adds eight narrated chapters, sixteen original questions and six worked examples.
+Periodic Trends adds electron-gain conventions, a supplied shielding approximation, matched oxoacid families and partial/formal charge distinctions. Coordination Compounds adds intact-ion particle counts, finite-ligand equilibrium, supporting d9 distortion and d8 field comparisons. This adds eight narrated chapters, sixteen original questions and six worked examples.
 
 ## Remaining scope
 
@@ -53,7 +53,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax solution/gas balances and organic chemistry, Monash reaction amounts, University of Calgary carbocation geometry, NSOU methyl anion models and primary methyl-radical geometry research. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference OpenStax periodic properties, acid/base and coordination chemistry, Westfield State shielding notes and IIT Kanpur supporting d9 distortion. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks
