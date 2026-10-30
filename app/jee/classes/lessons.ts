@@ -1163,7 +1163,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "equilibrium", subject: "Chemistry", unit: 6, number: "C06", title: equilibrium.title,
-    description: "Twenty-nine narrated chapters on equilibrium, inert-gas constraints, buffer capacity, selective precipitation, indicators, hydrolysis and coupled solubility.",
+    description: "Thirty-three narrated chapters on acid-family fractions, coupled dissolution, equilibrium temperature ratios, product-fed gas balances and ionic equilibrium.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 6 foundation with original practice. Further multistage ionization, nonideal activities, physical-equilibrium calculations and broader mixed titrations remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.equilibrium.lecture.v1",
     audio: "/lectures/equilibrium/narration-marin.mp3",
@@ -1173,7 +1173,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "redox-electrochemistry", subject: "Chemistry", unit: 7, number: "C07", title: electrochemistry.title,
-    description: "Thirty narrated chapters on redox, current efficiency, supporting selective deposition, conductometric titration, voltage-temperature data, electrodes and corrosion.",
+    description: "Thirty-four narrated chapters on activity-corrected voltages, reference conversions, supporting transport fractions, reversible water-cell pH lines and electrochemistry.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 7 foundation with original practice. Detailed dry-cell mechanisms, overpotential datasets and broader mixed electrochemical problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.redox-electrochemistry.lecture.v1",
     audio: "/lectures/redox-electrochemistry/narration-marin.mp3",

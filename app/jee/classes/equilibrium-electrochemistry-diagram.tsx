@@ -1,3 +1,4 @@
+import EquilibriumActivityMapsDiagram from './equilibrium-activity-maps-diagram';
 import ElectrodeLimitsDiagram from './electrode-limits-diagram';
 import CoupledEquilibriumElectrodesDiagram from './coupled-equilibrium-electrodes-diagram';
 import equilibrium from "../../data/jee-equilibrium-lecture.json";
@@ -6,6 +7,8 @@ import EquilibriumCellDiagram from "./equilibrium-cell-diagram";
 import styles from "./lecture.module.css";
 
 export default function EquilibriumElectrochemistryDiagram({lesson,chapter}:{lesson:"equilibrium"|"redox-electrochemistry";chapter:number}) {
+ if(lesson==='equilibrium'&&chapter===29)return <EquilibriumActivityMapsDiagram kind="fractions"/>;
+ if(lesson==='redox-electrochemistry'&&chapter===33)return <EquilibriumActivityMapsDiagram kind="water"/>;
  if(lesson==='equilibrium' && chapter===27)return <ElectrodeLimitsDiagram kind="precipitation"/>;
  if(lesson==='redox-electrochemistry' && chapter===28)return <ElectrodeLimitsDiagram kind="conductivity"/>;
  if(chapter===22)return <CoupledEquilibriumElectrodesDiagram lesson={lesson}/>;

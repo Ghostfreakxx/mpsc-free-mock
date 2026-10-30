@@ -53,6 +53,14 @@
     {
       "title": "OpenStax: shifting gas equilibria",
       "url": "https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chateliers-principle"
+    },
+    {
+      "title": "UCI R. Corn: diprotic alpha fractions",
+      "url": "https://www.chem.uci.edu/~unicorn/M3LC/handouts/Week4/AlphaFractions2018.pdf"
+    },
+    {
+      "title": "University of Texas: chemical equilibria and van’t Hoff",
+      "url": "https://ch302.cm.utexas.edu/chemEQ/equilibrium/chemEQ-all.php"
     }
   ],
   "chapters": [
@@ -1072,6 +1080,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "A diprotic acid distribution counts all three forms at one supplied pH",
+      "formula": "For pKa1=4,pKa2=6,pH5:[H2A]:[HA−]:[A2−]=1:10:1;fractions1/12,10/12,1/12",
+      "script": "A supplied pH can determine the relative populations of several acid forms without identifying the total acid concentration. Consider an ideal diprotic acid with first p K a four and second p K a six, held at p H five by the stated external conditions. The first dissociation relation makes the singly charged form ten times as abundant as the fully protonated acid. The second makes the doubly charged form one tenth as abundant as the singly charged form. The three amounts are therefore in the ratio one to ten to one. Dividing by their sum gives fractions one twelfth, ten twelfths and one twelfth. The middle form predominates but is not the only form present. These are species fractions, not separate p H values for separate portions of the same solution. The total analytical acid amount fixes absolute concentrations once these fractions are known. If p H is not supplied or maintained, acid mass balance and solution charge balance must be solved together rather than assuming the midpoint value. Nonideal activities or additional complexation require a more complete model.",
+      "points": [
+        "pKa1=4;pKa2=6;pH5 · H2A:HA−:A2−=1:10:1 · Ideal supplied-pH model",
+        "Normalize by12 · 1/12;10/12;1/12 · Middle form predominates",
+        "Total acid concentration · Scales all three amounts · Not three separate pH values"
+      ],
+      "board": {
+        "heading": "Normalize the entire acid-family inventory",
+        "columns": [
+          "Given / model",
+          "Result / balance",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "pKa1=4;pKa2=6;pH5",
+            "H2A:HA−:A2−=1:10:1",
+            "Ideal supplied-pH model"
+          ],
+          [
+            "Normalize by12",
+            "1/12;10/12;1/12",
+            "Middle form predominates"
+          ],
+          [
+            "Total acid concentration",
+            "Scales all three amounts",
+            "Not three separate pH values"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Coupling dissolution with protonation changes the net equilibrium constant",
+      "formula": "MX2(s)⇌M2++2X− has Ksp;HX⇌H++X− has Ka;net MX2+2H+⇌M2++2HX has K=Ksp/Ka²",
+      "script": "Acid can promote dissolution when the anion released by a solid accepts protons, but the net equation must be assembled before its equilibrium constant is calculated. Use a stipulated salt M X two that dissolves to one divalent metal ion and two monovalent X anions. Its dissolution constant is K s p. The weak acid H X dissociates to a proton and X with constant K a. Reverse that acid reaction to describe protonation, then take it twice because the solid supplies two X ions. Adding these steps cancels the two free X anions. The net reaction consumes one solid formula unit and two protons, producing one metal ion and two H X molecules. Its constant is K s p divided by K a squared. With supplied dimensionless values four times ten to minus twelve and two times ten to minus six, the net constant is one. This result does not mean that every possible starting mixture completely dissolves the solid. The reaction quotient, available acid, remaining solid and other equilibria still determine the final state.",
+      "points": [
+        "MX2(s)→M2++2X− · Dissolution constant Ksp · Solid activity1 while present",
+        "2(H++X−→HX) · Constant1/Ka² · Reverse and double",
+        "Add;cancel2X− · K=Ksp/Ka²=1 · Given4e−12 and2e−6"
+      ],
+      "board": {
+        "heading": "Cancel species before combining the constants",
+        "columns": [
+          "Given / model",
+          "Result / balance",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "MX2(s)→M2++2X−",
+            "Dissolution constant Ksp",
+            "Solid activity1 while present"
+          ],
+          [
+            "2(H++X−→HX)",
+            "Constant1/Ka²",
+            "Reverse and double"
+          ],
+          [
+            "Add;cancel2X−",
+            "K=Ksp/Ka²=1",
+            "Given4e−12 and2e−6"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "An equilibrium temperature comparison needs reaction enthalpy and a stated approximation",
+      "formula": "ln(K330/K300)=(50000/8.314)(1/300−1/330)≈1.822;K330/K300≈6.19",
+      "script": "Temperature can change an equilibrium constant even when changing concentration at fixed temperature cannot. In a supplied constant enthalpy approximation, the natural logarithm of K at the second temperature divided by K at the first equals reaction enthalpy divided by R, multiplied by the first reciprocal temperature minus the second reciprocal temperature. Consider a reaction with positive standard enthalpy fifty kilojoules per mole, comparing three hundred and three hundred thirty kelvin. Convert the enthalpy to fifty thousand joules per mole before using R eight point three one four joules per mole per kelvin. The logarithmic ratio is about one point eight two two, so the constant increases by a factor about six point one nine. If the first constant is two, the second is about twelve point four, not the old value plus six point one nine. This exercise assumes the enthalpy is effectively constant over the interval and uses the same reaction and standard state convention. A catalyst can change the approach to equilibrium but does not supply this thermodynamic change in K at a fixed temperature.",
+      "points": [
+        "ΔH°=+50 kJ/mol · Use50000 J/mol · R in J mol−1 K−1",
+        "300 K→330 K · ln ratio≈1.822 · K ratio≈6.19",
+        "K300=2 · K330≈12.4 · Constant-enthalpy approximation"
+      ],
+      "board": {
+        "heading": "A logarithmic change becomes a multiplicative ratio",
+        "columns": [
+          "Given / model",
+          "Result / balance",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "ΔH°=+50 kJ/mol",
+            "Use50000 J/mol",
+            "R in J mol−1 K−1"
+          ],
+          [
+            "300 K→330 K",
+            "ln ratio≈1.822",
+            "K ratio≈6.19"
+          ],
+          [
+            "K300=2",
+            "K330≈12.4",
+            "Constant-enthalpy approximation"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A product gas feed changes a heterogeneous equilibrium without changing K",
+      "formula": "NH4HS(s)⇌NH3(g)+H2S(g);Kp=(pNH3/p°)(pH2S/p°);(.30+x)x=.040 gives x=.10 bar",
+      "script": "A heterogeneous gas equilibrium can have unequal product partial pressures when one product was already present. In a selected ideal model, solid ammonium hydrosulfide can form ammonia and hydrogen sulfide in a closed vessel at fixed temperature and volume. Begin with ammonia partial pressure zero point three zero bar and no hydrogen sulfide, with sufficient solid available. Each amount of solid that dissociates adds equal pressure increments of the two gases, but it does not erase the initial ammonia. If the supplied dimensionless pressure constant is zero point zero four zero and standard pressure is one bar, call the hydrogen sulfide increment x in bar. The product of zero point three zero plus x and x must equal zero point zero four zero under these pressure conventions. The physically acceptable root is zero point one zero bar. Final ammonia pressure is zero point four zero bar and total gas pressure zero point five zero bar. The negative root is not a permitted gas amount. If the solid is exhausted before these pressures are reached, the assumption of solid coexistence fails and the final quotient need not equal this saturation value.",
+      "points": [
+        "Initial NH3=.30 bar · H2S starts at0 · Fixed T,V;enough solid",
+        "Final pressures:.30+x;x · (.30+x)x=.040 · Positive root x=.10 bar",
+        "Final:.40+.10=.50 bar · Unequal product pressures · Requires solid coexistence"
+      ],
+      "board": {
+        "heading": "Retain the initial gas in the pressure ledger",
+        "columns": [
+          "Given / model",
+          "Result / balance",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Initial NH3=.30 bar",
+            "H2S starts at0",
+            "Fixed T,V;enough solid"
+          ],
+          [
+            "Final pressures:.30+x;x",
+            "(.30+x)x=.040",
+            "Positive root x=.10 bar"
+          ],
+          [
+            "Final:.40+.10=.50 bar",
+            "Unequal product pressures",
+            "Requires solid coexistence"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1624,6 +1772,94 @@
       ],
       "answer": 3,
       "explanation": "A visual endpoint approximates equivalence best when the color transition lies inside that steep pH interval."
+    },
+    {
+      "question": "An ideal diprotic acid has pKa1=4,pKa2=6 at supplied pH5. Ratio H2A:HA−:A2−?",
+      "options": [
+        "1:1:1",
+        "1:10:1",
+        "10:1:10",
+        "1:100:1"
+      ],
+      "answer": 1,
+      "explanation": "HA−/H2A=10 and A2−/HA−=.1,so the three-form ratio is1:10:1."
+    },
+    {
+      "question": "What fraction is HA− in that stipulated distribution?",
+      "options": [
+        "1/2",
+        "1/12",
+        "10/12",
+        "1"
+      ],
+      "answer": 2,
+      "explanation": "Normalize the middle amount10 by the full sum12;predominance does not mean exclusivity."
+    },
+    {
+      "question": "MX2(s) dissolution has Ksp and HX dissociation has Ka. Constant for MX2(s)+2H+⇌M2++2HX?",
+      "options": [
+        "KspKa²",
+        "Ksp/Ka",
+        "Ka²/Ksp",
+        "Ksp/Ka²"
+      ],
+      "answer": 3,
+      "explanation": "Reverse the acid reaction twice and cancel the two X− intermediates."
+    },
+    {
+      "question": "Use supplied dimensionless Ksp=4×10^−12,Ka=2×10^−6. Net constant in that coupled equation?",
+      "options": [
+        "1",
+        "2×10^−6",
+        "4×10^−12",
+        "10^12"
+      ],
+      "answer": 0,
+      "explanation": "Ka²=4×10^−12,so Ksp/Ka²=1. This is a constant,not a guarantee of complete dissolution."
+    },
+    {
+      "question": "For ΔH°=+50 kJ/mol and constant enthalpy,300→330 K gives ln(K2/K1)≈1.822. Approximate K2/K1?",
+      "options": [
+        "1.822",
+        "6.19",
+        "−6.19",
+        "0.162"
+      ],
+      "answer": 1,
+      "explanation": "Exponentiate the natural logarithm;e^1.822≈6.19."
+    },
+    {
+      "question": "If K300=2 in that model,approximate K330?",
+      "options": [
+        "3.822",
+        "8.19",
+        "12.4",
+        "2 because catalysts affect rates"
+      ],
+      "answer": 2,
+      "explanation": "Multiply the initial constant by the ratio6.19;temperature and catalysis are different changes."
+    },
+    {
+      "question": "For the stated NH4HS solid equilibrium,initial pNH3=.30 bar,pH2S=0,Kp=.040,p°=1 bar. Final pH2S with sufficient solid?",
+      "options": [
+        ".20 bar",
+        ".30 bar",
+        ".40 bar",
+        ".10 bar"
+      ],
+      "answer": 3,
+      "explanation": "The acceptable root of x(.30+x)=.040 is x=.10 bar,giving pNH3=.40 bar."
+    },
+    {
+      "question": "If the entire solid is exhausted before that gas composition is reached,what must change?",
+      "options": [
+        "The solid-coexistence assumption cannot be imposed blindly",
+        "Both gas partial pressures must always be equal",
+        "K changes merely because the vessel has less solid",
+        "A negative gas amount becomes acceptable"
+      ],
+      "answer": 0,
+      "explanation": "The saturation relation describes coexistence with the solid;an exhausted phase changes which equilibrium condition can be imposed."
     }
   ]
 }

@@ -21,8 +21,8 @@ Questions are original practice, not represented as official PYQs.
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 33 | 32 | 21 | 58 / 58 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 31 | 33 | 21 | 50 / 50 |
 | 5 | [Solutions](/jee/classes/solutions) | 31 | 33 | 21 | 50 / 50 |
-| 6 | [Equilibrium](/jee/classes/equilibrium) | 29 | 29 | 22 | 50 / 50 |
-| 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 30 | 31 | 22 | 50 / 50 |
+| 6 | [Equilibrium](/jee/classes/equilibrium) | 33 | 33 | 25 | 58 / 58 |
+| 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 34 | 35 | 25 | 58 / 58 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 30 | 33 | 25 | 58 / 58 |
 | 9 | [Periodic Trends](/jee/classes/periodic-trends) | 29 | 27 | 18 | 48 / 48 |
 | 10 | [P-Block](/jee/classes/p-block) | 31 | 29 | 18 | 50 / 50 |
@@ -39,11 +39,11 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Atomic Structure adds accelerating-voltage comparisons, wavelength-window counting, orbital projections and common chromium/copper cation configurations. Chemical Bonding adds electron-deficient adducts, common-factor ionic energy comparisons, CO charge conventions and the oxygen molecular-ion series.
+Equilibrium adds diprotic species fractions, acid-coupled dissolution constants, equilibrium temperature ratios and product-fed heterogeneous gas balances. The acid distribution diagram counts all three forms at the supplied pH.
 
-Kinetics adds independent concentration perturbations, conditional collision filtering, depletion/feed boundaries and a supporting mixed-population decay model. Practical Chemistry adds nickel dimethylglyoxime, calcium oxalate acid response, flame-test blanks and phosphate-molybdate confirmation.
+Electrochemistry adds activity-corrected Nernst quotients, reference-electrode conversion, supporting ionic current fractions and matched reversible water-electrode pH lines. The water diagram keeps both potentials on the same reference scale and distinguishes a reversible gap from practical operating voltage.
 
-Together this batch adds sixteen narrated chapters, thirty-two original MCQs and twelve worked examples, with matching written companions and recorded practice.
+Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
 ## Remaining scope
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax atomic, bonding and kinetics theory, UNT octet comparisons, Virtual Labs nickel confirmation, Malik calcium analysis, NCERT flame comparisons and Arizona Geological Survey phosphate evidence. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference UCI diprotic fractions, OpenStax dissolution and gas equilibria, University of Texas van’t Hoff treatment, Lower activity and transport theory, Harvey reference electrodes and Williams water-cell thermodynamics. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks
