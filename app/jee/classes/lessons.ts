@@ -1113,7 +1113,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-principles", subject: "Chemistry", unit: 14, number: "C01", title: organicPrinciples.title,
-    description: "Twenty-nine narrated chapters on organic principles, hyperconjugation inventories, chair flips, substituted rings, supporting allene chirality, naming and stereochemistry.",
+    description: "Thirty-three narrated chapters on organic principles, conjugation, intermediate electron geometry, racemate resolution, labelled methyl shifts, naming and stereochemistry.",
     scope: "Recorded Unit 14 foundation and worked applications with original practice. Full CIP tie-breaking, multiple-centre stereochemistry, additional solvent datasets and mechanisms remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-principles.lecture.v1",
     audio: "/lectures/organic-principles/narration-marin.mp3",
@@ -1203,7 +1203,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "mole-concept", subject: "Chemistry", unit: 1, number: "C10", title: moleConcept.title,
-    description: "Twenty-nine narrated chapters on mole calculations, wet gases, mean molar mass, incomplete combustion, supporting steady recycle, yields and reaction balances.",
+    description: "Thirty-three narrated chapters on mole calculations, measured-volume mixing, repeated dilution, dry/wet combustion gas bases, moisture-adjusted purity and reaction balances.",
     scope: "Recorded Unit 1 foundation with original practice. Further multi-step reaction networks and additional experimental datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.mole-concept.lecture.v1",
     audio: "/lectures/mole-concept/narration-marin.mp3",
