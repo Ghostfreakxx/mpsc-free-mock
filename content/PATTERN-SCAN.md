@@ -102,13 +102,27 @@ Scan date: 2026-09-29. This scan decides which topics get new questions. It does
 | JEE Maths: limits, matrices, conic sections | `limit-laws`, `matrix-operations`, `parabola` | JEE |
 | NEET Biology: plant hormones, population genetics | `plant-hormones`, `hardy-weinberg` | NEET |
 
+## Fifth batch (2026-10-30)
+
+| Gap from the scan | Added (topic id) | Streams |
+|---|---|---|
+| MPSC: Indian polity | `emergency-provisions`, `constitutional-bodies` | MPSC (English, Mizo pending), CUET PG |
+| MPSC: Indian history (medieval, colonial) | `bhakti-sufi`, `colonial-cities` | MPSC (English, Mizo pending), CUET PG |
+| MPSC: Indian geography and resources | `indian-monsoon`, `soils-of-india`, `minerals-energy` | MPSC (English, Mizo pending), CUET PG |
+| MPSC: economy | `national-income`, `inflation` | MPSC (English, Mizo pending), CUET PG |
+| MPSC: general science | `endocrine-glands`, `newtons-laws` | MPSC (English, Mizo pending), NEET (and JEE for Newton's laws) |
+| Physics: rotational motion, capacitance | `rotational-dynamics`, `capacitance` | JEE, NEET |
+| Chemistry: bonding, atomic structure | `vsepr-shapes`, `quantum-numbers` | JEE, NEET |
+| JEE Maths: quadratics, trigonometry, circles | `quadratic-equations`, `trigonometric-identities`, `circles` | JEE |
+| NEET Biology: respiration, plant reproduction, ecology | `cellular-respiration`, `plant-fertilisation`, `population-ecology` | NEET |
+
 ## Still open (next batches)
 
-- **MPSC:** Mizo drafts for every topic in `mizoPendingTopicIds`, from a fluent writer. After that, current events, Indian economic planning and the budget, world geography, and physics in daily life.
-- **Physics:** alternating current, optics of the eye and instruments, rotational motion.
+- **MPSC:** Mizo drafts for every topic in `mizoPendingTopicIds`, from a fluent writer. After that, current events, Indian economic planning and the budget, world geography, and more physics in daily life.
+- **Physics:** alternating current, optics of the eye and instruments.
 - **Chemistry:** p-block chemistry, organic reaction mechanisms, solutions and colligative properties.
 - **JEE Maths:** continuity and differentiability, ellipse and hyperbola, straight lines.
-- **NEET Biology:** human health and disease, molecular basis of inheritance, ecosystems and biodiversity conservation.
+- **NEET Biology:** human health and disease, molecular basis of inheritance, biodiversity conservation.
 - **CUET PG:** per-subject depth in sociology, education and English is still thin.
 
 ## Analyses consulted

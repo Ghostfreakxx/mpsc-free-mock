@@ -2,7 +2,7 @@
 
 Published practice is the source-checked, original foundation set in `app/data/reviewed-content.ts`. It is not a comprehensive exam bank, an official PYQ collection, or a prediction of examination content. Review date: 2026-09-27. Review was AI-assisted, not certification by an examination body or independent subject expert.
 
-The second release added 200 practice slots to each of the four exam streams, and MPSC was later expanded further. Current totals (2026-10-22): MPSC 817, NEET 645, JEE 583 and CUET PG 505. Some questions are shared across streams: the 2,550 stream slots come from 1,691 unique questions, 850 of which appear in more than one stream, and they are not 1,691 distinct concepts. Additions include deterministic numerical variants and paired recall/matching variants within the existing foundation topics. Their source locations explicitly identify those variants. The larger count does not expand this into full-syllabus coverage. Generation is deterministic and does not call an AI service at runtime. Question IDs from the first release are retained.
+The second release added 200 practice slots to each of the four exam streams, and MPSC was later expanded further. Current totals (2026-10-30): MPSC 942, NEET 740, JEE 667 and CUET PG 606. Some questions are shared across streams: the 2,955 stream slots come from 1,918 unique questions, 1,016 of which appear in more than one stream, and they are not 1,918 distinct concepts. Additions include deterministic numerical variants and paired recall/matching variants within the existing foundation topics. Their source locations explicitly identify those variants. The larger count does not expand this into full-syllabus coverage. Generation is deterministic and does not call an AI service at runtime. Question IDs from the first release are retained.
 
 The JEE foundation extension (2026-09-29) adds 99 hand-written questions in eleven topics defined in `app/data/jee-topics.ts`: Physics (constant-acceleration kinematics, projectile motion, work-energy theorem), Chemistry (mole concept, molarity and dilution, gas laws) and Mathematics (arithmetic and geometric sequences, logarithms, permutations and combinations, differentiation rules), taking JEE to 308 published questions. Each item cites an OpenStax section; worked answers for representative numericals are recomputed in `scripts/content.test.mjs`. Review was AI-assisted, as above.
 
@@ -27,6 +27,14 @@ The fourth batch (2026-10-22) adds 211 original questions in twenty-one topics (
 - **JEE and NEET:** gravitation, semiconductors and doping, integrated rate laws, and pH and pOH.
 - **JEE:** limits, matrices and the parabola.
 - **NEET:** plant hormones, Hardy-Weinberg equilibrium, and the adaptive immune response.
+
+The fifth batch (2026-10-30) adds 227 original questions in twenty-one topics (`app/data/batch-five-topics.ts`), again weighted towards MPSC. It follows the same rules as the third and fourth batches. All eleven MPSC topics are general studies, published in English with their Mizo drafts pending.
+- **MPSC general studies (English, Mizo pending):** emergency provisions, constitutional bodies, Bhakti and Sufi traditions, colonial cities, climate and the Indian monsoon, soils of India, minerals and energy resources, national income and GDP, inflation and price indices, endocrine glands, and Newton's laws of motion. All but the last two also reach CUET PG.
+- **JEE and NEET:** Newton's laws, moment of inertia and torque, capacitors, VSEPR and molecular shapes, and quantum numbers.
+- **JEE:** quadratic equations, trigonometric identities and circles.
+- **NEET:** endocrine glands, cellular respiration, pollination and fertilisation, and population ecology.
+
+Six draft items that repeated facts already in the bank (Union polity, public finance and panchayats) were replaced with new ones before publication.
 
 The atmosphere items cite NOAA JetStream. The other sources follow the third batch. Worked answers for representative numericals are recomputed in `scripts/content.test.mjs`. Review was AI-assisted, as above.
 
