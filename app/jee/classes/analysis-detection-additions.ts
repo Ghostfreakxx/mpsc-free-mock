@@ -1,0 +1,499 @@
+// Authored by scripts/expand-analysis-detection.mjs.
+export const analysisDetectionAdditions = {
+  "purification-analysis": {
+    "chapters": [
+      {
+        "title": "Nitrogen estimation needs quantitative conversion as well as a nitrogen atom",
+        "formula": "Dumas: n(N atoms)=2n(N2); ordinary Kjeldahl excludes nitro, azo and selected ring nitrogen",
+        "script": "A nitrogen percentage is reliable only when the method converts the relevant nitrogen quantitatively into its measured form. A molecular formula containing nitrogen does not guarantee that every estimation method will recover it. In the elementary Dumas model, nitrogen is ultimately measured as molecular nitrogen after other gaseous products and interfering nitrogen oxides have been dealt with. One mole of nitrogen gas represents two moles of nitrogen atoms. For a supplied dry, corrected gas amount of zero point zero zero two mole from a zero point four zero zero gram sample, the nitrogen mass is zero point zero five six gram, giving fourteen percent. The ordinary textbook Kjeldahl method follows a different conversion. Nitrogen is first converted into ammonium ions. The stated analytical balance then liberates and captures ammonia gas to provide the measured amount. Nitro nitrogen, azo nitrogen and nitrogen in a ring such as pyridine are standard limitations of that unmodified method. A modified analytical method may extend the scope, but its recovery must be established separately. A small ammonia result for an unsuitable sample is not proof that nitrogen is absent. Always state the conversion chemistry and the measured nitrogen species before calculating a percentage.",
+        "points": [
+          "Corrected N2: .002 mol · N atoms: .004 mol · Dry gas amount supplied",
+          "Sample: .400 g · Nitrogen: .056 g =14% · Quantitative recovery assumed",
+          "Ordinary Kjeldahl · Nitro / azo / ring limits · Not an absence test"
+        ],
+        "board": {
+          "heading": "A conversion model comes before an elemental percentage",
+          "columns": [
+            "Species / model",
+            "Inference / result",
+            "Condition / limit"
+          ],
+          "rows": [
+            [
+              "Corrected N2: .002 mol",
+              "N atoms: .004 mol",
+              "Dry gas amount supplied"
+            ],
+            [
+              "Sample: .400 g",
+              "Nitrogen: .056 g =14%",
+              "Quantitative recovery assumed"
+            ],
+            [
+              "Ordinary Kjeldahl",
+              "Nitro / azo / ring limits",
+              "Not an absence test"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Combined nitrogen and sulfur can give thiocyanate rather than separate cyanide evidence",
+        "formula": "Selected fusion map: Na+C+N+S→NaSCN; Fe3++SCN−⇌[FeSCN]2+",
+        "script": "Element detection depends on what species the analytical conversion actually produces. In the usual simplified sodium fusion picture, carbon and nitrogen can give cyanide, while sulfur can give sulfide. When nitrogen and sulfur are both present, a selected pathway produces thiocyanate instead. Thiocyanate can form a red iron three complex, represented in a simple equilibrium as iron three plus thiocyanate giving iron thiocyanate two plus. The charge changes from a total of plus two on the left to plus two on the right. This is a coordination equilibrium, not a requirement that the iron change oxidation state. If nitrogen has entered thiocyanate rather than free cyanide, expecting an ordinary cyanide based blue test without considering conversion conditions can lead to a false negative. The actual fusion products depend on conditions, and excess sodium can change the simplified product map. The red colour is evidence within a controlled analytical context, not a unique proof that an unknown originally contained both elements. External thiocyanate or other coloured species can interfere. Compare blanks and independent evidence before identifying the original compound. These are reaction principles rather than laboratory instructions.",
+        "points": [
+          "N and S together · Selected SCN− product · Fusion conditions matter",
+          "Fe3+ + SCN− · [FeSCN]2+ red model · Charge +2 on both sides",
+          "Red colour alone · Evidence, not identity · Check blanks / interference"
+        ],
+        "board": {
+          "heading": "A combined-element product changes the detection pathway",
+          "columns": [
+            "Species / model",
+            "Inference / result",
+            "Condition / limit"
+          ],
+          "rows": [
+            [
+              "N and S together",
+              "Selected SCN− product",
+              "Fusion conditions matter"
+            ],
+            [
+              "Fe3+ + SCN−",
+              "[FeSCN]2+ red model",
+              "Charge +2 on both sides"
+            ],
+            [
+              "Red colour alone",
+              "Evidence, not identity",
+              "Check blanks / interference"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "A halide test must remove competing silver precipitates without adding the analyte",
+        "formula": "Ag++Cl−→AgCl; Ag++CN−→AgCN; 2Ag++S2−→Ag2S",
+        "script": "A precipitate formed with silver ions is not automatically a silver halide. A sodium fusion extract may contain cyanide or sulfide, and these species can also consume silver ions to form sparingly soluble products. The simplified equations use one silver ion per cyanide and two silver ions per sulfide. In a supplied bookkeeping example, zero point zero zero one mole of cyanide and the same amount of sulfide could consume zero point zero zero three mole of silver ions even if no halide were present. The textbook analytical logic therefore requires removal or destruction of the interfering species before interpreting a halide precipitation result. Acid choice is part of the blank: adding hydrochloric acid would introduce chloride and could create the very result being sought. Nitric acid is used in the conventional conceptual scheme because it does not introduce a halide. Merely lowering the pH does not prove that all interfering species have been removed quantitatively. Their conversion and absence must be established. This discussion explains selectivity and contamination; it is not a procedure for generating or handling the hazardous gases associated with these methods.",
+        "points": [
+          "AgCN / Ag2S · Also consume Ag+ · A precipitate is not unique",
+          ".001 mol CN− and S2− · .003 mol Ag+ demand · Before any actual halide",
+          "HCl added as acid · Introduces Cl− blank · Conventional choice: HNO3"
+        ],
+        "board": {
+          "heading": "Interference removal and an uncontaminated blank are separate",
+          "columns": [
+            "Species / model",
+            "Inference / result",
+            "Condition / limit"
+          ],
+          "rows": [
+            [
+              "AgCN / Ag2S",
+              "Also consume Ag+",
+              "A precipitate is not unique"
+            ],
+            [
+              ".001 mol CN− and S2−",
+              ".003 mol Ag+ demand",
+              "Before any actual halide"
+            ],
+            [
+              "HCl added as acid",
+              "Introduces Cl− blank",
+              "Conventional choice: HNO3"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Direct oxygen estimation must distinguish sample oxygen from reagent oxygen",
+        "formula": "I2O5+5CO→I2+5CO2; n(sample O atoms)=5n(I2) in the stated complete-conversion model",
+        "script": "An oxygen estimate by difference requires that all other elemental percentages are known on the same sample basis. A supporting direct method instead uses a specified conversion chain. Assume every oxygen atom in the sample is converted into one carbon monoxide molecule and that the resulting carbon monoxide reacts quantitatively with iodine pentoxide. The balance is one iodine pentoxide plus five carbon monoxide giving one iodine molecule and five carbon dioxide molecules. Five sample oxygen atoms therefore correspond to one iodine molecule. For a supplied zero point two five four gram of iodine and molar mass two hundred fifty-four grams per mole, the iodine amount is zero point zero zero one mole. This represents zero point zero zero five mole of sample oxygen atoms, or zero point zero eight zero gram of oxygen. A zero point four zero zero gram sample would contain twenty percent oxygen under the stated assumptions. The carbon dioxide contains additional oxygen from the reagent. Counting both oxygen atoms in every carbon dioxide molecule as sample oxygen would double the answer incorrectly. Blank corrections and complete conversion remain necessary. The atom ledger, rather than the product name alone, sets the gravimetric factor.",
+        "points": [
+          "5 sample O atoms · 5CO → 5CO2 + I2 · 5 more O atoms from I2O5",
+          "I2: .254 g /254 · .001 mol I2 → .080 g O · Factor 5×16 /254",
+          "Sample: .400 g · Oxygen:20% · Not40% from all product O"
+        ],
+        "board": {
+          "heading": "Count sample oxygen separately from oxygen added by a reagent",
+          "columns": [
+            "Species / model",
+            "Inference / result",
+            "Condition / limit"
+          ],
+          "rows": [
+            [
+              "5 sample O atoms",
+              "5CO → 5CO2 + I2",
+              "5 more O atoms from I2O5"
+            ],
+            [
+              "I2: .254 g /254",
+              ".001 mol I2 → .080 g O",
+              "Factor 5×16 /254"
+            ],
+            [
+              "Sample: .400 g",
+              "Oxygen:20%",
+              "Not40% from all product O"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Corrected dry N2 amount is .002 mol from a .400 g sample. With N=14, the nitrogen percentage is:",
+        "options": [
+          "7%",
+          "14%",
+          "28%",
+          "2%"
+        ],
+        "answer": 1,
+        "explanation": "Two nitrogen atoms per N2 give .004 mol N and .056 g; .056/.400×100=14%."
+      },
+      {
+        "question": "Which is a standard limitation of the ordinary, unmodified textbook Kjeldahl method?",
+        "options": [
+          "Every amide nitrogen is always excluded",
+          "No nitrogen compound can be measured",
+          "Nitro, azo and selected ring nitrogen may not convert quantitatively",
+          "It directly measures all nitrogen as N2"
+        ],
+        "answer": 2,
+        "explanation": "Ordinary Kjeldahl conversion to ammonium is not quantitative for these specified nitrogen types; a validated modified method is a separate case."
+      },
+      {
+        "question": "In the selected joint N/S fusion map, which species explains the red Fe3+ complex?",
+        "options": [
+          "Only nitrate",
+          "Only sulfate",
+          "Chloride",
+          "Thiocyanate, SCN−"
+        ],
+        "answer": 3,
+        "explanation": "The selected fusion pathway gives thiocyanate, whose iron(III) coordination can yield red evidence under suitable conditions."
+      },
+      {
+        "question": "For Fe3++SCN−⇌[FeSCN]2+, the net charge on each side is:",
+        "options": [
+          "+2",
+          "+3",
+          "−2",
+          "0"
+        ],
+        "answer": 0,
+        "explanation": "The charges add as +3−1=+2; complex formation does not require an iron oxidation-state change."
+      },
+      {
+        "question": "In the supplied precipitation ledger, .001 mol CN− and .001 mol S2− consume how much Ag+?",
+        "options": [
+          ".001 mol",
+          ".003 mol",
+          ".002 mol",
+          ".004 mol"
+        ],
+        "answer": 1,
+        "explanation": "AgCN needs .001 mol Ag+ and Ag2S needs .002 mol; total .003 mol before considering any halide."
+      },
+      {
+        "question": "Why is hydrochloric acid unsuitable as an uncontaminated acid blank before testing an extract for chloride?",
+        "options": [
+          "It removes every chloride ion",
+          "It never affects silver chemistry",
+          "It introduces the chloride being tested for",
+          "All acids introduce chloride"
+        ],
+        "answer": 2,
+        "explanation": "Hydrochloric acid adds chloride, which can form AgCl independently of chloride originally present in the sample."
+      },
+      {
+        "question": "In the stated direct oxygen model, .001 mol I2 corresponds to how many moles of sample O atoms?",
+        "options": [
+          ".001 mol",
+          ".002 mol",
+          ".010 mol",
+          ".005 mol"
+        ],
+        "answer": 3,
+        "explanation": "The balanced I2O5+5CO reaction maps five sample oxygen atoms in CO to each iodine molecule."
+      },
+      {
+        "question": "The stated .400 g sample gives .254 g I2, with M(I2)=254 and O=16. Its oxygen percentage is:",
+        "options": [
+          "20%",
+          "40%",
+          "10%",
+          "80%"
+        ],
+        "answer": 0,
+        "explanation": "The iodine amount is .001 mol, so sample oxygen is 5×.001×16=.080 g and .080/.400×100=20%."
+      }
+    ],
+    "sources": [
+      {
+        "title": "NCERT: organic analysis and direct oxygen estimation",
+        "url": "https://ncert.nic.in/textbook/pdf/kech202.pdf"
+      },
+      {
+        "title": "IIT Kanpur SATHEE: nitrogen estimation and joint N/S detection",
+        "url": "https://sathee.iitk.ac.in/important-formula/chemistry/qualitative_analysis/"
+      }
+    ]
+  },
+  "practical-chemistry": {
+    "chapters": [
+      {
+        "title": "Sulfide separation depends on the maintained pH and free-ion thresholds",
+        "formula": "Model [S2−]=A/[H+]², A=10−27 M³; Ksp(CuS)=10−36, Ksp(ZnS)=10−24; initial metal ions .001 M",
+        "script": "Selective precipitation requires comparing an ion product with the solubility product under the actual solution conditions. In a supporting ideal sulfide model, a reservoir maintains dissolved hydrogen sulfide and the acid equilibria give sulfide concentration equal to a supplied constant divided by hydrogen ion concentration squared. Use a stipulated constant of ten to the minus twenty-seven in compatible concentration units. At pH one, sulfide is ten to the minus twenty-five molar. At pH four, it is ten to the minus nineteen molar. For initial free copper two and zinc two concentrations of zero point zero zero one molar, supplied solubility products of ten to the minus thirty-six and ten to the minus twenty-four give onset thresholds of ten to the minus thirty-three and ten to the minus twenty-one molar sulfide. The pH one model crosses the copper threshold but not the zinc threshold. The pH four model crosses both initial thresholds. Metal concentrations then decrease as precipitation proceeds. Activities, complexation and reservoir limitations can change the real separation. These illustrative constants explain the selection principle, not a complete experimental recipe. A group label never replaces the free-ion balance.",
+        "points": [
+          "pH1: [S2−]=10−25 M · CuS onset, not ZnS · Initial free metals .001 M",
+          "pH4: [S2−]=10−19 M · Both onsets crossed · Metals then decrease",
+          "Onset S2−:10−33 /10−21 · Supplied Ksp /[M2+] · Reservoir / ideal assumptions"
+        ],
+        "board": {
+          "heading": "A pH change can cross a second precipitation threshold",
+          "columns": [
+            "Species / model",
+            "Inference / result",
+            "Condition / limit"
+          ],
+          "rows": [
+            [
+              "pH1: [S2−]=10−25 M",
+              "CuS onset, not ZnS",
+              "Initial free metals .001 M"
+            ],
+            [
+              "pH4: [S2−]=10−19 M",
+              "Both onsets crossed",
+              "Metals then decrease"
+            ],
+            [
+              "Onset S2−:10−33 /10−21",
+              "Supplied Ksp /[M2+]",
+              "Reservoir / ideal assumptions"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Nitrite and nitrate have different oxidation ledgers with permanganate",
+        "formula": "5NO2−+2MnO4−+6H+→5NO3−+2Mn2++3H2O",
+        "script": "Nitrite and nitrate contain the same element but do not have the same oxidation state or reducing capacity. Nitrogen in nitrite is plus three, while nitrogen in nitrate is plus five. In a selected acidic oxidation, each nitrite ion releases two electrons as it becomes nitrate. A permanganate ion reduced to manganese two accepts five electrons. Ten electrons are matched by five nitrites and two permanganates. The complete net balance uses six protons and gives three waters along with five nitrates and two manganese two ions. Under this stipulated quantitative endpoint, zero point zero one zero mole of nitrite requires zero point zero zero four mole of permanganate. Nitrate already contains nitrogen at plus five and does not supply the same nitrite to nitrate oxidation equivalents. A colour change with permanganate is still not uniquely diagnostic of nitrite, because many other reducing species also react. Actual acidic nitrite can undergo competing changes, so the net equation alone does not validate an assay procedure. The calculation assumes the stated products, complete reaction and controlled interference. Check both the electron count and the nitrogen inventory before interpreting a result.",
+        "points": [
+          "NO2−: N+3 → N+5 · 2e− released each · Nitrate is not the same reductant",
+          "MnO4− → Mn2+ · 5e− accepted each · Acidic endpoint specified",
+          ".010 mol NO2− · .004 mol MnO4− · 5:2 stoichiometric ratio"
+        ],
+        "board": {
+          "heading": "Oxidation state distinguishes nitrite from nitrate demand",
+          "columns": [
+            "Species / model",
+            "Inference / result",
+            "Condition / limit"
+          ],
+          "rows": [
+            [
+              "NO2−: N+3 → N+5",
+              "2e− released each",
+              "Nitrate is not the same reductant"
+            ],
+            [
+              "MnO4− → Mn2+",
+              "5e− accepted each",
+              "Acidic endpoint specified"
+            ],
+            [
+              ".010 mol NO2−",
+              ".004 mol MnO4−",
+              "5:2 stoichiometric ratio"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Chromyl chloride evidence tracks chlorine atoms without reducing chromium",
+        "formula": "Cr2O7²−+4Cl−+6H+→2CrO2Cl2+3H2O; CrO2Cl2+4OH−→CrO4²−+2Cl−+2H2O",
+        "script": "The chromyl chloride comparison illustrates why a named qualitative test needs a species map and an applicability limit. In the selected formal acid balance, one dichromate and four chlorides give two chromyl chloride molecules and three waters while consuming six protons. Chromium is plus six in both dichromate and chromyl chloride. Chlorine remains minus one. The equation is therefore not a chromium reduction simply because chloride is present. A separate alkaline product map converts one chromyl chloride into one chromate and two chlorides using four hydroxides. For an ideal inventory containing zero point zero zero four mole of available chloride, the formal maximum is zero point zero zero two mole of chromyl chloride if the other requirements are satisfied. This is an atom-balance ceiling, not a guaranteed recovery. The conventional comparison is chloride specific; bromide or iodide do not justify substituting their symbols into the same named product. Insoluble or poorly available chloride sources and matrix effects also limit interpretation. Chromium compounds and these reactive vapours require a supervised laboratory context. Here the equations explain selectivity and conservation, rather than providing preparation or handling instructions.",
+        "points": [
+          "Cr2O7²− +4Cl− +6H+ · 2CrO2Cl2 +3H2O · Cr stays +6; Cl stays−1",
+          "CrO2Cl2 +4OH− · CrO4²− +2Cl− +2H2O · Separate alkaline map",
+          "Available chloride: .004 mol · Formal CrO2Cl2 ≤.002 mol · Not a guaranteed recovery"
+        ],
+        "board": {
+          "heading": "A chloride product map does not require a chromium redox change",
+          "columns": [
+            "Species / model",
+            "Inference / result",
+            "Condition / limit"
+          ],
+          "rows": [
+            [
+              "Cr2O7²− +4Cl− +6H+",
+              "2CrO2Cl2 +3H2O",
+              "Cr stays +6; Cl stays−1"
+            ],
+            [
+              "CrO2Cl2 +4OH−",
+              "CrO4²− +2Cl− +2H2O",
+              "Separate alkaline map"
+            ],
+            [
+              "Available chloride: .004 mol",
+              "Formal CrO2Cl2 ≤.002 mol",
+              "Not a guaranteed recovery"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "Permanganate decolourization is oxidation evidence rather than unique proof of an alkene",
+        "formula": "A C=C bond can be oxidized; aldehydes and other reductants can also consume MnO4−",
+        "script": "A qualitative observation supports a chemical hypothesis only when alternative causes have been considered. Loss of permanganate colour can be consistent with oxidation of a carbon carbon double bond under the selected conditions. It does not uniquely prove that an unknown is an alkene. An aldehyde is also readily oxidized in suitable permanganate chemistry, even when it has no carbon carbon double bond. Other reducing substances or contamination may consume the reagent as well. Conversely, poor mixing, a poorly soluble sample or unsuitable conditions can make an expected change difficult to observe. A negative result is therefore meaningful only within a validated test domain. A useful reasoning table compares a reagent blank, a known positive control and the unknown under matched conditions, then asks what independent structural evidence distinguishes the remaining candidates. The manganese product also depends on the medium; a neutral or alkaline comparison cannot automatically use the acidic five-electron reduction to manganese two. Do not infer a numerical amount of unsaturation from colour loss without a specified stoichiometric endpoint and validated selectivity. This chapter separates an observation, an oxidation interpretation and a molecular identification, rather than treating those as the same claim.",
+        "points": [
+          "Loss of purple colour · Oxidant was consumed · Not uniquely C=C",
+          "Aldehyde without C=C · Can also be oxidized · Suitable conditions required",
+          "Blank + positive control · Test the method domain · Need independent identity evidence"
+        ],
+        "board": {
+          "heading": "An oxidation observation narrows possibilities without proving identity",
+          "columns": [
+            "Species / model",
+            "Inference / result",
+            "Condition / limit"
+          ],
+          "rows": [
+            [
+              "Loss of purple colour",
+              "Oxidant was consumed",
+              "Not uniquely C=C"
+            ],
+            [
+              "Aldehyde without C=C",
+              "Can also be oxidized",
+              "Suitable conditions required"
+            ],
+            [
+              "Blank + positive control",
+              "Test the method domain",
+              "Need independent identity evidence"
+            ]
+          ]
+        }
+      }
+    ],
+    "quiz": [
+      {
+        "question": "With [S2−]=10−27/[H+]², what is [S2−] at pH1 in the supplied model?",
+        "options": [
+          "10−29 M",
+          "10−25 M",
+          "10−21 M",
+          "10−19 M"
+        ],
+        "answer": 1,
+        "explanation": "At pH1, [H+]=10−1 M; division by 10−2 gives 10−25 M."
+      },
+      {
+        "question": "Initial [Cu2+]=[Zn2+]=.001 M; supplied Ksp values are10−36 and10−24. At [S2−]=10−25 M, which initial onset is crossed?",
+        "options": [
+          "Neither",
+          "Only ZnS",
+          "Only CuS",
+          "Both"
+        ],
+        "answer": 2,
+        "explanation": "Both ion products are10−28; this exceeds10−36 for CuS but remains below10−24 for ZnS."
+      },
+      {
+        "question": "For the stated acidic nitrite-to-nitrate and permanganate-to-Mn2+ endpoints, .010 mol nitrite requires:",
+        "options": [
+          ".025 mol MnO4−",
+          ".010 mol MnO4−",
+          ".005 mol MnO4−",
+          ".004 mol MnO4−"
+        ],
+        "answer": 3,
+        "explanation": "Five nitrites release ten electrons and two permanganates accept ten; .010×2/5=.004 mol."
+      },
+      {
+        "question": "Why does nitrate not supply the same reducing equivalents as nitrite in this selected oxidation?",
+        "options": [
+          "N is already+5 in nitrate rather than+3",
+          "Nitrate contains no nitrogen",
+          "Every nitrate is an insoluble solid",
+          "Nitrate has more negative total charge"
+        ],
+        "answer": 0,
+        "explanation": "Nitrite nitrogen rises from+3 to+5; nitrate nitrogen is already+5 and does not undergo that same oxidation."
+      },
+      {
+        "question": "In the displayed dichromate-to-chromyl-chloride map, chromium changes from:",
+        "options": [
+          "+6 to+3",
+          "+6 to+6",
+          "+3 to+6",
+          "+7 to+2"
+        ],
+        "answer": 1,
+        "explanation": "O(−2) and Cl(−1) place chromium at+6 in CrO2Cl2, as it is in dichromate."
+      },
+      {
+        "question": "With .004 mol available chloride, the formal maximum CrO2Cl2 amount in the selected balance is:",
+        "options": [
+          ".004 mol",
+          ".008 mol",
+          ".002 mol",
+          ".001 mol"
+        ],
+        "answer": 2,
+        "explanation": "Four chloride ions give two chromyl chloride molecules, so the formal ceiling is .004×2/4=.002 mol."
+      },
+      {
+        "question": "Which conclusion from permanganate colour loss alone is justified in the selected test context?",
+        "options": [
+          "The unknown must be ethene",
+          "Every original C=C has been counted quantitatively",
+          "The sample contains only one compound",
+          "An oxidizable species may be present; identity needs more evidence"
+        ],
+        "answer": 3,
+        "explanation": "Alkenes are not the only species that consume permanganate; aldehydes and other reductants can also respond."
+      },
+      {
+        "question": "Why must a neutral/alkaline permanganate comparison specify its manganese product before a mole calculation?",
+        "options": [
+          "The electron capacity depends on the stated manganese endpoint",
+          "All manganese products have the same oxidation state",
+          "The acidic Mn2+ ratio applies in every medium",
+          "Colour alone gives the exact number of electrons"
+        ],
+        "answer": 0,
+        "explanation": "MnO4− to Mn2+ accepts five electrons, whereas a MnO2 endpoint accepts three; the medium and selected products matter."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Averill: selective precipitation and pH control",
+        "url": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Book%3A_General_Chemistry%3A_Principles_Patterns_and_Applications_%28Averill%29/17%3A_Solubility_and_Complexation_Equilibria/17.06%3A_Qualitative_Analysis_Using_Selective_Precipitation"
+      },
+      {
+        "title": "University of Canterbury: nitrite electron balance",
+        "url": "https://www.canterbury.ac.nz/content/dam/uoc-main-site/documents/pdfs/d-other/past-exam-papers/CHEM-OLYMPIAD-2015-Exam-answers.pdf"
+      },
+      {
+        "title": "IIT Kanpur SATHEE: chromyl chloride equations",
+        "url": "https://sathee.iitk.ac.in/sathee-neet/important-formula/chemistry/qualitative_analysis/"
+      },
+      {
+        "title": "OpenStax: aldehyde oxidation",
+        "url": "https://openstax.org/books/organic-chemistry/pages/19-3-oxidation-of-aldehydes-and-ketones"
+      }
+    ]
+  }
+} as const;

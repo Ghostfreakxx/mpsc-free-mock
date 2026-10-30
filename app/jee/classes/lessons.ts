@@ -1273,7 +1273,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "purification-analysis", subject: "Chemistry", unit: 13, number: "C17", title: purificationAnalysis.title,
-    description: "Twenty-nine narrated chapters on separation, two-solute crystallization, vacuum boiling, chromatographic resolution, gravimetric bounds and elemental analysis.",
+    description: "Thirty-three narrated chapters on purification, elemental analysis, nitrogen-method limits, joint nitrogen/sulfur detection, halide-test interference and direct oxygen accounting.",
     scope: "Recorded Unit 13 foundation with original practice. Further analytical equations, correlated uncertainty, nonideal extraction and larger datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.purification-analysis.lecture.v1",
     audio: "/lectures/purification-analysis/narration-marin.mp3",
@@ -1283,7 +1283,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "practical-chemistry", subject: "Chemistry", unit: 20, number: "C18", title: practicalChemistry.title,
-    description: "Thirty-three narrated chapters on qualitative evidence, nickel and calcium confirmations, flame-test blanks, phosphate comparisons, titration and gravimetry.",
+    description: "Thirty-seven narrated chapters on practical chemistry, pH-dependent sulfide selection, nitrite oxidation, chromyl chloride atom balances and qualitative-test limits.",
     scope: "Recorded Unit 20 conceptual foundation with original practice. Full ion-analysis schemes, all preparation equations, indicator curves, sol preparation and further kinetic datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.practical-chemistry.lecture.v1",
     audio: "/lectures/practical-chemistry/narration-marin.mp3",

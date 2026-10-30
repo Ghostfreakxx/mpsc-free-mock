@@ -28,18 +28,18 @@ Questions are original practice, not represented as official PYQs.
 | 10 | [P-Block](/jee/classes/p-block) | 35 | 33 | 21 | 58 / 58 |
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 35 | 33 | 21 | 58 / 58 |
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 30 | 33 | 25 | 58 / 58 |
-| 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 29 | 29 | 18 | 48 / 48 |
+| 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 33 | 33 | 21 | 56 / 56 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 29 | 32 | 23 | 52 / 52 |
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 33 | 33 | 21 | 56 / 56 |
 | 16 | [Organic Halogens](/jee/classes/organic-halogens) | 33 | 33 | 21 | 56 / 56 |
 | 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 35 | 33 | 21 | 56 / 56 |
 | 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 33 | 33 | 21 | 56 / 56 |
 | 19 | [Biomolecules](/jee/classes/biomolecules) | 33 | 33 | 21 | 56 / 56 |
-| 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 33 | 33 | 21 | 56 / 56 |
+| 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 37 | 37 | 24 | 64 / 64 |
 
 ## Latest expansion
 
-P-Block adds catenation comparisons, halogen displacement, nitrogen oxide redox and amphoteric alumina. D/F-Block adds atomization, dichromate oxidation endpoints, supplied free-ion magnetic models and ceria charge inventories. This adds eight narrated chapters, sixteen original questions and six worked examples.
+Purification and Analysis adds nitrogen-method applicability, joint nitrogen/sulfur detection, halide-test interference controls and direct oxygen accounting. Practical Chemistry adds supporting sulfide selection, nitrite oxidation, chromyl chloride atom balances and the limits of permanganate identity tests. This adds eight narrated chapters, sixteen original questions and six worked examples.
 
 ## Remaining scope
 
@@ -53,10 +53,12 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference NCERT, OpenStax, Open University magnetic models and primary ceria research. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference NCERT, IIT Kanpur SATHEE, Averill selective precipitation, University of Canterbury nitrite balances and OpenStax aldehyde oxidation. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks
 include content tests, lint, types, dependency audit, production build, course and
 library browser checks, and the full mobile smoke test. Scope labels must remain
 honest about outstanding work.
+
+Publish validated class updates through Git on the production branch `main`. Let the Git build finish, then verify the deployed commit, Ready/Promoted production status, main domain and public playback. Do not replace it with a metadata-free snapshot upload or cancel it as a duplicate.

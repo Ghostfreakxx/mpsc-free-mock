@@ -73,6 +73,10 @@
     {
       "title": "David Harvey: general chromatography theory",
       "url": "https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_by_David_Harvey/Analytical_Chemistry_2.1_(Harvey)/12%3A_Chromatographic_and_Electrophoretic_Methods/12.02%3A_General_Theory_of_Column_Chromatography"
+    },
+    {
+      "title": "IIT Kanpur SATHEE: nitrogen estimation and joint N/S detection",
+      "url": "https://sathee.iitk.ac.in/important-formula/chemistry/qualitative_analysis/"
     }
   ],
   "chapters": [
@@ -1090,6 +1094,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Nitrogen estimation needs quantitative conversion as well as a nitrogen atom",
+      "formula": "Dumas: n(N atoms)=2n(N2); ordinary Kjeldahl excludes nitro, azo and selected ring nitrogen",
+      "script": "A nitrogen percentage is reliable only when the method converts the relevant nitrogen quantitatively into its measured form. A molecular formula containing nitrogen does not guarantee that every estimation method will recover it. In the elementary Dumas model, nitrogen is ultimately measured as molecular nitrogen after other gaseous products and interfering nitrogen oxides have been dealt with. One mole of nitrogen gas represents two moles of nitrogen atoms. For a supplied dry, corrected gas amount of zero point zero zero two mole from a zero point four zero zero gram sample, the nitrogen mass is zero point zero five six gram, giving fourteen percent. The ordinary textbook Kjeldahl method follows a different conversion. Nitrogen is first converted into ammonium ions. The stated analytical balance then liberates and captures ammonia gas to provide the measured amount. Nitro nitrogen, azo nitrogen and nitrogen in a ring such as pyridine are standard limitations of that unmodified method. A modified analytical method may extend the scope, but its recovery must be established separately. A small ammonia result for an unsuitable sample is not proof that nitrogen is absent. Always state the conversion chemistry and the measured nitrogen species before calculating a percentage.",
+      "points": [
+        "Corrected N2: .002 mol · N atoms: .004 mol · Dry gas amount supplied",
+        "Sample: .400 g · Nitrogen: .056 g =14% · Quantitative recovery assumed",
+        "Ordinary Kjeldahl · Nitro / azo / ring limits · Not an absence test"
+      ],
+      "board": {
+        "heading": "A conversion model comes before an elemental percentage",
+        "columns": [
+          "Species / model",
+          "Inference / result",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Corrected N2: .002 mol",
+            "N atoms: .004 mol",
+            "Dry gas amount supplied"
+          ],
+          [
+            "Sample: .400 g",
+            "Nitrogen: .056 g =14%",
+            "Quantitative recovery assumed"
+          ],
+          [
+            "Ordinary Kjeldahl",
+            "Nitro / azo / ring limits",
+            "Not an absence test"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Combined nitrogen and sulfur can give thiocyanate rather than separate cyanide evidence",
+      "formula": "Selected fusion map: Na+C+N+S→NaSCN; Fe3++SCN−⇌[FeSCN]2+",
+      "script": "Element detection depends on what species the analytical conversion actually produces. In the usual simplified sodium fusion picture, carbon and nitrogen can give cyanide, while sulfur can give sulfide. When nitrogen and sulfur are both present, a selected pathway produces thiocyanate instead. Thiocyanate can form a red iron three complex, represented in a simple equilibrium as iron three plus thiocyanate giving iron thiocyanate two plus. The charge changes from a total of plus two on the left to plus two on the right. This is a coordination equilibrium, not a requirement that the iron change oxidation state. If nitrogen has entered thiocyanate rather than free cyanide, expecting an ordinary cyanide based blue test without considering conversion conditions can lead to a false negative. The actual fusion products depend on conditions, and excess sodium can change the simplified product map. The red colour is evidence within a controlled analytical context, not a unique proof that an unknown originally contained both elements. External thiocyanate or other coloured species can interfere. Compare blanks and independent evidence before identifying the original compound. These are reaction principles rather than laboratory instructions.",
+      "points": [
+        "N and S together · Selected SCN− product · Fusion conditions matter",
+        "Fe3+ + SCN− · [FeSCN]2+ red model · Charge +2 on both sides",
+        "Red colour alone · Evidence, not identity · Check blanks / interference"
+      ],
+      "board": {
+        "heading": "A combined-element product changes the detection pathway",
+        "columns": [
+          "Species / model",
+          "Inference / result",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "N and S together",
+            "Selected SCN− product",
+            "Fusion conditions matter"
+          ],
+          [
+            "Fe3+ + SCN−",
+            "[FeSCN]2+ red model",
+            "Charge +2 on both sides"
+          ],
+          [
+            "Red colour alone",
+            "Evidence, not identity",
+            "Check blanks / interference"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A halide test must remove competing silver precipitates without adding the analyte",
+      "formula": "Ag++Cl−→AgCl; Ag++CN−→AgCN; 2Ag++S2−→Ag2S",
+      "script": "A precipitate formed with silver ions is not automatically a silver halide. A sodium fusion extract may contain cyanide or sulfide, and these species can also consume silver ions to form sparingly soluble products. The simplified equations use one silver ion per cyanide and two silver ions per sulfide. In a supplied bookkeeping example, zero point zero zero one mole of cyanide and the same amount of sulfide could consume zero point zero zero three mole of silver ions even if no halide were present. The textbook analytical logic therefore requires removal or destruction of the interfering species before interpreting a halide precipitation result. Acid choice is part of the blank: adding hydrochloric acid would introduce chloride and could create the very result being sought. Nitric acid is used in the conventional conceptual scheme because it does not introduce a halide. Merely lowering the pH does not prove that all interfering species have been removed quantitatively. Their conversion and absence must be established. This discussion explains selectivity and contamination; it is not a procedure for generating or handling the hazardous gases associated with these methods.",
+      "points": [
+        "AgCN / Ag2S · Also consume Ag+ · A precipitate is not unique",
+        ".001 mol CN− and S2− · .003 mol Ag+ demand · Before any actual halide",
+        "HCl added as acid · Introduces Cl− blank · Conventional choice: HNO3"
+      ],
+      "board": {
+        "heading": "Interference removal and an uncontaminated blank are separate",
+        "columns": [
+          "Species / model",
+          "Inference / result",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "AgCN / Ag2S",
+            "Also consume Ag+",
+            "A precipitate is not unique"
+          ],
+          [
+            ".001 mol CN− and S2−",
+            ".003 mol Ag+ demand",
+            "Before any actual halide"
+          ],
+          [
+            "HCl added as acid",
+            "Introduces Cl− blank",
+            "Conventional choice: HNO3"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Direct oxygen estimation must distinguish sample oxygen from reagent oxygen",
+      "formula": "I2O5+5CO→I2+5CO2; n(sample O atoms)=5n(I2) in the stated complete-conversion model",
+      "script": "An oxygen estimate by difference requires that all other elemental percentages are known on the same sample basis. A supporting direct method instead uses a specified conversion chain. Assume every oxygen atom in the sample is converted into one carbon monoxide molecule and that the resulting carbon monoxide reacts quantitatively with iodine pentoxide. The balance is one iodine pentoxide plus five carbon monoxide giving one iodine molecule and five carbon dioxide molecules. Five sample oxygen atoms therefore correspond to one iodine molecule. For a supplied zero point two five four gram of iodine and molar mass two hundred fifty-four grams per mole, the iodine amount is zero point zero zero one mole. This represents zero point zero zero five mole of sample oxygen atoms, or zero point zero eight zero gram of oxygen. A zero point four zero zero gram sample would contain twenty percent oxygen under the stated assumptions. The carbon dioxide contains additional oxygen from the reagent. Counting both oxygen atoms in every carbon dioxide molecule as sample oxygen would double the answer incorrectly. Blank corrections and complete conversion remain necessary. The atom ledger, rather than the product name alone, sets the gravimetric factor.",
+      "points": [
+        "5 sample O atoms · 5CO → 5CO2 + I2 · 5 more O atoms from I2O5",
+        "I2: .254 g /254 · .001 mol I2 → .080 g O · Factor 5×16 /254",
+        "Sample: .400 g · Oxygen:20% · Not40% from all product O"
+      ],
+      "board": {
+        "heading": "Count sample oxygen separately from oxygen added by a reagent",
+        "columns": [
+          "Species / model",
+          "Inference / result",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "5 sample O atoms",
+            "5CO → 5CO2 + I2",
+            "5 more O atoms from I2O5"
+          ],
+          [
+            "I2: .254 g /254",
+            ".001 mol I2 → .080 g O",
+            "Factor 5×16 /254"
+          ],
+          [
+            "Sample: .400 g",
+            "Oxygen:20%",
+            "Not40% from all product O"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1620,6 +1764,94 @@
       ],
       "answer": 3,
       "explanation": "Sulfate mass=.4660×96/233=.1920 g; .1920/.6000×100=32.0%."
+    },
+    {
+      "question": "Corrected dry N2 amount is .002 mol from a .400 g sample. With N=14, the nitrogen percentage is:",
+      "options": [
+        "7%",
+        "14%",
+        "28%",
+        "2%"
+      ],
+      "answer": 1,
+      "explanation": "Two nitrogen atoms per N2 give .004 mol N and .056 g; .056/.400×100=14%."
+    },
+    {
+      "question": "Which is a standard limitation of the ordinary, unmodified textbook Kjeldahl method?",
+      "options": [
+        "Every amide nitrogen is always excluded",
+        "No nitrogen compound can be measured",
+        "Nitro, azo and selected ring nitrogen may not convert quantitatively",
+        "It directly measures all nitrogen as N2"
+      ],
+      "answer": 2,
+      "explanation": "Ordinary Kjeldahl conversion to ammonium is not quantitative for these specified nitrogen types; a validated modified method is a separate case."
+    },
+    {
+      "question": "In the selected joint N/S fusion map, which species explains the red Fe3+ complex?",
+      "options": [
+        "Only nitrate",
+        "Only sulfate",
+        "Chloride",
+        "Thiocyanate, SCN−"
+      ],
+      "answer": 3,
+      "explanation": "The selected fusion pathway gives thiocyanate, whose iron(III) coordination can yield red evidence under suitable conditions."
+    },
+    {
+      "question": "For Fe3++SCN−⇌[FeSCN]2+, the net charge on each side is:",
+      "options": [
+        "+2",
+        "+3",
+        "−2",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "The charges add as +3−1=+2; complex formation does not require an iron oxidation-state change."
+    },
+    {
+      "question": "In the supplied precipitation ledger, .001 mol CN− and .001 mol S2− consume how much Ag+?",
+      "options": [
+        ".001 mol",
+        ".003 mol",
+        ".002 mol",
+        ".004 mol"
+      ],
+      "answer": 1,
+      "explanation": "AgCN needs .001 mol Ag+ and Ag2S needs .002 mol; total .003 mol before considering any halide."
+    },
+    {
+      "question": "Why is hydrochloric acid unsuitable as an uncontaminated acid blank before testing an extract for chloride?",
+      "options": [
+        "It removes every chloride ion",
+        "It never affects silver chemistry",
+        "It introduces the chloride being tested for",
+        "All acids introduce chloride"
+      ],
+      "answer": 2,
+      "explanation": "Hydrochloric acid adds chloride, which can form AgCl independently of chloride originally present in the sample."
+    },
+    {
+      "question": "In the stated direct oxygen model, .001 mol I2 corresponds to how many moles of sample O atoms?",
+      "options": [
+        ".001 mol",
+        ".002 mol",
+        ".010 mol",
+        ".005 mol"
+      ],
+      "answer": 3,
+      "explanation": "The balanced I2O5+5CO reaction maps five sample oxygen atoms in CO to each iodine molecule."
+    },
+    {
+      "question": "The stated .400 g sample gives .254 g I2, with M(I2)=254 and O=16. Its oxygen percentage is:",
+      "options": [
+        "20%",
+        "40%",
+        "10%",
+        "80%"
+      ],
+      "answer": 0,
+      "explanation": "The iodine amount is .001 mol, so sample oxygen is 5×.001×16=.080 g and .080/.400×100=20%."
     }
   ]
 }
