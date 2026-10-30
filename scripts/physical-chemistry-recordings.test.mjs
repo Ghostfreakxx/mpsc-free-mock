@@ -7,9 +7,9 @@ for (const [id,unit] of [['chemical-thermodynamics',4],['solutions',5]]) {
  const lesson=JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`));
  test(`${id}: recording matches the written companion and keeps scope explicit`,()=>{
   assert.equal(lesson.subject,'Chemistry');assert.equal(lesson.unit,unit);
-  assert.equal(lesson.chapters.length,31);
+  assert.equal(lesson.chapters.length,35);
   assert.deepEqual(lesson.quiz,physicalChemistryLessons.find(l=>l.id===id).quiz);
-  assert.equal(lesson.quiz.length,50);
+  assert.equal(lesson.quiz.length,58);
   for(const [i,c]of lesson.chapters.entries()){
    const hash=createHash('sha256').update(JSON.stringify({script:c.speechInput??c.script,instructions:lesson.voiceInstructions,voice:'marin',model:'gpt-4o-mini-tts'})).digest('hex');
    assert.equal(fs.readFileSync('public/lectures/'+id+'/chapter-'+String(i+1).padStart(2,'0')+'.sha256','utf8'),hash);
@@ -20,7 +20,7 @@ for (const [id,unit] of [['chemical-thermodynamics',4],['solutions',5]]) {
  });
  test(`${id}: every spoken chapter has complete, bounded captions`,()=>{
   const t=JSON.parse(fs.readFileSync(`app/data/jee-${id}-timings.json`));
-  assert.equal(t.chapters.length,31);assert.ok(t.duration>850 && t.duration<31*90);
+  assert.equal(t.chapters.length,35);assert.ok(t.duration>850 && t.duration<35*90);
   const normalize=s=>s.toLowerCase().replace(/[^a-z0-9]/g,'');
   for(const [i,ch] of t.chapters.entries()){
    assert.equal(ch.start,i?t.chapters[i-1].end:0);

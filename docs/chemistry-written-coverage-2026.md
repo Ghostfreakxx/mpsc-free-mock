@@ -19,8 +19,8 @@ Questions are original practice, not represented as official PYQs.
 | 1 | [Mole Concept](/jee/classes/mole-concept) | 29 | 26 | 18 | 48 / 48 |
 | 2 | [Atomic Structure](/jee/classes/atomic-structure) | 33 | 30 | 21 | 58 / 58 |
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 33 | 32 | 21 | 58 / 58 |
-| 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 31 | 33 | 21 | 50 / 50 |
-| 5 | [Solutions](/jee/classes/solutions) | 31 | 33 | 21 | 50 / 50 |
+| 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 35 | 37 | 24 | 58 / 58 |
+| 5 | [Solutions](/jee/classes/solutions) | 35 | 37 | 24 | 58 / 58 |
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 33 | 33 | 25 | 58 / 58 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 34 | 35 | 25 | 58 / 58 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 30 | 33 | 25 | 58 / 58 |
@@ -39,9 +39,9 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Equilibrium adds diprotic species fractions, acid-coupled dissolution constants, equilibrium temperature ratios and product-fed heterogeneous gas balances. The acid distribution diagram counts all three forms at the supplied pH.
+Thermodynamics adds closed-cycle heat/work accounting, finite-body entropy, electrical calorimeter calibration and supporting joint enthalpy/entropy heat-capacity corrections. The cycle diagram states the chemistry work sign.
 
-Electrochemistry adds activity-corrected Nernst quotients, reference-electrode conversion, supporting ionic current fractions and matched reversible water-electrode pH lines. The water diagram keeps both potentials on the same reference scale and distinguishes a reversible gap from practical operating voltage.
+Solutions adds activity-corrected vapour pressure, partial molar volumes, supporting mixed-salt ionic strength and an osmotic virial bias model. The pressure diagram compares component contributions under ideal and supplied nonideal conditions.
 
 Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
 
@@ -57,7 +57,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference UCI diprotic fractions, OpenStax dissolution and gas equilibria, University of Texas van’t Hoff treatment, Lower activity and transport theory, Harvey reference electrodes and Williams water-cell thermodynamics. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference OpenStax cycle work, Arovas thermal equilibrium, Monash calorimeter calibration, DeVoe reaction and partial molar quantities, Ellgen activities, Bucknell ionic strength and Gutow osmotic virial theory. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

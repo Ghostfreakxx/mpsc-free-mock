@@ -57,6 +57,22 @@
     {
       "title": "Shepherd supplement: molar reaction enthalpy and Kirchhoff equation",
       "url": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Chemical_Thermodynamics_(Supplement_to_Shepherd_et_al.)/18%3A_Fundamental_13_-_Composition_Changes/18.04%3A_Molar_Reaction_Enthalpy"
+    },
+    {
+      "title": "OpenStax: cyclic pressure-volume work",
+      "url": "https://openstax.org/books/college-physics-2e/pages/15-2-the-first-law-of-thermodynamics-and-some-simple-processes"
+    },
+    {
+      "title": "Arovas: thermal equilibrium and entropy",
+      "url": "https://phys.libretexts.org/Bookshelves/Thermodynamics_and_Statistical_Mechanics/Book%3A_Thermodynamics_and_Statistical_Mechanics_%28Arovas%29/04%3A_Statistical_Ensembles/4.03%3A_Thermal_Equilibrium"
+    },
+    {
+      "title": "Monash: electrical calorimeter calibration",
+      "url": "https://www.monash.edu/student-academic-success/chemistry/quantifying-changes-in-chemical-reactions/using-calorimeters-for-accurate-heat-measurement"
+    },
+    {
+      "title": "DeVoe: reaction heat capacity and enthalpy",
+      "url": "https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/DeVoes_Thermodynamics_and_Chemistry/11%3A_Reactions_and_Other_Chemical_Processes/11.03%3A_Molar_Reaction_Enthalpy"
     }
   ],
   "chapters": [
@@ -1019,6 +1035,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "A closed cycle can transfer net heat and work while state changes vanish",
+      "formula": "Clockwise rectangle:P_high=2 bar,P_low=1 bar,V=1→3 L;Wby=200 J,wchem=−200 J,qnet=+200 J",
+      "script": "Returning to the same thermodynamic state does not mean that no energy was transferred along the way. Consider a closed working substance following a specified quasistatic rectangular pressure volume cycle. It expands from one to three litres at two bar, changes pressure at fixed volume, compresses back at one bar, and returns to its original pressure at fixed volume. The net work done by the substance is the enclosed area: one bar times two litres, or two hundred joules. In the chemistry convention, work on the system is therefore minus two hundred joules. Because internal energy returns to its initial value, the first law requires net heat into the system of plus two hundred joules. The system entropy also returns to its original value, but that alone does not prove zero entropy generation in the surroundings. Heat and work are path transfers; internal energy and entropy are state functions. The loop area gives net work, not the total heat absorbed on only the hot portions or an efficiency without additional information.",
+      "points": [
+        "2 bar expansion;1 bar return · Area=2 bar L=200 J · Clockwise quasistatic cycle",
+        "Chemistry work w · −200 J · Work done by substance",
+        "Cycle:ΔU=0;ΔSsystem=0 · qnet=+200 J · Not zero heat transfer"
+      ],
+      "board": {
+        "heading": "A cycle closes states,not energy transfers",
+        "columns": [
+          "Given / model",
+          "Balance / result",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "2 bar expansion;1 bar return",
+            "Area=2 bar L=200 J",
+            "Clockwise quasistatic cycle"
+          ],
+          [
+            "Chemistry work w",
+            "−200 J",
+            "Work done by substance"
+          ],
+          [
+            "Cycle:ΔU=0;ΔSsystem=0",
+            "qnet=+200 J",
+            "Not zero heat transfer"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Two finite bodies conserve energy while generating entropy",
+      "formula": "C1=C2=100 J/K;T1=400 K,T2=300 K;Tf=350 K;ΔStotal=100 ln(350/400)+100 ln(350/300)>0",
+      "script": "The surroundings in a heat transfer problem are not always an infinite reservoir at fixed temperature. Take two bodies with equal constant heat capacities of one hundred joules per kelvin, initially at four hundred and three hundred kelvin. Place the pair in an ideal insulated enclosure, allow only heat exchange between them, and neglect mechanical work and phase changes. Energy conservation gives a common final temperature of three hundred fifty kelvin. The hotter body loses five thousand joules and the cooler gains the same amount, so the combined energy change is zero. Entropy is a separate ledger. Evaluate each state change along a reversible reference heating or cooling path using heat capacity times the natural logarithm of final temperature divided by initial temperature. Adding the two changes gives one hundred times the logarithm of forty-nine divided by forty-eight, about two point zero six joules per kelvin. The total is positive even though no heat crossed the enclosure boundary. This models spontaneous finite-temperature heat exchange; replacing both logarithms by one heat divided by an arbitrary average temperature would lose the entropy-generation information.",
+      "points": [
+        "100 J/K each;400 and300 K · Final350 K · Insulated pair;no work",
+        "Hot loses5000 J · Cold gains5000 J · Combined ΔU=0",
+        "ΔSsum=100 ln(49/48) · ≈+2.06 J/K · Heat exchange is irreversible"
+      ],
+      "board": {
+        "heading": "Energy conservation does not imply zero entropy change",
+        "columns": [
+          "Given / model",
+          "Balance / result",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "100 J/K each;400 and300 K",
+            "Final350 K",
+            "Insulated pair;no work"
+          ],
+          [
+            "Hot loses5000 J",
+            "Cold gains5000 J",
+            "Combined ΔU=0"
+          ],
+          [
+            "ΔSsum=100 ln(49/48)",
+            "≈+2.06 J/K",
+            "Heat exchange is irreversible"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Electrical calibration precedes the reaction heat calculation",
+      "formula": "200 W×100 s=20 kJ;20 kJ/4 K=5 kJ/K;reaction3 K gives qrxn=−15 kJ in the stated constant-volume model",
+      "script": "A calorimeter temperature rise becomes a reaction energy only after the effective heat capacity is known. In a selected calibration, an electrical heater supplies two hundred watts for one hundred seconds, depositing twenty kilojoules while the measured temperature rises four kelvin. Assume heat leakage and other losses have been corrected or are negligible. The effective heat capacity of the complete calorimeter assembly is then five kilojoules per kelvin. Under the same assembly conditions, a reaction produces a three kelvin rise, so the calorimeter gains fifteen kilojoules. The reacting sample loses that energy as heat. If the sample corresponds to zero point zero one zero mole of the written reaction, its molar energy change is minus one thousand five hundred kilojoules per mole. In the stipulated rigid constant volume experiment with no other significant work, this measures a reaction internal energy change. It is not automatically a constant pressure enthalpy. Ignition energy, evaporation, changed filling and background heat can require separate corrections in a real instrument; calibration is not permission to ignore those differences.",
+      "points": [
+        "200 W for100 s · 20 kJ input;ΔT4 K · Ccal=5 kJ/K",
+        "Reaction ΔT3 K · qcal=+15 kJ · qrxn=−15 kJ",
+        "Reaction amount.010 mol · ΔUm=−1500 kJ/mol · Rigid;other work negligible"
+      ],
+      "board": {
+        "heading": "Calibrate the assembly before assigning reaction heat",
+        "columns": [
+          "Given / model",
+          "Balance / result",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "200 W for100 s",
+            "20 kJ input;ΔT4 K",
+            "Ccal=5 kJ/K"
+          ],
+          [
+            "Reaction ΔT3 K",
+            "qcal=+15 kJ",
+            "qrxn=−15 kJ"
+          ],
+          [
+            "Reaction amount.010 mol",
+            "ΔUm=−1500 kJ/mol",
+            "Rigid;other work negligible"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Supporting temperature correction updates enthalpy and entropy together",
+      "formula": "ΔH600=40 kJ+50 J/K×300 K=55 kJ;ΔS600=100+50 ln2=134.66 J/K;ΔG600≈−25.79 kJ/mol",
+      "script": "Using an enthalpy from one temperature with an entropy from another can create an inconsistent Gibbs calculation. In a supporting constant heat capacity model, take a standard reaction enthalpy of forty kilojoules per mole and entropy of one hundred joules per mole per kelvin at three hundred kelvin. Let the reaction heat capacity difference be fifty joules per mole per kelvin throughout the interval to six hundred kelvin, with no phase transition. The enthalpy correction is the heat capacity difference times the temperature interval, adding fifteen kilojoules per mole. The entropy correction instead integrates heat capacity difference divided by temperature, adding fifty times the natural logarithm of two joules per mole per kelvin. At six hundred kelvin, the consistent enthalpy is fifty-five kilojoules per mole and entropy about one hundred thirty-four point six six joules per mole per kelvin. Subtracting temperature times entropy gives standard Gibbs energy about minus twenty-five point seven nine kilojoules per mole. Use compatible units and the same reaction with the stated constant heat capacity difference.",
+      "points": [
+        "300 K:ΔH40 kJ/mol · ΔS100 J mol−1 K−1 · ΔCp=50 J mol−1 K−1",
+        "At600 K · ΔH55 kJ;ΔS134.66 J/K · No phase transition",
+        "ΔG=ΔH−TΔS · ≈−25.79 kJ/mol · Use both corrected values"
+      ],
+      "board": {
+        "heading": "Correct both state functions to the same temperature",
+        "columns": [
+          "Given / model",
+          "Balance / result",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "300 K:ΔH40 kJ/mol",
+            "ΔS100 J mol−1 K−1",
+            "ΔCp=50 J mol−1 K−1"
+          ],
+          [
+            "At600 K",
+            "ΔH55 kJ;ΔS134.66 J/K",
+            "No phase transition"
+          ],
+          [
+            "ΔG=ΔH−TΔS",
+            "≈−25.79 kJ/mol",
+            "Use both corrected values"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1571,6 +1727,94 @@
       ],
       "answer": 3,
       "explanation": "A positive fusion enthalpy raises the reactant term that is subtracted."
+    },
+    {
+      "question": "A clockwise rectangular cycle expands1→3 L at2 bar and compresses at1 bar. Chemistry-convention net work on the system?",
+      "options": [
+        "+200 J",
+        "−200 J",
+        "0 J",
+        "−600 J"
+      ],
+      "answer": 1,
+      "explanation": "The net work by the system is(2−1)(3−1)=2 bar L=200 J;work on it has the opposite sign."
+    },
+    {
+      "question": "For that closed cycle with ΔU=0,what is net heat into the system?",
+      "options": [
+        "−200 J",
+        "0 J",
+        "+200 J",
+        "It cannot exchange heat because entropy returns"
+      ],
+      "answer": 2,
+      "explanation": "ΔU=q+w=0 with w=−200 J gives q=+200 J. A state function returning does not make transfers vanish."
+    },
+    {
+      "question": "Two insulated bodies each have constant C=100 J/K at400 and300 K,with no work or phase change. Final common temperature?",
+      "options": [
+        "300 K",
+        "400 K",
+        "About346 K",
+        "350 K"
+      ],
+      "answer": 3,
+      "explanation": "Energy conservation with equal heat capacities gives the arithmetic mean350 K;the geometric mean belongs to a different reversible-work comparison."
+    },
+    {
+      "question": "Total entropy change for those two finite bodies?",
+      "options": [
+        "100 ln(49/48) J/K,positive",
+        "0 because no heat enters the enclosure",
+        "−100 ln(49/48) J/K",
+        "5000/350 J/K for the whole pair"
+      ],
+      "answer": 0,
+      "explanation": "Sum100 ln(350/400)+100 ln(350/300). Internal heat exchange can generate entropy in an insulated composite."
+    },
+    {
+      "question": "A200 W heater runs100 s and causes a corrected4 K rise. Effective calorimeter heat capacity?",
+      "options": [
+        "20 kJ/K",
+        "5 kJ/K",
+        ".05 kJ/K",
+        "800 kJ/K"
+      ],
+      "answer": 1,
+      "explanation": "Energy is20000 J=20 kJ;divide by4 K to obtain5 kJ/K."
+    },
+    {
+      "question": "That assembly rises3 K for.010 mol reaction at rigid volume,other work negligible. Molar internal energy change?",
+      "options": [
+        "+1500 kJ/mol",
+        "−15 kJ/mol",
+        "−1500 kJ/mol",
+        "+15 kJ/mol"
+      ],
+      "answer": 2,
+      "explanation": "The calorimeter gains15 kJ,so reaction heat is−15 kJ;divide by.010 mol."
+    },
+    {
+      "question": "ΔH300=40 kJ/mol,ΔCp=50 J mol−1 K−1 constant. Find ΔH600 with no phase change.",
+      "options": [
+        "40 kJ/mol",
+        "−15 kJ/mol",
+        "70 kJ/mol",
+        "55 kJ/mol"
+      ],
+      "answer": 3,
+      "explanation": "Add50×300=15000 J/mol=15 kJ/mol to the original40."
+    },
+    {
+      "question": "With ΔS300=100 J mol−1 K−1,that same model gives ΔS600=100+50 ln2. Approximate ΔG600?",
+      "options": [
+        "−25.79 kJ/mol",
+        "−20.00 kJ/mol",
+        "+25.79 kJ/mol",
+        "−55.00 kJ/mol"
+      ],
+      "answer": 0,
+      "explanation": "Use55−600×(100+50 ln2)/1000≈−25.79 kJ/mol;both H and S must refer to600 K."
     }
   ]
 }
