@@ -19,6 +19,8 @@ export const mizoPendingTopicIds = new Set([
   "gandhi-national-movement", "revolt-of-1857", "india-location", "climate-agreements", "biodiversity-agreements", "nutrition-vitamins",
   "fundamental-rights-dpsp", "state-executive", "colonial-countryside", "framing-the-constitution", "early-states-mauryas", "vijayanagara",
   "mughal-chronicles", "india-drainage", "atmosphere-layers", "money-functions", "monetary-policy", "acids-bases-ph", "adaptive-immunity",
+  "emergency-provisions", "constitutional-bodies", "bhakti-sufi", "colonial-cities", "indian-monsoon", "soils-of-india", "minerals-energy",
+  "national-income", "inflation", "endocrine-glands", "newtons-laws",
 ]);
 const topicIdOf = (questionId: string) => questionId.replace(/-\d+$/, "");
 

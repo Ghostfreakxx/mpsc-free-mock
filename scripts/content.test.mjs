@@ -12,9 +12,10 @@ import { highYieldTopics } from '../app/data/high-yield-topics.ts';
 import { patternBatchTopics } from '../app/data/pattern-batch-topics.ts';
 import { batchThreeTopics } from '../app/data/batch-three-topics.ts';
 import { batchFourTopics } from '../app/data/batch-four-topics.ts';
+import { batchFiveTopics } from '../app/data/batch-five-topics.ts';
 import { getMizoTranslation, mizoPendingTopicIds } from '../app/data/mizo-translations.ts';
 
-const foundationTopics = [...jeeTopics, ...neetTopics, ...highYieldTopics, ...patternBatchTopics, ...batchThreeTopics, ...batchFourTopics];
+const foundationTopics = [...jeeTopics, ...neetTopics, ...highYieldTopics, ...patternBatchTopics, ...batchThreeTopics, ...batchFourTopics, ...batchFiveTopics];
 const foundationCount = stream => foundationTopics.filter(topic => topic.streams.includes(stream)).reduce((total, topic) => total + topic.questions.length, 0);
 
 test('each stream retains its published expansion quota', () => {
@@ -372,4 +373,57 @@ test('fourth batch worked answers are independently recomputed', () => {
   assert.equal(answer('cuet-pg', 'profit-loss-markup-1'), `${((500 - 400) / 400) * 100}%`);
   assert.equal(answer('mpsc', 'profit-loss-markup-6'), `Rs ${960 * 0.75}`);
   assert.equal(answer('mpsc', 'profit-loss-markup-10'), `Rs ${640 * 1.25}`);
+});
+
+test('fifth batch topics are sourced, balanced and published to the intended streams', () => {
+  for (const topic of batchFiveTopics) {
+    assert.ok(topic.questions.length >= 10 && topic.notes.length > 0 && topic.pitfall, topic.id);
+    assert.equal(new URL(sources[topic.sourceId].url).protocol, 'https:', topic.id);
+    for (const stream of topic.streams) {
+      const published = getReviewedQuestions(stream).filter(question => question.id.startsWith(`${topic.id}-`));
+      assert.equal(published.length, topic.questions.length, `${topic.id} in ${stream}`);
+      assert.ok(new Set(published.map(question => question.options.indexOf(question.answer))).size >= 3, topic.id);
+    }
+    // Every MPSC topic in this batch is general studies, published in English with Mizo pending.
+    if (topic.streams.includes('mpsc')) {
+      assert.ok(mizoPendingTopicIds.has(topic.id), topic.id);
+      for (const question of getReviewedQuestions('mpsc').filter(q => q.id.startsWith(`${topic.id}-`))) assert.equal(getMizoTranslation(question), undefined, question.id);
+    }
+  }
+  for (const [stream, minimum] of Object.entries({ mpsc: 120, neet: 90, jee: 80, 'cuet-pg': 100 })) {
+    const fresh = getReviewedQuestions(stream).filter(question => batchFiveTopics.some(topic => question.id.startsWith(`${topic.id}-`)));
+    assert.ok(fresh.length >= minimum, `${stream} has ${fresh.length} fifth-batch questions`);
+  }
+});
+
+test('fifth batch worked answers are independently recomputed', () => {
+  const answer = (stream, id) => getReviewedQuestions(stream).find(question => question.id === id).answer;
+  assert.equal(answer('mpsc', 'national-income-3'), String(60 + 20 + 15 + (10 - 12)));
+  assert.equal(answer('mpsc', 'national-income-5'), `Rs ${(220 * 100) / 110} lakh crore`);
+  assert.equal(answer('cuet-pg', 'national-income-10'), `Rs ${(5000 / 2).toLocaleString('en-IN')}`);
+  assert.equal(answer('mpsc', 'inflation-3'), String((440 * 100) / 400));
+  assert.equal(answer('mpsc', 'inflation-4'), `${((126 - 120) / 120) * 100}%`);
+  assert.equal(answer('mpsc', 'inflation-7'), `${9 - 5}%`);
+  assert.equal(answer('jee', 'newtons-laws-3'), `${5 * 4} N`);
+  assert.equal(answer('neet', 'newtons-laws-5'), `${10 * 9.8} N`);
+  assert.equal(answer('jee', 'newtons-laws-6'), `${(8 - 3) / 5} m/s^2 east`);
+  assert.equal(answer('neet', 'newtons-laws-11'), `${60 * (10 + 2)} N`);
+  assert.equal(answer('jee', 'newtons-laws-12'), `${2 * 3} kg m/s`);
+  assert.equal(answer('jee', 'rotational-dynamics-1'), `${2 * 0.5 ** 2} kg m^2`);
+  assert.equal(answer('jee', 'rotational-dynamics-3'), `${0.5 * 2 * 3 ** 2} J`);
+  assert.equal(answer('neet', 'rotational-dynamics-7'), `${(3 * 2 ** 2) / 12 + 3 * (2 / 2) ** 2} kg m^2`);
+  assert.equal(answer('jee', 'capacitance-3'), `${1 / (1 / 3 + 1 / 6)} μF`);
+  assert.equal(answer('neet', 'capacitance-5'), `${0.5 * 4 * 10 ** 2} μJ`);
+  assert.equal(answer('jee', 'capacitance-10'), `${6 ** 2 / (2 * 3)} μJ`);
+  assert.equal(answer('jee', 'quantum-numbers-1'), String(2 * 3 ** 2));
+  assert.equal(answer('neet', 'quantum-numbers-10'), String(2 * (2 * 3 + 1)));
+  assert.equal(answer('jee', 'quadratic-equations-3'), String(-12 / 3));
+  assert.equal(answer('jee', 'quadratic-equations-7'), `(3, ${3 ** 2 - 6 * 3 + 5})`);
+  assert.equal(answer('jee', 'quadratic-equations-9'), String(5 ** 2 - 2 * 6));
+  assert.equal(answer('jee', 'circles-1'), `(2, -3) and ${Math.sqrt(2 ** 2 + 3 ** 2 + 12)}`);
+  assert.equal(answer('jee', 'circles-6'), String(Math.sqrt(5 ** 2 - 9)));
+  assert.equal(answer('neet', 'population-ecology-3'), `${0.2 * 500 * (1 - 500 / 1000)} individuals per year`);
+  assert.equal(answer('neet', 'population-ecology-5'), String((40 * 50) / 10));
+  assert.equal(answer('neet', 'population-ecology-10'), `${0.1 * 200} individuals per year`);
+  assert.ok(Math.abs(Math.cos(Math.PI / 12) - (Math.sqrt(6) + Math.sqrt(2)) / 4) < 1e-12, 'trigonometric-identities-8');
 });

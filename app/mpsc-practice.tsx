@@ -200,7 +200,7 @@ return (
                 onClick={() => changeCategory(cat)}
                 aria-pressed={category === cat}
                 className={`practice-category-button ${category === cat ? "is-active" : ""}`}
-              >{bilingual ? <><span lang="lus">{mizoCategories[cat] ?? cat}</span><small>{cat}</small></> : cat}</button>
+              >{bilingual && mizoCategories[cat] ? <><span lang="lus">{mizoCategories[cat]}</span><small>{cat}</small></> : cat}</button>
             ))}
           </div>
         </section>
