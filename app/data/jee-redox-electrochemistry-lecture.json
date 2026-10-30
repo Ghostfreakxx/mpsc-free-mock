@@ -73,6 +73,22 @@
     {
       "title": "Williams chemistry: water-cell pH cancellation",
       "url": "https://chem.libretexts.org/Courses/Williams_School/Advanced_Chemistry/16%3A_Introduction_to_Inorganic_Chemistry/16.03%3A_Electrochemical_Potentials"
+    },
+    {
+      "title": "IUPAC Gold Book: liquid junction",
+      "url": "https://old.goldbook.iupac.org/html/L/L03584.html"
+    },
+    {
+      "title": "OpenStax: internal resistance and terminal voltage",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-1-electromotive-force"
+    },
+    {
+      "title": "IUPAC: operational pH measurement and calibration",
+      "url": "https://publications.iupac.org/publications/pac/2002/pdf/7411x2169.pdf"
+    },
+    {
+      "title": "OpenStax: current conservation",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules"
     }
   ],
   "chapters": [
@@ -1265,6 +1281,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "A liquid junction adds a separate term to a measured cell voltage",
+      "formula": "Selected convention:Eobserved=Eright−Eleft+Ejunction",
+      "script": "A cell voltage measured between two electrodes can include a contribution from the liquid junction between solutions. Such a junction can develop a potential difference when ions with different transport behaviour diffuse across a composition boundary. In a selected sign convention, observed voltage equals right electrode potential minus left electrode potential plus a separately supplied junction contribution. If the electrode difference is zero point one zero zero volt and the junction term in that orientation is positive zero point zero one five volt, the observed result is zero point one one five volt. Reversing the voltmeter orientation reverses the complete measured voltage, not just one conveniently chosen term. A salt bridge maintains ionic conduction and can reduce junction problems, but its name alone does not prove that the junction contribution is identically zero. The junction is different from an ohmic drop caused by current under load. This model supplies the junction term instead of pretending to predict it from one concentration ratio. The electrode potentials still need the same reference scale. Distinguish the theoretical electrode difference from the actual measurement before interpreting a discrepancy.",
+      "points": [
+        "Electrode difference .100 V · Junction term +.015 V · Specified meter orientation",
+        "Observed=.100+.015 · .115 V · Reverse leads reverses full result",
+        "Junction contribution · Separate from loaded-cell iR · A bridge does not prove zero Ej"
+      ],
+      "board": {
+        "heading": "An electrode difference need not be the whole measured voltage",
+        "columns": [
+          "Given / model",
+          "Result / balance",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Electrode difference .100 V",
+            "Junction term +.015 V",
+            "Specified meter orientation"
+          ],
+          [
+            "Observed=.100+.015",
+            ".115 V",
+            "Reverse leads reverses full result"
+          ],
+          [
+            "Junction contribution",
+            "Separate from loaded-cell iR",
+            "A bridge does not prove zero Ej"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A loaded cell has a terminal voltage below its simple open-circuit emf",
+      "formula": "Simple discharge model:Vterminal=E−Ir;Pload=IV;Pinternal=I²r",
+      "script": "An electrochemical source delivering current is not measured under the same condition as a reversible open circuit voltage. In a supporting lumped model, represent the source by a fixed electromotive force in series with an internal resistance. During discharge, terminal voltage is the electromotive force minus current times that resistance. Use a supplied electromotive force of one point one zero volt, current zero point two zero zero ampere and internal resistance two point zero zero ohm. The internal drop is zero point four zero zero volt, leaving a terminal voltage of zero point seven zero zero volt. The load receives zero point one four zero watt, while the internal resistive contribution is zero point zero eight zero watt. Their sum equals the ideal source power of zero point two two zero watt in this circuit model. These numbers do not redefine the standard electrode potential. Real cells also have polarization, mass transport limits and time dependent behaviour that a fixed resistance does not capture. At zero current the model predicts no ohmic drop, but a real equilibrium interpretation still needs appropriate conditions.",
+      "points": [
+        "E1.10 V;I.200 A;r2.00 Ω · Ir=.400 V;Vterminal=.700 V · Simple discharge model",
+        "Load power IV · .140 W · Terminal electrical output",
+        "Internal I²r=.080 W · Source EI=.220 W · Not full battery dynamics"
+      ],
+      "board": {
+        "heading": "Loaded terminal voltage includes an internal current drop",
+        "columns": [
+          "Given / model",
+          "Result / balance",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "E1.10 V;I.200 A;r2.00 Ω",
+            "Ir=.400 V;Vterminal=.700 V",
+            "Simple discharge model"
+          ],
+          [
+            "Load power IV",
+            ".140 W",
+            "Terminal electrical output"
+          ],
+          [
+            "Internal I²r=.080 W",
+            "Source EI=.220 W",
+            "Not full battery dynamics"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Two calibration buffers determine the slope and intercept of a pH response",
+      "formula": "E=E0−S pH;pH4:E=.180 V;pH7:E=.003 V;S=.0590 V/pH",
+      "script": "A potentiometric reading becomes an analytical result only after the response relation and calibration are established. In a supplied linear model for one electrode orientation, voltage equals an intercept minus a positive slope multiplied by pH. Suppose buffers at pH four and pH seven give zero point one eight zero volt and zero point zero zero three volt under matched conditions. The voltage change of zero point one seven seven volt over three pH units gives a slope magnitude of zero point zero five nine zero volt per pH unit. The intercept is zero point four one six volt. An unknown giving zero point zero six two volt would therefore have model pH six point zero zero. This is a two point calibration, not a claim that every glass electrode has precisely that slope in every solution or temperature. Electrode condition, temperature, junction effects and drift affect actual measurements. A reversed voltage orientation changes the signs consistently. The fitted slope must not be replaced silently by a memorized theoretical value. Keep millivolts distinct from volts and choose calibration points appropriate to the measurement range.",
+      "points": [
+        "pH4:E.180 V;pH7:E.003 V · Slope magnitude .0590 V/pH · Matched conditions",
+        "E0=.180+4×.0590 · .416 V · Model E=E0−S pH",
+        "Unknown E=.062 V · pH=(.416−.062)/.0590=6 · Calibration,not universal slope"
+      ],
+      "board": {
+        "heading": "Two points fix both response slope and offset",
+        "columns": [
+          "Given / model",
+          "Result / balance",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "pH4:E.180 V;pH7:E.003 V",
+            "Slope magnitude .0590 V/pH",
+            "Matched conditions"
+          ],
+          [
+            "E0=.180+4×.0590",
+            ".416 V",
+            "Model E=E0−S pH"
+          ],
+          [
+            "Unknown E=.062 V",
+            "pH=(.416−.062)/.0590=6",
+            "Calibration,not universal slope"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Parallel electrolysis branches need their own charge inventories",
+      "formula": "Qbranch=Ibranch t;n=Qbranch/(zF);ICu=.400 A,IAg=.200 A,t9650 s,F96500 C/mol",
+      "script": "Faraday's law uses the charge through the electrode of interest, not automatically the total charge from an external supply. Consider two electrolytic cells connected in parallel in a supplied steady current model. The copper two branch carries zero point four zero zero ampere and the silver one branch carries zero point two zero zero ampere for nine thousand six hundred fifty seconds. The source current is their sum, zero point six zero zero ampere. Copper branch charge is three thousand eight hundred sixty coulombs, while silver branch charge is one thousand nine hundred thirty coulombs. With a supplied Faraday constant of ninety-six thousand five hundred coulombs per mole, these are zero point zero four zero and zero point zero two zero mole of electrons. Copper two needs two electrons per deposited atom and silver one needs one, so both ideal deposited amounts are zero point zero two zero mole. Equal product amounts do not mean equal branch charges. Common parallel voltage does not determine the current split without additional cell information; here the branch currents are supplied. Complete current efficiency and the stated electrode products are assumed.",
+      "points": [
+        "Currents .400 A Cu;.200 A Ag · Source current .600 A · Branch currents supplied",
+        "t9650 s;QCu3860 C;QAg1930 C · Electrons .0400,.0200 mol · F96500 C/mol",
+        "Cu2+ needs2e−;Ag+ needs1e− · Both deposit .0200 mol · Equal amount,unequal charge"
+      ],
+      "board": {
+        "heading": "Faraday’s law uses the charge in the relevant branch",
+        "columns": [
+          "Given / model",
+          "Result / balance",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Currents .400 A Cu;.200 A Ag",
+            "Source current .600 A",
+            "Branch currents supplied"
+          ],
+          [
+            "t9650 s;QCu3860 C;QAg1930 C",
+            "Electrons .0400,.0200 mol",
+            "F96500 C/mol"
+          ],
+          [
+            "Cu2+ needs2e−;Ag+ needs1e−",
+            "Both deposit .0200 mol",
+            "Equal amount,unequal charge"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1905,6 +2061,94 @@
       ],
       "answer": 0,
       "explanation": "The reversible matched-cell value is not a universal practical operating voltage or an excuse to omit cell conditions."
+    },
+    {
+      "question": "For Eobserved=.100 V+Ejunction and supplied Ejunction=+.015 V, Eobserved is:",
+      "options": [
+        ".085 V",
+        ".115 V",
+        ".100 V",
+        ".015 V"
+      ],
+      "answer": 1,
+      "explanation": "The separately supplied junction term adds under the selected orientation: .100+.015=.115 V."
+    },
+    {
+      "question": "Which distinguishes a junction term from ohmic drop?",
+      "options": [
+        "Both must be zero",
+        "Only electron mass sets a junction term",
+        "A junction term can exist across differing solutions without a loaded-cell iR calculation",
+        "A bridge proves zero junction potential"
+      ],
+      "answer": 2,
+      "explanation": "A liquid junction potential concerns the solution boundary; an ohmic drop is a separate current-dependent contribution."
+    },
+    {
+      "question": "For simple discharge E1.10 V,I.200 A,r2.00 Ω, terminal voltage is:",
+      "options": [
+        "1.50 V",
+        "1.10 V",
+        ".400 V",
+        ".700 V"
+      ],
+      "answer": 3,
+      "explanation": "The internal drop isIr=.400 V, leaving terminal voltage1.10−.400=.700 V."
+    },
+    {
+      "question": "For that model, load power and internal resistive power are:",
+      "options": [
+        ".140 W and .080 W",
+        ".220 W and .140 W",
+        ".080 W and .140 W",
+        ".700 W and .400 W"
+      ],
+      "answer": 0,
+      "explanation": "Load power=.200×.700=.140 W; internal power=.200²×2=.080 W; the sum isEI=.220 W."
+    },
+    {
+      "question": "E=.180 V at pH4 and .003 V at pH7 for E=E0−S pH gives S:",
+      "options": [
+        ".177 V/pH",
+        ".0590 V/pH",
+        ".00300 V/pH",
+        ".416 V/pH"
+      ],
+      "answer": 1,
+      "explanation": "The positive slope magnitude is(.180−.003)/(7−4)=.0590 V per pH unit."
+    },
+    {
+      "question": "With E0=.416 V,S=.0590 V/pH and unknown E=.062 V, the model pH is:",
+      "options": [
+        "4.00",
+        "7.00",
+        "6.00",
+        "5.00"
+      ],
+      "answer": 2,
+      "explanation": "Rearranging the calibrated relation gives pH=(.416−.062)/.0590=6.00."
+    },
+    {
+      "question": "Parallel branches carry .400 A Cu and .200 A Ag for9650 s. Copper branch charge is:",
+      "options": [
+        "5790 C",
+        "1930 C",
+        "9650 C",
+        "3860 C"
+      ],
+      "answer": 3,
+      "explanation": "Use the copper branch current: .400×9650=3860 C, not the total source charge."
+    },
+    {
+      "question": "With F96500 C/mol and ideal Cu2+/Cu and Ag+/Ag products, the supplied charges deposit:",
+      "options": [
+        ".0200 mol Cu and .0200 mol Ag",
+        ".0400 mol Cu and .0200 mol Ag",
+        ".0300 mol each",
+        "Equal charges because the cells are parallel"
+      ],
+      "answer": 0,
+      "explanation": "Copper receives .0400 mol electrons and needs2 per atom; silver receives .0200 mol electrons and needs1 per atom."
     }
   ]
 }

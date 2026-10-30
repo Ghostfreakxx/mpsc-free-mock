@@ -2270,3 +2270,261 @@ Unequal compartment p H,membranes,nonunit gas activities or other reactions
 
 00:42:53.968 --> 00:42:58.148
 require a complete cell balance rather than blindly applying the cancellation.
+
+00:42:58.488 --> 00:43:02.688
+A cell voltage measured between two electrodes can include a contribution from
+
+00:43:02.688 --> 00:43:04.428
+the liquid junction between solutions.
+
+00:43:05.368 --> 00:43:08.788
+Such a junction can develop a potential difference when ions with different
+
+00:43:08.788 --> 00:43:11.848
+transport behaviour diffuse across a composition boundary.
+
+00:43:12.688 --> 00:43:16.748
+In a selected sign convention, observed voltage equals right electrode
+
+00:43:16.748 --> 00:43:21.628
+potential minus left electrode potential plus a separately supplied junction
+
+00:43:21.628 --> 00:43:22.228
+contribution.
+
+00:43:22.228 --> 00:43:27.328
+If the electrode difference is zero point one zero zero volt and the junction
+
+00:43:27.328 --> 00:43:32.148
+term in that orientation is positive zero point zero one five volt, the
+
+00:43:32.148 --> 00:43:34.928
+observed result is zero point one one five volt.
+
+00:43:36.248 --> 00:43:40.113
+Reversing the voltmeter orientation reverses the complete measured voltage,
+
+00:43:40.113 --> 00:43:40.268
+not
+
+00:43:40.268 --> 00:43:42.128
+just one conveniently chosen term.
+
+00:43:43.088 --> 00:43:47.488
+A salt bridge maintains ionic conduction and can reduce junction problems, but
+
+00:43:47.488 --> 00:43:50.768
+its name alone does not prove that the junction contribution is identically
+
+00:43:50.768 --> 00:43:51.168
+zero.
+
+00:43:51.948 --> 00:43:55.288
+The junction is different from an ohmic drop caused by current under load.
+
+00:43:56.248 --> 00:43:59.828
+This model supplies the junction term instead of pretending to predict it from
+
+00:43:59.828 --> 00:44:01.108
+one concentration ratio.
+
+00:44:01.988 --> 00:44:04.488
+The electrode potentials still need the same reference scale.
+
+00:44:05.568 --> 00:44:08.368
+Distinguish the theoretical electrode difference from the actual measurement
+
+00:44:08.368 --> 00:44:10.148
+before interpreting a discrepancy.
+
+00:44:10.344 --> 00:44:14.904
+An electrochemical source delivering current is not measured under the same
+
+00:44:14.904 --> 00:44:17.264
+condition as a reversible open circuit voltage.
+
+00:44:18.124 --> 00:44:22.044
+In a supporting lumped model, represent the source by a fixed electromotive
+
+00:44:22.044 --> 00:44:24.404
+force in series with an internal resistance.
+
+00:44:25.304 --> 00:44:29.804
+During discharge, terminal voltage is the electromotive force minus current
+
+00:44:29.804 --> 00:44:30.844
+times that resistance.
+
+00:44:31.964 --> 00:44:37.104
+Use a supplied electromotive force of one point one zero volt, current zero
+
+00:44:37.104 --> 00:44:41.424
+point two zero zero ampere and internal resistance two point zero zero ohm.
+
+00:44:42.384 --> 00:44:46.644
+The internal drop is zero point four zero zero volt, leaving a terminal
+
+00:44:46.644 --> 00:44:47.064
+voltage
+
+00:44:47.064 --> 00:44:49.324
+of zero point seven zero zero volt.
+
+00:44:50.464 --> 00:44:54.544
+The load receives zero point one four zero watt, while the internal resistive
+
+00:44:54.544 --> 00:44:57.304
+contribution is zero point zero eight zero watt.
+
+00:44:58.264 --> 00:45:03.140
+Their sum equals the ideal source power of zero point two two zero watt in
+
+00:45:03.140 --> 00:45:03.404
+this
+
+00:45:03.404 --> 00:45:03.904
+circuit model.
+
+00:45:04.484 --> 00:45:07.564
+These numbers do not redefine the standard electrode potential.
+
+00:45:08.284 --> 00:45:12.944
+Real cells also have polarization, mass transport limits and time dependent
+
+00:45:12.944 --> 00:45:15.664
+behaviour that a fixed resistance does not capture.
+
+00:45:16.584 --> 00:45:20.784
+At zero current the model predicts no ohmic drop, but a real equilibrium
+
+00:45:20.784 --> 00:45:23.424
+interpretation still needs appropriate conditions.
+
+00:45:23.856 --> 00:45:28.716
+A potentiometric reading becomes an analytical result only after the response
+
+00:45:28.716 --> 00:45:31.256
+relation and calibration are established.
+
+00:45:32.196 --> 00:45:36.896
+In a supplied linear model for one electrode orientation, voltage equals an
+
+00:45:36.896 --> 00:45:40.276
+intercept minus a positive slope multiplied by pH.
+
+00:45:41.416 --> 00:45:46.474
+Suppose buffers at pH four and pH seven give zero point one eight zero volt
+
+00:45:46.474 --> 00:45:46.676
+and
+
+00:45:46.676 --> 00:45:49.796
+zero point zero zero three volt under matched conditions.
+
+00:45:50.436 --> 00:45:55.265
+The voltage change of zero point one seven seven volt over three pH units
+
+00:45:55.265 --> 00:45:55.596
+gives
+
+00:45:55.596 --> 00:45:59.876
+a slope magnitude of zero point zero five nine zero volt per pH unit.
+
+00:46:01.016 --> 00:46:04.156
+The intercept is zero point four one six volt.
+
+00:46:04.156 --> 00:46:08.476
+An unknown giving zero point zero six two volt would therefore have model pH
+
+00:46:08.476 --> 00:46:10.376
+six point zero zero.
+
+00:46:10.376 --> 00:46:14.436
+This is a two point calibration, not a claim that every glass electrode has
+
+00:46:14.436 --> 00:46:17.396
+precisely that slope in every solution or temperature.
+
+00:46:18.276 --> 00:46:22.676
+Electrode condition, temperature, junction effects and drift affect actual
+
+00:46:22.676 --> 00:46:23.096
+measurements.
+
+00:46:24.036 --> 00:46:27.256
+A reversed voltage orientation changes the signs consistently.
+
+00:46:28.016 --> 00:46:31.576
+The fitted slope must not be replaced silently by a memorized theoretical
+
+00:46:31.576 --> 00:46:32.016
+value.
+
+00:46:32.916 --> 00:46:36.676
+Keep millivolts distinct from volts and choose calibration points appropriate
+
+00:46:36.676 --> 00:46:37.756
+to the measurement range.
+
+00:46:38.160 --> 00:46:41.920
+Faraday's law uses the charge through the electrode of interest, not
+
+00:46:41.920 --> 00:46:44.460
+automatically the total charge from an external supply.
+
+00:46:45.620 --> 00:46:49.420
+Consider two electrolytic cells connected in parallel in a supplied steady
+
+00:46:49.420 --> 00:46:49.980
+current model.
+
+00:46:50.720 --> 00:46:55.200
+The copper two branch carries zero point four zero zero ampere and the silver
+
+00:46:55.200 --> 00:46:59.510
+one branch carries zero point two zero zero ampere for nine thousand six
+
+00:46:59.510 --> 00:47:00.380
+hundred fifty seconds.
+
+00:47:01.160 --> 00:47:05.460
+The source current is their sum, zero point six zero zero ampere.
+
+00:47:05.860 --> 00:47:09.880
+Copper branch charge is three thousand eight hundred sixty coulombs, while
+
+00:47:09.880 --> 00:47:13.020
+silver branch charge is one thousand nine hundred thirty coulombs.
+
+00:47:13.940 --> 00:47:17.500
+With a supplied Faraday constant of ninety six thousand five hundred coulombs
+
+00:47:17.500 --> 00:47:22.395
+per mole, these are zero point zero four zero and zero point zero two zero
+
+00:47:22.395 --> 00:47:22.660
+mole
+
+00:47:22.660 --> 00:47:23.380
+of electrons.
+
+00:47:24.460 --> 00:47:29.260
+Copper two needs two electrons per deposited atom and silver one needs one, so
+
+00:47:29.260 --> 00:47:32.580
+both ideal deposited amounts are zero point zero two zero mole.
+
+00:47:33.300 --> 00:47:36.140
+Equal product amounts do not mean equal branch charges.
+
+00:47:37.260 --> 00:47:40.207
+Common parallel voltage does not determine the current split without
+
+00:47:40.207 --> 00:47:40.640
+additional
+
+00:47:40.640 --> 00:47:43.740
+cell information; here the branch currents are supplied.
+
+00:47:45.000 --> 00:47:47.960
+Complete current efficiency and the stated electrode products are assumed.

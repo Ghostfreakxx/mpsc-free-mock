@@ -22,8 +22,8 @@ Questions are original practice, not represented as official PYQs.
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 35 | 37 | 24 | 58 / 58 |
 | 5 | [Solutions](/jee/classes/solutions) | 35 | 37 | 24 | 58 / 58 |
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 33 | 33 | 25 | 58 / 58 |
-| 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 34 | 35 | 25 | 58 / 58 |
-| 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 30 | 33 | 25 | 58 / 58 |
+| 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 38 | 39 | 28 | 66 / 66 |
+| 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 34 | 37 | 28 | 66 / 66 |
 | 9 | [Periodic Trends](/jee/classes/periodic-trends) | 33 | 31 | 21 | 56 / 56 |
 | 10 | [P-Block](/jee/classes/p-block) | 35 | 33 | 21 | 58 / 58 |
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 35 | 33 | 21 | 58 / 58 |
@@ -39,7 +39,7 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Periodic Trends adds electron-gain conventions, a supplied shielding approximation, matched oxoacid families and partial/formal charge distinctions. Coordination Compounds adds intact-ion particle counts, finite-ligand equilibrium, supporting d9 distortion and d8 field comparisons. This adds eight narrated chapters, sixteen original questions and six worked examples.
+Chemical Kinetics adds supporting second-order half intervals, a supplied saturation curve, mixing dead time and background-rate correction. Redox/Electrochemistry adds junction-potential accounting, supporting terminal voltage under load, two-point pH calibration and parallel-cell charge ledgers. This adds eight narrated chapters, sixteen original questions and six worked examples.
 
 ## Remaining scope
 
@@ -53,7 +53,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax periodic properties, acid/base and coordination chemistry, Westfield State shielding notes and IIT Kanpur supporting d9 distortion. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference OpenStax integrated rate laws, circuit balances and electrolysis, the NCBI Assay Guidance Manual and IUPAC liquid-junction/pH definitions. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

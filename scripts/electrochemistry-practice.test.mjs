@@ -4,9 +4,9 @@ import { equilibriumElectrochemistryLessons } from '../app/jee/classes/equilibri
 const lesson = equilibriumElectrochemistryLessons[1];
 
 test('expanded electrochemistry retains recorded companion scope and original examples', () => {
-  assert.equal(lesson.sections.length, 35);
-  assert.equal(lesson.examples.length, 25);
-  assert.equal(lesson.quiz.length, 58);
+  assert.equal(lesson.sections.length, 39);
+  assert.equal(lesson.examples.length, 28);
+  assert.equal(lesson.quiz.length, 66);
   assert.match(lesson.remaining, /Marin recording and written notes, not complete unit coverage/);
   assert.match(lesson.examples[2].answer, /3.18 g/);
 });

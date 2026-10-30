@@ -5,10 +5,10 @@ import { chemistryCoreLessons as lessons } from '../app/jee/classes/chemistry-co
 test('new Chemistry foundations map to official units and distinguish written scope from recordings', () => {
   assert.deepEqual(lessons.map(l => l.unit), [8, 12, 14]);
   for (const l of lessons) {
-    assert.equal(l.sections.length, l.id==='chemical-kinetics'?33:l.id==='coordination-compounds'?37: l.id === 'organic-principles' ? 36 : 29);
-    assert.equal(l.examples.length, l.id==='chemical-kinetics'?25:l.id==='coordination-compounds'?28: l.id === 'organic-principles' ? 26 : 22);
-    assert.equal(l.quiz.length, l.id==='chemical-kinetics'?58:l.id==='coordination-compounds'?66: l.id === 'organic-principles' ? 60 : 50);
-    assert.match(l.remaining, l.id==='coordination-compounds'?/thirty-four-chapter Marin recording/: l.id === 'organic-principles' ? /thirty-three-chapter Marin recording/ : /thirty-chapter Marin recording/);
+    assert.equal(l.sections.length, l.id==='chemical-kinetics'?37:l.id==='coordination-compounds'?37: l.id === 'organic-principles' ? 36 : 29);
+    assert.equal(l.examples.length, l.id==='chemical-kinetics'?28:l.id==='coordination-compounds'?28: l.id === 'organic-principles' ? 26 : 22);
+    assert.equal(l.quiz.length, l.id==='chemical-kinetics'?66:l.id==='coordination-compounds'?66: l.id === 'organic-principles' ? 60 : 50);
+    assert.match(l.remaining, l.id==='coordination-compounds'?/thirty-four-chapter Marin recording/: l.id === 'organic-principles' ? /thirty-three-chapter Marin recording/ : /thirty-four-chapter Marin recording/);
   }
 });
 test('initial-rate orders, first-order times and Arrhenius example agree independently', () => {

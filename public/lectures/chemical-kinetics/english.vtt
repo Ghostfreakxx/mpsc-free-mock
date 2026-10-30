@@ -2153,3 +2153,252 @@ A curved logarithmic plot can flag a failed single population model, but it
 
 00:38:22.276 --> 00:38:26.176
 does not by itself uniquely prove this particular two component explanation.
+
+00:38:26.400 --> 00:38:30.760
+Equal successive half intervals are a feature of the simple first order model,
+
+00:38:31.480 --> 00:38:33.700
+not a universal property of every decay.
+
+00:38:34.480 --> 00:38:39.100
+In a supporting second order example, define the disappearance rate of A as k
+
+00:38:39.100 --> 00:38:40.640
+times its concentration squared.
+
+00:38:41.400 --> 00:38:45.520
+The integrated law states that reciprocal concentration at time t minus
+
+00:38:46.240 --> 00:38:48.920
+reciprocal initial concentration equals k t.
+
+00:38:49.700 --> 00:38:53.980
+Use an initial concentration of zero point one zero zero molar and a rate
+
+00:38:53.980 --> 00:38:57.740
+constant of zero point five zero zero litre per mole per second.
+
+00:38:58.620 --> 00:39:02.160
+The time to reach zero point zero five zero molar is twenty seconds.
+
+00:39:03.240 --> 00:39:06.900
+Starting from that smaller concentration, a further halving to zero point zero
+
+00:39:06.900 --> 00:39:11.620
+two five molar needs forty additional seconds, making sixty seconds from the
+
+00:39:11.620 --> 00:39:12.200
+original start.
+
+00:39:12.920 --> 00:39:16.380
+The half interval doubles because the starting concentration for each interval
+
+00:39:16.380 --> 00:39:17.040
+is halved.
+
+00:39:17.490 --> 00:39:19.800
+The rate constant itself has not changed.
+
+00:39:20.640 --> 00:39:25.040
+A straight reciprocal concentration plot can test this supplied model, but a
+
+00:39:25.040 --> 00:39:28.460
+limited noisy dataset does not uniquely prove an elementary mechanism.
+
+00:39:29.360 --> 00:39:33.784
+The coefficient k here belongs to the explicitly defined disappearance rate,
+
+00:39:33.784 --> 00:39:33.900
+so
+
+00:39:33.900 --> 00:39:36.940
+an extra stoichiometric factor must not be inserted silently.
+
+00:39:37.464 --> 00:39:41.764
+An experimental rate need not follow one simple concentration power across its
+
+00:39:41.764 --> 00:39:42.464
+entire range.
+
+00:39:43.164 --> 00:39:48.084
+In a supporting saturation model, rate equals a maximum rate multiplied by
+
+00:39:48.084 --> 00:39:52.764
+substrate concentration, divided by a supplied concentration constant plus
+
+00:39:52.764 --> 00:39:53.744
+substrate concentration.
+
+00:39:54.564 --> 00:39:58.644
+When substrate is much smaller than that constant, the denominator is nearly
+
+00:39:58.644 --> 00:40:01.964
+constant and the rate is approximately proportional to substrate.
+
+00:40:02.684 --> 00:40:06.625
+When substrate is much larger, the ratio approaches one and the rate
+
+00:40:06.625 --> 00:40:07.204
+approaches
+
+00:40:07.204 --> 00:40:07.804
+the maximum.
+
+00:40:08.504 --> 00:40:13.479
+Use a maximum rate of zero point zero zero two zero zero molar per second and
+
+00:40:13.479 --> 00:40:13.544
+a
+
+00:40:13.544 --> 00:40:16.224
+concentration constant of zero point zero one zero zero molar.
+
+00:40:16.944 --> 00:40:20.824
+At substrate concentration zero point zero one zero zero molar, the predicted
+
+00:40:20.824 --> 00:40:25.204
+rate is half the maximum, or zero point zero zero one zero zero molar per
+
+00:40:25.204 --> 00:40:25.404
+second.
+
+00:40:26.024 --> 00:40:30.304
+At zero point zero nine zero zero molar, the prediction is ninety percent of
+
+00:40:30.304 --> 00:40:30.744
+the maximum.
+
+00:40:31.494 --> 00:40:35.444
+These limits do not make the reaction globally first order or globally zero
+
+00:40:35.444 --> 00:40:35.664
+order.
+
+00:40:36.564 --> 00:40:39.524
+A finite high concentration can still change the rate slightly.
+
+00:40:40.364 --> 00:40:44.424
+Fitting this supplied equation does not by itself establish a unique enzyme or
+
+00:40:44.424 --> 00:40:45.304
+catalytic mechanism.
+
+00:40:45.624 --> 00:40:50.106
+The first recorded concentration need not be the concentration at the instant
+
+00:40:50.106 --> 00:40:50.164
+a
+
+00:40:50.164 --> 00:40:50.564
+reaction began.
+
+00:40:51.144 --> 00:40:54.584
+A reaction may already progress during mixing and instrument preparation.
+
+00:40:55.244 --> 00:40:59.684
+In a stipulated first order example, the true starting concentration is zero
+
+00:40:59.684 --> 00:41:03.204
+point eight zero zero molar and the half life is ten seconds.
+
+00:41:04.064 --> 00:41:08.224
+Suppose the first measurement is made ten seconds after the actual start, and
+
+00:41:08.224 --> 00:41:10.264
+the instrument labels that measurement time zero.
+
+00:41:10.764 --> 00:41:14.844
+Its initial recorded concentration is then zero point four zero zero molar.
+
+00:41:14.844 --> 00:41:19.664
+Ten seconds later on the instrument clock, the concentration is zero point two
+
+00:41:19.664 --> 00:41:20.564
+zero zero molar.
+
+00:41:21.684 --> 00:41:25.584
+Fitting the ratio between these measured points still gives k equal to natural
+
+00:41:25.584 --> 00:41:27.764
+logarithm two divided by ten seconds.
+
+00:41:28.584 --> 00:41:32.244
+However, conversion relative to the true original sample is seventy five
+
+00:41:32.244 --> 00:41:35.784
+percent at the second measurement, while loss relative to the first recorded
+
+00:41:35.784 --> 00:41:37.324
+amount is fifty percent.
+
+00:41:37.324 --> 00:41:39.144
+These are different reference amounts.
+
+00:41:39.984 --> 00:41:43.484
+Back extrapolation needs the independently known dead time and the assumption
+
+00:41:43.484 --> 00:41:45.604
+that the same rate law held during that interval.
+
+00:41:46.444 --> 00:41:50.024
+A slope alone cannot identify how much reaction occurred before data
+
+00:41:50.024 --> 00:41:50.344
+collection.
+
+00:41:50.592 --> 00:41:54.652
+A measured product formation rate can contain more than the target reaction
+
+00:41:54.652 --> 00:41:55.232
+contribution.
+
+00:41:56.032 --> 00:42:00.252
+In a stipulated initial rate experiment, suppose a validated matrix matched
+
+00:42:00.252 --> 00:42:05.072
+blank contributes a constant rate of zero point zero zero one zero zero molar
+
+00:42:05.072 --> 00:42:05.712
+per second.
+
+00:42:06.492 --> 00:42:10.992
+At target reactant concentrations of zero point zero one zero zero and zero
+
+00:42:10.992 --> 00:42:15.459
+point zero two zero zero molar, observed rates are zero point zero zero three
+
+00:42:15.459 --> 00:42:19.692
+zero zero and zero point zero zero five zero zero molar per second.
+
+00:42:20.932 --> 00:42:24.892
+Subtracting the matched blank leaves target rates of zero point zero zero two
+
+00:42:24.892 --> 00:42:29.092
+zero zero and zero point zero zero four zero zero.
+
+00:42:29.092 --> 00:42:32.784
+Doubling the target concentration therefore doubles the corrected rate, and
+
+00:42:32.784 --> 00:42:32.932
+the
+
+00:42:32.932 --> 00:42:37.072
+selected first order coefficient is zero point two zero zero per second.
+
+00:42:37.452 --> 00:42:41.832
+The uncorrected rates have ratio five thirds, which would produce a misleading
+
+00:42:41.832 --> 00:42:44.252
+exponent if treated as a pure power law.
+
+00:42:44.992 --> 00:42:49.172
+This background rate is not a fixed absorbance offset: it contributes to the
+
+00:42:49.172 --> 00:42:49.952
+rate itself.
+
+00:42:51.012 --> 00:42:55.272
+Subtraction is justified only if the blank reproduces the relevant matrix and
+
+00:42:55.272 --> 00:42:58.912
+remains independent of target concentration over the tested range.

@@ -1,5 +1,5 @@
 {
-  "duration": 2578.4880000000685,
+  "duration": 2868.2160000000763,
   "chapters": [
     {
       "start": 0,
@@ -136,6 +136,22 @@
     {
       "start": 2505.7680000000664,
       "end": 2578.4880000000685
+    },
+    {
+      "start": 2578.4880000000685,
+      "end": 2650.3440000000705
+    },
+    {
+      "start": 2650.3440000000705,
+      "end": 2723.8560000000725
+    },
+    {
+      "start": 2723.8560000000725,
+      "end": 2798.1600000000744
+    },
+    {
+      "start": 2798.1600000000744,
+      "end": 2868.2160000000763
     }
   ],
   "cues": [
@@ -4680,6 +4696,522 @@
       "end": 2578.1479972534844,
       "text": "require a complete cell balance rather than blindly applying the cancellation.",
       "chapter": 33
+    },
+    {
+      "start": 2578.4880000000685,
+      "end": 2582.6879998093336,
+      "text": "A cell voltage measured between two electrodes can include a contribution from",
+      "chapter": 34
+    },
+    {
+      "start": 2582.6879998093336,
+      "end": 2584.428000057289,
+      "text": "the liquid junction between solutions.",
+      "chapter": 34
+    },
+    {
+      "start": 2585.3680001145094,
+      "end": 2588.7880001908034,
+      "text": "Such a junction can develop a potential difference when ions with different",
+      "chapter": 34
+    },
+    {
+      "start": 2588.7880001908034,
+      "end": 2591.8479996567457,
+      "text": "transport behaviour diffuse across a composition boundary.",
+      "chapter": 34
+    },
+    {
+      "start": 2592.6879998093336,
+      "end": 2596.7480002289503,
+      "text": "In a selected sign convention, observed voltage equals right electrode",
+      "chapter": 34
+    },
+    {
+      "start": 2596.7480002289503,
+      "end": 2601.627999389717,
+      "text": "potential minus left electrode potential plus a separately supplied junction",
+      "chapter": 34
+    },
+    {
+      "start": 2601.627999389717,
+      "end": 2602.2279997711867,
+      "text": "contribution.",
+      "chapter": 34
+    },
+    {
+      "start": 2602.2279997711867,
+      "end": 2607.3280001526564,
+      "text": "If the electrode difference is zero point one zero zero volt and the junction",
+      "chapter": 34
+    },
+    {
+      "start": 2607.3280001526564,
+      "end": 2612.1479998474806,
+      "text": "term in that orientation is positive zero point zero one five volt, the",
+      "chapter": 34
+    },
+    {
+      "start": 2612.1479998474806,
+      "end": 2614.9279986267775,
+      "text": "observed result is zero point one one five volt.",
+      "chapter": 34
+    },
+    {
+      "start": 2616.2479983216017,
+      "end": 2620.1133833771437,
+      "text": "Reversing the voltmeter orientation reverses the complete measured voltage,",
+      "chapter": 34
+    },
+    {
+      "start": 2620.1133833771437,
+      "end": 2620.2679987793654,
+      "text": "not",
+      "chapter": 34
+    },
+    {
+      "start": 2620.2679987793654,
+      "end": 2622.127999389717,
+      "text": "just one conveniently chosen term.",
+      "chapter": 34
+    },
+    {
+      "start": 2623.0879984741896,
+      "end": 2627.4880000000685,
+      "text": "A salt bridge maintains ionic conduction and can reduce junction problems, but",
+      "chapter": 34
+    },
+    {
+      "start": 2627.4880000000685,
+      "end": 2630.7679987793654,
+      "text": "its name alone does not prove that the junction contribution is identically",
+      "chapter": 34
+    },
+    {
+      "start": 2630.7679987793654,
+      "end": 2631.1680003052443,
+      "text": "zero.",
+      "chapter": 34
+    },
+    {
+      "start": 2631.947999084541,
+      "end": 2635.287999237129,
+      "text": "The junction is different from an ohmic drop caused by current under load.",
+      "chapter": 34
+    },
+    {
+      "start": 2636.2479983216017,
+      "end": 2639.8280001526564,
+      "text": "This model supplies the junction term instead of pretending to predict it from",
+      "chapter": 34
+    },
+    {
+      "start": 2639.8280001526564,
+      "end": 2641.1079989319533,
+      "text": "one concentration ratio.",
+      "chapter": 34
+    },
+    {
+      "start": 2641.9880000000685,
+      "end": 2644.4880000000685,
+      "text": "The electrode potentials still need the same reference scale.",
+      "chapter": 34
+    },
+    {
+      "start": 2645.568001831123,
+      "end": 2648.3679972534865,
+      "text": "Distinguish the theoretical electrode difference from the actual measurement",
+      "chapter": 34
+    },
+    {
+      "start": 2648.3679972534865,
+      "end": 2650.148003662178,
+      "text": "before interpreting a discrepancy.",
+      "chapter": 34
+    },
+    {
+      "start": 2650.3440000000705,
+      "end": 2654.90399994285,
+      "text": "An electrochemical source delivering current is not measured under the same",
+      "chapter": 35
+    },
+    {
+      "start": 2654.90399994285,
+      "end": 2657.2640000763645,
+      "text": "condition as a reversible open circuit voltage.",
+      "chapter": 35
+    },
+    {
+      "start": 2658.124000209879,
+      "end": 2662.0439998093357,
+      "text": "In a supporting lumped model, represent the source by a fixed electromotive",
+      "chapter": 35
+    },
+    {
+      "start": 2662.0439998093357,
+      "end": 2664.4040004196872,
+      "text": "force in series with an internal resistance.",
+      "chapter": 35
+    },
+    {
+      "start": 2665.3040000382175,
+      "end": 2669.803999084543,
+      "text": "During discharge, terminal voltage is the electromotive force minus current",
+      "chapter": 35
+    },
+    {
+      "start": 2669.803999084543,
+      "end": 2670.8440000000705,
+      "text": "times that resistance.",
+      "chapter": 35
+    },
+    {
+      "start": 2671.964000839304,
+      "end": 2677.1040002289524,
+      "text": "Use a supplied electromotive force of one point one zero volt, current zero",
+      "chapter": 35
+    },
+    {
+      "start": 2677.1040002289524,
+      "end": 2681.4239999237766,
+      "text": "point two zero zero ampere and internal resistance two point zero zero ohm.",
+      "chapter": 35
+    },
+    {
+      "start": 2682.384000915598,
+      "end": 2686.644001193386,
+      "text": "The internal drop is zero point four zero zero volt, leaving a terminal",
+      "chapter": 35
+    },
+    {
+      "start": 2686.644001193386,
+      "end": 2687.0640012207737,
+      "text": "voltage",
+      "chapter": 35
+    },
+    {
+      "start": 2687.0640012207737,
+      "end": 2689.323999542307,
+      "text": "of zero point seven zero zero volt.",
+      "chapter": 35
+    },
+    {
+      "start": 2690.4639989319553,
+      "end": 2694.54400076301,
+      "text": "The load receives zero point one four zero watt, while the internal resistive",
+      "chapter": 35
+    },
+    {
+      "start": 2694.54400076301,
+      "end": 2697.303999084543,
+      "text": "contribution is zero point zero eight zero watt.",
+      "chapter": 35
+    },
+    {
+      "start": 2698.263998169016,
+      "end": 2703.1404114654465,
+      "text": "Their sum equals the ideal source power of zero point two two zero watt in",
+      "chapter": 35
+    },
+    {
+      "start": 2703.1404114654465,
+      "end": 2703.4040013733616,
+      "text": "this",
+      "chapter": 35
+    },
+    {
+      "start": 2703.4040013733616,
+      "end": 2703.9040013733616,
+      "text": "circuit model.",
+      "chapter": 35
+    },
+    {
+      "start": 2704.483999389719,
+      "end": 2707.5640012207737,
+      "text": "These numbers do not redefine the standard electrode potential.",
+      "chapter": 35
+    },
+    {
+      "start": 2708.2839986267795,
+      "end": 2712.9439984741916,
+      "text": "Real cells also have polarization, mass transport limits and time dependent",
+      "chapter": 35
+    },
+    {
+      "start": 2712.9439984741916,
+      "end": 2715.6639996948948,
+      "text": "behaviour that a fixed resistance does not capture.",
+      "chapter": 35
+    },
+    {
+      "start": 2716.58399786384,
+      "end": 2720.784002441477,
+      "text": "At zero current the model predicts no ohmic drop, but a real equilibrium",
+      "chapter": 35
+    },
+    {
+      "start": 2720.784002441477,
+      "end": 2723.424001831125,
+      "text": "interpretation still needs appropriate conditions.",
+      "chapter": 35
+    },
+    {
+      "start": 2723.8560000000725,
+      "end": 2728.716000133587,
+      "text": "A potentiometric reading becomes an analytical result only after the response",
+      "chapter": 36
+    },
+    {
+      "start": 2728.716000133587,
+      "end": 2731.25600009544,
+      "text": "relation and calibration are established.",
+      "chapter": 36
+    },
+    {
+      "start": 2732.1960001526604,
+      "end": 2736.8959999619256,
+      "text": "In a supplied linear model for one electrode orientation, voltage equals an",
+      "chapter": 36
+    },
+    {
+      "start": 2736.8959999619256,
+      "end": 2740.2760000763665,
+      "text": "intercept minus a positive slope multiplied by pH.",
+      "chapter": 36
+    },
+    {
+      "start": 2741.415999466015,
+      "end": 2746.473691993786,
+      "text": "Suppose buffers at pH four and pH seven give zero point one eight zero volt",
+      "chapter": 36
+    },
+    {
+      "start": 2746.473691993786,
+      "end": 2746.6759996948967,
+      "text": "and",
+      "chapter": 36
+    },
+    {
+      "start": 2746.6759996948967,
+      "end": 2749.79600053413,
+      "text": "zero point zero zero three volt under matched conditions.",
+      "chapter": 36
+    },
+    {
+      "start": 2750.4359999237786,
+      "end": 2755.265230550203,
+      "text": "The voltage change of zero point one seven seven volt over three pH units",
+      "chapter": 36
+    },
+    {
+      "start": 2755.265230550203,
+      "end": 2755.5959997711907,
+      "text": "gives",
+      "chapter": 36
+    },
+    {
+      "start": 2755.5959997711907,
+      "end": 2759.876000457836,
+      "text": "a slope magnitude of zero point zero five nine zero volt per pH unit.",
+      "chapter": 36
+    },
+    {
+      "start": 2761.0159998474846,
+      "end": 2764.155999237133,
+      "text": "The intercept is zero point four one six volt.",
+      "chapter": 36
+    },
+    {
+      "start": 2764.155999237133,
+      "end": 2768.4759989319573,
+      "text": "An unknown giving zero point zero six two volt would therefore have model pH",
+      "chapter": 36
+    },
+    {
+      "start": 2768.4759989319573,
+      "end": 2770.376000457836,
+      "text": "six point zero zero.",
+      "chapter": 36
+    },
+    {
+      "start": 2770.376000457836,
+      "end": 2774.436001831127,
+      "text": "This is a two point calibration, not a claim that every glass electrode has",
+      "chapter": 36
+    },
+    {
+      "start": 2774.436001831127,
+      "end": 2777.3960009156,
+      "text": "precisely that slope in every solution or temperature.",
+      "chapter": 36
+    },
+    {
+      "start": 2778.275998169018,
+      "end": 2782.6759996948967,
+      "text": "Electrode condition, temperature, junction effects and drift affect actual",
+      "chapter": 36
+    },
+    {
+      "start": 2782.6759996948967,
+      "end": 2783.0960016785393,
+      "text": "measurements.",
+      "chapter": 36
+    },
+    {
+      "start": 2784.0360003052483,
+      "end": 2787.2560015259514,
+      "text": "A reversed voltage orientation changes the signs consistently.",
+      "chapter": 36
+    },
+    {
+      "start": 2788.016003662182,
+      "end": 2791.5760012207757,
+      "text": "The fitted slope must not be replaced silently by a memorized theoretical",
+      "chapter": 36
+    },
+    {
+      "start": 2791.5760012207757,
+      "end": 2792.016003662182,
+      "text": "value.",
+      "chapter": 36
+    },
+    {
+      "start": 2792.9159975586663,
+      "end": 2796.6759996948967,
+      "text": "Keep millivolts distinct from volts and choose calibration points appropriate",
+      "chapter": 36
+    },
+    {
+      "start": 2796.6759996948967,
+      "end": 2797.7560015259514,
+      "text": "to the measurement range.",
+      "chapter": 36
+    },
+    {
+      "start": 2798.1600000000744,
+      "end": 2801.9199999905377,
+      "text": "Faraday's law uses the charge through the electrode of interest, not",
+      "chapter": 37
+    },
+    {
+      "start": 2801.9199999905377,
+      "end": 2804.4600001908093,
+      "text": "automatically the total charge from an external supply.",
+      "chapter": 37
+    },
+    {
+      "start": 2805.6200000382214,
+      "end": 2809.4200002289563,
+      "text": "Consider two electrolytic cells connected in parallel in a supplied steady",
+      "chapter": 37
+    },
+    {
+      "start": 2809.4200002289563,
+      "end": 2809.9799996948987,
+      "text": "current model.",
+      "chapter": 37
+    },
+    {
+      "start": 2810.720000419691,
+      "end": 2815.200000915602,
+      "text": "The copper two branch carries zero point four zero zero ampere and the silver",
+      "chapter": 37
+    },
+    {
+      "start": 2815.200000915602,
+      "end": 2819.50999942787,
+      "text": "one branch carries zero point two zero zero ampere for nine thousand six",
+      "chapter": 37
+    },
+    {
+      "start": 2819.50999942787,
+      "end": 2820.379999313429,
+      "text": "hundred fifty seconds.",
+      "chapter": 37
+    },
+    {
+      "start": 2821.1600000000744,
+      "end": 2825.459999237135,
+      "text": "The source current is their sum, zero point six zero zero ampere.",
+      "chapter": 37
+    },
+    {
+      "start": 2825.860000763014,
+      "end": 2829.879999313429,
+      "text": "Copper branch charge is three thousand eight hundred sixty coulombs, while",
+      "chapter": 37
+    },
+    {
+      "start": 2829.879999313429,
+      "end": 2833.020000610426,
+      "text": "silver branch charge is one thousand nine hundred thirty coulombs.",
+      "chapter": 37
+    },
+    {
+      "start": 2833.9399987793713,
+      "end": 2837.5000001526623,
+      "text": "With a supplied Faraday constant of ninety six thousand five hundred coulombs",
+      "chapter": 37
+    },
+    {
+      "start": 2837.5000001526623,
+      "end": 2842.395384623284,
+      "text": "per mole, these are zero point zero four zero and zero point zero two zero",
+      "chapter": 37
+    },
+    {
+      "start": 2842.395384623284,
+      "end": 2842.6600000000744,
+      "text": "mole",
+      "chapter": 37
+    },
+    {
+      "start": 2842.6600000000744,
+      "end": 2843.3800012207776,
+      "text": "of electrons.",
+      "chapter": 37
+    },
+    {
+      "start": 2844.459999237135,
+      "end": 2849.2599984741955,
+      "text": "Copper two needs two electrons per deposited atom and silver one needs one, so",
+      "chapter": 37
+    },
+    {
+      "start": 2849.2599984741955,
+      "end": 2852.5799981690197,
+      "text": "both ideal deposited amounts are zero point zero two zero mole.",
+      "chapter": 37
+    },
+    {
+      "start": 2853.299999389723,
+      "end": 2856.1399995423108,
+      "text": "Equal product amounts do not mean equal branch charges.",
+      "chapter": 37
+    },
+    {
+      "start": 2857.2599984741955,
+      "end": 2860.2066660720398,
+      "text": "Common parallel voltage does not determine the current split without",
+      "chapter": 37
+    },
+    {
+      "start": 2860.2066660720398,
+      "end": 2860.6399995423108,
+      "text": "additional",
+      "chapter": 37
+    },
+    {
+      "start": 2860.6399995423108,
+      "end": 2863.740001831129,
+      "text": "cell information; here the branch currents are supplied.",
+      "chapter": 37
+    },
+    {
+      "start": 2864.999996337965,
+      "end": 2867.9600030518322,
+      "text": "Complete current efficiency and the stated electrode products are assumed.",
+      "chapter": 37
     }
   ]
 }

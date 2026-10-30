@@ -1,3 +1,4 @@
+import KineticsElectrochemistryModelsDiagram from './kinetics-electrochemistry-models-diagram';
 import EquilibriumActivityMapsDiagram from './equilibrium-activity-maps-diagram';
 import ElectrodeLimitsDiagram from './electrode-limits-diagram';
 import CoupledEquilibriumElectrodesDiagram from './coupled-equilibrium-electrodes-diagram';
@@ -13,6 +14,7 @@ export default function EquilibriumElectrochemistryDiagram({lesson,chapter}:{les
  if(lesson==='redox-electrochemistry' && chapter===28)return <ElectrodeLimitsDiagram kind="conductivity"/>;
  if(chapter===22)return <CoupledEquilibriumElectrodesDiagram lesson={lesson}/>;
  if ((lesson==="equilibrium" && chapter===10) || (lesson==="redox-electrochemistry" && chapter===9)) return <EquilibriumCellDiagram lesson={lesson} />;
+ if(lesson==='redox-electrochemistry'&&chapter===37)return <KineticsElectrochemistryModelsDiagram kind="parallel"/>;
  const board=(lesson==="equilibrium"?equilibrium:electrochemistry).chapters[chapter].board;
  return <svg className={styles.diagram} viewBox="0 0 460 310" role="img" aria-label={board.heading}>
   <title>{board.heading}</title><rect width="460" height="310" rx="12" fill="#f5faf7" />

@@ -53,6 +53,14 @@
     {
       "title": "OpenStax: collision theory",
       "url": "https://openstax.org/books/chemistry/pages/12-5-collision-theory"
+    },
+    {
+      "title": "OpenStax: integrated rate laws",
+      "url": "https://openstax.org/books/chemistry/pages/12-4-integrated-rate-laws"
+    },
+    {
+      "title": "NCBI Assay Guidance Manual: saturation and initial-rate controls",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK92007/"
     }
   ],
   "chapters": [
@@ -986,6 +994,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Supporting second-order decay has progressively longer half intervals",
+      "formula": "−d[A]/dt=k[A]²;1/[A]t−1/[A]0=kt;t1/2=1/(k[A]0)",
+      "script": "Equal successive half intervals are a feature of the simple first order model, not a universal property of every decay. In a supporting second order example, define the disappearance rate of A as k times its concentration squared. The integrated law states that reciprocal concentration at time t minus reciprocal initial concentration equals k t. Use an initial concentration of zero point one zero zero molar and a rate constant of zero point five zero zero litre per mole per second. The time to reach zero point zero five zero molar is twenty seconds. Starting from that smaller concentration, a further halving to zero point zero two five molar needs forty additional seconds, making sixty seconds from the original start. The half interval doubles because the starting concentration for each interval is halved. The rate constant itself has not changed. A straight reciprocal concentration plot can test this supplied model, but a limited noisy dataset does not uniquely prove an elementary mechanism. The coefficient k here belongs to the explicitly defined disappearance rate, so an extra stoichiometric factor must not be inserted silently.",
+      "points": [
+        "[A]0=.100 M;k=.500 L/mol/s · .100→.050 M:20 s · Disappearance rate specified",
+        ".050→.025 M · 40 additional s · Total elapsed60 s",
+        "1/[A] versus time · Slope+k for supplied model · Not proof of one mechanism"
+      ],
+      "board": {
+        "heading": "Second-order half intervals depend on the starting concentration",
+        "columns": [
+          "Given / model",
+          "Result / balance",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "[A]0=.100 M;k=.500 L/mol/s",
+            ".100→.050 M:20 s",
+            "Disappearance rate specified"
+          ],
+          [
+            ".050→.025 M",
+            "40 additional s",
+            "Total elapsed60 s"
+          ],
+          [
+            "1/[A] versus time",
+            "Slope+k for supplied model",
+            "Not proof of one mechanism"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A supplied saturation law changes its apparent concentration dependence",
+      "formula": "v=Vmax[S]/(K+[S]);Vmax=.00200 M/s;K=.0100 M",
+      "script": "An experimental rate need not follow one simple concentration power across its entire range. In a supporting saturation model, rate equals a maximum rate multiplied by substrate concentration, divided by a supplied concentration constant plus substrate concentration. When substrate is much smaller than that constant, the denominator is nearly constant and the rate is approximately proportional to substrate. When substrate is much larger, the ratio approaches one and the rate approaches the maximum. Use a maximum rate of zero point zero zero two zero zero molar per second and a concentration constant of zero point zero one zero zero molar. At substrate concentration zero point zero one zero zero molar, the predicted rate is half the maximum, or zero point zero zero one zero zero molar per second. At zero point zero nine zero zero molar, the prediction is ninety percent of the maximum. These limits do not make the reaction globally first order or globally zero order. A finite high concentration can still change the rate slightly. Fitting this supplied equation does not by itself establish a unique enzyme or catalytic mechanism.",
+      "points": [
+        "[S] much smaller than K · v≈(Vmax/K)[S] · Approximate first-order limit",
+        "[S]=K=.0100 M · v=.00100 M/s · Half of supplied Vmax",
+        "[S]=.0900 M · v=.00180 M/s · 90% of Vmax;not exactly flat"
+      ],
+      "board": {
+        "heading": "One saturation curve has different limiting behaviours",
+        "columns": [
+          "Given / model",
+          "Result / balance",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "[S] much smaller than K",
+            "v≈(Vmax/K)[S]",
+            "Approximate first-order limit"
+          ],
+          [
+            "[S]=K=.0100 M",
+            "v=.00100 M/s",
+            "Half of supplied Vmax"
+          ],
+          [
+            "[S]=.0900 M",
+            "v=.00180 M/s",
+            "90% of Vmax;not exactly flat"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Mixing dead time shifts the recorded origin without changing a first-order slope",
+      "formula": "True time=tdead+tmeasured;[A]measured0=[A]true0 exp(−ktdead)",
+      "script": "The first recorded concentration need not be the concentration at the instant a reaction began. A reaction may already progress during mixing and instrument preparation. In a stipulated first order example, the true starting concentration is zero point eight zero zero molar and the half life is ten seconds. Suppose the first measurement is made ten seconds after the actual start, and the instrument labels that measurement time zero. Its initial recorded concentration is then zero point four zero zero molar. Ten seconds later on the instrument clock, the concentration is zero point two zero zero molar. Fitting the ratio between these measured points still gives k equal to natural logarithm two divided by ten seconds. However, conversion relative to the true original sample is seventy-five percent at the second measurement, while loss relative to the first recorded amount is fifty percent. These are different reference amounts. Back extrapolation needs the independently known dead time and the assumption that the same rate law held during that interval. A slope alone cannot identify how much reaction occurred before data collection.",
+      "points": [
+        "True start .800 M;half-life10 s · First record after10 s:.400 M · Instrument calls this t=0",
+        "10 measured seconds later · .200 M;ratio .400/.200=2 · Same k=ln2/10 s−1",
+        "Conversion at second record · 75% true basis;50% record basis · Back extrapolation needs dead time"
+      ],
+      "board": {
+        "heading": "The first recorded amount may already exclude early conversion",
+        "columns": [
+          "Given / model",
+          "Result / balance",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "True start .800 M;half-life10 s",
+            "First record after10 s:.400 M",
+            "Instrument calls this t=0"
+          ],
+          [
+            "10 measured seconds later",
+            ".200 M;ratio .400/.200=2",
+            "Same k=ln2/10 s−1"
+          ],
+          [
+            "Conversion at second record",
+            "75% true basis;50% record basis",
+            "Back extrapolation needs dead time"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Subtract a background rate before assigning a concentration exponent",
+      "formula": "vobserved=vblank+k[A];supplied vblank=.00100 M/s",
+      "script": "A measured product formation rate can contain more than the target reaction contribution. In a stipulated initial rate experiment, suppose a validated matrix matched blank contributes a constant rate of zero point zero zero one zero zero molar per second. At target reactant concentrations of zero point zero one zero zero and zero point zero two zero zero molar, observed rates are zero point zero zero three zero zero and zero point zero zero five zero zero molar per second. Subtracting the matched blank leaves target rates of zero point zero zero two zero zero and zero point zero zero four zero zero. Doubling the target concentration therefore doubles the corrected rate, and the selected first order coefficient is zero point two zero zero per second. The uncorrected rates have ratio five thirds, which would produce a misleading exponent if treated as a pure power law. This background rate is not a fixed absorbance offset: it contributes to the rate itself. Subtraction is justified only if the blank reproduces the relevant matrix and remains independent of target concentration over the tested range.",
+      "points": [
+        "[A]=.0100,.0200 M · Observed v=.00300,.00500 M/s · Matched blank .00100 M/s",
+        "Corrected target rates · .00200,.00400 M/s · Doubled concentration;rate doubles",
+        "Target law v=k[A] · k=.200 s−1 · Blank rate,not signal offset"
+      ],
+      "board": {
+        "heading": "A background rate can disguise the target rate law",
+        "columns": [
+          "Given / model",
+          "Result / balance",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "[A]=.0100,.0200 M",
+            "Observed v=.00300,.00500 M/s",
+            "Matched blank .00100 M/s"
+          ],
+          [
+            "Corrected target rates",
+            ".00200,.00400 M/s",
+            "Doubled concentration;rate doubles"
+          ],
+          [
+            "Target law v=k[A]",
+            "k=.200 s−1",
+            "Blank rate,not signal offset"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1626,6 +1774,94 @@
       ],
       "answer": 0,
       "explanation": "The weighted sum is.5×1/16+.5×1/4=5/32, not(3/8)^2."
+    },
+    {
+      "question": "For−d[A]/dt=k[A]² with k=.500 L/mol/s and [A]0=.100 M, the first half interval is:",
+      "options": [
+        "10 s",
+        "20 s",
+        "40 s",
+        "60 s"
+      ],
+      "answer": 1,
+      "explanation": "The specified second-order disappearance law gives t1/2=1/(.500×.100)=20 s."
+    },
+    {
+      "question": "In that same model, time from .050 M to .025 M is:",
+      "options": [
+        "20 s",
+        "60 s",
+        "40 s",
+        "10 s"
+      ],
+      "answer": 2,
+      "explanation": "The new half interval is1/(.500×.050)=40 s; total time from .100 to .025 M is60 s."
+    },
+    {
+      "question": "For v=.00200[S]/(.0100+[S]) in compatible units, v at [S]=.0100 M is:",
+      "options": [
+        ".00200 M/s",
+        ".000100 M/s",
+        ".000500 M/s",
+        ".00100 M/s"
+      ],
+      "answer": 3,
+      "explanation": "At substrate concentration equal to K, the rate is Vmax/2=.00100 M/s."
+    },
+    {
+      "question": "At [S]=.0900 M, the supplied saturation model predicts which fraction of Vmax?",
+      "options": [
+        "90%",
+        "50%",
+        "100% exactly",
+        "10%"
+      ],
+      "answer": 0,
+      "explanation": "The fraction is .0900/(.0100+.0900)=.90; finite substrate does not make the curve exactly flat."
+    },
+    {
+      "question": "True [A]0=.800 M, half-life10 s, and first record after10 s. First recorded concentration?",
+      "options": [
+        ".800 M",
+        ".400 M",
+        ".200 M",
+        ".600 M"
+      ],
+      "answer": 1,
+      "explanation": "One true half-life has already elapsed before the instrument labels its first record time zero."
+    },
+    {
+      "question": "Ten measured seconds later, [A]=.200 M. Conversion relative to the true .800 M start is:",
+      "options": [
+        "50%",
+        "25%",
+        "75%",
+        "100%"
+      ],
+      "answer": 2,
+      "explanation": "The fraction left is .200/.800=.25 of the true initial concentration, so75% has converted."
+    },
+    {
+      "question": "Observed rates .00300 and .00500 M/s contain a matched blank .00100 M/s. Corrected rate ratio is:",
+      "options": [
+        "5/3",
+        "3",
+        "1",
+        "2"
+      ],
+      "answer": 3,
+      "explanation": "Blank subtraction gives .00200 and .00400 M/s, so the target rate ratio is2."
+    },
+    {
+      "question": "At [A]=.0100 M, corrected rate=.00200 M/s for the stated first-order target law. k is:",
+      "options": [
+        ".200 s−1",
+        ".300 s−1",
+        ".0200 s−1",
+        "2.00 s−1"
+      ],
+      "answer": 0,
+      "explanation": "Use the corrected target rate: k=.00200/.0100=.200 s−1."
     }
   ]
 }

@@ -1133,7 +1133,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "chemical-kinetics", subject: "Chemistry", unit: 8, number: "C03", title: chemicalKinetics.title,
-    description: "Thirty narrated chapters on rate laws, independent perturbations, collision filters, depletion limits, supporting mixed-population signals and temperature effects.",
+    description: "Thirty-four narrated chapters on kinetics, supporting second-order intervals and saturation, mixing dead time, background-rate correction and experimental rate models.",
     scope: "Recorded Unit 8 foundation and worked applications with original practice. Further mixed experimental datasets and mechanism-based problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.chemical-kinetics.lecture.v1",
     audio: "/lectures/chemical-kinetics/narration-marin.mp3",
@@ -1173,7 +1173,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "redox-electrochemistry", subject: "Chemistry", unit: 7, number: "C07", title: electrochemistry.title,
-    description: "Thirty-four narrated chapters on activity-corrected voltages, reference conversions, supporting transport fractions, reversible water-cell pH lines and electrochemistry.",
+    description: "Thirty-eight narrated chapters on redox and electrochemistry, junction potentials, loaded-cell voltage, pH calibration and parallel-cell Faraday balances.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 7 foundation with original practice. Detailed dry-cell mechanisms, overpotential datasets and broader mixed electrochemical problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.redox-electrochemistry.lecture.v1",
     audio: "/lectures/redox-electrochemistry/narration-marin.mp3",
