@@ -1,3 +1,4 @@
+import AnalysisDetectionDiagram from './analysis-detection-diagram';
 import KineticsPracticalControlsDiagram from './kinetics-practical-controls-diagram';
 import AromaticBiomoleculePatternsDiagram from './aromatic-biomolecule-patterns-diagram';
 import ChromatographyResolutionDiagram from './chromatography-resolution-diagram';
@@ -28,6 +29,8 @@ export default function BiomoleculesPracticalDiagram({lesson,chapter}:{lesson:ke
  if(lesson==='biomolecules'&&chapter===13)return <DnaBaseCountDiagram/>;
  if(lesson==='biomolecules'&&(chapter===8||chapter===9))return <BiomoleculeStructureDiagram chapter={chapter}/>;
  if(lesson==="purification-analysis" && chapter===11)return <AnalysisFOccupancyDiagram kind="extraction"/>;
+ if(lesson==='purification-analysis'&&chapter===32)return <AnalysisDetectionDiagram kind="oxygen"/>;
+ if(lesson==='practical-chemistry'&&chapter===33)return <AnalysisDetectionDiagram kind="sulfide"/>;
  const board=recordings[lesson].chapters[chapter].board;
  return <svg className={styles.diagram} viewBox="0 0 460 310" role="img" aria-label={board.heading}>
   <title>{board.heading}</title><rect width="460" height="310" rx="12" fill="#f5faf7" />

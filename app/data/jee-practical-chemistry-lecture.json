@@ -77,6 +77,22 @@
     {
       "title": "Arizona Geological Survey: common-metal field tests",
       "url": "https://data.azgs.arizona.edu/api/v1/collections/AGSB-1552427216934-631/b-136_field_tests_common_metals_6.pdf"
+    },
+    {
+      "title": "Averill: selective precipitation and pH control",
+      "url": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Book%3A_General_Chemistry%3A_Principles_Patterns_and_Applications_%28Averill%29/17%3A_Solubility_and_Complexation_Equilibria/17.06%3A_Qualitative_Analysis_Using_Selective_Precipitation"
+    },
+    {
+      "title": "University of Canterbury: nitrite electron balance",
+      "url": "https://www.canterbury.ac.nz/content/dam/uoc-main-site/documents/pdfs/d-other/past-exam-papers/CHEM-OLYMPIAD-2015-Exam-answers.pdf"
+    },
+    {
+      "title": "IIT Kanpur SATHEE: chromyl chloride equations",
+      "url": "https://sathee.iitk.ac.in/sathee-neet/important-formula/chemistry/qualitative_analysis/"
+    },
+    {
+      "title": "OpenStax: aldehyde oxidation",
+      "url": "https://openstax.org/books/organic-chemistry/pages/19-3-oxidation-of-aldehydes-and-ketones"
     }
   ],
   "chapters": [
@@ -1234,6 +1250,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Sulfide separation depends on the maintained pH and free-ion thresholds",
+      "formula": "Model [S2−]=A/[H+]², A=10−27 M³; Ksp(CuS)=10−36, Ksp(ZnS)=10−24; initial metal ions .001 M",
+      "script": "Selective precipitation requires comparing an ion product with the solubility product under the actual solution conditions. In a supporting ideal sulfide model, a reservoir maintains dissolved hydrogen sulfide and the acid equilibria give sulfide concentration equal to a supplied constant divided by hydrogen ion concentration squared. Use a stipulated constant of ten to the minus twenty-seven in compatible concentration units. At pH one, sulfide is ten to the minus twenty-five molar. At pH four, it is ten to the minus nineteen molar. For initial free copper two and zinc two concentrations of zero point zero zero one molar, supplied solubility products of ten to the minus thirty-six and ten to the minus twenty-four give onset thresholds of ten to the minus thirty-three and ten to the minus twenty-one molar sulfide. The pH one model crosses the copper threshold but not the zinc threshold. The pH four model crosses both initial thresholds. Metal concentrations then decrease as precipitation proceeds. Activities, complexation and reservoir limitations can change the real separation. These illustrative constants explain the selection principle, not a complete experimental recipe. A group label never replaces the free-ion balance.",
+      "points": [
+        "pH1: [S2−]=10−25 M · CuS onset, not ZnS · Initial free metals .001 M",
+        "pH4: [S2−]=10−19 M · Both onsets crossed · Metals then decrease",
+        "Onset S2−:10−33 /10−21 · Supplied Ksp /[M2+] · Reservoir / ideal assumptions"
+      ],
+      "board": {
+        "heading": "A pH change can cross a second precipitation threshold",
+        "columns": [
+          "Species / model",
+          "Inference / result",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "pH1: [S2−]=10−25 M",
+            "CuS onset, not ZnS",
+            "Initial free metals .001 M"
+          ],
+          [
+            "pH4: [S2−]=10−19 M",
+            "Both onsets crossed",
+            "Metals then decrease"
+          ],
+          [
+            "Onset S2−:10−33 /10−21",
+            "Supplied Ksp /[M2+]",
+            "Reservoir / ideal assumptions"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Nitrite and nitrate have different oxidation ledgers with permanganate",
+      "formula": "5NO2−+2MnO4−+6H+→5NO3−+2Mn2++3H2O",
+      "script": "Nitrite and nitrate contain the same element but do not have the same oxidation state or reducing capacity. Nitrogen in nitrite is plus three, while nitrogen in nitrate is plus five. In a selected acidic oxidation, each nitrite ion releases two electrons as it becomes nitrate. A permanganate ion reduced to manganese two accepts five electrons. Ten electrons are matched by five nitrites and two permanganates. The complete net balance uses six protons and gives three waters along with five nitrates and two manganese two ions. Under this stipulated quantitative endpoint, zero point zero one zero mole of nitrite requires zero point zero zero four mole of permanganate. Nitrate already contains nitrogen at plus five and does not supply the same nitrite to nitrate oxidation equivalents. A colour change with permanganate is still not uniquely diagnostic of nitrite, because many other reducing species also react. Actual acidic nitrite can undergo competing changes, so the net equation alone does not validate an assay procedure. The calculation assumes the stated products, complete reaction and controlled interference. Check both the electron count and the nitrogen inventory before interpreting a result.",
+      "points": [
+        "NO2−: N+3 → N+5 · 2e− released each · Nitrate is not the same reductant",
+        "MnO4− → Mn2+ · 5e− accepted each · Acidic endpoint specified",
+        ".010 mol NO2− · .004 mol MnO4− · 5:2 stoichiometric ratio"
+      ],
+      "board": {
+        "heading": "Oxidation state distinguishes nitrite from nitrate demand",
+        "columns": [
+          "Species / model",
+          "Inference / result",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "NO2−: N+3 → N+5",
+            "2e− released each",
+            "Nitrate is not the same reductant"
+          ],
+          [
+            "MnO4− → Mn2+",
+            "5e− accepted each",
+            "Acidic endpoint specified"
+          ],
+          [
+            ".010 mol NO2−",
+            ".004 mol MnO4−",
+            "5:2 stoichiometric ratio"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Chromyl chloride evidence tracks chlorine atoms without reducing chromium",
+      "formula": "Cr2O7²−+4Cl−+6H+→2CrO2Cl2+3H2O; CrO2Cl2+4OH−→CrO4²−+2Cl−+2H2O",
+      "script": "The chromyl chloride comparison illustrates why a named qualitative test needs a species map and an applicability limit. In the selected formal acid balance, one dichromate and four chlorides give two chromyl chloride molecules and three waters while consuming six protons. Chromium is plus six in both dichromate and chromyl chloride. Chlorine remains minus one. The equation is therefore not a chromium reduction simply because chloride is present. A separate alkaline product map converts one chromyl chloride into one chromate and two chlorides using four hydroxides. For an ideal inventory containing zero point zero zero four mole of available chloride, the formal maximum is zero point zero zero two mole of chromyl chloride if the other requirements are satisfied. This is an atom-balance ceiling, not a guaranteed recovery. The conventional comparison is chloride specific; bromide or iodide do not justify substituting their symbols into the same named product. Insoluble or poorly available chloride sources and matrix effects also limit interpretation. Chromium compounds and these reactive vapours require a supervised laboratory context. Here the equations explain selectivity and conservation, rather than providing preparation or handling instructions.",
+      "points": [
+        "Cr2O7²− +4Cl− +6H+ · 2CrO2Cl2 +3H2O · Cr stays +6; Cl stays−1",
+        "CrO2Cl2 +4OH− · CrO4²− +2Cl− +2H2O · Separate alkaline map",
+        "Available chloride: .004 mol · Formal CrO2Cl2 ≤.002 mol · Not a guaranteed recovery"
+      ],
+      "board": {
+        "heading": "A chloride product map does not require a chromium redox change",
+        "columns": [
+          "Species / model",
+          "Inference / result",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Cr2O7²− +4Cl− +6H+",
+            "2CrO2Cl2 +3H2O",
+            "Cr stays +6; Cl stays−1"
+          ],
+          [
+            "CrO2Cl2 +4OH−",
+            "CrO4²− +2Cl− +2H2O",
+            "Separate alkaline map"
+          ],
+          [
+            "Available chloride: .004 mol",
+            "Formal CrO2Cl2 ≤.002 mol",
+            "Not a guaranteed recovery"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Permanganate decolourization is oxidation evidence rather than unique proof of an alkene",
+      "formula": "A C=C bond can be oxidized; aldehydes and other reductants can also consume MnO4−",
+      "script": "A qualitative observation supports a chemical hypothesis only when alternative causes have been considered. Loss of permanganate colour can be consistent with oxidation of a carbon carbon double bond under the selected conditions. It does not uniquely prove that an unknown is an alkene. An aldehyde is also readily oxidized in suitable permanganate chemistry, even when it has no carbon carbon double bond. Other reducing substances or contamination may consume the reagent as well. Conversely, poor mixing, a poorly soluble sample or unsuitable conditions can make an expected change difficult to observe. A negative result is therefore meaningful only within a validated test domain. A useful reasoning table compares a reagent blank, a known positive control and the unknown under matched conditions, then asks what independent structural evidence distinguishes the remaining candidates. The manganese product also depends on the medium; a neutral or alkaline comparison cannot automatically use the acidic five-electron reduction to manganese two. Do not infer a numerical amount of unsaturation from colour loss without a specified stoichiometric endpoint and validated selectivity. This chapter separates an observation, an oxidation interpretation and a molecular identification, rather than treating those as the same claim.",
+      "points": [
+        "Loss of purple colour · Oxidant was consumed · Not uniquely C=C",
+        "Aldehyde without C=C · Can also be oxidized · Suitable conditions required",
+        "Blank + positive control · Test the method domain · Need independent identity evidence"
+      ],
+      "board": {
+        "heading": "An oxidation observation narrows possibilities without proving identity",
+        "columns": [
+          "Species / model",
+          "Inference / result",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Loss of purple colour",
+            "Oxidant was consumed",
+            "Not uniquely C=C"
+          ],
+          [
+            "Aldehyde without C=C",
+            "Can also be oxidized",
+            "Suitable conditions required"
+          ],
+          [
+            "Blank + positive control",
+            "Test the method domain",
+            "Need independent identity evidence"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1852,6 +2008,94 @@
       ],
       "answer": 0,
       "explanation": "The qualitative response is specific to the stated test conditions and measured species, not a universal total-phosphorus assay."
+    },
+    {
+      "question": "With [S2−]=10−27/[H+]², what is [S2−] at pH1 in the supplied model?",
+      "options": [
+        "10−29 M",
+        "10−25 M",
+        "10−21 M",
+        "10−19 M"
+      ],
+      "answer": 1,
+      "explanation": "At pH1, [H+]=10−1 M; division by 10−2 gives 10−25 M."
+    },
+    {
+      "question": "Initial [Cu2+]=[Zn2+]=.001 M; supplied Ksp values are10−36 and10−24. At [S2−]=10−25 M, which initial onset is crossed?",
+      "options": [
+        "Neither",
+        "Only ZnS",
+        "Only CuS",
+        "Both"
+      ],
+      "answer": 2,
+      "explanation": "Both ion products are10−28; this exceeds10−36 for CuS but remains below10−24 for ZnS."
+    },
+    {
+      "question": "For the stated acidic nitrite-to-nitrate and permanganate-to-Mn2+ endpoints, .010 mol nitrite requires:",
+      "options": [
+        ".025 mol MnO4−",
+        ".010 mol MnO4−",
+        ".005 mol MnO4−",
+        ".004 mol MnO4−"
+      ],
+      "answer": 3,
+      "explanation": "Five nitrites release ten electrons and two permanganates accept ten; .010×2/5=.004 mol."
+    },
+    {
+      "question": "Why does nitrate not supply the same reducing equivalents as nitrite in this selected oxidation?",
+      "options": [
+        "N is already+5 in nitrate rather than+3",
+        "Nitrate contains no nitrogen",
+        "Every nitrate is an insoluble solid",
+        "Nitrate has more negative total charge"
+      ],
+      "answer": 0,
+      "explanation": "Nitrite nitrogen rises from+3 to+5; nitrate nitrogen is already+5 and does not undergo that same oxidation."
+    },
+    {
+      "question": "In the displayed dichromate-to-chromyl-chloride map, chromium changes from:",
+      "options": [
+        "+6 to+3",
+        "+6 to+6",
+        "+3 to+6",
+        "+7 to+2"
+      ],
+      "answer": 1,
+      "explanation": "O(−2) and Cl(−1) place chromium at+6 in CrO2Cl2, as it is in dichromate."
+    },
+    {
+      "question": "With .004 mol available chloride, the formal maximum CrO2Cl2 amount in the selected balance is:",
+      "options": [
+        ".004 mol",
+        ".008 mol",
+        ".002 mol",
+        ".001 mol"
+      ],
+      "answer": 2,
+      "explanation": "Four chloride ions give two chromyl chloride molecules, so the formal ceiling is .004×2/4=.002 mol."
+    },
+    {
+      "question": "Which conclusion from permanganate colour loss alone is justified in the selected test context?",
+      "options": [
+        "The unknown must be ethene",
+        "Every original C=C has been counted quantitatively",
+        "The sample contains only one compound",
+        "An oxidizable species may be present; identity needs more evidence"
+      ],
+      "answer": 3,
+      "explanation": "Alkenes are not the only species that consume permanganate; aldehydes and other reductants can also respond."
+    },
+    {
+      "question": "Why must a neutral/alkaline permanganate comparison specify its manganese product before a mole calculation?",
+      "options": [
+        "The electron capacity depends on the stated manganese endpoint",
+        "All manganese products have the same oxidation state",
+        "The acidic Mn2+ ratio applies in every medium",
+        "Colour alone gives the exact number of electrons"
+      ],
+      "answer": 0,
+      "explanation": "MnO4− to Mn2+ accepts five electrons, whereas a MnO2 endpoint accepts three; the medium and selected products matter."
     }
   ]
 }

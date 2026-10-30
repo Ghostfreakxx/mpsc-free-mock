@@ -105,6 +105,26 @@
     {
       "title": "Rutgers University: allene axial chirality",
       "url": "https://roche.camden.rutgers.edu/files/Ch05.pdf"
+    },
+    {
+      "title": "OpenStax: conjugated diene orbital continuity",
+      "url": "https://openstax.org/books/organic-chemistry/pages/14-1-stability-of-conjugated-dienes-molecular-orbital-theory"
+    },
+    {
+      "title": "University of Calgary: localized carbocation geometry",
+      "url": "https://www3.chem.ucalgary.ca/courses/351/Carey5th/Ch04/ch4-3-2.html"
+    },
+    {
+      "title": "NSOU: elementary methyl anion electron geometry",
+      "url": "https://www.wbnsou.ac.in/online_services/SLM_UGC_DEB/UG_4YR/CHEMISTRY/NEC_CH_03_E.pdf"
+    },
+    {
+      "title": "Journal of Organic Chemistry: methyl radical planarity and substituted radical limits",
+      "url": "https://pubs.acs.org/doi/abs/10.1021/acs.joc.5c02141"
+    },
+    {
+      "title": "OpenStax: racemic resolution",
+      "url": "https://openstax.org/books/organic-chemistry/pages/5-8-racemic-mixtures-and-the-resolution-of-enantiomers"
     }
   ],
   "chapters": [
@@ -997,6 +1017,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Conjugation requires a continuous set of adjacent orbitals",
+      "formula": "1,3-butadiene:four adjacent p orbitals;1,4-pentadiene:central sp3 carbon interrupts ordinary pi conjugation",
+      "script": "Two double bonds in a molecular formula do not automatically form one conjugated system. In the ordinary valence picture of one three butadiene, four consecutive carbon atoms each carry a p orbital, allowing an extended pi system when the orbital orientations permit overlap. The central single bond does not interrupt that sequence merely because its bond order is drawn as one. Compare one four pentadiene. Its middle carbon is a saturated carbon with four sigma bonds in the simple model. That carbon separates the two double bonds, so there is no uninterrupted chain of five ordinary p orbitals linking them. Both molecules contain two pi bonds, but their orbital connectivity differs. Conjugation is a structural and geometric requirement, not a synonym for counting multiple bonds. A cyclic arrangement additionally needs its own planarity and electron count checks before aromaticity is claimed. Conformation can also alter the effectiveness of orbital overlap. The four p orbitals in a conjugated four-carbon fragment generate four pi molecular orbitals, but four pi electrons occupy the lower available levels rather than one electron being assigned to each orbital. Keep atoms, atomic orbitals, molecular orbitals and electrons in separate inventories.",
+      "points": [
+        "1,3-butadiene · 4 adjacent p orbitals · Overlap orientation matters",
+        "1,4-pentadiene · Central sp3 break · 2 pi bonds ≠ one pi system",
+        "4 p orbitals →4 pi MOs · 4 pi electrons fill lower levels · Conjugation ≠ aromaticity"
+      ],
+      "board": {
+        "heading": "A single bond can join conjugated sites; an sp3 gap interrupts them",
+        "columns": [
+          "Given / structure",
+          "Result / inference",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "1,3-butadiene",
+            "4 adjacent p orbitals",
+            "Overlap orientation matters"
+          ],
+          [
+            "1,4-pentadiene",
+            "Central sp3 break",
+            "2 pi bonds ≠ one pi system"
+          ],
+          [
+            "4 p orbitals →4 pi MOs",
+            "4 pi electrons fill lower levels",
+            "Conjugation ≠ aromaticity"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Methyl cation radical and anion have different electron inventories",
+      "formula": "CH3+:6 valence electrons;CH3 radical:7;CH3−:8; localized carbon formal charges +1,0,−1",
+      "script": "Three species with the same carbon and hydrogen nuclei can have different electronic structures. The methyl cation, methyl radical and methyl anion contain six, seven and eight total valence electrons respectively. In each selected localized picture, the three carbon hydrogen sigma bonds contain six electrons. The cation has no remaining electron and is represented as planar with an empty p orbital. The methyl radical has one remaining unpaired electron and its simple ground state is planar. The methyl anion has two remaining electrons as a lone pair and is represented as pyramidal in the elementary localized model. A three-bond drawing alone therefore cannot decide the charge, radical character or geometry. Carbon formal charge is found by assigning one electron from each bond to carbon and then adding any nonbonding electrons. Four minus three gives plus one for the cation; four minus four gives zero for the radical; four minus five gives minus one for the anion. Do not extend these methyl examples into a universal geometry rule for every substituted intermediate. Resonance, substituents, the environment and geometric constraints can change the appropriate orbital description.",
+      "points": [
+        "CH3+;6 valence e− · 3 bonds;empty p · Planar methyl cation model",
+        "CH3 radical;7 valence e− · 3 bonds;1 unpaired e− · Planar methyl radical",
+        "CH3−;8 valence e− · 3 bonds;one lone pair · Pyramidal localized model"
+      ],
+      "board": {
+        "heading": "The same nuclei can carry zero one or two nonbonding electrons",
+        "columns": [
+          "Given / structure",
+          "Result / inference",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "CH3+;6 valence e−",
+            "3 bonds;empty p",
+            "Planar methyl cation model"
+          ],
+          [
+            "CH3 radical;7 valence e−",
+            "3 bonds;1 unpaired e−",
+            "Planar methyl radical"
+          ],
+          [
+            "CH3−;8 valence e−",
+            "3 bonds;one lone pair",
+            "Pyramidal localized model"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Racemate resolution uses diastereomeric partners and a recovery ceiling",
+      "formula": "R-acid+R-base versus S-acid+R-base form diastereomeric salt pairs;ordinary separation alone preserves initial enantiomer amounts",
+      "script": "A racemic mixture contains equal amounts of two enantiomers, but ordinary separation does not turn one enantiomer into the other. Consider a chiral carboxylic acid reacting with a single enantiomer of a suitable chiral amine. The salts derived from the two acid enantiomers now share the same base configuration. The pair is diastereomeric rather than a pair of complete mirror images. Different physical properties may allow their separation, although a useful solubility difference and recovery are not guaranteed. Regenerating an acid from a separated salt can then recover the selected enantiomer without changing its original stereogenic centre. For zero point zero two zero mole of racemic acid, the starting inventory contains zero point zero one zero mole of each enantiomer. A separation-only route without racemization or another interconversion cannot yield more than zero point zero one zero mole of a single specified enantiomer. That fifty percent ceiling refers to the total original racemate amount, not to the chemical purity of the isolated fraction. An achiral base does not normally create the same diastereomeric distinction in an achiral environment. Distinguish enrichment, recovery and configuration preservation before reporting a successful resolution.",
+      "points": [
+        "R-acid /S-acid +one R-base · Diastereomeric salt pair · Different properties may help",
+        ".020 mol racemate · .010 mol each acid enantiomer · No interconversion assumed",
+        "Specified enantiomer ceiling50% · Relative to total starting acid · Purity and recovery differ"
+      ],
+      "board": {
+        "heading": "Resolution separates an inventory rather than duplicating one enantiomer",
+        "columns": [
+          "Given / structure",
+          "Result / inference",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "R-acid /S-acid +one R-base",
+            "Diastereomeric salt pair",
+            "Different properties may help"
+          ],
+          [
+            ".020 mol racemate",
+            ".010 mol each acid enantiomer",
+            "No interconversion assumed"
+          ],
+          [
+            "Specified enantiomer ceiling50%",
+            "Relative to total starting acid",
+            "Purity and recovery differ"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A methyl shift moves an entire bonded group and relocates the positive site",
+      "formula": "A has three methyl groups and B(H)(CH3)+; migrate one A–CH3 bond to B;positive charge moves from B to A;C6H13+ conserved",
+      "script": "A one two methyl shift is an atom-mapping exercise before it is a stability slogan. Label two adjacent carbons A and B. Initially A is bonded to three methyl groups and to B. Carbon B also carries one hydrogen and one methyl group, and it is the positively charged carbon. Select one methyl group originally bonded to A. During the formal shift, the bond from A to that methyl group supplies its electron pair to form a new bond between the methyl group and B. The methyl carbon and all three of its hydrogens migrate together. A loses a bond and becomes the new positive site, while B gains a bond and becomes neutral. There are still six carbon atoms and thirteen hydrogen atoms, with total charge plus one. In this selected structure the initial positive site is secondary and the final one is tertiary, but that comparison alone is not a complete calculation of a reaction rate or product yield. Orbital alignment and competing reactions also matter. A full curved arrow begins at the migrating sigma bond, not at an isolated positive sign. The displayed connectivity map records the changed bond without claiming to be a three-dimensional transition structure.",
+      "points": [
+        "Before:A–M;positive site B · A has4 bonds;B has3 · M labels a whole CH3 group",
+        "Change:A–M→B–M · Bond pair migrates with M · A becomes+;B neutral",
+        "C6H13+ before and after · Only connectivity and charge site change · Not a measured rate or yield"
+      ],
+      "board": {
+        "heading": "Move the methyl bond pair and preserve every labelled atom",
+        "columns": [
+          "Given / structure",
+          "Result / inference",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Before:A–M;positive site B",
+            "A has4 bonds;B has3",
+            "M labels a whole CH3 group"
+          ],
+          [
+            "Change:A–M→B–M",
+            "Bond pair migrates with M",
+            "A becomes+;B neutral"
+          ],
+          [
+            "C6H13+ before and after",
+            "Only connectivity and charge site change",
+            "Not a measured rate or yield"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1571,6 +1731,94 @@
       ],
       "answer": 0,
       "explanation": "Identical groups at the terminal sites remove the required end distinctions in the stated simple-allene comparison."
+    },
+    {
+      "question": "Which feature gives the usual continuous conjugated pi fragment in1,3-butadiene?",
+      "options": [
+        "Four sp3 carbon atoms",
+        "Four adjacent p orbitals with suitable overlap",
+        "Only the number of H atoms",
+        "A cyclic ring is mandatory"
+      ],
+      "answer": 1,
+      "explanation": "Each of the four consecutive sp2 carbons supplies a p orbital; suitable overlap extends the pi system across the central single bond."
+    },
+    {
+      "question": "Why are the two C=C bonds in1,4-pentadiene ordinarily treated as isolated?",
+      "options": [
+        "It has no pi electrons",
+        "Every single bond forbids conjugation",
+        "A central sp3 carbon interrupts the adjacent p-orbital sequence",
+        "It has an odd number of carbon atoms"
+      ],
+      "answer": 2,
+      "explanation": "The saturated central CH2 carbon breaks the ordinary continuous p-orbital path between the two double bonds."
+    },
+    {
+      "question": "Total valence electron counts for CH3+, CH3 radical and CH3− respectively?",
+      "options": [
+        "8,7,6",
+        "6,6,6",
+        "7,8,9",
+        "6,7,8"
+      ],
+      "answer": 3,
+      "explanation": "Carbon supplies4 and the three hydrogens3; subtract one for the cation and add one for the anion."
+    },
+    {
+      "question": "Which selected methyl species has three C–H bonds plus one lone pair in the localized model?",
+      "options": [
+        "CH3−",
+        "CH3+",
+        "CH3 radical",
+        "All three have one lone pair"
+      ],
+      "answer": 0,
+      "explanation": "The anion has8 total valence electrons:6 in three bonds and2 in a carbon lone pair."
+    },
+    {
+      "question": "R-acid/R-base and S-acid/R-base salts form which pair in the stated resolution model?",
+      "options": [
+        "Identical compounds",
+        "Diastereomers",
+        "A pair of complete mirror images",
+        "Resonance contributors"
+      ],
+      "answer": 1,
+      "explanation": "One stereochemical component changes while the same enantiomeric base is retained, giving a diastereomeric pair."
+    },
+    {
+      "question": "A .020 mol racemate is separated without racemization or interconversion. Maximum amount of one specified original enantiomer?",
+      "options": [
+        ".020 mol",
+        ".040 mol",
+        ".010 mol",
+        ".005 mol necessarily"
+      ],
+      "answer": 2,
+      "explanation": "The original racemate contains .010 mol of each enantiomer; separation alone cannot increase the inventory of either one."
+    },
+    {
+      "question": "In the labelled A–methyl to B methyl shift, B starts positive. Where is the positive site after the stipulated bond migration?",
+      "options": [
+        "On the migrating hydrogen",
+        "It vanishes from the molecule",
+        "On the migrating methyl group",
+        "On A"
+      ],
+      "answer": 3,
+      "explanation": "The A–methyl sigma bond pair becomes the B–methyl bond; A loses the bond and takes the positive site."
+    },
+    {
+      "question": "Which atom and charge inventory is retained by that selected methyl shift?",
+      "options": [
+        "C6H13+",
+        "C5H13+",
+        "C6H12 with zero charge",
+        "C7H16+"
+      ],
+      "answer": 0,
+      "explanation": "An entire CH3 group changes its attachment; no carbon or hydrogen leaves and the total charge remains+1."
     }
   ]
 }

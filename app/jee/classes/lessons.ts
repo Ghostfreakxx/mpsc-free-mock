@@ -1113,7 +1113,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-principles", subject: "Chemistry", unit: 14, number: "C01", title: organicPrinciples.title,
-    description: "Twenty-nine narrated chapters on organic principles, hyperconjugation inventories, chair flips, substituted rings, supporting allene chirality, naming and stereochemistry.",
+    description: "Thirty-three narrated chapters on organic principles, conjugation, intermediate electron geometry, racemate resolution, labelled methyl shifts, naming and stereochemistry.",
     scope: "Recorded Unit 14 foundation and worked applications with original practice. Full CIP tie-breaking, multiple-centre stereochemistry, additional solvent datasets and mechanisms remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-principles.lecture.v1",
     audio: "/lectures/organic-principles/narration-marin.mp3",
@@ -1123,7 +1123,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "coordination-compounds", subject: "Chemistry", unit: 12, number: "C02", title: coordinationCompounds.title,
-    description: "Twenty-six narrated chapters on ligands, mixed-ligand naming, d4/d5/d7 spin energies, d8 geometry, stereochemistry and supporting conditional chelation.",
+    description: "Thirty-four narrated chapters on coordination chemistry, intact-ion particle counts, finite-ligand balances, supporting d9 distortion and d8 field comparisons.",
     scope: "Recorded Unit 12 foundation and worked applications with original practice. Detailed optical-isomer models, extended nomenclature and quantitative extraction/analysis sequences remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.coordination-compounds.lecture.v1",
     audio: "/lectures/coordination-compounds/narration-marin.mp3",
@@ -1203,7 +1203,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "mole-concept", subject: "Chemistry", unit: 1, number: "C10", title: moleConcept.title,
-    description: "Twenty-nine narrated chapters on mole calculations, wet gases, mean molar mass, incomplete combustion, supporting steady recycle, yields and reaction balances.",
+    description: "Thirty-three narrated chapters on mole calculations, measured-volume mixing, repeated dilution, dry/wet combustion gas bases, moisture-adjusted purity and reaction balances.",
     scope: "Recorded Unit 1 foundation with original practice. Further multi-step reaction networks and additional experimental datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.mole-concept.lecture.v1",
     audio: "/lectures/mole-concept/narration-marin.mp3",
@@ -1213,7 +1213,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "periodic-trends", subject: "Chemistry", unit: 9, number: "C11", title: periodicTrends.title,
-    description: "Twenty-nine narrated chapters on periodic trends, ion-configuration identity, spin-specific radii, amphoteric hydroxides, period lengths and group comparisons.",
+    description: "Thirty-three narrated chapters on periodic properties, electron-gain conventions, supplied shielding estimates, oxoacid families and bond polarity.",
     scope: "Recorded Unit 9 foundation with original practice. These selected group compounds illustrate periodic trends. Detailed group chemistry, transition-element trends and further exceptions remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.periodic-trends.lecture.v1",
     audio: "/lectures/periodic-trends/narration-marin.mp3",
@@ -1273,7 +1273,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "purification-analysis", subject: "Chemistry", unit: 13, number: "C17", title: purificationAnalysis.title,
-    description: "Twenty-nine narrated chapters on separation, two-solute crystallization, vacuum boiling, chromatographic resolution, gravimetric bounds and elemental analysis.",
+    description: "Thirty-three narrated chapters on purification, elemental analysis, nitrogen-method limits, joint nitrogen/sulfur detection, halide-test interference and direct oxygen accounting.",
     scope: "Recorded Unit 13 foundation with original practice. Further analytical equations, correlated uncertainty, nonideal extraction and larger datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.purification-analysis.lecture.v1",
     audio: "/lectures/purification-analysis/narration-marin.mp3",
@@ -1283,7 +1283,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "practical-chemistry", subject: "Chemistry", unit: 20, number: "C18", title: practicalChemistry.title,
-    description: "Thirty-three narrated chapters on qualitative evidence, nickel and calcium confirmations, flame-test blanks, phosphate comparisons, titration and gravimetry.",
+    description: "Thirty-seven narrated chapters on practical chemistry, pH-dependent sulfide selection, nitrite oxidation, chromyl chloride atom balances and qualitative-test limits.",
     scope: "Recorded Unit 20 conceptual foundation with original practice. Full ion-analysis schemes, all preparation equations, indicator curves, sol preparation and further kinetic datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.practical-chemistry.lecture.v1",
     audio: "/lectures/practical-chemistry/narration-marin.mp3",

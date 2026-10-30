@@ -57,6 +57,14 @@
     {
       "title": "University of Colorado LearnChemE: recycle mass balances",
       "url": "https://learncheme.com/quiz-yourself/interactive-self-study-modules/recycle-mass-balances/recycle-mass-balances-screencasts/"
+    },
+    {
+      "title": "OpenStax: molarity and dilution",
+      "url": "https://openstax.org/books/chemistry/pages/3-3-molarity"
+    },
+    {
+      "title": "Monash University: reaction mole ratios",
+      "url": "https://www.monash.edu/student-academic-success/chemistry/quantifying-changes-in-chemical-reactions/quantifying-substances-in-chemical-reactions"
     }
   ],
   "chapters": [
@@ -1076,6 +1084,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Mixing solutions conserves solute amount before it determines molarity",
+      "formula": "nfinal=C1V1+C2V2; Cfinal=nfinal/Vfinal; final solution volume is supplied, not assumed additive",
+      "script": "When two solutions of the same nonreacting solute are mixed, their solute amounts add, but their molarities do not. Convert every measured solution volume to litres before multiplying by molarity. Suppose one hundred millilitres of a one molar solution is combined with two hundred millilitres of a zero point five molar solution. Each portion contributes zero point one mole, so the final solute amount is zero point two mole. If the final measured solution volume is two hundred eighty-five millilitres, the final molarity is zero point two divided by zero point two eight five, approximately zero point seven zero two molar. Dividing by three hundred millilitres would silently impose an additive volume assumption that contradicts the stated measurement. The volume change does not create or destroy solute particles in this selected model. Molarity uses the volume of the complete solution, not the amount of solvent poured in. If a chemical reaction, precipitation or evaporation occurs, its species balance must be included separately. The correct order is to conserve the named solute, establish the final solution volume, and only then calculate concentration.",
+      "points": [
+        ".100 L ×1.00 M · .100 mol solute · Same nonreacting solute",
+        ".200 L ×.500 M · .100 mol solute · Total amount .200 mol",
+        "Measured final volume .285 L · Final C=.702 M · Do not assume .300 L"
+      ],
+      "board": {
+        "heading": "Amounts add; final molarity uses the actual final volume",
+        "columns": [
+          "Given / structure",
+          "Result / inference",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            ".100 L ×1.00 M",
+            ".100 mol solute",
+            "Same nonreacting solute"
+          ],
+          [
+            ".200 L ×.500 M",
+            ".100 mol solute",
+            "Total amount .200 mol"
+          ],
+          [
+            "Measured final volume .285 L",
+            "Final C=.702 M",
+            "Do not assume .300 L"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Repeated withdrawal and replacement remove a fraction of the remaining solute",
+      "formula": "For well-mixed fixed volume V: n after k cycles=n0(1−v/V)^k",
+      "script": "A withdrawal followed by replacement is not the same as adding solvent without removing any solute. Start with one hundred millilitres of a zero point four zero zero molar solution. It contains zero point zero four zero mole of solute. Remove a well mixed twenty-five millilitre portion, then restore the total volume to one hundred millilitres using pure solvent. One quarter of the solute has been removed, leaving zero point zero three zero mole and a concentration of zero point three zero zero molar. Repeat the same withdrawal and replacement once more after mixing. This second portion contains only zero point zero zero seven five mole because the solution is already diluted. The remaining amount is zero point zero two two five mole, giving zero point two two five molar in the restored volume. The total removed amount is zero point zero one seven five mole. Multiplying the original concentration by the total withdrawn volume would overestimate that removal. The geometric factor is one minus the withdrawn fraction for each complete cycle. This assumes uniform mixing, identical restored volumes and no reaction or solute in the replacement solvent.",
+      "points": [
+        "Initial .100 L at .400 M · .0400 mol · Well mixed before each draw",
+        "Remove .025 L, restore twice · .0400×(.75)²=.0225 mol · Final concentration .225 M",
+        "First removal .0100 mol · Second removal .0075 mol · Total removed .0175 mol"
+      ],
+      "board": {
+        "heading": "Each withdrawal samples the concentration at that stage",
+        "columns": [
+          "Given / structure",
+          "Result / inference",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Initial .100 L at .400 M",
+            ".0400 mol",
+            "Well mixed before each draw"
+          ],
+          [
+            "Remove .025 L, restore twice",
+            ".0400×(.75)²=.0225 mol",
+            "Final concentration .225 M"
+          ],
+          [
+            "First removal .0100 mol",
+            "Second removal .0075 mol",
+            "Total removed .0175 mol"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Excess oxygen and dry combustion gas use different mole bases",
+      "formula": "CH4+2O2→CO2+2H2O; stipulated oxidizer 20 mol%O2,80 mol%N2; dry excludes product water",
+      "script": "A combustion gas calculation must state both the oxygen excess and whether water remains in the measured gas. Use a supplied ideal oxidizer containing twenty mole percent oxygen and eighty mole percent inert nitrogen. This is a simplified mixture, not an exact composition of atmospheric air. Complete combustion of zero point one zero zero mole methane needs zero point two zero zero mole oxygen. Twenty percent excess relative to that stoichiometric requirement supplies zero point two four zero mole oxygen and zero point nine six zero mole nitrogen. The ideal products contain zero point one zero zero mole carbon dioxide, zero point two zero zero mole water, zero point zero four zero mole unused oxygen and the unchanged nitrogen. If all water is removed and the other gas amounts are unaffected, the dry total is one point one zero zero mole. The dry carbon dioxide mole fraction is one eleventh. If all product water instead remains vapour, the wet total is one point three zero zero mole and the corresponding fraction is one thirteenth. These are stipulated gas ledgers, excluding dissociation, incomplete combustion and nitrogen reactions. Changing the denominator changes the reported composition without changing carbon dioxide production.",
+      "points": [
+        ".100 mol CH4;20% excess O2 · O2 feed .240;N2 feed .960 mol · Supplied 20/80 oxidizer",
+        "Dry CO2 .100;O2 .040;N2 .960 · Total1.100 mol; xCO2=1/11 · All water removed",
+        "Wet adds .200 mol H2O · Total1.300 mol; xCO2=1/13 · All product water vapour"
+      ],
+      "board": {
+        "heading": "Excess is relative to required oxygen; dry excludes water",
+        "columns": [
+          "Given / structure",
+          "Result / inference",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            ".100 mol CH4;20% excess O2",
+            "O2 feed .240;N2 feed .960 mol",
+            "Supplied 20/80 oxidizer"
+          ],
+          [
+            "Dry CO2 .100;O2 .040;N2 .960",
+            "Total1.100 mol; xCO2=1/11",
+            "All water removed"
+          ],
+          [
+            "Wet adds .200 mol H2O",
+            "Total1.300 mol; xCO2=1/13",
+            "All product water vapour"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Moisture and dry-solid assay require two mass denominators",
+      "formula": "Active mass=wet mass×(1−moisture fraction)×dry-solid active fraction",
+      "script": "A statement of purity must identify which material supplies the denominator. Consider a ten gram as received sample containing twenty percent water by mass. The dry solid mass is eight grams. If an independent assay says that seventy-five percent of those dry solids is the active compound, its active mass is six grams. The wet sample therefore contains sixty percent active material by mass, although the dry solid assay remains seventy-five percent. These percentages describe the same sample on different bases and do not contradict one another. If the active compound has a supplied molar mass of fifty grams per mole, the original wet sample contains zero point one two zero mole of that compound. Subtracting twenty percentage points directly from seventy-five percent would mix denominators and give the wrong active mass. This calculation assumes water is a separately measured component and that drying would not decompose, volatilize or chemically transform the active compound. Water of crystallization may be part of a compound's formula rather than removable contamination, so that case needs a different species definition. Write the mass tree before converting the named active material into moles.",
+      "points": [
+        "Wet sample10 g;water20% · Dry solids8 g · Water is separate moisture",
+        "Active75% of dry solids · Active6 g · Wet active fraction60%",
+        "M(active)=50 g/mol · n(active)=.120 mol · No drying reaction assumed"
+      ],
+      "board": {
+        "heading": "A dry-solid assay is not the active percentage of a wet sample",
+        "columns": [
+          "Given / structure",
+          "Result / inference",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Wet sample10 g;water20%",
+            "Dry solids8 g",
+            "Water is separate moisture"
+          ],
+          [
+            "Active75% of dry solids",
+            "Active6 g",
+            "Wet active fraction60%"
+          ],
+          [
+            "M(active)=50 g/mol",
+            "n(active)=.120 mol",
+            "No drying reaction assumed"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1606,6 +1754,94 @@
       ],
       "answer": 3,
       "explanation": "The reactor returns60% of its250 mol/h A feed as recycle, or150 mol/h, while40% becomes100 mol/h B."
+    },
+    {
+      "question": "Mix .100 L of1.00 M and .200 L of.500 M solutions of the same nonreacting solute. Total solute amount?",
+      "options": [
+        ".150 mol",
+        ".200 mol",
+        ".300 mol",
+        "1.50 mol"
+      ],
+      "answer": 1,
+      "explanation": "The amounts are .100×1.00=.100 mol and .200×.500=.100 mol, summing to .200 mol."
+    },
+    {
+      "question": "That mixture has a measured final solution volume .285 L. Its molarity is approximately:",
+      "options": [
+        ".667 M",
+        "1.50 M",
+        ".702 M",
+        ".570 M"
+      ],
+      "answer": 2,
+      "explanation": "Use the measured final volume: .200/.285=.701754... M; volumes are not assumed additive."
+    },
+    {
+      "question": "A .100 L,.400 M solution undergoes two well-mixed .025 L withdrawals, each followed by restoration with pure solvent. Final molarity?",
+      "options": [
+        ".200 M",
+        ".300 M",
+        ".100 M",
+        ".225 M"
+      ],
+      "answer": 3,
+      "explanation": "Each cycle retains three quarters of the solute at unchanged final volume; .400×(.75)²=.225 M."
+    },
+    {
+      "question": "Total solute removed in that two-cycle example?",
+      "options": [
+        ".0175 mol",
+        ".0200 mol",
+        ".0100 mol",
+        ".0225 mol"
+      ],
+      "answer": 0,
+      "explanation": "Initial amount .0400 mol minus final amount .0225 mol gives .0175 mol removed."
+    },
+    {
+      "question": "Complete combustion of .100 mol CH4 uses a feed with20% excess over its .200 mol stoichiometric O2 requirement. O2 supplied?",
+      "options": [
+        ".200 mol",
+        ".240 mol",
+        ".220 mol",
+        "1.20 mol"
+      ],
+      "answer": 1,
+      "explanation": "The supplied oxygen is 1.20×.200=.240 mol; excess is measured relative to the required oxygen amount."
+    },
+    {
+      "question": "For the stated 20%O2/80%N2 oxidizer and complete water removal, dry CO2 mole fraction is:",
+      "options": [
+        "1/13",
+        "1/10",
+        "1/11",
+        "1/5"
+      ],
+      "answer": 2,
+      "explanation": "Dry amounts .100 CO2+.040 O2+.960 N2=1.100 mol, so xCO2=.100/1.100=1/11."
+    },
+    {
+      "question": "A10 g wet sample is20% water; active material is75% of the dry solids. Active mass?",
+      "options": [
+        "7.5 g",
+        "5.5 g",
+        "8.0 g",
+        "6.0 g"
+      ],
+      "answer": 3,
+      "explanation": "The dry solids are10×.80=8 g and active mass is8×.75=6 g; the two fractions use different denominators."
+    },
+    {
+      "question": "For that sample and M(active)=50 g/mol, active amount and wet active percentage are:",
+      "options": [
+        ".120 mol;60%",
+        ".150 mol;75%",
+        ".110 mol;55%",
+        ".160 mol;80%"
+      ],
+      "answer": 0,
+      "explanation": "Six grams is .120 mol at50 g/mol, and6/10×100=60% of the wet sample mass."
     }
   ]
 }

@@ -1,3 +1,4 @@
+import{extendMoleOrganicBasisLesson}from'./mole-organic-basis-study.ts';
 import { extendMoleOrganicStructureBalancesLesson } from './mole-organic-structure-balances-study.ts';
 import { extendMoleOrganicInterpretationLesson } from './mole-organic-interpretation-study.ts';
 import { extendMoleAtomicMeasurementsLesson } from './mole-atomic-measurements-study.ts';
@@ -71,7 +72,7 @@ export const studyLessons: StudyLesson[] = [
     title: "The mole: connecting particles, mass and reactions",
     summary: "Particle counting, molar mass, composition and limiting reactants.",
     prerequisites: "Ratios, scientific notation and reading chemical formulas.",
-    remaining: "Written companion to the twenty-nine-chapter Marin recording for Unit 1. The recording adds chemical laws, purity, yield, gas volumes and dilution. Trace concentration bases, gas partial pressures, precipitation balances and supporting atom economy are included. Three-isotope constraint counting, reaction-defined equivalents, gas-density dissociation and supporting conversion/selectivity/recycle balances are included. Wet-gas corrections, reciprocal mean molar mass, incomplete-combustion ledgers and a supporting ideal steady recycle balance are included. Further multi-step reaction networks and additional experimental datasets remain; this is not complete unit coverage.",
+    remaining: "Written companion to the thirty-three-chapter Marin recording for Unit 1. The recording adds chemical laws, purity, yield, gas volumes and dilution. Trace concentration bases, gas partial pressures, precipitation balances and supporting atom economy are included. Three-isotope constraint counting, reaction-defined equivalents, gas-density dissociation and supporting conversion/selectivity/recycle balances are included. Wet-gas corrections, reciprocal mean molar mass, incomplete-combustion ledgers and a supporting ideal steady recycle balance are included. Measured-volume mixing, repeated withdrawal/replacement, dry/wet combustion gas bases and moisture-adjusted assay are included. Further multi-step reaction networks and additional experimental datasets remain; this is not complete unit coverage.",
     sections: [
       { title: "A counting unit, not a fixed mass", paragraphs: [
         "A dozen counts twelve objects regardless of what those objects are. A mole similarly counts specified entities, but the count is much larger: exactly 6.02214076 × 10²³ entities per mole. The entities might be atoms, molecules, ions or formula units; always name them.",
@@ -179,3 +180,5 @@ if (moleConceptCompanion) extendMoleAtomicMeasurementsLesson(moleConceptCompanio
 if (moleConceptCompanion) extendMoleOrganicInterpretationLesson(moleConceptCompanion);
 
 if (moleConceptCompanion) extendMoleOrganicStructureBalancesLesson(moleConceptCompanion);
+
+if(moleConceptCompanion)extendMoleOrganicBasisLesson(moleConceptCompanion);

@@ -16,7 +16,7 @@ Questions are original practice, not represented as official PYQs.
 
 | Unit | Recorded class | Chapters | Written sections | Worked examples | Class MCQs / Written MCQs |
 | --- | --- | --- | --- | --- | --- |
-| 1 | [Mole Concept](/jee/classes/mole-concept) | 29 | 26 | 18 | 48 / 48 |
+| 1 | [Mole Concept](/jee/classes/mole-concept) | 33 | 30 | 21 | 56 / 56 |
 | 2 | [Atomic Structure](/jee/classes/atomic-structure) | 33 | 30 | 21 | 58 / 58 |
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 33 | 32 | 21 | 58 / 58 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 35 | 37 | 24 | 58 / 58 |
@@ -24,22 +24,22 @@ Questions are original practice, not represented as official PYQs.
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 33 | 33 | 25 | 58 / 58 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 34 | 35 | 25 | 58 / 58 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 30 | 33 | 25 | 58 / 58 |
-| 9 | [Periodic Trends](/jee/classes/periodic-trends) | 29 | 27 | 18 | 48 / 48 |
+| 9 | [Periodic Trends](/jee/classes/periodic-trends) | 33 | 31 | 21 | 56 / 56 |
 | 10 | [P-Block](/jee/classes/p-block) | 35 | 33 | 21 | 58 / 58 |
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 35 | 33 | 21 | 58 / 58 |
-| 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 30 | 33 | 25 | 58 / 58 |
-| 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 29 | 29 | 18 | 48 / 48 |
-| 14 | [Organic Principles](/jee/classes/organic-principles) | 29 | 32 | 23 | 52 / 52 |
+| 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 34 | 37 | 28 | 66 / 66 |
+| 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 33 | 33 | 21 | 56 / 56 |
+| 14 | [Organic Principles](/jee/classes/organic-principles) | 33 | 36 | 26 | 60 / 60 |
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 33 | 33 | 21 | 56 / 56 |
 | 16 | [Organic Halogens](/jee/classes/organic-halogens) | 33 | 33 | 21 | 56 / 56 |
 | 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 35 | 33 | 21 | 56 / 56 |
 | 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 33 | 33 | 21 | 56 / 56 |
 | 19 | [Biomolecules](/jee/classes/biomolecules) | 33 | 33 | 21 | 56 / 56 |
-| 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 33 | 33 | 21 | 56 / 56 |
+| 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 37 | 37 | 24 | 64 / 64 |
 
 ## Latest expansion
 
-P-Block adds catenation comparisons, halogen displacement, nitrogen oxide redox and amphoteric alumina. D/F-Block adds atomization, dichromate oxidation endpoints, supplied free-ion magnetic models and ceria charge inventories. This adds eight narrated chapters, sixteen original questions and six worked examples.
+Periodic Trends adds electron-gain conventions, a supplied shielding approximation, matched oxoacid families and partial/formal charge distinctions. Coordination Compounds adds intact-ion particle counts, finite-ligand equilibrium, supporting d9 distortion and d8 field comparisons. This adds eight narrated chapters, sixteen original questions and six worked examples.
 
 ## Remaining scope
 
@@ -53,10 +53,12 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference NCERT, OpenStax, Open University magnetic models and primary ceria research. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference OpenStax periodic properties, acid/base and coordination chemistry, Westfield State shielding notes and IIT Kanpur supporting d9 distortion. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks
 include content tests, lint, types, dependency audit, production build, course and
 library browser checks, and the full mobile smoke test. Scope labels must remain
 honest about outstanding work.
+
+Publish validated class updates through Git on the production branch `main`. Let the Git build finish, then verify the deployed commit, Ready/Promoted production status, main domain and public playback. Do not replace it with a metadata-free snapshot upload or cancel it as a duplicate.
