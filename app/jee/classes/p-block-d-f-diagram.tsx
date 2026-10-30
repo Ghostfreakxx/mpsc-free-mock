@@ -1,3 +1,4 @@
+import InorganicTrendApplicationsDiagram from './inorganic-trend-applications-diagram';
 import InorganicRedoxMeasurementsDiagram from './inorganic-redox-measurements-diagram';
 import InorganicStructureAssaysDiagram from './inorganic-structure-assays-diagram';
 import SulfurPeroxoDiagram from './sulfur-peroxo-diagram';
@@ -24,6 +25,7 @@ export default function PBlockDFDiagram({lesson,chapter}:{lesson:keyof typeof re
  <path d="M155 150L230 75L305 150M155 150L230 225L305 150" stroke="#b54e32" strokeWidth="3" strokeDasharray="7 5" fill="none"/>
  {[[155,150,'B'],[305,150,'B'],[75,95,'H'],[75,210,'H'],[385,95,'H'],[385,210,'H'],[230,70,'H'],[230,240,'H']].map(([x,y,label],i)=><g key={i}><circle cx={x} cy={Number(y)-6} r="15" fill="#f5faf7"/><text x={x} y={y} fontSize="21">{label}</text></g>)}
  <text x="230" y="155" fontSize="14">No ordinary B–B bond</text><text x="230" y="277" fontSize="15">Each dashed B–H–B bridge shares 2 electrons</text><text x="230" y="299" fontSize="13">4 terminal bonds: 8 e⁻ · 2 bridges: 4 e⁻</text></g></svg>;
+ if(chapter===34)return <InorganicTrendApplicationsDiagram kind={lesson==='p-block'?'alumina':'ceria'}/>;
  const board=recordings[lesson].chapters[chapter].board;
  return <svg className={styles.diagram} viewBox="0 0 460 310" role="img" aria-label={board.heading}>
   <title>{board.heading}</title><rect width="460" height="310" rx="12" fill="#f5faf7" />

@@ -41,8 +41,8 @@
 .notes article { max-width: 850px; margin: 24px 0; }
 .notes h3 { font-size: 18px; }
 .sources a { margin-left: 12px; text-decoration: underline; }
-.quiz fieldset { padding: 20px 0; border: 0; border-bottom: 1px solid #e0e9e3; margin: 18px 0; }
-.quiz legend { font-weight: 600; }
+.quiz fieldset { min-inline-size: 0; overflow-wrap: anywhere; padding: 20px 0; border: 0; border-bottom: 1px solid #e0e9e3; margin: 18px 0; }
+.quiz legend { overflow-wrap: anywhere; font-weight: 600; }
 .quiz label { display: flex; align-items: baseline; gap: 12px; padding: 8px 0; cursor: pointer; }
 .quiz input { accent-color: #19775b; }
 .correct { color: #126b46; }

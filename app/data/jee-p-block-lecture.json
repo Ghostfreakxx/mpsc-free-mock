@@ -77,6 +77,18 @@
     {
       "title": "CCEA: iodate–iodide stoichiometry",
       "url": "https://ccea.org.uk/downloads/docs/Support/eGuide/2021/A2%202%20Chemistry%20eGuide%3A%20Practical%20Manual.pdf"
+    },
+    {
+      "title": "NCERT via SATHEE: carbon,silicon and catenation",
+      "url": "https://sathee.iitk.ac.in/ncert-books/neet-ncert-books/neet-nb-che-11/chemistry-11-chapter-11-the-p-block-elements/"
+    },
+    {
+      "title": "OpenStax: standard reduction potentials",
+      "url": "https://openstax.org/books/chemistry/pages/17-3-standard-reduction-potentials"
+    },
+    {
+      "title": "OpenStax: nitrogen oxides",
+      "url": "https://openstax.org/books/chemistry-atoms-first-2e/pages/18-7-occurrence-preparation-and-properties-of-nitrogen"
     }
   ],
   "chapters": [
@@ -1166,6 +1178,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Catenation compares like bonds before predicting a whole structure",
+      "formula": "Supplied schematic bond energies:C–C350,Si–Si225,Si–O450 kJ/mol;bond comparisons alone are not a complete reaction cycle",
+      "script": "Catenation is the ability of an element to form chains or rings through bonds between its own atoms. Carbon shows extensive examples, while silicon chemistry often favours structures containing strong silicon oxygen connections. A useful comparison separates these two statements. In a supplied schematic set of average gas phase bond energies, use carbon carbon three hundred fifty, silicon silicon two hundred twenty-five, and silicon oxygen four hundred fifty kilojoules per mole. The carbon carbon link is stronger than the silicon silicon link in this set, supporting a reason why long carbon frameworks can be more robust. The strong silicon oxygen value concerns a different bond and helps explain why oxygen-linked silicon structures are important. It does not turn a silicon oxygen chain into silicon catenation through silicon silicon bonds. Breaking two of the supplied silicon silicon bonds costs four hundred fifty kilojoules per mole of that stipulated bond-breaking event. Predicting a full reaction enthalpy requires every bond broken and formed, with compatible phases and conventions. Bond strengths also do not by themselves give a reaction rate or a unique polymer structure.",
+      "points": [
+        "C–C350;Si–Si225 · Like-bond comparison · Supplied kJ/mol values",
+        "Si–O450 · Strong unlike-atom bond · Not Si–Si catenation",
+        "Break2 Si–Si links · 450 kJ/mol event · Full reaction needs all bonds"
+      ],
+      "board": {
+        "heading": "Separate self-linking from oxygen-linked networks",
+        "columns": [
+          "Given / species",
+          "Result / comparison",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "C–C350;Si–Si225",
+            "Like-bond comparison",
+            "Supplied kJ/mol values"
+          ],
+          [
+            "Si–O450",
+            "Strong unlike-atom bond",
+            "Not Si–Si catenation"
+          ],
+          [
+            "Break2 Si–Si links",
+            "450 kJ/mol event",
+            "Full reaction needs all bonds"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Halogen displacement follows a complete aqueous redox comparison",
+      "formula": "Supplied E° reductions:Cl2/Cl−1.36,Br2/Br−1.09,I2/I−.54 V;Cl2+2Br−→2Cl−+Br2 has E°=.27 V",
+      "script": "A halogen displacement question compares two complete redox couples under compatible conditions. Use supplied standard reduction potentials of one point three six volts for chlorine, one point zero nine for bromine, and zero point five four for iodine, each accepting two electrons to form two halide ions. Pair chlorine reduction with bromide oxidation. The net equation converts one chlorine molecule and two bromides to two chlorides and one bromine molecule, with standard cell potential zero point two seven volts. Pair bromine reduction with iodide oxidation instead, and the standard potential is zero point five five volts. Reversing either complete reaction reverses the sign. The coefficients balance atoms and charge, but multiplying a half equation does not multiply its electrode potential. These comparisons support the selected standard oxidizing-strength order chlorine above bromine above iodine. They are not derived from electron gain enthalpy alone. Actual nonstandard mixtures require their reaction quotient, and kinetics, solvent and side reactions can affect observations. Keep the halogen phase and standard-state convention consistent when using a tabulated potential.",
+      "points": [
+        "Cl1.36;Br1.09;I.54 V · Standard reduction data · Compatible supplied couples",
+        "Cl2 oxidizes2Br− · E°=.27 V · 2 electrons transferred",
+        "Br2 oxidizes2I− · E°=.55 V · Reverse signs on reversal"
+      ],
+      "board": {
+        "heading": "Compare redox couples,not one isolated atom property",
+        "columns": [
+          "Given / species",
+          "Result / comparison",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Cl1.36;Br1.09;I.54 V",
+            "Standard reduction data",
+            "Compatible supplied couples"
+          ],
+          [
+            "Cl2 oxidizes2Br−",
+            "E°=.27 V",
+            "2 electrons transferred"
+          ],
+          [
+            "Br2 oxidizes2I−",
+            "E°=.55 V",
+            "Reverse signs on reversal"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Nitrogen oxide acidity and nitrogen redox changes are separate comparisons",
+      "formula": "Selected neutral oxides:N2O and NO;N2O3 and N2O5 are acid anhydrides;2NO2+H2O→HNO2+HNO3 changes N(+4) to+3 and+5",
+      "script": "An oxide's acid base behaviour is not determined merely by whether its element has a positive oxidation number. In the usual elementary classification, nitrous oxide and nitric oxide are neutral oxides, even though their average nitrogen oxidation numbers are plus one and plus two. Dinitrogen trioxide and dinitrogen pentoxide instead correspond to the acid anhydrides of nitrous and nitric acid in the selected comparison. Their hydration equations form two molecules of the corresponding acid per oxide molecule. Nitrogen dioxide gives a different bookkeeping exercise: two nitrogen dioxide molecules plus water can be represented as forming nitrous and nitric acid. Nitrogen starts at plus four and ends at plus three in one product and plus five in the other. This is a disproportionation balance, unlike simple nitrogen dioxide dimerization where the nitrogen oxidation number stays plus four. The written aqueous acid mixture is a selected net representation; further reactions and conditions can alter the final mixture. Naming an oxide neutral does not mean it cannot take part in oxidation or reduction with another suitable reactant.",
+      "points": [
+        "N2O:N+1;NO:N+2 · Neutral oxide comparison · Positive state is not enough",
+        "N2O3 and N2O5 · Nitrous/nitric anhydrides · Different acid behaviour",
+        "2NO2+H2O · HNO2+HNO3;N+3,+5 · Disproportionation,not dimerization"
+      ],
+      "board": {
+        "heading": "Keep acid-base classification separate from redox",
+        "columns": [
+          "Given / species",
+          "Result / comparison",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "N2O:N+1;NO:N+2",
+            "Neutral oxide comparison",
+            "Positive state is not enough"
+          ],
+          [
+            "N2O3 and N2O5",
+            "Nitrous/nitric anhydrides",
+            "Different acid behaviour"
+          ],
+          [
+            "2NO2+H2O",
+            "HNO2+HNO3;N+3,+5",
+            "Disproportionation,not dimerization"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Amphoteric alumina uses different acid and base reaction ledgers",
+      "formula": "Al2O3+6H+→2Al3++3H2O;Al2O3+2OH−+3H2O→2[Al(OH)4]−",
+      "script": "Amphoteric behaviour means that a substance can participate in both acid and base reactions under suitable conditions. Aluminium oxide illustrates this without requiring a change in the aluminium oxidation state. In a selected acid dissolution equation, one aluminium oxide formula unit consumes six protons to form two aluminium three ions and three waters. In a selected alkaline equation, one oxide formula unit consumes two hydroxides and three waters to give two tetrahydroxoaluminate ions. Aluminium remains plus three in both maps. For separate ideal comparisons using zero point zero one zero mole of aluminium oxide, the acid demand is zero point zero six zero mole of protons and the base demand zero point zero two zero mole of hydroxide. These are alternative reactions on separate samples, not reagent demands that must be added for one simultaneous mixture. Actual dissolution also depends on solid form, medium and reaction conditions. An amphoteric oxide need not contain an acidic hydrogen, so the word amphoteric must not be replaced automatically by amphiprotic. State the products and balance oxygen, hydrogen and charge before using an equivalent ratio.",
+      "points": [
+        "Al2O3 +6H+ · 2Al3+ +3H2O · Al remains+3",
+        "Al2O3 +2OH− +3H2O · 2[Al(OH)4]− · Different alkaline product",
+        ".010 mol oxide,each sample · .060 mol H+ or.020 OH− · Alternative ledgers"
+      ],
+      "board": {
+        "heading": "Amphoteric reactions need two separately balanced maps",
+        "columns": [
+          "Given / species",
+          "Result / comparison",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Al2O3 +6H+",
+            "2Al3+ +3H2O",
+            "Al remains+3"
+          ],
+          [
+            "Al2O3 +2OH− +3H2O",
+            "2[Al(OH)4]−",
+            "Different alkaline product"
+          ],
+          [
+            ".010 mol oxide,each sample",
+            ".060 mol H+ or.020 OH−",
+            "Alternative ledgers"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1718,6 +1870,94 @@
       ],
       "answer": 3,
       "explanation": "Only1.6 mmol of the original2.0 mmol iodate reacts because iodide is limiting."
+    },
+    {
+      "question": "Supplied average bond energies are C–C350,Si–Si225 and Si–O450 kJ/mol. Which comparison directly supports stronger carbon self-links?",
+      "options": [
+        "Si–O versus Si–Si proves all carbon reactions",
+        "C–C versus Si–Si in the supplied set",
+        "Every Si-containing bond is weaker than C–C",
+        "All bond energies are universal constants"
+      ],
+      "answer": 1,
+      "explanation": "Catenation concerns like-atom bonds;C–C is stronger than Si–Si in the stated schematic comparison."
+    },
+    {
+      "question": "Energy required to break two supplied Si–Si links,each225 kJ/mol of links?",
+      "options": [
+        "225 kJ/mol event",
+        "350 kJ/mol event",
+        "450 kJ/mol event",
+        "−450 kJ/mol event"
+      ],
+      "answer": 2,
+      "explanation": "Bond breaking requires energy;two times225=450 for the specified event. A full reaction also needs bond formation terms."
+    },
+    {
+      "question": "Use E°Cl=1.36,E°Br=1.09 V as compatible reduction values. E° for Cl2+2Br−→2Cl−+Br2?",
+      "options": [
+        "2.45 V",
+        "−.27 V",
+        ".55 V",
+        ".27 V"
+      ],
+      "answer": 3,
+      "explanation": "Subtract the bromine reduction value from the chlorine reduction value;the electron number is2."
+    },
+    {
+      "question": "Use E°Br=1.09,E°I=.54 V. E° for Br2+2I−→2Br−+I2?",
+      "options": [
+        ".55 V",
+        "−.55 V",
+        "1.63 V",
+        "1.10 V because two electrons double E°"
+      ],
+      "answer": 0,
+      "explanation": "The potential difference is1.09−.54=.55 V;stoichiometric multiplication does not multiply an electrode potential."
+    },
+    {
+      "question": "Which pair is classified as neutral nitrogen oxides in the selected elementary comparison?",
+      "options": [
+        "N2O3 and N2O5",
+        "N2O and NO",
+        "NO2 and N2O5",
+        "Every nitrogen oxide"
+      ],
+      "answer": 1,
+      "explanation": "N2O and NO are neutral in this acid-base classification;neutrality does not imply absence of redox reactions."
+    },
+    {
+      "question": "In the selected balance2NO2+H2O→HNO2+HNO3,which nitrogen change occurs?",
+      "options": [
+        "+4 stays+4 in every product",
+        "+4 becomes only−3",
+        "+4 becomes+3 and+5",
+        "Nitrogen atoms disappear"
+      ],
+      "answer": 2,
+      "explanation": "One nitrogen is reduced and the other oxidized. This differs from NO2 dimerization,which preserves+4."
+    },
+    {
+      "question": "For separate ideal samples,how much H+ does.010 mol Al2O3 consume in the acid dissolution equation?",
+      "options": [
+        ".010 mol",
+        ".020 mol",
+        ".030 mol",
+        ".060 mol"
+      ],
+      "answer": 3,
+      "explanation": "Al2O3+6H+→2Al3++3H2O uses six protons per oxide formula unit."
+    },
+    {
+      "question": "Al2O3+2OH−+3H2O→2[Al(OH)4]− uses how much OH− for.010 mol oxide?",
+      "options": [
+        ".020 mol",
+        ".060 mol",
+        ".080 mol",
+        "Zero because amphoteric means inert"
+      ],
+      "answer": 0,
+      "explanation": "The specified alkaline reaction uses two hydroxides per oxide;it is an alternative to the acid reaction."
     }
   ]
 }

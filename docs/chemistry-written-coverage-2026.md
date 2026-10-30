@@ -25,8 +25,8 @@ Questions are original practice, not represented as official PYQs.
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 34 | 35 | 25 | 58 / 58 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 30 | 33 | 25 | 58 / 58 |
 | 9 | [Periodic Trends](/jee/classes/periodic-trends) | 29 | 27 | 18 | 48 / 48 |
-| 10 | [P-Block](/jee/classes/p-block) | 31 | 29 | 18 | 50 / 50 |
-| 11 | [D/F-Block](/jee/classes/d-f-block) | 31 | 29 | 18 | 50 / 50 |
+| 10 | [P-Block](/jee/classes/p-block) | 35 | 33 | 21 | 58 / 58 |
+| 11 | [D/F-Block](/jee/classes/d-f-block) | 35 | 33 | 21 | 58 / 58 |
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 30 | 33 | 25 | 58 / 58 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 29 | 29 | 18 | 48 / 48 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 29 | 32 | 23 | 52 / 52 |
@@ -39,11 +39,7 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Thermodynamics adds closed-cycle heat/work accounting, finite-body entropy, electrical calorimeter calibration and supporting joint enthalpy/entropy heat-capacity corrections. The cycle diagram states the chemistry work sign.
-
-Solutions adds activity-corrected vapour pressure, partial molar volumes, supporting mixed-salt ionic strength and an osmotic virial bias model. The pressure diagram compares component contributions under ideal and supplied nonideal conditions.
-
-Together this batch adds eight narrated chapters, sixteen original MCQs and six worked examples, with matching written companions and recorded practice.
+P-Block adds catenation comparisons, halogen displacement, nitrogen oxide redox and amphoteric alumina. D/F-Block adds atomization, dichromate oxidation endpoints, supplied free-ion magnetic models and ceria charge inventories. This adds eight narrated chapters, sixteen original questions and six worked examples.
 
 ## Remaining scope
 
@@ -57,7 +53,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax cycle work, Arovas thermal equilibrium, Monash calorimeter calibration, DeVoe reaction and partial molar quantities, Ellgen activities, Bucknell ionic strength and Gutow osmotic virial theory. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference NCERT, OpenStax, Open University magnetic models and primary ceria research. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks
