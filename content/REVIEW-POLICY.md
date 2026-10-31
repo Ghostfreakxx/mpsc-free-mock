@@ -2,7 +2,7 @@
 
 Published practice is the source-checked, original foundation set in `app/data/reviewed-content.ts`. It is not a comprehensive exam bank, an official PYQ collection, or a prediction of examination content. Review date: 2026-09-27. Review was AI-assisted, not certification by an examination body or independent subject expert.
 
-The second release added 200 practice slots to each of the four exam streams, and MPSC was later expanded further. Current totals (2026-10-30): MPSC 942, NEET 740, JEE 667 and CUET PG 606. Some questions are shared across streams: the 2,955 stream slots come from 1,918 unique questions, 1,016 of which appear in more than one stream, and they are not 1,918 distinct concepts. Additions include deterministic numerical variants and paired recall/matching variants within the existing foundation topics. Their source locations explicitly identify those variants. The larger count does not expand this into full-syllabus coverage. Generation is deterministic and does not call an AI service at runtime. Question IDs from the first release are retained.
+The second release added 200 practice slots to each of the four exam streams, and MPSC was later expanded further. Current totals (2026-10-31): MPSC 1,087, NEET 812, JEE 737 and CUET PG 717. Some questions are shared across streams: the 3,353 stream slots come from 2,143 unique questions, 1,189 of which appear in more than one stream, and they are not 2,143 distinct concepts. Additions include deterministic numerical variants and paired recall/matching variants within the existing foundation topics. Their source locations explicitly identify those variants. The larger count does not expand this into full-syllabus coverage. Generation is deterministic and does not call an AI service at runtime. Question IDs from the first release are retained.
 
 The JEE foundation extension (2026-09-29) adds 99 hand-written questions in eleven topics defined in `app/data/jee-topics.ts`: Physics (constant-acceleration kinematics, projectile motion, work-energy theorem), Chemistry (mole concept, molarity and dilution, gas laws) and Mathematics (arithmetic and geometric sequences, logarithms, permutations and combinations, differentiation rules), taking JEE to 308 published questions. Each item cites an OpenStax section; worked answers for representative numericals are recomputed in `scripts/content.test.mjs`. Review was AI-assisted, as above.
 
@@ -35,6 +35,17 @@ The fifth batch (2026-10-30) adds 227 original questions in twenty-one topics (`
 - **NEET:** endocrine glands, cellular respiration, pollination and fertilisation, and population ecology.
 
 Six draft items that repeated facts already in the bank (Union polity, public finance and panchayats) were replaced with new ones before publication.
+
+The sixth batch (2026-10-31) adds 225 original questions in twenty-two topics (`app/data/batch-six-topics.ts`), again weighted towards MPSC, under the same rules. Every MPSC topic in it is published in English with its Mizo draft pending.
+- **MPSC general studies:** Mizoram's land, districts and festivals; citizenship; official language provisions; travellers' accounts (Al-Biruni, Ibn Battuta, Bernier); Buddhist and Jaina thinkers and the stupa; Partition; agriculture and crops; population (Census 2011); the government budget and deficits; the balance of payments; human health and disease; and biodiversity conservation. All but the Mizoram, health and biodiversity topics also reach CUET PG.
+- **MPSC and CUET PG aptitude:** time and work, and compound interest.
+- **JEE and NEET:** alternating current, the eye and optical instruments, colligative properties, and SN1 and SN2 reactions.
+- **JEE:** continuity, the ellipse and hyperbola, and straight lines.
+- **NEET:** transcription, translation and the genetic code, plus the health and biodiversity topics.
+
+The Mizoram facts were checked against search results because the state portal could not be opened from the build environment. Where sources disagreed (the exact height of Phawngpui, and which river is the longest), no question was set. Three draft items that repeated earlier constitution questions were replaced before publication.
+
+Practice now recycles questions automatically. Options are reshuffled each time a question is shown. The aptitude topics are built from templates in `app/data/aptitude-templates.ts`, so they come back with fresh numbers. A variant uses the same template, formula and source section as the reviewed question. Its draft Mizo comes from the same templates (`app/data/mizo-aptitude.ts`). `scripts/practice-recycling.test.mjs` checks that every template rebuilds its bank questions exactly. It also checks that the variants are well formed and self-consistent.
 
 The atmosphere items cite NOAA JetStream. The other sources follow the third batch. Worked answers for representative numericals are recomputed in `scripts/content.test.mjs`. Review was AI-assisted, as above.
 

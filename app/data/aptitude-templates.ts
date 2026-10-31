@@ -25,6 +25,12 @@ const numbers = (pattern: RegExp) => (prompt: string) => {
   return match ? match.slice(1).map(Number) : null;
 };
 
+// Principal and rate pairs whose two-year compound interest is a whole number of rupees.
+function compoundSample(rng: Rng): number[] {
+  const [rate, unit, most] = pick(rng, [[10, 100, 100], [5, 400, 25], [20, 100, 50], [4, 2500, 4], [8, 2500, 4]] as const);
+  return [unit * int(rng, Math.ceil(500 / unit), most), rate];
+}
+
 export const aptitude = {
   // Percentages and simple interest (pattern-batch-topics.ts).
   percentOf: {
@@ -249,6 +255,71 @@ export const aptitude = {
       return [`A shop marks up an item costing Rs ${cost} by ${rate}%. What is the marked price?`, `Rs ${price}`, [`Rs ${markup}`, `Rs ${cost - markup}`, `Rs ${cost + rate}`], `Mark-up = ${cost} x ${rate}/100 = Rs ${markup}; marked price = ${cost} + ${markup} = Rs ${price}.`, "Section 6.3: mark-up applications"];
     },
     sample: rng => [100 * int(rng, 2, 20), pick(rng, [10, 20, 25, 30, 40, 50])],
+  },
+  // Time and work; compound interest (batch-six-topics.ts). Mizo drafts for these are pending.
+  workTogether: {
+    parse: numbers(/^A can finish a job in (\d+) days and B can finish it in (\d+) days\. Working together, how many days will they take\?$/),
+    build: ([a, b]) => {
+      const days = round((a * b) / (a + b));
+      return [`A can finish a job in ${a} days and B can finish it in ${b} days. Working together, how many days will they take?`, `${days} days`, [`${a + b} days`, `${round((a + b) / 2)} days`, `${round(Math.min(a, b) / 2)} days`], `Together they do 1/${a} + 1/${b} = ${a + b}/${a * b} of the job each day, so they need ${a * b}/${a + b} = ${days} days.`, "Section 7.5: work applications of rational equations"];
+    },
+    sample: rng => {
+      const [a, b] = pick(rng, [[3, 6], [4, 12], [6, 12], [10, 15], [12, 24], [20, 30], [12, 36], [15, 30], [30, 60]]);
+      const k = int(rng, 1, 2);
+      return rng() < 0.5 ? [a * k, b * k] : [b * k, a * k];
+    },
+  },
+  workersDays: {
+    parse: numbers(/^(\d+) workers can finish a job in (\d+) days\. How many days will (\d+) workers take, working at the same rate\?$/),
+    build: ([workers, days, others]) => {
+      const total = workers * days, needed = round(total / others);
+      return [`${workers} workers can finish a job in ${days} days. How many days will ${others} workers take, working at the same rate?`, `${needed} days`, [`${round((days * others) / workers)} days`, `${days} days`, `${total} days`], `Total work = ${workers} x ${days} = ${total} worker-days; ${total}/${others} = ${needed} days.`, "Section 7.5: work applications of rational equations"];
+    },
+    sample: rng => {
+      const workers = int(rng, 2, 12);
+      let days = int(rng, 3, 20);
+      if (days === workers) days += 1;
+      // `days` itself divides the total, so a whole-number answer always exists.
+      const total = workers * days;
+      const others = pick(rng, Array.from({ length: 19 }, (_, i) => i + 2).filter(n => n !== workers && total % n === 0));
+      return [workers, days, others];
+    },
+  },
+  tankFill: {
+    parse: numbers(/^One tap fills a tank in (\d+) hours and a drain empties it in (\d+) hours\. With both open, how long does the empty tank take to fill\?$/),
+    build: ([fill, drain]) => {
+      const hours = round((fill * drain) / (drain - fill));
+      return [`One tap fills a tank in ${fill} hours and a drain empties it in ${drain} hours. With both open, how long does the empty tank take to fill?`, `${hours} hours`, [`${round((fill * drain) / (fill + drain))} hours`, `${drain - fill} hours`, `${fill + drain} hours`], `Net filling each hour = 1/${fill} - 1/${drain} = ${drain - fill}/${fill * drain} of the tank, so it takes ${fill * drain}/${drain - fill} = ${hours} hours.`, "Section 7.5: work applications of rational equations"];
+    },
+    sample: rng => {
+      const [fill, drain] = pick(rng, [[2, 3], [4, 12], [4, 6], [10, 15], [12, 20], [6, 10], [3, 4], [5, 6]]);
+      const k = int(rng, 1, 2);
+      return [fill * k, drain * k];
+    },
+  },
+  compoundInterest: {
+    parse: numbers(/^Find the compound interest on Rs (\d+) at (\d+)% per year for 2 years, compounded annually\.$/),
+    build: ([principal, rate]) => {
+      const amount = round2(principal * (1 + rate / 100) ** 2), interest = round2(amount - principal);
+      return [`Find the compound interest on Rs ${principal} at ${rate}% per year for 2 years, compounded annually.`, `Rs ${interest}`, [`Rs ${(2 * principal * rate) / 100}`, `Rs ${amount}`, `Rs ${(principal * rate) / 100}`], `Amount = ${principal} x (1 + ${rate}/100)^2 = Rs ${amount}; compound interest = ${amount} - ${principal} = Rs ${interest}.`, "Section 6.4: compound interest"];
+    },
+    sample: rng => compoundSample(rng),
+  },
+  compoundAmount: {
+    parse: numbers(/^Rs (\d+) is invested at (\d+)% per year, compounded annually\. What is the amount after 2 years\?$/),
+    build: ([principal, rate]) => {
+      const amount = round2(principal * (1 + rate / 100) ** 2);
+      return [`Rs ${principal} is invested at ${rate}% per year, compounded annually. What is the amount after 2 years?`, `Rs ${amount}`, [`Rs ${principal + (2 * principal * rate) / 100}`, `Rs ${round2(amount - principal)}`, `Rs ${round2(principal * (1 + rate / 100))}`], `A = P(1 + r/100)^t = ${principal} x (1 + ${rate}/100)^2 = Rs ${amount}.`, "Section 6.4: compound interest"];
+    },
+    sample: rng => compoundSample(rng),
+  },
+  compoundDifference: {
+    parse: numbers(/^What is the difference between compound interest and simple interest on Rs (\d+) at (\d+)% per year for 2 years\?$/),
+    build: ([principal, rate]) => {
+      const difference = round2(principal * (rate / 100) ** 2);
+      return [`What is the difference between compound interest and simple interest on Rs ${principal} at ${rate}% per year for 2 years?`, `Rs ${difference}`, [`Rs ${(principal * rate) / 100}`, `Rs ${round2(2 * difference)}`, `Rs ${round2(principal * (1 + rate / 100) ** 2 - principal)}`], `For 2 years the difference is P(r/100)^2 = ${principal} x (${rate}/100)^2 = Rs ${difference}: the interest earned on the first year's interest.`, "Section 6.4: compound interest"];
+    },
+    sample: rng => compoundSample(rng),
   },
 } satisfies Record<string, AptitudeTemplate>;
 

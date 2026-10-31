@@ -22,6 +22,9 @@ export const mizoPendingTopicIds = new Set([
   "mughal-chronicles", "india-drainage", "atmosphere-layers", "money-functions", "monetary-policy", "acids-bases-ph", "adaptive-immunity",
   "emergency-provisions", "constitutional-bodies", "bhakti-sufi", "colonial-cities", "indian-monsoon", "soils-of-india", "minerals-energy",
   "national-income", "inflation", "endocrine-glands", "newtons-laws",
+  "mizoram-geography-culture", "citizenship", "official-language", "travellers-accounts", "thinkers-buildings", "partition",
+  "india-agriculture", "india-population", "government-budget", "balance-of-payments", "human-health-disease",
+  "biodiversity-conservation", "time-and-work", "compound-interest",
 ]);
 const topicIdOf = (questionId: string) => questionId.replace(/-\d+$/, "");
 
