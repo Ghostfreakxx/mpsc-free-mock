@@ -1,3 +1,4 @@
+import{extendBiomoleculeConnectivityLesson}from'./biomolecule-connectivity-study.ts';
 import {extendAnalysisDetectionLesson}from'./analysis-detection-study.ts';
 import { extendAromaticBiomoleculePatternsLesson } from './aromatic-biomolecule-patterns-study.ts';
 import { extendAnalysisPracticalSeparationMapsLesson } from './analysis-practical-separation-maps-study.ts';
@@ -108,3 +109,5 @@ for (const lesson of biomoleculesAnalysisLessons) extendAnalysisPracticalSeparat
 for (const lesson of biomoleculesAnalysisLessons) extendAromaticBiomoleculePatternsLesson(lesson);
 
 for(const lesson of biomoleculesAnalysisLessons)extendAnalysisDetectionLesson(lesson);
+
+for(const lesson of biomoleculesAnalysisLessons)extendBiomoleculeConnectivityLesson(lesson);

@@ -109,6 +109,22 @@
     {
       "title": "Schaller: mathematics and assumptions of enzyme kinetics",
       "url": "https://chem.libretexts.org/Bookshelves/General_Chemistry/Book%3A_Structure_and_Reactivity_in_Organic_Biological_and_Inorganic_Chemistry_(Schaller)/IV%3A__Reactivity_in_Organic_Biological_and_Inorganic_Chemistry_2/02%3A_Mathematical_Tools_in_Reaction_Kinetics/2.06%3A_Characterization-__The_Mathematics_Behind_Enzyme_Kinetics"
+    },
+    {
+      "title": "OpenStax Organic Chemistry: polysaccharide connectivity",
+      "url": "https://openstax.org/books/organic-chemistry/pages/25-9-polysaccharides-and-their-synthesis"
+    },
+    {
+      "title": "OpenStax Microbiology: glucose polymers and linkages",
+      "url": "https://openstax.org/books/microbiology/pages/7-2-carbohydrates"
+    },
+    {
+      "title": "Purdue University: amino acid acid-base groups",
+      "url": "https://chemed.chem.purdue.edu/genchem/topicreview/bp/1biochem/amino2.html"
+    },
+    {
+      "title": "NCBI Bookshelf, The Cell: protein folding and disulfide exchange",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK9843/"
     }
   ],
   "chapters": [
@@ -1266,6 +1282,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "A finite glucose oligomer retains an end-group water correction",
+      "formula": "Ten glucose units−nine H2O:10×180−9×18=1638 g/mol;hydrolysis adds162 g/mol",
+      "script": "A finite carbohydrate chain needs an end group correction that the bulk repeat unit formula can hide. Consider a hypothetical unmodified linear oligomer containing ten glucose units joined by nine ordinary glycosidic linkages. Use rounded molar masses of one hundred eighty grams per mole for glucose and eighteen for water. Its formation balance starts with ten glucose molecules and subtracts nine water molecules, giving a molar mass of sixteen hundred thirty-eight grams per mole. Complete hydrolysis consumes nine waters and produces ten glucose molecules with combined molar mass eighteen hundred grams per mole of the original oligomer. The product mass is larger because water has been incorporated from the reaction medium; glucose mass was not created from nothing. For one mole of this oligomer, the mass increase is one hundred sixty-two grams. The common bulk expression based on a glucose residue mass of one hundred sixty-two omits the extra terminal water contribution for a finite open chain. This example assumes no ring closure, attached protein, substitution or oxidation. Branching without cycles still leaves nine links for ten connected units, so the same overall water balance can apply even when the detailed connectivity differs.",
+      "points": [
+        "10 glucose;9 linkages · M=1800−162=1638 g/mol · Unmodified finite open oligomer",
+        "Complete hydrolysis · 1638+162=1800 g/mol basis · Nine waters consumed",
+        "Bulk162×10=1620 · Add18 for finite end groups · No cycles or substituents"
+      ],
+      "board": {
+        "heading": "Track the water entering a finite-chain hydrolysis balance",
+        "columns": [
+          "Given / model",
+          "Result / inventory",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "10 glucose;9 linkages",
+            "M=1800−162=1638 g/mol",
+            "Unmodified finite open oligomer"
+          ],
+          [
+            "Complete hydrolysis",
+            "1638+162=1800 g/mol basis",
+            "Nine waters consumed"
+          ],
+          [
+            "Bulk162×10=1620",
+            "Add18 for finite end groups",
+            "No cycles or substituents"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Branching creates more nonreducing ends without multiplying free anomeric centres",
+      "formula": "Abstract10-glucose acyclic tree:9 links;2 binary branch points;3 nonreducing ends;1 free anomeric centre",
+      "script": "Branching and reducing end count describe different features of carbohydrate connectivity. Use a supporting abstract model of ten glucose units in one connected acyclic structure. Each glycosidic linkage consumes the anomeric centre of one child unit and joins it to an ordinary hydroxyl group of its parent. Exclude anomeric to anomeric links, ring closure and chemical caps. A connected tree of ten units has nine links, so nine anomeric centres are used and one remains free at the root. Now choose two branch points, each carrying two child arms, with every other internal unit carrying one child. This topology has three nonreducing terminal arms. It does not have three free reducing anomeric centres. Cutting one linkage without further rearrangement splits the connected tree into two components and exposes one additional free anomeric centre in this model. These are molecular inventory counts, not a prediction of the intensity of a reducing sugar test for a large polymer. Real glycogen also has a protein associated reducing end, which this uncapped exercise deliberately excludes. Always define which carbon participates in each linkage before turning a branched drawing into an end count.",
+      "points": [
+        "10 units;acyclic connected · 9 links;1 free anomeric centre · No caps or anomeric–anomeric link",
+        "Two binary branch points · Three nonreducing terminal arms · Branch arms are not reducing ends",
+        "Cut one glycosidic link · Two components;2 free centres · Model hydrolysis;no rearrangement"
+      ],
+      "board": {
+        "heading": "Count connectivity and anomeric chemistry separately",
+        "columns": [
+          "Given / model",
+          "Result / inventory",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "10 units;acyclic connected",
+            "9 links;1 free anomeric centre",
+            "No caps or anomeric–anomeric link"
+          ],
+          [
+            "Two binary branch points",
+            "Three nonreducing terminal arms",
+            "Branch arms are not reducing ends"
+          ],
+          [
+            "Cut one glycosidic link",
+            "Two components;2 free centres",
+            "Model hydrolysis;no rearrangement"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Peptide charge counts side chains as well as the two termini",
+      "formula": "Lys–Gly–Lys with free termini:dominant N+1,C−1,two Lys side chains+2→net+2",
+      "script": "The charge of a short peptide cannot be found by adding the charges of its free amino acid building blocks unchanged. Peptide formation converts internal backbone amino and carboxyl groups into amide linkages. Consider the linear sequence lysine glycine lysine with unmodified free amino and carboxyl termini. In a stipulated dominant protonation state near neutral pH, assign plus one to the amino terminus, minus one to the carboxyl terminus and plus one to each of the two lysine side chain amino groups. Glycine has no ionizable side chain in this model. The net charge is therefore plus two. There are two backbone peptide linkages. These amides do not act as additional simple amine sites under the stated conditions. If only the amino terminus is acetylated and all other stated charge assignments remain unchanged, removal of that terminal positive charge changes the net charge in this example to plus one. This is formal dominant state bookkeeping, not an exact fractional population calculation for every pH. Real site acid constants depend on the molecular environment. State terminal modifications, side chain identities and protonation conditions before comparing peptide charge or migration direction.",
+      "points": [
+        "Lys–Gly–Lys;free termini · N+1,C−1,Lys side chains+2 · Dominant states stipulated",
+        "Net model charge · +2;two peptide links · Internal amides not extra amines",
+        "Only N terminus acetylated · Net model charge+1 · Other states held unchanged"
+      ],
+      "board": {
+        "heading": "Count ionizable sites after peptide bonds have formed",
+        "columns": [
+          "Given / model",
+          "Result / inventory",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Lys–Gly–Lys;free termini",
+            "N+1,C−1,Lys side chains+2",
+            "Dominant states stipulated"
+          ],
+          [
+            "Net model charge",
+            "+2;two peptide links",
+            "Internal amides not extra amines"
+          ],
+          [
+            "Only N terminus acetylated",
+            "Net model charge+1",
+            "Other states held unchanged"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Four labelled cysteines permit three complete disulfide pairings",
+      "formula": "Sites1,2,3,4:12|34;13|24;14|23;two S–S links per pairing;connectivity alone does not select native fold",
+      "script": "Knowing the number of cysteine residues does not uniquely specify which disulfide bonds a protein contains. In a supporting connectivity model, label four cysteine side chains by their positions one, two, three and four in a single fixed polypeptide sequence. Assume every thiol forms exactly one intramolecular disulfide and no other reaction occurs. Site one can pair with site two, site three or site four. Once that partner is selected, the remaining two sites must pair with each other. The three possibilities are therefore one with two and three with four; one with three and two with four; or one with four and two with three. Exchanging the order in which the same two links are listed does not make a fourth structure. Each pattern has two sulfur sulfur links and the same backbone peptide bond inventory. Formal oxidation of four thiols removes four hydrogen equivalents; it is not the loss of two condensation waters. Complete reduction restores four thiols without requiring peptide hydrolysis. The three combinatorial patterns are possible pairings, not a claim that they are equally stable or all accessible. Folding geometry and chemical evidence are needed to identify the actual disulfide arrangement.",
+      "points": [
+        "Four labelled thiol sites · Three complete pairing patterns · Each site used exactly once",
+        "Each pattern · Two S–S links;same backbone · Not necessarily equally stable",
+        "Complete disulfide reduction · Four thiols restored · No peptide hydrolysis required"
+      ],
+      "board": {
+        "heading": "A disulfide count does not determine its pairing pattern",
+        "columns": [
+          "Given / model",
+          "Result / inventory",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Four labelled thiol sites",
+            "Three complete pairing patterns",
+            "Each site used exactly once"
+          ],
+          [
+            "Each pattern",
+            "Two S–S links;same backbone",
+            "Not necessarily equally stable"
+          ],
+          [
+            "Complete disulfide reduction",
+            "Four thiols restored",
+            "No peptide hydrolysis required"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1884,6 +2040,94 @@
       ],
       "answer": 0,
       "explanation": "The denominator is2Km and the numerator VmaxKm,so the rate is half maximum; this does not specify a new equilibrium constant."
+    },
+    {
+      "question": "Using glucose180 and water18 g/mol, the molar mass of an unmodified open ten-glucose oligomer with nine glycosidic links is:",
+      "options": [
+        "1620 g/mol",
+        "1638 g/mol",
+        "1800 g/mol",
+        "1782 g/mol"
+      ],
+      "answer": 1,
+      "explanation": "Ten free glucose units contribute1800 g/mol; nine condensation waters remove162, leaving1638 g/mol."
+    },
+    {
+      "question": "Complete hydrolysis of one mole of that oligomer incorporates what mass of water?",
+      "options": [
+        "18 g",
+        "180 g",
+        "162 g",
+        "1638 g"
+      ],
+      "answer": 2,
+      "explanation": "Nine glycosidic links require nine waters in the stated hydrolysis balance, giving9×18=162 g per mole of oligomer."
+    },
+    {
+      "question": "An uncapped acyclic connected10-glucose tree uses nine anomeric centres in ordinary child-to-parent links. How many free anomeric centres remain?",
+      "options": [
+        "10",
+        "9",
+        "3",
+        "1"
+      ],
+      "answer": 3,
+      "explanation": "Ten anomeric centres minus nine used centres leaves one free root centre, regardless of the two stipulated branch points."
+    },
+    {
+      "question": "For the stipulated tree with two binary branch points and otherwise single-child internal nodes, the number of nonreducing terminal arms is:",
+      "options": [
+        "3",
+        "1",
+        "2",
+        "9"
+      ],
+      "answer": 0,
+      "explanation": "In this rooted tree each binary branch adds one terminal arm, giving two plus one equals three; these arms are not extra reducing centres."
+    },
+    {
+      "question": "For free-terminal Lys–Gly–Lys in the stated dominant charge model, N+1,C−1 and two Lys side chains+1 each give net charge:",
+      "options": [
+        "0",
+        "+2",
+        "+3",
+        "−2"
+      ],
+      "answer": 1,
+      "explanation": "The two termini cancel and the two lysine side chains contribute+2; the internal backbone groups belong to peptide amides."
+    },
+    {
+      "question": "If only its N terminus is acetylated and all other stated charges are held unchanged, the net model charge becomes:",
+      "options": [
+        "0",
+        "+2",
+        "+1",
+        "−1"
+      ],
+      "answer": 2,
+      "explanation": "Acetylation removes the assigned terminal positive charge, changing the stipulated net from+2 to+1."
+    },
+    {
+      "question": "Four labelled cysteine sites each form exactly one disulfide partner within a single chain. How many complete pairings exist?",
+      "options": [
+        "1",
+        "2",
+        "6",
+        "3"
+      ],
+      "answer": 3,
+      "explanation": "Site1 has three possible partners; the remaining two sites then pair uniquely, giving three distinct unordered pair sets."
+    },
+    {
+      "question": "Complete reduction of the two disulfides in any such pattern restores:",
+      "options": [
+        "Four thiols without requiring peptide hydrolysis",
+        "Two thiols and two peptide cuts",
+        "Four new peptide bonds",
+        "Two condensation waters as the only products"
+      ],
+      "answer": 0,
+      "explanation": "Each disulfide yields two thiols on reduction; the backbone peptide inventory is independent of sulfur pairing."
     }
   ]
 }

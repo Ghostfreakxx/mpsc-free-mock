@@ -34,12 +34,12 @@ Questions are original practice, not represented as official PYQs.
 | 16 | [Organic Halogens](/jee/classes/organic-halogens) | 33 | 33 | 21 | 56 / 56 |
 | 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 35 | 33 | 21 | 56 / 56 |
 | 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 33 | 33 | 21 | 56 / 56 |
-| 19 | [Biomolecules](/jee/classes/biomolecules) | 33 | 33 | 21 | 56 / 56 |
+| 19 | [Biomolecules](/jee/classes/biomolecules) | 37 | 37 | 24 | 64 / 64 |
 | 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 37 | 37 | 24 | 64 / 64 |
 
 ## Latest expansion
 
-Equilibrium adds four narrated chapters on activity corrections, supporting ionic-strength accounting, buffer exhaustion and finite solid supply. The batch includes eight original questions and three worked examples, with explicit limits on ideal and fixed-coefficient models.
+Biomolecules adds four narrated chapters on finite carbohydrate hydrolysis, abstract branching and reducing-end counts, peptide charge inventories and disulfide pairing patterns. The batch includes eight original questions, three worked examples and a labelled connectivity diagram. Supporting models state their assumptions explicitly.
 
 ## Remaining scope
 
@@ -53,7 +53,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The new notes reference IUPAC ionic-strength terminology, OpenStax equilibrium constants and buffer capacity, and University of Calgary finite-solid equilibrium calculations. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The new notes reference OpenStax polysaccharide connectivity, Purdue amino-acid acid-base groups and NCBI Bookshelf protein-folding chemistry. Numerical datasets, topology diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

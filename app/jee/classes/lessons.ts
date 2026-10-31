@@ -1263,7 +1263,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "biomolecules", subject: "Chemistry", unit: 19, number: "C16", title: biomolecules.title,
-    description: "Thirty-three narrated chapters on biomolecules, L and CIP configuration, ideal helix contacts, methyl glucoside, supporting enzyme saturation and DNA connectivity.",
+    description: "Thirty-seven narrated chapters on carbohydrate end groups, branching, peptide charge, disulfide pairing and biomolecule structure.",
     scope: "Recorded Unit 19 foundation and worked applications with original practice. Full chair structures, advanced cyclic fructose comparisons and broader hormone examples remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.biomolecules.lecture.v1",
     audio: "/lectures/biomolecules/narration-marin.mp3",
