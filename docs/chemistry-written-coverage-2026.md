@@ -17,8 +17,8 @@ Questions are original practice, not represented as official PYQs.
 | Unit | Recorded class | Chapters | Written sections | Worked examples | Class MCQs / Written MCQs |
 | --- | --- | --- | --- | --- | --- |
 | 1 | [Mole Concept](/jee/classes/mole-concept) | 33 | 30 | 21 | 56 / 56 |
-| 2 | [Atomic Structure](/jee/classes/atomic-structure) | 33 | 30 | 21 | 58 / 58 |
-| 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 33 | 32 | 21 | 58 / 58 |
+| 2 | [Atomic Structure](/jee/classes/atomic-structure) | 37 | 34 | 24 | 66 / 66 |
+| 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 37 | 36 | 24 | 66 / 66 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 35 | 37 | 24 | 58 / 58 |
 | 5 | [Solutions](/jee/classes/solutions) | 35 | 37 | 24 | 58 / 58 |
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 33 | 33 | 25 | 58 / 58 |
@@ -39,7 +39,7 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Chemical Kinetics adds supporting second-order half intervals, a supplied saturation curve, mixing dead time and background-rate correction. Redox/Electrochemistry adds junction-potential accounting, supporting terminal voltage under load, two-point pH calibration and parallel-cell charge ledgers. This adds eight narrated chapters, sixteen original questions and six worked examples.
+Atomic Structure adds spectral wavenumbers, mean ion-charge inventories, supporting resolving power and work-function versus atomic-ionization comparisons. Chemical Bonding adds lattice/hydration sign conventions, iodine chloride Lewis/VSEPR counts, ideal hydrogen-bond network counting and dipole-based charge models. This adds eight narrated chapters, sixteen original questions and six worked examples.
 
 ## Remaining scope
 
@@ -53,7 +53,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference OpenStax integrated rate laws, circuit balances and electrolysis, the NCBI Assay Guidance Manual and IUPAC liquid-junction/pH definitions. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The notes reference NIST spectroscopy, ESO resolving-power conventions, OpenStax photoemission and polarity, NCERT thermochemical cycles, University of Florida VSEPR models and Georgia Tech intermolecular contacts. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

@@ -1,3 +1,4 @@
+import{extendAtomicBondingMeasurementModelsLesson}from'./atomic-bonding-measurement-models-study.ts';
 import{extendPeriodicCoordinationModelsLesson}from'./periodic-coordination-models-study.ts';
 import {extendAtomicBondingComparisonsLesson}from'./atomic-bonding-comparisons-study.ts';
 import { extendPeriodicCoordinationContextLesson } from './periodic-coordination-context-study.ts';
@@ -115,7 +116,7 @@ export const chemistryExpansionLessons: StudyLesson[] = [
     title: "Chemical bonding: from electrons to shape and properties",
     summary: "Lewis structures, charge bookkeeping, VSEPR, polarity, overlap and molecular orbitals.",
     prerequisites: "Valence electrons, periodic trends and basic orbital terminology.",
-    remaining: "Written companion to the thirty-three-chapter Marin recording for Unit 3. The recording adds polarization comparisons, five- and six-domain shapes, bond counting and hydrogen bonding. Lower-Z diatomic MO filling, donor–acceptor adducts, nitrophenol hydrogen bonding and extended sigma/pi counts are included. A simplified HF valence MO diagram, bond-well and zero-point distinctions, NO2 radicals and positional dipole models are included. Orbital phase, diborane bridges, supporting XeF2 multicentre bonding and fixed-proton bicarbonate resonance are included. Selected electron-deficient chloride adducts, common-factor ionic energy ratios, CO charge conventions and oxygen molecular ions are included. More detailed heteronuclear mixing, broader lattice datasets and additional shape comparisons remain; this is not complete unit coverage.",
+    remaining: "Written companion to the thirty-seven-chapter Marin recording for Unit 3. The recording adds polarization comparisons, five- and six-domain shapes, bond counting and hydrogen bonding. Lower-Z diatomic MO filling, donor–acceptor adducts, nitrophenol hydrogen bonding and extended sigma/pi counts are included. A simplified HF valence MO diagram, bond-well and zero-point distinctions, NO2 radicals and positional dipole models are included. Orbital phase, diborane bridges, supporting XeF2 multicentre bonding and fixed-proton bicarbonate resonance are included. Selected electron-deficient chloride adducts, common-factor ionic energy ratios, CO charge conventions and oxygen molecular ions are included. Compatible lattice/hydration ledgers, iodine chloride electron/shape counts, ideal hydrogen-bond network counting and dipole-based model charges are included. More detailed heteronuclear mixing, broader lattice datasets and additional shape comparisons remain; this is not complete unit coverage.",
     sections: [
       { title: "Bond formation must lower the appropriate energy", paragraphs: [
         "Atoms do not bond merely because someone tells them to complete an octet. Bond formation can lower a system's energy through interactions among nuclei and electrons. The octet rule is a useful bookkeeping pattern with exceptions, including electron-deficient and odd-electron species.",
@@ -183,3 +184,5 @@ for (const lesson of chemistryExpansionLessons) extendPeriodicCoordinationContex
 for(const lesson of chemistryExpansionLessons)extendAtomicBondingComparisonsLesson(lesson);
 
 for(const lesson of chemistryExpansionLessons)extendPeriodicCoordinationModelsLesson(lesson);
+
+for(const lesson of chemistryExpansionLessons)extendAtomicBondingMeasurementModelsLesson(lesson);

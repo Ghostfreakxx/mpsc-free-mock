@@ -1,3 +1,4 @@
+import AtomicBondingMeasurementModelsDiagram from './atomic-bonding-measurement-models-diagram';
 import AtomicBondingComparisonsDiagram from './atomic-bonding-comparisons-diagram';
 import AtomicMulticentreDiagram from './atomic-multicentre-diagram';
 import AtomicBondingEvidenceDiagram from './atomic-bonding-evidence-diagram';
@@ -19,6 +20,8 @@ export default function AtomicBondingDiagram({lesson,chapter}:{lesson:"atomic-st
  if(lesson==="atomic-structure"&&chapter===18)return <ExcitedRadialDiagram/>;
  if(lesson==="atomic-structure"&&chapter===14)return <RadialProbabilityDiagram/>;
  if (lesson==="chemical-bonding" && (chapter===9 || chapter===12)) return <BondingApplicationsDiagram chapter={chapter}/>;
+ if(lesson==='atomic-structure'&&chapter===34)return <AtomicBondingMeasurementModelsDiagram kind="ensemble"/>;
+ if(lesson==='chemical-bonding'&&chapter===35)return <AtomicBondingMeasurementModelsDiagram kind="network"/>;
  const board=(lesson==="atomic-structure"?atomicStructure:chemicalBonding).chapters[chapter].board;
  return <svg className={styles.diagram} viewBox="0 0 460 310" role="img" aria-label={board.heading}>
   <title>{board.heading}</title><rect width="460" height="310" rx="12" fill="#f5faf7" />

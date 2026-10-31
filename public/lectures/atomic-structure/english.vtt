@@ -2174,3 +2174,282 @@ model separate instead of treating all copper species as having the same
 
 00:40:46.408 --> 00:40:47.168
 electron arrangement.
+
+00:40:48.336 --> 00:40:52.896
+A spectral number written in reciprocal centimetres is not a wavelength in
+
+00:40:52.896 --> 00:40:55.416
+centimetres and is not a frequency in hertz.
+
+00:40:56.476 --> 00:41:00.996
+In the usual spectroscopic convention, vacuum wavenumber is the reciprocal of
+
+00:41:00.996 --> 00:41:01.616
+vacuum wavelength.
+
+00:41:02.756 --> 00:41:06.216
+A supplied transition wavenumber of twenty thousand reciprocal centimetres
+
+00:41:06.216 --> 00:41:10.983
+therefore corresponds to a wavelength of one divided by twenty thousand
+
+00:41:10.983 --> 00:41:14.056
+centimetres, or five hundred nanometres.
+
+00:41:14.056 --> 00:41:18.768
+Converting the wavenumber to SI gives two million reciprocal metres because
+
+00:41:18.768 --> 00:41:18.956
+one
+
+00:41:18.956 --> 00:41:22.056
+reciprocal centimetre equals one hundred reciprocal metres.
+
+00:41:23.376 --> 00:41:27.056
+Using a supplied speed of light of three times ten to the eight metres per
+
+00:41:27.056 --> 00:41:30.416
+second gives frequency six times ten to the fourteen hertz.
+
+00:41:31.516 --> 00:41:35.502
+With the rounded photon constant twelve hundred forty electron volt
+
+00:41:35.502 --> 00:41:36.156
+nanometres,
+
+00:41:36.156 --> 00:41:39.116
+the photon energy is two point four eight electron volts.
+
+00:41:40.036 --> 00:41:43.816
+These are different units for the same specified photon, not independent
+
+00:41:43.816 --> 00:41:45.516
+observations of different transitions.
+
+00:41:47.276 --> 00:41:50.796
+Spectroscopic reciprocal wavelength also differs from the angular wavenumber
+
+00:41:50.796 --> 00:41:52.816
+defined with an extra factor of two pi.
+
+00:41:54.116 --> 00:41:56.516
+Vacuum and air wavelengths must not be mixed silently.
+
+00:41:57.376 --> 00:42:01.996
+The wavenumber alone gives an energy separation; it does not identify an atom
+
+00:42:01.996 --> 00:42:04.096
+or prove which transition is allowed.
+
+00:42:05.040 --> 00:42:09.180
+An average measured over many atoms can be noninteger even though each
+
+00:42:09.180 --> 00:42:11.460
+specified ion has an integer electron count.
+
+00:42:12.260 --> 00:42:15.693
+Consider a supplied argon population with nuclear charge eighteen.
+
+00:42:15.693 --> 00:42:20.700
+Twenty percent of its nuclei occur as neutral atoms, fifty percent as singly
+
+00:42:20.700 --> 00:42:24.120
+positive ions and thirty percent as doubly positive ions.
+
+00:42:24.640 --> 00:42:25.940
+The fractions sum to one.
+
+00:42:26.240 --> 00:42:31.280
+The mean positive charge per nucleus is zero times zero point two plus one
+
+00:42:31.280 --> 00:42:35.980
+times zero point five plus two times zero point three, giving one point one
+
+00:42:35.980 --> 00:42:36.940
+elementary charges.
+
+00:42:37.720 --> 00:42:41.830
+The mean number of bound electrons is eighteen minus one point one, or sixteen
+
+00:42:41.830 --> 00:42:42.560
+point nine.
+
+00:42:43.260 --> 00:42:47.280
+This does not describe an individual atom with a fractional electron removed.
+
+00:42:47.740 --> 00:42:52.520
+In an explicit ten nucleus inventory, two neutral atoms contain thirty six
+
+00:42:52.520 --> 00:42:57.191
+bound electrons, five singly charged ions contain eighty five, and three
+
+00:42:57.191 --> 00:42:57.580
+doubly
+
+00:42:57.580 --> 00:42:59.840
+charged ions contain forty eight.
+
+00:42:59.840 --> 00:43:04.160
+The total is one hundred sixty nine bound electrons, eleven fewer than ten
+
+00:43:04.160 --> 00:43:05.660
+initially neutral argon atoms.
+
+00:43:06.580 --> 00:43:10.766
+Electrons removed from this selected population must be included elsewhere in
+
+00:43:10.766 --> 00:43:10.820
+a
+
+00:43:10.820 --> 00:43:12.140
+complete system charge balance.
+
+00:43:12.900 --> 00:43:16.560
+These fractions are supplied, not predicted from a temperature or an
+
+00:43:16.560 --> 00:43:17.400
+equilibrium constant.
+
+00:43:18.100 --> 00:43:21.600
+Separate an ensemble average from the allowed count for one species.
+
+00:43:22.440 --> 00:43:26.680
+Two transitions can have different wavelengths without appearing as two clean
+
+00:43:26.680 --> 00:43:27.700
+peaks in an instrument.
+
+00:43:28.400 --> 00:43:32.920
+A supporting spectroscopic comparison uses resolving power defined as a
+
+00:43:32.920 --> 00:43:36.420
+representative wavelength divided by a specified resolution width.
+
+00:43:37.300 --> 00:43:41.900
+Near five hundred nanometres, two supplied lines separated by zero point one
+
+00:43:41.900 --> 00:43:46.315
+zero zero nanometre correspond to a resolving power benchmark of about five
+
+00:43:46.315 --> 00:43:46.890
+thousand.
+
+00:43:46.890 --> 00:43:51.020
+An instrument with resolving power two thousand has a corresponding width of
+
+00:43:51.020 --> 00:43:55.480
+about zero point two five zero nanometre at that wavelength, while resolving
+
+00:43:55.480 --> 00:44:00.220
+power ten thousand gives about zero point zero five zero nanometre.
+
+00:44:00.220 --> 00:44:03.420
+The narrower response is more favourable for distinguishing that pair.
+
+00:44:04.340 --> 00:44:08.220
+This calculation is not an unconditional guarantee of two visibly separated
+
+00:44:08.220 --> 00:44:08.560
+peaks.
+
+00:44:09.120 --> 00:44:13.601
+The line shape, relative intensities, noise, sampling and the chosen
+
+00:44:13.601 --> 00:44:14.260
+resolution
+
+00:44:14.260 --> 00:44:15.160
+criterion matter.
+
+00:44:16.020 --> 00:44:18.992
+Physical broadening of the source can also differ from instrumental
+
+00:44:18.992 --> 00:44:19.480
+broadening.
+
+00:44:20.620 --> 00:44:24.000
+Increasing resolving power does not create a new atomic energy level or
+
+00:44:24.000 --> 00:44:25.520
+increase the transition separation.
+
+00:44:26.720 --> 00:44:30.320
+Likewise, counting allowed atomic transitions is not the same as counting
+
+00:44:30.320 --> 00:44:31.980
+experimentally distinguishable peaks.
+
+00:44:33.220 --> 00:44:36.600
+State the wavelength region and width convention before comparing two
+
+00:44:36.600 --> 00:44:36.860
+instruments.
+
+00:44:37.104 --> 00:44:41.284
+The energy needed to remove an electron depends on the physical initial and
+
+00:44:41.284 --> 00:44:41.664
+final states.
+
+00:44:42.404 --> 00:44:46.044
+A metal work function concerns removing an electron from a particular surface
+
+00:44:46.044 --> 00:44:46.764
+into vacuum.
+
+00:44:47.644 --> 00:44:51.844
+First ionization energy concerns removing an electron from an isolated gaseous
+
+00:44:51.844 --> 00:44:53.984
+atom to form a gaseous positive ion.
+
+00:44:54.744 --> 00:44:58.544
+They are not interchangeable thresholds merely because both involve electron
+
+00:44:58.544 --> 00:44:58.884
+removal.
+
+00:44:59.604 --> 00:45:03.304
+For a supplied metal surface work function of four point five zero electron
+
+00:45:03.304 --> 00:45:08.104
+volts, a six point zero zero electron volt photon can give a maximum emitted
+
+00:45:08.104 --> 00:45:12.384
+electron kinetic energy of one point five zero electron volts in the simple
+
+00:45:12.384 --> 00:45:13.284
+photoelectric model.
+
+00:45:14.404 --> 00:45:18.524
+The same photon cannot ionize an isolated ground state hydrogen atom whose
+
+00:45:18.524 --> 00:45:21.444
+supplied threshold is thirteen point six electron volts.
+
+00:45:22.264 --> 00:45:25.890
+This comparison does not say that all electrons in a metal behave like
+
+00:45:25.890 --> 00:45:26.304
+isolated
+
+00:45:26.304 --> 00:45:27.124
+hydrogen atoms.
+
+00:45:28.044 --> 00:45:30.804
+Surface condition and material identity influence the work function.
+
+00:45:31.404 --> 00:45:35.664
+Raising photon intensity at fixed frequency can affect emission counts under
+
+00:45:35.664 --> 00:45:39.544
+appropriate conditions, but it does not change this single photon maximum
+
+00:45:39.544 --> 00:45:40.324
+energy balance.
+
+00:45:41.504 --> 00:45:45.864
+Begin by naming the material state and the removal process before selecting a
+
+00:45:45.864 --> 00:45:46.264
+threshold value.

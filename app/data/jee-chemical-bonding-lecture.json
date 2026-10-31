@@ -77,6 +77,18 @@
     {
       "title": "OpenStax: ionic strength and charge-distance model",
       "url": "https://openstax.org/books/chemistry/pages/7-5-strengths-of-ionic-and-covalent-bonds"
+    },
+    {
+      "title": "NCERT via IIT Kanpur: lattice and hydration solution cycle",
+      "url": "https://sathee.iitk.ac.in/or/sathee-neet/ncert-books/neet-ncert-books/neet-nb-che-11/chemistry-11-chapter-6-thermodynamics/"
+    },
+    {
+      "title": "University of Florida: VSEPR geometry and iodine chloride anions",
+      "url": "https://chem.libretexts.org/Courses/University_of_Florida/CHM2047%3A_One-Semester_General_Chemistry_%28Kleiman%29/05%3A_Molecular_Structure_and_Geometry/5.04%3A_VSEPR_Geometry"
+    },
+    {
+      "title": "Georgia Tech: water donor and acceptor contacts",
+      "url": "https://williams.chemistry.gatech.edu/structure/molecular_interactions/mol_int.html"
     }
   ],
   "chapters": [
@@ -1236,6 +1248,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Lattice dissociation and ion hydration need compatible signs and molar bases",
+      "formula": "Hypothetical salt:ΔHlattice,diss=+800;combined ion hydration=−780;ΔHsolution=+20 kJ/mol salt",
+      "script": "An ionic solid entering water involves both separating its lattice and interacting with the solvent. A supplied thermochemical ledger can represent this through gaseous ions as a hypothetical intermediate. Suppose lattice dissociation of one mole of a hypothetical salt costs eight hundred kilojoules, while combined hydration of the ions from that same mole releases seven hundred eighty kilojoules. The stated solution step absorbs twenty kilojoules per mole of salt. The gaseous ions cancel when the two processes are added. If a table instead gives lattice formation enthalpy as negative eight hundred, that step must be reversed before it represents lattice dissociation. Hydration values for individual ions also require their formula coefficients before they can be combined on a per mole of salt basis. The positive solution enthalpy does not alone prove that the salt is insoluble, because equilibrium involves free energy and the relevant solution conditions. Entropy and activities cannot be discarded. Nor does this simple ledger imply that real dissolution physically proceeds by releasing a measurable cloud of gaseous ions.",
+      "points": [
+        "Lattice dissociation · +800 kJ/mol salt · Solid→gaseous ions",
+        "Combined hydration · −780 kJ/mol salt · Same stoichiometric ion amounts",
+        "Sum:solution enthalpy · +20 kJ/mol salt · Not a solubility verdict"
+      ],
+      "board": {
+        "heading": "Reverse lattice formation before using it as a dissociation step",
+        "columns": [
+          "Given / model",
+          "Result / ledger",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Lattice dissociation",
+            "+800 kJ/mol salt",
+            "Solid→gaseous ions"
+          ],
+          [
+            "Combined hydration",
+            "−780 kJ/mol salt",
+            "Same stoichiometric ion amounts"
+          ],
+          [
+            "Sum:solution enthalpy",
+            "+20 kJ/mol salt",
+            "Not a solubility verdict"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Iodine chloride ions require a complete electron ledger before a shape",
+      "formula": "ICl2−:22 valence e−,AX2E3,linear;ICl4−:36 valence e−,AX4E2,square planar",
+      "script": "A familiar central atom does not force every one of its compounds into the same shape. Compare the selected iodine chloride anions with two and four terminal chlorines. For the two chloride species, iodine contributes seven valence electrons, the chlorines contribute fourteen and the negative charge adds one, giving twenty-two. Two single bonds use four electrons and terminal chlorine lone pairs use twelve. The remaining six electrons are three central lone pairs. The five domain VSEPR model places those lone pairs equatorially, leaving the two bonded atoms in a linear arrangement. For the four chloride species, the total is thirty-six valence electrons. Four single bonds use eight, terminal chlorine lone pairs use twenty-four and the remaining four electrons form two central lone pairs. Its six domain model places the lone pairs opposite one another, leaving a square planar arrangement of chlorine atoms. Electron-domain geometry and the geometry of the nuclei are different labels in both cases. These are expanded valence Lewis and VSEPR descriptions; the counting does not establish a detailed orbital composition or require literal d orbital hybridization as an experimental conclusion.",
+      "points": [
+        "ICl2−:7+14+1=22 e− · 2 bonds+3 central lone pairs · AX2E3:linear nuclei",
+        "ICl4−:7+28+1=36 e− · 4 bonds+2 central lone pairs · AX4E2:square-planar nuclei",
+        "Electron domains versus nuclei · Five domains versus six · Lewis/VSEPR model,not orbital proof"
+      ],
+      "board": {
+        "heading": "Complete the terminal octets before assigning central lone pairs",
+        "columns": [
+          "Given / model",
+          "Result / ledger",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "ICl2−:7+14+1=22 e−",
+            "2 bonds+3 central lone pairs",
+            "AX2E3:linear nuclei"
+          ],
+          [
+            "ICl4−:7+28+1=36 e−",
+            "4 bonds+2 central lone pairs",
+            "AX4E2:square-planar nuclei"
+          ],
+          [
+            "Electron domains versus nuclei",
+            "Five domains versus six",
+            "Lewis/VSEPR model,not orbital proof"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Hydrogen-bond network contacts must not count every bond twice",
+      "formula": "Supplied closed graph:N20 water nodes,degree4 per node;unique edges=N×4/2=40",
+      "script": "A molecule can participate in several intermolecular contacts without every listed contact representing a different bond. In a supporting closed network model, suppose twenty water molecules each participate in four hydrogen bonds. Counting four contacts at each molecule gives eighty endpoints, but every hydrogen bond connects two molecules and has been counted from both ends. The number of distinct hydrogen bonds is therefore forty. The same ideal graph can assign each molecule two donor contacts and two acceptor contacts, giving forty donor roles and forty acceptor roles for the same forty directed bonds. These role counts must not be added to claim eighty separate bonds. Each water molecule also contains two ordinary covalent oxygen hydrogen bonds, which belong to a different inventory. The model assumes all stated contacts are satisfied without boundary losses. A finite surface or an incomplete cluster can reduce the average degree, and liquid water continually changes its local contacts. This abstract counting exercise does not assert that every liquid water molecule always has exactly four hydrogen bonds or that the displayed graph is an actual crystal geometry. Count unique connections after defining the nodes and the contact convention.",
+      "points": [
+        "20 molecules×4 contacts · 80 endpoints /2=40 bonds · Each bond counted at both ends",
+        "Two donor+two acceptor roles each · 40 donor;40 acceptor roles · Same40 directed bonds",
+        "Covalent O–H bonds · 20×2=40 separate bonds · Closed ideal graph,not liquid snapshot"
+      ],
+      "board": {
+        "heading": "A network contact count needs one division by two",
+        "columns": [
+          "Given / model",
+          "Result / ledger",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "20 molecules×4 contacts",
+            "80 endpoints /2=40 bonds",
+            "Each bond counted at both ends"
+          ],
+          [
+            "Two donor+two acceptor roles each",
+            "40 donor;40 acceptor roles",
+            "Same40 directed bonds"
+          ],
+          [
+            "Covalent O–H bonds",
+            "20×2=40 separate bonds",
+            "Closed ideal graph,not liquid snapshot"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A dipole-based charge estimate depends on the chosen point-charge model",
+      "formula": "Hypothetical neutral diatomic:μ=.300 eÅ,r1.20 Å;two-point model q/e=.300/1.20=.250",
+      "script": "A molecular dipole can be converted into an effective charge only after the charge model has been stated. In a supplied neutral diatomic example, represent the molecule by equal and opposite point charges located at the two nuclei. The dipole magnitude is then charge magnitude times separation. Let the separation be one point two zero angstrom and the supplied dipole be zero point three zero zero elementary charge angstrom. Dividing gives an effective charge magnitude of zero point two five zero elementary charge on each site in this model. Full opposite unit charges at that separation would give one point two zero elementary charge angstrom, so the supplied dipole is twenty-five percent of that full point-charge reference. This ratio is sometimes used as a simple ionic-character comparison, but it is not a unique measured partition of the real electron density. Different charge models can describe a distributed molecular density differently. Formal charges also use equal bond-electron assignment and need not equal these effective charges. A zero total molecular charge does not require each site to have zero partial charge. Keep the dipole unit, the length unit and the assumptions of the two-site model consistent.",
+      "points": [
+        "Supplied μ.300 eÅ;r1.20 Å · q/e=.250 · Two opposite point charges",
+        "Full unit-charge reference · μreference1.20 eÅ · μ/μreference25%",
+        "Neutral total charge · +.250e and−.250e in model · Not unique real-density partition"
+      ],
+      "board": {
+        "heading": "A dipole gives a model charge only after geometry and assumptions",
+        "columns": [
+          "Given / model",
+          "Result / ledger",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Supplied μ.300 eÅ;r1.20 Å",
+            "q/e=.250",
+            "Two opposite point charges"
+          ],
+          [
+            "Full unit-charge reference",
+            "μreference1.20 eÅ",
+            "μ/μreference25%"
+          ],
+          [
+            "Neutral total charge",
+            "+.250e and−.250e in model",
+            "Not unique real-density partition"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1876,6 +2028,94 @@
       ],
       "answer": 0,
       "explanation": "The degenerate π* pair starts singly occupied,then acquires one and finally two partners."
+    },
+    {
+      "question": "A hypothetical salt has lattice dissociation+800 and combined hydration−780 kJ/mol salt. Solution enthalpy is:",
+      "options": [
+        "−1580 kJ/mol",
+        "+20 kJ/mol",
+        "−20 kJ/mol",
+        "+1580 kJ/mol"
+      ],
+      "answer": 1,
+      "explanation": "The gaseous-ion intermediate cancels, leaving+800−780=+20 kJ per mole of the same salt basis."
+    },
+    {
+      "question": "If lattice formation is tabulated as−800 kJ/mol, its dissociation step in this cycle is:",
+      "options": [
+        "−800 kJ/mol",
+        "0 kJ/mol",
+        "+800 kJ/mol",
+        "−1600 kJ/mol"
+      ],
+      "answer": 2,
+      "explanation": "Dissociation reverses the stated lattice-formation process, so its enthalpy has the opposite sign."
+    },
+    {
+      "question": "For the selected ICl2− Lewis/VSEPR model, central lone-pair count and nuclear shape are:",
+      "options": [
+        "Two;bent",
+        "One;linear",
+        "Three;bent",
+        "Three;linear"
+      ],
+      "answer": 3,
+      "explanation": "Twenty-two total electrons leave six on iodine after bonds and terminal octets, giving AX2E3 and linear nuclei."
+    },
+    {
+      "question": "For ICl4−, which selected Lewis/VSEPR description is consistent?",
+      "options": [
+        "36 valence e−;AX4E2;square planar",
+        "34 valence e−;AX4;tetrahedral",
+        "36 valence e−;AX4E;seesaw",
+        "22 valence e−;AX4E2;linear"
+      ],
+      "answer": 0,
+      "explanation": "The total is7+4×7+1=36; two central lone pairs remain in a six-domain arrangement."
+    },
+    {
+      "question": "Twenty nodes each have four contacts in a closed undirected hydrogen-bond graph. Distinct bonds?",
+      "options": [
+        "80",
+        "40",
+        "20",
+        "10"
+      ],
+      "answer": 1,
+      "explanation": "The degree sum is80, but each edge contributes two endpoints;80/2=40 unique bonds."
+    },
+    {
+      "question": "If each of those nodes donates two and accepts two bonds, the40 donor and40 acceptor roles describe:",
+      "options": [
+        "80 different bonds",
+        "20 bonds",
+        "The same40 directed bonds",
+        "Only covalent O–H bonds"
+      ],
+      "answer": 2,
+      "explanation": "Each hydrogen bond has one donor role and one acceptor role, so the role counts refer to the same forty connections."
+    },
+    {
+      "question": "For μ=.300 eÅ and r1.20 Å in the supplied neutral two-point-charge model, |q| is:",
+      "options": [
+        ".360e",
+        "4.00e",
+        "1.20e",
+        ".250e"
+      ],
+      "answer": 3,
+      "explanation": "Under the stated two-site point-charge assumption, μ=qr gives |q|/e=.300/1.20=.250. This does not uniquely partition real electron density."
+    },
+    {
+      "question": "Relative to full opposite unit charges at the same separation, that dipole is:",
+      "options": [
+        "25%",
+        "75%",
+        "100%",
+        "40%"
+      ],
+      "answer": 0,
+      "explanation": "The full reference is1.20 eÅ; .300/1.20=.25. This ratio is model-based, not a unique electron-density partition."
     }
   ]
 }
