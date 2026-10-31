@@ -1203,7 +1203,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "mole-concept", subject: "Chemistry", unit: 1, number: "C10", title: moleConcept.title,
-    description: "Thirty-three narrated chapters on mole calculations, measured-volume mixing, repeated dilution, dry/wet combustion gas bases, moisture-adjusted purity and reaction balances.",
+    description: "Thirty-seven narrated chapters on staged hydrates, consecutive reaction inventories, measurement bounds, hydrated-crystal balances and mole calculations.",
     scope: "Recorded Unit 1 foundation with original practice. Further multi-step reaction networks and additional experimental datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.mole-concept.lecture.v1",
     audio: "/lectures/mole-concept/narration-marin.mp3",
@@ -1213,7 +1213,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "periodic-trends", subject: "Chemistry", unit: 9, number: "C11", title: periodicTrends.title,
-    description: "Thirty-three narrated chapters on periodic properties, electron-gain conventions, supplied shielding estimates, oxoacid families and bond polarity.",
+    description: "Thirty-seven narrated chapters on contraction, oxidation-state context, electron-count conventions, polarization and periodic comparisons.",
     scope: "Recorded Unit 9 foundation with original practice. These selected group compounds illustrate periodic trends. Detailed group chemistry, transition-element trends and further exceptions remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.periodic-trends.lecture.v1",
     audio: "/lectures/periodic-trends/narration-marin.mp3",
@@ -1223,7 +1223,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "hydrocarbons", subject: "Chemistry", unit: 15, number: "C12", title: hydrocarbons.title,
-    description: "Thirty-three narrated chapters on hydrocarbon reactions, Friedel–Crafts skeleton selection and limits, xylene site symmetry and a stated benzene hydrogenation benchmark.",
+    description: "Thirty-seven narrated chapters on conjugated-diene addition, allylic substitution, conformer populations, acetylide base selection and hydrocarbon pathways.",
     scope: "Recorded Unit 15 foundation and worked applications with original practice. Further preparation routes, polymerization mechanisms and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.hydrocarbons.lecture.v1",
     audio: "/lectures/hydrocarbons/narration-marin.mp3",

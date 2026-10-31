@@ -1,3 +1,4 @@
+import{extendPeriodicComparisonContextLesson}from'./periodic-comparison-context-study.ts';
 import{extendAtomicBondingMeasurementModelsLesson}from'./atomic-bonding-measurement-models-study.ts';
 import{extendPeriodicCoordinationModelsLesson}from'./periodic-coordination-models-study.ts';
 import {extendAtomicBondingComparisonsLesson}from'./atomic-bonding-comparisons-study.ts';
@@ -186,3 +187,5 @@ for(const lesson of chemistryExpansionLessons)extendAtomicBondingComparisonsLess
 for(const lesson of chemistryExpansionLessons)extendPeriodicCoordinationModelsLesson(lesson);
 
 for(const lesson of chemistryExpansionLessons)extendAtomicBondingMeasurementModelsLesson(lesson);
+
+for(const lesson of chemistryExpansionLessons)extendPeriodicComparisonContextLesson(lesson);

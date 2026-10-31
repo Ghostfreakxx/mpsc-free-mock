@@ -1,3 +1,4 @@
+import{extendMoleInventoryBoundsLesson}from'./mole-inventory-bounds-study.ts';
 import{extendMoleOrganicBasisLesson}from'./mole-organic-basis-study.ts';
 import { extendMoleOrganicStructureBalancesLesson } from './mole-organic-structure-balances-study.ts';
 import { extendMoleOrganicInterpretationLesson } from './mole-organic-interpretation-study.ts';
@@ -182,3 +183,5 @@ if (moleConceptCompanion) extendMoleOrganicInterpretationLesson(moleConceptCompa
 if (moleConceptCompanion) extendMoleOrganicStructureBalancesLesson(moleConceptCompanion);
 
 if(moleConceptCompanion)extendMoleOrganicBasisLesson(moleConceptCompanion);
+
+if(moleConceptCompanion)extendMoleInventoryBoundsLesson(moleConceptCompanion);
