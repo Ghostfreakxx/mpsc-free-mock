@@ -26,3 +26,20 @@ test('playback positions are bounded, including small encoder padding at the end
   assert.equal(readPosition('42.5', 100), 42.5);
   assert.equal(readPosition('100.03', 100), 100);
 });
+
+test('the class library counts saved answers from hashes exactly as readAnswers does', async () => {
+  const { quizFingerprint, readAnswerFingerprints } = await import('../app/jee/classes/progress.ts');
+  const quiz = [
+    { question: 'What is the SI unit of force?', options: ['newton', 'joule', 'watt', 'pascal'], answer: 0 },
+    { question: 'Which quantity is a vector?', options: ['mass', 'speed', 'velocity', 'energy'], answer: 2 },
+    { question: 'Unanswered question?', options: ['a', 'b', 'c', 'd'], answer: 1 },
+  ];
+  const cases = [
+    JSON.stringify([{ question: quiz[0].question, option: 'joule' }, { question: quiz[1].question, option: 'velocity' }]),
+    JSON.stringify([{ question: quiz[1].question, option: 'not an option' }, { question: 'Another lesson', option: 'newton' }]),
+    JSON.stringify([{ question: quiz[2].question, option: 'b' }, null, 7, { question: 1, option: 'a' }]),
+    'not json', null, '{}',
+  ];
+  const fingerprints = JSON.parse(JSON.stringify(quizFingerprint(quiz)));
+  for (const raw of cases) assert.deepEqual(readAnswerFingerprints(raw, fingerprints), readAnswers(raw, quiz), String(raw));
+});

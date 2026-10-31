@@ -11,7 +11,7 @@
     "test:content": "node --experimental-strip-types --test scripts/content.test.mjs",
     "test:mizo": "node --experimental-strip-types --test scripts/mizo.test.mjs",
     "test:question-rotation": "node --experimental-strip-types --test scripts/question-rotation.test.mjs",
-    "test:recycling": "node --experimental-strip-types --test scripts/practice-recycling.test.mjs",
+    "test:recycling": "node --experimental-strip-types --test scripts/practice-recycling.test.mjs scripts/question-bank-format.test.mjs",
     "test:guidance": "node --experimental-strip-types --test scripts/guidance.test.mjs",
     "test:exam-simulator": "node --experimental-strip-types --test scripts/exam-simulator.test.mjs",
     "test:lecture": "node --experimental-strip-types --test scripts/lecture.test.mjs scripts/lecture-captions.test.mjs scripts/lecture-progress.test.mjs scripts/jee-course.test.mjs",

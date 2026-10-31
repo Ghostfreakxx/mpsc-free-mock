@@ -1,5 +1,8 @@
 import type { ReviewedQuestion, Stream } from "../data/reviewed-content";
 
+// The fields a paper needs; practice pages download only these (app/lib/question-bank-format.ts).
+export type PoolQuestion = Pick<ReviewedQuestion, "id" | "subject" | "category" | "question" | "options" | "answer" | "explanation">;
+
 export type ExamId = "jee" | "neet" | "cuet-pg" | "mpsc";
 export type Marking = { correct: number; wrong: number };
 export type MarkingOption = { id: string; label: string; marking: Marking };
@@ -95,15 +98,15 @@ function shuffle<T>(values: readonly T[], random: () => number): T[] {
   return result;
 }
 
-export function maxLength(config: ExamConfig, pool: readonly ReviewedQuestion[]) {
+export function maxLength(config: ExamConfig, pool: readonly PoolQuestion[]) {
   return Math.min(Math.max(...config.lengths), pool.length);
 }
 
 // Allocate questions to subjects by weight, move any shortfall to subjects with spare
 // questions, then order the paper subject by subject as real papers are.
-export function selectQuestions(config: ExamConfig, pool: readonly ReviewedQuestion[], count: number, seed: number): ReviewedQuestion[] {
+export function selectQuestions(config: ExamConfig, pool: readonly PoolQuestion[], count: number, seed: number): PoolQuestion[] {
   const random = seededRandom(seed);
-  const bySubject = new Map<string, ReviewedQuestion[]>();
+  const bySubject = new Map<string, PoolQuestion[]>();
   for (const question of pool) bySubject.set(question.subject, [...(bySubject.get(question.subject) ?? []), question]);
   // Order subjects as the exam pattern lists them (e.g. NEET: Physics, Chemistry, Biology).
   const listed = Object.keys(config.subjectWeights ?? {});
@@ -125,7 +128,7 @@ export function selectQuestions(config: ExamConfig, pool: readonly ReviewedQuest
   return subjects.flatMap(subject => shuffle(bySubject.get(subject)!, random).slice(0, allocation.get(subject)));
 }
 
-export function startAttempt(config: ExamConfig, markingId: string, questions: readonly ReviewedQuestion[], now: number): Attempt {
+export function startAttempt(config: ExamConfig, markingId: string, questions: readonly PoolQuestion[], now: number): Attempt {
   const questionIds = questions.map(question => question.id);
   return {
     version: 1,
@@ -189,7 +192,7 @@ export function questionStatus(response: Response | undefined): QuestionStatus {
 }
 
 export type SubjectResult = { subject: string; score: number; max: number; correct: number; wrong: number; skipped: number };
-export type QuestionResult = { question: ReviewedQuestion; answer?: string; correct: boolean; timeMs: number; changedFromCorrect: boolean; changedToCorrect: boolean };
+export type QuestionResult = { question: PoolQuestion; answer?: string; correct: boolean; timeMs: number; changedFromCorrect: boolean; changedToCorrect: boolean };
 
 export type AttemptResult = {
   score: number;
@@ -209,7 +212,7 @@ export type AttemptResult = {
 
 const round = (value: number) => Math.round(value * 100) / 100;
 
-export function scoreAttempt(attempt: Attempt, config: ExamConfig, questionsById: ReadonlyMap<string, ReviewedQuestion>): AttemptResult {
+export function scoreAttempt(attempt: Attempt, config: ExamConfig, questionsById: ReadonlyMap<string, PoolQuestion>): AttemptResult {
   const marking = (config.markingOptions.find(option => option.id === attempt.markingId) ?? config.markingOptions[0]).marking;
   const thresholdMs = (config.secondsPerQuestion * 1000) / 3;
   const questions: QuestionResult[] = attempt.questionIds.map(id => {
@@ -260,7 +263,7 @@ export function scoreAttempt(attempt: Attempt, config: ExamConfig, questionsById
 }
 
 // Reject saved attempts that no longer match the bank instead of crashing mid-exam.
-export function restoreAttempt(serialized: string | null, questionsById: ReadonlyMap<string, ReviewedQuestion>): Attempt | null {
+export function restoreAttempt(serialized: string | null, questionsById: ReadonlyMap<string, PoolQuestion>): Attempt | null {
   if (!serialized) return null;
   try {
     const value = JSON.parse(serialized) as Partial<Attempt>;

@@ -29,9 +29,10 @@ export function useQuestionRotation<T extends PresentableQuestion>(
 ) {
   const key = rotationStorageKey(scope);
   const ids = useMemo(() => questions.map(questionId), [questions]);
+  // Reuse the ids: hashing every question twice is noticeable on a slow phone.
   const questionsById = useMemo(
-    () => new Map(questions.map((question) => [questionId(question), question])),
-    [questions],
+    () => new Map(questions.map((question, index) => [ids[index], question])),
+    [questions, ids],
   );
   const [loaded, setLoaded] = useState<LoadedRotation | null>(null);
   const ready = loaded?.key === key;

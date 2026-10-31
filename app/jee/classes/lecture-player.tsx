@@ -144,7 +144,7 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
 
   return <main className={styles.page}>
     <header className={styles.header}>
-      <Link href="/jee/classes"><ArrowLeft size={17} /> JEE classes</Link>
+      <Link href="/jee/classes" prefetch={false}><ArrowLeft size={17} /> JEE classes</Link>
       <Link href="/">MPSC FREE MOCK</Link>
     </header>
     <div className={styles.heading}>

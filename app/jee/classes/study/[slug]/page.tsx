@@ -68,8 +68,8 @@ export default async function StudyPage({ params }: { params: Promise<{ slug: st
   const previous = subjectLessons[position - 1];
   const next = subjectLessons[position + 1];
   return <main className={styles.page}>
-    <header className={styles.header}><Link href="/jee/classes"><ArrowLeft size={17} /> JEE classes</Link><Link href="/jee">JEE practice</Link></header>
-    <div className={styles.heading}><p>JEE MAIN · {lesson.subject.toUpperCase()} · UNIT {lesson.unit}</p><h1>{lesson.title}</h1><span>{writtenLesson ? "Written foundation lesson" : "Class transcript"}</span>{recording && <p><Link href={`/jee/classes/${lesson.id}`}>Watch the Marin class</Link></p>}</div>
+    <header className={styles.header}><Link href="/jee/classes" prefetch={false}><ArrowLeft size={17} /> JEE classes</Link><Link href="/jee">JEE practice</Link></header>
+    <div className={styles.heading}><p>JEE MAIN · {lesson.subject.toUpperCase()} · UNIT {lesson.unit}</p><h1>{lesson.title}</h1><span>{writtenLesson ? "Written foundation lesson" : "Class transcript"}</span>{recording && <p><Link href={`/jee/classes/${lesson.id}`} prefetch={false}>Watch the Marin class</Link></p>}</div>
     <div className={styles.sectionHeading}><p className={styles.prerequisites}>Prerequisites: {lesson.prerequisites}</p><StudyDownload lesson={lesson} kind={writtenLesson ? "Written foundation lesson" : "Class transcript"} /></div>
     <nav className={styles.contents} aria-label="Lesson contents"><h2>In this lesson</h2><ol>{lesson.sections.map((section, index) => <li key={section.title}><a href={`#section-${index}`}>{section.title}</a></li>)}</ol>{lesson.examples.length > 0 && <a href="#worked-examples">Worked examples</a>}<a href="#practice">Practice</a></nav>
     {figureAlt[lesson.id] && <figure className={styles.studyFigure}><Image src={`/lectures/foundations/${lesson.id}.${svgFigure ? "svg" : "png"}`} width={svgFigure ? 900 : 1200} height={svgFigure ? 360 : 640} alt={figureAlt[lesson.id]} /><figcaption>{figureAlt[lesson.id]}</figcaption></figure>}
