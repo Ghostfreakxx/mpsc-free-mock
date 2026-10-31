@@ -93,6 +93,30 @@
     {
       "title": "OpenStax: benzene structure and stability",
       "url": "https://openstax.org/books/organic-chemistry/pages/15-2-structure-and-stability-of-benzene"
+    },
+    {
+      "title": "OpenStax: conjugated-diene addition and allylic carbocations",
+      "url": "https://openstax.org/books/organic-chemistry/pages/14-2-electrophilic-additions-to-conjugated-dienes-allylic-carbocations"
+    },
+    {
+      "title": "OpenStax: kinetic versus thermodynamic control",
+      "url": "https://openstax.org/books/organic-chemistry/pages/14-3-kinetic-versus-thermodynamic-control-of-reactions"
+    },
+    {
+      "title": "OpenStax: allylic bromination",
+      "url": "https://openstax.org/books/organic-chemistry/pages/10-3-preparing-alkyl-halides-from-alkenes-allylic-bromination"
+    },
+    {
+      "title": "OpenStax: anti and gauche conformations",
+      "url": "https://openstax.org/books/organic-chemistry/pages/3-7-conformations-of-other-alkanes"
+    },
+    {
+      "title": "University of Minnesota: Boltzmann weights and degeneracy",
+      "url": "https://chemdata.r.umn.edu/pchem_with_jupyter/M3.D1._Boltzmann_factor_and_partition_functions.html"
+    },
+    {
+      "title": "OpenStax: terminal alkyne acidity and acetylide formation",
+      "url": "https://openstax.org/books/organic-chemistry/pages/9-7-alkyne-acidity-formation-of-acetylide-anions"
     }
   ],
   "chapters": [
@@ -1256,6 +1280,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "Conjugated diene addition can retain the double bond in two positions",
+      "formula": "CH2=CH–CH=CH2+HBr→CH3CHBrCH=CH2 or CH3CH=CHCH2Br;1,2 versus1,4 addition",
+      "script": "Adding one hydrogen bromide unit to a conjugated diene need not behave like an isolated double bond with no neighbouring pi system. Label the four carbons of buta one three diene consecutively for the starting atom map. In a selected ionic addition, protonation at carbon one gives an allylic cation whose positive charge is delocalized over carbon two and carbon four. Bromide capture at carbon two gives the mapped one two addition product; capture at carbon four gives the mapped one four product and leaves the double bond between the middle carbons. The constitutional products can be named three bromobut one ene and one bromobut two ene. Both have four carbons and one remaining double bond. The internal alkene product can also have geometric isomers, which a simple connectivity count does not distinguish. The labels one two and one four refer to the original diene atom map, not necessarily the final naming direction. Kinetic and thermodynamic control compare rates of formation and relative product stability under specified conditions. Temperature, time and reversibility matter; a remembered cold or hot label is not a universal prediction of a pure product or a fixed numerical ratio.",
+      "points": [
+        "Starting C1=C2–C3=C4 · Capture at C2 or C4 · Selected ionic HBr addition",
+        "Mapped1,2 addition · 3-Bromobut-1-ene · One double bond remains",
+        "Mapped1,4 addition · 1-Bromobut-2-ene · E/Z possibilities;not one pure product"
+      ],
+      "board": {
+        "heading": "Keep the original diene numbering while following the allylic cation",
+        "columns": [
+          "Given / model",
+          "Result / ledger",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Starting C1=C2–C3=C4",
+            "Capture at C2 or C4",
+            "Selected ionic HBr addition"
+          ],
+          [
+            "Mapped1,2 addition",
+            "3-Bromobut-1-ene",
+            "One double bond remains"
+          ],
+          [
+            "Mapped1,4 addition",
+            "1-Bromobut-2-ene",
+            "E/Z possibilities;not one pure product"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Allylic bromination substitutes a hydrogen while alkene bromination adds two bromines",
+      "formula": "But-1-ene C4H8→allylic monobromides C4H7Br;Br2 addition instead→C4H8Br2",
+      "script": "An alkene can give different brominated product families depending on the reaction pathway. In a selected radical allylic bromination model, but one ene loses a hydrogen from the carbon next to its double bond and gains a bromine atom. The allylic radical has resonance contributors with the unpaired electron at different ends of the three carbon allylic fragment. Capture can therefore produce three bromobut one ene or one bromobut two ene as constitutional possibilities. A double bond remains in each mono substitution product. Their formula is C four H seven Br, showing replacement of one hydrogen rather than addition of two bromine atoms. In contrast, ordinary bromine addition across the starting double bond gives a vicinal dibromide with formula C four H eight Br two in the simplified addition model. N bromosuccinimide is commonly associated with the radical allylic pathway under suitable conditions, but a reagent label alone is not a complete mechanism or selectivity guarantee. The listed constitutional products can have additional stereochemical forms, and resonance drawings do not imply equal product amounts. Track the hydrogen inventory and residual pi bond before deciding whether bromine was introduced by substitution or addition.",
+      "points": [
+        "But-1-ene C4H8 · Allylic radical capture · Selected substitution pathway",
+        "Allylic monobromides · C4H7Br;one C=C remains · One H replaced;not Br2 addition",
+        "Ordinary Br2 addition · C4H8Br2;vicinal dibromide · Different reaction inventory"
+      ],
+      "board": {
+        "heading": "Use hydrogen and bromine inventories to distinguish the pathway",
+        "columns": [
+          "Given / model",
+          "Result / ledger",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "But-1-ene C4H8",
+            "Allylic radical capture",
+            "Selected substitution pathway"
+          ],
+          [
+            "Allylic monobromides",
+            "C4H7Br;one C=C remains",
+            "One H replaced;not Br2 addition"
+          ],
+          [
+            "Ordinary Br2 addition",
+            "C4H8Br2;vicinal dibromide",
+            "Different reaction inventory"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Conformer populations need degeneracy as well as relative energy",
+      "formula": "Supplied3-state model:anti E0,gauche± E3000 J/mol;T300 K;Z=1+2exp(−3000/RT)",
+      "script": "A lower energy conformation need not account for the whole molecular population at finite temperature. Use a supporting three state model inspired by the anti and two gauche arrangements of an alkane. Assign the anti state zero relative molar energy and each of the two gauche states a supplied energy of three thousand joules per mole. At three hundred kelvin, with the gas constant eight point three one four joules per mole per kelvin, the Boltzmann weight of each gauche state relative to anti is about zero point three zero zero four. The total weight is one plus twice that number, because there are two distinct gauche states. Normalization gives about sixty-two point four seven percent anti and eighteen point seven six percent in each gauche state. The combined gauche population is therefore thirty-seven point five three percent. Omitting the second gauche state would produce a different and incorrect answer for this model. The energy gap here is supplied practice data, not a universal experimental value for butane in every medium. Other conformations and unequal vibrational or rotational contributions are neglected. The model compares populations at equilibrium, not the rate of crossing a rotational barrier.",
+      "points": [
+        "Anti E0;two gauche E3000 J/mol · Each relative weight≈.3004 · Supplied3-state model;T300 K",
+        "Z=1+2exp(−3000/RT) · Anti62.47%;each gauche18.76% · R8.314 J mol−1 K−1",
+        "Combined gauche population · 37.53% · Not a rotational crossing rate"
+      ],
+      "board": {
+        "heading": "Count both gauche states before normalizing the weights",
+        "columns": [
+          "Given / model",
+          "Result / ledger",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Anti E0;two gauche E3000 J/mol",
+            "Each relative weight≈.3004",
+            "Supplied3-state model;T300 K"
+          ],
+          [
+            "Z=1+2exp(−3000/RT)",
+            "Anti62.47%;each gauche18.76%",
+            "R8.314 J mol−1 K−1"
+          ],
+          [
+            "Combined gauche population",
+            "37.53%",
+            "Not a rotational crossing rate"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Acetylide base selection follows the conjugate-acid comparison in one medium",
+      "formula": "RC≡CH+B−⇌RC≡C−+BH;K=10^[pKa(BH)−pKa(alkyne)];supplied25,35 gives10^10",
+      "script": "Calling a terminal alkyne acidic is not enough to decide whether any chosen base will produce a useful acetylide population. Write the proton transfer from the terminal alkyne to a base anion. Its products are the acetylide and the conjugate acid of that base. In a supplied same medium comparison, take the alkyne acid constant exponent as twenty-five. If the conjugate acid of base one has the supplied exponent thirty-five, the transfer constant is ten to the power thirty-five minus twenty-five, or ten to the ten. If base two instead has conjugate acid exponent fifteen, the corresponding constant is ten to the minus ten. The first comparison strongly favours products and the second reactants under their respective standard state conventions. These are hypothetical internally consistent data, not permission to mix acid constant tables from unrelated solvents. Actual conversion still depends on starting composition and competing reactions. A base may also be consumed by water or another proton donor before the intended carbon nucleophile forms. An internal alkyne lacking a terminal carbon hydrogen bond cannot undergo this same terminal deprotonation step. Separate thermodynamic base selection from the later substitution conditions used to build a new carbon carbon bond.",
+      "points": [
+        "Same-medium pKa:alkyne25 · Conjugate acid of base1:35 · Ktransfer=10^10",
+        "Conjugate acid of base2:15 · Ktransfer=10−10 · Not every base forms acetylide well",
+        "Terminal C–H required · Internal alkyne lacks this site · Proton donors can consume base"
+      ],
+      "board": {
+        "heading": "Choose a base using its conjugate acid rather than an acidity label alone",
+        "columns": [
+          "Given / model",
+          "Result / ledger",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Same-medium pKa:alkyne25",
+            "Conjugate acid of base1:35",
+            "Ktransfer=10^10"
+          ],
+          [
+            "Conjugate acid of base2:15",
+            "Ktransfer=10−10",
+            "Not every base forms acetylide well"
+          ],
+          [
+            "Terminal C–H required",
+            "Internal alkyne lacks this site",
+            "Proton donors can consume base"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1874,6 +2038,94 @@
       ],
       "answer": 3,
       "explanation": "The reference construction and matched endpoint are essential; the enthalpy difference is not a rate or universal bond-energy rule."
+    },
+    {
+      "question": "In the mapped ionic addition of one HBr to buta-1,3-diene, capture at original C4 after protonation at C1 gives:",
+      "options": [
+        "3-Bromobut-1-ene",
+        "1-Bromobut-2-ene",
+        "1,4-Dibromobutane",
+        "Butane"
+      ],
+      "answer": 1,
+      "explanation": "Mapped1,4 addition leaves the middle C2=C3 double bond and places bromine at the opposite end, giving1-bromobut-2-ene."
+    },
+    {
+      "question": "The mapped1,2 and1,4 monoadducts both retain:",
+      "options": [
+        "Two double bonds",
+        "No carbon-carbon multiple bond",
+        "One carbon-carbon double bond",
+        "A triple bond"
+      ],
+      "answer": 2,
+      "explanation": "One HBr addition to the selected four-carbon conjugated diene reduces its two pi bonds to one; the remaining bond position differs."
+    },
+    {
+      "question": "The formula of a selected allylic monobromination product from but-1-ene is:",
+      "options": [
+        "C4H8Br2",
+        "C4H9Br",
+        "C4H6Br2",
+        "C4H7Br"
+      ],
+      "answer": 3,
+      "explanation": "Allylic substitution replaces one hydrogen of C4H8 by bromine, retaining a double bond and giving C4H7Br."
+    },
+    {
+      "question": "Ordinary Br2 addition across the but-1-ene double bond instead has the simplified product formula:",
+      "options": [
+        "C4H8Br2",
+        "C4H7Br",
+        "C4H6",
+        "C4H10"
+      ],
+      "answer": 0,
+      "explanation": "Addition introduces both bromine atoms across the pi bond without removing a hydrogen, giving a vicinal dibromide."
+    },
+    {
+      "question": "In the supplied three-state model with one anti and two equal gauche states, the normalization factor is:",
+      "options": [
+        "1+exp(−ΔE/RT)",
+        "1+2exp(−ΔE/RT)",
+        "2+exp(+ΔE/RT)",
+        "exp(−2ΔE/RT)"
+      ],
+      "answer": 1,
+      "explanation": "The anti weight is1, and both distinct gauche states contribute their own equal Boltzmann weight before normalization."
+    },
+    {
+      "question": "For supplied ΔE3000 J/mol,T300 K,R8.314 J mol−1 K−1, the combined gauche fraction is approximately:",
+      "options": [
+        "18.76%",
+        "62.47%",
+        "37.53%",
+        "100%"
+      ],
+      "answer": 2,
+      "explanation": "Each gauche state has weight .30035; combined fraction is2×.30035/(1+2×.30035)=.37528."
+    },
+    {
+      "question": "Using supplied same-medium pKa values25 for the terminal alkyne and35 for BH, the deprotonation K is:",
+      "options": [
+        "10−10",
+        "10^25",
+        "10^35",
+        "10^10"
+      ],
+      "answer": 3,
+      "explanation": "The proton-transfer constant is10^[pKa(BH)−pKa(alkyne)]=10^(35−25), favouring the acetylide products in this model."
+    },
+    {
+      "question": "If the conjugate acid instead has supplied pKa15 in that same comparison, K becomes:",
+      "options": [
+        "10−10",
+        "10^10",
+        "10^40",
+        "10"
+      ],
+      "answer": 0,
+      "explanation": "The pKa difference is15−25=−10, so this model favours the untransferred reactants rather than a large acetylide population."
     }
   ]
 }

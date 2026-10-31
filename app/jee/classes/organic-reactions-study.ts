@@ -1,3 +1,4 @@
+import{extendHydrocarbonPathwayPopulationsLesson}from'./hydrocarbon-pathway-populations-study.ts';
 import{extendHalideEvidenceModelsLesson}from'./halide-evidence-models-study.ts';
 import {extendHalideAminePathwaysLesson} from './halide-amine-pathways-study.ts';
 import { extendAromaticBiomoleculePatternsLesson } from './aromatic-biomolecule-patterns-study.ts';
@@ -110,3 +111,5 @@ for (const lesson of organicReactionLessons) extendAromaticBiomoleculePatternsLe
 for(const lesson of organicReactionLessons)extendHalideAminePathwaysLesson(lesson);
 
 for(const lesson of organicReactionLessons)extendHalideEvidenceModelsLesson(lesson);
+
+for(const lesson of organicReactionLessons)extendHydrocarbonPathwayPopulationsLesson(lesson);

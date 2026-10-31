@@ -1223,7 +1223,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "hydrocarbons", subject: "Chemistry", unit: 15, number: "C12", title: hydrocarbons.title,
-    description: "Thirty-three narrated chapters on hydrocarbon reactions, Friedel–Crafts skeleton selection and limits, xylene site symmetry and a stated benzene hydrogenation benchmark.",
+    description: "Thirty-seven narrated chapters on conjugated-diene addition, allylic substitution, conformer populations, acetylide base selection and hydrocarbon pathways.",
     scope: "Recorded Unit 15 foundation and worked applications with original practice. Further preparation routes, polymerization mechanisms and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.hydrocarbons.lecture.v1",
     audio: "/lectures/hydrocarbons/narration-marin.mp3",

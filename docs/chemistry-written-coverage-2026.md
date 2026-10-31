@@ -30,7 +30,7 @@ Questions are original practice, not represented as official PYQs.
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 34 | 37 | 28 | 66 / 66 |
 | 13 | [Purification and Analysis](/jee/classes/purification-analysis) | 33 | 33 | 21 | 56 / 56 |
 | 14 | [Organic Principles](/jee/classes/organic-principles) | 33 | 36 | 26 | 60 / 60 |
-| 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 33 | 33 | 21 | 56 / 56 |
+| 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 37 | 37 | 24 | 64 / 64 |
 | 16 | [Organic Halogens](/jee/classes/organic-halogens) | 37 | 37 | 24 | 64 / 64 |
 | 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 35 | 33 | 21 | 56 / 56 |
 | 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 37 | 37 | 24 | 64 / 64 |
@@ -39,7 +39,7 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Organic Nitrogen adds four narrated chapters on proton-transfer fractions, diamine acylation inventories, nitrogen inversion and diazonium isotope-source accounting. The batch includes eight original questions, three worked examples and a labelled nitrogen-pair diagram.
+Hydrocarbons adds four narrated chapters on conjugated-diene addition, allylic bromination versus addition, a supporting three-state conformer model and same-medium acetylide base comparisons. The batch includes eight original questions, three worked examples and a normalized conformer-population diagram.
 
 ## Remaining scope
 
@@ -53,7 +53,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The new notes reference OpenStax amine basicity, acylation, nitrogen chirality and arylamine diazotization. Supplied numerical datasets, isotope models, diagrams and MCQs in this batch are original practice.
+The new notes reference OpenStax conjugated-diene, allylic bromination, conformation and alkyne-acidity discussions, plus University of Minnesota Boltzmann-weight teaching material. Supplied numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks
