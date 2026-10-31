@@ -1,9 +1,11 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { expandBank } from "./question-bank-format";
 
 // Fetches a static question-bank file (see app/question-bank) once per page load and shares the
-// request between components. A failed request is forgotten so `retry` can try again.
+// request between components. A failed request is forgotten so `retry` can try again. The practice
+// pages preload these files (questionBankPreload), so the request is usually already under way.
 const requests = new Map<string, Promise<unknown>>();
 
 export function loadQuestionBank<T>(name: string): Promise<T> {
@@ -11,7 +13,7 @@ export function loadQuestionBank<T>(name: string): Promise<T> {
   if (!request) {
     request = fetch(`/question-bank/${name}`).then(async response => {
       if (!response.ok) throw new Error(`Question bank ${name}: ${response.status}`);
-      return response.json();
+      return expandBank(await response.json());
     });
     request.catch(() => requests.delete(name));
     requests.set(name, request);

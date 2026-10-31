@@ -1,4 +1,4 @@
-const CACHE_NAME = "mpsc-free-mock-v12";
+const CACHE_NAME = "mpsc-free-mock-v13";
 // Hashed build files get their own capped cache: each deploy adds new names, so drop the oldest
 // entries instead of letting old builds fill the phone's storage.
 const STATIC_CACHE = "mpsc-free-mock-static";
@@ -69,6 +69,23 @@ self.addEventListener("fetch", (event) => {
         return response;
       })),
     );
+    return;
+  }
+  // Question banks: show the saved copy straight away and refresh it in the background, so a
+  // returning student does not wait on slow mobile data. A new deploy reaches them on the next visit.
+  if (url.pathname.startsWith("/question-bank/") && !url.search) {
+    event.respondWith(caches.open(CACHE_NAME).then(async (cache) => {
+      const cached = await cache.match(request);
+      const refresh = fetch(request).then(async (response) => {
+        if (response.ok && response.type === "basic") await cache.put(request, response.clone()).catch(() => {});
+        return response;
+      });
+      if (cached) {
+        event.waitUntil(refresh.catch(() => {}));
+        return cached;
+      }
+      return refresh;
+    }));
     return;
   }
   // Cache public page navigations and static assets, not API or RSC payloads.

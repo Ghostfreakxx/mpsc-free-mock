@@ -18,7 +18,8 @@
   --color-background: var(--canvas);
   --color-foreground: var(--ink);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* No web font for monospace: nothing uses it, so phones skip the download. */
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
 * { box-sizing: border-box; }

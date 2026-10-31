@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useSyncExternalStore } from "react";
 import { ArrowRight } from "lucide-react";
-import { readAnswers, readPosition } from "./progress";
+import { readAnswerFingerprints, readPosition, type QuizFingerprint } from "./progress";
 import styles from "./lecture.module.css";
 
 function subscribe(notify: () => void) {
@@ -23,14 +23,14 @@ const serverSnapshot = () => null;
 
 export default function ClassProgress({ id, progressKey, duration, quiz }: {
   id: string; progressKey: string; duration: number;
-  quiz: { question: string; options: string[]; answer: number }[];
+  quiz: QuizFingerprint[];
 }) {
   const savedPosition = useSyncExternalStore(subscribe, () => read(progressKey), serverSnapshot);
   const savedAnswers = useSyncExternalStore(subscribe, () => read(`${progressKey}.answers`), serverSnapshot);
   const position = readPosition(savedPosition, duration);
-  const answers = readAnswers(savedAnswers, quiz);
+  const answers = readAnswerFingerprints(savedAnswers, quiz);
   const count = Object.keys(answers).length;
-  const correct = quiz.filter((question, index) => answers[index] === question.answer).length;
+  const correct = quiz.filter((question, index) => answers[index] === question.a).length;
   const nearEnd = position >= duration - 2;
   const timestamp = `${Math.floor(position / 60)}:${String(Math.floor(position % 60)).padStart(2, "0")}`;
 

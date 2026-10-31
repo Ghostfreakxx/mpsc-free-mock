@@ -3,11 +3,11 @@
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Bookmark, Clock, Eraser, Grid3x3, RotateCcw, Send } from "lucide-react";
 import { Fragment, useCallback, useEffect, useMemo, useState } from "react";
-import type { ReviewedQuestion, Stream } from "../data/reviewed-content";
+import type { Stream } from "../data/reviewed-content";
 import {
   addToHistory, attemptOnArrival, clearAnswer, examConfigs, formatClock, goTo, questionStatus, restoreAttempt, scoreAttempt,
   selectAnswer, selectQuestions, startAttempt, statusCounts, submitAttempt, summarize, toggleMark,
-  type Attempt, type AttemptResult, type AttemptSummary, type ExamId, type QuestionStatus,
+  type Attempt, type AttemptResult, type AttemptSummary, type ExamId, type PoolQuestion, type QuestionStatus,
 } from "../lib/exam-simulator";
 import { isQuestionList, loadQuestionBank } from "../lib/use-question-bank";
 import styles from "./simulator.module.css";
@@ -17,7 +17,7 @@ const HISTORY_KEY = "exam-simulator:history:v1";
 const examOrder: ExamId[] = ["jee", "neet", "cuet-pg", "mpsc"];
 // Each stream's questions are a static JSON file (app/question-bank), fetched only when needed.
 const loadPool = (stream: Stream) => loadQuestionBank<unknown>(stream).then(value => {
-  if (!isQuestionList<ReviewedQuestion>(value)) throw new Error(`Question bank ${stream}: unexpected format`);
+  if (!isQuestionList<PoolQuestion>(value)) throw new Error(`Question bank ${stream}: unexpected format`);
   return value;
 });
 function savedExamId(serialized: string | null): ExamId | null {
@@ -60,7 +60,7 @@ const formatScore = (value: number) => Number.isInteger(value) ? String(value) :
 
 export default function ExamSimulator({ poolSizes }: { poolSizes: Record<Stream, number> }) {
   const [loaded, setLoaded] = useState(false);
-  const [pools, setPools] = useState<Partial<Record<Stream, ReviewedQuestion[]>>>({});
+  const [pools, setPools] = useState<Partial<Record<Stream, PoolQuestion[]>>>({});
   const [loadError, setLoadError] = useState(false);
   const [starting, setStarting] = useState(false);
   const questionsById = useMemo(() => new Map(Object.values(pools).flat().map(question => [question.id, question])), [pools]);
@@ -154,7 +154,7 @@ export default function ExamSimulator({ poolSizes }: { poolSizes: Record<Stream,
     const selected = examConfigs[id];
     setStarting(true);
     setLoadError(false);
-    let pool: ReviewedQuestion[];
+    let pool: PoolQuestion[];
     try {
       pool = await loadPool(selected.stream);
     } catch {
@@ -178,8 +178,9 @@ export default function ExamSimulator({ poolSizes }: { poolSizes: Record<Stream,
     setAttempt(current => current ? change(current, at) : current);
   }
 
+  // The heading and introduction render on the server, so the page shows content before its script runs.
   if (!loaded) {
-    return <main className={styles.page}><div className={styles.wrap}><p className={styles.muted} role="status">Loading exam simulator…</p></div></main>;
+    return <main className={styles.page}><Header /><div className={`${styles.wrap} ${styles.stack}`}><Intro /><p className={styles.muted} role="status">Loading exam simulator…</p></div></main>;
   }
 
   if (attempt && attempt.submittedAt === undefined && questionsById.has(attempt.questionIds[attempt.current])) {
@@ -345,11 +346,7 @@ export default function ExamSimulator({ poolSizes }: { poolSizes: Record<Stream,
   return <main className={styles.page}>
     <Header />
     <div className={`${styles.wrap} ${styles.stack}`}>
-      <div>
-        <span className={styles.kicker}>Exam simulator</span>
-        <h1 className={styles.title}>Practise the real exam, not just the questions</h1>
-        <p className={styles.lead}>A timed paper with the exam&apos;s marking, a question palette and mark-for-review, like the computer-based test. Afterwards you see where marks went: quick guesses, changed answers and time sinks.</p>
-      </div>
+      <Intro />
 
       <section className={styles.panel} aria-labelledby="exam-choice">
         <h2 id="exam-choice" className={styles.sectionTitle}>1. Choose your exam</h2>
@@ -396,6 +393,14 @@ export default function ExamSimulator({ poolSizes }: { poolSizes: Record<Stream,
       </section>}
     </div>
   </main>;
+}
+
+function Intro() {
+  return <div>
+    <span className={styles.kicker}>Exam simulator</span>
+    <h1 className={styles.title}>Practise the real exam, not just the questions</h1>
+    <p className={styles.lead}>A timed paper with the exam&apos;s marking, a question palette and mark-for-review, like the computer-based test. Afterwards you see where marks went: quick guesses, changed answers and time sinks.</p>
+  </div>;
 }
 
 function Header() {
