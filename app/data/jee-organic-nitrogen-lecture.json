@@ -49,6 +49,10 @@
     {
       "title": "NCERT via IIT Kanpur SATHEE: amines",
       "url": "https://sathee.iitk.ac.in/ncert-books/ncert-books-theory/class-12/nbt-che-12/chem-12-unit-13-amines/"
+    },
+    {
+      "title": "OpenStax: chirality and nitrogen inversion",
+      "url": "https://openstax.org/books/organic-chemistry/pages/5-10-chirality-at-nitrogen-phosphorus-and-sulfur"
     }
   ],
   "chapters": [
@@ -1208,6 +1212,146 @@
           ]
         ]
       }
+    },
+    {
+      "title": "A proton-transfer constant needs both conjugate-acid values and the starting mixture",
+      "formula": "AH+ +B⇌A+BH+;K=10^[pKa(BH+)−pKa(AH+)];7.00→10.00 gives K1000",
+      "script": "Two amines can compete for a proton even when neither is described simply as a strong acid or strong base. Let A and B be two hypothetical neutral bases in the same solvent and at the same temperature. Their conjugate acids have supplied p K a values of seven point zero zero for protonated A and ten point zero zero for protonated B. For transfer of a proton from protonated A to neutral B, the equilibrium constant is ten raised to the difference ten minus seven, giving one thousand. The larger conjugate acid p K a identifies B as the stronger base under these conditions. Now start with equal formal amounts of protonated A and neutral B and no transfer products. In an ideal model neglecting other acid base reactions, if fraction f transfers, the equilibrium quotient is the square of f divided by the square of the remaining fraction, one minus f. Taking the positive square root gives f divided by one minus f equal to the square root of one thousand. The transferred fraction is about zero point nine six nine three, not zero point nine nine nine. A constant is not itself a conversion percentage; starting amounts and the reaction stoichiometry still matter.",
+      "points": [
+        "pKa(AH+)7;pKa(BH+)10 · Ktransfer=10³ · Same medium and temperature",
+        "Equal initial AH+ and B · K=f²/(1−f)² · Ideal;other reactions neglected",
+        "f=√K/(1+√K) · f≈.9693,or96.93% · K is not a conversion percent"
+      ],
+      "board": {
+        "heading": "Use the proton-transfer equation before converting K into a fraction",
+        "columns": [
+          "Given / model",
+          "Result / ledger",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "pKa(AH+)7;pKa(BH+)10",
+            "Ktransfer=10³",
+            "Same medium and temperature"
+          ],
+          [
+            "Equal initial AH+ and B",
+            "K=f²/(1−f)²",
+            "Ideal;other reactions neglected"
+          ],
+          [
+            "f=√K/(1+√K)",
+            "f≈.9693,or96.93%",
+            "K is not a conversion percent"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "A diamine acylation ledger counts reactive nitrogen sites rather than all N–H bonds",
+      "formula": "H2NCH2CH2NH2+2 CH3COCl→CH3CONHCH2CH2NHCOCH3+2 HCl;C6H12N2O2,M144 g/mol",
+      "script": "The number of ordinary amide groups formed in acylation need not equal the starting number of nitrogen hydrogen bonds. Consider ethane one two diamine, which has two primary amino groups and four nitrogen bound hydrogens. In a stipulated complete ordinary acylation with ethanoyl chloride, each amino group becomes one amide group. The selected product therefore contains two acyl groups and still has one nitrogen hydrogen bond at each nitrogen. It is not automatically tetra acylated merely because four nitrogen hydrogen bonds existed initially. The amide nitrogens are much less nucleophilic than the original amine sites, so further acylation is outside this ordinary reaction model. The formal balance uses one diamine and two ethanoyl chloride units to give the diamide plus two hydrogen chloride equivalents. Appropriate acid handling is implicit in the ideal ledger, not an experimental procedure. Starting from a two carbon diamine and adding two two carbon acyl groups gives a six carbon product. Its formula is C six H twelve N two O two, with rounded molar mass one hundred forty-four grams per mole.",
+      "points": [
+        "Two NH2 groups;four N–H · Two ordinary amide groups · Not automatic fourfold acylation",
+        "C2 diamine+two C2 acyl groups · Product C6H12N2O2 · Two HCl equivalents in ledger",
+        "Rounded M:60→144 g/mol · Increase84 g/mol · Two N–H bonds remain"
+      ],
+      "board": {
+        "heading": "Count amino sites before applying an ordinary acylation balance",
+        "columns": [
+          "Given / model",
+          "Result / ledger",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Two NH2 groups;four N–H",
+            "Two ordinary amide groups",
+            "Not automatic fourfold acylation"
+          ],
+          [
+            "C2 diamine+two C2 acyl groups",
+            "Product C6H12N2O2",
+            "Two HCl equivalents in ledger"
+          ],
+          [
+            "Rounded M:60→144 g/mol",
+            "Increase84 g/mol",
+            "Two N–H bonds remain"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Nitrogen inversion separates instantaneous geometry from isolable configuration",
+      "formula": "Ordinary N(Me)(Et)(Pr):rapid pyramidal inversion;N+(Me)(Et)(Pr)(Bu):four distinct groups and no lone-pair inversion",
+      "script": "Chirality at nitrogen requires a distinction between a static drawing and a configuration that persists long enough to isolate. Consider an ordinary unconstrained tertiary amine bearing methyl, ethyl and normal propyl groups. Its three different carbon groups and lone pair can define mirror related pyramidal arrangements in a frozen geometric picture. At ordinary ambient conditions, rapid pyramidal inversion generally interconverts those arrangements, so separate stable enantiomers are not normally isolated by relying on this nitrogen alone. Special rigid structures can behave differently, so the statement is not a universal ban on nitrogen chirality. Now consider a quaternary ammonium cation bonded to methyl, ethyl, normal propyl and normal butyl groups. All four substituents are distinct, and this nitrogen has no lone pair for the ordinary amine inversion process. Such a nitrogen can be a configurationally stable stereogenic centre if no bond breaking or exchange reaction intervenes. Replacing the butyl group with a second methyl group removes this particular stereogenic centre because two substituents become identical. Positive charge alone neither creates chirality nor guarantees optical activity of a bulk sample; a racemic population still has cancelling enantiomer contributions.",
+      "points": [
+        "Neutral N(Me)(Et)(Pr) · Mirror-related pyramids · Usually rapid ambient inversion",
+        "N+(Me)(Et)(Pr)(Bu) · Four different substituents · No ordinary lone-pair inversion",
+        "N+(Me)(Me)(Et)(Pr) · Repeated methyl groups · Not stereogenic at this N"
+      ],
+      "board": {
+        "heading": "Distinguish a frozen nitrogen geometry from persistent stereochemistry",
+        "columns": [
+          "Given / model",
+          "Result / ledger",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Neutral N(Me)(Et)(Pr)",
+            "Mirror-related pyramids",
+            "Usually rapid ambient inversion"
+          ],
+          [
+            "N+(Me)(Et)(Pr)(Bu)",
+            "Four different substituents",
+            "No ordinary lone-pair inversion"
+          ],
+          [
+            "N+(Me)(Me)(Et)(Pr)",
+            "Repeated methyl groups",
+            "Not stereogenic at this N"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Diazonium isotope products retain one nitrogen from each stated source",
+      "formula": "14N aniline+nitrite50%14N/50%15N→N2:50%mass28,50%mass29,no mass30;no scrambling",
+      "script": "Isotope labels can test an atom source ledger without changing the number of nitrogen atoms in a diazonium group. In a supporting ideal model, every aniline molecule contains nitrogen fourteen, while the nitrite source contains equal amounts of nitrogen fourteen and nitrogen fifteen. The diazonium intermediate obtains one nitrogen from the starting amino group and one from the nitrosating source. Suppose the selected subsequent replacement releases those two atoms together as nitrogen gas, without exchange, scrambling or background nitrogen contamination. Half of the product molecules then contain two nitrogen fourteen atoms and have nominal mass twenty-eight. The other half contain one nitrogen fourteen and one nitrogen fifteen, with nominal mass twenty-nine. No nitrogen fifteen pair of nominal mass thirty is predicted because every product molecule retains one nitrogen fourteen atom from aniline. Randomly pairing atoms from a combined pool would be a different model and would erase the stipulated source relationship. For one hundred product molecules the ledger predicts fifty of each allowed type and fifty nitrogen fifteen atoms overall. A measured departure would require checking isotope purity, reaction pathways and contamination before claiming an atom has disappeared. The fractions are ideal probabilities, not guaranteed exact counts in every small sample.",
+      "points": [
+        "Aniline N:all14N · Nitrite N:50%14N/50%15N · One N from each source",
+        "N2 nominal mass28:50% · N2 nominal mass29:50% · No mass30 under this model",
+        "100-molecule expected inventory · 50 total15N atoms · No scrambling or contamination"
+      ],
+      "board": {
+        "heading": "Keep the two nitrogen sources paired in the isotope ledger",
+        "columns": [
+          "Given / model",
+          "Result / ledger",
+          "Condition / limit"
+        ],
+        "rows": [
+          [
+            "Aniline N:all14N",
+            "Nitrite N:50%14N/50%15N",
+            "One N from each source"
+          ],
+          [
+            "N2 nominal mass28:50%",
+            "N2 nominal mass29:50%",
+            "No mass30 under this model"
+          ],
+          [
+            "100-molecule expected inventory",
+            "50 total15N atoms",
+            "No scrambling or contamination"
+          ]
+        ]
+      }
     }
   ],
   "quiz": [
@@ -1826,6 +1970,94 @@
       ],
       "answer": 0,
       "explanation": "Protonation equivalents count available basic sites, not the number of carbon substituents on nitrogen."
+    },
+    {
+      "question": "For AH+ +B⇌A+BH+ with supplied pKa(AH+)=7 and pKa(BH+)=10 in the same medium, K is:",
+      "options": [
+        ".001",
+        "1000",
+        "3",
+        "10"
+      ],
+      "answer": 1,
+      "explanation": "Divide Ka(AH+) by Ka(BH+):10−7/10−10=10³. The proton favours the base with the weaker conjugate acid."
+    },
+    {
+      "question": "Starting with equal AH+ and B and no products in the stated ideal model, K1000 gives transferred fraction approximately:",
+      "options": [
+        ".9990",
+        ".5000",
+        ".9693",
+        ".0010"
+      ],
+      "answer": 2,
+      "explanation": "K=f²/(1−f)², so f=√1000/(1+√1000)≈.9693; the constant itself is not a conversion fraction."
+    },
+    {
+      "question": "Complete ordinary monoacylation at each amino site of ethane-1,2-diamine gives how many amide groups?",
+      "options": [
+        "Four",
+        "One",
+        "Zero",
+        "Two"
+      ],
+      "answer": 3,
+      "explanation": "There are two primary amino sites. Each becomes one ordinary amide; all four initial N–H bonds are not independently counted as equally reactive amine sites."
+    },
+    {
+      "question": "The selected diacetyl product C6H12N2O2 has rounded molar mass:",
+      "options": [
+        "144 g/mol",
+        "60 g/mol",
+        "146 g/mol",
+        "180 g/mol"
+      ],
+      "answer": 0,
+      "explanation": "Using C12,H1,N14,O16 gives72+12+28+32=144 g/mol, an84 g/mol increase over the60 g/mol diamine."
+    },
+    {
+      "question": "Why are separate stable enantiomers not ordinarily isolated solely from unconstrained N(Me)(Et)(Pr) at ambient conditions?",
+      "options": [
+        "It has three identical carbon groups",
+        "Rapid pyramidal inversion interconverts its mirror-related arrangements",
+        "Nitrogen can never be stereogenic",
+        "Every tertiary amine is planar"
+      ],
+      "answer": 1,
+      "explanation": "The three groups are distinct, but ordinary pyramidal inversion is rapid; rigid exceptions require separate structural analysis."
+    },
+    {
+      "question": "Which stated quaternary cation can be stereogenic at nitrogen, ignoring other centres and exchange reactions?",
+      "options": [
+        "N+(Me)(Me)(Et)(Pr)",
+        "N+(Me)4",
+        "N+(Me)(Et)(Pr)(Bu)",
+        "Any cation merely because it is charged"
+      ],
+      "answer": 2,
+      "explanation": "The selected cation has four different substituents and no ordinary lone-pair inversion; repeated groups remove that nitrogen stereogenicity."
+    },
+    {
+      "question": "With all14N aniline and50%14N/50%15N nitrite, the no-scrambling ledger predicts what fraction of product N2 has nominal mass29?",
+      "options": [
+        "25%",
+        "100%",
+        "0%",
+        "50%"
+      ],
+      "answer": 3,
+      "explanation": "Each product gas molecule contains one aniline14N and one source nitrogen; half of the source atoms are15N, giving half mixed14N–15N molecules."
+    },
+    {
+      "question": "Why does that stipulated nitrogen gas ledger predict no nominal mass30 molecules?",
+      "options": [
+        "Every molecule retains an aniline14N atom",
+        "Nitrite contains no15N",
+        "Nitrogen gas has only one atom",
+        "All nitrogen atoms randomly pair after mixing"
+      ],
+      "answer": 0,
+      "explanation": "A15N–15N pair cannot form while each emitted pair is constrained to include one14N from aniline; random atom-pool pairing is a different model."
     }
   ]
 }

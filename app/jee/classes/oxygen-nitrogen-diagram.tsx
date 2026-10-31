@@ -1,3 +1,4 @@
+import AmineEvidenceModelsDiagram from './amine-evidence-models-diagram';
 import HalideAminePathwaysDiagram from './halide-amine-pathways-diagram';
 import OxygenCarbonLedgerDiagram from './oxygen-carbon-ledger-diagram';
 import CarbonylDerivativeDiagram from "./carbonyl-derivative-diagram";
@@ -6,6 +7,7 @@ import organicNitrogen from "../../data/jee-organic-nitrogen-lecture.json";
 import styles from "./lecture.module.css";
 
 export default function OxygenNitrogenDiagram({lesson,chapter}:{lesson:"organic-oxygen"|"organic-nitrogen";chapter:number}) {
+ if(lesson==='organic-nitrogen'&&chapter===36)return <AmineEvidenceModelsDiagram/>;
  if(lesson==='organic-nitrogen'&&chapter===30)return <HalideAminePathwaysDiagram kind="amide"/>;
  if(lesson==="organic-oxygen" && (chapter===29 || chapter===31))return <OxygenCarbonLedgerDiagram/>;
  if(lesson==="organic-oxygen" && chapter===19)return <CarbonylDerivativeDiagram/>;

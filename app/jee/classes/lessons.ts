@@ -1253,7 +1253,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-nitrogen", subject: "Chemistry", unit: 18, number: "C15", title: organicNitrogen.title,
-    description: "Thirty-three narrated chapters on amines, azo-coupling conditions, aromatic amide routes, selective mixture calculations, dry-salt balances and diazonium chemistry.",
+    description: "Thirty-seven narrated chapters on amine proton transfer, diamine acylation, nitrogen inversion, isotope-source tracking and nitrogen reactions.",
     scope: "Recorded Unit 18 foundation and worked applications with original practice. Full mechanisms, wider solvent datasets and longer syntheses remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-nitrogen.lecture.v1",
     audio: "/lectures/organic-nitrogen/narration-marin.mp3",

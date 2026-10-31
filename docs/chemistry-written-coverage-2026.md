@@ -33,13 +33,13 @@ Questions are original practice, not represented as official PYQs.
 | 15 | [Hydrocarbons](/jee/classes/hydrocarbons) | 33 | 33 | 21 | 56 / 56 |
 | 16 | [Organic Halogens](/jee/classes/organic-halogens) | 37 | 37 | 24 | 64 / 64 |
 | 17 | [Organic Oxygen](/jee/classes/organic-oxygen) | 35 | 33 | 21 | 56 / 56 |
-| 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 33 | 33 | 21 | 56 / 56 |
+| 18 | [Organic Nitrogen](/jee/classes/organic-nitrogen) | 37 | 37 | 24 | 64 / 64 |
 | 19 | [Biomolecules](/jee/classes/biomolecules) | 37 | 37 | 24 | 64 / 64 |
 | 20 | [Practical Chemistry](/jee/classes/practical-chemistry) | 37 | 37 | 24 | 64 / 64 |
 
 ## Latest expansion
 
-Organic Halogens adds four narrated chapters on ester and nitrile Grignard product timing, supporting deuterium rate evidence and conditional stereochemical product models. The batch includes eight original questions, three worked examples and a composition-versus-channel diagram.
+Organic Nitrogen adds four narrated chapters on proton-transfer fractions, diamine acylation inventories, nitrogen inversion and diazonium isotope-source accounting. The batch includes eight original questions, three worked examples and a labelled nitrogen-pair diagram.
 
 ## Remaining scope
 
@@ -53,7 +53,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The new notes reference OpenStax ester, nitrile, isotope-effect and SN1 discussions, plus IUPAC enantiomeric-excess terminology. Supplied numerical datasets, diagrams and MCQs in this batch are original practice.
+The new notes reference OpenStax amine basicity, acylation, nitrogen chirality and arylamine diazotization. Supplied numerical datasets, isotope models, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

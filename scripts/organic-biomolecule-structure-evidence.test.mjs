@@ -13,7 +13,7 @@ test('oxygen reaction maps preserve carbon, hydrogen, oxygen and net charge',()=
  assert.equal(new Set(['H','Br','ethyl','carboxyl']).size,4);
 });
 test('nitro reduction and supporting ammonium elimination conserve electrons and atoms',()=>{
- assert.deepEqual(read('organic-nitrogen').quiz.slice(32).map(q=>q.answer),[1,2,3,0,1,2,3,0,0,1,2,3,0,1,2,3,1,2,3,0,1,2,3,0]);
+ assert.deepEqual(read('organic-nitrogen').quiz.slice(32).map(q=>q.answer),[1,2,3,0,1,2,3,0,0,1,2,3,0,1,2,3,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]);
  assert.equal(3-(-3),6);assert.equal(.0100*6,.0600);
  assert.deepEqual({N:1,O:2,H:6,charge:6-6},{N:1,O:2,H:2+2*2,charge:0});
  assert.deepEqual({N:1,O:2,H:7,charge:7-6},{N:1,O:2,H:3+2*2,charge:1});

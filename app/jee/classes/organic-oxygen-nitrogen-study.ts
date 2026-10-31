@@ -1,3 +1,4 @@
+import{extendAmineEvidenceModelsLesson}from'./amine-evidence-models-study.ts';
 import {extendHalideAminePathwaysLesson} from './halide-amine-pathways-study.ts';
 import { extendOxygenReactionLedgersLesson } from './oxygen-reaction-ledgers-study.ts';
 import { extendNitrogenBiomoleculeReactionMapsLesson } from './nitrogen-biomolecule-reaction-maps-study.ts';
@@ -107,3 +108,5 @@ for (const lesson of oxygenNitrogenLessons) extendNitrogenBiomoleculeReactionMap
 for (const lesson of oxygenNitrogenLessons) extendOxygenReactionLedgersLesson(lesson);
 
 for(const lesson of oxygenNitrogenLessons)extendHalideAminePathwaysLesson(lesson);
+
+for(const lesson of oxygenNitrogenLessons)extendAmineEvidenceModelsLesson(lesson);
