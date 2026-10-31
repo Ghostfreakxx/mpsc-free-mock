@@ -1163,7 +1163,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "equilibrium", subject: "Chemistry", unit: 6, number: "C06", title: equilibrium.title,
-    description: "Thirty-three narrated chapters on acid-family fractions, coupled dissolution, equilibrium temperature ratios, product-fed gas balances and ionic equilibrium.",
+    description: "Thirty-seven narrated chapters on activity corrections, ionic-strength accounting, buffer exhaustion, finite solid inventories and ionic equilibrium.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 6 foundation with original practice. Further multistage ionization, nonideal activities, physical-equilibrium calculations and broader mixed titrations remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.equilibrium.lecture.v1",
     audio: "/lectures/equilibrium/narration-marin.mp3",

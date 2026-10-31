@@ -1,3 +1,4 @@
+import{extendEquilibriumInventoryModelsLesson}from'./equilibrium-inventory-models-study.ts';
 import{extendKineticsElectrochemistryModelsLesson}from'./kinetics-electrochemistry-models-study.ts';
 import {extendEquilibriumActivityMapsLesson}from'./equilibrium-activity-maps-study.ts';
 import { extendEquilibriumElectrodeLimitsLesson } from './equilibrium-electrode-limits-study.ts';
@@ -182,3 +183,5 @@ for (const lesson of equilibriumElectrochemistryLessons) extendEquilibriumElectr
 for(const lesson of equilibriumElectrochemistryLessons)extendEquilibriumActivityMapsLesson(lesson);
 
 for(const lesson of equilibriumElectrochemistryLessons)extendKineticsElectrochemistryModelsLesson(lesson);
+
+for(const lesson of equilibriumElectrochemistryLessons)extendEquilibriumInventoryModelsLesson(lesson);

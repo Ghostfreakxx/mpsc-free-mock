@@ -21,7 +21,7 @@ Questions are original practice, not represented as official PYQs.
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 37 | 36 | 24 | 66 / 66 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 35 | 37 | 24 | 58 / 58 |
 | 5 | [Solutions](/jee/classes/solutions) | 35 | 37 | 24 | 58 / 58 |
-| 6 | [Equilibrium](/jee/classes/equilibrium) | 33 | 33 | 25 | 58 / 58 |
+| 6 | [Equilibrium](/jee/classes/equilibrium) | 37 | 37 | 28 | 66 / 66 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 38 | 39 | 28 | 66 / 66 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 34 | 37 | 28 | 66 / 66 |
 | 9 | [Periodic Trends](/jee/classes/periodic-trends) | 33 | 31 | 21 | 56 / 56 |
@@ -39,7 +39,7 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Atomic Structure adds spectral wavenumbers, mean ion-charge inventories, supporting resolving power and work-function versus atomic-ionization comparisons. Chemical Bonding adds lattice/hydration sign conventions, iodine chloride Lewis/VSEPR counts, ideal hydrogen-bond network counting and dipole-based charge models. This adds eight narrated chapters, sixteen original questions and six worked examples.
+Equilibrium adds four narrated chapters on activity corrections, supporting ionic-strength accounting, buffer exhaustion and finite solid supply. The batch includes eight original questions and three worked examples, with explicit limits on ideal and fixed-coefficient models.
 
 ## Remaining scope
 
@@ -53,7 +53,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The notes reference NIST spectroscopy, ESO resolving-power conventions, OpenStax photoemission and polarity, NCERT thermochemical cycles, University of Florida VSEPR models and Georgia Tech intermolecular contacts. Numerical datasets, diagrams and MCQs in this batch are original practice.
+The new notes reference IUPAC ionic-strength terminology, OpenStax equilibrium constants and buffer capacity, and University of Calgary finite-solid equilibrium calculations. Numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks
