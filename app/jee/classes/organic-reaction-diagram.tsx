@@ -1,3 +1,4 @@
+import HalideEvidenceModelsDiagram from './halide-evidence-models-diagram';
 import HalideAminePathwaysDiagram from './halide-amine-pathways-diagram';
 import AromaticBiomoleculePatternsDiagram from './aromatic-biomolecule-patterns-diagram';
 import ReactionMapDiagram from './reaction-map-diagram';
@@ -8,6 +9,7 @@ import organicHalogens from "../../data/jee-organic-halogens-lecture.json";
 import styles from "./lecture.module.css";
 
 export default function OrganicReactionDiagram({lesson,chapter}:{lesson:"hydrocarbons"|"organic-halogens";chapter:number}) {
+ if(lesson==='organic-halogens'&&chapter===36)return <HalideEvidenceModelsDiagram/>;
  if(lesson==='organic-halogens'&&chapter===29)return <HalideAminePathwaysDiagram kind="benzyne"/>;
  if(lesson==='hydrocarbons'&&chapter===31)return <AromaticBiomoleculePatternsDiagram kind="xylene"/>;
  if(lesson==='hydrocarbons'&&chapter===27)return <ReactionMapDiagram kind="cyclic"/>;

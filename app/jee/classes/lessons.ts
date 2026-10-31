@@ -1233,7 +1233,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "organic-halogens", subject: "Chemistry", unit: 16, number: "C13", title: organicHalogens.title,
-    description: "Thirty-three narrated chapters on halides, benzyne isotope tracking, allylic capture, Grignard equivalent balances, a selected ozone cycle and substitution evidence.",
+    description: "Thirty-seven narrated chapters on Grignard product timing, isotope evidence, stereochemical ratios and halide reaction pathways.",
     scope: "Recorded Unit 16 foundation and worked applications with original practice. Full spatial mechanism drawings, further preparations, special haloarene pathways and detailed compound comparisons remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.organic-halogens.lecture.v1",
     audio: "/lectures/organic-halogens/narration-marin.mp3",
