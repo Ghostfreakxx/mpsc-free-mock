@@ -4,6 +4,9 @@ import type { MizoTranslation } from "./data/mizo-translations";
 import { mizoCategories, mizoEnglishGlossary, mizoReferences, mizoTranslationStatus } from "./data/mizo-meta";
 import QuestionSource from "./question-source";
 import { isQuestionList, isTranslationMap, useQuestionBank } from "./lib/use-question-bank";
+import { MISTAKES_TOPIC, weakestTopic, type TopicStats } from "./lib/practice-progress";
+import { usePracticeProgress } from "./lib/use-practice-progress";
+import RoundNotice from "./round-notice";
 
 
 import Link from "next/link";
@@ -33,8 +36,16 @@ export default function MpscPractice({ bilingual = false }: { bilingual?: boolea
   const mizo = useQuestionBank(bilingual ? "mpsc-mizo" : null, isTranslationMap<MizoTranslation>);
   const questions = bank.data ?? noQuestions;
   const translations = mizo.data;
-  const categories = useMemo(() => ["All", ...new Set(questions.map(question => question.category))], [questions]);
+  const topics = useMemo(() => [...new Set(questions.map(question => question.category))], [questions]);
   const [category, setCategory] = useState("All");
+  const progress = usePracticeProgress("mpsc");
+  const { mistakeIds, adopt } = progress;
+  const reviewingMistakes = category === MISTAKES_TOPIC;
+  const mistakesHere = useMemo(() => questions.filter(question => mistakeIds.has(question.id)).length, [questions, mistakeIds]);
+  const categories = useMemo(
+    () => ["All", ...(mistakesHere || reviewingMistakes ? [MISTAKES_TOPIC] : []), ...topics],
+    [topics, mistakesHere, reviewingMistakes],
+  );
   const [responses, setResponses] = useState<Record<string, { category: string; correct: boolean }>>({});
   const [responsesReady, setResponsesReady] = useState(false);
 
@@ -68,36 +79,73 @@ export default function MpscPractice({ bilingual = false }: { bilingual?: boolea
   }, [responses, responsesReady]);
 
   const filteredQuestions = useMemo(() => {
+    if (reviewingMistakes) return questions.filter(question => mistakeIds.has(question.id));
     if (category === "All") return questions;
     return questions.filter((q) => q.category === category);
-  }, [questions, category]);
+  }, [questions, category, reviewingMistakes, mistakeIds]);
+
+  // Students who practised before the mistakes set existed start with their wrong answers in it.
+  useEffect(() => {
+    if (!responsesReady || !progress.ready || !questions.length) return;
+    adopt(questions.filter(question => responses[`${question.category}::${question.question}`]?.correct === false).map(question => question.id));
+  }, [responsesReady, progress.ready, questions, responses, adopt]);
 
   const rotation = useQuestionRotation(
     filteredQuestions,
     `mpsc:${category}`,
+    bilingual,
   );
-  const currentQuestion = rotation.currentQuestion;
+  // The bank question is the record; the presentation is how it is shown this time.
+  const bankQuestion = rotation.currentQuestion;
+  const presentation = rotation.presentation;
+  const currentQuestion = useMemo(
+    () => bankQuestion && presentation ? { ...bankQuestion, question: presentation.question, options: presentation.options, answer: presentation.answer, explanation: presentation.explanation } : null,
+    [bankQuestion, presentation],
+  );
   const selectedAnswer = rotation.selectedAnswer;
-  const translated = bilingual && currentQuestion ? translations?.[currentQuestion.id] : undefined;
+  const stored = bilingual && bankQuestion ? translations?.[bankQuestion.id] : undefined;
+  // Translated options follow the shuffle; a fresh-number version brings its own draft Mizo.
+  const translated = useMemo(() => {
+    if (!presentation) return undefined;
+    if (presentation.variant) return presentation.variant.mizo && { ...presentation.variant.mizo, options: presentation.options };
+    return stored && presentation.order ? { ...stored, options: presentation.order.map(index => stored.options[index]) } : undefined;
+  }, [presentation, stored]);
+
+  // Topic accuracy comes from each question's latest saved answer.
+  const topicStats = useMemo(() => {
+    const stats: Record<string, TopicStats> = {};
+    for (const response of Object.values(responses)) {
+      const entry = stats[response.category] ??= { answered: 0, correct: 0 };
+      entry.answered += 1;
+      if (response.correct) entry.correct += 1;
+    }
+    return stats;
+  }, [responses]);
+  const summary = rotation.summary;
+  const roundJustEnded = Boolean(summary && !reviewingMistakes && summary.round > 1 && !summary.isReview && summary.freshRemaining === filteredQuestions.length);
+  const suggestion = roundJustEnded ? weakestTopic(topicStats, topics, category) : null;
+  const topicLabel = (topic: string) => bilingual && mizoCategories[topic] ? `${mizoCategories[topic]} (${topic})` : topic;
 
   function nextQuestion() {
+    progress.refresh();
     rotation.nextQuestion();
   }
 
   function changeCategory(cat: string) {
+    progress.refresh();
     setCategory(cat);
   }
 
   function chooseAnswer(option: string) {
-    if (!currentQuestion || selectedAnswer || !currentQuestion.options.includes(option)) return;
-    rotation.recordAnswer(option === currentQuestion.answer, option);
-    const questionKey = `${currentQuestion.category}::${currentQuestion.question}`;
+    if (!bankQuestion || !currentQuestion || selectedAnswer || !currentQuestion.options.includes(option)) return;
+    const correct = option === currentQuestion.answer;
+    rotation.recordAnswer(correct, option);
+    progress.record(bankQuestion, correct);
+    // Saved answers stay keyed to the bank question, even when it was shown with fresh numbers.
+    const questionKey = `${bankQuestion.category}::${bankQuestion.question}`;
     setResponses((current) => ({
       ...current,
-      [questionKey]: {
-        category: currentQuestion.category,
-        correct: option === currentQuestion.answer,
-      },
+      [questionKey]: { category: bankQuestion.category, correct },
     }));
   }
 
@@ -200,7 +248,7 @@ return (
                 onClick={() => changeCategory(cat)}
                 aria-pressed={category === cat}
                 className={`practice-category-button ${category === cat ? "is-active" : ""}`}
-              >{bilingual && mizoCategories[cat] ? <><span lang="lus">{mizoCategories[cat]}</span><small>{cat}</small></> : cat}</button>
+              >{bilingual && mizoCategories[cat] ? <><span lang="lus">{mizoCategories[cat]}</span><small>{cat}</small></> : cat === MISTAKES_TOPIC ? `${cat} (${mistakesHere})` : cat}</button>
             ))}
           </div>
         </section>
@@ -209,10 +257,14 @@ return (
           <div className="content-panel practice-question-panel">
             {currentQuestion && rotation.summary ? (
               <>
+                {roundJustEnded && <RoundNotice round={rotation.summary.round - 1} suggestion={suggestion} onChoose={changeCategory} label={topicLabel} />}
                 <div className="practice-question-meta">
                   <span className="section-kicker">{currentQuestion.category}</span>
-                  <span className={`practice-round-label ${rotation.summary.isReview ? "is-review" : ""}`}>
-                    {rotation.summary.isReview ? "Spaced review" : `Round ${rotation.summary.round}`}
+                  <span className="practice-meta-labels">
+                    {presentation?.variant && <span className="practice-round-label is-fresh">Fresh numbers</span>}
+                    <span className={`practice-round-label ${rotation.summary.isReview ? "is-review" : ""}`}>
+                      {rotation.summary.isReview ? "Spaced review" : `Round ${rotation.summary.round}`}
+                    </span>
                   </span>
                 </div>
                 <p className="practice-question-count">
@@ -253,7 +305,7 @@ return (
             ) : (
               bank.failed
                 ? <div className="practice-loading" role="alert">The questions could not be loaded. Check your connection. <button type="button" className="button button-outline" onClick={bank.retry}>Try again</button></div>
-                : <div className="practice-loading" role="status">{bank.data ? "Preparing your question set…" : "Loading questions…"}</div>
+                : <div className="practice-loading" role="status">{!bank.data ? "Loading questions…" : reviewingMistakes && !filteredQuestions.length ? "No mistakes left. Questions you miss will appear in this set automatically." : "Preparing your question set…"}</div>
             )}
           </div>
 

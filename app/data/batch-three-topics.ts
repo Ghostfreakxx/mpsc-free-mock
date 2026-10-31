@@ -1,5 +1,6 @@
 import type { QuestionSeed, Stream } from "./reviewed-content";
 import { fromItems, type Item } from "./question-builders.ts";
+import { aptitude } from "./aptitude-templates.ts";
 
 // Third batch (2026-10-21), weighted towards MPSC Paper I general studies. Every item is original,
 // written in the exam's style, and cites the section or article it was checked against.
@@ -32,55 +33,24 @@ type BatchThreeTopic = {
   streams: Stream[]; notes: string[]; pitfall: string; questions: QuestionSeed[];
 };
 
-const round = (value: number) => Number(value.toFixed(1));
-const listOf = (values: readonly number[]) => `${values.slice(0, -1).join(", ")} and ${values.at(-1)}`;
-const sum = (values: readonly number[]) => values.reduce((a, b) => a + b, 0);
-
-// Aptitude items follow fixed English templates so the Mizo draft is generated from the same numbers
-// (see getMizoTranslation). Distractors are the usual slips for each calculation.
+// Aptitude items come from fixed English templates (aptitude-templates.ts), so the Mizo draft is
+// generated from the same numbers and practice can recycle them with fresh numbers.
 const averageItems: Item[] = [
-  ...([[4, 8, 15, 21], [6, 10, 14, 30], [5, 9, 12, 18, 21], [12, 15, 18]] as const).map((values): Item => {
-    const total = sum(values), mean = round(total / values.length);
-    return [`Find the mean of ${listOf(values)}.`, String(mean), [String(total), String(Math.max(...values) - Math.min(...values)), String(round(total / (values.length - 1)))], `Mean = sum / count = ${total}/${values.length} = ${mean}.`, "Section 5.5: calculate the mean of a set of numbers"];
-  }),
-  ...([[5, 12], [6, 14], [10, 23]] as const).map(([count, mean]): Item => {
-    const total = count * mean;
-    return [`The mean of ${count} numbers is ${mean}. What is their sum?`, String(total), [String(count + mean), String(mean), String(total / 2)], `Sum = count x mean = ${count} x ${mean} = ${total}.`, "Section 5.5: mean = sum / count, rearranged"];
-  }),
-  ...([[10, 8, 12, 6], [25, 20, 30, 22], [15, 10, 18, 20]] as const).map(([mean, a, b, c]): Item => {
-    const fourth = 4 * mean - (a + b + c);
-    return [`The mean of 4 numbers is ${mean}. Three of them are ${a}, ${b} and ${c}. Find the fourth.`, String(fourth), [String(mean), String(4 * mean), String(round((a + b + c) / 3))], `Sum of all four = 4 x ${mean} = ${4 * mean}; fourth = ${4 * mean} - ${a + b + c} = ${fourth}.`, "Section 5.5: mean = sum / count, rearranged"];
-  }),
+  ...([[4, 8, 15, 21], [6, 10, 14, 30], [5, 9, 12, 18, 21], [12, 15, 18]] as const).map(values => aptitude.mean.build(values)),
+  ...([[5, 12], [6, 14], [10, 23]] as const).map(values => aptitude.meanSum.build(values)),
+  ...([[10, 8, 12, 6], [25, 20, 30, 22], [15, 10, 18, 20]] as const).map(values => aptitude.meanFourth.build(values)),
 ];
 
 const proportionItems: Item[] = [
-  ...([[600, 1, 2], [900, 4, 5], [1200, 3, 5], [350, 2, 5]] as const).map(([total, a, b]): Item => {
-    const share = (total * b) / (a + b);
-    return [`Divide Rs ${total} in the ratio ${a}:${b}. What is the larger share?`, `Rs ${share}`, [`Rs ${(total * a) / (a + b)}`, `Rs ${total / 2}`, `Rs ${round((total * b) / a)}`], `Larger share = ${total} x ${b}/(${a} + ${b}) = Rs ${share}.`, "Section 6.5: proportion applications"];
-  }),
-  ...([[4, 60, 7], [5, 80, 12], [3, 45, 10]] as const).map(([count, cost, wanted]): Item => {
-    const price = (cost / count) * wanted;
-    return [`If ${count} pens cost Rs ${cost}, how much do ${wanted} pens cost?`, `Rs ${price}`, [`Rs ${cost / count}`, `Rs ${cost + (wanted - count)}`, `Rs ${round((cost * count) / wanted)}`], `One pen costs ${cost}/${count} = Rs ${cost / count}; ${wanted} pens cost Rs ${price}.`, "Section 6.5: solve proportions"];
-  }),
-  ...([[6, 4, 3], [10, 3, 5], [12, 5, 4]] as const).map(([a, b, c]): Item => {
-    const x = (a * b) / c;
-    return [`Solve for x: x/${a} = ${b}/${c}.`, String(x), [String(round((a * c) / b)), String(round((b * c) / a)), String(a + b - c)], `x = ${a} x ${b}/${c} = ${x}.`, "Section 6.5: solve proportions by cross-multiplication"];
-  }),
+  ...([[600, 1, 2], [900, 4, 5], [1200, 3, 5], [350, 2, 5]] as const).map(values => aptitude.ratioShare.build(values)),
+  ...([[4, 60, 7], [5, 80, 12], [3, 45, 10]] as const).map(values => aptitude.unitCost.build(values)),
+  ...([[6, 4, 3], [10, 3, 5], [12, 5, 4]] as const).map(values => aptitude.solveProportion.build(values)),
 ];
 
 const discountItems: Item[] = [
-  ...([[800, 25], [1500, 10], [2400, 15], [640, 12.5]] as const).map(([price, rate]): Item => {
-    const discount = (price * rate) / 100, sale = price - discount;
-    return [`An item marked Rs ${price} is sold at a ${rate}% discount. What is the sale price?`, `Rs ${sale}`, [`Rs ${discount}`, `Rs ${price + discount}`, `Rs ${price - rate}`], `Discount = ${price} x ${rate}/100 = Rs ${discount}; sale price = ${price} - ${discount} = Rs ${sale}.`, "Section 6.3: discount applications"];
-  }),
-  ...([[500, 8], [1200, 5], [250, 12]] as const).map(([price, rate]): Item => {
-    const tax = (price * rate) / 100, total = price + tax;
-    return [`Sales tax of ${rate}% is charged on a Rs ${price} purchase. What is the total cost?`, `Rs ${total}`, [`Rs ${tax}`, `Rs ${price - tax}`, `Rs ${price + rate}`], `Tax = ${price} x ${rate}/100 = Rs ${tax}; total = ${price} + ${tax} = Rs ${total}.`, "Section 6.3: sales tax applications"];
-  }),
-  ...([[20000, 4], [15000, 6], [8500, 2]] as const).map(([sales, rate]): Item => {
-    const commission = (sales * rate) / 100;
-    return [`A salesperson earns ${rate}% commission on sales of Rs ${sales}. What is the commission?`, `Rs ${commission}`, [`Rs ${commission * 10}`, `Rs ${commission / 10}`, `Rs ${sales + commission}`], `Commission = ${sales} x ${rate}/100 = Rs ${commission}.`, "Section 6.3: commission applications"];
-  }),
+  ...([[800, 25], [1500, 10], [2400, 15], [640, 12.5]] as const).map(values => aptitude.discount.build(values)),
+  ...([[8, 500], [5, 1200], [12, 250]] as const).map(values => aptitude.salesTax.build(values)),
+  ...([[4, 20000], [6, 15000], [2, 8500]] as const).map(values => aptitude.commission.build(values)),
 ];
 
 export const batchThreeTopics: BatchThreeTopic[] = [

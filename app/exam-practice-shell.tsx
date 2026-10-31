@@ -17,6 +17,7 @@ import {
 import InstallAppButton from "./install-app-button";
 import type { PracticeQuestion } from "./data/practice-data";
 import QuestionSource from "./question-source";
+import RoundNotice, { type RoundNoticeProps } from "./round-notice";
 
 type RotationSummary = {
   round: number;
@@ -33,6 +34,8 @@ type FilterGroup = {
   value: string;
   options: readonly string[];
   onChange: (value: string) => void;
+  // Display text for an option, when it differs from its value.
+  labels?: Partial<Record<string, string>>;
 };
 
 type Props = {
@@ -47,6 +50,10 @@ type Props = {
   selectedAnswer: string;
   onSelectAnswer: (option: string) => void;
   onNext: () => void;
+  // The question came back with new numbers from its template.
+  freshNumbers?: boolean;
+  roundNotice?: Omit<RoundNoticeProps, "label">;
+  emptyMessage?: string;
   // Questions arrive from a static file after the page loads.
   loadState?: "loading" | "failed" | "ready";
   onRetry?: () => void;
@@ -75,6 +82,9 @@ export default function ExamPracticeShell({
   selectedAnswer,
   onSelectAnswer,
   onNext,
+  freshNumbers = false,
+  roundNotice,
+  emptyMessage,
   loadState = "ready",
   onRetry,
 }: Props) {
@@ -164,7 +174,7 @@ export default function ExamPracticeShell({
                         onClick={() => filter.onChange(option)}
                         aria-pressed={filter.value === option}
                         className={`practice-category-button ${filter.value === option ? "is-active" : ""}`}
-                      >{option}</button>
+                      >{filter.labels?.[option] ?? option}</button>
                     ))}
                   </div>
                 </div>
@@ -176,7 +186,8 @@ export default function ExamPracticeShell({
             <div className="content-panel practice-question-panel">
               {currentQuestion && summary ? (
                 <>
-                  <div className="practice-question-meta"><span className="section-kicker">{currentQuestion.subject ?? currentQuestion.category ?? title}</span><span className={`practice-round-label ${summary.isReview ? "is-review" : ""}`}>{summary.isReview ? "Spaced review" : `Round ${summary.round}`}</span></div>
+                  {roundNotice && <RoundNotice {...roundNotice} />}
+                  <div className="practice-question-meta"><span className="section-kicker">{currentQuestion.subject ?? currentQuestion.category ?? title}</span><span className="practice-meta-labels">{freshNumbers && <span className="practice-round-label is-fresh">Fresh numbers</span>}<span className={`practice-round-label ${summary.isReview ? "is-review" : ""}`}>{summary.isReview ? "Spaced review" : `Round ${summary.round}`}</span></span></div>
                   <p className="practice-question-count">{summary.freshRemaining} fresh {summary.freshRemaining === 1 ? "question" : "questions"} left{summary.reviewsPending > 0 && ` · ${summary.reviewsPending} to review`}{currentQuestion.category && currentQuestion.subject && ` · ${currentQuestion.category}`}</p>
                   <h2 className="practice-question-title">{currentQuestion.question}</h2>
                   <div className="practice-options">
@@ -201,7 +212,7 @@ export default function ExamPracticeShell({
               ) : (
                 loadState === "failed"
                   ? <div className="practice-loading" role="alert">The questions could not be loaded. Check your connection. <button type="button" className="button button-outline" onClick={onRetry}>Try again</button></div>
-                  : <div className="practice-loading" role="status">{loadState === "loading" ? "Loading questions…" : totalQuestions ? "Preparing your question set…" : "No questions found for these filters."}</div>
+                  : <div className="practice-loading" role="status">{loadState === "loading" ? "Loading questions…" : totalQuestions ? "Preparing your question set…" : emptyMessage ?? "No questions found for these filters."}</div>
               )}
             </div>
 
