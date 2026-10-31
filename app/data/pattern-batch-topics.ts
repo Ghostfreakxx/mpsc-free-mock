@@ -1,5 +1,6 @@
 import type { QuestionSeed, Stream } from "./reviewed-content";
 import { fromItems, type Item } from "./question-builders.ts";
+import { aptitude } from "./aptitude-templates.ts";
 
 // Second batch from the triangulated pattern scan (content/PATTERN-SCAN.md, "Still open"):
 // topics several independent paper analyses rank as high-weightage that the bank did not cover.
@@ -33,42 +34,19 @@ type PatternBatchTopic = {
   streams: Stream[]; notes: string[]; pitfall: string; questions: QuestionSeed[];
 };
 
-const round = (value: number) => Number(value.toFixed(1));
-
-// MPSC aptitude items follow fixed English templates so the Mizo draft can be produced from the
-// same numbers (see getMizoTranslation). Distractors are the usual slips for each calculation.
+// Aptitude items come from fixed English templates (aptitude-templates.ts), so the Mizo draft is
+// generated from the same numbers and practice can recycle them with fresh numbers.
 const percentItems: Item[] = [
-  ...([[12, 250], [15, 80], [35, 60], [8, 450], [125, 40], [2.5, 400]] as const).map(([p, n]): Item => {
-    const value = round((p / 100) * n);
-    return [`What is ${p}% of ${n}?`, String(value), [String(round(value * 10)), String(round(value / 10)), String(round(value + p))], `${p}/100 x ${n} = ${value}.`, "Section 6.2: translate and solve basic percent equations"];
-  }),
-  ...([[15, 60], [18, 24], [7, 35], [42, 120]] as const).map(([part, whole]): Item => {
-    const value = round((part / whole) * 100);
-    return [`${part} is what percent of ${whole}?`, `${value}%`, [`${round((whole / part) * 100)}%`, `${part}%`, `${round(((whole - part) / whole) * 100)}%`], `${part}/${whole} x 100 = ${value}%.`, "Section 6.2: translate and solve basic percent equations"];
-  }),
-  ...([[40, 50], [200, 230], [250, 300]] as const).map(([from, to]): Item => {
-    const change = to - from, value = round((change / from) * 100);
-    return [`A price rises from Rs ${from} to Rs ${to}. What is the percentage increase?`, `${value}%`, [`${change}%`, `${round((change / to) * 100)}%`, `${round((to / from) * 100)}%`], `Increase = ${to} - ${from} = ${change}; ${change}/${from} x 100 = ${value}%. Always divide by the original amount.`, "Section 6.2: find percent increase"];
-  }),
-  ...([[50, 40], [400, 300], [250, 200]] as const).map(([from, to]): Item => {
-    const change = from - to, value = round((change / from) * 100);
-    return [`A price falls from Rs ${from} to Rs ${to}. What is the percentage decrease?`, `${value}%`, [`${change}%`, `${round((change / to) * 100)}%`, `${round((to / from) * 100)}%`], `Decrease = ${from} - ${to} = ${change}; ${change}/${from} x 100 = ${value}%. Always divide by the original amount.`, "Section 6.2: find percent decrease"];
-  }),
+  ...([[12, 250], [15, 80], [35, 60], [8, 450], [125, 40], [2.5, 400]] as const).map(values => aptitude.percentOf.build(values)),
+  ...([[15, 60], [18, 24], [7, 35], [42, 120]] as const).map(values => aptitude.partPercent.build(values)),
+  ...([[40, 50], [200, 230], [250, 300]] as const).map(values => aptitude.percentRise.build(values)),
+  ...([[50, 40], [400, 300], [250, 200]] as const).map(values => aptitude.percentFall.build(values)),
 ];
 
 const interestItems: Item[] = [
-  ...([[2000, 5, 3], [1500, 8, 2], [5000, 4, 5], [1200, 10, 4]] as const).map(([principal, rate, years]): Item => {
-    const interest = (principal * rate * years) / 100;
-    return [`Find the simple interest on Rs ${principal} at ${rate}% per year for ${years} years.`, `Rs ${interest}`, [`Rs ${(principal * rate) / 100}`, `Rs ${principal + interest}`, `Rs ${interest * years}`], `I = P x r x t = ${principal} x ${rate}/100 x ${years} = Rs ${interest}.`, "Section 6.4: simple interest formula I = Prt"];
-  }),
-  ...([[1000, 6, 4], [2500, 4, 3], [800, 5, 5]] as const).map(([principal, rate, years]): Item => {
-    const interest = (principal * rate * years) / 100, amount = principal + interest;
-    return [`Rs ${principal} is invested at ${rate}% simple interest per year for ${years} years. What is the total amount at the end?`, `Rs ${amount}`, [`Rs ${interest}`, `Rs ${principal + (principal * rate) / 100}`, `Rs ${amount + interest}`], `I = ${principal} x ${rate}/100 x ${years} = Rs ${interest}; amount = ${principal} + ${interest} = Rs ${amount}.`, "Section 6.4: total amount = principal + interest"];
-  }),
-  ...([[2000, 480, 4], [1500, 450, 5], [3000, 720, 3]] as const).map(([principal, interest, years]): Item => {
-    const rate = (interest * 100) / (principal * years);
-    return [`Rs ${principal} earns Rs ${interest} simple interest in ${years} years. What is the annual interest rate?`, `${rate}%`, [`${(interest * 100) / principal}%`, `${rate * 2}%`, `${rate / 2}%`], `r = (I x 100) / (P x t) = (${interest} x 100) / (${principal} x ${years}) = ${rate}%.`, "Section 6.4: solve I = Prt for the rate"];
-  }),
+  ...([[2000, 5, 3], [1500, 8, 2], [5000, 4, 5], [1200, 10, 4]] as const).map(values => aptitude.simpleInterest.build(values)),
+  ...([[1000, 6, 4], [2500, 4, 3], [800, 5, 5]] as const).map(values => aptitude.simpleAmount.build(values)),
+  ...([[2000, 480, 4], [1500, 450, 5], [3000, 720, 3]] as const).map(values => aptitude.simpleRate.build(values)),
 ];
 
 export const patternBatchTopics: PatternBatchTopic[] = [

@@ -1,5 +1,6 @@
 import type { QuestionSeed, Stream } from "./reviewed-content";
 import { fromItems, type Item } from "./question-builders.ts";
+import { aptitude } from "./aptitude-templates.ts";
 
 // Fourth batch (2026-10-22), again weighted towards MPSC Paper I. Every item is original, written in
 // the exam's style, and cites the section or article it was checked against. General-studies topics
@@ -35,39 +36,18 @@ type BatchFourTopic = {
   streams: Stream[]; notes: string[]; pitfall: string; questions: QuestionSeed[];
 };
 
-const round = (value: number) => Number(value.toFixed(1));
-const round2 = (value: number) => Number(value.toFixed(2));
-
-// Aptitude items follow fixed English templates so the Mizo draft is generated from the same numbers
-// (see getMizoTranslation). Distractors are the usual slips for each calculation.
+// Aptitude items come from fixed English templates (aptitude-templates.ts), so the Mizo draft is
+// generated from the same numbers and practice can recycle them with fresh numbers.
 const motionItems: Item[] = [
-  ...([[180, 3], [250, 5], [420, 6]] as const).map(([distance, hours]): Item => {
-    const speed = distance / hours;
-    return [`A car travels ${distance} km in ${hours} hours. What is its average speed?`, `${speed} km/h`, [`${distance * hours} km/h`, `${distance - hours} km/h`, `${round(distance / (hours + 1))} km/h`], `Speed = distance / time = ${distance}/${hours} = ${speed} km/h.`, "Section 3.5: distance = rate x time"];
-  }),
-  ...([[60, 4], [45, 3], [72, 5]] as const).map(([speed, hours]): Item => {
-    const distance = speed * hours;
-    return [`A train moves at ${speed} km/h. How far does it travel in ${hours} hours?`, `${distance} km`, [`${round(speed / hours)} km`, `${speed + hours} km`, `${distance * 2} km`], `Distance = speed x time = ${speed} x ${hours} = ${distance} km.`, "Section 3.5: distance = rate x time"];
-  }),
-  ...([[300, 60], [150, 50], [360, 40], [210, 35]] as const).map(([distance, speed]): Item => {
-    const hours = distance / speed;
-    return [`How long does it take to cover ${distance} km at ${speed} km/h?`, `${hours} hours`, [`${hours + 1} hours`, `${hours - 1} hours`, `${round2(speed / distance)} hours`], `Time = distance / speed = ${distance}/${speed} = ${hours} hours.`, "Section 3.5: distance = rate x time, solved for time"];
-  }),
+  ...([[180, 3], [250, 5], [420, 6]] as const).map(values => aptitude.averageSpeed.build(values)),
+  ...([[60, 4], [45, 3], [72, 5]] as const).map(values => aptitude.distance.build(values)),
+  ...([[300, 60], [150, 50], [360, 40], [210, 35]] as const).map(values => aptitude.travelTime.build(values)),
 ];
 
 const profitItems: Item[] = [
-  ...([[400, 500], [250, 300], [600, 690]] as const).map(([cost, sale]): Item => {
-    const profit = sale - cost, percent = round((profit / cost) * 100);
-    return [`A shopkeeper buys an item for Rs ${cost} and sells it for Rs ${sale}. What is the profit percent?`, `${percent}%`, [`${profit}%`, `${round((profit / sale) * 100)}%`, `${round((sale / cost) * 100)}%`], `Profit = ${sale} - ${cost} = Rs ${profit}; ${profit}/${cost} x 100 = ${percent}%. Profit percent is on the cost price.`, "Section 6.2: percent increase applied to profit"];
-  }),
-  ...([[500, 10], [1200, 15], [960, 25]] as const).map(([cost, rate]): Item => {
-    const loss = (cost * rate) / 100, sale = cost - loss;
-    return [`An item bought for Rs ${cost} is sold at a loss of ${rate}%. What is the selling price?`, `Rs ${sale}`, [`Rs ${loss}`, `Rs ${cost + loss}`, `Rs ${cost - rate}`], `Loss = ${cost} x ${rate}/100 = Rs ${loss}; selling price = ${cost} - ${loss} = Rs ${sale}.`, "Section 6.2: percent decrease applied to loss"];
-  }),
-  ...([[400, 30], [1500, 20], [250, 40], [640, 25]] as const).map(([cost, rate]): Item => {
-    const markup = (cost * rate) / 100, price = cost + markup;
-    return [`A shop marks up an item costing Rs ${cost} by ${rate}%. What is the marked price?`, `Rs ${price}`, [`Rs ${markup}`, `Rs ${cost - markup}`, `Rs ${cost + rate}`], `Mark-up = ${cost} x ${rate}/100 = Rs ${markup}; marked price = ${cost} + ${markup} = Rs ${price}.`, "Section 6.3: mark-up applications"];
-  }),
+  ...([[400, 500], [250, 300], [600, 690]] as const).map(values => aptitude.profitPercent.build(values)),
+  ...([[500, 10], [1200, 15], [960, 25]] as const).map(values => aptitude.lossPrice.build(values)),
+  ...([[400, 30], [1500, 20], [250, 40], [640, 25]] as const).map(values => aptitude.markup.build(values)),
 ];
 
 export const batchFourTopics: BatchFourTopic[] = [

@@ -170,10 +170,10 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
       {isOpen && (
         <section className="assistant-panel" role="dialog" aria-modal="false" aria-labelledby="assistant-title">
           <header className="assistant-header">
-            <span className="assistant-avatar"><Bot size={20} /></span>
+            <span className="assistant-avatar"><Bot size={22} /></span>
             <div className="assistant-heading-copy">
               <strong id="assistant-title">MPSC study mentor</strong>
-              <span><span className="assistant-status-dot" />Study support</span>
+              <span><span className="assistant-status-dot" />Ask about any topic or study plan</span>
             </div>
             <button
               type="button"
@@ -199,14 +199,14 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
                 key={`${index}-${message.role}`}
                 ref={index === messages.length - 1 ? latestMessageRef : undefined}
               >
-                {message.role === "assistant" && <span className="assistant-message-icon"><Sparkles size={13} /></span>}
+                {message.role === "assistant" && <span className="assistant-message-icon"><Sparkles size={15} /></span>}
                 <div className="assistant-bubble">
                   <p>{message.content}</p>
                   {!!message.links?.length && (
                     <div className="assistant-links">
                       {message.links.map((link) => (
                         <Link href={link.href} key={`${link.href}-${link.label}`} onClick={() => setIsOpen(false)}>
-                          {link.label}<ArrowRight size={13} />
+                          {link.label}<ArrowRight size={16} />
                         </Link>
                       ))}
                     </div>
@@ -219,7 +219,7 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
               <div className="assistant-suggestions" aria-label="Suggested questions">
                 {suggestions.map((suggestion) => (
                   <button type="button" key={suggestion} onClick={() => void sendMessage(suggestion)}>
-                    {suggestion}<ArrowRight size={13} />
+                    {suggestion}<ArrowRight size={16} />
                   </button>
                 ))}
               </div>
@@ -227,8 +227,8 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
 
             {isSending && (
               <div className="assistant-message-row is-assistant" role="status">
-                <span className="assistant-message-icon"><Sparkles size={13} /></span>
-                <div className="assistant-bubble assistant-typing"><LoaderCircle size={15} />Thinking through it…</div>
+                <span className="assistant-message-icon"><Sparkles size={15} /></span>
+                <div className="assistant-bubble assistant-typing"><LoaderCircle size={17} className="assistant-spinner" />Thinking through it…</div>
               </div>
             )}
           </div>
@@ -253,7 +253,7 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
               disabled={!draft.trim() || isSending}
               aria-label="Send message"
               title="Send message"
-            >{isSending ? <LoaderCircle size={17} className="assistant-spinner" /> : <Send size={17} />}</button>
+            >{isSending ? <LoaderCircle size={20} className="assistant-spinner" /> : <Send size={20} />}</button>
           </form>
           <div className="assistant-footnote">Check official notices for dates and syllabus changes.</div>
         </section>
@@ -274,7 +274,7 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
             setIsOpen(true);
           }
         }}
-      >{isOpen ? <X size={22} /> : <MessageCircle size={22} />}</button>
+      >{isOpen ? <X size={22} /> : <><MessageCircle size={22} /><span className="assistant-launcher-label">Ask a doubt</span></>}</button>
     </div>
   );
 }

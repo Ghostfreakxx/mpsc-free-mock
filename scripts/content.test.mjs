@@ -13,9 +13,10 @@ import { patternBatchTopics } from '../app/data/pattern-batch-topics.ts';
 import { batchThreeTopics } from '../app/data/batch-three-topics.ts';
 import { batchFourTopics } from '../app/data/batch-four-topics.ts';
 import { batchFiveTopics } from '../app/data/batch-five-topics.ts';
+import { batchSixTopics } from '../app/data/batch-six-topics.ts';
 import { getMizoTranslation, mizoPendingTopicIds } from '../app/data/mizo-translations.ts';
 
-const foundationTopics = [...jeeTopics, ...neetTopics, ...highYieldTopics, ...patternBatchTopics, ...batchThreeTopics, ...batchFourTopics, ...batchFiveTopics];
+const foundationTopics = [...jeeTopics, ...neetTopics, ...highYieldTopics, ...patternBatchTopics, ...batchThreeTopics, ...batchFourTopics, ...batchFiveTopics, ...batchSixTopics];
 const foundationCount = stream => foundationTopics.filter(topic => topic.streams.includes(stream)).reduce((total, topic) => total + topic.questions.length, 0);
 
 test('each stream retains its published expansion quota', () => {
@@ -426,4 +427,51 @@ test('fifth batch worked answers are independently recomputed', () => {
   assert.equal(answer('neet', 'population-ecology-5'), String((40 * 50) / 10));
   assert.equal(answer('neet', 'population-ecology-10'), `${0.1 * 200} individuals per year`);
   assert.ok(Math.abs(Math.cos(Math.PI / 12) - (Math.sqrt(6) + Math.sqrt(2)) / 4) < 1e-12, 'trigonometric-identities-8');
+});
+
+test('sixth batch topics are sourced, balanced and published to the intended streams', () => {
+  for (const topic of batchSixTopics) {
+    assert.ok(topic.questions.length >= 10 && topic.notes.length > 0 && topic.pitfall, topic.id);
+    assert.equal(new URL(sources[topic.sourceId].url).protocol, 'https:', topic.id);
+    for (const stream of topic.streams) {
+      const published = getReviewedQuestions(stream).filter(question => question.id.startsWith(`${topic.id}-`));
+      assert.equal(published.length, topic.questions.length, `${topic.id} in ${stream}`);
+      assert.ok(new Set(published.map(question => question.options.indexOf(question.answer))).size >= 3, topic.id);
+    }
+    // Every MPSC topic in this batch is published in English with Mizo pending.
+    if (topic.streams.includes('mpsc')) {
+      assert.ok(mizoPendingTopicIds.has(topic.id), topic.id);
+      for (const question of getReviewedQuestions('mpsc').filter(q => q.id.startsWith(`${topic.id}-`))) assert.equal(getMizoTranslation(question), undefined, question.id);
+    }
+  }
+  for (const [stream, minimum] of Object.entries({ mpsc: 140, neet: 70, jee: 70, 'cuet-pg': 110 })) {
+    const fresh = getReviewedQuestions(stream).filter(question => batchSixTopics.some(topic => question.id.startsWith(`${topic.id}-`)));
+    assert.ok(fresh.length >= minimum, `${stream} has ${fresh.length} sixth-batch questions`);
+  }
+});
+
+test('sixth batch worked answers are independently recomputed', () => {
+  const answer = (stream, id) => getReviewedQuestions(stream).find(question => question.id === id).answer;
+  const byPrompt = (stream, prompt) => getReviewedQuestions(stream).find(question => question.question === prompt).answer;
+  assert.equal(byPrompt('mpsc', 'A can finish a job in 6 days and B can finish it in 12 days. Working together, how many days will they take?'), `${(6 * 12) / (6 + 12)} days`);
+  assert.equal(byPrompt('mpsc', '8 workers can finish a job in 9 days. How many days will 12 workers take, working at the same rate?'), `${(8 * 9) / 12} days`);
+  assert.equal(byPrompt('cuet-pg', 'One tap fills a tank in 10 hours and a drain empties it in 15 hours. With both open, how long does the empty tank take to fill?'), `${(10 * 15) / (15 - 10)} hours`);
+  assert.equal(byPrompt('mpsc', 'Find the compound interest on Rs 2000 at 5% per year for 2 years, compounded annually.'), `Rs ${2000 * 1.05 * 1.05 - 2000}`);
+  assert.equal(byPrompt('mpsc', 'Rs 2500 is invested at 8% per year, compounded annually. What is the amount after 2 years?'), `Rs ${Math.round(2500 * 1.08 * 1.08)}`);
+  assert.equal(byPrompt('cuet-pg', 'What is the difference between compound interest and simple interest on Rs 5000 at 4% per year for 2 years?'), `Rs ${Math.round(5000 * 0.04 * 0.04)}`);
+  assert.equal(answer('mpsc', 'government-budget-4'), `Rs ${1000 - (700 + 50)} crore`);
+  assert.equal(answer('mpsc', 'government-budget-6'), `Rs ${500 - 200} crore`);
+  assert.equal(answer('cuet-pg', 'balance-of-payments-4'), `A deficit of Rs ${420 - 300} crore`);
+  assert.equal(answer('jee', 'alternating-current-1'), `${Math.round(220 * Math.SQRT2)} V`);
+  assert.equal(answer('neet', 'alternating-current-4'), `${Math.hypot(3, 4)} ohm`);
+  assert.equal(answer('jee', 'alternating-current-9'), `${(220 * 500) / 100} V`);
+  assert.equal(answer('neet', 'optical-instruments-4'), `+${1 / 0.5} D`);
+  assert.equal(answer('jee', 'optical-instruments-6'), String(1 + 25 / 5));
+  assert.equal(answer('jee', 'optical-instruments-8'), String(100 / 5));
+  assert.equal(answer('neet', 'colligative-properties-2'), `${1.86 * 0.5} K`);
+  assert.equal(answer('jee', 'continuity-2'), String((2 ** 2 - 1 - 1) / 2));
+  assert.equal(answer('jee', 'ellipse-hyperbola-1'), `(±${Math.sqrt(25 - 9)}, 0)`);
+  assert.equal(answer('jee', 'ellipse-hyperbola-5'), `(±${Math.sqrt(16 + 9)}, 0)`);
+  assert.equal(answer('jee', 'straight-lines-4'), String(Math.abs(-10) / Math.hypot(3, 4)));
+  assert.equal(answer('jee', 'straight-lines-7'), String(Math.abs(5 - -10) / Math.hypot(3, 4)));
 });

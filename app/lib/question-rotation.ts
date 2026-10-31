@@ -25,11 +25,16 @@ export interface QuestionRotationState {
   reviews: ReviewQuestion[];
   answered?: boolean;
   selectedAnswer?: string;
+  // Changes each time a question is shown; it shuffles the options and picks fresh numbers.
+  // States saved before it existed have none and show the question as written.
+  seed?: number;
 }
 
 const STORAGE_PREFIX = "question-rotation:v1:";
 const MAX_REVIEW_INTERVAL = 24;
 const SKIP_REVIEW_INTERVAL = 3;
+
+const newSeed = (random: () => number) => Math.floor(random() * 2 ** 31);
 
 function shuffle(values: readonly string[], random: () => number): string[] {
   const result = [...values];
@@ -63,6 +68,7 @@ function makeRound(
     lastRoundFirst: order[0],
     freshCompleted,
     reviews,
+    seed: newSeed(random),
   };
 }
 
@@ -115,6 +121,7 @@ function isStoredState(value: unknown): value is QuestionRotationState {
     state.freshCompleted! >= 0 &&
     (state.answered === undefined || typeof state.answered === "boolean") &&
     (state.selectedAnswer === undefined || typeof state.selectedAnswer === "string") &&
+    (state.seed === undefined || (Number.isInteger(state.seed) && state.seed >= 0)) &&
     Array.isArray(state.reviews) &&
     state.reviews.every(
       (review) =>
@@ -159,7 +166,7 @@ function reconcileRotation(
   // The active question no longer exists: move on to the next unseen one.
   const base = { ...state, order, lastRoundFirst, reviews, answered: false, selectedAnswer: "" };
   if (seen.length < order.length) {
-    return { ...base, cursor: seen.length + 1, activeId: order[seen.length], activeMode: "fresh" };
+    return { ...base, cursor: seen.length + 1, activeId: order[seen.length], activeMode: "fresh", seed: newSeed(random) };
   }
   return makeRound(ids, random, state.round + 1, lastRoundFirst, state.freshCompleted, reviews);
 }
@@ -231,7 +238,7 @@ export function advanceRotation(
     .sort((a, b) => a.dueAt - b.dueAt)[0];
 
   if (dueReview) {
-    return { ...base, activeId: dueReview.id, activeMode: "review" };
+    return { ...base, activeId: dueReview.id, activeMode: "review", seed: newSeed(random) };
   }
 
   if (base.cursor < base.order.length) {
@@ -241,6 +248,7 @@ export function advanceRotation(
       cursor: base.cursor + 1,
       activeId,
       activeMode: "fresh",
+      seed: newSeed(random),
     };
   }
 

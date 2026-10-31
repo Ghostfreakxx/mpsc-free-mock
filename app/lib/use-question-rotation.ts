@@ -12,15 +12,20 @@ import {
   type QuestionRotationState,
   type RotatableQuestion,
 } from "./question-rotation";
+import { presentQuestion } from "./question-presentation";
+
+type PresentableQuestion = RotatableQuestion & { options: readonly string[]; explanation: string };
 
 interface LoadedRotation {
   key: string;
   state: QuestionRotationState | null;
 }
 
-export function useQuestionRotation<T extends RotatableQuestion>(
+// `withMizo` adds draft Mizo to fresh-number aptitude questions on the bilingual page.
+export function useQuestionRotation<T extends PresentableQuestion>(
   questions: readonly T[],
   scope: string,
+  withMizo = false,
 ) {
   const key = rotationStorageKey(scope);
   const ids = useMemo(() => questions.map(questionId), [questions]);
@@ -62,6 +67,14 @@ export function useQuestionRotation<T extends RotatableQuestion>(
   const currentQuestion = state
     ? (questionsById.get(state.activeId) ?? null)
     : null;
+  // Options are reshuffled every time a question is shown; aptitude questions that come back
+  // (a review, or any later round) get fresh numbers.
+  const seed = state?.seed;
+  const freshNumbers = state ? state.activeMode === "review" || state.round > 1 : false;
+  const presentation = useMemo(
+    () => currentQuestion ? presentQuestion(currentQuestion, seed, freshNumbers, withMizo) : null,
+    [currentQuestion, seed, freshNumbers, withMizo],
+  );
 
   function recordAnswer(correct: boolean, answer: string) {
     if (!state || !currentQuestion) return;
@@ -80,7 +93,8 @@ export function useQuestionRotation<T extends RotatableQuestion>(
 
   return {
     currentQuestion,
-    selectedAnswer: typeof state?.selectedAnswer === "string" && currentQuestion?.options?.includes(state.selectedAnswer) ? state.selectedAnswer : "",
+    presentation,
+    selectedAnswer: typeof state?.selectedAnswer === "string" && presentation?.options.includes(state.selectedAnswer) ? state.selectedAnswer : "",
     ready: Boolean(ready && state),
     recordAnswer,
     nextQuestion,

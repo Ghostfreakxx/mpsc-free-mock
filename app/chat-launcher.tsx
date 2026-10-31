@@ -12,7 +12,7 @@ const ChatAssistant = dynamic(loadAssistant, { ssr: false, loading: () => <Launc
 function LauncherButton({ busy = false, onOpen, onWarm }: { busy?: boolean; onOpen?: () => void; onWarm?: () => void }) {
   return <div className="assistant-widget">
     <button type="button" className="assistant-launcher" aria-label="Open MPSC study assistant" aria-expanded={false} aria-busy={busy}
-      onClick={onOpen} onPointerEnter={onWarm} onFocus={onWarm}><MessageCircle size={22} /></button>
+      onClick={onOpen} onPointerEnter={onWarm} onFocus={onWarm}><MessageCircle size={22} /><span className="assistant-launcher-label">Ask a doubt</span></button>
   </div>;
 }
 
