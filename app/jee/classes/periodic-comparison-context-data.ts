@@ -1,0 +1,1 @@
+export const molecularElectronLedgers=[{label:'CH₄',z:6,centralValence:4,charge:0},{label:'SiH₄',z:14,centralValence:4,charge:0},{label:'GeH₄',z:32,centralValence:4,charge:0},{label:'NH₄⁺',z:7,centralValence:5,charge:1},{label:'BH₄⁻',z:5,centralValence:3,charge:-1}].map(s=>({...s,total:s.z+4-s.charge,valence:s.centralValence+4-s.charge}));

@@ -24,7 +24,7 @@ Questions are original practice, not represented as official PYQs.
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 37 | 37 | 28 | 66 / 66 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 38 | 39 | 28 | 66 / 66 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 34 | 37 | 28 | 66 / 66 |
-| 9 | [Periodic Trends](/jee/classes/periodic-trends) | 33 | 31 | 21 | 56 / 56 |
+| 9 | [Periodic Trends](/jee/classes/periodic-trends) | 37 | 35 | 24 | 64 / 64 |
 | 10 | [P-Block](/jee/classes/p-block) | 35 | 33 | 21 | 58 / 58 |
 | 11 | [D/F-Block](/jee/classes/d-f-block) | 35 | 33 | 21 | 58 / 58 |
 | 12 | [Coordination Compounds](/jee/classes/coordination-compounds) | 34 | 37 | 28 | 66 / 66 |
@@ -39,7 +39,7 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Mole Concept adds four narrated chapters on staged hydrate mass loss, consecutive reaction inventories, supporting hard-bound limiting-reactant analysis and hydrated-crystal component balances. The batch includes eight original questions, three worked examples and a solute/water flow diagram.
+Periodic Trends adds four narrated chapters on lanthanoid contraction, contextual lower oxidation states, total versus valence electron inventories and polarization roles. The batch includes eight original questions, three worked examples and a core/valence electron-count diagram.
 
 ## Remaining scope
 
@@ -53,7 +53,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The new notes reference University of Arkansas hydrate ratios, OpenStax reaction yields and measurement uncertainty, and University of Colorado Boulder LearnChemE component balances. Supplied numerical datasets, diagrams and MCQs in this batch are original practice.
+The new notes reference RSC matched-coordinate ionic radii, ACS lanthanoid-contraction comparisons, NCERT p-block and lithium trends, IUPAC terminology and University of British Columbia polarizability teaching. Numerical ledgers, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks

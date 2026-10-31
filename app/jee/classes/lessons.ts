@@ -1213,7 +1213,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "periodic-trends", subject: "Chemistry", unit: 9, number: "C11", title: periodicTrends.title,
-    description: "Thirty-three narrated chapters on periodic properties, electron-gain conventions, supplied shielding estimates, oxoacid families and bond polarity.",
+    description: "Thirty-seven narrated chapters on contraction, oxidation-state context, electron-count conventions, polarization and periodic comparisons.",
     scope: "Recorded Unit 9 foundation with original practice. These selected group compounds illustrate periodic trends. Detailed group chemistry, transition-element trends and further exceptions remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.periodic-trends.lecture.v1",
     audio: "/lectures/periodic-trends/narration-marin.mp3",
