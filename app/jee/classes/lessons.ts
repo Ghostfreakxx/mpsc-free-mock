@@ -1203,7 +1203,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "mole-concept", subject: "Chemistry", unit: 1, number: "C10", title: moleConcept.title,
-    description: "Thirty-three narrated chapters on mole calculations, measured-volume mixing, repeated dilution, dry/wet combustion gas bases, moisture-adjusted purity and reaction balances.",
+    description: "Thirty-seven narrated chapters on staged hydrates, consecutive reaction inventories, measurement bounds, hydrated-crystal balances and mole calculations.",
     scope: "Recorded Unit 1 foundation with original practice. Further multi-step reaction networks and additional experimental datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.mole-concept.lecture.v1",
     audio: "/lectures/mole-concept/narration-marin.mp3",

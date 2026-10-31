@@ -1,3 +1,4 @@
+import MoleInventoryBoundsDiagram from './mole-inventory-bounds-diagram';
 import PeriodicCoordinationModelsDiagram from './periodic-coordination-models-diagram';
 import MoleOrganicBasisDiagram from './mole-organic-basis-diagram';
 import PeriodicCoordinationContextDiagram from './periodic-coordination-context-diagram';
@@ -11,6 +12,7 @@ import ElectronGainStepsDiagram from "./electron-gain-steps-diagram";
 import IsotopePairingDiagram from "./isotope-pairing-diagram";
 
 export default function MolePeriodicDiagram({lesson,chapter}:{lesson:"mole-concept"|"periodic-trends";chapter:number}) {
+ if(lesson==='mole-concept'&&chapter===36)return <MoleInventoryBoundsDiagram/>;
  if(lesson==='periodic-trends'&&chapter===26)return <PeriodicCoordinationContextDiagram kind="radii"/>;
  if(lesson==='mole-concept'&&chapter===28)return <MoleChairBalancesDiagram kind="recycle"/>;
  if(lesson==='mole-concept'&&chapter===23)return <MoleOrganicInterpretationDiagram kind="gas"/>;

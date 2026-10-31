@@ -16,7 +16,7 @@ Questions are original practice, not represented as official PYQs.
 
 | Unit | Recorded class | Chapters | Written sections | Worked examples | Class MCQs / Written MCQs |
 | --- | --- | --- | --- | --- | --- |
-| 1 | [Mole Concept](/jee/classes/mole-concept) | 33 | 30 | 21 | 56 / 56 |
+| 1 | [Mole Concept](/jee/classes/mole-concept) | 37 | 34 | 24 | 64 / 64 |
 | 2 | [Atomic Structure](/jee/classes/atomic-structure) | 37 | 34 | 24 | 66 / 66 |
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 37 | 36 | 24 | 66 / 66 |
 | 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 35 | 37 | 24 | 58 / 58 |
@@ -39,7 +39,7 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Hydrocarbons adds four narrated chapters on conjugated-diene addition, allylic bromination versus addition, a supporting three-state conformer model and same-medium acetylide base comparisons. The batch includes eight original questions, three worked examples and a normalized conformer-population diagram.
+Mole Concept adds four narrated chapters on staged hydrate mass loss, consecutive reaction inventories, supporting hard-bound limiting-reactant analysis and hydrated-crystal component balances. The batch includes eight original questions, three worked examples and a solute/water flow diagram.
 
 ## Remaining scope
 
@@ -53,7 +53,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The new notes reference OpenStax conjugated-diene, allylic bromination, conformation and alkyne-acidity discussions, plus University of Minnesota Boltzmann-weight teaching material. Supplied numerical datasets, diagrams and MCQs in this batch are original practice.
+The new notes reference University of Arkansas hydrate ratios, OpenStax reaction yields and measurement uncertainty, and University of Colorado Boulder LearnChemE component balances. Supplied numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks
