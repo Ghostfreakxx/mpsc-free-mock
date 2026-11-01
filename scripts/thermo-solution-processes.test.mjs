@@ -5,7 +5,7 @@ const read=id=>JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`));
 const near=(a,b,t=1e-9)=>assert.ok(Math.abs(a-b)<t,`${a} differs from ${b}`);
 test('Born-Haber signs, integrated heat capacity and mixing entropy close independently',()=>{
  const data=read('chemical-thermodynamics');
- assert.deepEqual(data.quiz.slice(26).map(q=>q.answer),[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,1,2,3,0,1,2,3,0]);
+ assert.deepEqual(data.quiz.slice(26).map(q=>q.answer),[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]);
  const ionPreparation=108+496+244/2-349,formation=-411;
  near(ionPreparation,377);near(formation-ionPreparation,-788);near(ionPreparation-formation,788);
  const correction=10*(500-300)+.020/2*(500**2-300**2);

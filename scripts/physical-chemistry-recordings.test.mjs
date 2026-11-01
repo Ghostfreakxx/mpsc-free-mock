@@ -4,13 +4,13 @@ import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {physicalChemistryLessons} from '../app/jee/classes/physical-chemistry-study.ts';
 for (const [id,unit] of [['chemical-thermodynamics',4],['solutions',5]]) {
- const count=id==='solutions'?39:35;
+ const count=39;
  const lesson=JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`));
  test(`${id}: recording matches the written companion and keeps scope explicit`,()=>{
   assert.equal(lesson.subject,'Chemistry');assert.equal(lesson.unit,unit);
   assert.equal(lesson.chapters.length,count);
   assert.deepEqual(lesson.quiz,physicalChemistryLessons.find(l=>l.id===id).quiz);
-  assert.equal(lesson.quiz.length,id==='solutions'?66:58);
+  assert.equal(lesson.quiz.length,66);
   for(const [i,c]of lesson.chapters.entries()){
    const hash=createHash('sha256').update(JSON.stringify({script:c.speechInput??c.script,instructions:lesson.voiceInstructions,voice:'marin',model:'gpt-4o-mini-tts'})).digest('hex');
    assert.equal(fs.readFileSync('public/lectures/'+id+'/chapter-'+String(i+1).padStart(2,'0')+'.sha256','utf8'),hash);
