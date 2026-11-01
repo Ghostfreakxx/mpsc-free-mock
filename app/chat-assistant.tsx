@@ -42,6 +42,8 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
   const [isOpen, setIsOpen] = useState(initialOpen);
   const [draft, setDraft] = useState("");
   const [isSending, setIsSending] = useState(false);
+  // True once a streamed answer has started, so the "thinking" row gives way to the answer.
+  const [isStreaming, setIsStreaming] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([openingMessage]);
   const launcherRef = useRef<HTMLButtonElement>(null);
   const returnFocusRef = useRef<HTMLElement | null>(null);
@@ -57,7 +59,8 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
 
   useEffect(() => {
     if (!isOpen) return;
-    inputRef.current?.focus();
+    // On phones, focusing would pop the keyboard up over the chat as it opens; there the student taps the box.
+    if (window.matchMedia("(pointer: fine)").matches) inputRef.current?.focus();
 
     function closeOnEscape(event: globalThis.KeyboardEvent) {
       if (event.key === "Escape") {
@@ -107,6 +110,27 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
             .map(({ role, content: messageContent }) => ({ role, content: messageContent })),
         }),
       });
+
+      // AI answers stream in as plain text, so the first words show while the rest is written.
+      if (response.ok && response.body && (response.headers.get("content-type") ?? "").startsWith("text/plain")) {
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        let answer = "";
+        for (;;) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          const firstWords = !answer;
+          answer += decoder.decode(value, { stream: true });
+          if (firstWords) setIsStreaming(true);
+          const content = answer;
+          setMessages((current) => firstWords
+            ? [...current, { role: "assistant", content, mode: "ai" }]
+            : [...current.slice(0, -1), { ...current[current.length - 1], content }]);
+        }
+        if (!answer.trim()) throw new AssistantError("The assistant could not answer that just now.");
+        return;
+      }
+
       const result = (await response.json().catch(() => ({}))) as {
         reply?: string;
         links?: ChatLink[];
@@ -141,6 +165,7 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
       ]);
     } finally {
       setIsSending(false);
+      setIsStreaming(false);
     }
   }
 
@@ -225,7 +250,7 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
               </div>
             )}
 
-            {isSending && (
+            {isSending && !isStreaming && (
               <div className="assistant-message-row is-assistant" role="status">
                 <span className="assistant-message-icon"><Sparkles size={15} /></span>
                 <div className="assistant-bubble assistant-typing"><LoaderCircle size={17} className="assistant-spinner" />Thinking through it…</div>

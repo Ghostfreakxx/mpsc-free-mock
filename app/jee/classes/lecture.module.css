@@ -110,3 +110,51 @@
 
 /* Long scientific expressions in notes must wrap on narrow screens. */
 .reading, .notes { overflow-wrap: anywhere; }
+
+/* Dark theme, hand-written part. The class board and its diagrams stay light paper (their drawings
+   have colours built in), so they keep dark ink. The generated part below is from
+   scripts/dark-theme.mjs. */
+:global(html[data-theme="dark"]) .board { color: #203a34; }
+:global(html[data-theme="dark"]) .board .clarification { border-top-color: #b65737; color: #713c2b; }
+:global(html[data-theme="dark"]) .studyFigure img { border-radius: 6px; background: #f5faf7; }
+
+/* dark-theme:generated:start (edit the light rules, then run node scripts/dark-theme.mjs) */
+:global(html[data-theme="dark"]) .page { color: #cbeae1; background: #1b1f1c; }
+:global(html[data-theme="dark"]) .header { border-bottom: 1px solid #29312d; }
+:global(html[data-theme="dark"]) .page a { color: #8edbbf; }
+:global(html[data-theme="dark"]) .heading p { color: #a5cdbf; }
+:global(html[data-theme="dark"]) .heading span { color: #b2c6be; }
+:global(html[data-theme="dark"]) .player { border: 1px solid #2b3831; }
+:global(html[data-theme="dark"]) .caption { color: #ffffff; background: #232c28; }
+:global(html[data-theme="dark"]) .page button { background: #1b1f1c; border: 1px solid #303b35; color: #b4e1d0; }
+:global(html[data-theme="dark"]) .page button[aria-pressed=true] { background: #14211c; }
+:global(html[data-theme="dark"]) .page button:focus-visible, :global(html[data-theme="dark"]) .page a:focus-visible, :global(html[data-theme="dark"]) .page select:focus-visible { outline: 3px solid #71bffe; }
+:global(html[data-theme="dark"]) .controls select { border: 1px solid #303b35; background: #1b1f1c; }
+:global(html[data-theme="dark"]) .outline li { border-bottom: 1px solid #272d29; }
+:global(html[data-theme="dark"]) .outline button[aria-current] { background: #151d1a; box-shadow: inset 3px 0 #7ad4b0; }
+:global(html[data-theme="dark"]) .outline time, :global(html[data-theme="dark"]) .outline button > span { color: #abc3b6; }
+:global(html[data-theme="dark"]) .notes, :global(html[data-theme="dark"]) .quiz { border-top: 1px solid #29312c; }
+:global(html[data-theme="dark"]) .notes > p, :global(html[data-theme="dark"]) .quiz > p { color: #b1c7bb; }
+:global(html[data-theme="dark"]) .quiz fieldset { border-bottom: 1px solid #272d29; }
+:global(html[data-theme="dark"]) .quiz input { accent-color: #80d5b5; }
+:global(html[data-theme="dark"]) .correct { color: #8cdcb1; }
+:global(html[data-theme="dark"]) .incorrect { color: #fdaf9c; }
+:global(html[data-theme="dark"]) .clarification { border-top: 2px solid #c96848; color: #fdc1ad; }
+:global(html[data-theme="dark"]) .library article { border-top: 1px solid #29312c; }
+:global(html[data-theme="dark"]) .subjects { border-bottom: 1px solid #29312c; }
+:global(html[data-theme="dark"]) .courseMap > li { border-bottom: 1px solid #272d29; }
+:global(html[data-theme="dark"]) .courseMap summary { color: #95d9b3; }
+:global(html[data-theme="dark"]) .partial { color: #fdaf9c; }
+:global(html[data-theme="dark"]) .planned { color: #b2c6be; }
+:global(html[data-theme="dark"]) .contents { border-bottom: 1px solid #29312c; }
+:global(html[data-theme="dark"]) .reading section { border-bottom: 1px solid #29312c; }
+:global(html[data-theme="dark"]) .reading .studyFormula { color: #9ad0fe; border-left: 3px solid #336a96; }
+:global(html[data-theme="dark"]) .studyFigure figcaption { color: #b2c6be; }
+:global(html[data-theme="dark"]) .library p { color: #b2c6be; }
+:global(html[data-theme="dark"]) .lessonNumber { color: #9ad0fe; background: #13181b; }
+:global(html[data-theme="dark"]) .library article:nth-child(2) .lessonNumber { color: #ffab93; background: #1d1613; }
+:global(html[data-theme="dark"]) .savedProgress progress { accent-color: #9ad0fe; }
+:global(html[data-theme="dark"]) .quiz .saveStatus { color: #b2c6be; }
+:global(html[data-theme="dark"]) .recordingGroup { border-top: 1px solid #2e3338; }
+:global(html[data-theme="dark"]) .recordingGroup > summary small { color: #b8c8d7; }
+/* dark-theme:generated:end */

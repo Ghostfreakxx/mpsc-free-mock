@@ -93,28 +93,53 @@ function parseMessages(value: unknown): ChatMessage[] | null {
   return messages.slice(-MAX_MESSAGES);
 }
 
-function extractResponseText(payload: unknown) {
-  if (typeof payload !== "object" || payload === null || !("output" in payload)) return "";
-  const output = payload.output;
-  if (!Array.isArray(output)) return "";
+const instructions =
+  "You are the MPSC study mentor for a learning platform built for students in Mizoram. Be warm, concise, practical, and teach reasoning rather than only giving answers. Help with study planning, concept explanations, and reviewing practice mistakes. The platform has MPSC practice at /mock-test, a student dashboard and planner at /, college notes at /college-notes, NEET practice at /neet, JEE Main practice at /jee, and CUET PG practice at /cuet-pg. Do not claim access to the student's scores or saved plan. Never invent current MPSC syllabus rules, exam dates, notifications, or current affairs; flag time-sensitive details and ask the learner to verify an official notice. If a question is ambiguous, ask one focused follow-up.";
 
-  return output
-    .flatMap((item) => {
-      if (typeof item !== "object" || item === null || !("content" in item)) return [];
-      return Array.isArray(item.content) ? item.content : [];
-    })
-    .filter(
-      (item): item is { type: string; text: string } =>
-        typeof item === "object" &&
-        item !== null &&
-        "type" in item &&
-        item.type === "output_text" &&
-        "text" in item &&
-        typeof item.text === "string",
-    )
-    .map((item) => item.text)
-    .join("\n")
-    .trim();
+// Ask for a short reasoning step so the first words arrive sooner. A model that does not take the
+// setting rejects it; the route then retries without it and stops sending it until a restart.
+let reasoningSupported = true;
+
+function requestAnswer(apiKey: string, messages: ChatMessage[], withReasoning: boolean) {
+  const base = process.env.OPENAI_BASE_URL || "https://api.openai.com/v1";
+  return fetch(`${base}/responses`, {
+    method: "POST",
+    headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
+    body: JSON.stringify({
+      model: process.env.OPENAI_MODEL || "gpt-5.6-luna",
+      instructions,
+      input: messages,
+      max_output_tokens: 450,
+      store: false,
+      stream: true,
+      ...(withReasoning ? { reasoning: { effort: "low" } } : {}),
+    }),
+    signal: AbortSignal.timeout(25_000),
+  });
+}
+
+// Reads the Responses API event stream and yields the answer's text as it is written.
+async function* answerText(body: ReadableStream<Uint8Array>) {
+  const reader = body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = "";
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) return;
+    buffer += decoder.decode(value, { stream: true }).replace(/\r\n/g, "\n");
+    let boundary: number;
+    while ((boundary = buffer.indexOf("\n\n")) >= 0) {
+      const event = buffer.slice(0, boundary);
+      buffer = buffer.slice(boundary + 2);
+      const data = event.split("\n").filter(line => line.startsWith("data:")).map(line => line.slice(5).trim()).join("");
+      if (!data || data === "[DONE]") continue;
+      let parsed: unknown;
+      try { parsed = JSON.parse(data); } catch { continue; }
+      if (!parsed || typeof parsed !== "object" || !("type" in parsed)) continue;
+      if (parsed.type === "response.output_text.delta" && "delta" in parsed && typeof parsed.delta === "string") yield parsed.delta;
+      else if (parsed.type === "error" || parsed.type === "response.failed") throw new Error(`Responses API stream reported ${parsed.type}`);
+    }
+  }
 }
 
 export async function POST(request: Request) {
@@ -171,28 +196,47 @@ export async function POST(request: Request) {
   }
 
   try {
-    const response = await fetch("https://api.openai.com/v1/responses", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
+    let response = await requestAnswer(apiKey, messages, reasoningSupported);
+    if (response.status === 400 && reasoningSupported) {
+      const detail = await response.text().catch(() => "");
+      if (/reasoning/i.test(detail)) {
+        reasoningSupported = false;
+        response = await requestAnswer(apiKey, messages, false);
+      }
+    }
+    if (!response.ok || !response.body) throw new Error(`Responses API returned ${response.status}`);
+
+    // Wait for the first words before committing to a streamed answer, so an early failure can
+    // still fall back to the built-in guidance as a normal JSON reply.
+    const text = answerText(response.body);
+    const first = await text.next();
+    if (first.done || !first.value) throw new Error("Responses API returned no text");
+
+    const encoder = new TextEncoder();
+    let length = first.value.length;
+    const stream = new ReadableStream<Uint8Array>({
+      start(controller) { controller.enqueue(encoder.encode(first.value)); },
+      async pull(controller) {
+        try {
+          const next = await text.next();
+          if (next.done) { controller.close(); return; }
+          // The client sends answers back as history, which allows at most 4,000 characters.
+          const room = MAX_ASSISTANT_MESSAGE_LENGTH - 80 - length;
+          if (room <= 0) { await text.return(undefined); controller.close(); return; }
+          const piece = next.value.slice(0, room);
+          length += piece.length;
+          controller.enqueue(encoder.encode(piece));
+        } catch (error) {
+          console.error("MPSC study assistant stream failed:", error);
+          controller.enqueue(encoder.encode("\n\n(The answer was cut short. Please ask again.)"));
+          controller.close();
+        }
       },
-      body: JSON.stringify({
-        model: process.env.OPENAI_MODEL || "gpt-5.6-luna",
-        instructions:
-          "You are the MPSC study mentor for a learning platform built for students in Mizoram. Be warm, concise, practical, and teach reasoning rather than only giving answers. Help with study planning, concept explanations, and reviewing practice mistakes. The platform has MPSC practice at /mock-test, a student dashboard and planner at /, college notes at /college-notes, NEET practice at /neet, JEE Main practice at /jee, and CUET PG practice at /cuet-pg. Do not claim access to the student's scores or saved plan. Never invent current MPSC syllabus rules, exam dates, notifications, or current affairs; flag time-sensitive details and ask the learner to verify an official notice. If a question is ambiguous, ask one focused follow-up.",
-        input: messages,
-        max_output_tokens: 450,
-        store: false,
-      }),
-      signal: AbortSignal.timeout(25_000),
+      async cancel() { await text.return(undefined); },
     });
-
-    if (!response.ok) throw new Error(`Responses API returned ${response.status}`);
-    const reply = extractResponseText(await response.json());
-    if (!reply) throw new Error("Responses API returned no text");
-
-    return json({ reply, links: [], mode: "ai" });
+    return new Response(stream, {
+      headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store", "X-Chat-Mode": "ai" },
+    });
   } catch (error) {
     console.error("MPSC study assistant request failed:", error);
     return json({ ...offlineGuidance(prompt), mode: "offline" });

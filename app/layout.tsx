@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import "./theme-dark.css";
+import { themeInitScript } from "./theme";
 import ServiceWorkerRegister from "./service-worker-register";
 import ChatLauncher from "./chat-launcher";
 
@@ -41,16 +43,27 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  themeColor: "#173e34",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
+    // Dark by default. The head script switches to light before the first paint when a student chose
+    // it, so this one attribute may differ from the server's HTML.
     <html
       lang="en"
+      data-theme="dark"
       className={`${geistSans.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
+      <head>
+        <script>{themeInitScript}</script>
+      </head>
       <body className="min-h-full flex flex-col">
         <ServiceWorkerRegister />
         {children}

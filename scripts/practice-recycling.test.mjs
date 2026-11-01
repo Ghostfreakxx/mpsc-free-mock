@@ -55,7 +55,7 @@ test("fresh numbers stay clean: whole rupees, kilometres and hours where the ban
     for (const seed of seeds.slice(0, 20)) {
       const variant = makeVariant(question.question, seed);
       if (!variant) continue;
-      assert.match(variant.answer, /^(Rs )?\d+(\.\d{1,2})?( km\/h| km| hours| days|%)?$/, `${question.id}: ${variant.answer}`);
+      assert.match(variant.answer, /^(Rs )?\d+(\.\d{1,2})?( km\/h| km| hours| days| kg| litres|%)?$/, `${question.id}: ${variant.answer}`);
     }
   }
 });

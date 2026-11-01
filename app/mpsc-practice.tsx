@@ -25,6 +25,7 @@ import {
 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import InstallAppButton from "./install-app-button";
+import ThemeToggle from "./theme-toggle";
 import { useQuestionRotation } from "./lib/use-question-rotation";
 
 const noQuestions: PracticeQuestion[] = [];
@@ -208,6 +209,7 @@ return (
             aria-label="Open MPSC study assistant"
             title="Open study assistant"
           ><MessageCircle size={18} /></button>
+          <ThemeToggle />
           <Link href="/" className="icon-button practice-back" aria-label="Back to learning space" title="Back to learning space"><ArrowLeft size={18} /></Link>
         </div>
       </header>

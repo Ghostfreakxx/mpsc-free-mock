@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import InstallAppButton from "./install-app-button";
+import ThemeToggle from "./theme-toggle";
 import { practiceKeyHash } from "./lib/practice-key";
 import {
   Activity,
@@ -386,6 +387,7 @@ export default function StudentDashboard({ reviewedKeyHashes }: { reviewedKeyHas
           </label>
           <div className="topbar-actions">
                     <span className="topbar-date"><CalendarDays size={15} />{today?.toLocaleDateString("en", { weekday: "short", month: "short", day: "numeric" })}</span>
+            <ThemeToggle />
             <InstallAppButton />
             <div className="notification-wrap">
               <button
@@ -471,7 +473,7 @@ export default function StudentDashboard({ reviewedKeyHashes }: { reviewedKeyHas
                   <h2>Small steps add up.</h2>
                   <p>Check off a study step each day to build a rhythm that lasts.</p>
                   <div className="focus-ring-row">
-                    <div className="focus-ring" style={{ background: `conic-gradient(#24745f ${completionRate * 3.6}deg, #e6ebe6 0deg)` }}><span><strong>{completionRate}%</strong><small>today</small></span></div>
+                    <div className="focus-ring" style={{ background: `conic-gradient(var(--ring-fill) ${completionRate * 3.6}deg, var(--ring-track) 0deg)` }}><span><strong>{completionRate}%</strong><small>today</small></span></div>
                     <div className="focus-ring-copy"><strong>{completedToday.length === tasks.length ? "Plan complete" : completedToday.length ? "Keep your pace" : "Ready when you are"}</strong><span>{completedToday.length === tasks.length ? "A solid day of preparation." : `${tasks.length - completedToday.length} ${tasks.length - completedToday.length === 1 ? "step" : "steps"} left in today’s plan.`}</span><button type="button" onClick={() => setView("planner")}>Open planner <ChevronRight size={15} /></button></div>
                   </div>
                   <div className="focus-footer"><Clock3 size={15} /><span>A little progress, repeated often.</span></div>

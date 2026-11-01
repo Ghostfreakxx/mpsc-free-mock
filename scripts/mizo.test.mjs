@@ -7,6 +7,7 @@ import { mizoManual } from "../app/data/mizo-manual.ts";
 import { batchFourTopics } from "../app/data/batch-four-topics.ts";
 import { batchFiveTopics } from "../app/data/batch-five-topics.ts";
 import { batchSixTopics } from "../app/data/batch-six-topics.ts";
+import { batchSevenTopics } from "../app/data/batch-seven-topics.ts";
 
 const questions = getReviewedQuestions("mpsc");
 const topicOf = q => q.id.replace(/-\d+$/, "");
@@ -15,6 +16,7 @@ const translatable = questions.filter(q => !mizoPendingTopicIds.has(topicOf(q)))
 const batchFour = new Set(batchFourTopics.map(topic => topic.id));
 const batchFive = new Set(batchFiveTopics.map(topic => topic.id));
 const batchSix = new Set(batchSixTopics.map(topic => topic.id));
+const batchSeven = new Set(batchSevenTopics.map(topic => topic.id));
 const batchThree = /^(union-polity|local-government|union-judiciary|public-finance|sixth-schedule|constitution-making|gandhi-national-movement|revolt-of-1857|india-location|climate-agreements|biodiversity-agreements|nutrition-vitamins|averages|ratio-proportion|discount-tax-commission)-\d+$/;
 
 test("English source bank is unchanged; source edits require translation review", () => {
@@ -24,8 +26,11 @@ test("English source bank is unchanged; source edits require translation review"
   // 2026-10-22: fourth batch added the same way; the earlier 678 are unchanged.
   // 2026-10-30: fifth batch added, all general studies with Mizo pending; the earlier 817 are unchanged.
   // 2026-10-31: sixth batch added the same way (two new aptitude topics also pending); the earlier 942 are unchanged.
-  assert.equal(createHash("sha256").update(JSON.stringify(questions)).digest("hex"), "3b603fadf87fbfe715885163a0082a678f972c307a3f4ca56ae8357ac4235d7d");
-  const beforeSix = questions.filter(q => !batchSix.has(topicOf(q)));
+  // 2026-11-01: seventh batch added the same way (two more aptitude topics pending); the earlier 1087 are unchanged.
+  assert.equal(createHash("sha256").update(JSON.stringify(questions)).digest("hex"), "90ca1ff635cfc56236b954bd964ba93155c55af2c1dda1b3c0d09d4716406741");
+  const beforeSeven = questions.filter(q => !batchSeven.has(topicOf(q)));
+  assert.equal(createHash("sha256").update(JSON.stringify(beforeSeven)).digest("hex"), "3b603fadf87fbfe715885163a0082a678f972c307a3f4ca56ae8357ac4235d7d");
+  const beforeSix = beforeSeven.filter(q => !batchSix.has(topicOf(q)));
   assert.equal(createHash("sha256").update(JSON.stringify(beforeSix)).digest("hex"), "1be029919e9a45a997a019f46cb2ac4d02d25aa5a931be598440754f96f1313d");
   const beforeFive = beforeSix.filter(q => !batchFive.has(topicOf(q)));
   assert.equal(createHash("sha256").update(JSON.stringify(beforeFive)).digest("hex"), "5a2a8990e7f85f4ab1f672a8255b1c251ac1e2a9735e170df8258165bf1f52a5");
@@ -38,7 +43,7 @@ test("English source bank is unchanged; source edits require translation review"
 });
 
 test("all 576 translatable questions and seventeen categories have complete draft translations", () => {
-  assert.equal(questions.length, 1087);
+  assert.equal(questions.length, 1216);
   assert.equal(translatable.length, 576);
   for (const q of translatable) {
     const original = structuredClone(q);
@@ -60,10 +65,10 @@ test("all 576 translatable questions and seventeen categories have complete draf
 });
 
 test("general-studies topics awaiting a fluent Mizo writer get no guessed translation", () => {
-  assert.equal(pending.length, 511);
+  assert.equal(pending.length, 640);
   for (const q of pending) assert.equal(getMizoTranslation(q), undefined, q.id);
-  // Only whole topics from the third to sixth batches are pending; none of the earlier translated bank is.
-  assert.ok(pending.every(q => batchThree.test(q.id) || batchFour.has(topicOf(q)) || batchFive.has(topicOf(q)) || batchSix.has(topicOf(q))));
+  // Only whole topics from the third to seventh batches are pending; none of the earlier translated bank is.
+  assert.ok(pending.every(q => batchThree.test(q.id) || batchFour.has(topicOf(q)) || batchFive.has(topicOf(q)) || batchSix.has(topicOf(q)) || batchSeven.has(topicOf(q))));
 });
 
 test("known answer positions remain aligned in both languages", () => {

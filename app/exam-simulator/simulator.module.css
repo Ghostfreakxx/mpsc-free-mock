@@ -106,3 +106,37 @@
   .actions .button { flex: 1 1 calc(50% - 8px); }
   .actions .spacer { display: none; }
 }
+
+/* Dark theme, hand-written part: variables that do two jobs in the light theme. The generated part
+   below is from scripts/dark-theme.mjs. */
+:global(html[data-theme="dark"]) .header a, :global(html[data-theme="dark"]) .timer { color: var(--green); }
+:global(html[data-theme="dark"]) .chip[aria-pressed="true"] { border-color: #2b7a62; background: #2b7a62; }
+:global(html[data-theme="dark"]) .answered { border-color: #2b8a6b; background: #2b8a6b; }
+:global(html[data-theme="dark"]) .option[aria-pressed="true"] .letter { border-color: #3d7893; background: #3d7893; }
+
+/* dark-theme:generated:start (edit the light rules, then run node scripts/dark-theme.mjs) */
+:global(html[data-theme="dark"]) .header { background: #1b1f1c; }
+:global(html[data-theme="dark"]) .panel { background: #1b1f1c; }
+:global(html[data-theme="dark"]) .choice { border: 1px solid #2c352f; background: #1b1f1c; }
+:global(html[data-theme="dark"]) .chip { border: 1px solid #2c352f; background: #1b1f1c; }
+:global(html[data-theme="dark"]) .chip[aria-pressed="true"] { color: #ffffff; }
+:global(html[data-theme="dark"]) .resume { border-color: #4b3704; background: #16130d; }
+:global(html[data-theme="dark"]) .examBar { background: #1b1f1c; }
+:global(html[data-theme="dark"]) .option { border: 1px solid #29302b; background: #1b1f1c; }
+:global(html[data-theme="dark"]) .option:hover { border-color: #395241; }
+:global(html[data-theme="dark"]) .option[aria-pressed="true"] { background: #14181a; }
+:global(html[data-theme="dark"]) .letter { border: 1px solid #313c35; }
+:global(html[data-theme="dark"]) .option[aria-pressed="true"] .letter { color: #ffffff; }
+:global(html[data-theme="dark"]) .cell, :global(html[data-theme="dark"]) .swatch { border: 1px solid #323a34; background: #1b1f1c; }
+:global(html[data-theme="dark"]) .not-visited { background: #1b1f1c; }
+:global(html[data-theme="dark"]) .not-answered { background: #221816; color: #feb3a5; }
+:global(html[data-theme="dark"]) .answered { color: #ffffff; }
+:global(html[data-theme="dark"]) .marked { border-color: #7c69b4; background: #7462ab; color: #ffffff; }
+:global(html[data-theme="dark"]) .answered-marked { border-color: #7c69b4; background: #7462ab; color: #ffffff; }
+:global(html[data-theme="dark"]) .backdrop { background: #1c423873; }
+:global(html[data-theme="dark"]) .dialog { background: #1b1f1c; }
+:global(html[data-theme="dark"]) .stat { background: #1b1f1c; }
+:global(html[data-theme="dark"]) .insight { background: #1b1f1c; }
+:global(html[data-theme="dark"]) .insight p { color: #bbd4c4; }
+:global(html[data-theme="dark"]) .reviewItem { border-left: 4px solid #323a34; background: #1b1f1c; }
+/* dark-theme:generated:end */
