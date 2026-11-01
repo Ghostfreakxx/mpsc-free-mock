@@ -1143,7 +1143,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "chemical-thermodynamics", subject: "Chemistry", unit: 4, number: "C04", title: chemicalThermodynamics.title,
-    description: "Thirty-five narrated chapters on cycle work, finite-body entropy, calorimeter calibration, consistent temperature corrections, energy balances and thermodynamic direction.",
+    description: "Thirty-nine narrated chapters on phase free energy, adiabatic irreversibility, vapour-pressure estimates, melting-pressure slopes and thermodynamic balances.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 4 foundation and worked applications with original practice. More complex ionic cycles, phase-dependent heat-capacity models and further mixed problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.chemical-thermodynamics.lecture.v1",
     audio: "/lectures/chemical-thermodynamics/narration-marin.mp3",
@@ -1153,7 +1153,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "solutions", subject: "Chemistry", unit: 5, number: "C05", title: solutions.title,
-    description: "Thirty-five narrated chapters on activity-corrected vapour pressure, partial molar volumes, supporting ionic strength and osmotic virial bias, solution balances and colligative properties.",
+    description: "Thirty-nine narrated chapters on phase splits, reaction-adjusted osmotic counts, Henry conventions, association equilibria and solution properties.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 5 foundation and worked applications with original practice. Detailed phase diagrams, quantitative nonideal activities and further mixed problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.solutions.lecture.v1",
     audio: "/lectures/solutions/narration-marin.mp3",

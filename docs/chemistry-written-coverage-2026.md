@@ -19,8 +19,8 @@ Questions are original practice, not represented as official PYQs.
 | 1 | [Mole Concept](/jee/classes/mole-concept) | 37 | 34 | 24 | 64 / 64 |
 | 2 | [Atomic Structure](/jee/classes/atomic-structure) | 37 | 34 | 24 | 66 / 66 |
 | 3 | [Chemical Bonding](/jee/classes/chemical-bonding) | 37 | 36 | 24 | 66 / 66 |
-| 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 35 | 37 | 24 | 58 / 58 |
-| 5 | [Solutions](/jee/classes/solutions) | 35 | 37 | 24 | 58 / 58 |
+| 4 | [Chemical Thermodynamics](/jee/classes/chemical-thermodynamics) | 39 | 41 | 27 | 66 / 66 |
+| 5 | [Solutions](/jee/classes/solutions) | 39 | 41 | 27 | 66 / 66 |
 | 6 | [Equilibrium](/jee/classes/equilibrium) | 37 | 37 | 28 | 66 / 66 |
 | 7 | [Redox and Electrochemistry](/jee/classes/redox-electrochemistry) | 38 | 39 | 28 | 66 / 66 |
 | 8 | [Chemical Kinetics](/jee/classes/chemical-kinetics) | 34 | 37 | 28 | 66 / 66 |
@@ -39,7 +39,7 @@ Questions are original practice, not represented as official PYQs.
 
 ## Latest expansion
 
-Periodic Trends adds four narrated chapters on lanthanoid contraction, contextual lower oxidation states, total versus valence electron inventories and polarization roles. The batch includes eight original questions, three worked examples and a core/valence electron-count diagram.
+Chemical Thermodynamics adds four narrated chapters on fusion free energy, entropy generation from adiabatic stirring, supporting Clausius–Clapeyron vapour-pressure estimates and local melting-pressure slopes. The batch includes eight original questions, three worked examples and a free-energy-versus-temperature graph.
 
 ## Remaining scope
 
@@ -53,7 +53,7 @@ claim that every historical preparation is required by the current syllabus.
 
 ## References and publication checks
 
-The new notes reference RSC matched-coordinate ionic radii, ACS lanthanoid-contraction comparisons, NCERT p-block and lithium trends, IUPAC terminology and University of British Columbia polarizability teaching. Numerical ledgers, diagrams and MCQs in this batch are original practice.
+The new notes reference OpenStax free energy and phase transitions, MIT insulated stirring and University of Texas phase-equilibrium relations. Supplied numerical datasets, diagrams and MCQs in this batch are original practice.
 
 Do not relabel written-only material as recorded until audio, aligned captions
 and player integration have been generated and validated. Required release checks
