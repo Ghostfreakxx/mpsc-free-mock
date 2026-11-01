@@ -132,13 +132,28 @@ Scan date: 2026-09-29. This scan decides which topics get new questions. It does
 | JEE Maths: continuity, conic sections, straight lines | `continuity`, `ellipse-hyperbola`, `straight-lines` | JEE |
 | NEET Biology: molecular basis of inheritance | `gene-expression` | NEET |
 
+## Seventh batch (2026-11-01)
+
+| Gap from the scan | Added (topic id) | Streams |
+|---|---|---|
+| MPSC: Indian polity | `centre-state-relations`, `fundamental-duties` | MPSC (English, Mizo pending), CUET PG |
+| MPSC: Indian history (medieval, modern) | `peasants-zamindars-state`, `social-reform-movements` | MPSC (English, Mizo pending), CUET PG |
+| MPSC: Indian geography (physiography, transport) | `india-physiography`, `transport-communication` | MPSC (English, Mizo pending), CUET PG |
+| MPSC: Indian economy since 1991 | `economic-reforms-1991` | MPSC (English, Mizo pending), CUET PG |
+| MPSC: disaster management and general science | `disaster-management`, `metals-non-metals` | MPSC (English, Mizo pending) |
+| MPSC Paper II aptitude | `boats-and-streams`, `mixtures-alligation` | MPSC (English, Mizo pending), CUET PG |
+| Physics: nuclei, oscillations, electric potential | `nuclei-radioactivity`, `simple-harmonic-motion`, `electric-potential` | JEE, NEET |
+| Chemistry: redox, carbonyl compounds | `redox-reactions`, `aldehydes-ketones` | JEE, NEET |
+| JEE Maths: applications of derivatives, statistics | `derivative-applications`, `statistics-dispersion` | JEE |
+| NEET Biology: classification, locomotion | `biological-classification`, `locomotion-movement` | NEET |
+
 ## Still open (next batches)
 
-- **MPSC:** Mizo drafts for every topic in `mizoPendingTopicIds`, from a fluent writer. After that, current events, Indian economic planning and the budget, world geography, and more physics in daily life.
-- **Physics:** communication systems, experimental skills.
-- **Chemistry:** p-block chemistry, biomolecules and polymers.
-- **JEE Maths:** applications of derivatives, area under curves, statistics.
-- **NEET Biology:** microbes in human welfare, plant kingdom classification, animal tissues.
+- **MPSC:** Mizo drafts for every topic in `mizoPendingTopicIds`, from a fluent writer. After that, current events, world geography, Mizoram's history and administration, and more physics in daily life.
+- **Physics:** communication systems, experimental skills, thermal properties of matter.
+- **Chemistry:** p-block chemistry, biomolecules and polymers, alcohols, phenols and ethers.
+- **JEE Maths:** area under curves, sets, relations and functions, inverse trigonometric functions.
+- **NEET Biology:** microbes in human welfare, plant kingdom, animal tissues and structural organisation.
 - **CUET PG:** per-subject depth in sociology, education and English is still thin.
 
 ## Analyses consulted

@@ -14,9 +14,10 @@ import { batchThreeTopics } from '../app/data/batch-three-topics.ts';
 import { batchFourTopics } from '../app/data/batch-four-topics.ts';
 import { batchFiveTopics } from '../app/data/batch-five-topics.ts';
 import { batchSixTopics } from '../app/data/batch-six-topics.ts';
+import { batchSevenTopics } from '../app/data/batch-seven-topics.ts';
 import { getMizoTranslation, mizoPendingTopicIds } from '../app/data/mizo-translations.ts';
 
-const foundationTopics = [...jeeTopics, ...neetTopics, ...highYieldTopics, ...patternBatchTopics, ...batchThreeTopics, ...batchFourTopics, ...batchFiveTopics, ...batchSixTopics];
+const foundationTopics = [...jeeTopics, ...neetTopics, ...highYieldTopics, ...patternBatchTopics, ...batchThreeTopics, ...batchFourTopics, ...batchFiveTopics, ...batchSixTopics, ...batchSevenTopics];
 const foundationCount = stream => foundationTopics.filter(topic => topic.streams.includes(stream)).reduce((total, topic) => total + topic.questions.length, 0);
 
 test('each stream retains its published expansion quota', () => {
@@ -474,4 +475,63 @@ test('sixth batch worked answers are independently recomputed', () => {
   assert.equal(answer('jee', 'ellipse-hyperbola-5'), `(±${Math.sqrt(16 + 9)}, 0)`);
   assert.equal(answer('jee', 'straight-lines-4'), String(Math.abs(-10) / Math.hypot(3, 4)));
   assert.equal(answer('jee', 'straight-lines-7'), String(Math.abs(5 - -10) / Math.hypot(3, 4)));
+});
+
+test('seventh batch topics are sourced, balanced and published to the intended streams', () => {
+  for (const topic of batchSevenTopics) {
+    assert.ok(topic.questions.length >= 10 && topic.notes.length > 0 && topic.pitfall, topic.id);
+    assert.equal(new URL(sources[topic.sourceId].url).protocol, 'https:', topic.id);
+    for (const stream of topic.streams) {
+      const published = getReviewedQuestions(stream).filter(question => question.id.startsWith(`${topic.id}-`));
+      assert.equal(published.length, topic.questions.length, `${topic.id} in ${stream}`);
+      assert.ok(new Set(published.map(question => question.options.indexOf(question.answer))).size >= 3, topic.id);
+    }
+    // Every MPSC topic in this batch is published in English with Mizo pending.
+    if (topic.streams.includes('mpsc')) {
+      assert.ok(mizoPendingTopicIds.has(topic.id), topic.id);
+      for (const question of getReviewedQuestions('mpsc').filter(q => q.id.startsWith(`${topic.id}-`))) assert.equal(getMizoTranslation(question), undefined, question.id);
+    }
+  }
+  for (const [stream, minimum] of Object.entries({ mpsc: 125, neet: 80, jee: 80, 'cuet-pg': 100 })) {
+    const fresh = getReviewedQuestions(stream).filter(question => batchSevenTopics.some(topic => question.id.startsWith(`${topic.id}-`)));
+    assert.ok(fresh.length >= minimum, `${stream} has ${fresh.length} seventh-batch questions`);
+  }
+});
+
+test('seventh batch worked answers are independently recomputed', () => {
+  const answer = (stream, id) => getReviewedQuestions(stream).find(question => question.id === id).answer;
+  const byPrompt = (stream, prompt) => getReviewedQuestions(stream).find(question => question.question === prompt).answer;
+  // Boats and streams: downstream = b + s, upstream = b - s.
+  assert.equal(byPrompt('mpsc', 'A boat goes downstream at 20 km/h and upstream at 12 km/h. What is the speed of the stream?'), `${(20 - 12) / 2} km/h`);
+  assert.equal(byPrompt('cuet-pg', 'A boat goes downstream at 22 km/h and upstream at 14 km/h. What is its speed in still water?'), `${(22 + 14) / 2} km/h`);
+  assert.equal(byPrompt('mpsc', 'A boat moves at 12 km/h in still water and the stream flows at 3 km/h. How many hours does it take to go 75 km downstream?'), `${75 / (12 + 3)} hours`);
+  assert.equal(byPrompt('mpsc', 'A boat moves at 9 km/h in still water against a stream of 2 km/h. How far upstream does it go in 5 hours?'), `${(9 - 2) * 5} km`);
+  // Mixtures: weighted strength, alligation, and water added with the milk unchanged.
+  assert.equal(byPrompt('mpsc', '2 litres of 20% acid solution is mixed with 3 litres of 50% acid solution. What is the acid percentage of the mixture?'), `${(2 * 20 + 3 * 50) / 5}%`);
+  assert.equal(byPrompt('cuet-pg', 'Rice costing Rs 40 per kg is mixed with rice costing Rs 60 per kg to make a mixture worth Rs 52 per kg. How many kg of the cheaper rice go with 12 kg of the dearer rice?'), `${(12 * (60 - 52)) / (52 - 40)} kg`);
+  assert.equal(byPrompt('mpsc', 'A mixture of 60 litres of milk and water is 10% water. How many litres of water must be added to make it 25% water?'), `${(60 * 0.9) / 0.75 - 60} litres`);
+  // Physics.
+  assert.equal(answer('jee', 'nuclei-radioactivity-1'), `1/${2 ** (15 / 5)}`);
+  assert.equal(answer('neet', 'nuclei-radioactivity-2'), `${8 / Math.log2(64 / 4)} hours`);
+  assert.equal(answer('jee', 'simple-harmonic-motion-3'), `${Math.sqrt(50 / 0.5)} rad/s`);
+  assert.equal(answer('neet', 'simple-harmonic-motion-10'), `${5 ** 2 * 0.2} m/s^2`);
+  assert.equal(answer('jee', 'electric-potential-2'), `${Math.round((9e9 * 2e-9) / 0.3)} V`);
+  assert.equal(answer('neet', 'electric-potential-3'), `${2 * 12} J`);
+  assert.equal(answer('jee', 'electric-potential-9'), `${500 * 0.02} V`);
+  // Oxidation numbers from the overall charge.
+  assert.equal(answer('jee', 'redox-reactions-2'), `+${0 - 1 + 4 * 2}`);
+  assert.equal(answer('neet', 'redox-reactions-3'), `+${(0 - 2 + 7 * 2) / 2}`);
+  assert.equal(answer('jee', 'redox-reactions-12'), `+${4 * 2}/3`);
+  // Mathematics.
+  const f = x => x ** 3 - 3 * x;
+  assert.ok(f(-1) > f(-1.01) && f(-1) > f(-0.99), 'derivative-applications-1: x = -1 is a local maximum');
+  assert.equal(answer('jee', 'derivative-applications-1'), 'x = -1');
+  assert.equal(answer('jee', 'derivative-applications-2'), String(3 ** 2 - 6 * 3 + 10));
+  assert.equal(answer('jee', 'derivative-applications-12'), `${2 * 5 * 2} pi cm^2/s`);
+  const data = [2, 4, 6, 8, 10], mean = data.reduce((a, b) => a + b) / data.length;
+  const variance = data.reduce((total, x) => total + (x - mean) ** 2, 0) / data.length;
+  assert.equal(answer('jee', 'statistics-dispersion-1'), String(mean));
+  assert.equal(answer('jee', 'statistics-dispersion-2'), String(variance));
+  assert.equal(Math.sqrt(variance), 2 * Math.SQRT2, 'statistics-dispersion-3');
+  assert.equal(answer('jee', 'statistics-dispersion-9'), `${(2 / 10) * 100}%`);
 });

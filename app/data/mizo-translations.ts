@@ -25,6 +25,9 @@ export const mizoPendingTopicIds = new Set([
   "mizoram-geography-culture", "citizenship", "official-language", "travellers-accounts", "thinkers-buildings", "partition",
   "india-agriculture", "india-population", "government-budget", "balance-of-payments", "human-health-disease",
   "biodiversity-conservation", "time-and-work", "compound-interest",
+  "centre-state-relations", "fundamental-duties", "social-reform-movements", "peasants-zamindars-state", "india-physiography",
+  "transport-communication", "economic-reforms-1991", "disaster-management", "metals-non-metals", "boats-and-streams",
+  "mixtures-alligation",
 ]);
 const topicIdOf = (questionId: string) => questionId.replace(/-\d+$/, "");
 

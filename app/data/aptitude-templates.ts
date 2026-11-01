@@ -25,6 +25,24 @@ const numbers = (pattern: RegExp) => (prompt: string) => {
   return match ? match.slice(1).map(Number) : null;
 };
 
+// A boat's speed in still water and a slower stream, never exactly half the boat's speed (which
+// would make two of the usual slips give the same option).
+function boatSample(rng: Rng, fastest = 30): [number, number] {
+  const boat = int(rng, 6, fastest);
+  let stream = int(rng, 1, Math.min(8, boat - 2));
+  if (2 * stream === boat) stream -= 1;
+  return [boat, stream];
+}
+
+// Tries random numbers until `accept` finds a clean set; `fallback` is a known clean one.
+function search(rng: Rng, draw: () => number[], accept: (values: number[]) => boolean, fallback: number[]): number[] {
+  for (let tries = 0; tries < 400; tries += 1) {
+    const values = draw();
+    if (accept(values)) return values;
+  }
+  return fallback;
+}
+
 // Principal and rate pairs whose two-year compound interest is a whole number of rupees.
 function compoundSample(rng: Rng): number[] {
   const [rate, unit, most] = pick(rng, [[10, 100, 100], [5, 400, 25], [20, 100, 50], [4, 2500, 4], [8, 2500, 4]] as const);
@@ -320,6 +338,91 @@ export const aptitude = {
       return [`What is the difference between compound interest and simple interest on Rs ${principal} at ${rate}% per year for 2 years?`, `Rs ${difference}`, [`Rs ${(principal * rate) / 100}`, `Rs ${round2(2 * difference)}`, `Rs ${round2(principal * (1 + rate / 100) ** 2 - principal)}`], `For 2 years the difference is P(r/100)^2 = ${principal} x (${rate}/100)^2 = Rs ${difference}: the interest earned on the first year's interest.`, "Section 6.4: compound interest"];
     },
     sample: rng => compoundSample(rng),
+  },
+  // Boats and streams; mixtures and alligation (batch-seven-topics.ts). Mizo drafts for these are pending.
+  streamSpeed: {
+    parse: numbers(/^A boat goes downstream at (\d+) km\/h and upstream at (\d+) km\/h\. What is the speed of the stream\?$/),
+    build: ([down, up]) => {
+      const stream = round((down - up) / 2), boat = round((down + up) / 2);
+      return [`A boat goes downstream at ${down} km/h and upstream at ${up} km/h. What is the speed of the stream?`, `${stream} km/h`, [`${boat} km/h`, `${down - up} km/h`, `${down} km/h`], `Downstream speed = boat + stream and upstream speed = boat - stream. Subtracting, the stream's speed is (${down} - ${up})/2 = ${stream} km/h.`, "Section 4.2: uniform motion applications"];
+    },
+    sample: rng => {
+      const [boat, stream] = boatSample(rng);
+      return [boat + stream, boat - stream];
+    },
+  },
+  stillWaterSpeed: {
+    parse: numbers(/^A boat goes downstream at (\d+) km\/h and upstream at (\d+) km\/h\. What is its speed in still water\?$/),
+    build: ([down, up]) => {
+      const stream = round((down - up) / 2), boat = round((down + up) / 2);
+      return [`A boat goes downstream at ${down} km/h and upstream at ${up} km/h. What is its speed in still water?`, `${boat} km/h`, [`${stream} km/h`, `${down + up} km/h`, `${down - up} km/h`], `Downstream (boat + stream) plus upstream (boat - stream) is twice the boat's speed, so it is (${down} + ${up})/2 = ${boat} km/h.`, "Section 4.2: uniform motion applications"];
+    },
+    sample: rng => {
+      const [boat, stream] = boatSample(rng);
+      return [boat + stream, boat - stream];
+    },
+  },
+  downstreamTime: {
+    parse: numbers(/^A boat moves at (\d+) km\/h in still water and the stream flows at (\d+) km\/h\. How many hours does it take to go (\d+) km downstream\?$/),
+    build: ([boat, stream, distance]) => {
+      const hours = round2(distance / (boat + stream));
+      return [`A boat moves at ${boat} km/h in still water and the stream flows at ${stream} km/h. How many hours does it take to go ${distance} km downstream?`, `${hours} hours`, [`${round2(distance / (boat - stream))} hours`, `${round2(distance / boat)} hours`, `${round2(distance / stream)} hours`], `Downstream the stream helps: ${boat} + ${stream} = ${boat + stream} km/h, so the time is ${distance}/${boat + stream} = ${hours} hours.`, "Section 4.2: uniform motion applications"];
+    },
+    sample: rng => {
+      const [boat, stream] = boatSample(rng, 24);
+      return [boat, stream, (boat + stream) * int(rng, 2, 6)];
+    },
+  },
+  upstreamDistance: {
+    parse: numbers(/^A boat moves at (\d+) km\/h in still water against a stream of (\d+) km\/h\. How far upstream does it go in (\d+) hours\?$/),
+    build: ([boat, stream, hours]) => {
+      const distance = (boat - stream) * hours;
+      return [`A boat moves at ${boat} km/h in still water against a stream of ${stream} km/h. How far upstream does it go in ${hours} hours?`, `${distance} km`, [`${(boat + stream) * hours} km`, `${boat * hours} km`, `${stream * hours} km`], `Upstream the stream slows it: ${boat} - ${stream} = ${boat - stream} km/h, so in ${hours} hours it goes ${boat - stream} x ${hours} = ${distance} km.`, "Section 4.2: uniform motion applications"];
+    },
+    sample: rng => [...boatSample(rng, 24), int(rng, 2, 6)],
+  },
+  mixturePercent: {
+    parse: numbers(/^(\d+) litres of (\d+)% acid solution is mixed with (\d+) litres of (\d+)% acid solution\. What is the acid percentage of the mixture\?$/),
+    build: ([a, p, b, q]) => {
+      const acid = round2((a * p + b * q) / 100), percent = round2((a * p + b * q) / (a + b));
+      return [`${a} litres of ${p}% acid solution is mixed with ${b} litres of ${q}% acid solution. What is the acid percentage of the mixture?`, `${percent}%`, [`${round2((p + q) / 2)}%`, `${acid}%`, `${p + q}%`], `Acid = ${a} x ${p}/100 + ${b} x ${q}/100 = ${acid} litres in ${a + b} litres, so the mixture is ${acid}/${a + b} x 100 = ${percent}% acid. Weight each strength by its volume instead of averaging the two percentages.`, "Section 4.3: mixture applications"];
+    },
+    sample: rng => search(rng,
+      () => [int(rng, 2, 20), 5 * int(rng, 1, 18), int(rng, 2, 20), 5 * int(rng, 1, 18)],
+      ([a, p, b, q]) => a !== b && p !== q && (a * p + b * q) % (a + b) === 0,
+      [4, 10, 6, 35]),
+  },
+  alligationQuantity: {
+    parse: numbers(/^Rice costing Rs (\d+) per kg is mixed with rice costing Rs (\d+) per kg to make a mixture worth Rs (\d+) per kg\. How many kg of the cheaper rice go with (\d+) kg of the dearer rice\?$/),
+    build: ([cheap, dear, mean, dearKg]) => {
+      const cheapKg = round2((dearKg * (dear - mean)) / (mean - cheap));
+      return [`Rice costing Rs ${cheap} per kg is mixed with rice costing Rs ${dear} per kg to make a mixture worth Rs ${mean} per kg. How many kg of the cheaper rice go with ${dearKg} kg of the dearer rice?`, `${cheapKg} kg`, [`${round2((dearKg * (mean - cheap)) / (dear - mean))} kg`, `${dearKg} kg`, `${round2((dearKg * (dear - mean)) / (dear - cheap))} kg`], `By alligation, cheaper : dearer = (${dear} - ${mean}) : (${mean} - ${cheap}) = ${dear - mean} : ${mean - cheap}, so ${dearKg} kg of the dearer rice needs ${dearKg} x ${dear - mean}/${mean - cheap} = ${cheapKg} kg of the cheaper.`, "Section 4.3: mixture applications"];
+    },
+    sample: rng => search(rng,
+      () => {
+        const cheap = int(rng, 20, 60), dear = cheap + int(rng, 6, 30), mean = int(rng, cheap + 1, dear - 1);
+        return [cheap, dear, mean, (mean - cheap) * int(rng, 1, 6)];
+      },
+      ([cheap, dear, mean]) => dear - mean !== mean - cheap,
+      [30, 45, 35, 10]),
+  },
+  addWater: {
+    parse: numbers(/^A mixture of (\d+) litres of milk and water is (\d+)% water\. How many litres of water must be added to make it (\d+)% water\?$/),
+    build: ([total, p, q]) => {
+      const milk = round2((total * (100 - p)) / 100), newTotal = round2((milk * 100) / (100 - q)), added = round2(newTotal - total);
+      return [`A mixture of ${total} litres of milk and water is ${p}% water. How many litres of water must be added to make it ${q}% water?`, `${added} litres`, [`${round2((total * (q - p)) / 100)} litres`, `${q - p} litres`, `${newTotal} litres`], `The milk stays at ${total} x ${100 - p}/100 = ${milk} litres. At ${q}% water, milk is ${100 - q}% of the mixture, so the new total is ${milk} x 100/${100 - q} = ${newTotal} litres; add ${newTotal} - ${total} = ${added} litres of water.`, "Section 4.3: mixture applications"];
+    },
+    sample: rng => search(rng,
+      () => {
+        const p = 5 * int(rng, 1, 8);
+        return [10 * int(rng, 2, 12), p, p + 5 * int(rng, 1, 6)];
+      },
+      ([total, p, q]) => {
+        if ((total * (100 - p)) % (100 - q)) return false;
+        const added = (total * (100 - p)) / (100 - q) - total;
+        return new Set([added, (total * (q - p)) / 100, q - p]).size === 3;
+      },
+      [40, 10, 25]),
   },
 } satisfies Record<string, AptitudeTemplate>;
 
