@@ -12,6 +12,8 @@
   --blue: #537d92;
   --gold: #ad8130;
   --white: #ffffff;
+  --ring-fill: #24745f;
+  --ring-track: #e6ebe6;
 }
 
 @theme inline {
@@ -519,22 +521,6 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
   --chat-link: #1d6a52;
   --chat-shadow: 0 22px 60px #12302440, 0 4px 14px #12302422;
   --chat-header: linear-gradient(135deg, #173e34 0%, #24745f 100%);
-}
-@media (prefers-color-scheme: dark) {
-  .assistant-widget {
-    --chat-surface: #18231f;
-    --chat-canvas: #101916;
-    --chat-text: #e7f1ec;
-    --chat-muted: #a9bcb3;
-    --chat-border: #2d3e37;
-    --chat-accent: #4fbf98;
-    --chat-accent-strong: #7fd8b8;
-    --chat-accent-soft: #213a31;
-    --chat-user-text: #08130f;
-    --chat-link: #8be0c0;
-    --chat-shadow: 0 22px 60px #000000a0, 0 4px 14px #00000066;
-    --chat-header: linear-gradient(135deg, #0f2a22 0%, #1d5a48 100%);
-  }
 }
 .assistant-launcher { position: fixed; right: 22px; bottom: 22px; z-index: 50; display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-width: 58px; height: 58px; padding: 0 20px 0 18px; border: 2px solid #ffffff; border-radius: 999px; background: var(--chat-header); color: #fff; font-size: 15px; font-weight: 700; box-shadow: 0 8px 24px #0f2d2258, 0 0 0 4px #24745f26; cursor: pointer; transition: transform .16s ease, box-shadow .16s ease; }
 .assistant-launcher:hover { transform: translateY(-2px); box-shadow: 0 12px 28px #0f2d2266, 0 0 0 5px #24745f33; }

@@ -16,7 +16,9 @@ Practice rotates through each selected question pool without repeating a fresh q
 
 Run `npm run validate:banks` to check question options, answers, explanations and duplicate prompts. Run `npm run test:question-rotation` to test round exhaustion, retries and saved progress, and `npm run test:exam-simulator` to test paper selection, timing and scoring.
 
-The MPSC study assistant works with built-in study guidance when no AI key is configured. To enable generated tutoring responses, set `OPENAI_API_KEY` in the server environment. It defaults to `gpt-5.6-luna`; optionally set `OPENAI_MODEL` to choose another API-supported model. Responses API state storage is disabled for tutoring calls. Never expose the key in a `NEXT_PUBLIC_` variable.
+The MPSC study assistant works with built-in study guidance when no AI key is configured. To enable generated tutoring responses, set `OPENAI_API_KEY` in the server environment. It defaults to `gpt-5.6-luna`; optionally set `OPENAI_MODEL` to choose another API-supported model. Responses API state storage is disabled for tutoring calls. Never expose the key in a `NEXT_PUBLIC_` variable. Answers stream to the student as they are written, so the first words appear within a second or so. `OPENAI_BASE_URL` (default `https://api.openai.com/v1`) points the assistant at another Responses-compatible endpoint, such as a test server.
+
+The site is dark by default; students can switch to the light theme from the sun/moon button in the top bar, and the choice is saved on their device. Write styles for the light theme; `npm run theme` regenerates the dark rules (`scripts/dark-theme.mjs`), and `npm test` fails if they are out of date.
 
 ## Local Development
 

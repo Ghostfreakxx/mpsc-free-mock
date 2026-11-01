@@ -15,6 +15,7 @@ import {
   RotateCw,
 } from "lucide-react";
 import InstallAppButton from "./install-app-button";
+import ThemeToggle from "./theme-toggle";
 import type { PracticeQuestion } from "./data/practice-data";
 import QuestionSource from "./question-source";
 import RoundNotice, { type RoundNoticeProps } from "./round-notice";
@@ -138,6 +139,7 @@ export default function ExamPracticeShell({
               aria-label="Open study assistant"
               title="Open study assistant"
             ><MessageCircle size={18} /></button>
+            <ThemeToggle />
             <InstallAppButton />
             <Link href="/" className="icon-button practice-back" aria-label="Back to learning space" title="Back to learning space"><ArrowLeft size={18} /></Link>
           </div>

@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { useMemo, useState } from "react";
 import InstallAppButton from "../install-app-button";
+import ThemeToggle from "../theme-toggle";
 
 type Note = {
   title: string;
@@ -2619,6 +2620,7 @@ export default function CollegeNotesPage({ downloadAnchors }: { downloadAnchors:
           <p className="practice-breadcrumb">Library <span>/</span> College notes</p>
           <div className="topbar-actions">
             <button type="button" className="icon-button practice-chat-trigger" onClick={() => window.dispatchEvent(new Event("mpsc-open-assistant"))} aria-label="Open MPSC study assistant" title="Open study assistant"><MessageCircle size={18} /></button>
+            <ThemeToggle />
             <InstallAppButton />
             <Link href="/" className="icon-button practice-back" aria-label="Back to learning space" title="Back to learning space"><ArrowLeft size={18} /></Link>
           </div>

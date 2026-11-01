@@ -40,3 +40,12 @@ Many students use phones on slow mobile data, so keep each page's download small
 - Links to heavy pages such as `/jee/classes` use `prefetch={false}`.
 - Keep saved-progress keys unchanged when you refactor a practice page, so students keep their progress.
 - Practice recycles questions automatically: options are reshuffled each showing, aptitude questions come back with fresh numbers, and missed questions collect in "My mistakes" (`app/lib/question-presentation.ts`, `app/lib/practice-progress.ts`). Write new aptitude questions as templates in `app/data/aptitude-templates.ts` (with Mizo in `app/data/mizo-aptitude.ts` once a fluent writer drafts it) so they recycle too; `npm test` checks that every template rebuilds its bank questions exactly. Both files are loaded in the browser, so keep them free of bank imports.
+
+# Theme rules
+
+The site is dark by default, with a light theme students can choose (saved per device under `mpsc-theme`).
+
+- Write colours for the light theme in `app/globals.css` or the CSS module, then run `npm run theme`. `scripts/dark-theme.mjs` generates the matching dark rules, and `npm test` fails while they are out of date. A new CSS module with colours goes into that script's `targets`.
+- Colours a formula cannot judge go in the hand-written parts of `app/theme-dark.css` or of the module (after the generated block to override a generated rule). Never edit inside the generated markers.
+- Do not put colours in inline styles or SVG outside the JEE class boards; use a CSS variable (as the dashboard's progress ring does). Class boards and diagrams stay light "paper" in both themes.
+- Check new screens in both themes at 360px: text needs 4.5:1 contrast against its background.
