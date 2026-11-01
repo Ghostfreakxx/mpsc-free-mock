@@ -18,7 +18,7 @@ test('Born-Haber signs, integrated heat capacity and mixing entropy close indepe
 });
 test('component, membrane, partial-pressure and solvent inventories remain conserved',()=>{
  const data=read('solutions');
- assert.deepEqual(data.quiz.slice(26).map(q=>q.answer),[1,2,3,0,1,2,3,0,2,3,0,1,2,3,0,1,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]);
+ assert.deepEqual(data.quiz.slice(26).map(q=>q.answer),[1,2,3,0,1,2,3,0,2,3,0,1,2,3,0,1,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]);
  const A=6-.8,B=4-.2;near(A+B,9);near(A/(A+B),.5777777777777778);
  const C=(.010+.020)/.200,left=.010/C,right=.020/C;
  near(C,.150);near(left+right,.200);near(.100-left,right-.100);near(.010/left,.020/right);

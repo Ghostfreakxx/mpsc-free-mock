@@ -1153,7 +1153,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "solutions", subject: "Chemistry", unit: 5, number: "C05", title: solutions.title,
-    description: "Thirty-five narrated chapters on activity-corrected vapour pressure, partial molar volumes, supporting ionic strength and osmotic virial bias, solution balances and colligative properties.",
+    description: "Thirty-nine narrated chapters on phase splits, reaction-adjusted osmotic counts, Henry conventions, association equilibria and solution properties.",
     scope: "Recorded JEE Main 2026 Chemistry Unit 5 foundation and worked applications with original practice. Detailed phase diagrams, quantitative nonideal activities and further mixed problems remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.solutions.lecture.v1",
     audio: "/lectures/solutions/narration-marin.mp3",

@@ -1,3 +1,4 @@
+import{extendSolutionPhaseParticleBalancesLesson}from'./solution-phase-particle-balances-study.ts';
 import{extendThermoSolutionNonidealLesson}from'./thermo-solution-nonideal-study.ts';
 import { extendThermoSolutionPhaseLedgersLesson } from './thermo-solution-phase-ledgers-study.ts';
 import { extendThermalPhaseEvidenceLesson } from './thermal-phase-evidence-study.ts';
@@ -148,3 +149,5 @@ for (const lesson of physicalChemistryLessons) extendThermalPhaseEvidenceLesson(
 for (const lesson of physicalChemistryLessons) extendThermoSolutionPhaseLedgersLesson(lesson);
 
 for(const lesson of physicalChemistryLessons)extendThermoSolutionNonidealLesson(lesson);
+
+for(const lesson of physicalChemistryLessons)extendSolutionPhaseParticleBalancesLesson(lesson);

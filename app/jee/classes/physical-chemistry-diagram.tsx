@@ -1,3 +1,5 @@
+import SolutionPhaseParticleBalancesDiagram from './solution-phase-particle-balances-diagram';
+import{solutionPhaseParticleBalancesAdditions}from'./solution-phase-particle-balances-additions';
 import ThermoSolutionNonidealDiagram from './thermo-solution-nonideal-diagram';
 import{thermoSolutionNonidealAdditions}from'./thermo-solution-nonideal-additions';
 import PhaseLedgerDiagram from './phase-ledger-diagram';
@@ -18,6 +20,7 @@ const headings={
 };
 
 export default function PhysicalChemistryDiagram({lesson,chapter}:{lesson:keyof typeof headings;chapter:number}) {
+ if(lesson==='solutions'&&chapter===35)return <SolutionPhaseParticleBalancesDiagram/>;
  if(chapter===31)return <ThermoSolutionNonidealDiagram kind={lesson==='chemical-thermodynamics'?'cycle':'vapour'}/>;
  if(lesson==='chemical-thermodynamics' && chapter===30)return <PhaseLedgerDiagram kind="enthalpy"/>;
  if(lesson==='solutions' && chapter===27)return <PhaseLedgerDiagram kind="dew"/>;
@@ -25,7 +28,7 @@ export default function PhysicalChemistryDiagram({lesson,chapter}:{lesson:keyof 
  if (lesson === "chemical-thermodynamics" && chapter === 17) return <ReservoirEntropyDiagram/>;
  if (lesson === "chemical-thermodynamics" && chapter === 19) return <BornHaberCycleDiagram/>;
  if (chapter >= 5) {
-  const board = chapter >= 31 ? thermoSolutionNonidealAdditions[lesson].chapters[chapter-31].board : chapter >= 27 ? thermoSolutionPhaseLedgersAdditions[lesson].chapters[chapter-27].board : chapter >= 23 ? thermalPhaseEvidenceAdditions[lesson].chapters[chapter - 23].board : chapter >= 19 ? thermoSolutionProcessesAdditions[lesson].chapters[chapter - 19].board : chapter >= 15 ? thermoSolutionBalancesAdditions[lesson].chapters[chapter - 15].board : chapter >= 10 ? pBlockThermoSolutionsAdditions[lesson].chapters[chapter - 10].board : physicalChemistryAdditions[lesson].chapters[chapter - 5].board;
+  const board = lesson==='solutions'&&chapter>=35 ? solutionPhaseParticleBalancesAdditions.chapters[chapter-35].board : chapter >= 31 ? thermoSolutionNonidealAdditions[lesson].chapters[chapter-31].board : chapter >= 27 ? thermoSolutionPhaseLedgersAdditions[lesson].chapters[chapter-27].board : chapter >= 23 ? thermalPhaseEvidenceAdditions[lesson].chapters[chapter - 23].board : chapter >= 19 ? thermoSolutionProcessesAdditions[lesson].chapters[chapter - 19].board : chapter >= 15 ? thermoSolutionBalancesAdditions[lesson].chapters[chapter - 15].board : chapter >= 10 ? pBlockThermoSolutionsAdditions[lesson].chapters[chapter - 10].board : physicalChemistryAdditions[lesson].chapters[chapter - 5].board;
   return <svg className={styles.diagram} viewBox="0 0 460 310" role="img" aria-label={board.heading}>
    <title>{board.heading}</title><rect width="460" height="310" rx="12" fill="#f5faf7" />
    <g fill="#20483e" fontFamily="Arial, sans-serif" fontSize="14">
