@@ -10,6 +10,7 @@ try {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
   const cases = [
+    ['Mathematics', 'sequences-series', 14, [1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],
     ['Mathematics', 'binomial-theorem', 14, [1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],
     ['Mathematics', 'permutations-combinations', 14, [1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],
     ['Mathematics', 'matrices-determinants', 14, [1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],

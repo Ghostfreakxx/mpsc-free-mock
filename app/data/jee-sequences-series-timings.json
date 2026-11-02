@@ -1,0 +1,1325 @@
+{
+  "duration": 708.0720000000179,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 66.36000000000162
+    },
+    {
+      "start": 66.36000000000162,
+      "end": 139.08000000000348
+    },
+    {
+      "start": 139.08000000000348,
+      "end": 208.63200000000523
+    },
+    {
+      "start": 208.63200000000523,
+      "end": 275.78400000000687
+    },
+    {
+      "start": 275.78400000000687,
+      "end": 352.34400000000886
+    },
+    {
+      "start": 352.34400000000886,
+      "end": 423.14400000001064
+    },
+    {
+      "start": 423.14400000001064,
+      "end": 494.49600000001243
+    },
+    {
+      "start": 494.49600000001243,
+      "end": 568.2480000000144
+    },
+    {
+      "start": 568.2480000000144,
+      "end": 638.0160000000161
+    },
+    {
+      "start": 638.0160000000161,
+      "end": 708.0720000000179
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 3.200000047683716,
+      "text": "A sequence is an ordered list of terms indexed by integers.",
+      "chapter": 0
+    },
+    {
+      "start": 3.7799999713897705,
+      "end": 7.119999885559082,
+      "text": "We will start the index at one unless another starting point is stated.",
+      "chapter": 0
+    },
+    {
+      "start": 8.220000267028809,
+      "end": 12.800000190734863,
+      "text": "If a sub n equals three n plus two, the first four terms are five, eight,",
+      "chapter": 0
+    },
+    {
+      "start": 13.119999885559082,
+      "end": 14.779999732971191,
+      "text": "eleven and fourteen.",
+      "chapter": 0
+    },
+    {
+      "start": 14.779999732971191,
+      "end": 18.65999984741211,
+      "text": "The formula supplies the rule; a short list of numbers alone can fit many",
+      "chapter": 0
+    },
+    {
+      "start": 18.65999984741211,
+      "end": 19.920000076293945,
+      "text": "different continuation rules.",
+      "chapter": 0
+    },
+    {
+      "start": 20.700000762939453,
+      "end": 22.239999771118164,
+      "text": "A series adds sequence terms.",
+      "chapter": 0
+    },
+    {
+      "start": 22.780000686645508,
+      "end": 26.079999923706055,
+      "text": "Its nth partial sum S sub n is the sum of the first n terms.",
+      "chapter": 0
+    },
+    {
+      "start": 26.6200008392334,
+      "end": 29.360000610351562,
+      "text": "A term and a partial sum are therefore different quantities.",
+      "chapter": 0
+    },
+    {
+      "start": 30.059999465942383,
+      "end": 34.91999816894531,
+      "text": "To recover a term from partial sums, subtract S sub n minus one from S sub n.",
+      "chapter": 0
+    },
+    {
+      "start": 35.68000030517578,
+      "end": 37.439998626708984,
+      "text": "Everything before the nth term cancels.",
+      "chapter": 0
+    },
+    {
+      "start": 38.18000030517578,
+      "end": 41.34000015258789,
+      "text": "Define S sub zero as zero so this also gives the first term.",
+      "chapter": 0
+    },
+    {
+      "start": 42.18000030517578,
+      "end": 46.619998931884766,
+      "text": "For S sub n equal to three n squared plus two n, substitution and subtraction",
+      "chapter": 0
+    },
+    {
+      "start": 46.619998931884766,
+      "end": 49.099998474121094,
+      "text": "give a sub n equal to six n minus one.",
+      "chapter": 0
+    },
+    {
+      "start": 49.540000915527344,
+      "end": 53.15999984741211,
+      "text": "The first term is five, and the next terms are eleven and seventeen.",
+      "chapter": 0
+    },
+    {
+      "start": 53.15999984741211,
+      "end": 57.720001220703125,
+      "text": "Their first three partial sums are five, sixteen and thirty three, agreeing",
+      "chapter": 0
+    },
+    {
+      "start": 57.720001220703125,
+      "end": 58.599998474121094,
+      "text": "with the given formula.",
+      "chapter": 0
+    },
+    {
+      "start": 59.65999984741211,
+      "end": 63.599998474121094,
+      "text": "Always label whether a supplied expression describes a term or a sum before",
+      "chapter": 0
+    },
+    {
+      "start": 63.599998474121094,
+      "end": 66.08000183105469,
+      "text": "applying an arithmetic or geometric progression formula.",
+      "chapter": 0
+    },
+    {
+      "start": 66.36000000000162,
+      "end": 70.1599999523179,
+      "text": "An arithmetic progression has a constant difference between consecutive terms.",
+      "chapter": 1
+    },
+    {
+      "start": 71.07999979019327,
+      "end": 73.680000171663,
+      "text": "Call its first term a and common difference d.",
+      "chapter": 1
+    },
+    {
+      "start": 74.42000041961832,
+      "end": 78.39999996185465,
+      "text": "The terms are a, a plus d, a plus two d, and so on.",
+      "chapter": 1
+    },
+    {
+      "start": 78.79999958038492,
+      "end": 84.38000045776529,
+      "text": "The nth term has n minus one additions of d, giving a sub n equal to a plus n",
+      "chapter": 1
+    },
+    {
+      "start": 84.38000045776529,
+      "end": 85.48000083923502,
+      "text": "minus one times d.",
+      "chapter": 1
+    },
+    {
+      "start": 86.43999992370767,
+      "end": 88.919999465944,
+      "text": "Using n instead would shift every term by one step.",
+      "chapter": 1
+    },
+    {
+      "start": 89.40000091552896,
+      "end": 92.17999969482584,
+      "text": "The difference may be positive, zero or negative.",
+      "chapter": 1
+    },
+    {
+      "start": 92.70000015258951,
+      "end": 95.49999938965006,
+      "text": "A list of decreasing numbers can therefore be an AP.",
+      "chapter": 1
+    },
+    {
+      "start": 96.46000038147135,
+      "end": 100.86000000000162,
+      "text": "Suppose the third term is eight and the eighth term is twenty three.",
+      "chapter": 1
+    },
+    {
+      "start": 100.86000000000162,
+      "end": 105.08769399789826,
+      "text": "Moving from position three to position eight takes five steps, so five d",
+      "chapter": 1
+    },
+    {
+      "start": 105.08769399789826,
+      "end": 105.4400018310563,
+      "text": "equals",
+      "chapter": 1
+    },
+    {
+      "start": 105.4400018310563,
+      "end": 107.31999908447428,
+      "text": "fifteen and d equals three.",
+      "chapter": 1
+    },
+    {
+      "start": 108.11999832153482,
+      "end": 112.51999984741373,
+      "text": "The first term then satisfies a plus two times three equals eight, giving a",
+      "chapter": 1
+    },
+    {
+      "start": 112.51999984741373,
+      "end": 113.24000106811685,
+      "text": "equal to two.",
+      "chapter": 1
+    },
+    {
+      "start": 113.97999893188639,
+      "end": 118.08000122070474,
+      "text": "Its tenth term is two plus nine times three, or twenty nine.",
+      "chapter": 1
+    },
+    {
+      "start": 118.08000122070474,
+      "end": 121.36000000000162,
+      "text": "Check both originally supplied terms before trusting the result.",
+      "chapter": 1
+    },
+    {
+      "start": 122.24000106811685,
+      "end": 126.63871973086788,
+      "text": "More generally, the difference of terms at positions q and p is q minus p",
+      "chapter": 1
+    },
+    {
+      "start": 126.63871973086788,
+      "end": 126.9400018310563,
+      "text": "times",
+      "chapter": 1
+    },
+    {
+      "start": 126.9400018310563,
+      "end": 127.15999923706217,
+      "text": "d.",
+      "chapter": 1
+    },
+    {
+      "start": 128.0400003051774,
+      "end": 130.63999877929848,
+      "text": "This avoids solving two full equations unnecessarily.",
+      "chapter": 1
+    },
+    {
+      "start": 131.30000244140786,
+      "end": 135.4400018310563,
+      "text": "If the index itself is unknown, remember that a term position must be an",
+      "chapter": 1
+    },
+    {
+      "start": 135.4400018310563,
+      "end": 138.879996643068,
+      "text": "allowed integer, not merely an algebraic root of an equation.",
+      "chapter": 1
+    },
+    {
+      "start": 139.08000000000348,
+      "end": 144.06000001907697,
+      "text": "Write the first n AP terms in forward order, then write the same sum in",
+      "chapter": 2
+    },
+    {
+      "start": 144.06000001907697,
+      "end": 144.79999979019513,
+      "text": "reverse.",
+      "chapter": 2
+    },
+    {
+      "start": 145.4600001144444,
+      "end": 148.6800003814732,
+      "text": "Adding the two lines pairs the first term with the last, the second with the",
+      "chapter": 2
+    },
+    {
+      "start": 148.6800003814732,
+      "end": 150.27999980926862,
+      "text": "second last, and so on.",
+      "chapter": 2
+    },
+    {
+      "start": 150.92000015259137,
+      "end": 154.5599995422398,
+      "text": "Every pair has sum a plus l, where l is the last term.",
+      "chapter": 2
+    },
+    {
+      "start": 155.31999977112164,
+      "end": 160.29999931335797,
+      "text": "There are n pairs, so twice S sub n equals n multiplied by the sum a plus l.",
+      "chapter": 2
+    },
+    {
+      "start": 161.0599995422398,
+      "end": 165.53999908447614,
+      "text": "Divide by two and replace l by a plus n minus one times d to obtain the usual",
+      "chapter": 2
+    },
+    {
+      "start": 165.53999908447614,
+      "end": 166.53999908447614,
+      "text": "finite sum formula.",
+      "chapter": 2
+    },
+    {
+      "start": 167.3999996948277,
+      "end": 171.81999977112164,
+      "text": "For first term two, difference three and ten terms, the last term is twenty",
+      "chapter": 2
+    },
+    {
+      "start": 171.81999977112164,
+      "end": 172.37999923706403,
+      "text": "nine.",
+      "chapter": 2
+    },
+    {
+      "start": 172.37999923706403,
+      "end": 176.51999862671246,
+      "text": "The sum is ten times thirty one divided by two, or one hundred fifty five.",
+      "chapter": 2
+    },
+    {
+      "start": 176.51999862671246,
+      "end": 180.25333182310794,
+      "text": "The formula does not require n to be even: reversing and adding always",
+      "chapter": 2
+    },
+    {
+      "start": 180.25333182310794,
+      "end": 180.67999847412457,
+      "text": "produces",
+      "chapter": 2
+    },
+    {
+      "start": 180.67999847412457,
+      "end": 182.21999938965192,
+      "text": "n pairs across the two lines.",
+      "chapter": 2
+    },
+    {
+      "start": 182.4800015258824,
+      "end": 186.92000015259137,
+      "text": "The first n positive odd numbers have first term one and last term two n minus",
+      "chapter": 2
+    },
+    {
+      "start": 186.92000015259137,
+      "end": 188.9800015258824,
+      "text": "one, so their sum is n squared.",
+      "chapter": 2
+    },
+    {
+      "start": 189.53999908447614,
+      "end": 193.44000061035504,
+      "text": "If a sum condition is used to solve for n, substitute back and reject negative",
+      "chapter": 2
+    },
+    {
+      "start": 193.44000061035504,
+      "end": 194.62000091553082,
+      "text": "or fractional term counts.",
+      "chapter": 2
+    },
+    {
+      "start": 195.2399998474156,
+      "end": 199.77846255963013,
+      "text": "For our AP, the sum equation n multiplied by the quantity three n plus one,",
+      "chapter": 2
+    },
+    {
+      "start": 199.77846255963013,
+      "end": 199.96000106811871,
+      "text": "all",
+      "chapter": 2
+    },
+    {
+      "start": 199.96000106811871,
+      "end": 203.35999877930035,
+      "text": "divided by two, equals one hundred fifty five.",
+      "chapter": 2
+    },
+    {
+      "start": 203.35999877930035,
+      "end": 204.35999877930035,
+      "text": "Solving gives ten terms.",
+      "chapter": 2
+    },
+    {
+      "start": 205.13999755859723,
+      "end": 208.44000061035504,
+      "text": "Substituting ten into the finite sum confirms the required total.",
+      "chapter": 2
+    },
+    {
+      "start": 208.63200000000523,
+      "end": 212.79199984741734,
+      "text": "Inserting arithmetic means means filling the gaps between two endpoints so the",
+      "chapter": 3
+    },
+    {
+      "start": 212.79199984741734,
+      "end": 213.69199994278478,
+      "text": "complete list is an AP.",
+      "chapter": 3
+    },
+    {
+      "start": 214.4320001907401,
+      "end": 218.85200026703404,
+      "text": "If k numbers are inserted, the finished list has k plus two terms but only k",
+      "chapter": 3
+    },
+    {
+      "start": 218.85200026703404,
+      "end": 220.23200038147496,
+      "text": "plus one successive differences.",
+      "chapter": 3
+    },
+    {
+      "start": 221.0319996185355,
+      "end": 223.96892326913036,
+      "text": "Therefore the common difference is the final endpoint minus the first",
+      "chapter": 3
+    },
+    {
+      "start": 223.96892326913036,
+      "end": 224.35200026703404,
+      "text": "endpoint,",
+      "chapter": 3
+    },
+    {
+      "start": 224.73200038147496,
+      "end": 226.25200083923863,
+      "text": "divided by k plus one.",
+      "chapter": 3
+    },
+    {
+      "start": 227.05200007629918,
+      "end": 229.8719997711234,
+      "text": "Insert three arithmetic means between two and eighteen.",
+      "chapter": 3
+    },
+    {
+      "start": 229.8719997711234,
+      "end": 233.3320007629447,
+      "text": "There are four gaps, so d equals sixteen divided by four, or four.",
+      "chapter": 3
+    },
+    {
+      "start": 233.81200030518102,
+      "end": 237.41200068665074,
+      "text": "The completed AP is two, six, ten, fourteen, eighteen.",
+      "chapter": 3
+    },
+    {
+      "start": 237.41200068665074,
+      "end": 241.27199938965367,
+      "text": "The inserted means are six, ten and fourteen.",
+      "chapter": 3
+    },
+    {
+      "start": 241.27199938965367,
+      "end": 244.23199847412633,
+      "text": "Dividing the endpoint difference by three would count inserted numbers instead",
+      "chapter": 3
+    },
+    {
+      "start": 244.23199847412633,
+      "end": 246.63200000000523,
+      "text": "of gaps and would fail to reach the final endpoint.",
+      "chapter": 3
+    },
+    {
+      "start": 247.45199969482945,
+      "end": 251.9920006103568,
+      "text": "With one inserted mean m between u and v, equal differences give m minus u",
+      "chapter": 3
+    },
+    {
+      "start": 251.9920006103568,
+      "end": 253.29199984741734,
+      "text": "equal to v minus m.",
+      "chapter": 3
+    },
+    {
+      "start": 253.89199832153844,
+      "end": 256.3320007629447,
+      "text": "Thus m equals u plus v divided by two.",
+      "chapter": 3
+    },
+    {
+      "start": 257.01200106812047,
+      "end": 259.2719993896537,
+      "text": "Between four and sixteen the arithmetic mean is ten.",
+      "chapter": 3
+    },
+    {
+      "start": 260.2719993896537,
+      "end": 263.39199832153844,
+      "text": "Arithmetic means can be inserted between negative or decreasing real endpoints",
+      "chapter": 3
+    },
+    {
+      "start": 263.39199832153844,
+      "end": 266.2120018310599,
+      "text": "as well; the difference simply takes the appropriate sign.",
+      "chapter": 3
+    },
+    {
+      "start": 266.87200167847203,
+      "end": 271.19200137329625,
+      "text": "An internal AP term is the arithmetic mean of its two immediate neighbours.",
+      "chapter": 3
+    },
+    {
+      "start": 271.19200137329625,
+      "end": 274.812000305181,
+      "text": "Write the full endpoint list once to check the number of gaps before using the",
+      "chapter": 3
+    },
+    {
+      "start": 274.812000305181,
+      "end": 275.47199633789586,
+      "text": "insertion formula.",
+      "chapter": 3
+    },
+    {
+      "start": 275.78400000000687,
+      "end": 280.8239999618599,
+      "text": "A geometric progression multiplies each term by the same fixed factor r.",
+      "chapter": 4
+    },
+    {
+      "start": 281.8639999237129,
+      "end": 287.483999809272,
+      "text": "Starting with first term a, its terms are a, a r, a r squared, and so on.",
+      "chapter": 4
+    },
+    {
+      "start": 288.0040002670357,
+      "end": 291.5440002288887,
+      "text": "The nth term is a times r to the power n minus one.",
+      "chapter": 4
+    },
+    {
+      "start": 292.28400000000687,
+      "end": 296.9239993896553,
+      "text": "For first term three and ratio two, the sixth term is three times two to the",
+      "chapter": 4
+    },
+    {
+      "start": 296.9239993896553,
+      "end": 298.62400015259476,
+      "text": "fifth, or ninety six.",
+      "chapter": 4
+    },
+    {
+      "start": 298.62400015259476,
+      "end": 301.5640006866524,
+      "text": "A constant difference would describe an AP instead.",
+      "chapter": 4
+    },
+    {
+      "start": 302.3840003814766,
+      "end": 306.9239993896553,
+      "text": "Negative ratios are allowed: starting at two with ratio negative three gives",
+      "chapter": 4
+    },
+    {
+      "start": 306.9239993896553,
+      "end": 311.28400000000687,
+      "text": "two, negative six, eighteen and negative fifty four.",
+      "chapter": 4
+    },
+    {
+      "start": 311.28400000000687,
+      "end": 313.6640010681221,
+      "text": "Keep the negative base in brackets when taking powers.",
+      "chapter": 4
+    },
+    {
+      "start": 314.4840007629463,
+      "end": 318.7439990844795,
+      "text": "For nonzero terms, divide a term by its predecessor to find the common ratio.",
+      "chapter": 4
+    },
+    {
+      "start": 319.52400167847367,
+      "end": 324.22399862671585,
+      "text": "The recurrence a sub n plus one equals r times a sub n states the",
+      "chapter": 4
+    },
+    {
+      "start": 324.22399862671585,
+      "end": 326.00400122071,
+      "text": "multiplication rule without dividing.",
+      "chapter": 4
+    },
+    {
+      "start": 326.7039981689522,
+      "end": 331.4239993896553,
+      "text": "This distinction matters around zero: the all zero sequence does not reveal a",
+      "chapter": 4
+    },
+    {
+      "start": 331.4239993896553,
+      "end": 332.56399877930374,
+      "text": "unique ratio by division.",
+      "chapter": 4
+    },
+    {
+      "start": 333.2439990844795,
+      "end": 338.7639995422432,
+      "text": "With nonzero first term and ratio zero, the later terms are all zero, so",
+      "chapter": 4
+    },
+    {
+      "start": 338.7639995422432,
+      "end": 342.4040027465889,
+      "text": "quotients after the first transition are undefined even though the recurrence",
+      "chapter": 4
+    },
+    {
+      "start": 342.4040027465889,
+      "end": 343.2240024414131,
+      "text": "remains meaningful.",
+      "chapter": 4
+    },
+    {
+      "start": 343.76400335694046,
+      "end": 348.8039966430733,
+      "text": "In ordinary nonzero GP problems, verify the same ratio between the given",
+      "chapter": 4
+    },
+    {
+      "start": 348.8039966430733,
+      "end": 352.0840030517647,
+      "text": "consecutive terms and then count the number of multiplication steps.",
+      "chapter": 4
+    },
+    {
+      "start": 352.34400000000886,
+      "end": 357.6440001907437,
+      "text": "The finite GP sum starts as a plus a r plus a r squared,",
+      "chapter": 5
+    },
+    {
+      "start": 358.0639997902005,
+      "end": 361.00399984742097,
+      "text": "continuing to a times r to the power n minus one.",
+      "chapter": 5
+    },
+    {
+      "start": 362.00399984742097,
+      "end": 363.2039996566861,
+      "text": "Multiply that sum by r.",
+      "chapter": 5
+    },
+    {
+      "start": 364.043999809274,
+      "end": 367.1639996948331,
+      "text": "Subtracting the new line from the original cancels the intermediate powers,",
+      "chapter": 5
+    },
+    {
+      "start": 367.68400015259675,
+      "end": 372.68400015259675,
+      "text": "leaving one minus r times S sub n equal to a times one minus r to the power n.",
+      "chapter": 5
+    },
+    {
+      "start": 373.22399916077546,
+      "end": 375.6639996948331,
+      "text": "If r is not one, divide by one minus r.",
+      "chapter": 5
+    },
+    {
+      "start": 375.9440003814786,
+      "end": 379.72399916077546,
+      "text": "The same finite formula may be rearranged by multiplying numerator and",
+      "chapter": 5
+    },
+    {
+      "start": 379.72399916077546,
+      "end": 381.22399916077546,
+      "text": "denominator by negative one.",
+      "chapter": 5
+    },
+    {
+      "start": 381.90399946595124,
+      "end": 386.6957951231825,
+      "text": "For a equal to three, r equal to two and n equal to six, the sum is three",
+      "chapter": 5
+    },
+    {
+      "start": 386.6957951231825,
+      "end": 387.02400030518464,
+      "text": "times",
+      "chapter": 5
+    },
+    {
+      "start": 387.02400030518464,
+      "end": 389.94399847412996,
+      "text": "sixty three, or one hundred eighty nine.",
+      "chapter": 5
+    },
+    {
+      "start": 389.94399847412996,
+      "end": 394.12399877930574,
+      "text": "Directly adding three, six, twelve, twenty four, forty eight and ninety six",
+      "chapter": 5
+    },
+    {
+      "start": 394.12399877930574,
+      "end": 394.8840009155362,
+      "text": "confirms it.",
+      "chapter": 5
+    },
+    {
+      "start": 395.4639989318936,
+      "end": 399.4040013732999,
+      "text": "When r equals one, every term equals a and the sum is n a.",
+      "chapter": 5
+    },
+    {
+      "start": 400.0440007629483,
+      "end": 403.6439992370694,
+      "text": "Substituting r equal to one into the divided formula would give an undefined",
+      "chapter": 5
+    },
+    {
+      "start": 403.6439992370694,
+      "end": 406.1439992370694,
+      "text": "fraction, so use the separate case.",
+      "chapter": 5
+    },
+    {
+      "start": 406.4040013732999,
+      "end": 408.44399847412996,
+      "text": "Negative ratios work in finite sums too.",
+      "chapter": 5
+    },
+    {
+      "start": 408.94399847412996,
+      "end": 413.4650272373386,
+      "text": "For a equal to two and r equal to negative one, an even number of terms sums",
+      "chapter": 5
+    },
+    {
+      "start": 413.4650272373386,
+      "end": 413.58400167847566,
+      "text": "to",
+      "chapter": 5
+    },
+    {
+      "start": 413.58400167847566,
+      "end": 415.8039990844815,
+      "text": "zero and an odd number sums to two.",
+      "chapter": 5
+    },
+    {
+      "start": 416.24400152588777,
+      "end": 419.74400152588777,
+      "text": "The finite sum keeps both the term count and the ratio sign.",
+      "chapter": 5
+    },
+    {
+      "start": 420.62399877930574,
+      "end": 422.92400183106355,
+      "text": "Evaluate the final power with those conditions in place.",
+      "chapter": 5
+    },
+    {
+      "start": 423.14400000001064,
+      "end": 427.80399984742274,
+      "text": "To insert geometric means between positive endpoints, construct a GP including",
+      "chapter": 6
+    },
+    {
+      "start": 427.80399984742274,
+      "end": 428.6040000381576,
+      "text": "both endpoints.",
+      "chapter": 6
+    },
+    {
+      "start": 429.14400000001064,
+      "end": 433.9840001525985,
+      "text": "With k inserted terms there are k plus one ratio steps, so r to the power k",
+      "chapter": 6
+    },
+    {
+      "start": 433.9840001525985,
+      "end": 437.20400041962733,
+      "text": "plus one equals the last endpoint divided by the first.",
+      "chapter": 6
+    },
+    {
+      "start": 437.5039996566879,
+      "end": 441.5040006103622,
+      "text": "If all inserted terms must be positive, choose the positive ratio.",
+      "chapter": 6
+    },
+    {
+      "start": 442.6039990844833,
+      "end": 446.5439996185409,
+      "text": "Insert three positive geometric means between two and one hundred sixty two.",
+      "chapter": 6
+    },
+    {
+      "start": 446.5439996185409,
+      "end": 450.9840001525985,
+      "text": "The endpoint ratio is eighty one and there are four steps, giving r equal to",
+      "chapter": 6
+    },
+    {
+      "start": 450.9840001525985,
+      "end": 451.1640004577743,
+      "text": "three.",
+      "chapter": 6
+    },
+    {
+      "start": 451.5040006103622,
+      "end": 456.74399847413173,
+      "text": "The list is two, six, eighteen, fifty four, one hundred sixty two.",
+      "chapter": 6
+    },
+    {
+      "start": 456.74399847413173,
+      "end": 460.1039990844833,
+      "text": "The inserted means are six, eighteen and fifty four.",
+      "chapter": 6
+    },
+    {
+      "start": 460.1039990844833,
+      "end": 463.86400122071376,
+      "text": "The equation r to the fourth equals eighty one also has a negative real root,",
+      "chapter": 6
+    },
+    {
+      "start": 464.46399969483485,
+      "end": 464.9439992370712,
+      "text": "negative three.",
+      "chapter": 6
+    },
+    {
+      "start": 465.40399832154384,
+      "end": 469.7839993896591,
+      "text": "It gives a different real GP with alternating signs, so it is excluded by the",
+      "chapter": 6
+    },
+    {
+      "start": 469.7839993896591,
+      "end": 472.2240018310653,
+      "text": "positive insertion requirement, not by algebra alone.",
+      "chapter": 6
+    },
+    {
+      "start": 472.70400137330165,
+      "end": 477.1901522615979,
+      "text": "For one positive geometric mean between u and v, the middle term squared",
+      "chapter": 6
+    },
+    {
+      "start": 477.1901522615979,
+      "end": 477.56399816895595,
+      "text": "equals",
+      "chapter": 6
+    },
+    {
+      "start": 477.56399816895595,
+      "end": 481.54400152588954,
+      "text": "u v and the positive value is the square root of u v.",
+      "chapter": 6
+    },
+    {
+      "start": 481.54400152588954,
+      "end": 484.0040006103622,
+      "text": "Between four and sixteen that value is eight.",
+      "chapter": 6
+    },
+    {
+      "start": 484.64400000001064,
+      "end": 488.7432281987223,
+      "text": "If positivity were not specified for a real three term GP, negative eight",
+      "chapter": 6
+    },
+    {
+      "start": 488.7432281987223,
+      "end": 489.0239972534286,
+      "text": "could",
+      "chapter": 6
+    },
+    {
+      "start": 489.0239972534286,
+      "end": 490.0840024414169,
+      "text": "also be its middle term.",
+      "chapter": 6
+    },
+    {
+      "start": 490.9239987793075,
+      "end": 494.30400366212,
+      "text": "State the sign convention before taking an even root in a progression problem.",
+      "chapter": 6
+    },
+    {
+      "start": 494.49600000001243,
+      "end": 500.15599984742454,
+      "text": "For two positive real numbers u and v, their arithmetic mean A is half their",
+      "chapter": 7
+    },
+    {
+      "start": 500.15599984742454,
+      "end": 504.43599958039573,
+      "text": "sum, and their positive geometric mean G is the square root of their product.",
+      "chapter": 7
+    },
+    {
+      "start": 505.2359997711306,
+      "end": 508.7272821119384,
+      "text": "Take the difference between the square root of u and the square root of v,",
+      "chapter": 7
+    },
+    {
+      "start": 508.7272821119384,
+      "end": 508.9160000763064,
+      "text": "then",
+      "chapter": 7
+    },
+    {
+      "start": 508.9160000763064,
+      "end": 510.3360001526003,
+      "text": "square that entire difference.",
+      "chapter": 7
+    },
+    {
+      "start": 510.7359997711306,
+      "end": 513.2760006866579,
+      "text": "The result is nonnegative.",
+      "chapter": 7
+    },
+    {
+      "start": 513.2760006866579,
+      "end": 518.1088203074261,
+      "text": "Expanding gives u plus v at least twice the square root of u v, proving A is",
+      "chapter": 7
+    },
+    {
+      "start": 518.1088203074261,
+      "end": 518.2359997711305,
+      "text": "at",
+      "chapter": 7
+    },
+    {
+      "start": 518.2359997711305,
+      "end": 518.7159993133669,
+      "text": "least G.",
+      "chapter": 7
+    },
+    {
+      "start": 519.3159996948366,
+      "end": 523.3159996948366,
+      "text": "Equality holds exactly when the two square roots, and hence the two numbers,",
+      "chapter": 7
+    },
+    {
+      "start": 523.7560002288942,
+      "end": 524.2159993133669,
+      "text": "are equal.",
+      "chapter": 7
+    },
+    {
+      "start": 525.0559994659548,
+      "end": 529.6159989318971,
+      "text": "Another useful identity says that A squared minus G squared is one quarter of",
+      "chapter": 7
+    },
+    {
+      "start": 529.6159989318971,
+      "end": 531.4159981689577,
+      "text": "the square of the difference u minus v.",
+      "chapter": 7
+    },
+    {
+      "start": 531.9759995422487,
+      "end": 535.7959992370729,
+      "text": "The original positivity assumptions matter: two negative numbers have a",
+      "chapter": 7
+    },
+    {
+      "start": 535.7959992370729,
+      "end": 539.6359993896608,
+      "text": "negative arithmetic mean, so the same inequality with a positive square root",
+      "chapter": 7
+    },
+    {
+      "start": 539.6359993896608,
+      "end": 541.5760018310671,
+      "text": "cannot simply be transferred to them.",
+      "chapter": 7
+    },
+    {
+      "start": 542.3360001526003,
+      "end": 544.455999084485,
+      "text": "Suppose A is ten and G is eight.",
+      "chapter": 7
+    },
+    {
+      "start": 544.9159981689577,
+      "end": 548.1559998474245,
+      "text": "Then the numbers have sum twenty and product sixty four.",
+      "chapter": 7
+    },
+    {
+      "start": 548.1559998474245,
+      "end": 552.6159989318971,
+      "text": "They are roots of t squared minus twenty t plus sixty four equals zero, giving",
+      "chapter": 7
+    },
+    {
+      "start": 552.6159989318971,
+      "end": 554.3159996948366,
+      "text": "four and sixteen.",
+      "chapter": 7
+    },
+    {
+      "start": 554.3159996948366,
+      "end": 555.9759995422487,
+      "text": "Check both means to confirm the answer.",
+      "chapter": 7
+    },
+    {
+      "start": 556.6359993896608,
+      "end": 560.835996337903,
+      "text": "A pair of positive numbers cannot have A smaller than G, so such supplied mean",
+      "chapter": 7
+    },
+    {
+      "start": 560.835996337903,
+      "end": 562.0559975586061,
+      "text": "values would be inconsistent.",
+      "chapter": 7
+    },
+    {
+      "start": 562.8960015258913,
+      "end": 566.4960000000124,
+      "text": "Distinguish a condition that has no admissible pair from one that merely needs",
+      "chapter": 7
+    },
+    {
+      "start": 566.4960000000124,
+      "end": 567.9960000000124,
+      "text": "a different ordering of the same pair.",
+      "chapter": 7
+    },
+    {
+      "start": 568.2480000000144,
+      "end": 573.927999828353,
+      "text": "The AM GM inequality becomes an optimization tool when one quantity is fixed.",
+      "chapter": 8
+    },
+    {
+      "start": 574.3079999427939,
+      "end": 577.8080004196311,
+      "text": "For positive u and v with sum twenty, their arithmetic mean is ten.",
+      "chapter": 8
+    },
+    {
+      "start": 578.5279997329856,
+      "end": 583.6079996566916,
+      "text": "Their geometric mean is at most ten, so the product is at most one hundred.",
+      "chapter": 8
+    },
+    {
+      "start": 583.6079996566916,
+      "end": 587.688000534072,
+      "text": "Equality occurs at u equal to v equal to ten, which satisfies the given sum.",
+      "chapter": 8
+    },
+    {
+      "start": 588.268000457778,
+      "end": 590.6479996185446,
+      "text": "This proves both a bound and an attainable maximum.",
+      "chapter": 8
+    },
+    {
+      "start": 591.4879997711325,
+      "end": 595.9079998474265,
+      "text": "Conversely, if the product is thirty six, their sum is at least twelve,",
+      "chapter": 8
+    },
+    {
+      "start": 595.9079998474265,
+      "end": 597.3279999237204,
+      "text": "attained when both numbers are six.",
+      "chapter": 8
+    },
+    {
+      "start": 597.9679993133689,
+      "end": 601.9480007629538,
+      "text": "For x positive, apply the inequality to x and nine divided by x.",
+      "chapter": 8
+    },
+    {
+      "start": 602.4880016784812,
+      "end": 605.2880009155417,
+      "text": "Their product is nine, so their sum is at least six.",
+      "chapter": 8
+    },
+    {
+      "start": 606.1080006103659,
+      "end": 610.4880008959792,
+      "text": "Equality requires x equal to nine divided by x, giving x squared equal to",
+      "chapter": 8
+    },
+    {
+      "start": 610.4880008959792,
+      "end": 610.7880009155417,
+      "text": "nine.",
+      "chapter": 8
+    },
+    {
+      "start": 611.6879986267234,
+      "end": 613.9079998474265,
+      "text": "The positive domain selects x equal to three.",
+      "chapter": 8
+    },
+    {
+      "start": 614.6679981689597,
+      "end": 618.3479984741355,
+      "text": "Thus the minimum of x plus nine over x on the positive reals is six.",
+      "chapter": 8
+    },
+    {
+      "start": 619.0880001526023,
+      "end": 621.8080013733054,
+      "text": "Without that domain, the same minimum claim would be invalid.",
+      "chapter": 8
+    },
+    {
+      "start": 622.4079998474265,
+      "end": 626.4480007629538,
+      "text": "A rectangle with perimeter forty has positive side lengths summing to twenty,",
+      "chapter": 8
+    },
+    {
+      "start": 626.4480007629538,
+      "end": 630.2480000000144,
+      "text": "so its area is at most one hundred, attained by a square of side ten.",
+      "chapter": 8
+    },
+    {
+      "start": 630.9880016784812,
+      "end": 634.9879978637839,
+      "text": "In every application, name the two positive quantities and verify that their",
+      "chapter": 8
+    },
+    {
+      "start": 634.9879978637839,
+      "end": 637.087996337905,
+      "text": "equality case obeys the original restrictions.",
+      "chapter": 8
+    },
+    {
+      "start": 638.0160000000161,
+      "end": 642.2559997711343,
+      "text": "An infinite series is not evaluated by simply writing infinity in a finite",
+      "chapter": 9
+    },
+    {
+      "start": 642.2559997711343,
+      "end": 642.5559999618691,
+      "text": "formula.",
+      "chapter": 9
+    },
+    {
+      "start": 643.1559998665017,
+      "end": 646.1560003433389,
+      "text": "It is the limit of its partial sums when that limit exists.",
+      "chapter": 9
+    },
+    {
+      "start": 647.0360004577798,
+      "end": 652.5160000000161,
+      "text": "For a GP with nonzero first term a, the finite sum is a times one minus r to",
+      "chapter": 9
+    },
+    {
+      "start": 652.5160000000161,
+      "end": 656.4759990844888,
+      "text": "the power n divided by one minus r, for r not equal to one.",
+      "chapter": 9
+    },
+    {
+      "start": 656.9959995422524,
+      "end": 661.5360004577798,
+      "text": "If the absolute value of r is less than one, r to the power n tends to zero.",
+      "chapter": 9
+    },
+    {
+      "start": 661.7359993133706,
+      "end": 665.1559993896645,
+      "text": "The partial sums then tend to a divided by one minus r.",
+      "chapter": 9
+    },
+    {
+      "start": 665.856000152604,
+      "end": 669.7760002288979,
+      "text": "For first term three and ratio one half, the infinite sum is six.",
+      "chapter": 9
+    },
+    {
+      "start": 670.3960010681313,
+      "end": 674.4959995422524,
+      "text": "With the same first term and ratio negative one half, it is two; the terms",
+      "chapter": 9
+    },
+    {
+      "start": 674.4959995422524,
+      "end": 676.295998779313,
+      "text": "alternate but their sizes shrink.",
+      "chapter": 9
+    },
+    {
+      "start": 677.0360004577798,
+      "end": 679.7759983215493,
+      "text": "A negative ratio does not automatically prevent convergence.",
+      "chapter": 9
+    },
+    {
+      "start": 680.5560009155434,
+      "end": 684.3244618984286,
+      "text": "For ratio negative one and first term three, the partial sums alternate",
+      "chapter": 9
+    },
+    {
+      "start": 684.3244618984286,
+      "end": 684.6960003051919,
+      "text": "between",
+      "chapter": 9
+    },
+    {
+      "start": 684.6960003051919,
+      "end": 687.1159984741372,
+      "text": "three and zero and do not approach one limit.",
+      "chapter": 9
+    },
+    {
+      "start": 688.0560009155434,
+      "end": 692.0975377846903,
+      "text": "Ratio one repeats the same nonzero term, and ratios with magnitude greater",
+      "chapter": 9
+    },
+    {
+      "start": 692.0975377846903,
+      "end": 692.3159992370767,
+      "text": "than",
+      "chapter": 9
+    },
+    {
+      "start": 692.3159992370767,
+      "end": 694.1159984741372,
+      "text": "one do not give a finite limit.",
+      "chapter": 9
+    },
+    {
+      "start": 694.5760013733071,
+      "end": 697.356000152604,
+      "text": "The all zero sequence is a separate trivial exception.",
+      "chapter": 9
+    },
+    {
+      "start": 698.1359989319009,
+      "end": 702.7360012207192,
+      "text": "A finite GP sum remains valid for any specified finite term count with its",
+      "chapter": 9
+    },
+    {
+      "start": 702.7360012207192,
+      "end": 703.9359981689614,
+      "text": "appropriate ratio case.",
+      "chapter": 9
+    },
+    {
+      "start": 704.6159984741372,
+      "end": 707.8160030517739,
+      "text": "Always check convergence before using the infinite sum shortcut.",
+      "chapter": 9
+    }
+  ]
+}

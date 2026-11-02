@@ -13,6 +13,7 @@ const KineticsDiagram = dynamic(() => import("./kinetics-diagram"));
 const MatricesDeterminantsDiagram = dynamic(() => import("./matrices-determinants-diagram"));
 const CountingDiagram = dynamic(() => import("./permutations-combinations-diagram"));
 const BinomialDiagram = dynamic(() => import("./binomial-theorem-diagram"));
+const SequencesDiagram = dynamic(() => import("./sequences-series-diagram"));
 const SetsFunctionsDiagram = dynamic(() => import("./sets-functions-diagram"));
 const ComplexQuadraticsDiagram = dynamic(() => import("./complex-quadratics-diagram"));
 const PhysicalChemistryDiagram = dynamic(() => import("./physical-chemistry-diagram"));
@@ -166,6 +167,7 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
           {lesson.id === "matrices-determinants" && <MatricesDeterminantsDiagram chapter={chapterIndex} />}
           {lesson.id === "permutations-combinations" && <CountingDiagram chapter={chapterIndex} />}
           {lesson.id === "binomial-theorem" && <BinomialDiagram chapter={chapterIndex} />}
+          {lesson.id === "sequences-series" && <SequencesDiagram chapter={chapterIndex} />}
           {lesson.id === "sets-and-functions" && <SetsFunctionsDiagram chapter={chapterIndex} />}
           {lesson.id === "quadratic-equations" && <ComplexQuadraticsDiagram chapter={chapterIndex} />}
           {(lesson.id === "chemical-thermodynamics" || lesson.id === "solutions") && <PhysicalChemistryDiagram lesson={lesson.id} chapter={chapterIndex} />}

@@ -1,0 +1,640 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.200
+A sequence is an ordered list of terms indexed by integers.
+
+00:00:03.780 --> 00:00:07.120
+We will start the index at one unless another starting point is stated.
+
+00:00:08.220 --> 00:00:12.800
+If a sub n equals three n plus two, the first four terms are five, eight,
+
+00:00:13.120 --> 00:00:14.780
+eleven and fourteen.
+
+00:00:14.780 --> 00:00:18.660
+The formula supplies the rule; a short list of numbers alone can fit many
+
+00:00:18.660 --> 00:00:19.920
+different continuation rules.
+
+00:00:20.700 --> 00:00:22.240
+A series adds sequence terms.
+
+00:00:22.780 --> 00:00:26.080
+Its nth partial sum S sub n is the sum of the first n terms.
+
+00:00:26.620 --> 00:00:29.360
+A term and a partial sum are therefore different quantities.
+
+00:00:30.060 --> 00:00:34.920
+To recover a term from partial sums, subtract S sub n minus one from S sub n.
+
+00:00:35.680 --> 00:00:37.440
+Everything before the nth term cancels.
+
+00:00:38.180 --> 00:00:41.340
+Define S sub zero as zero so this also gives the first term.
+
+00:00:42.180 --> 00:00:46.620
+For S sub n equal to three n squared plus two n, substitution and subtraction
+
+00:00:46.620 --> 00:00:49.100
+give a sub n equal to six n minus one.
+
+00:00:49.540 --> 00:00:53.160
+The first term is five, and the next terms are eleven and seventeen.
+
+00:00:53.160 --> 00:00:57.720
+Their first three partial sums are five, sixteen and thirty three, agreeing
+
+00:00:57.720 --> 00:00:58.600
+with the given formula.
+
+00:00:59.660 --> 00:01:03.600
+Always label whether a supplied expression describes a term or a sum before
+
+00:01:03.600 --> 00:01:06.080
+applying an arithmetic or geometric progression formula.
+
+00:01:06.360 --> 00:01:10.160
+An arithmetic progression has a constant difference between consecutive terms.
+
+00:01:11.080 --> 00:01:13.680
+Call its first term a and common difference d.
+
+00:01:14.420 --> 00:01:18.400
+The terms are a, a plus d, a plus two d, and so on.
+
+00:01:18.800 --> 00:01:24.380
+The nth term has n minus one additions of d, giving a sub n equal to a plus n
+
+00:01:24.380 --> 00:01:25.480
+minus one times d.
+
+00:01:26.440 --> 00:01:28.920
+Using n instead would shift every term by one step.
+
+00:01:29.400 --> 00:01:32.180
+The difference may be positive, zero or negative.
+
+00:01:32.700 --> 00:01:35.500
+A list of decreasing numbers can therefore be an AP.
+
+00:01:36.460 --> 00:01:40.860
+Suppose the third term is eight and the eighth term is twenty three.
+
+00:01:40.860 --> 00:01:45.088
+Moving from position three to position eight takes five steps, so five d
+
+00:01:45.088 --> 00:01:45.440
+equals
+
+00:01:45.440 --> 00:01:47.320
+fifteen and d equals three.
+
+00:01:48.120 --> 00:01:52.520
+The first term then satisfies a plus two times three equals eight, giving a
+
+00:01:52.520 --> 00:01:53.240
+equal to two.
+
+00:01:53.980 --> 00:01:58.080
+Its tenth term is two plus nine times three, or twenty nine.
+
+00:01:58.080 --> 00:02:01.360
+Check both originally supplied terms before trusting the result.
+
+00:02:02.240 --> 00:02:06.639
+More generally, the difference of terms at positions q and p is q minus p
+
+00:02:06.639 --> 00:02:06.940
+times
+
+00:02:06.940 --> 00:02:07.160
+d.
+
+00:02:08.040 --> 00:02:10.640
+This avoids solving two full equations unnecessarily.
+
+00:02:11.300 --> 00:02:15.440
+If the index itself is unknown, remember that a term position must be an
+
+00:02:15.440 --> 00:02:18.880
+allowed integer, not merely an algebraic root of an equation.
+
+00:02:19.080 --> 00:02:24.060
+Write the first n AP terms in forward order, then write the same sum in
+
+00:02:24.060 --> 00:02:24.800
+reverse.
+
+00:02:25.460 --> 00:02:28.680
+Adding the two lines pairs the first term with the last, the second with the
+
+00:02:28.680 --> 00:02:30.280
+second last, and so on.
+
+00:02:30.920 --> 00:02:34.560
+Every pair has sum a plus l, where l is the last term.
+
+00:02:35.320 --> 00:02:40.300
+There are n pairs, so twice S sub n equals n multiplied by the sum a plus l.
+
+00:02:41.060 --> 00:02:45.540
+Divide by two and replace l by a plus n minus one times d to obtain the usual
+
+00:02:45.540 --> 00:02:46.540
+finite sum formula.
+
+00:02:47.400 --> 00:02:51.820
+For first term two, difference three and ten terms, the last term is twenty
+
+00:02:51.820 --> 00:02:52.380
+nine.
+
+00:02:52.380 --> 00:02:56.520
+The sum is ten times thirty one divided by two, or one hundred fifty five.
+
+00:02:56.520 --> 00:03:00.253
+The formula does not require n to be even: reversing and adding always
+
+00:03:00.253 --> 00:03:00.680
+produces
+
+00:03:00.680 --> 00:03:02.220
+n pairs across the two lines.
+
+00:03:02.480 --> 00:03:06.920
+The first n positive odd numbers have first term one and last term two n minus
+
+00:03:06.920 --> 00:03:08.980
+one, so their sum is n squared.
+
+00:03:09.540 --> 00:03:13.440
+If a sum condition is used to solve for n, substitute back and reject negative
+
+00:03:13.440 --> 00:03:14.620
+or fractional term counts.
+
+00:03:15.240 --> 00:03:19.778
+For our AP, the sum equation n multiplied by the quantity three n plus one,
+
+00:03:19.778 --> 00:03:19.960
+all
+
+00:03:19.960 --> 00:03:23.360
+divided by two, equals one hundred fifty five.
+
+00:03:23.360 --> 00:03:24.360
+Solving gives ten terms.
+
+00:03:25.140 --> 00:03:28.440
+Substituting ten into the finite sum confirms the required total.
+
+00:03:28.632 --> 00:03:32.792
+Inserting arithmetic means means filling the gaps between two endpoints so the
+
+00:03:32.792 --> 00:03:33.692
+complete list is an AP.
+
+00:03:34.432 --> 00:03:38.852
+If k numbers are inserted, the finished list has k plus two terms but only k
+
+00:03:38.852 --> 00:03:40.232
+plus one successive differences.
+
+00:03:41.032 --> 00:03:43.969
+Therefore the common difference is the final endpoint minus the first
+
+00:03:43.969 --> 00:03:44.352
+endpoint,
+
+00:03:44.732 --> 00:03:46.252
+divided by k plus one.
+
+00:03:47.052 --> 00:03:49.872
+Insert three arithmetic means between two and eighteen.
+
+00:03:49.872 --> 00:03:53.332
+There are four gaps, so d equals sixteen divided by four, or four.
+
+00:03:53.812 --> 00:03:57.412
+The completed AP is two, six, ten, fourteen, eighteen.
+
+00:03:57.412 --> 00:04:01.272
+The inserted means are six, ten and fourteen.
+
+00:04:01.272 --> 00:04:04.232
+Dividing the endpoint difference by three would count inserted numbers instead
+
+00:04:04.232 --> 00:04:06.632
+of gaps and would fail to reach the final endpoint.
+
+00:04:07.452 --> 00:04:11.992
+With one inserted mean m between u and v, equal differences give m minus u
+
+00:04:11.992 --> 00:04:13.292
+equal to v minus m.
+
+00:04:13.892 --> 00:04:16.332
+Thus m equals u plus v divided by two.
+
+00:04:17.012 --> 00:04:19.272
+Between four and sixteen the arithmetic mean is ten.
+
+00:04:20.272 --> 00:04:23.392
+Arithmetic means can be inserted between negative or decreasing real endpoints
+
+00:04:23.392 --> 00:04:26.212
+as well; the difference simply takes the appropriate sign.
+
+00:04:26.872 --> 00:04:31.192
+An internal AP term is the arithmetic mean of its two immediate neighbours.
+
+00:04:31.192 --> 00:04:34.812
+Write the full endpoint list once to check the number of gaps before using the
+
+00:04:34.812 --> 00:04:35.472
+insertion formula.
+
+00:04:35.784 --> 00:04:40.824
+A geometric progression multiplies each term by the same fixed factor r.
+
+00:04:41.864 --> 00:04:47.484
+Starting with first term a, its terms are a, a r, a r squared, and so on.
+
+00:04:48.004 --> 00:04:51.544
+The nth term is a times r to the power n minus one.
+
+00:04:52.284 --> 00:04:56.924
+For first term three and ratio two, the sixth term is three times two to the
+
+00:04:56.924 --> 00:04:58.624
+fifth, or ninety six.
+
+00:04:58.624 --> 00:05:01.564
+A constant difference would describe an AP instead.
+
+00:05:02.384 --> 00:05:06.924
+Negative ratios are allowed: starting at two with ratio negative three gives
+
+00:05:06.924 --> 00:05:11.284
+two, negative six, eighteen and negative fifty four.
+
+00:05:11.284 --> 00:05:13.664
+Keep the negative base in brackets when taking powers.
+
+00:05:14.484 --> 00:05:18.744
+For nonzero terms, divide a term by its predecessor to find the common ratio.
+
+00:05:19.524 --> 00:05:24.224
+The recurrence a sub n plus one equals r times a sub n states the
+
+00:05:24.224 --> 00:05:26.004
+multiplication rule without dividing.
+
+00:05:26.704 --> 00:05:31.424
+This distinction matters around zero: the all zero sequence does not reveal a
+
+00:05:31.424 --> 00:05:32.564
+unique ratio by division.
+
+00:05:33.244 --> 00:05:38.764
+With nonzero first term and ratio zero, the later terms are all zero, so
+
+00:05:38.764 --> 00:05:42.404
+quotients after the first transition are undefined even though the recurrence
+
+00:05:42.404 --> 00:05:43.224
+remains meaningful.
+
+00:05:43.764 --> 00:05:48.804
+In ordinary nonzero GP problems, verify the same ratio between the given
+
+00:05:48.804 --> 00:05:52.084
+consecutive terms and then count the number of multiplication steps.
+
+00:05:52.344 --> 00:05:57.644
+The finite GP sum starts as a plus a r plus a r squared,
+
+00:05:58.064 --> 00:06:01.004
+continuing to a times r to the power n minus one.
+
+00:06:02.004 --> 00:06:03.204
+Multiply that sum by r.
+
+00:06:04.044 --> 00:06:07.164
+Subtracting the new line from the original cancels the intermediate powers,
+
+00:06:07.684 --> 00:06:12.684
+leaving one minus r times S sub n equal to a times one minus r to the power n.
+
+00:06:13.224 --> 00:06:15.664
+If r is not one, divide by one minus r.
+
+00:06:15.944 --> 00:06:19.724
+The same finite formula may be rearranged by multiplying numerator and
+
+00:06:19.724 --> 00:06:21.224
+denominator by negative one.
+
+00:06:21.904 --> 00:06:26.696
+For a equal to three, r equal to two and n equal to six, the sum is three
+
+00:06:26.696 --> 00:06:27.024
+times
+
+00:06:27.024 --> 00:06:29.944
+sixty three, or one hundred eighty nine.
+
+00:06:29.944 --> 00:06:34.124
+Directly adding three, six, twelve, twenty four, forty eight and ninety six
+
+00:06:34.124 --> 00:06:34.884
+confirms it.
+
+00:06:35.464 --> 00:06:39.404
+When r equals one, every term equals a and the sum is n a.
+
+00:06:40.044 --> 00:06:43.644
+Substituting r equal to one into the divided formula would give an undefined
+
+00:06:43.644 --> 00:06:46.144
+fraction, so use the separate case.
+
+00:06:46.404 --> 00:06:48.444
+Negative ratios work in finite sums too.
+
+00:06:48.944 --> 00:06:53.465
+For a equal to two and r equal to negative one, an even number of terms sums
+
+00:06:53.465 --> 00:06:53.584
+to
+
+00:06:53.584 --> 00:06:55.804
+zero and an odd number sums to two.
+
+00:06:56.244 --> 00:06:59.744
+The finite sum keeps both the term count and the ratio sign.
+
+00:07:00.624 --> 00:07:02.924
+Evaluate the final power with those conditions in place.
+
+00:07:03.144 --> 00:07:07.804
+To insert geometric means between positive endpoints, construct a GP including
+
+00:07:07.804 --> 00:07:08.604
+both endpoints.
+
+00:07:09.144 --> 00:07:13.984
+With k inserted terms there are k plus one ratio steps, so r to the power k
+
+00:07:13.984 --> 00:07:17.204
+plus one equals the last endpoint divided by the first.
+
+00:07:17.504 --> 00:07:21.504
+If all inserted terms must be positive, choose the positive ratio.
+
+00:07:22.604 --> 00:07:26.544
+Insert three positive geometric means between two and one hundred sixty two.
+
+00:07:26.544 --> 00:07:30.984
+The endpoint ratio is eighty one and there are four steps, giving r equal to
+
+00:07:30.984 --> 00:07:31.164
+three.
+
+00:07:31.504 --> 00:07:36.744
+The list is two, six, eighteen, fifty four, one hundred sixty two.
+
+00:07:36.744 --> 00:07:40.104
+The inserted means are six, eighteen and fifty four.
+
+00:07:40.104 --> 00:07:43.864
+The equation r to the fourth equals eighty one also has a negative real root,
+
+00:07:44.464 --> 00:07:44.944
+negative three.
+
+00:07:45.404 --> 00:07:49.784
+It gives a different real GP with alternating signs, so it is excluded by the
+
+00:07:49.784 --> 00:07:52.224
+positive insertion requirement, not by algebra alone.
+
+00:07:52.704 --> 00:07:57.190
+For one positive geometric mean between u and v, the middle term squared
+
+00:07:57.190 --> 00:07:57.564
+equals
+
+00:07:57.564 --> 00:08:01.544
+u v and the positive value is the square root of u v.
+
+00:08:01.544 --> 00:08:04.004
+Between four and sixteen that value is eight.
+
+00:08:04.644 --> 00:08:08.743
+If positivity were not specified for a real three term GP, negative eight
+
+00:08:08.743 --> 00:08:09.024
+could
+
+00:08:09.024 --> 00:08:10.084
+also be its middle term.
+
+00:08:10.924 --> 00:08:14.304
+State the sign convention before taking an even root in a progression problem.
+
+00:08:14.496 --> 00:08:20.156
+For two positive real numbers u and v, their arithmetic mean A is half their
+
+00:08:20.156 --> 00:08:24.436
+sum, and their positive geometric mean G is the square root of their product.
+
+00:08:25.236 --> 00:08:28.727
+Take the difference between the square root of u and the square root of v,
+
+00:08:28.727 --> 00:08:28.916
+then
+
+00:08:28.916 --> 00:08:30.336
+square that entire difference.
+
+00:08:30.736 --> 00:08:33.276
+The result is nonnegative.
+
+00:08:33.276 --> 00:08:38.109
+Expanding gives u plus v at least twice the square root of u v, proving A is
+
+00:08:38.109 --> 00:08:38.236
+at
+
+00:08:38.236 --> 00:08:38.716
+least G.
+
+00:08:39.316 --> 00:08:43.316
+Equality holds exactly when the two square roots, and hence the two numbers,
+
+00:08:43.756 --> 00:08:44.216
+are equal.
+
+00:08:45.056 --> 00:08:49.616
+Another useful identity says that A squared minus G squared is one quarter of
+
+00:08:49.616 --> 00:08:51.416
+the square of the difference u minus v.
+
+00:08:51.976 --> 00:08:55.796
+The original positivity assumptions matter: two negative numbers have a
+
+00:08:55.796 --> 00:08:59.636
+negative arithmetic mean, so the same inequality with a positive square root
+
+00:08:59.636 --> 00:09:01.576
+cannot simply be transferred to them.
+
+00:09:02.336 --> 00:09:04.456
+Suppose A is ten and G is eight.
+
+00:09:04.916 --> 00:09:08.156
+Then the numbers have sum twenty and product sixty four.
+
+00:09:08.156 --> 00:09:12.616
+They are roots of t squared minus twenty t plus sixty four equals zero, giving
+
+00:09:12.616 --> 00:09:14.316
+four and sixteen.
+
+00:09:14.316 --> 00:09:15.976
+Check both means to confirm the answer.
+
+00:09:16.636 --> 00:09:20.836
+A pair of positive numbers cannot have A smaller than G, so such supplied mean
+
+00:09:20.836 --> 00:09:22.056
+values would be inconsistent.
+
+00:09:22.896 --> 00:09:26.496
+Distinguish a condition that has no admissible pair from one that merely needs
+
+00:09:26.496 --> 00:09:27.996
+a different ordering of the same pair.
+
+00:09:28.248 --> 00:09:33.928
+The AM GM inequality becomes an optimization tool when one quantity is fixed.
+
+00:09:34.308 --> 00:09:37.808
+For positive u and v with sum twenty, their arithmetic mean is ten.
+
+00:09:38.528 --> 00:09:43.608
+Their geometric mean is at most ten, so the product is at most one hundred.
+
+00:09:43.608 --> 00:09:47.688
+Equality occurs at u equal to v equal to ten, which satisfies the given sum.
+
+00:09:48.268 --> 00:09:50.648
+This proves both a bound and an attainable maximum.
+
+00:09:51.488 --> 00:09:55.908
+Conversely, if the product is thirty six, their sum is at least twelve,
+
+00:09:55.908 --> 00:09:57.328
+attained when both numbers are six.
+
+00:09:57.968 --> 00:10:01.948
+For x positive, apply the inequality to x and nine divided by x.
+
+00:10:02.488 --> 00:10:05.288
+Their product is nine, so their sum is at least six.
+
+00:10:06.108 --> 00:10:10.488
+Equality requires x equal to nine divided by x, giving x squared equal to
+
+00:10:10.488 --> 00:10:10.788
+nine.
+
+00:10:11.688 --> 00:10:13.908
+The positive domain selects x equal to three.
+
+00:10:14.668 --> 00:10:18.348
+Thus the minimum of x plus nine over x on the positive reals is six.
+
+00:10:19.088 --> 00:10:21.808
+Without that domain, the same minimum claim would be invalid.
+
+00:10:22.408 --> 00:10:26.448
+A rectangle with perimeter forty has positive side lengths summing to twenty,
+
+00:10:26.448 --> 00:10:30.248
+so its area is at most one hundred, attained by a square of side ten.
+
+00:10:30.988 --> 00:10:34.988
+In every application, name the two positive quantities and verify that their
+
+00:10:34.988 --> 00:10:37.088
+equality case obeys the original restrictions.
+
+00:10:38.016 --> 00:10:42.256
+An infinite series is not evaluated by simply writing infinity in a finite
+
+00:10:42.256 --> 00:10:42.556
+formula.
+
+00:10:43.156 --> 00:10:46.156
+It is the limit of its partial sums when that limit exists.
+
+00:10:47.036 --> 00:10:52.516
+For a GP with nonzero first term a, the finite sum is a times one minus r to
+
+00:10:52.516 --> 00:10:56.476
+the power n divided by one minus r, for r not equal to one.
+
+00:10:56.996 --> 00:11:01.536
+If the absolute value of r is less than one, r to the power n tends to zero.
+
+00:11:01.736 --> 00:11:05.156
+The partial sums then tend to a divided by one minus r.
+
+00:11:05.856 --> 00:11:09.776
+For first term three and ratio one half, the infinite sum is six.
+
+00:11:10.396 --> 00:11:14.496
+With the same first term and ratio negative one half, it is two; the terms
+
+00:11:14.496 --> 00:11:16.296
+alternate but their sizes shrink.
+
+00:11:17.036 --> 00:11:19.776
+A negative ratio does not automatically prevent convergence.
+
+00:11:20.556 --> 00:11:24.324
+For ratio negative one and first term three, the partial sums alternate
+
+00:11:24.324 --> 00:11:24.696
+between
+
+00:11:24.696 --> 00:11:27.116
+three and zero and do not approach one limit.
+
+00:11:28.056 --> 00:11:32.098
+Ratio one repeats the same nonzero term, and ratios with magnitude greater
+
+00:11:32.098 --> 00:11:32.316
+than
+
+00:11:32.316 --> 00:11:34.116
+one do not give a finite limit.
+
+00:11:34.576 --> 00:11:37.356
+The all zero sequence is a separate trivial exception.
+
+00:11:38.136 --> 00:11:42.736
+A finite GP sum remains valid for any specified finite term count with its
+
+00:11:42.736 --> 00:11:43.936
+appropriate ratio case.
+
+00:11:44.616 --> 00:11:47.816
+Always check convergence before using the infinite sum shortcut.

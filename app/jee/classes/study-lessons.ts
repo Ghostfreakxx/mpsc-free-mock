@@ -1,3 +1,4 @@
+import { sequencesSeriesLesson } from './sequences-series-study.ts';
 import { binomialTheoremLesson } from './binomial-theorem-study.ts';
 import { permutationsCombinationsLesson } from './permutations-combinations-study.ts';
 import { extendSetsComplexLesson } from './sets-complex-study.ts';
@@ -177,6 +178,7 @@ export const studyLessons: StudyLesson[] = [
   matricesDeterminantsLesson,
   permutationsCombinationsLesson,
   binomialTheoremLesson,
+  sequencesSeriesLesson,
 ];
 
 const moleConceptCompanion = studyLessons.find(lesson=>lesson.id==="mole-concept");

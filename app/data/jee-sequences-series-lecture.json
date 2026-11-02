@@ -1,0 +1,404 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English mathematics teacher. Distinguish terms from sums and read indices, negative ratios and fractions carefully. Include every final sentence. Use brief thinking pauses. Do not add material absent from the script.",
+  "title": "Sequences and series: AP, GP, inserted means and AM–GM",
+  "sources": [
+    {
+      "title": "NTA JEE Main 2026 Mathematics Unit 6",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax: Arithmetic Sequences",
+      "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-2-arithmetic-sequences"
+    },
+    {
+      "title": "OpenStax: Geometric Sequences",
+      "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/13-3-geometric-sequences"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Distinguish a term, a sequence and a partial sum",
+      "formula": "Sₙ=a₁+⋯+aₙ; aₙ=Sₙ−Sₙ₋₁ with S₀=0",
+      "points": [
+        "A sequence is ordered and indexed.",
+        "A series adds terms; a partial sum stops at a specified index.",
+        "Recover a term by subtracting successive partial sums."
+      ],
+      "script": "A sequence is an ordered list of terms indexed by integers. We will start the index at one unless another starting point is stated. If a sub n equals three n plus two, the first four terms are five, eight, eleven and fourteen. The formula supplies the rule; a short list of numbers alone can fit many different continuation rules. A series adds sequence terms. Its nth partial sum S sub n is the sum of the first n terms. A term and a partial sum are therefore different quantities. To recover a term from partial sums, subtract S sub n minus one from S sub n. Everything before the nth term cancels. Define S sub zero as zero so this also gives the first term. For S sub n equal to three n squared plus two n, substitution and subtraction give a sub n equal to six n minus one. The first term is five, and the next terms are eleven and seventeen. Their first three partial sums are five, sixteen and thirty three, agreeing with the given formula. Always label whether a supplied expression describes a term or a sum before applying an arithmetic or geometric progression formula.",
+      "board": [
+        "aₙ=3n+2 ⇒ a₄=14",
+        "Sₙ adds the first n terms",
+        "aₙ=Sₙ−Sₙ₋₁; S₀=0",
+        "Sₙ=3n²+2n ⇒ aₙ=6n−1"
+      ]
+    },
+    {
+      "title": "Derive the nth term of an arithmetic progression",
+      "formula": "aₙ=a+(n−1)d; a_q−a_p=(q−p)d",
+      "points": [
+        "An AP has a constant successive difference.",
+        "The first term involves zero steps of the difference.",
+        "Use index gaps to infer a missing difference."
+      ],
+      "script": "An arithmetic progression has a constant difference between consecutive terms. Call its first term a and common difference d. The terms are a, a plus d, a plus two d, and so on. The nth term has n minus one additions of d, giving a sub n equal to a plus n minus one times d. Using n instead would shift every term by one step. The difference may be positive, zero or negative. A list of decreasing numbers can therefore be an AP. Suppose the third term is eight and the eighth term is twenty three. Moving from position three to position eight takes five steps, so five d equals fifteen and d equals three. The first term then satisfies a plus two times three equals eight, giving a equal to two. Its tenth term is two plus nine times three, or twenty nine. Check both originally supplied terms before trusting the result. More generally, the difference of terms at positions q and p is q minus p times d. This avoids solving two full equations unnecessarily. If the index itself is unknown, remember that a term position must be an allowed integer, not merely an algebraic root of an equation.",
+      "board": [
+        "a₃=8; a₈=23",
+        "5d=23−8 ⇒ d=3",
+        "a=8−2×3=2",
+        "a₁₀=2+9×3=29"
+      ]
+    },
+    {
+      "title": "Pair an AP with its reverse to derive its finite sum",
+      "formula": "Sₙ=n(a+l)/2=n[2a+(n−1)d]/2",
+      "points": [
+        "The first and last term have the same sum as each reversed pair.",
+        "The formula remains valid for a negative common difference.",
+        "A requested number of terms must be a positive integer."
+      ],
+      "script": "Write the first n AP terms in forward order, then write the same sum in reverse. Adding the two lines pairs the first term with the last, the second with the second last, and so on. Every pair has sum a plus l, where l is the last term. There are n pairs, so twice S sub n equals n multiplied by the sum a plus l. Divide by two and replace l by a plus n minus one times d to obtain the usual finite sum formula. For first term two, difference three and ten terms, the last term is twenty nine. The sum is ten times thirty one divided by two, or one hundred fifty five. The formula does not require n to be even: reversing and adding always produces n pairs across the two lines. The first n positive odd numbers have first term one and last term two n minus one, so their sum is n squared. If a sum condition is used to solve for n, substitute back and reject negative or fractional term counts. For our AP, the sum equation n multiplied by the quantity three n plus one, all divided by two, equals one hundred fifty five. Solving gives ten terms. Substituting ten into the finite sum confirms the required total.",
+      "board": [
+        "AP: 2,5,8,…,29 has 10 terms",
+        "2S₁₀=10(2+29)",
+        "S₁₀=155",
+        "1+3+⋯+(2n−1)=n²"
+      ]
+    },
+    {
+      "title": "Insert arithmetic means by counting the gaps",
+      "formula": "Insert k means between a,b: d=(b−a)/(k+1)",
+      "points": [
+        "There are k+2 terms after insertion.",
+        "There are k+1 equal differences between the endpoints.",
+        "The arithmetic mean of two real numbers is their average."
+      ],
+      "script": "Inserting arithmetic means means filling the gaps between two endpoints so the complete list is an AP. If k numbers are inserted, the finished list has k plus two terms but only k plus one successive differences. Therefore the common difference is the final endpoint minus the first endpoint, divided by k plus one. Insert three arithmetic means between two and eighteen. There are four gaps, so d equals sixteen divided by four, or four. The completed AP is two, six, ten, fourteen, eighteen. The inserted means are six, ten and fourteen. Dividing the endpoint difference by three would count inserted numbers instead of gaps and would fail to reach the final endpoint. With one inserted mean m between u and v, equal differences give m minus u equal to v minus m. Thus m equals u plus v divided by two. Between four and sixteen the arithmetic mean is ten. Arithmetic means can be inserted between negative or decreasing real endpoints as well; the difference simply takes the appropriate sign. An internal AP term is the arithmetic mean of its two immediate neighbours. Write the full endpoint list once to check the number of gaps before using the insertion formula.",
+      "board": [
+        "Insert 3 means between 2 and 18",
+        "4 gaps ⇒ d=(18−2)/4=4",
+        "2,6,10,14,18",
+        "AM of 4 and 16 is (4+16)/2=10"
+      ]
+    },
+    {
+      "title": "Recognize geometric progressions and track the ratio sign",
+      "formula": "aₙ=arⁿ⁻¹; aₙ₊₁=raₙ",
+      "points": [
+        "A GP multiplies each term by a fixed factor.",
+        "Ratios obtained by division require nonzero previous terms.",
+        "A negative ratio can alternate signs."
+      ],
+      "script": "A geometric progression multiplies each term by the same fixed factor r. Starting with first term a, its terms are a, a r, a r squared, and so on. The nth term is a times r to the power n minus one. For first term three and ratio two, the sixth term is three times two to the fifth, or ninety six. A constant difference would describe an AP instead. Negative ratios are allowed: starting at two with ratio negative three gives two, negative six, eighteen and negative fifty four. Keep the negative base in brackets when taking powers. For nonzero terms, divide a term by its predecessor to find the common ratio. The recurrence a sub n plus one equals r times a sub n states the multiplication rule without dividing. This distinction matters around zero: the all zero sequence does not reveal a unique ratio by division. With nonzero first term and ratio zero, the later terms are all zero, so quotients after the first transition are undefined even though the recurrence remains meaningful. In ordinary nonzero GP problems, verify the same ratio between the given consecutive terms and then count the number of multiplication steps.",
+      "board": [
+        "GP: 3,6,12,24,48,96",
+        "a₆=3×2⁵=96",
+        "Ratio −3: 2,−6,18,−54",
+        "Use recurrence when division is undefined"
+      ]
+    },
+    {
+      "title": "Derive a finite GP sum and handle ratio one separately",
+      "formula": "Sₙ=a(1−rⁿ)/(1−r), r≠1; Sₙ=na when r=1",
+      "points": [
+        "Subtract r times the sum from the original sum.",
+        "Most intermediate terms cancel.",
+        "The denominator restriction belongs to the formula."
+      ],
+      "script": "The finite GP sum starts as a plus a r plus a r squared, continuing to a times r to the power n minus one. Multiply that sum by r. Subtracting the new line from the original cancels the intermediate powers, leaving one minus r times S sub n equal to a times one minus r to the power n. If r is not one, divide by one minus r. The same finite formula may be rearranged by multiplying numerator and denominator by negative one. For a equal to three, r equal to two and n equal to six, the sum is three times sixty three, or one hundred eighty nine. Directly adding three, six, twelve, twenty four, forty eight and ninety six confirms it. When r equals one, every term equals a and the sum is n a. Substituting r equal to one into the divided formula would give an undefined fraction, so use the separate case. Negative ratios work in finite sums too. For a equal to two and r equal to negative one, an even number of terms sums to zero and an odd number sums to two. The finite sum keeps both the term count and the ratio sign. Evaluate the final power with those conditions in place.",
+      "board": [
+        "S₆=3(2⁶−1)/(2−1)=189",
+        "Subtract rSₙ from Sₙ to cancel",
+        "r=1: Sₙ=na, not a 0/0 formula",
+        "2−2+2−2+2=2"
+      ]
+    },
+    {
+      "title": "Insert positive geometric means and retain sign conditions",
+      "formula": "Insert k positive means between a,b>0: r=(b/a)¹/⁽ᵏ⁺¹⁾>0",
+      "points": [
+        "The endpoint ratio spans k+1 multiplication steps.",
+        "Positive inserted means select a positive ratio.",
+        "An unrestricted real GP may admit another sign branch."
+      ],
+      "script": "To insert geometric means between positive endpoints, construct a GP including both endpoints. With k inserted terms there are k plus one ratio steps, so r to the power k plus one equals the last endpoint divided by the first. If all inserted terms must be positive, choose the positive ratio. Insert three positive geometric means between two and one hundred sixty two. The endpoint ratio is eighty one and there are four steps, giving r equal to three. The list is two, six, eighteen, fifty four, one hundred sixty two. The inserted means are six, eighteen and fifty four. The equation r to the fourth equals eighty one also has a negative real root, negative three. It gives a different real GP with alternating signs, so it is excluded by the positive insertion requirement, not by algebra alone. For one positive geometric mean between u and v, the middle term squared equals u v and the positive value is the square root of u v. Between four and sixteen that value is eight. If positivity were not specified for a real three term GP, negative eight could also be its middle term. State the sign convention before taking an even root in a progression problem.",
+      "board": [
+        "2,6,18,54,162 is a positive GP",
+        "r⁴=162/2=81 ⇒ positive r=3",
+        "Three inserted means: 6,18,54",
+        "Positive GM of 4 and 16 is 8"
+      ]
+    },
+    {
+      "title": "Prove and interpret the relation between AM and GM",
+      "formula": "A=(u+v)/2≥√(uv)=G for u,v>0; equality iff u=v",
+      "points": [
+        "Positivity makes the real geometric mean well defined in this model.",
+        "The difference of square roots has a nonnegative square.",
+        "Given both means, recover the sum and product of the numbers."
+      ],
+      "script": "For two positive real numbers u and v, their arithmetic mean A is half their sum, and their positive geometric mean G is the square root of their product. Take the difference between the square root of u and the square root of v, then square that entire difference. The result is nonnegative. Expanding gives u plus v at least twice the square root of u v, proving A is at least G. Equality holds exactly when the two square roots, and hence the two numbers, are equal. Another useful identity says that A squared minus G squared is one quarter of the square of the difference u minus v. The original positivity assumptions matter: two negative numbers have a negative arithmetic mean, so the same inequality with a positive square root cannot simply be transferred to them. Suppose A is ten and G is eight. Then the numbers have sum twenty and product sixty four. They are roots of t squared minus twenty t plus sixty four equals zero, giving four and sixteen. Check both means to confirm the answer. A pair of positive numbers cannot have A smaller than G, so such supplied mean values would be inconsistent. Distinguish a condition that has no admissible pair from one that merely needs a different ordering of the same pair.",
+      "board": [
+        "A=(u+v)/2; G=√(uv), u,v>0",
+        "(√u−√v)²≥0 ⇒ A≥G",
+        "A=G exactly when u=v",
+        "A=10,G=8 ⇒ numbers 4 and 16"
+      ]
+    },
+    {
+      "title": "Apply AM–GM with the equality condition and domain",
+      "formula": "u+v=20, u,v>0 ⇒ uv≤100; x+9/x≥6 for x>0",
+      "points": [
+        "Use positivity before applying AM–GM.",
+        "A bound is attained only if the equality condition is feasible.",
+        "State the value of the variable where the extremum occurs."
+      ],
+      "script": "The AM GM inequality becomes an optimization tool when one quantity is fixed. For positive u and v with sum twenty, their arithmetic mean is ten. Their geometric mean is at most ten, so the product is at most one hundred. Equality occurs at u equal to v equal to ten, which satisfies the given sum. This proves both a bound and an attainable maximum. Conversely, if the product is thirty six, their sum is at least twelve, attained when both numbers are six. For x positive, apply the inequality to x and nine divided by x. Their product is nine, so their sum is at least six. Equality requires x equal to nine divided by x, giving x squared equal to nine. The positive domain selects x equal to three. Thus the minimum of x plus nine over x on the positive reals is six. Without that domain, the same minimum claim would be invalid. A rectangle with perimeter forty has positive side lengths summing to twenty, so its area is at most one hundred, attained by a square of side ten. In every application, name the two positive quantities and verify that their equality case obeys the original restrictions.",
+      "board": [
+        "u+v=20 ⇒ uv≤100",
+        "Equality: u=v=10",
+        "x+9/x≥6 for x>0",
+        "Equality: x=3 gives the minimum"
+      ]
+    },
+    {
+      "title": "Use an infinite GP sum only when its partial sums converge",
+      "formula": "S∞=a/(1−r) for |r|<1; nonzero a assumed for the usual convergence test",
+      "points": [
+        "An infinite series is defined through a limit of finite partial sums.",
+        "Both positive and negative ratios with magnitude below one qualify.",
+        "A finite GP sum does not require the infinite-series convergence condition."
+      ],
+      "script": "An infinite series is not evaluated by simply writing infinity in a finite formula. It is the limit of its partial sums when that limit exists. For a GP with nonzero first term a, the finite sum is a times one minus r to the power n divided by one minus r, for r not equal to one. If the absolute value of r is less than one, r to the power n tends to zero. The partial sums then tend to a divided by one minus r. For first term three and ratio one half, the infinite sum is six. With the same first term and ratio negative one half, it is two; the terms alternate but their sizes shrink. A negative ratio does not automatically prevent convergence. For ratio negative one and first term three, the partial sums alternate between three and zero and do not approach one limit. Ratio one repeats the same nonzero term, and ratios with magnitude greater than one do not give a finite limit. The all zero sequence is a separate trivial exception. A finite GP sum remains valid for any specified finite term count with its appropriate ratio case. Always check convergence before using the infinite sum shortcut.",
+      "board": [
+        "3+3/2+3/4+⋯ = 6",
+        "3−3/2+3/4−⋯ = 2",
+        "Require |r|<1 for nonzero first term",
+        "r=−1: partial sums 3,0,3,0,…"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "For aₙ=3n+2 starting at n=1, a₄ equals:",
+      "options": [
+        "11",
+        "14",
+        "17",
+        "12"
+      ],
+      "answer": 1,
+      "explanation": "The expression describes an individual term. Substitute n=4 to obtain a₄=3×4+2=14, rather than adding four terms."
+    },
+    {
+      "question": "If Sₙ=3n²+2n for n≥0, then aₙ=Sₙ−Sₙ₋₁ equals:",
+      "options": [
+        "3n+2",
+        "6n+1",
+        "6n−1",
+        "3n²"
+      ],
+      "answer": 2,
+      "explanation": "Subtract 3(n−1)²+2(n−1) from 3n²+2n. The quadratic terms cancel, leaving 6n−1; S₀=0 also gives the first term correctly."
+    },
+    {
+      "question": "An AP has a₃=8 and a₈=23. Its common difference is:",
+      "options": [
+        "5",
+        "15",
+        "2",
+        "3"
+      ],
+      "answer": 3,
+      "explanation": "The two positions are five steps apart. Thus (8−3)d=23−8=15, giving d=3."
+    },
+    {
+      "question": "The tenth term of the AP 2,5,8,… is:",
+      "options": [
+        "29",
+        "32",
+        "27",
+        "30"
+      ],
+      "answer": 0,
+      "explanation": "There are nine difference steps from the first to the tenth term. Thus a₁₀=2+(10−1)×3=29."
+    },
+    {
+      "question": "The sum of the first ten terms of 2,5,8,… is:",
+      "options": [
+        "145",
+        "155",
+        "165",
+        "290"
+      ],
+      "answer": 1,
+      "explanation": "The tenth term is 29, so S₁₀=10(2+29)/2=155. The first and last terms, not the difference alone, determine the paired sum."
+    },
+    {
+      "question": "The sum of the first ten positive odd integers is:",
+      "options": [
+        "90",
+        "110",
+        "100",
+        "55"
+      ],
+      "answer": 2,
+      "explanation": "The first n positive odd numbers sum to n². For n=10 the value is 100; pairing first term 1 and last term 19 gives the same result."
+    },
+    {
+      "question": "Three arithmetic means inserted between 2 and 18 are:",
+      "options": [
+        "6,12,18",
+        "4,8,12",
+        "5,10,15",
+        "6,10,14"
+      ],
+      "answer": 3,
+      "explanation": "Three inserted numbers produce four equal gaps between the endpoints. The difference is (18−2)/4=4, giving inserted terms 6,10,14."
+    },
+    {
+      "question": "The arithmetic mean of 4 and 16 is:",
+      "options": [
+        "10",
+        "8",
+        "12",
+        "20"
+      ],
+      "answer": 0,
+      "explanation": "The arithmetic mean is half the sum: (4+16)/2=10. The positive geometric mean is a different quantity, equal to 8."
+    },
+    {
+      "question": "A GP has first term 3 and common ratio 2. Its sixth term is:",
+      "options": [
+        "48",
+        "96",
+        "192",
+        "64"
+      ],
+      "answer": 1,
+      "explanation": "The sixth term uses five multiplications by the ratio: a₆=3×2⁵=96. Using six powers would give the seventh term."
+    },
+    {
+      "question": "The fourth term of the GP 2,−6,18,… is:",
+      "options": [
+        "54",
+        "−36",
+        "−54",
+        "36"
+      ],
+      "answer": 2,
+      "explanation": "The common ratio is −3. Multiply the third term 18 by −3 to obtain −54; a negative ratio makes signs alternate in this example."
+    },
+    {
+      "question": "The sum of the first six terms of the GP 3,6,12,… is:",
+      "options": [
+        "96",
+        "192",
+        "93",
+        "189"
+      ],
+      "answer": 3,
+      "explanation": "For a=3 and r=2, S₆=3(2⁶−1)/(2−1)=3×63=189. The nth term and the sum of n terms are different."
+    },
+    {
+      "question": "A GP has a=7, r=1 and n=8. Its finite sum is:",
+      "options": [
+        "56",
+        "Undefined",
+        "7",
+        "64"
+      ],
+      "answer": 0,
+      "explanation": "At r=1 every term is 7, so S₈=8×7=56. Use the separate constant-sequence case instead of dividing by 1−r=0."
+    },
+    {
+      "question": "Three positive geometric means inserted between 2 and 162 are:",
+      "options": [
+        "4,16,64",
+        "6,18,54",
+        "8,24,72",
+        "3,9,27"
+      ],
+      "answer": 1,
+      "explanation": "Four ratio steps connect the endpoints, so r⁴=162/2=81. Positivity selects r=3, giving the inserted terms 6,18,54."
+    },
+    {
+      "question": "The positive geometric mean of 4 and 16 is:",
+      "options": [
+        "10",
+        "−8",
+        "8",
+        "16"
+      ],
+      "answer": 2,
+      "explanation": "The positive geometric mean is √(4×16)=√64=8. A negative middle term can satisfy an unrestricted real GP but is excluded by the word positive."
+    },
+    {
+      "question": "Two positive numbers have arithmetic mean 10 and geometric mean 8. They are:",
+      "options": [
+        "8 and 12",
+        "2 and 18",
+        "10 and 10",
+        "4 and 16"
+      ],
+      "answer": 3,
+      "explanation": "Their sum is 20 and product is 64. The roots of t²−20t+64=0 are 4 and 16, which give both stated means."
+    },
+    {
+      "question": "For positive u and v, equality in (u+v)/2≥√(uv) holds exactly when:",
+      "options": [
+        "u=v",
+        "u+v=1",
+        "uv=1",
+        "u=2v"
+      ],
+      "answer": 0,
+      "explanation": "The proof uses (√u−√v)²≥0. Equality occurs only when the square is zero, so √u=√v and hence u=v."
+    },
+    {
+      "question": "If u,v>0 and u+v=20, the greatest possible value of uv is:",
+      "options": [
+        "20",
+        "100",
+        "200",
+        "400"
+      ],
+      "answer": 1,
+      "explanation": "AM–GM gives √(uv)≤(u+v)/2=10, so uv≤100. The equality case u=v=10 is permitted and attains the bound."
+    },
+    {
+      "question": "For x>0, the minimum of x+9/x is:",
+      "options": [
+        "3",
+        "9",
+        "6",
+        "12"
+      ],
+      "answer": 2,
+      "explanation": "Apply AM–GM to the positive quantities x and 9/x. Their product is 9, so the sum is at least 6, attained at x=3."
+    },
+    {
+      "question": "The infinite GP 3+3/2+3/4+⋯ has sum:",
+      "options": [
+        "3",
+        "9",
+        "12",
+        "6"
+      ],
+      "answer": 3,
+      "explanation": "The ratio is 1/2, whose magnitude is below 1. The partial sums converge to a/(1−r)=3/(1−1/2)=6."
+    },
+    {
+      "question": "The infinite GP 3−3/2+3/4−⋯ has sum:",
+      "options": [
+        "2",
+        "6",
+        "No finite sum",
+        "3"
+      ],
+      "answer": 0,
+      "explanation": "The ratio is −1/2 and |r|<1, so the series converges. Its sum is 3/(1+1/2)=2; alternating signs alone do not imply divergence."
+    }
+  ]
+}

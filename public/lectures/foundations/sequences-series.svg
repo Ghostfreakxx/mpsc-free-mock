@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+<title id="title">Inserted arithmetic and geometric means use the number of transitions</title>
+<desc id="desc">Three inserted arithmetic means between two and eighteen are six, ten, fourteen. Three positive geometric means between two and one hundred sixty two are six, eighteen, fifty four. Each list has five terms and four transitions.</desc>
+<rect width="900" height="360" rx="18" fill="#f5faf7"/>
+<g fill="#20483e" font-family="Arial,sans-serif">
+<text x="30" y="43" font-size="26" font-weight="bold">THREE INSERTED MEANS CREATE FOUR GAPS</text>
+<rect x="24" y="66" width="852" height="108" rx="11" fill="#dcece4"/>
+<text x="44" y="103" font-size="24">AP: 2 → 6 → 10 → 14 → 18</text>
+<text x="44" y="145" font-size="22">Each step adds (18−2)/4 = 4.</text>
+<rect x="24" y="192" width="852" height="108" rx="11" fill="#e6edf0"/>
+<text x="44" y="229" font-size="24">Positive GP: 2 → 6 → 18 → 54 → 162</text>
+<text x="44" y="271" font-size="22">Each step multiplies by r=3; r⁴=162/2=81.</text>
+<text x="450" y="338" text-anchor="middle" font-size="18">Count transitions between endpoints. Keep the positivity condition when choosing a ratio.</text>
+</g></svg>
