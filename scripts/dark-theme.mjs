@@ -23,6 +23,7 @@ export const targets = [
   // The class board and its diagrams stay light "paper": their drawings have colours built in.
   { source: "app/jee/classes/lecture.module.css", scope: ':global(html[data-theme="dark"])', keep: /\.(board|ruler|chapterNumber|formula|steps)\b|Diagram\b/ },
   { source: "app/exam-simulator/simulator.module.css", scope: ':global(html[data-theme="dark"])' },
+  { source: "app/law/mjs/law.module.css", scope: ':global(html[data-theme="dark"])' },
 ];
 
 // --- Colour maths (OKLab / OKLCH) ---
