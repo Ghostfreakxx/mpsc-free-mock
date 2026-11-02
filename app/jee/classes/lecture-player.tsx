@@ -10,6 +10,7 @@ import styles from "./lecture.module.css";
 
 // Each class shows only its own diagram, so load diagrams on demand instead of bundling all of them into every class page.
 const KineticsDiagram = dynamic(() => import("./kinetics-diagram"));
+const MatricesDeterminantsDiagram = dynamic(() => import("./matrices-determinants-diagram"));
 const PhysicalChemistryDiagram = dynamic(() => import("./physical-chemistry-diagram"));
 const EquilibriumElectrochemistryDiagram = dynamic(() => import("./equilibrium-electrochemistry-diagram"));
 const PBlockDFDiagram = dynamic(() => import("./p-block-d-f-diagram"));
@@ -158,6 +159,7 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
           <p className={styles.chapterNumber}>CHAPTER {String(chapterIndex + 1).padStart(2, "0")} / {lesson.segments.length}</p>
           <h2>{chapter.title}</h2>
           {lesson.id === "chemical-kinetics" && <KineticsDiagram chapter={chapterIndex} />}
+          {lesson.id === "matrices-determinants" && <MatricesDeterminantsDiagram chapter={chapterIndex} />}
           {(lesson.id === "chemical-thermodynamics" || lesson.id === "solutions") && <PhysicalChemistryDiagram lesson={lesson.id} chapter={chapterIndex} />}
           {(lesson.id === "equilibrium" || lesson.id === "redox-electrochemistry") && <EquilibriumElectrochemistryDiagram lesson={lesson.id} chapter={chapterIndex} />}
           {(lesson.id === "p-block" || lesson.id === "d-f-block") && <PBlockDFDiagram lesson={lesson.id} chapter={chapterIndex} />}

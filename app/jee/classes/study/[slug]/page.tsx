@@ -16,6 +16,7 @@ export function generateStaticParams() {
 }
 
 const figureAlt: Record<string, string> = {
+  "matrices-determinants": "For A with rows (2,1) and (5,3), det(A)=1 and its inverse has rows (3,−1) and (−5,2). Multiplication gives the identity. The system 2x+y=5, 5x+3y=13 has solution x=2,y=1.",
   "p-block": "Groups 13 to 18 usually have ns2 np1 through ns2 np6 outer configurations, respectively. Helium is the 1s2 exception in Group 18. These patterns do not prescribe every oxidation state.",
   "d-f-block": "Iron loses its two 4s electrons before a 3d electron: neutral 3d6 4s2 becomes Fe2+ 3d6 and then Fe3+ 3d5. Ionic configurations differ from the neutral atom.",
   "practical-chemistry": "In the specified acidic reaction, one permanganate accepts five electrons and five iron(II) ions each supply one electron. This gives a 1:5 mole ratio, not a universal equal-volume rule.",
@@ -62,7 +63,7 @@ export default async function StudyPage({ params }: { params: Promise<{ slug: st
   const lesson = writtenLesson ? withLectureClarifications(writtenLesson, recording)
     : recording && unitIndex >= 0 ? lectureStudyLesson(recording, unitIndex + 1, physicsCoverage[unitIndex].remaining) : undefined;
   if (!lesson) notFound();
-  const svgFigure = ["chemistry-foundations", "atomic-spectra", "periodic-trends", "chemical-bonding", "chemical-thermodynamics", "solutions", "equilibrium", "redox-electrochemistry", "chemical-kinetics", "coordination-compounds", "organic-principles", "hydrocarbons", "organic-halogens", "organic-oxygen", "organic-nitrogen", "biomolecules", "purification-analysis", "p-block", "d-f-block", "practical-chemistry"].includes(lesson.id);
+  const svgFigure = ["matrices-determinants", "chemistry-foundations", "atomic-spectra", "periodic-trends", "chemical-bonding", "chemical-thermodynamics", "solutions", "equilibrium", "redox-electrochemistry", "chemical-kinetics", "coordination-compounds", "organic-principles", "hydrocarbons", "organic-halogens", "organic-oxygen", "organic-nitrogen", "biomolecules", "purification-analysis", "p-block", "d-f-block", "practical-chemistry"].includes(lesson.id);
   const subjectLessons = writtenLesson ? studyLessons.filter(item => item.subject === lesson.subject) : lectures.map(item => ({ id: item.id, title: item.title }));
   const position = subjectLessons.findIndex(item => item.id === lesson.id);
   const previous = subjectLessons[position - 1];

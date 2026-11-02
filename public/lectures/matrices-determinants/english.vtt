@@ -1,0 +1,700 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.720
+Welcome to our first recorded mathematics class.
+
+00:00:03.180 --> 00:00:07.720
+A matrix is a rectangular arrangement of entries, with rows running across and
+
+00:00:07.720 --> 00:00:08.700
+columns running down.
+
+00:00:09.280 --> 00:00:12.560
+Its order is the number of rows followed by the number of columns.
+
+00:00:13.240 --> 00:00:17.703
+A matrix with two rows and three columns has order two by three, even though
+
+00:00:17.703 --> 00:00:17.820
+it
+
+00:00:17.820 --> 00:00:18.820
+contains six entries.
+
+00:00:19.520 --> 00:00:23.100
+The entry a sub i j lies in row i and column j.
+
+00:00:24.120 --> 00:00:27.900
+Equality requires equal orders and equality at every corresponding position.
+
+00:00:27.900 --> 00:00:31.920
+A row matrix has one row; a column matrix has one column.
+
+00:00:32.520 --> 00:00:35.540
+A square matrix has the same number of rows and columns.
+
+00:00:36.140 --> 00:00:39.720
+Its main diagonal joins positions with equal row and column indices.
+
+00:00:40.520 --> 00:00:44.260
+In a diagonal matrix, all entries outside that diagonal are zero.
+
+00:00:45.120 --> 00:00:47.260
+Diagonal entries themselves may also be zero.
+
+00:00:47.780 --> 00:00:51.880
+A scalar matrix is a diagonal matrix with every diagonal entry equal
+
+00:00:51.880 --> 00:00:57.023
+to the same scalar. The identity matrix has diagonal entries one and all other
+
+00:00:57.023 --> 00:00:57.880
+entries zero.
+
+00:00:57.880 --> 00:01:02.693
+Every identity matrix is scalar, but a scalar matrix with diagonal entry two
+
+00:01:02.693 --> 00:01:02.820
+is
+
+00:01:02.820 --> 00:01:03.460
+not an identity.
+
+00:01:04.240 --> 00:01:07.700
+A zero matrix has every entry zero and need not be square.
+
+00:01:08.500 --> 00:01:11.760
+Before any calculation, write the order and check the defining condition.
+
+00:01:12.380 --> 00:01:16.200
+A name such as square describes structure, not whether an inverse exists.
+
+00:01:17.112 --> 00:01:22.032
+Matrix addition pairs corresponding entries, so the two matrices must have the
+
+00:01:22.032 --> 00:01:22.532
+same order.
+
+00:01:23.412 --> 00:01:25.792
+Scalar multiplication multiplies every entry.
+
+00:01:26.712 --> 00:01:30.792
+Multiplying a two by two matrix by three changes its entries, not its order.
+
+00:01:31.752 --> 00:01:33.812
+Transposition exchanges rows with columns.
+
+00:01:34.512 --> 00:01:40.072
+If A has order m by n, its transpose has order n by m, and the entry at row i
+
+00:01:40.072 --> 00:01:43.272
+column j becomes the entry at row j column i.
+
+00:01:43.892 --> 00:01:46.232
+Transposing twice returns the original matrix.
+
+00:01:46.872 --> 00:01:50.232
+Transposition distributes over addition and scalar multiplication.
+
+00:01:50.992 --> 00:01:54.372
+A real square matrix is symmetric when its transpose equals itself.
+
+00:01:54.932 --> 00:01:58.072
+It is skew symmetric when its transpose is the negative of itself.
+
+00:01:58.792 --> 00:02:02.712
+For a skew symmetric real matrix, each diagonal entry equals its own negative
+
+00:02:02.712 --> 00:02:04.292
+and therefore must be zero.
+
+00:02:04.852 --> 00:02:09.492
+The zero diagonal alone is not sufficient: opposite off diagonal entries must
+
+00:02:09.492 --> 00:02:10.692
+also have opposite signs.
+
+00:02:11.412 --> 00:02:15.472
+Every real square matrix can be decomposed into a symmetric part and a skew
+
+00:02:15.472 --> 00:02:16.092
+symmetric part.
+
+00:02:16.232 --> 00:02:20.552
+Take half the sum with its transpose for the symmetric part, and half the
+
+00:02:20.552 --> 00:02:22.152
+difference for the skew symmetric part.
+
+00:02:22.952 --> 00:02:24.492
+Adding those parts restores A.
+
+00:02:25.212 --> 00:02:29.832
+For A with rows one, three and one, two, the symmetric part has rows one, two
+
+00:02:29.832 --> 00:02:30.712
+and two, two.
+
+00:02:31.392 --> 00:02:34.472
+The skew part has rows zero, one and negative one, zero.
+
+00:02:35.132 --> 00:02:38.912
+This decomposition preserves the order and can be checked entry by entry.
+
+00:02:39.120 --> 00:02:44.060
+Matrix multiplication combines a row of the first matrix with a column of the
+
+00:02:44.060 --> 00:02:44.280
+second.
+
+00:02:45.180 --> 00:02:48.671
+Multiply corresponding entries along that row and column, then add the
+
+00:02:48.671 --> 00:02:49.120
+products.
+
+00:02:49.920 --> 00:02:54.940
+A matrix of order m by n can multiply one of order n by p, producing a matrix
+
+00:02:54.940 --> 00:02:56.140
+of order m by p.
+
+00:02:56.540 --> 00:02:59.480
+The inner dimensions agree and the outer dimensions remain.
+
+00:03:00.300 --> 00:03:05.180
+With A having rows one, two and zero, one, and B having rows one, zero and
+
+00:03:05.180 --> 00:03:09.040
+three, one, calculate the first entry of A B.
+
+00:03:09.040 --> 00:03:12.180
+It is one times one plus two times three, giving seven.
+
+00:03:13.080 --> 00:03:16.480
+The complete product has rows seven, two and three, one.
+
+00:03:17.020 --> 00:03:20.660
+Reverse the order and B A has rows one, two and three, seven.
+
+00:03:21.700 --> 00:03:23.800
+Thus both products exist but differ.
+
+00:03:24.880 --> 00:03:29.160
+Matrix multiplication is associative and distributive, yet it is generally not
+
+00:03:29.160 --> 00:03:29.560
+commutative.
+
+00:03:30.260 --> 00:03:34.100
+Even a product equal to the zero matrix does not force one factor to be zero.
+
+00:03:34.920 --> 00:03:39.500
+For example, the diagonal matrices with diagonals one, zero and zero, one have
+
+00:03:39.500 --> 00:03:40.220
+zero product.
+
+00:03:41.120 --> 00:03:46.060
+In a transpose of a product, reverse the factor order: the transpose of A B is
+
+00:03:46.060 --> 00:03:47.680
+B transpose times A transpose.
+
+00:03:48.620 --> 00:03:53.800
+Finally, A X equals A Y does not permit cancellation unless A is known to be
+
+00:03:53.800 --> 00:03:54.480
+invertible.
+
+00:03:54.940 --> 00:03:59.120
+Always check order, compute row by column, and justify any cancellation.
+
+00:03:59.472 --> 00:04:04.612
+For a two by two matrix with first row a, b and second row c, d, the
+
+00:04:04.612 --> 00:04:06.792
+determinant is a d minus b c.
+
+00:04:06.792 --> 00:04:08.512
+It is a scalar, not a new matrix.
+
+00:04:09.252 --> 00:04:13.932
+With rows two, one and five, three, the determinant is six minus five, or one.
+
+00:04:14.592 --> 00:04:18.332
+Determinants are defined here for square matrices; do not assign this formula
+
+00:04:18.332 --> 00:04:19.572
+to a rectangular array.
+
+00:04:20.572 --> 00:04:23.012
+Several properties make larger evaluations faster.
+
+00:04:23.952 --> 00:04:26.052
+Swapping two rows changes the determinant sign.
+
+00:04:26.052 --> 00:04:29.912
+Multiplying one row by k multiplies the determinant by k.
+
+00:04:30.672 --> 00:04:34.192
+Adding a multiple of another row to a row leaves the determinant unchanged.
+
+00:04:34.972 --> 00:04:36.652
+These same statements hold for columns.
+
+00:04:37.532 --> 00:04:39.832
+Equal or proportional rows give determinant zero.
+
+00:04:40.512 --> 00:04:43.952
+A triangular matrix has determinant equal to the product of its diagonal
+
+00:04:43.952 --> 00:04:44.412
+entries.
+
+00:04:45.372 --> 00:04:49.132
+Transposing a matrix preserves its determinant, and the determinant of a
+
+00:04:49.132 --> 00:04:50.992
+product equals the product of the determinants.
+
+00:04:51.672 --> 00:04:53.452
+Be careful with scaling the whole matrix.
+
+00:04:53.452 --> 00:04:59.252
+In an n by n matrix, multiplying every entry by k scales all n rows, so the
+
+00:04:59.252 --> 00:05:01.652
+determinant is multiplied by k to the power n.
+
+00:05:02.572 --> 00:05:05.832
+For a two by two matrix the factor is k squared, not k.
+
+00:05:06.612 --> 00:05:10.832
+Finally, determinants are not generally additive: the determinant of A plus B
+
+00:05:10.832 --> 00:05:13.232
+is not generally the sum of their determinants.
+
+00:05:13.488 --> 00:05:17.728
+A minor is the determinant left after deleting a specified row and column.
+
+00:05:18.388 --> 00:05:22.608
+A cofactor attaches the sign negative one to the power i plus j to that minor.
+
+00:05:23.288 --> 00:05:26.728
+The first cofactor sign row is plus, minus, plus.
+
+00:05:27.288 --> 00:05:29.448
+The second is minus, plus, minus.
+
+00:05:30.168 --> 00:05:34.468
+To expand a determinant along a row, multiply each row entry by its own
+
+00:05:34.468 --> 00:05:35.688
+cofactor and add.
+
+00:05:36.588 --> 00:05:38.968
+Choose a row or column containing zeros when possible.
+
+00:05:39.528 --> 00:05:44.628
+Consider A with rows one, one, zero; zero, one, one; and one, zero, one.
+
+00:05:45.368 --> 00:05:46.328
+Expand along its first row.
+
+00:05:46.908 --> 00:05:50.528
+The first minor is one times one minus one times zero, giving one.
+
+00:05:51.148 --> 00:05:55.148
+The second minor is zero times one minus one times one, giving negative one.
+
+00:05:55.628 --> 00:05:59.568
+Its cofactor sign is negative, so the second cofactor is positive one.
+
+00:06:00.168 --> 00:06:04.448
+The determinant is one times one plus one times one plus zero, giving two.
+
+00:06:04.448 --> 00:06:08.508
+A common mistake is to apply the negative sign twice or forget it entirely.
+
+00:06:09.148 --> 00:06:12.468
+An independent check is useful: subtract the first row from the third,
+
+00:06:13.188 --> 00:06:16.648
+producing third row zero, negative one, one, without changing the determinant.
+
+00:06:17.488 --> 00:06:20.188
+Expansion along the first column then gives two again.
+
+00:06:20.888 --> 00:06:24.788
+Determinant preserving row additions simplify evaluation, but swapping or
+
+00:06:24.788 --> 00:06:28.448
+scaling rows requires tracking the corresponding factor or sign.
+
+00:06:28.752 --> 00:06:33.758
+The adjoint, also called the adjugate, is the transpose of the cofactor
+
+00:06:33.758 --> 00:06:34.252
+matrix.
+
+00:06:35.052 --> 00:06:39.072
+The transpose step matters: writing cofactors in their original positions
+
+00:06:39.072 --> 00:06:40.972
+generally does not give the adjoint.
+
+00:06:41.812 --> 00:06:45.472
+Multiplying a square matrix by its adjoint, in either order, gives its
+
+00:06:45.472 --> 00:06:46.832
+determinant times the identity.
+
+00:06:47.752 --> 00:06:51.752
+Consequently, a matrix has an inverse exactly when its determinant is nonzero.
+
+00:06:52.612 --> 00:06:54.212
+Divide its adjoint by that determinant.
+
+00:06:54.212 --> 00:06:59.770
+For a two by two matrix, swap the two diagonal entries and negate the other
+
+00:06:59.770 --> 00:06:59.992
+two
+
+00:06:59.992 --> 00:07:01.192
+entries to obtain its adjoint.
+
+00:07:01.952 --> 00:07:06.992
+For A with rows two, one and five, three, the determinant is one, so its
+
+00:07:06.992 --> 00:07:10.772
+inverse has rows three, negative one and negative five, two.
+
+00:07:11.532 --> 00:07:15.892
+Multiplying A by that proposed inverse gives rows one, zero and zero, one.
+
+00:07:16.212 --> 00:07:21.392
+For our three by three example with rows one, one, zero; zero, one, one; and
+
+00:07:21.392 --> 00:07:26.077
+one, zero, one, the adjoint has rows one, negative one, one; one, one,
+
+00:07:26.077 --> 00:07:26.612
+negative
+
+00:07:26.612 --> 00:07:28.932
+one; and negative one, one, one.
+
+00:07:29.432 --> 00:07:32.732
+Its inverse is half that array because the determinant is two.
+
+00:07:33.272 --> 00:07:37.192
+A zero determinant does not mean the adjoint is always zero, and division by
+
+00:07:37.192 --> 00:07:38.892
+zero is never an inverse formula.
+
+00:07:39.672 --> 00:07:44.232
+Also, the inverse of A B is B inverse times A inverse when both inverses
+
+00:07:44.232 --> 00:07:44.612
+exist.
+
+00:07:45.092 --> 00:07:47.652
+Put B inverse first and A inverse second.
+
+00:07:48.192 --> 00:07:50.992
+Check the factor order before simplifying a product inverse.
+
+00:07:51.312 --> 00:07:56.792
+A system of linear equations becomes A X equals B when each row of A contains
+
+00:07:56.792 --> 00:07:58.812
+the coefficients in the same variable order.
+
+00:07:59.672 --> 00:08:04.732
+For two x plus y equals five and five x plus three y equals thirteen, choose X
+
+00:08:04.732 --> 00:08:06.132
+as the column x, y.
+
+00:08:06.732 --> 00:08:11.852
+A has rows two, one and five, three, and B has entries five, thirteen.
+
+00:08:11.852 --> 00:08:14.712
+The determinant is one, so a unique solution exists.
+
+00:08:15.512 --> 00:08:18.272
+Multiply the inverse of A on the left of both sides.
+
+00:08:18.272 --> 00:08:22.532
+This gives X equals A inverse times B, not B times A inverse.
+
+00:08:23.452 --> 00:08:27.272
+Using inverse rows three, negative one and negative five, two, the first
+
+00:08:27.272 --> 00:08:30.572
+component is fifteen minus thirteen, giving x equal to two.
+
+00:08:31.072 --> 00:08:34.992
+The second is negative twenty five plus twenty six, giving y equal to one.
+
+00:08:35.732 --> 00:08:39.392
+Substitute: two times two plus one equals five, and five times two plus three
+
+00:08:39.392 --> 00:08:41.072
+times one equals thirteen.
+
+00:08:41.072 --> 00:08:41.972
+Both equations check.
+
+00:08:42.612 --> 00:08:46.053
+A missing variable contributes coefficient zero; it does not remove its
+
+00:08:46.053 --> 00:08:46.392
+column.
+
+00:08:46.712 --> 00:08:50.532
+If an equation is written with constants on both sides, collect variable terms
+
+00:08:50.532 --> 00:08:52.292
+and constants before building the matrix.
+
+00:08:53.012 --> 00:08:56.853
+The inverse method is available only after checking the determinant is
+
+00:08:56.853 --> 00:08:57.292
+nonzero.
+
+00:08:57.292 --> 00:09:01.952
+A zero determinant sends us to consistency analysis rather than allowing us to
+
+00:09:01.952 --> 00:09:03.672
+conclude automatically that there is no solution.
+
+00:09:04.368 --> 00:09:09.828
+Now take three equations: x plus y equals three; y plus z equals five;
+
+00:09:10.268 --> 00:09:12.008
+and x plus z equals four.
+
+00:09:12.588 --> 00:09:17.668
+In variable order x, y, z, the coefficient matrix has rows one, one, zero;
+
+00:09:18.188 --> 00:09:20.508
+zero, one, one; and one, zero, one.
+
+00:09:20.948 --> 00:09:23.948
+The constant column has entries three, five, four.
+
+00:09:24.128 --> 00:09:28.424
+We already evaluated the coefficient determinant as two, so the inverse
+
+00:09:28.424 --> 00:09:28.848
+exists.
+
+00:09:29.268 --> 00:09:34.348
+Its adjoint has rows one, negative one, one; one, one, negative one; and
+
+00:09:34.348 --> 00:09:35.648
+negative one, one, one.
+
+00:09:36.568 --> 00:09:39.768
+Multiply that adjoint by the constant column before dividing by two.
+
+00:09:40.488 --> 00:09:44.828
+The first component is three minus five plus four, giving two; after division,
+
+00:09:45.008 --> 00:09:45.688
+x is one.
+
+00:09:46.208 --> 00:09:50.648
+The second is three plus five minus four, giving four; hence y is two.
+
+00:09:51.208 --> 00:09:55.588
+The third is negative three plus five plus four, giving six; hence z is three.
+
+00:09:55.588 --> 00:10:00.428
+Verify all three original equations: one plus two is three, two plus three is
+
+00:10:00.428 --> 00:10:02.588
+five, and one plus three is four.
+
+00:10:02.948 --> 00:10:06.728
+A useful independent solution is to add the first and third equations and
+
+00:10:06.728 --> 00:10:09.708
+subtract the second, obtaining two x equals two.
+
+00:10:10.208 --> 00:10:11.628
+This agrees with the matrix method.
+
+00:10:12.268 --> 00:10:16.497
+The point of the inverse calculation is to organize a systematic method, not
+
+00:10:16.497 --> 00:10:16.608
+to
+
+00:10:16.608 --> 00:10:17.568
+forbid a shorter check.
+
+00:10:18.128 --> 00:10:22.328
+When a parameter enters a coefficient, identify determinant zero cases before
+
+00:10:22.328 --> 00:10:23.548
+dividing by its expression.
+
+00:10:23.784 --> 00:10:27.264
+A zero determinant means the coefficient matrix is singular.
+
+00:10:27.984 --> 00:10:32.184
+It does not by itself distinguish no solution from infinitely many solutions.
+
+00:10:33.104 --> 00:10:37.344
+Compare x plus y equals two with two x plus two y equals four.
+
+00:10:38.364 --> 00:10:42.204
+Subtract twice the first equation from the second and obtain zero equals zero.
+
+00:10:42.704 --> 00:10:44.104
+The second equation is redundant.
+
+00:10:44.964 --> 00:10:50.264
+Set y equal to a free real parameter t and x equal to two minus t; infinitely
+
+00:10:50.264 --> 00:10:51.864
+many pairs solve both equations.
+
+00:10:52.424 --> 00:10:56.444
+Change the second constant to five and the same subtraction gives zero equals
+
+00:10:56.444 --> 00:10:56.724
+one.
+
+00:10:57.324 --> 00:11:00.044
+This is a contradiction, so no solution exists.
+
+00:11:00.704 --> 00:11:03.484
+The coefficient determinants are identical in these two examples.
+
+00:11:04.184 --> 00:11:09.504
+For three variables, consider x plus y plus z equals three; x minus y plus z
+
+00:11:09.504 --> 00:11:12.404
+equals one; and two x plus two z equals four.
+
+00:11:12.924 --> 00:11:15.044
+The third equation is the sum of the first two.
+
+00:11:15.644 --> 00:11:19.964
+Subtracting the second equation from the first gives y equal to one, leaving x
+
+00:11:19.964 --> 00:11:21.124
+plus z equals two.
+
+00:11:21.124 --> 00:11:26.624
+Thus x equals two minus t and z equals t is an infinite solution family.
+
+00:11:27.524 --> 00:11:31.244
+Replacing the last constant four with five creates a contradiction after
+
+00:11:31.244 --> 00:11:33.404
+subtracting the first two equations from the third.
+
+00:11:34.204 --> 00:11:37.704
+Row reduction must act on the augmented matrix, including constants.
+
+00:11:38.764 --> 00:11:42.124
+Inspect the exceptional values of a parameter separately; a vanished
+
+00:11:42.124 --> 00:11:44.924
+denominator is a warning to analyze the original equations.
+
+00:11:45.784 --> 00:11:49.409
+Check their constants for a contradiction or a free variable before
+
+00:11:49.409 --> 00:11:50.004
+classifying
+
+00:11:50.004 --> 00:11:50.904
+the solution set.
+
+00:11:51.048 --> 00:11:55.588
+For three points in a plane, place their x coordinate, y coordinate and one in
+
+00:11:55.588 --> 00:11:57.508
+successive rows of a three by three determinant.
+
+00:11:58.428 --> 00:12:00.468
+Half its absolute value is the triangle area.
+
+00:12:01.228 --> 00:12:05.528
+The determinant itself is an oriented quantity: swapping two points reverses
+
+00:12:05.528 --> 00:12:08.688
+its sign, while the geometric area remains unchanged.
+
+00:12:09.948 --> 00:12:14.008
+For the points zero, zero; four, zero; and zero, three, expansion gives
+
+00:12:14.008 --> 00:12:16.448
+determinant twelve and area six square units.
+
+00:12:17.128 --> 00:12:20.848
+Subtracting the first point from the others reduces the same calculation to
+
+00:12:20.848 --> 00:12:24.088
+half the absolute value of a two by two determinant of the displacement
+
+00:12:24.088 --> 00:12:24.568
+vectors.
+
+00:12:25.608 --> 00:12:29.228
+If the determinant is zero, the three points are collinear or include repeated
+
+00:12:29.228 --> 00:12:31.208
+points, and the triangle is degenerate.
+
+00:12:32.468 --> 00:12:36.868
+For points one, two; three, four; and five, k, the determinant simplifies to
+
+00:12:36.868 --> 00:12:38.688
+two k minus twelve.
+
+00:12:38.688 --> 00:12:41.168
+Collinearity therefore requires k equal to six.
+
+00:12:41.868 --> 00:12:44.388
+Finish by connecting determinant tests across the class.
+
+00:12:44.788 --> 00:12:48.921
+The matrix with rows lambda, one and one, lambda has determinant lambda
+
+00:12:48.921 --> 00:12:49.328
+squared
+
+00:12:49.328 --> 00:12:49.928
+minus one.
+
+00:12:50.608 --> 00:12:54.288
+It is invertible for all real lambda except plus one and minus one.
+
+00:12:54.988 --> 00:12:58.508
+At an exceptional value, a linear system needs its constants checked for
+
+00:12:58.508 --> 00:12:58.948
+consistency.
+
+00:12:59.968 --> 00:13:03.828
+Determinants summarize important information, but zero area, a singular
+
+00:13:03.828 --> 00:13:07.908
+coefficient matrix and inconsistency are different conclusions attached to
+
+00:13:07.908 --> 00:13:08.588
+different questions.
+
+00:13:08.588 --> 00:13:13.028
+Name the question, compute the determinant, and interpret it in context.

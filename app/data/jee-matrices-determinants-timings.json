@@ -1,0 +1,1445 @@
+{
+  "duration": 793.4160000000211,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 77.11200000000203
+    },
+    {
+      "start": 77.11200000000203,
+      "end": 159.12000000000424
+    },
+    {
+      "start": 159.12000000000424,
+      "end": 239.4720000000064
+    },
+    {
+      "start": 239.4720000000064,
+      "end": 313.4880000000083
+    },
+    {
+      "start": 313.4880000000083,
+      "end": 388.75200000001024
+    },
+    {
+      "start": 388.75200000001024,
+      "end": 471.31200000001246
+    },
+    {
+      "start": 471.31200000001246,
+      "end": 544.3680000000144
+    },
+    {
+      "start": 544.3680000000144,
+      "end": 623.7840000000165
+    },
+    {
+      "start": 623.7840000000165,
+      "end": 711.0480000000189
+    },
+    {
+      "start": 711.0480000000189,
+      "end": 793.4160000000211
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.7200000286102295,
+      "text": "Welcome to our first recorded mathematics class.",
+      "chapter": 0
+    },
+    {
+      "start": 3.180000066757202,
+      "end": 7.71999979019165,
+      "text": "A matrix is a rectangular arrangement of entries, with rows running across and",
+      "chapter": 0
+    },
+    {
+      "start": 7.71999979019165,
+      "end": 8.699999809265137,
+      "text": "columns running down.",
+      "chapter": 0
+    },
+    {
+      "start": 9.279999732971191,
+      "end": 12.5600004196167,
+      "text": "Its order is the number of rows followed by the number of columns.",
+      "chapter": 0
+    },
+    {
+      "start": 13.239999771118164,
+      "end": 17.702563799344574,
+      "text": "A matrix with two rows and three columns has order two by three, even though",
+      "chapter": 0
+    },
+    {
+      "start": 17.702563799344574,
+      "end": 17.81999969482422,
+      "text": "it",
+      "chapter": 0
+    },
+    {
+      "start": 17.81999969482422,
+      "end": 18.81999969482422,
+      "text": "contains six entries.",
+      "chapter": 0
+    },
+    {
+      "start": 19.520000457763672,
+      "end": 23.100000381469727,
+      "text": "The entry a sub i j lies in row i and column j.",
+      "chapter": 0
+    },
+    {
+      "start": 24.1200008392334,
+      "end": 27.899999618530273,
+      "text": "Equality requires equal orders and equality at every corresponding position.",
+      "chapter": 0
+    },
+    {
+      "start": 27.899999618530273,
+      "end": 31.920000076293945,
+      "text": "A row matrix has one row; a column matrix has one column.",
+      "chapter": 0
+    },
+    {
+      "start": 32.52000045776367,
+      "end": 35.540000915527344,
+      "text": "A square matrix has the same number of rows and columns.",
+      "chapter": 0
+    },
+    {
+      "start": 36.13999938964844,
+      "end": 39.720001220703125,
+      "text": "Its main diagonal joins positions with equal row and column indices.",
+      "chapter": 0
+    },
+    {
+      "start": 40.52000045776367,
+      "end": 44.2599983215332,
+      "text": "In a diagonal matrix, all entries outside that diagonal are zero.",
+      "chapter": 0
+    },
+    {
+      "start": 45.119998931884766,
+      "end": 47.2599983215332,
+      "text": "Diagonal entries themselves may also be zero.",
+      "chapter": 0
+    },
+    {
+      "start": 47.779998779296875,
+      "end": 51.880001068115234,
+      "text": "A scalar matrix is a diagonal matrix with every diagonal entry equal",
+      "chapter": 0
+    },
+    {
+      "start": 51.880001068115234,
+      "end": 57.02285821097238,
+      "text": "to the same scalar. The identity matrix has diagonal entries one and all other",
+      "chapter": 0
+    },
+    {
+      "start": 57.02285821097238,
+      "end": 57.880001068115234,
+      "text": "entries zero.",
+      "chapter": 0
+    },
+    {
+      "start": 57.880001068115234,
+      "end": 62.69333306337014,
+      "text": "Every identity matrix is scalar, but a scalar matrix with diagonal entry two",
+      "chapter": 0
+    },
+    {
+      "start": 62.69333306337014,
+      "end": 62.81999969482422,
+      "text": "is",
+      "chapter": 0
+    },
+    {
+      "start": 62.81999969482422,
+      "end": 63.459999084472656,
+      "text": "not an identity.",
+      "chapter": 0
+    },
+    {
+      "start": 64.23999786376953,
+      "end": 67.69999694824219,
+      "text": "A zero matrix has every entry zero and need not be square.",
+      "chapter": 0
+    },
+    {
+      "start": 68.5,
+      "end": 71.76000213623047,
+      "text": "Before any calculation, write the order and check the defining condition.",
+      "chapter": 0
+    },
+    {
+      "start": 72.37999725341797,
+      "end": 76.19999694824219,
+      "text": "A name such as square describes structure, not whether an inverse exists.",
+      "chapter": 0
+    },
+    {
+      "start": 77.11200000000203,
+      "end": 82.03200007629597,
+      "text": "Matrix addition pairs corresponding entries, so the two matrices must have the",
+      "chapter": 1
+    },
+    {
+      "start": 82.03200007629597,
+      "end": 82.53200007629597,
+      "text": "same order.",
+      "chapter": 1
+    },
+    {
+      "start": 83.41200019073689,
+      "end": 85.79200030517781,
+      "text": "Scalar multiplication multiplies every entry.",
+      "chapter": 1
+    },
+    {
+      "start": 86.71200038147175,
+      "end": 90.79200030517781,
+      "text": "Multiplying a two by two matrix by three changes its entries, not its order.",
+      "chapter": 1
+    },
+    {
+      "start": 91.75200034332478,
+      "end": 93.81200076294148,
+      "text": "Transposition exchanges rows with columns.",
+      "chapter": 1
+    },
+    {
+      "start": 94.5119996185323,
+      "end": 100.07199908447468,
+      "text": "If A has order m by n, its transpose has order n by m, and the entry at row i",
+      "chapter": 1
+    },
+    {
+      "start": 100.07199908447468,
+      "end": 103.27199984741414,
+      "text": "column j becomes the entry at row j column i.",
+      "chapter": 1
+    },
+    {
+      "start": 103.89200068664753,
+      "end": 106.23200083923543,
+      "text": "Transposing twice returns the original matrix.",
+      "chapter": 1
+    },
+    {
+      "start": 106.87200022888386,
+      "end": 110.23199893188679,
+      "text": "Transposition distributes over addition and scalar multiplication.",
+      "chapter": 1
+    },
+    {
+      "start": 110.99200106811726,
+      "end": 114.37199832153523,
+      "text": "A real square matrix is symmetric when its transpose equals itself.",
+      "chapter": 1
+    },
+    {
+      "start": 114.93199969482625,
+      "end": 118.07199908447468,
+      "text": "It is skew symmetric when its transpose is the negative of itself.",
+      "chapter": 1
+    },
+    {
+      "start": 118.79200030517781,
+      "end": 122.71199847412312,
+      "text": "For a skew symmetric real matrix, each diagonal entry equals its own negative",
+      "chapter": 1
+    },
+    {
+      "start": 122.71199847412312,
+      "end": 124.29200030517781,
+      "text": "and therefore must be zero.",
+      "chapter": 1
+    },
+    {
+      "start": 124.85200167846882,
+      "end": 129.49200106811725,
+      "text": "The zero diagonal alone is not sufficient: opposite off diagonal entries must",
+      "chapter": 1
+    },
+    {
+      "start": 129.49200106811725,
+      "end": 130.6920018310567,
+      "text": "also have opposite signs.",
+      "chapter": 1
+    },
+    {
+      "start": 131.41199923706256,
+      "end": 135.47200061035358,
+      "text": "Every real square matrix can be decomposed into a symmetric part and a skew",
+      "chapter": 1
+    },
+    {
+      "start": 135.47200061035358,
+      "end": 136.09199954223834,
+      "text": "symmetric part.",
+      "chapter": 1
+    },
+    {
+      "start": 136.23199893188678,
+      "end": 140.551998626711,
+      "text": "Take half the sum with its transpose for the symmetric part, and half the",
+      "chapter": 1
+    },
+    {
+      "start": 140.551998626711,
+      "end": 142.15200091552936,
+      "text": "difference for the skew symmetric part.",
+      "chapter": 1
+    },
+    {
+      "start": 142.95199633789264,
+      "end": 144.49199725341998,
+      "text": "Adding those parts restores A.",
+      "chapter": 1
+    },
+    {
+      "start": 145.2119984741231,
+      "end": 149.83200122070514,
+      "text": "For A with rows one, three and one, two, the symmetric part has rows one, two",
+      "chapter": 1
+    },
+    {
+      "start": 149.83200122070514,
+      "end": 150.7119984741231,
+      "text": "and two, two.",
+      "chapter": 1
+    },
+    {
+      "start": 151.3919987792989,
+      "end": 154.47200061035358,
+      "text": "The skew part has rows zero, one and negative one, zero.",
+      "chapter": 1
+    },
+    {
+      "start": 155.13199664306842,
+      "end": 158.91200305175983,
+      "text": "This decomposition preserves the order and can be checked entry by entry.",
+      "chapter": 1
+    },
+    {
+      "start": 159.12000000000424,
+      "end": 164.0600000572247,
+      "text": "Matrix multiplication combines a row of the first matrix with a column of the",
+      "chapter": 2
+    },
+    {
+      "start": 164.0600000572247,
+      "end": 164.27999984741635,
+      "text": "second.",
+      "chapter": 2
+    },
+    {
+      "start": 165.17999994278378,
+      "end": 168.6711392339918,
+      "text": "Multiply corresponding entries along that row and column, then add the",
+      "chapter": 2
+    },
+    {
+      "start": 168.6711392339918,
+      "end": 169.12000000000424,
+      "text": "products.",
+      "chapter": 2
+    },
+    {
+      "start": 169.9200001907391,
+      "end": 174.93999969482846,
+      "text": "A matrix of order m by n can multiply one of order n by p, producing a matrix",
+      "chapter": 2
+    },
+    {
+      "start": 174.93999969482846,
+      "end": 176.1400004577679,
+      "text": "of order m by p.",
+      "chapter": 2
+    },
+    {
+      "start": 176.54000007629818,
+      "end": 179.4800006103558,
+      "text": "The inner dimensions agree and the outer dimensions remain.",
+      "chapter": 2
+    },
+    {
+      "start": 180.30000030518002,
+      "end": 185.17999946594662,
+      "text": "With A having rows one, two and zero, one, and B having rows one, zero and",
+      "chapter": 2
+    },
+    {
+      "start": 185.17999946594662,
+      "end": 189.04000007629818,
+      "text": "three, one, calculate the first entry of A B.",
+      "chapter": 2
+    },
+    {
+      "start": 189.04000007629818,
+      "end": 192.18000137329526,
+      "text": "It is one times one plus two times three, giving seven.",
+      "chapter": 2
+    },
+    {
+      "start": 193.0799990844769,
+      "end": 196.4800006103558,
+      "text": "The complete product has rows seven, two and three, one.",
+      "chapter": 2
+    },
+    {
+      "start": 197.02000152588315,
+      "end": 200.66000091553158,
+      "text": "Reverse the order and B A has rows one, two and three, seven.",
+      "chapter": 2
+    },
+    {
+      "start": 201.70000183105893,
+      "end": 203.80000030518002,
+      "text": "Thus both products exist but differ.",
+      "chapter": 2
+    },
+    {
+      "start": 204.87999832153744,
+      "end": 209.16000091553158,
+      "text": "Matrix multiplication is associative and distributive, yet it is generally not",
+      "chapter": 2
+    },
+    {
+      "start": 209.16000091553158,
+      "end": 209.55999862671322,
+      "text": "commutative.",
+      "chapter": 2
+    },
+    {
+      "start": 210.25999938965268,
+      "end": 214.09999954224057,
+      "text": "Even a product equal to the zero matrix does not force one factor to be zero.",
+      "chapter": 2
+    },
+    {
+      "start": 214.9199992370648,
+      "end": 219.50000106811947,
+      "text": "For example, the diagonal matrices with diagonals one, zero and zero, one have",
+      "chapter": 2
+    },
+    {
+      "start": 219.50000106811947,
+      "end": 220.21999847412533,
+      "text": "zero product.",
+      "chapter": 2
+    },
+    {
+      "start": 221.12000000000424,
+      "end": 226.0600024414105,
+      "text": "In a transpose of a product, reverse the factor order: the transpose of A B is",
+      "chapter": 2
+    },
+    {
+      "start": 226.0600024414105,
+      "end": 227.679997558598,
+      "text": "B transpose times A transpose.",
+      "chapter": 2
+    },
+    {
+      "start": 228.62000000000424,
+      "end": 233.80000030518002,
+      "text": "Finally, A X equals A Y does not permit cancellation unless A is known to be",
+      "chapter": 2
+    },
+    {
+      "start": 233.80000030518002,
+      "end": 234.4800006103558,
+      "text": "invertible.",
+      "chapter": 2
+    },
+    {
+      "start": 234.93999969482846,
+      "end": 239.12000000000424,
+      "text": "Always check order, compute row by column, and justify any cancellation.",
+      "chapter": 2
+    },
+    {
+      "start": 239.4720000000064,
+      "end": 244.611999866492,
+      "text": "For a two by two matrix with first row a, b and second row c, d, the",
+      "chapter": 3
+    },
+    {
+      "start": 244.611999866492,
+      "end": 246.79200017166778,
+      "text": "determinant is a d minus b c.",
+      "chapter": 3
+    },
+    {
+      "start": 246.79200017166778,
+      "end": 248.51199996185943,
+      "text": "It is a scalar, not a new matrix.",
+      "chapter": 3
+    },
+    {
+      "start": 249.2519997329776,
+      "end": 253.93200003815338,
+      "text": "With rows two, one and five, three, the determinant is six minus five, or one.",
+      "chapter": 3
+    },
+    {
+      "start": 254.59199988556549,
+      "end": 258.33200061035797,
+      "text": "Determinants are defined here for square matrices; do not assign this formula",
+      "chapter": 3
+    },
+    {
+      "start": 258.33200061035797,
+      "end": 259.57200038147613,
+      "text": "to a rectangular array.",
+      "chapter": 3
+    },
+    {
+      "start": 260.57200038147613,
+      "end": 263.01200091553375,
+      "text": "Several properties make larger evaluations faster.",
+      "chapter": 3
+    },
+    {
+      "start": 263.95199954224273,
+      "end": 266.05199992371246,
+      "text": "Swapping two rows changes the determinant sign.",
+      "chapter": 3
+    },
+    {
+      "start": 266.05199992371246,
+      "end": 269.912000534064,
+      "text": "Multiplying one row by k multiplies the determinant by k.",
+      "chapter": 3
+    },
+    {
+      "start": 270.67200076294586,
+      "end": 274.1920012207095,
+      "text": "Adding a multiple of another row to a row leaves the determinant unchanged.",
+      "chapter": 3
+    },
+    {
+      "start": 274.9720000000064,
+      "end": 276.6520003051822,
+      "text": "These same statements hold for columns.",
+      "chapter": 3
+    },
+    {
+      "start": 277.5320013732974,
+      "end": 279.83200061035797,
+      "text": "Equal or proportional rows give determinant zero.",
+      "chapter": 3
+    },
+    {
+      "start": 280.51200091553375,
+      "end": 283.95199954224273,
+      "text": "A triangular matrix has determinant equal to the product of its diagonal",
+      "chapter": 3
+    },
+    {
+      "start": 283.95199954224273,
+      "end": 284.4119986267154,
+      "text": "entries.",
+      "chapter": 3
+    },
+    {
+      "start": 285.3720015258853,
+      "end": 289.1319998474185,
+      "text": "Transposing a matrix preserves its determinant, and the determinant of a",
+      "chapter": 3
+    },
+    {
+      "start": 289.1319998474185,
+      "end": 290.9920004577701,
+      "text": "product equals the product of the determinants.",
+      "chapter": 3
+    },
+    {
+      "start": 291.67200076294586,
+      "end": 293.45199954224273,
+      "text": "Be careful with scaling the whole matrix.",
+      "chapter": 3
+    },
+    {
+      "start": 293.45199954224273,
+      "end": 299.2519987793033,
+      "text": "In an n by n matrix, multiplying every entry by k scales all n rows, so the",
+      "chapter": 3
+    },
+    {
+      "start": 299.2519987793033,
+      "end": 301.6520003051822,
+      "text": "determinant is multiplied by k to the power n.",
+      "chapter": 3
+    },
+    {
+      "start": 302.5719984741275,
+      "end": 305.83200061035797,
+      "text": "For a two by two matrix the factor is k squared, not k.",
+      "chapter": 3
+    },
+    {
+      "start": 306.61199938965484,
+      "end": 310.83200061035797,
+      "text": "Finally, determinants are not generally additive: the determinant of A plus B",
+      "chapter": 3
+    },
+    {
+      "start": 310.83200061035797,
+      "end": 313.2320021362369,
+      "text": "is not generally the sum of their determinants.",
+      "chapter": 3
+    },
+    {
+      "start": 313.4880000000083,
+      "end": 317.72799977112646,
+      "text": "A minor is the determinant left after deleting a specified row and column.",
+      "chapter": 4
+    },
+    {
+      "start": 318.38800009537573,
+      "end": 322.6079998855674,
+      "text": "A cofactor attaches the sign negative one to the power i plus j to that minor.",
+      "chapter": 4
+    },
+    {
+      "start": 323.28800019074316,
+      "end": 326.72799977112646,
+      "text": "The first cofactor sign row is plus, minus, plus.",
+      "chapter": 4
+    },
+    {
+      "start": 327.28800019074316,
+      "end": 329.44800003815527,
+      "text": "The second is minus, plus, minus.",
+      "chapter": 4
+    },
+    {
+      "start": 330.1680003051841,
+      "end": 334.4679995422446,
+      "text": "To expand a determinant along a row, multiply each row entry by its own",
+      "chapter": 4
+    },
+    {
+      "start": 334.4679995422446,
+      "end": 335.68800076294775,
+      "text": "cofactor and add.",
+      "chapter": 4
+    },
+    {
+      "start": 336.588000381478,
+      "end": 338.9679995422446,
+      "text": "Choose a row or column containing zeros when possible.",
+      "chapter": 4
+    },
+    {
+      "start": 339.52800091553564,
+      "end": 344.62799938965674,
+      "text": "Consider A with rows one, one, zero; zero, one, one; and one, zero, one.",
+      "chapter": 4
+    },
+    {
+      "start": 345.3679991607749,
+      "end": 346.3280001525962,
+      "text": "Expand along its first row.",
+      "chapter": 4
+    },
+    {
+      "start": 346.9079981689536,
+      "end": 350.52800091553564,
+      "text": "The first minor is one times one minus one times zero, giving one.",
+      "chapter": 4
+    },
+    {
+      "start": 351.1479998474204,
+      "end": 355.1479998474204,
+      "text": "The second minor is zero times one minus one times one, giving negative one.",
+      "chapter": 4
+    },
+    {
+      "start": 355.62799938965674,
+      "end": 359.568001831063,
+      "text": "Its cofactor sign is negative, so the second cofactor is positive one.",
+      "chapter": 4
+    },
+    {
+      "start": 360.1680003051841,
+      "end": 364.44799908448095,
+      "text": "The determinant is one times one plus one times one plus zero, giving two.",
+      "chapter": 4
+    },
+    {
+      "start": 364.44799908448095,
+      "end": 368.50800045777197,
+      "text": "A common mistake is to apply the negative sign twice or forget it entirely.",
+      "chapter": 4
+    },
+    {
+      "start": 369.1479998474204,
+      "end": 372.4679995422446,
+      "text": "An independent check is useful: subtract the first row from the third,",
+      "chapter": 4
+    },
+    {
+      "start": 373.18800076294775,
+      "end": 376.6479998474204,
+      "text": "producing third row zero, negative one, one, without changing the determinant.",
+      "chapter": 4
+    },
+    {
+      "start": 377.4880000000083,
+      "end": 380.1879969482505,
+      "text": "Expansion along the first column then gives two again.",
+      "chapter": 4
+    },
+    {
+      "start": 380.8880015258872,
+      "end": 384.7880030517661,
+      "text": "Determinant preserving row additions simplify evaluation, but swapping or",
+      "chapter": 4
+    },
+    {
+      "start": 384.7880030517661,
+      "end": 388.44799908448095,
+      "text": "scaling rows requires tracking the corresponding factor or sign.",
+      "chapter": 4
+    },
+    {
+      "start": 388.75200000001024,
+      "end": 393.7584102564205,
+      "text": "The adjoint, also called the adjugate, is the transpose of the cofactor",
+      "chapter": 5
+    },
+    {
+      "start": 393.7584102564205,
+      "end": 394.25200000001024,
+      "text": "matrix.",
+      "chapter": 5
+    },
+    {
+      "start": 395.0520001907451,
+      "end": 399.07199969483446,
+      "text": "The transpose step matters: writing cofactors in their original positions",
+      "chapter": 5
+    },
+    {
+      "start": 399.07199969483446,
+      "end": 400.97200026703905,
+      "text": "generally does not give the adjoint.",
+      "chapter": 5
+    },
+    {
+      "start": 401.81200041962694,
+      "end": 405.47199931336473,
+      "text": "Multiplying a square matrix by its adjoint, in either order, gives its",
+      "chapter": 5
+    },
+    {
+      "start": 405.47199931336473,
+      "end": 406.8319999237163,
+      "text": "determinant times the identity.",
+      "chapter": 5
+    },
+    {
+      "start": 407.75200000001024,
+      "end": 411.75200000001024,
+      "text": "Consequently, a matrix has an inverse exactly when its determinant is nonzero.",
+      "chapter": 5
+    },
+    {
+      "start": 412.6120006103618,
+      "end": 414.2119990844829,
+      "text": "Divide its adjoint by that determinant.",
+      "chapter": 5
+    },
+    {
+      "start": 414.2119990844829,
+      "end": 419.76969205241124,
+      "text": "For a two by two matrix, swap the two diagonal entries and negate the other",
+      "chapter": 5
+    },
+    {
+      "start": 419.76969205241124,
+      "end": 419.9919997711284,
+      "text": "two",
+      "chapter": 5
+    },
+    {
+      "start": 419.9919997711284,
+      "end": 421.1919986267192,
+      "text": "entries to obtain its adjoint.",
+      "chapter": 5
+    },
+    {
+      "start": 421.9520007629497,
+      "end": 426.99200167847704,
+      "text": "For A with rows two, one and five, three, the determinant is one, so its",
+      "chapter": 5
+    },
+    {
+      "start": 426.99200167847704,
+      "end": 430.7720004577739,
+      "text": "inverse has rows three, negative one and negative five, two.",
+      "chapter": 5
+    },
+    {
+      "start": 431.5319987793071,
+      "end": 435.8919993896587,
+      "text": "Multiplying A by that proposed inverse gives rows one, zero and zero, one.",
+      "chapter": 5
+    },
+    {
+      "start": 436.2119990844829,
+      "end": 441.3919993896587,
+      "text": "For our three by three example with rows one, one, zero; zero, one, one; and",
+      "chapter": 5
+    },
+    {
+      "start": 441.3919993896587,
+      "end": 446.07661586977684,
+      "text": "one, zero, one, the adjoint has rows one, negative one, one; one, one,",
+      "chapter": 5
+    },
+    {
+      "start": 446.07661586977684,
+      "end": 446.6120006103618,
+      "text": "negative",
+      "chapter": 5
+    },
+    {
+      "start": 446.6120006103618,
+      "end": 448.932000305186,
+      "text": "one; and negative one, one, one.",
+      "chapter": 5
+    },
+    {
+      "start": 449.432000305186,
+      "end": 452.73199954224657,
+      "text": "Its inverse is half that array because the determinant is two.",
+      "chapter": 5
+    },
+    {
+      "start": 453.27199664307665,
+      "end": 457.1920024414165,
+      "text": "A zero determinant does not mean the adjoint is always zero, and division by",
+      "chapter": 5
+    },
+    {
+      "start": 457.1920024414165,
+      "end": 458.8919993896587,
+      "text": "zero is never an inverse formula.",
+      "chapter": 5
+    },
+    {
+      "start": 459.67199816895555,
+      "end": 464.2320004225613,
+      "text": "Also, the inverse of A B is B inverse times A inverse when both inverses",
+      "chapter": 5
+    },
+    {
+      "start": 464.2320004225613,
+      "end": 464.6120006103618,
+      "text": "exist.",
+      "chapter": 5
+    },
+    {
+      "start": 465.09199633790087,
+      "end": 467.65200152588915,
+      "text": "Put B inverse first and A inverse second.",
+      "chapter": 5
+    },
+    {
+      "start": 468.1920024414165,
+      "end": 470.9919978637798,
+      "text": "Check the factor order before simplifying a product inverse.",
+      "chapter": 5
+    },
+    {
+      "start": 471.31200000001246,
+      "end": 476.79200001908595,
+      "text": "A system of linear equations becomes A X equals B when each row of A contains",
+      "chapter": 6
+    },
+    {
+      "start": 476.79200001908595,
+      "end": 478.81200000001246,
+      "text": "the coefficients in the same variable order.",
+      "chapter": 6
+    },
+    {
+      "start": 479.6719996566897,
+      "end": 484.7320000763064,
+      "text": "For two x plus y equals five and five x plus three y equals thirteen, choose X",
+      "chapter": 6
+    },
+    {
+      "start": 484.7320000763064,
+      "end": 486.1319996948367,
+      "text": "as the column x, y.",
+      "chapter": 6
+    },
+    {
+      "start": 486.7320000763064,
+      "end": 491.8520009155398,
+      "text": "A has rows two, one and five, three, and B has entries five, thirteen.",
+      "chapter": 6
+    },
+    {
+      "start": 491.8520009155398,
+      "end": 494.71199961854273,
+      "text": "The determinant is one, so a unique solution exists.",
+      "chapter": 6
+    },
+    {
+      "start": 495.5120007629519,
+      "end": 498.2719990844851,
+      "text": "Multiply the inverse of A on the left of both sides.",
+      "chapter": 6
+    },
+    {
+      "start": 498.2719990844851,
+      "end": 502.53199931336695,
+      "text": "This gives X equals A inverse times B, not B times A inverse.",
+      "chapter": 6
+    },
+    {
+      "start": 503.4519993896609,
+      "end": 507.2719990844851,
+      "text": "Using inverse rows three, negative one and negative five, two, the first",
+      "chapter": 6
+    },
+    {
+      "start": 507.2719990844851,
+      "end": 510.57199832154566,
+      "text": "component is fifteen minus thirteen, giving x equal to two.",
+      "chapter": 6
+    },
+    {
+      "start": 511.07199832154566,
+      "end": 514.9920003051882,
+      "text": "The second is negative twenty five plus twenty six, giving y equal to one.",
+      "chapter": 6
+    },
+    {
+      "start": 515.7319981689577,
+      "end": 519.3920018310671,
+      "text": "Substitute: two times two plus one equals five, and five times two plus three",
+      "chapter": 6
+    },
+    {
+      "start": 519.3920018310671,
+      "end": 521.0719983215456,
+      "text": "times one equals thirteen.",
+      "chapter": 6
+    },
+    {
+      "start": 521.0719983215456,
+      "end": 521.9719998474245,
+      "text": "Both equations check.",
+      "chapter": 6
+    },
+    {
+      "start": 522.611999237073,
+      "end": 526.052770829042,
+      "text": "A missing variable contributes coefficient zero; it does not remove its",
+      "chapter": 6
+    },
+    {
+      "start": 526.052770829042,
+      "end": 526.3920018310671,
+      "text": "column.",
+      "chapter": 6
+    },
+    {
+      "start": 526.7120015258913,
+      "end": 530.5320012207155,
+      "text": "If an equation is written with constants on both sides, collect variable terms",
+      "chapter": 6
+    },
+    {
+      "start": 530.5320012207155,
+      "end": 532.2919995422487,
+      "text": "and constants before building the matrix.",
+      "chapter": 6
+    },
+    {
+      "start": 533.0120007629519,
+      "end": 536.853028731921,
+      "text": "The inverse method is available only after checking the determinant is",
+      "chapter": 6
+    },
+    {
+      "start": 536.853028731921,
+      "end": 537.292003356946,
+      "text": "nonzero.",
+      "chapter": 6
+    },
+    {
+      "start": 537.292003356946,
+      "end": 541.9519993896608,
+      "text": "A zero determinant sends us to consistency analysis rather than allowing us to",
+      "chapter": 6
+    },
+    {
+      "start": 541.9519993896608,
+      "end": 543.672000610364,
+      "text": "conclude automatically that there is no solution.",
+      "chapter": 6
+    },
+    {
+      "start": 544.3680000000144,
+      "end": 549.8280000381613,
+      "text": "Now take three equations: x plus y equals three; y plus z equals five;",
+      "chapter": 7
+    },
+    {
+      "start": 550.2680000953818,
+      "end": 552.0079998665,
+      "text": "and x plus z equals four.",
+      "chapter": 7
+    },
+    {
+      "start": 552.5880002670432,
+      "end": 557.6680001907492,
+      "text": "In variable order x, y, z, the coefficient matrix has rows one, one, zero;",
+      "chapter": 7
+    },
+    {
+      "start": 558.1879996948386,
+      "end": 560.5079993896628,
+      "text": "zero, one, one; and one, zero, one.",
+      "chapter": 7
+    },
+    {
+      "start": 560.9479999237204,
+      "end": 563.9479999237204,
+      "text": "The constant column has entries three, five, four.",
+      "chapter": 7
+    },
+    {
+      "start": 564.1280002288962,
+      "end": 568.424409860283,
+      "text": "We already evaluated the coefficient determinant as two, so the inverse",
+      "chapter": 7
+    },
+    {
+      "start": 568.424409860283,
+      "end": 568.8479995422507,
+      "text": "exists.",
+      "chapter": 7
+    },
+    {
+      "start": 569.2679996185446,
+      "end": 574.3479995422507,
+      "text": "Its adjoint has rows one, negative one, one; one, one, negative one; and",
+      "chapter": 7
+    },
+    {
+      "start": 574.3479995422507,
+      "end": 575.6480006866599,
+      "text": "negative one, one, one.",
+      "chapter": 7
+    },
+    {
+      "start": 576.5680007629538,
+      "end": 579.7680015258933,
+      "text": "Multiply that adjoint by the constant column before dividing by two.",
+      "chapter": 7
+    },
+    {
+      "start": 580.4879989318991,
+      "end": 584.827999084487,
+      "text": "The first component is three minus five plus four, giving two; after division,",
+      "chapter": 7
+    },
+    {
+      "start": 585.0079993896628,
+      "end": 585.6879996948386,
+      "text": "x is one.",
+      "chapter": 7
+    },
+    {
+      "start": 586.2080001526023,
+      "end": 590.6479987793113,
+      "text": "The second is three plus five minus four, giving four; hence y is two.",
+      "chapter": 7
+    },
+    {
+      "start": 591.2080001526023,
+      "end": 595.5880012207175,
+      "text": "The third is negative three plus five plus four, giving six; hence z is three.",
+      "chapter": 7
+    },
+    {
+      "start": 595.5880012207175,
+      "end": 600.4280013733054,
+      "text": "Verify all three original equations: one plus two is three, two plus three is",
+      "chapter": 7
+    },
+    {
+      "start": 600.4280013733054,
+      "end": 602.5880012207175,
+      "text": "five, and one plus three is four.",
+      "chapter": 7
+    },
+    {
+      "start": 602.9480018310691,
+      "end": 606.7280006103659,
+      "text": "A useful independent solution is to add the first and third equations and",
+      "chapter": 7
+    },
+    {
+      "start": 606.7280006103659,
+      "end": 609.707996337905,
+      "text": "subtract the second, obtaining two x equals two.",
+      "chapter": 7
+    },
+    {
+      "start": 610.207996337905,
+      "end": 611.6280021362448,
+      "text": "This agrees with the matrix method.",
+      "chapter": 7
+    },
+    {
+      "start": 612.2680015258933,
+      "end": 616.4967159064021,
+      "text": "The point of the inverse calculation is to organize a systematic method, not",
+      "chapter": 7
+    },
+    {
+      "start": 616.4967159064021,
+      "end": 616.6079978637839,
+      "text": "to",
+      "chapter": 7
+    },
+    {
+      "start": 616.6079978637839,
+      "end": 617.5679969482566,
+      "text": "forbid a shorter check.",
+      "chapter": 7
+    },
+    {
+      "start": 618.1280021362448,
+      "end": 622.327999084487,
+      "text": "When a parameter enters a coefficient, identify determinant zero cases before",
+      "chapter": 7
+    },
+    {
+      "start": 622.327999084487,
+      "end": 623.5480003051902,
+      "text": "dividing by its expression.",
+      "chapter": 7
+    },
+    {
+      "start": 623.7840000000165,
+      "end": 627.26400001909,
+      "text": "A zero determinant means the coefficient matrix is singular.",
+      "chapter": 8
+    },
+    {
+      "start": 627.9839998092816,
+      "end": 632.1839996185467,
+      "text": "It does not by itself distinguish no solution from infinitely many solutions.",
+      "chapter": 8
+    },
+    {
+      "start": 633.1039996948407,
+      "end": 637.3440004196332,
+      "text": "Compare x plus y equals two with two x plus two y equals four.",
+      "chapter": 8
+    },
+    {
+      "start": 638.3639999237225,
+      "end": 642.2040000763104,
+      "text": "Subtract twice the first equation from the second and obtain zero equals zero.",
+      "chapter": 8
+    },
+    {
+      "start": 642.7040000763104,
+      "end": 644.1039996948407,
+      "text": "The second equation is redundant.",
+      "chapter": 8
+    },
+    {
+      "start": 644.9640003051923,
+      "end": 650.2639995422528,
+      "text": "Set y equal to a free real parameter t and x equal to two minus t; infinitely",
+      "chapter": 8
+    },
+    {
+      "start": 650.2639995422528,
+      "end": 651.8639999237225,
+      "text": "many pairs solve both equations.",
+      "chapter": 8
+    },
+    {
+      "start": 652.4239993896649,
+      "end": 656.4439998474286,
+      "text": "Change the second constant to five and the same subtraction gives zero equals",
+      "chapter": 8
+    },
+    {
+      "start": 656.4439998474286,
+      "end": 656.7239986267255,
+      "text": "one.",
+      "chapter": 8
+    },
+    {
+      "start": 657.3240009155438,
+      "end": 660.0439983215497,
+      "text": "This is a contradiction, so no solution exists.",
+      "chapter": 8
+    },
+    {
+      "start": 660.7039981689618,
+      "end": 663.4840007629559,
+      "text": "The coefficient determinants are identical in these two examples.",
+      "chapter": 8
+    },
+    {
+      "start": 664.1840015258954,
+      "end": 669.5040012207196,
+      "text": "For three variables, consider x plus y plus z equals three; x minus y plus z",
+      "chapter": 8
+    },
+    {
+      "start": 669.5040012207196,
+      "end": 672.4039989319012,
+      "text": "equals one; and two x plus two z equals four.",
+      "chapter": 8
+    },
+    {
+      "start": 672.9239993896649,
+      "end": 675.0439983215497,
+      "text": "The third equation is the sum of the first two.",
+      "chapter": 8
+    },
+    {
+      "start": 675.644000610368,
+      "end": 679.9640003051923,
+      "text": "Subtracting the second equation from the first gives y equal to one, leaving x",
+      "chapter": 8
+    },
+    {
+      "start": 679.9640003051923,
+      "end": 681.1240001526044,
+      "text": "plus z equals two.",
+      "chapter": 8
+    },
+    {
+      "start": 681.1240001526044,
+      "end": 686.6240001526044,
+      "text": "Thus x equals two minus t and z equals t is an infinite solution family.",
+      "chapter": 8
+    },
+    {
+      "start": 687.5240016784833,
+      "end": 691.2439990844891,
+      "text": "Replacing the last constant four with five creates a contradiction after",
+      "chapter": 8
+    },
+    {
+      "start": 691.2439990844891,
+      "end": 693.4040027465985,
+      "text": "subtracting the first two equations from the third.",
+      "chapter": 8
+    },
+    {
+      "start": 694.2039981689618,
+      "end": 697.7039981689618,
+      "text": "Row reduction must act on the augmented matrix, including constants.",
+      "chapter": 8
+    },
+    {
+      "start": 698.7640033569501,
+      "end": 702.1239963379071,
+      "text": "Inspect the exceptional values of a parameter separately; a vanished",
+      "chapter": 8
+    },
+    {
+      "start": 702.1239963379071,
+      "end": 704.9239993896649,
+      "text": "denominator is a warning to analyze the original equations.",
+      "chapter": 8
+    },
+    {
+      "start": 705.7840000000165,
+      "end": 709.4088728434409,
+      "text": "Check their constants for a contradiction or a free variable before",
+      "chapter": 8
+    },
+    {
+      "start": 709.4088728434409,
+      "end": 710.0040012207196,
+      "text": "classifying",
+      "chapter": 8
+    },
+    {
+      "start": 710.0040012207196,
+      "end": 710.9040027465985,
+      "text": "the solution set.",
+      "chapter": 8
+    },
+    {
+      "start": 711.0480000000189,
+      "end": 715.5879999618719,
+      "text": "For three points in a plane, place their x coordinate, y coordinate and one in",
+      "chapter": 9
+    },
+    {
+      "start": 715.5879999618719,
+      "end": 717.5080000381658,
+      "text": "successive rows of a three by three determinant.",
+      "chapter": 9
+    },
+    {
+      "start": 718.4280001144598,
+      "end": 720.4680000763128,
+      "text": "Half its absolute value is the triangle area.",
+      "chapter": 9
+    },
+    {
+      "start": 721.2280003051947,
+      "end": 725.5279995422552,
+      "text": "The determinant itself is an oriented quantity: swapping two points reverses",
+      "chapter": 9
+    },
+    {
+      "start": 725.5279995422552,
+      "end": 728.6879993896673,
+      "text": "its sign, while the geometric area remains unchanged.",
+      "chapter": 9
+    },
+    {
+      "start": 729.9479996185491,
+      "end": 734.0079990844915,
+      "text": "For the points zero, zero; four, zero; and zero, three, expansion gives",
+      "chapter": 9
+    },
+    {
+      "start": 734.0079990844915,
+      "end": 736.4479996185491,
+      "text": "determinant twelve and area six square units.",
+      "chapter": 9
+    },
+    {
+      "start": 737.1279999237249,
+      "end": 740.8479992370794,
+      "text": "Subtracting the first point from the others reduces the same calculation to",
+      "chapter": 9
+    },
+    {
+      "start": 740.8479992370794,
+      "end": 744.0880009155462,
+      "text": "half the absolute value of a two by two determinant of the displacement",
+      "chapter": 9
+    },
+    {
+      "start": 744.0880009155462,
+      "end": 744.5680004577825,
+      "text": "vectors.",
+      "chapter": 9
+    },
+    {
+      "start": 745.6080013733099,
+      "end": 749.2280003051947,
+      "text": "If the determinant is zero, the three points are collinear or include repeated",
+      "chapter": 9
+    },
+    {
+      "start": 749.2280003051947,
+      "end": 751.207999847431,
+      "text": "points, and the triangle is degenerate.",
+      "chapter": 9
+    },
+    {
+      "start": 752.4679981689642,
+      "end": 756.8679996948431,
+      "text": "For points one, two; three, four; and five, k, the determinant simplifies to",
+      "chapter": 9
+    },
+    {
+      "start": 756.8679996948431,
+      "end": 758.6879993896673,
+      "text": "two k minus twelve.",
+      "chapter": 9
+    },
+    {
+      "start": 758.6879993896673,
+      "end": 761.1679989319036,
+      "text": "Collinearity therefore requires k equal to six.",
+      "chapter": 9
+    },
+    {
+      "start": 761.8679996948431,
+      "end": 764.3880001526068,
+      "text": "Finish by connecting determinant tests across the class.",
+      "chapter": 9
+    },
+    {
+      "start": 764.7880016784857,
+      "end": 768.9205631420617,
+      "text": "The matrix with rows lambda, one and one, lambda has determinant lambda",
+      "chapter": 9
+    },
+    {
+      "start": 768.9205631420617,
+      "end": 769.3279987793157,
+      "text": "squared",
+      "chapter": 9
+    },
+    {
+      "start": 769.3279987793157,
+      "end": 769.9280010681341,
+      "text": "minus one.",
+      "chapter": 9
+    },
+    {
+      "start": 770.6080013733099,
+      "end": 774.2880016784857,
+      "text": "It is invertible for all real lambda except plus one and minus one.",
+      "chapter": 9
+    },
+    {
+      "start": 774.9879986267279,
+      "end": 778.5079990844915,
+      "text": "At an exceptional value, a linear system needs its constants checked for",
+      "chapter": 9
+    },
+    {
+      "start": 778.5079990844915,
+      "end": 778.9480015258978,
+      "text": "consistency.",
+      "chapter": 9
+    },
+    {
+      "start": 779.9679981689642,
+      "end": 783.8279987793157,
+      "text": "Determinants summarize important information, but zero area, a singular",
+      "chapter": 9
+    },
+    {
+      "start": 783.8279987793157,
+      "end": 787.9080006103704,
+      "text": "coefficient matrix and inconsistency are different conclusions attached to",
+      "chapter": 9
+    },
+    {
+      "start": 787.9080006103704,
+      "end": 788.5880009155462,
+      "text": "different questions.",
+      "chapter": 9
+    },
+    {
+      "start": 788.5880009155462,
+      "end": 793.0280033569525,
+      "text": "Name the question, compute the determinant, and interpret it in context.",
+      "chapter": 9
+    }
+  ]
+}

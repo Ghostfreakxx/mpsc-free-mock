@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+<title id="title">An invertible matrix solves a two-variable system</title>
+<desc id="desc">A has rows two, one and five, three. Its determinant is one. Its inverse has rows three, negative one and negative five, two. Multiplying the inverse by constants five, thirteen gives x two, y one.</desc>
+<rect width="900" height="360" rx="18" fill="#f5faf7"/>
+<g fill="#20483e" font-family="Arial,sans-serif">
+<text x="32" y="42" font-size="25" font-weight="bold">CHECK THE DETERMINANT BEFORE INVERTING</text>
+<rect x="24" y="66" width="404" height="122" rx="10" fill="#dcece4"/>
+<text x="44" y="98" font-size="23">A = [ 2  1 ; 5  3 ]</text>
+<text x="44" y="134" font-size="21">det(A) = 2 × 3 − 1 × 5 = 1</text>
+<text x="44" y="168" font-size="19">Nonzero determinant → unique inverse</text>
+<rect x="450" y="66" width="426" height="122" rx="10" fill="#e6edf0"/>
+<text x="470" y="98" font-size="23">A⁻¹ = [ 3  −1 ; −5  2 ]</text>
+<text x="470" y="134" font-size="21">AA⁻¹ = [ 1  0 ; 0  1 ] = I</text>
+<text x="470" y="168" font-size="19">Transpose cofactors to form adj(A)</text>
+<rect x="24" y="204" width="852" height="104" rx="10" fill="#dcece4"/>
+<text x="44" y="238" font-size="22">2x + y = 5; 5x + 3y = 13 → X = A⁻¹[5;13] = [2;1]</text>
+<text x="44" y="280" font-size="20">Substitution: 2(2) + 1 = 5 and 5(2) + 3(1) = 13</text>
+<text x="32" y="338" font-size="18">If det(A) = 0, inspect consistency: no solution and infinitely many are both possible.</text>
+</g></svg>

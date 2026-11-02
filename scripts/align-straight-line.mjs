@@ -71,6 +71,7 @@ targets['mole-concept'] = 'mole-concept';
 targets['periodic-trends'] = 'periodic-trends';
 targets['atomic-structure'] = 'atomic-structure';
 targets['chemical-bonding'] = 'chemical-bonding';
+targets['matrices-determinants'] = 'matrices-determinants';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const folder = path.join(root, 'public/lectures', selected);

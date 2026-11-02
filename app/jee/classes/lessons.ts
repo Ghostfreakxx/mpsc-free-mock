@@ -1,3 +1,5 @@
+import matricesDeterminants from '../../data/jee-matrices-determinants-lecture.json';
+import matricesDeterminantsTimings from '../../data/jee-matrices-determinants-timings.json';
 import pBlock from "../../data/jee-p-block-lecture.json";
 import pBlockTimings from "../../data/jee-p-block-timings.json";
 import dFBlock from "../../data/jee-d-f-block-lecture.json";
@@ -1311,4 +1313,9 @@ export const lectures: Lecture[] = [
     segments: dFBlock.chapters.map(chapter => ({ title: chapter.title, formula: chapter.formula, steps: chapter.points, english: chapter.script })),
     sources: dFBlock.sources, quiz: dFBlock.quiz,
   },
+  {id:'matrices-determinants',subject:'Mathematics',unit:3,number:'M01',title:matricesDeterminants.title,
+    description:'Matrix algebra, determinants, adjoints, inverses, triangle area and consistency of two- and three-variable systems.',
+    scope:'Ten-chapter Mathematics Unit 3 class with original practice. Covers the core syllabus headings; further parameter-dependent and timed mixed practice remains. Not official PYQs.',
+    progressKey:'jee.matrices-determinants.lecture.v1',audio:'/lectures/matrices-determinants/narration-marin.mp3',subtitles:'/lectures/matrices-determinants/english.vtt',timings:matricesDeterminantsTimings,
+    segments:matricesDeterminants.chapters.map(c=>({title:c.title,formula:c.formula,steps:c.points,english:c.script})),sources:matricesDeterminants.sources,quiz:matricesDeterminants.quiz},
 ];

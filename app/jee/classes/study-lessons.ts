@@ -1,3 +1,4 @@
+import { matricesDeterminantsLesson } from './matrices-determinants-study.ts';
 import{extendMoleInventoryBoundsLesson}from'./mole-inventory-bounds-study.ts';
 import{extendMoleOrganicBasisLesson}from'./mole-organic-basis-study.ts';
 import { extendMoleOrganicStructureBalancesLesson } from './mole-organic-structure-balances-study.ts';
@@ -170,6 +171,7 @@ export const studyLessons: StudyLesson[] = [
   circuitApplicationsLesson,
   magneticApplicationsLesson,
   inductionApplicationsLesson,
+  matricesDeterminantsLesson,
 ];
 
 const moleConceptCompanion = studyLessons.find(lesson=>lesson.id==="mole-concept");
