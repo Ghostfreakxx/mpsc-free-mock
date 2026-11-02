@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540" role="img" aria-labelledby="title desc">
+<title id="title">A line cuts a chord in a circle</title><desc id="desc">The circle x squared plus y squared equals twenty five has radius five. The line y equals three cuts it at negative four, three and four, three. The perpendicular centre distance is three and the half chord is four, so the full chord length is eight.</desc>
+<rect width="900" height="540" rx="20" fill="#f5faf7"/>
+<g font-family="Arial,sans-serif" fill="#20483e"><text x="45" y="52" font-size="27" font-weight="bold">Coordinate geometry: verify both intersection equations</text>
+<path d="M95 285H605 M350 85V485" stroke="#456f82" stroke-width="2"/>
+<circle cx="350" cy="285" r="180" fill="none" stroke="#20483e" stroke-width="4"/>
+<path d="M206 177H494 M350 285L494 177 M350 177V285" fill="none" stroke="#20483e" stroke-width="3"/>
+<path d="M350 191H364V177" fill="none" stroke="#20483e" stroke-width="2"/>
+<circle cx="206" cy="177" r="6"/><circle cx="494" cy="177" r="6"/>
+<text x="126" y="155" font-size="22">(−4,3)</text><text x="489" y="155" font-size="22">(4,3)</text>
+<text x="322" y="239" font-size="22">3</text><text x="418" y="259" font-size="22">5</text><text x="415" y="169" font-size="22">4</text>
+<text x="650" y="215" font-size="22">x²+y²=25</text><text x="650" y="250" font-size="22">y=3 ⇒ x=±4</text><text x="650" y="305" font-size="22">r²=d²+(L/2)²</text>
+<text x="450" y="514" text-anchor="middle" font-size="27">Full chord L=2√(25−9)=8</text></g></svg>

@@ -1,3 +1,4 @@
+import { coordinateGeometryLesson } from './coordinate-geometry-study.ts';
 import { differentialEquationsLesson } from './differential-equations-study.ts';
 import { integralCalculusLesson } from './integral-calculus-study.ts';
 import { limitsContinuityDifferentiabilityLesson } from './limits-continuity-differentiability-study.ts';
@@ -187,6 +188,7 @@ export const studyLessons: StudyLesson[] = [
   limitsContinuityDifferentiabilityLesson,
   integralCalculusLesson,
   differentialEquationsLesson,
+  coordinateGeometryLesson,
 ];
 
 const moleConceptCompanion = studyLessons.find(lesson=>lesson.id==="mole-concept");

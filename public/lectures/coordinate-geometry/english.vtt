@@ -1,0 +1,1168 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.640
+A point in the Cartesian plane is specified by an ordered pair of real
+
+00:00:04.640 --> 00:00:04.780
+coordinates.
+
+00:00:05.800 --> 00:00:09.860
+The first coordinate measures horizontal position and the second measures
+
+00:00:09.860 --> 00:00:14.360
+vertical position relative to perpendicular axes with the same length scale.
+
+00:00:14.800 --> 00:00:19.610
+To find the distance between two points, subtract their x coordinates,
+
+00:00:19.610 --> 00:00:20.160
+subtract
+
+00:00:20.160 --> 00:00:25.040
+their y coordinates, square both differences, add, and take the nonnegative
+
+00:00:25.040 --> 00:00:25.640
+square root.
+
+00:00:26.060 --> 00:00:31.720
+For A at negative one, two and B at three, five, the horizontal change is four
+
+00:00:31.900 --> 00:00:33.560
+and the vertical change is three.
+
+00:00:34.180 --> 00:00:38.140
+The distance is square root of sixteen plus nine, or five.
+
+00:00:39.300 --> 00:00:42.920
+Reversing the point order negates both differences but leaves their squares
+
+00:00:42.920 --> 00:00:43.560
+unchanged.
+
+00:00:44.220 --> 00:00:47.100
+A distance of zero means the two points coincide.
+
+00:00:47.980 --> 00:00:51.518
+Squared distances are often easier to compare than distances because they
+
+00:00:51.518 --> 00:00:51.760
+avoid
+
+00:00:51.760 --> 00:00:55.160
+radicals without changing the comparison of nonnegative lengths.
+
+00:00:56.120 --> 00:00:59.740
+The distance formula also tests a right angle through the converse of the
+
+00:00:59.740 --> 00:01:00.600
+Pythagorean theorem.
+
+00:01:01.800 --> 00:01:05.339
+Label the points and coordinates before substituting; confusing an x
+
+00:01:05.339 --> 00:01:05.860
+coordinate
+
+00:01:05.860 --> 00:01:09.840
+with a y coordinate changes the geometric problem rather than merely its
+
+00:01:09.840 --> 00:01:10.180
+notation.
+
+00:01:10.512 --> 00:01:14.392
+The section formula locates a point using its ratio along a segment.
+
+00:01:14.932 --> 00:01:20.212
+If P divides A B internally with A P to P B equal to m to n, use positive
+
+00:01:20.212 --> 00:01:23.672
+weights n on A and m on B, divided by m plus n.
+
+00:01:24.452 --> 00:01:28.144
+The reversed placement of the two weights follows from the geometry: a larger
+
+00:01:28.144 --> 00:01:28.192
+A
+
+00:01:28.192 --> 00:01:29.612
+P means P is closer to B.
+
+00:01:30.132 --> 00:01:34.732
+With A at zero, zero and B at six, three, internal ratio two to one gives P at
+
+00:01:34.732 --> 00:01:35.252
+four, two.
+
+00:01:35.932 --> 00:01:37.932
+Equal weights give the midpoint, three, three halves.
+
+00:01:38.492 --> 00:01:42.133
+For external division with the same positive distance ratio m to n, the
+
+00:01:42.133 --> 00:01:42.492
+formula
+
+00:01:42.492 --> 00:01:46.952
+is the quantity m B minus n A divided by m minus n.
+
+00:01:48.032 --> 00:01:51.292
+Ratio two to one in this example gives twelve, six, beyond B.
+
+00:01:52.032 --> 00:01:55.332
+External equal ratios do not give a finite point when A and B are distinct,
+
+00:01:55.372 --> 00:01:56.972
+because the denominator vanishes.
+
+00:01:58.092 --> 00:02:01.092
+Check an answer by calculating the two distances and locating the point on the
+
+00:02:01.092 --> 00:02:01.632
+correct line.
+
+00:02:02.412 --> 00:02:05.932
+State whether division is internal or external before choosing the sign in the
+
+00:02:05.932 --> 00:02:06.032
+formula.
+
+00:02:06.360 --> 00:02:10.440
+A locus is the set of all points satisfying a stated geometric condition.
+
+00:02:11.220 --> 00:02:14.996
+Start by calling a general moving point x, y and translating the condition
+
+00:02:14.996 --> 00:02:15.200
+into
+
+00:02:15.200 --> 00:02:15.820
+an equation.
+
+00:02:16.380 --> 00:02:20.660
+If the point is equally distant from A at negative two, zero and B at two,
+
+00:02:20.700 --> 00:02:22.680
+zero, equate the squared distances.
+
+00:02:23.440 --> 00:02:28.160
+The equation is the square of x plus two plus y squared equal to the square of
+
+00:02:28.160 --> 00:02:30.040
+x minus two plus y squared.
+
+00:02:30.600 --> 00:02:35.160
+Expanding and cancelling gives eight x equal to zero, so the locus is x equal
+
+00:02:35.160 --> 00:02:38.720
+to zero, the perpendicular bisector of A B.
+
+00:02:38.720 --> 00:02:42.140
+Here squaring the two distances is equivalent because both sides are
+
+00:02:42.140 --> 00:02:43.480
+nonnegative.
+
+00:02:43.480 --> 00:02:47.420
+Other radical equations can gain extraneous points when squared, so check the
+
+00:02:47.420 --> 00:02:49.960
+original condition and any domain restrictions afterward.
+
+00:02:50.600 --> 00:02:54.780
+A locus includes all points satisfying the condition, not merely a few plotted
+
+00:02:54.780 --> 00:02:55.320
+examples.
+
+00:02:55.900 --> 00:03:00.560
+For a fixed distance r greater than zero from a point h, k, the same distance
+
+00:03:00.560 --> 00:03:05.060
+formula gives the circle with equation the square of x minus h plus the square
+
+00:03:05.060 --> 00:03:07.360
+of y minus k equal to r squared.
+
+00:03:07.680 --> 00:03:12.180
+The slope of a nonvertical line is its change in y divided by its change in x.
+
+00:03:12.820 --> 00:03:16.820
+Through one, two and three, six, the slope is four over two, or two.
+
+00:03:17.620 --> 00:03:20.280
+Distinct parallel nonvertical lines have equal slopes.
+
+00:03:21.340 --> 00:03:25.240
+Perpendicular nonvertical lines with finite slopes have product negative one,
+
+00:03:25.720 --> 00:03:29.440
+so a line perpendicular to slope two has slope negative one half.
+
+00:03:30.200 --> 00:03:33.000
+Do not use that product formula when a slope is undefined.
+
+00:03:33.580 --> 00:03:38.180
+A vertical line x equal to a constant has no finite slope, while a horizontal
+
+00:03:38.180 --> 00:03:41.620
+line has slope zero; those two directions are perpendicular.
+
+00:03:42.400 --> 00:03:46.580
+If a line makes angle theta with the positive x axis, its slope is tangent
+
+00:03:46.580 --> 00:03:48.400
+theta whenever that tangent is defined.
+
+00:03:49.180 --> 00:03:52.500
+A line direction is unchanged by adding pi to its angle.
+
+00:03:53.240 --> 00:03:58.780
+For general equations A x plus B y plus C equal to zero with B nonzero, the
+
+00:03:58.780 --> 00:04:00.360
+slope is negative A over B.
+
+00:04:00.940 --> 00:04:04.040
+The coefficients A and B cannot both vanish in a genuine line.
+
+00:04:04.040 --> 00:04:08.640
+A sketch helps distinguish an undefined vertical slope from a zero horizontal
+
+00:04:08.640 --> 00:04:11.520
+slope, but the equation supplies the exact test.
+
+00:04:12.600 --> 00:04:16.780
+A point and a slope determine a nonvertical line through the point slope
+
+00:04:16.780 --> 00:04:22.500
+equation y minus y one equal to m times x minus x one.
+
+00:04:22.500 --> 00:04:27.800
+At point two, negative one with slope three, this gives y plus one equal to
+
+00:04:27.800 --> 00:04:31.740
+three times x minus two, or y equal to three x minus seven.
+
+00:04:32.740 --> 00:04:35.080
+Substituting the given point checks the constant term.
+
+00:04:36.000 --> 00:04:39.080
+Two distinct points determine a line even when it is vertical.
+
+00:04:39.740 --> 00:04:43.485
+A cross multiplied two point form avoids dividing by the horizontal
+
+00:04:43.485 --> 00:04:44.100
+difference:
+
+00:04:44.860 --> 00:04:50.640
+y minus y one times x two minus x one equals y two minus y one times
+
+00:04:50.640 --> 00:04:52.660
+x minus x one.
+
+00:04:52.660 --> 00:04:57.320
+Through one, two and three, six, it simplifies to y equal to two x.
+
+00:04:57.320 --> 00:05:00.960
+If the points coincide, the condition does not determine a unique line.
+
+00:05:01.540 --> 00:05:06.780
+The general form A x plus B y plus C equal to zero includes both vertical
+
+00:05:06.780 --> 00:05:10.200
+and horizontal lines when A and B are not both zero.
+
+00:05:11.360 --> 00:05:15.020
+Different nonzero multiples of the same triple of coefficients represent the
+
+00:05:15.020 --> 00:05:19.080
+same line, so compare equations after allowing for a common scale factor.
+
+00:05:19.512 --> 00:05:24.312
+A line meeting both axes at nonzero finite intercepts a and b has intercept
+
+00:05:24.312 --> 00:05:27.652
+form x over a plus y over b equal to one.
+
+00:05:28.192 --> 00:05:32.092
+Setting y equal to zero gives its x intercept, and setting x equal to zero
+
+00:05:32.092 --> 00:05:33.252
+gives its y intercept.
+
+00:05:34.092 --> 00:05:38.246
+For x over three plus y over four equal to one, the intercept points are
+
+00:05:38.246 --> 00:05:38.592
+three,
+
+00:05:38.592 --> 00:05:40.172
+zero and zero, four.
+
+00:05:40.672 --> 00:05:44.592
+Multiplication gives four x plus three y minus twelve equal to zero.
+
+00:05:45.012 --> 00:05:49.672
+Its normal vector has length five, so division by five yields four fifths x
+
+00:05:49.672 --> 00:05:52.332
+plus three fifths y equal to twelve fifths.
+
+00:05:52.892 --> 00:05:57.472
+This is normal form: the coefficients are cosine alpha and sine alpha for the
+
+00:05:57.472 --> 00:06:01.472
+direction of a unit normal, and the nonnegative right hand side p is the
+
+00:06:01.472 --> 00:06:02.312
+distance from the origin.
+
+00:06:02.812 --> 00:06:06.872
+If the right hand side is negative, reverse the signs to use the convention p
+
+00:06:06.872 --> 00:06:08.112
+nonnegative.
+
+00:06:08.112 --> 00:06:10.252
+A line through the origin has p zero.
+
+00:06:10.792 --> 00:06:14.692
+The usual intercept expression is unsuitable when an intercept is zero or
+
+00:06:14.692 --> 00:06:18.730
+absent, so use the general or point form in those cases instead of dividing by
+
+00:06:18.730 --> 00:06:18.816
+zero.
+
+00:06:18.816 --> 00:06:21.816
+Intersecting lines share a point satisfying both equations.
+
+00:06:22.516 --> 00:06:26.356
+Solve the pair x plus y equal to five and x minus y equal to one.
+
+00:06:27.176 --> 00:06:31.276
+Adding gives two x equal to six, hence x is three and y is two.
+
+00:06:32.016 --> 00:06:35.376
+Three lines are concurrent at a finite point when the same point lies on all
+
+00:06:35.376 --> 00:06:35.616
+three.
+
+00:06:36.156 --> 00:06:40.676
+For the additional line three x plus y equal to k, substitution of three, two
+
+00:06:40.676 --> 00:06:42.176
+gives k equal to eleven.
+
+00:06:42.756 --> 00:06:45.656
+This direct method makes the finite common point explicit.
+
+00:06:46.316 --> 00:06:50.696
+A determinant condition for three line coefficients can be useful, but a zero
+
+00:06:50.696 --> 00:06:54.616
+determinant alone can also occur for parallel arrangements and must be
+
+00:06:54.616 --> 00:06:55.136
+interpreted with care.
+
+00:06:55.896 --> 00:06:59.436
+Two general lines have a unique intersection when the determinant of their x
+
+00:06:59.436 --> 00:07:01.596
+and y coefficients is nonzero.
+
+00:07:01.596 --> 00:07:05.516
+If that determinant vanishes, check whether the lines are coincident or
+
+00:07:05.516 --> 00:07:06.536
+distinct and parallel.
+
+00:07:07.276 --> 00:07:11.396
+Identical equations after scaling describe one line, not a unique intersection
+
+00:07:11.396 --> 00:07:11.816
+point.
+
+00:07:12.256 --> 00:07:15.996
+When a parameter is present, do not divide by it before checking the value at
+
+00:07:15.996 --> 00:07:17.056
+which the divisor vanishes.
+
+00:07:17.996 --> 00:07:20.496
+Verify the computed coordinates in all the original equations.
+
+00:07:21.024 --> 00:07:24.224
+Two intersecting lines generally make supplementary angles.
+
+00:07:25.164 --> 00:07:28.844
+Unless another angle is requested, the smaller angle is between zero and pi
+
+00:07:28.844 --> 00:07:29.284
+over two.
+
+00:07:30.864 --> 00:07:35.504
+For finite slopes m one and m two, its tangent is the absolute value of m two
+
+00:07:35.504 --> 00:07:38.724
+minus m one divided by one plus their product.
+
+00:07:40.124 --> 00:07:43.884
+Slopes one and zero therefore give tangent theta equal to one, so theta is pi
+
+00:07:43.884 --> 00:07:44.404
+over four.
+
+00:07:44.804 --> 00:07:48.924
+If the denominator is zero, the lines are perpendicular and the smaller angle
+
+00:07:48.924 --> 00:07:53.104
+is pi over two; a division by zero is not a finite tangent value.
+
+00:07:54.004 --> 00:07:57.164
+A method that also handles vertical lines uses their normal vectors.
+
+00:07:58.204 --> 00:08:02.484
+For general coefficients A one, B one and A two, B two, the cosine of the
+
+00:08:02.484 --> 00:08:06.384
+smaller angle is the absolute value of the dot product divided by the product
+
+00:08:06.384 --> 00:08:07.264
+of the normal lengths.
+
+00:08:07.944 --> 00:08:11.204
+The absolute value removes the arbitrary reversal of a normal vector.
+
+00:08:12.204 --> 00:08:16.164
+Normals with zero dot product correspond to perpendicular lines, while
+
+00:08:16.164 --> 00:08:18.644
+proportional normals correspond to parallel directions.
+
+00:08:18.644 --> 00:08:22.824
+Make sure each pair of line coefficients actually defines a nonzero normal
+
+00:08:22.824 --> 00:08:24.404
+before normalizing it.
+
+00:08:25.680 --> 00:08:30.991
+The perpendicular distance from a point x zero, y zero to the line A x plus B
+
+00:08:30.991 --> 00:08:31.060
+y
+
+00:08:31.060 --> 00:08:37.000
+plus C equal to zero is the absolute value of A x zero plus B y zero plus C
+
+00:08:37.780 --> 00:08:40.660
+divided by square root of A squared plus B squared.
+
+00:08:41.640 --> 00:08:45.720
+The denominator normalizes the normal vector and makes the answer independent
+
+00:08:45.720 --> 00:08:48.420
+of multiplying the equation by a nonzero constant.
+
+00:08:49.180 --> 00:08:54.100
+From point one, two to three x plus four y minus six equal to zero, the
+
+00:08:54.100 --> 00:08:58.040
+numerator is five and the denominator is five, giving distance one.
+
+00:08:58.800 --> 00:09:00.580
+A point on the line has distance zero.
+
+00:09:01.340 --> 00:09:05.640
+For two parallel lines with exactly the same A and B coefficients, their
+
+00:09:05.640 --> 00:09:09.660
+distance is the absolute difference of the constant terms divided by the same
+
+00:09:09.660 --> 00:09:10.280
+normal length.
+
+00:09:11.020 --> 00:09:16.380
+Thus three x plus four y minus six equal to zero and three x plus four y plus
+
+00:09:16.380 --> 00:09:18.840
+four equal to zero are distance two apart.
+
+00:09:19.480 --> 00:09:22.860
+First rescale proportional equations so their normal coefficients agree.
+
+00:09:23.980 --> 00:09:26.638
+Subtracting unmatched constants from differently scaled equations would
+
+00:09:26.638 --> 00:09:26.900
+produce
+
+00:09:26.900 --> 00:09:27.960
+a meaningless distance.
+
+00:09:29.180 --> 00:09:32.928
+Distance is nonnegative, so retain the absolute value even when a chosen
+
+00:09:32.928 --> 00:09:33.240
+normal
+
+00:09:33.240 --> 00:09:34.380
+orientation reverses.
+
+00:09:35.328 --> 00:09:40.248
+The centroid of a nondegenerate triangle is the average of its three vertex
+
+00:09:40.248 --> 00:09:40.768
+coordinates.
+
+00:09:41.508 --> 00:09:45.888
+It is the intersection of the medians and divides each median in the ratio two
+
+00:09:45.888 --> 00:09:47.668
+to one measured from the vertex.
+
+00:09:48.428 --> 00:09:53.128
+The circumcentre is the intersection of perpendicular bisectors and is equally
+
+00:09:53.128 --> 00:09:54.628
+distant from all three vertices.
+
+00:09:55.588 --> 00:10:00.008
+The orthocentre is the intersection of altitudes, which pass through vertices
+
+00:10:00.008 --> 00:10:01.888
+perpendicular to the opposite sides.
+
+00:10:02.528 --> 00:10:07.668
+For the triangle with vertices zero, zero; six, zero; and zero, eight, the
+
+00:10:07.668 --> 00:10:09.708
+centroid is two, eight thirds.
+
+00:10:10.488 --> 00:10:12.368
+This triangle is right angled at the origin.
+
+00:10:13.128 --> 00:10:17.508
+Its hypotenuse has midpoint three, four, which is the circumcentre, and the
+
+00:10:17.508 --> 00:10:18.668
+circumradius is five.
+
+00:10:19.108 --> 00:10:23.128
+The two coordinate axes are altitudes, so the orthocentre is the origin.
+
+00:10:23.868 --> 00:10:25.628
+These three centres are different points.
+
+00:10:26.068 --> 00:10:30.208
+In a general triangle, solve two perpendicular bisector equations for the
+
+00:10:30.208 --> 00:10:34.288
+circumcentre and two altitude equations for the orthocentre.
+
+00:10:34.288 --> 00:10:37.628
+Vertical or horizontal sides need their perpendicular directions handled
+
+00:10:37.628 --> 00:10:40.088
+directly instead of using an undefined slope.
+
+00:10:41.128 --> 00:10:45.188
+Collinear vertices do not form a nondegenerate triangle, so the usual finite
+
+00:10:45.188 --> 00:10:47.928
+unique circumcentre construction is not available in that case.
+
+00:10:47.928 --> 00:10:53.328
+A circle with centre h, k and positive radius r consists of points at distance
+
+00:10:53.328 --> 00:10:55.028
+r from that centre.
+
+00:10:55.028 --> 00:11:00.168
+Its standard equation is the square of x minus h plus the square of y minus k
+
+00:11:00.168 --> 00:11:01.288
+equal to r squared.
+
+00:11:02.568 --> 00:11:07.768
+Expanding leads to the general form x squared plus y squared plus two g x plus
+
+00:11:07.768 --> 00:11:10.348
+two f y plus c equal to zero.
+
+00:11:11.428 --> 00:11:15.811
+Completing the squares gives centre negative g, negative f and radius squared
+
+00:11:15.811 --> 00:11:15.868
+g
+
+00:11:15.868 --> 00:11:18.148
+squared plus f squared minus c.
+
+00:11:18.688 --> 00:11:22.748
+For x squared plus y squared minus four x plus six y minus twelve equal to
+
+00:11:22.748 --> 00:11:25.228
+zero, the centre is two, negative three.
+
+00:11:26.028 --> 00:11:29.648
+Completing the squares yields the square of x minus two plus the square of y
+
+00:11:29.648 --> 00:11:33.168
+plus three equal to twenty five, so the radius is five.
+
+00:11:34.048 --> 00:11:37.988
+Check the sign of the radius squared: a positive value gives a real circle,
+
+00:11:38.748 --> 00:11:42.608
+zero gives a single point, and a negative value gives no real points.
+
+00:11:43.228 --> 00:11:47.659
+If the common nonzero coefficient of x squared and y squared is not one,
+
+00:11:47.659 --> 00:11:48.028
+divide
+
+00:11:48.028 --> 00:11:51.628
+the entire equation by it before reading g, f and c.
+
+00:11:52.608 --> 00:11:56.308
+Equal quadratic coefficients alone do not guarantee a real positive radius
+
+00:11:56.308 --> 00:11:56.588
+circle.
+
+00:11:56.832 --> 00:12:02.192
+If the endpoints of a diameter are known, the centre is their midpoint and the
+
+00:12:02.192 --> 00:12:03.352
+radius is half their distance.
+
+00:12:04.492 --> 00:12:10.261
+For A at negative one, zero and B at three, zero, the midpoint is one, zero
+
+00:12:10.261 --> 00:12:10.492
+and
+
+00:12:10.492 --> 00:12:11.592
+the radius is two.
+
+00:12:12.592 --> 00:12:17.912
+Thus the circle has equation the square of x minus one plus y squared equal to
+
+00:12:17.912 --> 00:12:18.212
+four.
+
+00:12:18.752 --> 00:12:24.572
+A useful direct diameter equation is x minus x one times x minus
+
+00:12:24.572 --> 00:12:30.412
+x two, plus y minus y one times y minus y two equal to
+
+00:12:30.412 --> 00:12:30.592
+zero.
+
+00:12:31.312 --> 00:12:36.992
+In this example it becomes x plus one times x minus three, plus y squared
+
+00:12:37.192 --> 00:12:39.672
+equal to zero, which expands to the same circle.
+
+00:12:40.552 --> 00:12:44.732
+The direct form comes from the right angle subtended by a diameter, expressed
+
+00:12:44.732 --> 00:12:48.672
+as a zero dot product for the two endpoint vectors from a point on the circle.
+
+00:12:49.672 --> 00:12:52.052
+Verify that both endpoints satisfy the equation.
+
+00:12:52.652 --> 00:12:55.832
+Distinct endpoints are required for a positive radius circle.
+
+00:12:56.752 --> 00:13:01.112
+If the endpoints coincide, the algebra instead describes a zero radius point.
+
+00:13:01.932 --> 00:13:05.932
+Do not mistake the endpoint distance for the radius; it is the full diameter
+
+00:13:06.152 --> 00:13:07.172
+and must be halved.
+
+00:13:07.392 --> 00:13:11.672
+To intersect a line and a circle, substitute one equation into the other and
+
+00:13:11.672 --> 00:13:14.232
+solve the resulting quadratic or simpler equation.
+
+00:13:14.752 --> 00:13:19.332
+For x squared plus y squared equal to twenty five and line y equal to three,
+
+00:13:20.092 --> 00:13:22.812
+substitution gives x squared equal to sixteen.
+
+00:13:22.812 --> 00:13:25.932
+The intersection points are negative four, three and four, three.
+
+00:13:26.452 --> 00:13:28.532
+Their distance is eight, the chord length.
+
+00:13:29.312 --> 00:13:33.252
+The perpendicular from the circle centre bisects the chord, giving the general
+
+00:13:33.252 --> 00:13:38.072
+chord formula twice square root of r squared minus d squared, where d is the
+
+00:13:38.072 --> 00:13:39.252
+centre to line distance.
+
+00:13:40.072 --> 00:13:43.852
+Here r is five and d is three, so the half chord is four.
+
+00:13:44.412 --> 00:13:49.092
+If d is less than r there are two intersections, if d equals r there is one
+
+00:13:49.092 --> 00:13:52.932
+tangent contact, and if d exceeds r there is no real intersection.
+
+00:13:53.512 --> 00:13:56.992
+The quadratic discriminant gives the same three cases when substitution
+
+00:13:56.992 --> 00:13:58.532
+produces a genuine quadratic.
+
+00:13:59.212 --> 00:14:02.332
+A vertical line can be substituted by fixing x directly.
+
+00:14:02.972 --> 00:14:06.603
+Always substitute the candidate points back into both original equations,
+
+00:14:06.603 --> 00:14:06.852
+since
+
+00:14:06.852 --> 00:14:10.872
+roots of an incorrectly rearranged quadratic may not represent actual common
+
+00:14:10.872 --> 00:14:11.172
+points.
+
+00:14:11.592 --> 00:14:17.272
+A tangent to a real circle meets it at one point and is perpendicular to the
+
+00:14:17.272 --> 00:14:18.052
+radius through that point.
+
+00:14:18.852 --> 00:14:23.672
+On the circle x squared plus y squared equal to r squared, the tangent at an
+
+00:14:23.672 --> 00:14:29.482
+actual circle point x one, y one has equation x x one plus y y one
+
+00:14:29.482 --> 00:14:30.612
+equal to r squared.
+
+00:14:31.172 --> 00:14:35.572
+At point three, four on the circle of radius five centred at the origin, the
+
+00:14:35.572 --> 00:14:38.112
+tangent is three x plus four y equal to twenty five.
+
+00:14:38.112 --> 00:14:42.752
+Its normal points along the radius, and its distance from the origin is twenty
+
+00:14:42.752 --> 00:14:45.852
+five over five, or five, confirming tangency.
+
+00:14:46.612 --> 00:14:49.725
+The point must lie on the circle before this formula can be used as the
+
+00:14:49.725 --> 00:14:50.032
+tangent
+
+00:14:50.032 --> 00:14:50.732
+at that point.
+
+00:14:51.392 --> 00:14:55.392
+For a shifted centre, translate the coordinates first or use the radius as the
+
+00:14:55.392 --> 00:14:56.072
+normal direction.
+
+00:14:56.812 --> 00:15:00.492
+To decide whether a general line is tangent, compare the centre to line
+
+00:15:00.492 --> 00:15:02.352
+distance with the radius.
+
+00:15:02.352 --> 00:15:04.852
+This avoids solving for a repeated quadratic root.
+
+00:15:05.372 --> 00:15:09.545
+Tangency is a useful supporting application of the line and circle methods;
+
+00:15:09.545 --> 00:15:09.712
+the
+
+00:15:09.712 --> 00:15:13.752
+point and distance checks prevent a memorized tangent formula being used at an
+
+00:15:13.752 --> 00:15:14.392
+unrelated point.
+
+00:15:14.904 --> 00:15:20.204
+A focus directrix description defines a conic through a fixed positive ratio.
+
+00:15:20.804 --> 00:15:25.766
+The distance from a moving point P to the focus equals eccentricity e times
+
+00:15:25.766 --> 00:15:25.964
+the
+
+00:15:25.964 --> 00:15:28.784
+perpendicular distance from P to a fixed directrix line.
+
+00:15:29.664 --> 00:15:33.284
+For positive e less than one, the nondegenerate conic is an ellipse.
+
+00:15:33.904 --> 00:15:38.244
+For e equal to one it is a parabola, and for e greater than one it is a
+
+00:15:38.244 --> 00:15:38.624
+hyperbola.
+
+00:15:38.984 --> 00:15:42.789
+The circle is conventionally the eccentricity zero limiting case of an
+
+00:15:42.789 --> 00:15:43.224
+ellipse;
+
+00:15:43.544 --> 00:15:47.904
+do not insert e equal to zero into a fixed finite focus directrix description
+
+00:15:47.904 --> 00:15:52.584
+and expect a circle, since that literal equation would give only the focus.
+
+00:15:53.424 --> 00:15:57.324
+In standard centred conics, c denotes the centre to focus distance.
+
+00:15:57.864 --> 00:16:02.590
+For an ellipse with semimajor length a and semiminor length b, c squared
+
+00:16:02.590 --> 00:16:02.984
+equals
+
+00:16:02.984 --> 00:16:04.524
+a squared minus b squared.
+
+00:16:05.184 --> 00:16:09.936
+For a hyperbola with transverse semiaxis a and conjugate parameter b, c
+
+00:16:09.936 --> 00:16:10.404
+squared
+
+00:16:10.404 --> 00:16:12.244
+equals a squared plus b squared.
+
+00:16:12.724 --> 00:16:15.824
+In both cases eccentricity is c over a.
+
+00:16:16.564 --> 00:16:21.284
+Read the orientation and the role of a before computing c: for a hyperbola the
+
+00:16:21.284 --> 00:16:25.024
+positive squared term, rather than the larger denominator, determines the
+
+00:16:25.024 --> 00:16:25.424
+transverse axis.
+
+00:16:25.824 --> 00:16:30.704
+For a positive, the parabola y squared equal to four a x opens to the right,
+
+00:16:31.144 --> 00:16:36.084
+has vertex at the origin, focus a, zero, and directrix x equal to negative a.
+
+00:16:36.564 --> 00:16:38.624
+Its axis is the x axis.
+
+00:16:39.504 --> 00:16:43.404
+The latus rectum is the chord through the focus perpendicular to that axis.
+
+00:16:44.504 --> 00:16:48.935
+Setting x equal to a gives y equal to positive or negative two a, so its
+
+00:16:48.935 --> 00:16:49.304
+length
+
+00:16:49.304 --> 00:16:50.744
+is four a.
+
+00:16:50.744 --> 00:16:56.584
+In y squared equal to eight x, a is two, the focus is two, zero and the latus
+
+00:16:56.584 --> 00:16:57.724
+rectum length is eight.
+
+00:16:58.884 --> 00:17:02.664
+Changing the right hand side to negative four a x reflects the parabola left,
+
+00:17:02.984 --> 00:17:06.724
+with focus negative a, zero and directrix x equal to a.
+
+00:17:07.784 --> 00:17:12.424
+Swapping x and y produces the upward and downward forms x squared equal to
+
+00:17:12.424 --> 00:17:14.404
+positive or negative four a y.
+
+00:17:14.404 --> 00:17:18.784
+In each orientation the focus is on the opening side and the directrix on the
+
+00:17:18.784 --> 00:17:19.884
+opposite side of the vertex.
+
+00:17:20.944 --> 00:17:25.064
+Compare the coefficient with four a, not a alone, and keep the opening sign
+
+00:17:25.064 --> 00:17:27.124
+separate from the positive focal length parameter.
+
+00:17:27.432 --> 00:17:32.692
+A convenient parameter for y squared equal to four a x is x equal to a t
+
+00:17:32.692 --> 00:17:36.072
+squared and y equal to two a t, with real t.
+
+00:17:36.992 --> 00:17:41.372
+Substitution verifies the equation directly, and every point on this parabola
+
+00:17:41.372 --> 00:17:42.572
+has such a parameter.
+
+00:17:43.032 --> 00:17:48.192
+The tangent at that parameter has equation t y equal to x plus a t squared.
+
+00:17:48.652 --> 00:17:51.632
+For y squared equal to eight x, a is two.
+
+00:17:52.052 --> 00:17:56.852
+At t equal to one, the point is two, four and the tangent is y equal to x plus
+
+00:17:56.852 --> 00:17:57.212
+two.
+
+00:17:58.112 --> 00:18:01.892
+Substituting that line into the parabola produces a repeated root at the
+
+00:18:01.892 --> 00:18:03.832
+contact point, confirming tangency.
+
+00:18:04.472 --> 00:18:09.152
+At t equal to zero, the point is the vertex and the tangent formula gives x
+
+00:18:09.152 --> 00:18:11.072
+equal to zero, a vertical line.
+
+00:18:11.512 --> 00:18:15.812
+A slope expression that divides by t would miss that case, so the parameter
+
+00:18:15.812 --> 00:18:17.132
+equation is more robust.
+
+00:18:17.912 --> 00:18:21.832
+These tangent and parameter facts support the standard form rather than
+
+00:18:21.832 --> 00:18:23.952
+replacing its focus and directrix definition.
+
+00:18:25.132 --> 00:18:29.592
+Verify the point first, keep the sign of t to distinguish the two halves, and
+
+00:18:29.592 --> 00:18:32.212
+avoid assuming that a vertical tangent has finite slope.
+
+00:18:32.736 --> 00:18:37.636
+For the standard horizontal ellipse x squared over a squared plus y squared
+
+00:18:37.636 --> 00:18:42.516
+over b squared equal to one, take a greater than b and both positive.
+
+00:18:43.096 --> 00:18:48.196
+Its major axis has length two a along x, and its minor axis has length two b
+
+00:18:48.196 --> 00:18:48.956
+along y.
+
+00:18:49.456 --> 00:18:54.216
+The foci are positive and negative c, zero, with c squared equal to a squared
+
+00:18:54.216 --> 00:18:55.136
+minus b squared.
+
+00:18:55.856 --> 00:18:57.556
+Eccentricity is c over a.
+
+00:18:58.016 --> 00:19:03.776
+For denominators twenty five and nine, a is five, b is three, c is four and e
+
+00:19:03.776 --> 00:19:04.956
+is four fifths.
+
+00:19:05.356 --> 00:19:08.156
+The major and minor axis lengths are ten and six.
+
+00:19:08.696 --> 00:19:13.136
+The directrices are x equal to positive or negative a over e, giving positive
+
+00:19:13.136 --> 00:19:15.036
+or negative twenty five fourths.
+
+00:19:15.356 --> 00:19:19.556
+The latus rectum length is two b squared over a, or eighteen fifths.
+
+00:19:20.036 --> 00:19:24.716
+If the larger denominator lies under y squared, the major axis is vertical and
+
+00:19:24.716 --> 00:19:27.296
+the focus and directrix roles swap coordinates.
+
+00:19:27.856 --> 00:19:31.816
+Equal positive denominators describe a circle, where the finite directrix
+
+00:19:31.816 --> 00:19:34.556
+formula involving division by e is unavailable.
+
+00:19:35.516 --> 00:19:39.676
+Check whether a requested quantity is a semiaxis or a full axis before giving
+
+00:19:39.676 --> 00:19:40.696
+its numerical value.
+
+00:19:41.352 --> 00:19:45.685
+For a horizontal hyperbola in the form x squared over a squared minus y
+
+00:19:45.685 --> 00:19:46.112
+squared
+
+00:19:46.112 --> 00:19:49.632
+over b squared equal to one, a and b are positive.
+
+00:19:50.212 --> 00:19:52.952
+The vertices are positive and negative a, zero.
+
+00:19:53.432 --> 00:19:58.091
+The foci are positive and negative c, zero, where c squared is a squared plus
+
+00:19:58.091 --> 00:19:58.152
+b
+
+00:19:58.152 --> 00:19:58.392
+squared.
+
+00:19:58.892 --> 00:20:01.652
+Thus e equal to c over a is greater than one.
+
+00:20:02.252 --> 00:20:07.247
+In x squared over nine minus y squared over sixteen equal to one, a is three,
+
+00:20:07.247 --> 00:20:07.312
+b
+
+00:20:07.312 --> 00:20:11.862
+is four, c is five and the foci are five units from the centre.
+
+00:20:11.862 --> 00:20:16.402
+The asymptotes are y equal to positive or negative b over a times x, giving
+
+00:20:16.402 --> 00:20:18.362
+slopes positive and negative four thirds.
+
+00:20:19.202 --> 00:20:24.262
+The directrices are x equal to positive or negative a over e, or positive and
+
+00:20:24.262 --> 00:20:24.942
+negative nine fifths.
+
+00:20:25.502 --> 00:20:29.782
+The latus rectum length is two b squared over a, giving thirty two thirds.
+
+00:20:30.462 --> 00:20:34.042
+For the vertical form y squared over a squared minus x squared over b squared
+
+00:20:34.042 --> 00:20:38.582
+equal to one, the vertices and foci lie on y, and the asymptotes have slopes
+
+00:20:38.582 --> 00:20:40.462
+positive and negative a over b.
+
+00:20:40.982 --> 00:20:44.962
+The positive term determines the opening axis, regardless of which denominator
+
+00:20:44.962 --> 00:20:45.562
+is larger.
+
+00:20:45.960 --> 00:20:49.660
+Translations move standard conics without changing their lengths or
+
+00:20:49.660 --> 00:20:50.360
+eccentricity.
+
+00:20:51.120 --> 00:20:56.880
+Replace x by x minus h and y by y minus k to move a centred conic to centre h,
+
+00:20:56.880 --> 00:20:57.420
+k.
+
+00:20:57.420 --> 00:21:01.660
+The ellipse with the square of x minus two over twenty five plus the square of
+
+00:21:01.660 --> 00:21:05.180
+y plus one over nine equal to one has centre two, negative one.
+
+00:21:05.640 --> 00:21:10.308
+Its focal distance is four, so its foci are negative two, negative one and
+
+00:21:10.308 --> 00:21:10.560
+six,
+
+00:21:10.740 --> 00:21:11.240
+negative one.
+
+00:21:11.300 --> 00:21:16.440
+For a translated right opening parabola, the square of y minus k equals four a
+
+00:21:16.440 --> 00:21:17.680
+times x minus h.
+
+00:21:18.380 --> 00:21:24.165
+Its vertex is h, k, its focus is h plus a, k, and its directrix is x equal to
+
+00:21:24.165 --> 00:21:24.240
+h
+
+00:21:24.240 --> 00:21:24.840
+minus a.
+
+00:21:25.580 --> 00:21:28.620
+Completing squares helps convert an expanded equation into these forms.
+
+00:21:29.440 --> 00:21:33.620
+Do not classify a curve solely from two visible squared terms without checking
+
+00:21:33.620 --> 00:21:34.580
+the completed equation.
+
+00:21:35.160 --> 00:21:38.880
+A sum of nonnegative squares equal to a negative number has no real points,
+
+00:21:39.420 --> 00:21:41.520
+while equality to zero may give a single point.
+
+00:21:42.360 --> 00:21:46.960
+State the centre or vertex, orientation and reality conditions first, then
+
+00:21:46.960 --> 00:21:50.220
+compute distances or intersections from the normalized standard form.
