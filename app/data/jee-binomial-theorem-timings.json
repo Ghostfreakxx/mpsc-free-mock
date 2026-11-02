@@ -1,0 +1,1361 @@
+{
+  "duration": 724.7040000000185,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 77.06400000000203
+    },
+    {
+      "start": 77.06400000000203,
+      "end": 143.66400000000365
+    },
+    {
+      "start": 143.66400000000365,
+      "end": 207.7200000000052
+    },
+    {
+      "start": 207.7200000000052,
+      "end": 277.1280000000069
+    },
+    {
+      "start": 277.1280000000069,
+      "end": 352.8480000000089
+    },
+    {
+      "start": 352.8480000000089,
+      "end": 423.16800000001064
+    },
+    {
+      "start": 423.16800000001064,
+      "end": 498.02400000001256
+    },
+    {
+      "start": 498.02400000001256,
+      "end": 572.2800000000145
+    },
+    {
+      "start": 572.2800000000145,
+      "end": 643.2000000000163
+    },
+    {
+      "start": 643.2000000000163,
+      "end": 724.7040000000185
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 4.179999828338623,
+      "text": "The binomial theorem connects multiplication with combinations.",
+      "chapter": 0
+    },
+    {
+      "start": 5.159999847412109,
+      "end": 10.589487026899288,
+      "text": "For a positive integer n, the expression a plus b raised to n is a product of",
+      "chapter": 0
+    },
+    {
+      "start": 10.589487026899288,
+      "end": 10.65999984741211,
+      "text": "n",
+      "chapter": 0
+    },
+    {
+      "start": 10.65999984741211,
+      "end": 11.460000038146973,
+      "text": "identical factors.",
+      "chapter": 0
+    },
+    {
+      "start": 12.479999542236328,
+      "end": 17.749229871309723,
+      "text": "To produce a term containing r copies of b, choose b from exactly r factors",
+      "chapter": 0
+    },
+    {
+      "start": 17.749229871309723,
+      "end": 17.959999084472656,
+      "text": "and",
+      "chapter": 0
+    },
+    {
+      "start": 17.959999084472656,
+      "end": 19.059999465942383,
+      "text": "a from all the others.",
+      "chapter": 0
+    },
+    {
+      "start": 19.65999984741211,
+      "end": 22.559999465942383,
+      "text": "There are C of n, r ways to choose those factors.",
+      "chapter": 0
+    },
+    {
+      "start": 23.5,
+      "end": 27.780000686645508,
+      "text": "Each contributes a to the power n minus r times b to the power r.",
+      "chapter": 0
+    },
+    {
+      "start": 28.309999465942383,
+      "end": 31.84000015258789,
+      "text": "Adding over r from zero through n gives the finite expansion.",
+      "chapter": 0
+    },
+    {
+      "start": 32.7400016784668,
+      "end": 37.31999969482422,
+      "text": "There are n plus one indexed terms, with the first using no b and the last",
+      "chapter": 0
+    },
+    {
+      "start": 37.31999969482422,
+      "end": 38.380001068115234,
+      "text": "using only b.",
+      "chapter": 0
+    },
+    {
+      "start": 39.15999984741211,
+      "end": 43.81999969482422,
+      "text": "For n equal to four, the coefficients are one, four, six, four, one.",
+      "chapter": 0
+    },
+    {
+      "start": 44.540000915527344,
+      "end": 47.2400016784668,
+      "text": "Every term has total degree four in a and b.",
+      "chapter": 0
+    },
+    {
+      "start": 47.7400016784668,
+      "end": 51.060001373291016,
+      "text": "The symmetry of the coefficients follows by exchanging the selected and",
+      "chapter": 0
+    },
+    {
+      "start": 51.060001373291016,
+      "end": 52,
+      "text": "unselected factors.",
+      "chapter": 0
+    },
+    {
+      "start": 52.68000030517578,
+      "end": 56.599998474121094,
+      "text": "This counting proof explains why combinations appear instead of permutations:",
+      "chapter": 0
+    },
+    {
+      "start": 57.02000045776367,
+      "end": 59.439998626708984,
+      "text": "the selected factor positions form a subset.",
+      "chapter": 0
+    },
+    {
+      "start": 60.15999984741211,
+      "end": 63.68000030517578,
+      "text": "The finite formula applies to positive integer exponents in this class.",
+      "chapter": 0
+    },
+    {
+      "start": 64.26000213623047,
+      "end": 68,
+      "text": "An exponent such as one half does not produce the same finite expansion.",
+      "chapter": 0
+    },
+    {
+      "start": 68.83999633789062,
+      "end": 73.36000061035156,
+      "text": "If specific substitutions make some terms vanish or combine, distinguish that",
+      "chapter": 0
+    },
+    {
+      "start": 73.36000061035156,
+      "end": 76.77999877929688,
+      "text": "simplified expression from the original indexed binomial list.",
+      "chapter": 0
+    },
+    {
+      "start": 77.06400000000203,
+      "end": 82.04400001907551,
+      "text": "The general term is indexed by r, but its position in the expansion is r plus",
+      "chapter": 1
+    },
+    {
+      "start": 82.04400001907551,
+      "end": 82.24399982834065,
+      "text": "one.",
+      "chapter": 1
+    },
+    {
+      "start": 82.90400015258992,
+      "end": 87.4639996185323,
+      "text": "The first term uses r equal to zero, so the third term uses r equal to two.",
+      "chapter": 1
+    },
+    {
+      "start": 88.06400000000203,
+      "end": 90.56400000000203,
+      "text": "This distinction prevents many off by one errors.",
+      "chapter": 1
+    },
+    {
+      "start": 91.28400026703083,
+      "end": 96.32400022888386,
+      "text": "To find the coefficient of x cubed in two x minus three raised to five, take a",
+      "chapter": 1
+    },
+    {
+      "start": 96.32400022888386,
+      "end": 98.14399992370808,
+      "text": "as two x and b as negative three.",
+      "chapter": 1
+    },
+    {
+      "start": 98.7440003051778,
+      "end": 104.20399938965046,
+      "text": "The general term is C of five, r times two x to the power five minus r times",
+      "chapter": 1
+    },
+    {
+      "start": 104.20399938965046,
+      "end": 105.72399984741413,
+      "text": "negative three to the power r.",
+      "chapter": 1
+    },
+    {
+      "start": 106.40400015258992,
+      "end": 111.20399938965046,
+      "text": "The variable power is five minus r, so matching it to three gives r equal to",
+      "chapter": 1
+    },
+    {
+      "start": 111.20399938965046,
+      "end": 111.44400106811726,
+      "text": "two.",
+      "chapter": 1
+    },
+    {
+      "start": 112.20399938965046,
+      "end": 116.0270782298573,
+      "text": "The coefficient is C of five, two times two cubed times negative three",
+      "chapter": 1
+    },
+    {
+      "start": 116.0270782298573,
+      "end": 116.46400152588093,
+      "text": "squared,",
+      "chapter": 1
+    },
+    {
+      "start": 116.94400106811726,
+      "end": 120.52399908447468,
+      "text": "or ten times eight times nine, giving seven hundred twenty.",
+      "chapter": 1
+    },
+    {
+      "start": 120.52399908447468,
+      "end": 125.26400076294148,
+      "text": "The full term is seven hundred twenty x cubed; the coefficient alone is seven",
+      "chapter": 1
+    },
+    {
+      "start": 125.26400076294148,
+      "end": 126.18399893188679,
+      "text": "hundred twenty.",
+      "chapter": 1
+    },
+    {
+      "start": 126.18399893188679,
+      "end": 130.1440018310567,
+      "text": "For the x to the fourth term, r equals one, so its coefficient is five times",
+      "chapter": 1
+    },
+    {
+      "start": 130.1440018310567,
+      "end": 133.86399923706256,
+      "text": "sixteen times negative three, or negative two hundred forty.",
+      "chapter": 1
+    },
+    {
+      "start": 133.86399923706256,
+      "end": 136.22399984741412,
+      "text": "Bracket the negative base before taking a power.",
+      "chapter": 1
+    },
+    {
+      "start": 137.3239983215352,
+      "end": 141.1440018310567,
+      "text": "Finally, check that the solved r is an integer in the allowed range from zero",
+      "chapter": 1
+    },
+    {
+      "start": 141.1440018310567,
+      "end": 143.28400122070514,
+      "text": "to five before evaluating the combination.",
+      "chapter": 1
+    },
+    {
+      "start": 143.66400000000365,
+      "end": 146.54400011444457,
+      "text": "A binomial may contain the variable in both of its parts.",
+      "chapter": 2
+    },
+    {
+      "start": 147.2239999427832,
+      "end": 151.4240002288855,
+      "text": "For x squared plus one over x raised to six, the denominator requires x",
+      "chapter": 2
+    },
+    {
+      "start": 151.4240002288855,
+      "end": 152.56399961853393,
+      "text": "nonzero.",
+      "chapter": 2
+    },
+    {
+      "start": 152.56399961853393,
+      "end": 157.72400041962035,
+      "text": "The general term is C of six, r times x squared to the power six minus r times",
+      "chapter": 2
+    },
+    {
+      "start": 157.72400041962035,
+      "end": 159.14399954223998,
+      "text": "one over x to the power r.",
+      "chapter": 2
+    },
+    {
+      "start": 160.04399916077026,
+      "end": 163.6239990844763,
+      "text": "Combine the exponents to obtain x to the power twelve minus three r.",
+      "chapter": 2
+    },
+    {
+      "start": 163.6239990844763,
+      "end": 167.56399961853393,
+      "text": "For a constant term, set that exponent to zero, giving r equal to four.",
+      "chapter": 2
+    },
+    {
+      "start": 167.9240002288855,
+      "end": 171.28400083923705,
+      "text": "The coefficient is C of six, four, or fifteen.",
+      "chapter": 2
+    },
+    {
+      "start": 171.28400083923705,
+      "end": 175.28400083923705,
+      "text": "The term occupies position five because the term number is r plus one.",
+      "chapter": 2
+    },
+    {
+      "start": 175.98399969482787,
+      "end": 179.92399832153686,
+      "text": "To find the x cubed term instead, solve twelve minus three r equals three,",
+      "chapter": 2
+    },
+    {
+      "start": 180.3039993896521,
+      "end": 183.22400137329467,
+      "text": "giving r equal to three and coefficient twenty.",
+      "chapter": 2
+    },
+    {
+      "start": 183.22400137329467,
+      "end": 185.22400137329467,
+      "text": "Do not assume that every requested power occurs.",
+      "chapter": 2
+    },
+    {
+      "start": 185.74400183105834,
+      "end": 189.75900090281533,
+      "text": "If the outer exponent were five, the variable exponent would be ten minus",
+      "chapter": 2
+    },
+    {
+      "start": 189.75900090281533,
+      "end": 190.03400083923705,
+      "text": "three",
+      "chapter": 2
+    },
+    {
+      "start": 190.03400083923705,
+      "end": 190.66400000000365,
+      "text": "r.",
+      "chapter": 2
+    },
+    {
+      "start": 190.66400000000365,
+      "end": 194.1239990844763,
+      "text": "Setting it to zero would require r equal to ten thirds, which is not an",
+      "chapter": 2
+    },
+    {
+      "start": 194.1239990844763,
+      "end": 194.28399893188842,
+      "text": "integer.",
+      "chapter": 2
+    },
+    {
+      "start": 195.02400061035522,
+      "end": 197.26399847412475,
+      "text": "Therefore that expansion has no constant term.",
+      "chapter": 2
+    },
+    {
+      "start": 197.60399862671264,
+      "end": 201.44399877930053,
+      "text": "The finite binomial theorem still applies even though the resulting expression",
+      "chapter": 2
+    },
+    {
+      "start": 201.44399877930053,
+      "end": 203.02400061035522,
+      "text": "contains negative powers of x.",
+      "chapter": 2
+    },
+    {
+      "start": 203.74400183105834,
+      "end": 207.08399816894897,
+      "text": "Retain the original nonzero domain condition while simplifying all terms.",
+      "chapter": 2
+    },
+    {
+      "start": 207.7200000000052,
+      "end": 212.7200000000052,
+      "text": "The number of terms, not the exponent by itself, determines how many middle",
+      "chapter": 3
+    },
+    {
+      "start": 212.7200000000052,
+      "end": 213.50000020981355,
+      "text": "terms exist.",
+      "chapter": 3
+    },
+    {
+      "start": 214.2200000000052,
+      "end": 217.33999988556428,
+      "text": "An exponent n gives n plus one indexed terms.",
+      "chapter": 3
+    },
+    {
+      "start": 218.18000003815217,
+      "end": 222.940000267034,
+      "text": "When n is even, that count is odd and there is one central term at position n",
+      "chapter": 3
+    },
+    {
+      "start": 222.940000267034,
+      "end": 224.24000045776887,
+      "text": "divided by two plus one.",
+      "chapter": 3
+    },
+    {
+      "start": 224.9399993133597,
+      "end": 228.94564098163048,
+      "text": "Thus a plus b raised to eight has nine terms, and its middle is the fifth",
+      "chapter": 3
+    },
+    {
+      "start": 228.94564098163048,
+      "end": 229.2200000000052,
+      "text": "term.",
+      "chapter": 3
+    },
+    {
+      "start": 229.69999954224153,
+      "end": 233.5000006866507,
+      "text": "It uses r equal to four and is seventy a to the fourth b to the fourth.",
+      "chapter": 3
+    },
+    {
+      "start": 233.5000006866507,
+      "end": 237.58000061035676,
+      "text": "When n is odd, the term count is even and there are two central positions.",
+      "chapter": 3
+    },
+    {
+      "start": 238.19999954224153,
+      "end": 242.33999893188997,
+      "text": "For exponent seven there are eight terms, so take positions four and five,",
+      "chapter": 3
+    },
+    {
+      "start": 242.8199984741263,
+      "end": 244.83999893188997,
+      "text": "corresponding to r equal to three and four.",
+      "chapter": 3
+    },
+    {
+      "start": 245.40000030518098,
+      "end": 250.60000106812043,
+      "text": "In one plus two x raised to seven, the fourth term is C of seven, three times",
+      "chapter": 3
+    },
+    {
+      "start": 250.60000106812043,
+      "end": 253.53999969482942,
+      "text": "two x cubed, giving two hundred eighty x cubed.",
+      "chapter": 3
+    },
+    {
+      "start": 254.26000091553254,
+      "end": 258.67000076294465,
+      "text": "The fifth is C of seven, four times two x to the fourth, giving five hundred",
+      "chapter": 3
+    },
+    {
+      "start": 258.67000076294465,
+      "end": 259.960001678472,
+      "text": "sixty x to the fourth.",
+      "chapter": 3
+    },
+    {
+      "start": 259.960001678472,
+      "end": 264.1200015258841,
+      "text": "Their binomial coefficients are equal, but the complete terms need not have",
+      "chapter": 3
+    },
+    {
+      "start": 264.1200015258841,
+      "end": 266.3799998474173,
+      "text": "equal numerical coefficients after substitution.",
+      "chapter": 3
+    },
+    {
+      "start": 267.9799983215384,
+      "end": 271.8000018310599,
+      "text": "Write the term positions first, convert them to r values, and then substitute",
+      "chapter": 3
+    },
+    {
+      "start": 271.8000018310599,
+      "end": 272.8000018310599,
+      "text": "into the general term.",
+      "chapter": 3
+    },
+    {
+      "start": 273.35999938965364,
+      "end": 276.900000305181,
+      "text": "This keeps term indexing separate from any special form of a or b.",
+      "chapter": 3
+    },
+    {
+      "start": 277.1280000000069,
+      "end": 282.90800020981527,
+      "text": "Suppose a polynomial F of x is written as the sum of coefficients c r times",
+      "chapter": 4
+    },
+    {
+      "start": 282.90800020981527,
+      "end": 284.30799982834554,
+      "text": "x to the power r.",
+      "chapter": 4
+    },
+    {
+      "start": 285.22800038147665,
+      "end": 290.04800007630087,
+      "text": "Substituting x equal to one makes every variable power equal to one, so F of",
+      "chapter": 4
+    },
+    {
+      "start": 290.04800007630087,
+      "end": 292.1480004577706,
+      "text": "one is the sum of all coefficients.",
+      "chapter": 4
+    },
+    {
+      "start": 293.4880006103585,
+      "end": 297.6879994659493,
+      "text": "Substituting negative one gives the sum of even power coefficients minus the",
+      "chapter": 4
+    },
+    {
+      "start": 297.6879994659493,
+      "end": 299.0279996185372,
+      "text": "sum of odd power coefficients.",
+      "chapter": 4
+    },
+    {
+      "start": 299.6480004577706,
+      "end": 304.4680001525948,
+      "text": "For one plus x raised to a positive integer n, these values are two to the",
+      "chapter": 4
+    },
+    {
+      "start": 304.4680001525948,
+      "end": 305.8080003051827,
+      "text": "power n and zero.",
+      "chapter": 4
+    },
+    {
+      "start": 306.8280007629464,
+      "end": 310.0280015258858,
+      "text": "Adding and subtracting the two equations shows that the even and odd",
+      "chapter": 4
+    },
+    {
+      "start": 310.0280015258858,
+      "end": 313.54799816895223,
+      "text": "coefficient sums are each two to the power n minus one.",
+      "chapter": 4
+    },
+    {
+      "start": 314.1280000000069,
+      "end": 319.6280000000069,
+      "text": "For n equal to six, the total sum is sixty four and each parity sum is thirty",
+      "chapter": 4
+    },
+    {
+      "start": 319.6280000000069,
+      "end": 320.26799938965536,
+      "text": "two.",
+      "chapter": 4
+    },
+    {
+      "start": 320.26799938965536,
+      "end": 324.9079987793038,
+      "text": "The positive exponent condition matters: for n equal to zero there is only the",
+      "chapter": 4
+    },
+    {
+      "start": 324.9079987793038,
+      "end": 327.8280007629464,
+      "text": "constant coefficient, so the parity sums are not equal.",
+      "chapter": 4
+    },
+    {
+      "start": 328.1480004577706,
+      "end": 332.68800137329794,
+      "text": "The same evaluation technique applies to other polynomials, but the numerical",
+      "chapter": 4
+    },
+    {
+      "start": 332.68800137329794,
+      "end": 333.5280015258858,
+      "text": "results change.",
+      "chapter": 4
+    },
+    {
+      "start": 334.4079987793038,
+      "end": 338.54799816895223,
+      "text": "For two minus three x raised to four, the sum of coefficients is its value at",
+      "chapter": 4
+    },
+    {
+      "start": 338.54799816895223,
+      "end": 339.9079987793038,
+      "text": "one, namely one.",
+      "chapter": 4
+    },
+    {
+      "start": 340.5280015258858,
+      "end": 344.89799855042196,
+      "text": "Its alternating coefficient sum is the value at negative one, namely six",
+      "chapter": 4
+    },
+    {
+      "start": 344.89799855042196,
+      "end": 346.4880006103585,
+      "text": "hundred twenty five.",
+      "chapter": 4
+    },
+    {
+      "start": 346.4880006103585,
+      "end": 350.42800305176473,
+      "text": "Keep the polynomial and the chosen evaluation point visible rather than",
+      "chapter": 4
+    },
+    {
+      "start": 350.42800305176473,
+      "end": 352.56800244141317,
+      "text": "memorizing two to the n for every binomial.",
+      "chapter": 4
+    },
+    {
+      "start": 352.8480000000089,
+      "end": 357.18800015259677,
+      "text": "A weighted coefficient sum can be understood by counting marked subsets.",
+      "chapter": 5
+    },
+    {
+      "start": 358.0279998283475,
+      "end": 362.7280001144498,
+      "text": "Take n distinct objects and count pairs consisting of a subset and one marked",
+      "chapter": 5
+    },
+    {
+      "start": 362.7280001144498,
+      "end": 363.8879999618619,
+      "text": "member of that subset.",
+      "chapter": 5
+    },
+    {
+      "start": 364.6080002288907,
+      "end": 369.7279991607755,
+      "text": "If the subset has size r, it contributes r choices for the mark, so the total",
+      "chapter": 5
+    },
+    {
+      "start": 369.7279991607755,
+      "end": 372.5679993133634,
+      "text": "is the sum of r times C of n, r.",
+      "chapter": 5
+    },
+    {
+      "start": 373.40799946595126,
+      "end": 376.6080002288907,
+      "text": "Alternatively, choose the marked object first in n ways.",
+      "chapter": 5
+    },
+    {
+      "start": 377.20800061036044,
+      "end": 380.4879993896573,
+      "text": "Each of the other n minus one objects may be included or excluded",
+      "chapter": 5
+    },
+    {
+      "start": 380.4879993896573,
+      "end": 381.04800076294833,
+      "text": "independently.",
+      "chapter": 5
+    },
+    {
+      "start": 381.507999847421,
+      "end": 384.42799992371494,
+      "text": "The count is n times two to the power n minus one.",
+      "chapter": 5
+    },
+    {
+      "start": 385.2679981689542,
+      "end": 388.93671797415817,
+      "text": "For an ordered pair of distinct marked members, the same argument gives n",
+      "chapter": 5
+    },
+    {
+      "start": 388.93671797415817,
+      "end": 389.18800015259677,
+      "text": "times",
+      "chapter": 5
+    },
+    {
+      "start": 389.18800015259677,
+      "end": 393.70800061036044,
+      "text": "n minus one times two to the power n minus two, provided n is at least two.",
+      "chapter": 5
+    },
+    {
+      "start": 394.62799877930576,
+      "end": 399.38287161490524,
+      "text": "Counting by subset size instead gives the sum of r times r minus one times C",
+      "chapter": 5
+    },
+    {
+      "start": 399.38287161490524,
+      "end": 399.507999847421,
+      "text": "of",
+      "chapter": 5
+    },
+    {
+      "start": 399.507999847421,
+      "end": 400.1079983215421,
+      "text": "n, r.",
+      "chapter": 5
+    },
+    {
+      "start": 400.7480015258878,
+      "end": 404.94799847413,
+      "text": "For n equal to five, the first weighted sum is eighty and the ordered pair sum",
+      "chapter": 5
+    },
+    {
+      "start": 404.94799847413,
+      "end": 406.54800076294833,
+      "text": "is one hundred sixty.",
+      "chapter": 5
+    },
+    {
+      "start": 406.54800076294833,
+      "end": 411.56287059960886,
+      "text": "Since r squared equals r times r minus one plus r, the sum of r squared times",
+      "chapter": 5
+    },
+    {
+      "start": 411.56287059960886,
+      "end": 411.62799877930576,
+      "text": "C",
+      "chapter": 5
+    },
+    {
+      "start": 411.62799877930576,
+      "end": 414.1679996948331,
+      "text": "of five, r is two hundred forty.",
+      "chapter": 5
+    },
+    {
+      "start": 414.1679996948331,
+      "end": 417.8280033569425,
+      "text": "The ordered nature of the two marks matters; using an unordered pair would",
+      "chapter": 5
+    },
+    {
+      "start": 417.8280033569425,
+      "end": 419.78800244141513,
+      "text": "introduce an additional factor of one half.",
+      "chapter": 5
+    },
+    {
+      "start": 420.62799877930576,
+      "end": 422.90799755860263,
+      "text": "State what is marked before choosing a weighted identity.",
+      "chapter": 5
+    },
+    {
+      "start": 423.16800000001064,
+      "end": 427.30799986649623,
+      "text": "Neighbouring binomial coefficients can be compared without calculating every",
+      "chapter": 6
+    },
+    {
+      "start": 427.30799986649623,
+      "end": 427.70799996186366,
+      "text": "factorial.",
+      "chapter": 6
+    },
+    {
+      "start": 428.3879997902023,
+      "end": 433.9479997329818,
+      "text": "The ratio of C of n, r plus one to C of n, r is n minus r divided by r plus",
+      "chapter": 6
+    },
+    {
+      "start": 433.9479997329818,
+      "end": 434.20799996186366,
+      "text": "one.",
+      "chapter": 6
+    },
+    {
+      "start": 434.72800041962734,
+      "end": 438.54800011445155,
+      "text": "As r increases, this ratio moves from above one to below one.",
+      "chapter": 6
+    },
+    {
+      "start": 438.98799969483485,
+      "end": 442.3480003051864,
+      "text": "This explains the central greatest coefficient or equal central pair.",
+      "chapter": 6
+    },
+    {
+      "start": 442.9079997711288,
+      "end": 447.9079997711288,
+      "text": "For exponent five, the coefficient row is one, five, ten, ten, five, one; its",
+      "chapter": 6
+    },
+    {
+      "start": 447.9079997711288,
+      "end": 450.4679992370712,
+      "text": "greatest coefficients are the two tens.",
+      "chapter": 6
+    },
+    {
+      "start": 450.4679992370712,
+      "end": 454.48799969483485,
+      "text": "Complete numerical terms can have different maxima because their powers also",
+      "chapter": 6
+    },
+    {
+      "start": 454.48799969483485,
+      "end": 454.8680007629501,
+      "text": "contribute.",
+      "chapter": 6
+    },
+    {
+      "start": 455.58799816895595,
+      "end": 460.4987682917775,
+      "text": "In one plus two raised to five, the indexed terms are C of five, r times two",
+      "chapter": 6
+    },
+    {
+      "start": 460.4987682917775,
+      "end": 460.6279990844833,
+      "text": "to",
+      "chapter": 6
+    },
+    {
+      "start": 460.6279990844833,
+      "end": 461.3079993896591,
+      "text": "the power r.",
+      "chapter": 6
+    },
+    {
+      "start": 461.8079993896591,
+      "end": 465.8079993896591,
+      "text": "The ratio of the next term to the current term is two times five minus r",
+      "chapter": 6
+    },
+    {
+      "start": 465.8079993896591,
+      "end": 467.0080001525985,
+      "text": "divided by r plus one.",
+      "chapter": 6
+    },
+    {
+      "start": 467.54800106812587,
+      "end": 471.82799984742275,
+      "text": "The numerical list is one, ten, forty, eighty, eighty, thirty two.",
+      "chapter": 6
+    },
+    {
+      "start": 471.82799984742275,
+      "end": 474.90800167847743,
+      "text": "Its greatest terms are the fourth and fifth, each eighty.",
+      "chapter": 6
+    },
+    {
+      "start": 475.1279990844833,
+      "end": 478.32799984742275,
+      "text": "The equality case in the ratio must be retained to find both.",
+      "chapter": 6
+    },
+    {
+      "start": 478.32799984742275,
+      "end": 482.7879989318954,
+      "text": "This argument compares positive terms; for signed expressions distinguish",
+      "chapter": 6
+    },
+    {
+      "start": 482.7879989318954,
+      "end": 485.64799954224696,
+      "text": "algebraically greatest values from greatest magnitudes.",
+      "chapter": 6
+    },
+    {
+      "start": 486.38800122071376,
+      "end": 490.50799633790126,
+      "text": "If a variable appears, its specified value and sign are needed before ranking",
+      "chapter": 6
+    },
+    {
+      "start": 490.50799633790126,
+      "end": 491.3079993896591,
+      "text": "complete terms.",
+      "chapter": 6
+    },
+    {
+      "start": 492.0479972534286,
+      "end": 495.5280006103622,
+      "text": "A greatest coefficient question and a greatest numerical term question",
+      "chapter": 6
+    },
+    {
+      "start": 495.5280006103622,
+      "end": 497.48799969483485,
+      "text": "therefore require different comparisons.",
+      "chapter": 6
+    },
+    {
+      "start": 498.02400000001256,
+      "end": 502.7239998092777,
+      "text": "A product coefficient receives contributions from every pair of powers that",
+      "chapter": 7
+    },
+    {
+      "start": 502.7239998092777,
+      "end": 504.12399990464513,
+      "text": "adds to the requested exponent.",
+      "chapter": 7
+    },
+    {
+      "start": 504.8240001907474,
+      "end": 510.2440002670414,
+      "text": "For one plus x raised to four times one plus x raised to five, the product is",
+      "chapter": 7
+    },
+    {
+      "start": 510.2440002670414,
+      "end": 511.80399973298375,
+      "text": "one plus x raised to nine.",
+      "chapter": 7
+    },
+    {
+      "start": 512.4639995803959,
+      "end": 517.3239992370732,
+      "text": "Its x cubed coefficient is therefore C of nine, three, or eighty four.",
+      "chapter": 7
+    },
+    {
+      "start": 517.3239992370732,
+      "end": 521.56400091554,
+      "text": "Expanding the factors separately gives the same result by summing C of four, r",
+      "chapter": 7
+    },
+    {
+      "start": 521.7639997711308,
+      "end": 525.4839990844853,
+      "text": "times C of five, three minus r over the valid indices.",
+      "chapter": 7
+    },
+    {
+      "start": 526.0440004577763,
+      "end": 530.4639986267216,
+      "text": "This is a finite coefficient identity, often called Vandermonde's identity.",
+      "chapter": 7
+    },
+    {
+      "start": 531.1839998474247,
+      "end": 535.1639993896611,
+      "text": "Its reason is the same selection count split between two disjoint groups.",
+      "chapter": 7
+    },
+    {
+      "start": 535.9639986267216,
+      "end": 539.8239992370732,
+      "text": "For factors with different weights or signs, do not combine their exponents as",
+      "chapter": 7
+    },
+    {
+      "start": 539.8239992370732,
+      "end": 541.0240000000126,
+      "text": "though their bases were identical.",
+      "chapter": 7
+    },
+    {
+      "start": 542.0240000000126,
+      "end": 546.4639986267216,
+      "text": "Consider the product of two binomial powers: one plus two x, all cubed,",
+      "chapter": 7
+    },
+    {
+      "start": 547.1639993896611,
+      "end": 549.0440004577763,
+      "text": "multiplied by one minus x, all squared.",
+      "chapter": 7
+    },
+    {
+      "start": 549.56400091554,
+      "end": 554.3640001526005,
+      "text": "The x squared coefficient has three contributions: twelve from x squared times",
+      "chapter": 7
+    },
+    {
+      "start": 554.3640001526005,
+      "end": 558.9040010681279,
+      "text": "the constant, negative twelve from the two x coefficients, and one from the",
+      "chapter": 7
+    },
+    {
+      "start": 558.9040010681279,
+      "end": 559.8640001526005,
+      "text": "constant times x squared.",
+      "chapter": 7
+    },
+    {
+      "start": 560.4240015258915,
+      "end": 561.6040018310673,
+      "text": "Their sum is one.",
+      "chapter": 7
+    },
+    {
+      "start": 562.3439996948368,
+      "end": 564.9039972534306,
+      "text": "Write each contribution explicitly to preserve signs.",
+      "chapter": 7
+    },
+    {
+      "start": 565.5240000000126,
+      "end": 569.4240015258915,
+      "text": "For coefficient extraction, only terms up to the desired degree are needed,",
+      "chapter": 7
+    },
+    {
+      "start": 569.9240015258915,
+      "end": 572.0839975586064,
+      "text": "which can save substantial expansion work.",
+      "chapter": 7
+    },
+    {
+      "start": 572.2800000000145,
+      "end": 576.0399999904778,
+      "text": "A coefficient condition can determine an unknown exponent or parameter.",
+      "chapter": 8
+    },
+    {
+      "start": 576.9599998283531,
+      "end": 582.1130765443115,
+      "text": "If the coefficient of x squared in one plus x raised to n is forty five, then",
+      "chapter": 8
+    },
+    {
+      "start": 582.1130765443115,
+      "end": 582.1799996185448,
+      "text": "C",
+      "chapter": 8
+    },
+    {
+      "start": 582.1799996185448,
+      "end": 584.8400004196312,
+      "text": "of n, two equals forty five.",
+      "chapter": 8
+    },
+    {
+      "start": 584.8400004196312,
+      "end": 589.5661541601473,
+      "text": "This gives n times n minus one equals ninety, or n squared minus n minus",
+      "chapter": 8
+    },
+    {
+      "start": 589.5661541601473,
+      "end": 589.9600003051903,
+      "text": "ninety",
+      "chapter": 8
+    },
+    {
+      "start": 589.9600003051903,
+      "end": 590.6599991607811,
+      "text": "equals zero.",
+      "chapter": 8
+    },
+    {
+      "start": 591.480000762954,
+      "end": 594.2599995422509,
+      "text": "Factoring yields n equal to ten or negative nine.",
+      "chapter": 8
+    },
+    {
+      "start": 594.8599999237206,
+      "end": 598.8800003814843,
+      "text": "The stated exponent is a positive integer, so only ten is admissible.",
+      "chapter": 8
+    },
+    {
+      "start": 598.8800003814843,
+      "end": 604.0400002288964,
+      "text": "If the ratio C of n, three divided by C of n, two equals two,",
+      "chapter": 8
+    },
+    {
+      "start": 604.8999989318993,
+      "end": 609.419999389663,
+      "text": "simplifying gives n minus two divided by three equals two, hence n equal to",
+      "chapter": 8
+    },
+    {
+      "start": 609.419999389663,
+      "end": 609.6200001526024,
+      "text": "eight.",
+      "chapter": 8
+    },
+    {
+      "start": 610.1600010681298,
+      "end": 614.1400006103661,
+      "text": "This ratio presumes the relevant coefficients exist and the denominator is",
+      "chapter": 8
+    },
+    {
+      "start": 614.1400006103661,
+      "end": 615.3799984741356,
+      "text": "nonzero.",
+      "chapter": 8
+    },
+    {
+      "start": 615.3799984741356,
+      "end": 619.9299996185448,
+      "text": "Now let the coefficient of x squared in one plus a x raised to four be twenty",
+      "chapter": 8
+    },
+    {
+      "start": 619.9299996185448,
+      "end": 620.419999389663,
+      "text": "four.",
+      "chapter": 8
+    },
+    {
+      "start": 620.419999389663,
+      "end": 624.0200016784813,
+      "text": "That coefficient is six a squared, so a squared equals four.",
+      "chapter": 8
+    },
+    {
+      "start": 624.6800015258934,
+      "end": 628.7800000000145,
+      "text": "For real a there are two possibilities, plus two and minus two.",
+      "chapter": 8
+    },
+    {
+      "start": 629.2599995422509,
+      "end": 631.8400013733055,
+      "text": "A positive answer cannot be chosen without another condition.",
+      "chapter": 8
+    },
+    {
+      "start": 632.5000012207176,
+      "end": 636.8200009155419,
+      "text": "If the coefficient of x is additionally eight, then four a equals eight and",
+      "chapter": 8
+    },
+    {
+      "start": 636.8200009155419,
+      "end": 638.0599987793114,
+      "text": "selects a equal to two.",
+      "chapter": 8
+    },
+    {
+      "start": 638.8799984741356,
+      "end": 642.4000027465966,
+      "text": "Solve the algebra, then restore all original integer, domain and sign",
+      "chapter": 8
+    },
+    {
+      "start": 642.4000027465966,
+      "end": 642.7999966430809,
+      "text": "restrictions.",
+      "chapter": 8
+    },
+    {
+      "start": 643.2000000000163,
+      "end": 646.6000000953837,
+      "text": "A finite expansion is exact when every term is retained.",
+      "chapter": 9
+    },
+    {
+      "start": 647.5800001144572,
+      "end": 650.1400000572368,
+      "text": "Approximating means deliberately discarding some of those terms.",
+      "chapter": 9
+    },
+    {
+      "start": 650.8999998092814,
+      "end": 656.2799999237224,
+      "text": "For one plus t raised to five, the exact coefficients are one, five, ten, ten,",
+      "chapter": 9
+    },
+    {
+      "start": 656.3599998474284,
+      "end": 657.2399999618693,
+      "text": "five, one.",
+      "chapter": 9
+    },
+    {
+      "start": 657.800000381486,
+      "end": 662.0999996185466,
+      "text": "With t equal to zero point zero two, retaining only the constant and linear",
+      "chapter": 9
+    },
+    {
+      "start": 662.0999996185466,
+      "end": 664.9999992370768,
+      "text": "term gives one point one zero.",
+      "chapter": 9
+    },
+    {
+      "start": 664.9999992370768,
+      "end": 668.6799995422526,
+      "text": "Retaining the quadratic term as well gives one point one zero four.",
+      "chapter": 9
+    },
+    {
+      "start": 668.6799995422526,
+      "end": 673.8818190488112,
+      "text": "The exact value is one point one zero four zero eight zero eight zero three",
+      "chapter": 9
+    },
+    {
+      "start": 673.8818190488112,
+      "end": 674.2400009155436,
+      "text": "two.",
+      "chapter": 9
+    },
+    {
+      "start": 674.2400009155436,
+      "end": 678.2428212972951,
+      "text": "Because t is positive, all omitted terms here are positive, so both",
+      "chapter": 9
+    },
+    {
+      "start": 678.2428212972951,
+      "end": 678.9000007629558,
+      "text": "truncations",
+      "chapter": 9
+    },
+    {
+      "start": 678.9000007629558,
+      "end": 680.5199996948405,
+      "text": "underestimate the exact value.",
+      "chapter": 9
+    },
+    {
+      "start": 681.2000000000163,
+      "end": 685.5199996948405,
+      "text": "The error after the quadratic term is ten t cubed plus five t to the fourth",
+      "chapter": 9
+    },
+    {
+      "start": 685.5199996948405,
+      "end": 686.9999992370768,
+      "text": "plus t to the fifth.",
+      "chapter": 9
+    },
+    {
+      "start": 686.9999992370768,
+      "end": 691.6399986267253,
+      "text": "For zero at most t at most zero point zero two, replacing t in each positive",
+      "chapter": 9
+    },
+    {
+      "start": 691.6399986267253,
+      "end": 695.7466677347982,
+      "text": "remainder term by zero point zero two bounds that error by eight point zero",
+      "chapter": 9
+    },
+    {
+      "start": 695.7466677347982,
+      "end": 698.8199989319011,
+      "text": "eight zero three two times ten to the power negative five.",
+      "chapter": 9
+    },
+    {
+      "start": 699.7999984741374,
+      "end": 702.9999992370768,
+      "text": "Check a requested accuracy before deciding how many terms to keep.",
+      "chapter": 9
+    },
+    {
+      "start": 703.6799995422526,
+      "end": 707.7199966430827,
+      "text": "A different application uses integer divisibility: write five to the fifth as",
+      "chapter": 9
+    },
+    {
+      "start": 707.7199966430827,
+      "end": 709.25999755861,
+      "text": "one plus four raised to five.",
+      "chapter": 9
+    },
+    {
+      "start": 710.0600006103679,
+      "end": 715.1199981689616,
+      "text": "Modulo sixteen, every term from r equal to two onward is divisible by sixteen.",
+      "chapter": 9
+    },
+    {
+      "start": 715.1199981689616,
+      "end": 718.3800003051921,
+      "text": "The remainder is therefore that of one plus twenty, namely five.",
+      "chapter": 9
+    },
+    {
+      "start": 718.3800003051921,
+      "end": 723.2000000000163,
+      "text": "These applications use the same exact positive integer expansion with clearly",
+      "chapter": 9
+    },
+    {
+      "start": 723.2000000000163,
+      "end": 724.0199996948405,
+      "text": "stated operations.",
+      "chapter": 9
+    }
+  ]
+}

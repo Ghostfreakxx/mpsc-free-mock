@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+<title id="title">The binomial term index and the term position differ by one</title>
+<desc id="desc">For (2x minus 3) to the fifth power, the coefficient of x cubed occurs when r is two, in the third term. Its coefficient is ten times eight times nine, or seven hundred twenty.</desc>
+<rect width="900" height="360" rx="18" fill="#f5faf7"/>
+<g fill="#20483e" font-family="Arial,sans-serif">
+<text x="30" y="43" font-size="26" font-weight="bold">MATCH THE EXPONENT, THEN COUNT THE TERM</text>
+<rect x="24" y="66" width="852" height="74" rx="10" fill="#dcece4"/>
+<text x="44" y="111" font-size="25">(2x−3)⁵: T(r+1) = C(5,r)(2x)^(5−r)(−3)^r</text>
+<rect x="24" y="157" width="412" height="117" rx="10" fill="#e6edf0"/>
+<text x="44" y="194" font-size="24">For x³: 5−r = 3</text>
+<text x="44" y="236" font-size="23">r = 2 → term number 3</text>
+<rect x="460" y="157" width="416" height="117" rx="10" fill="#dcece4"/>
+<text x="480" y="194" font-size="24">C(5,2) × 2³ × (−3)²</text>
+<text x="480" y="236" font-size="23">10 × 8 × 9 = 720</text>
+<text x="450" y="325" text-anchor="middle" font-size="20">The coefficient is 720. The complete third term is 720x³.</text>
+</g></svg>

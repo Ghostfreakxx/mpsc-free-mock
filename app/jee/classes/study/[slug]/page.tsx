@@ -16,6 +16,7 @@ export function generateStaticParams() {
 }
 
 const figureAlt: Record<string, string> = {
+  "binomial-theorem": "The term T(r+1) in (2x−3)^5 is C(5,r)(2x)^(5−r)(−3)^r. To obtain x cubed, solve 5−r=3, giving r=2 and the third term 720x cubed.",
   "permutations-combinations": "Choosing an unordered committee of three from seven people gives C(7,3)=35. Assigning first, second and third places gives P(7,3)=210. Each committee has 3!=6 internal orders.",
   "matrices-determinants": "For A with rows (2,1) and (5,3), det(A)=1 and its inverse has rows (3,−1) and (−5,2). Multiplication gives the identity. The system 2x+y=5, 5x+3y=13 has solution x=2,y=1.",
   "p-block": "Groups 13 to 18 usually have ns2 np1 through ns2 np6 outer configurations, respectively. Helium is the 1s2 exception in Group 18. These patterns do not prescribe every oxidation state.",
@@ -64,7 +65,7 @@ export default async function StudyPage({ params }: { params: Promise<{ slug: st
   const lesson = writtenLesson ? withLectureClarifications(writtenLesson, recording)
     : recording && unitIndex >= 0 ? lectureStudyLesson(recording, unitIndex + 1, physicsCoverage[unitIndex].remaining) : undefined;
   if (!lesson) notFound();
-  const svgFigure = ["permutations-combinations", "matrices-determinants", "chemistry-foundations", "atomic-spectra", "periodic-trends", "chemical-bonding", "chemical-thermodynamics", "solutions", "equilibrium", "redox-electrochemistry", "chemical-kinetics", "coordination-compounds", "organic-principles", "hydrocarbons", "organic-halogens", "organic-oxygen", "organic-nitrogen", "biomolecules", "purification-analysis", "p-block", "d-f-block", "practical-chemistry"].includes(lesson.id);
+  const svgFigure = ["binomial-theorem", "permutations-combinations", "matrices-determinants", "chemistry-foundations", "atomic-spectra", "periodic-trends", "chemical-bonding", "chemical-thermodynamics", "solutions", "equilibrium", "redox-electrochemistry", "chemical-kinetics", "coordination-compounds", "organic-principles", "hydrocarbons", "organic-halogens", "organic-oxygen", "organic-nitrogen", "biomolecules", "purification-analysis", "p-block", "d-f-block", "practical-chemistry"].includes(lesson.id);
   const subjectLessons = writtenLesson ? studyLessons.filter(item => item.subject === lesson.subject) : lectures.map(item => ({ id: item.id, title: item.title }));
   const position = subjectLessons.findIndex(item => item.id === lesson.id);
   const previous = subjectLessons[position - 1];

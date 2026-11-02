@@ -9,7 +9,7 @@ Inventory checked 2 November 2026. A lesson being available does not mean every 
 | 2 | Complex Numbers and Quadratics | 10 chapters | 11 sections, 9 examples, 21 original MCQs | Wider mixed parameter cases and timed practice; core headings now taught |
 | 3 | Matrices and Determinants | 10 chapters | 10 sections, 8 examples, 20 original MCQs | Further parameter-dependent three-variable and timed mixed practice |
 | 4 | Permutations and Combinations | 10 chapters | 10 sections, 8 examples, 20 original MCQs | Further overlapping constraints, mixed counting and timed practice |
-| 5 | Binomial Theorem | Pending | Pending | Positive integral index, general and middle terms, applications |
+| 5 | Binomial Theorem | 10 chapters | 10 sections, 8 examples, 20 original MCQs | Further mixed parameter and timed practice; finite positive integer core covered |
 | 6 | Sequence and Series | Pending | Pending | AP, GP, inserted means, AM–GM |
 | 7 | Limits, Continuity and Differentiability | Pending | Pending | Functions and graphs, limits, continuity, derivatives and applications |
 | 8 | Integral Calculus | Pending | Pending | Antiderivatives, methods, definite integrals and area |
@@ -22,7 +22,7 @@ Inventory checked 2 November 2026. A lesson being available does not mean every 
 
 ## Delivery order
 
-Fill required headings before optional enrichment. Units 1–4 now have recordings and written companions. Next are binomial/series, trigonometry and vectors, coordinate geometry, calculus, and statistics/probability. Dependencies may justify moving trigonometry before calculus. Each release includes narration, aligned captions, boards, worked examples, original practice and downloadable notes. The first five questions in each existing Sets and Quadratics companion and all existing progress keys are preserved.
+Fill required headings before optional enrichment. Units 1–5 now have recordings and written companions. Next are sequences/series, trigonometry and vectors, coordinate geometry, calculus, and statistics/probability. Dependencies may justify moving trigonometry before calculus. Each release includes narration, aligned captions, boards, worked examples, original practice and downloadable notes. The first five questions in each existing Sets and Quadratics companion and all existing progress keys are preserved.
 
 Physics and Chemistry have recording sets mapped to all twenty units each; that availability is not a completion percentage. Their remaining-work statements need a required-syllabus audit before declaring either subject finished. JEE completion requires a topic-by-topic review across all three subjects before moving the main production effort to NEET.
 

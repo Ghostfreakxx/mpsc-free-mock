@@ -1,0 +1,658 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.180
+The binomial theorem connects multiplication with combinations.
+
+00:00:05.160 --> 00:00:10.589
+For a positive integer n, the expression a plus b raised to n is a product of
+
+00:00:10.589 --> 00:00:10.660
+n
+
+00:00:10.660 --> 00:00:11.460
+identical factors.
+
+00:00:12.480 --> 00:00:17.749
+To produce a term containing r copies of b, choose b from exactly r factors
+
+00:00:17.749 --> 00:00:17.960
+and
+
+00:00:17.960 --> 00:00:19.060
+a from all the others.
+
+00:00:19.660 --> 00:00:22.560
+There are C of n, r ways to choose those factors.
+
+00:00:23.500 --> 00:00:27.780
+Each contributes a to the power n minus r times b to the power r.
+
+00:00:28.310 --> 00:00:31.840
+Adding over r from zero through n gives the finite expansion.
+
+00:00:32.740 --> 00:00:37.320
+There are n plus one indexed terms, with the first using no b and the last
+
+00:00:37.320 --> 00:00:38.380
+using only b.
+
+00:00:39.160 --> 00:00:43.820
+For n equal to four, the coefficients are one, four, six, four, one.
+
+00:00:44.540 --> 00:00:47.240
+Every term has total degree four in a and b.
+
+00:00:47.740 --> 00:00:51.060
+The symmetry of the coefficients follows by exchanging the selected and
+
+00:00:51.060 --> 00:00:52.000
+unselected factors.
+
+00:00:52.680 --> 00:00:56.600
+This counting proof explains why combinations appear instead of permutations:
+
+00:00:57.020 --> 00:00:59.440
+the selected factor positions form a subset.
+
+00:01:00.160 --> 00:01:03.680
+The finite formula applies to positive integer exponents in this class.
+
+00:01:04.260 --> 00:01:08.000
+An exponent such as one half does not produce the same finite expansion.
+
+00:01:08.840 --> 00:01:13.360
+If specific substitutions make some terms vanish or combine, distinguish that
+
+00:01:13.360 --> 00:01:16.780
+simplified expression from the original indexed binomial list.
+
+00:01:17.064 --> 00:01:22.044
+The general term is indexed by r, but its position in the expansion is r plus
+
+00:01:22.044 --> 00:01:22.244
+one.
+
+00:01:22.904 --> 00:01:27.464
+The first term uses r equal to zero, so the third term uses r equal to two.
+
+00:01:28.064 --> 00:01:30.564
+This distinction prevents many off by one errors.
+
+00:01:31.284 --> 00:01:36.324
+To find the coefficient of x cubed in two x minus three raised to five, take a
+
+00:01:36.324 --> 00:01:38.144
+as two x and b as negative three.
+
+00:01:38.744 --> 00:01:44.204
+The general term is C of five, r times two x to the power five minus r times
+
+00:01:44.204 --> 00:01:45.724
+negative three to the power r.
+
+00:01:46.404 --> 00:01:51.204
+The variable power is five minus r, so matching it to three gives r equal to
+
+00:01:51.204 --> 00:01:51.444
+two.
+
+00:01:52.204 --> 00:01:56.027
+The coefficient is C of five, two times two cubed times negative three
+
+00:01:56.027 --> 00:01:56.464
+squared,
+
+00:01:56.944 --> 00:02:00.524
+or ten times eight times nine, giving seven hundred twenty.
+
+00:02:00.524 --> 00:02:05.264
+The full term is seven hundred twenty x cubed; the coefficient alone is seven
+
+00:02:05.264 --> 00:02:06.184
+hundred twenty.
+
+00:02:06.184 --> 00:02:10.144
+For the x to the fourth term, r equals one, so its coefficient is five times
+
+00:02:10.144 --> 00:02:13.864
+sixteen times negative three, or negative two hundred forty.
+
+00:02:13.864 --> 00:02:16.224
+Bracket the negative base before taking a power.
+
+00:02:17.324 --> 00:02:21.144
+Finally, check that the solved r is an integer in the allowed range from zero
+
+00:02:21.144 --> 00:02:23.284
+to five before evaluating the combination.
+
+00:02:23.664 --> 00:02:26.544
+A binomial may contain the variable in both of its parts.
+
+00:02:27.224 --> 00:02:31.424
+For x squared plus one over x raised to six, the denominator requires x
+
+00:02:31.424 --> 00:02:32.564
+nonzero.
+
+00:02:32.564 --> 00:02:37.724
+The general term is C of six, r times x squared to the power six minus r times
+
+00:02:37.724 --> 00:02:39.144
+one over x to the power r.
+
+00:02:40.044 --> 00:02:43.624
+Combine the exponents to obtain x to the power twelve minus three r.
+
+00:02:43.624 --> 00:02:47.564
+For a constant term, set that exponent to zero, giving r equal to four.
+
+00:02:47.924 --> 00:02:51.284
+The coefficient is C of six, four, or fifteen.
+
+00:02:51.284 --> 00:02:55.284
+The term occupies position five because the term number is r plus one.
+
+00:02:55.984 --> 00:02:59.924
+To find the x cubed term instead, solve twelve minus three r equals three,
+
+00:03:00.304 --> 00:03:03.224
+giving r equal to three and coefficient twenty.
+
+00:03:03.224 --> 00:03:05.224
+Do not assume that every requested power occurs.
+
+00:03:05.744 --> 00:03:09.759
+If the outer exponent were five, the variable exponent would be ten minus
+
+00:03:09.759 --> 00:03:10.034
+three
+
+00:03:10.034 --> 00:03:10.664
+r.
+
+00:03:10.664 --> 00:03:14.124
+Setting it to zero would require r equal to ten thirds, which is not an
+
+00:03:14.124 --> 00:03:14.284
+integer.
+
+00:03:15.024 --> 00:03:17.264
+Therefore that expansion has no constant term.
+
+00:03:17.604 --> 00:03:21.444
+The finite binomial theorem still applies even though the resulting expression
+
+00:03:21.444 --> 00:03:23.024
+contains negative powers of x.
+
+00:03:23.744 --> 00:03:27.084
+Retain the original nonzero domain condition while simplifying all terms.
+
+00:03:27.720 --> 00:03:32.720
+The number of terms, not the exponent by itself, determines how many middle
+
+00:03:32.720 --> 00:03:33.500
+terms exist.
+
+00:03:34.220 --> 00:03:37.340
+An exponent n gives n plus one indexed terms.
+
+00:03:38.180 --> 00:03:42.940
+When n is even, that count is odd and there is one central term at position n
+
+00:03:42.940 --> 00:03:44.240
+divided by two plus one.
+
+00:03:44.940 --> 00:03:48.946
+Thus a plus b raised to eight has nine terms, and its middle is the fifth
+
+00:03:48.946 --> 00:03:49.220
+term.
+
+00:03:49.700 --> 00:03:53.500
+It uses r equal to four and is seventy a to the fourth b to the fourth.
+
+00:03:53.500 --> 00:03:57.580
+When n is odd, the term count is even and there are two central positions.
+
+00:03:58.200 --> 00:04:02.340
+For exponent seven there are eight terms, so take positions four and five,
+
+00:04:02.820 --> 00:04:04.840
+corresponding to r equal to three and four.
+
+00:04:05.400 --> 00:04:10.600
+In one plus two x raised to seven, the fourth term is C of seven, three times
+
+00:04:10.600 --> 00:04:13.540
+two x cubed, giving two hundred eighty x cubed.
+
+00:04:14.260 --> 00:04:18.670
+The fifth is C of seven, four times two x to the fourth, giving five hundred
+
+00:04:18.670 --> 00:04:19.960
+sixty x to the fourth.
+
+00:04:19.960 --> 00:04:24.120
+Their binomial coefficients are equal, but the complete terms need not have
+
+00:04:24.120 --> 00:04:26.380
+equal numerical coefficients after substitution.
+
+00:04:27.980 --> 00:04:31.800
+Write the term positions first, convert them to r values, and then substitute
+
+00:04:31.800 --> 00:04:32.800
+into the general term.
+
+00:04:33.360 --> 00:04:36.900
+This keeps term indexing separate from any special form of a or b.
+
+00:04:37.128 --> 00:04:42.908
+Suppose a polynomial F of x is written as the sum of coefficients c r times
+
+00:04:42.908 --> 00:04:44.308
+x to the power r.
+
+00:04:45.228 --> 00:04:50.048
+Substituting x equal to one makes every variable power equal to one, so F of
+
+00:04:50.048 --> 00:04:52.148
+one is the sum of all coefficients.
+
+00:04:53.488 --> 00:04:57.688
+Substituting negative one gives the sum of even power coefficients minus the
+
+00:04:57.688 --> 00:04:59.028
+sum of odd power coefficients.
+
+00:04:59.648 --> 00:05:04.468
+For one plus x raised to a positive integer n, these values are two to the
+
+00:05:04.468 --> 00:05:05.808
+power n and zero.
+
+00:05:06.828 --> 00:05:10.028
+Adding and subtracting the two equations shows that the even and odd
+
+00:05:10.028 --> 00:05:13.548
+coefficient sums are each two to the power n minus one.
+
+00:05:14.128 --> 00:05:19.628
+For n equal to six, the total sum is sixty four and each parity sum is thirty
+
+00:05:19.628 --> 00:05:20.268
+two.
+
+00:05:20.268 --> 00:05:24.908
+The positive exponent condition matters: for n equal to zero there is only the
+
+00:05:24.908 --> 00:05:27.828
+constant coefficient, so the parity sums are not equal.
+
+00:05:28.148 --> 00:05:32.688
+The same evaluation technique applies to other polynomials, but the numerical
+
+00:05:32.688 --> 00:05:33.528
+results change.
+
+00:05:34.408 --> 00:05:38.548
+For two minus three x raised to four, the sum of coefficients is its value at
+
+00:05:38.548 --> 00:05:39.908
+one, namely one.
+
+00:05:40.528 --> 00:05:44.898
+Its alternating coefficient sum is the value at negative one, namely six
+
+00:05:44.898 --> 00:05:46.488
+hundred twenty five.
+
+00:05:46.488 --> 00:05:50.428
+Keep the polynomial and the chosen evaluation point visible rather than
+
+00:05:50.428 --> 00:05:52.568
+memorizing two to the n for every binomial.
+
+00:05:52.848 --> 00:05:57.188
+A weighted coefficient sum can be understood by counting marked subsets.
+
+00:05:58.028 --> 00:06:02.728
+Take n distinct objects and count pairs consisting of a subset and one marked
+
+00:06:02.728 --> 00:06:03.888
+member of that subset.
+
+00:06:04.608 --> 00:06:09.728
+If the subset has size r, it contributes r choices for the mark, so the total
+
+00:06:09.728 --> 00:06:12.568
+is the sum of r times C of n, r.
+
+00:06:13.408 --> 00:06:16.608
+Alternatively, choose the marked object first in n ways.
+
+00:06:17.208 --> 00:06:20.488
+Each of the other n minus one objects may be included or excluded
+
+00:06:20.488 --> 00:06:21.048
+independently.
+
+00:06:21.508 --> 00:06:24.428
+The count is n times two to the power n minus one.
+
+00:06:25.268 --> 00:06:28.937
+For an ordered pair of distinct marked members, the same argument gives n
+
+00:06:28.937 --> 00:06:29.188
+times
+
+00:06:29.188 --> 00:06:33.708
+n minus one times two to the power n minus two, provided n is at least two.
+
+00:06:34.628 --> 00:06:39.383
+Counting by subset size instead gives the sum of r times r minus one times C
+
+00:06:39.383 --> 00:06:39.508
+of
+
+00:06:39.508 --> 00:06:40.108
+n, r.
+
+00:06:40.748 --> 00:06:44.948
+For n equal to five, the first weighted sum is eighty and the ordered pair sum
+
+00:06:44.948 --> 00:06:46.548
+is one hundred sixty.
+
+00:06:46.548 --> 00:06:51.563
+Since r squared equals r times r minus one plus r, the sum of r squared times
+
+00:06:51.563 --> 00:06:51.628
+C
+
+00:06:51.628 --> 00:06:54.168
+of five, r is two hundred forty.
+
+00:06:54.168 --> 00:06:57.828
+The ordered nature of the two marks matters; using an unordered pair would
+
+00:06:57.828 --> 00:06:59.788
+introduce an additional factor of one half.
+
+00:07:00.628 --> 00:07:02.908
+State what is marked before choosing a weighted identity.
+
+00:07:03.168 --> 00:07:07.308
+Neighbouring binomial coefficients can be compared without calculating every
+
+00:07:07.308 --> 00:07:07.708
+factorial.
+
+00:07:08.388 --> 00:07:13.948
+The ratio of C of n, r plus one to C of n, r is n minus r divided by r plus
+
+00:07:13.948 --> 00:07:14.208
+one.
+
+00:07:14.728 --> 00:07:18.548
+As r increases, this ratio moves from above one to below one.
+
+00:07:18.988 --> 00:07:22.348
+This explains the central greatest coefficient or equal central pair.
+
+00:07:22.908 --> 00:07:27.908
+For exponent five, the coefficient row is one, five, ten, ten, five, one; its
+
+00:07:27.908 --> 00:07:30.468
+greatest coefficients are the two tens.
+
+00:07:30.468 --> 00:07:34.488
+Complete numerical terms can have different maxima because their powers also
+
+00:07:34.488 --> 00:07:34.868
+contribute.
+
+00:07:35.588 --> 00:07:40.499
+In one plus two raised to five, the indexed terms are C of five, r times two
+
+00:07:40.499 --> 00:07:40.628
+to
+
+00:07:40.628 --> 00:07:41.308
+the power r.
+
+00:07:41.808 --> 00:07:45.808
+The ratio of the next term to the current term is two times five minus r
+
+00:07:45.808 --> 00:07:47.008
+divided by r plus one.
+
+00:07:47.548 --> 00:07:51.828
+The numerical list is one, ten, forty, eighty, eighty, thirty two.
+
+00:07:51.828 --> 00:07:54.908
+Its greatest terms are the fourth and fifth, each eighty.
+
+00:07:55.128 --> 00:07:58.328
+The equality case in the ratio must be retained to find both.
+
+00:07:58.328 --> 00:08:02.788
+This argument compares positive terms; for signed expressions distinguish
+
+00:08:02.788 --> 00:08:05.648
+algebraically greatest values from greatest magnitudes.
+
+00:08:06.388 --> 00:08:10.508
+If a variable appears, its specified value and sign are needed before ranking
+
+00:08:10.508 --> 00:08:11.308
+complete terms.
+
+00:08:12.048 --> 00:08:15.528
+A greatest coefficient question and a greatest numerical term question
+
+00:08:15.528 --> 00:08:17.488
+therefore require different comparisons.
+
+00:08:18.024 --> 00:08:22.724
+A product coefficient receives contributions from every pair of powers that
+
+00:08:22.724 --> 00:08:24.124
+adds to the requested exponent.
+
+00:08:24.824 --> 00:08:30.244
+For one plus x raised to four times one plus x raised to five, the product is
+
+00:08:30.244 --> 00:08:31.804
+one plus x raised to nine.
+
+00:08:32.464 --> 00:08:37.324
+Its x cubed coefficient is therefore C of nine, three, or eighty four.
+
+00:08:37.324 --> 00:08:41.564
+Expanding the factors separately gives the same result by summing C of four, r
+
+00:08:41.764 --> 00:08:45.484
+times C of five, three minus r over the valid indices.
+
+00:08:46.044 --> 00:08:50.464
+This is a finite coefficient identity, often called Vandermonde's identity.
+
+00:08:51.184 --> 00:08:55.164
+Its reason is the same selection count split between two disjoint groups.
+
+00:08:55.964 --> 00:08:59.824
+For factors with different weights or signs, do not combine their exponents as
+
+00:08:59.824 --> 00:09:01.024
+though their bases were identical.
+
+00:09:02.024 --> 00:09:06.464
+Consider the product of two binomial powers: one plus two x, all cubed,
+
+00:09:07.164 --> 00:09:09.044
+multiplied by one minus x, all squared.
+
+00:09:09.564 --> 00:09:14.364
+The x squared coefficient has three contributions: twelve from x squared times
+
+00:09:14.364 --> 00:09:18.904
+the constant, negative twelve from the two x coefficients, and one from the
+
+00:09:18.904 --> 00:09:19.864
+constant times x squared.
+
+00:09:20.424 --> 00:09:21.604
+Their sum is one.
+
+00:09:22.344 --> 00:09:24.904
+Write each contribution explicitly to preserve signs.
+
+00:09:25.524 --> 00:09:29.424
+For coefficient extraction, only terms up to the desired degree are needed,
+
+00:09:29.924 --> 00:09:32.084
+which can save substantial expansion work.
+
+00:09:32.280 --> 00:09:36.040
+A coefficient condition can determine an unknown exponent or parameter.
+
+00:09:36.960 --> 00:09:42.113
+If the coefficient of x squared in one plus x raised to n is forty five, then
+
+00:09:42.113 --> 00:09:42.180
+C
+
+00:09:42.180 --> 00:09:44.840
+of n, two equals forty five.
+
+00:09:44.840 --> 00:09:49.566
+This gives n times n minus one equals ninety, or n squared minus n minus
+
+00:09:49.566 --> 00:09:49.960
+ninety
+
+00:09:49.960 --> 00:09:50.660
+equals zero.
+
+00:09:51.480 --> 00:09:54.260
+Factoring yields n equal to ten or negative nine.
+
+00:09:54.860 --> 00:09:58.880
+The stated exponent is a positive integer, so only ten is admissible.
+
+00:09:58.880 --> 00:10:04.040
+If the ratio C of n, three divided by C of n, two equals two,
+
+00:10:04.900 --> 00:10:09.420
+simplifying gives n minus two divided by three equals two, hence n equal to
+
+00:10:09.420 --> 00:10:09.620
+eight.
+
+00:10:10.160 --> 00:10:14.140
+This ratio presumes the relevant coefficients exist and the denominator is
+
+00:10:14.140 --> 00:10:15.380
+nonzero.
+
+00:10:15.380 --> 00:10:19.930
+Now let the coefficient of x squared in one plus a x raised to four be twenty
+
+00:10:19.930 --> 00:10:20.420
+four.
+
+00:10:20.420 --> 00:10:24.020
+That coefficient is six a squared, so a squared equals four.
+
+00:10:24.680 --> 00:10:28.780
+For real a there are two possibilities, plus two and minus two.
+
+00:10:29.260 --> 00:10:31.840
+A positive answer cannot be chosen without another condition.
+
+00:10:32.500 --> 00:10:36.820
+If the coefficient of x is additionally eight, then four a equals eight and
+
+00:10:36.820 --> 00:10:38.060
+selects a equal to two.
+
+00:10:38.880 --> 00:10:42.400
+Solve the algebra, then restore all original integer, domain and sign
+
+00:10:42.400 --> 00:10:42.800
+restrictions.
+
+00:10:43.200 --> 00:10:46.600
+A finite expansion is exact when every term is retained.
+
+00:10:47.580 --> 00:10:50.140
+Approximating means deliberately discarding some of those terms.
+
+00:10:50.900 --> 00:10:56.280
+For one plus t raised to five, the exact coefficients are one, five, ten, ten,
+
+00:10:56.360 --> 00:10:57.240
+five, one.
+
+00:10:57.800 --> 00:11:02.100
+With t equal to zero point zero two, retaining only the constant and linear
+
+00:11:02.100 --> 00:11:05.000
+term gives one point one zero.
+
+00:11:05.000 --> 00:11:08.680
+Retaining the quadratic term as well gives one point one zero four.
+
+00:11:08.680 --> 00:11:13.882
+The exact value is one point one zero four zero eight zero eight zero three
+
+00:11:13.882 --> 00:11:14.240
+two.
+
+00:11:14.240 --> 00:11:18.243
+Because t is positive, all omitted terms here are positive, so both
+
+00:11:18.243 --> 00:11:18.900
+truncations
+
+00:11:18.900 --> 00:11:20.520
+underestimate the exact value.
+
+00:11:21.200 --> 00:11:25.520
+The error after the quadratic term is ten t cubed plus five t to the fourth
+
+00:11:25.520 --> 00:11:27.000
+plus t to the fifth.
+
+00:11:27.000 --> 00:11:31.640
+For zero at most t at most zero point zero two, replacing t in each positive
+
+00:11:31.640 --> 00:11:35.747
+remainder term by zero point zero two bounds that error by eight point zero
+
+00:11:35.747 --> 00:11:38.820
+eight zero three two times ten to the power negative five.
+
+00:11:39.800 --> 00:11:43.000
+Check a requested accuracy before deciding how many terms to keep.
+
+00:11:43.680 --> 00:11:47.720
+A different application uses integer divisibility: write five to the fifth as
+
+00:11:47.720 --> 00:11:49.260
+one plus four raised to five.
+
+00:11:50.060 --> 00:11:55.120
+Modulo sixteen, every term from r equal to two onward is divisible by sixteen.
+
+00:11:55.120 --> 00:11:58.380
+The remainder is therefore that of one plus twenty, namely five.
+
+00:11:58.380 --> 00:12:03.200
+These applications use the same exact positive integer expansion with clearly
+
+00:12:03.200 --> 00:12:04.020
+stated operations.
