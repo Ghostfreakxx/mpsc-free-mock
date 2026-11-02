@@ -166,10 +166,10 @@ export const lessons: Lesson[] = [
         ],
       },
       {
-        heading: "Tax on crypto (rules in force in 2025; check for changes)",
+        heading: "Tax on crypto (rules for 2026, unchanged by the Income-tax Act, 2025; check for changes)",
         points: [
-          "1% TDS (Section 194S) is deducted from the amount you receive when you sell, above small yearly limits. You can claim it back when you file your income-tax return, but until then that cash is locked.",
-          "Profits are taxed at a flat 30% (plus cess), whatever your income slab (Section 115BBH).",
+          "1% TDS is deducted from the amount you receive when you sell, above small yearly limits. You can claim it back when you file your income-tax return, but until then that cash is locked.",
+          "Profits are taxed at a flat 30% (plus cess), whatever your income slab.",
           "Losses cannot be set off against other income or against gains from another coin, and cannot be carried forward. A ₹5,000 loss on one coin does not reduce the tax on a ₹5,000 gain on another.",
           "Shares are taxed differently, with their own short-term and long-term rates. Ask a chartered accountant (CA) about your own situation.",
         ],
@@ -188,7 +188,7 @@ export const lessons: Lesson[] = [
     ],
     check: [
       {
-        question: "You lost ₹3,000 on coin A and gained ₹3,000 on coin B in the same year. Under the 2025 rules, what is your taxable crypto gain?",
+        question: "You lost ₹3,000 on coin A and gained ₹3,000 on coin B in the same year. Under the 2026 rules, what is your taxable crypto gain?",
         options: ["₹0", "₹3,000", "₹6,000", "−₹3,000, carried forward"],
         answer: "₹3,000",
         why: "Crypto losses cannot be set off against crypto gains on another coin, so the full ₹3,000 gain on coin B is taxed at 30%.",
