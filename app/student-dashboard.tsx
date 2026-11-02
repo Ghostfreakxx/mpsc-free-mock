@@ -34,6 +34,7 @@ import {
   Search,
   ShieldCheck,
   Sparkles,
+  Stethoscope,
   Target,
   TrendingUp,
   type LucideIcon,
@@ -149,6 +150,15 @@ const courses: {
     href: "/cuet-pg",
     icon: Compass,
     theme: "gold",
+    format: "Question bank",
+  },
+  {
+    title: "Nursing practice",
+    subject: "Staff nurse recruitment",
+    description: "Staff nurse questions for Mizoram H&FW posts and AIIMS NORCET, with explanations and a timed 100-question mock.",
+    href: "/nursing",
+    icon: Stethoscope,
+    theme: "green",
     format: "Question bank",
   },
 ];
