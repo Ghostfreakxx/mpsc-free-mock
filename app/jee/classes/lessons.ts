@@ -1283,7 +1283,7 @@ export const lectures: Lecture[] = [
   },
   {
     id: "practical-chemistry", subject: "Chemistry", unit: 20, number: "C18", title: practicalChemistry.title,
-    description: "Thirty-seven narrated chapters on practical chemistry, pH-dependent sulfide selection, nitrite oxidation, chromyl chloride atom balances and qualitative-test limits.",
+    description: "Forty-one narrated chapters on controlled salt-analysis evidence, cation comparisons, analytical balances and practical interpretation.",
     scope: "Recorded Unit 20 conceptual foundation with original practice. Full ion-analysis schemes, all preparation equations, indicator curves, sol preparation and further kinetic datasets remain; not exhaustive coverage or official PYQs.",
     progressKey: "jee.practical-chemistry.lecture.v1",
     audio: "/lectures/practical-chemistry/narration-marin.mp3",

@@ -1,0 +1,1 @@
+export const hydroxideComparison=[{ion:'Zn²⁺',solid:'Zn(OH)₂',alkali:'Colourless solution',ammonia:'Colourless solution'},{ion:'Al³⁺',solid:'Al(OH)₃',alkali:'Colourless solution',ammonia:'White solid remains'}] as const;

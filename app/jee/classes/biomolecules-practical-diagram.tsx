@@ -1,3 +1,4 @@
+import PracticalCationEvidenceDiagram from './practical-cation-evidence-diagram';
 import BiomoleculeConnectivityDiagram from './biomolecule-connectivity-diagram';
 import AnalysisDetectionDiagram from './analysis-detection-diagram';
 import KineticsPracticalControlsDiagram from './kinetics-practical-controls-diagram';
@@ -18,6 +19,7 @@ import DnaBaseCountDiagram from './dna-base-count-diagram';
 
 const recordings={biomolecules,"purification-analysis":purification,"practical-chemistry":practical};
 export default function BiomoleculesPracticalDiagram({lesson,chapter}:{lesson:keyof typeof recordings;chapter:number}) {
+ if(lesson==='practical-chemistry'&&chapter===37)return <PracticalCationEvidenceDiagram/>;
  if(lesson==='biomolecules'&&chapter===34)return <BiomoleculeConnectivityDiagram/>;
  if(lesson==='practical-chemistry'&&chapter===29)return <KineticsPracticalControlsDiagram kind="nickel"/>;
  if(lesson==='biomolecules'&&chapter===29)return <AromaticBiomoleculePatternsDiagram kind="amino"/>;
