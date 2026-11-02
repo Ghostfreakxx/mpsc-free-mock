@@ -91,6 +91,7 @@ targets['limits-continuity-differentiability']='limits-continuity-differentiabil
 targets['integral-calculus']='integral-calculus';
 targets['differential-equations']='differential-equations';
 targets['coordinate-geometry']='coordinate-geometry';
+targets['three-dimensional-geometry']='three-dimensional-geometry';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const lesson = JSON.parse(await fs.readFile(path.join(root, `app/data/jee-${dataName}-lecture.json`), 'utf8'));

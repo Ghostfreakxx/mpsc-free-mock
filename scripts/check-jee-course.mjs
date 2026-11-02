@@ -10,6 +10,7 @@ try {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
   const cases = [
+    ['Mathematics', 'three-dimensional-geometry', 14, [1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],
     ['Mathematics', 'coordinate-geometry', 14, [1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],
     ['Mathematics', 'differential-equations', 14, [1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],
     ['Mathematics', 'integral-calculus', 14, [1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],
