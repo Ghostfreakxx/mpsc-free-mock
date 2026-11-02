@@ -1,1 +1,710 @@
-[]
+[
+  {
+    "id": "phr-001",
+    "category": "Pharmacology",
+    "difficulty": "easy",
+    "question": "What is the antidote for paracetamol (acetaminophen) overdose?",
+    "options": [
+      "Naloxone",
+      "N-acetylcysteine",
+      "Atropine",
+      "Protamine sulphate"
+    ],
+    "answer": 1,
+    "explanation": "N-acetylcysteine restores glutathione in the liver, which protects it from damage by paracetamol. It works best when started within 8 to 10 hours of the overdose."
+  },
+  {
+    "id": "phr-002",
+    "category": "Pharmacology",
+    "difficulty": "easy",
+    "question": "Which drug reverses an opioid (morphine) overdose?",
+    "options": [
+      "Flumazenil",
+      "Vitamin K",
+      "Naloxone",
+      "Atropine"
+    ],
+    "answer": 2,
+    "explanation": "Naloxone blocks opioid receptors and quickly reverses breathing depression and drowsiness. Its effect may wear off before the opioid's, so the patient must be watched closely."
+  },
+  {
+    "id": "phr-003",
+    "category": "Pharmacology",
+    "difficulty": "easy",
+    "question": "Which drug is the antidote for heparin overdose?",
+    "options": [
+      "Vitamin K",
+      "Calcium gluconate",
+      "Naloxone",
+      "Protamine sulphate"
+    ],
+    "answer": 3,
+    "explanation": "Protamine sulphate binds heparin and stops its anticoagulant effect within minutes. It is given slowly by IV injection."
+  },
+  {
+    "id": "phr-004",
+    "category": "Pharmacology",
+    "difficulty": "easy",
+    "question": "Which drug reverses the effect of warfarin?",
+    "options": [
+      "Vitamin K",
+      "Protamine sulphate",
+      "Adrenaline",
+      "Atropine"
+    ],
+    "answer": 0,
+    "explanation": "Warfarin works by blocking vitamin K-dependent clotting factors, so giving vitamin K reverses it. In serious bleeding, fresh frozen plasma or prothrombin complex concentrate works faster."
+  },
+  {
+    "id": "phr-005",
+    "category": "Pharmacology",
+    "difficulty": "easy",
+    "question": "Which type of insulin can be given intravenously?",
+    "options": [
+      "NPH (isophane) insulin",
+      "Regular (soluble) insulin",
+      "Insulin glargine",
+      "Premixed 30/70 insulin"
+    ],
+    "answer": 1,
+    "explanation": "Only clear, short-acting regular insulin can be given IV, for example in diabetic ketoacidosis. Cloudy intermediate insulin and long-acting insulin are given only under the skin."
+  },
+  {
+    "id": "phr-006",
+    "category": "Pharmacology",
+    "difficulty": "easy",
+    "question": "What is the first drug given for anaphylaxis (a severe allergic reaction)?",
+    "options": [
+      "Paracetamol",
+      "Antibiotic",
+      "Adrenaline (epinephrine)",
+      "Insulin"
+    ],
+    "answer": 2,
+    "explanation": "Adrenaline narrows blood vessels, opens the airways and reduces swelling, so it is life-saving in anaphylaxis. It is given intramuscularly into the outer thigh without delay."
+  },
+  {
+    "id": "phr-007",
+    "category": "Pharmacology",
+    "difficulty": "easy",
+    "question": "What is a common side effect of aspirin?",
+    "options": [
+      "Weight gain",
+      "Hair loss",
+      "Constipation only",
+      "Stomach irritation and bleeding"
+    ],
+    "answer": 3,
+    "explanation": "Aspirin irritates the stomach lining and reduces platelet clotting, so it can cause gastric pain, ulcers and bleeding. It should be taken after food."
+  },
+  {
+    "id": "phr-008",
+    "category": "Pharmacology",
+    "difficulty": "easy",
+    "question": "Which antibiotic should not be given to children under 8 years or pregnant women because it stains developing teeth?",
+    "options": [
+      "Tetracycline",
+      "Penicillin",
+      "Amoxicillin",
+      "Cephalexin"
+    ],
+    "answer": 0,
+    "explanation": "Tetracyclines bind calcium in growing teeth and bones, causing permanent yellow-brown staining. They are avoided in pregnancy and in children under 8."
+  },
+  {
+    "id": "phr-009",
+    "category": "Pharmacology",
+    "difficulty": "easy",
+    "question": "A medicine is ordered 'PRN'. What does this mean?",
+    "options": [
+      "Before meals",
+      "As needed",
+      "At bedtime",
+      "Every morning"
+    ],
+    "answer": 1,
+    "explanation": "PRN (pro re nata) means the medicine is given only when needed, such as for pain or fever. The order should state the reason and the minimum time between doses."
+  },
+  {
+    "id": "phr-010",
+    "category": "Pharmacology",
+    "difficulty": "easy",
+    "question": "How should a sublingual nitroglycerin tablet be taken?",
+    "options": [
+      "Swallowed with water",
+      "Chewed and swallowed",
+      "Placed under the tongue to dissolve",
+      "Crushed and mixed with food"
+    ],
+    "answer": 2,
+    "explanation": "A sublingual tablet dissolves under the tongue and is absorbed straight into the blood, so it acts within minutes. It also avoids being broken down by the liver first."
+  },
+  {
+    "id": "phr-011",
+    "category": "Pharmacology",
+    "difficulty": "easy",
+    "question": "Furosemide, a loop diuretic, commonly causes loss of which electrolyte?",
+    "options": [
+      "Calcium gain",
+      "Sodium gain",
+      "Iron",
+      "Potassium"
+    ],
+    "answer": 3,
+    "explanation": "Furosemide increases the loss of potassium in the urine, which can cause hypokalaemia with muscle weakness and an irregular heartbeat. Potassium levels are checked and potassium-rich foods or supplements are given."
+  },
+  {
+    "id": "phr-012",
+    "category": "Pharmacology",
+    "difficulty": "easy",
+    "question": "Which group of antibiotics can damage hearing and the kidneys?",
+    "options": [
+      "Aminoglycosides such as gentamicin",
+      "Penicillins such as amoxicillin",
+      "Macrolides such as azithromycin",
+      "Tetracyclines"
+    ],
+    "answer": 0,
+    "explanation": "Aminoglycosides such as gentamicin and amikacin can cause ototoxicity (hearing loss, ringing in the ears) and nephrotoxicity. Blood levels, kidney function and hearing are monitored during treatment."
+  },
+  {
+    "id": "phr-013",
+    "category": "Pharmacology",
+    "difficulty": "easy",
+    "question": "Which TB drug commonly turns urine, tears and sweat orange-red?",
+    "options": [
+      "Isoniazid",
+      "Rifampicin",
+      "Pyrazinamide",
+      "Ethambutol"
+    ],
+    "answer": 1,
+    "explanation": "Rifampicin colours body fluids orange-red, which is harmless but should be explained to the patient. It can also stain contact lenses."
+  },
+  {
+    "id": "phr-014",
+    "category": "Pharmacology",
+    "difficulty": "easy",
+    "question": "Salbutamol, used in asthma, belongs to which drug group?",
+    "options": [
+      "Corticosteroids",
+      "Antihistamines",
+      "Beta-2 agonist bronchodilators",
+      "Beta blockers"
+    ],
+    "answer": 2,
+    "explanation": "Salbutamol stimulates beta-2 receptors in the airways, relaxing the muscle and opening the airways within minutes. Common side effects are a fast heartbeat and fine tremor."
+  },
+  {
+    "id": "phr-015",
+    "category": "Pharmacology",
+    "difficulty": "easy",
+    "question": "Which type of tablet should never be crushed?",
+    "options": [
+      "A plain paracetamol tablet",
+      "A scored tablet",
+      "A chewable tablet",
+      "An enteric-coated or sustained-release tablet"
+    ],
+    "answer": 3,
+    "explanation": "Crushing an enteric-coated tablet destroys the coating that protects the stomach or the drug. Crushing a sustained-release tablet releases the whole dose at once, which can cause an overdose."
+  },
+  {
+    "id": "phr-016",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "Why is pyridoxine (vitamin B6) given with isoniazid?",
+    "options": [
+      "To prevent peripheral neuropathy",
+      "To improve appetite",
+      "To prevent liver damage",
+      "To colour the urine"
+    ],
+    "answer": 0,
+    "explanation": "Isoniazid increases loss of pyridoxine, which can damage nerves and cause tingling and numbness in the hands and feet. Pyridoxine prevents this, especially in people with diabetes, alcohol use, malnutrition or HIV."
+  },
+  {
+    "id": "phr-017",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "Which side effect of ethambutol should the nurse ask about?",
+    "options": [
+      "Hearing loss",
+      "Blurred vision or difficulty telling red from green",
+      "Orange urine",
+      "Joint pain only"
+    ],
+    "answer": 1,
+    "explanation": "Ethambutol can cause optic neuritis, first showing as blurred vision or poor red-green colour vision. Vision is checked before and during treatment, and the drug is stopped if vision changes."
+  },
+  {
+    "id": "phr-018",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "Which blood test is used to monitor heparin therapy?",
+    "options": [
+      "INR",
+      "Haemoglobin",
+      "Activated partial thromboplastin time (aPTT)",
+      "Platelet count only"
+    ],
+    "answer": 2,
+    "explanation": "Unfractionated heparin is monitored with the aPTT, while warfarin is monitored with the PT and INR. The platelet count is also checked because heparin can cause thrombocytopenia."
+  },
+  {
+    "id": "phr-019",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "For most patients on warfarin, such as those with atrial fibrillation or a deep vein thrombosis, what is the usual target INR?",
+    "options": [
+      "0.5–1.0",
+      "1.0–1.5",
+      "4.0–5.0",
+      "2.0–3.0"
+    ],
+    "answer": 3,
+    "explanation": "An INR of 2 to 3 prevents clots without too much bleeding risk for most conditions. A higher INR raises bleeding risk, so doses are adjusted to the result.",
+    "reviewNote": "Targets differ by condition; for example, some mechanical heart valves need 2.5–3.5."
+  },
+  {
+    "id": "phr-020",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "Which symptoms are early signs of digoxin toxicity?",
+    "options": [
+      "Nausea, vomiting, loss of appetite and seeing yellow-green halos",
+      "High fever and rash",
+      "Weight gain and oedema",
+      "Dry cough"
+    ],
+    "answer": 0,
+    "explanation": "Early digoxin toxicity often causes nausea, vomiting, poor appetite and visual changes such as yellow-green halos around lights. It can progress to dangerous heart rhythms, so the drug is held and the doctor informed."
+  },
+  {
+    "id": "phr-021",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "A patient on enalapril complains of a persistent dry cough. What is the most likely cause?",
+    "options": [
+      "A chest infection",
+      "A side effect of the ACE inhibitor",
+      "An allergy to food",
+      "Asthma"
+    ],
+    "answer": 1,
+    "explanation": "ACE inhibitors such as enalapril and captopril raise bradykinin levels, which causes a dry, tickly cough in some patients. The doctor may switch to an angiotensin receptor blocker such as losartan."
+  },
+  {
+    "id": "phr-022",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "Non-selective beta blockers such as propranolol should be avoided in patients with:",
+    "options": [
+      "Hypertension",
+      "Migraine",
+      "Asthma",
+      "Anxiety"
+    ],
+    "answer": 2,
+    "explanation": "Blocking beta-2 receptors in the airways can cause bronchospasm and a severe asthma attack. Beta blockers can also hide the warning signs of hypoglycaemia in diabetes."
+  },
+  {
+    "id": "phr-023",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "Why is metformin usually stopped before a scan using iodinated contrast dye?",
+    "options": [
+      "It changes the colour of the scan",
+      "It causes allergy to the dye",
+      "It makes the scan take longer",
+      "Contrast can affect kidney function, which raises the risk of lactic acidosis with metformin"
+    ],
+    "answer": 3,
+    "explanation": "If contrast dye reduces kidney function, metformin can build up and cause lactic acidosis. It is usually held around the scan and restarted once kidney function is confirmed normal.",
+    "reviewNote": "Guidance varies: some now hold metformin only when kidney function is reduced. Follow hospital policy."
+  },
+  {
+    "id": "phr-024",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "When does regular (short-acting) insulin given under the skin usually reach its peak effect?",
+    "options": [
+      "Within 5 minutes",
+      "2 to 4 hours after injection",
+      "12 to 16 hours after injection",
+      "24 hours after injection"
+    ],
+    "answer": 1,
+    "explanation": "Regular insulin starts working in about 30 to 60 minutes, peaks at about 2 to 4 hours and lasts 6 to 8 hours. Hypoglycaemia is most likely around the peak, so meals must not be delayed.",
+    "reviewNote": "Exact onset and peak times vary slightly between sources and brands."
+  },
+  {
+    "id": "phr-025",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "Why must long-term steroid therapy, such as prednisolone, not be stopped suddenly?",
+    "options": [
+      "The patient will gain weight",
+      "It may cause an adrenal crisis because the adrenal glands have stopped making cortisol",
+      "It will cause high blood sugar",
+      "It will cause hair loss"
+    ],
+    "answer": 1,
+    "explanation": "Long-term steroids suppress the body's own cortisol production. Stopping them suddenly can cause an adrenal crisis with low blood pressure, weakness and shock, so the dose is reduced gradually."
+  },
+  {
+    "id": "phr-026",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "Which side effect is typical of long-term phenytoin use?",
+    "options": [
+      "Hearing loss",
+      "Hair loss",
+      "Overgrowth of the gums (gingival hyperplasia)",
+      "Orange urine"
+    ],
+    "answer": 2,
+    "explanation": "Phenytoin often causes gingival hyperplasia, so good oral hygiene and regular dental care are important. Other side effects include unsteadiness, double vision and excess body hair."
+  },
+  {
+    "id": "phr-027",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "A farmer has swallowed an organophosphate pesticide and has pinpoint pupils, heavy sweating, salivation and a slow pulse. Which drug is given first?",
+    "options": [
+      "Naloxone",
+      "Adrenaline",
+      "Flumazenil",
+      "Atropine"
+    ],
+    "answer": 3,
+    "explanation": "Organophosphates block cholinesterase, causing excess acetylcholine effects. Atropine blocks these effects and is given repeatedly until the chest is clear of secretions and the patient is 'atropinised'."
+  },
+  {
+    "id": "phr-028",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "Before giving the first dose of injectable penicillin, what must the nurse do?",
+    "options": [
+      "Ask about any past allergy to penicillin and keep emergency drugs ready",
+      "Give it quickly as an IV push",
+      "Mix it with any other drug in the syringe",
+      "Give it only at bedtime"
+    ],
+    "answer": 0,
+    "explanation": "Penicillin can cause anaphylaxis, so allergy history is checked first and adrenaline is kept ready. Many Indian hospitals also do a test dose before the first injection.",
+    "reviewNote": "Test-dose practice varies; current guidance relies more on allergy history than on skin testing. Follow hospital policy."
+  },
+  {
+    "id": "phr-029",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "How should intravenous potassium chloride be given?",
+    "options": [
+      "As a rapid IV push",
+      "Diluted in IV fluid and given slowly, never as a bolus",
+      "Undiluted, intramuscularly",
+      "By mouth only"
+    ],
+    "answer": 1,
+    "explanation": "Concentrated potassium given quickly can stop the heart. It must always be diluted in an IV fluid and infused slowly, ideally with a pump."
+  },
+  {
+    "id": "phr-030",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "A patient receiving IV vancomycin develops flushing and a red rash over the face, neck and upper body during the infusion. What is the most likely cause?",
+    "options": [
+      "Anaphylaxis to food",
+      "Measles",
+      "The infusion is running too fast ('red man' syndrome)",
+      "Low blood sugar"
+    ],
+    "answer": 2,
+    "explanation": "Infusing vancomycin too quickly releases histamine, causing flushing and itching of the upper body. Slowing the infusion, usually over at least 60 minutes, prevents it."
+  },
+  {
+    "id": "phr-031",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "Which side effect of morphine is the most dangerous and must be monitored closely?",
+    "options": [
+      "Constipation",
+      "Itching",
+      "Dry mouth",
+      "Respiratory depression"
+    ],
+    "answer": 3,
+    "explanation": "Morphine can slow or stop breathing, especially in older people and with the first doses. The nurse checks the breathing rate and sedation level and keeps naloxone available."
+  },
+  {
+    "id": "phr-032",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "Ondansetron is mainly used to:",
+    "options": [
+      "Prevent and treat nausea and vomiting",
+      "Relieve pain",
+      "Lower blood pressure",
+      "Treat infection"
+    ],
+    "answer": 0,
+    "explanation": "Ondansetron blocks serotonin (5-HT3) receptors that trigger vomiting. It is widely used for vomiting after surgery, during chemotherapy and in pregnancy when advised."
+  },
+  {
+    "id": "phr-033",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "When should omeprazole, a proton pump inhibitor, usually be taken?",
+    "options": [
+      "With dinner",
+      "About 30 minutes before breakfast",
+      "Only at bedtime with milk",
+      "After the evening meal"
+    ],
+    "answer": 1,
+    "explanation": "Omeprazole works best when taken before the first meal, when the acid pumps are being switched on. It reduces stomach acid in ulcers and reflux disease."
+  },
+  {
+    "id": "phr-034",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "Which advice should the nurse give a patient starting oral iron tablets?",
+    "options": [
+      "Take them with tea or milk",
+      "Expect the urine to turn red",
+      "Stools may turn black; take with vitamin C-rich juice and avoid tea, coffee or milk at the same time",
+      "Stop them if the stools turn black"
+    ],
+    "answer": 2,
+    "explanation": "Black stools are a harmless effect of iron tablets. Vitamin C improves iron absorption, while tea, coffee, milk and antacids reduce it."
+  },
+  {
+    "id": "phr-035",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "What does the 'half-life' of a drug mean?",
+    "options": [
+      "The time a drug takes to start working",
+      "Half the normal dose",
+      "The time until the drug expires",
+      "The time taken for the drug's level in the blood to fall by half"
+    ],
+    "answer": 3,
+    "explanation": "Half-life is the time for the blood level of a drug to fall to half. It helps decide how often a drug is given, and a drug is mostly cleared after about 4 to 5 half-lives."
+  },
+  {
+    "id": "phr-036",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "Where does 'first-pass metabolism' of a drug taken by mouth mainly happen?",
+    "options": [
+      "In the liver",
+      "In the kidneys",
+      "In the lungs",
+      "In the skin"
+    ],
+    "answer": 0,
+    "explanation": "Drugs absorbed from the gut go first to the liver through the portal vein, where some of the dose is broken down before reaching the body. Sublingual, IV and rectal routes partly or fully avoid this."
+  },
+  {
+    "id": "phr-037",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "Which drug, taken in pregnancy, caused babies to be born with severely shortened limbs (phocomelia)?",
+    "options": [
+      "Paracetamol",
+      "Thalidomide",
+      "Folic acid",
+      "Iron"
+    ],
+    "answer": 1,
+    "explanation": "Thalidomide was given for morning sickness in the 1950s and 1960s and caused thousands of babies to be born with limb defects. It showed why drugs must be tested carefully for safety in pregnancy."
+  },
+  {
+    "id": "phr-038",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "In India, prescription-only medicines marked with the symbol 'Rx' are listed under which schedule of the Drugs and Cosmetics Rules?",
+    "options": [
+      "Schedule A",
+      "Schedule C",
+      "Schedule H",
+      "Schedule M"
+    ],
+    "answer": 2,
+    "explanation": "Schedule H drugs must be sold only on a doctor's prescription and carry the Rx symbol with a warning. Schedule H1 and Schedule X drugs have stricter record-keeping rules.",
+    "reviewNote": "Schedules and their lists are amended from time to time; check the current Drugs and Cosmetics Rules."
+  },
+  {
+    "id": "phr-039",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "What is the usual maximum daily dose of paracetamol for a healthy adult?",
+    "options": [
+      "500 mg",
+      "1 g",
+      "10 g",
+      "4 g"
+    ],
+    "answer": 3,
+    "explanation": "The usual maximum is 4 g a day, given as 500 mg to 1 g every 4 to 6 hours. A lower maximum is used in people with liver disease, alcohol use, low body weight or malnutrition, because overdose damages the liver.",
+    "reviewNote": "Many guidelines advise a lower limit (for example 2–3 g a day) for people at risk of liver damage."
+  },
+  {
+    "id": "phr-040",
+    "category": "Pharmacology",
+    "difficulty": "medium",
+    "question": "What are the most common side effects of nitroglycerin?",
+    "options": [
+      "Headache, flushing and a drop in blood pressure",
+      "Constipation and weight gain",
+      "Hearing loss",
+      "Orange urine"
+    ],
+    "answer": 0,
+    "explanation": "Nitroglycerin widens blood vessels, including those in the head, so headache, flushing and dizziness are common. The patient should sit or lie down when taking it, because blood pressure can fall."
+  },
+  {
+    "id": "phr-041",
+    "category": "Pharmacology",
+    "difficulty": "hard",
+    "question": "A patient needs 5,000 units of heparin subcutaneously. The vial contains 25,000 units in 5 mL. How much should the nurse give?",
+    "options": [
+      "1 mL",
+      "0.5 mL",
+      "2 mL",
+      "5 mL"
+    ],
+    "answer": 0,
+    "explanation": "Volume = dose wanted ÷ dose available × volume. So 5,000 ÷ 25,000 × 5 mL = 1 mL."
+  },
+  {
+    "id": "phr-042",
+    "category": "Pharmacology",
+    "difficulty": "hard",
+    "question": "Dopamine is ordered at 5 mcg/kg/min for a 60 kg patient. The infusion contains 1,600 mcg per mL. At what rate should the pump be set?",
+    "options": [
+      "5.6 mL per hour",
+      "11.25 mL per hour",
+      "22.5 mL per hour",
+      "30 mL per hour"
+    ],
+    "answer": 1,
+    "explanation": "Dose per minute = 5 × 60 = 300 mcg/min, which is 18,000 mcg per hour. Dividing by 1,600 mcg/mL gives 11.25 mL per hour."
+  },
+  {
+    "id": "phr-043",
+    "category": "Pharmacology",
+    "difficulty": "hard",
+    "question": "A 12 kg child needs paracetamol at 15 mg/kg. The syrup contains 120 mg in 5 mL. How much syrup should be given?",
+    "options": [
+      "5 mL",
+      "10 mL",
+      "7.5 mL",
+      "15 mL"
+    ],
+    "answer": 2,
+    "explanation": "The dose is 15 × 12 = 180 mg. Volume = 180 ÷ 120 × 5 mL = 7.5 mL."
+  },
+  {
+    "id": "phr-044",
+    "category": "Pharmacology",
+    "difficulty": "hard",
+    "question": "When mixing regular insulin and NPH insulin in one syringe, what is the correct method?",
+    "options": [
+      "Draw up the cloudy NPH insulin first",
+      "Mix them in a cup before drawing up",
+      "Shake both vials hard",
+      "Inject air into both vials, then draw up the clear regular insulin before the cloudy NPH"
+    ],
+    "answer": 3,
+    "explanation": "Drawing the clear regular insulin first keeps NPH from getting into the regular insulin vial and changing how it acts. NPH is gently rolled, not shaken, to mix it."
+  },
+  {
+    "id": "phr-045",
+    "category": "Pharmacology",
+    "difficulty": "hard",
+    "question": "When should a blood sample be taken to measure the 'trough' level of gentamicin?",
+    "options": [
+      "Just before the next dose is due",
+      "Immediately after the infusion starts",
+      "Exactly 12 hours after the dose, whatever the schedule",
+      "Only when the patient feels unwell"
+    ],
+    "answer": 0,
+    "explanation": "The trough is the lowest level, so it is measured just before the next dose. A high trough means the drug is building up and raises the risk of kidney and hearing damage."
+  },
+  {
+    "id": "phr-046",
+    "category": "Pharmacology",
+    "difficulty": "hard",
+    "question": "Why is a 'loading dose' sometimes given at the start of treatment?",
+    "options": [
+      "To reduce side effects",
+      "To reach an effective blood level quickly",
+      "To test for allergy",
+      "To make the drug last shorter"
+    ],
+    "answer": 1,
+    "explanation": "A larger first dose fills the body's stores quickly so the drug works sooner, which matters for drugs with a long half-life. Smaller maintenance doses then keep the level steady."
+  },
+  {
+    "id": "phr-047",
+    "category": "Pharmacology",
+    "difficulty": "hard",
+    "question": "What does it mean when a drug has a 'narrow therapeutic index'?",
+    "options": [
+      "It works only in children",
+      "It is very cheap",
+      "The toxic dose is close to the effective dose, so levels must be monitored closely",
+      "It can only be given by mouth"
+    ],
+    "answer": 2,
+    "explanation": "The therapeutic index compares the dose that causes toxicity with the dose that has the desired effect. Drugs such as digoxin, warfarin, lithium, phenytoin and gentamicin have a narrow index, so small changes can cause harm."
+  },
+  {
+    "id": "phr-048",
+    "category": "Pharmacology",
+    "difficulty": "hard",
+    "question": "What is the recommended dose and route of adrenaline for an adult with anaphylaxis?",
+    "options": [
+      "1 mg of 1:10,000 by IV push",
+      "5 mg by mouth",
+      "0.05 mg under the tongue",
+      "0.5 mg of 1:1,000 (0.5 mL) intramuscularly into the outer thigh"
+    ],
+    "answer": 3,
+    "explanation": "The adult IM dose is 0.5 mg (0.5 mL of 1:1,000 adrenaline), given into the anterolateral thigh. It can be repeated every 5 minutes if there is no improvement.",
+    "reviewNote": "Doses follow international resuscitation guidance (some sources use 0.3–0.5 mg); check current local protocol."
+  },
+  {
+    "id": "phr-049",
+    "category": "Pharmacology",
+    "difficulty": "hard",
+    "question": "A patient takes both digoxin and furosemide. Which lab result most increases the risk of digoxin toxicity?",
+    "options": [
+      "Low potassium (hypokalaemia)",
+      "High potassium",
+      "Low sodium only",
+      "High haemoglobin"
+    ],
+    "answer": 0,
+    "explanation": "Low potassium makes the heart muscle more sensitive to digoxin, so toxic effects can appear even at normal digoxin levels. Patients on both drugs need regular potassium checks."
+  },
+  {
+    "id": "phr-050",
+    "category": "Pharmacology",
+    "difficulty": "hard",
+    "question": "In organophosphate poisoning, why is pralidoxime (PAM) given along with atropine?",
+    "options": [
+      "It dries up secretions",
+      "It reactivates the cholinesterase enzyme if given early",
+      "It lowers blood pressure",
+      "It is an antibiotic"
+    ],
+    "answer": 1,
+    "explanation": "Atropine blocks the effects of excess acetylcholine, while pralidoxime frees the cholinesterase enzyme from the poison so it can work again. Pralidoxime works best if given early.",
+    "reviewNote": "Evidence on the benefit of pralidoxime is mixed and its use varies between guidelines."
+  }
+]
