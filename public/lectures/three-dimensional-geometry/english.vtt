@@ -1,0 +1,844 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.960
+A point in three dimensional Cartesian space is an ordered triple x, y, z.
+
+00:00:05.720 --> 00:00:09.020
+The coordinates measure signed positions along three mutually perpendicular
+
+00:00:09.020 --> 00:00:10.900
+axes with a common length scale.
+
+00:00:11.960 --> 00:00:15.420
+The order matters: interchanging coordinates generally changes the point.
+
+00:00:16.180 --> 00:00:20.180
+The distance from the origin to the point is square root of x squared plus y
+
+00:00:20.180 --> 00:00:21.300
+squared plus z squared.
+
+00:00:22.320 --> 00:00:26.080
+This follows by applying the Pythagorean theorem first in a coordinate plane
+
+00:00:26.420 --> 00:00:28.520
+and then to the remaining perpendicular direction.
+
+00:00:28.520 --> 00:00:33.600
+For the point two, negative three, six, the squared distance is four plus nine
+
+00:00:33.600 --> 00:00:36.760
+plus thirty six, or forty nine, giving distance seven.
+
+00:00:37.540 --> 00:00:40.820
+A negative coordinate changes the location but does not make a distance
+
+00:00:40.820 --> 00:00:41.240
+negative.
+
+00:00:42.080 --> 00:00:45.600
+A point with one coordinate zero lies on the corresponding coordinate plane.
+
+00:00:46.300 --> 00:00:49.020
+A point with two coordinates zero lies on an axis.
+
+00:00:49.960 --> 00:00:53.120
+Points with no zero coordinate belong to one of eight octants according to
+
+00:00:53.120 --> 00:00:53.880
+their three signs.
+
+00:00:54.600 --> 00:00:58.480
+The numbering of octants can depend on convention, so a sign description is
+
+00:00:58.480 --> 00:00:59.020
+unambiguous.
+
+00:01:00.040 --> 00:01:04.000
+A flat drawing of space is only a projection; do not measure angles or lengths
+
+00:01:04.000 --> 00:01:05.420
+directly from a slanted sketch.
+
+00:01:06.048 --> 00:01:10.208
+The distance between two space points is the length of their coordinate
+
+00:01:10.208 --> 00:01:10.708
+difference.
+
+00:01:11.668 --> 00:01:15.148
+Subtract the first point's x, y and z coordinates from the corresponding
+
+00:01:15.148 --> 00:01:19.128
+coordinates of the second, square the three differences, add and take the
+
+00:01:19.128 --> 00:01:19.828
+nonnegative root.
+
+00:01:20.648 --> 00:01:25.708
+For A at one, two, three and B at three, negative one, nine, the difference is
+
+00:01:25.708 --> 00:01:27.388
+two, negative three, six.
+
+00:01:27.968 --> 00:01:29.248
+The distance is seven.
+
+00:01:30.328 --> 00:01:34.068
+Reversing A and B reverses every component but preserves the distance.
+
+00:01:34.728 --> 00:01:37.548
+Coordinate projections give another useful interpretation.
+
+00:01:38.928 --> 00:01:42.948
+The perpendicular projection of B onto the x y coordinate plane is three,
+
+00:01:43.128 --> 00:01:44.088
+negative one, zero.
+
+00:01:44.848 --> 00:01:49.077
+Only z is replaced by zero, because the perpendicular direction is along the z
+
+00:01:49.077 --> 00:01:49.348
+axis.
+
+00:01:50.108 --> 00:01:53.168
+Its distance from that plane is absolute z, or nine.
+
+00:01:54.028 --> 00:01:57.848
+Projection onto an axis sets the other two coordinates to zero, and the
+
+00:01:57.848 --> 00:02:00.368
+distance to that axis uses those two removed coordinates.
+
+00:02:00.368 --> 00:02:04.788
+For example, the distance from B to the z axis is square root of ten.
+
+00:02:05.688 --> 00:02:09.928
+Keep a projected point, a projected displacement and a distance distinct: they
+
+00:02:09.928 --> 00:02:13.468
+are different kinds of objects, even when they arise from the same coordinate
+
+00:02:13.468 --> 00:02:14.028
+calculation.
+
+00:02:14.352 --> 00:02:17.712
+The section formula works component by component in space.
+
+00:02:18.812 --> 00:02:24.652
+If P divides A B internally with A P to P B equal to positive m to n, then
+
+00:02:24.652 --> 00:02:29.392
+its position is the quantity n A plus m B divided by m plus n.
+
+00:02:30.192 --> 00:02:33.972
+The notation abbreviates the same weighted calculation in each of the three
+
+00:02:33.972 --> 00:02:34.312
+coordinates.
+
+00:02:35.152 --> 00:02:40.248
+With A at zero, zero, zero and B at six, three, nine, internal ratio two to
+
+00:02:40.248 --> 00:02:40.452
+one
+
+00:02:40.452 --> 00:02:42.052
+gives four, two, six.
+
+00:02:42.572 --> 00:02:45.872
+The larger weight belongs to B because P is nearer B.
+
+00:02:46.552 --> 00:02:50.592
+Equal positive weights give the midpoint, three, three halves, nine halves.
+
+00:02:51.612 --> 00:02:55.932
+External division uses the quantity m B minus n A divided by m minus n,
+
+00:02:56.292 --> 00:02:57.692
+provided m is not n.
+
+00:02:58.052 --> 00:03:01.732
+External ratio two to one gives twelve, six, eighteen, beyond B.
+
+00:03:02.392 --> 00:03:06.012
+For distinct endpoints, equal external distances do not give a finite point.
+
+00:03:06.912 --> 00:03:11.004
+Check collinearity as well as the ratio by seeing that the displacement to P
+
+00:03:11.004 --> 00:03:11.112
+is
+
+00:03:11.112 --> 00:03:13.112
+a scalar multiple of the endpoint displacement.
+
+00:03:14.172 --> 00:03:18.232
+The internal formula also applies to a line segment parameter between zero and
+
+00:03:18.232 --> 00:03:22.452
+one; a parameter outside that range describes a point on an extension.
+
+00:03:22.704 --> 00:03:26.864
+A line direction in space can be represented by a nonzero triple of direction
+
+00:03:26.864 --> 00:03:27.344
+ratios.
+
+00:03:27.924 --> 00:03:31.444
+For a line through two distinct points, their coordinate differences give such
+
+00:03:31.444 --> 00:03:31.844
+a triple.
+
+00:03:32.364 --> 00:03:34.204
+The ratios need not have length one.
+
+00:03:35.064 --> 00:03:39.124
+Multiplying all three by a nonzero scalar preserves the underlying unoriented
+
+00:03:39.124 --> 00:03:39.804
+line direction.
+
+00:03:40.404 --> 00:03:44.584
+For example, two, negative three, six and four, negative six, twelve are
+
+00:03:44.584 --> 00:03:46.944
+proportional and describe parallel directions.
+
+00:03:47.624 --> 00:03:52.064
+Multiplying by negative one reverses orientation but still gives the same
+
+00:03:52.064 --> 00:03:53.004
+unoriented line.
+
+00:03:53.704 --> 00:03:57.464
+The all zero triple is invalid because it provides no direction at all.
+
+00:03:58.144 --> 00:04:02.824
+Zero in one or two individual components is allowed: a zero x component means
+
+00:04:02.824 --> 00:04:04.924
+movement along the line leaves x constant.
+
+00:04:05.504 --> 00:04:09.864
+To compare directions, proportionality must hold with one common multiplier in
+
+00:04:09.864 --> 00:04:10.684
+all three coordinates.
+
+00:04:11.484 --> 00:04:14.444
+Three arbitrary separate multipliers would make the test meaningless.
+
+00:04:15.004 --> 00:04:19.300
+Avoid dividing component by component when a component is zero; compare
+
+00:04:19.300 --> 00:04:19.724
+nonzero
+
+00:04:19.724 --> 00:04:22.544
+ratios carefully or use cross multiplication.
+
+00:04:22.984 --> 00:04:26.784
+A point and a nonzero direction determine a complete line, while direction
+
+00:04:26.784 --> 00:04:30.844
+ratios alone determine only a direction and therefore a family of parallel
+
+00:04:30.844 --> 00:04:32.024
+lines at different locations.
+
+00:04:32.568 --> 00:04:37.708
+Direction cosines describe an oriented unit direction by its cosines with the
+
+00:04:37.708 --> 00:04:39.168
+three positive coordinate axes.
+
+00:04:39.908 --> 00:04:45.568
+If those angles are alpha, beta and gamma, write l, m and n for their cosines.
+
+00:04:46.288 --> 00:04:51.728
+To obtain them from direction ratios a, b and c, divide each component by the
+
+00:04:51.728 --> 00:04:55.548
+positive length square root of a squared plus b squared plus c squared.
+
+00:04:56.168 --> 00:05:01.548
+For ratios two, negative three, six, that length is seven, so the direction
+
+00:05:01.548 --> 00:05:06.188
+cosines are two sevenths, negative three sevenths and six sevenths.
+
+00:05:06.188 --> 00:05:07.628
+Their squared sum is one.
+
+00:05:08.248 --> 00:05:12.408
+The negative y component means the angle with the positive y axis is obtuse,
+
+00:05:12.928 --> 00:05:13.388
+not acute.
+
+00:05:14.448 --> 00:05:18.688
+Reversing orientation changes the signs of all three direction cosines and
+
+00:05:18.688 --> 00:05:20.948
+replaces each axis angle by its supplement.
+
+00:05:21.688 --> 00:05:25.348
+An unoriented line therefore has two opposite unit direction choices.
+
+00:05:25.928 --> 00:05:29.673
+Ratios do not automatically satisfy the squared sum condition until
+
+00:05:29.673 --> 00:05:30.288
+normalized.
+
+00:05:30.928 --> 00:05:34.748
+If two direction cosines are known, the square of the third is one minus the
+
+00:05:34.748 --> 00:05:38.208
+other two squares; its sign needs an orientation condition.
+
+00:05:39.128 --> 00:05:42.528
+Check that this remainder is nonnegative before taking a real square root.
+
+00:05:42.672 --> 00:05:47.092
+The dot product of two direction triples is the sum of the products of
+
+00:05:47.092 --> 00:05:48.112
+corresponding components.
+
+00:05:48.952 --> 00:05:52.912
+It equals the product of their lengths times the cosine of the oriented vector
+
+00:05:52.912 --> 00:05:53.252
+angle.
+
+00:05:53.932 --> 00:05:58.592
+For the smaller angle between unoriented lines, take the absolute value of the
+
+00:05:58.592 --> 00:06:01.072
+dot product before dividing by the two lengths.
+
+00:06:01.752 --> 00:06:06.012
+This chooses an angle between zero and pi over two and makes the result
+
+00:06:06.012 --> 00:06:08.052
+independent of reversing either direction.
+
+00:06:08.052 --> 00:06:13.752
+Two intersecting lines through the origin with directions one, zero, zero and
+
+00:06:13.752 --> 00:06:18.352
+one, one, zero have dot product one and lengths one and square root of two.
+
+00:06:18.872 --> 00:06:20.912
+Their smaller angle is pi over four.
+
+00:06:21.572 --> 00:06:26.252
+A zero dot product gives perpendicular directions, while proportional nonzero
+
+00:06:26.252 --> 00:06:28.252
+directions give a smaller angle of zero.
+
+00:06:29.072 --> 00:06:32.252
+Check that both triples are nonzero before using the formula.
+
+00:06:32.252 --> 00:06:37.632
+If a question specifically asks for intersecting lines, also verify they share
+
+00:06:37.632 --> 00:06:41.912
+a point; a dot product alone does not establish an intersection in space.
+
+00:06:42.972 --> 00:06:46.912
+Skew lines can have perpendicular direction vectors without meeting, so a
+
+00:06:46.912 --> 00:06:50.692
+direction calculation and a position calculation answer different questions.
+
+00:06:51.624 --> 00:06:57.464
+A line through point A with nonzero direction d has vector equation r equal to
+
+00:06:57.464 --> 00:07:00.164
+A plus t d, with real parameter t.
+
+00:07:01.004 --> 00:07:05.424
+This is compact notation for three parametric coordinate equations using the
+
+00:07:05.424 --> 00:07:05.944
+same t.
+
+00:07:06.744 --> 00:07:11.224
+Through one, two, three with direction two, negative one, four, they are x
+
+00:07:11.224 --> 00:07:16.914
+equal to one plus two t, y equal to two minus t and z equal to three plus four
+
+00:07:16.914 --> 00:07:17.464
+t.
+
+00:07:17.464 --> 00:07:20.544
+At t equal to two the point is five, zero, eleven.
+
+00:07:21.424 --> 00:07:24.324
+Substitution into all three equations verifies membership.
+
+00:07:25.144 --> 00:07:28.275
+A candidate point must give the same parameter in every coordinate that
+
+00:07:28.275 --> 00:07:28.584
+varies;
+
+00:07:29.404 --> 00:07:32.516
+using a separate parameter for each coordinate would describe a larger set
+
+00:07:32.516 --> 00:07:32.684
+than
+
+00:07:32.684 --> 00:07:33.544
+the intended line.
+
+00:07:34.344 --> 00:07:37.741
+The parameter is not generally distance travelled, because the direction
+
+00:07:37.741 --> 00:07:38.024
+vector
+
+00:07:38.024 --> 00:07:39.284
+may not be a unit vector.
+
+00:07:40.164 --> 00:07:44.504
+Here a change of one in t moves a distance square root of twenty one.
+
+00:07:44.504 --> 00:07:49.464
+Replacing d by a nonzero scalar multiple simply rescales the parameter, so
+
+00:07:49.464 --> 00:07:52.444
+different looking parametric equations can describe the same line.
+
+00:07:53.364 --> 00:07:56.664
+The base point A can also be replaced by any other point on that line.
+
+00:07:57.024 --> 00:08:01.348
+Eliminating the common parameter from a line's three coordinate equations
+
+00:08:01.348 --> 00:08:01.644
+gives
+
+00:08:01.644 --> 00:08:06.624
+symmetric form when the direction components used as denominators are nonzero.
+
+00:08:06.624 --> 00:08:12.284
+Through one, two, three with ratios two, negative one, four, write x minus one
+
+00:08:12.284 --> 00:08:17.624
+over two equal to y minus two over negative one equal to z minus three over
+
+00:08:17.624 --> 00:08:18.204
+four.
+
+00:08:18.644 --> 00:08:21.644
+Every displayed quotient represents the same parameter.
+
+00:08:22.124 --> 00:08:26.184
+A zero direction component must be handled as a constant coordinate equation,
+
+00:08:26.184 --> 00:08:27.904
+not as division by zero.
+
+00:08:28.864 --> 00:08:32.851
+For direction zero, two, negative one through the same base point, keep x
+
+00:08:32.851 --> 00:08:33.124
+equal
+
+00:08:33.124 --> 00:08:37.773
+to one and write y minus two over two equal to z minus three over negative
+
+00:08:37.773 --> 00:08:38.024
+one.
+
+00:08:38.704 --> 00:08:42.764
+If two direction components are zero, two coordinates stay constant and the
+
+00:08:42.764 --> 00:08:44.164
+remaining coordinate varies freely.
+
+00:08:45.064 --> 00:08:48.904
+A denominator in symmetric form is a direction ratio, not an intercept.
+
+00:08:50.104 --> 00:08:53.964
+Multiplying all three denominators by the same nonzero constant preserves the
+
+00:08:53.964 --> 00:08:57.504
+line, while changing only one generally changes its direction.
+
+00:08:58.344 --> 00:09:02.124
+When checking a candidate point, retain the constant coordinate conditions as
+
+00:09:02.124 --> 00:09:06.184
+well as the equal ratios, since omitting one condition can introduce points
+
+00:09:06.184 --> 00:09:06.884
+outside the line.
+
+00:09:07.824 --> 00:09:10.424
+Two distinct points determine a line in space.
+
+00:09:11.184 --> 00:09:14.604
+Subtract their coordinates to obtain a nonzero direction and use one point as
+
+00:09:14.604 --> 00:09:14.964
+the base.
+
+00:09:15.444 --> 00:09:20.964
+For A at one, zero, two and B at three, four, zero, the displacement B minus A
+
+00:09:20.964 --> 00:09:22.864
+is two, four, negative two.
+
+00:09:23.204 --> 00:09:27.004
+The vector equation is r equal to A plus t times that displacement.
+
+00:09:27.684 --> 00:09:33.644
+Thus x equals one plus two t, y equals four t and z equals two minus two t.
+
+00:09:33.644 --> 00:09:38.104
+Parameter zero returns A, parameter one returns B, and one half gives the
+
+00:09:38.104 --> 00:09:39.804
+midpoint two, two, one.
+
+00:09:40.484 --> 00:09:43.764
+Restricting t to the closed interval zero through one gives the segment;
+
+00:09:44.524 --> 00:09:46.324
+allowing every real t gives the whole line.
+
+00:09:47.184 --> 00:09:50.864
+Direction ratios can be reduced to one, two, negative one, but then the
+
+00:09:50.864 --> 00:09:54.444
+parameter values at the endpoints change unless the parameter is rescaled.
+
+00:09:54.864 --> 00:09:59.034
+A third point is collinear with A and B exactly when its displacement from A
+
+00:09:59.034 --> 00:09:59.144
+is
+
+00:09:59.144 --> 00:10:01.004
+a scalar multiple of B minus A.
+
+00:10:01.584 --> 00:10:05.184
+Coincident endpoints have zero displacement and do not determine a unique
+
+00:10:05.184 --> 00:10:08.704
+direction, so the distinctness check is necessary before writing this
+
+00:10:08.704 --> 00:10:09.064
+construction.
+
+00:10:09.936 --> 00:10:15.196
+Two lines in space can intersect, be distinct and parallel, coincide, or be
+
+00:10:15.196 --> 00:10:15.336
+skew.
+
+00:10:16.256 --> 00:10:20.316
+Skew means they are neither parallel nor intersecting, so they do not lie in a
+
+00:10:20.316 --> 00:10:20.596
+common plane.
+
+00:10:21.396 --> 00:10:26.896
+To test an intersection of parameter equations A plus t d one and B plus s d
+
+00:10:26.896 --> 00:10:31.136
+two, use independent parameters t and s and equate all three coordinates.
+
+00:10:31.676 --> 00:10:34.676
+A solution must satisfy all three equations at once.
+
+00:10:35.656 --> 00:10:38.696
+Solving two and ignoring a contradiction in the third gives a false
+
+00:10:38.696 --> 00:10:39.236
+intersection.
+
+00:10:40.216 --> 00:10:45.516
+For line one given by t, zero, zero and line two given by s, two, s plus one,
+
+00:10:46.016 --> 00:10:48.116
+the y coordinates are always zero and two.
+
+00:10:48.736 --> 00:10:53.156
+They cannot meet, and their directions one, zero, zero and one, zero, one are
+
+00:10:53.156 --> 00:10:55.476
+not proportional, so they are skew.
+
+00:10:55.936 --> 00:11:00.184
+By contrast, two proportional directions require a position test: if a point
+
+00:11:00.184 --> 00:11:00.296
+of
+
+00:11:00.296 --> 00:11:04.536
+one line lies on the other, they coincide; otherwise they are distinct and
+
+00:11:04.536 --> 00:11:04.836
+parallel.
+
+00:11:05.796 --> 00:11:10.843
+The equations t, zero, zero and two plus s, zero, zero describe the same x
+
+00:11:10.843 --> 00:11:11.116
+axis
+
+00:11:11.576 --> 00:11:12.756
+despite their different base points.
+
+00:11:13.636 --> 00:11:17.476
+Unlike the plane case, nonparallel lines in three dimensions need not
+
+00:11:17.476 --> 00:11:17.896
+intersect.
+
+00:11:18.096 --> 00:11:22.876
+The closest point H on a line to a given point P is its perpendicular foot.
+
+00:11:23.456 --> 00:11:29.196
+If the line is A plus t d, write H in that form and require the displacement P
+
+00:11:29.196 --> 00:11:31.636
+minus H to have zero dot product with d.
+
+00:11:32.616 --> 00:11:36.716
+Solving gives the foot parameter t zero equal to the dot product of P minus A
+
+00:11:36.716 --> 00:11:38.576
+with d, divided by d dot d.
+
+00:11:38.876 --> 00:11:41.776
+The denominator is positive because d is nonzero.
+
+00:11:42.316 --> 00:11:47.256
+For P at two, three, four and the x axis given by t, zero, zero, the foot is
+
+00:11:47.256 --> 00:11:48.236
+two, zero, zero.
+
+00:11:48.856 --> 00:11:52.836
+The connecting displacement is zero, three, four, whose dot product with the x
+
+00:11:52.836 --> 00:11:53.576
+direction is zero.
+
+00:11:54.016 --> 00:11:54.976
+Its length is five.
+
+00:11:55.516 --> 00:11:59.196
+If P already lies on the line, the foot is P and the distance is zero.
+
+00:11:59.776 --> 00:12:03.996
+The vector formula using the cross product length of P minus A with d divided
+
+00:12:03.996 --> 00:12:06.196
+by the length of d gives the same distance.
+
+00:12:06.516 --> 00:12:10.316
+The projection method also supplies the actual foot coordinates, which a
+
+00:12:10.316 --> 00:12:11.396
+distance alone does not provide.
+
+00:12:12.776 --> 00:12:16.976
+Verify both line membership of H and perpendicularity of P minus H before
+
+00:12:16.976 --> 00:12:17.796
+reporting the result.
+
+00:12:18.048 --> 00:12:22.748
+For two nonparallel lines, their direction cross product is nonzero and
+
+00:12:22.748 --> 00:12:24.268
+perpendicular to both directions.
+
+00:12:25.308 --> 00:12:29.068
+Project the displacement between any chosen base points onto this common
+
+00:12:29.068 --> 00:12:29.408
+normal.
+
+00:12:30.028 --> 00:12:34.766
+The absolute scalar projection gives the shortest distance: absolute value of
+
+00:12:34.766 --> 00:12:34.828
+B
+
+00:12:34.828 --> 00:12:39.728
+minus A dotted with d one cross d two, divided by the length of that cross
+
+00:12:39.728 --> 00:12:40.048
+product.
+
+00:12:40.428 --> 00:12:46.268
+The cross product of triples a, b, c and p, q, r has components b r minus c
+
+00:12:46.268 --> 00:12:50.548
+q, c p minus a r, and a q minus b p.
+
+00:12:50.548 --> 00:12:55.688
+For line one t, zero, zero and line two s, two, s plus one, choose base points
+
+00:12:55.688 --> 00:12:58.508
+zero, zero, zero and zero, two, one.
+
+00:12:58.708 --> 00:13:02.208
+The directions are one, zero, zero and one, zero, one.
+
+00:13:02.808 --> 00:13:05.408
+Their cross product is zero, negative one, zero.
+
+00:13:05.788 --> 00:13:09.828
+The numerator is absolute negative two, so the shortest distance is two.
+
+00:13:10.428 --> 00:13:14.368
+The expression is independent of the chosen base points and nonzero direction
+
+00:13:14.368 --> 00:13:14.728
+scales.
+
+00:13:15.528 --> 00:13:19.568
+A zero numerator for nonparallel lines means they are coplanar and intersect.
+
+00:13:20.488 --> 00:13:22.656
+Parallel directions make the cross product zero, so this formula must not be
+
+00:13:22.656 --> 00:13:22.848
+used in that case.
+
+00:13:22.848 --> 00:13:27.028
+A shortest distance value does not by itself give the line carrying the
+
+00:13:27.028 --> 00:13:27.368
+shortest segment.
+
+00:13:28.248 --> 00:13:32.648
+To find the common perpendicular of two skew lines, let P be a parameter point
+
+00:13:32.648 --> 00:13:35.308
+on the first and Q a parameter point on the second.
+
+00:13:36.068 --> 00:13:39.488
+Require Q minus P to be perpendicular to both direction vectors.
+
+00:13:40.268 --> 00:13:42.728
+This gives two linear equations for the two parameters.
+
+00:13:43.588 --> 00:13:48.090
+For the lines t, zero, zero and s, two, s plus one, the connecting
+
+00:13:48.090 --> 00:13:48.908
+displacement
+
+00:13:48.908 --> 00:13:51.568
+is s minus t, two, s plus one.
+
+00:13:51.568 --> 00:13:56.148
+Its dot product with one, zero, zero gives s minus t equal to zero.
+
+00:13:56.908 --> 00:14:01.045
+Its dot product with one, zero, one gives two s minus t plus one equal to
+
+00:14:01.045 --> 00:14:01.328
+zero.
+
+00:14:02.128 --> 00:14:04.188
+Hence t and s both equal negative one.
+
+00:14:04.828 --> 00:14:09.188
+The closest points are negative one, zero, zero and negative one, two, zero.
+
+00:14:09.788 --> 00:14:14.308
+The common perpendicular has equation r equal to negative one, u, zero, with
+
+00:14:14.308 --> 00:14:18.668
+real u, or equivalently x equal to negative one and z equal to zero.
+
+00:14:18.668 --> 00:14:22.008
+The segment from u zero to u two has length two.
+
+00:14:23.068 --> 00:14:26.488
+Verify that the line meets both original lines and that its direction is
+
+00:14:26.488 --> 00:14:30.568
+perpendicular to each; those checks establish the geometry as well as the
+
+00:14:30.568 --> 00:14:30.648
+algebra.
+
+00:14:30.912 --> 00:14:36.372
+For parallel lines, the two direction vectors have zero cross product, so the
+
+00:14:36.372 --> 00:14:39.812
+nonparallel shortest distance formula has a zero denominator.
+
+00:14:40.772 --> 00:14:45.882
+Instead, use any nonzero common direction d and remove the component of B
+
+00:14:45.882 --> 00:14:46.232
+minus
+
+00:14:46.232 --> 00:14:47.072
+A along it.
+
+00:14:47.692 --> 00:14:50.192
+The perpendicular component length is the distance.
+
+00:14:50.852 --> 00:14:55.772
+Equivalently, take the length of B minus A cross d and divide by the length of
+
+00:14:55.772 --> 00:14:55.992
+d.
+
+00:14:56.582 --> 00:15:01.365
+For the x axis t, zero, zero and the parallel line s, three, four, the
+
+00:15:01.365 --> 00:15:01.912
+shortest
+
+00:15:01.912 --> 00:15:06.512
+connecting displacement is zero, three, four, giving distance five.
+
+00:15:07.472 --> 00:15:11.032
+There are infinitely many perpendicular joining segments of this same length,
+
+00:15:11.912 --> 00:15:16.272
+one at each matching x coordinate, rather than the unique common perpendicular
+
+00:15:16.272 --> 00:15:17.492
+found for skew lines.
+
+00:15:18.112 --> 00:15:23.132
+If the base displacement is itself parallel to d, the two lines coincide and
+
+00:15:23.132 --> 00:15:24.232
+the distance is zero.
+
+00:15:24.992 --> 00:15:28.932
+Always classify the directions first, then check location.
+
+00:15:28.932 --> 00:15:33.712
+Nonparallel intersecting lines have distance zero but are not coincident.
+
+00:15:34.452 --> 00:15:38.892
+A valid final answer should state which case applies, the distance, and any
+
+00:15:38.892 --> 00:15:42.472
+closest points or common perpendicular equation the question requests.
+
+00:15:43.732 --> 00:15:47.172
+Keep point membership and zero direction exclusions in that final check.
