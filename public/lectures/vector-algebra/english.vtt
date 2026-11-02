@@ -1,0 +1,877 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.620
+A scalar is described by a numerical magnitude with its relevant unit, while a
+
+00:00:05.620 --> 00:00:06.760
+vector also carries direction.
+
+00:00:08.040 --> 00:00:10.120
+Mass and elapsed time are scalar examples.
+
+00:00:11.240 --> 00:00:13.420
+Displacement and force are vector examples.
+
+00:00:14.360 --> 00:00:18.721
+A vector is often drawn as an arrow whose length represents magnitude and
+
+00:00:18.721 --> 00:00:19.020
+whose
+
+00:00:19.020 --> 00:00:20.760
+orientation represents direction.
+
+00:00:21.380 --> 00:00:26.100
+In this algebra class we use free vectors, so translating an arrow without
+
+00:00:26.100 --> 00:00:28.810
+rotating or changing its length preserves the vector.
+
+00:00:29.970 --> 00:00:33.170
+Equal free vectors have identical components in the same coordinate system.
+
+00:00:34.270 --> 00:00:38.366
+Opposite vectors have equal magnitude and reversed direction; adding one to
+
+00:00:38.366 --> 00:00:38.530
+its
+
+00:00:38.530 --> 00:00:40.050
+opposite gives the zero vector.
+
+00:00:41.030 --> 00:00:45.210
+The zero vector has magnitude zero and every component zero, but no unique
+
+00:00:45.210 --> 00:00:47.250
+direction or associated unit direction.
+
+00:00:48.350 --> 00:00:52.210
+Equal magnitudes alone do not make two vectors equal: eastward and northward
+
+00:00:52.210 --> 00:00:54.510
+displacements of the same length are different vectors.
+
+00:00:54.890 --> 00:00:59.130
+A position vector depends on the chosen origin, while a displacement between
+
+00:00:59.130 --> 00:01:00.970
+two fixed points is their difference.
+
+00:01:01.770 --> 00:01:05.019
+Keep the distinction between a vector and its nonnegative magnitude in
+
+00:01:05.019 --> 00:01:05.390
+notation
+
+00:01:05.390 --> 00:01:06.430
+and in calculations.
+
+00:01:07.370 --> 00:01:10.810
+A signed component can be negative without making the vector's magnitude
+
+00:01:10.810 --> 00:01:11.210
+negative.
+
+00:01:11.568 --> 00:01:16.288
+An orthonormal Cartesian basis has three mutually perpendicular unit vectors,
+
+00:01:16.988 --> 00:01:18.528
+conventionally called i, j and k.
+
+00:01:19.308 --> 00:01:23.632
+A space vector is written as its x component times i plus its y component
+
+00:01:23.632 --> 00:01:23.928
+times
+
+00:01:23.928 --> 00:01:26.148
+j plus its z component times k.
+
+00:01:26.728 --> 00:01:31.368
+A vector in the x y plane has z component zero and can be recorded using only
+
+00:01:31.368 --> 00:01:32.388
+its first two components.
+
+00:01:33.428 --> 00:01:38.008
+Its magnitude follows from the Pythagorean theorem: square the components, add
+
+00:01:38.008 --> 00:01:39.368
+and take the nonnegative root.
+
+00:01:40.128 --> 00:01:44.328
+The vector three, four, zero has length five, while two, negative one, two has
+
+00:01:44.328 --> 00:01:45.068
+length three.
+
+00:01:45.988 --> 00:01:50.368
+Components are signed scalar coefficients, so a negative y coefficient points
+
+00:01:50.368 --> 00:01:52.708
+opposite to the positive y basis direction.
+
+00:01:53.668 --> 00:01:57.988
+The magnitude formula assumes perpendicular unit axes; it cannot be copied
+
+00:01:57.988 --> 00:02:00.748
+unchanged to an arbitrary nonorthogonal basis.
+
+00:02:01.968 --> 00:02:05.353
+Vectors are equal precisely when corresponding components in the same basis
+
+00:02:05.353 --> 00:02:05.488
+are
+
+00:02:05.488 --> 00:02:06.008
+equal.
+
+00:02:06.848 --> 00:02:10.188
+Write a zero component explicitly when it helps avoid confusing a plane vector
+
+00:02:10.188 --> 00:02:11.608
+with a different space vector.
+
+00:02:12.468 --> 00:02:16.108
+A point's coordinate triple and a vector's component triple may use the same
+
+00:02:16.108 --> 00:02:19.228
+numbers, but their geometric roles should still be identified.
+
+00:02:19.488 --> 00:02:22.348
+Vector addition describes a combined displacement.
+
+00:02:23.068 --> 00:02:27.141
+In the triangle construction, translate the second vector so its tail starts
+
+00:02:27.141 --> 00:02:27.248
+at
+
+00:02:27.248 --> 00:02:31.128
+the head of the first; the resultant runs from the first tail to the final
+
+00:02:31.128 --> 00:02:31.408
+head.
+
+00:02:32.168 --> 00:02:36.768
+In the parallelogram construction, place both tails together and use the
+
+00:02:36.768 --> 00:02:37.928
+diagonal from that common tail.
+
+00:02:38.608 --> 00:02:40.668
+These two constructions give the same vector.
+
+00:02:41.508 --> 00:02:43.888
+Algebraically, add corresponding components.
+
+00:02:44.228 --> 00:02:50.028
+For u equal to three, zero, zero and v equal to zero, four, zero, the sum is
+
+00:02:50.028 --> 00:02:53.248
+three, four, zero, whose magnitude is five.
+
+00:02:54.108 --> 00:02:57.768
+Adding the two magnitudes would instead give seven, which is not the resultant
+
+00:02:57.768 --> 00:02:59.588
+length because the directions differ.
+
+00:03:00.488 --> 00:03:04.888
+Vector addition is commutative and associative, so the order and grouping of a
+
+00:03:04.888 --> 00:03:06.288
+sum do not change its result.
+
+00:03:07.008 --> 00:03:08.588
+The zero vector is its identity.
+
+00:03:09.068 --> 00:03:13.428
+For a closed polygon of successive displacements returning to its start, the
+
+00:03:13.428 --> 00:03:17.248
+vector sum is zero even though the total distance travelled can be positive.
+
+00:03:18.068 --> 00:03:22.049
+The resultant magnitude lies between the absolute difference and the sum of
+
+00:03:22.049 --> 00:03:22.208
+the
+
+00:03:22.208 --> 00:03:23.208
+two input magnitudes.
+
+00:03:23.828 --> 00:03:26.608
+The endpoint cases correspond to collinear directions.
+
+00:03:26.952 --> 00:03:29.732
+Subtraction means adding the opposite vector.
+
+00:03:30.612 --> 00:03:35.445
+If u is two, negative one, three and v is negative one, four, one, their sum
+
+00:03:35.445 --> 00:03:35.572
+is
+
+00:03:35.572 --> 00:03:36.512
+one, three, four.
+
+00:03:37.192 --> 00:03:40.432
+Their difference u minus v is three, negative five, two.
+
+00:03:41.312 --> 00:03:45.672
+Each subtraction acts on the entire corresponding component, so subtracting
+
+00:03:45.672 --> 00:03:47.232
+negative one adds one.
+
+00:03:48.272 --> 00:03:52.272
+Reversing the order gives v minus u equal to negative three, five, negative
+
+00:03:52.272 --> 00:03:54.432
+two, the opposite of the first difference.
+
+00:03:55.052 --> 00:03:57.072
+Subtraction is therefore not commutative.
+
+00:03:57.952 --> 00:04:02.415
+If u and v are drawn from a common tail, u minus v points from the head of v
+
+00:04:02.415 --> 00:04:02.532
+to
+
+00:04:02.532 --> 00:04:03.152
+the head of u.
+
+00:04:03.812 --> 00:04:06.852
+This picture helps verify the order of a displacement calculation.
+
+00:04:07.992 --> 00:04:11.732
+The magnitude of a difference is unchanged when its sign is reversed, even
+
+00:04:11.732 --> 00:04:13.592
+though the vector itself changes direction.
+
+00:04:14.092 --> 00:04:18.712
+The identity u minus u equal to the zero vector holds component by component.
+
+00:04:19.512 --> 00:04:22.932
+Keep brackets around a vector being subtracted or multiplied by a negative
+
+00:04:22.932 --> 00:04:25.452
+scalar so every component receives the sign.
+
+00:04:26.452 --> 00:04:30.132
+A component check is often the quickest way to catch an arrow drawn in the
+
+00:04:30.132 --> 00:04:30.652
+wrong direction.
+
+00:04:30.960 --> 00:04:35.639
+Multiplying a vector by a real scalar multiplies each component by that
+
+00:04:35.639 --> 00:04:36.100
+scalar.
+
+00:04:36.840 --> 00:04:40.220
+Its magnitude is multiplied by the absolute value of the scalar.
+
+00:04:40.880 --> 00:04:45.880
+A positive scalar preserves direction, a negative scalar reverses it, and zero
+
+00:04:45.880 --> 00:04:47.140
+gives the zero vector.
+
+00:04:47.860 --> 00:04:52.060
+For u equal to two, negative one, two, the length is three.
+
+00:04:52.880 --> 00:04:57.460
+Multiplication by negative two gives negative four, two, negative four, with
+
+00:04:57.460 --> 00:04:58.380
+magnitude six.
+
+00:04:58.780 --> 00:05:02.842
+To construct the unit vector in the direction of a nonzero u, divide the
+
+00:05:02.842 --> 00:05:03.180
+vector
+
+00:05:03.180 --> 00:05:04.560
+by its positive magnitude.
+
+00:05:05.420 --> 00:05:08.880
+Here the answer is two thirds, negative one third, two thirds.
+
+00:05:09.520 --> 00:05:13.680
+Its squared component sum is one and it has the same orientation as u.
+
+00:05:14.200 --> 00:05:16.340
+The opposite unit vector is its negative.
+
+00:05:16.920 --> 00:05:21.560
+A requested vector of length L in the direction of u is L times this unit
+
+00:05:21.560 --> 00:05:23.340
+vector, for nonnegative L.
+
+00:05:23.940 --> 00:05:28.480
+Normalizing the zero vector is undefined because its length is zero and it has
+
+00:05:28.480 --> 00:05:29.600
+no unique direction.
+
+00:05:30.720 --> 00:05:34.320
+Scalar multiplication distributes over vector sums, and vector addition
+
+00:05:34.320 --> 00:05:36.560
+distributes over sums of scalar coefficients.
+
+00:05:37.300 --> 00:05:41.277
+These laws make component calculations consistent with the geometric scaling
+
+00:05:41.277 --> 00:05:41.800
+of arrows.
+
+00:05:42.120 --> 00:05:46.840
+With a chosen origin, let a and b be the position vectors of points A and B.
+
+00:05:47.380 --> 00:05:51.100
+The displacement from A to B is b minus a, not their sum.
+
+00:05:51.940 --> 00:05:56.740
+For A at one, negative one, two and B at four, five, negative one, the
+
+00:05:56.740 --> 00:05:58.720
+displacement is three, six, negative three.
+
+00:05:59.920 --> 00:06:04.020
+Changing the origin changes both position vectors by the same translation, so
+
+00:06:04.020 --> 00:06:05.500
+their difference remains unchanged.
+
+00:06:06.580 --> 00:06:09.240
+Position vectors also express the internal section formula.
+
+00:06:09.800 --> 00:06:15.780
+If A P to P B is m to n with positive m and n, the position of P is n a
+
+00:06:15.780 --> 00:06:18.040
+plus m b divided by m plus n.
+
+00:06:18.700 --> 00:06:24.080
+For ratio one to two, this gives two a plus b divided by three, or P at two,
+
+00:06:24.260 --> 00:06:25.160
+one, one in this example.
+
+00:06:25.820 --> 00:06:30.320
+The displacement A P is one third of A B, so its length is half of P B as
+
+00:06:30.320 --> 00:06:30.680
+required.
+
+00:06:31.400 --> 00:06:34.360
+Equal weights give the midpoint, five halves, two, one half.
+
+00:06:34.760 --> 00:06:37.360
+The same vector reasoning works in two and three dimensions.
+
+00:06:37.920 --> 00:06:41.740
+Verify the ratio and collinearity together; a point with a matching distance
+
+00:06:41.740 --> 00:06:44.220
+ratio alone need not lie on the endpoint line.
+
+00:06:44.424 --> 00:06:47.664
+A linear combination scales vectors and adds the results.
+
+00:06:48.204 --> 00:06:53.424
+To express w equal to three, two as alpha times u equal to one, zero plus beta
+
+00:06:53.424 --> 00:06:56.084
+times v equal to one, one, compare components.
+
+00:06:56.544 --> 00:07:01.104
+The y equation gives beta equal to two, and the x equation then gives alpha
+
+00:07:01.104 --> 00:07:01.924
+equal to one.
+
+00:07:02.564 --> 00:07:06.564
+Since these two input vectors are nonparallel, the representation of every
+
+00:07:06.564 --> 00:07:08.224
+plane vector in their span is unique.
+
+00:07:08.684 --> 00:07:12.404
+If the input vectors are parallel, there may be no representation of a
+
+00:07:12.404 --> 00:07:16.424
+particular target or multiple representations, so do not assume uniqueness
+
+00:07:16.424 --> 00:07:17.724
+without checking directions.
+
+00:07:18.524 --> 00:07:22.284
+Two nonzero vectors are parallel when one is a scalar multiple of the other.
+
+00:07:23.124 --> 00:07:27.924
+Thus two, negative one, two and negative four, two, negative four are parallel
+
+00:07:27.924 --> 00:07:29.224
+with opposite orientation.
+
+00:07:30.124 --> 00:07:35.474
+Collinearity of points A, B and C is tested using the displacements A B and A
+
+00:07:35.474 --> 00:07:37.644
+C, rather than their position vectors alone.
+
+00:07:38.084 --> 00:07:42.504
+The zero vector is algebraically a multiple of every vector but has no unique
+
+00:07:42.504 --> 00:07:42.944
+direction.
+
+00:07:43.804 --> 00:07:47.017
+Handle that case explicitly when a question speaks about an angle or a
+
+00:07:47.017 --> 00:07:47.384
+parallel
+
+00:07:47.384 --> 00:07:47.764
+direction.
+
+00:07:48.144 --> 00:07:52.544
+The scalar product, or dot product, multiplies corresponding components and
+
+00:07:52.544 --> 00:07:53.624
+adds them to give a scalar.
+
+00:07:54.204 --> 00:07:58.081
+For nonzero vectors it also equals the product of their magnitudes times
+
+00:07:58.081 --> 00:07:58.404
+cosine
+
+00:07:58.404 --> 00:08:01.904
+of their angle, where the vector angle ranges from zero to pi.
+
+00:08:02.724 --> 00:08:07.204
+The vectors one, one, zero and one, negative one, zero have dot product zero
+
+00:08:07.524 --> 00:08:08.224
+and are perpendicular.
+
+00:08:09.004 --> 00:08:13.304
+For one, zero, zero and negative one, one, zero, the dot product is negative
+
+00:08:13.304 --> 00:08:16.204
+one and the product of lengths is square root of two.
+
+00:08:16.664 --> 00:08:21.444
+Their cosine is negative one over square root of two, giving angle three pi
+
+00:08:21.444 --> 00:08:22.084
+over four.
+
+00:08:22.784 --> 00:08:24.504
+Keep the sign when finding a vector angle.
+
+00:08:25.424 --> 00:08:28.724
+Taking an absolute value would instead give the smaller angle between the
+
+00:08:28.724 --> 00:08:31.224
+unoriented supporting lines, a different question.
+
+00:08:31.984 --> 00:08:36.364
+A positive dot product indicates an acute vector angle, a negative one an
+
+00:08:36.364 --> 00:08:40.504
+obtuse angle and zero a right angle, provided both vectors are nonzero.
+
+00:08:41.144 --> 00:08:45.064
+The dot product with the zero vector is zero but no vector angle with it is
+
+00:08:45.064 --> 00:08:45.324
+defined.
+
+00:08:45.904 --> 00:08:50.064
+Before using the angle formula, check both magnitudes are positive and the
+
+00:08:50.064 --> 00:08:52.784
+normalized result lies between negative one and one.
+
+00:08:53.064 --> 00:08:56.484
+The dot product is commutative and distributes over addition.
+
+00:08:57.084 --> 00:09:00.404
+In particular, u dotted with itself equals its squared magnitude.
+
+00:09:01.244 --> 00:09:05.664
+Expanding the dot product of u plus v with itself gives the squared resultant
+
+00:09:05.664 --> 00:09:10.184
+length as magnitude u squared plus magnitude v squared plus twice u dot v.
+
+00:09:10.684 --> 00:09:13.804
+The difference formula has a minus sign before that last term.
+
+00:09:14.404 --> 00:09:18.596
+If the magnitudes are three and four and the vector angle is pi over three,
+
+00:09:18.596 --> 00:09:18.764
+the
+
+00:09:18.764 --> 00:09:19.824
+dot product is six.
+
+00:09:20.244 --> 00:09:23.944
+The sum has squared length thirty seven, while the difference has squared
+
+00:09:23.944 --> 00:09:25.324
+length thirteen.
+
+00:09:25.324 --> 00:09:29.924
+Their squared lengths add to fifty, twice the sum of nine and sixteen,
+
+00:09:29.924 --> 00:09:31.024
+illustrating the parallelogram law.
+
+00:09:31.764 --> 00:09:36.464
+Another expansion gives u plus v dotted with u minus v equal to magnitude u
+
+00:09:36.464 --> 00:09:39.784
+squared minus magnitude v squared because the mixed terms cancel.
+
+00:09:40.624 --> 00:09:44.124
+Equal length input vectors therefore produce perpendicular sum and difference
+
+00:09:44.124 --> 00:09:47.244
+when those two resulting vectors are both nonzero.
+
+00:09:47.244 --> 00:09:51.840
+If either result is zero, the dot identity still holds but a right angle is
+
+00:09:51.840 --> 00:09:52.024
+not
+
+00:09:52.024 --> 00:09:52.364
+defined.
+
+00:09:53.264 --> 00:09:57.244
+Expand first and then apply the relevant angle or magnitude condition, rather
+
+00:09:57.244 --> 00:10:00.864
+than treating dot products as ordinary products of lengths in every situation.
+
+00:10:01.176 --> 00:10:05.161
+Projection separates the part of a vector along a chosen nonzero direction
+
+00:10:05.161 --> 00:10:05.376
+from
+
+00:10:05.376 --> 00:10:06.496
+the perpendicular remainder.
+
+00:10:07.396 --> 00:10:12.216
+The signed scalar projection of u on v is u dot v divided by magnitude v.
+
+00:10:13.176 --> 00:10:18.176
+The vector projection is u dot v divided by magnitude v squared, multiplied by
+
+00:10:18.176 --> 00:10:18.556
+v.
+
+00:10:19.436 --> 00:10:24.156
+For u equal to three, four, zero and v equal to one, zero, zero, the scalar
+
+00:10:24.156 --> 00:10:27.816
+projection is three and the projected vector is three, zero, zero.
+
+00:10:28.256 --> 00:10:32.156
+The remaining vector zero, four, zero is perpendicular to v.
+
+00:10:33.576 --> 00:10:37.296
+Reversing v reverses the sign of the scalar projection because the oriented
+
+00:10:37.296 --> 00:10:38.576
+measuring direction changes.
+
+00:10:39.336 --> 00:10:43.096
+The vector projection onto the same axis is unchanged because both its
+
+00:10:43.096 --> 00:10:45.536
+coefficient and the direction vector reverse.
+
+00:10:46.476 --> 00:10:50.356
+Thus a scalar projection, a projection length and a projected vector are
+
+00:10:50.356 --> 00:10:51.836
+related but different objects.
+
+00:10:52.436 --> 00:10:56.436
+The nonnegative projection length is the absolute value of the signed scalar
+
+00:10:56.436 --> 00:10:56.916
+projection.
+
+00:10:57.976 --> 00:10:59.976
+Projection onto the zero vector is undefined.
+
+00:11:00.916 --> 00:11:04.956
+Check a computed vector projection by verifying that it is parallel to v and
+
+00:11:04.956 --> 00:11:08.296
+that subtracting it from u leaves a vector with zero dot product with v.
+
+00:11:09.384 --> 00:11:14.044
+The vector product, or cross product, of two space vectors is another vector
+
+00:11:14.044 --> 00:11:15.084
+perpendicular to both.
+
+00:11:15.744 --> 00:11:19.324
+Its direction follows the right hand rule in a right handed coordinate basis.
+
+00:11:20.024 --> 00:11:25.904
+The cyclic basis products i cross j equal k, j cross k equal i, and k
+
+00:11:25.904 --> 00:11:30.124
+cross i equal j are positive; reversing any order gives the negative.
+
+00:11:30.724 --> 00:11:35.524
+In components, the x component is u y times v z minus u z times v y.
+
+00:11:35.524 --> 00:11:40.424
+The y component is u z times v x minus u x times v z.
+
+00:11:40.424 --> 00:11:44.984
+The z component is u x times v y minus u y times v x.
+
+00:11:44.984 --> 00:11:49.524
+For u equal to one, two, three and v equal to two, negative one, one, these
+
+00:11:49.524 --> 00:11:51.484
+give five, five, negative five.
+
+00:11:52.224 --> 00:11:55.384
+Dotting the result with either original vector gives zero, checking
+
+00:11:55.384 --> 00:11:56.604
+perpendicularity.
+
+00:11:56.804 --> 00:12:00.664
+That check alone does not distinguish a vector from its negative, so also
+
+00:12:00.664 --> 00:12:02.884
+verify the chosen order and right hand sign.
+
+00:12:02.884 --> 00:12:07.424
+Unlike a dot product, a cross product has vector components rather than a
+
+00:12:07.424 --> 00:12:08.664
+single scalar value.
+
+00:12:09.364 --> 00:12:13.124
+Plane vectors can be embedded in three dimensions by adding zero z components
+
+00:12:13.124 --> 00:12:14.864
+before taking their cross product.
+
+00:12:15.096 --> 00:12:19.356
+The magnitude of the cross product equals the product of the input magnitudes
+
+00:12:19.356 --> 00:12:21.036
+times sine of their angle.
+
+00:12:21.776 --> 00:12:25.396
+Geometrically, this is the area of the parallelogram formed by the two vectors
+
+00:12:25.396 --> 00:12:26.436
+as adjacent sides.
+
+00:12:27.356 --> 00:12:30.056
+Half that magnitude is the corresponding triangle area.
+
+00:12:31.096 --> 00:12:36.476
+For three, zero, zero and zero, four, zero, the cross product is zero, zero,
+
+00:12:36.476 --> 00:12:41.156
+twelve, so the parallelogram area is twelve and the triangle area is six.
+
+00:12:41.156 --> 00:12:45.983
+A triangle from points A, B and C uses the two side displacements B minus A
+
+00:12:45.983 --> 00:12:46.176
+and
+
+00:12:46.176 --> 00:12:48.656
+C minus A, both starting at the same vertex.
+
+00:12:49.436 --> 00:12:53.336
+For A at one, zero, zero, B at three, zero, zero and C at one, three, zero,
+
+00:12:53.596 --> 00:12:57.356
+these side lengths are two and three at a right angle, giving triangle area
+
+00:12:57.356 --> 00:12:57.756
+three.
+
+00:12:58.416 --> 00:13:02.256
+A zero cross product for two nonzero vectors means the directions are parallel
+
+00:13:02.256 --> 00:13:02.976
+or opposite.
+
+00:13:03.696 --> 00:13:07.916
+If an input is zero, the product is also zero but its direction and angle need
+
+00:13:07.916 --> 00:13:08.876
+separate interpretation.
+
+00:13:08.876 --> 00:13:13.556
+Cross products distribute over vector sums and scalar multiples, but reversing
+
+00:13:13.556 --> 00:13:15.836
+the input order changes the sign.
+
+00:13:15.836 --> 00:13:19.356
+Area uses the magnitude, so it is nonnegative regardless of that orientation
+
+00:13:19.356 --> 00:13:19.716
+sign.
+
+00:13:19.944 --> 00:13:24.304
+A supporting application combines the two vector products into a scalar triple
+
+00:13:24.304 --> 00:13:24.704
+product.
+
+00:13:25.384 --> 00:13:27.724
+Write u dot the quantity v cross w.
+
+00:13:28.304 --> 00:13:32.704
+Its absolute value is the volume of the parallelepiped with edge vectors u, v
+
+00:13:32.784 --> 00:13:33.344
+and w.
+
+00:13:33.924 --> 00:13:38.804
+The sign records orientation, while geometric volume is nonnegative.
+
+00:13:38.804 --> 00:13:43.558
+With mutually perpendicular edges two, zero, zero; zero, three, zero; and
+
+00:13:43.558 --> 00:13:43.884
+zero,
+
+00:13:43.884 --> 00:13:46.724
+zero, four, the triple product is twenty four.
+
+00:13:46.724 --> 00:13:51.164
+The volume is twenty four cubic units, and the tetrahedron formed by those
+
+00:13:51.164 --> 00:13:55.084
+three edges from one vertex has one sixth of that volume, or four.
+
+00:13:55.624 --> 00:13:59.564
+A cyclic permutation of the three vectors preserves the triple product, while
+
+00:13:59.564 --> 00:14:01.444
+swapping two reverses its sign.
+
+00:14:02.024 --> 00:14:06.370
+A zero triple product means the three vectors are linearly dependent and lie
+
+00:14:06.370 --> 00:14:06.484
+in
+
+00:14:06.484 --> 00:14:10.044
+a common plane through their shared tail, including degenerate zero cases.
+
+00:14:10.584 --> 00:14:14.744
+To test four points for coplanarity, form three displacement vectors from one
+
+00:14:14.744 --> 00:14:18.284
+selected point rather than using three unrelated position vectors.
+
+00:14:19.064 --> 00:14:22.764
+These volume and coplanarity examples support the main scalar and vector
+
+00:14:22.764 --> 00:14:26.144
+product methods and the preceding 3D Geometry class.
+
+00:14:26.924 --> 00:14:30.404
+Retain brackets so the cross product is calculated before the final dot
+
+00:14:30.404 --> 00:14:30.764
+product.
+
+00:14:31.008 --> 00:14:34.928
+A mixed vector question is easier when the required geometric condition
+
+00:14:34.928 --> 00:14:36.028
+determines the operation.
+
+00:14:37.168 --> 00:14:38.748
+Equality uses corresponding components.
+
+00:14:39.628 --> 00:14:42.568
+A magnitude uses the square root of a self dot product.
+
+00:14:43.548 --> 00:14:47.608
+Perpendicular nonzero vectors have dot product zero, while parallel nonzero
+
+00:14:47.608 --> 00:14:50.748
+vectors have proportional components or zero cross product.
+
+00:14:51.248 --> 00:14:53.648
+An area uses a cross product magnitude.
+
+00:14:54.138 --> 00:14:58.668
+For u equal to one, two, negative one and v equal to two, k, four,
+
+00:14:59.408 --> 00:15:04.288
+perpendicularity gives two plus two k minus four equal to zero, so k equals
+
+00:15:04.288 --> 00:15:04.748
+one.
+
+00:15:05.648 --> 00:15:09.508
+Substituting that value restores a zero dot product and both vectors remain
+
+00:15:09.508 --> 00:15:10.008
+nonzero.
+
+00:15:10.848 --> 00:15:14.868
+Do not solve a dot product equation for a parameter and forget to check a
+
+00:15:14.868 --> 00:15:16.208
+condition that excludes the zero vector.
+
+00:15:16.948 --> 00:15:21.128
+Similarly, cancelling a possibly zero component in a proportionality equation
+
+00:15:21.128 --> 00:15:22.988
+can remove valid cases.
+
+00:15:23.828 --> 00:15:27.848
+Keep track of the type of each result: a sum and a cross product are vectors,
+
+00:15:28.368 --> 00:15:30.608
+whereas a magnitude and a dot product are scalars.
+
+00:15:31.088 --> 00:15:35.308
+A diagram can suggest a direction or sign, but component verification
+
+00:15:35.308 --> 00:15:36.968
+establishes the numerical answer.
+
+00:15:37.928 --> 00:15:41.148
+Final checks should include the original condition, any normalization
+
+00:15:41.148 --> 00:15:44.748
+denominator and the units of a geometric length, area or volume.

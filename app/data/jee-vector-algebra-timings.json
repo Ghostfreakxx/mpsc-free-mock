@@ -1,0 +1,1815 @@
+{
+  "duration": 944.8560000000232,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 71.56800000000182
+    },
+    {
+      "start": 71.56800000000182,
+      "end": 139.4880000000035
+    },
+    {
+      "start": 139.4880000000035,
+      "end": 206.95200000000517
+    },
+    {
+      "start": 206.95200000000517,
+      "end": 270.9600000000067
+    },
+    {
+      "start": 270.9600000000067,
+      "end": 342.1200000000085
+    },
+    {
+      "start": 342.1200000000085,
+      "end": 404.4240000000099
+    },
+    {
+      "start": 404.4240000000099,
+      "end": 468.14400000001143
+    },
+    {
+      "start": 468.14400000001143,
+      "end": 533.064000000013
+    },
+    {
+      "start": 533.064000000013,
+      "end": 601.1760000000147
+    },
+    {
+      "start": 601.1760000000147,
+      "end": 669.3840000000164
+    },
+    {
+      "start": 669.3840000000164,
+      "end": 735.096000000018
+    },
+    {
+      "start": 735.096000000018,
+      "end": 799.9440000000195
+    },
+    {
+      "start": 799.9440000000195,
+      "end": 871.0080000000213
+    },
+    {
+      "start": 871.0080000000213,
+      "end": 944.8560000000232
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 5.619999885559082,
+      "text": "A scalar is described by a numerical magnitude with its relevant unit, while a",
+      "chapter": 0
+    },
+    {
+      "start": 5.619999885559082,
+      "end": 6.760000228881836,
+      "text": "vector also carries direction.",
+      "chapter": 0
+    },
+    {
+      "start": 8.039999961853027,
+      "end": 10.119999885559082,
+      "text": "Mass and elapsed time are scalar examples.",
+      "chapter": 0
+    },
+    {
+      "start": 11.239999771118164,
+      "end": 13.420000076293945,
+      "text": "Displacement and force are vector examples.",
+      "chapter": 0
+    },
+    {
+      "start": 14.359999656677246,
+      "end": 18.72128245769403,
+      "text": "A vector is often drawn as an arrow whose length represents magnitude and",
+      "chapter": 0
+    },
+    {
+      "start": 18.72128245769403,
+      "end": 19.020000457763672,
+      "text": "whose",
+      "chapter": 0
+    },
+    {
+      "start": 19.020000457763672,
+      "end": 20.760000228881836,
+      "text": "orientation represents direction.",
+      "chapter": 0
+    },
+    {
+      "start": 21.3799991607666,
+      "end": 26.100000381469727,
+      "text": "In this algebra class we use free vectors, so translating an arrow without",
+      "chapter": 0
+    },
+    {
+      "start": 26.100000381469727,
+      "end": 28.809999465942383,
+      "text": "rotating or changing its length preserves the vector.",
+      "chapter": 0
+    },
+    {
+      "start": 29.969999313354492,
+      "end": 33.16999816894531,
+      "text": "Equal free vectors have identical components in the same coordinate system.",
+      "chapter": 0
+    },
+    {
+      "start": 34.27000045776367,
+      "end": 38.366152690007134,
+      "text": "Opposite vectors have equal magnitude and reversed direction; adding one to",
+      "chapter": 0
+    },
+    {
+      "start": 38.366152690007134,
+      "end": 38.529998779296875,
+      "text": "its",
+      "chapter": 0
+    },
+    {
+      "start": 38.529998779296875,
+      "end": 40.04999923706055,
+      "text": "opposite gives the zero vector.",
+      "chapter": 0
+    },
+    {
+      "start": 41.029998779296875,
+      "end": 45.209999084472656,
+      "text": "The zero vector has magnitude zero and every component zero, but no unique",
+      "chapter": 0
+    },
+    {
+      "start": 45.209999084472656,
+      "end": 47.25,
+      "text": "direction or associated unit direction.",
+      "chapter": 0
+    },
+    {
+      "start": 48.349998474121094,
+      "end": 52.209999084472656,
+      "text": "Equal magnitudes alone do not make two vectors equal: eastward and northward",
+      "chapter": 0
+    },
+    {
+      "start": 52.209999084472656,
+      "end": 54.5099983215332,
+      "text": "displacements of the same length are different vectors.",
+      "chapter": 0
+    },
+    {
+      "start": 54.88999938964844,
+      "end": 59.130001068115234,
+      "text": "A position vector depends on the chosen origin, while a displacement between",
+      "chapter": 0
+    },
+    {
+      "start": 59.130001068115234,
+      "end": 60.970001220703125,
+      "text": "two fixed points is their difference.",
+      "chapter": 0
+    },
+    {
+      "start": 61.77000045776367,
+      "end": 65.01871744791667,
+      "text": "Keep the distinction between a vector and its nonnegative magnitude in",
+      "chapter": 0
+    },
+    {
+      "start": 65.01871744791667,
+      "end": 65.38999938964844,
+      "text": "notation",
+      "chapter": 0
+    },
+    {
+      "start": 65.38999938964844,
+      "end": 66.43000030517578,
+      "text": "and in calculations.",
+      "chapter": 0
+    },
+    {
+      "start": 67.37000274658203,
+      "end": 70.80999755859375,
+      "text": "A signed component can be negative without making the vector's magnitude",
+      "chapter": 0
+    },
+    {
+      "start": 70.80999755859375,
+      "end": 71.20999908447266,
+      "text": "negative.",
+      "chapter": 0
+    },
+    {
+      "start": 71.56800000000182,
+      "end": 76.28799979019347,
+      "text": "An orthonormal Cartesian basis has three mutually perpendicular unit vectors,",
+      "chapter": 1
+    },
+    {
+      "start": 76.98800007629576,
+      "end": 78.52800003814879,
+      "text": "conventionally called i, j and k.",
+      "chapter": 1
+    },
+    {
+      "start": 79.30799977111998,
+      "end": 83.63184581786118,
+      "text": "A space vector is written as its x component times i plus its y component",
+      "chapter": 1
+    },
+    {
+      "start": 83.63184581786118,
+      "end": 83.92799965667906,
+      "text": "times",
+      "chapter": 1
+    },
+    {
+      "start": 83.92799965667906,
+      "end": 86.14799992370787,
+      "text": "j plus its z component times k.",
+      "chapter": 1
+    },
+    {
+      "start": 86.72799984741393,
+      "end": 91.36799923706236,
+      "text": "A vector in the x y plane has z component zero and can be recorded using only",
+      "chapter": 1
+    },
+    {
+      "start": 91.36799923706236,
+      "end": 92.38799969482604,
+      "text": "its first two components.",
+      "chapter": 1
+    },
+    {
+      "start": 93.42800061035338,
+      "end": 98.00800053405943,
+      "text": "Its magnitude follows from the Pythagorean theorem: square the components, add",
+      "chapter": 1
+    },
+    {
+      "start": 98.00800053405943,
+      "end": 99.36799923706236,
+      "text": "and take the nonnegative root.",
+      "chapter": 1
+    },
+    {
+      "start": 100.1279994659442,
+      "end": 104.32799832153502,
+      "text": "The vector three, four, zero has length five, while two, negative one, two has",
+      "chapter": 1
+    },
+    {
+      "start": 104.32799832153502,
+      "end": 105.06800000000182,
+      "text": "length three.",
+      "chapter": 1
+    },
+    {
+      "start": 105.98799816894713,
+      "end": 110.36799923706236,
+      "text": "Components are signed scalar coefficients, so a negative y coefficient points",
+      "chapter": 1
+    },
+    {
+      "start": 110.36799923706236,
+      "end": 112.70799938965025,
+      "text": "opposite to the positive y basis direction.",
+      "chapter": 1
+    },
+    {
+      "start": 113.66799847412291,
+      "end": 117.98799816894713,
+      "text": "The magnitude formula assumes perpendicular unit axes; it cannot be copied",
+      "chapter": 1
+    },
+    {
+      "start": 117.98799816894713,
+      "end": 120.7480003051776,
+      "text": "unchanged to an arbitrary nonorthogonal basis.",
+      "chapter": 1
+    },
+    {
+      "start": 121.96800152588072,
+      "end": 125.35261368267534,
+      "text": "Vectors are equal precisely when corresponding components in the same basis",
+      "chapter": 1
+    },
+    {
+      "start": 125.35261368267534,
+      "end": 125.48799816894713,
+      "text": "are",
+      "chapter": 1
+    },
+    {
+      "start": 125.48799816894713,
+      "end": 126.0079986267108,
+      "text": "equal.",
+      "chapter": 1
+    },
+    {
+      "start": 126.84799877929869,
+      "end": 130.18799893188657,
+      "text": "Write a zero component explicitly when it helps avoid confusing a plane vector",
+      "chapter": 1
+    },
+    {
+      "start": 130.18799893188657,
+      "end": 131.60800091552915,
+      "text": "with a different space vector.",
+      "chapter": 1
+    },
+    {
+      "start": 132.4680015258807,
+      "end": 136.10800091552915,
+      "text": "A point's coordinate triple and a vector's component triple may use the same",
+      "chapter": 1
+    },
+    {
+      "start": 136.10800091552915,
+      "end": 139.22800366211118,
+      "text": "numbers, but their geometric roles should still be identified.",
+      "chapter": 1
+    },
+    {
+      "start": 139.4880000000035,
+      "end": 142.34799989509932,
+      "text": "Vector addition describes a combined displacement.",
+      "chapter": 2
+    },
+    {
+      "start": 143.06799992370955,
+      "end": 147.14082073388082,
+      "text": "In the triangle construction, translate the second vector so its tail starts",
+      "chapter": 2
+    },
+    {
+      "start": 147.14082073388082,
+      "end": 147.24800022888533,
+      "text": "at",
+      "chapter": 2
+    },
+    {
+      "start": 147.24800022888533,
+      "end": 151.12800034332625,
+      "text": "the head of the first; the resultant runs from the first tail to the final",
+      "chapter": 2
+    },
+    {
+      "start": 151.12800034332625,
+      "end": 151.40800007629744,
+      "text": "head.",
+      "chapter": 2
+    },
+    {
+      "start": 152.16800030517928,
+      "end": 156.768000686649,
+      "text": "In the parallelogram construction, place both tails together and use the",
+      "chapter": 2
+    },
+    {
+      "start": 156.768000686649,
+      "end": 157.9280005340611,
+      "text": "diagonal from that common tail.",
+      "chapter": 2
+    },
+    {
+      "start": 158.6080008392369,
+      "end": 160.66800030517928,
+      "text": "These two constructions give the same vector.",
+      "chapter": 2
+    },
+    {
+      "start": 161.50800045776717,
+      "end": 163.88799961853377,
+      "text": "Algebraically, add corresponding components.",
+      "chapter": 2
+    },
+    {
+      "start": 164.22799977112166,
+      "end": 170.02800091553084,
+      "text": "For u equal to three, zero, zero and v equal to zero, four, zero, the sum is",
+      "chapter": 2
+    },
+    {
+      "start": 170.02800091553084,
+      "end": 173.2479983215367,
+      "text": "three, four, zero, whose magnitude is five.",
+      "chapter": 2
+    },
+    {
+      "start": 174.10799893188826,
+      "end": 177.76799877930037,
+      "text": "Adding the two magnitudes would instead give seven, which is not the resultant",
+      "chapter": 2
+    },
+    {
+      "start": 177.76799877930037,
+      "end": 179.5879984741246,
+      "text": "length because the directions differ.",
+      "chapter": 2
+    },
+    {
+      "start": 180.4880000000035,
+      "end": 184.8880015258824,
+      "text": "Vector addition is commutative and associative, so the order and grouping of a",
+      "chapter": 2
+    },
+    {
+      "start": 184.8880015258824,
+      "end": 186.28799923706404,
+      "text": "sum do not change its result.",
+      "chapter": 2
+    },
+    {
+      "start": 187.00800045776717,
+      "end": 188.5879984741246,
+      "text": "The zero vector is its identity.",
+      "chapter": 2
+    },
+    {
+      "start": 189.06800183105818,
+      "end": 193.42799862671248,
+      "text": "For a closed polygon of successive displacements returning to its start, the",
+      "chapter": 2
+    },
+    {
+      "start": 193.42799862671248,
+      "end": 197.2479983215367,
+      "text": "vector sum is zero even though the total distance travelled can be positive.",
+      "chapter": 2
+    },
+    {
+      "start": 198.06800183105818,
+      "end": 202.0487704749509,
+      "text": "The resultant magnitude lies between the absolute difference and the sum of",
+      "chapter": 2
+    },
+    {
+      "start": 202.0487704749509,
+      "end": 202.20800122070662,
+      "text": "the",
+      "chapter": 2
+    },
+    {
+      "start": 202.20800122070662,
+      "end": 203.20800122070662,
+      "text": "two input magnitudes.",
+      "chapter": 2
+    },
+    {
+      "start": 203.82799633789412,
+      "end": 206.60800274658553,
+      "text": "The endpoint cases correspond to collinear directions.",
+      "chapter": 2
+    },
+    {
+      "start": 206.95200000000517,
+      "end": 209.73199997139494,
+      "text": "Subtraction means adding the opposite vector.",
+      "chapter": 3
+    },
+    {
+      "start": 210.61200008583586,
+      "end": 215.44482040351994,
+      "text": "If u is two, negative one, three and v is negative one, four, one, their sum",
+      "chapter": 3
+    },
+    {
+      "start": 215.44482040351994,
+      "end": 215.57199988556425,
+      "text": "is",
+      "chapter": 3
+    },
+    {
+      "start": 215.57199988556425,
+      "end": 216.51200041962187,
+      "text": "one, three, four.",
+      "chapter": 3
+    },
+    {
+      "start": 217.19199977112333,
+      "end": 220.4319995422415,
+      "text": "Their difference u minus v is three, negative five, two.",
+      "chapter": 3
+    },
+    {
+      "start": 221.31199965668242,
+      "end": 225.67199931335966,
+      "text": "Each subtraction acts on the entire corresponding component, so subtracting",
+      "chapter": 3
+    },
+    {
+      "start": 225.67199931335966,
+      "end": 227.23200068665068,
+      "text": "negative one adds one.",
+      "chapter": 3
+    },
+    {
+      "start": 228.2719996948294,
+      "end": 232.2719996948294,
+      "text": "Reversing the order gives v minus u equal to negative three, five, negative",
+      "chapter": 3
+    },
+    {
+      "start": 232.2719996948294,
+      "end": 234.4319995422415,
+      "text": "two, the opposite of the first difference.",
+      "chapter": 3
+    },
+    {
+      "start": 235.0520003814749,
+      "end": 237.07200083923857,
+      "text": "Subtraction is therefore not commutative.",
+      "chapter": 3
+    },
+    {
+      "start": 237.95200000000517,
+      "end": 242.41456588667384,
+      "text": "If u and v are drawn from a common tail, u minus v points from the head of v",
+      "chapter": 3
+    },
+    {
+      "start": 242.41456588667384,
+      "end": 242.53200183105986,
+      "text": "to",
+      "chapter": 3
+    },
+    {
+      "start": 242.53200183105986,
+      "end": 243.15200076294462,
+      "text": "the head of u.",
+      "chapter": 3
+    },
+    {
+      "start": 243.81200061035673,
+      "end": 246.85200152588408,
+      "text": "This picture helps verify the order of a displacement calculation.",
+      "chapter": 3
+    },
+    {
+      "start": 247.99200091553251,
+      "end": 251.73199877930205,
+      "text": "The magnitude of a difference is unchanged when its sign is reversed, even",
+      "chapter": 3
+    },
+    {
+      "start": 251.73199877930205,
+      "end": 253.5919993896536,
+      "text": "though the vector itself changes direction.",
+      "chapter": 3
+    },
+    {
+      "start": 254.0919993896536,
+      "end": 258.7119983215384,
+      "text": "The identity u minus u equal to the zero vector holds component by component.",
+      "chapter": 3
+    },
+    {
+      "start": 259.5120013732962,
+      "end": 262.9319995422415,
+      "text": "Keep brackets around a vector being subtracted or multiplied by a negative",
+      "chapter": 3
+    },
+    {
+      "start": 262.9319995422415,
+      "end": 265.45200000000517,
+      "text": "scalar so every component receives the sign.",
+      "chapter": 3
+    },
+    {
+      "start": 266.45200000000517,
+      "end": 270.13200030518095,
+      "text": "A component check is often the quickest way to catch an arrow drawn in the",
+      "chapter": 3
+    },
+    {
+      "start": 270.13200030518095,
+      "end": 270.6520007629446,
+      "text": "wrong direction.",
+      "chapter": 3
+    },
+    {
+      "start": 270.9600000000067,
+      "end": 275.6387178271923,
+      "text": "Multiplying a vector by a real scalar multiplies each component by that",
+      "chapter": 4
+    },
+    {
+      "start": 275.6387178271923,
+      "end": 276.0999998664923,
+      "text": "scalar.",
+      "chapter": 4
+    },
+    {
+      "start": 276.8400001144476,
+      "end": 280.2200002288885,
+      "text": "Its magnitude is multiplied by the absolute value of the scalar.",
+      "chapter": 4
+    },
+    {
+      "start": 280.88000007630063,
+      "end": 285.88000007630063,
+      "text": "A positive scalar preserves direction, a negative scalar reverses it, and zero",
+      "chapter": 4
+    },
+    {
+      "start": 285.88000007630063,
+      "end": 287.14000030518247,
+      "text": "gives the zero vector.",
+      "chapter": 4
+    },
+    {
+      "start": 287.85999961853696,
+      "end": 292.0600003814764,
+      "text": "For u equal to two, negative one, two, the length is three.",
+      "chapter": 4
+    },
+    {
+      "start": 292.88000007630063,
+      "end": 297.4600000000067,
+      "text": "Multiplication by negative two gives negative four, two, negative four, with",
+      "chapter": 4
+    },
+    {
+      "start": 297.4600000000067,
+      "end": 298.38000007630063,
+      "text": "magnitude six.",
+      "chapter": 4
+    },
+    {
+      "start": 298.7799996948309,
+      "end": 302.84153956487296,
+      "text": "To construct the unit vector in the direction of a nonzero u, divide the",
+      "chapter": 4
+    },
+    {
+      "start": 302.84153956487296,
+      "end": 303.1800012207098,
+      "text": "vector",
+      "chapter": 4
+    },
+    {
+      "start": 303.1800012207098,
+      "end": 304.5599984741278,
+      "text": "by its positive magnitude.",
+      "chapter": 4
+    },
+    {
+      "start": 305.41999908447934,
+      "end": 308.879998168952,
+      "text": "Here the answer is two thirds, negative one third, two thirds.",
+      "chapter": 4
+    },
+    {
+      "start": 309.5200013732977,
+      "end": 313.6800012207098,
+      "text": "Its squared component sum is one and it has the same orientation as u.",
+      "chapter": 4
+    },
+    {
+      "start": 314.2000016784735,
+      "end": 316.3400010681219,
+      "text": "The opposite unit vector is its negative.",
+      "chapter": 4
+    },
+    {
+      "start": 316.91999908447934,
+      "end": 321.5599984741278,
+      "text": "A requested vector of length L in the direction of u is L times this unit",
+      "chapter": 4
+    },
+    {
+      "start": 321.5599984741278,
+      "end": 323.3400010681219,
+      "text": "vector, for nonnegative L.",
+      "chapter": 4
+    },
+    {
+      "start": 323.939999542243,
+      "end": 328.48000045777036,
+      "text": "Normalizing the zero vector is undefined because its length is zero and it has",
+      "chapter": 4
+    },
+    {
+      "start": 328.48000045777036,
+      "end": 329.5999993896551,
+      "text": "no unique direction.",
+      "chapter": 4
+    },
+    {
+      "start": 330.7199983215399,
+      "end": 334.32000061035825,
+      "text": "Scalar multiplication distributes over vector sums, and vector addition",
+      "chapter": 4
+    },
+    {
+      "start": 334.32000061035825,
+      "end": 336.5599984741278,
+      "text": "distributes over sums of scalar coefficients.",
+      "chapter": 4
+    },
+    {
+      "start": 337.2999963378973,
+      "end": 341.27674052394383,
+      "text": "These laws make component calculations consistent with the geometric scaling",
+      "chapter": 4
+    },
+    {
+      "start": 341.27674052394383,
+      "end": 341.7999963378973,
+      "text": "of arrows.",
+      "chapter": 4
+    },
+    {
+      "start": 342.1200000000085,
+      "end": 346.8399997902001,
+      "text": "With a chosen origin, let a and b be the position vectors of points A and B.",
+      "chapter": 5
+    },
+    {
+      "start": 347.3800002288903,
+      "end": 351.0999995422448,
+      "text": "The displacement from A to B is b minus a, not their sum.",
+      "chapter": 5
+    },
+    {
+      "start": 351.9399996948327,
+      "end": 356.73999988556756,
+      "text": "For A at one, negative one, two and B at four, five, negative one, the",
+      "chapter": 5
+    },
+    {
+      "start": 356.73999988556756,
+      "end": 358.7200003814782,
+      "text": "displacement is three, six, negative three.",
+      "chapter": 5
+    },
+    {
+      "start": 359.919999237069,
+      "end": 364.01999961853875,
+      "text": "Changing the origin changes both position vectors by the same translation, so",
+      "chapter": 5
+    },
+    {
+      "start": 364.01999961853875,
+      "end": 365.4999991607751,
+      "text": "their difference remains unchanged.",
+      "chapter": 5
+    },
+    {
+      "start": 366.57999908448113,
+      "end": 369.2400008392419,
+      "text": "Position vectors also express the internal section formula.",
+      "chapter": 5
+    },
+    {
+      "start": 369.80000030518426,
+      "end": 375.7799998474206,
+      "text": "If A P to P B is m to n with positive m and n, the position of P is n a",
+      "chapter": 5
+    },
+    {
+      "start": 375.7799998474206,
+      "end": 378.0399981689538,
+      "text": "plus m b divided by m plus n.",
+      "chapter": 5
+    },
+    {
+      "start": 378.70000183106316,
+      "end": 384.07999908448113,
+      "text": "For ratio one to two, this gives two a plus b divided by three, or P at two,",
+      "chapter": 5
+    },
+    {
+      "start": 384.2599993896569,
+      "end": 385.1600009155358,
+      "text": "one, one in this example.",
+      "chapter": 5
+    },
+    {
+      "start": 385.8200007629479,
+      "end": 390.3200007629479,
+      "text": "The displacement A P is one third of A B, so its length is half of P B as",
+      "chapter": 5
+    },
+    {
+      "start": 390.3200007629479,
+      "end": 390.6800013732995,
+      "text": "required.",
+      "chapter": 5
+    },
+    {
+      "start": 391.39999877930535,
+      "end": 394.36000167847527,
+      "text": "Equal weights give the midpoint, five halves, two, one half.",
+      "chapter": 5
+    },
+    {
+      "start": 394.7599993896569,
+      "end": 397.36000167847527,
+      "text": "The same vector reasoning works in two and three dimensions.",
+      "chapter": 5
+    },
+    {
+      "start": 397.919999237069,
+      "end": 401.73999893189324,
+      "text": "Verify the ratio and collinearity together; a point with a matching distance",
+      "chapter": 5
+    },
+    {
+      "start": 401.73999893189324,
+      "end": 404.21999847412957,
+      "text": "ratio alone need not lie on the endpoint line.",
+      "chapter": 5
+    },
+    {
+      "start": 404.4240000000099,
+      "end": 407.66400000954667,
+      "text": "A linear combination scales vectors and adds the results.",
+      "chapter": 6
+    },
+    {
+      "start": 408.2039999713997,
+      "end": 413.4240000000099,
+      "text": "To express w equal to three, two as alpha times u equal to one, zero plus beta",
+      "chapter": 6
+    },
+    {
+      "start": 413.4240000000099,
+      "end": 416.08399984742204,
+      "text": "times v equal to one, one, compare components.",
+      "chapter": 6
+    },
+    {
+      "start": 416.543999885569,
+      "end": 421.1040003051857,
+      "text": "The y equation gives beta equal to two, and the x equation then gives alpha",
+      "chapter": 6
+    },
+    {
+      "start": 421.1040003051857,
+      "end": 421.9240000000099,
+      "text": "equal to one.",
+      "chapter": 6
+    },
+    {
+      "start": 422.56399938965836,
+      "end": 426.56399938965836,
+      "text": "Since these two input vectors are nonparallel, the representation of every",
+      "chapter": 6
+    },
+    {
+      "start": 426.56399938965836,
+      "end": 428.2239992370705,
+      "text": "plane vector in their span is unique.",
+      "chapter": 6
+    },
+    {
+      "start": 428.68400022889176,
+      "end": 432.40399954224625,
+      "text": "If the input vectors are parallel, there may be no representation of a",
+      "chapter": 6
+    },
+    {
+      "start": 432.40399954224625,
+      "end": 436.4240000000099,
+      "text": "particular target or multiple representations, so do not assume uniqueness",
+      "chapter": 6
+    },
+    {
+      "start": 436.4240000000099,
+      "end": 437.7239992370705,
+      "text": "without checking directions.",
+      "chapter": 6
+    },
+    {
+      "start": 438.523998474131,
+      "end": 442.2840006103615,
+      "text": "Two nonzero vectors are parallel when one is a scalar multiple of the other.",
+      "chapter": 6
+    },
+    {
+      "start": 443.1240007629494,
+      "end": 447.9240000000099,
+      "text": "Thus two, negative one, two and negative four, two, negative four are parallel",
+      "chapter": 6
+    },
+    {
+      "start": 447.9240000000099,
+      "end": 449.2239992370705,
+      "text": "with opposite orientation.",
+      "chapter": 6
+    },
+    {
+      "start": 450.1240007629494,
+      "end": 455.4739992370705,
+      "text": "Collinearity of points A, B and C is tested using the displacements A B and A",
+      "chapter": 6
+    },
+    {
+      "start": 455.4739992370705,
+      "end": 457.64400122071305,
+      "text": "C, rather than their position vectors alone.",
+      "chapter": 6
+    },
+    {
+      "start": 458.08399984742204,
+      "end": 462.5040018310646,
+      "text": "The zero vector is algebraically a multiple of every vector but has no unique",
+      "chapter": 6
+    },
+    {
+      "start": 462.5040018310646,
+      "end": 462.9440004577736,
+      "text": "direction.",
+      "chapter": 6
+    },
+    {
+      "start": 463.80400106812516,
+      "end": 467.01681980075364,
+      "text": "Handle that case explicitly when a question speaks about an angle or a",
+      "chapter": 6
+    },
+    {
+      "start": 467.01681980075364,
+      "end": 467.3839990844826,
+      "text": "parallel",
+      "chapter": 6
+    },
+    {
+      "start": 467.3839990844826,
+      "end": 467.7640001525978,
+      "text": "direction.",
+      "chapter": 6
+    },
+    {
+      "start": 468.14400000001143,
+      "end": 472.54400009537886,
+      "text": "The scalar product, or dot product, multiplies corresponding components and",
+      "chapter": 7
+    },
+    {
+      "start": 472.54400009537886,
+      "end": 473.6240000190849,
+      "text": "adds them to give a scalar.",
+      "chapter": 7
+    },
+    {
+      "start": 474.203999942791,
+      "end": 478.0809232838085,
+      "text": "For nonzero vectors it also equals the product of their magnitudes times",
+      "chapter": 7
+    },
+    {
+      "start": 478.0809232838085,
+      "end": 478.40400022889327,
+      "text": "cosine",
+      "chapter": 7
+    },
+    {
+      "start": 478.40400022889327,
+      "end": 481.90400022889327,
+      "text": "of their angle, where the vector angle ranges from zero to pi.",
+      "chapter": 7
+    },
+    {
+      "start": 482.7239999237175,
+      "end": 487.2039994659538,
+      "text": "The vectors one, one, zero and one, negative one, zero have dot product zero",
+      "chapter": 7
+    },
+    {
+      "start": 487.52399916077803,
+      "end": 488.2239999237175,
+      "text": "and are perpendicular.",
+      "chapter": 7
+    },
+    {
+      "start": 489.004000610363,
+      "end": 493.30399984742354,
+      "text": "For one, zero, zero and negative one, one, zero, the dot product is negative",
+      "chapter": 7
+    },
+    {
+      "start": 493.30399984742354,
+      "end": 496.2039994659538,
+      "text": "one and the product of lengths is square root of two.",
+      "chapter": 7
+    },
+    {
+      "start": 496.6640004577751,
+      "end": 501.443999237072,
+      "text": "Their cosine is negative one over square root of two, giving angle three pi",
+      "chapter": 7
+    },
+    {
+      "start": 501.443999237072,
+      "end": 502.0839986267204,
+      "text": "over four.",
+      "chapter": 7
+    },
+    {
+      "start": 502.78399938965987,
+      "end": 504.504000610363,
+      "text": "Keep the sign when finding a vector angle.",
+      "chapter": 7
+    },
+    {
+      "start": 505.4239987793083,
+      "end": 508.7240018310661,
+      "text": "Taking an absolute value would instead give the smaller angle between the",
+      "chapter": 7
+    },
+    {
+      "start": 508.7240018310661,
+      "end": 511.2240018310661,
+      "text": "unoriented supporting lines, a different question.",
+      "chapter": 7
+    },
+    {
+      "start": 511.9840001525993,
+      "end": 516.3640012207145,
+      "text": "A positive dot product indicates an acute vector angle, a negative one an",
+      "chapter": 7
+    },
+    {
+      "start": 516.3640012207145,
+      "end": 520.5040006103629,
+      "text": "obtuse angle and zero a right angle, provided both vectors are nonzero.",
+      "chapter": 7
+    },
+    {
+      "start": 521.1440000000114,
+      "end": 525.0639981689567,
+      "text": "The dot product with the zero vector is zero but no vector angle with it is",
+      "chapter": 7
+    },
+    {
+      "start": 525.0639981689567,
+      "end": 525.3240003051872,
+      "text": "defined.",
+      "chapter": 7
+    },
+    {
+      "start": 525.9039983215446,
+      "end": 530.0639981689567,
+      "text": "Before using the angle formula, check both magnitudes are positive and the",
+      "chapter": 7
+    },
+    {
+      "start": 530.0639981689567,
+      "end": 532.7839993896598,
+      "text": "normalized result lies between negative one and one.",
+      "chapter": 7
+    },
+    {
+      "start": 533.064000000013,
+      "end": 536.484000076307,
+      "text": "The dot product is commutative and distributes over addition.",
+      "chapter": 8
+    },
+    {
+      "start": 537.0839999809396,
+      "end": 540.4040001526009,
+      "text": "In particular, u dotted with itself equals its squared magnitude.",
+      "chapter": 8
+    },
+    {
+      "start": 541.2440003051888,
+      "end": 545.6640003814828,
+      "text": "Expanding the dot product of u plus v with itself gives the squared resultant",
+      "chapter": 8
+    },
+    {
+      "start": 545.6640003814828,
+      "end": 550.1840008392464,
+      "text": "length as magnitude u squared plus magnitude v squared plus twice u dot v.",
+      "chapter": 8
+    },
+    {
+      "start": 550.6840008392464,
+      "end": 553.8039997711312,
+      "text": "The difference formula has a minus sign before that last term.",
+      "chapter": 8
+    },
+    {
+      "start": 554.4040001526009,
+      "end": 558.5963084317851,
+      "text": "If the magnitudes are three and four and the vector angle is pi over three,",
+      "chapter": 8
+    },
+    {
+      "start": 558.5963084317851,
+      "end": 558.7640007629525,
+      "text": "the",
+      "chapter": 8
+    },
+    {
+      "start": 558.7640007629525,
+      "end": 559.8240002288949,
+      "text": "dot product is six.",
+      "chapter": 8
+    },
+    {
+      "start": 560.2440003051888,
+      "end": 563.9439991607796,
+      "text": "The sum has squared length thirty seven, while the difference has squared",
+      "chapter": 8
+    },
+    {
+      "start": 563.9439991607796,
+      "end": 565.3239983215462,
+      "text": "length thirteen.",
+      "chapter": 8
+    },
+    {
+      "start": 565.3239983215462,
+      "end": 569.9240006103646,
+      "text": "Their squared lengths add to fifty, twice the sum of nine and sixteen,",
+      "chapter": 8
+    },
+    {
+      "start": 569.9240006103646,
+      "end": 571.0239990844857,
+      "text": "illustrating the parallelogram law.",
+      "chapter": 8
+    },
+    {
+      "start": 571.7640007629525,
+      "end": 576.464001525892,
+      "text": "Another expansion gives u plus v dotted with u minus v equal to magnitude u",
+      "chapter": 8
+    },
+    {
+      "start": 576.464001525892,
+      "end": 579.7840012207162,
+      "text": "squared minus magnitude v squared because the mixed terms cancel.",
+      "chapter": 8
+    },
+    {
+      "start": 580.624001373304,
+      "end": 584.124001373304,
+      "text": "Equal length input vectors therefore produce perpendicular sum and difference",
+      "chapter": 8
+    },
+    {
+      "start": 584.124001373304,
+      "end": 587.2440003051888,
+      "text": "when those two resulting vectors are both nonzero.",
+      "chapter": 8
+    },
+    {
+      "start": 587.2440003051888,
+      "end": 591.8401529775897,
+      "text": "If either result is zero, the dot identity still holds but a right angle is",
+      "chapter": 8
+    },
+    {
+      "start": 591.8401529775897,
+      "end": 592.0239990844857,
+      "text": "not",
+      "chapter": 8
+    },
+    {
+      "start": 592.0239990844857,
+      "end": 592.3639992370736,
+      "text": "defined.",
+      "chapter": 8
+    },
+    {
+      "start": 593.2640007629525,
+      "end": 597.2440003051888,
+      "text": "Expand first and then apply the relevant angle or magnitude condition, rather",
+      "chapter": 8
+    },
+    {
+      "start": 597.2440003051888,
+      "end": 600.8640030517709,
+      "text": "than treating dot products as ordinary products of lengths in every situation.",
+      "chapter": 8
+    },
+    {
+      "start": 601.1760000000147,
+      "end": 605.1606152036765,
+      "text": "Projection separates the part of a vector along a chosen nonzero direction",
+      "chapter": 9
+    },
+    {
+      "start": 605.1606152036765,
+      "end": 605.3759998092798,
+      "text": "from",
+      "chapter": 9
+    },
+    {
+      "start": 605.3759998092798,
+      "end": 606.4960001716761,
+      "text": "the perpendicular remainder.",
+      "chapter": 9
+    },
+    {
+      "start": 607.3959997902064,
+      "end": 612.2159999618677,
+      "text": "The signed scalar projection of u on v is u dot v divided by magnitude v.",
+      "chapter": 9
+    },
+    {
+      "start": 613.1760000000147,
+      "end": 618.1760000000147,
+      "text": "The vector projection is u dot v divided by magnitude v squared, multiplied by",
+      "chapter": 9
+    },
+    {
+      "start": 618.1760000000147,
+      "end": 618.5559991607813,
+      "text": "v.",
+      "chapter": 9
+    },
+    {
+      "start": 619.4360002288965,
+      "end": 624.155999542251,
+      "text": "For u equal to three, four, zero and v equal to one, zero, zero, the scalar",
+      "chapter": 9
+    },
+    {
+      "start": 624.155999542251,
+      "end": 627.8159993896631,
+      "text": "projection is three and the projected vector is three, zero, zero.",
+      "chapter": 9
+    },
+    {
+      "start": 628.2559999237208,
+      "end": 632.155999542251,
+      "text": "The remaining vector zero, four, zero is perpendicular to v.",
+      "chapter": 9
+    },
+    {
+      "start": 633.5760015258936,
+      "end": 637.2959989318995,
+      "text": "Reversing v reverses the sign of the scalar projection because the oriented",
+      "chapter": 9
+    },
+    {
+      "start": 637.2959989318995,
+      "end": 638.5760015258936,
+      "text": "measuring direction changes.",
+      "chapter": 9
+    },
+    {
+      "start": 639.3359998474268,
+      "end": 643.09599816896,
+      "text": "The vector projection onto the same axis is unchanged because both its",
+      "chapter": 9
+    },
+    {
+      "start": 643.09599816896,
+      "end": 645.5360006103663,
+      "text": "coefficient and the direction vector reverse.",
+      "chapter": 9
+    },
+    {
+      "start": 646.4759992370753,
+      "end": 650.3560003051905,
+      "text": "Thus a scalar projection, a projection length and a projected vector are",
+      "chapter": 9
+    },
+    {
+      "start": 650.3560003051905,
+      "end": 651.8359998474268,
+      "text": "related but different objects.",
+      "chapter": 9
+    },
+    {
+      "start": 652.4359983215479,
+      "end": 656.4359983215479,
+      "text": "The nonnegative projection length is the absolute value of the signed scalar",
+      "chapter": 9
+    },
+    {
+      "start": 656.4359983215479,
+      "end": 656.9160016784815,
+      "text": "projection.",
+      "chapter": 9
+    },
+    {
+      "start": 657.9759992370753,
+      "end": 659.9759992370753,
+      "text": "Projection onto the zero vector is undefined.",
+      "chapter": 9
+    },
+    {
+      "start": 660.9160016784815,
+      "end": 664.9559987793116,
+      "text": "Check a computed vector projection by verifying that it is parallel to v and",
+      "chapter": 9
+    },
+    {
+      "start": 664.9559987793116,
+      "end": 668.2960027465967,
+      "text": "that subtracting it from u leaves a vector with zero dot product with v.",
+      "chapter": 9
+    },
+    {
+      "start": 669.3840000000164,
+      "end": 674.0439998474285,
+      "text": "The vector product, or cross product, of two space vectors is another vector",
+      "chapter": 10
+    },
+    {
+      "start": 674.0439998474285,
+      "end": 675.0839998092815,
+      "text": "perpendicular to both.",
+      "chapter": 10
+    },
+    {
+      "start": 675.7440001335308,
+      "end": 679.3239995803997,
+      "text": "Its direction follows the right hand rule in a right handed coordinate basis.",
+      "chapter": 10
+    },
+    {
+      "start": 680.0240003433391,
+      "end": 685.9040004577801,
+      "text": "The cyclic basis products i cross j equal k, j cross k equal i, and k",
+      "chapter": 10
+    },
+    {
+      "start": 685.9040004577801,
+      "end": 690.1239997711345,
+      "text": "cross i equal j are positive; reversing any order gives the negative.",
+      "chapter": 10
+    },
+    {
+      "start": 690.7240001526043,
+      "end": 695.5239993896648,
+      "text": "In components, the x component is u y times v z minus u z times v y.",
+      "chapter": 10
+    },
+    {
+      "start": 695.5239993896648,
+      "end": 700.4240009155437,
+      "text": "The y component is u z times v x minus u x times v z.",
+      "chapter": 10
+    },
+    {
+      "start": 700.4240009155437,
+      "end": 704.9839984741375,
+      "text": "The z component is u x times v y minus u y times v x.",
+      "chapter": 10
+    },
+    {
+      "start": 704.9839984741375,
+      "end": 709.5239993896648,
+      "text": "For u equal to one, two, three and v equal to two, negative one, one, these",
+      "chapter": 10
+    },
+    {
+      "start": 709.5239993896648,
+      "end": 711.4839984741375,
+      "text": "give five, five, negative five.",
+      "chapter": 10
+    },
+    {
+      "start": 712.2240001526043,
+      "end": 715.3840000000164,
+      "text": "Dotting the result with either original vector gives zero, checking",
+      "chapter": 10
+    },
+    {
+      "start": 715.3840000000164,
+      "end": 716.6040012207195,
+      "text": "perpendicularity.",
+      "chapter": 10
+    },
+    {
+      "start": 716.8039981689617,
+      "end": 720.6639987793133,
+      "text": "That check alone does not distinguish a vector from its negative, so also",
+      "chapter": 10
+    },
+    {
+      "start": 720.6639987793133,
+      "end": 722.8840000000164,
+      "text": "verify the chosen order and right hand sign.",
+      "chapter": 10
+    },
+    {
+      "start": 722.8840000000164,
+      "end": 727.4240009155437,
+      "text": "Unlike a dot product, a cross product has vector components rather than a",
+      "chapter": 10
+    },
+    {
+      "start": 727.4240009155437,
+      "end": 728.6639987793133,
+      "text": "single scalar value.",
+      "chapter": 10
+    },
+    {
+      "start": 729.3639995422527,
+      "end": 733.1240016784832,
+      "text": "Plane vectors can be embedded in three dimensions by adding zero z components",
+      "chapter": 10
+    },
+    {
+      "start": 733.1240016784832,
+      "end": 734.86400335695,
+      "text": "before taking their cross product.",
+      "chapter": 10
+    },
+    {
+      "start": 735.096000000018,
+      "end": 739.3560002288998,
+      "text": "The magnitude of the cross product equals the product of the input magnitudes",
+      "chapter": 11
+    },
+    {
+      "start": 739.3560002288998,
+      "end": 741.0360000572384,
+      "text": "times sine of their angle.",
+      "chapter": 11
+    },
+    {
+      "start": 741.7759998283566,
+      "end": 745.3960001907528,
+      "text": "Geometrically, this is the area of the parallelogram formed by the two vectors",
+      "chapter": 11
+    },
+    {
+      "start": 745.3960001907528,
+      "end": 746.4360001526059,
+      "text": "as adjacent sides.",
+      "chapter": 11
+    },
+    {
+      "start": 747.3560002288998,
+      "end": 750.0560000381649,
+      "text": "Half that magnitude is the corresponding triangle area.",
+      "chapter": 11
+    },
+    {
+      "start": 751.096000000018,
+      "end": 756.4759991607846,
+      "text": "For three, zero, zero and zero, four, zero, the cross product is zero, zero,",
+      "chapter": 11
+    },
+    {
+      "start": 756.4759991607846,
+      "end": 761.1559994659603,
+      "text": "twelve, so the parallelogram area is twelve and the triangle area is six.",
+      "chapter": 11
+    },
+    {
+      "start": 761.1559994659603,
+      "end": 765.9829229830408,
+      "text": "A triangle from points A, B and C uses the two side displacements B minus A",
+      "chapter": 11
+    },
+    {
+      "start": 765.9829229830408,
+      "end": 766.175999923724,
+      "text": "and",
+      "chapter": 11
+    },
+    {
+      "start": 766.175999923724,
+      "end": 768.656001373309,
+      "text": "C minus A, both starting at the same vertex.",
+      "chapter": 11
+    },
+    {
+      "start": 769.4360001526059,
+      "end": 773.3360016784848,
+      "text": "For A at one, zero, zero, B at three, zero, zero and C at one, three, zero,",
+      "chapter": 11
+    },
+    {
+      "start": 773.596000000018,
+      "end": 777.3559983215512,
+      "text": "these side lengths are two and three at a right angle, giving triangle area",
+      "chapter": 11
+    },
+    {
+      "start": 777.3559983215512,
+      "end": 777.7559998474301,
+      "text": "three.",
+      "chapter": 11
+    },
+    {
+      "start": 778.4159996948422,
+      "end": 782.2559998474301,
+      "text": "A zero cross product for two nonzero vectors means the directions are parallel",
+      "chapter": 11
+    },
+    {
+      "start": 782.2559998474301,
+      "end": 782.9760010681332,
+      "text": "or opposite.",
+      "chapter": 11
+    },
+    {
+      "start": 783.6959984741391,
+      "end": 787.9159996948422,
+      "text": "If an input is zero, the product is also zero but its direction and angle need",
+      "chapter": 11
+    },
+    {
+      "start": 787.9159996948422,
+      "end": 788.8759987793148,
+      "text": "separate interpretation.",
+      "chapter": 11
+    },
+    {
+      "start": 788.8759987793148,
+      "end": 793.5559990844906,
+      "text": "Cross products distribute over vector sums and scalar multiples, but reversing",
+      "chapter": 11
+    },
+    {
+      "start": 793.5559990844906,
+      "end": 795.8360016784848,
+      "text": "the input order changes the sign.",
+      "chapter": 11
+    },
+    {
+      "start": 795.8360016784848,
+      "end": 799.3560021362484,
+      "text": "Area uses the magnitude, so it is nonnegative regardless of that orientation",
+      "chapter": 11
+    },
+    {
+      "start": 799.3560021362484,
+      "end": 799.7160027466,
+      "text": "sign.",
+      "chapter": 11
+    },
+    {
+      "start": 799.9440000000195,
+      "end": 804.3040001335339,
+      "text": "A supporting application combines the two vector products into a scalar triple",
+      "chapter": 12
+    },
+    {
+      "start": 804.3040001335339,
+      "end": 804.7040002289014,
+      "text": "product.",
+      "chapter": 12
+    },
+    {
+      "start": 805.38400005724,
+      "end": 807.7240002098279,
+      "text": "Write u dot the quantity v cross w.",
+      "chapter": 12
+    },
+    {
+      "start": 808.3039996566968,
+      "end": 812.7040002289014,
+      "text": "Its absolute value is the volume of the parallelepiped with edge vectors u, v",
+      "chapter": 12
+    },
+    {
+      "start": 812.7840001526074,
+      "end": 813.3439996185498,
+      "text": "and w.",
+      "chapter": 12
+    },
+    {
+      "start": 813.9239995422558,
+      "end": 818.8040006103711,
+      "text": "The sign records orientation, while geometric volume is nonnegative.",
+      "chapter": 12
+    },
+    {
+      "start": 818.8040006103711,
+      "end": 823.5583595133268,
+      "text": "With mutually perpendicular edges two, zero, zero; zero, three, zero; and",
+      "chapter": 12
+    },
+    {
+      "start": 823.5583595133268,
+      "end": 823.8840005340771,
+      "text": "zero,",
+      "chapter": 12
+    },
+    {
+      "start": 823.8840005340771,
+      "end": 826.724000686665,
+      "text": "zero, four, the triple product is twenty four.",
+      "chapter": 12
+    },
+    {
+      "start": 826.724000686665,
+      "end": 831.163999313374,
+      "text": "The volume is twenty four cubic units, and the tetrahedron formed by those",
+      "chapter": 12
+    },
+    {
+      "start": 831.163999313374,
+      "end": 835.083999389668,
+      "text": "three edges from one vertex has one sixth of that volume, or four.",
+      "chapter": 12
+    },
+    {
+      "start": 835.6240003051953,
+      "end": 839.5639989319043,
+      "text": "A cyclic permutation of the three vectors preserves the triple product, while",
+      "chapter": 12
+    },
+    {
+      "start": 839.5639989319043,
+      "end": 841.4440000000195,
+      "text": "swapping two reverses its sign.",
+      "chapter": 12
+    },
+    {
+      "start": 842.0240018310742,
+      "end": 846.369641964663,
+      "text": "A zero triple product means the three vectors are linearly dependent and lie",
+      "chapter": 12
+    },
+    {
+      "start": 846.369641964663,
+      "end": 846.4840009155469,
+      "text": "in",
+      "chapter": 12
+    },
+    {
+      "start": 846.4840009155469,
+      "end": 850.0439984741406,
+      "text": "a common plane through their shared tail, including degenerate zero cases.",
+      "chapter": 12
+    },
+    {
+      "start": 850.583999389668,
+      "end": 854.7439992370801,
+      "text": "To test four points for coplanarity, form three displacement vectors from one",
+      "chapter": 12
+    },
+    {
+      "start": 854.7439992370801,
+      "end": 858.2840001526074,
+      "text": "selected point rather than using three unrelated position vectors.",
+      "chapter": 12
+    },
+    {
+      "start": 859.0639989319043,
+      "end": 862.7639996948437,
+      "text": "These volume and coplanarity examples support the main scalar and vector",
+      "chapter": 12
+    },
+    {
+      "start": 862.7639996948437,
+      "end": 866.1439969482617,
+      "text": "product methods and the preceding 3D Geometry class.",
+      "chapter": 12
+    },
+    {
+      "start": 866.9240033569531,
+      "end": 870.4039990844922,
+      "text": "Retain brackets so the cross product is calculated before the final dot",
+      "chapter": 12
+    },
+    {
+      "start": 870.4039990844922,
+      "end": 870.7639996948437,
+      "text": "product.",
+      "chapter": 12
+    },
+    {
+      "start": 871.0080000000213,
+      "end": 874.9280000763152,
+      "text": "A mixed vector question is easier when the required geometric condition",
+      "chapter": 13
+    },
+    {
+      "start": 874.9280000763152,
+      "end": 876.0279999809478,
+      "text": "determines the operation.",
+      "chapter": 13
+    },
+    {
+      "start": 877.1679998474334,
+      "end": 878.7479997711395,
+      "text": "Equality uses corresponding components.",
+      "chapter": 13
+    },
+    {
+      "start": 879.6279998855804,
+      "end": 882.568000419638,
+      "text": "A magnitude uses the square root of a self dot product.",
+      "chapter": 13
+    },
+    {
+      "start": 883.5479999618743,
+      "end": 887.608000381491,
+      "text": "Perpendicular nonzero vectors have dot product zero, while parallel nonzero",
+      "chapter": 13
+    },
+    {
+      "start": 887.608000381491,
+      "end": 890.7479997711395,
+      "text": "vectors have proportional components or zero cross product.",
+      "chapter": 13
+    },
+    {
+      "start": 891.2479997711395,
+      "end": 893.6479993896697,
+      "text": "An area uses a cross product magnitude.",
+      "chapter": 13
+    },
+    {
+      "start": 894.1379991607879,
+      "end": 898.6679998474334,
+      "text": "For u equal to one, two, negative one and v equal to two, k, four,",
+      "chapter": 13
+    },
+    {
+      "start": 899.4079996185516,
+      "end": 904.2879987793182,
+      "text": "perpendicularity gives two plus two k minus four equal to zero, so k equals",
+      "chapter": 13
+    },
+    {
+      "start": 904.2879987793182,
+      "end": 904.7480016784881,
+      "text": "one.",
+      "chapter": 13
+    },
+    {
+      "start": 905.6479993896697,
+      "end": 909.5080000000213,
+      "text": "Substituting that value restores a zero dot product and both vectors remain",
+      "chapter": 13
+    },
+    {
+      "start": 909.5080000000213,
+      "end": 910.0080000000213,
+      "text": "nonzero.",
+      "chapter": 13
+    },
+    {
+      "start": 910.8480001526092,
+      "end": 914.8680006103729,
+      "text": "Do not solve a dot product equation for a parameter and forget to check a",
+      "chapter": 13
+    },
+    {
+      "start": 914.8680006103729,
+      "end": 916.2080007629608,
+      "text": "condition that excludes the zero vector.",
+      "chapter": 13
+    },
+    {
+      "start": 916.9479986267303,
+      "end": 921.1279989319061,
+      "text": "Similarly, cancelling a possibly zero component in a proportionality equation",
+      "chapter": 13
+    },
+    {
+      "start": 921.1279989319061,
+      "end": 922.9879995422576,
+      "text": "can remove valid cases.",
+      "chapter": 13
+    },
+    {
+      "start": 923.8279996948455,
+      "end": 927.8480001526092,
+      "text": "Keep track of the type of each result: a sum and a cross product are vectors,",
+      "chapter": 13
+    },
+    {
+      "start": 928.3680006103729,
+      "end": 930.6079984741424,
+      "text": "whereas a magnitude and a dot product are scalars.",
+      "chapter": 13
+    },
+    {
+      "start": 931.088001831076,
+      "end": 935.3080030517791,
+      "text": "A diagram can suggest a direction or sign, but component verification",
+      "chapter": 13
+    },
+    {
+      "start": 935.3080030517791,
+      "end": 936.967999084494,
+      "text": "establishes the numerical answer.",
+      "chapter": 13
+    },
+    {
+      "start": 937.9279981689666,
+      "end": 941.1479993896697,
+      "text": "Final checks should include the original condition, any normalization",
+      "chapter": 13
+    },
+    {
+      "start": 941.1479993896697,
+      "end": 944.7479978637908,
+      "text": "denominator and the units of a geometric length, area or volume.",
+      "chapter": 13
+    }
+  ]
+}
