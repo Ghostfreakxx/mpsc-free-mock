@@ -11,6 +11,8 @@ A learning space for MPSC aspirants and other students in Mizoram. It brings the
 - `/jee` - JEE Main Physics, Chemistry and Mathematics practice.
 - `/cuet-pg` - CUET PG practice.
 - `/exam-simulator` - Timed JEE Main, NEET, CUET PG and MPSC papers with exam marking, a question palette, mark-for-review, auto-submit and a strategy report (quick guesses, changed answers, time sinks). Attempts and recent scores are saved on the device.
+- `/trading` - Paper-trading simulator: generated practice charts (steady climb, crash, sideways, pump and dump) and ₹10,000 of pretend money. Students buy, sell or wait one hour at a time, with optional safety rules (position cap, stop-loss, take-profit, daily loss limit), real fees, slippage and 1% TDS, then compare themselves with a trend bot, a dip bot and buy-and-hold. It runs entirely in the browser: no real prices, no exchange and no AI calls. The engine (`app/lib/trading-sim.ts`) follows a WazirX bot's paper mode; `npm run test:trading` tests it.
+- `/trading/learn` - Markets, money and safety: eight short lessons on how markets work, reading charts, indicators, costs and crypto tax in India, risk management, account security, scams and trading bots, each with self-check questions.
 
 Practice rotates through each selected question pool without repeating a fresh question in the same round. Missed answers return in a spaced review queue. Rotation state, planner checkoffs and MPSC answer history are saved in the browser on the current device; they are not synced between devices or accounts.
 
