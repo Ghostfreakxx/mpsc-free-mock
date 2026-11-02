@@ -81,6 +81,7 @@ targets['trigonometry']='trigonometry';
 targets['limits-continuity-differentiability']='limits-continuity-differentiability';
 targets['integral-calculus']='integral-calculus';
 targets['differential-equations']='differential-equations';
+targets['coordinate-geometry']='coordinate-geometry';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const folder = path.join(root, 'public/lectures', selected);
