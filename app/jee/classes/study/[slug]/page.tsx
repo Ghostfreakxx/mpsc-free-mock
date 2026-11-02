@@ -16,6 +16,7 @@ export function generateStaticParams() {
 }
 
 const figureAlt: Record<string, string> = {
+  "three-dimensional-geometry": "A schematic projection of skew lines L1=(t,0,0) and L2=(s,2,s+1). Closest points are P=(-1,0,0) and Q=(-1,2,0). Their common perpendicular has equation r=(-1,u,0) and the shortest segment has length two. Projected angles and lengths are not measurements of space geometry.",
   "coordinate-geometry": "A circle x squared plus y squared equals twenty five is cut by y=3 at negative four, three and four, three. The centre to chord distance is three, radius five and half chord four, giving full chord length eight.",
   "differential-equations": "For exponential decay N prime equals negative k N, the initial amount eighty falls to forty after one half life of three time units and twenty after six. The equation is separable and linear; the decay coefficient is natural log two divided by three.",
   "integral-calculus": "On zero through one the line y=x is above the parabola y=x squared. Their enclosed area is the integral of x minus x squared, equal to one sixth square units. Geometric area uses upper minus lower, rather than allowing signed pieces to cancel.",
@@ -71,7 +72,7 @@ export default async function StudyPage({ params }: { params: Promise<{ slug: st
   const lesson = writtenLesson ? withLectureClarifications(writtenLesson, recording)
     : recording && unitIndex >= 0 ? lectureStudyLesson(recording, unitIndex + 1, physicsCoverage[unitIndex].remaining) : undefined;
   if (!lesson) notFound();
-  const svgFigure = ["coordinate-geometry", "differential-equations", "integral-calculus", "limits-continuity-differentiability", "trigonometry", "sequences-series", "binomial-theorem", "permutations-combinations", "matrices-determinants", "chemistry-foundations", "atomic-spectra", "periodic-trends", "chemical-bonding", "chemical-thermodynamics", "solutions", "equilibrium", "redox-electrochemistry", "chemical-kinetics", "coordination-compounds", "organic-principles", "hydrocarbons", "organic-halogens", "organic-oxygen", "organic-nitrogen", "biomolecules", "purification-analysis", "p-block", "d-f-block", "practical-chemistry"].includes(lesson.id);
+  const svgFigure = ["three-dimensional-geometry", "coordinate-geometry", "differential-equations", "integral-calculus", "limits-continuity-differentiability", "trigonometry", "sequences-series", "binomial-theorem", "permutations-combinations", "matrices-determinants", "chemistry-foundations", "atomic-spectra", "periodic-trends", "chemical-bonding", "chemical-thermodynamics", "solutions", "equilibrium", "redox-electrochemistry", "chemical-kinetics", "coordination-compounds", "organic-principles", "hydrocarbons", "organic-halogens", "organic-oxygen", "organic-nitrogen", "biomolecules", "purification-analysis", "p-block", "d-f-block", "practical-chemistry"].includes(lesson.id);
   const subjectLessons = writtenLesson ? studyLessons.filter(item => item.subject === lesson.subject) : lectures.map(item => ({ id: item.id, title: item.title }));
   const position = subjectLessons.findIndex(item => item.id === lesson.id);
   const previous = subjectLessons[position - 1];
