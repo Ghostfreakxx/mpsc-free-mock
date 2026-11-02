@@ -24,6 +24,8 @@ export const targets = [
   { source: "app/jee/classes/lecture.module.css", scope: ':global(html[data-theme="dark"])', keep: /\.(board|ruler|chapterNumber|formula|steps)\b|Diagram\b/ },
   { source: "app/exam-simulator/simulator.module.css", scope: ':global(html[data-theme="dark"])' },
   { source: "app/law/mjs/law.module.css", scope: ':global(html[data-theme="dark"])' },
+  { source: "app/nursing/nursing.module.css", scope: ':global(html[data-theme="dark"])' },
+  { source: "app/trading/trading.module.css", scope: ':global(html[data-theme="dark"])' },
 ];
 
 // --- Colour maths (OKLab / OKLCH) ---

@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import { chromium } from 'playwright';
 
 const base = process.env.SMOKE_URL || 'http://localhost:3000';
-const pages = ['/', '/mock-test', '/mizo', '/neet', '/jee', '/cuet-pg', '/college-notes', '/downloads', '/exam-simulator', '/law/mjs', '/jee/classes', '/jee/classes/units', '/jee/classes/measurements'];
+const pages = ['/', '/mock-test', '/mizo', '/neet', '/jee', '/cuet-pg', '/nursing', '/college-notes', '/downloads', '/exam-simulator', '/law/mjs', '/trading', '/trading/learn', '/jee/classes', '/jee/classes/units', '/jee/classes/measurements'];
 const failures = [];
 const check = (condition, message) => { if (!condition) failures.push(message); };
 
@@ -66,6 +66,13 @@ try {
   await page.getByRole('button', { name: /Submit/ }).first().click();
   await page.getByRole('button', { name: 'Submit exam' }).click();
   check(/You scored -?\d+ out of 60/.test(await page.locator('h1').innerText()), 'simulator did not produce a result');
+  await page.goto(`${base}/trading`);
+  await page.getByRole('button', { name: /^Start with/ }).click();
+  await page.getByRole('button', { name: 'Buy 25%' }).click();
+  check(await page.getByRole('button', { name: 'Sell all coins' }).count() === 1, 'trading simulator did not buy');
+  await page.getByRole('button', { name: /Hold to the end/ }).click();
+  check(/You finished with/.test(await page.locator('h1').innerText()), 'trading simulator did not finish');
+  check(await page.locator('tbody tr').count() === 4, 'trading simulator did not compare with the bots');
 
   check(!errors.some(error => /Content Security Policy|Refused to/i.test(error)), `CSP blocked content: ${errors.filter(error => /Content Security Policy|Refused to/i.test(error)).join(' | ')}`);
   check(errors.length === 0, `browser errors: ${errors.join(' | ')}`);
@@ -74,4 +81,4 @@ try {
 }
 
 assert.deepEqual(failures, [], `Smoke check failed:\n- ${failures.join('\n- ')}`);
-console.log(`Smoke check passed: security headers, chat API abuse cases, ${pages.length} pages at 360px, practice and simulator.`);
+console.log(`Smoke check passed: security headers, chat API abuse cases, ${pages.length} pages at 360px, practice, simulator and trading simulator.`);

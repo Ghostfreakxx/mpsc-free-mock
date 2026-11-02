@@ -15,6 +15,7 @@ import {
   BookMarked,
   BookOpen,
   CalendarDays,
+  CandlestickChart,
   Check,
   CheckCircle2,
   ChevronRight,
@@ -32,7 +33,9 @@ import {
   Play,
   Scale,
   Search,
+  ShieldCheck,
   Sparkles,
+  Stethoscope,
   Target,
   TrendingUp,
   type LucideIcon,
@@ -88,6 +91,24 @@ const courses: {
     format: "Timed mock",
   },
   {
+    title: "Trading simulator",
+    subject: "Money and markets",
+    description: "Practise buying and selling on generated charts with pretend money, with real fees and TDS, and compare yourself with simple bots.",
+    href: "/trading",
+    icon: CandlestickChart,
+    theme: "gold",
+    format: "Free practice",
+  },
+  {
+    title: "Markets, money and safety",
+    subject: "Money and markets",
+    description: "How markets work, trading costs and tax in India, managing risk, protecting your accounts and spotting scams.",
+    href: "/trading/learn",
+    icon: ShieldCheck,
+    theme: "green",
+    format: "Course",
+  },
+  {
     title: "MPSC: Mizo + English",
     subject: "Civil services",
     description: "Draft Mizo translations alongside the original English questions.",
@@ -141,7 +162,19 @@ const courses: {
     theme: "green",
     format: "Question bank",
   },
+  {
+    title: "Nursing practice",
+    subject: "Staff nurse recruitment",
+    description: "Staff nurse questions for Mizoram H&FW posts and AIIMS NORCET, with explanations and a timed 100-question mock.",
+    href: "/nursing",
+    icon: Stethoscope,
+    theme: "green",
+    format: "Question bank",
+  },
 ];
+
+// Heavy pages are fetched only when opened, not prefetched from the home page.
+const noPrefetch = new Set(["/jee/classes", "/trading/learn"]);
 
 const mainNavigation: { id: View | "practice" | "mizo" | "downloads"; label: string; icon: LucideIcon; href?: string }[] = [
   { id: "overview", label: "Overview", icon: LayoutDashboard },
@@ -359,7 +392,7 @@ export default function StudentDashboard({ reviewedKeyHashes }: { reviewedKeyHas
           {courses.slice(1).map((course) => {
             const Icon = course.icon;
             return (
-              <Link href={course.href} key={course.href} prefetch={course.href === "/jee/classes" ? false : undefined} className="sidebar-link">
+              <Link href={course.href} key={course.href} prefetch={noPrefetch.has(course.href) ? false : undefined} className="sidebar-link">
                 <Icon size={18} strokeWidth={1.9} /><span>{course.title}</span>
               </Link>
             );
@@ -570,7 +603,7 @@ function CourseCard({ course, compact = false }: { course: (typeof courses)[numb
   return (
     <article className={`course-card ${compact ? "course-card-compact" : ""}`}>
       <div className={`course-card-top course-${course.theme}`}><span className="course-mark"><Icon size={20} strokeWidth={1.8} /></span><span className="course-format">{course.format}</span><span className="course-corner"><ArrowUpRight size={17} /></span></div>
-      <div className="course-card-body"><span className="course-subject">{course.subject}</span><h3>{course.title}</h3><p>{course.description}</p><Link href={course.href} prefetch={course.href === "/jee/classes" ? false : undefined} className="course-open">Open learning <ArrowRight size={15} /></Link></div>
+      <div className="course-card-body"><span className="course-subject">{course.subject}</span><h3>{course.title}</h3><p>{course.description}</p><Link href={course.href} prefetch={noPrefetch.has(course.href) ? false : undefined} className="course-open">Open learning <ArrowRight size={15} /></Link></div>
     </article>
   );
 }
