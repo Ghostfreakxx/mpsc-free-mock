@@ -1,0 +1,411 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English mathematics teacher. Distinguish i, minus signs, fractions, root pairs and interval endpoints. Pause briefly after questions. Do not omit the final sentence or add words absent from the script.",
+  "title": "Complex numbers and quadratics: Argand geometry, roots and parameters",
+  "sources": [
+    {
+      "title": "NTA JEE Main 2026 Mathematics Unit 2",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "NCERT Mathematics XI: Complex Numbers and Quadratic Equations",
+      "url": "https://ncert.nic.in/textbook/pdf/kemh105.pdf"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Treat complex numbers as ordered pairs and algebraic quantities",
+      "formula": "z=a+ib ↔ (a,b); i²=−1; iⁿ repeats with period 4",
+      "points": [
+        "Equality requires both real and imaginary parts to agree.",
+        "Expand products normally, then use i²=−1.",
+        "Complex numbers do not inherit the real-number order."
+      ],
+      "script": "A complex number can be represented as an ordered pair of real numbers a, b, or written a plus i b, where i squared equals negative one. Its real part is a and its imaginary part is b, not i b. Equality means both corresponding real components agree. Addition and subtraction operate component by component. Multiplication follows distribution together with i squared equals negative one. For example, two plus three i times one minus i equals two minus two i plus three i minus three i squared. Replacing i squared by negative one gives five plus i. Powers of i repeat every four steps: i, negative one, negative i, one. Divide an integer exponent by four and use its remainder. Twenty three leaves remainder three, so i to the power twenty three is negative i. For negative exponents, use reciprocals or extend the same four step cycle. A complex number is real exactly when its imaginary part is zero, and is purely imaginary with nonzero imaginary component when its real part is zero. Do not apply ordinary greater than comparisons to arbitrary complex numbers. Algebraic equality and modulus comparisons are meaningful, but there is no usual real ordering compatible with complex arithmetic.",
+      "board": [
+        "(2+3i)(1−i) = 5+i",
+        "Re(a+ib)=a; Im(a+ib)=b",
+        "i, −1, −i, 1: period 4",
+        "i²³ = i³ = −i"
+      ]
+    },
+    {
+      "title": "Use conjugates for modulus and division",
+      "formula": "z z̄ = |z|² = a²+b²; 1/z = z̄/|z|² for z≠0",
+      "points": [
+        "The conjugate reverses the sign of the imaginary part.",
+        "Modulus is a nonnegative real length.",
+        "Division by a complex number requires a nonzero denominator."
+      ],
+      "script": "The conjugate of a plus i b is a minus i b. Their product is a squared plus b squared, a nonnegative real number. Its square root is the modulus, the distance of the point from the origin. Thus three plus four i has modulus five and conjugate three minus four i. Conjugation respects addition and multiplication, while the modulus of a product equals the product of the moduli. To divide by a nonzero complex number, multiply numerator and denominator by the conjugate of the denominator. For three plus four i divided by one minus two i, multiply by one plus two i. The numerator becomes negative five plus ten i, and the denominator becomes five. The quotient is negative one plus two i. Check by multiplying that quotient by one minus two i to recover three plus four i. The reciprocal formula uses the conjugate divided by modulus squared, not divided by the modulus alone. If the denominator is zero, the formula is unavailable. Also, the modulus of a sum is at most the sum of the moduli, not generally equal to it. For one plus i and one minus i, the sum has modulus two, while the individual moduli add to two square root of two.",
+      "board": [
+        "z = 3+4i; z̄ = 3−4i",
+        "|z| = 5; zz̄ = 25",
+        "(3+4i)/(1−2i) = (−5+10i)/5",
+        "Quotient = −1+2i"
+      ]
+    },
+    {
+      "title": "Read the Argand plane and distance loci",
+      "formula": "|z−z₀| = distance between z and z₀",
+      "points": [
+        "The horizontal coordinate is the real part.",
+        "The vertical coordinate is the imaginary part.",
+        "A modulus equation can describe a circle or a line."
+      ],
+      "script": "In the Argand plane, a complex number a plus i b is the point with horizontal coordinate a and vertical coordinate b. This connects algebra to geometry. The modulus of z minus a fixed complex number z zero is the ordinary distance between their points. Consequently, modulus of z minus two equals three describes a circle centred at two, zero with radius three. It does not mean that the modulus of z is one. Squaring the nonnegative distance equation gives x minus two squared plus y squared equals nine when z is x plus i y. Equal distances from two fixed points describe their perpendicular bisector. For example, modulus of z minus one equals modulus of z plus one compares distances from one, zero and negative one, zero. Squaring and simplifying gives x equal to zero, the imaginary axis. Conjugation reflects a point across the real axis, while negation reflects it through the origin. Addition combines coordinate displacements. A modulus cannot be negative, so an equation asking a modulus to equal a negative real number has no solution. Keep the complex variable and its real coordinate components distinct while translating a geometric condition into algebra.",
+      "board": [
+        "z=x+iy ↔ point (x,y)",
+        "|z−2|=3: centre (2,0), radius 3",
+        "|z−1|=|z+1| ⇒ x=0",
+        "Conjugation reflects in the real axis"
+      ]
+    },
+    {
+      "title": "Choose arguments by quadrant and use polar form",
+      "formula": "z=r(cosθ+i sinθ), r>0; principal argument chosen in (−π,π]",
+      "points": [
+        "Arguments differ by integer multiples of 2π.",
+        "A tangent value alone does not fix the quadrant.",
+        "Zero has no defined argument."
+      ],
+      "script": "For a nonzero complex number, an argument is the angle its position vector makes with the positive real axis. Angles differing by an integer multiple of two pi describe the same direction. We use the principal interval greater than negative pi and at most pi in this class. Always state the convention because another text may use a different endpoint convention. The point negative one plus i lies in quadrant two, has modulus square root of two, and principal argument three pi over four. Using only inverse tangent of imaginary part divided by real part would suggest negative pi over four and miss the quadrant. In polar form, write z as r times cosine theta plus i sine theta, with positive r equal to the modulus. Multiplication multiplies moduli and adds arguments; division by a nonzero number divides moduli and subtracts arguments. Reduce the angle to the chosen principal interval only after the operation. For example, i times i has modulus one and angle pi, giving negative one. The zero complex number has modulus zero but no defined direction, so its argument is undefined. Argument is also not additive across sums: determine the sum's coordinates before assigning its direction.",
+      "board": [
+        "−1+i: modulus √2",
+        "Quadrant II ⇒ Arg(z)=3π/4",
+        "Multiply: moduli ×, arguments +",
+        "Arg(0) is undefined"
+      ]
+    },
+    {
+      "title": "Solve quadratics over real and complex numbers",
+      "formula": "az²+bz+c=0, a≠0; z=(−b±√(b²−4ac))/(2a)",
+      "points": [
+        "Real coefficients and negative discriminant give conjugate roots.",
+        "A quadratic still has complex roots when it has no real roots.",
+        "Check a complex square root by squaring it."
+      ],
+      "script": "A quadratic equation has the form a z squared plus b z plus c equals zero with a nonzero. Completing the square gives the quadratic formula. For real coefficients, the discriminant b squared minus four a c classifies the roots. A positive value gives two distinct real roots; zero gives one repeated real root; a negative value gives two nonreal complex conjugate roots. For z squared minus two z plus five equals zero, the discriminant is negative sixteen. Its square roots are plus or minus four i, giving roots one plus two i and one minus two i. Substitute either root to check. Complex square roots can also be found by setting the square root equal to u plus i v and comparing real and imaginary parts after squaring. For three plus four i, equations u squared minus v squared equals three and two u v equals four are satisfied by u equal to two and v equal to one. Thus the two square roots are two plus i and negative two minus i. They are opposites, not complex conjugates of one another. Squaring is the final check, and a nonzero complex number has two square roots with opposite signs.",
+      "board": [
+        "z²−2z+5=0; D=−16",
+        "Roots: 1+2i and 1−2i",
+        "(2+i)² = 3+4i",
+        "Square roots: ±(2+i)"
+      ]
+    },
+    {
+      "title": "Keep parameter conditions attached to the discriminant",
+      "formula": "x²−2kx+k+2=0: D=4(k−2)(k+1)",
+      "points": [
+        "Check that the leading coefficient is nonzero.",
+        "Solve a factored discriminant inequality using intervals.",
+        "Repeated roots occur at discriminant zero."
+      ],
+      "script": "When a coefficient contains a parameter, begin by checking whether the equation remains quadratic. Then compute the discriminant with the signs of all coefficients included. Consider x squared minus two k x plus k plus two equals zero. Its leading coefficient is one for every real k. The discriminant is four k squared minus four k minus eight, which factors as four times k minus two times k plus one. Real roots require this expression to be nonnegative. Mark negative one and two on the parameter line. The two factors have the same sign outside the interval between them, so real roots occur for k at most negative one or k at least two. At either endpoint the root is repeated. For k between those values the roots are nonreal complex conjugates. Do not infer the interval from just one factor, and do not forget equality when the question permits repeated roots. As a separate warning, in k minus one times x squared plus two x plus one equals zero, k equal to one removes the squared term. That case is linear and must be solved directly. A discriminant formula derived under a nonzero leading coefficient cannot replace this separate check.",
+      "board": [
+        "x²−2kx+k+2=0",
+        "D = 4(k−2)(k+1)",
+        "Real roots: k≤−1 or k≥2",
+        "D=0 at k=−1 and k=2"
+      ]
+    },
+    {
+      "title": "Use root sums and products without finding each root",
+      "formula": "α+β=−b/a; αβ=c/a; α²+β²=(α+β)²−2αβ",
+      "points": [
+        "Vieta’s relations hold for complex and repeated roots too.",
+        "Track the leading coefficient when comparing coefficients.",
+        "A sum of squares differs from the square of a sum."
+      ],
+      "script": "Let alpha and beta be the roots of a x squared plus b x plus c equals zero, where a is nonzero. Expanding a times x minus alpha times x minus beta and comparing coefficients gives alpha plus beta equal to negative b over a, and alpha beta equal to c over a. These identities hold whether roots are real, repeated or nonreal complex. They are often more efficient than solving for each root. For two x squared minus five x plus two equals zero, the sum is five halves and the product is one. The sum of their squares is the square of five halves minus twice one, giving seventeen quarters. The square of a sum includes a cross term, so it is not the same as the sum of squares. The sum of reciprocals is the root sum divided by the root product, provided neither root is zero. Here it is five halves. Higher symmetric expressions can be reduced using the same sum and product. For example, the sum of cubes equals the cube of the sum minus three times the product times the sum. Before dividing by the product, check c is nonzero; otherwise at least one root is zero and reciprocal expressions are undefined.",
+      "board": [
+        "2x²−5x+2=0",
+        "S = α+β = 5/2; P = αβ = 1",
+        "α²+β² = S²−2P = 17/4",
+        "1/α+1/β = S/P when P≠0"
+      ]
+    },
+    {
+      "title": "Form equations with given or transformed roots",
+      "formula": "Roots with sum S and product P: x²−Sx+P=0",
+      "points": [
+        "An equation is determined up to a nonzero scalar factor.",
+        "Shifted roots change both their sum and product.",
+        "Reciprocal roots require the original roots to be nonzero."
+      ],
+      "script": "To form a monic quadratic from two roots, calculate their sum S and product P, then write x squared minus S x plus P equals zero. Multiplying the whole equation by a nonzero constant gives the same roots. Starting from roots two and three, the sum is five and product is six, so the equation is x squared minus five x plus six equals zero. If the new roots are one more than each original root, they are three and four. Their sum is seven and product twelve, giving x squared minus seven x plus twelve equals zero. More generally, shifting both roots by h changes the sum to S plus two h and product to P plus h S plus h squared. Reciprocal roots have sum S divided by P and product one divided by P, requiring P nonzero. For roots two and three, multiply the monic reciprocal equation by six to obtain six x squared minus five x plus one equals zero. A real coefficient quadratic with a nonreal root must also have its conjugate as the other root. Thus a root one plus two i gives the companion one minus two i and equation x squared minus two x plus five equals zero.",
+      "board": [
+        "Roots 2,3: x²−5x+6=0",
+        "Shifted roots 3,4: x²−7x+12=0",
+        "Reciprocals: 6x²−5x+1=0",
+        "Roots 1±2i: x²−2x+5=0"
+      ]
+    },
+    {
+      "title": "Handle common roots and changes in degree",
+      "formula": "Subtract equations to obtain a necessary common-root condition; substitute back",
+      "points": [
+        "A necessary condition can admit candidates that fail the original equations.",
+        "Do not divide by a possible zero root without checking it.",
+        "An exceptional parameter may change the equation’s degree."
+      ],
+      "script": "Two equations sharing a root must both vanish at the same input. Subtracting them can simplify the search, but any candidate must still satisfy the originals. Compare x squared minus three x plus two equals zero and x squared minus k x plus two equals zero. Subtracting gives three minus k times x equals zero. The first polynomial has roots one and two, so the common root cannot be zero. Therefore k equals three. At that value the two polynomials coincide and share both roots. If you divided by x without first excluding zero, the reasoning would have missed a possible case in another problem. Degree changes deserve the same care. For k minus one times x squared plus two x plus one equals zero, k equal to one gives the linear equation two x plus one equals zero, whose solution is negative one half. For k not equal to one the equation is quadratic, and its discriminant is four times two minus k. At k equal to two there is a repeated root negative one; for k greater than two there are no real roots. Parameter conclusions must retain the exceptional linear case instead of silently dividing by zero.",
+      "board": [
+        "x²−3x+2=0 and x²−kx+2=0",
+        "Common root r≠0 ⇒ (3−k)r=0",
+        "Hence k=3; check both originals",
+        "k=1 in (k−1)x²+2x+1 gives x=−½"
+      ]
+    },
+    {
+      "title": "Locate roots relative to a boundary and solve sign intervals",
+      "formula": "Both roots of x²−6x+k=0 exceed 1 iff 5<k≤9",
+      "points": [
+        "Ensure roots are real before comparing their positions.",
+        "Shift the boundary to zero, then use sum and product.",
+        "Repeated roots may qualify unless distinctness is required."
+      ],
+      "script": "A root location question needs more than a positive product. First ensure real roots, then combine their sum and product with the desired boundary. For x squared minus six x plus k equals zero, ask when both roots are strictly greater than one, allowing a repeated root. Set x equal to t plus one so the condition becomes both t roots positive. The transformed equation is t squared minus four t plus k minus five equals zero. Its root sum is four, already positive. For real roots with a positive sum, a positive product forces both to be positive; a negative product would put them on opposite sides of zero. Thus require k greater than five. Reality of the roots requires the original discriminant thirty six minus four k to be nonnegative, so k is at most nine. Combining gives k greater than five and at most nine. At k equal to five, one original root is exactly one and fails the strict condition. At k equal to nine, both roots equal three and qualify. Finally, for an upward opening quadratic with real roots two and three, the expression is nonpositive between those roots and positive outside. Mark endpoints according to whether equality is permitted.",
+      "board": [
+        "x=t+1 ⇒ t²−4t+(k−5)=0",
+        "Sₜ=4>0; Pₜ=k−5>0",
+        "D≥0 ⇒ k≤9; combine: 5<k≤9",
+        "x²−5x+6≤0 ⇒ x∈[2,3]"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What are the roots of x² - 5x + 6 = 0?",
+      "options": [
+        "-2 and -3",
+        "2 and 3",
+        "1 and 6",
+        "-1 and -6"
+      ],
+      "answer": 1,
+      "explanation": "The factorization is (x - 2)(x - 3). The roots sum to 5 and multiply to 6, as required by the coefficients."
+    },
+    {
+      "question": "What is the discriminant of 2x² + 3x + 5 = 0?",
+      "options": [
+        "49",
+        "-31",
+        "31",
+        "-49"
+      ],
+      "answer": 1,
+      "explanation": "D = b² - 4ac = 3² - 4 × 2 × 5 = 9 - 40 = -31. The equation has no real roots, but it has complex roots."
+    },
+    {
+      "question": "If α and β are roots of x² - 7x + 10 = 0, what is α² + β²?",
+      "options": [
+        "49",
+        "20",
+        "29",
+        "69"
+      ],
+      "answer": 2,
+      "explanation": "The sum is 7 and product is 10. Thus α² + β² = (α + β)² - 2αβ = 49 - 20 = 29."
+    },
+    {
+      "question": "Solve (x - 1)(x - 4) < 0 over the reals.",
+      "options": [
+        "x < 1 or x > 4",
+        "1 < x < 4",
+        "1 ≤ x ≤ 4",
+        "All real x"
+      ],
+      "answer": 1,
+      "explanation": "The product is negative only between the two distinct roots. The strict inequality excludes the roots themselves."
+    },
+    {
+      "question": "When k = 1, what does (k - 1)x² + 2x + 1 = 0 become?",
+      "options": [
+        "A quadratic with a double root",
+        "An equation with no solution",
+        "The linear equation 2x + 1 = 0",
+        "An identity true for every x"
+      ],
+      "answer": 2,
+      "explanation": "The x² coefficient vanishes at k = 1. The remaining equation is linear and has x = -1/2; the quadratic formula is not applicable with a = 0."
+    },
+    {
+      "question": "The value of i²³ is:",
+      "options": [
+        "i",
+        "−i",
+        "1",
+        "−1"
+      ],
+      "answer": 1,
+      "explanation": "The powers of i repeat with period four. Since 23 leaves remainder 3 when divided by 4, i²³=i³=−i."
+    },
+    {
+      "question": "The quotient (3+4i)/(1−2i) is:",
+      "options": [
+        "1+2i",
+        "−1−2i",
+        "−1+2i",
+        "3+4i"
+      ],
+      "answer": 2,
+      "explanation": "Multiply by the denominator’s conjugate 1+2i. The numerator is −5+10i and denominator 5, giving −1+2i."
+    },
+    {
+      "question": "For z=3+4i, the product zz̄ equals:",
+      "options": [
+        "5",
+        "7",
+        "−7",
+        "25"
+      ],
+      "answer": 3,
+      "explanation": "The product of a complex number and its conjugate is its modulus squared: 3²+4²=25, a nonnegative real number."
+    },
+    {
+      "question": "Using principal arguments in (−π,π], Arg(−1+i) is:",
+      "options": [
+        "3π/4",
+        "−π/4",
+        "π/4",
+        "−3π/4"
+      ],
+      "answer": 0,
+      "explanation": "The point is in quadrant II with reference angle π/4. Its principal argument is therefore π−π/4=3π/4."
+    },
+    {
+      "question": "The locus |z−2|=3 is:",
+      "options": [
+        "A line x=2",
+        "A circle centred at (2,0) with radius 3",
+        "A circle centred at (0,0) with radius 1",
+        "An empty set"
+      ],
+      "answer": 1,
+      "explanation": "The modulus |z−z₀| measures distance from the point z₀. Here z₀=2+0i, so a fixed distance 3 describes the stated circle."
+    },
+    {
+      "question": "The argument of the zero complex number is:",
+      "options": [
+        "0",
+        "π",
+        "Undefined",
+        "2π"
+      ],
+      "answer": 2,
+      "explanation": "The zero vector has no direction. Although its modulus is zero, assigning it a unique argument is not defined."
+    },
+    {
+      "question": "The roots of z²−2z+5=0 are:",
+      "options": [
+        "1±2",
+        "−1±2i",
+        "2±i",
+        "1±2i"
+      ],
+      "answer": 3,
+      "explanation": "The discriminant is 4−20=−16. The quadratic formula gives (2±4i)/2=1±2i, a conjugate pair."
+    },
+    {
+      "question": "The two square roots of 3+4i are:",
+      "options": [
+        "±(2+i)",
+        "2±i",
+        "±(1+2i)",
+        "3±4i"
+      ],
+      "answer": 0,
+      "explanation": "Squaring 2+i gives 4+4i−1=3+4i. Its negative has the same square; the conjugate 2−i squares to 3−4i."
+    },
+    {
+      "question": "For real k, x²−2kx+k+2=0 has real roots when:",
+      "options": [
+        "−1<k<2",
+        "k≤−1 or k≥2",
+        "k≥−1",
+        "k≤2"
+      ],
+      "answer": 1,
+      "explanation": "The discriminant is 4(k−2)(k+1). It is nonnegative outside the open interval (−1,2), including both repeated-root endpoints."
+    },
+    {
+      "question": "If α,β are roots of 2x²−5x+2=0, α²+β² equals:",
+      "options": [
+        "25/4",
+        "5/2",
+        "17/4",
+        "1"
+      ],
+      "answer": 2,
+      "explanation": "Vieta gives S=5/2 and P=1. The sum of squares is S²−2P=25/4−2=17/4, including the cross-term correction."
+    },
+    {
+      "question": "If the roots 2,3 are each increased by 1, their monic quadratic is:",
+      "options": [
+        "x²−5x+6=0",
+        "x²+7x+12=0",
+        "x²−6x+7=0",
+        "x²−7x+12=0"
+      ],
+      "answer": 3,
+      "explanation": "The new roots are 3 and 4, whose sum is 7 and product is 12. A monic equation is x²−Sx+P=0."
+    },
+    {
+      "question": "The reciprocals of the roots of x²−5x+6=0 satisfy:",
+      "options": [
+        "6x²−5x+1=0",
+        "x²−5x+6=0",
+        "x²−6x+5=0",
+        "6x²+5x+1=0"
+      ],
+      "answer": 0,
+      "explanation": "The original roots 2 and 3 are nonzero. Their reciprocals have sum 5/6 and product 1/6; multiply the monic equation by 6."
+    },
+    {
+      "question": "At k=1, the equation (k−1)x²+2x+1=0 has solution:",
+      "options": [
+        "No solution",
+        "x=−1/2",
+        "x=1/2",
+        "A repeated root x=−1"
+      ],
+      "answer": 1,
+      "explanation": "The squared term vanishes at k=1, leaving the linear equation 2x+1=0. The quadratic formula cannot be used with a zero leading coefficient."
+    },
+    {
+      "question": "The equations x²−3x+2=0 and x²−kx+2=0 have a common root only when:",
+      "options": [
+        "k=0",
+        "k=2",
+        "k=3",
+        "k=−3"
+      ],
+      "answer": 2,
+      "explanation": "Subtracting gives (3−k)r=0 at a common root r. The first equation’s roots are 1 and 2, so r≠0 and k=3."
+    },
+    {
+      "question": "Allowing repeated roots, both roots of x²−6x+k=0 are strictly greater than 1 when:",
+      "options": [
+        "k>5",
+        "k≤9",
+        "5≤k<9",
+        "5<k≤9"
+      ],
+      "answer": 3,
+      "explanation": "Shift x=t+1. The t-root sum is 4 and product k−5, requiring k>5; real roots require 36−4k≥0, hence k≤9."
+    },
+    {
+      "question": "The real solution set of x²−5x+6≤0 is:",
+      "options": [
+        "[2,3]",
+        "(−∞,2]∪[3,∞)",
+        "(2,3)",
+        "ℝ"
+      ],
+      "answer": 0,
+      "explanation": "Factor as (x−2)(x−3). An upward opening quadratic is negative between its roots and zero at them, so both endpoints are included."
+    }
+  ]
+}

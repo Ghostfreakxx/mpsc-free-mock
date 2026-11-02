@@ -1,0 +1,1361 @@
+{
+  "duration": 727.3680000000186,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 72.45600000000185
+    },
+    {
+      "start": 72.45600000000185,
+      "end": 147.12000000000378
+    },
+    {
+      "start": 147.12000000000378,
+      "end": 220.9680000000057
+    },
+    {
+      "start": 220.9680000000057,
+      "end": 293.0160000000075
+    },
+    {
+      "start": 293.0160000000075,
+      "end": 362.78400000000926
+    },
+    {
+      "start": 362.78400000000926,
+      "end": 437.23200000001117
+    },
+    {
+      "start": 437.23200000001117,
+      "end": 513.3840000000132
+    },
+    {
+      "start": 513.3840000000132,
+      "end": 584.904000000015
+    },
+    {
+      "start": 584.904000000015,
+      "end": 653.9520000000167
+    },
+    {
+      "start": 653.9520000000167,
+      "end": 727.3680000000186
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 4.7353847454755735,
+      "text": "A complex number can be represented as an ordered pair of real numbers a, b,",
+      "chapter": 0
+    },
+    {
+      "start": 4.7353847454755735,
+      "end": 4.860000133514404,
+      "text": "or",
+      "chapter": 0
+    },
+    {
+      "start": 4.860000133514404,
+      "end": 8.579999923706055,
+      "text": "written a plus i b, where i squared equals negative one.",
+      "chapter": 0
+    },
+    {
+      "start": 9.140000343322754,
+      "end": 13.100000381469727,
+      "text": "Its real part is a and its imaginary part is b, not i b.",
+      "chapter": 0
+    },
+    {
+      "start": 13.760000228881836,
+      "end": 16.5,
+      "text": "Equality means both corresponding real components agree.",
+      "chapter": 0
+    },
+    {
+      "start": 17.280000686645508,
+      "end": 19.68000030517578,
+      "text": "Addition and subtraction operate component by component.",
+      "chapter": 0
+    },
+    {
+      "start": 20.520000457763672,
+      "end": 24.260000228881836,
+      "text": "Multiplication follows distribution together with i squared equals negative",
+      "chapter": 0
+    },
+    {
+      "start": 24.260000228881836,
+      "end": 24.540000915527344,
+      "text": "one.",
+      "chapter": 0
+    },
+    {
+      "start": 24.920000076293945,
+      "end": 30.81999969482422,
+      "text": "For example, two plus three i times one minus i equals two minus two i plus",
+      "chapter": 0
+    },
+    {
+      "start": 30.81999969482422,
+      "end": 32.599998474121094,
+      "text": "three i minus three i squared.",
+      "chapter": 0
+    },
+    {
+      "start": 33.439998626708984,
+      "end": 36.540000915527344,
+      "text": "Replacing i squared by negative one gives five plus i.",
+      "chapter": 0
+    },
+    {
+      "start": 37.15999984741211,
+      "end": 41.599998474121094,
+      "text": "Powers of i repeat every four steps: i, negative one, negative i, one.",
+      "chapter": 0
+    },
+    {
+      "start": 42.34000015258789,
+      "end": 44.63999938964844,
+      "text": "Divide an integer exponent by four and use its remainder.",
+      "chapter": 0
+    },
+    {
+      "start": 44.63999938964844,
+      "end": 48.35538345728165,
+      "text": "Twenty three leaves remainder three, so i to the power twenty three is",
+      "chapter": 0
+    },
+    {
+      "start": 48.35538345728165,
+      "end": 48.779998779296875,
+      "text": "negative",
+      "chapter": 0
+    },
+    {
+      "start": 48.779998779296875,
+      "end": 49.099998474121094,
+      "text": "i.",
+      "chapter": 0
+    },
+    {
+      "start": 49.560001373291016,
+      "end": 53.060001373291016,
+      "text": "For negative exponents, use reciprocals or extend the same four step cycle.",
+      "chapter": 0
+    },
+    {
+      "start": 53.47999954223633,
+      "end": 57.46769156822791,
+      "text": "A complex number is real exactly when its imaginary part is zero, and is",
+      "chapter": 0
+    },
+    {
+      "start": 57.46769156822791,
+      "end": 57.79999923706055,
+      "text": "purely",
+      "chapter": 0
+    },
+    {
+      "start": 57.79999923706055,
+      "end": 61.380001068115234,
+      "text": "imaginary with nonzero imaginary component when its real part is zero.",
+      "chapter": 0
+    },
+    {
+      "start": 61.900001525878906,
+      "end": 65.31999969482422,
+      "text": "Do not apply ordinary greater than comparisons to arbitrary complex numbers.",
+      "chapter": 0
+    },
+    {
+      "start": 66.12000274658203,
+      "end": 69.58000183105469,
+      "text": "Algebraic equality and modulus comparisons are meaningful, but there is no",
+      "chapter": 0
+    },
+    {
+      "start": 69.58000183105469,
+      "end": 72.0999984741211,
+      "text": "usual real ordering compatible with complex arithmetic.",
+      "chapter": 0
+    },
+    {
+      "start": 72.45600000000185,
+      "end": 77.3760000762958,
+      "text": "The conjugate of a plus i b is a minus i b.",
+      "chapter": 1
+    },
+    {
+      "start": 77.3760000762958,
+      "end": 81.27599969482607,
+      "text": "Their product is a squared plus b squared, a nonnegative real number.",
+      "chapter": 1
+    },
+    {
+      "start": 81.93599954223818,
+      "end": 85.65599980926699,
+      "text": "Its square root is the modulus, the distance of the point from the origin.",
+      "chapter": 1
+    },
+    {
+      "start": 86.43599954223818,
+      "end": 91.85599961853212,
+      "text": "Thus three plus four i has modulus five and conjugate three minus four i.",
+      "chapter": 1
+    },
+    {
+      "start": 91.85599961853212,
+      "end": 96.21600022888369,
+      "text": "Conjugation respects addition and multiplication, while the modulus of a",
+      "chapter": 1
+    },
+    {
+      "start": 96.21600022888369,
+      "end": 97.97600045776552,
+      "text": "product equals the product of the moduli.",
+      "chapter": 1
+    },
+    {
+      "start": 98.67599931335634,
+      "end": 103.3760000762958,
+      "text": "To divide by a nonzero complex number, multiply numerator and denominator by",
+      "chapter": 1
+    },
+    {
+      "start": 103.3760000762958,
+      "end": 104.73599877929873,
+      "text": "the conjugate of the denominator.",
+      "chapter": 1
+    },
+    {
+      "start": 105.53600183105654,
+      "end": 110.9960009155292,
+      "text": "For three plus four i divided by one minus two i, multiply by one plus two i.",
+      "chapter": 1
+    },
+    {
+      "start": 110.9960009155292,
+      "end": 115.17600122070498,
+      "text": "The numerator becomes negative five plus ten i, and the denominator becomes",
+      "chapter": 1
+    },
+    {
+      "start": 115.17600122070498,
+      "end": 115.57599893188662,
+      "text": "five.",
+      "chapter": 1
+    },
+    {
+      "start": 116.27599969482607,
+      "end": 119.35600152588076,
+      "text": "The quotient is negative one plus two i.",
+      "chapter": 1
+    },
+    {
+      "start": 119.35600152588076,
+      "end": 123.29600015258974,
+      "text": "Check by multiplying that quotient by one minus two i to recover three plus",
+      "chapter": 1
+    },
+    {
+      "start": 123.29600015258974,
+      "end": 124.1560007629413,
+      "text": "four i.",
+      "chapter": 1
+    },
+    {
+      "start": 124.1560007629413,
+      "end": 128.61599984741395,
+      "text": "The reciprocal formula uses the conjugate divided by modulus squared, not",
+      "chapter": 1
+    },
+    {
+      "start": 128.61599984741395,
+      "end": 129.9760004577655,
+      "text": "divided by the modulus alone.",
+      "chapter": 1
+    },
+    {
+      "start": 129.9760004577655,
+      "end": 133.53600183105652,
+      "text": "If the denominator is zero, the formula is unavailable.",
+      "chapter": 1
+    },
+    {
+      "start": 134.49600091552918,
+      "end": 138.6160036621112,
+      "text": "Also, the modulus of a sum is at most the sum of the moduli, not generally",
+      "chapter": 1
+    },
+    {
+      "start": 138.6160036621112,
+      "end": 139.25600305175965,
+      "text": "equal to it.",
+      "chapter": 1
+    },
+    {
+      "start": 139.77599969482606,
+      "end": 144.7359987792987,
+      "text": "For one plus i and one minus i, the sum has modulus two, while the individual",
+      "chapter": 1
+    },
+    {
+      "start": 144.7359987792987,
+      "end": 146.97599664306824,
+      "text": "moduli add to two square root of two.",
+      "chapter": 1
+    },
+    {
+      "start": 147.12000000000378,
+      "end": 152.10000001907727,
+      "text": "In the Argand plane, a complex number a plus i b is the point with horizontal",
+      "chapter": 2
+    },
+    {
+      "start": 152.10000001907727,
+      "end": 154.46000015259168,
+      "text": "coordinate a and vertical coordinate b.",
+      "chapter": 2
+    },
+    {
+      "start": 155.12000000000378,
+      "end": 156.8400002670326,
+      "text": "This connects algebra to geometry.",
+      "chapter": 2
+    },
+    {
+      "start": 157.46000015259168,
+      "end": 162.23999988556287,
+      "text": "The modulus of z minus a fixed complex number z zero is the ordinary distance",
+      "chapter": 2
+    },
+    {
+      "start": 162.23999988556287,
+      "end": 163.33999931335828,
+      "text": "between their points.",
+      "chapter": 2
+    },
+    {
+      "start": 164.25999938965222,
+      "end": 168.68359002529425,
+      "text": "Consequently, modulus of z minus two equals three describes a circle centred",
+      "chapter": 2
+    },
+    {
+      "start": 168.68359002529425,
+      "end": 168.80000030517957,
+      "text": "at",
+      "chapter": 2
+    },
+    {
+      "start": 168.80000030517957,
+      "end": 170.16000091553113,
+      "text": "two, zero with radius three.",
+      "chapter": 2
+    },
+    {
+      "start": 170.54000007629773,
+      "end": 173.35999977112195,
+      "text": "It does not mean that the modulus of z is one.",
+      "chapter": 2
+    },
+    {
+      "start": 173.35999977112195,
+      "end": 178.57999908447644,
+      "text": "Squaring the nonnegative distance equation gives x minus two squared plus y",
+      "chapter": 2
+    },
+    {
+      "start": 178.57999908447644,
+      "end": 182.23999893188855,
+      "text": "squared equals nine when z is x plus i y.",
+      "chapter": 2
+    },
+    {
+      "start": 182.23999893188855,
+      "end": 186.0999995422401,
+      "text": "Equal distances from two fixed points describe their perpendicular bisector.",
+      "chapter": 2
+    },
+    {
+      "start": 186.98000061035535,
+      "end": 191.879998321537,
+      "text": "For example, modulus of z minus one equals modulus of z plus one compares",
+      "chapter": 2
+    },
+    {
+      "start": 191.879998321537,
+      "end": 194.70000183105847,
+      "text": "distances from one, zero and negative one, zero.",
+      "chapter": 2
+    },
+    {
+      "start": 195.55999862671277,
+      "end": 199.39999877930066,
+      "text": "Squaring and simplifying gives x equal to zero, the imaginary axis.",
+      "chapter": 2
+    },
+    {
+      "start": 200.12000000000378,
+      "end": 204.0999995422401,
+      "text": "Conjugation reflects a point across the real axis, while negation reflects it",
+      "chapter": 2
+    },
+    {
+      "start": 204.0999995422401,
+      "end": 205.12000000000378,
+      "text": "through the origin.",
+      "chapter": 2
+    },
+    {
+      "start": 205.71999847412488,
+      "end": 207.23999893188855,
+      "text": "Addition combines coordinate displacements.",
+      "chapter": 2
+    },
+    {
+      "start": 207.86000167847058,
+      "end": 211.9599963378944,
+      "text": "A modulus cannot be negative, so an equation asking a modulus to equal a",
+      "chapter": 2
+    },
+    {
+      "start": 211.9599963378944,
+      "end": 213.78000366211316,
+      "text": "negative real number has no solution.",
+      "chapter": 2
+    },
+    {
+      "start": 214.57999908447644,
+      "end": 218.4599963378944,
+      "text": "Keep the complex variable and its real coordinate components distinct while",
+      "chapter": 2
+    },
+    {
+      "start": 218.4599963378944,
+      "end": 220.70000183105847,
+      "text": "translating a geometric condition into algebra.",
+      "chapter": 2
+    },
+    {
+      "start": 220.9680000000057,
+      "end": 225.40800005722616,
+      "text": "For a nonzero complex number, an argument is the angle its position vector",
+      "chapter": 3
+    },
+    {
+      "start": 225.40800005722616,
+      "end": 227.06799990463827,
+      "text": "makes with the positive real axis.",
+      "chapter": 3
+    },
+    {
+      "start": 228.00799996185873,
+      "end": 231.64800030518148,
+      "text": "Angles differing by an integer multiple of two pi describe the same direction.",
+      "chapter": 3
+    },
+    {
+      "start": 232.407999580389,
+      "end": 236.48800045776937,
+      "text": "We use the principal interval greater than negative pi and at most pi in this",
+      "chapter": 3
+    },
+    {
+      "start": 236.48800045776937,
+      "end": 236.76800019074057,
+      "text": "class.",
+      "chapter": 3
+    },
+    {
+      "start": 237.48800045776937,
+      "end": 240.60299999046896,
+      "text": "Always state the convention because another text may use a different endpoint",
+      "chapter": 3
+    },
+    {
+      "start": 240.60299999046896,
+      "end": 241.04799992371176,
+      "text": "convention.",
+      "chapter": 3
+    },
+    {
+      "start": 241.82800061035726,
+      "end": 246.38800007629965,
+      "text": "The point negative one plus i lies in quadrant two, has modulus square root of",
+      "chapter": 3
+    },
+    {
+      "start": 246.38800007629965,
+      "end": 250.52800028338322,
+      "text": "two, and principal argument three pi over four.",
+      "chapter": 3
+    },
+    {
+      "start": 250.52800028338322,
+      "end": 253.64107653183163,
+      "text": "Using only inverse tangent of imaginary part divided by real part would",
+      "chapter": 3
+    },
+    {
+      "start": 253.64107653183163,
+      "end": 253.94799954224203,
+      "text": "suggest",
+      "chapter": 3
+    },
+    {
+      "start": 253.94799954224203,
+      "end": 256.1279998474178,
+      "text": "negative pi over four and miss the quadrant.",
+      "chapter": 3
+    },
+    {
+      "start": 256.7080016784725,
+      "end": 261.7515904634973,
+      "text": "In polar form, write z as r times cosine theta plus i sine theta, with",
+      "chapter": 3
+    },
+    {
+      "start": 261.7515904634973,
+      "end": 262.32800061035726,
+      "text": "positive",
+      "chapter": 3
+    },
+    {
+      "start": 262.32800061035726,
+      "end": 263.6480003051815,
+      "text": "r equal to the modulus.",
+      "chapter": 3
+    },
+    {
+      "start": 264.42799908447836,
+      "end": 268.82800061035726,
+      "text": "Multiplication multiplies moduli and adds arguments; division by a nonzero",
+      "chapter": 3
+    },
+    {
+      "start": 268.82800061035726,
+      "end": 271.387998168951,
+      "text": "number divides moduli and subtracts arguments.",
+      "chapter": 3
+    },
+    {
+      "start": 272.2080016784725,
+      "end": 275.387998168951,
+      "text": "Reduce the angle to the chosen principal interval only after the operation.",
+      "chapter": 3
+    },
+    {
+      "start": 275.92799908447836,
+      "end": 280.76799923706625,
+      "text": "For example, i times i has modulus one and angle pi, giving negative one.",
+      "chapter": 3
+    },
+    {
+      "start": 281.2879996948299,
+      "end": 285.42799908447836,
+      "text": "The zero complex number has modulus zero but no defined direction, so its",
+      "chapter": 3
+    },
+    {
+      "start": 285.42799908447836,
+      "end": 286.52799755859945,
+      "text": "argument is undefined.",
+      "chapter": 3
+    },
+    {
+      "start": 287.3680015258846,
+      "end": 290.9680000000057,
+      "text": "Argument is also not additive across sums: determine the sum's coordinates",
+      "chapter": 3
+    },
+    {
+      "start": 290.9680000000057,
+      "end": 292.34799725342367,
+      "text": "before assigning its direction.",
+      "chapter": 3
+    },
+    {
+      "start": 293.0160000000075,
+      "end": 298.91600009537495,
+      "text": "A quadratic equation has the form a z squared plus b z plus c equals zero with",
+      "chapter": 4
+    },
+    {
+      "start": 298.91600009537495,
+      "end": 300.5959999237136,
+      "text": "a nonzero.",
+      "chapter": 4
+    },
+    {
+      "start": 300.5959999237136,
+      "end": 302.4159996185378,
+      "text": "Completing the square gives the quadratic formula.",
+      "chapter": 4
+    },
+    {
+      "start": 303.4760000381545,
+      "end": 307.81717657606094,
+      "text": "For real coefficients, the discriminant b squared minus four a c classifies",
+      "chapter": 4
+    },
+    {
+      "start": 307.81717657606094,
+      "end": 308.39600011444844,
+      "text": "the roots.",
+      "chapter": 4
+    },
+    {
+      "start": 309.216000762947,
+      "end": 313.95600053406514,
+      "text": "A positive value gives two distinct real roots; zero gives one repeated real",
+      "chapter": 4
+    },
+    {
+      "start": 313.95600053406514,
+      "end": 317.77600022888936,
+      "text": "root; a negative value gives two nonreal complex conjugate roots.",
+      "chapter": 4
+    },
+    {
+      "start": 318.4159996185378,
+      "end": 322.6960003051833,
+      "text": "For z squared minus two z plus five equals zero, the discriminant is negative",
+      "chapter": 4
+    },
+    {
+      "start": 322.6960003051833,
+      "end": 323.95600053406514,
+      "text": "sixteen.",
+      "chapter": 4
+    },
+    {
+      "start": 323.95600053406514,
+      "end": 328.31599923706807,
+      "text": "Its square roots are plus or minus four i, giving roots one plus two i and one",
+      "chapter": 4
+    },
+    {
+      "start": 328.31599923706807,
+      "end": 330.17599984741963,
+      "text": "minus two i.",
+      "chapter": 4
+    },
+    {
+      "start": 330.17599984741963,
+      "end": 331.33599969483174,
+      "text": "Substitute either root to check.",
+      "chapter": 4
+    },
+    {
+      "start": 332.4759990844802,
+      "end": 335.8760006103591,
+      "text": "Complex square roots can also be found by setting the square root equal to u",
+      "chapter": 4
+    },
+    {
+      "start": 335.8760006103591,
+      "end": 339.3560001525954,
+      "text": "plus i v and comparing real and imaginary parts after squaring.",
+      "chapter": 4
+    },
+    {
+      "start": 340.1159984741286,
+      "end": 344.51984638860426,
+      "text": "For three plus four i, equations u squared minus v squared equals three and",
+      "chapter": 4
+    },
+    {
+      "start": 344.51984638860426,
+      "end": 344.6960003051833,
+      "text": "two",
+      "chapter": 4
+    },
+    {
+      "start": 344.6960003051833,
+      "end": 349.2759983215407,
+      "text": "u v equals four are satisfied by u equal to two and v equal to one.",
+      "chapter": 4
+    },
+    {
+      "start": 350.1159984741286,
+      "end": 353.5360004577712,
+      "text": "Thus the two square roots are two plus i and negative two minus i.",
+      "chapter": 4
+    },
+    {
+      "start": 354.23600122071065,
+      "end": 357.0160000000075,
+      "text": "They are opposites, not complex conjugates of one another.",
+      "chapter": 4
+    },
+    {
+      "start": 357.7959987793044,
+      "end": 361.35599633789815,
+      "text": "Squaring is the final check, and a nonzero complex number has two square roots",
+      "chapter": 4
+    },
+    {
+      "start": 361.35599633789815,
+      "end": 362.4960033569411,
+      "text": "with opposite signs.",
+      "chapter": 4
+    },
+    {
+      "start": 362.78400000000926,
+      "end": 366.6609232309874,
+      "text": "When a coefficient contains a parameter, begin by checking whether the",
+      "chapter": 5
+    },
+    {
+      "start": 366.6609232309874,
+      "end": 367.10400017167063,
+      "text": "equation",
+      "chapter": 5
+    },
+    {
+      "start": 367.10400017167063,
+      "end": 368.10400017167063,
+      "text": "remains quadratic.",
+      "chapter": 5
+    },
+    {
+      "start": 368.8639999237153,
+      "end": 372.22399958039256,
+      "text": "Then compute the discriminant with the signs of all coefficients included.",
+      "chapter": 5
+    },
+    {
+      "start": 373.384000381479,
+      "end": 377.6640001144502,
+      "text": "Consider x squared minus two k x plus k plus two equals zero.",
+      "chapter": 5
+    },
+    {
+      "start": 378.3239999618623,
+      "end": 380.84399946595164,
+      "text": "Its leading coefficient is one for every real k.",
+      "chapter": 5
+    },
+    {
+      "start": 381.46400030518504,
+      "end": 386.6440006103608,
+      "text": "The discriminant is four k squared minus four k minus eight, which factors as",
+      "chapter": 5
+    },
+    {
+      "start": 386.6440006103608,
+      "end": 389.8639999237153,
+      "text": "four times k minus two times k plus one.",
+      "chapter": 5
+    },
+    {
+      "start": 390.46400030518504,
+      "end": 394.16399916077586,
+      "text": "Real roots require this expression to be nonnegative.",
+      "chapter": 5
+    },
+    {
+      "start": 394.16399916077586,
+      "end": 396.56399877930613,
+      "text": "Mark negative one and two on the parameter line.",
+      "chapter": 5
+    },
+    {
+      "start": 397.2639995422456,
+      "end": 401.2439990844819,
+      "text": "The two factors have the same sign outside the interval between them, so real",
+      "chapter": 5
+    },
+    {
+      "start": 401.2439990844819,
+      "end": 404.9840007629487,
+      "text": "roots occur for k at most negative one or k at least two.",
+      "chapter": 5
+    },
+    {
+      "start": 405.70399816895457,
+      "end": 407.7639995422456,
+      "text": "At either endpoint the root is repeated.",
+      "chapter": 5
+    },
+    {
+      "start": 408.5839992370698,
+      "end": 412.3440013733003,
+      "text": "For k between those values the roots are nonreal complex conjugates.",
+      "chapter": 5
+    },
+    {
+      "start": 413.1039996948335,
+      "end": 416.9557958694942,
+      "text": "Do not infer the interval from just one factor, and do not forget equality",
+      "chapter": 5
+    },
+    {
+      "start": 416.9557958694942,
+      "end": 417.1640010681245,
+      "text": "when",
+      "chapter": 5
+    },
+    {
+      "start": 417.1640010681245,
+      "end": 418.7639995422456,
+      "text": "the question permits repeated roots.",
+      "chapter": 5
+    },
+    {
+      "start": 419.72399862671824,
+      "end": 424.54399832154246,
+      "text": "As a separate warning, in k minus one times x squared plus two x plus one",
+      "chapter": 5
+    },
+    {
+      "start": 424.54399832154246,
+      "end": 427.9040027465913,
+      "text": "equals zero, k equal to one removes the squared term.",
+      "chapter": 5
+    },
+    {
+      "start": 428.48399694825144,
+      "end": 431.1239963378999,
+      "text": "That case is linear and must be solved directly.",
+      "chapter": 5
+    },
+    {
+      "start": 431.7240024414155,
+      "end": 435.76400335694285,
+      "text": "A discriminant formula derived under a nonzero leading coefficient cannot",
+      "chapter": 5
+    },
+    {
+      "start": 435.76400335694285,
+      "end": 437.0440021362397,
+      "text": "replace this separate check.",
+      "chapter": 5
+    },
+    {
+      "start": 437.23200000001117,
+      "end": 442.7519999809377,
+      "text": "Let alpha and beta be the roots of a x squared plus b x plus c equals zero,",
+      "chapter": 6
+    },
+    {
+      "start": 443.2519999809377,
+      "end": 444.4319998092763,
+      "text": "where a is nonzero.",
+      "chapter": 6
+    },
+    {
+      "start": 445.63199961854144,
+      "end": 450.57200015259906,
+      "text": "Expanding a times x minus alpha times x minus beta and comparing coefficients",
+      "chapter": 6
+    },
+    {
+      "start": 450.57200015259906,
+      "end": 456.5319992370717,
+      "text": "gives alpha plus beta equal to negative b over a, and alpha beta equal to c",
+      "chapter": 6
+    },
+    {
+      "start": 456.5319992370717,
+      "end": 457.13199961854144,
+      "text": "over a.",
+      "chapter": 6
+    },
+    {
+      "start": 457.97199977112933,
+      "end": 462.57200015259906,
+      "text": "These identities hold whether roots are real, repeated or nonreal complex.",
+      "chapter": 6
+    },
+    {
+      "start": 462.8119999237172,
+      "end": 466.0319992370717,
+      "text": "They are often more efficient than solving for each root.",
+      "chapter": 6
+    },
+    {
+      "start": 466.95199931336566,
+      "end": 472.1635378482637,
+      "text": "For two x squared minus five x plus two equals zero, the sum is five halves",
+      "chapter": 6
+    },
+    {
+      "start": 472.1635378482637,
+      "end": 472.3719993896596,
+      "text": "and",
+      "chapter": 6
+    },
+    {
+      "start": 472.3719993896596,
+      "end": 473.33199847413226,
+      "text": "the product is one.",
+      "chapter": 6
+    },
+    {
+      "start": 473.8919998474233,
+      "end": 478.2920013733022,
+      "text": "The sum of their squares is the square of five halves minus twice one, giving",
+      "chapter": 6
+    },
+    {
+      "start": 478.2920013733022,
+      "end": 479.23200000001117,
+      "text": "seventeen quarters.",
+      "chapter": 6
+    },
+    {
+      "start": 479.9520012207143,
+      "end": 484.30548890083895,
+      "text": "The square of a sum includes a cross term, so it is not the same as the sum of",
+      "chapter": 6
+    },
+    {
+      "start": 484.30548890083895,
+      "end": 484.75200045777484,
+      "text": "squares.",
+      "chapter": 6
+    },
+    {
+      "start": 485.3719993896596,
+      "end": 490.1919990844838,
+      "text": "The sum of reciprocals is the root sum divided by the root product, provided",
+      "chapter": 6
+    },
+    {
+      "start": 490.1919990844838,
+      "end": 491.2920013733022,
+      "text": "neither root is zero.",
+      "chapter": 6
+    },
+    {
+      "start": 492.17199862672015,
+      "end": 493.3719993896596,
+      "text": "Here it is five halves.",
+      "chapter": 6
+    },
+    {
+      "start": 494.41200030518695,
+      "end": 498.01199877930804,
+      "text": "Higher symmetric expressions can be reduced using the same sum and product.",
+      "chapter": 6
+    },
+    {
+      "start": 498.9520012207143,
+      "end": 503.51199877930804,
+      "text": "For example, the sum of cubes equals the cube of the sum minus three times the",
+      "chapter": 6
+    },
+    {
+      "start": 503.51199877930804,
+      "end": 504.5519996948354,
+      "text": "product times the sum.",
+      "chapter": 6
+    },
+    {
+      "start": 505.59200061036273,
+      "end": 509.99405131336255,
+      "text": "Before dividing by the product, check c is nonzero; otherwise at least one",
+      "chapter": 6
+    },
+    {
+      "start": 509.99405131336255,
+      "end": 510.23200000001117,
+      "text": "root",
+      "chapter": 6
+    },
+    {
+      "start": 510.23200000001117,
+      "end": 513.0519996948353,
+      "text": "is zero and reciprocal expressions are undefined.",
+      "chapter": 6
+    },
+    {
+      "start": 513.3840000000132,
+      "end": 518.7440001335276,
+      "text": "To form a monic quadratic from two roots, calculate their sum S and product P,",
+      "chapter": 7
+    },
+    {
+      "start": 519.2440001335276,
+      "end": 522.8239995803965,
+      "text": "then write x squared minus S x plus P equals zero.",
+      "chapter": 7
+    },
+    {
+      "start": 523.7839996185435,
+      "end": 527.3040000763071,
+      "text": "Multiplying the whole equation by a nonzero constant gives the same roots.",
+      "chapter": 7
+    },
+    {
+      "start": 528.3040000763071,
+      "end": 532.8240005340708,
+      "text": "Starting from roots two and three, the sum is five and product is six, so the",
+      "chapter": 7
+    },
+    {
+      "start": 532.8240005340708,
+      "end": 536.3639995422495,
+      "text": "equation is x squared minus five x plus six equals zero.",
+      "chapter": 7
+    },
+    {
+      "start": 536.7639991607798,
+      "end": 540.8445125525191,
+      "text": "If the new roots are one more than each original root, they are three and",
+      "chapter": 7
+    },
+    {
+      "start": 540.8445125525191,
+      "end": 541.1239997711314,
+      "text": "four.",
+      "chapter": 7
+    },
+    {
+      "start": 541.6039993133677,
+      "end": 546.1040012207163,
+      "text": "Their sum is seven and product twelve, giving x squared minus seven x plus",
+      "chapter": 7
+    },
+    {
+      "start": 546.1040012207163,
+      "end": 547.503998931898,
+      "text": "twelve equals zero.",
+      "chapter": 7
+    },
+    {
+      "start": 547.9839984741343,
+      "end": 553.0840007629527,
+      "text": "More generally, shifting both roots by h changes the sum to S plus two h and",
+      "chapter": 7
+    },
+    {
+      "start": 553.0840007629527,
+      "end": 555.503998931898,
+      "text": "product to P plus h S plus h squared.",
+      "chapter": 7
+    },
+    {
+      "start": 556.3439990844859,
+      "end": 560.5239993896616,
+      "text": "Reciprocal roots have sum S divided by P and product one divided by P,",
+      "chapter": 7
+    },
+    {
+      "start": 560.9240009155405,
+      "end": 562.6639987793101,
+      "text": "requiring P nonzero.",
+      "chapter": 7
+    },
+    {
+      "start": 562.6639987793101,
+      "end": 566.9440013733042,
+      "text": "For roots two and three, multiply the monic reciprocal equation by six to",
+      "chapter": 7
+    },
+    {
+      "start": 566.9440013733042,
+      "end": 570.6040012207163,
+      "text": "obtain six x squared minus five x plus one equals zero.",
+      "chapter": 7
+    },
+    {
+      "start": 570.9640018310679,
+      "end": 575.2640010681284,
+      "text": "A real coefficient quadratic with a nonreal root must also have its conjugate",
+      "chapter": 7
+    },
+    {
+      "start": 575.2640010681284,
+      "end": 576.12400167848,
+      "text": "as the other root.",
+      "chapter": 7
+    },
+    {
+      "start": 576.9640018310679,
+      "end": 581.8240024414195,
+      "text": "Thus a root one plus two i gives the companion one minus two i and equation x",
+      "chapter": 7
+    },
+    {
+      "start": 581.8240024414195,
+      "end": 584.5440036621226,
+      "text": "squared minus two x plus five equals zero.",
+      "chapter": 7
+    },
+    {
+      "start": 584.904000000015,
+      "end": 588.8040000953824,
+      "text": "Two equations sharing a root must both vanish at the same input.",
+      "chapter": 8
+    },
+    {
+      "start": 589.8440000572355,
+      "end": 593.8039996185453,
+      "text": "Subtracting them can simplify the search, but any candidate must still satisfy",
+      "chapter": 8
+    },
+    {
+      "start": 593.8039996185453,
+      "end": 594.6240002670438,
+      "text": "the originals.",
+      "chapter": 8
+    },
+    {
+      "start": 595.4839999237211,
+      "end": 600.6439997711332,
+      "text": "Compare x squared minus three x plus two equals zero and x squared minus k x",
+      "chapter": 8
+    },
+    {
+      "start": 600.6439997711332,
+      "end": 602.2239996948392,
+      "text": "plus two equals zero.",
+      "chapter": 8
+    },
+    {
+      "start": 602.6840006866605,
+      "end": 605.2839991607816,
+      "text": "Subtracting gives three minus k times x equals zero.",
+      "chapter": 8
+    },
+    {
+      "start": 605.8440005340726,
+      "end": 610.1640002288968,
+      "text": "The first polynomial has roots one and two, so the common root cannot be zero.",
+      "chapter": 8
+    },
+    {
+      "start": 610.7440001526029,
+      "end": 612.0639998474271,
+      "text": "Therefore k equals three.",
+      "chapter": 8
+    },
+    {
+      "start": 612.5639998474271,
+      "end": 616.2039992370755,
+      "text": "At that value the two polynomials coincide and share both roots.",
+      "chapter": 8
+    },
+    {
+      "start": 616.9840018310697,
+      "end": 621.3839995422513,
+      "text": "If you divided by x without first excluding zero, the reasoning would have",
+      "chapter": 8
+    },
+    {
+      "start": 621.3839995422513,
+      "end": 622.9440009155423,
+      "text": "missed a possible case in another problem.",
+      "chapter": 8
+    },
+    {
+      "start": 624.0239989318998,
+      "end": 625.6839987793119,
+      "text": "Degree changes deserve the same care.",
+      "chapter": 8
+    },
+    {
+      "start": 626.4440009155423,
+      "end": 631.020922378555,
+      "text": "For k minus one times x squared plus two x plus one equals zero, k equal to",
+      "chapter": 8
+    },
+    {
+      "start": 631.020922378555,
+      "end": 631.2039992370755,
+      "text": "one",
+      "chapter": 8
+    },
+    {
+      "start": 631.2039992370755,
+      "end": 635.343998626724,
+      "text": "gives the linear equation two x plus one equals zero, whose solution is",
+      "chapter": 8
+    },
+    {
+      "start": 635.343998626724,
+      "end": 636.1639983215482,
+      "text": "negative one half.",
+      "chapter": 8
+    },
+    {
+      "start": 636.6839987793119,
+      "end": 641.0840003051908,
+      "text": "For k not equal to one the equation is quadratic, and its discriminant is four",
+      "chapter": 8
+    },
+    {
+      "start": 641.0840003051908,
+      "end": 642.1639983215482,
+      "text": "times two minus k.",
+      "chapter": 8
+    },
+    {
+      "start": 642.7840010681302,
+      "end": 646.8224633401874,
+      "text": "At k equal to two there is a repeated root negative one; for k greater than",
+      "chapter": 8
+    },
+    {
+      "start": 646.8224633401874,
+      "end": 646.9840018310697,
+      "text": "two",
+      "chapter": 8
+    },
+    {
+      "start": 647.2840010681302,
+      "end": 648.1839987793119,
+      "text": "there are no real roots.",
+      "chapter": 8
+    },
+    {
+      "start": 649.2040030517728,
+      "end": 652.5840003051908,
+      "text": "Parameter conclusions must retain the exceptional linear case instead of",
+      "chapter": 8
+    },
+    {
+      "start": 652.5840003051908,
+      "end": 653.7439963379056,
+      "text": "silently dividing by zero.",
+      "chapter": 8
+    },
+    {
+      "start": 653.9520000000167,
+      "end": 657.0719998855758,
+      "text": "A root location question needs more than a positive product.",
+      "chapter": 9
+    },
+    {
+      "start": 657.791999914186,
+      "end": 661.8120001335311,
+      "text": "First ensure real roots, then combine their sum and product with the desired",
+      "chapter": 9
+    },
+    {
+      "start": 661.8120001335311,
+      "end": 662.1919997711349,
+      "text": "boundary.",
+      "chapter": 9
+    },
+    {
+      "start": 663.0719998855758,
+      "end": 668.351999618547,
+      "text": "For x squared minus six x plus k equals zero, ask when both roots are strictly",
+      "chapter": 9
+    },
+    {
+      "start": 668.351999618547,
+      "end": 670.6320003051925,
+      "text": "greater than one, allowing a repeated root.",
+      "chapter": 9
+    },
+    {
+      "start": 671.5720008392501,
+      "end": 675.7719996948409,
+      "text": "Set x equal to t plus one so the condition becomes both t roots positive.",
+      "chapter": 9
+    },
+    {
+      "start": 676.3920005340743,
+      "end": 681.0319999237228,
+      "text": "The transformed equation is t squared minus four t plus k minus five equals",
+      "chapter": 9
+    },
+    {
+      "start": 681.0319999237228,
+      "end": 681.351999618547,
+      "text": "zero.",
+      "chapter": 9
+    },
+    {
+      "start": 681.992000915544,
+      "end": 684.4520000000167,
+      "text": "Its root sum is four, already positive.",
+      "chapter": 9
+    },
+    {
+      "start": 685.1119998474288,
+      "end": 688.992000915544,
+      "text": "For real roots with a positive sum, a positive product forces both to be",
+      "chapter": 9
+    },
+    {
+      "start": 688.992000915544,
+      "end": 692.371998168962,
+      "text": "positive; a negative product would put them on opposite sides of zero.",
+      "chapter": 9
+    },
+    {
+      "start": 693.1320003051925,
+      "end": 694.7719996948409,
+      "text": "Thus require k greater than five.",
+      "chapter": 9
+    },
+    {
+      "start": 695.5320018310714,
+      "end": 699.5202040972755,
+      "text": "Reality of the roots requires the original discriminant thirty six minus four",
+      "chapter": 9
+    },
+    {
+      "start": 699.5202040972755,
+      "end": 699.5719989319015,
+      "text": "k",
+      "chapter": 9
+    },
+    {
+      "start": 699.5719989319015,
+      "end": 702.1119998474288,
+      "text": "to be nonnegative, so k is at most nine.",
+      "chapter": 9
+    },
+    {
+      "start": 703.0719989319015,
+      "end": 705.832001068132,
+      "text": "Combining gives k greater than five and at most nine.",
+      "chapter": 9
+    },
+    {
+      "start": 706.5120013733077,
+      "end": 710.6920016784835,
+      "text": "At k equal to five, one original root is exactly one and fails the strict",
+      "chapter": 9
+    },
+    {
+      "start": 710.6920016784835,
+      "end": 711.0919993896651,
+      "text": "condition.",
+      "chapter": 9
+    },
+    {
+      "start": 711.7519992370773,
+      "end": 715.3120006103683,
+      "text": "At k equal to nine, both roots equal three and qualify.",
+      "chapter": 9
+    },
+    {
+      "start": 716.1720012207198,
+      "end": 720.2719996948409,
+      "text": "Finally, for an upward opening quadratic with real roots two and three, the",
+      "chapter": 9
+    },
+    {
+      "start": 720.2719996948409,
+      "end": 723.871998168962,
+      "text": "expression is nonpositive between those roots and positive outside.",
+      "chapter": 9
+    },
+    {
+      "start": 724.7719996948409,
+      "end": 727.0919993896651,
+      "text": "Mark endpoints according to whether equality is permitted.",
+      "chapter": 9
+    }
+  ]
+}

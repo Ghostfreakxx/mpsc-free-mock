@@ -1,3 +1,4 @@
+import { extendSetsComplexLesson } from './sets-complex-study.ts';
 import { matricesDeterminantsLesson } from './matrices-determinants-study.ts';
 import{extendMoleInventoryBoundsLesson}from'./mole-inventory-bounds-study.ts';
 import{extendMoleOrganicBasisLesson}from'./mole-organic-basis-study.ts';
@@ -187,3 +188,5 @@ if (moleConceptCompanion) extendMoleOrganicStructureBalancesLesson(moleConceptCo
 if(moleConceptCompanion)extendMoleOrganicBasisLesson(moleConceptCompanion);
 
 if(moleConceptCompanion)extendMoleInventoryBoundsLesson(moleConceptCompanion);
+
+for(const lesson of studyLessons)extendSetsComplexLesson(lesson);

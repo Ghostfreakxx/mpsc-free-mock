@@ -1,0 +1,658 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.735
+A complex number can be represented as an ordered pair of real numbers a, b,
+
+00:00:04.735 --> 00:00:04.860
+or
+
+00:00:04.860 --> 00:00:08.580
+written a plus i b, where i squared equals negative one.
+
+00:00:09.140 --> 00:00:13.100
+Its real part is a and its imaginary part is b, not i b.
+
+00:00:13.760 --> 00:00:16.500
+Equality means both corresponding real components agree.
+
+00:00:17.280 --> 00:00:19.680
+Addition and subtraction operate component by component.
+
+00:00:20.520 --> 00:00:24.260
+Multiplication follows distribution together with i squared equals negative
+
+00:00:24.260 --> 00:00:24.540
+one.
+
+00:00:24.920 --> 00:00:30.820
+For example, two plus three i times one minus i equals two minus two i plus
+
+00:00:30.820 --> 00:00:32.600
+three i minus three i squared.
+
+00:00:33.440 --> 00:00:36.540
+Replacing i squared by negative one gives five plus i.
+
+00:00:37.160 --> 00:00:41.600
+Powers of i repeat every four steps: i, negative one, negative i, one.
+
+00:00:42.340 --> 00:00:44.640
+Divide an integer exponent by four and use its remainder.
+
+00:00:44.640 --> 00:00:48.355
+Twenty three leaves remainder three, so i to the power twenty three is
+
+00:00:48.355 --> 00:00:48.780
+negative
+
+00:00:48.780 --> 00:00:49.100
+i.
+
+00:00:49.560 --> 00:00:53.060
+For negative exponents, use reciprocals or extend the same four step cycle.
+
+00:00:53.480 --> 00:00:57.468
+A complex number is real exactly when its imaginary part is zero, and is
+
+00:00:57.468 --> 00:00:57.800
+purely
+
+00:00:57.800 --> 00:01:01.380
+imaginary with nonzero imaginary component when its real part is zero.
+
+00:01:01.900 --> 00:01:05.320
+Do not apply ordinary greater than comparisons to arbitrary complex numbers.
+
+00:01:06.120 --> 00:01:09.580
+Algebraic equality and modulus comparisons are meaningful, but there is no
+
+00:01:09.580 --> 00:01:12.100
+usual real ordering compatible with complex arithmetic.
+
+00:01:12.456 --> 00:01:17.376
+The conjugate of a plus i b is a minus i b.
+
+00:01:17.376 --> 00:01:21.276
+Their product is a squared plus b squared, a nonnegative real number.
+
+00:01:21.936 --> 00:01:25.656
+Its square root is the modulus, the distance of the point from the origin.
+
+00:01:26.436 --> 00:01:31.856
+Thus three plus four i has modulus five and conjugate three minus four i.
+
+00:01:31.856 --> 00:01:36.216
+Conjugation respects addition and multiplication, while the modulus of a
+
+00:01:36.216 --> 00:01:37.976
+product equals the product of the moduli.
+
+00:01:38.676 --> 00:01:43.376
+To divide by a nonzero complex number, multiply numerator and denominator by
+
+00:01:43.376 --> 00:01:44.736
+the conjugate of the denominator.
+
+00:01:45.536 --> 00:01:50.996
+For three plus four i divided by one minus two i, multiply by one plus two i.
+
+00:01:50.996 --> 00:01:55.176
+The numerator becomes negative five plus ten i, and the denominator becomes
+
+00:01:55.176 --> 00:01:55.576
+five.
+
+00:01:56.276 --> 00:01:59.356
+The quotient is negative one plus two i.
+
+00:01:59.356 --> 00:02:03.296
+Check by multiplying that quotient by one minus two i to recover three plus
+
+00:02:03.296 --> 00:02:04.156
+four i.
+
+00:02:04.156 --> 00:02:08.616
+The reciprocal formula uses the conjugate divided by modulus squared, not
+
+00:02:08.616 --> 00:02:09.976
+divided by the modulus alone.
+
+00:02:09.976 --> 00:02:13.536
+If the denominator is zero, the formula is unavailable.
+
+00:02:14.496 --> 00:02:18.616
+Also, the modulus of a sum is at most the sum of the moduli, not generally
+
+00:02:18.616 --> 00:02:19.256
+equal to it.
+
+00:02:19.776 --> 00:02:24.736
+For one plus i and one minus i, the sum has modulus two, while the individual
+
+00:02:24.736 --> 00:02:26.976
+moduli add to two square root of two.
+
+00:02:27.120 --> 00:02:32.100
+In the Argand plane, a complex number a plus i b is the point with horizontal
+
+00:02:32.100 --> 00:02:34.460
+coordinate a and vertical coordinate b.
+
+00:02:35.120 --> 00:02:36.840
+This connects algebra to geometry.
+
+00:02:37.460 --> 00:02:42.240
+The modulus of z minus a fixed complex number z zero is the ordinary distance
+
+00:02:42.240 --> 00:02:43.340
+between their points.
+
+00:02:44.260 --> 00:02:48.684
+Consequently, modulus of z minus two equals three describes a circle centred
+
+00:02:48.684 --> 00:02:48.800
+at
+
+00:02:48.800 --> 00:02:50.160
+two, zero with radius three.
+
+00:02:50.540 --> 00:02:53.360
+It does not mean that the modulus of z is one.
+
+00:02:53.360 --> 00:02:58.580
+Squaring the nonnegative distance equation gives x minus two squared plus y
+
+00:02:58.580 --> 00:03:02.240
+squared equals nine when z is x plus i y.
+
+00:03:02.240 --> 00:03:06.100
+Equal distances from two fixed points describe their perpendicular bisector.
+
+00:03:06.980 --> 00:03:11.880
+For example, modulus of z minus one equals modulus of z plus one compares
+
+00:03:11.880 --> 00:03:14.700
+distances from one, zero and negative one, zero.
+
+00:03:15.560 --> 00:03:19.400
+Squaring and simplifying gives x equal to zero, the imaginary axis.
+
+00:03:20.120 --> 00:03:24.100
+Conjugation reflects a point across the real axis, while negation reflects it
+
+00:03:24.100 --> 00:03:25.120
+through the origin.
+
+00:03:25.720 --> 00:03:27.240
+Addition combines coordinate displacements.
+
+00:03:27.860 --> 00:03:31.960
+A modulus cannot be negative, so an equation asking a modulus to equal a
+
+00:03:31.960 --> 00:03:33.780
+negative real number has no solution.
+
+00:03:34.580 --> 00:03:38.460
+Keep the complex variable and its real coordinate components distinct while
+
+00:03:38.460 --> 00:03:40.700
+translating a geometric condition into algebra.
+
+00:03:40.968 --> 00:03:45.408
+For a nonzero complex number, an argument is the angle its position vector
+
+00:03:45.408 --> 00:03:47.068
+makes with the positive real axis.
+
+00:03:48.008 --> 00:03:51.648
+Angles differing by an integer multiple of two pi describe the same direction.
+
+00:03:52.408 --> 00:03:56.488
+We use the principal interval greater than negative pi and at most pi in this
+
+00:03:56.488 --> 00:03:56.768
+class.
+
+00:03:57.488 --> 00:04:00.603
+Always state the convention because another text may use a different endpoint
+
+00:04:00.603 --> 00:04:01.048
+convention.
+
+00:04:01.828 --> 00:04:06.388
+The point negative one plus i lies in quadrant two, has modulus square root of
+
+00:04:06.388 --> 00:04:10.528
+two, and principal argument three pi over four.
+
+00:04:10.528 --> 00:04:13.641
+Using only inverse tangent of imaginary part divided by real part would
+
+00:04:13.641 --> 00:04:13.948
+suggest
+
+00:04:13.948 --> 00:04:16.128
+negative pi over four and miss the quadrant.
+
+00:04:16.708 --> 00:04:21.752
+In polar form, write z as r times cosine theta plus i sine theta, with
+
+00:04:21.752 --> 00:04:22.328
+positive
+
+00:04:22.328 --> 00:04:23.648
+r equal to the modulus.
+
+00:04:24.428 --> 00:04:28.828
+Multiplication multiplies moduli and adds arguments; division by a nonzero
+
+00:04:28.828 --> 00:04:31.388
+number divides moduli and subtracts arguments.
+
+00:04:32.208 --> 00:04:35.388
+Reduce the angle to the chosen principal interval only after the operation.
+
+00:04:35.928 --> 00:04:40.768
+For example, i times i has modulus one and angle pi, giving negative one.
+
+00:04:41.288 --> 00:04:45.428
+The zero complex number has modulus zero but no defined direction, so its
+
+00:04:45.428 --> 00:04:46.528
+argument is undefined.
+
+00:04:47.368 --> 00:04:50.968
+Argument is also not additive across sums: determine the sum's coordinates
+
+00:04:50.968 --> 00:04:52.348
+before assigning its direction.
+
+00:04:53.016 --> 00:04:58.916
+A quadratic equation has the form a z squared plus b z plus c equals zero with
+
+00:04:58.916 --> 00:05:00.596
+a nonzero.
+
+00:05:00.596 --> 00:05:02.416
+Completing the square gives the quadratic formula.
+
+00:05:03.476 --> 00:05:07.817
+For real coefficients, the discriminant b squared minus four a c classifies
+
+00:05:07.817 --> 00:05:08.396
+the roots.
+
+00:05:09.216 --> 00:05:13.956
+A positive value gives two distinct real roots; zero gives one repeated real
+
+00:05:13.956 --> 00:05:17.776
+root; a negative value gives two nonreal complex conjugate roots.
+
+00:05:18.416 --> 00:05:22.696
+For z squared minus two z plus five equals zero, the discriminant is negative
+
+00:05:22.696 --> 00:05:23.956
+sixteen.
+
+00:05:23.956 --> 00:05:28.316
+Its square roots are plus or minus four i, giving roots one plus two i and one
+
+00:05:28.316 --> 00:05:30.176
+minus two i.
+
+00:05:30.176 --> 00:05:31.336
+Substitute either root to check.
+
+00:05:32.476 --> 00:05:35.876
+Complex square roots can also be found by setting the square root equal to u
+
+00:05:35.876 --> 00:05:39.356
+plus i v and comparing real and imaginary parts after squaring.
+
+00:05:40.116 --> 00:05:44.520
+For three plus four i, equations u squared minus v squared equals three and
+
+00:05:44.520 --> 00:05:44.696
+two
+
+00:05:44.696 --> 00:05:49.276
+u v equals four are satisfied by u equal to two and v equal to one.
+
+00:05:50.116 --> 00:05:53.536
+Thus the two square roots are two plus i and negative two minus i.
+
+00:05:54.236 --> 00:05:57.016
+They are opposites, not complex conjugates of one another.
+
+00:05:57.796 --> 00:06:01.356
+Squaring is the final check, and a nonzero complex number has two square roots
+
+00:06:01.356 --> 00:06:02.496
+with opposite signs.
+
+00:06:02.784 --> 00:06:06.661
+When a coefficient contains a parameter, begin by checking whether the
+
+00:06:06.661 --> 00:06:07.104
+equation
+
+00:06:07.104 --> 00:06:08.104
+remains quadratic.
+
+00:06:08.864 --> 00:06:12.224
+Then compute the discriminant with the signs of all coefficients included.
+
+00:06:13.384 --> 00:06:17.664
+Consider x squared minus two k x plus k plus two equals zero.
+
+00:06:18.324 --> 00:06:20.844
+Its leading coefficient is one for every real k.
+
+00:06:21.464 --> 00:06:26.644
+The discriminant is four k squared minus four k minus eight, which factors as
+
+00:06:26.644 --> 00:06:29.864
+four times k minus two times k plus one.
+
+00:06:30.464 --> 00:06:34.164
+Real roots require this expression to be nonnegative.
+
+00:06:34.164 --> 00:06:36.564
+Mark negative one and two on the parameter line.
+
+00:06:37.264 --> 00:06:41.244
+The two factors have the same sign outside the interval between them, so real
+
+00:06:41.244 --> 00:06:44.984
+roots occur for k at most negative one or k at least two.
+
+00:06:45.704 --> 00:06:47.764
+At either endpoint the root is repeated.
+
+00:06:48.584 --> 00:06:52.344
+For k between those values the roots are nonreal complex conjugates.
+
+00:06:53.104 --> 00:06:56.956
+Do not infer the interval from just one factor, and do not forget equality
+
+00:06:56.956 --> 00:06:57.164
+when
+
+00:06:57.164 --> 00:06:58.764
+the question permits repeated roots.
+
+00:06:59.724 --> 00:07:04.544
+As a separate warning, in k minus one times x squared plus two x plus one
+
+00:07:04.544 --> 00:07:07.904
+equals zero, k equal to one removes the squared term.
+
+00:07:08.484 --> 00:07:11.124
+That case is linear and must be solved directly.
+
+00:07:11.724 --> 00:07:15.764
+A discriminant formula derived under a nonzero leading coefficient cannot
+
+00:07:15.764 --> 00:07:17.044
+replace this separate check.
+
+00:07:17.232 --> 00:07:22.752
+Let alpha and beta be the roots of a x squared plus b x plus c equals zero,
+
+00:07:23.252 --> 00:07:24.432
+where a is nonzero.
+
+00:07:25.632 --> 00:07:30.572
+Expanding a times x minus alpha times x minus beta and comparing coefficients
+
+00:07:30.572 --> 00:07:36.532
+gives alpha plus beta equal to negative b over a, and alpha beta equal to c
+
+00:07:36.532 --> 00:07:37.132
+over a.
+
+00:07:37.972 --> 00:07:42.572
+These identities hold whether roots are real, repeated or nonreal complex.
+
+00:07:42.812 --> 00:07:46.032
+They are often more efficient than solving for each root.
+
+00:07:46.952 --> 00:07:52.164
+For two x squared minus five x plus two equals zero, the sum is five halves
+
+00:07:52.164 --> 00:07:52.372
+and
+
+00:07:52.372 --> 00:07:53.332
+the product is one.
+
+00:07:53.892 --> 00:07:58.292
+The sum of their squares is the square of five halves minus twice one, giving
+
+00:07:58.292 --> 00:07:59.232
+seventeen quarters.
+
+00:07:59.952 --> 00:08:04.305
+The square of a sum includes a cross term, so it is not the same as the sum of
+
+00:08:04.305 --> 00:08:04.752
+squares.
+
+00:08:05.372 --> 00:08:10.192
+The sum of reciprocals is the root sum divided by the root product, provided
+
+00:08:10.192 --> 00:08:11.292
+neither root is zero.
+
+00:08:12.172 --> 00:08:13.372
+Here it is five halves.
+
+00:08:14.412 --> 00:08:18.012
+Higher symmetric expressions can be reduced using the same sum and product.
+
+00:08:18.952 --> 00:08:23.512
+For example, the sum of cubes equals the cube of the sum minus three times the
+
+00:08:23.512 --> 00:08:24.552
+product times the sum.
+
+00:08:25.592 --> 00:08:29.994
+Before dividing by the product, check c is nonzero; otherwise at least one
+
+00:08:29.994 --> 00:08:30.232
+root
+
+00:08:30.232 --> 00:08:33.052
+is zero and reciprocal expressions are undefined.
+
+00:08:33.384 --> 00:08:38.744
+To form a monic quadratic from two roots, calculate their sum S and product P,
+
+00:08:39.244 --> 00:08:42.824
+then write x squared minus S x plus P equals zero.
+
+00:08:43.784 --> 00:08:47.304
+Multiplying the whole equation by a nonzero constant gives the same roots.
+
+00:08:48.304 --> 00:08:52.824
+Starting from roots two and three, the sum is five and product is six, so the
+
+00:08:52.824 --> 00:08:56.364
+equation is x squared minus five x plus six equals zero.
+
+00:08:56.764 --> 00:09:00.845
+If the new roots are one more than each original root, they are three and
+
+00:09:00.845 --> 00:09:01.124
+four.
+
+00:09:01.604 --> 00:09:06.104
+Their sum is seven and product twelve, giving x squared minus seven x plus
+
+00:09:06.104 --> 00:09:07.504
+twelve equals zero.
+
+00:09:07.984 --> 00:09:13.084
+More generally, shifting both roots by h changes the sum to S plus two h and
+
+00:09:13.084 --> 00:09:15.504
+product to P plus h S plus h squared.
+
+00:09:16.344 --> 00:09:20.524
+Reciprocal roots have sum S divided by P and product one divided by P,
+
+00:09:20.924 --> 00:09:22.664
+requiring P nonzero.
+
+00:09:22.664 --> 00:09:26.944
+For roots two and three, multiply the monic reciprocal equation by six to
+
+00:09:26.944 --> 00:09:30.604
+obtain six x squared minus five x plus one equals zero.
+
+00:09:30.964 --> 00:09:35.264
+A real coefficient quadratic with a nonreal root must also have its conjugate
+
+00:09:35.264 --> 00:09:36.124
+as the other root.
+
+00:09:36.964 --> 00:09:41.824
+Thus a root one plus two i gives the companion one minus two i and equation x
+
+00:09:41.824 --> 00:09:44.544
+squared minus two x plus five equals zero.
+
+00:09:44.904 --> 00:09:48.804
+Two equations sharing a root must both vanish at the same input.
+
+00:09:49.844 --> 00:09:53.804
+Subtracting them can simplify the search, but any candidate must still satisfy
+
+00:09:53.804 --> 00:09:54.624
+the originals.
+
+00:09:55.484 --> 00:10:00.644
+Compare x squared minus three x plus two equals zero and x squared minus k x
+
+00:10:00.644 --> 00:10:02.224
+plus two equals zero.
+
+00:10:02.684 --> 00:10:05.284
+Subtracting gives three minus k times x equals zero.
+
+00:10:05.844 --> 00:10:10.164
+The first polynomial has roots one and two, so the common root cannot be zero.
+
+00:10:10.744 --> 00:10:12.064
+Therefore k equals three.
+
+00:10:12.564 --> 00:10:16.204
+At that value the two polynomials coincide and share both roots.
+
+00:10:16.984 --> 00:10:21.384
+If you divided by x without first excluding zero, the reasoning would have
+
+00:10:21.384 --> 00:10:22.944
+missed a possible case in another problem.
+
+00:10:24.024 --> 00:10:25.684
+Degree changes deserve the same care.
+
+00:10:26.444 --> 00:10:31.021
+For k minus one times x squared plus two x plus one equals zero, k equal to
+
+00:10:31.021 --> 00:10:31.204
+one
+
+00:10:31.204 --> 00:10:35.344
+gives the linear equation two x plus one equals zero, whose solution is
+
+00:10:35.344 --> 00:10:36.164
+negative one half.
+
+00:10:36.684 --> 00:10:41.084
+For k not equal to one the equation is quadratic, and its discriminant is four
+
+00:10:41.084 --> 00:10:42.164
+times two minus k.
+
+00:10:42.784 --> 00:10:46.822
+At k equal to two there is a repeated root negative one; for k greater than
+
+00:10:46.822 --> 00:10:46.984
+two
+
+00:10:47.284 --> 00:10:48.184
+there are no real roots.
+
+00:10:49.204 --> 00:10:52.584
+Parameter conclusions must retain the exceptional linear case instead of
+
+00:10:52.584 --> 00:10:53.744
+silently dividing by zero.
+
+00:10:53.952 --> 00:10:57.072
+A root location question needs more than a positive product.
+
+00:10:57.792 --> 00:11:01.812
+First ensure real roots, then combine their sum and product with the desired
+
+00:11:01.812 --> 00:11:02.192
+boundary.
+
+00:11:03.072 --> 00:11:08.352
+For x squared minus six x plus k equals zero, ask when both roots are strictly
+
+00:11:08.352 --> 00:11:10.632
+greater than one, allowing a repeated root.
+
+00:11:11.572 --> 00:11:15.772
+Set x equal to t plus one so the condition becomes both t roots positive.
+
+00:11:16.392 --> 00:11:21.032
+The transformed equation is t squared minus four t plus k minus five equals
+
+00:11:21.032 --> 00:11:21.352
+zero.
+
+00:11:21.992 --> 00:11:24.452
+Its root sum is four, already positive.
+
+00:11:25.112 --> 00:11:28.992
+For real roots with a positive sum, a positive product forces both to be
+
+00:11:28.992 --> 00:11:32.372
+positive; a negative product would put them on opposite sides of zero.
+
+00:11:33.132 --> 00:11:34.772
+Thus require k greater than five.
+
+00:11:35.532 --> 00:11:39.520
+Reality of the roots requires the original discriminant thirty six minus four
+
+00:11:39.520 --> 00:11:39.572
+k
+
+00:11:39.572 --> 00:11:42.112
+to be nonnegative, so k is at most nine.
+
+00:11:43.072 --> 00:11:45.832
+Combining gives k greater than five and at most nine.
+
+00:11:46.512 --> 00:11:50.692
+At k equal to five, one original root is exactly one and fails the strict
+
+00:11:50.692 --> 00:11:51.092
+condition.
+
+00:11:51.752 --> 00:11:55.312
+At k equal to nine, both roots equal three and qualify.
+
+00:11:56.172 --> 00:12:00.272
+Finally, for an upward opening quadratic with real roots two and three, the
+
+00:12:00.272 --> 00:12:03.872
+expression is nonpositive between those roots and positive outside.
+
+00:12:04.772 --> 00:12:07.092
+Mark endpoints according to whether equality is permitted.

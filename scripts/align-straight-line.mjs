@@ -72,6 +72,8 @@ targets['periodic-trends'] = 'periodic-trends';
 targets['atomic-structure'] = 'atomic-structure';
 targets['chemical-bonding'] = 'chemical-bonding';
 targets['matrices-determinants'] = 'matrices-determinants';
+targets['sets-and-functions']='sets-and-functions';
+targets['quadratic-equations']='quadratic-equations';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const folder = path.join(root, 'public/lectures', selected);

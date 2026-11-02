@@ -1,0 +1,637 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.920
+A set is a well defined collection of distinct objects.
+
+00:00:04.620 --> 00:00:07.260
+We may list its members or describe them by a rule.
+
+00:00:08.140 --> 00:00:12.500
+The set of positive even integers less than eight is two, four, six.
+
+00:00:13.000 --> 00:00:16.340
+Reordering that list or repeating four does not change the set.
+
+00:00:17.300 --> 00:00:21.942
+Membership asks whether one object is a member; a subset statement asks
+
+00:00:21.942 --> 00:00:22.400
+whether
+
+00:00:22.400 --> 00:00:24.880
+every member of one set belongs to another.
+
+00:00:25.560 --> 00:00:29.360
+The empty set has no members and is a subset of every set.
+
+00:00:30.320 --> 00:00:34.400
+A set containing the empty set has one member, so it is different from the
+
+00:00:34.400 --> 00:00:35.240
+empty set itself.
+
+00:00:36.080 --> 00:00:38.140
+The power set collects all subsets.
+
+00:00:38.940 --> 00:00:43.600
+If A has three distinct elements, decide independently whether to include each
+
+00:00:43.600 --> 00:00:43.900
+element.
+
+00:00:44.700 --> 00:00:47.700
+Two choices at each of three positions give eight subsets.
+
+00:00:48.440 --> 00:00:50.600
+The empty set and A itself are included.
+
+00:00:51.200 --> 00:00:55.420
+A proper subset must differ from A, so seven of those eight are proper.
+
+00:00:56.100 --> 00:00:59.020
+Do not subtract the empty set merely because it looks unusual.
+
+00:00:59.740 --> 00:01:04.360
+For the empty set, its power set has one member, namely the empty set.
+
+00:01:04.900 --> 00:01:09.080
+In set builder notation, always specify the underlying number system and
+
+00:01:09.080 --> 00:01:09.580
+restrictions.
+
+00:01:10.400 --> 00:01:14.505
+The equation x squared equals one selects two real numbers, while the
+
+00:01:14.505 --> 00:01:15.040
+condition
+
+00:01:15.040 --> 00:01:18.780
+x is a positive real number selects only the positive solution.
+
+00:01:19.200 --> 00:01:21.760
+Fix the universal set before taking a complement.
+
+00:01:22.540 --> 00:01:27.400
+Let U contain the integers one through six, A contain one, two, three, and B
+
+00:01:27.400 --> 00:01:28.340
+contain three, four.
+
+00:01:28.960 --> 00:01:32.892
+The union contains one, two, three, four; the intersection contains only
+
+00:01:32.892 --> 00:01:33.220
+three.
+
+00:01:33.700 --> 00:01:36.220
+The complement of A contains four, five, six.
+
+00:01:36.820 --> 00:01:41.800
+The difference A minus B contains one, two, whereas B minus A contains four.
+
+00:01:42.320 --> 00:01:44.300
+Set difference is therefore not commutative.
+
+00:01:45.080 --> 00:01:48.620
+De Morgan's laws explain how a complement crosses a union or intersection.
+
+00:01:49.600 --> 00:01:54.080
+Not belonging to either A or B means belonging to both complements, so the
+
+00:01:54.080 --> 00:01:56.700
+complement of their union is the intersection of their complements.
+
+00:01:57.700 --> 00:02:01.000
+Not belonging to their intersection means failing at least one membership
+
+00:02:01.000 --> 00:02:04.180
+condition, so it gives the union of complements.
+
+00:02:04.720 --> 00:02:08.640
+Intersection distributes over union, and union distributes over intersection.
+
+00:02:09.340 --> 00:02:13.420
+You can check a proposed identity by following one arbitrary element and its
+
+00:02:13.420 --> 00:02:14.260
+membership conditions.
+
+00:02:15.000 --> 00:02:19.920
+For example, membership in A intersect B union C means membership in A and
+
+00:02:19.920 --> 00:02:22.100
+membership in at least one of B or C.
+
+00:02:22.680 --> 00:02:26.460
+This becomes the union of A intersect B and A intersect C.
+
+00:02:27.100 --> 00:02:30.420
+Keep brackets clear: changing them can change the set being described.
+
+00:02:30.912 --> 00:02:34.212
+Counting union members requires correcting repeated counts.
+
+00:02:35.032 --> 00:02:39.212
+Suppose a group has forty students, twenty four in A, nineteen in B, and eight
+
+00:02:39.212 --> 00:02:39.652
+in both.
+
+00:02:40.632 --> 00:02:43.432
+Adding twenty four and nineteen counts those eight students twice.
+
+00:02:44.312 --> 00:02:48.032
+Subtract them once to obtain thirty five in at least one set, leaving five in
+
+00:02:48.032 --> 00:02:48.132
+neither.
+
+00:02:49.072 --> 00:02:53.072
+Exactly one set contains twenty four plus nineteen minus twice eight, giving
+
+00:02:53.072 --> 00:02:54.272
+twenty seven.
+
+00:02:54.272 --> 00:02:58.552
+With three sets, add the three sizes, subtract all three pairwise intersection
+
+00:02:58.552 --> 00:03:00.972
+sizes, then add the triple intersection once.
+
+00:03:01.732 --> 00:03:02.392
+Why add it back?
+
+00:03:02.792 --> 00:03:06.292
+A student in all three was counted three times initially and subtracted three
+
+00:03:06.292 --> 00:03:08.092
+times, so needs one final count.
+
+00:03:08.832 --> 00:03:12.652
+For sizes twenty, eighteen, fifteen, pairwise intersection sizes eight, seven,
+
+00:03:12.692 --> 00:03:16.252
+six, and triple size three, the union has thirty five members.
+
+00:03:16.872 --> 00:03:20.692
+The number in exactly two sets is the sum of the pairwise sizes minus three
+
+00:03:20.692 --> 00:03:23.612
+times the triple size, giving twelve.
+
+00:03:23.612 --> 00:03:26.672
+Pairwise intersection counts ordinarily include students in the third set
+
+00:03:27.172 --> 00:03:29.092
+unless the wording explicitly says otherwise.
+
+00:03:30.112 --> 00:03:33.392
+Draw disjoint regions starting at the triple intersection when the data feel
+
+00:03:33.392 --> 00:03:33.772
+confusing.
+
+00:03:34.712 --> 00:03:38.592
+Finally, verify that every derived region is nonnegative and that the union
+
+00:03:38.592 --> 00:03:40.432
+does not exceed the supplied group size.
+
+00:03:41.280 --> 00:03:47.160
+A binary relation from A to B is a subset of the Cartesian product A cross B.
+
+00:03:47.860 --> 00:03:52.080
+Each member is an ordered pair, so reversing its entries need not preserve
+
+00:03:52.080 --> 00:03:52.560
+membership.
+
+00:03:53.540 --> 00:03:57.560
+For a relation on A, reflexivity requires every pair a, a.
+
+00:03:58.500 --> 00:04:01.980
+Symmetry says that whenever a, b belongs, b, a also belongs.
+
+00:04:02.860 --> 00:04:07.780
+Antisymmetry says that if both a, b and b, a belong, then a must equal b.
+
+00:04:08.500 --> 00:04:12.560
+This is not simply the opposite of symmetry: the identity relation is both
+
+00:04:12.560 --> 00:04:14.200
+symmetric and antisymmetric.
+
+00:04:15.100 --> 00:04:19.180
+Transitivity requires a, c whenever a, b and b, c belong.
+
+00:04:19.920 --> 00:04:22.200
+Consider the less than or equal relation on real numbers.
+
+00:04:22.740 --> 00:04:26.360
+It is reflexive, antisymmetric and transitive, but not symmetric.
+
+00:04:27.020 --> 00:04:31.380
+The relation of having the same absolute value is reflexive, symmetric and
+
+00:04:31.380 --> 00:04:31.720
+transitive.
+
+00:04:32.240 --> 00:04:35.280
+To disprove a property, one counterexample is enough.
+
+00:04:35.960 --> 00:04:39.760
+To establish it for an infinite set, use an argument covering arbitrary
+
+00:04:39.760 --> 00:04:42.320
+elements rather than checking only a few examples.
+
+00:04:43.020 --> 00:04:47.060
+The empty relation on a nonempty set is not reflexive, while symmetry and
+
+00:04:47.060 --> 00:04:49.900
+transitivity hold because no pairs trigger a failure.
+
+00:04:50.600 --> 00:04:54.003
+Always state the underlying set: changing it can change the truth of a
+
+00:04:54.003 --> 00:04:54.440
+property.
+
+00:04:54.744 --> 00:04:58.824
+An equivalence relation is reflexive, symmetric and transitive.
+
+00:04:59.584 --> 00:05:03.204
+These three conditions make its equivalence classes divide the underlying set
+
+00:05:03.204 --> 00:05:04.504
+into disjoint groups.
+
+00:05:05.264 --> 00:05:09.584
+On the integers, define a related to b when a minus b is divisible by three.
+
+00:05:10.444 --> 00:05:14.324
+Reflexivity follows because a minus a is zero, a multiple of three.
+
+00:05:14.964 --> 00:05:19.026
+If a minus b is divisible by three, its negative b minus a is too,
+
+00:05:19.026 --> 00:05:19.764
+establishing
+
+00:05:19.764 --> 00:05:20.224
+symmetry.
+
+00:05:20.224 --> 00:05:25.944
+If a minus b and b minus c are divisible by three, their sum a minus c is
+
+00:05:25.944 --> 00:05:28.484
+divisible by three, establishing transitivity.
+
+00:05:29.464 --> 00:05:33.844
+Integers fall into three classes according to remainder zero, one or two after
+
+00:05:33.844 --> 00:05:34.644
+division by three.
+
+00:05:35.304 --> 00:05:39.404
+Negative integers belong too: negative one is in the same class as two because
+
+00:05:39.404 --> 00:05:40.704
+their difference is negative three.
+
+00:05:41.444 --> 00:05:45.744
+Every integer belongs to exactly one class, and two classes sharing a member
+
+00:05:46.224 --> 00:05:47.224
+must be the same class.
+
+00:05:47.764 --> 00:05:49.144
+This is the partition property.
+
+00:05:49.664 --> 00:05:53.664
+Conversely, a partition defines an equivalence relation by declaring two
+
+00:05:53.664 --> 00:05:55.864
+elements related when they lie in the same block.
+
+00:05:56.664 --> 00:06:00.684
+Do not use a merely symmetric relation as an equivalence relation without
+
+00:06:00.684 --> 00:06:02.744
+checking transitivity and reflexivity.
+
+00:06:03.504 --> 00:06:07.744
+For example, being unequal is symmetric on the integers but fails reflexivity
+
+00:06:08.064 --> 00:06:09.684
+and also fails transitivity.
+
+00:06:10.104 --> 00:06:14.904
+A function from A to B assigns exactly one element of B to every element of A.
+
+00:06:15.724 --> 00:06:20.124
+Multiple inputs may share an output, but one input cannot have two different
+
+00:06:20.124 --> 00:06:20.384
+outputs.
+
+00:06:21.044 --> 00:06:25.604
+The domain is A, the codomain is B, and the range is the collection of outputs
+
+00:06:25.604 --> 00:06:26.464
+actually reached.
+
+00:06:27.084 --> 00:06:30.678
+For the square function from the reals to the reals, negative outputs are
+
+00:06:30.678 --> 00:06:30.924
+never
+
+00:06:30.924 --> 00:06:34.744
+reached, so the range is the nonnegative reals and is smaller than the
+
+00:06:34.744 --> 00:06:35.084
+codomain.
+
+00:06:35.664 --> 00:06:40.244
+If an algebraic formula is supplied without a domain, first identify the real
+
+00:06:40.244 --> 00:06:41.804
+inputs where the formula is defined.
+
+00:06:42.624 --> 00:06:47.024
+For the square root of x minus one divided by x minus three, the square root
+
+00:06:47.024 --> 00:06:50.544
+requires x at least one, and the denominator excludes three.
+
+00:06:51.324 --> 00:06:54.124
+Combine the conditions rather than treating either as sufficient.
+
+00:06:54.744 --> 00:06:59.244
+The domain is from one inclusive to three exclusive, together with numbers
+
+00:06:59.244 --> 00:07:00.024
+greater than three.
+
+00:07:00.924 --> 00:07:04.304
+Cancelling a factor does not automatically restore an excluded input from the
+
+00:07:04.304 --> 00:07:05.044
+original expression.
+
+00:07:05.704 --> 00:07:10.984
+For example, x squared minus one divided by x minus one agrees with x plus one
+
+00:07:10.984 --> 00:07:12.284
+only when x is not one.
+
+00:07:13.224 --> 00:07:16.984
+Writing the original domain prevents an algebraic simplification from silently
+
+00:07:16.984 --> 00:07:18.204
+defining a different function.
+
+00:07:18.504 --> 00:07:23.504
+A function is injective, or one to one, when equal outputs imply equal inputs.
+
+00:07:24.144 --> 00:07:28.324
+It is onto, or surjective, when every member of its codomain is reached.
+
+00:07:28.884 --> 00:07:32.777
+A function whose range is a proper subset of its codomain is often called
+
+00:07:32.777 --> 00:07:33.044
+into.
+
+00:07:33.824 --> 00:07:35.824
+These conditions answer different questions.
+
+00:07:36.504 --> 00:07:40.604
+The square function from the reals to the reals is neither injective nor onto:
+
+00:07:41.484 --> 00:07:44.904
+one and negative one share an output, and negative numbers are missed.
+
+00:07:45.484 --> 00:07:49.184
+Keep the real domain but change the codomain to the nonnegative reals.
+
+00:07:49.744 --> 00:07:53.124
+It becomes onto but remains noninjective.
+
+00:07:53.124 --> 00:07:55.964
+Restrict both domain and codomain to the nonnegative reals.
+
+00:07:56.404 --> 00:07:59.684
+It is now injective and onto, hence bijective.
+
+00:08:00.204 --> 00:08:04.184
+An affine function two x plus three from the reals to the reals is bijective:
+
+00:08:04.944 --> 00:08:09.444
+equal outputs give equal inputs, and any target y has input y minus three
+
+00:08:09.444 --> 00:08:10.224
+divided by two.
+
+00:08:10.764 --> 00:08:14.564
+A constant function on a domain with at least two elements is not injective,
+
+00:08:15.104 --> 00:08:18.084
+but it is onto a codomain containing only its constant value.
+
+00:08:18.964 --> 00:08:22.644
+State the sets every time; a formula alone does not settle the classification.
+
+00:08:23.624 --> 00:08:27.524
+Use a counterexample to refute injectivity and solve for a preimage to
+
+00:08:27.524 --> 00:08:28.584
+establish surjectivity.
+
+00:08:29.208 --> 00:08:34.788
+For a finite domain containing m elements and a finite codomain containing n
+
+00:08:34.788 --> 00:08:38.828
+elements, each input can independently choose any of n outputs.
+
+00:08:39.588 --> 00:08:41.608
+This gives n to the power m functions.
+
+00:08:42.328 --> 00:08:46.328
+With a three element domain and a two element codomain, there are eight
+
+00:08:46.328 --> 00:08:46.708
+functions.
+
+00:08:47.468 --> 00:08:52.308
+Exactly two are constant, and the other six hit both target elements, so there
+
+00:08:52.308 --> 00:08:54.168
+are six onto functions in this particular case.
+
+00:08:54.168 --> 00:08:59.728
+There are no injections because three distinct inputs cannot have distinct
+
+00:08:59.728 --> 00:09:01.788
+outputs in only two target positions.
+
+00:09:02.628 --> 00:09:07.208
+Reverse the sizes: a two element domain and three element codomain give nine
+
+00:09:07.208 --> 00:09:10.408
+functions and six injections, but no surjections.
+
+00:09:11.088 --> 00:09:14.888
+An injection uses three choices for the first output and two for the second.
+
+00:09:15.328 --> 00:09:19.788
+In general, for m no greater than n, the injection count is n factorial
+
+00:09:19.788 --> 00:09:20.228
+divided
+
+00:09:20.228 --> 00:09:21.808
+by n minus m factorial.
+
+00:09:22.588 --> 00:09:24.348
+If m exceeds n, it is zero.
+
+00:09:24.948 --> 00:09:29.808
+A bijection between two finite sets of the same size n is a permutation of the
+
+00:09:29.808 --> 00:09:31.808
+targets, giving n factorial choices.
+
+00:09:32.528 --> 00:09:37.548
+For equal finite sizes, injectivity and surjectivity are equivalent, but this
+
+00:09:37.548 --> 00:09:40.068
+shortcut is not a general rule for infinite sets.
+
+00:09:40.748 --> 00:09:43.408
+Keep the finite hypothesis attached to the counting argument.
+
+00:09:44.064 --> 00:09:46.844
+Composition feeds one function's output into another.
+
+00:09:47.284 --> 00:09:50.624
+In f composed with g, the inner function g acts first.
+
+00:09:51.244 --> 00:09:55.204
+Let f of x equal two x plus one and g of x equal x squared.
+
+00:09:55.844 --> 00:10:00.884
+Then f of g of x is two x squared plus one, whereas g of f of x is the square
+
+00:10:00.884 --> 00:10:02.044
+of two x plus one.
+
+00:10:02.604 --> 00:10:04.904
+These functions differ, so order matters.
+
+00:10:05.504 --> 00:10:09.964
+A composite requires x in the domain of g and g of x in the domain of f.
+
+00:10:10.484 --> 00:10:15.604
+Consider f of u equal one divided by u minus one, and g of x equal the square
+
+00:10:15.604 --> 00:10:16.244
+root of x.
+
+00:10:17.164 --> 00:10:20.544
+The composite is one divided by the square root of x minus one.
+
+00:10:21.244 --> 00:10:25.184
+The inner function requires x at least zero, while the outer denominator
+
+00:10:25.184 --> 00:10:29.164
+excludes square root of x equal to one, so exclude x equal to one.
+
+00:10:29.824 --> 00:10:32.444
+Its domain is the nonnegative reals with one removed.
+
+00:10:33.424 --> 00:10:37.135
+Composition is associative when all the stated maps are compatible, even
+
+00:10:37.135 --> 00:10:37.444
+though
+
+00:10:37.444 --> 00:10:38.444
+it is not commutative.
+
+00:10:39.044 --> 00:10:43.484
+Thus f composed with g composed with h can be bracketed in either association
+
+00:10:43.484 --> 00:10:44.964
+without reversing their order.
+
+00:10:45.884 --> 00:10:49.704
+Before cancelling an expression or rearranging a composition, write the
+
+00:10:49.704 --> 00:10:53.544
+original input conditions so no forbidden point is accidentally restored.
+
+00:10:53.832 --> 00:10:56.372
+An inverse function undoes a bijection.
+
+00:10:56.932 --> 00:11:01.072
+If f maps A bijectively onto B, its inverse maps B back to A.
+
+00:11:01.892 --> 00:11:06.092
+Composing the inverse after f gives the identity on A, and composing f after
+
+00:11:06.092 --> 00:11:08.092
+its inverse gives the identity on B.
+
+00:11:08.432 --> 00:11:10.912
+The notation f inverse is not a reciprocal.
+
+00:11:11.452 --> 00:11:16.431
+For f of x equal two x plus three on the reals, solve y equals two x plus
+
+00:11:16.431 --> 00:11:16.772
+three
+
+00:11:16.772 --> 00:11:17.312
+for x.
+
+00:11:17.492 --> 00:11:23.132
+This gives x equal to y minus three divided by two, so the inverse takes an
+
+00:11:23.132 --> 00:11:24.152
+input y to that value.
+
+00:11:25.212 --> 00:11:28.072
+Verify both compositions, not just a symbolic swap.
+
+00:11:28.932 --> 00:11:33.632
+The square function on all reals has no inverse function because positive and
+
+00:11:33.632 --> 00:11:34.972
+negative inputs can share an output.
+
+00:11:36.172 --> 00:11:39.532
+Restrict the original domain to the nonnegative reals and take the nonnegative
+
+00:11:39.532 --> 00:11:40.492
+reals as codomain.
+
+00:11:41.172 --> 00:11:43.232
+Then its inverse is the nonnegative square root.
+
+00:11:43.932 --> 00:11:46.992
+The alternative negative half line produces a different inverse branch.
+
+00:11:47.732 --> 00:11:52.532
+For f of x equal x squared minus four on x at least zero, the codomain must be
+
+00:11:52.532 --> 00:11:55.172
+the interval starting at negative four for a bijection.
+
+00:11:55.932 --> 00:11:58.432
+Its inverse is square root of y plus four.
+
+00:11:59.272 --> 00:12:02.772
+Domain and codomain restrictions therefore determine which inverse is valid.

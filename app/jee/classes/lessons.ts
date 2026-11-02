@@ -1,3 +1,7 @@
+import setsFunctions from '../../data/jee-sets-and-functions-lecture.json';
+import setsFunctionsTimings from '../../data/jee-sets-and-functions-timings.json';
+import complexQuadratics from '../../data/jee-quadratic-equations-lecture.json';
+import complexQuadraticsTimings from '../../data/jee-quadratic-equations-timings.json';
 import matricesDeterminants from '../../data/jee-matrices-determinants-lecture.json';
 import matricesDeterminantsTimings from '../../data/jee-matrices-determinants-timings.json';
 import pBlock from "../../data/jee-p-block-lecture.json";
@@ -1318,4 +1322,6 @@ export const lectures: Lecture[] = [
     scope:'Ten-chapter Mathematics Unit 3 class with original practice. Covers the core syllabus headings; further parameter-dependent and timed mixed practice remains. Not official PYQs.',
     progressKey:'jee.matrices-determinants.lecture.v1',audio:'/lectures/matrices-determinants/narration-marin.mp3',subtitles:'/lectures/matrices-determinants/english.vtt',timings:matricesDeterminantsTimings,
     segments:matricesDeterminants.chapters.map(c=>({title:c.title,formula:c.formula,steps:c.points,english:c.script})),sources:matricesDeterminants.sources,quiz:matricesDeterminants.quiz},
+  {id:'sets-and-functions',subject:'Mathematics',unit:1,number:'M02',title:setsFunctions.title,description:'Set algebra, equivalence relations, function classification, composition and inverse restrictions.',scope:'Ten-chapter Mathematics Unit 1 recording with original practice. Core headings taught; further mixed and timed practice remains. Not official PYQs.',progressKey:'jee.sets-and-functions.lecture.v1',audio:'/lectures/sets-and-functions/narration-marin.mp3',subtitles:'/lectures/sets-and-functions/english.vtt',timings:setsFunctionsTimings,segments:setsFunctions.chapters.map(c=>({title:c.title,formula:c.formula,steps:c.points,english:c.script})),sources:setsFunctions.sources,quiz:setsFunctions.quiz},
+  {id:'quadratic-equations',subject:'Mathematics',unit:2,number:'M03',title:complexQuadratics.title,description:'Complex algebra, Argand geometry, modulus, argument, quadratic roots and parameter cases.',scope:'Ten-chapter Mathematics Unit 2 recording with original practice. Core headings taught; further mixed and timed practice remains. Not official PYQs.',progressKey:'jee.quadratic-equations.lecture.v1',audio:'/lectures/quadratic-equations/narration-marin.mp3',subtitles:'/lectures/quadratic-equations/english.vtt',timings:complexQuadraticsTimings,segments:complexQuadratics.chapters.map(c=>({title:c.title,formula:c.formula,steps:c.points,english:c.script})),sources:complexQuadratics.sources,quiz:complexQuadratics.quiz},
 ];

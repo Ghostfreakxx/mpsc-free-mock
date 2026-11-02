@@ -11,6 +11,8 @@ import styles from "./lecture.module.css";
 // Each class shows only its own diagram, so load diagrams on demand instead of bundling all of them into every class page.
 const KineticsDiagram = dynamic(() => import("./kinetics-diagram"));
 const MatricesDeterminantsDiagram = dynamic(() => import("./matrices-determinants-diagram"));
+const SetsFunctionsDiagram = dynamic(() => import("./sets-functions-diagram"));
+const ComplexQuadraticsDiagram = dynamic(() => import("./complex-quadratics-diagram"));
 const PhysicalChemistryDiagram = dynamic(() => import("./physical-chemistry-diagram"));
 const EquilibriumElectrochemistryDiagram = dynamic(() => import("./equilibrium-electrochemistry-diagram"));
 const PBlockDFDiagram = dynamic(() => import("./p-block-d-f-diagram"));
@@ -160,6 +162,8 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
           <h2>{chapter.title}</h2>
           {lesson.id === "chemical-kinetics" && <KineticsDiagram chapter={chapterIndex} />}
           {lesson.id === "matrices-determinants" && <MatricesDeterminantsDiagram chapter={chapterIndex} />}
+          {lesson.id === "sets-and-functions" && <SetsFunctionsDiagram chapter={chapterIndex} />}
+          {lesson.id === "quadratic-equations" && <ComplexQuadraticsDiagram chapter={chapterIndex} />}
           {(lesson.id === "chemical-thermodynamics" || lesson.id === "solutions") && <PhysicalChemistryDiagram lesson={lesson.id} chapter={chapterIndex} />}
           {(lesson.id === "equilibrium" || lesson.id === "redox-electrochemistry") && <EquilibriumElectrochemistryDiagram lesson={lesson.id} chapter={chapterIndex} />}
           {(lesson.id === "p-block" || lesson.id === "d-f-block") && <PBlockDFDiagram lesson={lesson.id} chapter={chapterIndex} />}

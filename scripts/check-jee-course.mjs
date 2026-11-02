@@ -13,10 +13,10 @@ try {
     ['Mathematics', 'matrices-determinants', 14, [1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],
     ['Physics', 'straight-line-motion', 68, [1, 2, 1, 2, 1]],
     ['Chemistry', 'mole-concept', 20, [1, 2, 1, 1, 2, 1, 2, 0, 3, 1, 2, 1, 3, 0, 2, 1, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0]],
-    ['Mathematics', 'sets-and-functions', 14, [2, 0, 2, 1, 0]],
+    ['Mathematics', 'sets-and-functions', 14, [2,0,2,1,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],
     ['Physics', 'newtons-laws', 68, [1, 1, 1, 2, 1]],
     ['Chemistry', 'atomic-structure', 20, [0, 2, 2, 3, 1, 1, 2, 0, 3, 1, 2, 2, 2, 3, 0, 1, 0, 3, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0]],
-    ['Mathematics', 'quadratic-equations', 14, [1, 1, 2, 1, 2]],
+    ['Mathematics', 'quadratic-equations', 14, [1,1,2,1,2,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],
   ];
   for (const [subject, slug, count, answers] of cases) {
     await page.goto(`${base}/jee/classes`);

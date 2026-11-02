@@ -1,0 +1,1319 @@
+{
+  "duration": 723.1920000000184,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 79.2000000000021
+    },
+    {
+      "start": 79.2000000000021,
+      "end": 150.91200000000393
+    },
+    {
+      "start": 150.91200000000393,
+      "end": 221.2800000000057
+    },
+    {
+      "start": 221.2800000000057,
+      "end": 294.7440000000076
+    },
+    {
+      "start": 294.7440000000076,
+      "end": 370.10400000000953
+    },
+    {
+      "start": 370.10400000000953,
+      "end": 438.5040000000112
+    },
+    {
+      "start": 438.5040000000112,
+      "end": 509.208000000013
+    },
+    {
+      "start": 509.208000000013,
+      "end": 584.064000000015
+    },
+    {
+      "start": 584.064000000015,
+      "end": 653.8320000000167
+    },
+    {
+      "start": 653.8320000000167,
+      "end": 723.1920000000184
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 3.9200000762939453,
+      "text": "A set is a well defined collection of distinct objects.",
+      "chapter": 0
+    },
+    {
+      "start": 4.619999885559082,
+      "end": 7.260000228881836,
+      "text": "We may list its members or describe them by a rule.",
+      "chapter": 0
+    },
+    {
+      "start": 8.140000343322754,
+      "end": 12.5,
+      "text": "The set of positive even integers less than eight is two, four, six.",
+      "chapter": 0
+    },
+    {
+      "start": 13,
+      "end": 16.34000015258789,
+      "text": "Reordering that list or repeating four does not change the set.",
+      "chapter": 0
+    },
+    {
+      "start": 17.299999237060547,
+      "end": 21.942307276603504,
+      "text": "Membership asks whether one object is a member; a subset statement asks",
+      "chapter": 0
+    },
+    {
+      "start": 21.942307276603504,
+      "end": 22.399999618530273,
+      "text": "whether",
+      "chapter": 0
+    },
+    {
+      "start": 22.399999618530273,
+      "end": 24.8799991607666,
+      "text": "every member of one set belongs to another.",
+      "chapter": 0
+    },
+    {
+      "start": 25.559999465942383,
+      "end": 29.360000610351562,
+      "text": "The empty set has no members and is a subset of every set.",
+      "chapter": 0
+    },
+    {
+      "start": 30.31999969482422,
+      "end": 34.400001525878906,
+      "text": "A set containing the empty set has one member, so it is different from the",
+      "chapter": 0
+    },
+    {
+      "start": 34.400001525878906,
+      "end": 35.2400016784668,
+      "text": "empty set itself.",
+      "chapter": 0
+    },
+    {
+      "start": 36.08000183105469,
+      "end": 38.13999938964844,
+      "text": "The power set collects all subsets.",
+      "chapter": 0
+    },
+    {
+      "start": 38.939998626708984,
+      "end": 43.599998474121094,
+      "text": "If A has three distinct elements, decide independently whether to include each",
+      "chapter": 0
+    },
+    {
+      "start": 43.599998474121094,
+      "end": 43.900001525878906,
+      "text": "element.",
+      "chapter": 0
+    },
+    {
+      "start": 44.70000076293945,
+      "end": 47.70000076293945,
+      "text": "Two choices at each of three positions give eight subsets.",
+      "chapter": 0
+    },
+    {
+      "start": 48.439998626708984,
+      "end": 50.599998474121094,
+      "text": "The empty set and A itself are included.",
+      "chapter": 0
+    },
+    {
+      "start": 51.20000076293945,
+      "end": 55.41999816894531,
+      "text": "A proper subset must differ from A, so seven of those eight are proper.",
+      "chapter": 0
+    },
+    {
+      "start": 56.099998474121094,
+      "end": 59.02000045776367,
+      "text": "Do not subtract the empty set merely because it looks unusual.",
+      "chapter": 0
+    },
+    {
+      "start": 59.7400016784668,
+      "end": 64.36000061035156,
+      "text": "For the empty set, its power set has one member, namely the empty set.",
+      "chapter": 0
+    },
+    {
+      "start": 64.9000015258789,
+      "end": 69.08000183105469,
+      "text": "In set builder notation, always specify the underlying number system and",
+      "chapter": 0
+    },
+    {
+      "start": 69.08000183105469,
+      "end": 69.58000183105469,
+      "text": "restrictions.",
+      "chapter": 0
+    },
+    {
+      "start": 70.4000015258789,
+      "end": 74.5046163705679,
+      "text": "The equation x squared equals one selects two real numbers, while the",
+      "chapter": 0
+    },
+    {
+      "start": 74.5046163705679,
+      "end": 75.04000091552734,
+      "text": "condition",
+      "chapter": 0
+    },
+    {
+      "start": 75.04000091552734,
+      "end": 78.77999877929688,
+      "text": "x is a positive real number selects only the positive solution.",
+      "chapter": 0
+    },
+    {
+      "start": 79.2000000000021,
+      "end": 81.75999994278165,
+      "text": "Fix the universal set before taking a complement.",
+      "chapter": 1
+    },
+    {
+      "start": 82.53999991417142,
+      "end": 87.39999980926724,
+      "text": "Let U contain the integers one through six, A contain one, two, three, and B",
+      "chapter": 1
+    },
+    {
+      "start": 87.39999980926724,
+      "end": 88.34000034332486,
+      "text": "contain three, four.",
+      "chapter": 1
+    },
+    {
+      "start": 88.96000022888394,
+      "end": 92.89230813246718,
+      "text": "The union contains one, two, three, four; the intersection contains only",
+      "chapter": 1
+    },
+    {
+      "start": 92.89230813246718,
+      "end": 93.22000045776578,
+      "text": "three.",
+      "chapter": 1
+    },
+    {
+      "start": 93.7000000000021,
+      "end": 96.22000045776578,
+      "text": "The complement of A contains four, five, six.",
+      "chapter": 1
+    },
+    {
+      "start": 96.8200008392355,
+      "end": 101.80000038147183,
+      "text": "The difference A minus B contains one, two, whereas B minus A contains four.",
+      "chapter": 1
+    },
+    {
+      "start": 102.3200008392355,
+      "end": 104.30000038147183,
+      "text": "Set difference is therefore not commutative.",
+      "chapter": 1
+    },
+    {
+      "start": 105.07999916076871,
+      "end": 108.62000007629605,
+      "text": "De Morgan's laws explain how a complement crosses a union or intersection.",
+      "chapter": 1
+    },
+    {
+      "start": 109.59999961853238,
+      "end": 114.08000106811734,
+      "text": "Not belonging to either A or B means belonging to both complements, so the",
+      "chapter": 1
+    },
+    {
+      "start": 114.08000106811734,
+      "end": 116.7000000000021,
+      "text": "complement of their union is the intersection of their complements.",
+      "chapter": 1
+    },
+    {
+      "start": 117.7000000000021,
+      "end": 120.99999923706265,
+      "text": "Not belonging to their intersection means failing at least one membership",
+      "chapter": 1
+    },
+    {
+      "start": 120.99999923706265,
+      "end": 124.17999954223843,
+      "text": "condition, so it gives the union of complements.",
+      "chapter": 1
+    },
+    {
+      "start": 124.72000045776578,
+      "end": 128.63999862671108,
+      "text": "Intersection distributes over union, and union distributes over intersection.",
+      "chapter": 1
+    },
+    {
+      "start": 129.33999938965053,
+      "end": 133.42000122070522,
+      "text": "You can check a proposed identity by following one arbitrary element and its",
+      "chapter": 1
+    },
+    {
+      "start": 133.42000122070522,
+      "end": 134.2600013732931,
+      "text": "membership conditions.",
+      "chapter": 1
+    },
+    {
+      "start": 134.99999923706264,
+      "end": 139.92000122070522,
+      "text": "For example, membership in A intersect B union C means membership in A and",
+      "chapter": 1
+    },
+    {
+      "start": 139.92000122070522,
+      "end": 142.100001525881,
+      "text": "membership in at least one of B or C.",
+      "chapter": 1
+    },
+    {
+      "start": 142.67999954223842,
+      "end": 146.46000213623256,
+      "text": "This becomes the union of A intersect B and A intersect C.",
+      "chapter": 1
+    },
+    {
+      "start": 147.100001525881,
+      "end": 150.42000122070522,
+      "text": "Keep brackets clear: changing them can change the set being described.",
+      "chapter": 1
+    },
+    {
+      "start": 150.91200000000393,
+      "end": 154.2119999523202,
+      "text": "Counting union members requires correcting repeated counts.",
+      "chapter": 2
+    },
+    {
+      "start": 155.031999885563,
+      "end": 159.2120001907388,
+      "text": "Suppose a group has forty students, twenty four in A, nineteen in B, and eight",
+      "chapter": 2
+    },
+    {
+      "start": 159.2120001907388,
+      "end": 159.6519997711221,
+      "text": "in both.",
+      "chapter": 2
+    },
+    {
+      "start": 160.63200026703274,
+      "end": 163.4320004577676,
+      "text": "Adding twenty four and nineteen counts those eight students twice.",
+      "chapter": 2
+    },
+    {
+      "start": 164.3119996185342,
+      "end": 168.03200083923733,
+      "text": "Subtract them once to obtain thirty five in at least one set, leaving five in",
+      "chapter": 2
+    },
+    {
+      "start": 168.03200083923733,
+      "end": 168.13199931335842,
+      "text": "neither.",
+      "chapter": 2
+    },
+    {
+      "start": 169.07199984741604,
+      "end": 173.07199984741604,
+      "text": "Exactly one set contains twenty four plus nineteen minus twice eight, giving",
+      "chapter": 2
+    },
+    {
+      "start": 173.07199984741604,
+      "end": 174.2720006103555,
+      "text": "twenty seven.",
+      "chapter": 2
+    },
+    {
+      "start": 174.2720006103555,
+      "end": 178.55199938965237,
+      "text": "With three sets, add the three sizes, subtract all three pairwise intersection",
+      "chapter": 2
+    },
+    {
+      "start": 178.55199938965237,
+      "end": 180.9719994659463,
+      "text": "sizes, then add the triple intersection once.",
+      "chapter": 2
+    },
+    {
+      "start": 181.73199969482815,
+      "end": 182.39199954224026,
+      "text": "Why add it back?",
+      "chapter": 2
+    },
+    {
+      "start": 182.79199916077053,
+      "end": 186.29200106811916,
+      "text": "A student in all three was counted three times initially and subtracted three",
+      "chapter": 2
+    },
+    {
+      "start": 186.29200106811916,
+      "end": 188.0920003051797,
+      "text": "times, so needs one final count.",
+      "chapter": 2
+    },
+    {
+      "start": 188.83199816894924,
+      "end": 192.65200167847073,
+      "text": "For sizes twenty, eighteen, fifteen, pairwise intersection sizes eight, seven,",
+      "chapter": 2
+    },
+    {
+      "start": 192.6919987793008,
+      "end": 196.25200015259182,
+      "text": "six, and triple size three, the union has thirty five members.",
+      "chapter": 2
+    },
+    {
+      "start": 196.87199908447658,
+      "end": 200.6919987793008,
+      "text": "The number in exactly two sets is the sum of the pairwise sizes minus three",
+      "chapter": 2
+    },
+    {
+      "start": 200.6919987793008,
+      "end": 203.61200076294338,
+      "text": "times the triple size, giving twelve.",
+      "chapter": 2
+    },
+    {
+      "start": 203.61200076294338,
+      "end": 206.67199832153713,
+      "text": "Pairwise intersection counts ordinarily include students in the third set",
+      "chapter": 2
+    },
+    {
+      "start": 207.17199832153713,
+      "end": 209.0920003051797,
+      "text": "unless the wording explicitly says otherwise.",
+      "chapter": 2
+    },
+    {
+      "start": 210.11200076294338,
+      "end": 213.39199954224026,
+      "text": "Draw disjoint regions starting at the triple intersection when the data feel",
+      "chapter": 2
+    },
+    {
+      "start": 213.39199954224026,
+      "end": 213.7720006103555,
+      "text": "confusing.",
+      "chapter": 2
+    },
+    {
+      "start": 214.71199923706448,
+      "end": 218.5920003051797,
+      "text": "Finally, verify that every derived region is nonnegative and that the union",
+      "chapter": 2
+    },
+    {
+      "start": 218.5920003051797,
+      "end": 220.43199664307033,
+      "text": "does not exceed the supplied group size.",
+      "chapter": 2
+    },
+    {
+      "start": 221.2800000000057,
+      "end": 227.16000011444663,
+      "text": "A binary relation from A to B is a subset of the Cartesian product A cross B.",
+      "chapter": 3
+    },
+    {
+      "start": 227.85999992371177,
+      "end": 232.08000019074058,
+      "text": "Each member is an ordered pair, so reversing its entries need not preserve",
+      "chapter": 3
+    },
+    {
+      "start": 232.08000019074058,
+      "end": 232.5599997329769,
+      "text": "membership.",
+      "chapter": 3
+    },
+    {
+      "start": 233.54000022888755,
+      "end": 237.56000068665122,
+      "text": "For a relation on A, reflexivity requires every pair a, a.",
+      "chapter": 3
+    },
+    {
+      "start": 238.4999993133602,
+      "end": 241.98000076294517,
+      "text": "Symmetry says that whenever a, b belongs, b, a also belongs.",
+      "chapter": 3
+    },
+    {
+      "start": 242.85999992371177,
+      "end": 247.7800000000057,
+      "text": "Antisymmetry says that if both a, b and b, a belong, then a must equal b.",
+      "chapter": 3
+    },
+    {
+      "start": 248.4999993133602,
+      "end": 252.56000068665122,
+      "text": "This is not simply the opposite of symmetry: the identity relation is both",
+      "chapter": 3
+    },
+    {
+      "start": 252.56000068665122,
+      "end": 254.19999816895103,
+      "text": "symmetric and antisymmetric.",
+      "chapter": 3
+    },
+    {
+      "start": 255.09999969482993,
+      "end": 259.1800015258846,
+      "text": "Transitivity requires a, c whenever a, b and b, c belong.",
+      "chapter": 3
+    },
+    {
+      "start": 259.91999938965415,
+      "end": 262.199998168951,
+      "text": "Consider the less than or equal relation on real numbers.",
+      "chapter": 3
+    },
+    {
+      "start": 262.73999908447837,
+      "end": 266.3600018310604,
+      "text": "It is reflexive, antisymmetric and transitive, but not symmetric.",
+      "chapter": 3
+    },
+    {
+      "start": 267.0200016784725,
+      "end": 271.3799984741268,
+      "text": "The relation of having the same absolute value is reflexive, symmetric and",
+      "chapter": 3
+    },
+    {
+      "start": 271.3799984741268,
+      "end": 271.7199986267147,
+      "text": "transitive.",
+      "chapter": 3
+    },
+    {
+      "start": 272.23999908447837,
+      "end": 275.2800000000057,
+      "text": "To disprove a property, one counterexample is enough.",
+      "chapter": 3
+    },
+    {
+      "start": 275.9600003051815,
+      "end": 279.75999954224204,
+      "text": "To establish it for an infinite set, use an argument covering arbitrary",
+      "chapter": 3
+    },
+    {
+      "start": 279.75999954224204,
+      "end": 282.32000091553306,
+      "text": "elements rather than checking only a few examples.",
+      "chapter": 3
+    },
+    {
+      "start": 283.0200016784725,
+      "end": 287.0599987793026,
+      "text": "The empty relation on a nonempty set is not reflexive, while symmetry and",
+      "chapter": 3
+    },
+    {
+      "start": 287.0599987793026,
+      "end": 289.90000274658775,
+      "text": "transitivity hold because no pairs trigger a failure.",
+      "chapter": 3
+    },
+    {
+      "start": 290.59999969482993,
+      "end": 294.0025348557155,
+      "text": "Always state the underlying set: changing it can change the truth of a",
+      "chapter": 3
+    },
+    {
+      "start": 294.0025348557155,
+      "end": 294.4400036621151,
+      "text": "property.",
+      "chapter": 3
+    },
+    {
+      "start": 294.7440000000076,
+      "end": 298.82399992371364,
+      "text": "An equivalence relation is reflexive, symmetric and transitive.",
+      "chapter": 4
+    },
+    {
+      "start": 299.5840001525955,
+      "end": 303.20400003815456,
+      "text": "These three conditions make its equivalence classes divide the underlying set",
+      "chapter": 4
+    },
+    {
+      "start": 303.20400003815456,
+      "end": 304.5040002288894,
+      "text": "into disjoint groups.",
+      "chapter": 4
+    },
+    {
+      "start": 305.26400045777126,
+      "end": 309.5840001525955,
+      "text": "On the integers, define a related to b when a minus b is divisible by three.",
+      "chapter": 4
+    },
+    {
+      "start": 310.4439998092727,
+      "end": 314.32399992371364,
+      "text": "Reflexivity follows because a minus a is zero, a multiple of three.",
+      "chapter": 4
+    },
+    {
+      "start": 314.9639993133621,
+      "end": 319.0255387432468,
+      "text": "If a minus b is divisible by three, its negative b minus a is too,",
+      "chapter": 4
+    },
+    {
+      "start": 319.0255387432468,
+      "end": 319.76400045777126,
+      "text": "establishing",
+      "chapter": 4
+    },
+    {
+      "start": 319.76400045777126,
+      "end": 320.2239995422439,
+      "text": "symmetry.",
+      "chapter": 4
+    },
+    {
+      "start": 320.2239995422439,
+      "end": 325.94400076294704,
+      "text": "If a minus b and b minus c are divisible by three, their sum a minus c is",
+      "chapter": 4
+    },
+    {
+      "start": 325.94400076294704,
+      "end": 328.4840016784744,
+      "text": "divisible by three, establishing transitivity.",
+      "chapter": 4
+    },
+    {
+      "start": 329.4640012207107,
+      "end": 333.8439984741287,
+      "text": "Integers fall into three classes according to remainder zero, one or two after",
+      "chapter": 4
+    },
+    {
+      "start": 333.8439984741287,
+      "end": 334.6440015258865,
+      "text": "division by three.",
+      "chapter": 4
+    },
+    {
+      "start": 335.3040013732986,
+      "end": 339.4039998474197,
+      "text": "Negative integers belong too: negative one is in the same class as two because",
+      "chapter": 4
+    },
+    {
+      "start": 339.4039998474197,
+      "end": 340.70399908448024,
+      "text": "their difference is negative three.",
+      "chapter": 4
+    },
+    {
+      "start": 341.44400076294704,
+      "end": 345.7440000000076,
+      "text": "Every integer belongs to exactly one class, and two classes sharing a member",
+      "chapter": 4
+    },
+    {
+      "start": 346.2239995422439,
+      "end": 347.2239995422439,
+      "text": "must be the same class.",
+      "chapter": 4
+    },
+    {
+      "start": 347.76400045777126,
+      "end": 349.1440015258865,
+      "text": "This is the partition property.",
+      "chapter": 4
+    },
+    {
+      "start": 349.6639981689529,
+      "end": 353.6639981689529,
+      "text": "Conversely, a partition defines an equivalence relation by declaring two",
+      "chapter": 4
+    },
+    {
+      "start": 353.6639981689529,
+      "end": 355.86399893189235,
+      "text": "elements related when they lie in the same block.",
+      "chapter": 4
+    },
+    {
+      "start": 356.6639981689529,
+      "end": 360.68400244141384,
+      "text": "Do not use a merely symmetric relation as an equivalence relation without",
+      "chapter": 4
+    },
+    {
+      "start": 360.68400244141384,
+      "end": 362.7440000000076,
+      "text": "checking transitivity and reflexivity.",
+      "chapter": 4
+    },
+    {
+      "start": 363.50400213623806,
+      "end": 367.7440000000076,
+      "text": "For example, being unequal is symmetric on the integers but fails reflexivity",
+      "chapter": 4
+    },
+    {
+      "start": 368.0639996948318,
+      "end": 369.68400244141384,
+      "text": "and also fails transitivity.",
+      "chapter": 4
+    },
+    {
+      "start": 370.10400000000953,
+      "end": 374.9040001907444,
+      "text": "A function from A to B assigns exactly one element of B to every element of A.",
+      "chapter": 5
+    },
+    {
+      "start": 375.7239998855686,
+      "end": 380.1240004577732,
+      "text": "Multiple inputs may share an output, but one input cannot have two different",
+      "chapter": 5
+    },
+    {
+      "start": 380.1240004577732,
+      "end": 380.3839997329807,
+      "text": "outputs.",
+      "chapter": 5
+    },
+    {
+      "start": 381.04399958039284,
+      "end": 385.60400000000953,
+      "text": "The domain is A, the codomain is B, and the range is the collection of outputs",
+      "chapter": 5
+    },
+    {
+      "start": 385.60400000000953,
+      "end": 386.4640006103611,
+      "text": "actually reached.",
+      "chapter": 5
+    },
+    {
+      "start": 387.08399954224586,
+      "end": 390.67784583889863,
+      "text": "For the square function from the reals to the reals, negative outputs are",
+      "chapter": 5
+    },
+    {
+      "start": 390.67784583889863,
+      "end": 390.92399969483375,
+      "text": "never",
+      "chapter": 5
+    },
+    {
+      "start": 390.92399969483375,
+      "end": 394.743999389658,
+      "text": "reached, so the range is the nonnegative reals and is smaller than the",
+      "chapter": 5
+    },
+    {
+      "start": 394.743999389658,
+      "end": 395.08399954224586,
+      "text": "codomain.",
+      "chapter": 5
+    },
+    {
+      "start": 395.6639994659519,
+      "end": 400.243999389658,
+      "text": "If an algebraic formula is supplied without a domain, first identify the real",
+      "chapter": 5
+    },
+    {
+      "start": 400.243999389658,
+      "end": 401.804000762949,
+      "text": "inputs where the formula is defined.",
+      "chapter": 5
+    },
+    {
+      "start": 402.6240004577732,
+      "end": 407.02399816895485,
+      "text": "For the square root of x minus one divided by x minus three, the square root",
+      "chapter": 5
+    },
+    {
+      "start": 407.02399816895485,
+      "end": 410.5439986267185,
+      "text": "requires x at least one, and the denominator excludes three.",
+      "chapter": 5
+    },
+    {
+      "start": 411.32400122071266,
+      "end": 414.1240004577732,
+      "text": "Combine the conditions rather than treating either as sufficient.",
+      "chapter": 5
+    },
+    {
+      "start": 414.743999389658,
+      "end": 419.243999389658,
+      "text": "The domain is from one inclusive to three exclusive, together with numbers",
+      "chapter": 5
+    },
+    {
+      "start": 419.243999389658,
+      "end": 420.02399816895485,
+      "text": "greater than three.",
+      "chapter": 5
+    },
+    {
+      "start": 420.92399969483375,
+      "end": 424.304000762949,
+      "text": "Cancelling a factor does not automatically restore an excluded input from the",
+      "chapter": 5
+    },
+    {
+      "start": 424.304000762949,
+      "end": 425.0439986267185,
+      "text": "original expression.",
+      "chapter": 5
+    },
+    {
+      "start": 425.70399847413063,
+      "end": 430.98400106812477,
+      "text": "For example, x squared minus one divided by x minus one agrees with x plus one",
+      "chapter": 5
+    },
+    {
+      "start": 430.98400106812477,
+      "end": 432.2840003051853,
+      "text": "only when x is not one.",
+      "chapter": 5
+    },
+    {
+      "start": 433.2239989318943,
+      "end": 436.9839972534275,
+      "text": "Writing the original domain prevents an algebraic simplification from silently",
+      "chapter": 5
+    },
+    {
+      "start": 436.9839972534275,
+      "end": 438.20399847413063,
+      "text": "defining a different function.",
+      "chapter": 5
+    },
+    {
+      "start": 438.5040000000112,
+      "end": 443.5040000000112,
+      "text": "A function is injective, or one to one, when equal outputs imply equal inputs.",
+      "chapter": 6
+    },
+    {
+      "start": 444.1439998664968,
+      "end": 448.32399969483544,
+      "text": "It is onto, or surjective, when every member of its codomain is reached.",
+      "chapter": 6
+    },
+    {
+      "start": 448.88400011445214,
+      "end": 452.77733330497887,
+      "text": "A function whose range is a proper subset of its codomain is often called",
+      "chapter": 6
+    },
+    {
+      "start": 452.77733330497887,
+      "end": 453.04399996186424,
+      "text": "into.",
+      "chapter": 6
+    },
+    {
+      "start": 453.82399969483544,
+      "end": 455.82399969483544,
+      "text": "These conditions answer different questions.",
+      "chapter": 6
+    },
+    {
+      "start": 456.5040000000112,
+      "end": 460.60400038148094,
+      "text": "The square function from the reals to the reals is neither injective nor onto:",
+      "chapter": 6
+    },
+    {
+      "start": 461.48399954224755,
+      "end": 464.9039996185415,
+      "text": "one and negative one share an output, and negative numbers are missed.",
+      "chapter": 6
+    },
+    {
+      "start": 465.48399954224755,
+      "end": 469.184000305187,
+      "text": "Keep the real domain but change the codomain to the nonnegative reals.",
+      "chapter": 6
+    },
+    {
+      "start": 469.7439997711294,
+      "end": 473.123998931896,
+      "text": "It becomes onto but remains noninjective.",
+      "chapter": 6
+    },
+    {
+      "start": 473.123998931896,
+      "end": 475.9639990844839,
+      "text": "Restrict both domain and codomain to the nonnegative reals.",
+      "chapter": 6
+    },
+    {
+      "start": 476.4040015258901,
+      "end": 479.684000305187,
+      "text": "It is now injective and onto, hence bijective.",
+      "chapter": 6
+    },
+    {
+      "start": 480.20400076295067,
+      "end": 484.184000305187,
+      "text": "An affine function two x plus three from the reals to the reals is bijective:",
+      "chapter": 6
+    },
+    {
+      "start": 484.9439986267202,
+      "end": 489.4439986267202,
+      "text": "equal outputs give equal inputs, and any target y has input y minus three",
+      "chapter": 6
+    },
+    {
+      "start": 489.4439986267202,
+      "end": 490.22400122071434,
+      "text": "divided by two.",
+      "chapter": 6
+    },
+    {
+      "start": 490.7639983215444,
+      "end": 494.56400137330223,
+      "text": "A constant function on a domain with at least two elements is not injective,",
+      "chapter": 6
+    },
+    {
+      "start": 495.1039984741323,
+      "end": 498.0840018310659,
+      "text": "but it is onto a codomain containing only its constant value.",
+      "chapter": 6
+    },
+    {
+      "start": 498.9639990844839,
+      "end": 502.64399938965965,
+      "text": "State the sets every time; a formula alone does not settle the classification.",
+      "chapter": 6
+    },
+    {
+      "start": 503.62400274659325,
+      "end": 507.5239966430776,
+      "text": "Use a counterexample to refute injectivity and solve for a preimage to",
+      "chapter": 6
+    },
+    {
+      "start": 507.5239966430776,
+      "end": 508.5840018310659,
+      "text": "establish surjectivity.",
+      "chapter": 6
+    },
+    {
+      "start": 509.208000000013,
+      "end": 514.7879999237191,
+      "text": "For a finite domain containing m elements and a finite codomain containing n",
+      "chapter": 7
+    },
+    {
+      "start": 514.7879999237191,
+      "end": 518.8279998855721,
+      "text": "elements, each input can independently choose any of n outputs.",
+      "chapter": 7
+    },
+    {
+      "start": 519.588000114454,
+      "end": 521.6079996185433,
+      "text": "This gives n to the power m functions.",
+      "chapter": 7
+    },
+    {
+      "start": 522.3279998855721,
+      "end": 526.3280008392464,
+      "text": "With a three element domain and a two element codomain, there are eight",
+      "chapter": 7
+    },
+    {
+      "start": 526.3280008392464,
+      "end": 526.708000000013,
+      "text": "functions.",
+      "chapter": 7
+    },
+    {
+      "start": 527.4680002288949,
+      "end": 532.3080003814828,
+      "text": "Exactly two are constant, and the other six hit both target elements, so there",
+      "chapter": 7
+    },
+    {
+      "start": 532.3080003814828,
+      "end": 534.1679990844857,
+      "text": "are six onto functions in this particular case.",
+      "chapter": 7
+    },
+    {
+      "start": 534.1679990844857,
+      "end": 539.7280004577767,
+      "text": "There are no injections because three distinct inputs cannot have distinct",
+      "chapter": 7
+    },
+    {
+      "start": 539.7280004577767,
+      "end": 541.7880018310677,
+      "text": "outputs in only two target positions.",
+      "chapter": 7
+    },
+    {
+      "start": 542.6279981689584,
+      "end": 547.208000000013,
+      "text": "Reverse the sizes: a two element domain and three element codomain give nine",
+      "chapter": 7
+    },
+    {
+      "start": 547.208000000013,
+      "end": 550.4080007629525,
+      "text": "functions and six injections, but no surjections.",
+      "chapter": 7
+    },
+    {
+      "start": 551.0880010681283,
+      "end": 554.8880003051888,
+      "text": "An injection uses three choices for the first output and two for the second.",
+      "chapter": 7
+    },
+    {
+      "start": 555.3279989318978,
+      "end": 559.7882567310953,
+      "text": "In general, for m no greater than n, the injection count is n factorial",
+      "chapter": 7
+    },
+    {
+      "start": 559.7882567310953,
+      "end": 560.2280004577767,
+      "text": "divided",
+      "chapter": 7
+    },
+    {
+      "start": 560.2280004577767,
+      "end": 561.8079984741341,
+      "text": "by n minus m factorial.",
+      "chapter": 7
+    },
+    {
+      "start": 562.5880010681283,
+      "end": 564.3479993896615,
+      "text": "If m exceeds n, it is zero.",
+      "chapter": 7
+    },
+    {
+      "start": 564.9480016784798,
+      "end": 569.8079984741341,
+      "text": "A bijection between two finite sets of the same size n is a permutation of the",
+      "chapter": 7
+    },
+    {
+      "start": 569.8079984741341,
+      "end": 571.8079984741341,
+      "text": "targets, giving n factorial choices.",
+      "chapter": 7
+    },
+    {
+      "start": 572.5279996948373,
+      "end": 577.5479963379037,
+      "text": "For equal finite sizes, injectivity and surjectivity are equivalent, but this",
+      "chapter": 7
+    },
+    {
+      "start": 577.5479963379037,
+      "end": 580.0680006103646,
+      "text": "shortcut is not a general rule for infinite sets.",
+      "chapter": 7
+    },
+    {
+      "start": 580.7480009155404,
+      "end": 583.4079969482552,
+      "text": "Keep the finite hypothesis attached to the counting argument.",
+      "chapter": 7
+    },
+    {
+      "start": 584.064000000015,
+      "end": 586.8439999714047,
+      "text": "Composition feeds one function's output into another.",
+      "chapter": 8
+    },
+    {
+      "start": 587.2840000286252,
+      "end": 590.6239999427945,
+      "text": "In f composed with g, the inner function g acts first.",
+      "chapter": 8
+    },
+    {
+      "start": 591.2439998283536,
+      "end": 595.2040003433377,
+      "text": "Let f of x equal two x plus one and g of x equal x squared.",
+      "chapter": 8
+    },
+    {
+      "start": 595.8439997329862,
+      "end": 600.8839996948392,
+      "text": "Then f of g of x is two x squared plus one, whereas g of f of x is the square",
+      "chapter": 8
+    },
+    {
+      "start": 600.8839996948392,
+      "end": 602.0439995422513,
+      "text": "of two x plus one.",
+      "chapter": 8
+    },
+    {
+      "start": 602.6040009155423,
+      "end": 604.9040001526029,
+      "text": "These functions differ, so order matters.",
+      "chapter": 8
+    },
+    {
+      "start": 605.5040005340726,
+      "end": 609.9639996185452,
+      "text": "A composite requires x in the domain of g and g of x in the domain of f.",
+      "chapter": 8
+    },
+    {
+      "start": 610.4840000763089,
+      "end": 615.6040009155423,
+      "text": "Consider f of u equal one divided by u minus one, and g of x equal the square",
+      "chapter": 8
+    },
+    {
+      "start": 615.6040009155423,
+      "end": 616.2440003051908,
+      "text": "root of x.",
+      "chapter": 8
+    },
+    {
+      "start": 617.1639984741361,
+      "end": 620.5439995422513,
+      "text": "The composite is one divided by the square root of x minus one.",
+      "chapter": 8
+    },
+    {
+      "start": 621.2440003051908,
+      "end": 625.1839989318997,
+      "text": "The inner function requires x at least zero, while the outer denominator",
+      "chapter": 8
+    },
+    {
+      "start": 625.1839989318997,
+      "end": 629.1639984741361,
+      "text": "excludes square root of x equal to one, so exclude x equal to one.",
+      "chapter": 8
+    },
+    {
+      "start": 629.8239983215482,
+      "end": 632.4440010681302,
+      "text": "Its domain is the nonnegative reals with one removed.",
+      "chapter": 8
+    },
+    {
+      "start": 633.4240006103665,
+      "end": 637.1347702636868,
+      "text": "Composition is associative when all the stated maps are compatible, even",
+      "chapter": 8
+    },
+    {
+      "start": 637.1347702636868,
+      "end": 637.4440010681302,
+      "text": "though",
+      "chapter": 8
+    },
+    {
+      "start": 637.4440010681302,
+      "end": 638.4440010681302,
+      "text": "it is not commutative.",
+      "chapter": 8
+    },
+    {
+      "start": 639.0439995422513,
+      "end": 643.4839981689603,
+      "text": "Thus f composed with g composed with h can be bracketed in either association",
+      "chapter": 8
+    },
+    {
+      "start": 643.4839981689603,
+      "end": 644.9640015258939,
+      "text": "without reversing their order.",
+      "chapter": 8
+    },
+    {
+      "start": 645.8839996948392,
+      "end": 649.7039993896634,
+      "text": "Before cancelling an expression or rearranging a composition, write the",
+      "chapter": 8
+    },
+    {
+      "start": 649.7039993896634,
+      "end": 653.5440033569486,
+      "text": "original input conditions so no forbidden point is accidentally restored.",
+      "chapter": 8
+    },
+    {
+      "start": 653.8320000000167,
+      "end": 656.3719999618697,
+      "text": "An inverse function undoes a bijection.",
+      "chapter": 9
+    },
+    {
+      "start": 656.9319999046493,
+      "end": 661.0719997711349,
+      "text": "If f maps A bijectively onto B, its inverse maps B back to A.",
+      "chapter": 9
+    },
+    {
+      "start": 661.8920004196334,
+      "end": 666.0920002288985,
+      "text": "Composing the inverse after f gives the identity on A, and composing f after",
+      "chapter": 9
+    },
+    {
+      "start": 666.0920002288985,
+      "end": 668.0920002288985,
+      "text": "its inverse gives the identity on B.",
+      "chapter": 9
+    },
+    {
+      "start": 668.4320003814864,
+      "end": 670.9119999237228,
+      "text": "The notation f inverse is not a reciprocal.",
+      "chapter": 9
+    },
+    {
+      "start": 671.4520008392501,
+      "end": 676.4309749126112,
+      "text": "For f of x equal two x plus three on the reals, solve y equals two x plus",
+      "chapter": 9
+    },
+    {
+      "start": 676.4309749126112,
+      "end": 676.7720005340743,
+      "text": "three",
+      "chapter": 9
+    },
+    {
+      "start": 676.7720005340743,
+      "end": 677.311999542253,
+      "text": "for x.",
+      "chapter": 9
+    },
+    {
+      "start": 677.4919998474288,
+      "end": 683.1319992370773,
+      "text": "This gives x equal to y minus three divided by two, so the inverse takes an",
+      "chapter": 9
+    },
+    {
+      "start": 683.1319992370773,
+      "end": 684.1519996948409,
+      "text": "input y to that value.",
+      "chapter": 9
+    },
+    {
+      "start": 685.2119991607833,
+      "end": 688.0720016784835,
+      "text": "Verify both compositions, not just a symbolic swap.",
+      "chapter": 9
+    },
+    {
+      "start": 688.9319984741378,
+      "end": 693.6319992370773,
+      "text": "The square function on all reals has no inverse function because positive and",
+      "chapter": 9
+    },
+    {
+      "start": 693.6319992370773,
+      "end": 694.9719993896651,
+      "text": "negative inputs can share an output.",
+      "chapter": 9
+    },
+    {
+      "start": 696.1720001526046,
+      "end": 699.5320007629562,
+      "text": "Restrict the original domain to the nonnegative reals and take the nonnegative",
+      "chapter": 9
+    },
+    {
+      "start": 699.5320007629562,
+      "end": 700.4919998474288,
+      "text": "reals as codomain.",
+      "chapter": 9
+    },
+    {
+      "start": 701.1720001526046,
+      "end": 703.2320015258956,
+      "text": "Then its inverse is the nonnegative square root.",
+      "chapter": 9
+    },
+    {
+      "start": 703.9319984741378,
+      "end": 706.9919998474288,
+      "text": "The alternative negative half line produces a different inverse branch.",
+      "chapter": 9
+    },
+    {
+      "start": 707.7320015258956,
+      "end": 712.5320007629562,
+      "text": "For f of x equal x squared minus four on x at least zero, the codomain must be",
+      "chapter": 9
+    },
+    {
+      "start": 712.5320007629562,
+      "end": 715.1720001526046,
+      "text": "the interval starting at negative four for a bijection.",
+      "chapter": 9
+    },
+    {
+      "start": 715.9319984741378,
+      "end": 718.4319984741378,
+      "text": "Its inverse is square root of y plus four.",
+      "chapter": 9
+    },
+    {
+      "start": 719.272002441423,
+      "end": 722.772002441423,
+      "text": "Domain and codomain restrictions therefore determine which inverse is valid.",
+      "chapter": 9
+    }
+  ]
+}
