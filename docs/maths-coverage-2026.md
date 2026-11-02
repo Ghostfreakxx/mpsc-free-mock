@@ -16,13 +16,13 @@ Inventory checked 3 November 2026. A lesson being available does not mean every 
 | 9 | Differential Equations | 14 chapters | 14 sections, 12 examples, 28 original MCQs | Further mixed substitutions, parameter initial conditions, exceptional branches and timed practice |
 | 10 | Coordinate Geometry | 20 chapters | 20 sections, 16 examples, 40 original MCQs | Further mixed loci, parameter line systems, advanced chord/tangent work, conic intersections and timed practice |
 | 11 | Three-Dimensional Geometry | 14 chapters | 14 sections, 12 examples, 28 original MCQs | Further parameter line classification, general closest-point systems and timed practice |
-| 12 | Vector Algebra | Pending | Pending | Components, addition, dot and cross products |
+| 12 | Vector Algebra | 14 chapters | 14 sections, 12 examples, 28 original MCQs | Further mixed parameter conditions, identities, projection/area constructions and timed practice |
 | 13 | Statistics and Probability | Pending | Pending | Dispersion, probability laws, Bayes and random variables |
 | 14 | Trigonometry | 12 chapters | 12 sections, 10 examples, 24 original MCQs | Further mixed equations, inverse-branch restrictions and timed practice |
 
 ## Delivery order
 
-Fill required headings before optional enrichment. Units 1–11 and 14 now have recordings and written companions: twelve of the fourteen units have recorded foundations. Two unit-level recording gaps remain: vectors and statistics/probability. Trigonometry supplies the inverse-function and angle prerequisites for the new limit and differentiation class. Each release includes narration, aligned captions, boards, worked examples, original practice and downloadable notes. The first five questions in each existing Sets and Quadratics companion and all existing progress keys are preserved.
+Fill required headings before optional enrichment. Units 1–12 and 14 now have recordings and written companions: thirteen of the fourteen units have recorded foundations. One unit-level recording gap remains: statistics/probability. Trigonometry supplies the inverse-function and angle prerequisites for the new limit and differentiation class. Each release includes narration, aligned captions, boards, worked examples, original practice and downloadable notes. The first five questions in each existing Sets and Quadratics companion and all existing progress keys are preserved.
 
 Physics and Chemistry have recording sets mapped to all twenty units each; that availability is not a completion percentage. Their remaining-work statements need a required-syllabus audit before declaring either subject finished. JEE completion requires a topic-by-topic review across all three subjects before moving the main production effort to NEET.
 

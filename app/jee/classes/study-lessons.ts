@@ -1,3 +1,4 @@
+import { vectorAlgebraLesson } from './vector-algebra-study.ts';
 import { threeDimensionalGeometryLesson } from './three-dimensional-geometry-study.ts';
 import { coordinateGeometryLesson } from './coordinate-geometry-study.ts';
 import { differentialEquationsLesson } from './differential-equations-study.ts';
@@ -191,6 +192,7 @@ export const studyLessons: StudyLesson[] = [
   differentialEquationsLesson,
   coordinateGeometryLesson,
   threeDimensionalGeometryLesson,
+  vectorAlgebraLesson,
 ];
 
 const moleConceptCompanion = studyLessons.find(lesson=>lesson.id==="mole-concept");
