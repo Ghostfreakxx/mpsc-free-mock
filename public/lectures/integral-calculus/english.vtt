@@ -1,0 +1,1096 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.020
+Integration reverses differentiation when we seek an antiderivative.
+
+00:00:05.280 --> 00:00:10.200
+Call the integrand lowercase f and a candidate antiderivative capital F.
+
+00:00:10.840 --> 00:00:15.300
+If differentiating capital F gives lowercase f throughout an interval, then
+
+00:00:15.300 --> 00:00:17.700
+capital F is an antiderivative there.
+
+00:00:18.240 --> 00:00:21.820
+For the integrand two x, one antiderivative is x squared.
+
+00:00:22.660 --> 00:00:26.160
+Adding any constant leaves its derivative unchanged, so the indefinite
+
+00:00:26.160 --> 00:00:26.560
+integral
+
+00:00:26.560 --> 00:00:28.140
+is x squared plus C.
+
+00:00:28.900 --> 00:00:33.020
+The integral sign with no bounds represents a family of functions, rather than
+
+00:00:33.020 --> 00:00:33.520
+one number.
+
+00:00:34.320 --> 00:00:36.920
+The symbol d x identifies the variable of integration.
+
+00:00:37.760 --> 00:00:41.760
+A different variable is held constant unless dependence is explicitly stated.
+
+00:00:42.680 --> 00:00:46.772
+On a connected interval, any two antiderivatives of the same function differ
+
+00:00:46.772 --> 00:00:46.880
+by
+
+00:00:46.880 --> 00:00:47.460
+a constant.
+
+00:00:48.300 --> 00:00:51.080
+Separate domain intervals can have independent constants.
+
+00:00:51.720 --> 00:00:57.143
+For example, one over x excludes zero, so a formula on positive inputs need
+
+00:00:57.143 --> 00:00:57.360
+not
+
+00:00:57.360 --> 00:01:00.400
+share its integration constant with a formula on negative inputs.
+
+00:01:01.540 --> 00:01:05.400
+Linearity lets us integrate sums term by term and pull out constant factors.
+
+00:01:06.100 --> 00:01:09.560
+It does not turn an integral of a product into a product of integrals.
+
+00:01:10.620 --> 00:01:13.880
+Differentiate the proposed result and compare it with the entire original
+
+00:01:13.880 --> 00:01:17.340
+integrand, and check that the original domain restrictions still hold.
+
+00:01:17.712 --> 00:01:22.272
+The power integration rule increases the exponent by one and divides by that
+
+00:01:22.272 --> 00:01:22.892
+new exponent.
+
+00:01:23.732 --> 00:01:27.470
+It applies when the exponent is not negative one, on an interval where the
+
+00:01:27.470 --> 00:01:27.672
+real
+
+00:01:27.672 --> 00:01:29.452
+power is defined and differentiable.
+
+00:01:30.472 --> 00:01:35.132
+Integrating three x squared minus four gives x cubed minus four x plus C.
+
+00:01:36.012 --> 00:01:39.292
+The exceptional exponent negative one has a logarithmic answer.
+
+00:01:40.072 --> 00:01:44.434
+An antiderivative of one over x is natural log of absolute x on either
+
+00:01:44.434 --> 00:01:44.932
+interval
+
+00:01:44.932 --> 00:01:45.872
+excluding zero.
+
+00:01:46.372 --> 00:01:50.312
+The absolute value makes a real formula available for negative inputs as well
+
+00:01:50.312 --> 00:01:51.212
+as positive inputs.
+
+00:01:51.912 --> 00:01:53.112
+It does not include zero.
+
+00:01:53.932 --> 00:01:56.432
+The exponential e to the x integrates to itself.
+
+00:01:57.192 --> 00:02:01.392
+For e to the two x, divide by the inner derivative two, giving one half e to
+
+00:02:01.392 --> 00:02:02.532
+the two x plus C.
+
+00:02:03.292 --> 00:02:07.596
+A positive base a different from one gives an integral of a to the x equal to
+
+00:02:07.596 --> 00:02:07.652
+a
+
+00:02:07.652 --> 00:02:09.692
+to the x divided by natural log a.
+
+00:02:10.232 --> 00:02:13.112
+If the base is one, integrate the constant one directly.
+
+00:02:13.112 --> 00:02:17.079
+Verify the coefficient by differentiating, especially when an exponent
+
+00:02:17.079 --> 00:02:17.532
+contains
+
+00:02:17.532 --> 00:02:18.232
+a scale factor.
+
+00:02:18.528 --> 00:02:22.408
+Trigonometric integration begins by reversing the derivative table, using
+
+00:02:22.408 --> 00:02:22.908
+radians.
+
+00:02:23.628 --> 00:02:28.408
+Cosine x integrates to sine x, and sine x integrates to negative cosine x.
+
+00:02:29.128 --> 00:02:31.388
+Secant squared x integrates to tangent x.
+
+00:02:32.168 --> 00:02:35.348
+Cosecant squared x integrates to negative cotangent x.
+
+00:02:36.028 --> 00:02:40.888
+Secant x times tangent x integrates to secant x, while cosecant x times
+
+00:02:40.888 --> 00:02:43.848
+cotangent x integrates to negative cosecant x.
+
+00:02:44.448 --> 00:02:47.348
+Check the negative signs by differentiating the proposed answers.
+
+00:02:47.848 --> 00:02:51.588
+Each formula is used on an interval avoiding the poles of the original
+
+00:02:51.588 --> 00:02:52.088
+integrand.
+
+00:02:52.868 --> 00:02:57.701
+A scaled angle changes the coefficient: cosine of three x integrates to sine
+
+00:02:57.701 --> 00:02:57.828
+of
+
+00:02:57.828 --> 00:02:59.068
+three x divided by three.
+
+00:02:59.948 --> 00:03:03.908
+Integrating tangent x gives negative natural log of absolute cosine x plus C.
+
+00:03:04.568 --> 00:03:08.875
+This follows by substituting cosine x and using its derivative negative sine
+
+00:03:08.875 --> 00:03:08.988
+x.
+
+00:03:09.708 --> 00:03:14.168
+Similarly, cotangent x integrates to natural log of absolute sine x plus C.
+
+00:03:14.168 --> 00:03:17.388
+The logarithm formulas keep the excluded zeros visible.
+
+00:03:18.328 --> 00:03:21.728
+No ordinary antiderivative formula permits crossing a pole as though the
+
+00:03:21.728 --> 00:03:23.008
+function were continuous there.
+
+00:03:23.868 --> 00:03:27.348
+Identify the integrand as a complete pattern before selecting a table entry.
+
+00:03:28.536 --> 00:03:30.596
+Substitution reverses the chain rule.
+
+00:03:31.096 --> 00:03:33.956
+Look for an inner expression together with a constant multiple of its
+
+00:03:33.956 --> 00:03:34.256
+derivative.
+
+00:03:34.856 --> 00:03:39.676
+In the integral of two x times cosine of x squared, set u equal to x squared.
+
+00:03:40.276 --> 00:03:45.076
+Then d u equals two x d x, so the whole integral becomes the integral of
+
+00:03:45.076 --> 00:03:45.476
+cosine
+
+00:03:45.476 --> 00:03:46.716
+u with respect to u.
+
+00:03:47.316 --> 00:03:52.956
+The result is sine u plus C, or sine of x squared plus C after returning to x.
+
+00:03:53.856 --> 00:03:57.416
+Writing a substitution without replacing every remaining x is incomplete.
+
+00:03:58.036 --> 00:04:01.936
+Another example integrates x times the square root of one plus x squared.
+
+00:04:02.796 --> 00:04:04.476
+Set u equal to one plus x squared.
+
+00:04:05.116 --> 00:04:08.096
+Then x d x equals one half d u.
+
+00:04:08.096 --> 00:04:11.636
+Integrating one half u to the one half gives one third u to the three halves,
+
+00:04:12.256 --> 00:04:15.994
+hence one third of the quantity one plus x squared raised to three halves,
+
+00:04:15.994 --> 00:04:16.196
+plus
+
+00:04:16.196 --> 00:04:16.516
+C.
+
+00:04:16.916 --> 00:04:19.576
+The derivative check restores the original x factor.
+
+00:04:20.536 --> 00:04:23.856
+Avoid treating d u as though it always equals d x.
+
+00:04:23.856 --> 00:04:26.656
+Account for the scale factor before integrating the transformed expression.
+
+00:04:26.952 --> 00:04:29.452
+The product rule yields integration by parts.
+
+00:04:30.292 --> 00:04:35.672
+Starting with the differential of u v equal to u d v plus v d u, rearrangement
+
+00:04:35.672 --> 00:04:41.412
+gives the integral of u d v equal to u v minus the integral of v d u.
+
+00:04:41.412 --> 00:04:45.212
+Choose the factors so that differentiating u and integrating d v make the
+
+00:04:45.212 --> 00:04:46.432
+remaining integral manageable.
+
+00:04:47.132 --> 00:04:52.992
+For x times e to the x, choose u equal to x and d v equal to e to the x d
+
+00:04:52.992 --> 00:04:53.392
+x.
+
+00:04:53.392 --> 00:04:56.332
+Then d u is d x and v is e to the x.
+
+00:04:56.332 --> 00:05:00.432
+The answer is x e to the x minus e to the x plus C.
+
+00:05:01.192 --> 00:05:03.832
+Differentiation shows the extra exponential terms cancel.
+
+00:05:04.572 --> 00:05:08.332
+For natural log x on its positive domain, write the hidden product with one,
+
+00:05:09.052 --> 00:05:12.732
+choose u equal to natural log x and d v equal to d x.
+
+00:05:12.732 --> 00:05:15.732
+This gives x natural log x minus x plus C.
+
+00:05:16.172 --> 00:05:20.092
+A factor selection mnemonic is only a guide, not a theorem that every choice
+
+00:05:20.092 --> 00:05:21.092
+simplifies the problem.
+
+00:05:21.692 --> 00:05:25.172
+Check signs and boundary terms carefully when applying the same method to a
+
+00:05:25.172 --> 00:05:25.672
+definite integral.
+
+00:05:25.968 --> 00:05:28.648
+A rational integrand is a quotient of polynomials.
+
+00:05:29.248 --> 00:05:33.017
+If the numerator degree is at least the denominator degree, polynomial
+
+00:05:33.017 --> 00:05:33.448
+division
+
+00:05:33.448 --> 00:05:35.428
+should come before partial fractions.
+
+00:05:36.388 --> 00:05:42.008
+For one divided by x times x plus one, write A over x plus B over x plus one.
+
+00:05:42.608 --> 00:05:46.768
+Multiplying by the common denominator gives one equal to A times x plus one,
+
+00:05:46.768 --> 00:05:48.508
+plus B x.
+
+00:05:48.508 --> 00:05:52.228
+Comparing coefficients gives A equal to one and B equal to negative one.
+
+00:05:52.228 --> 00:05:57.342
+Integration now gives natural log of absolute x minus natural log of absolute
+
+00:05:57.342 --> 00:05:57.408
+x
+
+00:05:57.408 --> 00:05:58.808
+plus one, plus C.
+
+00:05:59.508 --> 00:06:01.708
+The intervals exclude zero and negative one.
+
+00:06:02.488 --> 00:06:06.128
+Repeated linear factors require a separate term for every power up to the
+
+00:06:06.128 --> 00:06:06.788
+repeated multiplicity.
+
+00:06:07.368 --> 00:06:10.108
+An irreducible quadratic factor uses a linear numerator.
+
+00:06:10.728 --> 00:06:15.388
+For example, a term over x squared plus one should allow numerator A x plus B,
+
+00:06:15.828 --> 00:06:18.288
+rather than assuming a constant before checking the identity.
+
+00:06:19.008 --> 00:06:22.728
+Determine the coefficients algebraically, then integrate the simpler pieces.
+
+00:06:23.448 --> 00:06:27.168
+Differentiating the final logarithmic expression checks both the decomposition
+
+00:06:27.168 --> 00:06:28.408
+and the integration.
+
+00:06:29.088 --> 00:06:32.929
+A cancellation in an intermediate expression never authorizes an input
+
+00:06:32.929 --> 00:06:33.368
+excluded
+
+00:06:33.368 --> 00:06:34.528
+by the original integrand.
+
+00:06:34.824 --> 00:06:39.864
+Completing the square reduces a general quadratic to a shifted square plus or
+
+00:06:39.864 --> 00:06:40.604
+minus a constant.
+
+00:06:41.764 --> 00:06:46.744
+For x squared plus two x plus five, the result is the square of x plus one,
+
+00:06:46.744 --> 00:06:47.604
+plus four.
+
+00:06:48.384 --> 00:06:52.444
+Substituting t equal to x plus one gives the standard integral of one over t
+
+00:06:52.444 --> 00:06:53.464
+squared plus two squared.
+
+00:06:54.304 --> 00:06:58.344
+The answer is one half arctangent of the quantity x plus one divided by two,
+
+00:06:58.684 --> 00:06:59.184
+plus C.
+
+00:06:59.404 --> 00:07:01.864
+The denominator is positive for every real x.
+
+00:07:02.484 --> 00:07:07.004
+In general, one over x squared plus a squared integrates to arctangent of x
+
+00:07:07.004 --> 00:07:09.464
+over a, divided by a, with a positive.
+
+00:07:10.204 --> 00:07:12.484
+A difference of squares instead gives logarithms.
+
+00:07:13.044 --> 00:07:17.604
+One over a squared minus x squared integrates to one over two a times natural
+
+00:07:17.604 --> 00:07:21.584
+log of the absolute value of the ratio a plus x to a minus x.
+
+00:07:22.464 --> 00:07:25.424
+Reversing the denominator sign reverses the antiderivative sign.
+
+00:07:26.064 --> 00:07:28.644
+The poles at positive and negative a remain excluded.
+
+00:07:28.644 --> 00:07:33.104
+Complete the square before choosing between an inverse tangent pattern and a
+
+00:07:33.104 --> 00:07:36.984
+logarithmic pattern, since the sign of the remaining constant determines the
+
+00:07:36.984 --> 00:07:37.624
+relevant case.
+
+00:07:37.944 --> 00:07:42.424
+A linear numerator over a quadratic often contains part of the derivative of
+
+00:07:42.424 --> 00:07:43.064
+its denominator.
+
+00:07:43.964 --> 00:07:46.864
+Let Q equal x squared plus two x plus five.
+
+00:07:47.364 --> 00:07:49.264
+Its derivative is two x plus two.
+
+00:07:49.984 --> 00:07:53.744
+For numerator two x plus three, write it as Q prime plus one.
+
+00:07:54.224 --> 00:07:58.244
+The integral separates into Q prime over Q and one over Q.
+
+00:07:58.644 --> 00:08:02.864
+The first piece is natural log Q because this Q is always positive.
+
+00:08:03.454 --> 00:08:06.964
+The second piece is the completed square inverse tangent from the previous
+
+00:08:06.964 --> 00:08:07.364
+chapter.
+
+00:08:08.204 --> 00:08:12.744
+The answer is natural log of x squared plus two x plus five, plus one half
+
+00:08:12.744 --> 00:08:16.564
+arctangent of the quantity x plus one divided by two, plus C.
+
+00:08:17.304 --> 00:08:22.544
+For a general numerator p x plus q, solve the identity p x plus q equal to A Q
+
+00:08:22.544 --> 00:08:24.444
+prime plus B before integrating.
+
+00:08:25.164 --> 00:08:28.924
+If the denominator is a square root of Q, the Q prime portion instead
+
+00:08:28.924 --> 00:08:30.864
+integrates to twice A square root of Q.
+
+00:08:31.284 --> 00:08:35.204
+The remaining constant portion uses a standard reciprocal square root integral
+
+00:08:35.744 --> 00:08:36.664
+after completing the square.
+
+00:08:37.524 --> 00:08:40.944
+Keep a real interval with Q positive when that square root occurs in the
+
+00:08:40.944 --> 00:08:41.184
+denominator.
+
+00:08:42.048 --> 00:08:46.488
+Reciprocal square root integrals have different answers depending on the signs
+
+00:08:46.488 --> 00:08:47.768
+inside the radical.
+
+00:08:47.968 --> 00:08:52.208
+With a positive, one divided by square root of a squared minus x squared
+
+00:08:52.208 --> 00:08:54.588
+integrates to arcsine of x over a.
+
+00:08:55.128 --> 00:08:58.468
+Its ordinary integrand domain is absolute x less than a.
+
+00:08:59.128 --> 00:09:03.048
+One divided by square root of x squared plus a squared has a logarithmic
+
+00:09:03.048 --> 00:09:07.448
+antiderivative: natural log of the absolute value of x plus that square root.
+
+00:09:07.448 --> 00:09:12.183
+The same logarithmic form works for square root of x squared minus a squared
+
+00:09:12.183 --> 00:09:12.308
+in
+
+00:09:12.308 --> 00:09:16.008
+the denominator, on either interval where absolute x is greater than a.
+
+00:09:17.048 --> 00:09:20.108
+Differentiate on the chosen interval to check the sign and domain.
+
+00:09:20.888 --> 00:09:23.368
+A numerator proportional to the inner derivative is simpler.
+
+00:09:24.008 --> 00:09:28.368
+The integral of x divided by square root of x squared plus four is just square
+
+00:09:28.368 --> 00:09:30.488
+root of x squared plus four, plus C.
+
+00:09:30.908 --> 00:09:35.004
+A linear numerator can be split into a multiple of the quadratic derivative
+
+00:09:35.004 --> 00:09:35.168
+and
+
+00:09:35.168 --> 00:09:36.048
+a constant remainder.
+
+00:09:36.048 --> 00:09:40.288
+After completing the square, the remainder matches one of these reciprocal
+
+00:09:40.288 --> 00:09:41.748
+radical families.
+
+00:09:42.148 --> 00:09:45.908
+Endpoint values of an inverse function do not imply the reciprocal radical
+
+00:09:45.908 --> 00:09:47.728
+integrand is defined at those endpoints.
+
+00:09:48.168 --> 00:09:52.708
+A square root in the numerator may need a trigonometric substitution rather
+
+00:09:52.708 --> 00:09:54.948
+than a direct inverse function formula.
+
+00:09:55.508 --> 00:10:01.288
+For square root of a squared minus x squared, set x equal to a sine theta on a
+
+00:10:01.288 --> 00:10:02.848
+range where cosine theta is positive.
+
+00:10:03.328 --> 00:10:08.328
+Then the square root is a cosine theta, d x is a cosine theta d theta, and the
+
+00:10:08.328 --> 00:10:11.668
+integral becomes a squared times the integral of cosine squared theta.
+
+00:10:11.888 --> 00:10:14.528
+A half angle identity integrates that expression.
+
+00:10:15.328 --> 00:10:19.388
+Returning to x gives one half of x times square root of a squared minus x
+
+00:10:19.388 --> 00:10:22.588
+squared, plus a squared arcsine of x over a.
+
+00:10:23.208 --> 00:10:25.848
+The inverse branch is chosen consistently with the substitution.
+
+00:10:26.808 --> 00:10:31.308
+For square root of x squared plus a squared, the answer is one half of x times
+
+00:10:31.308 --> 00:10:36.362
+the radical plus a squared natural log of the absolute value of x plus the
+
+00:10:36.362 --> 00:10:36.908
+radical.
+
+00:10:37.308 --> 00:10:41.668
+For square root of x squared minus a squared, replace that plus logarithmic
+
+00:10:41.668 --> 00:10:43.668
+term by a minus logarithmic term.
+
+00:10:44.278 --> 00:10:47.008
+These formulas hold on the appropriate open real intervals.
+
+00:10:48.008 --> 00:10:51.328
+Verify by differentiation instead of assuming that the signs of the two
+
+00:10:51.328 --> 00:10:52.928
+logarithmic terms are interchangeable.
+
+00:10:53.880 --> 00:10:58.660
+A trigonometric integrand may not match the derivative table until an identity
+
+00:10:58.660 --> 00:10:59.600
+changes its form.
+
+00:11:00.240 --> 00:11:04.740
+The integral of sine squared x is not sine cubed x divided by three, because
+
+00:11:04.740 --> 00:11:07.900
+the power rule alone ignores the derivative of sine x.
+
+00:11:08.620 --> 00:11:13.440
+Instead use sine squared x equal to one half of one minus cosine two x.
+
+00:11:13.440 --> 00:11:17.520
+Integration gives x over two minus sine two x over four, plus C.
+
+00:11:18.280 --> 00:11:22.520
+Cosine squared x gives x over two plus sine two x over four, plus C.
+
+00:11:23.180 --> 00:11:26.900
+Differentiating the oscillating term introduces a factor two, which explains
+
+00:11:26.900 --> 00:11:27.980
+the denominator four.
+
+00:11:28.600 --> 00:11:33.220
+The product sine x cosine x can be handled by substitution u equal to sine x,
+
+00:11:33.700 --> 00:11:35.940
+giving one half sine squared x plus C.
+
+00:11:36.440 --> 00:11:39.720
+Product to sum identities offer another route and produce an equivalent
+
+00:11:39.720 --> 00:11:41.560
+antiderivative up to a constant.
+
+00:11:42.260 --> 00:11:46.220
+For higher powers, preserve a suitable sine or cosine factor when its
+
+00:11:46.220 --> 00:11:49.500
+differential is useful, and transform the remaining even powers.
+
+00:11:49.500 --> 00:11:51.880
+Do not multiply separate antiderivatives.
+
+00:11:52.540 --> 00:11:54.200
+An identity rewrites the integrand.
+
+00:11:54.820 --> 00:11:58.440
+In substitution, change both the expression and the differential together.
+
+00:11:58.680 --> 00:12:02.540
+A definite integral describes signed accumulation over an interval.
+
+00:12:03.420 --> 00:12:06.400
+For a continuous function, divide the interval into small subintervals,
+
+00:12:07.360 --> 00:12:11.200
+multiply a sampled function value by each width, and take the limit of the sum
+
+00:12:11.200 --> 00:12:13.260
+as the largest width tends to zero.
+
+00:12:14.040 --> 00:12:18.840
+For x squared from zero to one, use n equal pieces of width one over n and
+
+00:12:18.840 --> 00:12:20.300
+right endpoints k over n.
+
+00:12:20.840 --> 00:12:25.300
+The resulting sum is one over n cubed times the sum of k squared from one
+
+00:12:25.300 --> 00:12:25.800
+through n.
+
+00:12:26.660 --> 00:12:31.240
+Using the sum of squares formula, this is n times n plus one times two n plus
+
+00:12:31.240 --> 00:12:33.220
+one, divided by six n cubed.
+
+00:12:33.740 --> 00:12:34.900
+Its limit is one third.
+
+00:12:35.660 --> 00:12:39.200
+This calculation defines the integral without assuming an antiderivative
+
+00:12:39.200 --> 00:12:40.260
+evaluation first.
+
+00:12:40.980 --> 00:12:45.060
+For a continuous nonnegative function, this accumulation is area under the
+
+00:12:45.060 --> 00:12:45.460
+curve.
+
+00:12:45.700 --> 00:12:49.540
+Negative values contribute negative accumulation, so a definite integral need
+
+00:12:49.540 --> 00:12:51.120
+not equal total geometric area.
+
+00:12:51.820 --> 00:12:55.640
+A finite rectangle sum is an approximation, while the limit is the integral.
+
+00:12:56.500 --> 00:13:00.860
+The integration variable is a dummy variable: replacing x by t consistently
+
+00:13:00.860 --> 00:13:03.180
+leaves the value of a definite integral unchanged.
+
+00:13:03.744 --> 00:13:07.067
+The Fundamental Theorem of Calculus connects accumulation with
+
+00:13:07.067 --> 00:13:07.924
+differentiation.
+
+00:13:08.744 --> 00:13:13.504
+If f is continuous on an interval, the function formed by integrating f from a
+
+00:13:13.504 --> 00:13:16.264
+fixed starting point to x has derivative f of x.
+
+00:13:17.004 --> 00:13:21.104
+Write capital F for an antiderivative of lowercase f on the whole integration
+
+00:13:21.104 --> 00:13:21.504
+interval.
+
+00:13:22.184 --> 00:13:27.204
+The definite integral from a to b equals capital F evaluated at b, minus
+
+00:13:27.204 --> 00:13:28.824
+capital F evaluated at a.
+
+00:13:29.284 --> 00:13:34.644
+For three x squared from zero to two, use x cubed, obtaining eight minus zero,
+
+00:13:34.804 --> 00:13:35.324
+or eight.
+
+00:13:36.064 --> 00:13:40.024
+The integration constant cancels in the endpoint subtraction, so no arbitrary
+
+00:13:40.024 --> 00:13:42.564
+plus C belongs in the final numerical answer.
+
+00:13:43.484 --> 00:13:45.704
+A variable upper limit needs the chain rule.
+
+00:13:46.484 --> 00:13:50.440
+Differentiating the integral of cosine t from zero to x squared gives cosine
+
+00:13:50.440 --> 00:13:50.544
+of
+
+00:13:50.544 --> 00:13:52.644
+x squared times two x.
+
+00:13:52.644 --> 00:13:55.224
+A variable lower limit introduces a minus sign.
+
+00:13:55.674 --> 00:14:00.204
+With both limits variable, differentiate the upper endpoint contribution and
+
+00:14:00.204 --> 00:14:01.964
+subtract the lower endpoint contribution.
+
+00:14:02.744 --> 00:14:05.344
+These statements require the relevant continuity conditions.
+
+00:14:05.944 --> 00:14:09.064
+They do not license endpoint substitution across an interior pole.
+
+00:14:10.264 --> 00:14:13.606
+Establish that the original integrand is integrable on the full interval
+
+00:14:13.606 --> 00:14:13.884
+before
+
+00:14:13.884 --> 00:14:16.164
+applying the ordinary endpoint evaluation rule.
+
+00:14:16.344 --> 00:14:20.643
+Definite integrals satisfy linearity and interval additivity when the
+
+00:14:20.643 --> 00:14:21.204
+functions
+
+00:14:21.204 --> 00:14:23.144
+are integrable on the stated intervals.
+
+00:14:24.144 --> 00:14:27.864
+Reversing the limits changes the sign, and equal limits give zero.
+
+00:14:28.804 --> 00:14:33.224
+Splitting at a point c lets the integral from a to b equal the sum from a to c
+
+00:14:33.224 --> 00:14:34.384
+and c to b.
+
+00:14:34.864 --> 00:14:39.884
+For a less than b and a nonnegative function, the integral is nonnegative.
+
+00:14:39.884 --> 00:14:43.606
+If one function stays above another throughout the interval, its integral is
+
+00:14:43.606 --> 00:14:43.704
+at
+
+00:14:43.704 --> 00:14:44.524
+least as large.
+
+00:14:45.164 --> 00:14:49.604
+These facts help check answers and estimate sizes before calculating an
+
+00:14:49.604 --> 00:14:50.124
+antiderivative.
+
+00:14:50.784 --> 00:14:55.164
+For example, one plus x squared lies between one and two on zero through one,
+
+00:14:55.664 --> 00:14:59.984
+so its integral lies between one and two; direct evaluation gives four thirds.
+
+00:15:00.704 --> 00:15:02.744
+The interval direction matters in inequalities.
+
+00:15:03.884 --> 00:15:08.344
+Domain restrictions also matter: one over x squared has an interior pole on
+
+00:15:08.344 --> 00:15:09.524
+negative one through one.
+
+00:15:09.524 --> 00:15:13.944
+Substituting endpoints into negative one over x would misleadingly give
+
+00:15:13.944 --> 00:15:16.504
+negative two, despite a positive integrand.
+
+00:15:17.284 --> 00:15:21.284
+The ordinary definite integral is not defined there; its improper integral
+
+00:15:21.284 --> 00:15:21.904
+diverges.
+
+00:15:22.844 --> 00:15:26.724
+Always inspect the entire interval, not only the two endpoint values.
+
+00:15:27.000 --> 00:15:31.340
+A substitution in a definite integral changes the variable, the differential
+
+00:15:31.620 --> 00:15:32.880
+and the bounds together.
+
+00:15:33.840 --> 00:15:38.860
+For two x times e to the x squared from zero to one, set u equal to x squared.
+
+00:15:39.780 --> 00:15:43.640
+The differential is d u equal to two x d x.
+
+00:15:43.640 --> 00:15:48.380
+The old lower bound zero gives u equal to zero, and the old upper bound one
+
+00:15:48.380 --> 00:15:49.720
+gives u equal to one.
+
+00:15:50.760 --> 00:15:53.860
+Integrating e to the u on those bounds gives e minus one.
+
+00:15:54.620 --> 00:15:59.320
+For two x divided by one plus x squared on the same interval, instead choose u
+
+00:15:59.320 --> 00:16:00.800
+equal to one plus x squared.
+
+00:16:01.600 --> 00:16:03.160
+The new bounds are one and two.
+
+00:16:04.040 --> 00:16:05.760
+The result is natural log two.
+
+00:16:06.900 --> 00:16:10.300
+Leaving the old bounds zero and one on that logarithmic integral would be
+
+00:16:10.300 --> 00:16:13.300
+incorrect and would even introduce an artificial singularity.
+
+00:16:13.900 --> 00:16:18.180
+Another valid approach finds an antiderivative in x and then uses the original
+
+00:16:18.180 --> 00:16:18.780
+x bounds.
+
+00:16:19.600 --> 00:16:21.620
+Do not mix the two approaches halfway through.
+
+00:16:22.100 --> 00:16:26.465
+If a substitution reverses endpoint order, the transformed differential and
+
+00:16:26.465 --> 00:16:26.640
+the
+
+00:16:26.640 --> 00:16:28.440
+oriented bounds together handle the sign.
+
+00:16:29.460 --> 00:16:32.780
+Check the transformation on the full interval and keep any original domain
+
+00:16:32.780 --> 00:16:33.360
+exclusions.
+
+00:16:33.720 --> 00:16:36.720
+Reflection gives a useful definite integral identity.
+
+00:16:37.640 --> 00:16:42.220
+Replacing x by a plus b minus t reverses the interval, and the negative
+
+00:16:42.220 --> 00:16:44.340
+differential restores the original order.
+
+00:16:45.260 --> 00:16:49.680
+Thus the integral of f of x from a to b equals the integral of f of a plus b
+
+00:16:49.680 --> 00:16:51.680
+minus x over the same bounds.
+
+00:16:52.120 --> 00:16:56.953
+On a symmetric interval, an integrable odd function has integral zero, while
+
+00:16:56.953 --> 00:16:57.080
+an
+
+00:16:57.080 --> 00:17:00.540
+integrable even function gives twice its integral over the positive half.
+
+00:17:01.480 --> 00:17:05.940
+Integrability is essential: odd appearance cannot cancel an undefined ordinary
+
+00:17:05.940 --> 00:17:07.080
+integral across a pole.
+
+00:17:07.960 --> 00:17:12.666
+As a reflection example, let I be the integral of sine x divided by sine x
+
+00:17:12.666 --> 00:17:12.920
+plus
+
+00:17:12.920 --> 00:17:15.100
+cosine x from zero to pi over two.
+
+00:17:16.180 --> 00:17:20.180
+Reflection interchanges sine and cosine, producing another expression for I
+
+00:17:20.180 --> 00:17:22.980
+with cosine in the numerator and the same denominator.
+
+00:17:24.120 --> 00:17:27.580
+Adding the two expressions gives two I equal to the interval length pi over
+
+00:17:27.580 --> 00:17:27.840
+two.
+
+00:17:28.540 --> 00:17:30.560
+Therefore I equals pi over four.
+
+00:17:31.120 --> 00:17:33.880
+The denominator stays positive throughout this interval.
+
+00:17:34.620 --> 00:17:37.980
+Symmetry can remove much of the algebra, but only after checking the interval,
+
+00:17:38.460 --> 00:17:40.880
+the transformed expression and the denominator conditions.
+
+00:17:41.376 --> 00:17:46.416
+Geometric area is nonnegative, while a definite integral records sign.
+
+00:17:46.416 --> 00:17:50.616
+For y equal to x from negative one to one, odd symmetry makes the signed
+
+00:17:50.616 --> 00:17:51.336
+integral zero.
+
+00:17:51.996 --> 00:17:54.556
+The two triangular regions have total area one.
+
+00:17:55.316 --> 00:17:59.856
+To obtain that area by integration, split at zero and integrate negative x on
+
+00:17:59.856 --> 00:18:02.816
+the negative half, then positive x on the positive half.
+
+00:18:03.316 --> 00:18:07.696
+For the area between two curves, find their intersection points and decide
+
+00:18:07.696 --> 00:18:10.276
+which graph is above the other on every part of the interval.
+
+00:18:11.436 --> 00:18:15.636
+The curves y equal to x and y equal to x squared meet at zero and one.
+
+00:18:16.336 --> 00:18:19.136
+On the interval between them, x is at least x squared.
+
+00:18:19.716 --> 00:18:23.916
+The enclosed area is the integral of x minus x squared from zero to one, equal
+
+00:18:23.916 --> 00:18:26.556
+to one half minus one third, or one sixth.
+
+00:18:27.196 --> 00:18:30.636
+If the graphs exchange order, split again at the exchange points.
+
+00:18:31.636 --> 00:18:34.956
+Taking the absolute value of a final signed integral is not generally enough,
+
+00:18:35.416 --> 00:18:38.156
+because positive and negative pieces may already have cancelled.
+
+00:18:39.396 --> 00:18:43.136
+A sketch helps establish the correct region and the boundaries before any
+
+00:18:43.136 --> 00:18:44.216
+antiderivative calculation.
+
+00:18:44.688 --> 00:18:47.408
+Area integrals also apply to standard curves.
+
+00:18:48.088 --> 00:18:52.528
+A circle of radius r has upper boundary square root of r squared minus x
+
+00:18:52.528 --> 00:18:52.788
+squared.
+
+00:18:53.748 --> 00:18:58.746
+Four times its first quadrant integral from zero to r gives pi r squared,
+
+00:18:58.746 --> 00:18:59.088
+using
+
+00:18:59.088 --> 00:19:02.388
+the square root antiderivative or a trigonometric substitution.
+
+00:19:03.148 --> 00:19:08.268
+For an ellipse x squared over a squared plus y squared over b squared equal to
+
+00:19:08.268 --> 00:19:13.428
+one, the first quadrant boundary is b times square root of one minus x squared
+
+00:19:13.428 --> 00:19:14.268
+over a squared.
+
+00:19:15.488 --> 00:19:17.188
+Substitute x equal to a sine theta.
+
+00:19:17.708 --> 00:19:20.748
+Four times the resulting quarter area gives pi a b.
+
+00:19:21.368 --> 00:19:25.908
+The positive parameters a and b are semiaxes, rather than full axis lengths.
+
+00:19:26.548 --> 00:19:30.148
+A parabola needs additional boundaries to enclose a finite region.
+
+00:19:30.148 --> 00:19:34.348
+For the upper branch of y squared equal to four a x with a positive, take x
+
+00:19:34.348 --> 00:19:36.388
+from zero to a and the x axis below.
+
+00:19:36.948 --> 00:19:40.608
+Integrating two square root of a x gives four a squared over three.
+
+00:19:41.248 --> 00:19:43.728
+Including the reflected lower region would double that answer.
+
+00:19:44.648 --> 00:19:49.088
+Always specify the branch and closing lines: naming a curve alone does not
+
+00:19:49.088 --> 00:19:50.568
+determine a unique finite area.

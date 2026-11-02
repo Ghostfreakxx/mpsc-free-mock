@@ -1,3 +1,4 @@
+import { integralCalculusLesson } from './integral-calculus-study.ts';
 import { limitsContinuityDifferentiabilityLesson } from './limits-continuity-differentiability-study.ts';
 import { trigonometryLesson } from './trigonometry-study.ts';
 import { sequencesSeriesLesson } from './sequences-series-study.ts';
@@ -183,6 +184,7 @@ export const studyLessons: StudyLesson[] = [
   sequencesSeriesLesson,
   trigonometryLesson,
   limitsContinuityDifferentiabilityLesson,
+  integralCalculusLesson,
 ];
 
 const moleConceptCompanion = studyLessons.find(lesson=>lesson.id==="mole-concept");

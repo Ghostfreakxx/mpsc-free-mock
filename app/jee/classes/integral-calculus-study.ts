@@ -1,0 +1,701 @@
+import type { StudyLesson } from './course';
+// Authored by scripts/create-integral-calculus.mjs.
+export const integralCalculusLesson:StudyLesson = {
+  "id": "integral-calculus",
+  "subject": "Mathematics",
+  "unit": 8,
+  "title": "Integral calculus: methods, definite integrals and area",
+  "summary": "Antiderivatives, standard rational and radical forms, substitution, parts, partial fractions, sums, the Fundamental Theorem, definite properties, symmetry and areas.",
+  "prerequisites": "Functions, Trigonometry, and Limits, Continuity and Differentiability, including derivative rules and real domains.",
+  "remaining": "Eighteen-chapter recorded foundation for Unit 8 with original examples and practice. Main integration methods, standard forms, definite integrals and simple bounded areas are introduced. Further mixed rational and radical reductions, difficult definite identities, parameter questions and timed practice remain. This is not exhaustive problem coverage or official PYQs.",
+  "sections": [
+    {
+      "title": "Understand antiderivatives and the integration constant",
+      "formula": "F′=f ⇒ ∫f(x)dx=F(x)+C",
+      "paragraphs": [
+        "Integration reverses differentiation when we seek an antiderivative. Call the integrand lowercase f and a candidate antiderivative capital F. If differentiating capital F gives lowercase f throughout an interval, then capital F is an antiderivative there. For the integrand two x, one antiderivative is x squared. Adding any constant leaves its derivative unchanged, so the indefinite integral is x squared plus C. The integral sign with no bounds represents a family of functions, rather than one number. The symbol d x identifies the variable of integration. A different variable is held constant unless dependence is explicitly stated. On a connected interval, any two antiderivatives of the same function differ by a constant. Separate domain intervals can have independent constants. For example, one over x excludes zero, so a formula on positive inputs need not share its integration constant with a formula on negative inputs. Linearity lets us integrate sums term by term and pull out constant factors. It does not turn an integral of a product into a product of integrals. Differentiate the proposed result and compare it with the entire original integrand, and check that the original domain restrictions still hold."
+      ]
+    },
+    {
+      "title": "Integrate powers, logarithmic and exponential forms",
+      "formula": "∫xⁿdx=xⁿ⁺¹/(n+1)+C, n≠−1; ∫dx/x=ln|x|+C",
+      "paragraphs": [
+        "The power integration rule increases the exponent by one and divides by that new exponent. It applies when the exponent is not negative one, on an interval where the real power is defined and differentiable. Integrating three x squared minus four gives x cubed minus four x plus C. The exceptional exponent negative one has a logarithmic answer. An antiderivative of one over x is natural log of absolute x on either interval excluding zero. The absolute value makes a real formula available for negative inputs as well as positive inputs. It does not include zero. The exponential e to the x integrates to itself. For e to the two x, divide by the inner derivative two, giving one half e to the two x plus C. A positive base a different from one gives an integral of a to the x equal to a to the x divided by natural log a. If the base is one, integrate the constant one directly. Verify the coefficient by differentiating, especially when an exponent contains a scale factor."
+      ]
+    },
+    {
+      "title": "Reverse the six trigonometric derivative formulas",
+      "formula": "∫cosx dx=sinx+C; ∫sinx dx=−cosx+C",
+      "paragraphs": [
+        "Trigonometric integration begins by reversing the derivative table, using radians. Cosine x integrates to sine x, and sine x integrates to negative cosine x. Secant squared x integrates to tangent x. Cosecant squared x integrates to negative cotangent x. Secant x times tangent x integrates to secant x, while cosecant x times cotangent x integrates to negative cosecant x. Check the negative signs by differentiating the proposed answers. Each formula is used on an interval avoiding the poles of the original integrand. A scaled angle changes the coefficient: cosine of three x integrates to sine of three x divided by three. Integrating tangent x gives negative natural log of absolute cosine x plus C. This follows by substituting cosine x and using its derivative negative sine x. Similarly, cotangent x integrates to natural log of absolute sine x plus C. The logarithm formulas keep the excluded zeros visible. No ordinary antiderivative formula permits crossing a pole as though the function were continuous there. Identify the integrand as a complete pattern before selecting a table entry."
+      ]
+    },
+    {
+      "title": "Apply substitution as the reverse chain rule",
+      "formula": "∫2x cos(x²)dx=sin(x²)+C",
+      "paragraphs": [
+        "Substitution reverses the chain rule. Look for an inner expression together with a constant multiple of its derivative. In the integral of two x times cosine of x squared, set u equal to x squared. Then d u equals two x d x, so the whole integral becomes the integral of cosine u with respect to u. The result is sine u plus C, or sine of x squared plus C after returning to x. Writing a substitution without replacing every remaining x is incomplete. Another example integrates x times the square root of one plus x squared. Set u equal to one plus x squared. Then x d x equals one half d u. Integrating one half u to the one half gives one third u to the three halves, hence one third of the quantity one plus x squared raised to three halves, plus C. The derivative check restores the original x factor. Avoid treating d u as though it always equals d x. Account for the scale factor before integrating the transformed expression."
+      ]
+    },
+    {
+      "title": "Use integration by parts and choose useful factors",
+      "formula": "∫u dv=uv−∫v du",
+      "paragraphs": [
+        "The product rule yields integration by parts. Starting with the differential of u v equal to u d v plus v d u, rearrangement gives the integral of u d v equal to u v minus the integral of v d u. Choose the factors so that differentiating u and integrating d v make the remaining integral manageable. For x times e to the x, choose u equal to x and d v equal to e to the x d x. Then d u is d x and v is e to the x. The answer is x e to the x minus e to the x plus C. Differentiation shows the extra exponential terms cancel. For natural log x on its positive domain, write the hidden product with one, choose u equal to natural log x and d v equal to d x. This gives x natural log x minus x plus C. A factor selection mnemonic is only a guide, not a theorem that every choice simplifies the problem. Check signs and boundary terms carefully when applying the same method to a definite integral."
+      ]
+    },
+    {
+      "title": "Decompose rational functions into partial fractions",
+      "formula": "1/[x(x+1)]=1/x−1/(x+1)",
+      "paragraphs": [
+        "A rational integrand is a quotient of polynomials. If the numerator degree is at least the denominator degree, polynomial division should come before partial fractions. For one divided by x times x plus one, write A over x plus B over x plus one. Multiplying by the common denominator gives one equal to A times x plus one, plus B x. Comparing coefficients gives A equal to one and B equal to negative one. Integration now gives natural log of absolute x minus natural log of absolute x plus one, plus C. The intervals exclude zero and negative one. Repeated linear factors require a separate term for every power up to the repeated multiplicity. An irreducible quadratic factor uses a linear numerator. For example, a term over x squared plus one should allow numerator A x plus B, rather than assuming a constant before checking the identity. Determine the coefficients algebraically, then integrate the simpler pieces. Differentiating the final logarithmic expression checks both the decomposition and the integration. A cancellation in an intermediate expression never authorizes an input excluded by the original integrand."
+      ]
+    },
+    {
+      "title": "Complete the square in quadratic denominators",
+      "formula": "∫dx/[(x+1)²+4]=(1/2)arctan((x+1)/2)+C",
+      "paragraphs": [
+        "Completing the square reduces a general quadratic to a shifted square plus or minus a constant. For x squared plus two x plus five, the result is the square of x plus one, plus four. Substituting t equal to x plus one gives the standard integral of one over t squared plus two squared. The answer is one half arctangent of the quantity x plus one divided by two, plus C. The denominator is positive for every real x. In general, one over x squared plus a squared integrates to arctangent of x over a, divided by a, with a positive. A difference of squares instead gives logarithms. One over a squared minus x squared integrates to one over two a times natural log of the absolute value of the ratio a plus x to a minus x. Reversing the denominator sign reverses the antiderivative sign. The poles at positive and negative a remain excluded. Complete the square before choosing between an inverse tangent pattern and a logarithmic pattern, since the sign of the remaining constant determines the relevant case."
+      ]
+    },
+    {
+      "title": "Split linear numerators over a quadratic",
+      "formula": "2x+3=(2x+2)+1; Q=x²+2x+5",
+      "paragraphs": [
+        "A linear numerator over a quadratic often contains part of the derivative of its denominator. Let Q equal x squared plus two x plus five. Its derivative is two x plus two. For numerator two x plus three, write it as Q prime plus one. The integral separates into Q prime over Q and one over Q. The first piece is natural log Q because this Q is always positive. The second piece is the completed square inverse tangent from the previous chapter. The answer is natural log of x squared plus two x plus five, plus one half arctangent of the quantity x plus one divided by two, plus C. For a general numerator p x plus q, solve the identity p x plus q equal to A Q prime plus B before integrating. If the denominator is a square root of Q, the Q prime portion instead integrates to twice A square root of Q. The remaining constant portion uses a standard reciprocal square root integral after completing the square. Keep a real interval with Q positive when that square root occurs in the denominator."
+      ]
+    },
+    {
+      "title": "Recognize reciprocal square root integral families",
+      "formula": "∫dx/√(a²−x²)=arcsin(x/a)+C, |x|<a",
+      "paragraphs": [
+        "Reciprocal square root integrals have different answers depending on the signs inside the radical. With a positive, one divided by square root of a squared minus x squared integrates to arcsine of x over a. Its ordinary integrand domain is absolute x less than a. One divided by square root of x squared plus a squared has a logarithmic antiderivative: natural log of the absolute value of x plus that square root. The same logarithmic form works for square root of x squared minus a squared in the denominator, on either interval where absolute x is greater than a. Differentiate on the chosen interval to check the sign and domain. A numerator proportional to the inner derivative is simpler. The integral of x divided by square root of x squared plus four is just square root of x squared plus four, plus C. A linear numerator can be split into a multiple of the quadratic derivative and a constant remainder. After completing the square, the remainder matches one of these reciprocal radical families. Endpoint values of an inverse function do not imply the reciprocal radical integrand is defined at those endpoints."
+      ]
+    },
+    {
+      "title": "Integrate square roots with trigonometric substitution",
+      "formula": "∫√(a²−x²)dx=[x√(a²−x²)+a²arcsin(x/a)]/2+C",
+      "paragraphs": [
+        "A square root in the numerator may need a trigonometric substitution rather than a direct inverse function formula. For square root of a squared minus x squared, set x equal to a sine theta on a range where cosine theta is positive. Then the square root is a cosine theta, d x is a cosine theta d theta, and the integral becomes a squared times the integral of cosine squared theta. A half angle identity integrates that expression. Returning to x gives one half of x times square root of a squared minus x squared, plus a squared arcsine of x over a. The inverse branch is chosen consistently with the substitution. For square root of x squared plus a squared, the answer is one half of x times the radical plus a squared natural log of the absolute value of x plus the radical. For square root of x squared minus a squared, replace that plus logarithmic term by a minus logarithmic term. These formulas hold on the appropriate open real intervals. Verify by differentiation instead of assuming that the signs of the two logarithmic terms are interchangeable."
+      ]
+    },
+    {
+      "title": "Transform trigonometric integrands before integrating",
+      "formula": "sin²x=(1−cos2x)/2; cos²x=(1+cos2x)/2",
+      "paragraphs": [
+        "A trigonometric integrand may not match the derivative table until an identity changes its form. The integral of sine squared x is not sine cubed x divided by three, because the power rule alone ignores the derivative of sine x. Instead use sine squared x equal to one half of one minus cosine two x. Integration gives x over two minus sine two x over four, plus C. Cosine squared x gives x over two plus sine two x over four, plus C. Differentiating the oscillating term introduces a factor two, which explains the denominator four. The product sine x cosine x can be handled by substitution u equal to sine x, giving one half sine squared x plus C. Product to sum identities offer another route and produce an equivalent antiderivative up to a constant. For higher powers, preserve a suitable sine or cosine factor when its differential is useful, and transform the remaining even powers. Do not multiply separate antiderivatives. An identity rewrites the integrand. In substitution, change both the expression and the differential together."
+      ]
+    },
+    {
+      "title": "Define a definite integral as a limit of sums",
+      "formula": "∫₀¹x²dx=limₙ→∞(1/n)Σₖ₌₁ⁿ(k/n)²=1/3",
+      "paragraphs": [
+        "A definite integral describes signed accumulation over an interval. For a continuous function, divide the interval into small subintervals, multiply a sampled function value by each width, and take the limit of the sum as the largest width tends to zero. For x squared from zero to one, use n equal pieces of width one over n and right endpoints k over n. The resulting sum is one over n cubed times the sum of k squared from one through n. Using the sum of squares formula, this is n times n plus one times two n plus one, divided by six n cubed. Its limit is one third. This calculation defines the integral without assuming an antiderivative evaluation first. For a continuous nonnegative function, this accumulation is area under the curve. Negative values contribute negative accumulation, so a definite integral need not equal total geometric area. A finite rectangle sum is an approximation, while the limit is the integral. The integration variable is a dummy variable: replacing x by t consistently leaves the value of a definite integral unchanged."
+      ]
+    },
+    {
+      "title": "Use the Fundamental Theorem of Calculus",
+      "formula": "∫ₐᵇf(x)dx=F(b)−F(a), F′=f",
+      "paragraphs": [
+        "The Fundamental Theorem of Calculus connects accumulation with differentiation. If f is continuous on an interval, the function formed by integrating f from a fixed starting point to x has derivative f of x. Write capital F for an antiderivative of lowercase f on the whole integration interval. The definite integral from a to b equals capital F evaluated at b, minus capital F evaluated at a. For three x squared from zero to two, use x cubed, obtaining eight minus zero, or eight. The integration constant cancels in the endpoint subtraction, so no arbitrary plus C belongs in the final numerical answer. A variable upper limit needs the chain rule. Differentiating the integral of cosine t from zero to x squared gives cosine of x squared times two x. A variable lower limit introduces a minus sign. With both limits variable, differentiate the upper endpoint contribution and subtract the lower endpoint contribution. These statements require the relevant continuity conditions. They do not license endpoint substitution across an interior pole. Establish that the original integrand is integrable on the full interval before applying the ordinary endpoint evaluation rule."
+      ]
+    },
+    {
+      "title": "Apply definite integral properties without losing conditions",
+      "formula": "∫ₐᵇf=−∫ᵇₐf; ∫ₐᶜf+∫ᶜᵇf=∫ₐᵇf",
+      "paragraphs": [
+        "Definite integrals satisfy linearity and interval additivity when the functions are integrable on the stated intervals. Reversing the limits changes the sign, and equal limits give zero. Splitting at a point c lets the integral from a to b equal the sum from a to c and c to b. For a less than b and a nonnegative function, the integral is nonnegative. If one function stays above another throughout the interval, its integral is at least as large. These facts help check answers and estimate sizes before calculating an antiderivative. For example, one plus x squared lies between one and two on zero through one, so its integral lies between one and two; direct evaluation gives four thirds. The interval direction matters in inequalities. Domain restrictions also matter: one over x squared has an interior pole on negative one through one. Substituting endpoints into negative one over x would misleadingly give negative two, despite a positive integrand. The ordinary definite integral is not defined there; its improper integral diverges. Always inspect the entire interval, not only the two endpoint values."
+      ]
+    },
+    {
+      "title": "Change bounds consistently in definite substitution",
+      "formula": "∫₀¹2x eˣ²dx=∫₀¹eᵘdu=e−1",
+      "paragraphs": [
+        "A substitution in a definite integral changes the variable, the differential and the bounds together. For two x times e to the x squared from zero to one, set u equal to x squared. The differential is d u equal to two x d x. The old lower bound zero gives u equal to zero, and the old upper bound one gives u equal to one. Integrating e to the u on those bounds gives e minus one. For two x divided by one plus x squared on the same interval, instead choose u equal to one plus x squared. The new bounds are one and two. The result is natural log two. Leaving the old bounds zero and one on that logarithmic integral would be incorrect and would even introduce an artificial singularity. Another valid approach finds an antiderivative in x and then uses the original x bounds. Do not mix the two approaches halfway through. If a substitution reverses endpoint order, the transformed differential and the oriented bounds together handle the sign. Check the transformation on the full interval and keep any original domain exclusions."
+      ]
+    },
+    {
+      "title": "Exploit reflection and even or odd symmetry",
+      "formula": "∫ₐᵇf(x)dx=∫ₐᵇf(a+b−x)dx",
+      "paragraphs": [
+        "Reflection gives a useful definite integral identity. Replacing x by a plus b minus t reverses the interval, and the negative differential restores the original order. Thus the integral of f of x from a to b equals the integral of f of a plus b minus x over the same bounds. On a symmetric interval, an integrable odd function has integral zero, while an integrable even function gives twice its integral over the positive half. Integrability is essential: odd appearance cannot cancel an undefined ordinary integral across a pole. As a reflection example, let I be the integral of sine x divided by sine x plus cosine x from zero to pi over two. Reflection interchanges sine and cosine, producing another expression for I with cosine in the numerator and the same denominator. Adding the two expressions gives two I equal to the interval length pi over two. Therefore I equals pi over four. The denominator stays positive throughout this interval. Symmetry can remove much of the algebra, but only after checking the interval, the transformed expression and the denominator conditions."
+      ]
+    },
+    {
+      "title": "Separate signed integrals from geometric area",
+      "formula": "Area=∫ₐᵇ|f(x)|dx; split where f changes sign",
+      "paragraphs": [
+        "Geometric area is nonnegative, while a definite integral records sign. For y equal to x from negative one to one, odd symmetry makes the signed integral zero. The two triangular regions have total area one. To obtain that area by integration, split at zero and integrate negative x on the negative half, then positive x on the positive half. For the area between two curves, find their intersection points and decide which graph is above the other on every part of the interval. The curves y equal to x and y equal to x squared meet at zero and one. On the interval between them, x is at least x squared. The enclosed area is the integral of x minus x squared from zero to one, equal to one half minus one third, or one sixth. If the graphs exchange order, split again at the exchange points. Taking the absolute value of a final signed integral is not generally enough, because positive and negative pieces may already have cancelled. A sketch helps establish the correct region and the boundaries before any antiderivative calculation."
+      ]
+    },
+    {
+      "title": "Calculate areas bounded by circles, ellipses and parabolas",
+      "formula": "Circle area=πr²; ellipse area=πab, a,b>0",
+      "paragraphs": [
+        "Area integrals also apply to standard curves. A circle of radius r has upper boundary square root of r squared minus x squared. Four times its first quadrant integral from zero to r gives pi r squared, using the square root antiderivative or a trigonometric substitution. For an ellipse x squared over a squared plus y squared over b squared equal to one, the first quadrant boundary is b times square root of one minus x squared over a squared. Substitute x equal to a sine theta. Four times the resulting quarter area gives pi a b. The positive parameters a and b are semiaxes, rather than full axis lengths. A parabola needs additional boundaries to enclose a finite region. For the upper branch of y squared equal to four a x with a positive, take x from zero to a and the x axis below. Integrating two square root of a x gives four a squared over three. Including the reflected lower region would double that answer. Always specify the branch and closing lines: naming a curve alone does not determine a unique finite area."
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "question": "Integrate 3x²−4+1/x on an interval excluding zero.",
+      "steps": [
+        "Use linearity and the power rule on the polynomial terms.",
+        "The exponent −1 requires ln|x| rather than the ordinary power formula.",
+        "Differentiate on the selected interval."
+      ],
+      "answer": "x³−4x+ln|x|+C."
+    },
+    {
+      "question": "Find ∫cos(3x)dx and ∫csc²x dx.",
+      "steps": [
+        "Reverse the cosine and cosecant-squared derivative patterns.",
+        "Divide by the scale factor three in the first integral.",
+        "Check the negative sign in the second."
+      ],
+      "answer": "sin(3x)/3+C and −cotx+C, on allowed intervals."
+    },
+    {
+      "question": "Find ∫2x cos(x²)dx.",
+      "steps": [
+        "Set u=x², so du=2x dx.",
+        "Integrate cosu to sinu.",
+        "Return to x and verify by the chain rule."
+      ],
+      "answer": "sin(x²)+C."
+    },
+    {
+      "question": "Evaluate ∫xeˣdx and ∫lnx dx for x>0.",
+      "steps": [
+        "For the first choose u=x, dv=eˣdx.",
+        "For the second choose u=lnx, dv=dx.",
+        "Subtract the remaining integrals as prescribed by parts."
+      ],
+      "answer": "(x−1)eˣ+C and xlnx−x+C."
+    },
+    {
+      "question": "Integrate 1/[x(x+1)].",
+      "steps": [
+        "Set the decomposition A/x+B/(x+1).",
+        "The identity 1=A(x+1)+Bx gives A=1, B=−1.",
+        "Integrate each reciprocal on an interval avoiding −1 and 0."
+      ],
+      "answer": "ln|x|−ln|x+1|+C."
+    },
+    {
+      "question": "Integrate (2x+3)/(x²+2x+5).",
+      "steps": [
+        "Write Q=x²+2x+5=(x+1)²+4.",
+        "Split the numerator as Q′+1.",
+        "Integrate the first term logarithmically and the remainder by the inverse-tangent form."
+      ],
+      "answer": "ln(x²+2x+5)+(1/2)arctan((x+1)/2)+C."
+    },
+    {
+      "question": "Integrate x/√(x²+4) and 1/√(4−x²).",
+      "steps": [
+        "For the first set u=x²+4 and account for du=2x dx.",
+        "The second is the reciprocal circular radical form with a=2.",
+        "Retain |x|<2 for the second integrand."
+      ],
+      "answer": "√(x²+4)+C and arcsin(x/2)+C."
+    },
+    {
+      "question": "Find ∫√(4−x²)dx.",
+      "steps": [
+        "Set x=2sinθ with −π/2<θ<π/2.",
+        "The transformed integral is 4∫cos²θ dθ.",
+        "Use the half-angle identity and return to x."
+      ],
+      "answer": "[x√(4−x²)+4arcsin(x/2)]/2+C, −2<x<2."
+    },
+    {
+      "question": "Find ∫sin²x dx.",
+      "steps": [
+        "Replace sin²x by (1−cos2x)/2.",
+        "Integrate the constant half and the doubled-angle cosine.",
+        "Differentiate to check the factor four in the denominator."
+      ],
+      "answer": "x/2−sin2x/4+C."
+    },
+    {
+      "question": "Derive ∫₀¹x²dx using a limit of sums.",
+      "steps": [
+        "Use n equal widths and right endpoints k/n.",
+        "The sum is n(n+1)(2n+1)/(6n³).",
+        "Take n→∞."
+      ],
+      "answer": "1/3."
+    },
+    {
+      "question": "Differentiate ∫₀ˣ²cost dt and evaluate ∫₀²3x²dx.",
+      "steps": [
+        "Apply the Fundamental Theorem with the chain rule for the first.",
+        "For the second use antiderivative x³ at both endpoints.",
+        "Neither numerical definite answer has an arbitrary integration constant."
+      ],
+      "answer": "2xcos(x²) and 8."
+    },
+    {
+      "question": "Evaluate ∫₀¹2x/(1+x²)dx.",
+      "steps": [
+        "Set u=1+x² and du=2x dx.",
+        "Change the limits to 1 and 2.",
+        "Evaluate ln u at the transformed endpoints."
+      ],
+      "answer": "ln2."
+    },
+    {
+      "question": "Evaluate ∫₀^(π/2)sinx/(sinx+cosx)dx.",
+      "steps": [
+        "Reflect the input to π/2−x.",
+        "Add the reflected and original integrands to obtain one.",
+        "Thus 2I=π/2."
+      ],
+      "answer": "π/4."
+    },
+    {
+      "question": "Find the area enclosed by y=x and y=x².",
+      "steps": [
+        "Intersections satisfy x²=x, so x=0,1.",
+        "On [0,1], the line is above the parabola.",
+        "Integrate upper minus lower: [x²/2−x³/3]₀¹."
+      ],
+      "answer": "1/6 square units."
+    },
+    {
+      "question": "Find the area of the ellipse x²/a²+y²/b²=1 for positive a,b.",
+      "steps": [
+        "In the first quadrant integrate b√(1−x²/a²) from 0 to a.",
+        "Substitute x=a sinθ, giving ab∫₀^(π/2)cos²θ dθ=πab/4.",
+        "Multiply by four symmetric quadrants."
+      ],
+      "answer": "πab square units."
+    },
+    {
+      "question": "Find the upper region between y²=4ax and the x axis, 0≤x≤a, a>0.",
+      "steps": [
+        "Choose the upper branch y=2√(ax).",
+        "Integrate 2√a·x^(1/2) from zero to a.",
+        "This is one region; reflecting below the axis would double it."
+      ],
+      "answer": "4a²/3 square units."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "An antiderivative of 2x is:",
+      "options": [
+        "2+C",
+        "x²+C",
+        "2x²+C",
+        "x+C"
+      ],
+      "answer": 1,
+      "explanation": "Differentiating x²+C gives 2x because the derivative of a constant is zero."
+    },
+    {
+      "question": "On a connected interval, two antiderivatives of the same function differ by:",
+      "options": [
+        "A nonconstant linear function",
+        "Their product",
+        "A constant",
+        "Their derivatives squared"
+      ],
+      "answer": 2,
+      "explanation": "Their difference has derivative zero throughout the interval."
+    },
+    {
+      "question": "∫(3x²−4)dx equals:",
+      "options": [
+        "6x+C",
+        "x³−4+C",
+        "3x³−4x+C",
+        "x³−4x+C"
+      ],
+      "answer": 3,
+      "explanation": "Integrate each term and retain the constant."
+    },
+    {
+      "question": "∫dx/x on an interval excluding zero equals:",
+      "options": [
+        "ln|x|+C",
+        "lnx+C for all x≠0",
+        "−1/x²+C",
+        "x ln|x|+C"
+      ],
+      "answer": 0,
+      "explanation": "The absolute value gives the correct real logarithmic derivative on either side of zero."
+    },
+    {
+      "question": "∫csc²x dx equals:",
+      "options": [
+        "cotx+C",
+        "−cotx+C",
+        "−cscx+C",
+        "tanx+C"
+      ],
+      "answer": 1,
+      "explanation": "The derivative of cotx is −csc²x."
+    },
+    {
+      "question": "∫cos(3x)dx equals:",
+      "options": [
+        "3sin(3x)+C",
+        "sin(3x)+C",
+        "sin(3x)/3+C",
+        "−sin(3x)/3+C"
+      ],
+      "answer": 2,
+      "explanation": "The chain rule factor three requires division by three."
+    },
+    {
+      "question": "∫2x cos(x²)dx equals:",
+      "options": [
+        "cos(x²)+C",
+        "2sin(x²)+C",
+        "x²sin(x²)+C",
+        "sin(x²)+C"
+      ],
+      "answer": 3,
+      "explanation": "Substitute u=x² and du=2x dx, then integrate cosu to sinu and return to x."
+    },
+    {
+      "question": "∫x√(1+x²)dx equals:",
+      "options": [
+        "(1+x²)^(3/2)/3+C",
+        "(1+x²)^(3/2)+C",
+        "√(1+x²)+C",
+        "(1+x²)^(3/2)/2+C"
+      ],
+      "answer": 0,
+      "explanation": "Substitution gives one half times the integral of u^(1/2)."
+    },
+    {
+      "question": "∫xeˣdx equals:",
+      "options": [
+        "xeˣ+C",
+        "(x−1)eˣ+C",
+        "(x+1)eˣ+C",
+        "eˣ/x+C"
+      ],
+      "answer": 1,
+      "explanation": "Integration by parts gives xeˣ−eˣ."
+    },
+    {
+      "question": "For x>0, ∫lnx dx equals:",
+      "options": [
+        "xlnx+C",
+        "1/x+C",
+        "xlnx−x+C",
+        "(lnx)²/2+C"
+      ],
+      "answer": 2,
+      "explanation": "Use u=lnx, dv=dx; differentiate the answer to check."
+    },
+    {
+      "question": "The partial fractions of 1/[x(x+1)] are:",
+      "options": [
+        "1/x+1/(x+1)",
+        "−1/x+1/(x+1)",
+        "1/(x+1)²",
+        "1/x−1/(x+1)"
+      ],
+      "answer": 3,
+      "explanation": "Combining the correct fractions gives numerator (x+1)−x=1."
+    },
+    {
+      "question": "Before partial fractions, an improper rational expression usually needs:",
+      "options": [
+        "Polynomial division",
+        "Squaring both sides",
+        "Dropping the numerator",
+        "Replacing x by zero"
+      ],
+      "answer": 0,
+      "explanation": "Divide when numerator degree is at least denominator degree."
+    },
+    {
+      "question": "∫dx/(x²+4) equals:",
+      "options": [
+        "2arctan(x/2)+C",
+        "arctan(x/2)/2+C",
+        "arcsin(x/2)/2+C",
+        "ln(x²+4)+C"
+      ],
+      "answer": 1,
+      "explanation": "The standard formula has coefficient 1/a with a=2."
+    },
+    {
+      "question": "Completing the square gives x²+2x+5 equal to:",
+      "options": [
+        "(x+2)²+1",
+        "(x+1)²+5",
+        "(x+1)²+4",
+        "(x−1)²+4"
+      ],
+      "answer": 2,
+      "explanation": "Expanding (x+1)²+4 restores all coefficients."
+    },
+    {
+      "question": "For Q=x²+2x+5, write 2x+3 as:",
+      "options": [
+        "Q′−1",
+        "2Q′+1",
+        "Q+1",
+        "Q′+1"
+      ],
+      "answer": 3,
+      "explanation": "Q′=2x+2, so the remainder is one."
+    },
+    {
+      "question": "∫Q′/Q dx on an interval with Q≠0 equals:",
+      "options": [
+        "ln|Q|+C",
+        "Q²/2+C",
+        "1/Q+C",
+        "Q′ln|Q|+C"
+      ],
+      "answer": 0,
+      "explanation": "Reverse the logarithmic chain rule."
+    },
+    {
+      "question": "For |x|<2, ∫dx/√(4−x²) equals:",
+      "options": [
+        "arcsin(x/2)/2+C",
+        "arcsin(x/2)+C",
+        "2arcsin(x/2)+C",
+        "arctan(x/2)+C"
+      ],
+      "answer": 1,
+      "explanation": "The derivative of arcsin(x/2) is 1/√(4−x²)."
+    },
+    {
+      "question": "∫x dx/√(x²+4) equals:",
+      "options": [
+        "2√(x²+4)+C",
+        "ln|x|+C",
+        "√(x²+4)+C",
+        "arcsin(x/2)+C"
+      ],
+      "answer": 2,
+      "explanation": "Differentiate the radical to get x divided by that radical."
+    },
+    {
+      "question": "In ∫√(a²−x²)dx, a>0, a suitable substitution is:",
+      "options": [
+        "x=a+θ",
+        "x=a tanθ with no further change",
+        "x=sin(aθ) for every a",
+        "x=a sinθ"
+      ],
+      "answer": 3,
+      "explanation": "On the stated principal interval the radical becomes a cosθ."
+    },
+    {
+      "question": "The logarithm term in ∫√(x²−a²)dx has coefficient:",
+      "options": [
+        "−a²/2",
+        "a²/2",
+        "−a/2",
+        "1/a"
+      ],
+      "answer": 0,
+      "explanation": "The standard expression is half of x times the radical minus a² times the logarithm."
+    },
+    {
+      "question": "∫sin²x dx equals:",
+      "options": [
+        "sin³x/3+C",
+        "x/2−sin(2x)/4+C",
+        "x/2+sin(2x)/4+C",
+        "−cos²x/2+C"
+      ],
+      "answer": 1,
+      "explanation": "Use sin²x=(1−cos2x)/2 and integrate the doubled angle."
+    },
+    {
+      "question": "∫sinx cosx dx equals:",
+      "options": [
+        "sin²x+C",
+        "sinx cosx+C",
+        "sin²x/2+C",
+        "−sin²x/2+C"
+      ],
+      "answer": 2,
+      "explanation": "Substitute u=sinx, du=cosx dx, so the transformed integral is ∫u du=u²/2+C."
+    },
+    {
+      "question": "The right endpoint sum for ∫₀¹x²dx is:",
+      "options": [
+        "Σ(k²)/n²",
+        "Σk/n³",
+        "Σ(k²)/n",
+        "Σ(k²)/n³, k=1,…,n"
+      ],
+      "answer": 3,
+      "explanation": "Each sampled value (k/n)² is multiplied by width 1/n."
+    },
+    {
+      "question": "The limit of that sum as n→∞ is:",
+      "options": [
+        "1/3",
+        "1/2",
+        "1",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "Use Σk²=n(n+1)(2n+1)/6 and divide by n³."
+    },
+    {
+      "question": "∫₀²3x²dx equals:",
+      "options": [
+        "4",
+        "8",
+        "12",
+        "6"
+      ],
+      "answer": 1,
+      "explanation": "The antiderivative x³ gives 2³−0³=8."
+    },
+    {
+      "question": "d/dx of ∫₀ˣ²cos(t)dt equals:",
+      "options": [
+        "cos(x²)",
+        "sin(x²)",
+        "2x cos(x²)",
+        "2x sin(x²)"
+      ],
+      "answer": 2,
+      "explanation": "The theorem gives the integrand at the upper limit, multiplied by its derivative."
+    },
+    {
+      "question": "If ∫ₐᵇf(x)dx=5, then ∫ᵇₐf(x)dx is:",
+      "options": [
+        "5",
+        "0",
+        "1/5",
+        "−5"
+      ],
+      "answer": 3,
+      "explanation": "Reversing limits reverses the sign."
+    },
+    {
+      "question": "The ordinary integral ∫₋₁¹dx/x² is:",
+      "options": [
+        "Undefined; the improper integral diverges",
+        "−2",
+        "0",
+        "2"
+      ],
+      "answer": 0,
+      "explanation": "The interior pole prevents ordinary endpoint evaluation; each positive improper piece diverges."
+    },
+    {
+      "question": "∫₀¹2x eˣ²dx equals:",
+      "options": [
+        "e",
+        "e−1",
+        "e/2",
+        "1"
+      ],
+      "answer": 1,
+      "explanation": "Substitute u=x² with bounds zero and one."
+    },
+    {
+      "question": "For u=1+x², the bounds x=0 and x=1 become:",
+      "options": [
+        "u=0 and u=1",
+        "u=0 and u=2",
+        "u=1 and u=2",
+        "u=1 and u=1"
+      ],
+      "answer": 2,
+      "explanation": "Transform both endpoints through the substitution."
+    },
+    {
+      "question": "An integrable odd function on [−a,a] has integral:",
+      "options": [
+        "Always positive",
+        "Twice its positive half integral",
+        "Undefined in every case",
+        "0"
+      ],
+      "answer": 3,
+      "explanation": "Opposite signed contributions cancel under the integrability assumption."
+    },
+    {
+      "question": "∫₀^(π/2) sinx/(sinx+cosx)dx equals:",
+      "options": [
+        "π/4",
+        "π/2",
+        "1",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "Reflect x to π/2−x and add the two integral expressions."
+    },
+    {
+      "question": "The total geometric area between y=x and the x axis on [−1,1] is:",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "1/2"
+      ],
+      "answer": 1,
+      "explanation": "Split at zero; each triangular region contributes one half."
+    },
+    {
+      "question": "The area between y=x and y=x² is:",
+      "options": [
+        "1/3",
+        "1/2",
+        "1/6",
+        "1"
+      ],
+      "answer": 2,
+      "explanation": "Their intersections are zero and one, and ∫₀¹(x−x²)dx=1/6."
+    },
+    {
+      "question": "An ellipse with semiaxes a and b has area:",
+      "options": [
+        "2πab",
+        "π(a+b)",
+        "πa²b²",
+        "πab"
+      ],
+      "answer": 3,
+      "explanation": "Integrate the upper boundary over a quadrant and multiply by four."
+    },
+    {
+      "question": "For a>0, the area under the upper branch y²=4ax above the x axis, 0≤x≤a, is:",
+      "options": [
+        "4a²/3",
+        "8a²/3",
+        "2a²/3",
+        "a²"
+      ],
+      "answer": 0,
+      "explanation": "Integrate y=2√(ax) from zero to a; only the upper region is included."
+    }
+  ],
+  "sources": [
+    {
+      "title": "NTA JEE Main 2026 Mathematics Unit 8",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax Calculus: Substitution",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/5-5-substitution"
+    },
+    {
+      "title": "OpenStax Calculus: Integration by Parts",
+      "url": "https://openstax.org/books/calculus-volume-2/pages/3-1-integration-by-parts"
+    },
+    {
+      "title": "OpenStax Calculus: Areas between Curves",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/6-1-areas-between-curves"
+    }
+  ]
+};

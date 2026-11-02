@@ -15,6 +15,7 @@ const CountingDiagram = dynamic(() => import("./permutations-combinations-diagra
 const BinomialDiagram = dynamic(() => import("./binomial-theorem-diagram"));
 const SequencesDiagram = dynamic(() => import("./sequences-series-diagram"));
 const TrigonometryDiagram = dynamic(() => import("./trigonometry-diagram"));
+const IntegralDiagram = dynamic(() => import("./integral-calculus-diagram"));
 const CalculusDiagram = dynamic(() => import("./limits-continuity-differentiability-diagram"));
 const SetsFunctionsDiagram = dynamic(() => import("./sets-functions-diagram"));
 const ComplexQuadraticsDiagram = dynamic(() => import("./complex-quadratics-diagram"));
@@ -171,6 +172,7 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
           {lesson.id === "binomial-theorem" && <BinomialDiagram chapter={chapterIndex} />}
           {lesson.id === "sequences-series" && <SequencesDiagram chapter={chapterIndex} />}
           {lesson.id === "trigonometry" && <TrigonometryDiagram chapter={chapterIndex} />}
+          {lesson.id === "integral-calculus" && <IntegralDiagram chapter={chapterIndex} />}
           {lesson.id === "limits-continuity-differentiability" && <CalculusDiagram chapter={chapterIndex} />}
           {lesson.id === "sets-and-functions" && <SetsFunctionsDiagram chapter={chapterIndex} />}
           {lesson.id === "quadratic-equations" && <ComplexQuadraticsDiagram chapter={chapterIndex} />}

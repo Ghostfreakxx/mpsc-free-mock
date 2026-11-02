@@ -1,0 +1,2269 @@
+{
+  "duration": 1191.000000000029,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 77.71200000000205
+    },
+    {
+      "start": 77.71200000000205,
+      "end": 138.52800000000346
+    },
+    {
+      "start": 138.52800000000346,
+      "end": 208.53600000000523
+    },
+    {
+      "start": 208.53600000000523,
+      "end": 266.95200000000654
+    },
+    {
+      "start": 266.95200000000654,
+      "end": 325.96800000000786
+    },
+    {
+      "start": 325.96800000000786,
+      "end": 394.82400000000956
+    },
+    {
+      "start": 394.82400000000956,
+      "end": 457.94400000001104
+    },
+    {
+      "start": 457.94400000001104,
+      "end": 522.0480000000126
+    },
+    {
+      "start": 522.0480000000126,
+      "end": 588.1680000000142
+    },
+    {
+      "start": 588.1680000000142,
+      "end": 653.8800000000158
+    },
+    {
+      "start": 653.8800000000158,
+      "end": 718.6800000000173
+    },
+    {
+      "start": 718.6800000000173,
+      "end": 783.7440000000189
+    },
+    {
+      "start": 783.7440000000189,
+      "end": 856.3440000000207
+    },
+    {
+      "start": 856.3440000000207,
+      "end": 927.0000000000225
+    },
+    {
+      "start": 927.0000000000225,
+      "end": 993.7200000000241
+    },
+    {
+      "start": 993.7200000000241,
+      "end": 1061.376000000026
+    },
+    {
+      "start": 1061.376000000026,
+      "end": 1124.6880000000274
+    },
+    {
+      "start": 1124.6880000000274,
+      "end": 1191.000000000029
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 4.019999980926514,
+      "text": "Integration reverses differentiation when we seek an antiderivative.",
+      "chapter": 0
+    },
+    {
+      "start": 5.28000020980835,
+      "end": 10.199999809265137,
+      "text": "Call the integrand lowercase f and a candidate antiderivative capital F.",
+      "chapter": 0
+    },
+    {
+      "start": 10.84000015258789,
+      "end": 15.300000190734863,
+      "text": "If differentiating capital F gives lowercase f throughout an interval, then",
+      "chapter": 0
+    },
+    {
+      "start": 15.300000190734863,
+      "end": 17.700000762939453,
+      "text": "capital F is an antiderivative there.",
+      "chapter": 0
+    },
+    {
+      "start": 18.239999771118164,
+      "end": 21.81999969482422,
+      "text": "For the integrand two x, one antiderivative is x squared.",
+      "chapter": 0
+    },
+    {
+      "start": 22.65999984741211,
+      "end": 26.159999505067482,
+      "text": "Adding any constant leaves its derivative unchanged, so the indefinite",
+      "chapter": 0
+    },
+    {
+      "start": 26.159999505067482,
+      "end": 26.559999465942383,
+      "text": "integral",
+      "chapter": 0
+    },
+    {
+      "start": 26.559999465942383,
+      "end": 28.139999389648438,
+      "text": "is x squared plus C.",
+      "chapter": 0
+    },
+    {
+      "start": 28.899999618530273,
+      "end": 33.02000045776367,
+      "text": "The integral sign with no bounds represents a family of functions, rather than",
+      "chapter": 0
+    },
+    {
+      "start": 33.02000045776367,
+      "end": 33.52000045776367,
+      "text": "one number.",
+      "chapter": 0
+    },
+    {
+      "start": 34.31999969482422,
+      "end": 36.91999816894531,
+      "text": "The symbol d x identifies the variable of integration.",
+      "chapter": 0
+    },
+    {
+      "start": 37.7599983215332,
+      "end": 41.7599983215332,
+      "text": "A different variable is held constant unless dependence is explicitly stated.",
+      "chapter": 0
+    },
+    {
+      "start": 42.68000030517578,
+      "end": 46.772308740860375,
+      "text": "On a connected interval, any two antiderivatives of the same function differ",
+      "chapter": 0
+    },
+    {
+      "start": 46.772308740860375,
+      "end": 46.880001068115234,
+      "text": "by",
+      "chapter": 0
+    },
+    {
+      "start": 46.880001068115234,
+      "end": 47.459999084472656,
+      "text": "a constant.",
+      "chapter": 0
+    },
+    {
+      "start": 48.29999923706055,
+      "end": 51.08000183105469,
+      "text": "Separate domain intervals can have independent constants.",
+      "chapter": 0
+    },
+    {
+      "start": 51.720001220703125,
+      "end": 57.14307755690355,
+      "text": "For example, one over x excludes zero, so a formula on positive inputs need",
+      "chapter": 0
+    },
+    {
+      "start": 57.14307755690355,
+      "end": 57.36000061035156,
+      "text": "not",
+      "chapter": 0
+    },
+    {
+      "start": 57.36000061035156,
+      "end": 60.400001525878906,
+      "text": "share its integration constant with a formula on negative inputs.",
+      "chapter": 0
+    },
+    {
+      "start": 61.540000915527344,
+      "end": 65.4000015258789,
+      "text": "Linearity lets us integrate sums term by term and pull out constant factors.",
+      "chapter": 0
+    },
+    {
+      "start": 66.0999984741211,
+      "end": 69.55999755859375,
+      "text": "It does not turn an integral of a product into a product of integrals.",
+      "chapter": 0
+    },
+    {
+      "start": 70.62000274658203,
+      "end": 73.87999725341797,
+      "text": "Differentiate the proposed result and compare it with the entire original",
+      "chapter": 0
+    },
+    {
+      "start": 73.87999725341797,
+      "end": 77.33999633789062,
+      "text": "integrand, and check that the original domain restrictions still hold.",
+      "chapter": 0
+    },
+    {
+      "start": 77.71200000000205,
+      "end": 82.27199994278159,
+      "text": "The power integration rule increases the exponent by one and divides by that",
+      "chapter": 1
+    },
+    {
+      "start": 82.27199994278159,
+      "end": 82.89199982834067,
+      "text": "new exponent.",
+      "chapter": 1
+    },
+    {
+      "start": 83.73199998092856,
+      "end": 87.46994875316335,
+      "text": "It applies when the exponent is not negative one, on an interval where the",
+      "chapter": 1
+    },
+    {
+      "start": 87.46994875316335,
+      "end": 87.67200003814902,
+      "text": "real",
+      "chapter": 1
+    },
+    {
+      "start": 87.67200003814902,
+      "end": 89.45199977112021,
+      "text": "power is defined and differentiable.",
+      "chapter": 1
+    },
+    {
+      "start": 90.47200022888389,
+      "end": 95.132000076296,
+      "text": "Integrating three x squared minus four gives x cubed minus four x plus C.",
+      "chapter": 1
+    },
+    {
+      "start": 96.0119992370626,
+      "end": 99.2919999237081,
+      "text": "The exceptional exponent negative one has a logarithmic answer.",
+      "chapter": 1
+    },
+    {
+      "start": 100.07200061035361,
+      "end": 104.43353790792034,
+      "text": "An antiderivative of one over x is natural log of absolute x on either",
+      "chapter": 1
+    },
+    {
+      "start": 104.43353790792034,
+      "end": 104.93199931335654,
+      "text": "interval",
+      "chapter": 1
+    },
+    {
+      "start": 104.93199931335654,
+      "end": 105.87199984741416,
+      "text": "excluding zero.",
+      "chapter": 1
+    },
+    {
+      "start": 106.37199984741416,
+      "end": 110.31199847412314,
+      "text": "The absolute value makes a real formula available for negative inputs as well",
+      "chapter": 1
+    },
+    {
+      "start": 110.31199847412314,
+      "end": 111.21200000000205,
+      "text": "as positive inputs.",
+      "chapter": 1
+    },
+    {
+      "start": 111.9120007629415,
+      "end": 113.11200152588096,
+      "text": "It does not include zero.",
+      "chapter": 1
+    },
+    {
+      "start": 113.93200122070517,
+      "end": 116.43200122070517,
+      "text": "The exponential e to the x integrates to itself.",
+      "chapter": 1
+    },
+    {
+      "start": 117.19199954223838,
+      "end": 121.39200030517783,
+      "text": "For e to the two x, divide by the inner derivative two, giving one half e to",
+      "chapter": 1
+    },
+    {
+      "start": 121.39200030517783,
+      "end": 122.53199969482627,
+      "text": "the two x plus C.",
+      "chapter": 1
+    },
+    {
+      "start": 123.29200183105674,
+      "end": 127.59610123189495,
+      "text": "A positive base a different from one gives an integral of a to the x equal to",
+      "chapter": 1
+    },
+    {
+      "start": 127.59610123189495,
+      "end": 127.65199862671103,
+      "text": "a",
+      "chapter": 1
+    },
+    {
+      "start": 127.65199862671103,
+      "end": 129.69199954223836,
+      "text": "to the x divided by natural log a.",
+      "chapter": 1
+    },
+    {
+      "start": 130.2320004577657,
+      "end": 133.11200152588094,
+      "text": "If the base is one, integrate the constant one directly.",
+      "chapter": 1
+    },
+    {
+      "start": 133.11200152588094,
+      "end": 137.0786665492934,
+      "text": "Verify the coefficient by differentiating, especially when an exponent",
+      "chapter": 1
+    },
+    {
+      "start": 137.0786665492934,
+      "end": 137.53199969482625,
+      "text": "contains",
+      "chapter": 1
+    },
+    {
+      "start": 137.53199969482625,
+      "end": 138.2320004577657,
+      "text": "a scale factor.",
+      "chapter": 1
+    },
+    {
+      "start": 138.52800000000346,
+      "end": 142.40800011444438,
+      "text": "Trigonometric integration begins by reversing the derivative table, using",
+      "chapter": 2
+    },
+    {
+      "start": 142.40800011444438,
+      "end": 142.90800011444438,
+      "text": "radians.",
+      "chapter": 2
+    },
+    {
+      "start": 143.62799990463603,
+      "end": 148.40800011444438,
+      "text": "Cosine x integrates to sine x, and sine x integrates to negative cosine x.",
+      "chapter": 2
+    },
+    {
+      "start": 149.12800038147319,
+      "end": 151.3879996566807,
+      "text": "Secant squared x integrates to tangent x.",
+      "chapter": 2
+    },
+    {
+      "start": 152.1680003433262,
+      "end": 155.34799969482768,
+      "text": "Cosecant squared x integrates to negative cotangent x.",
+      "chapter": 2
+    },
+    {
+      "start": 156.02800000000346,
+      "end": 160.88800061035502,
+      "text": "Secant x times tangent x integrates to secant x, while cosecant x times",
+      "chapter": 2
+    },
+    {
+      "start": 160.88800061035502,
+      "end": 163.84799969482768,
+      "text": "cotangent x integrates to negative cosecant x.",
+      "chapter": 2
+    },
+    {
+      "start": 164.4480000762974,
+      "end": 167.34799969482768,
+      "text": "Check the negative signs by differentiating the proposed answers.",
+      "chapter": 2
+    },
+    {
+      "start": 167.84799969482768,
+      "end": 171.58800137329447,
+      "text": "Each formula is used on an interval avoiding the poles of the original",
+      "chapter": 2
+    },
+    {
+      "start": 171.58800137329447,
+      "end": 172.08800137329447,
+      "text": "integrand.",
+      "chapter": 2
+    },
+    {
+      "start": 172.86800015259135,
+      "end": 177.70081977335957,
+      "text": "A scaled angle changes the coefficient: cosine of three x integrates to sine",
+      "chapter": 2
+    },
+    {
+      "start": 177.70081977335957,
+      "end": 177.827999237064,
+      "text": "of",
+      "chapter": 2
+    },
+    {
+      "start": 177.827999237064,
+      "end": 179.0680009155308,
+      "text": "three x divided by three.",
+      "chapter": 2
+    },
+    {
+      "start": 179.94799816894877,
+      "end": 183.9080010681187,
+      "text": "Integrating tangent x gives negative natural log of absolute cosine x plus C.",
+      "chapter": 2
+    },
+    {
+      "start": 184.5680009155308,
+      "end": 188.8746657980929,
+      "text": "This follows by substituting cosine x and using its derivative negative sine",
+      "chapter": 2
+    },
+    {
+      "start": 188.8746657980929,
+      "end": 188.98799908447612,
+      "text": "x.",
+      "chapter": 2
+    },
+    {
+      "start": 189.70800030517924,
+      "end": 194.1679993896519,
+      "text": "Similarly, cotangent x integrates to natural log of absolute sine x plus C.",
+      "chapter": 2
+    },
+    {
+      "start": 194.1679993896519,
+      "end": 197.38800061035502,
+      "text": "The logarithm formulas keep the excluded zeros visible.",
+      "chapter": 2
+    },
+    {
+      "start": 198.327999237064,
+      "end": 201.7280007629429,
+      "text": "No ordinary antiderivative formula permits crossing a pole as though the",
+      "chapter": 2
+    },
+    {
+      "start": 201.7280007629429,
+      "end": 203.00800335693705,
+      "text": "function were continuous there.",
+      "chapter": 2
+    },
+    {
+      "start": 203.86799633789408,
+      "end": 207.34799969482768,
+      "text": "Identify the integrand as a complete pattern before selecting a table entry.",
+      "chapter": 2
+    },
+    {
+      "start": 208.53600000000523,
+      "end": 210.59599994278477,
+      "text": "Substitution reverses the chain rule.",
+      "chapter": 3
+    },
+    {
+      "start": 211.09599994278477,
+      "end": 213.95600007629918,
+      "text": "Look for an inner expression together with a constant multiple of its",
+      "chapter": 3
+    },
+    {
+      "start": 213.95600007629918,
+      "end": 214.25599979019688,
+      "text": "derivative.",
+      "chapter": 3
+    },
+    {
+      "start": 214.8560001716666,
+      "end": 219.67600034332798,
+      "text": "In the integral of two x times cosine of x squared, set u equal to x squared.",
+      "chapter": 3
+    },
+    {
+      "start": 220.2759997711234,
+      "end": 225.0760004753752,
+      "text": "Then d u equals two x d x, so the whole integral becomes the integral of",
+      "chapter": 3
+    },
+    {
+      "start": 225.0760004753752,
+      "end": 225.47600053406285,
+      "text": "cosine",
+      "chapter": 3
+    },
+    {
+      "start": 225.47600053406285,
+      "end": 226.716000305181,
+      "text": "u with respect to u.",
+      "chapter": 3
+    },
+    {
+      "start": 227.31600068665074,
+      "end": 232.95600007629918,
+      "text": "The result is sine u plus C, or sine of x squared plus C after returning to x.",
+      "chapter": 3
+    },
+    {
+      "start": 233.85599969482945,
+      "end": 237.41599916077183,
+      "text": "Writing a substitution without replacing every remaining x is incomplete.",
+      "chapter": 3
+    },
+    {
+      "start": 238.03600000000523,
+      "end": 241.93600152588414,
+      "text": "Another example integrates x times the square root of one plus x squared.",
+      "chapter": 3
+    },
+    {
+      "start": 242.79599832153843,
+      "end": 244.47599862671422,
+      "text": "Set u equal to one plus x squared.",
+      "chapter": 3
+    },
+    {
+      "start": 245.11600183105992,
+      "end": 248.09600137329625,
+      "text": "Then x d x equals one half d u.",
+      "chapter": 3
+    },
+    {
+      "start": 248.09600137329625,
+      "end": 251.63599847412632,
+      "text": "Integrating one half u to the one half gives one third u to the three halves,",
+      "chapter": 3
+    },
+    {
+      "start": 252.25600122070836,
+      "end": 255.99394863579124,
+      "text": "hence one third of the quantity one plus x squared raised to three halves,",
+      "chapter": 3
+    },
+    {
+      "start": 255.99394863579124,
+      "end": 256.19599984741734,
+      "text": "plus",
+      "chapter": 3
+    },
+    {
+      "start": 256.19599984741734,
+      "end": 256.51599954224156,
+      "text": "C.",
+      "chapter": 3
+    },
+    {
+      "start": 256.91600106812047,
+      "end": 259.5760009155326,
+      "text": "The derivative check restores the original x factor.",
+      "chapter": 3
+    },
+    {
+      "start": 260.53600000000523,
+      "end": 263.85599969482945,
+      "text": "Avoid treating d u as though it always equals d x.",
+      "chapter": 3
+    },
+    {
+      "start": 263.85599969482945,
+      "end": 266.65599893189,
+      "text": "Account for the scale factor before integrating the transformed expression.",
+      "chapter": 3
+    },
+    {
+      "start": 266.95200000000654,
+      "end": 269.45200000000654,
+      "text": "The product rule yields integration by parts.",
+      "chapter": 4
+    },
+    {
+      "start": 270.29199991417585,
+      "end": 275.67200026703534,
+      "text": "Starting with the differential of u v equal to u d v plus v d u, rearrangement",
+      "chapter": 4
+    },
+    {
+      "start": 275.67200026703534,
+      "end": 281.4120000381535,
+      "text": "gives the integral of u d v equal to u v minus the integral of v d u.",
+      "chapter": 4
+    },
+    {
+      "start": 281.4120000381535,
+      "end": 285.21200022888837,
+      "text": "Choose the factors so that differentiating u and integrating d v make the",
+      "chapter": 4
+    },
+    {
+      "start": 285.21200022888837,
+      "end": 286.43199954224286,
+      "text": "remaining integral manageable.",
+      "chapter": 4
+    },
+    {
+      "start": 287.1320003051823,
+      "end": 292.99199996185956,
+      "text": "For x times e to the x, choose u equal to x and d v equal to e to the x d",
+      "chapter": 4
+    },
+    {
+      "start": 292.99199996185956,
+      "end": 293.39200053406415,
+      "text": "x.",
+      "chapter": 4
+    },
+    {
+      "start": 293.39200053406415,
+      "end": 296.33199916077314,
+      "text": "Then d u is d x and v is e to the x.",
+      "chapter": 4
+    },
+    {
+      "start": 296.33199916077314,
+      "end": 300.43199954224286,
+      "text": "The answer is x e to the x minus e to the x plus C.",
+      "chapter": 4
+    },
+    {
+      "start": 301.19200167847333,
+      "end": 303.83200106812177,
+      "text": "Differentiation shows the extra exponential terms cancel.",
+      "chapter": 4
+    },
+    {
+      "start": 304.5719989318913,
+      "end": 308.33200106812177,
+      "text": "For natural log x on its positive domain, write the hidden product with one,",
+      "chapter": 4
+    },
+    {
+      "start": 309.05199847412763,
+      "end": 312.7319987793034,
+      "text": "choose u equal to natural log x and d v equal to d x.",
+      "chapter": 4
+    },
+    {
+      "start": 312.7319987793034,
+      "end": 315.7319987793034,
+      "text": "This gives x natural log x minus x plus C.",
+      "chapter": 4
+    },
+    {
+      "start": 316.17200122070966,
+      "end": 320.091999389655,
+      "text": "A factor selection mnemonic is only a guide, not a theorem that every choice",
+      "chapter": 4
+    },
+    {
+      "start": 320.091999389655,
+      "end": 321.091999389655,
+      "text": "simplifies the problem.",
+      "chapter": 4
+    },
+    {
+      "start": 321.69200167847333,
+      "end": 325.17200122070966,
+      "text": "Check signs and boundary terms carefully when applying the same method to a",
+      "chapter": 4
+    },
+    {
+      "start": 325.17200122070966,
+      "end": 325.67200122070966,
+      "text": "definite integral.",
+      "chapter": 4
+    },
+    {
+      "start": 325.96800000000786,
+      "end": 328.64800006676506,
+      "text": "A rational integrand is a quotient of polynomials.",
+      "chapter": 5
+    },
+    {
+      "start": 329.24799997139763,
+      "end": 333.0172307834215,
+      "text": "If the numerator degree is at least the denominator degree, polynomial",
+      "chapter": 5
+    },
+    {
+      "start": 333.0172307834215,
+      "end": 333.44800001908135,
+      "text": "division",
+      "chapter": 5
+    },
+    {
+      "start": 333.44800001908135,
+      "end": 335.42800003815483,
+      "text": "should come before partial fractions.",
+      "chapter": 5
+    },
+    {
+      "start": 336.3880000763018,
+      "end": 342.0080009155352,
+      "text": "For one divided by x times x plus one, write A over x plus B over x plus one.",
+      "chapter": 5
+    },
+    {
+      "start": 342.6079993896563,
+      "end": 346.7679992370684,
+      "text": "Multiplying by the common denominator gives one equal to A times x plus one,",
+      "chapter": 5
+    },
+    {
+      "start": 346.7679992370684,
+      "end": 348.5080009155352,
+      "text": "plus B x.",
+      "chapter": 5
+    },
+    {
+      "start": 348.5080009155352,
+      "end": 352.2280002288897,
+      "text": "Comparing coefficients gives A equal to one and B equal to negative one.",
+      "chapter": 5
+    },
+    {
+      "start": 352.2280002288897,
+      "end": 357.3415902737427,
+      "text": "Integration now gives natural log of absolute x minus natural log of absolute",
+      "chapter": 5
+    },
+    {
+      "start": 357.3415902737427,
+      "end": 357.4080005340655,
+      "text": "x",
+      "chapter": 5
+    },
+    {
+      "start": 357.4080005340655,
+      "end": 358.80800015259575,
+      "text": "plus one, plus C.",
+      "chapter": 5
+    },
+    {
+      "start": 359.5080009155352,
+      "end": 361.70800167847466,
+      "text": "The intervals exclude zero and negative one.",
+      "chapter": 5
+    },
+    {
+      "start": 362.48800045777153,
+      "end": 366.12799984741997,
+      "text": "Repeated linear factors require a separate term for every power up to the",
+      "chapter": 5
+    },
+    {
+      "start": 366.12799984741997,
+      "end": 366.7879996948321,
+      "text": "repeated multiplicity.",
+      "chapter": 5
+    },
+    {
+      "start": 367.36800152588677,
+      "end": 370.1079993896563,
+      "text": "An irreducible quadratic factor uses a linear numerator.",
+      "chapter": 5
+    },
+    {
+      "start": 370.72799832154107,
+      "end": 375.3879981689532,
+      "text": "For example, a term over x squared plus one should allow numerator A x plus B,",
+      "chapter": 5
+    },
+    {
+      "start": 375.8280006103594,
+      "end": 378.2879996948321,
+      "text": "rather than assuming a constant before checking the identity.",
+      "chapter": 5
+    },
+    {
+      "start": 379.0080009155352,
+      "end": 382.72799832154107,
+      "text": "Determine the coefficients algebraically, then integrate the simpler pieces.",
+      "chapter": 5
+    },
+    {
+      "start": 383.4479995422442,
+      "end": 387.1680007629473,
+      "text": "Differentiating the final logarithmic expression checks both the decomposition",
+      "chapter": 5
+    },
+    {
+      "start": 387.1680007629473,
+      "end": 388.40799862671685,
+      "text": "and the integration.",
+      "chapter": 5
+    },
+    {
+      "start": 389.0879989318926,
+      "end": 392.92902690086174,
+      "text": "A cancellation in an intermediate expression never authorizes an input",
+      "chapter": 5
+    },
+    {
+      "start": 392.92902690086174,
+      "end": 393.36800152588677,
+      "text": "excluded",
+      "chapter": 5
+    },
+    {
+      "start": 393.36800152588677,
+      "end": 394.5279975586016,
+      "text": "by the original integrand.",
+      "chapter": 5
+    },
+    {
+      "start": 394.82400000000956,
+      "end": 399.8639999618626,
+      "text": "Completing the square reduces a general quadratic to a shifted square plus or",
+      "chapter": 6
+    },
+    {
+      "start": 399.8639999618626,
+      "end": 400.6040002098179,
+      "text": "minus a constant.",
+      "chapter": 6
+    },
+    {
+      "start": 401.76400005723,
+      "end": 406.7440000763035,
+      "text": "For x squared plus two x plus five, the result is the square of x plus one,",
+      "chapter": 6
+    },
+    {
+      "start": 406.7440000763035,
+      "end": 407.60399973298075,
+      "text": "plus four.",
+      "chapter": 6
+    },
+    {
+      "start": 408.38400041962626,
+      "end": 412.44400083924296,
+      "text": "Substituting t equal to x plus one gives the standard integral of one over t",
+      "chapter": 6
+    },
+    {
+      "start": 412.44400083924296,
+      "end": 413.463999389658,
+      "text": "squared plus two squared.",
+      "chapter": 6
+    },
+    {
+      "start": 414.3039995422459,
+      "end": 418.34400045777323,
+      "text": "The answer is one half arctangent of the quantity x plus one divided by two,",
+      "chapter": 6
+    },
+    {
+      "start": 418.6840006103611,
+      "end": 419.1840006103611,
+      "text": "plus C.",
+      "chapter": 6
+    },
+    {
+      "start": 419.4039999237156,
+      "end": 421.8640009155369,
+      "text": "The denominator is positive for every real x.",
+      "chapter": 6
+    },
+    {
+      "start": 422.48399984742167,
+      "end": 427.00400030518534,
+      "text": "In general, one over x squared plus a squared integrates to arctangent of x",
+      "chapter": 6
+    },
+    {
+      "start": 427.00400030518534,
+      "end": 429.463999389658,
+      "text": "over a, divided by a, with a positive.",
+      "chapter": 6
+    },
+    {
+      "start": 430.2040010681248,
+      "end": 432.48399984742167,
+      "text": "A difference of squares instead gives logarithms.",
+      "chapter": 6
+    },
+    {
+      "start": 433.0440012207127,
+      "end": 437.60399877930644,
+      "text": "One over a squared minus x squared integrates to one over two a times natural",
+      "chapter": 6
+    },
+    {
+      "start": 437.60399877930644,
+      "end": 441.58399832154277,
+      "text": "log of the absolute value of the ratio a plus x to a minus x.",
+      "chapter": 6
+    },
+    {
+      "start": 442.463999389658,
+      "end": 445.42399847413066,
+      "text": "Reversing the denominator sign reverses the antiderivative sign.",
+      "chapter": 6
+    },
+    {
+      "start": 446.06400167847636,
+      "end": 448.6439996948338,
+      "text": "The poles at positive and negative a remain excluded.",
+      "chapter": 6
+    },
+    {
+      "start": 448.6439996948338,
+      "end": 453.10399877930644,
+      "text": "Complete the square before choosing between an inverse tangent pattern and a",
+      "chapter": 6
+    },
+    {
+      "start": 453.10399877930644,
+      "end": 456.98399984742167,
+      "text": "logarithmic pattern, since the sign of the remaining constant determines the",
+      "chapter": 6
+    },
+    {
+      "start": 456.98399984742167,
+      "end": 457.6239992370701,
+      "text": "relevant case.",
+      "chapter": 6
+    },
+    {
+      "start": 457.94400000001104,
+      "end": 462.42400001908453,
+      "text": "A linear numerator over a quadratic often contains part of the derivative of",
+      "chapter": 7
+    },
+    {
+      "start": 462.42400001908453,
+      "end": 463.0639998855701,
+      "text": "its denominator.",
+      "chapter": 7
+    },
+    {
+      "start": 463.96399998093756,
+      "end": 466.864000076305,
+      "text": "Let Q equal x squared plus two x plus five.",
+      "chapter": 7
+    },
+    {
+      "start": 467.364000076305,
+      "end": 469.26399969483526,
+      "text": "Its derivative is two x plus two.",
+      "chapter": 7
+    },
+    {
+      "start": 469.9839999618641,
+      "end": 473.7440001907459,
+      "text": "For numerator two x plus three, write it as Q prime plus one.",
+      "chapter": 7
+    },
+    {
+      "start": 474.22400068665655,
+      "end": 478.2439992370716,
+      "text": "The integral separates into Q prime over Q and one over Q.",
+      "chapter": 7
+    },
+    {
+      "start": 478.6440007629505,
+      "end": 482.864000076305,
+      "text": "The first piece is natural log Q because this Q is always positive.",
+      "chapter": 7
+    },
+    {
+      "start": 483.4540002288929,
+      "end": 486.9640004577747,
+      "text": "The second piece is the completed square inverse tangent from the previous",
+      "chapter": 7
+    },
+    {
+      "start": 486.9640004577747,
+      "end": 487.364000076305,
+      "text": "chapter.",
+      "chapter": 7
+    },
+    {
+      "start": 488.2040002288929,
+      "end": 492.7439992370716,
+      "text": "The answer is natural log of x squared plus two x plus five, plus one half",
+      "chapter": 7
+    },
+    {
+      "start": 492.7439992370716,
+      "end": 496.5639989318958,
+      "text": "arctangent of the quantity x plus one divided by two, plus C.",
+      "chapter": 7
+    },
+    {
+      "start": 497.3040006103626,
+      "end": 502.54399847413214,
+      "text": "For a general numerator p x plus q, solve the identity p x plus q equal to A Q",
+      "chapter": 7
+    },
+    {
+      "start": 502.54399847413214,
+      "end": 504.44400000001104,
+      "text": "prime plus B before integrating.",
+      "chapter": 7
+    },
+    {
+      "start": 505.16400122071417,
+      "end": 508.9239995422474,
+      "text": "If the denominator is a square root of Q, the Q prime portion instead",
+      "chapter": 7
+    },
+    {
+      "start": 508.9239995422474,
+      "end": 510.86399816895636,
+      "text": "integrates to twice A square root of Q.",
+      "chapter": 7
+    },
+    {
+      "start": 511.28400015259894,
+      "end": 515.2039983215443,
+      "text": "The remaining constant portion uses a standard reciprocal square root integral",
+      "chapter": 7
+    },
+    {
+      "start": 515.7439992370716,
+      "end": 516.6640012207142,
+      "text": "after completing the square.",
+      "chapter": 7
+    },
+    {
+      "start": 517.5240018310658,
+      "end": 520.9440000000111,
+      "text": "Keep a real interval with Q positive when that square root occurs in the",
+      "chapter": 7
+    },
+    {
+      "start": 520.9440000000111,
+      "end": 521.1840016784779,
+      "text": "denominator.",
+      "chapter": 7
+    },
+    {
+      "start": 522.0480000000126,
+      "end": 526.4880000572331,
+      "text": "Reciprocal square root integrals have different answers depending on the signs",
+      "chapter": 8
+    },
+    {
+      "start": 526.4880000572331,
+      "end": 527.7679997902043,
+      "text": "inside the radical.",
+      "chapter": 8
+    },
+    {
+      "start": 527.9680000763066,
+      "end": 532.2079998474247,
+      "text": "With a positive, one divided by square root of a squared minus x squared",
+      "chapter": 8
+    },
+    {
+      "start": 532.2079998474247,
+      "end": 534.5879999618656,
+      "text": "integrates to arcsine of x over a.",
+      "chapter": 8
+    },
+    {
+      "start": 535.1279999237187,
+      "end": 538.4680000763066,
+      "text": "Its ordinary integrand domain is absolute x less than a.",
+      "chapter": 8
+    },
+    {
+      "start": 539.1279999237187,
+      "end": 543.0480000000126,
+      "text": "One divided by square root of x squared plus a squared has a logarithmic",
+      "chapter": 8
+    },
+    {
+      "start": 543.0480000000126,
+      "end": 547.4479996185429,
+      "text": "antiderivative: natural log of the absolute value of x plus that square root.",
+      "chapter": 8
+    },
+    {
+      "start": 547.4479996185429,
+      "end": 552.1833848286291,
+      "text": "The same logarithmic form works for square root of x squared minus a squared",
+      "chapter": 8
+    },
+    {
+      "start": 552.1833848286291,
+      "end": 552.3080002288945,
+      "text": "in",
+      "chapter": 8
+    },
+    {
+      "start": 552.3080002288945,
+      "end": 556.0079990844853,
+      "text": "the denominator, on either interval where absolute x is greater than a.",
+      "chapter": 8
+    },
+    {
+      "start": 557.0480000000126,
+      "end": 560.1080013733036,
+      "text": "Differentiate on the chosen interval to check the sign and domain.",
+      "chapter": 8
+    },
+    {
+      "start": 560.8880001526005,
+      "end": 563.3679996948368,
+      "text": "A numerator proportional to the inner derivative is simpler.",
+      "chapter": 8
+    },
+    {
+      "start": 564.0079990844853,
+      "end": 568.3679996948368,
+      "text": "The integral of x divided by square root of x squared plus four is just square",
+      "chapter": 8
+    },
+    {
+      "start": 568.3679996948368,
+      "end": 570.4879986267216,
+      "text": "root of x squared plus four, plus C.",
+      "chapter": 8
+    },
+    {
+      "start": 570.9080006103642,
+      "end": 575.0041528426076,
+      "text": "A linear numerator can be split into a multiple of the quadratic derivative",
+      "chapter": 8
+    },
+    {
+      "start": 575.0041528426076,
+      "end": 575.1679989318974,
+      "text": "and",
+      "chapter": 8
+    },
+    {
+      "start": 575.1679989318974,
+      "end": 576.0480000000126,
+      "text": "a constant remainder.",
+      "chapter": 8
+    },
+    {
+      "start": 576.0480000000126,
+      "end": 580.2880016784794,
+      "text": "After completing the square, the remainder matches one of these reciprocal",
+      "chapter": 8
+    },
+    {
+      "start": 580.2880016784794,
+      "end": 581.7480007629521,
+      "text": "radical families.",
+      "chapter": 8
+    },
+    {
+      "start": 582.1479984741337,
+      "end": 585.9080006103642,
+      "text": "Endpoint values of an inverse function do not imply the reciprocal radical",
+      "chapter": 8
+    },
+    {
+      "start": 585.9080006103642,
+      "end": 587.7280003051884,
+      "text": "integrand is defined at those endpoints.",
+      "chapter": 8
+    },
+    {
+      "start": 588.1680000000142,
+      "end": 592.7079999618672,
+      "text": "A square root in the numerator may need a trigonometric substitution rather",
+      "chapter": 9
+    },
+    {
+      "start": 592.7079999618672,
+      "end": 594.9480002098226,
+      "text": "than a direct inverse function formula.",
+      "chapter": 9
+    },
+    {
+      "start": 595.5080001526021,
+      "end": 601.2879998855733,
+      "text": "For square root of a squared minus x squared, set x equal to a sine theta on a",
+      "chapter": 9
+    },
+    {
+      "start": 601.2879998855733,
+      "end": 602.84800030519,
+      "text": "range where cosine theta is positive.",
+      "chapter": 9
+    },
+    {
+      "start": 603.3279998474263,
+      "end": 608.3279998474263,
+      "text": "Then the square root is a cosine theta, d x is a cosine theta d theta, and the",
+      "chapter": 9
+    },
+    {
+      "start": 608.3279998474263,
+      "end": 611.6680000000142,
+      "text": "integral becomes a squared times the integral of cosine squared theta.",
+      "chapter": 9
+    },
+    {
+      "start": 611.8879993133687,
+      "end": 614.5280006103658,
+      "text": "A half angle identity integrates that expression.",
+      "chapter": 9
+    },
+    {
+      "start": 615.3279998474263,
+      "end": 619.3879993133687,
+      "text": "Returning to x gives one half of x times square root of a squared minus x",
+      "chapter": 9
+    },
+    {
+      "start": 619.3879993133687,
+      "end": 622.5879981689595,
+      "text": "squared, plus a squared arcsine of x over a.",
+      "chapter": 9
+    },
+    {
+      "start": 623.2080009155416,
+      "end": 625.84800030519,
+      "text": "The inverse branch is chosen consistently with the substitution.",
+      "chapter": 9
+    },
+    {
+      "start": 626.8079993896627,
+      "end": 631.3079993896627,
+      "text": "For square root of x squared plus a squared, the answer is one half of x times",
+      "chapter": 9
+    },
+    {
+      "start": 631.3079993896627,
+      "end": 636.361659991767,
+      "text": "the radical plus a squared natural log of the absolute value of x plus the",
+      "chapter": 9
+    },
+    {
+      "start": 636.361659991767,
+      "end": 636.908001678481,
+      "text": "radical.",
+      "chapter": 9
+    },
+    {
+      "start": 637.3079993896627,
+      "end": 641.6680000000142,
+      "text": "For square root of x squared minus a squared, replace that plus logarithmic",
+      "chapter": 9
+    },
+    {
+      "start": 641.6680000000142,
+      "end": 643.6680000000142,
+      "text": "term by a minus logarithmic term.",
+      "chapter": 9
+    },
+    {
+      "start": 644.2780006103658,
+      "end": 647.0080001526021,
+      "text": "These formulas hold on the appropriate open real intervals.",
+      "chapter": 9
+    },
+    {
+      "start": 648.0080001526021,
+      "end": 651.3279998474263,
+      "text": "Verify by differentiation instead of assuming that the signs of the two",
+      "chapter": 9
+    },
+    {
+      "start": 651.3279998474263,
+      "end": 652.9280021362447,
+      "text": "logarithmic terms are interchangeable.",
+      "chapter": 9
+    },
+    {
+      "start": 653.8800000000158,
+      "end": 658.6600002098241,
+      "text": "A trigonometric integrand may not match the derivative table until an identity",
+      "chapter": 10
+    },
+    {
+      "start": 658.6600002098241,
+      "end": 659.5999997902074,
+      "text": "changes its form.",
+      "chapter": 10
+    },
+    {
+      "start": 660.2400001335302,
+      "end": 664.739999656693,
+      "text": "The integral of sine squared x is not sine cubed x divided by three, because",
+      "chapter": 10
+    },
+    {
+      "start": 664.739999656693,
+      "end": 667.9000004577795,
+      "text": "the power rule alone ignores the derivative of sine x.",
+      "chapter": 10
+    },
+    {
+      "start": 668.619999771134,
+      "end": 673.4399994659582,
+      "text": "Instead use sine squared x equal to one half of one minus cosine two x.",
+      "chapter": 10
+    },
+    {
+      "start": 673.4399994659582,
+      "end": 677.5199993896642,
+      "text": "Integration gives x over two minus sine two x over four, plus C.",
+      "chapter": 10
+    },
+    {
+      "start": 678.2799996185461,
+      "end": 682.5199993896642,
+      "text": "Cosine squared x gives x over two plus sine two x over four, plus C.",
+      "chapter": 10
+    },
+    {
+      "start": 683.1799992370763,
+      "end": 686.9000004577795,
+      "text": "Differentiating the oscillating term introduces a factor two, which explains",
+      "chapter": 10
+    },
+    {
+      "start": 686.9000004577795,
+      "end": 687.9799984741369,
+      "text": "the denominator four.",
+      "chapter": 10
+    },
+    {
+      "start": 688.6000012207189,
+      "end": 693.2200001526037,
+      "text": "The product sine x cosine x can be handled by substitution u equal to sine x,",
+      "chapter": 10
+    },
+    {
+      "start": 693.69999969484,
+      "end": 695.9400013733068,
+      "text": "giving one half sine squared x plus C.",
+      "chapter": 10
+    },
+    {
+      "start": 696.4400013733068,
+      "end": 699.7200001526037,
+      "text": "Product to sum identities offer another route and produce an equivalent",
+      "chapter": 10
+    },
+    {
+      "start": 699.7200001526037,
+      "end": 701.5600003051916,
+      "text": "antiderivative up to a constant.",
+      "chapter": 10
+    },
+    {
+      "start": 702.260001068131,
+      "end": 706.2200001526037,
+      "text": "For higher powers, preserve a suitable sine or cosine factor when its",
+      "chapter": 10
+    },
+    {
+      "start": 706.2200001526037,
+      "end": 709.4999989319006,
+      "text": "differential is useful, and transform the remaining even powers.",
+      "chapter": 10
+    },
+    {
+      "start": 709.4999989319006,
+      "end": 711.8800000000158,
+      "text": "Do not multiply separate antiderivatives.",
+      "chapter": 10
+    },
+    {
+      "start": 712.5399998474279,
+      "end": 714.19999969484,
+      "text": "An identity rewrites the integrand.",
+      "chapter": 10
+    },
+    {
+      "start": 714.8199986267248,
+      "end": 718.4399975586095,
+      "text": "In substitution, change both the expression and the differential together.",
+      "chapter": 10
+    },
+    {
+      "start": 718.6800000000173,
+      "end": 722.5399998951132,
+      "text": "A definite integral describes signed accumulation over an interval.",
+      "chapter": 11
+    },
+    {
+      "start": 723.4199997711355,
+      "end": 726.399999790209,
+      "text": "For a continuous function, divide the interval into small subintervals,",
+      "chapter": 11
+    },
+    {
+      "start": 727.3600003051931,
+      "end": 731.200000457781,
+      "text": "multiply a sampled function value by each width, and take the limit of the sum",
+      "chapter": 11
+    },
+    {
+      "start": 731.200000457781,
+      "end": 733.2599999237234,
+      "text": "as the largest width tends to zero.",
+      "chapter": 11
+    },
+    {
+      "start": 734.0399996566946,
+      "end": 738.8399998474295,
+      "text": "For x squared from zero to one, use n equal pieces of width one over n and",
+      "chapter": 11
+    },
+    {
+      "start": 738.8399998474295,
+      "end": 740.3000008392507,
+      "text": "right endpoints k over n.",
+      "chapter": 11
+    },
+    {
+      "start": 740.8399998474295,
+      "end": 745.3000008392507,
+      "text": "The resulting sum is one over n cubed times the sum of k squared from one",
+      "chapter": 11
+    },
+    {
+      "start": 745.3000008392507,
+      "end": 745.8000008392507,
+      "text": "through n.",
+      "chapter": 11
+    },
+    {
+      "start": 746.6599995422537,
+      "end": 751.2400013733084,
+      "text": "Using the sum of squares formula, this is n times n plus one times two n plus",
+      "chapter": 11
+    },
+    {
+      "start": 751.2400013733084,
+      "end": 753.2200009155447,
+      "text": "one, divided by six n cubed.",
+      "chapter": 11
+    },
+    {
+      "start": 753.7400013733084,
+      "end": 754.9000012207205,
+      "text": "Its limit is one third.",
+      "chapter": 11
+    },
+    {
+      "start": 755.6599995422537,
+      "end": 759.200000457781,
+      "text": "This calculation defines the integral without assuming an antiderivative",
+      "chapter": 11
+    },
+    {
+      "start": 759.200000457781,
+      "end": 760.260001831072,
+      "text": "evaluation first.",
+      "chapter": 11
+    },
+    {
+      "start": 760.9799992370779,
+      "end": 765.0600010681326,
+      "text": "For a continuous nonnegative function, this accumulation is area under the",
+      "chapter": 11
+    },
+    {
+      "start": 765.0600010681326,
+      "end": 765.4599987793142,
+      "text": "curve.",
+      "chapter": 11
+    },
+    {
+      "start": 765.700000457781,
+      "end": 769.5400006103689,
+      "text": "Negative values contribute negative accumulation, so a definite integral need",
+      "chapter": 11
+    },
+    {
+      "start": 769.5400006103689,
+      "end": 771.1199986267263,
+      "text": "not equal total geometric area.",
+      "chapter": 11
+    },
+    {
+      "start": 771.8199993896658,
+      "end": 775.63999908449,
+      "text": "A finite rectangle sum is an approximation, while the limit is the integral.",
+      "chapter": 11
+    },
+    {
+      "start": 776.4999996948416,
+      "end": 780.8600003051931,
+      "text": "The integration variable is a dummy variable: replacing x by t consistently",
+      "chapter": 11
+    },
+    {
+      "start": 780.8600003051931,
+      "end": 783.1800000000173,
+      "text": "leaves the value of a definite integral unchanged.",
+      "chapter": 11
+    },
+    {
+      "start": 783.7440000000189,
+      "end": 787.0665639661343,
+      "text": "The Fundamental Theorem of Calculus connects accumulation with",
+      "chapter": 12
+    },
+    {
+      "start": 787.0665639661343,
+      "end": 787.9239998283575,
+      "text": "differentiation.",
+      "chapter": 12
+    },
+    {
+      "start": 788.7440000000189,
+      "end": 793.5040002289007,
+      "text": "If f is continuous on an interval, the function formed by integrating f from a",
+      "chapter": 12
+    },
+    {
+      "start": 793.5040002289007,
+      "end": 796.2640004577826,
+      "text": "fixed starting point to x has derivative f of x.",
+      "chapter": 12
+    },
+    {
+      "start": 797.0040002289007,
+      "end": 801.1040006103705,
+      "text": "Write capital F for an antiderivative of lowercase f on the whole integration",
+      "chapter": 12
+    },
+    {
+      "start": 801.1040006103705,
+      "end": 801.5040002289007,
+      "text": "interval.",
+      "chapter": 12
+    },
+    {
+      "start": 802.1840005340765,
+      "end": 807.2039990844916,
+      "text": "The definite integral from a to b equals capital F evaluated at b, minus",
+      "chapter": 12
+    },
+    {
+      "start": 807.2039990844916,
+      "end": 808.823999923725,
+      "text": "capital F evaluated at a.",
+      "chapter": 12
+    },
+    {
+      "start": 809.2840009155462,
+      "end": 814.6439996185492,
+      "text": "For three x squared from zero to two, use x cubed, obtaining eight minus zero,",
+      "chapter": 12
+    },
+    {
+      "start": 814.8039994659613,
+      "end": 815.323999923725,
+      "text": "or eight.",
+      "chapter": 12
+    },
+    {
+      "start": 816.0639996948431,
+      "end": 820.0239987793158,
+      "text": "The integration constant cancels in the endpoint subtraction, so no arbitrary",
+      "chapter": 12
+    },
+    {
+      "start": 820.0239987793158,
+      "end": 822.5639996948431,
+      "text": "plus C belongs in the final numerical answer.",
+      "chapter": 12
+    },
+    {
+      "start": 823.4840016784857,
+      "end": 825.7039990844916,
+      "text": "A variable upper limit needs the chain rule.",
+      "chapter": 12
+    },
+    {
+      "start": 826.4840016784857,
+      "end": 830.439896735577,
+      "text": "Differentiating the integral of cosine t from zero to x squared gives cosine",
+      "chapter": 12
+    },
+    {
+      "start": 830.439896735577,
+      "end": 830.5439992370794,
+      "text": "of",
+      "chapter": 12
+    },
+    {
+      "start": 830.5439992370794,
+      "end": 832.6440015258978,
+      "text": "x squared times two x.",
+      "chapter": 12
+    },
+    {
+      "start": 832.6440015258978,
+      "end": 835.2239995422552,
+      "text": "A variable lower limit introduces a minus sign.",
+      "chapter": 12
+    },
+    {
+      "start": 835.6740003051947,
+      "end": 840.2039990844916,
+      "text": "With both limits variable, differentiate the upper endpoint contribution and",
+      "chapter": 12
+    },
+    {
+      "start": 840.2039990844916,
+      "end": 841.964001220722,
+      "text": "subtract the lower endpoint contribution.",
+      "chapter": 12
+    },
+    {
+      "start": 842.7440000000189,
+      "end": 845.34399847414,
+      "text": "These statements require the relevant continuity conditions.",
+      "chapter": 12
+    },
+    {
+      "start": 845.9440007629584,
+      "end": 849.0639996948431,
+      "text": "They do not license endpoint substitution across an interior pole.",
+      "chapter": 12
+    },
+    {
+      "start": 850.2639966430853,
+      "end": 853.6055376399303,
+      "text": "Establish that the original integrand is integrable on the full interval",
+      "chapter": 12
+    },
+    {
+      "start": 853.6055376399303,
+      "end": 853.8839993896673,
+      "text": "before",
+      "chapter": 12
+    },
+    {
+      "start": 853.8839993896673,
+      "end": 856.1639981689642,
+      "text": "applying the ordinary endpoint evaluation rule.",
+      "chapter": 12
+    },
+    {
+      "start": 856.3440000000207,
+      "end": 860.6432308873605,
+      "text": "Definite integrals satisfy linearity and interval additivity when the",
+      "chapter": 13
+    },
+    {
+      "start": 860.6432308873605,
+      "end": 861.2040001335351,
+      "text": "functions",
+      "chapter": 13
+    },
+    {
+      "start": 861.2040001335351,
+      "end": 863.1440001907556,
+      "text": "are integrable on the stated intervals.",
+      "chapter": 13
+    },
+    {
+      "start": 864.1440001907556,
+      "end": 867.8640004577844,
+      "text": "Reversing the limits changes the sign, and equal limits give zero.",
+      "chapter": 13
+    },
+    {
+      "start": 868.8040000381677,
+      "end": 873.2239991607873,
+      "text": "Splitting at a point c lets the integral from a to b equal the sum from a to c",
+      "chapter": 13
+    },
+    {
+      "start": 873.2239991607873,
+      "end": 874.3840009155481,
+      "text": "and c to b.",
+      "chapter": 13
+    },
+    {
+      "start": 874.8640004577844,
+      "end": 879.8840009155481,
+      "text": "For a less than b and a nonnegative function, the integral is nonnegative.",
+      "chapter": 13
+    },
+    {
+      "start": 879.8840009155481,
+      "end": 883.6060519002486,
+      "text": "If one function stays above another throughout the interval, its integral is",
+      "chapter": 13
+    },
+    {
+      "start": 883.6060519002486,
+      "end": 883.7040006103723,
+      "text": "at",
+      "chapter": 13
+    },
+    {
+      "start": 883.7040006103723,
+      "end": 884.5240003051965,
+      "text": "least as large.",
+      "chapter": 13
+    },
+    {
+      "start": 885.163999694845,
+      "end": 889.603998321554,
+      "text": "These facts help check answers and estimate sizes before calculating an",
+      "chapter": 13
+    },
+    {
+      "start": 889.603998321554,
+      "end": 890.1239987793176,
+      "text": "antiderivative.",
+      "chapter": 13
+    },
+    {
+      "start": 890.7839986267297,
+      "end": 895.163999694845,
+      "text": "For example, one plus x squared lies between one and two on zero through one,",
+      "chapter": 13
+    },
+    {
+      "start": 895.663999694845,
+      "end": 899.9839993896692,
+      "text": "so its integral lies between one and two; direct evaluation gives four thirds.",
+      "chapter": 13
+    },
+    {
+      "start": 900.7040006103723,
+      "end": 902.7440015258996,
+      "text": "The interval direction matters in inequalities.",
+      "chapter": 13
+    },
+    {
+      "start": 903.8840009155481,
+      "end": 908.3440000000207,
+      "text": "Domain restrictions also matter: one over x squared has an interior pole on",
+      "chapter": 13
+    },
+    {
+      "start": 908.3440000000207,
+      "end": 909.5240003051965,
+      "text": "negative one through one.",
+      "chapter": 13
+    },
+    {
+      "start": 909.5240003051965,
+      "end": 913.9439984741418,
+      "text": "Substituting endpoints into negative one over x would misleadingly give",
+      "chapter": 13
+    },
+    {
+      "start": 913.9439984741418,
+      "end": 916.5039998474329,
+      "text": "negative two, despite a positive integrand.",
+      "chapter": 13
+    },
+    {
+      "start": 917.2839986267297,
+      "end": 921.284002441427,
+      "text": "The ordinary definite integral is not defined there; its improper integral",
+      "chapter": 13
+    },
+    {
+      "start": 921.284002441427,
+      "end": 921.9039975586145,
+      "text": "diverges.",
+      "chapter": 13
+    },
+    {
+      "start": 922.8440000000207,
+      "end": 926.7239972534387,
+      "text": "Always inspect the entire interval, not only the two endpoint values.",
+      "chapter": 13
+    },
+    {
+      "start": 927.0000000000225,
+      "end": 931.3400001526104,
+      "text": "A substitution in a definite integral changes the variable, the differential",
+      "chapter": 14
+    },
+    {
+      "start": 931.6199998855816,
+      "end": 932.8800001144634,
+      "text": "and the bounds together.",
+      "chapter": 14
+    },
+    {
+      "start": 933.8400001526104,
+      "end": 938.8599996566998,
+      "text": "For two x times e to the x squared from zero to one, set u equal to x squared.",
+      "chapter": 14
+    },
+    {
+      "start": 939.7799997329937,
+      "end": 943.639999389671,
+      "text": "The differential is d u equal to two x d x.",
+      "chapter": 14
+    },
+    {
+      "start": 943.639999389671,
+      "end": 948.3799991607891,
+      "text": "The old lower bound zero gives u equal to zero, and the old upper bound one",
+      "chapter": 14
+    },
+    {
+      "start": 948.3799991607891,
+      "end": 949.719999313377,
+      "text": "gives u equal to one.",
+      "chapter": 14
+    },
+    {
+      "start": 950.7600002289043,
+      "end": 953.8600006103741,
+      "text": "Integrating e to the u on those bounds gives e minus one.",
+      "chapter": 14
+    },
+    {
+      "start": 954.6200008392559,
+      "end": 959.3199996948467,
+      "text": "For two x divided by one plus x squared on the same interval, instead choose u",
+      "chapter": 14
+    },
+    {
+      "start": 959.3199996948467,
+      "end": 960.7999992370831,
+      "text": "equal to one plus x squared.",
+      "chapter": 14
+    },
+    {
+      "start": 961.5999984741436,
+      "end": 963.1599998474346,
+      "text": "The new bounds are one and two.",
+      "chapter": 14
+    },
+    {
+      "start": 964.0400009155499,
+      "end": 965.7599983215557,
+      "text": "The result is natural log two.",
+      "chapter": 14
+    },
+    {
+      "start": 966.9000015259014,
+      "end": 970.2999992370831,
+      "text": "Leaving the old bounds zero and one on that logarithmic integral would be",
+      "chapter": 14
+    },
+    {
+      "start": 970.2999992370831,
+      "end": 973.2999992370831,
+      "text": "incorrect and would even introduce an artificial singularity.",
+      "chapter": 14
+    },
+    {
+      "start": 973.9000015259014,
+      "end": 978.1800003051983,
+      "text": "Another valid approach finds an antiderivative in x and then uses the original",
+      "chapter": 14
+    },
+    {
+      "start": 978.1800003051983,
+      "end": 978.7799987793194,
+      "text": "x bounds.",
+      "chapter": 14
+    },
+    {
+      "start": 979.5999984741436,
+      "end": 981.6199989319073,
+      "text": "Do not mix the two approaches halfway through.",
+      "chapter": 14
+    },
+    {
+      "start": 982.0999984741436,
+      "end": 986.465383969843,
+      "text": "If a substitution reverses endpoint order, the transformed differential and",
+      "chapter": 14
+    },
+    {
+      "start": 986.465383969843,
+      "end": 986.639999389671,
+      "text": "the",
+      "chapter": 14
+    },
+    {
+      "start": 986.639999389671,
+      "end": 988.4399986267315,
+      "text": "oriented bounds together handle the sign.",
+      "chapter": 14
+    },
+    {
+      "start": 989.4599990844952,
+      "end": 992.7799987793194,
+      "text": "Check the transformation on the full interval and keep any original domain",
+      "chapter": 14
+    },
+    {
+      "start": 992.7799987793194,
+      "end": 993.3600006103741,
+      "text": "exclusions.",
+      "chapter": 14
+    },
+    {
+      "start": 993.7200000000241,
+      "end": 996.7200000000241,
+      "text": "Reflection gives a useful definite integral identity.",
+      "chapter": 15
+    },
+    {
+      "start": 997.6400000763181,
+      "end": 1002.2200000000241,
+      "text": "Replacing x by a plus b minus t reverses the interval, and the negative",
+      "chapter": 15
+    },
+    {
+      "start": 1002.2200000000241,
+      "end": 1004.3399998855832,
+      "text": "differential restores the original order.",
+      "chapter": 15
+    },
+    {
+      "start": 1005.2599999618772,
+      "end": 1009.6800000381711,
+      "text": "Thus the integral of f of x from a to b equals the integral of f of a plus b",
+      "chapter": 15
+    },
+    {
+      "start": 1009.6800000381711,
+      "end": 1011.6799990844968,
+      "text": "minus x over the same bounds.",
+      "chapter": 15
+    },
+    {
+      "start": 1012.1199996185544,
+      "end": 1016.9528210977649,
+      "text": "On a symmetric interval, an integrable odd function has integral zero, while",
+      "chapter": 15
+    },
+    {
+      "start": 1016.9528210977649,
+      "end": 1017.0800006103757,
+      "text": "an",
+      "chapter": 15
+    },
+    {
+      "start": 1017.0800006103757,
+      "end": 1020.5399996948483,
+      "text": "integrable even function gives twice its integral over the positive half.",
+      "chapter": 15
+    },
+    {
+      "start": 1021.480000228906,
+      "end": 1025.9400012207273,
+      "text": "Integrability is essential: odd appearance cannot cancel an undefined ordinary",
+      "chapter": 15
+    },
+    {
+      "start": 1025.9400012207273,
+      "end": 1027.0800006103757,
+      "text": "integral across a pole.",
+      "chapter": 15
+    },
+    {
+      "start": 1027.960001678491,
+      "end": 1032.6656418355547,
+      "text": "As a reflection example, let I be the integral of sine x divided by sine x",
+      "chapter": 15
+    },
+    {
+      "start": 1032.6656418355547,
+      "end": 1032.9200007629636,
+      "text": "plus",
+      "chapter": 15
+    },
+    {
+      "start": 1032.9200007629636,
+      "end": 1035.1000010681394,
+      "text": "cosine x from zero to pi over two.",
+      "chapter": 15
+    },
+    {
+      "start": 1036.1799990844968,
+      "end": 1040.1799990844968,
+      "text": "Reflection interchanges sine and cosine, producing another expression for I",
+      "chapter": 15
+    },
+    {
+      "start": 1040.1799990844968,
+      "end": 1042.9799983215573,
+      "text": "with cosine in the numerator and the same denominator.",
+      "chapter": 15
+    },
+    {
+      "start": 1044.120001525903,
+      "end": 1047.5800006103757,
+      "text": "Adding the two expressions gives two I equal to the interval length pi over",
+      "chapter": 15
+    },
+    {
+      "start": 1047.5800006103757,
+      "end": 1047.839998931909,
+      "text": "two.",
+      "chapter": 15
+    },
+    {
+      "start": 1048.5399996948483,
+      "end": 1050.560000152612,
+      "text": "Therefore I equals pi over four.",
+      "chapter": 15
+    },
+    {
+      "start": 1051.120001525903,
+      "end": 1053.8799998474362,
+      "text": "The denominator stays positive throughout this interval.",
+      "chapter": 15
+    },
+    {
+      "start": 1054.620001525903,
+      "end": 1057.9800021362546,
+      "text": "Symmetry can remove much of the algebra, but only after checking the interval,",
+      "chapter": 15
+    },
+    {
+      "start": 1058.4599978637937,
+      "end": 1060.8800036621335,
+      "text": "the transformed expression and the denominator conditions.",
+      "chapter": 15
+    },
+    {
+      "start": 1061.376000000026,
+      "end": 1066.415999961879,
+      "text": "Geometric area is nonnegative, while a definite integral records sign.",
+      "chapter": 16
+    },
+    {
+      "start": 1066.415999961879,
+      "end": 1070.615999771144,
+      "text": "For y equal to x from negative one to one, odd symmetry makes the signed",
+      "chapter": 16
+    },
+    {
+      "start": 1070.615999771144,
+      "end": 1071.3360000381729,
+      "text": "integral zero.",
+      "chapter": 16
+    },
+    {
+      "start": 1071.995999885585,
+      "end": 1074.5560003052017,
+      "text": "The two triangular regions have total area one.",
+      "chapter": 16
+    },
+    {
+      "start": 1075.3159995804092,
+      "end": 1079.8559995422622,
+      "text": "To obtain that area by integration, split at zero and integrate negative x on",
+      "chapter": 16
+    },
+    {
+      "start": 1079.8559995422622,
+      "end": 1082.8160005340835,
+      "text": "the negative half, then positive x on the positive half.",
+      "chapter": 16
+    },
+    {
+      "start": 1083.3160005340835,
+      "end": 1087.6959996948501,
+      "text": "For the area between two curves, find their intersection points and decide",
+      "chapter": 16
+    },
+    {
+      "start": 1087.6959996948501,
+      "end": 1090.2759996185562,
+      "text": "which graph is above the other on every part of the interval.",
+      "chapter": 16
+    },
+    {
+      "start": 1091.4359994659683,
+      "end": 1095.635998321559,
+      "text": "The curves y equal to x and y equal to x squared meet at zero and one.",
+      "chapter": 16
+    },
+    {
+      "start": 1096.3359990844986,
+      "end": 1099.135998321559,
+      "text": "On the interval between them, x is at least x squared.",
+      "chapter": 16
+    },
+    {
+      "start": 1099.7160001526138,
+      "end": 1103.9160009155532,
+      "text": "The enclosed area is the integral of x minus x squared from zero to one, equal",
+      "chapter": 16
+    },
+    {
+      "start": 1103.9160009155532,
+      "end": 1106.5560003052017,
+      "text": "to one half minus one third, or one sixth.",
+      "chapter": 16
+    },
+    {
+      "start": 1107.1959996948501,
+      "end": 1110.635998321559,
+      "text": "If the graphs exchange order, split again at the exchange points.",
+      "chapter": 16
+    },
+    {
+      "start": 1111.635998321559,
+      "end": 1114.9560018310806,
+      "text": "Taking the absolute value of a final signed integral is not generally enough,",
+      "chapter": 16
+    },
+    {
+      "start": 1115.4160009155532,
+      "end": 1118.1559987793228,
+      "text": "because positive and negative pieces may already have cancelled.",
+      "chapter": 16
+    },
+    {
+      "start": 1119.3960004577896,
+      "end": 1123.135998321559,
+      "text": "A sketch helps establish the correct region and the boundaries before any",
+      "chapter": 16
+    },
+    {
+      "start": 1123.135998321559,
+      "end": 1124.2160001526138,
+      "text": "antiderivative calculation.",
+      "chapter": 16
+    },
+    {
+      "start": 1124.6880000000274,
+      "end": 1127.4080000286376,
+      "text": "Area integrals also apply to standard curves.",
+      "chapter": 17
+    },
+    {
+      "start": 1128.0880000953948,
+      "end": 1132.5280001526153,
+      "text": "A circle of radius r has upper boundary square root of r squared minus x",
+      "chapter": 17
+    },
+    {
+      "start": 1132.5280001526153,
+      "end": 1132.788000381497,
+      "text": "squared.",
+      "chapter": 17
+    },
+    {
+      "start": 1133.748000419644,
+      "end": 1138.7456919776016,
+      "text": "Four times its first quadrant integral from zero to r gives pi r squared,",
+      "chapter": 17
+    },
+    {
+      "start": 1138.7456919776016,
+      "end": 1139.0879996185577,
+      "text": "using",
+      "chapter": 17
+    },
+    {
+      "start": 1139.0879996185577,
+      "end": 1142.3880007629668,
+      "text": "the square root antiderivative or a trigonometric substitution.",
+      "chapter": 17
+    },
+    {
+      "start": 1143.1479990845,
+      "end": 1148.2679999237334,
+      "text": "For an ellipse x squared over a squared plus y squared over b squared equal to",
+      "chapter": 17
+    },
+    {
+      "start": 1148.2679999237334,
+      "end": 1153.4279997711456,
+      "text": "one, the first quadrant boundary is b times square root of one minus x squared",
+      "chapter": 17
+    },
+    {
+      "start": 1153.4279997711456,
+      "end": 1154.2679999237334,
+      "text": "over a squared.",
+      "chapter": 17
+    },
+    {
+      "start": 1155.487999237088,
+      "end": 1157.1880000000274,
+      "text": "Substitute x equal to a sine theta.",
+      "chapter": 17
+    },
+    {
+      "start": 1157.708000457791,
+      "end": 1160.7480013733184,
+      "text": "Four times the resulting quarter area gives pi a b.",
+      "chapter": 17
+    },
+    {
+      "start": 1161.3680003052032,
+      "end": 1165.9080012207305,
+      "text": "The positive parameters a and b are semiaxes, rather than full axis lengths.",
+      "chapter": 17
+    },
+    {
+      "start": 1166.548000610379,
+      "end": 1170.1479990845,
+      "text": "A parabola needs additional boundaries to enclose a finite region.",
+      "chapter": 17
+    },
+    {
+      "start": 1170.1479990845,
+      "end": 1174.3479998474395,
+      "text": "For the upper branch of y squared equal to four a x with a positive, take x",
+      "chapter": 17
+    },
+    {
+      "start": 1174.3479998474395,
+      "end": 1176.3880007629668,
+      "text": "from zero to a and the x axis below.",
+      "chapter": 17
+    },
+    {
+      "start": 1176.9479983215606,
+      "end": 1180.6079981689727,
+      "text": "Integrating two square root of a x gives four a squared over three.",
+      "chapter": 17
+    },
+    {
+      "start": 1181.2480013733184,
+      "end": 1183.7280009155547,
+      "text": "Including the reflected lower region would double that answer.",
+      "chapter": 17
+    },
+    {
+      "start": 1184.6479990845,
+      "end": 1189.0880015259063,
+      "text": "Always specify the branch and closing lines: naming a curve alone does not",
+      "chapter": 17
+    },
+    {
+      "start": 1189.0880015259063,
+      "end": 1190.5679972534454,
+      "text": "determine a unique finite area.",
+      "chapter": 17
+    }
+  ]
+}

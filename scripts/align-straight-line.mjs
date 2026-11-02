@@ -79,6 +79,7 @@ targets['binomial-theorem']='binomial-theorem';
 targets['sequences-series']='sequences-series';
 targets['trigonometry']='trigonometry';
 targets['limits-continuity-differentiability']='limits-continuity-differentiability';
+targets['integral-calculus']='integral-calculus';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const folder = path.join(root, 'public/lectures', selected);
