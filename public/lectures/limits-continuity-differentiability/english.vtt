@@ -1,0 +1,1063 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.302
+Calculus studies how functions behave near inputs, so determine the real
+
+00:00:04.302 --> 00:00:04.660
+domain
+
+00:00:04.660 --> 00:00:05.200
+first.
+
+00:00:05.780 --> 00:00:07.880
+A polynomial accepts every real input.
+
+00:00:08.360 --> 00:00:11.020
+A rational function excludes zeros of its denominator.
+
+00:00:11.480 --> 00:00:15.980
+A real square root requires a nonnegative argument, while a natural logarithm
+
+00:00:15.980 --> 00:00:17.780
+requires a strictly positive argument.
+
+00:00:18.520 --> 00:00:23.212
+For the quotient whose numerator is natural log of the quantity x minus one
+
+00:00:23.212 --> 00:00:23.400
+and
+
+00:00:23.400 --> 00:00:28.120
+whose denominator is x minus two, require x greater than one and exclude two.
+
+00:00:28.360 --> 00:00:30.020
+The two conditions apply together.
+
+00:00:31.120 --> 00:00:34.352
+Function sums and products use the common input domain; a quotient
+
+00:00:34.352 --> 00:00:34.940
+additionally
+
+00:00:34.940 --> 00:00:36.380
+excludes denominator zeros.
+
+00:00:37.200 --> 00:00:40.280
+A composition requires the inner output to belong to the outer domain.
+
+00:00:41.280 --> 00:00:42.880
+Simple graphs provide useful checks.
+
+00:00:43.460 --> 00:00:46.140
+The square function is a parabola with nonnegative range.
+
+00:00:46.700 --> 00:00:49.580
+The reciprocal function has separate branches and excludes zero.
+
+00:00:50.260 --> 00:00:54.780
+The exponential e to the x is positive for every real x and has range all
+
+00:00:54.780 --> 00:00:55.540
+positive reals.
+
+00:00:56.000 --> 00:01:00.880
+Its inverse, natural log x, accepts positive inputs and has every real number
+
+00:01:00.880 --> 00:01:01.960
+as a possible output.
+
+00:01:02.840 --> 00:01:03.560
+Both are increasing.
+
+00:01:04.380 --> 00:01:07.640
+Horizontal translations move excluded inputs as well as the visible graph.
+
+00:01:08.500 --> 00:01:11.520
+Keep these restrictions through algebraic simplification and differentiation.
+
+00:01:12.340 --> 00:01:16.360
+A derivative formula at an input outside the original function's domain does
+
+00:01:16.360 --> 00:01:18.760
+not create a new valid point of that original function.
+
+00:01:18.912 --> 00:01:23.332
+A limit describes values of a function as the input approaches a point through
+
+00:01:23.332 --> 00:01:24.812
+nearby allowed inputs.
+
+00:01:25.852 --> 00:01:28.732
+It does not require the function to be defined at the point itself.
+
+00:01:29.592 --> 00:01:34.552
+For x squared minus four divided by x minus two, the expression equals x plus
+
+00:01:34.552 --> 00:01:36.432
+two whenever x is not two.
+
+00:01:37.172 --> 00:01:40.852
+As x approaches two from either side, the output approaches four.
+
+00:01:41.092 --> 00:01:45.952
+The original expression still excludes x equal to two, so a limit value is not
+
+00:01:45.952 --> 00:01:47.232
+an automatic point value.
+
+00:01:47.812 --> 00:01:51.572
+Left and right limits inspect approaches from smaller and larger inputs.
+
+00:01:52.232 --> 00:01:56.212
+A two sided finite limit exists only when both approaches give the same finite
+
+00:01:56.212 --> 00:01:56.532
+number.
+
+00:01:57.332 --> 00:02:02.152
+For x divided by absolute value of x near zero, the right hand values are one
+
+00:02:02.592 --> 00:02:04.472
+and the left hand values are negative one.
+
+00:02:05.032 --> 00:02:07.192
+The two sided limit therefore does not exist.
+
+00:02:08.012 --> 00:02:12.032
+Defining any value at zero would not repair that jump in nearby behaviour.
+
+00:02:12.032 --> 00:02:16.432
+Tables and graphs suggest limits but a finite collection of samples is not a
+
+00:02:16.432 --> 00:02:17.092
+complete proof.
+
+00:02:17.932 --> 00:02:21.472
+Algebra and standard limit laws justify the conclusions in the examples here.
+
+00:02:22.252 --> 00:02:26.392
+An infinite limit describes unbounded behaviour rather than an ordinary real
+
+00:02:26.392 --> 00:02:28.072
+output assigned at a singular input.
+
+00:02:28.320 --> 00:02:32.212
+Direct substitution evaluates many limits of continuous elementary
+
+00:02:32.212 --> 00:02:32.920
+expressions,
+
+00:02:33.480 --> 00:02:36.500
+but zero divided by zero does not determine a value.
+
+00:02:37.520 --> 00:02:41.280
+Factor common terms or use a conjugate while keeping the original exclusions.
+
+00:02:42.240 --> 00:02:46.880
+For the quantity square root of one plus x, minus one, all divided by x,
+
+00:02:47.480 --> 00:02:50.220
+substitution at zero gives this indeterminate form.
+
+00:02:51.300 --> 00:02:55.040
+Multiply numerator and denominator by the quantity square root of one plus x,
+
+00:02:55.040 --> 00:02:55.780
+plus one.
+
+00:02:56.220 --> 00:02:57.940
+The numerator becomes x.
+
+00:02:58.680 --> 00:03:03.240
+For nonzero x near zero, cancellation gives one divided by square root of one
+
+00:03:03.240 --> 00:03:06.220
+plus x plus one, whose limit is one half.
+
+00:03:07.320 --> 00:03:11.180
+The cancellation is justified near zero without defining the original quotient
+
+00:03:11.180 --> 00:03:11.780
+at zero.
+
+00:03:12.460 --> 00:03:14.620
+At infinity, compare leading powers.
+
+00:03:15.220 --> 00:03:19.920
+For three x squared plus one divided by x squared minus two, divide numerator
+
+00:03:19.920 --> 00:03:21.520
+and denominator by x squared.
+
+00:03:22.380 --> 00:03:26.820
+The quotient becomes three plus one over x squared, divided by one minus two
+
+00:03:26.820 --> 00:03:30.460
+over x squared, and tends to three as the input grows in magnitude.
+
+00:03:31.180 --> 00:03:34.600
+Do not treat infinity as a number to substitute into ordinary arithmetic.
+
+00:03:35.380 --> 00:03:38.760
+Each rewrite should preserve values on an appropriate nearby domain.
+
+00:03:39.460 --> 00:03:43.460
+A simplification that changes one isolated point can still preserve the limit,
+
+00:03:43.820 --> 00:03:46.980
+while changing values throughout a neighbourhood need not do so.
+
+00:03:47.088 --> 00:03:51.668
+Several standard limits form the foundation of elementary differentiation.
+
+00:03:52.828 --> 00:03:58.168
+With angles in radians, sine x divided by x tends to one as x tends to zero.
+
+00:03:59.268 --> 00:04:03.848
+Replacing the angle by three x shows that sine three x divided by x tends to
+
+00:04:03.848 --> 00:04:06.988
+three: multiply the standard sine ratio by three.
+
+00:04:08.228 --> 00:04:12.808
+Using one minus cosine x equal to twice sine squared of x over two gives the
+
+00:04:12.808 --> 00:04:16.588
+limit of one minus cosine x divided by x squared as one half.
+
+00:04:17.628 --> 00:04:20.028
+Radian measure is essential for these numerical constants.
+
+00:04:20.928 --> 00:04:25.308
+The exponential quotient e to the x minus one, divided by x, and the
+
+00:04:25.308 --> 00:04:30.288
+logarithmic quotient natural log of one plus x divided by x both tend to one
+
+00:04:30.288 --> 00:04:30.828
+near zero.
+
+00:04:31.328 --> 00:04:35.088
+The logarithm requires one plus x positive, which is satisfied in a
+
+00:04:35.088 --> 00:04:36.568
+sufficiently small neighbourhood of zero.
+
+00:04:37.208 --> 00:04:42.008
+A related limit is one plus x raised to one over x tending to e, with positive
+
+00:04:42.008 --> 00:04:43.868
+base and nonzero x near zero.
+
+00:04:44.628 --> 00:04:48.548
+These standard limits may be established independently and then used to derive
+
+00:04:48.548 --> 00:04:49.428
+derivative formulas.
+
+00:04:50.268 --> 00:04:53.668
+Using those later derivative formulas as their only justification would be
+
+00:04:53.668 --> 00:04:53.988
+circular.
+
+00:04:55.128 --> 00:04:58.508
+Match the variable and scale carefully before applying a memorized form.
+
+00:04:58.992 --> 00:05:04.732
+A function is continuous at an interior point a when its value exists, its two
+
+00:05:04.732 --> 00:05:07.292
+sided limit exists, and that limit equals the value.
+
+00:05:07.932 --> 00:05:09.432
+All three requirements matter.
+
+00:05:10.352 --> 00:05:14.852
+Suppose f of x equals x squared minus one divided by x minus one for x not
+
+00:05:14.852 --> 00:05:17.732
+equal to one, while f of one is a parameter k.
+
+00:05:18.532 --> 00:05:22.392
+Nearby simplification gives x plus one, so the limit at one is two.
+
+00:05:23.112 --> 00:05:25.392
+Continuity therefore requires k equal to two.
+
+00:05:25.882 --> 00:05:30.492
+With that value the hole is filled consistently; any different value leaves a
+
+00:05:30.492 --> 00:05:31.272
+point discontinuity.
+
+00:05:32.052 --> 00:05:36.692
+Another example defines sine x divided by x away from zero and assigns c at
+
+00:05:36.692 --> 00:05:36.972
+zero.
+
+00:05:37.512 --> 00:05:41.412
+The standard limit is one, so continuity requires c equal to one.
+
+00:05:42.052 --> 00:05:45.683
+A jump with unequal one sided limits cannot be fixed by choosing only one
+
+00:05:45.683 --> 00:05:45.932
+point
+
+00:05:45.932 --> 00:05:46.252
+value.
+
+00:05:46.912 --> 00:05:50.612
+At an included endpoint of an interval, continuity is checked using the
+
+00:05:50.612 --> 00:05:52.412
+approach available from inside the domain.
+
+00:05:53.112 --> 00:05:55.572
+Polynomials are continuous throughout the reals.
+
+00:05:56.272 --> 00:05:59.872
+Rational, logarithmic and other standard elementary expressions are continuous
+
+00:05:59.872 --> 00:06:01.992
+where their relevant domain conditions are satisfied.
+
+00:06:02.972 --> 00:06:06.760
+Use these facts to evaluate limits by substitution only after checking that
+
+00:06:06.760 --> 00:06:06.912
+the
+
+00:06:06.912 --> 00:06:10.393
+point belongs to the permitted domain and no exceptional piecewise boundary
+
+00:06:10.393 --> 00:06:10.532
+has
+
+00:06:10.532 --> 00:06:11.092
+been overlooked.
+
+00:06:11.352 --> 00:06:17.052
+The derivative at an interior input x is the limit of f of x plus h minus f of
+
+00:06:17.052 --> 00:06:20.672
+x, all divided by h, as nonzero h approaches zero.
+
+00:06:21.412 --> 00:06:23.652
+The quotient measures the slope of a secant line.
+
+00:06:24.192 --> 00:06:27.552
+Its limit, when finite and well defined, gives the instantaneous slope.
+
+00:06:28.252 --> 00:06:33.412
+For f of x equal to x squared, expanding the numerator gives two x h plus h
+
+00:06:33.412 --> 00:06:33.652
+squared.
+
+00:06:34.392 --> 00:06:39.992
+Divide by h for nonzero h to obtain two x plus h; the limit is two x.
+
+00:06:39.992 --> 00:06:42.672
+At x equal to three, the derivative is six.
+
+00:06:43.532 --> 00:06:47.512
+Differentiability implies continuity: the function difference equals h times
+
+00:06:47.512 --> 00:06:51.192
+the difference quotient, which tends to zero when the quotient has a finite
+
+00:06:51.192 --> 00:06:51.492
+limit.
+
+00:06:52.272 --> 00:06:53.132
+The converse fails.
+
+00:06:53.912 --> 00:06:57.592
+Absolute value of x is continuous at zero, but its right difference quotient
+
+00:06:57.592 --> 00:07:00.712
+there is one and its left quotient is negative one.
+
+00:07:01.272 --> 00:07:04.072
+The derivative does not exist because those slopes disagree.
+
+00:07:04.812 --> 00:07:07.772
+A corner is therefore different from a removable discontinuity.
+
+00:07:08.292 --> 00:07:12.272
+At endpoints, one sided derivatives may be discussed separately, but they
+
+00:07:12.272 --> 00:07:15.892
+should not be silently substituted for an ordinary two sided derivative.
+
+00:07:16.892 --> 00:07:20.692
+Begin with the definition whenever a piecewise formula or a special point
+
+00:07:20.692 --> 00:07:20.952
+makes
+
+00:07:20.952 --> 00:07:22.232
+a standard rule uncertain.
+
+00:07:22.608 --> 00:07:26.568
+For powers on their valid differentiable domains, the derivative of x to the
+
+00:07:26.568 --> 00:07:29.628
+power n is n times x to the power n minus one.
+
+00:07:30.468 --> 00:07:33.608
+Polynomial examples follow directly by differentiating each term.
+
+00:07:34.508 --> 00:07:37.968
+Sums and differences differentiate term by term, and a constant multiple
+
+00:07:37.968 --> 00:07:39.188
+remains a constant factor.
+
+00:07:40.368 --> 00:07:44.768
+Products need both changing factors: the derivative of u v is u prime times v
+
+00:07:44.768 --> 00:07:46.028
+plus u times v prime.
+
+00:07:46.348 --> 00:07:51.177
+For x squared plus one multiplied by x minus one, the derivative is two x
+
+00:07:51.177 --> 00:07:51.508
+times
+
+00:07:51.508 --> 00:07:56.348
+x minus one plus x squared plus one, which simplifies to three x squared minus
+
+00:07:56.348 --> 00:07:57.488
+two x plus one.
+
+00:07:58.128 --> 00:08:00.528
+Multiplying the two derivatives alone would miss terms.
+
+00:08:01.368 --> 00:08:06.188
+For a quotient u over v, use u prime v minus u v prime, divided by v squared,
+
+00:08:06.188 --> 00:08:08.468
+with v nonzero.
+
+00:08:08.468 --> 00:08:12.568
+Applying it to x divided by one plus x gives one divided by the square of one
+
+00:08:12.568 --> 00:08:13.168
+plus x.
+
+00:08:13.468 --> 00:08:17.508
+The original function excludes negative one, and the derivative formula does
+
+00:08:17.508 --> 00:08:17.808
+too.
+
+00:08:18.288 --> 00:08:22.768
+A constant exponent formula must also respect real domains when fractional or
+
+00:08:22.768 --> 00:08:23.848
+negative exponents occur.
+
+00:08:24.808 --> 00:08:28.168
+Check the type of operation before selecting the rule and retain the domain
+
+00:08:28.168 --> 00:08:29.068
+alongside the result.
+
+00:08:29.616 --> 00:08:32.636
+A composite function applies one operation after another.
+
+00:08:33.356 --> 00:08:37.156
+The chain rule differentiates the outer function at the inner value and then
+
+00:08:37.156 --> 00:08:38.716
+multiplies by the derivative of the inner function.
+
+00:08:39.656 --> 00:08:43.776
+For sine of x squared, the outer derivative is cosine evaluated at x squared,
+
+00:08:44.096 --> 00:08:46.976
+and the inner derivative is two x.
+
+00:08:46.976 --> 00:08:49.656
+The result is two x cosine of x squared.
+
+00:08:50.656 --> 00:08:54.679
+For three x plus one raised to the fifth power, the outer power rule gives
+
+00:08:54.679 --> 00:08:54.896
+five
+
+00:08:54.896 --> 00:08:56.556
+times that entire bracket raised to four.
+
+00:08:56.556 --> 00:09:02.276
+The inner derivative three supplies another factor, giving fifteen times three
+
+00:09:02.276 --> 00:09:04.736
+x plus one to the fourth.
+
+00:09:04.736 --> 00:09:06.396
+Omitting the inner factor is a common error.
+
+00:09:07.336 --> 00:09:10.761
+For a square root of one plus x squared, the derivative is one divided by
+
+00:09:10.761 --> 00:09:10.996
+twice
+
+00:09:10.996 --> 00:09:15.676
+that square root, multiplied by two x, giving x over square root of one plus x
+
+00:09:15.676 --> 00:09:15.916
+squared.
+
+00:09:16.656 --> 00:09:19.276
+Its denominator stays positive for every real x.
+
+00:09:20.116 --> 00:09:23.636
+Several nested operations can be handled layer by layer, with each inner
+
+00:09:23.636 --> 00:09:25.716
+derivative evaluated at the correct expression.
+
+00:09:26.286 --> 00:09:30.236
+A derivative evaluated at an inner value is different from replacing the inner
+
+00:09:30.236 --> 00:09:33.156
+function by its derivative inside the original outer function.
+
+00:09:33.936 --> 00:09:36.116
+Keep brackets until all the chain factors have been written.
+
+00:09:37.128 --> 00:09:40.528
+Radian measure gives the standard trigonometric derivative formulas.
+
+00:09:41.108 --> 00:09:45.415
+Sine x differentiates to cosine x, and cosine x differentiates to negative
+
+00:09:45.415 --> 00:09:45.648
+sine
+
+00:09:45.648 --> 00:09:46.028
+x.
+
+00:09:46.768 --> 00:09:50.848
+Applying the quotient rule to sine over cosine gives tangent's derivative as
+
+00:09:50.848 --> 00:09:54.168
+secant squared x, where cosine is nonzero.
+
+00:09:54.168 --> 00:09:58.848
+Cotangent differentiates to negative cosecant squared x where sine is nonzero.
+
+00:09:58.848 --> 00:10:03.808
+For reciprocal functions, secant's derivative is secant x tangent x, and
+
+00:10:03.808 --> 00:10:07.408
+cosecant's derivative is negative cosecant x cotangent x.
+
+00:10:08.228 --> 00:10:11.468
+These formulas use the same domain restrictions as the original functions.
+
+00:10:12.108 --> 00:10:13.668
+They do not assign derivatives at poles.
+
+00:10:14.508 --> 00:10:18.628
+A scaled or composite angle needs the chain rule: sine of three x has
+
+00:10:18.628 --> 00:10:23.068
+derivative three cosine three x, while tangent of x squared has derivative two
+
+00:10:23.068 --> 00:10:25.788
+x secant squared of x squared at allowed inputs.
+
+00:10:26.328 --> 00:10:29.606
+If the numerical input were measured in degrees rather than radians,
+
+00:10:29.606 --> 00:10:30.088
+conversion
+
+00:10:30.088 --> 00:10:31.468
+factors would enter the derivative.
+
+00:10:32.028 --> 00:10:35.088
+State the angle convention before using a table of formulas.
+
+00:10:35.728 --> 00:10:39.324
+The sine and cosine rules can be derived from the angle addition identities
+
+00:10:39.324 --> 00:10:39.468
+and
+
+00:10:39.468 --> 00:10:40.488
+the standard sine limit.
+
+00:10:41.268 --> 00:10:44.428
+The remaining four then follow from quotient and reciprocal differentiation
+
+00:10:44.508 --> 00:10:47.508
+rather than needing six unrelated memorized arguments.
+
+00:10:47.976 --> 00:10:52.076
+Inverse derivative formulas follow by differentiating the corresponding direct
+
+00:10:52.076 --> 00:10:54.056
+relation and respecting its branch.
+
+00:10:54.916 --> 00:10:59.456
+For arcsine x, the derivative is one over square root of one minus x squared
+
+00:10:59.896 --> 00:11:02.376
+for input strictly between negative one and one.
+
+00:11:03.216 --> 00:11:05.296
+Arccosine has the negative of that derivative.
+
+00:11:06.036 --> 00:11:09.936
+The inverse functions themselves accept the endpoints, but these finite
+
+00:11:09.936 --> 00:11:12.076
+derivative formulas do not extend there.
+
+00:11:13.176 --> 00:11:17.896
+Arctangent differentiates to one over one plus x squared for every real x.
+
+00:11:18.576 --> 00:11:22.637
+Under our arccotangent convention, its derivative is negative one over one
+
+00:11:22.637 --> 00:11:22.856
+plus
+
+00:11:22.856 --> 00:11:23.396
+x squared.
+
+00:11:24.356 --> 00:11:28.815
+For arcsecant, the derivative is one over absolute value of x times square
+
+00:11:28.815 --> 00:11:29.056
+root
+
+00:11:29.056 --> 00:11:30.476
+of x squared minus one.
+
+00:11:30.476 --> 00:11:33.516
+Arccosecant has the negative of that expression.
+
+00:11:34.376 --> 00:11:37.976
+Their derivative domains require absolute value of x greater than one.
+
+00:11:38.436 --> 00:11:41.516
+The absolute value factor is important for negative inputs.
+
+00:11:42.496 --> 00:11:46.616
+For arcsine of two x, the chain rule gives two over square root of one minus
+
+00:11:46.616 --> 00:11:51.056
+four x squared, with derivative domain absolute value of x less than one half.
+
+00:11:52.136 --> 00:11:55.576
+Distinguish the domain of an inverse function from the smaller set where its
+
+00:11:55.576 --> 00:11:57.296
+ordinary finite derivative exists.
+
+00:11:58.016 --> 00:12:01.376
+Our declared principal branches determine the signs consistently.
+
+00:12:01.584 --> 00:12:07.004
+The exponential e to the x differentiates to itself, while natural log x has
+
+00:12:07.004 --> 00:12:09.404
+derivative one over x on its positive domain.
+
+00:12:10.064 --> 00:12:15.004
+For a constant positive base a, the derivative of a to the x is a to the x
+
+00:12:15.004 --> 00:12:16.144
+times natural log a.
+
+00:12:16.384 --> 00:12:21.124
+A logarithm to base a has derivative one divided by the product of x and
+
+00:12:21.124 --> 00:12:25.184
+natural log a, with a positive and different from one and with x positive.
+
+00:12:25.724 --> 00:12:30.264
+For natural log of two x plus one, the chain rule gives two over two x plus
+
+00:12:30.264 --> 00:12:34.584
+one, and the original logarithm requires x greater than negative one half.
+
+00:12:35.464 --> 00:12:39.904
+A variable power such as x to the x is not a constant exponent power rule
+
+00:12:39.904 --> 00:12:40.564
+problem.
+
+00:12:40.784 --> 00:12:46.184
+On x positive, set y equal to x to the x and take natural logs: natural log y
+
+00:12:46.184 --> 00:12:47.864
+equals x natural log x.
+
+00:12:48.564 --> 00:12:52.364
+Differentiating gives y prime over y equal to natural log x plus one.
+
+00:12:52.364 --> 00:12:57.124
+Multiply back by y to obtain x to the x multiplied by the quantity natural log
+
+00:12:57.124 --> 00:12:58.164
+x plus one.
+
+00:12:58.664 --> 00:13:00.304
+Preserve the bracket around that final factor.
+
+00:13:01.504 --> 00:13:05.044
+Taking logarithms requires the relevant positive quantities, so domain checks
+
+00:13:05.044 --> 00:13:08.184
+come before the algebraic convenience of logarithmic differentiation.
+
+00:13:09.336 --> 00:13:13.496
+An equation may define a curve without presenting y explicitly.
+
+00:13:14.496 --> 00:13:19.251
+Differentiate both sides with respect to x and remember that y can depend on
+
+00:13:19.251 --> 00:13:19.376
+x.
+
+00:13:19.976 --> 00:13:25.307
+For x squared plus y squared equals twenty five, the result is two x plus two
+
+00:13:25.307 --> 00:13:25.376
+y
+
+00:13:25.376 --> 00:13:27.196
+times y prime equal to zero.
+
+00:13:27.936 --> 00:13:32.456
+Where y is nonzero, solve to obtain y prime equal to negative x over y.
+
+00:13:32.916 --> 00:13:37.296
+At the point three, four, the slope is negative three quarters, and a tangent
+
+00:13:37.296 --> 00:13:42.136
+equation is y minus four equal to negative three quarters times x minus three.
+
+00:13:43.076 --> 00:13:46.816
+Substituting the point into the original curve checks that the calculation is
+
+00:13:46.816 --> 00:13:48.396
+being used at a valid location.
+
+00:13:49.136 --> 00:13:51.956
+At five, zero, dividing by y is unavailable.
+
+00:13:52.616 --> 00:13:57.296
+The circle nevertheless has a vertical tangent there, namely x equal to five.
+
+00:13:57.296 --> 00:14:02.516
+One can verify the direction geometrically or differentiate x locally as a
+
+00:14:02.516 --> 00:14:02.956
+function of y.
+
+00:14:03.616 --> 00:14:08.636
+The ordinary finite slope dy over dx is absent at that point, which does not
+
+00:14:08.636 --> 00:14:10.196
+mean the curve has no tangent line.
+
+00:14:10.996 --> 00:14:14.756
+For more complicated relations, apply the chain rule to every expression
+
+00:14:14.756 --> 00:14:18.196
+involving y and only then collect the y prime terms.
+
+00:14:18.916 --> 00:14:22.056
+Keep the local solvability and denominator conditions with the result.
+
+00:14:22.488 --> 00:14:26.128
+The second derivative measures the rate of change of the first derivative with
+
+00:14:26.128 --> 00:14:27.448
+respect to the same variable.
+
+00:14:28.268 --> 00:14:32.868
+For y equal to x cubed minus three x, the first derivative is three x squared
+
+00:14:32.868 --> 00:14:36.028
+minus three and the second is six x.
+
+00:14:36.028 --> 00:14:38.368
+Do not square the first derivative to obtain the second.
+
+00:14:38.868 --> 00:14:43.048
+For a composite function, differentiate all the factors produced by the first
+
+00:14:43.048 --> 00:14:43.468
+chain rule.
+
+00:14:44.388 --> 00:14:48.539
+For implicit curves, the y expressions in a first derivative still depend on
+
+00:14:48.539 --> 00:14:48.648
+x.
+
+00:14:49.128 --> 00:14:52.894
+On the circle x squared plus y squared equals twenty five, the first
+
+00:14:52.894 --> 00:14:53.448
+derivative
+
+00:14:53.448 --> 00:14:56.388
+is negative x over y where y is nonzero.
+
+00:14:57.368 --> 00:15:02.268
+A quotient rule differentiation gives negative of y minus x y prime, all
+
+00:15:02.268 --> 00:15:03.288
+divided by y squared.
+
+00:15:04.348 --> 00:15:08.818
+Replace y prime by negative x over y, then use x squared plus y squared equal
+
+00:15:08.818 --> 00:15:10.048
+to twenty five.
+
+00:15:10.048 --> 00:15:12.728
+The result is negative twenty five divided by y cubed.
+
+00:15:13.408 --> 00:15:17.308
+At three, four, the second derivative is negative twenty five over sixty four.
+
+00:15:17.308 --> 00:15:21.788
+This illustrates why holding y constant in the second differentiation would be
+
+00:15:21.788 --> 00:15:22.188
+incorrect.
+
+00:15:23.068 --> 00:15:26.628
+A second derivative can help classify a stationary point when its sign is
+
+00:15:26.628 --> 00:15:30.848
+nonzero, but a zero second derivative alone gives no final classification.
+
+00:15:30.848 --> 00:15:31.656
+We will combine it with sign tests and interval endpoints.
+
+00:15:31.656 --> 00:15:35.836
+A derivative gives an instantaneous rate, while an average rate divides a
+
+00:15:35.836 --> 00:15:38.536
+finite change in output by a finite change in input.
+
+00:15:39.296 --> 00:15:44.236
+If displacement s of t is t cubed, instantaneous velocity is three t squared,
+
+00:15:44.716 --> 00:15:48.501
+so at t equal to two it is twelve in the corresponding distance per time
+
+00:15:48.501 --> 00:15:48.816
+units.
+
+00:15:49.316 --> 00:15:52.316
+The average velocity over an interval generally differs.
+
+00:15:53.176 --> 00:15:56.616
+For related rates, write a relation among the changing quantities before
+
+00:15:56.616 --> 00:15:57.336
+differentiating.
+
+00:15:57.636 --> 00:16:00.636
+A circle has area A equal to pi r squared.
+
+00:16:00.636 --> 00:16:05.905
+If its radius changes with time, the chain rule gives d A over d t equal to
+
+00:16:05.905 --> 00:16:06.116
+two
+
+00:16:06.116 --> 00:16:08.496
+pi r times d r over d t.
+
+00:16:08.496 --> 00:16:12.356
+At radius three centimetres and radial growth two centimetres per second, the
+
+00:16:12.356 --> 00:16:14.916
+area grows at twelve pi square centimetres per second.
+
+00:16:16.016 --> 00:16:19.688
+Substituting the fixed radius before differentiating would turn the area into
+
+00:16:19.688 --> 00:16:19.736
+a
+
+00:16:19.736 --> 00:16:21.516
+constant and lose the intended rate.
+
+00:16:22.516 --> 00:16:26.048
+Differentiate the general relation first, then insert the instantaneous
+
+00:16:26.048 --> 00:16:26.396
+values.
+
+00:16:26.916 --> 00:16:31.156
+Units provide a useful check: a length times a length per second gives an area
+
+00:16:31.156 --> 00:16:31.736
+per second.
+
+00:16:32.336 --> 00:16:35.369
+State which rates are given, which rate is sought and the time or
+
+00:16:35.369 --> 00:16:35.976
+configuration
+
+00:16:35.976 --> 00:16:37.096
+at which they are evaluated.
+
+00:16:37.416 --> 00:16:41.156
+The sign of a derivative describes local direction of change on an interval.
+
+00:16:42.016 --> 00:16:45.916
+A positive derivative gives increasing behaviour, while a negative derivative
+
+00:16:45.916 --> 00:16:48.196
+gives decreasing behaviour.
+
+00:16:48.196 --> 00:16:53.136
+For f of x equal to x cubed minus three x, the derivative factors as three
+
+00:16:53.136 --> 00:16:56.196
+times x minus one times x plus one.
+
+00:16:56.236 --> 00:16:57.996
+Its zeros are negative one and one.
+
+00:16:58.816 --> 00:17:00.396
+Test the three resulting open intervals.
+
+00:17:01.056 --> 00:17:04.916
+The derivative is positive to the left of negative one, negative between
+
+00:17:04.916 --> 00:17:07.556
+negative one and one, and positive to the right of one.
+
+00:17:08.616 --> 00:17:12.256
+Thus f increases on the two outer intervals and decreases on the middle
+
+00:17:12.256 --> 00:17:12.556
+interval.
+
+00:17:13.596 --> 00:17:17.716
+A derivative equal to zero at one isolated point does not force a turning
+
+00:17:17.716 --> 00:17:17.996
+point.
+
+00:17:18.896 --> 00:17:23.076
+The function x cubed has zero derivative at zero but keeps increasing across
+
+00:17:23.076 --> 00:17:23.576
+that point.
+
+00:17:24.416 --> 00:17:28.096
+Also split at places where the derivative does not exist or the original
+
+00:17:28.096 --> 00:17:32.516
+function is undefined; a sign table cannot silently join separate domain
+
+00:17:32.516 --> 00:17:32.996
+components.
+
+00:17:34.056 --> 00:17:37.956
+The endpoints of increasing or decreasing intervals need careful wording when
+
+00:17:37.956 --> 00:17:39.136
+their inclusion is requested.
+
+00:17:39.976 --> 00:17:44.356
+For solving inequalities, use the factored derivative signs rather than only a
+
+00:17:44.356 --> 00:17:44.736
+rough sketch.
+
+00:17:45.376 --> 00:17:49.536
+A graph can check the result, but the sign argument explains it across each
+
+00:17:49.536 --> 00:17:50.056
+whole interval.
+
+00:17:50.616 --> 00:17:54.816
+A local maximum occurs when nearby function values do not exceed the value at
+
+00:17:54.816 --> 00:17:57.816
+the point; a local minimum reverses that comparison.
+
+00:17:58.676 --> 00:18:02.536
+A derivative changing from positive to negative gives a local maximum, while
+
+00:18:02.536 --> 00:18:05.036
+changing from negative to positive gives a local minimum.
+
+00:18:05.816 --> 00:18:10.216
+For a stationary point, a negative second derivative gives a local maximum and
+
+00:18:10.216 --> 00:18:13.536
+a positive second derivative gives a local minimum under the usual
+
+00:18:13.536 --> 00:18:14.776
+differentiability conditions.
+
+00:18:15.496 --> 00:18:18.696
+If the second derivative is zero, the test is inconclusive.
+
+00:18:19.316 --> 00:18:25.116
+For example, x to the fourth has a minimum at zero while x cubed has neither a
+
+00:18:25.116 --> 00:18:28.796
+maximum nor a minimum there, despite both having zero second derivative at
+
+00:18:28.796 --> 00:18:29.016
+zero.
+
+00:18:29.916 --> 00:18:34.316
+For absolute extrema on a closed bounded interval, compare every candidate and
+
+00:18:34.316 --> 00:18:34.916
+the endpoints.
+
+00:18:35.556 --> 00:18:40.336
+On zero through two, f equal to x cubed minus three x has an interior critical
+
+00:18:40.336 --> 00:18:41.116
+point at one.
+
+00:18:41.696 --> 00:18:46.336
+Its candidate values are f of zero equal to zero, f of one equal to negative
+
+00:18:46.336 --> 00:18:48.836
+two, and f of two equal to two.
+
+00:18:49.496 --> 00:18:53.876
+The absolute minimum is negative two at one and the maximum is two at the
+
+00:18:53.876 --> 00:18:54.596
+endpoint two.
+
+00:18:55.356 --> 00:18:57.756
+Checking only stationary points would miss that maximum.
+
+00:18:58.516 --> 00:19:03.176
+A continuous function on a closed bounded interval attains its extremes; open
+
+00:19:03.176 --> 00:19:05.916
+or unbounded intervals need separate existence checks.

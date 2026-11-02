@@ -86,6 +86,8 @@ targets['quadratic-equations']='quadratic-equations';
 targets['permutations-combinations']='permutations-combinations';
 targets['binomial-theorem']='binomial-theorem';
 targets['sequences-series']='sequences-series';
+targets['trigonometry']='trigonometry';
+targets['limits-continuity-differentiability']='limits-continuity-differentiability';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const lesson = JSON.parse(await fs.readFile(path.join(root, `app/data/jee-${dataName}-lecture.json`), 'utf8'));

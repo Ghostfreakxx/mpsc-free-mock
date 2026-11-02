@@ -1,3 +1,5 @@
+import { limitsContinuityDifferentiabilityLesson } from './limits-continuity-differentiability-study.ts';
+import { trigonometryLesson } from './trigonometry-study.ts';
 import { sequencesSeriesLesson } from './sequences-series-study.ts';
 import { binomialTheoremLesson } from './binomial-theorem-study.ts';
 import { permutationsCombinationsLesson } from './permutations-combinations-study.ts';
@@ -179,6 +181,8 @@ export const studyLessons: StudyLesson[] = [
   permutationsCombinationsLesson,
   binomialTheoremLesson,
   sequencesSeriesLesson,
+  trigonometryLesson,
+  limitsContinuityDifferentiabilityLesson,
 ];
 
 const moleConceptCompanion = studyLessons.find(lesson=>lesson.id==="mole-concept");

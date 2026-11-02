@@ -1,0 +1,607 @@
+import type { StudyLesson } from './course';
+// Authored by scripts/create-limits-continuity-differentiability.mjs.
+export const limitsContinuityDifferentiabilityLesson:StudyLesson = {
+  "id": "limits-continuity-differentiability",
+  "subject": "Mathematics",
+  "unit": 7,
+  "title": "Limits, continuity and differentiability: rules, rates and extrema",
+  "summary": "Function domains and graphs, limits, continuity, first and second derivatives, implicit and logarithmic differentiation, rates, monotonicity and extrema.",
+  "prerequisites": "Functions, polynomial algebra, exponent laws, logarithms and the Trigonometry class with its principal inverse conventions.",
+  "remaining": "Sixteen-chapter recorded companion for Mathematics Unit 7, covering its main function, limit, continuity, differentiation and derivative-application headings with original practice. Further mixed piecewise parameters, difficult limit constructions, optimization and timed practice remain. This is not exhaustive problem coverage or official PYQs.",
+  "sections": [
+    {
+      "title": "Start with real function domains and simple graphs",
+      "formula": "dom(ln(x−1)/(x−2))=(1,2)∪(2,∞); eˣ>0",
+      "paragraphs": [
+        "Calculus studies how functions behave near inputs, so determine the real domain first. A polynomial accepts every real input. A rational function excludes zeros of its denominator. A real square root requires a nonnegative argument, while a natural logarithm requires a strictly positive argument. For the quotient whose numerator is natural log of the quantity x minus one and whose denominator is x minus two, require x greater than one and exclude two. The two conditions apply together. Function sums and products use the common input domain; a quotient additionally excludes denominator zeros. A composition requires the inner output to belong to the outer domain. Simple graphs provide useful checks. The square function is a parabola with nonnegative range. The reciprocal function has separate branches and excludes zero. The exponential e to the x is positive for every real x and has range all positive reals. Its inverse, natural log x, accepts positive inputs and has every real number as a possible output. Both are increasing. Horizontal translations move excluded inputs as well as the visible graph. Keep these restrictions through algebraic simplification and differentiation. A derivative formula at an input outside the original function's domain does not create a new valid point of that original function."
+      ]
+    },
+    {
+      "title": "Separate a limit from the value at the point",
+      "formula": "limₓ→₂ (x²−4)/(x−2)=4; the original function excludes x=2",
+      "paragraphs": [
+        "A limit describes values of a function as the input approaches a point through nearby allowed inputs. It does not require the function to be defined at the point itself. For x squared minus four divided by x minus two, the expression equals x plus two whenever x is not two. As x approaches two from either side, the output approaches four. The original expression still excludes x equal to two, so a limit value is not an automatic point value. Left and right limits inspect approaches from smaller and larger inputs. A two sided finite limit exists only when both approaches give the same finite number. For x divided by absolute value of x near zero, the right hand values are one and the left hand values are negative one. The two sided limit therefore does not exist. Defining any value at zero would not repair that jump in nearby behaviour. Tables and graphs suggest limits but a finite collection of samples is not a complete proof. Algebra and standard limit laws justify the conclusions in the examples here. An infinite limit describes unbounded behaviour rather than an ordinary real output assigned at a singular input."
+      ]
+    },
+    {
+      "title": "Evaluate algebraic limits by valid local simplification",
+      "formula": "limₓ→₀ (√(1+x)−1)/x=1/2; limₓ→∞ (3x²+1)/(x²−2)=3",
+      "paragraphs": [
+        "Direct substitution evaluates many limits of continuous elementary expressions, but zero divided by zero does not determine a value. Factor common terms or use a conjugate while keeping the original exclusions. For the quantity square root of one plus x, minus one, all divided by x, substitution at zero gives this indeterminate form. Multiply numerator and denominator by the quantity square root of one plus x, plus one. The numerator becomes x. For nonzero x near zero, cancellation gives one divided by square root of one plus x plus one, whose limit is one half. The cancellation is justified near zero without defining the original quotient at zero. At infinity, compare leading powers. For three x squared plus one divided by x squared minus two, divide numerator and denominator by x squared. The quotient becomes three plus one over x squared, divided by one minus two over x squared, and tends to three as the input grows in magnitude. Do not treat infinity as a number to substitute into ordinary arithmetic. Each rewrite should preserve values on an appropriate nearby domain. A simplification that changes one isolated point can still preserve the limit, while changing values throughout a neighbourhood need not do so."
+      ]
+    },
+    {
+      "title": "Use standard trigonometric, exponential and logarithmic limits",
+      "formula": "limₓ→₀ sinx/x=1; limₓ→₀ (eˣ−1)/x=1; limₓ→₀ ln(1+x)/x=1",
+      "paragraphs": [
+        "Several standard limits form the foundation of elementary differentiation. With angles in radians, sine x divided by x tends to one as x tends to zero. Replacing the angle by three x shows that sine three x divided by x tends to three: multiply the standard sine ratio by three. Using one minus cosine x equal to twice sine squared of x over two gives the limit of one minus cosine x divided by x squared as one half. Radian measure is essential for these numerical constants. The exponential quotient e to the x minus one, divided by x, and the logarithmic quotient natural log of one plus x divided by x both tend to one near zero. The logarithm requires one plus x positive, which is satisfied in a sufficiently small neighbourhood of zero. A related limit is one plus x raised to one over x tending to e, with positive base and nonzero x near zero. These standard limits may be established independently and then used to derive derivative formulas. Using those later derivative formulas as their only justification would be circular. Match the variable and scale carefully before applying a memorized form."
+      ]
+    },
+    {
+      "title": "Test continuity and choose a missing point value",
+      "formula": "Continuous at a: f(a) exists and limₓ→ₐ f(x)=f(a)",
+      "paragraphs": [
+        "A function is continuous at an interior point a when its value exists, its two sided limit exists, and that limit equals the value. All three requirements matter. Suppose f of x equals x squared minus one divided by x minus one for x not equal to one, while f of one is a parameter k. Nearby simplification gives x plus one, so the limit at one is two. Continuity therefore requires k equal to two. With that value the hole is filled consistently; any different value leaves a point discontinuity. Another example defines sine x divided by x away from zero and assigns c at zero. The standard limit is one, so continuity requires c equal to one. A jump with unequal one sided limits cannot be fixed by choosing only one point value. At an included endpoint of an interval, continuity is checked using the approach available from inside the domain. Polynomials are continuous throughout the reals. Rational, logarithmic and other standard elementary expressions are continuous where their relevant domain conditions are satisfied. Use these facts to evaluate limits by substitution only after checking that the point belongs to the permitted domain and no exceptional piecewise boundary has been overlooked."
+      ]
+    },
+    {
+      "title": "Define the derivative and distinguish it from continuity",
+      "formula": "f′(x)=limₕ→₀ [f(x+h)−f(x)]/h; differentiability implies continuity",
+      "paragraphs": [
+        "The derivative at an interior input x is the limit of f of x plus h minus f of x, all divided by h, as nonzero h approaches zero. The quotient measures the slope of a secant line. Its limit, when finite and well defined, gives the instantaneous slope. For f of x equal to x squared, expanding the numerator gives two x h plus h squared. Divide by h for nonzero h to obtain two x plus h; the limit is two x. At x equal to three, the derivative is six. Differentiability implies continuity: the function difference equals h times the difference quotient, which tends to zero when the quotient has a finite limit. The converse fails. Absolute value of x is continuous at zero, but its right difference quotient there is one and its left quotient is negative one. The derivative does not exist because those slopes disagree. A corner is therefore different from a removable discontinuity. At endpoints, one sided derivatives may be discussed separately, but they should not be silently substituted for an ordinary two sided derivative. Begin with the definition whenever a piecewise formula or a special point makes a standard rule uncertain."
+      ]
+    },
+    {
+      "title": "Differentiate powers, sums, products and quotients",
+      "formula": "(uv)′=u′v+uv′; (u/v)′=(u′v−uv′)/v², v≠0",
+      "paragraphs": [
+        "For powers on their valid differentiable domains, the derivative of x to the power n is n times x to the power n minus one. Polynomial examples follow directly by differentiating each term. Sums and differences differentiate term by term, and a constant multiple remains a constant factor. Products need both changing factors: the derivative of u v is u prime times v plus u times v prime. For x squared plus one multiplied by x minus one, the derivative is two x times x minus one plus x squared plus one, which simplifies to three x squared minus two x plus one. Multiplying the two derivatives alone would miss terms. For a quotient u over v, use u prime v minus u v prime, divided by v squared, with v nonzero. Applying it to x divided by one plus x gives one divided by the square of one plus x. The original function excludes negative one, and the derivative formula does too. A constant exponent formula must also respect real domains when fractional or negative exponents occur. Check the type of operation before selecting the rule and retain the domain alongside the result."
+      ]
+    },
+    {
+      "title": "Apply the chain rule to composite functions",
+      "formula": "[f(g(x))]′=f′(g(x))g′(x)",
+      "paragraphs": [
+        "A composite function applies one operation after another. The chain rule differentiates the outer function at the inner value and then multiplies by the derivative of the inner function. For sine of x squared, the outer derivative is cosine evaluated at x squared, and the inner derivative is two x. The result is two x cosine of x squared. For three x plus one raised to the fifth power, the outer power rule gives five times that entire bracket raised to four. The inner derivative three supplies another factor, giving fifteen times three x plus one to the fourth. Omitting the inner factor is a common error. For a square root of one plus x squared, the derivative is one divided by twice that square root, multiplied by two x, giving x over square root of one plus x squared. Its denominator stays positive for every real x. Several nested operations can be handled layer by layer, with each inner derivative evaluated at the correct expression. A derivative evaluated at an inner value is different from replacing the inner function by its derivative inside the original outer function. Keep brackets until all the chain factors have been written."
+      ]
+    },
+    {
+      "title": "Differentiate the six trigonometric functions in radians",
+      "formula": "(sinx)′=cosx; (cosx)′=−sinx; (tanx)′=sec²x",
+      "paragraphs": [
+        "Radian measure gives the standard trigonometric derivative formulas. Sine x differentiates to cosine x, and cosine x differentiates to negative sine x. Applying the quotient rule to sine over cosine gives tangent's derivative as secant squared x, where cosine is nonzero. Cotangent differentiates to negative cosecant squared x where sine is nonzero. For reciprocal functions, secant's derivative is secant x tangent x, and cosecant's derivative is negative cosecant x cotangent x. These formulas use the same domain restrictions as the original functions. They do not assign derivatives at poles. A scaled or composite angle needs the chain rule: sine of three x has derivative three cosine three x, while tangent of x squared has derivative two x secant squared of x squared at allowed inputs. If the numerical input were measured in degrees rather than radians, conversion factors would enter the derivative. State the angle convention before using a table of formulas. The sine and cosine rules can be derived from the angle addition identities and the standard sine limit. The remaining four then follow from quotient and reciprocal differentiation rather than needing six unrelated memorized arguments."
+      ]
+    },
+    {
+      "title": "Differentiate inverse trigonometric functions on their open derivative domains",
+      "formula": "(arcsinx)′=1/√(1−x²), |x|<1; (arctanx)′=1/(1+x²)",
+      "paragraphs": [
+        "Inverse derivative formulas follow by differentiating the corresponding direct relation and respecting its branch. For arcsine x, the derivative is one over square root of one minus x squared for input strictly between negative one and one. Arccosine has the negative of that derivative. The inverse functions themselves accept the endpoints, but these finite derivative formulas do not extend there. Arctangent differentiates to one over one plus x squared for every real x. Under our arccotangent convention, its derivative is negative one over one plus x squared. For arcsecant, the derivative is one over absolute value of x times square root of x squared minus one. Arccosecant has the negative of that expression. Their derivative domains require absolute value of x greater than one. The absolute value factor is important for negative inputs. For arcsine of two x, the chain rule gives two over square root of one minus four x squared, with derivative domain absolute value of x less than one half. Distinguish the domain of an inverse function from the smaller set where its ordinary finite derivative exists. Our declared principal branches determine the signs consistently."
+      ]
+    },
+    {
+      "title": "Differentiate exponentials and logarithms, including variable powers",
+      "formula": "(eˣ)′=eˣ; (lnx)′=1/x for x>0; (xˣ)′=xˣ(lnx+1) for x>0",
+      "paragraphs": [
+        "The exponential e to the x differentiates to itself, while natural log x has derivative one over x on its positive domain. For a constant positive base a, the derivative of a to the x is a to the x times natural log a. A logarithm to base a has derivative one divided by the product of x and natural log a, with a positive and different from one and with x positive. For natural log of two x plus one, the chain rule gives two over two x plus one, and the original logarithm requires x greater than negative one half. A variable power such as x to the x is not a constant exponent power rule problem. On x positive, set y equal to x to the x and take natural logs: natural log y equals x natural log x. Differentiating gives y prime over y equal to natural log x plus one. Multiply back by y to obtain x to the x multiplied by the quantity natural log x plus one. Preserve the bracket around that final factor. Taking logarithms requires the relevant positive quantities, so domain checks come before the algebraic convenience of logarithmic differentiation."
+      ]
+    },
+    {
+      "title": "Use implicit differentiation and identify vertical tangent exceptions",
+      "formula": "x²+y²=25 ⇒ y′=−x/y where y≠0",
+      "paragraphs": [
+        "An equation may define a curve without presenting y explicitly. Differentiate both sides with respect to x and remember that y can depend on x. For x squared plus y squared equals twenty five, the result is two x plus two y times y prime equal to zero. Where y is nonzero, solve to obtain y prime equal to negative x over y. At the point three, four, the slope is negative three quarters, and a tangent equation is y minus four equal to negative three quarters times x minus three. Substituting the point into the original curve checks that the calculation is being used at a valid location. At five, zero, dividing by y is unavailable. The circle nevertheless has a vertical tangent there, namely x equal to five. One can verify the direction geometrically or differentiate x locally as a function of y. The ordinary finite slope dy over dx is absent at that point, which does not mean the curve has no tangent line. For more complicated relations, apply the chain rule to every expression involving y and only then collect the y prime terms. Keep the local solvability and denominator conditions with the result."
+      ]
+    },
+    {
+      "title": "Find second derivatives without dropping product or chain factors",
+      "formula": "y=x³−3x ⇒ y′=3x²−3, y″=6x",
+      "paragraphs": [
+        "The second derivative measures the rate of change of the first derivative with respect to the same variable. For y equal to x cubed minus three x, the first derivative is three x squared minus three and the second is six x. Do not square the first derivative to obtain the second. For a composite function, differentiate all the factors produced by the first chain rule. For implicit curves, the y expressions in a first derivative still depend on x. On the circle x squared plus y squared equals twenty five, the first derivative is negative x over y where y is nonzero. A quotient rule differentiation gives negative of y minus x y prime, all divided by y squared. Replace y prime by negative x over y, then use x squared plus y squared equal to twenty five. The result is negative twenty five divided by y cubed. At three, four, the second derivative is negative twenty five over sixty four. This illustrates why holding y constant in the second differentiation would be incorrect. A second derivative can help classify a stationary point when its sign is nonzero, but a zero second derivative alone gives no final classification. We will combine it with sign tests and interval endpoints."
+      ]
+    },
+    {
+      "title": "Interpret derivatives as instantaneous rates with units",
+      "formula": "A=πr² ⇒ dA/dt=2πr·dr/dt",
+      "paragraphs": [
+        "A derivative gives an instantaneous rate, while an average rate divides a finite change in output by a finite change in input. If displacement s of t is t cubed, instantaneous velocity is three t squared, so at t equal to two it is twelve in the corresponding distance per time units. The average velocity over an interval generally differs. For related rates, write a relation among the changing quantities before differentiating. A circle has area A equal to pi r squared. If its radius changes with time, the chain rule gives d A over d t equal to two pi r times d r over d t. At radius three centimetres and radial growth two centimetres per second, the area grows at twelve pi square centimetres per second. Substituting the fixed radius before differentiating would turn the area into a constant and lose the intended rate. Differentiate the general relation first, then insert the instantaneous values. Units provide a useful check: a length times a length per second gives an area per second. State which rates are given, which rate is sought and the time or configuration at which they are evaluated."
+      ]
+    },
+    {
+      "title": "Use derivative signs to locate increasing and decreasing intervals",
+      "formula": "f=x³−3x ⇒ f′=3(x−1)(x+1)",
+      "paragraphs": [
+        "The sign of a derivative describes local direction of change on an interval. A positive derivative gives increasing behaviour, while a negative derivative gives decreasing behaviour. For f of x equal to x cubed minus three x, the derivative factors as three times x minus one times x plus one. Its zeros are negative one and one. Test the three resulting open intervals. The derivative is positive to the left of negative one, negative between negative one and one, and positive to the right of one. Thus f increases on the two outer intervals and decreases on the middle interval. A derivative equal to zero at one isolated point does not force a turning point. The function x cubed has zero derivative at zero but keeps increasing across that point. Also split at places where the derivative does not exist or the original function is undefined; a sign table cannot silently join separate domain components. The endpoints of increasing or decreasing intervals need careful wording when their inclusion is requested. For solving inequalities, use the factored derivative signs rather than only a rough sketch. A graph can check the result, but the sign argument explains it across each whole interval."
+      ]
+    },
+    {
+      "title": "Classify extrema and compare endpoints on a closed interval",
+      "formula": "For f=x³−3x on [0,2]: min f=−2 at x=1; max f=2 at x=2",
+      "paragraphs": [
+        "A local maximum occurs when nearby function values do not exceed the value at the point; a local minimum reverses that comparison. A derivative changing from positive to negative gives a local maximum, while changing from negative to positive gives a local minimum. For a stationary point, a negative second derivative gives a local maximum and a positive second derivative gives a local minimum under the usual differentiability conditions. If the second derivative is zero, the test is inconclusive. For example, x to the fourth has a minimum at zero while x cubed has neither a maximum nor a minimum there, despite both having zero second derivative at zero. For absolute extrema on a closed bounded interval, compare every candidate and the endpoints. On zero through two, f equal to x cubed minus three x has an interior critical point at one. Its candidate values are f of zero equal to zero, f of one equal to negative two, and f of two equal to two. The absolute minimum is negative two at one and the maximum is two at the endpoint two. Checking only stationary points would miss that maximum. A continuous function on a closed bounded interval attains its extremes; open or unbounded intervals need separate existence checks."
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "question": "Find the real domain of ln(x−1)/(x−2) and state the domain/range of eˣ.",
+      "steps": [
+        "The logarithm requires x−1>0; the denominator additionally excludes x=2.",
+        "Intersect the conditions to obtain (1,2)∪(2,∞).",
+        "The exponential has domain ℝ and range (0,∞); its inverse lnx has domain (0,∞)."
+      ],
+      "answer": "Quotient domain (1,2)∪(2,∞); eˣ maps ℝ onto (0,∞)."
+    },
+    {
+      "question": "Evaluate limₓ→₂ (x²−4)/(x−2) and limₓ→₀ (√(1+x)−1)/x.",
+      "steps": [
+        "Factor the first numerator and cancel x−2 for nearby x≠2; x+2 tends to 4.",
+        "Rationalize the second quotient with √(1+x)+1, obtaining 1/(√(1+x)+1) for x≠0.",
+        "Take the limit of the simplified nearby expression; the value is 1/2."
+      ],
+      "answer": "4 and 1/2; cancellation preserves limits without filling the original holes."
+    },
+    {
+      "question": "Using radians, evaluate limₓ→₀ sin(3x)/x and limₓ→₀ (1−cosx)/x².",
+      "steps": [
+        "Write sin(3x)/x=3[sin(3x)/(3x)] to obtain 3.",
+        "Use 1−cosx=2sin²(x/2).",
+        "The second quotient becomes ½[sin(x/2)/(x/2)]² and tends to 1/2."
+      ],
+      "answer": "3 and 1/2."
+    },
+    {
+      "question": "Choose k for continuity at x=1 when f(x)=(x²−1)/(x−1) for x≠1 and f(1)=k.",
+      "steps": [
+        "On nearby inputs, f(x)=x+1.",
+        "Both one-sided limits at 1 equal 2.",
+        "Set the point value k equal to this limit; any other value leaves a discontinuity."
+      ],
+      "answer": "k=2."
+    },
+    {
+      "question": "Derive the derivative of x² and explain why |x| has no derivative at zero.",
+      "steps": [
+        "For x², the difference quotient is [(x+h)²−x²]/h=2x+h for h≠0.",
+        "The limit is 2x.",
+        "For |x| at zero, h>0 gives quotient 1 and h<0 gives −1; the two-sided derivative does not exist."
+      ],
+      "answer": "(x²)′=2x; |x| is continuous but not differentiable at zero."
+    },
+    {
+      "question": "Differentiate (x²+1)(x−1) and x/(1+x).",
+      "steps": [
+        "Use the product rule: 2x(x−1)+(x²+1)=3x²−2x+1.",
+        "Use the quotient rule: [(1+x)−x]/(1+x)²=1/(1+x)².",
+        "Keep x≠−1 for the original quotient and its derivative."
+      ],
+      "answer": "3x²−2x+1; 1/(1+x)² for x≠−1."
+    },
+    {
+      "question": "Differentiate sin(x²) and (3x+1)⁵.",
+      "steps": [
+        "For the sine composite, multiply cos(x²) by 2x.",
+        "For the power composite, multiply 5(3x+1)⁴ by 3.",
+        "Both examples require the derivative of the inner expression."
+      ],
+      "answer": "2xcos(x²) and 15(3x+1)⁴."
+    },
+    {
+      "question": "Differentiate arcsin(2x) and state the finite derivative domain.",
+      "steps": [
+        "The inverse sine input requires |2x|≤1 for the function itself.",
+        "The derivative formula and chain rule give 2/√(1−4x²).",
+        "Finite differentiation requires a positive denominator expression, so |x|<1/2."
+      ],
+      "answer": "2/√(1−4x²), with derivative domain (−1/2,1/2)."
+    },
+    {
+      "question": "Differentiate y=xˣ on x>0.",
+      "steps": [
+        "Take natural logs to obtain ln y=xlnx.",
+        "Differentiate: y′/y=lnx+1.",
+        "Multiply by y and retain the original positive x domain."
+      ],
+      "answer": "y′=xˣ(lnx+1), x>0."
+    },
+    {
+      "question": "For x²+y²=25, find y′ and y″ at (3,4), and identify the tangent at (5,0).",
+      "steps": [
+        "Implicit differentiation gives y′=−x/y where y≠0, so y′(3,4)=−3/4.",
+        "Differentiate again and use the original relation: y″=−25/y³, giving −25/64.",
+        "At (5,0) the finite-slope formula cannot be used; the circle has vertical tangent x=5."
+      ],
+      "answer": "At (3,4): y′=−3/4 and y″=−25/64; at (5,0): tangent x=5."
+    },
+    {
+      "question": "A circle has radius 3 cm growing at 2 cm/s. Find its area growth rate.",
+      "steps": [
+        "Write A=πr² before substituting the instantaneous radius.",
+        "Differentiate with respect to time: dA/dt=2πr·dr/dt.",
+        "Substitute r=3 and dr/dt=2, retaining area-per-time units."
+      ],
+      "answer": "12π cm²/s."
+    },
+    {
+      "question": "Find monotonic intervals of x³−3x and its absolute extrema on [0,2].",
+      "steps": [
+        "f′=3(x−1)(x+1) is positive outside [−1,1] and negative between the roots.",
+        "For [0,2], compare the endpoints 0,2 and the interior critical point 1.",
+        "Values are 0,2 and −2 respectively."
+      ],
+      "answer": "Increasing on (−∞,−1) and (1,∞), decreasing on (−1,1); on [0,2], min −2 at 1 and max 2 at 2."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The real domain of ln(x−1)/(x−2) is:",
+      "options": [
+        "[1,∞)",
+        "(1,2)∪(2,∞)",
+        "ℝ except 2",
+        "(2,∞)"
+      ],
+      "answer": 1,
+      "explanation": "The logarithm requires x−1>0, hence x>1, and the quotient excludes x=2. Both conditions must hold simultaneously."
+    },
+    {
+      "question": "The range of eˣ for real x is:",
+      "options": [
+        "ℝ",
+        "[0,∞)",
+        "(0,∞)",
+        "(−∞,0)"
+      ],
+      "answer": 2,
+      "explanation": "The real exponential is strictly positive and reaches every positive value. Zero is approached as x decreases without bound but is never attained."
+    },
+    {
+      "question": "The limit as x→2 of (x²−4)/(x−2) is:",
+      "options": [
+        "Undefined because the point is excluded",
+        "2",
+        "0",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "For x≠2 the quotient equals x+2, whose nearby values tend to 4. A missing point value does not prevent the limit from existing."
+    },
+    {
+      "question": "The two-sided limit of x/|x| as x→0 is:",
+      "options": [
+        "Nonexistent",
+        "0",
+        "1",
+        "−1"
+      ],
+      "answer": 0,
+      "explanation": "The left limit is −1 and the right limit is 1. Their disagreement prevents a two-sided limit, regardless of a chosen value at zero."
+    },
+    {
+      "question": "The limit as x→0 of (√(1+x)−1)/x is:",
+      "options": [
+        "1",
+        "1/2",
+        "0",
+        "2"
+      ],
+      "answer": 1,
+      "explanation": "Rationalizing gives 1/(√(1+x)+1) for x≠0 near zero. Its limit is 1/(1+1)=1/2."
+    },
+    {
+      "question": "The limit as x→∞ of (3x²+1)/(x²−2) is:",
+      "options": [
+        "0",
+        "1",
+        "3",
+        "∞"
+      ],
+      "answer": 2,
+      "explanation": "Divide numerator and denominator by x². The lower-power ratios vanish, leaving 3/1=3."
+    },
+    {
+      "question": "With angles in radians, limₓ→₀ sin(3x)/x equals:",
+      "options": [
+        "1",
+        "0",
+        "1/3",
+        "3"
+      ],
+      "answer": 3,
+      "explanation": "Rewrite the quotient as 3[sin(3x)/(3x)]. The bracket tends to 1, so the limit is 3."
+    },
+    {
+      "question": "With angles in radians, limₓ→₀ (1−cosx)/x² equals:",
+      "options": [
+        "1/2",
+        "1",
+        "0",
+        "2"
+      ],
+      "answer": 0,
+      "explanation": "Use 1−cosx=2sin²(x/2), then apply the standard sine limit. The remaining factor is 1/2."
+    },
+    {
+      "question": "For x≠1 let f(x)=(x²−1)/(x−1), with f(1)=k. Continuity at 1 requires:",
+      "options": [
+        "k=1",
+        "k=2",
+        "Any k",
+        "k=0"
+      ],
+      "answer": 1,
+      "explanation": "The nearby expression simplifies to x+1, whose limit at 1 is 2. Continuity requires the assigned value to equal that limit."
+    },
+    {
+      "question": "For x≠0 let f(x)=sinx/x in radians. Its continuous extension at zero has value:",
+      "options": [
+        "0",
+        "−1",
+        "1",
+        "Undefined"
+      ],
+      "answer": 2,
+      "explanation": "The standard two-sided limit is 1, so setting f(0)=1 fills the removable hole and makes the extended function continuous there."
+    },
+    {
+      "question": "For f(x)=x², the derivative at x=3 is:",
+      "options": [
+        "3",
+        "9",
+        "12",
+        "6"
+      ],
+      "answer": 3,
+      "explanation": "The first-principles difference quotient is 2x+h, whose limit is 2x. Substituting x=3 gives 6."
+    },
+    {
+      "question": "The function |x| at zero is:",
+      "options": [
+        "Continuous but not differentiable",
+        "Differentiable but not continuous",
+        "Neither continuous nor differentiable",
+        "Differentiable with derivative 0"
+      ],
+      "answer": 0,
+      "explanation": "The function values approach zero from both sides, but the one-sided difference quotients are −1 and +1, so no derivative exists."
+    },
+    {
+      "question": "The derivative of (x²+1)(x−1) is:",
+      "options": [
+        "2x",
+        "3x²−2x+1",
+        "2x²−2x",
+        "3x²+1"
+      ],
+      "answer": 1,
+      "explanation": "The product rule gives 2x(x−1)+(x²+1), simplifying to 3x²−2x+1."
+    },
+    {
+      "question": "For x≠−1, the derivative of x/(1+x) is:",
+      "options": [
+        "1/(1+x)",
+        "−1/(1+x)²",
+        "1/(1+x)²",
+        "0"
+      ],
+      "answer": 2,
+      "explanation": "The quotient numerator is (1+x)−x=1, and the denominator is (1+x)². The excluded input remains x=−1."
+    },
+    {
+      "question": "The derivative of sin(x²), using radians, is:",
+      "options": [
+        "cos(x²)",
+        "2xsinx",
+        "cos(2x)",
+        "2xcos(x²)"
+      ],
+      "answer": 3,
+      "explanation": "Differentiate the outer sine to cosine at x², then multiply by the inner derivative 2x."
+    },
+    {
+      "question": "The derivative of (3x+1)⁵ is:",
+      "options": [
+        "15(3x+1)⁴",
+        "5(3x+1)⁴",
+        "15x⁴",
+        "(3x+1)⁴"
+      ],
+      "answer": 0,
+      "explanation": "The power-rule factor 5 must be multiplied by the inner derivative 3. The bracket remains raised to the fourth power."
+    },
+    {
+      "question": "Where tanx is defined, its radian derivative is:",
+      "options": [
+        "−csc²x",
+        "sec²x",
+        "secxtanx",
+        "cosx"
+      ],
+      "answer": 1,
+      "explanation": "Using the quotient rule on sinx/cosx and the fundamental identity gives 1/cos²x=sec²x."
+    },
+    {
+      "question": "Where cscx is defined, its radian derivative is:",
+      "options": [
+        "cscxcotx",
+        "secxtanx",
+        "−cscxcotx",
+        "−csc²x"
+      ],
+      "answer": 2,
+      "explanation": "Differentiate 1/sinx using the reciprocal rule: −cosx/sin²x=−cscxcotx."
+    },
+    {
+      "question": "For |x|<1, the derivative of arcsinx is:",
+      "options": [
+        "−1/√(1−x²)",
+        "1/(1+x²)",
+        "1/√(x²−1)",
+        "1/√(1−x²)"
+      ],
+      "answer": 3,
+      "explanation": "Implicitly differentiate siny=x on the principal arcsine branch. Cosy is positive in the interior and equals √(1−x²)."
+    },
+    {
+      "question": "With arccotangent range (0,π), its derivative for real x is:",
+      "options": [
+        "−1/(1+x²)",
+        "1/(1+x²)",
+        "−1/√(1−x²)",
+        "1/x²"
+      ],
+      "answer": 0,
+      "explanation": "Under the declared branch, arccotx=π/2−arctanx. Differentiating gives −1/(1+x²)."
+    },
+    {
+      "question": "For x>−1/2, the derivative of ln(2x+1) is:",
+      "options": [
+        "1/(2x+1)",
+        "2/(2x+1)",
+        "2ln(2x+1)",
+        "1/x"
+      ],
+      "answer": 1,
+      "explanation": "The logarithm chain rule gives the inner derivative 2 divided by the original positive argument 2x+1."
+    },
+    {
+      "question": "For x>0, the derivative of xˣ is:",
+      "options": [
+        "x·xˣ⁻¹",
+        "xˣlnx",
+        "xˣ(lnx+1)",
+        "xˣ"
+      ],
+      "answer": 2,
+      "explanation": "Logarithmic differentiation gives ln y=xlnx and y′/y=lnx+1. Multiply by y=xˣ to obtain the result."
+    },
+    {
+      "question": "On x²+y²=25, the slope dy/dx at (3,4) is:",
+      "options": [
+        "3/4",
+        "−4/3",
+        "4/3",
+        "−3/4"
+      ],
+      "answer": 3,
+      "explanation": "Implicit differentiation gives 2x+2yy′=0, so y′=−x/y=−3/4 at the stated point."
+    },
+    {
+      "question": "The tangent to x²+y²=25 at (5,0) is:",
+      "options": [
+        "x=5",
+        "y=0",
+        "No tangent exists",
+        "y=5"
+      ],
+      "answer": 0,
+      "explanation": "The circle has a horizontal radius at (5,0), so its tangent is vertical. A missing finite dy/dx does not mean there is no tangent line."
+    },
+    {
+      "question": "For y=x³−3x, the second derivative is:",
+      "options": [
+        "3x²−3",
+        "6x",
+        "6",
+        "(3x²−3)²"
+      ],
+      "answer": 1,
+      "explanation": "Differentiate y′=3x²−3 once more to get y″=6x. Squaring the first derivative is not second differentiation."
+    },
+    {
+      "question": "For x²+y²=25, the value of y″ at (3,4) is:",
+      "options": [
+        "−3/4",
+        "25/64",
+        "−25/64",
+        "−1/4"
+      ],
+      "answer": 2,
+      "explanation": "Differentiating y′=−x/y and substituting the curve relation yields y″=−25/y³. At y=4 this is −25/64."
+    },
+    {
+      "question": "A circle has r=3 cm and dr/dt=2 cm/s at an instant. Its area growth rate then is:",
+      "options": [
+        "6π cm²/s",
+        "9π cm²/s",
+        "18π cm²/s",
+        "12π cm²/s"
+      ],
+      "answer": 3,
+      "explanation": "Differentiate A=πr² with respect to time: dA/dt=2πr·dr/dt=2π×3×2=12π cm²/s."
+    },
+    {
+      "question": "If s(t)=t³, the instantaneous derivative ds/dt at t=2 is:",
+      "options": [
+        "12",
+        "8",
+        "6",
+        "4"
+      ],
+      "answer": 0,
+      "explanation": "The derivative is 3t². At t=2 it equals 12; evaluating the original displacement would instead give 8."
+    },
+    {
+      "question": "The function f(x)=x³−3x is decreasing on:",
+      "options": [
+        "(−∞,−1)",
+        "(−1,1)",
+        "(1,∞)",
+        "ℝ"
+      ],
+      "answer": 1,
+      "explanation": "Its derivative is 3(x−1)(x+1), negative exactly between −1 and 1. It is positive on both outer intervals."
+    },
+    {
+      "question": "For f(x)=x³, the stationary point x=0 is:",
+      "options": [
+        "A local maximum",
+        "A local minimum",
+        "Neither a local maximum nor minimum",
+        "A discontinuity"
+      ],
+      "answer": 2,
+      "explanation": "Although f′(0)=0, the derivative is positive on both sides. The function keeps increasing, so zero is not an extremum."
+    },
+    {
+      "question": "For f(x)=x³−3x on [0,2], the absolute maximum is:",
+      "options": [
+        "0 at x=0",
+        "−2 at x=1",
+        "2 at x=1",
+        "2 at x=2"
+      ],
+      "answer": 3,
+      "explanation": "Compare endpoints and the interior critical point: f(0)=0, f(1)=−2, f(2)=2. The endpoint x=2 gives the maximum."
+    },
+    {
+      "question": "At a stationary point with f″=0, the second derivative test is:",
+      "options": [
+        "Inconclusive",
+        "Proof of a minimum",
+        "Proof of a maximum",
+        "Proof that no extremum exists"
+      ],
+      "answer": 0,
+      "explanation": "A zero second derivative does not classify the point: x⁴ has a minimum at zero, while x³ has neither extremum there."
+    }
+  ],
+  "sources": [
+    {
+      "title": "NTA JEE Main 2026 Mathematics Unit 7",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax Calculus: The Limit of a Function",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/2-2-the-limit-of-a-function"
+    },
+    {
+      "title": "OpenStax Calculus: Derivatives of Inverse Functions",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-7-derivatives-of-inverse-functions"
+    },
+    {
+      "title": "OpenStax Calculus: Maxima and Minima",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/4-3-maxima-and-minima"
+    }
+  ]
+};

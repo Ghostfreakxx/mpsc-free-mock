@@ -16,6 +16,8 @@ export function generateStaticParams() {
 }
 
 const figureAlt: Record<string, string> = {
+  "limits-continuity-differentiability": "The quotient (x squared minus four)/(x minus two) has limit four at x=2 but is undefined there. A derivative is a limit of secant slopes; the absolute-value graph is continuous at zero but has left slope negative one and right slope positive one, so it is not differentiable there.",
+  "trigonometry": "On the unit circle the point at angle two pi over three has cosine negative one half and sine square root of three over two. Principal inverse sine outputs lie between negative pi over two and pi over two; inverse cosine outputs lie between zero and pi.",
   "sequences-series": "The AP 2,5,8 has constant difference 3. Inserting three arithmetic means between 2 and 18 gives 2,6,10,14,18. Inserting three positive geometric means between 2 and 162 gives 2,6,18,54,162 with ratio 3.",
   "binomial-theorem": "The term T(r+1) in (2x−3)^5 is C(5,r)(2x)^(5−r)(−3)^r. To obtain x cubed, solve 5−r=3, giving r=2 and the third term 720x cubed.",
   "permutations-combinations": "Choosing an unordered committee of three from seven people gives C(7,3)=35. Assigning first, second and third places gives P(7,3)=210. Each committee has 3!=6 internal orders.",
@@ -66,7 +68,7 @@ export default async function StudyPage({ params }: { params: Promise<{ slug: st
   const lesson = writtenLesson ? withLectureClarifications(writtenLesson, recording)
     : recording && unitIndex >= 0 ? lectureStudyLesson(recording, unitIndex + 1, physicsCoverage[unitIndex].remaining) : undefined;
   if (!lesson) notFound();
-  const svgFigure = ["sequences-series", "binomial-theorem", "permutations-combinations", "matrices-determinants", "chemistry-foundations", "atomic-spectra", "periodic-trends", "chemical-bonding", "chemical-thermodynamics", "solutions", "equilibrium", "redox-electrochemistry", "chemical-kinetics", "coordination-compounds", "organic-principles", "hydrocarbons", "organic-halogens", "organic-oxygen", "organic-nitrogen", "biomolecules", "purification-analysis", "p-block", "d-f-block", "practical-chemistry"].includes(lesson.id);
+  const svgFigure = ["limits-continuity-differentiability", "trigonometry", "sequences-series", "binomial-theorem", "permutations-combinations", "matrices-determinants", "chemistry-foundations", "atomic-spectra", "periodic-trends", "chemical-bonding", "chemical-thermodynamics", "solutions", "equilibrium", "redox-electrochemistry", "chemical-kinetics", "coordination-compounds", "organic-principles", "hydrocarbons", "organic-halogens", "organic-oxygen", "organic-nitrogen", "biomolecules", "purification-analysis", "p-block", "d-f-block", "practical-chemistry"].includes(lesson.id);
   const subjectLessons = writtenLesson ? studyLessons.filter(item => item.subject === lesson.subject) : lectures.map(item => ({ id: item.id, title: item.title }));
   const position = subjectLessons.findIndex(item => item.id === lesson.id);
   const previous = subjectLessons[position - 1];
