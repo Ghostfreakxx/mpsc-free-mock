@@ -31,6 +31,7 @@ import {
   MapPin,
   NotebookPen,
   Play,
+  Scale,
   Search,
   ShieldCheck,
   Sparkles,
@@ -150,6 +151,15 @@ const courses: {
     href: "/cuet-pg",
     icon: Compass,
     theme: "gold",
+    format: "Question bank",
+  },
+  {
+    title: "Law: Mizoram Judicial Service",
+    subject: "Civil Judge prelims",
+    description: "Constitution, CPC, BNSS, BNS, BSA and more, with instant explanations and a timed 100-question mock.",
+    href: "/law/mjs",
+    icon: Scale,
+    theme: "green",
     format: "Question bank",
   },
   {
