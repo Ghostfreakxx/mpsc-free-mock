@@ -1,0 +1,1475 @@
+{
+  "duration": 747.2400000000193,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 73.7520000000019
+    },
+    {
+      "start": 73.7520000000019,
+      "end": 149.76000000000388
+    },
+    {
+      "start": 149.76000000000388,
+      "end": 222.26400000000575
+    },
+    {
+      "start": 222.26400000000575,
+      "end": 303.4800000000079
+    },
+    {
+      "start": 303.4800000000079,
+      "end": 378.74400000000986
+    },
+    {
+      "start": 378.74400000000986,
+      "end": 449.76000000001164
+    },
+    {
+      "start": 449.76000000001164,
+      "end": 529.1280000000138
+    },
+    {
+      "start": 529.1280000000138,
+      "end": 596.2800000000154
+    },
+    {
+      "start": 596.2800000000154,
+      "end": 671.5920000000174
+    },
+    {
+      "start": 671.5920000000174,
+      "end": 747.2400000000193
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.680000066757202,
+      "text": "Counting begins by defining an outcome.",
+      "chapter": 0
+    },
+    {
+      "start": 3.380000114440918,
+      "end": 7.840000152587891,
+      "text": "If you choose one shirt, one pair of trousers and one pair of shoes, an outfit",
+      "chapter": 0
+    },
+    {
+      "start": 7.840000152587891,
+      "end": 9.579999923706055,
+      "text": "is the complete triple of choices.",
+      "chapter": 0
+    },
+    {
+      "start": 10.399999618530273,
+      "end": 15.060769313421005,
+      "text": "With two shirts, three trousers and two shoe options, there are two times",
+      "chapter": 0
+    },
+    {
+      "start": 15.060769313421005,
+      "end": 15.380000114440918,
+      "text": "three",
+      "chapter": 0
+    },
+    {
+      "start": 15.380000114440918,
+      "end": 17.219999313354492,
+      "text": "times two, or twelve outfits.",
+      "chapter": 0
+    },
+    {
+      "start": 18.020000457763672,
+      "end": 22.15999984741211,
+      "text": "This multiplication rule works because each partial choice admits the stated",
+      "chapter": 0
+    },
+    {
+      "start": 22.15999984741211,
+      "end": 23.15999984741211,
+      "text": "number of next choices.",
+      "chapter": 0
+    },
+    {
+      "start": 23.8799991607666,
+      "end": 26.040000915527344,
+      "text": "It does not require probability independence.",
+      "chapter": 0
+    },
+    {
+      "start": 26.579999923706055,
+      "end": 31.139999389648438,
+      "text": "If restrictions make that number vary, split into cases or count each branch",
+      "chapter": 0
+    },
+    {
+      "start": 31.139999389648438,
+      "end": 31.600000381469727,
+      "text": "separately.",
+      "chapter": 0
+    },
+    {
+      "start": 32.540000915527344,
+      "end": 34.939998626708984,
+      "text": "The addition rule combines disjoint alternatives.",
+      "chapter": 0
+    },
+    {
+      "start": 35.68000030517578,
+      "end": 39.34000015258789,
+      "text": "If a journey uses either one of four train services or one of three bus",
+      "chapter": 0
+    },
+    {
+      "start": 39.34000015258789,
+      "end": 43.52000045776367,
+      "text": "services, and the services are distinct options, there are seven choices.",
+      "chapter": 0
+    },
+    {
+      "start": 43.7599983215332,
+      "end": 48.119998931884766,
+      "text": "You add because taking one service is the outcome; you are not taking a train",
+      "chapter": 0
+    },
+    {
+      "start": 48.119998931884766,
+      "end": 49.060001373291016,
+      "text": "and then a bus.",
+      "chapter": 0
+    },
+    {
+      "start": 49.41999816894531,
+      "end": 53.279998779296875,
+      "text": "If cases overlap, simple addition double counts the shared outcomes.",
+      "chapter": 0
+    },
+    {
+      "start": 53.279998779296875,
+      "end": 58.29999923706055,
+      "text": "Remove that overlap or rewrite the cases so each outcome belongs to exactly",
+      "chapter": 0
+    },
+    {
+      "start": 58.29999923706055,
+      "end": 59.040000915527344,
+      "text": "one.",
+      "chapter": 0
+    },
+    {
+      "start": 59.52000045776367,
+      "end": 64.19999694824219,
+      "text": "A small tree diagram is useful: branches represent successive choices, and",
+      "chapter": 0
+    },
+    {
+      "start": 64.19999694824219,
+      "end": 65.9000015258789,
+      "text": "completed paths represent outcomes.",
+      "chapter": 0
+    },
+    {
+      "start": 67.0999984741211,
+      "end": 70.87999725341797,
+      "text": "Before using a factorial or a combination symbol, say whether you are",
+      "chapter": 0
+    },
+    {
+      "start": 70.87999725341797,
+      "end": 73.26000213623047,
+      "text": "selecting, ordering or performing several stages.",
+      "chapter": 0
+    },
+    {
+      "start": 73.7520000000019,
+      "end": 78.01200022888374,
+      "text": "Suppose seven distinct runners compete for first, second and third positions,",
+      "chapter": 1
+    },
+    {
+      "start": 78.53200020981025,
+      "end": 79.29199996185493,
+      "text": "with no ties.",
+      "chapter": 1
+    },
+    {
+      "start": 79.91199984741401,
+      "end": 82.41199984741401,
+      "text": "A podium is an ordered list of three different people.",
+      "chapter": 1
+    },
+    {
+      "start": 82.99199977112006,
+      "end": 87.39200034332465,
+      "text": "There are seven choices for first, six for second and five for third, giving",
+      "chapter": 1
+    },
+    {
+      "start": 87.39200034332465,
+      "end": 88.6919995803852,
+      "text": "two hundred ten podiums.",
+      "chapter": 1
+    },
+    {
+      "start": 89.29199996185493,
+      "end": 92.17200007629584,
+      "text": "This is the permutation count P of seven, three.",
+      "chapter": 1
+    },
+    {
+      "start": 93.07199969482612,
+      "end": 96.93200030517768,
+      "text": "For n distinct objects placed into r ordered positions without replacement,",
+      "chapter": 1
+    },
+    {
+      "start": 96.93200030517768,
+      "end": 101.07199969482612,
+      "text": "multiply n by n minus one, continuing for r factors.",
+      "chapter": 1
+    },
+    {
+      "start": 101.85200038147163,
+      "end": 106.10635862419123,
+      "text": "In factorial notation the result is n factorial divided by n minus r",
+      "chapter": 1
+    },
+    {
+      "start": 106.10635862419123,
+      "end": 106.73199954223823,
+      "text": "factorial.",
+      "chapter": 1
+    },
+    {
+      "start": 107.69199862671088,
+      "end": 112.2520000000019,
+      "text": "A factorial multiplies positive integers down to one, and zero factorial is",
+      "chapter": 1
+    },
+    {
+      "start": 112.2520000000019,
+      "end": 113.1520015258808,
+      "text": "defined as one.",
+      "chapter": 1
+    },
+    {
+      "start": 113.7520000000019,
+      "end": 116.95200076294135,
+      "text": "This is consistent with one empty arrangement when no positions are filled.",
+      "chapter": 1
+    },
+    {
+      "start": 118.05199923706245,
+      "end": 120.53199877929877,
+      "text": "Arranging all n distinct objects gives n factorial.",
+      "chapter": 1
+    },
+    {
+      "start": 121.47200122070502,
+      "end": 124.1520015258808,
+      "text": "Choosing zero positions gives one outcome, not zero.",
+      "chapter": 1
+    },
+    {
+      "start": 124.79200091552924,
+      "end": 128.03199877929876,
+      "text": "The formula assumes r is an integer between zero and n.",
+      "chapter": 1
+    },
+    {
+      "start": 128.61200061035345,
+      "end": 131.79200091552923,
+      "text": "If more distinct objects are requested than are available without replacement,",
+      "chapter": 1
+    },
+    {
+      "start": 132.37199893188665,
+      "end": 133.43200030517767,
+      "text": "there are no such arrangements.",
+      "chapter": 1
+    },
+    {
+      "start": 134.25200000000189,
+      "end": 138.51200213623235,
+      "text": "When repetition is allowed instead, each position may have n choices and the",
+      "chapter": 1
+    },
+    {
+      "start": 138.51200213623235,
+      "end": 140.0919963378925,
+      "text": "count becomes n to the power r.",
+      "chapter": 1
+    },
+    {
+      "start": 140.87200274658392,
+      "end": 144.0848180557661,
+      "text": "Always attach the replacement rule and the meaning of positions to the",
+      "chapter": 1
+    },
+    {
+      "start": 144.0848180557661,
+      "end": 144.45199694824407,
+      "text": "formula.",
+      "chapter": 1
+    },
+    {
+      "start": 145.21199908447454,
+      "end": 148.85199847412298,
+      "text": "A selection of three people with no assigned roles is a different outcome from",
+      "chapter": 1
+    },
+    {
+      "start": 148.85199847412298,
+      "end": 149.5520030517597,
+      "text": "a ranked podium.",
+      "chapter": 1
+    },
+    {
+      "start": 149.76000000000388,
+      "end": 154.10482755332546,
+      "text": "A committee of three chosen from seven distinct people has no ranking among",
+      "chapter": 2
+    },
+    {
+      "start": 154.10482755332546,
+      "end": 154.7999999618569,
+      "text": "its members.",
+      "chapter": 2
+    },
+    {
+      "start": 155.60000015259178,
+      "end": 159.0799996948281,
+      "text": "Listing the same three names in a different order does not create a different",
+      "chapter": 2
+    },
+    {
+      "start": 159.0799996948281,
+      "end": 159.32000041962058,
+      "text": "committee.",
+      "chapter": 2
+    },
+    {
+      "start": 160.06000019073875,
+      "end": 164.37999988556297,
+      "text": "The permutation count two hundred ten counts each committee three factorial",
+      "chapter": 2
+    },
+    {
+      "start": 164.37999988556297,
+      "end": 168.919999847416,
+      "text": "times, because its members can occupy the three list positions in six orders.",
+      "chapter": 2
+    },
+    {
+      "start": 169.83999992370994,
+      "end": 172.1399991607705,
+      "text": "Divide by six to obtain thirty five committees.",
+      "chapter": 2
+    },
+    {
+      "start": 172.1399991607705,
+      "end": 177.5799996948281,
+      "text": "In general, C of n, r equals n factorial divided by r factorial",
+      "chapter": 2
+    },
+    {
+      "start": 177.5799996948281,
+      "end": 179.419999847416,
+      "text": "times n minus r factorial.",
+      "chapter": 2
+    },
+    {
+      "start": 180.10000015259178,
+      "end": 185.8200013732949,
+      "text": "The relation P of n, r equals r factorial times C of n, r explains the",
+      "chapter": 2
+    },
+    {
+      "start": 185.8200013732949,
+      "end": 187.80000091553123,
+      "text": "distinction between selection and arrangement.",
+      "chapter": 2
+    },
+    {
+      "start": 188.60000015259178,
+      "end": 193.26000000000388,
+      "text": "Selecting r people is also equivalent to specifying the n minus r people left",
+      "chapter": 2
+    },
+    {
+      "start": 193.26000000000388,
+      "end": 196.96000076294334,
+      "text": "out, giving C of n, r equal to C of n, n minus r.",
+      "chapter": 2
+    },
+    {
+      "start": 197.78000045776756,
+      "end": 200.84000183105857,
+      "text": "Pascal's identity follows by fixing one distinguished person.",
+      "chapter": 2
+    },
+    {
+      "start": 201.419999847416,
+      "end": 205.50000167847068,
+      "text": "A committee either contains that person and chooses its remaining r minus one",
+      "chapter": 2
+    },
+    {
+      "start": 205.50000167847068,
+      "end": 209.94000030517967,
+      "text": "members from the others, or excludes that person and chooses all r from the",
+      "chapter": 2
+    },
+    {
+      "start": 209.94000030517967,
+      "end": 210.12000061035545,
+      "text": "others.",
+      "chapter": 2
+    },
+    {
+      "start": 210.7399995422402,
+      "end": 211.84000183105857,
+      "text": "The cases are disjoint.",
+      "chapter": 2
+    },
+    {
+      "start": 212.60000015259178,
+      "end": 218.35999847412498,
+      "text": "Thus C of n, r is C of n minus one, r minus one plus C of n minus one, r.",
+      "chapter": 2
+    },
+    {
+      "start": 218.71999908447654,
+      "end": 222.10300015259318,
+      "text": "For choosing three from seven, this gives fifteen plus twenty, again thirty",
+      "chapter": 2
+    },
+    {
+      "start": 222.10300015259318,
+      "end": 222.26400000000575,
+      "text": "five.",
+      "chapter": 2
+    },
+    {
+      "start": 222.26400000000575,
+      "end": 225.22400003815272,
+      "text": "Repeated symbols change the meaning of an arrangement.",
+      "chapter": 3
+    },
+    {
+      "start": 226.04399997139552,
+      "end": 231.22400003815272,
+      "text": "The word BANANA contains six letters: three copies of A, two copies of N and",
+      "chapter": 3
+    },
+    {
+      "start": 231.22400003815272,
+      "end": 231.64400011444667,
+      "text": "one B.",
+      "chapter": 3
+    },
+    {
+      "start": 232.26400000000575,
+      "end": 236.60964106281563,
+      "text": "If every physical copy were temporarily labelled, six factorial orders would",
+      "chapter": 3
+    },
+    {
+      "start": 236.60964106281563,
+      "end": 236.72400003815272,
+      "text": "be",
+      "chapter": 3
+    },
+    {
+      "start": 236.72400003815272,
+      "end": 237.14400011444667,
+      "text": "possible.",
+      "chapter": 3
+    },
+    {
+      "start": 238.06400019074061,
+      "end": 242.33323005520344,
+      "text": "Removing labels makes each visible arrangement occur three factorial times",
+      "chapter": 3
+    },
+    {
+      "start": 242.33323005520344,
+      "end": 242.5639992370663,
+      "text": "from",
+      "chapter": 3
+    },
+    {
+      "start": 242.5639992370663,
+      "end": 245.8040009155331,
+      "text": "the A labels and two factorial times from the N labels.",
+      "chapter": 3
+    },
+    {
+      "start": 246.6840000762997,
+      "end": 249.4640007629452,
+      "text": "Divide by both factors to obtain sixty distinct strings.",
+      "chapter": 3
+    },
+    {
+      "start": 249.9340000762997,
+      "end": 254.10400015259364,
+      "text": "More generally, with n objects divided into indistinguishable types of",
+      "chapter": 3
+    },
+    {
+      "start": 254.10400015259364,
+      "end": 259.5439987793026,
+      "text": "multiplicities n one, n two and so on, the count is n factorial divided by the",
+      "chapter": 3
+    },
+    {
+      "start": 259.5439987793026,
+      "end": 261.3839989318905,
+      "text": "product of the multiplicity factorials.",
+      "chapter": 3
+    },
+    {
+      "start": 261.92399984741786,
+      "end": 263.66400152588466,
+      "text": "The multiplicities must sum to n.",
+      "chapter": 3
+    },
+    {
+      "start": 264.3040009155331,
+      "end": 270.08399969482997,
+      "text": "For A, A, B, the visible strings are AAB, ABA and BAA, agreeing",
+      "chapter": 3
+    },
+    {
+      "start": 270.08399969482997,
+      "end": 272.42399984741786,
+      "text": "with three factorial divided by two factorial.",
+      "chapter": 3
+    },
+    {
+      "start": 273.26400000000575,
+      "end": 276.86399847412684,
+      "text": "Do not divide by a factorial merely because two objects share a broad",
+      "chapter": 3
+    },
+    {
+      "start": 276.86399847412684,
+      "end": 280.1240006103573,
+      "text": "description if the problem treats those objects as distinct.",
+      "chapter": 3
+    },
+    {
+      "start": 281.0439987793026,
+      "end": 284.5439987793026,
+      "text": "Two named students remain distinct even if they wear identical uniforms.",
+      "chapter": 3
+    },
+    {
+      "start": 285.44400030518153,
+      "end": 289.0039978637753,
+      "text": "Conversely, labelling identical balls changes a distribution problem.",
+      "chapter": 3
+    },
+    {
+      "start": 290.16400152588466,
+      "end": 293.46399694824794,
+      "text": "The right divisor comes from how many labelled outcomes collapse to each",
+      "chapter": 3
+    },
+    {
+      "start": 293.46399694824794,
+      "end": 294.18399816895106,
+      "text": "visible outcome.",
+      "chapter": 3
+    },
+    {
+      "start": 295.1039963378964,
+      "end": 298.5039978637753,
+      "text": "Check that this number is constant before using division as a shortcut.",
+      "chapter": 3
+    },
+    {
+      "start": 299.0439987793026,
+      "end": 302.9840012207089,
+      "text": "This keeps repeated object reasoning connected to the actual objects being",
+      "chapter": 3
+    },
+    {
+      "start": 302.9840012207089,
+      "end": 303.2239990844784,
+      "text": "counted.",
+      "chapter": 3
+    },
+    {
+      "start": 303.4800000000079,
+      "end": 307.2399999904712,
+      "text": "Adjacency constraints often become simpler when a group is treated as one",
+      "chapter": 4
+    },
+    {
+      "start": 307.2399999904712,
+      "end": 307.51999996186095,
+      "text": "block.",
+      "chapter": 4
+    },
+    {
+      "start": 308.24000022888976,
+      "end": 311.0799999046405,
+      "text": "Five distinct people, including A and B, stand in a row.",
+      "chapter": 4
+    },
+    {
+      "start": 311.559999923714,
+      "end": 315.1200003433307,
+      "text": "If A and B must be adjacent, combine them into one block.",
+      "chapter": 4
+    },
+    {
+      "start": 315.6200003433307,
+      "end": 319.6000008392413,
+      "text": "Along with the other three people, this makes four units to arrange, giving",
+      "chapter": 4
+    },
+    {
+      "start": 319.6000008392413,
+      "end": 321.0000004577716,
+      "text": "four factorial orders.",
+      "chapter": 4
+    },
+    {
+      "start": 322.0399994659503,
+      "end": 325.11999938965636,
+      "text": "Inside the block, A B and B A are two different orders.",
+      "chapter": 4
+    },
+    {
+      "start": 325.8599991607745,
+      "end": 327.79999969483214,
+      "text": "Multiply to obtain forty eight rows.",
+      "chapter": 4
+    },
+    {
+      "start": 328.2600006866534,
+      "end": 332.62538434836375,
+      "text": "If three specified people among the same five must all stand consecutively,",
+      "chapter": 4
+    },
+    {
+      "start": 332.62538434836375,
+      "end": 332.79999969483214,
+      "text": "the",
+      "chapter": 4
+    },
+    {
+      "start": 332.79999969483214,
+      "end": 335.5000004577716,
+      "text": "block and two remaining people form three units.",
+      "chapter": 4
+    },
+    {
+      "start": 336.13999984742003,
+      "end": 339.61999938965636,
+      "text": "There are three factorial outer orders and three factorial internal orders,",
+      "chapter": 4
+    },
+    {
+      "start": 339.77999923706847,
+      "end": 341.2599987793048,
+      "text": "giving thirty six rows.",
+      "chapter": 4
+    },
+    {
+      "start": 342.20000122071104,
+      "end": 345.45999954224425,
+      "text": "The phrase together must mean consecutive positions for this construction.",
+      "chapter": 4
+    },
+    {
+      "start": 346.0600018310626,
+      "end": 349.8800015258868,
+      "text": "It does not automatically mean a fixed internal order; that needs a separate",
+      "chapter": 4
+    },
+    {
+      "start": 349.8800015258868,
+      "end": 350.3200001525958,
+      "text": "condition.",
+      "chapter": 4
+    },
+    {
+      "start": 351.11999938965636,
+      "end": 354.89999816895323,
+      "text": "If a particular order A before B is required within their two person block,",
+      "chapter": 4
+    },
+    {
+      "start": 355.3400006103595,
+      "end": 357.0600018310626,
+      "text": "only one internal order remains.",
+      "chapter": 4
+    },
+    {
+      "start": 357.77999923706847,
+      "end": 362.6600003051837,
+      "text": "Blocks may also fail when several adjacency requirements overlap, so draw the",
+      "chapter": 4
+    },
+    {
+      "start": 362.6600003051837,
+      "end": 363.9399990844806,
+      "text": "intended pattern before multiplying.",
+      "chapter": 4
+    },
+    {
+      "start": 364.8200001525958,
+      "end": 368.78000305176573,
+      "text": "A useful check for the two person example is that all five person rows number",
+      "chapter": 4
+    },
+    {
+      "start": 368.78000305176573,
+      "end": 370.2599987793048,
+      "text": "one hundred twenty.",
+      "chapter": 4
+    },
+    {
+      "start": 370.2599987793048,
+      "end": 374.4399990844806,
+      "text": "The forty eight adjacent rows form a subset, leaving seventy two rows where A",
+      "chapter": 4
+    },
+    {
+      "start": 374.4399990844806,
+      "end": 375.4999966430743,
+      "text": "and B are separated.",
+      "chapter": 4
+    },
+    {
+      "start": 376.10000274658995,
+      "end": 378.4600033569415,
+      "text": "We will recover that separated count with gaps.",
+      "chapter": 4
+    },
+    {
+      "start": 378.74400000000986,
+      "end": 383.20400003815683,
+      "text": "To keep two specified people apart in a five person row, arrange the other",
+      "chapter": 5
+    },
+    {
+      "start": 383.20400003815683,
+      "end": 384.08400015259775,
+      "text": "three people first.",
+      "chapter": 5
+    },
+    {
+      "start": 384.6440000953773,
+      "end": 386.483999771128,
+      "text": "There are three factorial anchor orders.",
+      "chapter": 5
+    },
+    {
+      "start": 387.3440003814796,
+      "end": 391.2839999618629,
+      "text": "Each anchor row has four gaps: before the first person, between consecutive",
+      "chapter": 5
+    },
+    {
+      "start": 391.2839999618629,
+      "end": 392.90399984742197,
+      "text": "people and after the last.",
+      "chapter": 5
+    },
+    {
+      "start": 393.5639996948341,
+      "end": 397.2840009155372,
+      "text": "Put the two special people into different gaps, choosing two of the four gaps",
+      "chapter": 5
+    },
+    {
+      "start": 397.2840009155372,
+      "end": 398.1040006103614,
+      "text": "in six ways.",
+      "chapter": 5
+    },
+    {
+      "start": 398.6640000763038,
+      "end": 402.14399961854014,
+      "text": "Then decide which special person uses which chosen gap in two ways.",
+      "chapter": 5
+    },
+    {
+      "start": 402.6040006103614,
+      "end": 406.1040006103614,
+      "text": "The result is six times six times two, or seventy two rows.",
+      "chapter": 5
+    },
+    {
+      "start": 406.733999771128,
+      "end": 411.33976804822294,
+      "text": "Each valid row has a unique anchor order and choice of occupied gaps, so no",
+      "chapter": 5
+    },
+    {
+      "start": 411.33976804822294,
+      "end": 411.52399877930674,
+      "text": "row",
+      "chapter": 5
+    },
+    {
+      "start": 411.52399877930674,
+      "end": 412.3639989318946,
+      "text": "is counted twice.",
+      "chapter": 5
+    },
+    {
+      "start": 413.08400015259775,
+      "end": 416.4883583398901,
+      "text": "This agrees with subtracting the forty eight adjacent rows from all one",
+      "chapter": 5
+    },
+    {
+      "start": 416.4883583398901,
+      "end": 416.823999287933,
+      "text": "hundred",
+      "chapter": 5
+    },
+    {
+      "start": 416.823999287933,
+      "end": 417.3040013733009,
+      "text": "twenty rows.",
+      "chapter": 5
+    },
+    {
+      "start": 417.58400015259775,
+      "end": 421.44246197276,
+      "text": "The same method handles four distinct anchors and three distinct special",
+      "chapter": 5
+    },
+    {
+      "start": 421.44246197276,
+      "end": 421.76400045777353,
+      "text": "people",
+      "chapter": 5
+    },
+    {
+      "start": 422.1240010681251,
+      "end": 424.58400015259775,
+      "text": "when no two specials may be neighbours.",
+      "chapter": 5
+    },
+    {
+      "start": 424.58400015259775,
+      "end": 428.9440007629493,
+      "text": "Four factorial anchor orders give five gaps; choose three gaps and arrange the",
+      "chapter": 5
+    },
+    {
+      "start": 428.9440007629493,
+      "end": 433.48400167847666,
+      "text": "three specials, giving four factorial times C of five, three times three",
+      "chapter": 5
+    },
+    {
+      "start": 433.48400167847666,
+      "end": 436.5439992370704,
+      "text": "factorial, or one thousand four hundred forty.",
+      "chapter": 5
+    },
+    {
+      "start": 436.5439992370704,
+      "end": 440.08400015259775,
+      "text": "If specials are indistinguishable, remove their internal arrangement factor.",
+      "chapter": 5
+    },
+    {
+      "start": 440.6639981689552,
+      "end": 444.5440030517677,
+      "text": "If several may share a gap, the simple different gap formula is unavailable.",
+      "chapter": 5
+    },
+    {
+      "start": 445.22400335694346,
+      "end": 448.94399694825205,
+      "text": "The wording of the separation condition determines which placement pattern is",
+      "chapter": 5
+    },
+    {
+      "start": 448.94399694825205,
+      "end": 449.1840024414161,
+      "text": "valid.",
+      "chapter": 5
+    },
+    {
+      "start": 449.76000000001164,
+      "end": 452.59999991418096,
+      "text": "Circular arrangements require an equivalence convention.",
+      "chapter": 6
+    },
+    {
+      "start": 453.5599999523279,
+      "end": 457.32102549113927,
+      "text": "Suppose six distinct people sit around a round table, with rotations treated",
+      "chapter": 6
+    },
+    {
+      "start": 457.32102549113927,
+      "end": 457.41999984742375,
+      "text": "as",
+      "chapter": 6
+    },
+    {
+      "start": 457.41999984742375,
+      "end": 459.98000026704045,
+      "text": "the same seating and reflections treated as different.",
+      "chapter": 6
+    },
+    {
+      "start": 460.8399999237177,
+      "end": 463.0200002288935,
+      "text": "Fix one chosen person as the reference position.",
+      "chapter": 6
+    },
+    {
+      "start": 463.739999542248,
+      "end": 468.4866661326207,
+      "text": "The other five can be placed clockwise in five factorial orders, giving one",
+      "chapter": 6
+    },
+    {
+      "start": 468.4866661326207,
+      "end": 470.300000915539,
+      "text": "hundred twenty circular seatings.",
+      "chapter": 6
+    },
+    {
+      "start": 470.8399999237177,
+      "end": 474.86000038148137,
+      "text": "This removes the rotational overcount that would appear if we numbered all six",
+      "chapter": 6
+    },
+    {
+      "start": 474.86000038148137,
+      "end": 475.6200006103632,
+      "text": "starting positions.",
+      "chapter": 6
+    },
+    {
+      "start": 476.10000015259953,
+      "end": 480.20000053406926,
+      "text": "If the chairs are labelled, rotations change which labelled chair each person",
+      "chapter": 6
+    },
+    {
+      "start": 480.20000053406926,
+      "end": 483.739999542248,
+      "text": "occupies, so there are six factorial seat assignments instead.",
+      "chapter": 6
+    },
+    {
+      "start": 484.5599992370722,
+      "end": 488.32000137330266,
+      "text": "Do not automatically divide by another factor of two: clockwise and",
+      "chapter": 6
+    },
+    {
+      "start": 488.32000137330266,
+      "end": 491.35999847413274,
+      "text": "anticlockwise orders are different under the stated convention.",
+      "chapter": 6
+    },
+    {
+      "start": 492.41999984742375,
+      "end": 496.01999832154485,
+      "text": "Necklaces or bracelets can use different conventions, especially when repeated",
+      "chapter": 6
+    },
+    {
+      "start": 496.01999832154485,
+      "end": 497.76000000001164,
+      "text": "objects create additional symmetries.",
+      "chapter": 6
+    },
+    {
+      "start": 498.51999832154485,
+      "end": 500.239999542248,
+      "text": "Those require a separate analysis.",
+      "chapter": 6
+    },
+    {
+      "start": 501.0399987793085,
+      "end": 504.6200006103632,
+      "text": "If A and B among the six people must be adjacent, treat them as a block.",
+      "chapter": 6
+    },
+    {
+      "start": 505.32000137330266,
+      "end": 508.800000915539,
+      "text": "The block plus the other four people gives five units around the table.",
+      "chapter": 6
+    },
+    {
+      "start": 509.3799989318964,
+      "end": 513.6200006103631,
+      "text": "Fix a reference unit to count four factorial circular orders, then multiply by",
+      "chapter": 6
+    },
+    {
+      "start": 513.6200006103631,
+      "end": 516.9999978637811,
+      "text": "two internal block orders, obtaining forty eight.",
+      "chapter": 6
+    },
+    {
+      "start": 516.9999978637811,
+      "end": 520.9400003051874,
+      "text": "Always name the objects, decide whether chairs are labelled, and state whether",
+      "chapter": 6
+    },
+    {
+      "start": 520.9400003051874,
+      "end": 524.279996643078,
+      "text": "reflection is identified before selecting a circular counting formula.",
+      "chapter": 6
+    },
+    {
+      "start": 525.0600030517694,
+      "end": 528.8800027465936,
+      "text": "The formula follows from those choices rather than from the word circle alone.",
+      "chapter": 6
+    },
+    {
+      "start": 529.1280000000138,
+      "end": 532.6479999809403,
+      "text": "A digit string and a three digit number need not have the same count.",
+      "chapter": 7
+    },
+    {
+      "start": 533.3880002288956,
+      "end": 537.0480000763077,
+      "text": "Using zero, one, two, three and four without repetition, a three digit number",
+      "chapter": 7
+    },
+    {
+      "start": 537.0480000763077,
+      "end": 540.1480004577775,
+      "text": "has four choices for its first digit because zero is excluded.",
+      "chapter": 7
+    },
+    {
+      "start": 540.907999732985,
+      "end": 545.2079999237199,
+      "text": "After choosing a nonzero first digit, four digits remain, including zero, for",
+      "chapter": 7
+    },
+    {
+      "start": 545.2079999237199,
+      "end": 545.9080006866593,
+      "text": "the second position.",
+      "chapter": 7
+    },
+    {
+      "start": 546.6480004577775,
+      "end": 547.8880002288956,
+      "text": "Three remain for the third.",
+      "chapter": 7
+    },
+    {
+      "start": 548.0279996185441,
+      "end": 549.8280007629533,
+      "text": "The total is forty eight.",
+      "chapter": 7
+    },
+    {
+      "start": 549.8280007629533,
+      "end": 553.9279992370743,
+      "text": "A length three code allowing an initial zero instead has five times four times",
+      "chapter": 7
+    },
+    {
+      "start": 553.9279992370743,
+      "end": 555.8080003051896,
+      "text": "three, or sixty possibilities.",
+      "chapter": 7
+    },
+    {
+      "start": 556.4080006866593,
+      "end": 560.1838976882681,
+      "text": "If repetition is allowed for a three digit number, the count is four times",
+      "chapter": 7
+    },
+    {
+      "start": 560.1838976882681,
+      "end": 560.3880002288956,
+      "text": "five",
+      "chapter": 7
+    },
+    {
+      "start": 560.3880002288956,
+      "end": 562.6680009155411,
+      "text": "times five, or one hundred.",
+      "chapter": 7
+    },
+    {
+      "start": 562.6680009155411,
+      "end": 566.4880006103654,
+      "text": "To count even three digit numbers without repeated digits, split by the final",
+      "chapter": 7
+    },
+    {
+      "start": 566.4880006103654,
+      "end": 566.7679993896622,
+      "text": "digit.",
+      "chapter": 7
+    },
+    {
+      "start": 567.5479981689591,
+      "end": 570.9680001526017,
+      "text": "If it is zero, the first digit has four choices and the middle digit three,",
+      "chapter": 7
+    },
+    {
+      "start": 571.3280007629533,
+      "end": 572.3680016784806,
+      "text": "giving twelve.",
+      "chapter": 7
+    },
+    {
+      "start": 572.3680016784806,
+      "end": 575.534923000643,
+      "text": "If the last digit is two or four, there are two choices for that last",
+      "chapter": 7
+    },
+    {
+      "start": 575.534923000643,
+      "end": 575.947999694838,
+      "text": "position.",
+      "chapter": 7
+    },
+    {
+      "start": 576.4680001526017,
+      "end": 580.4079987793107,
+      "text": "The first digit must exclude zero and the chosen last digit, leaving three",
+      "chapter": 7
+    },
+    {
+      "start": 580.4079987793107,
+      "end": 580.7080018310685,
+      "text": "choices.",
+      "chapter": 7
+    },
+    {
+      "start": 581.3480012207169,
+      "end": 584.9279992370743,
+      "text": "Then three digits remain for the middle position, giving eighteen.",
+      "chapter": 7
+    },
+    {
+      "start": 584.9279992370743,
+      "end": 587.1480004577775,
+      "text": "Add the disjoint cases to obtain thirty.",
+      "chapter": 7
+    },
+    {
+      "start": 588.2879998474259,
+      "end": 591.9079987793107,
+      "text": "Filling a constrained position first often makes the available choices easier",
+      "chapter": 7
+    },
+    {
+      "start": 591.9079987793107,
+      "end": 592.3480012207169,
+      "text": "to track.",
+      "chapter": 7
+    },
+    {
+      "start": 593.3679978637833,
+      "end": 596.0079972534318,
+      "text": "State the digit set and repetition rule throughout the argument.",
+      "chapter": 7
+    },
+    {
+      "start": 596.2800000000154,
+      "end": 600.799999980942,
+      "text": "A committee usually records who belongs, not the order in which names were",
+      "chapter": 8
+    },
+    {
+      "start": 600.799999980942,
+      "end": 601.0600002098238,
+      "text": "chosen.",
+      "chapter": 8
+    },
+    {
+      "start": 601.839999942795,
+      "end": 605.5400002288973,
+      "text": "From five distinct women and four distinct men, the total number of three",
+      "chapter": 8
+    },
+    {
+      "start": 605.5400002288973,
+      "end": 610.7400000381624,
+      "text": "person committees is C of nine, three, or eighty four.",
+      "chapter": 8
+    },
+    {
+      "start": 610.7400000381624,
+      "end": 614.9199993896639,
+      "text": "To require at least one woman, subtract the committees containing only men.",
+      "chapter": 8
+    },
+    {
+      "start": 614.9199993896639,
+      "end": 620.7000000763094,
+      "text": "There are C of four, three, or four",
+      "chapter": 8
+    },
+    {
+      "start": 620.7000000763094,
+      "end": 624.5600006866609,
+      "text": "of those, leaving eighty committees.",
+      "chapter": 8
+    },
+    {
+      "start": 625.3399994659578,
+      "end": 629.0000012207186,
+      "text": "The complement condition none is simpler than adding separate cases for one,",
+      "chapter": 8
+    },
+    {
+      "start": 629.3200009155428,
+      "end": 630.3600018310701,
+      "text": "two and three women.",
+      "chapter": 8
+    },
+    {
+      "start": 631.3600018310701,
+      "end": 635.8200009155428,
+      "text": "For exactly two women and one man, choose two from the five women and one from",
+      "chapter": 8
+    },
+    {
+      "start": 635.8200009155428,
+      "end": 636.4399998474275,
+      "text": "the four men.",
+      "chapter": 8
+    },
+    {
+      "start": 636.4399998474275,
+      "end": 639.3999989319002,
+      "text": "Multiply ten by four to obtain forty committees.",
+      "chapter": 8
+    },
+    {
+      "start": 640.4399998474275,
+      "end": 643.8999989319002,
+      "text": "Now suppose any three people may form a committee, but one of them must be",
+      "chapter": 8
+    },
+    {
+      "start": 643.8999989319002,
+      "end": 644.7599995422518,
+      "text": "designated chair.",
+      "chapter": 8
+    },
+    {
+      "start": 645.5999996948397,
+      "end": 649.0200016784822,
+      "text": "Choose the committee in eighty four ways and choose its chair in three ways,",
+      "chapter": 8
+    },
+    {
+      "start": 649.6800015258943,
+      "end": 651.1800015258943,
+      "text": "giving two hundred fifty two outcomes.",
+      "chapter": 8
+    },
+    {
+      "start": 652.0399983215486,
+      "end": 656.079999237076,
+      "text": "Equivalently, choose the chair first in nine ways and the other two members",
+      "chapter": 8
+    },
+    {
+      "start": 656.079999237076,
+      "end": 658.2399990844881,
+      "text": "from the remaining eight in twenty eight ways.",
+      "chapter": 8
+    },
+    {
+      "start": 658.9800007629549,
+      "end": 661.9199993896639,
+      "text": "The results agree because they describe the same final outcome.",
+      "chapter": 8
+    },
+    {
+      "start": 662.7399990844881,
+      "end": 666.260003356949,
+      "text": "If several distinct roles are assigned, record which person fills each role.",
+      "chapter": 8
+    },
+    {
+      "start": 666.8399975586092,
+      "end": 670.1794887914567,
+      "text": "A committee with a chair is different from a committee with no roles, even",
+      "chapter": 8
+    },
+    {
+      "start": 670.1794887914567,
+      "end": 670.3600018310701,
+      "text": "when",
+      "chapter": 8
+    },
+    {
+      "start": 670.3600018310701,
+      "end": 671.519997863785,
+      "text": "the same people belong to it.",
+      "chapter": 8
+    },
+    {
+      "start": 671.5920000000174,
+      "end": 675.2119998855765,
+      "text": "A distribution problem must say whether the objects and boxes are",
+      "chapter": 9
+    },
+    {
+      "start": 675.2119998855765,
+      "end": 675.9320001526053,
+      "text": "distinguishable.",
+      "chapter": 9
+    },
+    {
+      "start": 676.8319997711355,
+      "end": 680.9119996948416,
+      "text": "Consider five identical balls placed into three labelled boxes, allowing an",
+      "chapter": 9
+    },
+    {
+      "start": 680.9119996948416,
+      "end": 681.4720001144583,
+      "text": "empty box.",
+      "chapter": 9
+    },
+    {
+      "start": 682.1520004196341,
+      "end": 686.8443073049866,
+      "text": "An outcome is completely described by nonnegative integers x, y and z whose",
+      "chapter": 9
+    },
+    {
+      "start": 686.8443073049866,
+      "end": 687.0319995804007,
+      "text": "sum",
+      "chapter": 9
+    },
+    {
+      "start": 687.0319995804007,
+      "end": 687.5920000000174,
+      "text": "is five.",
+      "chapter": 9
+    },
+    {
+      "start": 688.4119996948416,
+      "end": 691.8119993133719,
+      "text": "Write five stars and insert two bars to split them into three groups.",
+      "chapter": 9
+    },
+    {
+      "start": 692.4919996185477,
+      "end": 696.3520002288992,
+      "text": "A group may be empty, so bars may be adjacent or occur at either end.",
+      "chapter": 9
+    },
+    {
+      "start": 697.4320001526053,
+      "end": 700.8919992370779,
+      "text": "Choosing the two bar positions among seven total positions gives C of seven,",
+      "chapter": 9
+    },
+    {
+      "start": 700.8919992370779,
+      "end": 702.532000534075,
+      "text": "two, or twenty one distributions.",
+      "chapter": 9
+    },
+    {
+      "start": 703.532000534075,
+      "end": 707.2720003051932,
+      "text": "This is the stars and bars argument for a finite nonnegative integer solution",
+      "chapter": 9
+    },
+    {
+      "start": 707.2720003051932,
+      "end": 707.612000457781,
+      "text": "count.",
+      "chapter": 9
+    },
+    {
+      "start": 708.4520006103689,
+      "end": 712.6520013733084,
+      "text": "If every box must receive at least one ball, place one ball in each box first.",
+      "chapter": 9
+    },
+    {
+      "start": 713.3320016784842,
+      "end": 715.3519983215506,
+      "text": "Two balls remain to distribute without restrictions.",
+      "chapter": 9
+    },
+    {
+      "start": 716.1320009155447,
+      "end": 718.6320009155447,
+      "text": "There are C of four, two, or six possibilities.",
+      "chapter": 9
+    },
+    {
+      "start": 719.4920015258963,
+      "end": 723.2930243733898,
+      "text": "Equivalently, positive x, y, z become one plus three new nonnegative",
+      "chapter": 9
+    },
+    {
+      "start": 723.2930243733898,
+      "end": 723.8519983215506,
+      "text": "variables.",
+      "chapter": 9
+    },
+    {
+      "start": 724.6720018310721,
+      "end": 728.7720003051932,
+      "text": "If the five balls were distinct instead, each independently chooses one of the",
+      "chapter": 9
+    },
+    {
+      "start": 728.7720003051932,
+      "end": 733.032000534075,
+      "text": "three labelled boxes, giving three to the fifth power, or two hundred forty",
+      "chapter": 9
+    },
+    {
+      "start": 733.032000534075,
+      "end": 735.3719987793143,
+      "text": "three assignments when empty boxes are allowed.",
+      "chapter": 9
+    },
+    {
+      "start": 736.2520036621268,
+      "end": 738.9520006103689,
+      "text": "Neither count applies automatically to unlabelled boxes.",
+      "chapter": 9
+    },
+    {
+      "start": 740.05199908449,
+      "end": 744.0320024414236,
+      "text": "Before choosing a formula, state the object types, box labels and lower bounds",
+      "chapter": 9
+    },
+    {
+      "start": 744.3120012207205,
+      "end": 746.6519975586111,
+      "text": "so the combinatorial model matches the question.",
+      "chapter": 9
+    }
+  ]
+}

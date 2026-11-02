@@ -1,3 +1,4 @@
+import { permutationsCombinationsLesson } from './permutations-combinations-study.ts';
 import { extendSetsComplexLesson } from './sets-complex-study.ts';
 import { matricesDeterminantsLesson } from './matrices-determinants-study.ts';
 import{extendMoleInventoryBoundsLesson}from'./mole-inventory-bounds-study.ts';
@@ -173,6 +174,7 @@ export const studyLessons: StudyLesson[] = [
   magneticApplicationsLesson,
   inductionApplicationsLesson,
   matricesDeterminantsLesson,
+  permutationsCombinationsLesson,
 ];
 
 const moleConceptCompanion = studyLessons.find(lesson=>lesson.id==="mole-concept");

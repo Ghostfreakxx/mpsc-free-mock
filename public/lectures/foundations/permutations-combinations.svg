@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+<title id="title">An unordered committee and an ordered podium have different counts</title>
+<desc id="desc">From seven distinct people choose three committee members in thirty five ways. Each committee can be put in six ranked orders, giving two hundred ten podiums.</desc>
+<rect width="900" height="360" rx="18" fill="#f5faf7"/>
+<g fill="#20483e" font-family="Arial,sans-serif">
+<text x="30" y="43" font-size="26" font-weight="bold">DEFINE THE OUTCOME BEFORE COUNTING</text>
+<rect x="24" y="66" width="412" height="164" rx="12" fill="#dcece4"/>
+<text x="45" y="102" font-size="24">Unordered committee</text>
+<text x="45" y="142" font-size="23">C(7,3) = 7! / (3! 4!) = 35</text>
+<text x="45" y="179" font-size="19">Same members in another listing</text>
+<text x="45" y="208" font-size="19">still form the same committee.</text>
+<rect x="460" y="66" width="416" height="164" rx="12" fill="#e6edf0"/>
+<text x="482" y="102" font-size="24">Ranked podium</text>
+<text x="482" y="142" font-size="23">P(7,3) = 7 × 6 × 5 = 210</text>
+<text x="482" y="179" font-size="19">First, second and third places</text>
+<text x="482" y="208" font-size="19">are distinct roles.</text>
+<text x="450" y="279" text-anchor="middle" font-size="25">P(7,3) = 3! × C(7,3) = 6 × 35</text>
+<text x="450" y="329" text-anchor="middle" font-size="19">Distinct people, no replacement. Assign order only when the outcome includes it.</text>
+</g></svg>

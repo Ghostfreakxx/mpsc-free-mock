@@ -1,0 +1,715 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.680
+Counting begins by defining an outcome.
+
+00:00:03.380 --> 00:00:07.840
+If you choose one shirt, one pair of trousers and one pair of shoes, an outfit
+
+00:00:07.840 --> 00:00:09.580
+is the complete triple of choices.
+
+00:00:10.400 --> 00:00:15.061
+With two shirts, three trousers and two shoe options, there are two times
+
+00:00:15.061 --> 00:00:15.380
+three
+
+00:00:15.380 --> 00:00:17.220
+times two, or twelve outfits.
+
+00:00:18.020 --> 00:00:22.160
+This multiplication rule works because each partial choice admits the stated
+
+00:00:22.160 --> 00:00:23.160
+number of next choices.
+
+00:00:23.880 --> 00:00:26.040
+It does not require probability independence.
+
+00:00:26.580 --> 00:00:31.140
+If restrictions make that number vary, split into cases or count each branch
+
+00:00:31.140 --> 00:00:31.600
+separately.
+
+00:00:32.540 --> 00:00:34.940
+The addition rule combines disjoint alternatives.
+
+00:00:35.680 --> 00:00:39.340
+If a journey uses either one of four train services or one of three bus
+
+00:00:39.340 --> 00:00:43.520
+services, and the services are distinct options, there are seven choices.
+
+00:00:43.760 --> 00:00:48.120
+You add because taking one service is the outcome; you are not taking a train
+
+00:00:48.120 --> 00:00:49.060
+and then a bus.
+
+00:00:49.420 --> 00:00:53.280
+If cases overlap, simple addition double counts the shared outcomes.
+
+00:00:53.280 --> 00:00:58.300
+Remove that overlap or rewrite the cases so each outcome belongs to exactly
+
+00:00:58.300 --> 00:00:59.040
+one.
+
+00:00:59.520 --> 00:01:04.200
+A small tree diagram is useful: branches represent successive choices, and
+
+00:01:04.200 --> 00:01:05.900
+completed paths represent outcomes.
+
+00:01:07.100 --> 00:01:10.880
+Before using a factorial or a combination symbol, say whether you are
+
+00:01:10.880 --> 00:01:13.260
+selecting, ordering or performing several stages.
+
+00:01:13.752 --> 00:01:18.012
+Suppose seven distinct runners compete for first, second and third positions,
+
+00:01:18.532 --> 00:01:19.292
+with no ties.
+
+00:01:19.912 --> 00:01:22.412
+A podium is an ordered list of three different people.
+
+00:01:22.992 --> 00:01:27.392
+There are seven choices for first, six for second and five for third, giving
+
+00:01:27.392 --> 00:01:28.692
+two hundred ten podiums.
+
+00:01:29.292 --> 00:01:32.172
+This is the permutation count P of seven, three.
+
+00:01:33.072 --> 00:01:36.932
+For n distinct objects placed into r ordered positions without replacement,
+
+00:01:36.932 --> 00:01:41.072
+multiply n by n minus one, continuing for r factors.
+
+00:01:41.852 --> 00:01:46.106
+In factorial notation the result is n factorial divided by n minus r
+
+00:01:46.106 --> 00:01:46.732
+factorial.
+
+00:01:47.692 --> 00:01:52.252
+A factorial multiplies positive integers down to one, and zero factorial is
+
+00:01:52.252 --> 00:01:53.152
+defined as one.
+
+00:01:53.752 --> 00:01:56.952
+This is consistent with one empty arrangement when no positions are filled.
+
+00:01:58.052 --> 00:02:00.532
+Arranging all n distinct objects gives n factorial.
+
+00:02:01.472 --> 00:02:04.152
+Choosing zero positions gives one outcome, not zero.
+
+00:02:04.792 --> 00:02:08.032
+The formula assumes r is an integer between zero and n.
+
+00:02:08.612 --> 00:02:11.792
+If more distinct objects are requested than are available without replacement,
+
+00:02:12.372 --> 00:02:13.432
+there are no such arrangements.
+
+00:02:14.252 --> 00:02:18.512
+When repetition is allowed instead, each position may have n choices and the
+
+00:02:18.512 --> 00:02:20.092
+count becomes n to the power r.
+
+00:02:20.872 --> 00:02:24.085
+Always attach the replacement rule and the meaning of positions to the
+
+00:02:24.085 --> 00:02:24.452
+formula.
+
+00:02:25.212 --> 00:02:28.852
+A selection of three people with no assigned roles is a different outcome from
+
+00:02:28.852 --> 00:02:29.552
+a ranked podium.
+
+00:02:29.760 --> 00:02:34.105
+A committee of three chosen from seven distinct people has no ranking among
+
+00:02:34.105 --> 00:02:34.800
+its members.
+
+00:02:35.600 --> 00:02:39.080
+Listing the same three names in a different order does not create a different
+
+00:02:39.080 --> 00:02:39.320
+committee.
+
+00:02:40.060 --> 00:02:44.380
+The permutation count two hundred ten counts each committee three factorial
+
+00:02:44.380 --> 00:02:48.920
+times, because its members can occupy the three list positions in six orders.
+
+00:02:49.840 --> 00:02:52.140
+Divide by six to obtain thirty five committees.
+
+00:02:52.140 --> 00:02:57.580
+In general, C of n, r equals n factorial divided by r factorial
+
+00:02:57.580 --> 00:02:59.420
+times n minus r factorial.
+
+00:03:00.100 --> 00:03:05.820
+The relation P of n, r equals r factorial times C of n, r explains the
+
+00:03:05.820 --> 00:03:07.800
+distinction between selection and arrangement.
+
+00:03:08.600 --> 00:03:13.260
+Selecting r people is also equivalent to specifying the n minus r people left
+
+00:03:13.260 --> 00:03:16.960
+out, giving C of n, r equal to C of n, n minus r.
+
+00:03:17.780 --> 00:03:20.840
+Pascal's identity follows by fixing one distinguished person.
+
+00:03:21.420 --> 00:03:25.500
+A committee either contains that person and chooses its remaining r minus one
+
+00:03:25.500 --> 00:03:29.940
+members from the others, or excludes that person and chooses all r from the
+
+00:03:29.940 --> 00:03:30.120
+others.
+
+00:03:30.740 --> 00:03:31.840
+The cases are disjoint.
+
+00:03:32.600 --> 00:03:38.360
+Thus C of n, r is C of n minus one, r minus one plus C of n minus one, r.
+
+00:03:38.720 --> 00:03:42.103
+For choosing three from seven, this gives fifteen plus twenty, again thirty
+
+00:03:42.103 --> 00:03:42.264
+five.
+
+00:03:42.264 --> 00:03:45.224
+Repeated symbols change the meaning of an arrangement.
+
+00:03:46.044 --> 00:03:51.224
+The word BANANA contains six letters: three copies of A, two copies of N and
+
+00:03:51.224 --> 00:03:51.644
+one B.
+
+00:03:52.264 --> 00:03:56.610
+If every physical copy were temporarily labelled, six factorial orders would
+
+00:03:56.610 --> 00:03:56.724
+be
+
+00:03:56.724 --> 00:03:57.144
+possible.
+
+00:03:58.064 --> 00:04:02.333
+Removing labels makes each visible arrangement occur three factorial times
+
+00:04:02.333 --> 00:04:02.564
+from
+
+00:04:02.564 --> 00:04:05.804
+the A labels and two factorial times from the N labels.
+
+00:04:06.684 --> 00:04:09.464
+Divide by both factors to obtain sixty distinct strings.
+
+00:04:09.934 --> 00:04:14.104
+More generally, with n objects divided into indistinguishable types of
+
+00:04:14.104 --> 00:04:19.544
+multiplicities n one, n two and so on, the count is n factorial divided by the
+
+00:04:19.544 --> 00:04:21.384
+product of the multiplicity factorials.
+
+00:04:21.924 --> 00:04:23.664
+The multiplicities must sum to n.
+
+00:04:24.304 --> 00:04:30.084
+For A, A, B, the visible strings are AAB, ABA and BAA, agreeing
+
+00:04:30.084 --> 00:04:32.424
+with three factorial divided by two factorial.
+
+00:04:33.264 --> 00:04:36.864
+Do not divide by a factorial merely because two objects share a broad
+
+00:04:36.864 --> 00:04:40.124
+description if the problem treats those objects as distinct.
+
+00:04:41.044 --> 00:04:44.544
+Two named students remain distinct even if they wear identical uniforms.
+
+00:04:45.444 --> 00:04:49.004
+Conversely, labelling identical balls changes a distribution problem.
+
+00:04:50.164 --> 00:04:53.464
+The right divisor comes from how many labelled outcomes collapse to each
+
+00:04:53.464 --> 00:04:54.184
+visible outcome.
+
+00:04:55.104 --> 00:04:58.504
+Check that this number is constant before using division as a shortcut.
+
+00:04:59.044 --> 00:05:02.984
+This keeps repeated object reasoning connected to the actual objects being
+
+00:05:02.984 --> 00:05:03.224
+counted.
+
+00:05:03.480 --> 00:05:07.240
+Adjacency constraints often become simpler when a group is treated as one
+
+00:05:07.240 --> 00:05:07.520
+block.
+
+00:05:08.240 --> 00:05:11.080
+Five distinct people, including A and B, stand in a row.
+
+00:05:11.560 --> 00:05:15.120
+If A and B must be adjacent, combine them into one block.
+
+00:05:15.620 --> 00:05:19.600
+Along with the other three people, this makes four units to arrange, giving
+
+00:05:19.600 --> 00:05:21.000
+four factorial orders.
+
+00:05:22.040 --> 00:05:25.120
+Inside the block, A B and B A are two different orders.
+
+00:05:25.860 --> 00:05:27.800
+Multiply to obtain forty eight rows.
+
+00:05:28.260 --> 00:05:32.625
+If three specified people among the same five must all stand consecutively,
+
+00:05:32.625 --> 00:05:32.800
+the
+
+00:05:32.800 --> 00:05:35.500
+block and two remaining people form three units.
+
+00:05:36.140 --> 00:05:39.620
+There are three factorial outer orders and three factorial internal orders,
+
+00:05:39.780 --> 00:05:41.260
+giving thirty six rows.
+
+00:05:42.200 --> 00:05:45.460
+The phrase together must mean consecutive positions for this construction.
+
+00:05:46.060 --> 00:05:49.880
+It does not automatically mean a fixed internal order; that needs a separate
+
+00:05:49.880 --> 00:05:50.320
+condition.
+
+00:05:51.120 --> 00:05:54.900
+If a particular order A before B is required within their two person block,
+
+00:05:55.340 --> 00:05:57.060
+only one internal order remains.
+
+00:05:57.780 --> 00:06:02.660
+Blocks may also fail when several adjacency requirements overlap, so draw the
+
+00:06:02.660 --> 00:06:03.940
+intended pattern before multiplying.
+
+00:06:04.820 --> 00:06:08.780
+A useful check for the two person example is that all five person rows number
+
+00:06:08.780 --> 00:06:10.260
+one hundred twenty.
+
+00:06:10.260 --> 00:06:14.440
+The forty eight adjacent rows form a subset, leaving seventy two rows where A
+
+00:06:14.440 --> 00:06:15.500
+and B are separated.
+
+00:06:16.100 --> 00:06:18.460
+We will recover that separated count with gaps.
+
+00:06:18.744 --> 00:06:23.204
+To keep two specified people apart in a five person row, arrange the other
+
+00:06:23.204 --> 00:06:24.084
+three people first.
+
+00:06:24.644 --> 00:06:26.484
+There are three factorial anchor orders.
+
+00:06:27.344 --> 00:06:31.284
+Each anchor row has four gaps: before the first person, between consecutive
+
+00:06:31.284 --> 00:06:32.904
+people and after the last.
+
+00:06:33.564 --> 00:06:37.284
+Put the two special people into different gaps, choosing two of the four gaps
+
+00:06:37.284 --> 00:06:38.104
+in six ways.
+
+00:06:38.664 --> 00:06:42.144
+Then decide which special person uses which chosen gap in two ways.
+
+00:06:42.604 --> 00:06:46.104
+The result is six times six times two, or seventy two rows.
+
+00:06:46.734 --> 00:06:51.340
+Each valid row has a unique anchor order and choice of occupied gaps, so no
+
+00:06:51.340 --> 00:06:51.524
+row
+
+00:06:51.524 --> 00:06:52.364
+is counted twice.
+
+00:06:53.084 --> 00:06:56.488
+This agrees with subtracting the forty eight adjacent rows from all one
+
+00:06:56.488 --> 00:06:56.824
+hundred
+
+00:06:56.824 --> 00:06:57.304
+twenty rows.
+
+00:06:57.584 --> 00:07:01.442
+The same method handles four distinct anchors and three distinct special
+
+00:07:01.442 --> 00:07:01.764
+people
+
+00:07:02.124 --> 00:07:04.584
+when no two specials may be neighbours.
+
+00:07:04.584 --> 00:07:08.944
+Four factorial anchor orders give five gaps; choose three gaps and arrange the
+
+00:07:08.944 --> 00:07:13.484
+three specials, giving four factorial times C of five, three times three
+
+00:07:13.484 --> 00:07:16.544
+factorial, or one thousand four hundred forty.
+
+00:07:16.544 --> 00:07:20.084
+If specials are indistinguishable, remove their internal arrangement factor.
+
+00:07:20.664 --> 00:07:24.544
+If several may share a gap, the simple different gap formula is unavailable.
+
+00:07:25.224 --> 00:07:28.944
+The wording of the separation condition determines which placement pattern is
+
+00:07:28.944 --> 00:07:29.184
+valid.
+
+00:07:29.760 --> 00:07:32.600
+Circular arrangements require an equivalence convention.
+
+00:07:33.560 --> 00:07:37.321
+Suppose six distinct people sit around a round table, with rotations treated
+
+00:07:37.321 --> 00:07:37.420
+as
+
+00:07:37.420 --> 00:07:39.980
+the same seating and reflections treated as different.
+
+00:07:40.840 --> 00:07:43.020
+Fix one chosen person as the reference position.
+
+00:07:43.740 --> 00:07:48.487
+The other five can be placed clockwise in five factorial orders, giving one
+
+00:07:48.487 --> 00:07:50.300
+hundred twenty circular seatings.
+
+00:07:50.840 --> 00:07:54.860
+This removes the rotational overcount that would appear if we numbered all six
+
+00:07:54.860 --> 00:07:55.620
+starting positions.
+
+00:07:56.100 --> 00:08:00.200
+If the chairs are labelled, rotations change which labelled chair each person
+
+00:08:00.200 --> 00:08:03.740
+occupies, so there are six factorial seat assignments instead.
+
+00:08:04.560 --> 00:08:08.320
+Do not automatically divide by another factor of two: clockwise and
+
+00:08:08.320 --> 00:08:11.360
+anticlockwise orders are different under the stated convention.
+
+00:08:12.420 --> 00:08:16.020
+Necklaces or bracelets can use different conventions, especially when repeated
+
+00:08:16.020 --> 00:08:17.760
+objects create additional symmetries.
+
+00:08:18.520 --> 00:08:20.240
+Those require a separate analysis.
+
+00:08:21.040 --> 00:08:24.620
+If A and B among the six people must be adjacent, treat them as a block.
+
+00:08:25.320 --> 00:08:28.800
+The block plus the other four people gives five units around the table.
+
+00:08:29.380 --> 00:08:33.620
+Fix a reference unit to count four factorial circular orders, then multiply by
+
+00:08:33.620 --> 00:08:37.000
+two internal block orders, obtaining forty eight.
+
+00:08:37.000 --> 00:08:40.940
+Always name the objects, decide whether chairs are labelled, and state whether
+
+00:08:40.940 --> 00:08:44.280
+reflection is identified before selecting a circular counting formula.
+
+00:08:45.060 --> 00:08:48.880
+The formula follows from those choices rather than from the word circle alone.
+
+00:08:49.128 --> 00:08:52.648
+A digit string and a three digit number need not have the same count.
+
+00:08:53.388 --> 00:08:57.048
+Using zero, one, two, three and four without repetition, a three digit number
+
+00:08:57.048 --> 00:09:00.148
+has four choices for its first digit because zero is excluded.
+
+00:09:00.908 --> 00:09:05.208
+After choosing a nonzero first digit, four digits remain, including zero, for
+
+00:09:05.208 --> 00:09:05.908
+the second position.
+
+00:09:06.648 --> 00:09:07.888
+Three remain for the third.
+
+00:09:08.028 --> 00:09:09.828
+The total is forty eight.
+
+00:09:09.828 --> 00:09:13.928
+A length three code allowing an initial zero instead has five times four times
+
+00:09:13.928 --> 00:09:15.808
+three, or sixty possibilities.
+
+00:09:16.408 --> 00:09:20.184
+If repetition is allowed for a three digit number, the count is four times
+
+00:09:20.184 --> 00:09:20.388
+five
+
+00:09:20.388 --> 00:09:22.668
+times five, or one hundred.
+
+00:09:22.668 --> 00:09:26.488
+To count even three digit numbers without repeated digits, split by the final
+
+00:09:26.488 --> 00:09:26.768
+digit.
+
+00:09:27.548 --> 00:09:30.968
+If it is zero, the first digit has four choices and the middle digit three,
+
+00:09:31.328 --> 00:09:32.368
+giving twelve.
+
+00:09:32.368 --> 00:09:35.535
+If the last digit is two or four, there are two choices for that last
+
+00:09:35.535 --> 00:09:35.948
+position.
+
+00:09:36.468 --> 00:09:40.408
+The first digit must exclude zero and the chosen last digit, leaving three
+
+00:09:40.408 --> 00:09:40.708
+choices.
+
+00:09:41.348 --> 00:09:44.928
+Then three digits remain for the middle position, giving eighteen.
+
+00:09:44.928 --> 00:09:47.148
+Add the disjoint cases to obtain thirty.
+
+00:09:48.288 --> 00:09:51.908
+Filling a constrained position first often makes the available choices easier
+
+00:09:51.908 --> 00:09:52.348
+to track.
+
+00:09:53.368 --> 00:09:56.008
+State the digit set and repetition rule throughout the argument.
+
+00:09:56.280 --> 00:10:00.800
+A committee usually records who belongs, not the order in which names were
+
+00:10:00.800 --> 00:10:01.060
+chosen.
+
+00:10:01.840 --> 00:10:05.540
+From five distinct women and four distinct men, the total number of three
+
+00:10:05.540 --> 00:10:10.740
+person committees is C of nine, three, or eighty four.
+
+00:10:10.740 --> 00:10:14.920
+To require at least one woman, subtract the committees containing only men.
+
+00:10:14.920 --> 00:10:20.700
+There are C of four, three, or four
+
+00:10:20.700 --> 00:10:24.560
+of those, leaving eighty committees.
+
+00:10:25.340 --> 00:10:29.000
+The complement condition none is simpler than adding separate cases for one,
+
+00:10:29.320 --> 00:10:30.360
+two and three women.
+
+00:10:31.360 --> 00:10:35.820
+For exactly two women and one man, choose two from the five women and one from
+
+00:10:35.820 --> 00:10:36.440
+the four men.
+
+00:10:36.440 --> 00:10:39.400
+Multiply ten by four to obtain forty committees.
+
+00:10:40.440 --> 00:10:43.900
+Now suppose any three people may form a committee, but one of them must be
+
+00:10:43.900 --> 00:10:44.760
+designated chair.
+
+00:10:45.600 --> 00:10:49.020
+Choose the committee in eighty four ways and choose its chair in three ways,
+
+00:10:49.680 --> 00:10:51.180
+giving two hundred fifty two outcomes.
+
+00:10:52.040 --> 00:10:56.080
+Equivalently, choose the chair first in nine ways and the other two members
+
+00:10:56.080 --> 00:10:58.240
+from the remaining eight in twenty eight ways.
+
+00:10:58.980 --> 00:11:01.920
+The results agree because they describe the same final outcome.
+
+00:11:02.740 --> 00:11:06.260
+If several distinct roles are assigned, record which person fills each role.
+
+00:11:06.840 --> 00:11:10.179
+A committee with a chair is different from a committee with no roles, even
+
+00:11:10.179 --> 00:11:10.360
+when
+
+00:11:10.360 --> 00:11:11.520
+the same people belong to it.
+
+00:11:11.592 --> 00:11:15.212
+A distribution problem must say whether the objects and boxes are
+
+00:11:15.212 --> 00:11:15.932
+distinguishable.
+
+00:11:16.832 --> 00:11:20.912
+Consider five identical balls placed into three labelled boxes, allowing an
+
+00:11:20.912 --> 00:11:21.472
+empty box.
+
+00:11:22.152 --> 00:11:26.844
+An outcome is completely described by nonnegative integers x, y and z whose
+
+00:11:26.844 --> 00:11:27.032
+sum
+
+00:11:27.032 --> 00:11:27.592
+is five.
+
+00:11:28.412 --> 00:11:31.812
+Write five stars and insert two bars to split them into three groups.
+
+00:11:32.492 --> 00:11:36.352
+A group may be empty, so bars may be adjacent or occur at either end.
+
+00:11:37.432 --> 00:11:40.892
+Choosing the two bar positions among seven total positions gives C of seven,
+
+00:11:40.892 --> 00:11:42.532
+two, or twenty one distributions.
+
+00:11:43.532 --> 00:11:47.272
+This is the stars and bars argument for a finite nonnegative integer solution
+
+00:11:47.272 --> 00:11:47.612
+count.
+
+00:11:48.452 --> 00:11:52.652
+If every box must receive at least one ball, place one ball in each box first.
+
+00:11:53.332 --> 00:11:55.352
+Two balls remain to distribute without restrictions.
+
+00:11:56.132 --> 00:11:58.632
+There are C of four, two, or six possibilities.
+
+00:11:59.492 --> 00:12:03.293
+Equivalently, positive x, y, z become one plus three new nonnegative
+
+00:12:03.293 --> 00:12:03.852
+variables.
+
+00:12:04.672 --> 00:12:08.772
+If the five balls were distinct instead, each independently chooses one of the
+
+00:12:08.772 --> 00:12:13.032
+three labelled boxes, giving three to the fifth power, or two hundred forty
+
+00:12:13.032 --> 00:12:15.372
+three assignments when empty boxes are allowed.
+
+00:12:16.252 --> 00:12:18.952
+Neither count applies automatically to unlabelled boxes.
+
+00:12:20.052 --> 00:12:24.032
+Before choosing a formula, state the object types, box labels and lower bounds
+
+00:12:24.312 --> 00:12:26.652
+so the combinatorial model matches the question.
