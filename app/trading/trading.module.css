@@ -1,0 +1,153 @@
+.page { min-height: 100vh; background: var(--canvas); color: var(--ink); }
+.header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; border-bottom: 1px solid var(--line); background: #fff; font-size: 12px; font-weight: 650; }
+.header a { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; color: var(--green-deep); }
+.wrap { width: min(980px, 100%); margin: 0 auto; padding: 22px 16px 96px; }
+.kicker { color: var(--green); font-size: 10px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+.title { margin: 6px 0 6px; font-size: 26px; line-height: 1.2; }
+.lead { max-width: 660px; margin: 0 0 16px; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.panel { border: 1px solid var(--line); border-radius: 6px; background: #fff; padding: 16px; }
+/* A single column pinned to the container width, so wide children scroll instead of widening the page. */
+.stack { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; }
+.sectionTitle { margin: 0 0 10px; font-size: 14px; }
+.muted { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
+.notice { display: flex; gap: 10px; align-items: flex-start; border-color: #e8cf9f; background: #fdf8ee; color: #6b4a12; font-size: 12px; line-height: 1.55; }
+.notice svg { flex: none; margin-top: 2px; }
+.notice p { margin: 0; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 42px; padding: 0 14px; border: 1px solid var(--green-deep); border-radius: 6px; background: var(--green-deep); color: #fff; font-size: 13px; font-weight: 650; cursor: pointer; }
+.button:disabled { border-color: #d5e0d8; background: #eef2ef; color: #6b7a72; cursor: not-allowed; }
+.outline { border-color: #c9d6cd; background: #fff; color: var(--green-deep); }
+.sellButton { border-color: #a2463a; background: #a2463a; color: #fff; }
+.row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.between { justify-content: space-between; }
+
+/* Setup */
+.choiceGrid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.choice { display: grid; align-content: start; gap: 4px; padding: 12px; border: 1px solid #d5e0d8; border-radius: 6px; background: #fff; color: var(--ink); text-align: left; cursor: pointer; }
+.choice strong { font-size: 14px; }
+.choice span { color: var(--muted); font-size: 11px; line-height: 1.45; }
+.choice[aria-pressed="true"] { border-color: var(--green); background: var(--leaf); box-shadow: inset 0 0 0 1px var(--green); }
+.chip { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 6px 12px; border: 1px solid #d5e0d8; border-radius: 999px; background: #fff; color: var(--ink); font-size: 12px; font-weight: 600; cursor: pointer; }
+.chip[aria-pressed="true"] { border-color: var(--green-deep); background: var(--green-deep); color: #fff; }
+.history { display: grid; margin: 0; padding: 0; list-style: none; }
+.history li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 10px; padding: 8px 0; border-top: 1px solid var(--line); font-size: 12px; }
+
+/* Game */
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.stat { display: grid; gap: 2px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+.stat span { color: var(--muted); font-size: 11px; font-weight: 600; }
+.stat strong { font-size: 16px; font-variant-numeric: tabular-nums; }
+.gain { color: #1f6a54; }
+.loss { color: #a2463a; }
+.chart { display: block; width: 100%; height: auto; }
+.chartFrame { margin: 0; padding: 8px; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+.grid { stroke: #e3e9e4; stroke-width: 1; }
+.axis { fill: #5d6f66; font-size: 10px; font-variant-numeric: tabular-nums; }
+.up { fill: var(--green); stroke: var(--green); }
+.down { fill: var(--coral); stroke: var(--coral); }
+.sma20 { fill: none; stroke: var(--blue); stroke-width: 1.5; }
+.sma50 { fill: none; stroke: var(--gold); stroke-width: 1.5; }
+.rsiLine { fill: none; stroke: #6d5aa3; stroke-width: 1.5; }
+.entryLine { stroke: var(--ink); stroke-width: 1; stroke-dasharray: 4 3; }
+.stopLine { stroke: var(--coral); stroke-width: 1; stroke-dasharray: 2 3; }
+.takeLine { stroke: var(--green); stroke-width: 1; stroke-dasharray: 2 3; }
+.volume { fill: #c9d6cd; }
+.volumeHigh { fill: var(--gold); }
+.buyMark { fill: var(--green-deep); }
+.sellMark { fill: #a2463a; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 6px 4px 0; padding: 0; list-style: none; color: var(--muted); font-size: 11px; }
+.legend li { display: inline-flex; align-items: center; gap: 6px; }
+.key { display: inline-block; width: 14px; height: 3px; border-radius: 2px; }
+.keySma20 { background: var(--blue); }
+.keySma50 { background: var(--gold); }
+.keyRsi { background: #6d5aa3; }
+.keyBuy { background: var(--green-deep); }
+.keySell { background: #a2463a; }
+.readout { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 0; }
+.readout div { display: grid; gap: 2px; }
+.readout dt { color: var(--muted); font-size: 11px; font-weight: 600; }
+.readout dd { margin: 0; font-size: 13px; font-weight: 650; font-variant-numeric: tabular-nums; }
+.actions { display: grid; gap: 10px; }
+.actionLabel { color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.alert { margin: 0; padding: 10px 12px; border-left: 3px solid var(--gold); border-radius: 4px; background: #fdf8ee; color: #6b4a12; font-size: 12px; line-height: 1.5; }
+.log { display: grid; margin: 0; padding: 0; list-style: none; font-size: 12px; }
+.log li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 10px; padding: 7px 0; border-top: 1px solid var(--line); }
+.log small { color: var(--muted); }
+
+/* Results */
+.table { width: 100%; border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; }
+.table th, .table td { padding: 8px 6px; border-top: 1px solid var(--line); text-align: right; }
+.table th:first-child, .table td:first-child { text-align: left; }
+.table thead th { border-top: 0; color: var(--muted); font-size: 11px; font-weight: 650; }
+.table small { display: block; color: var(--muted); font-weight: 400; }
+.youRow td { background: var(--leaf); font-weight: 700; }
+.scroll { overflow-x: auto; }
+.debrief { border-color: #b9d3c3; background: var(--leaf); }
+.debrief p { margin: 0 0 10px; font-size: 13px; line-height: 1.6; }
+
+/* Course */
+.toc { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 16px; margin: 0; padding: 0; list-style: none; counter-reset: toc; }
+.toc li { counter-increment: toc; }
+.toc a { display: flex; justify-content: space-between; gap: 8px; min-height: 36px; align-items: center; padding: 4px 0; border-bottom: 1px solid var(--line); color: var(--green-deep); font-size: 13px; font-weight: 600; }
+.toc a::before { content: counter(toc) "."; min-width: 18px; color: var(--muted); }
+.toc a span { flex: 1; }
+.toc small { color: var(--muted); font-weight: 500; }
+.lesson { scroll-margin-top: 12px; }
+.lesson h2 { margin: 4px 0 6px; font-size: 20px; line-height: 1.3; }
+.lesson h3 { margin: 18px 0 6px; font-size: 14px; }
+.lesson p, .lesson li { font-size: 14px; line-height: 1.65; }
+.lesson p { margin: 0 0 10px; }
+.lesson ul { margin: 0 0 10px; padding-left: 20px; list-style: disc; }
+.intro { color: var(--green-deep); font-weight: 600; }
+.remember { margin: 16px 0; padding: 12px 14px; border-radius: 6px; background: var(--leaf); }
+.remember strong { display: block; margin-bottom: 4px; font-size: 12px; letter-spacing: .04em; text-transform: uppercase; color: var(--green-deep); }
+.remember ul { margin: 0; }
+.check { margin-top: 12px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 6px; }
+.check p { margin: 0 0 6px; font-weight: 650; }
+.check ol { margin: 0 0 8px; padding-left: 22px; list-style: upper-alpha; }
+.check li { font-size: 13px; }
+.check summary { min-height: 32px; padding: 6px 0; color: var(--green-deep); font-size: 13px; font-weight: 650; cursor: pointer; }
+.check details p { font-weight: 400; font-size: 13px; }
+
+@media (max-width: 760px) {
+  .choiceGrid, .stats, .readout { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .toc { grid-template-columns: minmax(0, 1fr); }
+  .title { font-size: 22px; }
+}
+.stack [data-spaced] { margin-top: 8px; }
+
+/* Dark theme, hand-written part: --green-deep is a dark surface in the dark theme, so text and marks
+   that use it switch to --green; chart lines and legend keys need matching colours. The generated
+   part below is from scripts/dark-theme.mjs. */
+:global(html[data-theme="dark"]) .header a, :global(html[data-theme="dark"]) .outline, :global(html[data-theme="dark"]) .toc a,
+:global(html[data-theme="dark"]) .intro, :global(html[data-theme="dark"]) .remember strong, :global(html[data-theme="dark"]) .check summary { color: var(--green); }
+:global(html[data-theme="dark"]) .button:not(:disabled):not(.outline):not(.sellButton), :global(html[data-theme="dark"]) .chip[aria-pressed="true"] { border-color: #2b7a62; background: #2b7a62; }
+:global(html[data-theme="dark"]) .buyMark { fill: var(--green); }
+:global(html[data-theme="dark"]) .keyBuy { background: var(--green); }
+:global(html[data-theme="dark"]) .keyRsi { background: #c3b2fd; }
+:global(html[data-theme="dark"]) .keySell { background: #fca799; }
+:global(html[data-theme="dark"]) .grid { stroke: #2c352f; }
+:global(html[data-theme="dark"]) .volume { fill: #3a463f; }
+
+/* dark-theme:generated:start (edit the light rules, then run node scripts/dark-theme.mjs) */
+:global(html[data-theme="dark"]) .header { background: #1b1f1c; }
+:global(html[data-theme="dark"]) .panel { background: #1b1f1c; }
+:global(html[data-theme="dark"]) .notice { border-color: #4b3704; background: #16130d; color: #edc791; }
+:global(html[data-theme="dark"]) .button { color: #ffffff; }
+:global(html[data-theme="dark"]) .button:disabled { border-color: #2c352f; background: #171a18; color: #acbcb3; }
+:global(html[data-theme="dark"]) .outline { border-color: #333d36; background: #1b1f1c; }
+:global(html[data-theme="dark"]) .sellButton { border-color: #b35548; background: #aa4e41; color: #ffffff; }
+:global(html[data-theme="dark"]) .choice { border: 1px solid #2c352f; background: #1b1f1c; }
+:global(html[data-theme="dark"]) .chip { border: 1px solid #2c352f; background: #1b1f1c; }
+:global(html[data-theme="dark"]) .chip[aria-pressed="true"] { color: #ffffff; }
+:global(html[data-theme="dark"]) .stat { background: #1b1f1c; }
+:global(html[data-theme="dark"]) .gain { color: #91d9bf; }
+:global(html[data-theme="dark"]) .loss { color: #fca799; }
+:global(html[data-theme="dark"]) .chartFrame { background: #1b1f1c; }
+:global(html[data-theme="dark"]) .axis { fill: #b0c4ba; }
+:global(html[data-theme="dark"]) .rsiLine { stroke: #c3b2fd; }
+:global(html[data-theme="dark"]) .sellMark { fill: #fca799; }
+:global(html[data-theme="dark"]) .keyRsi { background: #7462ab; }
+:global(html[data-theme="dark"]) .keySell { background: #aa4e41; }
+:global(html[data-theme="dark"]) .alert { background: #16130d; color: #edc791; }
+:global(html[data-theme="dark"]) .debrief { border-color: #2f4539; }
+/* dark-theme:generated:end */
