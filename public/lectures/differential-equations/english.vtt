@@ -1,0 +1,910 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.641
+A differential equation relates an unknown function to one or more of its
+
+00:00:03.641 --> 00:00:04.240
+derivatives.
+
+00:00:05.180 --> 00:00:09.240
+In an ordinary differential equation the function depends on one independent
+
+00:00:09.240 --> 00:00:11.980
+variable, such as y depending on x.
+
+00:00:12.780 --> 00:00:16.200
+A prime usually means differentiation with respect to that independent
+
+00:00:16.200 --> 00:00:21.780
+variable: y prime means d y over d x, and y double prime means the second
+
+00:00:21.780 --> 00:00:22.060
+derivative.
+
+00:00:22.460 --> 00:00:26.060
+The order is the highest derivative order actually present in the equation.
+
+00:00:26.060 --> 00:00:31.880
+In y double prime plus three y prime plus two y equal to zero, the order is
+
+00:00:31.880 --> 00:00:32.120
+two.
+
+00:00:32.820 --> 00:00:36.280
+In the cube of y prime equal to x plus y, the order is one.
+
+00:00:37.080 --> 00:00:39.460
+Cubing a first derivative does not make it a third derivative.
+
+00:00:40.420 --> 00:00:44.780
+Before classifying a written equation, simplify exact cancellations so that a
+
+00:00:44.780 --> 00:00:46.340
+term that disappears is not counted.
+
+00:00:47.060 --> 00:00:50.720
+An equation containing partial derivatives belongs to a different category and
+
+00:00:50.720 --> 00:00:51.780
+is outside this class.
+
+00:00:52.520 --> 00:00:55.080
+The original equation also carries domain restrictions.
+
+00:00:55.540 --> 00:01:00.220
+For example, a denominator x excludes zero even if an expression is later
+
+00:01:00.220 --> 00:01:01.640
+simplified on an allowed interval.
+
+00:01:02.560 --> 00:01:05.920
+State which variable is independent and which function is unknown before
+
+00:01:05.920 --> 00:01:08.000
+reading either the notation or the solution.
+
+00:01:08.712 --> 00:01:12.732
+Degree concerns algebraic powers of derivatives, rather than the highest
+
+00:01:12.732 --> 00:01:13.432
+derivative order.
+
+00:01:14.152 --> 00:01:17.892
+It is defined when the equation can be expressed as a polynomial in the
+
+00:01:17.892 --> 00:01:22.272
+derivatives after valid removal of fractions and radicals involving
+
+00:01:22.272 --> 00:01:22.752
+derivatives.
+
+00:01:23.852 --> 00:01:27.172
+The degree is the power of the highest order derivative in that polynomial
+
+00:01:27.172 --> 00:01:27.652
+form.
+
+00:01:28.452 --> 00:01:32.752
+In the square of y double prime plus the cube of y prime plus y equal to zero,
+
+00:01:33.112 --> 00:01:35.572
+the order is two and the degree is two.
+
+00:01:36.732 --> 00:01:39.252
+The cube on the lower derivative does not determine the degree.
+
+00:01:39.892 --> 00:01:44.792
+The cube of y prime equal to x plus y instead has order one and degree three.
+
+00:01:45.812 --> 00:01:50.232
+In y double prime plus sine of y prime equal to zero, the derivative appears
+
+00:01:50.232 --> 00:01:53.512
+inside a trigonometric function, so its degree is not defined.
+
+00:01:53.972 --> 00:01:58.672
+A sine of x or a sine of y alone does not create that same obstacle because
+
+00:01:58.672 --> 00:02:00.032
+neither is a sine of a derivative.
+
+00:02:01.012 --> 00:02:04.760
+When squaring a derivative radical or clearing a derivative denominator,
+
+00:02:04.760 --> 00:02:05.072
+record
+
+00:02:05.072 --> 00:02:07.992
+any sign or nonzero conditions required for equivalence.
+
+00:02:08.912 --> 00:02:12.692
+Otherwise the transformed equation may acquire solutions that do not satisfy
+
+00:02:12.692 --> 00:02:13.612
+the original equation.
+
+00:02:14.812 --> 00:02:17.212
+Always check a proposed solution in the original relation.
+
+00:02:17.472 --> 00:02:22.164
+Solving a differential equation means finding functions that satisfy it on an
+
+00:02:22.164 --> 00:02:22.712
+interval.
+
+00:02:23.592 --> 00:02:29.212
+For y prime equal to two x, direct integration gives y equal to x squared plus
+
+00:02:29.212 --> 00:02:29.432
+C.
+
+00:02:29.912 --> 00:02:33.592
+The constant is arbitrary, so this is a family of solutions.
+
+00:02:34.312 --> 00:02:38.272
+A particular initial condition selects a member when it is compatible with the
+
+00:02:38.272 --> 00:02:38.592
+equation.
+
+00:02:39.132 --> 00:02:44.832
+If y of one is three, substituting gives three equal to one plus C, so C is
+
+00:02:44.832 --> 00:02:45.112
+two.
+
+00:02:45.632 --> 00:02:49.212
+The selected solution is y equal to x squared plus two.
+
+00:02:50.272 --> 00:02:54.212
+Verify it in two separate ways: its derivative must equal the right hand side
+
+00:02:54.212 --> 00:02:58.861
+for every input in the chosen interval, and its value at the initial input
+
+00:02:58.861 --> 00:02:59.112
+must
+
+00:02:59.112 --> 00:03:00.312
+equal the stated value.
+
+00:03:01.052 --> 00:03:04.707
+A function that merely passes through the initial point need not solve the
+
+00:03:04.707 --> 00:03:05.152
+equation.
+
+00:03:05.932 --> 00:03:10.192
+A formula that satisfies the equation away from a pole cannot be declared a
+
+00:03:10.192 --> 00:03:12.132
+solution on an interval containing that pole.
+
+00:03:12.812 --> 00:03:16.952
+First order equations often yield one integration constant, but that
+
+00:03:16.952 --> 00:03:20.872
+observation is not a replacement for verification or a universal existence
+
+00:03:20.872 --> 00:03:21.152
+claim.
+
+00:03:21.952 --> 00:03:25.852
+Nonlinear equations can also have exceptional solutions that a division step
+
+00:03:25.852 --> 00:03:26.152
+misses.
+
+00:03:27.092 --> 00:03:29.652
+Keep such candidates until the original equation has been tested.
+
+00:03:29.928 --> 00:03:34.028
+Eliminating arbitrary constants provides one way to form a differential
+
+00:03:34.028 --> 00:03:35.988
+equation from a family of curves.
+
+00:03:36.928 --> 00:03:40.188
+Consider y equal to C times e to the two x.
+
+00:03:40.188 --> 00:03:45.168
+Differentiation gives y prime equal to two C times e to the two x.
+
+00:03:45.168 --> 00:03:50.428
+Replace the repeated expression C times e to the two x by y, obtaining y prime
+
+00:03:50.428 --> 00:03:52.228
+minus two y equal to zero.
+
+00:03:52.908 --> 00:03:56.988
+No division by y is needed, so the member with C equal to zero remains
+
+00:03:56.988 --> 00:03:57.368
+included.
+
+00:03:57.368 --> 00:04:02.808
+For the family of straight lines y equal to A x plus B, one differentiation
+
+00:04:02.808 --> 00:04:04.848
+gives y prime equal to A.
+
+00:04:05.368 --> 00:04:09.768
+A second differentiation eliminates A as well, giving y double prime equal to
+
+00:04:09.768 --> 00:04:09.968
+zero.
+
+00:04:10.768 --> 00:04:15.128
+Conversely, integrating that last equation twice recovers the full line family
+
+00:04:15.128 --> 00:04:16.508
+on an interval.
+
+00:04:16.508 --> 00:04:20.468
+The number of independent constants suggests how many differentiations may be
+
+00:04:20.468 --> 00:04:22.228
+useful in a nondegenerate family.
+
+00:04:22.228 --> 00:04:27.348
+It does not justify blindly differentiating every formula a fixed number of
+
+00:04:27.348 --> 00:04:28.388
+times without elimination.
+
+00:04:29.208 --> 00:04:32.768
+If the family contains parameters that are not independent, or if a
+
+00:04:32.768 --> 00:04:36.548
+manipulation divides by an expression that can vanish, inspect those cases
+
+00:04:36.548 --> 00:04:36.948
+separately.
+
+00:04:37.808 --> 00:04:41.508
+Formation is a supporting technique here; the main solution methods are
+
+00:04:41.508 --> 00:04:45.428
+separation, homogeneous substitution and linear integrating factors.
+
+00:04:45.696 --> 00:04:50.652
+A separable equation can be written as y prime equal to a function of x times
+
+00:04:50.652 --> 00:04:50.716
+a
+
+00:04:50.716 --> 00:04:51.676
+function of y.
+
+00:04:51.876 --> 00:04:55.956
+On an interval where the y factor is nonzero, move that factor to the y side
+
+00:04:55.956 --> 00:04:58.056
+and integrate each side in its own variable.
+
+00:04:58.956 --> 00:05:04.666
+For y prime equal to x y, division by y gives d y over y equal to x d
+
+00:05:04.666 --> 00:05:05.416
+x.
+
+00:05:05.416 --> 00:05:10.060
+Integration gives natural log of absolute y equal to x squared over two plus a
+
+00:05:10.060 --> 00:05:10.596
+constant.
+
+00:05:11.516 --> 00:05:14.980
+Exponentiating and absorbing the nonzero magnitude and sign into a new
+
+00:05:14.980 --> 00:05:15.376
+constant
+
+00:05:15.376 --> 00:05:20.216
+gives y equal to C times e to the x squared over two for nonzero C.
+
+00:05:20.936 --> 00:05:25.016
+The division excluded y equal to zero, so test that function in the original
+
+00:05:25.016 --> 00:05:25.416
+equation.
+
+00:05:26.016 --> 00:05:29.136
+It also satisfies y prime equal to x y.
+
+00:05:29.136 --> 00:05:32.576
+Including C equal to zero now represents it in the final family.
+
+00:05:33.236 --> 00:05:37.276
+A logarithmic intermediate constant and the final multiplicative constant are
+
+00:05:37.276 --> 00:05:40.816
+not the same parameter, even when both are conventionally named C.
+
+00:05:41.536 --> 00:05:45.636
+For an initial value y of zero equal to two, the multiplicative constant is
+
+00:05:45.636 --> 00:05:45.996
+two.
+
+00:05:46.916 --> 00:05:50.396
+Differentiate the resulting exponential to check that the inner derivative x
+
+00:05:50.396 --> 00:05:52.236
+restores the original right hand side.
+
+00:05:52.512 --> 00:05:56.392
+For y prime equal to y squared, the equation is separable.
+
+00:05:57.092 --> 00:06:01.572
+When y is nonzero, integrate y to the negative two with respect to y to obtain
+
+00:06:01.572 --> 00:06:04.532
+negative one over y equal to x plus a constant.
+
+00:06:05.312 --> 00:06:09.532
+The initial condition y of zero equal to one gives the constant negative one.
+
+00:06:10.432 --> 00:06:13.352
+Solving for y produces one divided by one minus x.
+
+00:06:14.032 --> 00:06:17.872
+Its derivative is one divided by the square of one minus x, which equals y
+
+00:06:17.872 --> 00:06:21.132
+squared wherever the denominator is nonzero.
+
+00:06:21.132 --> 00:06:23.232
+The formula has a pole at x equal to one.
+
+00:06:23.772 --> 00:06:27.932
+The maximal interval containing the initial input zero is therefore all x less
+
+00:06:27.932 --> 00:06:28.352
+than one.
+
+00:06:29.032 --> 00:06:33.012
+The same algebraic formula on x greater than one does not extend the initial
+
+00:06:33.012 --> 00:06:34.192
+solution across the pole.
+
+00:06:34.992 --> 00:06:39.872
+Division by y also excluded the constant solution y equal to zero; verify and
+
+00:06:39.872 --> 00:06:42.572
+restore it when describing the original equation's solutions.
+
+00:06:43.052 --> 00:06:47.452
+An equation that looks simple can thus produce a finite input where a solution
+
+00:06:47.452 --> 00:06:48.452
+becomes unbounded.
+
+00:06:49.592 --> 00:06:52.772
+The answer should include both the explicit function and the interval
+
+00:06:52.772 --> 00:06:56.137
+associated with the initial condition, rather than just the rational
+
+00:06:56.137 --> 00:06:56.632
+expression
+
+00:06:56.632 --> 00:06:57.032
+alone.
+
+00:06:57.264 --> 00:07:01.724
+Separation can produce inverse trigonometric integrals as well as logarithms.
+
+00:07:02.524 --> 00:07:07.447
+For y prime equal to two x times the quantity one plus y squared, divide by
+
+00:07:07.447 --> 00:07:07.644
+one
+
+00:07:07.644 --> 00:07:08.424
+plus y squared.
+
+00:07:09.184 --> 00:07:13.804
+This factor is strictly positive for real y, so this division loses no real
+
+00:07:13.804 --> 00:07:14.624
+constant solution.
+
+00:07:15.784 --> 00:07:19.984
+Integrating gives arctangent y equal to x squared plus an integration constant
+
+00:07:19.984 --> 00:07:21.344
+on a suitable branch interval.
+
+00:07:21.964 --> 00:07:26.484
+The initial condition y of zero equal to zero selects constant zero near the
+
+00:07:26.484 --> 00:07:27.044
+initial point.
+
+00:07:28.064 --> 00:07:30.564
+Taking tangent gives y equal to tangent of x squared.
+
+00:07:31.564 --> 00:07:35.504
+The interval containing zero must stop before x squared reaches pi over two,
+
+00:07:36.084 --> 00:07:37.544
+because tangent has a pole there.
+
+00:07:38.544 --> 00:07:41.924
+Thus absolute x must be less than square root of pi over two.
+
+00:07:42.804 --> 00:07:46.964
+Differentiate on this interval: y prime is two x times secant squared of x
+
+00:07:46.964 --> 00:07:49.884
+squared, which equals two x times one plus y squared.
+
+00:07:50.624 --> 00:07:54.384
+Although tangent is periodic, an initial solution cannot be continued through
+
+00:07:54.384 --> 00:07:56.404
+one of its infinite poles by switching branches.
+
+00:07:57.404 --> 00:08:00.984
+State the local inverse convention used in the integration and verify the
+
+00:08:00.984 --> 00:08:03.784
+explicit solution on the interval selected by its initial data.
+
+00:08:04.632 --> 00:08:09.132
+A first order homogeneous ratio equation has right hand side depending only on
+
+00:08:09.132 --> 00:08:12.612
+y over x, on a region where x is nonzero.
+
+00:08:12.612 --> 00:08:16.252
+This use of homogeneous is different from the word homogeneous in a linear
+
+00:08:16.252 --> 00:08:17.972
+equation with zero forcing term.
+
+00:08:18.652 --> 00:08:24.632
+For y prime equal to one plus y over x, set v equal to y over x, or y equal to
+
+00:08:24.632 --> 00:08:25.132
+v x.
+
+00:08:25.752 --> 00:08:27.152
+Here v depends on x.
+
+00:08:27.632 --> 00:08:31.332
+The product rule gives y prime equal to v plus x times v prime.
+
+00:08:32.492 --> 00:08:35.912
+Substituting produces v plus x v prime equal to one plus v.
+
+00:08:36.512 --> 00:08:39.972
+The v terms cancel, leaving v prime equal to one over x.
+
+00:08:40.652 --> 00:08:45.912
+Integration gives v equal to natural log of absolute x plus C, so y equals x
+
+00:08:45.912 --> 00:08:49.152
+times the quantity natural log of absolute x plus C.
+
+00:08:50.052 --> 00:08:53.592
+Differentiating this expression gives natural log of absolute x plus C plus
+
+00:08:53.592 --> 00:08:56.172
+one, exactly one plus y over x.
+
+00:08:56.952 --> 00:09:00.632
+Use an interval entirely on one side of zero, because the original equation
+
+00:09:00.632 --> 00:09:02.092
+excludes x equal to zero.
+
+00:09:02.812 --> 00:09:07.004
+Replacing y prime by only v would omit the derivative of the changing ratio
+
+00:09:07.004 --> 00:09:07.172
+and
+
+00:09:07.172 --> 00:09:07.952
+destroy the method.
+
+00:09:08.232 --> 00:09:12.252
+Homogeneous substitution can introduce a division that hides straight line
+
+00:09:12.252 --> 00:09:12.772
+solutions.
+
+00:09:13.832 --> 00:09:18.592
+Consider y prime equal to the square of y over x, with x nonzero.
+
+00:09:18.592 --> 00:09:19.972
+Put y equal to v x.
+
+00:09:20.632 --> 00:09:25.932
+The transformed equation is x v prime equal to v squared minus v, or v times v
+
+00:09:25.932 --> 00:09:26.452
+minus one.
+
+00:09:27.312 --> 00:09:29.992
+Before dividing by that product, inspect its zeros.
+
+00:09:30.772 --> 00:09:35.512
+Constant v equal to zero gives y equal to zero, and constant v equal to one
+
+00:09:35.512 --> 00:09:36.832
+gives y equal to x.
+
+00:09:37.412 --> 00:09:40.752
+Both solve the original equation on intervals excluding zero.
+
+00:09:41.652 --> 00:09:46.232
+For the other branches, separation gives d v divided by v times v minus one
+
+00:09:46.232 --> 00:09:47.592
+equal to d x over x.
+
+00:09:48.652 --> 00:09:52.272
+Partial fractions integrate the left side to natural log of the absolute value
+
+00:09:52.272 --> 00:09:54.552
+of the ratio v minus one to v.
+
+00:09:55.352 --> 00:09:59.872
+Solving the resulting relation gives y equal to x divided by one minus C x.
+
+00:09:59.872 --> 00:10:04.433
+Setting C equal to zero recovers y equal to x in this displayed family, while
+
+00:10:04.433 --> 00:10:04.492
+y
+
+00:10:04.492 --> 00:10:06.452
+equal to zero remains an additional solution.
+
+00:10:07.672 --> 00:10:11.432
+Require both x nonzero and one minus C x nonzero.
+
+00:10:11.432 --> 00:10:14.912
+Verification distinguishes an actually missing branch from one already
+
+00:10:14.912 --> 00:10:17.212
+represented by a special value of the final constant.
+
+00:10:17.544 --> 00:10:22.784
+A first order linear equation in y has the normalized form y prime plus P of x
+
+00:10:22.784 --> 00:10:24.724
+times y equal to Q of x.
+
+00:10:25.364 --> 00:10:27.424
+Neither P nor Q depends on y.
+
+00:10:28.204 --> 00:10:32.164
+Choose an integrating factor mu equal to the exponential of an antiderivative
+
+00:10:32.164 --> 00:10:32.704
+of P.
+
+00:10:33.364 --> 00:10:35.364
+Its derivative equals P times mu.
+
+00:10:36.204 --> 00:10:40.144
+Multiplying the equation by mu makes the left hand side the derivative of the
+
+00:10:40.144 --> 00:10:40.724
+product mu y.
+
+00:10:41.744 --> 00:10:45.784
+Integration then gives mu y equal to the integral of mu Q with respect to x,
+
+00:10:46.124 --> 00:10:46.604
+plus C.
+
+00:10:47.084 --> 00:10:51.424
+A nonzero constant multiplier in mu does not change the final solution family,
+
+00:10:51.804 --> 00:10:54.264
+so one convenient integrating factor is enough.
+
+00:10:54.944 --> 00:11:00.364
+For y prime plus two y equal to four, use mu equal to e to the two x.
+
+00:11:00.364 --> 00:11:05.104
+Integration gives y equal to two plus C e to the negative two x.
+
+00:11:05.104 --> 00:11:07.304
+If y of zero is three, C is one.
+
+00:11:08.004 --> 00:11:11.684
+Differentiate and substitute to verify the decaying term cancels in y prime
+
+00:11:11.684 --> 00:11:12.924
+plus two y.
+
+00:11:12.924 --> 00:11:14.944
+The method requires normalization first.
+
+00:11:15.544 --> 00:11:19.804
+If the coefficient of y prime vanishes somewhere, dividing by it restricts the
+
+00:11:19.804 --> 00:11:23.164
+interval and that excluded location must be considered separately in the
+
+00:11:23.164 --> 00:11:23.904
+original equation.
+
+00:11:24.096 --> 00:11:28.096
+A variable coefficient equation should be normalized before its integrating
+
+00:11:28.096 --> 00:11:29.356
+factor is read.
+
+00:11:29.696 --> 00:11:35.616
+For x y prime plus y equal to two x, divide by x only on an interval where
+
+00:11:35.616 --> 00:11:36.596
+x is nonzero.
+
+00:11:37.556 --> 00:11:42.136
+The normalized equation is y prime plus y over x equal to two.
+
+00:11:42.856 --> 00:11:47.736
+Integrating P equal to one over x gives natural log of absolute x, so the
+
+00:11:47.736 --> 00:11:50.836
+positive exponential choice for mu is absolute x.
+
+00:11:51.416 --> 00:11:56.116
+On either side of zero, x itself is also a valid nonzero constant multiple of
+
+00:11:56.116 --> 00:11:57.836
+that factor, and is convenient.
+
+00:11:58.936 --> 00:12:03.716
+Multiplication makes the equation the derivative of x y equal to two x.
+
+00:12:03.716 --> 00:12:09.105
+Integrating gives x y equal to x squared plus C, hence y equal to x plus C
+
+00:12:09.105 --> 00:12:09.396
+over
+
+00:12:09.396 --> 00:12:09.756
+x.
+
+00:12:10.656 --> 00:12:15.116
+If y of one equals three, C equals two and the initial solution lies on x
+
+00:12:15.116 --> 00:12:15.796
+greater than zero.
+
+00:12:16.896 --> 00:12:19.336
+Do not claim that every member passes through zero.
+
+00:12:19.906 --> 00:12:24.956
+The member with C equal to zero can be extended as y equal to x and satisfies
+
+00:12:24.956 --> 00:12:29.916
+the original unnormalized equation even there, but members with nonzero C have
+
+00:12:29.916 --> 00:12:30.256
+a pole.
+
+00:12:31.376 --> 00:12:34.936
+The original equation, rather than the divided form alone, decides what an
+
+00:12:34.936 --> 00:12:35.756
+extension can mean.
+
+00:12:36.048 --> 00:12:40.317
+Sometimes an equation is linear when x is treated as the dependent variable
+
+00:12:40.317 --> 00:12:40.488
+and
+
+00:12:40.488 --> 00:12:42.228
+y as the independent variable.
+
+00:12:43.088 --> 00:12:47.888
+For d x over d y plus x equal to y, the unknown is a function x of y.
+
+00:12:48.468 --> 00:12:52.468
+The coefficient of x is one, so the integrating factor is e to the y.
+
+00:12:53.368 --> 00:12:57.159
+Multiplication gives the derivative with respect to y of the product e to the
+
+00:12:57.159 --> 00:12:57.208
+y
+
+00:12:57.208 --> 00:12:59.788
+times x equal to y e to the y.
+
+00:13:00.568 --> 00:13:04.748
+Integration by parts gives the integral on the right as e to the y times the
+
+00:13:04.748 --> 00:13:06.448
+quantity y minus one, plus C.
+
+00:13:07.408 --> 00:13:12.026
+Dividing by e to the y gives x equal to y minus one plus C e to the negative
+
+00:13:12.026 --> 00:13:12.148
+y.
+
+00:13:12.888 --> 00:13:16.448
+The condition x of zero equal to one sets C equal to two.
+
+00:13:17.468 --> 00:13:21.908
+Differentiate with respect to y to check that d x over d y plus x equals y.
+
+00:13:22.448 --> 00:13:27.168
+Do not silently substitute d y over d x for d x over d y.
+
+00:13:27.168 --> 00:13:31.228
+Reciprocating a derivative needs a local inverse and a nonzero derivative, and
+
+00:13:31.228 --> 00:13:32.228
+may exclude points.
+
+00:13:32.788 --> 00:13:37.068
+Keeping the chosen independent variable explicit is safer than assuming every
+
+00:13:37.068 --> 00:13:40.428
+first order equation must be linear in y as a function of x.
+
+00:13:41.400 --> 00:13:44.835
+A rate proportional to the current amount gives a simple separable
+
+00:13:44.835 --> 00:13:45.460
+differential
+
+00:13:45.460 --> 00:13:45.900
+equation.
+
+00:13:46.720 --> 00:13:52.360
+For decay, write d N over d t equal to negative k N, with k
+
+00:13:52.360 --> 00:13:52.820
+positive.
+
+00:13:53.820 --> 00:13:58.166
+Separation or the linear method yields N equal to the initial amount times e
+
+00:13:58.166 --> 00:13:58.280
+to
+
+00:13:58.280 --> 00:13:59.600
+the negative k t.
+
+00:14:00.160 --> 00:14:04.440
+The initial value is N of zero, and the model keeps a positive initial amount
+
+00:14:04.440 --> 00:14:06.180
+positive at every finite time.
+
+00:14:06.880 --> 00:14:11.062
+The coefficient k has inverse time units, so its product with t in the
+
+00:14:11.062 --> 00:14:11.540
+exponent
+
+00:14:11.540 --> 00:14:12.500
+is dimensionless.
+
+00:14:13.460 --> 00:14:17.460
+A half life T means the amount at time T is one half of the initial amount.
+
+00:14:18.540 --> 00:14:23.600
+Substitution gives e to the negative k T equal to one half, hence k equal to
+
+00:14:23.740 --> 00:14:25.520
+natural log two divided by T.
+
+00:14:26.140 --> 00:14:29.740
+After two half lives the remaining amount is one quarter, not zero.
+
+00:14:30.420 --> 00:14:34.329
+For an initial amount eighty and half life three time units, the amount at
+
+00:14:34.329 --> 00:14:34.540
+time
+
+00:14:34.540 --> 00:14:36.080
+six is twenty.
+
+00:14:36.080 --> 00:14:40.621
+Growth uses the positive sign instead and gives an increasing exponential for
+
+00:14:40.621 --> 00:14:40.680
+a
+
+00:14:40.680 --> 00:14:41.320
+positive initial amount.
+
+00:14:42.260 --> 00:14:46.180
+The proportional rate assumption is a modelling choice; it should not be
+
+00:14:46.180 --> 00:14:49.480
+inferred merely from one observed pair of amounts without stating that
+
+00:14:49.480 --> 00:14:49.760
+assumption.
+
+00:14:50.568 --> 00:14:55.368
+A reliable solution begins by classifying the equation after checking its
+
+00:14:55.368 --> 00:14:55.668
+domain.
+
+00:14:56.568 --> 00:15:02.108
+If the right hand side factors into a function of x times a function of y, try
+
+00:15:02.108 --> 00:15:05.568
+separation and inspect the zeros of the factor divided out.
+
+00:15:06.368 --> 00:15:12.208
+If the right hand side depends on y over x, use y equal to v x and the product
+
+00:15:12.208 --> 00:15:16.488
+rule, then inspect any constant v branches excluded during separation.
+
+00:15:16.488 --> 00:15:21.668
+If the normalized equation is linear in its chosen unknown, find the
+
+00:15:21.668 --> 00:15:24.008
+integrating factor from the coefficient of that unknown.
+
+00:15:25.148 --> 00:15:30.408
+These categories can overlap: y prime equal to x y is both separable and
+
+00:15:30.408 --> 00:15:30.668
+linear.
+
+00:15:31.748 --> 00:15:35.068
+Choosing either valid method should produce equivalent families on the same
+
+00:15:35.068 --> 00:15:35.388
+interval.
+
+00:15:36.408 --> 00:15:38.408
+They do not cover every differential equation.
+
+00:15:39.108 --> 00:15:43.288
+For example, a nonlinear equation need not become separable just because it is
+
+00:15:43.288 --> 00:15:43.808
+first order.
+
+00:15:44.548 --> 00:15:49.508
+After integration, absorb constants only through valid operations, restore
+
+00:15:49.508 --> 00:15:53.148
+exceptional solutions, and differentiate the candidate in the original
+
+00:15:53.148 --> 00:15:53.568
+equation.
+
+00:15:54.548 --> 00:15:57.843
+Then check the initial condition and identify the connected interval
+
+00:15:57.843 --> 00:15:58.328
+containing
+
+00:15:58.328 --> 00:15:58.888
+its input.
+
+00:15:59.948 --> 00:16:04.408
+A pole, a logarithmic restriction or an excluded original denominator can end
+
+00:16:04.408 --> 00:16:05.048
+that interval.
+
+00:16:06.068 --> 00:16:09.809
+These checks are part of the solution, not optional finishing details after
+
+00:16:09.809 --> 00:16:10.408
+the algebra.

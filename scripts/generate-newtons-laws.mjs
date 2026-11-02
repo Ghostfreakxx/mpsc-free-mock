@@ -89,6 +89,7 @@ targets['sequences-series']='sequences-series';
 targets['trigonometry']='trigonometry';
 targets['limits-continuity-differentiability']='limits-continuity-differentiability';
 targets['integral-calculus']='integral-calculus';
+targets['differential-equations']='differential-equations';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const lesson = JSON.parse(await fs.readFile(path.join(root, `app/data/jee-${dataName}-lecture.json`), 'utf8'));

@@ -10,6 +10,7 @@ try {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
   const cases = [
+    ['Mathematics', 'differential-equations', 14, [1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],
     ['Mathematics', 'integral-calculus', 14, [1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],
     ['Mathematics', 'limits-continuity-differentiability', 14, [1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],
     ['Mathematics', 'trigonometry', 14, [1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],
