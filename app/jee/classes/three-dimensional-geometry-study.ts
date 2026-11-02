@@ -1,0 +1,545 @@
+import type { StudyLesson } from './course';
+// Authored by scripts/create-three-dimensional-geometry.mjs.
+export const threeDimensionalGeometryLesson:StudyLesson = {
+  "id": "three-dimensional-geometry",
+  "subject": "Mathematics",
+  "unit": 11,
+  "title": "3D geometry: coordinates, lines and shortest distances",
+  "summary": "Space coordinates, distances and sections, direction ratios and cosines, line angles and equations, intersection and skew classification, perpendicular feet and shortest distances with common perpendicular equations.",
+  "prerequisites": "Coordinate Geometry, algebra and basic vector component arithmetic. Dot and cross products used for the distance methods are explained in this class.",
+  "remaining": "Fourteen-chapter recorded foundation for Unit 11 with original examples and practice covering its main coordinate, direction, line and shortest distance headings, including the equation of a common perpendicular. Further mixed parameter lines, general closest-point systems and timed practice remain. Supporting projection and point-to-line examples are included. This is not exhaustive problem coverage or official PYQs.",
+  "sections": [
+    {
+      "title": "Locate points in space and measure distance from the origin",
+      "formula": "OP=√(x²+y²+z²)",
+      "paragraphs": [
+        "A point in three dimensional Cartesian space is an ordered triple x, y, z. The coordinates measure signed positions along three mutually perpendicular axes with a common length scale. The order matters: interchanging coordinates generally changes the point. The distance from the origin to the point is square root of x squared plus y squared plus z squared. This follows by applying the Pythagorean theorem first in a coordinate plane and then to the remaining perpendicular direction. For the point two, negative three, six, the squared distance is four plus nine plus thirty six, or forty nine, giving distance seven. A negative coordinate changes the location but does not make a distance negative. A point with one coordinate zero lies on the corresponding coordinate plane. A point with two coordinates zero lies on an axis. Points with no zero coordinate belong to one of eight octants according to their three signs. The numbering of octants can depend on convention, so a sign description is unambiguous. A flat drawing of space is only a projection; do not measure angles or lengths directly from a slanted sketch."
+      ]
+    },
+    {
+      "title": "Find distances and orthogonal coordinate projections",
+      "formula": "AB=√[(x₂−x₁)²+(y₂−y₁)²+(z₂−z₁)²]",
+      "paragraphs": [
+        "The distance between two space points is the length of their coordinate difference. Subtract the first point's x, y and z coordinates from the corresponding coordinates of the second, square the three differences, add and take the nonnegative root. For A at one, two, three and B at three, negative one, nine, the difference is two, negative three, six. The distance is seven. Reversing A and B reverses every component but preserves the distance. Coordinate projections give another useful interpretation. The perpendicular projection of B onto the x y coordinate plane is three, negative one, zero. Only z is replaced by zero, because the perpendicular direction is along the z axis. Its distance from that plane is absolute z, or nine. Projection onto an axis sets the other two coordinates to zero, and the distance to that axis uses those two removed coordinates. For example, the distance from B to the z axis is square root of ten. Keep a projected point, a projected displacement and a distance distinct: they are different kinds of objects, even when they arise from the same coordinate calculation."
+      ]
+    },
+    {
+      "title": "Apply internal and external section formulas in three dimensions",
+      "formula": "AP:PB=m:n ⇒ P=(nA+mB)/(m+n) internally",
+      "paragraphs": [
+        "The section formula works component by component in space. If P divides A B internally with A P to P B equal to positive m to n, then its position is the quantity n A plus m B divided by m plus n. The notation abbreviates the same weighted calculation in each of the three coordinates. With A at zero, zero, zero and B at six, three, nine, internal ratio two to one gives four, two, six. The larger weight belongs to B because P is nearer B. Equal positive weights give the midpoint, three, three halves, nine halves. External division uses the quantity m B minus n A divided by m minus n, provided m is not n. External ratio two to one gives twelve, six, eighteen, beyond B. For distinct endpoints, equal external distances do not give a finite point. Check collinearity as well as the ratio by seeing that the displacement to P is a scalar multiple of the endpoint displacement. The internal formula also applies to a line segment parameter between zero and one; a parameter outside that range describes a point on an extension."
+      ]
+    },
+    {
+      "title": "Use direction ratios and distinguish orientation from a line",
+      "formula": "A nonzero triple (a,b,c) supplies direction ratios",
+      "paragraphs": [
+        "A line direction in space can be represented by a nonzero triple of direction ratios. For a line through two distinct points, their coordinate differences give such a triple. The ratios need not have length one. Multiplying all three by a nonzero scalar preserves the underlying unoriented line direction. For example, two, negative three, six and four, negative six, twelve are proportional and describe parallel directions. Multiplying by negative one reverses orientation but still gives the same unoriented line. The all zero triple is invalid because it provides no direction at all. Zero in one or two individual components is allowed: a zero x component means movement along the line leaves x constant. To compare directions, proportionality must hold with one common multiplier in all three coordinates. Three arbitrary separate multipliers would make the test meaningless. Avoid dividing component by component when a component is zero; compare nonzero ratios carefully or use cross multiplication. A point and a nonzero direction determine a complete line, while direction ratios alone determine only a direction and therefore a family of parallel lines at different locations."
+      ]
+    },
+    {
+      "title": "Normalize direction ratios to direction cosines",
+      "formula": "l=a/√(a²+b²+c²), m=b/√(a²+b²+c²), n=c/√(a²+b²+c²)",
+      "paragraphs": [
+        "Direction cosines describe an oriented unit direction by its cosines with the three positive coordinate axes. If those angles are alpha, beta and gamma, write l, m and n for their cosines. To obtain them from direction ratios a, b and c, divide each component by the positive length square root of a squared plus b squared plus c squared. For ratios two, negative three, six, that length is seven, so the direction cosines are two sevenths, negative three sevenths and six sevenths. Their squared sum is one. The negative y component means the angle with the positive y axis is obtuse, not acute. Reversing orientation changes the signs of all three direction cosines and replaces each axis angle by its supplement. An unoriented line therefore has two opposite unit direction choices. Ratios do not automatically satisfy the squared sum condition until normalized. If two direction cosines are known, the square of the third is one minus the other two squares; its sign needs an orientation condition. Check that this remainder is nonnegative before taking a real square root."
+      ]
+    },
+    {
+      "title": "Calculate the smaller angle between intersecting lines",
+      "formula": "cosθ=|d₁·d₂|/(|d₁||d₂|), 0≤θ≤π/2",
+      "paragraphs": [
+        "The dot product of two direction triples is the sum of the products of corresponding components. It equals the product of their lengths times the cosine of the oriented vector angle. For the smaller angle between unoriented lines, take the absolute value of the dot product before dividing by the two lengths. This chooses an angle between zero and pi over two and makes the result independent of reversing either direction. Two intersecting lines through the origin with directions one, zero, zero and one, one, zero have dot product one and lengths one and square root of two. Their smaller angle is pi over four. A zero dot product gives perpendicular directions, while proportional nonzero directions give a smaller angle of zero. Check that both triples are nonzero before using the formula. If a question specifically asks for intersecting lines, also verify they share a point; a dot product alone does not establish an intersection in space. Skew lines can have perpendicular direction vectors without meeting, so a direction calculation and a position calculation answer different questions."
+      ]
+    },
+    {
+      "title": "Write vector and parametric equations of a line",
+      "formula": "r=A+td; x=x₀+at, y=y₀+bt, z=z₀+ct",
+      "paragraphs": [
+        "A line through point A with nonzero direction d has vector equation r equal to A plus t d, with real parameter t. This is compact notation for three parametric coordinate equations using the same t. Through one, two, three with direction two, negative one, four, they are x equal to one plus two t, y equal to two minus t and z equal to three plus four t. At t equal to two the point is five, zero, eleven. Substitution into all three equations verifies membership. A candidate point must give the same parameter in every coordinate that varies; using a separate parameter for each coordinate would describe a larger set than the intended line. The parameter is not generally distance travelled, because the direction vector may not be a unit vector. Here a change of one in t moves a distance square root of twenty one. Replacing d by a nonzero scalar multiple simply rescales the parameter, so different looking parametric equations can describe the same line. The base point A can also be replaced by any other point on that line."
+      ]
+    },
+    {
+      "title": "Use symmetric equations without dividing by zero",
+      "formula": "(x−x₀)/a=(y−y₀)/b=(z−z₀)/c when a,b,c≠0",
+      "paragraphs": [
+        "Eliminating the common parameter from a line's three coordinate equations gives symmetric form when the direction components used as denominators are nonzero. Through one, two, three with ratios two, negative one, four, write x minus one over two equal to y minus two over negative one equal to z minus three over four. Every displayed quotient represents the same parameter. A zero direction component must be handled as a constant coordinate equation, not as division by zero. For direction zero, two, negative one through the same base point, keep x equal to one and write y minus two over two equal to z minus three over negative one. If two direction components are zero, two coordinates stay constant and the remaining coordinate varies freely. A denominator in symmetric form is a direction ratio, not an intercept. Multiplying all three denominators by the same nonzero constant preserves the line, while changing only one generally changes its direction. When checking a candidate point, retain the constant coordinate conditions as well as the equal ratios, since omitting one condition can introduce points outside the line."
+      ]
+    },
+    {
+      "title": "Construct a line through two distinct space points",
+      "formula": "r=A+t(B−A); 0≤t≤1 gives the segment AB",
+      "paragraphs": [
+        "Two distinct points determine a line in space. Subtract their coordinates to obtain a nonzero direction and use one point as the base. For A at one, zero, two and B at three, four, zero, the displacement B minus A is two, four, negative two. The vector equation is r equal to A plus t times that displacement. Thus x equals one plus two t, y equals four t and z equals two minus two t. Parameter zero returns A, parameter one returns B, and one half gives the midpoint two, two, one. Restricting t to the closed interval zero through one gives the segment; allowing every real t gives the whole line. Direction ratios can be reduced to one, two, negative one, but then the parameter values at the endpoints change unless the parameter is rescaled. A third point is collinear with A and B exactly when its displacement from A is a scalar multiple of B minus A. Coincident endpoints have zero displacement and do not determine a unique direction, so the distinctness check is necessary before writing this construction."
+      ]
+    },
+    {
+      "title": "Distinguish intersecting, parallel, coincident and skew lines",
+      "formula": "A+td₁=B+sd₂: solve all three coordinate equations",
+      "paragraphs": [
+        "Two lines in space can intersect, be distinct and parallel, coincide, or be skew. Skew means they are neither parallel nor intersecting, so they do not lie in a common plane. To test an intersection of parameter equations A plus t d one and B plus s d two, use independent parameters t and s and equate all three coordinates. A solution must satisfy all three equations at once. Solving two and ignoring a contradiction in the third gives a false intersection. For line one given by t, zero, zero and line two given by s, two, s plus one, the y coordinates are always zero and two. They cannot meet, and their directions one, zero, zero and one, zero, one are not proportional, so they are skew. By contrast, two proportional directions require a position test: if a point of one line lies on the other, they coincide; otherwise they are distinct and parallel. The equations t, zero, zero and two plus s, zero, zero describe the same x axis despite their different base points. Unlike the plane case, nonparallel lines in three dimensions need not intersect."
+      ]
+    },
+    {
+      "title": "Find the perpendicular foot from a point to a line",
+      "formula": "H=A+t₀d; t₀=((P−A)·d)/(d·d)",
+      "paragraphs": [
+        "The closest point H on a line to a given point P is its perpendicular foot. If the line is A plus t d, write H in that form and require the displacement P minus H to have zero dot product with d. Solving gives the foot parameter t zero equal to the dot product of P minus A with d, divided by d dot d. The denominator is positive because d is nonzero. For P at two, three, four and the x axis given by t, zero, zero, the foot is two, zero, zero. The connecting displacement is zero, three, four, whose dot product with the x direction is zero. Its length is five. If P already lies on the line, the foot is P and the distance is zero. The vector formula using the cross product length of P minus A with d divided by the length of d gives the same distance. The projection method also supplies the actual foot coordinates, which a distance alone does not provide. Verify both line membership of H and perpendicularity of P minus H before reporting the result."
+      ]
+    },
+    {
+      "title": "Evaluate the shortest distance between nonparallel skew lines",
+      "formula": "D=|(B−A)·(d₁×d₂)|/|d₁×d₂|",
+      "paragraphs": [
+        "For two nonparallel lines, their direction cross product is nonzero and perpendicular to both directions. Project the displacement between any chosen base points onto this common normal. The absolute scalar projection gives the shortest distance: absolute value of B minus A dotted with d one cross d two, divided by the length of that cross product. The cross product of triples a, b, c and p, q, r has components b r minus c q, c p minus a r, and a q minus b p. For line one t, zero, zero and line two s, two, s plus one, choose base points zero, zero, zero and zero, two, one. The directions are one, zero, zero and one, zero, one. Their cross product is zero, negative one, zero. The numerator is absolute negative two, so the shortest distance is two. The expression is independent of the chosen base points and nonzero direction scales. A zero numerator for nonparallel lines means they are coplanar and intersect. Parallel directions make the cross product zero, so this formula must not be used in that case."
+      ]
+    },
+    {
+      "title": "Find the common perpendicular equation and closest points",
+      "formula": "Q−P ⟂ d₁,d₂; common perpendicular r=P+u(Q−P)",
+      "paragraphs": [
+        "A shortest distance value does not by itself give the line carrying the shortest segment. To find the common perpendicular of two skew lines, let P be a parameter point on the first and Q a parameter point on the second. Require Q minus P to be perpendicular to both direction vectors. This gives two linear equations for the two parameters. For the lines t, zero, zero and s, two, s plus one, the connecting displacement is s minus t, two, s plus one. Its dot product with one, zero, zero gives s minus t equal to zero. Its dot product with one, zero, one gives two s minus t plus one equal to zero. Hence t and s both equal negative one. The closest points are negative one, zero, zero and negative one, two, zero. The common perpendicular has equation r equal to negative one, u, zero, with real u, or equivalently x equal to negative one and z equal to zero. The segment from u zero to u two has length two. Verify that the line meets both original lines and that its direction is perpendicular to each; those checks establish the geometry as well as the algebra."
+      ]
+    },
+    {
+      "title": "Handle parallel lines with a separate distance formula",
+      "formula": "For parallel lines, D=|(B−A)×d|/|d|",
+      "paragraphs": [
+        "For parallel lines, the two direction vectors have zero cross product, so the nonparallel shortest distance formula has a zero denominator. Instead, use any nonzero common direction d and remove the component of B minus A along it. The perpendicular component length is the distance. Equivalently, take the length of B minus A cross d and divide by the length of d. For the x axis t, zero, zero and the parallel line s, three, four, the shortest connecting displacement is zero, three, four, giving distance five. There are infinitely many perpendicular joining segments of this same length, one at each matching x coordinate, rather than the unique common perpendicular found for skew lines. If the base displacement is itself parallel to d, the two lines coincide and the distance is zero. Always classify the directions first, then check location. Nonparallel intersecting lines have distance zero but are not coincident. A valid final answer should state which case applies, the distance, and any closest points or common perpendicular equation the question requests. Keep point membership and zero direction exclusions in that final check."
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "question": "Find the origin distance of (2,−3,6), and the distance between (1,2,3),(3,−1,9).",
+      "steps": [
+        "The first squared length is 4+9+36=49.",
+        "For the second subtract endpoints to get the same displacement (2,−3,6).",
+        "Take the nonnegative square root in each case."
+      ],
+      "answer": "Both distances are 7."
+    },
+    {
+      "question": "Project B=(3,−1,9) onto xy and find its distance to the z axis.",
+      "steps": [
+        "Set z=0 for the xy projection.",
+        "For the z axis foot set x=y=0 while retaining z=9.",
+        "The axis distance is √(3²+(−1)²)."
+      ],
+      "answer": "Projection (3,−1,0); distance to z axis √10."
+    },
+    {
+      "question": "Divide (0,0,0) to (6,3,9) in ratio 2:1 internally and externally.",
+      "steps": [
+        "Internal weights give (A+2B)/3.",
+        "External weights give (2B−A)/(2−1).",
+        "Check collinearity and positive distance ratios."
+      ],
+      "answer": "Internal (4,2,6); external (12,6,18)."
+    },
+    {
+      "question": "Find direction cosines for ratios (2,−3,6).",
+      "steps": [
+        "Their length is √49=7.",
+        "Divide every component by seven.",
+        "Check the sum of squares and retain the negative y sign."
+      ],
+      "answer": "(2/7,−3/7,6/7); the angle with positive y is obtuse."
+    },
+    {
+      "question": "Find the smaller angle between lines through the origin in directions (1,0,0),(1,1,0).",
+      "steps": [
+        "The dot product is 1.",
+        "The product of lengths is √2.",
+        "The absolute normalized value is cosθ=1/√2."
+      ],
+      "answer": "θ=π/4."
+    },
+    {
+      "question": "Write a line through (1,2,3) with direction (2,−1,4) and test (5,0,11).",
+      "steps": [
+        "Write r=(1,2,3)+t(2,−1,4).",
+        "Its coordinates are x=1+2t, y=2−t, z=3+4t.",
+        "Each coordinate of the candidate gives t=2."
+      ],
+      "answer": "The point is on the line at t=2; symmetric form is (x−1)/2=(y−2)/(−1)=(z−3)/4."
+    },
+    {
+      "question": "Write a line through (1,2,3) with direction (0,2,−1).",
+      "steps": [
+        "The zero x component forces x=1.",
+        "The other coordinates are y=2+2t and z=3−t.",
+        "Eliminate t only where a nonzero direction component is available."
+      ],
+      "answer": "x=1, (y−2)/2=(z−3)/(−1)."
+    },
+    {
+      "question": "Construct the line and segment joining (1,0,2),(3,4,0).",
+      "steps": [
+        "The difference is (2,4,−2).",
+        "Use r=(1,0,2)+t(2,4,−2).",
+        "All real t gives the line; 0≤t≤1 gives the segment."
+      ],
+      "answer": "Midpoint at t=1/2 is (2,2,1)."
+    },
+    {
+      "question": "Classify (t,0,0) and (s,2,s+1).",
+      "steps": [
+        "Their directions (1,0,0),(1,0,1) are nonparallel.",
+        "An intersection would require the fixed y values 0 and 2 to match.",
+        "No such point exists."
+      ],
+      "answer": "They are skew lines."
+    },
+    {
+      "question": "Find the perpendicular foot of (2,3,4) on the x axis.",
+      "steps": [
+        "A line point has form H=(t,0,0).",
+        "Require (P−H)·(1,0,0)=2−t=0.",
+        "The connecting vector is (0,3,4)."
+      ],
+      "answer": "Foot (2,0,0), distance 5."
+    },
+    {
+      "question": "Find the distance and common perpendicular of L₁=(t,0,0), L₂=(s,2,s+1).",
+      "steps": [
+        "The direction cross product is (0,−1,0), so the scalar triple formula gives distance 2.",
+        "For closest points, solve (s−t,2,s+1) dotted with each direction equal to zero.",
+        "This gives t=s=−1 and endpoints (−1,0,0),(−1,2,0)."
+      ],
+      "answer": "Distance 2; common perpendicular r=(−1,u,0), u∈ℝ."
+    },
+    {
+      "question": "Find the distance between L₁=(t,0,0), L₂=(s,3,4).",
+      "steps": [
+        "The directions are parallel, so do not use a zero cross product denominator.",
+        "The base displacement (0,3,4) is already perpendicular to the common direction.",
+        "Its length is √25=5."
+      ],
+      "answer": "Distance 5; closest endpoints (v,0,0),(v,3,4) for any real v."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The distance from the origin to (2,−3,6) is:",
+      "options": [
+        "49",
+        "7",
+        "11",
+        "√13"
+      ],
+      "answer": 1,
+      "explanation": "Square and add all three coordinates: 4+9+36=49, then take the nonnegative square root."
+    },
+    {
+      "question": "A point with exactly two zero coordinates lies:",
+      "options": [
+        "Off all coordinate planes",
+        "Only at the origin",
+        "On a coordinate axis",
+        "On no coordinate axis"
+      ],
+      "answer": 2,
+      "explanation": "Only one coordinate can vary, so the point lies on its corresponding axis."
+    },
+    {
+      "question": "The distance between (1,2,3) and (3,−1,9) is:",
+      "options": [
+        "√14",
+        "6",
+        "49",
+        "7"
+      ],
+      "answer": 3,
+      "explanation": "Their displacement is (2,−3,6), whose squared length is 49."
+    },
+    {
+      "question": "The projection of (3,−1,9) onto the xy plane is:",
+      "options": [
+        "(3,−1,0)",
+        "(0,0,9)",
+        "(3,0,9)",
+        "(0,−1,9)"
+      ],
+      "answer": 0,
+      "explanation": "Perpendicular projection onto xy preserves x,y and sets z to zero."
+    },
+    {
+      "question": "The internal 2:1 section point from A=(0,0,0) to B=(6,3,9) is:",
+      "options": [
+        "(2,1,3)",
+        "(4,2,6)",
+        "(3,3/2,9/2)",
+        "(12,6,18)"
+      ],
+      "answer": 1,
+      "explanation": "Use (A+2B)/3, applying the weights to all three coordinates."
+    },
+    {
+      "question": "The external 2:1 section point for those endpoints is:",
+      "options": [
+        "(4,2,6)",
+        "(−12,−6,−18)",
+        "(12,6,18)",
+        "(6,3,9)"
+      ],
+      "answer": 2,
+      "explanation": "Use (2B−A)/(2−1); the point lies beyond B and has AP twice PB."
+    },
+    {
+      "question": "Which triple gives the same unoriented direction as (2,−3,6)?",
+      "options": [
+        "(4,6,12)",
+        "(2,−6,6)",
+        "(0,0,0)",
+        "(−4,6,−12)"
+      ],
+      "answer": 3,
+      "explanation": "A common nonzero scalar −2 multiplies all components; orientation reverses but the line direction is unchanged."
+    },
+    {
+      "question": "Which triple cannot be direction ratios of a line?",
+      "options": [
+        "(0,0,0)",
+        "(1,0,0)",
+        "(0,2,−1)",
+        "(2,−3,6)"
+      ],
+      "answer": 0,
+      "explanation": "A line requires a nonzero direction; individual zero components are allowed."
+    },
+    {
+      "question": "The direction cosines for oriented ratios (2,−3,6) are:",
+      "options": [
+        "(2,−3,6)",
+        "(2/7,−3/7,6/7)",
+        "(2/49,−3/49,6/49)",
+        "(2/7,3/7,6/7)"
+      ],
+      "answer": 1,
+      "explanation": "Divide by the positive length seven, retaining all component signs."
+    },
+    {
+      "question": "Direction cosines l,m,n satisfy:",
+      "options": [
+        "l+m+n=1",
+        "l²+m²+n²=0",
+        "l²+m²+n²=1",
+        "lmn=1"
+      ],
+      "answer": 2,
+      "explanation": "They are the components of a unit vector, whose squared length is one."
+    },
+    {
+      "question": "The smaller angle between intersecting directions (1,0,0) and (1,1,0) is:",
+      "options": [
+        "π/2",
+        "0",
+        "3π/4",
+        "π/4"
+      ],
+      "answer": 3,
+      "explanation": "The absolute normalized dot product is 1/√2, giving the smaller angle π/4."
+    },
+    {
+      "question": "Zero dot product of two nonzero line directions establishes:",
+      "options": [
+        "Perpendicular directions, but not necessarily intersection",
+        "That the lines must meet",
+        "Coincidence",
+        "Parallel directions"
+      ],
+      "answer": 0,
+      "explanation": "Position must be checked separately because skew lines can have perpendicular directions."
+    },
+    {
+      "question": "On r=(1,2,3)+t(2,−1,4), t=2 gives:",
+      "options": [
+        "(3,1,7)",
+        "(5,0,11)",
+        "(5,4,11)",
+        "(2,−1,4)"
+      ],
+      "answer": 1,
+      "explanation": "Substitute the same parameter two into all three coordinate equations."
+    },
+    {
+      "question": "A parameter change of one on that line gives a displacement length:",
+      "options": [
+        "1",
+        "7",
+        "√21",
+        "21"
+      ],
+      "answer": 2,
+      "explanation": "The direction length is √(2²+(−1)²+4²)=√21, so t is not unit distance."
+    },
+    {
+      "question": "Through (1,2,3) with direction (0,2,−1), the correct form is:",
+      "options": [
+        "(x−1)/0=(y−2)/2=(z−3)/(−1)",
+        "x=0, y=2, z=−1",
+        "x=1, y=2, z=3 only",
+        "x=1, (y−2)/2=(z−3)/(−1)"
+      ],
+      "answer": 3,
+      "explanation": "The zero x direction makes x constant; it is not a valid zero denominator."
+    },
+    {
+      "question": "In a symmetric line equation, nonzero denominators represent:",
+      "options": [
+        "Direction ratios",
+        "Axis intercepts in every case",
+        "Base point coordinates",
+        "Three independent parameters"
+      ],
+      "answer": 0,
+      "explanation": "The quotients all equal one shared parameter and denominators encode the direction."
+    },
+    {
+      "question": "A direction from (1,0,2) to (3,4,0) is:",
+      "options": [
+        "(4,4,2)",
+        "(2,4,−2)",
+        "(2,4,2)",
+        "(−2,4,2)"
+      ],
+      "answer": 1,
+      "explanation": "Subtract the first endpoint from the second coordinate by coordinate."
+    },
+    {
+      "question": "The midpoint of those endpoints is:",
+      "options": [
+        "(1,2,1)",
+        "(4,4,2)",
+        "(2,2,1)",
+        "(2,4,−2)"
+      ],
+      "answer": 2,
+      "explanation": "Average each coordinate, or use t=1/2 in A+t(B−A)."
+    },
+    {
+      "question": "The lines (t,0,0) and (s,2,s+1) are:",
+      "options": [
+        "Intersecting",
+        "Parallel",
+        "Coincident",
+        "Skew"
+      ],
+      "answer": 3,
+      "explanation": "Their directions are not proportional and their fixed y coordinates cannot agree."
+    },
+    {
+      "question": "Two lines with proportional nonzero directions and one shared point are:",
+      "options": [
+        "Coincident",
+        "Skew",
+        "Distinct parallel lines",
+        "Perpendicular"
+      ],
+      "answer": 0,
+      "explanation": "The shared point and common direction specify the same full line."
+    },
+    {
+      "question": "The perpendicular foot of (2,3,4) on the x axis is:",
+      "options": [
+        "(0,3,4)",
+        "(2,0,0)",
+        "(0,0,0)",
+        "(2,3,0)"
+      ],
+      "answer": 1,
+      "explanation": "The x coordinate is preserved and the connecting displacement has zero x component."
+    },
+    {
+      "question": "The distance from (2,3,4) to the x axis is:",
+      "options": [
+        "√29",
+        "2",
+        "5",
+        "7"
+      ],
+      "answer": 2,
+      "explanation": "The perpendicular displacement (0,3,4) has length five."
+    },
+    {
+      "question": "For d₁=(1,0,0), d₂=(1,0,1), their cross product is:",
+      "options": [
+        "(0,1,0)",
+        "(1,0,1)",
+        "(0,0,0)",
+        "(0,−1,0)"
+      ],
+      "answer": 3,
+      "explanation": "The middle component is c₁a₂−a₁c₂=0−1=−1 and the other components vanish."
+    },
+    {
+      "question": "The shortest distance between (t,0,0) and (s,2,s+1) is:",
+      "options": [
+        "2",
+        "1",
+        "√5",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "The scalar triple numerator has absolute value two and the cross product length is one."
+    },
+    {
+      "question": "The closest parameters for that pair are:",
+      "options": [
+        "t=s=0",
+        "t=s=−1",
+        "t=1,s=−1",
+        "t=s=1"
+      ],
+      "answer": 1,
+      "explanation": "Perpendicularity gives s−t=0 and 2s−t+1=0, hence both are −1."
+    },
+    {
+      "question": "Their common perpendicular line has equation:",
+      "options": [
+        "r=(u,0,0)",
+        "r=(0,u,1)",
+        "r=(−1,u,0)",
+        "r=(−1,2,u)"
+      ],
+      "answer": 2,
+      "explanation": "It joins (−1,0,0) to (−1,2,0) with direction (0,1,0), perpendicular to both original directions."
+    },
+    {
+      "question": "The distance between (t,0,0) and (s,3,4) is:",
+      "options": [
+        "0",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 3,
+      "explanation": "They are distinct parallel lines with perpendicular separation vector (0,3,4)."
+    },
+    {
+      "question": "The scalar triple shortest-distance formula with denominator |d₁×d₂| requires:",
+      "options": [
+        "Nonparallel nonzero directions",
+        "Parallel directions",
+        "Zero direction vectors",
+        "The same base point in every case"
+      ],
+      "answer": 0,
+      "explanation": "Parallel directions make the denominator zero and require the separate point-to-parallel-line formula."
+    }
+  ],
+  "sources": [
+    {
+      "title": "NTA JEE Main 2026 Mathematics Unit 11",
+      "url": "https://jeemain.nta.nic.in/document/syllabus-2026/"
+    },
+    {
+      "title": "OpenStax Calculus: Lines in Space",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/2-5-equations-of-lines-and-planes-in-space"
+    },
+    {
+      "title": "OpenStax Calculus: Vector Key Equations",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/2-key-equations"
+    }
+  ]
+};

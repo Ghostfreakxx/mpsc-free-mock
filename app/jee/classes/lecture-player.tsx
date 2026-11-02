@@ -15,6 +15,7 @@ const CountingDiagram = dynamic(() => import("./permutations-combinations-diagra
 const BinomialDiagram = dynamic(() => import("./binomial-theorem-diagram"));
 const SequencesDiagram = dynamic(() => import("./sequences-series-diagram"));
 const TrigonometryDiagram = dynamic(() => import("./trigonometry-diagram"));
+const SpaceDiagram = dynamic(() => import("./three-dimensional-geometry-diagram"));
 const CoordinateDiagram = dynamic(() => import("./coordinate-geometry-diagram"));
 const DifferentialDiagram = dynamic(() => import("./differential-equations-diagram"));
 const IntegralDiagram = dynamic(() => import("./integral-calculus-diagram"));
@@ -174,6 +175,7 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
           {lesson.id === "binomial-theorem" && <BinomialDiagram chapter={chapterIndex} />}
           {lesson.id === "sequences-series" && <SequencesDiagram chapter={chapterIndex} />}
           {lesson.id === "trigonometry" && <TrigonometryDiagram chapter={chapterIndex} />}
+          {lesson.id === "three-dimensional-geometry" && <SpaceDiagram chapter={chapterIndex} />}
           {lesson.id === "coordinate-geometry" && <CoordinateDiagram chapter={chapterIndex} />}
           {lesson.id === "differential-equations" && <DifferentialDiagram chapter={chapterIndex} />}
           {lesson.id === "integral-calculus" && <IntegralDiagram chapter={chapterIndex} />}
