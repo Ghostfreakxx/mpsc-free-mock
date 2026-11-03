@@ -16,6 +16,7 @@ export function generateStaticParams() {
 }
 
 const figureAlt: Record<string, string> = {
+  "statistics-probability": "For the number of heads in two fair independent coin tosses, the probability masses at zero, one and two are one quarter, one half and one quarter. HT and TH both produce one head. The expected count is one and its variance is one half.",
   "vector-algebra": "Vectors u=(3,0,0) and v=(0,4,0) form perpendicular sides of a rectangle with parallelogram area twelve. Their resultant is (3,4,0) with magnitude five. Their cross product is (0,0,12), while the triangle area is six.",
   "three-dimensional-geometry": "A schematic projection of skew lines L1=(t,0,0) and L2=(s,2,s+1). Closest points are P=(-1,0,0) and Q=(-1,2,0). Their common perpendicular has equation r=(-1,u,0) and the shortest segment has length two. Projected angles and lengths are not measurements of space geometry.",
   "coordinate-geometry": "A circle x squared plus y squared equals twenty five is cut by y=3 at negative four, three and four, three. The centre to chord distance is three, radius five and half chord four, giving full chord length eight.",
@@ -73,7 +74,7 @@ export default async function StudyPage({ params }: { params: Promise<{ slug: st
   const lesson = writtenLesson ? withLectureClarifications(writtenLesson, recording)
     : recording && unitIndex >= 0 ? lectureStudyLesson(recording, unitIndex + 1, physicsCoverage[unitIndex].remaining) : undefined;
   if (!lesson) notFound();
-  const svgFigure = ["vector-algebra", "three-dimensional-geometry", "coordinate-geometry", "differential-equations", "integral-calculus", "limits-continuity-differentiability", "trigonometry", "sequences-series", "binomial-theorem", "permutations-combinations", "matrices-determinants", "chemistry-foundations", "atomic-spectra", "periodic-trends", "chemical-bonding", "chemical-thermodynamics", "solutions", "equilibrium", "redox-electrochemistry", "chemical-kinetics", "coordination-compounds", "organic-principles", "hydrocarbons", "organic-halogens", "organic-oxygen", "organic-nitrogen", "biomolecules", "purification-analysis", "p-block", "d-f-block", "practical-chemistry"].includes(lesson.id);
+  const svgFigure = ["statistics-probability", "vector-algebra", "three-dimensional-geometry", "coordinate-geometry", "differential-equations", "integral-calculus", "limits-continuity-differentiability", "trigonometry", "sequences-series", "binomial-theorem", "permutations-combinations", "matrices-determinants", "chemistry-foundations", "atomic-spectra", "periodic-trends", "chemical-bonding", "chemical-thermodynamics", "solutions", "equilibrium", "redox-electrochemistry", "chemical-kinetics", "coordination-compounds", "organic-principles", "hydrocarbons", "organic-halogens", "organic-oxygen", "organic-nitrogen", "biomolecules", "purification-analysis", "p-block", "d-f-block", "practical-chemistry"].includes(lesson.id);
   const subjectLessons = writtenLesson ? studyLessons.filter(item => item.subject === lesson.subject) : lectures.map(item => ({ id: item.id, title: item.title }));
   const position = subjectLessons.findIndex(item => item.id === lesson.id);
   const previous = subjectLessons[position - 1];
