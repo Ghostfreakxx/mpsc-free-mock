@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import { chromium } from 'playwright';
 
 const base = process.env.SMOKE_URL || 'http://localhost:3000';
-const pages = ['/', '/mock-test', '/mizo', '/neet', '/neet/classes', '/neet/classes/cell-unit-life', '/jee', '/cuet-pg', '/nursing', '/college-notes', '/downloads', '/exam-simulator', '/law/mjs', '/trading', '/trading/learn', '/jee/classes', '/jee/classes/units', '/jee/classes/measurements'];
+const pages = ['/', '/mock-test', '/mizo', '/neet', '/neet/classes', '/neet/classes/cell-unit-life', '/neet/classes/biomolecules', '/jee', '/cuet-pg', '/nursing', '/college-notes', '/downloads', '/exam-simulator', '/law/mjs', '/trading', '/trading/learn', '/jee/classes', '/jee/classes/units', '/jee/classes/measurements'];
 const failures = [];
 const check = (condition, message) => { if (!condition) failures.push(message); };
 

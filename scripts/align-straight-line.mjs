@@ -86,6 +86,7 @@ targets['three-dimensional-geometry']='three-dimensional-geometry';
 targets['vector-algebra']='vector-algebra';
 targets['statistics-probability']='statistics-probability';
 targets['neet-cell-unit-life'] = 'cell-unit-life';
+targets['neet-biomolecules'] = 'biomolecules';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const dataPrefix = selected.startsWith('neet-') ? 'neet' : 'jee';

@@ -85,7 +85,7 @@ Use the [official NEET 2026 syllabus](https://neet.nta.nic.in/document/syllabus-
 
 The original NEET topic module had seven Biology practice foundations: cell cycle/mitosis, meiosis, DNA structure, replication, inheritance, photosynthesis and enzymes. Four cell-structure topics with 36 original questions were added on 4 November. These are practice topics, not recorded NEET classes.
 
-Update 4 November: Cell: The Unit of Life now has a dedicated recorded NEET class; see [NEET recorded coverage](neet-class-coverage-2026.md). Continue with Biomolecules, then Cell Cycle and Cell Division. Build the official ten-unit Biology coverage map before expanding the remaining units. Reuse JEE Physics/Chemistry explanations only after a NEET-specific mapping; keep separate course navigation and progress identifiers. The remaining queue is planned work; do not label Biomolecules or Cell Division as recorded before publication.
+Update 4 November: Cell: The Unit of Life now has a dedicated recorded NEET class; see [NEET recorded coverage](neet-class-coverage-2026.md). Biomolecules is now recorded as B02. Continue with Cell Cycle and Cell Division. Build the official ten-unit Biology coverage map before expanding the remaining units. Reuse JEE Physics/Chemistry explanations only after a NEET-specific mapping; keep separate course navigation and progress identifiers. The remaining queue is planned work; do not label Cell Division as recorded before publication.
 
 ## Release
 

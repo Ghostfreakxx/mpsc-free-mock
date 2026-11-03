@@ -19,7 +19,25 @@ Route: `/neet/classes/cell-unit-life`, linked from `/neet/classes` and NEET prac
 | Nucleus, nucleolus and chromatin | 13 |
 | Chromosome structure | 14; centromere positions and replicated-chromosome counting |
 
-This is the cell-structure foundation within Biology Unit 3, not the whole unit. Biomolecules and Cell Cycle and Cell Division are the next recorded classes. Further diagram identification and mixed experimental questions remain ongoing practice work. The questions are original, not official PYQs.
+This is the cell-structure foundation within Biology Unit 3, not the whole unit. Biomolecules is now recorded as B02 below. Cell Cycle and Cell Division is the next recorded class. Further diagram identification and mixed experimental questions remain ongoing practice work. The questions are original, not official PYQs.
+
+## Biology B02: Biomolecules
+
+Route: `/neet/classes/biomolecules`. Sixteen narrated chapters, sixteen teaching boards, aligned captions and thirty-two original MCQs, with saved playback/answers and downloadable transcript. The separate progress key is `neet.biomolecules.lecture.v1`.
+
+| Required heading | Recorded evidence |
+| --- | --- |
+| Chemical constituents and analysis | 1–2: tissue fractions, metabolites, polymers and bond types |
+| Carbohydrates | 3–4: sugars, glycosidic links, storage and structural polysaccharides |
+| Lipids | 5: fats, fatty acids, ester links and phospholipid organization |
+| Proteins | 6–8: amino acids, peptides, structural levels and denaturation |
+| Nucleic acids | 9: nucleosides/nucleotides, backbone and base pairing |
+| Enzyme properties and mechanism | 10–11: activation barrier, binding, regeneration and saturation |
+| Factors influencing enzymes | 12 and 15: conditions, controlled comparisons and inhibition |
+| Classification and cofactors | 13–14: textbook six classes, modern EC 7 context, coenzymes and prosthetic groups |
+| Original applications | 16 and the quiz: independent bond counts and interpretation |
+
+The traditional six-class enzyme scheme is identified as the textbook account; modern IUBMB EC 7 translocases are explained as additional context. Biomolecules does not complete all Biology Unit 3: Cell Cycle and Cell Division remains next, followed by broader mixed practice.
 
 ## Wider Biology map
 
@@ -27,7 +45,7 @@ This is the cell-structure foundation within Biology Unit 3, not the whole unit.
 | --- | --- |
 | Diversity in Living World | Planned |
 | Structural Organisation in Animals and Plants | Planned |
-| Cell Structure and Function | Cell structure recorded; Biomolecules and Cell Division next |
+| Cell Structure and Function | Cell structure and Biomolecules recorded; Cell Division next |
 | Plant Physiology | Planned; existing photosynthesis practice retained |
 | Human Physiology | Planned |
 | Reproduction | Planned |

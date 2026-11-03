@@ -9,6 +9,7 @@ import PracticeQuiz from "./practice-quiz";
 import styles from "./lecture.module.css";
 
 // Each class shows only its own diagram, so load diagrams on demand instead of bundling all of them into every class page.
+const NeetBiomoleculesDiagram = dynamic(() => import("../../neet/classes/biomolecules-diagram"));
 const NeetCellDiagram = dynamic(() => import("../../neet/classes/cell-diagram"));
 const KineticsDiagram = dynamic(() => import("./kinetics-diagram"));
 const MatricesDeterminantsDiagram = dynamic(() => import("./matrices-determinants-diagram"));
@@ -180,6 +181,7 @@ export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: Player
           {lesson.id === "binomial-theorem" && <BinomialDiagram chapter={chapterIndex} />}
           {lesson.id === "sequences-series" && <SequencesDiagram chapter={chapterIndex} />}
           {lesson.id === "trigonometry" && <TrigonometryDiagram chapter={chapterIndex} />}
+          {lesson.id === "neet-biomolecules" && <NeetBiomoleculesDiagram chapter={chapterIndex} />}
           {lesson.id === "neet-cell-unit-life" && <NeetCellDiagram chapter={chapterIndex} />}
           {lesson.id === "statistics-probability" && <StatisticsDiagram chapter={chapterIndex} />}
           {lesson.id === "vector-algebra" && <VectorDiagram chapter={chapterIndex} />}
