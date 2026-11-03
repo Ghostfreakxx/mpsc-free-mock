@@ -1,5 +1,6 @@
 import { nursingCategories, type NursingCategoryId, type NursingQuestion } from "../nursing/types.ts";
-import { isNursingQuestion } from "../nursing/nursing-logic.ts";
+import { isNursingQuestion, visibleQuestions } from "../nursing/nursing-logic.ts";
+import { HIDE_UNREVIEWED_QUESTIONS } from "./nursing-config.ts";
 import fon from "./nursing/fon.json";
 import aap from "./nursing/aap.json";
 import msn from "./nursing/msn.json";
@@ -17,7 +18,8 @@ import mne from "./nursing/mne.json";
 // and scripts/nursing-bank.test.mjs checks the rest (ids in order, duplicates, difficulty mix).
 const files: Record<string, unknown[]> = { fon, aap, msn, obg, ped, chn, mhn, phr, mic, nut, mne };
 
-export const nursingQuestions: NursingQuestion[] = nursingCategories.flatMap(category => {
+// Every question in the files, checked. Tests and tools use this.
+export const allNursingQuestions: NursingQuestion[] = nursingCategories.flatMap(category => {
   const questions = files[category.prefix];
   return questions.map(question => {
     if (!isNursingQuestion(question) || question.category !== category.name) {
@@ -26,6 +28,9 @@ export const nursingQuestions: NursingQuestion[] = nursingCategories.flatMap(cat
     return question;
   });
 });
+
+// What students see: served at /question-bank/nursing and counted on the category cards.
+export const nursingQuestions: NursingQuestion[] = visibleQuestions(allNursingQuestions, HIDE_UNREVIEWED_QUESTIONS);
 
 export function nursingCounts(): Record<NursingCategoryId, number> {
   return Object.fromEntries(nursingCategories.map(category =>
