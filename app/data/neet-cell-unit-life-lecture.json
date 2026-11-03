@@ -1,0 +1,685 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English Biology teacher. Speak naturally and clearly. Distinguish organelles and read biological names carefully. Read every sentence completely, including the final sentence. Do not add words or summarize.",
+  "title": "Cell: The Unit of Life",
+  "subject": "Biology",
+  "unit": 3,
+  "scope": "NEET Biology Unit 3 cell-structure foundation, checked against the official 2026 syllabus baseline. Covers cell theory, prokaryotic/eukaryotic organization, membranes, walls, organelles, cytoskeleton, nucleus and chromosome structure. Biomolecules, full cell division and further mixed practice remain separate. Original practice, not official PYQs.",
+  "sources": [
+    {
+      "title": "NTA: NEET UG 2026 syllabus (dated baseline)",
+      "url": "https://neet.nta.nic.in/document/syllabus-for-neet-ug-2026-examination/"
+    },
+    {
+      "title": "NCERT Biology: Cell — The Unit of Life",
+      "url": "https://ncert.nic.in/textbook/pdf/kebo108.pdf"
+    },
+    {
+      "title": "OpenStax Biology 2e: 4 1 studying cells",
+      "url": "https://openstax.org/books/biology-2e/pages/4-1-studying-cells"
+    },
+    {
+      "title": "OpenStax Biology 2e: 4 2 prokaryotic cells",
+      "url": "https://openstax.org/books/biology-2e/pages/4-2-prokaryotic-cells"
+    },
+    {
+      "title": "OpenStax Biology 2e: 4 3 eukaryotic cells",
+      "url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells"
+    },
+    {
+      "title": "OpenStax Biology 2e: 4 4 the endomembrane system and proteins",
+      "url": "https://openstax.org/books/biology-2e/pages/4-4-the-endomembrane-system-and-proteins"
+    },
+    {
+      "title": "OpenStax Biology 2e: 4 5 the cytoskeleton",
+      "url": "https://openstax.org/books/biology-2e/pages/4-5-the-cytoskeleton"
+    },
+    {
+      "title": "OpenStax Biology 2e: 4 6 connections between cells and cellular activities",
+      "url": "https://openstax.org/books/biology-2e/pages/4-6-connections-between-cells-and-cellular-activities"
+    },
+    {
+      "title": "OpenStax Biology 2e: 5 1 components and structure",
+      "url": "https://openstax.org/books/biology-2e/pages/5-1-components-and-structure"
+    },
+    {
+      "title": "OpenStax Biology 2e: 5 2 passive transport",
+      "url": "https://openstax.org/books/biology-2e/pages/5-2-passive-transport"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Cell theory identifies the basic unit of life",
+      "formula": "Cells: structural and functional units",
+      "points": [
+        "Cells: structural and functional units",
+        "Schleiden + Schwann: cell theory",
+        "Virchow: cells arise from existing cells",
+        "Organelles cooperate inside one cell"
+      ],
+      "board": {
+        "kind": "cell",
+        "lines": [
+          "Cells: structural and functional units",
+          "Schleiden + Schwann: cell theory",
+          "Virchow: cells arise from existing cells",
+          "Organelles cooperate inside one cell"
+        ]
+      },
+      "script": "Welcome to Cell: The Unit of Life, our first recorded NEET Biology class. This lesson uses an AI generated Marin voice. Cell theory describes cellular organisms as being composed of cells and cell products, with the cell as their basic structural and functional unit. Schleiden and Schwann developed the classical framework; Virchow emphasized that new cells arise from existing cells. Do not replace that last statement with the claim that every cell can divide indefinitely. A cell has an organized boundary and coordinated internal processes, whereas an isolated organelle performs only part of that coordinated work. In a comparison between a bacterial cell and a mitochondrion, both may contain genetic material, but the bacterium has a complete cellular organization and the mitochondrion remains dependent on its host cell. Viruses are acellular entities and are not an extra example of a prokaryotic cell. To interpret a question, first decide whether it concerns a whole cell, an organelle or an acellular structure. Cell theory supplies the framework; the following chapters explain how cellular structures support particular functions."
+    },
+    {
+      "title": "Prokaryotic and eukaryotic organization differ",
+      "formula": "Prokaryote: nucleoid, no nuclear envelope",
+      "points": [
+        "Prokaryote: nucleoid, no nuclear envelope",
+        "Eukaryote: nuclear compartment",
+        "Both: membrane, DNA and ribosomes",
+        "No nucleus alone is not a full diagnosis"
+      ],
+      "board": {
+        "kind": "bacterium",
+        "lines": [
+          "Prokaryote: nucleoid, no nuclear envelope",
+          "Eukaryote: nuclear compartment",
+          "Both: membrane, DNA and ribosomes",
+          "No nucleus alone is not a full diagnosis"
+        ]
+      },
+      "script": "Prokaryotic organization lacks a membrane bound nucleus. Its main chromosomal DNA occupies a nucleoid region, and ribosomes carry out protein synthesis without an endoplasmic reticulum or Golgi apparatus. Bacteria and archaea belong to prokaryotic groups. In eukaryotic organization, a nuclear envelope normally separates nuclear material from the cytoplasm, and membrane bound organelles create specialized compartments. Both organizations possess a plasma membrane and require genetic information and translation machinery. A typical bacterial chromosome is circular, and smaller plasmids may carry additional genes; plasmids are not universal and do not replace the main chromosome in the standard comparison. Avoid identifying any cell without a nucleus as bacterial. A mature mammalian red blood cell loses its nucleus during differentiation while remaining a specialized animal cell. In a supplied specimen, combine envelope organization, organelles and genetic arrangement rather than relying on one missing feature. Eukaryotic does not mean that every specialized cell retains every organelle. Likewise, a small size alone does not establish prokaryotic identity."
+    },
+    {
+      "title": "The prokaryotic envelope has distinct layers",
+      "formula": "Outside → glycocalyx → wall → membrane",
+      "points": [
+        "Outside → glycocalyx → wall → membrane",
+        "Capsule or slime layer: glycocalyx forms",
+        "Flagellum: movement; fimbriae: adhesion",
+        "Some bacteria lack a cell wall"
+      ],
+      "board": {
+        "kind": "envelope",
+        "lines": [
+          "Outside → glycocalyx → wall → membrane",
+          "Capsule or slime layer: glycocalyx forms",
+          "Flagellum: movement; fimbriae: adhesion",
+          "Some bacteria lack a cell wall"
+        ]
+      },
+      "script": "The standard bacterial envelope comparison distinguishes the glycocalyx, cell wall and plasma membrane. The glycocalyx lies outside the wall and may form a more organized capsule or a looser slime layer. The wall supports shape and protects against osmotic stress, while the plasma membrane controls exchange with the cytoplasm. These layers have different roles and must not be treated as three names for the same boundary. Bacterial cell walls commonly contain peptidoglycan; this is different from the cellulose of a plant wall. Some bacteria, including mycoplasmas, lack a cell wall, so the word bacterial does not guarantee its presence. A bacterial flagellum contributes to movement, whereas short fimbriae commonly support attachment; certain pili participate in genetic exchange. These appendages are not eukaryotic microtubule axonemes. In a labelled diagram, trace outward from the cytoplasm to avoid reversing wall and membrane. Removing a wall does not remove the need for an intact plasma membrane. Envelope differences can alter staining and sensitivity, but an isolated staining observation is not a complete identification of a species."
+    },
+    {
+      "title": "A fluid membrane controls selective exchange",
+      "formula": "Hydrophilic heads face water",
+      "points": [
+        "Hydrophilic heads face water",
+        "Hydrophobic tails face inward",
+        "Proteins: channels, carriers, receptors",
+        "Passive down-gradient; active uses energy"
+      ],
+      "board": {
+        "kind": "membrane",
+        "lines": [
+          "Hydrophilic heads face water",
+          "Hydrophobic tails face inward",
+          "Proteins: channels, carriers, receptors",
+          "Passive down-gradient; active uses energy"
+        ]
+      },
+      "script": "The fluid mosaic model describes a lipid bilayer containing proteins and associated components. Phospholipid heads interact with the aqueous environments on either side, while their hydrophobic tails face the bilayer interior. Membrane proteins can transport substances, receive signals or support other specialized functions. Fluidity permits lateral movement of many components; it does not mean every protein moves freely without constraints. The plasma membrane is selectively permeable rather than equally open to every dissolved substance. Simple diffusion proceeds down a concentration gradient, and facilitated diffusion uses suitable proteins while still being passive. Active transport can move a substance against its electrochemical gradient by coupling to an energy source. The presence of a protein therefore does not by itself make transport active. Osmosis concerns water movement across a selectively permeable boundary. In a simple comparison with solutes that cannot cross, water tends to move toward the side of greater effective solute concentration. State permeability assumptions before predicting a cell's volume change. The cell wall and plasma membrane remain different structures even when a diagram draws them close together."
+    },
+    {
+      "title": "Cell walls support cells without replacing membranes",
+      "formula": "Plant wall: cellulose-rich framework",
+      "points": [
+        "Plant wall: cellulose-rich framework",
+        "Middle lamella: pectate-rich cement",
+        "Plasmodesmata connect plant cytoplasm",
+        "Fungal wall differs from bacterial wall"
+      ],
+      "board": {
+        "kind": "wall",
+        "lines": [
+          "Plant wall: cellulose-rich framework",
+          "Middle lamella: pectate-rich cement",
+          "Plasmodesmata connect plant cytoplasm",
+          "Fungal wall differs from bacterial wall"
+        ]
+      },
+      "script": "A plant cell wall is an extracellular supporting structure outside the plasma membrane. Cellulose contributes an important structural framework, while other wall components and their proportions vary with the layer and cell type. The middle lamella, rich in pectates, helps cement neighbouring plant cells together. Plasmodesmata provide connections between the cytoplasm of adjacent cells through their walls. A wall therefore does not make every plant cell an isolated sealed box. Fungal walls commonly contain chitin, whereas bacterial peptidoglycan and plant cellulose are different materials. A statement that all cell walls have one identical composition is incorrect. The plasma membrane still provides selective exchange in a walled cell. When water enters a plant cell, the wall resists expansion and contributes to turgor support. This is different from saying that the wall actively pumps water inward. A large central vacuole can contribute to turgor, but it does not replace the wall or the surrounding plasma membrane. Read a diagram's boundaries carefully: a plant wall lies outside the membrane, while the tonoplast surrounds the vacuole inside the cell."
+    },
+    {
+      "title": "Rough and smooth ER support different tasks",
+      "formula": "Rough ER: attached ribosomes",
+      "points": [
+        "Rough ER: attached ribosomes",
+        "Secreted and membrane proteins",
+        "Smooth ER: lipid-related functions",
+        "ER lumen differs from cytosol"
+      ],
+      "board": {
+        "kind": "er",
+        "lines": [
+          "Rough ER: attached ribosomes",
+          "Secreted and membrane proteins",
+          "Smooth ER: lipid-related functions",
+          "ER lumen differs from cytosol"
+        ]
+      },
+      "script": "The endoplasmic reticulum is a membrane network with internal spaces called its lumen. Rough endoplasmic reticulum bears ribosomes on its cytoplasmic surface. Those ribosomes synthesize many proteins destined for secretion or for cellular membranes, while the ER supports entry, folding and initial processing of suitable products. The ribosomes do not float freely inside the ER lumen. Smooth endoplasmic reticulum lacks the characteristic attached ribosomes and contributes to lipid synthesis and other functions that vary with cell type. Its specialized roles can include detoxification or calcium storage. The ER membrane is continuous with the nuclear envelope, but continuity does not make the cytosol and ER lumen one unrestricted compartment. Consider a cell producing large amounts of a secreted protein. Prominent rough ER is consistent with that task, while abundant smooth ER would suggest a different functional emphasis. Do not infer that free cytosolic ribosomes are inactive: they make many proteins used within the cell. The destination of a protein helps determine the relevant synthesis and trafficking route. The ER and Golgi cooperate, but they are not interchangeable names for one organelle."
+    },
+    {
+      "title": "Golgi lysosomes and vacuoles have distinct roles",
+      "formula": "Golgi: receive, modify, sort, dispatch",
+      "points": [
+        "Golgi: receive, modify, sort, dispatch",
+        "Lysosome: hydrolytic digestion",
+        "Vacuole: storage and water balance",
+        "Tonoplast = vacuolar membrane"
+      ],
+      "board": {
+        "kind": "golgi",
+        "lines": [
+          "Golgi: receive, modify, sort, dispatch",
+          "Lysosome: hydrolytic digestion",
+          "Vacuole: storage and water balance",
+          "Tonoplast = vacuolar membrane"
+        ]
+      },
+      "script": "The Golgi apparatus contains stacks of flattened membrane sacs called cisternae. Cargo arriving from the ER is received toward the cis side and processed and sorted toward outgoing routes associated with the trans side. The Golgi does not replace ribosomes as the site where amino acids are joined into a polypeptide chain. Lysosomes contain hydrolytic enzymes that participate in intracellular digestion under an appropriate internal environment. Their roles include breaking down delivered material and selected cellular components. Calling them digestive compartments is more precise than claiming they always destroy an entire cell. Vacuoles can store substances and contribute to water and ion balance. A plant cell's large central vacuole is bounded by the tonoplast; this membrane is not the outer cell wall. The endomembrane system includes interacting components such as ER, Golgi, lysosomes and vacuoles, while mitochondria and plastids are considered separately in the standard NEET grouping. In a sorting problem, associate cargo processing with Golgi, hydrolysis with lysosomes and storage with vacuoles. The correct answer depends on the requested function rather than on which structure looks largest in a diagram."
+    },
+    {
+      "title": "Mitochondrial compartments support energy conversion",
+      "formula": "Outer membrane surrounds organelle",
+      "points": [
+        "Outer membrane surrounds organelle",
+        "Inner membrane forms cristae",
+        "Matrix contains enzymes, DNA, ribosomes",
+        "Plant cells also have mitochondria"
+      ],
+      "board": {
+        "kind": "mitochondrion",
+        "lines": [
+          "Outer membrane surrounds organelle",
+          "Inner membrane forms cristae",
+          "Matrix contains enzymes, DNA, ribosomes",
+          "Plant cells also have mitochondria"
+        ]
+      },
+      "script": "A mitochondrion has outer and inner membranes with an intermembrane space between them. Folds of the inner membrane form cristae, increasing the area available for associated processes. The matrix is the compartment enclosed by the inner membrane. It contains enzymes and the organelle's own genetic and translation machinery. Aerobic energy conversion depends on coordinated reactions and membrane organization; the organelle does not create energy from nothing. In the standard account, electron transport and ATP synthase are associated with the inner mitochondrial membrane, while several metabolic steps occur in the matrix. Details of respiratory pathways belong to a later class. Mitochondria occur in typical plant as well as animal cells, so chloroplasts do not replace them in a leaf cell. Own DNA and ribosomes do not make a mitochondrion fully independent: many of its required proteins are encoded in the nucleus and supplied from the cell. In a labelled cross section, distinguish cristae from the matrix fluid around them and from the outer boundary. A folded membrane increases surface area without becoming an additional enclosing membrane around a separate new organelle."
+    },
+    {
+      "title": "Plastids differ in pigments and internal structure",
+      "formula": "Chloroplast: thylakoids and stroma",
+      "points": [
+        "Chloroplast: thylakoids and stroma",
+        "Grana are stacks of thylakoids",
+        "Chromoplast: carotenoid-rich colours",
+        "Leucoplast: storage specializations"
+      ],
+      "board": {
+        "kind": "chloroplast",
+        "lines": [
+          "Chloroplast: thylakoids and stroma",
+          "Grana are stacks of thylakoids",
+          "Chromoplast: carotenoid-rich colours",
+          "Leucoplast: storage specializations"
+        ]
+      },
+      "script": "Plastids are a family of organelles with different pigment and storage specializations. Chloroplasts support photosynthesis and contain an envelope surrounding the stroma and an internal thylakoid membrane system. Stacks of thylakoids form grana, connected by membrane regions between stacks. Chlorophyll associated with thylakoid membranes is not a freely dissolved pigment in the stroma. Chloroplasts also possess DNA and ribosomes, but they remain dependent on the wider cell. Chromoplasts are associated with coloured carotenoid pigments in many tissues. Leucoplasts are relatively unpigmented plastids specialized for storage, with amyloplasts associated with starch storage. These categories should not be collapsed into the claim that every plastid carries out photosynthesis. A typical nonphotosynthetic root cell can contain storage plastids without containing the chloroplast complement of a leaf mesophyll cell. In a diagram, identify stroma as the fluid compartment outside the thylakoid lumen, and identify a granum as a stack rather than a single chloroplast. Light reactions and carbon fixation require a later physiological treatment; here the task is to connect the correct compartments with the organelle's overall function."
+    },
+    {
+      "title": "Ribosomes and microbodies are different structures",
+      "formula": "Ribosome: rRNA + protein; no membrane",
+      "points": [
+        "Ribosome: rRNA + protein; no membrane",
+        "70S: 50S + 30S subunits",
+        "80S: 60S + 40S subunits",
+        "Peroxisome: oxidative enzymes, one membrane"
+      ],
+      "board": {
+        "kind": "ribosome",
+        "lines": [
+          "Ribosome: rRNA + protein; no membrane",
+          "70S: 50S + 30S subunits",
+          "80S: 60S + 40S subunits",
+          "Peroxisome: oxidative enzymes, one membrane"
+        ]
+      },
+      "script": "Ribosomes contain ribosomal RNA and proteins and carry out translation. They are not enclosed by a lipid membrane. Prokaryotic cytoplasmic ribosomes are described as seventy S, while typical eukaryotic cytosolic ribosomes are eighty S. Their large and small subunits are conventionally fifty S plus thirty S and sixty S plus forty S respectively. The letter S denotes a sedimentation coefficient rather than a simple mass unit, so these numbers are not added arithmetically to predict the assembled value. Mitochondria and plastids have their own ribosomes and must not be assigned the cytosolic eighty S label just because their host is eukaryotic. Microbodies, in contrast, are small membrane bounded compartments containing enzymes. Peroxisomes support oxidative reactions and include mechanisms such as catalase for handling hydrogen peroxide. A ribosome is therefore not a smaller version of a peroxisome. In a comparison question, first ask whether a membrane is present and then ask about the function. Translation identifies the ribosome; a defined oxidative enzyme compartment supports a microbody interpretation. Similar small size does not establish identical organization or function."
+    },
+    {
+      "title": "The cytoskeleton organizes support and movement",
+      "formula": "Actin → microfilaments",
+      "points": [
+        "Actin → microfilaments",
+        "Tubulin → microtubules",
+        "Intermediate filaments → reinforcement",
+        "Tracks and motors organize movement"
+      ],
+      "board": {
+        "kind": "cytoskeleton",
+        "lines": [
+          "Actin → microfilaments",
+          "Tubulin → microtubules",
+          "Intermediate filaments → reinforcement",
+          "Tracks and motors organize movement"
+        ]
+      },
+      "script": "The eukaryotic cytoskeleton is an organized network of protein filaments rather than a cellulose shell. Actin forms microfilaments, tubulin forms microtubules, and intermediate filaments provide another class of structural reinforcement. Different filament systems support shape, intracellular organization and movement in different ways. Microtubules provide tracks for motor associated cargo and contribute to the mitotic spindle. Actin can interact with myosin in contractile processes and contributes to changes in cell shape. Intermediate filaments help resist mechanical stress and anchor cellular structures. These roles do not imply that a filament itself is a tiny membrane tube filled with cytoplasm. In a matching exercise, connect a spindle microtubule with tubulin rather than actin, and connect an actin filament with the microfilament category. A vesicle can be transported along a cytoskeletal track while remaining surrounded by its own membrane; the track does not become the vesicle's outer boundary. Later cell division and muscle classes will develop these mechanisms further. Here, keeping polymer identity, structural organization and function separate prevents the common error of treating every thin line in a cell drawing as the same material."
+    },
+    {
+      "title": "Axonemes and centrioles use different microtubule patterns",
+      "formula": "Motile axoneme: 9 doublets + central pair",
+      "points": [
+        "Motile axoneme: 9 doublets + central pair",
+        "Centriole: 9 peripheral triplets",
+        "Central pair = 2 individual microtubules",
+        "Bacterial flagellum has different construction"
+      ],
+      "board": {
+        "kind": "axoneme",
+        "lines": [
+          "Motile axoneme: 9 doublets + central pair",
+          "Centriole: 9 peripheral triplets",
+          "Central pair = 2 individual microtubules",
+          "Bacterial flagellum has different construction"
+        ]
+      },
+      "script": "A typical motile eukaryotic cilium or flagellum contains an axoneme with nine peripheral microtubule doublets surrounding a central pair. Nine plus two refers to this arrangement, not nine single microtubules plus two whole cilia. Each outer doublet has two associated microtubule components, while the central pair consists of two individual microtubules. This architectural pattern differs from the bacterial flagellum discussed earlier. A centriole has nine peripheral microtubule triplets without the same central pair, so its cross section must not be labelled as the motile nine plus two axoneme. Centrioles commonly occur as a pair within the animal cell centrosome and contribute to the organization associated with basal bodies and microtubule systems. These are standard patterns rather than a claim that every specialized cilium has identical internal structure. In the ideal counting exercise, nine doublets contribute eighteen peripheral components and the central pair contributes two more, giving twenty. Nine triplets contribute twenty seven components in the centriole pattern. Distinguish the number of groups from the number of microtubule components before choosing a numerical answer."
+    },
+    {
+      "title": "The nucleus separates chromatin from cytoplasm",
+      "formula": "Nuclear envelope: two membranes, pores",
+      "points": [
+        "Nuclear envelope: two membranes, pores",
+        "Chromatin: DNA with associated proteins",
+        "Nucleolus: rRNA and ribosome assembly",
+        "Pores regulate traffic across the envelope"
+      ],
+      "board": {
+        "kind": "nucleus",
+        "lines": [
+          "Nuclear envelope: two membranes, pores",
+          "Chromatin: DNA with associated proteins",
+          "Nucleolus: rRNA and ribosome assembly",
+          "Pores regulate traffic across the envelope"
+        ]
+      },
+      "script": "The nucleus is bounded by a double membrane envelope containing nuclear pores. These pores support regulated exchange, so the nucleus is neither freely continuous with the cytosol nor permanently sealed from it. The outer nuclear membrane is continuous with the endoplasmic reticulum in the standard eukaryotic account. Chromatin consists of DNA associated with proteins; it is not a separate substance that replaces DNA when a cell stops dividing. The nucleolus is a prominent nonmembranous region associated with ribosomal RNA production and ribosomal subunit assembly. It is not a small membrane bounded nucleus inside the larger one. A visible nucleolus therefore differs structurally from a lysosome or mitochondrion even though all may appear as rounded features in a simple drawing. In a functional comparison, damage to nucleolar activity can affect ribosome production and consequently protein synthesis. That connection does not mean that the nucleolus directly translates all cellular messenger RNA. Chromosome packaging, transcription and trafficking involve coordinated components. Read labels carefully and match each claim to the correct level: envelope boundary, chromatin material or nucleolar assembly activity."
+    },
+    {
+      "title": "Centromeres distinguish chromosome shapes and counts",
+      "formula": "Metacentric: near middle; equal arms",
+      "points": [
+        "Metacentric: near middle; equal arms",
+        "Submetacentric: displaced; unequal arms",
+        "Acrocentric: near end; telocentric: at end",
+        "One replicated chromosome has 2 chromatids"
+      ],
+      "board": {
+        "kind": "chromosome",
+        "lines": [
+          "Metacentric: near middle; equal arms",
+          "Submetacentric: displaced; unequal arms",
+          "Acrocentric: near end; telocentric: at end",
+          "One replicated chromosome has 2 chromatids"
+        ]
+      },
+      "script": "A chromosome's centromere position is used to describe its arm arrangement. A metacentric chromosome has its centromere near the middle and approximately equal arms. A submetacentric chromosome has unequal arms, an acrocentric chromosome has the centromere near one end, and a telocentric chromosome has it at the terminal position in the standard diagrammatic classification. These labels concern centromere placement rather than the total amount of DNA alone. After replication and before sister separation, a replicated chromosome consists of two sister chromatids joined in the centromeric region. Counting chromosomes by centromeres gives one chromosome at that stage, not two merely because two DNA containing chromatids are visible. Consider a hypothetical cell with four chromosomes before DNA replication. After replication but before separation it still has four chromosomes, now with eight chromatids. This example illustrates a counting convention; it does not describe an entire cell cycle. A later class will treat ploidy, DNA content and the changes at division systematically. Distinguish the centromere, the chromosome and the chromatid before interpreting an X shaped drawing as evidence of a particular chromosome number."
+    },
+    {
+      "title": "Integrate structure with a secretory protein route",
+      "formula": "Ribosome/RER → transport vesicle",
+      "points": [
+        "Ribosome/RER → transport vesicle",
+        "Golgi processing → outgoing vesicle",
+        "Fusion releases cargo outside cell",
+        "Structure + destination resolve the answer"
+      ],
+      "board": {
+        "kind": "route",
+        "lines": [
+          "Ribosome/RER → transport vesicle",
+          "Golgi processing → outgoing vesicle",
+          "Fusion releases cargo outside cell",
+          "Structure + destination resolve the answer"
+        ]
+      },
+      "script": "Finish by combining organelle structure with a defined cellular task. A protein destined for the conventional secretory pathway is synthesized by a ribosome associated with rough ER and enters the ER processing route. Vesicles carry suitable cargo toward the Golgi, where further modification and sorting precede delivery through outgoing vesicles. Fusion of a secretory vesicle with the plasma membrane releases its lumenal cargo outside the cell. The destination is not reached by sending the intact protein through a nuclear pore merely because the nucleus contains its gene. Nor does a lysosome normally replace the Golgi as the dispatch centre for secretion. In a diagram with several plausible organelles, follow the given cargo and the direction of movement instead of choosing the most familiar label. Compare this route with a cytosolic protein that need not enter the same endomembrane pathway. Cell organization depends on distinct compartments communicating without losing their boundaries. This recorded foundation covers cell theory, cellular organization and the main structural components. Biomolecule chemistry and the full sequence of cell division remain separate NEET classes, alongside further mixed diagram and experimental practice."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which statement extends classical cell theory with cellular continuity?",
+      "options": [
+        "New cells arise from existing cells",
+        "All cells are acellular",
+        "All cells divide indefinitely",
+        "Organelles are independent organisms"
+      ],
+      "answer": 0,
+      "explanation": "Virchow emphasized continuity from pre-existing cells."
+    },
+    {
+      "question": "A virus is best classified here as:",
+      "options": [
+        "A bacterial cell",
+        "An acellular entity",
+        "A typical plant cell",
+        "A membrane-bound nucleus"
+      ],
+      "answer": 1,
+      "explanation": "Viruses are not an additional prokaryotic cell category."
+    },
+    {
+      "question": "A typical bacterial chromosome occupies a:",
+      "options": [
+        "Nuclear lumen",
+        "Golgi cisterna",
+        "Nucleoid region",
+        "Lysosome"
+      ],
+      "answer": 2,
+      "explanation": "A nucleoid is not enclosed by a nuclear envelope."
+    },
+    {
+      "question": "Why does a mature mammalian red cell without a nucleus not establish prokaryotic identity?",
+      "options": [
+        "It lacks a plasma membrane",
+        "It is a bacterium by definition",
+        "It contains a bacterial wall",
+        "It is a differentiated eukaryotic cell"
+      ],
+      "answer": 3,
+      "explanation": "Specialization can remove a nucleus without changing the cell lineage into bacteria."
+    },
+    {
+      "question": "The standard order from outside a typical glycocalyx-bearing bacterial envelope is:",
+      "options": [
+        "Glycocalyx → wall → membrane",
+        "Membrane → glycocalyx → wall",
+        "Wall → membrane → glycocalyx",
+        "Nucleus → wall → membrane"
+      ],
+      "answer": 0,
+      "explanation": "The plasma membrane is the innermost of these envelope layers."
+    },
+    {
+      "question": "Bacterial fimbriae commonly support:",
+      "options": [
+        "A 9+2 axoneme",
+        "Attachment",
+        "Golgi sorting",
+        "A nuclear envelope"
+      ],
+      "answer": 1,
+      "explanation": "Fimbriae and flagella are not interchangeable appendage categories."
+    },
+    {
+      "question": "Phospholipid hydrophobic tails in a bilayer face:",
+      "options": [
+        "Only extracellular water",
+        "Only cytosolic water",
+        "The bilayer interior",
+        "The cellulose wall exclusively"
+      ],
+      "answer": 2,
+      "explanation": "Water-facing heads and inward-facing tails support the bilayer arrangement."
+    },
+    {
+      "question": "A carrier transports solute down its gradient without energy coupling. This is:",
+      "options": [
+        "Necessarily active transport",
+        "DNA replication",
+        "Cell-wall synthesis",
+        "Facilitated diffusion"
+      ],
+      "answer": 3,
+      "explanation": "A transport protein does not alone imply active transport."
+    },
+    {
+      "question": "The tonoplast bounds a:",
+      "options": [
+        "Vacuole",
+        "Whole plant cell outside its wall",
+        "Bacterial nucleoid",
+        "Centriole"
+      ],
+      "answer": 0,
+      "explanation": "The vacuolar membrane is distinct from the cell wall and plasma membrane."
+    },
+    {
+      "question": "Plasmodesmata connect:",
+      "options": [
+        "Only mitochondrial matrices",
+        "Cytoplasm of adjacent plant cells",
+        "Only bacterial chromosomes",
+        "Only lysosomal lumens"
+      ],
+      "answer": 1,
+      "explanation": "Connections traverse plant cell walls."
+    },
+    {
+      "question": "Ribosomes attached to rough ER face the:",
+      "options": [
+        "ER lumen",
+        "Golgi lumen",
+        "Cytoplasm",
+        "Extracellular space"
+      ],
+      "answer": 2,
+      "explanation": "Ribosomes associate with the cytoplasmic ER surface."
+    },
+    {
+      "question": "A cell specialized for conventional protein secretion commonly has prominent:",
+      "options": [
+        "Only smooth ER with no ribosomes",
+        "Only cellulose wall",
+        "Only a nucleoid",
+        "Rough ER"
+      ],
+      "answer": 3,
+      "explanation": "Rough ER supports production and early processing of many secretory proteins."
+    },
+    {
+      "question": "Which organelle sorts processed cargo into outgoing routes?",
+      "options": [
+        "Golgi apparatus",
+        "Ribosome alone",
+        "Nucleolus",
+        "Cell wall"
+      ],
+      "answer": 0,
+      "explanation": "Golgi sorting follows synthesis and ER entry for this route."
+    },
+    {
+      "question": "Which organelle is outside the standard endomembrane grouping?",
+      "options": [
+        "ER",
+        "Mitochondrion",
+        "Golgi",
+        "Vacuole"
+      ],
+      "answer": 1,
+      "explanation": "Mitochondria are considered separately from the standard ER–Golgi system."
+    },
+    {
+      "question": "Cristae are folds of the:",
+      "options": [
+        "Outer cell wall",
+        "Golgi membrane",
+        "Inner mitochondrial membrane",
+        "Nuclear chromosome"
+      ],
+      "answer": 2,
+      "explanation": "They increase inner membrane area."
+    },
+    {
+      "question": "Which statement about a typical leaf mesophyll cell is correct?",
+      "options": [
+        "Chloroplasts replace all mitochondria",
+        "It has no plasma membrane",
+        "Its mitochondria are independent cells",
+        "It can contain mitochondria and chloroplasts"
+      ],
+      "answer": 3,
+      "explanation": "Photosynthetic plant cells also carry out mitochondrial functions."
+    },
+    {
+      "question": "A granum is a:",
+      "options": [
+        "Stack of thylakoids",
+        "Whole leaf",
+        "Stack of nuclei",
+        "Mitochondrial matrix"
+      ],
+      "answer": 0,
+      "explanation": "Grana are internal chloroplast membrane stacks."
+    },
+    {
+      "question": "An amyloplast specializes in:",
+      "options": [
+        "Protein secretion through Golgi",
+        "Starch storage",
+        "Lysosomal digestion",
+        "Nuclear pore formation"
+      ],
+      "answer": 1,
+      "explanation": "A leucoplast specialization need not be photosynthetic."
+    },
+    {
+      "question": "Why is 50S +30S described as a 70S ribosome rather than 80S?",
+      "options": [
+        "The smaller subunit is absent",
+        "RNA contains no mass",
+        "S values are sedimentation coefficients, not additive masses",
+        "Only addition errors produce ribosomes"
+      ],
+      "answer": 2,
+      "explanation": "Sedimentation depends on particle properties beyond simple mass addition."
+    },
+    {
+      "question": "Which comparison is correct?",
+      "options": [
+        "Both are identical lipid vesicles",
+        "Both are nuclei",
+        "A ribosome is a type of vacuole",
+        "Ribosome lacks a surrounding membrane; peroxisome has one"
+      ],
+      "answer": 3,
+      "explanation": "Translation and oxidative microbody functions belong to different structures."
+    },
+    {
+      "question": "Microtubules are built from:",
+      "options": [
+        "Tubulin",
+        "Cellulose",
+        "Actin exclusively",
+        "Peptidoglycan"
+      ],
+      "answer": 0,
+      "explanation": "Actin forms microfilaments instead."
+    },
+    {
+      "question": "Intermediate filaments especially contribute to:",
+      "options": [
+        "A bacterial cell wall",
+        "Mechanical reinforcement",
+        "Thylakoid pigment production",
+        "DNA base pairing"
+      ],
+      "answer": 1,
+      "explanation": "They provide structural support in the cytoskeletal network."
+    },
+    {
+      "question": "An ideal motile 9+2 axoneme contains how many microtubule components when doublets are counted twice?",
+      "options": [
+        "11",
+        "18",
+        "20",
+        "27"
+      ],
+      "answer": 2,
+      "explanation": "Nine doublets contribute 18 components, plus two in the central pair."
+    },
+    {
+      "question": "The standard centriole cross section has:",
+      "options": [
+        "Nine doublets and a central pair",
+        "Only a cellulose ring",
+        "One bacterial flagellin thread",
+        "Nine peripheral triplets"
+      ],
+      "answer": 3,
+      "explanation": "The triplet arrangement differs from the motile axoneme pattern."
+    },
+    {
+      "question": "The nucleolus is associated with:",
+      "options": [
+        "rRNA production and ribosomal subunit assembly",
+        "Direct translation of every mRNA",
+        "A surrounding lipid bilayer of its own",
+        "Photosynthetic electron transport"
+      ],
+      "answer": 0,
+      "explanation": "Nucleolar assembly is different from ribosomal translation."
+    },
+    {
+      "question": "Chromatin consists principally of:",
+      "options": [
+        "Only phospholipids",
+        "DNA with associated proteins",
+        "Only cellulose",
+        "Only stored starch"
+      ],
+      "answer": 1,
+      "explanation": "Chromatin packages genetic material."
+    },
+    {
+      "question": "A centromere at the terminal position defines the standard:",
+      "options": [
+        "Metacentric chromosome",
+        "Submetacentric chromosome",
+        "Telocentric chromosome",
+        "Acrocentric chromosome with two visible arms"
+      ],
+      "answer": 2,
+      "explanation": "Telocentric and near-terminal acrocentric positions are distinct in the standard classification."
+    },
+    {
+      "question": "A hypothetical cell with four chromosomes replicates DNA but has not separated sisters. It now has:",
+      "options": [
+        "8 chromosomes and 8 chromatids",
+        "4 chromosomes and 4 chromatids",
+        "2 chromosomes and 8 chromatids",
+        "4 chromosomes and 8 chromatids"
+      ],
+      "answer": 3,
+      "explanation": "Replication doubles chromatids while the centromere-based chromosome count is unchanged before separation."
+    },
+    {
+      "question": "The conventional secretory route after rough ER includes:",
+      "options": [
+        "Golgi → secretory vesicle → plasma membrane",
+        "Nucleoid → cellulose wall → nucleus",
+        "Centriole → chromatin → ribosome",
+        "Mitochondrial matrix → nucleolus → wall"
+      ],
+      "answer": 0,
+      "explanation": "Cargo follows the membrane trafficking route."
+    },
+    {
+      "question": "A secretory vesicle releases its lumenal cargo when it:",
+      "options": [
+        "Becomes a chromosome",
+        "Fuses with the plasma membrane",
+        "Breaks a cellulose gene",
+        "Moves through a nuclear pore intact"
+      ],
+      "answer": 1,
+      "explanation": "Vesicle fusion connects its lumenal cargo with the extracellular destination."
+    }
+  ]
+}

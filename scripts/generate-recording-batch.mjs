@@ -4,7 +4,7 @@ const ids=process.argv.slice(2);
 const concurrency=Number(process.env.RECORDING_BATCH_CONCURRENCY ?? 3);
 if(!Number.isInteger(concurrency) || concurrency<1 || concurrency>3)throw Error('Recording concurrency must be 1, 2 or 3');
 if(!ids.length || ids.some(id=>!/^[a-z0-9-]+$/.test(id)) || new Set(ids).size!==ids.length)throw Error('Provide unique lesson slugs');
-const jobs=ids.flatMap(id=>JSON.parse(fs.readFileSync(`app/data/jee-${id}-lecture.json`)).chapters.map((_,i)=>[id,String(i+1)]));
+const jobs=ids.flatMap(id=>JSON.parse(fs.readFileSync(`app/data/${id.startsWith('neet-') ? id : 'jee-'+id}-lecture.json`)).chapters.map((_,i)=>[id,String(i+1)]));
 function run(script,args){return new Promise((resolve,reject)=>{
  const child=spawn(process.execPath,[`scripts/${script}`, ...args],{stdio:['ignore','pipe','pipe']});let output='';
  child.stdout.on('data',d=>{output+=d;process.stdout.write(d);});child.stderr.on('data',d=>{output+=d;process.stderr.write(d);});

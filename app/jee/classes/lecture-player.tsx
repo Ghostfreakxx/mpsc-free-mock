@@ -9,6 +9,7 @@ import PracticeQuiz from "./practice-quiz";
 import styles from "./lecture.module.css";
 
 // Each class shows only its own diagram, so load diagrams on demand instead of bundling all of them into every class page.
+const NeetCellDiagram = dynamic(() => import("../../neet/classes/cell-diagram"));
 const KineticsDiagram = dynamic(() => import("./kinetics-diagram"));
 const MatricesDeterminantsDiagram = dynamic(() => import("./matrices-determinants-diagram"));
 const CountingDiagram = dynamic(() => import("./permutations-combinations-diagram"));
@@ -99,7 +100,9 @@ const LabExperimentDiagram = dynamic(() => import("./lab-experiment-diagrams"));
 
 const formatTime = (value: number) => `${Math.floor(value / 60)}:${Math.floor(value % 60).toString().padStart(2, "0")}`;
 
-export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
+export type PlayerLecture = Omit<Lecture, "subject"> & { subject?: Lecture["subject"] | "Biology" };
+
+export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: PlayerLecture; exam?: "JEE" | "NEET" }) {
   const { timings, progressKey } = lesson;
   const chapterStarts = lesson.segments.map((_, index) => timings.chapters?.[index]?.start ?? timings.cues.find(cue => cue.chapter === index)!.start);
   const audio = useRef<HTMLAudioElement>(null);
@@ -151,18 +154,18 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
     const url = URL.createObjectURL(new Blob([text], { type: "text/plain;charset=utf-8" }));
     const anchor = document.createElement("a");
     anchor.href = url;
-    anchor.download = `jee-${lesson.id}-notes.txt`;
+    anchor.download = `${exam.toLowerCase()}-${lesson.id.replace(/^neet-/, "")}-notes.txt`;
     anchor.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
 
   return <main className={styles.page}>
     <header className={styles.header}>
-      <Link href="/jee/classes" prefetch={false}><ArrowLeft size={17} /> JEE classes</Link>
+      <Link href={exam === "NEET" ? "/neet/classes" : "/jee/classes"} prefetch={false}><ArrowLeft size={17} /> {exam} classes</Link>
       <Link href="/">MPSC FREE MOCK</Link>
     </header>
     <div className={styles.heading}>
-      <p>JEE · {(lesson.subject ?? "Physics").toUpperCase()} · FOUNDATION CLASS {lesson.number}</p>
+      <p>{exam} · {(lesson.subject ?? "Physics").toUpperCase()} · FOUNDATION CLASS {lesson.number}</p>
       <h1>{lesson.title}</h1>
       <span>{formatTime(timings.duration)} · American English · Marin · AI-generated voice</span>
     </div>
@@ -177,6 +180,7 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
           {lesson.id === "binomial-theorem" && <BinomialDiagram chapter={chapterIndex} />}
           {lesson.id === "sequences-series" && <SequencesDiagram chapter={chapterIndex} />}
           {lesson.id === "trigonometry" && <TrigonometryDiagram chapter={chapterIndex} />}
+          {lesson.id === "neet-cell-unit-life" && <NeetCellDiagram chapter={chapterIndex} />}
           {lesson.id === "statistics-probability" && <StatisticsDiagram chapter={chapterIndex} />}
           {lesson.id === "vector-algebra" && <VectorDiagram chapter={chapterIndex} />}
           {lesson.id === "three-dimensional-geometry" && <SpaceDiagram chapter={chapterIndex} />}
@@ -326,6 +330,6 @@ export default function LecturePlayer({ lesson }: { lesson: Lecture }) {
     {lesson.id === "kinematics-applications" && <p><Link href="/jee/classes/study/straight-line-motion">Straight-line motion: written foundation <ArrowRight size={17} /></Link></p>}
     {lesson.id === "laws-motion-applications" && <p><Link href="/jee/classes/study/newtons-laws">Newton&apos;s laws: written foundation <ArrowRight size={17} /></Link></p>}
     {lesson.id === "energy-applications" && <p><Link href="/jee/classes/work-energy">Work and energy: foundation class <ArrowRight size={17} /></Link></p>}
-    <Link href="/jee">Continue to JEE practice <ArrowRight size={17} /></Link>
+    <Link href={exam === "NEET" ? "/neet" : "/jee"}>Continue to {exam} practice <ArrowRight size={17} /></Link>
   </main>;
 }

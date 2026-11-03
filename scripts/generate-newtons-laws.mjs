@@ -94,9 +94,11 @@ targets['coordinate-geometry']='coordinate-geometry';
 targets['three-dimensional-geometry']='three-dimensional-geometry';
 targets['vector-algebra']='vector-algebra';
 targets['statistics-probability']='statistics-probability';
+targets['neet-cell-unit-life'] = 'cell-unit-life';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
-const lesson = JSON.parse(await fs.readFile(path.join(root, `app/data/jee-${dataName}-lecture.json`), 'utf8'));
+const dataPrefix = selected.startsWith('neet-') ? 'neet' : 'jee';
+const lesson = JSON.parse(await fs.readFile(path.join(root, `app/data/${dataPrefix}-${dataName}-lecture.json`), 'utf8'));
 const onlyChapter = process.argv[3] === undefined ? null : Number(process.argv[3]);
 if (onlyChapter !== null && (!Number.isInteger(onlyChapter) || onlyChapter < 1 || onlyChapter > lesson.chapters.length)) throw new Error('Invalid chapter number');
 const folder = path.join(root, 'public/lectures', selected);
@@ -160,7 +162,7 @@ for (const [i,chapter] of lesson.chapters.entries()) {
 }
 if (onlyChapter !== null) process.exit(0);
 await fs.writeFile(path.join(folder,'narration-marin.mp3'),Buffer.concat(parts));
-const timingsPath=path.join(root,`app/data/jee-${dataName}-timings.json`);
+const timingsPath=path.join(root,`app/data/${dataPrefix}-${dataName}-timings.json`);
 let existing;
 try {existing=JSON.parse(await fs.readFile(timingsPath,'utf8'));} catch(error) {if(error.code!=='ENOENT')throw error;}
 await fs.writeFile(timingsPath,JSON.stringify({duration,chapters,cues:existing?.duration===duration?existing.cues:[]},null,2)+'\n');
