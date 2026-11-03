@@ -1,7 +1,7 @@
-export const syllabusSource = "https://jeemain.nta.nic.in/document/syllabus-2026/";
-export const syllabusBaseline = "JEE Main 2026 · Paper 1";
-export const syllabusChecked = "2 October 2026";
-export const syllabusPdf = "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2025/10/202510311323551056.pdf";
+export const syllabusSource = "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf";
+export const syllabusBaseline = "JEE Main 2027 · Paper 1";
+export const syllabusChecked = "3 November 2026";
+export const syllabusPdf = "https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2026/10/20261024683680768.pdf";
 export const subjects = ["Physics", "Chemistry", "Mathematics"] as const;
 export type Subject = typeof subjects[number];
 
