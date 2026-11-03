@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540" role="img" aria-labelledby="title desc">
+<title id="title">Head count distribution for two fair independent tosses</title><desc id="desc">The outcomes TT,HT,TH,HH have equal probabilities one quarter. The random variable X counting heads has probability masses one quarter at zero, one half at one and one quarter at two. Its expectation is one, second moment three halves and variance one half.</desc>
+<rect width="900" height="540" rx="20" fill="#f5faf7"/>
+<g font-family="Arial,sans-serif" fill="#20483e"><text x="45" y="52" font-size="27" font-weight="bold">Statistics and probability: outcomes and random values</text>
+<path d="M85 410H610 M100 110V435" stroke="#20483e" stroke-width="2"/>
+<rect x="150" y="285" width="90" height="125" fill="#456f82"/><rect x="320" y="160" width="90" height="250" fill="#456f82"/><rect x="490" y="285" width="90" height="125" fill="#456f82"/>
+<text x="195" y="270" text-anchor="middle" font-size="25">1/4</text><text x="365" y="145" text-anchor="middle" font-size="25">1/2</text><text x="535" y="270" text-anchor="middle" font-size="25">1/4</text>
+<text x="195" y="445" text-anchor="middle" font-size="24">0</text><text x="365" y="445" text-anchor="middle" font-size="24">1</text><text x="535" y="445" text-anchor="middle" font-size="24">2</text>
+<text x="110" y="100" font-size="22">P(X=x)</text><text x="650" y="210" font-size="22">E(X)=1</text><text x="650" y="255" font-size="22">E(X²)=3/2</text><text x="650" y="300" font-size="22">Var(X)=1/2</text>
+<text x="450" y="505" text-anchor="middle" font-size="22">HT and TH are two outcomes, both mapped to the value X=1.</text></g></svg>
