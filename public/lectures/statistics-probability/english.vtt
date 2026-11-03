@@ -1,0 +1,1054 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.080
+Statistics summarizes a collection of observations without preserving every
+
+00:00:04.080 --> 00:00:05.560
+individual detail in each summary.
+
+00:00:06.220 --> 00:00:09.560
+The arithmetic mean is the sum of all observations divided by their positive
+
+00:00:09.560 --> 00:00:09.880
+count.
+
+00:00:10.580 --> 00:00:14.440
+The median is the middle observation after sorting, or the mean of the two
+
+00:00:14.440 --> 00:00:16.160
+central observations when the count is even.
+
+00:00:16.640 --> 00:00:19.180
+The mode is a value of greatest frequency.
+
+00:00:19.860 --> 00:00:24.960
+For the sorted data one, two, two, five, the mean is ten divided by four, or
+
+00:00:24.960 --> 00:00:25.460
+five halves.
+
+00:00:25.460 --> 00:00:30.278
+The two central observations are both two, so the median is two, and the
+
+00:00:30.278 --> 00:00:30.680
+unique
+
+00:00:30.680 --> 00:00:31.680
+mode is also two.
+
+00:00:32.400 --> 00:00:34.380
+These summaries need not coincide in general.
+
+00:00:35.120 --> 00:00:38.720
+A data set may have several tied modes, or no single most frequent value.
+
+00:00:39.560 --> 00:00:42.080
+Do not use the middle of an unsorted list as its median.
+
+00:00:42.940 --> 00:00:46.063
+Repeated observations count separately when computing the mean and the
+
+00:00:46.063 --> 00:00:46.420
+position
+
+00:00:46.420 --> 00:00:47.540
+of the median.
+
+00:00:47.540 --> 00:00:51.269
+An extreme observation can move the mean substantially while leaving the
+
+00:00:51.269 --> 00:00:51.580
+median
+
+00:00:51.580 --> 00:00:52.200
+unchanged.
+
+00:00:52.960 --> 00:00:56.660
+State which measure is requested and retain the original data units in a
+
+00:00:56.660 --> 00:00:57.340
+numerical answer.
+
+00:00:58.160 --> 00:01:01.980
+A summary is not a substitute for checking how many observations each value
+
+00:01:01.980 --> 00:01:02.480
+represents.
+
+00:01:03.552 --> 00:01:07.012
+A frequency table records how many times each value occurs.
+
+00:01:07.552 --> 00:01:11.692
+Its total count N is the sum of the frequencies, not the number of displayed
+
+00:01:11.692 --> 00:01:11.972
+rows.
+
+00:01:13.192 --> 00:01:17.652
+Multiply each value by its frequency, add those products and divide by N to
+
+00:01:17.652 --> 00:01:18.232
+obtain the mean.
+
+00:01:19.012 --> 00:01:23.212
+Values one, two and three with frequencies one, two and one have total count
+
+00:01:23.212 --> 00:01:26.092
+four and weighted sum eight, giving mean two.
+
+00:01:26.912 --> 00:01:30.592
+Taking the unweighted mean of table rows is generally wrong unless their
+
+00:01:30.592 --> 00:01:31.412
+frequencies are equal.
+
+00:01:31.932 --> 00:01:36.132
+A grouped continuous table instead gives intervals, so the exact individual
+
+00:01:36.132 --> 00:01:37.432
+observations are unavailable.
+
+00:01:38.372 --> 00:01:42.272
+Use each class mark, the midpoint of its two boundaries, as a representative
+
+00:01:42.272 --> 00:01:44.352
+value when estimating the grouped mean.
+
+00:01:45.132 --> 00:01:49.392
+For interval ten through twenty, the class mark is fifteen.
+
+00:01:49.392 --> 00:01:53.452
+Classes zero to ten, ten to twenty and twenty to thirty with frequencies two,
+
+00:01:53.732 --> 00:01:56.732
+five and three have estimated mean sixteen.
+
+00:01:56.732 --> 00:02:00.812
+This is a grouped estimate, not a claim that every original observation equals
+
+00:02:00.812 --> 00:02:01.932
+its midpoint.
+
+00:02:02.372 --> 00:02:06.492
+Use consistent continuous boundaries and nonnegative frequencies, with a
+
+00:02:06.492 --> 00:02:06.792
+positive total.
+
+00:02:07.492 --> 00:02:11.252
+An empty class contributes zero to the weighted sum but may still matter when
+
+00:02:11.252 --> 00:02:13.632
+reading neighbouring classes in a modal calculation.
+
+00:02:14.760 --> 00:02:18.760
+For a grouped continuous distribution, the median formula interpolates inside
+
+00:02:18.760 --> 00:02:21.960
+the class where cumulative frequency first reaches the halfway count.
+
+00:02:22.740 --> 00:02:25.240
+Let L be its lower boundary and h its width.
+
+00:02:26.000 --> 00:02:29.489
+Call the class frequency lower case f, and call the cumulative frequency
+
+00:02:29.489 --> 00:02:29.780
+before
+
+00:02:29.780 --> 00:02:31.200
+the class capital F.
+
+00:02:32.080 --> 00:02:37.120
+First calculate N over two minus capital F, then divide by lower case f,
+
+00:02:37.420 --> 00:02:39.040
+multiply by h and add L.
+
+00:02:39.340 --> 00:02:43.900
+For classes zero to ten, ten to twenty and twenty to thirty with frequencies
+
+00:02:43.900 --> 00:02:46.640
+two, five and three, N is ten.
+
+00:02:47.320 --> 00:02:51.373
+The median class is ten to twenty, and the estimate is ten plus three fifths
+
+00:02:51.373 --> 00:02:51.480
+of
+
+00:02:51.480 --> 00:02:53.440
+ten, or sixteen.
+
+00:02:53.440 --> 00:02:57.780
+For equal width classes with a single modal peak, the mode estimate uses modal
+
+00:02:57.780 --> 00:03:02.280
+frequency f one and the neighbouring frequencies f zero and f two.
+
+00:03:02.280 --> 00:03:08.070
+It is L plus f one minus f zero, divided by twice f one minus f zero minus f
+
+00:03:08.070 --> 00:03:09.440
+two, times h.
+
+00:03:09.920 --> 00:03:12.120
+The same table gives sixteen.
+
+00:03:12.120 --> 00:03:15.849
+These are interpolation estimates from grouped data; they do not recover
+
+00:03:15.849 --> 00:03:16.160
+unique
+
+00:03:16.160 --> 00:03:17.540
+exact raw medians or modes.
+
+00:03:18.580 --> 00:03:22.080
+Use boundaries rather than inconsistent printed limits, check the required
+
+00:03:22.080 --> 00:03:26.060
+denominators and inspect ties or edge classes before applying a modal formula
+
+00:03:26.060 --> 00:03:26.520
+blindly.
+
+00:03:26.760 --> 00:03:31.320
+Mean deviation about a specified centre is the average of the absolute
+
+00:03:31.320 --> 00:03:33.280
+deviations from that centre.
+
+00:03:33.280 --> 00:03:37.420
+The absolute values are essential: signed deviations from the arithmetic mean
+
+00:03:37.420 --> 00:03:40.300
+cancel, which would incorrectly suggest no spread.
+
+00:03:41.020 --> 00:03:45.320
+For one, two, three, four, five, the mean is three and the absolute deviations
+
+00:03:45.320 --> 00:03:48.000
+are two, one, zero, one and two.
+
+00:03:48.420 --> 00:03:50.320
+Their average is six fifths.
+
+00:03:50.380 --> 00:03:54.520
+The centre must be named because mean deviation about the mean can differ from
+
+00:03:54.520 --> 00:03:55.800
+mean deviation about the median.
+
+00:03:56.640 --> 00:04:00.860
+For one, two and nine, the median is two, so mean deviation about it is one
+
+00:04:00.860 --> 00:04:03.880
+plus zero plus seven divided by three, or eight thirds.
+
+00:04:04.540 --> 00:04:08.040
+The mean is four and mean deviation about that mean is ten thirds.
+
+00:04:08.720 --> 00:04:12.660
+A median minimizes the sum of absolute distances, although the minimizing
+
+00:04:12.660 --> 00:04:15.000
+centre need not be unique for an even count.
+
+00:04:16.120 --> 00:04:18.820
+Frequency tables weight each absolute deviation by its frequency.
+
+00:04:19.700 --> 00:04:23.740
+Grouped tables use class marks, producing an estimate of the corresponding raw
+
+00:04:23.740 --> 00:04:24.320
+data spread.
+
+00:04:25.180 --> 00:04:28.720
+Mean deviation has the same units as the observations and is always
+
+00:04:28.720 --> 00:04:30.200
+nonnegative.
+
+00:04:30.200 --> 00:04:34.360
+Check that a zero result means all represented observations equal the chosen
+
+00:04:34.360 --> 00:04:34.968
+centre.
+
+00:04:34.968 --> 00:04:39.228
+Variance measures spread through squared deviations from the arithmetic mean.
+
+00:04:40.008 --> 00:04:43.668
+For the descriptive distribution formulas in this class, add the squared
+
+00:04:43.668 --> 00:04:47.328
+deviations and divide by the total number N of observations.
+
+00:04:48.588 --> 00:04:51.348
+Standard deviation is the nonnegative square root of that variance.
+
+00:04:52.168 --> 00:04:55.188
+For data two, four and six, the mean is four.
+
+00:04:55.928 --> 00:05:00.668
+Squared deviations are four, zero and four, giving variance eight thirds and
+
+00:05:00.668 --> 00:05:02.608
+standard deviation square root of eight thirds.
+
+00:05:03.208 --> 00:05:07.348
+Do not confuse standard deviation with variance or mean deviation: they use
+
+00:05:07.348 --> 00:05:08.308
+different operations.
+
+00:05:09.448 --> 00:05:12.878
+Variance has squared data units, while standard deviation has the same units
+
+00:05:12.878 --> 00:05:12.968
+as
+
+00:05:12.968 --> 00:05:13.528
+the observations.
+
+00:05:14.428 --> 00:05:18.303
+Both are nonnegative, and zero variance means every observation is equal to
+
+00:05:18.303 --> 00:05:18.768
+the mean.
+
+00:05:19.568 --> 00:05:23.888
+Some statistical inference problems instead use divisor N minus one for an
+
+00:05:23.888 --> 00:05:25.348
+unbiased sample variance estimator.
+
+00:05:25.908 --> 00:05:29.808
+That is a different specified convention; do not substitute it into the
+
+00:05:29.808 --> 00:05:32.328
+descriptive JEE distribution calculations here.
+
+00:05:32.988 --> 00:05:35.528
+Always identify which definition the problem requests.
+
+00:05:36.588 --> 00:05:39.828
+Carry exact fractions through the variance calculation before rounding the
+
+00:05:39.828 --> 00:05:44.068
+square root, since premature rounding can distort comparisons or produce an
+
+00:05:44.068 --> 00:05:46.088
+apparent negative result from a shortcut formula.
+
+00:05:46.416 --> 00:05:50.756
+Expanding the squared deviation formula gives a useful shortcut: variance
+
+00:05:50.756 --> 00:05:54.041
+equals the weighted mean of the squared values minus the square of the
+
+00:05:54.041 --> 00:05:54.416
+weighted
+
+00:05:54.416 --> 00:05:54.716
+mean.
+
+00:05:55.816 --> 00:06:01.162
+For values one, two and three with frequencies one, two and one, N is four,
+
+00:06:01.162 --> 00:06:01.376
+the
+
+00:06:01.376 --> 00:06:05.550
+mean is two and the weighted second moment is eighteen divided by four, or
+
+00:06:05.550 --> 00:06:05.776
+nine
+
+00:06:05.776 --> 00:06:06.096
+halves.
+
+00:06:06.656 --> 00:06:08.576
+The variance is therefore one half.
+
+00:06:09.876 --> 00:06:13.256
+Squaring the weighted mean is different from averaging squared values, so keep
+
+00:06:13.256 --> 00:06:14.176
+both parts visible.
+
+00:06:15.236 --> 00:06:19.176
+For grouped classes with marks five, fifteen and twenty five and frequencies
+
+00:06:19.176 --> 00:06:23.416
+two, five and three, the estimated mean is sixteen.
+
+00:06:23.416 --> 00:06:26.876
+The weighted second moment is three hundred and five, giving variance three
+
+00:06:26.876 --> 00:06:30.896
+hundred and five minus two hundred and fifty six, or forty nine, and standard
+
+00:06:30.896 --> 00:06:32.016
+deviation seven.
+
+00:06:32.636 --> 00:06:35.856
+These grouped results are based on representing observations by their class
+
+00:06:35.856 --> 00:06:36.116
+marks.
+
+00:06:36.756 --> 00:06:40.361
+They are not exact raw data variances without further within class
+
+00:06:40.361 --> 00:06:41.016
+information.
+
+00:06:42.096 --> 00:06:45.476
+Directly summing weighted squared deviations provides an independent check on
+
+00:06:45.476 --> 00:06:45.916
+the shortcut.
+
+00:06:46.796 --> 00:06:51.181
+Use nonnegative frequencies, a positive total and enough numerical precision
+
+00:06:51.181 --> 00:06:51.296
+to
+
+00:06:51.296 --> 00:06:55.136
+avoid cancellation errors when the mean is large relative to the spread.
+
+00:06:55.368 --> 00:07:00.768
+An affine transformation changes every observation by the same rule Y equal to
+
+00:07:00.768 --> 00:07:02.448
+a X plus b.
+
+00:07:03.248 --> 00:07:06.428
+The new mean is a times the old mean plus b.
+
+00:07:07.428 --> 00:07:11.308
+Subtracting that new mean from each transformed value leaves a times the
+
+00:07:11.308 --> 00:07:14.668
+original deviation, so variance is multiplied by a squared.
+
+00:07:15.808 --> 00:07:20.688
+Standard deviation is multiplied by absolute a, and mean deviation about the
+
+00:07:20.688 --> 00:07:24.548
+correspondingly transformed centre is also multiplied by absolute a.
+
+00:07:25.648 --> 00:07:28.528
+Adding a constant alone changes location but not spread.
+
+00:07:29.748 --> 00:07:34.528
+For X values two, four and six, the mean is four and variance is eight thirds.
+
+00:07:35.268 --> 00:07:39.647
+Transforming by negative two X plus five gives one, negative three and
+
+00:07:39.647 --> 00:07:40.148
+negative
+
+00:07:40.148 --> 00:07:40.588
+seven.
+
+00:07:41.128 --> 00:07:45.728
+Their mean is negative three, variance is thirty two thirds and standard
+
+00:07:45.728 --> 00:07:48.268
+deviation is twice square root of eight thirds.
+
+00:07:49.268 --> 00:07:53.168
+The negative multiplier reverses ordering but cannot make a spread negative.
+
+00:07:53.748 --> 00:07:58.068
+If a is zero, every transformed observation equals b and the dispersion is
+
+00:07:58.068 --> 00:07:58.388
+zero.
+
+00:07:59.208 --> 00:08:02.328
+A direct calculation on the transformed data checks the formulas.
+
+00:08:03.268 --> 00:08:06.588
+Apply the transformation to each original observation or class mark
+
+00:08:06.588 --> 00:08:11.088
+consistently; transforming frequencies themselves is not the same operation.
+
+00:08:11.376 --> 00:08:15.636
+Probability starts with a random experiment and a sample space containing its
+
+00:08:15.636 --> 00:08:17.156
+possible elementary outcomes.
+
+00:08:17.776 --> 00:08:20.296
+An event is a subset of that sample space.
+
+00:08:21.036 --> 00:08:26.033
+For two fair independent coin tosses recorded in order, the sample space is H
+
+00:08:26.033 --> 00:08:29.016
+H, H T, T H and T T.
+
+00:08:29.016 --> 00:08:30.596
+Each has probability one quarter.
+
+00:08:31.416 --> 00:08:36.476
+Exactly one head corresponds to H T and T H, so its probability is one half.
+
+00:08:36.476 --> 00:08:40.976
+Writing only zero heads, one head and two heads as equally likely outcomes
+
+00:08:40.976 --> 00:08:45.256
+would be wrong, because the middle count represents two elementary outcomes.
+
+00:08:45.996 --> 00:08:50.276
+A favourable count divided by a total count is valid for a finite sample space
+
+00:08:50.276 --> 00:08:53.136
+only when those counted outcomes are equally likely.
+
+00:08:54.096 --> 00:08:57.758
+Fairness, independence, replacement and whether order is recorded are
+
+00:08:57.758 --> 00:08:58.236
+modelling
+
+00:08:58.236 --> 00:08:59.636
+assumptions that must be stated.
+
+00:09:00.176 --> 00:09:04.436
+If outcomes have unequal probabilities, add their assigned probability weights
+
+00:09:04.436 --> 00:09:06.236
+instead of using an unweighted ratio.
+
+00:09:07.036 --> 00:09:10.436
+Two physically different outcomes can produce the same later numerical
+
+00:09:10.436 --> 00:09:14.276
+statistic without becoming one equally likely elementary outcome.
+
+00:09:15.116 --> 00:09:19.556
+Before using a counting formula, identify exactly what is being counted and
+
+00:09:19.556 --> 00:09:22.536
+whether each counted object has the same chance under the experiment.
+
+00:09:24.576 --> 00:09:28.766
+A probability assigns a nonnegative weight to events, with total probability
+
+00:09:28.766 --> 00:09:28.876
+of
+
+00:09:28.876 --> 00:09:30.356
+the sample space equal to one.
+
+00:09:31.096 --> 00:09:34.979
+Disjoint event probabilities add, and these facts imply every event
+
+00:09:34.979 --> 00:09:35.616
+probability
+
+00:09:35.616 --> 00:09:37.316
+lies between zero and one.
+
+00:09:37.816 --> 00:09:41.216
+The impossible event, the empty set, has probability zero.
+
+00:09:41.996 --> 00:09:46.056
+The complement of A contains all outcomes in the sample space that are not in
+
+00:09:46.056 --> 00:09:46.236
+A.
+
+00:09:46.656 --> 00:09:50.396
+Since A and its complement are disjoint and together exhaustive, their
+
+00:09:50.396 --> 00:09:51.656
+probabilities add to one.
+
+00:09:52.076 --> 00:09:56.396
+If P of A is three tenths, its complement has probability seven tenths.
+
+00:09:57.296 --> 00:10:01.096
+The complement is relative to the chosen sample space, so that space must
+
+00:10:01.096 --> 00:10:02.856
+remain fixed while using the formula.
+
+00:10:03.556 --> 00:10:07.396
+At least one success is often easier to calculate as one minus the probability
+
+00:10:07.396 --> 00:10:11.796
+of no successes, provided the no success event has been modelled correctly.
+
+00:10:12.596 --> 00:10:16.896
+A probability of zero need not imply logical impossibility in every infinite
+
+00:10:16.896 --> 00:10:21.256
+model, although the finite positive equally likely examples here have that
+
+00:10:21.256 --> 00:10:22.176
+simpler interpretation.
+
+00:10:23.056 --> 00:10:26.236
+Do not use a negative probability to compensate for a counting mistake.
+
+00:10:26.956 --> 00:10:30.836
+Check the final range and whether the event and its complement together cover
+
+00:10:30.836 --> 00:10:31.636
+the whole experiment.
+
+00:10:32.592 --> 00:10:37.212
+The addition law calculates the probability that A or B or both occurs.
+
+00:10:38.052 --> 00:10:42.092
+Adding P of A and P of B counts their intersection twice, so subtract its
+
+00:10:42.092 --> 00:10:42.952
+probability once.
+
+00:10:43.512 --> 00:10:48.452
+On a fair die, let A be the even outcomes two, four and six, and B be outcomes
+
+00:10:48.452 --> 00:10:51.352
+greater than three, namely four, five and six.
+
+00:10:51.452 --> 00:10:53.152
+Each event has probability one half.
+
+00:10:53.872 --> 00:10:56.952
+Their intersection is four and six with probability one third.
+
+00:10:57.492 --> 00:11:01.832
+Their union contains two, four, five and six, giving probability two thirds,
+
+00:11:01.832 --> 00:11:04.772
+also one half plus one half minus one third.
+
+00:11:05.912 --> 00:11:09.352
+Mutually exclusive events have empty intersection, so their probabilities add
+
+00:11:09.352 --> 00:11:09.752
+directly.
+
+00:11:10.512 --> 00:11:13.781
+Exclusivity is a condition to check, not an assumption attached to the word
+
+00:11:13.781 --> 00:11:13.912
+or.
+
+00:11:14.652 --> 00:11:19.052
+The probability of exactly one of A and B equals their union probability minus
+
+00:11:19.052 --> 00:11:20.292
+their intersection probability.
+
+00:11:20.972 --> 00:11:22.732
+In this die example it is one third.
+
+00:11:23.452 --> 00:11:27.272
+A set list or Venn diagram helps verify the overlap and whether
+
+00:11:27.272 --> 00:11:32.072
+the event wording includes both.
+
+00:11:32.072 --> 00:11:33.352
+For three events, additional intersection corrections are needed; applying the
+
+00:11:33.352 --> 00:11:37.172
+two event formula repeatedly is valid when each intermediate event and overlap
+
+00:11:37.172 --> 00:11:38.152
+is handled consistently.
+
+00:11:38.496 --> 00:11:42.436
+Conditional probability restricts attention to outcomes in an event already
+
+00:11:42.436 --> 00:11:43.316
+known to occur.
+
+00:11:44.476 --> 00:11:49.176
+P of B given A is the probability of their intersection divided by P of A,
+
+00:11:49.836 --> 00:11:51.676
+provided that denominator is positive.
+
+00:11:52.896 --> 00:11:58.436
+Rearranging gives the multiplication law P of A and B equal to P of A times P
+
+00:11:58.436 --> 00:11:59.396
+of B given A.
+
+00:11:59.856 --> 00:12:02.836
+A bag contains three red balls and two blue balls.
+
+00:12:03.446 --> 00:12:05.696
+Draw twice uniformly without replacement.
+
+00:12:06.596 --> 00:12:08.956
+The first red probability is three fifths.
+
+00:12:09.836 --> 00:12:14.376
+After a red first draw, two red balls remain among four balls, so the
+
+00:12:14.376 --> 00:12:16.996
+conditional probability of another red is one half.
+
+00:12:18.126 --> 00:12:20.996
+Multiplication gives probability three tenths for two reds.
+
+00:12:21.736 --> 00:12:25.836
+With replacement and a fresh uniform draw, the second red probability remains
+
+00:12:25.836 --> 00:12:29.356
+three fifths and both red has probability nine twenty fifths.
+
+00:12:30.056 --> 00:12:31.456
+These are different experiments.
+
+00:12:31.456 --> 00:12:35.991
+Do not replace a conditional factor by an unconditional one unless
+
+00:12:35.991 --> 00:12:36.816
+independence
+
+00:12:36.816 --> 00:12:37.716
+has been established.
+
+00:12:38.696 --> 00:12:42.676
+Conditioning on an event of probability zero is not defined by this elementary
+
+00:12:42.676 --> 00:12:43.456
+ratio formula.
+
+00:12:44.256 --> 00:12:48.396
+The order of the conditioning statement matters: P of B given A and P of A
+
+00:12:48.396 --> 00:12:50.616
+given B are generally different quantities.
+
+00:12:50.856 --> 00:12:54.836
+Events are independent when their intersection probability equals the product
+
+00:12:54.836 --> 00:12:56.116
+of their separate probabilities.
+
+00:12:56.916 --> 00:13:00.796
+If the conditioning event has positive probability, this also means learning
+
+00:13:00.796 --> 00:13:03.356
+that event does not change the probability of the other.
+
+00:13:03.996 --> 00:13:08.512
+For two fair independent tosses, A being a head on the first and B being a
+
+00:13:08.512 --> 00:13:08.756
+head
+
+00:13:08.756 --> 00:13:13.876
+on the second each has probability one half, while their intersection H H has
+
+00:13:13.876 --> 00:13:14.976
+probability one quarter.
+
+00:13:15.516 --> 00:13:17.956
+Thus these events are independent and can occur together.
+
+00:13:18.836 --> 00:13:22.016
+Mutually exclusive events instead cannot occur together.
+
+00:13:22.776 --> 00:13:27.136
+If both have positive probability, their intersection probability zero differs
+
+00:13:27.136 --> 00:13:29.796
+from the positive product, so they are not independent.
+
+00:13:30.636 --> 00:13:34.056
+A zero probability event is a degenerate exception in the algebraic
+
+00:13:34.056 --> 00:13:34.856
+independence test.
+
+00:13:35.456 --> 00:13:39.276
+Replacement can help produce independent draws in a specified model, but
+
+00:13:39.276 --> 00:13:43.216
+independence should not be inferred solely from a visual separation of two
+
+00:13:43.216 --> 00:13:45.676
+events or from the fact that they have equal probabilities.
+
+00:13:46.276 --> 00:13:50.216
+For three or more events, pairwise independence does not automatically imply
+
+00:13:50.216 --> 00:13:51.156
+mutual independence.
+
+00:13:52.176 --> 00:13:55.976
+In any multiplication calculation, identify which independence assumption is
+
+00:13:55.976 --> 00:13:59.996
+being used and check it against the experiment rather than substituting a
+
+00:13:59.996 --> 00:14:00.656
+product by habit.
+
+00:14:01.272 --> 00:14:05.212
+The law of total probability breaks an event into mutually exclusive source
+
+00:14:05.212 --> 00:14:05.552
+paths.
+
+00:14:06.452 --> 00:14:09.992
+Suppose the source events form a partition of the sample space: exactly one
+
+00:14:09.992 --> 00:14:12.452
+occurs and together they include all outcomes.
+
+00:14:13.112 --> 00:14:17.472
+Then multiply each source probability by the conditional target probability in
+
+00:14:17.472 --> 00:14:19.532
+that source and add the contributions.
+
+00:14:20.432 --> 00:14:24.452
+Choose box one with probability two fifths and box two with probability three
+
+00:14:24.452 --> 00:14:25.092
+fifths.
+
+00:14:25.252 --> 00:14:29.692
+A uniform ball drawn from box one is red with probability three quarters, and
+
+00:14:29.692 --> 00:14:32.072
+one from box two is red with probability one quarter.
+
+00:14:32.912 --> 00:14:36.672
+The overall red probability is two fifths times three quarters plus three
+
+00:14:36.672 --> 00:14:37.612
+fifths times one quarter.
+
+00:14:38.072 --> 00:14:41.952
+The contributions are three tenths and three twentieths, totalling nine
+
+00:14:41.952 --> 00:14:42.772
+twentieths.
+
+00:14:43.172 --> 00:14:46.652
+An unweighted average of three quarters and one quarter would incorrectly
+
+00:14:46.652 --> 00:14:48.792
+assume equal box selection probabilities.
+
+00:14:49.632 --> 00:14:53.032
+A probability tree makes the source weights and target likelihoods explicit.
+
+00:14:53.752 --> 00:14:57.232
+At each branching stage the alternatives must match the actual experiment.
+
+00:14:58.032 --> 00:15:01.772
+Total probability is an addition over disjoint paths, while each path
+
+00:15:01.772 --> 00:15:03.712
+probability uses the multiplication law.
+
+00:15:04.572 --> 00:15:08.032
+Check that all relevant sources are included once, and that no overlapping
+
+00:15:08.032 --> 00:15:09.452
+source event is counted twice.
+
+00:15:10.632 --> 00:15:15.612
+Bayes theorem reverses a conditional question by combining a source's prior
+
+00:15:15.612 --> 00:15:19.632
+weight with its likelihood of the observed event and dividing by the total
+
+00:15:19.632 --> 00:15:20.752
+probability of that event.
+
+00:15:21.432 --> 00:15:25.812
+In the preceding box model, the probability of selecting box one and then
+
+00:15:25.812 --> 00:15:27.492
+drawing red is three tenths.
+
+00:15:28.032 --> 00:15:31.712
+The total probability of red from either box is nine twentieths.
+
+00:15:32.492 --> 00:15:36.732
+Given that the drawn ball is red, the probability that box one was selected is
+
+00:15:36.732 --> 00:15:39.772
+three tenths divided by nine twentieths, or two thirds.
+
+00:15:40.392 --> 00:15:44.472
+This posterior differs from the original box one selection probability two
+
+00:15:44.472 --> 00:15:44.732
+fifths.
+
+00:15:45.852 --> 00:15:49.572
+The observation favours the box in which red is more likely, but the prior
+
+00:15:49.572 --> 00:15:50.452
+weights still matter.
+
+00:15:51.132 --> 00:15:54.532
+Do not simply reverse P of red given box one, which was three quarters.
+
+00:15:55.152 --> 00:15:59.352
+The denominator must include all disjoint exhaustive source paths and must be
+
+00:15:59.352 --> 00:15:59.712
+positive.
+
+00:16:00.252 --> 00:16:04.832
+The corresponding posterior for box two is one third, so the posterior source
+
+00:16:04.832 --> 00:16:06.052
+probabilities sum to one.
+
+00:16:06.432 --> 00:16:09.872
+A tree or contingency table can verify the same ratios.
+
+00:16:10.832 --> 00:16:14.032
+State precisely what information has been observed before deciding which
+
+00:16:14.032 --> 00:16:15.892
+probability is the conditioning denominator.
+
+00:16:17.040 --> 00:16:20.665
+A random variable assigns a real number to each outcome of a random
+
+00:16:20.665 --> 00:16:21.260
+experiment.
+
+00:16:22.000 --> 00:16:25.700
+It is a function of the outcome, rather than a new equally likely elementary
+
+00:16:25.700 --> 00:16:26.340
+outcome list.
+
+00:16:26.960 --> 00:16:30.200
+Let X be the number of heads in two fair independent tosses.
+
+00:16:30.200 --> 00:16:36.140
+T T maps to zero, H T and T H map to one, and H H maps to two.
+
+00:16:36.880 --> 00:16:40.860
+The probability distribution therefore gives probabilities one quarter, one
+
+00:16:40.860 --> 00:16:43.940
+half and one quarter to values zero, one and two.
+
+00:16:44.360 --> 00:16:48.320
+The middle value has greater probability because two elementary outcomes
+
+00:16:48.320 --> 00:16:48.960
+produce it.
+
+00:16:49.660 --> 00:16:53.380
+A discrete probability mass function must assign nonnegative probabilities
+
+00:16:53.380 --> 00:16:56.000
+whose total over all possible values is one.
+
+00:16:56.940 --> 00:17:00.220
+Use these two conditions to determine or reject an unknown probability
+
+00:17:00.220 --> 00:17:00.660
+parameter.
+
+00:17:01.380 --> 00:17:04.560
+A table with correct total but a negative entry is still invalid.
+
+00:17:05.420 --> 00:17:09.900
+For an event such as X at least one, add the masses at one and two, obtaining
+
+00:17:09.900 --> 00:17:10.560
+three quarters.
+
+00:17:11.260 --> 00:17:15.940
+A distribution summarizes the numerical random variable without making H T and
+
+00:17:15.940 --> 00:17:17.680
+T H the same underlying outcome.
+
+00:17:18.700 --> 00:17:22.440
+Check that every possible value is included and that a listed value is paired
+
+00:17:22.440 --> 00:17:25.935
+with its own probability rather than with a frequency from an unrelated
+
+00:17:25.935 --> 00:17:26.280
+sample.
+
+00:17:27.288 --> 00:17:31.728
+The expectation of a finite discrete random variable is the probability
+
+00:17:31.728 --> 00:17:33.108
+weighted sum of its values.
+
+00:17:33.988 --> 00:17:38.268
+For the head count distribution zero, one and two with probabilities one
+
+00:17:38.268 --> 00:17:41.968
+quarter, one half and one quarter, the expectation is one.
+
+00:17:42.508 --> 00:17:47.848
+The second moment E of X squared is zero plus one half plus four quarters, or
+
+00:17:47.848 --> 00:17:48.408
+three halves.
+
+00:17:49.288 --> 00:17:53.168
+Variance equals this second moment minus the square of the expectation, giving
+
+00:17:53.168 --> 00:17:53.748
+one half.
+
+00:17:54.368 --> 00:17:58.008
+Equivalently, directly average the squared deviations from the expectation
+
+00:17:58.008 --> 00:17:59.748
+using the probability weights.
+
+00:18:00.908 --> 00:18:04.148
+Standard deviation is the nonnegative square root of that variance.
+
+00:18:04.968 --> 00:18:08.848
+Expectation need not be a value the random variable can actually take in every
+
+00:18:08.848 --> 00:18:12.468
+example; it is a weighted average, not a guaranteed future outcome.
+
+00:18:13.088 --> 00:18:15.348
+A constant random variable has zero variance.
+
+00:18:16.068 --> 00:18:21.668
+For Y equal to a X plus b, expectation changes to a E of X plus b
+
+00:18:21.668 --> 00:18:25.362
+and variance to a squared times the original variance, matching the
+
+00:18:25.362 --> 00:18:25.968
+descriptive
+
+00:18:25.968 --> 00:18:27.328
+data transformation rules.
+
+00:18:28.408 --> 00:18:32.728
+Keep E of X squared distinct from the square of E of X, and check nonnegative
+
+00:18:32.728 --> 00:18:35.136
+variance and total probability one before interpreting the numerical results.
