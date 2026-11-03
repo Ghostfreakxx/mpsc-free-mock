@@ -1,3 +1,4 @@
+import { statisticsProbabilityLesson } from './statistics-probability-study.ts';
 import { vectorAlgebraLesson } from './vector-algebra-study.ts';
 import { threeDimensionalGeometryLesson } from './three-dimensional-geometry-study.ts';
 import { coordinateGeometryLesson } from './coordinate-geometry-study.ts';
@@ -193,6 +194,7 @@ export const studyLessons: StudyLesson[] = [
   coordinateGeometryLesson,
   threeDimensionalGeometryLesson,
   vectorAlgebraLesson,
+  statisticsProbabilityLesson,
 ];
 
 const moleConceptCompanion = studyLessons.find(lesson=>lesson.id==="mole-concept");

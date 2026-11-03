@@ -1,0 +1,2177 @@
+{
+  "duration": 1115.136000000028,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 63.55200000000152
+    },
+    {
+      "start": 63.55200000000152,
+      "end": 134.76000000000332
+    },
+    {
+      "start": 134.76000000000332,
+      "end": 206.76000000000516
+    },
+    {
+      "start": 206.76000000000516,
+      "end": 274.96800000000684
+    },
+    {
+      "start": 274.96800000000684,
+      "end": 346.41600000000864
+    },
+    {
+      "start": 346.41600000000864,
+      "end": 415.36800000001034
+    },
+    {
+      "start": 415.36800000001034,
+      "end": 491.3760000000123
+    },
+    {
+      "start": 491.3760000000123,
+      "end": 564.5760000000142
+    },
+    {
+      "start": 564.5760000000142,
+      "end": 632.5920000000159
+    },
+    {
+      "start": 632.5920000000159,
+      "end": 698.4960000000175
+    },
+    {
+      "start": 698.4960000000175,
+      "end": 770.8560000000193
+    },
+    {
+      "start": 770.8560000000193,
+      "end": 841.2720000000211
+    },
+    {
+      "start": 841.2720000000211,
+      "end": 910.6320000000228
+    },
+    {
+      "start": 910.6320000000228,
+      "end": 977.0400000000244
+    },
+    {
+      "start": 977.0400000000244,
+      "end": 1047.2880000000262
+    },
+    {
+      "start": 1047.2880000000262,
+      "end": 1115.136000000028
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 4.079999923706055,
+      "text": "Statistics summarizes a collection of observations without preserving every",
+      "chapter": 0
+    },
+    {
+      "start": 4.079999923706055,
+      "end": 5.559999942779541,
+      "text": "individual detail in each summary.",
+      "chapter": 0
+    },
+    {
+      "start": 6.21999979019165,
+      "end": 9.5600004196167,
+      "text": "The arithmetic mean is the sum of all observations divided by their positive",
+      "chapter": 0
+    },
+    {
+      "start": 9.5600004196167,
+      "end": 9.880000114440918,
+      "text": "count.",
+      "chapter": 0
+    },
+    {
+      "start": 10.579999923706055,
+      "end": 14.4399995803833,
+      "text": "The median is the middle observation after sorting, or the mean of the two",
+      "chapter": 0
+    },
+    {
+      "start": 14.4399995803833,
+      "end": 16.15999984741211,
+      "text": "central observations when the count is even.",
+      "chapter": 0
+    },
+    {
+      "start": 16.639999389648438,
+      "end": 19.18000030517578,
+      "text": "The mode is a value of greatest frequency.",
+      "chapter": 0
+    },
+    {
+      "start": 19.860000610351562,
+      "end": 24.959999084472656,
+      "text": "For the sorted data one, two, two, five, the mean is ten divided by four, or",
+      "chapter": 0
+    },
+    {
+      "start": 24.959999084472656,
+      "end": 25.459999084472656,
+      "text": "five halves.",
+      "chapter": 0
+    },
+    {
+      "start": 25.459999084472656,
+      "end": 30.27846174973708,
+      "text": "The two central observations are both two, so the median is two, and the",
+      "chapter": 0
+    },
+    {
+      "start": 30.27846174973708,
+      "end": 30.68000030517578,
+      "text": "unique",
+      "chapter": 0
+    },
+    {
+      "start": 30.68000030517578,
+      "end": 31.68000030517578,
+      "text": "mode is also two.",
+      "chapter": 0
+    },
+    {
+      "start": 32.400001525878906,
+      "end": 34.380001068115234,
+      "text": "These summaries need not coincide in general.",
+      "chapter": 0
+    },
+    {
+      "start": 35.119998931884766,
+      "end": 38.720001220703125,
+      "text": "A data set may have several tied modes, or no single most frequent value.",
+      "chapter": 0
+    },
+    {
+      "start": 39.560001373291016,
+      "end": 42.08000183105469,
+      "text": "Do not use the middle of an unsorted list as its median.",
+      "chapter": 0
+    },
+    {
+      "start": 42.939998626708984,
+      "end": 46.06307513897236,
+      "text": "Repeated observations count separately when computing the mean and the",
+      "chapter": 0
+    },
+    {
+      "start": 46.06307513897236,
+      "end": 46.41999816894531,
+      "text": "position",
+      "chapter": 0
+    },
+    {
+      "start": 46.41999816894531,
+      "end": 47.540000915527344,
+      "text": "of the median.",
+      "chapter": 0
+    },
+    {
+      "start": 47.540000915527344,
+      "end": 51.269232529860275,
+      "text": "An extreme observation can move the mean substantially while leaving the",
+      "chapter": 0
+    },
+    {
+      "start": 51.269232529860275,
+      "end": 51.58000183105469,
+      "text": "median",
+      "chapter": 0
+    },
+    {
+      "start": 51.58000183105469,
+      "end": 52.20000076293945,
+      "text": "unchanged.",
+      "chapter": 0
+    },
+    {
+      "start": 52.959999084472656,
+      "end": 56.65999984741211,
+      "text": "State which measure is requested and retain the original data units in a",
+      "chapter": 0
+    },
+    {
+      "start": 56.65999984741211,
+      "end": 57.34000015258789,
+      "text": "numerical answer.",
+      "chapter": 0
+    },
+    {
+      "start": 58.15999984741211,
+      "end": 61.97999954223633,
+      "text": "A summary is not a substitute for checking how many observations each value",
+      "chapter": 0
+    },
+    {
+      "start": 61.97999954223633,
+      "end": 62.47999954223633,
+      "text": "represents.",
+      "chapter": 0
+    },
+    {
+      "start": 63.55200000000152,
+      "end": 67.0120000381485,
+      "text": "A frequency table records how many times each value occurs.",
+      "chapter": 1
+    },
+    {
+      "start": 67.55200000000153,
+      "end": 71.69200034332428,
+      "text": "Its total count N is the sum of the frequencies, not the number of displayed",
+      "chapter": 1
+    },
+    {
+      "start": 71.69200034332428,
+      "end": 71.97200007629547,
+      "text": "rows.",
+      "chapter": 1
+    },
+    {
+      "start": 73.19200034332428,
+      "end": 77.65200038147125,
+      "text": "Multiply each value by its frequency, add those products and divide by N to",
+      "chapter": 1
+    },
+    {
+      "start": 77.65200038147125,
+      "end": 78.23200030517731,
+      "text": "obtain the mean.",
+      "chapter": 1
+    },
+    {
+      "start": 79.0120000381485,
+      "end": 83.21199984741364,
+      "text": "Values one, two and three with frequencies one, two and one have total count",
+      "chapter": 1
+    },
+    {
+      "start": 83.21199984741364,
+      "end": 86.09200091552887,
+      "text": "four and weighted sum eight, giving mean two.",
+      "chapter": 1
+    },
+    {
+      "start": 86.91200061035309,
+      "end": 90.59200091552887,
+      "text": "Taking the unweighted mean of table rows is generally wrong unless their",
+      "chapter": 1
+    },
+    {
+      "start": 90.59200091552887,
+      "end": 91.41200061035309,
+      "text": "frequencies are equal.",
+      "chapter": 1
+    },
+    {
+      "start": 91.93199916076813,
+      "end": 96.13200183105621,
+      "text": "A grouped continuous table instead gives intervals, so the exact individual",
+      "chapter": 1
+    },
+    {
+      "start": 96.13200183105621,
+      "end": 97.43200106811676,
+      "text": "observations are unavailable.",
+      "chapter": 1
+    },
+    {
+      "start": 98.37199969482575,
+      "end": 102.27200122070465,
+      "text": "Use each class mark, the midpoint of its two boundaries, as a representative",
+      "chapter": 1
+    },
+    {
+      "start": 102.27200122070465,
+      "end": 104.35199923706207,
+      "text": "value when estimating the grouped mean.",
+      "chapter": 1
+    },
+    {
+      "start": 105.13200183105621,
+      "end": 109.39200015258942,
+      "text": "For interval ten through twenty, the class mark is fifteen.",
+      "chapter": 1
+    },
+    {
+      "start": 109.39200015258942,
+      "end": 113.45200152588043,
+      "text": "Classes zero to ten, ten to twenty and twenty to thirty with frequencies two,",
+      "chapter": 1
+    },
+    {
+      "start": 113.73200030517731,
+      "end": 116.73200030517731,
+      "text": "five and three have estimated mean sixteen.",
+      "chapter": 1
+    },
+    {
+      "start": 116.73200030517731,
+      "end": 120.81199832153473,
+      "text": "This is a grouped estimate, not a claim that every original observation equals",
+      "chapter": 1
+    },
+    {
+      "start": 120.81199832153473,
+      "end": 121.93200106811676,
+      "text": "its midpoint.",
+      "chapter": 1
+    },
+    {
+      "start": 122.37199969482575,
+      "end": 126.49199862671051,
+      "text": "Use consistent continuous boundaries and nonnegative frequencies, with a",
+      "chapter": 1
+    },
+    {
+      "start": 126.49199862671051,
+      "end": 126.79200167846832,
+      "text": "positive total.",
+      "chapter": 1
+    },
+    {
+      "start": 127.49199862671051,
+      "end": 131.25199694824371,
+      "text": "An empty class contributes zero to the weighted sum but may still matter when",
+      "chapter": 1
+    },
+    {
+      "start": 131.25199694824371,
+      "end": 133.63200183105621,
+      "text": "reading neighbouring classes in a modal calculation.",
+      "chapter": 1
+    },
+    {
+      "start": 134.76000000000332,
+      "end": 138.76000000000332,
+      "text": "For a grouped continuous distribution, the median formula interpolates inside",
+      "chapter": 2
+    },
+    {
+      "start": 138.76000000000332,
+      "end": 141.95999980926845,
+      "text": "the class where cumulative frequency first reaches the halfway count.",
+      "chapter": 2
+    },
+    {
+      "start": 142.7400000190768,
+      "end": 145.23999954223964,
+      "text": "Let L be its lower boundary and h its width.",
+      "chapter": 2
+    },
+    {
+      "start": 145.99999977112148,
+      "end": 149.48923117417888,
+      "text": "Call the class frequency lower case f, and call the cumulative frequency",
+      "chapter": 2
+    },
+    {
+      "start": 149.48923117417888,
+      "end": 149.780000457767,
+      "text": "before",
+      "chapter": 2
+    },
+    {
+      "start": 149.780000457767,
+      "end": 151.20000053406093,
+      "text": "the class capital F.",
+      "chapter": 2
+    },
+    {
+      "start": 152.07999969482753,
+      "end": 157.12000061035488,
+      "text": "First calculate N over two minus capital F, then divide by lower case f,",
+      "chapter": 2
+    },
+    {
+      "start": 157.41999984741543,
+      "end": 159.04000068664882,
+      "text": "multiply by h and add L.",
+      "chapter": 2
+    },
+    {
+      "start": 159.33999992370937,
+      "end": 163.89999938965175,
+      "text": "For classes zero to ten, ten to twenty and twenty to thirty with frequencies",
+      "chapter": 2
+    },
+    {
+      "start": 163.89999938965175,
+      "end": 166.63999916076992,
+      "text": "two, five and three, N is ten.",
+      "chapter": 2
+    },
+    {
+      "start": 167.32000137329433,
+      "end": 171.3733345579523,
+      "text": "The median class is ten to twenty, and the estimate is ten plus three fifths",
+      "chapter": 2
+    },
+    {
+      "start": 171.3733345579523,
+      "end": 171.48000122070644,
+      "text": "of",
+      "chapter": 2
+    },
+    {
+      "start": 171.48000122070644,
+      "end": 173.4400003051791,
+      "text": "ten, or sixteen.",
+      "chapter": 2
+    },
+    {
+      "start": 173.4400003051791,
+      "end": 177.780000457767,
+      "text": "For equal width classes with a single modal peak, the mode estimate uses modal",
+      "chapter": 2
+    },
+    {
+      "start": 177.780000457767,
+      "end": 182.280000457767,
+      "text": "frequency f one and the neighbouring frequencies f zero and f two.",
+      "chapter": 2
+    },
+    {
+      "start": 182.280000457767,
+      "end": 188.0699994659457,
+      "text": "It is L plus f one minus f zero, divided by twice f one minus f zero minus f",
+      "chapter": 2
+    },
+    {
+      "start": 188.0699994659457,
+      "end": 189.4400003051791,
+      "text": "two, times h.",
+      "chapter": 2
+    },
+    {
+      "start": 189.91999984741543,
+      "end": 192.12000061035488,
+      "text": "The same table gives sixteen.",
+      "chapter": 2
+    },
+    {
+      "start": 192.12000061035488,
+      "end": 195.84923222468782,
+      "text": "These are interpolation estimates from grouped data; they do not recover",
+      "chapter": 2
+    },
+    {
+      "start": 195.84923222468782,
+      "end": 196.16000152588222,
+      "text": "unique",
+      "chapter": 2
+    },
+    {
+      "start": 196.16000152588222,
+      "end": 197.5399987793002,
+      "text": "exact raw medians or modes.",
+      "chapter": 2
+    },
+    {
+      "start": 198.57999969482753,
+      "end": 202.07999969482753,
+      "text": "Use boundaries rather than inconsistent printed limits, check the required",
+      "chapter": 2
+    },
+    {
+      "start": 202.07999969482753,
+      "end": 206.06000305176113,
+      "text": "denominators and inspect ties or edge classes before applying a modal formula",
+      "chapter": 2
+    },
+    {
+      "start": 206.06000305176113,
+      "end": 206.52000213623378,
+      "text": "blindly.",
+      "chapter": 2
+    },
+    {
+      "start": 206.76000000000516,
+      "end": 211.3199999427847,
+      "text": "Mean deviation about a specified centre is the average of the absolute",
+      "chapter": 3
+    },
+    {
+      "start": 211.3199999427847,
+      "end": 213.27999998093168,
+      "text": "deviations from that centre.",
+      "chapter": 3
+    },
+    {
+      "start": 213.27999998093168,
+      "end": 217.41999984741727,
+      "text": "The absolute values are essential: signed deviations from the arithmetic mean",
+      "chapter": 3
+    },
+    {
+      "start": 217.41999984741727,
+      "end": 220.2999999618582,
+      "text": "cancel, which would incorrectly suggest no spread.",
+      "chapter": 3
+    },
+    {
+      "start": 221.020000228887,
+      "end": 225.31999946594755,
+      "text": "For one, two, three, four, five, the mean is three and the absolute deviations",
+      "chapter": 3
+    },
+    {
+      "start": 225.31999946594755,
+      "end": 227.99999977112333,
+      "text": "are two, one, zero, one and two.",
+      "chapter": 3
+    },
+    {
+      "start": 228.41999984741727,
+      "end": 230.31999946594755,
+      "text": "Their average is six fifths.",
+      "chapter": 3
+    },
+    {
+      "start": 230.38000083923856,
+      "end": 234.520000228887,
+      "text": "The centre must be named because mean deviation about the mean can differ from",
+      "chapter": 3
+    },
+    {
+      "start": 234.520000228887,
+      "end": 235.8000009155325,
+      "text": "mean deviation about the median.",
+      "chapter": 3
+    },
+    {
+      "start": 236.63999916077177,
+      "end": 240.85999847412626,
+      "text": "For one, two and nine, the median is two, so mean deviation about it is one",
+      "chapter": 3
+    },
+    {
+      "start": 240.85999847412626,
+      "end": 243.87999893188993,
+      "text": "plus zero plus seven divided by three, or eight thirds.",
+      "chapter": 3
+    },
+    {
+      "start": 244.53999877930204,
+      "end": 248.03999877930204,
+      "text": "The mean is four and mean deviation about that mean is ten thirds.",
+      "chapter": 3
+    },
+    {
+      "start": 248.71999908447782,
+      "end": 252.66000152588407,
+      "text": "A median minimizes the sum of absolute distances, although the minimizing",
+      "chapter": 3
+    },
+    {
+      "start": 252.66000152588407,
+      "end": 255.00000167847196,
+      "text": "centre need not be unique for an even count.",
+      "chapter": 3
+    },
+    {
+      "start": 256.1200006103567,
+      "end": 258.8200013732962,
+      "text": "Frequency tables weight each absolute deviation by its frequency.",
+      "chapter": 3
+    },
+    {
+      "start": 259.69999862671415,
+      "end": 263.7399995422415,
+      "text": "Grouped tables use class marks, producing an estimate of the corresponding raw",
+      "chapter": 3
+    },
+    {
+      "start": 263.7399995422415,
+      "end": 264.3200013732962,
+      "text": "data spread.",
+      "chapter": 3
+    },
+    {
+      "start": 265.1799981689505,
+      "end": 268.7199990844778,
+      "text": "Mean deviation has the same units as the observations and is always",
+      "chapter": 3
+    },
+    {
+      "start": 268.7199990844778,
+      "end": 270.19999862671415,
+      "text": "nonnegative.",
+      "chapter": 3
+    },
+    {
+      "start": 270.19999862671415,
+      "end": 274.35999847412626,
+      "text": "Check that a zero result means all represented observations equal the chosen",
+      "chapter": 3
+    },
+    {
+      "start": 274.35999847412626,
+      "end": 274.96800000000684,
+      "text": "centre.",
+      "chapter": 3
+    },
+    {
+      "start": 274.96800000000684,
+      "end": 279.2280002288887,
+      "text": "Variance measures spread through squared deviations from the arithmetic mean.",
+      "chapter": 4
+    },
+    {
+      "start": 280.00799996185987,
+      "end": 283.667999809272,
+      "text": "For the descriptive distribution formulas in this class, add the squared",
+      "chapter": 4
+    },
+    {
+      "start": 283.667999809272,
+      "end": 287.3279996566841,
+      "text": "deviations and divide by the total number N of observations.",
+      "chapter": 4
+    },
+    {
+      "start": 288.5879998855659,
+      "end": 291.34799916077344,
+      "text": "Standard deviation is the nonnegative square root of that variance.",
+      "chapter": 4
+    },
+    {
+      "start": 292.1680007629463,
+      "end": 295.18799931336133,
+      "text": "For data two, four and six, the mean is four.",
+      "chapter": 4
+    },
+    {
+      "start": 295.9279990844795,
+      "end": 300.6680007629463,
+      "text": "Squared deviations are four, zero and four, giving variance eight thirds and",
+      "chapter": 4
+    },
+    {
+      "start": 300.6680007629463,
+      "end": 302.6079993896553,
+      "text": "standard deviation square root of eight thirds.",
+      "chapter": 4
+    },
+    {
+      "start": 303.207999771125,
+      "end": 307.3480010681221,
+      "text": "Do not confuse standard deviation with variance or mean deviation: they use",
+      "chapter": 4
+    },
+    {
+      "start": 307.3480010681221,
+      "end": 308.30800015259473,
+      "text": "different operations.",
+      "chapter": 4
+    },
+    {
+      "start": 309.44799954224317,
+      "end": 312.8777435780129,
+      "text": "Variance has squared data units, while standard deviation has the same units",
+      "chapter": 4
+    },
+    {
+      "start": 312.8777435780129,
+      "end": 312.96800000000684,
+      "text": "as",
+      "chapter": 4
+    },
+    {
+      "start": 312.96800000000684,
+      "end": 313.52800137329785,
+      "text": "the observations.",
+      "chapter": 4
+    },
+    {
+      "start": 314.4279990844795,
+      "end": 318.3029992207187,
+      "text": "Both are nonnegative, and zero variance means every observation is equal to",
+      "chapter": 4
+    },
+    {
+      "start": 318.3029992207187,
+      "end": 318.7679992370674,
+      "text": "the mean.",
+      "chapter": 4
+    },
+    {
+      "start": 319.56799847412793,
+      "end": 323.88799816895215,
+      "text": "Some statistical inference problems instead use divisor N minus one for an",
+      "chapter": 4
+    },
+    {
+      "start": 323.88799816895215,
+      "end": 325.3480010681221,
+      "text": "unbiased sample variance estimator.",
+      "chapter": 4
+    },
+    {
+      "start": 325.9079986267158,
+      "end": 329.80800015259473,
+      "text": "That is a different specified convention; do not substitute it into the",
+      "chapter": 4
+    },
+    {
+      "start": 329.80800015259473,
+      "end": 332.3280006103584,
+      "text": "descriptive JEE distribution calculations here.",
+      "chapter": 4
+    },
+    {
+      "start": 332.9880004577705,
+      "end": 335.52800137329785,
+      "text": "Always identify which definition the problem requests.",
+      "chapter": 4
+    },
+    {
+      "start": 336.5879989318916,
+      "end": 339.8280006103584,
+      "text": "Carry exact fractions through the variance calculation before rounding the",
+      "chapter": 4
+    },
+    {
+      "start": 339.8280006103584,
+      "end": 344.06799847412793,
+      "text": "square root, since premature rounding can distort comparisons or produce an",
+      "chapter": 4
+    },
+    {
+      "start": 344.06799847412793,
+      "end": 346.08800274658887,
+      "text": "apparent negative result from a shortcut formula.",
+      "chapter": 4
+    },
+    {
+      "start": 346.41600000000864,
+      "end": 350.7560001525965,
+      "text": "Expanding the squared deviation formula gives a useful shortcut: variance",
+      "chapter": 5
+    },
+    {
+      "start": 350.7560001525965,
+      "end": 354.0406154002741,
+      "text": "equals the weighted mean of the squared values minus the square of the",
+      "chapter": 5
+    },
+    {
+      "start": 354.0406154002741,
+      "end": 354.41600000000864,
+      "text": "weighted",
+      "chapter": 5
+    },
+    {
+      "start": 354.41600000000864,
+      "end": 354.7160001907435,
+      "text": "mean.",
+      "chapter": 5
+    },
+    {
+      "start": 355.8159996185389,
+      "end": 361.1621538681704,
+      "text": "For values one, two and three with frequencies one, two and one, N is four,",
+      "chapter": 5
+    },
+    {
+      "start": 361.1621538681704,
+      "end": 361.3760000381556,
+      "text": "the",
+      "chapter": 5
+    },
+    {
+      "start": 361.3760000381556,
+      "end": 365.55035955537534,
+      "text": "mean is two and the weighted second moment is eighteen divided by four, or",
+      "chapter": 5
+    },
+    {
+      "start": 365.55035955537534,
+      "end": 365.7760006103602,
+      "text": "nine",
+      "chapter": 5
+    },
+    {
+      "start": 365.7760006103602,
+      "end": 366.0960003051844,
+      "text": "halves.",
+      "chapter": 5
+    },
+    {
+      "start": 366.6559997711268,
+      "end": 368.57599984742075,
+      "text": "The variance is therefore one half.",
+      "chapter": 5
+    },
+    {
+      "start": 369.8759990844813,
+      "end": 373.2560001525965,
+      "text": "Squaring the weighted mean is different from averaging squared values, so keep",
+      "chapter": 5
+    },
+    {
+      "start": 373.2560001525965,
+      "end": 374.1760002288905,
+      "text": "both parts visible.",
+      "chapter": 5
+    },
+    {
+      "start": 375.23599969483286,
+      "end": 379.17599832154184,
+      "text": "For grouped classes with marks five, fifteen and twenty five and frequencies",
+      "chapter": 5
+    },
+    {
+      "start": 379.17599832154184,
+      "end": 383.41600000000864,
+      "text": "two, five and three, the estimated mean is sixteen.",
+      "chapter": 5
+    },
+    {
+      "start": 383.41600000000864,
+      "end": 386.8760009918299,
+      "text": "The weighted second moment is three hundred and five, giving variance three",
+      "chapter": 5
+    },
+    {
+      "start": 386.8760009918299,
+      "end": 390.89599954224497,
+      "text": "hundred and five minus two hundred and fifty six, or forty nine, and standard",
+      "chapter": 5
+    },
+    {
+      "start": 390.89599954224497,
+      "end": 392.01599847412973,
+      "text": "deviation seven.",
+      "chapter": 5
+    },
+    {
+      "start": 392.63600122071176,
+      "end": 395.8559986267176,
+      "text": "These grouped results are based on representing observations by their class",
+      "chapter": 5
+    },
+    {
+      "start": 395.8559986267176,
+      "end": 396.1160007629481,
+      "text": "marks.",
+      "chapter": 5
+    },
+    {
+      "start": 396.7560001525965,
+      "end": 400.3606141169708,
+      "text": "They are not exact raw data variances without further within class",
+      "chapter": 5
+    },
+    {
+      "start": 400.3606141169708,
+      "end": 401.01599847412973,
+      "text": "information.",
+      "chapter": 5
+    },
+    {
+      "start": 402.0960003051844,
+      "end": 405.47600137329965,
+      "text": "Directly summing weighted squared deviations provides an independent check on",
+      "chapter": 5
+    },
+    {
+      "start": 405.47600137329965,
+      "end": 405.91600000000864,
+      "text": "the shortcut.",
+      "chapter": 5
+    },
+    {
+      "start": 406.79600106812387,
+      "end": 411.18061273585477,
+      "text": "Use nonnegative frequencies, a positive total and enough numerical precision",
+      "chapter": 5
+    },
+    {
+      "start": 411.18061273585477,
+      "end": 411.2959972534266,
+      "text": "to",
+      "chapter": 5
+    },
+    {
+      "start": 411.2959972534266,
+      "end": 415.13600122071176,
+      "text": "avoid cancellation errors when the mean is large relative to the spread.",
+      "chapter": 5
+    },
+    {
+      "start": 415.36800000001034,
+      "end": 420.7680000953778,
+      "text": "An affine transformation changes every observation by the same rule Y equal to",
+      "chapter": 6
+    },
+    {
+      "start": 420.7680000953778,
+      "end": 422.4479999237164,
+      "text": "a X plus b.",
+      "chapter": 6
+    },
+    {
+      "start": 423.24800011445126,
+      "end": 426.42800041962704,
+      "text": "The new mean is a times the old mean plus b.",
+      "chapter": 6
+    },
+    {
+      "start": 427.42800041962704,
+      "end": 431.30799958039364,
+      "text": "Subtracting that new mean from each transformed value leaves a times the",
+      "chapter": 6
+    },
+    {
+      "start": 431.30799958039364,
+      "end": 434.6679992370709,
+      "text": "original deviation, so variance is multiplied by a squared.",
+      "chapter": 6
+    },
+    {
+      "start": 435.80800053406796,
+      "end": 440.68799969483456,
+      "text": "Standard deviation is multiplied by absolute a, and mean deviation about the",
+      "chapter": 6
+    },
+    {
+      "start": 440.68799969483456,
+      "end": 444.5480003051861,
+      "text": "correspondingly transformed centre is also multiplied by absolute a.",
+      "chapter": 6
+    },
+    {
+      "start": 445.64800068665585,
+      "end": 448.52799984742245,
+      "text": "Adding a constant alone changes location but not spread.",
+      "chapter": 6
+    },
+    {
+      "start": 449.7480010681256,
+      "end": 454.52799984742245,
+      "text": "For X values two, four and six, the mean is four and variance is eight thirds.",
+      "chapter": 6
+    },
+    {
+      "start": 455.26800152588925,
+      "end": 459.64748624049514,
+      "text": "Transforming by negative two X plus five gives one, negative three and",
+      "chapter": 6
+    },
+    {
+      "start": 459.64748624049514,
+      "end": 460.1479987793072,
+      "text": "negative",
+      "chapter": 6
+    },
+    {
+      "start": 460.1479987793072,
+      "end": 460.58800122071347,
+      "text": "seven.",
+      "chapter": 6
+    },
+    {
+      "start": 461.12799832154354,
+      "end": 465.7280006103619,
+      "text": "Their mean is negative three, variance is thirty two thirds and standard",
+      "chapter": 6
+    },
+    {
+      "start": 465.7280006103619,
+      "end": 468.26800152588925,
+      "text": "deviation is twice square root of eight thirds.",
+      "chapter": 6
+    },
+    {
+      "start": 469.26800152588925,
+      "end": 473.1679992370709,
+      "text": "The negative multiplier reverses ordering but cannot make a spread negative.",
+      "chapter": 6
+    },
+    {
+      "start": 473.7480010681256,
+      "end": 478.0680007629498,
+      "text": "If a is zero, every transformed observation equals b and the dispersion is",
+      "chapter": 6
+    },
+    {
+      "start": 478.0680007629498,
+      "end": 478.388000457774,
+      "text": "zero.",
+      "chapter": 6
+    },
+    {
+      "start": 479.20800015259823,
+      "end": 482.327999084483,
+      "text": "A direct calculation on the transformed data checks the formulas.",
+      "chapter": 6
+    },
+    {
+      "start": 483.26800152588925,
+      "end": 486.58800122071347,
+      "text": "Apply the transformation to each original observation or class mark",
+      "chapter": 6
+    },
+    {
+      "start": 486.58800122071347,
+      "end": 491.08800122071347,
+      "text": "consistently; transforming frequencies themselves is not the same operation.",
+      "chapter": 6
+    },
+    {
+      "start": 491.3760000000123,
+      "end": 495.63600022889415,
+      "text": "Probability starts with a random experiment and a sample space containing its",
+      "chapter": 7
+    },
+    {
+      "start": 495.63600022889415,
+      "end": 497.15600020982066,
+      "text": "possible elementary outcomes.",
+      "chapter": 7
+    },
+    {
+      "start": 497.77600009537974,
+      "end": 500.29600007630626,
+      "text": "An event is a subset of that sample space.",
+      "chapter": 7
+    },
+    {
+      "start": 501.0359998474244,
+      "end": 506.03266643779716,
+      "text": "For two fair independent coin tosses recorded in order, the sample space is H",
+      "chapter": 7
+    },
+    {
+      "start": 506.03266643779716,
+      "end": 509.01599938966075,
+      "text": "H, H T, T H and T T.",
+      "chapter": 7
+    },
+    {
+      "start": 509.01599938966075,
+      "end": 510.5959993133668,
+      "text": "Each has probability one quarter.",
+      "chapter": 7
+    },
+    {
+      "start": 511.41600091553966,
+      "end": 516.476000381482,
+      "text": "Exactly one head corresponds to H T and T H, so its probability is one half.",
+      "chapter": 7
+    },
+    {
+      "start": 516.476000381482,
+      "end": 520.976000381482,
+      "text": "Writing only zero heads, one head and two heads as equally likely outcomes",
+      "chapter": 7
+    },
+    {
+      "start": 520.976000381482,
+      "end": 525.2560010681275,
+      "text": "would be wrong, because the middle count represents two elementary outcomes.",
+      "chapter": 7
+    },
+    {
+      "start": 525.995998931897,
+      "end": 530.2760015258912,
+      "text": "A favourable count divided by a total count is valid for a finite sample space",
+      "chapter": 7
+    },
+    {
+      "start": 530.2760015258912,
+      "end": 533.1359983215455,
+      "text": "only when those counted outcomes are equally likely.",
+      "chapter": 7
+    },
+    {
+      "start": 534.0960012207154,
+      "end": 537.7583083730967,
+      "text": "Fairness, independence, replacement and whether order is recorded are",
+      "chapter": 7
+    },
+    {
+      "start": 537.7583083730967,
+      "end": 538.2360006103638,
+      "text": "modelling",
+      "chapter": 7
+    },
+    {
+      "start": 538.2360006103638,
+      "end": 539.6359983215455,
+      "text": "assumptions that must be stated.",
+      "chapter": 7
+    },
+    {
+      "start": 540.1759992370728,
+      "end": 544.4360013733033,
+      "text": "If outcomes have unequal probabilities, add their assigned probability weights",
+      "chapter": 7
+    },
+    {
+      "start": 544.4360013733033,
+      "end": 546.2360006103638,
+      "text": "instead of using an unweighted ratio.",
+      "chapter": 7
+    },
+    {
+      "start": 547.0359998474244,
+      "end": 550.4360013733033,
+      "text": "Two physically different outcomes can produce the same later numerical",
+      "chapter": 7
+    },
+    {
+      "start": 550.4360013733033,
+      "end": 554.2760015258912,
+      "text": "statistic without becoming one equally likely elementary outcome.",
+      "chapter": 7
+    },
+    {
+      "start": 555.116001678479,
+      "end": 559.556000305188,
+      "text": "Before using a counting formula, identify exactly what is being counted and",
+      "chapter": 7
+    },
+    {
+      "start": 559.556000305188,
+      "end": 562.5360036621216,
+      "text": "whether each counted object has the same chance under the experiment.",
+      "chapter": 7
+    },
+    {
+      "start": 564.5760000000142,
+      "end": 568.765743775602,
+      "text": "A probability assigns a nonnegative weight to events, with total probability",
+      "chapter": 8
+    },
+    {
+      "start": 568.765743775602,
+      "end": 568.8760001907491,
+      "text": "of",
+      "chapter": 8
+    },
+    {
+      "start": 568.8760001907491,
+      "end": 570.3560002098226,
+      "text": "the sample space equal to one.",
+      "chapter": 8
+    },
+    {
+      "start": 571.0959999809407,
+      "end": 574.9785640671212,
+      "text": "Disjoint event probabilities add, and these facts imply every event",
+      "chapter": 8
+    },
+    {
+      "start": 574.9785640671212,
+      "end": 575.6159999618673,
+      "text": "probability",
+      "chapter": 8
+    },
+    {
+      "start": 575.6159999618673,
+      "end": 577.3159997711324,
+      "text": "lies between zero and one.",
+      "chapter": 8
+    },
+    {
+      "start": 577.8159997711324,
+      "end": 581.2159993896627,
+      "text": "The impossible event, the empty set, has probability zero.",
+      "chapter": 8
+    },
+    {
+      "start": 581.9960000763082,
+      "end": 586.0559995422506,
+      "text": "The complement of A contains all outcomes in the sample space that are not in",
+      "chapter": 8
+    },
+    {
+      "start": 586.0559995422506,
+      "end": 586.2359998474263,
+      "text": "A.",
+      "chapter": 8
+    },
+    {
+      "start": 586.6559999237203,
+      "end": 590.3959996948385,
+      "text": "Since A and its complement are disjoint and together exhaustive, their",
+      "chapter": 8
+    },
+    {
+      "start": 590.3959996948385,
+      "end": 591.6559999237203,
+      "text": "probabilities add to one.",
+      "chapter": 8
+    },
+    {
+      "start": 592.0760000000142,
+      "end": 596.3959996948385,
+      "text": "If P of A is three tenths, its complement has probability seven tenths.",
+      "chapter": 8
+    },
+    {
+      "start": 597.2960012207174,
+      "end": 601.0960004577779,
+      "text": "The complement is relative to the chosen sample space, so that space must",
+      "chapter": 8
+    },
+    {
+      "start": 601.0960004577779,
+      "end": 602.8559987793111,
+      "text": "remain fixed while using the formula.",
+      "chapter": 8
+    },
+    {
+      "start": 603.5559995422506,
+      "end": 607.3959996948385,
+      "text": "At least one success is often easier to calculate as one minus the probability",
+      "chapter": 8
+    },
+    {
+      "start": 607.3959996948385,
+      "end": 611.7960012207174,
+      "text": "of no successes, provided the no success event has been modelled correctly.",
+      "chapter": 8
+    },
+    {
+      "start": 612.5960004577779,
+      "end": 616.8959996948385,
+      "text": "A probability of zero need not imply logical impossibility in every infinite",
+      "chapter": 8
+    },
+    {
+      "start": 616.8959996948385,
+      "end": 621.25600030519,
+      "text": "model, although the finite positive equally likely examples here have that",
+      "chapter": 8
+    },
+    {
+      "start": 621.25600030519,
+      "end": 622.1759984741353,
+      "text": "simpler interpretation.",
+      "chapter": 8
+    },
+    {
+      "start": 623.0559995422506,
+      "end": 626.2359998474263,
+      "text": "Do not use a negative probability to compensate for a counting mistake.",
+      "chapter": 8
+    },
+    {
+      "start": 626.9560010681295,
+      "end": 630.8360021362447,
+      "text": "Check the final range and whether the event and its complement together cover",
+      "chapter": 8
+    },
+    {
+      "start": 630.8360021362447,
+      "end": 631.635997558608,
+      "text": "the whole experiment.",
+      "chapter": 8
+    },
+    {
+      "start": 632.5920000000159,
+      "end": 637.211999885575,
+      "text": "The addition law calculates the probability that A or B or both occurs.",
+      "chapter": 9
+    },
+    {
+      "start": 638.0520000381629,
+      "end": 642.0920000000159,
+      "text": "Adding P of A and P of B counts their intersection twice, so subtract its",
+      "chapter": 9
+    },
+    {
+      "start": 642.0920000000159,
+      "end": 642.9519996566931,
+      "text": "probability once.",
+      "chapter": 9
+    },
+    {
+      "start": 643.5120000763098,
+      "end": 648.4519996566931,
+      "text": "On a fair die, let A be the even outcomes two, four and six, and B be outcomes",
+      "chapter": 9
+    },
+    {
+      "start": 648.4519996566931,
+      "end": 651.3520002288977,
+      "text": "greater than three, namely four, five and six.",
+      "chapter": 9
+    },
+    {
+      "start": 651.4520006103675,
+      "end": 653.1519994659583,
+      "text": "Each event has probability one half.",
+      "chapter": 9
+    },
+    {
+      "start": 653.8720006866614,
+      "end": 656.9520006103675,
+      "text": "Their intersection is four and six with probability one third.",
+      "chapter": 9
+    },
+    {
+      "start": 657.4919996185462,
+      "end": 661.8319997711341,
+      "text": "Their union contains two, four, five and six, giving probability two thirds,",
+      "chapter": 9
+    },
+    {
+      "start": 661.8319997711341,
+      "end": 664.7720003051917,
+      "text": "also one half plus one half minus one third.",
+      "chapter": 9
+    },
+    {
+      "start": 665.9119996948401,
+      "end": 669.3519983215491,
+      "text": "Mutually exclusive events have empty intersection, so their probabilities add",
+      "chapter": 9
+    },
+    {
+      "start": 669.3519983215491,
+      "end": 669.751999847428,
+      "text": "directly.",
+      "chapter": 9
+    },
+    {
+      "start": 670.5119981689612,
+      "end": 673.7812304053832,
+      "text": "Exclusivity is a condition to check, not an assumption attached to the word",
+      "chapter": 9
+    },
+    {
+      "start": 673.7812304053832,
+      "end": 673.9119996948401,
+      "text": "or.",
+      "chapter": 9
+    },
+    {
+      "start": 674.6520013733069,
+      "end": 679.0519990844886,
+      "text": "The probability of exactly one of A and B equals their union probability minus",
+      "chapter": 9
+    },
+    {
+      "start": 679.0519990844886,
+      "end": 680.2920007629554,
+      "text": "their intersection probability.",
+      "chapter": 9
+    },
+    {
+      "start": 680.9720010681311,
+      "end": 682.7319993896643,
+      "text": "In this die example it is one third.",
+      "chapter": 9
+    },
+    {
+      "start": 683.4520006103675,
+      "end": 687.2720003051917,
+      "text": "A set list or Venn diagram helps verify the overlap and whether",
+      "chapter": 9
+    },
+    {
+      "start": 687.2720003051917,
+      "end": 692.072000813818,
+      "text": "the event wording includes both.",
+      "chapter": 9
+    },
+    {
+      "start": 692.072000813818,
+      "end": 693.3519983215491,
+      "text": "For three events, additional intersection corrections are needed; applying the",
+      "chapter": 9
+    },
+    {
+      "start": 693.3519983215491,
+      "end": 697.1720018310706,
+      "text": "two event formula repeatedly is valid when each intermediate event and overlap",
+      "chapter": 9
+    },
+    {
+      "start": 697.1720018310706,
+      "end": 698.1519975586097,
+      "text": "is handled consistently.",
+      "chapter": 9
+    },
+    {
+      "start": 698.4960000000175,
+      "end": 702.436000057238,
+      "text": "Conditional probability restricts attention to outcomes in an event already",
+      "chapter": 10
+    },
+    {
+      "start": 702.436000057238,
+      "end": 703.3160001716789,
+      "text": "known to occur.",
+      "chapter": 10
+    },
+    {
+      "start": 704.476000019091,
+      "end": 709.1760003051933,
+      "text": "P of B given A is the probability of their intersection divided by P of A,",
+      "chapter": 10
+    },
+    {
+      "start": 709.8360001526054,
+      "end": 711.6760003051933,
+      "text": "provided that denominator is positive.",
+      "chapter": 10
+    },
+    {
+      "start": 712.8959996185478,
+      "end": 718.4360005340751,
+      "text": "Rearranging gives the multiplication law P of A and B equal to P of A times P",
+      "chapter": 10
+    },
+    {
+      "start": 718.4360005340751,
+      "end": 719.3959996185478,
+      "text": "of B given A.",
+      "chapter": 10
+    },
+    {
+      "start": 719.856000610369,
+      "end": 722.8360001526054,
+      "text": "A bag contains three red balls and two blue balls.",
+      "chapter": 10
+    },
+    {
+      "start": 723.4460007629569,
+      "end": 725.6960007629569,
+      "text": "Draw twice uniformly without replacement.",
+      "chapter": 10
+    },
+    {
+      "start": 726.5960003814872,
+      "end": 728.9559990844901,
+      "text": "The first red probability is three fifths.",
+      "chapter": 10
+    },
+    {
+      "start": 729.8360001526054,
+      "end": 734.3760010681327,
+      "text": "After a red first draw, two red balls remain among four balls, so the",
+      "chapter": 10
+    },
+    {
+      "start": 734.3760010681327,
+      "end": 736.9960000000175,
+      "text": "conditional probability of another red is one half.",
+      "chapter": 10
+    },
+    {
+      "start": 738.1260010681327,
+      "end": 740.9960000000175,
+      "text": "Multiplication gives probability three tenths for two reds.",
+      "chapter": 10
+    },
+    {
+      "start": 741.7360016784843,
+      "end": 745.8360001526054,
+      "text": "With replacement and a fresh uniform draw, the second red probability remains",
+      "chapter": 10
+    },
+    {
+      "start": 745.8360001526054,
+      "end": 749.356000610369,
+      "text": "three fifths and both red has probability nine twenty fifths.",
+      "chapter": 10
+    },
+    {
+      "start": 750.0560013733085,
+      "end": 751.4559990844901,
+      "text": "These are different experiments.",
+      "chapter": 10
+    },
+    {
+      "start": 751.4559990844901,
+      "end": 755.9913842163261,
+      "text": "Do not replace a conditional factor by an unconditional one unless",
+      "chapter": 10
+    },
+    {
+      "start": 755.9913842163261,
+      "end": 756.8159996948417,
+      "text": "independence",
+      "chapter": 10
+    },
+    {
+      "start": 756.8159996948417,
+      "end": 757.7160012207206,
+      "text": "has been established.",
+      "chapter": 10
+    },
+    {
+      "start": 758.6960007629569,
+      "end": 762.6760003051933,
+      "text": "Conditioning on an event of probability zero is not defined by this elementary",
+      "chapter": 10
+    },
+    {
+      "start": 762.6760003051933,
+      "end": 763.4559990844901,
+      "text": "ratio formula.",
+      "chapter": 10
+    },
+    {
+      "start": 764.256002136248,
+      "end": 768.3960015258964,
+      "text": "The order of the conditioning statement matters: P of B given A and P of A",
+      "chapter": 10
+    },
+    {
+      "start": 768.3960015258964,
+      "end": 770.6160027465995,
+      "text": "given B are generally different quantities.",
+      "chapter": 10
+    },
+    {
+      "start": 770.8560000000193,
+      "end": 774.8360000190928,
+      "text": "Events are independent when their intersection probability equals the product",
+      "chapter": 11
+    },
+    {
+      "start": 774.8360000190928,
+      "end": 776.1160002289012,
+      "text": "of their separate probabilities.",
+      "chapter": 11
+    },
+    {
+      "start": 776.9159999427989,
+      "end": 780.7959995804026,
+      "text": "If the conditioning event has positive probability, this also means learning",
+      "chapter": 11
+    },
+    {
+      "start": 780.7959995804026,
+      "end": 783.3560000000193,
+      "text": "that event does not change the probability of the other.",
+      "chapter": 11
+    },
+    {
+      "start": 783.9960003433421,
+      "end": 788.5118970916159,
+      "text": "For two fair independent tosses, A being a head on the first and B being a",
+      "chapter": 11
+    },
+    {
+      "start": 788.5118970916159,
+      "end": 788.7559996185496,
+      "text": "head",
+      "chapter": 11
+    },
+    {
+      "start": 788.7559996185496,
+      "end": 793.876000457783,
+      "text": "on the second each has probability one half, while their intersection H H has",
+      "chapter": 11
+    },
+    {
+      "start": 793.876000457783,
+      "end": 794.9760008392527,
+      "text": "probability one quarter.",
+      "chapter": 11
+    },
+    {
+      "start": 795.5159998474314,
+      "end": 797.956000381489,
+      "text": "Thus these events are independent and can occur together.",
+      "chapter": 11
+    },
+    {
+      "start": 798.8359995422556,
+      "end": 802.0159998474314,
+      "text": "Mutually exclusive events instead cannot occur together.",
+      "chapter": 11
+    },
+    {
+      "start": 802.7760000763133,
+      "end": 807.1359987793162,
+      "text": "If both have positive probability, their intersection probability zero differs",
+      "chapter": 11
+    },
+    {
+      "start": 807.1359987793162,
+      "end": 809.7959986267283,
+      "text": "from the positive product, so they are not independent.",
+      "chapter": 11
+    },
+    {
+      "start": 810.6359987793162,
+      "end": 814.0560007629588,
+      "text": "A zero probability event is a degenerate exception in the algebraic",
+      "chapter": 11
+    },
+    {
+      "start": 814.0560007629588,
+      "end": 814.8560000000193,
+      "text": "independence test.",
+      "chapter": 11
+    },
+    {
+      "start": 815.4559984741404,
+      "end": 819.2759981689646,
+      "text": "Replacement can help produce independent draws in a specified model, but",
+      "chapter": 11
+    },
+    {
+      "start": 819.2759981689646,
+      "end": 823.2160006103709,
+      "text": "independence should not be inferred solely from a visual separation of two",
+      "chapter": 11
+    },
+    {
+      "start": 823.2160006103709,
+      "end": 825.6759996948435,
+      "text": "events or from the fact that they have equal probabilities.",
+      "chapter": 11
+    },
+    {
+      "start": 826.2759981689646,
+      "end": 830.2160006103709,
+      "text": "For three or more events, pairwise independence does not automatically imply",
+      "chapter": 11
+    },
+    {
+      "start": 830.2160006103709,
+      "end": 831.1559992370799,
+      "text": "mutual independence.",
+      "chapter": 11
+    },
+    {
+      "start": 832.1759996948435,
+      "end": 835.9760027466014,
+      "text": "In any multiplication calculation, identify which independence assumption is",
+      "chapter": 11
+    },
+    {
+      "start": 835.9760027466014,
+      "end": 839.9959993896678,
+      "text": "being used and check it against the experiment rather than substituting a",
+      "chapter": 11
+    },
+    {
+      "start": 839.9959993896678,
+      "end": 840.6560030517771,
+      "text": "product by habit.",
+      "chapter": 11
+    },
+    {
+      "start": 841.2720000000211,
+      "end": 845.2120000572415,
+      "text": "The law of total probability breaks an event into mutually exclusive source",
+      "chapter": 12
+    },
+    {
+      "start": 845.2120000572415,
+      "end": 845.5520002098294,
+      "text": "paths.",
+      "chapter": 12
+    },
+    {
+      "start": 846.4519998283597,
+      "end": 849.9920002670499,
+      "text": "Suppose the source events form a partition of the sample space: exactly one",
+      "chapter": 12
+    },
+    {
+      "start": 849.9920002670499,
+      "end": 852.4520003051969,
+      "text": "occurs and together they include all outcomes.",
+      "chapter": 12
+    },
+    {
+      "start": 853.112000152609,
+      "end": 857.4720007629605,
+      "text": "Then multiply each source probability by the conditional target probability in",
+      "chapter": 12
+    },
+    {
+      "start": 857.4720007629605,
+      "end": 859.5320002289029,
+      "text": "that source and add the contributions.",
+      "chapter": 12
+    },
+    {
+      "start": 860.4319998474332,
+      "end": 864.4520003051969,
+      "text": "Choose box one with probability two fifths and box two with probability three",
+      "chapter": 12
+    },
+    {
+      "start": 864.4520003051969,
+      "end": 865.0919996948453,
+      "text": "fifths.",
+      "chapter": 12
+    },
+    {
+      "start": 865.2519995422574,
+      "end": 869.692000076315,
+      "text": "A uniform ball drawn from box one is red with probability three quarters, and",
+      "chapter": 12
+    },
+    {
+      "start": 869.692000076315,
+      "end": 872.0719992370816,
+      "text": "one from box two is red with probability one quarter.",
+      "chapter": 12
+    },
+    {
+      "start": 872.9119993896695,
+      "end": 876.6720015259,
+      "text": "The overall red probability is two fifths times three quarters plus three",
+      "chapter": 12
+    },
+    {
+      "start": 876.6720015259,
+      "end": 877.612000152609,
+      "text": "fifths times one quarter.",
+      "chapter": 12
+    },
+    {
+      "start": 878.0719992370816,
+      "end": 881.9520003051969,
+      "text": "The contributions are three tenths and three twentieths, totalling nine",
+      "chapter": 12
+    },
+    {
+      "start": 881.9520003051969,
+      "end": 882.7720000000211,
+      "text": "twentieths.",
+      "chapter": 12
+    },
+    {
+      "start": 883.1720015259,
+      "end": 886.6520010681363,
+      "text": "An unweighted average of three quarters and one quarter would incorrectly",
+      "chapter": 12
+    },
+    {
+      "start": 886.6520010681363,
+      "end": 888.7920004577848,
+      "text": "assume equal box selection probabilities.",
+      "chapter": 12
+    },
+    {
+      "start": 889.6320006103726,
+      "end": 893.0319983215543,
+      "text": "A probability tree makes the source weights and target likelihoods explicit.",
+      "chapter": 12
+    },
+    {
+      "start": 893.7519995422574,
+      "end": 897.2319990844937,
+      "text": "At each branching stage the alternatives must match the actual experiment.",
+      "chapter": 12
+    },
+    {
+      "start": 898.0319983215543,
+      "end": 901.7720000000211,
+      "text": "Total probability is an addition over disjoint paths, while each path",
+      "chapter": 12
+    },
+    {
+      "start": 901.7720000000211,
+      "end": 903.7119986267301,
+      "text": "probability uses the multiplication law.",
+      "chapter": 12
+    },
+    {
+      "start": 904.5719992370816,
+      "end": 908.0320021362515,
+      "text": "Check that all relevant sources are included once, and that no overlapping",
+      "chapter": 12
+    },
+    {
+      "start": 908.0320021362515,
+      "end": 909.4520003051969,
+      "text": "source event is counted twice.",
+      "chapter": 12
+    },
+    {
+      "start": 910.6320000000228,
+      "end": 915.6120000190963,
+      "text": "Bayes theorem reverses a conditional question by combining a source's prior",
+      "chapter": 13
+    },
+    {
+      "start": 915.6120000190963,
+      "end": 919.6320000000228,
+      "text": "weight with its likelihood of the observed event and dividing by the total",
+      "chapter": 13
+    },
+    {
+      "start": 919.6320000000228,
+      "end": 920.7519998855819,
+      "text": "probability of that event.",
+      "chapter": 13
+    },
+    {
+      "start": 921.4320001907577,
+      "end": 925.8120003051986,
+      "text": "In the preceding box model, the probability of selecting box one and then",
+      "chapter": 13
+    },
+    {
+      "start": 925.8120003051986,
+      "end": 927.4920006103744,
+      "text": "drawing red is three tenths.",
+      "chapter": 13
+    },
+    {
+      "start": 928.0319996185531,
+      "end": 931.7119999237289,
+      "text": "The total probability of red from either box is nine twentieths.",
+      "chapter": 13
+    },
+    {
+      "start": 932.4920006103744,
+      "end": 936.7320003814925,
+      "text": "Given that the drawn ball is red, the probability that box one was selected is",
+      "chapter": 13
+    },
+    {
+      "start": 936.7320003814925,
+      "end": 939.7719993896712,
+      "text": "three tenths divided by nine twentieths, or two thirds.",
+      "chapter": 13
+    },
+    {
+      "start": 940.3920002289046,
+      "end": 944.4720001526107,
+      "text": "This posterior differs from the original box one selection probability two",
+      "chapter": 13
+    },
+    {
+      "start": 944.4720001526107,
+      "end": 944.7319984741439,
+      "text": "fifths.",
+      "chapter": 13
+    },
+    {
+      "start": 945.8520012207259,
+      "end": 949.5719986267318,
+      "text": "The observation favours the box in which red is more likely, but the prior",
+      "chapter": 13
+    },
+    {
+      "start": 949.5719986267318,
+      "end": 950.451999694847,
+      "text": "weights still matter.",
+      "chapter": 13
+    },
+    {
+      "start": 951.1320000000228,
+      "end": 954.5320015259017,
+      "text": "Do not simply reverse P of red given box one, which was three quarters.",
+      "chapter": 13
+    },
+    {
+      "start": 955.1520004577865,
+      "end": 959.3520012207259,
+      "text": "The denominator must include all disjoint exhaustive source paths and must be",
+      "chapter": 13
+    },
+    {
+      "start": 959.3520012207259,
+      "end": 959.7120018310775,
+      "text": "positive.",
+      "chapter": 13
+    },
+    {
+      "start": 960.2519989319076,
+      "end": 964.8320007629623,
+      "text": "The corresponding posterior for box two is one third, so the posterior source",
+      "chapter": 13
+    },
+    {
+      "start": 964.8320007629623,
+      "end": 966.0519981689681,
+      "text": "probabilities sum to one.",
+      "chapter": 13
+    },
+    {
+      "start": 966.4319992370833,
+      "end": 969.8720016784896,
+      "text": "A tree or contingency table can verify the same ratios.",
+      "chapter": 13
+    },
+    {
+      "start": 970.8320007629623,
+      "end": 974.0320015259017,
+      "text": "State precisely what information has been observed before deciding which",
+      "chapter": 13
+    },
+    {
+      "start": 974.0320015259017,
+      "end": 975.8920021362533,
+      "text": "probability is the conditioning denominator.",
+      "chapter": 13
+    },
+    {
+      "start": 977.0400000000244,
+      "end": 980.6648716146763,
+      "text": "A random variable assigns a real number to each outcome of a random",
+      "chapter": 14
+    },
+    {
+      "start": 980.6648716146763,
+      "end": 981.259999790216,
+      "text": "experiment.",
+      "chapter": 14
+    },
+    {
+      "start": 982.0000000381714,
+      "end": 985.6999998474365,
+      "text": "It is a function of the outcome, rather than a new equally likely elementary",
+      "chapter": 14
+    },
+    {
+      "start": 985.6999998474365,
+      "end": 986.3400001907593,
+      "text": "outcome list.",
+      "chapter": 14
+    },
+    {
+      "start": 986.9600000763184,
+      "end": 990.1999998474365,
+      "text": "Let X be the number of heads in two fair independent tosses.",
+      "chapter": 14
+    },
+    {
+      "start": 990.1999998474365,
+      "end": 996.1400003814941,
+      "text": "T T maps to zero, H T and T H map to one, and H H maps to two.",
+      "chapter": 14
+    },
+    {
+      "start": 996.8800001526123,
+      "end": 1000.8599996948486,
+      "text": "The probability distribution therefore gives probabilities one quarter, one",
+      "chapter": 14
+    },
+    {
+      "start": 1000.8599996948486,
+      "end": 1003.9399996185547,
+      "text": "half and one quarter to values zero, one and two.",
+      "chapter": 14
+    },
+    {
+      "start": 1004.3599996948486,
+      "end": 1008.3200006866699,
+      "text": "The middle value has greater probability because two elementary outcomes",
+      "chapter": 14
+    },
+    {
+      "start": 1008.3200006866699,
+      "end": 1008.9600000763184,
+      "text": "produce it.",
+      "chapter": 14
+    },
+    {
+      "start": 1009.6599989319092,
+      "end": 1013.3800001526123,
+      "text": "A discrete probability mass function must assign nonnegative probabilities",
+      "chapter": 14
+    },
+    {
+      "start": 1013.3800001526123,
+      "end": 1015.9999990844971,
+      "text": "whose total over all possible values is one.",
+      "chapter": 14
+    },
+    {
+      "start": 1016.9400015259033,
+      "end": 1020.2200003052002,
+      "text": "Use these two conditions to determine or reject an unknown probability",
+      "chapter": 14
+    },
+    {
+      "start": 1020.2200003052002,
+      "end": 1020.6599989319092,
+      "text": "parameter.",
+      "chapter": 14
+    },
+    {
+      "start": 1021.3800001526123,
+      "end": 1024.5600004577882,
+      "text": "A table with correct total but a negative entry is still invalid.",
+      "chapter": 14
+    },
+    {
+      "start": 1025.4200010681398,
+      "end": 1029.900000610376,
+      "text": "For an event such as X at least one, add the masses at one and two, obtaining",
+      "chapter": 14
+    },
+    {
+      "start": 1029.900000610376,
+      "end": 1030.5600004577882,
+      "text": "three quarters.",
+      "chapter": 14
+    },
+    {
+      "start": 1031.2600012207276,
+      "end": 1035.9400015259034,
+      "text": "A distribution summarizes the numerical random variable without making H T and",
+      "chapter": 14
+    },
+    {
+      "start": 1035.9400015259034,
+      "end": 1037.679999389673,
+      "text": "T H the same underlying outcome.",
+      "chapter": 14
+    },
+    {
+      "start": 1038.6999998474366,
+      "end": 1042.4400015259034,
+      "text": "Check that every possible value is included and that a listed value is paired",
+      "chapter": 14
+    },
+    {
+      "start": 1042.4400015259034,
+      "end": 1045.9353828078295,
+      "text": "with its own probability rather than with a frequency from an unrelated",
+      "chapter": 14
+    },
+    {
+      "start": 1045.9353828078295,
+      "end": 1046.279997863794,
+      "text": "sample.",
+      "chapter": 14
+    },
+    {
+      "start": 1047.2880000000262,
+      "end": 1051.7280000572466,
+      "text": "The expectation of a finite discrete random variable is the probability",
+      "chapter": 15
+    },
+    {
+      "start": 1051.7280000572466,
+      "end": 1053.1080001716875,
+      "text": "weighted sum of its values.",
+      "chapter": 15
+    },
+    {
+      "start": 1053.9879998092913,
+      "end": 1058.2679995422625,
+      "text": "For the head count distribution zero, one and two with probabilities one",
+      "chapter": 15
+    },
+    {
+      "start": 1058.2679995422625,
+      "end": 1061.968000305202,
+      "text": "quarter, one half and one quarter, the expectation is one.",
+      "chapter": 15
+    },
+    {
+      "start": 1062.508000267055,
+      "end": 1067.8479994659685,
+      "text": "The second moment E of X squared is zero plus one half plus four quarters, or",
+      "chapter": 15
+    },
+    {
+      "start": 1067.8479994659685,
+      "end": 1068.4080008392596,
+      "text": "three halves.",
+      "chapter": 15
+    },
+    {
+      "start": 1069.2880000000262,
+      "end": 1073.1679991607928,
+      "text": "Variance equals this second moment minus the square of the expectation, giving",
+      "chapter": 15
+    },
+    {
+      "start": 1073.1679991607928,
+      "end": 1073.7479990844988,
+      "text": "one half.",
+      "chapter": 15
+    },
+    {
+      "start": 1074.3679999237322,
+      "end": 1078.0079993133807,
+      "text": "Equivalently, directly average the squared deviations from the expectation",
+      "chapter": 15
+    },
+    {
+      "start": 1078.0079993133807,
+      "end": 1079.7479990844988,
+      "text": "using the probability weights.",
+      "chapter": 15
+    },
+    {
+      "start": 1080.907998931911,
+      "end": 1084.1480006103777,
+      "text": "Standard deviation is the nonnegative square root of that variance.",
+      "chapter": 15
+    },
+    {
+      "start": 1084.968000305202,
+      "end": 1088.8480013733172,
+      "text": "Expectation need not be a value the random variable can actually take in every",
+      "chapter": 15
+    },
+    {
+      "start": 1088.8480013733172,
+      "end": 1092.468000305202,
+      "text": "example; it is a weighted average, not a guaranteed future outcome.",
+      "chapter": 15
+    },
+    {
+      "start": 1093.0879992370867,
+      "end": 1095.3480013733172,
+      "text": "A constant random variable has zero variance.",
+      "chapter": 15
+    },
+    {
+      "start": 1096.067998779323,
+      "end": 1101.6680010681414,
+      "text": "For Y equal to a X plus b, expectation changes to a E of X plus b",
+      "chapter": 15
+    },
+    {
+      "start": 1101.6680010681414,
+      "end": 1105.3615901563858,
+      "text": "and variance to a squared times the original variance, matching the",
+      "chapter": 15
+    },
+    {
+      "start": 1105.3615901563858,
+      "end": 1105.968000305202,
+      "text": "descriptive",
+      "chapter": 15
+    },
+    {
+      "start": 1105.968000305202,
+      "end": 1107.3280009155535,
+      "text": "data transformation rules.",
+      "chapter": 15
+    },
+    {
+      "start": 1108.407998931911,
+      "end": 1112.7280024414324,
+      "text": "Keep E of X squared distinct from the square of E of X, and check nonnegative",
+      "chapter": 15
+    },
+    {
+      "start": 1112.7280024414324,
+      "end": 1115.136000000028,
+      "text": "variance and total probability one before interpreting the numerical results.",
+      "chapter": 15
+    }
+  ]
+}

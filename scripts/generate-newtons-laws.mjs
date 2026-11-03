@@ -93,6 +93,7 @@ targets['differential-equations']='differential-equations';
 targets['coordinate-geometry']='coordinate-geometry';
 targets['three-dimensional-geometry']='three-dimensional-geometry';
 targets['vector-algebra']='vector-algebra';
+targets['statistics-probability']='statistics-probability';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const lesson = JSON.parse(await fs.readFile(path.join(root, `app/data/jee-${dataName}-lecture.json`), 'utf8'));
