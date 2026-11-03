@@ -1311,8 +1311,8 @@ export const lectures: Lecture[] = [
   },
   {
     id: "practical-chemistry", subject: "Chemistry", unit: 20, number: "C18", title: practicalChemistry.title,
-    description: "Forty-one narrated chapters on controlled salt-analysis evidence, cation comparisons, analytical balances and practical interpretation.",
-    scope: "Recorded Unit 20 conceptual foundation with original practice. Full ion-analysis schemes, all preparation equations, indicator curves, sol preparation and further kinetic datasets remain; not exhaustive coverage or official PYQs.",
+    description: "Fifty-one narrated chapters on prescribed preparations, functional-group and salt-analysis evidence, calorimetry, colloids and practical kinetics.",
+    scope: "Recorded Unit 20 conceptual foundation with original practice. Prescribed preparation and experiment principles are explained. Further mixed analytical datasets, interference cases and timed practice remain; not exhaustive problem coverage or official PYQs.",
     progressKey: "jee.practical-chemistry.lecture.v1",
     audio: "/lectures/practical-chemistry/narration-marin.mp3",
     subtitles: "/lectures/practical-chemistry/english.vtt", timings: practicalChemistryTimings,

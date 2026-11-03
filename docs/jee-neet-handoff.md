@@ -73,6 +73,8 @@ The fourteen Maths companions describe mixed parameters, difficult variants and 
 
 Physics application recordings must be considered alongside the older written companions. Their presence can resolve an older written-only remaining-work statement. Optional nonuniform-body integration and three-dimensional rigid-body extensions must not block the NEET transition.
 
+Update 4 November: the [focused practical review](chemistry-practical-review-neet-start.md) added ten narrated chapters and twenty questions to close the explanatory gaps listed below. The original review finding follows for context.
+
 Chemistry's practical class explicitly mentions all six named preparations, both sol types and the iodide/peroxide experiment. Mentioning a prescribed preparation does not demonstrate that its chemistry has been explained adequately. The next focused JEE review should check each prescribed preparation, ion test and experiment against the actual narration and worked evidence, especially aniline yellow and the preparation/purification steps. Do not mark a missing keyword as a confirmed teaching gap, or treat an expanded multication interference scheme as mandatory solely because it appears in a remaining-work note.
 
 Foundation recording availability is complete at unit level. A required-subheading evidence matrix across all 54 units remains unfinished. No claim that JEE is fully complete should be published until that review resolves required omissions. Further mixed practice can remain an ongoing improvement after the foundation milestone.
@@ -81,7 +83,7 @@ Foundation recording availability is complete at unit level. A required-subheadi
 
 Use the [official NEET 2026 syllabus](https://neet.nta.nic.in/document/syllabus-for-neet-ug-2026-examination/) as an explicitly dated baseline until a newer official syllabus is verified. Do not infer a 2027 NEET baseline from JEE's year update.
 
-The current NEET topic module has seven original Biology practice foundations: cell cycle/mitosis, meiosis, DNA structure, replication, inheritance, photosynthesis and enzymes. These are practice topics, not recorded NEET classes.
+The original NEET topic module had seven Biology practice foundations: cell cycle/mitosis, meiosis, DNA structure, replication, inheritance, photosynthesis and enzymes. Four cell-structure topics with 36 original questions were added on 4 November. These are practice topics, not recorded NEET classes.
 
 Start recorded Biology with Cell: The Unit of Life, then Biomolecules, then Cell Cycle and Cell Division. Build the official ten-unit Biology coverage map before expanding the remaining units. Reuse JEE Physics/Chemistry explanations only after a NEET-specific mapping; keep separate course navigation and progress identifiers. This is the next production queue, not a claim that those recordings already exist.
 
