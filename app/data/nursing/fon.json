@@ -61,7 +61,8 @@
     "options": ["0–10 degrees", "15–20 degrees", "45–60 degrees", "More than 90 degrees"],
     "answer": 2,
     "explanation": "In Fowler's position the head of the bed is raised about 45 to 60 degrees. It helps the lungs expand and makes breathing easier.",
-    "reviewNote": "Textbooks differ: some give Fowler's as 45–60°, others 45–90°. Semi-Fowler's is 30–45° and high Fowler's is 60–90°."
+    "reviewNote": "Textbooks differ: some give Fowler's as 45–60°, others 45–90°. Semi-Fowler's is 30–45° and high Fowler's is 60–90°.",
+    "reviewed": true
   },
   {
     "id": "fon-008",
@@ -89,7 +90,8 @@
     "options": ["Yellow bag", "Black bag", "White translucent puncture-proof container", "Green bag"],
     "answer": 2,
     "explanation": "Sharps such as needles, blades and scalpels go into a white translucent, puncture-proof, leak-proof container. This protects health workers and waste handlers from needle-stick injuries.",
-    "reviewNote": "Based on the Bio-Medical Waste Management Rules, 2016 (as amended in 2018). Check whether the rules have been updated since."
+    "reviewNote": "Based on the Bio-Medical Waste Management Rules, 2016 (as amended in 2018). Check whether the rules have been updated since.",
+    "reviewed": true
   },
   {
     "id": "fon-011",
@@ -180,7 +182,8 @@
     "options": ["Gloves, gown, mask, goggles", "Gown, mask, goggles, gloves", "Mask, gloves, gown, goggles", "Goggles, gloves, mask, gown"],
     "answer": 1,
     "explanation": "The usual order is gown first, then mask or respirator, then goggles or face shield, and gloves last. Gloves go on last so they can cover the cuffs of the gown.",
-    "reviewNote": "This follows the CDC sequence. Some hospital or national infection-control policies use a slightly different order."
+    "reviewNote": "This follows the CDC sequence. Some hospital or national infection-control policies use a slightly different order.",
+    "reviewed": true
   },
   {
     "id": "fon-021",
@@ -190,7 +193,8 @@
     "options": ["Mask or respirator", "Gloves", "Gown", "Shoe covers"],
     "answer": 0,
     "explanation": "The mask or respirator is removed last because it protects the nose and mouth from germs in the air. Gloves are usually removed first because they are the most contaminated.",
-    "reviewNote": "This follows the CDC sequence. Some local policies remove the gown and gloves together, so check the order your exam follows."
+    "reviewNote": "This follows the CDC sequence. Some local policies remove the gown and gloves together, so check the order your exam follows.",
+    "reviewed": true
   },
   {
     "id": "fon-022",
@@ -209,7 +213,8 @@
     "options": ["Dorsogluteal", "Deltoid", "Ventrogluteal", "Rectus femoris"],
     "answer": 2,
     "explanation": "The ventrogluteal site has thick muscle and is far from the sciatic nerve and major blood vessels. Many current guidelines prefer it over the dorsogluteal site.",
-    "reviewNote": "Older Indian textbooks often teach the dorsogluteal site as standard. Newer evidence and guidelines prefer the ventrogluteal site."
+    "reviewNote": "Older Indian textbooks often teach the dorsogluteal site as standard. Newer evidence and guidelines prefer the ventrogluteal site.",
+    "reviewed": true
   },
   {
     "id": "fon-024",
@@ -237,7 +242,8 @@
     "options": ["Listening over the stomach while pushing in air", "Chest and abdominal X-ray", "Placing the tube end in a glass of water", "Asking the patient to speak"],
     "answer": 1,
     "explanation": "An X-ray is the most accurate way to confirm tube position. At the bedside, testing the pH of the aspirate (acidic, about 5.5 or below) is preferred, and the 'whoosh test' is no longer considered reliable.",
-    "reviewNote": "Many older Indian textbooks still teach air auscultation as the bedside check. Current patient-safety guidance recommends pH testing and X-ray."
+    "reviewNote": "Many older Indian textbooks still teach air auscultation as the bedside check. Current patient-safety guidance recommends pH testing and X-ray.",
+    "reviewed": true
   },
   {
     "id": "fon-027",
@@ -418,7 +424,8 @@
     "options": ["No risk of pressure ulcer", "Very high risk of pressure ulcer", "Mild risk of pressure ulcer", "The score is not valid"],
     "answer": 1,
     "explanation": "The Braden Scale scores from 6 to 23, and a lower score means a higher risk of pressure ulcers. A score of 9 or less means very high risk, so the patient needs frequent turning and a pressure-relieving mattress.",
-    "reviewNote": "Braden risk cut-offs vary slightly by source. A common version is: 15–18 at risk, 13–14 moderate, 10–12 high, 9 or less very high."
+    "reviewNote": "Braden risk cut-offs vary slightly by source. A common version is: 15–18 at risk, 13–14 moderate, 10–12 high, 9 or less very high.",
+    "reviewed": true
   },
   {
     "id": "fon-047",
@@ -446,7 +453,8 @@
     "options": ["36.5 °C", "37.0 °C", "37.5 °C", "38.0 °C"],
     "answer": 0,
     "explanation": "Axillary temperature is usually about 0.5 °C lower than oral temperature, and rectal temperature is about 0.5 °C higher. So an oral reading of 37.0 °C matches an axillary reading of about 36.5 °C.",
-    "reviewNote": "The size of the difference varies by source (about 0.5–1 °C), but 0.5 °C is the figure most nursing textbooks give."
+    "reviewNote": "The size of the difference varies by source (about 0.5–1 °C), but 0.5 °C is the figure most nursing textbooks give.",
+    "reviewed": true
   },
   {
     "id": "fon-050",
@@ -456,6 +464,7 @@
     "options": ["Oxygen causes immediate lung collapse", "Oxygen raises blood sugar", "Too much oxygen can raise carbon dioxide levels further and depress breathing", "Oxygen makes the patient's pulse very slow"],
     "answer": 2,
     "explanation": "In some patients with COPD, high oxygen levels can make carbon dioxide build up further, causing drowsiness and slow breathing. Controlled oxygen, often aiming for SpO₂ of 88–92 percent, is used instead.",
-    "reviewNote": "Textbooks explain the cause differently: older ones say oxygen removes the 'hypoxic drive', while newer ones point to ventilation-perfusion mismatch and the Haldane effect. The 88–92% target follows BTS and GOLD guidance."
+    "reviewNote": "Textbooks explain the cause differently: older ones say oxygen removes the 'hypoxic drive', while newer ones point to ventilation-perfusion mismatch and the Haldane effect. The 88–92% target follows BTS and GOLD guidance.",
+    "reviewed": true
   }
 ]

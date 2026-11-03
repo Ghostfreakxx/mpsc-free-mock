@@ -3,8 +3,10 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { DIFFICULTY_TARGET, MOCK_MINUTES, MOCK_QUESTIONS, QUESTIONS_PER_CATEGORY, nursingCategories } from '../app/nursing/types.ts';
 import {
-  isNursingQuestion, mockMinutes, readAttempt, readStats, recordPractice, scoreMock, seededRandom, selectMockQuestions, startMock,
+  awaitsReview, isNursingQuestion, mockMinutes, readAttempt, readStats, recordPractice, scoreMock, seededRandom, selectMockQuestions, startMock,
+  visibleQuestions,
 } from '../app/nursing/nursing-logic.ts';
+import { HIDE_UNREVIEWED_QUESTIONS } from '../app/data/nursing-config.ts';
 
 // The Nursing bank: one file per category in app/data/nursing/<prefix>.json, 50 questions each when
 // complete (15 easy, 25 medium, 10 hard). These checks run on every file, full or still filling.
@@ -141,4 +143,29 @@ test('saved attempts and stats are checked before use', () => {
   assert.deepEqual(after.mistakes, []);
   assert.deepEqual(after.categories.fundamentals, { attempted: 4, correct: 3 });
   assert.deepEqual(recordPractice(after, fake[1], false).mistakes, ['fon-002']);
+});
+
+// --- Hiding flagged questions until a reviewer has checked them ---
+
+test('only flagged questions can be marked reviewed, and the filter hides exactly the unreviewed ones', () => {
+  const base = fake[0];
+  const flagged = { ...base, reviewNote: 'Sources differ.' };
+  assert.ok(isNursingQuestion({ ...flagged, reviewed: true }));
+  assert.ok(!isNursingQuestion({ ...base, reviewed: true }), 'reviewed needs a reviewNote');
+  assert.ok(!isNursingQuestion({ ...flagged, reviewed: 'yes' }), 'reviewed must be true');
+  assert.ok(!isNursingQuestion({ ...flagged, reviewed: false }), 'leave reviewed out instead of false');
+  assert.ok(awaitsReview(flagged));
+  assert.ok(!awaitsReview({ ...flagged, reviewed: true }));
+  assert.ok(!awaitsReview(base));
+  const list = [base, flagged, { ...flagged, id: 'fon-003', reviewed: true }];
+  assert.deepEqual(visibleQuestions(list, true).map(question => question.id), [base.id, 'fon-003']);
+  assert.equal(visibleQuestions(list, false).length, 3);
+});
+
+test('with the switch on, the visible bank still fills a full 100-question mock from every category', () => {
+  const visible = visibleQuestions(bank, HIDE_UNREVIEWED_QUESTIONS);
+  for (const category of nursingCategories) {
+    assert.ok(visible.some(question => question.category === category.name), `${category.prefix}: every question is hidden`);
+  }
+  if (bank.length >= MOCK_QUESTIONS) assert.ok(visible.length >= MOCK_QUESTIONS, `only ${visible.length} visible questions`);
 });

@@ -37,6 +37,10 @@ export type NursingQuestion = {
   explanation: string; // 2-3 sentences
   // Set when the answer can differ between guidelines, textbooks or years (a reviewer checks these).
   reviewNote?: string;
+  // Set to true once a reviewer has checked a question that has a reviewNote. While
+  // HIDE_UNREVIEWED_QUESTIONS (app/data/nursing-config.ts) is on, flagged questions without it
+  // are left out of the bank students see. The note itself stays visible after review.
+  reviewed?: boolean;
 };
 
 // The mock test: 100 questions in 90 minutes, drawn evenly across the categories.

@@ -28,7 +28,17 @@ export function isNursingQuestion(value: unknown): value is NursingQuestion {
     && Array.isArray(item.options) && item.options.length === 4 && item.options.every(option => isText(option, 200))
     && typeof item.answer === "number" && Number.isInteger(item.answer) && item.answer >= 0 && item.answer <= 3
     && isText(item.explanation, 700)
-    && (item.reviewNote === undefined || isText(item.reviewNote, 400));
+    && (item.reviewNote === undefined || isText(item.reviewNote, 400))
+    && (item.reviewed === undefined || (item.reviewed === true && item.reviewNote !== undefined));
+}
+
+// A question is waiting for review when it carries a reviewNote and nobody has marked it reviewed.
+export const awaitsReview = (question: Pick<NursingQuestion, "reviewNote" | "reviewed">) =>
+  question.reviewNote !== undefined && question.reviewed !== true;
+
+// The questions students see: all of them, or only those not waiting for review.
+export function visibleQuestions<T extends Pick<NursingQuestion, "reviewNote" | "reviewed">>(questions: readonly T[], hideUnreviewed: boolean): T[] {
+  return hideUnreviewed ? questions.filter(question => !awaitsReview(question)) : [...questions];
 }
 
 export function isNursingBank(value: unknown): value is NursingQuestion[] {
