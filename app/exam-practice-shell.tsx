@@ -64,6 +64,7 @@ const navigation = [
   { href: "/", label: "Learning space", icon: LayoutDashboard },
   { href: "/mock-test", label: "MPSC practice", icon: ClipboardCheck },
   { href: "/neet", label: "NEET practice", icon: BookOpen },
+  { href: "/neet/classes", label: "NEET classes", icon: BookOpen },
   { href: "/jee", label: "JEE Main practice", icon: Atom },
   { href: "/jee/classes", label: "JEE classes", icon: BookOpen },
   { href: "/cuet-pg", label: "CUET PG practice", icon: GraduationCap },
@@ -112,7 +113,7 @@ export default function ExamPracticeShell({
               <Link
                 href={item.href}
                 // The classes library is large; load it on demand instead of prefetching it from every page.
-                prefetch={item.href === "/jee/classes" ? false : undefined}
+                prefetch={item.href.endsWith("/classes") ? false : undefined}
                 className={`sidebar-link ${active ? "is-active" : ""}`}
                 aria-current={active ? "page" : undefined}
                 key={item.href}
@@ -149,6 +150,7 @@ export default function ExamPracticeShell({
           <div className="page-heading-row practice-heading">
             <div><span className="section-kicker">{eyebrow}</span><h1>{title}</h1><p>{description}</p></div>
             <div className="practice-heading-actions">
+              {activeRoute === "/neet" && <Link href="/neet/classes" prefetch={false} className="button button-dark">Recorded NEET classes <ArrowUpRight size={15} /></Link>}
               <Link href={`/exam-simulator?exam=${activeRoute.slice(1)}`} className="button button-dark">Timed exam simulator <ArrowUpRight size={15} /></Link>
               <Link href={`/downloads#${activeRoute.slice(1)}`} className="button button-outline">Download notes <ArrowUpRight size={15} /></Link>
             </div>

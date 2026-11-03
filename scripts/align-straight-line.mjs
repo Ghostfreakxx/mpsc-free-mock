@@ -85,17 +85,19 @@ targets['coordinate-geometry']='coordinate-geometry';
 targets['three-dimensional-geometry']='three-dimensional-geometry';
 targets['vector-algebra']='vector-algebra';
 targets['statistics-probability']='statistics-probability';
+targets['neet-cell-unit-life'] = 'cell-unit-life';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
+const dataPrefix = selected.startsWith('neet-') ? 'neet' : 'jee';
 const folder = path.join(root, 'public/lectures', selected);
 const { loadEnvConfig } = (await import('@next/env')).default;
 loadEnvConfig(root, false, { info() {}, error() {} });
 const key = process.env.OPENAI_API_KEY;
 if (!key?.trim()) throw new Error('Missing API credential');
-const original = JSON.parse(await fs.readFile(path.join(root, `app/data/jee-${dataName}-timings.json`), 'utf8'));
+const original = JSON.parse(await fs.readFile(path.join(root, `app/data/${dataPrefix}-${dataName}-timings.json`), 'utf8'));
 const chapters = original.chapters ?? original.cues.map(cue => ({ start: cue.start, end: cue.end }));
 const cues = [];
-const lesson = JSON.parse(await fs.readFile(path.join(root, `app/data/jee-${dataName}-lecture.json`), 'utf8'));
+const lesson = JSON.parse(await fs.readFile(path.join(root, `app/data/${dataPrefix}-${dataName}-lecture.json`), 'utf8'));
 const numbers = { '0':'zero', '1':'one', '2':'two', '3':'three', '4':'four', '5':'five', '6':'six', '7':'seven', '8':'eight', '9':'nine', '10':'ten', '11':'eleven', '28':'twenty eight', '30':'thirty', '50':'fifty', '80':'eighty', '110':'one hundred and ten', '9.8':'nine point eight' };
 const normalize = word => word.toLowerCase().replace(/[^a-z0-9]/g, '').replace(/^metres?$/, 'meter').replace(/^meters$/, 'meter').replace('memorising', 'memorizing');
 function alignScript(script, observed, duration) {
@@ -172,5 +174,5 @@ for (let i = 0; i < cues.length; i++) {
 // Timestamp repairs can merge text; restore readable cue lengths afterward.
 const readableCues = splitLongCues(cues);
 await fs.writeFile(path.join(folder, 'english.vtt'), 'WEBVTT\n\n' + readableCues.map(c => `${stamp(c.start)} --> ${stamp(c.end)}\n${c.text}`).join('\n\n') + '\n');
-await fs.writeFile(path.join(root, `app/data/jee-${dataName}-timings.json`), JSON.stringify({ duration: original.duration, chapters, cues: readableCues }, null, 2) + '\n');
+await fs.writeFile(path.join(root, `app/data/${dataPrefix}-${dataName}-timings.json`), JSON.stringify({ duration: original.duration, chapters, cues: readableCues }, null, 2) + '\n');
 console.log(`Validated ${readableCues.length} captions across ${chapters.length} chapters`);

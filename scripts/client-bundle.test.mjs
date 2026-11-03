@@ -10,7 +10,7 @@ import { fileURLToPath } from 'node:url';
 // The same goes for the JEE class data (every lecture's cues and every written lesson): the class
 // library gets slim summaries from app/jee/classes/library-summary.ts through its server page.
 // The Law bank (app/data/law-mjs-bank.ts and its JSON files) reaches the browser from /question-bank/mjs-law.
-const heavy = /^(?:\.\.?\/)+(?:data\/)?(reviewed-content|law-mjs-bank|mizo-translations|mizo-concepts|mizo-manual|practice-data|additional-questions|expanded-practice|[a-z-]*-topics|lessons|study-lessons(?:-two)?|library-summary|[a-z-]*-study)(?:\.ts)?$|^(?:\.\.?\/)+data\/jee-[a-z-]+\.json$|^(?:\.\.?\/)+(?:data\/)?law-mjs\/[a-z]+\.json$|^(?:\.\.?\/)+data\/(?:nursing-bank(?:\.ts)?|nursing\/.*)$/;
+const heavy = /^(?:\.\.?\/)+(?:data\/)?(reviewed-content|law-mjs-bank|mizo-translations|mizo-concepts|mizo-manual|practice-data|additional-questions|expanded-practice|[a-z-]*-topics|lessons|study-lessons(?:-two)?|library-summary|[a-z-]*-study)(?:\.ts)?$|^(?:\.\.?\/)+data\/(?:jee|neet)-[a-z-]+\.json$|^(?:\.\.?\/)+(?:data\/)?law-mjs\/[a-z]+\.json$|^(?:\.\.?\/)+data\/(?:nursing-bank(?:\.ts)?|nursing\/.*)$/;
 
 function* sourceFiles(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -47,6 +47,8 @@ test('the rule catches a runtime import and allows a type-only one', () => {
   assert.ok(heavy.test('./study-lessons'));
   assert.ok(heavy.test('./chemistry-core-study.ts'));
   assert.ok(heavy.test('../../data/jee-units-lecture.json'));
+  assert.ok(heavy.test('../../data/neet-cell-unit-life-lecture.json'));
+  assert.ok(heavy.test('../../data/neet-cell-unit-life-timings.json'));
   assert.ok(heavy.test('../../data/law-mjs-bank'));
   assert.ok(heavy.test('../../data/law-mjs/coi.json'));
   assert.ok(!heavy.test('./syllabus'));

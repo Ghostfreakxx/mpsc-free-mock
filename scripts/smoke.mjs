@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import { chromium } from 'playwright';
 
 const base = process.env.SMOKE_URL || 'http://localhost:3000';
-const pages = ['/', '/mock-test', '/mizo', '/neet', '/jee', '/cuet-pg', '/nursing', '/college-notes', '/downloads', '/exam-simulator', '/law/mjs', '/trading', '/trading/learn', '/jee/classes', '/jee/classes/units', '/jee/classes/measurements'];
+const pages = ['/', '/mock-test', '/mizo', '/neet', '/neet/classes', '/neet/classes/cell-unit-life', '/jee', '/cuet-pg', '/nursing', '/college-notes', '/downloads', '/exam-simulator', '/law/mjs', '/trading', '/trading/learn', '/jee/classes', '/jee/classes/units', '/jee/classes/measurements'];
 const failures = [];
 const check = (condition, message) => { if (!condition) failures.push(message); };
 
@@ -32,7 +32,7 @@ check((await chat('x'.repeat(30_000))).status === 413, 'oversized chat body was 
 check((await chat('hello', { 'content-type': 'text/plain' })).status === 415, 'non-JSON chat body was not rejected');
 
 // 3. Every page renders on a small phone without errors, CSP violations or sideways scrolling.
-const browser = await chromium.launch();
+const browser = await chromium.launch({ channel: process.env.PLAYWRIGHT_CHANNEL });
 try {
   const page = await browser.newPage({ viewport: { width: 360, height: 780 } });
   const errors = [];
