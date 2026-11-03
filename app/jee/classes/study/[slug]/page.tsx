@@ -91,6 +91,6 @@ export default async function StudyPage({ params }: { params: Promise<{ slug: st
       {previous && <p><Link href={`/jee/classes/study/${previous.id}`}>Previous: {previous.title}</Link></p>}
       {next && <p><Link href={`/jee/classes/study/${next.id}`}>Next: {next.title}</Link></p>}
     </nav>
-    <section className={styles.notes}><h2>Unit coverage</h2><p>{lesson.remaining}</p><p>Original teaching text and practice, not official past-paper questions.</p><h2>Further reading</h2>{lesson.sources.map(source => <p key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.title}</a></p>)}<Link href="/jee/classes"><ArrowLeft size={17} /> Back to JEE classes</Link></section>
+    <section className={styles.notes}><h2>Unit coverage</h2><p>{lesson.remaining}</p><p>Original teaching text and practice, not official past-paper questions.</p><h2>Further reading</h2>{lesson.sources.map(source => <p key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.title}</a></p>)}<Link href="/jee/classes" prefetch={false}><ArrowLeft size={17} /> Back to JEE classes</Link></section>
   </main>;
 }

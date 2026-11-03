@@ -35,6 +35,9 @@ try {
     await page.locator(`a[href="/jee/classes/study/${slug}"]`).filter({ hasText: 'Read lesson' }).click();
     await page.waitForURL(`**/study/${slug}`);
     await page.getByRole('img').waitFor();
+    // Figures are lazy-loaded; at the 320px width left by the previous case one can sit far below the
+    // fold, so bring each into view (as a student scrolling would) before requiring that it loaded.
+    for (const image of await page.locator('img').all()) await image.scrollIntoViewIfNeeded();
     await page.waitForFunction(() => [...document.images].every(image => image.complete && image.naturalWidth > 0));
     assert.equal(await page.locator('audio').count(), 0);
     assert.equal(await page.locator('fieldset').count(), answers.length);
