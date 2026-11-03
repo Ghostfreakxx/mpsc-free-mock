@@ -37,6 +37,6 @@ export default function ClassProgress({ id, progressKey, duration, quiz }: {
   return <div className={styles.savedProgress}>
     <progress aria-label="Saved playback position" max={duration} value={position} />
     <p>{position > 0 ? `Last position ${timestamp}` : "Not started"} <span>Practice: {count} / {quiz.length} answered{count > 0 ? ` · ${correct} correct` : ""}</span></p>
-    <Link href={`/jee/classes/${id}`}>{nearEnd ? "Replay class" : position > 0 ? "Resume class" : "Open class"} <ArrowRight size={17} /></Link>
+    <Link href={`/jee/classes/${id}`} prefetch={false}>{nearEnd ? "Replay class" : position > 0 ? "Resume class" : "Open class"} <ArrowRight size={17} /></Link>
   </div>;
 }

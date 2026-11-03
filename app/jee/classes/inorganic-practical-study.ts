@@ -1,3 +1,4 @@
+import { extendPracticalPreparationsLesson } from './practical-preparations-study.ts';
 import{extendPracticalCationEvidenceLesson}from'./practical-cation-evidence-study.ts';
 import {extendAnalysisDetectionLesson}from'./analysis-detection-study.ts';
 import {extendInorganicTrendApplicationsLesson} from './inorganic-trend-applications-study.ts';
@@ -182,3 +183,5 @@ for(const lesson of inorganicPracticalLessons)extendInorganicTrendApplicationsLe
 for(const lesson of inorganicPracticalLessons)extendAnalysisDetectionLesson(lesson);
 
 for(const lesson of inorganicPracticalLessons)extendPracticalCationEvidenceLesson(lesson);
+
+for(const lesson of inorganicPracticalLessons)extendPracticalPreparationsLesson(lesson);

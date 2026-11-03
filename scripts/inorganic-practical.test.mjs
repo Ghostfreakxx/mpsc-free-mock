@@ -8,9 +8,9 @@ test('all 20 Chemistry units now have a written foundation, without claiming exh
   assert.equal(chemistry.length, 22);
   assert.deepEqual([...new Set(chemistry.map(l => l.unit))].sort((a,b) => a-b), Array.from({length:20}, (_,i) => i+1));
   for (const l of lessons) {
-    assert.equal(l.sections.length,l.id==='practical-chemistry'?41:33);
-    assert.equal(l.quiz.length, l.id==='practical-chemistry'?72:58);
-    assert.match(l.remaining, l.id==='practical-chemistry'?/forty-one-chapter Marin recording/:/thirty-five-chapter Marin recording/);
+    assert.equal(l.sections.length,l.id==='practical-chemistry'?51:33);
+    assert.equal(l.quiz.length, l.id==='practical-chemistry'?92:58);
+    assert.match(l.remaining, l.id==='practical-chemistry'?/Fifty-one recorded chapters/:/thirty-five-chapter Marin recording/);
   }
 });
 test('p-block patterns retain helium and electron-gain exceptions', () => {

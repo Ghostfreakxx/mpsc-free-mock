@@ -11,6 +11,8 @@ import { groupRecordings } from "./recording-groups";
 import styles from "./lecture.module.css";
 
 // The server page passes slim summaries; importing the lessons here would ship every lecture's cues.
+// Its ~290 class links do not prefetch: scrolling the list would otherwise download every class
+// (about 1 MB) on a student's mobile data. Each class is a static page, so a tap still opens fast.
 export default function CourseLibrary({ lectures, studyLessons }: { lectures: RecordingSummary[]; studyLessons: WrittenSummary[] }) {
   const [subject, setSubject] = useState<Subject>("Physics");
   const available = studyLessons.filter(lesson => lesson.subject === subject);
@@ -27,7 +29,7 @@ export default function CourseLibrary({ lectures, studyLessons }: { lectures: Re
         <div><h3>{lesson.title}</h3><p>{lesson.description}</p>
           <p className={styles.lessonMeta}><Clock size={15} /> {Math.floor(lesson.timings.duration / 60)}:{String(Math.floor(lesson.timings.duration % 60)).padStart(2, "0")} <span>Marin recording</span><span>{lesson.quiz.length} practice checks</span></p>
           <ClassProgress id={lesson.id} progressKey={lesson.progressKey} duration={lesson.timings.duration} quiz={lesson.quiz} />
-          <Link href={`/jee/classes/study/${lesson.id}`}>Read class notes <ArrowRight size={17} /></Link>
+          <Link prefetch={false} href={`/jee/classes/study/${lesson.id}`}>Read class notes <ArrowRight size={17} /></Link>
         </div>
       </article>)}
       </details>)}
@@ -35,8 +37,8 @@ export default function CourseLibrary({ lectures, studyLessons }: { lectures: Re
         <div className={styles.lessonNumber}><BookOpen size={28} /><span>U{lesson.unit}</span></div>
         <div><h3>{lesson.title}</h3><p>{lesson.summary}</p>
           <p className={styles.lessonMeta}>{subjectRecordings.some(recording => recording.id === lesson.id) ? "Written notes + recorded class" : "Written lesson"} <span>{lesson.exampleCount} worked examples</span><span>{lesson.quizCount} practice checks</span></p>
-          {lectures.some(recording => recording.id === lesson.id) ? <Link href={`/jee/classes/${lesson.id}`}>Watch recorded class <ArrowRight size={17} /></Link> : <p>Marin recording not yet available</p>}
-          <Link href={`/jee/classes/study/${lesson.id}`}>Read lesson <ArrowRight size={17} /></Link>
+          {lectures.some(recording => recording.id === lesson.id) ? <Link prefetch={false} href={`/jee/classes/${lesson.id}`}>Watch recorded class <ArrowRight size={17} /></Link> : <p>Marin recording not yet available</p>}
+          <Link prefetch={false} href={`/jee/classes/study/${lesson.id}`}>Read lesson <ArrowRight size={17} /></Link>
         </div>
       </article>)}
     </section>
@@ -49,8 +51,8 @@ export default function CourseLibrary({ lectures, studyLessons }: { lectures: Re
         const coverage = subject === "Physics" ? physicsCoverage[index] : undefined;
         const recorded = subjectRecordings.filter(lecture => coverage ? coverage.recordings.includes(lecture.id) : lecture.unit === index + 1);
         return <li key={title}><span>{String(index + 1).padStart(2, "0")}</span><div><strong>{title}</strong>
-          {written.map(lesson => <Link key={lesson.id} href={`/jee/classes/study/${lesson.id}`}>{lesson.title} <ArrowRight size={14} /></Link>)}
-          {recorded.map(lesson => <Link key={lesson.id} href={`/jee/classes/${lesson.id}`}>{lesson.title} <ArrowRight size={14} /></Link>)}
+          {written.map(lesson => <Link key={lesson.id} prefetch={false} href={`/jee/classes/study/${lesson.id}`}>{lesson.title} <ArrowRight size={14} /></Link>)}
+          {recorded.map(lesson => <Link key={lesson.id} prefetch={false} href={`/jee/classes/${lesson.id}`}>{lesson.title} <ArrowRight size={14} /></Link>)}
           {coverage && <details><summary>Further practice and extensions</summary><ul>{coverage.remaining.map(topic => <li key={topic}>{topic}</li>)}</ul></details>}
         </div><span className={written.length || recorded.length ? styles.partial : styles.planned}>{recorded.length ? "Recorded" : written.length ? "Written" : "Planned"}</span></li>;
       })}</ol>
