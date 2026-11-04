@@ -70,14 +70,32 @@ Route: `/neet/classes/diversity-living-world`. Twenty-four narrated chapters, tw
 | Chordate features and traditional classes | 18–22: protochordate context, Cyclostomata, Chondrichthyes, Osteichthyes, Amphibia, Reptilia, Aves and Mammalia |
 | Identification and hierarchy applications | 23–24 and the original quiz |
 
-Each prescribed plant group and animal comparison includes representative features and two distinct named examples. Amphioxus is explicitly identified as a familiar name for the Branchiostoma example, rather than counted as a second independent genus. Traditional Monera/Protista and legacy fungal groups are explained within the examination framework without being presented as an unchanged modern phylogeny. Further detailed life-cycle, exception and specimen-identification practice remains. This foundation does not establish exhaustive Unit 1 mastery. Next production focus: Structural Organisation in Animals and Plants.
+Each prescribed plant group and animal comparison includes representative features and two distinct named examples. Amphioxus is explicitly identified as a familiar name for the Branchiostoma example, rather than counted as a second independent genus. Traditional Monera/Protista and legacy fungal groups are explained within the examination framework without being presented as an unchanged modern phylogeny. Further detailed life-cycle, exception and specimen-identification practice remains. This foundation does not establish exhaustive Unit 1 mastery. Structural Organisation in Animals and Plants is recorded as B05 below.
+
+## Biology B05: Structural Organisation in Animals and Plants
+
+Route: `/neet/classes/structural-organisation`. Twenty-eight narrated chapters, twenty-eight teaching boards, aligned captions and fifty-six original MCQs. Independent progress: `neet.structural-organisation.lecture.v1`. Checked against the 2026 Unit 2 syllabus and NTA information-bulletin FAQ, which clarifies the wording as an insect and a frog.
+
+| Required heading | Recorded evidence |
+| --- | --- |
+| Morphology and modifications; root, stem and leaf | 1–3 |
+| Racemose/cymose inflorescence and flower structure | 4–6 |
+| Fruit and seed organization | 7 |
+| Plant tissues and tissue systems | 8–10 |
+| Root, stem and leaf anatomy and functions | 11–13 |
+| Malvaceae, Cruciferae, Leguminosae, Compositae and Gramineae | 14–18; traditional/current names and representative exceptions distinguished |
+| Animal tissues | 19–21 |
+| Insect morphology and digestive, circulatory, respiratory, neural and reproductive systems | 22–25, cockroach representative |
+| Frog morphology and corresponding systems | 26–28; adult/larval differences and external fertilization explicit |
+
+This is recorded foundation coverage, not exhaustive practical mastery. Further specimen identification, formal floral formula/diagram exercises, labelled sections and mixed applications remain. Next production focus: Plant Physiology.
 
 ## Wider Biology map
 
 | Unit | Recording status |
 | --- | --- |
 | Diversity in Living World | Recorded foundation with 24 chapters; further identification practice remains |
-| Structural Organisation in Animals and Plants | Planned |
+| Structural Organisation in Animals and Plants | Recorded foundation with 28 chapters; further practical identification remains |
 | Cell Structure and Function | Cell structure, Biomolecules and Cell Division recorded; further mixed practice remains |
 | Plant Physiology | Planned; existing photosynthesis practice retained |
 | Human Physiology | Planned |
