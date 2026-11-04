@@ -1,0 +1,1575 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English Biology teacher. Speak naturally. Read anatomical names, hormone abbreviations and numerical units carefully. These are educational physiology explanations. Read every sentence completely, including the final sentence. Do not add words or summarize.",
+  "title": "Human Physiology",
+  "subject": "Biology",
+  "unit": 5,
+  "scope": "NEET Biology Unit 5 recorded foundation against the official 2026 syllabus baseline: breathing, body fluids and circulation, excretion, locomotion, neural control and endocrine regulation, with brief prescribed disorder comparisons. Educational mechanisms, not personal diagnosis or treatment. Further numerical problems, labelled diagrams, experiments and mixed physiological cases remain. Original questions, not official PYQs.",
+  "sources": [
+    {
+      "title": "NMC: official NEET 2026 syllabus, Biology Unit 5",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/01/202601081066816297.pdf"
+    },
+    {
+      "title": "NCERT: Biology textbook portal, Human Physiology chapters",
+      "url": "https://ncert.nic.in/textbook.php"
+    },
+    {
+      "title": "OpenStax Anatomy and Physiology 2e: 22 3 the process of breathing",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-3-the-process-of-breathing"
+    },
+    {
+      "title": "OpenStax Anatomy and Physiology 2e: 19 3 cardiac cycle",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-3-cardiac-cycle"
+    },
+    {
+      "title": "OpenStax Anatomy and Physiology 2e: 25 4 microscopic anatomy of the kidney",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-4-microscopic-anatomy-of-the-kidney"
+    },
+    {
+      "title": "OpenStax Anatomy and Physiology 2e: 10 3 muscle fiber contraction and relaxation",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/10-3-muscle-fiber-contraction-and-relaxation"
+    },
+    {
+      "title": "OpenStax Anatomy and Physiology 2e: 12 4 the action potential",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-4-the-action-potential"
+    },
+    {
+      "title": "OpenStax Anatomy and Physiology 2e: 17 2 hormones",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-2-hormones"
+    },
+    {
+      "title": "NIDDK: diabetes insipidus and water-balance mechanisms",
+      "url": "https://www.niddk.nih.gov/health-information/kidney-disease/diabetes-insipidus"
+    },
+    {
+      "title": "NIDDK: adrenal insufficiency and Addison disease",
+      "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/adrenal-insufficiency-addisons-disease/definition-facts"
+    },
+    {
+      "title": "OpenStax A&P 2e: thyroid gland",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-4-the-thyroid-gland"
+    },
+    {
+      "title": "OpenStax A&P 2e: blood typing",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/18-6-blood-typing"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Respiratory organs and the human air pathway",
+      "formula": "Animal surfaces, gills, tracheae and lungs differ",
+      "points": [
+        "Animal surfaces, gills, tracheae and lungs differ",
+        "Human air passes through conducting passages",
+        "Alveoli provide a thin exchange surface",
+        "Ventilation differs from cellular respiration"
+      ],
+      "board": {
+        "kind": "airway",
+        "lines": [
+          "Animal surfaces, gills, tracheae and lungs differ",
+          "Human air passes through conducting passages",
+          "Alveoli provide a thin exchange surface",
+          "Ventilation differs from cellular respiration"
+        ]
+      },
+      "script": "Welcome to Human Physiology, our NEET Biology Unit five foundation. This recording uses an AI generated Marin voice. Animals exchange gases through different structures: suitable body surfaces, gills, insect tracheae and lungs provide familiar comparisons. An insect tracheal system delivers gases differently from vertebrate blood transport. In humans, air passes through nasal passages, pharynx, larynx and trachea into bronchi, bronchioles and the respiratory regions of the lungs. Cartilage supports larger conducting passages, while branching ultimately leads toward alveoli. The conducting region also helps filter, warm and humidify air. Alveoli provide a large, thin exchange interface closely associated with capillaries. Pleural membranes and fluid support mechanical coupling with the thoracic wall while allowing sliding. Ventilation is bulk air movement, gas exchange is diffusion across interfaces, and cellular respiration is metabolic energy processing. These related processes should not be treated as interchangeable names. This class follows the six prescribed physiology headings and introduces mechanisms alongside their important limitations."
+    },
+    {
+      "title": "Breathing mechanics and pressure changes",
+      "formula": "Inspiration increases thoracic volume",
+      "points": [
+        "Inspiration increases thoracic volume",
+        "Diaphragm contracts and flattens",
+        "Alveolar pressure falls below atmospheric",
+        "Quiet expiration is mainly passive recoil"
+      ],
+      "board": {
+        "kind": "breathing",
+        "lines": [
+          "Inspiration increases thoracic volume",
+          "Diaphragm contracts and flattens",
+          "Alveolar pressure falls below atmospheric",
+          "Quiet expiration is mainly passive recoil"
+        ]
+      },
+      "script": "During ordinary inspiration, contraction of the diaphragm increases thoracic volume as the dome flattens. External intercostal activity helps elevate the ribs and sternum in the usual account. Expansion of the thorax, coupled through the pleural arrangement, expands the lungs and lowers alveolar pressure relative to atmospheric pressure. Air flows inward down that pressure difference. During quiet expiration, relaxation of inspiratory muscles and elastic recoil reduce lung volume, raising alveolar pressure above atmospheric pressure so air flows outward. Forced expiration can recruit additional muscles; it should not be described as identical to passive quiet expiration. The lungs do not actively pull air by contracting their alveoli like skeletal muscles. Intrapleural pressure and alveolar pressure are different quantities, and the pressure difference driving airflow is not the same as the partial pressure difference driving oxygen diffusion into blood. Always identify the compartment, the phase of breathing and the direction of the relevant pressure difference before predicting movement."
+    },
+    {
+      "title": "Respiratory volumes and capacities",
+      "formula": "TV, IRV, ERV and RV are distinct volumes",
+      "points": [
+        "TV, IRV, ERV and RV are distinct volumes",
+        "Vital capacity = IRV + TV + ERV",
+        "Total lung capacity = vital capacity + RV",
+        "Simple spirometry cannot directly measure RV"
+      ],
+      "board": {
+        "kind": "volumes",
+        "lines": [
+          "TV, IRV, ERV and RV are distinct volumes",
+          "Vital capacity = IRV + TV + ERV",
+          "Total lung capacity = vital capacity + RV",
+          "Simple spirometry cannot directly measure RV"
+        ]
+      },
+      "script": "Tidal volume is the volume inhaled or exhaled in an ordinary quiet breath. Inspiratory reserve volume is the additional volume that can be inspired beyond an ordinary inspiration, and expiratory reserve volume is the additional volume exhaled beyond an ordinary expiration. Residual volume remains after maximal expiration. Vital capacity combines inspiratory reserve, tidal and expiratory reserve volumes, while total lung capacity adds the residual volume. Inspiratory capacity equals tidal volume plus inspiratory reserve, and functional residual capacity equals expiratory reserve plus residual volume. These relations are more reliable than treating one approximate textbook value as identical for every person. Volumes vary with body size, age, posture and other conditions. Simple spirometry records moved air and does not directly measure residual volume or capacities containing it. Minute ventilation is tidal volume multiplied by respiratory rate, but effective alveolar ventilation also accounts for dead space. Keep a single breath volume separate from a volume moved per minute."
+    },
+    {
+      "title": "Gas exchange and oxygen and carbon dioxide transport",
+      "formula": "Diffusion follows partial-pressure gradients",
+      "points": [
+        "Diffusion follows partial-pressure gradients",
+        "Most oxygen is carried by haemoglobin",
+        "Most CO2 is transported as bicarbonate",
+        "Tissue conditions favor oxygen unloading"
+      ],
+      "board": {
+        "kind": "gas",
+        "lines": [
+          "Diffusion follows partial-pressure gradients",
+          "Most oxygen is carried by haemoglobin",
+          "Most CO2 is transported as bicarbonate",
+          "Tissue conditions favor oxygen unloading"
+        ]
+      },
+      "script": "Oxygen diffuses from alveolar air toward pulmonary capillary blood when the partial pressure gradient favors that direction. In tissues, the usual gradient favors movement from systemic blood toward cells. Carbon dioxide moves in the opposite overall direction, but its greater solubility contributes to effective exchange despite a smaller pressure difference. Most blood oxygen is bound to haemoglobin rather than simply dissolved in plasma. The oxygen dissociation curve is sigmoid because binding is cooperative in the familiar account. Higher carbon dioxide, lower pH and increased temperature in active tissues tend to favor oxygen unloading. Most carbon dioxide is carried as bicarbonate, with smaller fractions dissolved or associated with proteins including haemoglobin. Carbonic anhydrase in red cells accelerates reversible carbon dioxide hydration, while ion exchange helps maintain balance. Oxygen loading and unloading do not mean haemoglobin is irreversibly consumed on each circuit. Distinguish gas partial pressure, dissolved concentration, haemoglobin saturation and total oxygen content when comparing a graph."
+    },
+    {
+      "title": "Respiratory control and prescribed disorders",
+      "formula": "Medullary centres help generate breathing rhythm",
+      "points": [
+        "Medullary centres help generate breathing rhythm",
+        "CO2 and H+ strongly influence regulation",
+        "Asthma involves variable inflamed airway narrowing",
+        "Emphysema damages alveolar walls"
+      ],
+      "board": {
+        "kind": "resp-control",
+        "lines": [
+          "Medullary centres help generate breathing rhythm",
+          "CO2 and H+ strongly influence regulation",
+          "Asthma involves variable inflamed airway narrowing",
+          "Emphysema damages alveolar walls"
+        ]
+      },
+      "script": "Respiratory rhythm is organized through brainstem networks, with medullary centres and pontine modulation in the elementary account. Carbon dioxide related changes in hydrogen ion concentration provide a major regulatory influence. Peripheral chemoreceptors can respond to arterial oxygen, carbon dioxide and acidity, so saying oxygen never affects breathing is too absolute. Regulation adjusts ventilation to metabolic and other demands rather than requiring conscious control of every breath. Asthma involves airway inflammation and variable narrowing that can obstruct airflow; it is not simply loss of alveolar walls. Emphysema involves damage to alveolar walls and elastic properties, reducing effective exchange surface and altering expiration. Occupational exposure to certain dusts can produce chronic inflammatory and fibrotic lung changes; silica and asbestos are familiar teaching examples. These comparisons explain mechanisms and are not diagnostic criteria for an individual. Similar symptoms can have different causes. Keep airway resistance, exchange surface, lung elasticity and central regulation separate when reasoning about the prescribed disorders."
+    },
+    {
+      "title": "Blood components and lymph",
+      "formula": "Plasma carries proteins and dissolved solutes",
+      "points": [
+        "Plasma carries proteins and dissolved solutes",
+        "RBCs transport gases; WBCs support defense",
+        "Platelets contribute to haemostasis",
+        "Lymph returns fluid and transports absorbed fats"
+      ],
+      "board": {
+        "kind": "blood",
+        "lines": [
+          "Plasma carries proteins and dissolved solutes",
+          "RBCs transport gases; WBCs support defense",
+          "Platelets contribute to haemostasis",
+          "Lymph returns fluid and transports absorbed fats"
+        ]
+      },
+      "script": "Blood consists of plasma and formed elements. Plasma contains water, electrolytes, nutrients, wastes and proteins including albumin, globulins and clotting factors. Mature human red blood cells lack a nucleus and carry haemoglobin; this does not mean every vertebrate red cell has the same structure. White blood cells include granulocytes and agranulocytes with different defense roles. Neutrophils, eosinophils and basophils are familiar granulocytes, while lymphocytes and monocytes belong to the other broad comparison. Platelets are cell fragments involved in haemostasis rather than small complete red cells. Fluid filtered into tissues is partly returned through lymphatic vessels. Lymph helps return excess interstitial fluid and proteins to the circulation, supports immune functions and carries absorbed dietary lipids from intestinal lacteals. It normally has fewer large plasma proteins than blood plasma and is not simply blood with its red cells temporarily hidden. Compare the fluid compartment, its contents and its route of return when interpreting a circulation question."
+    },
+    {
+      "title": "ABO and Rh blood groups",
+      "formula": "ABO antigens on RBCs differ from antibodies",
+      "points": [
+        "ABO antigens on RBCs differ from antibodies",
+        "Group A: A antigen and anti-B in plasma",
+        "Rh sensitization involves immune exposure",
+        "Component compatibility requires more than a slogan"
+      ],
+      "board": {
+        "kind": "groups",
+        "lines": [
+          "ABO antigens on RBCs differ from antibodies",
+          "Group A: A antigen and anti-B in plasma",
+          "Rh sensitization involves immune exposure",
+          "Component compatibility requires more than a slogan"
+        ]
+      },
+      "script": "ABO grouping concerns antigens on red cells and corresponding antibodies in plasma. In the elementary account, group A has A antigen and anti B antibodies, group B has B antigen and anti A, group AB has both antigens without these ordinary antibodies, and group O lacks A and B antigens but has both antibody types. Agglutination can occur when incompatible antigen and antibody combinations meet. Red cell compatibility is not identical to plasma compatibility, and universal donor slogans do not establish that any whole blood transfer is safe without testing. Rh grouping commonly focuses on the D antigen. A person lacking it can become sensitized after appropriate exposure and produce antibodies; anti D is not assumed to be naturally present like the usual ABO antibodies. Maternal sensitization can contribute to haemolytic disease of an Rh positive fetus in suitable circumstances. The examination comparison concerns immune mechanisms, not an instruction for choosing blood products. Keep antigen location, antibody location and the blood component being discussed explicit."
+    },
+    {
+      "title": "Coagulation and haemostasis",
+      "formula": "Vessel responses and platelet plug limit loss",
+      "points": [
+        "Vessel responses and platelet plug limit loss",
+        "Coagulation produces a fibrin network",
+        "Thrombin converts fibrinogen to fibrin",
+        "Calcium and multiple factors participate"
+      ],
+      "board": {
+        "kind": "clotting",
+        "lines": [
+          "Vessel responses and platelet plug limit loss",
+          "Coagulation produces a fibrin network",
+          "Thrombin converts fibrinogen to fibrin",
+          "Calcium and multiple factors participate"
+        ]
+      },
+      "script": "Haemostasis limits blood loss through coordinated vessel responses, platelet activity and coagulation. Platelets adhere and aggregate at suitable injury sites, helping form an initial plug. Coagulation involves interacting enzyme activation pathways that culminate in formation of thrombin from prothrombin in the elementary account. Thrombin converts soluble fibrinogen into fibrin, which forms a stabilizing network associated with the clot. Calcium and several other factors participate, so clotting is not a single isolated reaction performed by platelets alone. Some factors depend on vitamin K for appropriate production of functional forms. Plasma normally contains fibrinogen and other clotting proteins; serum is the fluid remaining after clot formation and therefore differs from plasma in relevant clotting components. Red cells can become trapped in a clot but are not the source of every coagulation enzyme. The simplified sequence is a foundation rather than the full cascade. Distinguish platelet plugging, enzyme activation and the final fibrin mesh when ordering events."
+    },
+    {
+      "title": "Heart anatomy and double circulation",
+      "formula": "Right heart sends blood to the lungs",
+      "points": [
+        "Right heart sends blood to the lungs",
+        "Left heart sends blood to systemic tissues",
+        "Valves support one-way pressure-driven flow",
+        "Artery and vein names describe direction"
+      ],
+      "board": {
+        "kind": "heart",
+        "lines": [
+          "Right heart sends blood to the lungs",
+          "Left heart sends blood to systemic tissues",
+          "Valves support one-way pressure-driven flow",
+          "Artery and vein names describe direction"
+        ]
+      },
+      "script": "The human heart has two atria and two ventricles, with septa normally separating right and left pathways. Systemic venous blood enters the right atrium, passes through the tricuspid valve to the right ventricle and leaves through the pulmonary valve toward the lungs. Pulmonary veins return oxygenated blood to the left atrium. It passes through the mitral valve to the left ventricle and then through the aortic valve toward systemic tissues. A complete circuit therefore includes pulmonary and systemic passages, called double circulation. Arteries carry blood away from the heart and veins toward it; oxygen content alone does not define either vessel category. Pulmonary arteries and veins demonstrate the limitation of that shortcut. Valves respond to pressure differences and help prevent backward flow rather than actively pumping blood themselves. The thicker left ventricular wall suits systemic pumping demands. Coronary vessels supply the heart muscle, which cannot obtain all its needs merely from blood inside its chambers."
+    },
+    {
+      "title": "Cardiac conduction and the cardiac cycle",
+      "formula": "SA node normally initiates the rhythm",
+      "points": [
+        "SA node normally initiates the rhythm",
+        "AV delay helps coordinated ventricular filling",
+        "Ventricular contraction closes AV valves",
+        "Semilunar closure contributes to second sound"
+      ],
+      "board": {
+        "kind": "cycle",
+        "lines": [
+          "SA node normally initiates the rhythm",
+          "AV delay helps coordinated ventricular filling",
+          "Ventricular contraction closes AV valves",
+          "Semilunar closure contributes to second sound"
+        ]
+      },
+      "script": "The heart is myogenic: specialized cardiac tissue can generate rhythmic excitation without a separate nerve command for each beat. The sinoatrial node normally initiates the rhythm, with conduction through atrial tissue, the atrioventricular node, the conducting bundle and Purkinje system coordinating ventricular activation. The atrioventricular delay contributes to orderly timing rather than both chamber pairs contracting simultaneously. Systole means contraction and diastole relaxation of the stated chamber. When ventricular pressure exceeds atrial pressure, atrioventricular valves close, contributing to the first heart sound. When ventricular pressure later falls below pressure in the great arteries, semilunar valves close, contributing to the second sound. Much ventricular filling is passive during relaxation, with atrial contraction adding to it. Valve opening requires a pressure relationship, not simply the appearance of a named ECG wave. A complete cycle includes periods when all valves are closed, so pressure can change without immediate ejection of blood."
+    },
+    {
+      "title": "ECG, cardiac output and vessel function",
+      "formula": "P wave: atrial depolarization",
+      "points": [
+        "P wave: atrial depolarization",
+        "QRS: ventricular depolarization",
+        "T wave: ventricular repolarization",
+        "Cardiac output = heart rate × stroke volume"
+      ],
+      "board": {
+        "kind": "ecg",
+        "lines": [
+          "P wave: atrial depolarization",
+          "QRS: ventricular depolarization",
+          "T wave: ventricular repolarization",
+          "Cardiac output = heart rate × stroke volume"
+        ]
+      },
+      "script": "An electrocardiogram records electrical activity at the body surface rather than directly measuring chamber blood volume. The P wave represents atrial depolarization, the QRS complex ventricular depolarization and the T wave ventricular repolarization in the standard account. Atrial repolarization is usually obscured by the larger ventricular complex. Electrical activation precedes the associated mechanical response, so depolarization and contraction should not be treated as the same event. Cardiac output equals heart rate multiplied by stroke volume. For example, seventy beats per minute times seventy millilitres per beat gives four point nine litres per minute, after converting units. Arteries and arterioles, capillaries and veins differ in wall organization and function. Capillaries provide thin exchange interfaces, arterioles strongly influence resistance, and veins serve as important capacitance vessels with valves in many locations. Blood pressure and flow velocity are not identical quantities. A large total capillary cross sectional area helps explain relatively slow average flow through the exchange network."
+    },
+    {
+      "title": "Circulatory regulation and prescribed disorders",
+      "formula": "Autonomic and hormonal signals modify activity",
+      "points": [
+        "Autonomic and hormonal signals modify activity",
+        "Hypertension is persistently raised arterial pressure",
+        "Coronary disease can reduce myocardial supply",
+        "Heart failure differs from cardiac arrest"
+      ],
+      "board": {
+        "kind": "cardio-control",
+        "lines": [
+          "Autonomic and hormonal signals modify activity",
+          "Hypertension is persistently raised arterial pressure",
+          "Coronary disease can reduce myocardial supply",
+          "Heart failure differs from cardiac arrest"
+        ]
+      },
+      "script": "Autonomic signals and circulating hormones modify cardiac rate, force and vascular tone while the heart retains its myogenic rhythm. Reflex feedback helps respond to pressure changes and tissue demands. Hypertension refers to persistently elevated arterial pressure assessed in an appropriate clinical context, not one arbitrary reading treated as a universal diagnosis. Coronary artery disease can restrict the supply of oxygenated blood to myocardium, often through atherosclerotic narrowing. Angina pectoris describes discomfort associated with inadequate myocardial oxygen supply in the familiar account; it is not identical to death of heart muscle in every episode. Heart failure means cardiac pumping or filling is inadequate for the body's needs under the relevant conditions. It does not mean the heart has necessarily stopped, and it is different from cardiac arrest. These are educational distinctions rather than symptom based self diagnosis. Separate the vessel disorder, the tissue oxygen balance, a symptom pattern and overall pump function when comparing the listed terms."
+    },
+    {
+      "title": "Nitrogenous wastes and excretory routes",
+      "formula": "Ammonia is highly toxic and water-demanding",
+      "points": [
+        "Ammonia is highly toxic and water-demanding",
+        "Urea is the main human nitrogenous waste",
+        "Uric acid conserves water in suitable animals",
+        "Excretion differs from elimination of undigested food"
+      ],
+      "board": {
+        "kind": "wastes",
+        "lines": [
+          "Ammonia is highly toxic and water-demanding",
+          "Urea is the main human nitrogenous waste",
+          "Uric acid conserves water in suitable animals",
+          "Excretion differs from elimination of undigested food"
+        ]
+      },
+      "script": "Nitrogen metabolism produces wastes that animals eliminate in different chemical forms. Ammonotelic animals excrete much of their nitrogen as ammonia, which is highly toxic and commonly requires abundant water for safe removal. Many aquatic animals illustrate that strategy, though habitat alone cannot identify every species' waste pattern. Ureotelic animals convert substantial ammonia derived nitrogen into urea; humans and other mammals provide familiar examples. Uricotelic animals, including birds and many reptiles, eliminate nitrogen largely as uric acid, reducing water loss at a different energetic cost. These are predominant strategies rather than proof that each animal excretes only one nitrogen containing compound. Excretion removes metabolic wastes and excess substances, whereas egestion eliminates undigested material from the digestive tract. Human lungs remove carbon dioxide and water vapor, skin releases water and salts with small amounts of some wastes, and the liver processes and routes substances through bile. Kidneys coordinate waste elimination with fluid, electrolyte and acid base regulation."
+    },
+    {
+      "title": "Urinary organs and nephron organization",
+      "formula": "Kidneys → ureters → bladder → urethra",
+      "points": [
+        "Kidneys → ureters → bladder → urethra",
+        "Corpuscle: glomerulus plus Bowman capsule",
+        "Tubule: PCT, loop, DCT and collecting route",
+        "Blood and filtrate follow separate pathways"
+      ],
+      "board": {
+        "kind": "nephron",
+        "lines": [
+          "Kidneys → ureters → bladder → urethra",
+          "Corpuscle: glomerulus plus Bowman capsule",
+          "Tubule: PCT, loop, DCT and collecting route",
+          "Blood and filtrate follow separate pathways"
+        ]
+      },
+      "script": "The human urinary system includes paired kidneys, ureters, a urinary bladder and urethra. The kidney cortex and medulla contain nephrons and associated collecting structures, with urine draining toward calyces and the renal pelvis before entering a ureter. A nephron begins with a renal corpuscle consisting of a glomerular capillary tuft within Bowman capsule. Filtrate then passes through the proximal convoluted tubule, loop of Henle and distal convoluted tubule before the collecting route. Blood arrives through an afferent arteriole and leaves the glomerulus through an efferent arteriole, then supplies a further capillary network. Juxtamedullary nephrons have long loops and associated vasa recta important for concentrating mechanisms. A ureter is not a giant collecting duct inside one nephron, and the urethra is not the vessel returning blood to the heart. Keep the blood route separate from the tubular route: filtration transfers selected material across an interface rather than sending the entire blood stream down a tubule."
+    },
+    {
+      "title": "Filtration, reabsorption and secretion",
+      "formula": "Glomerular filtration forms a largely cell-free filtrate",
+      "points": [
+        "Glomerular filtration forms a largely cell-free filtrate",
+        "Reabsorption: tubule toward blood",
+        "Secretion: blood toward tubular lumen",
+        "Excretion = filtration − reabsorption + secretion"
+      ],
+      "board": {
+        "kind": "filtration",
+        "lines": [
+          "Glomerular filtration forms a largely cell-free filtrate",
+          "Reabsorption: tubule toward blood",
+          "Secretion: blood toward tubular lumen",
+          "Excretion = filtration − reabsorption + secretion"
+        ]
+      },
+      "script": "Glomerular filtration moves water and small solutes across the filtration barrier into Bowman space under the net filtration pressure. Healthy filtration normally retains blood cells and most large plasma proteins, so filtrate is not simply whole blood with a new name. Reabsorption returns substances from tubular fluid toward the blood; secretion transfers substances from blood or interstitial routes into the tubular lumen. The amount excreted can therefore be expressed as filtered amount minus reabsorbed amount plus secreted amount for a stated substance and time interval. Much water, sodium and useful nutrients are reclaimed, with major bulk reabsorption in the proximal tubule. Glucose is normally strongly reabsorbed within transport capacity rather than being absent from the initial filtrate. Different nephron segments have different transport properties. A value in millilitres per minute describes a rate, not a concentration. Distinguish glomerular filtration rate, final urine flow, solute concentration and the amount of solute eliminated when interpreting numerical questions."
+    },
+    {
+      "title": "Countercurrent concentration and osmoregulation",
+      "formula": "Descending limb: relatively water-permeable",
+      "points": [
+        "Descending limb: relatively water-permeable",
+        "Ascending limb: salt transport, little water flow",
+        "Medullary gradient supports concentration",
+        "Vasa recta help preserve the gradient"
+      ],
+      "board": {
+        "kind": "countercurrent",
+        "lines": [
+          "Descending limb: relatively water-permeable",
+          "Ascending limb: salt transport, little water flow",
+          "Medullary gradient supports concentration",
+          "Vasa recta help preserve the gradient"
+        ]
+      },
+      "script": "The loop of Henle and medullary environment contribute to the kidney's concentrating mechanism. In the elementary comparison, the descending limb is relatively permeable to water, allowing water movement toward a more concentrated medullary interstitium. The ascending limb has low water permeability and moves salt out through segment specific mechanisms, helping establish the osmotic gradient. Opposite directions of flow support a countercurrent multiplier arrangement. The vasa recta act as countercurrent exchangers that help maintain the gradient while supplying blood; they are not simply another name for the loop. Urea recycling also contributes to the inner medullary gradient in the standard account. Water withdrawal from collecting ducts depends on both this environment and regulated water permeability, including the influence of ADH. The kidney does not concentrate urine by actively pumping water molecules with a dedicated water pump. Specify the segment, permeability and surrounding osmotic conditions before predicting whether tubular fluid becomes more dilute or concentrated."
+    },
+    {
+      "title": "Renal regulation: ADH, RAAS and atrial signals",
+      "formula": "ADH increases collecting-duct water permeability",
+      "points": [
+        "ADH increases collecting-duct water permeability",
+        "Renin helps activate angiotensin pathways",
+        "Aldosterone supports sodium reabsorption",
+        "Atrial natriuretic signals oppose volume expansion"
+      ],
+      "board": {
+        "kind": "renal-control",
+        "lines": [
+          "ADH increases collecting-duct water permeability",
+          "Renin helps activate angiotensin pathways",
+          "Aldosterone supports sodium reabsorption",
+          "Atrial natriuretic signals oppose volume expansion"
+        ]
+      },
+      "script": "Antidiuretic hormone, or ADH, is synthesized in hypothalamic neurons and released from the posterior pituitary. It can increase collecting duct water permeability, promoting water recovery under suitable conditions. Renin release by juxtaglomerular cells helps initiate the renin angiotensin aldosterone system when relevant perfusion or signaling conditions change. Angiotensin two supports vasoconstriction and stimulates aldosterone secretion. Aldosterone from the adrenal cortex promotes sodium reabsorption and potassium secretion in responsive distal nephron regions; its action is not identical to ADH controlled water channels. Atrial natriuretic signals released with atrial stretch favor sodium loss and counter volume expanding mechanisms in the elementary account. These systems interact rather than acting as isolated switches that always push filtration in one direction. Osmoregulation and blood volume regulation overlap but are not the same measured variable. Always distinguish the hormone's site of synthesis, its release site, its target and the transported substance before interpreting a feedback diagram."
+    },
+    {
+      "title": "Kidney disorders, diabetes insipidus and dialysis",
+      "formula": "Uraemia: accumulation associated with renal dysfunction",
+      "points": [
+        "Uraemia: accumulation associated with renal dysfunction",
+        "Calculi are urinary stones; nephritis inflammation",
+        "Diabetes insipidus differs from mellitus",
+        "Dialysis exchanges solutes across a membrane"
+      ],
+      "board": {
+        "kind": "renal-disorders",
+        "lines": [
+          "Uraemia: accumulation associated with renal dysfunction",
+          "Calculi are urinary stones; nephritis inflammation",
+          "Diabetes insipidus differs from mellitus",
+          "Dialysis exchanges solutes across a membrane"
+        ]
+      },
+      "script": "Renal dysfunction can impair waste removal and fluid regulation. Uraemia describes a clinical syndrome associated with retention of nitrogenous and other substances in significant kidney dysfunction, not simply the normal presence of urea in blood. Nephritis refers to inflammatory kidney conditions, while urinary calculi are stones that can obstruct or irritate parts of the urinary tract. Renal failure has varied causes and does not mean every nephron stops at precisely the same moment. Diabetes insipidus involves impaired water conservation due to deficient ADH action, whether from hormone deficiency or reduced renal responsiveness. It is different from the glucose regulation disorder diabetes mellitus. In haemodialysis, blood exchanges selected solutes and water across a semipermeable membrane with a suitably prepared dialysis fluid. Blood cells remain in the blood pathway; blood is not simply poured through an open filter into the fluid. An artificial kidney supports selected replacement functions but does not reproduce every endocrine and regulatory function of a healthy kidney."
+    },
+    {
+      "title": "Movement types and skeletal muscle organization",
+      "formula": "Cilia, flagella and muscle generate movement",
+      "points": [
+        "Cilia, flagella and muscle generate movement",
+        "Not every movement changes whole-body location",
+        "Muscle → fascicle → fibre → myofibril",
+        "Sarcomeres repeat between Z lines"
+      ],
+      "board": {
+        "kind": "muscle",
+        "lines": [
+          "Cilia, flagella and muscle generate movement",
+          "Not every movement changes whole-body location",
+          "Muscle → fascicle → fibre → myofibril",
+          "Sarcomeres repeat between Z lines"
+        ]
+      },
+      "script": "Movement can involve cilia, flagella or contractile muscle systems. Cilia move material along suitable epithelial surfaces, and the sperm flagellum provides a familiar cellular propulsion example. Locomotion changes the location of the organism, whereas many movements, such as shifting material internally, are not locomotion. Skeletal muscle is organized into bundles called fascicles, each containing muscle fibres, with connective coverings and neurovascular supply. A muscle fibre is a large multinucleate cell containing myofibrils made of repeating sarcomeres. A sarcomere extends between consecutive Z lines. Thin filaments contain actin and regulatory proteins, while thick filaments contain myosin. The A band corresponds to the thick filament region, the I band includes thin filament regions without thick overlap, and the H zone is the central thick only region in the elementary relaxed diagram. A muscle fibre, myofibril and individual myofilament are different structural levels. Avoid counting each visible striation as one whole muscle cell or treating every cellular movement as skeletal muscle contraction."
+    },
+    {
+      "title": "Sliding filaments and excitation-contraction coupling",
+      "formula": "Ca2+ binds troponin in skeletal muscle",
+      "points": [
+        "Ca2+ binds troponin in skeletal muscle",
+        "Tropomyosin shifts to expose binding sites",
+        "ATP binding detaches myosin from actin",
+        "Filaments slide; their lengths do not shrink"
+      ],
+      "board": {
+        "kind": "sliding",
+        "lines": [
+          "Ca2+ binds troponin in skeletal muscle",
+          "Tropomyosin shifts to expose binding sites",
+          "ATP binding detaches myosin from actin",
+          "Filaments slide; their lengths do not shrink"
+        ]
+      },
+      "script": "At a skeletal neuromuscular junction, motor neuron signaling triggers a muscle membrane response that spreads through the fibre and its transverse tubules. Calcium is released from the sarcoplasmic reticulum and binds to troponin, shifting the regulatory arrangement so myosin binding sites on actin become available. Energized myosin heads form cross bridges and undergo force generating transitions. ATP binding helps detach myosin from actin, while ATP hydrolysis supports resetting for another cycle. Calcium removal back into storage also requires energy dependent processes. In the sliding filament model, thin and thick filaments slide relative to one another; their individual lengths do not simply shrink. The sarcomere shortens, the I band and H zone decrease, and the A band remains approximately constant. Loss of ATP can prevent normal detachment, explaining the elementary rigor comparison. Keep calcium's regulatory role, ATP's cycling role and mechanical shortening distinct rather than describing calcium itself as the fuel for contraction."
+    },
+    {
+      "title": "Skeleton: axial and appendicular components",
+      "formula": "Typical adult skeleton: 206 bones",
+      "points": [
+        "Typical adult skeleton: 206 bones",
+        "Axial skeleton: 80; appendicular: 126",
+        "Girdles connect limbs with the body framework",
+        "Bone is living, remodeled connective tissue"
+      ],
+      "board": {
+        "kind": "skeleton",
+        "lines": [
+          "Typical adult skeleton: 206 bones",
+          "Axial skeleton: 80; appendicular: 126",
+          "Girdles connect limbs with the body framework",
+          "Bone is living, remodeled connective tissue"
+        ]
+      },
+      "script": "The typical adult human skeleton is described as two hundred and six bones, divided into eighty axial and one hundred and twenty six appendicular bones in the standard examination account. Counts can vary with age and individual anatomy, so the number should be tied to that conventional adult reference. The axial skeleton includes skull components, vertebral column and thoracic cage, together with associated structures such as the hyoid and auditory ossicles. The appendicular skeleton comprises limb bones and pectoral and pelvic girdles. The adult vertebral column has fused sacral and coccygeal elements, so vertebrae before fusion and adult bones are different counting references. The thoracic cage includes twelve rib pairs and the sternum, with true, false and floating rib comparisons based on their anterior attachment patterns. Bones support, protect, provide levers and house marrow; they are living remodeled connective tissue rather than inert mineral rods. Identify the region and age convention before solving a skeletal counting question."
+    },
+    {
+      "title": "Joint types and movement",
+      "formula": "Fibrous, cartilaginous and synovial joints",
+      "points": [
+        "Fibrous, cartilaginous and synovial joints",
+        "Synovial cavity permits varied movements",
+        "Hinge, pivot and ball-and-socket differ",
+        "Ligaments connect bones; tendons attach muscle"
+      ],
+      "board": {
+        "kind": "joints",
+        "lines": [
+          "Fibrous, cartilaginous and synovial joints",
+          "Synovial cavity permits varied movements",
+          "Hinge, pivot and ball-and-socket differ",
+          "Ligaments connect bones; tendons attach muscle"
+        ]
+      },
+      "script": "Joints can be compared as fibrous, cartilaginous and synovial according to their structure. Skull sutures illustrate fibrous joining, while cartilaginous connections include the relevant vertebral and pubic examples. Synovial joints have a cavity with fluid and articular surfaces arranged for particular movements. The elbow provides a hinge comparison, the atlas axis complex a pivot comparison, and shoulder and hip ball and socket comparisons. The thumb's carpometacarpal joint illustrates a saddle arrangement, while suitable intercarpal joints permit gliding. Not every synovial joint moves equally in every plane. Ligaments connect bones and help stabilize joints, whereas tendons connect muscles with bones in the familiar comparison. Joint movement depends on articular shape, connective restraints and muscular action together. Calling a joint freely movable does not mean it has unlimited safe motion or no stabilizing structures. Separate structural category, specific joint shape and actual movement when matching an example to its description."
+    },
+    {
+      "title": "Prescribed muscle, bone and joint disorders",
+      "formula": "Myasthenia affects neuromuscular transmission",
+      "points": [
+        "Myasthenia affects neuromuscular transmission",
+        "Tetany can follow low extracellular calcium",
+        "Dystrophies are inherited muscle disorders",
+        "Gout, arthritis and osteoporosis are distinct"
+      ],
+      "board": {
+        "kind": "movement-disorders",
+        "lines": [
+          "Myasthenia affects neuromuscular transmission",
+          "Tetany can follow low extracellular calcium",
+          "Dystrophies are inherited muscle disorders",
+          "Gout, arthritis and osteoporosis are distinct"
+        ]
+      },
+      "script": "Myasthenia gravis commonly involves an autoimmune impairment of neuromuscular transmission, often targeting components associated with acetylcholine receptors. It is not simply a lack of all muscle ATP. Tetany refers to increased neuromuscular excitability with spasms, classically associated with low extracellular calcium in the elementary account; it is different from tetanus infection. Muscular dystrophies are inherited disorders with progressive muscle damage, with different genetic forms rather than one universal cause. Arthritis describes joint inflammation or associated joint disease contexts and is not synonymous with every bone condition. Osteoporosis involves reduced bone strength associated with loss of bone mass and structural changes, increasing fracture risk. Gout involves deposition of monosodium urate crystals in relevant tissues; urea crystals are not the standard explanation. These short comparisons identify the biological mechanism, not a way to diagnose oneself from one symptom. Distinguish neuromuscular signaling, muscle integrity, joint inflammation and bone strength when comparing the prescribed names."
+    },
+    {
+      "title": "Neurons, nerves and resting membrane potential",
+      "formula": "Neuron: cell body, dendrites and axon",
+      "points": [
+        "Neuron: cell body, dendrites and axon",
+        "Glial cells support neural function",
+        "Resting membrane is electrically polarized",
+        "Ion gradients and selective permeability matter"
+      ],
+      "board": {
+        "kind": "neuron",
+        "lines": [
+          "Neuron: cell body, dendrites and axon",
+          "Glial cells support neural function",
+          "Resting membrane is electrically polarized",
+          "Ion gradients and selective permeability matter"
+        ]
+      },
+      "script": "A typical neuron has a cell body, dendrites and an axon, with forms adapted to different functions. Dendrites commonly receive input and the axon carries signals toward terminals in the elementary description, but real arrangements can be more varied. Neuroglia provide important support, insulation and other functions rather than being unnecessary filler. A nerve is a bundle of nerve fibres with associated coverings, not one giant neuron. At rest, an excitable neuronal membrane usually has an electrical potential difference with its interior negative relative to the outside. Ion concentration gradients, selective membrane permeability and the sodium potassium pump contribute to maintaining the system. The pump moves three sodium ions outward for two potassium ions inward per ATP in the familiar account. It maintains gradients over time but is not the rapid channel opening responsible for every action potential upstroke. Resting does not mean the cell has no ion movement or consumes no energy."
+    },
+    {
+      "title": "Action potential and conduction",
+      "formula": "Threshold activation opens voltage-gated channels",
+      "points": [
+        "Threshold activation opens voltage-gated channels",
+        "Na+ entry drives the usual rapid upstroke",
+        "K+ exit supports repolarization",
+        "Myelin supports saltatory conduction at nodes"
+      ],
+      "board": {
+        "kind": "action",
+        "lines": [
+          "Threshold activation opens voltage-gated channels",
+          "Na+ entry drives the usual rapid upstroke",
+          "K+ exit supports repolarization",
+          "Myelin supports saltatory conduction at nodes"
+        ]
+      },
+      "script": "In the familiar axonal action potential, sufficient depolarization to threshold activates voltage gated sodium channels and rapid sodium entry produces the upstroke. Sodium channel inactivation and opening of potassium channels contribute to repolarization, often followed by a transient after hyperpolarization. Refractory behavior limits immediate reexcitation and helps explain propagation patterns. An individual action potential is all or none under the stated conditions; increasing stimulus strength does not simply make each spike arbitrarily taller. Information can instead involve firing frequency and recruitment. Local currents depolarize adjacent membrane, while myelination reduces current loss and allows action potentials to be regenerated at nodes of Ranvier, called saltatory conduction. The signal is not a packet of sodium ions racing intact from the axon hillock to its terminal. Ionic flow across successive membrane regions and electrical spread along the fibre work together. Distinguish voltage change, ion concentration gradients and the movement of individual ions when interpreting a conduction diagram."
+    },
+    {
+      "title": "Synapses and reflex pathways",
+      "formula": "Presynaptic Ca2+ entry triggers transmitter release",
+      "points": [
+        "Presynaptic Ca2+ entry triggers transmitter release",
+        "Transmitters act on postsynaptic receptors",
+        "Postsynaptic effects may excite or inhibit",
+        "Reflex arc includes sensory and motor pathways"
+      ],
+      "board": {
+        "kind": "synapse",
+        "lines": [
+          "Presynaptic Ca2+ entry triggers transmitter release",
+          "Transmitters act on postsynaptic receptors",
+          "Postsynaptic effects may excite or inhibit",
+          "Reflex arc includes sensory and motor pathways"
+        ]
+      },
+      "script": "At a typical chemical synapse, arrival of an action potential at the presynaptic terminal opens calcium channels. Calcium entry triggers transmitter release from vesicles into the synaptic cleft. The transmitter binds appropriate receptors on the postsynaptic membrane, changing its signaling state. Depending on receptor and ion conductances, a postsynaptic response can be excitatory or inhibitory; one cannot infer the effect from the word neurotransmitter alone. Transmitter removal or inactivation helps terminate the signal. Electrical synapses permit more direct ionic communication and differ from this vesicle based sequence. A reflex arc includes a receptor, sensory pathway, central integration, motor pathway and effector in the elementary scheme. Some reflexes involve few synapses, while others require more complex networks. A spinal reflex does not require prior conscious decision, but this does not mean the brain receives no information or can never modulate the response. Keep the anatomical route separate from the electrical and chemical events at each junction."
+    },
+    {
+      "title": "Central nervous system organization",
+      "formula": "CNS comprises brain and spinal cord",
+      "points": [
+        "CNS comprises brain and spinal cord",
+        "Cerebrum supports sensory and higher functions",
+        "Cerebellum coordinates posture and movement",
+        "Brainstem supports vital regulatory networks"
+      ],
+      "board": {
+        "kind": "cns",
+        "lines": [
+          "CNS comprises brain and spinal cord",
+          "Cerebrum supports sensory and higher functions",
+          "Cerebellum coordinates posture and movement",
+          "Brainstem supports vital regulatory networks"
+        ]
+      },
+      "script": "The central nervous system consists of the brain and spinal cord, protected by surrounding structures including meninges and cerebrospinal fluid. In the elementary brain account, the cerebrum has two hemispheres and a folded cortical surface associated with sensory, motor and higher integrative functions. The thalamus participates in major relay and integration pathways, while the hypothalamus links homeostatic regulation with autonomic and endocrine processes. The midbrain, pons and medulla form important brainstem regions, with networks involved in breathing, cardiovascular regulation and other functions. The cerebellum contributes to coordination, timing, posture and balance rather than being the sole source of voluntary intention. The spinal cord carries pathways and participates in reflex integration. Gray and white matter refer broadly to tissue composition and organization; their arrangement differs between cortex and typical spinal sections. Do not reduce a complex behavior to one isolated labeled dot on a diagram. Use regional functions as a foundation while recognizing that neural systems interact."
+    },
+    {
+      "title": "Peripheral, somatic and visceral control",
+      "formula": "PNS links CNS with body structures",
+      "points": [
+        "PNS links CNS with body structures",
+        "Afferent pathways carry input toward CNS",
+        "Efferent pathways carry output from CNS",
+        "Autonomic divisions regulate visceral targets"
+      ],
+      "board": {
+        "kind": "pns",
+        "lines": [
+          "PNS links CNS with body structures",
+          "Afferent pathways carry input toward CNS",
+          "Efferent pathways carry output from CNS",
+          "Autonomic divisions regulate visceral targets"
+        ]
+      },
+      "script": "The peripheral nervous system includes neural structures connecting the central nervous system with receptors and effectors. Afferent pathways carry information toward the central nervous system, while efferent pathways carry output toward targets. Somatic motor pathways control skeletal muscle in the familiar comparison, including reflex activity as well as voluntary actions. Autonomic or visceral motor pathways regulate targets such as cardiac muscle, smooth muscle and glands. Sympathetic and parasympathetic divisions often have contrasting effects on an organ, but this is not a universal rule that every target receives identical dual innervation or perfectly opposite responses. Enteric networks contribute to gastrointestinal control and interact with broader autonomic signals. A typical autonomic output route includes preganglionic and postganglionic neurons, unlike the basic single somatic motor neuron route to skeletal muscle. Visceral sensation and visceral motor output should not be conflated. Always specify direction, target tissue and the level of the pathway before assigning a function to a nerve or division."
+    },
+    {
+      "title": "Hormones, receptors and feedback",
+      "formula": "Hormones act on receptor-bearing target cells",
+      "points": [
+        "Hormones act on receptor-bearing target cells",
+        "Peptide signals commonly use surface receptors",
+        "Steroid signals commonly use intracellular receptors",
+        "Feedback regulates endocrine axes"
+      ],
+      "board": {
+        "kind": "hormone",
+        "lines": [
+          "Hormones act on receptor-bearing target cells",
+          "Peptide signals commonly use surface receptors",
+          "Steroid signals commonly use intracellular receptors",
+          "Feedback regulates endocrine axes"
+        ]
+      },
+      "script": "Hormones are chemical messengers that influence target cells with suitable receptors and signaling machinery. Circulation through the body does not mean every cell responds equally. Peptide hormones commonly act through membrane receptors and intracellular signaling pathways, which may involve second messengers. Steroid hormones commonly bind intracellular receptors and influence gene expression. Thyroid hormones are amino acid derived but act largely through intracellular nuclear receptor pathways, showing why chemical origin and receptor location are related comparisons rather than one simple universal rule. Hormone effects depend on concentration, receptor availability and interactions with other signals. Negative feedback stabilizes many endocrine axes: an increase in a downstream hormone can reduce upstream stimulation. Positive feedback occurs in particular physiological settings and should not be substituted for every regulatory loop. An endocrine gland releases hormones into internal fluid pathways, whereas exocrine secretions reach a surface or lumen through relevant routes. Identify the gland, hormone, receptor and response rather than treating them as interchangeable labels."
+    },
+    {
+      "title": "Hypothalamus and pituitary divisions",
+      "formula": "Hypothalamic factors regulate anterior pituitary",
+      "points": [
+        "Hypothalamic factors regulate anterior pituitary",
+        "Anterior pituitary: GH, PRL and tropic hormones",
+        "Posterior releases hypothalamic ADH and oxytocin",
+        "Synthesis and release sites can differ"
+      ],
+      "board": {
+        "kind": "pituitary",
+        "lines": [
+          "Hypothalamic factors regulate anterior pituitary",
+          "Anterior pituitary: GH, PRL and tropic hormones",
+          "Posterior releases hypothalamic ADH and oxytocin",
+          "Synthesis and release sites can differ"
+        ]
+      },
+      "script": "The hypothalamus regulates anterior pituitary secretion through releasing and inhibiting factors delivered by the portal circulation. The anterior pituitary produces hormones including growth hormone, prolactin, thyroid stimulating hormone, adrenocorticotropic hormone and the gonadotropins FSH and LH. A tropic hormone influences another endocrine tissue, but not every pituitary hormone has exactly that role. The posterior pituitary stores and releases ADH and oxytocin synthesized in hypothalamic neurons; it should not be described as their main synthesis site. ADH participates in water conservation, while oxytocin supports uterine contraction and milk ejection in the relevant contexts. Prolactin supports milk production, a different process from milk ejection. Growth hormone effects involve direct actions and mediators including insulin like growth factors. Calling the pituitary a master gland is an educational shorthand, not proof that it operates independently of hypothalamic input, feedback or other regulatory signals. Distinguish synthesis, storage, release and target effects at every step."
+    },
+    {
+      "title": "Thyroid and parathyroid regulation",
+      "formula": "Thyroid T3 and T4 contain iodine",
+      "points": [
+        "Thyroid T3 and T4 contain iodine",
+        "Thyroid hormones support metabolism and development",
+        "Parathyroid hormone tends to raise blood Ca2+",
+        "Calcitonin is a different thyroid signal"
+      ],
+      "board": {
+        "kind": "thyroid",
+        "lines": [
+          "Thyroid T3 and T4 contain iodine",
+          "Thyroid hormones support metabolism and development",
+          "Parathyroid hormone tends to raise blood Ca2+",
+          "Calcitonin is a different thyroid signal"
+        ]
+      },
+      "script": "The thyroid produces the iodine containing hormones T three and T four, which influence metabolic activity and are important for normal growth and nervous system development. Their production is regulated through the hypothalamic pituitary thyroid axis in the elementary account. Iodine is a component of these hormones, not a general synonym for every endocrine secretion. Thyroid parafollicular cells produce calcitonin, a separate peptide signal involved in calcium regulation. Parathyroid glands produce parathyroid hormone, which tends to increase blood calcium through coordinated effects involving bone, kidneys and vitamin D related intestinal absorption. These glands are anatomically close to the thyroid but do not simply secrete another form of thyroxine. Calcium regulation involves several organs and signals, so a single arrow in a diagram is a simplified net effect. Too little effective parathyroid action can lower extracellular calcium and increase neuromuscular excitability. Compare thyroid metabolic signals, calcitonin and parathyroid hormone by source, chemistry and target function."
+    },
+    {
+      "title": "Adrenal cortex and medulla",
+      "formula": "Medulla: adrenaline and noradrenaline",
+      "points": [
+        "Medulla: adrenaline and noradrenaline",
+        "Cortex: glucocorticoids and mineralocorticoids",
+        "Cortisol supports metabolic stress responses",
+        "Aldosterone affects sodium and potassium balance"
+      ],
+      "board": {
+        "kind": "adrenal",
+        "lines": [
+          "Medulla: adrenaline and noradrenaline",
+          "Cortex: glucocorticoids and mineralocorticoids",
+          "Cortisol supports metabolic stress responses",
+          "Aldosterone affects sodium and potassium balance"
+        ]
+      },
+      "script": "The adrenal gland has a cortex and medulla with different cellular organization and secretory products. The medulla releases catecholamines including adrenaline and noradrenaline, linking endocrine output with sympathetic related responses. These signals can increase cardiac activity and mobilize metabolic resources in suitable contexts. The cortex produces steroid hormones, including glucocorticoids such as cortisol and mineralocorticoids such as aldosterone, along with adrenal androgen contributions. Cortisol affects metabolism and stress adaptation, while aldosterone influences sodium retention and potassium secretion in responsive kidney regions. Adrenaline and aldosterone are therefore not interchangeable names for one emergency hormone. ACTH is important in regulation of cortisol secretion, whereas aldosterone is strongly influenced by angiotensin and potassium related control. The gland's outer and inner regions do not necessarily share identical upstream regulation. Interpret stress as a physiological context rather than assuming every rise in a hormone represents disease. Keep cortex, medulla, hormone chemistry and primary target effects distinct when comparing the adrenal functions."
+    },
+    {
+      "title": "Endocrine pancreas and glucose regulation",
+      "formula": "Islet beta cells produce insulin",
+      "points": [
+        "Islet beta cells produce insulin",
+        "Alpha cells produce glucagon",
+        "Insulin supports storage and glucose disposal",
+        "Glucagon supports hepatic glucose output"
+      ],
+      "board": {
+        "kind": "pancreas",
+        "lines": [
+          "Islet beta cells produce insulin",
+          "Alpha cells produce glucagon",
+          "Insulin supports storage and glucose disposal",
+          "Glucagon supports hepatic glucose output"
+        ]
+      },
+      "script": "The pancreas has exocrine digestive functions and endocrine islets, so classifying the whole organ as only one type is incomplete. In the islets, beta cells produce insulin and alpha cells produce glucagon in the elementary account. Insulin promotes storage and metabolic use of nutrients and supports glucose uptake in insulin responsive tissues, while restraining hepatic glucose output. Not every tissue requires insulin for all glucose entry; the brain and red cells illustrate why that shortcut is too broad. Glucagon helps increase hepatic glucose availability through processes including glycogen breakdown and gluconeogenesis. The two signals coordinate with other hormones rather than maintaining blood glucose through a single isolated switch. Somatostatin from islet delta cells provides additional local and systemic regulation. A rise in blood glucose can stimulate insulin release in a suitable functioning system, supporting negative feedback. Separate hormone deficiency, tissue resistance and the observed glucose response when interpreting a pancreatic regulation question."
+    },
+    {
+      "title": "Pineal, thymic and gonadal hormones",
+      "formula": "Pineal melatonin helps coordinate circadian signals",
+      "points": [
+        "Pineal melatonin helps coordinate circadian signals",
+        "Thymic signals support immune development",
+        "Testes produce androgens and inhibin",
+        "Ovaries produce estrogens, progesterone and inhibin"
+      ],
+      "board": {
+        "kind": "other-glands",
+        "lines": [
+          "Pineal melatonin helps coordinate circadian signals",
+          "Thymic signals support immune development",
+          "Testes produce androgens and inhibin",
+          "Ovaries produce estrogens, progesterone and inhibin"
+        ]
+      },
+      "script": "The pineal gland produces melatonin, which contributes to signaling associated with daily light and dark cycles and circadian organization. It is not an on off guarantee of sleep independent of every other influence. Thymic hormones and the thymic environment support aspects of T lymphocyte development in the elementary account, linking endocrine and immune functions. Testicular Leydig cells produce androgens such as testosterone under relevant gonadotropin control, while Sertoli cell functions include support of developing germ cells and inhibin signaling. Ovarian follicles and the corpus luteum contribute estrogens and progesterone in their appropriate stages, with inhibin also participating in feedback. Detailed gametogenesis, cycles and reproductive events belong to the next unit; here the emphasis is endocrine source and regulation. Gonadal hormones have broader physiological effects beyond one visible secondary sexual trait. These glands demonstrate why endocrine coordination is a network involving neural timing, immune development and reproductive tissues rather than only the thyroid and pancreas."
+    },
+    {
+      "title": "Growth and thyroid disorder comparisons",
+      "formula": "Childhood GH deficiency can impair growth",
+      "points": [
+        "Childhood GH deficiency can impair growth",
+        "GH excess: gigantism before plate closure",
+        "Adult GH excess: acromegaly",
+        "Goitre does not specify thyroid hormone level"
+      ],
+      "board": {
+        "kind": "endocrine-disorders",
+        "lines": [
+          "Childhood GH deficiency can impair growth",
+          "GH excess: gigantism before plate closure",
+          "Adult GH excess: acromegaly",
+          "Goitre does not specify thyroid hormone level"
+        ]
+      },
+      "script": "Growth hormone deficiency during childhood can cause a particular form of impaired growth, historically described in examination terminology as pituitary dwarfism. Not every short stature has that cause. Growth hormone excess before epiphyseal closure can produce gigantism, whereas excess after closure produces acromegaly with enlargement of relevant tissues rather than ordinary further lengthening of long bones. Severe untreated thyroid hormone deficiency during early development can impair growth and nervous system development; older syllabus terminology includes cretinism, but congenital hypothyroidism is the more appropriate contemporary description. Goitre means thyroid enlargement and does not by itself establish whether hormone production is high, low or normal. Iodine deficiency can cause one important goitre pattern, while Graves disease can cause hyperthyroidism with characteristic eye involvement, reflected in the older phrase exophthalmic goitre. These are mechanism based educational comparisons, not diagnostic rules based on appearance. Distinguish hormone level, developmental timing, gland size and the specific cause."
+    },
+    {
+      "title": "Diabetes, Addison disease and integrated review",
+      "formula": "Mellitus: insulin deficiency and/or resistance",
+      "points": [
+        "Mellitus: insulin deficiency and/or resistance",
+        "Insipidus: impaired ADH water-conserving action",
+        "Addison disease: primary adrenal insufficiency",
+        "Foundation coverage; further mixed cases remain"
+      ],
+      "board": {
+        "kind": "integration",
+        "lines": [
+          "Mellitus: insulin deficiency and/or resistance",
+          "Insipidus: impaired ADH water-conserving action",
+          "Addison disease: primary adrenal insufficiency",
+          "Foundation coverage; further mixed cases remain"
+        ]
+      },
+      "script": "Diabetes mellitus involves disturbed glucose regulation associated with inadequate insulin secretion, insulin action or both, depending on the form. It must be distinguished from diabetes insipidus, where impaired ADH related water conservation causes a different physiological problem. Similar words do not mean the same hormone or mechanism. Addison disease is primary adrenal insufficiency, commonly involving deficient cortical glucocorticoid and mineralocorticoid output; it is not simply an absence of adrenal medullary adrenaline. Feedback relationships help distinguish a primary gland failure from insufficient upstream stimulation, although real interpretation requires more information than one isolated symptom. This recording provides foundations across the six prescribed Human Physiology headings: breathing, circulation, excretion, locomotion, neural coordination and endocrine regulation. Disorder descriptions are brief biological comparisons for study. Further numerical problems, labelled diagrams, experimental records and mixed physiological cases remain beyond one recording. Continue by tracing the signal or substance, naming the compartments and stating the assumptions before choosing an answer."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Human alveoli primarily provide:",
+      "options": [
+        "A thin, extensive gas exchange interface",
+        "A muscular pump for all inspired air",
+        "The main site of urea synthesis",
+        "An endocrine storage organ"
+      ],
+      "answer": 0,
+      "explanation": "Ventilation and diffusion are different processes."
+    },
+    {
+      "question": "Insect tracheae and human blood transport are:",
+      "options": [
+        "Identical lung circuits",
+        "Different gas-delivery arrangements",
+        "Both glomerular filters",
+        "Both thyroid follicles"
+      ],
+      "answer": 1,
+      "explanation": "Animal respiratory comparisons require the actual transport route."
+    },
+    {
+      "question": "During quiet inspiration, alveolar pressure generally becomes:",
+      "options": [
+        "Higher than atmospheric throughout airflow",
+        "Identical to arterial oxygen partial pressure",
+        "Lower than atmospheric pressure",
+        "Independent of thoracic volume"
+      ],
+      "answer": 2,
+      "explanation": "Air enters down a pressure difference after expansion."
+    },
+    {
+      "question": "Quiet expiration is mainly driven by:",
+      "options": [
+        "Active contraction of every alveolus",
+        "Continual diaphragm flattening",
+        "Kidney filtration pressure",
+        "Relaxation and elastic recoil"
+      ],
+      "answer": 3,
+      "explanation": "Forced expiration can additionally recruit muscles."
+    },
+    {
+      "question": "Vital capacity equals:",
+      "options": [
+        "IRV + TV + ERV",
+        "TV + RV only",
+        "Total lung capacity + RV",
+        "Only tidal volume times heart rate"
+      ],
+      "answer": 0,
+      "explanation": "Residual volume is excluded from vital capacity."
+    },
+    {
+      "question": "Simple spirometry cannot directly measure:",
+      "options": [
+        "Tidal volume",
+        "Residual volume",
+        "Inspiratory reserve volume",
+        "Expiratory reserve volume"
+      ],
+      "answer": 1,
+      "explanation": "Residual air is not expelled into the recording apparatus."
+    },
+    {
+      "question": "Most blood oxygen is transported:",
+      "options": [
+        "Only as plasma bicarbonate",
+        "Only in white cell nuclei",
+        "Bound to haemoglobin",
+        "Only dissolved in plasma"
+      ],
+      "answer": 2,
+      "explanation": "Dissolved oxygen is a smaller fraction of total content."
+    },
+    {
+      "question": "Most transported carbon dioxide is carried as:",
+      "options": [
+        "Oxyhaemoglobin only",
+        "Pure gas bubbles",
+        "Bone calcium phosphate",
+        "Bicarbonate"
+      ],
+      "answer": 3,
+      "explanation": "Red-cell carbonic anhydrase supports reversible hydration."
+    },
+    {
+      "question": "Asthma and emphysema are distinguished because emphysema involves:",
+      "options": [
+        "Damage to alveolar walls and elastic properties",
+        "Only a normal rise in tidal volume",
+        "The formation of extra healthy alveoli",
+        "Only low blood urea"
+      ],
+      "answer": 0,
+      "explanation": "Asthma instead involves variable inflammatory airway narrowing."
+    },
+    {
+      "question": "A major ordinary chemical influence on breathing regulation is:",
+      "options": [
+        "Only the absence of every hormone",
+        "CO2-related changes in acidity",
+        "Only red-cell number with no chemical sensing",
+        "Only bladder filling"
+      ],
+      "answer": 1,
+      "explanation": "Oxygen can also affect regulation in appropriate conditions."
+    },
+    {
+      "question": "Platelets are best described as:",
+      "options": [
+        "Small complete red blood cells",
+        "The only plasma proteins",
+        "Cell fragments contributing to haemostasis",
+        "The source of every white blood cell"
+      ],
+      "answer": 2,
+      "explanation": "Platelets differ from erythrocytes and leukocytes."
+    },
+    {
+      "question": "A function of lymph is to:",
+      "options": [
+        "Replace every systemic artery",
+        "Produce all red-cell haemoglobin",
+        "Carry urine to the bladder",
+        "Return interstitial fluid and transport absorbed fats"
+      ],
+      "answer": 3,
+      "explanation": "Lymphatic return complements blood circulation."
+    },
+    {
+      "question": "In the basic ABO account, group A has:",
+      "options": [
+        "A antigen on RBCs and anti-B in plasma",
+        "B antigen and anti-A",
+        "Neither antigen and no antibody",
+        "Both antigens and both ordinary antibodies"
+      ],
+      "answer": 0,
+      "explanation": "Antigen and antibody locations must remain distinct."
+    },
+    {
+      "question": "Which statement about Rh anti-D is correct?",
+      "options": [
+        "Assumed naturally present in every Rh-negative person",
+        "Can be produced following sensitizing exposure",
+        "A thyroid hormone",
+        "The same as red-cell D antigen"
+      ],
+      "answer": 1,
+      "explanation": "Rh sensitization differs from the ordinary ABO antibody comparison."
+    },
+    {
+      "question": "Thrombin converts:",
+      "options": [
+        "Haemoglobin to urea",
+        "Insulin to glucagon",
+        "Fibrinogen to fibrin",
+        "Actin to myosin"
+      ],
+      "answer": 2,
+      "explanation": "Fibrin forms a stabilizing clot network."
+    },
+    {
+      "question": "Serum differs from plasma because it is obtained:",
+      "options": [
+        "By adding every blood cell to water",
+        "Only from lymph nodes",
+        "Before plasma proteins exist",
+        "After clotting, with relevant clotting components removed or consumed"
+      ],
+      "answer": 3,
+      "explanation": "The comparison concerns the fluid after clot formation."
+    },
+    {
+      "question": "Pulmonary veins carry blood:",
+      "options": [
+        "From lungs toward the left atrium",
+        "From right ventricle to lungs",
+        "From kidney to bladder",
+        "From aorta directly to right atrium"
+      ],
+      "answer": 0,
+      "explanation": "Veins are defined by direction toward the heart, not low oxygen."
+    },
+    {
+      "question": "The mitral valve lies between the:",
+      "options": [
+        "Right atrium and right ventricle",
+        "Left atrium and left ventricle",
+        "Left ventricle and aorta",
+        "Right ventricle and pulmonary artery"
+      ],
+      "answer": 1,
+      "explanation": "The right atrioventricular valve is tricuspid."
+    },
+    {
+      "question": "The usual cardiac pacemaker is the:",
+      "options": [
+        "Atrioventricular valve",
+        "Coronary vein",
+        "Sinoatrial node",
+        "Skeletal motor end plate"
+      ],
+      "answer": 2,
+      "explanation": "Specialized cardiac tissue normally initiates the rhythm."
+    },
+    {
+      "question": "The second heart sound is associated mainly with:",
+      "options": [
+        "Atrioventricular valve opening",
+        "Only atrial depolarization",
+        "Opening of all valves simultaneously",
+        "Semilunar valve closure"
+      ],
+      "answer": 3,
+      "explanation": "Valve motion follows pressure relationships."
+    },
+    {
+      "question": "The QRS complex principally represents:",
+      "options": [
+        "Ventricular depolarization",
+        "Ventricular repolarization",
+        "Atrial filling volume directly",
+        "Only valve closure pressure"
+      ],
+      "answer": 0,
+      "explanation": "ECG is an electrical recording, not a direct volume trace."
+    },
+    {
+      "question": "At 70 beats/min and 70 mL/beat, cardiac output is:",
+      "options": [
+        "49 L/min",
+        "4.9 L/min",
+        "0.49 L/min",
+        "140 L/min"
+      ],
+      "answer": 1,
+      "explanation": "Multiplication gives 4900 mL/min, then convert to litres."
+    },
+    {
+      "question": "Heart failure necessarily means cardiac arrest. This is:",
+      "options": [
+        "Correct in every setting",
+        "The definition of angina",
+        "Incorrect; inadequate pumping or filling differs from arrest",
+        "The definition of a normal ECG"
+      ],
+      "answer": 2,
+      "explanation": "The listed cardiovascular terms describe different processes."
+    },
+    {
+      "question": "Coronary artery disease can impair:",
+      "options": [
+        "Only urine drainage",
+        "Only thyroid iodine storage",
+        "Only alveolar cartilage production",
+        "Oxygen supply to myocardium"
+      ],
+      "answer": 3,
+      "explanation": "The heart muscle depends on its coronary supply."
+    },
+    {
+      "question": "The predominant human nitrogenous waste strategy is:",
+      "options": [
+        "Ureotelism",
+        "Exclusive ammonotelism",
+        "Exclusive uricotelism",
+        "No nitrogenous waste production"
+      ],
+      "answer": 0,
+      "explanation": "Humans convert substantial nitrogen into urea."
+    },
+    {
+      "question": "Excretion differs from egestion because excretion concerns:",
+      "options": [
+        "Only undigested food leaving the gut",
+        "Metabolic wastes and excess substances",
+        "Only inhaled air",
+        "Only production of new neurons"
+      ],
+      "answer": 1,
+      "explanation": "Eliminating undigested material is egestion."
+    },
+    {
+      "question": "Blood leaves the glomerulus through the:",
+      "options": [
+        "Ureter",
+        "Urethra",
+        "Efferent arteriole",
+        "Bowman capsule lumen"
+      ],
+      "answer": 2,
+      "explanation": "Afferent and efferent arterioles belong to the blood route."
+    },
+    {
+      "question": "The renal corpuscle comprises:",
+      "options": [
+        "Bladder and urethra",
+        "Only loop and collecting duct",
+        "Only renal pelvis and ureter",
+        "Glomerulus and Bowman capsule"
+      ],
+      "answer": 3,
+      "explanation": "The corpuscle is the initial filtration unit."
+    },
+    {
+      "question": "Tubular reabsorption moves material mainly:",
+      "options": [
+        "From tubular fluid toward blood",
+        "From blood into the lumen by definition",
+        "From bladder into a vein directly",
+        "Only from lungs to alveoli"
+      ],
+      "answer": 0,
+      "explanation": "Secretion describes the opposite tubular transfer direction."
+    },
+    {
+      "question": "Glucose in a healthy functioning nephron is normally:",
+      "options": [
+        "Never present in initial filtrate",
+        "Filtered and then strongly reabsorbed within transport capacity",
+        "Always completely excreted",
+        "Produced only by the bladder"
+      ],
+      "answer": 1,
+      "explanation": "Filtration and final excretion are separate quantities."
+    },
+    {
+      "question": "The ascending loop limb in the standard account has:",
+      "options": [
+        "Very high water flow with no salt transport",
+        "The same role as a urethra",
+        "Low water permeability with salt movement outward",
+        "A direct opening into an alveolus"
+      ],
+      "answer": 2,
+      "explanation": "Segment-specific properties support the medullary gradient."
+    },
+    {
+      "question": "Vasa recta chiefly help:",
+      "options": [
+        "Replace the glomerulus with a nerve",
+        "Pump water actively into every collecting duct",
+        "Produce insulin",
+        "Preserve the medullary gradient through exchange"
+      ],
+      "answer": 3,
+      "explanation": "They differ from the loop acting as a multiplier."
+    },
+    {
+      "question": "ADH is synthesized principally in:",
+      "options": [
+        "Hypothalamic neurons",
+        "Posterior pituitary cells as the main synthesis site",
+        "Adrenal medulla",
+        "Pancreatic alpha cells"
+      ],
+      "answer": 0,
+      "explanation": "The posterior pituitary stores and releases it."
+    },
+    {
+      "question": "Aldosterone primarily promotes the relevant renal:",
+      "options": [
+        "Direct glucose filtration only",
+        "Sodium retention and potassium secretion",
+        "Destruction of all nephrons",
+        "Conversion of urea to oxygen"
+      ],
+      "answer": 1,
+      "explanation": "Its targets and mechanism differ from ADH water permeability regulation."
+    },
+    {
+      "question": "Diabetes insipidus is associated with impaired:",
+      "options": [
+        "Insulin action as its defining mechanism",
+        "Thyroid iodine uptake only",
+        "ADH-related water conservation",
+        "Actin-myosin overlap only"
+      ],
+      "answer": 2,
+      "explanation": "It must be distinguished from diabetes mellitus."
+    },
+    {
+      "question": "Haemodialysis uses:",
+      "options": [
+        "Blood cells freely mixing into dialysis fluid",
+        "A new living nephron grown each minute",
+        "Only air pressure in the lung",
+        "Exchange across a semipermeable membrane"
+      ],
+      "answer": 3,
+      "explanation": "Selected solutes and water exchange while blood cells stay in their pathway."
+    },
+    {
+      "question": "A sarcomere extends between:",
+      "options": [
+        "Consecutive Z lines",
+        "Two entire muscles",
+        "Two renal corpuscles",
+        "Two cardiac valves"
+      ],
+      "answer": 0,
+      "explanation": "It is the repeating unit within a myofibril."
+    },
+    {
+      "question": "During ordinary sarcomere shortening, the A band:",
+      "options": [
+        "Shrinks because myosin filaments shorten",
+        "Remains approximately constant",
+        "Disappears into the nucleus",
+        "Becomes a nerve fibre"
+      ],
+      "answer": 1,
+      "explanation": "Filaments slide without simply shrinking in length."
+    },
+    {
+      "question": "In skeletal muscle, calcium initiates the regulatory change by binding:",
+      "options": [
+        "Only myosin ATP-binding sites",
+        "Insulin receptors",
+        "Troponin",
+        "Haemoglobin"
+      ],
+      "answer": 2,
+      "explanation": "This shifts the tropomyosin arrangement."
+    },
+    {
+      "question": "ATP binding to myosin helps:",
+      "options": [
+        "Prevent every future cross-bridge permanently",
+        "Convert actin into calcium",
+        "Replace the motor neuron",
+        "Detach it from actin"
+      ],
+      "answer": 3,
+      "explanation": "ATP hydrolysis then supports resetting for cycling."
+    },
+    {
+      "question": "The conventional adult axial and appendicular bone counts are:",
+      "options": [
+        "80 and 126",
+        "126 and 80",
+        "206 and 206",
+        "33 and 12"
+      ],
+      "answer": 0,
+      "explanation": "The typical adult total is 206 under the stated convention."
+    },
+    {
+      "question": "Before versus after vertebral fusion can give different counts because:",
+      "options": [
+        "Every bone disappears at adulthood",
+        "Adult sacral and coccygeal elements are fused",
+        "Only muscles are counted in children",
+        "Ribs become neurons"
+      ],
+      "answer": 1,
+      "explanation": "Age and the object counted must be specified."
+    },
+    {
+      "question": "The atlas-axis pivot comparison concerns:",
+      "options": [
+        "Only a fibrous skull suture",
+        "A ball-and-socket hip by definition",
+        "Rotation at a specialized synovial joint",
+        "A renal filtration membrane"
+      ],
+      "answer": 2,
+      "explanation": "Specific joint shape and movement should be matched."
+    },
+    {
+      "question": "A ligament primarily connects:",
+      "options": [
+        "Muscle to bone in the standard comparison",
+        "A neuron to a hormone",
+        "A nephron to an alveolus",
+        "Bone to bone"
+      ],
+      "answer": 3,
+      "explanation": "Tendons connect muscle with bone."
+    },
+    {
+      "question": "Gout characteristically involves deposits of:",
+      "options": [
+        "Monosodium urate crystals",
+        "Urea crystals as its standard definition",
+        "Only glucose crystals in alveoli",
+        "Only fibrin in every bone"
+      ],
+      "answer": 0,
+      "explanation": "Urate and urea are distinct compounds."
+    },
+    {
+      "question": "Tetany in the elementary calcium comparison differs from tetanus because it is associated with:",
+      "options": [
+        "The same infection in every case",
+        "Low extracellular calcium and increased excitability",
+        "Only excess insulin receptors",
+        "Only destruction of cartilage"
+      ],
+      "answer": 1,
+      "explanation": "Similar sounding terms have different mechanisms."
+    },
+    {
+      "question": "The sodium-potassium pump commonly moves per ATP:",
+      "options": [
+        "2 Na+ out and 3 K+ in",
+        "3 Na+ in and 2 K+ out",
+        "3 Na+ out and 2 K+ in",
+        "Only calcium into the axon"
+      ],
+      "answer": 2,
+      "explanation": "It helps maintain gradients rather than causing the rapid upstroke alone."
+    },
+    {
+      "question": "A nerve is:",
+      "options": [
+        "One giant neuron only",
+        "A single synaptic vesicle",
+        "A gland releasing thyroxine",
+        "A bundle of nerve fibres with supporting coverings"
+      ],
+      "answer": 3,
+      "explanation": "Cell, fibre and nerve are different structural levels."
+    },
+    {
+      "question": "The usual rapid axonal action-potential upstroke involves:",
+      "options": [
+        "Na+ entry through voltage-gated channels",
+        "Only the pump reversing each cycle",
+        "K+ entry as the sole cause",
+        "Calcium binding to troponin"
+      ],
+      "answer": 0,
+      "explanation": "Repolarization involves different channel events."
+    },
+    {
+      "question": "Saltatory conduction involves regeneration chiefly at:",
+      "options": [
+        "Every myelin lipid molecule equally",
+        "Nodes of Ranvier",
+        "Only the cell nucleus",
+        "Only the axon terminal with no intervening spread"
+      ],
+      "answer": 1,
+      "explanation": "Myelin limits current loss between nodes."
+    },
+    {
+      "question": "Presynaptic transmitter release at a chemical synapse is triggered by:",
+      "options": [
+        "Only loss of every vesicle membrane before stimulation",
+        "Glucose entering the thyroid",
+        "Ca2+ entry",
+        "Urea entering the bladder"
+      ],
+      "answer": 2,
+      "explanation": "Calcium triggers the vesicle-release machinery."
+    },
+    {
+      "question": "A spinal reflex can occur without prior conscious choice, but:",
+      "options": [
+        "The brain must receive no information ever",
+        "There is no central integration",
+        "Every reflex has exactly one synapse",
+        "The brain can still receive information and modulate responses"
+      ],
+      "answer": 3,
+      "explanation": "Reflex organization varies with the circuit."
+    },
+    {
+      "question": "The cerebellum contributes importantly to:",
+      "options": [
+        "Coordination, posture and timing of movement",
+        "Only urine storage",
+        "All hormone synthesis alone",
+        "Only red-cell antigen formation"
+      ],
+      "answer": 0,
+      "explanation": "It is part of interacting neural systems."
+    },
+    {
+      "question": "The hypothalamus links neural control with:",
+      "options": [
+        "Only mechanical joint movement",
+        "Homeostatic, autonomic and endocrine regulation",
+        "Only fibrin formation",
+        "Only the outer skin barrier"
+      ],
+      "answer": 1,
+      "explanation": "Its functions extend beyond one isolated hormone label."
+    },
+    {
+      "question": "Afferent pathways carry information:",
+      "options": [
+        "Away from the CNS by definition",
+        "Only from artery to vein",
+        "Toward the CNS",
+        "Only across the glomerular filter"
+      ],
+      "answer": 2,
+      "explanation": "Efferent pathways carry output toward targets."
+    },
+    {
+      "question": "Typical somatic motor output targets:",
+      "options": [
+        "Only thyroid follicles",
+        "Only smooth muscle",
+        "Only atrial endocrine cells",
+        "Skeletal muscle"
+      ],
+      "answer": 3,
+      "explanation": "Autonomic pathways regulate visceral muscle and glands."
+    },
+    {
+      "question": "A hormone circulating past a cell acts effectively when the cell has:",
+      "options": [
+        "Appropriate receptors and signaling machinery",
+        "Any membrane regardless of receptor",
+        "Only a large nucleus",
+        "Only an ABO antigen"
+      ],
+      "answer": 0,
+      "explanation": "Exposure alone does not guarantee a response."
+    },
+    {
+      "question": "Thyroid hormones show that amino-acid-derived signals:",
+      "options": [
+        "Must all use only surface receptors",
+        "Can act through intracellular nuclear receptor pathways",
+        "Are all steroids",
+        "Never influence gene expression"
+      ],
+      "answer": 1,
+      "explanation": "Chemical origin does not uniquely dictate receptor location."
+    },
+    {
+      "question": "Prolactin and oxytocin principally support respectively:",
+      "options": [
+        "Milk ejection and milk production",
+        "Urea formation and clotting",
+        "Milk production and milk ejection",
+        "Bone fusion and oxygen loading"
+      ],
+      "answer": 2,
+      "explanation": "These are different processes with different signals."
+    },
+    {
+      "question": "Posterior pituitary ADH is:",
+      "options": [
+        "Synthesized mainly by pancreatic beta cells",
+        "An adrenal cortical steroid",
+        "The same hormone as prolactin",
+        "Stored and released there after hypothalamic synthesis"
+      ],
+      "answer": 3,
+      "explanation": "Synthesis and release sites must be distinguished."
+    },
+    {
+      "question": "Parathyroid hormone generally tends to:",
+      "options": [
+        "Raise blood calcium through coordinated organ effects",
+        "Lower calcium as its sole net effect in the standard account",
+        "Become thyroid iodine",
+        "Replace every vitamin"
+      ],
+      "answer": 0,
+      "explanation": "Kidney, bone and vitamin-D-related pathways participate."
+    },
+    {
+      "question": "T3 and T4 characteristically contain:",
+      "options": [
+        "Urate crystals",
+        "Iodine",
+        "Only haemoglobin",
+        "Only fibrin"
+      ],
+      "answer": 1,
+      "explanation": "They differ from the separate thyroid peptide calcitonin."
+    },
+    {
+      "question": "Adrenaline and aldosterone are secreted respectively by:",
+      "options": [
+        "Adrenal cortex and medulla",
+        "Pancreatic beta and alpha cells",
+        "Adrenal medulla and cortex",
+        "Posterior and anterior pituitary"
+      ],
+      "answer": 2,
+      "explanation": "The regions have different products and control."
+    },
+    {
+      "question": "Cortisol is a:",
+      "options": [
+        "Catecholamine from the medulla",
+        "Posterior pituitary peptide",
+        "Parathyroid calcium channel",
+        "Glucocorticoid from the adrenal cortex"
+      ],
+      "answer": 3,
+      "explanation": "It differs chemically and functionally from adrenaline."
+    },
+    {
+      "question": "Pancreatic beta and alpha cells produce respectively:",
+      "options": [
+        "Insulin and glucagon",
+        "Glucagon and insulin",
+        "ADH and oxytocin",
+        "T3 and T4"
+      ],
+      "answer": 0,
+      "explanation": "The islet cell types have distinct endocrine roles."
+    },
+    {
+      "question": "Every tissue needs insulin for every glucose entry route. This is:",
+      "options": [
+        "Correct universally",
+        "Incorrect; glucose transport differs among tissues",
+        "The definition of ADH action",
+        "The definition of thyroid feedback"
+      ],
+      "answer": 1,
+      "explanation": "Insulin-responsive uptake is not the only transport mechanism."
+    },
+    {
+      "question": "Melatonin is associated with the:",
+      "options": [
+        "Glomerulus and filtration only",
+        "Adrenal cortex and salt retention only",
+        "Pineal gland and circadian signaling",
+        "Platelet and fibrin formation only"
+      ],
+      "answer": 2,
+      "explanation": "It contributes to timing signals rather than universally switching sleep on."
+    },
+    {
+      "question": "Testicular androgen production is associated especially with:",
+      "options": [
+        "Sertoli cells as the main testosterone source",
+        "Pancreatic delta cells",
+        "Thyroid parafollicular cells",
+        "Leydig cells"
+      ],
+      "answer": 3,
+      "explanation": "Sertoli functions include support and inhibin signaling."
+    },
+    {
+      "question": "Growth hormone excess after epiphyseal closure is associated with:",
+      "options": [
+        "Acromegaly",
+        "Ordinary further lengthening of every long bone",
+        "Every form of short stature",
+        "Diabetes insipidus as the definition"
+      ],
+      "answer": 0,
+      "explanation": "Developmental timing distinguishes acromegaly and gigantism."
+    },
+    {
+      "question": "Goitre by itself means:",
+      "options": [
+        "Hyperthyroidism in every case",
+        "Thyroid enlargement without specifying hormone level",
+        "Hypothyroidism in every case",
+        "An enlarged adrenal medulla"
+      ],
+      "answer": 1,
+      "explanation": "Different causes and hormone states can produce enlargement."
+    },
+    {
+      "question": "Addison disease is primarily:",
+      "options": [
+        "Only absence of medullary adrenaline",
+        "Only excess growth hormone",
+        "Primary adrenal insufficiency",
+        "Only a blood-group incompatibility"
+      ],
+      "answer": 2,
+      "explanation": "Adrenal cortical hormone deficiency is central to the comparison."
+    },
+    {
+      "question": "Diabetes mellitus and diabetes insipidus:",
+      "options": [
+        "Are identical insulin disorders",
+        "Are identical thyroid disorders",
+        "Are two names for normal urine formation",
+        "Concern different primary regulatory mechanisms"
+      ],
+      "answer": 3,
+      "explanation": "Glucose regulation differs from ADH-related water conservation."
+    }
+  ]
+}
