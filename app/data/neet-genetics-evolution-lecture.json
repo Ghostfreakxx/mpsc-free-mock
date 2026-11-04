@@ -1,0 +1,1579 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English Biology teacher. Speak naturally. Read genetic symbols, chromosome notation and molecular directions carefully. Distinguish probabilities from guaranteed outcomes. Read every sentence completely, including the final sentence. Do not add words or summarize.",
+  "title": "Genetics and Evolution",
+  "subject": "Biology",
+  "unit": 7,
+  "scope": "NEET Biology Unit 7 recorded foundation against the official 2026 syllabus baseline: Mendelian inheritance and extensions, chromosomes, sex determination, linkage and disorders; genetic material, DNA/RNA, replication, expression, lac operon, genome projects and profiling; origin-of-life hypotheses, evolutionary evidence and mechanisms, Hardy–Weinberg, adaptive radiation and human evolution. Further pedigrees, three-point maps, sequence interpretation and mixed population/experimental problems remain. Original practice, not official PYQs.",
+  "sources": [
+    {
+      "title": "NMC: official NEET 2026 syllabus, Biology Unit 7",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/01/202601081066816297.pdf"
+    },
+    {
+      "title": "NCERT: Biology textbook portal, inheritance, molecular genetics and evolution",
+      "url": "https://ncert.nic.in/textbook.php"
+    },
+    {
+      "title": "OpenStax Biology 2e: 12 3 laws of inheritance",
+      "url": "https://openstax.org/books/biology-2e/pages/12-3-laws-of-inheritance"
+    },
+    {
+      "title": "OpenStax Biology 2e: 13 1 chromosomal theory and genetic linkage",
+      "url": "https://openstax.org/books/biology-2e/pages/13-1-chromosomal-theory-and-genetic-linkage"
+    },
+    {
+      "title": "OpenStax Biology 2e: 14 3 basics of dna replication",
+      "url": "https://openstax.org/books/biology-2e/pages/14-3-basics-of-dna-replication"
+    },
+    {
+      "title": "OpenStax Biology 2e: 16 2 prokaryotic gene regulation",
+      "url": "https://openstax.org/books/biology-2e/pages/16-2-prokaryotic-gene-regulation"
+    },
+    {
+      "title": "NHGRI: Human Genome Project history and resources",
+      "url": "https://www.genome.gov/human-genome-project"
+    },
+    {
+      "title": "Smithsonian Human Origins: evidence for human evolution",
+      "url": "https://humanorigins.si.edu/evidence"
+    },
+    {
+      "title": "OpenStax Biology 2e: 19 1 population evolution",
+      "url": "https://openstax.org/books/biology-2e/pages/19-1-population-evolution"
+    },
+    {
+      "title": "OpenStax Biology 2e: 19 2 population genetics",
+      "url": "https://openstax.org/books/biology-2e/pages/19-2-population-genetics"
+    },
+    {
+      "title": "MedlinePlus Genetics: beta thalassemia",
+      "url": "https://medlineplus.gov/genetics/condition/beta-thalassemia/"
+    },
+    {
+      "title": "MedlinePlus Genetics: down syndrome",
+      "url": "https://medlineplus.gov/genetics/condition/down-syndrome/"
+    },
+    {
+      "title": "MedlinePlus Genetics: turner syndrome",
+      "url": "https://medlineplus.gov/genetics/condition/turner-syndrome/"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Mendelian segregation and monohybrid crosses",
+      "formula": "Alleles separate during gamete formation",
+      "points": [
+        "Alleles separate during gamete formation",
+        "Aa × Aa: 1 AA : 2 Aa : 1 aa",
+        "Complete dominance can give a 3:1 phenotype ratio",
+        "Expected probability is not a guaranteed family count"
+      ],
+      "board": {
+        "kind": "monohybrid",
+        "lines": [
+          "Alleles separate during gamete formation",
+          "Aa × Aa: 1 AA : 2 Aa : 1 aa",
+          "Complete dominance can give a 3:1 phenotype ratio",
+          "Expected probability is not a guaranteed family count"
+        ]
+      },
+      "script": "Welcome to Genetics and Evolution, our NEET Biology Unit seven foundation. This recording uses an AI generated Marin voice. A gene can have alternative forms called alleles, and a diploid individual commonly carries two alleles at an autosomal locus. Mendelian segregation describes separation of these alternatives during gamete formation. For an Aa by Aa cross with equal transmission, the expected genotypes are one quarter AA, one half Aa and one quarter aa. Under complete dominance and the other stated assumptions, the phenotype ratio becomes three dominant to one recessive. Dominant does not mean more common, healthier or evolutionarily superior. These are probabilities across offspring, not a requirement that every set of four children or seeds contain the exact ratio. Genotype describes the allelic constitution, while phenotype reflects observable expression in context. This class introduces inheritance, molecular mechanisms and evolution, with further pedigrees, sequence problems and mixed experimental applications remaining."
+    },
+    {
+      "title": "Dihybrid crosses, test crosses and probability",
+      "formula": "Independent AaBb gives four equal gamete types",
+      "points": [
+        "Independent AaBb gives four equal gamete types",
+        "AaBb × AaBb can give 9:3:3:1 phenotypes",
+        "Test cross uses the relevant recessive genotype",
+        "Multiply independent event probabilities"
+      ],
+      "board": {
+        "kind": "dihybrid",
+        "lines": [
+          "Independent AaBb gives four equal gamete types",
+          "AaBb × AaBb can give 9:3:3:1 phenotypes",
+          "Test cross uses the relevant recessive genotype",
+          "Multiply independent event probabilities"
+        ]
+      },
+      "script": "For two independently assorting loci, an AaBb individual produces AB, Ab, aB and ab gametes at equal expected frequencies. With complete dominance at both loci and the usual assumptions, an AaBb by AaBb cross gives the familiar nine to three to three to one phenotype ratio. This ratio is not expected automatically for linked loci, interacting gene effects or every small sample. A test cross pairs an individual of uncertain dominant genotype with an appropriate homozygous recessive individual. A monohybrid heterozygote test cross gives an expected one to one result, while the independent dihybrid test cross gives four equal classes. Probability multiplication applies to independent events: the probability of aa at one locus and bb at another is one quarter times one quarter, or one sixteenth, in the stated self cross. Addition requires mutually exclusive outcomes or proper correction for overlap. State the parental genotypes, assumptions and requested outcome before selecting a memorized ratio."
+    },
+    {
+      "title": "Incomplete dominance and codominance",
+      "formula": "Incomplete dominance: intermediate heterozygote",
+      "points": [
+        "Incomplete dominance: intermediate heterozygote",
+        "Codominance: both allele products distinguishable",
+        "Genotype segregation can remain Mendelian",
+        "Phenotypic ratios depend on the expression model"
+      ],
+      "board": {
+        "kind": "dominance",
+        "lines": [
+          "Incomplete dominance: intermediate heterozygote",
+          "Codominance: both allele products distinguishable",
+          "Genotype segregation can remain Mendelian",
+          "Phenotypic ratios depend on the expression model"
+        ]
+      },
+      "script": "Incomplete dominance and codominance describe expression patterns rather than disappearance of allele segregation. In a familiar flower color example of incomplete dominance, the heterozygote has an intermediate phenotype, and selfing it produces a one to two to one phenotypic ratio alongside the genotypic ratio. This does not mean parental alleles physically blend into a permanently inseparable new hereditary material. In codominance, both allele associated products are distinguishable in the heterozygote, as in the familiar ABO AB comparison. Neither pattern requires a dominant phenotype ratio of three to one. A phenotype can also depend on environment, developmental stage and other loci, so dominance is a relationship within a specified comparison rather than a universal ranking of alleles. Distinguish an intermediate measured outcome from simultaneous expression of two distinguishable products. When a cross is given, first determine the gametes and genotypes, then apply the stated expression pattern to infer the phenotype classes."
+    },
+    {
+      "title": "Multiple alleles and ABO inheritance",
+      "formula": "Population can have more than two alleles",
+      "points": [
+        "Population can have more than two alleles",
+        "An individual carries two at this autosomal locus",
+        "IA and IB are codominant; i is recessive",
+        "IAi × IBi can produce A, B, AB or O"
+      ],
+      "board": {
+        "kind": "abo",
+        "lines": [
+          "Population can have more than two alleles",
+          "An individual carries two at this autosomal locus",
+          "IA and IB are codominant; i is recessive",
+          "IAi × IBi can produce A, B, AB or O"
+        ]
+      },
+      "script": "Multiple alleles means that more than two alternative alleles exist at a locus in a population. It does not mean one ordinary diploid individual carries every alternative at that locus. The elementary ABO model uses I A, I B and i. I A and I B are codominant with one another and each is dominant over i in this account. Group A can therefore be I A I A or I A i, group B can be I B I B or I B i, group AB is I A I B and group O is ii. An I A i by I B i cross can produce A, B, AB and O offspring, each with one quarter expected probability. The phenotype alone may not uniquely identify parental genotypes. This is the standard simplified inheritance model, not a complete treatment of rare blood group variants or transfusion compatibility. Keep population allele diversity, individual genotype and the medical use of blood components separate."
+    },
+    {
+      "title": "Pleiotropy and polygenic inheritance",
+      "formula": "Pleiotropy: one gene influences multiple traits",
+      "points": [
+        "Pleiotropy: one gene influences multiple traits",
+        "Polygenic traits involve multiple loci",
+        "Additive models can produce graded variation",
+        "Environment can also influence phenotype"
+      ],
+      "board": {
+        "kind": "polygenic",
+        "lines": [
+          "Pleiotropy: one gene influences multiple traits",
+          "Polygenic traits involve multiple loci",
+          "Additive models can produce graded variation",
+          "Environment can also influence phenotype"
+        ]
+      },
+      "script": "Pleiotropy describes one gene influencing multiple phenotypic features, often because its product participates in processes with several downstream effects. It is different from polygenic inheritance, where multiple loci contribute to variation in one measured trait. A simplified additive model can give graded phenotypes as the number of contributing alleles changes. Familiar discussions of height or pigmentation illustrate why a trait need not fall into only two obvious classes. These traits also involve environmental and developmental influences, so an elementary additive diagram is not a claim that one small set of alleles precisely determines every person's appearance or outcome. A continuous distribution does not by itself identify the exact number of contributing genes. Conversely, a gene with multiple effects need not produce a continuous phenotype. Avoid treating ancestry labels as a substitute for actual genetic evidence. In questions, distinguish the number of loci, the number of traits affected and the role of environmental conditions before choosing between pleiotropy and polygenic inheritance."
+    },
+    {
+      "title": "Chromosome theory and genes",
+      "formula": "Sutton and Boveri linked inheritance to chromosomes",
+      "points": [
+        "Sutton and Boveri linked inheritance to chromosomes",
+        "Homologues segregate during meiosis",
+        "Genes occupy loci along chromosomes",
+        "Independent assortment has linkage limits"
+      ],
+      "board": {
+        "kind": "chromosomes",
+        "lines": [
+          "Sutton and Boveri linked inheritance to chromosomes",
+          "Homologues segregate during meiosis",
+          "Genes occupy loci along chromosomes",
+          "Independent assortment has linkage limits"
+        ]
+      },
+      "script": "The chromosomal theory of inheritance connects Mendelian behavior with chromosome transmission, associated with the contributions of Sutton and Boveri. Homologous chromosomes carry corresponding loci and separate during meiosis, providing a physical basis for segregation in the elementary account. Their orientation can support independent assortment of loci on different chromosome pairs, while loci on the same chromosome can show linkage. A chromosome contains many genes; it is not one giant allele for a single visible trait. Homologous chromosomes and sister chromatids are different relationships. Homologues contain corresponding loci and may carry different alleles, while sisters arise from replication of one chromosome. A replicated chromosome still counts as one chromosome before centromeric separation in the usual counting convention. Genes, chromosomes and DNA molecules therefore require their own definitions. Use the cell stage and the object being counted before inferring inheritance or ploidy from a picture. The chromosome theory explains a mechanism, not a guarantee that every locus follows an unlinked dihybrid ratio."
+    },
+    {
+      "title": "Sex determination in humans, birds and honey bees",
+      "formula": "Typical human model: XX and XY",
+      "points": [
+        "Typical human model: XX and XY",
+        "Bird model: ZZ male and ZW female",
+        "Honey bee: haploid males, diploid females",
+        "Chromosome systems do not define every biological variant"
+      ],
+      "board": {
+        "kind": "sex-determination",
+        "lines": [
+          "Typical human model: XX and XY",
+          "Bird model: ZZ male and ZW female",
+          "Honey bee: haploid males, diploid females",
+          "Chromosome systems do not define every biological variant"
+        ]
+      },
+      "script": "Sex determination systems differ among organisms. In the familiar human chromosomal account, XX is associated with typical female development and XY with typical male development, with Y linked SRY signaling important in the usual pathway. Biological developmental variations exist, so the model is not a complete description of every individual. In birds, males are commonly ZZ and females ZW, reversing which sex is heterogametic compared with the typical human example. In the elementary honey bee haplodiploid account, unfertilized eggs develop into haploid males and fertilized eggs into diploid females. Queens and workers are both female; their caste difference is not explained simply by one being haploid and the other diploid. Haploid male bees produce sperm without an ordinary diploid reduction division. Do not import the human X and Y labels into every species. Identify the organism, the gamete sources and the stated chromosomal system before predicting offspring categories or chromosome numbers."
+    },
+    {
+      "title": "Linkage, crossing over and recombination frequency",
+      "formula": "Linked loci need not give equal gamete frequencies",
+      "points": [
+        "Linked loci need not give equal gamete frequencies",
+        "Crossing over involves nonsister homologous chromatids",
+        "20% recombination: 10% in each recombinant class",
+        "Recombination fractions do not exceed 50%"
+      ],
+      "board": {
+        "kind": "linkage",
+        "lines": [
+          "Linked loci need not give equal gamete frequencies",
+          "Crossing over involves nonsister homologous chromatids",
+          "20% recombination: 10% in each recombinant class",
+          "Recombination fractions do not exceed 50%"
+        ]
+      },
+      "script": "Linkage describes the tendency of loci on the same chromosome to be transmitted together. Crossing over between nonsister chromatids of homologous chromosomes during meiotic prophase can produce recombinant combinations. Consider an AB over ab heterozygote with twenty percent recombination. Under the usual equal reciprocal class assumptions, AB and ab gametes each occur at forty percent, while Ab and aB each occur at ten percent. The parental phase matters: an Ab over aB arrangement has different parental classes. Recombination frequency is recombinant offspring divided by total offspring in a suitable informative cross. Over short intervals, one percent recombination approximates one map unit, but multiple crossovers can make observed recombination underestimate larger distances. A recombination fraction does not exceed one half in the ordinary two locus comparison, even though map distances can be larger. Physical DNA distance and genetic map distance are not identical units. Always identify phase, cross design and the denominator before calculating a percentage."
+    },
+    {
+      "title": "Sex-linked inheritance and pedigrees",
+      "formula": "Typical haemophilia A/B are X-linked recessive",
+      "points": [
+        "Typical haemophilia A/B are X-linked recessive",
+        "Common red-green defects can be X-linked recessive",
+        "Fathers do not pass an X chromosome to sons",
+        "State whether risk is among sons or all offspring"
+      ],
+      "board": {
+        "kind": "sex-linked",
+        "lines": [
+          "Typical haemophilia A/B are X-linked recessive",
+          "Common red-green defects can be X-linked recessive",
+          "Fathers do not pass an X chromosome to sons",
+          "State whether risk is among sons or all offspring"
+        ]
+      },
+      "script": "In the standard X linked recessive model, an individual with one X chromosome can express an allele without a second corresponding X allele masking its effect. Typical haemophilia A and B and common inherited red green color vision defects illustrate this comparison, though not every bleeding or color vision disorder has that inheritance. A father passes his X chromosome to daughters and his Y to sons in the ordinary XY model, so direct father to son transmission of an X linked allele is not expected. A heterozygous mother and an unaffected father can have half their sons affected under the simplified model; if male and female births are equally likely, that is one quarter of all offspring. Those denominators are different. Pedigree inference requires enough family information and stated assumptions, not one symbol in isolation. Carrier expression and biological variation can complicate real cases. These are inheritance exercises, not personal genetic risk estimates."
+    },
+    {
+      "title": "Mendelian disorder comparison: thalassemia",
+      "formula": "Thalassemia reduces globin-chain production",
+      "points": [
+        "Thalassemia reduces globin-chain production",
+        "Typical beta-thalassemia is autosomal recessive",
+        "Carrier and affected states can differ",
+        "Quantitative deficiency differs from a sequence substitution"
+      ],
+      "board": {
+        "kind": "thalassemia",
+        "lines": [
+          "Thalassemia reduces globin-chain production",
+          "Typical beta-thalassemia is autosomal recessive",
+          "Carrier and affected states can differ",
+          "Quantitative deficiency differs from a sequence substitution"
+        ]
+      },
+      "script": "Thalassemias involve reduced production of particular globin chains, affecting haemoglobin balance and red cell function. The familiar beta thalassemia inheritance comparison is autosomal recessive, while alpha thalassemia often involves different gene copy and deletion patterns. They should not all be reduced to one identical two allele example. In a simplified recessive model, two heterozygous parents have one quarter expected affected offspring, one half heterozygous and one quarter without the specified allele, assuming the relevant genotype model. A carrier state can have different effects from the more severe affected condition; carrier does not automatically mean no detectable biological feature. Thalassemia is commonly described as a quantitative globin production defect, contrasting with a structural haemoglobin variant such as the familiar sickle cell substitution example. Both affect proteins, but the molecular changes differ. Keep inheritance category, gene or copy arrangement, amount of product and clinical expression distinct. This foundation explains the comparison rather than diagnosing an individual from a blood-related symptom."
+    },
+    {
+      "title": "Chromosomal disorders and nondisjunction",
+      "formula": "Typical Down syndrome: trisomy 21",
+      "points": [
+        "Typical Down syndrome: trisomy 21",
+        "Typical Turner karyotype: 45,X",
+        "Typical Klinefelter karyotype: 47,XXY",
+        "Mosaic and other forms can differ"
+      ],
+      "board": {
+        "kind": "aneuploidy",
+        "lines": [
+          "Typical Down syndrome: trisomy 21",
+          "Typical Turner karyotype: 45,X",
+          "Typical Klinefelter karyotype: 47,XXY",
+          "Mosaic and other forms can differ"
+        ]
+      },
+      "script": "Chromosomal disorders can involve chromosome number or structure rather than a single small sequence change at one locus. Nondisjunction is failure of appropriate chromosome separation during division and can produce cells with abnormal chromosome complements. The usual Down syndrome comparison involves an extra chromosome twenty one, giving trisomy twenty one. Some cases involve translocation or mosaic arrangements, so one karyotype does not describe every case. Turner syndrome is classically associated with forty five X, while Klinefelter syndrome is commonly associated with forty seven XXY. Their biological features and reproductive effects vary, and labels should not be used to make absolute claims about every individual. Aneuploidy differs from a complete extra chromosome set, which would be a ploidy change. A karyotype can reveal broad chromosome patterns but not every small mutation. In an examination image, identify chromosome count, the particular chromosome involved and any stated mosaic or structural context before assigning a name."
+    },
+    {
+      "title": "Evidence for the genetic material",
+      "formula": "Griffith observed bacterial transformation",
+      "points": [
+        "Griffith observed bacterial transformation",
+        "Avery and colleagues implicated DNA",
+        "Hershey–Chase distinguished phage DNA and protein",
+        "Some viruses have RNA genomes"
+      ],
+      "board": {
+        "kind": "evidence",
+        "lines": [
+          "Griffith observed bacterial transformation",
+          "Avery and colleagues implicated DNA",
+          "Hershey–Chase distinguished phage DNA and protein",
+          "Some viruses have RNA genomes"
+        ]
+      },
+      "script": "Evidence for genetic material came from different experiments addressing different questions. Griffith observed transformation in pneumococcal bacteria, showing a heritable change associated with material from another bacterial preparation. The experiment did not by itself chemically identify DNA as the transforming substance. Avery, MacLeod and McCarty connected transforming activity with DNA through biochemical investigation. Hershey and Chase used bacteriophages with different radioactive labeling of DNA and protein to test which component entered bacteria and contributed to subsequent phage production. Phosphorus thirty two served as the familiar DNA label and sulfur thirty five as the protein label in that design. This does not mean every protein contains phosphorus-free chemistry in all contexts; the experiment relied on its particular materials and controls. DNA is the main cellular hereditary material, while some viruses use RNA genomes. Keep the organism, the labeled substance, the experimental observation and the conclusion separate. One classic experiment is not a direct test of every possible biological system."
+    },
+    {
+      "title": "DNA and RNA structure and direction",
+      "formula": "Nucleotide: base, sugar and phosphate",
+      "points": [
+        "Nucleotide: base, sugar and phosphate",
+        "DNA strands are antiparallel and complementary",
+        "A pairs with T; G with C in ordinary duplex DNA",
+        "RNA commonly uses ribose and uracil"
+      ],
+      "board": {
+        "kind": "dna",
+        "lines": [
+          "Nucleotide: base, sugar and phosphate",
+          "DNA strands are antiparallel and complementary",
+          "A pairs with T; G with C in ordinary duplex DNA",
+          "RNA commonly uses ribose and uracil"
+        ]
+      },
+      "script": "A nucleotide contains a nitrogenous base, a pentose sugar and phosphate, while a nucleoside lacks the phosphate component. DNA ordinarily contains deoxyribose and the bases adenine, thymine, guanine and cytosine. The two strands in the common double helix run antiparallel, with complementary A T and G C pairing. A T pairs have two hydrogen bonds and G C pairs three in the familiar structural account. Covalent phosphodiester linkages form each strand's backbone; hydrogen bonds do not replace those backbone bonds. Five prime and three prime refer to sugar carbon positions and define strand orientation. RNA commonly contains ribose and uracil instead of thymine and can form complex folded structures even when described as single stranded. Chargaff type A equals T and G equals C relations apply to an ordinary complete double stranded DNA sample, not automatically to one isolated strand or every RNA genome. Identify the molecule and strand reference before calculating base composition."
+    },
+    {
+      "title": "DNA packaging and genome organization",
+      "formula": "Eukaryotic DNA wraps around histone octamers",
+      "points": [
+        "Eukaryotic DNA wraps around histone octamers",
+        "Nucleosome is a packaging unit",
+        "Chromatin organization changes with cellular state",
+        "Prokaryotic nucleoids are not membrane-bound nuclei"
+      ],
+      "board": {
+        "kind": "packaging",
+        "lines": [
+          "Eukaryotic DNA wraps around histone octamers",
+          "Nucleosome is a packaging unit",
+          "Chromatin organization changes with cellular state",
+          "Prokaryotic nucleoids are not membrane-bound nuclei"
+        ]
+      },
+      "script": "Long DNA molecules require organized packaging rather than remaining as unrestricted straight strands. In the elementary eukaryotic account, DNA wraps around histone protein octamers to form nucleosomes, with linker regions connecting neighboring units. Further organization contributes to chromatin and the condensed chromosomes visible during cell division. A nucleosome is not one entire chromosome or necessarily one whole gene. Histones interact with DNA and its charge, but chromatin structure is dynamic and linked with accessibility and regulation. The familiar euchromatin and heterochromatin comparison concerns relative organization and activity tendencies, not a rule that every sequence in a region has one fixed expression state forever. Prokaryotic DNA occupies a nucleoid without a surrounding nuclear membrane and is organized through its own proteins and topology; it is not simply naked DNA with no organization. Genome size, chromosome number and the number of protein coding genes are different measures. Do not infer biological complexity from chromosome number alone."
+    },
+    {
+      "title": "Semiconservative replication and synthesis direction",
+      "formula": "Each daughter duplex retains one parental strand",
+      "points": [
+        "Each daughter duplex retains one parental strand",
+        "New DNA is synthesized 5′ to 3′",
+        "Leading and lagging synthesis use the same chemistry",
+        "Primers, polymerases and ligase have distinct roles"
+      ],
+      "board": {
+        "kind": "replication",
+        "lines": [
+          "Each daughter duplex retains one parental strand",
+          "New DNA is synthesized 5′ to 3′",
+          "Leading and lagging synthesis use the same chemistry",
+          "Primers, polymerases and ligase have distinct roles"
+        ]
+      },
+      "script": "Semiconservative replication gives each daughter DNA duplex one parental strand and one newly synthesized strand. Meselson and Stahl's density labeling experiment supported this model in bacteria: after transfer from heavy to light nitrogen medium, the first generation showed intermediate density DNA, and the next included intermediate and light classes. DNA polymerases extend a growing chain at its three prime end, so new synthesis runs five prime to three prime while the template is read in the opposite direction. At a replication fork, leading synthesis is relatively continuous and lagging synthesis involves Okazaki fragments, but both use the same directional chemistry. Primase provides primers, helicase helps separate strands and ligase joins appropriate backbone breaks after processing. These enzymes are not interchangeable labels. Replication copies DNA rather than directly translating a protein. State whether a sequence is the template or the newly synthesized strand and mark its ends before predicting the complementary product."
+    },
+    {
+      "title": "Transcription and the coding strand",
+      "formula": "RNA polymerase copies a DNA template",
+      "points": [
+        "RNA polymerase copies a DNA template",
+        "RNA synthesis proceeds 5′ to 3′",
+        "Coding strand matches RNA except T versus U",
+        "Promoter and terminator define functional boundaries"
+      ],
+      "board": {
+        "kind": "transcription",
+        "lines": [
+          "RNA polymerase copies a DNA template",
+          "RNA synthesis proceeds 5′ to 3′",
+          "Coding strand matches RNA except T versus U",
+          "Promoter and terminator define functional boundaries"
+        ]
+      },
+      "script": "Transcription produces RNA using a DNA template in ordinary cellular gene expression. RNA polymerase reads the template in the three prime to five prime direction and builds RNA five prime to three prime. The coding DNA strand has the same written sequence as the RNA product when both are shown five prime to three prime, except DNA T corresponds to RNA U. For example, a coding sequence five prime ATG GAA three prime corresponds to RNA five prime AUG GAA three prime in a suitable transcribed region. The complementary template runs in the opposite orientation. A promoter helps recruit the transcription machinery, while termination processes define the end of transcription in the relevant system. Not every transcribed RNA will be translated, because cells also produce functional noncoding RNAs. A gene's template strand cannot be chosen solely by whether it is drawn on the top of a page. Determine strand role, orientation and boundaries before converting a sequence."
+    },
+    {
+      "title": "RNA processing and the central dogma",
+      "formula": "Eukaryotic pre-mRNA can require processing",
+      "points": [
+        "Eukaryotic pre-mRNA can require processing",
+        "Splicing removes introns and joins exons",
+        "Capping and polyadenylation modify many mRNAs",
+        "Reverse transcription does not reverse-translate protein"
+      ],
+      "board": {
+        "kind": "processing",
+        "lines": [
+          "Eukaryotic pre-mRNA can require processing",
+          "Splicing removes introns and joins exons",
+          "Capping and polyadenylation modify many mRNAs",
+          "Reverse transcription does not reverse-translate protein"
+        ]
+      },
+      "script": "Many eukaryotic protein coding transcripts are first produced as precursor RNA that requires processing before ordinary translation. Splicing removes introns and joins exon sequences, while five prime capping and three prime polyadenylation modify many messenger RNAs. An exon is a retained transcript segment, not necessarily a synonym for only amino acid coding sequence, because untranslated regions can also be retained. Alternative splicing can generate different transcript products from a locus. In the elementary central dogma account, sequence information flows from DNA to RNA to protein. Reverse transcription copies RNA into DNA in suitable biological systems; it does not mean a protein sequence is directly read back into a nucleic acid template. Prokaryotic transcription and translation can be closely coupled, while eukaryotic nuclear processing and export provide additional separation. Not every RNA molecule receives identical modifications. Identify the cell type, transcript stage and functional RNA class before deciding what processing or information transfer is occurring."
+    },
+    {
+      "title": "Genetic code, reading frames and mutations",
+      "formula": "Codons are read as nucleotide triplets",
+      "points": [
+        "Codons are read as nucleotide triplets",
+        "AUG commonly initiates and encodes methionine",
+        "UAA, UAG and UGA are standard stop codons",
+        "Degenerate does not mean ordinarily ambiguous"
+      ],
+      "board": {
+        "kind": "code",
+        "lines": [
+          "Codons are read as nucleotide triplets",
+          "AUG commonly initiates and encodes methionine",
+          "UAA, UAG and UGA are standard stop codons",
+          "Degenerate does not mean ordinarily ambiguous"
+        ]
+      },
+      "script": "The genetic code relates messenger RNA triplets, called codons, to amino acids or termination signals. A reading frame specifies which successive groups of three are read. AUG commonly acts as a start codon and encodes methionine in the standard account, while UAA, UAG and UGA are stop codons. The code is degenerate because several codons can specify the same amino acid; this does not ordinarily mean one codon randomly specifies several amino acids in the same standard system. The code is nearly universal rather than absolutely identical in every organelle and lineage. A nucleotide substitution can be synonymous, missense or create a stop depending on context. An insertion or deletion not divisible by three can shift the downstream reading frame within a coding region. Do not infer the effect of a mutation from its size alone without its location and sequence. Codons belong to messenger RNA, while anticodons are complementary regions on transfer RNA."
+    },
+    {
+      "title": "Translation and protein biosynthesis",
+      "formula": "Aminoacyl-tRNA synthetases charge tRNAs",
+      "points": [
+        "Aminoacyl-tRNA synthetases charge tRNAs",
+        "Ribosomes coordinate codon recognition",
+        "Peptide chain grows through ordered steps",
+        "Stop codons recruit release machinery"
+      ],
+      "board": {
+        "kind": "translation",
+        "lines": [
+          "Aminoacyl-tRNA synthetases charge tRNAs",
+          "Ribosomes coordinate codon recognition",
+          "Peptide chain grows through ordered steps",
+          "Stop codons recruit release machinery"
+        ]
+      },
+      "script": "Translation converts the information in a suitable messenger RNA coding region into an amino acid sequence. Aminoacyl transfer RNA synthetases help attach the appropriate amino acids to transfer RNAs using energy, establishing a key relationship between decoding and the delivered amino acid. Ribosomes coordinate initiation, elongation and termination. Codon anticodon pairing helps position charged transfer RNAs, peptide bond formation extends the chain and translocation advances the reading process. The growing protein is not assembled by directly joining DNA bases to amino acids. In the familiar ribosomal account, A, P and E sites have distinct roles, with the initiator transfer RNA placed in the P site during ordinary initiation. Stop codons are recognized by release machinery rather than an ordinary transfer RNA carrying a stop amino acid. The ribosome reads messenger RNA five prime to three prime, while the polypeptide grows from its amino toward its carboxyl end. State the reading frame and termination boundary before counting translated amino acids."
+    },
+    {
+      "title": "Lac operon and conditional gene expression",
+      "formula": "lacZ, lacY and lacA encode different products",
+      "points": [
+        "lacZ, lacY and lacA encode different products",
+        "Repressor binding can limit transcription",
+        "Allolactose relieves repressor action",
+        "Low glucose supports strong CAP-mediated activation"
+      ],
+      "board": {
+        "kind": "lac",
+        "lines": [
+          "lacZ, lacY and lacA encode different products",
+          "Repressor binding can limit transcription",
+          "Allolactose relieves repressor action",
+          "Low glucose supports strong CAP-mediated activation"
+        ]
+      },
+      "script": "The bacterial lac operon provides an elementary model of regulated gene expression. Its structural genes lac Z, lac Y and lac A encode beta galactosidase, permease and transacetylase in the familiar account. A regulatory repressor can bind the operator and limit transcription when the inducing signal is absent. Allolactose, derived from lactose, interacts with the repressor and reduces its effective operator binding, permitting expression. Lactose is therefore an environmental substrate connected with induction, not a molecule that physically replaces the whole promoter. Strong expression also depends on glucose related regulation: low glucose favors cyclic AMP associated CAP activation in the standard model. The greatest expression is therefore expected when lactose is available and glucose is low under the stated conditions, not merely whenever any lactose molecule exists. Promoter, operator, structural genes and the separately regulated repressor gene have different roles. Distinguish removal of repression from positive activation when interpreting a regulatory table."
+    },
+    {
+      "title": "Human Genome Project and genome-scale research",
+      "formula": "HGP ran from 1990 to 2003",
+      "points": [
+        "HGP ran from 1990 to 2003",
+        "It produced a foundational reference sequence",
+        "Gene annotation differs from simply reading bases",
+        "Later references and pangenomes extend the picture"
+      ],
+      "board": {
+        "kind": "genomics",
+        "lines": [
+          "HGP ran from 1990 to 2003",
+          "It produced a foundational reference sequence",
+          "Gene annotation differs from simply reading bases",
+          "Later references and pangenomes extend the picture"
+        ]
+      },
+      "script": "The Human Genome Project was an international effort launched in nineteen ninety and completed in two thousand three, with a foundational human reference sequence among its major outcomes. Its goals included sequencing, mapping, data analysis and attention to ethical, legal and social questions. A reference genome is a shared research resource, not a claim that every person has exactly that sequence or that every region was resolved in the same way at the original completion date. Later sequencing and reference initiatives have filled gaps and broadened representation, including pangenome approaches. Genome annotation asks which sequences have particular functions and how they are organized; reading bases does not automatically reveal every biological consequence of every variant. Historical textbook estimates of gene number or sequence coverage should be recognized as dated descriptions rather than permanent constants. Human genetic variation does not justify ranking populations as more or less evolved. Separate the project's historical accomplishment, the reference used and the research question when interpreting genomic evidence."
+    },
+    {
+      "title": "DNA fingerprinting and variable markers",
+      "formula": "Profiles compare informative variable regions",
+      "points": [
+        "Profiles compare informative variable regions",
+        "Traditional VNTR and modern STR approaches differ",
+        "A match requires statistical and sample context",
+        "Identical twins illustrate an important limitation"
+      ],
+      "board": {
+        "kind": "fingerprinting",
+        "lines": [
+          "Profiles compare informative variable regions",
+          "Traditional VNTR and modern STR approaches differ",
+          "A match requires statistical and sample context",
+          "Identical twins illustrate an important limitation"
+        ]
+      },
+      "script": "DNA fingerprinting compares informative variable regions to distinguish samples or examine biological relationships. Traditional accounts emphasize variable number tandem repeats and probe based patterns, while many contemporary profiles use short tandem repeat markers amplified and compared across several loci. These methods do not require sequencing every base of a person's genome for an ordinary profile. Individuals inherit marker variants, so related people can share more alleles without necessarily having identical multilocus profiles. A reported match must be interpreted with the number of markers, population frequencies, sample quality, contamination and alternative explanations in mind. Identical twins can share the usual inherited marker profile, illustrating why a profile is not an infallible unique personal label in every context. A DNA match alone does not establish when or how a biological sample arrived somewhere. For an examination problem, identify the marker type, the comparison and the parental contribution rather than treating every dark band as an entire gene with a known phenotype."
+    },
+    {
+      "title": "Origin of life and experimental limits",
+      "formula": "Chemical evolution concerns prebiotic transitions",
+      "points": [
+        "Chemical evolution concerns prebiotic transitions",
+        "Miller–Urey generated organic molecules experimentally",
+        "Producing amino acids is not producing living cells",
+        "Early atmospheric and pathway details remain studied"
+      ],
+      "board": {
+        "kind": "origin",
+        "lines": [
+          "Chemical evolution concerns prebiotic transitions",
+          "Miller–Urey generated organic molecules experimentally",
+          "Producing amino acids is not producing living cells",
+          "Early atmospheric and pathway details remain studied"
+        ]
+      },
+      "script": "Origin of life questions concern how nonliving chemical systems could have contributed to the emergence of living organization, distinct from explaining later diversification of established life. Chemical evolution ideas associated with Oparin and Haldane proposed stages in the accumulation and organization of organic materials. The Miller Urey experiment generated organic compounds, including amino acids, under a particular simulated set of conditions. It did not create a living cell or prove that the actual early atmosphere exactly matched its gas mixture. Laboratory synthesis establishes chemical possibility under specified conditions rather than a complete historical reconstruction. RNA world ideas propose important early roles for RNA related information and catalysis, but they are hypotheses studied alongside other evidence and models. Experiments rejecting ordinary spontaneous generation in present day settings do not automatically settle every question about ancient prebiotic chemistry. Distinguish observation, experimental conditions and historical inference. The origin of life's first systems and evolutionary changes within populations are connected topics with different evidential questions."
+    },
+    {
+      "title": "Darwin and the modern evolutionary synthesis",
+      "formula": "Heritable variation affects reproductive success",
+      "points": [
+        "Heritable variation affects reproductive success",
+        "Natural selection changes population composition",
+        "Modern synthesis connects inheritance with evolution",
+        "Individuals do not evolve because they need a trait"
+      ],
+      "board": {
+        "kind": "darwin",
+        "lines": [
+          "Heritable variation affects reproductive success",
+          "Natural selection changes population composition",
+          "Modern synthesis connects inheritance with evolution",
+          "Individuals do not evolve because they need a trait"
+        ]
+      },
+      "script": "Darwin's contribution emphasized descent with modification and natural selection as explanations for the diversity and adaptation of life. Individuals vary, some variation is heritable, and differences in survival and reproduction can change the contribution of variants to later generations. Fitness in this context concerns reproductive contribution in a particular environment, not a universal measure of strength, intelligence or moral worth. Natural selection acts on existing phenotypic variation while populations change across generations. It does not instruct an individual to produce exactly the mutation it needs. The modern synthesis connects evolutionary reasoning with Mendelian inheritance and population genetic processes, including mutation, recombination, selection, drift and gene flow. Environment matters because a variant's consequences depend on the conditions in which it occurs. A useful trait is not evidence that evolution planned toward a goal. Keep the source of variation, the sorting process and the resulting frequency change separate when explaining an adaptation."
+    },
+    {
+      "title": "Fossils, dating and the historical record",
+      "formula": "Fossils preserve selected evidence of past life",
+      "points": [
+        "Fossils preserve selected evidence of past life",
+        "Stratigraphy gives relative relationships",
+        "Radiometric methods date suitable materials",
+        "Incomplete preservation does not imply no history"
+      ],
+      "board": {
+        "kind": "fossils",
+        "lines": [
+          "Fossils preserve selected evidence of past life",
+          "Stratigraphy gives relative relationships",
+          "Radiometric methods date suitable materials",
+          "Incomplete preservation does not imply no history"
+        ]
+      },
+      "script": "Fossils include preserved remains, impressions and traces that provide evidence of organisms and environments from the past. Preservation is selective, so the record is incomplete and biased toward some habitats, tissues and conditions. Relative dating uses relationships such as stratigraphic order, with geological disturbances and context taken into account. Radiometric approaches estimate ages of suitable materials using isotope decay and appropriate assumptions; not every fossil is directly dated by the same method. A transitional fossil can combine features informative about evolutionary relationships without being the direct ancestor of every later species in a group. Absence from one sampled layer is not proof that an organism never existed anywhere. Multiple lines of geological and biological evidence help reconstruct histories and test competing interpretations. Evolutionary sequences are branching histories rather than obligatory ladders from simple to superior organisms. In a question, identify the specimen, the surrounding material, the dating method and whether the conclusion concerns relative order or an estimated numerical age."
+    },
+    {
+      "title": "Homology, analogy and comparative anatomy",
+      "formula": "Homology reflects shared evolutionary origin",
+      "points": [
+        "Homology reflects shared evolutionary origin",
+        "Analogous functions can evolve independently",
+        "Vertebrate forelimb patterns illustrate homology",
+        "Convergence and divergence ask different questions"
+      ],
+      "board": {
+        "kind": "homology",
+        "lines": [
+          "Homology reflects shared evolutionary origin",
+          "Analogous functions can evolve independently",
+          "Vertebrate forelimb patterns illustrate homology",
+          "Convergence and divergence ask different questions"
+        ]
+      },
+      "script": "Homologous structures share an evolutionary origin even when their present functions differ. The basic skeletal organization of vertebrate forelimbs provides a familiar comparison across walking, flying and swimming adaptations. Analogous functional similarities can arise independently, as in some wing comparisons between insects and vertebrates. The level of comparison matters: bird and bat forelimb bones are homologous as inherited tetrapod structures, while their particular flight adaptations include independently evolved features. Convergent evolution describes independent acquisition of similar traits in separate lineages under suitable pressures, whereas divergent evolution emphasizes differences accumulating from a shared ancestral pattern. Superficial resemblance alone cannot establish the exact relationship. Vestigial structures can retain modified or reduced functions; vestigial does not mean every such structure must be completely useless. Compare developmental organization, anatomical connections and other evidence rather than matching only one function. A structure can participate in more than one useful comparison depending on which feature and historical level the question specifies."
+    },
+    {
+      "title": "Embryological and molecular evidence",
+      "formula": "Developmental patterns can indicate shared ancestry",
+      "points": [
+        "Developmental patterns can indicate shared ancestry",
+        "Embryos do not literally replay all adult ancestors",
+        "Homologous DNA and proteins support comparisons",
+        "Tree inference depends on data and assumptions"
+      ],
+      "board": {
+        "kind": "molecular-evidence",
+        "lines": [
+          "Developmental patterns can indicate shared ancestry",
+          "Embryos do not literally replay all adult ancestors",
+          "Homologous DNA and proteins support comparisons",
+          "Tree inference depends on data and assumptions"
+        ]
+      },
+      "script": "Embryological similarities can provide evidence of shared developmental organization and evolutionary relationships. This does not mean an embryo literally passes through the adult forms of every ancestral species. Historical oversimplifications of recapitulation should not replace actual comparative evidence. Molecular comparisons use homologous DNA, RNA or protein sequences to assess relatedness and infer histories with suitable models. Greater similarity can support closer common ancestry in a properly chosen comparison, but rates vary and not every sequence evolves at the same speed. Similarity at one short region should not automatically be treated as a complete species tree. Shared derived characters and concordant evidence across sources strengthen inference. Branch rotation in a tree does not change the relationships encoded by its connections, and an unscaled branch length is not automatically elapsed time. Distinguish the data, the inferred branching pattern and the uncertainty. Molecular and developmental evidence complement fossils and anatomy rather than making every other source of evidence irrelevant."
+    },
+    {
+      "title": "Mutation and recombination as variation sources",
+      "formula": "Mutation can introduce new sequence variants",
+      "points": [
+        "Mutation can introduce new sequence variants",
+        "Recombination reshuffles existing variation",
+        "Mutations are not generated to meet a future need",
+        "Effects depend on location and environment"
+      ],
+      "board": {
+        "kind": "variation",
+        "lines": [
+          "Mutation can introduce new sequence variants",
+          "Recombination reshuffles existing variation",
+          "Mutations are not generated to meet a future need",
+          "Effects depend on location and environment"
+        ]
+      },
+      "script": "Mutation can create new sequence variants through changes such as substitutions, insertions, deletions or larger alterations. Recombination reshuffles existing allelic combinations and can generate new genotypes without necessarily creating a new allele at each locus. Mutations are not directed toward what an organism will need in the future, although mutation rates and mechanisms can differ across sites and environments. Their effects can be harmful, neutral or beneficial depending on the biological context. A change outside a protein coding region can still affect regulation, while a change within a coding region need not alter an amino acid. Heritable variation is relevant to evolution only through the appropriate transmission route; not every somatic change is passed to offspring in ordinary sexual reproduction. Selection, drift and other processes then influence the fate of variants in populations. Do not equate the appearance of variation with its inevitable spread. Identify origin, inheritance and population dynamics as separate steps."
+    },
+    {
+      "title": "Directional, stabilizing and disruptive selection",
+      "formula": "Directional selection favors one end of a distribution",
+      "points": [
+        "Directional selection favors one end of a distribution",
+        "Stabilizing selection favors intermediate values",
+        "Disruptive selection favors contrasting extremes",
+        "Selection outcomes depend on heritable variation"
+      ],
+      "board": {
+        "kind": "selection",
+        "lines": [
+          "Directional selection favors one end of a distribution",
+          "Stabilizing selection favors intermediate values",
+          "Disruptive selection favors contrasting extremes",
+          "Selection outcomes depend on heritable variation"
+        ]
+      },
+      "script": "Selection can be compared through how reproductive success relates to a variable phenotype. Directional selection favors variants toward one end of a distribution and can shift its mean. Stabilizing selection favors an intermediate range and can reduce variation around it. Disruptive selection favors contrasting extremes relative to intermediates and can increase separation in the distribution under suitable conditions. These descriptions are models, not proof that every measured trait follows a fixed bell curve or that disruptive selection automatically creates two species in one generation. The phenotype must have an appropriate heritable basis for a sustained evolutionary response in the stated model. Environmental changes can alter which values are favored, so an optimum is not a permanent universal target. A graph of phenotype frequencies differs from a graph of reproductive success against phenotype. Read axes, compare generations and identify the mechanism rather than choosing a selection label solely from one curve's color or height."
+    },
+    {
+      "title": "Selection examples: moths and resistance",
+      "formula": "Industrial melanism links variants with environment",
+      "points": [
+        "Industrial melanism links variants with environment",
+        "Predation can change relative reproductive success",
+        "Antibiotics select resistant bacterial variants",
+        "Selection does not make human bodies antibiotic-resistant"
+      ],
+      "board": {
+        "kind": "selection-examples",
+        "lines": [
+          "Industrial melanism links variants with environment",
+          "Predation can change relative reproductive success",
+          "Antibiotics select resistant bacterial variants",
+          "Selection does not make human bodies antibiotic-resistant"
+        ]
+      },
+      "script": "Industrial melanism in peppered moths is a familiar example connecting heritable variants with environmental conditions and differential survival, including effects of camouflage and predation in the standard account. It does not mean soot directly instructed every moth to grow a genetically appropriate dark form. Antibiotic resistance provides another comparison: resistant bacterial variants can increase when treatment conditions disproportionately remove susceptible bacteria. Resistance can involve new mutations, existing variation or acquisition of genetic material, depending on the case. The antibiotic does not deliberately teach bacteria which specific mutation will be useful, and it is the microbes rather than the patient's body that become antibiotic resistant in this biological sense. These examples demonstrate context dependent differences in success, not a rule that one variant is superior in every possible environment. Clinical antibiotic use requires appropriate care; the lesson explains the evolutionary mechanism rather than a treatment plan. Separate the variant's origin from the selective environment and subsequent frequency change."
+    },
+    {
+      "title": "Gene flow and population connections",
+      "formula": "Reproductive movement can transfer alleles",
+      "points": [
+        "Reproductive movement can transfer alleles",
+        "Migration without genetic contribution is different",
+        "Gene flow can reduce differences between populations",
+        "Effects interact with selection and drift"
+      ],
+      "board": {
+        "kind": "gene-flow",
+        "lines": [
+          "Reproductive movement can transfer alleles",
+          "Migration without genetic contribution is different",
+          "Gene flow can reduce differences between populations",
+          "Effects interact with selection and drift"
+        ]
+      },
+      "script": "Gene flow is movement of genetic variants between populations through successful reproductive contributions. Organisms can migrate without producing offspring, so physical movement alone does not always establish gene flow. Pollen transfer and seed movement can connect plant populations, while movement and reproduction connect many animal populations. Gene flow can introduce alleles into a population and often reduce genetic differences between connected populations, but the outcome depends on migration patterns, selection and other processes. It does not automatically improve adaptation or erase every population difference. Reduced gene flow can permit divergence, especially when other forces and reproductive barriers contribute, but geographic separation alone is not an instant guarantee of speciation. A change in allele frequencies can have more than one explanation, so examine the evidence for reproductive exchange rather than assigning every change to mutation or selection. Distinguish the population boundary, the source of migrants and whether their alleles actually enter later generations."
+    },
+    {
+      "title": "Genetic drift, founder and bottleneck effects",
+      "formula": "Drift is random sampling change in allele frequencies",
+      "points": [
+        "Drift is random sampling change in allele frequencies",
+        "Effects are stronger in smaller populations",
+        "Founder events sample part of the original diversity",
+        "Bottlenecks can reduce variation without adaptation"
+      ],
+      "board": {
+        "kind": "drift",
+        "lines": [
+          "Drift is random sampling change in allele frequencies",
+          "Effects are stronger in smaller populations",
+          "Founder events sample part of the original diversity",
+          "Bottlenecks can reduce variation without adaptation"
+        ]
+      },
+      "script": "Genetic drift is random change in allele frequencies caused by sampling across generations and related demographic events. Its effects are generally stronger in smaller populations, where chance differences in reproductive contribution can have large proportional consequences. An allele can be lost or become fixed without being favored by natural selection. A founder effect occurs when a new population begins from a limited sample of a source population. A bottleneck sharply reduces population size and can leave a surviving sample that differs genetically from the earlier population. Both can alter diversity, but neither guarantees improved adaptation. A rare allele is especially vulnerable to chance loss, while a harmful allele is not automatically immune to random increase when other forces permit it. Drift concerns population sampling rather than individuals intentionally changing their genotypes. Compare population size, sampling history and evidence for differential fitness before deciding whether a frequency change is best explained by drift, selection or their combined action."
+    },
+    {
+      "title": "Hardy–Weinberg equilibrium and a worked example",
+      "formula": "Two-allele frequencies: p + q = 1",
+      "points": [
+        "Two-allele frequencies: p + q = 1",
+        "Equilibrium genotypes: p² + 2pq + q² = 1",
+        "If q² = 0.09, q = 0.3 and 2pq = 0.42",
+        "Assumptions and denominator must be stated"
+      ],
+      "board": {
+        "kind": "hardy",
+        "lines": [
+          "Two-allele frequencies: p + q = 1",
+          "Equilibrium genotypes: p² + 2pq + q² = 1",
+          "If q² = 0.09, q = 0.3 and 2pq = 0.42",
+          "Assumptions and denominator must be stated"
+        ]
+      },
+      "script": "The Hardy Weinberg principle provides a reference model for allele and genotype frequencies under specified assumptions. For two alleles with frequencies p and q, p plus q equals one. Under the equilibrium model, expected genotype frequencies are p squared, two p q and q squared. The assumptions include random mating and negligible effects of selection, mutation, migration and drift in a sufficiently large idealized population. If a recessive phenotype corresponds exactly to aa and occurs at frequency zero point zero nine in equilibrium, q is zero point three and p is zero point seven. The heterozygote frequency is two times zero point seven times zero point three, giving zero point four two. The recessive phenotype frequency is not q itself in this example. A departure from expected proportions does not uniquely prove natural selection; other assumptions can fail. State whether the observation is an allele, genotype or phenotype frequency and whether equilibrium is justified before applying the formula."
+    },
+    {
+      "title": "Adaptive radiation and branching diversification",
+      "formula": "Related lineages can diversify into different niches",
+      "points": [
+        "Related lineages can diversify into different niches",
+        "Darwin finches provide a familiar comparison",
+        "Australian marsupials illustrate another radiation",
+        "Ecological similarity across radiations can be convergence"
+      ],
+      "board": {
+        "kind": "radiation",
+        "lines": [
+          "Related lineages can diversify into different niches",
+          "Darwin finches provide a familiar comparison",
+          "Australian marsupials illustrate another radiation",
+          "Ecological similarity across radiations can be convergence"
+        ]
+      },
+      "script": "Adaptive radiation describes diversification from a common ancestral lineage into forms associated with different ecological opportunities or roles. Darwin's finches provide a familiar example, with differences in traits such as feeding structures interpreted within a branching history and environmental context. Australian marsupials illustrate another standard textbook comparison involving varied ecological forms. A radiation does not mean one individual transforms into several species during its lifetime or that every branch has exactly the same evolutionary rate. Similar ecological forms in separate radiations, such as some marsupial and placental mammal comparisons, can illustrate convergence rather than immediate close ancestry of the matching forms. Ecological opportunity, inherited variation, geographic context and reproductive divergence can interact. Not every increase in species number must be labeled adaptive radiation without evidence for the relevant ecological diversification. Read a tree as a set of branching relationships and compare the traits independently, rather than arranging all living forms on a ladder from primitive to advanced."
+    },
+    {
+      "title": "Human evolution as a branching history",
+      "formula": "Humans share ancestors with other living apes",
+      "points": [
+        "Humans share ancestors with other living apes",
+        "Fossils, artifacts and genetics provide evidence",
+        "Hominin features evolved in a mosaic pattern",
+        "Living populations are not ranks of evolutionary progress"
+      ],
+      "board": {
+        "kind": "human-evolution",
+        "lines": [
+          "Humans share ancestors with other living apes",
+          "Fossils, artifacts and genetics provide evidence",
+          "Hominin features evolved in a mosaic pattern",
+          "Living populations are not ranks of evolutionary progress"
+        ]
+      },
+      "script": "Human evolution is reconstructed through fossils, archaeological evidence, comparative anatomy and genetics. Humans share common ancestors with other living apes; we did not descend from the chimpanzees living today. Hominin history includes branching lineages rather than one universally agreed straight ladder in which every named fossil species is a direct ancestor of the next. Australopithecine and early Homo comparisons, Homo erectus and later human lineages illustrate changes and diversity across time, with details revised as evidence improves. Bipedal locomotion, brain characteristics, diet, tools and social behavior did not all appear in one simultaneous jump. Homo sapiens originated in Africa, and later population histories include movement and interactions with other human lineages. Ancient DNA has provided evidence of some such interactions, including Neanderthal contributions to many present day genomes. No living population is an earlier evolutionary stage of another. Distinguish evidence, branching relationship and uncertainty rather than treating one skull feature or cultural label as a measure of human worth."
+    },
+    {
+      "title": "Integrated genetics and evolution problem solving",
+      "formula": "Define allele, genotype, phenotype and population",
+      "points": [
+        "Define allele, genotype, phenotype and population",
+        "Separate mechanism from statistical expectation",
+        "Track sequence orientation and biological stage",
+        "Further pedigrees, maps and sequence cases remain"
+      ],
+      "board": {
+        "kind": "integration",
+        "lines": [
+          "Define allele, genotype, phenotype and population",
+          "Separate mechanism from statistical expectation",
+          "Track sequence orientation and biological stage",
+          "Further pedigrees, maps and sequence cases remain"
+        ]
+      },
+      "script": "Genetics and evolution questions often combine several levels of explanation. An allele can affect a molecular product, a phenotype can depend on environment and several loci, and population frequencies can change through more than one process. Begin by defining the organism, cross, locus, sequence orientation or population being analyzed. Use probabilities with the correct denominator, not as guaranteed outcomes for every small family. Mark template and product strands before transcription or translation calculations. In evolutionary reasoning, separate the origin of variation from the processes changing its frequency and the evidence used to infer history. This recorded Unit seven foundation covers the prescribed inheritance, molecular and evolutionary headings against the dated official syllabus. It includes original questions and worked numerical comparisons, not official past examination items. Further detailed pedigrees, three point maps, sequence interpretation, population data and mixed experimental problems remain. Explain the mechanism and assumptions before substituting a memorized ratio, formula or historical name."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Aa × Aa under the stated model gives genotype proportions:",
+      "options": [
+        "1 AA : 2 Aa : 1 aa",
+        "3 AA : 1 aa with no heterozygotes",
+        "Only Aa offspring",
+        "Only dominant alleles in gametes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation and random combination produce the expected genotype distribution."
+    },
+    {
+      "question": "A 3:1 phenotype ratio in this cross requires:",
+      "options": [
+        "Every set of four offspring to match exactly",
+        "The stated complete-dominance model and other assumptions",
+        "The dominant allele to be the commonest in nature",
+        "No allele segregation"
+      ],
+      "answer": 1,
+      "explanation": "Phenotypes depend on expression and model assumptions."
+    },
+    {
+      "question": "For independent AaBb × AaBb, the probability of aabb is:",
+      "options": [
+        "1/4",
+        "3/16",
+        "1/16",
+        "9/16"
+      ],
+      "answer": 2,
+      "explanation": "Multiply the independent one-quarter recessive genotype probabilities."
+    },
+    {
+      "question": "An independent AaBb × aabb test cross expects:",
+      "options": [
+        "Only one class",
+        "A compulsory 9:3:3:1 ratio",
+        "No recessive phenotypes",
+        "Four equal offspring classes"
+      ],
+      "answer": 3,
+      "explanation": "The heterozygote produces four equally frequent gamete types."
+    },
+    {
+      "question": "Incomplete dominance can produce an F2 phenotypic ratio of:",
+      "options": [
+        "1:2:1",
+        "Always 3:1",
+        "Always 9:3:3:1",
+        "Only one intermediate class forever"
+      ],
+      "answer": 0,
+      "explanation": "The heterozygote is distinguishable from both homozygotes."
+    },
+    {
+      "question": "Codominance means:",
+      "options": [
+        "The alleles permanently blend and cannot segregate",
+        "Both allele-associated products are distinguishable",
+        "Only one allele exists in the population",
+        "Every trait must be intermediate"
+      ],
+      "answer": 1,
+      "explanation": "Expression pattern differs from incomplete dominance."
+    },
+    {
+      "question": "IAi × IBi can produce group O offspring with probability:",
+      "options": [
+        "Zero",
+        "1/2",
+        "1/4",
+        "All offspring necessarily"
+      ],
+      "answer": 2,
+      "explanation": "Each parent can contribute i."
+    },
+    {
+      "question": "Multiple alleles means:",
+      "options": [
+        "Every ordinary diploid individual carries all alternatives",
+        "Every chromosome contains only one gene",
+        "Every phenotype is polygenic",
+        "More than two allele alternatives exist in a population"
+      ],
+      "answer": 3,
+      "explanation": "Population diversity differs from one individual genotype."
+    },
+    {
+      "question": "Pleiotropy concerns:",
+      "options": [
+        "One gene influencing multiple traits",
+        "Several loci contributing to one trait only",
+        "Only one chromosome in a cell",
+        "Only environmental change without heredity"
+      ],
+      "answer": 0,
+      "explanation": "It differs from polygenic inheritance."
+    },
+    {
+      "question": "A continuous phenotype distribution proves the exact number of contributing genes. This is:",
+      "options": [
+        "Always correct",
+        "Incorrect; genes and environment can contribute in varied ways",
+        "The definition of codominance",
+        "The definition of linkage"
+      ],
+      "answer": 1,
+      "explanation": "A phenotype distribution alone does not identify a complete genetic model."
+    },
+    {
+      "question": "Homologous chromosomes and sister chromatids are:",
+      "options": [
+        "Identical terms in every cell stage",
+        "Both necessarily different species genomes",
+        "Different relationships involving corresponding chromosomes versus replication copies",
+        "Both whole organisms"
+      ],
+      "answer": 2,
+      "explanation": "The distinction matters for segregation and counting."
+    },
+    {
+      "question": "Independent assortment applies without qualification to every pair of loci. This is:",
+      "options": [
+        "Correct even for all tightly linked loci",
+        "The definition of DNA packaging",
+        "A consequence of every dominant allele",
+        "Incorrect; linkage can alter the expected combinations"
+      ],
+      "answer": 3,
+      "explanation": "Chromosome location and recombination matter."
+    },
+    {
+      "question": "The usual bird sex chromosome comparison is:",
+      "options": [
+        "ZZ male and ZW female",
+        "XX male and XY female",
+        "ZW male and ZZ female",
+        "Haploid females only"
+      ],
+      "answer": 0,
+      "explanation": "The heterogametic sex differs from the typical human model."
+    },
+    {
+      "question": "In the elementary honey bee account, workers and queens are:",
+      "options": [
+        "Haploid males and diploid females respectively",
+        "Both diploid females",
+        "Both haploid males",
+        "Identical to human XY males"
+      ],
+      "answer": 1,
+      "explanation": "Caste differences do not follow simply from haploid versus diploid status."
+    },
+    {
+      "question": "For AB/ab with 20% recombination, an Ab gamete has expected frequency:",
+      "options": [
+        "20%",
+        "40%",
+        "10%",
+        "80%"
+      ],
+      "answer": 2,
+      "explanation": "The two reciprocal recombinant classes share the total recombinant fraction."
+    },
+    {
+      "question": "Observed recombination can underestimate larger map distances because:",
+      "options": [
+        "Every crossover permanently doubles chromosome number",
+        "Recombination fractions routinely exceed 100%",
+        "Map distance is always identical to base pairs",
+        "Multiple crossovers can restore parental combinations"
+      ],
+      "answer": 3,
+      "explanation": "Short-interval approximation has limits."
+    },
+    {
+      "question": "A heterozygous mother and unaffected father in the simple X-recessive model have affected sons at frequency:",
+      "options": [
+        "One half among sons",
+        "One half of all offspring necessarily",
+        "All daughters necessarily",
+        "Zero because fathers supply all X chromosomes"
+      ],
+      "answer": 0,
+      "explanation": "The denominator is sons rather than all offspring."
+    },
+    {
+      "question": "Ordinary direct father-to-son inheritance of an X-linked allele is not expected because the father supplies a son with:",
+      "options": [
+        "His X chromosome in every case",
+        "A Y chromosome in the typical XY model",
+        "No nuclear DNA at all",
+        "Only mitochondrial DNA"
+      ],
+      "answer": 1,
+      "explanation": "A father instead passes his X to daughters in this model."
+    },
+    {
+      "question": "Thalassemia is classically compared as a defect in:",
+      "options": [
+        "Only one universal platelet antigen",
+        "Only the number of every chromosome",
+        "Globin-chain production quantity",
+        "Only a mitochondrial ribosome size"
+      ],
+      "answer": 2,
+      "explanation": "It differs from a structural haemoglobin substitution example."
+    },
+    {
+      "question": "Two heterozygous parents in a simple autosomal recessive model have affected offspring with probability:",
+      "options": [
+        "1/2",
+        "3/4",
+        "All offspring",
+        "1/4"
+      ],
+      "answer": 3,
+      "explanation": "This is an expected Mendelian probability under the stated model."
+    },
+    {
+      "question": "The usual Down syndrome comparison involves:",
+      "options": [
+        "Trisomy 21",
+        "45,X as the standard form",
+        "47,XXY as the standard form",
+        "Only an extra complete genome set"
+      ],
+      "answer": 0,
+      "explanation": "Mosaic and translocation cases can differ."
+    },
+    {
+      "question": "The typical Turner and Klinefelter karyotype comparisons are respectively:",
+      "options": [
+        "47,XXY and 45,X",
+        "45,X and 47,XXY",
+        "47,+21 and 46,XX",
+        "Only 23 and 23 chromosomes"
+      ],
+      "answer": 1,
+      "explanation": "These are standard examples rather than exhaustive case descriptions."
+    },
+    {
+      "question": "Griffith demonstrated transformation but did not by that experiment alone:",
+      "options": [
+        "Observe any heritable change",
+        "Use bacteria",
+        "Chemically identify DNA as the transforming substance",
+        "Investigate inherited bacterial properties"
+      ],
+      "answer": 2,
+      "explanation": "Later biochemical work addressed the identity question."
+    },
+    {
+      "question": "Hershey–Chase used the familiar DNA and protein labels respectively:",
+      "options": [
+        "35S and 32P",
+        "14C and 14C only",
+        "Only ordinary oxygen",
+        "32P and 35S"
+      ],
+      "answer": 3,
+      "explanation": "The particular phage materials and experimental controls matter."
+    },
+    {
+      "question": "For an ordinary complete double-stranded DNA sample, A equals:",
+      "options": [
+        "T",
+        "G necessarily",
+        "C necessarily",
+        "U as the standard DNA base"
+      ],
+      "answer": 0,
+      "explanation": "The relation need not hold within one isolated strand alone."
+    },
+    {
+      "question": "A nucleoside differs from a nucleotide by lacking the:",
+      "options": [
+        "Nitrogenous base",
+        "Phosphate component",
+        "Pentose sugar",
+        "Entire covalent structure"
+      ],
+      "answer": 1,
+      "explanation": "Base plus sugar forms the nucleoside."
+    },
+    {
+      "question": "A nucleosome contains DNA associated with:",
+      "options": [
+        "One whole ribosome",
+        "Only the complete bacterial nucleus",
+        "A histone octamer",
+        "Only a single free amino acid"
+      ],
+      "answer": 2,
+      "explanation": "It is a chromatin packaging unit."
+    },
+    {
+      "question": "Chromosome number alone is:",
+      "options": [
+        "A universal measure of evolutionary superiority",
+        "Always identical to gene number",
+        "Always identical to ploidy",
+        "Not a reliable ranking of organismal complexity"
+      ],
+      "answer": 3,
+      "explanation": "Genome size, gene count and chromosome count are different measures."
+    },
+    {
+      "question": "Semiconservative replication gives each daughter duplex:",
+      "options": [
+        "One parental and one new strand",
+        "Two new strands only in every duplex",
+        "Only disconnected parental fragments",
+        "One RNA and one protein strand"
+      ],
+      "answer": 0,
+      "explanation": "The model differs from conservative and dispersive alternatives."
+    },
+    {
+      "question": "New DNA synthesis by ordinary polymerase proceeds:",
+      "options": [
+        "3′ to 5′ on the lagging strand only",
+        "5′ to 3′",
+        "Both directions on one growing chain equally",
+        "Without a growing 3′ end"
+      ],
+      "answer": 1,
+      "explanation": "Both leading and lagging strands share this chemistry."
+    },
+    {
+      "question": "Coding DNA 5′-ATG GAA-3′ corresponds to RNA:",
+      "options": [
+        "5′-UAC CUU-3′ as the coding match",
+        "3′-AUG GAA-5′ as the same direction",
+        "5′-AUG GAA-3′",
+        "Only a protein directly"
+      ],
+      "answer": 2,
+      "explanation": "Coding and RNA sequences match when written in the same direction except T/U."
+    },
+    {
+      "question": "The DNA template is read by RNA polymerase in the:",
+      "options": [
+        "5′ to 3′ direction while RNA also grows that way",
+        "Direction chosen only by top-of-page placement",
+        "Absence of any strand orientation",
+        "3′ to 5′ direction"
+      ],
+      "answer": 3,
+      "explanation": "RNA is synthesized 5′ to 3′."
+    },
+    {
+      "question": "Splicing ordinarily removes:",
+      "options": [
+        "Introns from the precursor transcript",
+        "Every exon necessarily",
+        "All RNA bases",
+        "Every nucleotide before transcription begins"
+      ],
+      "answer": 0,
+      "explanation": "Retained exons are joined in the processed transcript."
+    },
+    {
+      "question": "Reverse transcription is:",
+      "options": [
+        "Protein-directed reverse translation into DNA",
+        "RNA-directed DNA synthesis",
+        "Only DNA-directed protein synthesis",
+        "Only removal of an RNA cap"
+      ],
+      "answer": 1,
+      "explanation": "It does not mean direct reading of protein into nucleic acid sequence."
+    },
+    {
+      "question": "The standard stop codon set is:",
+      "options": [
+        "AUG, UAA and GGG",
+        "AAA, CCC and UUU",
+        "UAA, UAG and UGA",
+        "Only AUG"
+      ],
+      "answer": 2,
+      "explanation": "AUG commonly initiates and encodes methionine."
+    },
+    {
+      "question": "Degeneracy of the standard genetic code means:",
+      "options": [
+        "Each codon randomly specifies many amino acids",
+        "The reading frame never matters",
+        "Stop codons encode a stop amino acid on ordinary tRNA",
+        "Several codons can specify the same amino acid"
+      ],
+      "answer": 3,
+      "explanation": "Degeneracy differs from ambiguity."
+    },
+    {
+      "question": "Aminoacyl-tRNA synthetases help:",
+      "options": [
+        "Attach appropriate amino acids to tRNAs",
+        "Turn every tRNA directly into DNA",
+        "Remove every ribosome",
+        "Make all stop codons encode glycine"
+      ],
+      "answer": 0,
+      "explanation": "Charging contributes to faithful decoding."
+    },
+    {
+      "question": "The growing polypeptide ordinarily extends from the:",
+      "options": [
+        "Carboxyl toward amino end",
+        "Amino toward the carboxyl end",
+        "DNA 3′ end directly into a chromosome",
+        "Nucleus toward the cell wall only"
+      ],
+      "answer": 1,
+      "explanation": "RNA reading direction and peptide growth are different directional descriptions."
+    },
+    {
+      "question": "Strong lac expression in the standard model is favored by:",
+      "options": [
+        "Lactose absent and glucose high",
+        "Both sugars absent as a universal maximum",
+        "Lactose present and glucose low",
+        "Only operator deletion in every natural case"
+      ],
+      "answer": 2,
+      "explanation": "Induction and positive activation both matter."
+    },
+    {
+      "question": "The physiological inducer relieving lac repressor action is:",
+      "options": [
+        "DNA polymerase",
+        "A histone octamer",
+        "A stop codon",
+        "Allolactose"
+      ],
+      "answer": 3,
+      "explanation": "It is derived from lactose and interacts with the repressor."
+    },
+    {
+      "question": "The Human Genome Project historical interval is:",
+      "options": [
+        "1990–2003",
+        "1953–1954",
+        "2003–1990",
+        "Only one month in 2026"
+      ],
+      "answer": 0,
+      "explanation": "Its reference accomplishment has been extended by later work."
+    },
+    {
+      "question": "A reference genome is:",
+      "options": [
+        "Proof that no human variation exists",
+        "A research reference rather than every individual’s identical sequence",
+        "A ranking of populations",
+        "A complete phenotype prediction for every variant"
+      ],
+      "answer": 1,
+      "explanation": "References and annotations evolve with evidence."
+    },
+    {
+      "question": "A multilocus DNA profile match must be interpreted with:",
+      "options": [
+        "No alternative explanations or sample history",
+        "Only the person’s height",
+        "Statistics, sample quality and context",
+        "Only a single dark band regardless of marker"
+      ],
+      "answer": 2,
+      "explanation": "A match alone does not establish how or when material arrived."
+    },
+    {
+      "question": "Identical twins illustrate that conventional inherited marker profiles:",
+      "options": [
+        "Always differ at every STR locus",
+        "Never share any DNA",
+        "Are the same as all unrelated profiles",
+        "Need not uniquely distinguish every person"
+      ],
+      "answer": 3,
+      "explanation": "The comparison limits overbroad uniqueness claims."
+    },
+    {
+      "question": "The Miller–Urey experiment demonstrated:",
+      "options": [
+        "Organic molecule formation under specified simulated conditions",
+        "Creation of a living cell",
+        "Exact proof of the actual early atmosphere",
+        "Every later evolutionary event"
+      ],
+      "answer": 0,
+      "explanation": "Chemical possibility differs from a complete historical reconstruction."
+    },
+    {
+      "question": "Origin-of-life hypotheses and later biological evolution:",
+      "options": [
+        "Are identical claims tested by one experiment only",
+        "Address related but distinct evidential questions",
+        "Require every individual to change by intention",
+        "Are both disproved by a missing fossil at one site"
+      ],
+      "answer": 1,
+      "explanation": "Separate prebiotic transitions from population diversification."
+    },
+    {
+      "question": "Evolutionary fitness refers chiefly to:",
+      "options": [
+        "Universal physical strength",
+        "Moral worth",
+        "Reproductive contribution in a stated environment",
+        "A guaranteed goal toward perfection"
+      ],
+      "answer": 2,
+      "explanation": "Selection depends on context."
+    },
+    {
+      "question": "The modern synthesis connects evolution with:",
+      "options": [
+        "Only use and disuse of each organ",
+        "The absence of mutation",
+        "A fixed ladder of living species",
+        "Inheritance and population genetic processes"
+      ],
+      "answer": 3,
+      "explanation": "Multiple mechanisms change inherited variation."
+    },
+    {
+      "question": "A fossil transition need not represent:",
+      "options": [
+        "The direct ancestor of every later member of a group",
+        "Evidence of any past organism",
+        "A combination of informative features",
+        "An observation requiring geological context"
+      ],
+      "answer": 0,
+      "explanation": "Branching history and incomplete sampling matter."
+    },
+    {
+      "question": "Relative stratigraphic order and radiometric age are:",
+      "options": [
+        "Always the same measurement",
+        "Different kinds of dating inference",
+        "Both direct counts of genes",
+        "Both independent of geological context"
+      ],
+      "answer": 1,
+      "explanation": "Method and material must be identified."
+    },
+    {
+      "question": "Vertebrate forelimb skeletal patterns are a familiar example of:",
+      "options": [
+        "Pure functional analogy with no common origin",
+        "No evolutionary information",
+        "Homology",
+        "Every living species being one organism"
+      ],
+      "answer": 2,
+      "explanation": "Shared origin can support different current functions."
+    },
+    {
+      "question": "Vestigial means a structure must be completely functionless. This is:",
+      "options": [
+        "Correct universally",
+        "The definition of convergence",
+        "The definition of chromosome number",
+        "Incorrect; reduced or modified functions can remain"
+      ],
+      "answer": 3,
+      "explanation": "Evolutionary reduction does not require total absence of function."
+    },
+    {
+      "question": "Embryological evidence means embryos literally replay all adult ancestors. This is:",
+      "options": [
+        "Incorrect; comparative development is not literal adult replay",
+        "Correct in every vertebrate",
+        "The definition of a molecular clock",
+        "A requirement for DNA replication"
+      ],
+      "answer": 0,
+      "explanation": "Historical recapitulation shortcuts are misleading."
+    },
+    {
+      "question": "Rotating branches at a node without changing connections:",
+      "options": [
+        "Always reverses ancestry",
+        "Does not itself change the represented relationships",
+        "Proves all branch lengths equal time",
+        "Creates new fossil species"
+      ],
+      "answer": 1,
+      "explanation": "Tree relationships depend on branching connections."
+    },
+    {
+      "question": "Mutation and recombination differ because recombination commonly:",
+      "options": [
+        "Creates a new allele at every locus necessarily",
+        "Always meets a future need",
+        "Reshuffles existing allelic combinations",
+        "Never affects inherited variation"
+      ],
+      "answer": 2,
+      "explanation": "Variation origin and reshuffling are distinct."
+    },
+    {
+      "question": "A new mutation must inevitably spread through a population. This is:",
+      "options": [
+        "Correct for every mutation",
+        "The definition of codominance",
+        "A consequence of every somatic change",
+        "Incorrect; transmission, drift and selection affect its fate"
+      ],
+      "answer": 3,
+      "explanation": "Appearance and later frequency change are separate events."
+    },
+    {
+      "question": "Selection favoring an intermediate range is called:",
+      "options": [
+        "Stabilizing",
+        "Directional",
+        "Disruptive",
+        "Only migration"
+      ],
+      "answer": 0,
+      "explanation": "It can narrow variation around the favored range."
+    },
+    {
+      "question": "Disruptive selection automatically creates two species in one generation. This is:",
+      "options": [
+        "Always correct",
+        "Incorrect; the label alone does not establish that outcome",
+        "The definition of segregation",
+        "The definition of a test cross"
+      ],
+      "answer": 1,
+      "explanation": "Population and reproductive processes require further evidence."
+    },
+    {
+      "question": "Antibiotic resistance in this evolutionary comparison is primarily a property of:",
+      "options": [
+        "The patient’s body becoming resistant to all drugs",
+        "Every human chromosome gaining an antibiotic",
+        "Microbes and their inherited mechanisms",
+        "Only the antibiotic molecule adapting intentionally"
+      ],
+      "answer": 2,
+      "explanation": "The selected microbial variants differ in success."
+    },
+    {
+      "question": "Industrial melanism should not be explained as:",
+      "options": [
+        "Differential survival of heritable variants",
+        "An environmental context affecting relative success",
+        "A case requiring evidence about mechanisms",
+        "Soot instructing every moth to produce the needed mutation"
+      ],
+      "answer": 3,
+      "explanation": "Selection does not directly instruct adaptive mutations."
+    },
+    {
+      "question": "Migration establishes gene flow when:",
+      "options": [
+        "Genetic variants contribute reproductively to another population",
+        "Any organism merely passes through with no contribution",
+        "Every population becomes instantly identical",
+        "All selection stops"
+      ],
+      "answer": 0,
+      "explanation": "Movement and genetic contribution are different."
+    },
+    {
+      "question": "Gene flow often tends to:",
+      "options": [
+        "Always improve local adaptation",
+        "Reduce differences between connected populations",
+        "Instantly create a new species",
+        "Always remove every harmful allele"
+      ],
+      "answer": 1,
+      "explanation": "Its effects interact with other forces."
+    },
+    {
+      "question": "Genetic drift is generally stronger in:",
+      "options": [
+        "Only infinitely large populations",
+        "Only populations with no reproduction",
+        "Smaller populations",
+        "Only perfectly deterministic samples"
+      ],
+      "answer": 2,
+      "explanation": "Chance sampling has larger proportional effects."
+    },
+    {
+      "question": "A bottleneck can:",
+      "options": [
+        "Guarantee every allele becomes beneficial",
+        "Prevent all future mutation",
+        "Make all survivors genetically identical necessarily",
+        "Alter allele frequencies and reduce diversity without adaptive improvement"
+      ],
+      "answer": 3,
+      "explanation": "Demographic sampling differs from selection for fitness."
+    },
+    {
+      "question": "If equilibrium recessive frequency q² = 0.09, heterozygote frequency is:",
+      "options": [
+        "0.42",
+        "0.09",
+        "0.30",
+        "0.49"
+      ],
+      "answer": 0,
+      "explanation": "q = 0.3, p = 0.7 and 2pq = 0.42."
+    },
+    {
+      "question": "Deviation from Hardy–Weinberg proportions uniquely proves selection. This is:",
+      "options": [
+        "Correct universally",
+        "Incorrect; several model assumptions can fail",
+        "The definition of a recessive phenotype",
+        "Proof that every genotype is equally frequent"
+      ],
+      "answer": 1,
+      "explanation": "The model is a reference with explicit assumptions."
+    },
+    {
+      "question": "Adaptive radiation describes:",
+      "options": [
+        "One individual becoming several species during life",
+        "Every superficial resemblance being close ancestry",
+        "Diversification from a common lineage into different ecological roles",
+        "A universal ladder from primitive to superior"
+      ],
+      "answer": 2,
+      "explanation": "Branching diversification and ecology are central."
+    },
+    {
+      "question": "Similar marsupial and placental ecological forms can illustrate:",
+      "options": [
+        "The same immediate ancestral species in every case",
+        "Identical chromosome numbers necessarily",
+        "The absence of all adaptation",
+        "Convergence across separate lineages"
+      ],
+      "answer": 3,
+      "explanation": "Matching ecological functions need not imply nearest relationship."
+    },
+    {
+      "question": "Humans descended from the chimpanzees living today. This is:",
+      "options": [
+        "Incorrect; the lineages share common ancestors",
+        "Correct as a literal direct ancestry statement",
+        "The definition of Hardy–Weinberg equilibrium",
+        "Proof that fossils have no value"
+      ],
+      "answer": 0,
+      "explanation": "Living lineages diverge from shared ancestral histories."
+    },
+    {
+      "question": "Living human populations should be viewed as:",
+      "options": [
+        "Earlier and later evolutionary stages ranked by worth",
+        "Contemporary populations rather than ranks of evolutionary progress",
+        "Separate steps of a fixed ladder",
+        "Identical at every DNA base"
+      ],
+      "answer": 1,
+      "explanation": "Human history involves shared ancestry, movement and variation."
+    },
+    {
+      "question": "The strongest first step in a mixed genetics question is to:",
+      "options": [
+        "Apply 3:1 to every possible cross",
+        "Ignore the sequence orientation",
+        "Define the organism, starting state and assumptions",
+        "Treat every probability as a guaranteed count"
+      ],
+      "answer": 2,
+      "explanation": "The appropriate model depends on the question."
+    },
+    {
+      "question": "The origin of a variant and its frequency change are:",
+      "options": [
+        "Identical to every selection event",
+        "Both always caused by deliberate need",
+        "Both measured by chromosome count alone",
+        "Different processes that must be explained separately"
+      ],
+      "answer": 3,
+      "explanation": "Mutation, reshuffling and population dynamics have distinct roles."
+    }
+  ]
+}

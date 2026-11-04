@@ -154,7 +154,31 @@ Route: `/neet/classes/reproduction`. Thirty narrated chapters, thirty teaching b
 | Infertility, IVF, ZIFT, GIFT and transfer comparisons | 28–29 |
 | Integrated ploidy, location and stage reasoning | 30 |
 
-This is foundation recording availability, not exhaustive mastery. Further labelled diagrams, ploidy counts, hormonal graphs and mixed applications remain. Health and legal material explains general concepts without dosing, personal eligibility claims or an exhaustive legal procedure. PCPNDT restrictions are distinguished from legitimate regulated diagnosis; emergency contraception is distinguished from termination. Existing progress is retained. Next production focus: Genetics and Evolution.
+This is foundation recording availability, not exhaustive mastery. Further labelled diagrams, ploidy counts, hormonal graphs and mixed applications remain. Health and legal material explains general concepts without dosing, personal eligibility claims or an exhaustive legal procedure. PCPNDT restrictions are distinguished from legitimate regulated diagnosis; emergency contraception is distinguished from termination. Existing progress is retained. Genetics and Evolution is recorded as B09 below.
+
+## Biology B09: Genetics and Evolution
+
+Route: `/neet/classes/genetics-evolution`. Thirty-six narrated chapters, thirty-six teaching boards, aligned captions and seventy-two original MCQs. Independent progress: `neet.genetics-evolution.lecture.v1`. Checked against the dated official 2026 Biology Unit 7 baseline.
+
+| Required heading | Recorded evidence |
+| --- | --- |
+| Mendelian inheritance and probability | 1–2 |
+| Incomplete/codominance, multiple alleles/ABO, pleiotropy/polygenic inheritance | 3–5 |
+| Chromosome theory, genes, human/bird/bee sex determination | 6–7 |
+| Linkage, crossing over and sex-linked inheritance | 8–9 |
+| Thalassemia and Down/Turner/Klinefelter comparisons | 10–11 |
+| Genetic-material evidence; DNA/RNA structure and packaging | 12–14 |
+| Replication, transcription, processing, code and protein biosynthesis | 15–19 |
+| Lac operon and regulation | 20 |
+| Human Genome Project, genomics and DNA profiling | 21–22 |
+| Origin of life and Darwin/modern synthesis | 23–24 |
+| Fossil, anatomical, embryological and molecular evidence | 25–27 |
+| Mutation, recombination, selection and examples | 28–30 |
+| Gene flow, drift, founder/bottleneck and Hardy–Weinberg | 31–33 |
+| Adaptive radiation and human evolution | 34–35 |
+| Integrated sequence, probability and population reasoning | 36 |
+
+This is foundation recording availability, not exhaustive mastery. Further pedigrees, three-point maps, sequence interpretation and mixed population/experimental problems remain. Probability denominators, parental phase, strand direction and Hardy–Weinberg assumptions are explicit. HGP accomplishments are historically dated; later references and pangenomes are distinguished. Human evolution is presented as branching history without ranking living populations. Existing DNA/inheritance practice and all prior progress keys are retained. Next production focus: Biology and Human Welfare.
 
 ## Wider Biology map
 
@@ -166,7 +190,7 @@ This is foundation recording availability, not exhaustive mastery. Further label
 | Plant Physiology | Recorded foundation with 31 chapters; further experiments and mixed applications remain; existing practice retained |
 | Human Physiology | Recorded foundation with 36 chapters; further numerical, diagram and mixed-case practice remains |
 | Reproduction | Recorded foundation with 30 chapters; further labelled diagrams, ploidy counts and mixed applications remain |
-| Genetics and Evolution | Planned; existing DNA/inheritance practice retained |
+| Genetics and Evolution | Recorded foundation with 36 chapters; further pedigrees, maps and mixed sequence/population practice remains; existing practice retained |
 | Biology and Human Welfare | Planned |
 | Biotechnology and Its Applications | Planned |
 | Ecology and Environment | Planned |
