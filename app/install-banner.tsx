@@ -44,9 +44,9 @@ export default function InstallBanner() {
 
   const platform = detectPlatform();
   const inApp = isInAppBrowser();
-  // Phones and tablets only: computers have the header button. iPhones never offer a prompt, so
-  // they always get the card; Android gets it once Chrome offers a prompt, or in an in-app browser.
-  const eligible = platform === "ios" || (platform === "android" && (Boolean(prompt) || inApp));
+  // Phones and tablets only: computers have the header button. Every phone gets the card: with the
+  // browser's prompt it installs in one tap, otherwise it opens the steps for that browser.
+  const eligible = platform === "ios" || platform === "android";
   if (!eligible && !helpOpen) return null;
   if (QUIET_PATHS.test(pathname ?? "") && !helpOpen) return null;
 
