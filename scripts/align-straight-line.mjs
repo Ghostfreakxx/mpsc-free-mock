@@ -91,6 +91,7 @@ targets['neet-cell-cycle-division'] = 'cell-cycle-division';
 targets['neet-diversity-living-world'] = 'diversity-living-world';
 targets['neet-structural-organisation'] = 'structural-organisation';
 targets['neet-plant-physiology'] = 'plant-physiology';
+targets['neet-human-physiology'] = 'human-physiology';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const dataPrefix = selected.startsWith('neet-') ? 'neet' : 'jee';

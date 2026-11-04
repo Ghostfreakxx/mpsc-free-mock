@@ -109,7 +109,29 @@ Route: `/neet/classes/plant-physiology`. Thirty-one narrated chapters, thirty-on
 | Auxin, gibberellin, cytokinin, ethylene and ABA | 26–30 |
 | Integrated developmental sequence and controlled experiments | 31 |
 
-This is foundation recording availability, not exhaustive mastery. Further experimental interpretation, mixed graphs, inhibitor problems and detailed pathway practice remain. ATP values depend on stated model assumptions; no single idealized number is presented as a universal measured plant yield. Existing photosynthesis practice and all previous progress identifiers are retained. Next production focus: Human Physiology.
+This is foundation recording availability, not exhaustive mastery. Further experimental interpretation, mixed graphs, inhibitor problems and detailed pathway practice remain. ATP values depend on stated model assumptions; no single idealized number is presented as a universal measured plant yield. Existing photosynthesis practice and all previous progress identifiers are retained. Human Physiology is recorded as B07 below.
+
+## Biology B07: Human Physiology
+
+Route: `/neet/classes/human-physiology`. Thirty-six narrated chapters, thirty-six teaching boards, aligned captions and seventy-two original MCQs. Independent progress: `neet.human-physiology.lecture.v1`. Checked against the official dated 2026 Biology Unit 5 baseline.
+
+| Required heading | Recorded evidence |
+| --- | --- |
+| Animal respiratory organs, human system and mechanics | 1–2 |
+| Volumes, gas exchange, transport, regulation and respiratory disorders | 3–5 |
+| Blood, lymph, groups and coagulation | 6–8 |
+| Heart, vessels, cycle, ECG, output, regulation and cardiovascular disorders | 9–12 |
+| Excretory modes, urinary organs and urine formation | 13–15 |
+| Osmoregulation, countercurrent mechanisms, RAAS, atrial signals and ADH | 16–17 |
+| Other excretory routes, insipidus, renal disorders and dialysis | 13 and 18 |
+| Ciliary/flagellar/muscular movement, proteins and contraction | 19–20 |
+| Skeleton, joints and prescribed movement disorders | 21–23 |
+| Neurons, impulse generation/conduction, synapses, CNS/PNS/visceral control | 24–28 |
+| Hormone mechanisms and hypothalamic/pituitary regulation | 29–30 |
+| Thyroid, parathyroid, adrenal, pancreas, pineal, thymic and gonadal signals | 31–34 |
+| Prescribed endocrine disorders and integrated comparison | 35–36 |
+
+These are educational mechanisms and brief disorder comparisons, not personal diagnosis or treatment. Historical syllabus terminology is explained alongside contemporary terms. This foundation does not establish exhaustive Unit 5 mastery; further numerical problems, labelled diagrams, experimental records and mixed physiological cases remain. Next production focus: Reproduction.
 
 ## Wider Biology map
 
@@ -119,7 +141,7 @@ This is foundation recording availability, not exhaustive mastery. Further exper
 | Structural Organisation in Animals and Plants | Recorded foundation with 28 chapters; further practical identification remains |
 | Cell Structure and Function | Cell structure, Biomolecules and Cell Division recorded; further mixed practice remains |
 | Plant Physiology | Recorded foundation with 31 chapters; further experiments and mixed applications remain; existing practice retained |
-| Human Physiology | Planned |
+| Human Physiology | Recorded foundation with 36 chapters; further numerical, diagram and mixed-case practice remains |
 | Reproduction | Planned |
 | Genetics and Evolution | Planned; existing DNA/inheritance practice retained |
 | Biology and Human Welfare | Planned |
