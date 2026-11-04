@@ -1,0 +1,1349 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English Biology teacher. Speak naturally. Read biochemical abbreviations and plant regulator names carefully. Clearly distinguish ATP accounting conventions. Read every sentence completely, including the final sentence. Do not add words or summarize.",
+  "title": "Plant Physiology",
+  "subject": "Biology",
+  "unit": 4,
+  "scope": "NEET Biology Unit 4 recorded foundation against the official 2026 syllabus baseline. Photosynthesis, pigments, photophosphorylation, chemiosmosis, Calvin and C4 pathways, photorespiration, limiting factors; respiration, fermentation, TCA, ETS, ATP conventions, amphibolic connections and RQ; germination, growth rates, differentiation and all five prescribed regulator groups. Further mixed graphs, inhibitor problems, experiments and detailed pathway practice remain. Original questions, not official PYQs.",
+  "sources": [
+    {
+      "title": "NMC: official NEET 2026 syllabus, Biology Unit 4",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/01/202601081066816297.pdf"
+    },
+    {
+      "title": "NCERT: Class XI Biology textbook portal, photosynthesis, respiration and growth",
+      "url": "https://ncert.nic.in/textbook.php"
+    },
+    {
+      "title": "OpenStax Biology 2e: 8 2 the light dependent reactions of photosynthesis",
+      "url": "https://openstax.org/books/biology-2e/pages/8-2-the-light-dependent-reactions-of-photosynthesis"
+    },
+    {
+      "title": "OpenStax Biology 2e: 8 3 using light energy to make organic molecules",
+      "url": "https://openstax.org/books/biology-2e/pages/8-3-using-light-energy-to-make-organic-molecules"
+    },
+    {
+      "title": "OpenStax Biology 2e: 7 2 glycolysis",
+      "url": "https://openstax.org/books/biology-2e/pages/7-2-glycolysis"
+    },
+    {
+      "title": "OpenStax Biology 2e: 7 4 oxidative phosphorylation",
+      "url": "https://openstax.org/books/biology-2e/pages/7-4-oxidative-phosphorylation"
+    },
+    {
+      "title": "OpenStax Biology 2e: 30 6 plant sensory systems and responses",
+      "url": "https://openstax.org/books/biology-2e/pages/30-6-plant-sensory-systems-and-responses"
+    },
+    {
+      "title": "Amthor 2023: ATP yield of plant respiration, potential, actual and unknown",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10550282/"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Photosynthesis: carbon, energy and compartments",
+      "formula": "Light energy becomes chemical energy",
+      "points": [
+        "Light energy becomes chemical energy",
+        "Carbon in carbohydrate comes from CO2",
+        "Released oxygen originates from water",
+        "Thylakoids: light reactions; stroma: Calvin cycle"
+      ],
+      "board": {
+        "kind": "chloroplast",
+        "lines": [
+          "Light energy becomes chemical energy",
+          "Carbon in carbohydrate comes from CO2",
+          "Released oxygen originates from water",
+          "Thylakoids: light reactions; stroma: Calvin cycle"
+        ]
+      },
+      "script": "Welcome to Plant Physiology, our NEET Biology Unit four foundation. This recording uses an AI generated Marin voice. Photosynthesis connects light capture with the formation of organic compounds from inorganic carbon. In the familiar oxygenic plant account, carbon dioxide supplies carbon, while water supplies electrons and is the source of released oxygen. A balanced summary equation does not show every intermediate or prove the source of each atom. The chloroplast envelope surrounds a stroma containing enzymes of carbon fixation. Thylakoid membranes carry photosystems and electron transport machinery, with a distinct internal lumen. Grana are stacks of thylakoids connected by other thylakoid regions; a granum is not an extra independent organelle. Light reactions make ATP and reducing power that support biosynthetic reactions. Calling the Calvin cycle a dark reaction does not mean it normally operates only at night. Keep carbon movement, electron movement and energy transfer separate when interpreting a diagram."
+    },
+    {
+      "title": "Pigments and photosystems",
+      "formula": "Chlorophyll a participates in reaction centres",
+      "points": [
+        "Chlorophyll a participates in reaction centres",
+        "Accessory pigments extend light capture",
+        "Absorption spectrum differs from action spectrum",
+        "Antenna transfers excitation to reaction centre"
+      ],
+      "board": {
+        "kind": "pigments",
+        "lines": [
+          "Chlorophyll a participates in reaction centres",
+          "Accessory pigments extend light capture",
+          "Absorption spectrum differs from action spectrum",
+          "Antenna transfers excitation to reaction centre"
+        ]
+      },
+      "script": "Chlorophyll a is central to the reaction centres of oxygenic photosynthesis. Chlorophyll b and carotenoids contribute as accessory pigments, broadening light absorption and, in suitable contexts, protecting against excess excitation. Pigments are organized with proteins in light harvesting complexes rather than floating as one uniform green solution. Antenna pigments transfer excitation energy toward a reaction centre; this is different from claiming that the same electron travels through every antenna pigment. An absorption spectrum describes how strongly a pigment absorbs different wavelengths. An action spectrum describes the effectiveness of wavelengths in driving a biological process such as photosynthesis. The two are related but need not be identical because several pigments and cellular processes contribute. Blue and red light are strongly used in the familiar chlorophyll comparison; green light is less strongly absorbed by an isolated chlorophyll sample, not universally useless to an entire leaf. Read the axes and the material being measured before comparing spectral curves."
+    },
+    {
+      "title": "Photosystem II and water oxidation",
+      "formula": "PSII reaction centre is called P680",
+      "points": [
+        "PSII reaction centre is called P680",
+        "Water supplies replacement electrons",
+        "Water oxidation releases O2 and lumen H+",
+        "Electrons move toward the carrier chain"
+      ],
+      "board": {
+        "kind": "psii",
+        "lines": [
+          "PSII reaction centre is called P680",
+          "Water supplies replacement electrons",
+          "Water oxidation releases O2 and lumen H+",
+          "Electrons move toward the carrier chain"
+        ]
+      },
+      "script": "Photosystem two is named PSII but acts before photosystem one in the usual linear electron flow. Its reaction centre chlorophyll pair is designated P six eighty, referring to a characteristic absorption wavelength rather than a count of pigment molecules. Light excitation supports charge separation and electron transfer to an acceptor. Electrons lost by the reaction centre are replaced through the water oxidizing machinery. Oxidation of water releases electrons, protons into the thylakoid lumen and molecular oxygen. This is why plant oxygen release must not be attributed to splitting carbon dioxide. Downstream carriers, including plastoquinone and the cytochrome complex in the elementary scheme, connect PSII to PSI. Energy changes along this path help build the proton gradient that supports ATP formation. A diagram with an upward energy step represents light input rather than a literal upward movement through the leaf. Separate the source of electrons from the final destination of electrons and from the compartment in which protons accumulate."
+    },
+    {
+      "title": "PSI, linear flow and cyclic photophosphorylation",
+      "formula": "PSI reaction centre is called P700",
+      "points": [
+        "PSI reaction centre is called P700",
+        "Linear flow yields NADPH and ATP",
+        "Linear flow involves PSII and PSI",
+        "Cyclic PSI flow adds ATP, not net NADPH"
+      ],
+      "board": {
+        "kind": "psi",
+        "lines": [
+          "PSI reaction centre is called P700",
+          "Linear flow yields NADPH and ATP",
+          "Linear flow involves PSII and PSI",
+          "Cyclic PSI flow adds ATP, not net NADPH"
+        ]
+      },
+      "script": "Photosystem one has a reaction centre designated P seven hundred. In linear electron flow, electrons arriving from the earlier chain are reenergized by light at PSI and transferred through carriers including ferredoxin toward reduction of NADP plus to NADPH. The complete linear pathway involves both photosystems, water oxidation and oxygen release, and supports formation of ATP as well as NADPH. In cyclic electron flow around PSI, electrons return through a carrier pathway instead of producing a net transfer to NADP plus. This can increase ATP production without net NADPH formation or oxygen evolution attributable to that cyclic loop. It does not require PSII water splitting as part of the loop itself. Cyclic does not mean the ATP molecule travels back into a photosystem, and noncyclic does not mean there are no repeated reactions anywhere in the chloroplast. The names describe the route of electrons. Compare products and electron destinations rather than memorizing the word cycle without specifying what cycles."
+    },
+    {
+      "title": "Chloroplast chemiosmosis",
+      "formula": "H+ accumulates in the thylakoid lumen",
+      "points": [
+        "H+ accumulates in the thylakoid lumen",
+        "Membrane maintains an electrochemical gradient",
+        "H+ returns to stroma through ATP synthase",
+        "ATP formation couples to proton movement"
+      ],
+      "board": {
+        "kind": "protons",
+        "lines": [
+          "H+ accumulates in the thylakoid lumen",
+          "Membrane maintains an electrochemical gradient",
+          "H+ returns to stroma through ATP synthase",
+          "ATP formation couples to proton movement"
+        ]
+      },
+      "script": "Chemiosmosis links a proton electrochemical gradient to ATP synthesis across a membrane. In a functioning chloroplast light reaction system, water oxidation supplies lumenal protons and carrier mediated processes contribute to a higher proton concentration in the lumen than in the stroma. Reduction of NADP plus also draws on stromal protons in the elementary account. The thylakoid membrane limits unrestricted proton movement, maintaining the difference. Protons return toward the stroma through ATP synthase, whose catalytic machinery forms ATP from ADP and inorganic phosphate. The direction of proton return is essential: from lumen to stroma in this chloroplast comparison. ATP is not made merely because oxygen bubbles are present, nor does the membrane have to rupture to let protons pass. An uncoupling pathway can reduce ATP synthesis despite continued electron transport. Distinguish electron carriers, proton transfer and ATP synthase, and identify the two membrane sides before comparing this mechanism with a mitochondrion."
+    },
+    {
+      "title": "Calvin cycle: fixation, reduction and regeneration",
+      "formula": "RuBP is the five-carbon acceptor",
+      "points": [
+        "RuBP is the five-carbon acceptor",
+        "RuBisCO carboxylation produces 3-PGA",
+        "ATP and NADPH support reduction",
+        "3 CO2: net one triose, 9 ATP, 6 NADPH"
+      ],
+      "board": {
+        "kind": "calvin",
+        "lines": [
+          "RuBP is the five-carbon acceptor",
+          "RuBisCO carboxylation produces 3-PGA",
+          "ATP and NADPH support reduction",
+          "3 CO2: net one triose, 9 ATP, 6 NADPH"
+        ]
+      },
+      "script": "The Calvin cycle has carboxylation, reduction and regeneration phases in the chloroplast stroma. RuBisCO catalyzes the addition of carbon dioxide to ribulose bisphosphate, or RuBP. The unstable six carbon intermediate gives two molecules of three phosphoglycerate, called three PGA. ATP and NADPH support conversion through later intermediates to triose phosphate. Most of this carbon is used to regenerate RuBP rather than leaving the cycle immediately as a whole glucose molecule. In the standard balance, fixation of three carbon dioxide molecules yields a net one three carbon triose phosphate while consuming nine ATP and six NADPH. A six carbon carbohydrate equivalent therefore requires twice that carbon input and energy accounting. Regeneration matters because depletion of the acceptor would stop continued fixation. RuBisCO does not itself generate the light reaction ATP, and a three carbon first stable product does not mean the initial carbon dioxide acceptor has three carbons. Follow carbon totals at each stage."
+    },
+    {
+      "title": "C4 pathway and spatial concentration of carbon",
+      "formula": "Mesophyll PEP carboxylase fixes bicarbonate",
+      "points": [
+        "Mesophyll PEP carboxylase fixes bicarbonate",
+        "First product oxaloacetate has four carbons",
+        "Bundle sheath receives concentrated CO2",
+        "Calvin cycle remains; extra ATP is required"
+      ],
+      "board": {
+        "kind": "c4",
+        "lines": [
+          "Mesophyll PEP carboxylase fixes bicarbonate",
+          "First product oxaloacetate has four carbons",
+          "Bundle sheath receives concentrated CO2",
+          "Calvin cycle remains; extra ATP is required"
+        ]
+      },
+      "script": "In the typical C four leaf account, initial fixation in mesophyll cells uses phosphoenolpyruvate carboxylase, or PEP carboxylase, with bicarbonate as the immediate inorganic carbon substrate. The first stable product is oxaloacetate, a four carbon compound that can be converted to other transport acids. These compounds carry carbon toward bundle sheath cells, where decarboxylation supplies a high carbon dioxide concentration around RuBisCO. The Calvin cycle still operates there; C four plants have not replaced it with a completely unrelated sugar making cycle. The returning three carbon compound participates in regeneration of PEP at an additional energy cost. In the usual simplified comparison, this costs about two additional ATP equivalents per carbon dioxide concentrated. Maize and sugarcane are familiar examples with Kranz anatomy, though detailed biochemical subtypes vary. Carbon concentration reduces photorespiration and can favor performance under suitable warm conditions. Four carbon first product and five carbon Calvin acceptor describe different stages, not contradictory descriptions of one molecule."
+    },
+    {
+      "title": "Photorespiration and the C3 comparison",
+      "formula": "RuBisCO can act as an oxygenase",
+      "points": [
+        "RuBisCO can act as an oxygenase",
+        "RuBP oxygenation gives 3-PGA and 2-PG",
+        "Chloroplast, peroxisome and mitochondrion",
+        "Recovery costs energy and can release CO2"
+      ],
+      "board": {
+        "kind": "photorespiration",
+        "lines": [
+          "RuBisCO can act as an oxygenase",
+          "RuBP oxygenation gives 3-PGA and 2-PG",
+          "Chloroplast, peroxisome and mitochondrion",
+          "Recovery costs energy and can release CO2"
+        ]
+      },
+      "script": "RuBisCO has both carboxylase and oxygenase activities. In the oxygenase reaction, RuBP combines with oxygen to form one three phosphoglycerate and one two phosphoglycolate, rather than two three carbon Calvin products. Processing the phosphoglycolate through photorespiratory metabolism involves chloroplasts, peroxisomes and mitochondria in the standard plant account. Carbon is partially recovered, but the pathway uses energy and releases some previously fixed carbon dioxide; it is not an additional net sugar producing alternative to the Calvin cycle. A higher oxygen to carbon dioxide ratio around RuBisCO and suitable high temperature conditions can favor this competition. Stomatal closure can restrict carbon dioxide entry and intensify the issue. C four carbon concentration suppresses photorespiration but does not prove RuBisCO has lost its oxygenase capacity. Photorespiration is different from ordinary mitochondrial respiration, even though mitochondria participate. The prefix photo identifies its connection with photosynthetic metabolism, not a new method of making extra ATP from wasted carbon."
+    },
+    {
+      "title": "Factors limiting photosynthesis",
+      "formula": "Light, CO2, temperature and water interact",
+      "points": [
+        "Light, CO2, temperature and water interact",
+        "The limiting factor changes with conditions",
+        "More light can reach saturation or cause damage",
+        "C3 and C4 responses depend on the setting"
+      ],
+      "board": {
+        "kind": "limiting",
+        "lines": [
+          "Light, CO2, temperature and water interact",
+          "The limiting factor changes with conditions",
+          "More light can reach saturation or cause damage",
+          "C3 and C4 responses depend on the setting"
+        ]
+      },
+      "script": "Photosynthetic rate depends on interacting external and internal factors. Light intensity, carbon dioxide availability, temperature and water status matter alongside pigment, enzyme and leaf characteristics. A limiting factor is the factor currently restricting rate in a stated situation. Increasing a different factor may have little effect until the limitation changes. A light response curve often rises at low light and approaches saturation, but sufficiently strong light can also cause damage or protective downregulation. Temperature affects enzyme reactions and related processes, so an optimum is context dependent rather than one universal temperature for every plant. Water shortage can close stomata, restrict carbon dioxide entry and alter metabolism; its effect is not captured only by counting water molecules in a summary equation. C three and C four plants can respond differently to carbon dioxide and temperature, but neither label guarantees superiority in every environment. In an experimental graph, change one variable carefully and identify the factors being held constant."
+    },
+    {
+      "title": "Evidence, starch tests and net gas exchange",
+      "formula": "Iodine tests starch, not photosynthesis directly",
+      "points": [
+        "Iodine tests starch, not photosynthesis directly",
+        "Controls distinguish light and CO2 effects",
+        "Gross fixation differs from net exchange",
+        "At compensation, opposing fluxes balance"
+      ],
+      "board": {
+        "kind": "evidence",
+        "lines": [
+          "Iodine tests starch, not photosynthesis directly",
+          "Controls distinguish light and CO2 effects",
+          "Gross fixation differs from net exchange",
+          "At compensation, opposing fluxes balance"
+        ]
+      },
+      "script": "A starch test can provide evidence of carbohydrate accumulation in a leaf, but iodine does not directly detect carbon dioxide fixation, ATP synthesis or oxygen evolution. A previously destarched plant, suitable light exposure and appropriate controls help interpret the result. A variegated leaf comparison asks how green and nongreen regions differ, while controlled carbon dioxide availability investigates another requirement. Boiling ethanol and other laboratory steps require supervised safe procedures; this recording focuses on interpretation rather than unsupervised handling. Gas exchange measurements record the net result of processes occurring together. In a lit leaf, photosynthetic carbon uptake can coexist with respiratory carbon release. Net carbon assimilation is therefore less than gross uptake when opposing losses are present. At a stated compensation point, the measured opposing fluxes balance; this does not mean every enzyme and organelle has stopped. Bubble counts can be influenced by temperature, gas dissolution and bubble size, so they are an imperfect proxy for a precise photosynthetic rate."
+    },
+    {
+      "title": "Plant respiration and gas exchange",
+      "formula": "Roots and shoots both respire",
+      "points": [
+        "Roots and shoots both respire",
+        "Plants lack a vertebrate breathing apparatus",
+        "Stomata, lenticels and surfaces aid exchange",
+        "Photosynthesis does not replace respiration"
+      ],
+      "board": {
+        "kind": "gas",
+        "lines": [
+          "Roots and shoots both respire",
+          "Plants lack a vertebrate breathing apparatus",
+          "Stomata, lenticels and surfaces aid exchange",
+          "Photosynthesis does not replace respiration"
+        ]
+      },
+      "script": "Plant cells require respiration for usable chemical energy in both green and nongreen tissues. Roots, developing seeds and other nonphotosynthetic parts respire, while photosynthetic cells also respire. Plants do not have a vertebrate style lung and blood circulation system for gas delivery. Gases can diffuse through stomata, lenticels and other surfaces, then through intercellular spaces and short cellular distances. The balance of photosynthetic and respiratory gas exchange changes with light, tissue and conditions. Saying plants release oxygen by day and carbon dioxide only at night is therefore an overgeneralization; respiration continues in suitable living cells during the day as well. Waterlogged soil can reduce oxygen availability around roots and constrain aerobic metabolism even when a shoot has access to air. Breathing, gas exchange and cellular respiration are related ideas but not identical definitions. The following pathways describe controlled chemical transfers of carbon and electrons, rather than the simple physical movement of air into a leaf."
+    },
+    {
+      "title": "Glycolysis: carbon and ATP accounting",
+      "formula": "Cytosol: glucose becomes two pyruvates",
+      "points": [
+        "Cytosol: glucose becomes two pyruvates",
+        "Two ATP invested; four ATP produced",
+        "Net gain: two ATP and two NADH",
+        "Oxygen is not directly consumed"
+      ],
+      "board": {
+        "kind": "glycolysis",
+        "lines": [
+          "Cytosol: glucose becomes two pyruvates",
+          "Two ATP invested; four ATP produced",
+          "Net gain: two ATP and two NADH",
+          "Oxygen is not directly consumed"
+        ]
+      },
+      "script": "Glycolysis takes place in the cytosol and converts a six carbon glucose into two three carbon pyruvate molecules through a sequence of enzyme catalyzed steps. An investment phase uses two ATP equivalents in the standard glucose account. After splitting and interconversion of intermediates, both three carbon branches contribute to the payoff reactions. Four ATP are formed by substrate level phosphorylation, giving a net gain of two ATP after the investment is subtracted. Two NADH are also formed per glucose. NAD plus must remain available for the oxidation step, so regeneration of this carrier is important when oxygen supply or downstream metabolism is restricted. Glycolysis does not directly consume molecular oxygen and can occur in aerobic as well as fermentative metabolism. No carbon dioxide is released in the standard glucose to pyruvate sequence. Gross ATP produced, net ATP gained and reduced carrier production are different quantities; do not add them together without stating how later carrier oxidation is being accounted for."
+    },
+    {
+      "title": "Fermentation regenerates NAD plus",
+      "formula": "Alcoholic: ethanol and CO2 from pyruvate",
+      "points": [
+        "Alcoholic: ethanol and CO2 from pyruvate",
+        "Lactate formation does not release CO2",
+        "NADH oxidation regenerates NAD+",
+        "No extra ATP beyond glycolysis here"
+      ],
+      "board": {
+        "kind": "fermentation",
+        "lines": [
+          "Alcoholic: ethanol and CO2 from pyruvate",
+          "Lactate formation does not release CO2",
+          "NADH oxidation regenerates NAD+",
+          "No extra ATP beyond glycolysis here"
+        ]
+      },
+      "script": "When respiratory oxidation of NADH is insufficient, fermentation can regenerate NAD plus so that glycolysis continues. In alcoholic fermentation, pyruvate first loses carbon dioxide to form acetaldehyde, which is then reduced to ethanol using NADH. Yeast is a familiar example, and some oxygen deprived plant tissues can also produce ethanol. In lactic fermentation, reduction of pyruvate to lactate regenerates NAD plus without the carbon dioxide releasing step. These alternatives do not produce additional ATP in their conversion of pyruvate in the standard account. Their ATP yield is the net two ATP supplied by glycolysis per glucose. Fermentation leaves substantial chemical energy in its organic end products, so it cannot be equated with complete oxidation to carbon dioxide and water. Anaerobic respiration in some microorganisms, involving alternative terminal electron acceptors, is a distinct concept from these elementary fermentation pathways. Always specify the organism, conditions and end product instead of assuming every oxygen limited cell makes exactly the same substance."
+    },
+    {
+      "title": "Pyruvate oxidation links glycolysis to the cycle",
+      "formula": "Eukaryotic link reaction: mitochondrial matrix",
+      "points": [
+        "Eukaryotic link reaction: mitochondrial matrix",
+        "Each pyruvate gives acetyl-CoA and CO2",
+        "One NADH produced per pyruvate",
+        "Per glucose: two acetyl-CoA and two NADH"
+      ],
+      "board": {
+        "kind": "link",
+        "lines": [
+          "Eukaryotic link reaction: mitochondrial matrix",
+          "Each pyruvate gives acetyl-CoA and CO2",
+          "One NADH produced per pyruvate",
+          "Per glucose: two acetyl-CoA and two NADH"
+        ]
+      },
+      "script": "For the usual aerobic eukaryotic pathway, pyruvate enters the mitochondrion and undergoes oxidative decarboxylation through the pyruvate dehydrogenase complex in the matrix. A three carbon pyruvate loses one carbon as carbon dioxide, leaving a two carbon acetyl group attached to coenzyme A. NAD plus is reduced to NADH. The direct products per pyruvate are therefore acetyl coenzyme A, one carbon dioxide and one NADH, with no direct ATP production in this link step. One glucose gives two pyruvates, so the link reaction totals must be doubled per glucose. Coenzyme A serves as an acetyl group carrier and is released when the group enters the following cycle; it is not itself one of the two carbons being oxidized. This reaction links glycolysis with the citric acid cycle but should not be silently counted twice when a question separately lists both stages. Track the reference amount: per pyruvate and per glucose give different numerical answers."
+    },
+    {
+      "title": "TCA cycle: regeneration and yields",
+      "formula": "Acetyl-CoA combines with oxaloacetate",
+      "points": [
+        "Acetyl-CoA combines with oxaloacetate",
+        "Citrate is a six-carbon intermediate",
+        "Per acetyl: 3 NADH, 1 FADH2, 1 ATP equivalent",
+        "Two CO2; oxaloacetate regenerated"
+      ],
+      "board": {
+        "kind": "tca",
+        "lines": [
+          "Acetyl-CoA combines with oxaloacetate",
+          "Citrate is a six-carbon intermediate",
+          "Per acetyl: 3 NADH, 1 FADH2, 1 ATP equivalent",
+          "Two CO2; oxaloacetate regenerated"
+        ]
+      },
+      "script": "The tricarboxylic acid cycle, also called the citric acid or Krebs cycle, begins with a two carbon acetyl group joining four carbon oxaloacetate to form six carbon citrate. A sequence of rearrangements, oxidations and decarboxylations regenerates oxaloacetate. The cycle does not consume a new oxaloacetate molecule irreversibly on every turn. In the standard balance per acetyl coenzyme A, it produces three NADH, one FADH two, one substrate level ATP equivalent and two carbon dioxide molecules. The ATP equivalent can be represented through GTP in a common biochemical account. Double these yields for the two acetyl groups derived from one glucose. Most reactions are associated with the mitochondrial matrix, while succinate dehydrogenase is an inner membrane enzyme that also participates in electron transport. Carbon dioxide loss over a turn does not require both incoming acetyl carbons to be the first carbons released in that same turn. Separate net cycle accounting from detailed tracing of a labeled carbon atom."
+    },
+    {
+      "title": "Respiratory electron transport and oxygen",
+      "formula": "Inner mitochondrial membrane carries ETS",
+      "points": [
+        "Inner mitochondrial membrane carries ETS",
+        "NADH and FADH2 feed different entry routes",
+        "Oxygen is the terminal electron acceptor",
+        "Electron transfer supports H+ pumping"
+      ],
+      "board": {
+        "kind": "ets",
+        "lines": [
+          "Inner mitochondrial membrane carries ETS",
+          "NADH and FADH2 feed different entry routes",
+          "Oxygen is the terminal electron acceptor",
+          "Electron transfer supports H+ pumping"
+        ]
+      },
+      "script": "The mitochondrial electron transport system is associated with the inner membrane. Reduced carriers formed in earlier pathways transfer electrons into it. In the familiar scheme, NADH donates through complex one, whereas succinate associated electron transfer reaches the ubiquinone pool through complex two. Mobile carriers and later complexes pass electrons toward molecular oxygen, which is reduced to water at the terminal step. Oxygen is therefore not directly required as a reactant in every glycolytic or citric acid cycle reaction, but it is essential to the usual terminal respiratory chain and continued efficient regeneration of oxidized carriers. Complexes one, three and four support proton pumping in this standard chain; complex two does not pump protons. The resulting gradient stores part of the transferred energy rather than converting all released energy directly into ATP in one chemical leap. Plant mitochondria can have additional routes such as alternative oxidase, so the basic diagram is a teaching scheme rather than every possible respiratory electron pathway."
+    },
+    {
+      "title": "Mitochondrial chemiosmosis and ATP synthase",
+      "formula": "H+ pumped from matrix to intermembrane space",
+      "points": [
+        "H+ pumped from matrix to intermembrane space",
+        "Return through ATP synthase into matrix",
+        "Oxidative differs from substrate-level ATP",
+        "Uncoupling dissipates the proton gradient"
+      ],
+      "board": {
+        "kind": "mitochondrion",
+        "lines": [
+          "H+ pumped from matrix to intermembrane space",
+          "Return through ATP synthase into matrix",
+          "Oxidative differs from substrate-level ATP",
+          "Uncoupling dissipates the proton gradient"
+        ]
+      },
+      "script": "In mitochondrial oxidative phosphorylation, respiratory electron transfer supports proton movement from the matrix toward the intermembrane space. The inner membrane restricts unrestricted proton return. Protons move back toward the matrix through ATP synthase, coupling that flow to phosphorylation of ADP. This compartmental direction differs from the chloroplast lumen to stroma comparison, even though both systems use chemiosmosis. The catalytic part of mitochondrial ATP synthase faces the matrix in the elementary account. Substrate level phosphorylation is different: an enzyme transfers a phosphate from a suitable metabolic intermediate to ADP or a related nucleotide without requiring this membrane gradient. An uncoupler allows the gradient to dissipate and can lower ATP yield even while electron flow and oxygen use continue. Blocking electron transport is therefore not identical to uncoupling it. Distinguish the energy source, the membrane sides and the site of nucleotide phosphorylation before predicting what a particular inhibitor or membrane leak would change."
+    },
+    {
+      "title": "ATP totals require stated assumptions",
+      "formula": "Fixed textbook balance is an idealized model",
+      "points": [
+        "Fixed textbook balance is an idealized model",
+        "Old 3/2 ratios can give 38 ATP per glucose",
+        "Modern 2.5/1.5 ratios give about 30–32",
+        "Transport, leaks and plant routes alter yield"
+      ],
+      "board": {
+        "kind": "atp",
+        "lines": [
+          "Fixed textbook balance is an idealized model",
+          "Old 3/2 ratios can give 38 ATP per glucose",
+          "Modern 2.5/1.5 ratios give about 30–32",
+          "Transport, leaks and plant routes alter yield"
+        ]
+      },
+      "script": "A single universal ATP total for every respiring cell is misleading. In the standard complete glucose balance, glycolysis, the link reaction and two cycle turns together provide ten NADH, two FADH two and four substrate level ATP equivalents. An older idealized textbook convention assigns three ATP per NADH and two per FADH two, giving thirty eight ATP before accounting for complications. Contemporary approximate ratios of two point five and one point five instead give thirty two with favorable handling of cytosolic reducing equivalents; different shuttle arrangements can lower this to about thirty. Real yields also depend on transport costs, proton leak, substrate use and other pathways. Plant mitochondrial alternative electron routes can change coupling further. For an examination calculation, use the explicit assumptions provided and label the convention rather than silently mixing ratios from different models. A theoretical total is not a measurement of every ATP molecule a living leaf actually produces from each glucose."
+    },
+    {
+      "title": "Respiration is amphibolic",
+      "formula": "Catabolism releases usable energy",
+      "points": [
+        "Catabolism releases usable energy",
+        "Intermediates also support biosynthesis",
+        "Acetyl-CoA links carbohydrate and lipid routes",
+        "Amino acids enter after suitable processing"
+      ],
+      "board": {
+        "kind": "amphibolic",
+        "lines": [
+          "Catabolism releases usable energy",
+          "Intermediates also support biosynthesis",
+          "Acetyl-CoA links carbohydrate and lipid routes",
+          "Amino acids enter after suitable processing"
+        ]
+      },
+      "script": "Respiration is commonly introduced as the breakdown of organic substrates, but its pathways also supply precursors for biosynthesis. This dual involvement in degradation and synthesis is described as amphibolic. Acetyl coenzyme A connects carbohydrate oxidation with fatty acid metabolism, while citric acid cycle intermediates can contribute carbon skeletons for amino acid and other cellular synthesis. Amino acids may enter respiratory pathways after appropriate removal or transfer of nitrogen and conversion to suitable intermediates. They do not all enter at exactly the same point. Glycerol can feed carbohydrate related pathways after suitable transformations, while fatty acids are commonly broken down to acetyl units through beta oxidation. When intermediates are withdrawn for synthesis, their supply must be maintained by other reactions for continued cycle function. Thus the diagram should be read as a network with exchanges, not an isolated pipe that only accepts glucose and only releases waste. Amphibolic does not mean a cell is simultaneously synthesizing and degrading the same molecule at equal rates."
+    },
+    {
+      "title": "Respiratory quotient and gas-volume reasoning",
+      "formula": "RQ = CO2 released / O2 consumed",
+      "points": [
+        "RQ = CO2 released / O2 consumed",
+        "Complete glucose oxidation: RQ about 1",
+        "Typical fat oxidation: RQ below 1",
+        "Specify substrate and comparable conditions"
+      ],
+      "board": {
+        "kind": "rq",
+        "lines": [
+          "RQ = CO2 released / O2 consumed",
+          "Complete glucose oxidation: RQ about 1",
+          "Typical fat oxidation: RQ below 1",
+          "Specify substrate and comparable conditions"
+        ]
+      },
+      "script": "The respiratory quotient, or RQ, is the ratio of carbon dioxide released to oxygen consumed during the stated respiratory process. Comparable molar amounts or gas volumes under the same conditions can be used. Complete oxidation of glucose releases six carbon dioxide while consuming six oxygen, giving RQ one. Fats require relatively more oxygen for their carbon oxidation and typically give a value below one, often near zero point seven. Some organic acids can give values above one. Mixed substrates, incomplete oxidation and gas exchange complications require care, so RQ alone is not an infallible identification of one nutrient in every living tissue. In alcoholic fermentation, carbon dioxide may be released without oxygen consumption; dividing by zero does not give an ordinary finite aerobic RQ. A whole green leaf under light also has photosynthetic gas fluxes, so an uncorrected net gas ratio may not measure respiratory RQ. Write the numerator and denominator before substituting numbers, especially when a question reverses their order."
+    },
+    {
+      "title": "Seed germination and dormancy",
+      "formula": "Imbibition starts water uptake",
+      "points": [
+        "Imbibition starts water uptake",
+        "Viable seeds need suitable oxygen and temperature",
+        "Radicle emergence marks germination commonly",
+        "Dormancy differs from simple unfavorable conditions"
+      ],
+      "board": {
+        "kind": "germination",
+        "lines": [
+          "Imbibition starts water uptake",
+          "Viable seeds need suitable oxygen and temperature",
+          "Radicle emergence marks germination commonly",
+          "Dormancy differs from simple unfavorable conditions"
+        ]
+      },
+      "script": "Seed germination involves renewed growth of the embryo under suitable conditions. Imbibition allows dry tissues to take up water, enzyme activity resumes and stored reserves support early development. Water, appropriate temperature and adequate oxygen are important for many terrestrial seeds, while light requirements vary among species. A seed under water can receive water yet lack sufficient oxygen, so one favorable factor does not guarantee successful germination. Radicle emergence is a common operational marker for germination, and seedling establishment continues beyond that point. A viable seed can remain dormant because of internal constraints even when several external conditions appear suitable. Dormancy is different from death and from simple quiescence caused only by currently unfavorable surroundings. Protective coats, embryo state and regulator balance can contribute in different species. Germination does not require the seed to photosynthesize before it uses stored reserves. Distinguish the embryo, its reserve tissues and the environmental conditions when interpreting why a particular treatment changes the response."
+    },
+    {
+      "title": "Growth regions and the sigmoid curve",
+      "formula": "Growth is an irreversible increase",
+      "points": [
+        "Growth is an irreversible increase",
+        "Meristematic, elongation and maturation regions",
+        "An organ may show a sigmoid time course",
+        "Different measurements describe different aspects"
+      ],
+      "board": {
+        "kind": "growth",
+        "lines": [
+          "Growth is an irreversible increase",
+          "Meristematic, elongation and maturation regions",
+          "An organ may show a sigmoid time course",
+          "Different measurements describe different aspects"
+        ]
+      },
+      "script": "Plant growth is an irreversible increase in size, commonly accompanied by increases in dry mass, cell number or related measures depending on the system being studied. Temporary swelling from water uptake alone should not automatically be equated with sustained developmental growth. In a growing root, a meristematic region contains actively dividing cells, an elongation region shows substantial cell expansion and a maturation region develops specialized functions such as root hair formation. These regions are related stages in a spatial pattern, not separate species of cells fixed for the entire life of the plant. A finite organ often shows a sigmoid growth curve with an initial lag, faster growth and a slowing or stationary phase as limitations develop. Whole plant growth can be more complex because new organs and meristems continue to contribute. Length, area, volume, fresh mass and dry mass are different measurements; a treatment can change one without proportionally changing every other measure."
+    },
+    {
+      "title": "Arithmetic, geometric, absolute and relative growth",
+      "formula": "Arithmetic: equal absolute increments in a model",
+      "points": [
+        "Arithmetic: equal absolute increments in a model",
+        "Geometric: rate proportional to existing size",
+        "Absolute rate = change in size / time",
+        "Relative rate accounts for initial size"
+      ],
+      "board": {
+        "kind": "rates",
+        "lines": [
+          "Arithmetic: equal absolute increments in a model",
+          "Geometric: rate proportional to existing size",
+          "Absolute rate = change in size / time",
+          "Relative rate accounts for initial size"
+        ]
+      },
+      "script": "An arithmetic growth model adds equal absolute increments in equal time intervals, producing a straight line under its stated assumptions. A geometric or exponential model makes the increase proportional to the existing size while resources remain unrestricted. Living organs often depart from either simple model as conditions and developmental programs change. Absolute growth rate compares the actual increase in a measured quantity over time. Relative growth rate relates growth to the amount of material already present; precise continuous calculations use logarithmic change over time. A leaf increasing from five to ten square centimetres and another from fifty to fifty five each gain five square centimetres, yet the first has a much larger proportional increase. Thus equal absolute growth does not imply equal relative growth. Always state the time interval and units. A steeper graph can reflect the axis scale, and a percentage gain should not be compared with a length gain as though they were the same variable."
+    },
+    {
+      "title": "Conditions of growth and developmental plasticity",
+      "formula": "Water supports turgor and metabolism",
+      "points": [
+        "Water supports turgor and metabolism",
+        "Oxygen, nutrients and temperature matter",
+        "Light can shape form as well as supply energy",
+        "Genotype and environment interact"
+      ],
+      "board": {
+        "kind": "conditions",
+        "lines": [
+          "Water supports turgor and metabolism",
+          "Oxygen, nutrients and temperature matter",
+          "Light can shape form as well as supply energy",
+          "Genotype and environment interact"
+        ]
+      },
+      "script": "Growth depends on the interaction of genetic programs with environmental conditions. Water supports turgor driven expansion and metabolic reactions, minerals provide essential materials, and appropriate temperature and oxygen availability support suitable enzyme and respiratory activity. Light affects both energy supply and developmental signaling, so a light response is not always just a change in photosynthetic carbon fixation. A dark grown seedling may elongate rapidly using reserves while showing a pale, unusual form; greater length alone does not establish healthier overall development. Nutrient or oxygen shortage can restrict growth even when water is abundant. Plasticity refers to the capacity to show different forms or developmental responses under different conditions or life stages. Heterophylly, with different leaf forms in a plant's developmental or environmental contexts, provides a familiar example. Plasticity does not mean the environment rewrites every inherited sequence whenever a leaf changes shape. Use controlled comparisons to separate changes in growth rate, tissue differentiation and the overall developmental pattern."
+    },
+    {
+      "title": "Differentiation, dedifferentiation and redifferentiation",
+      "formula": "Differentiation gives specialized structure",
+      "points": [
+        "Differentiation gives specialized structure",
+        "Some mature cells regain division capacity",
+        "Dedifferentiation is context dependent",
+        "Redifferentiation produces specialized descendants"
+      ],
+      "board": {
+        "kind": "differentiation",
+        "lines": [
+          "Differentiation gives specialized structure",
+          "Some mature cells regain division capacity",
+          "Dedifferentiation is context dependent",
+          "Redifferentiation produces specialized descendants"
+        ]
+      },
+      "script": "Differentiation is the process by which cells acquire specialized structural and functional features. Development of a tracheary element, for example, includes major wall modification and eventual loss of living contents in the mature conducting cell. Not all differentiated cells follow that same route. In suitable plant contexts, some living differentiated cells can regain the ability to divide, a process called dedifferentiation. Formation of an interfascicular cambium from appropriate parenchymatous cells is a familiar textbook example. The descendants can later specialize again through redifferentiation, producing cells with new functions. This does not mean every dead plant cell can become a new meristem or that every cell reverses its history spontaneously. Development combines growth, division, differentiation and the arrangement of tissues over time. The same genotype can support different cellular roles through regulated expression and environment. Keep the capacity of a cell, the actual conditions triggering a response and the fate of its descendants separate when interpreting a regeneration example."
+    },
+    {
+      "title": "Auxins: elongation, dominance and applications",
+      "formula": "IAA is a familiar natural auxin",
+      "points": [
+        "IAA is a familiar natural auxin",
+        "Responses depend on tissue and concentration",
+        "Apical dominance involves hormone interactions",
+        "Auxins can support rooting and fruit responses"
+      ],
+      "board": {
+        "kind": "auxin",
+        "lines": [
+          "IAA is a familiar natural auxin",
+          "Responses depend on tissue and concentration",
+          "Apical dominance involves hormone interactions",
+          "Auxins can support rooting and fruit responses"
+        ]
+      },
+      "script": "Auxins are growth regulators with effects that depend on tissue, concentration and developmental context. Indole acetic acid, or IAA, is a familiar natural auxin. Auxin signaling can promote cell elongation in suitable shoot tissues, while roots often respond to lower concentrations and may be inhibited at concentrations that stimulate shoots. Differential auxin distribution contributes to tropic growth responses, so uniform stimulation of every cell is not the explanation for bending. Apical dominance involves signaling from the shoot apex and interactions with other regulators; it is not proof that lateral buds lack living meristems. Auxins are used in appropriate contexts to encourage adventitious rooting and can influence fruit development and abscission responses. Synthetic compounds such as NAA and two four D have different applications and concentration dependent effects, including selective herbicidal use of the latter. Listing an application does not make it a safe universal treatment recommendation. In questions, identify the plant part and concentration before deciding whether an auxin promotes or suppresses growth."
+    },
+    {
+      "title": "Gibberellins: elongation and reserve mobilization",
+      "formula": "GA3 is a familiar gibberellin example",
+      "points": [
+        "GA3 is a familiar gibberellin example",
+        "Can promote stem elongation and bolting",
+        "Germinating cereal signaling mobilizes reserves",
+        "Effects depend on species and developmental stage"
+      ],
+      "board": {
+        "kind": "gibberellin",
+        "lines": [
+          "GA3 is a familiar gibberellin example",
+          "Can promote stem elongation and bolting",
+          "Germinating cereal signaling mobilizes reserves",
+          "Effects depend on species and developmental stage"
+        ]
+      },
+      "script": "Gibberellins are a group of plant growth regulators, with gibberellic acid or GA three as a familiar example. They can promote stem and internode elongation in responsive plants and induce bolting, the rapid elongation associated with flowering in certain rosette plants. An increase in stem length does not mean every tissue has divided at the same rate. During germination in the familiar cereal model, gibberellin signaling from the embryo stimulates responses in the aleurone layer, including production of enzymes that mobilize stored food. This connects a regulator with reserve use rather than claiming the hormone itself is the seed's food. Gibberellins can also influence dormancy, fruit development and agricultural traits in suitable species. Their effects interact with other signals, including the generally contrasting dormancy related action of ABA. A response observed in one variety under one condition cannot be extended automatically to every plant or organ. Distinguish the regulator, the responding tissue and the downstream enzyme or growth process."
+    },
+    {
+      "title": "Cytokinins and regulator balance",
+      "formula": "Cytokinins can promote cell division",
+      "points": [
+        "Cytokinins can promote cell division",
+        "Can support lateral bud outgrowth",
+        "Often delay senescence in responsive tissues",
+        "Auxin balance matters in tissue culture"
+      ],
+      "board": {
+        "kind": "cytokinin",
+        "lines": [
+          "Cytokinins can promote cell division",
+          "Can support lateral bud outgrowth",
+          "Often delay senescence in responsive tissues",
+          "Auxin balance matters in tissue culture"
+        ]
+      },
+      "script": "Cytokinins are regulators associated with promotion of cell division in suitable contexts, particularly when other growth requirements and signals are present. Zeatin is a familiar naturally occurring example. Cytokinin effects include support for lateral bud outgrowth and delayed senescence of some tissues, but these are regulated responses rather than a promise that any leaf remains green forever. Roots are important sites of cytokinin production in the elementary account, while other tissues can also contribute. Auxin and cytokinin balance is a useful framework for interpreting many tissue culture responses. In a classic responsive callus system, relatively more cytokinin can favor shoot formation and relatively more auxin can favor root formation, with intermediate conditions supporting callus growth. This is an experimental pattern, not a universal numerical recipe for every species and medium. Nutrients, explant state and other regulators matter as well. Compare relative concentrations and observed outcomes rather than treating one hormone as the sole independent controller of all plant development."
+    },
+    {
+      "title": "Ethylene: a gaseous signal",
+      "formula": "Ethylene is a gaseous regulator",
+      "points": [
+        "Ethylene is a gaseous regulator",
+        "Promotes ripening in climacteric fruits",
+        "Can promote senescence and abscission",
+        "Triple response includes reduced elongation"
+      ],
+      "board": {
+        "kind": "ethylene",
+        "lines": [
+          "Ethylene is a gaseous regulator",
+          "Promotes ripening in climacteric fruits",
+          "Can promote senescence and abscission",
+          "Triple response includes reduced elongation"
+        ]
+      },
+      "script": "Ethylene is a gaseous plant regulator produced in varied developmental and stress contexts. In climacteric fruits it promotes ripening and is associated with characteristic changes in respiration, texture and other traits. This should not be converted into a claim that every fruit has the same ripening pattern or that every color change is caused only by ethylene. Ethylene can promote senescence and abscission in suitable contexts and interacts with auxin in the regulation of organ shedding. A classic seedling triple response includes reduced elongation, increased radial swelling and altered horizontal growth under the appropriate experimental conditions. Thus a plant regulator can restrict elongation while promoting another growth response. Ethephon can release ethylene and has regulated agricultural uses, but a classroom example is not an instruction to apply chemicals without appropriate controls. Because ethylene is gaseous, enclosed environments can affect its accumulation and responses. Distinguish the chemical signal, its source, the exposure conditions and the developmental competence of the target tissue."
+    },
+    {
+      "title": "Abscisic acid, dormancy and water stress",
+      "formula": "ABA supports dormancy-related programs",
+      "points": [
+        "ABA supports dormancy-related programs",
+        "Promotes stomatal closure during water stress",
+        "Often restricts growth in textbook comparisons",
+        "Its name does not define every abscission event"
+      ],
+      "board": {
+        "kind": "aba",
+        "lines": [
+          "ABA supports dormancy-related programs",
+          "Promotes stomatal closure during water stress",
+          "Often restricts growth in textbook comparisons",
+          "Its name does not define every abscission event"
+        ]
+      },
+      "script": "Abscisic acid, abbreviated ABA, participates in seed maturation and dormancy related programs and in responses to environmental stress. During water deficit, ABA signaling promotes stomatal closure through changes in guard cell ion transport and turgor, helping limit water loss. This response can also reduce carbon dioxide entry, so water conservation and photosynthetic rate can trade off under the stated conditions. ABA is often described as a growth inhibiting regulator in elementary comparisons, but this is a useful tendency rather than a complete account of every dose, tissue and developmental response. Its name does not mean it is the sole or universal cause of leaf abscission; ethylene and interactions with other signals are important in many such events. Germination decisions can reflect the balance between ABA related dormancy maintenance and gibberellin related responses, alongside environment and seed state. Avoid the shortcut that a stress hormone is always harmful: a response that slows growth can contribute to survival under unfavorable conditions."
+    },
+    {
+      "title": "Integrated plant development and experimental reasoning",
+      "formula": "Regulators interact rather than act alone",
+      "points": [
+        "Regulators interact rather than act alone",
+        "Light and temperature can signal development",
+        "Separate correlation from a controlled effect",
+        "Further graphs and experiments remain"
+      ],
+      "board": {
+        "kind": "integration",
+        "lines": [
+          "Regulators interact rather than act alone",
+          "Light and temperature can signal development",
+          "Separate correlation from a controlled effect",
+          "Further graphs and experiments remain"
+        ]
+      },
+      "script": "Plant development integrates growth, differentiation and transitions such as germination, flowering and senescence. Regulators interact with one another and with light, temperature, nutrients and water status. Photoperiodic and temperature related responses provide useful context: a developmental signal can depend on the pattern or duration of conditions rather than their effect on photosynthetic rate alone. These contextual examples do not replace the explicitly prescribed Unit four regulator and growth headings. In an experiment, include a suitable untreated or vehicle control, hold other variables comparable and distinguish a concentration response from a simple claim that more hormone is always better. Repeated observations and an appropriate time course help separate a transient change from sustained development. This recording provides foundations in photosynthesis, respiration and growth against the dated official syllabus. It includes the main carbon, energy, compartment and regulator comparisons, but further mixed graphs, inhibitor problems, experimental interpretation and detailed pathway practice remain. Continue by explaining a mechanism and its assumptions, rather than memorizing an isolated product or hormone label."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The oxygen released during oxygenic plant photosynthesis comes from:",
+      "options": [
+        "Water",
+        "Carbon dioxide directly",
+        "Only glucose breakdown",
+        "Only the chloroplast envelope"
+      ],
+      "answer": 0,
+      "explanation": "Water oxidation supplies the released oxygen."
+    },
+    {
+      "question": "The Calvin cycle in a chloroplast takes place principally in the:",
+      "options": [
+        "Thylakoid lumen",
+        "Stroma",
+        "Outer envelope space only",
+        "Plant cell wall"
+      ],
+      "answer": 1,
+      "explanation": "The thylakoid membrane instead carries the light reaction machinery."
+    },
+    {
+      "question": "An action spectrum measures:",
+      "options": [
+        "Only pigment absorption in a cuvette",
+        "The number of leaf veins",
+        "Effectiveness of wavelengths in a biological process",
+        "The age of a chloroplast"
+      ],
+      "answer": 2,
+      "explanation": "It differs from the absorption spectrum of an isolated pigment."
+    },
+    {
+      "question": "Antenna pigments primarily transfer:",
+      "options": [
+        "Every original water electron through every pigment",
+        "Carbon dioxide into a nucleus",
+        "ATP into the atmosphere",
+        "Excitation energy toward a reaction centre"
+      ],
+      "answer": 3,
+      "explanation": "Excitation transfer and electron transport are distinct processes."
+    },
+    {
+      "question": "In the linear photosynthetic pathway, the photosystem acting first is:",
+      "options": [
+        "PSII",
+        "PSI because its number is one",
+        "Neither photosystem",
+        "ATP synthase alone"
+      ],
+      "answer": 0,
+      "explanation": "The historical names do not specify their order in linear flow."
+    },
+    {
+      "question": "PSII water oxidation releases protons toward the:",
+      "options": [
+        "Mitochondrial matrix",
+        "Thylakoid lumen",
+        "Plant cell wall only",
+        "Calvin cycle carbon skeleton"
+      ],
+      "answer": 1,
+      "explanation": "The compartment matters for the proton gradient."
+    },
+    {
+      "question": "Cyclic flow around PSI can generate net:",
+      "options": [
+        "NADPH and oxygen without ATP",
+        "Only glucose directly",
+        "ATP without net NADPH or oxygen from that loop",
+        "Only carbon dioxide acceptor molecules"
+      ],
+      "answer": 2,
+      "explanation": "The returning electrons support extra ATP formation."
+    },
+    {
+      "question": "The usual linear pathway ultimately supplies electrons for reduction of:",
+      "options": [
+        "Only a cell wall polymer",
+        "Only RuBP directly",
+        "Only free oxygen to carbohydrate",
+        "NADP+"
+      ],
+      "answer": 3,
+      "explanation": "NADPH supplies reducing power for biosynthetic reactions."
+    },
+    {
+      "question": "During chloroplast ATP synthesis, protons return mainly:",
+      "options": [
+        "From lumen to stroma through ATP synthase",
+        "From stroma to lumen through ATP synthase",
+        "Only across the outer envelope into air",
+        "From cytosol into a nucleus"
+      ],
+      "answer": 0,
+      "explanation": "Lumenal accumulation supports the return flow."
+    },
+    {
+      "question": "A proton leak across the thylakoid membrane can:",
+      "options": [
+        "Guarantee extra ATP without a gradient",
+        "Reduce ATP formation despite continued electron transport",
+        "Convert PSI into a nucleus",
+        "Stop every Calvin enzyme irreversibly by definition"
+      ],
+      "answer": 1,
+      "explanation": "Uncoupling affects the linkage between gradient and ATP synthesis."
+    },
+    {
+      "question": "The Calvin cycle carbon dioxide acceptor is:",
+      "options": [
+        "Three-carbon pyruvate",
+        "Four-carbon oxaloacetate in every case",
+        "Five-carbon RuBP",
+        "Two-carbon acetyl-CoA"
+      ],
+      "answer": 2,
+      "explanation": "Do not confuse acceptor size with the first stable product size."
+    },
+    {
+      "question": "For net one triose phosphate from three CO2, the usual Calvin balance uses:",
+      "options": [
+        "3 ATP and 3 NADPH",
+        "18 ATP and 12 NADPH for that same triose",
+        "No ATP or reducing power",
+        "9 ATP and 6 NADPH"
+      ],
+      "answer": 3,
+      "explanation": "The six-carbon carbohydrate equivalent requires twice these totals."
+    },
+    {
+      "question": "The immediate inorganic substrate used by C4 PEP carboxylase is:",
+      "options": [
+        "Bicarbonate",
+        "Molecular oxygen only",
+        "Acetyl-CoA",
+        "NADPH as carbon"
+      ],
+      "answer": 0,
+      "explanation": "The first stable product is four-carbon oxaloacetate."
+    },
+    {
+      "question": "A typical C4 plant:",
+      "options": [
+        "Has no Calvin cycle",
+        "Retains the Calvin cycle with concentrated CO2 near RuBisCO",
+        "Requires no ATP for carbon concentration",
+        "Has lost every oxygenase-capable RuBisCO"
+      ],
+      "answer": 1,
+      "explanation": "Spatial concentration suppresses photorespiration at additional energy cost."
+    },
+    {
+      "question": "RuBisCO oxygenation of RuBP produces:",
+      "options": [
+        "Two 3-PGA as in carboxylation",
+        "Two acetyl-CoA",
+        "One 3-PGA and one 2-phosphoglycolate",
+        "Only one glucose"
+      ],
+      "answer": 2,
+      "explanation": "Oxygenase and carboxylase reactions have different immediate products."
+    },
+    {
+      "question": "The standard photorespiratory account involves:",
+      "options": [
+        "Only the nucleus",
+        "Only a cell wall",
+        "Only thylakoid ATP synthase",
+        "Chloroplasts, peroxisomes and mitochondria"
+      ],
+      "answer": 3,
+      "explanation": "Carbon recovery crosses several organelles and costs energy."
+    },
+    {
+      "question": "If carbon dioxide is limiting at a stated light level, adding more light may:",
+      "options": [
+        "Have little effect until the limitation changes",
+        "Always double photosynthesis",
+        "Eliminate every water requirement",
+        "Make every plant a C4 species"
+      ],
+      "answer": 0,
+      "explanation": "Limiting factors depend on the stated conditions."
+    },
+    {
+      "question": "Water shortage can restrict photosynthesis by:",
+      "options": [
+        "Providing unlimited carbon dioxide",
+        "Closing stomata and reducing CO2 entry",
+        "Stopping only the final glucose export with no other effect",
+        "Removing the need for enzymes"
+      ],
+      "answer": 1,
+      "explanation": "Water status influences gas exchange and metabolism."
+    },
+    {
+      "question": "Iodine in a leaf test directly indicates:",
+      "options": [
+        "ATP synthesis rate",
+        "NADPH concentration",
+        "Starch",
+        "Oxygen atom origin"
+      ],
+      "answer": 2,
+      "explanation": "Evidence of starch accumulation is an indirect photosynthesis indicator."
+    },
+    {
+      "question": "At a gas compensation point, zero net exchange means:",
+      "options": [
+        "Every organelle has stopped",
+        "Respiration is necessarily absent",
+        "Gross photosynthesis must be zero",
+        "Opposing fluxes balance rather than all metabolism stops"
+      ],
+      "answer": 3,
+      "explanation": "Net measurements combine simultaneous processes."
+    },
+    {
+      "question": "Which statement about plant respiration is correct?",
+      "options": [
+        "Green and nongreen tissues can respire in daylight",
+        "Only roots respire",
+        "Photosynthetic cells never respire",
+        "Respiration occurs only at night"
+      ],
+      "answer": 0,
+      "explanation": "Photosynthesis does not replace respiratory energy metabolism."
+    },
+    {
+      "question": "Waterlogged soil can impair roots chiefly by restricting:",
+      "options": [
+        "All water contact",
+        "Oxygen availability for aerobic metabolism",
+        "Every leaf pigment instantly",
+        "Only sunlight inside the root"
+      ],
+      "answer": 1,
+      "explanation": "Water supply alone does not guarantee suitable growth conditions."
+    },
+    {
+      "question": "Net glycolytic ATP gain per glucose is:",
+      "options": [
+        "4 ATP after ignoring investment",
+        "38 ATP directly in glycolysis",
+        "2 ATP",
+        "No ATP under any conditions"
+      ],
+      "answer": 2,
+      "explanation": "Four are produced while two are invested in the standard account."
+    },
+    {
+      "question": "Standard glycolysis directly releases how much CO2 per glucose?",
+      "options": [
+        "Two molecules",
+        "Four molecules",
+        "Six molecules",
+        "None"
+      ],
+      "answer": 3,
+      "explanation": "Carbon remains in the two pyruvate molecules."
+    },
+    {
+      "question": "The key carrier-regenerating purpose of fermentation is to restore:",
+      "options": [
+        "NAD+",
+        "Only RuBP",
+        "Only molecular oxygen",
+        "Only chlorophyll a"
+      ],
+      "answer": 0,
+      "explanation": "Regeneration allows the glycolytic oxidation step to continue."
+    },
+    {
+      "question": "Which comparison is correct?",
+      "options": [
+        "Both release six CO2 per glucose",
+        "Alcoholic fermentation releases CO2; lactate formation does not",
+        "Lactate formation alone releases CO2 at its reduction step",
+        "Neither pathway regenerates NAD+"
+      ],
+      "answer": 1,
+      "explanation": "Their pyruvate-processing steps differ."
+    },
+    {
+      "question": "Per pyruvate, the link reaction directly produces:",
+      "options": [
+        "Two acetyl-CoA and four ATP",
+        "Only lactate and ATP",
+        "Acetyl-CoA, CO2 and NADH",
+        "RuBP and NADPH"
+      ],
+      "answer": 2,
+      "explanation": "The three-carbon substrate loses one carbon and forms a two-carbon acetyl group."
+    },
+    {
+      "question": "The direct ATP yield of the link reaction is:",
+      "options": [
+        "One per pyruvate necessarily",
+        "Two per pyruvate necessarily",
+        "Thirty-eight per pyruvate",
+        "Zero"
+      ],
+      "answer": 3,
+      "explanation": "Its NADH may contribute later but is not direct ATP production."
+    },
+    {
+      "question": "Per acetyl-CoA, the standard TCA yield includes:",
+      "options": [
+        "3 NADH, 1 FADH2 and 1 ATP equivalent",
+        "6 NADH, 2 FADH2 and 2 ATP equivalents",
+        "Only two ATP and no carriers",
+        "Only NADPH"
+      ],
+      "answer": 0,
+      "explanation": "The doubled option instead corresponds to two cycle turns."
+    },
+    {
+      "question": "Oxaloacetate in the TCA cycle is:",
+      "options": [
+        "Irreversibly consumed as the only product each turn",
+        "Regenerated",
+        "The same as six-carbon citrate",
+        "A photosystem pigment"
+      ],
+      "answer": 1,
+      "explanation": "Regeneration permits repeated acetyl entry."
+    },
+    {
+      "question": "The terminal electron acceptor in the usual aerobic mitochondrial chain is:",
+      "options": [
+        "Carbon dioxide",
+        "NADH",
+        "Oxygen",
+        "RuBP"
+      ],
+      "answer": 2,
+      "explanation": "Oxygen is reduced to water at the terminal step."
+    },
+    {
+      "question": "Which standard respiratory complex does not pump protons?",
+      "options": [
+        "Complex I",
+        "Complex III",
+        "Complex IV",
+        "Complex II"
+      ],
+      "answer": 3,
+      "explanation": "Different entry routes therefore have different coupling contributions."
+    },
+    {
+      "question": "Mitochondrial ATP synthase supports proton return toward the:",
+      "options": [
+        "Matrix",
+        "Intermembrane space from matrix",
+        "Thylakoid lumen",
+        "External atmosphere"
+      ],
+      "answer": 0,
+      "explanation": "Respiratory proton pumping initially moves protons out of the matrix."
+    },
+    {
+      "question": "Substrate-level phosphorylation differs because it:",
+      "options": [
+        "Always requires a proton membrane gradient",
+        "Transfers phosphate from a suitable metabolic intermediate",
+        "Occurs only in photosystem one",
+        "Is another name for every electron transport step"
+      ],
+      "answer": 1,
+      "explanation": "This is direct nucleotide phosphorylation without chemiosmotic coupling."
+    },
+    {
+      "question": "The old idealized 3 ATP per NADH and 2 per FADH2 convention can give:",
+      "options": [
+        "Exactly 38 in every living plant under all conditions",
+        "Only 2 ATP including the whole chain",
+        "38 ATP per completely oxidized glucose",
+        "No theoretical ATP at all"
+      ],
+      "answer": 2,
+      "explanation": "The number depends on the explicit textbook assumptions."
+    },
+    {
+      "question": "Why can modern aerobic glucose ATP estimates differ?",
+      "options": [
+        "Glucose always has different carbon counts",
+        "Every cell uses the same cost-free shuttle",
+        "Substrate-level ATP never exists",
+        "Carrier ratios, shuttles, transport and coupling vary"
+      ],
+      "answer": 3,
+      "explanation": "A theoretical energy balance requires stated assumptions."
+    },
+    {
+      "question": "Respiration is called amphibolic because its pathways:",
+      "options": [
+        "Participate in breakdown and provide biosynthetic precursors",
+        "Only destroy waste without any synthesis connections",
+        "Only fix carbon dioxide in chloroplasts",
+        "Have no intermediates"
+      ],
+      "answer": 0,
+      "explanation": "Metabolic intermediates connect catabolism with anabolism."
+    },
+    {
+      "question": "Amino acids entering respiratory metabolism:",
+      "options": [
+        "Must all enter as glucose directly",
+        "Can enter at different points after suitable processing",
+        "Always bypass every nitrogen-related transformation",
+        "Are identical to chlorophyll"
+      ],
+      "answer": 1,
+      "explanation": "Their carbon skeletons and processing routes differ."
+    },
+    {
+      "question": "For complete glucose oxidation, respiratory quotient is:",
+      "options": [
+        "6",
+        "0 because oxygen is consumed",
+        "1",
+        "Always infinite"
+      ],
+      "answer": 2,
+      "explanation": "Six CO2 divided by six O2 gives one."
+    },
+    {
+      "question": "Why is an uncorrected gas ratio from a lit green leaf problematic as respiratory RQ?",
+      "options": [
+        "Respiration ceases in all light",
+        "Every leaf has no intercellular spaces",
+        "CO2 and O2 become the same gas",
+        "Photosynthetic fluxes can alter the measured net exchange"
+      ],
+      "answer": 3,
+      "explanation": "Respiratory gas fluxes must be distinguished from photosynthetic ones."
+    },
+    {
+      "question": "A viable dormant seed is necessarily dead. This is:",
+      "options": [
+        "Incorrect; dormancy can maintain a living seed without germination",
+        "Correct for every species",
+        "The definition of imbibition",
+        "The definition of seedling establishment"
+      ],
+      "answer": 0,
+      "explanation": "Viability, dormancy and immediate germination are different properties."
+    },
+    {
+      "question": "Before substantial seedling photosynthesis, early growth can use:",
+      "options": [
+        "Only newly fixed atmospheric carbon",
+        "Stored seed reserves",
+        "Only mature flowers",
+        "Only oxygen as a carbon source"
+      ],
+      "answer": 1,
+      "explanation": "Reserve mobilization supports the germinating embryo."
+    },
+    {
+      "question": "A sigmoid organ-growth curve commonly includes:",
+      "options": [
+        "Only a permanent straight line",
+        "Only decreasing size",
+        "Lag, faster growth and slowing phases",
+        "No dependence on time"
+      ],
+      "answer": 2,
+      "explanation": "Finite organs often slow as development and limitations change."
+    },
+    {
+      "question": "The root maturation region commonly develops:",
+      "options": [
+        "Only undifferentiated dividing cells forever",
+        "Only photosystem reaction centres",
+        "Only petals",
+        "Specialized features such as root hairs"
+      ],
+      "answer": 3,
+      "explanation": "Spatial regions illustrate division, expansion and specialization."
+    },
+    {
+      "question": "Leaves growing 5 to 10 and 50 to 55 square centimetres show:",
+      "options": [
+        "Equal absolute gains but different proportional gains",
+        "Equal relative growth necessarily",
+        "No growth in the first leaf",
+        "Equal final area"
+      ],
+      "answer": 0,
+      "explanation": "Both gain five, but their initial sizes differ."
+    },
+    {
+      "question": "An unrestricted geometric growth model assumes rate is:",
+      "options": [
+        "A fixed absolute increment regardless of size",
+        "Proportional to existing size",
+        "Always zero",
+        "Only a measure of leaf color"
+      ],
+      "answer": 1,
+      "explanation": "Real conditions can impose departures from exponential growth."
+    },
+    {
+      "question": "Greater dark-grown seedling length alone proves superior overall development. This is:",
+      "options": [
+        "Always true",
+        "The definition of photosynthesis",
+        "Incorrect; elongation and overall development are different measures",
+        "Evidence that reserves are not used"
+      ],
+      "answer": 2,
+      "explanation": "Light changes form and signaling as well as carbon acquisition."
+    },
+    {
+      "question": "Developmental plasticity means:",
+      "options": [
+        "Every leaf change rewrites all inherited DNA",
+        "Every plant has one invariant form",
+        "Only the death of a meristem",
+        "Different forms or responses can occur with environment or stage"
+      ],
+      "answer": 3,
+      "explanation": "Plasticity reflects regulated developmental responses."
+    },
+    {
+      "question": "Dedifferentiation in the stated plant context is:",
+      "options": [
+        "Regaining division capacity in suitable living differentiated cells",
+        "Every dead vessel becoming alive again",
+        "Only water entering a seed",
+        "Only a pigment losing color"
+      ],
+      "answer": 0,
+      "explanation": "The response depends on cell state and conditions."
+    },
+    {
+      "question": "Redifferentiation describes:",
+      "options": [
+        "A compulsory return to the same original cell fate",
+        "Specialization of descendants after renewed division",
+        "The absence of all development",
+        "Only the release of oxygen"
+      ],
+      "answer": 1,
+      "explanation": "Newly produced cells can acquire specialized functions."
+    },
+    {
+      "question": "An auxin response depends on:",
+      "options": [
+        "Only the name of the hormone with no other factors",
+        "An identical optimum dose for every root and shoot",
+        "Tissue, concentration and developmental context",
+        "The absence of all receptors"
+      ],
+      "answer": 2,
+      "explanation": "Roots and shoots can respond differently to a concentration."
+    },
+    {
+      "question": "Differential auxin distribution can contribute to:",
+      "options": [
+        "Only equal growth on every side",
+        "Mitochondrial oxygen formation",
+        "Replacing every seed reserve",
+        "Tropic bending through unequal growth"
+      ],
+      "answer": 3,
+      "explanation": "Directional growth requires spatially different responses."
+    },
+    {
+      "question": "In the cereal germination model, gibberellin signaling can stimulate:",
+      "options": [
+        "Reserve-mobilizing enzyme production in aleurone",
+        "The hormone becoming the seed food directly",
+        "Immediate destruction of every embryo",
+        "Only formation of stomatal guard cells"
+      ],
+      "answer": 0,
+      "explanation": "The signal triggers downstream reserve use."
+    },
+    {
+      "question": "Bolting refers here to:",
+      "options": [
+        "A universal synonym for dormancy",
+        "Rapid stem elongation associated with flowering in certain plants",
+        "Only root cap formation",
+        "Only fruit wall thickening"
+      ],
+      "answer": 1,
+      "explanation": "Gibberellins can promote this response in suitable species."
+    },
+    {
+      "question": "In a classic responsive tissue-culture system, relatively more cytokinin can favor:",
+      "options": [
+        "Root formation in every possible medium",
+        "No cell division under any condition",
+        "Shoot formation",
+        "Only ethanol fermentation"
+      ],
+      "answer": 2,
+      "explanation": "The relative regulator balance matters in the stated experimental model."
+    },
+    {
+      "question": "Cytokinins can delay:",
+      "options": [
+        "Every possible developmental event forever",
+        "All seed germination universally",
+        "All mitochondrial electron flow",
+        "Senescence in responsive tissues"
+      ],
+      "answer": 3,
+      "explanation": "The response is context dependent rather than unlimited preservation."
+    },
+    {
+      "question": "Ethylene is a:",
+      "options": [
+        "Gaseous plant regulator",
+        "Mineral nutrient only",
+        "Chloroplast pigment",
+        "Seed coat protein"
+      ],
+      "answer": 0,
+      "explanation": "Exposure conditions affect accumulation of the gaseous signal."
+    },
+    {
+      "question": "A classic ethylene triple response includes:",
+      "options": [
+        "Unrestricted elongation in every direction only",
+        "Reduced elongation with radial swelling and altered growth direction",
+        "No morphological response",
+        "Only carbon fixation into oxaloacetate"
+      ],
+      "answer": 1,
+      "explanation": "One regulator can restrain one growth dimension while promoting another."
+    },
+    {
+      "question": "ABA during water deficit can promote:",
+      "options": [
+        "Unlimited stomatal opening in every leaf",
+        "Replacement of oxygen by nitrogen in the chain",
+        "Stomatal closure",
+        "Direct synthesis of glucose from no carbon"
+      ],
+      "answer": 2,
+      "explanation": "Guard cell signaling helps limit water loss."
+    },
+    {
+      "question": "The name abscisic acid means it controls every abscission event alone. This is:",
+      "options": [
+        "Correct in every plant tissue",
+        "A definition of the Calvin cycle",
+        "Proof that ABA is a gas",
+        "Incorrect; ethylene and hormone interactions are important"
+      ],
+      "answer": 3,
+      "explanation": "Names do not establish exclusive developmental functions."
+    },
+    {
+      "question": "A sound hormone experiment should include:",
+      "options": [
+        "Suitable controls and comparable conditions",
+        "Only the largest dose with no comparison",
+        "Changing every environmental variable at once",
+        "A claim that every correlation proves causation"
+      ],
+      "answer": 0,
+      "explanation": "Controls help attribute a response to the tested variable."
+    },
+    {
+      "question": "Plant development is best interpreted as:",
+      "options": [
+        "A single hormone independently controlling every response",
+        "An integration of regulators, environment and developmental state",
+        "Only permanent increases in length",
+        "Only photosynthetic ATP synthesis"
+      ],
+      "answer": 1,
+      "explanation": "Mechanisms and conditions explain outcomes better than isolated labels."
+    }
+  ]
+}

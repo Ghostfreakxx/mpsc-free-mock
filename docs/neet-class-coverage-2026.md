@@ -88,7 +88,28 @@ Route: `/neet/classes/structural-organisation`. Twenty-eight narrated chapters, 
 | Insect morphology and digestive, circulatory, respiratory, neural and reproductive systems | 22–25, cockroach representative |
 | Frog morphology and corresponding systems | 26–28; adult/larval differences and external fertilization explicit |
 
-This is recorded foundation coverage, not exhaustive practical mastery. Further specimen identification, formal floral formula/diagram exercises, labelled sections and mixed applications remain. Next production focus: Plant Physiology.
+This is recorded foundation coverage, not exhaustive practical mastery. Further specimen identification, formal floral formula/diagram exercises, labelled sections and mixed applications remain. Plant Physiology is recorded as B06 below.
+
+## Biology B06: Plant Physiology
+
+Route: `/neet/classes/plant-physiology`. Thirty-one narrated chapters, thirty-one teaching boards, aligned captions and sixty-two original MCQs. Independent progress: `neet.plant-physiology.lecture.v1`. Checked against the dated official 2026 Biology Unit 4 baseline.
+
+| Required heading | Recorded evidence |
+| --- | --- |
+| Photosynthesis, sites and pigments | 1–2 |
+| Photochemical phases; cyclic/noncyclic flow; chemiosmosis | 3–5 |
+| Biosynthetic phase, C3/C4 and photorespiration | 6–8 |
+| Factors and experimental interpretation | 9–10 |
+| Plant gas exchange and glycolysis | 11–12 |
+| Fermentation, link reaction and TCA cycle | 13–15 |
+| ETS, oxidative phosphorylation and energy relations | 16–18; legacy and contemporary ATP conventions explicitly separated |
+| Amphibolic pathways and respiratory quotient | 19–20 |
+| Seed germination and growth phases/rates/conditions | 21–24 |
+| Differentiation, dedifferentiation and redifferentiation | 25 |
+| Auxin, gibberellin, cytokinin, ethylene and ABA | 26–30 |
+| Integrated developmental sequence and controlled experiments | 31 |
+
+This is foundation recording availability, not exhaustive mastery. Further experimental interpretation, mixed graphs, inhibitor problems and detailed pathway practice remain. ATP values depend on stated model assumptions; no single idealized number is presented as a universal measured plant yield. Existing photosynthesis practice and all previous progress identifiers are retained. Next production focus: Human Physiology.
 
 ## Wider Biology map
 
@@ -97,7 +118,7 @@ This is recorded foundation coverage, not exhaustive practical mastery. Further 
 | Diversity in Living World | Recorded foundation with 24 chapters; further identification practice remains |
 | Structural Organisation in Animals and Plants | Recorded foundation with 28 chapters; further practical identification remains |
 | Cell Structure and Function | Cell structure, Biomolecules and Cell Division recorded; further mixed practice remains |
-| Plant Physiology | Planned; existing photosynthesis practice retained |
+| Plant Physiology | Recorded foundation with 31 chapters; further experiments and mixed applications remain; existing practice retained |
 | Human Physiology | Planned |
 | Reproduction | Planned |
 | Genetics and Evolution | Planned; existing DNA/inheritance practice retained |
