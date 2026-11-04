@@ -6,7 +6,11 @@ export default function manifest(): MetadataRoute.Manifest {
     short_name: "MPSC Learn",
     description:
       "MPSC practice, study planning and learning resources for Mizoram students.",
+    id: "/",
     start_url: "/",
+    scope: "/",
+    lang: "en",
+    categories: ["education"],
     display: "standalone",
     background_color: "#131715",
     theme_color: "#173e34",
