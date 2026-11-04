@@ -52,13 +52,31 @@ Route: `/neet/classes/cell-cycle-division`. Sixteen narrated chapters, sixteen o
 | Significance and variation | 9 and 14: life-cycle role, crossing over and independent assortment |
 | Counting and interpretation | 2–3, 6, 11–16: centromeres, chromatids, n/C, whole cell versus pole/nucleus and human examples |
 
-The three planned Unit 3 foundations now have recordings: cell structure, biomolecules and division. This is availability of foundational teaching, not exhaustive mastery or problem coverage. Further mixed diagrams, experimental interpretation and wider Biology units remain. Next production focus: Diversity in Living World.
+The three planned Unit 3 foundations now have recordings: cell structure, biomolecules and division. This is availability of foundational teaching, not exhaustive mastery or problem coverage. Further mixed diagrams, experimental interpretation and wider Biology units remain. Diversity in Living World is now recorded as B04 below.
+
+## Biology B04: Diversity in Living World
+
+Route: `/neet/classes/diversity-living-world`. Twenty-four narrated chapters, twenty-four teaching boards, aligned captions and forty-eight original MCQs. Progress uses `neet.diversity-living-world.lecture.v1`. The official Unit 1 headings were checked against page 14 of the linked 2026 syllabus PDF.
+
+| Required heading | Recorded evidence |
+| --- | --- |
+| What is living, biodiversity and need for classification | 1–2 |
+| Taxonomy, systematics, species, hierarchy and names | 2–3 and 23–24 |
+| Five kingdoms, Monera, Protista and fungal groups | 4–6; textbook/modern distinction made explicit |
+| Lichens, viruses and viroids | 7 |
+| Algae, bryophytes, pteridophytes and gymnosperms | 8–11, with features and at least two representative examples per prescribed category |
+| Animal classification criteria | 12 |
+| Nonchordate phyla | 13–17: Porifera, Cnidaria, Ctenophora, Platyhelminthes, roundworm account, Annelida, Arthropoda, Mollusca, Echinodermata and Hemichordata |
+| Chordate features and traditional classes | 18–22: protochordate context, Cyclostomata, Chondrichthyes, Osteichthyes, Amphibia, Reptilia, Aves and Mammalia |
+| Identification and hierarchy applications | 23–24 and the original quiz |
+
+Each prescribed plant group and animal comparison includes representative features and two distinct named examples. Amphioxus is explicitly identified as a familiar name for the Branchiostoma example, rather than counted as a second independent genus. Traditional Monera/Protista and legacy fungal groups are explained within the examination framework without being presented as an unchanged modern phylogeny. Further detailed life-cycle, exception and specimen-identification practice remains. This foundation does not establish exhaustive Unit 1 mastery. Next production focus: Structural Organisation in Animals and Plants.
 
 ## Wider Biology map
 
 | Unit | Recording status |
 | --- | --- |
-| Diversity in Living World | Planned |
+| Diversity in Living World | Recorded foundation with 24 chapters; further identification practice remains |
 | Structural Organisation in Animals and Plants | Planned |
 | Cell Structure and Function | Cell structure, Biomolecules and Cell Division recorded; further mixed practice remains |
 | Plant Physiology | Planned; existing photosynthesis practice retained |
