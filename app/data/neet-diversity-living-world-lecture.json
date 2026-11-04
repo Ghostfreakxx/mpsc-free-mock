@@ -1,0 +1,1059 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English Biology teacher. Speak naturally. Read taxonomic and organism names carefully and distinguish textbook classifications from modern phylogeny. Read every sentence completely, including the final sentence. Do not add words or summarize.",
+  "title": "Diversity in Living World",
+  "subject": "Biology",
+  "unit": 1,
+  "scope": "NEET Biology Unit 1 recorded foundation against the official 2026 syllabus baseline. Covers living characteristics, taxonomy, binomial names, the textbook five-kingdom framework, Monera, Protista, Fungi, lichens, viruses/viroids, prescribed plant groups, nonchordate phyla and traditional chordate classes with representative features and examples. Further detailed life-cycle, exception and specimen-identification practice remains. Original questions, not official PYQs.",
+  "sources": [
+    {
+      "title": "NTA: NEET UG 2026 syllabus (dated baseline)",
+      "url": "https://neet.nta.nic.in/document/syllabus-for-neet-ug-2026-examination/"
+    },
+    {
+      "title": "NMC: official NEET 2026 syllabus, Biology Unit 1",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/01/202601081066816297.pdf"
+    },
+    {
+      "title": "OpenStax Biology 2e: 20 1 organizing life on earth",
+      "url": "https://openstax.org/books/biology-2e/pages/20-1-organizing-life-on-earth"
+    },
+    {
+      "title": "OpenStax Biology 2e: 23 3 groups of protists",
+      "url": "https://openstax.org/books/biology-2e/pages/23-3-groups-of-protists"
+    },
+    {
+      "title": "OpenStax Biology 2e: 24 2 classifications of fungi",
+      "url": "https://openstax.org/books/biology-2e/pages/24-2-classifications-of-fungi"
+    },
+    {
+      "title": "OpenStax Biology 2e: 25 2 green algae precursors of land plants",
+      "url": "https://openstax.org/books/biology-2e/pages/25-2-green-algae-precursors-of-land-plants"
+    },
+    {
+      "title": "OpenStax Biology 2e: 28 1 phylum porifera",
+      "url": "https://openstax.org/books/biology-2e/pages/28-1-phylum-porifera"
+    },
+    {
+      "title": "OpenStax Biology 2e: 29 1 chordates",
+      "url": "https://openstax.org/books/biology-2e/pages/29-1-chordates"
+    },
+    {
+      "title": "IIT Kanpur SATHEE: NCERT Biology",
+      "url": "https://sathee.iitk.ac.in/ncert-books/"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Living organization and biodiversity",
+      "formula": "Living systems show coordinated cellular processes",
+      "points": [
+        "Living systems show coordinated cellular processes",
+        "Growth alone does not define life",
+        "Reproduction has important exceptions",
+        "Biodiversity includes more than a species count"
+      ],
+      "board": {
+        "kind": "living",
+        "lines": [
+          "Living systems show coordinated cellular processes",
+          "Growth alone does not define life",
+          "Reproduction has important exceptions",
+          "Biodiversity includes more than a species count"
+        ]
+      },
+      "script": "Welcome to Diversity in Living World, our recorded NEET Biology Unit one foundation. This lesson uses an AI generated Marin voice. Living systems show coordinated cellular organization, metabolism and responses to their surroundings. No single casual observation should replace that whole picture. Nonliving crystals can grow through external accumulation, while living growth usually involves organized internal processes. Reproduction characterizes lineages but cannot be required of every individual: sterile organisms and individuals outside a reproductive stage remain living. Response to a stimulus does not mean human self awareness. A dormant seed is not necessarily dead merely because visible activity is low. Biodiversity includes variation within species, among species and across ecological systems, rather than only a list of large animals. Classification helps organize that diversity for identification and comparison. This class introduces the required major groups and representative examples using the specified teaching framework. It is a foundation for recognition and reasoning; further specimen identification and detailed life cycle practice remain useful beyond this recording."
+    },
+    {
+      "title": "Taxonomy systematics species and hierarchy",
+      "formula": "Kingdom → phylum/division → class → order",
+      "points": [
+        "Kingdom → phylum/division → class → order",
+        "Then family → genus → species",
+        "A rank is a category; a taxon is a named group",
+        "Species concepts have practical limits"
+      ],
+      "board": {
+        "kind": "hierarchy",
+        "lines": [
+          "Kingdom → phylum/division → class → order",
+          "Then family → genus → species",
+          "A rank is a category; a taxon is a named group",
+          "Species concepts have practical limits"
+        ]
+      },
+      "script": "Taxonomy involves identification, naming and classification, while systematics also emphasizes diversity and evolutionary relationships. A taxonomic category is a rank, and a taxon is a particular group placed at a rank. Mammalia is a taxon at class rank; class is the category. The familiar hierarchy runs from kingdom through phylum or division, class, order, family and genus to species. Groups become generally more inclusive as one moves upward. Sharing a genus entails sharing the relevant higher groups within a stated classification, but sharing a family does not require sharing a genus. A biological species concept concerns populations that can interbreed naturally and are reproductively isolated from other such groups. It is useful but not universally sufficient for asexual organisms, fossils or every difficult boundary. Morphological and molecular evidence can support identification. Do not confuse a species with one individual, or assume that every classification remains unchanged when new evidence appears. Always distinguish the rank being asked for from the scientific name assigned to a particular group."
+    },
+    {
+      "title": "Binomial names require both words and correct form",
+      "formula": "Genus starts with a capital letter",
+      "points": [
+        "Genus starts with a capital letter",
+        "Specific epithet begins in lower case",
+        "Genus + epithet form the binomial",
+        "Italicize both; author citation is separate"
+      ],
+      "board": {
+        "kind": "names",
+        "lines": [
+          "Genus starts with a capital letter",
+          "Specific epithet begins in lower case",
+          "Genus + epithet form the binomial",
+          "Italicize both; author citation is separate"
+        ]
+      },
+      "script": "A binomial scientific name consists of a genus name followed by a specific epithet. The genus begins with a capital letter, the epithet begins with a lower case letter, and both words are conventionally italicized in print. In handwritten work, the two words are separately underlined. The epithet alone is not the complete species name. Mangifera indica and Azadirachta indica share an epithet but belong to different genera; the repeated second word does not make them one species. Conversely, two different species can share a genus. An author citation added after a scientific name is separate from the two word binomial and is not normally italicized with it. Once a full genus name has been introduced, an unambiguous initial can sometimes abbreviate it in context. Naming is governed by applicable nomenclatural codes, while classification addresses how organisms are grouped. A correctly formatted name is not by itself evidence that two organisms are close relatives. Read both words, the rank and the context before making a taxonomic inference."
+    },
+    {
+      "title": "Five kingdoms and the Monera comparison",
+      "formula": "Textbook five: Monera, Protista, Fungi, Plantae, Animalia",
+      "points": [
+        "Textbook five: Monera, Protista, Fungi, Plantae, Animalia",
+        "Cell type, organization and nutrition matter",
+        "Monera includes prokaryotes in this scheme",
+        "Modern classifications need not retain these groups"
+      ],
+      "board": {
+        "kind": "kingdoms",
+        "lines": [
+          "Textbook five: Monera, Protista, Fungi, Plantae, Animalia",
+          "Cell type, organization and nutrition matter",
+          "Monera includes prokaryotes in this scheme",
+          "Modern classifications need not retain these groups"
+        ]
+      },
+      "script": "The Whittaker five kingdom framework compares Monera, Protista, Fungi, Plantae and Animalia using features such as cell type, organization and nutrition. It is the specified textbook framework here, not a claim that all modern classifications use exactly these five kingdoms. Monera contains prokaryotic organisms in this account. They lack a membrane bound nucleus and include varied nutritional strategies, not only pathogens. Typical bacterial forms include cocci, bacilli, vibrios and spirilla. Lactobacillus and Bacillus provide bacterial examples. Cyanobacteria such as Nostoc and Anabaena perform oxygenic photosynthesis; despite the historical name blue green algae, they are prokaryotes. Archaeal examples such as Methanobacterium and Halobacterium illustrate that the textbook Monera grouping contains organisms distinguished in other classification systems. Some archaea inhabit extreme environments, but not every archaeon must do so. Cell wall composition and metabolic traits vary among prokaryotes. Do not classify an organism as a plant solely because it photosynthesizes, or infer that every member of Monera has the same wall, habitat or disease causing role."
+    },
+    {
+      "title": "Protist groups illustrate varied eukaryotic strategies",
+      "formula": "Textbook Protista: mainly unicellular eukaryotes",
+      "points": [
+        "Textbook Protista: mainly unicellular eukaryotes",
+        "Diatoms, dinoflagellates and euglenoids differ",
+        "Slime mould and protozoan comparisons add diversity",
+        "This textbook grouping is not one modern clade"
+      ],
+      "board": {
+        "kind": "protists",
+        "lines": [
+          "Textbook Protista: mainly unicellular eukaryotes",
+          "Diatoms, dinoflagellates and euglenoids differ",
+          "Slime mould and protozoan comparisons add diversity",
+          "This textbook grouping is not one modern clade"
+        ]
+      },
+      "script": "The textbook Protista grouping brings together mainly unicellular eukaryotes with diverse structures and modes of nutrition. Chrysophyte comparisons include diatoms, whose silica rich walls are a key recognition feature. Dinoflagellates such as Gonyaulax and Ceratium commonly have two flagella; some blooms can affect marine environments. Euglena is an euglenoid with a flexible pellicle rather than an ordinary rigid cellulose wall and can show different nutritional behaviour with conditions. Slime mould examples such as Physarum connect a feeding stage with spore producing structures under suitable conditions. The traditional protozoan account includes amoeboid, flagellated, ciliated and sporozoan comparisons: Amoeba, Trypanosoma, Paramecium and Plasmodium illustrate those headings. These labels are useful for the specified textbook comparisons but are not all equivalent modern evolutionary clades. Nor is every protist photosynthetic, parasitic or flagellated. For identification, combine nucleus and organization with wall features, locomotion and nutrition. One familiar characteristic, such as movement through water, does not uniquely distinguish a protist from a prokaryote or a small animal."
+    },
+    {
+      "title": "Fungi use absorptive nutrition and diverse reproductive groups",
+      "formula": "Eukaryotic absorptive heterotrophs; chitinous walls",
+      "points": [
+        "Eukaryotic absorptive heterotrophs; chitinous walls",
+        "Hyphae form mycelium; yeast is an exception",
+        "Textbook groups use reproductive characters",
+        "Legacy groups are not all modern natural clades"
+      ],
+      "board": {
+        "kind": "fungi",
+        "lines": [
+          "Eukaryotic absorptive heterotrophs; chitinous walls",
+          "Hyphae form mycelium; yeast is an exception",
+          "Textbook groups use reproductive characters",
+          "Legacy groups are not all modern natural clades"
+        ]
+      },
+      "script": "Fungi are eukaryotic heterotrophs that commonly obtain nutrients through external digestion and absorption. Their walls characteristically contain chitin, and filamentous hyphae form a mycelium; unicellular yeasts are an important exception to a wholly filamentous picture. Hyphae may be septate or coenocytic. In the traditional NCERT grouping, phycomycete examples include Rhizopus and Mucor, with coenocytic organization and sporangial spore comparisons. Ascomycetes include Saccharomyces and Penicillium, with sexual spores associated with asci in the group account. Basidiomycetes include Agaricus and Puccinia, with basidial sexual spore formation. Deuteromycetes is the historical grouping used when the sexual stage was not known; Alternaria and Colletotrichum are textbook examples. It should not be mistaken for a single modern natural lineage. Fungal sexual processes distinguish plasmogamy, karyogamy and meiosis rather than treating cytoplasmic fusion and nuclear fusion as identical. Fungi can be decomposers, symbionts or pathogens. A mushroom is a reproductive structure, not necessarily the whole extent of the underlying mycelium."
+    },
+    {
+      "title": "Viruses viroids and lichens require different descriptions",
+      "formula": "Virus: genome with protein coat; host dependent",
+      "points": [
+        "Virus: genome with protein coat; host dependent",
+        "Viroid: infectious RNA without a protein capsid",
+        "Lichen: fungus with a photosynthetic partner",
+        "Association is different from a separate kingdom"
+      ],
+      "board": {
+        "kind": "associations",
+        "lines": [
+          "Virus: genome with protein coat; host dependent",
+          "Viroid: infectious RNA without a protein capsid",
+          "Lichen: fungus with a photosynthetic partner",
+          "Association is different from a separate kingdom"
+        ]
+      },
+      "script": "Viruses are acellular infectious entities whose replication depends on suitable host cells. Their genome is DNA or RNA in the standard comparison and is associated with a protein coat; some viruses also have an envelope. Tobacco mosaic virus and a bacterial phage provide contrasting examples rather than members of a cellular kingdom. A viroid is a different infectious agent consisting of a small RNA without the virus style protein capsid; potato spindle tuber viroid is the familiar example. Do not describe a viroid as a tiny bacterium or as a protein only agent. Lichens, in contrast, involve a fungal partner associated with a photosynthetic alga or cyanobacterium. The photosynthetic partner supplies fixed carbon, while the fungal organization contributes protection and access to water and minerals in the elementary account. Usnea and Parmelia are examples of lichens. The association is not itself an extra sixth kingdom in the five kingdom exercise. Compare cellular organization, genome and coat, host dependence and partnership before assigning these very different entities one shared label."
+    },
+    {
+      "title": "Algal groups differ in pigments reserves and examples",
+      "formula": "Green: chlorophyll a,b; starch",
+      "points": [
+        "Green: chlorophyll a,b; starch",
+        "Brown: fucoxanthin; laminarin and mannitol",
+        "Red: phycoerythrin; floridean starch",
+        "Each colour group needs its own examples"
+      ],
+      "board": {
+        "kind": "algae",
+        "lines": [
+          "Green: chlorophyll a,b; starch",
+          "Brown: fucoxanthin; laminarin and mannitol",
+          "Red: phycoerythrin; floridean starch",
+          "Each colour group needs its own examples"
+        ]
+      },
+      "script": "The traditional plant kingdom account distinguishes green, brown and red algal groups using pigments, reserve materials and other structural characters. Green algae commonly have chlorophyll a and b and store starch. Chlamydomonas and Volvox are examples, showing that the group includes unicellular and colonial forms. Brown algae contain the accessory pigment fucoxanthin and store materials including laminarin and mannitol; Laminaria and Fucus are examples. Their cells typically have cellulose and algin associated wall components. Red algae contain characteristic phycoerythrin pigments and store floridean starch; Polysiphonia and Porphyra provide examples. Red algal reproductive stages lack the flagellated cells characteristic of some other comparisons. These textbook groups must not be identified solely from the colour of a photograph, because pigment proportions and conditions can change appearance. Algae also exhibit varied life cycles; one pattern cannot be imposed on every example. Cyanobacteria are excluded from these eukaryotic algal comparisons despite their older blue green algae name. Check pigment, reserve, organization and example together."
+    },
+    {
+      "title": "Bryophytes retain a dependent sporophyte",
+      "formula": "Nonvascular land-plant organization",
+      "points": [
+        "Nonvascular land-plant organization",
+        "Gametophyte is the conspicuous generation",
+        "Sporophyte remains attached and dependent",
+        "Marchantia and Funaria are examples"
+      ],
+      "board": {
+        "kind": "bryophytes",
+        "lines": [
+          "Nonvascular land-plant organization",
+          "Gametophyte is the conspicuous generation",
+          "Sporophyte remains attached and dependent",
+          "Marchantia and Funaria are examples"
+        ]
+      },
+      "script": "Bryophytes lack the true vascular organization characteristic of the later plant groups in this comparison. Their conspicuous plant body is the gametophyte, and the sporophyte remains attached to and nutritionally dependent on it to varying degrees. Water is required for the movement of flagellated male gametes during fertilization in the standard account. The phrase amphibians of the plant kingdom describes this reproductive dependence; it does not classify bryophytes as animals. Marchantia is a liverwort example and Funaria is a moss example. Liverworts can have a thalloid body, whereas a moss gametophyte includes recognizable leafy organization and a protonemal stage in its development. Rhizoids are not the same as true vascular roots. Spores and gametes have different origins and roles: the sporophyte produces spores through meiosis, while the haploid gametophyte produces gametes without a further reduction of its chromosome set. Use dominant generation, vascular status and sporophyte dependence together rather than relying only on small size or a moist habitat."
+    },
+    {
+      "title": "Pteridophytes are vascular seedless plants",
+      "formula": "True roots, stems, leaves and vascular tissue",
+      "points": [
+        "True roots, stems, leaves and vascular tissue",
+        "Dominant independent sporophyte",
+        "Spores rather than seeds",
+        "Selaginella and Equisetum are examples"
+      ],
+      "board": {
+        "kind": "pteridophytes",
+        "lines": [
+          "True roots, stems, leaves and vascular tissue",
+          "Dominant independent sporophyte",
+          "Spores rather than seeds",
+          "Selaginella and Equisetum are examples"
+        ]
+      },
+      "script": "Pteridophytes combine vascular tissue and a dominant sporophyte with seedless reproduction. Their sporophytes have true roots, stems and leaves in the group comparison, and sporangia produce spores. Selaginella and Equisetum are two important examples; a typical fern provides another familiar form. The gametophyte is often described as a prothallus in the homosporous fern account, and fertilization still requires water for motile male gametes. Do not infer seeds merely from the presence of a vascular system. Homospory involves one spore type, whereas heterospory distinguishes microspores and megaspores. Selaginella and Salvinia illustrate the heterosporous condition in the textbook discussion and help explain features associated with the approach to seed habit. Heterospory alone is not identical to a fully formed seed. Compare the independent sporophyte with the attached dependent sporophyte of bryophytes. Habitat and leaf shape can support an identification but cannot replace the reproductive and vascular evidence. The terms spore, gamete and seed must remain distinct throughout the comparison."
+    },
+    {
+      "title": "Gymnosperms bear seeds without an enclosing ovary",
+      "formula": "Vascular plants with naked ovules and seeds",
+      "points": [
+        "Vascular plants with naked ovules and seeds",
+        "Heterosporous; reduced dependent gametophytes",
+        "Pollen reduces reliance on external water",
+        "Cycas and Pinus are examples"
+      ],
+      "board": {
+        "kind": "gymnosperms",
+        "lines": [
+          "Vascular plants with naked ovules and seeds",
+          "Heterosporous; reduced dependent gametophytes",
+          "Pollen reduces reliance on external water",
+          "Cycas and Pinus are examples"
+        ]
+      },
+      "script": "Gymnosperms are vascular seed plants whose ovules are not enclosed within an ovary in the flowering plant manner. The resulting naked seed description concerns this reproductive organization, not a claim that every seed lacks all protective tissues. Cycas and Pinus are examples. These plants are heterosporous, producing microspores and megaspores, with reduced gametophytes associated with the sporophyte. Pollen delivery reduces dependence on an external water film for bringing male reproductive material toward the female structure. This does not mean every detail of fertilization is identical among gymnosperm groups. Pinus has familiar cones and needle leaves, while Cycas has a different overall organization. Conifer leaf adaptations can include features associated with reducing water loss; appearance alone does not define the whole group. In a comparison with pteridophytes, the decisive new combination includes pollen and seeds rather than vascular tissue alone. Angiosperm morphology and reproductive structures belong to later specified units. Here, recognize ovule enclosure, seed habit, dominant sporophyte and representative examples together."
+    },
+    {
+      "title": "Animal classification uses several independent characters",
+      "formula": "Symmetry, organization and germ layers",
+      "points": [
+        "Symmetry, organization and germ layers",
+        "Coelom: absent, pseudo or true",
+        "Segmentation is separate from body shape",
+        "Notochord is not simply any supporting rod"
+      ],
+      "board": {
+        "kind": "animal-plan",
+        "lines": [
+          "Symmetry, organization and germ layers",
+          "Coelom: absent, pseudo or true",
+          "Segmentation is separate from body shape",
+          "Notochord is not simply any supporting rod"
+        ]
+      },
+      "script": "Animal classification uses combinations of characters rather than a single visual impression. Levels of organization range from the cellular comparison in sponges to tissue and organ system arrangements in other groups. Symmetry may be absent, radial or bilateral in the relevant stage; larval and adult patterns can differ. Diploblastic and triploblastic describe germ layer organization in the textbook scheme. Acoelomate, pseudocoelomate and coelomate distinguish the absence or nature of a body cavity, not whether an animal has a digestive cavity. True segmentation is another character and cannot be inferred from every repeated external ring. Digestive and circulatory organization contribute further distinctions. A notochord is a particular mesodermal supporting structure and must not be confused with the stomochord of a hemichordate. Record the developmental stage and the stated scheme before using a feature for identification. An unfamiliar aquatic animal is not automatically a fish, and a worm shaped body does not identify one phylum. A defensible answer combines at least several independent structural and functional observations."
+    },
+    {
+      "title": "Porifera and Cnidaria use different body organizations",
+      "formula": "Porifera: pores, canal system, choanocytes",
+      "points": [
+        "Porifera: pores, canal system, choanocytes",
+        "Examples: Sycon and Spongilla",
+        "Cnidaria: tissue organization and cnidocytes",
+        "Examples: Hydra and Aurelia"
+      ],
+      "board": {
+        "kind": "sponge-cnidarian",
+        "lines": [
+          "Porifera: pores, canal system, choanocytes",
+          "Examples: Sycon and Spongilla",
+          "Cnidaria: tissue organization and cnidocytes",
+          "Examples: Hydra and Aurelia"
+        ]
+      },
+      "script": "Porifera are sponges with a water canal system and specialized cells such as choanocytes. Water entry through pores and exit through larger openings support feeding and exchange. The textbook comparison emphasizes cellular organization rather than the true tissue organization of many other animals. Spicules or spongin can support the body, and many sponges are asymmetrical. Sycon and Spongilla provide examples; Spongilla also reminds us that not every sponge is marine. Cnidarians have tissue level organization, a gastrovascular cavity and specialized cnidocytes used in functions such as prey capture and defence. They are diploblastic in the textbook scheme and generally have radial organization. Hydra illustrates a polyp form, while Aurelia illustrates the jellyfish comparison. The polyp and medusa are body forms, not two extra kingdoms. Not every cnidarian has exactly the same alternation of those forms. Distinguish sponge water canals and choanocytes from the cnidarian gastrovascular and stinging cell organization. Both groups include aquatic animals, but aquatic habitat alone does not diagnose either phylum."
+    },
+    {
+      "title": "Ctenophores and flatworms require different recognition clues",
+      "formula": "Ctenophora: marine, comb rows, colloblasts",
+      "points": [
+        "Ctenophora: marine, comb rows, colloblasts",
+        "Examples: Pleurobrachia and Ctenoplana",
+        "Flatworms: bilateral, flattened, acoelomate",
+        "Examples: Planaria and Taenia"
+      ],
+      "board": {
+        "kind": "comb-flatworm",
+        "lines": [
+          "Ctenophora: marine, comb rows, colloblasts",
+          "Examples: Pleurobrachia and Ctenoplana",
+          "Flatworms: bilateral, flattened, acoelomate",
+          "Examples: Planaria and Taenia"
+        ]
+      },
+      "script": "Ctenophores are marine animals with eight external rows of ciliary comb plates used in movement in the standard comparison. Colloblasts provide adhesive prey capture rather than the cnidarian stinging cell mechanism. Their organization is commonly described as radial or biradial in teaching accounts, and many show bioluminescence. Pleurobrachia and Ctenoplana are examples. Do not identify a comb jelly as a cnidarian solely because it is gelatinous and marine. Platyhelminthes instead includes bilaterally organized, dorsoventrally flattened, triploblastic acoelomate animals. Flame cell based excretory organization is a useful textbook feature, and many members are parasitic, although free living examples also occur. Planaria and Taenia contrast free living and tapeworm forms. The presence of a flat body alone is weaker evidence than the full combination of organization and organ systems. Nor should all flatworms be assigned the same feeding or reproductive details without checking the subgroup. These comparisons show why locomotory structures, symmetry, body cavity and life habit should be assessed separately."
+    },
+    {
+      "title": "Roundworms and annelids differ in coelom and segmentation",
+      "formula": "Roundworms: pseudocoelom, complete gut",
+      "points": [
+        "Roundworms: pseudocoelom, complete gut",
+        "Examples: Ascaris and Wuchereria",
+        "Annelids: true coelom, metameric segmentation",
+        "Examples: Nereis and Hirudinaria"
+      ],
+      "board": {
+        "kind": "worms",
+        "lines": [
+          "Roundworms: pseudocoelom, complete gut",
+          "Examples: Ascaris and Wuchereria",
+          "Annelids: true coelom, metameric segmentation",
+          "Examples: Nereis and Hirudinaria"
+        ]
+      },
+      "script": "The traditional NCERT roundworm account uses Aschelminthes; the nematode comparison is central here. These animals are bilaterally organized, triploblastic and pseudocoelomate, with a complete digestive tract and an externally unsegmented cylindrical body. Sexes are commonly separate in the textbook examples, and Ascaris and Wuchereria provide familiar representatives. A complete gut has separate mouth and anal openings; it is not synonymous with a true coelom. Annelids have a true coelom and metameric segmentation, with nephridia contributing to excretion and a closed circulatory comparison in the standard account. Nereis and Hirudinaria are examples. Not every annelid is a terrestrial earthworm, and not every annelid has the same appendages or feeding habit. A segmented body must be distinguished from superficial rings on an unsegmented worm. In a specimen question, combine cavity type, true segmentation and excretory organization before assigning a worm shaped animal to a phylum. The legacy roundworm grouping should not be treated as a statement that every historical classification is identical to current phylogeny."
+    },
+    {
+      "title": "Arthropods and molluscs have contrasting body plans",
+      "formula": "Arthropoda: jointed appendages, chitinous exoskeleton",
+      "points": [
+        "Arthropoda: jointed appendages, chitinous exoskeleton",
+        "Examples: Periplaneta and Apis",
+        "Mollusca: mantle, visceral mass, muscular foot",
+        "Examples: Pila and Octopus"
+      ],
+      "board": {
+        "kind": "arthropod-mollusc",
+        "lines": [
+          "Arthropoda: jointed appendages, chitinous exoskeleton",
+          "Examples: Periplaneta and Apis",
+          "Mollusca: mantle, visceral mass, muscular foot",
+          "Examples: Pila and Octopus"
+        ]
+      },
+      "script": "Arthropods have jointed appendages, a chitinous exoskeleton and a segmented organization commonly grouped into specialized body regions. Growth involves moulting, and the standard circulatory comparison is open. Periplaneta and Apis are examples of insects within this larger phylum; arthropods also include many noninsect groups, so six legs must not be imposed on every arthropod. Molluscs characteristically have a mantle, visceral mass and muscular foot, with organization modified for different modes of life. Pila and Octopus illustrate the breadth of the group. A shell is familiar but is not an external complete shell in every mollusc. A radula is common in the textbook account but absent from bivalves. The mantle cavity and respiratory structures should not be confused with an arthropod jointed exoskeleton. Octopus movement does not turn it into a fish, and the coiling of a snail shell is not body segmentation. Combine appendages and external covering with internal body organization rather than relying only on habitat or a protective hard structure."
+    },
+    {
+      "title": "Echinoderms and hemichordates are separate marine comparisons",
+      "formula": "Echinoderms: water vascular system, ossicles",
+      "points": [
+        "Echinoderms: water vascular system, ossicles",
+        "Examples: Asterias and Echinus",
+        "Hemichordates: proboscis, collar, trunk",
+        "Examples: Balanoglossus and Saccoglossus"
+      ],
+      "board": {
+        "kind": "marine-groups",
+        "lines": [
+          "Echinoderms: water vascular system, ossicles",
+          "Examples: Asterias and Echinus",
+          "Hemichordates: proboscis, collar, trunk",
+          "Examples: Balanoglossus and Saccoglossus"
+        ]
+      },
+      "script": "Echinoderms are marine animals with a calcareous endoskeleton and a water vascular system associated with functions such as movement and feeding. Adults commonly show pentaradial organization, while the larvae are bilateral, so stage must be specified in symmetry questions. Asterias and Echinus are examples. The presence of internal skeletal elements does not make them vertebrates. Hemichordates are another marine group with a body divided into proboscis, collar and trunk. Balanoglossus and Saccoglossus are examples. Pharyngeal gill slits occur in the group comparison, but the stomochord is not the true notochord used to define Chordata. Modern teaching treats Hemichordata as a separate phylum rather than placing these animals among true chordates merely because older classifications associated them. A worm shaped form and gill slits alone are therefore insufficient for a chordate assignment. For echinoderms, look for the water vascular and skeletal organization; for hemichordates, combine the three body regions with the absence of the defining chordate notochord."
+    },
+    {
+      "title": "Chordate characters appear at some developmental stage",
+      "formula": "Notochord; dorsal hollow nerve cord",
+      "points": [
+        "Notochord; dorsal hollow nerve cord",
+        "Pharyngeal slits and post-anal tail",
+        "Tunicates and lancelets are invertebrate chordates",
+        "A vertebral column is not present in all chordates"
+      ],
+      "board": {
+        "kind": "chordates",
+        "lines": [
+          "Notochord; dorsal hollow nerve cord",
+          "Pharyngeal slits and post-anal tail",
+          "Tunicates and lancelets are invertebrate chordates",
+          "A vertebral column is not present in all chordates"
+        ]
+      },
+      "script": "Chordates share a defining combination that includes a notochord, dorsal hollow nerve cord, pharyngeal slits and a post anal tail at some stage of development. These features need not remain equally conspicuous in every adult. A vertebral column therefore cannot be required of every chordate, because invertebrate chordate groups also exist. In the urochordate comparison, the larval tail bears the notochord; Ascidia and Salpa are representative tunicates. In the cephalochordate comparison, Branchiostoma retains an extending notochord through life. Amphioxus is a familiar name for that lancelet example, not a second independent genus to count as another specimen. Vertebrates develop further cranial and skeletal specializations and include the classes introduced next. A fish shaped outline alone does not diagnose Chordata, and a hemichordate stomochord is not a replacement for the true notochord. When a question seems to omit an adult feature, check whether it is asking about the entire life cycle or a particular developmental stage."
+    },
+    {
+      "title": "Cyclostomes and cartilaginous fishes differ in jaws",
+      "formula": "Cyclostomes: jawless, no paired fins",
+      "points": [
+        "Cyclostomes: jawless, no paired fins",
+        "Examples: Petromyzon and Myxine",
+        "Cartilaginous fishes: jaws, cartilage, placoid scales",
+        "Examples: Scoliodon and Trygon"
+      ],
+      "board": {
+        "kind": "jaw-fishes",
+        "lines": [
+          "Cyclostomes: jawless, no paired fins",
+          "Examples: Petromyzon and Myxine",
+          "Cartilaginous fishes: jaws, cartilage, placoid scales",
+          "Examples: Scoliodon and Trygon"
+        ]
+      },
+      "script": "The cyclostome comparison includes jawless aquatic forms with a circular mouth, no paired fins and a cartilaginous supporting skeleton in the textbook account. Petromyzon and Myxine are the standard lamprey and hagfish examples. Life habits are not identical: lamprey descriptions often emphasize an ectoparasitic feeding stage, while hagfish are commonly associated with scavenging. Do not make one feeding habit the only defining feature of every cyclostome. Chondrichthyes includes cartilaginous fishes such as Scoliodon and Trygon. Typical shark and ray comparisons include jaws, a cartilaginous endoskeleton, placoid scales and separate exposed gill slits; the mouth is commonly ventral. These features distinguish them from both the jawless comparison and the standard bony fish account. Cartilage alone cannot distinguish a cyclostome from a shark, because the jaw and appendage characters also matter. Nor should a flattened ray be assigned to the flatworm phylum. Use a bundle of skeletal, jaw, fin and respiratory characters rather than the broad observation that an animal lives in water."
+    },
+    {
+      "title": "Bony fishes combine an operculum with a bony skeleton",
+      "formula": "Osteichthyes: predominantly bony endoskeleton",
+      "points": [
+        "Osteichthyes: predominantly bony endoskeleton",
+        "Gills covered by an operculum in the standard account",
+        "Swim bladder common, not universal",
+        "Examples: Labeo and Catla"
+      ],
+      "board": {
+        "kind": "bony-fish",
+        "lines": [
+          "Osteichthyes: predominantly bony endoskeleton",
+          "Gills covered by an operculum in the standard account",
+          "Swim bladder common, not universal",
+          "Examples: Labeo and Catla"
+        ]
+      },
+      "script": "The traditional Osteichthyes comparison includes fishes with a predominantly bony endoskeleton and gills covered by an operculum. A swim bladder is common and has important roles in many members, but it should not be assigned without exception to every fish. Cycloid or ctenoid scales and a commonly terminal mouth appear in the usual textbook comparison. Labeo and Catla are two freshwater examples. They illustrate a group that also contains marine representatives, so habitat alone cannot separate bony from cartilaginous fishes. Compare the operculum and skeletal organization with the exposed gill slit and placoid scale combination of the typical shark account. A fish's body is adapted to its actual mode of life, and not every member has one identical outline or reproductive pattern. The term bony fish is a teaching category here; modern evolutionary classifications may group lineages differently from the traditional class level arrangement. In a recognition problem, record the supplied diagnostic features before choosing an example rather than using a common name as the only evidence."
+    },
+    {
+      "title": "Amphibians and reptiles differ in skin and reproduction",
+      "formula": "Amphibia: moist glandular skin, varied life stages",
+      "points": [
+        "Amphibia: moist glandular skin, varied life stages",
+        "Examples: Rana and Salamandra",
+        "Reptilia: dry keratinized covering, internal fertilization",
+        "Examples: Chelone and Calotes"
+      ],
+      "board": {
+        "kind": "amphibian-reptile",
+        "lines": [
+          "Amphibia: moist glandular skin, varied life stages",
+          "Examples: Rana and Salamandra",
+          "Reptilia: dry keratinized covering, internal fertilization",
+          "Examples: Chelone and Calotes"
+        ]
+      },
+      "script": "Amphibians commonly have moist glandular skin, a three chambered heart in the standard adult comparison and respiratory changes across the life cycle. Larval gills and adult lung or skin contributions are useful examples, but life histories vary and the group should not be reduced to the claim that every individual spends identical times on land and in water. Rana and Salamandra are examples. Reptiles have a dry keratinized covering, internal fertilization and an amniotic reproductive organization that reduces dependence on an external aquatic developmental environment. Chelone and Calotes provide turtle and lizard examples. The usual three chambered heart comparison has an important crocodilian four chambered exception. Not every reptile is legless, and not every reptile is a terrestrial animal; the examples themselves show ecological variety. Skin, embryonic organization and reproductive evidence are stronger than a habitat shortcut. Modern phylogeny places birds within the reptile lineage, while the conventional examination class comparisons treat Aves separately. Follow the stated classification when answering a rank based question."
+    },
+    {
+      "title": "Birds and mammals share traits but have distinct hallmarks",
+      "formula": "Aves: feathers, wing-modified forelimbs, endothermy",
+      "points": [
+        "Aves: feathers, wing-modified forelimbs, endothermy",
+        "Examples: Columba and Struthio",
+        "Mammalia: mammary glands and hair association",
+        "Examples: Homo and Balaenoptera"
+      ],
+      "board": {
+        "kind": "bird-mammal",
+        "lines": [
+          "Aves: feathers, wing-modified forelimbs, endothermy",
+          "Examples: Columba and Struthio",
+          "Mammalia: mammary glands and hair association",
+          "Examples: Homo and Balaenoptera"
+        ]
+      },
+      "script": "Birds have feathers, forelimbs modified as wings, a four chambered heart and endothermic regulation in the standard comparison. Columba and Struthio provide examples, and the ostrich demonstrates that flight is not required of every bird. A beak and egg laying occur in the usual account, but feathers provide a stronger recognition feature than merely the ability to fly. Mammals are characterized by mammary glands and a hair associated integument, with hair sometimes highly reduced or evident at particular developmental stages. They are endothermic and have a four chambered heart. Homo and Balaenoptera are examples, reminding us that an aquatic whale remains a mammal. Many mammals are viviparous, but egg laying monotremes such as Ornithorhynchus prevent treating live birth as universal. Shared endothermy and heart chamber number therefore do not alone distinguish birds from mammals. Combine their group specific features with the stated life stage and reproductive observations. A flying mammal is not a bird, and a swimming mammal is not a bony fish."
+    },
+    {
+      "title": "Use combinations of characters to identify an unfamiliar specimen",
+      "formula": "First establish cellular organization",
+      "points": [
+        "First establish cellular organization",
+        "Then compare nutrition, walls and body plan",
+        "Use several independent diagnostic characters",
+        "A shared habitat or colour is not enough"
+      ],
+      "board": {
+        "kind": "key",
+        "lines": [
+          "First establish cellular organization",
+          "Then compare nutrition, walls and body plan",
+          "Use several independent diagnostic characters",
+          "A shared habitat or colour is not enough"
+        ]
+      },
+      "script": "An unfamiliar specimen is best approached with a sequence of diagnostic questions. First distinguish cellular from acellular organization and, for a cell, prokaryotic from eukaryotic organization. Then consider the specified classification and use nutrition, wall characters, organization and reproduction as appropriate. In animal comparisons, jointed appendages and a chitinous exoskeleton support an arthropod interpretation more strongly than the fact that the specimen is small or terrestrial. A water vascular system and the correct adult or larval symmetry support an echinoderm interpretation even though the animal lacks vertebrae. In plant comparisons, vascular tissue without seeds supports a different conclusion from pollen and naked ovules. A photosynthetic organism without a nuclear envelope belongs in the cyanobacterial comparison rather than among the eukaryotic green algae. Keys depend on alternatives chosen for the available specimen set; one character may be useful in that restricted set without identifying every organism on Earth. Explain which observations support the conclusion and which alternatives they exclude."
+    },
+    {
+      "title": "Read hierarchy and evidence without turning classification into a ladder",
+      "formula": "Same genus entails shared higher ranks in the scheme",
+      "points": [
+        "Same genus entails shared higher ranks in the scheme",
+        "Same family need not mean same genus",
+        "Branch order is not a ladder of living progress",
+        "This is a foundation; mixed identification remains"
+      ],
+      "board": {
+        "kind": "synthesis",
+        "lines": [
+          "Same genus entails shared higher ranks in the scheme",
+          "Same family need not mean same genus",
+          "Branch order is not a ladder of living progress",
+          "This is a foundation; mixed identification remains"
+        ]
+      },
+      "script": "Finish by separating classification rank from superficial resemblance. Within a stated hierarchy, two species placed in the same genus share the relevant family and higher groups, while two organisms sharing a family need not belong to the same genus. A repeated specific epithet without the same genus is not enough to establish the same species. Evolutionary trees represent hypotheses of relationships and common ancestry; living groups are not rungs on a simple ladder from inferior to superior organisms. Branch rotation does not by itself change relationships, and an unscaled branch length is not a direct time measurement. These principles help explain why classification can change with evidence while textbook comparisons remain useful within their stated framework. This recorded Unit one foundation introduces living characteristics, taxonomy, the five kingdom account, the prescribed plant groups and animal phyla and classes with representative examples. It does not replace repeated practice in specimen recognition, life cycles and exceptions. Continue by checking several characters together rather than memorizing one habitat, colour or common name as an infallible identifier."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Why is growth alone insufficient to define life?",
+      "options": [
+        "Nonliving crystals can also grow by accumulation",
+        "Living organisms never grow",
+        "Only animals can grow",
+        "Every growing object has cells"
+      ],
+      "answer": 0,
+      "explanation": "Growth must be interpreted with organized cellular processes."
+    },
+    {
+      "question": "A sterile individual is necessarily nonliving. This statement is:",
+      "options": [
+        "Correct for every species",
+        "Incorrect; reproduction is not required of every individual",
+        "Correct for all adult animals",
+        "A definition of biodiversity"
+      ],
+      "answer": 1,
+      "explanation": "A reproductive exception does not remove living organization."
+    },
+    {
+      "question": "Mammalia and class are respectively:",
+      "options": [
+        "Two individual organisms",
+        "Two species names",
+        "A taxon and a category",
+        "A category and a specimen"
+      ],
+      "answer": 2,
+      "explanation": "A named group occupies a rank or category."
+    },
+    {
+      "question": "Within a stated hierarchy, sharing a genus entails sharing the corresponding:",
+      "options": [
+        "Specific epithet in every case",
+        "Individual identity",
+        "Different kingdoms necessarily",
+        "Family and higher groups"
+      ],
+      "answer": 3,
+      "explanation": "The genus is nested within its higher groups."
+    },
+    {
+      "question": "Correct capitalization of the mango binomial is:",
+      "options": [
+        "Mangifera indica",
+        "mangifera Indica",
+        "Mangifera Indica",
+        "mangifera indica"
+      ],
+      "answer": 0,
+      "explanation": "Genus begins in upper case and specific epithet in lower case."
+    },
+    {
+      "question": "Mangifera indica and Azadirachta indica necessarily share:",
+      "options": [
+        "A genus",
+        "An epithet, which does not establish one species",
+        "One complete binomial",
+        "Every taxonomic rank"
+      ],
+      "answer": 1,
+      "explanation": "Both parts of the binomial are needed."
+    },
+    {
+      "question": "In the specified five kingdom scheme, cyanobacteria belong to:",
+      "options": [
+        "Plantae because all photosynthesis defines plants",
+        "Fungi",
+        "Monera",
+        "Animalia"
+      ],
+      "answer": 2,
+      "explanation": "Cyanobacteria are prokaryotic despite the historical blue green algae name."
+    },
+    {
+      "question": "Which pair illustrates cyanobacteria?",
+      "options": [
+        "Chlamydomonas and Volvox",
+        "Agaricus and Puccinia",
+        "Laminaria and Fucus",
+        "Nostoc and Anabaena"
+      ],
+      "answer": 3,
+      "explanation": "The named pair belongs to the cyanobacterial comparison."
+    },
+    {
+      "question": "A silica-rich wall is a characteristic clue for:",
+      "options": [
+        "Diatoms",
+        "Every protozoan",
+        "Every fungus",
+        "Every animal"
+      ],
+      "answer": 0,
+      "explanation": "Diatom wall composition is a useful group feature."
+    },
+    {
+      "question": "The characteristic flexible covering of Euglena is a:",
+      "options": [
+        "Typical rigid cellulose wall",
+        "Pellicle",
+        "Cnidocyte",
+        "Placoid scale"
+      ],
+      "answer": 1,
+      "explanation": "This covering differs from the ordinary rigid wall comparison."
+    },
+    {
+      "question": "Absorptive nutrition with a characteristically chitinous wall supports:",
+      "options": [
+        "Every cyanobacterium",
+        "All vertebrates",
+        "Fungi",
+        "Every virus"
+      ],
+      "answer": 2,
+      "explanation": "The combination is stronger than habitat alone."
+    },
+    {
+      "question": "The historical Deuteromycetes grouping emphasized:",
+      "options": [
+        "A universal absence of all reproduction",
+        "One proven modern natural lineage",
+        "Only photosynthetic organisms",
+        "An unknown sexual stage in that account"
+      ],
+      "answer": 3,
+      "explanation": "The legacy group should not be equated with one modern clade."
+    },
+    {
+      "question": "A viroid differs from a typical virus comparison by being:",
+      "options": [
+        "Infectious RNA without the protein capsid",
+        "A complete bacterial cell",
+        "A protein-only agent",
+        "A fungal fruiting body"
+      ],
+      "answer": 0,
+      "explanation": "Potato spindle tuber viroid illustrates this RNA agent."
+    },
+    {
+      "question": "A lichen is principally an association involving:",
+      "options": [
+        "Two animal embryos",
+        "A fungus and a photosynthetic partner",
+        "Only a protein coat and DNA",
+        "Two obligatory flowering plants"
+      ],
+      "answer": 1,
+      "explanation": "The photobiont can be an alga or cyanobacterium."
+    },
+    {
+      "question": "Which brown algal pair is correct?",
+      "options": [
+        "Chlamydomonas and Volvox",
+        "Marchantia and Funaria",
+        "Laminaria and Fucus",
+        "Cycas and Pinus"
+      ],
+      "answer": 2,
+      "explanation": "These are brown algae in the specified comparison."
+    },
+    {
+      "question": "The characteristic red algal reserve comparison is:",
+      "options": [
+        "Laminarin and mannitol only",
+        "Animal glycogen by definition",
+        "Only a protein capsid",
+        "Floridean starch"
+      ],
+      "answer": 3,
+      "explanation": "Reserve materials help distinguish algal groups."
+    },
+    {
+      "question": "A dominant gametophyte with an attached dependent sporophyte supports the textbook:",
+      "options": [
+        "Bryophyte comparison",
+        "Gymnosperm comparison",
+        "Bony fish comparison",
+        "Arthropod comparison"
+      ],
+      "answer": 0,
+      "explanation": "Generation dominance and dependence are key bryophyte features."
+    },
+    {
+      "question": "Marchantia and Funaria are respectively familiar:",
+      "options": [
+        "Brown and red algae",
+        "Liverwort and moss examples",
+        "Gymnosperm and shark examples",
+        "Fungus and viroid examples"
+      ],
+      "answer": 1,
+      "explanation": "Both belong in the bryophyte portion of this class."
+    },
+    {
+      "question": "Vascular tissue and dominant sporophyte without seeds is compatible with:",
+      "options": [
+        "Only bryophytes",
+        "Only viruses",
+        "Pteridophytes",
+        "Only mammals"
+      ],
+      "answer": 2,
+      "explanation": "Vascular organization alone does not establish seed production."
+    },
+    {
+      "question": "Which pair illustrates heterospory in the textbook discussion?",
+      "options": [
+        "Funaria and Marchantia",
+        "Labeo and Catla",
+        "Hydra and Aurelia",
+        "Selaginella and Salvinia"
+      ],
+      "answer": 3,
+      "explanation": "The distinction involves microspores and megaspores."
+    },
+    {
+      "question": "Naked ovules and seed production in the stated plant comparison support:",
+      "options": [
+        "Gymnosperms",
+        "All pteridophytes",
+        "All bryophytes",
+        "Every green alga"
+      ],
+      "answer": 0,
+      "explanation": "The ovules are not enclosed in an angiosperm-style ovary."
+    },
+    {
+      "question": "Which pair supplies gymnosperm examples?",
+      "options": [
+        "Sycon and Spongilla",
+        "Cycas and Pinus",
+        "Planaria and Taenia",
+        "Amoeba and Paramecium"
+      ],
+      "answer": 1,
+      "explanation": "Both examples belong to the gymnosperm comparison."
+    },
+    {
+      "question": "A true coelom and a digestive cavity are:",
+      "options": [
+        "Always the same space",
+        "Both synonyms for a nucleus",
+        "Different anatomical concepts",
+        "Present only in viruses"
+      ],
+      "answer": 2,
+      "explanation": "Body cavity classification differs from the gut lumen."
+    },
+    {
+      "question": "An animal is worm-shaped. This observation alone:",
+      "options": [
+        "Proves Annelida",
+        "Proves Nematoda",
+        "Proves Hemichordata",
+        "Does not uniquely establish its phylum"
+      ],
+      "answer": 3,
+      "explanation": "Several phyla contain worm-shaped forms."
+    },
+    {
+      "question": "A water canal system with choanocytes strongly supports:",
+      "options": [
+        "Porifera",
+        "Cnidaria",
+        "Mollusca",
+        "Chordata"
+      ],
+      "answer": 0,
+      "explanation": "Sponge organization differs from a cnidarian gastrovascular cavity."
+    },
+    {
+      "question": "Hydra and Aurelia illustrate a group with:",
+      "options": [
+        "Arthropod jointed appendages",
+        "Cnidocytes",
+        "A vertebral column",
+        "A fungal mycelium"
+      ],
+      "answer": 1,
+      "explanation": "Both are cnidarian examples."
+    },
+    {
+      "question": "Comb rows and adhesive colloblasts support:",
+      "options": [
+        "Cnidaria by stinging cells alone",
+        "Annelida",
+        "Ctenophora",
+        "Gymnosperms"
+      ],
+      "answer": 2,
+      "explanation": "The comb jelly comparison differs from cnidarian cnidocytes."
+    },
+    {
+      "question": "Planaria and Taenia are examples in the:",
+      "options": [
+        "Echinoderm comparison",
+        "Bird class",
+        "Brown algal group",
+        "Platyhelminthes comparison"
+      ],
+      "answer": 3,
+      "explanation": "They illustrate free living and parasitic flatworm forms."
+    },
+    {
+      "question": "A pseudocoelom with an unsegmented cylindrical body and complete gut supports the:",
+      "options": [
+        "Roundworm comparison",
+        "Annelid true-coelom comparison",
+        "Sponge canal system",
+        "Cnidarian tissue comparison"
+      ],
+      "answer": 0,
+      "explanation": "Use several characters rather than worm shape alone."
+    },
+    {
+      "question": "Nereis and Hirudinaria illustrate:",
+      "options": [
+        "Nematoda in this account",
+        "Annelida",
+        "Monera",
+        "Aves"
+      ],
+      "answer": 1,
+      "explanation": "These examples belong to the true-coelom and metameric segmentation comparison."
+    },
+    {
+      "question": "Jointed appendages and a chitinous exoskeleton support:",
+      "options": [
+        "Mollusca",
+        "Porifera",
+        "Arthropoda",
+        "Fungi despite appendages"
+      ],
+      "answer": 2,
+      "explanation": "The full animal body plan distinguishes this from fungal chitin."
+    },
+    {
+      "question": "Pila and Octopus illustrate a group characterized by:",
+      "options": [
+        "Mandatory external segmented exoskeleton",
+        "A vertebral column in every member",
+        "Cnidocytes",
+        "Mantle, visceral mass and modified muscular foot"
+      ],
+      "answer": 3,
+      "explanation": "Molluscan organization is modified across different forms."
+    },
+    {
+      "question": "A water vascular system and calcareous endoskeleton support:",
+      "options": [
+        "Echinodermata",
+        "Hemichordata",
+        "Porifera",
+        "Platyhelminthes"
+      ],
+      "answer": 0,
+      "explanation": "Asterias and Echinus are representative examples."
+    },
+    {
+      "question": "The stomochord of Balanoglossus is:",
+      "options": [
+        "A vertebral column",
+        "Not the true chordate notochord",
+        "A cnidocyte",
+        "A fungal hypha"
+      ],
+      "answer": 1,
+      "explanation": "Hemichordates are treated as a separate phylum in this account."
+    },
+    {
+      "question": "The chordate character combination must occur:",
+      "options": [
+        "Only in every adult without exception",
+        "Only in animals with bones",
+        "At some stage of development",
+        "Only in freshwater fishes"
+      ],
+      "answer": 2,
+      "explanation": "Some characters are conspicuous mainly in larval or embryonic stages."
+    },
+    {
+      "question": "Ascidia and Salpa are representative:",
+      "options": [
+        "Cephalochordate genera",
+        "Hemichordate examples",
+        "Mammals",
+        "Urochordates"
+      ],
+      "answer": 3,
+      "explanation": "Tunicate larval and adult organization differs."
+    },
+    {
+      "question": "Petromyzon and Myxine are used as:",
+      "options": [
+        "Cyclostome examples",
+        "Jawed cartilaginous fish examples",
+        "Bird examples",
+        "Bryophytes"
+      ],
+      "answer": 0,
+      "explanation": "The comparison includes jawless forms without paired fins."
+    },
+    {
+      "question": "Scoliodon and Trygon fit the standard:",
+      "options": [
+        "Osteichthyes comparison",
+        "Chondrichthyes comparison",
+        "Amphibia comparison",
+        "Mollusca comparison"
+      ],
+      "answer": 1,
+      "explanation": "Jaws, cartilage and the typical shark/ray features support this assignment."
+    },
+    {
+      "question": "Which pair gives the stated bony fish examples?",
+      "options": [
+        "Scoliodon and Trygon",
+        "Petromyzon and Myxine",
+        "Labeo and Catla",
+        "Rana and Salamandra"
+      ],
+      "answer": 2,
+      "explanation": "Both examples belong to the traditional Osteichthyes account."
+    },
+    {
+      "question": "A swim bladder should be described as:",
+      "options": [
+        "Universal in every fish",
+        "Present in every arthropod",
+        "The same structure as an operculum",
+        "Common in bony fishes, with exceptions"
+      ],
+      "answer": 3,
+      "explanation": "Avoid turning a common feature into an unrestricted universal statement."
+    },
+    {
+      "question": "Rana and Salamandra are examples of:",
+      "options": [
+        "Amphibia",
+        "Reptilia",
+        "Aves",
+        "Cyclostomata"
+      ],
+      "answer": 0,
+      "explanation": "Moist glandular skin and life-cycle characters support this comparison."
+    },
+    {
+      "question": "Which statement handles the reptile heart comparison correctly?",
+      "options": [
+        "Every reptile has a two-chambered heart",
+        "The usual three-chambered account has a crocodilian four-chambered exception",
+        "All reptiles lack a heart",
+        "Every reptile is identical to a bird in every trait"
+      ],
+      "answer": 1,
+      "explanation": "The specified exception prevents an overbroad generalization."
+    },
+    {
+      "question": "Columba and Struthio illustrate why:",
+      "options": [
+        "Every bird is a mammal",
+        "Feathers occur only in flying adults",
+        "Flight is not required of every bird",
+        "Endothermy uniquely identifies a mammal"
+      ],
+      "answer": 2,
+      "explanation": "The ostrich is a flightless bird."
+    },
+    {
+      "question": "An aquatic Balaenoptera is classified as a mammal because:",
+      "options": [
+        "All aquatic animals are fishes",
+        "Every whale has gills",
+        "All swimmers have placoid scales",
+        "Mammalian characters outweigh the habitat shortcut"
+      ],
+      "answer": 3,
+      "explanation": "Habitat alone does not determine the class."
+    },
+    {
+      "question": "A photosynthetic cell without a membrane-bound nucleus fits most directly in the:",
+      "options": [
+        "Cyanobacterial comparison",
+        "Eukaryotic green algae by colour alone",
+        "Bryophyte comparison",
+        "Red algal comparison"
+      ],
+      "answer": 0,
+      "explanation": "Prokaryotic organization is decisive in this restricted comparison."
+    },
+    {
+      "question": "For identification of an unfamiliar specimen, the strongest method here is:",
+      "options": [
+        "Using habitat alone",
+        "Combining independent diagnostic characters",
+        "Using colour alone",
+        "Using size alone"
+      ],
+      "answer": 1,
+      "explanation": "Several observations can exclude alternatives that share one superficial trait."
+    },
+    {
+      "question": "Two organisms share a family. They must therefore share a genus. This is:",
+      "options": [
+        "Always correct",
+        "The definition of a family",
+        "Incorrect within the hierarchy",
+        "Equivalent to sharing a specific epithet"
+      ],
+      "answer": 2,
+      "explanation": "A family can include multiple genera."
+    },
+    {
+      "question": "Rotating branches at a node of an otherwise unchanged phylogenetic tree:",
+      "options": [
+        "Always reverses ancestry",
+        "Proves all tips are one species",
+        "Makes unscaled lengths equal elapsed time",
+        "Does not by itself change the represented relationships"
+      ],
+      "answer": 3,
+      "explanation": "Relationships depend on branching connections rather than tip order alone."
+    }
+  ]
+}
