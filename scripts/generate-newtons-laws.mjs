@@ -96,6 +96,7 @@ targets['vector-algebra']='vector-algebra';
 targets['statistics-probability']='statistics-probability';
 targets['neet-cell-unit-life'] = 'cell-unit-life';
 targets['neet-biomolecules'] = 'biomolecules';
+targets['neet-cell-cycle-division'] = 'cell-cycle-division';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const dataPrefix = selected.startsWith('neet-') ? 'neet' : 'jee';

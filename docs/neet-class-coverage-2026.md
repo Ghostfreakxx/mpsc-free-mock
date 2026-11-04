@@ -19,7 +19,7 @@ Route: `/neet/classes/cell-unit-life`, linked from `/neet/classes` and NEET prac
 | Nucleus, nucleolus and chromatin | 13 |
 | Chromosome structure | 14; centromere positions and replicated-chromosome counting |
 
-This is the cell-structure foundation within Biology Unit 3, not the whole unit. Biomolecules is now recorded as B02 below. Cell Cycle and Cell Division is the next recorded class. Further diagram identification and mixed experimental questions remain ongoing practice work. The questions are original, not official PYQs.
+This is the cell-structure foundation within Biology Unit 3, not the whole unit. Biomolecules is now recorded as B02 below. Cell Cycle and Cell Division is now recorded as B03 below. Further diagram identification and mixed experimental questions remain ongoing practice work. The questions are original, not official PYQs.
 
 ## Biology B02: Biomolecules
 
@@ -37,7 +37,22 @@ Route: `/neet/classes/biomolecules`. Sixteen narrated chapters, sixteen teaching
 | Classification and cofactors | 13–14: textbook six classes, modern EC 7 context, coenzymes and prosthetic groups |
 | Original applications | 16 and the quiz: independent bond counts and interpretation |
 
-The traditional six-class enzyme scheme is identified as the textbook account; modern IUBMB EC 7 translocases are explained as additional context. Biomolecules does not complete all Biology Unit 3: Cell Cycle and Cell Division remains next, followed by broader mixed practice.
+The traditional six-class enzyme scheme is identified as the textbook account; modern IUBMB EC 7 translocases are explained as additional context. Biomolecules does not complete all Biology Unit 3: Cell Cycle and Cell Division is recorded as B03 below; broader mixed practice remains ongoing.
+
+## Biology B03: Cell Cycle and Cell Division
+
+Route: `/neet/classes/cell-cycle-division`. Sixteen narrated chapters, sixteen original diagrams, aligned English captions and thirty-two original MCQs. Playback and answer progress use the separate `neet.cell-cycle-division.lecture.v1` key. Notes download through the shared player.
+
+| Required heading | Recorded evidence |
+| --- | --- |
+| Cell cycle and interphase | 1–3: G1, S, G2, M, G0, replication and DNA quantities |
+| Mitosis | 4–7: prophase/late-prophase convention, metaphase, anaphase, telophase and cytokinesis |
+| Significance of mitosis | 8: preservation, growth/repair and haploid/diploid examples |
+| Meiosis | 9–13: one replication, two divisions, prophase I substages, reduction and sister separation |
+| Significance and variation | 9 and 14: life-cycle role, crossing over and independent assortment |
+| Counting and interpretation | 2–3, 6, 11–16: centromeres, chromatids, n/C, whole cell versus pole/nucleus and human examples |
+
+The three planned Unit 3 foundations now have recordings: cell structure, biomolecules and division. This is availability of foundational teaching, not exhaustive mastery or problem coverage. Further mixed diagrams, experimental interpretation and wider Biology units remain. Next production focus: Diversity in Living World.
 
 ## Wider Biology map
 
@@ -45,7 +60,7 @@ The traditional six-class enzyme scheme is identified as the textbook account; m
 | --- | --- |
 | Diversity in Living World | Planned |
 | Structural Organisation in Animals and Plants | Planned |
-| Cell Structure and Function | Cell structure and Biomolecules recorded; Cell Division next |
+| Cell Structure and Function | Cell structure, Biomolecules and Cell Division recorded; further mixed practice remains |
 | Plant Physiology | Planned; existing photosynthesis practice retained |
 | Human Physiology | Planned |
 | Reproduction | Planned |
