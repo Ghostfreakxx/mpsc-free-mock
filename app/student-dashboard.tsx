@@ -464,6 +464,7 @@ export default function StudentDashboard({ reviewedKeyHashes }: { reviewedKeyHas
                     <Link href="/mock-test" className="button button-dark"><Play size={16} fill="currentColor" /><span className="button-label-stack"><strong>Start MPSC practice</strong><small>Zir zui rawh · Go to practice</small></span></Link>
                     <button type="button" className="text-button" onClick={() => setView("planner")}>View today&apos;s plan <ArrowRight size={16} /></button>
                   </div>
+                  <InstallAppButton variant="hero" />
                 </div>
                 <div className="welcome-photo">
                   <Image src="/mizoram-study.webp" alt="A student studying beside a window overlooking the hills of Aizawl" fill priority sizes="(max-width: 760px) 100vw, 54vw" />

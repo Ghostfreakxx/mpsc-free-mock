@@ -9,8 +9,9 @@ import { detectPlatform, isInAppBrowser, runInstallPrompt, useInstallState } fro
 
 const SHOW_DELAY_MS = 3000;
 const SNOOZE_MS = 5 * 24 * 60 * 60 * 1000;
-// Timed papers and recorded classes need the whole screen.
-const QUIET_PATHS = /^\/(exam-simulator|jee\/classes\/)/;
+// Timed papers and recorded classes need the whole screen; the home page has its own large
+// install button under the greeting.
+const QUIET_PATHS = /^\/($|exam-simulator|jee\/classes\/)/;
 
 function snoozed(): boolean {
   try {
