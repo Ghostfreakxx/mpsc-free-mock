@@ -131,7 +131,30 @@ Route: `/neet/classes/human-physiology`. Thirty-six narrated chapters, thirty-si
 | Thyroid, parathyroid, adrenal, pancreas, pineal, thymic and gonadal signals | 31–34 |
 | Prescribed endocrine disorders and integrated comparison | 35–36 |
 
-These are educational mechanisms and brief disorder comparisons, not personal diagnosis or treatment. Historical syllabus terminology is explained alongside contemporary terms. This foundation does not establish exhaustive Unit 5 mastery; further numerical problems, labelled diagrams, experimental records and mixed physiological cases remain. Next production focus: Reproduction.
+These are educational mechanisms and brief disorder comparisons, not personal diagnosis or treatment. Historical syllabus terminology is explained alongside contemporary terms. This foundation does not establish exhaustive Unit 5 mastery; further numerical problems, labelled diagrams, experimental records and mixed physiological cases remain. Reproduction is recorded as B08 below.
+
+## Biology B08: Reproduction
+
+Route: `/neet/classes/reproduction`. Thirty narrated chapters, thirty teaching boards, aligned captions and sixty original MCQs. Independent progress: `neet.reproduction.lecture.v1`. Checked on 5 November against the dated official 2026 Biology Unit 6 baseline.
+
+| Required heading | Recorded evidence |
+| --- | --- |
+| Flower, male/female gametophyte development | 1–3 |
+| Pollination types, agencies, examples and outbreeding devices | 4–6 |
+| Pollen-pistil interaction and double fertilization | 7–8 |
+| Endosperm, embryo, seed and fruit development/significance | 9–10 |
+| Apomixis, parthenocarpy and polyembryony | 11 |
+| Human systems and testis/ovary microanatomy | 12–13 |
+| Spermatogenesis, oogenesis and menstrual cycle | 14–16 |
+| Fertilization, cleavage, blastocyst and implantation | 17–19 |
+| Pregnancy, placenta, parturition and lactation | 19–22 |
+| Reproductive health and STI prevention | 23 |
+| Contraceptive categories and sterilization | 24–26 |
+| MTP and amniocentesis; regulated diagnostic use | 27 |
+| Infertility, IVF, ZIFT, GIFT and transfer comparisons | 28–29 |
+| Integrated ploidy, location and stage reasoning | 30 |
+
+This is foundation recording availability, not exhaustive mastery. Further labelled diagrams, ploidy counts, hormonal graphs and mixed applications remain. Health and legal material explains general concepts without dosing, personal eligibility claims or an exhaustive legal procedure. PCPNDT restrictions are distinguished from legitimate regulated diagnosis; emergency contraception is distinguished from termination. Existing progress is retained. Next production focus: Genetics and Evolution.
 
 ## Wider Biology map
 
@@ -142,7 +165,7 @@ These are educational mechanisms and brief disorder comparisons, not personal di
 | Cell Structure and Function | Cell structure, Biomolecules and Cell Division recorded; further mixed practice remains |
 | Plant Physiology | Recorded foundation with 31 chapters; further experiments and mixed applications remain; existing practice retained |
 | Human Physiology | Recorded foundation with 36 chapters; further numerical, diagram and mixed-case practice remains |
-| Reproduction | Planned |
+| Reproduction | Recorded foundation with 30 chapters; further labelled diagrams, ploidy counts and mixed applications remain |
 | Genetics and Evolution | Planned; existing DNA/inheritance practice retained |
 | Biology and Human Welfare | Planned |
 | Biotechnology and Its Applications | Planned |
