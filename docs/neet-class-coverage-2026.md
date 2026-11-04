@@ -1,6 +1,6 @@
 # NEET recorded class coverage
 
-Updated 4 November 2026. Baseline: [official NEET UG 2026 syllabus](https://neet.nta.nic.in/document/syllabus-for-neet-ug-2026-examination/). The label is deliberately dated; no 2027 syllabus verification is claimed.
+Updated 5 November 2026. Baseline: [official NEET UG 2026 syllabus](https://neet.nta.nic.in/document/syllabus-for-neet-ug-2026-examination/). The label is deliberately dated; no 2027 syllabus verification is claimed.
 
 ## Biology B01: Cell — The Unit of Life
 
@@ -200,7 +200,25 @@ Route: `/neet/classes/human-welfare`. Thirty-two narrated chapters, thirty-two t
 | Nitrogen-fixing associations and mycorrhizal biofertilizers | 30–31 |
 | Integrated organism/product/process and evidence reasoning | 32 |
 
-This is foundation recording availability, not exhaustive mastery. Further life-cycle diagrams, experimental data and mixed health/environmental cases remain. Health material covers general mechanisms without personal diagnosis, medication choices or microbial production procedures. Modern methanogen classification, fungal producer identities and limits of BOD are explicit; textbook producer labels are distinguished from complete modern strain descriptions. All previous progress remains unchanged. Next production focus: Biotechnology and Its Applications.
+This is foundation recording availability, not exhaustive mastery. Further life-cycle diagrams, experimental data and mixed health/environmental cases remain. Health material covers general mechanisms without personal diagnosis, medication choices or microbial production procedures. Modern methanogen classification, fungal producer identities and limits of BOD are explicit; textbook producer labels are distinguished from complete modern strain descriptions. All previous progress remains unchanged. Next production focus: Ecology and Environment.
+
+## B11: Biotechnology and Its Applications
+
+Route: `/neet/classes/biotechnology`. Thirty narrated chapters, thirty teaching boards, aligned captions and sixty original MCQs. Independent progress: `neet.biotechnology.lecture.v1`. Checked against the official 2026 Biology Unit 9 baseline on 5 November 2026.
+
+| Official heading / foundation area | Chapters |
+| --- | --- |
+| Principles, recombinant DNA and molecular tools | 1–5 |
+| Vectors, pBR322, selection/screening and hosts | 6–9 |
+| Isolation, electrophoresis, PCR, workflow and processing | 10–14 |
+| Agriculture, Bt proteins and RNA interference | 15–18 |
+| Recombinant insulin and vaccine production | 19–21 |
+| Gene therapy, ADA and molecular diagnosis | 22–25 |
+| Transgenic animals, models and biological products | 26–27 |
+| Biosafety, current GEAC name, biopatents and biopiracy | 28–29 |
+| Integrated reasoning and evidence limits | 30 |
+
+This is foundation recording availability, not exhaustive mastery. Historical separate-chain insulin and lymphocyte ADA examples are distinguished from universal current practice. Somatic/germline, gene/protein, selection/screening, PCR/ELISA and hazard/exposure distinctions are explicit. Further labelled vector maps, experimental controls and mixed application cases remain. General educational concepts rather than operating procedures, personal medical guidance or patent advice. All prior saved progress remains unchanged. Next production focus: Ecology and Environment.
 
 ## Wider Biology map
 
@@ -214,7 +232,7 @@ This is foundation recording availability, not exhaustive mastery. Further life-
 | Reproduction | Recorded foundation with 30 chapters; further labelled diagrams, ploidy counts and mixed applications remain |
 | Genetics and Evolution | Recorded foundation with 36 chapters; further pedigrees, maps and mixed sequence/population practice remains; existing practice retained |
 | Biology and Human Welfare | Recorded foundation with 32 chapters; further life-cycle, experimental and mixed-case practice remains |
-| Biotechnology and Its Applications | Planned |
+| Biotechnology and Its Applications | Recorded foundation with 30 chapters; further vector maps, controls and mixed application cases remain |
 | Ecology and Environment | Planned |
 
 ## Release requirements
