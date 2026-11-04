@@ -178,7 +178,29 @@ Route: `/neet/classes/genetics-evolution`. Thirty-six narrated chapters, thirty-
 | Adaptive radiation and human evolution | 34–35 |
 | Integrated sequence, probability and population reasoning | 36 |
 
-This is foundation recording availability, not exhaustive mastery. Further pedigrees, three-point maps, sequence interpretation and mixed population/experimental problems remain. Probability denominators, parental phase, strand direction and Hardy–Weinberg assumptions are explicit. HGP accomplishments are historically dated; later references and pangenomes are distinguished. Human evolution is presented as branching history without ranking living populations. Existing DNA/inheritance practice and all prior progress keys are retained. Next production focus: Biology and Human Welfare.
+This is foundation recording availability, not exhaustive mastery. Further pedigrees, three-point maps, sequence interpretation and mixed population/experimental problems remain. Probability denominators, parental phase, strand direction and Hardy–Weinberg assumptions are explicit. HGP accomplishments are historically dated; later references and pangenomes are distinguished. Human evolution is presented as branching history without ranking living populations. Existing DNA/inheritance practice and all prior progress keys are retained. Biology and Human Welfare is recorded as B10 below.
+
+## Biology B10: Biology and Human Welfare
+
+Route: `/neet/classes/human-welfare`. Thirty-two narrated chapters, thirty-two teaching boards, aligned captions and sixty-four original MCQs. Independent progress: `neet.human-welfare.lecture.v1`. Checked against the dated official 2026 Biology Unit 8 baseline.
+
+| Required heading | Recorded evidence |
+| --- | --- |
+| Health, disease, pathogens and transmission | 1 |
+| Malaria, filariasis, ascariasis and amoebiasis | 2–4 |
+| Typhoid, pneumonia, common cold, ringworm, dengue and chikungunya | 5–7 |
+| Basic immunology, antibodies and vaccines | 8–12 |
+| HIV/AIDS and cancer | 13–14 |
+| Adolescence, drug/alcohol and tobacco-related harm | 15–17 |
+| Household food processing | 18–20 |
+| Industrial acids, enzymes, bioactives and antibiotics | 21–23 |
+| Sewage treatment, flocs and BOD | 24–25 |
+| Energy generation and anaerobic digestion | 26 |
+| Predators, Bt/viral agents and Trichoderma biocontrol | 27–29 |
+| Nitrogen-fixing associations and mycorrhizal biofertilizers | 30–31 |
+| Integrated organism/product/process and evidence reasoning | 32 |
+
+This is foundation recording availability, not exhaustive mastery. Further life-cycle diagrams, experimental data and mixed health/environmental cases remain. Health material covers general mechanisms without personal diagnosis, medication choices or microbial production procedures. Modern methanogen classification, fungal producer identities and limits of BOD are explicit; textbook producer labels are distinguished from complete modern strain descriptions. All previous progress remains unchanged. Next production focus: Biotechnology and Its Applications.
 
 ## Wider Biology map
 
@@ -191,7 +213,7 @@ This is foundation recording availability, not exhaustive mastery. Further pedig
 | Human Physiology | Recorded foundation with 36 chapters; further numerical, diagram and mixed-case practice remains |
 | Reproduction | Recorded foundation with 30 chapters; further labelled diagrams, ploidy counts and mixed applications remain |
 | Genetics and Evolution | Recorded foundation with 36 chapters; further pedigrees, maps and mixed sequence/population practice remains; existing practice retained |
-| Biology and Human Welfare | Planned |
+| Biology and Human Welfare | Recorded foundation with 32 chapters; further life-cycle, experimental and mixed-case practice remains |
 | Biotechnology and Its Applications | Planned |
 | Ecology and Environment | Planned |
 
