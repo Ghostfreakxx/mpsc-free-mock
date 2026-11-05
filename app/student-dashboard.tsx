@@ -530,7 +530,7 @@ export default function StudentDashboard({ reviewedKeyHashes }: { reviewedKeyHas
                   {courses.slice(0, 3).map((course) => <CourseCard key={course.href} course={course} compact />)}
                 </div>
               </section>
-              <footer className="academy-footer"><span>MPSC Free Mock</span><span>Learning for Mizoram, one day at a time.</span></footer>
+              <footer className="academy-footer"><span>MPSC Free Mock</span><span>Learning for Mizoram, one day at a time.</span><span>© MPSC Free Mock · <Link href="/terms">Terms &amp; copyright</Link></span></footer>
             </>
           ) : (
             <>

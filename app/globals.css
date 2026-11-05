@@ -665,3 +665,10 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
 .app-error h1 { font-size: clamp(1.5rem, 5vw, 2rem); line-height: 1.2; margin: 0; }
 .app-error p { margin: 0; color: var(--muted, #52615a); }
 .app-error-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+.legal-page { max-width: 680px; margin: 0 auto; padding: 28px 16px 64px; display: grid; gap: 12px; line-height: 1.6; }
+.legal-page h1 { font-size: clamp(1.5rem, 5vw, 2rem); line-height: 1.2; margin: 0; }
+.legal-page h2 { font-size: 1.1rem; margin: 14px 0 0; }
+.legal-page p, .legal-page ul { margin: 0; color: var(--muted, #52615a); }
+.legal-page ul { padding-left: 20px; display: grid; gap: 4px; }
+.legal-back { font-size: 0.9rem; font-weight: 650; }
+.academy-footer a { color: inherit; text-decoration: underline; }
