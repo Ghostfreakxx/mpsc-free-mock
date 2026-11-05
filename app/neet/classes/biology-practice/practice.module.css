@@ -1,0 +1,6 @@
+.figure { max-width: 580px; margin: 24px auto; }
+.figure svg { display: block; width: 100%; height: auto; color: inherit; }
+.figure svg text { fill: currentColor; font-family: inherit; font-size: 17px; }
+.figure figcaption { font-size: 14px; line-height: 1.6; margin-top: 12px; }
+.figure details { margin-top: 12px; line-height: 1.7; }
+.figure summary { cursor: pointer; }
