@@ -254,6 +254,10 @@ All ten official Biology units now have foundation recordings in twelve classes 
 | Biotechnology and Its Applications | Recorded foundation with 30 chapters; further vector maps, controls and mixed application cases remain |
 | Ecology and Environment | Recorded foundation with 32 chapters; further field data, labelled graphs, budgets and conservation cases remain |
 
+## Physics and Chemistry reuse
+
+The [separate NEET 2026 mapping](neet-physics-chemistry-mapping-2026.md) covers 20 Physics and 20 Chemistry units with 106 shared JEE recordings, original chapter indices, NEET navigation and independent progress. Focus chapters and supporting extensions are explicit. This establishes a study route, not a completed required-subheading audit. No new narration is generated for the reused classes.
+
 ## Release requirements
 
 Git main is the publication source. Check the exact Vercel production commit, Ready state, promotion and main-domain alias. Validate the public class entry, audio, captions, all chapters and answers, resume, notes download, NEET navigation and both themes on mobile. Run the complete repository checks, production build, mobile smoke, and JEE course regressions because the player is shared. No generated alignment cache, credential or temporary review artifact belongs in Git.

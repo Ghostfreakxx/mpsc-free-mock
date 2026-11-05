@@ -111,7 +111,7 @@ const LabExperimentDiagram = dynamic(() => import("./lab-experiment-diagrams"));
 
 const formatTime = (value: number) => `${Math.floor(value / 60)}:${Math.floor(value % 60).toString().padStart(2, "0")}`;
 
-export type PlayerLecture = Omit<Lecture, "subject"> & { subject?: Lecture["subject"] | "Biology" };
+export type PlayerLecture = Omit<Lecture, "subject"> & { subject?: Lecture["subject"] | "Biology"; reuse?: {unitTitle:string;mapHref:string;focus:{number:number;title:string}[];review:string;extra:string} };
 
 export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: PlayerLecture; exam?: "JEE" | "NEET" }) {
   const { timings, progressKey } = lesson;
@@ -180,6 +180,12 @@ export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: Player
       <h1>{lesson.title}</h1>
       <span>{formatTime(timings.duration)} · American English · Marin · AI-generated voice</span>
     </div>
+    {lesson.reuse && <section className={styles.notes} aria-label="NEET shared-class guidance">
+      <h2>{lesson.reuse.unitTitle}</h2><p>Shared JEE recording with NEET navigation and separate saved progress. Original narration and questions can include supporting extensions.</p>
+      <Link href={lesson.reuse.mapHref} prefetch={false}>Return to the NEET unit map →</Link>
+      <details><summary>NEET focus chapters</summary><ol>{lesson.reuse.focus.map(c=><li key={c.number} value={c.number}><button onClick={()=>seek(chapterStarts[c.number-1]+0.05)}>{c.title}</button></li>)}</ol></details>
+      <p>{lesson.reuse.review}</p><p>{lesson.reuse.extra}</p>
+    </section>}
     <div className={styles.layout}>
       <section aria-label="Recorded visual lesson" className={styles.player}>
         <div className={styles.board}>
@@ -345,13 +351,13 @@ export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: Player
     {lesson.id === "units" && <section className={styles.notes}>
       <h2>Next class</h2>
       <p>Continue with significant figures, uncertainty and error analysis.</p>
-      <Link href="/jee/classes/measurements">Open the measurement class <ArrowRight size={17} /></Link>
+      <Link href={lesson.reuse ? "/neet/classes/shared/measurements" : "/jee/classes/measurements"} prefetch={false}>Open the measurement class <ArrowRight size={17} /></Link>
     </section>}
     <PracticeQuiz quiz={lesson.quiz} progressKey={progressKey} />
     {(lesson.id === "straight-line-motion" || lesson.id === "newtons-laws") && <p><Link href={`/jee/classes/study/${lesson.id}`}>Read the written lesson and worked solutions <ArrowRight size={17} /></Link></p>}
     {lesson.id === "kinematics-applications" && <p><Link href="/jee/classes/study/straight-line-motion">Straight-line motion: written foundation <ArrowRight size={17} /></Link></p>}
     {lesson.id === "laws-motion-applications" && <p><Link href="/jee/classes/study/newtons-laws">Newton&apos;s laws: written foundation <ArrowRight size={17} /></Link></p>}
-    {lesson.id === "energy-applications" && <p><Link href="/jee/classes/work-energy">Work and energy: foundation class <ArrowRight size={17} /></Link></p>}
+    {lesson.id === "energy-applications" && <p><Link href={lesson.reuse ? "/neet/classes/shared/work-energy" : "/jee/classes/work-energy"} prefetch={false}>Work and energy: foundation class <ArrowRight size={17} /></Link></p>}
     <Link href={exam === "NEET" ? "/neet" : "/jee"}>Continue to {exam} practice <ArrowRight size={17} /></Link>
   </main>;
 }
