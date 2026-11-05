@@ -1,0 +1,1607 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English Biology teacher. Speak naturally. Read ecological terms, mathematical models and conservation names carefully. Use a neutral educational tone. Read every sentence completely, including the final sentence. Do not add words or summarize.",
+  "title": "Ecology and Environment",
+  "subject": "Biology",
+  "unit": 10,
+  "scope": "NEET Biology Unit 10 recorded foundation against the official 2026 syllabus baseline: population interactions and attributes, birth/death rates, migration, age distribution and growth models; ecosystem components/patterns, productivity, decomposition, food webs, energy flow and ecological pyramids; biodiversity levels/patterns, importance, loss, hotspots, threatened categories and extinction, Red Data Book, in situ/ex situ conservation, biosphere reserves, parks, sanctuaries and sacred groves. Rates, stocks, units and model limitations are explicit. Further field-data interpretation, labelled graphs, population/energy budgets and mixed conservation cases remain. All ten Biology units have foundation recordings; this is availability, not exhaustive mastery or complete NEET Physics/Chemistry mapping. Original practice, not official PYQs.",
+  "sources": [
+    {
+      "title": "NMC: official NEET 2026 syllabus, Biology Unit 10",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/01/202601081066816297.pdf"
+    },
+    {
+      "title": "NCERT: Biology textbook portal, ecology chapters",
+      "url": "https://ncert.nic.in/textbook.php"
+    },
+    {
+      "title": "IIT Kanpur SATHEE: NCERT exemplar, organisms and populations",
+      "url": "https://sathee.iitk.ac.in/ncert-books/neet-ncert-exemplar/ncert_b12_exemplar/organisms_and_populations/"
+    },
+    {
+      "title": "IIT Kanpur SATHEE: NCERT exemplar, ecosystem",
+      "url": "https://sathee.iitk.ac.in/ncert-books/neet-ncert-exemplar/ncert_b12_exemplar/ecosystem/"
+    },
+    {
+      "title": "OpenStax Biology 2e: 45 3 environmental limits to population growth",
+      "url": "https://openstax.org/books/biology-2e/pages/45-3-environmental-limits-to-population-growth"
+    },
+    {
+      "title": "OpenStax Biology 2e: 45 4 population dynamics and regulation",
+      "url": "https://openstax.org/books/biology-2e/pages/45-4-population-dynamics-and-regulation"
+    },
+    {
+      "title": "OpenStax Biology 2e: 46 2 energy flow through ecosystems",
+      "url": "https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems"
+    },
+    {
+      "title": "IUCN: Red List categories and extinction-risk assessment",
+      "url": "https://iucn.org/resources/conservation-tool/iucn-red-list-threatened-species"
+    },
+    {
+      "title": "Conservation International: biodiversity hotspot criteria",
+      "url": "https://www.conservation.org/learning/biodiversity-hotspots"
+    },
+    {
+      "title": "UNESCO: Man and the Biosphere Programme",
+      "url": "https://www.unesco.org/en/mab/about"
+    },
+    {
+      "title": "UNESCO: biosphere-reserve zonation and purpose",
+      "url": "https://www.unesco.org/en/mab/wnbr/about"
+    },
+    {
+      "title": "Government of Meghalaya: sacred groves and community conservation",
+      "url": "https://megbiodiversity.nic.in/sacred-groves"
+    },
+    {
+      "title": "IPBES: biodiversity-hotspot criteria",
+      "url": "https://www.ipbes.net/es/node/16258"
+    },
+    {
+      "title": "Government of India: environmental report, hotspot geography (dated 2015; not a source for current totals)",
+      "url": "https://moef.gov.in/uploads/2019/09/Final-SoER-2015-India-.pdf"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Ecological levels and the Unit 10 map",
+      "formula": "A population contains members of one species",
+      "points": [
+        "A population contains members of one species",
+        "A community contains interacting populations",
+        "An ecosystem includes biotic and abiotic components",
+        "Scale and boundaries affect every ecological claim"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "A population contains members of one species",
+          "A community contains interacting populations",
+          "An ecosystem includes biotic and abiotic components",
+          "Scale and boundaries affect every ecological claim"
+        ],
+        "flow": [
+          "Organism → population",
+          "Interacting populations → community",
+          "Community + physical setting → ecosystem",
+          "Specify the place, period and measured variable"
+        ]
+      },
+      "script": "Welcome to Ecology and Environment, our NEET Biology Unit ten foundation. This recording uses an AI generated Marin voice. Ecology studies relationships between organisms and their living and physical surroundings. An organism is an individual, a population concerns members of one species in a defined setting, and a community includes interacting populations of different species. An ecosystem includes the biological community together with relevant nonliving components and processes. These levels answer different questions. Counting deer in a defined area is not the same as counting all species in a forest. Measuring annual energy flow is not the same as measuring the biomass present on one day. The class connects population interactions and attributes with ecosystems and biodiversity conservation against the dated official syllabus baseline. It provides original teaching and practice rather than official examination questions. Further field-data interpretation, labelled graphs and mixed conservation cases remain beyond this recording. Begin each ecological problem by stating the biological level, the boundary, the time interval and the quantity being measured."
+    },
+    {
+      "title": "Population density, natality and mortality",
+      "formula": "Density is population amount per defined space",
+      "points": [
+        "Density is population amount per defined space",
+        "Birth and death rates require a time interval",
+        "Per-capita rates differ from total event counts",
+        "Biomass or cover may suit some populations"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Density is population amount per defined space",
+          "Birth and death rates require a time interval",
+          "Per-capita rates differ from total event counts",
+          "Biomass or cover may suit some populations"
+        ],
+        "flow": [
+          "Define the population and sampling boundary",
+          "Measure numbers, cover or relevant biomass",
+          "Record births and deaths over a stated interval",
+          "Distinguish totals from per-capita rates"
+        ]
+      },
+      "script": "Population density expresses the amount of a population relative to a defined area or volume. Individual counts are useful for many animals, but percentage cover or biomass may be more informative for some plants and colonial organisms. A single large tree and many small seedlings should not automatically be considered equivalent ecological quantities merely because each count is an integer. Natality concerns births and mortality concerns deaths during a specified interval. A total number of births is different from a per capita birth rate, which relates the events to the population size and time basis. If a population of two hundred individuals has twenty births during one year, the simple per capita annual birth rate is zero point one under that stated counting convention. Comparing raw births across unequal populations can therefore mislead. Always keep the numerator, denominator and time interval visible. These definitions prepare the population balance calculation next, where migration adds two more routes of change in local abundance."
+    },
+    {
+      "title": "Population balance: births, deaths and migration",
+      "formula": "Births and immigration add individuals locally",
+      "points": [
+        "Births and immigration add individuals locally",
+        "Deaths and emigration remove individuals locally",
+        "Nnext = N + births + immigrants − deaths − emigrants",
+        "An open population can grow despite more deaths than births"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Births and immigration add individuals locally",
+          "Deaths and emigration remove individuals locally",
+          "Nnext = N + births + immigrants − deaths − emigrants",
+          "An open population can grow despite more deaths than births"
+        ],
+        "flow": [
+          "Starting N = 100",
+          "Births 20 + immigrants 10",
+          "Deaths 15 + emigrants 5",
+          "Next count = 110, given the stated events"
+        ]
+      },
+      "script": "The abundance of an open population changes through four event categories. Births and immigration add individuals to the defined population, while deaths and emigration remove them. Starting with one hundred individuals, twenty births and ten immigrants add thirty. Fifteen deaths and five emigrants remove twenty, leaving one hundred and ten under the stated assumptions. Immigration means entry into the focal population; emigration means departure from it. The same movement can therefore be emigration from one locality and immigration into another. A local population can increase even when deaths exceed births if net immigration is sufficiently positive. Conversely, more births than deaths does not guarantee local increase when emigration is large. Do not add a per capita rate directly to a raw number of individuals without converting units appropriately. This balance describes count changes over an interval and is distinct from the continuous growth equations considered later. Define the boundary and avoid counting the same event twice when interpreting a movement diagram."
+    },
+    {
+      "title": "Age distribution and age-pyramid interpretation",
+      "formula": "Age structure distinguishes life-stage proportions",
+      "points": [
+        "Age structure distinguishes life-stage proportions",
+        "Pre-reproductive, reproductive, post-reproductive",
+        "A broad young base can imply growth potential",
+        "Age structure alone does not fix the exact future"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Age structure distinguishes life-stage proportions",
+          "Pre-reproductive, reproductive, post-reproductive",
+          "A broad young base can imply growth potential",
+          "Age structure alone does not fix the exact future"
+        ],
+        "flow": [
+          "Broad young base: possible expansion potential",
+          "Similar age-group widths: relative stability comparison",
+          "Narrow young base: reduced recruitment comparison",
+          "Interpret with survival, fertility and migration"
+        ]
+      },
+      "script": "Age distribution describes the proportions of individuals in different age groups. The basic examination comparison separates pre reproductive, reproductive and post reproductive stages. A broad young base in an age pyramid can indicate substantial potential for future recruitment into reproductive ages, whereas a narrow young base can indicate reduced recruitment. More similar widths across relevant groups provide a simple relatively stable comparison. These shapes are useful descriptions, not guarantees that every future count is already known. Survival, fertility, migration and the duration of each age class affect the outcome. Read whether a horizontal axis represents absolute numbers or percentages before comparing two diagrams. A wider diagram drawn with a different scale need not represent a faster growing population. Also distinguish an individual aging into a new class from the birth of a new individual. The next chapters describe growth models; age structure adds biological detail that a single total abundance or growth parameter does not fully capture."
+    },
+    {
+      "title": "Exponential growth: per-capita versus total change",
+      "formula": "The simple continuous model is dN/dt = rN",
+      "points": [
+        "The simple continuous model is dN/dt = rN",
+        "r is a per-capita net growth parameter",
+        "Constant positive r gives a J-shaped trajectory",
+        "Nt = N₀eʳᵗ under the model assumptions"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "The simple continuous model is dN/dt = rN",
+          "r is a per-capita net growth parameter",
+          "Constant positive r gives a J-shaped trajectory",
+          "Nt = N₀eʳᵗ under the model assumptions"
+        ],
+        "flow": [
+          "Constant positive per-capita r",
+          "Larger N → larger total increment",
+          "Continuous model: Nt = N₀eʳᵗ",
+          "Unlimited growth is an idealization"
+        ]
+      },
+      "script": "Exponential growth assumes a constant per capita net growth parameter over the modeled interval. The continuous equation says that the rate of change of population size equals r multiplied by N. Here N is abundance and r is the per capita growth parameter, not the total number of individuals born. With positive constant r, a larger population adds more individuals per unit time even though its per capita parameter is unchanged. The resulting abundance curve is J shaped when drawn on ordinary axes. The corresponding continuous solution is initial abundance multiplied by e raised to r times elapsed time. For example, with N equal to one hundred and r equal to zero point two per year, the instantaneous model rate is twenty individuals per year. That instantaneous slope is not automatically the exact total increase over the entire following year. Resource limitation, changing conditions and other biological processes can eventually make prolonged exponential growth unrealistic in a finite environment."
+    },
+    {
+      "title": "Logistic growth and carrying capacity",
+      "formula": "dN/dt = rN(1 − N/K) in the simple model",
+      "points": [
+        "dN/dt = rN(1 − N/K) in the simple model",
+        "K represents carrying capacity in the stated setting",
+        "The growth-limiting factor falls as N approaches K",
+        "Total logistic growth peaks at K/2 for fixed r and K"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "dN/dt = rN(1 − N/K) in the simple model",
+          "K represents carrying capacity in the stated setting",
+          "The growth-limiting factor falls as N approaches K",
+          "Total logistic growth peaks at K/2 for fixed r and K"
+        ],
+        "flow": [
+          "Small N: limited crowding effect",
+          "Intermediate N: rapid total increase",
+          "N approaches K: net model growth slows",
+          "K can change when conditions change"
+        ]
+      },
+      "script": "The simple logistic model adds a density related limiting factor to exponential growth. Its rate is r times N times one minus N divided by K. K represents carrying capacity under the stated environmental conditions, rather than a permanent species wide constant. With positive fixed r and K, the factor approaches zero as N approaches K. If N is two hundred, K is one thousand and r is zero point five per year, the instantaneous growth rate is eighty individuals per year. Under this simple model, total growth is greatest at half the carrying capacity, while the per capita growth rate decreases as abundance rises. Do not confuse those two rate statements. The familiar abundance trajectory is S shaped for a population beginning below K. Real populations can fluctuate, overshoot or experience changing resource limits, so a smooth logistic curve is an explanatory model rather than a promise that every natural population settles perfectly at one unchanging count."
+    },
+    {
+      "title": "Life histories and the limits of simple population labels",
+      "formula": "Life histories include timing, offspring and survival",
+      "points": [
+        "Life histories include timing, offspring and survival",
+        "Offspring size and number can involve trade-offs",
+        "Parental investment varies among organisms",
+        "Simple r/K labels do not replace measured biology"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Life histories include timing, offspring and survival",
+          "Offspring size and number can involve trade-offs",
+          "Parental investment varies among organisms",
+          "Simple r/K labels do not replace measured biology"
+        ],
+        "flow": [
+          "Reproductive timing and frequency",
+          "Offspring number and size",
+          "Survival and parental investment",
+          "Interpret traits in their environmental context"
+        ]
+      },
+      "script": "A life history describes how survival and reproduction are distributed across an organism's life. Relevant traits include age at first reproduction, number and size of offspring, reproductive frequency and parental investment. Producing many small offspring can differ biologically from producing fewer larger offspring with greater investment, but no single trait perfectly predicts every other trait in every species. Some organisms reproduce in one major episode, while others reproduce repeatedly. Familiar r and K discussions compare broad strategies associated with population growth and resource limitation. They are simplified teaching comparisons rather than rigid boxes that every organism must fit without exceptions. The symbol r in a growth equation still has a defined quantitative meaning, and K still refers to an environmental carrying capacity in the model. Do not replace measured survival or fertility with an assumed label. Connect life history traits to actual conditions, and recognize that selection involves trade offs rather than organisms planning an ideal strategy for a future environmental goal."
+    },
+    {
+      "title": "Population interactions: reading benefit and cost signs",
+      "formula": "Interaction signs compare effects on each participant",
+      "points": [
+        "Interaction signs compare effects on each participant",
+        "Mutualism is conventionally +/+",
+        "Competition is conventionally −/−",
+        "Predation and parasitism are conventionally +/−"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Interaction signs compare effects on each participant",
+          "Mutualism is conventionally +/+",
+          "Competition is conventionally −/−",
+          "Predation and parasitism are conventionally +/−"
+        ],
+        "flow": [
+          "+/+: both participants benefit",
+          "−/−: both bear a competitive cost",
+          "+/−: one benefits, the other is harmed",
+          "+/0 and −/0: one effect treated as negligible"
+        ]
+      },
+      "script": "Ecological interaction signs summarize effects on the participants in a stated comparison. A plus indicates benefit, a minus indicates harm or cost, and zero treats the measured effect as negligible in the simplified account. Mutualism is conventionally plus plus because both participants benefit. Competition is minus minus because sharing a limiting resource can reduce each participant's performance relative to an appropriate comparison without the competitor. Predation and parasitism are plus minus, with the consumer or parasite benefiting while the prey or host is harmed. These signs do not mean that every participant has identical absolute abundance or that each interaction has the same mechanism. The zero in commensalism is a modeling description, not proof that no effect of any size could ever be measured under any condition. Ask which performance variable is being compared, such as survival, growth or reproduction. Signs describe effects; names and biological details distinguish mechanisms that may share the same sign pair."
+    },
+    {
+      "title": "Mutualism: lichens, mycorrhiza and pollination",
+      "formula": "Mutualism involves benefits to both partners",
+      "points": [
+        "Mutualism involves benefits to both partners",
+        "Lichens contain fungal and photosynthetic partners",
+        "Mycorrhiza involves a fungus and plant roots",
+        "Pollination comparisons connect food rewards and reproduction"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Mutualism involves benefits to both partners",
+          "Lichens contain fungal and photosynthetic partners",
+          "Mycorrhiza involves a fungus and plant roots",
+          "Pollination comparisons connect food rewards and reproduction"
+        ],
+        "flow": [
+          "Partner A supplies a relevant resource or service",
+          "Partner B supplies a relevant resource or service",
+          "Both gain in the defined comparison",
+          "Dependence and specificity vary among associations"
+        ]
+      },
+      "script": "Mutualism describes an interaction in which both partners benefit in the relevant biological comparison. A lichen includes a fungal partner and a photosynthetic partner, commonly an alga or cyanobacterium. Carbon supply and the association's physical and resource relationships illustrate complementary contributions, rather than two identical organisms performing one role. Mycorrhiza links fungi with plant roots and can improve nutrient or water access while the plant supplies carbon in suitable contexts. A pollinating animal may obtain a food reward while assisting transfer of pollen between flowers, contributing to plant reproduction. However, not every flower visitor is an effective pollinator, and not every mutualism has the same degree of partner specificity or dependence. The familiar fig and wasp comparison emphasizes close association, but actual interaction details still matter. For an examination case, identify the resource or service each partner gains. Calling an association mutualistic is strongest when both benefits are stated rather than inferred only from the fact that two organisms are found together."
+    },
+    {
+      "title": "Competition, exclusion and resource partitioning",
+      "formula": "Competition can occur without direct fighting",
+      "points": [
+        "Competition can occur without direct fighting",
+        "A resource must be limiting for the stated mechanism",
+        "Exclusion depends on assumptions and conditions",
+        "Partitioning can reduce overlap in resource use"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Competition can occur without direct fighting",
+          "A resource must be limiting for the stated mechanism",
+          "Exclusion depends on assumptions and conditions",
+          "Partitioning can reduce overlap in resource use"
+        ],
+        "flow": [
+          "Overlapping use of a limiting resource",
+          "Reduced performance relative to no competitor",
+          "Possible exclusion under restrictive conditions",
+          "Partitioning or other differences can support coexistence"
+        ]
+      },
+      "script": "Competition occurs when organisms negatively affect one another through access to a limiting resource or a related competitive mechanism. Direct fighting is not required; two species can compete through resource depletion without ever touching. The competitive exclusion principle describes why species with sufficiently identical resource requirements may fail to coexist indefinitely under stable limiting conditions. It is not a universal claim that any two species in one habitat must immediately eliminate one another. Differences in feeding position, activity period or resource preference can reduce overlap, illustrating resource partitioning. Environmental variation and other interactions can also change outcomes. A removal experiment that improves a species' performance after a competitor is absent can support a competition hypothesis, provided other explanations are considered. Distinguish the available resources from the resources actually limiting population performance. In a question, name the shared resource and the comparison before deciding whether competition, predation or simply coexistence is being described by the observations."
+    },
+    {
+      "title": "Predation, herbivory and population effects",
+      "formula": "A predator consumes prey in the basic comparison",
+      "points": [
+        "A predator consumes prey in the basic comparison",
+        "Herbivory is an important consumer–plant interaction",
+        "Defenses can alter capture or feeding success",
+        "Predators can influence community structure"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "A predator consumes prey in the basic comparison",
+          "Herbivory is an important consumer–plant interaction",
+          "Defenses can alter capture or feeding success",
+          "Predators can influence community structure"
+        ],
+        "flow": [
+          "Consumer encounters a potential food organism",
+          "Capture / feeding depends on traits and conditions",
+          "Consumer gains; prey or plant incurs a cost",
+          "Population and community effects require evidence"
+        ]
+      },
+      "script": "Predation links a consumer with organisms it captures and consumes in the basic ecological comparison. Herbivory concerns feeding on plant material and is an important related consumer plant interaction. A predator gains energy and nutrients, while prey experiences a survival cost; herbivory can reduce plant tissue or reproduction without always killing the entire plant. Camouflage, warning coloration, physical structures and chemical defenses can influence feeding success. The mere presence of a defensive trait does not establish that no consumer can ever overcome it. Predators may regulate prey abundance or alter competitive relationships within a community, but the strength and direction of wider effects depend on the actual system. Eliminating one consumer can therefore have consequences beyond the directly affected prey. For examination reasoning, distinguish the immediate plus minus interaction from a proposed long term population outcome. A graph showing two populations fluctuating together is informative, but it needs additional biological context before every rise and fall is assigned to one simple predator prey cause."
+    },
+    {
+      "title": "Parasitism, Cuscuta and brood parasitism",
+      "formula": "A parasite benefits while a host bears a cost",
+      "points": [
+        "A parasite benefits while a host bears a cost",
+        "Parasites can live inside or outside a host",
+        "Cuscuta is a familiar parasitic-plant example",
+        "Brood parasitism concerns exploitation of parental care"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "A parasite benefits while a host bears a cost",
+          "Parasites can live inside or outside a host",
+          "Cuscuta is a familiar parasitic-plant example",
+          "Brood parasitism concerns exploitation of parental care"
+        ],
+        "flow": [
+          "Parasite or brood-parasitic participant",
+          "Host resources or care are exploited",
+          "Parasite benefits / host incurs a cost",
+          "Mechanism differs from ordinary predation"
+        ]
+      },
+      "script": "Parasitism involves a participant benefiting at a host's expense, often through a sustained association. Ectoparasites occur on an external surface, whereas endoparasites live within the host in the relevant comparison. The relationship does not require the host to die immediately; host survival can support continued parasite access to resources. Cuscuta is a familiar parasitic flowering plant that obtains resources from a host plant. It should not be confused with an epiphyte simply using a tree for physical support. Brood parasitism is a different behavioral comparison in which one bird exploits another's nesting and parental care. The familiar cuckoo related example concerns host investment in eggs or young rather than a worm living in the host's intestine. Egg resemblance can influence host detection, but details vary among systems. Identify the exploited resource and the effect on the host before assigning the interaction name. Sharing a plus minus sign with predation does not make all life cycles, host relationships and reproductive strategies identical."
+    },
+    {
+      "title": "Commensalism, amensalism and contextual zeros",
+      "formula": "Commensalism is conventionally +/0",
+      "points": [
+        "Commensalism is conventionally +/0",
+        "Amensalism is conventionally −/0",
+        "An epiphyte can use a tree for support",
+        "Zero describes a negligible effect in the chosen comparison"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Commensalism is conventionally +/0",
+          "Amensalism is conventionally −/0",
+          "An epiphyte can use a tree for support",
+          "Zero describes a negligible effect in the chosen comparison"
+        ],
+        "flow": [
+          "Epiphyte obtains a place to grow",
+          "Host tree supplies support in the comparison",
+          "No substantial host effect is assumed in the model",
+          "Check actual costs before applying the label"
+        ]
+      },
+      "script": "Commensalism is conventionally represented as plus zero: one participant benefits while the other is treated as largely unaffected in the specified comparison. An orchid growing as an epiphyte on a tree is a familiar example because the tree provides physical support rather than serving as a direct nutritional host in the parasitic sense. This differs from Cuscuta obtaining resources from a host plant. Amensalism is conventionally minus zero, where one participant is inhibited while no substantial effect on the other is assumed in the basic account. These zeros are useful simplifications, not a promise that every interaction has no measurable cost at every scale. Heavy epiphyte loading or changing environmental conditions can complicate an initially simple description. Therefore identify the mechanism and the comparison rather than assigning a sign from proximity alone. The ecological interpretation should be revised if evidence reveals substantial effects that were previously ignored. A sign table organizes reasoning but does not replace observation of resource transfer, growth, survival and reproduction."
+    },
+    {
+      "title": "Ecosystem components, patterns and stratification",
+      "formula": "Biotic components include producers and consumers",
+      "points": [
+        "Biotic components include producers and consumers",
+        "Abiotic components include light, water and nutrients",
+        "Vertical stratification is a spatial pattern",
+        "An ecosystem boundary is useful but not perfectly closed"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Biotic components include producers and consumers",
+          "Abiotic components include light, water and nutrients",
+          "Vertical stratification is a spatial pattern",
+          "An ecosystem boundary is useful but not perfectly closed"
+        ],
+        "flow": [
+          "Physical conditions and material resources",
+          "Producers, consumers and decomposers",
+          "Spatial patterns such as vertical layers",
+          "Linked transformations and exchanges"
+        ]
+      },
+      "script": "An ecosystem combines its biological components with physical conditions and material resources. Producers, consumers and decomposers perform different roles, while light, water, temperature and mineral nutrients contribute to the abiotic setting. A forest can show vertical stratification, with different vegetation layers and associated organisms using different conditions. A pond provides a contrasting example involving water, sediments, plankton, rooted plants and consumers across spatial zones. These patterns describe organization, not a rule that every ecosystem has identical layers or species. The boundary chosen for measurement is analytically useful but usually permits exchanges of organisms, materials and energy with surrounding systems. Standing crop refers to the amount of living material present in a stated area or volume at a particular time, often measured as numbers or biomass. Standing state concerns inorganic nutrient quantities in the relevant textbook comparison. Distinguish those stocks from productivity, which is a rate over time. The next chapters connect this structural description with production and decomposition."
+    },
+    {
+      "title": "Primary productivity: GPP, respiration and NPP",
+      "formula": "GPP measures total primary production rate",
+      "points": [
+        "GPP measures total primary production rate",
+        "NPP = GPP − producer respiration",
+        "Rates require area or volume and a time basis",
+        "NPP contributes new producer biomass available to other pathways"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "GPP measures total primary production rate",
+          "NPP = GPP − producer respiration",
+          "Rates require area or volume and a time basis",
+          "NPP contributes new producer biomass available to other pathways"
+        ],
+        "flow": [
+          "Gross primary productivity = 1200",
+          "Producer respiration = 400",
+          "Net primary productivity = 800",
+          "Use the same energy, space and time units"
+        ]
+      },
+      "script": "Primary productivity is the rate at which producers form organic material in a defined setting. Gross primary productivity, or G P P, describes total primary production before subtracting producer respiration. Net primary productivity, or N P P, equals gross primary productivity minus the respiration used by the producers over the same measurement basis. If gross production is twelve hundred kilojoules per square metre per year and producer respiration is four hundred in those same units, net production is eight hundred. Do not subtract all consumer respiration again while calling the result ordinary N P P. Net ecosystem production is a different accounting concept. Productivity requires a time basis, unlike the amount of biomass present on one day. Light, water, nutrients, temperature and producer traits can affect production, so a large standing crop does not automatically identify the greatest current production rate. Use matching units and distinguish the organism group whose respiration is being subtracted before performing a productivity calculation."
+    },
+    {
+      "title": "Secondary productivity, biomass and turnover",
+      "formula": "Secondary productivity concerns new consumer biomass",
+      "points": [
+        "Secondary productivity concerns new consumer biomass",
+        "Assimilated energy can support respiration or production",
+        "Standing biomass differs from production rate",
+        "Rapid turnover can support a larger consumer stock"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Secondary productivity concerns new consumer biomass",
+          "Assimilated energy can support respiration or production",
+          "Standing biomass differs from production rate",
+          "Rapid turnover can support a larger consumer stock"
+        ],
+        "flow": [
+          "Ingested material",
+          "Assimilated fraction after unabsorbed losses",
+          "Respiration + new consumer biomass",
+          "Compare production over time with standing stock"
+        ]
+      },
+      "script": "Secondary productivity is the rate of formation of new biomass by consumers in the ecosystem comparison. Ingested food is not all converted into new consumer tissue. Some material is not assimilated, and part of assimilated energy supports respiration and other metabolic requirements rather than net biomass production. Therefore ingestion, assimilation and production are different quantities. Standing biomass measures material present at a particular time, while productivity measures formation over an interval. A small producer standing stock can support substantial consumer biomass when producers grow and are consumed rapidly, as in familiar phytoplankton based systems. This turnover distinction helps explain why some biomass pyramids can be inverted without violating the direction of energy flow. The relevant time scale matters: comparing consumer biomass on one day with producer annual production mixes a stock and a rate. State the compartment, measurement units and interval before drawing conclusions about which group produces more or whether a proposed energy budget is possible."
+    },
+    {
+      "title": "Decomposition: fragmentation through mineralisation",
+      "formula": "Detritus includes dead remains and organic wastes",
+      "points": [
+        "Detritus includes dead remains and organic wastes",
+        "Fragmentation breaks material into smaller pieces",
+        "Microbial enzymes contribute catabolic breakdown",
+        "Mineralisation releases inorganic nutrients"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Detritus includes dead remains and organic wastes",
+          "Fragmentation breaks material into smaller pieces",
+          "Microbial enzymes contribute catabolic breakdown",
+          "Mineralisation releases inorganic nutrients"
+        ],
+        "flow": [
+          "Detritus → fragmentation and leaching",
+          "Microbial enzymatic catabolism",
+          "Humification: relatively resistant humus forms",
+          "Mineralisation: inorganic nutrients released"
+        ]
+      },
+      "script": "Decomposition transforms dead organic material and wastes through linked physical, chemical and biological processes. Detritivores can fragment litter into smaller pieces, increasing the surfaces available for further activity. Leaching transfers soluble substances through water movement, rather than naming an enzyme that digests every component. Microbial extracellular enzymes contribute catabolic breakdown of complex organic substances. Humification forms relatively resistant humus, while mineralisation releases inorganic nutrients from organic material through biological transformations. These processes can overlap and should not be treated as a rigid conveyor belt in which every particle experiences identical steps at identical times. Humus is comparatively resistant, not an absolutely permanent substance that can never change. Detritivores and microbial decomposers also have different roles despite both contributing to processing dead material. In an examination case, ask whether the observation describes physical breakup, movement of soluble material, enzymatic breakdown or release of inorganic nutrients. The distinction connects decomposition with nutrient availability without confusing matter recycling with recovery of all previously dissipated energy."
+    },
+    {
+      "title": "Decomposition controls: substrate, water and oxygen",
+      "formula": "Litter chemistry affects decomposition rate",
+      "points": [
+        "Litter chemistry affects decomposition rate",
+        "Lignin-rich material can resist rapid breakdown",
+        "Moisture and temperature have context-dependent effects",
+        "Waterlogging can reduce oxygen supply"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Litter chemistry affects decomposition rate",
+          "Lignin-rich material can resist rapid breakdown",
+          "Moisture and temperature have context-dependent effects",
+          "Waterlogging can reduce oxygen supply"
+        ],
+        "flow": [
+          "Litter quality and decomposer community",
+          "Suitable temperature and moisture",
+          "Oxygen availability and other constraints",
+          "Observed breakdown rate over a stated interval"
+        ]
+      },
+      "script": "Decomposition rate depends on the material and the environment. Litter rich in relatively resistant compounds such as lignin can break down more slowly than suitable material with more readily accessible nutrients, under comparable conditions. Temperature and moisture affect organisms and chemical processes, but neither should be described as increasing decomposition without limit in every circumstance. Very dry conditions can restrict activity, while waterlogging can reduce oxygen availability and alter the organisms and pathways involved. Warm, moist and aerated conditions often favor rapid decomposition in the familiar comparison. That statement differs from saying that more water is always better. Anaerobic decomposition also occurs, with different processes and outcomes; absence of oxygen does not mean that no organic transformation is possible. A field comparison should distinguish substrate chemistry from temperature, water and community effects before attributing all differences to one cause. Keep the measured endpoint clear, whether it is litter mass loss, carbon release or inorganic nutrient availability during the stated observation period."
+    },
+    {
+      "title": "Food chains, food webs and detrital pathways",
+      "formula": "A food chain traces one feeding pathway",
+      "points": [
+        "A food chain traces one feeding pathway",
+        "A food web connects multiple feeding pathways",
+        "Grazing pathways begin with living producers",
+        "Detrital pathways begin with dead organic material"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "A food chain traces one feeding pathway",
+          "A food web connects multiple feeding pathways",
+          "Grazing pathways begin with living producers",
+          "Detrital pathways begin with dead organic material"
+        ],
+        "flow": [
+          "Living producer → herbivore → carnivore",
+          "Dead material → detrital consumers / microbes",
+          "Multiple feeding links form a web",
+          "Arrow direction should match the stated convention"
+        ]
+      },
+      "script": "A food chain traces one sequence of feeding relationships, while a food web connects multiple such pathways. In the usual energy transfer convention, an arrow points from the food organism or material toward the consumer receiving it. Read a diagram's stated convention before following its arrows. A grazing pathway begins with living primary producers and proceeds through consumers. A detrital pathway begins with dead organic material and its consumers or microbial processors. These pathways are connected because wastes and dead organisms arise from many trophic levels. One species can occupy different trophic roles when its diet changes across life stages or contexts, so a food web is often more realistic than one isolated chain. Decomposers are not biologically unimportant merely because a simplified pyramid omits them. Identify the energy source and the feeding link rather than assigning every organism one permanent label from its name alone. A diagram showing connected pathways does not imply that energy circulates indefinitely without dissipation."
+    },
+    {
+      "title": "Energy flow and the ten-percent model",
+      "formula": "Energy flow is directional rather than cyclic",
+      "points": [
+        "Energy flow is directional rather than cyclic",
+        "Respiration dissipates energy as heat",
+        "Ten percent is a simplified transfer model",
+        "Compare equal area and time bases"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Energy flow is directional rather than cyclic",
+          "Respiration dissipates energy as heat",
+          "Ten percent is a simplified transfer model",
+          "Compare equal area and time bases"
+        ],
+        "flow": [
+          "Producer production: 10,000 energy units",
+          "Primary consumer production: 1,000",
+          "Secondary consumer production: 100",
+          "Two assumed 10% transfers, not one"
+        ]
+      },
+      "script": "Energy enters many ecosystems through primary production supported by sunlight, while some systems depend on chemical energy sources. Energy flows through biological transformations and is ultimately dissipated as heat, so it is not recycled in the same way as chemical elements. The familiar ten percent rule is a simplified trophic transfer comparison rather than an exact efficiency for every link in every ecosystem. If producers supply ten thousand energy units and each of two successive transfers retains ten percent as the next level's production, primary consumers receive one thousand and secondary consumers one hundred under that model. Count the transfers rather than simply counting all named organisms. Not all untransferred energy becomes new predator biomass; unconsumed material, unassimilated material and respiration contribute to the broader accounting. Use the same spatial and temporal basis when comparing trophic production. The question's assumed transfer fraction determines the arithmetic, while real ecological measurements can show different efficiencies depending on organisms, food quality and environmental conditions."
+    },
+    {
+      "title": "Pyramids of numbers: counts are not biomass",
+      "formula": "A numbers pyramid counts organisms per trophic level",
+      "points": [
+        "A numbers pyramid counts organisms per trophic level",
+        "Its shape depends on the organisms and system",
+        "One tree can support many consumers",
+        "Count and organism size answer different questions"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "A numbers pyramid counts organisms per trophic level",
+          "Its shape depends on the organisms and system",
+          "One tree can support many consumers",
+          "Count and organism size answer different questions"
+        ],
+        "flow": [
+          "Many grasses → fewer herbivores → fewer predators",
+          "One tree → many insect consumers",
+          "Counts can give an inverted or irregular shape",
+          "This does not define the energy pyramid shape"
+        ]
+      },
+      "script": "An ecological pyramid of numbers represents organism counts across trophic levels in a specified system. A grassland comparison often has many producers supporting fewer herbivores and still fewer larger consumers. A tree based example can begin with one large producer supporting many insects, producing an inverted or otherwise irregular count pattern. Adding parasite relationships can make the numbers even less like a simple upright triangle. These count shapes do not prove that energy increases as it passes through trophic levels. A single large tree and a tiny herbivore differ greatly in size, so organism count should not be confused with biomass. Before interpreting a pyramid, identify whether its horizontal dimension represents numbers, biomass or energy flow, and check that the trophic grouping is defined consistently. Simplified pyramids may also omit detrital links and organisms with multiple diets. Their usefulness is organizing a stated measurement rather than reproducing every interaction in a complete food web or predicting all population changes from one snapshot."
+    },
+    {
+      "title": "Biomass and energy pyramids: stock versus flow",
+      "formula": "A biomass pyramid shows standing mass",
+      "points": [
+        "A biomass pyramid shows standing mass",
+        "Aquatic producer biomass can be smaller than consumer biomass",
+        "Fast producer turnover can explain an inverted biomass stock",
+        "An energy pyramid is upright on a common time basis"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "A biomass pyramid shows standing mass",
+          "Aquatic producer biomass can be smaller than consumer biomass",
+          "Fast producer turnover can explain an inverted biomass stock",
+          "An energy pyramid is upright on a common time basis"
+        ],
+        "flow": [
+          "Biomass: snapshot of standing material",
+          "Fast turnover can support an inverted stock pattern",
+          "Energy: production transferred over time",
+          "Losses constrain the energy-flow pyramid"
+        ]
+      },
+      "script": "A biomass pyramid compares the standing mass of organisms at different trophic levels, usually using an appropriate mass basis such as dry biomass. Some aquatic systems have a smaller standing phytoplankton biomass than the consumer biomass it supports. Rapid producer growth and consumption can maintain that consumer stock even while the producer snapshot remains small. This is an inverted biomass comparison, not creation of energy by consumers. An energy pyramid instead represents energy production or transfer over a defined area and time basis and remains upright in the standard trophic account because transfer involves losses. Mixing a one day producer biomass measurement with a whole year consumer production value would not be a valid like for like comparison. Also avoid replacing biomass with organism counts when body sizes differ. Pyramids summarize one type of ecological measurement; they do not directly show every omnivore, decomposer pathway or changing seasonal stock. State what the axis measures before deciding whether inversion is possible."
+    },
+    {
+      "title": "Biodiversity: genetic, species and ecosystem levels",
+      "formula": "Genetic diversity occurs within species",
+      "points": [
+        "Genetic diversity occurs within species",
+        "Species diversity includes richness and representation",
+        "Ecological diversity concerns different ecosystems",
+        "Richness and evenness describe different features"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Genetic diversity occurs within species",
+          "Species diversity includes richness and representation",
+          "Ecological diversity concerns different ecosystems",
+          "Richness and evenness describe different features"
+        ],
+        "flow": [
+          "Variation within a species",
+          "Different species in a community",
+          "Different ecosystem types across a region",
+          "State the level before comparing diversity"
+        ]
+      },
+      "script": "Biodiversity includes variation at genetic, species and ecological levels. Genetic diversity occurs within a species, such as variation among crop varieties or among wild populations. Species diversity concerns the range of species and, in many measurements, how individuals are distributed among them. Ecosystem or ecological diversity concerns differences among ecosystems and their associated biological organization. These levels should not be collapsed into a single count of large animals. Species richness is the number of species recorded, while evenness concerns how similar their relative abundances are. Two communities can therefore have equal richness but different abundance distributions. A region containing forests, wetlands and grasslands illustrates ecosystem variety, while multiple varieties of one crop illustrate within species genetic variation. Sampling effort and area affect observed richness, so fair comparisons need consistent methods and relevant scales. Avoid treating every textbook estimate of the world's species as a timeless census; discovery, taxonomy and the chosen groups affect estimates and recorded totals."
+    },
+    {
+      "title": "Biodiversity patterns: latitude and sampling context",
+      "formula": "Many groups show greater richness toward the tropics",
+      "points": [
+        "Many groups show greater richness toward the tropics",
+        "The broad gradient has exceptions",
+        "History, climate and productivity can contribute",
+        "Sampling and taxonomic group affect comparisons"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Many groups show greater richness toward the tropics",
+          "The broad gradient has exceptions",
+          "History, climate and productivity can contribute",
+          "Sampling and taxonomic group affect comparisons"
+        ],
+        "flow": [
+          "Specify taxonomic group and sampling method",
+          "Compare regions on a suitable area basis",
+          "Recognize the broad latitudinal richness pattern",
+          "Evaluate mechanisms rather than one universal cause"
+        ]
+      },
+      "script": "A familiar broad biodiversity pattern is greater species richness toward tropical regions for many groups, compared with higher latitudes. It is a general pattern with exceptions, not a rule that every tropical sample must exceed every temperate sample for every organism. Long evolutionary histories, climatic conditions, available energy and other processes can contribute to explanations, and their relative importance varies among groups and regions. Avoid presenting a single factor as a complete proven cause in every ecosystem. A fair comparison should consider sampled area, effort, habitat types and the taxonomic group being counted. A heavily surveyed small region can have more recorded species than a poorly surveyed larger region without settling the true underlying pattern. Tropical richness and the species area relationship are related study topics but describe different comparisons. One emphasizes geographic gradients, while the other examines how richness changes with the area considered. The next chapter develops the species area model and its logarithmic interpretation."
+    },
+    {
+      "title": "Species–area relationship and logarithmic slope",
+      "formula": "A simple model is S = C × Aᶻ",
+      "points": [
+        "A simple model is S = C × Aᶻ",
+        "S is richness and A is the sampled area",
+        "log S = log C + z log A",
+        "z is a slope on the stated log–log graph"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "A simple model is S = C × Aᶻ",
+          "S is richness and A is the sampled area",
+          "log S = log C + z log A",
+          "z is a slope on the stated log–log graph"
+        ],
+        "flow": [
+          "Ordinary axes: richness rises with area",
+          "Model: S = C × Aᶻ",
+          "Log–log axes: straight-line approximation",
+          "Slope z depends on the comparison and scale"
+        ]
+      },
+      "script": "The species area relationship describes how recorded species richness often increases as a larger area is considered within a suitable comparison. A familiar model writes S equals C times A raised to z, where S is richness, A is area and C and z are fitted parameters. Taking logarithms gives log S equals log C plus z times log A. Thus z is the slope on a graph of log richness against log area, while log C is the intercept for the chosen units. If area increases sixteenfold and z is one quarter, the modeled richness multiplier is two, because the fourth root of sixteen is two. It is not sixteen unless the exponent has the appropriate value. Common textbook slope ranges describe particular comparisons and should not be treated as one universal constant for all scales. Changing taxonomic group, region, units or spatial extent can alter fitted relationships. Read the graph axes and the stated model before calculating or interpreting a slope."
+    },
+    {
+      "title": "Why biodiversity matters: function, options and ethics",
+      "formula": "Biodiversity supports multiple ecological functions",
+      "points": [
+        "Biodiversity supports multiple ecological functions",
+        "Species can differ in their functional contributions",
+        "Diversity–stability relationships need a defined measure",
+        "Conservation reasons include utility, options and ethics"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Biodiversity supports multiple ecological functions",
+          "Species can differ in their functional contributions",
+          "Diversity–stability relationships need a defined measure",
+          "Conservation reasons include utility, options and ethics"
+        ],
+        "flow": [
+          "Ecological functions and interactions",
+          "Food, materials and possible future uses",
+          "Responses to disturbance and changing conditions",
+          "Ethical responsibility beyond immediate commercial value"
+        ]
+      },
+      "script": "Biodiversity matters through ecological functioning, direct uses, future options and ethical considerations. Pollination, decomposition, nutrient transformations and biological interactions involve organisms with different roles. More species do not simply mean a larger number of interchangeable copies of one function. Experimental diversity comparisons can examine productivity or stability, but the meaning of stability must be specified, such as resistance to change or recovery after disturbance. Results depend on the system, species composition and measured endpoint. The familiar rivet analogy illustrates concern about losing multiple ecosystem components; it is not a mathematical guarantee that every species has an identical effect. Narrow uses include foods and materials, broader benefits involve ecosystem processes, and ethical arguments recognize reasons to conserve living diversity beyond immediate commercial value. Potential future uses also differ from a claim that every species has already yielded a known medicine. In an examination answer, connect the conservation reason with a specific function or principle rather than relying only on a large species count."
+    },
+    {
+      "title": "Biodiversity loss: habitat, exploitation, invasions and coextinction",
+      "formula": "Habitat loss and fragmentation can reduce persistence",
+      "points": [
+        "Habitat loss and fragmentation can reduce persistence",
+        "Overexploitation can exceed population replacement",
+        "Invasive alien species can disrupt interactions",
+        "Coextinction links losses among dependent species"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Habitat loss and fragmentation can reduce persistence",
+          "Overexploitation can exceed population replacement",
+          "Invasive alien species can disrupt interactions",
+          "Coextinction links losses among dependent species"
+        ],
+        "flow": [
+          "Habitat loss / fragmentation",
+          "Exploitation beyond replacement",
+          "Harmful invasions in a new setting",
+          "Loss of a required partner → coextinction risk"
+        ]
+      },
+      "script": "The familiar textbook quartet of biodiversity loss includes habitat loss and fragmentation, overexploitation, alien species invasion and coextinction. Habitat conversion removes living space, while fragmentation can isolate remaining populations and change movement, edges and interactions. Overexploitation occurs when extraction pressure exceeds what a population can sustain in the relevant context. Introduced species are not automatically invasive; the invasive comparison concerns establishment, spread and harmful effects in a new setting. Familiar examples include water hyacinth and Lantana in affected ecosystems, with consequences depending on the actual place and management history. Coextinction concerns the risk that losing a species also eliminates organisms strongly dependent on it, such as a required host or partner. These processes can interact rather than act one at a time. Climate change, pollution and other pressures can also affect biodiversity, but the named quartet is the examination framework being distinguished here. State the mechanism rather than assuming every observed decline has one identical cause."
+    },
+    {
+      "title": "Extinction, threatened categories and the Red Data Book",
+      "formula": "Global extinction differs from local disappearance",
+      "points": [
+        "Global extinction differs from local disappearance",
+        "Extinct in the Wild differs from Extinct",
+        "VU, EN and CR form the threatened grouping",
+        "Data Deficient does not mean proven safe"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Global extinction differs from local disappearance",
+          "Extinct in the Wild differs from Extinct",
+          "VU, EN and CR form the threatened grouping",
+          "Data Deficient does not mean proven safe"
+        ],
+        "flow": [
+          "Assess population, range and other risk evidence",
+          "Vulnerable / Endangered / Critically Endangered",
+          "Separate extinct status from threatened risk",
+          "Check the assessment date and geographic scope"
+        ]
+      },
+      "script": "Extinction means the loss of a species in the relevant global account, while local disappearance is extirpation from a particular place. A species absent from one reserve is not necessarily globally extinct. The I U C N Red List evaluates extinction risk using evidence and defined categories. Vulnerable, Endangered and Critically Endangered form the threatened grouping. Endangered is a specific category rather than an exact synonym for every threatened species. Extinct in the Wild is different from Extinct because individuals may remain in captivity or other situations outside their natural range under the category definition. Data Deficient indicates insufficient information for a direct risk assessment, not proof of safety. The traditional Red Data Book label refers to documentation of threatened biodiversity; modern assessments include dates, scope and supporting information. Avoid memorizing an undated current status for every named species, because assessments can change. Always distinguish a global category from local abundance and check the assessment context when evaluating a conservation statement."
+    },
+    {
+      "title": "Biodiversity hotspots: endemism plus habitat loss",
+      "formula": "A hotspot combines endemism and severe habitat loss",
+      "points": [
+        "A hotspot combines endemism and severe habitat loss",
+        "The familiar threshold is 1500 endemic vascular plants",
+        "At least 70% original natural vegetation is lost",
+        "A hotspot is not automatically a legal protected-area category"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "A hotspot combines endemism and severe habitat loss",
+          "The familiar threshold is 1500 endemic vascular plants",
+          "At least 70% original natural vegetation is lost",
+          "A hotspot is not automatically a legal protected-area category"
+        ],
+        "flow": [
+          "High endemic vascular-plant richness",
+          "Severe loss of original natural vegetation",
+          "Priority region can cross political boundaries",
+          "Conservation action still requires local evidence"
+        ]
+      },
+      "script": "A biodiversity hotspot combines biological irreplaceability with serious habitat loss. The familiar framework uses at least fifteen hundred endemic vascular plant species and loss of at least seventy percent of original natural vegetation. Endemic means naturally restricted to the defined region, not simply common there or introduced from somewhere else. A region rich in widespread species does not qualify on richness alone under these criteria. Hotspot boundaries can cross national borders and are not automatically identical to a national park, a biosphere reserve or one political state. Regions intersecting India include the Himalaya, Indo Burma, Western Ghats and Sri Lanka, and Sundaland through the Nicobar Islands in the familiar geographic comparison. Parts of those regions extend beyond India, so the names should not be interpreted as wholly enclosed within one country. Older textbooks may contain dated hotspot totals; this lesson emphasizes criteria and geographic interpretation instead. Prioritization does not replace local management, community involvement or evidence about the species and habitats being conserved."
+    },
+    {
+      "title": "In situ conservation: reserves, parks and sacred groves",
+      "formula": "In situ conservation protects organisms in their habitat",
+      "points": [
+        "In situ conservation protects organisms in their habitat",
+        "Biosphere reserves integrate conservation and human contexts",
+        "National parks and sanctuaries are distinct categories",
+        "Sacred groves illustrate community-linked habitat protection"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "In situ conservation protects organisms in their habitat",
+          "Biosphere reserves integrate conservation and human contexts",
+          "National parks and sanctuaries are distinct categories",
+          "Sacred groves illustrate community-linked habitat protection"
+        ],
+        "flow": [
+          "Protect habitats and interacting populations",
+          "Maintain core conservation priorities",
+          "Consider buffers, connectivity and surrounding livelihoods",
+          "Support management, monitoring and community relationships"
+        ]
+      },
+      "script": "In situ conservation protects organisms within their natural habitat and ecological relationships. National parks and wildlife sanctuaries are distinct protected area categories; their exact rules should not be reduced to a single universal slogan about all human activity. Biosphere reserves use a broader landscape approach linking conservation, learning and sustainable development. The familiar zonation comparison distinguishes a conservation core, a buffer supporting compatible activities and a transition area involving broader human relationships. A biosphere reserve designation is not automatically the same as one national park boundary. Sacred groves illustrate community linked protection of habitat through cultural traditions, with Khasi and Jaintia hill groves among familiar Indian examples. These sites can preserve biological diversity, but effectiveness still depends on pressures and management. Avoid using old textbook counts of parks or reserves as current totals. Habitat connectivity, local participation and monitoring can matter alongside drawing a boundary on a map. Conservation concerns functioning populations and their surroundings rather than simply collecting names of protected places."
+    },
+    {
+      "title": "Ex situ conservation and complementary strategies",
+      "formula": "Ex situ conservation operates outside natural habitats",
+      "points": [
+        "Ex situ conservation operates outside natural habitats",
+        "Seed banks and living collections preserve different material",
+        "Cryopreservation requires suitable biological material",
+        "Collections complement rather than replace habitat protection"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Ex situ conservation operates outside natural habitats",
+          "Seed banks and living collections preserve different material",
+          "Cryopreservation requires suitable biological material",
+          "Collections complement rather than replace habitat protection"
+        ],
+        "flow": [
+          "Defined conservation target",
+          "Seed bank / living collection / managed breeding",
+          "Preserve identity, viability and genetic representation",
+          "Link with habitat and recovery plans where appropriate"
+        ]
+      },
+      "script": "Ex situ conservation maintains organisms or biological material outside their natural habitats. Botanical gardens, zoological collections, seed banks and suitable cryopreservation systems provide different examples. A seed bank can preserve viable material from appropriate species, but not every species has seeds that tolerate the same storage conditions. Living collections and managed breeding can help retain threatened organisms, yet population size, genetic representation, health and long term viability still require attention. A frozen sample does not automatically reconstruct an entire functioning ecosystem. Reintroduction also needs suitable habitat, appropriate biological preparation and evidence that the causes of decline have been addressed. Ex situ and in situ approaches can therefore complement one another rather than compete as universal alternatives. Match the stored material or managed population with the actual conservation objective. Preserving one attractive individual is different from maintaining the genetic diversity and ecological relationships required for a viable population. The strongest plan connects species knowledge, habitat, people, evidence and continuing management instead of treating a collection as an automatic permanent solution."
+    },
+    {
+      "title": "Integrated ecology reasoning and the Biology handoff",
+      "formula": "Identify the level and measured quantity",
+      "points": [
+        "Identify the level and measured quantity",
+        "Separate stock, rate and per-capita rate",
+        "Match interaction mechanisms and conservation objectives",
+        "All ten Biology units now have foundation recordings"
+      ],
+      "board": {
+        "kind": "flow",
+        "lines": [
+          "Identify the level and measured quantity",
+          "Separate stock, rate and per-capita rate",
+          "Match interaction mechanisms and conservation objectives",
+          "All ten Biology units now have foundation recordings"
+        ],
+        "flow": [
+          "Define organism / population / ecosystem / diversity level",
+          "Check axes, units, interval and model assumptions",
+          "Calculate or identify the mechanism",
+          "State the justified conclusion and remaining uncertainty"
+        ]
+      },
+      "script": "Finish Ecology and Environment by connecting biological scale with measurement. Population size is a count, natality can be a rate and a per capita rate includes a population denominator. Standing biomass is a stock, while productivity is a flow through time. A biomass pyramid can be inverted without reversing the direction of energy transfer. Mutualism requires benefits to both partners, and a hotspot requires more than a long list of widespread species. Conservation decisions combine species information with habitat, genetic representation and human relationships. In a mixed problem, identify the level, read the units and axes, state the relevant assumptions and then make the calculation or mechanism comparison. This recording completes foundation availability across the official ten Biology units in our course. It does not mean every NEET topic has been mastered or every practical, graph and mixed case is exhausted. Further field-data interpretation, labelled graphs, population and energy budgets, and conservation cases remain for a focused coverage review before the next course expansion."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which level includes both a community and its relevant physical setting?",
+      "options": [
+        "Ecosystem",
+        "Population",
+        "A single organism",
+        "Species richness alone"
+      ],
+      "answer": 0,
+      "explanation": "The abiotic setting is part of an ecosystem."
+    },
+    {
+      "question": "Counting all species in a forest directly measures the size of one deer population. This is:",
+      "options": [
+        "Correct because all animals form one population",
+        "Incorrect; community richness and a species population differ",
+        "Correct if plants are ignored",
+        "Correct whenever the forest is large"
+      ],
+      "answer": 1,
+      "explanation": "Species identity and the measured level matter."
+    },
+    {
+      "question": "A population of 200 has 20 births in a year. The simple per-capita annual birth rate is:",
+      "options": [
+        "20 per individual per year",
+        "10 per individual per year",
+        "0.1 per individual per year",
+        "0.01 per individual per year"
+      ],
+      "answer": 2,
+      "explanation": "Divide 20 births by 200 individuals for the stated year."
+    },
+    {
+      "question": "For a spreading plant population, which measure can be informative besides individual count?",
+      "options": [
+        "The number of other species only",
+        "The temperature alone",
+        "The age of the observer",
+        "Percentage cover"
+      ],
+      "answer": 3,
+      "explanation": "Density measurement should fit the organism and question."
+    },
+    {
+      "question": "Starting N=100, with B=20, I=10, D=15 and E=5, the next count is:",
+      "options": [
+        "110",
+        "130",
+        "90",
+        "150"
+      ],
+      "answer": 0,
+      "explanation": "Add births and immigrants; subtract deaths and emigrants: 100+20+10−15−5=110."
+    },
+    {
+      "question": "A local population with deaths exceeding births can still increase if:",
+      "options": [
+        "Emigration always exceeds immigration",
+        "Net immigration is sufficiently positive",
+        "Every death is counted as a birth",
+        "Population boundaries are irrelevant"
+      ],
+      "answer": 1,
+      "explanation": "Migration contributes to local population balance."
+    },
+    {
+      "question": "A broad pre-reproductive base chiefly suggests:",
+      "options": [
+        "A guaranteed exact future growth rate",
+        "No young individuals",
+        "Potential for future recruitment into reproductive ages",
+        "Only immigration with zero births"
+      ],
+      "answer": 2,
+      "explanation": "Age structure indicates potential rather than a complete forecast."
+    },
+    {
+      "question": "Before comparing two age pyramids, check:",
+      "options": [
+        "Only the color of the bars",
+        "Only which chart is taller on the page",
+        "Whether every individual is the same age",
+        "Whether axes show numbers or percentages and use comparable scales"
+      ],
+      "answer": 3,
+      "explanation": "Scale and denominators affect interpretation."
+    },
+    {
+      "question": "For dN/dt=rN, with N=100 and r=0.2 per year, the instantaneous rate is:",
+      "options": [
+        "20 individuals per year",
+        "0.2 individuals per year",
+        "100 individuals per year",
+        "120 individuals per year"
+      ],
+      "answer": 0,
+      "explanation": "Multiply the per-capita parameter by abundance."
+    },
+    {
+      "question": "Under positive constant r, the total growth rate rises with N because:",
+      "options": [
+        "r must increase every second",
+        "The same per-capita rate acts on more individuals",
+        "Every individual becomes immortal",
+        "Carrying capacity is zero"
+      ],
+      "answer": 1,
+      "explanation": "Per-capita and total rates are distinct."
+    },
+    {
+      "question": "With N=200, K=1000 and r=0.5 per year, logistic instantaneous growth is:",
+      "options": [
+        "100 individuals per year",
+        "400 individuals per year",
+        "80 individuals per year",
+        "20 individuals per year"
+      ],
+      "answer": 2,
+      "explanation": "0.5 × 200 × (1−200/1000) = 80."
+    },
+    {
+      "question": "For fixed positive r and K, total logistic growth is greatest at:",
+      "options": [
+        "N = K",
+        "N = 0",
+        "Every N equally",
+        "N = K/2"
+      ],
+      "answer": 3,
+      "explanation": "The product N(1−N/K) is maximal at half K."
+    },
+    {
+      "question": "Which variable is a life-history trait?",
+      "options": [
+        "Age at first reproduction",
+        "Only the species’ printed name",
+        "Only the observer’s location",
+        "Only the units chosen for a graph"
+      ],
+      "answer": 0,
+      "explanation": "Life histories describe patterns of survival and reproduction."
+    },
+    {
+      "question": "Simple r/K strategy labels should be used as:",
+      "options": [
+        "Exception-free predictions of all traits",
+        "Broad teaching comparisons with limitations",
+        "Exact substitutes for measured fertility",
+        "The same variable as species richness"
+      ],
+      "answer": 1,
+      "explanation": "Actual organisms and environments are more complex than a binary label."
+    },
+    {
+      "question": "The conventional sign pair for competition is:",
+      "options": [
+        "+/+",
+        "+/−",
+        "−/−",
+        "+/0"
+      ],
+      "answer": 2,
+      "explanation": "Both competitors can incur a cost from access to limiting resources."
+    },
+    {
+      "question": "Predation and parasitism share +/− signs, so they must have identical mechanisms. This is:",
+      "options": [
+        "Correct in every case",
+        "Correct only when both species are plants",
+        "Correct because every host is killed immediately",
+        "Incorrect; signs summarize effects rather than all mechanisms"
+      ],
+      "answer": 3,
+      "explanation": "Mechanism requires more information than the sign pair."
+    },
+    {
+      "question": "A lichen typically includes a fungal partner and a:",
+      "options": [
+        "Photosynthetic algal or cyanobacterial partner",
+        "Second fungal partner only",
+        "Mammalian host only",
+        "Nonliving mineral only"
+      ],
+      "answer": 0,
+      "explanation": "The partners have different biological roles."
+    },
+    {
+      "question": "To justify mutualism in a pollination case, identify:",
+      "options": [
+        "Only the animal’s presence on a flower",
+        "A benefit to both the plant and the animal",
+        "Only the flower color",
+        "An assumption that every visitor transfers pollen"
+      ],
+      "answer": 1,
+      "explanation": "Co-occurrence alone does not demonstrate two benefits."
+    },
+    {
+      "question": "Competition necessarily requires direct physical fighting. This is:",
+      "options": [
+        "Correct for all organisms",
+        "Correct only for plants",
+        "Incorrect; depletion of a shared limiting resource can suffice",
+        "Correct whenever resources are unlimited"
+      ],
+      "answer": 2,
+      "explanation": "Indirect competition can occur through resource use."
+    },
+    {
+      "question": "Resource partitioning can promote coexistence by:",
+      "options": [
+        "Making all niches exactly identical",
+        "Removing every environmental limit",
+        "Turning competitors into one species",
+        "Reducing overlap in resource use"
+      ],
+      "answer": 3,
+      "explanation": "Differences in use can reduce competitive effects."
+    },
+    {
+      "question": "Herbivory always kills the entire plant immediately. This is:",
+      "options": [
+        "Incorrect; tissue loss can occur without whole-plant death",
+        "Correct for all plants",
+        "Correct only if leaves are green",
+        "Correct because herbivores are parasites by definition"
+      ],
+      "answer": 0,
+      "explanation": "The biological cost and whole-organism death are not identical."
+    },
+    {
+      "question": "A predator can affect a community beyond its direct prey through:",
+      "options": [
+        "Only DNA ligation",
+        "Changes in other ecological interactions",
+        "Eliminating every abiotic factor",
+        "Making all species equally abundant"
+      ],
+      "answer": 1,
+      "explanation": "Indirect ecological effects can accompany direct consumption."
+    },
+    {
+      "question": "Cuscuta is a familiar example of a:",
+      "options": [
+        "Nitrogen-fixing cyanobacterium",
+        "Mycorrhizal fungus",
+        "Parasitic flowering plant",
+        "Free-floating animal predator"
+      ],
+      "answer": 2,
+      "explanation": "It obtains resources from a host plant."
+    },
+    {
+      "question": "Brood parasitism chiefly exploits a host’s:",
+      "options": [
+        "Photosynthetic chloroplasts directly",
+        "Restriction enzymes",
+        "Phosphate backbone charge",
+        "Nesting and parental-care investment"
+      ],
+      "answer": 3,
+      "explanation": "It is a behavioral host-exploitation comparison."
+    },
+    {
+      "question": "The conventional commensalism sign pair is:",
+      "options": [
+        "+/0",
+        "+/+",
+        "−/−",
+        "+/−"
+      ],
+      "answer": 0,
+      "explanation": "One benefit and one negligible modeled effect define the comparison."
+    },
+    {
+      "question": "An epiphytic orchid and parasitic Cuscuta differ because the orchid example chiefly uses a tree for:",
+      "options": [
+        "The same resource extraction as Cuscuta in every case",
+        "Physical support rather than direct parasitic nutrition",
+        "Animal parental care",
+        "Insulin synthesis"
+      ],
+      "answer": 1,
+      "explanation": "Support and host-resource extraction are distinct mechanisms."
+    },
+    {
+      "question": "Vertical stratification describes:",
+      "options": [
+        "Only births per individual",
+        "Only nucleotide sequence changes",
+        "Spatial layering within an ecosystem",
+        "Every ecosystem being sealed from its surroundings"
+      ],
+      "answer": 2,
+      "explanation": "Layers can differ in light, organisms and other conditions."
+    },
+    {
+      "question": "Standing crop is chiefly a measure of:",
+      "options": [
+        "Annual production rate by definition",
+        "Only heat lost each second",
+        "Only immigration events",
+        "Living material present at a specified time"
+      ],
+      "answer": 3,
+      "explanation": "A stock at a time differs from a rate over time."
+    },
+    {
+      "question": "GPP=1200 and producer respiration=400 in matching units. NPP is:",
+      "options": [
+        "800",
+        "1600",
+        "400",
+        "1200"
+      ],
+      "answer": 0,
+      "explanation": "NPP is GPP minus producer respiration."
+    },
+    {
+      "question": "Which subtraction defines ordinary NPP?",
+      "options": [
+        "All consumer biomass from producer count",
+        "Producer respiration from GPP",
+        "Immigration from natality",
+        "Every ecosystem respiration term from GPP without distinction"
+      ],
+      "answer": 1,
+      "explanation": "Producer respiration is the specified accounting term."
+    },
+    {
+      "question": "Secondary productivity chiefly means the rate of:",
+      "options": [
+        "All food ingestion without losses",
+        "Inorganic nutrient standing state",
+        "New biomass formation by consumers",
+        "Only primary photosynthesis"
+      ],
+      "answer": 2,
+      "explanation": "Ingestion, assimilation and consumer production differ."
+    },
+    {
+      "question": "A small phytoplankton standing stock can support larger consumer biomass when:",
+      "options": [
+        "Energy cycles without loss",
+        "Consumers photosynthesize by definition",
+        "All respiration is absent",
+        "Producer turnover is rapid"
+      ],
+      "answer": 3,
+      "explanation": "A stock snapshot differs from production through time."
+    },
+    {
+      "question": "Physical breakup of litter by detritivores is called:",
+      "options": [
+        "Fragmentation",
+        "Mineralisation only",
+        "Primary productivity",
+        "Natality"
+      ],
+      "answer": 0,
+      "explanation": "Fragmentation differs from inorganic nutrient release."
+    },
+    {
+      "question": "Mineralisation chiefly releases:",
+      "options": [
+        "Only intact leaves",
+        "Inorganic nutrients from organic material",
+        "Only new animal offspring",
+        "Only sunlight"
+      ],
+      "answer": 1,
+      "explanation": "The process links organic material with inorganic nutrient availability."
+    },
+    {
+      "question": "Under comparable conditions, lignin-rich litter often decomposes more slowly because:",
+      "options": [
+        "It contains no chemical bonds",
+        "It must photosynthesize first",
+        "Its chemistry can resist rapid breakdown",
+        "It creates unlimited oxygen"
+      ],
+      "answer": 2,
+      "explanation": "Substrate quality is one control on decomposition."
+    },
+    {
+      "question": "Waterlogging can slow aerobic decomposition by:",
+      "options": [
+        "Always removing every decomposer",
+        "Making all litter pure glucose",
+        "Guaranteeing maximum aeration",
+        "Reducing oxygen availability"
+      ],
+      "answer": 3,
+      "explanation": "Moisture and oxygen effects must be distinguished."
+    },
+    {
+      "question": "A detrital food pathway begins with:",
+      "options": [
+        "Dead organic material",
+        "Only living grass leaves",
+        "Only top predators",
+        "Only incoming solar photons without organic material"
+      ],
+      "answer": 0,
+      "explanation": "Detritus and living producers are different starting categories."
+    },
+    {
+      "question": "In the usual energy-transfer arrow convention, an arrow points:",
+      "options": [
+        "From consumer to food in every diagram",
+        "From food to the consumer receiving it",
+        "Only toward the youngest organism",
+        "Only toward the smallest organism"
+      ],
+      "answer": 1,
+      "explanation": "Always check the convention stated for the diagram."
+    },
+    {
+      "question": "Producer production is 10,000 units. After two assumed 10% trophic transfers, production is:",
+      "options": [
+        "1000 units",
+        "10 units",
+        "100 units",
+        "9000 units"
+      ],
+      "answer": 2,
+      "explanation": "Multiply by 0.1 twice."
+    },
+    {
+      "question": "Energy and mineral nutrients differ because:",
+      "options": [
+        "Both circulate forever without external input",
+        "Minerals are converted into sunlight",
+        "Energy is created by every consumer",
+        "Energy dissipates while elements can be recycled"
+      ],
+      "answer": 3,
+      "explanation": "Matter cycling does not restore dissipated usable energy."
+    },
+    {
+      "question": "One tree supporting many insects can yield an inverted pyramid of:",
+      "options": [
+        "Numbers",
+        "Energy flow over the same interval",
+        "Respiratory heat generation only",
+        "Every possible productivity measure"
+      ],
+      "answer": 0,
+      "explanation": "Organism counts do not account for differences in body size."
+    },
+    {
+      "question": "An inverted numbers pyramid proves energy increases at each transfer. This is:",
+      "options": [
+        "Correct for every tree system",
+        "Incorrect; number and energy measure different quantities",
+        "Correct if insects are numerous",
+        "Correct whenever a producer is large"
+      ],
+      "answer": 1,
+      "explanation": "A count pattern cannot establish an energy-flow reversal."
+    },
+    {
+      "question": "An inverted aquatic biomass pyramid can be explained by:",
+      "options": [
+        "Energy being created by fish",
+        "All consumers becoming primary producers",
+        "Rapid turnover of a small producer standing stock",
+        "The absence of respiration"
+      ],
+      "answer": 2,
+      "explanation": "Standing stock and production through time differ."
+    },
+    {
+      "question": "Which standard ecological pyramid remains upright on a common space/time basis?",
+      "options": [
+        "Every numbers pyramid",
+        "Every standing biomass pyramid",
+        "Every tree-based count diagram",
+        "Energy pyramid"
+      ],
+      "answer": 3,
+      "explanation": "Energy transfer losses constrain successive trophic production."
+    },
+    {
+      "question": "Variation among varieties of one crop chiefly illustrates:",
+      "options": [
+        "Genetic diversity within a species",
+        "Only ecosystem diversity",
+        "Only trophic transfer efficiency",
+        "Only interspecific competition"
+      ],
+      "answer": 0,
+      "explanation": "Within-species and between-species variation are different levels."
+    },
+    {
+      "question": "Two communities can have equal richness but different:",
+      "options": [
+        "Numbers of species by definition",
+        "Evenness of species abundances",
+        "Definitions of a species in every case",
+        "Units of time only"
+      ],
+      "answer": 1,
+      "explanation": "Richness counts species; evenness describes their representation."
+    },
+    {
+      "question": "The familiar broad latitudinal pattern for many groups is:",
+      "options": [
+        "Every species occurs only at the equator",
+        "Identical richness at every latitude",
+        "Greater richness toward tropical regions",
+        "Greater tropical richness without any exceptions"
+      ],
+      "answer": 2,
+      "explanation": "The pattern is broad and group-dependent, not universal."
+    },
+    {
+      "question": "A fair regional richness comparison should account for:",
+      "options": [
+        "Only the length of the place name",
+        "Only the largest animal present",
+        "Only the date the graph was printed",
+        "Sampling effort, area and taxonomic group"
+      ],
+      "answer": 3,
+      "explanation": "Recorded richness is influenced by how and where observations are made."
+    },
+    {
+      "question": "Under S=CAᶻ, area increases 16-fold and z=0.25. Modeled richness multiplies by:",
+      "options": [
+        "2",
+        "4",
+        "16",
+        "0.25"
+      ],
+      "answer": 0,
+      "explanation": "16 raised to one quarter equals 2."
+    },
+    {
+      "question": "On log S versus log A axes, z is the:",
+      "options": [
+        "Intercept log C",
+        "Slope",
+        "Number of individuals",
+        "Respiration rate"
+      ],
+      "answer": 1,
+      "explanation": "Taking logarithms linearizes the stated power-law model."
+    },
+    {
+      "question": "The rivet analogy chiefly illustrates concern about:",
+      "options": [
+        "Every species having exactly identical effects",
+        "All extinctions being harmless",
+        "Cumulative loss of ecosystem components and functioning",
+        "All communities having fixed species counts"
+      ],
+      "answer": 2,
+      "explanation": "It is an explanatory analogy, not an exact equal-effect model."
+    },
+    {
+      "question": "Which is an ethical conservation reason?",
+      "options": [
+        "Only the current sale price of a species",
+        "Only annual timber revenue",
+        "Only one measured crop yield",
+        "Responsibility to conserve living diversity beyond immediate commercial value"
+      ],
+      "answer": 3,
+      "explanation": "Ethical reasons differ from narrow direct-use accounting."
+    },
+    {
+      "question": "An alien species is necessarily invasive. This is:",
+      "options": [
+        "Incorrect; harmful establishment and spread are additional considerations",
+        "Correct for every introduction",
+        "Correct only for flowering plants",
+        "Correct because all native species are harmless"
+      ],
+      "answer": 0,
+      "explanation": "Alien origin and invasiveness are different claims."
+    },
+    {
+      "question": "Loss of a required host followed by loss of its dependent associate illustrates:",
+      "options": [
+        "Only natality",
+        "Coextinction",
+        "Resource partitioning by definition",
+        "Primary productivity"
+      ],
+      "answer": 1,
+      "explanation": "Dependence can link extinction risks."
+    },
+    {
+      "question": "Which set forms the IUCN threatened grouping?",
+      "options": [
+        "Least Concern, Data Deficient and Not Evaluated",
+        "Extinct and Extinct in the Wild only",
+        "Vulnerable, Endangered and Critically Endangered",
+        "Near Threatened and Least Concern only"
+      ],
+      "answer": 2,
+      "explanation": "Threatened is a grouping of three risk categories."
+    },
+    {
+      "question": "Data Deficient means a species is:",
+      "options": [
+        "Certainly Least Concern",
+        "Certainly Extinct",
+        "Known to be increasing everywhere",
+        "Insufficiently documented for direct risk assessment, not proven safe"
+      ],
+      "answer": 3,
+      "explanation": "Insufficient data must not be mistaken for low risk."
+    },
+    {
+      "question": "The familiar hotspot framework combines 1500 endemic vascular plants with:",
+      "options": [
+        "At least 70% loss of original natural vegetation",
+        "At least 70% intact original vegetation",
+        "Only a large human population",
+        "Only designation as a national park"
+      ],
+      "answer": 0,
+      "explanation": "Both endemism and severe habitat loss are required."
+    },
+    {
+      "question": "Endemic means:",
+      "options": [
+        "Common everywhere on Earth",
+        "Naturally restricted to the defined region",
+        "Always newly introduced",
+        "Automatically extinct"
+      ],
+      "answer": 1,
+      "explanation": "The relevant geographic boundary must be specified."
+    },
+    {
+      "question": "In situ conservation chiefly protects organisms:",
+      "options": [
+        "Only in frozen laboratory samples",
+        "Only as museum specimens",
+        "Within their natural habitats and ecological relationships",
+        "Only after all wild habitat is removed"
+      ],
+      "answer": 2,
+      "explanation": "Habitat-based protection differs from ex situ measures."
+    },
+    {
+      "question": "Sacred groves illustrate:",
+      "options": [
+        "Only refrigerated gene storage",
+        "Only an artificial aquarium",
+        "A universal ban on every human presence by one global law",
+        "Community-linked protection of habitat"
+      ],
+      "answer": 3,
+      "explanation": "Cultural practices can contribute to habitat conservation."
+    },
+    {
+      "question": "Which is an ex situ measure?",
+      "options": [
+        "A seed bank preserving suitable viable seeds",
+        "Protecting an intact wild forest only",
+        "Maintaining a sacred grove in place",
+        "A natural predator-prey interaction alone"
+      ],
+      "answer": 0,
+      "explanation": "The material is conserved outside its natural habitat."
+    },
+    {
+      "question": "A frozen sample automatically replaces all habitat conservation needs. This is:",
+      "options": [
+        "Correct for every species",
+        "Incorrect; viability, representation and ecological recovery still matter",
+        "Correct if the sample has DNA",
+        "Correct because ecosystems contain no interactions"
+      ],
+      "answer": 1,
+      "explanation": "Preserved material alone is not a functioning ecosystem."
+    },
+    {
+      "question": "Which comparison correctly separates stock and flow?",
+      "options": [
+        "Birth rate and area are identical",
+        "Species richness equals respiration",
+        "Standing biomass at a time versus productivity over an interval",
+        "Energy and count use the same units"
+      ],
+      "answer": 2,
+      "explanation": "Measurement type and time basis determine what a quantity means."
+    },
+    {
+      "question": "Foundation recordings across ten Biology units establish:",
+      "options": [
+        "Guaranteed mastery of every NEET question",
+        "Completion of all NEET Physics and Chemistry mapping",
+        "That every species status will remain unchanged",
+        "Availability of foundational teaching, with deeper practice still needed"
+      ],
+      "answer": 3,
+      "explanation": "Recording availability and exhaustive mastery are different claims."
+    }
+  ]
+}

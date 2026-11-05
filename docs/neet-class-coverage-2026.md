@@ -52,7 +52,7 @@ Route: `/neet/classes/cell-cycle-division`. Sixteen narrated chapters, sixteen o
 | Significance and variation | 9 and 14: life-cycle role, crossing over and independent assortment |
 | Counting and interpretation | 2–3, 6, 11–16: centromeres, chromatids, n/C, whole cell versus pole/nucleus and human examples |
 
-The three planned Unit 3 foundations now have recordings: cell structure, biomolecules and division. This is availability of foundational teaching, not exhaustive mastery or problem coverage. Further mixed diagrams, experimental interpretation and wider Biology units remain. Diversity in Living World is now recorded as B04 below.
+The three planned Unit 3 foundations now have recordings: cell structure, biomolecules and division. This is availability of foundational teaching, not exhaustive mastery or problem coverage. Further mixed diagrams and experimental interpretation remain; wider Biology foundations are mapped below. Diversity in Living World is now recorded as B04 below.
 
 ## Biology B04: Diversity in Living World
 
@@ -200,7 +200,7 @@ Route: `/neet/classes/human-welfare`. Thirty-two narrated chapters, thirty-two t
 | Nitrogen-fixing associations and mycorrhizal biofertilizers | 30–31 |
 | Integrated organism/product/process and evidence reasoning | 32 |
 
-This is foundation recording availability, not exhaustive mastery. Further life-cycle diagrams, experimental data and mixed health/environmental cases remain. Health material covers general mechanisms without personal diagnosis, medication choices or microbial production procedures. Modern methanogen classification, fungal producer identities and limits of BOD are explicit; textbook producer labels are distinguished from complete modern strain descriptions. All previous progress remains unchanged. Next production focus: Ecology and Environment.
+This is foundation recording availability, not exhaustive mastery. Further life-cycle diagrams, experimental data and mixed health/environmental cases remain. Health material covers general mechanisms without personal diagnosis, medication choices or microbial production procedures. Modern methanogen classification, fungal producer identities and limits of BOD are explicit; textbook producer labels are distinguished from complete modern strain descriptions. All previous progress remains unchanged. Next phase: review the documented Biology practice gaps and map NEET Physics/Chemistry coverage separately.
 
 ## B11: Biotechnology and Its Applications
 
@@ -218,7 +218,26 @@ Route: `/neet/classes/biotechnology`. Thirty narrated chapters, thirty teaching 
 | Biosafety, current GEAC name, biopatents and biopiracy | 28–29 |
 | Integrated reasoning and evidence limits | 30 |
 
-This is foundation recording availability, not exhaustive mastery. Historical separate-chain insulin and lymphocyte ADA examples are distinguished from universal current practice. Somatic/germline, gene/protein, selection/screening, PCR/ELISA and hazard/exposure distinctions are explicit. Further labelled vector maps, experimental controls and mixed application cases remain. General educational concepts rather than operating procedures, personal medical guidance or patent advice. All prior saved progress remains unchanged. Next production focus: Ecology and Environment.
+This is foundation recording availability, not exhaustive mastery. Historical separate-chain insulin and lymphocyte ADA examples are distinguished from universal current practice. Somatic/germline, gene/protein, selection/screening, PCR/ELISA and hazard/exposure distinctions are explicit. Further labelled vector maps, experimental controls and mixed application cases remain. General educational concepts rather than operating procedures, personal medical guidance or patent advice. All prior saved progress remains unchanged. Next phase: review the documented Biology practice gaps and map NEET Physics/Chemistry coverage separately.
+
+## B12: Ecology and Environment
+
+Route: `/neet/classes/ecology`. Thirty-two narrated chapters, thirty-two teaching boards, aligned captions and sixty-four original MCQs. Independent progress: `neet.ecology.lecture.v1`. Checked against official 2026 Biology Unit 10 on 5 November 2026.
+
+| Official heading / foundation area | Chapters |
+| --- | --- |
+| Ecological levels, density, birth/death rates and migration | 1–3 |
+| Age distribution, exponential/logistic growth and life histories | 4–7 |
+| Mutualism, competition, predation, parasitism and related signs | 8–13 |
+| Ecosystem patterns/components and productivity | 14–16 |
+| Decomposition processes and controls | 17–18 |
+| Food webs, energy flow and pyramids of numbers/biomass/energy | 19–22 |
+| Biodiversity levels, patterns, species–area model and importance | 23–26 |
+| Loss, extinction, threatened categories and Red Data Book | 27–28 |
+| Hotspots, in situ/ex situ, reserves, parks, sanctuaries and sacred groves | 29–31 |
+| Integrated units, model limits and evidence reasoning | 32 |
+
+All ten official Biology units now have foundation recordings in twelve classes (Unit 3 has three classes). This is teaching availability, not exhaustive mastery. Further field-data interpretation, labelled graphs, population/energy budgets and mixed conservation cases remain. Stocks and rates, count/biomass/energy pyramids, per-capita/total growth, endemism/invasiveness and threatened category/date/scope distinctions are explicit. No undated protected-area counts or current species-status lists are claimed. All prior saved progress remains unchanged. Next phase: review the documented Biology practice gaps and map NEET Physics/Chemistry separately.
 
 ## Wider Biology map
 
@@ -233,7 +252,7 @@ This is foundation recording availability, not exhaustive mastery. Historical se
 | Genetics and Evolution | Recorded foundation with 36 chapters; further pedigrees, maps and mixed sequence/population practice remains; existing practice retained |
 | Biology and Human Welfare | Recorded foundation with 32 chapters; further life-cycle, experimental and mixed-case practice remains |
 | Biotechnology and Its Applications | Recorded foundation with 30 chapters; further vector maps, controls and mixed application cases remain |
-| Ecology and Environment | Planned |
+| Ecology and Environment | Recorded foundation with 32 chapters; further field data, labelled graphs, budgets and conservation cases remain |
 
 ## Release requirements
 
