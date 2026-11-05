@@ -26,6 +26,7 @@ export const targets = [
   { source: "app/law/mjs/law.module.css", scope: ':global(html[data-theme="dark"])' },
   { source: "app/nursing/nursing.module.css", scope: ':global(html[data-theme="dark"])' },
   { source: "app/trading/trading.module.css", scope: ':global(html[data-theme="dark"])' },
+  { source: "app/mpsc/modern-history/chapter.module.css", scope: ':global(html[data-theme="dark"])' },
 ];
 
 // --- Colour maths (OKLab / OKLCH) ---

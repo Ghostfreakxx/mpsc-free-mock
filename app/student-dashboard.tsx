@@ -82,6 +82,15 @@ const courses: {
     format: "Practice bank",
   },
   {
+    title: "MPSC Modern Indian History",
+    subject: "Civil services",
+    description: "A free study course in simple English: full chapters, tables, check-yourself questions and MCQs. Reads offline.",
+    href: "/mpsc/modern-history",
+    icon: BookOpen,
+    theme: "coral",
+    format: "Free course",
+  },
+  {
     title: "Exam simulator",
     subject: "All exams",
     description: "Timed JEE Main, NEET, CUET PG and MPSC papers with real marking, a question palette and a strategy report.",
