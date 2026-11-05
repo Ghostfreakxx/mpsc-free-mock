@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   description:
     "A focused learning space for Mizoram students preparing for MPSC and other entrance exams.",
   manifest: "/manifest.webmanifest",
+  // Copyright notice, and a request to AI services not to train on or reuse the content.
+  other: { copyright: "© MPSC Free Mock. All rights reserved.", robots: "noai, noimageai" },
   icons: {
     icon: [
       {

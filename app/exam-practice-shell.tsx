@@ -236,7 +236,7 @@ export default function ExamPracticeShell({
               <div className="practice-review-note"><span>{summary?.reviewsPending ?? 0}</span><p>missed questions in your spaced review queue</p></div>
             </aside>
           </section>
-          <footer className="academy-footer"><span>Open learning for every student.</span><span>Progress is saved on this device.</span></footer>
+          <footer className="academy-footer"><span>Open learning for every student.</span><span>Progress is saved on this device.</span><span>© MPSC Free Mock · <Link href="/terms">Terms &amp; copyright</Link></span></footer>
         </section>
       </div>
 
