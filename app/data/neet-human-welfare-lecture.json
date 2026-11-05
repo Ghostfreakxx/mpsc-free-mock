@@ -1,0 +1,1431 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English Biology teacher. Speak naturally. Read pathogen, immune and microbial-product names carefully. Use a neutral educational tone. Read every sentence completely, including the final sentence. Do not add words or summarize.",
+  "title": "Biology and Human Welfare",
+  "subject": "Biology",
+  "unit": 8,
+  "scope": "NEET Biology Unit 8 recorded foundation against the official 2026 syllabus baseline: prescribed pathogens/diseases, immunology and vaccines, HIV/AIDS, cancer, adolescence and substance-related harm; microbial roles in household foods, industry, sewage treatment, energy, biocontrol and biofertilizers. General educational mechanisms, not personal diagnosis, medication choices or microbial production procedures. Further life-cycle diagrams, experimental data and mixed health/environmental cases remain. Original practice, not official PYQs.",
+  "sources": [
+    {
+      "title": "NMC: official NEET 2026 syllabus, Biology Unit 8",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/01/202601081066816297.pdf"
+    },
+    {
+      "title": "NCERT: Biology textbook portal, health/disease and microbial welfare chapters",
+      "url": "https://ncert.nic.in/textbook.php"
+    },
+    {
+      "title": "IIT Kanpur SATHEE: NCERT exemplar, Microbes in Human Welfare",
+      "url": "https://sathee.iitk.ac.in/ncert-books/neet-ncert-exemplar/ncert_b12_exemplar/microbes_in_human_welfare/"
+    },
+    {
+      "title": "WHO: malaria",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/malaria"
+    },
+    {
+      "title": "WHO: lymphatic filariasis",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/lymphatic-filariasis"
+    },
+    {
+      "title": "WHO: dengue and severe dengue",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue"
+    },
+    {
+      "title": "WHO: chikungunya",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/chikungunya"
+    },
+    {
+      "title": "WHO: hiv aids",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/hiv-aids"
+    },
+    {
+      "title": "WHO: cancer",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/cancer"
+    },
+    {
+      "title": "WHO: tobacco",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/tobacco"
+    },
+    {
+      "title": "WHO: alcohol",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/alcohol"
+    },
+    {
+      "title": "OpenStax Biology 2e: 42 1 innate immune response",
+      "url": "https://openstax.org/books/biology-2e/pages/42-1-innate-immune-response"
+    },
+    {
+      "title": "OpenStax Biology 2e: 42 2 adaptive immune response",
+      "url": "https://openstax.org/books/biology-2e/pages/42-2-adaptive-immune-response"
+    },
+    {
+      "title": "CDC: amebiasis biology and transmission",
+      "url": "https://www.cdc.gov/amebiasis/about/index.html"
+    },
+    {
+      "title": "WHO: typhoid",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/typhoid"
+    },
+    {
+      "title": "WHO: pneumonia",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/pneumonia"
+    },
+    {
+      "title": "CDC: ringworm and dermatophyte causes",
+      "url": "https://www.cdc.gov/ringworm/about/index.html"
+    },
+    {
+      "title": "CDC: soil-transmitted helminths and Ascaris",
+      "url": "https://www.cdc.gov/sth/about/index.html"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Health, pathogens and transmission routes",
+      "formula": "Health includes physical, mental and social dimensions",
+      "points": [
+        "Health includes physical, mental and social dimensions",
+        "Infection and visible disease are not identical",
+        "Pathogen, host, vector and reservoir differ",
+        "Prevention depends on the transmission route"
+      ],
+      "board": {
+        "kind": "health",
+        "lines": [
+          "Health includes physical, mental and social dimensions",
+          "Infection and visible disease are not identical",
+          "Pathogen, host, vector and reservoir differ",
+          "Prevention depends on the transmission route"
+        ]
+      },
+      "script": "Welcome to Biology and Human Welfare, our NEET Biology Unit eight foundation. This recording uses an AI generated Marin voice. Health involves physical, mental and social dimensions rather than only the absence of one named infection. Disease can have infectious or noninfectious causes, and exposure to a pathogen does not guarantee the same outcome in every host. Infection can occur without obvious symptoms. A pathogen causes disease in a suitable context, a host supports its presence or development, a vector transmits it and a reservoir helps maintain it in nature. These roles can overlap but are not interchangeable definitions. Water, food, respiratory exposure, vectors and blood related routes require different prevention approaches. The class explains biological mechanisms and general prevention concepts rather than identifying a person's illness from a symptom list. It covers the prescribed diseases and immunity, substance related health concerns and useful microbial roles. Further life-cycle diagrams, experimental interpretation and mixed case practice remain beyond this recording."
+    },
+    {
+      "title": "Malaria: parasite and mosquito roles",
+      "formula": "Plasmodium is the pathogen",
+      "points": [
+        "Plasmodium is the pathogen",
+        "Female Anopheles transmits infective stages",
+        "Human liver and red cells support different stages",
+        "Sexual reproduction occurs in the mosquito"
+      ],
+      "board": {
+        "kind": "malaria",
+        "lines": [
+          "Plasmodium is the pathogen",
+          "Female Anopheles transmits infective stages",
+          "Human liver and red cells support different stages",
+          "Sexual reproduction occurs in the mosquito"
+        ]
+      },
+      "script": "Malaria is caused by Plasmodium parasites rather than by the mosquito itself. Female Anopheles mosquitoes transmit infective sporozoites during feeding in the standard life-cycle account. Parasites first develop through liver associated stages and later infect red blood cells, where repeated asexual cycles contribute to illness. Some parasites differentiate into gametocytes that can be taken up by another feeding mosquito. Sexual reproduction and subsequent development occur in the mosquito, making it more than a passive mechanical carrier in this cycle. Plasmodium falciparum and Plasmodium vivax are familiar human malaria examples with important biological differences. Not every fever follows one perfectly regular textbook timing pattern, and fever alone cannot establish which pathogen is present. General prevention connects with reducing vector exposure, managing mosquito breeding opportunities and appropriate public health measures. The key examination distinctions are pathogen versus vector, infective stage, host compartment and reproductive stage. Trace the sequence across the two hosts instead of treating every parasite form as identical."
+    },
+    {
+      "title": "Lymphatic filariasis and chronic effects",
+      "formula": "Filarial nematodes are the pathogens",
+      "points": [
+        "Filarial nematodes are the pathogens",
+        "Mosquitoes transmit larvae between hosts",
+        "Adults can damage lymphatic function",
+        "Infection does not imply identical swelling in everyone"
+      ],
+      "board": {
+        "kind": "filariasis",
+        "lines": [
+          "Filarial nematodes are the pathogens",
+          "Mosquitoes transmit larvae between hosts",
+          "Adults can damage lymphatic function",
+          "Infection does not imply identical swelling in everyone"
+        ]
+      },
+      "script": "Lymphatic filariasis is associated with filarial nematodes including Wuchereria bancrofti and Brugia malayi in the familiar human disease comparison. Some older textbook naming uses Wuchereria for the second example, while Brugia is the usual current genus name. Mosquitoes transmit infective larvae, and adult worms can inhabit lymphatic structures in the human host. Microfilariae circulating in blood can be acquired by suitable mosquitoes, where further development occurs. Chronic lymphatic damage can produce swelling and other consequences, including the severe elephantiasis comparison, but not every infected person has the same visible changes. The swollen tissue is a host consequence, not the name of the transmitting mosquito. Vector genera can differ with geographic and ecological context, so the disease should not be defined as caused by one mosquito species everywhere. General prevention concerns transmission and vector exposure as well as organized public health action. Distinguish the nematode, its developmental stages, the mosquito and the affected host system."
+    },
+    {
+      "title": "Ascariasis and amoebiasis",
+      "formula": "Ascaris lumbricoides is a nematode",
+      "points": [
+        "Ascaris lumbricoides is a nematode",
+        "Entamoeba histolytica is a protozoan parasite",
+        "Contaminated material can carry eggs or cysts",
+        "Sanitation and safe water interrupt important routes"
+      ],
+      "board": {
+        "kind": "intestinal-parasites",
+        "lines": [
+          "Ascaris lumbricoides is a nematode",
+          "Entamoeba histolytica is a protozoan parasite",
+          "Contaminated material can carry eggs or cysts",
+          "Sanitation and safe water interrupt important routes"
+        ]
+      },
+      "script": "Ascariasis is caused by the roundworm Ascaris lumbricoides. Infection commonly follows ingestion of infective eggs from contaminated material, with larval migration and later intestinal adult stages in the standard account. The eggs are not produced by a mosquito vector. Amoebiasis is caused by Entamoeba histolytica, a protozoan parasite associated with ingestion of cysts through fecally contaminated food, water or other relevant exposure. It can affect the intestine and sometimes other sites. The two diseases therefore differ in organism group and life cycle even though sanitation and contamination are important in both. Mechanical carriage of contaminated material by flies is different from a parasite undergoing required development inside a biological vector. Not every intestinal symptom establishes either infection, and infection can have varied expression. General preventive concepts include safe water, sanitation, food hygiene and interruption of fecal contamination. In a comparison table, name the pathogen, infective material and transmission route before associating a broad symptom with a disease."
+    },
+    {
+      "title": "Typhoid and pneumonia: bacterial comparisons",
+      "formula": "Salmonella Typhi causes typhoid fever",
+      "points": [
+        "Salmonella Typhi causes typhoid fever",
+        "Typhoid spreads through fecal contamination routes",
+        "Streptococcus pneumoniae is a pneumonia example",
+        "Haemophilus influenzae is a bacterium, not flu virus"
+      ],
+      "board": {
+        "kind": "bacterial-diseases",
+        "lines": [
+          "Salmonella Typhi causes typhoid fever",
+          "Typhoid spreads through fecal contamination routes",
+          "Streptococcus pneumoniae is a pneumonia example",
+          "Haemophilus influenzae is a bacterium, not flu virus"
+        ]
+      },
+      "script": "Typhoid fever is caused by Salmonella Typhi, transmitted through relevant fecal contamination of food or water in the elementary account. Human infection and carrier states can contribute to transmission, illustrating why absence of current symptoms does not always mean absence of infectious significance. Pneumonia describes infection and inflammation affecting lung tissue, with organisms such as Streptococcus pneumoniae and Haemophilus influenzae among familiar bacterial examples. Pneumonia is not caused by only one organism in all circumstances; viruses and other agents can also cause it. Despite its name, Haemophilus influenzae is a bacterium rather than the influenza virus. Respiratory transmission contrasts with the usual typhoid fecal oral route. Laboratory findings and clinical context are needed for real diagnosis; one symptom or one classroom test label is not universally definitive. For NEET comparisons, separate the named bacterial example, the affected system and the route of spread. A disease category and one common causative species are not always equivalent labels."
+    },
+    {
+      "title": "Common cold and ringworm",
+      "formula": "Many common colds involve respiratory viruses",
+      "points": [
+        "Many common colds involve respiratory viruses",
+        "Rhinoviruses are familiar examples",
+        "Ringworm is a fungal infection, not a worm",
+        "Microsporum, Trichophyton and Epidermophyton"
+      ],
+      "board": {
+        "kind": "cold-ringworm",
+        "lines": [
+          "Many common colds involve respiratory viruses",
+          "Rhinoviruses are familiar examples",
+          "Ringworm is a fungal infection, not a worm",
+          "Microsporum, Trichophyton and Epidermophyton"
+        ]
+      },
+      "script": "The common cold is a respiratory illness caused by several possible viruses, with rhinoviruses as familiar examples. It commonly affects upper respiratory structures, but a symptom list cannot identify one viral species with certainty. Antibiotics directed at bacteria do not directly kill the cold virus merely because both illnesses can involve respiratory symptoms. Ringworm is different: it refers to superficial fungal infections associated with dermatophytes such as Microsporum, Trichophyton and Epidermophyton. The name does not mean an actual worm forms a ring in the skin. Transmission can involve contact with infected people, animals or contaminated materials depending on the organism and setting. Moist conditions can favor fungal persistence and infection opportunities, but climate alone is not the pathogen. Hygiene and limiting relevant contact routes help explain prevention without making every rash a diagnosis of ringworm. Compare virus, fungus and helminth as organism categories, then identify the tissue and route involved rather than relying on a disease's everyday name."
+    },
+    {
+      "title": "Dengue and chikungunya",
+      "formula": "Both are caused by viruses",
+      "points": [
+        "Both are caused by viruses",
+        "Aedes mosquitoes are important vectors",
+        "The viruses differ despite overlapping symptoms",
+        "Mosquito breeding control addresses shared transmission"
+      ],
+      "board": {
+        "kind": "arboviruses",
+        "lines": [
+          "Both are caused by viruses",
+          "Aedes mosquitoes are important vectors",
+          "The viruses differ despite overlapping symptoms",
+          "Mosquito breeding control addresses shared transmission"
+        ]
+      },
+      "script": "Dengue and chikungunya are caused by different viruses, not by Plasmodium or filarial worms. Aedes mosquitoes, especially relevant Aedes aegypti and Aedes albopictus populations, can transmit these viruses in suitable settings. The same broad vector association does not make the viruses identical. Dengue can range from mild illness to severe disease with important vascular and systemic consequences, while chikungunya is especially associated with prominent joint symptoms that can persist in some cases. There is overlap in presentation, so symptoms alone do not reliably distinguish them from each other or from every other fever. General prevention includes reducing suitable breeding opportunities and limiting mosquito exposure through appropriate public health measures. Current vaccine availability and recommendations are context specific and should not be replaced by an outdated universal claim that no preventive vaccines can exist. The foundation comparison emphasizes pathogen type, vector and biological effects. Keep the transmitting arthropod separate from the virus it carries and the host response it produces."
+    },
+    {
+      "title": "Innate defenses and barriers",
+      "formula": "Skin and mucosal barriers limit entry",
+      "points": [
+        "Skin and mucosal barriers limit entry",
+        "Chemical conditions and secretions contribute",
+        "Phagocytes and natural killer cells have roles",
+        "Innate and adaptive responses communicate"
+      ],
+      "board": {
+        "kind": "innate",
+        "lines": [
+          "Skin and mucosal barriers limit entry",
+          "Chemical conditions and secretions contribute",
+          "Phagocytes and natural killer cells have roles",
+          "Innate and adaptive responses communicate"
+        ]
+      },
+      "script": "Innate defenses provide early protection through physical barriers, chemical conditions, cells and soluble factors. Skin limits entry when intact, while mucus and ciliary activity help protect appropriate respiratory surfaces. Acidic conditions and antimicrobial components in secretions contribute to other barriers. Phagocytic cells such as neutrophils and macrophages can engulf material, while natural killer cells participate in responses to suitable abnormal or infected cells. Interferons are signaling proteins associated with antiviral defense, not ordinary antibodies secreted by every red blood cell. Inflammation recruits and coordinates responses but can also contribute to tissue damage when excessive or misdirected. Innate recognition differs from the highly specific clonal antigen recognition emphasized in adaptive immunity, yet the two systems communicate extensively. The textbook contrast should not be read as complete independence between them. Identify whether an example concerns prevention of entry, recognition, cellular removal or signaling rather than labeling every protective process as the same kind of barrier."
+    },
+    {
+      "title": "Adaptive immunity: B cells and T cells",
+      "formula": "Adaptive responses use antigen-specific recognition",
+      "points": [
+        "Adaptive responses use antigen-specific recognition",
+        "B-cell lineages can produce antibodies",
+        "T cells coordinate or act on target cells",
+        "Memory supports altered responses on re-exposure"
+      ],
+      "board": {
+        "kind": "adaptive",
+        "lines": [
+          "Adaptive responses use antigen-specific recognition",
+          "B-cell lineages can produce antibodies",
+          "T cells coordinate or act on target cells",
+          "Memory supports altered responses on re-exposure"
+        ]
+      },
+      "script": "Adaptive immunity involves specific recognition, expansion of relevant lymphocyte populations and the development of memory in appropriate responses. B lymphocytes can differentiate into antibody secreting plasma cells and memory related lineages. T lymphocytes include populations that coordinate immune responses and others that act against suitable infected or abnormal host cells. Humoral immunity emphasizes antibody mediated functions in body fluids, while cell mediated responses emphasize relevant cellular activities. This division is useful but does not mean B cells and T cells never cooperate. Antigen presentation and signaling help connect innate recognition with adaptive activation. A pathogen can have many antigenic structures, and not every antibody binding event has the same protective effect. The response depends on the antigen, host and biological context. Distinguish the cell recognizing a target, the molecule produced and the later effector action. A stronger response after appropriate re-exposure reflects learned immune organization rather than the body deliberately choosing a future infection to anticipate."
+    },
+    {
+      "title": "Antibodies and primary versus secondary responses",
+      "formula": "Typical antibody unit has two heavy and two light chains",
+      "points": [
+        "Typical antibody unit has two heavy and two light chains",
+        "Variable regions contribute antigen recognition",
+        "IgA, IgG, IgM and IgE have different associations",
+        "Secondary responses can be faster and stronger"
+      ],
+      "board": {
+        "kind": "antibodies",
+        "lines": [
+          "Typical antibody unit has two heavy and two light chains",
+          "Variable regions contribute antigen recognition",
+          "IgA, IgG, IgM and IgE have different associations",
+          "Secondary responses can be faster and stronger"
+        ]
+      },
+      "script": "An antibody is an immunoglobulin produced by appropriate B cell derived lineages. The familiar structural unit has two heavy and two light chains, with variable regions contributing to antigen binding and other regions helping determine functional properties. Antibodies are not all identical molecules with one universal target. IgA is important at many mucosal surfaces, IgG is a major circulating class and can cross the placenta in suitable maternal fetal transfer, IgM is prominent early in many primary responses, and IgE is associated with particular allergic and antiparasite responses. These are useful associations rather than exclusive roles in every situation. A primary response develops after an initial relevant exposure, while a secondary response can be faster and stronger because of established memory. A plotted antibody concentration is a response measurement, not the number of pathogens by definition. Read the exposure times, antibody class and measurement axis before concluding that one curve represents a different disease or a completely different immune system."
+    },
+    {
+      "title": "Vaccination and active versus passive immunity",
+      "formula": "Vaccination trains appropriate active immune responses",
+      "points": [
+        "Vaccination trains appropriate active immune responses",
+        "Vaccines need not contain a live pathogen",
+        "Passive immunity transfers existing protective molecules",
+        "Protection depends on vaccine, host and pathogen context"
+      ],
+      "board": {
+        "kind": "vaccines",
+        "lines": [
+          "Vaccination trains appropriate active immune responses",
+          "Vaccines need not contain a live pathogen",
+          "Passive immunity transfers existing protective molecules",
+          "Protection depends on vaccine, host and pathogen context"
+        ]
+      },
+      "script": "Vaccination exposes the immune system to suitable antigenic information in a controlled form so that protective responses and memory can develop. Vaccine platforms differ and need not contain a live disease causing organism; antigen components, inactivated material or instructions for antigen production can be involved in different designs. Active immunity involves the recipient's own immune response, while passive immunity supplies existing protective molecules, such as transferred antibodies. Passive protection can act without waiting for the same active response, but it does not by itself establish the recipient's long term immune memory in the same way. Maternal antibody transfer provides a familiar natural example. Protection varies with the vaccine, pathogen, host and time, so vaccination should not be described as a guarantee that every exposure produces no infection at all. Population protection also depends on how a disease spreads and the coverage and properties of the intervention. The examination focus is mechanism and memory, not a universal personal vaccination schedule."
+    },
+    {
+      "title": "Allergy, autoimmunity and immune deficiency",
+      "formula": "Allergy is an inappropriate response to an allergen",
+      "points": [
+        "Allergy is an inappropriate response to an allergen",
+        "IgE and mast-cell mediators can participate",
+        "Autoimmunity targets self components",
+        "Immune deficiency is reduced effective defense"
+      ],
+      "board": {
+        "kind": "immune-disorders",
+        "lines": [
+          "Allergy is an inappropriate response to an allergen",
+          "IgE and mast-cell mediators can participate",
+          "Autoimmunity targets self components",
+          "Immune deficiency is reduced effective defense"
+        ]
+      },
+      "script": "Immune protection can fail in different ways. Allergy involves an inappropriate or excessive response to a usually otherwise harmless environmental antigen in a susceptible context. IgE associated activation and mast cell mediators such as histamine participate in familiar immediate allergic responses, though not every hypersensitivity mechanism is identical. Autoimmunity involves responses directed against self components after failures in appropriate tolerance and regulation. It is not the same as a pathogen simply being present in the body. Immune deficiency means effective defense is impaired and can have inherited or acquired causes. These categories can interact but should not be treated as synonyms. A person with an allergy does not necessarily have a generally absent immune system, and immune deficiency does not mean every defense component is completely missing. Symptoms and severity vary with the mechanism. For an examination comparison, identify the target, the response that is excessive or insufficient and whether the problem concerns recognition, regulation or the capacity to mount protection."
+    },
+    {
+      "title": "HIV infection and AIDS",
+      "formula": "HIV is a retrovirus affecting immune function",
+      "points": [
+        "HIV is a retrovirus affecting immune function",
+        "CD4-associated cells are important targets",
+        "AIDS is an advanced disease stage, not every infection",
+        "HIV is not spread by ordinary casual contact"
+      ],
+      "board": {
+        "kind": "hiv",
+        "lines": [
+          "HIV is a retrovirus affecting immune function",
+          "CD4-associated cells are important targets",
+          "AIDS is an advanced disease stage, not every infection",
+          "HIV is not spread by ordinary casual contact"
+        ]
+      },
+      "script": "Human immunodeficiency virus, HIV, is a retrovirus whose replication involves an RNA to DNA step and interactions with susceptible host cells. CD four associated immune cells are important targets, and progressive untreated infection can impair immune function. AIDS describes an advanced disease stage with defined features; HIV infection and AIDS are not interchangeable labels for every point in the course. Transmission can occur through relevant sexual exposure, infected blood related routes and parent to child pathways. It does not occur through ordinary social contact such as sharing a classroom, a handshake or routine conversation. Prevention therefore depends on actual transmission routes rather than avoiding people or assigning stigma. Modern treatment can suppress viral replication and change disease outcomes, so infection should not be taught as an inevitable immediate progression through one fixed timeline. This class explains biological mechanisms and general prevention principles without prescribing a regimen. Distinguish the virus, the target cells, the clinical stage and the transmission route."
+    },
+    {
+      "title": "Cancer: growth regulation and spread",
+      "formula": "Cancer involves abnormal regulated-growth behavior",
+      "points": [
+        "Cancer involves abnormal regulated-growth behavior",
+        "Malignant cells can invade and metastasize",
+        "Benign tumors and malignant disease differ",
+        "Not every cancer forms one solid external lump"
+      ],
+      "board": {
+        "kind": "cancer",
+        "lines": [
+          "Cancer involves abnormal regulated-growth behavior",
+          "Malignant cells can invade and metastasize",
+          "Benign tumors and malignant disease differ",
+          "Not every cancer forms one solid external lump"
+        ]
+      },
+      "script": "Cancer comprises diverse diseases involving abnormal cellular growth and behavior, often associated with accumulated changes in growth control, DNA maintenance and other processes. A benign tumor remains more localized in the familiar comparison, while malignant cells can invade surrounding tissues and spread to distant sites through metastasis. Not every cancer forms one obvious solid lump; blood related malignancies provide important counterexamples. Changes involving proto-oncogenes, tumor suppressor genes and repair pathways can contribute, but cancer is not explained by one identical mutation in every case. Tobacco related exposures, certain radiation and some infections are among relevant risk contexts, while inherited susceptibility can also matter. A risk factor increases probability without guaranteeing a particular person's outcome. Diagnostic investigation and treatment depend on the disease and context; classroom symptom lists are not sufficient for diagnosis. The key biological distinctions are loss of appropriate regulation, invasion, spread and variation among tumor types rather than the idea that every rapidly dividing normal cell is cancerous."
+    },
+    {
+      "title": "Adolescence, dependence and protective support",
+      "formula": "Development and social context influence vulnerability",
+      "points": [
+        "Development and social context influence vulnerability",
+        "Dependence is not simply a failure of character",
+        "Tolerance and withdrawal describe different processes",
+        "Support and timely professional help can matter"
+      ],
+      "board": {
+        "kind": "adolescence",
+        "lines": [
+          "Development and social context influence vulnerability",
+          "Dependence is not simply a failure of character",
+          "Tolerance and withdrawal describe different processes",
+          "Support and timely professional help can matter"
+        ]
+      },
+      "script": "Adolescence involves physical, psychological and social changes that can influence choices, stress responses and vulnerability to harmful substance use. Peer pressure, experimentation and difficult circumstances can contribute, but no single social factor explains every person's behavior. Dependence involves changes in behavior and physiological regulation and should not be reduced to a moral label. Tolerance means that a response to a substance can change with repeated exposure, while withdrawal describes effects associated with stopping or reducing exposure after adaptation; the two are different concepts. Not every substance produces an identical pattern or risk. Protective factors include accurate information, supportive relationships, healthy coping opportunities and access to appropriate help. Recognizing a problem early and involving trusted support or qualified services can improve opportunities for care. The lesson addresses prevention and biology rather than instructions for obtaining or using substances. In an examination question, distinguish a drug's acute action from adaptation over time and from the social conditions that influence exposure."
+    },
+    {
+      "title": "Alcohol and tobacco-related harm",
+      "formula": "Ethanol is a psychoactive CNS depressant",
+      "points": [
+        "Ethanol is a psychoactive CNS depressant",
+        "Initial disinhibition does not make it a simple stimulant",
+        "Nicotine contributes to dependence",
+        "Smoke contains harmful agents beyond nicotine"
+      ],
+      "board": {
+        "kind": "alcohol-tobacco",
+        "lines": [
+          "Ethanol is a psychoactive CNS depressant",
+          "Initial disinhibition does not make it a simple stimulant",
+          "Nicotine contributes to dependence",
+          "Smoke contains harmful agents beyond nicotine"
+        ]
+      },
+      "script": "Alcoholic beverages contain ethanol, a psychoactive substance that can depress central nervous system function. Early disinhibition can look like increased activity, but this does not make alcohol a simple stimulant with no depressant effects. Repeated harmful exposure can affect multiple organs and increase risks including liver disease, injury and some cancers. Tobacco products expose users to nicotine and, depending on the product and route, other harmful substances. Nicotine contributes strongly to dependence, while tobacco smoke also contains carcinogenic materials and carbon monoxide that affect health through additional mechanisms. Carbon monoxide binds haemoglobin and compromises oxygen transport in the familiar physiological comparison. Tobacco related harm is not limited to lung cancer or to the person directly using it; second hand smoke exposure also matters. These are general biological risk relationships, not a safe-dose calculation. Separate dependence related effects, respiratory exposure, oxygen transport and long term disease risk instead of attributing every consequence to one chemical alone."
+    },
+    {
+      "title": "Drug classes and misuse comparisons",
+      "formula": "Opioids, cannabinoids and cocaine act differently",
+      "points": [
+        "Opioids, cannabinoids and cocaine act differently",
+        "Plant origin does not establish safety",
+        "Therapeutic use differs from uncontrolled misuse",
+        "Sources and mechanisms are examination comparisons"
+      ],
+      "board": {
+        "kind": "drug-classes",
+        "lines": [
+          "Opioids, cannabinoids and cocaine act differently",
+          "Plant origin does not establish safety",
+          "Therapeutic use differs from uncontrolled misuse",
+          "Sources and mechanisms are examination comparisons"
+        ]
+      },
+      "script": "The syllabus compares several substances through their biological origin and effects. Opioids act at opioid receptors; morphine is a familiar compound associated with the opium poppy, Papaver somniferum, while heroin is a chemically modified opioid example. Cannabinoids are associated with Cannabis and act through relevant cannabinoid signaling systems, influencing nervous system and other functions. Cocaine, associated with Erythroxylum coca, interferes with monoamine transport and can produce stimulant effects with serious health risks. These are different mechanisms rather than interchangeable names for one type of sedative. A plant derived substance is not automatically harmless, and a controlled therapeutic use of a medicine is different from uncontrolled misuse. Other psychoactive substances can alter perception or behavior through additional pathways. This class does not describe preparation, doses or methods of use. The examination goal is to match a broad source, chemical class and physiological action while recognizing dependence and harm. Avoid assuming that one visible behavioral change uniquely identifies a particular substance."
+    },
+    {
+      "title": "Lactic acid bacteria and curd",
+      "formula": "LAB convert suitable sugars to lactic acid",
+      "points": [
+        "LAB convert suitable sugars to lactic acid",
+        "Acidification helps coagulate milk proteins",
+        "Lactobacillus is a familiar textbook group",
+        "Useful strains and uncontrolled spoilage differ"
+      ],
+      "board": {
+        "kind": "curd",
+        "lines": [
+          "LAB convert suitable sugars to lactic acid",
+          "Acidification helps coagulate milk proteins",
+          "Lactobacillus is a familiar textbook group",
+          "Useful strains and uncontrolled spoilage differ"
+        ]
+      },
+      "script": "Microbes contribute to useful products as well as disease, and their effects depend on the organism, strain and setting. Lactic acid bacteria, including the familiar Lactobacillus textbook group, convert suitable carbohydrates into lactic acid in relevant fermentation processes. Acidification changes milk protein behavior and supports curd formation. The product is not made by a virus converting milk directly into antibodies. Microbial metabolism can alter flavor, texture and nutritional characteristics, but not every lactic acid bacterium has identical properties or produces every claimed vitamin. Starter communities and controlled food processing differ from uncontrolled contamination and spoilage. Some microbes associated with normal human environments can contribute to ecological competition, but the word probiotic requires a more specific evidence based context than merely being present in a fermented food. The foundation comparison concerns organism group, substrate transformation and product effect. Keep the bacterium, the acid it produces and the resulting protein changes separate when explaining why milk develops a different texture."
+    },
+    {
+      "title": "Yeast, bread and fermented beverages",
+      "formula": "Saccharomyces cerevisiae is a familiar yeast",
+      "points": [
+        "Saccharomyces cerevisiae is a familiar yeast",
+        "Fermentation can produce ethanol and CO2",
+        "CO2 contributes to bread dough expansion",
+        "Microbial metabolism and final processing both matter"
+      ],
+      "board": {
+        "kind": "yeast",
+        "lines": [
+          "Saccharomyces cerevisiae is a familiar yeast",
+          "Fermentation can produce ethanol and CO2",
+          "CO2 contributes to bread dough expansion",
+          "Microbial metabolism and final processing both matter"
+        ]
+      },
+      "script": "Saccharomyces cerevisiae is a familiar yeast used in baking and many fermentation examples. Under suitable fermentative conditions, metabolism of sugars produces ethanol and carbon dioxide. In bread dough, gas production helps expansion, while subsequent processing changes the final product; this is not the same endpoint as retaining a beverage's fermentation products. Yeast is a fungus, not a lactic acid bacterium or a virus. Different industrial and food processes use selected strains and conditions, so the phrase yeast fermentation does not guarantee one identical flavor, alcohol content or production route. Traditional fermented plant products illustrate microbial transformation in diverse cultures, while the examination account focuses on the biological role rather than preparation instructions. Gas bubbles alone do not identify the organism, since other microbes can also produce gases. Connect the organism, metabolic pathway, gas or solute product and the intended food function. A useful fermentation example does not negate the separate health effects of consuming alcohol."
+    },
+    {
+      "title": "Cheese and other household fermentation examples",
+      "formula": "Cheese traits depend on selected microbes",
+      "points": [
+        "Cheese traits depend on selected microbes",
+        "Propionibacterium contributes CO2 in Swiss cheese",
+        "Penicillium contributes to some ripened cheeses",
+        "Idli/dosa fermentations involve microbial communities"
+      ],
+      "board": {
+        "kind": "foods",
+        "lines": [
+          "Cheese traits depend on selected microbes",
+          "Propionibacterium contributes CO2 in Swiss cheese",
+          "Penicillium contributes to some ripened cheeses",
+          "Idli/dosa fermentations involve microbial communities"
+        ]
+      },
+      "script": "Fermented foods differ in microbial communities and the transformations that shape texture and flavor. In the familiar Swiss cheese comparison, Propionibacterium activity produces carbon dioxide associated with characteristic holes. Textbooks may use a traditional species label, while current names and strain descriptions can differ. Particular Penicillium molds contribute to ripening and flavor in cheeses such as Roquefort, but this does not mean any unidentified mold on any food is the same selected organism. Fermentation of foods such as idli and dosa involves microbial communities that alter the batter and produce relevant metabolic changes. These examples are not all explained by one species of baker's yeast. An organism's beneficial use in a defined process and the safety of uncontrolled growth are separate questions. For matching exercises, identify the product feature and the named organism group. Avoid assuming that every hole, sour taste or visible fungal growth has the same biological origin or the same consequence in every food."
+    },
+    {
+      "title": "Industrial organic acids and producer examples",
+      "formula": "Aspergillus niger: citric acid comparison",
+      "points": [
+        "Aspergillus niger: citric acid comparison",
+        "Acetobacter aceti: acetic acid comparison",
+        "Lactobacillus: lactic acid comparison",
+        "Textbook Clostridium example: butyric acid"
+      ],
+      "board": {
+        "kind": "acids",
+        "lines": [
+          "Aspergillus niger: citric acid comparison",
+          "Acetobacter aceti: acetic acid comparison",
+          "Lactobacillus: lactic acid comparison",
+          "Textbook Clostridium example: butyric acid"
+        ]
+      },
+      "script": "Industrial microbiology uses selected organisms to generate useful products through managed biological processes. Aspergillus niger is the familiar fungal example for citric acid, while Acetobacter aceti is associated with acetic acid and Lactobacillus with lactic acid in the textbook comparison. The traditional Clostridium butylicum example is paired with butyric acid in the stated examination account; microbial names and industrial strains require care when moving beyond that dated framework. The producer's name is not the same thing as the chemical product, and fungi as well as bacteria contribute to industrial production. A microorganism can have several metabolic capabilities, while an industrial process selects for a particular useful outcome. Production, recovery and quality control are separate stages rather than proof that an unprocessed culture is a ready medicine or food ingredient. This lesson gives matching principles and biological context, not operating recipes. Connect organism group, named product and function rather than memorizing a list without distinguishing acids from enzymes or antibiotics."
+    },
+    {
+      "title": "Enzymes and other bioactive microbial products",
+      "formula": "Lipases, pectinases and proteases have industrial roles",
+      "points": [
+        "Lipases, pectinases and proteases have industrial roles",
+        "Streptokinase is a textbook clot-related enzyme example",
+        "Cyclosporin A: immunosuppressive product comparison",
+        "Monascus: statin production comparison"
+      ],
+      "board": {
+        "kind": "bioactives",
+        "lines": [
+          "Lipases, pectinases and proteases have industrial roles",
+          "Streptokinase is a textbook clot-related enzyme example",
+          "Cyclosporin A: immunosuppressive product comparison",
+          "Monascus: statin production comparison"
+        ]
+      },
+      "script": "Microbes supply enzymes and other bioactive products with different industrial and medical roles. Lipases can contribute to lipid related processing, while pectinases and proteases are used in suitable clarification and other processing contexts. Streptokinase from the familiar Streptococcus comparison has a clot related medical role, but its name is not a general synonym for every protease or every clotting factor. The textbook Trichoderma polysporum example is associated with cyclosporin A, an immunosuppressive product. Monascus purpureus, a fungus, is the familiar statin production comparison; calling every useful fungal producer a yeast would be taxonomically misleading. Statins influence cholesterol synthesis through a defined biochemical target rather than physically filtering all fat from blood. These named examples describe product classes and functions, not a recommendation to consume an organism or use a drug independently. Distinguish an enzyme catalyst from a different small bioactive molecule, and distinguish the microbial source from the purified, regulated product used in an application."
+    },
+    {
+      "title": "Antibiotics, discovery and resistance",
+      "formula": "Penicillium links to the penicillin example",
+      "points": [
+        "Penicillium links to the penicillin example",
+        "Fleming observed antibacterial inhibition",
+        "Antibiotics do not directly treat every virus",
+        "Resistance belongs to microbes, not patient identity"
+      ],
+      "board": {
+        "kind": "antibiotics",
+        "lines": [
+          "Penicillium links to the penicillin example",
+          "Fleming observed antibacterial inhibition",
+          "Antibiotics do not directly treat every virus",
+          "Resistance belongs to microbes, not patient identity"
+        ]
+      },
+      "script": "Antibiotics are substances with activity against susceptible microorganisms, with important examples originally discovered from microbial producers. Fleming's observation of bacterial inhibition around a Penicillium mold helped lead to the penicillin story, followed by further development and production work. The historical producer name used in textbooks need not be the full modern taxonomic or industrial strain description. Antibiotics differ in their targets and ranges; one drug does not act equally on every microbe. An antibacterial antibiotic does not directly eliminate a respiratory virus merely because the illnesses have overlapping symptoms. Resistance involves microbial mechanisms and can spread through selection and genetic exchange, not the patient's body becoming inherently resistant to all antibiotics. Appropriate professional use and public health stewardship help limit avoidable selection and harm. The class explains discovery and mechanism rather than prescribing a drug. For an examination comparison, separate source organism, active compound, susceptible target and resistance process instead of treating all microbial products as interchangeable cures."
+    },
+    {
+      "title": "Primary sewage treatment",
+      "formula": "Primary treatment emphasizes physical removal",
+      "points": [
+        "Primary treatment emphasizes physical removal",
+        "Screening and sedimentation remove different material",
+        "Settled solids form primary sludge",
+        "Primary effluent still needs further treatment"
+      ],
+      "board": {
+        "kind": "primary-sewage",
+        "lines": [
+          "Primary treatment emphasizes physical removal",
+          "Screening and sedimentation remove different material",
+          "Settled solids form primary sludge",
+          "Primary effluent still needs further treatment"
+        ]
+      },
+      "script": "Sewage treatment combines stages with different purposes. Primary treatment emphasizes physical removal of floating and suspended material through processes such as screening and sedimentation in the elementary account. Large debris and settleable solids are not removed by exactly the same mechanism. Settled solids contribute to primary sludge, while the remaining primary effluent proceeds to later treatment. This stage does not imply that all dissolved organic material or every pathogen has disappeared. The word primary describes a treatment stage, not the first infection experienced by a human host or the first immune response to an antigen. Primary sludge is a separated material stream and must not be confused with the clarified liquid leaving the stage. The overall aim includes reducing pollutants and risks before appropriate discharge or reuse, with requirements varying by context. For a flow diagram, track what is removed, where the solids go and which stream enters biological treatment rather than assuming that one settling tank completes the whole process."
+    },
+    {
+      "title": "Secondary treatment, flocs and BOD",
+      "formula": "Aeration supports relevant aerobic microbial activity",
+      "points": [
+        "Aeration supports relevant aerobic microbial activity",
+        "Flocs aggregate microbes and associated material",
+        "Organic degradation can lower BOD",
+        "Activated sludge partly returns to the treatment stage"
+      ],
+      "board": {
+        "kind": "secondary-sewage",
+        "lines": [
+          "Aeration supports relevant aerobic microbial activity",
+          "Flocs aggregate microbes and associated material",
+          "Organic degradation can lower BOD",
+          "Activated sludge partly returns to the treatment stage"
+        ]
+      },
+      "script": "During secondary biological treatment in the familiar activated sludge account, aeration supports aerobic microorganisms that metabolize suitable organic material in the primary effluent. Microbial aggregates called flocs include bacteria and associated structures such as fungal filaments in the textbook description. After processing, settling separates much of this biomass as activated sludge, and a portion can be returned to support continued biological activity. This is different from returning every untreated solid directly to a water supply. Biochemical oxygen demand, or BOD, measures oxygen required by microbial degradation of biodegradable organic material under specified test conditions. A higher value commonly indicates a greater biodegradable organic load, not simply more dissolved oxygen already present. Effective organic degradation can lower the effluent's BOD, but a low BOD alone does not certify absence of every toxic substance or pathogen. Distinguish aeration, microbial metabolism, settling and the measurement being made. Oxygen supply and oxygen demand describe different quantities in the treatment system."
+    },
+    {
+      "title": "Anaerobic digestion and biogas",
+      "formula": "Anaerobic digestion processes appropriate organic material",
+      "points": [
+        "Anaerobic digestion processes appropriate organic material",
+        "Methanogens contribute methane production",
+        "Methanogens are archaea in modern classification",
+        "Biogas is a mixture, not pure methane"
+      ],
+      "board": {
+        "kind": "biogas",
+        "lines": [
+          "Anaerobic digestion processes appropriate organic material",
+          "Methanogens contribute methane production",
+          "Methanogens are archaea in modern classification",
+          "Biogas is a mixture, not pure methane"
+        ]
+      },
+      "script": "Anaerobic digestion can process suitable organic material, including appropriate sludge streams, through a community of organisms with different metabolic roles. Methanogens contribute to methane formation and are familiar from anaerobic environments such as rumen associated systems and digesters. Methanobacterium is a standard textbook example. In modern classification, methanogens are archaea rather than ordinary bacterial lineages, even where older teaching language groups them broadly as bacteria. Biogas contains methane together with other gases such as carbon dioxide and can contain additional components; it is not necessarily pure methane or pure hydrogen. Methane formation is different from the oxygen producing photosynthesis of green algae or cyanobacteria. A digester's gas stream and its remaining material are different outputs requiring their own handling and assessment. The foundation explains energy recovery and microbial ecology rather than design or operating instructions. Track the treatment stage, oxygen context, microbial role and mixture of products when comparing aerobic treatment with anaerobic digestion."
+    },
+    {
+      "title": "Biocontrol and ecological interactions",
+      "formula": "Biocontrol uses biological interactions against pests",
+      "points": [
+        "Biocontrol uses biological interactions against pests",
+        "Ladybird beetles are familiar aphid predators",
+        "Dragonflies feed on suitable insect prey",
+        "A beneficial role depends on ecological context"
+      ],
+      "board": {
+        "kind": "predators",
+        "lines": [
+          "Biocontrol uses biological interactions against pests",
+          "Ladybird beetles are familiar aphid predators",
+          "Dragonflies feed on suitable insect prey",
+          "A beneficial role depends on ecological context"
+        ]
+      },
+      "script": "Biological control uses organisms or their interactions to reduce harmful pest or pathogen effects in an appropriate system. Ladybird beetles provide a familiar predator example associated with aphid control, while dragonflies feed on suitable insect prey including mosquitoes in relevant contexts. The predator is not the same organism as its prey, and a disease vector is not automatically controlled by every animal that eats an insect. Biocontrol can complement broader integrated management rather than replacing every other decision with one universal introduction. Ecological context matters: an organism useful in one setting can have unintended effects in another. The examination examples illustrate predator prey relationships and selective management, not a recommendation to release an unfamiliar species into an ecosystem. Distinguish natural ecological interaction from a managed control program and evaluate the target being reduced. A visually attractive insect is not necessarily beneficial to every crop, just as a microorganism is not necessarily a pathogen because it is small."
+    },
+    {
+      "title": "Bacillus thuringiensis and viral biocontrol",
+      "formula": "Bt is a bacterium with insect-active protein examples",
+      "points": [
+        "Bt is a bacterium with insect-active protein examples",
+        "Effects depend on susceptible target biology",
+        "Baculovirus examples have restricted host ranges",
+        "Biocontrol is not universally lethal to all organisms"
+      ],
+      "board": {
+        "kind": "bt-viruses",
+        "lines": [
+          "Bt is a bacterium with insect-active protein examples",
+          "Effects depend on susceptible target biology",
+          "Baculovirus examples have restricted host ranges",
+          "Biocontrol is not universally lethal to all organisms"
+        ]
+      },
+      "script": "Bacillus thuringiensis, commonly abbreviated Bt, is a bacterium associated with insect-active protein examples used in biological control. Activity depends on the protein, target organism and suitable biological conditions, so it should not be described as a universal poison that kills every insect and every other animal equally. The detailed transgenic crop application belongs to the next unit; here the emphasis is the microbial source and selective control principle. Baculoviruses, including familiar nucleopolyhedrovirus comparisons, can affect particular arthropod hosts and are discussed as relatively specific biological control agents. They are not the same viruses that cause common human respiratory disease. A narrow host range can be useful in a management context, but actual suitability still requires evidence about the system and product. Distinguish a bacterium, its active product and a virus as separate categories. The examples explain organism target relationships without giving cultivation, production or application procedures for biological agents."
+    },
+    {
+      "title": "Trichoderma and plant-disease suppression",
+      "formula": "Trichoderma is a fungal genus",
+      "points": [
+        "Trichoderma is a fungal genus",
+        "Selected strains can suppress plant pathogens",
+        "Antagonism differs from a root nutrient symbiosis",
+        "Biocontrol and drug-production examples have different roles"
+      ],
+      "board": {
+        "kind": "trichoderma",
+        "lines": [
+          "Trichoderma is a fungal genus",
+          "Selected strains can suppress plant pathogens",
+          "Antagonism differs from a root nutrient symbiosis",
+          "Biocontrol and drug-production examples have different roles"
+        ]
+      },
+      "script": "Trichoderma species are common soil associated fungi, and selected strains can suppress certain plant pathogens through interactions that may include competition, antagonistic products and effects on the host environment. The useful outcome depends on the strain, target and conditions rather than every member of the genus performing identically in every soil. This plant disease suppression example is different from mycorrhizal nutrient exchange, even though both involve fungi and plants. It is also a different functional comparison from the textbook Trichoderma associated cyclosporin product discussed earlier. Sharing a genus label does not make all biological uses the same process. In a matching question, first determine whether the requested role concerns an industrial product, a pathogen suppression interaction or a root association. A microbe's ecological presence alone does not guarantee an effective control outcome. The foundation concerns categories and biological mechanisms, with detailed strain selection and field performance remaining outside this elementary recording."
+    },
+    {
+      "title": "Nitrogen-fixing biofertilizers",
+      "formula": "Rhizobium associates with suitable legume nodules",
+      "points": [
+        "Rhizobium associates with suitable legume nodules",
+        "Azotobacter is a free-living textbook example",
+        "Azospirillum provides an associative comparison",
+        "Cyanobacteria also contribute nitrogen-fixing examples"
+      ],
+      "board": {
+        "kind": "nitrogen",
+        "lines": [
+          "Rhizobium associates with suitable legume nodules",
+          "Azotobacter is a free-living textbook example",
+          "Azospirillum provides an associative comparison",
+          "Cyanobacteria also contribute nitrogen-fixing examples"
+        ]
+      },
+      "script": "Biofertilizer discussions concern organisms or biological associations that improve nutrient availability in appropriate agricultural systems. Rhizobium forms nitrogen fixing associations with suitable legume roots, while Azotobacter is a familiar free living example and Azospirillum an associative comparison. Their ecological relationships are not identical. Nitrogen fixation converts atmospheric nitrogen into biologically usable forms through specialized metabolism; it is different from simply releasing oxygen during photosynthesis. Cyanobacterial examples include Nostoc and Anabaena, and the traditional Azolla associated cyanobacterial comparison is important in rice related teaching. Azolla is a fern, not itself the nitrogen fixing bacterium. Nitrogenase related activity is sensitive to oxygen conditions, and biological systems have ways of accommodating that constraint; a nodule is not merely an unregulated bag of atmospheric gas. Benefits depend on compatibility, environment and management, not a guarantee that every fertilizer input becomes unnecessary. Keep the host plant, microbial partner, chemical transformation and ecological relationship distinct."
+    },
+    {
+      "title": "Mycorrhiza and nutrient exchange",
+      "formula": "Mycorrhiza links fungi with plant roots",
+      "points": [
+        "Mycorrhiza links fungi with plant roots",
+        "Glomus is a familiar textbook example",
+        "Fungi can improve access to phosphate and water",
+        "Plants supply carbon; benefits depend on context"
+      ],
+      "board": {
+        "kind": "mycorrhiza",
+        "lines": [
+          "Mycorrhiza links fungi with plant roots",
+          "Glomus is a familiar textbook example",
+          "Fungi can improve access to phosphate and water",
+          "Plants supply carbon; benefits depend on context"
+        ]
+      },
+      "script": "Mycorrhiza is an association between fungi and plant roots with exchanges that can benefit the partners under suitable conditions. Glomus is a familiar textbook example in the arbuscular mycorrhizal comparison, while current classifications and specific partners can be more detailed. Fungal hyphae can explore soil and improve access to nutrients such as phosphate and to water, while the plant supplies carbon derived from its metabolism. This is not the same as a bacterium fixing atmospheric nitrogen inside every fungal structure. Different mycorrhizal types vary in organization and host relationships. The presence of a fungus near a root is not by itself proof of the exact mutualistic association or its benefit under every condition. Mycorrhizal effects can interact with soil chemistry, plant state and other organisms. For an examination comparison, distinguish the partner identities, exchanged resources and relevant nutrient process rather than treating biofertilizer as a synonym for one universal organism or one chemical fertilizer substitute."
+    },
+    {
+      "title": "Integrated health and microbial-welfare reasoning",
+      "formula": "Identify pathogen, vector, product and process separately",
+      "points": [
+        "Identify pathogen, vector, product and process separately",
+        "Useful microbial roles depend on strain and context",
+        "Separate measurements from claims about safety",
+        "Further life-cycle and experimental practice remains"
+      ],
+      "board": {
+        "kind": "integration",
+        "lines": [
+          "Identify pathogen, vector, product and process separately",
+          "Useful microbial roles depend on strain and context",
+          "Separate measurements from claims about safety",
+          "Further life-cycle and experimental practice remains"
+        ]
+      },
+      "script": "Biology and Human Welfare brings together disease mechanisms, immune responses, substance related health concerns and beneficial microbial processes. The same broad group can include useful organisms and pathogens, so classification alone does not establish a single effect. Start a matching problem by deciding whether a name refers to an organism, a vector, a molecule, a host response or a treatment stage. Trace the route of transmission for disease examples and the substrate, transformation and output for industrial or environmental examples. A measurement such as BOD answers a particular question and cannot certify every aspect of water quality by itself. This recorded Unit eight foundation covers the prescribed headings against the dated official syllabus and uses original practice questions. It explains general mechanisms rather than personal diagnosis, medication choices or microbial production procedures. Further detailed life-cycle diagrams, experimental data, organism identification and mixed health or environmental cases remain. Continue by identifying the biological role and the evidence supporting a claim before selecting a familiar name."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A pathogen and a vector are:",
+      "options": [
+        "Different roles that may interact in transmission",
+        "Always the same organism",
+        "Both necessarily viruses",
+        "Both names for every symptom"
+      ],
+      "answer": 0,
+      "explanation": "The causative agent and transmitting organism must be identified separately."
+    },
+    {
+      "question": "Infection always causes obvious symptoms. This is:",
+      "options": [
+        "Correct universally",
+        "Incorrect; some infections are asymptomatic",
+        "The definition of a vaccine",
+        "The definition of BOD"
+      ],
+      "answer": 1,
+      "explanation": "Infection and visible disease expression differ."
+    },
+    {
+      "question": "The malaria pathogen and familiar vector are respectively:",
+      "options": [
+        "Anopheles and Plasmodium",
+        "Aedes and a filarial worm",
+        "Plasmodium and female Anopheles",
+        "Rhizobium and a root nodule"
+      ],
+      "answer": 2,
+      "explanation": "The parasite causes disease and the mosquito transmits stages."
+    },
+    {
+      "question": "Sexual reproduction of the malaria parasite occurs in the:",
+      "options": [
+        "Human red cell as the ordinary sexual site",
+        "Curd starter",
+        "Plant root hair",
+        "Mosquito host"
+      ],
+      "answer": 3,
+      "explanation": "Human and mosquito stages have different roles."
+    },
+    {
+      "question": "Lymphatic filariasis is caused by:",
+      "options": [
+        "Filarial nematodes",
+        "Only a mosquito acting as the pathogen",
+        "A bread yeast",
+        "A lactic acid bacterium"
+      ],
+      "answer": 0,
+      "explanation": "Mosquitoes transmit stages of the worm parasites."
+    },
+    {
+      "question": "Severe lymphatic swelling in filariasis represents:",
+      "options": [
+        "The name of the mosquito itself",
+        "A host consequence, not the vector identity",
+        "A universal feature of every exposed person",
+        "Only a fungal food product"
+      ],
+      "answer": 1,
+      "explanation": "Clinical expression can vary among infected hosts."
+    },
+    {
+      "question": "Ascaris lumbricoides and Entamoeba histolytica are respectively:",
+      "options": [
+        "Two fungi",
+        "Two mosquito genera",
+        "A nematode and a protozoan parasite",
+        "A virus and a plant root"
+      ],
+      "answer": 2,
+      "explanation": "Their organism groups and life cycles differ."
+    },
+    {
+      "question": "The relevant infectious material in the standard ascariasis ingestion route is:",
+      "options": [
+        "Pollen grains",
+        "Only adult mosquitoes",
+        "Mycorrhizal spores",
+        "Infective eggs"
+      ],
+      "answer": 3,
+      "explanation": "Fecal contamination and environmental transmission matter."
+    },
+    {
+      "question": "The usual typhoid fever causative example is:",
+      "options": [
+        "Salmonella Typhi",
+        "Haemophilus influenzae as the only typhoid cause",
+        "Rhinovirus",
+        "Penicillium"
+      ],
+      "answer": 0,
+      "explanation": "The familiar route involves fecal contamination of food or water."
+    },
+    {
+      "question": "Haemophilus influenzae is:",
+      "options": [
+        "The influenza virus",
+        "A bacterium despite its name",
+        "A filarial worm",
+        "A mushroom"
+      ],
+      "answer": 1,
+      "explanation": "A name should not replace identification of organism type."
+    },
+    {
+      "question": "Ringworm is associated with:",
+      "options": [
+        "A worm forming every skin ring",
+        "Only Plasmodium",
+        "Dermatophyte fungi",
+        "Only baker’s yeast"
+      ],
+      "answer": 2,
+      "explanation": "Microsporum, Trichophyton and Epidermophyton are textbook examples."
+    },
+    {
+      "question": "Antibacterial antibiotics directly kill every common cold virus. This is:",
+      "options": [
+        "Correct universally",
+        "The definition of humoral immunity",
+        "The definition of methane production",
+        "Incorrect; bacterial and viral targets differ"
+      ],
+      "answer": 3,
+      "explanation": "Overlapping symptoms do not make causative agents identical."
+    },
+    {
+      "question": "Dengue and chikungunya are caused by:",
+      "options": [
+        "Different viruses with important Aedes vector associations",
+        "The same Plasmodium species",
+        "Two lactic acid bacteria",
+        "Only filarial nematodes"
+      ],
+      "answer": 0,
+      "explanation": "Sharing vectors or symptoms does not make the viruses identical."
+    },
+    {
+      "question": "Aedes mosquitoes in this comparison are:",
+      "options": [
+        "The viral genome",
+        "Vectors rather than the viruses themselves",
+        "The same as Anopheles in every respect",
+        "Only beneficial root symbionts"
+      ],
+      "answer": 1,
+      "explanation": "Transmission roles differ from pathogen identity."
+    },
+    {
+      "question": "Interferons are best described here as:",
+      "options": [
+        "Ordinary antibodies made by every red cell",
+        "Only a bacterial food acid",
+        "Signaling proteins associated with antiviral defense",
+        "Only a mosquito larva"
+      ],
+      "answer": 2,
+      "explanation": "Soluble immune signals differ from antibody molecules."
+    },
+    {
+      "question": "Phagocytosis is an example of:",
+      "options": [
+        "Only antigen-specific antibody secretion",
+        "Only fruit fermentation",
+        "Only mechanical screening of sewage",
+        "Cellular uptake and removal of material"
+      ],
+      "answer": 3,
+      "explanation": "Cellular defense roles differ from physical barriers."
+    },
+    {
+      "question": "Antibody-secreting plasma cells arise from appropriate:",
+      "options": [
+        "B-cell lineages",
+        "Mature human red cells",
+        "Mosquito salivary glands",
+        "Only fungal hyphae"
+      ],
+      "answer": 0,
+      "explanation": "B-cell differentiation supports humoral immunity."
+    },
+    {
+      "question": "Humoral and cell-mediated immunity:",
+      "options": [
+        "Never interact",
+        "Are useful distinctions with cooperation between systems",
+        "Both mean only skin thickness",
+        "Both mean only antibiotic production"
+      ],
+      "answer": 1,
+      "explanation": "Immune components coordinate rather than act as unrelated systems."
+    },
+    {
+      "question": "The familiar antibody structural unit contains:",
+      "options": [
+        "Four identical heavy chains only",
+        "Only one RNA molecule",
+        "Two heavy and two light chains",
+        "Only a phospholipid bilayer"
+      ],
+      "answer": 2,
+      "explanation": "Variable and other regions contribute distinct functions."
+    },
+    {
+      "question": "A faster, stronger response after appropriate re-exposure can reflect:",
+      "options": [
+        "A guarantee that all pathogens have disappeared forever",
+        "Only increased mosquito size",
+        "Only lower BOD",
+        "Immune memory"
+      ],
+      "answer": 3,
+      "explanation": "Exposure timing and the measured immune variable matter."
+    },
+    {
+      "question": "Passive immunity supplies:",
+      "options": [
+        "Existing protective molecules such as antibodies",
+        "Only the recipient’s new memory cells by definition",
+        "Only a live pathogen",
+        "Only an antibiotic-producing fungus"
+      ],
+      "answer": 0,
+      "explanation": "It differs from inducing the recipient’s active response."
+    },
+    {
+      "question": "Every vaccine must contain a live disease-causing organism. This is:",
+      "options": [
+        "Correct universally",
+        "Incorrect; vaccine platforms differ",
+        "The definition of a booster",
+        "The definition of a plasma cell"
+      ],
+      "answer": 1,
+      "explanation": "Antigenic information can be supplied through several designs."
+    },
+    {
+      "question": "Autoimmunity concerns responses against:",
+      "options": [
+        "Only every foreign bacterium",
+        "Only nitrogen gas",
+        "Self components",
+        "Only sewage flocs"
+      ],
+      "answer": 2,
+      "explanation": "It differs from an ordinary response against a pathogen."
+    },
+    {
+      "question": "Having an allergy necessarily means every immune defense is absent. This is:",
+      "options": [
+        "Correct universally",
+        "The definition of innate immunity",
+        "The definition of lactate fermentation",
+        "Incorrect; allergy and general immune deficiency are different"
+      ],
+      "answer": 3,
+      "explanation": "Excessive, misdirected and insufficient responses must be distinguished."
+    },
+    {
+      "question": "HIV infection and AIDS are:",
+      "options": [
+        "Related but not identical labels for every disease stage",
+        "Always identical at every moment",
+        "Both caused by a fungus",
+        "Both spread through ordinary classroom conversation"
+      ],
+      "answer": 0,
+      "explanation": "AIDS describes an advanced disease stage."
+    },
+    {
+      "question": "HIV is transmitted by an ordinary handshake. This is:",
+      "options": [
+        "Correct universally",
+        "Incorrect; casual social contact is not a transmission route",
+        "The definition of a retrovirus",
+        "The definition of a vector"
+      ],
+      "answer": 1,
+      "explanation": "Prevention should reflect actual transmission biology without stigma."
+    },
+    {
+      "question": "Metastasis means:",
+      "options": [
+        "Only a localized benign growth",
+        "Only the formation of antibodies",
+        "Spread of malignant cells to distant sites",
+        "Only nitrogen fixation"
+      ],
+      "answer": 2,
+      "explanation": "Invasion and spread distinguish malignant behavior in the comparison."
+    },
+    {
+      "question": "Every cancer forms a visible solid external lump. This is:",
+      "options": [
+        "Correct universally",
+        "The definition of leukaemia",
+        "The definition of a risk factor",
+        "Incorrect; cancer types differ, including blood-related malignancies"
+      ],
+      "answer": 3,
+      "explanation": "One visible feature is not an exhaustive cancer definition."
+    },
+    {
+      "question": "Tolerance and withdrawal are:",
+      "options": [
+        "Different adaptation-related concepts",
+        "Identical names for every acute drug effect",
+        "Both forms of mosquito transmission",
+        "Both measures of BOD"
+      ],
+      "answer": 0,
+      "explanation": "Repeated exposure and reduction after adaptation describe different processes."
+    },
+    {
+      "question": "Dependence should be interpreted as:",
+      "options": [
+        "Only a failure of character",
+        "A health problem involving biological and behavioral processes",
+        "A guarantee of one identical response to every substance",
+        "A useful way to assign stigma"
+      ],
+      "answer": 1,
+      "explanation": "Accurate information and supportive care matter."
+    },
+    {
+      "question": "Ethanol is primarily classified here as a:",
+      "options": [
+        "Universal stimulant with no depressant effects",
+        "Nitrogen-fixing enzyme",
+        "Psychoactive CNS depressant",
+        "Vaccine antigen"
+      ],
+      "answer": 2,
+      "explanation": "Initial disinhibition does not erase its depressant pharmacology."
+    },
+    {
+      "question": "Tobacco smoke harm is explained only by nicotine. This is:",
+      "options": [
+        "Correct universally",
+        "The definition of nicotine dependence",
+        "Proof that second-hand smoke is harmless",
+        "Incorrect; other agents including CO and carcinogens contribute"
+      ],
+      "answer": 3,
+      "explanation": "Different chemicals affect different physiological targets."
+    },
+    {
+      "question": "Morphine, cannabinoids and cocaine:",
+      "options": [
+        "Belong to different mechanism and source comparisons",
+        "Are all the same microbial antibiotic",
+        "Are all harmless because some are plant-derived",
+        "All act only as identical sedatives"
+      ],
+      "answer": 0,
+      "explanation": "Plant origin does not establish safety or a single drug action."
+    },
+    {
+      "question": "The familiar cocaine plant-source comparison is:",
+      "options": [
+        "Saccharomyces cerevisiae",
+        "Erythroxylum coca",
+        "Rhizobium",
+        "Glomus"
+      ],
+      "answer": 1,
+      "explanation": "Source names must be separated from microbial product examples."
+    },
+    {
+      "question": "Curd formation involves lactic acid bacteria contributing to:",
+      "options": [
+        "Direct viral conversion into antibodies",
+        "Methane-only photosynthesis",
+        "Acidification and milk-protein changes",
+        "Only removal of every milk protein"
+      ],
+      "answer": 2,
+      "explanation": "Microbial acid production changes the food matrix."
+    },
+    {
+      "question": "Every lactic acid bacterium has identical nutritional and vitamin effects. This is:",
+      "options": [
+        "Correct universally",
+        "The definition of curd",
+        "The definition of sporulation",
+        "Incorrect; strains and contexts differ"
+      ],
+      "answer": 3,
+      "explanation": "Useful microbial groups contain biological variation."
+    },
+    {
+      "question": "Saccharomyces cerevisiae is a:",
+      "options": [
+        "Yeast fungus",
+        "Lactic acid bacterium",
+        "Mosquito genus",
+        "Filarial nematode"
+      ],
+      "answer": 0,
+      "explanation": "The organism group matters in product matching."
+    },
+    {
+      "question": "The gas contributing to bread dough expansion in this example is:",
+      "options": [
+        "Only oxygen from yeast photosynthesis",
+        "Carbon dioxide",
+        "Only nitrogen fixed by Rhizobium",
+        "Only purified methane"
+      ],
+      "answer": 1,
+      "explanation": "Fermentative metabolism can release CO2."
+    },
+    {
+      "question": "Characteristic Swiss cheese holes are associated with:",
+      "options": [
+        "Only a worm burrowing through every cheese",
+        "Only HIV replication",
+        "Propionibacterium-related CO2 production",
+        "Only mycorrhizal phosphate uptake"
+      ],
+      "answer": 2,
+      "explanation": "The product feature has a specific microbial comparison."
+    },
+    {
+      "question": "Selected Penicillium use in a ripened cheese means any unidentified mold on food is equivalent. This is:",
+      "options": [
+        "Correct universally",
+        "The definition of fermentation",
+        "The definition of a starter",
+        "Incorrect; organism and processing context matter"
+      ],
+      "answer": 3,
+      "explanation": "Defined beneficial uses differ from uncontrolled growth."
+    },
+    {
+      "question": "The familiar Aspergillus niger industrial product comparison is:",
+      "options": [
+        "Citric acid",
+        "Only methane",
+        "Only urea",
+        "Only fibrin"
+      ],
+      "answer": 0,
+      "explanation": "This is the standard fungal organic-acid pairing."
+    },
+    {
+      "question": "Acetobacter aceti is paired here with:",
+      "options": [
+        "Only penicillin",
+        "Acetic acid",
+        "Only calcitonin",
+        "Only haemoglobin"
+      ],
+      "answer": 1,
+      "explanation": "Producer and product are distinct labels."
+    },
+    {
+      "question": "The textbook cyclosporin A comparison involves:",
+      "options": [
+        "Only Aedes aegypti",
+        "Only a human B cell",
+        "Trichoderma polysporum",
+        "Only Ascaris eggs"
+      ],
+      "answer": 2,
+      "explanation": "The named fungal example concerns an immunosuppressive product."
+    },
+    {
+      "question": "Monascus purpureus is associated in the textbook with:",
+      "options": [
+        "Only filariasis transmission",
+        "Only milk ejection",
+        "Only viral antibodies",
+        "Statin production"
+      ],
+      "answer": 3,
+      "explanation": "It is a fungal producer comparison, not a universal synonym for yeast."
+    },
+    {
+      "question": "Penicillin discovery is linked with the familiar:",
+      "options": [
+        "Penicillium inhibition example",
+        "Anopheles sexual cycle",
+        "Rhizobium nodule only",
+        "Glomus phosphate exchange only"
+      ],
+      "answer": 0,
+      "explanation": "The source organism and active compound differ."
+    },
+    {
+      "question": "Antibiotic resistance is primarily a property of:",
+      "options": [
+        "The patient becoming resistant to every drug",
+        "Microbes and their mechanisms",
+        "Every human chromosome containing antibiotics",
+        "The antibiotic learning a future goal"
+      ],
+      "answer": 1,
+      "explanation": "Selection and genetic processes affect microbial variants."
+    },
+    {
+      "question": "Primary sewage treatment chiefly emphasizes:",
+      "options": [
+        "Only antibody memory formation",
+        "Only nitrogen fixation in every tank",
+        "Physical screening and settling",
+        "Only the final elimination of every dissolved pollutant"
+      ],
+      "answer": 2,
+      "explanation": "Later stages address additional material and risks."
+    },
+    {
+      "question": "Primary effluent means:",
+      "options": [
+        "All separated primary sludge",
+        "Only pure distilled water",
+        "Only the gas from a digester",
+        "The liquid stream proceeding after primary separation"
+      ],
+      "answer": 3,
+      "explanation": "Solids and liquid streams must be tracked separately."
+    },
+    {
+      "question": "Activated-sludge flocs are:",
+      "options": [
+        "Microbial aggregates and associated material",
+        "Only dissolved oxygen molecules",
+        "Only mosquito eggs",
+        "Only sterile plastic filters"
+      ],
+      "answer": 0,
+      "explanation": "Aerobic biological treatment differs from physical screening."
+    },
+    {
+      "question": "High BOD commonly indicates:",
+      "options": [
+        "More dissolved oxygen already present by definition",
+        "Greater microbial oxygen demand for biodegradable organic load",
+        "Guaranteed absence of every pathogen",
+        "Only higher phosphate with no organic contribution"
+      ],
+      "answer": 1,
+      "explanation": "Demand and actual dissolved oxygen are different quantities."
+    },
+    {
+      "question": "Methanogens belong in modern classification to:",
+      "options": [
+        "Every green plant",
+        "Only viruses",
+        "Archaea",
+        "Only dermatophyte fungi"
+      ],
+      "answer": 2,
+      "explanation": "Older broad textbook bacterial terminology should be distinguished."
+    },
+    {
+      "question": "Biogas is necessarily pure methane. This is:",
+      "options": [
+        "Correct universally",
+        "The definition of aerobic treatment",
+        "The definition of a biofertilizer",
+        "Incorrect; it is a gas mixture"
+      ],
+      "answer": 3,
+      "explanation": "Methane and CO2 are important components in the familiar comparison."
+    },
+    {
+      "question": "Ladybird beetles provide a familiar biocontrol comparison against:",
+      "options": [
+        "Aphids",
+        "Only human red blood cells",
+        "Only thyroid follicles",
+        "Only methane-producing archaea"
+      ],
+      "answer": 0,
+      "explanation": "This is a predator-prey example."
+    },
+    {
+      "question": "An organism useful for biocontrol in one setting is universally beneficial in every ecosystem. This is:",
+      "options": [
+        "Correct universally",
+        "Incorrect; ecological context and evidence matter",
+        "The definition of a host range",
+        "The definition of a mutualism"
+      ],
+      "answer": 1,
+      "explanation": "Management outcomes cannot be inferred from one useful example alone."
+    },
+    {
+      "question": "Bacillus thuringiensis is a:",
+      "options": [
+        "Human respiratory virus",
+        "Plant root itself",
+        "Bacterium associated with insect-active protein examples",
+        "Filarial nematode"
+      ],
+      "answer": 2,
+      "explanation": "Source, product and susceptible target are separate."
+    },
+    {
+      "question": "Baculovirus biocontrol examples are useful partly because of:",
+      "options": [
+        "Universal lethality to every organism",
+        "Their identity as all human cold viruses",
+        "Their ability to replace every soil nutrient",
+        "Relatively restricted host ranges"
+      ],
+      "answer": 3,
+      "explanation": "Specificity differs from an indiscriminate effect."
+    },
+    {
+      "question": "Trichoderma plant-disease suppression and mycorrhiza are:",
+      "options": [
+        "Different fungal interaction examples",
+        "Identical definitions in every case",
+        "Both only viral infections",
+        "Both only antibody production"
+      ],
+      "answer": 0,
+      "explanation": "Antagonism and nutrient-exchange associations have different roles."
+    },
+    {
+      "question": "Sharing a microbial genus name guarantees all strains have the same useful function. This is:",
+      "options": [
+        "Correct universally",
+        "Incorrect; strain, target and conditions matter",
+        "The definition of an industrial product",
+        "The definition of nitrogen fixation"
+      ],
+      "answer": 1,
+      "explanation": "Biological effects require the actual context."
+    },
+    {
+      "question": "The familiar Rhizobium association is with:",
+      "options": [
+        "Only a human lymph node",
+        "Only cheese ripening",
+        "Suitable legume root nodules",
+        "Only a mosquito gut"
+      ],
+      "answer": 2,
+      "explanation": "The example concerns a plant-microbe nitrogen-fixing relationship."
+    },
+    {
+      "question": "In the Azolla association, Azolla itself is a:",
+      "options": [
+        "Nitrogen-fixing bacterium",
+        "Virus",
+        "Filarial worm",
+        "Fern"
+      ],
+      "answer": 3,
+      "explanation": "The cyanobacterial partner supplies the familiar fixation comparison."
+    },
+    {
+      "question": "Mycorrhizal fungi can improve plant access especially to:",
+      "options": [
+        "Phosphate and water in suitable contexts",
+        "Only human antibodies",
+        "Only oxygen from haemoglobin",
+        "Only preformed cancer cells"
+      ],
+      "answer": 0,
+      "explanation": "The plant-fungus exchange differs from bacterial nitrogen fixation."
+    },
+    {
+      "question": "A familiar textbook arbuscular mycorrhizal genus is:",
+      "options": [
+        "Plasmodium",
+        "Glomus",
+        "Aedes",
+        "Salmonella"
+      ],
+      "answer": 1,
+      "explanation": "The organism role must be matched with its actual association."
+    },
+    {
+      "question": "A low BOD alone certifies every aspect of water safety. This is:",
+      "options": [
+        "Correct universally",
+        "The definition of anaerobic digestion",
+        "Incorrect; the measurement answers a narrower question",
+        "The definition of a pathogen"
+      ],
+      "answer": 2,
+      "explanation": "Other chemicals, organisms and criteria can still matter."
+    },
+    {
+      "question": "The strongest first step in a mixed welfare question is to:",
+      "options": [
+        "Assume all microbes are harmful",
+        "Assume every gas is methane",
+        "Assume every immune protein is an antibody",
+        "Identify whether the name is an organism, vector, molecule or process"
+      ],
+      "answer": 3,
+      "explanation": "Correct role identification prevents category errors."
+    }
+  ]
+}

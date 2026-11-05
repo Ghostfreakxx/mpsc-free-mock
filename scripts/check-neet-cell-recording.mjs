@@ -1,5 +1,5 @@
 import assert from'node:assert/strict';import fs from'node:fs/promises';import{chromium}from'playwright';
-const slug=process.argv[2]||'cell-unit-life';if(!['cell-unit-life','biomolecules','cell-cycle-division','diversity-living-world','structural-organisation','plant-physiology','human-physiology'].includes(slug))throw Error('Unknown NEET class');
+const slug=process.argv[2]||'cell-unit-life';if(!['cell-unit-life','biomolecules','cell-cycle-division','diversity-living-world','structural-organisation','plant-physiology','human-physiology','reproduction','genetics-evolution','human-welfare','biotechnology','ecology'].includes(slug))throw Error('Unknown NEET class');
 const base=process.env.TEST_URL||'http://localhost:3000',route='/neet/classes/'+slug;
 const data=JSON.parse(await fs.readFile(`app/data/neet-${slug}-lecture.json`,'utf8')),timings=JSON.parse(await fs.readFile(`app/data/neet-${slug}-timings.json`,'utf8'));
 const browser=await chromium.launch({channel:process.env.PLAYWRIGHT_CHANNEL||'msedge',headless:true,args:['--disable-http2']});

@@ -11,6 +11,11 @@ import styles from "./lecture.module.css";
 // Each class shows only its own diagram, so load diagrams on demand instead of bundling all of them into every class page.
 const NeetBiomoleculesDiagram = dynamic(() => import("../../neet/classes/biomolecules-diagram"));
 const NeetDivisionDiagram = dynamic(() => import("../../neet/classes/cell-division-diagram"));
+const NeetEcologyDiagram = dynamic(() => import("../../neet/classes/ecology-diagram"));
+const NeetBiotechnologyDiagram = dynamic(() => import("../../neet/classes/biotechnology-diagram"));
+const NeetHumanWelfareDiagram = dynamic(() => import("../../neet/classes/human-welfare-diagram"));
+const NeetGeneticsEvolutionDiagram = dynamic(() => import("../../neet/classes/genetics-evolution-diagram"));
+const NeetReproductionDiagram = dynamic(() => import("../../neet/classes/reproduction-diagram"));
 const NeetHumanPhysiologyDiagram = dynamic(() => import("../../neet/classes/human-physiology-diagram"));
 const NeetPlantPhysiologyDiagram = dynamic(() => import("../../neet/classes/plant-physiology-diagram"));
 const NeetStructuralDiagram = dynamic(() => import("../../neet/classes/structural-diagram"));
@@ -192,6 +197,11 @@ export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: Player
           {lesson.id === "neet-structural-organisation" && <NeetStructuralDiagram chapter={chapterIndex} />}
           {lesson.id === "neet-plant-physiology" && <NeetPlantPhysiologyDiagram chapter={chapterIndex} />}
           {lesson.id === "neet-human-physiology" && <NeetHumanPhysiologyDiagram chapter={chapterIndex} />}
+          {lesson.id === "neet-reproduction" && <NeetReproductionDiagram chapter={chapterIndex} />}
+          {lesson.id === "neet-genetics-evolution" && <NeetGeneticsEvolutionDiagram chapter={chapterIndex} />}
+          {lesson.id === "neet-ecology" && <NeetEcologyDiagram chapter={chapterIndex} />}
+          {lesson.id === "neet-biotechnology" && <NeetBiotechnologyDiagram chapter={chapterIndex} />}
+          {lesson.id === "neet-human-welfare" && <NeetHumanWelfareDiagram chapter={chapterIndex} />}
           {lesson.id === "neet-cell-unit-life" && <NeetCellDiagram chapter={chapterIndex} />}
           {lesson.id === "statistics-probability" && <StatisticsDiagram chapter={chapterIndex} />}
           {lesson.id === "vector-algebra" && <VectorDiagram chapter={chapterIndex} />}
