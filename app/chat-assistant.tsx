@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from "react";
+import { memo, useCallback, useEffect, useRef, useState, type FormEvent, type KeyboardEvent, type Ref } from "react";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -37,6 +37,31 @@ const openingMessage: ChatMessage = {
 
 class AssistantError extends Error {}
 
+// One message. Memoized so a streaming answer re-renders only its own bubble, not the whole chat.
+const MessageRow = memo(function MessageRow({ message, rowRef, onLinkClick }: {
+  message: ChatMessage;
+  rowRef?: Ref<HTMLDivElement>;
+  onLinkClick: () => void;
+}) {
+  return (
+    <div className={`assistant-message-row ${message.role === "user" ? "is-user" : "is-assistant"}`} ref={rowRef}>
+      {message.role === "assistant" && <span className="assistant-message-icon"><Sparkles size={15} /></span>}
+      <div className="assistant-bubble">
+        <p>{message.content}</p>
+        {!!message.links?.length && (
+          <div className="assistant-links">
+            {message.links.map((link) => (
+              <Link href={link.href} key={`${link.href}-${link.label}`} onClick={onLinkClick}>
+                {link.label}<ArrowRight size={16} />
+              </Link>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+});
+
 // Loaded on demand by ChatLauncher; opens straight away when the student asked for it.
 export default function ChatAssistant({ initialOpen = false }: { initialOpen?: boolean }) {
   const [isOpen, setIsOpen] = useState(initialOpen);
@@ -49,6 +74,8 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
   const returnFocusRef = useRef<HTMLElement | null>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const latestMessageRef = useRef<HTMLDivElement>(null);
+  // Set while a streamed answer is growing; those updates jump into view instead of animating.
+  const streamingRef = useRef(false);
 
   function restoreFocus() {
     const target = returnFocusRef.current?.isConnected
@@ -87,7 +114,9 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
   }, []);
 
   useEffect(() => {
-    latestMessageRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    // Restarting a smooth scroll for every streamed piece keeps a phone busy with layout; a new
+    // message still glides into view.
+    latestMessageRef.current?.scrollIntoView({ behavior: streamingRef.current ? "auto" : "smooth", block: "nearest" });
   }, [messages, isSending]);
 
   async function sendMessage(content: string) {
@@ -116,16 +145,35 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
         const reader = response.body.getReader();
         const decoder = new TextDecoder();
         let answer = "";
-        for (;;) {
-          const { done, value } = await reader.read();
-          if (done) break;
-          const firstWords = !answer;
-          answer += decoder.decode(value, { stream: true });
-          if (firstWords) setIsStreaming(true);
+        let shown = "";
+        let frame = 0;
+        // The answer arrives a few words at a time. Show what has arrived at most once per frame,
+        // so a slow phone re-renders ~60 times a second at most rather than once per network piece.
+        const show = () => {
+          frame = 0;
+          if (answer === shown) return;
           const content = answer;
+          const firstWords = !shown;
+          shown = content;
+          streamingRef.current = !firstWords;
+          if (firstWords) setIsStreaming(true);
           setMessages((current) => firstWords
             ? [...current, { role: "assistant", content, mode: "ai" }]
             : [...current.slice(0, -1), { ...current[current.length - 1], content }]);
+        };
+        try {
+          for (;;) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            answer += decoder.decode(value, { stream: true });
+            // The first words skip the wait, so they appear the moment they arrive.
+            if (!shown) show();
+            else frame ||= requestAnimationFrame(show);
+          }
+        } finally {
+          cancelAnimationFrame(frame);
+          show();
+          streamingRef.current = false;
         }
         if (!answer.trim()) throw new AssistantError("The assistant could not answer that just now.");
         return;
@@ -185,6 +233,9 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
     if (!isSending) setMessages([openingMessage]);
   }
 
+  // Stable, so memoized rows are not re-rendered for a new function each time.
+  const closeAfterLink = useCallback(() => setIsOpen(false), []);
+
   function closeChat() {
     setIsOpen(false);
     restoreFocus();
@@ -219,25 +270,12 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
 
           <div className="assistant-messages" role="log" aria-live="polite" aria-relevant="additions text">
             {messages.map((message, index) => (
-              <div
-                className={`assistant-message-row ${message.role === "user" ? "is-user" : "is-assistant"}`}
+              <MessageRow
                 key={`${index}-${message.role}`}
-                ref={index === messages.length - 1 ? latestMessageRef : undefined}
-              >
-                {message.role === "assistant" && <span className="assistant-message-icon"><Sparkles size={15} /></span>}
-                <div className="assistant-bubble">
-                  <p>{message.content}</p>
-                  {!!message.links?.length && (
-                    <div className="assistant-links">
-                      {message.links.map((link) => (
-                        <Link href={link.href} key={`${link.href}-${link.label}`} onClick={() => setIsOpen(false)}>
-                          {link.label}<ArrowRight size={16} />
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </div>
+                message={message}
+                rowRef={index === messages.length - 1 ? latestMessageRef : undefined}
+                onLinkClick={closeAfterLink}
+              />
             ))}
 
             {messages.length === 1 && !isSending && (
