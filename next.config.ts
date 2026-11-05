@@ -32,13 +32,22 @@ export const securityHeaders = [
   { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), payment=(), usb=()" },
   { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains" },
   { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
+  // Other websites cannot embed our scripts, images, videos or data files in their own pages.
+  { key: "Cross-Origin-Resource-Policy", value: "same-origin" },
+  { key: "Origin-Agent-Cluster", value: "?1" },
+  // Asks AI services not to train on or reuse the content (proxy.ts blocks the known crawlers).
+  { key: "X-Robots-Tag", value: "noai, noimageai" },
 ];
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   async headers() {
     // Note downloads send their own stricter CSP, so they are excluded here.
-    return [{ source: "/((?!downloads/).*)", headers: securityHeaders }];
+    return [
+      { source: "/((?!downloads/).*)", headers: securityHeaders },
+      // Data files are for the site's own pages: keep them out of search results and caches of copies.
+      { source: "/question-bank/:path*", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow, noarchive, noai" }] },
+    ];
   },
 };
 

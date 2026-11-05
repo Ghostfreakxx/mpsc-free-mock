@@ -45,7 +45,7 @@ jobs:
       - name: Start the production server
         run: |
           npx next start -p 3000 > server.log 2>&1 &
-          for i in $(seq 1 60); do curl -sf -o /dev/null http://localhost:3000/ && exit 0; sleep 1; done
+          for i in $(seq 1 60); do curl -sf -o /dev/null http://localhost:3000/robots.txt && exit 0; sleep 1; done
           cat server.log; exit 1
       - name: Smoke and security check
         run: npm run smoke

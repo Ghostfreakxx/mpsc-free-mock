@@ -15,6 +15,8 @@ export async function GET(_request: Request, { params }: { params: Promise<{ id:
       "Content-Disposition": `attachment; filename="${pack.id}-foundation-notes-${contentRevision}.html"`,
       "X-Content-Type-Options": "nosniff",
       "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'",
+      "Cross-Origin-Resource-Policy": "same-origin",
+      "X-Robots-Tag": "noindex, noai",
       "Cache-Control": "public, max-age=0, must-revalidate",
     },
   });

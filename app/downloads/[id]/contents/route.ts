@@ -12,5 +12,5 @@ export async function GET(_request: Request, { params }: { params: Promise<{ id:
   const { id } = await params;
   const contents = packContents(id);
   if (!contents) return new Response("Notes not found", { status: 404 });
-  return Response.json(contents, { headers: { "Cache-Control": "public, max-age=600, stale-while-revalidate=86400" } });
+  return Response.json(contents, { headers: { "Cache-Control": "public, max-age=600, stale-while-revalidate=86400", "Cross-Origin-Resource-Policy": "same-origin", "X-Robots-Tag": "noindex, noai" } });
 }
