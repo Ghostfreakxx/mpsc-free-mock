@@ -1,0 +1,13 @@
+import Link from'next/link';
+import styles from'../../../../jee/classes/lecture.module.css';
+import review from'../../../../data/neet-subheading-review.json';
+import map from'../../../../data/neet-physics-chemistry-map.json';
+export const metadata={title:'NEET Physics and Chemistry | Detailed subheading review'};
+export default function SubheadingReview(){return <main className={styles.page}>
+ <header className={styles.header}><Link href="/neet/classes/physics-chemistry" prefetch={false}>← Physics and Chemistry map</Link><Link href="/neet/classes" prefetch={false}>NEET classes</Link></header>
+ <div className={styles.heading}><p>NEET UG · PHYSICS &amp; CHEMISTRY</p><h1>Detailed subheading review</h1><span>{review.rows.length} grouped entries · 40 units · {review.baseline}</span></div>
+ <section className={styles.notes}><p>{review.standard}</p><p>Formal vector algebra and targeted Chemistry topics have new recorded supplements. Existing explanations were checked before treating an exact-word search result as a gap.</p><p><Link href="/neet/classes/physics-vectors" prefetch={false}>Vectors: components and products →</Link></p><p><Link href="/neet/classes/chemistry-closeout" prefetch={false}>Chemistry: targeted subheading review →</Link></p><p><a href={review.source} target="_blank" rel="noreferrer">Official syllabus</a> · Checked {review.checked}. This is a dated 2026 baseline, not a verified 2027 syllabus claim.</p></section>
+ <nav className={styles.notes} aria-label="Review subjects"><p><a href="#physics">Physics review</a></p><p><a href="#chemistry">Chemistry review</a></p></nav>
+ {['Physics','Chemistry'].map(subject=><section key={subject} id={subject.toLowerCase()}><h2>{subject}</h2>{map.units.filter(u=>u.subject===subject).map(u=><section className={styles.notes} key={u.unit} id={`${subject.toLowerCase()}-${u.unit}`}><h3>Unit {u.unit}: {u.title}</h3>{review.rows.filter(r=>r.subject===subject&&r.unit===u.unit).map(row=><details key={row.id} data-review-id={row.id}><summary>{row.heading} · {row.status}</summary><p>{row.review}</p><ul>{row.refs.map(ref=><li key={`${ref.id}-${ref.chapter}`}><Link href={ref.href} prefetch={false}>{ref.id} · Chapter {ref.chapter}: {ref.title}</Link></li>)}</ul></details>)}</section>)}</section>)}
+ <section className={styles.notes}><h2>Further practice</h2><p>Continue with labelled diagrams, authentic experimental data, mixed questions and timed NEET practice. A located explanation is not a guarantee of mastery or hands-on proficiency.</p></section>
+ </main>}

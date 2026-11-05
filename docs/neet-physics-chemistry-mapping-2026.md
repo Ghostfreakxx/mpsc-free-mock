@@ -2,7 +2,7 @@
 
 Checked 5 November 2026 against the dated official NEET UG 2026 syllabus. No verified 2027 NEET baseline is claimed.
 
-Selected shared foundations mapped at unit and chapter level. This is a study route, not a completed required-subheading audit or a claim of exhaustive NEET coverage. Start with focus chapters; other chapters and the original JEE quiz can contain supporting extensions.
+Selected shared foundations mapped at unit and chapter level. This study route alone is not a completed required-subheading audit; see the separate detailed review. It is not a claim of exhaustive NEET mastery. Start with focus chapters; other chapters and the original JEE quiz can contain supporting extensions.
 
 The original audio, diagrams, transcript, clarifications and questions are reused without truncating or reordering chapters. NEET wrappers use independent `neet.shared.<id>.lecture.v1` progress; JEE keys remain unchanged. Original narration may say JEE. Quiz extensions are disclosed rather than relabelled as NEET-only practice.
 

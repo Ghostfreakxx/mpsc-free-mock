@@ -256,7 +256,7 @@ All ten official Biology units now have foundation recordings in twelve classes 
 
 ## Physics and Chemistry reuse
 
-The [separate NEET 2026 mapping](neet-physics-chemistry-mapping-2026.md) covers 20 Physics and 20 Chemistry units with 106 shared JEE recordings, original chapter indices, NEET navigation and independent progress. Focus chapters and supporting extensions are explicit. This establishes a study route, not a completed required-subheading audit. No new narration is generated for the reused classes.
+The [separate NEET 2026 mapping](neet-physics-chemistry-mapping-2026.md) covers 20 Physics and 20 Chemistry units with 106 shared JEE recordings, original chapter indices, NEET navigation and independent progress. Focus chapters and supporting extensions are explicit. This establishes a study route, not a completed required-subheading audit. No new narration is generated for the reused classes. The [detailed review](neet-subheading-review-2026.md) adds separate Physics-vector and Chemistry-subheading supplements: 14 narrated chapters and 28 original questions, with independent progress.
 
 ## Release requirements
 

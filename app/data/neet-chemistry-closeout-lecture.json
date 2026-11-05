@@ -1,0 +1,501 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English science teacher. Read vector notation, signs and chemical formulas carefully. Speak every sentence completely including the final sentence. Do not add or omit words.",
+  "title": "Chemistry: Targeted Subheading Review",
+  "subject": "Chemistry",
+  "unit": 15,
+  "scope": "Targeted NEET 2026 Chemistry Units 1, 11 and 14–17 supplement: ethyne preparation, linear/cyclic alkyne polymerisation, Freon-12 uses/environment, Newman/sawhorse ethane, transition-element occurrence, representative oxygen-compound uses, phenol sulphonation, alkyne halogen/HX additions, homologous series and combining gas volumes. Existing related reaction explanations are reused. Educational chemistry and stoichiometry, not operating procedures or personal medical guidance. Original practice; further mixed problems remain.",
+  "sources": [
+    {
+      "title": "NMC: official NEET UG 2026 syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/01/202601081066816297.pdf"
+    },
+    {
+      "title": "IIT Kanpur SATHEE: NCERT Hydrocarbons",
+      "url": "https://sathee.iitk.ac.in/ncert-books/udaan/udaan-che-11/chem-11-unit-13-hydrocarbons/"
+    },
+    {
+      "title": "NOAA: ozone-depletion science",
+      "url": "https://www.csl.noaa.gov/assessments/ozone/2018/twentyquestions/"
+    },
+    {
+      "title": "IGNOU: molecular representations and conformations",
+      "url": "https://egyankosh.ac.in/bitstream/123456789/7584/1/Unit-14.pdf"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Ethyne preparation and the existing elimination route",
+      "formula": "CaC₂ + 2H₂O → C₂H₂ + Ca(OH)₂",
+      "points": [
+        "CaC₂ + 2H₂O → C₂H₂ + Ca(OH)₂",
+        "The calcium-carbide route produces ethyne",
+        "Double dehydrohalogenation supplies another alkyne route",
+        "Stoichiometric equations are not operating instructions"
+      ],
+      "board": {
+        "lines": [
+          "CaC₂ + 2H₂O → C₂H₂ + Ca(OH)₂",
+          "The calcium-carbide route produces ethyne",
+          "Double dehydrohalogenation supplies another alkyne route",
+          "Stoichiometric equations are not operating instructions"
+        ],
+        "flow": [
+          "Calcium carbide + water",
+          "Ethyne + calcium hydroxide",
+          "Alternative: suitable dihalide → two eliminations",
+          "Keep carbon and hydrogen inventories balanced"
+        ]
+      },
+      "script": "Welcome to the targeted NEET Chemistry closeout, using an AI generated Marin voice. The first topic makes the calcium carbide route to ethyne explicit. The balanced equation is calcium carbide plus two water molecules giving one ethyne molecule and one calcium hydroxide formula unit. In formulas, calcium C two plus two H two O gives C two H two plus calcium O H taken twice. One mole of calcium carbide therefore corresponds ideally to one mole of ethyne, assuming the stated reaction and complete conversion. That is a stoichiometric comparison rather than an experimental procedure. Existing organic halogen chapter nineteen explains how two eliminations from a suitable vicinal dihalide can produce an alkyne, so that material should be reused rather than called missing. Carbon chain construction by an acetylide is another different transformation already discussed in the hydrocarbon class. Distinguish hydrolysis of carbide, elimination from a dihalide and carbon carbon bond formation. None of those names alone establishes an observed yield or the purity of a collected material."
+    },
+    {
+      "title": "Alkyne polymerisation: chains and cyclic combination",
+      "formula": "n HC≡CH → (−CH=CH−)ₙ is the ideal chain comparison",
+      "points": [
+        "n HC≡CH → (−CH=CH−)ₙ is the ideal chain comparison",
+        "Each ethyne unit retains two C and two H atoms",
+        "3 C₂H₂ → C₆H₆ is the cyclic trimerisation comparison",
+        "Chain growth and formation of one ring are different"
+      ],
+      "board": {
+        "lines": [
+          "n HC≡CH → (−CH=CH−)ₙ is the ideal chain comparison",
+          "Each ethyne unit retains two C and two H atoms",
+          "3 C₂H₂ → C₆H₆ is the cyclic trimerisation comparison",
+          "Chain growth and formation of one ring are different"
+        ],
+        "flow": [
+          "Ethyne monomer: C₂H₂",
+          "Linear comparison: conjugated polyacetylene chain",
+          "Cyclic comparison: three ethyne units → benzene",
+          "Compare connectivity as well as total atom counts"
+        ]
+      },
+      "script": "Alkyne polymerisation needs its own comparison rather than being inferred only from the existing ethene polymer example. In ideal linear polymerisation of ethyne, the repeat unit is C H double bond C H along a conjugated chain, usually called polyacetylene. Each incorporated ethyne unit retains two carbon and two hydrogen atoms in the ideal atom inventory. Ignoring end groups, one hundred units therefore contain two hundred carbon atoms and two hundred hydrogen atoms. This differs from polyethene, whose repeat unit contains four hydrogens for every two carbons. A separate textbook reaction combines three ethyne molecules to give one benzene molecule, described as cyclic polymerisation or cyclotrimerisation. The atom balance is three times C two H two giving C six H six. This is one six membered aromatic ring rather than a long polyacetylene chain. Appropriate reaction conditions determine which chemical transformation is described; this lesson states the molecular comparison without giving a preparation protocol. Equal total composition does not make chain connectivity and ring connectivity identical."
+    },
+    {
+      "title": "Freon-12: use, persistence and the ozone mechanism",
+      "formula": "The textbook Freon-12 example is CCl₂F₂",
+      "points": [
+        "The textbook Freon-12 example is CCl₂F₂",
+        "CFCs had refrigerant and propellant uses",
+        "Stratospheric UV can release reactive chlorine",
+        "Ozone depletion differs from greenhouse warming"
+      ],
+      "board": {
+        "lines": [
+          "The textbook Freon-12 example is CCl₂F₂",
+          "CFCs had refrigerant and propellant uses",
+          "Stratospheric UV can release reactive chlorine",
+          "Ozone depletion differs from greenhouse warming"
+        ],
+        "flow": [
+          "Historical refrigerant / propellant applications",
+          "Atmospheric persistence enables transport",
+          "UV cleavage → reactive chlorine chemistry",
+          "Catalytic ozone loss; not every refrigerant has this mechanism"
+        ]
+      },
+      "script": "The older textbook Freon comparison commonly uses Freon twelve, dichlorodifluoromethane, with formula C Cl two F two. It is a chlorofluorocarbon, or C F C. Such compounds had important refrigerant and aerosol propellant applications because of useful physical properties and relative stability near the surface. That stability also allows some emissions to persist and reach the stratosphere. There, energetic ultraviolet radiation can release chlorine containing reactive species, and catalytic reaction cycles can remove ozone. A catalyst-like chlorine species can be regenerated, so one released chlorine atom is not necessarily limited to destroying one ozone molecule. Stratospheric ozone depletion increases concern about ultraviolet exposure at the surface; it is not the same physical mechanism as greenhouse warming. Some compounds can be relevant to both issues through different properties. Freon is a commercial family name, so avoid claiming that every refrigerant or every compound sold under a related label contains chlorine and follows the identical ozone mechanism. Use the specified molecular example and distinguish historical uses from current product or regulatory advice."
+    },
+    {
+      "title": "Ethane: connect Newman and sawhorse drawings",
+      "formula": "Newman views along the C−C bond",
+      "points": [
+        "Newman views along the C−C bond",
+        "Sawhorse shows that bond obliquely",
+        "Staggered ethane has a 60° nearest H−C−C−H dihedral",
+        "Eclipsed ethane has a 0° nearest dihedral"
+      ],
+      "board": {
+        "lines": [
+          "Newman views along the C−C bond",
+          "Sawhorse shows that bond obliquely",
+          "Staggered ethane has a 60° nearest H−C−C−H dihedral",
+          "Eclipsed ethane has a 0° nearest dihedral"
+        ],
+        "flow": [
+          "Choose front and rear carbons consistently",
+          "Newman: front point, rear circle",
+          "Sawhorse: draw both carbon centres and their bond",
+          "Rotation changes conformation, not connectivity"
+        ]
+      },
+      "script": "The existing hydrocarbon class explains ethane in a Newman view. This chapter adds the required sawhorse comparison. A Newman projection looks directly along the carbon carbon bond. The nearer carbon is represented by the central point and the farther carbon by a circle, with three hydrogen directions associated with each carbon. A sawhorse drawing views the same bond obliquely, showing the two carbon positions joined by a sloping bond and three attached hydrogens at each end. Keep the front and rear carbon assignments consistent when moving between drawings. In staggered ethane, the nearest front and rear carbon hydrogen directions have a sixty degree dihedral angle; in an eclipsed arrangement they align at zero degrees. The staggered conformation has lower torsional energy in the introductory comparison. Rotation changes conformation without changing which atoms are bonded, so these pictures are not different constitutional isomers. A drawing's apparent angle on a flat page is not automatically the actual spatial bond angle. Compare the relative hydrogen directions around the selected carbon carbon axis."
+    },
+    {
+      "title": "Transition-element occurrence: mineral, ore and metal",
+      "formula": "Many transition elements occur in mineral compounds",
+      "points": [
+        "Many transition elements occur in mineral compounds",
+        "An ore is a resource usable under the stated economic context",
+        "Chromite: FeCr₂O₄; pyrolusite: MnO₂",
+        "Occurrence does not uniquely determine a metal’s properties"
+      ],
+      "board": {
+        "lines": [
+          "Many transition elements occur in mineral compounds",
+          "An ore is a resource usable under the stated economic context",
+          "Chromite: FeCr₂O₄; pyrolusite: MnO₂",
+          "Occurrence does not uniquely determine a metal’s properties"
+        ],
+        "flow": [
+          "Natural occurrence in compounds or occasionally native form",
+          "Example oxide minerals and their formulae",
+          "Distinguish a mineral name from a pure element",
+          "Connect occurrence with existing oxidant chapters"
+        ]
+      },
+      "script": "Transition elements occur in nature in several chemical forms rather than as a collection of isolated neutral atoms. Many occur in oxide or sulfide minerals, while some metals can also occur in native form under suitable geological conditions. A mineral is a naturally occurring substance with a characteristic composition and structure. Calling a deposit an ore adds a resource and extraction context; economic usefulness is not fixed by an elemental symbol alone. Familiar oxide examples include hematite, iron two O three, and magnetite, iron three O four. Chromite has formula iron chromium two O four, while pyrolusite is associated with manganese dioxide. Existing d and f block chapters eleven and thirteen connect chromium and manganese compounds with the preparation chemistry of the prescribed oxidants. These occurrence examples do not imply that every transition metal has one identical mineral source or one oxidation state. For chromite, assigning iron plus two and oxygen minus two gives chromium plus three in the elementary formula ledger. Mineral identity and metallic properties remain different questions."
+    },
+    {
+      "title": "Oxygen compounds: connect properties with familiar uses",
+      "formula": "Alcohols, ethers and ketones can serve as suitable solvents",
+      "points": [
+        "Alcohols, ethers and ketones can serve as suitable solvents",
+        "Methanol and ethanol have different biological hazards",
+        "Phenol/formaldehyde participate in resin chemistry",
+        "Acetic acid has chemical and food-related contexts"
+      ],
+      "board": {
+        "lines": [
+          "Alcohols, ethers and ketones can serve as suitable solvents",
+          "Methanol and ethanol have different biological hazards",
+          "Phenol/formaldehyde participate in resin chemistry",
+          "Acetic acid has chemical and food-related contexts"
+        ],
+        "flow": [
+          "Identify the functional group",
+          "Relate polarity, bonding and volatility to a selected use",
+          "Distinguish a product’s composition and concentration",
+          "A familiar use does not establish universal interchangeability"
+        ]
+      },
+      "script": "The existing oxygen compound recording emphasizes structures and reactions. Add a few representative applications to connect those properties with uses. Ethanol is used as a solvent and fuel and is also the alcohol in alcoholic beverages. Methanol also has solvent, fuel and industrial feedstock roles, but it is toxic and is not an interchangeable beverage ingredient. Diethyl ether is a volatile solvent and a historical anaesthetic example, while acetone is a familiar ketone solvent. Their usefulness depends on properties and context, not merely on all containing oxygen. Phenol and formaldehyde participate in important resin chemistry, illustrating a synthetic material application. Acetic acid is an industrial chemical and a constituent of vinegar at an appropriate dilute food formulation; that statement does not make concentrated laboratory acid equivalent to a food product. These are representative uses within the general syllabus heading, not a new list of required manufacturing processes. In an examination comparison, name the compound and the relevant property rather than claiming that every member of one functional group has identical uses or biological effects."
+    },
+    {
+      "title": "Phenol sulphonation: which atom receives the new group?",
+      "formula": "Phenolic OH activates ortho/para ring positions",
+      "points": [
+        "Phenolic OH activates ortho/para ring positions",
+        "Sulphonation introduces a ring −SO₃H group",
+        "The familiar temperature comparison changes major isomer",
+        "Ring substitution differs from forming an O-sulfate ester"
+      ],
+      "board": {
+        "lines": [
+          "Phenolic OH activates ortho/para ring positions",
+          "Sulphonation introduces a ring −SO₃H group",
+          "The familiar temperature comparison changes major isomer",
+          "Ring substitution differs from forming an O-sulfate ester"
+        ],
+        "flow": [
+          "Phenol: retain the ring −OH group",
+          "Electrophilic substitution adds ring −SO₃H",
+          "Cooler textbook comparison: ortho emphasis",
+          "Warmer comparison: para emphasis; conditions matter"
+        ]
+      },
+      "script": "Phenol sulphonation completes the named electrophilic substitution comparison alongside the existing bromination and nitration explanations. The hydroxyl group activates the aromatic ring and directs substitution mainly towards ortho and para sites in the elementary account. The introduced group is sulfonic acid, S O three H, attached through sulfur to a ring carbon. The original ring hydroxyl group is retained. This is different from merely drawing a sulfate ester on the phenolic oxygen. In the familiar concentrated sulfuric acid comparison, cooler conditions favor the ortho hydroxybenzenesulfonic acid product, while the warmer comparison favors the para product. Reversibility and the stated conditions matter, so this should not be turned into a claim that every sample contains one perfectly pure isomer. The existing hydrocarbon sulfonation chapter already explains the broader reversible substitution framework. Here the missing connection is the phenol substrate and its directed products. In a structure question, mark the original hydroxyl carbon first, then locate the new sulfonic acid group relative to it."
+    },
+    {
+      "title": "Alkyne halogen and hydrogen-halide additions",
+      "formula": "One or two equivalents can give different products",
+      "points": [
+        "One or two equivalents can give different products",
+        "Propyne + HBr: usual ionic major product is 2-bromopropene",
+        "A second HBr gives the geminal dibromide comparison",
+        "Halogen addition differs from hydrogen-halide addition"
+      ],
+      "board": {
+        "lines": [
+          "One or two equivalents can give different products",
+          "Propyne + HBr: usual ionic major product is 2-bromopropene",
+          "A second HBr gives the geminal dibromide comparison",
+          "Halogen addition differs from hydrogen-halide addition"
+        ],
+        "flow": [
+          "Propyne: CH₃−C≡CH",
+          "One HBr → CH₃−C(Br)=CH₂",
+          "Second HBr → CH₃−CBr₂−CH₃",
+          "Track equivalents and functional class"
+        ]
+      },
+      "script": "Alkyne addition requires tracking how many pi bonds remain after each step. Under the usual ionic textbook comparison, adding one equivalent of hydrogen bromide to propyne gives mainly two bromopropene, a vinyl bromide with one carbon carbon double bond remaining. A second equivalent gives the familiar geminal dibromide, two two dibromopropane, with both bromines on the same carbon. The first and second products are therefore not the same functional class. This is a stated ordinary ionic pathway; the peroxide effect should not be generalized to every hydrogen halide or reaction context. Adding bromine itself is another comparison: one equivalent can give a dibromoalkene, while further addition can give a tetrabromoalkane. The reagent supplies two bromine atoms per bromine molecule rather than one hydrogen and one bromine. Existing hydrocarbon chapters six and nine already explain hydrogenation and hydration, including ethyne's aldehyde exception. Combine those lessons with this equivalents ledger, and check every carbon, hydrogen and halogen count before selecting a product."
+    },
+    {
+      "title": "Homologous series: common pattern, changing chain size",
+      "formula": "A homologous series shares a structural/functional pattern",
+      "points": [
+        "A homologous series shares a structural/functional pattern",
+        "Successive ordinary members differ by CH₂",
+        "General formulae require the stated structural class",
+        "Similar reaction types do not mean identical physical properties"
+      ],
+      "board": {
+        "lines": [
+          "A homologous series shares a structural/functional pattern",
+          "Successive ordinary members differ by CH₂",
+          "General formulae require the stated structural class",
+          "Similar reaction types do not mean identical physical properties"
+        ],
+        "flow": [
+          "Methanol: CH₄O",
+          "Ethanol: C₂H₆O",
+          "Propanol member: C₃H₈O",
+          "A CH₂ step changes relative formula mass by about 14"
+        ]
+      },
+      "script": "A homologous series groups compounds with a common structural pattern and functional group, where successive ordinary members differ by a C H two unit. Methanol, ethanol and the propanol members illustrate the simple saturated monohydric alcohol series. Their formulas progress from C H four O to C two H six O to C three H eight O. The relative formula mass increases by about fourteen for each such step using carbon twelve and hydrogen one. Comparable functional groups support related chemical reaction types, but boiling points, solubility and other physical properties can change with chain length. Members need not be structural isomers because their molecular formulas differ. Conversely, propan one ol and propan two ol have the same molecular formula and are positional isomers, not two successive fourteen unit steps. A general formula also needs a structural scope: a saturated open chain monohydric alcohol comparison is not a formula for every oxygen compound, ring or unsaturated molecule. Identify the functional pattern before using a homologous-series rule."
+    },
+    {
+      "title": "Combining gas volumes: connect the laws with stoichiometry",
+      "formula": "Compare gas volumes at the same temperature and pressure",
+      "points": [
+        "Compare gas volumes at the same temperature and pressure",
+        "Simple whole-number volume ratios reflect the stated reaction",
+        "2 H₂(g) + O₂(g) → 2 H₂O(g)",
+        "A condensed product is not another gas volume in that ratio"
+      ],
+      "board": {
+        "lines": [
+          "Compare gas volumes at the same temperature and pressure",
+          "Simple whole-number volume ratios reflect the stated reaction",
+          "2 H₂(g) + O₂(g) → 2 H₂O(g)",
+          "A condensed product is not another gas volume in that ratio"
+        ],
+        "flow": [
+          "Balanced gas equation: coefficients 2:1:2",
+          "Ideal gas amounts share one molar-volume basis",
+          "4 L H₂ + 2 L O₂ → 4 L water vapor in the model",
+          "Specify phase and avoid mixing temperature/pressure conditions"
+        ]
+      },
+      "script": "The existing mole class teaches mass combination laws and equal gas amounts at equal temperature and pressure. Complete the connection with Gay Lussac's law of combining gas volumes: gases participating in a suitable reaction have simple whole number volume ratios when compared at the same temperature and pressure. In the idealized hydrogen oxygen example, two volumes of hydrogen react with one volume of oxygen to form two volumes of water vapor, with all volumes referred to the same conditions and the product remaining gaseous. Thus four litres of hydrogen and two litres of oxygen correspond ideally to four litres of water vapor at that common reference condition. If the water condenses, its liquid volume is not four litres by this gas ratio argument. Avogadro's equal volume comparison connects these ratios with relative molecule counts and balanced coefficients. Do not compare one hot reactant volume with a cold product volume without correcting the conditions. State the physical phase as carefully as the numerical ratio."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Ideal ethyne formed per mole of CaC₂ in the stated reaction is:",
+      "options": [
+        "1 mol",
+        "2 mol",
+        "0.5 mol",
+        "3 mol"
+      ],
+      "answer": 0,
+      "explanation": "The balanced equation has a 1:1 carbide-to-ethyne ratio."
+    },
+    {
+      "question": "The other product in CaC₂ hydrolysis is:",
+      "options": [
+        "CaCO₃",
+        "Ca(OH)₂",
+        "CaO₂",
+        "CaH₂"
+      ],
+      "answer": 1,
+      "explanation": "Balance calcium, oxygen and hydrogen as well as carbon."
+    },
+    {
+      "question": "The ideal polyacetylene repeat unit from ethyne has composition:",
+      "options": [
+        "C₂H₄",
+        "C₂H₆",
+        "C₂H₂",
+        "C₆H₁₂"
+      ],
+      "answer": 2,
+      "explanation": "Each ethyne unit retains its carbon/hydrogen inventory in this ideal addition model."
+    },
+    {
+      "question": "Three ethyne molecules can give the textbook cyclic product:",
+      "options": [
+        "Ethane, C₂H₆",
+        "Polyethene, (C₂H₄)ₙ",
+        "Methane, CH₄",
+        "Benzene, C₆H₆"
+      ],
+      "answer": 3,
+      "explanation": "Cyclotrimerisation combines three two-carbon units into a six-carbon ring."
+    },
+    {
+      "question": "The textbook Freon-12 formula is:",
+      "options": [
+        "CCl₂F₂",
+        "CCl₄",
+        "CHCl₃",
+        "CHI₃"
+      ],
+      "answer": 0,
+      "explanation": "Freon-12 is dichlorodifluoromethane."
+    },
+    {
+      "question": "The CFC ozone-depletion comparison chiefly involves:",
+      "options": [
+        "Only carbon dioxide trapping infrared radiation",
+        "Stratospheric release of reactive chlorine and catalytic ozone loss",
+        "Every refrigerant absorbing all sunlight",
+        "Direct conversion of nitrogen to methane"
+      ],
+      "answer": 1,
+      "explanation": "Ozone depletion and greenhouse warming are distinct mechanisms."
+    },
+    {
+      "question": "A Newman projection looks:",
+      "options": [
+        "Only perpendicular to every bond",
+        "Only at a molecular formula",
+        "Along the selected C−C bond",
+        "Along an O−H bond in ethane"
+      ],
+      "answer": 2,
+      "explanation": "The central point and rear circle represent carbons on the viewing axis."
+    },
+    {
+      "question": "The nearest H−C−C−H dihedral in staggered ethane is:",
+      "options": [
+        "0°",
+        "180° for every pair",
+        "109.5° by definition",
+        "60°"
+      ],
+      "answer": 3,
+      "explanation": "This is a torsional angle, not the tetrahedral bond angle."
+    },
+    {
+      "question": "The familiar chromite formula is:",
+      "options": [
+        "FeCr₂O₄",
+        "Fe₂CrO₃",
+        "K₂Cr₂O₇",
+        "MnO₂"
+      ],
+      "answer": 0,
+      "explanation": "The ore/mineral example differs from the final dichromate product."
+    },
+    {
+      "question": "With Fe assigned +2 and O −2 in FeCr₂O₄, each Cr is assigned:",
+      "options": [
+        "+6",
+        "+3",
+        "+2",
+        "0"
+      ],
+      "answer": 1,
+      "explanation": "2+2x−8=0 gives x=3."
+    },
+    {
+      "question": "Which comparison correctly distinguishes methanol and ethanol?",
+      "options": [
+        "Both are harmless in every amount",
+        "Both are carboxylic acids",
+        "Both have industrial uses, but methanol is not an interchangeable beverage ingredient",
+        "Both have identical biological effects"
+      ],
+      "answer": 2,
+      "explanation": "Functional-group similarity does not imply identical toxicology or suitability."
+    },
+    {
+      "question": "Phenol and formaldehyde are familiar partners in:",
+      "options": [
+        "Only acetylene trimerisation",
+        "Only calcium-carbide hydrolysis",
+        "Only chlorofluorocarbon formation",
+        "Resin chemistry"
+      ],
+      "answer": 3,
+      "explanation": "This is a representative material-use connection."
+    },
+    {
+      "question": "In ring sulphonation of phenol, the original phenolic −OH group is:",
+      "options": [
+        "Retained while ring −SO₃H is introduced",
+        "Always replaced by chlorine",
+        "Always converted to an alkene",
+        "Removed with both ring carbons"
+      ],
+      "answer": 0,
+      "explanation": "The taught transformation is aromatic substitution, not loss of the phenolic group."
+    },
+    {
+      "question": "Relative to −OH, the familiar warmer phenol-sulphonation comparison favors:",
+      "options": [
+        "Only the meta product",
+        "The para sulfonic-acid product",
+        "An obligatory sulfate ester only",
+        "A product with no sulfur"
+      ],
+      "answer": 1,
+      "explanation": "This is a condition-dependent textbook major-product comparison."
+    },
+    {
+      "question": "The usual ionic major product after one equivalent of HBr adds to propyne is:",
+      "options": [
+        "2,2-Dibromopropane immediately",
+        "Propane",
+        "2-Bromopropene",
+        "Benzene"
+      ],
+      "answer": 2,
+      "explanation": "One equivalent leaves a C=C bond in the vinyl-halide product."
+    },
+    {
+      "question": "A second HBr in the stated propyne comparison gives a:",
+      "options": [
+        "Vicinal dibromide by definition",
+        "Carboxylic acid",
+        "Polyacetylene chain",
+        "Geminal dibromide"
+      ],
+      "answer": 3,
+      "explanation": "Both bromines occupy the same carbon in the familiar product."
+    },
+    {
+      "question": "Successive ordinary members of a homologous series differ by:",
+      "options": [
+        "CH₂",
+        "CH₄",
+        "CO₂",
+        "H₂O"
+      ],
+      "answer": 0,
+      "explanation": "The usual chain-extension step adds one carbon and two hydrogens."
+    },
+    {
+      "question": "Propan-1-ol and propan-2-ol are:",
+      "options": [
+        "Successive homologues differing by CH₂",
+        "Positional isomers with the same molecular formula",
+        "Different elements",
+        "Necessarily identical in every property"
+      ],
+      "answer": 1,
+      "explanation": "The hydroxyl position changes without changing the molecular formula."
+    },
+    {
+      "question": "At common conditions with water remaining gaseous, H₂:O₂:H₂O volume ratios are:",
+      "options": [
+        "1:1:1",
+        "2:2:1",
+        "2:1:2",
+        "1:2:2"
+      ],
+      "answer": 2,
+      "explanation": "The balanced gas equation supplies the common-condition ideal volume ratios."
+    },
+    {
+      "question": "If the product water condenses, the same gas-ratio calculation directly gives its liquid volume. This is:",
+      "options": [
+        "Correct at every temperature",
+        "Correct because all substances have one molar volume",
+        "Correct if the equation is balanced",
+        "Incorrect; the liquid is outside that gas-volume comparison"
+      ],
+      "answer": 3,
+      "explanation": "Phase and measurement conditions are essential."
+    }
+  ]
+}

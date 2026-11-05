@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English science teacher. Read vector notation, signs and chemical formulas carefully. Speak every sentence completely including the final sentence. Do not add or omit words.",
+  "title": "Vectors: Components and Products",
+  "subject": "Physics",
+  "unit": 2,
+  "scope": "Targeted NEET 2026 Physics Unit 2 supplement: vector notation and normalization, addition/subtraction and resolution, scalar and vector products with numerical work and direction checks. Reuse the existing motion applications afterwards. Original practice; further mixed problems remain.",
+  "sources": [
+    {
+      "title": "NMC: official NEET UG 2026 syllabus",
+      "url": "https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/01/202601081066816297.pdf"
+    },
+    {
+      "title": "OpenStax: vector products",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/2-4-products-of-vectors"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Components, magnitude and unit vectors",
+      "formula": "A = Aₓ î + Aᵧ ĵ + A𝓏 k̂",
+      "points": [
+        "A = Aₓ î + Aᵧ ĵ + A𝓏 k̂",
+        "|A| = √(Aₓ² + Aᵧ² + A𝓏²)",
+        "A unit vector has magnitude one",
+        "Â = A / |A| requires A ≠ 0"
+      ],
+      "board": {
+        "lines": [
+          "A = Aₓ î + Aᵧ ĵ + A𝓏 k̂",
+          "|A| = √(Aₓ² + Aᵧ² + A𝓏²)",
+          "A unit vector has magnitude one",
+          "Â = A / |A| requires A ≠ 0"
+        ],
+        "flow": [
+          "Choose orthonormal Cartesian axes",
+          "Write signed components along î, ĵ and k̂",
+          "Compute the nonnegative magnitude",
+          "Divide a nonzero vector by its magnitude"
+        ]
+      },
+      "script": "Welcome to this NEET Physics vector foundation supplement, using an AI generated Marin voice. Existing motion classes apply components, but we now make the vector algebra explicit. A scalar has magnitude without a spatial direction, while a vector includes a direction and follows vector addition. In a right handed Cartesian system, i hat, j hat and k hat are perpendicular unit vectors along the positive axes. Write a vector as its x component times i hat plus its y component times j hat plus its z component times k hat. Its magnitude is the square root of the sum of the three squared components. A displacement three metres east and four metres north has magnitude five metres. Dividing that vector by five metres gives its direction unit vector: zero point six i hat plus zero point eight j hat. This unit vector is dimensionless. The zero vector has zero magnitude and no unique direction, so division by its magnitude cannot define a unit vector."
+    },
+    {
+      "title": "Addition, subtraction and resolution",
+      "formula": "Add and subtract corresponding signed components",
+      "points": [
+        "Add and subtract corresponding signed components",
+        "A − B = A + (−B)",
+        "For an angle from +x: Aₓ = A cos θ",
+        "For that same convention: Aᵧ = A sin θ"
+      ],
+      "board": {
+        "lines": [
+          "Add and subtract corresponding signed components",
+          "A − B = A + (−B)",
+          "For an angle from +x: Aₓ = A cos θ",
+          "For that same convention: Aᵧ = A sin θ"
+        ],
+        "flow": [
+          "A = (3,4), B = (−1,2)",
+          "A + B = (2,6)",
+          "A − B = (4,2)",
+          "State the angle reference before resolving"
+        ]
+      },
+      "script": "Vector addition combines corresponding components in a common coordinate system. For A equal to three i hat plus four j hat and B equal to minus one i hat plus two j hat, A plus B is two i hat plus six j hat. A minus B is four i hat plus two j hat, because subtracting B reverses both of its components. The magnitude of the sum is the square root of forty, not the sum of the two original magnitudes. Geometrically, placing vectors head to tail gives the same resultant as a parallelogram construction. Addition is commutative, but subtraction generally is not. To resolve a vector of magnitude A making angle theta from positive x, use A cosine theta along x and A sine theta along y, with the appropriate signs for its quadrant. If the stated angle is measured from another axis, those expressions must be interpreted accordingly. Always put both vectors in the same basis before combining their numbers."
+    },
+    {
+      "title": "Scalar product: components, angle and work",
+      "formula": "A·B = |A||B| cos θ",
+      "points": [
+        "A·B = |A||B| cos θ",
+        "A·B = AₓBₓ + AᵧBᵧ + A𝓏B𝓏",
+        "The dot product is a scalar and is commutative",
+        "Nonzero perpendicular vectors have zero dot product"
+      ],
+      "board": {
+        "lines": [
+          "A·B = |A||B| cos θ",
+          "A·B = AₓBₓ + AᵧBᵧ + A𝓏B𝓏",
+          "The dot product is a scalar and is commutative",
+          "Nonzero perpendicular vectors have zero dot product"
+        ],
+        "flow": [
+          "A = (2,−1,2), B = (1,3,0)",
+          "A·B = 2 − 3 + 0 = −1",
+          "A negative result indicates an obtuse angle",
+          "Work by a constant force: W = F·s"
+        ]
+      },
+      "script": "The scalar product, also called the dot product, multiplies two vector magnitudes and the cosine of their included angle. The result is a scalar, although it may be positive, negative or zero. In an orthonormal Cartesian basis, multiply matching components and add the results. For A with components two, minus one and two, and B with components one, three and zero, the dot product is two minus three plus zero, or minus one. If both vectors are nonzero, that negative sign indicates an obtuse included angle. A vector dotted with itself gives its squared magnitude. Perpendicular nonzero vectors have zero dot product, but a zero result also occurs if one vector is zero. Dot multiplication is commutative and distributive over addition. Constant force work is force dotted with displacement, so only the force component along the displacement contributes. For a ten newton force at sixty degrees to a two metre displacement, multiply ten by two by one half. The result is ten joules of work."
+    },
+    {
+      "title": "Vector product: direction, order and area",
+      "formula": "|A×B| = |A||B| sin θ",
+      "points": [
+        "|A×B| = |A||B| sin θ",
+        "Direction follows the right-hand rule",
+        "A×B = −(B×A)",
+        "î×ĵ = k̂; ĵ×î = −k̂"
+      ],
+      "board": {
+        "lines": [
+          "|A×B| = |A||B| sin θ",
+          "Direction follows the right-hand rule",
+          "A×B = −(B×A)",
+          "î×ĵ = k̂; ĵ×î = −k̂"
+        ],
+        "flow": [
+          "A = î + 2ĵ, B = 3î",
+          "A×B = −6k̂",
+          "Magnitude gives parallelogram area in matching units",
+          "Torque uses r×F, with the specified origin"
+        ]
+      },
+      "script": "The vector product, also called the cross product, gives a vector perpendicular to the plane of two nonparallel input vectors in three dimensional space. Its magnitude is the product of their magnitudes and the sine of the included angle. Direction follows the right hand rule in a right handed coordinate system. The cyclic relations are i hat cross j hat equals k hat, j hat cross k hat equals i hat, and k hat cross i hat equals j hat. Reversing either order changes the sign. A vector crossed with itself is zero, and the operation distributes over addition. For A equal to i hat plus two j hat and B equal to three i hat, the only nonzero term is six times j hat cross i hat, giving minus six k hat. The magnitude also gives the parallelogram area when the vectors represent sides. Torque is position crossed with force, so reversing the order reverses the direction rather than producing the same torque."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "The unit vector along 3î+4ĵ is:",
+      "options": [
+        "0.6î+0.8ĵ",
+        "3î+4ĵ",
+        "0.8î+0.6ĵ",
+        "î+ĵ"
+      ],
+      "answer": 0,
+      "explanation": "Divide by the magnitude 5."
+    },
+    {
+      "question": "A unique direction unit vector along the zero vector is:",
+      "options": [
+        "Always î",
+        "Undefined",
+        "Always k̂",
+        "Always î+ĵ+k̂"
+      ],
+      "answer": 1,
+      "explanation": "Normalizing would require division by zero."
+    },
+    {
+      "question": "For A=(3,4) and B=(−1,2), A−B is:",
+      "options": [
+        "(2,6)",
+        "(−4,−2)",
+        "(4,2)",
+        "(2,2)"
+      ],
+      "answer": 2,
+      "explanation": "Subtract each signed component."
+    },
+    {
+      "question": "Aₓ=A cos θ assumes θ is measured from:",
+      "options": [
+        "Every possible axis simultaneously",
+        "Only the negative y-axis",
+        "A direction independent of the coordinate convention",
+        "The positive x-axis in the stated plane"
+      ],
+      "answer": 3,
+      "explanation": "Resolution depends on the stated reference angle."
+    },
+    {
+      "question": "For A=(2,−1,2) and B=(1,3,0), A·B is:",
+      "options": [
+        "−1",
+        "5",
+        "1",
+        "−5"
+      ],
+      "answer": 0,
+      "explanation": "2×1+(−1)×3+2×0=−1."
+    },
+    {
+      "question": "A constant 10 N force acts at 60° to a 2 m displacement. Work is:",
+      "options": [
+        "20 J",
+        "10 J",
+        "0 J",
+        "40 J"
+      ],
+      "answer": 1,
+      "explanation": "W=Fs cos θ=10×2×0.5."
+    },
+    {
+      "question": "For A=î+2ĵ and B=3î, A×B is:",
+      "options": [
+        "6k̂",
+        "3î",
+        "−6k̂",
+        "0"
+      ],
+      "answer": 2,
+      "explanation": "The surviving term is 6(ĵ×î)=−6k̂."
+    },
+    {
+      "question": "If nonzero A and B are parallel, their cross-product magnitude is:",
+      "options": [
+        "|A||B|",
+        "Always one",
+        "Always negative",
+        "Zero"
+      ],
+      "answer": 3,
+      "explanation": "The included angle has sine zero."
+    }
+  ]
+}

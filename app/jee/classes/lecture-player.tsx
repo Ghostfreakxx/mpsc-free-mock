@@ -11,6 +11,7 @@ import styles from "./lecture.module.css";
 // Each class shows only its own diagram, so load diagrams on demand instead of bundling all of them into every class page.
 const NeetBiomoleculesDiagram = dynamic(() => import("../../neet/classes/biomolecules-diagram"));
 const NeetDivisionDiagram = dynamic(() => import("../../neet/classes/cell-division-diagram"));
+const NeetReviewDiagram = dynamic(() => import("../../neet/classes/review-diagrams"));
 const NeetEcologyDiagram = dynamic(() => import("../../neet/classes/ecology-diagram"));
 const NeetBiotechnologyDiagram = dynamic(() => import("../../neet/classes/biotechnology-diagram"));
 const NeetHumanWelfareDiagram = dynamic(() => import("../../neet/classes/human-welfare-diagram"));
@@ -205,6 +206,7 @@ export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: Player
           {lesson.id === "neet-human-physiology" && <NeetHumanPhysiologyDiagram chapter={chapterIndex} />}
           {lesson.id === "neet-reproduction" && <NeetReproductionDiagram chapter={chapterIndex} />}
           {lesson.id === "neet-genetics-evolution" && <NeetGeneticsEvolutionDiagram chapter={chapterIndex} />}
+          {["neet-physics-vectors","neet-chemistry-closeout"].includes(lesson.id) && <NeetReviewDiagram lessonId={lesson.id} chapter={chapterIndex} />}
           {lesson.id === "neet-ecology" && <NeetEcologyDiagram chapter={chapterIndex} />}
           {lesson.id === "neet-biotechnology" && <NeetBiotechnologyDiagram chapter={chapterIndex} />}
           {lesson.id === "neet-human-welfare" && <NeetHumanWelfareDiagram chapter={chapterIndex} />}

@@ -1,5 +1,5 @@
 import assert from'node:assert/strict';import fs from'node:fs/promises';import{chromium}from'playwright';
-const slug=process.argv[2]||'cell-unit-life';if(!['cell-unit-life','biomolecules','cell-cycle-division','diversity-living-world','structural-organisation','plant-physiology','human-physiology','reproduction','genetics-evolution','human-welfare','biotechnology','ecology'].includes(slug))throw Error('Unknown NEET class');
+const slug=process.argv[2]||'cell-unit-life';if(!['cell-unit-life','biomolecules','cell-cycle-division','diversity-living-world','structural-organisation','plant-physiology','human-physiology','reproduction','genetics-evolution','human-welfare','biotechnology','ecology','physics-vectors','chemistry-closeout'].includes(slug))throw Error('Unknown NEET class');
 const base=process.env.TEST_URL||'http://localhost:3000',route='/neet/classes/'+slug;
 const data=JSON.parse(await fs.readFile(`app/data/neet-${slug}-lecture.json`,'utf8')),timings=JSON.parse(await fs.readFile(`app/data/neet-${slug}-timings.json`,'utf8'));
 const browser=await chromium.launch({channel:process.env.PLAYWRIGHT_CHANNEL||'msedge',headless:true,args:['--disable-http2']});
@@ -8,7 +8,7 @@ try{
  assert.equal((await page.goto(base+'/neet',{waitUntil:'domcontentloaded',timeout:90000})).status(),200);
  await page.getByRole('link',{name:'Recorded NEET classes',exact:true}).click();await page.waitForURL('**/neet/classes');
  await page.locator(`a[href="${route}"]`).click();await page.waitForURL('**'+route);
- assert.equal(await page.locator('h1').innerText(),data.title);assert.match(await page.locator('main').innerText(),/NEET · BIOLOGY/);assert.equal(await page.getByRole('link',{name:'NEET classes',exact:true}).getAttribute('href'),'/neet/classes');
+ assert.equal(await page.locator('h1').innerText(),data.title);assert.match(await page.locator('main').innerText(),new RegExp('NEET · '+data.subject.toUpperCase()));assert.equal(await page.getByRole('link',{name:'NEET classes',exact:true}).getAttribute('href'),'/neet/classes');
  const audio=page.locator('audio');await page.waitForFunction(()=>document.querySelector('audio')?.readyState>=1);assert.ok(Math.abs(await audio.evaluate(a=>a.duration)-timings.duration)<.3);
  await audio.evaluate(a=>a.play());await page.waitForFunction(()=>document.querySelector('audio').currentTime>1);await audio.evaluate(a=>a.pause());
  const chapters=page.getByRole('complementary',{name:'Class chapters'}).getByRole('button');assert.equal(await chapters.count(),data.chapters.length);
