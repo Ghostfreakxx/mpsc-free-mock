@@ -152,6 +152,15 @@
 :root[data-theme="dark"] .install-steps strong { color: #bbe2cc; }
 :root[data-theme="dark"] .install-steps svg { color: #90d1b4; }
 :root[data-theme="dark"] .install-dialog-note { color: #a0afa6; }
+:root[data-theme="dark"] .install-hero { border: 2px solid #36836d; background: #1b1f1c; color: #c1ebde; }
+:root[data-theme="dark"] .install-hero:hover { background: #141714; }
+:root[data-theme="dark"] .install-hero > svg { color: #87d4bb; }
+:root[data-theme="dark"] .install-hero .button-label-stack small { color: #b8cdc2; }
+:root[data-theme="dark"] .install-dialog-lead { color: #bad3c4; }
+:root[data-theme="dark"] .install-banner { border: 1px solid #2e3932; background: #1b1f1c; box-shadow: 0 10px 30px #00000057; }
+:root[data-theme="dark"] .install-banner-copy strong { color: #d1ede3; }
+:root[data-theme="dark"] .install-banner-copy span { color: #b8cdc2; }
+:root[data-theme="dark"] .install-banner-close { color: #b8cdc2; }
 :root[data-theme="dark"] .practice-chat-trigger { background: #1b1f1c; }
 :root[data-theme="dark"] .practice-breadcrumb { color: #aecab8; }
 :root[data-theme="dark"] .practice-back { background: #1b1f1c; }

@@ -3,8 +3,10 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import "./theme-dark.css";
 import { themeInitScript } from "./theme";
+import { installInitScript } from "./install";
 import ServiceWorkerRegister from "./service-worker-register";
 import ChatLauncher from "./chat-launcher";
+import InstallBanner from "./install-banner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -63,10 +65,12 @@ export default function RootLayout({
     >
       <head>
         <script>{themeInitScript}</script>
+        <script>{installInitScript}</script>
       </head>
       <body className="min-h-full flex flex-col">
         <ServiceWorkerRegister />
         {children}
+        <InstallBanner />
         <ChatLauncher />
       </body>
     </html>
