@@ -2,7 +2,7 @@
 
 Checked 5 November 2026 against the official NEET UG 2026 syllabus. 189 grouped subheading entries across 40 units.
 
-Human review of grouped prescribed subheadings against actual narration, formulas/steps and worked evidence. References retain original chapter numbering. Existing explanation means foundational explanatory evidence was located, not examination mastery. Supplemented identifies a group with an added targeted class. Field performance, wider diagrams and mixed/timed practice remain.
+Review of grouped prescribed subheadings against actual narration, formulas/steps and worked evidence. References retain original chapter numbering. Existing explanation means foundational explanatory evidence was located, not examination mastery. Supplemented identifies a group with an added targeted class. Field performance, wider diagrams and mixed/timed practice remain.
 
 ## Confirmed teaching additions
 
