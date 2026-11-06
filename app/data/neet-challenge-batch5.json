@@ -1,0 +1,427 @@
+[
+  {
+    "subject": "Physics",
+    "unit": 11,
+    "question": "A 4 μF capacitor is connected to an ideal 200 V battery. A dielectric of relative permittivity 3 completely fills the gap while the battery remains connected. What are final charge and the final/initial stored-energy ratio?",
+    "options": [
+      "0.8 mC and 1",
+      "2.4 mC and 3",
+      "0.8 mC and 1/3",
+      "2.4 mC and 9"
+    ],
+    "answer": "2.4 mC and 3",
+    "explanation": "The connected battery keeps voltage fixed while capacitance rises from 4 to 12 μF. Final charge is CV = 12×10⁻⁶×200 = 2.4 mC. At fixed V, stored energy ½CV² scales with capacitance and triples. This differs from an isolated capacitor at fixed charge.",
+    "id": "neet-challenge-b5-physics-11",
+    "category": "Physics 11: Electrostatics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-11",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 12,
+    "question": "A potentiometer balances a cell at 60 cm on open circuit and 50 cm when the cell supplies a 5 Ω load. Assume the potentiometer wire’s potential gradient is unchanged. What are cell internal resistance and loaded terminal-voltage/emf ratio?",
+    "options": [
+      "1 Ω and 6/5",
+      "5 Ω and 5/6",
+      "1 Ω and 5/6",
+      "1/6 Ω and 5/6"
+    ],
+    "answer": "1 Ω and 5/6",
+    "explanation": "Balance lengths are proportional to measured voltages, so V/E = 50/60 = 5/6. From E/V = (R+r)/R, internal resistance is r = R(l₁/l₂−1) = 5(60/50−1) = 1 Ω. The open-circuit balance measures emf, not loaded terminal voltage.",
+    "id": "neet-challenge-b5-physics-12",
+    "category": "Physics 12: Current Electricity",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-12",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 13,
+    "question": "A wire forming a single circular loop of radius R is reshaped into two identical concentric circular turns, each of radius R/2. The current remains I and both turns carry it in the same sense. What are the ratios of new to old central magnetic field and magnetic dipole moment?",
+    "options": [
+      "2 and 1",
+      "4 and 2",
+      "2 and 1/2",
+      "4 and 1/2"
+    ],
+    "answer": "4 and 1/2",
+    "explanation": "At the centre, B = μ₀NI/(2r). Doubling turns and halving radius multiplies B by four. Dipole moment is NIπr², giving a ratio 2×(1/2)² = 1/2. The same total wire length is consistent with the new geometry.",
+    "id": "neet-challenge-b5-physics-13",
+    "category": "Physics 13: Magnetic Effects of Current and Magnetism",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-13",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 14,
+    "question": "A 100-turn coil of area 0.020 m² and total resistance 2 Ω is in a uniform field normal to its plane. The field rises uniformly from 0.10 T to 0.50 T in 0.20 s. Neglect self-inductance. What are induced-emf magnitude and current during the change?",
+    "options": [
+      "4 V and 2 A",
+      "2 V and 4 A",
+      "0.04 V and 0.02 A",
+      "4 V and 8 A"
+    ],
+    "answer": "4 V and 2 A",
+    "explanation": "The flux linkage changes by N A ΔB, so emf magnitude is 100×0.020×0.40/0.20 = 4 V. Neglecting self-inductance, current is emf/R = 2 A. Its field opposes the increase in applied flux, rather than reinforcing it.",
+    "id": "neet-challenge-b5-physics-14",
+    "category": "Physics 14: Electromagnetic Induction and Alternating Currents",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-14",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 15,
+    "question": "A light wave has frequency 1.0 × 10⁸ Hz in vacuum. It enters a stationary transparent medium where its speed is 2.0 × 10⁸ m/s. With c = 3.0 × 10⁸ m/s, what are refractive index and wavelength in the medium?",
+    "options": [
+      "1.5 and 3 m",
+      "1.5 and 2 m",
+      "2/3 and 2 m",
+      "1.5 and 1.5 m"
+    ],
+    "answer": "1.5 and 2 m",
+    "explanation": "Refractive index is c/v = 3/2 = 1.5. Frequency remains fixed across the stationary interface, so wavelength becomes v/f = 2 m. The vacuum wavelength is 3 m; wavelength, rather than frequency, changes on entry.",
+    "id": "neet-challenge-b5-physics-15",
+    "category": "Physics 15: Electromagnetic Waves",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-15",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 16,
+    "question": "Thin lenses of focal lengths +10 cm and −20 cm are placed in contact in air. An object is 30 cm in front of the combination. Under the thin-lens model, what are equivalent focal length and real image distance behind the combination?",
+    "options": [
+      "+30 cm and +30 cm",
+      "−20 cm and +60 cm",
+      "+20 cm and +60 cm",
+      "+20 cm and +12 cm"
+    ],
+    "answer": "+20 cm and +60 cm",
+    "explanation": "Powers add: 1/f = 1/10−1/20 = 1/20 cm⁻¹, giving f = +20 cm. With Cartesian u = −30 cm, 1/v = 1/f + 1/u = 1/20−1/30 = 1/60. Thus the real image is 60 cm behind the combination.",
+    "id": "neet-challenge-b5-physics-16",
+    "category": "Physics 16: Optics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-16",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 17,
+    "question": "Monochromatic light of photon energy 5 eV and power 2.0 mW strikes a surface of work function 2 eV. If 25% of incident photons each emit one collected electron, what are photocurrent and stopping-potential magnitude? Use e = 1.6 × 10⁻¹⁹ C.",
+    "options": [
+      "400 μA and 3 V",
+      "100 μA and 5 V",
+      "400 μA and 5 V",
+      "100 μA and 3 V"
+    ],
+    "answer": "100 μA and 3 V",
+    "explanation": "Photon rate is P/(5e) and electron rate is 0.25 times that. Current is e×0.25P/(5e) = 0.25×0.002/5 = 0.0001 A = 100 μA. Maximum kinetic energy is 5−2 = 3 eV, so stopping potential is 3 V.",
+    "id": "neet-challenge-b5-physics-17",
+    "category": "Physics 17: Dual Nature of Matter and Radiation",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-17",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 18,
+    "question": "In a nuclear binding-energy calculation, a nucleus with mass number 10 has mass defect 0.080 u. Use 1 u c² = 931.5 MeV. What are total binding energy and binding energy per nucleon?",
+    "options": [
+      "74.52 MeV and 7.452 MeV",
+      "7.452 MeV and 74.52 MeV",
+      "74.52 MeV and 0.7452 MeV",
+      "93.15 MeV and 9.315 MeV"
+    ],
+    "answer": "74.52 MeV and 7.452 MeV",
+    "explanation": "The mass defect is for the entire nucleus. Multiplication by 931.5 MeV/u gives 0.080×931.5 = 74.52 MeV total binding energy. Divide this by the mass number 10 to obtain 7.452 MeV per nucleon.",
+    "id": "neet-challenge-b5-physics-18",
+    "category": "Physics 18: Atoms and Nuclei",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-18",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 19,
+    "question": "An ideal Zener regulator maintains 5 V across a 1 kΩ load through a 200 Ω series resistor. The Zener’s maximum allowed power is 0.10 W. What is the maximum ideal supply voltage consistent with this power limit?",
+    "options": [
+      "9 V",
+      "10 V",
+      "15 V",
+      "25 V"
+    ],
+    "answer": "10 V",
+    "explanation": "Maximum Zener current is Pmax/Vz = 0.10/5 = 20 mA. Load current is 5/1000 = 5 mA, so the series resistor may carry 25 mA. Its voltage drop is 0.025×200 = 5 V, giving a maximum supply of 5+5 = 10 V.",
+    "id": "neet-challenge-b5-physics-19",
+    "category": "Physics 19: Electronic Devices",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-19",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 20,
+    "question": "An Ohmic resistor is measured with a voltmeter having an unknown constant additive zero offset. Readings are 0.60 V at 0.10 A and 1.40 V at 0.30 A. What are the resistor’s resistance and voltmeter offset?",
+    "options": [
+      "6 Ω and 0 V",
+      "4 Ω and −0.20 V",
+      "4 Ω and +0.20 V",
+      "6 Ω and −0.40 V"
+    ],
+    "answer": "4 Ω and +0.20 V",
+    "explanation": "Use Vread = IR + b. The slope cancels the fixed offset: R = (1.40−0.60)/(0.30−0.10) = 4 Ω. Then b = 0.60−0.10×4 = +0.20 V. Taking either raw V/I ratio would mix resistance with the instrument offset.",
+    "id": "neet-challenge-b5-physics-20",
+    "category": "Physics 20: Experimental Skills",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-20",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 11,
+    "question": "In acidic solution, each MnO₄⁻ is reduced to Mn²⁺ while Fe²⁺ is oxidized to Fe³⁺. For 0.020 mol MnO₄⁻ completely reduced by excess Fe²⁺, what are the amounts of Fe²⁺ oxidized and H⁺ consumed in the balanced net equation?",
+    "options": [
+      "0.020 mol and 0.080 mol",
+      "0.100 mol and 0.080 mol",
+      "0.040 mol and 0.160 mol",
+      "0.100 mol and 0.160 mol"
+    ],
+    "answer": "0.100 mol and 0.160 mol",
+    "explanation": "The balanced reaction is MnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 4H₂O + 5Fe³⁺. Multiply the one-permanganate ratios by 0.020: Fe²⁺ consumption is 0.100 mol and H⁺ consumption is 0.160 mol.",
+    "id": "neet-challenge-b5-chemistry-11",
+    "category": "Chemistry 11: d- and f-Block Elements",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-11",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 12,
+    "question": "Two octahedral complexes have the same composition [Co(NH₃)₅(NO₂)]Cl₂, but NO₂⁻ binds through N in one and O in the other. What are the isomerism type and cobalt oxidation state?",
+    "options": [
+      "Linkage isomerism and +3",
+      "Ionization isomerism and +2",
+      "Geometrical isomerism and +3",
+      "Coordination isomerism and +2"
+    ],
+    "answer": "Linkage isomerism and +3",
+    "explanation": "The ambidentate nitrite ligand can bind through different donor atoms without changing composition, giving linkage isomerism. Two outer chloride ions imply a +2 complex cation; with one −1 ligand and neutral ammonia, cobalt is +3.",
+    "id": "neet-challenge-b5-chemistry-12",
+    "category": "Chemistry 12: Coordination Compounds",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-12",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 13,
+    "question": "A solute has distribution coefficient K = concentration in organic phase/concentration in aqueous phase = 4. An aqueous sample of 100 mL initially contains 1.00 g solute. With immiscible phases, constant volumes and equilibrium each time, how much remains in water after two successive extractions with fresh 50 mL organic portions?",
+    "options": [
+      "0.200 g",
+      "0.111 g approximately",
+      "0.040 g",
+      "0.333 g"
+    ],
+    "answer": "0.111 g approximately",
+    "explanation": "For each extraction the fraction remaining in water is Vaq/(Vaq+K Vorg) = 100/(100+4×50) = 1/3. Two fresh portions leave (1/3)²×1.00 = 1/9 g ≈ 0.111 g. One 100 mL extraction would leave 0.200 g instead.",
+    "id": "neet-challenge-b5-chemistry-13",
+    "category": "Chemistry 13: Purification and Characterisation of Organic Compounds",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-13",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 14,
+    "question": "A neutral closed-shell compound has molecular formula C₅H₈O and contains no nitrogen or halogens. How many degrees of unsaturation does it have, and does the formula alone uniquely determine whether a carbonyl is present?",
+    "options": [
+      "One; yes",
+      "Two; yes",
+      "Two; no",
+      "Three; no"
+    ],
+    "answer": "Two; no",
+    "explanation": "The index is (2C+2−H)/2 = (10+2−8)/2 = 2. Oxygen does not alter this hydrogen-deficiency count. Two units can be distributed among rings and multiple bonds in different ways; the formula alone does not prove a carbonyl group.",
+    "id": "neet-challenge-b5-chemistry-14",
+    "category": "Chemistry 14: Some Basic Principles of Organic Chemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-14",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 15,
+    "question": "One mole of benzene undergoes ideal complete monochlorination with Cl₂ in the presence of FeCl₃, with no further substitution. Which process and by-product amount are consistent?",
+    "options": [
+      "Electrophilic addition; no HCl",
+      "Nucleophilic substitution; 2 mol HCl",
+      "Electrophilic addition; 1 mol HCl",
+      "Electrophilic aromatic substitution; 1 mol HCl"
+    ],
+    "answer": "Electrophilic aromatic substitution; 1 mol HCl",
+    "explanation": "The net equation is C₆H₆ + Cl₂ → C₆H₅Cl + HCl. One hydrogen is replaced by chlorine and aromaticity is restored through electrophilic substitution. One mole of monosubstituted product corresponds to one mole of HCl.",
+    "id": "neet-challenge-b5-chemistry-15",
+    "category": "Chemistry 15: Hydrocarbons",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-15",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 16,
+    "question": "Under an elementary SN1 model at fixed temperature and solvent, substrate concentration is halved while nucleophile concentration is quadrupled. What happens to initial rate, and why can a suitable chiral substrate give both configurations at the reacting carbon?",
+    "options": [
+      "Rate halves; a planar carbocation can be attacked from either face",
+      "Rate doubles; concerted backside attack",
+      "Rate is unchanged; a tetrahedral carbocation enforces retention",
+      "Rate quadruples; nucleophile controls the ionization step"
+    ],
+    "answer": "Rate halves; a planar carbocation can be attacked from either face",
+    "explanation": "SN1 ionization gives rate = k[substrate], so halving substrate halves the rate despite increased nucleophile. The planar carbocation intermediate allows attack from either face. Real ion-pair effects can make the two product proportions unequal.",
+    "id": "neet-challenge-b5-chemistry-16",
+    "category": "Chemistry 16: Organic Compounds Containing Halogens",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-16",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 17,
+    "question": "A mixture contains 0.010 mol ethanal and 0.010 mol acetone. With excess Tollens reagent, assume quantitative oxidation of ethanal and no oxidation of acetone. Using Ag = 108 g/mol and two Ag⁺ reduced per aldehyde group, what mass of silver forms?",
+    "options": [
+      "1.08 g",
+      "2.16 g",
+      "4.32 g",
+      "0.54 g"
+    ],
+    "answer": "2.16 g",
+    "explanation": "Only ethanal contributes under the stated selectivity. It reduces 2×0.010 = 0.020 mol Ag⁺ to silver, giving 0.020×108 = 2.16 g. Counting the ketone as another aldehyde would incorrectly double the predicted deposit.",
+    "id": "neet-challenge-b5-chemistry-17",
+    "category": "Chemistry 17: Organic Compounds Containing Oxygen",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-17",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 18,
+    "question": "A solution containing 0.010 mol ethylamine receives 0.015 mol HCl, and the final volume is 100 mL. Assume complete protonation and that excess strong acid dominates [H⁺]. What are ethylammonium amount and approximate pH?",
+    "options": [
+      "0.015 mol and 1.30",
+      "0.010 mol and 2.00",
+      "0.010 mol and 1.30",
+      "0.005 mol and 1.00"
+    ],
+    "answer": "0.010 mol and 1.30",
+    "explanation": "The 1:1 reaction consumes 0.010 mol HCl and makes 0.010 mol ethylammonium. Excess HCl is 0.005 mol in 0.100 L, so [H⁺] ≈ 0.050 mol/L and pH = −log₁₀0.050 ≈ 1.30. This is not an acid/base buffer after strong acid remains in excess.",
+    "id": "neet-challenge-b5-chemistry-18",
+    "category": "Chemistry 18: Organic Compounds Containing Nitrogen",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-18",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 19,
+    "question": "A double-stranded DNA molecule has 1000 base pairs, and adenine makes up 30% of all nucleotides. Using two hydrogen bonds per A–T pair and three per G–C pair, how many hydrogen bonds are present?",
+    "options": [
+      "2000",
+      "2600",
+      "3000",
+      "2400"
+    ],
+    "answer": "2400",
+    "explanation": "There are 2000 nucleotides, so adenine count is 600. Each A belongs to one A–T pair, giving 600 A–T pairs and 400 G–C pairs. Total hydrogen bonds are 600×2 + 400×3 = 2400. Base percentage counts nucleotides, not pairs directly.",
+    "id": "neet-challenge-b5-chemistry-19",
+    "category": "Chemistry 19: Biomolecules",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-19",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 20,
+    "question": "A 25.0 mL Fe²⁺ aliquot is titrated in acid with 0.0200 mol/L permanganate. The observed titre is 20.20 mL and the reagent blank is 0.20 mL. Each MnO₄⁻ consumes five Fe²⁺. What is Fe²⁺ concentration?",
+    "options": [
+      "0.0800 mol/L",
+      "0.0160 mol/L",
+      "0.0808 mol/L",
+      "0.0400 mol/L"
+    ],
+    "answer": "0.0800 mol/L",
+    "explanation": "Blank-corrected titre is 20.00 mL = 0.02000 L. Permanganate amount is 0.0200×0.02000 = 0.000400 mol, consuming 0.00200 mol Fe²⁺. Divide by 0.0250 L to obtain 0.0800 mol/L. Both the blank and 5:1 ratio matter.",
+    "id": "neet-challenge-b5-chemistry-20",
+    "category": "Chemistry 20: Principles Related to Practical Chemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-20",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 6,
+    "question": "A flower has four ovules. Three viable pollen grains each deliver one pollen tube to a different ovule, and normal double fertilization succeeds in all three. Under the usual one-embryo-sac-per-ovule model with no apomixis, what are the maximum resulting seed count and number of male gametes used?",
+    "options": [
+      "Four seeds and six male gametes",
+      "Three seeds and six male gametes",
+      "Six seeds and six male gametes",
+      "Three seeds and three male gametes"
+    ],
+    "answer": "Three seeds and six male gametes",
+    "explanation": "Three distinct fertilized ovules can form three seeds. Each successful double fertilization uses two male gametes, one for syngamy and one for triple fusion, so six male gametes are used. Two fusion events in an ovule do not normally produce two seeds.",
+    "id": "neet-challenge-b5-biology-6",
+    "category": "Biology 6: Reproduction",
+    "lessonHref": "/neet/classes/reproduction",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 7,
+    "question": "A double heterozygote has linked alleles in coupling phase AB/ab and a recombination frequency of 20%. It is test-crossed with ab/ab. Among 1000 expected offspring, how many have the recombinant phenotypes A–bb and aaB– in total?",
+    "options": [
+      "800",
+      "100",
+      "200",
+      "400"
+    ],
+    "answer": "200",
+    "explanation": "Total recombinant gametes are 20%, divided equally as Ab and aB at 10% each in the standard model. The recessive tester makes offspring phenotypes reveal these gametes. Together the two recombinant classes account for 0.20×1000 = 200 offspring.",
+    "id": "neet-challenge-b5-biology-7",
+    "category": "Biology 7: Genetics and Evolution",
+    "lessonHref": "/neet/classes/genetics-evolution",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 8,
+    "question": "An experimental antibacterial agent acts only by blocking peptidoglycan cell-wall synthesis. Which pair lacks this target, so activity against them cannot be inferred from that mechanism alone?",
+    "options": [
+      "Escherichia coli and a typical peptidoglycan-bearing bacterium",
+      "A typical peptidoglycan-bearing bacterium and a bacteriophage",
+      "Mycoplasma and a typical peptidoglycan-bearing bacterium",
+      "Mycoplasma and a bacteriophage"
+    ],
+    "answer": "Mycoplasma and a bacteriophage",
+    "explanation": "Mycoplasma lacks a cell wall, and a bacteriophage is a virus without a bacterial peptidoglycan wall. A mechanism directed solely at peptidoglycan synthesis therefore supplies no basis for activity against either. This is a target-based experimental inference, not treatment advice.",
+    "id": "neet-challenge-b5-biology-8",
+    "category": "Biology 8: Biology and Human Welfare",
+    "lessonHref": "/neet/classes/human-welfare",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 9,
+    "question": "A restriction enzyme completely cuts two DNA molecules, each containing exactly two distinct recognition sites. One molecule is linear and the other circular. Assuming no other cuts, how many fragments result from each molecule?",
+    "options": [
+      "Three from linear DNA and two from circular DNA",
+      "Two from each",
+      "Three from each",
+      "Two from linear DNA and three from circular DNA"
+    ],
+    "answer": "Three from linear DNA and two from circular DNA",
+    "explanation": "Two internal cuts divide a linear DNA molecule into three fragments. A circular molecule needs its first cut merely to open the circle; the second produces two fragments. The counts depend on topology as well as the number of recognition sites.",
+    "id": "neet-challenge-b5-biology-9",
+    "category": "Biology 9: Biotechnology and Its Applications",
+    "lessonHref": "/neet/classes/biotechnology",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 10,
+    "question": "A population follows dN/dt = rN(1−N/K) with r = 0.50 yr⁻¹ and K = 200 individuals. At N = 100, what is net growth rate, and is this the population size of maximum growth under the model?",
+    "options": [
+      "50 individuals/yr; no",
+      "25 individuals/yr; yes",
+      "100 individuals/yr; yes",
+      "25 individuals/yr; no"
+    ],
+    "answer": "25 individuals/yr; yes",
+    "explanation": "At N = 100, growth is 0.50×100×(1−100/200) = 25 individuals/yr. The logistic growth expression is maximal at N = K/2 = 100, where rK/4 = 25. At carrying capacity K the net growth rate is zero, not maximal.",
+    "id": "neet-challenge-b5-biology-10",
+    "category": "Biology 10: Ecology and Environment",
+    "lessonHref": "/neet/classes/ecology",
+    "challenge": true
+  }
+]

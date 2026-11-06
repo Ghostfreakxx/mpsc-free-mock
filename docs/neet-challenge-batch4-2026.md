@@ -1,5 +1,7 @@
 # NEET challenge batch 4
 
+Current expansion: [batch 5](neet-challenge-batch5-2026.md) raises the challenge pool to 150, with three choices in every unit. The details below record batch 4.
+
 Adds 25 original application questions: ten Physics, ten Chemistry and five Biology. The challenge pool now has 125 questions across all 50 mapped units; 25 units have three choices and 25 have two. The combined bank has 752 questions. A challenge paper still selects one application question per unit and 130 foundation questions, with the existing 45/45/90 allocation, 180-minute clock and +4/−1/0 marking. Difficulty remains an authored comparison rather than official calibration or a rank prediction.
 
 New topics include pendulum uncertainty, river-relative motion, connected-block friction, variable-force work, torque/kinematics, zero-field versus gravitational potential, Stokes scaling, cyclic heat/work, kinetic-theory scaling, string-frequency cancellations, limiting reagents, Bohr scaling, VSEPR comparisons, Hess reversal, osmotic dilution, common-ion solubility, actual-condition Gibbs energy, first-order timing, ionization exceptions, hydrogen bonding, seed-plant classification, root/stem comparisons, chromosome/DNA counts, photosynthetic atom origins and cardiac-valve sequencing.
