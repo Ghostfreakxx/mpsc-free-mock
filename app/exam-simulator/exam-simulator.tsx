@@ -62,7 +62,7 @@ const formatScore = (value: number) => Number.isInteger(value) ? String(value) :
 export default function ExamSimulator({ poolSizes, neetFullMock = false }: { poolSizes: Record<Stream, number>; neetFullMock?: boolean }) {
   const attemptKey = neetFullMock ? "neet-full-mock:attempt:v1" : ATTEMPT_KEY;
   const historyKey = neetFullMock ? "neet-full-mock:history:v1" : HISTORY_KEY;
-  const getPool = useCallback((stream: Stream) => neetFullMock ? loadQuestionBank<unknown>("neet-full-mock-v8").then(value => { if (!isQuestionList<PoolQuestion>(value)) throw new Error("Invalid mock bank"); return value; }) : loadPool(stream), [neetFullMock]);
+  const getPool = useCallback((stream: Stream) => neetFullMock ? loadQuestionBank<unknown>("neet-full-mock-v9").then(value => { if (!isQuestionList<PoolQuestion>(value)) throw new Error("Invalid mock bank"); return value; }) : loadPool(stream), [neetFullMock]);
   const [loaded, setLoaded] = useState(false);
   const [pools, setPools] = useState<Partial<Record<Stream, PoolQuestion[]>>>({});
   const [loadError, setLoadError] = useState(false);
@@ -388,7 +388,7 @@ export default function ExamSimulator({ poolSizes, neetFullMock = false }: { poo
         </div>
       </section>}
 
-      {neetFullMock && <section className={styles.panel} aria-label="Mock difficulty"><h2 className={styles.sectionTitle}>Question mix</h2><div className={styles.chips}><button type="button" className={styles.chip} aria-pressed={!challengeMode} onClick={() => setChallengeMode(false)}>Foundation</button><button type="button" className={styles.chip} aria-pressed={challengeMode} onClick={() => setChallengeMode(true)}>Challenge mix</button></div><p className={styles.muted}>{challengeMode ? "50 application questions selected from a pool of 200: one guaranteed per unit, plus 130 foundation questions. Difficulty is an authored practice label, not calibrated against official NEET papers." : "180 foundation questions drawn from the original pool."}</p></section>}
+      {neetFullMock && <section className={styles.panel} aria-label="Mock difficulty"><h2 className={styles.sectionTitle}>Question mix</h2><div className={styles.chips}><button type="button" className={styles.chip} aria-pressed={!challengeMode} onClick={() => setChallengeMode(false)}>Foundation</button><button type="button" className={styles.chip} aria-pressed={challengeMode} onClick={() => setChallengeMode(true)}>Challenge mix</button></div><p className={styles.muted}>{challengeMode ? "50 application questions selected from a pool of 225: one guaranteed per unit, plus 130 foundation questions. Difficulty is an authored practice label, not calibrated against official NEET papers." : "180 foundation questions drawn from the original pool."}</p></section>}
       <p className={styles.muted}>{config.note} Check the current information bulletin before your exam.</p>
 
       <div className={styles.startRow}>
@@ -414,7 +414,7 @@ function Intro({ neetFullMock = false }: { neetFullMock?: boolean }) {
   if (neetFullMock) return <div>
     <span className={styles.kicker}>NEET UG · Full-syllabus foundation mock</span>
     <h1 className={styles.title}>NEET full-syllabus timed mock</h1>
-    <p className={styles.lead}>180 questions · 180 minutes · 720 marks. Physics 45, Chemistry 45, Biology 90. Every paper represents all 50 mapped syllabus units. Challenge mix selects 50 application questions from a pool of 200, one per unit, alongside 130 rotating foundation questions.</p>
+    <p className={styles.lead}>180 questions · 180 minutes · 720 marks. Physics 45, Chemistry 45, Biology 90. Every paper represents all 50 mapped syllabus units. Challenge mix selects 50 application questions from a pool of 225, one per unit, alongside 130 rotating foundation questions.</p>
     <p className={styles.muted}>2026 bulletin baseline: +4 correct, −1 wrong, 0 unanswered. This browser practice uses a question palette; the actual NEET examination uses pen and paper. Unit quotas are our practice blueprint, not official chapter weightages. Foundation questions reuse original classes; challenge questions add multi-step calculations and linked-concept reasoning. Neither mix exhausts every subheading or predicts exam difficulty.</p>
     <p className={styles.muted}>The clock continues while you leave or reload. Time-up submits automatically. Explanations appear after submission. Saved attempts stay separate from other simulator papers; storage must be available to resume on this browser.</p>
     <p><Link href="/neet/classes" prefetch={false}>Review recorded classes</Link> · <a href="https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf" target="_blank" rel="noreferrer">2026 NTA bulletin</a></p>

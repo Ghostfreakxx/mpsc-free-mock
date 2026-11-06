@@ -1,0 +1,427 @@
+[
+  {
+    "subject": "Physics",
+    "unit": 1,
+    "question": "Power is calculated as P = V²/R from V = 10.0 V and R = 5.00 Ω. Their maximum relative uncertainties are 1% and 2%, respectively. What are calculated power and first-order maximum absolute uncertainty?",
+    "options": [
+      "20 W and 0.4 W",
+      "20 W and 0.8 W",
+      "10 W and 0.4 W",
+      "20 W and 0 W"
+    ],
+    "answer": "20 W and 0.8 W",
+    "explanation": "Calculated power is 10²/5 = 20 W. The maximum fractional uncertainty is 2×1% + 2% = 4%, so the absolute bound is 20×0.04 = 0.8 W. Opposite algebraic positions of measured quantities do not make worst-case uncertainties cancel.",
+    "id": "neet-challenge-b8-physics-1",
+    "category": "Physics 1: Physics and Measurement",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-1",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 2,
+    "question": "A particle moves along a line with x(t) = t³−6t²+9t metres, for t in seconds from 0 to 3. Its velocity changes sign at t = 1 s and reaches zero again at t = 3 s. What are total distance and displacement over this interval?",
+    "options": [
+      "Zero and zero",
+      "4 m and zero",
+      "8 m and zero",
+      "8 m and 8 m"
+    ],
+    "answer": "8 m and zero",
+    "explanation": "Evaluate positions: x(0) = 0, x(1) = 4 and x(3) = 0. With the stated reversal, distance is |4−0| + |0−4| = 8 m, while displacement is final minus initial position, zero. A zero net displacement does not imply no motion.",
+    "id": "neet-challenge-b8-physics-2",
+    "category": "Physics 2: Kinematics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-2",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 3,
+    "question": "A mass on a light string moves in a vertical circle of radius r. In the limiting case of just maintaining a taut string at the top, neglecting losses, what are top and bottom speed squared?",
+    "options": [
+      "2gr and 4gr",
+      "gr and 3gr",
+      "Zero and 4gr",
+      "gr and 5gr"
+    ],
+    "answer": "gr and 5gr",
+    "explanation": "At the top in the limiting case, tension is zero and gravity supplies the required centripetal force: vtop² = gr. The bottom lies 2r lower, so conservation of energy adds 4gr to speed squared, giving vbottom² = 5gr.",
+    "id": "neet-challenge-b8-physics-3",
+    "category": "Physics 3: Laws of Motion",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-3",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 4,
+    "question": "A 10 g pellet travelling horizontally at 100 m/s embeds in a stationary suspended 990 g block. After impact the combined body rises without losses. With g = 10 m/s², what are maximum rise and fraction of initial pellet kinetic energy retained immediately after impact?",
+    "options": [
+      "5 cm and 1%",
+      "5 cm and 10%",
+      "50 cm and 1%",
+      "5 cm and 100%"
+    ],
+    "answer": "5 cm and 1%",
+    "explanation": "During the short collision, horizontal momentum gives common speed 0.010×100/1.000 = 1 m/s. The subsequent rise is v²/(2g) = 0.05 m. Initial energy is 50 J and post-impact energy is 0.5 J, retaining only 1%; energy conservation applies to the rise, not the inelastic collision.",
+    "id": "neet-challenge-b8-physics-4",
+    "category": "Physics 4: Work, Energy and Power",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-4",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 5,
+    "question": "A uniform rod of mass 3 kg and length 2 m rotates about a fixed axis perpendicular to the rod and 0.50 m from its centre. A net torque of 3.5 N m acts. What are moment of inertia and angular acceleration?",
+    "options": [
+      "1.00 kg m² and 3.5 rad/s²",
+      "1.75 kg m² and 2 rad/s²",
+      "3.00 kg m² and 7/6 rad/s²",
+      "0.75 kg m² and 14/3 rad/s²"
+    ],
+    "answer": "1.75 kg m² and 2 rad/s²",
+    "explanation": "The centre-axis inertia is ML²/12 = 3×4/12 = 1 kg m². The parallel-axis addition is Md² = 3×0.25 = 0.75 kg m², giving 1.75. Angular acceleration is net torque divided by inertia, 3.5/1.75 = 2 rad/s².",
+    "id": "neet-challenge-b8-physics-5",
+    "category": "Physics 5: Rotational Motion",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-5",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 6,
+    "question": "Treat Earth as a sphere of uniform density with radius R and surface acceleration g. What are gravitational acceleration at height R above the surface and at depth R/2 below it?",
+    "options": [
+      "g/2 and g/4",
+      "g/4 and g/4",
+      "g/4 and g/2",
+      "g/2 and g/2"
+    ],
+    "answer": "g/4 and g/2",
+    "explanation": "At height R the distance from the centre is 2R, so the external inverse-square law gives g/4. Inside a uniform-density sphere, acceleration is proportional to distance from the centre; depth R/2 corresponds to radius R/2 and acceleration g/2. The interior result needs the density assumption.",
+    "id": "neet-challenge-b8-physics-6",
+    "category": "Physics 6: Gravitation",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-6",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 7,
+    "question": "A small horizontal hole in a large open water tank is 20 m above level ground and 5 m below the water surface. Neglect losses and surface motion, with atmospheric pressure at surface and outlet and g = 10 m/s². What are exit speed and horizontal range?",
+    "options": [
+      "10 m/s and 10 m",
+      "20 m/s and 40 m",
+      "5 m/s and 10 m",
+      "10 m/s and 20 m"
+    ],
+    "answer": "10 m/s and 20 m",
+    "explanation": "Torricelli’s law gives exit speed √(2gh) = √(2×10×5) = 10 m/s. Fall time from the hole is √(2×20/10) = 2 s, so horizontal range is 20 m. Water depth sets exit speed; hole height above ground sets flight time.",
+    "id": "neet-challenge-b8-physics-7",
+    "category": "Physics 7: Properties of Solids and Liquids",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-7",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 8,
+    "question": "An ideal-gas system moves between the same initial and final states along two paths. Its internal-energy increase is 300 J. Path A absorbs 500 J; path B does 100 J of work on the surroundings. Using ΔU = Q−Wby, what are work by the gas on A and heat absorbed on B?",
+    "options": [
+      "200 J and 400 J",
+      "800 J and 200 J",
+      "200 J and 200 J",
+      "800 J and 400 J"
+    ],
+    "answer": "200 J and 400 J",
+    "explanation": "On path A, Wby = Q−ΔU = 500−300 = 200 J. On path B, Q = ΔU+Wby = 300+100 = 400 J. Internal energy depends on the end states, while heat and work can differ between paths.",
+    "id": "neet-challenge-b8-physics-8",
+    "category": "Physics 8: Thermodynamics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-8",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 9,
+    "question": "For an ideal gas at fixed temperature and unchanged molecular size, use mean free path λ ∝ 1/number density and collision frequency ∝ vrms/λ. If pressure doubles, what happens to mean free path and collision frequency?",
+    "options": [
+      "Both double",
+      "Mean free path halves; collision frequency doubles",
+      "Mean free path doubles; collision frequency halves",
+      "Both remain unchanged"
+    ],
+    "answer": "Mean free path halves; collision frequency doubles",
+    "explanation": "At fixed temperature, ideal-gas number density is proportional to pressure, so it doubles and the mean free path halves. The rms speed stays unchanged because temperature and molecular mass are unchanged; dividing it by half the path length doubles collision frequency.",
+    "id": "neet-challenge-b8-physics-9",
+    "category": "Physics 9: Kinetic Theory of Gases",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-9",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 10,
+    "question": "A harmonic oscillator starts at equilibrium with positive velocity, x = A sin(2πt/T). What are the first time it reaches x = A/2 and its kinetic-energy fraction at that position?",
+    "options": [
+      "T/6 and 1/4",
+      "T/12 and 1/4",
+      "T/12 and 3/4",
+      "T/4 and 3/4"
+    ],
+    "answer": "T/12 and 3/4",
+    "explanation": "The first positive phase with sinφ = 1/2 is φ = π/6, giving t = T/12. Potential energy scales as x² and is one quarter of total energy at x = A/2, leaving three quarters as kinetic energy. Phase timing and energy fraction are separate steps.",
+    "id": "neet-challenge-b8-physics-10",
+    "category": "Physics 10: Oscillations and Waves",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-10",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 1,
+    "question": "A C/H/O compound contains 40.00% carbon, 6.67% hydrogen and the balance oxygen by mass. Its molar mass is 180 g/mol. Using C = 12, H = 1 and O = 16, what are empirical and molecular formulae to the stated precision?",
+    "options": [
+      "CH₂O and C₃H₆O₃",
+      "C₂H₄O₂ and C₆H₁₂O₆",
+      "CHO and C₆H₆O₆",
+      "CH₂O and C₆H₁₂O₆"
+    ],
+    "answer": "CH₂O and C₆H₁₂O₆",
+    "explanation": "For 100 g, atom amounts are about 40/12 = 3.333 mol C, 6.67 mol H and 53.33/16 = 3.333 mol O. Their ratio is 1:2:1, giving CH₂O with formula mass 30. Molar mass 180 requires six empirical units, C₆H₁₂O₆.",
+    "id": "neet-challenge-b8-chemistry-1",
+    "category": "Chemistry 1: Some Basic Concepts in Chemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-1",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 2,
+    "question": "For an atom, specify n = 3, l = 1 and ml = 0, without specifying spin. What are the maximum electron count with all three specified values and the maximum electron count in the entire n = 3, l = 1 subshell?",
+    "options": [
+      "Two and six",
+      "Six and two",
+      "Two and ten",
+      "One and six"
+    ],
+    "answer": "Two and six",
+    "explanation": "A single set of n, l and ml identifies one orbital, which can hold two electrons of opposite spin. The p subshell has three ml values, −1, 0 and +1, giving three orbitals and six electrons total. Do not count a subshell when an orbital is specified.",
+    "id": "neet-challenge-b8-chemistry-2",
+    "category": "Chemistry 2: Atomic Structure",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-2",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 3,
+    "question": "In the elementary MO model, ionizing N₂ to N₂⁺ removes an electron from an occupied bonding orbital. What are the N₂⁺ bond order and magnetic behaviour compared with diamagnetic N₂ of bond order 3?",
+    "options": [
+      "3.5 and paramagnetic",
+      "2.5 and paramagnetic",
+      "2.5 and diamagnetic",
+      "3.5 and diamagnetic"
+    ],
+    "answer": "2.5 and paramagnetic",
+    "explanation": "Removing one bonding electron decreases bond order by one half, from 3 to 2.5. The formerly paired occupied orbital now has one electron, so the molecular ion has an unpaired electron and is paramagnetic in the elementary model.",
+    "id": "neet-challenge-b8-chemistry-3",
+    "category": "Chemistry 3: Chemical Bonding and Molecular Structure",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-3",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 4,
+    "question": "At constant pressure a reaction has ΔH = −60 kJ/mol. A 0.020 mol reaction transfers all released heat to 100 g of solution with specific heat 4.0 J g⁻¹ K⁻¹. Neglect the container and losses. What are solution temperature rise and heat of the reacting system?",
+    "options": [
+      "3.0 K and +1.20 kJ",
+      "1.5 K and −1.20 kJ",
+      "3.0 K and −1.20 kJ",
+      "30 K and −12.0 kJ"
+    ],
+    "answer": "3.0 K and −1.20 kJ",
+    "explanation": "System heat is nΔH = 0.020×(−60) = −1.20 kJ. The solution gains +1200 J, so its temperature rise is Q/(mc) = 1200/(100×4.0) = 3.0 K. Distinguish the signs for the reacting system and the receiving solution.",
+    "id": "neet-challenge-b8-chemistry-4",
+    "category": "Chemistry 4: Chemical Thermodynamics",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-4",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 5,
+    "question": "A solute has monomer molar mass 50 g/mol. Dissolving 2.0 g in 0.100 kg solvent gives freezing-point depression 0.372 K; Kf = 1.86 K kg/mol. Under an ideal model allowing only monomer–dimer association, what are van’t Hoff factor and associated fraction of original monomer units?",
+    "options": [
+      "1.0 and zero",
+      "0.5 and 50%",
+      "2.0 and 100%",
+      "0.5 and 100%"
+    ],
+    "answer": "0.5 and 100%",
+    "explanation": "The formula-unit molality is (2/50)/0.100 = 0.40 mol/kg. Thus i = 0.372/(1.86×0.40) = 0.5. For dimerization i = 1−α/2, so α = 1: complete association halves particle number, rather than indicating only half the monomer units associated.",
+    "id": "neet-challenge-b8-chemistry-5",
+    "category": "Chemistry 5: Solutions",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-5",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 6,
+    "question": "A weak base has Kb = 10⁻⁵. For its conjugate-acid salt at 0.10 mol/L, assume ideal dilute behaviour, small hydrolysis and Kw = 10⁻¹⁴. What are conjugate-acid Ka and approximate pH?",
+    "options": [
+      "10⁻⁹ and 5",
+      "10⁻⁹ and 9",
+      "10⁻⁵ and 3",
+      "10⁻¹⁹ and 10"
+    ],
+    "answer": "10⁻⁹ and 5",
+    "explanation": "Conjugate constants satisfy KaKb = Kw, so Ka = 10⁻¹⁴/10⁻⁵ = 10⁻⁹. Then [H⁺] ≈ √(KaC) = √(10⁻¹⁰) = 10⁻⁵ mol/L, giving pH ≈ 5. The salt of a weak base with a strong acid is acidic in this model.",
+    "id": "neet-challenge-b8-chemistry-6",
+    "category": "Chemistry 6: Equilibrium",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-6",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 7,
+    "question": "A solution has conductivity κ = 0.0010 S/cm at c = 0.10 mol/L. After dilution, κ = 0.00020 S/cm at c = 0.010 mol/L. Using Λm = 1000κ/c, what are molar conductivities before and after dilution?",
+    "options": [
+      "10 and 2 S cm²/mol",
+      "10 and 20 S cm²/mol",
+      "1 and 2 S cm²/mol",
+      "100 and 20 S cm²/mol"
+    ],
+    "answer": "10 and 20 S cm²/mol",
+    "explanation": "Initially Λm = 1000×0.0010/0.10 = 10 S cm²/mol. After dilution it is 1000×0.00020/0.010 = 20. Conductivity falls fivefold but concentration falls tenfold, so molar conductivity increases rather than following the same trend as κ.",
+    "id": "neet-challenge-b8-chemistry-7",
+    "category": "Chemistry 7: Redox Reactions and Electrochemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-7",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 8,
+    "question": "A rate coefficient doubles when temperature rises from 300 K to 310 K. Under a constant-activation-energy Arrhenius model, use R = 8.314 J mol⁻¹ K⁻¹ and ln2 = 0.693. What is activation energy approximately?",
+    "options": [
+      "5.36 kJ/mol",
+      "−53.6 kJ/mol",
+      "53.6 kJ/mol",
+      "536 kJ/mol"
+    ],
+    "answer": "53.6 kJ/mol",
+    "explanation": "ln(k₂/k₁) = (Ea/R)(1/T₁−1/T₂). Therefore Ea = 8.314×0.693/(1/300−1/310) ≈ 5.36×10⁴ J/mol = 53.6 kJ/mol. Use reciprocal absolute temperatures and convert joules to kilojoules.",
+    "id": "neet-challenge-b8-chemistry-8",
+    "category": "Chemistry 8: Chemical Kinetics",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-8",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 9,
+    "question": "An ion X⁻ has 18 electrons. What are the period and group of neutral main-group X, and how does the anion radius usually compare with the neutral atom?",
+    "options": [
+      "Period 3, Group 18; anion smaller",
+      "Period 2, Group 17; anion larger",
+      "Period 3, Group 17; anion smaller",
+      "Period 3, Group 17; anion larger"
+    ],
+    "answer": "Period 3, Group 17; anion larger",
+    "explanation": "The singly negative ion has one more electron than the neutral atom, so X has atomic number 17 and configuration ending 3s²3p⁵: Period 3, Group 17. Adding an electron generally expands the electron cloud at unchanged nuclear charge.",
+    "id": "neet-challenge-b8-chemistry-9",
+    "category": "Chemistry 9: Classification of Elements and Periodicity in Properties",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-9",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 10,
+    "question": "Down Group 14, the +2 oxidation state becomes relatively more stable compared with +4 for the heavier members. Which electron pair is increasingly less available for bonding in the usual inert-pair description?",
+    "options": [
+      "The outer ns² pair",
+      "The outer np² pair exclusively",
+      "An added pair of neutrons",
+      "A pair of core protons"
+    ],
+    "answer": "The outer ns² pair",
+    "explanation": "The inert-pair description concerns reduced participation of the outer ns² electrons in bonding in heavier p-block elements. Retaining this pair favours the lower +2 state relative to using all four valence electrons for +4; it does not mean valence-electron counts themselves change.",
+    "id": "neet-challenge-b8-chemistry-10",
+    "category": "Chemistry 10: p-Block Elements",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-10",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 1,
+    "question": "Specimen A is metamerically segmented with nephridia and a true coelom. Specimen B has jointed appendages and a chitinous exoskeleton. Which phylum pairing best fits these observations?",
+    "options": [
+      "A Arthropoda; B Annelida",
+      "A Annelida; B Arthropoda",
+      "A Mollusca; B Echinodermata",
+      "A Platyhelminthes; B Chordata"
+    ],
+    "answer": "A Annelida; B Arthropoda",
+    "explanation": "Metameric segmentation with nephridia and a true coelom fits an annelid. Jointed appendages and a chitinous exoskeleton fit an arthropod. Segmentation alone would be insufficient because both phyla can show it; the linked observations distinguish them.",
+    "id": "neet-challenge-b8-biology-1",
+    "category": "Biology 1: Diversity in Living World",
+    "lessonHref": "/neet/classes/diversity-living-world",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 2,
+    "question": "A typical leaf section has palisade tissue below the upper epidermis, spongy mesophyll below it, and more stomata on the lower epidermis. Which organization and functional interpretation fit?",
+    "options": [
+      "Isobilateral monocot leaf; mesophyll cannot be differentiated",
+      "Dicot root; palisade tissue absorbs soil minerals",
+      "Dorsiventral dicot leaf; differentiated mesophyll supports photosynthesis and gas exchange",
+      "Monocot stem; stomata replace vascular bundles"
+    ],
+    "answer": "Dorsiventral dicot leaf; differentiated mesophyll supports photosynthesis and gas exchange",
+    "explanation": "The differentiated palisade and spongy mesophyll with upper/lower asymmetry fits a typical dorsiventral dicot leaf. Palisade cells are photosynthetically active, while spongy air spaces support gas movement. The statement is a typical organization, not a universal rule for all leaves.",
+    "id": "neet-challenge-b8-biology-2",
+    "category": "Biology 2: Structural Organisation in Animals and Plants",
+    "lessonHref": "/neet/classes/structural-organisation",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 3,
+    "question": "An enzyme follows v = Vmax[S]/(Km+[S]). An ideal pure noncompetitive inhibitor lowers Vmax from 100 to 50 units without changing Km = 5 mmol/L. At [S] = 5 mmol/L, what is inhibited rate, and can high substrate restore the original Vmax?",
+    "options": [
+      "50 units; yes",
+      "25 units; yes",
+      "50 units; no",
+      "25 units; no"
+    ],
+    "answer": "25 units; no",
+    "explanation": "The inhibited rate is 50×5/(5+5) = 25 units, compared with 50 without inhibitor at this substrate concentration. Increasing substrate approaches the inhibited Vmax of 50, not the original 100. This is the stipulated pure noncompetitive model, distinct from competitive inhibition.",
+    "id": "neet-challenge-b8-biology-3",
+    "category": "Biology 3: Cell Structure and Function",
+    "lessonHref": "/neet/classes/cell-cycle-division",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 4,
+    "question": "For a Calvin-cycle accounting model, each CO₂ fixed requires 3 ATP and 2 NADPH. Six CO₂ are fixed, and the available supply is 12 ATP and 12 NADPH. What additional supply is needed, and which light-reaction pathway can supplement it without net NADPH production?",
+    "options": [
+      "6 ATP; cyclic photophosphorylation",
+      "6 NADPH; cyclic photophosphorylation",
+      "12 ATP; glycolysis is a light reaction",
+      "6 ATP and 6 NADPH; water splitting alone"
+    ],
+    "answer": "6 ATP; cyclic photophosphorylation",
+    "explanation": "Six CO₂ require 18 ATP and 12 NADPH. The provided NADPH is sufficient but ATP is short by six. Cyclic electron flow can contribute ATP without net NADPH production, helping adjust the supply ratio in the stated accounting model.",
+    "id": "neet-challenge-b8-biology-4",
+    "category": "Biology 4: Plant Physiology",
+    "lessonHref": "/neet/classes/plant-physiology",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 5,
+    "question": "In a supplied oxygen-transport model, fully saturated blood carries 20 mL O₂ per 100 mL blood. Arterial and venous saturations are 95% and 75%, and blood flow is 5.0 L/min. Ignore dissolved oxygen. What are arterial O₂ content and tissue O₂ extraction rate?",
+    "options": [
+      "20 mL/100 mL and 250 mL/min",
+      "19 mL/100 mL and 200 mL/min",
+      "15 mL/100 mL and 200 mL/min",
+      "19 mL/100 mL and 100 mL/min"
+    ],
+    "answer": "19 mL/100 mL and 200 mL/min",
+    "explanation": "Arterial content is 0.95×20 = 19 mL/100 mL; venous content is 0.75×20 = 15. The difference is 4 mL per 100 mL blood. A 5000 mL/min flow contains fifty such 100 mL portions, delivering 4×50 = 200 mL O₂/min to tissues in this model.",
+    "id": "neet-challenge-b8-biology-5",
+    "category": "Biology 5: Human Physiology",
+    "lessonHref": "/neet/classes/human-physiology",
+    "challenge": true
+  }
+]
