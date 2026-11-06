@@ -1,0 +1,427 @@
+[
+  {
+    "subject": "Physics",
+    "unit": 1,
+    "question": "Two independently measured lengths are (10.0 ± 0.1) cm and (9.0 ± 0.1) cm. For their difference, what are the first-order maximum absolute uncertainty and percentage uncertainty?",
+    "options": [
+      "0.1 cm and 10%",
+      "0.2 cm and 20%",
+      "0.2 cm and 2%",
+      "0 cm and 0%"
+    ],
+    "answer": "0.2 cm and 20%",
+    "explanation": "The difference is 1.0 cm. For a worst-case bound in subtraction, absolute uncertainties add: 0.1+0.1 = 0.2 cm. Relative to the small difference, the percentage bound is 0.2/1.0×100 = 20%; subtraction does not cancel independent uncertainties.",
+    "id": "neet-challenge-b6-physics-1",
+    "category": "Physics 1: Physics and Measurement",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-1",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 3,
+    "question": "In separate trials a 2 kg block is on a horizontal surface with μs = 0.80 and μk = 0.50; g = 10 m/s². First, a 12 N horizontal force acts while it remains at rest. Second, a 20 N horizontal force acts while it slides forward. What are first-trial friction and second-trial acceleration?",
+    "options": [
+      "16 N and 5 m/s²",
+      "12 N and 10 m/s²",
+      "12 N and 5 m/s²",
+      "10 N and 5 m/s²"
+    ],
+    "answer": "12 N and 5 m/s²",
+    "explanation": "Maximum static friction is 0.8×20 = 16 N, but static friction adjusts to the required 12 N in the first trial. During sliding, kinetic friction is 0.5×20 = 10 N, so acceleration is (20−10)/2 = 5 m/s².",
+    "id": "neet-challenge-b6-physics-3",
+    "category": "Physics 3: Laws of Motion",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-3",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 5,
+    "question": "Two identical uniform rods rotate about fixed axes perpendicular to their lengths: one through its centre, the other through an end. Using Icentre = ML²/12, what are the end/centre ratios of angular acceleration under equal net torques and kinetic energy at equal angular speeds?",
+    "options": [
+      "4 and 4",
+      "1/4 and 1/4",
+      "4 and 1/4",
+      "1/4 and 4"
+    ],
+    "answer": "1/4 and 4",
+    "explanation": "The parallel-axis theorem gives Iend = ML²/12 + M(L/2)² = ML²/3, four times Icentre. At equal torque, α = τ/I gives an acceleration ratio 1/4. At equal angular speed, kinetic energy ½Iω² instead has ratio 4.",
+    "id": "neet-challenge-b6-physics-5",
+    "category": "Physics 5: Rotational Motion",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-5",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 7,
+    "question": "A uniform elastic wire extends 8 mm under a fixed load within the linear elastic regime. A second wire of the same material has half the original length and twice the radius under the same load. What are its extension and its stress relative to the original wire?",
+    "options": [
+      "1 mm and 1/4",
+      "2 mm and 1/4",
+      "1 mm and 1/8",
+      "4 mm and 1/2"
+    ],
+    "answer": "1 mm and 1/4",
+    "explanation": "Extension is FL/(AY). Halving length and quadrupling area makes extension 1/8 as large, hence 1 mm. Stress F/A is one quarter as large, while strain is also one quarter for the unchanged Young modulus.",
+    "id": "neet-challenge-b6-physics-7",
+    "category": "Physics 7: Properties of Solids and Liquids",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-7",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 9,
+    "question": "Helium and neon are ideal monatomic gases at the same temperature. Their molar masses are 4 and 20 g/mol. What are the helium/neon ratios of rms speed and mean translational kinetic energy per atom?",
+    "options": [
+      "5 and 5",
+      "√5 and 1",
+      "√5 and 5",
+      "1/√5 and 1"
+    ],
+    "answer": "√5 and 1",
+    "explanation": "At equal temperature, rms speed varies as inverse square root of molar mass, so the ratio is √(20/4) = √5. Mean translational kinetic energy per atom is 3kT/2 and is equal for both gases despite their different speeds.",
+    "id": "neet-challenge-b6-physics-9",
+    "category": "Physics 9: Kinetic Theory of Gases",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-9",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 11,
+    "question": "Equal positive charges +q are fixed at x = +a and x = −a. With k = 1/(4πε₀), what are electric field and potential at the origin, taking zero potential at infinity?",
+    "options": [
+      "2kq/a² and zero",
+      "Zero and zero",
+      "Zero and 2kq/a",
+      "Zero and −2kq/a"
+    ],
+    "answer": "Zero and 2kq/a",
+    "explanation": "At the midpoint the two field vectors have equal magnitudes and opposite directions, so they cancel. Potentials are scalars and add: kq/a + kq/a = 2kq/a. A point of zero field need not have zero potential.",
+    "id": "neet-challenge-b6-physics-11",
+    "category": "Physics 11: Electrostatics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-11",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 13,
+    "question": "A particle of mass m and positive charge q enters a uniform magnetic field B at speed v, making 60° with the field. With no electric field and nonrelativistic motion, what are helical radius and pitch?",
+    "options": [
+      "mv/(qB) and 2πmv/(qB)",
+      "mv/(2qB) and √3πmv/(qB)",
+      "√3mv/(2qB) and 2πmv/(qB)",
+      "√3mv/(2qB) and πmv/(qB)"
+    ],
+    "answer": "√3mv/(2qB) and πmv/(qB)",
+    "explanation": "The perpendicular speed is v sin60° = √3v/2, giving radius mv⊥/(qB). The parallel speed is v/2 and the period is 2πm/(qB), so pitch is v∥T = πmv/(qB). Magnetic force changes direction but not speed.",
+    "id": "neet-challenge-b6-physics-13",
+    "category": "Physics 13: Magnetic Effects of Current and Magnetism",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-13",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 15,
+    "question": "Two plane electromagnetic waves in vacuum are compared. The second has three times the electric-field amplitude and twice the frequency of the first. What are second/first ratios of average intensity and photon flux per unit area?",
+    "options": [
+      "9 and 9/2",
+      "3 and 3/2",
+      "9 and 18",
+      "6 and 3"
+    ],
+    "answer": "9 and 9/2",
+    "explanation": "Intensity is proportional to electric amplitude squared, so its ratio is 3² = 9. Energy per photon hf doubles. Photon flux is intensity divided by photon energy, giving a ratio 9/2 rather than 9 or 18.",
+    "id": "neet-challenge-b6-physics-15",
+    "category": "Physics 15: Electromagnetic Waves",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-15",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 17,
+    "question": "An electron and a proton have equal de Broglie wavelengths and are both nonrelativistic. Taking mp/me = 1836, what are electron/proton ratios of momentum and kinetic energy?",
+    "options": [
+      "1836 and 1836",
+      "1 and 1836",
+      "1 and 1",
+      "1836 and 1"
+    ],
+    "answer": "1 and 1836",
+    "explanation": "Equal wavelengths imply equal momenta from λ = h/p. At the same momentum, kinetic energy p²/(2m) is inversely proportional to mass, so the electron has 1836 times the proton’s kinetic energy in the nonrelativistic model.",
+    "id": "neet-challenge-b6-physics-17",
+    "category": "Physics 17: Dual Nature of Matter and Radiation",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-17",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 19,
+    "question": "A forward-biased diode is modelled as having a constant 0.70 V drop. It is in series with a 430 Ω resistor across a 5.0 V DC supply. What are current and power dissipated in the diode?",
+    "options": [
+      "10 mA and 50 mW",
+      "11.6 mA and 8.1 mW",
+      "10 mA and 7 mW",
+      "7 mA and 10 mW"
+    ],
+    "answer": "10 mA and 7 mW",
+    "explanation": "The resistor has 5.0−0.70 = 4.30 V across it, so current is 4.30/430 = 0.010 A. Diode power is VdI = 0.70×0.010 = 0.007 W = 7 mW. Total supply power is not the same as diode power.",
+    "id": "neet-challenge-b6-physics-19",
+    "category": "Physics 19: Electronic Devices",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-19",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 1,
+    "question": "A 2.50 g sample of CuSO₄·xH₂O leaves 1.60 g anhydrous CuSO₄ after quantitative removal of only water. Use molar masses CuSO₄ = 160 and H₂O = 18 g/mol. What are x and the original water mass percentage?",
+    "options": [
+      "Five and 64%",
+      "Three and 36%",
+      "Five and 40%",
+      "Five and 36%"
+    ],
+    "answer": "Five and 36%",
+    "explanation": "Water lost is 2.50−1.60 = 0.90 g, or 0.050 mol. Anhydrous salt amount is 1.60/160 = 0.010 mol, so x = 5. Water mass percentage is 0.90/2.50×100 = 36%, not the 64% remaining salt fraction.",
+    "id": "neet-challenge-b6-chemistry-1",
+    "category": "Chemistry 1: Some Basic Concepts in Chemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-1",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 3,
+    "question": "NH₃ forms a Lewis acid–base adduct with BF₃. Which molecule donates the electron pair, and what is the boron coordination number in the usual adduct model?",
+    "options": [
+      "NH₃ donates; boron coordination becomes four",
+      "BF₃ donates; boron coordination remains three",
+      "NH₃ donates; boron coordination remains three",
+      "BF₃ donates; boron coordination becomes five"
+    ],
+    "answer": "NH₃ donates; boron coordination becomes four",
+    "explanation": "Ammonia donates its nitrogen lone pair to electron-deficient boron. Boron then has three B–F bonds and the additional N→B bond, giving coordination number four. The donor is not identified simply by which species contains fluorine.",
+    "id": "neet-challenge-b6-chemistry-3",
+    "category": "Chemistry 3: Chemical Bonding and Molecular Structure",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-3",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 5,
+    "question": "An ideal binary liquid contains equal mole fractions of volatile A and B. Pure-component vapour pressures are 20 and 50 kPa respectively at the same temperature. What are total vapour pressure and B mole fraction in the equilibrium vapour?",
+    "options": [
+      "35 kPa and 1/2",
+      "35 kPa and 5/7",
+      "70 kPa and 5/7",
+      "25 kPa and 2/7"
+    ],
+    "answer": "35 kPa and 5/7",
+    "explanation": "Raoult’s law gives partial pressures 0.5×20 = 10 kPa and 0.5×50 = 25 kPa, so total pressure is 35 kPa. The vapour B fraction is pB/P = 25/35 = 5/7; equal liquid fractions do not imply equal vapour fractions.",
+    "id": "neet-challenge-b6-chemistry-5",
+    "category": "Chemistry 5: Solutions",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-5",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 7,
+    "question": "Two electrolytic cells in series carry the same charge with 100% current efficiency. One deposits 0.635 g Cu from Cu²⁺; the other deposits Ag from Ag⁺. Use Cu = 63.5 and Ag = 108 g/mol. What silver mass deposits?",
+    "options": [
+      "0.540 g",
+      "1.080 g",
+      "2.160 g",
+      "4.320 g"
+    ],
+    "answer": "2.160 g",
+    "explanation": "Copper deposited is 0.635/63.5 = 0.0100 mol, requiring 0.0200 mol electrons. The same charge passes through the silver cell, producing 0.0200 mol Ag because Ag⁺ requires one electron. Silver mass is 0.0200×108 = 2.160 g.",
+    "id": "neet-challenge-b6-chemistry-7",
+    "category": "Chemistry 7: Redox Reactions and Electrochemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-7",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 9,
+    "question": "Which comparison of fluorine and chlorine correctly combines atomic size and first electron-gain enthalpy in the usual gas-phase convention?",
+    "options": [
+      "F is larger; its first electron gain is more exothermic",
+      "F is smaller; its first electron gain must be more exothermic",
+      "Cl is smaller; its first electron gain is more exothermic",
+      "F is smaller; Cl has the more negative first electron-gain enthalpy"
+    ],
+    "answer": "F is smaller; Cl has the more negative first electron-gain enthalpy",
+    "explanation": "Fluorine is the smaller atom, but adding an electron to its compact 2p shell has greater electron–electron repulsion. Chlorine therefore has the more negative first electron-gain enthalpy. Radius and electron-gain trends must not be treated as identical rules.",
+    "id": "neet-challenge-b6-chemistry-9",
+    "category": "Chemistry 9: Classification of Elements and Periodicity in Properties",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-9",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 11,
+    "question": "In acidic solution, Cr₂O₇²⁻ is reduced to two Cr³⁺ while Fe²⁺ becomes Fe³⁺. How many moles of Fe²⁺ and H⁺ are consumed per 0.010 mol Cr₂O₇²⁻ in the balanced net reaction?",
+    "options": [
+      "0.060 mol Fe²⁺ and 0.140 mol H⁺",
+      "0.030 mol Fe²⁺ and 0.070 mol H⁺",
+      "0.060 mol Fe²⁺ and 0.070 mol H⁺",
+      "0.020 mol Fe²⁺ and 0.140 mol H⁺"
+    ],
+    "answer": "0.060 mol Fe²⁺ and 0.140 mol H⁺",
+    "explanation": "Each chromium falls from +6 to +3, so two chromium atoms accept six electrons, supplied by six Fe²⁺. Acid balance requires 14 H⁺ and produces seven H₂O per dichromate. Multiplying these ratios by 0.010 gives 0.060 and 0.140 mol.",
+    "id": "neet-challenge-b6-chemistry-11",
+    "category": "Chemistry 11: d- and f-Block Elements",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-11",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 13,
+    "question": "On a chromatogram under fixed conditions, a solute spot travels 3.0 cm while the solvent front travels 8.0 cm from the origin. If the same Rf applies in a repeat where the front travels 12.0 cm, what are Rf and expected solute travel distance?",
+    "options": [
+      "0.375 and 3.0 cm",
+      "0.375 and 4.5 cm",
+      "2.667 and 4.5 cm",
+      "0.250 and 4.0 cm"
+    ],
+    "answer": "0.375 and 4.5 cm",
+    "explanation": "Rf is solute distance divided by solvent-front distance, 3/8 = 0.375. Under the stipulated identical chromatographic conditions, the repeat distance is 0.375×12 = 4.5 cm. Rf is dimensionless and is not a universal constant across changed conditions.",
+    "id": "neet-challenge-b6-chemistry-13",
+    "category": "Chemistry 13: Purification and Characterisation of Organic Compounds",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-13",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 15,
+    "question": "An acyclic alkene gives one mole each of acetone and ethanal per mole on ozonolysis with reductive work-up. Which parent alkene is consistent with these products?",
+    "options": [
+      "Pent-1-ene",
+      "Pent-2-ene",
+      "2-Methylbut-2-ene",
+      "2-Methylbut-1-ene"
+    ],
+    "answer": "2-Methylbut-2-ene",
+    "explanation": "Reconnect the two carbonyl carbons with a double bond. Acetone contributes a carbon bearing two methyl groups and ethanal contributes a carbon bearing methyl and H, giving (CH₃)₂C=CHCH₃, 2-methylbut-2-ene. Product carbon counts sum to five.",
+    "id": "neet-challenge-b6-chemistry-15",
+    "category": "Chemistry 15: Hydrocarbons",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-15",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 17,
+    "question": "Benzaldehyde undergoes quantitative Cannizzaro reaction under the ideal net stoichiometry 2 aldehyde → 1 benzyl alcohol + 1 benzoate. Starting with 0.040 mol benzaldehyde and sufficient base, what product amounts result?",
+    "options": [
+      "0.040 mol alcohol and 0.040 mol benzoate",
+      "0.040 mol alcohol and no benzoate",
+      "0.010 mol alcohol and 0.030 mol benzoate",
+      "0.020 mol alcohol and 0.020 mol benzoate"
+    ],
+    "answer": "0.020 mol alcohol and 0.020 mol benzoate",
+    "explanation": "Two aldehyde molecules disproportionate: one is reduced to alcohol and the other oxidized to carboxylate. Thus each product amount is half the initial 0.040 mol, or 0.020 mol. The two products together account for all aldehyde-derived units.",
+    "id": "neet-challenge-b6-chemistry-17",
+    "category": "Chemistry 17: Organic Compounds Containing Oxygen",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-17",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 19,
+    "question": "Sucrose and maltose are compared before hydrolysis. Which is ordinarily nonreducing, and how many moles of monosaccharide molecules result from complete hydrolysis of 0.010 mol sucrose?",
+    "options": [
+      "Sucrose; 0.020 mol",
+      "Maltose; 0.020 mol",
+      "Sucrose; 0.010 mol",
+      "Both; 0.010 mol"
+    ],
+    "answer": "Sucrose; 0.020 mol",
+    "explanation": "Sucrose is ordinarily nonreducing because both anomeric centres participate in its glycosidic bond. Hydrolysis gives one glucose and one fructose per sucrose, so 0.010 mol yields 0.020 mol total monosaccharide molecules. Maltose retains a reducing end.",
+    "id": "neet-challenge-b6-chemistry-19",
+    "category": "Chemistry 19: Biomolecules",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-19",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 1,
+    "question": "In a typical moss, the leafy plant body and the attached capsule-bearing generation are compared. Which combination of ploidy and spore-forming division is correct?",
+    "options": [
+      "Leafy body 2n; capsule generation n; spores by mitosis",
+      "Leafy body n; capsule generation 2n; spores by meiosis",
+      "Both generations n; spores by meiosis",
+      "Leafy body n; capsule generation 2n; spores by fertilization"
+    ],
+    "answer": "Leafy body n; capsule generation 2n; spores by meiosis",
+    "explanation": "The leafy moss plant is the haploid gametophyte. The attached sporophyte develops from the diploid zygote and is diploid; meiosis in its spore-producing tissue generates haploid spores. Alternating generations do not have the same ploidy.",
+    "id": "neet-challenge-b6-biology-1",
+    "category": "Biology 1: Diversity in Living World",
+    "lessonHref": "/neet/classes/diversity-living-world",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 3,
+    "question": "An enzyme follows v = Vmax[S]/(Km+[S]). A competitive inhibitor changes apparent Km from 2 to 4 mmol/L while Vmax remains 120 units. At [S] = 2 mmol/L, what are inhibited rate and limiting rate as substrate becomes very large?",
+    "options": [
+      "60 and 120 units",
+      "40 and 60 units",
+      "40 and 120 units",
+      "60 and 60 units"
+    ],
+    "answer": "40 and 120 units",
+    "explanation": "With inhibitor, v = 120×2/(4+2) = 40 units, compared with 60 units without inhibitor. At very high substrate, [S]/(Km+[S]) approaches one, so the competitive model still approaches the unchanged Vmax of 120 units.",
+    "id": "neet-challenge-b6-biology-3",
+    "category": "Biology 3: Cell Structure and Function",
+    "lessonHref": "/neet/classes/cell-cycle-division",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 5,
+    "question": "In an idealized steady calculation for both kidneys together, filtration is 125 mL/min and net tubular reabsorption is 124 mL/min, with no other volume input. What are daily urine volume and the fraction of filtered volume reabsorbed?",
+    "options": [
+      "1.44 L/day and 0.8%",
+      "144 L/day and 99.2%",
+      "1.00 L/day and 99.2%",
+      "1.44 L/day and 99.2%"
+    ],
+    "answer": "1.44 L/day and 99.2%",
+    "explanation": "Urine flow is the difference, 1 mL/min. Over 1440 minutes this gives 1440 mL = 1.44 L/day. Reabsorbed fraction is 124/125 = 0.992, or 99.2%. The urine fraction and reabsorbed fraction are complementary, so they must not be interchanged.",
+    "id": "neet-challenge-b6-biology-5",
+    "category": "Biology 5: Human Physiology",
+    "lessonHref": "/neet/classes/human-physiology",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 7,
+    "question": "For a recessive X-linked trait, a carrier mother XᴬXᵃ and unaffected father XᴬY have children. Assume equal sex probability and normal segregation. What fractions are affected among sons and among all children, respectively?",
+    "options": [
+      "1/2 and 1/4",
+      "1/4 and 1/2",
+      "1/2 and 1/2",
+      "1/4 and 1/4"
+    ],
+    "answer": "1/2 and 1/4",
+    "explanation": "A son receives Y from his father and either maternal X with equal probability, so half the sons are affected. Sons make up half of all children in the model, giving an affected-child fraction 1/2×1/2 = 1/4. No daughter receives an affected paternal X.",
+    "id": "neet-challenge-b6-biology-7",
+    "category": "Biology 7: Genetics and Evolution",
+    "lessonHref": "/neet/classes/genetics-evolution",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 9,
+    "question": "Two DNA molecules are each 6000 bp long, with idealized complete cuts at coordinates 1000 and 4000 bp. One molecule is linear with coordinates from its left end, and the other is circular with coordinates around its circumference. What fragment lengths result?",
+    "options": [
+      "Linear: 1000, 3000, 2000 bp; circular: 1000, 5000 bp",
+      "Linear: 1000, 3000, 2000 bp; circular: 3000, 3000 bp",
+      "Linear: 3000, 3000 bp; circular: 1000, 3000, 2000 bp",
+      "Linear: 1000, 4000, 1000 bp; circular: 2000, 4000 bp"
+    ],
+    "answer": "Linear: 1000, 3000, 2000 bp; circular: 3000, 3000 bp",
+    "explanation": "Linear lengths are 1000−0 = 1000, 4000−1000 = 3000 and 6000−4000 = 2000 bp. Circular fragments are the direct 3000 bp interval and the wrap-around interval 6000−4000+1000 = 3000 bp. Each set must sum to 6000 bp.",
+    "id": "neet-challenge-b6-biology-9",
+    "category": "Biology 9: Biotechnology and Its Applications",
+    "lessonHref": "/neet/classes/biotechnology",
+    "challenge": true
+  }
+]
