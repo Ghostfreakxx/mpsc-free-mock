@@ -1,0 +1,427 @@
+[
+  {
+    "subject": "Physics",
+    "unit": 1,
+    "question": "A measured rectangle has length (20.0 ± 0.2) cm and width (10.0 ± 0.1) cm. Using first-order maximum uncertainty propagation, which area and absolute uncertainty should be reported?",
+    "options": [
+      "200 cm² ± 2 cm²",
+      "200 cm² ± 4 cm²",
+      "200 cm² ± 0.3 cm²",
+      "200 cm² ± 20 cm²"
+    ],
+    "answer": "200 cm² ± 4 cm²",
+    "explanation": "Area is 20×10 = 200 cm². Maximum fractional uncertainty is 0.2/20 + 0.1/10 = 0.02, giving absolute area uncertainty 200×0.02 = 4 cm². This first-order worst-case bound differs from statistical quadrature.",
+    "id": "neet-challenge-b3-physics-1",
+    "category": "Physics 1: Physics and Measurement",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-1",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 9,
+    "question": "Two samples of the same ideal gas have temperatures T and 4T. Their rms molecular speeds are v₁ and v₂. If each sample contains the same number of molecules, what are v₂/v₁ and the ratio of total translational kinetic energies?",
+    "options": [
+      "4 and 2",
+      "2 and 2",
+      "2 and 4",
+      "4 and 4"
+    ],
+    "answer": "2 and 4",
+    "explanation": "For the same molecular mass, rms speed is proportional to √T, so the speed ratio is 2. Total translational kinetic energy is 3NkT/2, so equal molecule numbers give an energy ratio of 4.",
+    "id": "neet-challenge-b3-physics-9",
+    "category": "Physics 9: Kinetic Theory of Gases",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-9",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 13,
+    "question": "Two long parallel wires 0.10 m apart carry currents 3 A and 4 A in the same direction. With μ₀ = 4π × 10⁻⁷ N A⁻², what is the force per unit length, and is it attractive or repulsive?",
+    "options": [
+      "2.4 × 10⁻⁶ N/m; attractive",
+      "2.4 × 10⁻⁵ N/m; repulsive",
+      "1.2 × 10⁻⁵ N/m; attractive",
+      "2.4 × 10⁻⁵ N/m; attractive"
+    ],
+    "answer": "2.4 × 10⁻⁵ N/m; attractive",
+    "explanation": "Force per unit length is μ₀I₁I₂/(2πd) = 2×10⁻⁷×12/0.10 = 2.4×10⁻⁵ N/m. Parallel currents in the same direction attract; the magnitude alone does not determine the direction.",
+    "id": "neet-challenge-b3-physics-13",
+    "category": "Physics 13: Magnetic Effects of Current and Magnetism",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-13",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 14,
+    "question": "A series RLC circuit is at resonance with resistance 30 Ω and rms supply voltage 120 V. If inductive reactance is 50 Ω, what are rms current and rms voltage across the inductor?",
+    "options": [
+      "4 A and 200 V",
+      "2.4 A and 120 V",
+      "4 A and 120 V",
+      "2.4 A and 200 V"
+    ],
+    "answer": "4 A and 200 V",
+    "explanation": "At resonance XL = XC, so the net reactance vanishes and impedance is R = 30 Ω. Current is 120/30 = 4 A and inductor voltage is IXL = 200 V. Inductor and capacitor voltages oppose in phase and can each exceed the supply voltage.",
+    "id": "neet-challenge-b3-physics-14",
+    "category": "Physics 14: Electromagnetic Induction and Alternating Currents",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-14",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 15,
+    "question": "A plane electromagnetic wave in vacuum has magnetic-field amplitude 2.0 μT. Use c = 3.0 × 10⁸ m/s. What is its electric-field amplitude, and what happens to intensity if both field amplitudes are halved?",
+    "options": [
+      "600 V/m; intensity halves",
+      "600 V/m; intensity becomes one quarter",
+      "150 V/m; intensity becomes one quarter",
+      "600 V/m; intensity stays unchanged"
+    ],
+    "answer": "600 V/m; intensity becomes one quarter",
+    "explanation": "E₀ = cB₀ = 3×10⁸×2×10⁻⁶ = 600 V/m. Intensity is proportional to either field amplitude squared, so halving both consistently reduces intensity to one quarter, not one half.",
+    "id": "neet-challenge-b3-physics-15",
+    "category": "Physics 15: Electromagnetic Waves",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-15",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 16,
+    "question": "In a double-slit experiment, wavelength is 600 nm, screen distance is 2.0 m and slit separation is 0.50 mm. Under the small-angle approximation, what are fringe width and the distance of the third bright fringe from the central maximum?",
+    "options": [
+      "1.2 mm and 3.6 mm",
+      "2.4 mm and 4.8 mm",
+      "2.4 mm and 7.2 mm",
+      "0.6 mm and 1.8 mm"
+    ],
+    "answer": "2.4 mm and 7.2 mm",
+    "explanation": "Fringe width β = λD/d = 600×10⁻⁹×2/(0.50×10⁻³) = 2.4 mm. Counting the central bright fringe as order zero, the third-order bright fringe is at 3β = 7.2 mm.",
+    "id": "neet-challenge-b3-physics-16",
+    "category": "Physics 16: Optics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-16",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 17,
+    "question": "Nonrelativistic electrons are accelerated from rest through potentials V and 9V. If the de Broglie wavelength in the first case is λ, what are the second wavelength and ratio of second to first momenta?",
+    "options": [
+      "λ/9 and 9",
+      "3λ and 1/3",
+      "λ/3 and 9",
+      "λ/3 and 3"
+    ],
+    "answer": "λ/3 and 3",
+    "explanation": "Accelerating energy is eV = p²/(2m), so momentum scales as √V. Raising the potential ninefold triples momentum. Since wavelength is h/p, the wavelength becomes λ/3.",
+    "id": "neet-challenge-b3-physics-17",
+    "category": "Physics 17: Dual Nature of Matter and Radiation",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-17",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 18,
+    "question": "A hydrogen atom emits a photon in the transition n = 3 to n = 2. Using Eₙ = −13.6/n² eV and hc = 1240 eV nm, which photon energy and wavelength are closest?",
+    "options": [
+      "1.89 eV and 656 nm",
+      "10.2 eV and 122 nm",
+      "1.51 eV and 821 nm",
+      "12.09 eV and 103 nm"
+    ],
+    "answer": "1.89 eV and 656 nm",
+    "explanation": "Energy released is 13.6(1/4−1/9) = 1.889 eV approximately. Wavelength is hc/E = 1240/1.889 ≈ 656 nm. Use the difference between the two bound-state energies, not either energy alone.",
+    "id": "neet-challenge-b3-physics-18",
+    "category": "Physics 18: Atoms and Nuclei",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-18",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 19,
+    "question": "An ideal diode is forward biased in series with a 1 kΩ resistor and a 5 V ideal DC source. If diode polarity is reversed with everything else unchanged, what are the forward-case current and reverse-case resistor voltage in the ideal model?",
+    "options": [
+      "5 mA and 5 V",
+      "5 mA and 0 V",
+      "0 mA and 5 V",
+      "0 mA and 0 V"
+    ],
+    "answer": "5 mA and 0 V",
+    "explanation": "An ideal forward-biased diode has zero voltage drop, so current is 5/1000 = 5 mA. In ideal reverse bias it is an open circuit: current is zero and resistor voltage IR is zero, while the source voltage appears across the diode.",
+    "id": "neet-challenge-b3-physics-19",
+    "category": "Physics 19: Electronic Devices",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-19",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 20,
+    "question": "A metre bridge balances at 60 cm from the unknown-resistance gap when the other gap contains 4 Ω. If the two gap resistances are interchanged, what are the unknown resistance and new balance length from the same left end? Assume an ideal uniform bridge wire.",
+    "options": [
+      "6 Ω and 60 cm",
+      "8 Ω and 40 cm",
+      "6 Ω and 40 cm",
+      "8 Ω and 60 cm"
+    ],
+    "answer": "6 Ω and 40 cm",
+    "explanation": "Initially R/4 = 60/40, giving R = 6 Ω. After interchange, 4/6 = l/(100−l), giving l = 40 cm. The end used for measuring length remains fixed; changing gap order inverts the resistance ratio.",
+    "id": "neet-challenge-b3-physics-20",
+    "category": "Physics 20: Experimental Skills",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-20",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 3,
+    "question": "For NO⁺, consider a simple molecular-orbital electron-count comparison with N₂. N has atomic number 7 and O has atomic number 8. Which electron count, bond order and magnetic behaviour follow in the elementary model?",
+    "options": [
+      "16 electrons; bond order 2; paramagnetic",
+      "14 electrons; bond order 2; paramagnetic",
+      "15 electrons; bond order 2.5; paramagnetic",
+      "14 electrons; bond order 3; diamagnetic"
+    ],
+    "answer": "14 electrons; bond order 3; diamagnetic",
+    "explanation": "NO⁺ has 7+8−1 = 14 total electrons and is isoelectronic with N₂. In the elementary MO model it has bond order 3 and no unpaired electrons, so it is diamagnetic. Account for the positive charge when counting electrons.",
+    "id": "neet-challenge-b3-chemistry-3",
+    "category": "Chemistry 3: Chemical Bonding and Molecular Structure",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-3",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 9,
+    "question": "Two main-group elements X and Y are in the same period. X has outer configuration ns²np⁵ and Y has ns²np⁶, with n greater than 1. Which comparison is normally supported?",
+    "options": [
+      "Y has a filled valence shell and a higher first ionization energy than X",
+      "X has a filled valence shell and a higher first ionization energy than Y",
+      "Both have the same first ionization energy because n is the same",
+      "Y must form a stable −1 ion more readily than X"
+    ],
+    "answer": "Y has a filled valence shell and a higher first ionization energy than X",
+    "explanation": "Y is the noble-gas member with a closed ns²np⁶ shell; X is the preceding halogen. In the same period the noble gas normally has the higher first ionization energy. A shared principal shell does not imply equal electron-removal energies.",
+    "id": "neet-challenge-b3-chemistry-9",
+    "category": "Chemistry 9: Classification of Elements and Periodicity in Properties",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-9",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 10,
+    "question": "Compare nitrogen and phosphorus as first and second members of Group 15. Which pair of statements is correct in the usual elementary bonding description?",
+    "options": [
+      "N₂ has a weaker triple bond than P₂; nitrogen is larger",
+      "N₂ has a strong triple bond; small nitrogen shows effective 2p–2p π overlap",
+      "P₂ is the ordinary stable molecular form of phosphorus at room temperature; nitrogen has no π bonding",
+      "Nitrogen and phosphorus have identical bonding simply because both have five valence electrons"
+    ],
+    "answer": "N₂ has a strong triple bond; small nitrogen shows effective 2p–2p π overlap",
+    "explanation": "Small nitrogen atoms permit effective side-on overlap of 2p orbitals, helping stabilize the N≡N bond. Larger phosphorus does not reproduce the same ordinary bonding pattern; equal valence-electron counts do not remove first-member differences.",
+    "id": "neet-challenge-b3-chemistry-10",
+    "category": "Chemistry 10: p-Block Elements",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-10",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 11,
+    "question": "In the spin-only approximation, compare high-spin Mn²⁺ with Zn²⁺. Atomic numbers are Mn 25 and Zn 30. Which pair of magnetic moments is closest in Bohr magnetons?",
+    "options": [
+      "Mn²⁺: 4.90; Zn²⁺: 1.73",
+      "Mn²⁺: 0; Zn²⁺: 5.92",
+      "Mn²⁺: 5.92; Zn²⁺: 0",
+      "Mn²⁺: 3.87; Zn²⁺: 0"
+    ],
+    "answer": "Mn²⁺: 5.92; Zn²⁺: 0",
+    "explanation": "Mn²⁺ is d⁵ with five unpaired electrons in the high-spin state. The spin-only moment is √[n(n+2)] = √35 ≈ 5.92 μB. Zn²⁺ is d¹⁰ with no unpaired electrons, so its spin-only moment is zero.",
+    "id": "neet-challenge-b3-chemistry-11",
+    "category": "Chemistry 11: d- and f-Block Elements",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-11",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 14,
+    "question": "A molecule has two independent stereogenic centres with different substituent environments and no internal symmetry. What are the maximum number of stereoisomers and the number of enantiomeric pairs?",
+    "options": [
+      "Two stereoisomers and one pair",
+      "Three stereoisomers and one pair",
+      "Four stereoisomers and one pair",
+      "Four stereoisomers and two pairs"
+    ],
+    "answer": "Four stereoisomers and two pairs",
+    "explanation": "Without symmetry-related reductions, two independent stereogenic centres give 2² = 4 configurations. They group into two mirror-image pairs. The absence of internal symmetry excludes a meso reduction in this specified case.",
+    "id": "neet-challenge-b3-chemistry-14",
+    "category": "Chemistry 14: Some Basic Principles of Organic Chemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-14",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 15,
+    "question": "An acyclic hydrocarbon C₄H₆ consumes two moles of H₂ per mole on complete hydrogenation to butane. Which inference is justified from these data alone?",
+    "options": [
+      "It has two degrees of unsaturation, but the data do not uniquely distinguish an alkyne from a diene",
+      "It must be but-1-yne uniquely",
+      "It must be buta-1,3-diene uniquely",
+      "It has only one degree of unsaturation"
+    ],
+    "answer": "It has two degrees of unsaturation, but the data do not uniquely distinguish an alkyne from a diene",
+    "explanation": "For an acyclic C₄ saturated hydrocarbon the formula is C₄H₁₀. The deficit of four H atoms corresponds to two degrees of unsaturation and consumption of two H₂. Both an alkyne and a diene can fit; net uptake alone is not a unique structure test.",
+    "id": "neet-challenge-b3-chemistry-15",
+    "category": "Chemistry 15: Hydrocarbons",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-15",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 16,
+    "question": "Two runs of a simple SN2 reaction keep temperature and solvent fixed. In the second run both alkyl-halide and nucleophile concentrations are doubled. What happens to initial rate, and what stereochemical outcome is expected at a suitable reacting stereogenic carbon?",
+    "options": [
+      "Rate doubles; retention",
+      "Rate quadruples; inversion",
+      "Rate is unchanged; racemization",
+      "Rate quadruples; complete racemization"
+    ],
+    "answer": "Rate quadruples; inversion",
+    "explanation": "For the elementary bimolecular substitution model, rate = k[RX][Nu⁻], so doubling both concentrations multiplies rate by four. Backside attack produces inversion of configuration at a suitable reacting stereogenic carbon.",
+    "id": "neet-challenge-b3-chemistry-16",
+    "category": "Chemistry 16: Organic Compounds Containing Halogens",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-16",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 17,
+    "question": "Excess methylmagnesium bromide reacts with one mole of ethanal, followed by aqueous work-up. What alcohol is formed, and how many carbon atoms does each product molecule contain?",
+    "options": [
+      "Ethanol; two",
+      "Butan-2-ol; four",
+      "Propan-2-ol; three",
+      "Propan-1-ol; three"
+    ],
+    "answer": "Propan-2-ol; three",
+    "explanation": "The methyl group adds to ethanal’s carbonyl carbon, extending the two-carbon substrate by one carbon. Protonation of the alkoxide on work-up gives CH₃CH(OH)CH₃, propan-2-ol, containing three carbons.",
+    "id": "neet-challenge-b3-chemistry-17",
+    "category": "Chemistry 17: Organic Compounds Containing Oxygen",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-17",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 18,
+    "question": "Which sequence correctly gives the organic product of ethanenitrile reduction followed by its reaction with nitrous acid in the standard primary aliphatic amine model?",
+    "options": [
+      "Methanamine then methanol",
+      "Ethanamine then ethene as the sole product",
+      "Ethanamide then ethanoic acid",
+      "Ethanamine then ethanol with nitrogen evolution"
+    ],
+    "answer": "Ethanamine then ethanol with nitrogen evolution",
+    "explanation": "Reduction of CH₃CN converts the nitrile carbon into CH₂NH₂ without losing carbon, forming ethanamine. A primary aliphatic amine reacts with nitrous acid to give the corresponding alcohol with N₂ evolution in the standard overall model.",
+    "id": "neet-challenge-b3-chemistry-18",
+    "category": "Chemistry 18: Organic Compounds Containing Nitrogen",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-18",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 19,
+    "question": "A linear pentapeptide contains only amino acids whose side chains have no additional amino or carboxyl groups. Complete hydrolysis requires how many water molecules per peptide molecule, and how many free α-amino groups are present among all products?",
+    "options": [
+      "Four water molecules and five α-amino groups",
+      "Five water molecules and four α-amino groups",
+      "Four water molecules and one α-amino group",
+      "Five water molecules and five α-amino groups"
+    ],
+    "answer": "Four water molecules and five α-amino groups",
+    "explanation": "A linear chain of five residues contains four backbone peptide bonds. Hydrolysis consumes one water per bond, yielding five free amino-acid molecules, each with one α-amino group. Do not confuse the single N terminus before hydrolysis with the five products.",
+    "id": "neet-challenge-b3-chemistry-19",
+    "category": "Chemistry 19: Biomolecules",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-19",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 1,
+    "question": "A specimen has a notochord during development, dorsal hollow nerve cord and pharyngeal slits at some stage. Which classification and developmental qualification are best supported?",
+    "options": [
+      "Arthropod; these features must persist in every adult",
+      "Chordate; diagnostic features may be present only during a developmental stage",
+      "Echinoderm; a notochord is always its adult skeleton",
+      "Annelid; a ventral solid nerve cord is the feature described"
+    ],
+    "answer": "Chordate; diagnostic features may be present only during a developmental stage",
+    "explanation": "These are chordate diagnostic features, but their persistence and modification depend on the group and stage. A notochord need not remain the principal adult supporting structure; vertebrates commonly replace it largely with the vertebral column.",
+    "id": "neet-challenge-b3-biology-1",
+    "category": "Biology 1: Diversity in Living World",
+    "lessonHref": "/neet/classes/diversity-living-world",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 2,
+    "question": "A young stem has conjoint, collateral, open vascular bundles arranged in a ring, with endarch xylem. Which identification and consequence of the bundle cambium are most consistent?",
+    "options": [
+      "Typical young monocot stem; closed bundles enable ordinary vascular cambium activity",
+      "Typical dicot root; radial bundles are described",
+      "Typical young dicot stem; cambium can contribute to secondary vascular growth",
+      "Typical monocot root; endarch xylem is diagnostic"
+    ],
+    "answer": "Typical young dicot stem; cambium can contribute to secondary vascular growth",
+    "explanation": "A ring of conjoint collateral open bundles with endarch xylem is consistent with a typical young dicot stem. Open bundles contain cambium, which can contribute to secondary xylem and phloem; roots instead typically have radial, exarch organization.",
+    "id": "neet-challenge-b3-biology-2",
+    "category": "Biology 2: Structural Organisation in Animals and Plants",
+    "lessonHref": "/neet/classes/structural-organisation",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 4,
+    "question": "A germinating seed is respiring aerobically using carbohydrate as the sole respiratory substrate. Over an interval it consumes 4 mmol O₂ and releases 4 mmol CO₂. What is its respiratory quotient, and which observation would most directly indicate a shift towards a lipid-dominated substrate?",
+    "options": [
+      "RQ = 0.5; CO₂/O₂ rises above 1",
+      "RQ = 1; CO₂/O₂ remains exactly 1",
+      "RQ = 2; CO₂/O₂ falls below 1",
+      "RQ = 1; CO₂/O₂ falls below 1"
+    ],
+    "answer": "RQ = 1; CO₂/O₂ falls below 1",
+    "explanation": "Respiratory quotient is CO₂ evolved divided by O₂ consumed: 4/4 = 1, consistent with carbohydrate oxidation. Lipids are more reduced and ordinarily require proportionally more oxygen, giving an RQ below one under aerobic conditions.",
+    "id": "neet-challenge-b3-biology-4",
+    "category": "Biology 4: Plant Physiology",
+    "lessonHref": "/neet/classes/plant-physiology",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 5,
+    "question": "A motor neuron releases acetylcholine at a skeletal-muscle neuromuscular junction. Which sequence correctly connects this event to contraction?",
+    "options": [
+      "Muscle membrane excitation → sarcoplasmic-reticulum Ca²⁺ release → troponin binding → exposure of actin sites",
+      "Troponin releases acetylcholine → Ca²⁺ destroys actin → contraction",
+      "Ca²⁺ binds haemoglobin → myosin disappears → contraction",
+      "Muscle membrane excitation → Ca²⁺ removal from sarcoplasm → immediate exposure of actin sites"
+    ],
+    "answer": "Muscle membrane excitation → sarcoplasmic-reticulum Ca²⁺ release → troponin binding → exposure of actin sites",
+    "explanation": "End-plate excitation triggers a muscle action potential and excitation–contraction coupling. Released Ca²⁺ binds troponin, shifts tropomyosin and permits myosin interaction with actin. Removal of sarcoplasmic Ca²⁺ instead favours relaxation.",
+    "id": "neet-challenge-b3-biology-5",
+    "category": "Biology 5: Human Physiology",
+    "lessonHref": "/neet/classes/human-physiology",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 8,
+    "question": "A person receives preformed antibodies after a suspected exposure. Which classification and expectation distinguish this intervention from vaccination with an antigen?",
+    "options": [
+      "Active immunity; long-lived memory must form from the injected antibodies",
+      "Passive immunity; protection can be immediate but the transferred antibodies do not themselves establish recipient memory",
+      "Passive immunity; it permanently replaces all adaptive immune cells",
+      "Active immunity; no antibodies are involved"
+    ],
+    "answer": "Passive immunity; protection can be immediate but the transferred antibodies do not themselves establish recipient memory",
+    "explanation": "Transfer of preformed antibodies provides passive immunity and may act immediately. Their presence is temporary; they are not equivalent to generating the recipient’s own antigen-specific memory through an active immune response.",
+    "id": "neet-challenge-b3-biology-8",
+    "category": "Biology 8: Biology and Human Welfare",
+    "lessonHref": "/neet/classes/human-welfare",
+    "challenge": true
+  }
+]

@@ -1,4 +1,6 @@
-# NEET challenge expansion
+# NEET challenge expansion — batch 2
+
+Current release: [complete unit rotation](neet-challenge-rotation-2026.md) raises the challenge pool to 100, with two choices per unit. The details below describe batch 2.
 
 Adds 25 original application questions: ten Physics, ten Chemistry and five Biology. The combined mock bank now has 702 questions, including 75 challenge questions across all 50 mapped units. Each challenge paper still selects one application question per unit (50 total) plus 130 foundation questions. The 25 units with additional choices now rotate between challenge questions; the other 25 retain their original challenge question. Foundation selection, timing, scoring and existing IDs/attempt keys are unchanged.
 
