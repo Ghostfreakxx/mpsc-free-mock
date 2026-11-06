@@ -1,4 +1,6 @@
-# NEET challenge mix
+# NEET challenge mix — initial release
+
+Current expansion: [25 additional application questions](neet-challenge-expansion-2026.md) grow the challenge pool to 75 and the combined pool to 702, served through bank v3. The description below records the original 50-question release.
 
 Adds 50 newly authored application questions, one for each mapped NEET UG 2026 unit, to the existing `/neet/mock-test` flow. The 677-question combined pool contains 627 foundation and 50 challenge questions. Challenge mix is the default for a fresh setup and guarantees all 50 application questions plus 130 rotating foundation questions. Foundation mode selects exactly as before. Both retain 180 questions, 180 minutes, 45/45/90 subjects and +4/−1/0 scoring.
 

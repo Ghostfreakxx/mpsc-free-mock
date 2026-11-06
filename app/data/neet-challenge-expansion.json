@@ -1,0 +1,427 @@
+[
+  {
+    "subject": "Physics",
+    "unit": 2,
+    "question": "A projectile is launched at 20 m/s at 30° above horizontal from level ground. Neglect air resistance and use g = 10 m/s². At its highest point, what are its speed and height above launch level?",
+    "options": [
+      "10 m/s and 20 m",
+      "10√3 m/s and 5 m",
+      "20 m/s and 5 m",
+      "10√3 m/s and 20 m"
+    ],
+    "answer": "10√3 m/s and 5 m",
+    "explanation": "Initial vertical speed is 20 sin30° = 10 m/s, while horizontal speed is 20 cos30° = 10√3 m/s. At the top only the vertical component vanishes. Height is uy²/(2g) = 100/20 = 5 m.",
+    "id": "neet-challenge-b2-physics-2",
+    "category": "Physics 2: Kinematics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-2",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 3,
+    "question": "A 60 kg person stands on a scale in a lift accelerating upward at 2 m/s². Take g = 10 m/s². What does the scale read in newtons, and what is the net force on the person?",
+    "options": [
+      "600 N and 120 N upward",
+      "720 N and 720 N upward",
+      "720 N and 120 N upward",
+      "480 N and 120 N downward"
+    ],
+    "answer": "720 N and 120 N upward",
+    "explanation": "The scale measures normal reaction N, not net force. N−mg = ma gives N = 60(10+2) = 720 N. The net force is ma = 120 N upward; gravity remains 600 N downward.",
+    "id": "neet-challenge-b2-physics-3",
+    "category": "Physics 3: Laws of Motion",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-3",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 4,
+    "question": "A 2 kg object moving at 6 m/s collides with and sticks to a stationary 1 kg object on a smooth horizontal surface. What are the common speed and kinetic energy lost?",
+    "options": [
+      "2 m/s and 30 J",
+      "4 m/s and 24 J",
+      "6 m/s and 0 J",
+      "4 m/s and 12 J"
+    ],
+    "answer": "4 m/s and 12 J",
+    "explanation": "Horizontal momentum is conserved: 2×6 = (2+1)v, so v = 4 m/s. Initial kinetic energy is 36 J and final kinetic energy is ½×3×16 = 24 J. The lost kinetic energy is 12 J, not the final energy.",
+    "id": "neet-challenge-b2-physics-4",
+    "category": "Physics 4: Work, Energy and Power",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-4",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 5,
+    "question": "A student rotates on a frictionless stool with total moment of inertia 4 kg m² and angular speed 3 rad/s. Pulling weights inward reduces the total inertia to 2 kg m². With negligible external torque, what are the final angular speed and increase in rotational kinetic energy?",
+    "options": [
+      "6 rad/s and 18 J",
+      "6 rad/s and 36 J",
+      "1.5 rad/s and 18 J",
+      "3 rad/s and 9 J"
+    ],
+    "answer": "6 rad/s and 18 J",
+    "explanation": "Angular momentum Iω remains 12 kg m²/s, so final ω = 12/2 = 6 rad/s. Initial energy is ½×4×9 = 18 J and final energy is ½×2×36 = 36 J. The student supplies the 18 J increase through internal work.",
+    "id": "neet-challenge-b2-physics-5",
+    "category": "Physics 5: Rotational Motion",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-5",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 6,
+    "question": "A body of mass m moves from rest at Earth’s surface to rest at height equal to Earth’s radius R. Neglect rotation and atmosphere. With surface gravitational acceleration g, what work must an external agent do quasistatically?",
+    "options": [
+      "mgR",
+      "mgR/2",
+      "2mgR",
+      "mgR/4"
+    ],
+    "answer": "mgR/2",
+    "explanation": "The final distance from Earth’s centre is 2R. The potential-energy rise is GMm(1/R−1/(2R)) = GMm/(2R). Since g = GM/R², the required work is mgR/2. A constant-g estimate would overestimate it.",
+    "id": "neet-challenge-b2-physics-6",
+    "category": "Physics 6: Gravitation",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-6",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 7,
+    "question": "A liquid of density 800 kg/m³ rises 5 cm in a capillary of radius 0.20 mm. Assume zero contact angle and g = 10 m/s². If the radius doubles with the same liquid, what are surface tension and new rise?",
+    "options": [
+      "0.080 N/m and 2.5 cm",
+      "0.040 N/m and 10 cm",
+      "0.040 N/m and 2.5 cm",
+      "0.004 N/m and 5 cm"
+    ],
+    "answer": "0.040 N/m and 2.5 cm",
+    "explanation": "For capillary rise, h = 2T/(ρgr). Thus T = 0.05×800×10×0.00020/2 = 0.040 N/m. With unchanged wetting and liquid properties, height is inversely proportional to radius, so it falls to 2.5 cm.",
+    "id": "neet-challenge-b2-physics-7",
+    "category": "Physics 7: Properties of Solids and Liquids",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-7",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 8,
+    "question": "An ideal heat engine absorbs 800 J and rejects 500 J per cycle. It drives an ideal refrigerator that removes 600 J from a cold reservoir using all the engine’s work. What are engine efficiency and refrigerator coefficient of performance?",
+    "options": [
+      "62.5% and 2",
+      "37.5% and 0.5",
+      "62.5% and 0.5",
+      "37.5% and 2"
+    ],
+    "answer": "37.5% and 2",
+    "explanation": "Engine work is Qh−Qc = 800−500 = 300 J; efficiency is 300/800 = 37.5%. Refrigerator COP is heat removed divided by work input, 600/300 = 2. COP and engine efficiency are different ratios.",
+    "id": "neet-challenge-b2-physics-8",
+    "category": "Physics 8: Thermodynamics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-8",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 10,
+    "question": "Two sound sources of frequencies 252 Hz and 256 Hz sound together. A listener counts successive loudness maxima. What is the beat frequency and the time between successive maxima?",
+    "options": [
+      "4 Hz and 0.25 s",
+      "508 Hz and 0.25 s",
+      "4 Hz and 0.50 s",
+      "2 Hz and 0.50 s"
+    ],
+    "answer": "4 Hz and 0.25 s",
+    "explanation": "Beat frequency is the magnitude of the frequency difference, |256−252| = 4 Hz. Therefore four maxima occur each second and successive maxima are separated by 1/4 = 0.25 s, not half that beat rate.",
+    "id": "neet-challenge-b2-physics-10",
+    "category": "Physics 10: Oscillations and Waves",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-10",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 11,
+    "question": "An ideal parallel-plate capacitor of 3 μF is charged to 120 V and isolated. Its plate separation doubles without changing plate area or inserting a dielectric; neglect fringing. What are final potential difference and final stored energy?",
+    "options": [
+      "60 V and 0.0108 J",
+      "240 V and 0.0432 J",
+      "240 V and 0.0216 J",
+      "60 V and 0.0432 J"
+    ],
+    "answer": "240 V and 0.0432 J",
+    "explanation": "Doubling separation halves capacitance to 1.5 μF. Isolation keeps charge fixed, so voltage doubles to 240 V. Initial energy is ½×3×10⁻⁶×120² = 0.0216 J; Q²/(2C) doubles to 0.0432 J as external work separates the plates.",
+    "id": "neet-challenge-b2-physics-11",
+    "category": "Physics 11: Electrostatics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-11",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 12,
+    "question": "A wire of resistance 12 Ω is cut into three equal lengths. The pieces are then connected in parallel. With unchanged temperature and cross section, what is the equivalent resistance and current drawn from an ideal 6 V supply?",
+    "options": [
+      "4 Ω and 1.5 A",
+      "36 Ω and 1/6 A",
+      "4/3 Ω and 4.5 A",
+      "12 Ω and 0.5 A"
+    ],
+    "answer": "4/3 Ω and 4.5 A",
+    "explanation": "Each piece has one third the original length and resistance, 4 Ω. Three equal 4 Ω resistors in parallel give 4/3 Ω. The supply current is 6/(4/3) = 4.5 A; cutting and reconnecting are separate changes.",
+    "id": "neet-challenge-b2-physics-12",
+    "category": "Physics 12: Current Electricity",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-12",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 1,
+    "question": "A 10.0 g sample of impure CaCO₃ releases 1.76 g CO₂ on complete reaction with excess acid. Impurities release no gas. Using CaCO₃ = 100 g/mol and CO₂ = 44 g/mol, what are the mass percentage of CaCO₃ and moles of H⁺ consumed by it?",
+    "options": [
+      "40% and 0.040 mol",
+      "80% and 0.080 mol",
+      "40% and 0.020 mol",
+      "40% and 0.080 mol"
+    ],
+    "answer": "40% and 0.080 mol",
+    "explanation": "CO₂ amount is 1.76/44 = 0.040 mol, hence CaCO₃ amount is also 0.040 mol and its mass is 4.0 g: 40% of the sample. CaCO₃ + 2H⁺ → Ca²⁺ + CO₂ + H₂O requires 0.080 mol H⁺.",
+    "id": "neet-challenge-b2-chemistry-1",
+    "category": "Chemistry 1: Some Basic Concepts in Chemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-1",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 2,
+    "question": "For hydrogen-like ions, Eₙ = −13.6Z²/n² eV. What photon energy is emitted when a He⁺ electron falls from n = 2 to n = 1, and how does it compare with the corresponding hydrogen transition?",
+    "options": [
+      "40.8 eV; four times hydrogen",
+      "10.2 eV; equal to hydrogen",
+      "54.4 eV; four times hydrogen",
+      "40.8 eV; twice hydrogen"
+    ],
+    "answer": "40.8 eV; four times hydrogen",
+    "explanation": "He⁺ has Z = 2 and one electron. The level difference is 13.6×4×(1−1/4) = 40.8 eV. The same hydrogen transition is 10.2 eV, so the ratio is Z² = 4.",
+    "id": "neet-challenge-b2-chemistry-2",
+    "category": "Chemistry 2: Atomic Structure",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-2",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 4,
+    "question": "A reaction has equilibrium constant K = 10⁴ at 300 K. Use R = 8.314 J mol⁻¹ K⁻¹ and ln10 = 2.303. What is ΔG° approximately, and what is ΔG when the reaction mixture is at equilibrium?",
+    "options": [
+      "+23.0 kJ/mol and zero",
+      "−23.0 kJ/mol and zero",
+      "−23.0 kJ/mol and −23.0 kJ/mol",
+      "Zero and −23.0 kJ/mol"
+    ],
+    "answer": "−23.0 kJ/mol and zero",
+    "explanation": "ΔG° = −RT lnK = −8.314×300×4×2.303 ≈ −23.0 kJ/mol. At equilibrium Q = K, so ΔG = ΔG° + RT lnQ = 0. Standard Gibbs energy and actual reaction Gibbs energy need not be equal.",
+    "id": "neet-challenge-b2-chemistry-4",
+    "category": "Chemistry 4: Chemical Thermodynamics",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-4",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 5,
+    "question": "Two ideal dilute aqueous solutions contain, respectively, 0.10 mol/kg glucose and 0.10 mol/kg fully dissociated CaCl₂. If Kf = 1.86 K kg/mol, what are their freezing-point depressions in that order?",
+    "options": [
+      "0.186 K and 0.372 K",
+      "0.558 K and 0.186 K",
+      "0.186 K and 0.558 K",
+      "0.186 K and 0.186 K"
+    ],
+    "answer": "0.186 K and 0.558 K",
+    "explanation": "Glucose is a nonelectrolyte with ideal i = 1, giving ΔTf = 1×1.86×0.10 = 0.186 K. CaCl₂ gives three ions per formula unit in the stipulated complete-dissociation model, so i = 3 and ΔTf = 0.558 K.",
+    "id": "neet-challenge-b2-chemistry-5",
+    "category": "Chemistry 5: Solutions",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-5",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 6,
+    "question": "An ideal dilute weak-acid solution has Ka = 10⁻⁵ and initial concentration 0.10 mol/L. If it is diluted tenfold and small ionization remains valid, by what factors do [H⁺] and degree of ionization change?",
+    "options": [
+      "[H⁺] increases √10-fold; ionization decreases √10-fold",
+      "Both decrease tenfold",
+      "Both increase √10-fold",
+      "[H⁺] decreases √10-fold; ionization increases √10-fold"
+    ],
+    "answer": "[H⁺] decreases √10-fold; ionization increases √10-fold",
+    "explanation": "For a weak acid with small ionization, [H⁺] ≈ √(KaC), so tenfold dilution decreases [H⁺] by √10. The fraction ionized α ≈ √(Ka/C) instead increases by √10; lower concentration and greater fractional ionization are compatible.",
+    "id": "neet-challenge-b2-chemistry-6",
+    "category": "Chemistry 6: Equilibrium",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-6",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 7,
+    "question": "A current of 1.93 A passes through CuSO₄ solution for 1000 s with 100% current efficiency for Cu²⁺ + 2e⁻ → Cu. Using F = 96500 C/mol and Cu = 63.5 g/mol, what mass deposits and how many moles of electrons pass?",
+    "options": [
+      "0.635 g and 0.020 mol",
+      "1.27 g and 0.020 mol",
+      "0.635 g and 0.010 mol",
+      "6.35 g and 0.200 mol"
+    ],
+    "answer": "0.635 g and 0.020 mol",
+    "explanation": "Charge is It = 1930 C, corresponding to 1930/96500 = 0.020 mol electrons. Copper requires two electrons per atom, so 0.010 mol copper deposits, with mass 0.010×63.5 = 0.635 g.",
+    "id": "neet-challenge-b2-chemistry-7",
+    "category": "Chemistry 7: Redox Reactions and Electrochemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-7",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 8,
+    "question": "A zero-order reaction starts with [A]₀ = 0.080 mol/L and has k = 0.0020 mol L⁻¹ min⁻¹. What are its half-life and the earliest time at which the model reaches zero concentration?",
+    "options": [
+      "40 min and 80 min",
+      "20 min and 40 min",
+      "20 min and 20 min",
+      "10 min and 40 min"
+    ],
+    "answer": "20 min and 40 min",
+    "explanation": "Zero-order concentration obeys [A] = [A]₀−kt while reactant remains. Half-life is [A]₀/(2k) = 20 min and exhaustion occurs at [A]₀/k = 40 min. Continuing the line to negative concentrations is physically invalid.",
+    "id": "neet-challenge-b2-chemistry-8",
+    "category": "Chemistry 8: Chemical Kinetics",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-8",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 12,
+    "question": "For [Fe(CN)₆]⁴⁻, assume CN⁻ gives the usual low-spin octahedral splitting. With Fe atomic number 26, what are the metal oxidation state, d-electron count and number of unpaired electrons?",
+    "options": [
+      "+3, d⁵, one",
+      "+2, d⁶, four",
+      "+2, d⁶, zero",
+      "+4, d⁴, two"
+    ],
+    "answer": "+2, d⁶, zero",
+    "explanation": "Charge balance gives x−6 = −4, hence Fe(II), which is d⁶. With the stipulated low-spin octahedral field, the six d electrons fill t₂g as t₂g⁶eg⁰ and are all paired. High-spin d⁶ would have four unpaired electrons.",
+    "id": "neet-challenge-b2-chemistry-12",
+    "category": "Chemistry 12: Coordination Compounds",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-12",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 13,
+    "question": "A 0.60 g C/H/O compound gives 0.88 g CO₂ and 0.36 g H₂O on complete combustion. Its measured molar mass is 90 g/mol. What is the molecular formula? Use C = 12, H = 1 and O = 16.",
+    "options": [
+      "CH₂O",
+      "C₂H₄O₂",
+      "C₃H₈O₃",
+      "C₃H₆O₃"
+    ],
+    "answer": "C₃H₆O₃",
+    "explanation": "Carbon mass is 0.24 g and hydrogen mass is 0.04 g, leaving 0.32 g oxygen. Atom moles 0.020:0.040:0.020 give empirical formula CH₂O, mass 30. Molar mass 90 requires three empirical units, C₃H₆O₃.",
+    "id": "neet-challenge-b2-chemistry-13",
+    "category": "Chemistry 13: Purification and Characterisation of Organic Compounds",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-13",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 20,
+    "question": "A 10.0 mL aliquot of H₂SO₄ is titrated to complete neutralization with 0.100 mol/L NaOH. The observed titre is 20.30 mL and a reagent blank is 0.30 mL. What is the acid molarity?",
+    "options": [
+      "0.100 mol/L",
+      "0.200 mol/L",
+      "0.1015 mol/L",
+      "0.0500 mol/L"
+    ],
+    "answer": "0.100 mol/L",
+    "explanation": "The corrected base volume is 20.00 mL, giving 0.00200 mol OH⁻. Complete neutralization requires two OH⁻ per H₂SO₄, so the aliquot contains 0.00100 mol acid. Dividing by 0.0100 L gives 0.100 mol/L.",
+    "id": "neet-challenge-b2-chemistry-20",
+    "category": "Chemistry 20: Principles Related to Practical Chemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-20",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 3,
+    "question": "A somatic cell has 2n = 10. At mitotic metaphase and then at anaphase before cytokinesis, how many chromosomes are counted in the entire cell by centromeres?",
+    "options": [
+      "20 then 20",
+      "10 then 20",
+      "10 then 10",
+      "20 then 10"
+    ],
+    "answer": "10 then 20",
+    "explanation": "At metaphase there are ten chromosomes, each with two sister chromatids. At anaphase sister centromeres separate and each chromatid becomes a chromosome, giving twenty in the whole undivided cell, ten moving towards each pole.",
+    "id": "neet-challenge-b2-biology-3",
+    "category": "Biology 3: Cell Structure and Function",
+    "lessonHref": "/neet/classes/cell-cycle-division",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 6,
+    "question": "A flowering plant has somatic chromosome number 2n = 24 and a typical Polygonum-type embryo sac. How many chromosomes are expected in a synergid nucleus, the zygote and the primary endosperm nucleus?",
+    "options": [
+      "24, 24 and 48",
+      "12, 12 and 24",
+      "12, 24 and 36",
+      "24, 36 and 36"
+    ],
+    "answer": "12, 24 and 36",
+    "explanation": "The haploid number is n = 12. A synergid nucleus is haploid, the zygote is formed by n+n and is diploid with 24, and triple fusion gives the primary endosperm nucleus 3n = 36. Maternal somatic tissue is a separate compartment.",
+    "id": "neet-challenge-b2-biology-6",
+    "category": "Biology 6: Reproduction",
+    "lessonHref": "/neet/classes/reproduction",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 7,
+    "question": "In a Hardy–Weinberg population with complete dominance, a recessive phenotype occurs in 16% of individuals. What fraction of dominant-phenotype individuals are expected to be heterozygotes?",
+    "options": [
+      "0.48",
+      "0.40",
+      "3/7",
+      "4/7"
+    ],
+    "answer": "4/7",
+    "explanation": "q² = 0.16 gives q = 0.4 and p = 0.6. Heterozygotes have frequency 2pq = 0.48, while the dominant phenotype frequency is 1−q² = 0.84. The requested conditional fraction is 0.48/0.84 = 4/7.",
+    "id": "neet-challenge-b2-biology-7",
+    "category": "Biology 7: Genetics and Evolution",
+    "lessonHref": "/neet/classes/genetics-evolution",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 9,
+    "question": "An ideal PCR begins with three double-stranded target molecules. After five cycles at 100% efficiency, the product is split equally into two tubes. How many target molecules are in each tube, and what happens if primers are absent from a subsequent PCR?",
+    "options": [
+      "48 per tube; ordinary PCR amplification cannot proceed",
+      "96 per tube; ordinary PCR amplification continues unchanged",
+      "48 per tube; polymerase synthesizes primers itself",
+      "15 per tube; primers are unnecessary"
+    ],
+    "answer": "48 per tube; ordinary PCR amplification cannot proceed",
+    "explanation": "Five ideal doublings produce 3×2⁵ = 96 target molecules, so equal division gives 48 per tube. DNA polymerase needs an existing primer with a free 3′ end; ordinary PCR cannot sustain amplification when required primers are absent.",
+    "id": "neet-challenge-b2-biology-9",
+    "category": "Biology 9: Biotechnology and Its Applications",
+    "lessonHref": "/neet/classes/biotechnology",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 10,
+    "question": "A grazing chain has producer net primary production 20,000 kJ m⁻² yr⁻¹. Under a simplified 10% transfer model at each step, what energy reaches secondary consumers, and how much producer NPP is needed to supply 10 kJ m⁻² yr⁻¹ to tertiary consumers?",
+    "options": [
+      "2,000 and 1,000 kJ m⁻² yr⁻¹",
+      "200 and 10,000 kJ m⁻² yr⁻¹",
+      "200 and 1,000 kJ m⁻² yr⁻¹",
+      "20 and 100,000 kJ m⁻² yr⁻¹"
+    ],
+    "answer": "200 and 10,000 kJ m⁻² yr⁻¹",
+    "explanation": "Secondary consumers are two transfers above producers, so available energy is 20,000×0.1² = 200. Tertiary consumers are three transfers above producers; supplying 10 requires producer NPP of 10/0.1³ = 10,000 in the same units.",
+    "id": "neet-challenge-b2-biology-10",
+    "category": "Biology 10: Ecology and Environment",
+    "lessonHref": "/neet/classes/ecology",
+    "challenge": true
+  }
+]
