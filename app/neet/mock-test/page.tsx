@@ -4,9 +4,9 @@ import blueprint from '../../data/neet-mock-blueprint.json';
 
 export const metadata = {
   title: 'NEET full-syllabus timed mock | 180 questions',
-  description: 'A 180-minute foundation mock spanning all 50 mapped NEET units, with 45 Physics, 45 Chemistry and 90 Biology questions, saved progress and worked review.',
+  description: 'A 180-minute mock with Foundation and Challenge mix options spanning all 50 mapped NEET units, with 45 Physics, 45 Chemistry and 90 Biology questions, saved progress and worked review.',
 };
 
 export default function NeetMock() {
-  return <><QuestionBankPreload names={['neet-full-mock']} /><ExamSimulator neetFullMock poolSizes={{ neet: blueprint.reduce((n, u) => n + u.count, 0), jee: 0, mpsc: 0, 'cuet-pg': 0 }} /></>;
+  return <><QuestionBankPreload names={['neet-full-mock-v2']} /><ExamSimulator neetFullMock poolSizes={{ neet: blueprint.reduce((n, u) => n + u.count, 50), jee: 0, mpsc: 0, 'cuet-pg': 0 }} /></>;
 }

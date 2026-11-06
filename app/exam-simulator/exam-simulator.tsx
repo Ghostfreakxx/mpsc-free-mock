@@ -62,11 +62,12 @@ const formatScore = (value: number) => Number.isInteger(value) ? String(value) :
 export default function ExamSimulator({ poolSizes, neetFullMock = false }: { poolSizes: Record<Stream, number>; neetFullMock?: boolean }) {
   const attemptKey = neetFullMock ? "neet-full-mock:attempt:v1" : ATTEMPT_KEY;
   const historyKey = neetFullMock ? "neet-full-mock:history:v1" : HISTORY_KEY;
-  const getPool = useCallback((stream: Stream) => neetFullMock ? loadQuestionBank<unknown>("neet-full-mock").then(value => { if (!isQuestionList<PoolQuestion>(value)) throw new Error("Invalid mock bank"); return value; }) : loadPool(stream), [neetFullMock]);
+  const getPool = useCallback((stream: Stream) => neetFullMock ? loadQuestionBank<unknown>("neet-full-mock-v2").then(value => { if (!isQuestionList<PoolQuestion>(value)) throw new Error("Invalid mock bank"); return value; }) : loadPool(stream), [neetFullMock]);
   const [loaded, setLoaded] = useState(false);
   const [pools, setPools] = useState<Partial<Record<Stream, PoolQuestion[]>>>({});
   const [loadError, setLoadError] = useState(false);
   const [starting, setStarting] = useState(false);
+  const [challengeMode, setChallengeMode] = useState(neetFullMock);
   const questionsById = useMemo(() => new Map(Object.values(pools).flat().map(question => [question.id, question])), [pools]);
   const [attempt, setAttempt] = useState<Attempt | null>(null);
   const [history, setHistory] = useState<AttemptSummary[]>([]);
@@ -104,6 +105,7 @@ export default function ExamSimulator({ poolSizes, neetFullMock = false }: { poo
         setExamId(config.id); setLength(neetFullMock ? 180 : config.lengths[0]); setMarkingId(config.markingOptions[0].id);
       }
       setAttempt(attemptOnArrival(saved, neetFullMock ? null : requested));
+      if (neetFullMock && saved) setChallengeMode(saved.practiceMode === "challenge");
       setHistory(readHistory(historyKey));
       setNow(Date.now());
       setLoaded(true);
@@ -154,7 +156,7 @@ export default function ExamSimulator({ poolSizes, neetFullMock = false }: { poo
     setMarkingId(examConfigs[id].markingOptions[0].id);
   }
 
-  async function begin(id = examId, count = length, marking = markingId) {
+  async function begin(id = examId, count = length, marking = markingId, harder = challengeMode) {
     const selected = examConfigs[id];
     setStarting(true);
     setLoadError(false);
@@ -169,13 +171,13 @@ export default function ExamSimulator({ poolSizes, neetFullMock = false }: { poo
     let paper: PoolQuestion[];
     try {
       const seed = Math.floor(Math.random() * 2 ** 31);
-      paper = neetFullMock ? selectNeetFullMock(pool, seed) : selectQuestions(selected, pool, count, seed);
+      paper = neetFullMock ? selectNeetFullMock(pool, seed, harder) : selectQuestions(selected, pool, count, seed);
     } catch { setLoadError(true); setStarting(false); return; }
     const at = Date.now();
     setPools(current => ({ ...current, [selected.stream]: pool }));
     setNow(at);
     setReviewFilter("wrong");
-    setAttempt(startAttempt(selected, marking, paper, at));
+    setAttempt({ ...startAttempt(selected, marking, paper, at), ...(neetFullMock && harder ? { practiceMode: "challenge" as const } : {}) });
     setStarting(false);
     window.scrollTo({ top: 0 });
   }
@@ -278,7 +280,7 @@ export default function ExamSimulator({ poolSizes, neetFullMock = false }: { poo
       <Header />
       <div className={`${styles.wrap} ${styles.stack}`}>
         <div>
-          <span className={styles.kicker}>{config.name} simulator · result</span>
+          <span className={styles.kicker}>{config.name} simulator · {attempt.practiceMode === "challenge" ? "challenge mix · " : ""}result</span>
           <h1 className={styles.title}>You scored {formatScore(result.score)} out of {result.max}</h1>
           <p className={styles.lead}>{attempt.questionIds.length} questions · {(config.markingOptions.find(option => option.id === attempt.markingId) ?? config.markingOptions[0]).label}. Original foundation practice, so treat the score as a strategy check rather than a rank prediction.</p>
         </div>
@@ -326,7 +328,7 @@ export default function ExamSimulator({ poolSizes, neetFullMock = false }: { poo
         </section>
 
         <div className={styles.startRow}>
-          <button type="button" className={`button button-dark ${styles.bigButton}`} disabled={starting} onClick={() => void begin(attempt.examId, attempt.questionIds.length, attempt.markingId)}><RotateCcw size={15} /> New paper, same settings</button>
+          <button type="button" className={`button button-dark ${styles.bigButton}`} disabled={starting} onClick={() => void begin(attempt.examId, attempt.questionIds.length, attempt.markingId, attempt.practiceMode === "challenge")}><RotateCcw size={15} /> New paper, same settings</button>
           <button type="button" className={`button button-outline ${styles.bigButton}`} onClick={() => { setExamId(attempt.examId); setLength(attempt.questionIds.length); setMarkingId(attempt.markingId); setAttempt(null); }}>Change settings</button>
         </div>
 
@@ -386,6 +388,7 @@ export default function ExamSimulator({ poolSizes, neetFullMock = false }: { poo
         </div>
       </section>}
 
+      {neetFullMock && <section className={styles.panel} aria-label="Mock difficulty"><h2 className={styles.sectionTitle}>Question mix</h2><div className={styles.chips}><button type="button" className={styles.chip} aria-pressed={!challengeMode} onClick={() => setChallengeMode(false)}>Foundation</button><button type="button" className={styles.chip} aria-pressed={challengeMode} onClick={() => setChallengeMode(true)}>Challenge mix</button></div><p className={styles.muted}>{challengeMode ? "50 new application questions: one guaranteed per unit, plus 130 foundation questions. Difficulty is an authored practice label, not calibrated against official NEET papers." : "180 foundation questions drawn from the original pool."}</p></section>}
       <p className={styles.muted}>{config.note} Check the current information bulletin before your exam.</p>
 
       <div className={styles.startRow}>
@@ -411,8 +414,8 @@ function Intro({ neetFullMock = false }: { neetFullMock?: boolean }) {
   if (neetFullMock) return <div>
     <span className={styles.kicker}>NEET UG · Full-syllabus foundation mock</span>
     <h1 className={styles.title}>NEET full-syllabus timed mock</h1>
-    <p className={styles.lead}>180 questions · 180 minutes · 720 marks. Physics 45, Chemistry 45, Biology 90. Every paper represents all 50 mapped syllabus units; questions rotate between attempts.</p>
-    <p className={styles.muted}>2026 bulletin baseline: +4 correct, −1 wrong, 0 unanswered. This browser practice uses a question palette; the actual NEET examination uses pen and paper. Unit quotas are our practice blueprint, not official chapter weightages. Reused original class questions test foundations, not every subheading or predicted exam difficulty.</p>
+    <p className={styles.lead}>180 questions · 180 minutes · 720 marks. Physics 45, Chemistry 45, Biology 90. Every paper represents all 50 mapped syllabus units. Challenge mix guarantees 50 new application questions, one per unit, alongside 130 rotating foundation questions.</p>
+    <p className={styles.muted}>2026 bulletin baseline: +4 correct, −1 wrong, 0 unanswered. This browser practice uses a question palette; the actual NEET examination uses pen and paper. Unit quotas are our practice blueprint, not official chapter weightages. Foundation questions reuse original classes; challenge questions add multi-step calculations and linked-concept reasoning. Neither mix exhausts every subheading or predicts exam difficulty.</p>
     <p className={styles.muted}>The clock continues while you leave or reload. Time-up submits automatically. Explanations appear after submission. Saved attempts stay separate from other simulator papers; storage must be available to resume on this browser.</p>
     <p><Link href="/neet/classes" prefetch={false}>Review recorded classes</Link> · <a href="https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf" target="_blank" rel="noreferrer">2026 NTA bulletin</a></p>
   </div>;

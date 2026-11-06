@@ -1,0 +1,852 @@
+[
+  {
+    "subject": "Physics",
+    "unit": 1,
+    "question": "A wire has R = 8.0 Ω, length 2.00 m and diameter 1.00 mm. Maximum uncertainties in R, length and diameter are 1%, 1% and 2%. Which resistivity and maximum percentage uncertainty follow?",
+    "options": [
+      "π × 10⁻⁶ Ω m; 6%",
+      "4π × 10⁻⁶ Ω m; 4%",
+      "π × 10⁻³ Ω m; 6%",
+      "π × 10⁻⁶ Ω m; 4%"
+    ],
+    "answer": "π × 10⁻⁶ Ω m; 6%",
+    "explanation": "ρ = Rπd²/(4L) = 8π×10⁻⁶/8 = π×10⁻⁶ Ω m. The worst-case percentage uncertainty is 1 + 2×2 + 1 = 6%. Convert the diameter to metres before squaring.",
+    "id": "neet-challenge-physics-1",
+    "category": "Physics 1: Physics and Measurement",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-1"
+  },
+  {
+    "subject": "Physics",
+    "unit": 2,
+    "question": "A particle starts from rest, accelerates uniformly at 2 m/s² for 5 s, then decelerates uniformly to rest in 5 s. What are its total displacement and average speed?",
+    "options": [
+      "25 m and 2.5 m/s",
+      "50 m and 5 m/s",
+      "100 m and 10 m/s",
+      "50 m and 10 m/s"
+    ],
+    "answer": "50 m and 5 m/s",
+    "explanation": "The peak speed is 10 m/s. The velocity–time graph has triangular area ½×10 s×10 m/s = 50 m. Motion never reverses, so average speed is 50/10 = 5 m/s.",
+    "id": "neet-challenge-physics-2",
+    "category": "Physics 2: Kinematics",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-2"
+  },
+  {
+    "subject": "Physics",
+    "unit": 3,
+    "question": "A 2 kg block on a rough horizontal table is connected over an ideal pulley to a hanging 1 kg mass. Kinetic friction coefficient is 0.20 and g = 10 m/s². Once the hanging mass moves down, what are acceleration and string tension?",
+    "options": [
+      "2 m/s² and 4 N",
+      "4 m/s² and 6 N",
+      "2 m/s² and 8 N",
+      "5 m/s² and 5 N"
+    ],
+    "answer": "2 m/s² and 8 N",
+    "explanation": "Friction on the table block is 0.2×2×10 = 4 N. The system driving force is 10−4 = 6 N on 3 kg, so a = 2 m/s². For the hanging mass, 10−T = 1×2, giving T = 8 N.",
+    "id": "neet-challenge-physics-3",
+    "category": "Physics 3: Laws of Motion",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-3"
+  },
+  {
+    "subject": "Physics",
+    "unit": 4,
+    "question": "A 1 kg body initially at rest slides down a smooth track through a vertical height of 5 m, then stops on a rough horizontal surface with μk = 0.25. Take g = 10 m/s². What are the speed at the track bottom and horizontal stopping distance?",
+    "options": [
+      "5 m/s and 20 m",
+      "10 m/s and 10 m",
+      "5 m/s and 10 m",
+      "10 m/s and 20 m"
+    ],
+    "answer": "10 m/s and 20 m",
+    "explanation": "Energy conservation gives v² = 2gh = 100, hence v = 10 m/s. Friction removes 50 J at 2.5 N, so stopping distance is 50/2.5 = 20 m.",
+    "id": "neet-challenge-physics-4",
+    "category": "Physics 4: Work, Energy and Power",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-4"
+  },
+  {
+    "subject": "Physics",
+    "unit": 5,
+    "question": "A uniform solid cylinder rolls without slipping down a ramp from rest through height h. For I = ½mr², what are its final speed squared and the fraction of kinetic energy in rotation?",
+    "options": [
+      "4gh/3 and 1/3",
+      "2gh and 1/2",
+      "gh and 1/2",
+      "4gh/3 and 2/3"
+    ],
+    "answer": "4gh/3 and 1/3",
+    "explanation": "Total kinetic energy is ½mv² + ½(½mr²)(v/r)² = ¾mv² = mgh. Thus v² = 4gh/3. The rotational term is ¼mv², one third of the total.",
+    "id": "neet-challenge-physics-5",
+    "category": "Physics 5: Rotational Motion",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-5"
+  },
+  {
+    "subject": "Physics",
+    "unit": 6,
+    "question": "A satellite in a circular orbit of radius r has speed v and period T. For a circular orbit of radius 4r around the same planet, what are speed and period?",
+    "options": [
+      "v/4 and 4T",
+      "v/2 and 8T",
+      "2v and 8T",
+      "v/2 and 4T"
+    ],
+    "answer": "v/2 and 8T",
+    "explanation": "Circular speed scales as r⁻¹/², so it halves. Kepler’s third law gives period proportional to r³/², so the period becomes 4³/²T = 8T.",
+    "id": "neet-challenge-physics-6",
+    "category": "Physics 6: Gravitation",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-6"
+  },
+  {
+    "subject": "Physics",
+    "unit": 7,
+    "question": "A narrow horizontal tube carries an ideal incompressible liquid of density 1000 kg/m³. Speed rises from 2 m/s to 6 m/s. What are the downstream/upstream area ratio and pressure drop?",
+    "options": [
+      "3 and 16 kPa",
+      "1/3 and 8 kPa",
+      "1/3 and 16 kPa",
+      "1/9 and 32 kPa"
+    ],
+    "answer": "1/3 and 16 kPa",
+    "explanation": "Continuity gives A₂/A₁ = v₁/v₂ = 1/3. At equal height, Bernoulli gives P₁−P₂ = ½ρ(v₂²−v₁²) = 500×32 = 16000 Pa. The pressure decrease supplies the increase in kinetic energy per unit volume.",
+    "id": "neet-challenge-physics-7",
+    "category": "Physics 7: Properties of Solids and Liquids",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-7"
+  },
+  {
+    "subject": "Physics",
+    "unit": 8,
+    "question": "One mole of a monatomic ideal gas is heated at constant pressure so its temperature increases by 100 K. Use R = 8.3 J mol⁻¹ K⁻¹. What heat is supplied and work done by the gas?",
+    "options": [
+      "1245 J and 830 J",
+      "2075 J and 1245 J",
+      "830 J and 2075 J",
+      "2075 J and 830 J"
+    ],
+    "answer": "2075 J and 830 J",
+    "explanation": "Work is nRΔT = 830 J. For a monatomic gas Cp = 5R/2, so Q = nCpΔT = 2075 J. Their difference, 1245 J, is the internal-energy rise.",
+    "id": "neet-challenge-physics-8",
+    "category": "Physics 8: Thermodynamics",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-8"
+  },
+  {
+    "subject": "Physics",
+    "unit": 9,
+    "question": "At fixed temperature, the molecular mass of an ideal gas is increased by a factor of four. If the pressure is also held fixed, what happens to rms speed and mass density?",
+    "options": [
+      "Speed halves; density quadruples",
+      "Speed quarters; density quadruples",
+      "Speed halves; density halves",
+      "Speed doubles; density quarters"
+    ],
+    "answer": "Speed halves; density quadruples",
+    "explanation": "vrms = √(3RT/M), so it halves. Ideal-gas mass density is PM/(RT), so at fixed P and T it increases fourfold. Equal temperature fixes the mean translational kinetic energy, not the speed.",
+    "id": "neet-challenge-physics-9",
+    "category": "Physics 9: Kinetic Theory of Gases",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-9"
+  },
+  {
+    "subject": "Physics",
+    "unit": 10,
+    "question": "A mass–spring oscillator has amplitude A and total energy E. At displacement A/2, what are the kinetic-energy fraction and speed relative to its maximum speed?",
+    "options": [
+      "1/4 and 1/2",
+      "3/4 and √3/2",
+      "1/2 and √3/2",
+      "3/4 and 3/4"
+    ],
+    "answer": "3/4 and √3/2",
+    "explanation": "Potential energy is proportional to x² and is E/4 at x = A/2. Kinetic energy is 3E/4. Since kinetic energy is proportional to speed squared, v/vmax = √(3/4).",
+    "id": "neet-challenge-physics-10",
+    "category": "Physics 10: Oscillations and Waves",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-10"
+  },
+  {
+    "subject": "Physics",
+    "unit": 11,
+    "question": "Two identical capacitors of capacitance C are charged separately to V and 0, disconnected from all batteries, then connected in parallel with like plates together. What are final common voltage and total energy lost?",
+    "options": [
+      "V and zero",
+      "V/2 and CV²/2",
+      "V/2 and CV²/4",
+      "V/4 and CV²/4"
+    ],
+    "answer": "V/2 and CV²/4",
+    "explanation": "Total charge CV is shared by capacitance 2C, giving V/2. Initial energy is CV²/2; final energy is ½(2C)(V/2)² = CV²/4. The difference CV²/4 is dissipated during redistribution.",
+    "id": "neet-challenge-physics-11",
+    "category": "Physics 11: Electrostatics",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-11"
+  },
+  {
+    "subject": "Physics",
+    "unit": 12,
+    "question": "A cell of emf 12 V and internal resistance 1 Ω supplies a 5 Ω resistor. What are terminal voltage and the fraction of total generated power dissipated in the external resistor?",
+    "options": [
+      "12 V and 5/6",
+      "10 V and 1/6",
+      "8 V and 2/3",
+      "10 V and 5/6"
+    ],
+    "answer": "10 V and 5/6",
+    "explanation": "Current is 12/(5+1) = 2 A and terminal voltage is 12−2×1 = 10 V. External power is 20 W; total generated power is 24 W, so the fraction is 5/6.",
+    "id": "neet-challenge-physics-12",
+    "category": "Physics 12: Current Electricity",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-12"
+  },
+  {
+    "subject": "Physics",
+    "unit": 13,
+    "question": "A proton enters a uniform magnetic field perpendicular to its velocity. Its accelerating potential before entry is increased fourfold, while magnetic field strength doubles. In the nonrelativistic regime, how do orbit radius and revolution frequency change?",
+    "options": [
+      "Radius unchanged; frequency doubles",
+      "Radius doubles; frequency unchanged",
+      "Radius halves; frequency doubles",
+      "Both remain unchanged"
+    ],
+    "answer": "Radius unchanged; frequency doubles",
+    "explanation": "Speed scales as √V and therefore doubles. Radius mv/(qB) stays unchanged when both v and B double. Cyclotron frequency qB/(2πm) doubles.",
+    "id": "neet-challenge-physics-13",
+    "category": "Physics 13: Magnetic Effects of Current and Magnetism",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-13"
+  },
+  {
+    "subject": "Physics",
+    "unit": 14,
+    "question": "An ideal transformer has primary/secondary turns ratio 10:1 and primary rms voltage 200 V. A 10 Ω resistor is connected to the secondary. What are secondary voltage and primary rms current?",
+    "options": [
+      "20 V and 2 A",
+      "20 V and 0.20 A",
+      "2000 V and 20 A",
+      "20 V and 20 A"
+    ],
+    "answer": "20 V and 0.20 A",
+    "explanation": "Vs = VpNs/Np = 20 V. Secondary current is 20/10 = 2 A, giving output power 40 W. For an ideal transformer input power is also 40 W, hence Ip = 40/200 = 0.20 A.",
+    "id": "neet-challenge-physics-14",
+    "category": "Physics 14: Electromagnetic Induction and Alternating Currents",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-14"
+  },
+  {
+    "subject": "Physics",
+    "unit": 15,
+    "question": "An electromagnetic wave in vacuum has electric-field amplitude 300 V/m. Take c = 3 × 10⁸ m/s. What is its magnetic-field amplitude, and by what factor does average intensity change if electric amplitude doubles?",
+    "options": [
+      "10⁻⁶ T and factor 2",
+      "10⁻⁴ T and factor 4",
+      "10⁻⁶ T and factor 4",
+      "10⁶ T and factor 2"
+    ],
+    "answer": "10⁻⁶ T and factor 4",
+    "explanation": "E₀ = cB₀ gives B₀ = 300/(3×10⁸) = 10⁻⁶ T. Average intensity is proportional to E₀², so doubling amplitude multiplies intensity by four.",
+    "id": "neet-challenge-physics-15",
+    "category": "Physics 15: Electromagnetic Waves",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-15"
+  },
+  {
+    "subject": "Physics",
+    "unit": 16,
+    "question": "A convex lens of focal length 10 cm has an object 15 cm in front of it. Using the Cartesian sign convention, what are image distance and linear magnification?",
+    "options": [
+      "+30 cm and +2",
+      "−30 cm and +2",
+      "+6 cm and −0.4",
+      "+30 cm and −2"
+    ],
+    "answer": "+30 cm and −2",
+    "explanation": "With u = −15 cm and f = +10 cm, 1/v = 1/f + 1/u = 1/10−1/15 = 1/30. Thus v = +30 cm and m = v/u = −2, indicating an inverted real image.",
+    "id": "neet-challenge-physics-16",
+    "category": "Physics 16: Optics",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-16"
+  },
+  {
+    "subject": "Physics",
+    "unit": 17,
+    "question": "Photons of energy 5 eV produce photoelectrons with stopping potential magnitude 3 V. For the same surface, what stopping potential follows for 7 eV photons, and does doubling intensity alone change it?",
+    "options": [
+      "5 V; intensity alone does not change it",
+      "4.2 V; intensity doubles it",
+      "5 V; intensity doubles it",
+      "2 V; intensity alone does not change it"
+    ],
+    "answer": "5 V; intensity alone does not change it",
+    "explanation": "The work function is 5−3 = 2 eV. At photon energy 7 eV, Kmax = 7−2 = 5 eV, so stopping potential is 5 V. Intensity changes photon arrival rate, not energy per photon.",
+    "id": "neet-challenge-physics-17",
+    "category": "Physics 17: Dual Nature of Matter and Radiation",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-17"
+  },
+  {
+    "subject": "Physics",
+    "unit": 18,
+    "question": "A radioactive isotope has half-life 3 h. A fresh sample has activity A₀. After 9 h, what fractions of original nuclei remain undecayed and have decayed?",
+    "options": [
+      "1/3 and 2/3",
+      "1/8 and 7/8",
+      "1/9 and 8/9",
+      "7/8 and 1/8"
+    ],
+    "answer": "1/8 and 7/8",
+    "explanation": "Nine hours corresponds to three half-lives. The undecayed fraction is (1/2)³ = 1/8; the decayed fraction is 1−1/8 = 7/8. Activity also falls to A₀/8 for the same isotope.",
+    "id": "neet-challenge-physics-18",
+    "category": "Physics 18: Atoms and Nuclei",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-18"
+  },
+  {
+    "subject": "Physics",
+    "unit": 19,
+    "question": "An ideal Zener regulator holds 6 V across a 1 kΩ load. A 12 V ideal supply feeds the load and Zener through a 500 Ω series resistor. What are Zener current and Zener power?",
+    "options": [
+      "12 mA and 72 mW",
+      "6 mA and 72 mW",
+      "6 mA and 36 mW",
+      "18 mA and 108 mW"
+    ],
+    "answer": "6 mA and 36 mW",
+    "explanation": "Series current is (12−6)/500 = 12 mA. The load draws 6/1000 = 6 mA, leaving 6 mA through the Zener. Zener power is 6 V×6 mA = 36 mW, assuming regulation is maintained.",
+    "id": "neet-challenge-physics-19",
+    "category": "Physics 19: Electronic Devices",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-19"
+  },
+  {
+    "subject": "Physics",
+    "unit": 20,
+    "question": "Successive resonance lengths of a closed-end air column are 15 cm and 49 cm at 500 Hz. What are sound speed and the common end correction in the model L₁ + e = λ/4?",
+    "options": [
+      "170 m/s and 2 cm",
+      "340 m/s and 17 cm",
+      "680 m/s and 17 cm",
+      "340 m/s and 2 cm"
+    ],
+    "answer": "340 m/s and 2 cm",
+    "explanation": "The difference is 34 cm = λ/2, so λ = 68 cm and speed is 500×0.68 = 340 m/s. The first quarter wavelength is 17 cm, so e = 17−15 = 2 cm for these idealized data.",
+    "id": "neet-challenge-physics-20",
+    "category": "Physics 20: Experimental Skills",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-20"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 1,
+    "question": "A mixture has 4.0 g H₂ and 16.0 g O₂. For complete reaction 2H₂ + O₂ → 2H₂O, what mass of water forms and what mass of hydrogen remains? Use H = 1 and O = 16.",
+    "options": [
+      "18 g water; 2 g H₂ remain",
+      "36 g water; no H₂ remains",
+      "18 g water; no H₂ remains",
+      "9 g water; 3 g H₂ remain"
+    ],
+    "answer": "18 g water; 2 g H₂ remain",
+    "explanation": "There are 2 mol H₂ and 0.5 mol O₂. Oxygen limits reaction, consuming 1 mol H₂ and forming 1 mol water = 18 g. The remaining 1 mol H₂ has mass 2 g.",
+    "id": "neet-challenge-chemistry-1",
+    "category": "Chemistry 1: Some Basic Concepts in Chemistry",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-1"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 2,
+    "question": "A hydrogen atom absorbs a photon and moves from n = 1 to n = 3. Using Eₙ = −13.6/n² eV, what photon energy is absorbed and how many distinct spectral lines are possible during de-excitation of a collection of such atoms?",
+    "options": [
+      "1.51 eV and 2",
+      "12.09 eV and 3",
+      "13.6 eV and 3",
+      "12.09 eV and 1"
+    ],
+    "answer": "12.09 eV and 3",
+    "explanation": "The energy increase is 13.6(1−1/9) = 12.09 eV approximately. Three level pairs give possible lines: 3→2, 3→1 and 2→1. An individual cascade need not emit all three.",
+    "id": "neet-challenge-chemistry-2",
+    "category": "Chemistry 2: Atomic Structure",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-2"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 3,
+    "question": "In the elementary molecular-orbital model, removing one electron from O₂ to form O₂⁺ changes bond order and magnetism in which way?",
+    "options": [
+      "Bond order 1.5; diamagnetic",
+      "Bond order 2.5; diamagnetic",
+      "Bond order 2.5; paramagnetic",
+      "Bond order 1.5; paramagnetic"
+    ],
+    "answer": "Bond order 2.5; paramagnetic",
+    "explanation": "The electron is removed from an antibonding π* orbital. Bond order therefore rises from 2 to 2.5. One unpaired electron remains, so O₂⁺ is paramagnetic.",
+    "id": "neet-challenge-chemistry-3",
+    "category": "Chemistry 3: Chemical Bonding and Molecular Structure",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-3"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 4,
+    "question": "A reaction has ΔH = +40 kJ/mol and ΔS = +100 J mol⁻¹ K⁻¹, treated as temperature-independent. Which pair of standard Gibbs energies at 300 K and 500 K is correct?",
+    "options": [
+      "−10 and +10 kJ/mol",
+      "+70 and +90 kJ/mol",
+      "+10 and +10 kJ/mol",
+      "+10 and −10 kJ/mol"
+    ],
+    "answer": "+10 and −10 kJ/mol",
+    "explanation": "Convert entropy to 0.100 kJ mol⁻¹ K⁻¹. ΔG = ΔH−TΔS gives 40−30 = +10 kJ/mol at 300 K and 40−50 = −10 kJ/mol at 500 K. The sign changes above the threshold ΔH/ΔS = 400 K.",
+    "id": "neet-challenge-chemistry-4",
+    "category": "Chemistry 4: Chemical Thermodynamics",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-4"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 5,
+    "question": "A 0.10 mol/kg aqueous solute solution has freezing-point depression 0.279 K. Kf for water is 1.86 K kg/mol. If each solute formula unit dissociates into two particles, what are van’t Hoff factor and degree of dissociation under the ideal model?",
+    "options": [
+      "1.5 and 0.50",
+      "0.5 and 0.50",
+      "1.5 and 0.25",
+      "2.0 and 1.00"
+    ],
+    "answer": "1.5 and 0.50",
+    "explanation": "i = ΔTf/(Kf m) = 0.279/0.186 = 1.5. For dissociation into two particles, i = 1+α, so α = 0.50. Half of the original formula units dissociate; the particle count rises by half, not by a factor of two.",
+    "id": "neet-challenge-chemistry-5",
+    "category": "Chemistry 5: Solutions",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-5"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 6,
+    "question": "A weak monoprotic acid has Ka = 10⁻⁵. A buffer contains 0.20 mol/L acid and 0.10 mol/L conjugate base. After adding enough strong base to convert 0.05 mol/L acid to conjugate base, with negligible volume change, what is the approximate final pH?",
+    "options": [
+      "4.70",
+      "5.00",
+      "5.30",
+      "7.00"
+    ],
+    "answer": "5.00",
+    "explanation": "Strong base converts HA to A⁻. Final concentrations are 0.15 mol/L each, so pH = pKa + log([A⁻]/[HA]) = 5 + log1 = 5.00 under the buffer approximation.",
+    "id": "neet-challenge-chemistry-6",
+    "category": "Chemistry 6: Equilibrium",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-6"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 7,
+    "question": "A galvanic cell transfers two electrons per reaction and has E° = 0.30 V. At 298 K its reaction quotient is 100. Using E = E° − (0.0592/n)log₁₀Q, what is E and the sign of ΔG for the forward cell reaction?",
+    "options": [
+      "0.3592 V; negative",
+      "0.2408 V; positive",
+      "0.2408 V; negative",
+      "−0.2408 V; positive"
+    ],
+    "answer": "0.2408 V; negative",
+    "explanation": "E = 0.30−(0.0592/2)×2 = 0.2408 V. Since ΔG = −nFE and E remains positive, the forward reaction has negative Gibbs energy under these conditions.",
+    "id": "neet-challenge-chemistry-7",
+    "category": "Chemistry 7: Redox Reactions and Electrochemistry",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-7"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 8,
+    "question": "A first-order reaction is 75% complete in 20 min. How long from the start is required for 93.75% completion, assuming constant rate coefficient?",
+    "options": [
+      "25 min",
+      "30 min",
+      "80 min",
+      "40 min"
+    ],
+    "answer": "40 min",
+    "explanation": "75% completion leaves 1/4, corresponding to two half-lives, so t½ = 10 min. 93.75% completion leaves 1/16, or four half-lives, requiring 40 min from the start.",
+    "id": "neet-challenge-chemistry-8",
+    "category": "Chemistry 8: Chemical Kinetics",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-8"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 9,
+    "question": "Four successive ionization energies of an element are approximately 500, 4600, 6900 and 9500 kJ/mol. For a main-group element, which inference is best supported?",
+    "options": [
+      "One valence electron; a +1 ion is relatively favoured",
+      "Two valence electrons; a +2 ion is relatively favoured",
+      "Three valence electrons; a +3 ion is relatively favoured",
+      "Four valence electrons; a +4 ion is always stable"
+    ],
+    "answer": "One valence electron; a +1 ion is relatively favoured",
+    "explanation": "The major jump occurs after the first removal, indicating that the second electron would come from a much more tightly bound core. This supports one outer electron; ionization data alone do not prove every compound’s stability.",
+    "id": "neet-challenge-chemistry-9",
+    "category": "Chemistry 9: Classification of Elements and Periodicity in Properties",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-9"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 10,
+    "question": "Consider statements about Group 15: I. Nitrogen has a much smaller atomic size than phosphorus. II. Nitrogen and phosphorus have identical ordinary covalency because their valence-shell configurations share the form ns²np³. Which choice is correct?",
+    "options": [
+      "Both I and II",
+      "I only",
+      "II only",
+      "Neither I nor II"
+    ],
+    "answer": "I only",
+    "explanation": "Nitrogen is the smaller first member. Sharing an outer configuration does not erase first-member differences in size, bonding and accessible valence-shell behaviour; the claim of identical ordinary covalency is false.",
+    "id": "neet-challenge-chemistry-10",
+    "category": "Chemistry 10: p-Block Elements",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-10"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 11,
+    "question": "Using the spin-only model, which pair correctly gives unpaired-electron counts in high-spin Fe³⁺ and Zn²⁺? Atomic numbers: Fe 26, Zn 30.",
+    "options": [
+      "Fe³⁺: 3; Zn²⁺: 2",
+      "Fe³⁺: 6; Zn²⁺: 0",
+      "Fe³⁺: 5; Zn²⁺: 0",
+      "Fe³⁺: 4; Zn²⁺: 1"
+    ],
+    "answer": "Fe³⁺: 5; Zn²⁺: 0",
+    "explanation": "Fe³⁺ is 3d⁵ after removal of 4s electrons and one 3d electron. In the high-spin case it has five unpaired electrons. Zn²⁺ is 3d¹⁰ with all electrons paired.",
+    "id": "neet-challenge-chemistry-11",
+    "category": "Chemistry 11: d- and f-Block Elements",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-11"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 12,
+    "question": "In [Co(NH₃)₅Cl]Cl₂, what are cobalt oxidation state, coordination number and the number of moles of AgCl expected per mole of compound from only the outer-sphere chloride ions?",
+    "options": [
+      "+2, 6, 3 mol",
+      "+3, 5, 2 mol",
+      "+2, 5, 1 mol",
+      "+3, 6, 2 mol"
+    ],
+    "answer": "+3, 6, 2 mol",
+    "explanation": "Two outer chloride ions make the complex cation +2. Inside it NH₃ is neutral and coordinated Cl is −1, so cobalt is +3. Six donor atoms bind cobalt; two free chloride ions give two AgCl per formula unit.",
+    "id": "neet-challenge-chemistry-12",
+    "category": "Chemistry 12: Coordination Compounds",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-12"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 13,
+    "question": "Complete combustion of 0.30 g of a C/H/O compound yields 0.44 g CO₂ and 0.18 g H₂O. If molar mass is 60 g/mol, what is the molecular formula? Use C = 12, H = 1, O = 16.",
+    "options": [
+      "C₂H₄O₂",
+      "CH₂O",
+      "C₂H₆O",
+      "C₃H₈O"
+    ],
+    "answer": "C₂H₄O₂",
+    "explanation": "Carbon mass is 0.12 g and hydrogen mass 0.02 g, leaving 0.16 g oxygen. Atom moles are 0.01:0.02:0.01, giving CH₂O with empirical mass 30. Molecular mass 60 doubles it to C₂H₄O₂.",
+    "id": "neet-challenge-chemistry-13",
+    "category": "Chemistry 13: Purification and Characterisation of Organic Compounds",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-13"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 14,
+    "question": "A molecule has one tetrahedral carbon bonded to H, OH, CH₃ and C₂H₅, with no other stereogenic centre. How many enantiomers are possible, and is an equimolar mixture of them optically active in the ideal model?",
+    "options": [
+      "One; active",
+      "Two; inactive",
+      "Four; active",
+      "Two; always active"
+    ],
+    "answer": "Two; inactive",
+    "explanation": "Four different substituents create one stereogenic centre and two enantiomers. Their equal and opposite optical rotations cancel in an equimolar racemic mixture.",
+    "id": "neet-challenge-chemistry-14",
+    "category": "Chemistry 14: Some Basic Principles of Organic Chemistry",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-14"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 15,
+    "question": "One mole of an acyclic hydrocarbon consumes two moles of H₂ on complete hydrogenation and gives one mole of propane. Which formula and functional class fit?",
+    "options": [
+      "C₃H₆; alkene",
+      "C₃H₈; alkane",
+      "C₃H₄; alkyne or diene",
+      "C₃H₂; alkyne only"
+    ],
+    "answer": "C₃H₄; alkyne or diene",
+    "explanation": "Propane is C₃H₈. Addition of two H₂ contributes four hydrogen atoms, so the starting formula is C₃H₄. Both propyne and propadiene satisfy this net hydrogen requirement; it does not uniquely identify an alkyne.",
+    "id": "neet-challenge-chemistry-15",
+    "category": "Chemistry 15: Hydrocarbons",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-15"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 16,
+    "question": "A chiral tertiary alkyl halide undergoes substitution by a predominantly SN1 pathway in an achiral polar medium. Which combination best matches the elementary model?",
+    "options": [
+      "Rate depends on nucleophile concentration; complete inversion",
+      "Rate independent of substrate; complete retention",
+      "Concerted attack; no carbocation",
+      "Rate proportional to substrate concentration; possible racemization"
+    ],
+    "answer": "Rate proportional to substrate concentration; possible racemization",
+    "explanation": "The rate-determining ionization is unimolecular, so rate is proportional to substrate concentration in the simple model. A planar carbocation permits attack from either face; real ion-pair effects can prevent perfectly equal products.",
+    "id": "neet-challenge-chemistry-16",
+    "category": "Chemistry 16: Organic Compounds Containing Halogens",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-16"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 17,
+    "question": "A 0.020 mol sample of ethanol is completely oxidized to ethanoic acid without carbon loss. If ethanol first gives ethanal, how many moles of ethanal are possible at complete conversion to that intermediate, and what is the final acid amount?",
+    "options": [
+      "0.020 mol and 0.020 mol",
+      "0.010 mol and 0.020 mol",
+      "0.020 mol and 0.010 mol",
+      "0.040 mol and 0.020 mol"
+    ],
+    "answer": "0.020 mol and 0.020 mol",
+    "explanation": "Both steps preserve the two-carbon molecular unit and have a 1:1 organic-molecule stoichiometry. Thus 0.020 mol ethanol can give 0.020 mol ethanal, then 0.020 mol acid. Oxidant equivalents are a separate balance.",
+    "id": "neet-challenge-chemistry-17",
+    "category": "Chemistry 17: Organic Compounds Containing Oxygen",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-17"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 18,
+    "question": "Aniline and ethylamine are compared in water. Which statement gives the usual relative basicity and the key reason?",
+    "options": [
+      "Aniline is stronger because its lone pair is fully localized",
+      "Ethylamine is stronger because aniline’s lone pair is delocalized into its ring",
+      "They are identical because both contain nitrogen",
+      "Aniline is stronger because aromaticity forbids resonance"
+    ],
+    "answer": "Ethylamine is stronger because aniline’s lone pair is delocalized into its ring",
+    "explanation": "Aniline’s nitrogen lone pair participates in resonance with the benzene ring and is less available for protonation than the localized lone pair in ethylamine. Solvation also influences aqueous basicity.",
+    "id": "neet-challenge-chemistry-18",
+    "category": "Chemistry 18: Organic Compounds Containing Nitrogen",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-18"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 19,
+    "question": "A linear peptide is made from four amino acids by forming only the bonds of its backbone. How many peptide bonds and water molecules are produced, and how many free terminal amino groups remain if side chains have none?",
+    "options": [
+      "4 bonds, 4 water, 1 amino group",
+      "3 bonds, 4 water, 2 amino groups",
+      "3 bonds, 3 water, 1 amino group",
+      "4 bonds, 3 water, 0 amino groups"
+    ],
+    "answer": "3 bonds, 3 water, 1 amino group",
+    "explanation": "A linear chain of n amino acids contains n−1 peptide bonds. Four amino acids form three bonds with loss of three water molecules. One N-terminal amino group and one C-terminal carboxyl group remain.",
+    "id": "neet-challenge-chemistry-19",
+    "category": "Chemistry 19: Biomolecules",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-19"
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 20,
+    "question": "A 25.0 mL acid aliquot consumes 20.20 mL of 0.100 mol/L NaOH. A separate reagent blank consumes 0.20 mL. Assuming a monoprotic acid and 1:1 neutralization, what is the acid molarity?",
+    "options": [
+      "0.0808 mol/L",
+      "0.0816 mol/L",
+      "0.100 mol/L",
+      "0.0800 mol/L"
+    ],
+    "answer": "0.0800 mol/L",
+    "explanation": "Subtract the blank: corrected titre = 20.00 mL. Acid moles are 0.100×0.02000 = 0.002000 mol. Divide by 0.0250 L to obtain 0.0800 mol/L.",
+    "id": "neet-challenge-chemistry-20",
+    "category": "Chemistry 20: Principles Related to Practical Chemistry",
+    "challenge": true,
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-20"
+  },
+  {
+    "subject": "Biology",
+    "unit": 1,
+    "question": "A plant specimen has vascular tissue and a dominant independent sporophyte, but reproduces by spores and produces no seeds. Which identification and comparison are correct?",
+    "options": [
+      "Pteridophyte; unlike bryophytes it has vascular tissue",
+      "Bryophyte; unlike pteridophytes it has vascular tissue",
+      "Gymnosperm; absence of seeds is its defining feature",
+      "Angiosperm; spores replace its flowers"
+    ],
+    "answer": "Pteridophyte; unlike bryophytes it has vascular tissue",
+    "explanation": "These features fit a pteridophyte. Bryophytes lack true vascular tissue and have a dominant gametophyte. Seed plants cannot be identified by an absence of seeds as a defining group feature.",
+    "id": "neet-challenge-biology-1",
+    "category": "Biology 1: Diversity in Living World",
+    "challenge": true,
+    "lessonHref": "/neet/classes/diversity-living-world"
+  },
+  {
+    "subject": "Biology",
+    "unit": 2,
+    "question": "A transverse section of a young root shows radial vascular bundles and protoxylem towards the periphery. What are the arrangement and maturation pattern, and which tissue boundary has Casparian strips?",
+    "options": [
+      "Conjoint, endarch; epidermis",
+      "Radial, exarch; endodermis",
+      "Radial, endarch; pericycle",
+      "Conjoint, exarch; cortex"
+    ],
+    "answer": "Radial, exarch; endodermis",
+    "explanation": "Root xylem and phloem occupy different radii, giving radial bundles. Peripheral protoxylem is exarch. Casparian strips occur in the endodermis and restrict apoplastic movement across this boundary.",
+    "id": "neet-challenge-biology-2",
+    "category": "Biology 2: Structural Organisation in Animals and Plants",
+    "challenge": true,
+    "lessonHref": "/neet/classes/structural-organisation"
+  },
+  {
+    "subject": "Biology",
+    "unit": 3,
+    "question": "A diploid cell has 2n = 8 and completes meiosis with normal segregation. Immediately after meiosis I, before meiosis II, how many chromosomes and chromatids are present per daughter nucleus?",
+    "options": [
+      "8 chromosomes and 16 chromatids",
+      "4 chromosomes and 4 chromatids",
+      "4 chromosomes and 8 chromatids",
+      "8 chromosomes and 8 chromatids"
+    ],
+    "answer": "4 chromosomes and 8 chromatids",
+    "explanation": "Homologous chromosomes separate in meiosis I, reducing chromosome number from eight to four per nucleus. Sister chromatids remain joined, so each of the four chromosomes still has two chromatids: eight chromatids.",
+    "id": "neet-challenge-biology-3",
+    "category": "Biology 3: Cell Structure and Function",
+    "challenge": true,
+    "lessonHref": "/neet/classes/cell-cycle-division"
+  },
+  {
+    "subject": "Biology",
+    "unit": 4,
+    "question": "A C₄ leaf initially fixes CO₂ into a four-carbon compound in mesophyll cells, then releases CO₂ near RuBisCO. Which pairing correctly locates the primary acceptor and Calvin cycle in the usual spatial model?",
+    "options": [
+      "RuBP in mesophyll; Calvin cycle only in guard cells",
+      "PEP in bundle sheath; Calvin cycle only in mesophyll",
+      "RuBP in bundle sheath; Calvin cycle in roots",
+      "PEP in mesophyll; Calvin cycle in bundle-sheath cells"
+    ],
+    "answer": "PEP in mesophyll; Calvin cycle in bundle-sheath cells",
+    "explanation": "PEP accepts inorganic carbon during initial C₄ fixation in mesophyll cells. Decarboxylation near bundle-sheath RuBisCO concentrates CO₂, and the Calvin cycle operates there in the usual C₄ spatial model.",
+    "id": "neet-challenge-biology-4",
+    "category": "Biology 4: Plant Physiology",
+    "challenge": true,
+    "lessonHref": "/neet/classes/plant-physiology"
+  },
+  {
+    "subject": "Biology",
+    "unit": 5,
+    "question": "A healthy person becomes dehydrated without losing an equivalent amount of solute. Which response best helps conserve water?",
+    "options": [
+      "Increased ADH; increased collecting-duct water permeability",
+      "Decreased ADH; increased urine concentration",
+      "Increased ADH; decreased collecting-duct water permeability",
+      "Decreased ADH; increased water reabsorption"
+    ],
+    "answer": "Increased ADH; increased collecting-duct water permeability",
+    "explanation": "Higher plasma osmolarity promotes ADH release. ADH increases water permeability in late distal/collecting regions, favouring water reabsorption and more concentrated urine, subject to the medullary osmotic gradient.",
+    "id": "neet-challenge-biology-5",
+    "category": "Biology 5: Human Physiology",
+    "challenge": true,
+    "lessonHref": "/neet/classes/human-physiology"
+  },
+  {
+    "subject": "Biology",
+    "unit": 6,
+    "question": "In a typical Polygonum-type embryo sac, one male gamete fuses with the egg and another with two separate polar nuclei. What are the ploidies of zygote, primary endosperm nucleus and maternal seed coat?",
+    "options": [
+      "2n, 2n, 3n",
+      "2n, 3n, 2n",
+      "3n, 2n, n",
+      "2n, 3n, n"
+    ],
+    "answer": "2n, 3n, 2n",
+    "explanation": "Egg n plus sperm n gives a 2n zygote. Triple fusion combines n+n+n to give the 3n primary endosperm nucleus. The seed coat derives from maternal integuments and remains diploid.",
+    "id": "neet-challenge-biology-6",
+    "category": "Biology 6: Reproduction",
+    "challenge": true,
+    "lessonHref": "/neet/classes/reproduction"
+  },
+  {
+    "subject": "Biology",
+    "unit": 7,
+    "question": "In a test cross AaBb × aabb, genes assort independently with complete dominance at both loci. What fraction of offspring show exactly one dominant phenotype?",
+    "options": [
+      "1/4",
+      "3/4",
+      "1/2",
+      "1/16"
+    ],
+    "answer": "1/2",
+    "explanation": "AaBb produces AB, Ab, aB and ab gametes equally. Exactly one dominant phenotype appears in Aabb and aaBb, two of the four equally likely offspring classes: 1/2.",
+    "id": "neet-challenge-biology-7",
+    "category": "Biology 7: Genetics and Evolution",
+    "challenge": true,
+    "lessonHref": "/neet/classes/genetics-evolution"
+  },
+  {
+    "subject": "Biology",
+    "unit": 8,
+    "question": "During a secondary immune response to an antigen encountered previously, which observation most directly supports antigen-specific memory rather than a general inflammatory effect?",
+    "options": [
+      "Every antibody has become effective against every antigen",
+      "All innate immune responses permanently cease",
+      "No lymphocytes are involved",
+      "A faster, stronger response to the same antigen than to an unrelated antigen"
+    ],
+    "answer": "A faster, stronger response to the same antigen than to an unrelated antigen",
+    "explanation": "Adaptive memory is antigen-specific. A response enhanced selectively to the previously encountered antigen supports memory-cell involvement; a nonspecific inflammatory change alone does not establish it.",
+    "id": "neet-challenge-biology-8",
+    "category": "Biology 8: Biology and Human Welfare",
+    "challenge": true,
+    "lessonHref": "/neet/classes/human-welfare"
+  },
+  {
+    "subject": "Biology",
+    "unit": 9,
+    "question": "An ideal PCR begins with two double-stranded target molecules and runs six cycles at 100% doubling efficiency. How many target molecules are present, and why is a thermostable DNA polymerase useful?",
+    "options": [
+      "128; it tolerates repeated high-temperature denaturation steps",
+      "64; it replaces primers",
+      "12; it cuts at restriction sites",
+      "128; it makes denaturation unnecessary"
+    ],
+    "answer": "128; it tolerates repeated high-temperature denaturation steps",
+    "explanation": "Ideal count is N₀2ⁿ = 2×2⁶ = 128. A thermostable polymerase tolerates repeated heating, avoiding enzyme replacement each cycle; denaturation and primers are still required.",
+    "id": "neet-challenge-biology-9",
+    "category": "Biology 9: Biotechnology and Its Applications",
+    "challenge": true,
+    "lessonHref": "/neet/classes/biotechnology"
+  },
+  {
+    "subject": "Biology",
+    "unit": 10,
+    "question": "A population increases from 100 to 160 individuals over an interval. During it, 30 births and 10 deaths occur. If 5 individuals emigrate, how many must have immigrated?",
+    "options": [
+      "35",
+      "45",
+      "25",
+      "65"
+    ],
+    "answer": "45",
+    "explanation": "Population change is births + immigration − deaths − emigration. Thus 60 = 30 + I −10−5 = 15+I, giving I = 45. Distinguish movement from natality and mortality.",
+    "id": "neet-challenge-biology-10",
+    "category": "Biology 10: Ecology and Environment",
+    "challenge": true,
+    "lessonHref": "/neet/classes/ecology"
+  }
+]

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { chromium } from 'playwright';
-const pool = JSON.parse(fs.readFileSync('app/data/neet-full-mock.json', 'utf8'));
+const pool = [...JSON.parse(fs.readFileSync('app/data/neet-full-mock.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-mock.json', 'utf8'))];
 const byId = new Map(pool.map(q => [q.id, q]));
 const key = 'neet-full-mock:attempt:v1';
 const base = process.env.TEST_URL || 'http://localhost:3000';
@@ -29,9 +29,12 @@ try {
   await page.getByText('Question 1 of 180', { exact: true }).waitFor();
   let attempt = JSON.parse(await page.evaluate(k => localStorage.getItem(k), key));
   assert.equal(attempt.deadline - attempt.startedAt, 180 * 60000);
+  assert.equal(attempt.practiceMode, "challenge");
   const originalDeadline = attempt.deadline;
   const paper = attempt.questionIds.map(id => byId.get(id));
   assert.equal(new Set(paper.map(q => q.category)).size, 50);
+  assert.equal(paper.filter(q => q.challenge).length, 50);
+  assert.equal(new Set(paper.filter(q => q.challenge).map(q => q.category)).size, 50);
   assert.deepEqual(['Physics', 'Chemistry', 'Biology'].map(s => paper.filter(q => q.subject === s).length), [45, 45, 90]);
   assert.equal(await page.getByRole('heading', { name: /You scored/ }).count(), 0);
   await page.getByRole('group', { name: 'Answer options' }).getByRole('button').nth(paper[0].options.indexOf(paper[0].answer)).click();
@@ -79,6 +82,17 @@ try {
     assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     await page.screenshot({ path: `tmp/neet-full-mock-running-${theme}.png` });
   }
+  assert.equal(next.practiceMode, 'challenge');
+  assert.equal(next.questionIds.filter(id => byId.get(id).challenge).length, 50);
+  // Switch only after completing the paper: no settings change can replace a running attempt.
+  const foundation = await browser.newPage();
+  await foundation.goto(`${base}/neet/mock-test`);
+  await foundation.getByRole('button', { name: 'Foundation', exact: true }).click();
+  await foundation.getByRole('button', { name: 'Start 180-question NEET UG paper' }).click();
+  await foundation.getByText('Question 1 of 180', { exact: true }).waitFor();
+  const basic = JSON.parse(await foundation.evaluate(k => localStorage.getItem(k), key));
+  assert.equal(basic.questionIds.filter(id => byId.get(id).challenge).length, 0);
+  await foundation.close();
   assert.deepEqual(errors, []);
   console.log('PASS: discovery, 180 questions, 50 units, subject quotas, timer, mark/reload, isolated storage, auto-submit, +4/−1 score, saved results, new paper and mobile themes');
 } finally { await browser.close(); }

@@ -1,0 +1,13 @@
+# NEET challenge mix
+
+Adds 50 newly authored application questions, one for each mapped NEET UG 2026 unit, to the existing `/neet/mock-test` flow. The 677-question combined pool contains 627 foundation and 50 challenge questions. Challenge mix is the default for a fresh setup and guarantees all 50 application questions plus 130 rotating foundation questions. Foundation mode selects exactly as before. Both retain 180 questions, 180 minutes, 45/45/90 subjects and +4/−1/0 scoring.
+
+Physics combines uncertainty with resistivity, kinematic graphs, connected-body friction, energy losses, rolling, orbital scaling, continuity/Bernoulli, thermodynamic heat/work, kinetic theory, SHM energy, charge sharing, cell power, charged-particle orbits, transformers, electromagnetic amplitudes, lens signs, photoelectric thresholds, decay, Zener current and resonance end corrections.
+
+Chemistry covers limiting-reagent leftovers, hydrogen levels/spectral lines, molecular orbitals, Gibbs energy, colligative dissociation, buffer neutralization, Nernst/Gibbs signs, first-order completion, successive ionization, first-member comparisons, electronic configurations, coordination/outer-sphere chloride, combustion formulae, stereochemistry, hydrogenation ambiguity, substitution mechanisms, oxidation stoichiometry, basicity, peptide condensation and blank-corrected titration.
+
+Biology applies group features, root anatomy, meiotic counting, C₄ compartmentation, ADH response, double-fertilization ploidy, test-cross probability, antigen specificity, PCR doubling and population ledgers. Original explanations state the operative assumptions. “Challenge” is an authored label relative to the foundation pool, not an empirically calibrated NEET difficulty grade, rank prediction or claim that every question is difficult for every student. The fixed 50 repeat in challenge mode; only the remaining 130 rotate.
+
+Build-time generator: `scripts/create-neet-challenge.mjs`. Question data stays server-side and loads only through the shared question-bank loader. The new `/question-bank/neet-full-mock-v2` URL prevents older cached foundation banks from blocking challenge setup. The original bank URL and all existing IDs/keys remain available. Saved attempts restore their exact paper; a completed challenge paper’s new-paper action retains challenge mode. Results disclose the mix.
+
+Validation includes exact subject/unit quotas, one challenge per unit, unchanged foundation selection, rejection of incomplete challenge pools, unique choices, independent numerical calculations, timing/scoring/persistence/browser checks and both mobile themes. Publish through Git and verify Vercel production’s exact commit and public page before claiming live.
