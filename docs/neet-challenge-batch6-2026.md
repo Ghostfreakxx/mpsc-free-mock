@@ -1,5 +1,7 @@
 # NEET challenge batch 6
 
+Current expansion: [batch 7](neet-challenge-batch7-2026.md) raises the challenge pool to 200, with four choices per unit. The description below records batch 6.
+
 Adds 25 original application questions: ten Physics, ten Chemistry and five Biology. The challenge pool now contains 175 questions across all 50 mapped units; 25 units have four choices and 25 have three. The combined bank has 802 questions. Each challenge paper retains one application question per unit plus 130 foundation questions, the 45/45/90 subject split, 180-minute deadline and +4/−1/0 scoring. Difficulty is an authored comparison, not official calibration or a rank prediction.
 
 New topics include subtraction uncertainty, static versus kinetic friction, rotational axes, elasticity geometry, gas-mass comparisons, electric field versus potential, helical motion, intensity/photon flux, matter-wave energy, diode power, hydrate composition, Lewis adducts, ideal liquid/vapour composition, series electrolysis, electron-gain exceptions, dichromate stoichiometry, chromatographic scaling, ozonolysis reconstruction, disproportionation, disaccharide hydrolysis, moss generations, enzyme inhibition, nephron volume accounting, X-linked conditional probability and restriction-fragment lengths.

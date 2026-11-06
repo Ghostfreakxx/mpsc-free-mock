@@ -1,0 +1,9 @@
+# NEET challenge batch 7
+
+Adds 25 original application questions to the units not expanded in batch 6. There are now 200 challenge questions, exactly four per mapped syllabus unit, and 827 questions in the combined bank. Each challenge paper retains 50 application questions (one per unit) plus 130 foundation questions, the 45/45/90 subject split, 180-minute deadline and +4/−1/0 scoring. Difficulty is an authored comparison, not an official calibration or rank prediction.
+
+New scenarios cover horizontal projection, spring/friction energy, orbital-state energy, Carnot reservoirs, spring arrangements, balanced bridges, RL real power, total internal reflection, isotope activity versus nucleus counts, calorimeter heat capacity, quantum-node counting, ΔU/ΔH conversion, partial-neutralization buffers, initial-rate order, halogen trends, cis/trans coordination, enantiomeric excess, elimination product counting, amine derivative classification, iodometric blanks, monocot bundles, C₃/C₄ photorespiration, ovarian hormone sequencing, sewage BOD and logistic growth.
+
+`scripts/create-neet-challenge-batch7.mjs` generates server-only data. The mock fetches `/question-bank/neet-full-mock-v8` to avoid stale earlier banks; previous URLs, existing IDs and saved-attempt keys remain available. The dated 2026 syllabus baseline and Foundation selection are unchanged. Every addition includes assumptions, four unique options and worked reasoning.
+
+Verification includes 100 seeded papers, reachability of all 200 challenge questions, exactly four choices per unit, exact subject/unit quotas, unchanged Foundation selection and independent calculations. Browser checks verify all 827 deployed questions, the latest additions, timing/expiry, scoring, saved progress/results and both mobile themes. Standard checks, full build, course checks and site smoke tests also apply.

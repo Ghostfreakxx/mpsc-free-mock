@@ -1,0 +1,427 @@
+[
+  {
+    "subject": "Physics",
+    "unit": 2,
+    "question": "A particle is projected horizontally at 15 m/s from a height of 20 m above level ground. Neglect air resistance and use g = 10 m/s². What are horizontal range and impact-speed magnitude?",
+    "options": [
+      "30 m and 20 m/s",
+      "30 m and 25 m/s",
+      "15 m and 25 m/s",
+      "60 m and 30 m/s"
+    ],
+    "answer": "30 m and 25 m/s",
+    "explanation": "Vertical motion gives 20 = ½×10×t², so t = 2 s. Horizontal range is 15×2 = 30 m. Impact vertical speed is 20 m/s; combine perpendicular components to get √(15²+20²) = 25 m/s, not their scalar sum.",
+    "id": "neet-challenge-b7-physics-2",
+    "category": "Physics 2: Kinematics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-2",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 4,
+    "question": "A spring of constant 200 N/m is compressed by 0.20 m and transfers all its stored energy to a 2 kg block before the block enters a rough horizontal surface. There μk = 0.10 and g = 10 m/s². What are entry speed and stopping distance on the rough part?",
+    "options": [
+      "2 m/s and 4 m",
+      "4 m/s and 2 m",
+      "2 m/s and 2 m",
+      "4 m/s and 4 m"
+    ],
+    "answer": "2 m/s and 2 m",
+    "explanation": "Spring energy is ½×200×0.20² = 4 J. Since this equals ½×2×v², the entry speed is 2 m/s. Friction on the rough part is 0.10×2×10 = 2 N; removing 4 J therefore requires 2 m.",
+    "id": "neet-challenge-b7-physics-4",
+    "category": "Physics 4: Work, Energy and Power",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-4",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 6,
+    "question": "A satellite of mass m is transferred between circular orbits of radii r and 2r about mass M. Comparing final and initial circular states, what are total mechanical-energy change and final/initial orbital-speed ratio?",
+    "options": [
+      "−GMm/(4r) and 1/√2",
+      "+GMm/(2r) and 1/2",
+      "+GMm/(4r) and 1/2",
+      "+GMm/(4r) and 1/√2"
+    ],
+    "answer": "+GMm/(4r) and 1/√2",
+    "explanation": "Circular-orbit energy is −GMm/(2r). The final energy is −GMm/(4r), so the increase is +GMm/(4r). Circular speed scales as r⁻¹/², giving a ratio 1/√2. The result compares states, not a particular transfer-burn trajectory.",
+    "id": "neet-challenge-b7-physics-6",
+    "category": "Physics 6: Gravitation",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-6",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 8,
+    "question": "A reversible Carnot engine receives 900 J per cycle from a 600 K reservoir. Its cold reservoir is raised from 300 K to 400 K, with heat received per cycle unchanged. What are work outputs before and after the change?",
+    "options": [
+      "450 J and 300 J",
+      "300 J and 450 J",
+      "450 J and 600 J",
+      "600 J and 300 J"
+    ],
+    "answer": "450 J and 300 J",
+    "explanation": "Carnot efficiency is 1−Tc/Th. It initially equals 1−300/600 = 1/2, giving 450 J work. It then becomes 1−400/600 = 1/3, giving 300 J. A warmer sink reduces the maximum efficiency at the unchanged hot temperature.",
+    "id": "neet-challenge-b7-physics-8",
+    "category": "Physics 8: Thermodynamics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-8",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 10,
+    "question": "An identical mass is attached either to two identical ideal springs in series or to the same springs in parallel. Its series-arrangement oscillation period is 2.0 s. What are the parallel-arrangement period and parallel/series frequency ratio?",
+    "options": [
+      "1.0 s and 1/2",
+      "1.0 s and 2",
+      "4.0 s and 1/2",
+      "0.5 s and 4"
+    ],
+    "answer": "1.0 s and 2",
+    "explanation": "For individual spring constant k, the effective constants are k/2 in series and 2k in parallel. The parallel stiffness is four times the series stiffness, so frequency doubles and period halves from 2.0 s to 1.0 s.",
+    "id": "neet-challenge-b7-physics-10",
+    "category": "Physics 10: Oscillations and Waves",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-10",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 12,
+    "question": "Two branches across an ideal 10 V source contain series resistors (2 Ω, 3 Ω) and (4 Ω, 6 Ω), in corresponding top-to-bottom order. Their midpoints are connected by 5 Ω. What are source current and midpoint-bridge current?",
+    "options": [
+      "2 A and 1 A",
+      "3 A and 1 A",
+      "3 A and zero",
+      "2 A and zero"
+    ],
+    "answer": "3 A and zero",
+    "explanation": "The bridge is balanced because 2/3 = 4/6, so midpoint potentials are equal and the 5 Ω resistor carries no current. The remaining branch resistances are 5 and 10 Ω in parallel: total current is 10/5 + 10/10 = 3 A.",
+    "id": "neet-challenge-b7-physics-12",
+    "category": "Physics 12: Current Electricity",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-12",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 14,
+    "question": "A series RL circuit has R = 30 Ω and inductive reactance XL = 40 Ω at the supply frequency. The sinusoidal supply is 100 V rms. What are rms current and average power consumed?",
+    "options": [
+      "2 A and 200 W",
+      "10/3 A and 333 W",
+      "2.5 A and 187.5 W",
+      "2 A and 120 W"
+    ],
+    "answer": "2 A and 120 W",
+    "explanation": "Impedance magnitude is √(30²+40²) = 50 Ω, giving I = 100/50 = 2 A. Average real power is I²R = 4×30 = 120 W. The apparent power VI is 200 VA and must not be substituted for real power.",
+    "id": "neet-challenge-b7-physics-14",
+    "category": "Physics 14: Electromagnetic Induction and Alternating Currents",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-14",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 16,
+    "question": "A ray travels inside glass of refractive index √2 towards an interface with air of index 1. Its incidence angle to the normal is 60°. What are critical angle and expected boundary behaviour in the ray model?",
+    "options": [
+      "45°; total internal reflection",
+      "45°; refraction into air at 60°",
+      "60°; grazing emergence",
+      "30°; no reflection"
+    ],
+    "answer": "45°; total internal reflection",
+    "explanation": "For glass-to-air travel, sin c = n₂/n₁ = 1/√2, so c = 45°. Incidence at 60° exceeds this angle while going from higher to lower index, producing total internal reflection. The critical angle is not the incidence angle in every case.",
+    "id": "neet-challenge-b7-physics-16",
+    "category": "Physics 16: Optics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-16",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 18,
+    "question": "Samples of radioactive isotopes X and Y initially have equal activities. Their half-lives are 2 h and 6 h. What are initial nucleus-number ratio NX/NY and activity ratio AX/AY after 6 h?",
+    "options": [
+      "3 and 1/4",
+      "1/3 and 1/4",
+      "1/3 and 4",
+      "3 and 4"
+    ],
+    "answer": "1/3 and 1/4",
+    "explanation": "Equal initial activities imply λXNX = λYNY; since λ is inversely proportional to half-life, NX/NY = 2/6 = 1/3. After 6 h, X activity is its initial value/8 while Y activity is initial value/2, giving a ratio 1/4.",
+    "id": "neet-challenge-b7-physics-18",
+    "category": "Physics 18: Atoms and Nuclei",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-18",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 20,
+    "question": "A calorimeter of heat capacity 100 J/K contains 50 g water, both initially at 20°C. Another 50 g water at 80°C is added. With no heat loss and water heat capacity 4.0 J g⁻¹ K⁻¹, what are final temperature and heat gained by the calorimeter?",
+    "options": [
+      "50°C and 3000 J",
+      "44°C and 1200 J",
+      "44°C and 2400 J",
+      "50°C and 2400 J"
+    ],
+    "answer": "44°C and 2400 J",
+    "explanation": "Hot-water heat capacity is 200 J/K; cold water plus calorimeter have capacity 300 J/K. Balance 200(80−T) = 300(T−20), giving T = 44°C. The calorimeter itself gains 100×(44−20) = 2400 J. Ignoring it would incorrectly give 50°C.",
+    "id": "neet-challenge-b7-physics-20",
+    "category": "Physics 20: Experimental Skills",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-20",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 2,
+    "question": "For an atomic orbital with quantum numbers n = 3 and l = 2, what are the maximum electrons in that entire subshell and the number of radial nodes per orbital?",
+    "options": [
+      "Six electrons and one radial node",
+      "Ten electrons and one radial node",
+      "Six electrons and zero radial nodes",
+      "Ten electrons and zero radial nodes"
+    ],
+    "answer": "Ten electrons and zero radial nodes",
+    "explanation": "The 3d subshell has 2l+1 = 5 orbitals, each holding at most two electrons, so capacity is ten. Radial nodes equal n−l−1 = 3−2−1 = 0. Orbital capacity and subshell capacity are not the same number.",
+    "id": "neet-challenge-b7-chemistry-2",
+    "category": "Chemistry 2: Atomic Structure",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-2",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 4,
+    "question": "At 300 K, an ideal-gas reaction has ΔU = +10.0 kJ per mole of reaction and Δngas = −2. Using R = 8.314 J mol⁻¹ K⁻¹, what is ΔH per mole of reaction?",
+    "options": [
+      "Approximately +5.01 kJ",
+      "Approximately +14.99 kJ",
+      "Approximately −5.01 kJ",
+      "Exactly +10.0 kJ"
+    ],
+    "answer": "Approximately +5.01 kJ",
+    "explanation": "For an ideal-gas reaction, ΔH = ΔU + ΔngasRT. Convert RT to compatible units: ΔH = 10.0−2×8.314×300/1000 = 5.0116 kJ per mole of reaction. The negative gas-mole change lowers ΔH relative to ΔU here.",
+    "id": "neet-challenge-b7-chemistry-4",
+    "category": "Chemistry 4: Chemical Thermodynamics",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-4",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 6,
+    "question": "A solution contains 0.020 mol of a weak monoprotic acid with pKa = 5.00. Addition of 0.015 mol NaOH causes quantitative neutralization without side reactions. Under the buffer approximation, what is the resulting pH? Use log10 3 = 0.477.",
+    "options": [
+      "4.52",
+      "5.48",
+      "5.00",
+      "7.00"
+    ],
+    "answer": "5.48",
+    "explanation": "Neutralization leaves 0.005 mol HA and forms 0.015 mol A⁻. Their concentration ratio equals their mole ratio in the common final volume, giving pH = pKa + log(A⁻/HA) = 5.00 + log3 = 5.477 ≈ 5.48. Acid remains, so this is before equivalence.",
+    "id": "neet-challenge-b7-chemistry-6",
+    "category": "Chemistry 6: Equilibrium",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-6",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 8,
+    "question": "At a fixed temperature, doubling [A] from 0.10 to 0.20 mol/L increases the initial disappearance rate from 0.0020 to 0.0080 mol L⁻¹ s⁻¹. For rate = k[A]ⁿ, what are n and k?",
+    "options": [
+      "One and 0.020 s⁻¹",
+      "Two and 0.020 L mol⁻¹ s⁻¹",
+      "Two and 0.20 L mol⁻¹ s⁻¹",
+      "Four and 20 L³ mol⁻³ s⁻¹"
+    ],
+    "answer": "Two and 0.20 L mol⁻¹ s⁻¹",
+    "explanation": "The rate increases fourfold for a twofold concentration change, so 2ⁿ = 4 and n = 2. Then k = rate/[A]² = 0.0020/0.10² = 0.20 L mol⁻¹ s⁻¹. This uses initial-rate order determination, not a second-order integrated law.",
+    "id": "neet-challenge-b7-chemistry-8",
+    "category": "Chemistry 8: Chemical Kinetics",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-8",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 10,
+    "question": "Cl₂, Br₂ and I₂ progress from gas to liquid to solid under ordinary room conditions. Which explanation and oxidizing-strength comparison best fit the usual group trend?",
+    "options": [
+      "Stronger covalent bonds between molecules; I₂ is the strongest oxidant",
+      "Weaker dispersion down the group; Cl₂ is the strongest oxidant",
+      "Increasing hydrogen bonding; I₂ is the strongest oxidant",
+      "Stronger dispersion with larger electron clouds; Cl₂ is a stronger oxidant than I₂"
+    ],
+    "answer": "Stronger dispersion with larger electron clouds; Cl₂ is a stronger oxidant than I₂",
+    "explanation": "Larger, more polarizable electron clouds strengthen intermolecular dispersion down the group, raising phase-transition temperatures. This is distinct from the Cl–Cl or I–I covalent bond. The usual oxidizing strength decreases down the halogens, so Cl₂ exceeds I₂.",
+    "id": "neet-challenge-b7-chemistry-10",
+    "category": "Chemistry 10: p-Block Elements",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-10",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 12,
+    "question": "For octahedral [Co(NH₃)₄Cl₂]⁺, how many cis/trans geometrical isomers occur, and what is cobalt oxidation state?",
+    "options": [
+      "Two and +3",
+      "Three and +2",
+      "Two and +2",
+      "One and +3"
+    ],
+    "answer": "Two and +3",
+    "explanation": "The two chloride ligands can be adjacent (cis) or opposite (trans), giving two geometrical isomers. Charge balance is x−2 = +1 because ammonia is neutral, so cobalt is +3. Coordination number remains six in both arrangements.",
+    "id": "neet-challenge-b7-chemistry-12",
+    "category": "Chemistry 12: Coordination Compounds",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-12",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 14,
+    "question": "A mixture contains 75% of one enantiomer and 25% of its mirror image. Under identical measurement conditions, the pure major enantiomer has specific rotation +20°. What are enantiomeric excess and mixture specific rotation, assuming additive rotations?",
+    "options": [
+      "25% and +5°",
+      "50% and +10°",
+      "75% and +15°",
+      "100% and +20°"
+    ],
+    "answer": "50% and +10°",
+    "explanation": "Enantiomeric excess is 75−25 = 50%. The mirror enantiomer has rotation −20° under the same conditions, so the mixture gives 0.75×20 + 0.25×(−20) = +10°. The major-enantiomer fraction alone is not the enantiomeric excess.",
+    "id": "neet-challenge-b7-chemistry-14",
+    "category": "Chemistry 14: Some Basic Principles of Organic Chemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-14",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 16,
+    "question": "For unrearranged β-elimination of 2-bromobutane, count only distinct alkene products and distinguish E/Z forms. What are the numbers of constitutional alkene products and total stereochemically distinct alkene products?",
+    "options": [
+      "One and two",
+      "Three and three",
+      "Two and three",
+      "Two and four"
+    ],
+    "answer": "Two and three",
+    "explanation": "Elimination can give but-1-ene or but-2-ene, so there are two constitutional products. But-2-ene has E and Z forms while but-1-ene does not, giving three total stereochemically distinct alkenes. Product count is not a claim of equal yields.",
+    "id": "neet-challenge-b7-chemistry-16",
+    "category": "Chemistry 16: Organic Compounds Containing Halogens",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-16",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 18,
+    "question": "In an idealized Hinsberg classification, an aliphatic amine forms a sulfonamide derivative with no N–H bond that is insoluble in aqueous alkali. Which starting amine class best fits this derivative-forming observation?",
+    "options": [
+      "Primary amine",
+      "Tertiary amine",
+      "Quaternary ammonium salt",
+      "Secondary amine"
+    ],
+    "answer": "Secondary amine",
+    "explanation": "A secondary amine R₂NH can form R₂N–SO₂Ar, leaving no acidic N–H bond in the derivative, which does not dissolve through N–H deprotonation. A tertiary amine has no N–H available for the ordinary sulfonamide-forming reaction; lack of N–H in the product alone is insufficient without evidence of derivative formation.",
+    "id": "neet-challenge-b7-chemistry-18",
+    "category": "Chemistry 18: Organic Compounds Containing Nitrogen",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-18",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 20,
+    "question": "A 25.0 mL iodine aliquot consumes 20.20 mL of 0.100 mol/L thiosulfate, with a 0.20 mL reagent blank. For I₂ + 2S₂O₃²⁻ → 2I⁻ + S₄O₆²⁻, what are iodine molarity and iodine mass in the aliquot? Use I₂ = 254 g/mol.",
+    "options": [
+      "0.0800 mol/L and 0.508 g",
+      "0.0404 mol/L and 0.2565 g",
+      "0.0800 mol/L and 0.254 g",
+      "0.0400 mol/L and 0.254 g"
+    ],
+    "answer": "0.0400 mol/L and 0.254 g",
+    "explanation": "Corrected titre is 20.00 mL, containing 0.00200 mol thiosulfate. Iodine amount is half this, 0.00100 mol. Divide by 0.0250 L to get 0.0400 mol/L, and multiply by 254 g/mol to obtain 0.254 g iodine.",
+    "id": "neet-challenge-b7-chemistry-20",
+    "category": "Chemistry 20: Principles Related to Practical Chemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-20",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 2,
+    "question": "A plant section shows vascular bundles scattered through ground tissue, with conjoint collateral closed bundles and no ordinary bundle cambium. Which identification and growth inference are most consistent for a typical young organ?",
+    "options": [
+      "Monocot stem; ordinary vascular-cambium secondary growth is absent",
+      "Dicot stem; ordinary vascular-cambium secondary growth must be present",
+      "Dicot root; radial bundles are described",
+      "Monocot root; scattered conjoint bundles are diagnostic"
+    ],
+    "answer": "Monocot stem; ordinary vascular-cambium secondary growth is absent",
+    "explanation": "Scattered closed conjoint collateral bundles are typical of a young monocot stem. Closed bundles lack the ordinary vascular cambium of open bundles, so usual vascular-cambium secondary growth is absent. This statement concerns the typical organization, not every exceptional monocot growth mechanism.",
+    "id": "neet-challenge-b7-biology-2",
+    "category": "Biology 2: Structural Organisation in Animals and Plants",
+    "lessonHref": "/neet/classes/structural-organisation",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 4,
+    "question": "In a C₃ leaf, increased temperature and a lower CO₂/O₂ ratio favour RuBisCO oxygenase activity. Which consequence and comparison with the usual C₄ mechanism are correct?",
+    "options": [
+      "Photorespiration increases and directly produces extra sugar; C₄ leaves lack RuBisCO",
+      "Photorespiration increases; the C₄ CO₂-concentrating mechanism reduces oxygenase competition near RuBisCO",
+      "Photorespiration stops; C₄ leaves perform no Calvin cycle",
+      "RuBisCO becomes a respiratory-chain protein; C₄ leaves use only glycolysis"
+    ],
+    "answer": "Photorespiration increases; the C₄ CO₂-concentrating mechanism reduces oxygenase competition near RuBisCO",
+    "explanation": "RuBisCO can oxygenate RuBP when oxygen competes more effectively with CO₂, initiating photorespiration, which consumes resources without net sugar production. C₄ plants concentrate CO₂ near bundle-sheath RuBisCO, reducing this competition; they still use the Calvin cycle.",
+    "id": "neet-challenge-b7-biology-4",
+    "category": "Biology 4: Plant Physiology",
+    "lessonHref": "/neet/classes/plant-physiology",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 6,
+    "question": "In an idealized 28-day ovarian cycle, a sharp LH surge occurs near day 14 and progesterone peaks near day 21. Which interpretation correctly links the surge, event and later hormone source?",
+    "options": [
+      "The LH surge marks menstruation; the endometrium is the main progesterone source",
+      "Progesterone peaks before the LH surge; the corpus luteum produces only oestrogen",
+      "The LH surge is associated with ovulation; the corpus luteum is a major later progesterone source",
+      "The LH surge prevents ovulation; the pituitary produces ovarian progesterone"
+    ],
+    "answer": "The LH surge is associated with ovulation; the corpus luteum is a major later progesterone source",
+    "explanation": "The mid-cycle LH surge promotes ovulation and luteinization of the ruptured follicle. The resulting corpus luteum secretes progesterone during the luteal phase, so a later progesterone peak is consistent with the stated sequence. The timing is an idealized model, not a universal cycle length.",
+    "id": "neet-challenge-b7-biology-6",
+    "category": "Biology 6: Reproduction",
+    "lessonHref": "/neet/classes/reproduction",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 8,
+    "question": "A sewage sample has biochemical oxygen demand of 200 mg/L before biological treatment and 20 mg/L afterwards under the same test conditions. What are the percentage reduction and the most direct interpretation?",
+    "options": [
+      "10%; greater oxygen demand for biodegradation",
+      "90%; greater oxygen demand for biodegradation",
+      "180%; less oxygen demand for biodegradation",
+      "90%; less oxygen demand for biodegradation"
+    ],
+    "answer": "90%; less oxygen demand for biodegradation",
+    "explanation": "The reduction is (200−20)/200×100 = 90%. BOD measures oxygen consumption associated with biological degradation under the test conditions, so the treated sample has a lower tested demand. BOD is not simply the amount of dissolved oxygen already present in the sample.",
+    "id": "neet-challenge-b7-biology-8",
+    "category": "Biology 8: Biology and Human Welfare",
+    "lessonHref": "/neet/classes/human-welfare",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 10,
+    "question": "A population with N = 80 follows logistic growth dN/dt = rN(1−N/K), where r = 0.50 yr⁻¹ and K = 160. If N later equals K under the same model, what are net growth rates at these two population sizes?",
+    "options": [
+      "20 individuals/yr and zero",
+      "40 individuals/yr and 80 individuals/yr",
+      "20 individuals/yr and 80 individuals/yr",
+      "40 individuals/yr and zero"
+    ],
+    "answer": "20 individuals/yr and zero",
+    "explanation": "At N = 80, growth is 0.50×80×(1−80/160) = 20 individuals/yr. At N = K, the density-dependent factor is zero, so net growth is zero. Carrying capacity does not mean births and deaths must each be absent.",
+    "id": "neet-challenge-b7-biology-10",
+    "category": "Biology 10: Ecology and Environment",
+    "lessonHref": "/neet/classes/ecology",
+    "challenge": true
+  }
+]
