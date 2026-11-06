@@ -1,0 +1,84 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import { chromium } from 'playwright';
+const pool = JSON.parse(fs.readFileSync('app/data/neet-full-mock.json', 'utf8'));
+const byId = new Map(pool.map(q => [q.id, q]));
+const key = 'neet-full-mock:attempt:v1';
+const base = process.env.TEST_URL || 'http://localhost:3000';
+const browser = await chromium.launch({ channel: process.env.PLAYWRIGHT_CHANNEL || 'msedge' });
+try {
+  const page = await browser.newPage({ viewport: { width: 360, height: 900 } });
+  const errors = [];
+  page.on('pageerror', e => errors.push(e.message));
+  await page.goto(`${base}/neet/classes`);
+  await page.getByRole('link', { name: 'Open NEET full-syllabus timed mock' }).click();
+  await page.waitForURL('**/neet/mock-test');
+  await page.getByRole('button', { name: 'Start 180-question NEET UG paper' }).waitFor();
+  const legacy = '{"keep":"other simulator attempt"}';
+  await page.evaluate(value => localStorage.setItem('exam-simulator:attempt:v1', value), legacy);
+  for (const theme of ['light', 'dark']) {
+    await page.evaluate(t => localStorage.setItem('mpsc-theme', t), theme);
+    await page.reload();
+    for (const width of [320, 360, 1440]) {
+      await page.setViewportSize({ width, height: 900 });
+      assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `Setup ${theme} ${width}`);
+    }
+  }
+  await page.setViewportSize({ width: 360, height: 900 });
+  await page.getByRole('button', { name: 'Start 180-question NEET UG paper' }).click();
+  await page.getByText('Question 1 of 180', { exact: true }).waitFor();
+  let attempt = JSON.parse(await page.evaluate(k => localStorage.getItem(k), key));
+  assert.equal(attempt.deadline - attempt.startedAt, 180 * 60000);
+  const originalDeadline = attempt.deadline;
+  const paper = attempt.questionIds.map(id => byId.get(id));
+  assert.equal(new Set(paper.map(q => q.category)).size, 50);
+  assert.deepEqual(['Physics', 'Chemistry', 'Biology'].map(s => paper.filter(q => q.subject === s).length), [45, 45, 90]);
+  assert.equal(await page.getByRole('heading', { name: /You scored/ }).count(), 0);
+  await page.getByRole('group', { name: 'Answer options' }).getByRole('button').nth(paper[0].options.indexOf(paper[0].answer)).click();
+  await page.getByRole('button', { name: 'Mark for review & next', exact: true }).click();
+  const wrong = paper[1].options.findIndex(o => o !== paper[1].answer);
+  await page.getByRole('group', { name: 'Answer options' }).getByRole('button').nth(wrong).click();
+  await page.reload();
+  await page.getByText('Question 2 of 180', { exact: true }).waitFor();
+  assert.equal(await page.getByRole('group', { name: 'Answer options' }).locator('[aria-pressed="true"]').count(), 1);
+  attempt = JSON.parse(await page.evaluate(k => localStorage.getItem(k), key));
+  assert.equal(attempt.responses[paper[0].id].marked, true);
+  assert.equal(await page.evaluate(() => localStorage.getItem('exam-simulator:attempt:v1')), legacy);
+  assert.equal(attempt.deadline, originalDeadline);
+  await page.getByRole('timer', { name: /Time left 2:59:/ }).waitFor();
+  await page.getByRole('button', { name: 'Submit', exact: true }).click();
+  await page.getByRole('dialog').getByRole('button', { name: 'Back to exam' }).click();
+  assert.equal(await page.getByRole('dialog').count(), 0);
+  // Exercise time-up via the browser clock; do not wait three hours or change production timing.
+  await page.clock.install();
+  await page.clock.fastForward(181 * 60000);
+  await page.getByRole('heading', { name: 'You scored 3 out of 720', exact: true }).waitFor();
+  await page.getByText('Unit-by-unit review · 50 units', { exact: true }).click();
+  assert.equal(await page.getByRole('region', { name: 'Syllabus unit review' }).locator('li').count(), 50);
+  assert.match(await page.getByRole('region', { name: 'Score summary' }).innerText(), /178/);
+  await page.reload();
+  await page.getByRole('heading', { name: 'You scored 3 out of 720', exact: true }).waitFor();
+  for (const theme of ['light', 'dark']) {
+    await page.evaluate(t => localStorage.setItem('mpsc-theme', t), theme); await page.reload();
+    await page.getByRole('heading', { name: 'You scored 3 out of 720', exact: true }).waitFor();
+    for (const width of [320, 360, 1440]) {
+      await page.setViewportSize({ width, height: 900 });
+      assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `Result ${theme} ${width}`);
+    }
+    await page.setViewportSize({ width: 360, height: 900 });
+    await page.screenshot({ path: `tmp/neet-full-mock-result-${theme}.png` });
+  }
+  await page.getByRole('button', { name: 'New paper, same settings' }).click();
+  await page.getByText('Question 1 of 180', { exact: true }).waitFor();
+  const next = JSON.parse(await page.evaluate(k => localStorage.getItem(k), key));
+  assert.notDeepEqual(next.questionIds, attempt.questionIds);
+  assert.equal(await page.evaluate(() => localStorage.getItem('exam-simulator:attempt:v1')), legacy);
+  for (const theme of ['light', 'dark']) {
+    await page.evaluate(t => localStorage.setItem('mpsc-theme', t), theme); await page.reload();
+    await page.getByText('Question 1 of 180', { exact: true }).waitFor();
+    assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    await page.screenshot({ path: `tmp/neet-full-mock-running-${theme}.png` });
+  }
+  assert.deepEqual(errors, []);
+  console.log('PASS: discovery, 180 questions, 50 units, subject quotas, timer, mark/reload, isolated storage, auto-submit, +4/−1 score, saved results, new paper and mobile themes');
+} finally { await browser.close(); }

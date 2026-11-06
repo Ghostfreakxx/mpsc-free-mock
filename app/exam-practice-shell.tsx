@@ -151,7 +151,7 @@ export default function ExamPracticeShell({
             <div><span className="section-kicker">{eyebrow}</span><h1>{title}</h1><p>{description}</p></div>
             <div className="practice-heading-actions">
               {activeRoute === "/neet" && <Link href="/neet/classes" prefetch={false} className="button button-dark">Recorded NEET classes <ArrowUpRight size={15} /></Link>}
-              <Link href={`/exam-simulator?exam=${activeRoute.slice(1)}`} className="button button-dark">Timed exam simulator <ArrowUpRight size={15} /></Link>
+              <Link href={activeRoute === "/neet" ? "/neet/mock-test" : `/exam-simulator?exam=${activeRoute.slice(1)}`} prefetch={false} className="button button-dark">{activeRoute === "/neet" ? "Full-syllabus timed mock" : "Timed exam simulator"} <ArrowUpRight size={15} /></Link>
               <Link href={`/downloads#${activeRoute.slice(1)}`} className="button button-outline">Download notes <ArrowUpRight size={15} /></Link>
             </div>
           </div>

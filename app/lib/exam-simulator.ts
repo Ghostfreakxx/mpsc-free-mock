@@ -1,7 +1,7 @@
 import type { ReviewedQuestion, Stream } from "../data/reviewed-content";
 
 // The fields a paper needs; practice pages download only these (app/lib/question-bank-format.ts).
-export type PoolQuestion = Pick<ReviewedQuestion, "id" | "subject" | "category" | "question" | "options" | "answer" | "explanation">;
+export type PoolQuestion = Pick<ReviewedQuestion, "id" | "subject" | "category" | "question" | "options" | "answer" | "explanation"> & { lessonHref?: string };
 
 export type ExamId = "jee" | "neet" | "cuet-pg" | "mpsc";
 export type Marking = { correct: number; wrong: number };

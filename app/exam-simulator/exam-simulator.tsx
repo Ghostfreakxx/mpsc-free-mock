@@ -10,6 +10,7 @@ import {
   type Attempt, type AttemptResult, type AttemptSummary, type ExamId, type PoolQuestion, type QuestionStatus,
 } from "../lib/exam-simulator";
 import { isQuestionList, loadQuestionBank } from "../lib/use-question-bank";
+import { selectNeetFullMock } from "../lib/neet-full-mock";
 import styles from "./simulator.module.css";
 
 const ATTEMPT_KEY = "exam-simulator:attempt:v1";
@@ -43,9 +44,9 @@ function writeStorage(key: string, value: string | null) {
     else window.localStorage.setItem(key, value);
   } catch { /* The exam still runs without saved progress. */ }
 }
-function readHistory(): AttemptSummary[] {
+function readHistory(key = HISTORY_KEY): AttemptSummary[] {
   try {
-    const parsed: unknown = JSON.parse(readStorage(HISTORY_KEY) ?? "[]");
+    const parsed: unknown = JSON.parse(readStorage(key) ?? "[]");
     return Array.isArray(parsed) ? parsed.filter(item => item && typeof item.score === "number" && item.examId in examConfigs).slice(0, 10) : [];
   } catch { return []; }
 }
@@ -58,7 +59,10 @@ const seconds = (ms: number) => {
 const clockNow = () => Date.now();
 const formatScore = (value: number) => Number.isInteger(value) ? String(value) : value.toFixed(2);
 
-export default function ExamSimulator({ poolSizes }: { poolSizes: Record<Stream, number> }) {
+export default function ExamSimulator({ poolSizes, neetFullMock = false }: { poolSizes: Record<Stream, number>; neetFullMock?: boolean }) {
+  const attemptKey = neetFullMock ? "neet-full-mock:attempt:v1" : ATTEMPT_KEY;
+  const historyKey = neetFullMock ? "neet-full-mock:history:v1" : HISTORY_KEY;
+  const getPool = useCallback((stream: Stream) => neetFullMock ? loadQuestionBank<unknown>("neet-full-mock").then(value => { if (!isQuestionList<PoolQuestion>(value)) throw new Error("Invalid mock bank"); return value; }) : loadPool(stream), [neetFullMock]);
   const [loaded, setLoaded] = useState(false);
   const [pools, setPools] = useState<Partial<Record<Stream, PoolQuestion[]>>>({});
   const [loadError, setLoadError] = useState(false);
@@ -66,8 +70,8 @@ export default function ExamSimulator({ poolSizes }: { poolSizes: Record<Stream,
   const questionsById = useMemo(() => new Map(Object.values(pools).flat().map(question => [question.id, question])), [pools]);
   const [attempt, setAttempt] = useState<Attempt | null>(null);
   const [history, setHistory] = useState<AttemptSummary[]>([]);
-  const [examId, setExamId] = useState<ExamId>("jee");
-  const [length, setLength] = useState(examConfigs.jee.lengths[0]);
+  const [examId, setExamId] = useState<ExamId>(neetFullMock ? "neet" : "jee");
+  const [length, setLength] = useState(neetFullMock ? 180 : examConfigs.jee.lengths[0]);
   const [markingId, setMarkingId] = useState(examConfigs.jee.markingOptions[0].id);
   const [now, setNow] = useState(0);
   const [confirming, setConfirming] = useState(false);
@@ -79,13 +83,13 @@ export default function ExamSimulator({ poolSizes }: { poolSizes: Record<Stream,
   useEffect(() => {
     let cancelled = false;
     const timer = window.setTimeout(async () => {
-      const raw = readStorage(ATTEMPT_KEY);
+      const raw = readStorage(attemptKey);
       const savedExam = savedExamId(raw);
       let saved: Attempt | null = null;
       if (savedExam) {
         const stream = examConfigs[savedExam].stream;
         try {
-          const pool = await loadPool(stream);
+          const pool = await getPool(stream);
           if (cancelled) return;
           setPools(current => ({ ...current, [stream]: pool }));
           saved = restoreAttempt(raw, new Map(pool.map(question => [question.id, question])));
@@ -94,23 +98,23 @@ export default function ExamSimulator({ poolSizes }: { poolSizes: Record<Stream,
         }
       }
       if (cancelled) return;
-      const requested = new URLSearchParams(window.location.search).get("exam");
+      const requested = neetFullMock ? "neet" : new URLSearchParams(window.location.search).get("exam");
       if (requested && requested in examConfigs) {
         const config = examConfigs[requested as ExamId];
-        setExamId(config.id); setLength(config.lengths[0]); setMarkingId(config.markingOptions[0].id);
+        setExamId(config.id); setLength(neetFullMock ? 180 : config.lengths[0]); setMarkingId(config.markingOptions[0].id);
       }
-      setAttempt(attemptOnArrival(saved, requested));
-      setHistory(readHistory());
+      setAttempt(attemptOnArrival(saved, neetFullMock ? null : requested));
+      setHistory(readHistory(historyKey));
       setNow(Date.now());
       setLoaded(true);
     }, 0);
     return () => { cancelled = true; window.clearTimeout(timer); };
-  }, []);
+  }, [neetFullMock, attemptKey, historyKey, getPool]);
 
   useEffect(() => {
     if (!loaded) return;
-    writeStorage(ATTEMPT_KEY, attempt ? JSON.stringify(attempt) : null);
-  }, [attempt, loaded]);
+    writeStorage(attemptKey, attempt ? JSON.stringify(attempt) : null);
+  }, [attempt, loaded, attemptKey]);
 
   const running = Boolean(attempt && attempt.submittedAt === undefined);
   useEffect(() => {
@@ -128,13 +132,13 @@ export default function ExamSimulator({ poolSizes }: { poolSizes: Record<Stream,
   const finish = useCallback((current: Attempt, at: number) => {
     const submitted = submitAttempt(current, at);
     const summary = summarize(submitted, scoreAttempt(submitted, examConfigs[submitted.examId], questionsById));
-    const nextHistory = addToHistory(readHistory(), summary);
-    writeStorage(HISTORY_KEY, JSON.stringify(nextHistory));
+    const nextHistory = addToHistory(readHistory(historyKey), summary);
+    writeStorage(historyKey, JSON.stringify(nextHistory));
     setHistory(nextHistory);
     setConfirming(false);
     setAttempt(submitted);
     window.scrollTo({ top: 0 });
-  }, [questionsById]);
+  }, [questionsById, historyKey]);
 
   // Submit automatically when time runs out, as the real exam does.
   useEffect(() => {
@@ -146,7 +150,7 @@ export default function ExamSimulator({ poolSizes }: { poolSizes: Record<Stream,
 
   function chooseExam(id: ExamId) {
     setExamId(id);
-    setLength(examConfigs[id].lengths[0]);
+    setLength(neetFullMock ? 180 : examConfigs[id].lengths[0]);
     setMarkingId(examConfigs[id].markingOptions[0].id);
   }
 
@@ -156,13 +160,17 @@ export default function ExamSimulator({ poolSizes }: { poolSizes: Record<Stream,
     setLoadError(false);
     let pool: PoolQuestion[];
     try {
-      pool = await loadPool(selected.stream);
+      pool = await getPool(selected.stream);
     } catch {
       setLoadError(true);
       setStarting(false);
       return;
     }
-    const paper = selectQuestions(selected, pool, count, Math.floor(Math.random() * 2 ** 31));
+    let paper: PoolQuestion[];
+    try {
+      const seed = Math.floor(Math.random() * 2 ** 31);
+      paper = neetFullMock ? selectNeetFullMock(pool, seed) : selectQuestions(selected, pool, count, seed);
+    } catch { setLoadError(true); setStarting(false); return; }
     const at = Date.now();
     setPools(current => ({ ...current, [selected.stream]: pool }));
     setNow(at);
@@ -180,7 +188,7 @@ export default function ExamSimulator({ poolSizes }: { poolSizes: Record<Stream,
 
   // The heading and introduction render on the server, so the page shows content before its script runs.
   if (!loaded) {
-    return <main className={styles.page}><Header /><div className={`${styles.wrap} ${styles.stack}`}><Intro /><p className={styles.muted} role="status">Loading exam simulator…</p></div></main>;
+    return <main className={styles.page}><Header /><div className={`${styles.wrap} ${styles.stack}`}><Intro neetFullMock={neetFullMock} /><p className={styles.muted} role="status">Loading exam simulator…</p></div></main>;
   }
 
   if (attempt && attempt.submittedAt === undefined && questionsById.has(attempt.questionIds[attempt.current])) {
@@ -281,6 +289,10 @@ export default function ExamSimulator({ poolSizes }: { poolSizes: Record<Stream,
           <div className={styles.stat}><span>Accuracy</span><strong>{result.accuracy === null ? "—" : `${result.accuracy}%`}</strong><small>{minutes(result.timeUsedMs)} used of {minutes(attempt.deadline - attempt.startedAt)}</small></div>
         </section>
 
+        {neetFullMock && <section className={styles.panel} aria-label="Syllabus unit review"><details><summary>Unit-by-unit review · 50 units</summary><ul>{[...new Set(result.questions.map(item => item.question.category))].map(category => {
+          const items = result.questions.filter(item => item.question.category === category);
+          return <li key={category}><strong>{category}</strong>: {items.filter(item => item.correct).length} correct, {items.filter(item => item.answer !== undefined && !item.correct).length} wrong, {items.filter(item => item.answer === undefined).length} skipped. {items[0].question.lessonHref && <Link href={items[0].question.lessonHref} prefetch={false}>Review class</Link>}</li>;
+        })}</ul></details></section>}
         <section className={styles.insights} aria-label="Strategy insights">
           {marking.wrong < 0 ? <article className={`${styles.insight} ${result.guesses.count ? styles.insightWarn : ""}`}>
             <h3>Quick guesses</h3>
@@ -342,16 +354,16 @@ export default function ExamSimulator({ poolSizes }: { poolSizes: Record<Stream,
   }
 
   const available = Math.min(Math.max(...config.lengths), poolSizes[config.stream]);
-  const lengths = config.lengths.filter(value => value <= available);
+  const lengths = (neetFullMock ? [180] : config.lengths).filter(value => value <= available);
   return <main className={styles.page}>
     <Header />
     <div className={`${styles.wrap} ${styles.stack}`}>
-      <Intro />
+      <Intro neetFullMock={neetFullMock} />
 
       <section className={styles.panel} aria-labelledby="exam-choice">
         <h2 id="exam-choice" className={styles.sectionTitle}>1. Choose your exam</h2>
         <div className={styles.choiceGrid}>
-          {examOrder.map(id => <button type="button" key={id} className={styles.choice} aria-pressed={examId === id} onClick={() => chooseExam(id)}>
+          {(neetFullMock ? ["neet" as const] : examOrder).map(id => <button type="button" key={id} className={styles.choice} aria-pressed={examId === id} onClick={() => chooseExam(id)}>
             <strong>{examConfigs[id].name}</strong>
             <span>{examConfigs[id].markingOptions.length > 1 ? "Choose negative marking" : examConfigs[id].markingOptions[0].label}</span>
           </button>)}
@@ -395,7 +407,15 @@ export default function ExamSimulator({ poolSizes }: { poolSizes: Record<Stream,
   </main>;
 }
 
-function Intro() {
+function Intro({ neetFullMock = false }: { neetFullMock?: boolean }) {
+  if (neetFullMock) return <div>
+    <span className={styles.kicker}>NEET UG · Full-syllabus foundation mock</span>
+    <h1 className={styles.title}>NEET full-syllabus timed mock</h1>
+    <p className={styles.lead}>180 questions · 180 minutes · 720 marks. Physics 45, Chemistry 45, Biology 90. Every paper represents all 50 mapped syllabus units; questions rotate between attempts.</p>
+    <p className={styles.muted}>2026 bulletin baseline: +4 correct, −1 wrong, 0 unanswered. This browser practice uses a question palette; the actual NEET examination uses pen and paper. Unit quotas are our practice blueprint, not official chapter weightages. Reused original class questions test foundations, not every subheading or predicted exam difficulty.</p>
+    <p className={styles.muted}>The clock continues while you leave or reload. Time-up submits automatically. Explanations appear after submission. Saved attempts stay separate from other simulator papers; storage must be available to resume on this browser.</p>
+    <p><Link href="/neet/classes" prefetch={false}>Review recorded classes</Link> · <a href="https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf" target="_blank" rel="noreferrer">2026 NTA bulletin</a></p>
+  </div>;
   return <div>
     <span className={styles.kicker}>Exam simulator</span>
     <h1 className={styles.title}>Practise the real exam, not just the questions</h1>

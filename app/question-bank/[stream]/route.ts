@@ -1,3 +1,4 @@
+import neetFullMock from "../../data/neet-full-mock.json";
 import type { Stream } from "../../data/reviewed-content";
 import { mpscTranslations, practiceBankFile, practiceQuestions } from "../../data/practice-data";
 import { publishedLawQuestions } from "../../data/law-mjs-bank";
@@ -7,7 +8,7 @@ import { publishedLawQuestions } from "../../data/law-mjs-bank";
 // Practice pages and the exam simulator fetch only the file they need, so page bundles and link
 // prefetches stay small, and the browser and service worker cache each file once for every page.
 const streams: Stream[] = ["mpsc", "neet", "jee", "cuet-pg"];
-const banks = [...streams, "mpsc-mizo", "mjs-law"] as const;
+const banks = [...streams, "mpsc-mizo", "mjs-law", "neet-full-mock"] as const;
 type Bank = (typeof banks)[number];
 
 export const dynamicParams = false;
@@ -21,6 +22,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ str
   if (!banks.includes(stream as Bank)) return new Response("Unknown question bank", { status: 404 });
   const body = stream === "mpsc-mizo" ? mpscTranslations(practiceQuestions("mpsc"))
     : stream === "mjs-law" ? publishedLawQuestions()
+    : stream === "neet-full-mock" ? neetFullMock
     : practiceBankFile(stream as Stream);
   return Response.json(body, {
     // Short browser cache with background refresh; a deploy replaces the file on the CDN.
