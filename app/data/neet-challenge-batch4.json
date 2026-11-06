@@ -1,0 +1,427 @@
+[
+  {
+    "subject": "Physics",
+    "unit": 1,
+    "question": "A pendulum experiment calculates g = 4π²L/T². Maximum percentage uncertainties in L and T are 1% and 0.5%. If the calculated g is 9.80 m/s², what are its maximum percentage and absolute uncertainties to the quoted precision?",
+    "options": [
+      "1.5% and 0.147 m/s²",
+      "2% and 0.196 m/s²",
+      "0% and 0 m/s²",
+      "2% and 0.098 m/s²"
+    ],
+    "answer": "2% and 0.196 m/s²",
+    "explanation": "For a product or quotient, first-order maximum relative uncertainties add with absolute powers: 1 + 2×0.5 = 2%. The absolute bound is 9.80×0.02 = 0.196 m/s². The exact factor 4π² contributes no measurement uncertainty.",
+    "id": "neet-challenge-b4-physics-1",
+    "category": "Physics 1: Physics and Measurement",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-1",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 2,
+    "question": "A boat moves at 6 m/s relative to water in a river flowing at 2 m/s. It travels 100 m downstream and returns 100 m upstream along the same line. What are total travel time and average speed over the round trip?",
+    "options": [
+      "25 s and 8 m/s",
+      "50 s and 4 m/s",
+      "37.5 s and 16/3 m/s",
+      "37.5 s and 0 m/s"
+    ],
+    "answer": "37.5 s and 16/3 m/s",
+    "explanation": "Ground speeds are 8 m/s downstream and 4 m/s upstream. Times are 100/8 = 12.5 s and 100/4 = 25 s, totalling 37.5 s. Average speed is distance/time = 200/37.5 = 16/3 m/s; average velocity, a different quantity, is zero.",
+    "id": "neet-challenge-b4-physics-2",
+    "category": "Physics 2: Kinematics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-2",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 3,
+    "question": "Blocks A (3 kg) and B (2 kg) on a horizontal table are connected by a light taut string, with B trailing A. A 30 N horizontal force pulls A forward. Both surfaces have kinetic friction coefficient 0.20; g = 10 m/s². What are acceleration and string tension?",
+    "options": [
+      "6 m/s² and 12 N",
+      "4 m/s² and 18 N",
+      "6 m/s² and 16 N",
+      "4 m/s² and 12 N"
+    ],
+    "answer": "4 m/s² and 12 N",
+    "explanation": "Total friction is 0.2×5×10 = 10 N, so system acceleration is (30−10)/5 = 4 m/s². On B, T−0.2×2×10 = 2×4, giving T = 12 N. The pulling force is not identical to string tension.",
+    "id": "neet-challenge-b4-physics-3",
+    "category": "Physics 3: Laws of Motion",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-3",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 4,
+    "question": "A 2 kg body initially at rest moves along x under the sole horizontal force F(x) = (2 + 2x) N, with x in metres. What work is done from x = 0 to x = 3 m, and what speed results?",
+    "options": [
+      "15 J and √15 m/s",
+      "12 J and √12 m/s",
+      "24 J and √24 m/s",
+      "15 J and √30 m/s"
+    ],
+    "answer": "15 J and √15 m/s",
+    "explanation": "Work is the area under the force–position graph: ∫₀³(2+2x)dx = [2x+x²]₀³ = 15 J. The work–energy theorem gives 15 = ½×2×v², so v = √15 m/s. Do not multiply final force by the whole distance.",
+    "id": "neet-challenge-b4-physics-4",
+    "category": "Physics 4: Work, Energy and Power",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-4",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 5,
+    "question": "A rigid rotor with moment of inertia 2 kg m² starts from rest under constant net torque 6 N m for 4 s. What are its final angular speed and angular displacement?",
+    "options": [
+      "12 rad/s and 48 rad",
+      "12 rad/s and 24 rad",
+      "3 rad/s and 24 rad",
+      "24 rad/s and 12 rad"
+    ],
+    "answer": "12 rad/s and 24 rad",
+    "explanation": "Angular acceleration is τ/I = 6/2 = 3 rad/s². Thus ω = αt = 12 rad/s and angular displacement is ½αt² = 24 rad. The constant-acceleration assumption follows from the constant net torque and fixed inertia.",
+    "id": "neet-challenge-b4-physics-5",
+    "category": "Physics 5: Rotational Motion",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-5",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 6,
+    "question": "Point masses M and 4M are separated by 3d. At the point between them where the net gravitational field is zero, what are distance from M and gravitational potential, taking zero potential at infinity?",
+    "options": [
+      "2d and −3GM/d",
+      "d and zero",
+      "d and −3GM/d",
+      "d and −5GM/d"
+    ],
+    "answer": "d and −3GM/d",
+    "explanation": "Field magnitudes balance when GM/x² = 4GM/(3d−x)², yielding 3d−x = 2x and x = d. Potential adds as a scalar: −GM/d−4GM/(2d) = −3GM/d. Zero field does not require zero potential.",
+    "id": "neet-challenge-b4-physics-6",
+    "category": "Physics 6: Gravitation",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-6",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 7,
+    "question": "A small sphere falls at terminal speed v in the Stokes regime. Its radius is doubled and the liquid viscosity is also doubled, with sphere/liquid densities and g unchanged. Assuming the Stokes regime and negligible wall effects still apply, what are the new terminal speed and terminal viscous-drag ratio?",
+    "options": [
+      "4v and 4",
+      "2v and 4",
+      "v and 8",
+      "2v and 8"
+    ],
+    "answer": "2v and 8",
+    "explanation": "Stokes terminal speed is proportional to r²/η, so the speed factor is 4/2 = 2. At terminal speed the drag balances effective weight, which scales with sphere volume r³, so drag increases eightfold. The two ratios need not match.",
+    "id": "neet-challenge-b4-physics-7",
+    "category": "Physics 7: Properties of Solids and Liquids",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-7",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 8,
+    "question": "A gas completes a clockwise rectangular cycle on a pressure–volume graph between pressures 1 × 10⁵ and 3 × 10⁵ Pa and volumes 1 L and 3 L. What are net work done by the gas and net heat absorbed over the cycle?",
+    "options": [
+      "400 J and 400 J",
+      "400 J and 0 J",
+      "−400 J and −400 J",
+      "4000 J and 4000 J"
+    ],
+    "answer": "400 J and 400 J",
+    "explanation": "Clockwise enclosed area gives positive work: ΔPΔV = 2×10⁵×2×10⁻³ = 400 J. Internal energy returns to its initial value over a cycle, so net heat absorbed equals net work. Net heat is not necessarily the total heat entering during only the heating steps.",
+    "id": "neet-challenge-b4-physics-8",
+    "category": "Physics 8: Thermodynamics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-8",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 9,
+    "question": "A fixed amount of an ideal gas is heated at constant volume from T to 4T. What are the ratios of final to initial pressure and rms molecular speed?",
+    "options": [
+      "2 and 4",
+      "4 and 2",
+      "4 and 4",
+      "2 and 2"
+    ],
+    "answer": "4 and 2",
+    "explanation": "At fixed amount and volume, the ideal-gas law gives pressure proportional to temperature, so pressure increases fourfold. For unchanged molecular mass, rms speed is proportional to √T, giving a factor of two.",
+    "id": "neet-challenge-b4-physics-9",
+    "category": "Physics 9: Kinetic Theory of Gases",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-9",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 10,
+    "question": "A stretched string has fundamental frequency 50 Hz. Its vibrating length is doubled and tension is quadrupled, while linear mass density is unchanged. What are the new fundamental frequency and wave-speed ratio?",
+    "options": [
+      "100 Hz and 2",
+      "50 Hz and 4",
+      "50 Hz and 2",
+      "25 Hz and 2"
+    ],
+    "answer": "50 Hz and 2",
+    "explanation": "Wave speed is √(T/μ), so quadrupling tension doubles speed. The fundamental frequency is v/(2L); doubling both speed and length leaves frequency unchanged at 50 Hz. The wavelength of the fundamental nevertheless doubles.",
+    "id": "neet-challenge-b4-physics-10",
+    "category": "Physics 10: Oscillations and Waves",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-10",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 1,
+    "question": "A vessel initially contains 0.25 mol N₂ and 0.60 mol H₂. For complete reaction limited only by stoichiometry, N₂ + 3H₂ → 2NH₃, what amounts of NH₃ and unreacted N₂ result?",
+    "options": [
+      "0.50 mol NH₃ and zero N₂",
+      "0.40 mol NH₃ and zero N₂",
+      "0.20 mol NH₃ and 0.05 mol N₂",
+      "0.40 mol NH₃ and 0.05 mol N₂"
+    ],
+    "answer": "0.40 mol NH₃ and 0.05 mol N₂",
+    "explanation": "Hydrogen can react with 0.60/3 = 0.20 mol N₂, so hydrogen is limiting. Ammonia formed is 2×0.20 = 0.40 mol and nitrogen remaining is 0.25−0.20 = 0.05 mol. This is an ideal stoichiometric maximum, not an equilibrium-yield prediction.",
+    "id": "neet-challenge-b4-chemistry-1",
+    "category": "Chemistry 1: Some Basic Concepts in Chemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-1",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 2,
+    "question": "In the Bohr model of hydrogen, ground-state radius is a₀ and ground-state energy is −13.6 eV. What are radius and energy in the n = 2 orbit?",
+    "options": [
+      "4a₀ and −3.4 eV",
+      "2a₀ and −6.8 eV",
+      "4a₀ and +3.4 eV",
+      "a₀/4 and −3.4 eV"
+    ],
+    "answer": "4a₀ and −3.4 eV",
+    "explanation": "For hydrogen, radius scales as n² while energy is −13.6/n² eV. At n = 2 the radius is 4a₀ and energy is −3.4 eV. A larger radius corresponds to a less negative bound-state energy, not a positive energy.",
+    "id": "neet-challenge-b4-chemistry-2",
+    "category": "Chemistry 2: Atomic Structure",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-2",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 3,
+    "question": "Which pairing correctly gives the molecular shapes of NH₃ and BF₃ and compares their usual bond angles in the elementary VSEPR model?",
+    "options": [
+      "Both trigonal planar; angles equal",
+      "NH₃ trigonal pyramidal, BF₃ trigonal planar; NH₃ angle smaller",
+      "NH₃ trigonal planar, BF₃ pyramidal; NH₃ angle larger",
+      "Both tetrahedral; angles equal"
+    ],
+    "answer": "NH₃ trigonal pyramidal, BF₃ trigonal planar; NH₃ angle smaller",
+    "explanation": "NH₃ has three bonding pairs and a lone pair around nitrogen, giving a trigonal-pyramidal molecular shape and an angle near 107°. BF₃ has three bonding domains and no central lone pair, giving a planar 120° arrangement. Electron-domain geometry and molecular shape are distinct.",
+    "id": "neet-challenge-b4-chemistry-3",
+    "category": "Chemistry 3: Chemical Bonding and Molecular Structure",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-3",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 4,
+    "question": "For reactions A → B and B → C, enthalpy changes are +50 and −80 kJ/mol respectively. What is the enthalpy change for the net reaction 2C → 2A?",
+    "options": [
+      "−60 kJ",
+      "+30 kJ",
+      "+60 kJ",
+      "−30 kJ"
+    ],
+    "answer": "+60 kJ",
+    "explanation": "Adding the two forward steps gives A→C with ΔH = 50−80 = −30 kJ/mol of A. Reversing changes the sign to +30 kJ for C→A, and doubling the reaction doubles it to +60 kJ for 2C→2A.",
+    "id": "neet-challenge-b4-chemistry-4",
+    "category": "Chemistry 4: Chemical Thermodynamics",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-4",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 5,
+    "question": "An ideal dilute solution contains 6.0 g of a nonvolatile nonelectrolyte with molar mass 600 g/mol in 1.0 L of solution at 300 K. Use R = 0.08314 L bar mol⁻¹ K⁻¹. What are osmotic pressure and the pressure after dilution to 2.0 L at the same temperature?",
+    "options": [
+      "0.02494 and 0.01247 bar",
+      "0.2494 and 0.4988 bar",
+      "2.494 and 1.247 bar",
+      "0.2494 and 0.1247 bar"
+    ],
+    "answer": "0.2494 and 0.1247 bar",
+    "explanation": "Amount is 6/600 = 0.010 mol, so initially c = 0.010 mol/L. Osmotic pressure cRT = 0.010×0.08314×300 = 0.24942 bar. Doubling solution volume at fixed solute amount and temperature halves pressure to 0.12471 bar.",
+    "id": "neet-challenge-b4-chemistry-5",
+    "category": "Chemistry 5: Solutions",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-5",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 6,
+    "question": "AgCl has Ksp = 1.0 × 10⁻¹⁰ at a fixed temperature. Under the ideal dilute approximation, compare its molar solubility in pure water with that in 0.010 mol/L NaCl, neglecting complex formation. Which pair is closest?",
+    "options": [
+      "10⁻⁵ mol/L in water; 10⁻⁸ mol/L in NaCl",
+      "10⁻¹⁰ mol/L in water; 10⁻⁵ mol/L in NaCl",
+      "10⁻⁵ mol/L in both",
+      "10⁻⁸ mol/L in water; 10⁻⁵ mol/L in NaCl"
+    ],
+    "answer": "10⁻⁵ mol/L in water; 10⁻⁸ mol/L in NaCl",
+    "explanation": "In pure water, Ksp = s² gives s = 10⁻⁵ mol/L. With excess common chloride, [Cl⁻] ≈ 0.010 mol/L, so s ≈ Ksp/[Cl⁻] = 10⁻⁸ mol/L. Added chloride lowers, rather than raises, solubility under the stated exclusions.",
+    "id": "neet-challenge-b4-chemistry-6",
+    "category": "Chemistry 6: Equilibrium",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-6",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 7,
+    "question": "A cell reaction transfers two electrons per stoichiometric reaction and has Ecell = −0.10 V under the actual conditions. Use F = 96500 C/mol. What is ΔG, and is the forward cell reaction spontaneous under those conditions?",
+    "options": [
+      "−19.3 kJ/mol; yes",
+      "+19.3 kJ/mol; no",
+      "+9.65 kJ/mol; yes",
+      "−9.65 kJ/mol; no"
+    ],
+    "answer": "+19.3 kJ/mol; no",
+    "explanation": "ΔG = −nFE = −2×96500×(−0.10) = +19300 J/mol = +19.3 kJ/mol. Positive reaction Gibbs energy means the forward cell reaction is not spontaneous under these conditions. Do not substitute standard symbols for actual-condition values.",
+    "id": "neet-challenge-b4-chemistry-7",
+    "category": "Chemistry 7: Redox Reactions and Electrochemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-7",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 8,
+    "question": "For a first-order reaction with half-life 15 min, what fraction remains after 45 min, and how much additional time is required to halve that remaining amount?",
+    "options": [
+      "1/3 and 15 min",
+      "1/8 and 45 min",
+      "1/8 and 15 min",
+      "7/8 and 15 min"
+    ],
+    "answer": "1/8 and 15 min",
+    "explanation": "Forty-five minutes is three half-lives, leaving (1/2)³ = 1/8. A first-order half-life is independent of concentration when the rate coefficient is constant, so halving the remaining amount requires another 15 min.",
+    "id": "neet-challenge-b4-chemistry-8",
+    "category": "Chemistry 8: Chemical Kinetics",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-8",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 9,
+    "question": "Na, Mg and Al belong to the same period. Which first-ionization-energy ordering and explanation of the Mg/Al exception are correct?",
+    "options": [
+      "Na < Mg < Al; Al loses a 3s electron",
+      "Al < Mg < Na; Na has a filled shell",
+      "Mg < Na < Al; all three electrons removed are 3p",
+      "Na < Al < Mg; Al loses a higher-energy 3p electron"
+    ],
+    "answer": "Na < Al < Mg; Al loses a higher-energy 3p electron",
+    "explanation": "The usual first-ionization ordering is Na < Al < Mg. Magnesium has a filled 3s² subshell, whereas the first electron removed from aluminium is 3p¹, which is less tightly held than the filled 3s electron in Mg. A period trend has subshell exceptions.",
+    "id": "neet-challenge-b4-chemistry-9",
+    "category": "Chemistry 9: Classification of Elements and Periodicity in Properties",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-9",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 10,
+    "question": "Among the hydrides NH₃ and PH₃, which comparison of boiling behaviour and intermolecular interactions is normally correct?",
+    "options": [
+      "NH₃ has the higher boiling point because appreciable intermolecular hydrogen bonding outweighs its smaller molar mass",
+      "PH₃ has the higher boiling point solely because every heavier hydride must boil higher",
+      "Their boiling points must be identical because both central atoms are in Group 15",
+      "NH₃ cannot hydrogen bond because nitrogen has no lone pair"
+    ],
+    "answer": "NH₃ has the higher boiling point because appreciable intermolecular hydrogen bonding outweighs its smaller molar mass",
+    "explanation": "Ammonia exhibits appreciable intermolecular hydrogen bonding involving nitrogen and hydrogen. Phosphine does not show comparable hydrogen bonding, so the simple molar-mass trend is overridden. First-member behaviour cannot be predicted from mass alone.",
+    "id": "neet-challenge-b4-chemistry-10",
+    "category": "Chemistry 10: p-Block Elements",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-10",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 1,
+    "question": "A seed-bearing plant has ovules not enclosed in an ovary before fertilization and lacks true fruits enclosing seeds. Which identification and distinction are correct?",
+    "options": [
+      "Angiosperm; naked ovules define flowering plants",
+      "Gymnosperm; angiosperm ovules are enclosed in an ovary",
+      "Pteridophyte; seeds are its usual dispersal spores",
+      "Bryophyte; its sporophyte normally produces naked seeds"
+    ],
+    "answer": "Gymnosperm; angiosperm ovules are enclosed in an ovary",
+    "explanation": "Naked ovules and seeds are consistent with a gymnosperm. In angiosperms, ovules are enclosed in the ovary, which contributes to the fruit after fertilization. Bryophytes and pteridophytes do not produce seeds.",
+    "id": "neet-challenge-b4-biology-1",
+    "category": "Biology 1: Diversity in Living World",
+    "lessonHref": "/neet/classes/diversity-living-world",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 2,
+    "question": "A typical dicot root and a typical dicot stem are compared in young transverse sections. Which xylem-maturation pairing and vascular-bundle arrangement are correct?",
+    "options": [
+      "Root endarch/conjoint; stem exarch/radial",
+      "Both exarch and radial",
+      "Root exarch/radial; stem endarch/conjoint",
+      "Both endarch and conjoint"
+    ],
+    "answer": "Root exarch/radial; stem endarch/conjoint",
+    "explanation": "A typical young root has exarch xylem with xylem and phloem on different radii, forming radial bundles. A typical young dicot stem has endarch xylem and conjoint collateral bundles. Orientation and bundle arrangement are separate observations.",
+    "id": "neet-challenge-b4-biology-2",
+    "category": "Biology 2: Structural Organisation in Animals and Plants",
+    "lessonHref": "/neet/classes/structural-organisation",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 3,
+    "question": "A diploid organism has 2n = 6. A cell has completed DNA replication but not the first meiotic division. What are chromosome count, chromatid count and DNA content relative to an unreplicated haploid nucleus with DNA content C?",
+    "options": [
+      "6 chromosomes, 6 chromatids, 2C",
+      "12 chromosomes, 12 chromatids, 4C",
+      "3 chromosomes, 6 chromatids, 2C",
+      "6 chromosomes, 12 chromatids, 4C"
+    ],
+    "answer": "6 chromosomes, 12 chromatids, 4C",
+    "explanation": "The diploid number remains six chromosomes after S phase because sister chromatids share centromeres. Replication produces twelve chromatids and doubles DNA from the diploid 2C state to 4C. Ploidy and DNA content must not be treated as the same count.",
+    "id": "neet-challenge-b4-biology-3",
+    "category": "Biology 3: Cell Structure and Function",
+    "lessonHref": "/neet/classes/cell-cycle-division",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 4,
+    "question": "A photosynthesizing leaf is supplied with isotope-labelled water or carbon dioxide in otherwise equivalent experiments. In oxygenic photosynthesis, which supplied molecule directly contributes the oxygen atoms of evolved O₂, and what is the role of CO₂ in the Calvin cycle?",
+    "options": [
+      "Water supplies evolved O₂; CO₂ supplies carbon for fixation",
+      "CO₂ supplies evolved O₂; water supplies carbon",
+      "Both water and CO₂ must contribute one atom to each O₂ molecule",
+      "Glucose supplies evolved O₂; CO₂ is only a catalyst"
+    ],
+    "answer": "Water supplies evolved O₂; CO₂ supplies carbon for fixation",
+    "explanation": "The oxygen evolved in oxygenic photosynthesis comes from water oxidation in the light reactions. Carbon dioxide is the carbon source fixed in the Calvin cycle. The overall photosynthesis equation alone does not identify atom origins correctly.",
+    "id": "neet-challenge-b4-biology-4",
+    "category": "Biology 4: Plant Physiology",
+    "lessonHref": "/neet/classes/plant-physiology",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 5,
+    "question": "In a normal cardiac cycle, left ventricular pressure rises above left atrial pressure and later above aortic pressure. Which sequence of valve states is expected before ejection and then during ejection?",
+    "options": [
+      "Mitral and aortic valves both open before ejection",
+      "Mitral closes first; aortic opens when ventricular pressure exceeds aortic pressure",
+      "Aortic opens first; mitral opens during ejection",
+      "Mitral remains open throughout ventricular systole"
+    ],
+    "answer": "Mitral closes first; aortic opens when ventricular pressure exceeds aortic pressure",
+    "explanation": "Rising ventricular pressure closes the mitral valve. Before the aortic valve opens there is an isovolumetric contraction interval with both valves closed. Ejection begins when ventricular pressure exceeds aortic pressure, opening the aortic valve.",
+    "id": "neet-challenge-b4-biology-5",
+    "category": "Biology 5: Human Physiology",
+    "lessonHref": "/neet/classes/human-physiology",
+    "challenge": true
+  }
+]

@@ -1,5 +1,7 @@
 # NEET challenge rotation — batch 3
 
+Current expansion: [batch 4](neet-challenge-batch4-2026.md) raises the challenge pool to 125, with two or three choices per unit. The description below records batch 3.
+
 Adds 25 original application questions in the units not expanded by batch 2. The challenge pool now has 100 questions, exactly two in each of the 50 mapped units; the combined bank has 727. Each challenge paper selects one application question per unit and 130 foundation questions. Timing, marking, IDs, saved-attempt keys and Foundation selection remain unchanged. Difficulty is an authored comparison, not an official NEET calibration or rank predictor.
 
 New Physics scenarios cover area uncertainty, rms speed/energy, parallel-wire forces, resonant circuit voltages, electromagnetic amplitude/intensity, interference fringes, matter waves, atomic spectra, ideal diode voltages and bridge interchange. Chemistry adds molecular-orbital electron counting, periodic comparisons, first-member bonding, spin-only moments, stereoisomer counting, hydrogenation ambiguity, SN2 kinetics/stereochemistry, Grignard carbon accounting, nitrile/amine transformations and peptide hydrolysis. Biology adds chordate development, vascular-bundle interpretation, respiratory quotient, neuromuscular sequencing and passive immunity.
