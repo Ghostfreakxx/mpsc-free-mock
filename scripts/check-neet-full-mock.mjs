@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { chromium } from 'playwright';
-const pool = [...JSON.parse(fs.readFileSync('app/data/neet-full-mock.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-mock.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-expansion.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-rotation.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-batch4.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-batch5.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-batch6.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-batch7.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-batch8.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-batch9.json', 'utf8'))];
+const pool = [...JSON.parse(fs.readFileSync('app/data/neet-full-mock.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-mock.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-expansion.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-rotation.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-batch4.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-batch5.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-batch6.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-batch7.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-batch8.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-batch9.json', 'utf8')), ...JSON.parse(fs.readFileSync('app/data/neet-challenge-batch10.json', 'utf8'))];
 const byId = new Map(pool.map(q => [q.id, q]));
 const key = 'neet-full-mock:attempt:v1';
 const base = process.env.TEST_URL || 'http://localhost:3000';
@@ -11,10 +11,10 @@ try {
   const errors = [];
   page.on('pageerror', e => errors.push(e.message));
   await page.goto(`${base}/neet/classes`, { waitUntil: 'domcontentloaded', timeout: 60000 });
-  const bankReady = page.waitForResponse(r => r.url().endsWith('/question-bank/neet-full-mock-v10'));
+  const bankReady = page.waitForResponse(r => r.url().endsWith('/question-bank/neet-full-mock-v11'));
   await page.getByRole('link', { name: 'Open NEET full-syllabus timed mock' }).click();
   const liveBank = await (await bankReady).json();
-  assert.equal(liveBank.length, 877);
+  assert.equal(liveBank.length, 902);
   assert.equal(liveBank.filter(q => q.id.startsWith('neet-challenge-b2-')).length, 25);
   assert.equal(liveBank.filter(q => q.id.startsWith('neet-challenge-b3-')).length, 25);
   assert.equal(liveBank.filter(q => q.id.startsWith('neet-challenge-b4-')).length, 25);
@@ -23,10 +23,12 @@ try {
   assert.equal(liveBank.filter(q => q.id.startsWith('neet-challenge-b7-')).length, 25);
   assert.equal(liveBank.filter(q => q.id.startsWith('neet-challenge-b8-')).length, 25);
   assert.equal(liveBank.filter(q => q.id.startsWith('neet-challenge-b9-')).length, 25);
+  assert.equal(liveBank.filter(q => q.id.startsWith('neet-challenge-b10-')).length, 25);
   const challengeUnits = new Map();
   for (const q of liveBank.filter(q => q.challenge)) challengeUnits.set(q.category, (challengeUnits.get(q.category) || 0) + 1);
   assert.equal(challengeUnits.size, 50);
-  assert([...challengeUnits.values()].every(count => count === 5));
+  assert.equal([...challengeUnits.values()].filter(count => count === 6).length, 25);
+  assert.equal([...challengeUnits.values()].filter(count => count === 5).length, 25);
   await page.waitForURL('**/neet/mock-test', { waitUntil: 'domcontentloaded' });
   await page.getByRole('button', { name: 'Start 180-question NEET UG paper' }).waitFor();
   const legacy = '{"keep":"other simulator attempt"}';

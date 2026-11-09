@@ -1,0 +1,427 @@
+[
+  {
+    "subject": "Physics",
+    "unit": 1,
+    "question": "A projectile is launched at speed u at angle θ. At the highest point, neglecting air resistance, what are its speed and radius of curvature?",
+    "options": [
+      "u sin θ and u² sin² θ/g",
+      "u cos θ and u² cos² θ/g",
+      "u and u²/g",
+      "u cos θ and u² cos² θ/(g sin θ)"
+    ],
+    "answer": "u cos θ and u² cos² θ/g",
+    "explanation": "At the top the vertical velocity is zero, so speed is u cos θ. Gravity is wholly normal to the horizontal velocity there; the curvature radius v²/aₙ is therefore u² cos² θ/g. The result assumes a nonzero horizontal component and uniform gravitational acceleration.",
+    "id": "neet-challenge-b10-physics-1",
+    "category": "Physics 1: Physics and Measurement",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-1",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 2,
+    "question": "A satellite in a circular orbit of radius r has period T. If its orbital radius becomes 4r around the same planet, what are its speed and period relative to their original values?",
+    "options": [
+      "v/2 and 4T",
+      "v/4 and 8T",
+      "v/2 and 8T",
+      "2v and 8T"
+    ],
+    "answer": "v/2 and 8T",
+    "explanation": "Circular speed varies as r⁻¹ᐟ², so quadrupling radius halves speed. Kepler scaling gives T proportional to r³ᐟ², so the period becomes 4³ᐟ² = 8 times as large. The planet’s mass and gravitational parameter are unchanged.",
+    "id": "neet-challenge-b10-physics-2",
+    "category": "Physics 2: Kinematics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-2",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 3,
+    "question": "An ideal gas with γ = 5/3 expands reversibly and adiabatically. Its volume doubles. What is T₂/T₁ and P₂/P₁?",
+    "options": [
+      "2⁻²ᐟ³ and 2⁻⁵ᐟ³",
+      "2⁻⁵ᐟ³ and 2⁻²ᐟ³",
+      "1/2 and 1/4",
+      "2⁻¹ᐟ³ and 2⁻⁵ᐟ³"
+    ],
+    "answer": "2⁻²ᐟ³ and 2⁻⁵ᐟ³",
+    "explanation": "For a reversible adiabatic change, TV^(γ−1) and PV^γ are constant. With V₂/V₁ = 2 and γ−1 = 2/3, T₂/T₁ = 2⁻²ᐟ³. The pressure ratio is 2⁻⁵ᐟ³; the two ratios follow different exponents.",
+    "id": "neet-challenge-b10-physics-3",
+    "category": "Physics 3: Laws of Motion",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-3",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 4,
+    "question": "Two identical springs, each of constant k, support a mass m in parallel on a vertical surface. The mass is displaced down slightly and released. What is its period?",
+    "options": [
+      "2π√(m/k)",
+      "2π√(m/2k)",
+      "π√(m/k)",
+      "2π√(2m/k)"
+    ],
+    "answer": "2π√(m/2k)",
+    "explanation": "Parallel spring extensions are equal and restoring forces add, giving effective stiffness 2k. Small oscillations about the shifted equilibrium have angular frequency √(2k/m) and period 2π√(m/2k). Gravity shifts equilibrium but does not change this ideal period.",
+    "id": "neet-challenge-b10-physics-4",
+    "category": "Physics 4: Work, Energy and Power",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-4",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 5,
+    "question": "A wave is described by y = A cos(kx − ωt). At a fixed position, what is the phase difference between two instants separated by T/6?",
+    "options": [
+      "π/3",
+      "π/6",
+      "2π/3",
+      "π"
+    ],
+    "answer": "π/3",
+    "explanation": "At fixed x, phase changes in magnitude by ωΔt. Since T = 2π/ω and Δt = T/6, the magnitude is 2π/6 = π/3. The sign depends on the order in which the two instants are subtracted; the phase-difference magnitude is requested.",
+    "id": "neet-challenge-b10-physics-5",
+    "category": "Physics 5: Rotational Motion",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-5",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 6,
+    "question": "A convex lens forms a real image twice the object height. Which object and image distances satisfy the thin-lens equation?",
+    "options": [
+      "u = 3f and v = 3f/2",
+      "u = 3f/2 and v = 3f",
+      "u = 2f and v = 4f",
+      "u = f and v = 2f"
+    ],
+    "answer": "u = 3f/2 and v = 3f",
+    "explanation": "A real image twice as tall has magnification magnitude v/u = 2. With the lens relation 1/f = 1/u + 1/v and v = 2u, one obtains u = 3f/2 and v = 3f. The magnification is inverted for a real image; distances here are positive magnitudes.",
+    "id": "neet-challenge-b10-physics-6",
+    "category": "Physics 6: Gravitation",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-6",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 7,
+    "question": "A metal has work function 2.0 eV. Light of photon energy 5.0 eV illuminates it. If the frequency is increased until photon energy is 7.0 eV while intensity is reduced so incident power stays fixed, what happens ideally to maximum electron kinetic energy and photon flux?",
+    "options": [
+      "Kmax increases by 2 eV; photon flux becomes 5/7 of its former value",
+      "Kmax is unchanged; photon flux becomes 7/5",
+      "Kmax increases by 2 eV; photon flux becomes 7/5",
+      "Kmax increases by 7 eV; photon flux is unchanged"
+    ],
+    "answer": "Kmax increases by 2 eV; photon flux becomes 5/7 of its former value",
+    "explanation": "Einstein’s equation gives Kmax = Eγ − ϕ, so it rises from 3 to 5 eV, an increase of 2 eV. At fixed incident power, photon rate is inversely proportional to photon energy, so the new flux is 5/7 of the old flux. This ideal comparison ignores collection efficiency.",
+    "id": "neet-challenge-b10-physics-7",
+    "category": "Physics 7: Properties of Solids and Liquids",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-7",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 8,
+    "question": "A radioactive sample has 75% of its original nuclei remaining after 12 days. Assuming a single decay constant, what is its half-life?",
+    "options": [
+      "6 days",
+      "12 days",
+      "24 days",
+      "36 days"
+    ],
+    "answer": "24 days",
+    "explanation": "The surviving fraction is (1/2)^(t/T₁/₂). Here 0.75 = (1/2)^(12/T₁/₂), so T₁/₂ = 12 ln 2/ln(4/3), approximately 24.1 days. Of the listed values, 24 days is the intended rounded result; the fraction is not one half after 12 days.",
+    "id": "neet-challenge-b10-physics-8",
+    "category": "Physics 8: Thermodynamics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-8",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 9,
+    "question": "A silicon diode is forward biased through a 1.0 kΩ resistor from a 5.0 V ideal source. Using a constant forward drop of 0.70 V, what are current and diode power?",
+    "options": [
+      "4.3 mA and 3.01 mW",
+      "5.0 mA and 3.50 mW",
+      "4.3 mA and 18.5 mW",
+      "0.70 mA and 0.49 mW"
+    ],
+    "answer": "4.3 mA and 3.01 mW",
+    "explanation": "The resistor receives 5.0 − 0.70 = 4.30 V, so current is 4.30 mA. Diode dissipation under the constant-drop model is 0.70×4.30 mA = 3.01 mW. It is distinct from resistor dissipation I²R.",
+    "id": "neet-challenge-b10-physics-9",
+    "category": "Physics 9: Kinetic Theory of Gases",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-9",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 10,
+    "question": "A wire of resistance R is cut into four equal lengths and the pieces are connected in parallel. What is the equivalent resistance?",
+    "options": [
+      "R/16",
+      "R/4",
+      "4R",
+      "R/8"
+    ],
+    "answer": "R/16",
+    "explanation": "Each quarter-length piece has resistance R/4 because material and cross-section are unchanged. Four identical resistances in parallel give (R/4)/4 = R/16. The result depends on connecting all four pieces in parallel.",
+    "id": "neet-challenge-b10-physics-10",
+    "category": "Physics 10: Oscillations and Waves",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-10",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 1,
+    "question": "For a hydrogen-like ion, the energy of level n is −13.6 Z²/n² eV. What photon energy is emitted when a He⁺ ion falls from n=4 to n=2?",
+    "options": [
+      "10.2 eV",
+      "40.8 eV",
+      "13.6 eV",
+      "51.0 eV"
+    ],
+    "answer": "10.2 eV",
+    "explanation": "For He⁺, Z=2. The emitted energy is 13.6×4×(1/2² − 1/4²) = 54.4×3/16 = 10.2 eV. This is the difference in level energies, not the magnitude of either level energy alone.",
+    "id": "neet-challenge-b10-chemistry-1",
+    "category": "Chemistry 1: Some Basic Concepts in Chemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-1",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 2,
+    "question": "An electron configuration ends in 3p⁵. Which pair gives its period and valence-electron count?",
+    "options": [
+      "Period 2, seven",
+      "Period 3, seven",
+      "Period 3, five",
+      "Period 5, three"
+    ],
+    "answer": "Period 3, seven",
+    "explanation": "The highest principal quantum number is n=3, identifying period 3 for a p-block element. The outer shell is 3s²3p⁵, with seven valence electrons. Configuration notation gives the shell and subshell occupancies directly.",
+    "id": "neet-challenge-b10-chemistry-2",
+    "category": "Chemistry 2: Atomic Structure",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-2",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 3,
+    "question": "A gaseous equilibrium A₂ ⇌ 2A has Kp = 1 bar at a temperature. Starting with pure A₂ at total pressure 1 bar, what is its equilibrium degree of dissociation?",
+    "options": [
+      "1/√5",
+      "1/2",
+      "2/3",
+      "3/4"
+    ],
+    "answer": "1/√5",
+    "explanation": "Let the dissociation fraction be α. The equilibrium mole fractions are yA₂=(1−α)/(1+α) and yA=2α/(1+α). Hence Kp=P·yA²/yA₂=4α²/(1−α²) bar. With both Kp and total pressure equal to 1 bar, 4α²=1−α², so α=1/√5.",
+    "id": "neet-challenge-b10-chemistry-3",
+    "category": "Chemistry 3: Chemical Bonding and Molecular Structure",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-3",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 4,
+    "question": "For an exothermic equilibrium reaction, which change necessarily shifts the equilibrium composition toward products, assuming ideal behaviour?",
+    "options": [
+      "Increase temperature at fixed pressure",
+      "Add a catalyst at fixed temperature",
+      "Remove a product at fixed temperature",
+      "Increase volume for a reaction with fewer gas moles on the product side"
+    ],
+    "answer": "Remove a product at fixed temperature",
+    "explanation": "Removing a product lowers its chemical potential contribution and drives the reaction forward until equilibrium is restored. A catalyst changes rates but not equilibrium composition. Heating an exothermic reaction favours reactants; increasing volume favours the side with more gas moles.",
+    "id": "neet-challenge-b10-chemistry-4",
+    "category": "Chemistry 4: Chemical Thermodynamics",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-4",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 5,
+    "question": "At the same temperature, an ideal solution has solvent mole fraction 0.90. If the pure solvent vapour pressure is 40 kPa, what is the solution vapour pressure?",
+    "options": [
+      "4 kPa",
+      "36 kPa",
+      "40 kPa",
+      "44 kPa"
+    ],
+    "answer": "36 kPa",
+    "explanation": "Raoult’s law for a nonvolatile solute gives Psolution = Xsolvent P° = 0.90×40 = 36 kPa. The 10% lowering relative to pure solvent follows the solvent mole fraction under this ideal-solution assumption.",
+    "id": "neet-challenge-b10-chemistry-5",
+    "category": "Chemistry 5: Solutions",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-5",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 6,
+    "question": "For a galvanic cell reaction with n=2, the reaction quotient is 100 times its equilibrium constant at 298 K. What is E−E° approximately?",
+    "options": [
+      "−0.059 V",
+      "+0.059 V",
+      "−0.118 V",
+      "+0.118 V"
+    ],
+    "answer": "−0.059 V",
+    "explanation": "The Nernst equation gives E−E° = −(0.0592/n)log₁₀Q. Since Q/K=100 and at equilibrium E=0, one can use E = −(0.0592/2)log₁₀(Q/K) = −0.0592 V. The positive sign would correspond to Q below K.",
+    "id": "neet-challenge-b10-chemistry-6",
+    "category": "Chemistry 6: Equilibrium",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-6",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 7,
+    "question": "For a first-order reaction, the rate constant doubles when temperature rises from 300 K to 310 K. Using the two-point Arrhenius relation, estimate activation energy (R=8.314 J mol⁻¹ K⁻¹).",
+    "options": [
+      "17.9 kJ mol⁻¹",
+      "53.6 kJ mol⁻¹",
+      "107 kJ mol⁻¹",
+      "179 kJ mol⁻¹"
+    ],
+    "answer": "53.6 kJ mol⁻¹",
+    "explanation": "ln(k₂/k₁)=Ea/R(1/T₁−1/T₂). Therefore Ea = R ln2 /(1/300−1/310) ≈ 53.6 kJ mol⁻¹. The rate constant is not proportional linearly to temperature; the reciprocal-temperature form is required.",
+    "id": "neet-challenge-b10-chemistry-7",
+    "category": "Chemistry 7: Redox Reactions and Electrochemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-7",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 8,
+    "question": "A complex [Co(NH₃)₄Cl₂]⁺ has two geometric arrangements. Which statement correctly identifies the isomerism?",
+    "options": [
+      "Optical only; tetrahedral",
+      "Geometrical cis–trans; octahedral",
+      "Linkage; square planar",
+      "Ionisation; trigonal bipyramidal"
+    ],
+    "answer": "Geometrical cis–trans; octahedral",
+    "explanation": "Six monodentate ligands surround cobalt, giving the usual octahedral coordination geometry. The two identical chlorides may be adjacent (cis) or opposite (trans), a geometrical isomerism. Ammonia is neutral and the complex’s charge is consistent with Co(III).",
+    "id": "neet-challenge-b10-chemistry-8",
+    "category": "Chemistry 8: Chemical Kinetics",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-8",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 9,
+    "question": "Which comparison of boiling points best reflects hydrogen bonding among the hydrides NH₃, PH₃ and AsH₃?",
+    "options": [
+      "NH₃ has an anomalously elevated boiling point relative to the down-group trend",
+      "PH₃ has the highest because phosphorus is most electronegative",
+      "AsH₃ has the lowest because it has the largest molar mass",
+      "All three are equal because they are group 15 hydrides"
+    ],
+    "answer": "NH₃ has an anomalously elevated boiling point relative to the down-group trend",
+    "explanation": "Down the group, increasing size and polarizability tend to strengthen dispersion forces, but NH₃ exhibits intermolecular hydrogen bonding that raises its boiling point above the simple trend. PH₃ and AsH₃ do not form comparably strong hydrogen-bond networks.",
+    "id": "neet-challenge-b10-chemistry-9",
+    "category": "Chemistry 9: Classification of Elements and Periodicity in Properties",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-9",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 10,
+    "question": "A 0.10 mol sample of a monoprotic acid is titrated to equivalence by 25.0 mL of base. What is the base concentration?",
+    "options": [
+      "0.40 mol L⁻¹",
+      "2.50 mol L⁻¹",
+      "4.00 mol L⁻¹",
+      "0.0040 mol L⁻¹"
+    ],
+    "answer": "4.00 mol L⁻¹",
+    "explanation": "At equivalence, monoprotic acid and base react in a 1:1 mole ratio, so 0.10 mol of base was delivered. Dividing by 0.0250 L gives 4.00 mol L⁻¹. This is the stoichiometric equivalence point, regardless of acid strength.",
+    "id": "neet-challenge-b10-chemistry-10",
+    "category": "Chemistry 10: p-Block Elements",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-10",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 1,
+    "question": "A diploid cell has 2n=16. After DNA replication but before meiosis I, which counts are present per cell?",
+    "options": [
+      "16 chromosomes and 32 chromatids",
+      "32 chromosomes and 32 chromatids",
+      "32 chromosomes and 16 chromatids",
+      "16 chromosomes and 16 chromatids"
+    ],
+    "answer": "16 chromosomes and 32 chromatids",
+    "explanation": "DNA replication duplicates each chromosome into two sister chromatids, but chromosome number is counted by centromeres and remains 16 before meiosis I. There are 32 chromatids and twice the DNA amount. Replication alone does not double ploidy.",
+    "id": "neet-challenge-b10-biology-1",
+    "category": "Biology 1: Diversity in Living World",
+    "lessonHref": "/neet/classes/diversity-living-world",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 2,
+    "question": "A protein is synthesized on free ribosomes in the cytosol, then acquires an N-terminal signal sequence that directs it to the rough ER. Which event most directly enables cotranslational targeting?",
+    "options": [
+      "A signal-recognition particle binds the emerging signal sequence",
+      "A lysosome hydrolyses the nascent polypeptide",
+      "The Golgi apparatus initiates DNA transcription",
+      "A peroxisome removes the signal before translation begins"
+    ],
+    "answer": "A signal-recognition particle binds the emerging signal sequence",
+    "explanation": "The signal-recognition particle recognizes the emerging ER signal sequence and helps target the ribosome–nascent chain complex to the ER membrane. Translation then continues with translocation into or across the ER. The targeting signal acts on a growing polypeptide, not before translation begins.",
+    "id": "neet-challenge-b10-biology-2",
+    "category": "Biology 2: Structural Organisation in Animals and Plants",
+    "lessonHref": "/neet/classes/structural-organisation",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 3,
+    "question": "A heterozygous tall plant (Tt) is crossed with a dwarf plant (tt). If 200 viable offspring are produced with complete dominance and equal survival, what is the expected number of dwarf offspring?",
+    "options": [
+      "50",
+      "100",
+      "150",
+      "200"
+    ],
+    "answer": "100",
+    "explanation": "The heterozygote produces T and t gametes in equal proportions; the dwarf parent contributes t only. Half of offspring are expected to be Tt and half tt. Thus 100 of 200 are expected to be dwarf, though an actual sample can vary by chance.",
+    "id": "neet-challenge-b10-biology-3",
+    "category": "Biology 3: Cell Structure and Function",
+    "lessonHref": "/neet/classes/cell-cycle-division",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 4,
+    "question": "A plant with genotype RrYy forms gametes. Assuming independent assortment and no linkage, what fraction are RY or ry?",
+    "options": [
+      "1/4",
+      "1/2",
+      "3/4",
+      "1"
+    ],
+    "answer": "1/2",
+    "explanation": "Independent assortment gives each of the four gamete types RY, Ry, rY and ry probability 1/4. The two specified types are mutually exclusive, so their combined probability is 1/2. The conclusion depends on the stated no-linkage assumption.",
+    "id": "neet-challenge-b10-biology-4",
+    "category": "Biology 4: Plant Physiology",
+    "lessonHref": "/neet/classes/plant-physiology",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 5,
+    "question": "An ecosystem receives 20,000 kJ of producer-level energy. If the ecological transfer efficiency is 10% at each successive trophic transfer, how much reaches tertiary consumers?",
+    "options": [
+      "20 kJ",
+      "200 kJ",
+      "2,000 kJ",
+      "2 kJ"
+    ],
+    "answer": "20 kJ",
+    "explanation": "Producer energy is 20,000 kJ. Primary consumers receive 2,000 kJ, secondary consumers 200 kJ, and tertiary consumers 20 kJ after three successive 10% transfers. The fraction compounds at each level; it is not a single 10% reduction overall.",
+    "id": "neet-challenge-b10-biology-5",
+    "category": "Biology 5: Human Physiology",
+    "lessonHref": "/neet/classes/human-physiology",
+    "challenge": true
+  }
+]

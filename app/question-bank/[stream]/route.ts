@@ -1,3 +1,4 @@
+import neetChallengeBatch10 from "../../data/neet-challenge-batch10.json";
 import neetChallengeBatch9 from "../../data/neet-challenge-batch9.json";
 import neetChallengeBatch8 from "../../data/neet-challenge-batch8.json";
 import neetChallengeBatch7 from "../../data/neet-challenge-batch7.json";
@@ -17,7 +18,7 @@ import { publishedLawQuestions } from "../../data/law-mjs-bank";
 // Practice pages and the exam simulator fetch only the file they need, so page bundles and link
 // prefetches stay small, and the browser and service worker cache each file once for every page.
 const streams: Stream[] = ["mpsc", "neet", "jee", "cuet-pg"];
-const banks = [...streams, "mpsc-mizo", "mjs-law", "neet-full-mock", "neet-full-mock-v2", "neet-full-mock-v3", "neet-full-mock-v4", "neet-full-mock-v5", "neet-full-mock-v6", "neet-full-mock-v7", "neet-full-mock-v8", "neet-full-mock-v9", "neet-full-mock-v10"] as const;
+const banks = [...streams, "mpsc-mizo", "mjs-law", "neet-full-mock", "neet-full-mock-v2", "neet-full-mock-v3", "neet-full-mock-v4", "neet-full-mock-v5", "neet-full-mock-v6", "neet-full-mock-v7", "neet-full-mock-v8", "neet-full-mock-v9", "neet-full-mock-v10", "neet-full-mock-v11"] as const;
 type Bank = (typeof banks)[number];
 
 export const dynamicParams = false;
@@ -31,6 +32,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ str
   if (!banks.includes(stream as Bank)) return new Response("Unknown question bank", { status: 404 });
   const body = stream === "mpsc-mizo" ? mpscTranslations(practiceQuestions("mpsc"))
     : stream === "mjs-law" ? publishedLawQuestions()
+    : stream === "neet-full-mock-v11" ? [...neetFullMock, ...neetChallenge, ...neetChallengeExpansion, ...neetChallengeRotation, ...neetChallengeBatch4, ...neetChallengeBatch5, ...neetChallengeBatch6, ...neetChallengeBatch7, ...neetChallengeBatch8, ...neetChallengeBatch9, ...neetChallengeBatch10]
     : stream === "neet-full-mock-v10" ? [...neetFullMock, ...neetChallenge, ...neetChallengeExpansion, ...neetChallengeRotation, ...neetChallengeBatch4, ...neetChallengeBatch5, ...neetChallengeBatch6, ...neetChallengeBatch7, ...neetChallengeBatch8, ...neetChallengeBatch9]
     : stream === "neet-full-mock-v9" ? [...neetFullMock, ...neetChallenge, ...neetChallengeExpansion, ...neetChallengeRotation, ...neetChallengeBatch4, ...neetChallengeBatch5, ...neetChallengeBatch6, ...neetChallengeBatch7, ...neetChallengeBatch8]
     : stream === "neet-full-mock-v8" ? [...neetFullMock, ...neetChallenge, ...neetChallengeExpansion, ...neetChallengeRotation, ...neetChallengeBatch4, ...neetChallengeBatch5, ...neetChallengeBatch6, ...neetChallengeBatch7]
