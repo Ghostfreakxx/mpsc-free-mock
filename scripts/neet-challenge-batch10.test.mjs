@@ -32,7 +32,7 @@ test('independent calculations validate added keys',()=>{
   assert.equal(a('Physics',3),'2⁻²ᐟ³ and 2⁻⁵ᐟ³');
   assert.equal(a('Physics',6),'u = 3f/2 and v = 3f');
   assert.equal(a('Physics',7),'Kmax increases by 2 eV; photon flux becomes 5/7 of its former value');
-  assert.equal(a('Physics',8),'24 days');
+  assert.equal(a('Physics',8),'24.1 days');assert.equal((10*Math.log(2)/Math.log(4/3)).toFixed(1),'24.1');
   assert.equal(a('Physics',9),'4.3 mA and 3.01 mW');
   assert.equal(a('Physics',10),'R/16');
   assert.equal(a('Chemistry',1),'10.2 eV');

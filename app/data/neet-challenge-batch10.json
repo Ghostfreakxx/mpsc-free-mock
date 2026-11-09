@@ -121,15 +121,15 @@
   {
     "subject": "Physics",
     "unit": 8,
-    "question": "A radioactive sample has 75% of its original nuclei remaining after 12 days. Assuming a single decay constant, what is its half-life?",
+    "question": "A radioactive sample has 75% of its original nuclei remaining after 10 days. Assuming a single decay constant, what is its half-life, approximately?",
     "options": [
-      "6 days",
+      "24.1 days",
       "12 days",
-      "24 days",
+      "28.9 days",
       "36 days"
     ],
-    "answer": "24 days",
-    "explanation": "The surviving fraction is (1/2)^(t/T₁/₂). Here 0.75 = (1/2)^(12/T₁/₂), so T₁/₂ = 12 ln 2/ln(4/3), approximately 24.1 days. Of the listed values, 24 days is the intended rounded result; the fraction is not one half after 12 days.",
+    "answer": "24.1 days",
+    "explanation": "The surviving fraction is (1/2)^(t/T₁/₂). Here 0.75 = (1/2)^(10/T₁/₂), so T₁/₂ = 10 ln 2/ln(4/3) ≈ 24.1 days. The decay law is exponential; the half-life is not obtained by treating the 25% loss as a linear rate.",
     "id": "neet-challenge-b10-physics-8",
     "category": "Physics 8: Thermodynamics",
     "lessonHref": "/neet/classes/physics-chemistry/physics#unit-8",
