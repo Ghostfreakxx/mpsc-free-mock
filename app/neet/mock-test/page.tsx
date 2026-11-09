@@ -8,5 +8,5 @@ export const metadata = {
 };
 
 export default function NeetMock() {
-  return <><QuestionBankPreload names={['neet-full-mock-v9']} /><ExamSimulator neetFullMock poolSizes={{ neet: blueprint.reduce((n, u) => n + u.count, 225), jee: 0, mpsc: 0, 'cuet-pg': 0 }} /></>;
+  return <><QuestionBankPreload names={['neet-full-mock-v10']} /><ExamSimulator neetFullMock poolSizes={{ neet: blueprint.reduce((n, u) => n + u.count, 250), jee: 0, mpsc: 0, 'cuet-pg': 0 }} /></>;
 }

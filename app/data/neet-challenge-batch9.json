@@ -1,0 +1,427 @@
+[
+  {
+    "subject": "Physics",
+    "unit": 11,
+    "question": "Capacitors 2 μF and 3 μF are connected in series across 10 V. What are charge magnitude on each capacitor and voltage across the 2 μF capacitor?",
+    "options": [
+      "20 μC and 10 V",
+      "12 μC and 6 V",
+      "12 μC and 4 V",
+      "30 μC and 6 V"
+    ],
+    "answer": "12 μC and 6 V",
+    "explanation": "Series capacitance is C₁C₂/(C₁+C₂) = 6/5 μF. The common charge is CeqV = 12 μC. The 2 μF capacitor has V = Q/C = 6 V; the other has 4 V. Charges are equal in this ideal series connection, not voltages.",
+    "id": "neet-challenge-b9-physics-11",
+    "category": "Physics 11: Electrostatics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-11",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 12,
+    "question": "A uniform wire initially has resistance 10 Ω. It is stretched to twice its length at constant volume, with resistivity and temperature unchanged. What are new resistance and power drawn from an ideal 20 V supply?",
+    "options": [
+      "20 Ω and 20 W",
+      "40 Ω and 40 W",
+      "40 Ω and 10 W",
+      "20 Ω and 10 W"
+    ],
+    "answer": "40 Ω and 10 W",
+    "explanation": "Constant volume makes area halve when length doubles. Resistance ρL/A therefore quadruples to 40 Ω. At fixed supply voltage, power is V²/R = 400/40 = 10 W. Assuming unchanged area would miss half of the geometry change.",
+    "id": "neet-challenge-b9-physics-12",
+    "category": "Physics 12: Current Electricity",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-12",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 13,
+    "question": "A positive charge moves along +x in a uniform magnetic field along +y. In a second trial its speed doubles and field magnitude halves, with directions unchanged. What are magnetic-force direction and second/first force-magnitude ratio?",
+    "options": [
+      "−z and 1",
+      "+z and 2",
+      "−z and 2",
+      "+z and 1"
+    ],
+    "answer": "+z and 1",
+    "explanation": "For a positive charge, v×B points along +z when v is +x and B is +y. The perpendicular-force magnitude is qvB. Doubling v while halving B leaves the product unchanged, so the magnitude ratio is one; direction does not reverse.",
+    "id": "neet-challenge-b9-physics-13",
+    "category": "Physics 13: Magnetic Effects of Current and Magnetism",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-13",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 14,
+    "question": "A conducting rod of length 0.50 m moves at 4.0 m/s perpendicular to a 0.20 T field, completing a circuit of total resistance 2.0 Ω. Neglect inductance and mechanical friction. What are induced emf and mechanical power needed to maintain speed?",
+    "options": [
+      "0.40 V and 0.080 W",
+      "0.40 V and 0.40 W",
+      "0.80 V and 0.32 W",
+      "0.40 V and 0.020 W"
+    ],
+    "answer": "0.40 V and 0.080 W",
+    "explanation": "Motional emf is Bℓv = 0.20×0.50×4 = 0.40 V. Current is 0.40/2 = 0.20 A. Electrical dissipation, supplied by mechanical work, is I²R = 0.080 W. The magnetic drag force times speed gives the same power.",
+    "id": "neet-challenge-b9-physics-14",
+    "category": "Physics 14: Electromagnetic Induction and Alternating Currents",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-14",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 15,
+    "question": "Two monochromatic beams in vacuum have equal intensity, but the second has twice the first beam’s frequency. What are second/first ratios of photon flux per unit area and momentum per photon?",
+    "options": [
+      "1 and 2",
+      "1/2 and 2",
+      "2 and 1/2",
+      "1/2 and 1/2"
+    ],
+    "answer": "1/2 and 2",
+    "explanation": "Energy per photon hf doubles at twice the frequency. Equal energy flow per area therefore requires half as many photons per second. Each photon has momentum hf/c, which doubles. Equal intensity does not imply equal photon number flux.",
+    "id": "neet-challenge-b9-physics-15",
+    "category": "Physics 15: Electromagnetic Waves",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-15",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 16,
+    "question": "A prism has refracting angle 60° and minimum deviation 60° in air. Under the ordinary symmetric minimum-deviation geometry, what are refractive index and incidence angle?",
+    "options": [
+      "√2 and 45°",
+      "√3 and 30°",
+      "√3 and 60°",
+      "2 and 60°"
+    ],
+    "answer": "√3 and 60°",
+    "explanation": "At minimum deviation i = e = (A+Dm)/2 = 60° and each internal refraction angle is A/2 = 30°. Thus n = sin60°/sin30° = √3. Minimum deviation is a symmetry condition, not a statement that incidence equals the prism half-angle.",
+    "id": "neet-challenge-b9-physics-16",
+    "category": "Physics 16: Optics",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-16",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 17,
+    "question": "A photoelectric stopping-potential graph has slope h/e = 4.14 × 10⁻¹⁵ V s and threshold frequency 5.0 × 10¹⁴ Hz. What are work function in eV and stopping potential at 8.0 × 10¹⁴ Hz, approximately?",
+    "options": [
+      "3.31 eV and 1.24 V",
+      "2.07 eV and 3.31 V",
+      "1.24 eV and 2.07 V",
+      "2.07 eV and 1.24 V"
+    ],
+    "answer": "2.07 eV and 1.24 V",
+    "explanation": "The work function in eV is numerically (h/e)f₀ = 2.07. Stopping potential is (h/e)(f−f₀) = 4.14×10⁻¹⁵×3×10¹⁴ = 1.242 V. The photon energy at the incident frequency is not itself the stopping potential.",
+    "id": "neet-challenge-b9-physics-17",
+    "category": "Physics 17: Dual Nature of Matter and Radiation",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-17",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 18,
+    "question": "A nucleus initially has mass number 238 and atomic number 92. It undergoes two alpha decays and one beta-minus decay, with no other changes. What are the daughter mass and atomic numbers?",
+    "options": [
+      "230 and 89",
+      "230 and 87",
+      "234 and 91",
+      "230 and 88"
+    ],
+    "answer": "230 and 89",
+    "explanation": "Each alpha emission lowers mass number by four and atomic number by two. After two, A = 230 and Z = 88. Beta-minus decay leaves A unchanged and increases Z by one, giving 230 and 89. Count nucleon number separately from nuclear charge.",
+    "id": "neet-challenge-b9-physics-18",
+    "category": "Physics 18: Atoms and Nuclei",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-18",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 19,
+    "question": "An ideal diode and a 100 Ω resistor are driven in series by a square-wave source alternating between +10 V and −10 V for equal durations. The diode conducts only on the positive half. What are average current over a full period and average resistor power?",
+    "options": [
+      "100 mA and 1 W",
+      "50 mA and 0.50 W",
+      "50 mA and 0.25 W",
+      "100 mA and 0.50 W"
+    ],
+    "answer": "50 mA and 0.50 W",
+    "explanation": "Current is 10/100 = 0.10 A for half the period and zero otherwise, so average current is 0.050 A. Average heating is the mean of I²R: half of 0.10²×100 = 0.50 W. Squaring the average current would incorrectly give 0.25 W.",
+    "id": "neet-challenge-b9-physics-19",
+    "category": "Physics 19: Electronic Devices",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-19",
+    "challenge": true
+  },
+  {
+    "subject": "Physics",
+    "unit": 20,
+    "question": "For normal viewing through a transparent liquid, an object at real depth 15 cm appears 10 cm deep. Assuming the same refractive index and paraxial model for a 6 cm slab in air, what are index and apparent upward shift through the slab?",
+    "options": [
+      "1.5 and 4 cm",
+      "2/3 and 2 cm",
+      "1.5 and 2 cm",
+      "1.5 and 3 cm"
+    ],
+    "answer": "1.5 and 2 cm",
+    "explanation": "Index is real depth/apparent depth = 15/10 = 1.5. A 6 cm slab has apparent thickness 6/1.5 = 4 cm, giving upward shift 6−4 = 2 cm. Apparent thickness and apparent shift are different quantities.",
+    "id": "neet-challenge-b9-physics-20",
+    "category": "Physics 20: Experimental Skills",
+    "lessonHref": "/neet/classes/physics-chemistry/physics#unit-20",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 11,
+    "question": "Zirconium and hafnium have unusually similar sizes despite lying in successive transition series. Which linked explanation is most consistent with the usual lanthanoid-contraction account?",
+    "options": [
+      "Excellent 4f shielding enlarges Hf enough to cancel all trends",
+      "Hf has fewer protons than Zr",
+      "Their similarity proves they have identical atomic masses",
+      "Poor 4f shielding increases effective nuclear attraction across the intervening lanthanoids"
+    ],
+    "answer": "Poor 4f shielding increases effective nuclear attraction across the intervening lanthanoids",
+    "explanation": "As the lanthanoids are traversed, added 4f electrons shield imperfectly while nuclear charge rises, causing contraction. This contributes to the size similarity of corresponding 4d and 5d elements such as Zr and Hf; equal size does not imply equal mass or nuclear charge.",
+    "id": "neet-challenge-b9-chemistry-11",
+    "category": "Chemistry 11: d- and f-Block Elements",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-11",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 12,
+    "question": "Two neutral water ligands in [Fe(H₂O)₆]²⁺ are replaced by two Cl⁻ ligands to form [Fe(H₂O)₄Cl₂]. Assuming only ligand substitution, what are product charge, Fe oxidation state and coordination number?",
+    "options": [
+      "Zero charge, +2, six",
+      "+2 charge, zero, six",
+      "Zero charge, zero, four",
+      "−2 charge, +2, four"
+    ],
+    "answer": "Zero charge, +2, six",
+    "explanation": "The iron remains +2 because the stipulated process is substitution rather than redox. Four water ligands are neutral and two chlorides contribute −2, giving zero complex charge. Six donor atoms remain coordinated, so coordination number is still six.",
+    "id": "neet-challenge-b9-chemistry-12",
+    "category": "Chemistry 12: Coordination Compounds",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-12",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 13,
+    "question": "Two miscible, nonreacting liquids have close boiling points and form no azeotrope. Which separation principle best explains why a fractionating column can outperform one simple vaporization–condensation step?",
+    "options": [
+      "The column converts both liquids into solids",
+      "Repeated vapour–liquid equilibration enriches the more volatile component in rising vapour",
+      "The less volatile component must dominate every vapour phase",
+      "The column changes the liquids’ molecular identities"
+    ],
+    "answer": "Repeated vapour–liquid equilibration enriches the more volatile component in rising vapour",
+    "explanation": "A fractionating column provides repeated vaporization–condensation equilibrations, progressively enriching the more volatile component in the rising vapour. Close boiling points make one equilibrium step less effective. The assumptions exclude reaction and the special limit of azeotropic behaviour.",
+    "id": "neet-challenge-b9-chemistry-13",
+    "category": "Chemistry 13: Purification and Characterisation of Organic Compounds",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-13",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 14,
+    "question": "The two C–O bonds of an acetate ion are experimentally equivalent in the usual resonance description. Which interpretation and net ionic charge are correct?",
+    "options": [
+      "The ion rapidly alternates between two isolated molecules; zero charge",
+      "One bond is permanently single and the other double; −1 charge",
+      "A resonance hybrid has equivalent C–O bonding; −1 charge",
+      "Both C–O bonds are ordinary triple bonds; −2 charge"
+    ],
+    "answer": "A resonance hybrid has equivalent C–O bonding; −1 charge",
+    "explanation": "The resonance contributors distribute bonding and negative charge over the two oxygens; the actual ion is a resonance hybrid with equivalent C–O bonds. Contributors are not separate molecules oscillating in time. Their shared net charge remains −1, not the sum of charges from multiple drawings.",
+    "id": "neet-challenge-b9-chemistry-14",
+    "category": "Chemistry 14: Some Basic Principles of Organic Chemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-14",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 15,
+    "question": "Propene reacts with HBr in an ideal peroxide-initiated addition model. Which main regioisomer and mechanism are expected compared with ordinary peroxide-free HBr addition?",
+    "options": [
+      "2-Bromopropane by a free-radical chain",
+      "1-Bromopropane by ordinary electrophilic addition",
+      "2-Bromopropane by nucleophilic substitution",
+      "1-Bromopropane by a free-radical chain"
+    ],
+    "answer": "1-Bromopropane by a free-radical chain",
+    "explanation": "The peroxide effect for HBr follows a radical chain that favours formation of the more stable intermediate radical and gives the anti-Markovnikov product, 1-bromopropane. Ordinary peroxide-free electrophilic addition instead favours 2-bromopropane. The peroxide rule is not universal for every hydrogen halide.",
+    "id": "neet-challenge-b9-chemistry-15",
+    "category": "Chemistry 15: Hydrocarbons",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-15",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 16,
+    "question": "Under conditions favouring simple SN1 ionization, benzyl chloride reacts much more readily than chlorobenzene. Which explanation best distinguishes their potential intermediates?",
+    "options": [
+      "The benzyl cation is resonance-stabilized, whereas ordinary phenyl-cation formation is unfavourable",
+      "Chlorobenzene always gives the more stable carbocation",
+      "Both substrates form the same carbocation",
+      "Benzyl chloride cannot ionize because the benzene ring is present"
+    ],
+    "answer": "The benzyl cation is resonance-stabilized, whereas ordinary phenyl-cation formation is unfavourable",
+    "explanation": "Ionization of benzyl chloride gives a cation whose positive charge can be delocalized into the aromatic ring. Chlorobenzene does not generate that same benzylic cation; its aryl C–Cl bond and unfavourable ordinary phenyl-cation pathway make simple SN1 much less accessible.",
+    "id": "neet-challenge-b9-chemistry-16",
+    "category": "Chemistry 16: Organic Compounds Containing Halogens",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-16",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 17,
+    "question": "Benzaldehyde reacts with ethylmagnesium bromide, followed by aqueous work-up. Under the ordinary carbonyl-addition model, what alcohol class and product carbon count are expected?",
+    "options": [
+      "Primary alcohol with nine carbons",
+      "Secondary alcohol with nine carbons",
+      "Tertiary alcohol with seven carbons",
+      "Secondary alcohol with seven carbons"
+    ],
+    "answer": "Secondary alcohol with nine carbons",
+    "explanation": "Benzaldehyde has seven carbons and the ethyl group adds two, giving a nine-carbon product, C₆H₅CH(OH)CH₂CH₃. The OH-bearing carbon is attached to a phenyl and an ethyl carbon group and retains one H, so the alcohol is secondary.",
+    "id": "neet-challenge-b9-chemistry-17",
+    "category": "Chemistry 17: Organic Compounds Containing Oxygen",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-17",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 18,
+    "question": "In the ideal carbylamine classification test, consider ethylamine, diethylamine and aniline. Which pair is expected to give the characteristic positive reaction?",
+    "options": [
+      "Ethylamine and diethylamine",
+      "Diethylamine and aniline",
+      "Ethylamine and aniline",
+      "All three equally"
+    ],
+    "answer": "Ethylamine and aniline",
+    "explanation": "The ordinary test is characteristic of primary amines, both aliphatic and aromatic. Ethylamine and aniline each have a primary amino group, whereas diethylamine is secondary. Aromaticity alone does not make aniline negative in this classification.",
+    "id": "neet-challenge-b9-chemistry-18",
+    "category": "Chemistry 18: Organic Compounds Containing Nitrogen",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-18",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 19,
+    "question": "A protein loses biological activity after a treatment, but analysis shows its amino-acid sequence and peptide backbone remain unchanged. Which interpretation is consistent with these observations?",
+    "options": [
+      "Complete peptide hydrolysis must have occurred",
+      "All amino acids must have been converted into nucleotides",
+      "The primary sequence necessarily doubled in length",
+      "Higher-order folding can be disrupted while primary structure is retained"
+    ],
+    "answer": "Higher-order folding can be disrupted while primary structure is retained",
+    "explanation": "Protein activity can depend on secondary, tertiary or quaternary organization, so loss of appropriate folding can destroy function without cleaving the backbone. The observations are consistent with denaturation; they do not establish complete hydrolysis into free amino acids.",
+    "id": "neet-challenge-b9-chemistry-19",
+    "category": "Chemistry 19: Biomolecules",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-19",
+    "challenge": true
+  },
+  {
+    "subject": "Chemistry",
+    "unit": 20,
+    "question": "A 25.0 mL oxalate aliquot consumes 10.20 mL of 0.0200 mol/L permanganate in acid, with a 0.20 mL blank. Use 2 MnO₄⁻ per 5 C₂O₄²⁻ and two CO₂ formed per oxalate. What are oxalate concentration and CO₂ amount from the aliquot?",
+    "options": [
+      "0.0200 mol/L and 0.00100 mol",
+      "0.00800 mol/L and 0.000400 mol",
+      "0.0204 mol/L and 0.00102 mol",
+      "0.0400 mol/L and 0.00100 mol"
+    ],
+    "answer": "0.0200 mol/L and 0.00100 mol",
+    "explanation": "Corrected titre is 10.00 mL, giving 0.000200 mol permanganate. Oxalate amount is (5/2)×0.000200 = 0.000500 mol; divided by 0.0250 L this gives 0.0200 mol/L. Two CO₂ per oxalate give 0.00100 mol gas.",
+    "id": "neet-challenge-b9-chemistry-20",
+    "category": "Chemistry 20: Principles Related to Practical Chemistry",
+    "lessonHref": "/neet/classes/physics-chemistry/chemistry#unit-20",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 6,
+    "question": "One microspore mother cell has 2n = 16 and undergoes normal meiosis. All resulting microspores develop into pollen, and each generative cell divides once to form two male gametes. What are microspore count, total male-gamete count and chromosomes per male gamete?",
+    "options": [
+      "Four, four and eight",
+      "Four, eight and eight",
+      "Two, four and sixteen",
+      "Four, eight and sixteen"
+    ],
+    "answer": "Four, eight and eight",
+    "explanation": "Meiosis produces four haploid microspores, each with n = 8 chromosomes. Each pollen lineage ultimately supplies two male gametes, giving eight gametes in total. The generative-cell mitosis does not restore diploidy; each gamete still has eight chromosomes.",
+    "id": "neet-challenge-b9-biology-6",
+    "category": "Biology 6: Reproduction",
+    "lessonHref": "/neet/classes/reproduction",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 7,
+    "question": "For ABO inheritance, parents have genotypes IᴬIᴮ and Iᴬi. Assuming ordinary Mendelian segregation, what are probability of an O-phenotype child and probability of B phenotype conditional on the child not having AB phenotype?",
+    "options": [
+      "Zero and 1/4",
+      "1/4 and 1/3",
+      "Zero and 1/3",
+      "1/4 and 1/2"
+    ],
+    "answer": "Zero and 1/3",
+    "explanation": "The four equally likely genotypes are IᴬIᴬ, Iᴬi, IᴬIᴮ and Iᴮi. They give A, A, AB and B, with no ii child. Excluding AB leaves three equally weighted cases, one of which is B, so the conditional probability is 1/3.",
+    "id": "neet-challenge-b9-biology-7",
+    "category": "Biology 7: Genetics and Evolution",
+    "lessonHref": "/neet/classes/genetics-evolution",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 8,
+    "question": "A legume root nodule supports nitrogen fixation while its cells also need aerobic respiration. Which role of leghemoglobin best reconciles the oxygen-sensitive nitrogenase system with the respiratory ATP requirement?",
+    "options": [
+      "It replaces nitrogenase as the nitrogen-fixing enzyme",
+      "It makes nitrogenase require a high free-O₂ concentration",
+      "It permanently prevents every oxygen molecule from reaching respiring cells",
+      "It helps maintain low free oxygen while facilitating controlled oxygen supply for respiration"
+    ],
+    "answer": "It helps maintain low free oxygen while facilitating controlled oxygen supply for respiration",
+    "explanation": "Nitrogenase is sensitive to oxygen, yet energy-demanding fixation needs ATP that respiration can supply. Leghemoglobin binds oxygen and helps buffer its free concentration while supporting oxygen delivery. Protection of nitrogenase does not mean all respiration must cease.",
+    "id": "neet-challenge-b9-biology-8",
+    "category": "Biology 8: Biology and Human Welfare",
+    "lessonHref": "/neet/classes/human-welfare",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 9,
+    "question": "A cloning plasmid carries separate ampicillin- and tetracycline-resistance markers. An insert disrupts only the tetracycline-resistance gene. In the ideal marker model, which resistance pattern identifies the recombinant plasmid-bearing cells?",
+    "options": [
+      "Ampicillin resistant and tetracycline sensitive",
+      "Sensitive to both antibiotics",
+      "Resistant to both antibiotics",
+      "Ampicillin sensitive and tetracycline resistant"
+    ],
+    "answer": "Ampicillin resistant and tetracycline sensitive",
+    "explanation": "Insertional inactivation removes the functional tetracycline-resistance marker while leaving ampicillin resistance intact. Thus the predicted recombinant pattern is Ampᴿ Tetˢ; an intact nonrecombinant plasmid would retain both markers. Marker phenotype alone does not establish expression of the inserted gene.",
+    "id": "neet-challenge-b9-biology-9",
+    "category": "Biology 9: Biotechnology and Its Applications",
+    "lessonHref": "/neet/classes/biotechnology",
+    "challenge": true
+  },
+  {
+    "subject": "Biology",
+    "unit": 10,
+    "question": "Two samples each contain 100 individuals from three species. Sample A has counts 40, 40 and 20; sample B has 90, 5 and 5. Which comparison of species richness and evenness is supported?",
+    "options": [
+      "A has greater richness and lower evenness",
+      "Richness is equal; A has greater evenness",
+      "B has greater richness and greater evenness",
+      "Richness and evenness are identical"
+    ],
+    "answer": "Richness is equal; A has greater evenness",
+    "explanation": "Both samples contain three species, so observed richness is the same. A distributes individuals more evenly among those species, whereas B is dominated by one. Equal richness therefore does not imply identical community diversity structure or evenness.",
+    "id": "neet-challenge-b9-biology-10",
+    "category": "Biology 10: Ecology and Environment",
+    "lessonHref": "/neet/classes/ecology",
+    "challenge": true
+  }
+]
