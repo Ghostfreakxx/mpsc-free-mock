@@ -1,0 +1,418 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.140
+Welcome to a problem solving supplement for Genetics and Evolution.
+
+00:00:05.020 --> 00:00:09.980
+We will use pedigrees, linkage data and sequence evidence, then make each
+
+00:00:09.980 --> 00:00:10.800
+assumption visible.
+
+00:00:11.700 --> 00:00:16.660
+A pedigree is a record of family relationships and a trait, not a diagnosis by
+
+00:00:16.660 --> 00:00:16.960
+itself.
+
+00:00:17.960 --> 00:00:23.340
+Before calculating, state a model: for example, a fully penetrant autosomal
+
+00:00:23.340 --> 00:00:25.780
+recessive allele with a rare disease allele.
+
+00:00:26.560 --> 00:00:31.740
+In that model, two unaffected carrier parents, A a and A a, have an affected
+
+00:00:31.740 --> 00:00:35.600
+child a a with probability one quarter in each pregnancy.
+
+00:00:36.580 --> 00:00:41.040
+The chance is the same for every pregnancy; earlier children do not change it.
+
+00:00:41.680 --> 00:00:45.560
+An affected child with unaffected parents can fit this model, but other
+
+00:00:45.560 --> 00:00:47.880
+explanations may also fit incomplete data.
+
+00:00:48.940 --> 00:00:52.780
+Track the evidence without claiming that one small pedigree proves the mode of
+
+00:00:52.780 --> 00:00:53.060
+inheritance.
+
+00:00:53.060 --> 00:00:56.808
+Ask which observations distinguish the models, and which do not.
+
+00:00:56.808 --> 00:00:59.608
+Here is a common conditional probability trap.
+
+00:01:00.208 --> 00:01:06.019
+For two carrier parents, the four equally likely child outcomes are A A, A a,
+
+00:01:06.019 --> 00:01:06.095
+A
+
+00:01:06.095 --> 00:01:07.568
+a and a a.
+
+00:01:07.568 --> 00:01:11.688
+If a sibling is known to be unaffected, remove the affected a a outcome from
+
+00:01:11.688 --> 00:01:12.248
+the denominator.
+
+00:01:13.128 --> 00:01:16.608
+Two of the remaining three outcomes are carriers, so the conditional carrier
+
+00:01:16.608 --> 00:01:19.188
+probability is two thirds, not one half.
+
+00:01:20.148 --> 00:01:23.468
+Suppose that sibling has a child with an unrelated partner whose carrier
+
+00:01:23.468 --> 00:01:25.688
+probability is specified as one in fifty.
+
+00:01:26.528 --> 00:01:30.648
+Under the stated assumptions, the affected child probability is two thirds
+
+00:01:30.648 --> 00:01:35.315
+times one fiftieth times one quarter, which simplifies to one in three
+
+00:01:35.315 --> 00:01:35.848
+hundred.
+
+00:01:35.848 --> 00:01:40.028
+The partner risk is a question input; do not invent a population frequency.
+
+00:01:40.808 --> 00:01:44.814
+In every pedigree problem, write the conditioning information first, then
+
+00:01:44.814 --> 00:01:45.088
+count
+
+00:01:45.088 --> 00:01:49.048
+compatible genotypes, then multiply only independent transmission events.
+
+00:01:49.272 --> 00:01:54.332
+For an X linked recessive model, write the two sex chromosomes for each parent
+
+00:01:54.332 --> 00:01:55.052
+and child.
+
+00:01:55.912 --> 00:01:59.952
+A son receives his Y chromosome from his father and his single X chromosome
+
+00:01:59.952 --> 00:02:00.692
+from his mother.
+
+00:02:01.452 --> 00:02:05.612
+If the mother is a carrier, each son has a one half probability of receiving
+
+00:02:05.612 --> 00:02:06.612
+the variant X.
+
+00:02:07.312 --> 00:02:11.972
+An unaffected father does not transmit his X chromosome to a son, so father to
+
+00:02:11.972 --> 00:02:14.352
+son transmission is not expected under this model.
+
+00:02:14.992 --> 00:02:19.872
+A daughter receives her father's X chromosome; with an unaffected father, one
+
+00:02:19.872 --> 00:02:23.512
+variant X from a carrier mother usually makes her a carrier rather than
+
+00:02:23.512 --> 00:02:23.792
+affected.
+
+00:02:24.472 --> 00:02:28.672
+These statements rely on the specified simple model, ordinary chromosome
+
+00:02:28.672 --> 00:02:30.612
+transmission and full penetrance.
+
+00:02:31.412 --> 00:02:35.492
+A pedigree can be small, and a rare trait may be absent by chance in one
+
+00:02:35.492 --> 00:02:35.832
+branch.
+
+00:02:36.692 --> 00:02:40.672
+Do not label a trait X linked only because more affected people happen to be
+
+00:02:40.672 --> 00:02:40.852
+male.
+
+00:02:40.852 --> 00:02:43.232
+Look for the complete transmission pattern.
+
+00:02:43.488 --> 00:02:48.088
+In a testcross, a double heterozygote is crossed with a homozygous recessive
+
+00:02:48.088 --> 00:02:48.368
+tester.
+
+00:02:49.148 --> 00:02:53.548
+If the tester contributes only recessive alleles, offspring classes reveal the
+
+00:02:53.548 --> 00:02:55.068
+gametes made by the heterozygote.
+
+00:02:55.968 --> 00:02:59.828
+Suppose thirty six of two hundred forty offspring are recombinant across the
+
+00:02:59.828 --> 00:03:00.328
+two loci.
+
+00:03:00.928 --> 00:03:05.455
+The estimated recombination frequency is thirty six divided by two hundred
+
+00:03:05.455 --> 00:03:07.008
+forty, or fifteen percent.
+
+00:03:07.008 --> 00:03:11.208
+For a short interval, this is conventionally reported as about fifteen map
+
+00:03:11.208 --> 00:03:13.108
+units, or fifteen centimorgans.
+
+00:03:13.808 --> 00:03:18.088
+It is an estimate from sampled offspring, so a larger sample generally gives a
+
+00:03:18.088 --> 00:03:19.108
+more stable estimate.
+
+00:03:20.408 --> 00:03:24.028
+Recombination frequency cannot exceed fifty percent in the usual two locus
+
+00:03:24.028 --> 00:03:28.066
+scoring, because independent assortment also produces half recombinant
+
+00:03:28.066 --> 00:03:28.528
+classes.
+
+00:03:29.628 --> 00:03:33.468
+Multiple crossovers can restore parental allele combinations and make long
+
+00:03:33.468 --> 00:03:34.928
+physical distances appear smaller.
+
+00:03:35.728 --> 00:03:39.605
+Therefore, do not interpret a measured percentage as an exact physical
+
+00:03:39.605 --> 00:03:40.048
+distance
+
+00:03:40.048 --> 00:03:41.088
+across every interval.
+
+00:03:41.352 --> 00:03:45.732
+The same genotype letters can hide different chromosome arrangements.
+
+00:03:46.612 --> 00:03:52.232
+In coupling phase, write A B slash a b: the dominant alleles are together on
+
+00:03:52.232 --> 00:03:52.812
+one homolog.
+
+00:03:53.312 --> 00:03:58.892
+In repulsion phase, write A b slash a B: each homolog carries one dominant and
+
+00:03:58.892 --> 00:04:00.452
+one recessive allele.
+
+00:04:00.812 --> 00:04:05.192
+A testcross identifies which offspring classes are common parental types and
+
+00:04:05.192 --> 00:04:09.492
+which are recombinant types, but phase must be recorded to interpret them.
+
+00:04:09.972 --> 00:04:14.892
+If coupling phase recombination frequency is twenty percent and reciprocal
+
+00:04:14.892 --> 00:04:19.510
+classes are equally frequent, the total parental fraction is eighty percent,
+
+00:04:19.510 --> 00:04:19.632
+so
+
+00:04:19.632 --> 00:04:22.332
+each parental gamete class is forty percent.
+
+00:04:22.332 --> 00:04:26.872
+The total recombinant fraction is twenty percent, so each recombinant class is
+
+00:04:26.872 --> 00:04:28.632
+ten percent.
+
+00:04:28.632 --> 00:04:31.772
+Those paired expectations rely on the simple symmetric model.
+
+00:04:32.592 --> 00:04:36.512
+Do not call A B recombinant merely because it contains two capital letters.
+
+00:04:36.512 --> 00:04:39.812
+It is parental in coupling and recombinant in repulsion.
+
+00:04:40.104 --> 00:04:44.984
+Three point testcross data can reveal gene order and expose crossovers missed
+
+00:04:44.984 --> 00:04:46.264
+by a two point estimate.
+
+00:04:47.264 --> 00:04:48.384
+Consider one thousand offspring.
+
+00:04:49.144 --> 00:04:54.891
+The two largest classes are A B C with four hundred ten and a b c with four
+
+00:04:54.891 --> 00:04:55.904
+hundred five.
+
+00:04:55.904 --> 00:04:57.404
+Treat these as the parental classes.
+
+00:04:58.004 --> 00:05:03.084
+The two smallest are A b C and a B c, one each, so they are the double
+
+00:05:03.084 --> 00:05:03.624
+crossovers.
+
+00:05:04.644 --> 00:05:08.124
+Compare A B C with A b C: only the B allele changes.
+
+00:05:08.784 --> 00:05:12.284
+Compare a b c with a B c: again only B changes.
+
+00:05:13.004 --> 00:05:16.844
+Therefore B is the middle locus, and the order is A, B, C.
+
+00:05:16.844 --> 00:05:21.164
+If the single crossover classes between A and B total one hundred forty five,
+
+00:05:21.164 --> 00:05:24.824
+that interval count becomes one hundred forty seven after adding both double
+
+00:05:24.824 --> 00:05:27.824
+crossovers, or fourteen point seven percent.
+
+00:05:27.824 --> 00:05:32.266
+If the B to C single crossover classes total thirty eight, include the same
+
+00:05:32.266 --> 00:05:32.444
+two
+
+00:05:32.444 --> 00:05:34.304
+double crossovers to get four percent.
+
+00:05:34.304 --> 00:05:37.304
+Keep the intervals separate before summing map length.
+
+00:05:37.704 --> 00:05:41.724
+Sequence questions depend on strand labels and direction.
+
+00:05:42.604 --> 00:05:48.416
+If a coding DNA strand is written five prime A T G, G A A, T T
+
+00:05:48.416 --> 00:05:54.124
+T, T G A three prime, the messenger RNA has the same sequence with U
+
+00:05:54.124 --> 00:05:59.859
+in place of T: A U G, G A A, U U U,
+
+00:05:59.859 --> 00:06:01.344
+U G A.
+
+00:06:01.344 --> 00:06:04.844
+Translation reads the RNA in groups of three from its five prime end.
+
+00:06:05.804 --> 00:06:10.824
+These codons specify methionine, glutamate, phenylalanine and then a stop
+
+00:06:10.824 --> 00:06:11.124
+signal.
+
+00:06:12.284 --> 00:06:16.384
+The template strand is complementary and antiparallel, so do not copy it
+
+00:06:16.384 --> 00:06:17.944
+directly as the coding sequence.
+
+00:06:19.144 --> 00:06:23.461
+A substitution may change one codon, create a stop, or be synonymous,
+
+00:06:23.461 --> 00:06:24.024
+depending
+
+00:06:24.024 --> 00:06:24.644
+on the code.
+
+00:06:26.184 --> 00:06:29.884
+Inserting or deleting one nucleotide usually shifts the reading frame for
+
+00:06:29.884 --> 00:06:30.764
+downstream codons.
+
+00:06:31.644 --> 00:06:36.264
+Inserting or deleting three nucleotides preserves the frame but can add or
+
+00:06:36.264 --> 00:06:37.584
+remove an amino acid.
+
+00:06:38.204 --> 00:06:41.344
+Always mark the strand, direction and frame before translating.
+
+00:06:41.760 --> 00:06:46.100
+Finish by separating a molecular regulation model from a population frequency
+
+00:06:46.100 --> 00:06:46.420
+model.
+
+00:06:47.140 --> 00:06:51.920
+In the lac operon example, lactose derived allolactose binds the repressor and
+
+00:06:51.920 --> 00:06:53.600
+reduces its attachment to the operator.
+
+00:06:54.460 --> 00:06:58.580
+This permits transcription when the other required conditions are present; it
+
+00:06:58.580 --> 00:07:01.620
+does not guarantee the same expression in every cell context.
+
+00:07:02.540 --> 00:07:06.640
+For a separate Hardy–Weinberg calculation, suppose a fully recessive phenotype
+
+00:07:06.640 --> 00:07:10.200
+occurs at frequency nine percent in a population at equilibrium.
+
+00:07:10.710 --> 00:07:15.720
+Under that model, q squared equals zero point zero nine, so q is zero point
+
+00:07:15.720 --> 00:07:17.980
+three and p is zero point seven.
+
+00:07:18.620 --> 00:07:23.540
+The expected heterozygote frequency is two p q, or zero point four two.
+
+00:07:23.540 --> 00:07:27.480
+This prediction assumes random mating at the locus and no relevant selection,
+
+00:07:28.420 --> 00:07:31.300
+migration, mutation or drift that disrupts the model.
+
+00:07:31.740 --> 00:07:35.700
+A measured difference may reflect sampling, model violations or genotyping
+
+00:07:35.700 --> 00:07:36.000
+error.
+
+00:07:36.240 --> 00:07:39.760
+It does not by itself identify which evolutionary force acted.
+
+00:07:40.600 --> 00:07:42.420
+State assumptions before interpreting a frequency.

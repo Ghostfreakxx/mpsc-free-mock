@@ -1,0 +1,873 @@
+{
+  "duration": 463.1760000000104,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 56.808000000001265
+    },
+    {
+      "start": 56.808000000001265,
+      "end": 109.27200000000236
+    },
+    {
+      "start": 109.27200000000236,
+      "end": 163.48800000000352
+    },
+    {
+      "start": 163.48800000000352,
+      "end": 221.35200000000484
+    },
+    {
+      "start": 221.35200000000484,
+      "end": 280.1040000000062
+    },
+    {
+      "start": 280.1040000000062,
+      "end": 337.70400000000745
+    },
+    {
+      "start": 337.70400000000745,
+      "end": 401.760000000009
+    },
+    {
+      "start": 401.760000000009,
+      "end": 463.1760000000104
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 4.139999866485596,
+      "text": "Welcome to a problem solving supplement for Genetics and Evolution.",
+      "chapter": 0
+    },
+    {
+      "start": 5.019999980926514,
+      "end": 9.979999542236328,
+      "text": "We will use pedigrees, linkage data and sequence evidence, then make each",
+      "chapter": 0
+    },
+    {
+      "start": 9.979999542236328,
+      "end": 10.800000190734863,
+      "text": "assumption visible.",
+      "chapter": 0
+    },
+    {
+      "start": 11.699999809265137,
+      "end": 16.65999984741211,
+      "text": "A pedigree is a record of family relationships and a trait, not a diagnosis by",
+      "chapter": 0
+    },
+    {
+      "start": 16.65999984741211,
+      "end": 16.959999084472656,
+      "text": "itself.",
+      "chapter": 0
+    },
+    {
+      "start": 17.959999084472656,
+      "end": 23.34000015258789,
+      "text": "Before calculating, state a model: for example, a fully penetrant autosomal",
+      "chapter": 0
+    },
+    {
+      "start": 23.34000015258789,
+      "end": 25.780000686645508,
+      "text": "recessive allele with a rare disease allele.",
+      "chapter": 0
+    },
+    {
+      "start": 26.559999465942383,
+      "end": 31.739999771118164,
+      "text": "In that model, two unaffected carrier parents, A a and A a, have an affected",
+      "chapter": 0
+    },
+    {
+      "start": 31.739999771118164,
+      "end": 35.599998474121094,
+      "text": "child a a with probability one quarter in each pregnancy.",
+      "chapter": 0
+    },
+    {
+      "start": 36.58000183105469,
+      "end": 41.040000915527344,
+      "text": "The chance is the same for every pregnancy; earlier children do not change it.",
+      "chapter": 0
+    },
+    {
+      "start": 41.68000030517578,
+      "end": 45.560001373291016,
+      "text": "An affected child with unaffected parents can fit this model, but other",
+      "chapter": 0
+    },
+    {
+      "start": 45.560001373291016,
+      "end": 47.880001068115234,
+      "text": "explanations may also fit incomplete data.",
+      "chapter": 0
+    },
+    {
+      "start": 48.939998626708984,
+      "end": 52.779998779296875,
+      "text": "Track the evidence without claiming that one small pedigree proves the mode of",
+      "chapter": 0
+    },
+    {
+      "start": 52.779998779296875,
+      "end": 53.060001373291016,
+      "text": "inheritance.",
+      "chapter": 0
+    },
+    {
+      "start": 53.060001373291016,
+      "end": 56.808000000001265,
+      "text": "Ask which observations distinguish the models, and which do not.",
+      "chapter": 0
+    },
+    {
+      "start": 56.808000000001265,
+      "end": 59.60799995231755,
+      "text": "Here is a common conditional probability trap.",
+      "chapter": 1
+    },
+    {
+      "start": 60.208000095368696,
+      "end": 66.0191963909928,
+      "text": "For two carrier parents, the four equally likely child outcomes are A A, A a,",
+      "chapter": 1
+    },
+    {
+      "start": 66.0191963909928,
+      "end": 66.09466647275416,
+      "text": "A",
+      "chapter": 1
+    },
+    {
+      "start": 66.09466647275416,
+      "end": 67.56800022888311,
+      "text": "a and a a.",
+      "chapter": 1
+    },
+    {
+      "start": 67.56800022888311,
+      "end": 71.68800011444219,
+      "text": "If a sibling is known to be unaffected, remove the affected a a outcome from",
+      "chapter": 1
+    },
+    {
+      "start": 71.68800011444219,
+      "end": 72.24799958038457,
+      "text": "the denominator.",
+      "chapter": 1
+    },
+    {
+      "start": 73.12799969482549,
+      "end": 76.60799923706182,
+      "text": "Two of the remaining three outcomes are carriers, so the conditional carrier",
+      "chapter": 1
+    },
+    {
+      "start": 76.60799923706182,
+      "end": 79.18799916076787,
+      "text": "probability is two thirds, not one half.",
+      "chapter": 1
+    },
+    {
+      "start": 80.14800015258916,
+      "end": 83.46799984741338,
+      "text": "Suppose that sibling has a child with an unrelated partner whose carrier",
+      "chapter": 1
+    },
+    {
+      "start": 83.46799984741338,
+      "end": 85.68799916076787,
+      "text": "probability is specified as one in fifty.",
+      "chapter": 1
+    },
+    {
+      "start": 86.52799931335576,
+      "end": 90.64800015258916,
+      "text": "Under the stated assumptions, the affected child probability is two thirds",
+      "chapter": 1
+    },
+    {
+      "start": 90.64800015258916,
+      "end": 95.31466750394509,
+      "text": "times one fiftieth times one quarter, which simplifies to one in three",
+      "chapter": 1
+    },
+    {
+      "start": 95.31466750394509,
+      "end": 95.84800091552862,
+      "text": "hundred.",
+      "chapter": 1
+    },
+    {
+      "start": 95.84800091552862,
+      "end": 100.0280012207044,
+      "text": "The partner risk is a question input; do not invent a population frequency.",
+      "chapter": 1
+    },
+    {
+      "start": 100.80800000000127,
+      "end": 104.81363988318937,
+      "text": "In every pedigree problem, write the conditioning information first, then",
+      "chapter": 1
+    },
+    {
+      "start": 104.81363988318937,
+      "end": 105.08799877929815,
+      "text": "count",
+      "chapter": 1
+    },
+    {
+      "start": 105.08799877929815,
+      "end": 109.04800167846807,
+      "text": "compatible genotypes, then multiply only independent transmission events.",
+      "chapter": 1
+    },
+    {
+      "start": 109.27200000000236,
+      "end": 114.3319999427819,
+      "text": "For an X linked recessive model, write the two sex chromosomes for each parent",
+      "chapter": 2
+    },
+    {
+      "start": 114.3319999427819,
+      "end": 115.05200020981071,
+      "text": "and child.",
+      "chapter": 2
+    },
+    {
+      "start": 115.91199986648796,
+      "end": 119.95200030517815,
+      "text": "A son receives his Y chromosome from his father and his single X chromosome",
+      "chapter": 2
+    },
+    {
+      "start": 119.95200030517815,
+      "end": 120.69200007629631,
+      "text": "from his mother.",
+      "chapter": 2
+    },
+    {
+      "start": 121.45200030517815,
+      "end": 125.61200015259026,
+      "text": "If the mother is a carrier, each son has a one half probability of receiving",
+      "chapter": 2
+    },
+    {
+      "start": 125.61200015259026,
+      "end": 126.61200015259026,
+      "text": "the variant X.",
+      "chapter": 2
+    },
+    {
+      "start": 127.31200091552971,
+      "end": 131.97200076294183,
+      "text": "An unaffected father does not transmit his X chromosome to a son, so father to",
+      "chapter": 2
+    },
+    {
+      "start": 131.97200076294183,
+      "end": 134.35199992370843,
+      "text": "son transmission is not expected under this model.",
+      "chapter": 2
+    },
+    {
+      "start": 134.99199931335687,
+      "end": 139.8720003814721,
+      "text": "A daughter receives her father's X chromosome; with an unaffected father, one",
+      "chapter": 2
+    },
+    {
+      "start": 139.8720003814721,
+      "end": 143.51200167846918,
+      "text": "variant X from a carrier mother usually makes her a carrier rather than",
+      "chapter": 2
+    },
+    {
+      "start": 143.51200167846918,
+      "end": 143.79200045776605,
+      "text": "affected.",
+      "chapter": 2
+    },
+    {
+      "start": 144.47200076294183,
+      "end": 148.67200152588129,
+      "text": "These statements rely on the specified simple model, ordinary chromosome",
+      "chapter": 2
+    },
+    {
+      "start": 148.67200152588129,
+      "end": 150.61200015259027,
+      "text": "transmission and full penetrance.",
+      "chapter": 2
+    },
+    {
+      "start": 151.41199938965082,
+      "end": 155.4920012207055,
+      "text": "A pedigree can be small, and a rare trait may be absent by chance in one",
+      "chapter": 2
+    },
+    {
+      "start": 155.4920012207055,
+      "end": 155.8320013732934,
+      "text": "branch.",
+      "chapter": 2
+    },
+    {
+      "start": 156.6919981689477,
+      "end": 160.67200152588129,
+      "text": "Do not label a trait X linked only because more affected people happen to be",
+      "chapter": 2
+    },
+    {
+      "start": 160.67200152588129,
+      "end": 160.85200183105707,
+      "text": "male.",
+      "chapter": 2
+    },
+    {
+      "start": 160.85200183105707,
+      "end": 163.23199908447504,
+      "text": "Look for the complete transmission pattern.",
+      "chapter": 2
+    },
+    {
+      "start": 163.48800000000352,
+      "end": 168.0879999046361,
+      "text": "In a testcross, a double heterozygote is crossed with a homozygous recessive",
+      "chapter": 3
+    },
+    {
+      "start": 168.0879999046361,
+      "end": 168.36800011444444,
+      "text": "tester.",
+      "chapter": 3
+    },
+    {
+      "start": 169.14799984741563,
+      "end": 173.54800041962022,
+      "text": "If the tester contributes only recessive alleles, offspring classes reveal the",
+      "chapter": 3
+    },
+    {
+      "start": 173.54800041962022,
+      "end": 175.06799992370958,
+      "text": "gametes made by the heterozygote.",
+      "chapter": 3
+    },
+    {
+      "start": 175.96799954223985,
+      "end": 179.82800015259141,
+      "text": "Suppose thirty six of two hundred forty offspring are recombinant across the",
+      "chapter": 3
+    },
+    {
+      "start": 179.82800015259141,
+      "end": 180.32800015259141,
+      "text": "two loci.",
+      "chapter": 3
+    },
+    {
+      "start": 180.92800053406114,
+      "end": 185.45466653951362,
+      "text": "The estimated recombination frequency is thirty six divided by two hundred",
+      "chapter": 3
+    },
+    {
+      "start": 185.45466653951362,
+      "end": 187.0080004577672,
+      "text": "forty, or fifteen percent.",
+      "chapter": 3
+    },
+    {
+      "start": 187.0080004577672,
+      "end": 191.20799931335802,
+      "text": "For a short interval, this is conventionally reported as about fifteen map",
+      "chapter": 3
+    },
+    {
+      "start": 191.20799931335802,
+      "end": 193.10800083923692,
+      "text": "units, or fifteen centimorgans.",
+      "chapter": 3
+    },
+    {
+      "start": 193.80799969482774,
+      "end": 198.08799847412462,
+      "text": "It is an estimate from sampled offspring, so a larger sample generally gives a",
+      "chapter": 3
+    },
+    {
+      "start": 198.08799847412462,
+      "end": 199.1079989318883,
+      "text": "more stable estimate.",
+      "chapter": 3
+    },
+    {
+      "start": 200.40799816894884,
+      "end": 204.02800091553087,
+      "text": "Recombination frequency cannot exceed fifty percent in the usual two locus",
+      "chapter": 3
+    },
+    {
+      "start": 204.02800091553087,
+      "end": 208.06646245399241,
+      "text": "scoring, because independent assortment also produces half recombinant",
+      "chapter": 3
+    },
+    {
+      "start": 208.06646245399241,
+      "end": 208.52800091553087,
+      "text": "classes.",
+      "chapter": 3
+    },
+    {
+      "start": 209.62799938965196,
+      "end": 213.46799954223985,
+      "text": "Multiple crossovers can restore parental allele combinations and make long",
+      "chapter": 3
+    },
+    {
+      "start": 213.46799954223985,
+      "end": 214.9279986267125,
+      "text": "physical distances appear smaller.",
+      "chapter": 3
+    },
+    {
+      "start": 215.72800167847032,
+      "end": 219.60492448151768,
+      "text": "Therefore, do not interpret a measured percentage as an exact physical",
+      "chapter": 3
+    },
+    {
+      "start": 219.60492448151768,
+      "end": 220.04800137329454,
+      "text": "distance",
+      "chapter": 3
+    },
+    {
+      "start": 220.04800137329454,
+      "end": 221.08799847412462,
+      "text": "across every interval.",
+      "chapter": 3
+    },
+    {
+      "start": 221.35200000000484,
+      "end": 225.73200011444575,
+      "text": "The same genotype letters can hide different chromosome arrangements.",
+      "chapter": 4
+    },
+    {
+      "start": 226.61200022888667,
+      "end": 232.23200011444575,
+      "text": "In coupling phase, write A B slash a b: the dominant alleles are together on",
+      "chapter": 4
+    },
+    {
+      "start": 232.23200011444575,
+      "end": 232.8120000381518,
+      "text": "one homolog.",
+      "chapter": 4
+    },
+    {
+      "start": 233.3120000381518,
+      "end": 238.89200091553218,
+      "text": "In repulsion phase, write A b slash a B: each homolog carries one dominant and",
+      "chapter": 4
+    },
+    {
+      "start": 238.89200091553218,
+      "end": 240.45200038147456,
+      "text": "one recessive allele.",
+      "chapter": 4
+    },
+    {
+      "start": 240.8119990844775,
+      "end": 245.19200015259273,
+      "text": "A testcross identifies which offspring classes are common parental types and",
+      "chapter": 4
+    },
+    {
+      "start": 245.19200015259273,
+      "end": 249.49199938965327,
+      "text": "which are recombinant types, but phase must be recorded to interpret them.",
+      "chapter": 4
+    },
+    {
+      "start": 249.97200083923823,
+      "end": 254.89200091553218,
+      "text": "If coupling phase recombination frequency is twenty percent and reciprocal",
+      "chapter": 4
+    },
+    {
+      "start": 254.89200091553218,
+      "end": 259.51046037253843,
+      "text": "classes are equally frequent, the total parental fraction is eighty percent,",
+      "chapter": 4
+    },
+    {
+      "start": 259.51046037253843,
+      "end": 259.63199877930174,
+      "text": "so",
+      "chapter": 4
+    },
+    {
+      "start": 259.63199877930174,
+      "end": 262.3319995422412,
+      "text": "each parental gamete class is forty percent.",
+      "chapter": 4
+    },
+    {
+      "start": 262.3319995422412,
+      "end": 266.87200045776854,
+      "text": "The total recombinant fraction is twenty percent, so each recombinant class is",
+      "chapter": 4
+    },
+    {
+      "start": 266.87200045776854,
+      "end": 268.63199877930174,
+      "text": "ten percent.",
+      "chapter": 4
+    },
+    {
+      "start": 268.63199877930174,
+      "end": 271.7719981689502,
+      "text": "Those paired expectations rely on the simple symmetric model.",
+      "chapter": 4
+    },
+    {
+      "start": 272.59200167847166,
+      "end": 276.511999847417,
+      "text": "Do not call A B recombinant merely because it contains two capital letters.",
+      "chapter": 4
+    },
+    {
+      "start": 276.511999847417,
+      "end": 279.8119990844775,
+      "text": "It is parental in coupling and recombinant in repulsion.",
+      "chapter": 4
+    },
+    {
+      "start": 280.1040000000062,
+      "end": 284.9840001144471,
+      "text": "Three point testcross data can reveal gene order and expose crossovers missed",
+      "chapter": 5
+    },
+    {
+      "start": 284.9840001144471,
+      "end": 286.2639998474183,
+      "text": "by a two point estimate.",
+      "chapter": 5
+    },
+    {
+      "start": 287.2639998474183,
+      "end": 288.3839997329774,
+      "text": "Consider one thousand offspring.",
+      "chapter": 5
+    },
+    {
+      "start": 289.1439999618592,
+      "end": 294.89066655223195,
+      "text": "The two largest classes are A B C with four hundred ten and a b c with four",
+      "chapter": 5
+    },
+    {
+      "start": 294.89066655223195,
+      "end": 295.90400019074104,
+      "text": "hundred five.",
+      "chapter": 5
+    },
+    {
+      "start": 295.90400019074104,
+      "end": 297.4039992370667,
+      "text": "Treat these as the parental classes.",
+      "chapter": 5
+    },
+    {
+      "start": 298.00399961853645,
+      "end": 303.0839995422425,
+      "text": "The two smallest are A b C and a B c, one each, so they are the double",
+      "chapter": 5
+    },
+    {
+      "start": 303.0839995422425,
+      "end": 303.62400045776985,
+      "text": "crossovers.",
+      "chapter": 5
+    },
+    {
+      "start": 304.6440009155335,
+      "end": 308.12400045776985,
+      "text": "Compare A B C with A b C: only the B allele changes.",
+      "chapter": 5
+    },
+    {
+      "start": 308.78400030518196,
+      "end": 312.28400030518196,
+      "text": "Compare a b c with a B c: again only B changes.",
+      "chapter": 5
+    },
+    {
+      "start": 313.0040015258851,
+      "end": 316.844001678473,
+      "text": "Therefore B is the middle locus, and the order is A, B, C.",
+      "chapter": 5
+    },
+    {
+      "start": 316.844001678473,
+      "end": 321.1640013732972,
+      "text": "If the single crossover classes between A and B total one hundred forty five,",
+      "chapter": 5
+    },
+    {
+      "start": 321.1640013732972,
+      "end": 324.8240012207093,
+      "text": "that interval count becomes one hundred forty seven after adding both double",
+      "chapter": 5
+    },
+    {
+      "start": 324.8240012207093,
+      "end": 327.8240012207093,
+      "text": "crossovers, or fourteen point seven percent.",
+      "chapter": 5
+    },
+    {
+      "start": 327.8240012207093,
+      "end": 332.2663078859831,
+      "text": "If the B to C single crossover classes total thirty eight, include the same",
+      "chapter": 5
+    },
+    {
+      "start": 332.2663078859831,
+      "end": 332.44400015259407,
+      "text": "two",
+      "chapter": 5
+    },
+    {
+      "start": 332.44400015259407,
+      "end": 334.30400076294563,
+      "text": "double crossovers to get four percent.",
+      "chapter": 5
+    },
+    {
+      "start": 334.30400076294563,
+      "end": 337.30400076294563,
+      "text": "Keep the intervals separate before summing map length.",
+      "chapter": 5
+    },
+    {
+      "start": 337.70400000000745,
+      "end": 341.72399998093397,
+      "text": "Sequence questions depend on strand labels and direction.",
+      "chapter": 6
+    },
+    {
+      "start": 342.6040000953749,
+      "end": 348.4160000839308,
+      "text": "If a coding DNA strand is written five prime A T G, G A A, T T",
+      "chapter": 6
+    },
+    {
+      "start": 348.4160000839308,
+      "end": 354.1240000763014,
+      "text": "T, T G A three prime, the messenger RNA has the same sequence with U",
+      "chapter": 6
+    },
+    {
+      "start": 354.1240000763014,
+      "end": 359.85899973297865,
+      "text": "in place of T: A U G, G A A, U U U,",
+      "chapter": 6
+    },
+    {
+      "start": 359.85899973297865,
+      "end": 361.3439993896559,
+      "text": "U G A.",
+      "chapter": 6
+    },
+    {
+      "start": 361.3439993896559,
+      "end": 364.8439993896559,
+      "text": "Translation reads the RNA in groups of three from its five prime end.",
+      "chapter": 6
+    },
+    {
+      "start": 365.8040003814772,
+      "end": 370.8239989318922,
+      "text": "These codons specify methionine, glutamate, phenylalanine and then a stop",
+      "chapter": 6
+    },
+    {
+      "start": 370.8239989318922,
+      "end": 371.12399816895277,
+      "text": "signal.",
+      "chapter": 6
+    },
+    {
+      "start": 372.28400183106214,
+      "end": 376.38400030518324,
+      "text": "The template strand is complementary and antiparallel, so do not copy it",
+      "chapter": 6
+    },
+    {
+      "start": 376.38400030518324,
+      "end": 377.94400167847425,
+      "text": "directly as the coding sequence.",
+      "chapter": 6
+    },
+    {
+      "start": 379.14399862671644,
+      "end": 383.4609226485107,
+      "text": "A substitution may change one codon, create a stop, or be synonymous,",
+      "chapter": 6
+    },
+    {
+      "start": 383.4609226485107,
+      "end": 384.0239996948317,
+      "text": "depending",
+      "chapter": 6
+    },
+    {
+      "start": 384.0239996948317,
+      "end": 384.64399862671644,
+      "text": "on the code.",
+      "chapter": 6
+    },
+    {
+      "start": 386.1839995422438,
+      "end": 389.88400030518324,
+      "text": "Inserting or deleting one nucleotide usually shifts the reading frame for",
+      "chapter": 6
+    },
+    {
+      "start": 389.88400030518324,
+      "end": 390.76400137329847,
+      "text": "downstream codons.",
+      "chapter": 6
+    },
+    {
+      "start": 391.64399862671644,
+      "end": 396.26400137329847,
+      "text": "Inserting or deleting three nucleotides preserves the frame but can add or",
+      "chapter": 6
+    },
+    {
+      "start": 396.26400137329847,
+      "end": 397.5840010681227,
+      "text": "remove an amino acid.",
+      "chapter": 6
+    },
+    {
+      "start": 398.20400000000745,
+      "end": 401.3439993896559,
+      "text": "Always mark the strand, direction and frame before translating.",
+      "chapter": 6
+    },
+    {
+      "start": 401.760000000009,
+      "end": 406.10000015259686,
+      "text": "Finish by separating a molecular regulation model from a population frequency",
+      "chapter": 7
+    },
+    {
+      "start": 406.10000015259686,
+      "end": 406.4199998474211,
+      "text": "model.",
+      "chapter": 7
+    },
+    {
+      "start": 407.1400001144499,
+      "end": 411.9199998474211,
+      "text": "In the lac operon example, lactose derived allolactose binds the repressor and",
+      "chapter": 7
+    },
+    {
+      "start": 411.9199998474211,
+      "end": 413.60000015259686,
+      "text": "reduces its attachment to the operator.",
+      "chapter": 7
+    },
+    {
+      "start": 414.4599998092741,
+      "end": 418.5799996948332,
+      "text": "This permits transcription when the other required conditions are present; it",
+      "chapter": 7
+    },
+    {
+      "start": 418.5799996948332,
+      "end": 421.62000061036053,
+      "text": "does not guarantee the same expression in every cell context.",
+      "chapter": 7
+    },
+    {
+      "start": 422.5400006866545,
+      "end": 426.6399991607756,
+      "text": "For a separate Hardy–Weinberg calculation, suppose a fully recessive phenotype",
+      "chapter": 7
+    },
+    {
+      "start": 426.6399991607756,
+      "end": 430.2000005340666,
+      "text": "occurs at frequency nine percent in a population at equilibrium.",
+      "chapter": 7
+    },
+    {
+      "start": 430.7100007629484,
+      "end": 435.7199990844816,
+      "text": "Under that model, q squared equals zero point zero nine, so q is zero point",
+      "chapter": 7
+    },
+    {
+      "start": 435.7199990844816,
+      "end": 437.9800012207121,
+      "text": "three and p is zero point seven.",
+      "chapter": 7
+    },
+    {
+      "start": 438.62000061036053,
+      "end": 443.53999877930585,
+      "text": "The expected heterozygote frequency is two p q, or zero point four two.",
+      "chapter": 7
+    },
+    {
+      "start": 443.53999877930585,
+      "end": 447.4800012207121,
+      "text": "This prediction assumes random mating at the locus and no relevant selection,",
+      "chapter": 7
+    },
+    {
+      "start": 448.4199998474211,
+      "end": 451.3000009155363,
+      "text": "migration, mutation or drift that disrupts the model.",
+      "chapter": 7
+    },
+    {
+      "start": 451.7399995422453,
+      "end": 455.69999862671796,
+      "text": "A measured difference may reflect sampling, model violations or genotyping",
+      "chapter": 7
+    },
+    {
+      "start": 455.69999862671796,
+      "end": 456.00000167847577,
+      "text": "error.",
+      "chapter": 7
+    },
+    {
+      "start": 456.2399995422453,
+      "end": 459.760000000009,
+      "text": "It does not by itself identify which evolutionary force acted.",
+      "chapter": 7
+    },
+    {
+      "start": 460.60000015259686,
+      "end": 462.4199998474211,
+      "text": "State assumptions before interpreting a frequency.",
+      "chapter": 7
+    }
+  ]
+}

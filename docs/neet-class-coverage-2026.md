@@ -239,6 +239,10 @@ Route: `/neet/classes/ecology`. Thirty-two narrated chapters, thirty-two teachin
 
 All ten official Biology units now have foundation recordings in twelve classes (Unit 3 has three classes). This is teaching availability, not exhaustive mastery. Further field-data interpretation, labelled graphs, population/energy budgets and mixed conservation cases remain. Stocks and rates, count/biomass/energy pyramids, per-capita/total growth, endemism/invasiveness and threatened category/date/scope distinctions are explicit. No undated protected-area counts or current species-status lists are claimed. All prior saved progress remains unchanged. Next phase: review the documented Biology practice gaps and map NEET Physics/Chemistry separately.
 
+## B13: Genetics — Pedigrees, Maps and Molecular Data
+
+Supplementary route: `/neet/classes/genetics-problem-solving`. Eight narrated chapters, eight worked boards, aligned captions and transcript, and sixteen original MCQs. Separate playback and answer progress: `neet.genetics-problem-solving.lecture.v1`. This workshop extends B09 with conditional carrier risk, X-linked transmission, recombination phase, two- and three-point mapping, strand direction, frameshift interpretation and Hardy–Weinberg calculations. It is a practice supplement, not another official syllabus unit or a replacement for the Genetics foundation class.
+
 ## Wider Biology map
 
 | Unit | Recording status |
@@ -249,7 +253,7 @@ All ten official Biology units now have foundation recordings in twelve classes 
 | Plant Physiology | Recorded foundation with 31 chapters; further experiments and mixed applications remain; existing practice retained |
 | Human Physiology | Recorded foundation with 36 chapters; further numerical, diagram and mixed-case practice remains |
 | Reproduction | Recorded foundation with 30 chapters; further labelled diagrams, ploidy counts and mixed applications remain |
-| Genetics and Evolution | Recorded foundation with 36 chapters; further pedigrees, maps and mixed sequence/population practice remains; existing practice retained |
+| Genetics and Evolution | Recorded foundation with 36 chapters plus B13 problem-solving supplement; further mixed experimental practice remains; existing practice retained |
 | Biology and Human Welfare | Recorded foundation with 32 chapters; further life-cycle, experimental and mixed-case practice remains |
 | Biotechnology and Its Applications | Recorded foundation with 30 chapters; further vector maps, controls and mixed application cases remain |
 | Ecology and Environment | Recorded foundation with 32 chapters; further field data, labelled graphs, budgets and conservation cases remain |

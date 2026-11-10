@@ -108,6 +108,7 @@ targets['neet-biotechnology'] = 'biotechnology';
 targets['neet-ecology'] = 'ecology';
 targets['neet-physics-vectors'] = 'physics-vectors';
 targets['neet-chemistry-closeout'] = 'chemistry-closeout';
+targets['neet-genetics-problem-solving'] = 'genetics-problem-solving';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];
 const dataPrefix = selected.startsWith('neet-') ? 'neet' : 'jee';
