@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { offlineGuidance } from "../../lib/study-guidance";
+import { sanitizedOpenAIApiErrorCode, selectOpenAIApiKey } from "../../lib/openai-auth";
 
 type ChatMessage = {
   role: "user" | "assistant";
@@ -190,7 +191,7 @@ export async function POST(request: Request) {
   }
 
   const prompt = messages.at(-1)!.content;
-  const apiKey = process.env.OPENAI_API_KEY;
+  const apiKey = selectOpenAIApiKey(process.env);
   if (!apiKey) {
     return json({ ...offlineGuidance(prompt), mode: "offline" });
   }
@@ -204,7 +205,12 @@ export async function POST(request: Request) {
         response = await requestAnswer(apiKey, messages, false);
       }
     }
-    if (!response.ok || !response.body) throw new Error(`Responses API returned ${response.status}`);
+    if (!response.ok) {
+      const payload = await response.clone().json().catch(() => null);
+      const code = sanitizedOpenAIApiErrorCode(payload);
+      throw new Error(`Responses API returned ${response.status}; code=${code}`);
+    }
+    if (!response.body) throw new Error("Responses API returned no body");
 
     // Wait for the first words before committing to a streamed answer, so an early failure can
     // still fall back to the built-in guidance as a normal JSON reply.
