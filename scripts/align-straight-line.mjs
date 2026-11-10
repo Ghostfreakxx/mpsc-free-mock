@@ -99,6 +99,7 @@ targets['neet-biotechnology'] = 'biotechnology';
 targets['neet-ecology'] = 'ecology';
 targets['neet-physics-vectors'] = 'physics-vectors';
 targets['neet-chemistry-closeout'] = 'chemistry-closeout';
+targets['neet-ecology-data-workshop'] = 'ecology-data-workshop';
 targets['neet-genetics-problem-solving'] = 'genetics-problem-solving';
 if (!targets[selected]) throw new Error('Unknown lesson');
 const dataName = targets[selected];

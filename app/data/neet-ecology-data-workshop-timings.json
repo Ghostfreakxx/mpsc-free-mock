@@ -1,0 +1,835 @@
+{
+  "duration": 420.8880000000079,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 43.46400000000076
+    },
+    {
+      "start": 43.46400000000076,
+      "end": 91.32000000000168
+    },
+    {
+      "start": 91.32000000000168,
+      "end": 134.73600000000243
+    },
+    {
+      "start": 134.73600000000243,
+      "end": 183.6960000000034
+    },
+    {
+      "start": 183.6960000000034,
+      "end": 228.55200000000423
+    },
+    {
+      "start": 228.55200000000423,
+      "end": 272.952000000005
+    },
+    {
+      "start": 272.952000000005,
+      "end": 319.27200000000585
+    },
+    {
+      "start": 319.27200000000585,
+      "end": 371.1360000000069
+    },
+    {
+      "start": 371.1360000000069,
+      "end": 420.8880000000079
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.380000114440918,
+      "text": "Welcome to the Ecology data workshop.",
+      "chapter": 0
+    },
+    {
+      "start": 3.0399999618530273,
+      "end": 5.239999771118164,
+      "text": "Start with a population boundary and a time interval.",
+      "chapter": 0
+    },
+    {
+      "start": 5.960000038146973,
+      "end": 8.0600004196167,
+      "text": "A pond begins a month with two hundred fish.",
+      "chapter": 0
+    },
+    {
+      "start": 8.779999732971191,
+      "end": 13.100000381469727,
+      "text": "During that month there are forty births, fifteen deaths, ten immigrants and",
+      "chapter": 0
+    },
+    {
+      "start": 13.100000381469727,
+      "end": 13.880000114440918,
+      "text": "five emigrants.",
+      "chapter": 0
+    },
+    {
+      "start": 14.720000267028809,
+      "end": 18.1200008392334,
+      "text": "Add births and immigration, then subtract deaths and emigration.",
+      "chapter": 0
+    },
+    {
+      "start": 18.1200008392334,
+      "end": 20.31999969482422,
+      "text": "The final count is two hundred thirty.",
+      "chapter": 0
+    },
+    {
+      "start": 20.31999969482422,
+      "end": 23.600000381469727,
+      "text": "The net increase is thirty fish, not forty births.",
+      "chapter": 0
+    },
+    {
+      "start": 24.31999969482422,
+      "end": 27.780000686645508,
+      "text": "Dividing thirty by the starting count gives a fifteen percent increase over",
+      "chapter": 0
+    },
+    {
+      "start": 27.780000686645508,
+      "end": 28.239999771118164,
+      "text": "this month.",
+      "chapter": 0
+    },
+    {
+      "start": 28.8799991607666,
+      "end": 32.91999816894531,
+      "text": "That finite percentage is not automatically an instantaneous intrinsic growth",
+      "chapter": 0
+    },
+    {
+      "start": 32.91999816894531,
+      "end": 33.15999984741211,
+      "text": "rate.",
+      "chapter": 0
+    },
+    {
+      "start": 33.81999969482422,
+      "end": 37.720001220703125,
+      "text": "If the problem excludes migration, state that assumption before dropping the",
+      "chapter": 0
+    },
+    {
+      "start": 37.720001220703125,
+      "end": 38.380001068115234,
+      "text": "migration terms.",
+      "chapter": 0
+    },
+    {
+      "start": 39.18000030517578,
+      "end": 42.97999954223633,
+      "text": "Always check that all four event counts refer to the same population and",
+      "chapter": 0
+    },
+    {
+      "start": 42.97999954223633,
+      "end": 43.29999923706055,
+      "text": "period.",
+      "chapter": 0
+    },
+    {
+      "start": 43.46400000000076,
+      "end": 47.92400003814773,
+      "text": "In the continuous exponential model, total growth rate equals the per capita",
+      "chapter": 1
+    },
+    {
+      "start": 47.92400003814773,
+      "end": 50.92400003814773,
+      "text": "rate r multiplied by population size N.",
+      "chapter": 1
+    },
+    {
+      "start": 51.64400030517654,
+      "end": 56.543999923706814,
+      "text": "If r is zero point two per year and N is one hundred, the instantaneous",
+      "chapter": 1
+    },
+    {
+      "start": 56.543999923706814,
+      "end": 58.78399969482498,
+      "text": "increase is twenty individuals per year.",
+      "chapter": 1
+    },
+    {
+      "start": 59.603999389649196,
+      "end": 63.34399916076736,
+      "text": "At N equal to three hundred, the same r gives sixty per year.",
+      "chapter": 1
+    },
+    {
+      "start": 64.24400068664627,
+      "end": 67.68399931335526,
+      "text": "Equal per capita rates therefore do not mean equal total increases.",
+      "chapter": 1
+    },
+    {
+      "start": 68.48400045776444,
+      "end": 72.86399961853104,
+      "text": "A negative r predicts decline in this model; zero predicts no net change.",
+      "chapter": 1
+    },
+    {
+      "start": 73.80400015258866,
+      "end": 76.96400000000077,
+      "text": "The exact continuous solution uses the exponential function.",
+      "chapter": 1
+    },
+    {
+      "start": 78.1039993896492,
+      "end": 82.86400152587967,
+      "text": "Multiplying N by one plus r is a discrete one step update, so do not silently",
+      "chapter": 1
+    },
+    {
+      "start": 82.86400152587967,
+      "end": 84.62399984741288,
+      "text": "substitute it for the continuous solution.",
+      "chapter": 1
+    },
+    {
+      "start": 85.74399877929764,
+      "end": 90.22579455488233,
+      "text": "Read whether a question asks for an instantaneous rate, a finite increase, or",
+      "chapter": 1
+    },
+    {
+      "start": 90.22579455488233,
+      "end": 90.28399969482498,
+      "text": "a",
+      "chapter": 1
+    },
+    {
+      "start": 90.28399969482498,
+      "end": 90.90399862670975,
+      "text": "future population.",
+      "chapter": 1
+    },
+    {
+      "start": 91.32000000000168,
+      "end": 94.2000001144426,
+      "text": "Now include a resource limit with the logistic model.",
+      "chapter": 2
+    },
+    {
+      "start": 95.09999997139145,
+      "end": 99.4799998474138,
+      "text": "Let carrying capacity K be one thousand and r be zero point four per year.",
+      "chapter": 2
+    },
+    {
+      "start": 100.21999961853196,
+      "end": 104.56256404241094,
+      "text": "At N equal to five hundred, the limiting factor one minus N over K is one",
+      "chapter": 2
+    },
+    {
+      "start": 104.56256404241094,
+      "end": 104.85999996185471,
+      "text": "half.",
+      "chapter": 2
+    },
+    {
+      "start": 105.82000000000168,
+      "end": 108.71999961853196,
+      "text": "Total growth is therefore one hundred individuals per year.",
+      "chapter": 2
+    },
+    {
+      "start": 109.21999961853196,
+      "end": 112.74000007629563,
+      "text": "At N equal to one hundred, total growth is thirty six.",
+      "chapter": 2
+    },
+    {
+      "start": 112.74000007629563,
+      "end": 115.87999946594407,
+      "text": "At N equal to nine hundred, it is also thirty six.",
+      "chapter": 2
+    },
+    {
+      "start": 115.87999946594407,
+      "end": 120.60000068664719,
+      "text": "For this simple continuous model with fixed positive r and fixed K, total",
+      "chapter": 2
+    },
+    {
+      "start": 120.60000068664719,
+      "end": 123.02000076294114,
+      "text": "growth reaches its maximum at K over two.",
+      "chapter": 2
+    },
+    {
+      "start": 123.70000106811692,
+      "end": 127.93999893188645,
+      "text": "At K, net growth is zero, not necessarily zero births and deaths.",
+      "chapter": 2
+    },
+    {
+      "start": 128.18000061035326,
+      "end": 131.9199984741228,
+      "text": "Real populations can fluctuate, and changing resources can change K.",
+      "chapter": 2
+    },
+    {
+      "start": 132.4199984741228,
+      "end": 134.45999938965014,
+      "text": "The smooth curve is a model, not a guarantee.",
+      "chapter": 2
+    },
+    {
+      "start": 134.73600000000243,
+      "end": 140.0560001716638,
+      "text": "Suppose five nonoverlapping quadrats, each two square metres, contain eight,",
+      "chapter": 3
+    },
+    {
+      "start": 140.0560001716638,
+      "end": 143.57600015259032,
+      "text": "twelve, six, ten and fourteen plants of one species.",
+      "chapter": 3
+    },
+    {
+      "start": 144.4759997711206,
+      "end": 146.7560004577661,
+      "text": "The total is fifty plants across ten square metres.",
+      "chapter": 3
+    },
+    {
+      "start": 147.59599965667968,
+      "end": 149.89599984741454,
+      "text": "Estimated density is five plants per square metre.",
+      "chapter": 3
+    },
+    {
+      "start": 150.8159999237085,
+      "end": 154.79138446475542,
+      "text": "If the sample represents a two hundred square metre patch, multiplying gives",
+      "chapter": 3
+    },
+    {
+      "start": 154.79138446475542,
+      "end": 154.89599984741454,
+      "text": "an",
+      "chapter": 3
+    },
+    {
+      "start": 154.89599984741454,
+      "end": 156.2560004577661,
+      "text": "estimated one thousand plants.",
+      "chapter": 3
+    },
+    {
+      "start": 157.15600007629638,
+      "end": 161.03599923706298,
+      "text": "That extrapolation depends on representative placement and a clearly defined",
+      "chapter": 3
+    },
+    {
+      "start": 161.03599923706298,
+      "end": 161.73600000000243,
+      "text": "counting rule.",
+      "chapter": 3
+    },
+    {
+      "start": 162.45599931335693,
+      "end": 165.67600053406005,
+      "text": "Sampling only dense clumps biases the result upward.",
+      "chapter": 3
+    },
+    {
+      "start": 166.97600167846923,
+      "end": 170.79600137329345,
+      "text": "Repeated independent samples help describe variation; they do not repair a",
+      "chapter": 3
+    },
+    {
+      "start": 170.79600137329345,
+      "end": 172.47600167846923,
+      "text": "systematically biased placement rule.",
+      "chapter": 3
+    },
+    {
+      "start": 173.67599862671142,
+      "end": 175.6959990844751,
+      "text": "Density measures individuals per area or volume.",
+      "chapter": 3
+    },
+    {
+      "start": 176.79600137329345,
+      "end": 180.6959990844751,
+      "text": "Frequency instead asks how often the species occurs among sample units, and",
+      "chapter": 3
+    },
+    {
+      "start": 180.6959990844751,
+      "end": 183.33599847412353,
+      "text": "abundance within occupied quadrats answers another question.",
+      "chapter": 3
+    },
+    {
+      "start": 183.6960000000034,
+      "end": 187.53599991417272,
+      "text": "A vegetation plot fixes twelve hundred grams of carbon per square metre per",
+      "chapter": 4
+    },
+    {
+      "start": 187.53599991417272,
+      "end": 189.835999866489,
+      "text": "year as gross primary production.",
+      "chapter": 4
+    },
+    {
+      "start": 190.91599979019506,
+      "end": 193.39599980926855,
+      "text": "Producer respiration returns five hundred in the same units.",
+      "chapter": 4
+    },
+    {
+      "start": 194.29600038147314,
+      "end": 197.71600045776708,
+      "text": "Net primary production is seven hundred grams of carbon per square metre per",
+      "chapter": 4
+    },
+    {
+      "start": 197.71600045776708,
+      "end": 197.83600034332616,
+      "text": "year.",
+      "chapter": 4
+    },
+    {
+      "start": 198.4759997329746,
+      "end": 202.47600068664892,
+      "text": "It represents the production remaining after producer respiration, available",
+      "chapter": 4
+    },
+    {
+      "start": 202.47600068664892,
+      "end": 206.95600022888524,
+      "text": "for plant growth, reproduction and transfer to consumers or detrital pathways.",
+      "chapter": 4
+    },
+    {
+      "start": 207.5360001525913,
+      "end": 209.63600053406103,
+      "text": "It is not all eaten by herbivores.",
+      "chapter": 4
+    },
+    {
+      "start": 210.15599908447606,
+      "end": 214.4159993133579,
+      "text": "Do not subtract total ecosystem respiration from gross production when the",
+      "chapter": 4
+    },
+    {
+      "start": 214.4159993133579,
+      "end": 218.50830589060024,
+      "text": "question asks for net primary production: that would include a different set",
+      "chapter": 4
+    },
+    {
+      "start": 218.50830589060024,
+      "end": 218.61599816894872,
+      "text": "of",
+      "chapter": 4
+    },
+    {
+      "start": 218.61599816894872,
+      "end": 218.97599877930028,
+      "text": "organisms.",
+      "chapter": 4
+    },
+    {
+      "start": 219.81599893188817,
+      "end": 224.11599816894872,
+      "text": "A standing biomass measurement is a stock at a time; primary production is a",
+      "chapter": 4
+    },
+    {
+      "start": 224.11599816894872,
+      "end": 224.7959984741245,
+      "text": "rate over time.",
+      "chapter": 4
+    },
+    {
+      "start": 225.55600061035497,
+      "end": 228.1960000000034,
+      "text": "Always carry the area and time units through the subtraction.",
+      "chapter": 4
+    },
+    {
+      "start": 228.55200000000423,
+      "end": 232.50199992847865,
+      "text": "A question supplies producer production of ten thousand kilojoules per square",
+      "chapter": 5
+    },
+    {
+      "start": 232.50199992847865,
+      "end": 236.47200007629817,
+      "text": "metre per year and herbivore production of eight hundred in the same units.",
+      "chapter": 5
+    },
+    {
+      "start": 237.93200011444515,
+      "end": 240.53199954224056,
+      "text": "Production transfer efficiency is eight percent.",
+      "chapter": 5
+    },
+    {
+      "start": 240.53199954224056,
+      "end": 244.67200083923763,
+      "text": "If the next transfer efficiency is specified as twelve percent, the next",
+      "chapter": 5
+    },
+    {
+      "start": 244.67200083923763,
+      "end": 248.71199984741634,
+      "text": "consumer level receives ninety six kilojoules per square metre per year as",
+      "chapter": 5
+    },
+    {
+      "start": 248.71199984741634,
+      "end": 249.1119994659466,
+      "text": "production.",
+      "chapter": 5
+    },
+    {
+      "start": 250.23200030518,
+      "end": 252.71199984741634,
+      "text": "Multiply eight hundred by zero point twelve.",
+      "chapter": 5
+    },
+    {
+      "start": 252.71199984741634,
+      "end": 255.2919997711224,
+      "text": "Do not take twelve percent of the original producer value.",
+      "chapter": 5
+    },
+    {
+      "start": 255.8619994659466,
+      "end": 259.6940511588114,
+      "text": "The familiar ten percent rule is a teaching approximation, not a fixed",
+      "chapter": 5
+    },
+    {
+      "start": 259.6940511588114,
+      "end": 260.1319999237103,
+      "text": "measured",
+      "chapter": 5
+    },
+    {
+      "start": 260.1319999237103,
+      "end": 261.6519984741253,
+      "text": "efficiency for every ecosystem.",
+      "chapter": 5
+    },
+    {
+      "start": 262.95200152588313,
+      "end": 266.23200030518,
+      "text": "Energy not incorporated into the next trophic level's production can enter",
+      "chapter": 5
+    },
+    {
+      "start": 266.23200030518,
+      "end": 269.0720004577679,
+      "text": "respiration, uneaten material and waste pathways.",
+      "chapter": 5
+    },
+    {
+      "start": 269.93200106811946,
+      "end": 272.5720004577679,
+      "text": "Energy flows through the system, while matter can be recycled.",
+      "chapter": 5
+    },
+    {
+      "start": 272.952000000005,
+      "end": 278.05199990463757,
+      "text": "An aquatic snapshot shows producer biomass of four grams per square metre and",
+      "chapter": 6
+    },
+    {
+      "start": 278.05199990463757,
+      "end": 280.9720004577687,
+      "text": "primary consumer biomass of twenty grams per square metre.",
+      "chapter": 6
+    },
+    {
+      "start": 281.7920001525929,
+      "end": 284.03199992371106,
+      "text": "The biomass pyramid is inverted at that moment.",
+      "chapter": 6
+    },
+    {
+      "start": 285.0719998855641,
+      "end": 288.88790326194805,
+      "text": "This does not mean consumers create energy or that production must also be",
+      "chapter": 6
+    },
+    {
+      "start": 288.88790326194805,
+      "end": 289.3519996185353,
+      "text": "inverted.",
+      "chapter": 6
+    },
+    {
+      "start": 290.53199992371106,
+      "end": 294.21200022888684,
+      "text": "Small, rapidly replaced producers can supply consumers whose biomass",
+      "chapter": 6
+    },
+    {
+      "start": 294.21200022888684,
+      "end": 295.3519996185353,
+      "text": "accumulates for longer.",
+      "chapter": 6
+    },
+    {
+      "start": 296.69199977112316,
+      "end": 298.8920005340626,
+      "text": "Turnover links the stock to its rate of replacement.",
+      "chapter": 6
+    },
+    {
+      "start": 299.56200061035656,
+      "end": 304.0119994659474,
+      "text": "A pyramid of numbers can also be inverted, as when one tree supports many",
+      "chapter": 6
+    },
+    {
+      "start": 304.0119994659474,
+      "end": 305.012001373296,
+      "text": "herbivorous insects.",
+      "chapter": 6
+    },
+    {
+      "start": 305.91199908447766,
+      "end": 309.9720004577687,
+      "text": "An energy pyramid compares energy flow or production over matching areas and",
+      "chapter": 6
+    },
+    {
+      "start": 309.9720004577687,
+      "end": 313.3520015258839,
+      "text": "time periods and remains upright in the standard trophic model.",
+      "chapter": 6
+    },
+    {
+      "start": 314.452000000005,
+      "end": 318.7119983215382,
+      "text": "Before interpreting a diagram, read the axis label, units and sampling",
+      "chapter": 6
+    },
+    {
+      "start": 318.7119983215382,
+      "end": 319.0519984741261,
+      "text": "interval.",
+      "chapter": 6
+    },
+    {
+      "start": 319.27200000000585,
+      "end": 323.25200001907933,
+      "text": "Two identical litter samples lose different masses in two sites.",
+      "chapter": 7
+    },
+    {
+      "start": 324.0720001907407,
+      "end": 326.5320002288877,
+      "text": "The difference alone does not identify the cause.",
+      "chapter": 7
+    },
+    {
+      "start": 327.55199973297704,
+      "end": 332.2519995422422,
+      "text": "Temperature, moisture, oxygen, litter chemistry and decomposer communities may",
+      "chapter": 7
+    },
+    {
+      "start": 332.2519995422422,
+      "end": 332.7920004577695,
+      "text": "all differ.",
+      "chapter": 7
+    },
+    {
+      "start": 333.71199958038915,
+      "end": 338.19405216335,
+      "text": "A stronger comparison uses replicated matched samples and changes the factor",
+      "chapter": 7
+    },
+    {
+      "start": 338.19405216335,
+      "end": 338.3120009155332,
+      "text": "of",
+      "chapter": 7
+    },
+    {
+      "start": 338.3120009155332,
+      "end": 341.1320006103574,
+      "text": "interest while controlling other conditions as far as possible.",
+      "chapter": 7
+    },
+    {
+      "start": 342.21200053406346,
+      "end": 346.64584649424035,
+      "text": "Warm, moist, oxygenated conditions often favour decomposition, but",
+      "chapter": 7
+    },
+    {
+      "start": 346.64584649424035,
+      "end": 347.4520003051816,
+      "text": "waterlogging",
+      "chapter": 7
+    },
+    {
+      "start": 347.4520003051816,
+      "end": 350.43199984741796,
+      "text": "can restrict oxygen and slow aerobic processes.",
+      "chapter": 7
+    },
+    {
+      "start": 351.43199984741796,
+      "end": 355.21199862671483,
+      "text": "Litter mass loss may reflect leaching and fragmentation as well as biological",
+      "chapter": 7
+    },
+    {
+      "start": 355.21199862671483,
+      "end": 358.9520003051816,
+      "text": "breakdown; it is not automatically a direct measurement of complete",
+      "chapter": 7
+    },
+    {
+      "start": 358.9520003051816,
+      "end": 360.7519995422422,
+      "text": "mineralisation.",
+      "chapter": 7
+    },
+    {
+      "start": 360.7519995422422,
+      "end": 364.99200122070897,
+      "text": "Humification produces relatively resistant humus, whereas mineralisation",
+      "chapter": 7
+    },
+    {
+      "start": 364.99200122070897,
+      "end": 366.61200015259374,
+      "text": "releases inorganic nutrients.",
+      "chapter": 7
+    },
+    {
+      "start": 367.69199816895116,
+      "end": 370.7519995422422,
+      "text": "Interpret the measurement that was actually made before naming a mechanism.",
+      "chapter": 7
+    },
+    {
+      "start": 371.1360000000069,
+      "end": 375.795999847419,
+      "text": "Two plots each contain ten species, so their recorded species richness is",
+      "chapter": 8
+    },
+    {
+      "start": 375.795999847419,
+      "end": 376.07600005722736,
+      "text": "equal.",
+      "chapter": 8
+    },
+    {
+      "start": 376.85599979019855,
+      "end": 380.5960000381539,
+      "text": "If one plot is dominated by a single species while the other has similar",
+      "chapter": 8
+    },
+    {
+      "start": 380.5960000381539,
+      "end": 383.39600022888874,
+      "text": "abundances across species, their evenness differs.",
+      "chapter": 8
+    },
+    {
+      "start": 384.295999847419,
+      "end": 387.9760001525948,
+      "text": "Equal richness therefore does not establish identical community diversity or",
+      "chapter": 8
+    },
+    {
+      "start": 387.9760001525948,
+      "end": 388.295999847419,
+      "text": "function.",
+      "chapter": 8
+    },
+    {
+      "start": 389.2560008392403,
+      "end": 391.8160003051827,
+      "text": "Conservation questions also require careful categories.",
+      "chapter": 8
+    },
+    {
+      "start": 392.6360000000069,
+      "end": 396.69369164746314,
+      "text": "Endemic means naturally restricted to a particular geographic area; it does",
+      "chapter": 8
+    },
+    {
+      "start": 396.69369164746314,
+      "end": 396.8559993133614,
+      "text": "not",
+      "chapter": 8
+    },
+    {
+      "start": 396.8559993133614,
+      "end": 398.33600076294636,
+      "text": "mean a harmful introduced species.",
+      "chapter": 8
+    },
+    {
+      "start": 398.33600076294636,
+      "end": 402.5359996185372,
+      "text": "Protecting a species within its natural habitat is in situ conservation.",
+      "chapter": 8
+    },
+    {
+      "start": 403.5759986267159,
+      "end": 406.59599908447956,
+      "text": "Seed banks and suitable captive programmes are ex situ approaches.",
+      "chapter": 8
+    },
+    {
+      "start": 406.59599908447956,
+      "end": 411.795999847419,
+      "text": "Neither label alone guarantees success: genetic representation, habitat",
+      "chapter": 8
+    },
+    {
+      "start": 411.795999847419,
+      "end": 414.35600122071,
+      "text": "quality, threats and long term monitoring matter.",
+      "chapter": 8
+    },
+    {
+      "start": 414.9760001525948,
+      "end": 419.0913835942264,
+      "text": "A single declining count suggests a question to investigate, not proof that",
+      "chapter": 8
+    },
+    {
+      "start": 419.0913835942264,
+      "end": 419.25599893189167,
+      "text": "one",
+      "chapter": 8
+    },
+    {
+      "start": 419.25599893189167,
+      "end": 420.6360000000069,
+      "text": "named threat caused the decline.",
+      "chapter": 8
+    }
+  ]
+}

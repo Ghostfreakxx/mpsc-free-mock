@@ -1,0 +1,315 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English ecology teacher. Read genotype symbols, allele notation, sequence direction and probability carefully. Speak every sentence fully, with short pauses before predictions and worked answers. Do not add or omit words.",
+  "title": "Ecology: Population Data and Energy Budgets",
+  "subject": "Biology",
+  "unit": 10,
+  "scope": "NEET Biology Unit 10 practice supplement: population accounting, growth models, quadrat estimates, primary production, transfer efficiencies, ecological pyramids, decomposition evidence and conservation interpretation. Original worked examples; extends the Ecology foundation class without claiming exhaustive syllabus completion.",
+  "sources": [
+    {
+      "title": "OpenStax Biology 2e: Population growth models",
+      "url": "https://openstax.org/books/biology-2e/pages/45-3-environmental-limits-to-population-growth"
+    },
+    {
+      "title": "OpenStax Biology 2e: Ecosystem energy flow",
+      "url": "https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems"
+    },
+    {
+      "title": "OpenStax Biology 2e: Biodiversity",
+      "url": "https://openstax.org/books/biology-2e/pages/47-1-the-biodiversity-crisis"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Account for every population change",
+      "formula": "N₂ = N₁ + B + I − D − E",
+      "points": [
+        "Keep the time interval fixed.",
+        "Separate counts from per-capita rates.",
+        "Include migration in an open population."
+      ],
+      "script": "Welcome to the Ecology data workshop. Start with a population boundary and a time interval. A pond begins a month with two hundred fish. During that month there are forty births, fifteen deaths, ten immigrants and five emigrants. Add births and immigration, then subtract deaths and emigration. The final count is two hundred thirty. The net increase is thirty fish, not forty births. Dividing thirty by the starting count gives a fifteen percent increase over this month. That finite percentage is not automatically an instantaneous intrinsic growth rate. If the problem excludes migration, state that assumption before dropping the migration terms. Always check that all four event counts refer to the same population and period."
+    },
+    {
+      "title": "Compare total and per-capita growth",
+      "formula": "dN/dt = rN",
+      "points": [
+        "r has inverse-time units.",
+        "Total growth depends on N.",
+        "Exponential growth assumes constant r."
+      ],
+      "script": "In the continuous exponential model, total growth rate equals the per-capita rate r multiplied by population size N. If r is zero point two per year and N is one hundred, the instantaneous increase is twenty individuals per year. At N equal to three hundred, the same r gives sixty per year. Equal per-capita rates therefore do not mean equal total increases. A negative r predicts decline in this model; zero predicts no net change. The exact continuous solution uses the exponential function. Multiplying N by one plus r is a discrete one-step update, so do not silently substitute it for the continuous solution. Read whether a question asks for an instantaneous rate, a finite increase, or a future population."
+    },
+    {
+      "title": "Locate the logistic maximum",
+      "formula": "dN/dt = rN(1 − N/K)",
+      "points": [
+        "K is model carrying capacity.",
+        "Growth is greatest at K/2.",
+        "K can change with conditions."
+      ],
+      "script": "Now include a resource limit with the logistic model. Let carrying capacity K be one thousand and r be zero point four per year. At N equal to five hundred, the limiting factor one minus N over K is one half. Total growth is therefore one hundred individuals per year. At N equal to one hundred, total growth is thirty-six. At N equal to nine hundred, it is also thirty-six. For this simple continuous model with fixed positive r and fixed K, total growth reaches its maximum at K over two. At K, net growth is zero, not necessarily zero births and deaths. Real populations can fluctuate, and changing resources can change K. The smooth curve is a model, not a guarantee."
+    },
+    {
+      "title": "Estimate density with quadrats",
+      "formula": "Density = total count / total sampled area",
+      "points": [
+        "Use representative sampling.",
+        "State the area units.",
+        "An estimate is not a census."
+      ],
+      "script": "Suppose five nonoverlapping quadrats, each two square metres, contain eight, twelve, six, ten and fourteen plants of one species. The total is fifty plants across ten square metres. Estimated density is five plants per square metre. If the sample represents a two-hundred-square-metre patch, multiplying gives an estimated one thousand plants. That extrapolation depends on representative placement and a clearly defined counting rule. Sampling only dense clumps biases the result upward. Repeated independent samples help describe variation; they do not repair a systematically biased placement rule. Density measures individuals per area or volume. Frequency instead asks how often the species occurs among sample units, and abundance within occupied quadrats answers another question."
+    },
+    {
+      "title": "Balance producer carbon budgets",
+      "formula": "NPP = GPP − Rₐ",
+      "points": [
+        "Subtract producer respiration.",
+        "Keep carbon and energy units separate.",
+        "Productivity is a rate."
+      ],
+      "script": "A vegetation plot fixes twelve hundred grams of carbon per square metre per year as gross primary production. Producer respiration returns five hundred in the same units. Net primary production is seven hundred grams of carbon per square metre per year. It represents the production remaining after producer respiration, available for plant growth, reproduction and transfer to consumers or detrital pathways. It is not all eaten by herbivores. Do not subtract total ecosystem respiration from gross production when the question asks for net primary production: that would include a different set of organisms. A standing biomass measurement is a stock at a time; primary production is a rate over time. Always carry the area and time units through the subtraction."
+    },
+    {
+      "title": "Calculate transfer without inventing efficiency",
+      "formula": "Transfer efficiency = next-level production / previous-level production",
+      "points": [
+        "Use matching units and intervals.",
+        "Multiply efficiencies along a chain.",
+        "Ten percent is an approximation."
+      ],
+      "script": "A question supplies producer production of ten thousand kilojoules per square metre per year and herbivore production of eight hundred in the same units. Production transfer efficiency is eight percent. If the next transfer efficiency is specified as twelve percent, the next consumer level receives ninety-six kilojoules per square metre per year as production. Multiply eight hundred by zero point twelve. Do not take twelve percent of the original producer value. The familiar ten-percent rule is a teaching approximation, not a fixed measured efficiency for every ecosystem. Energy not incorporated into the next trophic level's production can enter respiration, uneaten material and waste pathways. Energy flows through the system, while matter can be recycled."
+    },
+    {
+      "title": "Read pyramids as different measurements",
+      "formula": "Stock biomass ≠ production per time",
+      "points": [
+        "Numbers, biomass and energy differ.",
+        "Rapid turnover can support inverted biomass.",
+        "Energy pyramids use a common period."
+      ],
+      "script": "An aquatic snapshot shows producer biomass of four grams per square metre and primary-consumer biomass of twenty grams per square metre. The biomass pyramid is inverted at that moment. This does not mean consumers create energy or that production must also be inverted. Small, rapidly replaced producers can supply consumers whose biomass accumulates for longer. Turnover links the stock to its rate of replacement. A pyramid of numbers can also be inverted, as when one tree supports many herbivorous insects. An energy pyramid compares energy flow or production over matching areas and time periods and remains upright in the standard trophic model. Before interpreting a diagram, read the axis label, units and sampling interval."
+    },
+    {
+      "title": "Interpret decomposition experiments",
+      "formula": "Compare treatments while controlling confounders",
+      "points": [
+        "Distinguish mass loss from mineralisation.",
+        "Moisture and oxygen interact.",
+        "Use replicate matched samples."
+      ],
+      "script": "Two identical litter samples lose different masses in two sites. The difference alone does not identify the cause. Temperature, moisture, oxygen, litter chemistry and decomposer communities may all differ. A stronger comparison uses replicated matched samples and changes the factor of interest while controlling other conditions as far as possible. Warm, moist, oxygenated conditions often favour decomposition, but waterlogging can restrict oxygen and slow aerobic processes. Litter mass loss may reflect leaching and fragmentation as well as biological breakdown; it is not automatically a direct measurement of complete mineralisation. Humification produces relatively resistant humus, whereas mineralisation releases inorganic nutrients. Interpret the measurement that was actually made before naming a mechanism."
+    },
+    {
+      "title": "Compare richness and conservation evidence",
+      "formula": "Richness counts species; evenness describes balance",
+      "points": [
+        "Equal richness can hide different abundances.",
+        "Endemic does not mean invasive.",
+        "Use evidence to choose conservation measures."
+      ],
+      "script": "Two plots each contain ten species, so their recorded species richness is equal. If one plot is dominated by a single species while the other has similar abundances across species, their evenness differs. Equal richness therefore does not establish identical community diversity or function. Conservation questions also require careful categories. Endemic means naturally restricted to a particular geographic area; it does not mean a harmful introduced species. Protecting a species within its natural habitat is in situ conservation. Seed banks and suitable captive programmes are ex situ approaches. Neither label alone guarantees success: genetic representation, habitat quality, threats and long-term monitoring matter. A single declining count suggests a question to investigate, not proof that one named threat caused the decline."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A population starts at 200 with B=40, I=10, D=15 and E=5 in one month. Its final size is:",
+      "options": [
+        "210",
+        "230",
+        "240",
+        "270"
+      ],
+      "answer": 1,
+      "explanation": "200 + 40 + 10 − 15 − 5 = 230."
+    },
+    {
+      "question": "The net increase of 30 from a starting count of 200 is what finite percentage increase?",
+      "options": [
+        "6%",
+        "10%",
+        "15%",
+        "30%"
+      ],
+      "answer": 2,
+      "explanation": "30/200 × 100 = 15% over the stated interval."
+    },
+    {
+      "question": "At r = 0.2 year⁻¹ and N = 300, the instantaneous exponential growth rate is:",
+      "options": [
+        "0.2 year⁻¹",
+        "20 individuals year⁻¹",
+        "60 individuals year⁻¹",
+        "300 individuals year⁻¹"
+      ],
+      "answer": 2,
+      "explanation": "rN = 0.2 × 300 = 60 individuals per year."
+    },
+    {
+      "question": "Two populations have the same positive r but different sizes. Which must match in the exponential model?",
+      "options": [
+        "Total births",
+        "Total net increase",
+        "Per-capita net growth rate",
+        "Final population size"
+      ],
+      "answer": 2,
+      "explanation": "The shared r specifies per-capita net growth; total growth also depends on N."
+    },
+    {
+      "question": "For r=0.4 year⁻¹, K=1000 and N=500, logistic growth is:",
+      "options": [
+        "20",
+        "50",
+        "100",
+        "200"
+      ],
+      "answer": 2,
+      "explanation": "0.4 × 500 × (1 − 500/1000) = 100 individuals per year."
+    },
+    {
+      "question": "In the fixed-K logistic model, zero net growth at N=K means:",
+      "options": [
+        "Every organism stops reproducing",
+        "Births and deaths must both be zero",
+        "The net population change is zero",
+        "K can never change in nature"
+      ],
+      "answer": 2,
+      "explanation": "Zero net growth can reflect balancing gains and losses."
+    },
+    {
+      "question": "Fifty plants are counted across five quadrats of 2 m² each. Estimated density is:",
+      "options": [
+        "5 plants m⁻²",
+        "10 plants m⁻²",
+        "25 plants m⁻²",
+        "50 plants m⁻²"
+      ],
+      "answer": 0,
+      "explanation": "Total area = 10 m²; density = 50/10 = 5 plants per square metre."
+    },
+    {
+      "question": "Which sampling choice most clearly biases the density estimate upward?",
+      "options": [
+        "Using equal quadrat sizes",
+        "Sampling only visibly dense patches",
+        "Reporting sample area",
+        "Defining a boundary counting rule"
+      ],
+      "answer": 1,
+      "explanation": "Selecting only dense patches makes the sample unrepresentative."
+    },
+    {
+      "question": "GPP is 1200 and producer respiration is 500 g C m⁻² year⁻¹. NPP is:",
+      "options": [
+        "500",
+        "700",
+        "1200",
+        "1700"
+      ],
+      "answer": 1,
+      "explanation": "NPP = 1200 − 500 = 700 g C m⁻² year⁻¹."
+    },
+    {
+      "question": "Which measurement is a stock rather than a production rate?",
+      "options": [
+        "g C m⁻² year⁻¹ fixed",
+        "kJ m⁻² year⁻¹ transferred",
+        "g dry biomass m⁻² at a sampling time",
+        "g C m⁻² day⁻¹ respired"
+      ],
+      "answer": 2,
+      "explanation": "Standing biomass describes material present at a time."
+    },
+    {
+      "question": "Production transfers from 10,000 to 800 kJ m⁻² year⁻¹. Efficiency is:",
+      "options": [
+        "0.8%",
+        "8%",
+        "12%",
+        "80%"
+      ],
+      "answer": 1,
+      "explanation": "800/10,000 × 100 = 8%."
+    },
+    {
+      "question": "If the next transfer is 12% of 800 kJ m⁻² year⁻¹, next-level production is:",
+      "options": [
+        "12",
+        "80",
+        "96",
+        "1200"
+      ],
+      "answer": 2,
+      "explanation": "0.12 × 800 = 96 kJ m⁻² year⁻¹."
+    },
+    {
+      "question": "An inverted aquatic biomass pyramid can be consistent with:",
+      "options": [
+        "Energy creation by consumers",
+        "Rapid producer turnover",
+        "No primary production",
+        "An inverted energy pyramid necessarily"
+      ],
+      "answer": 1,
+      "explanation": "Rapid replacement of a small producer stock can support a larger consumer stock."
+    },
+    {
+      "question": "One tree supporting many herbivorous insects can produce an inverted pyramid of:",
+      "options": [
+        "Energy",
+        "Production per year",
+        "Numbers",
+        "All ecological measurements necessarily"
+      ],
+      "answer": 2,
+      "explanation": "Individual counts can increase from one large producer to many consumers."
+    },
+    {
+      "question": "Why can waterlogging slow aerobic decomposition despite abundant water?",
+      "options": [
+        "It always removes all microbes",
+        "It can limit oxygen availability",
+        "It converts all litter to minerals immediately",
+        "It prevents every chemical reaction"
+      ],
+      "answer": 1,
+      "explanation": "Waterlogged conditions can restrict oxygen supply to aerobic decomposers."
+    },
+    {
+      "question": "Litter mass loss alone directly proves:",
+      "options": [
+        "Complete mineralisation",
+        "The exact causal environmental factor",
+        "A decrease in measured litter mass",
+        "Absence of leaching"
+      ],
+      "answer": 2,
+      "explanation": "Mass loss can combine leaching, fragmentation and decomposition; mechanism needs further evidence."
+    },
+    {
+      "question": "Two plots each have ten recorded species but different abundance distributions. They have equal:",
+      "options": [
+        "Species richness",
+        "Evenness necessarily",
+        "Total biomass necessarily",
+        "Ecosystem function necessarily"
+      ],
+      "answer": 0,
+      "explanation": "Richness is the number of species recorded."
+    },
+    {
+      "question": "Which is an in situ conservation example?",
+      "options": [
+        "A seed bank away from the habitat",
+        "A captive collection only",
+        "Protecting a population in its natural habitat",
+        "Storing extracted DNA only"
+      ],
+      "answer": 2,
+      "explanation": "In situ conservation protects organisms in their natural habitat."
+    }
+  ]
+}

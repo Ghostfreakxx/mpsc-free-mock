@@ -1,3 +1,4 @@
+import ecologyDataWorkshop from '../../data/neet-ecology-data-workshop-lecture.json';
 import Link from 'next/link';
 import styles from '../../jee/classes/lecture.module.css';
 import data from '../../data/neet-cell-unit-life-lecture.json';
@@ -16,6 +17,7 @@ import diversity from '../../data/neet-diversity-living-world-lecture.json';
 export const metadata = { title: 'NEET recorded classes' };
 export default function NeetClasses() {
  return <main className={styles.page}>
+
   <header className={styles.header}><Link href="/neet" prefetch={false}>← NEET practice</Link><Link href="/">MPSC FREE MOCK</Link></header>
   <div className={styles.heading}><p>NEET UG · BIOLOGY, PHYSICS &amp; CHEMISTRY</p><h1>NEET recorded classes</h1><span>Twelve Biology classes · Physics and Chemistry shared foundations</span></div>
   <section className={styles.notes}><h2>Full-syllabus timed mock</h2><p>180 questions in 180 minutes, with 45 Physics, 45 Chemistry and 90 Biology questions. Every paper spans all 50 mapped units. Choose Foundation or Challenge mix, which selects 50 application questions from a pool of 275 alongside 130 foundation questions. Progress saves and explanations appear after submission.</p><Link href="/neet/mock-test" prefetch={false}>Open NEET full-syllabus timed mock →</Link></section>
@@ -35,6 +37,8 @@ export default function NeetClasses() {
   <section className={styles.notes}><h2>Biotechnology and Its Applications</h2><p>Biology Unit 9 · {biotechnology.chapters.length} narrated chapters · {biotechnology.quiz.length} original practice questions · Captions and downloadable transcript</p><p>Recombinant DNA principles and tools, molecular interpretation, Bt and RNAi, insulin and vaccines, gene therapy, transgenic animals and biosafety.</p><Link href="/neet/classes/biotechnology" prefetch={false}>Watch recorded class →</Link><p>Unit 9 foundation. Further labelled vector maps, experimental controls and mixed application cases remain.</p></section>
   <section className={styles.notes}><h2>Ecology and Environment</h2><p>Biology Unit 10 · {ecology.chapters.length} narrated chapters · {ecology.quiz.length} original practice questions · Captions and downloadable transcript</p><p>Population interactions and growth, ecosystem productivity, decomposition, energy and pyramids, biodiversity patterns, loss and conservation.</p><Link href="/neet/classes/ecology" prefetch={false}>Watch recorded class →</Link><p>Unit 10 foundation. Further field data, labelled graphs, population/energy budgets and conservation cases remain.</p></section>
   <section className={styles.notes}><h2>Biology foundation coverage</h2><p>All ten official Biology units now have foundation recordings. This describes teaching availability; deeper diagram, experimental and mixed-question practice remains. Physics and Chemistry now have a separate study map with shared recordings and review priorities.</p></section>
+  <section className={styles.notes}><h2>Ecology: Population Data and Energy Budgets</h2><p>Biology Unit 10 workshop · {ecologyDataWorkshop.chapters.length} narrated chapters · {ecologyDataWorkshop.quiz.length} original practice questions · Captions and downloadable transcript</p><p>Worked population balances, growth models, quadrat estimates, productivity, energy transfers, pyramids, decomposition and conservation evidence.</p><Link href="/neet/classes/ecology-data-workshop" prefetch={false}>Watch recorded Ecology workshop →</Link></section>
   <footer className={styles.notes}><p>Checked against the <a href="https://neet.nta.nic.in/document/syllabus-for-neet-ug-2026-examination/" target="_blank" rel="noreferrer">official NEET UG 2026 syllabus</a> on 5 November 2026. This is a dated baseline, not a claim of a verified 2027 syllabus. Independent teaching with original questions; no NTA endorsement or official PYQ claim.</p></footer>
- </main>;
+
+</main>;
 }

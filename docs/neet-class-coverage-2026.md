@@ -243,6 +243,10 @@ All ten official Biology units now have foundation recordings in twelve classes 
 
 Supplementary route: `/neet/classes/genetics-problem-solving`. Eight narrated chapters, eight worked boards, aligned captions and transcript, and sixteen original MCQs. Separate playback and answer progress: `neet.genetics-problem-solving.lecture.v1`. This workshop extends B09 with conditional carrier risk, X-linked transmission, recombination phase, two- and three-point mapping, strand direction, frameshift interpretation and Hardy–Weinberg calculations. It is a practice supplement, not another official syllabus unit or a replacement for the Genetics foundation class.
 
+## B14: Ecology — Population Data and Energy Budgets
+
+Supplementary route: `/neet/classes/ecology-data-workshop`. Nine narrated worked chapters, aligned captions, downloadable transcript and eighteen original questions. Separate progress: `neet.ecology-data-workshop.lecture.v1`. Covers open-population accounting, per-capita and logistic growth, quadrat density, GPP/NPP, energy transfers, biomass versus energy pyramids, decomposition evidence and conservation interpretation. Extends B12; further field datasets and conservation cases remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |

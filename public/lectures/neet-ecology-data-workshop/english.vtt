@@ -1,0 +1,397 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.380
+Welcome to the Ecology data workshop.
+
+00:00:03.040 --> 00:00:05.240
+Start with a population boundary and a time interval.
+
+00:00:05.960 --> 00:00:08.060
+A pond begins a month with two hundred fish.
+
+00:00:08.780 --> 00:00:13.100
+During that month there are forty births, fifteen deaths, ten immigrants and
+
+00:00:13.100 --> 00:00:13.880
+five emigrants.
+
+00:00:14.720 --> 00:00:18.120
+Add births and immigration, then subtract deaths and emigration.
+
+00:00:18.120 --> 00:00:20.320
+The final count is two hundred thirty.
+
+00:00:20.320 --> 00:00:23.600
+The net increase is thirty fish, not forty births.
+
+00:00:24.320 --> 00:00:27.780
+Dividing thirty by the starting count gives a fifteen percent increase over
+
+00:00:27.780 --> 00:00:28.240
+this month.
+
+00:00:28.880 --> 00:00:32.920
+That finite percentage is not automatically an instantaneous intrinsic growth
+
+00:00:32.920 --> 00:00:33.160
+rate.
+
+00:00:33.820 --> 00:00:37.720
+If the problem excludes migration, state that assumption before dropping the
+
+00:00:37.720 --> 00:00:38.380
+migration terms.
+
+00:00:39.180 --> 00:00:42.980
+Always check that all four event counts refer to the same population and
+
+00:00:42.980 --> 00:00:43.300
+period.
+
+00:00:43.464 --> 00:00:47.924
+In the continuous exponential model, total growth rate equals the per capita
+
+00:00:47.924 --> 00:00:50.924
+rate r multiplied by population size N.
+
+00:00:51.644 --> 00:00:56.544
+If r is zero point two per year and N is one hundred, the instantaneous
+
+00:00:56.544 --> 00:00:58.784
+increase is twenty individuals per year.
+
+00:00:59.604 --> 00:01:03.344
+At N equal to three hundred, the same r gives sixty per year.
+
+00:01:04.244 --> 00:01:07.684
+Equal per capita rates therefore do not mean equal total increases.
+
+00:01:08.484 --> 00:01:12.864
+A negative r predicts decline in this model; zero predicts no net change.
+
+00:01:13.804 --> 00:01:16.964
+The exact continuous solution uses the exponential function.
+
+00:01:18.104 --> 00:01:22.864
+Multiplying N by one plus r is a discrete one step update, so do not silently
+
+00:01:22.864 --> 00:01:24.624
+substitute it for the continuous solution.
+
+00:01:25.744 --> 00:01:30.226
+Read whether a question asks for an instantaneous rate, a finite increase, or
+
+00:01:30.226 --> 00:01:30.284
+a
+
+00:01:30.284 --> 00:01:30.904
+future population.
+
+00:01:31.320 --> 00:01:34.200
+Now include a resource limit with the logistic model.
+
+00:01:35.100 --> 00:01:39.480
+Let carrying capacity K be one thousand and r be zero point four per year.
+
+00:01:40.220 --> 00:01:44.563
+At N equal to five hundred, the limiting factor one minus N over K is one
+
+00:01:44.563 --> 00:01:44.860
+half.
+
+00:01:45.820 --> 00:01:48.720
+Total growth is therefore one hundred individuals per year.
+
+00:01:49.220 --> 00:01:52.740
+At N equal to one hundred, total growth is thirty six.
+
+00:01:52.740 --> 00:01:55.880
+At N equal to nine hundred, it is also thirty six.
+
+00:01:55.880 --> 00:02:00.600
+For this simple continuous model with fixed positive r and fixed K, total
+
+00:02:00.600 --> 00:02:03.020
+growth reaches its maximum at K over two.
+
+00:02:03.700 --> 00:02:07.940
+At K, net growth is zero, not necessarily zero births and deaths.
+
+00:02:08.180 --> 00:02:11.920
+Real populations can fluctuate, and changing resources can change K.
+
+00:02:12.420 --> 00:02:14.460
+The smooth curve is a model, not a guarantee.
+
+00:02:14.736 --> 00:02:20.056
+Suppose five nonoverlapping quadrats, each two square metres, contain eight,
+
+00:02:20.056 --> 00:02:23.576
+twelve, six, ten and fourteen plants of one species.
+
+00:02:24.476 --> 00:02:26.756
+The total is fifty plants across ten square metres.
+
+00:02:27.596 --> 00:02:29.896
+Estimated density is five plants per square metre.
+
+00:02:30.816 --> 00:02:34.791
+If the sample represents a two hundred square metre patch, multiplying gives
+
+00:02:34.791 --> 00:02:34.896
+an
+
+00:02:34.896 --> 00:02:36.256
+estimated one thousand plants.
+
+00:02:37.156 --> 00:02:41.036
+That extrapolation depends on representative placement and a clearly defined
+
+00:02:41.036 --> 00:02:41.736
+counting rule.
+
+00:02:42.456 --> 00:02:45.676
+Sampling only dense clumps biases the result upward.
+
+00:02:46.976 --> 00:02:50.796
+Repeated independent samples help describe variation; they do not repair a
+
+00:02:50.796 --> 00:02:52.476
+systematically biased placement rule.
+
+00:02:53.676 --> 00:02:55.696
+Density measures individuals per area or volume.
+
+00:02:56.796 --> 00:03:00.696
+Frequency instead asks how often the species occurs among sample units, and
+
+00:03:00.696 --> 00:03:03.336
+abundance within occupied quadrats answers another question.
+
+00:03:03.696 --> 00:03:07.536
+A vegetation plot fixes twelve hundred grams of carbon per square metre per
+
+00:03:07.536 --> 00:03:09.836
+year as gross primary production.
+
+00:03:10.916 --> 00:03:13.396
+Producer respiration returns five hundred in the same units.
+
+00:03:14.296 --> 00:03:17.716
+Net primary production is seven hundred grams of carbon per square metre per
+
+00:03:17.716 --> 00:03:17.836
+year.
+
+00:03:18.476 --> 00:03:22.476
+It represents the production remaining after producer respiration, available
+
+00:03:22.476 --> 00:03:26.956
+for plant growth, reproduction and transfer to consumers or detrital pathways.
+
+00:03:27.536 --> 00:03:29.636
+It is not all eaten by herbivores.
+
+00:03:30.156 --> 00:03:34.416
+Do not subtract total ecosystem respiration from gross production when the
+
+00:03:34.416 --> 00:03:38.508
+question asks for net primary production: that would include a different set
+
+00:03:38.508 --> 00:03:38.616
+of
+
+00:03:38.616 --> 00:03:38.976
+organisms.
+
+00:03:39.816 --> 00:03:44.116
+A standing biomass measurement is a stock at a time; primary production is a
+
+00:03:44.116 --> 00:03:44.796
+rate over time.
+
+00:03:45.556 --> 00:03:48.196
+Always carry the area and time units through the subtraction.
+
+00:03:48.552 --> 00:03:52.502
+A question supplies producer production of ten thousand kilojoules per square
+
+00:03:52.502 --> 00:03:56.472
+metre per year and herbivore production of eight hundred in the same units.
+
+00:03:57.932 --> 00:04:00.532
+Production transfer efficiency is eight percent.
+
+00:04:00.532 --> 00:04:04.672
+If the next transfer efficiency is specified as twelve percent, the next
+
+00:04:04.672 --> 00:04:08.712
+consumer level receives ninety six kilojoules per square metre per year as
+
+00:04:08.712 --> 00:04:09.112
+production.
+
+00:04:10.232 --> 00:04:12.712
+Multiply eight hundred by zero point twelve.
+
+00:04:12.712 --> 00:04:15.292
+Do not take twelve percent of the original producer value.
+
+00:04:15.862 --> 00:04:19.694
+The familiar ten percent rule is a teaching approximation, not a fixed
+
+00:04:19.694 --> 00:04:20.132
+measured
+
+00:04:20.132 --> 00:04:21.652
+efficiency for every ecosystem.
+
+00:04:22.952 --> 00:04:26.232
+Energy not incorporated into the next trophic level's production can enter
+
+00:04:26.232 --> 00:04:29.072
+respiration, uneaten material and waste pathways.
+
+00:04:29.932 --> 00:04:32.572
+Energy flows through the system, while matter can be recycled.
+
+00:04:32.952 --> 00:04:38.052
+An aquatic snapshot shows producer biomass of four grams per square metre and
+
+00:04:38.052 --> 00:04:40.972
+primary consumer biomass of twenty grams per square metre.
+
+00:04:41.792 --> 00:04:44.032
+The biomass pyramid is inverted at that moment.
+
+00:04:45.072 --> 00:04:48.888
+This does not mean consumers create energy or that production must also be
+
+00:04:48.888 --> 00:04:49.352
+inverted.
+
+00:04:50.532 --> 00:04:54.212
+Small, rapidly replaced producers can supply consumers whose biomass
+
+00:04:54.212 --> 00:04:55.352
+accumulates for longer.
+
+00:04:56.692 --> 00:04:58.892
+Turnover links the stock to its rate of replacement.
+
+00:04:59.562 --> 00:05:04.012
+A pyramid of numbers can also be inverted, as when one tree supports many
+
+00:05:04.012 --> 00:05:05.012
+herbivorous insects.
+
+00:05:05.912 --> 00:05:09.972
+An energy pyramid compares energy flow or production over matching areas and
+
+00:05:09.972 --> 00:05:13.352
+time periods and remains upright in the standard trophic model.
+
+00:05:14.452 --> 00:05:18.712
+Before interpreting a diagram, read the axis label, units and sampling
+
+00:05:18.712 --> 00:05:19.052
+interval.
+
+00:05:19.272 --> 00:05:23.252
+Two identical litter samples lose different masses in two sites.
+
+00:05:24.072 --> 00:05:26.532
+The difference alone does not identify the cause.
+
+00:05:27.552 --> 00:05:32.252
+Temperature, moisture, oxygen, litter chemistry and decomposer communities may
+
+00:05:32.252 --> 00:05:32.792
+all differ.
+
+00:05:33.712 --> 00:05:38.194
+A stronger comparison uses replicated matched samples and changes the factor
+
+00:05:38.194 --> 00:05:38.312
+of
+
+00:05:38.312 --> 00:05:41.132
+interest while controlling other conditions as far as possible.
+
+00:05:42.212 --> 00:05:46.646
+Warm, moist, oxygenated conditions often favour decomposition, but
+
+00:05:46.646 --> 00:05:47.452
+waterlogging
+
+00:05:47.452 --> 00:05:50.432
+can restrict oxygen and slow aerobic processes.
+
+00:05:51.432 --> 00:05:55.212
+Litter mass loss may reflect leaching and fragmentation as well as biological
+
+00:05:55.212 --> 00:05:58.952
+breakdown; it is not automatically a direct measurement of complete
+
+00:05:58.952 --> 00:06:00.752
+mineralisation.
+
+00:06:00.752 --> 00:06:04.992
+Humification produces relatively resistant humus, whereas mineralisation
+
+00:06:04.992 --> 00:06:06.612
+releases inorganic nutrients.
+
+00:06:07.692 --> 00:06:10.752
+Interpret the measurement that was actually made before naming a mechanism.
+
+00:06:11.136 --> 00:06:15.796
+Two plots each contain ten species, so their recorded species richness is
+
+00:06:15.796 --> 00:06:16.076
+equal.
+
+00:06:16.856 --> 00:06:20.596
+If one plot is dominated by a single species while the other has similar
+
+00:06:20.596 --> 00:06:23.396
+abundances across species, their evenness differs.
+
+00:06:24.296 --> 00:06:27.976
+Equal richness therefore does not establish identical community diversity or
+
+00:06:27.976 --> 00:06:28.296
+function.
+
+00:06:29.256 --> 00:06:31.816
+Conservation questions also require careful categories.
+
+00:06:32.636 --> 00:06:36.694
+Endemic means naturally restricted to a particular geographic area; it does
+
+00:06:36.694 --> 00:06:36.856
+not
+
+00:06:36.856 --> 00:06:38.336
+mean a harmful introduced species.
+
+00:06:38.336 --> 00:06:42.536
+Protecting a species within its natural habitat is in situ conservation.
+
+00:06:43.576 --> 00:06:46.596
+Seed banks and suitable captive programmes are ex situ approaches.
+
+00:06:46.596 --> 00:06:51.796
+Neither label alone guarantees success: genetic representation, habitat
+
+00:06:51.796 --> 00:06:54.356
+quality, threats and long term monitoring matter.
+
+00:06:54.976 --> 00:06:59.091
+A single declining count suggests a question to investigate, not proof that
+
+00:06:59.091 --> 00:06:59.256
+one
+
+00:06:59.256 --> 00:07:00.636
+named threat caused the decline.
