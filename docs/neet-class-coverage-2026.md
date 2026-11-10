@@ -247,6 +247,10 @@ Supplementary route: `/neet/classes/genetics-problem-solving`. Eight narrated ch
 
 Supplementary route: `/neet/classes/ecology-data-workshop`. Nine narrated worked chapters, aligned captions, downloadable transcript and eighteen original questions. Separate progress: `neet.ecology-data-workshop.lecture.v1`. Covers open-population accounting, per-capita and logistic growth, quadrat density, GPP/NPP, energy transfers, biomass versus energy pyramids, decomposition evidence and conservation interpretation. Extends B12; further field datasets and conservation cases remain.
 
+## B15: Plant Physiology — Experiments and Data
+
+Supplementary route: `/neet/classes/plant-experiments`. Eight narrated chapters, aligned captions, downloadable transcript and sixteen original questions. Independent progress: `neet.plant-experiments.lecture.v1`. Covers net/gross photosynthesis, compensation and saturation, chloroplast pathways, Calvin-cycle budgets, C₄ reasoning, glycolysis, respiratory quotient and growth measurements. Extends the Plant Physiology foundation; further experimental designs, growth-regulator applications and diagrams remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |

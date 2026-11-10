@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English biology teacher. Read scientific symbols, gas names and units carefully. Speak every sentence fully with short thinking pauses. Do not add or omit words.",
+  "title": "Plant Physiology: Experiments and Data",
+  "subject": "Biology",
+  "unit": 4,
+  "scope": "NEET Biology Unit 4 practice workshop: photosynthesis measurements, light responses, chloroplast pathways, Calvin-cycle budgets, C₄ reasoning, glycolytic yields, respiratory quotients and growth data. Original problems extend the Plant Physiology foundation; further experiments and diagram practice remain.",
+  "sources": [
+    {
+      "title": "OpenStax Biology 2e: Light-dependent reactions",
+      "url": "https://openstax.org/books/biology-2e/pages/8-2-the-light-dependent-reactions-of-photosynthesis"
+    },
+    {
+      "title": "OpenStax Biology 2e: Calvin cycle and C₄ pathways",
+      "url": "https://openstax.org/books/biology-2e/pages/8-3-using-light-energy-to-make-organic-molecules"
+    },
+    {
+      "title": "OpenStax Biology 2e: Glycolysis",
+      "url": "https://openstax.org/books/biology-2e/pages/7-2-glycolysis"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Separate net and gross photosynthesis",
+      "formula": "Gross = net + respiration estimate",
+      "points": [
+        "Use matching units.",
+        "Respiration continues in light.",
+        "State the dark-respiration assumption."
+      ],
+      "script": "Welcome to the Plant Physiology evidence workshop. A leaf chamber records net carbon dioxide uptake of eight micromoles per square metre per second in light. A separate dark measurement records carbon dioxide release of two in the same units. If the question asks us to assume the same respiratory loss in light, estimated gross uptake is ten. The chamber measures a net exchange, not every internal carbon reaction separately. Respiration does not stop when a leaf is illuminated. However, dark respiration is not automatically an exact measurement of respiration in light. Write the supplied approximation before adding the rates, and keep area, time and gas units consistent."
+    },
+    {
+      "title": "Read the light-response curve",
+      "formula": "Compensation point: net CO₂ exchange = 0",
+      "points": [
+        "Distinguish zero net from zero gross.",
+        "A plateau suggests another limitation.",
+        "Control temperature and carbon dioxide."
+      ],
+      "script": "A light-response graph usually rises from negative net carbon uptake in darkness. The light compensation point is where net uptake reaches zero: photosynthetic uptake balances respiratory release under those conditions. It does not mean both processes have stopped. At higher light, the graph may flatten. Increasing light alone then produces little additional net uptake, suggesting that another process or resource limits the measured rate. It does not prove which factor is limiting. Compare carbon dioxide, temperature and water status while controlling other variables. A temperature rise caused by the lamp can confound a light-intensity experiment. Read the horizontal and vertical axes before identifying a compensation point or plateau."
+    },
+    {
+      "title": "Locate light reactions and carbon fixation",
+      "formula": "Thylakoid reactions → ATP/NADPH → stromal fixation",
+      "points": [
+        "Water supplies released oxygen.",
+        "ATP and NADPH support carbon reduction.",
+        "Light-independent does not mean night-only."
+      ],
+      "script": "Separate location, energy and carbon sources. In the chloroplast, thylakoid reactions use light to drive electron transfer and support ATP and NADPH formation. Oxygen released in oxygenic photosynthesis comes from water. The Calvin cycle operates in the stroma and incorporates carbon dioxide into organic molecules using ATP and NADPH. Calling it light-independent means the fixation steps do not directly require photons. It does not mean the cycle normally runs only at night, or that it is independent of products and regulation linked to light. An isotope-label question must say which molecule is labelled and which product is tested. Do not infer the oxygen source merely from the balanced overall equation."
+    },
+    {
+      "title": "Calculate the Calvin-cycle budget",
+      "formula": "3 CO₂ → net 1 G3P; 9 ATP + 6 NADPH",
+      "points": [
+        "Count net exported product.",
+        "Regeneration consumes ATP.",
+        "A hexose equivalent needs two G3P."
+      ],
+      "script": "Use a net carbon budget rather than counting every intermediate as an exported product. In the standard Calvin-cycle accounting, fixation of three carbon dioxide molecules yields one net three-carbon glyceraldehyde three-phosphate, or G three P, while the remaining carbon regenerates the acceptor. The cycle consumes nine ATP and six NADPH for that net product. A six-carbon carbohydrate equivalent therefore corresponds to six carbon dioxide, eighteen ATP and twelve NADPH in this simplified accounting. It is not correct to claim that each individual turn immediately releases a glucose molecule. These figures describe the Calvin cycle itself; additional cellular synthesis and transport can have other costs."
+    },
+    {
+      "title": "Distinguish C₄ concentration from the Calvin cycle",
+      "formula": "PEP carboxylation → CO₂ concentration → Rubisco",
+      "points": [
+        "Initial fixation differs from Calvin fixation.",
+        "C₄ plants still use the Calvin cycle.",
+        "Conditions determine comparative advantage."
+      ],
+      "script": "In the standard C four pathway, initial fixation uses phosphoenolpyruvate carboxylase in mesophyll cells, producing four-carbon acids. Their processing supplies carbon dioxide around Rubisco in bundle-sheath cells, reducing the oxygenation reaction under suitable conditions. The Calvin cycle still fixes carbon through Rubisco. C four concentration has an additional energy cost, so do not label it universally superior under every environment. High temperature, bright light and conditions favouring photorespiration can make the concentration mechanism advantageous. When interpreting a comparison, ask whether temperature, carbon dioxide and water availability were controlled. A single faster leaf measurement does not establish that every C four species always outperforms every C three species."
+    },
+    {
+      "title": "Keep glycolysis gross and net yields separate",
+      "formula": "4 ATP formed − 2 ATP invested = 2 ATP net",
+      "points": [
+        "One glucose produces two pyruvate.",
+        "Two NADH form per glucose.",
+        "Glycolysis does not directly consume oxygen."
+      ],
+      "script": "For one glucose molecule, glycolysis in the cytosol produces two pyruvate molecules. Four ATP are formed during the payoff reactions, but two were invested earlier, so the net yield is two ATP. Two NADH are also produced per glucose in the standard pathway. A question asking gross ATP formation therefore has a different answer from one asking net ATP gain. Glycolysis does not directly consume oxygen. Sustained operation nevertheless requires regeneration of oxidised NAD, either through aerobic metabolism or fermentation pathways under the appropriate conditions. Avoid giving a universal total ATP yield for complete respiration without knowing the accounting assumptions. Here we are counting glycolysis only, not the citric acid cycle or oxidative phosphorylation."
+    },
+    {
+      "title": "Interpret respiratory quotient",
+      "formula": "RQ = CO₂ released / O₂ consumed",
+      "points": [
+        "Use moles or matched gas volumes.",
+        "Match time and conditions.",
+        "RQ alone does not identify a mixed substrate."
+      ],
+      "script": "Respiratory quotient is carbon dioxide released divided by oxygen consumed. If a sample releases six millilitres of carbon dioxide while consuming eight millilitres of oxygen, measured under matching conditions over the same interval, the quotient is zero point seven five. Complete carbohydrate oxidation has a theoretical quotient of one, whereas lipid oxidation commonly has a quotient below one. A measured intermediate value does not uniquely identify a substrate: mixtures, measurement conditions and additional metabolism can affect it. If oxygen consumption is zero, this ratio has a zero denominator and is not an ordinary finite quotient. Never divide carbon dioxide volume by an oxygen rate unless the units and observation period are reconciled first."
+    },
+    {
+      "title": "Compare absolute and relative growth",
+      "formula": "AGR = Δsize/Δt; RGR = Δln(size)/Δt",
+      "points": [
+        "Define the size measure.",
+        "Initial size affects relative comparison.",
+        "Replicate treatments and control confounders."
+      ],
+      "script": "Two seedlings each gain two grams of dry mass in five days. Their average absolute growth rates are equal, at zero point four grams per day. If their starting masses differ, their relative growth need not be equal. For positive measured masses, the mean relative rate over an interval can be calculated as the change in natural logarithm of mass divided by elapsed time. A seedling growing from two to four grams doubles, while one growing from ten to twelve does not. Compare treatment effects using matched starting material and replicated groups. Fresh mass can change because of water content, so define whether the outcome is length, fresh mass, dry mass or another measure before interpreting growth."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Net uptake is 8 and assumed respiratory loss is 2 in matching units. Estimated gross uptake is:",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "answer": 3,
+      "explanation": "Gross uptake = net uptake + assumed respiratory loss = 10."
+    },
+    {
+      "question": "Which assumption allows a dark release measurement to correct light net uptake?",
+      "options": [
+        "Respiration stops in light",
+        "Respiratory loss in light equals the measured dark loss",
+        "All gases have identical exchange rates",
+        "Carbon fixation occurs only in darkness"
+      ],
+      "answer": 1,
+      "explanation": "The correction requires the explicitly stated equal-respiration approximation."
+    },
+    {
+      "question": "At the light compensation point, a leaf has:",
+      "options": [
+        "No respiration",
+        "No photosynthesis",
+        "Zero net carbon exchange",
+        "Maximum gross photosynthesis necessarily"
+      ],
+      "answer": 2,
+      "explanation": "Gross uptake balances respiratory release; both processes may continue."
+    },
+    {
+      "question": "A plateau in rate at high light alone proves:",
+      "options": [
+        "Carbon dioxide is definitely the only limit",
+        "More light has little effect under the tested conditions",
+        "Every enzyme has stopped",
+        "Water is definitely abundant"
+      ],
+      "answer": 1,
+      "explanation": "The plateau shows a limited response to more light, not the unique identity of the limiting factor."
+    },
+    {
+      "question": "The oxygen gas released during oxygenic photosynthesis derives from:",
+      "options": [
+        "Carbon dioxide",
+        "Water",
+        "Glucose alone",
+        "ATP"
+      ],
+      "answer": 1,
+      "explanation": "Water oxidation supplies the released oxygen."
+    },
+    {
+      "question": "The Calvin cycle in a chloroplast takes place mainly in the:",
+      "options": [
+        "Thylakoid lumen",
+        "Outer membrane",
+        "Stroma",
+        "Cytosol"
+      ],
+      "answer": 2,
+      "explanation": "Carbon fixation and Calvin-cycle reactions occur in the stroma."
+    },
+    {
+      "question": "Standard Calvin-cycle accounting for one net G3P uses:",
+      "options": [
+        "3 ATP and 2 NADPH",
+        "6 ATP and 9 NADPH",
+        "9 ATP and 6 NADPH",
+        "18 ATP and 6 NADPH"
+      ],
+      "answer": 2,
+      "explanation": "Three CO₂ yield one net G3P using 9 ATP and 6 NADPH."
+    },
+    {
+      "question": "A six-carbon carbohydrate equivalent corresponds to how many fixed CO₂ molecules?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "6"
+      ],
+      "answer": 3,
+      "explanation": "Two net three-carbon products require six CO₂."
+    },
+    {
+      "question": "In the standard C₄ pathway, initial mesophyll carbon fixation uses:",
+      "options": [
+        "PEP carboxylase",
+        "DNA polymerase",
+        "ATP synthase as a carboxylase",
+        "Pepsin"
+      ],
+      "answer": 0,
+      "explanation": "PEP carboxylase catalyses the initial fixation step."
+    },
+    {
+      "question": "Which statement about C₄ plants is correct?",
+      "options": [
+        "They lack Rubisco",
+        "They never use ATP",
+        "They still use the Calvin cycle",
+        "They release oxygen from carbon dioxide"
+      ],
+      "answer": 2,
+      "explanation": "The CO₂-concentrating mechanism supplies Rubisco and the Calvin cycle."
+    },
+    {
+      "question": "Net ATP gain per glucose from standard glycolysis is:",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "36"
+      ],
+      "answer": 1,
+      "explanation": "Four ATP formed minus two invested gives two net ATP."
+    },
+    {
+      "question": "Which is a standard glycolytic product per glucose?",
+      "options": [
+        "One pyruvate",
+        "Two pyruvate",
+        "Six carbon dioxide directly",
+        "Oxygen gas"
+      ],
+      "answer": 1,
+      "explanation": "The six-carbon glucose yields two three-carbon pyruvate molecules."
+    },
+    {
+      "question": "A sample releases 6 mL CO₂ and consumes 8 mL O₂ under matched conditions. RQ is:",
+      "options": [
+        "0.25",
+        "0.75",
+        "1.33",
+        "14"
+      ],
+      "answer": 1,
+      "explanation": "RQ = 6/8 = 0.75."
+    },
+    {
+      "question": "Theoretical RQ for complete glucose oxidation is:",
+      "options": [
+        "0",
+        "0.5",
+        "1",
+        "2"
+      ],
+      "answer": 2,
+      "explanation": "Glucose oxidation releases six CO₂ while consuming six O₂."
+    },
+    {
+      "question": "A dry-mass increase of 2 g over 5 days gives average absolute growth of:",
+      "options": [
+        "0.2 g day⁻¹",
+        "0.4 g day⁻¹",
+        "2.5 g day⁻¹",
+        "10 g day⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "2/5 = 0.4 grams per day."
+    },
+    {
+      "question": "Two seedlings gain the same mass in the same time but start at different masses. Their relative growth rates:",
+      "options": [
+        "Must be equal",
+        "Must both be zero",
+        "Need not be equal",
+        "Cannot be compared using any method"
+      ],
+      "answer": 2,
+      "explanation": "Relative growth accounts for starting size; equal absolute gain does not ensure equal relative gain."
+    }
+  ]
+}
