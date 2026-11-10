@@ -259,6 +259,10 @@ Supplementary route: `/neet/classes/human-physiology-data`. Eight narrated chapt
 
 Supplementary route: `/neet/classes/reproduction-ploidy`. Eight narrated chapters, aligned captions, downloadable transcript and sixteen original questions. Independent progress: `neet.reproduction-ploidy.lecture.v1`. Covers chromosome/DNA accounting, microsporogenesis, pollen development, typical monosporic embryo sacs, double fertilisation, seed-tissue origin, controlled crosses and idealised seed counts. Extends the Reproduction foundation; further human-reproduction, reproductive-health and labelled-diagram practice remain.
 
+## B18: Biotechnology — Gels, Counts and Experimental Controls
+
+Supplementary route: `/neet/classes/biotechnology-data`. Eight narrated chapters, aligned captions, downloadable transcript and sixteen original questions. Independent progress: `neet.biotechnology-data.lecture.v1`. Covers ideal amplification, gel-band interpretation, linear/circular restriction counts, selection versus screening, controls, cDNA and evidence limits. Extends the Biotechnology foundation; further labelled vector diagrams and mixed application datasets remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |

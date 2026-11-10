@@ -1,0 +1,279 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English biology teacher. Read scientific symbols, gas names and units carefully. Speak every sentence fully with short thinking pauses. Do not add or omit words.",
+  "title": "Biotechnology: Gels, Counts and Experimental Controls",
+  "subject": "Biology",
+  "unit": 9,
+  "scope": "NEET Biology Unit 9 data workshop: ideal PCR counts, linear-DNA gels, linear and circular restriction maps, selection versus screening, experimental controls, genomic DNA versus cDNA, and application evidence. Original conceptual questions extend the Biotechnology foundation; further labelled vector diagrams and mixed applications remain. No laboratory operating protocol is provided.",
+  "sources": [
+    {
+      "title": "OpenStax Biology 2e: Biotechnology techniques and evidence",
+      "url": "https://openstax.org/books/biology-2e/pages/17-1-biotechnology"
+    },
+    {
+      "title": "OpenStax Biology 2e: Genome mapping and restriction fragments",
+      "url": "https://openstax.org/books/biology-2e/pages/17-2-mapping-genomes"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Count ideal PCR amplification",
+      "formula": "N = N₀ × 2ᶜ",
+      "points": [
+        "Assume perfect doubling only when stated.",
+        "Count molecules rather than DNA strands.",
+        "Real amplification can plateau."
+      ],
+      "script": "Welcome to the Biotechnology data workshop. Use an ideal amplification model only when the question specifies perfect doubling. Starting with three double-stranded target molecules, five ideal cycles give three times two to the fifth power, or ninety-six molecules. This counts double-stranded copies, not separate strands. Real reactions can have incomplete efficiency and eventually plateau, so the ideal result is not a guaranteed experimental yield. A question about the precise length-defined product in early cycles needs additional accounting; it is not automatically answered by the total-copy formula. State what is counted, the starting number and the assumed efficiency before calculating."
+    },
+    {
+      "title": "Read a linear-DNA gel carefully",
+      "formula": "Smaller comparable linear DNA fragments usually migrate farther",
+      "points": [
+        "DNA moves toward the positive electrode.",
+        "Compare against the size ladder.",
+        "Migration alone does not establish sequence identity."
+      ],
+      "script": "For comparable linear double-stranded DNA fragments under the same gel conditions, smaller fragments usually travel farther through the matrix. DNA moves toward the positive electrode because of its negatively charged backbone. A size ladder provides reference bands; do not treat distance as a simple linear ruler for base-pair length over every range. A band near the five-hundred-base-pair marker suggests an approximate size, not the exact nucleotide sequence. Two unrelated fragments of the same length can migrate together. Uncut plasmids also have different conformations, so their migration cannot be interpreted exactly like a set of linear size standards without appropriate controls."
+    },
+    {
+      "title": "Keep restriction-fragment totals conserved",
+      "formula": "Sum of complete-digest fragment lengths = original DNA length",
+      "points": [
+        "For linear DNA, k cuts yield k+1 fragments.",
+        "Assume complete digestion and distinct sites.",
+        "Equal-sized fragments can share one band."
+      ],
+      "script": "A linear DNA molecule is twelve hundred base pairs long. A complete digest cuts at positions three hundred and nine hundred from one end. The fragments are three hundred, six hundred and three hundred base pairs. Their lengths sum to twelve hundred, so the accounting is consistent. There are three fragments but potentially only two distinct gel-band positions because the equal-sized fragments can migrate together. The shorter band may contain more DNA molecules than a band from one fragment, although intensity also depends on loading and detection. Keep fragment count, distinct fragment sizes and visible band count separate. Partial digestion requires a different interpretation."
+    },
+    {
+      "title": "Read circular restriction maps",
+      "formula": "A circular molecule with k distinct cuts yields k fragments for k≥1",
+      "points": [
+        "Include the interval crossing the map origin.",
+        "One cut linearises a circle.",
+        "No cut leaves an uncut circular molecule."
+      ],
+      "script": "For a circular DNA molecule, remember the interval that crosses the map's numbering origin. A three-thousand-base-pair circle with two distinct cut sites separated by one thousand base pairs gives fragments of one thousand and two thousand base pairs after complete digestion. One cut instead produces one linear fragment of three thousand base pairs. For at least one distinct cut, the number of fragments equals the number of cuts in a simple complete circular digest. The linear rule of cuts plus one does not apply to a circle. Always check that fragment sizes add back to the original length and that the question specifies circular or linear topology."
+    },
+    {
+      "title": "Separate selection from screening",
+      "formula": "Marker survival ≠ verified insert identity",
+      "points": [
+        "Selection enriches a defined phenotype.",
+        "Screening distinguishes candidates.",
+        "Expression needs additional evidence."
+      ],
+      "script": "Selection and screening answer different questions. A selectable marker can allow cells carrying a suitable marker to survive a defined selection, but survival alone does not prove that the intended DNA insert is present. An empty vector can retain that marker. A screening result can help distinguish candidate classes, yet it still depends on the assay's specificity and controls. Insert presence, correct sequence, orientation and expression are separate claims. Do not infer all four from one marker result. This workshop interprets conceptual evidence rather than giving a laboratory construction procedure. State what each readout detects and what additional evidence would be required for a stronger conclusion."
+    },
+    {
+      "title": "Use positive and negative controls to limit claims",
+      "formula": "A control tests a specific failure mode",
+      "points": [
+        "A no-template signal suggests contamination or nonspecific signal.",
+        "A positive control checks expected detection.",
+        "A negative result is conditional on assay performance."
+      ],
+      "script": "Suppose an amplification readout is positive in both the sample and a no-template control. The control warns that contamination or nonspecific signal may explain at least part of the result, so the sample cannot be interpreted as an unqualified target-positive conclusion. If the positive control fails, a negative sample result is also uncertain because the detection system may not have worked. Controls are not decorative comparison lanes: each tests a defined failure mode. A clean negative control and a successful positive control support interpretation, but they do not prove perfect specificity in every sample. Keep the strength of the conclusion proportional to the evidence."
+    },
+    {
+      "title": "Distinguish genomic DNA from cDNA",
+      "formula": "Processed mRNA → reverse transcription → cDNA",
+      "points": [
+        "Genomic DNA can include introns.",
+        "cDNA reflects the RNA template sampled.",
+        "A transcript does not by itself prove protein abundance."
+      ],
+      "script": "Genomic DNA and complementary DNA represent different starting information. A eukaryotic genomic region may include introns, whereas cDNA made from a fully processed messenger RNA reflects the joined exon sequence of that RNA. Reverse transcription produces DNA from an RNA template; it is not the same step as translating RNA into protein. Alternative processing can produce different transcripts, and a sample captures only the RNAs present and detected under its conditions. Finding a transcript supports expression at the RNA level, not a precise claim about protein amount or biological activity. In a size problem, first ask whether the template was genomic DNA or processed messenger RNA."
+    },
+    {
+      "title": "Match application evidence to the measured endpoint",
+      "formula": "DNA presence ≠ RNA expression ≠ functional outcome",
+      "points": [
+        "Choose a matched comparison.",
+        "State the measured trait.",
+        "Do not generalise one result to every context."
+      ],
+      "script": "Finish by evaluating a hypothetical crop study. A DNA assay indicates that a specified sequence is present. A separate RNA assay detects its transcript. Neither observation alone establishes the size of a protein effect, field yield, or resistance to every insect species. A stronger application claim needs an appropriate measured endpoint and a matched comparison under stated conditions. Differences can also depend on environment and genetic background. Likewise, detecting an RNA-silencing response does not mean the genomic DNA sequence was necessarily changed. Keep presence, expression and function in separate boxes, then connect them only when the evidence supports the link. These distinctions prevent overclaiming from a single biotechnology readout."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Three starting target molecules undergo five ideal doubling cycles. Total copies are:",
+      "options": [
+        "15",
+        "32",
+        "48",
+        "96"
+      ],
+      "answer": 3,
+      "explanation": "3 × 2⁵ = 96 double-stranded copies in the stated ideal model."
+    },
+    {
+      "question": "Why might observed amplification fall below the ideal doubling model?",
+      "options": [
+        "All DNA becomes positively charged",
+        "Efficiency can be incomplete and amplification can plateau",
+        "PCR always halves the template count",
+        "Double-stranded DNA cannot be copied"
+      ],
+      "answer": 1,
+      "explanation": "The doubling model assumes ideal efficiency; real reactions need not meet it."
+    },
+    {
+      "question": "Among comparable linear fragments in one gel, which usually migrates farthest?",
+      "options": [
+        "200 bp",
+        "500 bp",
+        "1000 bp",
+        "2000 bp"
+      ],
+      "answer": 0,
+      "explanation": "Smaller comparable linear fragments generally move farther."
+    },
+    {
+      "question": "Two bands at the same position establish which conclusion most directly?",
+      "options": [
+        "Identical nucleotide sequence",
+        "Identical gene expression",
+        "Similar migration and potentially similar size",
+        "Identical organism of origin"
+      ],
+      "answer": 2,
+      "explanation": "Co-migration supports a size comparison, not sequence identity."
+    },
+    {
+      "question": "Linear 1200 bp DNA cut at 300 and 900 bp produces:",
+      "options": [
+        "300, 300, 300 bp",
+        "300, 600, 300 bp",
+        "600, 600, 300 bp",
+        "900, 900 bp"
+      ],
+      "answer": 1,
+      "explanation": "The intervals are 300, 600 and 300 bp and sum to 1200."
+    },
+    {
+      "question": "Those three fragments may give only two distinct band positions because:",
+      "options": [
+        "One fragment has no DNA",
+        "The 600 bp fragment is always invisible",
+        "Two fragments have the same length",
+        "DNA cannot enter a gel"
+      ],
+      "answer": 2,
+      "explanation": "Equal-sized linear fragments can co-migrate."
+    },
+    {
+      "question": "A 3000 bp circular DNA cut once yields:",
+      "options": [
+        "Two 1500 bp fragments necessarily",
+        "One linear 3000 bp fragment",
+        "One 1500 bp fragment",
+        "Four fragments"
+      ],
+      "answer": 1,
+      "explanation": "One cut opens the circle into a single linear molecule."
+    },
+    {
+      "question": "A 3000 bp circle cut at two sites 1000 bp apart gives:",
+      "options": [
+        "1000 and 1000 bp",
+        "1500 and 1500 bp necessarily",
+        "1000 and 2000 bp",
+        "3000 and 1000 bp"
+      ],
+      "answer": 2,
+      "explanation": "The two intervals around the circle are 1000 and 2000 bp."
+    },
+    {
+      "question": "Growth associated with a selectable marker alone proves:",
+      "options": [
+        "Correct insert orientation",
+        "Correct insert sequence",
+        "The selected phenotype under the test conditions",
+        "Production of the intended protein"
+      ],
+      "answer": 2,
+      "explanation": "Selection tests a phenotype; it does not establish every property of the insert."
+    },
+    {
+      "question": "Why can an empty vector be a misleading positive candidate?",
+      "options": [
+        "It can retain the selectable marker",
+        "It necessarily contains the target insert",
+        "It has no DNA",
+        "It is always unable to enter a host"
+      ],
+      "answer": 0,
+      "explanation": "A marker can be present even without the intended insert."
+    },
+    {
+      "question": "A signal in the no-template control most directly raises concern about:",
+      "options": [
+        "Guaranteed sample specificity",
+        "Contamination or nonspecific signal",
+        "Absence of all DNA in the experiment",
+        "Perfect amplification efficiency"
+      ],
+      "answer": 1,
+      "explanation": "A no-template signal undermines an unqualified interpretation of the sample signal."
+    },
+    {
+      "question": "If the positive control fails, a negative sample readout:",
+      "options": [
+        "Proves the target absent in every possible amount",
+        "Is harder to interpret because detection may have failed",
+        "Proves contamination",
+        "Must be clinically diagnostic"
+      ],
+      "answer": 1,
+      "explanation": "A failed positive control means the detection process was not shown to work as expected."
+    },
+    {
+      "question": "cDNA made from a fully processed eukaryotic mRNA typically reflects:",
+      "options": [
+        "The joined exon sequence of that RNA",
+        "Every genomic intron necessarily",
+        "Only ribosomal protein sequence",
+        "An amino-acid chain"
+      ],
+      "answer": 0,
+      "explanation": "The cDNA reflects the processed RNA template rather than the complete intron-containing genomic region."
+    },
+    {
+      "question": "Reverse transcription produces:",
+      "options": [
+        "Protein from DNA",
+        "RNA from protein",
+        "DNA from RNA",
+        "Lipids from RNA"
+      ],
+      "answer": 2,
+      "explanation": "Reverse transcriptase makes DNA using RNA as a template."
+    },
+    {
+      "question": "Detection of a DNA sequence alone establishes most directly:",
+      "options": [
+        "Universal field resistance",
+        "Presence of the detected sequence within the assay limits",
+        "Protein activity in every tissue",
+        "Higher yield in every environment"
+      ],
+      "answer": 1,
+      "explanation": "Sequence detection is evidence of presence, not every downstream functional outcome."
+    },
+    {
+      "question": "RNA silencing necessarily means that the genomic DNA sequence was changed. This statement is:",
+      "options": [
+        "Always true",
+        "True whenever RNA decreases",
+        "False; expression can change without changing genomic sequence",
+        "A definition of reverse transcription"
+      ],
+      "answer": 2,
+      "explanation": "RNA-level regulation need not alter genomic DNA sequence."
+    }
+  ]
+}
