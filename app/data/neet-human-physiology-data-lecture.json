@@ -1,0 +1,287 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English biology teacher. Read scientific symbols, gas names and units carefully. Speak every sentence fully with short thinking pauses. Do not add or omit words.",
+  "title": "Human Physiology: Numerical and Data Workshop",
+  "subject": "Biology",
+  "unit": 5,
+  "scope": "NEET Biology Unit 5 practice supplement: ventilation, dead space, lung capacities, cardiac output, ECG timing, filtration, tubular solute accounting and integrated exercise data. Original textbook calculations, not personal diagnostic guidance. Extends the Human Physiology foundation; further diagrams and neural/endocrine applications remain.",
+  "sources": [
+    {
+      "title": "OpenStax Anatomy and Physiology 2e: Breathing and lung volumes",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-3-the-process-of-breathing"
+    },
+    {
+      "title": "OpenStax Anatomy and Physiology 2e: Cardiac output",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-4-cardiac-physiology"
+    },
+    {
+      "title": "OpenStax Anatomy and Physiology 2e: ECG and electrical activity",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-2-cardiac-muscle-and-electrical-activity"
+    },
+    {
+      "title": "OpenStax Anatomy and Physiology 2e: Filtration and tubular processing",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-5-physiology-of-urine-formation"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Calculate minute ventilation",
+      "formula": "V̇E = tidal volume × breathing frequency",
+      "points": [
+        "Convert millilitres to litres.",
+        "Use breaths per minute.",
+        "Ventilation is not oxygen consumption."
+      ],
+      "script": "Welcome to the Human Physiology data workshop. Use the question's measurements rather than memorised average values. If tidal volume is five hundred millilitres per breath and breathing frequency is twelve per minute, minute ventilation is six thousand millilitres per minute, or six litres per minute. This measures air moved, not the volume of oxygen taken into blood. Multiplication cancels the breath unit. Before comparing two measurements, check whether the volumes describe the whole breath or only the air reaching gas-exchanging regions. These examples teach model calculations and are not a way to diagnose a person from a single reading."
+    },
+    {
+      "title": "Subtract dead space before comparing patterns",
+      "formula": "V̇A = (VT − VD) × f",
+      "points": [
+        "Dead space does not exchange gas in this model.",
+        "Equal minute ventilation can hide different alveolar ventilation.",
+        "Use the specified dead-space value."
+      ],
+      "script": "Suppose the question specifies anatomical dead space of one hundred fifty millilitres per breath. With a five hundred-millilitre tidal volume and twelve breaths per minute, estimated alveolar ventilation is three hundred fifty times twelve, or four point two litres per minute. Compare shallow breathing at three hundred millilitres and twenty breaths per minute. Minute ventilation is still six litres, but the same assumed dead space leaves only three litres per minute of alveolar ventilation. Therefore equal total air movement does not establish equal effective ventilation. This simplified calculation holds dead space fixed and describes the supplied model, not every real breathing pattern or disease state."
+    },
+    {
+      "title": "Build lung capacities from named volumes",
+      "formula": "VC = IRV + TV + ERV; TLC = VC + RV",
+      "points": [
+        "Residual volume remains after maximal expiration.",
+        "Do not count a component twice.",
+        "Simple spirometry does not measure RV directly."
+      ],
+      "script": "A problem gives inspiratory reserve volume as three litres, tidal volume as half a litre, expiratory reserve volume as one litre and residual volume as one point two litres. Vital capacity is the first three added together, giving four point five litres. Total lung capacity also includes residual volume and is five point seven litres. Residual volume remains after maximal expiration, so it is not part of the air expelled as vital capacity. A simple spirometer records exchanged air and cannot directly measure the residual volume. Consequently capacities containing residual volume require additional measurement methods. Label each compartment before adding numbers from a graph."
+    },
+    {
+      "title": "Connect stroke volume and cardiac output",
+      "formula": "SV = EDV − ESV; CO = HR × SV",
+      "points": [
+        "Subtract ventricular volumes first.",
+        "Cardiac output is per ventricle.",
+        "Convert mL to L after multiplication."
+      ],
+      "script": "For one ventricle, suppose end-diastolic volume is one hundred twenty millilitres and end-systolic volume is fifty. Stroke volume is seventy millilitres per beat. At seventy-five beats per minute, cardiac output is five thousand two hundred fifty millilitres per minute, or five point two five litres per minute. Do not add left and right ventricular outputs to report the ordinary cardiac-output value: the pulmonary and systemic circuits are arranged in series. At a steady state their average outputs are approximately equal. A change in heart rate alone does not determine the new output if stroke volume also changes. Keep the two factors visible."
+    },
+    {
+      "title": "Read ECG timing without confusing contraction",
+      "formula": "Heart rate = 60 / regular R–R interval in seconds",
+      "points": [
+        "P: atrial depolarisation.",
+        "QRS: ventricular depolarisation.",
+        "T: ventricular repolarisation."
+      ],
+      "script": "An electrocardiogram records electrical activity rather than blood volume or force of contraction. In the standard interpretation, the P wave corresponds to atrial depolarisation, the Q R S complex to ventricular depolarisation, and the T wave to ventricular repolarisation. Mechanical events follow electrical activation; they are not identical measurements. For a regular rhythm with successive R peaks separated by zero point eight seconds, the rate is sixty divided by zero point eight, or seventy-five beats per minute. Use a stated time scale. For an irregular trace, one interval may not represent the average rate. This workshop interprets textbook traces and does not diagnose real ECG recordings."
+    },
+    {
+      "title": "Distinguish filtration from final urine",
+      "formula": "Daily filtrate = GFR × 1440 min day⁻¹",
+      "points": [
+        "Convert mL to L.",
+        "Filtrate volume is not urine output.",
+        "Most filtered water is reabsorbed."
+      ],
+      "script": "A hypothetical combined glomerular filtration rate is one hundred twenty-five millilitres per minute. Multiply by one thousand four hundred forty minutes in a day to obtain one hundred eighty thousand millilitres, or one hundred eighty litres of filtrate per day. That is not one hundred eighty litres of final urine. Tubular processing returns most filtered water and many solutes to the circulation. If final urine volume in the supplied dataset is one point eight litres per day, the net difference in water volumes is one hundred seventy-eight point two litres. The simplified fraction returned is ninety-nine percent. Use the stated values; they are a calculation example rather than a universal personal target."
+    },
+    {
+      "title": "Keep renal solute amounts and concentrations separate",
+      "formula": "Excretion = filtration + secretion − reabsorption",
+      "points": [
+        "Compare amounts per time.",
+        "Tubular secretion adds solute to tubular fluid.",
+        "Concentration changes need not mean new solute."
+      ],
+      "script": "For a model solute, suppose filtered load is one hundred milligrams per minute. Tubular secretion adds twenty, while reabsorption removes ninety from the tubular fluid. Excretion is therefore thirty milligrams per minute. Reabsorption moves material from tubular fluid toward blood; secretion moves it in the opposite direction. Do not substitute a concentration in milligrams per millilitre for an amount per minute. To calculate excretion from urine data, multiply urine concentration by urine flow in matching units. A urine concentration of ten milligrams per millilitre and flow of three millilitres per minute gives thirty milligrams per minute. Water removal can raise concentration without creating additional solute."
+    },
+    {
+      "title": "Integrate exercise data and control variables",
+      "formula": "Compare measured changes; do not infer an unmeasured cause",
+      "points": [
+        "Separate ventilation and circulation.",
+        "Use matched time points.",
+        "Distinguish association from mechanism."
+      ],
+      "script": "Finish with an integrated dataset. At rest, cardiac output is five litres per minute. During a specified activity it is twelve litres per minute, an increase of seven litres per minute or one hundred forty percent relative to rest. The final value is two point four times baseline. A simultaneous rise in ventilation is consistent with coordinated responses, but those two measurements alone do not identify every neural, hormonal or metabolic cause. Compare matched time points and state whether values are instantaneous or averaged. A recovery measurement is not the same as one taken during activity. Use replicated observations and control relevant conditions before claiming that one changed factor caused the entire response."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Tidal volume is 500 mL and frequency is 12 min⁻¹. Minute ventilation is:",
+      "options": [
+        "0.6 L min⁻¹",
+        "6 L min⁻¹",
+        "12 L min⁻¹",
+        "60 L min⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "500 × 12 = 6000 mL min⁻¹ = 6 L min⁻¹."
+    },
+    {
+      "question": "Minute ventilation directly describes:",
+      "options": [
+        "Oxygen consumed by cells",
+        "Air moved per minute",
+        "Blood pumped per minute",
+        "Carbon dioxide dissolved in plasma"
+      ],
+      "answer": 1,
+      "explanation": "It is an air-volume flow measurement, not a metabolic gas-uptake measurement."
+    },
+    {
+      "question": "With VT=500 mL, VD=150 mL and f=12 min⁻¹, alveolar ventilation is:",
+      "options": [
+        "1.8 L min⁻¹",
+        "3.0 L min⁻¹",
+        "4.2 L min⁻¹",
+        "6.0 L min⁻¹"
+      ],
+      "answer": 2,
+      "explanation": "(500 − 150) × 12 = 4200 mL min⁻¹."
+    },
+    {
+      "question": "VT=300 mL, VD=150 mL and f=20 min⁻¹ gives alveolar ventilation of:",
+      "options": [
+        "1.5 L min⁻¹",
+        "3.0 L min⁻¹",
+        "6.0 L min⁻¹",
+        "9.0 L min⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "(300 − 150) × 20 = 3000 mL min⁻¹."
+    },
+    {
+      "question": "IRV=3 L, TV=0.5 L and ERV=1 L. Vital capacity is:",
+      "options": [
+        "3.5 L",
+        "4.0 L",
+        "4.5 L",
+        "5.7 L"
+      ],
+      "answer": 2,
+      "explanation": "VC = 3 + 0.5 + 1 = 4.5 L."
+    },
+    {
+      "question": "Which cannot be directly measured with simple spirometry?",
+      "options": [
+        "Tidal volume",
+        "Expiratory reserve volume",
+        "Vital capacity",
+        "Residual volume"
+      ],
+      "answer": 3,
+      "explanation": "Residual air is not expelled into the simple spirometer."
+    },
+    {
+      "question": "EDV=120 mL and ESV=50 mL. Stroke volume is:",
+      "options": [
+        "50 mL",
+        "70 mL",
+        "120 mL",
+        "170 mL"
+      ],
+      "answer": 1,
+      "explanation": "SV = 120 − 50 = 70 mL per beat."
+    },
+    {
+      "question": "At HR=75 min⁻¹ and SV=70 mL, cardiac output is:",
+      "options": [
+        "0.525 L min⁻¹",
+        "5.25 L min⁻¹",
+        "10.5 L min⁻¹",
+        "52.5 L min⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "75 × 70 = 5250 mL min⁻¹ = 5.25 L min⁻¹."
+    },
+    {
+      "question": "For a regular R–R interval of 0.8 s, heart rate is:",
+      "options": [
+        "48 min⁻¹",
+        "60 min⁻¹",
+        "75 min⁻¹",
+        "80 min⁻¹"
+      ],
+      "answer": 2,
+      "explanation": "60/0.8 = 75 beats per minute."
+    },
+    {
+      "question": "The T wave in a standard ECG represents:",
+      "options": [
+        "Atrial depolarisation",
+        "Ventricular depolarisation",
+        "Ventricular repolarisation",
+        "Blood ejection volume directly"
+      ],
+      "answer": 2,
+      "explanation": "T represents ventricular repolarisation."
+    },
+    {
+      "question": "A GFR of 125 mL min⁻¹ corresponds to daily filtrate of:",
+      "options": [
+        "18 L",
+        "125 L",
+        "180 L",
+        "1800 L"
+      ],
+      "answer": 2,
+      "explanation": "125 × 1440 = 180,000 mL = 180 L per day."
+    },
+    {
+      "question": "With 180 L filtrate and 1.8 L urine per day, the simplified fraction of filtered water returned is:",
+      "options": [
+        "1%",
+        "10%",
+        "90%",
+        "99%"
+      ],
+      "answer": 3,
+      "explanation": "(180 − 1.8)/180 = 0.99 = 99%."
+    },
+    {
+      "question": "Filtered load=100, secretion=20 and reabsorption=90 mg min⁻¹. Excretion is:",
+      "options": [
+        "10 mg min⁻¹",
+        "30 mg min⁻¹",
+        "170 mg min⁻¹",
+        "210 mg min⁻¹"
+      ],
+      "answer": 1,
+      "explanation": "100 + 20 − 90 = 30 mg min⁻¹."
+    },
+    {
+      "question": "Urine concentration is 10 mg mL⁻¹ and flow is 3 mL min⁻¹. Excretion rate is:",
+      "options": [
+        "3.33 mg min⁻¹",
+        "7 mg min⁻¹",
+        "13 mg min⁻¹",
+        "30 mg min⁻¹"
+      ],
+      "answer": 3,
+      "explanation": "Concentration × flow = 10 × 3 = 30 mg min⁻¹."
+    },
+    {
+      "question": "Cardiac output rises from 5 to 12 L min⁻¹. The increase relative to baseline is:",
+      "options": [
+        "40%",
+        "70%",
+        "140%",
+        "240%"
+      ],
+      "answer": 2,
+      "explanation": "(12 − 5)/5 × 100 = 140%; 240% is the final value as a percentage of baseline."
+    },
+    {
+      "question": "Ventilation and cardiac output rise together in one observation. This alone establishes:",
+      "options": [
+        "The unique hormonal cause",
+        "That breathing directly caused every cardiac change",
+        "An association in the measurements",
+        "That all other variables were controlled"
+      ],
+      "answer": 2,
+      "explanation": "Co-occurrence does not uniquely identify mechanism or establish complete causal control."
+    }
+  ]
+}

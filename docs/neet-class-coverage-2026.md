@@ -251,6 +251,10 @@ Supplementary route: `/neet/classes/ecology-data-workshop`. Nine narrated worked
 
 Supplementary route: `/neet/classes/plant-experiments`. Eight narrated chapters, aligned captions, downloadable transcript and sixteen original questions. Independent progress: `neet.plant-experiments.lecture.v1`. Covers net/gross photosynthesis, compensation and saturation, chloroplast pathways, Calvin-cycle budgets, C₄ reasoning, glycolysis, respiratory quotient and growth measurements. Extends the Plant Physiology foundation; further experimental designs, growth-regulator applications and diagrams remain.
 
+## B16: Human Physiology — Numerical and Data Workshop
+
+Supplementary route: `/neet/classes/human-physiology-data`. Eight narrated chapters, aligned captions, downloadable transcript and sixteen original questions. Independent progress: `neet.human-physiology-data.lecture.v1`. Covers minute/alveolar ventilation, lung volumes, stroke volume and cardiac output, ECG timing, daily filtrate, renal solute accounting and integrated exercise data. Extends the Human Physiology foundation; further diagrams, neural/endocrine and mixed applications remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |

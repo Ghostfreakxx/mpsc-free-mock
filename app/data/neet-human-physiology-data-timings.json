@@ -1,0 +1,687 @@
+{
+  "duration": 352.3440000000062,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 40.00800000000063
+    },
+    {
+      "start": 40.00800000000063,
+      "end": 81.91200000000133
+    },
+    {
+      "start": 81.91200000000133,
+      "end": 131.2800000000023
+    },
+    {
+      "start": 131.2800000000023,
+      "end": 171.79200000000296
+    },
+    {
+      "start": 171.79200000000296,
+      "end": 219.40800000000388
+    },
+    {
+      "start": 219.40800000000388,
+      "end": 260.3280000000045
+    },
+    {
+      "start": 260.3280000000045,
+      "end": 306.74400000000537
+    },
+    {
+      "start": 306.74400000000537,
+      "end": 352.3440000000062
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 2.859999895095825,
+      "text": "Welcome to the Human Physiology data workshop.",
+      "chapter": 0
+    },
+    {
+      "start": 3.9200000762939453,
+      "end": 7.340000152587891,
+      "text": "Use the question's measurements rather than memorised average values.",
+      "chapter": 0
+    },
+    {
+      "start": 8.220000267028809,
+      "end": 12.720000267028809,
+      "text": "If tidal volume is five hundred millilitres per breath and breathing frequency",
+      "chapter": 0
+    },
+    {
+      "start": 12.720000267028809,
+      "end": 17.040000915527344,
+      "text": "is twelve per minute, minute ventilation is six thousand millilitres per",
+      "chapter": 0
+    },
+    {
+      "start": 17.040000915527344,
+      "end": 18.84000015258789,
+      "text": "minute, or six litres per minute.",
+      "chapter": 0
+    },
+    {
+      "start": 19.559999465942383,
+      "end": 23.219999313354492,
+      "text": "This measures air moved, not the volume of oxygen taken into blood.",
+      "chapter": 0
+    },
+    {
+      "start": 24.479999542236328,
+      "end": 25.940000534057617,
+      "text": "Multiplication cancels the breath unit.",
+      "chapter": 0
+    },
+    {
+      "start": 26.700000762939453,
+      "end": 30.181538581848145,
+      "text": "Before comparing two measurements, check whether the volumes describe the",
+      "chapter": 0
+    },
+    {
+      "start": 30.181538581848145,
+      "end": 30.420000076293945,
+      "text": "whole",
+      "chapter": 0
+    },
+    {
+      "start": 30.420000076293945,
+      "end": 33.619998931884766,
+      "text": "breath or only the air reaching gas exchanging regions.",
+      "chapter": 0
+    },
+    {
+      "start": 34.439998626708984,
+      "end": 38.63999938964844,
+      "text": "These examples teach model calculations and are not a way to diagnose a person",
+      "chapter": 0
+    },
+    {
+      "start": 38.63999938964844,
+      "end": 39.84000015258789,
+      "text": "from a single reading.",
+      "chapter": 0
+    },
+    {
+      "start": 40.00800000000063,
+      "end": 43.91799984741274,
+      "text": "Suppose the question specifies anatomical dead space of one hundred fifty",
+      "chapter": 1
+    },
+    {
+      "start": 43.91799984741274,
+      "end": 44.86800013351503,
+      "text": "millilitres per breath.",
+      "chapter": 1
+    },
+    {
+      "start": 45.92800007629457,
+      "end": 49.388000114441546,
+      "text": "With a five hundred millilitre tidal volume and twelve breaths per minute,",
+      "chapter": 1
+    },
+    {
+      "start": 50.108000381470355,
+      "end": 54.608000381470355,
+      "text": "estimated alveolar ventilation is three hundred fifty times twelve, or four",
+      "chapter": 1
+    },
+    {
+      "start": 54.608000381470355,
+      "end": 55.78799973297182,
+      "text": "point two litres per minute.",
+      "chapter": 1
+    },
+    {
+      "start": 56.9079996185309,
+      "end": 60.268000228882464,
+      "text": "Compare shallow breathing at three hundred millilitres and twenty breaths per",
+      "chapter": 1
+    },
+    {
+      "start": 60.268000228882464,
+      "end": 60.467999084473284,
+      "text": "minute.",
+      "chapter": 1
+    },
+    {
+      "start": 61.4079996185309,
+      "end": 65.5280004577643,
+      "text": "Minute ventilation is still six litres, but the same assumed dead space leaves",
+      "chapter": 1
+    },
+    {
+      "start": 65.5280004577643,
+      "end": 67.94800053405825,
+      "text": "only three litres per minute of alveolar ventilation.",
+      "chapter": 1
+    },
+    {
+      "start": 69.06799946594302,
+      "end": 72.84800015258853,
+      "text": "Therefore equal total air movement does not establish equal effective",
+      "chapter": 1
+    },
+    {
+      "start": 72.84800015258853,
+      "end": 73.30799923706118,
+      "text": "ventilation.",
+      "chapter": 1
+    },
+    {
+      "start": 74.30799923706118,
+      "end": 78.46799908447329,
+      "text": "This simplified calculation holds dead space fixed and describes the supplied",
+      "chapter": 1
+    },
+    {
+      "start": 78.46799908447329,
+      "end": 81.70800076294009,
+      "text": "model, not every real breathing pattern or disease state.",
+      "chapter": 1
+    },
+    {
+      "start": 81.91200000000133,
+      "end": 87.8720000381483,
+      "text": "A problem gives inspiratory reserve volume as three litres, tidal volume as",
+      "chapter": 2
+    },
+    {
+      "start": 87.8720000381483,
+      "end": 93.75200015258922,
+      "text": "half a litre, expiratory reserve volume as one litre and residual volume as",
+      "chapter": 2
+    },
+    {
+      "start": 93.75200015258922,
+      "end": 95.932000457765,
+      "text": "one point two litres.",
+      "chapter": 2
+    },
+    {
+      "start": 95.932000457765,
+      "end": 100.21199923706187,
+      "text": "Vital capacity is the first three added together, giving four point five",
+      "chapter": 2
+    },
+    {
+      "start": 100.21199923706187,
+      "end": 101.63199931335582,
+      "text": "litres.",
+      "chapter": 2
+    },
+    {
+      "start": 101.63199931335582,
+      "end": 105.97199946594371,
+      "text": "Total lung capacity also includes residual volume and is five point seven",
+      "chapter": 2
+    },
+    {
+      "start": 105.97199946594371,
+      "end": 107.11200076294078,
+      "text": "litres.",
+      "chapter": 2
+    },
+    {
+      "start": 107.11200076294078,
+      "end": 112.61200076294078,
+      "text": "Residual volume remains after maximal expiration, so it is not part of the air",
+      "chapter": 2
+    },
+    {
+      "start": 112.61200076294078,
+      "end": 114.51199847412242,
+      "text": "expelled as vital capacity.",
+      "chapter": 2
+    },
+    {
+      "start": 115.6919987792982,
+      "end": 120.91200000000133,
+      "text": "A simple spirometer records exchanged air and cannot directly measure the",
+      "chapter": 2
+    },
+    {
+      "start": 120.91200000000133,
+      "end": 121.29200106811656,
+      "text": "residual volume.",
+      "chapter": 2
+    },
+    {
+      "start": 122.51199847412242,
+      "end": 126.35199862671031,
+      "text": "Consequently capacities containing residual volume require additional",
+      "chapter": 2
+    },
+    {
+      "start": 126.35199862671031,
+      "end": 127.1919987792982,
+      "text": "measurement methods.",
+      "chapter": 2
+    },
+    {
+      "start": 128.371999084474,
+      "end": 131.09200030517712,
+      "text": "Label each compartment before adding numbers from a graph.",
+      "chapter": 2
+    },
+    {
+      "start": 131.2800000000023,
+      "end": 135.67999985695116,
+      "text": "For one ventricle, suppose end diastolic volume is one hundred twenty",
+      "chapter": 3
+    },
+    {
+      "start": 135.67999985695116,
+      "end": 138.6200001525902,
+      "text": "millilitres and end systolic volume is fifty.",
+      "chapter": 3
+    },
+    {
+      "start": 139.5599997329735,
+      "end": 141.74000003814928,
+      "text": "Stroke volume is seventy millilitres per beat.",
+      "chapter": 3
+    },
+    {
+      "start": 142.42000034332506,
+      "end": 146.96000030517808,
+      "text": "At seventy five beats per minute, cardiac output is five thousand two hundred",
+      "chapter": 3
+    },
+    {
+      "start": 146.96000030517808,
+      "end": 150.96000030517808,
+      "text": "fifty millilitres per minute, or five point two five litres per minute.",
+      "chapter": 3
+    },
+    {
+      "start": 152.0600006866478,
+      "end": 156.20000007629625,
+      "text": "Do not add left and right ventricular outputs to report the ordinary cardiac",
+      "chapter": 3
+    },
+    {
+      "start": 156.20000007629625,
+      "end": 161.01999977112047,
+      "text": "output value: the pulmonary and systemic circuits are arranged in series.",
+      "chapter": 3
+    },
+    {
+      "start": 161.96000030517808,
+      "end": 165.2800000000023,
+      "text": "At a steady state their average outputs are approximately equal.",
+      "chapter": 3
+    },
+    {
+      "start": 166.07999923706285,
+      "end": 170.25230735192162,
+      "text": "A change in heart rate alone does not determine the new output if stroke",
+      "chapter": 3
+    },
+    {
+      "start": 170.25230735192162,
+      "end": 170.59999969482652,
+      "text": "volume",
+      "chapter": 3
+    },
+    {
+      "start": 170.59999969482652,
+      "end": 171.4399998474144,
+      "text": "also changes.",
+      "chapter": 3
+    },
+    {
+      "start": 171.4399998474144,
+      "end": 171.79200000000296,
+      "text": "Keep the two factors visible.",
+      "chapter": 3
+    },
+    {
+      "start": 171.79200000000296,
+      "end": 176.65200013351736,
+      "text": "An electrocardiogram records electrical activity rather than blood volume or",
+      "chapter": 4
+    },
+    {
+      "start": 176.65200013351736,
+      "end": 177.4919998092681,
+      "text": "force of contraction.",
+      "chapter": 4
+    },
+    {
+      "start": 178.45199984741507,
+      "end": 182.03199977112112,
+      "text": "In the standard interpretation, the P wave corresponds to atrial",
+      "chapter": 4
+    },
+    {
+      "start": 182.03199977112112,
+      "end": 187.81200045776663,
+      "text": "depolarisation, the Q R S complex to ventricular depolarisation, and the T",
+      "chapter": 4
+    },
+    {
+      "start": 187.81200045776663,
+      "end": 191.15200061035452,
+      "text": "wave to ventricular repolarisation.",
+      "chapter": 4
+    },
+    {
+      "start": 191.15200061035452,
+      "end": 194.65200061035452,
+      "text": "Mechanical events follow electrical activation; they are not identical",
+      "chapter": 4
+    },
+    {
+      "start": 194.65200061035452,
+      "end": 195.11199969482718,
+      "text": "measurements.",
+      "chapter": 4
+    },
+    {
+      "start": 195.85199946594534,
+      "end": 200.371999923709,
+      "text": "For a regular rhythm with successive R peaks separated by zero point eight",
+      "chapter": 4
+    },
+    {
+      "start": 200.371999923709,
+      "end": 205.57199877929983,
+      "text": "seconds, the rate is sixty divided by zero point eight, or seventy five beats",
+      "chapter": 4
+    },
+    {
+      "start": 205.57199877929983,
+      "end": 206.05199832153616,
+      "text": "per minute.",
+      "chapter": 4
+    },
+    {
+      "start": 207.11199969482718,
+      "end": 208.35200137329397,
+      "text": "Use a stated time scale.",
+      "chapter": 4
+    },
+    {
+      "start": 209.29200000000296,
+      "end": 213.05199832153616,
+      "text": "For an irregular trace, one interval may not represent the average rate.",
+      "chapter": 4
+    },
+    {
+      "start": 213.6720010681182,
+      "end": 218.29200000000296,
+      "text": "This workshop interprets textbook traces and does not diagnose real ECG",
+      "chapter": 4
+    },
+    {
+      "start": 218.29200000000296,
+      "end": 218.73199862671194,
+      "text": "recordings.",
+      "chapter": 4
+    },
+    {
+      "start": 219.40800000000388,
+      "end": 224.11199999618918,
+      "text": "A hypothetical combined glomerular filtration rate is one hundred twenty five",
+      "chapter": 5
+    },
+    {
+      "start": 224.11199999618918,
+      "end": 224.98799992370994,
+      "text": "millilitres per minute.",
+      "chapter": 5
+    },
+    {
+      "start": 224.98799992370994,
+      "end": 229.4599998550454,
+      "text": "Multiply by one thousand four hundred forty minutes in a day to obtain one",
+      "chapter": 5
+    },
+    {
+      "start": 229.4599998550454,
+      "end": 233.1280002670327,
+      "text": "hundred eighty thousand millilitres, or one hundred eighty litres of filtrate",
+      "chapter": 5
+    },
+    {
+      "start": 233.1280002670327,
+      "end": 233.60799980926902,
+      "text": "per day.",
+      "chapter": 5
+    },
+    {
+      "start": 234.10799980926902,
+      "end": 236.76800061035544,
+      "text": "That is not one hundred eighty litres of final urine.",
+      "chapter": 5
+    },
+    {
+      "start": 237.60800076294333,
+      "end": 241.28799916077048,
+      "text": "Tubular processing returns most filtered water and many solutes to the",
+      "chapter": 5
+    },
+    {
+      "start": 241.28799916077048,
+      "end": 241.62799931335837,
+      "text": "circulation.",
+      "chapter": 5
+    },
+    {
+      "start": 242.36799908447654,
+      "end": 246.28799916077048,
+      "text": "If final urine volume in the supplied dataset is one point eight litres per",
+      "chapter": 5
+    },
+    {
+      "start": 246.28799916077048,
+      "end": 250.28800084804044,
+      "text": "day, the net difference in water volumes is one hundred seventy eight point",
+      "chapter": 5
+    },
+    {
+      "start": 250.28800084804044,
+      "end": 250.44800091553122,
+      "text": "two",
+      "chapter": 5
+    },
+    {
+      "start": 250.44800091553122,
+      "end": 251.36799908447654,
+      "text": "litres.",
+      "chapter": 5
+    },
+    {
+      "start": 251.36799908447654,
+      "end": 254.68799877930076,
+      "text": "The simplified fraction returned is ninety nine percent.",
+      "chapter": 5
+    },
+    {
+      "start": 254.68799877930076,
+      "end": 259.2279996948281,
+      "text": "Use the stated values; they are a calculation example rather than a universal",
+      "chapter": 5
+    },
+    {
+      "start": 259.2279996948281,
+      "end": 259.98800183105857,
+      "text": "personal target.",
+      "chapter": 5
+    },
+    {
+      "start": 260.3280000000045,
+      "end": 264.7154360536963,
+      "text": "For a model solute, suppose filtered load is one hundred milligrams per",
+      "chapter": 6
+    },
+    {
+      "start": 264.7154360536963,
+      "end": 265.1480001716659,
+      "text": "minute.",
+      "chapter": 6
+    },
+    {
+      "start": 266.0679997711227,
+      "end": 270.52799980926966,
+      "text": "Tubular secretion adds twenty, while reabsorption removes ninety from the",
+      "chapter": 6
+    },
+    {
+      "start": 270.52799980926966,
+      "end": 271.02799980926966,
+      "text": "tubular fluid.",
+      "chapter": 6
+    },
+    {
+      "start": 272.30799954224085,
+      "end": 274.4479998855636,
+      "text": "Excretion is therefore thirty milligrams per minute.",
+      "chapter": 6
+    },
+    {
+      "start": 275.3880004196212,
+      "end": 280.0064608058486,
+      "text": "Reabsorption moves material from tubular fluid toward blood; secretion moves",
+      "chapter": 6
+    },
+    {
+      "start": 280.0064608058486,
+      "end": 280.12799923706507,
+      "text": "it",
+      "chapter": 6
+    },
+    {
+      "start": 280.12799923706507,
+      "end": 281.1880006103561,
+      "text": "in the opposite direction.",
+      "chapter": 6
+    },
+    {
+      "start": 282.08800022888636,
+      "end": 286.0679997711227,
+      "text": "Do not substitute a concentration in milligrams per millilitre for an amount",
+      "chapter": 6
+    },
+    {
+      "start": 286.0679997711227,
+      "end": 286.58800022888636,
+      "text": "per minute.",
+      "chapter": 6
+    },
+    {
+      "start": 286.58800022888636,
+      "end": 292.4080018310592,
+      "text": "To calculate excretion from urine data, multiply urine concentration by urine",
+      "chapter": 6
+    },
+    {
+      "start": 292.4080018310592,
+      "end": 293.7879990844772,
+      "text": "flow in matching units.",
+      "chapter": 6
+    },
+    {
+      "start": 294.74799816894983,
+      "end": 298.86800091553187,
+      "text": "A urine concentration of ten milligrams per millilitre and flow of three",
+      "chapter": 6
+    },
+    {
+      "start": 298.86800091553187,
+      "end": 301.7879990844772,
+      "text": "millilitres per minute gives thirty milligrams per minute.",
+      "chapter": 6
+    },
+    {
+      "start": 302.5680016784713,
+      "end": 306.4479989318893,
+      "text": "Water removal can raise concentration without creating additional solute.",
+      "chapter": 6
+    },
+    {
+      "start": 306.74400000000537,
+      "end": 309.38400010490955,
+      "text": "Finish with an integrated dataset.",
+      "chapter": 7
+    },
+    {
+      "start": 309.38400010490955,
+      "end": 312.3039999427849,
+      "text": "At rest, cardiac output is five litres per minute.",
+      "chapter": 7
+    },
+    {
+      "start": 313.18400005722583,
+      "end": 317.24400000000537,
+      "text": "During a specified activity it is twelve litres per minute, an increase of",
+      "chapter": 7
+    },
+    {
+      "start": 317.24400000000537,
+      "end": 321.1640000762993,
+      "text": "seven litres per minute or one hundred forty percent relative to rest.",
+      "chapter": 7
+    },
+    {
+      "start": 321.80400041962207,
+      "end": 324.5439992370659,
+      "text": "The final value is two point four times baseline.",
+      "chapter": 7
+    },
+    {
+      "start": 325.42400030518115,
+      "end": 329.26400045776904,
+      "text": "A simultaneous rise in ventilation is consistent with coordinated responses,",
+      "chapter": 7
+    },
+    {
+      "start": 330.0240006866509,
+      "end": 334.623999160772,
+      "text": "but those two measurements alone do not identify every neural, hormonal or",
+      "chapter": 7
+    },
+    {
+      "start": 334.623999160772,
+      "end": 335.3440003814751,
+      "text": "metabolic cause.",
+      "chapter": 7
+    },
+    {
+      "start": 336.5040002288872,
+      "end": 339.98400167847217,
+      "text": "Compare matched time points and state whether values are instantaneous or",
+      "chapter": 7
+    },
+    {
+      "start": 339.98400167847217,
+      "end": 340.6240010681206,
+      "text": "averaged.",
+      "chapter": 7
+    },
+    {
+      "start": 341.10400061035693,
+      "end": 344.3040013732964,
+      "text": "A recovery measurement is not the same as one taken during activity.",
+      "chapter": 7
+    },
+    {
+      "start": 345.1240010681206,
+      "end": 349.1639981689507,
+      "text": "Use replicated observations and control relevant conditions before claiming",
+      "chapter": 7
+    },
+    {
+      "start": 349.1639981689507,
+      "end": 352.10400061035693,
+      "text": "that one changed factor caused the entire response.",
+      "chapter": 7
+    }
+  ]
+}
