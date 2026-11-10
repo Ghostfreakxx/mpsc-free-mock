@@ -1,0 +1,639 @@
+{
+  "duration": 346.94400000000604,
+  "chapters": [
+    {
+      "start": 0,
+      "end": 41.06400000000067
+    },
+    {
+      "start": 41.06400000000067,
+      "end": 81.57600000000132
+    },
+    {
+      "start": 81.57600000000132,
+      "end": 121.53600000000193
+    },
+    {
+      "start": 121.53600000000193,
+      "end": 169.70400000000288
+    },
+    {
+      "start": 169.70400000000288,
+      "end": 211.15200000000357
+    },
+    {
+      "start": 211.15200000000357,
+      "end": 254.56800000000433
+    },
+    {
+      "start": 254.56800000000433,
+      "end": 304.0800000000053
+    },
+    {
+      "start": 304.0800000000053,
+      "end": 346.94400000000604
+    }
+  ],
+  "cues": [
+    {
+      "start": 0,
+      "end": 3.0199999809265137,
+      "text": "Welcome to the Reproduction problem solving workshop.",
+      "chapter": 0
+    },
+    {
+      "start": 3.740000009536743,
+      "end": 9.079999923706055,
+      "text": "Let n represent one chromosome set, and C the DNA amount in one unreplicated",
+      "chapter": 0
+    },
+    {
+      "start": 9.079999923706055,
+      "end": 9.920000076293945,
+      "text": "haploid genome.",
+      "chapter": 0
+    },
+    {
+      "start": 10.600000381469727,
+      "end": 15.520000457763672,
+      "text": "A diploid cell before DNA replication is two n and two C.",
+      "chapter": 0
+    },
+    {
+      "start": 15.520000457763672,
+      "end": 20.299999237060547,
+      "text": "After replication, it is still two n, but four C, because each chromosome has",
+      "chapter": 0
+    },
+    {
+      "start": 20.299999237060547,
+      "end": 21.5,
+      "text": "two sister chromatids.",
+      "chapter": 0
+    },
+    {
+      "start": 22.420000076293945,
+      "end": 26.65999984741211,
+      "text": "After the first meiotic division, each daughter cell is n and two C.",
+      "chapter": 0
+    },
+    {
+      "start": 26.65999984741211,
+      "end": 30.639999389648438,
+      "text": "After the second division, each product is n and one C.",
+      "chapter": 0
+    },
+    {
+      "start": 30.639999389648438,
+      "end": 34.560001373291016,
+      "text": "These are counts per cell or nucleus, not totals pooled across all products.",
+      "chapter": 0
+    },
+    {
+      "start": 35.619998931884766,
+      "end": 38.97999954223633,
+      "text": "Chromosome number uses centromeres; specify the stage before counting",
+      "chapter": 0
+    },
+    {
+      "start": 38.97999954223633,
+      "end": 40.779998779296875,
+      "text": "chromatids as independent chromosomes.",
+      "chapter": 0
+    },
+    {
+      "start": 41.06400000000067,
+      "end": 45.78784628882842,
+      "text": "In a typical flowering plant anther, a diploid microspore mother cell",
+      "chapter": 1
+    },
+    {
+      "start": 45.78784628882842,
+      "end": 46.40400015258856,
+      "text": "undergoes",
+      "chapter": 1
+    },
+    {
+      "start": 46.40400015258856,
+      "end": 48.544000019074154,
+      "text": "meiosis to produce four haploid microspores.",
+      "chapter": 1
+    },
+    {
+      "start": 49.06400000000067,
+      "end": 52.84399973297186,
+      "text": "If the species has twenty four chromosomes in its diploid cells, each",
+      "chapter": 1
+    },
+    {
+      "start": 52.84399973297186,
+      "end": 54.70400034332342,
+      "text": "microspore receives twelve chromosomes.",
+      "chapter": 1
+    },
+    {
+      "start": 55.48400007629461,
+      "end": 59.40400015258856,
+      "text": "Ten mother cells can therefore produce forty microspores, assuming normal",
+      "chapter": 1
+    },
+    {
+      "start": 59.40400015258856,
+      "end": 61.72399984741278,
+      "text": "meiosis and survival of every product.",
+      "chapter": 1
+    },
+    {
+      "start": 62.60400091552801,
+      "end": 66.58400045776435,
+      "text": "Microspores are not yet sperm cells: each develops into the male gametophyte,",
+      "chapter": 1
+    },
+    {
+      "start": 66.8839996948249,
+      "end": 67.52399908447333,
+      "text": "the pollen grain.",
+      "chapter": 1
+    },
+    {
+      "start": 68.40400015258857,
+      "end": 72.02399908447333,
+      "text": "Separate the meiotic production of spores from the later mitotic production of",
+      "chapter": 1
+    },
+    {
+      "start": 72.02399908447333,
+      "end": 74.02399908447333,
+      "text": "gametophyte cells and male gametes.",
+      "chapter": 1
+    },
+    {
+      "start": 74.68399893188544,
+      "end": 78.95169252483728,
+      "text": "A question may count starting mother cells, pollen grains or sperm cells;",
+      "chapter": 1
+    },
+    {
+      "start": 78.95169252483728,
+      "end": 79.24400030517646,
+      "text": "label",
+      "chapter": 1
+    },
+    {
+      "start": 79.24400030517646,
+      "end": 81.30400167846747,
+      "text": "the requested object before multiplying.",
+      "chapter": 1
+    },
+    {
+      "start": 81.57600000000132,
+      "end": 86.0560000190748,
+      "text": "A typical developing microspore divides mitotically to form a vegetative cell",
+      "chapter": 2
+    },
+    {
+      "start": 86.0560000190748,
+      "end": 87.1959998855604,
+      "text": "and a generative cell.",
+      "chapter": 2
+    },
+    {
+      "start": 88.21599986648691,
+      "end": 91.9160001525892,
+      "text": "At this two celled stage, the pollen grain is already a reduced male",
+      "chapter": 2
+    },
+    {
+      "start": 91.9160001525892,
+      "end": 92.59600045776499,
+      "text": "gametophyte.",
+      "chapter": 2
+    },
+    {
+      "start": 93.33600022888315,
+      "end": 97.2560003051771,
+      "text": "The generative cell later divides by mitosis to form two male gametes.",
+      "chapter": 2
+    },
+    {
+      "start": 98.35600068664682,
+      "end": 102.03599908447397,
+      "text": "Some species release pollen at the two celled stage, while others release it",
+      "chapter": 2
+    },
+    {
+      "start": 102.03599908447397,
+      "end": 103.19600083923471,
+      "text": "after the generative division.",
+      "chapter": 2
+    },
+    {
+      "start": 104.1359994659437,
+      "end": 108.43600061035288,
+      "text": "The sperm chromosome set remains haploid because this is mitosis within the",
+      "chapter": 2
+    },
+    {
+      "start": 108.43600061035288,
+      "end": 109.1359994659437,
+      "text": "haploid generation.",
+      "chapter": 2
+    },
+    {
+      "start": 109.89599969482553,
+      "end": 114.11600091552866,
+      "text": "The vegetative cell supports pollen tube development; it does not become the",
+      "chapter": 2
+    },
+    {
+      "start": 114.11600091552866,
+      "end": 114.77600076294077,
+      "text": "embryo.",
+      "chapter": 2
+    },
+    {
+      "start": 115.45600106811655,
+      "end": 119.73599984741342,
+      "text": "Do not call every pollen grain a single male gamete, and do not assume that",
+      "chapter": 2
+    },
+    {
+      "start": 119.73599984741342,
+      "end": 121.33599832153452,
+      "text": "three celled pollen has three sperm.",
+      "chapter": 2
+    },
+    {
+      "start": 121.53600000000193,
+      "end": 126.7759997711201,
+      "text": "Use the typical monosporic, Polygonum type embryo sac unless the question",
+      "chapter": 3
+    },
+    {
+      "start": 126.7759997711201,
+      "end": 127.7759997711201,
+      "text": "states another pattern.",
+      "chapter": 3
+    },
+    {
+      "start": 128.67599986648753,
+      "end": 133.39599965667918,
+      "text": "A megaspore mother cell undergoes meiosis, usually leaving one functional",
+      "chapter": 3
+    },
+    {
+      "start": 133.39599965667918,
+      "end": 136.07599996185496,
+      "text": "haploid megaspore while three degenerate.",
+      "chapter": 3
+    },
+    {
+      "start": 137.09600041961863,
+      "end": 140.81600068664744,
+      "text": "Three mitotic divisions of the functional megaspore produce eight nuclei.",
+      "chapter": 3
+    },
+    {
+      "start": 140.81600068664744,
+      "end": 146.69599984741404,
+      "text": "Organisation gives an egg, two synergids, three antipodals and a central",
+      "chapter": 3
+    },
+    {
+      "start": 146.69599984741404,
+      "end": 149.45600007629588,
+      "text": "cell containing two polar nuclei before their fusion.",
+      "chapter": 3
+    },
+    {
+      "start": 150.4959990844746,
+      "end": 152.53600000000193,
+      "text": "That is seven cells but eight nuclei.",
+      "chapter": 3
+    },
+    {
+      "start": 153.31600068664744,
+      "end": 158.2360007629414,
+      "text": "If the polar nuclei have already fused, the nuclear count changes, so read the",
+      "chapter": 3
+    },
+    {
+      "start": 158.2360007629414,
+      "end": 159.03600000000193,
+      "text": "specified stage.",
+      "chapter": 3
+    },
+    {
+      "start": 159.71600030517772,
+      "end": 163.7360007629414,
+      "text": "The usual egg apparatus consists of the egg and the two synergids.",
+      "chapter": 3
+    },
+    {
+      "start": 164.69599984741404,
+      "end": 168.75600122070506,
+      "text": "Do not apply this typical developmental pattern to every angiosperm without",
+      "chapter": 3
+    },
+    {
+      "start": 168.75600122070506,
+      "end": 169.41600106811717,
+      "text": "qualification.",
+      "chapter": 3
+    },
+    {
+      "start": 169.70400000000288,
+      "end": 174.78399992370893,
+      "text": "In the typical embryo sac, one sperm fuses with the haploid egg to form a",
+      "chapter": 4
+    },
+    {
+      "start": 174.78399992370893,
+      "end": 175.42399979019453,
+      "text": "diploid zygote.",
+      "chapter": 4
+    },
+    {
+      "start": 176.00400019073774,
+      "end": 180.76400041961958,
+      "text": "The second sperm fuses with the two haploid polar nuclei, or their fused",
+      "chapter": 4
+    },
+    {
+      "start": 180.76400041961958,
+      "end": 184.96400022888471,
+      "text": "diploid secondary nucleus, to form a triploid primary endosperm nucleus.",
+      "chapter": 4
+    },
+    {
+      "start": 185.84399938965132,
+      "end": 189.40400076294233,
+      "text": "Together these events constitute double fertilisation.",
+      "chapter": 4
+    },
+    {
+      "start": 189.40400076294233,
+      "end": 193.3040003814726,
+      "text": "The zygote develops into the embryo, while endosperm development supplies",
+      "chapter": 4
+    },
+    {
+      "start": 193.3040003814726,
+      "end": 194.08399916076948,
+      "text": "nutritive tissue.",
+      "chapter": 4
+    },
+    {
+      "start": 194.72400045776655,
+      "end": 198.8040003814726,
+      "text": "If the diploid chromosome number is twenty four, the embryo has twenty four",
+      "chapter": 4
+    },
+    {
+      "start": 198.8040003814726,
+      "end": 203.66399908447553,
+      "text": "chromosomes and the typical endosperm nucleus thirty six.",
+      "chapter": 4
+    },
+    {
+      "start": 203.66399908447553,
+      "end": 206.924001220706,
+      "text": "These ploidies follow the stated conventional embryo sac model.",
+      "chapter": 4
+    },
+    {
+      "start": 207.84399938965132,
+      "end": 210.924001220706,
+      "text": "Double fertilisation is not the fusion of both sperm with the same egg.",
+      "chapter": 4
+    },
+    {
+      "start": 211.15200000000357,
+      "end": 215.11200003815054,
+      "text": "A seed contains tissues with different developmental origins.",
+      "chapter": 5
+    },
+    {
+      "start": 215.77199988556265,
+      "end": 220.21200041962027,
+      "text": "In the ordinary sexual model, the embryo is a new diploid generation with",
+      "chapter": 5
+    },
+    {
+      "start": 220.21200041962027,
+      "end": 221.83200030517935,
+      "text": "contributions from both parents.",
+      "chapter": 5
+    },
+    {
+      "start": 222.61200003815054,
+      "end": 226.71200041962027,
+      "text": "Typical endosperm is triploid, while the seed coat develops from the maternal",
+      "chapter": 5
+    },
+    {
+      "start": 226.71200041962027,
+      "end": 230.2520003814733,
+      "text": "ovule integuments and remains maternal diploid tissue.",
+      "chapter": 5
+    },
+    {
+      "start": 230.87199931335806,
+      "end": 235.17200045776724,
+      "text": "The ovule develops into the seed, and the ovary usually develops into the",
+      "chapter": 5
+    },
+    {
+      "start": 235.17200045776724,
+      "end": 238.09200053406119,
+      "text": "fruit, though accessory tissues contribute in some fruits.",
+      "chapter": 5
+    },
+    {
+      "start": 238.791999389652,
+      "end": 243.77199893188833,
+      "text": "Persistent nucellus is called perisperm; it is not another name for endosperm.",
+      "chapter": 5
+    },
+    {
+      "start": 244.1920009155309,
+      "end": 248.39200167847036,
+      "text": "The endosperm can persist in the mature seed or be largely consumed during",
+      "chapter": 5
+    },
+    {
+      "start": 248.39200167847036,
+      "end": 249.31199984741568,
+      "text": "embryo development.",
+      "chapter": 5
+    },
+    {
+      "start": 250.51200061035513,
+      "end": 254.33200030517935,
+      "text": "State both tissue identity and origin before assigning a chromosome number.",
+      "chapter": 5
+    },
+    {
+      "start": 254.56800000000433,
+      "end": 259.82800022888614,
+      "text": "Pollination transfers pollen to the stigma; it is not itself gamete fusion.",
+      "chapter": 6
+    },
+    {
+      "start": 260.60799996185733,
+      "end": 262.60799996185733,
+      "text": "Autogamy occurs within a flower.",
+      "chapter": 6
+    },
+    {
+      "start": 262.60799996185733,
+      "end": 267.5280000381513,
+      "text": "Geitonogamy transfers pollen between flowers on the same plant and is",
+      "chapter": 6
+    },
+    {
+      "start": 267.5280000381513,
+      "end": 271.10800091553165,
+      "text": "genetically self pollination, although it needs a transfer mechanism.",
+      "chapter": 6
+    },
+    {
+      "start": 272.14799992371036,
+      "end": 275.7879993133588,
+      "text": "Xenogamy transfers pollen between different plants of the same species.",
+      "chapter": 6
+    },
+    {
+      "start": 276.5080005340619,
+      "end": 281.2279998474164,
+      "text": "For a controlled cross using a suitable bisexual flower, removing anthers",
+      "chapter": 6
+    },
+    {
+      "start": 281.2279998474164,
+      "end": 285.088000457768,
+      "text": "before pollen release helps prevent that flower supplying its own pollen.",
+      "chapter": 6
+    },
+    {
+      "start": 286.1279994659467,
+      "end": 290.54799954224063,
+      "text": "Bagging protects against unwanted pollen, and selected compatible pollen is",
+      "chapter": 6
+    },
+    {
+      "start": 290.54799954224063,
+      "end": 292.18799893188907,
+      "text": "applied when the stigma is receptive.",
+      "chapter": 6
+    },
+    {
+      "start": 293.2480003051801,
+      "end": 297.02799908447696,
+      "text": "Emasculation is unnecessary for a female flower that has no anthers.",
+      "chapter": 6
+    },
+    {
+      "start": 298.20799938965274,
+      "end": 301.7480003051801,
+      "text": "Label the controls before interpreting offspring or claiming that a transfer",
+      "chapter": 6
+    },
+    {
+      "start": 301.7480003051801,
+      "end": 304.0800000000053,
+      "text": "produced successful fertilisation.",
+      "chapter": 6
+    },
+    {
+      "start": 304.0800000000053,
+      "end": 306.1599999237114,
+      "text": "Finish with a model counting problem.",
+      "chapter": 7
+    },
+    {
+      "start": 306.98000009537276,
+      "end": 311.0600000190788,
+      "text": "Suppose eighty ovules each undergo normal double fertilisation and every",
+      "chapter": 7
+    },
+    {
+      "start": 311.0600000190788,
+      "end": 312.3199997711235,
+      "text": "resulting seed survives.",
+      "chapter": 7
+    },
+    {
+      "start": 313.3599997329765,
+      "end": 317.5692308895458,
+      "text": "Each ovule needs one pollen tube delivering two sperm, so the minimum is",
+      "chapter": 7
+    },
+    {
+      "start": 317.5692308895458,
+      "end": 317.9200001525932,
+      "text": "eighty",
+      "chapter": 7
+    },
+    {
+      "start": 317.9200001525932,
+      "end": 320.8799992370659,
+      "text": "successful pollen grains and one hundred sixty sperm.",
+      "chapter": 7
+    },
+    {
+      "start": 321.71999938965376,
+      "end": 325.9569229986782,
+      "text": "If every microspore survives and every pollen grain succeeds, twenty",
+      "chapter": 7
+    },
+    {
+      "start": 325.9569229986782,
+      "end": 326.5800000000053,
+      "text": "microspore",
+      "chapter": 7
+    },
+    {
+      "start": 326.5800000000053,
+      "end": 328.86000068665084,
+      "text": "mother cells can provide those eighty pollen grains.",
+      "chapter": 7
+    },
+    {
+      "start": 329.8799992370659,
+      "end": 334.039999084478,
+      "text": "Real pollen production is usually much larger because transfer, compatibility",
+      "chapter": 7
+    },
+    {
+      "start": 334.2600003051811,
+      "end": 335.7000008392387,
+      "text": "and survival are not perfect.",
+      "chapter": 7
+    },
+    {
+      "start": 336.7600003051811,
+      "end": 340.3599987793022,
+      "text": "The minimum is a consequence of the ideal assumptions, not a prediction of",
+      "chapter": 7
+    },
+    {
+      "start": 340.3599987793022,
+      "end": 341.16000183106,
+      "text": "field seed set.",
+      "chapter": 7
+    },
+    {
+      "start": 342.14000137329634,
+      "end": 346.23999984741744,
+      "text": "Likewise, the number of fertilised ovules need not equal the final number of",
+      "chapter": 7
+    },
+    {
+      "start": 346.23999984741744,
+      "end": 346.94400000000604,
+      "text": "mature seeds if some abort.",
+      "chapter": 7
+    }
+  ]
+}

@@ -255,6 +255,10 @@ Supplementary route: `/neet/classes/plant-experiments`. Eight narrated chapters,
 
 Supplementary route: `/neet/classes/human-physiology-data`. Eight narrated chapters, aligned captions, downloadable transcript and sixteen original questions. Independent progress: `neet.human-physiology-data.lecture.v1`. Covers minute/alveolar ventilation, lung volumes, stroke volume and cardiac output, ECG timing, daily filtrate, renal solute accounting and integrated exercise data. Extends the Human Physiology foundation; further diagrams, neural/endocrine and mixed applications remain.
 
+## B17: Reproduction — Ploidy, Embryo Sacs and Seed Counts
+
+Supplementary route: `/neet/classes/reproduction-ploidy`. Eight narrated chapters, aligned captions, downloadable transcript and sixteen original questions. Independent progress: `neet.reproduction-ploidy.lecture.v1`. Covers chromosome/DNA accounting, microsporogenesis, pollen development, typical monosporic embryo sacs, double fertilisation, seed-tissue origin, controlled crosses and idealised seed counts. Extends the Reproduction foundation; further human-reproduction, reproductive-health and labelled-diagram practice remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |

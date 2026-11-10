@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English biology teacher. Read scientific symbols, gas names and units carefully. Speak every sentence fully with short thinking pauses. Do not add or omit words.",
+  "title": "Reproduction: Ploidy, Embryo Sacs and Seed Counts",
+  "subject": "Biology",
+  "unit": 6,
+  "scope": "NEET Biology Unit 6 problem-solving supplement: chromosome sets versus DNA content, microspore and pollen development, typical embryo-sac organisation, double fertilisation, seed-tissue origins, controlled pollination and idealised seed counts. Original questions extend the Reproduction foundation; further human-reproduction, reproductive-health and diagram practice remain.",
+  "sources": [
+    {
+      "title": "NCERT Biology: Sexual Reproduction in Flowering Plants",
+      "url": "https://ncert.nic.in/textbook/pdf/lebo101.pdf"
+    },
+    {
+      "title": "OpenStax Biology 2e: Reproductive development",
+      "url": "https://openstax.org/books/biology-2e/pages/32-1-reproductive-development-and-structure"
+    },
+    {
+      "title": "OpenStax Biology 2e: Pollination and fertilisation",
+      "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Keep chromosome sets and DNA amount separate",
+      "formula": "2n, 2C → 2n, 4C → n, 2C → n, 1C",
+      "points": [
+        "Count chromosomes by centromeres.",
+        "Replication doubles DNA, not ploidy.",
+        "State the cell-cycle stage."
+      ],
+      "script": "Welcome to the Reproduction problem-solving workshop. Let n represent one chromosome set, and C the DNA amount in one unreplicated haploid genome. A diploid cell before DNA replication is two n and two C. After replication, it is still two n, but four C, because each chromosome has two sister chromatids. After the first meiotic division, each daughter cell is n and two C. After the second division, each product is n and one C. These are counts per cell or nucleus, not totals pooled across all products. Chromosome number uses centromeres; specify the stage before counting chromatids as independent chromosomes."
+    },
+    {
+      "title": "Follow the microspore mother cell",
+      "formula": "One 2n mother cell → four n microspores",
+      "points": [
+        "Meiosis produces spores.",
+        "Microspores develop into pollen.",
+        "Do not equate a spore with a sperm."
+      ],
+      "script": "In a typical flowering-plant anther, a diploid microspore mother cell undergoes meiosis to produce four haploid microspores. If the species has twenty-four chromosomes in its diploid cells, each microspore receives twelve chromosomes. Ten mother cells can therefore produce forty microspores, assuming normal meiosis and survival of every product. Microspores are not yet sperm cells: each develops into the male gametophyte, the pollen grain. Separate the meiotic production of spores from the later mitotic production of gametophyte cells and male gametes. A question may count starting mother cells, pollen grains or sperm cells; label the requested object before multiplying."
+    },
+    {
+      "title": "Read two-celled and three-celled pollen",
+      "formula": "Vegetative cell + generative cell → vegetative cell + two sperm",
+      "points": [
+        "The generative cell divides mitotically.",
+        "Both sperm are haploid.",
+        "Pollen release stage varies by species."
+      ],
+      "script": "A typical developing microspore divides mitotically to form a vegetative cell and a generative cell. At this two-celled stage, the pollen grain is already a reduced male gametophyte. The generative cell later divides by mitosis to form two male gametes. Some species release pollen at the two-celled stage, while others release it after the generative division. The sperm chromosome set remains haploid because this is mitosis within the haploid generation. The vegetative cell supports pollen-tube development; it does not become the embryo. Do not call every pollen grain a single male gamete, and do not assume that three-celled pollen has three sperm."
+    },
+    {
+      "title": "Count cells and nuclei in the embryo sac",
+      "formula": "Typical monosporic sac: 7 cells, 8 nuclei",
+      "points": [
+        "One functional megaspore develops further.",
+        "Three mitoses produce eight nuclei.",
+        "The central cell contains two polar nuclei before fusion."
+      ],
+      "script": "Use the typical monosporic, Polygonum-type embryo sac unless the question states another pattern. A megaspore mother cell undergoes meiosis, usually leaving one functional haploid megaspore while three degenerate. Three mitotic divisions of the functional megaspore produce eight nuclei. Organisation gives an egg, two synergids, three antipodals and a central cell containing two polar nuclei before their fusion. That is seven cells but eight nuclei. If the polar nuclei have already fused, the nuclear count changes, so read the specified stage. The usual egg apparatus consists of the egg and the two synergids. Do not apply this typical developmental pattern to every angiosperm without qualification."
+    },
+    {
+      "title": "Track both fusions in double fertilisation",
+      "formula": "n + n → 2n embryo; n + n + n → 3n endosperm",
+      "points": [
+        "Syngamy forms the zygote.",
+        "Triple fusion forms the primary endosperm nucleus.",
+        "Use the stated embryo-sac type."
+      ],
+      "script": "In the typical embryo sac, one sperm fuses with the haploid egg to form a diploid zygote. The second sperm fuses with the two haploid polar nuclei, or their fused diploid secondary nucleus, to form a triploid primary endosperm nucleus. Together these events constitute double fertilisation. The zygote develops into the embryo, while endosperm development supplies nutritive tissue. If the diploid chromosome number is twenty-four, the embryo has twenty-four chromosomes and the typical endosperm nucleus thirty-six. These ploidies follow the stated conventional embryo-sac model. Double fertilisation is not the fusion of both sperm with the same egg."
+    },
+    {
+      "title": "Identify embryo, endosperm and maternal seed tissues",
+      "formula": "Embryo 2n; typical endosperm 3n; seed coat maternal 2n",
+      "points": [
+        "Integuments form the seed coat.",
+        "Ovules develop into seeds.",
+        "Persistent nucellus is perisperm."
+      ],
+      "script": "A seed contains tissues with different developmental origins. In the ordinary sexual model, the embryo is a new diploid generation with contributions from both parents. Typical endosperm is triploid, while the seed coat develops from the maternal ovule integuments and remains maternal diploid tissue. The ovule develops into the seed, and the ovary usually develops into the fruit, though accessory tissues contribute in some fruits. Persistent nucellus is called perisperm; it is not another name for endosperm. The endosperm can persist in the mature seed or be largely consumed during embryo development. State both tissue identity and origin before assigning a chromosome number."
+    },
+    {
+      "title": "Separate pollination from fertilisation and control a cross",
+      "formula": "Autogamy: same flower; geitonogamy: same plant; xenogamy: different plant",
+      "points": [
+        "Pollination transfers pollen.",
+        "Emasculation prevents the selected flower supplying its own pollen.",
+        "Bagging controls unwanted pollen entry."
+      ],
+      "script": "Pollination transfers pollen to the stigma; it is not itself gamete fusion. Autogamy occurs within a flower. Geitonogamy transfers pollen between flowers on the same plant and is genetically self-pollination, although it needs a transfer mechanism. Xenogamy transfers pollen between different plants of the same species. For a controlled cross using a suitable bisexual flower, removing anthers before pollen release helps prevent that flower supplying its own pollen. Bagging protects against unwanted pollen, and selected compatible pollen is applied when the stigma is receptive. Emasculation is unnecessary for a female flower that has no anthers. Label the controls before interpreting offspring or claiming that a transfer produced successful fertilisation."
+    },
+    {
+      "title": "Solve pollen and seed-number questions with explicit assumptions",
+      "formula": "Two sperm per pollen grain; one pollen tube per successfully fertilised ovule",
+      "points": [
+        "Assume viability and normal development only when stated.",
+        "Count pollen grains separately from sperm.",
+        "Distinguish fertilised ovules from mature surviving seeds."
+      ],
+      "script": "Finish with a model counting problem. Suppose eighty ovules each undergo normal double fertilisation and every resulting seed survives. Each ovule needs one pollen tube delivering two sperm, so the minimum is eighty successful pollen grains and one hundred sixty sperm. If every microspore survives and every pollen grain succeeds, twenty microspore mother cells can provide those eighty pollen grains. Real pollen production is usually much larger because transfer, compatibility and survival are not perfect. The minimum is a consequence of the ideal assumptions, not a prediction of field seed set. Likewise, the number of fertilised ovules need not equal the final number of mature seeds if some abort."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "A diploid cell just after S phase has:",
+      "options": [
+        "2n, 2C",
+        "2n, 4C",
+        "4n, 4C",
+        "n, 2C"
+      ],
+      "answer": 1,
+      "explanation": "Replication doubles DNA amount while chromosome-set number remains diploid."
+    },
+    {
+      "question": "Immediately after meiosis II, a typical product has:",
+      "options": [
+        "2n, 4C",
+        "2n, 2C",
+        "n, 2C",
+        "n, 1C"
+      ],
+      "answer": 3,
+      "explanation": "The product has one chromosome set and unreplicated chromosomes."
+    },
+    {
+      "question": "In a species with 2n=24, a normal microspore has how many chromosomes?",
+      "options": [
+        "6",
+        "12",
+        "24",
+        "48"
+      ],
+      "answer": 1,
+      "explanation": "Meiosis produces haploid microspores with n=12."
+    },
+    {
+      "question": "Ten microspore mother cells produce how many microspores if all meiotic products survive?",
+      "options": [
+        "10",
+        "20",
+        "40",
+        "80"
+      ],
+      "answer": 2,
+      "explanation": "Each mother cell yields four microspores, so 10 × 4 = 40."
+    },
+    {
+      "question": "The generative cell typically forms two sperm by:",
+      "options": [
+        "Meiosis I",
+        "Meiosis II",
+        "Mitosis",
+        "Fertilisation"
+      ],
+      "answer": 2,
+      "explanation": "The haploid generative cell divides mitotically."
+    },
+    {
+      "question": "A typical three-celled pollen grain contains:",
+      "options": [
+        "Three sperm cells",
+        "One vegetative cell and two sperm cells",
+        "Two eggs and one sperm",
+        "Three diploid cells"
+      ],
+      "answer": 1,
+      "explanation": "It contains the vegetative cell and two haploid male gametes."
+    },
+    {
+      "question": "The typical mature embryo sac before polar-nuclear fusion is:",
+      "options": [
+        "8-celled and 8-nucleate",
+        "7-celled and 8-nucleate",
+        "7-celled and 7-nucleate",
+        "4-celled and 8-nucleate"
+      ],
+      "answer": 1,
+      "explanation": "The central cell contains two nuclei, giving seven cells and eight nuclei."
+    },
+    {
+      "question": "The typical egg apparatus consists of:",
+      "options": [
+        "Egg and two synergids",
+        "Egg and three antipodals",
+        "Two eggs and one synergid",
+        "Two polar nuclei and an egg"
+      ],
+      "answer": 0,
+      "explanation": "The egg apparatus includes one egg and two synergids."
+    },
+    {
+      "question": "For a species with 2n=24, typical endosperm nuclei after triple fusion contain:",
+      "options": [
+        "12 chromosomes",
+        "24 chromosomes",
+        "36 chromosomes",
+        "48 chromosomes"
+      ],
+      "answer": 2,
+      "explanation": "Two maternal haploid contributions plus one paternal haploid contribution give 3n=36."
+    },
+    {
+      "question": "The two events of double fertilisation are:",
+      "options": [
+        "Two meiotic divisions",
+        "Syngamy and triple fusion",
+        "Pollination and germination alone",
+        "Fusion of two sperm with the egg"
+      ],
+      "answer": 1,
+      "explanation": "One sperm fuses with the egg; the other participates in triple fusion."
+    },
+    {
+      "question": "The seed coat develops mainly from the:",
+      "options": [
+        "Zygote",
+        "Primary endosperm nucleus",
+        "Ovule integuments",
+        "Pollen vegetative cell"
+      ],
+      "answer": 2,
+      "explanation": "The maternal integuments develop into the seed coat."
+    },
+    {
+      "question": "Persistent nucellus in a seed is called:",
+      "options": [
+        "Perisperm",
+        "Pericarp",
+        "Endosperm in every case",
+        "Embryo"
+      ],
+      "answer": 0,
+      "explanation": "Perisperm is persistent nucellar tissue."
+    },
+    {
+      "question": "Pollen transfer between flowers on the same plant is:",
+      "options": [
+        "Autogamy only",
+        "Geitonogamy",
+        "Xenogamy",
+        "Triple fusion"
+      ],
+      "answer": 1,
+      "explanation": "Geitonogamy occurs between different flowers of one plant."
+    },
+    {
+      "question": "Bagging during a controlled cross primarily helps prevent:",
+      "options": [
+        "All embryo development",
+        "Unwanted pollen reaching the stigma",
+        "Meiosis in the ovule",
+        "Endosperm formation after a valid cross"
+      ],
+      "answer": 1,
+      "explanation": "Bagging controls exposure to unwanted pollen."
+    },
+    {
+      "question": "For 80 normally double-fertilised ovules, the minimum number of sperm used is:",
+      "options": [
+        "40",
+        "80",
+        "160",
+        "320"
+      ],
+      "answer": 2,
+      "explanation": "Each ovule uses two sperm; 80 × 2 = 160."
+    },
+    {
+      "question": "If every microspore survives and succeeds, the minimum microspore mother cells supplying 80 pollen grains is:",
+      "options": [
+        "10",
+        "20",
+        "40",
+        "80"
+      ],
+      "answer": 1,
+      "explanation": "Each mother cell supplies four microspores; 80/4 = 20."
+    }
+  ]
+}
