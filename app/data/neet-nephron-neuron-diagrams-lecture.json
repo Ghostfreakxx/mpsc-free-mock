@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English biology teacher. Read scientific symbols, gas names and units carefully. Speak every sentence fully with short thinking pauses. Do not add or omit words.",
+  "title": "Nephron and Neuron: Diagram Labels and Flow",
+  "subject": "Biology",
+  "unit": 5,
+  "scope": "Recorded NEET Biology Unit 5 diagram workshop with four new original schematics: nephron overview, renal-corpuscle close-up, typical myelinated multipolar neuron and chemical synapse. Eight narrated chapters and sixteen original questions. Simplified structures, direction and mechanism are distinguished; figures are not to scale or a guide to personal diagnosis.",
+  "sources": [
+    {
+      "title": "OpenStax Biology 2e: Kidney and nephron",
+      "url": "https://openstax.org/books/biology-2e/pages/41-2-the-kidneys-and-osmoregulatory-organs"
+    },
+    {
+      "title": "OpenStax Biology 2e: Neuron structure",
+      "url": "https://openstax.org/books/biology-2e/pages/35-1-neurons-and-glial-cells"
+    },
+    {
+      "title": "OpenStax Biology 2e: Neuronal communication",
+      "url": "https://openstax.org/books/biology-2e/pages/35-2-how-neurons-communicate"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Nephron overview: follow the tubular route",
+      "formula": "A corpuscle → B proximal tubule → C descending → D ascending → E distal → F collecting duct",
+      "points": [
+        "A, B and E are shown in cortex.",
+        "The loop extends into medulla.",
+        "F is shared collecting drainage, not one nephron itself."
+      ],
+      "script": "Begin with the nephron overview. A is the renal corpuscle, B the proximal convoluted tubule, C the descending limb and D the ascending limb of the nephron loop. E is the distal convoluted tubule, leading toward the collecting duct at F. Follow the arrows down C, around the hairpin and up D before reaching E. The collecting duct receives fluid from more than one nephron and is included for continuity. The dashed line separates cortex from medulla in this simplified view. Loop depth varies among nephron types, and this drawing is not a scale measurement of a kidney."
+    },
+    {
+      "title": "Nephron overview: distinguish reabsorption and secretion",
+      "formula": "Reabsorption: tubule → blood; secretion: blood/interstitium → tubule",
+      "points": [
+        "B supports extensive recovery of filtered material.",
+        "C and D differ in permeability.",
+        "Tubular fluid is modified before final urine."
+      ],
+      "script": "The overview shows a fluid route, not a claim that everything entering it must leave as urine. Reabsorption returns material from tubular fluid toward the circulation; secretion adds selected material from the blood or interstitial side to tubular fluid. The proximal tubule at B is an important site of recovery of filtered water and solutes. In the standard loop comparison, the descending limb at C permits water movement, whereas the ascending limb at D reabsorbs salts and is relatively impermeable to water. These differences contribute to concentrating mechanisms. Do not swap blood-flow arrows with tubular-flow arrows or interpret filtered glucose as automatically excreted glucose."
+    },
+    {
+      "title": "Renal corpuscle: separate blood from filtrate",
+      "formula": "Blood: A → B → D; filtrate: B → C → E",
+      "points": [
+        "A is afferent and D efferent.",
+        "B is the glomerular tuft.",
+        "C is capsular space and E the proximal outlet."
+      ],
+      "script": "Switch to the renal-corpuscle close-up. The solid arrows identify blood flow: afferent arteriole A enters the glomerular capillary tuft B, and efferent arteriole D carries blood away. The dashed arrows show a different route: filtration from the tuft toward capsular space C and onward toward the proximal tubule at E. E is not the efferent arteriole. Two exit routes appear because blood and filtrate are different compartments. The sketch cuts the capsule open schematically at its vascular and tubular poles; it does not show every layer of the filtration barrier. Read the arrow key before naming an outlet."
+    },
+    {
+      "title": "Renal corpuscle: interpret selective filtration",
+      "formula": "Cells and most large plasma proteins normally remain in blood",
+      "points": [
+        "Filtrate contains useful small solutes as well as wastes.",
+        "Filtration is not the same as tubular secretion.",
+        "A structure sketch does not measure GFR."
+      ],
+      "script": "The normal glomerular filtration barrier retains blood cells and most large plasma proteins while allowing water and many small solutes to enter the capsular space. Filtrate therefore contains useful substances as well as waste products. The subsequent tubules recover much of the useful material. Do not describe the glomerulus as a sieve that selectively removes only wastes. Likewise, the size of a drawn tuft does not provide a measured filtration rate. Calculating a rate requires data beyond this schematic. Keep the normal barrier, the composition of the initial filtrate and later tubular processing as three distinct parts of the explanation."
+    },
+    {
+      "title": "Neuron overview: identify the receiving and sending regions",
+      "formula": "A dendrites; B soma; C axon; D myelin; E node; F terminals",
+      "points": [
+        "The figure is a typical multipolar neuron.",
+        "The nucleus lies in B.",
+        "The usual functional route runs toward F."
+      ],
+      "script": "Now identify a typical myelinated multipolar neuron. A points to branching dendrites and B to the cell body, or soma, containing the nucleus. C identifies the axon near its origin. D marks a myelin segment, E a node of Ranvier between segments, and F the branching axon terminals. The lower arrow indicates the usual functional route toward the terminals. Do not identify dendrites only by the left side of a page: another figure can be rotated. Neuron shapes vary, so this schematic is not a universal shape for all sensory, motor and interneuron classes. Use branching, continuity and the label endpoints together."
+    },
+    {
+      "title": "Neuron overview: explain saltatory conduction",
+      "formula": "Myelin reduces current leakage; action potentials regenerate at nodes",
+      "points": [
+        "D is myelin, not the axon itself.",
+        "E is an exposed nodal region.",
+        "The impulse is not a vesicle moving along the axon."
+      ],
+      "script": "Keep the neuron overview and compare D with E. Myelin around the axon at D acts as insulation that reduces current leakage. In the standard myelinated-axon account, local electrical current spreads between nodes and action potentials are regenerated at nodal regions such as E. This is called saltatory conduction. The signal does not mean that one sodium ion physically jumps from the cell body to every terminal, and it is not a transmitter-filled vesicle travelling as the action potential. Myelin thickness and node spacing are not drawn to scale. Identify the sheath, axon and node separately before connecting each to its function."
+    },
+    {
+      "title": "Chemical synapse: locate vesicles, cleft and receptors",
+      "formula": "A vesicle; B presynaptic membrane; C cleft; D postsynaptic receptors",
+      "points": [
+        "The terminal is above the gap.",
+        "The receiving cell is below it.",
+        "Dots represent released transmitter molecules."
+      ],
+      "script": "The synapse close-up enlarges a typical chemical junction. A identifies a vesicle inside the presynaptic terminal. B points to the presynaptic membrane, C the synaptic cleft, and D receptors at the postsynaptic membrane. The small dots represent released transmitter molecules, not whole vesicles crossing the gap. A transmitter must reach suitable receptors to influence the receiving cell. The membranes remain distinct across the cleft; they are not drawn as one continuous axon. Read the upper and lower cell labels as well as the arrows. This figure shows a chemical synapse and should not be used as a complete model of an electrical synapse."
+    },
+    {
+      "title": "Chemical synapse: follow the signal without overclaiming",
+      "formula": "Presynaptic release → cleft → receptor response",
+      "points": [
+        "Presynaptic calcium entry supports transmitter release.",
+        "Receptor activation need not produce an action potential every time.",
+        "Chemical and electrical synapses use different junction mechanisms."
+      ],
+      "script": "In the typical chemical-synapse account, arrival of an action potential at the presynaptic terminal leads to calcium entry and transmitter release by vesicle fusion. Released molecules cross the cleft at C and act on appropriate receptors at D. The resulting response can be excitatory or inhibitory, depending on the receptor and cellular context, and does not guarantee a new action potential after every release event. Direction in this diagram follows the asymmetric arrangement of release machinery and receptors. Do not describe the gap as a place where an intact action potential simply leaps through open space. Electrical synapses use a different coupling mechanism that is not pictured here."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which label identifies the descending limb in the overview?",
+      "options": [
+        "B",
+        "C",
+        "D",
+        "F"
+      ],
+      "answer": 1,
+      "explanation": "C is the descending limb; the arrow points toward the loop bend."
+    },
+    {
+      "question": "Which sequence follows tubular fluid after B?",
+      "options": [
+        "D → C → F → E",
+        "C → D → E → F",
+        "F → E → D → C",
+        "A → F → C → E"
+      ],
+      "answer": 1,
+      "explanation": "The route proceeds through descending limb, ascending limb, distal tubule and collecting drainage."
+    },
+    {
+      "question": "Movement of a substance from tubular fluid back toward blood is:",
+      "options": [
+        "Filtration only",
+        "Reabsorption",
+        "Tubular secretion",
+        "Synaptic transmission"
+      ],
+      "answer": 1,
+      "explanation": "Reabsorption recovers material from the tubular fluid."
+    },
+    {
+      "question": "In the standard loop comparison, the ascending limb at D is relatively:",
+      "options": [
+        "Impermeable to water while supporting salt reabsorption",
+        "Freely permeable to all blood cells",
+        "Identical in every property to the descending limb",
+        "A collecting duct shared by all kidneys"
+      ],
+      "answer": 0,
+      "explanation": "Ascending and descending limbs have different permeability and transport properties."
+    },
+    {
+      "question": "In the renal-corpuscle close-up, which label carries blood away from the glomerulus?",
+      "options": [
+        "C",
+        "E",
+        "D",
+        "B"
+      ],
+      "answer": 2,
+      "explanation": "D is the efferent arteriole. E is a tubular outlet."
+    },
+    {
+      "question": "The space receiving the initial filtrate is labelled:",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 2,
+      "explanation": "C marks the capsular space."
+    },
+    {
+      "question": "Which normally remains in the blood rather than entering initial filtrate in appreciable numbers?",
+      "options": [
+        "Water molecules",
+        "Small ions",
+        "Blood cells",
+        "Glucose molecules"
+      ],
+      "answer": 2,
+      "explanation": "Blood cells are normally retained by the filtration barrier."
+    },
+    {
+      "question": "Which statement about initial filtrate is correct?",
+      "options": [
+        "It contains only waste substances",
+        "It can contain useful small solutes that are later reabsorbed",
+        "It is always identical to final urine",
+        "It consists mainly of blood cells"
+      ],
+      "answer": 1,
+      "explanation": "Filtration does not separate substances solely by whether they are useful or waste."
+    },
+    {
+      "question": "Which label marks the node of Ranvier in the neuron overview?",
+      "options": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answer": 3,
+      "explanation": "E points to the gap between myelin segments."
+    },
+    {
+      "question": "The nucleus is shown within the structure labelled:",
+      "options": [
+        "A",
+        "B",
+        "D",
+        "F"
+      ],
+      "answer": 1,
+      "explanation": "B is the cell body containing the nucleus."
+    },
+    {
+      "question": "In the standard myelinated axon, action potentials are regenerated especially at:",
+      "options": [
+        "The nodes at E",
+        "Only the nucleus in B",
+        "Only the myelin substance at D",
+        "The empty background of the drawing"
+      ],
+      "answer": 0,
+      "explanation": "Nodes have the membrane specialisations supporting action-potential regeneration."
+    },
+    {
+      "question": "Which label indicates the insulating myelin segment rather than a node?",
+      "options": [
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "answer": 1,
+      "explanation": "D points to a myelin segment; E points to a gap."
+    },
+    {
+      "question": "Which label points to a transmitter-containing vesicle?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0,
+      "explanation": "A identifies a vesicle within the presynaptic terminal."
+    },
+    {
+      "question": "The label D identifies:",
+      "options": [
+        "The synaptic cleft",
+        "A renal arteriole",
+        "Postsynaptic receptors",
+        "The neuron’s nucleus"
+      ],
+      "answer": 2,
+      "explanation": "D points to receptors in the postsynaptic membrane."
+    },
+    {
+      "question": "The synaptic response after transmitter binding is:",
+      "options": [
+        "Always a guaranteed new action potential",
+        "Dependent on the receptor and cellular context",
+        "A blood-filtration event",
+        "Identical to a whole vesicle crossing the gap"
+      ],
+      "answer": 1,
+      "explanation": "Chemical synapses can produce different responses, including excitation or inhibition."
+    },
+    {
+      "question": "In this schematic, the objects crossing the cleft are represented as:",
+      "options": [
+        "Whole neurons",
+        "Whole vesicles",
+        "Released transmitter molecules",
+        "Blood cells"
+      ],
+      "answer": 2,
+      "explanation": "The dots represent transmitter molecules; vesicles remain part of the release process in the presynaptic terminal."
+    }
+  ]
+}

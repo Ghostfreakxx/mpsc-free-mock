@@ -283,6 +283,10 @@ Supplementary route: `/neet/classes/structural-identification`. Eight narrated c
 
 Route: `/neet/classes/biology-diagram-workshop`. Four existing original practice schematics are now paired with eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original label/reasoning questions. Figures change with chapter selection and playback. Independent progress: `neet.biology-diagram-workshop.lecture.v1`; existing written diagram-set progress is retained. Covers chloroplast, adult human circulation connectivity, typical Polygonum embryo sac and a simplified energy chain. This cross-unit workshop is not an official extra unit; further nephron, neuron, floral and tissue diagrams remain.
 
+## B24: Nephron and Neuron — Diagram Labels and Flow
+
+Route: `/neet/classes/nephron-neuron-diagrams`. Four new original schematics (nephron, renal corpuscle, neuron and chemical synapse), eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original questions. Figures follow playback and chapter selection. Independent progress: `neet.nephron-neuron-diagrams.lecture.v1`. Distinguishes blood/filtrate routes, collecting drainage versus one nephron, myelin/nodes and chemical-synapse direction. Further floral, tissue and other physiology diagrams remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |
