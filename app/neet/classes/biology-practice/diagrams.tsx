@@ -23,8 +23,8 @@ export default function BiologyDiagram({ id }: { id: string }) {
         <text x="122" y="89">A</text><text x="122" y="229">B</text><text x="302" y="229">C</text><text x="302" y="89">D</text><text x="170" y="340">Lungs</text><text x="170" y="16">Body</text>
       </>}
       {id === 'embryo-sac' && <>
-        <g fill="none" stroke="currentColor" strokeWidth="2"><ellipse cx="220" cy="175" rx="105" ry="140" />{[175,220,265].map(x => <g key={x}><ellipse cx={x} cy="82" rx="20" ry="27" /><circle cx={x} cy="82" r="5" /></g>)}<circle cx="200" cy="175" r="10" /><circle cx="240" cy="175" r="10" />{[170,220,270].map(x => <g key={x}><ellipse cx={x} cy="260" rx="22" ry="34" /><circle cx={x} cy="260" r="5" /></g>)}<path d="M330 75H290M330 170H257M220 310V300M92 260H145M92 260V310H270V297" /></g>
-        <text x="170" y="22">Chalazal end</text><text x="167" y="344">Micropylar end</text><text x="338" y="82">A</text><text x="338" y="177">B</text><text x="210" y="328">C</text><text x="65" y="266">D</text>
+        <g fill="none" stroke="currentColor" strokeWidth="2"><ellipse cx="220" cy="175" rx="105" ry="140" />{[175,220,265].map(x => <g key={x}><ellipse cx={x} cy="82" rx="20" ry="27" /><circle cx={x} cy="82" r="5" /></g>)}<circle cx="200" cy="175" r="10" /><circle cx="240" cy="175" r="10" />{[170,220,270].map(x => <g key={x}><ellipse cx={x} cy="260" rx="22" ry="34" /><circle cx={x} cy="260" r="5" /></g>)}<path d="M330 75H290M330 170H257M220 296V322H105M92 260H145M294 260H325" /></g>
+        <text x="170" y="22">Chalazal end</text><text x="167" y="344">Micropylar end</text><text x="338" y="82">A</text><text x="338" y="177">B</text><text x="80" y="328">C</text><text x="65" y="266">D</text><text x="333" y="266">D</text>
       </>}
       {id === 'energy-flow' && <>
         <g fill="none" stroke="currentColor" strokeWidth="2">{[20,105,190,275].map(y => <rect key={y} x="70" y={y} width="300" height="50" rx="8" />)}{[70,155,240].map(y => <path key={y} markerEnd={`url(#${id}-arrow)`} d={`M220 ${y+3}V${y+30}`} />)}</g>

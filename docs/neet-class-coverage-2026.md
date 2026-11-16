@@ -279,6 +279,10 @@ Supplementary route: `/neet/classes/diversity-identification`. Eight narrated ch
 
 Supplementary route: `/neet/classes/structural-identification`. Eight narrated chapters, aligned captions, downloadable transcript and sixteen original questions. Independent progress: `neet.structural-identification.lecture.v1`. Covers plant tissues, meristems, vascular tissues, root/stem and leaf anatomy, modified organs and animal tissue identification. Extends the Structural Organisation foundation; further labelled specimen images, floral morphology and animal-organ-system cases remain.
 
+## B23: Biology Diagram Practice — Labels, Routes and Reasoning
+
+Route: `/neet/classes/biology-diagram-workshop`. Four existing original practice schematics are now paired with eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original label/reasoning questions. Figures change with chapter selection and playback. Independent progress: `neet.biology-diagram-workshop.lecture.v1`; existing written diagram-set progress is retained. Covers chloroplast, adult human circulation connectivity, typical Polygonum embryo sac and a simplified energy chain. This cross-unit workshop is not an official extra unit; further nephron, neuron, floral and tissue diagrams remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |

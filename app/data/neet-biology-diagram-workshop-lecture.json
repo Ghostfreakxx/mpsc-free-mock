@@ -1,0 +1,287 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English biology teacher. Read scientific symbols, gas names and units carefully. Speak every sentence fully with short thinking pauses. Do not add or omit words.",
+  "title": "Biology Diagram Practice: Labels, Routes and Reasoning",
+  "subject": "Biology",
+  "unit": 0,
+  "scope": "Recorded cross-unit NEET Biology diagram workshop using four existing original practice schematics: chloroplast, adult human circulation connectivity, typical Polygonum-type embryo sac and a simplified energy chain. Eight narrated interpretation chapters and sixteen original questions. Existing written diagram sets retain their own progress. This is focused diagram practice, not exhaustive diagram coverage.",
+  "sources": [
+    {
+      "title": "OpenStax Biology 2e: Photosynthesis",
+      "url": "https://openstax.org/books/biology-2e/pages/8-2-the-light-dependent-reactions-of-photosynthesis"
+    },
+    {
+      "title": "OpenStax Biology 2e: Circulation",
+      "url": "https://openstax.org/books/biology-2e/pages/40-1-overview-of-the-circulatory-system"
+    },
+    {
+      "title": "OpenStax Biology 2e: Fertilisation",
+      "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization"
+    },
+    {
+      "title": "OpenStax Biology 2e: Ecosystem energy",
+      "url": "https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Chloroplast: trace the label endpoints",
+      "formula": "A = granum; B = thylakoid membrane; C = stroma; D = envelope",
+      "points": [
+        "A brackets a whole stack.",
+        "B targets the membrane of one sac.",
+        "C is the fluid region around the sacs."
+      ],
+      "script": "Start with the chloroplast schematic, and follow each leader line to its endpoint before naming a structure. Label A brackets a stack of flattened sacs: one stack is a granum. B points to a membrane of one sac, a thylakoid. C marks the surrounding internal fluid region, the stroma. D indicates the chloroplast envelope, shown as two boundary lines. The drawing is not to scale and omits many molecular details. A bracket around several sacs does not mean one thylakoid, and the stroma is not the space inside a thylakoid. Pause and explain all four labels without using the answer options."
+    },
+    {
+      "title": "Chloroplast: connect location to process",
+      "formula": "B supports light reactions; C contains Calvin-cycle reactions",
+      "points": [
+        "Thylakoid membrane is not the envelope.",
+        "ATP/NADPH connect the reaction systems.",
+        "A location label does not establish a measured reaction rate."
+      ],
+      "script": "Keep the same chloroplast diagram and turn the labels into functional evidence. Light-dependent electron transport occurs on the thylakoid membrane indicated by B. Calvin-cycle reactions occur in the stroma indicated by C. ATP and NADPH from the light reactions support carbon reduction, but a structure drawing alone does not tell you the actual rate in a particular leaf. The double envelope at D is a separate membrane system from the thylakoids. If a question swaps the words stroma and granum, test the location rather than memorising the letter. Letters are local to this schematic and can be reassigned in another question."
+    },
+    {
+      "title": "Circulation: infer chambers from arrow order",
+      "formula": "Body → A → B → lungs → C → D → body",
+      "points": [
+        "A receives systemic venous return.",
+        "B pumps toward the lungs.",
+        "C receives pulmonary venous return."
+      ],
+      "script": "Read the circulation diagram as a connectivity map rather than an anatomical portrait. The arrows run from body to A, then B, then lungs, then C, then D and back to body. In the standard adult human circulation, A is the right atrium and B the right ventricle. C is the left atrium and D the left ventricle. A and C are receiving chambers; B and D pump blood out of the heart. Their positions on the screen do not establish anatomical left and right. Follow where blood comes from and where it goes. This diagram deliberately prioritises the route over realistic chamber shapes."
+    },
+    {
+      "title": "Circulation: distinguish direction from oxygenation",
+      "formula": "Arteries carry blood away from the heart; veins return it",
+      "points": [
+        "Pulmonary arteries are an important oxygenation exception.",
+        "D is the systemic pumping chamber.",
+        "A flow map does not measure pressure or flow rate."
+      ],
+      "script": "Use the same route to avoid a common naming error. An artery carries blood away from the heart; a vein carries it toward the heart. Oxygen content is not the definition. In the standard adult pulmonary circuit, the artery leaving B carries relatively deoxygenated blood toward the lungs, while pulmonary veins return oxygenated blood to C. D pumps into the systemic circuit. The arrows show connectivity and direction, not a measured pressure difference, blood speed or cardiac output. If a question asks for one of those quantities, it must provide additional information. First identify the chamber and circuit, then classify the vessel by its direction relative to the heart."
+    },
+    {
+      "title": "Embryo sac: establish orientation before naming cells",
+      "formula": "Chalazal: A antipodals; micropylar: C egg with D synergids",
+      "points": [
+        "Read the named ends first.",
+        "B marks the two polar nuclei.",
+        "The schematic specifies the typical Polygonum type."
+      ],
+      "script": "Now read the embryo-sac schematic. The chalazal end is at the top and the micropylar end at the bottom. A identifies the three antipodal cells at the chalazal end. C points to the egg at the micropylar end, and D identifies the two flanking synergids. B marks the two polar nuclei in the large central cell. The egg and synergids together form the egg apparatus. Do not decide the identity from top and bottom alone, because another drawing may be rotated. This figure specifies the common Polygonum-type pattern before polar-nuclear fusion; it is not a claim that every flowering plant has exactly this arrangement."
+    },
+    {
+      "title": "Embryo sac: count cells and trace both fusions",
+      "formula": "7 cells, 8 nuclei before polar-nuclear fusion",
+      "points": [
+        "Central cell contains two polar nuclei.",
+        "One sperm fuses with C.",
+        "The other participates in fusion with the polar nuclei at B."
+      ],
+      "script": "Count the six small cells in the drawing: three antipodals, two synergids and one egg. Add the large central cell to obtain seven cells. Before polar-nuclear fusion, the central cell contains two nuclei, so the total is eight nuclei. During normal double fertilisation, one sperm fuses with the egg at C to form the diploid zygote. The other combines with the two haploid polar nuclei at B, or their already fused secondary nucleus, to form the typical triploid primary endosperm nucleus. Count cells separately from nuclei, and state the developmental stage. A change in nuclear fusion does not automatically imply another cell division."
+    },
+    {
+      "title": "Energy flow: identify trophic levels from arrows",
+      "formula": "A producer → B primary consumer → C secondary consumer → D tertiary consumer",
+      "points": [
+        "The arrow follows transfer from food to consumer.",
+        "The chain is simplified.",
+        "Decomposers are not shown but remain part of ecosystems."
+      ],
+      "script": "The final schematic shows grass at A, grasshopper at B, frog at C and snake at D. Read the arrows as energy transfer from food to consumer. A is the producer, B the primary consumer, C the secondary consumer and D the tertiary consumer in this stated grazing chain. The drawing is a simplified model: real diets can form food webs, and decomposers participate even though they are not drawn. Do not interpret a missing box as proof that a process does not occur in nature. Identify the trophic level from the given feeding relationship, not just the animal's name in isolation."
+    },
+    {
+      "title": "Energy flow: count boundaries before multiplying",
+      "formula": "10,000 → 1,000 → 100 → 10 kJ at the specified 10% per transfer",
+      "points": [
+        "Use 10% only because this example specifies it.",
+        "Three transfers separate A and D.",
+        "Keep area and time comparisons consistent."
+      ],
+      "script": "For this calculation only, apply ten percent transfer at each boundary. Starting with ten thousand kilojoules at A gives one thousand at B, one hundred at C and ten at D. There are three transfers between A and D, so multiply by zero point one three times. If you compare production measurements, they must refer to matching areas and time periods. Ten percent is a stated teaching approximation, not an exact measured efficiency for every ecosystem. The energy not incorporated into the next level's production follows other pathways, including respiration, waste and uneaten material. It is not all stored as biomass in the next box."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "In the displayed chloroplast, which label brackets a granum?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0,
+      "explanation": "A brackets the stack of thylakoids, called a granum."
+    },
+    {
+      "question": "Which label identifies the stroma rather than the thylakoid interior?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 2,
+      "explanation": "C points to the fluid region surrounding the thylakoids inside the envelope."
+    },
+    {
+      "question": "Light-dependent electron transport is associated most directly with label:",
+      "options": [
+        "A as a whole stack only",
+        "B, the thylakoid membrane",
+        "C, the stroma",
+        "D, the outer envelope only"
+      ],
+      "answer": 1,
+      "explanation": "B identifies the thylakoid membrane containing the electron-transport system."
+    },
+    {
+      "question": "The same letters appear on a different diagram. What should you do first?",
+      "options": [
+        "Assume C always means stroma",
+        "Trace the new label endpoints",
+        "Ignore the drawing",
+        "Treat every membrane as identical"
+      ],
+      "answer": 1,
+      "explanation": "Letters are local labels; endpoint and context determine the structure."
+    },
+    {
+      "question": "In the displayed route, A is the:",
+      "options": [
+        "Right atrium",
+        "Left ventricle",
+        "Left atrium",
+        "Aorta"
+      ],
+      "answer": 0,
+      "explanation": "A receives blood returning from the body before blood passes to B."
+    },
+    {
+      "question": "Which labelled chamber pumps directly toward the lungs?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 1,
+      "explanation": "B is the right ventricle in this connectivity map."
+    },
+    {
+      "question": "Why is the vessel from B toward the lungs called an artery?",
+      "options": [
+        "It always has the highest oxygen content",
+        "It carries blood away from the heart",
+        "It carries blood toward the heart",
+        "It is drawn on the left side of the page"
+      ],
+      "answer": 1,
+      "explanation": "Artery and vein names refer to direction relative to the heart."
+    },
+    {
+      "question": "Which label represents the chamber pumping into the systemic circuit?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 3,
+      "explanation": "D is the left ventricle and pumps blood toward the body."
+    },
+    {
+      "question": "Which label identifies the antipodal cells in the displayed embryo sac?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 0,
+      "explanation": "A marks the three cells at the chalazal end."
+    },
+    {
+      "question": "The egg apparatus consists of the structures identified here by:",
+      "options": [
+        "A only",
+        "B only",
+        "C and D",
+        "A and B"
+      ],
+      "answer": 2,
+      "explanation": "C is the egg and D the two synergids."
+    },
+    {
+      "question": "Before polar-nuclear fusion, this typical embryo sac contains:",
+      "options": [
+        "7 cells and 8 nuclei",
+        "8 cells and 7 nuclei",
+        "8 cells and 8 nuclei",
+        "6 cells and 6 nuclei"
+      ],
+      "answer": 0,
+      "explanation": "The central cell has two nuclei, giving seven cells and eight nuclei overall."
+    },
+    {
+      "question": "The sperm participating in triple fusion combines with the nuclear material marked:",
+      "options": [
+        "A",
+        "B",
+        "C only",
+        "D only"
+      ],
+      "answer": 1,
+      "explanation": "B marks the polar nuclei in the central cell."
+    },
+    {
+      "question": "Which label is the secondary consumer in this stated chain?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 2,
+      "explanation": "C is the frog consuming the primary consumer."
+    },
+    {
+      "question": "The absence of a decomposer box means:",
+      "options": [
+        "Decomposers do not exist in this ecosystem",
+        "The schematic omits that pathway",
+        "All energy is recycled without loss",
+        "Grass cannot photosynthesise"
+      ],
+      "answer": 1,
+      "explanation": "A simplified chain omits pathways rather than proving their absence."
+    },
+    {
+      "question": "Under the specified 10% model, energy reaching C from 10,000 kJ at A is:",
+      "options": [
+        "10 kJ",
+        "100 kJ",
+        "1000 kJ",
+        "9000 kJ"
+      ],
+      "answer": 1,
+      "explanation": "Two transfers give 10,000 × 0.1 × 0.1 = 100 kJ."
+    },
+    {
+      "question": "How many transfer boundaries separate A and D?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "answer": 2,
+      "explanation": "The boundaries are A→B, B→C and C→D."
+    }
+  ]
+}
