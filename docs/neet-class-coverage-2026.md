@@ -263,6 +263,10 @@ Supplementary route: `/neet/classes/reproduction-ploidy`. Eight narrated chapter
 
 Supplementary route: `/neet/classes/biotechnology-data`. Eight narrated chapters, aligned captions, downloadable transcript and sixteen original questions. Independent progress: `neet.biotechnology-data.lecture.v1`. Covers ideal amplification, gel-band interpretation, linear/circular restriction counts, selection versus screening, controls, cDNA and evidence limits. Extends the Biotechnology foundation; further labelled vector diagrams and mixed application datasets remain.
 
+## B19: Human Welfare — Immunity and Microbial Evidence
+
+Supplementary route: `/neet/classes/human-welfare-evidence`. Eight narrated chapters, aligned captions, downloadable transcript and sixteen original questions. Independent progress: `neet.human-welfare-evidence.lecture.v1`. Covers innate/adaptive comparisons, memory graphs, active/passive immunity, lymphocyte roles, malaria host stages, beneficial microbes, BOD and hypothetical data arithmetic. Extends the Human Welfare foundation; further disease diagrams and mixed experimental cases remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |

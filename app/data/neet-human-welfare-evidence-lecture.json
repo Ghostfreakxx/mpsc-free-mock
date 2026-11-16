@@ -1,0 +1,291 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English biology teacher. Read scientific symbols, gas names and units carefully. Speak every sentence fully with short thinking pauses. Do not add or omit words.",
+  "title": "Human Welfare: Immunity and Microbial Evidence",
+  "subject": "Biology",
+  "unit": 8,
+  "scope": "NEET Biology Unit 8 practice supplement: innate/adaptive distinctions, immune-response graphs, active/passive immunity, B/T-cell functions, malaria host stages, beneficial microbes, BOD interpretation and hypothetical health-data arithmetic. Original educational questions extend the Human Welfare foundation; further disease diagrams and mixed cases remain. No personal diagnosis, treatment or laboratory protocol.",
+  "sources": [
+    {
+      "title": "OpenStax Biology 2e: Innate immunity",
+      "url": "https://openstax.org/books/biology-2e/pages/42-1-innate-immune-response"
+    },
+    {
+      "title": "OpenStax Biology 2e: Adaptive immunity",
+      "url": "https://openstax.org/books/biology-2e/pages/42-2-adaptive-immune-response"
+    },
+    {
+      "title": "CDC DPDx: Malaria life cycle",
+      "url": "https://www.cdc.gov/dpdx/malaria/index.html"
+    },
+    {
+      "title": "IIT Kanpur SATHEE: Microbes in Human Welfare",
+      "url": "https://sathee.iitk.ac.in/sathee-neet/ncert-books/neet-ncert-books/neet-nb-bio-12/bio-12-chapter-10-microbes-in-human-welfare/"
+    },
+    {
+      "title": "USGS: Biochemical oxygen demand",
+      "url": "https://www.usgs.gov/water-science-school/science/biochemical-oxygen-demand-bod-and-water"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Classify barriers without mixing immune branches",
+      "formula": "Innate barriers act before antigen-specific memory develops",
+      "points": [
+        "Skin and mucus provide barriers.",
+        "Phagocytes belong to innate defence.",
+        "Innate and adaptive responses interact."
+      ],
+      "script": "Welcome to the Human Welfare evidence workshop. Start by classifying the defence rather than treating every protective mechanism as an antibody response. Intact skin creates a physical barrier, mucus helps trap particles, and ciliary movement helps clear material from airways. Phagocytic cells provide another part of innate defence. These mechanisms do not require a previous encounter with the particular antigen. Adaptive responses add antigen-specific recognition and memory, but the two branches interact through signalling and antigen presentation. A barrier lowers the chance of entry; it does not guarantee that infection is impossible. Match the mechanism to the correct level of defence before interpreting a case."
+    },
+    {
+      "title": "Read a primary and secondary response graph",
+      "formula": "Re-exposure to the same antigen can trigger a faster memory response",
+      "points": [
+        "Compare the same antigen.",
+        "Read axis units and time points.",
+        "A stronger curve is not a universal clinical guarantee."
+      ],
+      "script": "A teaching graph shows antibody concentration after two exposures to the same antigen. The first response has a longer delay before a measurable rise. The second may begin sooner and reach a higher level because antigen-specific memory cells are already present. Do not compare unrelated antigens and call every difference evidence of memory. If the axis gives arbitrary units, report relative changes rather than inventing a mass concentration. A higher antibody value alone does not quantify every aspect of protection, which can also involve cellular responses and other factors. Read the exposure times, antigen identity and measured outcome before drawing the conclusion."
+    },
+    {
+      "title": "Distinguish active and passive immunity",
+      "formula": "Active: recipient responds; passive: antibodies are transferred",
+      "points": [
+        "Active responses can generate memory.",
+        "Passive protection can be prompt but temporary.",
+        "Natural/artificial describes the source, not the same distinction."
+      ],
+      "script": "Active immunity involves the recipient's own adaptive response to antigen and can establish memory. Passive immunity supplies antibodies formed elsewhere; it can act promptly but does not by itself create the recipient's antigen-specific memory in the same way. Maternal antibody transfer is a natural passive example. Antigen exposure through vaccination is an artificial active example in this textbook classification. Keep the active-passive distinction separate from the natural-artificial distinction. Neither word alone tells you an exact duration for every case. These categories describe biological mechanisms and are not instructions to choose a product, dose or personal treatment."
+    },
+    {
+      "title": "Separate antibody production from T-cell functions",
+      "formula": "B-cell descendants secrete antibodies; T cells mediate distinct cellular roles",
+      "points": [
+        "Plasma cells secrete antibodies.",
+        "Helper T cells coordinate responses.",
+        "Cytotoxic T cells can kill infected target cells."
+      ],
+      "script": "Humoral and cell-mediated immunity are connected but distinguishable. Activated B cells can differentiate into plasma cells that secrete antibodies. Helper T cells coordinate immune responses through interactions and signalling, while cytotoxic T cells can destroy appropriate infected target cells. T cells do not become antibody-secreting plasma cells. An antibody binds a specific molecular target; binding is not the same as directly killing every type of pathogen. A classroom case involving destruction of an infected host cell therefore tests a different function from a case measuring antibodies in fluid. Identify the actor, the target and the measured effect before naming the response."
+    },
+    {
+      "title": "Follow malaria stages between hosts",
+      "formula": "Mosquito → sporozoites → human; human → gametocytes → mosquito",
+      "points": [
+        "Plasmodium is the parasite.",
+        "Female Anopheles is the vector.",
+        "Sexual reproduction occurs in the mosquito."
+      ],
+      "script": "In the standard malaria life-cycle account, an infected female Anopheles mosquito introduces Plasmodium sporozoites into a human. Liver stages precede the repeating red-blood-cell stages in that account. Some blood-stage parasites become gametocytes, which a mosquito can ingest during a later blood meal. Sexual reproduction occurs in the mosquito, making it the definitive host in the conventional parasitological classification; the human is an intermediate host. Keep the parasite, vector and transferred stage separate. A mosquito is not the organism named Plasmodium, and the stage entering the human is not the gametocyte. This is life-cycle interpretation, not a guide to diagnosis, treatment or maintaining the parasite."
+    },
+    {
+      "title": "Match beneficial microbes to processes",
+      "formula": "Lactic acid bacteria → acidification; yeast → fermentation",
+      "points": [
+        "Microbial function depends on the organism and conditions.",
+        "All microbes are not pathogens.",
+        "A textbook product label is not a universal species rule."
+      ],
+      "script": "Microbes have beneficial roles as well as harmful ones. In the textbook curd example, lactic acid bacteria produce acids that contribute to coagulation of milk proteins. Yeasts are associated with fermentation in bread and other familiar products; carbon dioxide production helps explain dough expansion in the usual yeast-bread example. Methanogens associated with methane production belong to Archaea in modern classification, even though older accounts may group them loosely with bacteria. Do not infer that every microbe makes the same product or that a food example proves a treatment benefit. Match the organism group, metabolic effect and observed product, while keeping the classification precise."
+    },
+    {
+      "title": "Interpret BOD and treatment comparisons",
+      "formula": "BOD measures oxygen demand under specified test conditions",
+      "points": [
+        "Higher BOD can indicate greater biodegradable loading.",
+        "BOD is not dissolved oxygen concentration.",
+        "Lower BOD does not prove drinking-water safety."
+      ],
+      "script": "Biochemical oxygen demand, or B O D, measures oxygen consumed through biological activity under specified test conditions. It is not the oxygen concentration already dissolved in the water. Suppose comparable measurements show influent B O D of two hundred milligrams per litre and effluent B O D of forty. The reduction is one hundred sixty milligrams per litre, or eighty percent relative to the influent. This supports reduced measured oxygen demand under that comparison. It does not establish removal of every pathogen, toxin or other pollutant, and it does not by itself prove the water safe to drink. Compare the same test definition and units before calculating treatment performance."
+    },
+    {
+      "title": "Read a health dataset without inventing causation",
+      "formula": "Risk difference = risk in group A − risk in group B",
+      "points": [
+        "Use denominators, not counts alone.",
+        "Separate percentage points from relative reduction.",
+        "Study design limits causal interpretation."
+      ],
+      "script": "A hypothetical teaching dataset records an outcome in twenty of two hundred people in one group and forty of two hundred in another. The observed proportions are ten percent and twenty percent. Their difference is ten percentage points, while the relative reduction from twenty percent to ten percent is fifty percent. Those are different calculations. If group assignment was not controlled, differences in exposure, age or other factors may contribute to the association. Even a controlled study needs careful interpretation of uncertainty and the measured endpoint. This original example is arithmetic practice, not evidence about a particular real vaccine, medicine or disease. State the denominator and comparison direction before reporting an effect."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which is primarily a physical barrier of innate defence?",
+      "options": [
+        "Intact skin",
+        "A memory B cell",
+        "A secreted antigen-specific antibody",
+        "A vaccine-induced memory response"
+      ],
+      "answer": 0,
+      "explanation": "Intact skin provides a physical innate barrier."
+    },
+    {
+      "question": "Phagocytosis by a macrophage is classified primarily as:",
+      "options": [
+        "Only passive immunity",
+        "Innate cellular defence",
+        "Antibody secretion by a plasma cell",
+        "A form of pollination"
+      ],
+      "answer": 1,
+      "explanation": "Macrophages are phagocytic cells of innate defence and can also help coordinate adaptive responses."
+    },
+    {
+      "question": "A faster response after re-exposure to the same antigen is most directly associated with:",
+      "options": [
+        "Loss of every lymphocyte",
+        "Immunological memory",
+        "Absence of antigen recognition",
+        "Conversion of antibodies into bacteria"
+      ],
+      "answer": 1,
+      "explanation": "Antigen-specific memory supports a more rapid response on re-exposure."
+    },
+    {
+      "question": "A graph labelled in arbitrary antibody units allows which claim?",
+      "options": [
+        "A relative comparison within the stated assay",
+        "An exact antibody mass without calibration",
+        "Guaranteed complete protection",
+        "The exact number of T cells"
+      ],
+      "answer": 0,
+      "explanation": "Arbitrary units support the specified relative comparison, not an uncalibrated mass or a universal protection claim."
+    },
+    {
+      "question": "Maternal antibody transfer is an example of:",
+      "options": [
+        "Natural passive immunity",
+        "Artificial active immunity",
+        "No immune protection",
+        "Meiosis"
+      ],
+      "answer": 0,
+      "explanation": "The recipient receives antibodies produced by another individual."
+    },
+    {
+      "question": "Vaccination that stimulates the recipient’s own immune response is classified as:",
+      "options": [
+        "Natural passive",
+        "Artificial passive only",
+        "Artificial active",
+        "Innate physical immunity only"
+      ],
+      "answer": 2,
+      "explanation": "The antigen stimulates the recipient’s adaptive response, so the classification is artificial active immunity."
+    },
+    {
+      "question": "Which cell type directly secretes large amounts of antibody?",
+      "options": [
+        "Plasma cell",
+        "Red blood cell",
+        "Cytotoxic T cell",
+        "Platelet"
+      ],
+      "answer": 0,
+      "explanation": "Plasma cells are antibody-secreting descendants of activated B cells."
+    },
+    {
+      "question": "Destruction of an infected target cell by a cytotoxic T cell is mainly an example of:",
+      "options": [
+        "A physical skin barrier",
+        "Cell-mediated adaptive immunity",
+        "Antibody secretion by that T cell",
+        "Passive transfer of maternal antibodies"
+      ],
+      "answer": 1,
+      "explanation": "Cytotoxic T-cell action is a cell-mediated adaptive response."
+    },
+    {
+      "question": "The Plasmodium stage introduced into a human by the mosquito is the:",
+      "options": [
+        "Sporozoite",
+        "Gametocyte",
+        "Adult tapeworm",
+        "Pollen grain"
+      ],
+      "answer": 0,
+      "explanation": "Sporozoites are introduced into the human host."
+    },
+    {
+      "question": "The mosquito is the conventional definitive host of Plasmodium because:",
+      "options": [
+        "It is the only organism with blood",
+        "Sexual reproduction of the parasite occurs there",
+        "It produces human antibodies",
+        "Only asexual multiplication can occur there"
+      ],
+      "answer": 1,
+      "explanation": "The definitive host is where the parasite’s sexual phase occurs."
+    },
+    {
+      "question": "The usual textbook explanation for curd formation includes:",
+      "options": [
+        "Lactic acid bacteria producing acids",
+        "All milk proteins turning into DNA",
+        "Methanogens producing antibodies",
+        "Viruses making pollen tubes"
+      ],
+      "answer": 0,
+      "explanation": "Acid production by lactic acid bacteria contributes to milk-protein coagulation."
+    },
+    {
+      "question": "Methanogens are classified in modern taxonomy as:",
+      "options": [
+        "Animals",
+        "Archaea",
+        "Flowering plants",
+        "All fungi"
+      ],
+      "answer": 1,
+      "explanation": "Methanogens are archaeal organisms."
+    },
+    {
+      "question": "BOD falls from 200 to 40 mg L⁻¹ under comparable testing. Percentage reduction is:",
+      "options": [
+        "20%",
+        "40%",
+        "80%",
+        "160%"
+      ],
+      "answer": 2,
+      "explanation": "(200 − 40)/200 × 100 = 80%."
+    },
+    {
+      "question": "A lower BOD alone proves:",
+      "options": [
+        "Complete absence of all pathogens",
+        "Drinking-water safety in every case",
+        "Reduced measured biological oxygen demand in the stated comparison",
+        "Zero dissolved oxygen"
+      ],
+      "answer": 2,
+      "explanation": "BOD is one measurement and does not establish complete microbiological or chemical safety."
+    },
+    {
+      "question": "Outcomes in 20 of 200 versus 40 of 200 give risks of:",
+      "options": [
+        "1% and 2%",
+        "10% and 20%",
+        "20% and 40%",
+        "50% and 100%"
+      ],
+      "answer": 1,
+      "explanation": "20/200 = 10%; 40/200 = 20%."
+    },
+    {
+      "question": "A fall from 20% risk to 10% risk is:",
+      "options": [
+        "10 percentage points and 50% relative reduction",
+        "50 percentage points and 10% relative reduction",
+        "10 percentage points and 10% relative reduction",
+        "100 percentage points and 50% relative reduction"
+      ],
+      "answer": 0,
+      "explanation": "The absolute difference is 10 percentage points; relative reduction is (20 − 10)/20 = 50%."
+    }
+  ]
+}
