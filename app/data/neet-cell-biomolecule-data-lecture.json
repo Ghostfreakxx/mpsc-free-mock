@@ -1,0 +1,287 @@
+{
+  "version": 1,
+  "voice": "marin",
+  "voiceInstructions": "Warm, precise American English biology teacher. Read scientific symbols, gas names and units carefully. Speak every sentence fully with short thinking pauses. Do not add or omit words.",
+  "title": "Cells and Biomolecules: Enzymes, Membranes and Data",
+  "subject": "Biology",
+  "unit": 3,
+  "scope": "NEET Biology Unit 3 mixed-practice supplement: membrane transport, osmosis, organelle evidence, catalysis, initial-rate calculations, substrate saturation, inhibition, pH/temperature comparisons and mitotic-index interpretation. Original worked questions extend the Cell Structure, Biomolecules and Cell Division foundations; further labelled diagrams and mixed cases remain.",
+  "sources": [
+    {
+      "title": "OpenStax Biology 2e: Passive transport",
+      "url": "https://openstax.org/books/biology-2e/pages/5-2-passive-transport"
+    },
+    {
+      "title": "OpenStax Biology 2e: Eukaryotic cells",
+      "url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells"
+    },
+    {
+      "title": "OpenStax Biology 2e: Enzymes",
+      "url": "https://openstax.org/books/biology-2e/pages/6-5-enzymes"
+    },
+    {
+      "title": "OpenStax Biology 2e: Cell cycle",
+      "url": "https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Separate passive transport from energy-coupled transport",
+      "formula": "Passive transport follows the relevant gradient",
+      "points": [
+        "Facilitated diffusion uses membrane proteins.",
+        "Protein involvement does not automatically mean active transport.",
+        "Ions respond to an electrochemical gradient."
+      ],
+      "script": "Welcome to the Cell and Biomolecule data workshop. A membrane protein can help transport a substance without making the process active. In facilitated diffusion, a suitable channel or carrier supports movement down the relevant gradient without directly coupling transport to an energy source. Active transport moves substances against a gradient by coupling that movement to energy, directly or indirectly. For an ion, concentration alone is not the whole story: electrical potential also contributes to the electrochemical gradient. Therefore, a question stating only that a membrane protein is involved does not uniquely identify active transport. Read the direction, transported substance and energy coupling before classifying the mechanism."
+    },
+    {
+      "title": "Predict water movement with stated membrane assumptions",
+      "formula": "Tonicity depends mainly on effectively nonpenetrating solutes",
+      "points": [
+        "Specify which substances cross the membrane.",
+        "Animal cells lack a rigid cell wall.",
+        "A plant cell wall limits expansion."
+      ],
+      "script": "Suppose a cell membrane permits water but not the solute being compared. If the external solution has a higher effective concentration of that solute, water tends to leave the cell. An animal cell may shrink. In a hypotonic external solution, net water entry can swell an animal cell, whereas a plant cell's wall resists expansion and supports turgor. An isotonic condition means no sustained net volume change in the simple model, not that individual water molecules stop moving. If the solute can readily cross, its concentration alone may not predict the long-term volume response. State permeability and cell type before choosing a diagram."
+    },
+    {
+      "title": "Match organelles to evidence without overclaiming",
+      "formula": "Ribosome: translation; Golgi: modification and sorting",
+      "points": [
+        "Rough ER is associated with secretory pathways.",
+        "Mitochondria support aerobic energy metabolism.",
+        "One cell feature does not identify every cell function."
+      ],
+      "script": "An organelle question often gives a functional clue rather than a complete cell identity. Ribosomes carry out translation. Ribosomes associated with rough endoplasmic reticulum help make many proteins entering the secretory pathway, and the Golgi apparatus modifies and sorts material in that pathway. Mitochondria support major stages of aerobic energy metabolism, but finding many mitochondria does not prove that a cell has no other metabolic pathways. A cell lacking a visible nucleus in one image is not automatically prokaryotic: the section, imaging method or cell type may explain the observation. Combine structural evidence with the stated function instead of treating one image feature as universal proof."
+    },
+    {
+      "title": "Distinguish activation energy from reaction energy",
+      "formula": "Enzymes lower activation energy, not the reaction ΔG",
+      "points": [
+        "A catalyst changes reaction rate.",
+        "Reactant and product energy levels remain unchanged.",
+        "Equilibrium position is not shifted by the catalyst alone."
+      ],
+      "script": "An energy diagram shows the same reactants and products with two different peaks. The lower peak can represent an enzyme-catalysed pathway because activation energy is reduced. The overall free-energy difference between the reactants and products remains the same. Enzymes accelerate approach to equilibrium; they do not, by themselves, change the equilibrium position or turn every energetically unfavourable reaction into a favourable one. Energy coupling can support a cellular process, but coupling is a separate part of the explanation. When reading the graph, compare the peak height with the starting level for activation energy, and compare starting and ending levels for reaction free energy."
+    },
+    {
+      "title": "Calculate an initial rate from product data",
+      "formula": "Average rate over interval = Δproduct / Δtime",
+      "points": [
+        "Use the early approximately linear region.",
+        "Keep amount and concentration units distinct.",
+        "A late endpoint is not automatically an initial rate."
+      ],
+      "script": "A teaching assay reports product concentration rising from two to eight micromoles per litre over the first three minutes. The average rate in that interval is six divided by three, or two micromoles per litre per minute. If the early region is approximately linear, this can estimate the initial rate over that measurement interval. Do not divide the final concentration by time without subtracting the starting value. A later plateau can reflect substrate depletion, product effects or enzyme instability, so an endpoint alone does not give the same information. Compare assays using matching units, observation periods and the same defined readout."
+    },
+    {
+      "title": "Interpret substrate saturation and inhibition",
+      "formula": "At fixed enzyme amount, rate can approach a limiting value",
+      "points": [
+        "A plateau need not mean the enzyme stopped.",
+        "More substrate does not guarantee unlimited rate.",
+        "Interpret inhibition using the specified model."
+      ],
+      "script": "At a fixed enzyme amount and suitable conditions, raising substrate concentration can increase the initial rate until the enzyme system approaches saturation. A rate plateau does not mean that catalysis has stopped; it can mean that adding more substrate produces little further increase. In the simple reversible competitive-inhibition model, inhibitor and substrate compete for access at the active site, and sufficiently high substrate can reduce the inhibitor's relative effect. Do not apply that conclusion to every inhibitor. A single lowered rate does not uniquely identify an inhibition mechanism. Compare the response across conditions and keep enzyme amount, temperature and pH controlled before claiming a specific model."
+    },
+    {
+      "title": "Read pH and temperature comparisons as experiments",
+      "formula": "Optimum depends on the enzyme and assay conditions",
+      "points": [
+        "Extreme conditions can alter structure or ionisation.",
+        "A rate drop alone does not prove irreversible denaturation.",
+        "Control one factor when testing another."
+      ],
+      "script": "Two samples show different enzyme activity at different pH values. The difference can reflect changes in ionisation of important groups, substrate binding or structural stability. It does not establish a universal optimum pH for all enzymes. Likewise, warming can initially increase rate, while sufficiently high temperature can disrupt enzyme structure and reduce activity. A low rate at one temperature does not alone prove permanent denaturation; additional evidence is needed to distinguish reversible effects from irreversible damage. When testing temperature, keep other conditions comparable, including pH and enzyme amount. Describe the measured difference first, then state only the mechanism supported by the experimental design."
+    },
+    {
+      "title": "Use mitotic index without treating a snapshot as a clock",
+      "formula": "Mitotic index = cells in mitosis / total cells × 100%",
+      "points": [
+        "Count the denominator consistently.",
+        "Duration estimates require population assumptions.",
+        "Interphase includes active growth and DNA replication."
+      ],
+      "script": "A tissue snapshot contains forty cells visibly in mitosis among five hundred counted cells. Its mitotic index is eight percent. That is an observed fraction, not automatically eight percent of every individual cell's cycle time. Estimating stage duration from a snapshot requires assumptions about an appropriately sampled, asynchronous population, steady behaviour and the absence of major selection or arrest effects. Interphase is not an inactive waiting period: it includes growth and, during S phase, DNA replication. If a treatment raises the mitotic index, cells may be entering mitosis faster or spending longer there, among other possibilities. The fraction alone does not distinguish those mechanisms."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which feature alone does not establish active transport?",
+      "options": [
+        "Movement coupled to ATP hydrolysis",
+        "Movement against the relevant gradient using energy coupling",
+        "Involvement of a membrane protein",
+        "Coupling to an energy-storing ion gradient"
+      ],
+      "answer": 2,
+      "explanation": "Facilitated diffusion also uses membrane proteins."
+    },
+    {
+      "question": "For an ion, the direction favoured by passive transport depends on:",
+      "options": [
+        "Concentration only in every case",
+        "The electrochemical gradient",
+        "The number of organelles only",
+        "DNA sequence length directly"
+      ],
+      "answer": 1,
+      "explanation": "Both concentration and electrical potential can contribute."
+    },
+    {
+      "question": "With water permeability and a nonpenetrating solute, a hypertonic external solution tends to cause:",
+      "options": [
+        "Net water loss from the cell",
+        "Guaranteed cell division",
+        "No molecular water movement",
+        "Net DNA synthesis"
+      ],
+      "answer": 0,
+      "explanation": "A higher external effective solute concentration favours water leaving the cell."
+    },
+    {
+      "question": "Why does a plant cell respond differently from an animal cell to water entry?",
+      "options": [
+        "It has no plasma membrane",
+        "Its cell wall resists expansion",
+        "Its water molecules cannot move",
+        "It lacks all solutes"
+      ],
+      "answer": 1,
+      "explanation": "The wall supports pressure and limits expansion."
+    },
+    {
+      "question": "Which structure directly carries out translation?",
+      "options": [
+        "Golgi cisterna",
+        "Ribosome",
+        "Lysosomal membrane",
+        "Centriolar lumen"
+      ],
+      "answer": 1,
+      "explanation": "Ribosomes translate messenger RNA into polypeptides."
+    },
+    {
+      "question": "The Golgi apparatus is especially associated with:",
+      "options": [
+        "Chromosome separation as the spindle",
+        "Modification and sorting in the secretory pathway",
+        "Replacing all ribosomes",
+        "Direct DNA replication"
+      ],
+      "answer": 1,
+      "explanation": "The Golgi modifies and sorts proteins and other cargo."
+    },
+    {
+      "question": "An enzyme directly changes which feature of a reaction pathway?",
+      "options": [
+        "The activation-energy barrier",
+        "The identity of every product",
+        "The equilibrium constant necessarily",
+        "The overall reaction ΔG necessarily"
+      ],
+      "answer": 0,
+      "explanation": "Catalysis lowers the activation-energy barrier."
+    },
+    {
+      "question": "Adding a catalyst alone to the same reaction mixture changes the equilibrium position. This is:",
+      "options": [
+        "Always true",
+        "True only when the enzyme is a protein",
+        "False; it changes the rate of reaching equilibrium",
+        "A definition of osmosis"
+      ],
+      "answer": 2,
+      "explanation": "A catalyst accelerates forward and reverse processes without changing the equilibrium position."
+    },
+    {
+      "question": "Product rises from 2 to 8 μmol L⁻¹ in 3 min. Average rate is:",
+      "options": [
+        "2 μmol L⁻¹ min⁻¹",
+        "2.67 μmol L⁻¹ min⁻¹",
+        "6 μmol L⁻¹ min⁻¹",
+        "10 μmol L⁻¹ min⁻¹"
+      ],
+      "answer": 0,
+      "explanation": "(8 − 2)/3 = 2 μmol L⁻¹ min⁻¹."
+    },
+    {
+      "question": "Why can final product concentration divided by time give a wrong rate here?",
+      "options": [
+        "The starting product concentration was not zero",
+        "Enzymes cannot form products",
+        "Time has no units",
+        "Every assay begins at equilibrium"
+      ],
+      "answer": 0,
+      "explanation": "The change in product must account for its initial value."
+    },
+    {
+      "question": "A high-substrate rate plateau at fixed enzyme concentration most directly suggests:",
+      "options": [
+        "No molecules are reacting",
+        "Limited capacity of the enzyme system under those conditions",
+        "Unlimited acceleration with any extra substrate",
+        "All proteins have become DNA"
+      ],
+      "answer": 1,
+      "explanation": "The system approaches a limiting rate as substrate saturation increases."
+    },
+    {
+      "question": "In the simple reversible competitive model, increasing substrate can:",
+      "options": [
+        "Reduce the inhibitor’s relative effect",
+        "Guarantee irreversible enzyme destruction",
+        "Remove all temperature effects",
+        "Change the reaction’s products into different molecules"
+      ],
+      "answer": 0,
+      "explanation": "Higher substrate can compete more effectively for active-site access in this stated model."
+    },
+    {
+      "question": "An optimum pH measured for one enzyme means:",
+      "options": [
+        "Every enzyme has that same optimum",
+        "That enzyme performs best within the tested conditions at that pH",
+        "The enzyme has no active site",
+        "Temperature is irrelevant"
+      ],
+      "answer": 1,
+      "explanation": "The result is conditional on the enzyme and assay, not universal."
+    },
+    {
+      "question": "A low rate in one high-temperature measurement alone proves irreversible denaturation. This is:",
+      "options": [
+        "Always true",
+        "True for every protein",
+        "Not established without additional evidence",
+        "The definition of active transport"
+      ],
+      "answer": 2,
+      "explanation": "A single rate measurement does not establish irreversibility."
+    },
+    {
+      "question": "Forty mitotic cells among 500 total cells give a mitotic index of:",
+      "options": [
+        "4%",
+        "8%",
+        "12.5%",
+        "40%"
+      ],
+      "answer": 1,
+      "explanation": "40/500 × 100 = 8%."
+    },
+    {
+      "question": "An increased mitotic index alone proves that cells divide faster. This is:",
+      "options": [
+        "Always true",
+        "Not established; longer mitotic residence can also raise the fraction",
+        "True only because interphase is inactive",
+        "A direct measurement of DNA sequence"
+      ],
+      "answer": 1,
+      "explanation": "A snapshot fraction can change through entry rates, stage duration or arrest and does not uniquely establish faster completion."
+    }
+  ]
+}

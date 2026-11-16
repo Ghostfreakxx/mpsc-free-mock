@@ -99,6 +99,7 @@ targets['neet-biotechnology'] = 'biotechnology';
 targets['neet-ecology'] = 'ecology';
 targets['neet-physics-vectors'] = 'physics-vectors';
 targets['neet-chemistry-closeout'] = 'chemistry-closeout';
+targets['neet-cell-biomolecule-data'] = 'cell-biomolecule-data';
 targets['neet-human-welfare-evidence'] = 'human-welfare-evidence';
 targets['neet-biotechnology-data'] = 'biotechnology-data';
 targets['neet-reproduction-ploidy'] = 'reproduction-ploidy';
