@@ -275,6 +275,10 @@ Supplementary route: `/neet/classes/cell-biomolecule-data`. Eight narrated chapt
 
 Supplementary route: `/neet/classes/diversity-identification`. Eight narrated chapters, aligned captions, downloadable transcript and sixteen original questions. Independent progress: `neet.diversity-identification.lecture.v1`. Covers ranks, cellular organisation, fungi, algal clues, bryophytes, seedless vascular plants, seed plants and animal body plans. Extends the Diversity foundation; further specimen images and detailed group examples remain.
 
+## B22: Structural Organisation — Tissues and Anatomy Clues
+
+Supplementary route: `/neet/classes/structural-identification`. Eight narrated chapters, aligned captions, downloadable transcript and sixteen original questions. Independent progress: `neet.structural-identification.lecture.v1`. Covers plant tissues, meristems, vascular tissues, root/stem and leaf anatomy, modified organs and animal tissue identification. Extends the Structural Organisation foundation; further labelled specimen images, floral morphology and animal-organ-system cases remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |
