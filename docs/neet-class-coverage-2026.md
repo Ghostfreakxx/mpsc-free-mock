@@ -271,6 +271,10 @@ Supplementary route: `/neet/classes/human-welfare-evidence`. Eight narrated chap
 
 Supplementary route: `/neet/classes/cell-biomolecule-data`. Eight narrated chapters, aligned captions, downloadable transcript and sixteen original questions. Independent progress: `neet.cell-biomolecule-data.lecture.v1`. Covers transport, osmosis, organelle evidence, catalysis, rates, saturation/inhibition, pH/temperature comparisons and mitotic-index evidence. Extends the three Unit 3 foundations; further labelled diagrams and mixed applications remain.
 
+## B21: Diversity — Identification Keys and Comparative Traits
+
+Supplementary route: `/neet/classes/diversity-identification`. Eight narrated chapters, aligned captions, downloadable transcript and sixteen original questions. Independent progress: `neet.diversity-identification.lecture.v1`. Covers ranks, cellular organisation, fungi, algal clues, bryophytes, seedless vascular plants, seed plants and animal body plans. Extends the Diversity foundation; further specimen images and detailed group examples remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |
