@@ -291,6 +291,10 @@ Route: `/neet/classes/nephron-neuron-diagrams`. Four new original schematics (ne
 
 Route: `/neet/classes/flower-tissue-diagrams`. Four new original schematics (flower overview, placentation, simple plant tissues and animal tissues), eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original questions. Figures follow playback and chapter selection. Independent progress: `neet.flower-tissue-diagrams.lecture.v1`. Covers floral organs, ovary/ovule distinctions, marginal/axile/parietal attachment, wall patterns, epithelial/connective tissue and skeletal-muscle evidence. Further floral-family, vascular and organ-system diagrams remain.
 
+## B26: Root, Stem and Vascular Tissue Diagrams
+
+Route: `/neet/classes/root-stem-vascular-diagrams`. Four new original diagram boards: dicot root, monocot root, comparative primary stems, and collateral bundles with selected vessel/sieve/companion cells. Eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original questions. Independent progress: `neet.root-stem-vascular-diagrams.lecture.v1`. Covers radial versus collateral arrangement, exarch/endarch positions, pith and polyarch recognition, open/closed bundles and living/dead vascular components. Leaf anatomy and secondary-growth sequences remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |
