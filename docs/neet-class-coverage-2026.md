@@ -303,6 +303,10 @@ Route: `/neet/classes/leaf-secondary-growth-diagrams`. Four original diagram boa
 
 Route: `/neet/classes/stomata-guard-cell-diagrams`. Four original diagram boards: kidney-shaped guard-cell labels, grass-type apparatus, open/closed states, and a stomatal gas-exchange section. Eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original questions. Independent progress: `neet.stomata-guard-cell-diagrams.lecture.v1`. Guard-cell control is revision/extension rather than a claim of current syllabus inclusion. Further reproductive and organ-system diagrams remain.
 
+## B29: Anther and Ovule Diagrams — Labels and Development
+
+Route: `/neet/classes/anther-ovule-diagrams`. Four original diagram boards: young anther TS, microsporangium wall layers, selected ovule LS, and typical embryo sac before polar-nuclear fusion. Eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original questions. Independent progress: `neet.anther-ovule-diagrams.lecture.v1`. Covers developmental stages, nutritive/mechanical wall roles, local label endpoints, micropyle/hilum, and seven-cell/eight-nucleus counting. Pollen, pollen-tube and fertilisation diagrams remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |
