@@ -99,6 +99,7 @@ targets['neet-biotechnology'] = 'biotechnology';
 targets['neet-ecology'] = 'ecology';
 targets['neet-physics-vectors'] = 'physics-vectors';
 targets['neet-chemistry-closeout'] = 'chemistry-closeout';
+targets['neet-leaf-secondary-growth-diagrams'] = 'leaf-secondary-growth-diagrams';
 targets['neet-root-stem-vascular-diagrams'] = 'root-stem-vascular-diagrams';
 targets['neet-flower-tissue-diagrams'] = 'flower-tissue-diagrams';
 targets['neet-nephron-neuron-diagrams'] = 'nephron-neuron-diagrams';

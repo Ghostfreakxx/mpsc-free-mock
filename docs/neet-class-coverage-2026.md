@@ -295,6 +295,10 @@ Route: `/neet/classes/flower-tissue-diagrams`. Four new original schematics (flo
 
 Route: `/neet/classes/root-stem-vascular-diagrams`. Four new original diagram boards: dicot root, monocot root, comparative primary stems, and collateral bundles with selected vessel/sieve/companion cells. Eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original questions. Independent progress: `neet.root-stem-vascular-diagrams.lecture.v1`. Covers radial versus collateral arrangement, exarch/endarch positions, pith and polyarch recognition, open/closed bundles and living/dead vascular components. Leaf anatomy and secondary-growth sequences remain.
 
+## B27: Leaf Anatomy and Secondary Growth Diagrams
+
+Route: `/neet/classes/leaf-secondary-growth-diagrams`. Four original diagram boards: dorsiventral leaf, grass leaf, vascular cambium continuity/products, and periderm plus early/late wood. Eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original questions. Independent progress: `neet.leaf-secondary-growth-diagrams.lecture.v1`. Secondary growth is extension/revision rather than a claim of current syllabus inclusion. Further stomatal and reproductive diagrams remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |
