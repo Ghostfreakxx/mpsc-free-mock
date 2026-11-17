@@ -311,6 +311,10 @@ Route: `/neet/classes/anther-ovule-diagrams`. Four original diagram boards: youn
 
 Route: `/neet/classes/pollen-tube-diagrams`. Four original diagram boards: selected pollen section, germination/male-gamete stages, pistil pathway, and synergid entry with fusion destinations. Eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original questions. Independent progress: `neet.pollen-tube-diagrams.lecture.v1`. Covers exine/intine/germ pores, vegetative nucleus versus generative cell, two/three-celled pollen, compatibility, micropylar entry, syngamy and triple fusion. Further seed and embryo diagrams remain.
 
+## B31: Seed and Embryo Diagrams — Bean and Maize
+
+Route: `/neet/classes/seed-embryo-diagrams`. Four original diagram boards: bean-type seed exterior, selected dicot embryo, maize grain LS, and enlarged grass embryo. Eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original questions. Independent progress: `neet.seed-embryo-diagrams.lecture.v1`. Covers hilum/micropyle, cotyledons and axis regions, endosperm/perisperm distinctions, caryopsis coverings, scutellum and protective sheaths. Further embryogenesis and germination-sequence diagrams remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |

@@ -1,9 +1,13 @@
-// Dependency audit for CI: fails on any high or critical advisory, with one narrow exception.
+// Dependency audit for CI: fails on any high or critical advisory, with narrowly scoped exceptions.
 // An advisory may be allowlisted only when no fixed release exists, the package is dev-only
 // (never shipped to students), and the entry has a review date. Everything shipped must be clean.
 import { execFileSync } from 'node:child_process';
 
 const allowlist = {
+  // GHSA-fc5q-39xc-vjpf: no patched release as of 2026-11-17 (latest 4.0.7 is affected).
+  // picomatch is only in ESLint's dev tree; npm ls picomatch --omit=dev is empty.
+  // Recheck upstream promptly; production audit remains unconditional.
+  'https://github.com/advisories/GHSA-fc5q-39xc-vjpf': { package: 'picomatch', reviewBy: '2026-12-01' },
   // braces has no patched release; it reaches us only through eslint-config-next's lint tooling.
   'https://github.com/advisories/GHSA-vfj7-8cjw-p6xm': { package: 'braces', reviewBy: '2026-12-31' },
 };

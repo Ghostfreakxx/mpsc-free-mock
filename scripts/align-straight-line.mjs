@@ -100,6 +100,7 @@ targets['neet-ecology'] = 'ecology';
 targets['neet-physics-vectors'] = 'physics-vectors';
 targets['neet-chemistry-closeout'] = 'chemistry-closeout';
 targets['neet-leaf-secondary-growth-diagrams'] = 'leaf-secondary-growth-diagrams';
+targets['neet-seed-embryo-diagrams'] = 'seed-embryo-diagrams';
 targets['neet-pollen-tube-diagrams'] = 'pollen-tube-diagrams';
 targets['neet-anther-ovule-diagrams'] = 'anther-ovule-diagrams';
 targets['neet-stomata-guard-cell-diagrams'] = 'stomata-guard-cell-diagrams';
