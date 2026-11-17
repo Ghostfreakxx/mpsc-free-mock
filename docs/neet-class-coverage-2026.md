@@ -315,6 +315,10 @@ Route: `/neet/classes/pollen-tube-diagrams`. Four original diagram boards: selec
 
 Route: `/neet/classes/seed-embryo-diagrams`. Four original diagram boards: bean-type seed exterior, selected dicot embryo, maize grain LS, and enlarged grass embryo. Eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original questions. Independent progress: `neet.seed-embryo-diagrams.lecture.v1`. Covers hilum/micropyle, cotyledons and axis regions, endosperm/perisperm distinctions, caryopsis coverings, scutellum and protective sheaths. Further embryogenesis and germination-sequence diagrams remain.
 
+## B32: Embryogenesis and Seed Germination Diagrams
+
+Route: `/neet/classes/embryogenesis-germination-diagrams`. Four original diagram boards: selected dicot embryogenesis, water uptake/radicle emergence, epigeal common bean and hypogeal pea. Eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original questions. Independent progress: `neet.embryogenesis-germination-diagrams.lecture.v1`. Germination comparisons are revision/extension rather than a claim of exhaustive current syllabus coverage. Further plant life-cycle and organ-system diagrams remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |
