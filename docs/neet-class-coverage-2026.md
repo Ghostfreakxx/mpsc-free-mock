@@ -287,6 +287,10 @@ Route: `/neet/classes/biology-diagram-workshop`. Four existing original practice
 
 Route: `/neet/classes/nephron-neuron-diagrams`. Four new original schematics (nephron, renal corpuscle, neuron and chemical synapse), eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original questions. Figures follow playback and chapter selection. Independent progress: `neet.nephron-neuron-diagrams.lecture.v1`. Distinguishes blood/filtrate routes, collecting drainage versus one nephron, myelin/nodes and chemical-synapse direction. Further floral, tissue and other physiology diagrams remain.
 
+## B25: Flower and Tissue Diagrams — Labels and Evidence
+
+Route: `/neet/classes/flower-tissue-diagrams`. Four new original schematics (flower overview, placentation, simple plant tissues and animal tissues), eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original questions. Figures follow playback and chapter selection. Independent progress: `neet.flower-tissue-diagrams.lecture.v1`. Covers floral organs, ovary/ovule distinctions, marginal/axile/parietal attachment, wall patterns, epithelial/connective tissue and skeletal-muscle evidence. Further floral-family, vascular and organ-system diagrams remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |

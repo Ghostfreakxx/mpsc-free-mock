@@ -11,6 +11,7 @@ import styles from "./lecture.module.css";
 // Each class shows only its own diagram, so load diagrams on demand instead of bundling all of them into every class page.
 const NeetBiomoleculesDiagram = dynamic(() => import("../../neet/classes/biomolecules-diagram"));
 const NeetDivisionDiagram = dynamic(() => import("../../neet/classes/cell-division-diagram"));
+const NeetFloralTissueDiagram = dynamic(() => import('../../neet/classes/floral-tissue-diagrams'));
 const NeetRenalNeuralDiagram = dynamic(() => import('../../neet/classes/renal-neural-diagrams'));
 const NeetDiagramWorkshop = dynamic(() => import('../../neet/classes/biology-practice/diagrams'));
 const NeetReviewDiagram = dynamic(() => import("../../neet/classes/review-diagrams"));
@@ -200,6 +201,7 @@ export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: Player
           {lesson.id === "binomial-theorem" && <BinomialDiagram chapter={chapterIndex} />}
           {lesson.id === "sequences-series" && <SequencesDiagram chapter={chapterIndex} />}
           {lesson.id === "trigonometry" && <TrigonometryDiagram chapter={chapterIndex} />}
+          {lesson.id === "neet-flower-tissue-diagrams" && <NeetFloralTissueDiagram chapter={chapterIndex} />}
           {lesson.id === "neet-nephron-neuron-diagrams" && <NeetRenalNeuralDiagram chapter={chapterIndex} />}
           {lesson.id === "neet-biology-diagram-workshop" && <NeetDiagramWorkshop id={['chloroplast','chloroplast','circulation','circulation','embryo-sac','embryo-sac','energy-flow','energy-flow'][chapterIndex] ?? 'chloroplast'} />}
           {lesson.id === "neet-biomolecules" && <NeetBiomoleculesDiagram chapter={chapterIndex} />}

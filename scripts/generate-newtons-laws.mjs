@@ -108,6 +108,7 @@ targets['neet-biotechnology'] = 'biotechnology';
 targets['neet-ecology'] = 'ecology';
 targets['neet-physics-vectors'] = 'physics-vectors';
 targets['neet-chemistry-closeout'] = 'chemistry-closeout';
+targets['neet-flower-tissue-diagrams'] = 'flower-tissue-diagrams';
 targets['neet-nephron-neuron-diagrams'] = 'nephron-neuron-diagrams';
 targets['neet-biology-diagram-workshop'] = 'biology-diagram-workshop';
 targets['neet-structural-identification'] = 'structural-identification';
