@@ -12,6 +12,7 @@ import styles from "./lecture.module.css";
 const NeetBiomoleculesDiagram = dynamic(() => import("../../neet/classes/biomolecules-diagram"));
 const NeetDivisionDiagram = dynamic(() => import("../../neet/classes/cell-division-diagram"));
 const NeetLeafGrowthDiagram = dynamic(() => import('../../neet/classes/leaf-growth-diagrams'));
+const NeetPollenTubeDiagram = dynamic(() => import('../../neet/classes/pollen-tube-diagrams'));
 const NeetAntherOvuleDiagram = dynamic(() => import('../../neet/classes/anther-ovule-diagrams'));
 const NeetStomataGuardDiagram = dynamic(() => import('../../neet/classes/stomata-guard-diagrams'));
 const NeetRootStemDiagram = dynamic(() => import('../../neet/classes/root-stem-diagrams'));
@@ -206,6 +207,7 @@ export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: Player
           {lesson.id === "sequences-series" && <SequencesDiagram chapter={chapterIndex} />}
           {lesson.id === "trigonometry" && <TrigonometryDiagram chapter={chapterIndex} />}
           {lesson.id === "neet-leaf-secondary-growth-diagrams" && <NeetLeafGrowthDiagram chapter={chapterIndex} />}
+          {lesson.id === "neet-pollen-tube-diagrams" && <NeetPollenTubeDiagram chapter={chapterIndex} />}
           {lesson.id === "neet-anther-ovule-diagrams" && <NeetAntherOvuleDiagram chapter={chapterIndex} />}
           {lesson.id === "neet-stomata-guard-cell-diagrams" && <NeetStomataGuardDiagram chapter={chapterIndex} />}
           {lesson.id === "neet-root-stem-vascular-diagrams" && <NeetRootStemDiagram chapter={chapterIndex} />}

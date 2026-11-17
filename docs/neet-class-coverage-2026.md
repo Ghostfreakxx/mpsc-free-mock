@@ -307,6 +307,10 @@ Route: `/neet/classes/stomata-guard-cell-diagrams`. Four original diagram boards
 
 Route: `/neet/classes/anther-ovule-diagrams`. Four original diagram boards: young anther TS, microsporangium wall layers, selected ovule LS, and typical embryo sac before polar-nuclear fusion. Eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original questions. Independent progress: `neet.anther-ovule-diagrams.lecture.v1`. Covers developmental stages, nutritive/mechanical wall roles, local label endpoints, micropyle/hilum, and seven-cell/eight-nucleus counting. Pollen, pollen-tube and fertilisation diagrams remain.
 
+## B30: Pollen Grains and Pollen Tube Growth
+
+Route: `/neet/classes/pollen-tube-diagrams`. Four original diagram boards: selected pollen section, germination/male-gamete stages, pistil pathway, and synergid entry with fusion destinations. Eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original questions. Independent progress: `neet.pollen-tube-diagrams.lecture.v1`. Covers exine/intine/germ pores, vegetative nucleus versus generative cell, two/three-celled pollen, compatibility, micropylar entry, syngamy and triple fusion. Further seed and embryo diagrams remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |
