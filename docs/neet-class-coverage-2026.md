@@ -299,6 +299,10 @@ Route: `/neet/classes/root-stem-vascular-diagrams`. Four new original diagram bo
 
 Route: `/neet/classes/leaf-secondary-growth-diagrams`. Four original diagram boards: dorsiventral leaf, grass leaf, vascular cambium continuity/products, and periderm plus early/late wood. Eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original questions. Independent progress: `neet.leaf-secondary-growth-diagrams.lecture.v1`. Secondary growth is extension/revision rather than a claim of current syllabus inclusion. Further stomatal and reproductive diagrams remain.
 
+## B28: Stomata and Guard Cell Diagrams
+
+Route: `/neet/classes/stomata-guard-cell-diagrams`. Four original diagram boards: kidney-shaped guard-cell labels, grass-type apparatus, open/closed states, and a stomatal gas-exchange section. Eight narrated chapters, aligned captions, text equivalents, downloadable transcript and sixteen original questions. Independent progress: `neet.stomata-guard-cell-diagrams.lecture.v1`. Guard-cell control is revision/extension rather than a claim of current syllabus inclusion. Further reproductive and organ-system diagrams remain.
+
 ## Wider Biology map
 
 | Unit | Recording status |
