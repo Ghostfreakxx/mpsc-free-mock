@@ -84,6 +84,25 @@ try {
   check(await page.locator('blockquote').innerText() === '“Education is an offering to God in a church. Share it freely; do not sell it like a five-star meal.”', 'study room motto changed');
   check(await page.locator('blockquote + p').innerText() === 'Every revolution starts with a student. Learn freely, ask bold questions, and build a better future together.', 'study room follow-up sentence changed');
   check(await page.locator('canvas').count() === 0, 'study room started WebGL before the student entered');
+  const teacherChat = async route => {
+    const payload = route.request().postDataJSON();
+    check(JSON.stringify(payload.teaching) === JSON.stringify({ teacher: 'lalthan', subject: 'ict', mode: 'quiz', language: 'lus' }), 'teacher chat lost the selected options');
+    check(payload.messages?.at(-1)?.content === 'Computer memory', 'teacher chat lost the student question');
+    await route.fulfill({ json: { reply: 'RAM hi eng atan nge hman a nih?', mode: 'ai', teacher: 'lalthan' } });
+  };
+  await page.route('**/api/chat', teacherChat);
+  await page.getByRole('button', { name: 'Study with Tochhawng Teachers' }).click();
+  const dialog = page.getByRole('dialog', { name: 'Tochhawng Teachers' });
+  await dialog.getByAltText('Illustrated avatar of Zorami wearing spectacles').waitFor();
+  await dialog.getByLabel('AI teacher', { exact: true }).selectOption('lalthan');
+  await dialog.getByLabel('Subject').selectOption('ict');
+  await dialog.getByLabel('Teaching mode').selectOption('quiz');
+  await dialog.getByLabel('Reply language').selectOption('lus');
+  await dialog.getByLabel('Message the AI teacher').fill('Computer memory');
+  await dialog.getByRole('button', { name: 'Send message' }).click();
+  await dialog.getByText('RAM hi eng atan nge hman a nih?').waitFor();
+  await dialog.getByRole('button', { name: 'Close study assistant' }).click();
+  await page.unroute('**/api/chat', teacherChat);
   const fallback = await browser.newPage({ viewport: { width: 360, height: 780 } });
   try {
     await fallback.addInitScript(() => { Reflect.deleteProperty(window, 'WebGL2RenderingContext'); });

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import OpenTeachersButton from "./open-teachers-button";
 import StudyRoom from "./study-room";
 import styles from "./study-room.module.css";
 
@@ -31,7 +32,10 @@ export default function StudyRoomPage() {
           <p className={styles.eyebrow}>By Tochhawng Teachers · Mizoram</p>
           <h1 id="room-title">The Mizo<br />Study Room</h1>
           <p>A place to prepare for your next exam. Free for everyone, with no account required.</p>
-          <a className={styles.primary} href="#resources">Find study resources <span aria-hidden="true">↓</span></a>
+          <div className={styles.roomActions}>
+            <OpenTeachersButton />
+            <a className={styles.primary} href="#resources">Find study resources <span aria-hidden="true">↓</span></a>
+          </div>
         </div>
         <StudyRoom />
       </section>

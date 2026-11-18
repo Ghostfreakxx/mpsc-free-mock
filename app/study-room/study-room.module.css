@@ -99,13 +99,23 @@
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  margin-top: 1.15rem;
   padding: 0.7rem 0;
   color: var(--room-accent);
   font-size: 0.94rem;
   font-weight: 750;
   text-decoration: underline;
   text-underline-offset: 0.32rem;
+}
+
+.roomActions {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.1rem;
+  margin-top: 1.15rem;
+}
+
+.roomActions button {
+  cursor: pointer;
 }
 
 .viewer {
