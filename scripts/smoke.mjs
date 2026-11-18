@@ -6,6 +6,7 @@ import { chromium } from 'playwright';
 const base = process.env.SMOKE_URL || 'http://localhost:3000';
 const pages = ['/neet/mock-test', '/neet/classes/biology-practice', '/neet/classes/physics-chemistry/practice', '/', '/mock-test', '/mizo', '/neet', '/neet/classes', '/neet/classes/cell-unit-life', '/neet/classes/biomolecules', '/neet/classes/cell-cycle-division', '/neet/classes/diversity-living-world', '/neet/classes/structural-organisation', '/neet/classes/plant-physiology', '/neet/classes/human-physiology', '/neet/classes/reproduction', '/neet/classes/genetics-evolution', '/neet/classes/human-welfare', '/neet/classes/biotechnology', '/neet/classes/ecology', '/neet/classes/physics-vectors', '/neet/classes/chemistry-closeout', '/neet/classes/physics-chemistry/review', '/neet/classes/physics-chemistry', '/neet/classes/physics-chemistry/physics', '/neet/classes/physics-chemistry/chemistry', '/jee', '/cuet-pg', '/nursing', '/college-notes', '/downloads', '/exam-simulator', '/law/mjs', '/trading', '/trading/learn', '/terms', '/jee/classes', '/jee/classes/units', '/jee/classes/measurements'];
 const sharedMap = JSON.parse((await import('node:fs')).readFileSync(new URL('../app/data/neet-physics-chemistry-map.json', import.meta.url), 'utf8'));
+pages.push('/study-room');
 pages.push(...sharedMap.recordings.map(r => '/neet/classes/shared/' + r.id));
 const failures = [];
 const check = (condition, message) => { if (!condition) failures.push(message); };
@@ -74,6 +75,25 @@ try {
     check(response?.status() === 200, `${path} returned ${response?.status()}`);
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     check(overflow <= 0, `${path} scrolls sideways by ${overflow}px`);
+  }
+
+  // The study room must remain a way into practice on devices without WebGL.
+  await page.goto(base);
+  await page.getByRole('link', { name: 'Explore the 3D study room' }).click();
+  await page.waitForURL('**/study-room');
+  check(await page.locator('blockquote').innerText() === '“Education is an offering to God in a church. Share it freely; do not sell it like a five-star meal.”', 'study room motto changed');
+  check(await page.locator('blockquote + p').innerText() === 'Every revolution starts with a student. Learn freely, ask bold questions, and build a better future together.', 'study room follow-up sentence changed');
+  check(await page.locator('canvas').count() === 0, 'study room started WebGL before the student entered');
+  const fallback = await browser.newPage({ viewport: { width: 360, height: 780 } });
+  try {
+    await fallback.addInitScript(() => { Reflect.deleteProperty(window, 'WebGL2RenderingContext'); });
+    await fallback.goto(base + '/study-room');
+    await fallback.getByRole('button', { name: 'Enter the 3D room' }).click();
+    await fallback.getByText('The 3D view is unavailable on this device.').waitFor();
+    await fallback.getByRole('link', { name: 'Mock tests', exact: true }).click();
+    await fallback.waitForURL('**/mock-test');
+  } finally {
+    await fallback.close();
   }
 
   // 4. A practice answer and a short simulator paper work end to end.

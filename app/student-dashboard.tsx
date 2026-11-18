@@ -463,6 +463,7 @@ export default function StudentDashboard({ reviewedKeyHashes }: { reviewedKeyHas
                   <div className="welcome-actions">
                     <Link href="/mock-test" className="button button-dark"><Play size={16} fill="currentColor" /><span className="button-label-stack"><strong>Start MPSC practice</strong><small>Zir zui rawh · Go to practice</small></span></Link>
                     <button type="button" className="text-button" onClick={() => setView("planner")}>View today&apos;s plan <ArrowRight size={16} /></button>
+                    <Link href="/study-room" prefetch={false} className="text-button">Explore the 3D study room <ArrowRight size={16} aria-hidden="true" /></Link>
                   </div>
                   <InstallAppButton variant="hero" />
                 </div>
