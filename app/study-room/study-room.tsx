@@ -3,7 +3,8 @@
 import dynamic from "next/dynamic";
 import { Component, useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { classroomCaptions, CLASSROOM_LESSON_EVENT, type ClassroomLesson } from "../lib/classroom-lesson";
-import { teachers } from "../lib/tochhawng-teachers";
+import { subjects, teachers, teachingModes } from "../lib/tochhawng-teachers";
+import ReplyPlayback from "../reply-playback";
 import styles from "./study-room.module.css";
 
 const RoomScene = dynamic(() => import("./room-scene"), { ssr: false });
@@ -97,7 +98,7 @@ export default function StudyRoom() {
             <SceneBoundary onFailure={markFailed}>
               <RoomScene active={visible && pageVisible} reducedMotion={reducedMotion}
                 closeUp={closeUp} onBookClick={toggleBook} onTeacherClick={meetZorami} greeting={greeting}
-                onReady={markReady} onFailure={markFailed} />
+                onReady={markReady} onFailure={markFailed} lesson={lesson} />
             </SceneBoundary>
           </div>
         )}
@@ -118,9 +119,12 @@ export default function StudyRoom() {
       <section className={styles.lesson} aria-labelledby="classroom-lesson-title">
         <h2 id="classroom-lesson-title">Classroom notes</h2>
         {lesson ? (
-          <>
+          <div key={lesson.text} className={styles.chalkLesson}>
+            <h3>{subjects[lesson.subject]} <span>· {teachingModes[lesson.mode]}</span></h3>
+            <p className={styles.lessonTopic}>{lesson.topic}</p>
             <p className={styles.lessonByline}>{lesson.source === "ai" ? `${teachers[lesson.teacher].name} · AI teacher` : "Offline study guidance"}</p>
             <p className={styles.lessonText} lang={lesson.language}>{lesson.text}</p>
+            <ReplyPlayback text={lesson.text} language={lesson.language} />
             <div className={styles.captionButtons}>
               <button type="button" aria-pressed={subtitles} onClick={() => setSubtitles(value => !value)}>Classroom subtitles</button>
               {captions.length > 1 && <>
@@ -129,7 +133,7 @@ export default function StudyRoom() {
                 <button type="button" disabled={captionIndex === captions.length - 1} onClick={() => setCaptionIndex(index => index + 1)}>Next subtitle</button>
               </>}
             </div>
-          </>
+          </div>
         ) : <p>Ask a teacher to see the latest explanation here.</p>}
       </section>
     </div>

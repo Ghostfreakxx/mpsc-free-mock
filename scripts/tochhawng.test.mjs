@@ -16,6 +16,7 @@ const { GET } = require("../app/api/admin/teacher-usage/route.ts");
 const { clientAddress, teachingDay } = require("../app/lib/teaching-usage.ts");
 const { teachingInstructions } = require("../app/lib/teaching-prompt.ts");
 const { classroomCaptions } = require("../app/lib/classroom-lesson.ts");
+const { createPrivateVoiceAdapter } = require("../app/lib/private-voice-adapter.ts");
 
 const base = "http://127.0.0.1:3000";
 const password = "local-test-admin-password-with-32-chars";
@@ -130,6 +131,34 @@ test("classroom captions preserve reply words and line order", () => {
   assert.ok(cues.length > 2);
   assert.ok(cues.every(cue => cue.length <= 108));
   assert.equal(cues.join(" "), reply.replace(/\s+/gu, " "));
+});
+
+test("future voice adapter is off by default and requires private auth, a bounded lesson and its own reservation", async (t) => {
+  configure(t, { TOCHHAWNG_PAID_VOICE_MODE: "off" });
+  let reserved = false;
+  let reservationAttempts = 0;
+  let providerCalls = 0;
+  const adapter = createPrivateVoiceAdapter(async () => { reservationAttempts++; return reserved; },
+    async ({ apiKey, lesson }) => {
+      providerCalls++;
+      assert.equal(apiKey, "mock-openai-key");
+      assert.equal(lesson.text, "Revision.");
+      return new Uint8Array([1, 2]);
+    });
+  const send = (token = testToken, origin = base, text = " Revision. ") => adapter(new Request(base, {
+    method: "POST", headers: { Authorization: `Bearer ${token}`, Origin: origin },
+  }), { teacher: "zorami", language: "en", text });
+  assert.equal(await send(), null);
+  process.env.TOCHHAWNG_PAID_VOICE_MODE = "private";
+  assert.equal(await send("wrong"), null);
+  assert.equal(await send(testToken, "https://example.org"), null);
+  assert.equal(await send(testToken, base, "a".repeat(2401)), null);
+  assert.equal(reservationAttempts, 0);
+  assert.equal(await send(), null);
+  assert.equal(providerCalls, 0);
+  reserved = true;
+  assert.deepEqual(await send(), new Uint8Array([1, 2]));
+  assert.equal(providerCalls, 1);
 });
 
 test("invalid options and reserved roles are rejected before an upstream request", async (t) => {

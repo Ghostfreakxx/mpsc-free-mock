@@ -5,6 +5,9 @@ export const CLASSROOM_LESSON_EVENT = "mpsc-classroom-lesson";
 export type ClassroomLesson = {
   teacher: TeachingOptions["teacher"];
   language: TeachingOptions["language"];
+  subject: TeachingOptions["subject"];
+  mode: TeachingOptions["mode"];
+  topic: string;
   text: string;
   source: "ai" | "offline";
 };

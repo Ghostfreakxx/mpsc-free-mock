@@ -4,6 +4,7 @@ import { useCursor } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { CanvasTexture, SRGBColorSpace, type Group } from "three";
+import type { ClassroomLesson } from "../lib/classroom-lesson";
 
 type Point = [number, number, number];
 const skin = "#b97d5f";
@@ -48,14 +49,16 @@ function wovenPuan() {
   return map;
 }
 
-export default function Zorami({ active, reducedMotion, greeting, onSelect }: {
-  active: boolean; reducedMotion: boolean; greeting: number; onSelect: () => void;
+export default function Zorami({ active, reducedMotion, greeting, lesson, onSelect }: {
+  active: boolean; reducedMotion: boolean; greeting: number; lesson: ClassroomLesson | null; onSelect: () => void;
 }) {
   const body = useRef<Group>(null);
   const head = useRef<Group>(null);
   const gaze = useRef<Group>(null);
   const arm = useRef<Group>(null);
+  const forearm = useRef<Group>(null);
   const gestureAt = useRef(0);
+  const lessonAt = useRef(0);
   const { gl, invalidate } = useThree();
   const [hovered, setHovered] = useState(false);
   const weave = useMemo(() => wovenPuan(), []);
@@ -71,21 +74,32 @@ export default function Zorami({ active, reducedMotion, greeting, onSelect }: {
     if (greeting) gestureAt.current = performance.now();
     invalidate();
   }, [greeting, invalidate]);
+  useEffect(() => {
+    if (lesson?.teacher === "zorami") lessonAt.current = performance.now();
+    invalidate();
+  }, [lesson, invalidate]);
 
-  useFrame(({ clock, pointer }) => {
-    if (!body.current || !head.current || !gaze.current || !arm.current) return;
+  useFrame(({ clock, pointer }, delta) => {
+    if (!body.current || !head.current || !gaze.current || !arm.current || !forearm.current) return;
     const time = reducedMotion ? 0 : clock.elapsedTime;
-    const blink = time % 4.73;
+    const blink = (time + 0.32 * Math.sin(time * 0.41)) % 4.87;
     const phase = (performance.now() - gestureAt.current) / 1700;
     const gesture = reducedMotion || !gestureAt.current || phase >= 1 ? 0 : Math.sin(phase * Math.PI) ** 2;
+    const lessonPhase = (performance.now() - lessonAt.current) / 2100;
+    const point = reducedMotion || !lessonAt.current || lessonPhase >= 1 ? 0 : Math.sin(lessonPhase * Math.PI) ** 2;
+    const ease = reducedMotion ? 1 : 1 - Math.exp(-Math.min(delta, 0.05) * 8);
+    const yaw = reducedMotion ? 0 : 0.13 + 0.055 * Math.sin(time * 0.74) + pointer.x * 0.085 - point * 0.26;
     body.current.position.y = Math.sin(time * 1.7) * 0.012;
-    head.current.rotation.y = Math.sin(time * 0.68) * 0.1 + (reducedMotion ? 0 : pointer.x * 0.11);
+    head.current.rotation.y += (yaw - head.current.rotation.y) * ease;
+    head.current.rotation.x = Math.sin(time * 0.81) * 0.023 + point * Math.sin(lessonPhase * 14) * 0.095;
     head.current.rotation.z = Math.sin(time * 0.93) * 0.036 - gesture * 0.08;
-    gaze.current.position.x = reducedMotion ? 0 : Math.sin(time * 1.24) * 0.012 + pointer.x * 0.008;
-    gaze.current.position.y = reducedMotion ? 0 : pointer.y * 0.007;
-    gaze.current.scale.y = blink > 4.56 ? Math.max(0.08, Math.abs(blink - 4.645) / 0.085) : 1;
-    arm.current.rotation.x = -0.17 - gesture * 1.29;
-    arm.current.rotation.z = 0.21 + gesture * (0.48 + Math.sin(phase * 18) * 0.12);
+    const look = reducedMotion ? 0 : Math.sin(time * 1.13) * 0.006 + pointer.x * 0.008 - point * 0.012;
+    gaze.current.position.x += (look - gaze.current.position.x) * ease;
+    gaze.current.position.y = reducedMotion ? 0 : Math.sin(time * 0.87) * 0.003 + pointer.y * 0.006;
+    gaze.current.scale.y = 1 - 0.94 * Math.exp(-(((blink - 4.68) / 0.065) ** 2));
+    arm.current.rotation.x = -0.17 - gesture * 0.95 - point * 0.42;
+    arm.current.rotation.z = 0.21 - point * 1.03 + gesture * (0.38 + Math.sin(phase * 18) * 0.12);
+    forearm.current.rotation.x = -0.08 - gesture * 0.75 - point * 0.28;
   });
 
   return (
@@ -103,8 +117,10 @@ export default function Zorami({ active, reducedMotion, greeting, onSelect }: {
         <Form at={[0, 2.20, 0.014]} size={[0.102, 0.148, 0.093]} color={skin} />
         <group ref={arm} position={[-0.28, 2.01, 0]} rotation={[ -0.17, 0, 0.21 ]}>
           <Form at={[0, -0.145, 0]} size={[0.12, 0.23, 0.115]} color={blouse} />
-          <Form at={[0, -0.38, 0.032]} size={[0.077, 0.225, 0.076]} color={skin} />
-          <Form at={[0, -0.60, 0.034]} size={[0.077, 0.095, 0.050]} color={skin} />
+          <group ref={forearm} position={[0, -0.29, 0.025]}>
+            <Form at={[0, -0.11, 0.012]} size={[0.077, 0.185, 0.076]} color={skin} />
+            <Form at={[0, -0.29, 0.017]} size={[0.077, 0.095, 0.050]} color={skin} />
+          </group>
         </group>
         <group position={[0.28, 2.01, 0]} rotation={[-0.21, 0, 0.22]}>
           <Form at={[0, -0.145, 0]} size={[0.12, 0.23, 0.115]} color={blouse} />

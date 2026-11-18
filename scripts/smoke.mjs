@@ -101,9 +101,34 @@ try {
   await dialog.getByLabel('Message the AI teacher').fill('Computer memory');
   await dialog.getByRole('button', { name: 'Send message' }).click();
   await dialog.getByText('RAM hi eng atan nge hman a nih?').waitFor();
+  await page.evaluate(() => {
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
+      getVoices: () => [
+        { lang: 'lus-IN', localService: false },
+        { lang: 'lus-IN', localService: true },
+      ],
+      speak: utterance => {
+        document.documentElement.dataset.testSpeech = utterance.voice.localService ? 'local' : 'remote';
+      },
+      pause: () => { document.documentElement.dataset.testSpeech = 'paused'; },
+      resume: () => { document.documentElement.dataset.testSpeech = 'resumed'; },
+      cancel: () => { document.documentElement.dataset.testSpeech = 'stopped'; },
+    } });
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: class {
+      constructor(text) { this.text = text; }
+    } });
+  });
+  await dialog.getByRole('button', { name: 'Listen' }).click();
+  check(await page.locator('html').getAttribute('data-test-speech') === 'local', 'Listen did not select the local language voice');
+  await dialog.getByRole('button', { name: 'Pause' }).click();
+  check(await page.locator('html').getAttribute('data-test-speech') === 'paused', 'Listen did not pause');
+  await dialog.getByRole('button', { name: 'Resume' }).click();
+  await dialog.getByRole('button', { name: 'Stop' }).click();
+  check(await page.locator('html').getAttribute('data-test-speech') === 'stopped', 'Listen did not stop');
   await dialog.getByRole('button', { name: 'Close study assistant' }).click();
   const lesson = page.getByRole('region', { name: 'Classroom notes' });
   await lesson.getByText('RAM hi eng atan nge hman a nih?').waitFor();
+  check(await lesson.getByRole('heading', { name: 'ICT · Quiz Me' }).count() === 1, 'blackboard lost its subject or quiz heading');
   await lesson.getByRole('button', { name: 'Classroom subtitles' }).click();
   const viewer = page.getByRole('group', { name: 'Interactive Zorami and Constitution study desk' });
   await viewer.getByText('RAM hi eng atan nge hman a nih?').waitFor();

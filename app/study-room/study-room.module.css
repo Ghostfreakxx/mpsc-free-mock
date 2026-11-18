@@ -163,11 +163,20 @@
 }
 
 .lesson {
+  --room-board: #1e332e;
+  --room-chalk: #faf1de;
+  --room-chalk-accent: #f5d096;
+  --room-chalk-edge: #9b8469;
+  --chat-border: var(--room-chalk-edge);
+  --chat-canvas: var(--room-board);
+  --chat-text: var(--room-chalk);
+  --chat-accent: var(--room-chalk-accent);
   margin-top: 0.75rem;
   padding: 0.85rem 1rem;
   border: 1px solid var(--room-line);
   border-radius: 0.5rem;
-  background: var(--room-card);
+  background: var(--room-board);
+  color: var(--room-chalk);
 }
 
 .lesson h2 {
@@ -175,8 +184,32 @@
 }
 
 .lessonByline {
-  color: var(--room-accent);
+  color: var(--room-chalk-accent);
   font-size: 0.83rem;
+}
+
+.chalkLesson {
+  margin-top: 0.4rem;
+  animation: chalk-appear 0.34s ease-out both;
+}
+
+.chalkLesson h3 {
+  font-size: 1.1rem;
+}
+
+.chalkLesson h3 span {
+  color: var(--room-chalk-accent);
+  font-weight: 500;
+}
+
+.lessonTopic {
+  font-weight: 680;
+  overflow-wrap: anywhere;
+}
+
+@keyframes chalk-appear {
+  from { opacity: 0; transform: translateY(0.22rem); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .lessonText {
@@ -188,6 +221,7 @@
 }
 
 .captionButtons {
+  margin-top: 0.6rem;
   display: flex;
   gap: 0.35rem 0.65rem;
   align-items: center;
@@ -197,9 +231,9 @@
 
 .captionButtons button {
   padding: 0.5rem;
-  border: 1px solid var(--room-line);
+  border: 1px solid var(--room-chalk-edge);
   border-radius: 0.3rem;
-  color: var(--room-accent);
+  color: var(--room-chalk-accent);
   cursor: pointer;
 }
 
@@ -340,6 +374,9 @@
 @media (prefers-reduced-motion: reduce) {
   .canvas {
     transition: none;
+  }
+  .chalkLesson {
+    animation: none;
   }
 }
 

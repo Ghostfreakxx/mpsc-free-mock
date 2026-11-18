@@ -1,3 +1,5 @@
+import { createHash, timingSafeEqual } from "node:crypto";
+
 export function selectOpenAIApiKey(env: Record<string, string | undefined>): string | undefined {
   // Prefer the recently rotated Vercel secret alias until the environment variable is normalized.
   return env.OPENAI_API_KEY1?.trim() || env.OPENAI_API_KEY?.trim() || undefined;
@@ -9,4 +11,13 @@ export function sanitizedOpenAIApiErrorCode(payload: unknown): string {
   if (typeof error !== "object" || error === null || !("code" in error)) return "unknown";
   const code = error.code;
   return typeof code === "string" && /^[A-Za-z0-9_.-]{1,64}$/.test(code) ? code : "unknown";
+}
+
+export function allowedTeachingTester(request: Request) {
+  const secret = process.env.TOCHHAWNG_TEST_TOKEN?.trim();
+  const authorization = request.headers.get("authorization");
+  if (process.env.TOCHHAWNG_AI_MODE !== "private" || !secret || secret.length < 32
+    || !authorization || authorization.length > 512) return false;
+  const digest = (value: string) => createHash("sha256").update(value).digest();
+  return timingSafeEqual(digest(authorization), digest(`Bearer ${secret}`));
 }

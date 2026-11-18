@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from "react";
 import Image from "next/image";
+import ReplyPlayback from "./reply-playback";
 import Link from "next/link";
 import { CLASSROOM_LESSON_EVENT, type ClassroomLesson } from "./lib/classroom-lesson";
 import {
@@ -25,6 +26,7 @@ type ChatMessage = {
   links?: ChatLink[];
   mode?: "ai" | "offline";
   teacher?: TeacherId;
+  language?: TeachingOptions["language"];
   // Connection or server errors are shown to the student but never sent back as conversation history.
   failed?: boolean;
 };
@@ -139,7 +141,7 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
       if (!response.ok) throw new AssistantError(result.error || "The assistant could not answer that just now.");
       if (window.location.pathname === "/study-room" && result.reply && (result.mode === "ai" || result.mode === "offline")) {
         window.dispatchEvent(new CustomEvent<ClassroomLesson>(CLASSROOM_LESSON_EVENT, {
-          detail: { teacher: options.teacher, language: options.language, text: result.reply, source: result.mode },
+          detail: { ...options, topic: prompt.replace(/\s+/gu, " ").slice(0, 90), text: result.reply, source: result.mode },
         }));
       }
       setMessages((current) => [
@@ -150,6 +152,7 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
           links: result.links,
           mode: result.mode,
           teacher: result.mode === "ai" ? options.teacher : undefined,
+          language: options.language,
         },
       ]);
     } catch (error) {
@@ -272,6 +275,9 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
                 <div className="assistant-bubble">
                   {message.teacher && <strong>{teachers[message.teacher].name}</strong>}
                   <p>{message.content}</p>
+                  {message.role === "assistant" && message.language && (
+                    <ReplyPlayback text={message.content} language={message.language} />
+                  )}
                   {!!message.links?.length && (
                     <div className="assistant-links">
                       {message.links.map((link) => (

@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
-import { createHash, timingSafeEqual } from "node:crypto";
 import { offlineGuidance } from "../../lib/study-guidance";
-import { sanitizedOpenAIApiErrorCode, selectOpenAIApiKey } from "../../lib/openai-auth";
+import { allowedTeachingTester, selectOpenAIApiKey } from "../../lib/openai-auth";
 import { requestOrigin } from "../../lib/request-origin";
 import { teachingInstructions, type ChatMessage } from "../../lib/teaching-prompt";
 import {
@@ -126,14 +125,6 @@ function tokenCount(value: unknown): value is number {
   return typeof value === "number" && Number.isSafeInteger(value) && value >= 0;
 }
 
-function allowedTester(request: Request) {
-  const secret = process.env.TOCHHAWNG_TEST_TOKEN?.trim();
-  const authorization = request.headers.get("authorization");
-  if (process.env.TOCHHAWNG_AI_MODE !== "private" || !secret || secret.length < 32
-    || !authorization || authorization.length > 512) return false;
-  const digest = (value: string) => createHash("sha256").update(value).digest();
-  return timingSafeEqual(digest(authorization), digest(`Bearer ${secret}`));
-}
 
 export async function POST(request: Request) {
   if (!takeRateLimit(request)) {
@@ -169,7 +160,7 @@ export async function POST(request: Request) {
 
   const prompt = messages[messages.length - 1].content;
   const apiKey = selectOpenAIApiKey(process.env);
-  if (!apiKey || !allowedTester(request)) return offlineReply(prompt, options);
+  if (!apiKey || !allowedTeachingTester(request)) return offlineReply(prompt, options);
 
   const providerBody = JSON.stringify({
     model: TEACHING_MODEL,
@@ -218,8 +209,8 @@ export async function POST(request: Request) {
       signal: AbortSignal.any([request.signal, AbortSignal.timeout(20_000)]),
     });
     if (!response.ok) {
-      const code = sanitizedOpenAIApiErrorCode(await response.json().catch(() => null));
-      console.error(`Tochhawng Teachers request failed (${response.status}, ${code}).`);
+      void response.body?.cancel().catch(() => {});
+      console.error(`Tochhawng Teachers request failed (HTTP ${response.status}).`);
       return offlineReply(prompt, options);
     }
     const result: unknown = await response.json();

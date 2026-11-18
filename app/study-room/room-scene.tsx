@@ -7,6 +7,8 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Group, MathUtils, Vector3 } from "three";
 import { makeRoomTextures } from "./room-materials";
 import Zorami from "./zorami";
+import RoomBlackboard from "./room-blackboard";
+import type { ClassroomLesson } from "../lib/classroom-lesson";
 
 type SceneProps = {
   active: boolean;
@@ -15,14 +17,15 @@ type SceneProps = {
   onBookClick: () => void;
   onTeacherClick: () => void;
   greeting: number;
+  lesson: ClassroomLesson | null;
   onReady: () => void;
   onFailure: () => void;
 };
 
-function Room({ active, closeUp, reducedMotion, onBookClick, onTeacherClick, greeting, onReady, onFailure }: SceneProps) {
+function Room({ active, closeUp, reducedMotion, onBookClick, onTeacherClick, greeting, lesson, onReady, onFailure }: SceneProps) {
   const textures = useMemo(() => makeRoomTextures(), []);
   const coverHinge = useRef<Group>(null);
-  const framing = useRef({ zoom: 0, arrival: 1 });
+  const framing = useRef({ zoom: 0, arrival: 1, board: 0 });
   const aim = useRef(new Vector3());
   const { gl, invalidate } = useThree();
   const [bookHovered, setBookHovered] = useState(false);
@@ -78,20 +81,21 @@ function Room({ active, closeUp, reducedMotion, onBookClick, onTeacherClick, gre
   useEffect(() => {
     const move = gsap.to(framing.current, {
       zoom: closeUp ? 1 : 0,
+      board: lesson && !closeUp ? 1 : 0,
       duration: reducedMotion ? 0 : 1.1,
       ease: "power2.inOut",
       onUpdate: invalidate,
     });
     return () => { move.kill(); };
-  }, [closeUp, invalidate, reducedMotion]);
+  }, [closeUp, invalidate, lesson, reducedMotion]);
 
   useFrame(({ camera, size }, delta) => {
-    const { zoom, arrival } = framing.current;
+    const { zoom, arrival, board } = framing.current;
     const portrait = size.width / size.height < 1.15;
     const parallax = reducedMotion ? 0 : 1 - zoom * 0.65;
-    const x = MathUtils.lerp(3.25, 0.9, zoom) + pointerOffset.current.x * 0.21 * parallax;
-    const y = MathUtils.lerp(3.35, 3.15, zoom) + pointerOffset.current.y * 0.17 * parallax;
-    const z = MathUtils.lerp(portrait ? 8.2 : 7.15, portrait ? 4.6 : 3.65, zoom) + arrival;
+    const x = MathUtils.lerp(3.25, 0.9, zoom) - board * 0.65 + pointerOffset.current.x * 0.21 * parallax;
+    const y = MathUtils.lerp(3.35, 3.15, zoom) + board * 0.14 + pointerOffset.current.y * 0.17 * parallax;
+    const z = MathUtils.lerp(portrait ? 8.2 : 7.15, portrait ? 4.6 : 3.65, zoom) + arrival + board * (portrait ? 0.55 : 0.12);
     const distance = Math.hypot(camera.position.x - x, camera.position.y - y, camera.position.z - z);
     const ease = reducedMotion || distance < 0.002 ? 1 : 1 - Math.exp(-Math.min(delta, 0.05) * 12);
     camera.position.set(
@@ -99,7 +103,7 @@ function Room({ active, closeUp, reducedMotion, onBookClick, onTeacherClick, gre
       MathUtils.lerp(camera.position.y, y, ease),
       MathUtils.lerp(camera.position.z, z, ease),
     );
-    aim.current.set(-0.22 * (1 - zoom), MathUtils.lerp(2.0, 1.53, zoom), 0.15 * zoom);
+    aim.current.set(-0.22 * (1 - zoom) - board * 0.36, MathUtils.lerp(2.0, 1.53, zoom) + board * 0.18, 0.15 * zoom);
     camera.lookAt(aim.current);
     if (coverHinge.current) coverHinge.current.rotation.z = zoom * 2.45;
     if (ease < 1) invalidate();
@@ -111,7 +115,7 @@ function Room({ active, closeUp, reducedMotion, onBookClick, onTeacherClick, gre
     <>
       <color attach="background" args={["#251919"]} />
       <ambientLight color="#edd1b0" intensity={0.65} />
-      <Zorami active={active} reducedMotion={reducedMotion} greeting={greeting} onSelect={onTeacherClick} />
+      <Zorami active={active} reducedMotion={reducedMotion} greeting={greeting} lesson={lesson} onSelect={onTeacherClick} />
       <hemisphereLight color="#aeb9fa" groundColor="#784527" intensity={1.3} />
       <directionalLight position={[1.8, 4.8, -1.6]} intensity={2.3} color="#ffc09c" />
       <directionalLight position={[-2, 4.2, 3]} intensity={1.45} color="#ffe0ac" castShadow
@@ -155,7 +159,8 @@ function Room({ active, closeUp, reducedMotion, onBookClick, onTeacherClick, gre
           </mesh>
         ))}
       </group>
-      <mesh position={[-2.28, 3.04, -2.88]} rotation-z={-0.023}>
+      <RoomBlackboard lesson={lesson} reducedMotion={reducedMotion} />
+      <mesh position={[-4.42, 3.04, -2.88]} rotation-z={-0.023}>
         <planeGeometry args={[0.88, 2.65, 1, 1]} />
         <meshStandardMaterial map={textures.weave} roughness={1} />
       </mesh>
