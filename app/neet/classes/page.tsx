@@ -1,3 +1,4 @@
+import LearningTrail from "../../learning-trail";
 import embryogenesisGerminationDiagrams from '../../data/neet-embryogenesis-germination-diagrams-lecture.json';
 import seedEmbryoDiagrams from '../../data/neet-seed-embryo-diagrams-lecture.json';
 import pollenTubeDiagrams from '../../data/neet-pollen-tube-diagrams-lecture.json';
@@ -37,7 +38,8 @@ export default function NeetClasses() {
  return <main className={styles.page}>
 
   <header className={styles.header}><Link href="/neet" prefetch={false}>← NEET practice</Link><Link href="/">MPSC FREE MOCK</Link></header>
-  <div className={styles.heading}><p>NEET UG · BIOLOGY, PHYSICS &amp; CHEMISTRY</p><h1>NEET recorded classes</h1><span>Twelve Biology classes · Physics and Chemistry shared foundations</span></div>
+  <div className={`${styles.heading} cinema-entrance`}><p>NEET UG · BIOLOGY, PHYSICS &amp; CHEMISTRY</p><h1>NEET recorded classes</h1><span>Twelve Biology classes · Physics and Chemistry shared foundations</span></div>
+  <LearningTrail current="courses" />
   <section className={styles.notes}><h2>Full-syllabus timed mock</h2><p>180 questions in 180 minutes, with 45 Physics, 45 Chemistry and 90 Biology questions. Every paper spans all 50 mapped units. Choose Foundation or Challenge mix, which selects 50 application questions from a pool of 275 alongside 130 foundation questions. Progress saves and explanations appear after submission.</p><Link href="/neet/mock-test" prefetch={false}>Open NEET full-syllabus timed mock →</Link></section>
   <section className={styles.notes}><h2>Physics and Chemistry</h2><p>40 NEET syllabus units mapped to 106 shared JEE recordings, with focus chapters, scope limits and independent NEET progress.</p><Link href="/neet/classes/physics-chemistry" prefetch={false}>Open Physics and Chemistry study map →</Link><p><Link href="/neet/classes/physics-chemistry/review" prefetch={false}>Read the detailed subheading review →</Link></p><p><Link href="/neet/classes/physics-vectors" prefetch={false}>Vectors: components and products →</Link></p><p><Link href="/neet/classes/chemistry-closeout" prefetch={false}>Chemistry: targeted subheading review →</Link></p><p>189 grouped review entries and two recorded supplements. Further diagrams, experiments and mixed NEET practice remain.</p></section>
   <section className={styles.notes}><h2>Biology diagram and mixed practice</h2><p>Four original schematics and 32 questions with worked explanations, related class links and six independently saved sets.</p><Link href="/neet/classes/biology-practice" prefetch={false}>Open Biology diagram and mixed practice →</Link></section>

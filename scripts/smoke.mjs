@@ -6,6 +6,7 @@ import { chromium } from 'playwright';
 const base = process.env.SMOKE_URL || 'http://localhost:3000';
 const pages = ['/neet/mock-test', '/neet/classes/biology-practice', '/neet/classes/physics-chemistry/practice', '/', '/mock-test', '/mizo', '/neet', '/neet/classes', '/neet/classes/cell-unit-life', '/neet/classes/biomolecules', '/neet/classes/cell-cycle-division', '/neet/classes/diversity-living-world', '/neet/classes/structural-organisation', '/neet/classes/plant-physiology', '/neet/classes/human-physiology', '/neet/classes/reproduction', '/neet/classes/genetics-evolution', '/neet/classes/human-welfare', '/neet/classes/biotechnology', '/neet/classes/ecology', '/neet/classes/physics-vectors', '/neet/classes/chemistry-closeout', '/neet/classes/physics-chemistry/review', '/neet/classes/physics-chemistry', '/neet/classes/physics-chemistry/physics', '/neet/classes/physics-chemistry/chemistry', '/jee', '/cuet-pg', '/nursing', '/college-notes', '/downloads', '/exam-simulator', '/law/mjs', '/trading', '/trading/learn', '/terms', '/jee/classes', '/jee/classes/units', '/jee/classes/measurements'];
 const sharedMap = JSON.parse((await import('node:fs')).readFileSync(new URL('../app/data/neet-physics-chemistry-map.json', import.meta.url), 'utf8'));
+pages.push('/study-room');
 pages.push(...sharedMap.recordings.map(r => '/neet/classes/shared/' + r.id));
 const failures = [];
 const check = (condition, message) => { if (!condition) failures.push(message); };
@@ -76,7 +77,106 @@ try {
     check(overflow <= 0, `${path} scrolls sideways by ${overflow}px`);
   }
 
+  // The study room must remain a way into practice on devices without WebGL.
+  await page.goto(base);
+  await page.getByRole('link', { name: 'Explore the 3D study room' }).click();
+  await page.waitForURL('**/study-room');
+  check(await page.locator('blockquote').innerText() === '“Education is an offering to God in a church. Share it freely; do not sell it like a five-star meal.”', 'study room motto changed');
+  check(await page.locator('blockquote + p').innerText() === 'Every revolution starts with a student. Learn freely, ask bold questions, and build a better future together.', 'study room follow-up sentence changed');
+  check(await page.locator('canvas').count() === 0, 'study room started WebGL before the student entered');
+  const teacherChat = async route => {
+    const payload = route.request().postDataJSON();
+    check(JSON.stringify(payload.teaching) === JSON.stringify({ teacher: 'lalthan', subject: 'ict', mode: 'quiz', language: 'lus' }), 'teacher chat lost the selected options');
+    check(payload.messages?.at(-1)?.content === 'Computer memory', 'teacher chat lost the student question');
+    await route.fulfill({ json: { reply: 'RAM hi eng atan nge hman a nih?', mode: 'ai', teacher: 'lalthan' } });
+  };
+  await page.route('**/api/chat', teacherChat);
+  await page.getByRole('button', { name: 'Study with Tochhawng Teachers' }).click();
+  const dialog = page.getByRole('dialog', { name: 'Tochhawng Teachers' });
+  await dialog.getByAltText('Illustrated avatar of Zorami wearing spectacles').waitFor();
+  await dialog.getByLabel('AI teacher', { exact: true }).selectOption('lalthan');
+  await dialog.getByLabel('Subject').selectOption('ict');
+  await dialog.getByLabel('Teaching mode').selectOption('quiz');
+  await dialog.getByLabel('Reply language').selectOption('lus');
+  await dialog.getByLabel('Message the AI teacher').fill('Computer memory');
+  await dialog.getByRole('button', { name: 'Send message' }).click();
+  await dialog.getByText('RAM hi eng atan nge hman a nih?').waitFor();
+  await page.evaluate(() => {
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: {
+      getVoices: () => [
+        { lang: 'lus-IN', localService: false },
+        { lang: 'lus-IN', localService: true },
+      ],
+      speak: utterance => {
+        document.documentElement.dataset.testSpeech = utterance.voice.localService ? 'local' : 'remote';
+      },
+      pause: () => { document.documentElement.dataset.testSpeech = 'paused'; },
+      resume: () => { document.documentElement.dataset.testSpeech = 'resumed'; },
+      cancel: () => { document.documentElement.dataset.testSpeech = 'stopped'; },
+    } });
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: class {
+      constructor(text) { this.text = text; }
+    } });
+  });
+  await dialog.getByRole('button', { name: 'Listen' }).click();
+  check(await page.locator('html').getAttribute('data-test-speech') === 'local', 'Listen did not select the local language voice');
+  await dialog.getByRole('button', { name: 'Pause' }).click();
+  check(await page.locator('html').getAttribute('data-test-speech') === 'paused', 'Listen did not pause');
+  await dialog.getByRole('button', { name: 'Resume' }).click();
+  await dialog.getByRole('button', { name: 'Stop' }).click();
+  check(await page.locator('html').getAttribute('data-test-speech') === 'stopped', 'Listen did not stop');
+  await dialog.getByRole('button', { name: 'Close study assistant' }).click();
+  const lesson = page.getByRole('region', { name: 'Classroom notes' });
+  await lesson.getByText('RAM hi eng atan nge hman a nih?').waitFor();
+  check(await lesson.getByRole('heading', { name: 'ICT · Quiz Me' }).count() === 1, 'blackboard lost its subject or quiz heading');
+  await lesson.getByRole('button', { name: 'Classroom subtitles' }).click();
+  const viewer = page.getByRole('group', { name: 'Interactive Zorami and Constitution study desk' });
+  await viewer.getByText('RAM hi eng atan nge hman a nih?').waitFor();
+  await lesson.getByRole('button', { name: 'Classroom subtitles' }).click();
+  check(await viewer.getByText('RAM hi eng atan nge hman a nih?').count() === 0, 'classroom subtitles did not turn off');
+  await page.unroute('**/api/chat', teacherChat);
+  const reviewed = page.getByRole('region', { name: 'Reviewed classroom lessons' });
+  await reviewed.getByLabel('Subject', { exact: true }).selectOption({ label: 'Geography' });
+  check(await reviewed.getByRole('heading', { name: 'Latitude and location' }).count() === 1, 'reviewed subject did not load its lesson');
+  await reviewed.getByRole('radio').first().check();
+  await reviewed.getByRole('button', { name: 'Check answer' }).click();
+  await reviewed.getByRole('status').waitFor();
+  await reviewed.getByRole('button', { name: 'Ask Zorami about Geography' }).click();
+  check(await dialog.getByLabel('Subject', { exact: true }).inputValue() === 'geography', 'classroom lesson did not open its subject in chat');
+  await dialog.getByLabel('Teaching mode').selectOption('explain');
+  await dialog.getByLabel('Reply language').selectOption('en');
+  await dialog.getByLabel('Message the AI teacher').fill('Latitude and location');
+  await dialog.getByRole('button', { name: 'Send message' }).click();
+  await dialog.getByText(/Reviewed course notes/).waitFor();
+  await dialog.getByRole('button', { name: 'Close study assistant' }).click();
+  const fallback = await browser.newPage({ viewport: { width: 360, height: 780 } });
+  try {
+    await fallback.addInitScript(() => { Reflect.deleteProperty(window, 'WebGL2RenderingContext'); });
+    await fallback.goto(base + '/study-room');
+    await fallback.getByRole('button', { name: 'Enter the 3D room' }).click();
+    await fallback.getByText('The 3D view is unavailable on this device.').waitFor();
+    await fallback.getByRole('button', { name: 'Talk to Zorami' }).click();
+    const fallbackDialog = fallback.getByRole('dialog', { name: 'Tochhawng Teachers' });
+    check(await fallbackDialog.getByLabel('AI teacher', { exact: true }).inputValue() === 'zorami', 'no-WebGL fallback lost Zorami');
+    await fallbackDialog.getByRole('button', { name: 'Close study assistant' }).click();
+    await fallback.getByRole('link', { name: 'Mock tests', exact: true }).click();
+    await fallback.waitForURL('**/mock-test');
+  } finally {
+    await fallback.close();
+  }
+
   // 4. A practice answer and a short simulator paper work end to end.
+  await page.goto(`${base}/mock-test`);
+  await page.locator('.practice-option').first().click();
+  await page.locator('.practice-result').waitFor();
+  await page.waitForFunction(() => Object.keys(JSON.parse(localStorage.getItem('mpsc.practice.responses.v1') ?? '{}')).length > 0);
+  await page.reload();
+  const progress = page.getByRole('region', { name: 'MPSC practice summary' });
+  await progress.getByText('QUESTIONS ANSWERED').waitFor();
+  await page.waitForFunction(() => {
+    const label = Array.from(document.querySelectorAll('.practice-metrics .metric-label')).find(item => item.textContent === 'QUESTIONS ANSWERED');
+    return Number(label?.nextElementSibling?.textContent) > 0;
+  });
   await page.goto(`${base}/jee`);
   await page.locator('.practice-option').first().click();
   check(await page.locator('.practice-result').count() === 1, 'JEE practice gave no feedback');

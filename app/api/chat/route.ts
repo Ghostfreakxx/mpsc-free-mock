@@ -1,250 +1,245 @@
 import { NextResponse } from "next/server";
 import { offlineGuidance } from "../../lib/study-guidance";
-import { sanitizedOpenAIApiErrorCode, selectOpenAIApiKey } from "../../lib/openai-auth";
-
-type ChatMessage = {
-  role: "user" | "assistant";
-  content: string;
-};
+import { allowedTeachingTester, selectOpenAIApiKey } from "../../lib/openai-auth";
+import { requestOrigin } from "../../lib/request-origin";
+import { reviewedNotes, teachingInstructions, type ChatMessage } from "../../lib/teaching-prompt";
+import {
+  defaultTeachingOptions, MAX_CHAT_CONTEXT_CHARS, MAX_CHAT_MESSAGES, MAX_QUESTION_CHARS,
+  MAX_TEACHING_REPLY_CHARS, subjects, teachers, teachingLanguages, teachingModes, type TeachingOptions,
+} from "../../lib/tochhawng-teachers";
+import {
+  clientAddress, MAX_OUTPUT_TOKENS, MAX_PROVIDER_BODY_BYTES, meterTeachingResponse, reserveTeachingRequest, TEACHING_MODEL,
+} from "../../lib/teaching-usage";
 
 const MAX_BODY_LENGTH = 24_000;
-const MAX_MESSAGES = 8;
-const MAX_USER_MESSAGE_LENGTH = 1_200;
-const MAX_ASSISTANT_MESSAGE_LENGTH = 4_000;
+const BODY_TIMEOUT = Symbol("body-timeout");
 const RATE_WINDOW_MS = 60_000;
-const RATE_LIMIT = 15;
+const BURST_LIMIT = 15;
 const requestsByAddress = new Map<string, { count: number; resetAt: number }>();
 
-function json(data: unknown, status = 200) {
+function json(data: unknown, status = 200, retryAfter?: number) {
   return NextResponse.json(data, {
     status,
-    headers: { "Cache-Control": "no-store" },
+    headers: {
+      "Cache-Control": "no-store",
+      ...(retryAfter === undefined ? {} : { "Retry-After": String(retryAfter) }),
+    },
   });
 }
 
-async function readLimitedBody(request: Request, limit: number): Promise<string | null> {
+async function readLimitedBody(request: Request, limit: number) {
   if (!request.body) return "";
   const reader = request.body.getReader();
   const chunks: Uint8Array[] = [];
   let size = 0;
-  for (;;) {
-    const { done, value } = await reader.read();
-    if (done) break;
-    size += value.byteLength;
-    if (size > limit) {
-      await reader.cancel().catch(() => {});
-      return null;
+  let timedOut = false;
+  const timeout = setTimeout(() => {
+    timedOut = true;
+    void reader.cancel().catch(() => {});
+  }, 5_000);
+  try {
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (timedOut) return BODY_TIMEOUT;
+      if (done) break;
+      size += value.byteLength;
+      if (size > limit) {
+        void reader.cancel().catch(() => {});
+        return null;
+      }
+      chunks.push(value);
     }
-    chunks.push(value);
+    return Buffer.concat(chunks, size).toString("utf8");
+  } finally {
+    clearTimeout(timeout);
+    reader.releaseLock();
   }
-  const body = new Uint8Array(size);
-  let offset = 0;
-  for (const chunk of chunks) { body.set(chunk, offset); offset += chunk.byteLength; }
-  return new TextDecoder().decode(body);
 }
 
 function takeRateLimit(request: Request) {
-  const forwarded = request.headers.get("x-forwarded-for");
-  const address = forwarded?.split(",").at(-1)?.trim() || "local";
+  const address = clientAddress(request.headers);
   const now = Date.now();
-  if (requestsByAddress.size > 1_000) {
+  if (requestsByAddress.size >= 1_000) {
     for (const [key, value] of requestsByAddress) {
       if (value.resetAt <= now) requestsByAddress.delete(key);
     }
   }
   const current = requestsByAddress.get(address);
-
-  if (!current || current.resetAt <= now) {
-    requestsByAddress.set(address, { count: 1, resetAt: now + RATE_WINDOW_MS });
+  if (current && current.resetAt > now) {
+    if (current.count >= BURST_LIMIT) return false;
+    current.count += 1;
     return true;
   }
-
-  if (current.count >= RATE_LIMIT) return false;
-  current.count += 1;
+  if (!current && requestsByAddress.size >= 4_000) return false;
+  requestsByAddress.set(address, { count: 1, resetAt: now + RATE_WINDOW_MS });
   return true;
 }
 
-function parseMessages(value: unknown): ChatMessage[] | null {
-  if (!Array.isArray(value) || value.length === 0 || value.length > 12) return null;
-
-  const messages: ChatMessage[] = [];
-  let totalLength = 0;
-
-  for (const item of value) {
-    if (
-      typeof item !== "object" ||
-      item === null ||
-      !("role" in item) ||
-      !("content" in item) ||
-      (item.role !== "user" && item.role !== "assistant") ||
-      typeof item.content !== "string"
-    ) {
-      return null;
-    }
-
-    const content = item.content.trim();
-    const limit = item.role === "user" ? MAX_USER_MESSAGE_LENGTH : MAX_ASSISTANT_MESSAGE_LENGTH;
-    if (!content || content.length > limit) return null;
-    totalLength += content.length;
-    if (totalLength > 8_000) return null;
-    messages.push({ role: item.role, content });
-  }
-
-  if (messages.at(-1)?.role !== "user") return null;
-  return messages.slice(-MAX_MESSAGES);
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return !!value && typeof value === "object" && !Array.isArray(value);
 }
 
-const instructions =
-  "You are the MPSC study mentor for a learning platform built for students in Mizoram. Be warm, concise, practical, and teach reasoning rather than only giving answers. Help with study planning, concept explanations, and reviewing practice mistakes. The platform has MPSC practice at /mock-test, a student dashboard and planner at /, college notes at /college-notes, NEET practice at /neet, JEE Main practice at /jee, and CUET PG practice at /cuet-pg. Do not claim access to the student's scores or saved plan. Never invent current MPSC syllabus rules, exam dates, notifications, or current affairs; flag time-sensitive details and ask the learner to verify an official notice. If a question is ambiguous, ask one focused follow-up.";
+function isKey<T extends object>(value: unknown, choices: T): value is keyof T {
+  return typeof value === "string" && Object.hasOwn(choices, value);
+}
 
-// Ask for a short reasoning step so the first words arrive sooner. A model that does not take the
-// setting rejects it; the route then retries without it and stops sending it until a restart.
-let reasoningSupported = true;
+function parseTeachingOptions(value: unknown): TeachingOptions | null {
+  if (value === undefined) return defaultTeachingOptions;
+  if (!isRecord(value)) return null;
+  const { teacher, subject, language, mode } = value;
+  if (Object.keys(value).length !== 4 || !isKey(teacher, teachers) || !isKey(subject, subjects)
+    || !isKey(language, teachingLanguages) || !isKey(mode, teachingModes)) return null;
+  return { teacher, subject, language, mode };
+}
 
-function requestAnswer(apiKey: string, messages: ChatMessage[], withReasoning: boolean) {
-  const base = process.env.OPENAI_BASE_URL || "https://api.openai.com/v1";
-  return fetch(`${base}/responses`, {
-    method: "POST",
-    headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
-    body: JSON.stringify({
-      model: process.env.OPENAI_MODEL || "gpt-5.6-luna",
-      instructions,
-      input: messages,
-      max_output_tokens: 450,
-      store: false,
-      stream: true,
-      ...(withReasoning ? { reasoning: { effort: "low" } } : {}),
-    }),
-    signal: AbortSignal.timeout(25_000),
+function parseMessages(value: unknown): ChatMessage[] | null {
+  if (!Array.isArray(value) || value.length === 0 || value.length > MAX_CHAT_MESSAGES) return null;
+  const messages: ChatMessage[] = [];
+  let totalLength = 0;
+  for (const item of value) {
+    if (!isRecord(item) || Object.keys(item).length !== 2
+      || (item.role !== "user" && item.role !== "assistant") || typeof item.content !== "string") return null;
+    const content = item.content.trim();
+    const limit = item.role === "user" ? MAX_QUESTION_CHARS : MAX_TEACHING_REPLY_CHARS;
+    if (!content || content.length > limit || /[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/u.test(content)) return null;
+    totalLength += content.length;
+    if (totalLength > MAX_CHAT_CONTEXT_CHARS) return null;
+    messages.push({ role: item.role, content });
+  }
+  return messages.at(-1)?.role === "user" ? messages : null;
+}
+
+function offlineReply(prompt: string, options: TeachingOptions) {
+  const notes = options.language === "en" && (options.mode === "explain" || options.mode === "revision")
+    ? reviewedNotes(options.subject, prompt) : [];
+  if (notes.length) {
+    return json({
+      reply: ["Reviewed course notes", ...notes].join("\n\n"),
+      links: [{ label: "Open reviewed classroom lessons", href: "/study-room#reviewed-classroom" }],
+      mode: "offline",
+      teacher: options.teacher,
+    });
+  }
+  const guidance = offlineGuidance(prompt);
+  return json({
+    reply: options.language === "lus"
+      ? "AI zirtirtu chu tunah a hman theih loh. Nakinah han ti leh la, tunah hian entirna zawhna i zir thei ang."
+      : `The AI teacher is unavailable right now. ${guidance.reply}`,
+    links: options.language === "lus" ? [{ label: "Mizo ṭawnga practice", href: "/mizo" }] : guidance.links,
+    mode: "offline",
+    teacher: options.teacher,
   });
 }
 
-// Reads the Responses API event stream and yields the answer's text as it is written.
-async function* answerText(body: ReadableStream<Uint8Array>) {
-  const reader = body.getReader();
-  const decoder = new TextDecoder();
-  let buffer = "";
-  for (;;) {
-    const { done, value } = await reader.read();
-    if (done) return;
-    buffer += decoder.decode(value, { stream: true }).replace(/\r\n/g, "\n");
-    let boundary: number;
-    while ((boundary = buffer.indexOf("\n\n")) >= 0) {
-      const event = buffer.slice(0, boundary);
-      buffer = buffer.slice(boundary + 2);
-      const data = event.split("\n").filter(line => line.startsWith("data:")).map(line => line.slice(5).trim()).join("");
-      if (!data || data === "[DONE]") continue;
-      let parsed: unknown;
-      try { parsed = JSON.parse(data); } catch { continue; }
-      if (!parsed || typeof parsed !== "object" || !("type" in parsed)) continue;
-      if (parsed.type === "response.output_text.delta" && "delta" in parsed && typeof parsed.delta === "string") yield parsed.delta;
-      else if (parsed.type === "error" || parsed.type === "response.failed") throw new Error(`Responses API stream reported ${parsed.type}`);
-    }
-  }
+function tokenCount(value: unknown): value is number {
+  return typeof value === "number" && Number.isSafeInteger(value) && value >= 0;
 }
+
 
 export async function POST(request: Request) {
   if (!takeRateLimit(request)) {
-    return json({ error: "That is a lot of questions at once. Please wait a minute and try again." }, 429);
+    return json({ error: "That is a lot of questions at once. Please wait a minute and try again." }, 429, 60);
   }
-
-  const contentType = request.headers.get("content-type") ?? "";
-  if (!contentType.toLowerCase().includes("application/json")) {
-    return json({ error: "Send a JSON chat message to continue." }, 415);
-  }
+  const contentType = request.headers.get("content-type")?.split(";")[0].trim().toLowerCase();
+  if (contentType !== "application/json") return json({ error: "Send a JSON chat message to continue." }, 415);
 
   const origin = request.headers.get("origin");
-  if (origin) {
-    try {
-      if (new URL(origin).origin !== new URL(request.url).origin) {
-        return json({ error: "Chat requests must come from this learning platform." }, 403);
-      }
-    } catch {
-      return json({ error: "Chat requests must come from this learning platform." }, 403);
-    }
+  if (origin && origin !== requestOrigin(request)?.origin) {
+    return json({ error: "Chat requests must come from this learning platform." }, 403);
   }
-
-  const contentLength = Number(request.headers.get("content-length"));
-  if (Number.isFinite(contentLength) && contentLength > MAX_BODY_LENGTH) {
-    return json({ error: "That conversation is too long. Start a new chat and try again." }, 413);
-  }
-
-  // Read at most MAX_BODY_LENGTH bytes even when the sender omits or understates Content-Length.
-  const rawBody = await readLimitedBody(request, MAX_BODY_LENGTH);
-  if (rawBody === null) {
+  if (Number(request.headers.get("content-length")) > MAX_BODY_LENGTH) {
     return json({ error: "That conversation is too long. Start a new chat and try again." }, 413);
   }
 
   let body: unknown;
   try {
+    const rawBody = await readLimitedBody(request, MAX_BODY_LENGTH);
+    if (rawBody === null) return json({ error: "That conversation is too long. Start a new chat and try again." }, 413);
+    if (rawBody === BODY_TIMEOUT) return json({ error: "The message took too long to upload. Try again." }, 408);
     body = JSON.parse(rawBody);
   } catch {
     return json({ error: "The chat message could not be read. Please try again." }, 400);
   }
 
-  const messages =
-    typeof body === "object" && body !== null && "messages" in body
-      ? parseMessages(body.messages)
-      : null;
-  if (!messages) {
-    return json({ error: "Write a short message to get started." }, 400);
+  if (!isRecord(body) || Object.keys(body).some(key => key !== "messages" && key !== "teaching")) {
+    return json({ error: "Invalid teaching request." }, 400);
+  }
+  const messages = parseMessages(body.messages);
+  const options = parseTeachingOptions(body.teaching);
+  if (!messages || !options) return json({ error: "Check your teaching options and write a short question." }, 400);
+
+  const prompt = messages[messages.length - 1].content;
+  const apiKey = selectOpenAIApiKey(process.env);
+  if (!apiKey || !allowedTeachingTester(request)) return offlineReply(prompt, options);
+
+  const providerBody = JSON.stringify({
+    model: TEACHING_MODEL,
+    instructions: teachingInstructions(options, messages),
+    input: messages,
+    max_output_tokens: MAX_OUTPUT_TOKENS,
+    reasoning: { effort: "none" },
+    service_tier: "default",
+    store: false,
+  });
+  if (Buffer.byteLength(providerBody) > MAX_PROVIDER_BODY_BYTES) {
+    return json({ error: "That conversation is too long. Start a new chat and try again." }, 413);
   }
 
-  const prompt = messages.at(-1)!.content;
-  const apiKey = selectOpenAIApiKey(process.env);
-  if (!apiKey) {
-    return json({ ...offlineGuidance(prompt), mode: "offline" });
+  let reservation: Awaited<ReturnType<typeof reserveTeachingRequest>>;
+  try {
+    reservation = await reserveTeachingRequest(request);
+  } catch {
+    // Paid requests fail closed when the shared budget cannot be checked.
+    return offlineReply(prompt, options);
+  }
+  if (!reservation.admitted) {
+    const error = reservation.scope === "minute"
+      ? "Please wait a minute before asking another question."
+      : reservation.scope === "budget"
+        ? "The private testing budget is exhausted."
+      : reservation.scope === "address-day"
+        ? "You have reached the daily teaching limit. Try again tomorrow (India time)."
+        : "The free classroom has reached its daily teaching limit. Try again tomorrow (India time).";
+    return json({ error }, 429, reservation.retryAfter);
   }
 
   try {
-    let response = await requestAnswer(apiKey, messages, reasoningSupported);
-    if (response.status === 400 && reasoningSupported) {
-      const detail = await response.text().catch(() => "");
-      if (/reasoning/i.test(detail)) {
-        reasoningSupported = false;
-        response = await requestAnswer(apiKey, messages, false);
-      }
+    const base = (process.env.OPENAI_BASE_URL || "https://api.openai.com/v1").replace(/\/$/, "");
+    const endpoint = new URL(`${base}/responses`);
+    const loopback = endpoint.protocol === "http:" && ["127.0.0.1", "localhost", "[::1]"].includes(endpoint.hostname);
+    if (endpoint.href !== "https://api.openai.com/v1/responses" && !loopback) {
+      return offlineReply(prompt, options);
     }
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
+      body: providerBody,
+      cache: "no-store",
+      redirect: "error",
+      signal: AbortSignal.any([request.signal, AbortSignal.timeout(20_000)]),
+    });
     if (!response.ok) {
-      const payload = await response.clone().json().catch(() => null);
-      const code = sanitizedOpenAIApiErrorCode(payload);
-      throw new Error(`Responses API returned ${response.status}; code=${code}`);
+      void response.body?.cancel().catch(() => {});
+      console.error(`Tochhawng Teachers request failed (HTTP ${response.status}).`);
+      return offlineReply(prompt, options);
     }
-    if (!response.body) throw new Error("Responses API returned no body");
-
-    // Wait for the first words before committing to a streamed answer, so an early failure can
-    // still fall back to the built-in guidance as a normal JSON reply.
-    const text = answerText(response.body);
-    const first = await text.next();
-    if (first.done || !first.value) throw new Error("Responses API returned no text");
-
-    const encoder = new TextEncoder();
-    let length = first.value.length;
-    const stream = new ReadableStream<Uint8Array>({
-      start(controller) { controller.enqueue(encoder.encode(first.value)); },
-      async pull(controller) {
-        try {
-          const next = await text.next();
-          if (next.done) { controller.close(); return; }
-          // The client sends answers back as history, which allows at most 4,000 characters.
-          const room = MAX_ASSISTANT_MESSAGE_LENGTH - 80 - length;
-          if (room <= 0) { await text.return(undefined); controller.close(); return; }
-          const piece = next.value.slice(0, room);
-          length += piece.length;
-          controller.enqueue(encoder.encode(piece));
-        } catch (error) {
-          console.error("MPSC study assistant stream failed:", error);
-          controller.enqueue(encoder.encode("\n\n(The answer was cut short. Please ask again.)"));
-          controller.close();
-        }
-      },
-      async cancel() { await text.return(undefined); },
-    });
-    return new Response(stream, {
-      headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store", "X-Chat-Mode": "ai" },
-    });
-  } catch (error) {
-    console.error("MPSC study assistant request failed:", error);
-    return json({ ...offlineGuidance(prompt), mode: "offline" });
+    const result: unknown = await response.json();
+    if (!isRecord(result)) return offlineReply(prompt, options);
+    const usage = result.usage;
+    if (isRecord(usage) && tokenCount(usage.input_tokens) && tokenCount(usage.output_tokens)) {
+      await meterTeachingResponse(reservation.key, usage.input_tokens, usage.output_tokens).catch(() => {
+        console.error("Tochhawng Teachers usage could not be recorded.");
+      });
+    }
+    if (!Array.isArray(result.output)) return offlineReply(prompt, options);
+    const reply = result.output
+      .flatMap(item => isRecord(item) && item.type === "message" && item.role === "assistant" && Array.isArray(item.content) ? item.content : [])
+      .filter(item => isRecord(item) && item.type === "output_text" && typeof item.text === "string")
+      .map(item => item.text as string).join("\n").trim().slice(0, MAX_TEACHING_REPLY_CHARS);
+    if (!reply) return offlineReply(prompt, options);
+    return json({ reply, teacher: options.teacher, mode: "ai" });
+  } catch {
+    console.error("Tochhawng Teachers could not reach the model.");
+    return offlineReply(prompt, options);
   }
 }

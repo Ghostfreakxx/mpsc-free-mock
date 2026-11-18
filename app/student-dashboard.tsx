@@ -1,5 +1,7 @@
 "use client";
 
+import LearningTrail from "./learning-trail";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
@@ -455,13 +457,14 @@ export default function StudentDashboard({ reviewedKeyHashes }: { reviewedKeyHas
         <section className="academy-content">
           {view === "overview" ? (
             <>
-              <section className="welcome-band">
+              <section className="welcome-band cinema-welcome">
                 <div className="welcome-copy">
                   <div className="eyebrow"><span className="eyebrow-dot" />MIZORAM PUBLIC SERVICE COMMISSION</div>
-                  <h1>{getGreeting(today)},<br /><span>aspirant.</span></h1>
-                  <p>Every focused session brings the goal a little closer. Your next step is ready.</p>
+                  <h1>Free MPSC Mock</h1>
+                  <p>{getGreeting(today)}, aspirant. Study with Tochhawng Teachers, review a subject, or start your next practice set.</p>
                   <div className="welcome-actions">
-                    <Link href="/mock-test" className="button button-dark"><Play size={16} fill="currentColor" /><span className="button-label-stack"><strong>Start MPSC practice</strong><small>Zir zui rawh · Go to practice</small></span></Link>
+                    <Link href="/study-room" prefetch={false} className="button button-dark">Explore the 3D study room <ArrowRight size={16} aria-hidden="true" /></Link>
+                    <Link href="/mock-test" className="text-button"><Play size={16} fill="currentColor" aria-hidden="true" /> Start MPSC practice</Link>
                     <button type="button" className="text-button" onClick={() => setView("planner")}>View today&apos;s plan <ArrowRight size={16} /></button>
                   </div>
                   <InstallAppButton variant="hero" />
@@ -470,8 +473,8 @@ export default function StudentDashboard({ reviewedKeyHashes }: { reviewedKeyHas
                   <Image src="/mizoram-study.webp" alt="A student studying beside a window overlooking the hills of Aizawl" fill priority sizes="(max-width: 760px) 100vw, 54vw" />
                   <div className="photo-location"><MapPin size={14} />Aizawl, Mizoram</div>
                 </div>
-                <div className="welcome-index"><span>01</span><span className="index-line" /><span>FOCUS</span></div>
               </section>
+              <LearningTrail />
 
               <aside className="learning-motto" aria-label="Our learning principle">
                 <blockquote>“Education is an offering to God in a church. Share it freely; do not sell it like a five-star meal.”</blockquote>
@@ -525,7 +528,7 @@ export default function StudentDashboard({ reviewedKeyHashes }: { reviewedKeyHas
               </section>
 
               <section className="course-preview-section">
-                <div className="section-title-row"><div><span className="section-kicker">PICK UP WHERE YOU LEFT OFF</span><h2>Learning library</h2></div><button type="button" className="subtle-action" onClick={() => { setSearch(""); setView("courses"); }}>Browse all <ArrowRight size={15} /></button></div>
+                <div className="section-title-row cinema-library-heading" id="learning-courses"><div><span className="section-kicker">COURSES, PRACTICE AND NOTES</span><h2>Learning library</h2></div><button type="button" className="subtle-action" onClick={() => { setSearch(""); setView("courses"); }}>Browse all <ArrowRight size={15} /></button></div>
                 <div className="course-preview-grid">
                   {courses.slice(0, 3).map((course) => <CourseCard key={course.href} course={course} compact />)}
                 </div>
@@ -602,7 +605,7 @@ export default function StudentDashboard({ reviewedKeyHashes }: { reviewedKeyHas
 function CourseCard({ course, compact = false }: { course: (typeof courses)[number]; compact?: boolean }) {
   const Icon = course.icon;
   return (
-    <article className={`course-card ${compact ? "course-card-compact" : ""}`}>
+    <article className={`course-card cinema-course ${compact ? "course-card-compact" : ""}`}>
       <div className={`course-card-top course-${course.theme}`}><span className="course-mark"><Icon size={20} strokeWidth={1.8} /></span><span className="course-format">{course.format}</span><span className="course-corner"><ArrowUpRight size={17} /></span></div>
       <div className="course-card-body"><span className="course-subject">{course.subject}</span><h3>{course.title}</h3><p>{course.description}</p><Link href={course.href} prefetch={noPrefetch.has(course.href) ? false : undefined} className="course-open">Open learning <ArrowRight size={15} /></Link></div>
     </article>

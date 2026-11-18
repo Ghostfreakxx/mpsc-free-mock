@@ -1,0 +1,34 @@
+# Tochhawng Teachers
+
+The existing `/api/chat` route uses the OpenAI Responses API and the server's `OPENAI_API_KEY`. The existing `OPENAI_API_KEY1` alias still takes precedence when both are present. The teacher uses GPT-6 Luna with up to 450 output tokens per turn and provider storage disabled. Keep these credentials outside the repository and browser bundles.
+
+Run `node --experimental-strip-types scripts/verify-teaching-env.mjs` with the intended private server environment. The preflight reads account model metadata and available Redis totals. It emits status only and generates no tokens. A successful metadata read verifies visibility, while a separately approved private text request verifies generation and reported token accounting. Public AI access stays disabled.
+
+## Private testing and the $9 allowance
+
+Paid text generation defaults to off. After approval, use a private test environment, set `TOCHHAWNG_AI_MODE=private`, and configure a separate random `TOCHHAWNG_TEST_TOKEN` of at least 32 characters. Send it as `Authorization: Bearer …` from an authorized HTTP or browser test harness. Keep that token out of URLs and browser application code. Visitors continue to see offline guidance. The endpoint has no public activation mode.
+
+Use one persistent, non-evicting Redis database for all workers sharing the testing allowance. On a fresh test ledger, initialize it once with `SET mpsc:tochhawng:v1:testing-budget 0 NX`. Keep this key when restarting or rotating credentials. A missing or invalid key blocks model calls. Do not reinitialize a previously used ledger. An atomic reservation holds $0.01 per admitted request, up to $9 total across all workers and days. Timeouts, provider failures, and unmetered responses keep their reservation. Requests use the standard tier with at most 16 KB of serialized input and 450 output tokens. The admin dashboard separates conservative reservations from estimated charges based on reported tokens. The cap applies to this route using this Redis database. Use a dedicated OpenAI project key to isolate spend from other callers. [GPT-6 Luna pricing](https://developers.openai.com/api/docs/models/gpt-6-luna)
+
+Request-count limits do not guarantee a dollar cap. The Redis ledger caps this application's reservations. Provider invoices depend on billed tokens, prices, taxes, and usage from other callers. Check provider-reported usage in the dedicated OpenAI project before increasing limits.
+
+Set `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN` for a dedicated shared database. A request is reserved atomically before each OpenAI call. The defaults are five requests per minute and 20 per India calendar day per public IP or IPv6 /64, with a site-wide cap of 500 requests per day. Set `TOCHHAWNG_DAILY_REQUEST_LIMIT` to a positive integer up to 9999 to change the site cap. NAT and school networks can share a quota. Vercel supplies the trusted client address. Local and other hosts use a shared address bucket. With the key or quota store unavailable, students get existing offline guidance and practice links. Redis holds short-lived keyed address counters and 14 days of aggregate usage. It holds no questions, replies, or raw addresses.
+
+Set `TOCHHAWNG_ADMIN_PASSWORD` to a unique randomly generated password of at least 32 characters. In a browser, visit `/api/admin/teacher-usage` over HTTPS and sign in as `admin` using this password. The dashboard shows seven days of admissions, reported tokens, and estimated USD costs. Unmetered calls count toward quotas and are shown separately. The endpoint returns 404 if the admin password is unset. Students do not sign in.
+
+The client presents the latest reply as a `ClassroomLesson` with teacher ID, language, subject, mode, source, and plain text. **Listen** speaks on-device only when a matching local system voice is installed and surfaces pause, resume, stop and playback captions. Mizo playback requires a local `lus` voice. Text and optional captions remain available if the device has no matching voice. Playback uses no microphone or OpenAI credits. [Browser local voices](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisVoice/localService)
+
+`createPrivateVoiceAdapter` is a server-only integration point. It is disconnected from public routes and providers. A future provider needs explicit approval, its own validated private request route, separate atomic voice quotas, and a verified model and voice. Keep `TOCHHAWNG_PAID_VOICE_MODE=off`. A future audio track can use its playhead as the clock for timestamped captions and mouth-pose cues. Any future speech recognition requires a separate explicit microphone action.
+
+In `/study-room`, select Zorami or use the **Talk to Zorami** button to open the same conversation with her selected. The 3D character has a stylized woven wrap modeled on the broad red band and motifs documented by the Mizoram Art and Culture Department. Reduced-motion preferences keep the character still. [Mizo Puanchei documentation](https://mizoculture.mizoram.gov.in/page/mizo-puanchei-gi-583)
+
+The server adds up to two matching reviewed topic notes and their source titles to the teaching context. Selecting a subject restricts this lookup to that subject or its courses. When the repository has no matching notes, the teacher uses the existing uncertainty guidance.
+
+The classroom also provides source-checked English lessons and quizzes that run without WebGL or an API key. English Explain and Quick Revision requests can return matching reviewed notes through the existing chat route while paid AI is off. The chat and board label these replies as offline guidance, and the reply identifies the reviewed sources. The existing Mizo practice route remains available for bilingual study.
+
+## Character portraits
+
+The built-in image generator produced the fictional portraits. The app serves locally compressed WebP files.
+
+- `public/teachers/zorami.webp` — Use case: illustration-story. Square close-cropped avatar of a fictional adult Mizo woman AI teacher from Mizoram, northeastern India, wearing clearly visible rounded dark spectacles, dark hair gathered back, warm expression and contemporary olive cardigan. Head and shoulders, face centered with generous margin for a circular crop. Rich painterly editorial illustration, soft warm desk lamp light, muted clay backdrop, no text, insignia, or border.
+- `public/teachers/lalthan.webp` — Use case: illustration-story. Square close-cropped avatar of a fictional adult Mizo woman AI teacher from Mizoram, northeastern India, with shoulder-length straight dark hair, an attentive expression and a muted indigo blouse. Head and shoulders, face centered with generous margin for a circular crop. Rich painterly editorial illustration, soft warm desk lamp light, subdued green backdrop, no text, insignia, or border.
