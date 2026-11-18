@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { createHash, timingSafeEqual } from "node:crypto";
 import { offlineGuidance } from "../../lib/study-guidance";
 import { sanitizedOpenAIApiErrorCode, selectOpenAIApiKey } from "../../lib/openai-auth";
 import { requestOrigin } from "../../lib/request-origin";
@@ -8,7 +9,7 @@ import {
   MAX_TEACHING_REPLY_CHARS, subjects, teachers, teachingLanguages, teachingModes, type TeachingOptions,
 } from "../../lib/tochhawng-teachers";
 import {
-  clientAddress, MAX_OUTPUT_TOKENS, meterTeachingResponse, reserveTeachingRequest, TEACHING_MODEL,
+  clientAddress, MAX_OUTPUT_TOKENS, MAX_PROVIDER_BODY_BYTES, meterTeachingResponse, reserveTeachingRequest, TEACHING_MODEL,
 } from "../../lib/teaching-usage";
 
 const MAX_BODY_LENGTH = 24_000;
@@ -125,6 +126,15 @@ function tokenCount(value: unknown): value is number {
   return typeof value === "number" && Number.isSafeInteger(value) && value >= 0;
 }
 
+function allowedTester(request: Request) {
+  const secret = process.env.TOCHHAWNG_TEST_TOKEN?.trim();
+  const authorization = request.headers.get("authorization");
+  if (process.env.TOCHHAWNG_AI_MODE !== "private" || !secret || secret.length < 32
+    || !authorization || authorization.length > 512) return false;
+  const digest = (value: string) => createHash("sha256").update(value).digest();
+  return timingSafeEqual(digest(authorization), digest(`Bearer ${secret}`));
+}
+
 export async function POST(request: Request) {
   if (!takeRateLimit(request)) {
     return json({ error: "That is a lot of questions at once. Please wait a minute and try again." }, 429, 60);
@@ -159,7 +169,20 @@ export async function POST(request: Request) {
 
   const prompt = messages[messages.length - 1].content;
   const apiKey = selectOpenAIApiKey(process.env);
-  if (!apiKey) return offlineReply(prompt, options);
+  if (!apiKey || !allowedTester(request)) return offlineReply(prompt, options);
+
+  const providerBody = JSON.stringify({
+    model: TEACHING_MODEL,
+    instructions: teachingInstructions(options, messages),
+    input: messages,
+    max_output_tokens: MAX_OUTPUT_TOKENS,
+    reasoning: { effort: "none" },
+    service_tier: "default",
+    store: false,
+  });
+  if (Buffer.byteLength(providerBody) > MAX_PROVIDER_BODY_BYTES) {
+    return json({ error: "That conversation is too long. Start a new chat and try again." }, 413);
+  }
 
   let reservation: Awaited<ReturnType<typeof reserveTeachingRequest>>;
   try {
@@ -171,6 +194,8 @@ export async function POST(request: Request) {
   if (!reservation.admitted) {
     const error = reservation.scope === "minute"
       ? "Please wait a minute before asking another question."
+      : reservation.scope === "budget"
+        ? "The private testing budget is exhausted."
       : reservation.scope === "address-day"
         ? "You have reached the daily teaching limit. Try again tomorrow (India time)."
         : "The free classroom has reached its daily teaching limit. Try again tomorrow (India time).";
@@ -180,20 +205,14 @@ export async function POST(request: Request) {
   try {
     const base = (process.env.OPENAI_BASE_URL || "https://api.openai.com/v1").replace(/\/$/, "");
     const endpoint = new URL(`${base}/responses`);
-    if (endpoint.protocol !== "https:" && !["127.0.0.1", "localhost", "[::1]"].includes(endpoint.hostname)) {
+    const loopback = endpoint.protocol === "http:" && ["127.0.0.1", "localhost", "[::1]"].includes(endpoint.hostname);
+    if (endpoint.href !== "https://api.openai.com/v1/responses" && !loopback) {
       return offlineReply(prompt, options);
     }
     const response = await fetch(endpoint, {
       method: "POST",
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
-      body: JSON.stringify({
-        model: TEACHING_MODEL,
-        instructions: teachingInstructions(options, messages),
-        input: messages,
-        max_output_tokens: MAX_OUTPUT_TOKENS,
-        reasoning: { effort: "none" },
-        store: false,
-      }),
+      body: providerBody,
       cache: "no-store",
       redirect: "error",
       signal: AbortSignal.any([request.signal, AbortSignal.timeout(20_000)]),

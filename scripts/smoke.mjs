@@ -102,6 +102,13 @@ try {
   await dialog.getByRole('button', { name: 'Send message' }).click();
   await dialog.getByText('RAM hi eng atan nge hman a nih?').waitFor();
   await dialog.getByRole('button', { name: 'Close study assistant' }).click();
+  const lesson = page.getByRole('region', { name: 'Classroom notes' });
+  await lesson.getByText('RAM hi eng atan nge hman a nih?').waitFor();
+  await lesson.getByRole('button', { name: 'Classroom subtitles' }).click();
+  const viewer = page.getByRole('group', { name: 'Interactive Zorami and Constitution study desk' });
+  await viewer.getByText('RAM hi eng atan nge hman a nih?').waitFor();
+  await lesson.getByRole('button', { name: 'Classroom subtitles' }).click();
+  check(await viewer.getByText('RAM hi eng atan nge hman a nih?').count() === 0, 'classroom subtitles did not turn off');
   await page.unroute('**/api/chat', teacherChat);
   const fallback = await browser.newPage({ viewport: { width: 360, height: 780 } });
   try {
@@ -109,6 +116,10 @@ try {
     await fallback.goto(base + '/study-room');
     await fallback.getByRole('button', { name: 'Enter the 3D room' }).click();
     await fallback.getByText('The 3D view is unavailable on this device.').waitFor();
+    await fallback.getByRole('button', { name: 'Talk to Zorami' }).click();
+    const fallbackDialog = fallback.getByRole('dialog', { name: 'Tochhawng Teachers' });
+    check(await fallbackDialog.getByLabel('AI teacher', { exact: true }).inputValue() === 'zorami', 'no-WebGL fallback lost Zorami');
+    await fallbackDialog.getByRole('button', { name: 'Close study assistant' }).click();
     await fallback.getByRole('link', { name: 'Mock tests', exact: true }).click();
     await fallback.waitForURL('**/mock-test');
   } finally {

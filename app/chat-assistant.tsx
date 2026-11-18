@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { CLASSROOM_LESSON_EVENT, type ClassroomLesson } from "./lib/classroom-lesson";
 import {
   ArrowRight,
   LoaderCircle,
@@ -136,6 +137,11 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
       };
 
       if (!response.ok) throw new AssistantError(result.error || "The assistant could not answer that just now.");
+      if (window.location.pathname === "/study-room" && result.reply && (result.mode === "ai" || result.mode === "offline")) {
+        window.dispatchEvent(new CustomEvent<ClassroomLesson>(CLASSROOM_LESSON_EVENT, {
+          detail: { teacher: options.teacher, language: options.language, text: result.reply, source: result.mode },
+        }));
+      }
       setMessages((current) => [
         ...current,
         {
@@ -179,7 +185,10 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
   }
 
   function startFreshChat() {
-    if (!isSending) setMessages([]);
+    if (!isSending) {
+      setMessages([]);
+      window.dispatchEvent(new CustomEvent(CLASSROOM_LESSON_EVENT, { detail: null }));
+    }
   }
 
   function closeChat() {

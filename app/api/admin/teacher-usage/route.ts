@@ -1,6 +1,6 @@
 import { createHash, timingSafeEqual } from "node:crypto";
 import { requestOrigin } from "../../../lib/request-origin";
-import { lastSevenTeachingDays, teachingDailyLimit, TEACHING_MODEL } from "../../../lib/teaching-usage";
+import { lastSevenTeachingDays, reservedTestBudget, teachingDailyLimit, TEACHING_MODEL, TEST_BUDGET_MICRODOLLARS } from "../../../lib/teaching-usage";
 
 export const dynamic = "force-dynamic";
 
@@ -33,7 +33,7 @@ export async function GET(request: Request) {
   }
 
   try {
-    const days = await lastSevenTeachingDays();
+    const [days, reserved] = await Promise.all([lastSevenTeachingDays(), reservedTestBudget()]);
     const current = days[0];
     const total = days.reduce((sum, day) => sum + day.estimate, 0);
     // Row dates are fixed-format server dates. All usage values are validated integers.
@@ -51,6 +51,7 @@ export async function GET(request: Request) {
   th:first-child { text-align: left }
 </style></head>
 <body><main><h1>Tochhawng Teachers usage</h1>
+<p>Private test budget reserved <strong>${reserved === null ? "Ledger not initialized" : `$${(reserved / 1_000_000).toFixed(2)} of $${(TEST_BUDGET_MICRODOLLARS / 1_000_000).toFixed(2)}`}</strong>.</p>
 <p>Today’s requests: <strong>${current.requests} of ${teachingDailyLimit()}</strong>. Estimated cost over seven days: <strong>$${total.toFixed(6)} USD</strong>.</p>
 <p>Estimates use reported ${TEACHING_MODEL} tokens at standard prices. Cached input is counted at the regular rate. Requests without usage data are listed separately and may still incur a charge. This is not a billing statement.</p>
 <div class="table" role="region" aria-label="Daily teaching usage" tabindex="0">

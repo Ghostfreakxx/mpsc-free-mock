@@ -15,16 +15,18 @@ const { POST } = require("../app/api/chat/route.ts");
 const { GET } = require("../app/api/admin/teacher-usage/route.ts");
 const { clientAddress, teachingDay } = require("../app/lib/teaching-usage.ts");
 const { teachingInstructions } = require("../app/lib/teaching-prompt.ts");
+const { classroomCaptions } = require("../app/lib/classroom-lesson.ts");
 
 const base = "http://127.0.0.1:3000";
 const password = "local-test-admin-password-with-32-chars";
+const testToken = "local-only-integration-token-32-chars";
 const teaching = { teacher: "lalthan", subject: "ict", language: "lus", mode: "quiz" };
 const payload = { teaching, messages: [{ role: "user", content: "Ask about computer memory" }] };
 
-function chat(body = payload) {
+function chat(body = payload, token = testToken) {
   return POST(new Request(base + "/api/chat", {
     method: "POST",
-    headers: { "Content-Type": "application/json", Origin: base },
+    headers: { "Content-Type": "application/json", Origin: base, Authorization: `Bearer ${token}` },
     body: JSON.stringify(body),
   }));
 }
@@ -34,6 +36,7 @@ function configure(t, overrides = {}) {
     OPENAI_API_KEY: "mock-openai-key", OPENAI_API_KEY1: "", OPENAI_BASE_URL: "http://127.0.0.1:9002/v1",
     UPSTASH_REDIS_REST_URL: "http://127.0.0.1:9001", UPSTASH_REDIS_REST_TOKEN: "mock-redis-token",
     VERCEL: "0", TOCHHAWNG_DAILY_REQUEST_LIMIT: "80", TOCHHAWNG_ADMIN_PASSWORD: password,
+    TOCHHAWNG_AI_MODE: "private", TOCHHAWNG_TEST_TOKEN: testToken,
     ...overrides,
   })) {
     const previous = process.env[key];
@@ -86,16 +89,47 @@ test("valid text lesson meters all reported tokens after the quota reservation",
   assert.equal(lesson.reply.length, 3000);
   const [reserve, openai, meter] = commands;
   assert.equal(commands.length, 3);
-  assert.deepEqual(reserve.body.slice(6, 9), [5, 20, 80]);
+  assert.deepEqual(reserve.body.slice(7, 10), [5, 20, 80]);
+  assert.deepEqual(reserve.body.slice(-2), [10_000, 9_000_000]);
   assert.equal(reserve.authorization, "Bearer mock-redis-token");
   assert.equal(openai.authorization, "Bearer mock-openai-key");
   assert.equal(openai.body.model, "gpt-6-luna");
   assert.equal(openai.body.max_output_tokens, 450);
   assert.equal(openai.body.store, false);
+  assert.equal(openai.body.service_tier, "default");
   assert.match(openai.body.instructions, /simple, natural Mizo/);
   assert.match(openai.body.instructions, /Tochhawng Lalthanpuii/);
   assert.doesNotMatch(reserve.body.join(" "), /computer memory/);
   assert.deepEqual(meter.body.slice(3, 6), [reserve.body[5], 920, 420]);
+});
+
+test("unapproved public visitors never reach Redis or OpenAI", async (t) => {
+  configure(t);
+  const fetch = t.mock.method(globalThis, "fetch");
+  assert.equal((await (await chat(payload, "wrong")).json()).mode, "offline");
+  process.env.TOCHHAWNG_AI_MODE = "public";
+  assert.equal((await (await chat()).json()).mode, "offline");
+  assert.equal(fetch.mock.callCount(), 0);
+});
+
+test("exhausted and missing budget ledgers never call the model", async (t) => {
+  configure(t);
+  const fetch = t.mock.method(globalThis, "fetch", async () => Response.json({ result: 4 }));
+  const response = await chat();
+  assert.equal(response.status, 429);
+  assert.equal(response.headers.get("retry-after"), null);
+  assert.equal(fetch.mock.callCount(), 1);
+  fetch.mock.mockImplementation(async () => Response.json({ result: 5 }));
+  assert.equal((await (await chat()).json()).mode, "offline");
+  assert.equal(fetch.mock.callCount(), 2);
+});
+
+test("classroom captions preserve reply words and line order", () => {
+  const reply = "Hriat tur pawimawh. ".repeat(8).trim() + "\n\nZawhna leh chhanna.";
+  const cues = classroomCaptions(reply);
+  assert.ok(cues.length > 2);
+  assert.ok(cues.every(cue => cue.length <= 108));
+  assert.equal(cues.join(" "), reply.replace(/\s+/gu, " "));
 });
 
 test("invalid options and reserved roles are rejected before an upstream request", async (t) => {
@@ -133,8 +167,8 @@ test("lost quota store gives Mizo fallback without spending OpenAI tokens", asyn
 
 test("admin dashboard requires credentials and shows only uncached aggregate estimates", async (t) => {
   configure(t);
-  const fetch = t.mock.method(globalThis, "fetch", async () => Response.json({
-    result: Array.from({ length: 7 }, () => ["2", "1", "1000", "1000"]),
+  const fetch = t.mock.method(globalThis, "fetch", async (_url, options) => Response.json({
+    result: JSON.parse(options.body)[0] === "GET" ? "70000" : Array.from({ length: 7 }, () => ["2", "1", "1000", "1000"]),
   }));
   const url = base + "/api/admin/teacher-usage";
   const denied = await GET(new Request(url));
@@ -147,8 +181,10 @@ test("admin dashboard requires credentials and shows only uncached aggregate est
   }));
   assert.equal(response.status, 200);
   assert.equal(response.headers.get("cache-control"), "private, no-store");
-  assert.match(await response.text(), /\$0\.004200 USD/);
-  assert.equal(fetch.mock.callCount(), 1);
+  const body = await response.text();
+  assert.match(body, /\$0\.004200 USD/);
+  assert.match(body, /\$0\.07 of \$9\.00/);
+  assert.equal(fetch.mock.callCount(), 2);
 });
 
 test("calendar rolls over at India midnight, and only Vercel's trusted address header is read", (t) => {

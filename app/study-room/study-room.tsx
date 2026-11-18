@@ -2,6 +2,8 @@
 
 import dynamic from "next/dynamic";
 import { Component, useCallback, useEffect, useRef, useState, type ReactNode } from "react";
+import { classroomCaptions, CLASSROOM_LESSON_EVENT, type ClassroomLesson } from "../lib/classroom-lesson";
+import { teachers } from "../lib/tochhawng-teachers";
 import styles from "./study-room.module.css";
 
 const RoomScene = dynamic(() => import("./room-scene"), { ssr: false });
@@ -32,6 +34,10 @@ export default function StudyRoom() {
   const [reducedMotion, setReducedMotion] = useState(true);
   const [pageVisible, setPageVisible] = useState(true);
   const [greeting, setGreeting] = useState(0);
+  const [lesson, setLesson] = useState<ClassroomLesson | null>(null);
+  const [subtitles, setSubtitles] = useState(false);
+  const [captionIndex, setCaptionIndex] = useState(0);
+  const captions = subtitles && lesson ? classroomCaptions(lesson.text) : [];
   const teacherButton = useRef<HTMLButtonElement>(null);
   const meetZorami = useCallback(() => {
     setGreeting(current => current + 1);
@@ -59,6 +65,16 @@ export default function StudyRoom() {
     };
   }, []);
 
+  useEffect(() => {
+    function receiveLesson(event: Event) {
+      if (!(event instanceof CustomEvent)) return;
+      setLesson(event.detail as ClassroomLesson | null);
+      setCaptionIndex(0);
+    }
+    window.addEventListener(CLASSROOM_LESSON_EVENT, receiveLesson);
+    return () => window.removeEventListener(CLASSROOM_LESSON_EVENT, receiveLesson);
+  }, []);
+
   function startRoom() {
     if (!("WebGL2RenderingContext" in window)) {
       setFailed(true);
@@ -74,26 +90,48 @@ export default function StudyRoom() {
   }
 
   return (
-    <div className={styles.viewer} ref={viewport} role="group" aria-label="Interactive Zorami and Constitution study desk">
-      {started && !failed && (
-        <div className={styles.canvas} data-ready={ready} aria-hidden="true">
-          <SceneBoundary onFailure={markFailed}>
-            <RoomScene active={visible && pageVisible} reducedMotion={reducedMotion}
-              closeUp={closeUp} onBookClick={toggleBook} onTeacherClick={meetZorami} greeting={greeting}
-              onReady={markReady} onFailure={markFailed} />
-          </SceneBoundary>
-        </div>
-      )}
-      <div className={styles.controls}>
-        {failed ? <p role="status">The 3D view is unavailable on this device.</p> : (
-          <button type="button" onClick={ready ? toggleBook : started ? undefined : startRoom}
-            aria-disabled={started && !ready}>
-            {ready ? (closeUp ? "Return to room view" : "Inspect the Constitution") : started ? "Loading 3D room…" : "Enter the 3D room"}
-          </button>
+    <div>
+      <div className={styles.viewer} ref={viewport} role="group" aria-label="Interactive Zorami and Constitution study desk">
+        {started && !failed && (
+          <div className={styles.canvas} data-ready={ready} aria-hidden="true">
+            <SceneBoundary onFailure={markFailed}>
+              <RoomScene active={visible && pageVisible} reducedMotion={reducedMotion}
+                closeUp={closeUp} onBookClick={toggleBook} onTeacherClick={meetZorami} greeting={greeting}
+                onReady={markReady} onFailure={markFailed} />
+            </SceneBoundary>
+          </div>
         )}
-        {ready && !failed && <button ref={teacherButton} type="button" onClick={meetZorami}>Talk to Zorami</button>}
-        {closeUp && ready && !failed && <span role="status">Preamble · “We, the people of India”</span>}
+        {lesson && captions.length > 0 && (
+          <p className={styles.caption} lang={lesson.language} aria-live="polite">{captions[captionIndex]}</p>
+        )}
+        <div className={styles.controls}>
+          {failed ? <p role="status">The 3D view is unavailable on this device.</p> : (
+            <button type="button" onClick={ready ? toggleBook : started ? undefined : startRoom}
+              aria-disabled={started && !ready}>
+              {ready ? (closeUp ? "Return to room view" : "Inspect the Constitution") : started ? "Loading 3D room…" : "Enter the 3D room"}
+            </button>
+          )}
+          {(ready || failed) && <button ref={teacherButton} type="button" onClick={meetZorami}>Talk to Zorami</button>}
+          {closeUp && ready && !failed && <span role="status">Preamble · “We, the people of India”</span>}
+        </div>
       </div>
+      <section className={styles.lesson} aria-labelledby="classroom-lesson-title">
+        <h2 id="classroom-lesson-title">Classroom notes</h2>
+        {lesson ? (
+          <>
+            <p className={styles.lessonByline}>{lesson.source === "ai" ? `${teachers[lesson.teacher].name} · AI teacher` : "Offline study guidance"}</p>
+            <p className={styles.lessonText} lang={lesson.language}>{lesson.text}</p>
+            <div className={styles.captionButtons}>
+              <button type="button" aria-pressed={subtitles} onClick={() => setSubtitles(value => !value)}>Classroom subtitles</button>
+              {captions.length > 1 && <>
+                <button type="button" disabled={captionIndex === 0} onClick={() => setCaptionIndex(index => index - 1)}>Previous subtitle</button>
+                <span aria-live="polite">{captionIndex + 1} / {captions.length}</span>
+                <button type="button" disabled={captionIndex === captions.length - 1} onClick={() => setCaptionIndex(index => index + 1)}>Next subtitle</button>
+              </>}
+            </div>
+          </>
+        ) : <p>Ask a teacher to see the latest explanation here.</p>}
+      </section>
     </div>
   );
 }

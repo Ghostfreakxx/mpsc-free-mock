@@ -3,6 +3,10 @@ import { isIP } from "node:net";
 
 export const TEACHING_MODEL = "gpt-6-luna";
 export const MAX_OUTPUT_TOKENS = 450;
+export const MAX_PROVIDER_BODY_BYTES = 16_000;
+const RESERVED_MICRODOLLARS = 10_000;
+export const TEST_BUDGET_MICRODOLLARS = 9_000_000;
+const budgetKey = "mpsc:tochhawng:v1:testing-budget";
 export const PER_MINUTE_LIMIT = 5;
 export const PER_ADDRESS_DAILY_LIMIT = 20;
 const DAY_SECONDS = 86_400;
@@ -18,6 +22,10 @@ const reserveScript = `
   if redis.call('ZCARD', KEYS[1]) >= tonumber(ARGV[1]) then return 1 end
   if tonumber(redis.call('GET', KEYS[2]) or '0') >= tonumber(ARGV[2]) then return 2 end
   if tonumber(redis.call('HGET', KEYS[3], 'requests') or '0') >= tonumber(ARGV[3]) then return 3 end
+  local reserved = tonumber(redis.call('GET', KEYS[4]) or '')
+  if not reserved or reserved < 0 or reserved % tonumber(ARGV[8]) ~= 0 then return 5 end
+  if reserved + tonumber(ARGV[8]) > tonumber(ARGV[9]) then return 4 end
+  redis.call('INCRBY', KEYS[4], ARGV[8])
   redis.call('ZADD', KEYS[1], ARGV[6], ARGV[7])
   redis.call('EXPIRE', KEYS[1], 65)
   if redis.call('INCR', KEYS[2]) == 1 then redis.call('EXPIRE', KEYS[2], ARGV[4]) end
@@ -115,17 +123,27 @@ export async function reserveTeachingRequest(request: Request, now = Date.now())
   const day = teachingDay(now);
   const key = usageKey(day.date);
   const result = await redis([
-    "EVAL", reserveScript, 3, `mpsc:tochhawng:v1:minute:${address}`,
-    `mpsc:tochhawng:v1:day:${day.date}:${address}`, key,
+    "EVAL", reserveScript, 4, `mpsc:tochhawng:v1:minute:${address}`,
+    `mpsc:tochhawng:v1:day:${day.date}:${address}`, key, budgetKey,
     PER_MINUTE_LIMIT, PER_ADDRESS_DAILY_LIMIT, teachingDailyLimit(), day.resetIn, USAGE_RETENTION_SECONDS,
-    now, randomUUID(),
+    now, randomUUID(), RESERVED_MICRODOLLARS, TEST_BUDGET_MICRODOLLARS,
   ], config);
   if (result === 0) return { admitted: true, key } as const;
   if (result === 1) return { admitted: false, scope: "minute", retryAfter: 60 } as const;
+  if (result === 4) return { admitted: false, scope: "budget", retryAfter: undefined } as const;
   if (result === 2 || result === 3) {
     return { admitted: false, scope: result === 2 ? "address-day" : "site-day", retryAfter: day.resetIn } as const;
   }
   throw new Error("Invalid admission result.");
+}
+
+export async function reservedTestBudget() {
+  const result = await redis(["GET", budgetKey]);
+  if (result === null) return null;
+  if (typeof result !== "string" || !/^\d+$/.test(result) || !Number.isSafeInteger(Number(result))) {
+    throw new Error("Invalid testing budget.");
+  }
+  return Number(result);
 }
 
 export async function meterTeachingResponse(key: string, input: number, output: number) {
