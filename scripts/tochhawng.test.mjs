@@ -13,7 +13,7 @@ require.extensions[".ts"] = (module, file) => {
 };
 const { POST } = require("../app/api/chat/route.ts");
 const { GET } = require("../app/api/admin/teacher-usage/route.ts");
-const { clientAddress, teachingDay } = require("../app/lib/teaching-usage.ts");
+const { clientAddress, teachingDay, inspectTestBudget } = require("../app/lib/teaching-usage.ts");
 const { teachingInstructions } = require("../app/lib/teaching-prompt.ts");
 const { classroomCaptions } = require("../app/lib/classroom-lesson.ts");
 const { createPrivateVoiceAdapter } = require("../app/lib/private-voice-adapter.ts");
@@ -92,6 +92,7 @@ test("valid text lesson meters all reported tokens after the quota reservation",
   assert.equal(commands.length, 3);
   assert.deepEqual(reserve.body.slice(7, 10), [5, 20, 80]);
   assert.deepEqual(reserve.body.slice(-2), [10_000, 9_000_000]);
+  assert.match(reserve.body[1], /redis\.call\('PTTL', KEYS\[4\]\) ~= -1/);
   assert.equal(reserve.authorization, "Bearer mock-redis-token");
   assert.equal(openai.authorization, "Bearer mock-openai-key");
   assert.equal(openai.body.model, "gpt-6-luna");
@@ -102,6 +103,28 @@ test("valid text lesson meters all reported tokens after the quota reservation",
   assert.match(openai.body.instructions, /Tochhawng Lalthanpuii/);
   assert.doesNotMatch(reserve.body.join(" "), /computer memory/);
   assert.deepEqual(meter.body.slice(3, 6), [reserve.body[5], 920, 420]);
+});
+
+test("read-only readiness distinguishes persistent, short-lived and exhausted ledgers", async (t) => {
+  configure(t);
+  let value = "8990000";
+  let ttl = -1;
+  const commands = [];
+  t.mock.method(globalThis, "fetch", async (_url, options) => {
+    const command = JSON.parse(options.body);
+    commands.push(command[0]);
+    return Response.json({ result: command[0] === "GET" ? value : ttl });
+  });
+  assert.equal(await inspectTestBudget(), "ready");
+  ttl = 500;
+  assert.equal(await inspectTestBudget(), "invalid");
+  value = null;
+  ttl = -2;
+  assert.equal(await inspectTestBudget(), "missing");
+  value = "9000000";
+  ttl = -1;
+  assert.equal(await inspectTestBudget(), "exhausted");
+  assert.deepEqual([...new Set(commands)].sort(), ["GET", "PTTL"]);
 });
 
 test("unapproved public visitors never reach Redis or OpenAI", async (t) => {

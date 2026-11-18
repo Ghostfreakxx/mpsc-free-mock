@@ -23,7 +23,8 @@ const reserveScript = `
   if tonumber(redis.call('GET', KEYS[2]) or '0') >= tonumber(ARGV[2]) then return 2 end
   if tonumber(redis.call('HGET', KEYS[3], 'requests') or '0') >= tonumber(ARGV[3]) then return 3 end
   local reserved = tonumber(redis.call('GET', KEYS[4]) or '')
-  if not reserved or reserved < 0 or reserved % tonumber(ARGV[8]) ~= 0 then return 5 end
+  if not reserved or reserved < 0 or reserved % tonumber(ARGV[8]) ~= 0
+    or redis.call('PTTL', KEYS[4]) ~= -1 then return 5 end
   if reserved + tonumber(ARGV[8]) > tonumber(ARGV[9]) then return 4 end
   redis.call('INCRBY', KEYS[4], ARGV[8])
   redis.call('ZADD', KEYS[1], ARGV[6], ARGV[7])
@@ -144,6 +145,13 @@ export async function reservedTestBudget() {
     throw new Error("Invalid testing budget.");
   }
   return Number(result);
+}
+
+export async function inspectTestBudget() {
+  const [reserved, ttl] = await Promise.all([reservedTestBudget(), redis(["PTTL", budgetKey])]);
+  if (reserved === null || ttl === -2) return "missing";
+  if (ttl !== -1 || reserved % RESERVED_MICRODOLLARS !== 0) return "invalid";
+  return reserved + RESERVED_MICRODOLLARS <= TEST_BUDGET_MICRODOLLARS ? "ready" : "exhausted";
 }
 
 export async function meterTeachingResponse(key: string, input: number, output: number) {
