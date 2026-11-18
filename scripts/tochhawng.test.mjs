@@ -55,6 +55,14 @@ test("teaching selectors set language, modes and fictional persona, with reviewe
   }
 });
 
+test("classroom grounding selects published review notes for the chosen subject", () => {
+  const messages = [{ role: "user", content: "How does latitude describe location?" }];
+  const geography = teachingInstructions({ teacher: "zorami", subject: "geography", language: "en", mode: "explain" }, messages);
+  assert.match(geography, /Reviewed course note: Latitude and location \[NOAA/);
+  const economics = teachingInstructions({ teacher: "zorami", subject: "economics", language: "en", mode: "explain" }, messages);
+  assert.doesNotMatch(economics, /Reviewed course note: Latitude/);
+});
+
 test("valid text lesson meters all reported tokens after the quota reservation", async (t) => {
   configure(t);
   const commands = [];

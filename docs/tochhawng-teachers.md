@@ -8,6 +8,10 @@ Set `TOCHHAWNG_ADMIN_PASSWORD` to a unique randomly generated password of at lea
 
 The selected teacher ID and plain-text reply are separate fields in the chat response. A future voice provider can take those fields and the selected language as inputs after an explicit student action. Keep audio generation separate from creating a text reply, with its own quotas and accounting. The current feature makes only text requests.
 
+In `/study-room`, select Zorami or use the **Talk to Zorami** button to open the same conversation with her selected. The 3D character has a stylized woven wrap modeled on the broad red band and motifs documented by the Mizoram Art and Culture Department. Reduced-motion preferences keep the character still. [Mizo Puanchei documentation](https://mizoculture.mizoram.gov.in/page/mizo-puanchei-gi-583)
+
+The server adds up to two matching reviewed topic notes and their source titles to the teaching context. Selecting a subject restricts this lookup to that subject or its courses. When the repository has no matching notes, the teacher uses the existing uncertainty guidance.
+
 ## Character portraits
 
 The built-in image generator produced the fictional portraits. The app serves locally compressed WebP files.

@@ -31,6 +31,13 @@ export default function StudyRoom() {
   const [closeUp, setCloseUp] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(true);
   const [pageVisible, setPageVisible] = useState(true);
+  const [greeting, setGreeting] = useState(0);
+  const teacherButton = useRef<HTMLButtonElement>(null);
+  const meetZorami = useCallback(() => {
+    setGreeting(current => current + 1);
+    teacherButton.current?.focus({ preventScroll: true });
+    window.dispatchEvent(new CustomEvent("mpsc-open-assistant", { detail: "zorami" }));
+  }, []);
   const toggleBook = useCallback(() => setCloseUp((current) => !current), []);
   const markReady = useCallback(() => setReady(true), []);
   const markFailed = useCallback(() => setFailed(true), []);
@@ -67,12 +74,12 @@ export default function StudyRoom() {
   }
 
   return (
-    <div className={styles.viewer} ref={viewport} role="group" aria-label="Interactive Constitution book and study desk">
+    <div className={styles.viewer} ref={viewport} role="group" aria-label="Interactive Zorami and Constitution study desk">
       {started && !failed && (
         <div className={styles.canvas} data-ready={ready} aria-hidden="true">
           <SceneBoundary onFailure={markFailed}>
             <RoomScene active={visible && pageVisible} reducedMotion={reducedMotion}
-              closeUp={closeUp} onBookClick={toggleBook}
+              closeUp={closeUp} onBookClick={toggleBook} onTeacherClick={meetZorami} greeting={greeting}
               onReady={markReady} onFailure={markFailed} />
           </SceneBoundary>
         </div>
@@ -84,6 +91,7 @@ export default function StudyRoom() {
             {ready ? (closeUp ? "Return to room view" : "Inspect the Constitution") : started ? "Loading 3D room…" : "Enter the 3D room"}
           </button>
         )}
+        {ready && !failed && <button ref={teacherButton} type="button" onClick={meetZorami}>Talk to Zorami</button>}
         {closeUp && ready && !failed && <span role="status">Preamble · “We, the people of India”</span>}
       </div>
     </div>

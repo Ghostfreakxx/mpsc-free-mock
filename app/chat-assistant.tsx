@@ -89,11 +89,14 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
   }, [isOpen]);
 
   useEffect(() => {
-    function openFromPageAction() {
+    function openFromPageAction(event: Event) {
       returnFocusRef.current =
         document.activeElement instanceof HTMLElement
           ? document.activeElement
           : launcherRef.current;
+      if (event instanceof CustomEvent && event.detail === "zorami") {
+        setOptions(previous => ({ ...previous, teacher: "zorami" }));
+      }
       setIsOpen(true);
     }
 

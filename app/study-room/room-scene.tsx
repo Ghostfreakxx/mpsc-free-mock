@@ -6,17 +6,20 @@ import gsap from "gsap";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Group, MathUtils, Vector3 } from "three";
 import { makeRoomTextures } from "./room-materials";
+import Zorami from "./zorami";
 
 type SceneProps = {
   active: boolean;
   reducedMotion: boolean;
   closeUp: boolean;
   onBookClick: () => void;
+  onTeacherClick: () => void;
+  greeting: number;
   onReady: () => void;
   onFailure: () => void;
 };
 
-function Room({ active, closeUp, reducedMotion, onBookClick, onReady, onFailure }: SceneProps) {
+function Room({ active, closeUp, reducedMotion, onBookClick, onTeacherClick, greeting, onReady, onFailure }: SceneProps) {
   const textures = useMemo(() => makeRoomTextures(), []);
   const coverHinge = useRef<Group>(null);
   const framing = useRef({ zoom: 0, arrival: 1 });
@@ -108,6 +111,7 @@ function Room({ active, closeUp, reducedMotion, onBookClick, onReady, onFailure 
     <>
       <color attach="background" args={["#251919"]} />
       <ambientLight color="#edd1b0" intensity={0.65} />
+      <Zorami active={active} reducedMotion={reducedMotion} greeting={greeting} onSelect={onTeacherClick} />
       <hemisphereLight color="#aeb9fa" groundColor="#784527" intensity={1.3} />
       <directionalLight position={[1.8, 4.8, -1.6]} intensity={2.3} color="#ffc09c" />
       <directionalLight position={[-2, 4.2, 3]} intensity={1.45} color="#ffe0ac" castShadow
