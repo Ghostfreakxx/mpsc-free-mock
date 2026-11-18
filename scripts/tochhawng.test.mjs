@@ -113,6 +113,19 @@ test("unapproved public visitors never reach Redis or OpenAI", async (t) => {
   assert.equal(fetch.mock.callCount(), 0);
 });
 
+test("public classroom explanations can use matching reviewed notes without an upstream request", async (t) => {
+  configure(t, { TOCHHAWNG_AI_MODE: "off" });
+  const fetch = t.mock.method(globalThis, "fetch");
+  const response = await chat({
+    teaching: { teacher: "zorami", subject: "geography", language: "en", mode: "explain" },
+    messages: [{ role: "user", content: "How do latitude and location relate?" }],
+  });
+  const result = await response.json();
+  assert.equal(result.mode, "offline");
+  assert.match(result.reply, /^Reviewed course notes\n\nLatitude and location \[NOAA/);
+  assert.equal(fetch.mock.callCount(), 0);
+});
+
 test("exhausted and missing budget ledgers never call the model", async (t) => {
   configure(t);
   const fetch = t.mock.method(globalThis, "fetch", async () => Response.json({ result: 4 }));

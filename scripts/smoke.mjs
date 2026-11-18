@@ -135,6 +135,20 @@ try {
   await lesson.getByRole('button', { name: 'Classroom subtitles' }).click();
   check(await viewer.getByText('RAM hi eng atan nge hman a nih?').count() === 0, 'classroom subtitles did not turn off');
   await page.unroute('**/api/chat', teacherChat);
+  const reviewed = page.getByRole('region', { name: 'Reviewed classroom lessons' });
+  await reviewed.getByLabel('Subject', { exact: true }).selectOption({ label: 'Geography' });
+  check(await reviewed.getByRole('heading', { name: 'Latitude and location' }).count() === 1, 'reviewed subject did not load its lesson');
+  await reviewed.getByRole('radio').first().check();
+  await reviewed.getByRole('button', { name: 'Check answer' }).click();
+  await reviewed.getByRole('status').waitFor();
+  await reviewed.getByRole('button', { name: 'Ask Zorami about Geography' }).click();
+  check(await dialog.getByLabel('Subject', { exact: true }).inputValue() === 'geography', 'classroom lesson did not open its subject in chat');
+  await dialog.getByLabel('Teaching mode').selectOption('explain');
+  await dialog.getByLabel('Reply language').selectOption('en');
+  await dialog.getByLabel('Message the AI teacher').fill('Latitude and location');
+  await dialog.getByRole('button', { name: 'Send message' }).click();
+  await dialog.getByText(/Reviewed course notes/).waitFor();
+  await dialog.getByRole('button', { name: 'Close study assistant' }).click();
   const fallback = await browser.newPage({ viewport: { width: 360, height: 780 } });
   try {
     await fallback.addInitScript(() => { Reflect.deleteProperty(window, 'WebGL2RenderingContext'); });
@@ -152,6 +166,17 @@ try {
   }
 
   // 4. A practice answer and a short simulator paper work end to end.
+  await page.goto(`${base}/mock-test`);
+  await page.locator('.practice-option').first().click();
+  await page.locator('.practice-result').waitFor();
+  await page.waitForFunction(() => Object.keys(JSON.parse(localStorage.getItem('mpsc.practice.responses.v1') ?? '{}')).length > 0);
+  await page.reload();
+  const progress = page.getByRole('region', { name: 'MPSC practice summary' });
+  await progress.getByText('QUESTIONS ANSWERED').waitFor();
+  await page.waitForFunction(() => {
+    const label = Array.from(document.querySelectorAll('.practice-metrics .metric-label')).find(item => item.textContent === 'QUESTIONS ANSWERED');
+    return Number(label?.nextElementSibling?.textContent) > 0;
+  });
   await page.goto(`${base}/jee`);
   await page.locator('.practice-option').first().click();
   check(await page.locator('.practice-result').count() === 1, 'JEE practice gave no feedback');

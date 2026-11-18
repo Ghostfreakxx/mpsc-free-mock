@@ -25,7 +25,7 @@ function keywords(text: string) {
 
 const topicIndex = reviewedTopics.map(topic => ({ topic, terms: keywords(topic.title) }));
 
-function reviewedNotes(subject: TeachingOptions["subject"], question: string) {
+export function reviewedNotes(subject: TeachingOptions["subject"], question: string) {
   const selected = subject === "general" || subject === "other" ? null : subjectGroups[subject] ?? [subjects[subject]];
   const terms = keywords(question);
   const ranked = topicIndex.flatMap(({ topic, terms: titleTerms }) => {

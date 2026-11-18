@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { offlineGuidance } from "../../lib/study-guidance";
 import { allowedTeachingTester, selectOpenAIApiKey } from "../../lib/openai-auth";
 import { requestOrigin } from "../../lib/request-origin";
-import { teachingInstructions, type ChatMessage } from "../../lib/teaching-prompt";
+import { reviewedNotes, teachingInstructions, type ChatMessage } from "../../lib/teaching-prompt";
 import {
   defaultTeachingOptions, MAX_CHAT_CONTEXT_CHARS, MAX_CHAT_MESSAGES, MAX_QUESTION_CHARS,
   MAX_TEACHING_REPLY_CHARS, subjects, teachers, teachingLanguages, teachingModes, type TeachingOptions,
@@ -110,6 +110,16 @@ function parseMessages(value: unknown): ChatMessage[] | null {
 }
 
 function offlineReply(prompt: string, options: TeachingOptions) {
+  const notes = options.language === "en" && (options.mode === "explain" || options.mode === "revision")
+    ? reviewedNotes(options.subject, prompt) : [];
+  if (notes.length) {
+    return json({
+      reply: ["Reviewed course notes", ...notes].join("\n\n"),
+      links: [{ label: "Open reviewed classroom lessons", href: "/study-room#reviewed-classroom" }],
+      mode: "offline",
+      teacher: options.teacher,
+    });
+  }
   const guidance = offlineGuidance(prompt);
   return json({
     reply: options.language === "lus"

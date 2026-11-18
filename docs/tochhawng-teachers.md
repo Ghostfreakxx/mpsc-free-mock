@@ -24,6 +24,8 @@ In `/study-room`, select Zorami or use the **Talk to Zorami** button to open the
 
 The server adds up to two matching reviewed topic notes and their source titles to the teaching context. Selecting a subject restricts this lookup to that subject or its courses. When the repository has no matching notes, the teacher uses the existing uncertainty guidance.
 
+The classroom also provides source-checked English lessons and quizzes that run without WebGL or an API key. English Explain and Quick Revision requests can return matching reviewed notes through the existing chat route while paid AI is off. The chat and board label these replies as offline guidance, and the reply identifies the reviewed sources. The existing Mizo practice route remains available for bilingual study.
+
 ## Character portraits
 
 The built-in image generator produced the fictional portraits. The app serves locally compressed WebP files.
