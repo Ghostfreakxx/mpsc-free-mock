@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import LearningTrail from "../learning-trail";
 import { ArrowLeft, ArrowRight, Bookmark, Clock, Eraser, Grid3x3, RotateCcw, Send } from "lucide-react";
 import { Fragment, useCallback, useEffect, useMemo, useState } from "react";
 import type { Stream } from "../data/reviewed-content";
@@ -361,6 +362,7 @@ export default function ExamSimulator({ poolSizes, neetFullMock = false }: { poo
     <Header />
     <div className={`${styles.wrap} ${styles.stack}`}>
       <Intro neetFullMock={neetFullMock} />
+      <LearningTrail current="exam" />
 
       <section className={styles.panel} aria-labelledby="exam-choice">
         <h2 id="exam-choice" className={styles.sectionTitle}>1. Choose your exam</h2>
@@ -411,7 +413,7 @@ export default function ExamSimulator({ poolSizes, neetFullMock = false }: { poo
 }
 
 function Intro({ neetFullMock = false }: { neetFullMock?: boolean }) {
-  if (neetFullMock) return <div>
+  if (neetFullMock) return <div className="cinema-entrance">
     <span className={styles.kicker}>NEET UG · Full-syllabus foundation mock</span>
     <h1 className={styles.title}>NEET full-syllabus timed mock</h1>
     <p className={styles.lead}>180 questions · 180 minutes · 720 marks. Physics 45, Chemistry 45, Biology 90. Every paper represents all 50 mapped syllabus units. Challenge mix selects 50 application questions from a pool of 275, one per unit, alongside 130 rotating foundation questions.</p>
@@ -419,7 +421,7 @@ function Intro({ neetFullMock = false }: { neetFullMock?: boolean }) {
     <p className={styles.muted}>The clock continues while you leave or reload. Time-up submits automatically. Explanations appear after submission. Saved attempts stay separate from other simulator papers; storage must be available to resume on this browser.</p>
     <p><Link href="/neet/classes" prefetch={false}>Review recorded classes</Link> · <a href="https://cdnbbsr.s3waas.gov.in/s37bc1ec1d9c3426357e69acd5bf320061/uploads/2026/02/202602231394640855.pdf" target="_blank" rel="noreferrer">2026 NTA bulletin</a></p>
   </div>;
-  return <div>
+  return <div className="cinema-entrance">
     <span className={styles.kicker}>Exam simulator</span>
     <h1 className={styles.title}>Practise the real exam, not just the questions</h1>
     <p className={styles.lead}>A timed paper with the exam&apos;s marking, a question palette and mark-for-review, like the computer-based test. Afterwards you see where marks went: quick guesses, changed answers and time sinks.</p>

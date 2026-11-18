@@ -18,6 +18,7 @@ type SceneProps = {
   onTeacherClick: () => void;
   greeting: number;
   lesson: ClassroomLesson | null;
+  compactRendering: boolean;
   onReady: () => void;
   onFailure: () => void;
 };
@@ -241,10 +242,10 @@ export default function RoomScene(props: SceneProps) {
   return (
     <Canvas
       camera={{ position: [3.25, 3.35, 8.2], fov: 39, near: 0.1, far: 30 }}
-      dpr={[1, 1.45]}
+      dpr={props.compactRendering ? 1 : [1, 1.45]}
       frameloop={props.active ? "demand" : "never"}
       gl={{ alpha: false, antialias: true, powerPreference: "low-power" }}
-      shadows
+      shadows={!props.compactRendering}
     >
       <Room {...props} />
     </Canvas>

@@ -7,6 +7,7 @@ import { isQuestionList, isTranslationMap, useQuestionBank } from "./lib/use-que
 import { MISTAKES_TOPIC, weakestTopic, type TopicStats } from "./lib/practice-progress";
 import { usePracticeProgress } from "./lib/use-practice-progress";
 import RoundNotice from "./round-notice";
+import LearningTrail from "./learning-trail";
 
 
 import Link from "next/link";
@@ -215,7 +216,7 @@ return (
       </header>
 
       <section className="academy-content practice-content">
-        <div className="page-heading-row practice-heading">
+        <div className="page-heading-row practice-heading cinema-entrance">
           <div>
             <span className="section-kicker">MIZORAM PUBLIC SERVICE COMMISSION</span>
             <h1>{bilingual ? "MPSC: Mizo + English" : "MPSC practice"}</h1>
@@ -227,6 +228,7 @@ return (
             <InstallAppButton />
           </div>
         </div>
+        <LearningTrail current="practice" />
 
         <nav className="practice-language-switch" aria-label="Practice language">
           <Link href="/mock-test" aria-current={!bilingual ? "page" : undefined}>English</Link>

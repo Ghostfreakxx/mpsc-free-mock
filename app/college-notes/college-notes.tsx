@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import LearningTrail from "../learning-trail";
 import {
   ArrowLeft,
   ArrowUpRight,
@@ -2627,10 +2628,11 @@ export default function CollegeNotesPage({ downloadAnchors }: { downloadAnchors:
         </header>
 
         <section className="academy-content practice-content notes-content">
-          <div className="page-heading-row practice-heading">
+          <div className="page-heading-row practice-heading cinema-entrance">
             <div><span className="section-kicker">MIZORAM ARTS COLLEGE · FREE LEARNING</span><h1>College notes</h1><p>Search a subject, review concise notes, or study longer exam-style explanations.</p></div>
             <Link href={`/downloads#${downloadAnchors[selectedSubject] ?? ""}`} className="button button-outline">Download notes <ArrowUpRight size={15} /></Link>
           </div>
+          <LearningTrail current="notes" />
 
           <section className="practice-category-panel notes-subject-panel" aria-label="Choose a subject">
             <div className="practice-section-heading"><div><span className="section-kicker">LEARNING LIBRARY</span><h2>Choose a subject</h2></div><span>{subjects.length} subjects</span></div>

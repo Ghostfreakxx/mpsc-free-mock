@@ -15,7 +15,7 @@ import {
   X,
 } from "lucide-react";
 import {
-  defaultTeachingOptions, MAX_CHAT_CONTEXT_CHARS, MAX_CHAT_MESSAGES, MAX_QUESTION_CHARS,
+  classroomSubject, defaultTeachingOptions, MAX_CHAT_CONTEXT_CHARS, MAX_CHAT_MESSAGES, MAX_QUESTION_CHARS,
   subjects, teachers, teachingLanguages, teachingModes, type TeacherId, type TeachingOptions,
 } from "./lib/tochhawng-teachers";
 
@@ -53,11 +53,13 @@ function contextFor(messages: ChatMessage[]) {
 }
 
 // Loaded on demand by ChatLauncher; opens straight away when the student asked for it.
-export default function ChatAssistant({ initialOpen = false }: { initialOpen?: boolean }) {
+export default function ChatAssistant({ initialOpen = false, initialSubject }: {
+  initialOpen?: boolean; initialSubject?: TeachingOptions["subject"];
+}) {
   const [isOpen, setIsOpen] = useState(initialOpen);
   const [draft, setDraft] = useState("");
   const [isSending, setIsSending] = useState(false);
-  const [options, setOptions] = useState(defaultTeachingOptions);
+  const [options, setOptions] = useState(() => ({ ...defaultTeachingOptions, subject: initialSubject ?? defaultTeachingOptions.subject }));
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const teacher = teachers[options.teacher];
   const launcherRef = useRef<HTMLButtonElement>(null);
@@ -100,6 +102,8 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
       if (event instanceof CustomEvent && event.detail === "zorami") {
         setOptions(previous => ({ ...previous, teacher: "zorami" }));
       }
+      const subject = classroomSubject(event);
+      if (subject) setOptions(previous => ({ ...previous, teacher: "zorami", subject }));
       setIsOpen(true);
     }
 

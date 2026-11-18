@@ -43,3 +43,9 @@ export const MAX_QUESTION_CHARS = 1_200;
 export const MAX_TEACHING_REPLY_CHARS = 3_000;
 export const MAX_CHAT_CONTEXT_CHARS = 6_000;
 export const MAX_CHAT_MESSAGES = 8;
+
+export function classroomSubject(event: Event): TeachingOptions["subject"] | undefined {
+  if (!(event instanceof CustomEvent)) return;
+  const subject: unknown = event.detail?.subject;
+  if (typeof subject === "string" && Object.hasOwn(subjects, subject)) return subject as TeachingOptions["subject"];
+}

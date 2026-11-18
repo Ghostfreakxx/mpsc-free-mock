@@ -29,6 +29,7 @@ export default function StudyRoom() {
   const viewport = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
   const [started, setStarted] = useState(false);
+  const [compactRendering, setCompactRendering] = useState(false);
   const [failed, setFailed] = useState(false);
   const [ready, setReady] = useState(false);
   const [closeUp, setCloseUp] = useState(false);
@@ -87,6 +88,8 @@ export default function StudyRoom() {
       return;
     }
     probe.getExtension("WEBGL_lose_context")?.loseContext();
+    const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
+    setCompactRendering(Boolean(connection?.saveData || window.matchMedia("(max-width: 600px)").matches));
     setStarted(true);
   }
 
@@ -98,7 +101,7 @@ export default function StudyRoom() {
             <SceneBoundary onFailure={markFailed}>
               <RoomScene active={visible && pageVisible} reducedMotion={reducedMotion}
                 closeUp={closeUp} onBookClick={toggleBook} onTeacherClick={meetZorami} greeting={greeting}
-                onReady={markReady} onFailure={markFailed} lesson={lesson} />
+                onReady={markReady} onFailure={markFailed} lesson={lesson} compactRendering={compactRendering} />
             </SceneBoundary>
           </div>
         )}

@@ -2,11 +2,12 @@
 
 import { useEffect, useState, type ComponentType } from "react";
 import { MessageCircle } from "lucide-react";
+import { classroomSubject, type TeachingOptions } from "./lib/tochhawng-teachers";
 
 // The study assistant is only needed when a student opens it, so its code is a separate download.
 // It is fetched once the page is idle, and rendered directly once loaded: going through a lazy
 // component and Suspense would add React's ~300 ms reveal delay to every first tap.
-type Assistant = ComponentType<{ initialOpen?: boolean }>;
+type Assistant = ComponentType<{ initialOpen?: boolean; initialSubject?: TeachingOptions["subject"] }>;
 let assistant: Assistant | null = null;
 let request: Promise<Assistant> | null = null;
 
@@ -26,6 +27,7 @@ function LauncherButton({ busy = false, onOpen, onWarm }: { busy?: boolean; onOp
 export default function ChatLauncher() {
   const [Opened, setOpened] = useState<Assistant | null>(null);
   const [busy, setBusy] = useState(false);
+  const [initialSubject, setInitialSubject] = useState<TeachingOptions["subject"]>();
 
   // Fetch the assistant's code once the page is idle, so the first tap opens it at once instead of
   // waiting on the network. Skipped when the phone asks to save data.
@@ -41,7 +43,9 @@ export default function ChatLauncher() {
   // Pages open the assistant with this event; until it has loaded, the launcher handles it.
   useEffect(() => {
     if (Opened) return;
-    const open = () => {
+    const open = (event: Event) => {
+      const subject = classroomSubject(event);
+      if (subject) setInitialSubject(subject);
       if (assistant) { setOpened(() => assistant); return; }
       setBusy(true);
       loadAssistant().then(component => setOpened(() => component), () => setBusy(false));
@@ -50,6 +54,6 @@ export default function ChatLauncher() {
     return () => window.removeEventListener("mpsc-open-assistant", open);
   }, [Opened]);
 
-  if (Opened) return <Opened initialOpen />;
+  if (Opened) return <Opened initialOpen initialSubject={initialSubject} />;
   return <LauncherButton busy={busy} onOpen={() => window.dispatchEvent(new Event("mpsc-open-assistant"))} onWarm={() => void loadAssistant().catch(() => {})} />;
 }

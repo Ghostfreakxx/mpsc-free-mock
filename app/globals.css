@@ -584,6 +584,74 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
 .assistant-playback button { padding: 0.32rem 0.65rem; min-height: 36px; border: 1px solid var(--chat-border); border-radius: 0.4rem; background: var(--chat-canvas); color: var(--chat-text); font-size: 0.84rem; cursor: pointer; }
 .assistant-playback button:focus-visible { outline: 2px solid var(--chat-accent); outline-offset: 2px; }
 .assistant-playback p { width: 100%; font-size: 0.88rem; line-height: 1.45; }
+
+/* The landscape uses the same evening palette in both themes. Text never sits directly on the image. */
+html[data-theme] .cinema-welcome, html[data-theme] .cinema-entrance {
+  --cinema-base: #231915;
+  --cinema-haze: #4d3228;
+  --cinema-cream: #fff0d9;
+  --cinema-gold: #f2c486;
+  isolation: isolate;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--cinema-haze);
+  background: linear-gradient(130deg, var(--cinema-base) 43%, var(--cinema-haze));
+  color: var(--cinema-cream);
+}
+
+html[data-theme] .cinema-welcome .welcome-copy,
+html[data-theme] .cinema-entrance { padding: clamp(1rem, 3vw, 2.5rem); }
+html[data-theme] .cinema-welcome .welcome-copy h1,
+html[data-theme] .cinema-entrance h1 {
+  color: var(--cinema-cream);
+  font: 400 clamp(2rem, 4.4vw, 4.3rem)/1 Georgia, serif;
+  letter-spacing: -0.045em;
+}
+html[data-theme] .cinema-welcome .welcome-copy > p,
+html[data-theme] .cinema-entrance p, html[data-theme] .cinema-entrance > span:last-child { color: var(--cinema-cream); font-size: 0.92rem; }
+html[data-theme] .cinema-welcome .welcome-copy .eyebrow, html[data-theme] .cinema-welcome .welcome-actions .text-button,
+html[data-theme] .cinema-entrance .section-kicker, html[data-theme] .cinema-entrance > span,
+html[data-theme] .cinema-entrance div > a, html[data-theme] .cinema-entrance p > a { color: var(--cinema-gold); }
+.cinema-welcome .welcome-photo { min-height: 21rem; }
+html[data-theme] .cinema-welcome .welcome-photo::after {
+  inset: 0;
+  width: auto;
+  background: linear-gradient(90deg, var(--cinema-base), transparent 34%);
+  pointer-events: none;
+}
+.cinema-welcome .photo-location { z-index: 1; }
+html[data-theme] .cinema-welcome .welcome-copy .button-dark, html[data-theme] .cinema-entrance .button {
+  border-color: var(--cinema-gold);
+  background: var(--cinema-gold);
+  color: var(--cinema-base);
+}
+html[data-theme] .cinema-entrance .practice-heading-actions > a, html[data-theme] .cinema-entrance > a.button { color: var(--cinema-base); }
+.cinema-welcome :is(a, button):focus-visible, .cinema-entrance :is(a, button):focus-visible {
+  outline: 2px solid var(--cinema-cream);
+  outline-offset: 3px;
+}
+.cinema-entrance { border-radius: 0.7rem; }
+.cinema-entrance + .cinema-trail { margin-top: -0.2rem; }
+.cinema-trail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.75rem;
+  align-items: center;
+  margin-bottom: 0.9rem;
+  padding: 0.25rem 0;
+  border-block: 1px solid var(--line);
+}
+.cinema-trail > * { padding: 0.55rem 0.25rem; font-size: 0.82rem; font-weight: 650; }
+.cinema-trail a:hover, .cinema-trail [aria-current] { text-decoration: underline; text-underline-offset: 0.25rem; }
+.cinema-library-heading { scroll-margin-top: 5rem; }
+.cinema-course { transition: transform 160ms ease-out; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .cinema-course:hover { transform: translateY(-3px); }
+}
+@media (max-width: 760px) {
+  .cinema-welcome .welcome-photo { min-height: 0; height: 10rem; }
+  html[data-theme] .cinema-welcome .welcome-photo::after { display: block; background: linear-gradient(0deg, var(--cinema-base), transparent 45%); }
+}
 .assistant-playback .assistant-playback-caption { border-inline-start: 2px solid var(--chat-accent); padding-inline-start: 0.5rem; }
 .assistant-links { display: grid; gap: 6px; margin-top: 10px; padding-top: 9px; border-top: 1px solid var(--chat-border); }
 .assistant-links a { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 36px; padding: 6px 10px; border-radius: 10px; background: var(--chat-accent-soft); color: var(--chat-link); font-size: 14px; font-weight: 700; }
