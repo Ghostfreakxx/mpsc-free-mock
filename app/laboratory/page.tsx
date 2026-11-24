@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CircuitLab from "./circuit-lab";
 import Laboratory from "./laboratory";
 import styles from "../study-room/study-room.module.css";
 
@@ -14,6 +15,7 @@ export default function LaboratoryPage() {
       <section className={styles.resources} aria-labelledby="lab-heading">
         <h1 id="lab-heading" className={styles.labTitle}>Tochhawng Virtual Laboratory</h1>
         <Laboratory />
+        <CircuitLab />
       </section>
     </main>
   );

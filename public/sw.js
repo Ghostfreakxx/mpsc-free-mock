@@ -1,4 +1,4 @@
-const CACHE_NAME = "mpsc-free-mock-v13";
+const CACHE_NAME = "mpsc-free-mock-v14";
 // Hashed build files get their own capped cache: each deploy adds new names, so drop the oldest
 // entries instead of letting old builds fill the phone's storage.
 const STATIC_CACHE = "mpsc-free-mock-static";
@@ -6,12 +6,16 @@ const STATIC_LIMIT = 150;
 const LESSON_PREFIX = "mpsc-free-mock-lesson-v1-";
 const LESSON_READY = "/lectures/__offline_ready__";
 
+const publicNavigation = /^\/(?:study-room|laboratory|neet|jee|law|trading|nursing|terms)(?:\/|$)/;
+const cacheableResponse = response => response.status === 200 && response.type === "basic" &&
+  !response.redirected && !/(?:^|,)\s*(?:private|no-store)\b/i.test(response.headers.get("Cache-Control") ?? "");
+
 async function savedLessonFile(request, ignoreSearch = false) {
   const names = (await caches.keys()).filter(name => name.startsWith(LESSON_PREFIX));
   for (const name of names) {
     const cache = await caches.open(name);
     const file = await cache.match(request, { ignoreSearch });
-    if (file && await cache.match(LESSON_READY)) return file;
+    if (file && cacheableResponse(file) && await cache.match(LESSON_READY)) return file;
   }
 }
 
@@ -77,7 +81,7 @@ self.addEventListener("activate", (event) => {
 
 self.addEventListener("fetch", (event) => {
   const request = event.request;
-  if (request.method !== "GET" || new URL(request.url).origin !== self.location.origin) {
+  if (request.method !== "GET" || request.headers.has("Authorization") || request.cache === "no-store" || new URL(request.url).origin !== self.location.origin) {
     return;
   }
 
@@ -95,7 +99,7 @@ self.addEventListener("fetch", (event) => {
   if (url.pathname.startsWith("/_next/static/") && !url.search) {
     event.respondWith(
       caches.match(request, { cacheName: STATIC_CACHE }).then((cached) => cached || fetch(request).then(async (response) => {
-        if (response.ok && response.type === "basic") {
+        if (cacheableResponse(response)) {
           const cache = await caches.open(STATIC_CACHE);
           await cache.put(request, response.clone()).catch(() => {});
           event.waitUntil(trimCache(cache, STATIC_LIMIT));
@@ -111,7 +115,7 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(caches.open(CACHE_NAME).then(async (cache) => {
       const cached = await cache.match(request);
       const refresh = fetch(request).then(async (response) => {
-        if (response.ok && response.type === "basic") await cache.put(request, response.clone()).catch(() => {});
+        if (cacheableResponse(response)) await cache.put(request, response.clone()).catch(() => {});
         return response;
       });
       if (cached) {
@@ -126,11 +130,12 @@ self.addEventListener("fetch", (event) => {
   // Navigations with a query string (e.g. /exam-simulator?exam=jee) are served
   // network-first too, and fall back to the cached page for the same path offline.
   const navigation = request.mode === "navigate";
+  if (navigation && !urlsToCache.includes(url.pathname) && !publicNavigation.test(url.pathname)) return;
   const cacheable = (navigation || !url.search) && (navigation || url.pathname.startsWith("/downloads/") || url.pathname === "/study-room-poster.webp" || urlsToCache.includes(url.pathname));
   if (!cacheable || request.headers.get("RSC") === "1") return;
   event.respondWith(
     fetch(request).then(async (response) => {
-      if (response.ok && response.type === "basic" && !url.search) {
+      if (cacheableResponse(response) && !url.search) {
         const cache = await caches.open(CACHE_NAME);
         await cache.put(request, response.clone()).catch(() => {});
       }

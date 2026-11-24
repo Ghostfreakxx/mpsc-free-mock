@@ -48,3 +48,11 @@ The classroom can open existing English recordings for Newton's laws, atomic str
 In one Chromium run at 360 px with 4× CPU throttling, 150 ms latency and a 1.6 Mbps download limit, the classroom selector appeared in 2.86 seconds and had transferred about 312 kB of completed resources. The lab slider appeared in 0.83 seconds and had transferred about 33 kB. Neither page started WebGL before entry. These are loopback simulation measurements, with no physical-device benchmark.
 
 The final offline browser check injected a storage quota failure, verified that no incomplete pack remained, and then downloaded, reloaded, played, sought and removed the lesson successfully.
+
+## Security and circuit follow-up
+
+See [the security audit](./security-audit.md) for the comparison with main, local API and cache fixtures, and live lecture investigation. The third laboratory module adds ideal series and parallel resistor networks, linked to the existing JEE recording and practice. The recorded audit checked all 154 distinct published WebVTT timelines against the player cues for count, text, and timestamps within 2 ms. This comparison does not independently verify the spoken audio.
+
+The individual recording-download flow is retained. Chapter-only narrated packs and bulk subject packs still need a manifest with versioned assets, storage rules, and progress through partial failures. Use the existing media audit and offline seek fixture as regressions before publishing those packs.
+
+Chapter notes can now be downloaded individually from the lecture player, and the JEE library offers full text transcript downloads for Physics, Chemistry, and Mathematics. These text files remain readable outside the app. Individual audio packs remain available in the player. Chapter-only audio and bundled subject audio packs are still outstanding.

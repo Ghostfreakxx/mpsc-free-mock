@@ -246,6 +246,7 @@ test("admin dashboard requires credentials and shows only uncached aggregate est
   }));
   assert.equal(response.status, 200);
   assert.equal(response.headers.get("cache-control"), "private, no-store");
+  assert.equal(response.headers.get("vary"), "Authorization");
   const body = await response.text();
   assert.match(body, /\$0\.004200 USD/);
   assert.match(body, /\$0\.07 of \$9\.00/);
@@ -271,4 +272,31 @@ test("the origin check uses the student's host and rejects a different site", as
   }));
   assert.equal((await send(base)).status, 200);
   assert.equal((await send("https://example.org")).status, 403);
+});
+
+test("misconfigured provider destination cannot consume a shared reservation", async (t) => {
+  configure(t, { VERCEL: "1", OPENAI_BASE_URL: "https://example.invalid/v1" });
+  const upstream = t.mock.method(globalThis, "fetch");
+  const response = await POST(new Request(base + "/api/chat", { method: "POST", headers: { "Content-Type": "application/json", Authorization: `Bearer ${testToken}`, "x-vercel-forwarded-for": "192.0.2.80" }, body: JSON.stringify(payload) }));
+  assert.equal(response.status, 200);
+  assert.equal((await response.json()).mode, "offline");
+  assert.equal(upstream.mock.callCount(), 0);
+});
+
+test("streamed body limit and malformed JSON stop before any upstream service", async (t) => {
+  configure(t, { VERCEL: "1" });
+  const upstream = t.mock.method(globalThis, "fetch");
+  const send = body => POST(new Request(base + "/api/chat", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Origin: base, "x-vercel-forwarded-for": "192.0.2.81", Authorization: `Bearer ${testToken}` },
+    body, duplex: "half",
+  }));
+  const oversized = new ReadableStream({ start(stream) {
+    stream.enqueue(new Uint8Array(16_000));
+    stream.enqueue(new Uint8Array(16_000));
+    stream.close();
+  } });
+  assert.equal((await send(oversized)).status, 413);
+  assert.equal((await send("{")).status, 400);
+  assert.equal(upstream.mock.callCount(), 0);
 });

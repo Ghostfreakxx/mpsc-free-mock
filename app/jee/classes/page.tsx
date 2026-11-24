@@ -2,7 +2,7 @@ import Link from "next/link";
 import LearningTrail from "../../learning-trail";
 import { ArrowLeft } from "lucide-react";
 import CourseLibrary from "./course-library";
-import { syllabusBaseline, syllabusSource, syllabusChecked } from "./course";
+import { subjects, syllabusBaseline, syllabusSource, syllabusChecked } from "./course";
 import { recordingSummaries, writtenSummaries } from "./library-summary";
 import styles from "./lecture.module.css";
 
@@ -21,6 +21,13 @@ export default function ClassLibrary() {
     </div>
     <LearningTrail current="courses" />
     <CourseLibrary lectures={lectures} studyLessons={studyLessons} />
+    <section className={styles.notes} aria-label="Download subject transcripts">
+      <h2>Offline subject transcripts</h2>
+      <p>Download a text copy of the recorded lessons for an entire JEE subject.</p>
+      <ul>{subjects.map(subject => <li key={subject}>
+        <a href={`/jee/classes/transcripts/${subject.toLowerCase()}`} download>Download JEE {subject} transcripts</a>
+      </li>)}</ul>
+    </section>
     <footer className={styles.notes}><p>Following the official NTA syllabus: <a href={syllabusSource} target="_blank" rel="noreferrer">{syllabusBaseline}</a>. Unit names and order checked on {syllabusChecked}. Independently produced classes; no NTA endorsement. Coverage is tracked against the 2027 Paper 1 baseline. Recorded foundations do not establish exhaustive topic or problem coverage. JEE Advanced requires separate verification.</p></footer>
   </main>;
 }

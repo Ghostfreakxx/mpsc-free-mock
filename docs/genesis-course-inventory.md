@@ -10,7 +10,7 @@ Run `node scripts/inventory-courses.mjs` for the per-recording listing. Add `--h
 
 The checked JEE syllabus inventory has 20 Physics, 20 Chemistry and 14 Mathematics units, with 12, 22 and 14 written lessons respectively. The inventory maps a recording to each of the 54 JEE units. All 48 written lessons have a local figure and worked examples. A lesson count alone does not measure subheading coverage. Retain the repository's [NEET Biology coverage](./neet-class-coverage-2026.md), [shared course mapping](./neet-physics-chemistry-mapping-2026.md), and [subheading audit](./neet-subheading-review-2026.md) when marking syllabus completion.
 
-The media pass read all 1,956 MP3s and found no exact duplicates or suspicious opening bytes. That check does not decode the audio or judge narration against a script. The individual class verification scripts and browser playback provide a separate check. Illustration coverage, worked-example quality, audio alignment, and unpublished syllabus gaps need their own walkthrough.
+The media pass read all 1,956 MP3s and found no exact duplicates or suspicious opening bytes. That check does not decode the audio or judge narration against a script. The individual class verification scripts and browser playback provide a separate check. The cue comparison verified text, order, and timestamps within 2 ms across all 154 published timelines. Spoken-word alignment, worked-example quality, and unpublished syllabus gaps still need review.
 
 ## Narration queue and provider status
 

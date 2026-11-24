@@ -7,6 +7,7 @@ import { ArrowLeft, ArrowRight, Captions, Download, RotateCcw } from "lucide-rea
 import type { Lecture } from "./lessons";
 import PracticeQuiz from "./practice-quiz";
 import OfflineLesson from "./offline-lesson";
+import { formatTranscript } from "./transcript";
 import LectureClassroom from "./lecture-classroom";
 import styles from "./lecture.module.css";
 
@@ -179,14 +180,13 @@ export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: Player
     else setManualChapter(index);
   }
 
-  function downloadTranscript() {
-    const text = `${lesson.title}\nEnglish narration · American English · Marin · AI-generated voice\n\n` + lesson.segments.map((segment, index) =>
-      `${index + 1}. ${segment.title}\n${segment.formula}\n${segment.steps.join("\n")}\n\n${segment.english}\n${segment.note ? `Clarification: ${segment.note}\n` : ""}`
-    ).join("\n") + "\nSources\n" + lesson.sources.map(source => `${source.title}: ${source.url}`).join("\n");
+  function downloadTranscript(chapterOnly = false) {
+    const firstNumber = chapterIndex + 1;
+    const text = formatTranscript(lesson, chapterOnly ? chapterIndex : undefined);
     const url = URL.createObjectURL(new Blob([text], { type: "text/plain;charset=utf-8" }));
     const anchor = document.createElement("a");
     anchor.href = url;
-    anchor.download = `${exam.toLowerCase()}-${lesson.id.replace(/^neet-/, "")}-notes.txt`;
+    anchor.download = `${exam.toLowerCase()}-${lesson.id.replace(/^neet-/, "")}${chapterOnly ? `-chapter-${firstNumber}` : ""}-notes.txt`;
     anchor.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
@@ -379,7 +379,7 @@ export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: Player
       topic={chapter.title} text={(synchronized && cue?.text) || chapter.formula} />
     <OfflineLesson key={lesson.id} audio={lesson.audio} captions={lesson.subtitles} />
     <section className={styles.notes}>
-      <div className={styles.sectionHeading}><h2>Class notes & transcript</h2><button onClick={downloadTranscript}><Download size={17} /> Download notes</button></div>
+      <div className={styles.sectionHeading}><h2>Class notes & transcript</h2><button onClick={() => downloadTranscript()}><Download size={17} /> Download notes</button><button onClick={() => downloadTranscript(true)}><Download size={17} /> Download current chapter notes</button></div>
       <p>{lesson.scope}</p>
       <details><summary>Read the English transcript</summary>{lesson.segments.map(segment => <article key={segment.title}><h3>{segment.title}</h3><p>{segment.english}</p>{segment.note && <p className={styles.clarification}><strong>Clarification:</strong> {segment.note}</p>}</article>)}</details>
       <p className={styles.sources}>References: {lesson.sources.map(source => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.title}</a>)}</p>

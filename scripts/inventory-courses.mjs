@@ -32,18 +32,36 @@ function fileBytes(url) {
   try { return statSync(path.join(root, "public", url)).size; } catch { return 0; }
 }
 
+function parseCaptionTime(timestamp) {
+  return timestamp.split(":").reduce((seconds, segment) => seconds * 60 + Number(segment), 0);
+}
+
+function inspectAlignment(vtt, cues) {
+  const parsed = [...vtt.matchAll(/^(\d{2}:\d{2}:\d{2}\.\d{3}) --> (\d{2}:\d{2}:\d{2}\.\d{3})[^\n]*\n([^]*?)(?=\n\n|$)/gm)];
+  const normalize = text => text.trim().replace(/\s+/g, " ");
+  return parsed.length === cues.length && cues.length > 0 && parsed.every(([, start, end, text], index) => {
+    const cue = cues[index];
+    return Math.abs(parseCaptionTime(start) - cue.start) <= 0.002
+      && Math.abs(parseCaptionTime(end) - cue.end) <= 0.002
+      && normalize(text) === normalize(cue.text);
+  });
+}
+
 function inspect(lecture) {
   const issues = [];
   const audioBytes = fileBytes(lecture.audio);
-  const captions = fileBytes(lecture.subtitles) && /^WEBVTT\b/m.test(read(path.join("public", lecture.subtitles)));
+  const vtt = fileBytes(lecture.subtitles) ? read(path.join("public", lecture.subtitles)).replaceAll("\r\n", "\n").trim() : "";
+  const captions = /^WEBVTT\b/.test(vtt);
+  const captionAlignment = captions && inspectAlignment(vtt, lecture.timings?.cues ?? []);
   const scripts = lecture.segments.filter(section => section.english?.trim()).length;
   if (!audioBytes) issues.push("Missing narration file");
   if (!captions) issues.push("Missing or invalid WebVTT");
+  else if (!captionAlignment) issues.push("WebVTT differs from the player cue timeline");
   if (!lecture.timings?.cues?.length) issues.push("No timed cues");
   if (scripts < lecture.segments.length || !scripts) issues.push("Missing section narration script");
   if (!lecture.quiz?.length) issues.push("Missing quiz");
   return { id: lecture.id, title: lecture.title, sections: lecture.segments.length, scripts, audioBytes,
-    audio: lecture.audio, captionFile: lecture.subtitles, captions: Boolean(captions), duration: lecture.timings?.duration, cues: lecture.timings?.cues?.length ?? 0,
+    audio: lecture.audio, captionFile: lecture.subtitles, captions, captionAlignment, duration: lecture.timings?.duration, cues: lecture.timings?.cues?.length ?? 0,
     quiz: lecture.quiz?.length ?? 0, issues };
 }
 

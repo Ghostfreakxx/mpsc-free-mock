@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { mkdir } from "node:fs/promises";
+import { mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { chromium } from "playwright";
 
@@ -28,6 +28,14 @@ try {
       await page.getByRole("slider", { name: "Launch speed" }).waitFor();
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
       if (screenshots) await page.screenshot({ path: path.join(screenshots, `laboratory-${width}.png`) });
+      const circuit = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "Resistors in series and parallel" }) });
+      await circuit.getByLabel("Connection").selectOption("parallel");
+      await circuit.getByText(/Equivalent resistance 3.00 Ω/).waitFor();
+      await circuit.getByRole("slider", { name: "Supply voltage" }).press("End");
+      await circuit.getByText(/Supply current 8.00 A/).waitFor();
+      if (screenshots) await circuit.screenshot({ path: path.join(screenshots, `circuit-${width}.png`) });
+      await circuit.getByRole("button", { name: "Reset circuit" }).click();
+      await circuit.getByText(/Equivalent resistance 12.00 Ω/).waitFor();
     } finally {
       await page.close();
     }
@@ -43,9 +51,18 @@ try {
     await page.goto(base + "/study-room");
     await page.waitForFunction(() => navigator.serviceWorker.controller);
     await page.reload();
+    const privateResult = await page.evaluate(async () => {
+      const response = await fetch("/api/admin/teacher-usage", { headers: { Authorization: "Basic fixture" } });
+      return { status: response.status, control: response.headers.get("Cache-Control"), policy: response.headers.get("Content-Security-Policy"),
+        cached: Boolean(await caches.match("/api/admin/teacher-usage")) };
+    });
+    assert.ok([401, 404].includes(privateResult.status));
+    assert.match(privateResult.control, /no-store/);
+    assert.equal(privateResult.cached, false);
+    assert.match(privateResult.policy, /default-src 'none'/);
     await page.getByLabel("Subject and topic").waitFor();
     await page.waitForFunction(async () => {
-      const cache = await caches.open("mpsc-free-mock-v13");
+      const cache = await caches.open("mpsc-free-mock-v14");
       return Boolean(await cache.match("/study-room") && await cache.match("/study-room/lesson-data"));
     });
     await context.setOffline(true);
@@ -71,6 +88,12 @@ try {
     await companion.evaluate(item => item.load());
     await page.waitForFunction(() => Array.from(document.querySelectorAll("audio")).some(item =>
       item.getAttribute("aria-label") === "Related class narration" && item.readyState >= 1));
+    await page.goto(base + "/jee/classes");
+    const subjectDownload = page.waitForEvent("download");
+    await page.getByRole("link", { name: "Download JEE Physics transcripts" }).click();
+    const subjectFile = await subjectDownload;
+    assert.equal(subjectFile.suggestedFilename(), "jee-physics-transcripts.txt");
+    assert.match(await readFile(await subjectFile.path(), "utf8"), /JEE Physics recorded class transcripts/);
     await page.goto(base + "/jee/classes/units");
     await page.waitForFunction(() => navigator.serviceWorker.controller);
     const presentation = page.getByRole("region", { name: "Tochhawng lecture classroom" });
@@ -83,6 +106,13 @@ try {
     await onlineChapters.getByRole("button").nth(2).click();
     await presentationBoard.locator("p").first().filter({ hasNotText: oldTopic }).waitFor();
     if (screenshots) await presentationBoard.screenshot({ path: path.join(screenshots, "lecture-blackboard.png") });
+    const chapterDownload = page.waitForEvent("download");
+    await page.getByRole("button", { name: "Download current chapter notes" }).click();
+    const chapterFile = await chapterDownload;
+    assert.equal(chapterFile.suggestedFilename(), "jee-units-chapter-3-notes.txt");
+    const chapterText = await readFile(await chapterFile.path(), "utf8");
+    assert.match(chapterText, /3\. Convert without guessing/);
+    assert.doesNotMatch(chapterText, /^1\. /m);
     await page.evaluate(() => {
       const put = Cache.prototype.put;
       Cache.prototype.put = function (request, response) {

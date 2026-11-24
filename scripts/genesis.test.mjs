@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { searchLessons } from "../app/study-room/lesson-search.ts";
+import { resistiveCircuit } from "../app/laboratory/circuit.ts";
 import { pendulum, projectile } from "../app/laboratory/motion.ts";
 
 const lessons = [
@@ -33,4 +34,13 @@ test("small-angle pendulum has the correct period and returns to its release ang
   assert.ok(Math.abs(long.period / short.period - 2) < 1e-9);
   assert.ok(Math.abs(short.angle(short.period) - short.angle(0)) < 1e-9);
   assert.ok(Math.abs(short.angle(short.period / 4)) < 1e-9);
+});
+
+test("ideal DC networks preserve the expected voltage and current sums", () => {
+  const series = resistiveCircuit(12, 4, 8, false);
+  assert.equal(series.resistance, 12);
+  assert.equal(series.firstVoltage + series.secondVoltage, 12);
+  const parallel = resistiveCircuit(12, 6, 6, true);
+  assert.equal(parallel.resistance, 3);
+  assert.equal(parallel.firstCurrent + parallel.secondCurrent, parallel.current);
 });

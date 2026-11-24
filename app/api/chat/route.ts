@@ -185,6 +185,18 @@ export async function POST(request: Request) {
     return json({ error: "That conversation is too long. Start a new chat and try again." }, 413);
   }
 
+  let endpoint: URL;
+  try {
+    const base = (process.env.OPENAI_BASE_URL || "https://api.openai.com/v1").replace(/\/$/, "");
+    endpoint = new URL(`${base}/responses`);
+    const loopback = endpoint.protocol === "http:" && ["127.0.0.1", "localhost", "[::1]"].includes(endpoint.hostname);
+    if (endpoint.href !== "https://api.openai.com/v1/responses" && !loopback) {
+      return offlineReply(prompt, options);
+    }
+  } catch {
+    return offlineReply(prompt, options);
+  }
+
   let reservation: Awaited<ReturnType<typeof reserveTeachingRequest>>;
   try {
     reservation = await reserveTeachingRequest(request);
@@ -204,12 +216,6 @@ export async function POST(request: Request) {
   }
 
   try {
-    const base = (process.env.OPENAI_BASE_URL || "https://api.openai.com/v1").replace(/\/$/, "");
-    const endpoint = new URL(`${base}/responses`);
-    const loopback = endpoint.protocol === "http:" && ["127.0.0.1", "localhost", "[::1]"].includes(endpoint.hostname);
-    if (endpoint.href !== "https://api.openai.com/v1/responses" && !loopback) {
-      return offlineReply(prompt, options);
-    }
     const response = await fetch(endpoint, {
       method: "POST",
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
