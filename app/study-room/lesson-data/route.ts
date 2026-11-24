@@ -1,5 +1,7 @@
 import { getMizoTranslation } from "../../data/mizo-translations";
 import { reviewedQuestions, sources, topics } from "../../data/reviewed-content";
+import { lectures } from "../../jee/classes/lessons";
+import { cellLesson } from "../../neet/classes/cell-lesson";
 import type { ReviewedLesson } from "../reviewed-classroom";
 
 export const dynamic = "force-static";
@@ -15,6 +17,12 @@ const selection = {
   "money-functions": "economics", "acids-bases-ph": "science", "mizoram-geography-culture": "mizoram",
 } as const;
 
+const recordedCompanions = {
+  physics: lectures.find(item => item.id === "newtons-laws"),
+  chemistry: lectures.find(item => item.id === "atomic-structure"),
+  biology: cellLesson,
+};
+
 export function GET() {
   const lessons: ReviewedLesson[] = Object.entries(selection).map(([id, subject]) => {
     const topic = topics.find(item => item.id === id);
@@ -25,7 +33,10 @@ export function GET() {
       return { prompt, choices, answer, explanation,
         mizo: mizo && { prompt: mizo.question, choices: mizo.options, explanation: mizo.explanation } };
     });
-    return { id, subject, label: topic.subject, title: topic.title, notes: topic.notes, pitfall: topic.pitfall, source: sources[topic.sourceId], quiz };
+    const recording = Object.hasOwn(recordedCompanions, id) ? recordedCompanions[id as keyof typeof recordedCompanions] : undefined;
+    const companion = recording && { title: recording.title, audio: recording.audio, captions: recording.subtitles,
+      href: id === "biology" ? "/neet/classes/cell-unit-life" : `/jee/classes/${recording.id}` };
+    return { id, subject, companion, label: topic.subject, title: topic.title, notes: topic.notes, pitfall: topic.pitfall, source: sources[topic.sourceId], quiz };
   });
   return Response.json(lessons);
 }

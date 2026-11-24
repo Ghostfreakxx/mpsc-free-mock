@@ -64,8 +64,41 @@ try {
     await room.getByRole("status").getByText(/Correct/).waitFor();
     assert.equal(classroomRequests, 0);
     await context.setOffline(false);
+    await room.getByLabel("Teaching mode").selectOption("explain");
+    await room.getByLabel("Subject and topic").selectOption({ label: "Physics · Net force and acceleration" });
+    await room.getByRole("button", { name: "Open related recording" }).click();
+    const companion = room.getByLabel("Related class narration");
+    await companion.evaluate(item => item.load());
+    await page.waitForFunction(() => Array.from(document.querySelectorAll("audio")).some(item =>
+      item.getAttribute("aria-label") === "Related class narration" && item.readyState >= 1));
     await page.goto(base + "/jee/classes/units");
     await page.waitForFunction(() => navigator.serviceWorker.controller);
+    const presentation = page.getByRole("region", { name: "Tochhawng lecture classroom" });
+    await presentation.getByRole("button", { name: "Show Zorami’s classroom" }).click();
+    const presentationBoard = presentation.getByRole("region", { name: "Lecture blackboard" });
+    await presentationBoard.getByText("Tochhawng Zorami · Reviewed course material").waitFor();
+    const onlineChapters = page.getByRole("complementary", { name: "Class chapters" });
+    const oldTopic = await presentationBoard.locator("p").first().textContent();
+    await page.waitForFunction(() => document.querySelector("audio")?.readyState >= 1);
+    await onlineChapters.getByRole("button").nth(2).click();
+    await presentationBoard.locator("p").first().filter({ hasNotText: oldTopic }).waitFor();
+    if (screenshots) await presentationBoard.screenshot({ path: path.join(screenshots, "lecture-blackboard.png") });
+    await page.evaluate(() => {
+      const put = Cache.prototype.put;
+      Cache.prototype.put = function (request, response) {
+        if (typeof request === "string" && request.endsWith(".mp3")) {
+          return Promise.reject(new DOMException("Storage quota exceeded.", "QuotaExceededError"));
+        }
+        return put.call(this, request, response);
+      };
+    });
+    const download = page.getByRole("region", { name: "Offline lesson download" });
+    await download.getByRole("button", { name: "Save lesson for offline use" }).click();
+    await download.getByRole("status").getByText("Storage quota exceeded.").waitFor();
+    const partialPacks = await page.evaluate(async () =>
+      (await caches.keys()).filter(name => name.startsWith("mpsc-free-mock-lesson-v1-")));
+    assert.deepEqual(partialPacks, []);
+    await page.reload();
     await page.getByRole("button", { name: "Save lesson for offline use" }).click();
     await page.getByRole("status").getByText("Lesson saved on this device.").waitFor({ timeout: 90_000 });
     const audio = page.getByLabel("Class narration");
@@ -94,7 +127,7 @@ try {
     await context.close();
   }
 
-  console.log("Genesis checks passed: three viewport sizes, both themes, classroom offline reload, offline lecture reload, partial audio, playback, seek, captions and removal.");
+  console.log("Genesis checks passed: three viewport sizes, both themes, classroom offline reload, synchronized lecture blackboard, offline lecture reload, partial audio, playback, seek, captions and removal.");
 } finally {
   await browser.close();
 }

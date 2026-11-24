@@ -191,6 +191,7 @@ try {
   const speed = page.getByRole('slider', { name: 'Launch speed' });
   await speed.press('End');
   check(await speed.inputValue() === '35', 'projectile speed is not keyboard adjustable');
+  check(await speed.getAttribute('aria-valuetext') === '35 m/s', 'projectile speed does not announce its unit');
   await page.getByRole('button', { name: 'Reset experiment' }).click();
   check(await speed.inputValue() === '18', 'experiment reset did not restore launch speed');
   await page.getByLabel('Physics experiment').selectOption('pendulum');

@@ -76,8 +76,8 @@ export default function Laboratory() {
 
   function slider(key: keyof Controls, label: string, min: number, max: number, step: number, unit: string) {
     return <label className={styles.labSlider}>
-      {label} <output>{controls[key]} {unit}</output>
-      <input aria-label={label} type="range" min={min} max={max} step={step} value={controls[key]}
+      {label} <output aria-hidden="true">{controls[key]} {unit}</output>
+      <input aria-label={label} aria-valuetext={`${controls[key]} ${unit}`} type="range" min={min} max={max} step={step} value={controls[key]}
         onChange={event => { setControls({ ...controls, [key]: Number(event.target.value) }); rewind(); }} />
     </label>;
   }
@@ -133,8 +133,8 @@ export default function Laboratory() {
         ? `Range: ${flight.range.toFixed(2)} m · Peak height: ${flight.apex.toFixed(2)} m · Flight time: ${duration.toFixed(2)} s`
         : `Period: ${duration.toFixed(2)} s · Current angular displacement: ${(angle * 180 / Math.PI).toFixed(1)}°`}</p>
       <label className={styles.labSlider}>
-        Experiment time <output>{time.toFixed(2)} s</output>
-        <input aria-label="Experiment time" type="range" min="0" max={duration} step="any" value={time}
+        Experiment time <output aria-hidden="true">{time.toFixed(2)} s</output>
+        <input aria-label="Experiment time" aria-valuetext={`${time.toFixed(2)} seconds`} type="range" min="0" max={duration} step="any" value={time}
           onChange={event => { setRunning(false); setElapsed(Number(event.target.value)); }} />
       </label>
       <div className={styles.roomActions}>

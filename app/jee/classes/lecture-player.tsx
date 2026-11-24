@@ -7,6 +7,7 @@ import { ArrowLeft, ArrowRight, Captions, Download, RotateCcw } from "lucide-rea
 import type { Lecture } from "./lessons";
 import PracticeQuiz from "./practice-quiz";
 import OfflineLesson from "./offline-lesson";
+import LectureClassroom from "./lecture-classroom";
 import styles from "./lecture.module.css";
 
 // Each class shows only its own diagram, so load diagrams on demand instead of bundling all of them into every class page.
@@ -127,7 +128,9 @@ export type PlayerLecture = Omit<Lecture, "subject"> & { subject?: Lecture["subj
 
 export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: PlayerLecture; exam?: "JEE" | "NEET" }) {
   const { timings, progressKey } = lesson;
-  const chapterStarts = lesson.segments.map((_, index) => timings.chapters?.[index]?.start ?? timings.cues.find(cue => cue.chapter === index)!.start);
+  const chapterStarts = lesson.segments.map((_, index) => timings.chapters?.[index]?.start ?? timings.cues.find(cue => cue.chapter === index)?.start);
+  const synchronized = chapterStarts.every(start => start !== undefined);
+  const [manualChapter, setManualChapter] = useState(0);
   const audio = useRef<HTMLAudioElement>(null);
   const [time, setTime] = useState(0);
   const [speed, setSpeed] = useState(1);
@@ -136,7 +139,7 @@ export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: Player
   const lastSaved = useRef(-1);
   const restored = useRef(false);
   const cue = timings.cues.find(item => time >= item.start && time < item.end);
-  const chapterIndex = Math.max(0, chapterStarts.findLastIndex(start => time >= start));
+  const chapterIndex = synchronized ? Math.max(0, chapterStarts.findLastIndex(start => start !== undefined && time >= start)) : manualChapter;
   const chapter = lesson.segments[chapterIndex];
 
   useEffect(() => {
@@ -170,6 +173,12 @@ export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: Player
     setTime(audio.current.currentTime);
   }
 
+  function selectChapter(index: number) {
+    const start = chapterStarts[index];
+    if (synchronized && start !== undefined) seek(start + 0.05);
+    else setManualChapter(index);
+  }
+
   function downloadTranscript() {
     const text = `${lesson.title}\nEnglish narration · American English · Marin · AI-generated voice\n\n` + lesson.segments.map((segment, index) =>
       `${index + 1}. ${segment.title}\n${segment.formula}\n${segment.steps.join("\n")}\n\n${segment.english}\n${segment.note ? `Clarification: ${segment.note}\n` : ""}`
@@ -195,7 +204,7 @@ export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: Player
     {lesson.reuse && <section className={styles.notes} aria-label="NEET shared-class guidance">
       <h2>{lesson.reuse.unitTitle}</h2><p>Shared JEE recording with NEET navigation and separate saved progress. Original narration and questions can include supporting extensions.</p>
       <Link href={lesson.reuse.mapHref} prefetch={false}>Return to the NEET unit map →</Link>
-      <details><summary>NEET focus chapters</summary><ol>{lesson.reuse.focus.map(c=><li key={c.number} value={c.number}><button onClick={()=>seek(chapterStarts[c.number-1]+0.05)}>{c.title}</button></li>)}</ol></details>
+      <details><summary>NEET focus chapters</summary><ol>{lesson.reuse.focus.map(c=><li key={c.number} value={c.number}><button onClick={()=>selectChapter(c.number - 1)}>{c.title}</button></li>)}</ol></details>
       <p>{lesson.reuse.review}</p><p>{lesson.reuse.extra}</p>
     </section>}
     <div className={styles.layout}>
@@ -353,18 +362,21 @@ export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: Player
           <label>Speed <select aria-label="Playback speed" value={speed} onChange={event => {
             const value = Number(event.target.value); setSpeed(value); if (audio.current) audio.current.playbackRate = value;
           }}>{[0.75, 1, 1.25, 1.5].map(value => <option key={value} value={value}>{value}×</option>)}</select></label>
-          <button disabled={chapterIndex === lesson.segments.length - 1} onClick={() => seek(chapterStarts[chapterIndex + 1] + 0.05)}>Next chapter <ArrowRight size={17} /></button>
+          <button disabled={chapterIndex === lesson.segments.length - 1} onClick={() => selectChapter(chapterIndex + 1)}>Next chapter <ArrowRight size={17} /></button>
         </div>
       </section>
       <aside className={styles.outline} aria-label="Class chapters">
         <h2>Class chapters</h2>
+        {!synchronized && <p>Use the chapter buttons to follow the lesson manually.</p>}
         <ol>{lesson.segments.map((segment, index) => <li key={segment.title}>
-          <button aria-current={chapterIndex === index ? "step" : undefined} onClick={() => seek(chapterStarts[index] + 0.05)}>
-            <span>{String(index + 1).padStart(2, "0")}</span><strong>{segment.title}</strong><time>{formatTime(chapterStarts[index])}</time>
+          <button aria-current={chapterIndex === index ? "step" : undefined} onClick={() => selectChapter(index)}>
+            <span>{String(index + 1).padStart(2, "0")}</span><strong>{segment.title}</strong>{synchronized && <time>{formatTime(chapterStarts[index] ?? 0)}</time>}
           </button>
         </li>)}</ol>
       </aside>
     </div>
+    <LectureClassroom subject={lesson.subject === "Mathematics" ? "mathematics" : "science"}
+      topic={chapter.title} text={(synchronized && cue?.text) || chapter.formula} />
     <OfflineLesson key={lesson.id} audio={lesson.audio} captions={lesson.subtitles} />
     <section className={styles.notes}>
       <div className={styles.sectionHeading}><h2>Class notes & transcript</h2><button onClick={downloadTranscript}><Download size={17} /> Download notes</button></div>

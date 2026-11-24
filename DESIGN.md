@@ -29,3 +29,5 @@ Use upstream guidance as reference material. Review a pinned revision and its li
 - [Awesome Design.md](https://github.com/VoltAgent/awesome-design-md) is an MIT-licensed reference collection. Borrow patterns and principles while preserving the site's identity and original assets.
 - [Vercel Web Interface Guidelines](https://github.com/vercel-labs/web-interface-guidelines) guide the accessibility and interaction review.
 - [Playwright](https://github.com/microsoft/playwright) is available through the locked dev dependency. Use the existing Chromium cache. Capture desktop, tablet and mobile views with a fixed viewport and reduced motion for reproducible comparisons.
+
+Geist is bundled locally under SIL OFL 1.1. The font binary and redistribution terms are in `app/fonts/`. The classroom uses project-authored geometry and procedural materials, plus existing local imagery. No model or font CDN is used. [Geist source and license](https://github.com/google/fonts/tree/main/ofl/geist)

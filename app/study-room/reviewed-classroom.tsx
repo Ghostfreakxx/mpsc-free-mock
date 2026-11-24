@@ -16,8 +16,25 @@ export type ReviewedLesson = {
   notes: string[];
   pitfall: string;
   source: { title: string; url: string };
+  companion?: { title: string; audio: string; captions: string; href: string };
   quiz: (Question & { answer: number; mizo?: Question })[];
 };
+
+function RecordedCompanion({ companion }: { companion: NonNullable<ReviewedLesson["companion"]> }) {
+  const [open, setOpen] = useState(false);
+  return <div className={styles.roomActions}>
+    <button type="button" className={styles.reviewCheck} aria-expanded={open} onClick={() => setOpen(value => !value)}>
+      {open ? "Hide related recording" : "Open related recording"}
+    </button>
+    {open && <div className={styles.recordedCompanion}>
+      <p>{companion.title} · English narration</p>
+      <audio controls preload="none" aria-label="Related class narration" src={companion.audio}>
+        <track kind="captions" src={companion.captions} srcLang="en" label="English" default />
+      </audio>
+      <Link className={styles.primary} href={companion.href} prefetch={false}>Open full recorded class and transcript ↗</Link>
+    </div>}
+  </div>;
+}
 
 function translatedExplanations(lesson: ReviewedLesson) {
   return lesson.quiz.flatMap(item => item.mizo ? [item.mizo.explanation] : []);
@@ -184,6 +201,7 @@ export default function ReviewedClassroom() {
             publish(active, mode, displayLanguage, text);
             document.getElementById("classroom-lesson-title")?.focus();
           }}>Show on blackboard</button>
+          {active.companion && <RecordedCompanion key={active.id} companion={active.companion} />}
         </>}
         <div className={styles.roomActions}>
           <Link className={styles.primary} href="/college-notes" prefetch={false}>Browse college notes ↗</Link>

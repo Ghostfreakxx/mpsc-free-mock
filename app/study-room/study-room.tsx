@@ -25,7 +25,7 @@ class SceneBoundary extends Component<{ children: ReactNode; onFailure: () => vo
   }
 }
 
-export default function StudyRoom() {
+export default function StudyRoom({ recordedLesson }: { recordedLesson?: ClassroomLesson }) {
   const viewport = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
   const [started, setStarted] = useState(false);
@@ -36,14 +36,16 @@ export default function StudyRoom() {
   const [reducedMotion, setReducedMotion] = useState(true);
   const [pageVisible, setPageVisible] = useState(true);
   const [greeting, setGreeting] = useState(0);
-  const [lesson, setLesson] = useState<ClassroomLesson | null>(null);
+  const [interactiveLesson, setLesson] = useState<ClassroomLesson | null>(null);
   const [subtitles, setSubtitles] = useState(false);
   const [captionIndex, setCaptionIndex] = useState(0);
+  const lesson = recordedLesson ?? interactiveLesson;
+  const isRecorded = Boolean(recordedLesson);
   const captions = subtitles && lesson ? classroomCaptions(lesson.text) : [];
   const meetZorami = useCallback(() => {
     setGreeting(current => current + 1);
-    document.getElementById("reviewed-classroom")?.focus();
-  }, []);
+    document.getElementById(isRecorded ? "classroom-lesson-title" : "reviewed-classroom")?.focus();
+  }, [isRecorded]);
   const toggleBook = useCallback(() => setCloseUp((current) => !current), []);
   const markReady = useCallback(() => setReady(true), []);
   const markFailed = useCallback(() => setFailed(true), []);
@@ -66,6 +68,7 @@ export default function StudyRoom() {
   }, []);
 
   useEffect(() => {
+    if (isRecorded) return;
     function receiveLesson(event: Event) {
       if (!(event instanceof CustomEvent)) return;
       setLesson(event.detail as ClassroomLesson | null);
@@ -73,7 +76,7 @@ export default function StudyRoom() {
     }
     window.addEventListener(CLASSROOM_LESSON_EVENT, receiveLesson);
     return () => window.removeEventListener(CLASSROOM_LESSON_EVENT, receiveLesson);
-  }, []);
+  }, [isRecorded]);
 
   function startRoom() {
     if (!("WebGL2RenderingContext" in window)) {
@@ -113,12 +116,12 @@ export default function StudyRoom() {
               {ready ? (closeUp ? "Return to room view" : "Inspect the Constitution") : started ? "Loading 3D room…" : "Enter the 3D room"}
             </button>
           )}
-          {(ready || failed) && <button type="button" onClick={meetZorami}>Talk to Zorami</button>}
+          {(ready || failed) && <button type="button" onClick={meetZorami}>{recordedLesson ? "Focus lecture blackboard" : "Talk to Zorami"}</button>}
           {closeUp && ready && !failed && <span role="status">Preamble · “We, the people of India”</span>}
         </div>
       </div>
       <section className={styles.lesson} aria-labelledby="classroom-lesson-title">
-        <h2 id="classroom-lesson-title" tabIndex={-1}>Classroom notes</h2>
+        <h2 id="classroom-lesson-title" tabIndex={-1}>{recordedLesson ? "Lecture blackboard" : "Classroom notes"}</h2>
         {lesson ? (
           <div key={lesson.text} className={styles.chalkLesson}>
             <h3>{subjects[lesson.subject]} <span>· {teachingModes[lesson.mode]}</span></h3>
@@ -126,14 +129,14 @@ export default function StudyRoom() {
             <p className={styles.lessonByline}>{lesson.source === "ai" ? `${teachers[lesson.teacher].name} · AI teacher` : lesson.source === "reviewed" ? "Tochhawng Zorami · Reviewed course material" : "Offline study guidance"}</p>
             <p className={styles.lessonText} lang={lesson.language}>{lesson.text}</p>
             {lesson.source !== "reviewed" && <ReplyPlayback text={lesson.text} language={lesson.language} />}
-            <div className={styles.captionButtons}>
+            {!recordedLesson && <div className={styles.captionButtons}>
               <button type="button" aria-pressed={subtitles} onClick={() => setSubtitles(value => !value)}>Classroom subtitles</button>
               {captions.length > 1 && <>
                 <button type="button" disabled={captionIndex === 0} onClick={() => setCaptionIndex(index => index - 1)}>Previous subtitle</button>
                 <span aria-live="polite">{captionIndex + 1} / {captions.length}</span>
                 <button type="button" disabled={captionIndex === captions.length - 1} onClick={() => setCaptionIndex(index => index + 1)}>Next subtitle</button>
               </>}
-            </div>
+            </div>}
           </div>
         ) : <p>Choose Show on blackboard in a lesson to see it here.</p>}
       </section>
