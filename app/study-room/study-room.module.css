@@ -296,13 +296,16 @@
 
 .lessonChooser {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 0.3rem;
   max-width: 22rem;
   margin-block: 1rem;
   font-weight: 650;
 }
 
-.lessonChooser select, .reviewCheck {
+.lessonChooser select, .lessonChooser input, .reviewCheck {
+  min-width: 0;
+  max-width: 100%;
   padding: 0.55rem 0.7rem;
   border: 1px solid var(--room-line);
   border-radius: 0.35rem;
@@ -323,6 +326,7 @@
 .reviewedBoard h3 { font-size: 1.45rem; font-weight: 700; }
 .reviewedBoard > p { margin-block: 0.45rem; }
 .reviewedBoard > a { color: var(--room-accent); text-decoration: underline; }
+.revisionPoints { list-style: decimal; padding-inline-start: 1.5rem; margin-block: 0.75rem; }
 .reviewQuiz { min-width: 0; margin-block: 1.1rem 0.6rem; }
 .reviewQuiz legend { max-width: 100%; font-weight: 700; }
 .reviewQuiz label { display: flex; gap: 0.55rem; align-items: baseline; padding-block: 0.28rem; }
@@ -422,3 +426,19 @@
 /* dark-theme:generated:start (edit the light rules, then run node scripts/dark-theme.mjs) */
 :global(html[data-theme="dark"]) .motto, :global(html[data-theme="dark"]) .resources { border-top: 1px solid #5c4936; }
 /* dark-theme:generated:end */
+
+.labTitle { font-size: clamp(1.8rem, 4vw, 3rem); margin-block-end: 1.25rem; }
+.labControls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+  gap: 1rem;
+  margin-block: 1rem;
+}
+.labSlider { display: grid; gap: 0.2rem; font-weight: 650; }
+.labSlider output { font-weight: 400; }
+.labSlider input { width: 100%; min-height: 1.75rem; accent-color: var(--room-accent); }
+.labDiagram { display: block; width: 100%; border: 1px solid var(--room-line); }
+.labDiagram text { fill: currentColor; font: 14px Geist, system-ui, sans-serif; }
+.labAxis { fill: none; stroke: currentColor; stroke-width: 2; }
+.labStroke { fill: none; stroke: var(--room-accent); stroke-width: 4; }
+.labDot { fill: var(--room-accent); stroke: var(--room-card); stroke-width: 2; }

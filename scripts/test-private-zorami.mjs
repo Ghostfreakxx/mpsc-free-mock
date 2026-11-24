@@ -93,7 +93,7 @@ try {
 
   await page.goto(new URL("/study-room", origin).href);
   await page.getByRole("button", { name: "Enter the 3D room" }).click();
-  await page.getByRole("button", { name: "Talk to Zorami" }).press("Enter");
+  await page.getByRole("button", { name: "Open MPSC study assistant" }).press("Enter");
   const dialog = page.getByRole("dialog", { name: "Tochhawng Teachers" });
   await dialog.getByLabel("Subject", { exact: true }).selectOption("political-science");
   await dialog.getByLabel("Teaching mode").selectOption("explain");
@@ -113,7 +113,7 @@ try {
   await board.getByRole("heading", { name: "Political Science · Explain" }).waitFor();
   await board.getByText(reply, { exact: true }).waitFor();
   const course = page.getByRole("region", { name: "Reviewed classroom lessons" });
-  await course.getByLabel("Subject", { exact: true }).selectOption({ label: "Political Science" });
+  await course.getByLabel("Teaching mode").selectOption("quiz");
   await course.getByRole("radio", { name: "Every person" }).check();
   await course.getByRole("button", { name: "Check answer" }).click();
   await course.getByRole("status").filter({ hasText: "Correct." }).waitFor();

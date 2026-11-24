@@ -55,6 +55,7 @@ export default function Zorami({ active, reducedMotion, greeting, lesson, onSele
   const body = useRef<Group>(null);
   const head = useRef<Group>(null);
   const gaze = useRef<Group>(null);
+  const brows = useRef<Group>(null);
   const arm = useRef<Group>(null);
   const forearm = useRef<Group>(null);
   const gestureAt = useRef(0);
@@ -97,6 +98,7 @@ export default function Zorami({ active, reducedMotion, greeting, lesson, onSele
     gaze.current.position.x += (look - gaze.current.position.x) * ease;
     gaze.current.position.y = reducedMotion ? 0 : Math.sin(time * 0.87) * 0.003 + pointer.y * 0.006;
     gaze.current.scale.y = 1 - 0.94 * Math.exp(-(((blink - 4.68) / 0.065) ** 2));
+    if (brows.current) brows.current.position.y = gesture * 0.010 + point * 0.005;
     arm.current.rotation.x = -0.17 - gesture * 0.95 - point * 0.42;
     arm.current.rotation.z = 0.21 - point * 1.03 + gesture * (0.38 + Math.sin(phase * 18) * 0.12);
     forearm.current.rotation.x = -0.08 - gesture * 0.75 - point * 0.28;
@@ -133,8 +135,22 @@ export default function Zorami({ active, reducedMotion, greeting, lesson, onSele
           <Form at={[0, -0.014, 0.041]} size={[0.226, 0.258, 0.184]} color={skin} />
           <Form at={[-0.092, 0.177, 0.109]} size={[0.165, 0.106, 0.139]} color={hair} />
           <Form at={[0.097, 0.182, 0.086]} size={[0.142, 0.104, 0.142]} color={hair} />
+          {[-1, 1].map(side => <group key={side}>
+            <Form at={[side * 0.218, -0.026, 0.022]} size={[0.031, 0.054, 0.026]} color={skin} />
+            <Form at={[side * 0.224, -0.036, 0.043]} size={[0.014, 0.025, 0.008]} color="#9b614d" />
+            <mesh position={[side * 0.171, 0.028, 0.160]} rotation-y={side * 0.59}>
+              <boxGeometry args={[0.011, 0.012, 0.154]} />
+              <meshStandardMaterial color="#302228" roughness={0.38} />
+            </mesh>
+          </group>)}
+          <group ref={brows}>
+            {eyes.map(x => <group key={x} rotation-z={x * 1.35}>
+              <Form at={[x, 0.069, 0.210]} size={[0.039, 0.006, 0.008]} color={hair} />
+            </group>)}
+          </group>
           <Form at={[0, -0.045, 0.217]} size={[0.037, 0.058, 0.039]} color={skin} />
-          <Form at={[0, -0.128, 0.201]} size={[0.056, 0.011, 0.012]} color="#793c44" />
+          <Form at={[0, -0.126, 0.201]} size={[0.049, 0.007, 0.012]} color="#793c44" />
+          <Form at={[0, -0.136, 0.199]} size={[0.036, 0.008, 0.010]} color="#a45959" />
           <group ref={gaze}>
             {eyes.map(x => <group key={x} position={[x, 0, 0]}>
               <Form at={[0, 0.019, 0.211]} size={[0.038, 0.019, 0.017]} color="#f5e6d0" />

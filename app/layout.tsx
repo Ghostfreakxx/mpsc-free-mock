@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import "./theme-dark.css";
 import { themeInitScript } from "./theme";
@@ -8,9 +8,11 @@ import ServiceWorkerRegister from "./service-worker-register";
 import ChatLauncher from "./chat-launcher";
 import InstallBanner from "./install-banner";
 
-const geistSans = Geist({
+const geistSans = localFont({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
+  src: "./fonts/Geist-Variable.ttf",
+  weight: "100 900",
+  display: "swap",
 });
 
 export const metadata: Metadata = {

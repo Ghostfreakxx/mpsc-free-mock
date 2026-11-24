@@ -9,7 +9,7 @@ export type ClassroomLesson = {
   mode: TeachingOptions["mode"];
   topic: string;
   text: string;
-  source: "ai" | "offline";
+  source: "ai" | "offline" | "reviewed";
 };
 
 // Captions are derived from the exact displayed text. A future audio provider can

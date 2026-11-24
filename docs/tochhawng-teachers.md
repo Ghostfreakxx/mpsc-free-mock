@@ -1,5 +1,13 @@
 # Tochhawng Teachers
 
+## Offline Zorami classroom
+
+In `/study-room`, select Zorami or use **Talk to Zorami** to open the offline classroom. Explain and Quick Revision use the existing reviewed notes, Ask Questions retrieves a related lesson or reports that none matched, and Quiz Me checks answers from the existing bank. The blackboard and subtitles use the same lesson text. Mizo uses the existing draft translations where available and marks English fallback.
+
+The classroom downloads a small first-party lesson pack and can continue without connectivity after loading. The service worker caches the pack for return visits when available. The classroom uses no OpenAI, Redis, voice, or student sign-in. Keep both paid mode flags off. The following private infrastructure remains separate from the classroom.
+
+## Existing private API
+
 The existing `/api/chat` route uses the OpenAI Responses API and the server's `OPENAI_API_KEY`. The existing `OPENAI_API_KEY1` alias still takes precedence when both are present. The teacher uses GPT-6 Luna with up to 450 output tokens per turn and provider storage disabled. Keep these credentials outside the repository and browser bundles.
 
 Run `node --experimental-strip-types scripts/verify-teaching-env.mjs` with the intended private server environment. The preflight reads account model metadata and available Redis totals. It emits status only and generates no tokens. A successful metadata read verifies visibility, while a separately approved private text request verifies generation and reported token accounting. Public AI access stays disabled.
@@ -20,11 +28,11 @@ The client presents the latest reply as a `ClassroomLesson` with teacher ID, lan
 
 `createPrivateVoiceAdapter` is a server-only integration point. It is disconnected from public routes and providers. A future provider needs explicit approval, its own validated private request route, separate atomic voice quotas, and a verified model and voice. Keep `TOCHHAWNG_PAID_VOICE_MODE=off`. A future audio track can use its playhead as the clock for timestamped captions and mouth-pose cues. Any future speech recognition requires a separate explicit microphone action.
 
-In `/study-room`, select Zorami or use the **Talk to Zorami** button to open the same conversation with her selected. The 3D character has a stylized woven wrap modeled on the broad red band and motifs documented by the Mizoram Art and Culture Department. Reduced-motion preferences keep the character still. [Mizo Puanchei documentation](https://mizoculture.mizoram.gov.in/page/mizo-puanchei-gi-583)
+The 3D character has a stylized woven wrap modeled on the broad red band and motifs documented by the Mizoram Art and Culture Department. Reduced-motion preferences keep the character still. [Mizo Puanchei documentation](https://mizoculture.mizoram.gov.in/page/mizo-puanchei-gi-583)
 
 The server adds up to two matching reviewed topic notes and their source titles to the teaching context. Selecting a subject restricts this lookup to that subject or its courses. When the repository has no matching notes, the teacher uses the existing uncertainty guidance.
 
-The classroom also provides source-checked English lessons and quizzes that run without WebGL or an API key. English Explain and Quick Revision requests can return matching reviewed notes through the existing chat route while paid AI is off. The chat and board label these replies as offline guidance, and the reply identifies the reviewed sources. The existing Mizo practice route remains available for bilingual study.
+In the separate study assistant, English Explain and Quick Revision requests can return matching reviewed notes through the existing chat route while paid AI is off. The chat and board label these replies as offline guidance, and the reply identifies the reviewed sources. The existing Mizo practice route remains available for bilingual study.
 
 ## Character portraits
 

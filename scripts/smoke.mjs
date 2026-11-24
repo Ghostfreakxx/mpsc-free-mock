@@ -6,7 +6,7 @@ import { chromium } from 'playwright';
 const base = process.env.SMOKE_URL || 'http://localhost:3000';
 const pages = ['/neet/mock-test', '/neet/classes/biology-practice', '/neet/classes/physics-chemistry/practice', '/', '/mock-test', '/mizo', '/neet', '/neet/classes', '/neet/classes/cell-unit-life', '/neet/classes/biomolecules', '/neet/classes/cell-cycle-division', '/neet/classes/diversity-living-world', '/neet/classes/structural-organisation', '/neet/classes/plant-physiology', '/neet/classes/human-physiology', '/neet/classes/reproduction', '/neet/classes/genetics-evolution', '/neet/classes/human-welfare', '/neet/classes/biotechnology', '/neet/classes/ecology', '/neet/classes/physics-vectors', '/neet/classes/chemistry-closeout', '/neet/classes/physics-chemistry/review', '/neet/classes/physics-chemistry', '/neet/classes/physics-chemistry/physics', '/neet/classes/physics-chemistry/chemistry', '/jee', '/cuet-pg', '/nursing', '/college-notes', '/downloads', '/exam-simulator', '/law/mjs', '/trading', '/trading/learn', '/terms', '/jee/classes', '/jee/classes/units', '/jee/classes/measurements'];
 const sharedMap = JSON.parse((await import('node:fs')).readFileSync(new URL('../app/data/neet-physics-chemistry-map.json', import.meta.url), 'utf8'));
-pages.push('/study-room');
+pages.push('/study-room', '/laboratory');
 pages.push(...sharedMap.recordings.map(r => '/neet/classes/shared/' + r.id));
 const failures = [];
 const check = (condition, message) => { if (!condition) failures.push(message); };
@@ -48,6 +48,7 @@ for (const agent of ['Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google
 }
 check((await get('/question-bank/mpsc', { 'sec-fetch-site': 'cross-site' })).status === 403, 'another website could load the question bank');
 check((await get('/question-bank/mpsc', { 'sec-fetch-site': 'same-origin' })).status === 200, 'the site could not load its own question bank');
+check((await get('/study-room/lesson-data', { 'sec-fetch-site': 'cross-site' })).status === 403, 'another website could load the classroom pack');
 const robots = await fetch(`${base}/robots.txt`);
 check(robots.status === 200 && /User-Agent: GPTBot/i.test(await robots.text()), 'robots.txt does not turn away AI crawlers');
 check((await get('/terms')).status === 200, 'terms page is missing');
@@ -91,7 +92,7 @@ try {
     await route.fulfill({ json: { reply: 'RAM hi eng atan nge hman a nih?', mode: 'ai', teacher: 'lalthan' } });
   };
   await page.route('**/api/chat', teacherChat);
-  await page.getByRole('button', { name: 'Study with Tochhawng Teachers' }).click();
+  await page.getByRole('button', { name: 'Open MPSC study assistant' }).click();
   const dialog = page.getByRole('dialog', { name: 'Tochhawng Teachers' });
   await dialog.getByAltText('Illustrated avatar of Zorami wearing spectacles').waitFor();
   await dialog.getByLabel('AI teacher', { exact: true }).selectOption('lalthan');
@@ -135,35 +136,67 @@ try {
   await lesson.getByRole('button', { name: 'Classroom subtitles' }).click();
   check(await viewer.getByText('RAM hi eng atan nge hman a nih?').count() === 0, 'classroom subtitles did not turn off');
   await page.unroute('**/api/chat', teacherChat);
+  await page.getByRole('link', { name: 'Study with Zorami' }).press('Enter');
   const reviewed = page.getByRole('region', { name: 'Reviewed classroom lessons' });
-  await reviewed.getByLabel('Subject', { exact: true }).selectOption({ label: 'Geography' });
-  check(await reviewed.getByRole('heading', { name: 'Latitude and location' }).count() === 1, 'reviewed subject did not load its lesson');
+  const topics = reviewed.getByLabel('Subject and topic');
+  const modes = reviewed.getByLabel('Teaching mode');
+  await topics.selectOption({ label: 'Geography · Latitude and location' });
+  await reviewed.getByRole('button', { name: 'Show on blackboard' }).click();
+  await lesson.getByRole('heading', { name: 'Geography · Explain' }).waitFor();
+  await modes.selectOption('revision');
+  check(await reviewed.locator('ol li').count() >= 2, 'quick revision did not show reviewed points');
+  await modes.selectOption('questions');
+  const question = reviewed.getByLabel('Ask Zorami a question');
+  await reviewed.getByLabel('Search subject').selectOption('Geography');
+  await question.fill('What is latiutde?');
+  await reviewed.getByRole('button', { name: 'Find a reviewed lesson' }).click();
+  await reviewed.getByRole('status').getByText('Related lesson: Latitude and location').waitFor();
+  await lesson.getByRole('heading', { name: 'Geography · Ask Questions' }).waitFor();
+  await question.fill('Quantum chromodynamics');
+  await reviewed.getByRole('button', { name: 'Find a reviewed lesson' }).click();
+  await reviewed.getByRole('status').getByText(/No close match/).waitFor();
+  await modes.selectOption('quiz');
+  await reviewed.getByLabel('Lesson language').selectOption('lus');
+  await reviewed.getByText('Mizo translation draft.').waitFor();
   await reviewed.getByRole('radio').first().check();
   await reviewed.getByRole('button', { name: 'Check answer' }).click();
   await reviewed.getByRole('status').waitFor();
-  await reviewed.getByRole('button', { name: 'Ask Zorami about Geography' }).click();
-  check(await dialog.getByLabel('Subject', { exact: true }).inputValue() === 'geography', 'classroom lesson did not open its subject in chat');
-  await dialog.getByLabel('Teaching mode').selectOption('explain');
-  await dialog.getByLabel('Reply language').selectOption('en');
-  await dialog.getByLabel('Message the AI teacher').fill('Latitude and location');
-  await dialog.getByRole('button', { name: 'Send message' }).click();
-  await dialog.getByText(/Reviewed course notes/).waitFor();
-  await dialog.getByRole('button', { name: 'Close study assistant' }).click();
-  const fallback = await browser.newPage({ viewport: { width: 360, height: 780 } });
+  await reviewed.getByRole('button', { name: 'Next question' }).click();
+  await reviewed.getByText('Question 2 of 3').waitFor();
+
+  const fallback = await browser.newPage({ viewport: { width: 360, height: 780 }, reducedMotion: 'reduce' });
   try {
     await fallback.addInitScript(() => { Reflect.deleteProperty(window, 'WebGL2RenderingContext'); });
     await fallback.goto(base + '/study-room');
     await fallback.getByRole('button', { name: 'Enter the 3D room' }).click();
     await fallback.getByText('The 3D view is unavailable on this device.').waitFor();
-    await fallback.getByRole('button', { name: 'Talk to Zorami' }).click();
-    const fallbackDialog = fallback.getByRole('dialog', { name: 'Tochhawng Teachers' });
-    check(await fallbackDialog.getByLabel('AI teacher', { exact: true }).inputValue() === 'zorami', 'no-WebGL fallback lost Zorami');
-    await fallbackDialog.getByRole('button', { name: 'Close study assistant' }).click();
+    await fallback.getByRole('button', { name: 'Talk to Zorami' }).press('Enter');
+    check(await fallback.locator(':focus').getAttribute('id') === 'reviewed-classroom', 'no-WebGL fallback did not focus the offline classroom');
+    check(await fallback.getByRole('dialog').count() === 0, 'offline Zorami opened the AI chat');
+    const course = fallback.getByRole('region', { name: 'Reviewed classroom lessons' });
+    await course.getByRole('heading', { name: 'Rights and constitutional remedies' }).waitFor();
+    await fallback.context().setOffline(true);
+    await course.getByLabel('Teaching mode').selectOption('quiz');
+    await course.getByRole('radio', { name: 'Every person' }).check();
+    await course.getByRole('button', { name: 'Check answer' }).click();
+    await course.getByRole('status').getByText(/Correct\./).waitFor();
+    await fallback.context().setOffline(false);
     await fallback.getByRole('link', { name: 'Mock tests', exact: true }).click();
     await fallback.waitForURL('**/mock-test');
   } finally {
     await fallback.close();
   }
+
+  await page.goto(base + '/laboratory');
+  const speed = page.getByRole('slider', { name: 'Launch speed' });
+  await speed.press('End');
+  check(await speed.inputValue() === '35', 'projectile speed is not keyboard adjustable');
+  await page.getByRole('button', { name: 'Reset experiment' }).click();
+  check(await speed.inputValue() === '18', 'experiment reset did not restore launch speed');
+  await page.getByLabel('Physics experiment').selectOption('pendulum');
+  await page.getByText(/Period: /).waitFor();
+  await page.getByRole('radio', { name: 'It doubles.' }).check();
+  await page.getByRole('status').getByText(/Correct/).waitFor();
 
   // 4. A practice answer and a short simulator paper work end to end.
   await page.goto(`${base}/mock-test`);

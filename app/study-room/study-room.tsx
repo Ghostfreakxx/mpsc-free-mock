@@ -40,11 +40,9 @@ export default function StudyRoom() {
   const [subtitles, setSubtitles] = useState(false);
   const [captionIndex, setCaptionIndex] = useState(0);
   const captions = subtitles && lesson ? classroomCaptions(lesson.text) : [];
-  const teacherButton = useRef<HTMLButtonElement>(null);
   const meetZorami = useCallback(() => {
     setGreeting(current => current + 1);
-    teacherButton.current?.focus({ preventScroll: true });
-    window.dispatchEvent(new CustomEvent("mpsc-open-assistant", { detail: "zorami" }));
+    document.getElementById("reviewed-classroom")?.focus();
   }, []);
   const toggleBook = useCallback(() => setCloseUp((current) => !current), []);
   const markReady = useCallback(() => setReady(true), []);
@@ -115,19 +113,19 @@ export default function StudyRoom() {
               {ready ? (closeUp ? "Return to room view" : "Inspect the Constitution") : started ? "Loading 3D room…" : "Enter the 3D room"}
             </button>
           )}
-          {(ready || failed) && <button ref={teacherButton} type="button" onClick={meetZorami}>Talk to Zorami</button>}
+          {(ready || failed) && <button type="button" onClick={meetZorami}>Talk to Zorami</button>}
           {closeUp && ready && !failed && <span role="status">Preamble · “We, the people of India”</span>}
         </div>
       </div>
       <section className={styles.lesson} aria-labelledby="classroom-lesson-title">
-        <h2 id="classroom-lesson-title">Classroom notes</h2>
+        <h2 id="classroom-lesson-title" tabIndex={-1}>Classroom notes</h2>
         {lesson ? (
           <div key={lesson.text} className={styles.chalkLesson}>
             <h3>{subjects[lesson.subject]} <span>· {teachingModes[lesson.mode]}</span></h3>
             <p className={styles.lessonTopic}>{lesson.topic}</p>
-            <p className={styles.lessonByline}>{lesson.source === "ai" ? `${teachers[lesson.teacher].name} · AI teacher` : "Offline study guidance"}</p>
+            <p className={styles.lessonByline}>{lesson.source === "ai" ? `${teachers[lesson.teacher].name} · AI teacher` : lesson.source === "reviewed" ? "Tochhawng Zorami · Reviewed course material" : "Offline study guidance"}</p>
             <p className={styles.lessonText} lang={lesson.language}>{lesson.text}</p>
-            <ReplyPlayback text={lesson.text} language={lesson.language} />
+            {lesson.source !== "reviewed" && <ReplyPlayback text={lesson.text} language={lesson.language} />}
             <div className={styles.captionButtons}>
               <button type="button" aria-pressed={subtitles} onClick={() => setSubtitles(value => !value)}>Classroom subtitles</button>
               {captions.length > 1 && <>
@@ -137,7 +135,7 @@ export default function StudyRoom() {
               </>}
             </div>
           </div>
-        ) : <p>Ask a teacher to see the latest explanation here.</p>}
+        ) : <p>Choose Show on blackboard in a lesson to see it here.</p>}
       </section>
     </div>
   );

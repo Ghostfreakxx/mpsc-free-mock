@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Captions, Download, RotateCcw } from "lucide-react";
 import type { Lecture } from "./lessons";
 import PracticeQuiz from "./practice-quiz";
+import OfflineLesson from "./offline-lesson";
 import styles from "./lecture.module.css";
 
 // Each class shows only its own diagram, so load diagrams on demand instead of bundling all of them into every class page.
@@ -364,6 +365,7 @@ export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: Player
         </li>)}</ol>
       </aside>
     </div>
+    <OfflineLesson key={lesson.id} audio={lesson.audio} captions={lesson.subtitles} />
     <section className={styles.notes}>
       <div className={styles.sectionHeading}><h2>Class notes & transcript</h2><button onClick={downloadTranscript}><Download size={17} /> Download notes</button></div>
       <p>{lesson.scope}</p>
