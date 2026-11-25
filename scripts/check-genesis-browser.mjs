@@ -71,6 +71,9 @@ try {
       await cell.getByLabel("Cell model").selectOption("plant");
       await cell.getByRole("button", { name: "Chloroplast", exact: true }).click();
       await cell.getByRole("status").getByText(/Captures light energy/).waitFor();
+      await cell.getByRole("button", { name: "Central vacuole", exact: true }).click();
+      await cell.getByRole("status").getByText(/Stores water and solutes/).waitFor();
+      if (screenshots && width === 360) await cell.screenshot({ path: path.join(screenshots, "plant-cell-360.png") });
       const molecules = advancedLab("Chemistry · Molecular geometry");
       await molecules.getByLabel("Molecule", { exact: true }).selectOption("methane");
       await molecules.getByRole("button", { name: "Carbon", exact: true }).click();
@@ -130,6 +133,9 @@ try {
     await room.getByRole("button", { name: "Find a reviewed lesson" }).click();
     await room.getByRole("status").getByText(/Related lesson: Volatile memory and persistent storage/).waitFor();
     await room.getByText(/ordinary working RAM/).waitFor();
+    await room.getByRole("button", { name: "Read the full lesson" }).click();
+    assert.equal(await room.getByLabel("Teaching mode").inputValue(), "explain");
+    await room.getByRole("heading", { name: "Volatile memory and persistent storage" }).waitFor();
     assert.equal(classroomRequests, 0);
     await context.setOffline(false);
     await room.getByLabel("Teaching mode").selectOption("explain");
@@ -240,7 +246,17 @@ try {
     if (screenshots) await page.screenshot({ path: path.join(screenshots, "offline-gravity-pack.png") });
     await context.setOffline(false);
     await page.goto(base + "/jee/offline-learning");
-    await chapterPack.getByRole("button", { name: "Remove offline pack" }).click();
+    const otherTab = await context.newPage();
+    try {
+      await otherTab.goto(base + "/jee/offline-learning");
+      const otherCard = otherTab.getByRole("article").filter({ hasText: /Gravitation · Chapter 1 with narration/ });
+      await otherCard.getByRole("button", { name: "Remove offline pack" }).waitFor();
+      await chapterPack.getByRole("button", { name: "Remove offline pack" }).click();
+      await otherTab.evaluate(() => window.dispatchEvent(new Event("focus")));
+      await otherCard.getByRole("button", { name: "Save offline pack" }).waitFor();
+    } finally {
+      await otherTab.close();
+    }
     await chapterPack.getByText("Offline pack removed.").waitFor();
     assert.equal(await page.evaluate(name => caches.has(name), packName), false);
     const gravityTiming = JSON.parse(await readFile(new URL("../app/data/jee-gravity-timings.json", import.meta.url), "utf8"));

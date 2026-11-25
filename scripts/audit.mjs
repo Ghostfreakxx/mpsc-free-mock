@@ -16,13 +16,18 @@ function audit(args) {
   // npm is a .cmd shim on Windows; run its CLI through Node without a shell.
   const npmCli = process.env.npm_execpath;
   if (process.platform === 'win32' && !npmCli) throw new Error('Run this check with npm run audit on Windows.');
+  let report;
   try {
-    return JSON.parse(execFileSync(npmCli ? process.execPath : 'npm', [...(npmCli ? [npmCli] : []), 'audit', '--json', ...args], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 }));
+    report = JSON.parse(execFileSync(npmCli ? process.execPath : 'npm', [...(npmCli ? [npmCli] : []), 'audit', '--json', ...args], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 }));
   } catch (error) {
-    // npm audit exits non-zero when it finds anything; the JSON report is still on stdout.
-    if (error.stdout) return JSON.parse(error.stdout);
-    throw error;
+    // npm exits nonzero for vulnerabilities and for registry failures.
+    if (!error.stdout) throw error;
+    report = JSON.parse(error.stdout);
   }
+  if (report?.error || !report?.vulnerabilities || !report?.metadata?.vulnerabilities) {
+    throw new Error('npm audit did not return an advisory report. Check registry connectivity and retry.');
+  }
+  return report;
 }
 
 const serious = vulnerability => vulnerability.severity === 'high' || vulnerability.severity === 'critical';

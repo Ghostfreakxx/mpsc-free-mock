@@ -24,7 +24,7 @@ export default function MolecularLab() {
   const names = [model.center, ...model.points.map((_, index) => `Hydrogen ${index + 1}`)];
   return <article id="molecular-geometry" className={styles.reviewedBoard}>
     <h2>Chemistry · Molecular geometry</h2>
-    <p>Explore three simplified ball-and-stick models. Colours distinguish atoms. Sphere sizes and bond lengths are illustrative.</p>
+    <p>Explore three simplified ball-and-stick models. Colours distinguish atoms. Sphere sizes and bond lengths are illustrative. Lone pairs are omitted from the picture, but they help explain the bent shape of water and the pyramidal shape of ammonia.</p>
     <div className={styles.lessonChooser}>
       <label htmlFor="molecular-choice">Molecule</label>
       <select id="molecular-choice" value={molecule} onChange={event => { setMolecule(event.target.value as MoleculeKey); setSelected(0); }}>
@@ -47,7 +47,7 @@ export default function MolecularLab() {
       <div className={styles.roomActions}>{names.map((name, index) =>
         <button key={name} type="button" aria-pressed={selected === index} className={styles.reviewCheck} onClick={() => setSelected(index)}>{name}</button>)}</div>
     </fieldset>
-    <p role="status">{names[selected]} · {selected === 0 ? `Central atom with ${model.points.length} O/N/C–H bonds in this model.` : `Attached to ${model.center.toLowerCase()} by one bond.`}</p>
+    <p role="status">{names[selected]} · {selected === 0 ? `Central atom with ${model.points.length} covalent bonds to hydrogen atoms.` : `Attached to ${model.center.toLowerCase()} by one bond.`}</p>
     <fieldset className={styles.reviewQuiz}>
       <legend>Which of these molecules is tetrahedral?</legend>
       {["Water", "Ammonia", "Methane"].map((choice, index) => <label key={choice}>

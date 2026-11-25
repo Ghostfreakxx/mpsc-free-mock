@@ -42,3 +42,7 @@ The install-time precache now applies the same public-response checks as the fet
 Hashed script and style requests can now recover from an explicit saved lesson after the general static cache is cleared. Standalone pack pages do not enter the passive navigation cache, and their HTML uses a deny-by-default policy with same-origin media only. Existing administrator and paid-generation policies remain unchanged.
 
 The advanced branch retains the existing no-store, private authorization, ledger and CSP controls. Local checks cover storage recovery, validated retired cache names and same-origin media. The 3D laboratory uses project-authored primitives and existing Three.js components. It adds no remote asset, paid service, dependency or CSP permission.
+
+## Dependency audit service failures
+
+A registry DNS failure produced a JSON error and a nonzero npm exit. The wrapper cast that response as an advisory report and could print a pass with no advisory data. The wrapper now requires the fields supplied by a genuine advisory report and rejects registry errors. This protects verification in both local checks and CI. It does not change the production dependency tree or the review dates in the existing dev-only allowlist.

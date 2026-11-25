@@ -42,7 +42,7 @@ export function OpticsLab() {
     return `${180 + 83 * Math.sin(radians) * (reverse ? -1 : 1)} ${100 + 83 * Math.cos(radians) * (reverse ? -1 : 1)}`;
   };
   return <Experiment title="Physics · Reflection and refraction" onReset={() => { setAngle(40); setEntry("air"); setExit("glass"); }}
-    lesson="/jee/classes/refraction" question="What is the angle of reflection for an incident ray at 25° to the normal?"
+    lesson="/jee/classes/study/optics-study" question="What is the angle of reflection for an incident ray at 25° to the normal?"
     choices={["25°", "65°", "It depends on glass thickness"]} answer={0}
     feedback="The incidence and reflection angles are equal when measured from the same normal.">
     <p>Change the incident angle or choose two ideal transparent media. The rays show directions. Their lengths do not indicate optical power.</p>
@@ -64,23 +64,24 @@ export function OpticsLab() {
 }
 
 const structures = {
-  membrane: { label: "Cell membrane", detail: "A selectively permeable boundary around the cell.", x: 115, y: 42 },
+  membrane: { label: "Cell membrane", detail: "A selectively permeable boundary around the cell.", x: 180, y: 34 },
   nucleus: { label: "Nucleus", detail: "Contains most of the cell’s DNA and is the site of transcription for nuclear genes.", x: 157, y: 101 },
   mitochondrion: { label: "Mitochondrion", detail: "Produces much of the ATP made by aerobic respiration.", x: 242, y: 110 },
-  wall: { label: "Cell wall", detail: "A cellulose-rich outer layer supporting the plant cell.", x: 50, y: 130 },
-  chloroplast: { label: "Chloroplast", detail: "Captures light energy for photosynthesis in photosynthetic plant tissues.", x: 228, y: 66 },
+  wall: { label: "Cell wall", detail: "A cellulose-rich outer layer supporting the plant cell.", x: 43, y: 130 },
+  vacuole: { label: "Central vacuole", detail: "Stores water and solutes. Water pressure against the cell wall helps support many mature plant cells.", x: 208, y: 78 },
+  chloroplast: { label: "Chloroplast", detail: "Captures light energy for photosynthesis in photosynthetic plant tissues.", x: 255, y: 54 },
 } as const;
 type Structure = keyof typeof structures;
 
 export function CellLab() {
   const [plant, setPlant] = useState(false);
   const [active, setActive] = useState<Structure>("nucleus");
-  const keys: Structure[] = plant ? ["wall", "membrane", "nucleus", "mitochondrion", "chloroplast"] : ["membrane", "nucleus", "mitochondrion"];
+  const keys: Structure[] = plant ? ["wall", "membrane", "nucleus", "mitochondrion", "chloroplast", "vacuole"] : ["membrane", "nucleus", "mitochondrion"];
   return <Experiment id="plant-animal-cells" title="Biology · Plant and animal cells" onReset={() => { setPlant(false); setActive("nucleus"); }}
     lesson="/neet/classes/cell-unit-life" question="Which structure carries out photosynthesis in a typical leaf cell?"
     choices={["Mitochondrion", "Nucleus", "Chloroplast"]} answer={2}
     feedback="Chloroplasts contain the machinery for photosynthesis.">
-    <p>Compare a schematic animal cell with a photosynthetic plant cell. Organelle positions, counts and sizes are illustrative.</p>
+    <p>Compare a schematic animal cell with a photosynthetic plant cell. Organelle positions, counts and sizes are illustrative. The plant cell shown is photosynthetic; many other plant cells lack chloroplasts.</p>
     <div className={styles.lessonChooser}>
       <label htmlFor="lab-cell-model">Cell model</label>
       <select id="lab-cell-model" value={plant ? "plant" : "animal"} onChange={event => { setPlant(event.target.value === "plant"); setActive("nucleus"); }}>
@@ -89,8 +90,10 @@ export function CellLab() {
     </div>
     <svg viewBox="0 0 360 200" className={styles.labDiagram} role="img" aria-label={`Schematic ${plant ? "plant" : "animal"} cell with ${structures[active].label} highlighted`}>
       {plant && <rect x="43" y="25" width="274" height="150" rx="18" className={styles.labAxis} />}
-      <ellipse cx="180" cy="101" rx="121" ry="67" className={styles.labAxis} />
-      {keys.filter(key => key !== "wall" && key !== "membrane").map(key => <ellipse key={key} cx={structures[key].x} cy={structures[key].y} rx={key === "nucleus" ? 28 : 20} ry={key === "nucleus" ? 24 : 10} className={styles.labAxis} />)}
+      {plant ? <rect x="52" y="34" width="256" height="132" rx="12" className={styles.labAxis} /> :
+        <ellipse cx="180" cy="101" rx="121" ry="67" className={styles.labAxis} />}
+      {plant && <ellipse cx={structures.vacuole.x} cy={structures.vacuole.y} rx="33" ry="20" className={styles.labAxis} />}
+      {keys.filter(key => key !== "wall" && key !== "membrane" && key !== "vacuole").map(key => <ellipse key={key} cx={structures[key].x} cy={structures[key].y} rx={key === "nucleus" ? 28 : 20} ry={key === "nucleus" ? 24 : 10} className={styles.labAxis} />)}
       <circle cx={structures[active].x} cy={structures[active].y} r="6" className={styles.labDot} />
     </svg>
     <div className={styles.roomActions}>{keys.map(key => <button key={key} type="button" aria-pressed={active === key} className={styles.reviewCheck} onClick={() => setActive(key)}>{structures[key].label}</button>)}</div>

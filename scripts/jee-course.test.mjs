@@ -12,9 +12,9 @@ test('course map preserves all 54 baseline units across three subjects', () => {
 });
 
 test('published written lessons have substantive content, practice and figures', () => {
-  assert.equal(new Set(studyLessons.map(lesson => lesson.id)).size, 48);
-  for (const subject of subjects) assert.equal(studyLessons.filter(lesson => lesson.subject === subject).length, subject === 'Physics' ? 12 : subject === 'Chemistry' ? 22 : 14);
-  for (const lesson of studyLessons) {
+  assert.equal(new Set(studyLessons.map(lesson => lesson.id)).size, 57);
+  for (const subject of subjects) assert.equal(studyLessons.filter(lesson => lesson.subject === subject).length, subject === 'Physics' ? 21 : subject === 'Chemistry' ? 22 : 14);
+  for (const lesson of studyLessons.filter(item => !item.figure)) {
     assert.ok(courseUnits[lesson.subject][lesson.unit - 1]);
     const newFoundation = lesson.id === 'chemistry-foundations';
     const expansion = ['statistics-probability','vector-algebra','three-dimensional-geometry','coordinate-geometry','differential-equations','integral-calculus','limits-continuity-differentiability','trigonometry','sequences-series','binomial-theorem','permutations-combinations','matrices-determinants','atomic-spectra', 'periodic-trends', 'chemical-bonding', 'chemical-thermodynamics', 'solutions', 'equilibrium', 'redox-electrochemistry', 'chemical-kinetics', 'coordination-compounds', 'organic-principles', 'hydrocarbons', 'organic-halogens', 'organic-oxygen', 'organic-nitrogen', 'biomolecules', 'purification-analysis', 'p-block', 'd-f-block', 'practical-chemistry'].includes(lesson.id);
@@ -44,6 +44,35 @@ test('published written lessons have substantive content, practice and figures',
   }
 });
 
+test('dedicated Physics companions cover every baseline unit and retain separate quiz keys', () => {
+  const physics = studyLessons.filter(lesson => lesson.subject === 'Physics');
+  assert.deepEqual([...new Set(physics.map(lesson => lesson.unit))].sort((a, b) => a - b),
+    courseUnits.Physics.map((_, index) => index + 1));
+  const companions = physics.filter(lesson => lesson.figure);
+  assert.deepEqual(companions.map(lesson => lesson.unit), [1, 4, 10, 15, 16, 17, 18, 19, 20]);
+  for (const lesson of companions) {
+    assert.match(lesson.id, /-study$/);
+    assert.equal(lesson.sections.length, 5);
+    assert.equal(lesson.examples.length, 2);
+    assert.equal(lesson.quiz.length, 2);
+    for (const question of lesson.quiz) {
+      assert.equal(new Set(question.options).size, 4);
+      assert.ok(Number.isInteger(question.answer) && question.answer >= 0 && question.answer < 4);
+      assert.ok(question.explanation.length > 60);
+    }
+    assert.ok(statSync(new URL(`../public/lectures/foundations/${lesson.id}.svg`, import.meta.url)).size > 500);
+  }
+  const correct = (unit, index) => {
+    const question = companions.find(lesson => lesson.unit === unit).quiz[index];
+    return question.options[question.answer];
+  };
+  assert.equal(correct(1, 1), `${3 * 1}%`);
+  assert.equal(correct(4, 1), `−${10 * 2} W`);
+  assert.equal(correct(10, 0), `${260 - 256} Hz`);
+  assert.equal(correct(18, 0), String(14 - 6));
+  assert.equal(correct(19, 0), `${2 * 50} Hz`);
+  assert.equal(correct(20, 0), `${6 * 40 / (100 - 40)} Ω`);
+});
 test('numerical quiz keys match independently computed answers', () => {
   const [physics, chemistry, math] = studyLessons;
   const correct = (lesson, index) => lesson.quiz[index].options[lesson.quiz[index].answer];

@@ -1810,7 +1810,9 @@
         "units",
         "measurements"
       ],
-      "written": [],
+      "written": [
+        "measurement-study"
+      ],
       "remaining": [
         "Further significant-figure and uncertainty practice; least count and zero correction are also taught in the Unit 20 instrument classes"
       ]
@@ -1856,7 +1858,9 @@
         "work-energy",
         "energy-applications"
       ],
-      "written": [],
+      "written": [
+        "work-energy-study"
+      ],
       "remaining": [
         "Wider variable-force, spring and nonconservative-work combinations",
         "Vertical-circle contact variants and general two-dimensional scattering practice"
@@ -1954,7 +1958,9 @@
         "waves",
         "waves-applications"
       ],
-      "written": [],
+      "written": [
+        "oscillations-waves-study"
+      ],
       "remaining": [
         "Wider spring-combination and pendulum applications",
         "Further boundary, air-column and unequal-amplitude interference practice"
@@ -2061,7 +2067,9 @@
         "em-waves",
         "em-wave-applications"
       ],
-      "written": [],
+      "written": [
+        "electromagnetic-waves-study"
+      ],
       "remaining": [
         "Further Maxwell-law derivations and nonideal displacement-current geometry",
         "Broader medium comparisons beyond the vacuum intensity companion",
@@ -2084,7 +2092,9 @@
         "wave-optics-applications",
         "optics-derivations"
       ],
-      "written": [],
+      "written": [
+        "optics-study"
+      ],
       "remaining": [
         "Further image-motion and multi-element imaging practice; mirror and spherical-surface derivations are recorded",
         "Optional extensions: thick lenses and broader separated-lens or fiber geometries",
@@ -2102,7 +2112,9 @@
         "matter-waves",
         "dual-nature-applications"
       ],
-      "written": [],
+      "written": [
+        "dual-nature-study"
+      ],
       "remaining": [
         "Further mixed photoelectric graph and photon/electron numerical practice beyond the stopping-slope companion",
         "Higher-energy matter-wave extensions beyond the nonrelativistic comparisons"
@@ -2117,7 +2129,9 @@
         "nuclei",
         "atomic-nuclear-applications"
       ],
-      "written": [],
+      "written": [
+        "atoms-nuclei-study"
+      ],
       "remaining": [
         "Further scattering geometry beyond fixed-target head-on approach and broader spectral-series practice",
         "Further reaction-energy and binding-curve practice beyond the balanced atomic-mass example"
@@ -2133,7 +2147,9 @@
         "logic-gates",
         "electronics-applications"
       ],
-      "written": [],
+      "written": [
+        "electronic-devices-study"
+      ],
       "remaining": [
         "Further diode-network and filtered-rectifier applications beyond the clamp-state example",
         "Real special-device I-V, Zener tolerance and thermal-rating practice beyond the constant-voltage current window",
@@ -2154,7 +2170,9 @@
         "experimental-applications",
         "lab-liquid-mixtures"
       ],
-      "written": [],
+      "written": [
+        "experimental-skills-study"
+      ],
       "remaining": [
         "Further observation-table and correction practice beyond the recorded instrument, mechanics, thermal, electrical, optical and device examples; actual hands-on work requires supervision"
       ]
@@ -3098,6 +3116,105 @@
       "questions": 32,
       "illustrated": true,
       "remaining": "Sixteen-chapter recorded foundation for Unit 13 with original examples and practice covering central measures and dispersion for ungrouped and grouped data, addition and multiplication laws, Bayes and probability distributions of a random variable. Further mixed grouped parameters, complex conditional counting, distribution parameters and timed practice remain. All fourteen Maths units now have recorded foundations, but a syllabus and problem-coverage audit is still required before declaring JEE complete. These are original questions, not official PYQs."
+    },
+    {
+      "id": "measurement-study",
+      "title": "Measurements, significant figures and dimensions",
+      "subject": "Physics",
+      "unit": 1,
+      "sections": 5,
+      "workedExamples": 2,
+      "questions": 2,
+      "illustrated": true,
+      "remaining": "Uncertainty distributions and additional instrument readings are covered through further practice."
+    },
+    {
+      "id": "work-energy-study",
+      "title": "Work, energy and power through system boundaries",
+      "subject": "Physics",
+      "unit": 4,
+      "sections": 5,
+      "workedExamples": 2,
+      "questions": 2,
+      "illustrated": true,
+      "remaining": "Use the linked recordings for more vertical-circle contact cases and oblique collisions."
+    },
+    {
+      "id": "oscillations-waves-study",
+      "title": "Oscillations and waves from phase to resonance",
+      "subject": "Physics",
+      "unit": 10,
+      "sections": 5,
+      "workedExamples": 2,
+      "questions": 2,
+      "illustrated": true,
+      "remaining": "The recordings develop additional superposition, air-column and spring-combination problems."
+    },
+    {
+      "id": "electromagnetic-waves-study",
+      "title": "Electromagnetic waves and the spectrum",
+      "subject": "Physics",
+      "unit": 15,
+      "sections": 5,
+      "workedExamples": 2,
+      "questions": 2,
+      "illustrated": true,
+      "remaining": "See the recorded applications for vacuum intensity and capacitor-field calculations."
+    },
+    {
+      "id": "optics-study",
+      "title": "Optics from image formation to interference",
+      "subject": "Physics",
+      "unit": 16,
+      "sections": 5,
+      "workedExamples": 2,
+      "questions": 2,
+      "illustrated": true,
+      "remaining": "Use the recordings for instruments, lens combinations, prisms and the derivations of the spherical-surface formulas."
+    },
+    {
+      "id": "dual-nature-study",
+      "title": "Photons, photoelectric graphs and matter waves",
+      "subject": "Physics",
+      "unit": 17,
+      "sections": 5,
+      "workedExamples": 2,
+      "questions": 2,
+      "illustrated": true,
+      "remaining": "Use the recordings for the historical observations and additional photon and matter-wave comparisons."
+    },
+    {
+      "id": "atoms-nuclei-study",
+      "title": "Atomic spectra and nuclear binding energy",
+      "subject": "Physics",
+      "unit": 18,
+      "sections": 5,
+      "workedExamples": 2,
+      "questions": 2,
+      "illustrated": true,
+      "remaining": "The recorded applications cover further scattering geometry, spectra and mass-balanced reaction calculations."
+    },
+    {
+      "id": "electronic-devices-study",
+      "title": "Diodes, regulation and logic gates",
+      "subject": "Physics",
+      "unit": 19,
+      "sections": 5,
+      "workedExamples": 2,
+      "questions": 2,
+      "illustrated": true,
+      "remaining": "Recorded applications extend these ideal models to clamp states, current limits and gate networks."
+    },
+    {
+      "id": "experimental-skills-study",
+      "title": "Experimental skills through observable measurements",
+      "subject": "Physics",
+      "unit": 20,
+      "sections": 5,
+      "workedExamples": 2,
+      "questions": 2,
+      "illustrated": true,
+      "remaining": "Use the eight Unit 20 recordings for full observations and safe, supervised practical work."
     }
   ],
   "neetDedicated": [
@@ -7867,7 +7984,7 @@
     {
       "subject": "Physics",
       "baselineUnits": 20,
-      "writtenLessons": 12
+      "writtenLessons": 21
     },
     {
       "subject": "Chemistry",

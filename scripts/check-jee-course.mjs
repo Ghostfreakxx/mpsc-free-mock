@@ -10,6 +10,15 @@ try {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
   const cases = [
+    ['Physics', 'measurement-study', 68, [3, 1]],
+    ['Physics', 'work-energy-study', 68, [1, 2]],
+    ['Physics', 'oscillations-waves-study', 68, [1, 2]],
+    ['Physics', 'electromagnetic-waves-study', 68, [1, 2]],
+    ['Physics', 'optics-study', 68, [1, 0]],
+    ['Physics', 'dual-nature-study', 68, [2, 2]],
+    ['Physics', 'atoms-nuclei-study', 68, [1, 2]],
+    ['Physics', 'electronic-devices-study', 68, [2, 1]],
+    ['Physics', 'experimental-skills-study', 68, [0, 2]],
     ['Mathematics', 'statistics-probability', 14, [1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],
     ['Mathematics', 'vector-algebra', 14, [1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],
     ['Mathematics', 'three-dimensional-geometry', 14, [1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0]],

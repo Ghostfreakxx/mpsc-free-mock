@@ -33,14 +33,17 @@ export default function CourseLibrary({ lectures, studyLessons }: { lectures: Re
         </div>
       </article>)}
       </details>)}
-      {available.map(lesson => <article key={lesson.id}>
+      {available.map(lesson => {
+        const sameRecording = subjectRecordings.find(recording => recording.id === lesson.id);
+        const companionRecording = sameRecording?.id ?? (subject === "Physics" ? physicsCoverage[lesson.unit - 1]?.recordings[0] : undefined);
+        return <article key={lesson.id}>
         <div className={styles.lessonNumber}><BookOpen size={28} /><span>U{lesson.unit}</span></div>
         <div><h3>{lesson.title}</h3><p>{lesson.summary}</p>
-          <p className={styles.lessonMeta}>{subjectRecordings.some(recording => recording.id === lesson.id) ? "Written notes + recorded class" : "Written lesson"} <span>{lesson.exampleCount} worked examples</span><span>{lesson.quizCount} practice checks</span></p>
-          {lectures.some(recording => recording.id === lesson.id) ? <Link prefetch={false} href={`/jee/classes/${lesson.id}`}>Watch recorded class <ArrowRight size={17} /></Link> : <p>Marin recording not yet available</p>}
+          <p className={styles.lessonMeta}>{companionRecording ? "Written notes + recorded class" : "Written lesson"} <span>{lesson.exampleCount} worked examples</span><span>{lesson.quizCount} practice checks</span></p>
+          {companionRecording ? <Link prefetch={false} href={`/jee/classes/${companionRecording}`}>Watch recorded class <ArrowRight size={17} /></Link> : <p>Marin recording not yet available</p>}
           <Link prefetch={false} href={`/jee/classes/study/${lesson.id}`}>Read lesson <ArrowRight size={17} /></Link>
         </div>
-      </article>)}
+      </article>; })}
     </section>
     <section className={styles.notes} aria-label={`${subject} course map`}>
       <h2>{subject} course map</h2>

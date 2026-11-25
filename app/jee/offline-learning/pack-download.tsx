@@ -27,10 +27,23 @@ export default function PackDownload({ pack }: { pack: PackSummary }) {
   useEffect(() => {
     if (!("caches" in window) || !("serviceWorker" in navigator) || !navigator.locks) return;
     let active = true;
-    void Promise.all([caches.match(marker, { cacheName }), caches.has(cacheName)]).then(([result, exists]) => {
-      if (active) { setSupported(true); setSaved(Boolean(result)); setInterrupted(exists && !result); }
-    }).catch(() => {});
-    return () => { active = false; controller.current?.abort(); };
+    function refresh() {
+      if (controller.current) return;
+      void Promise.all([caches.match(marker, { cacheName }), caches.has(cacheName)]).then(([result, exists]) => {
+        if (active && !controller.current) {
+          setSupported(true);
+          setSaved(Boolean(result));
+          setInterrupted(exists && !result);
+        }
+      }).catch(() => {});
+    }
+    refresh();
+    window.addEventListener("focus", refresh);
+    return () => {
+      active = false;
+      window.removeEventListener("focus", refresh);
+      controller.current?.abort();
+    };
   }, [cacheName]);
 
   async function save() {
@@ -83,6 +96,7 @@ export default function PackDownload({ pack }: { pack: PackSummary }) {
     try {
       await navigator.locks.request(cacheName, async () => { await caches.delete(cacheName); });
       setSaved(false);
+      setInterrupted(false);
       setMessage("Offline pack removed.");
     } catch { setMessage("The offline pack could not be removed."); }
   }

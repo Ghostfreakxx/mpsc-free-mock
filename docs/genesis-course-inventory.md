@@ -4,11 +4,11 @@ Run `node scripts/inventory-courses.mjs` for the per-recording listing. Add `--h
 
 | Published catalog | Recorded lessons | Written lessons | Checks performed |
 | --- | ---: | ---: | --- |
-| JEE Physics, Chemistry and Mathematics | 120 | 48 | Catalog references, chapter narration scripts, cue metadata, quizzes, nonempty audio and WebVTT |
+| JEE Physics, Chemistry and Mathematics | 120 | 57 | Catalog references, chapter narration scripts, cue metadata, quizzes, nonempty audio and WebVTT |
 | NEET dedicated | 34 | — | Same recorded lesson checks |
 | NEET shared Physics and Chemistry | 106 mappings | — | Every mapping resolves to an existing JEE recording |
 
-The checked JEE syllabus inventory has 20 Physics, 20 Chemistry and 14 Mathematics units, with 12, 22 and 14 written lessons respectively. The inventory maps a recording to each of the 54 JEE units. All 48 written lessons have a local figure and worked examples. A lesson count alone does not measure subheading coverage. Retain the repository's [NEET Biology coverage](./neet-class-coverage-2026.md), [shared course mapping](./neet-physics-chemistry-mapping-2026.md), and [subheading audit](./neet-subheading-review-2026.md) when marking syllabus completion.
+The checked JEE syllabus inventory has 20 Physics, 20 Chemistry and 14 Mathematics units, with 21, 22 and 14 written lessons respectively. The inventory maps a recording to each of the 54 JEE units. All 57 written lessons have a local figure and worked examples. A lesson count alone does not measure subheading coverage. Retain the repository's [NEET Biology coverage](./neet-class-coverage-2026.md), [shared course mapping](./neet-physics-chemistry-mapping-2026.md), and [subheading audit](./neet-subheading-review-2026.md) when marking syllabus completion.
 
 The media pass read all 1,956 MP3s and found no exact duplicates or suspicious opening bytes. That check does not decode the audio or judge narration against a script. The individual class verification scripts and browser playback provide a separate check. The cue comparison verified text, order, and timestamps within 2 ms across all 154 published timelines. Spoken-word alignment, worked-example quality, and unpublished syllabus gaps still need review.
 
@@ -22,8 +22,38 @@ The machine-readable [inventory snapshot](./genesis-course-inventory.json) inclu
 
 ## Advanced syllabus and audio review
 
-The recorded map still has a recording for each of the 54 JEE units. Nine Physics units have no dedicated written companion in the current catalog: Units and Measurements; Work, Energy and Power; Oscillations and Waves; Electromagnetic Waves; Optics; Dual Nature of Matter and Radiation; Atoms and Nuclei; Electronic Devices; and Experimental Skills. These are written-coverage gaps. All 154 published caption files still match the player cues. No missing published audio was found.
+The recorded map still has a recording for each of the 54 JEE units. All 20 Physics units now have a dedicated written companion. All 154 published caption files still match the player cues. No missing published audio was found.
 
 Chromium decoded all five standalone Newton's laws chapter MP3s. Each media duration matched its existing chapter interval within 0.25 seconds. An independent spoken-word check remains outstanding.
 
 The related `tochhawng-data` repository contains a Next.js data site. Its 52-file tree has no API, live, lecture, stream or voice route. No new lead for the separate lecture service was found. [Related data repository](https://github.com/Ghostfreakxx/tochhawng-data)
+
+## Educational quality pass
+
+Nine companions added for Physics units 1, 4, 10, and 15–20. Each provides five short reading sections, a labelled figure, two worked examples, two questions with explanations, an offline text download, and links to the existing recordings. The dedicated written routes use distinct quiz storage keys. The unit map now shows written material for every Paper 1 unit. This closes the written catalog gaps and leaves room for more exam-style practice and subheading depth.
+
+| Course area | Review outcome and follow-up |
+| --- | --- |
+| JEE Physics | Prioritise additional mixed vertical-circle and 2D-collision problems, optical instruments and signed ray diagrams, and experimental observation-table interpretation. Existing recordings supply companion material for these topics. |
+| JEE Chemistry | Retain the existing practical-chemistry recordings. The prior inventory identifies aniline yellow and preparation/purification explanations as candidates for spoken-word and worked-example review. |
+| JEE Mathematics | All 14 units already have written companions. Use the existing practice and board coverage before expanding, with mixed/timed practice still useful. |
+| NEET Physics and Chemistry | The existing subheading review documents explanatory coverage, including false keyword gaps. Reuse the shared recordings and add mixed practice and wider diagrams before duplicating lessons. |
+| NEET Biology | Keep the 34 dedicated recordings available. The current listing does not provide independent written companions comparable to JEE. Prioritise written revision and labelled diagrams for the existing courses. |
+
+### Narration evidence
+
+The local source retains earlier independent-transcription corrections, including shortened closing reminders in kinetics and aminolysis. Those corrections preserve synthesis input as provenance and reuse the original audio.
+
+This pass independently decoded ten opening and closing excerpts from the published MP3s and compared 16 kHz audio with the visible scripts and active WebVTT. Recognition used Vosk 0.3.45 and the small English model on the Windows workstation. Audio stayed local. Scores below are normalized token-sequence similarity, not listening accuracy or an estimate for the full course.
+
+| Recording | Opening and closing ranges in seconds | Similarity | Outcome |
+| --- | --- | --- | --- |
+| Units and dimensions | 0–36.640 and 384.412–423.296 | .940 / .900 | Two short additions appear in the written closing but not in the spoken audio. See correction below. |
+| Measurements | 0–33.960 and 243.524–272.232 | .961 / .946 | Active captions contain the spoken ending. The legacy caption file extends past the MP3; the player uses the corrected `english-v2.vtt`. |
+| Work and energy | 0–35.800 and 301.196–338.736 | .869 / .941 | Common word substitutions such as “joules” rendered as “jewels.” Fifteen joules in the car example remained recognizable in context. |
+| Photoelectric effect | 0–36.100 and 439.508–474.408 | .943 / .956 | Recognizer garbled names and some number words. Verify the flagged formula and number fragments by listening before editing. |
+| NEET Cell: The Unit of Life | 0–35.740 and 1074.128–1109.068 | .836 / .832 | Several names and biology terms were misrecognized. The sample does not support automatic caption changes. |
+
+**Prepared correction for Units and dimensions.** In the cue at 384.412–389.528 s, end the sentence after “square root of length,” omitting “not directly on length.” The recognizer places “length” at 388.432–388.822 s, followed by near silence and the next cue. In the closing cue at 417.888–423.296 s, end the sentence after “their own later lessons,” omitting “they are not covered in this class.” The final recognized “lessons” ends around 422.962 s. The remainder of the decoded clip contains only a low-level tail. Retain both qualifications in the separate written notes if desired. Apply this paired change to the authored segments, cue manifest and active caption, and version any already-published offline cache entries together. The existing audio and student progress can be kept. Published captions and audio remain as-is in this pass.
+
+Further work should manually review the flagged number words and named terms, then sample more recordings before reporting course-wide narration alignment. [Vosk offline English model](https://alphacephei.com/vosk/models)

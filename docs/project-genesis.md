@@ -84,3 +84,16 @@ The built offline classroom pack contains 36 topics, 108 questions and 39 Mizo d
 Playwright rendered and rotated the 3D molecule and captured the refreshed classroom at 360, 768 and 1440 px. Chromium used software WebGL, and no physical Android benchmark was run. The local production build passed with Webpack. Turbopack on this Windows machine continues to fail before its worker handshake. The existing Linux build job for Actions run #264 passed.
 
 There was no installed local speech recognizer available for an independent spoken-text comparison. Chapter playback and WebVTT timing are verified to the extent documented by the fixtures. Keep spoken-word alignment separate from those checks.
+
+## Educational quality pass
+
+- Added dedicated written JEE Physics companions for all nine open unit gaps. New lesson routes preserve recorded content and its existing saved answers. The inventory identifies remaining subheading depth and places spoken-word review separately from caption tests.
+- Zorami search can open its match in Explain mode. Existing revised language labels and English fallback are preserved. No additional translations were promoted to reviewed status.
+- Corrected the plant-cell membrane placement, added an explicitly inspectable central vacuole, and clarified the omission of lone pairs from molecular models. The refraction experiment links to the new optics notes. No additional simulations were added while reviewing the existing set.
+- Offline pack cards now refresh when a tab regains focus so another tab’s changes or browser eviction can be reflected. The original cache restrictions, locks, and version names still apply.
+
+### Educational quality verification
+
+Local checks passed for the 499-page Webpack build, 280-route mobile smoke suite, registry audit, recorded library, JEE study pages, and the Genesis browser and private classroom fixtures. The offline test covered two-tab cache removal, offline search-to-Explain, and retained downloading, seeking, and captions. Chromium covered mobile widths, both themes, and reduced motion. No physical Android device was available. The narration sample review and proposed Units and dimensions caption correction are recorded in the course inventory.
+
+Mobile screenshots: [Optics, dark](./genesis-screenshots/optics-companion-dark-360.png), [Optics, light](./genesis-screenshots/optics-companion-light-360.png), and [plant cell](./genesis-screenshots/plant-cell-360.png).

@@ -161,6 +161,14 @@ export default function ReviewedClassroom() {
         )}
         {active && <>
           <h3>{active.title}</h3>
+          {mode === "questions" && result && <button type="button" className={styles.reviewCheck} onClick={() => {
+            const index = lessons.findIndex(item => item.id === result.lesson.id);
+            if (index < 0) return;
+            setSelected(index);
+            setMode("explain");
+            setQuizIndex(0);
+            resetQuiz();
+          }}>Read the full lesson</button>}
           {language === "lus" && <p>{displayLanguage === "lus" ? "Mizo translation draft." : "Mizo material is unavailable here. Showing English."}</p>}
           {mode === "quiz" && quiz && displayedQuiz ? <>
             <p>Question {quizIndex + 1} of {active.quiz.length}</p>
