@@ -15,3 +15,7 @@ The current audio sizes are approximately 567.5 MB for Physics, 891.5 MB for Che
 NEET Physics and Chemistry packs reuse the published shared recordings and include the dedicated closeout lessons. NEET Biology uses the dedicated recording catalog. Subjects split into parts at a 500 MB audio target. Five Newton's laws chapter packs reuse the original MP3s and rebase their WebVTT cues. Existing Gravitation, JEE subject and individual recording URLs remain available.
 
 The library estimates free browser storage, flags large downloads and lists completed retired editions through their existing markers. Interrupted downloads can be restarted. Restart discards incomplete files and verifies the package again. There is no automatic retry or automatic media download. Availability still depends on device quota and eviction.
+
+## Units and Dimensions caption correction
+
+The source MP3 and progress key are unchanged. New individual downloads of Units and Dimensions use a separate cache for the v3 captions and corrected page. An older saved copy remains usable if saving the new edition is interrupted. A successful save replaces the older individual copy. JEE Physics and the NEET Physics part containing this recording advance to edition v2. Other editions keep their current URLs. Previously saved subject packs remain internally consistent and can still be opened from their old URL and removed through the retired pack list.

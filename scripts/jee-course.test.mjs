@@ -53,7 +53,7 @@ test('dedicated Physics companions cover every baseline unit and retain separate
   for (const lesson of companions) {
     assert.match(lesson.id, /-study$/);
     assert.equal(lesson.sections.length, 5);
-    assert.equal(lesson.examples.length, 2);
+    assert.equal(lesson.examples.length, [4, 16, 20].includes(lesson.unit) ? 3 : 2);
     assert.equal(lesson.quiz.length, 2);
     for (const question of lesson.quiz) {
       assert.equal(new Set(question.options).size, 4);

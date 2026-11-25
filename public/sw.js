@@ -97,7 +97,10 @@ self.addEventListener("fetch", (event) => {
   const packPage = /^\/jee\/offline-packs\/[a-z0-9-]+$/.test(url.pathname);
   if (packPage) {
     if (request.mode === "navigate" && !url.search && request.headers.get("RSC") !== "1") {
-      event.respondWith(fetch(request).catch(async () => (await savedLessonFile(request)) ?? Response.error()));
+      event.respondWith(fetch(request).then(async response => {
+        if (response.status === 404) return (await savedLessonFile(request)) ?? response;
+        return response;
+      }, async () => (await savedLessonFile(request)) ?? Response.error()));
     }
     return;
   }

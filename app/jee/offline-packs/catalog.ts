@@ -20,13 +20,15 @@ function audioBytes(url: string) {
   return statSync(path.join(process.cwd(), "public", url)).size;
 }
 
-function subjectPack(id: string, title: string, recordings: Recording[]): Pack {
+function subjectPack(slug: string, title: string, recordings: Recording[]): Pack {
+  const version = recordings.some(recording => recording.id === "units") ? 2 : packVersion;
+  const id = `${slug}-v${version}`;
   const assets: PackAsset[] = [{ path: packPath(id), kind: "html", bytes: 0 }];
   for (const recording of recordings) {
     assets.push({ path: recording.audio, kind: "audio", bytes: audioBytes(recording.audio) });
     assets.push({ path: recording.subtitles, kind: "captions", bytes: 0 });
   }
-  return { id, version: packVersion, title,
+  return { id, version, title,
     description: `${recordings.length} recordings with captions and transcripts.`, recordings, assets };
 }
 
@@ -65,13 +67,13 @@ function neetPacks(subject: typeof neetSubjects[number]) {
     bytes += amount;
   }
   return groups.map((group, index) => subjectPack(
-    `neet-${subject.toLowerCase()}-${index + 1}-v${packVersion}`,
+    `neet-${subject.toLowerCase()}-${index + 1}`,
     `NEET ${subject} recorded lessons${groups.length > 1 ? ` · Part ${index + 1}` : ""}`, group,
   ));
 }
 
 export const packs = [
-  ...subjects.map(subject => subjectPack(`jee-${subject.toLowerCase()}-v${packVersion}`, `JEE ${subject} recorded lessons`,
+  ...subjects.map(subject => subjectPack(`jee-${subject.toLowerCase()}`, `JEE ${subject} recorded lessons`,
     lectures.filter(recording => (recording.subject ?? "Physics") === subject))),
   ...neetSubjects.flatMap(neetPacks),
   ...chapterPacks(published("gravity"), "Gravitation"),

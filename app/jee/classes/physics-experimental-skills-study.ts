@@ -42,6 +42,15 @@ export const experimentalSkillsCompanion: StudyLesson = {
   ],
   examples: [
     {
+      question: "An Ohmic wire 0.80 m long and 0.40 mm in diameter gives 0.40 V at 0.20 A and 0.80 V at 0.40 A. Estimate its resistivity at the measurement temperature.",
+      steps: [
+        "The V-versus-I slope is (0.80 − 0.40)/(0.40 − 0.20) = 2.0 Ω.",
+        "The radius is 2.0 × 10⁻⁴ m. The cross-sectional area is πr² ≈ 1.26 × 10⁻⁷ m².",
+        "Use ρ = RA/L. Keep the metre and square-metre conversions separate.",
+      ],
+      answer: "About 3.1 × 10⁻⁷ Ω·m.",
+    },
+    {
       question: "A screw gauge has 0.50 mm pitch, 50 divisions and +0.02 mm zero error. The uncorrected reading is 1.27 mm.",
       steps: [
         "Compute least count 0.50/50 = 0.01 mm. Subtract the positive zero error."

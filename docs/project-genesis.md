@@ -97,3 +97,13 @@ There was no installed local speech recognizer available for an independent spok
 Local checks passed for the 499-page Webpack build, 280-route mobile smoke suite, registry audit, recorded library, JEE study pages, and the Genesis browser and private classroom fixtures. The offline test covered two-tab cache removal, offline search-to-Explain, and retained downloading, seeking, and captions. Chromium covered mobile widths, both themes, and reduced motion. No physical Android device was available. The narration sample review and proposed Units and dimensions caption correction are recorded in the course inventory.
 
 Mobile screenshots: [Optics, dark](./genesis-screenshots/optics-companion-dark-360.png), [Optics, light](./genesis-screenshots/optics-companion-light-360.png), and [plant cell](./genesis-screenshots/plant-cell-360.png).
+
+## Narration correction and NEET learning quality
+
+Corrected the two confirmed Units and Dimensions omissions from the authored transcript, timing manifest and active caption track. Retained the original audio, saved progress, and legacy caption URL for existing offline copies. The new lesson and pack editions use the corrected caption URL. The retired pack navigation fallback still checks the existing public-response and completion rules.
+
+Added the Cell organization and protein transport companion to the NEET catalog, recording, and offline classroom. The written companion and Zorami share English explanations, revision cues and practice questions. Expanded three existing JEE Physics companions with worked examples and left Chemistry and timed Mathematics expansion in the inventory.
+
+Mobile screenshot: [NEET cell companion at 360 px](./genesis-screenshots/neet-cell-notes-360.png).
+
+Verification passed locally: repository checks, registry audit, 500-page Webpack production build, 280-route smoke suite at 360 px, recorded-library and JEE course checks, Genesis browser tests, and the private classroom fixture with zero paid requests. Chromium verified the upgraded Units offline track, retired-pack navigation, NEET companion quiz persistence, and offline classroom search and revision. The two-tab fixture now waits for the deletion to finish before simulating focus.

@@ -46,3 +46,7 @@ The advanced branch retains the existing no-store, private authorization, ledger
 ## Dependency audit service failures
 
 A registry DNS failure produced a JSON error and a nonzero npm exit. The wrapper cast that response as an advisory report and could print a pass with no advisory data. The wrapper now requires the fields supplied by a genuine advisory report and rejects registry errors. This protects verification in both local checks and CI. It does not change the production dependency tree or the review dates in the existing dev-only allowlist.
+
+## Narration edition cache regression
+
+The Units correction uses a new same-origin caption URL and separate individual cache edition under the existing lesson prefix. A legacy ready marker alone cannot satisfy a corrected download. Subject packs advance only if they include the corrected recording. The retired pack fallback runs only for navigation to the exact public pack path, on network failure or HTTP 404, and still requires a complete cache and a cacheable public response. The fixture checks both upgrading the individual lesson and opening a saved retired edition against a server 404.

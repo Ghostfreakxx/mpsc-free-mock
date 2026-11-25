@@ -1,3 +1,4 @@
+import { cellNotes, cellQuestions, cellRevision, cellSyllabus, cellWrittenHref } from "../../neet/classes/cell-written";
 import { getMizoTranslation } from "../../data/mizo-translations";
 import { reviewedQuestions, sources, topics } from "../../data/reviewed-content";
 import { lectures } from "../../jee/classes/lessons";
@@ -45,5 +46,13 @@ export function GET() {
       "newtons-laws": "/laboratory#force-friction", physics: "/laboratory#force-friction" };
     return { id, subject, companion, lab: labs[id], label: topic.subject, title: topic.title, notes: topic.notes, pitfall: topic.pitfall, source: sources[topic.sourceId], quiz };
   });
-  return Response.json([...lessons, memoryLesson]);
+  const cellOrganization: ReviewedLesson = {
+    id: "neet-cell-organization", subject: "science", label: "Biology", title: "Cell organization and protein transport",
+    notes: cellNotes, revision: cellRevision, source: cellSyllabus,
+    pitfall: "A replicated chromosome has two sister chromatids until they separate.",
+    lab: "/laboratory#plant-animal-cells", writtenHref: cellWrittenHref,
+    companion: { title: cellLesson.title, audio: cellLesson.audio, captions: cellLesson.subtitles, href: "/neet/classes/cell-unit-life" },
+    quiz: cellQuestions.map(({ question, options, answer, explanation }) => ({ prompt: question, choices: options, answer, explanation })),
+  };
+  return Response.json([...lessons, memoryLesson, cellOrganization]);
 }

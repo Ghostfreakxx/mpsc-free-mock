@@ -44,6 +44,15 @@ export const workEnergyCompanion: StudyLesson = {
   ],
   examples: [
     {
+      question: "A bead of mass m starts from rest at height 3R above the bottom of a vertical circular track. It loses 0.25mgR to friction before reaching the top. Find the top speed and the inward normal force there, assuming it stays on the inside of the track.",
+      steps: [
+        "The height decrease to the top is R. After the frictional loss, kinetic energy is mgR − 0.25mgR = 0.75mgR.",
+        "Thus v² = 1.5gR. At the top, both gravity and the inward normal force contribute: mg + N = mv²/R.",
+        "The resulting N is positive at the top. Checking the full path would require knowing where the energy was lost.",
+      ],
+      answer: "Top speed √(1.5gR); inward normal force 0.50mg.",
+    },
+    {
       question: "An ideal spring of 200 N/m compresses 0.10 m. Find stored energy.",
       steps: [
         "Use ½kx² = ½ × 200 × 0.10²."

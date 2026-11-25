@@ -136,6 +136,15 @@ try {
     await room.getByRole("button", { name: "Read the full lesson" }).click();
     assert.equal(await room.getByLabel("Teaching mode").inputValue(), "explain");
     await room.getByRole("heading", { name: "Volatile memory and persistent storage" }).waitFor();
+    await room.getByLabel("Teaching mode").selectOption("questions");
+    await room.getByLabel("Search subject").selectOption("Biology");
+    await room.getByLabel("Ask Zorami a question").fill("cell organization and protein transport");
+    await room.getByRole("button", { name: "Find a reviewed lesson" }).click();
+    await room.getByRole("status").getByText(/Related lesson: Cell organization and protein transport/).waitFor();
+    await room.getByRole("button", { name: "Read the full lesson" }).click();
+    await room.getByLabel("Teaching mode").selectOption("revision");
+    await room.getByText(/Secretory route/).waitFor();
+    await room.getByRole("link", { name: /Read the written companion/ }).waitFor();
     assert.equal(classroomRequests, 0);
     await context.setOffline(false);
     await room.getByLabel("Teaching mode").selectOption("explain");
@@ -145,6 +154,22 @@ try {
     await companion.evaluate(item => item.load());
     await page.waitForFunction(() => Array.from(document.querySelectorAll("audio")).some(item =>
       item.getAttribute("aria-label") === "Related class narration" && item.readyState >= 1));
+    const previousViewport = page.viewportSize();
+    await page.setViewportSize({ width: 360, height: 800 });
+    await page.goto(base + "/neet/classes/cell-unit-life/notes");
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+    const cellDiagram = page.getByRole("img", { name: /rough ER.*Golgi/ });
+    await cellDiagram.scrollIntoViewIfNeeded();
+    await page.waitForFunction(() => document.querySelector("figure img")?.naturalWidth > 0);
+    await page.getByRole("radio", { name: "12", exact: true }).check();
+    assert.match(await page.getByRole("region", { name: "Lesson practice" }).textContent(), /1 \/ 3 answered · 1 correct/);
+    await page.reload();
+    await page.getByRole("radio", { name: "12", exact: true, checked: true }).waitFor();
+    if (screenshots) {
+      await cellDiagram.scrollIntoViewIfNeeded();
+      await page.screenshot({ path: path.join(screenshots, "neet-cell-notes-360.png") });
+    }
+    if (previousViewport) await page.setViewportSize(previousViewport);
     await page.goto(base + "/jee/classes");
     const subjectDownload = page.waitForEvent("download");
     await page.getByRole("link", { name: "Download JEE Physics transcripts" }).click();
@@ -185,9 +210,22 @@ try {
     const partialPacks = await page.evaluate(async () =>
       (await caches.keys()).filter(name => name.startsWith("mpsc-free-mock-lesson-v1-")));
     assert.deepEqual(partialPacks, []);
+    const legacyLessonCache = "mpsc-free-mock-lesson-v1-" + encodeURIComponent("/jee/classes/units");
+    await page.evaluate(async name => {
+      const cache = await caches.open(name);
+      const track = "/lectures/units/english-marin-v2.vtt";
+      await cache.put(track, await fetch(track));
+      await cache.put("/lectures/__offline_ready__", new Response("saved"));
+    }, legacyLessonCache);
     await page.reload();
     await page.getByRole("button", { name: "Save lesson for offline use" }).click();
     await page.getByRole("status").getByText("Lesson saved on this device.").waitFor({ timeout: 90_000 });
+    assert.equal(await page.evaluate(async name => {
+      if (await caches.has(name)) return false;
+      const cache = await caches.open(name + "-captions-v3");
+      return Boolean(await cache.match("/lectures/units/english-marin-v3.vtt"))
+        && !await cache.match("/lectures/units/english-marin-v2.vtt");
+    }, legacyLessonCache), true);
     const audio = page.getByLabel("Class narration");
     await page.waitForFunction(() => document.querySelector("audio")?.readyState >= 1);
     const audioPath = new URL(await audio.getAttribute("src"), base).pathname;
@@ -252,6 +290,7 @@ try {
       const otherCard = otherTab.getByRole("article").filter({ hasText: /Gravitation · Chapter 1 with narration/ });
       await otherCard.getByRole("button", { name: "Remove offline pack" }).waitFor();
       await chapterPack.getByRole("button", { name: "Remove offline pack" }).click();
+      await chapterPack.getByText("Offline pack removed.").waitFor();
       await otherTab.evaluate(() => window.dispatchEvent(new Event("focus")));
       await otherCard.getByRole("button", { name: "Save offline pack" }).waitFor();
     } finally {
@@ -274,9 +313,21 @@ try {
     const retiredId = "gravity-chapter-1-v999";
     await page.evaluate(async id => {
       const cache = await caches.open("mpsc-free-mock-lesson-v1-pack-" + id);
+      const savedPublicPage = await fetch("/jee/offline-packs/gravity-chapter-1-v1");
+      await cache.put("/jee/offline-packs/" + id, savedPublicPage);
       await cache.put("/lectures/__offline_ready__", new Response("saved"));
     }, retiredId);
     await page.reload();
+    const retiredPage = await context.newPage();
+    try {
+      const restored = await retiredPage.goto(base + "/jee/offline-packs/" + retiredId);
+      assert.equal(restored.status(), 200);
+      await retiredPage.getByLabel("Narration with captions").waitFor();
+    } finally {
+      await retiredPage.close();
+    }
+    await page.getByRole("link", { name: "Open JEE Physics recorded lessons", exact: true }).waitFor();
+    assert.equal(await page.getByRole("link", { name: "Open JEE Physics recorded lessons", exact: true }).getAttribute("href"), "/jee/offline-packs/jee-physics-v2");
     await page.getByRole("button", { name: "Remove " + retiredId }).click();
     await page.getByText("Previous pack removed.").waitFor();
     await page.getByRole("heading", { name: /NEET Biology recorded lessons/ }).first().waitFor();

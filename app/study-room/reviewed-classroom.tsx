@@ -15,6 +15,8 @@ export type ReviewedLesson = {
   title: string;
   notes: string[];
   pitfall: string;
+  revision?: string[];
+  writtenHref?: string;
   source: { title: string; url: string };
   lab?: string;
   companion?: { title: string; audio: string; captions: string; href: string };
@@ -66,7 +68,7 @@ export default function ReviewedClassroom() {
   const mizoNotes = active ? translatedExplanations(active) : [];
   const displayLanguage = result?.language ?? (language === "lus" && (mode === "quiz" ? quiz?.mizo : mizoNotes.length) ? "lus" : "en");
   const notes = result?.points ?? (displayLanguage === "lus" ? mizoNotes : active?.notes ?? []);
-  const points = mode === "revision" ? [...notes.slice(0, 2), ...(displayLanguage === "en" && active?.pitfall ? [active.pitfall] : [])] : notes;
+  const points = mode === "revision" ? (displayLanguage === "en" ? active?.revision : undefined) ?? [...notes.slice(0, 2), ...(displayLanguage === "en" && active?.pitfall ? [active.pitfall] : [])] : notes;
 
   useEffect(() => {
     const controller = new AbortController();
@@ -210,6 +212,7 @@ export default function ReviewedClassroom() {
             publish(active, mode, displayLanguage, text);
             document.getElementById("classroom-lesson-title")?.focus();
           }}>Show on blackboard</button>
+          {active.writtenHref && <p><Link href={active.writtenHref} prefetch={false}>Read the written companion ↗</Link></p>}
           {active.lab && <p><Link href={active.lab} prefetch={false}>Try the related laboratory activity ↗</Link></p>}
           {active.companion && <RecordedCompanion key={active.id} companion={active.companion} />}
         </>}

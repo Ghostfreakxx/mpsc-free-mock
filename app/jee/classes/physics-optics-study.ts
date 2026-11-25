@@ -43,6 +43,15 @@ export const opticsCompanion: StudyLesson = {
   ],
   examples: [
     {
+      question: "An astronomical refracting telescope has an objective focal length of 100 cm and an eyepiece focal length of 5 cm. Find its angular magnification and lens separation in normal adjustment.",
+      steps: [
+        "For a distant object the objective forms its real image at the objective focal plane.",
+        "In normal adjustment that image is also at the eyepiece’s front focal plane. The eyepiece then sends parallel light to the eye.",
+        "Lens separation equals the sum of focal lengths. Angular magnification is −f_objective/f_eyepiece, with the minus sign for the inverted view.",
+      ],
+      answer: "Lens separation 105 cm; angular magnification −20.",
+    },
+    {
       question: "A converging thin lens has f = +10 cm and u = −30 cm. Find the image.",
       steps: [
         "Use 1/v = 1/10 − 1/30 = 1/15 in inverse centimetres."

@@ -264,7 +264,7 @@ export const lectures: Lecture[] = [
     scope: "Follows NTA JEE Main 2026 Unit 1: Units and Measurements. Covers SI units and dimensional analysis; significant figures and measurement errors continue in Class 02.",
     progressKey: `jee.units.lecture.v${units.version}`,
     audio: "/lectures/units/narration-marin-v2.mp3",
-    subtitles: "/lectures/units/english-marin-v2.vtt",
+    subtitles: "/lectures/units/english-marin-v3.vtt",
   },
   {
     id: "measurements", number: "02", title: measurements.title,

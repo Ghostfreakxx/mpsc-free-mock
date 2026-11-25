@@ -127,7 +127,7 @@ const formatTime = (value: number) => `${Math.floor(value / 60)}:${Math.floor(va
 
 export type PlayerLecture = Omit<Lecture, "subject"> & { subject?: Lecture["subject"] | "Biology"; reuse?: {unitTitle:string;mapHref:string;focus:{number:number;title:string}[];review:string;extra:string} };
 
-export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: PlayerLecture; exam?: "JEE" | "NEET" }) {
+export default function LecturePlayer({ lesson, exam = "JEE", writtenHref }: { lesson: PlayerLecture; exam?: "JEE" | "NEET"; writtenHref?: string }) {
   const { timings, progressKey } = lesson;
   const chapterStarts = lesson.segments.map((_, index) => timings.chapters?.[index]?.start ?? timings.cues.find(cue => cue.chapter === index)?.start);
   const synchronized = chapterStarts.every(start => start !== undefined);
@@ -196,6 +196,7 @@ export default function LecturePlayer({ lesson, exam = "JEE" }: { lesson: Player
       <Link href={exam === "NEET" ? "/neet/classes" : "/jee/classes"} prefetch={false}><ArrowLeft size={17} /> {exam} classes</Link>
       <Link href="/">MPSC FREE MOCK</Link>
     </header>
+    {writtenHref && <div className={styles.notes}><Link href={writtenHref} prefetch={false}>Read the written companion</Link></div>}
     <div className={styles.heading}>
       <p>{exam} · {(lesson.subject ?? "Physics").toUpperCase()} · FOUNDATION CLASS {lesson.number}</p>
       <h1>{lesson.title}</h1>
