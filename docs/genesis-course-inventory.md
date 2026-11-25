@@ -5,7 +5,7 @@ Run `node scripts/inventory-courses.mjs` for the per-recording listing. Add `--h
 | Published catalog | Recorded lessons | Written lessons | Checks performed |
 | --- | ---: | ---: | --- |
 | JEE Physics, Chemistry and Mathematics | 120 | 57 | Catalog references, chapter narration scripts, cue metadata, quizzes, nonempty audio and WebVTT |
-| NEET dedicated | 34 | — | Same recorded lesson checks |
+| NEET dedicated | 34 | 3 | Same recorded lesson checks |
 | NEET shared Physics and Chemistry | 106 mappings | — | Every mapping resolves to an existing JEE recording |
 
 The checked JEE syllabus inventory has 20 Physics, 20 Chemistry and 14 Mathematics units, with 21, 22 and 14 written lessons respectively. The inventory maps a recording to each of the 54 JEE units. All 57 written lessons have a local figure and worked examples. A lesson count alone does not measure subheading coverage. Retain the repository's [NEET Biology coverage](./neet-class-coverage-2026.md), [shared course mapping](./neet-physics-chemistry-mapping-2026.md), and [subheading audit](./neet-subheading-review-2026.md) when marking syllabus completion.
@@ -63,3 +63,18 @@ Further work should manually review the flagged number words and named terms, th
 - The first dedicated NEET Biology written companion, Cell organization and protein transport, adds a labelled secretory pathway, chromosome-count worked example, quick-revision points and three original questions. Its evidence is linked to the 2026 Biology Unit 3 baseline and the existing chapter inventory. The companion focuses on selected concepts, and the recording remains the broader lesson. The other 33 recordings remain candidates for written support.
 - Existing JEE companions now include a vertical-circle problem that separates energy from contact, normal adjustment of an astronomical telescope, and a resistivity problem using a measured V–I slope and diameter. Practical Chemistry examples and Mathematics timed practice remain follow-up work.
 - Existing Mizo drafts retain their current labels. The NEET addition uses English until a Mizo translation is available for review.
+
+## Biology written companion expansion
+
+| Recording | Written focus and verified source coverage | Remaining depth |
+| --- | --- | --- |
+| B03 Cell Cycle and Cell Division | Chapters 2–3 and 9–16 inform the n/C diagram, a worked meiosis count and three practice items. OpenStax Cell Cycle and Process of Meiosis support the distinction between DNA replication, chromosome counts and ploidy. | Prophase I substages, spindle checkpoints and more whole-cell versus pole problems. |
+| B09 Genetics and Evolution | Chapters 1–2 inform segregation, a pea test cross and conditional probability. The worked problem uses independent offspring and distinguishes a probability from proof of genotype. OpenStax Laws of Inheritance supports the cross and probability model. | Pedigrees, linkage, molecular genetics and evolution remain in their existing recordings and separate practice. |
+
+All 34 dedicated recordings remain available. These two new English companions plus the earlier cell companion provide focused written support for three recordings. Each new companion contains a figure, worked application, revision, three questions and a text download. The genetics lab illustrates a one-gene cross. The division companion links to the cell structure lab as prerequisite review.
+
+Practical Chemistry now includes a numerical example distinguishing theoretical yield, purity-corrected crude yield and recrystallization recovery. The Mathematics tab links to the existing timed JEE Main paper; a Mathematics-only timer or dedicated mixed set is still open.
+
+The first 40 seconds of Cell Cycle chapters 3 and 13 and Genetics chapters 1 and 2 were decoded locally and compared to actual scripts using Vosk. Token-sequence similarities were .775, .693, .824 and .771 respectively. The weak matches clustered around scientific terms, allele symbols and spoken numerals. No new caption mismatch was confirmed and no audio, cues, captions or existing offline-pack versions were edited.
+
+Teaching references checked for this batch: [Cell cycle](https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle), [Meiosis](https://openstax.org/books/biology-2e/pages/11-1-the-process-of-meiosis), and [Genotypes and test crosses](https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits).

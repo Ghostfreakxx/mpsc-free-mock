@@ -22,6 +22,7 @@ export default function CourseLibrary({ lectures, studyLessons }: { lectures: Re
     <nav className={styles.subjects} aria-label="Course subjects">{subjects.map(name => <button key={name} aria-pressed={subject === name} onClick={() => setSubject(name)}>{name}</button>)}</nav>
     <section aria-label={`${subject} available lessons`} className={styles.library}>
       <h2 className={styles.libraryTitle}>{subject} lessons</h2>
+      {subject === "Mathematics" && <p><Link href="/exam-simulator?exam=jee" prefetch={false}>Practise Mathematics in a timed JEE Main paper</Link></p>}
       {recordingGroups.map((group, index) => <details className={styles.recordingGroup} key={group.title} open={index === 0}>
         <summary><span>{group.title}</span><small>{group.lessons.length} {group.lessons.length === 1 ? "class" : "classes"} · {Math.floor(group.duration / 60)} min</small></summary>
         {group.lessons.map(lesson => <article key={lesson.id}>

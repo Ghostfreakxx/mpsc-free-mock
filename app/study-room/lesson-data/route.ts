@@ -1,3 +1,6 @@
+import { biologyCompanions, biologyNotesHref } from "../../neet/classes/biology-companions";
+import { divisionLesson } from "../../neet/classes/cell-division-lesson";
+import { geneticsEvolutionLesson } from "../../neet/classes/genetics-evolution-lesson";
 import { cellNotes, cellQuestions, cellRevision, cellSyllabus, cellWrittenHref } from "../../neet/classes/cell-written";
 import { getMizoTranslation } from "../../data/mizo-translations";
 import { reviewedQuestions, sources, topics } from "../../data/reviewed-content";
@@ -54,5 +57,19 @@ export function GET() {
     companion: { title: cellLesson.title, audio: cellLesson.audio, captions: cellLesson.subtitles, href: "/neet/classes/cell-unit-life" },
     quiz: cellQuestions.map(({ question, options, answer, explanation }) => ({ prompt: question, choices: options, answer, explanation })),
   };
-  return Response.json([...lessons, memoryLesson, cellOrganization]);
+  const biologyRecordings = [divisionLesson, geneticsEvolutionLesson];
+  const writtenBiology: ReviewedLesson[] = biologyCompanions.map(item => {
+    const recording = biologyRecordings.find(candidate => candidate.id === "neet-" + item.id);
+    if (!recording) throw new Error("Missing Biology recording: " + item.id);
+    return {
+      id: "neet-written-" + item.id, title: item.title, label: "Biology", subject: "science",
+      notes: item.sections.slice(0, -1).flatMap(section => section.paragraphs),
+      revision: item.sections.at(-1)?.paragraphs,
+      pitfall: item.sections[0].paragraphs[0], source: item.reference, lab: item.lab.href,
+      writtenHref: biologyNotesHref(item.id),
+      companion: { title: recording.title, audio: recording.audio, captions: recording.subtitles, href: "/neet/classes/" + item.id },
+      quiz: item.quiz.map(({ question, options, answer, explanation }) => ({ prompt: question, choices: options, answer, explanation })),
+    };
+  });
+  return Response.json([...lessons, memoryLesson, cellOrganization, ...writtenBiology]);
 }

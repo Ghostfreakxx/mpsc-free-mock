@@ -63,7 +63,7 @@ export function InheritanceLab() {
   const [second, setSecond] = useState<PeaGenotype>("Yy");
   const outcomes = peaCross(first, second);
   const yellow = outcomes.filter(item => item !== "yy").length;
-  return <Experiment title="Biology · Pea-seed inheritance" onReset={() => { setFirst("Yy"); setSecond("Yy"); }}
+  return <Experiment id="pea-seed-inheritance" title="Biology · Pea-seed inheritance" onReset={() => { setFirst("Yy"); setSecond("Yy"); }}
     lesson="/neet/classes/genetics-evolution" question="For Yy × Yy, what fraction of predicted seeds are green?"
     choices={["1/4", "1/2", "3/4"]} answer={0} feedback="One of the four equally likely combinations is yy.">
     <p>Change the parent genotypes to predict seed colour for one gene under complete dominance. Y represents yellow and y represents green. These are probabilities for each offspring.</p>

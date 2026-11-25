@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280">
+  <title>Cell counting diagram: the diploid cell is 2n, 2C in G1 and 2n, 4C after S phase. Each daughter is n, 2C after meiosis I and n, 1C after meiosis II.</title>
+  <rect width="640" height="280" fill="#f7f5ed"/>
+  <g font-family="system-ui, sans-serif" text-anchor="middle" fill="#1b3843" font-size="24">
+    <rect x="13" y="18" width="278" height="100" rx="10" fill="none" stroke="#285b6a" stroke-width="2"/>
+    <text x="152" y="61">G1</text><text x="152" y="94">2n, 2C</text>
+    <rect x="349" y="18" width="278" height="100" rx="10" fill="none" stroke="#285b6a" stroke-width="2"/>
+    <text x="488" y="61">After S</text><text x="488" y="94">2n, 4C</text>
+    <rect x="13" y="158" width="278" height="100" rx="10" fill="none" stroke="#285b6a" stroke-width="2"/>
+    <text x="152" y="201">After meiosis I</text><text x="152" y="234">n, 2C</text>
+    <rect x="349" y="158" width="278" height="100" rx="10" fill="none" stroke="#285b6a" stroke-width="2"/>
+    <text x="488" y="201">After meiosis II</text><text x="488" y="234">n, 1C</text>
+  </g>
+</svg>

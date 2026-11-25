@@ -145,6 +145,13 @@ try {
     await room.getByLabel("Teaching mode").selectOption("revision");
     await room.getByText(/Secretory route/).waitFor();
     await room.getByRole("link", { name: /Read the written companion/ }).waitFor();
+    await room.getByLabel("Teaching mode").selectOption("questions");
+    await room.getByLabel("Ask Zorami a question").fill("Mendelian test crosses conditional probability");
+    await room.getByRole("button", { name: "Find a reviewed lesson" }).click();
+    await room.getByRole("status").getByText(/Related lesson: Mendelian test crosses and conditional probability/).waitFor();
+    await room.getByRole("button", { name: "Read the full lesson" }).click();
+    await room.getByLabel("Teaching mode").selectOption("revision");
+    await room.getByText("A test cross uses a homozygous recessive partner.").waitFor();
     assert.equal(classroomRequests, 0);
     await context.setOffline(false);
     await room.getByLabel("Teaching mode").selectOption("explain");
@@ -168,6 +175,24 @@ try {
     if (screenshots) {
       await cellDiagram.scrollIntoViewIfNeeded();
       await page.screenshot({ path: path.join(screenshots, "neet-cell-notes-360.png") });
+    }
+    for (const [slug, answer] of [["cell-cycle-division", "12"], ["genetics-evolution", "2/3"]]) {
+      await page.goto(base + "/neet/classes/written/" + slug);
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+      const diagram = page.locator("figure img");
+      await diagram.scrollIntoViewIfNeeded();
+      await page.waitForFunction(() => document.querySelector("figure img")?.naturalWidth > 0);
+      const fileEvent = page.waitForEvent("download");
+      await page.getByRole("button", { name: "Download notes" }).click();
+      const file = await fileEvent;
+      assert.equal(file.suggestedFilename(), "neet-" + slug + "-notes.txt");
+      assert.match(await readFile(await file.path(), "utf8"), /Quick revision[\s\S]*ANSWER KEY/);
+      await page.getByRole("region", { name: "Lesson practice" }).locator("fieldset").first().getByRole("radio", { name: answer, exact: true }).check();
+      assert.match(await page.getByRole("region", { name: "Lesson practice" }).textContent(), /1 \/ 3 answered · 1 correct/);
+      if (screenshots) {
+        await diagram.scrollIntoViewIfNeeded();
+        await page.screenshot({ path: path.join(screenshots, "neet-written-" + slug + "-360.png") });
+      }
     }
     if (previousViewport) await page.setViewportSize(previousViewport);
     await page.goto(base + "/jee/classes");

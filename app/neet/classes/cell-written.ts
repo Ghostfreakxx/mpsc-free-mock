@@ -35,6 +35,6 @@ export const cellQuestions = [
 ];
 
 export const cellSyllabus = {
-  title: "NTA NEET UG 2026 syllabus, Biology Unit 3",
+  title: "NTA NEET UG 2026 syllabus",
   url: "https://neet.nta.nic.in/document/syllabus-for-neet-ug-2026-examination/",
 };

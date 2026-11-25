@@ -107,3 +107,7 @@ Added the Cell organization and protein transport companion to the NEET catalog,
 Mobile screenshot: [NEET cell companion at 360 px](./genesis-screenshots/neet-cell-notes-360.png).
 
 Verification passed locally: repository checks, registry audit, 500-page Webpack production build, 280-route smoke suite at 360 px, recorded-library and JEE course checks, Genesis browser tests, and the private classroom fixture with zero paid requests. Chromium verified the upgraded Units offline track, retired-pack navigation, NEET companion quiz persistence, and offline classroom search and revision. The two-tab fixture now waits for the deletion to finish before simulating focus.
+
+## NEET Biology expansion
+
+Added focused written companions on chromosome counting and Mendelian test crosses with diagrams, original practice, text downloads, and offline classroom integration. Existing recorded content and saved keys are unchanged. The course inventory records the companion boundaries, the local sample narration pass and outstanding course work.
