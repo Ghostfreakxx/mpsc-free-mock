@@ -34,3 +34,9 @@ Enumerated remote branch names and inspected current routes, local API history, 
 The production-build Playwright fixture confirmed the effective dashboard CSP and no-store header, rejected a fixture credential, and found no dashboard response in Cache Storage. A saved public recording still reloaded, played, sought, and displayed captions offline. The quota fixture removed an incomplete pack. The browser checked transcript downloads and the circuit's keyboard-adjustable values at 360, 768, and 1440 pixels.
 
 On the local Chromium mobile simulation at 360 px, with 4× CPU throttling, 150 ms network latency and a 1.6 Mbps download limit, controls appeared in 2.73 s for the classroom, 0.80 s for the laboratory, and 0.91 s for the sample lecture. All three measured 360 px wide. No Android hardware was available.
+
+## Offline pack follow-up
+
+The install-time precache now applies the same public-response checks as the fetch handler, with credentials and redirects disabled. A local fixture verifies that a private response is skipped during install. The explicit download validator is shared by individual recordings and the new chapter and subject packs. Its fixture rejects private or no-store responses, unexpected media, a mismatched reported audio size, and paths outside the same-origin public fetch boundary before writing cache entries.
+
+Hashed script and style requests can now recover from an explicit saved lesson after the general static cache is cleared. Standalone pack pages do not enter the passive navigation cache, and their HTML uses a deny-by-default policy with same-origin media only. Existing administrator and paid-generation policies remain unchanged.

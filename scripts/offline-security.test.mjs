@@ -35,3 +35,54 @@ test("only full public same-origin responses are eligible for offline storage", 
     assert.equal(eligible({ ...response, headers: new Headers({ "Cache-Control": directive }) }), false);
   }
 });
+
+test("explicit downloads reject private, incomplete, or misidentified responses before writing", async t => {
+  Object.defineProperty(globalThis, "location", { configurable: true, value: { origin: "http://localhost" } });
+  t.after(() => { delete globalThis.location; });
+  const { cachePublicFile } = await import("../app/jee/classes/offline-file.ts");
+  const cache = { put: t.mock.fn(async () => {}) };
+  let headers = new Headers({ "Content-Type": "audio/mpeg", "Content-Length": "16" });
+  const upstream = t.mock.method(globalThis, "fetch", async (_path, options) => {
+    assert.equal(options.credentials, "omit");
+    assert.equal(options.redirect, "error");
+    return { status: 200, type: "basic", redirected: false, headers };
+  });
+  const signal = new AbortController().signal;
+  await assert.rejects(cachePublicFile(cache, "/api/admin/teacher-usage", "html", signal));
+  await assert.rejects(cachePublicFile(cache, "//other.invalid/audio.mp3", "audio", signal));
+  assert.equal(upstream.mock.callCount(), 0);
+  headers.set("Cache-Control", "private, no-store");
+  await assert.rejects(cachePublicFile(cache, "/lectures/fixture.mp3", "audio", signal, 16));
+  headers.delete("Cache-Control");
+  await assert.rejects(cachePublicFile(cache, "/lectures/fixture.mp3", "audio", signal, 20));
+  headers.set("Content-Type", "text/html");
+  await assert.rejects(cachePublicFile(cache, "/lectures/fixture.mp3", "audio", signal, 16));
+  assert.equal(cache.put.mock.callCount(), 0);
+  headers.set("Content-Type", "audio/mpeg");
+  await cachePublicFile(cache, "/lectures/fixture.mp3", "audio", signal, 16);
+  assert.equal(cache.put.mock.callCount(), 1);
+});
+
+test("initial precache fetches public pages without credentials and skips private responses", async () => {
+  const handlers = {};
+  const stored = [];
+  const self = {
+    addEventListener(name, callback) { handlers[name] = callback; },
+    async skipWaiting() {},
+  };
+  runInNewContext(source, {
+    self,
+    caches: { async open() { return { async put(url) { stored.push(url); } }; } },
+    async fetch(url, options) {
+      assert.equal(options.credentials, "omit");
+      assert.equal(options.redirect, "error");
+      return { status: 200, type: "basic", redirected: false,
+        headers: new Headers({ "Cache-Control": url === "/" ? "private, no-store" : "public" }) };
+    },
+  });
+  let install;
+  handlers.install({ waitUntil(promise) { install = promise; } });
+  await install;
+  assert.ok(stored.includes("/jee"));
+  assert.ok(!stored.includes("/"));
+});

@@ -61,9 +61,13 @@ const urlsToCache = [
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then((cache) => cache.addAll(urlsToCache))
-      .then(() => self.skipWaiting()),
+    caches.open(CACHE_NAME).then(async cache => {
+      await Promise.allSettled(urlsToCache.map(async url => {
+        const response = await fetch(url, { credentials: "omit", redirect: "error" });
+        if (cacheableResponse(response)) await cache.put(url, response);
+      }));
+      await self.skipWaiting();
+    }),
   );
 });
 
@@ -90,7 +94,16 @@ self.addEventListener("fetch", (event) => {
   }
 
   const url = new URL(request.url);
-  if (url.pathname.startsWith("/lectures/") && !url.search && (["audio", "track"].includes(request.destination) || request.headers.has("range"))) {
+  const packPage = /^\/jee\/offline-packs\/[a-z0-9-]+$/.test(url.pathname);
+  if (packPage) {
+    if (request.mode === "navigate" && !url.search && request.headers.get("RSC") !== "1") {
+      event.respondWith(fetch(request).catch(async () => (await savedLessonFile(request)) ?? Response.error()));
+    }
+    return;
+  }
+  const packCaptions = /^\/jee\/offline-packs\/[a-z0-9-]+\/captions$/.test(url.pathname);
+  if (!url.search && (packCaptions || (url.pathname.startsWith("/lectures/")
+    && (["audio", "video", "track"].includes(request.destination) || request.headers.has("range"))))) {
     event.respondWith(savedLessonFile(request).then(response => response ? mediaRange(request, response) : fetch(request)));
     return;
   }
@@ -105,7 +118,7 @@ self.addEventListener("fetch", (event) => {
           event.waitUntil(trimCache(cache, STATIC_LIMIT));
         }
         return response;
-      })),
+      }).catch(async () => (await savedLessonFile(request)) ?? Response.error())),
     );
     return;
   }

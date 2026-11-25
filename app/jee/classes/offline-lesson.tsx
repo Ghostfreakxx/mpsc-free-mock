@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { cachePublicFile } from "./offline-file";
 import styles from "./lecture.module.css";
 
 const prefix = "mpsc-free-mock-lesson-v1-";
@@ -71,15 +72,8 @@ export default function OfflineLesson({ audio, captions }: { audio: string; capt
           const files = [...new Set([route, audio, captions, ...buildAssets()])];
           setProgress({ total: files.length, done: 0 });
           for (const [index, file] of files.entries()) {
-            const response = await fetch(file, { cache: "reload", credentials: "omit", redirect: "error", signal: request.signal });
-            const type = response.headers.get("Content-Type") ?? "";
-            const expected = file === route ? /^text\/html\b/i : file === audio ? /^audio\/mpeg\b/i
-              : file === captions ? /^text\/vtt\b/i : /^(?:text\/css|(?:text|application)\/javascript|font\/|application\/font-)/i;
-            if (response.status !== 200 || response.redirected || !expected.test(type)
-              || /(?:^|,)\s*(?:private|no-store)\b/i.test(response.headers.get("Cache-Control") ?? "")) {
-              throw new Error("A public lesson file could not be verified.");
-            }
-            await cache.put(file, response);
+            const kind = file === route ? "html" : file === audio ? "audio" : file === captions ? "captions" : "asset";
+            await cachePublicFile(cache, file, kind, request.signal);
             setProgress({ total: files.length, done: index + 1 });
           }
           request.signal.throwIfAborted();

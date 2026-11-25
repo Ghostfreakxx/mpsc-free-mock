@@ -23,6 +23,7 @@ export default function ClassLibrary() {
     <CourseLibrary lectures={lectures} studyLessons={studyLessons} />
     <section className={styles.notes} aria-label="Download subject transcripts">
       <h2>Offline subject transcripts</h2>
+      <p><Link href="/jee/offline-learning" prefetch={false}>Open offline audio and caption packs</Link></p>
       <p>Download a text copy of the recorded lessons for an entire JEE subject.</p>
       <ul>{subjects.map(subject => <li key={subject}>
         <a href={`/jee/classes/transcripts/${subject.toLowerCase()}`} download>Download JEE {subject} transcripts</a>

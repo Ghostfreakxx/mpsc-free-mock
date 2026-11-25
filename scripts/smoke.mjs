@@ -6,7 +6,7 @@ import { chromium } from 'playwright';
 const base = process.env.SMOKE_URL || 'http://localhost:3000';
 const pages = ['/neet/mock-test', '/neet/classes/biology-practice', '/neet/classes/physics-chemistry/practice', '/', '/mock-test', '/mizo', '/neet', '/neet/classes', '/neet/classes/cell-unit-life', '/neet/classes/biomolecules', '/neet/classes/cell-cycle-division', '/neet/classes/diversity-living-world', '/neet/classes/structural-organisation', '/neet/classes/plant-physiology', '/neet/classes/human-physiology', '/neet/classes/reproduction', '/neet/classes/genetics-evolution', '/neet/classes/human-welfare', '/neet/classes/biotechnology', '/neet/classes/ecology', '/neet/classes/physics-vectors', '/neet/classes/chemistry-closeout', '/neet/classes/physics-chemistry/review', '/neet/classes/physics-chemistry', '/neet/classes/physics-chemistry/physics', '/neet/classes/physics-chemistry/chemistry', '/jee', '/cuet-pg', '/nursing', '/college-notes', '/downloads', '/exam-simulator', '/law/mjs', '/trading', '/trading/learn', '/terms', '/jee/classes', '/jee/classes/units', '/jee/classes/measurements'];
 const sharedMap = JSON.parse((await import('node:fs')).readFileSync(new URL('../app/data/neet-physics-chemistry-map.json', import.meta.url), 'utf8'));
-pages.push('/study-room', '/laboratory');
+pages.push('/study-room', '/laboratory', '/jee/offline-learning', '/jee/offline-packs/gravity-chapter-1-v1');
 pages.push(...sharedMap.recordings.map(r => '/neet/classes/shared/' + r.id));
 const failures = [];
 const check = (condition, message) => { if (!condition) failures.push(message); };
@@ -49,6 +49,7 @@ for (const agent of ['Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google
 check((await get('/question-bank/mpsc', { 'sec-fetch-site': 'cross-site' })).status === 403, 'another website could load the question bank');
 check((await get('/question-bank/mpsc', { 'sec-fetch-site': 'same-origin' })).status === 200, 'the site could not load its own question bank');
 check((await get('/study-room/lesson-data', { 'sec-fetch-site': 'cross-site' })).status === 403, 'another website could load the classroom pack');
+check((await get('/jee/offline-packs/gravity-chapter-1-v1', { 'sec-fetch-site': 'cross-site' })).status === 403, 'another website could load the offline media pack');
 const robots = await fetch(`${base}/robots.txt`);
 check(robots.status === 200 && /User-Agent: GPTBot/i.test(await robots.text()), 'robots.txt does not turn away AI crawlers');
 check((await get('/terms')).status === 200, 'terms page is missing');
@@ -188,16 +189,17 @@ try {
   }
 
   await page.goto(base + '/laboratory');
-  const speed = page.getByRole('slider', { name: 'Launch speed' });
+  const motionLab = page.getByRole('article').filter({ has: page.getByLabel('Physics experiment') });
+  const speed = motionLab.getByRole('slider', { name: 'Launch speed' });
   await speed.press('End');
   check(await speed.inputValue() === '35', 'projectile speed is not keyboard adjustable');
   check(await speed.getAttribute('aria-valuetext') === '35 m/s', 'projectile speed does not announce its unit');
-  await page.getByRole('button', { name: 'Reset experiment' }).click();
+  await motionLab.getByRole('button', { name: 'Reset experiment' }).click();
   check(await speed.inputValue() === '18', 'experiment reset did not restore launch speed');
-  await page.getByLabel('Physics experiment').selectOption('pendulum');
-  await page.getByText(/Period: /).waitFor();
-  await page.getByRole('radio', { name: 'It doubles.' }).check();
-  await page.getByRole('status').getByText(/Correct/).waitFor();
+  await motionLab.getByLabel('Physics experiment').selectOption('pendulum');
+  await motionLab.getByText(/Period: /).waitFor();
+  await motionLab.getByRole('radio', { name: 'It doubles.' }).check();
+  await motionLab.getByRole('status').getByText(/Correct/).waitFor();
 
   // 4. A practice answer and a short simulator paper work end to end.
   await page.goto(`${base}/mock-test`);

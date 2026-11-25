@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { searchLessons } from "../app/study-room/lesson-search.ts";
+import { atomCounts, meridianArc, peaCross, quadraticRoots, quadraticValue, simpleMajority } from "../app/laboratory/lab-models.ts";
 import { resistiveCircuit } from "../app/laboratory/circuit.ts";
 import { pendulum, projectile } from "../app/laboratory/motion.ts";
 
@@ -43,4 +44,22 @@ test("ideal DC networks preserve the expected voltage and current sums", () => {
   const parallel = resistiveCircuit(12, 6, 6, true);
   assert.equal(parallel.resistance, 3);
   assert.equal(parallel.firstCurrent + parallel.secondCurrent, parallel.current);
+});
+
+test("lab models distinguish isotopes, Mendelian ratios, and real roots", () => {
+  assert.deepEqual(atomCounts(6, 7, 5), { massNumber: 13, charge: 1 });
+  assert.deepEqual(peaCross("Yy", "yy"), ["Yy", "Yy", "yy", "yy"]);
+  assert.deepEqual(peaCross("YY", "yy"), ["Yy", "Yy", "Yy", "Yy"]);
+  assert.deepEqual(quadraticRoots(1, 2, -4), [0, 4]);
+  assert.deepEqual(quadraticRoots(1, 2, 1), []);
+  assert.deepEqual(quadraticRoots(-1, -2, 0), [-2]);
+  assert.equal(quadraticValue(2, -1, 4, -1), 4);
+});
+
+test("majorities and meridian distances use the correct denominators", () => {
+  assert.deepEqual(simpleMajority(40, 39), { cast: 79, threshold: 40, passed: true });
+  assert.equal(simpleMajority(3, 3).passed, false);
+  assert.equal(simpleMajority(0, 0).threshold, null);
+  assert.equal(meridianArc(20, -30).degrees, 50);
+  assert.ok(Math.abs(meridianArc(0, 90).kilometres - 10007.54) < 0.01);
 });

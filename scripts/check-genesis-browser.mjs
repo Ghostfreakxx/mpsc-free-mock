@@ -36,6 +36,32 @@ try {
       if (screenshots) await circuit.screenshot({ path: path.join(screenshots, `circuit-${width}.png`) });
       await circuit.getByRole("button", { name: "Reset circuit" }).click();
       await circuit.getByText(/Equivalent resistance 12.00 Ω/).waitFor();
+      const atomic = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "Chemistry · Isotopes and ions" }) });
+      await atomic.getByRole("slider", { name: "Neutrons" }).press("ArrowRight");
+      await atomic.getByText("C-13", { exact: true }).waitFor();
+      const peas = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "Biology · Pea-seed inheritance" }) });
+      await peas.getByLabel("First pea plant").selectOption("yy");
+      await peas.getByText("50% yellow · 50% green.").waitFor();
+      const graph = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "Mathematics · Quadratic graphs" }) });
+      await graph.getByRole("slider", { name: "Vertical shift k" }).press("ArrowRight");
+      await graph.getByText(/Real roots: 0.00/).waitFor();
+      if (screenshots && width === 360) {
+        for (const [panel, name] of [[atomic, "isotopes"], [peas, "pea-inheritance"], [graph, "quadratic"]]) {
+          await panel.screenshot({ path: path.join(screenshots, name + "-360.png") });
+        }
+      }
+      await graph.getByRole("button", { name: "Reset experiment" }).click();
+      await graph.getByText(/Real roots: -1.00, 1.00/).waitFor();
+      const civic = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "Political Science · Simple-majority votes" }) });
+      await civic.getByRole("slider", { name: "Yes votes" }).press("Home");
+      await civic.getByText(/The motion does not pass/).waitFor();
+      const geography = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "Geography · Distance along a meridian" }) });
+      await geography.getByRole("slider", { name: "First latitude" }).press("Home");
+      await geography.getByText(/67° apart/).waitFor();
+      if (screenshots && width === 360) {
+        await civic.screenshot({ path: path.join(screenshots, "majority-360.png") });
+        await geography.screenshot({ path: path.join(screenshots, "meridian-360.png") });
+      }
     } finally {
       await page.close();
     }
@@ -134,6 +160,7 @@ try {
     const audio = page.getByLabel("Class narration");
     await page.waitForFunction(() => document.querySelector("audio")?.readyState >= 1);
     const audioPath = new URL(await audio.getAttribute("src"), base).pathname;
+    await page.evaluate(() => caches.delete("mpsc-free-mock-static"));
     await context.setOffline(true);
     await page.reload();
     await page.getByRole("button", { name: "Remove offline lesson" }).waitFor();
@@ -153,11 +180,75 @@ try {
     await audio.evaluate(item => item.pause());
     await page.getByRole("button", { name: "Remove offline lesson" }).click();
     await page.getByRole("status").getByText(/Offline lesson removed/).waitFor();
+    await context.setOffline(false);
+    await page.goto(base + "/jee/offline-learning");
+    await page.waitForFunction(() => navigator.serviceWorker.controller);
+    const chapterPack = page.getByRole("article").filter({ hasText: /Gravitation · Chapter 1 with narration/ });
+    await chapterPack.getByRole("button", { name: "Save offline pack" }).click();
+    await chapterPack.getByText("Offline pack saved. Open the pack to study.").waitFor();
+    const chapterUrl = await chapterPack.getByRole("link").getAttribute("href");
+    const packName = "mpsc-free-mock-lesson-v1-pack-gravity-chapter-1-v1";
+    await context.setOffline(true);
+    const clipRange = await page.evaluate(async url => {
+      const result = await fetch(url, { headers: { Range: "bytes=0-15" } });
+      return [result.status, (await result.arrayBuffer()).byteLength];
+    }, "/lectures/gravity/chapter-01.mp3");
+    assert.deepEqual(clipRange, [206, 16]);
+    const vtt = await page.evaluate(async url => (await fetch(url + "/captions")).text(), chapterUrl);
+    assert.match(vtt, /^WEBVTT\n\n00:00:00.000 -->/);
+    const cachedPage = await page.goto(base + chapterUrl);
+    assert.match(cachedPage.headers()["content-security-policy"], /default-src 'none'/);
+    await page.getByRole("heading", { name: "One force law, from apples to planets" }).waitFor();
+    const recording = page.getByLabel("Narration with captions");
+    assert.equal(await recording.getAttribute("src"), "/lectures/gravity/chapter-01.mp3");
+    await recording.evaluate(item => item.load());
+    await page.waitForFunction(() => document.querySelector("video")?.readyState >= 1);
+    const duration = await recording.evaluate(item => item.duration);
+    assert.ok(Math.abs(duration - 75) < 0.25, `Chapter clip duration ${duration} differs from cues`);
+    await recording.evaluate(item => { item.currentTime = 30; });
+    await page.waitForFunction(() => document.querySelector("video")?.currentTime >= 30);
+    await page.getByText("Read the transcript and notes", { exact: true }).click();
+    await recording.evaluate(async item => { await item.play(); });
+    await page.waitForFunction(() => { const item = document.querySelector("video"); return item && item.currentTime > 30 && !item.seeking; });
+    await page.waitForFunction(() => (document.querySelector("video")?.textTracks[0]?.cues?.length ?? 0) > 0);
+    await recording.evaluate(item => item.pause());
+    if (screenshots) await page.screenshot({ path: path.join(screenshots, "offline-gravity-pack.png") });
+    await context.setOffline(false);
+    await page.goto(base + "/jee/offline-learning");
+    await chapterPack.getByRole("button", { name: "Remove offline pack" }).click();
+    await chapterPack.getByText("Offline pack removed.").waitFor();
+    assert.equal(await page.evaluate(name => caches.has(name), packName), false);
+    const gravityTiming = JSON.parse(await readFile(new URL("../app/data/jee-gravity-timings.json", import.meta.url), "utf8"));
+    for (const [i, timing] of gravityTiming.chapters.entries()) {
+      await page.goto(base + "/jee/offline-packs/gravity-chapter-" + (i + 1) + "-v1");
+      const media = page.getByLabel("Narration with captions");
+      await media.evaluate(item => item.load());
+      await page.waitForFunction(() => document.querySelector("video")?.readyState >= 1);
+      const actual = await media.evaluate(item => item.duration);
+      assert.ok(Math.abs(actual - (timing.end - timing.start)) < 0.25,
+        `Gravity chapter ${i + 1} has ${actual}s audio and ${timing.end - timing.start}s cues`);
+    }
+    await page.goto(base + "/jee/offline-learning");
+
+    const subjectPack = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "JEE Mathematics recorded lessons" }) });
+    await subjectPack.getByRole("button", { name: "Save offline pack" }).click();
+    await subjectPack.getByText("Offline pack saved. Open the pack to study.").waitFor({ timeout: 180_000 });
+    const subjectUrl = await subjectPack.getByRole("link").getAttribute("href");
+    await context.setOffline(true);
+    await page.goto(base + subjectUrl);
+    await page.getByRole("heading", { name: "JEE Mathematics recorded lessons" }).waitFor();
+    assert.ok(await page.locator("video").count() > 10);
+    await page.locator("video").first().evaluate(item => item.load());
+    await page.waitForFunction(() => document.querySelector("video")?.readyState >= 1);
+    await context.setOffline(false);
+    await page.goto(base + "/jee/offline-learning");
+    await subjectPack.getByRole("button", { name: "Remove offline pack" }).click();
+    await subjectPack.getByText("Offline pack removed.").waitFor();
   } finally {
     await context.close();
   }
 
-  console.log("Genesis checks passed: three viewport sizes, both themes, classroom offline reload, synchronized lecture blackboard, offline lecture reload, partial audio, playback, seek, captions and removal.");
+  console.log("Genesis checks passed: three viewport sizes, both themes, classroom offline reload, synchronized lecture blackboard, offline lecture reload, partial audio, playback, seek, captions, individual/chapter/subject removal, and eight lab activities.");
 } finally {
   await browser.close();
 }

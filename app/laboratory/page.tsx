@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CircuitLab from "./circuit-lab";
+import { AtomicLab, CivicLab, GeographyLab, InheritanceLab, QuadraticLab } from "./science-labs";
 import Laboratory from "./laboratory";
 import styles from "../study-room/study-room.module.css";
 
@@ -16,6 +17,11 @@ export default function LaboratoryPage() {
         <h1 id="lab-heading" className={styles.labTitle}>Tochhawng Virtual Laboratory</h1>
         <Laboratory />
         <CircuitLab />
+        <AtomicLab />
+        <InheritanceLab />
+        <QuadraticLab />
+        <CivicLab />
+        <GeographyLab />
       </section>
     </main>
   );

@@ -49,6 +49,9 @@ const nextConfig: NextConfig = {
       { source: "/api/admin/teacher-usage", headers: [
         { key: "Content-Security-Policy", value: "default-src 'none'; style-src 'unsafe-inline'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'" },
       ] },
+      { source: "/jee/offline-packs/:path*", headers: [
+        { key: "Content-Security-Policy", value: "default-src 'none'; style-src 'unsafe-inline'; media-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'" },
+      ] },
       // Data files are for the site's own pages: keep them out of search results and caches of copies.
       { source: "/question-bank/:path*", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow, noarchive, noai" }] },
     ];

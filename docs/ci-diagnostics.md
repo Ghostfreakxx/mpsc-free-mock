@@ -1,0 +1,7 @@
+# Draft PR #62 CI diagnostics
+
+GitHub reports workflow `370469023` (`CI`) as **active**. Commit `670ebfc` triggered PR run **#263**, with event `pull_request`. The Linux check job completed successfully through checkout, Node setup, npm install, lint, tests, dependency audit, and production build. These observations confirm that the workflow is enabled, accepts this draft PR, and can run the declared actions. [Workflow](https://github.com/Ghostfreakxx/mpsc-free-mock/actions/workflows/ci.yml) · [Run #263](https://github.com/Ghostfreakxx/mpsc-free-mock/actions/runs/45489817190)
+
+An empty combined commit-status list is not a reliable indication that Actions did not run. The Actions workflow-run endpoint and the PR Checks tab are the useful views here. The PR has no draft exclusion. The `pull_request` trigger uses GitHub's default opened, synchronize, and reopened activities, and workflows normally check the PR merge ref. No repository setting was changed. The public API exposed the workflow state. The administrator-only permissions policy was unavailable through that public route. [GitHub pull-request triggers](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#pull_request)
+
+The browser job now includes the Genesis integration script and the local private-classroom fixture. It explicitly disables paid AI and voice. Existing check, production build, audit, smoke, and recorded-course steps remain in place. Keep using the direct run link or PR Checks when reporting CI status.

@@ -56,3 +56,16 @@ See [the security audit](./security-audit.md) for the comparison with main, loca
 The individual recording-download flow is retained. Chapter-only narrated packs and bulk subject packs still need a manifest with versioned assets, storage rules, and progress through partial failures. Use the existing media audit and offline seek fixture as regressions before publishing those packs.
 
 Chapter notes can now be downloaded individually from the lecture player, and the JEE library offers full text transcript downloads for Physics, Chemistry, and Mathematics. These text files remain readable outside the app. Individual audio packs remain available in the player. Chapter-only audio and bundled subject audio packs are still outstanding.
+
+## CI, media packs, and cross-subject laboratories
+
+- GitHub reported the CI workflow active and accepted the draft PR event. Use Actions run records or the PR Checks tab when the combined status list is empty. The CI browser job now runs the Genesis and zero-paid-request fixtures. [CI diagnostics](./ci-diagnostics.md)
+- The offline library offers full JEE recorded subject media packs and individual Gravitation chapters with rebased captions. Existing individual lesson downloads remain in place. Additional chapter manifests, NEET subject packs, retired-version management and physical-device storage testing remain. [Offline media packs](./genesis-offline-packs.md)
+- The new chemistry, biology and mathematics labs cover isotope and ion counts, simple pea inheritance and quadratic graphs. A simple-majority assembly and a spherical meridian model extend the lab to political science and geography. Other models remain in the syllabus inventory. [Laboratory inventory](./genesis-laboratory-inventory.md)
+- The current routing, Vercel configuration and environment template contain no active live lecture configuration. Continue only after locating an owning repository and route or an integration document with the authentication and fixture contract. The retired voice audition still has no connection to the live lecture requirement.
+
+## Verification for this pass
+
+- Local checks, registry audit, Webpack production build, the 271-route smoke suite, the recorded-library and JEE course checks, and the private zero-paid-request fixture passed. The default Windows Turbopack build still exits in its worker.
+- Chromium verified all eight lab activities, the existing individual recording after clearing the general static cache, and chapter and Mathematics subject packs. The chapter played and sought offline with native captions. The Mathematics pack saved all 14 recordings and loaded its first audio stream offline. All five Gravitation MP3 durations matched their published chapter cues within 0.25 seconds. Spoken-word alignment and wider syllabus review remain open.
+- At simulated 360 px with 4× CPU slowdown, 150 ms latency and 1.6 Mbps downstream, lab controls appeared in 0.98 s and offline-library controls in 2.69 s. Physical Android hardware was unavailable.

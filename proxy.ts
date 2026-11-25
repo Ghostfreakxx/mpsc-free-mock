@@ -39,7 +39,7 @@ const blockedPattern = new RegExp(
 );
 
 // Paths whose files only this site's own pages should load.
-const ownPagesOnly = /^\/(?:question-bank\/|lectures\/|api\/|study-room\/lesson-data$)/;
+const ownPagesOnly = /^\/(?:question-bank\/|lectures\/|api\/|jee\/offline-packs\/|study-room\/lesson-data$)/;
 
 export function isBlockedAgent(userAgent: string | null): boolean {
   const agent = (userAgent ?? "").trim();
