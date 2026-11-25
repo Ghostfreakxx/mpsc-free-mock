@@ -5,7 +5,7 @@ Run `node scripts/inventory-courses.mjs` for the per-recording listing. Add `--h
 | Published catalog | Recorded lessons | Written lessons | Checks performed |
 | --- | ---: | ---: | --- |
 | JEE Physics, Chemistry and Mathematics | 120 | 57 | Catalog references, chapter narration scripts, cue metadata, quizzes, nonempty audio and WebVTT |
-| NEET dedicated | 34 | 6 | Same recorded lesson checks |
+| NEET dedicated | 34 | 8 | Same recorded lesson checks |
 | NEET shared Physics and Chemistry | 106 mappings | — | Every mapping resolves to an existing JEE recording |
 
 The checked JEE syllabus inventory has 20 Physics, 20 Chemistry and 14 Mathematics units, with 21, 22 and 14 written lessons respectively. The inventory maps a recording to each of the 54 JEE units. All 57 written lessons have a local figure and worked examples. A lesson count alone does not measure subheading coverage. Retain the repository's [NEET Biology coverage](./neet-class-coverage-2026.md), [shared course mapping](./neet-physics-chemistry-mapping-2026.md), and [subheading audit](./neet-subheading-review-2026.md) when marking syllabus completion.
@@ -99,3 +99,12 @@ Six of 34 dedicated recordings now have focused written companions. The two addi
 The four prior companions gained an application question each. They distinguish whole-cell DNA content from per-pole chromosome counts, independence of individual offspring in a known test cross, vesicle fusion from prior rough ER and Golgi trafficking, and active enzyme amount from equilibrium. The protein transport lesson now explicitly explains exocytosis of soluble cargo.
 
 We decoded the first 30 seconds of Plant Physiology chapter 9 and Human Physiology chapter 15 and compared them with the authored scripts using local Vosk. Token-sequence similarities were .965 and .852. The latter showed substitutions for technical terms including glomerular and lumen. No mismatch was independently confirmed, so scripts, captions, cues, recordings and offline editions were preserved. [NCERT photosynthesis](https://ncert.nic.in/textbook/pdf/kebo111.pdf) · [OpenStax human excretory systems](https://openstax.org/books/biology-2e/pages/41-2-the-kidneys-and-osmoregulatory-organs)
+
+## Reproduction and ecology companions
+
+- B08 Reproduction chapters 7–10 support the fertilization sequence, zygote and endosperm, and the maternal origin of the seed coat. The companion states the typical diploid angiosperm model and gives chromosome-count practice. [OpenStax Angiosperms](https://openstax.org/books/biology-2e/pages/26-3-angiosperms)
+- B12 Ecology chapters 15–16 and 20–22 support GPP, NPP, trophic transfer, and the distinction between standing biomass and productivity. The worked energy budget uses a stated 12% transfer and distinguishes a classroom model from universal efficiency. [OpenStax energy flow](https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems)
+- Eight of the 34 dedicated recordings now have focused companions. These new notes have diagrams, worked applications, revision, three explained questions, downloads, recording links, and offline Zorami modes with English fallback.
+- Rechecked the earlier companion models. Zero net gas exchange balances uptake and release, nephron excretion is filtration minus reabsorption plus secretion on one interval, the enzyme graph fixes active enzyme and assay conditions, and the chromosome-count example separates whole-cell DNA content from pole-specific chromosome counts. Added a numeric light-compensation example and noted that the point varies with response and respiration.
+
+Decoded the first 30 seconds of Reproduction chapter 8 and Ecology chapter 20 and compared them with the authored text using local Vosk. Token-sequence similarities were .824 and .952. The recognizer substituted several biological terms, including “deployed” for “diploid” and “triplet” for “triploid.” No new discrepancy was confirmed. Audio, scripts, cues, active captions and offline editions remain as published.

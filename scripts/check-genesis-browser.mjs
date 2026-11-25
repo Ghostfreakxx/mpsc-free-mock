@@ -162,6 +162,8 @@ try {
     for (const [query, title, revision] of [
       ["photosynthesis limiting factors net gas exchange", "Photosynthesis: limiting factors and net gas exchange", "Net uptake is zero at the light compensation point."],
       ["nephron transport filtration reabsorption secretion", "Nephron transport: filtration, reabsorption and secretion", "Filtration: glomerular blood to Bowman’s space."],
+      ["double fertilization seed tissue ploidy", "Double fertilization and seed tissue ploidy", "Syngamy forms the zygote. Triple fusion forms the primary endosperm nucleus."],
+      ["ecosystem productivity trophic transfer", "Ecosystem productivity and trophic transfer", "NPP = GPP − producer respiration."],
     ]) {
       await room.getByLabel("Teaching mode").selectOption("questions");
       await room.getByLabel("Ask Zorami a question").fill(query);
@@ -195,7 +197,7 @@ try {
       await cellDiagram.scrollIntoViewIfNeeded();
       await page.screenshot({ path: path.join(screenshots, "neet-cell-notes-360.png") });
     }
-    for (const [slug, answer, count] of [["cell-cycle-division", "12", 4], ["genetics-evolution", "2/3", 4], ["biomolecules", "Activation barrier", 4], ["plant-physiology", "Net carbon dioxide exchange is zero", 3], ["human-physiology", "Tubular reabsorption", 3]]) {
+    for (const [slug, answer, count] of [["cell-cycle-division", "12", 4], ["genetics-evolution", "2/3", 4], ["biomolecules", "Activation barrier", 4], ["plant-physiology", "Net carbon dioxide exchange is zero", 3], ["human-physiology", "Tubular reabsorption", 3], ["reproduction", "Zygote", 3], ["ecology", "Phytoplankton may turn over rapidly", 3]]) {
       await page.goto(base + "/neet/classes/written/" + slug);
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
       const diagram = page.locator("figure img");

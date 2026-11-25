@@ -303,7 +303,7 @@ export const biologyCompanions = [
       {
         title: "Separate net exchange from carbon fixation",
         paragraphs: [
-          "A leaf exchanges carbon dioxide through stomata. In the light it fixes carbon and also releases carbon dioxide through respiratory processes. Net uptake is the amount taken up minus the amount released. At the light compensation point, net exchange is zero even though these processes continue."
+          "A leaf exchanges carbon dioxide through stomata. In the light it fixes carbon and also releases carbon dioxide through respiratory processes. Net uptake is the amount taken up minus the amount released. At the light compensation point, net exchange is zero even though these processes continue. For example, four units of gross uptake and four units of total carbon dioxide release give zero net uptake. The compensation point can shift as the light response or respiratory losses change."
         ]
       },
       {
@@ -454,6 +454,159 @@ export const biologyCompanions = [
         ],
         answer: 1,
         explanation: "Concentration equals mass excretion rate divided by urine flow. Doubling the denominator halves the concentration."
+      }
+    ]
+  },
+  {
+    id: "reproduction",
+    unit: 6,
+    title: "Double fertilization and seed tissue ploidy",
+    reference: {
+      title: "OpenStax Biology 2e: Angiosperms",
+      url: "https://openstax.org/books/biology-2e/pages/26-3-angiosperms"
+    },
+    lab: null,
+    alt: "Two panels show a sperm plus egg making a diploid zygote, and the other sperm plus two polar nuclei making a triploid primary endosperm nucleus.",
+    sections: [
+      {
+        title: "Follow the two sperm cells",
+        paragraphs: [
+          "In the typical diploid angiosperm model, one haploid sperm fuses with the haploid egg to form the diploid zygote. The other sperm fuses with the central cell’s two haploid polar nuclei, or with their combined nucleus, forming the triploid primary endosperm nucleus."
+        ]
+      },
+      {
+        title: "Follow each tissue’s origin",
+        paragraphs: [
+          "The embryo develops from the zygote. The endosperm develops from the fertilized central cell. The seed coat develops from maternal integuments, which remain diploid in this model. Ploidy reflects nuclear contributions and tissue origin."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Syngamy forms the zygote. Triple fusion forms the primary endosperm nucleus.",
+          "The typical diploid model has a 2n embryo, 3n primary endosperm nucleus and 2n maternal seed coat."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "In a typical diploid plant with 2n = 18, compare the zygote, primary endosperm nucleus and seed coat.",
+        steps: [
+          "Each sperm and each haploid female nucleus contributes nine chromosomes. Add two sets for the zygote and three for the primary endosperm nucleus. The seed coat retains maternal ploidy."
+        ],
+        answer: "18, 27 and 18 chromosomes per nucleus respectively."
+      }
+    ],
+    quiz: [
+      {
+        question: "What directly becomes the embryo?",
+        options: [
+          "Zygote",
+          "Primary endosperm nucleus",
+          "Integument",
+          "Pollen tube"
+        ],
+        answer: 0,
+        explanation: "The zygote develops into the embryo; the other fusion initiates endosperm development."
+      },
+      {
+        question: "Why is triple fusion called triple?",
+        options: [
+          "Three sperm arrive",
+          "Three haploid nuclear contributions combine",
+          "Three eggs are fertilized",
+          "Three zygotes form"
+        ],
+        answer: 1,
+        explanation: "One sperm contributes one set and the two polar nuclei contribute one set each in the typical model."
+      },
+      {
+        question: "If n = 7, what is the chromosome number in a typical primary endosperm nucleus?",
+        options: [
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        answer: 2,
+        explanation: "The usual primary endosperm nucleus is 3n, which is 21 for n = 7."
+      }
+    ]
+  },
+  {
+    id: "ecology",
+    unit: 10,
+    title: "Ecosystem productivity and trophic transfer",
+    reference: {
+      title: "OpenStax: Energy Flow through Ecosystems",
+      url: "https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems"
+    },
+    lab: null,
+    alt: "An energy budget shows 1,500 units of gross production minus 500 units of producer respiration, leaving 1,000 units of net primary production. A 12 percent transfer leaves 120 units of herbivore production.",
+    sections: [
+      {
+        title: "Distinguish production from standing stock",
+        paragraphs: [
+          "Standing biomass describes mass present at a time. Productivity is a rate of formation of new organic material. A small producer stock can sustain consumers if it turns over quickly. A snapshot of mass does not directly measure productivity."
+        ]
+      },
+      {
+        title: "Balance the energy budget",
+        paragraphs: [
+          "Net primary productivity equals gross primary productivity minus producer respiration. Compare on the same area and time basis. Trophic transfer efficiency compares production at the receiving level with production at the preceding level."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "NPP = GPP − producer respiration.",
+          "Multiply by each stated transfer fraction. Ten percent is a simplified classroom model.",
+          "An inverted standing biomass pyramid can coexist with decreasing production across trophic levels."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "Producers gross 1,500 kJ per square metre per year and respire 500. Herbivores produce 12% of the producer NPP. What are the two production rates?",
+        steps: [
+          "Subtract producer respiration to find net production, then multiply by 0.12 for herbivore production."
+        ],
+        answer: "NPP = 1,000 and herbivore production = 120 kJ per square metre per year."
+      }
+    ],
+    quiz: [
+      {
+        question: "Why can a small phytoplankton standing stock support greater consumer standing mass?",
+        options: [
+          "Consumers create energy",
+          "Phytoplankton may turn over rapidly",
+          "Biomass and productivity are identical",
+          "Consumers transfer all food energy"
+        ],
+        answer: 1,
+        explanation: "Standing stock is a snapshot. Fast replacement can sustain a substantial production rate."
+      },
+      {
+        question: "Which term is subtracted from GPP to obtain NPP?",
+        options: [
+          "Producer respiration",
+          "All consumer respiration",
+          "Decomposer biomass",
+          "Consumer ingestion"
+        ],
+        answer: 0,
+        explanation: "NPP is producer production left after producer respiration."
+      },
+      {
+        question: "Starting with 1,000 units, successive transfers of 12% and 15% produce what final amount?",
+        options: [
+          "150",
+          "120",
+          "27",
+          "18"
+        ],
+        answer: 3,
+        explanation: "Multiply by both transfer fractions: 1,000 × 0.12 × 0.15 = 18."
       }
     ]
   }

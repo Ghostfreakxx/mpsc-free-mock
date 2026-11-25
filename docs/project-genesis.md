@@ -123,3 +123,35 @@ Mobile screenshots: [Mathematics practice](./genesis-screenshots/jee-mathematics
 Added Plant Physiology and Human Physiology companions, plus application questions in the four earlier Biology lessons. The Mathematics simulator reuses its existing UI and saved keys. Actions are rejected at the deadline even before the timer updates, and malformed saved attempts are rejected. New local Browser and unit checks cover the deadline, score, answer review, keyboard start and saved-state validation.
 
 The local verification covered the 284-route mobile smoke suite, both recorded-course checks, Genesis browser tests, and the private fixture with zero paid requests. Mobile testing used Chromium at 360 px in both themes, including keyboard interaction and a simulated clock. Physical Android performance and assistive technology were not measured. The local Windows production build used Webpack with a reduced worker count after the default worker count exhausted available memory.
+
+## Biology expansion and Windows build stability
+
+Added written notes on flowering-plant double fertilization and ecosystem productivity and trophic transfer. Rechecked the earlier light compensation, nephron, enzyme and chromosome examples, and sampled two additional recordings locally. The course inventory records the chapter boundaries and source review.
+
+### Windows build diagnostics
+
+On this Windows host with Node 24.15.0, 16 logical CPUs and 15.9 GiB RAM, a normal-worker Webpack production build succeeded. Sampling aggregate Node private bytes every 500 ms showed 2.11 GiB peak during compilation, 2.81 GiB during page data collection and 5.44 GiB during static page generation, when Next used 15 workers. Static generation is the measured memory bottleneck, and was the failure phase in the preceding OOM run. A matched three-worker Webpack replay also completed all 508 pages, with 2.23 GiB peak during static generation and 1.28 GiB during data collection. The current measurements do not establish prior system-wide commit pressure or a per-route leak.
+
+The default Turbopack build succeeded with 15 workers on the current code. A reduced-worker Turbopack build on the preceding code also completed with three workers, while logging a cache compaction warning. The earlier worker exit before the PostCSS IPC handshake did not recur, so its underlying cause remains unconfirmed. Build configuration and CI were left intact. On a memory-constrained Windows workstation use the previously verified local Webpack fallback:
+
+```powershell
+$env:CIRCLE_NODE_TOTAL = '4'
+npm run build -- --webpack
+Remove-Item Env:CIRCLE_NODE_TOTAL
+```
+
+### Client loading and accessibility
+
+Fresh desktop Chromium contexts at a 360 px viewport measured compressed JavaScript response payloads from the local Turbopack server. The figures exclude HTML, images and lesson JSON, and do not represent timings on physical mobile hardware.
+
+| Initial route | JavaScript, KiB | Additional JavaScript after opening 3D, KiB |
+| --- | ---: | ---: |
+| Home | 186 | — |
+| Study room | 152 | 272 |
+| Laboratory | 189 | 244 |
+| Mathematics timed setup | 179 | — |
+| Ecology notes | 152 | — |
+
+The largest deferred decoded chunk was 907 KiB and contains the Three.js WebGL renderer. Neither 3D route created a canvas before opening. The offline classroom loaded its own 87 KiB uncompressed lesson JSON. The Mathematics setup fetched the JEE question bank only after starting, and the other sampled routes did not fetch a bank. The existing client-bundle assertions passed.
+
+Chromium exercised keyboard 3D activation, visible focus, the no-WebGL classroom fallback, focus transfer to the reviewed classroom, and reduced-motion layouts. Both new companion diagrams rendered in both themes at 360 px. Physical Android and screen-reader testing were unavailable.

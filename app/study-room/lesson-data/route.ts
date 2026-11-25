@@ -1,3 +1,5 @@
+import { reproductionLesson } from "../../neet/classes/reproduction-lesson";
+import { ecologyLesson } from "../../neet/classes/ecology-lesson";
 import { humanPhysiologyLesson } from "../../neet/classes/human-physiology-lesson";
 import { plantPhysiologyLesson } from "../../neet/classes/plant-physiology-lesson";
 import { biomoleculesLesson } from "../../neet/classes/biomolecules-lesson";
@@ -60,7 +62,7 @@ export function GET() {
     companion: { title: cellLesson.title, audio: cellLesson.audio, captions: cellLesson.subtitles, href: "/neet/classes/cell-unit-life" },
     quiz: cellQuestions.map(({ question, options, answer, explanation }) => ({ prompt: question, choices: options, answer, explanation })),
   };
-  const biologyRecordings = [divisionLesson, geneticsEvolutionLesson, biomoleculesLesson, plantPhysiologyLesson, humanPhysiologyLesson];
+  const biologyRecordings = [divisionLesson, geneticsEvolutionLesson, biomoleculesLesson, plantPhysiologyLesson, humanPhysiologyLesson, reproductionLesson, ecologyLesson];
   const writtenBiology: ReviewedLesson[] = biologyCompanions.map(item => {
     const recording = biologyRecordings.find(candidate => candidate.id === "neet-" + item.id);
     if (!recording) throw new Error("Missing Biology recording: " + item.id);
