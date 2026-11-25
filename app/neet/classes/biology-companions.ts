@@ -83,6 +83,17 @@ export const biologyCompanions = [
         ],
         answer: 0,
         explanation: "There is one premeiotic S phase. A second round of DNA replication does not precede meiosis II."
+      },
+      {
+        question: "A diploid cell with 2n = 6 is in mitotic anaphase before cytokinesis. How many chromosomes are moving toward each pole, and what is total DNA content in the whole cell?",
+        options: [
+          "3 and 2C",
+          "6 and 2C",
+          "6 and 4C",
+          "12 and 4C"
+        ],
+        answer: 2,
+        explanation: "Six separated chromosomes move toward each pole. There are twelve in the undivided cell, which still contains 4C DNA."
       }
     ]
   },
@@ -169,6 +180,17 @@ export const biologyCompanions = [
         ],
         answer: 1,
         explanation: "One green can occur first or second. Each order has probability 1/4, so the total is 1/2."
+      },
+      {
+        question: "A heterozygous pea is test-crossed. Given that its first offspring was yellow, what is the probability that the second is green under the independent-offspring model?",
+        options: [
+          "1/4",
+          "1/2",
+          "2/3",
+          "3/4"
+        ],
+        answer: 1,
+        explanation: "Each offspring independently receives Y or y from the known heterozygote with equal probability. The first outcome does not change the second."
       }
     ]
   },
@@ -253,6 +275,185 @@ export const biologyCompanions = [
         ],
         answer: 2,
         explanation: "Holding other factors constant allows the initial-rate difference to be attributed to substrate concentration."
+      },
+      {
+        question: "Two curves plateau at different initial rates. The higher curve used twice as much active enzyme at the same pH and temperature. Which interpretation is consistent with simple saturation?",
+        options: [
+          "The higher curve has more available catalytic sites",
+          "The enzyme changed equilibrium",
+          "The lower curve proves permanent denaturation",
+          "Substrate never binds at saturation"
+        ],
+        answer: 0,
+        explanation: "More active enzyme provides more catalytic sites and can raise the limiting initial rate. The observation does not imply an equilibrium change."
+      }
+    ]
+  },
+  {
+    id: "plant-physiology",
+    unit: 4,
+    title: "Photosynthesis: limiting factors and net gas exchange",
+    reference: {
+      title: "NCERT Biology: Photosynthesis in Higher Plants",
+      url: "https://ncert.nic.in/textbook/pdf/kebo111.pdf"
+    },
+    lab: null,
+    alt: "Schematic of net carbon dioxide uptake versus light intensity. Uptake is negative in darkness, crosses zero at the light compensation point, then levels off under the fixed comparison conditions.",
+    sections: [
+      {
+        title: "Separate net exchange from carbon fixation",
+        paragraphs: [
+          "A leaf exchanges carbon dioxide through stomata. In the light it fixes carbon and also releases carbon dioxide through respiratory processes. Net uptake is the amount taken up minus the amount released. At the light compensation point, net exchange is zero even though these processes continue."
+        ]
+      },
+      {
+        title: "Identify what limits the rate",
+        paragraphs: [
+          "Increasing light may raise net uptake at low light. A plateau means additional light has little effect under those conditions. It does not alone identify the limiting factor. Compare results while varying carbon dioxide, temperature or another factor one at a time."
+        ]
+      },
+      {
+        title: "Interpret the evidence",
+        paragraphs: [
+          "A starch test indicates starch accumulation in the tested tissue. It does not directly measure an instantaneous photosynthetic rate. Compare similar leaves with matched starting conditions and vary only the factor under investigation."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Net uptake is zero at the light compensation point.",
+          "A light-response plateau alone does not identify the limiting factor.",
+          "A starch test is evidence of accumulation over time."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "At low light, increasing carbon dioxide has no measurable effect. At high light it raises net uptake from 6 to 10 units. What can you infer?",
+        steps: [
+          "Compare leaves at the same light level with only carbon dioxide changed.",
+          "The high-light increase shows carbon dioxide supply constrained uptake under those high-light conditions."
+        ],
+        answer: "The low-light result alone does not prove that carbon dioxide can never limit that leaf."
+      }
+    ],
+    quiz: [
+      {
+        question: "What happens at the light compensation point?",
+        options: [
+          "Photosynthesis stops",
+          "Respiration stops",
+          "Net carbon dioxide exchange is zero",
+          "Stomata must close"
+        ],
+        answer: 2,
+        explanation: "Carbon dioxide uptake and release balance. Zero net exchange does not imply that either process stops."
+      },
+      {
+        question: "What can a single light-response plateau establish?",
+        options: [
+          "Only that extra light has little effect in that comparison",
+          "Carbon dioxide is always limiting",
+          "The leaf has stopped respiring",
+          "Heat has irreversibly killed the leaf"
+        ],
+        answer: 0,
+        explanation: "Other factors or the capacity of the photosynthetic system may limit the response. An additional controlled comparison is needed."
+      },
+      {
+        question: "Which comparison isolates light intensity most directly?",
+        options: [
+          "Vary light and temperature",
+          "Vary light with carbon dioxide and temperature matched",
+          "Vary light and leaf age",
+          "Compare unmatched plants in different chambers"
+        ],
+        answer: 1,
+        explanation: "Matching the other factors makes light intensity the variable under comparison."
+      }
+    ]
+  },
+  {
+    id: "human-physiology",
+    unit: 5,
+    title: "Nephron transport: filtration, reabsorption and secretion",
+    reference: {
+      title: "OpenStax Biology 2e: The Kidneys and Osmoregulatory Organs",
+      url: "https://openstax.org/books/biology-2e/pages/41-2-the-kidneys-and-osmoregulatory-organs"
+    },
+    lab: null,
+    alt: "Filtration moves solute from blood to Bowman’s space. Reabsorption moves solute from tubular fluid toward blood. Secretion moves solute from blood toward tubular fluid. Excretion leaves in urine.",
+    sections: [
+      {
+        title: "Follow the direction of transport",
+        paragraphs: [
+          "During glomerular filtration, water and many small solutes pass from glomerular capillaries into Bowman’s space. Blood cells and most large plasma proteins remain in the circulation under normal conditions."
+        ]
+      },
+      {
+        title: "Track a solute along the tubule",
+        paragraphs: [
+          "Reabsorption transfers material from tubular fluid back toward the blood. Secretion transfers material in the opposite direction, from blood or cells into tubular fluid. Filtrate composition changes as it moves through the nephron."
+        ]
+      },
+      {
+        title: "Keep amount and concentration separate",
+        paragraphs: [
+          "For a substance unchanged by the kidney, the excreted amount over a given interval equals the filtered amount minus the reabsorbed amount plus the secreted amount. All terms must use the same units and interval. Concentration also depends on urine volume."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Filtration: glomerular blood to Bowman’s space.",
+          "Reabsorption: tubule toward blood. Secretion: toward the tubule.",
+          "Excreted = filtered − reabsorbed + secreted."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "Over one hour, 100 mg of a model solute is filtered, 93 mg is reabsorbed and 2 mg is secreted. No solute is produced or broken down. How much is excreted?",
+        steps: [
+          "Start with 100 mg in the filtrate.",
+          "Subtract the 93 mg returned toward blood. Add the 2 mg transferred into the tubule."
+        ],
+        answer: "9 mg is excreted over the hour. Urine concentration cannot be calculated without its volume."
+      }
+    ],
+    quiz: [
+      {
+        question: "Which process transfers a substance from tubular fluid toward the blood?",
+        options: [
+          "Filtration",
+          "Tubular reabsorption",
+          "Tubular secretion",
+          "Excretion"
+        ],
+        answer: 1,
+        explanation: "Reabsorption returns material from the tubule toward circulation."
+      },
+      {
+        question: "A substance is filtered at 15 mg/min, reabsorbed at 6 mg/min and secreted at 4 mg/min. What is its excretion rate?",
+        options: [
+          "5 mg/min",
+          "9 mg/min",
+          "13 mg/min",
+          "25 mg/min"
+        ],
+        answer: 2,
+        explanation: "Apply the mass balance with matched units: 15 − 6 + 4 = 13 mg/min."
+      },
+      {
+        question: "If 10 mg is excreted per minute and urine flow doubles while that excretion rate stays fixed, what happens to urine concentration?",
+        options: [
+          "It doubles",
+          "It halves",
+          "It stays fixed",
+          "It becomes zero"
+        ],
+        answer: 1,
+        explanation: "Concentration equals mass excretion rate divided by urine flow. Doubling the denominator halves the concentration."
       }
     ]
   }

@@ -2,7 +2,7 @@ export const cellWrittenHref = "/neet/classes/cell-unit-life/notes";
 
 export const cellNotes = [
   "A bacterial cell has a plasma membrane, cytoplasm, ribosomes and DNA in a nucleoid. A typical eukaryotic cell encloses its DNA in a nucleus and has membrane-bound compartments. Both use ribosomes to translate messenger RNA.",
-  "A secreted protein commonly enters the rough endoplasmic reticulum during synthesis, travels by vesicle to the Golgi apparatus for further processing and sorting, and reaches the plasma membrane in secretory vesicles.",
+  "A secreted protein commonly enters the rough endoplasmic reticulum during synthesis, travels by vesicle to the Golgi apparatus for further processing and sorting, and reaches the plasma membrane in secretory vesicles. When those vesicles fuse with the membrane, soluble cargo is released outside by exocytosis.",
   "A cell wall supports the cell and helps resist expansion. The plasma membrane controls exchange. In a photosynthetic plant cell, chloroplasts capture light energy and the large central vacuole helps maintain turgor. Plant cells also have mitochondria.",
   "After DNA replication, two sister chromatids remain attached at each chromosome’s centromeric region. A cell with six replicated chromosomes contains twelve chromatids before the sisters separate.",
 ];
@@ -31,6 +31,12 @@ export const cellQuestions = [
     options: ["Cell wall", "Plasma membrane", "Nucleolus", "Cellulose fibre"],
     answer: 1,
     explanation: "The plasma membrane regulates what crosses the cell boundary. The porous cell wall provides structural support outside it.",
+  },
+  {
+    question: "If vesicles leave the Golgi but cannot fuse with the plasma membrane, which step is directly impaired for a soluble secretory protein?",
+    options: ["Synthesis of its mRNA", "Entry into the rough ER", "Release outside the cell", "DNA replication"],
+    answer: 2,
+    explanation: "Fusion exposes the vesicle lumen to the outside and releases its soluble cargo. Earlier synthesis and sorting are distinct steps.",
   },
 ];
 

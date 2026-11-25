@@ -117,3 +117,9 @@ Added focused written companions on chromosome counting and Mendelian test cross
 Added a dedicated JEE Mathematics practice route with independent progress, reviewed bank questions and the existing exam interface. Added an enzyme activity companion with English offline classroom support and reviewed Biology counting and probability assumptions. The course inventory records source coverage and additional local narration sampling.
 
 Mobile screenshots: [Mathematics practice](./genesis-screenshots/jee-mathematics-timed-360.png) and [Biomolecules](./genesis-screenshots/neet-written-biomolecules-360.png). A local 360 px Chromium fixture also verified both light-theme routes and used a simulated clock to verify that time-up submits the Mathematics paper at its saved deadline.
+
+## Biology coverage and quality pass
+
+Added Plant Physiology and Human Physiology companions, plus application questions in the four earlier Biology lessons. The Mathematics simulator reuses its existing UI and saved keys. Actions are rejected at the deadline even before the timer updates, and malformed saved attempts are rejected. New local Browser and unit checks cover the deadline, score, answer review, keyboard start and saved-state validation.
+
+The local verification covered the 284-route mobile smoke suite, both recorded-course checks, Genesis browser tests, and the private fixture with zero paid requests. Mobile testing used Chromium at 360 px in both themes, including keyboard interaction and a simulated clock. Physical Android performance and assistive technology were not measured. The local Windows production build used Webpack with a reduced worker count after the default worker count exhausted available memory.

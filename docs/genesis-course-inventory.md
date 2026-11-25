@@ -5,7 +5,7 @@ Run `node scripts/inventory-courses.mjs` for the per-recording listing. Add `--h
 | Published catalog | Recorded lessons | Written lessons | Checks performed |
 | --- | ---: | ---: | --- |
 | JEE Physics, Chemistry and Mathematics | 120 | 57 | Catalog references, chapter narration scripts, cue metadata, quizzes, nonempty audio and WebVTT |
-| NEET dedicated | 34 | 4 | Same recorded lesson checks |
+| NEET dedicated | 34 | 6 | Same recorded lesson checks |
 | NEET shared Physics and Chemistry | 106 mappings | — | Every mapping resolves to an existing JEE recording |
 
 The checked JEE syllabus inventory has 20 Physics, 20 Chemistry and 14 Mathematics units, with 21, 22 and 14 written lessons respectively. The inventory maps a recording to each of the 54 JEE units. All 57 written lessons have a local figure and worked examples. A lesson count alone does not measure subheading coverage. Retain the repository's [NEET Biology coverage](./neet-class-coverage-2026.md), [shared course mapping](./neet-physics-chemistry-mapping-2026.md), and [subheading audit](./neet-subheading-review-2026.md) when marking syllabus completion.
@@ -86,3 +86,16 @@ The Mathematics class tab links to a separate timed practice mode with reviewed 
 The fourth NEET written companion focuses on enzyme activity and substrate saturation, using Biomolecules B02 chapters 10–12 and the existing Unit 3 inventory. It adds a labelled schematic, a worked initial-rate comparison, revision, three explained questions, downloadable notes, and Zorami offline search and revision. Wider Biomolecules headings and unpaired recordings remain in the inventory. The chromosome-count companion distinguishes the undivided mitotic anaphase cell from one pole; the Mendelian companion states the simplified single-gene model assumptions. [OpenStax enzymes](https://openstax.org/books/biology-2e/pages/6-5-enzymes)
 
 Local decoded-audio review compared the first 30 seconds of Biomolecules chapters 10, 11 and 12 with their scripts using Vosk. Token-sequence similarities were .931, .954 and .903. The differences included spelling, words clipped at the excerpt boundary, and recognizer substitutions such as “act of” for “active.” No new narration mismatch was confirmed. The MP3s, cue manifests, active captions and offline pack versions were left intact.
+
+## Biology coverage and quality pass
+
+| Companion | Recorded evidence and written scope |
+| --- | --- |
+| B06 Plant Physiology | Chapters 9–10 support light limitation, net carbon dioxide uptake, the light compensation point, and controls for interpreting starch evidence. The schematic is a fixed-condition illustration. The worked problem tests whether carbon dioxide supply constrains uptake at high light. |
+| B07 Human Physiology | Chapters 14–15 cover nephron organization and transport. The companion follows filtration, reabsorption, secretion and urinary excretion, with a labelled directional diagram and a solute mass balance. Hormonal regulation, the countercurrent mechanism and the other organ systems remain in the recordings. |
+
+Six of 34 dedicated recordings now have focused written companions. The two additions provide worked applications, quick revision, three explained questions, downloadable notes, and Zorami search, Explain, and Quick Revision with English fallback.
+
+The four prior companions gained an application question each. They distinguish whole-cell DNA content from per-pole chromosome counts, independence of individual offspring in a known test cross, vesicle fusion from prior rough ER and Golgi trafficking, and active enzyme amount from equilibrium. The protein transport lesson now explicitly explains exocytosis of soluble cargo.
+
+We decoded the first 30 seconds of Plant Physiology chapter 9 and Human Physiology chapter 15 and compared them with the authored scripts using local Vosk. Token-sequence similarities were .965 and .852. The latter showed substitutions for technical terms including glomerular and lumen. No mismatch was independently confirmed, so scripts, captions, cues, recordings and offline editions were preserved. [NCERT photosynthesis](https://ncert.nic.in/textbook/pdf/kebo111.pdf) · [OpenStax human excretory systems](https://openstax.org/books/biology-2e/pages/41-2-the-kidneys-and-osmoregulatory-organs)

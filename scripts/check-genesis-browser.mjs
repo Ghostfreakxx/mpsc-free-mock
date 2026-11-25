@@ -159,6 +159,18 @@ try {
     await room.getByRole("button", { name: "Read the full lesson" }).click();
     await room.getByLabel("Teaching mode").selectOption("revision");
     await room.getByText("Vary one factor at a time.").waitFor();
+    for (const [query, title, revision] of [
+      ["photosynthesis limiting factors net gas exchange", "Photosynthesis: limiting factors and net gas exchange", "Net uptake is zero at the light compensation point."],
+      ["nephron transport filtration reabsorption secretion", "Nephron transport: filtration, reabsorption and secretion", "Filtration: glomerular blood to Bowman’s space."],
+    ]) {
+      await room.getByLabel("Teaching mode").selectOption("questions");
+      await room.getByLabel("Ask Zorami a question").fill(query);
+      await room.getByRole("button", { name: "Find a reviewed lesson" }).click();
+      await room.getByRole("status").getByText("Related lesson: " + title).waitFor();
+      await room.getByRole("button", { name: "Read the full lesson" }).click();
+      await room.getByLabel("Teaching mode").selectOption("revision");
+      await room.getByText(revision, { exact: true }).waitFor();
+    }
     assert.equal(classroomRequests, 0);
     await context.setOffline(false);
     await room.getByLabel("Teaching mode").selectOption("explain");
@@ -176,14 +188,14 @@ try {
     await cellDiagram.scrollIntoViewIfNeeded();
     await page.waitForFunction(() => document.querySelector("figure img")?.naturalWidth > 0);
     await page.getByRole("radio", { name: "12", exact: true }).check();
-    assert.match(await page.getByRole("region", { name: "Lesson practice" }).textContent(), /1 \/ 3 answered · 1 correct/);
+    assert.match(await page.getByRole("region", { name: "Lesson practice" }).textContent(), /1 \/ 4 answered · 1 correct/);
     await page.reload();
     await page.getByRole("radio", { name: "12", exact: true, checked: true }).waitFor();
     if (screenshots) {
       await cellDiagram.scrollIntoViewIfNeeded();
       await page.screenshot({ path: path.join(screenshots, "neet-cell-notes-360.png") });
     }
-    for (const [slug, answer] of [["cell-cycle-division", "12"], ["genetics-evolution", "2/3"], ["biomolecules", "Activation barrier"]]) {
+    for (const [slug, answer, count] of [["cell-cycle-division", "12", 4], ["genetics-evolution", "2/3", 4], ["biomolecules", "Activation barrier", 4], ["plant-physiology", "Net carbon dioxide exchange is zero", 3], ["human-physiology", "Tubular reabsorption", 3]]) {
       await page.goto(base + "/neet/classes/written/" + slug);
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
       const diagram = page.locator("figure img");
@@ -195,7 +207,7 @@ try {
       assert.equal(file.suggestedFilename(), "neet-" + slug + "-notes.txt");
       assert.match(await readFile(await file.path(), "utf8"), /Quick revision[\s\S]*ANSWER KEY/);
       await page.getByRole("region", { name: "Lesson practice" }).locator("fieldset").first().getByRole("radio", { name: answer, exact: true }).check();
-      assert.match(await page.getByRole("region", { name: "Lesson practice" }).textContent(), /1 \/ 3 answered · 1 correct/);
+      assert.ok((await page.getByRole("region", { name: "Lesson practice" }).textContent()).includes(`1 / ${count} answered · 1 correct`));
       if (screenshots) {
         await diagram.scrollIntoViewIfNeeded();
         await page.screenshot({ path: path.join(screenshots, "neet-written-" + slug + "-360.png") });
@@ -421,6 +433,26 @@ try {
     await page.getByRole("heading", { name: "Review answers" }).waitFor();
     await page.getByRole("button", { name: "All (10)", exact: true }).click();
     await page.getByText(/Correct answer:/).first().waitFor();
+    await page.evaluate(() => {
+      const key = "jee-math:attempt:v1";
+      const stored = JSON.parse(localStorage.getItem(key));
+      localStorage.setItem(key, JSON.stringify({ ...stored, current: 0.5 }));
+      localStorage.setItem("mpsc-theme", "light");
+    });
+    await page.reload();
+    await page.getByRole("heading", { name: "JEE Mathematics timed practice" }).waitFor();
+    await page.getByRole("button", { name: /Start 10-question JEE Mathematics practice/ }).focus();
+    assert.equal(await page.locator("html").getAttribute("data-theme"), "light");
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+    await page.clock.install();
+    await page.keyboard.press("Enter");
+    await page.getByRole("timer").waitFor();
+    await page.clock.fastForward(20 * 60_000 + 2_000);
+    await page.getByRole("heading", { name: "You scored 0 out of 10" }).waitFor();
+    assert.equal(await page.evaluate(() => {
+      const saved = JSON.parse(localStorage.getItem("jee-math:attempt:v1"));
+      return saved.submittedAt === saved.deadline;
+    }), true);
   } finally {
     await context.close();
   }

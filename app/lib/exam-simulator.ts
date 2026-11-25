@@ -167,14 +167,14 @@ function bankTime(attempt: Attempt, now: number): Attempt {
 }
 
 function update(attempt: Attempt, now: number, change: (response: Response) => Response): Attempt {
-  if (attempt.submittedAt !== undefined) return attempt;
+  if (attempt.submittedAt !== undefined || now >= attempt.deadline) return attempt;
   const banked = bankTime(attempt, now);
   const id = banked.questionIds[banked.current];
   return { ...banked, responses: { ...banked.responses, [id]: change(banked.responses[id]) } };
 }
 
 export function goTo(attempt: Attempt, index: number, now: number): Attempt {
-  if (attempt.submittedAt !== undefined || index < 0 || index >= attempt.questionIds.length) return attempt;
+  if (attempt.submittedAt !== undefined || now >= attempt.deadline || index < 0 || index >= attempt.questionIds.length) return attempt;
   const banked = bankTime(attempt, now);
   const id = banked.questionIds[index];
   return { ...banked, current: index, responses: { ...banked.responses, [id]: { ...banked.responses[id], visited: true } } };
@@ -287,15 +287,20 @@ export function restoreAttempt(serialized: string | null, questionsById: Readonl
       config &&
       config.markingOptions.some(option => option.id === value.markingId) &&
       Array.isArray(value.questionIds) && value.questionIds.length > 0 &&
+      new Set(value.questionIds).size === value.questionIds.length &&
       value.questionIds.every(id => typeof id === "string" && questionsById.has(id) &&
         (!config.onlySubject || questionsById.get(id)?.subject === config.onlySubject)) &&
       [value.startedAt, value.deadline, value.activeSince, value.current].every(Number.isFinite) &&
-      value.current! >= 0 && value.current! < value.questionIds.length &&
+      value.deadline! > value.startedAt! &&
+      (value.submittedAt === undefined || (Number.isFinite(value.submittedAt) && value.submittedAt >= value.startedAt! && value.submittedAt <= value.deadline!)) &&
+      Number.isInteger(value.current) && value.current! >= 0 && value.current! < value.questionIds.length &&
       value.responses !== null && typeof value.responses === "object" &&
       value.questionIds.every(id => {
         const response = value.responses![id];
-        return response && Number.isFinite(response.timeMs) && Array.isArray(response.history) &&
-          (response.answer === undefined || questionsById.get(id)!.options.includes(response.answer));
+        const options = questionsById.get(id)!.options;
+        return response && Number.isFinite(response.timeMs) && response.timeMs >= 0 && Array.isArray(response.history) &&
+          response.history.every(answer => options.includes(answer)) &&
+          (response.answer === undefined || options.includes(response.answer));
       });
     return valid ? (value as Attempt) : null;
   } catch {
