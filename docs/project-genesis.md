@@ -155,3 +155,11 @@ Fresh desktop Chromium contexts at a 360 px viewport measured compressed JavaScr
 The largest deferred decoded chunk was 907 KiB and contains the Three.js WebGL renderer. Neither 3D route created a canvas before opening. The offline classroom loaded its own 87 KiB uncompressed lesson JSON. The Mathematics setup fetched the JEE question bank only after starting, and the other sampled routes did not fetch a bank. The existing client-bundle assertions passed.
 
 Chromium exercised keyboard 3D activation, visible focus, the no-WebGL classroom fallback, focus transfer to the reviewed classroom, and reduced-motion layouts. Both new companion diagrams rendered in both themes at 360 px. Physical Android and screen-reader testing were unavailable.
+
+## Release-readiness pass
+
+Added focused plant classification and dorsiventral leaf companions, checked the preceding reproduction and ecology calculations, and recorded current product status and release gates in the [production readiness matrix](./production-readiness.md).
+
+The default Windows Turbopack build completed all 510 pages. The documented three-worker Webpack command remains available and build configuration is unchanged. Cold 360 px Chromium measurements on the local production build matched the previous sample to the nearest KiB for the study room (152), laboratory (189), Mathematics setup (179) and Ecology notes (152). Opening 3D added 272 KiB in the room and 244 KiB in the lab. The uncompressed classroom lesson JSON grew from 89,095 to 93,752 bytes. The Mathematics question bank fetched when starting a paper.
+
+Mobile checks used desktop Chromium at 360 px in both themes. Real Android and screen-reader interaction remain untested. [Plant diversity screenshot](./genesis-screenshots/neet-diversity-living-world-dark-360.png) · [Leaf anatomy screenshot](./genesis-screenshots/neet-structural-organisation-light-360.png)

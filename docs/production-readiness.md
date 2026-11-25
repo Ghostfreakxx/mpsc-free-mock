@@ -1,5 +1,27 @@
 # Free MPSC Mock production checklist
 
+## Offline-only release matrix
+
+Statuses apply to the evidence described in each row. **Verified** means the stated scope passed on a local production build. **Partially Verified** means important scope remains open. **Not Tested** records absent evidence. **Blocked** marks a release gate that still needs an authorized action.
+
+| Platform area | Status | Evidence and outstanding scope |
+| --- | --- | --- |
+| MPSC mocks and practice | Verified | Local question-bank validation, mobile smoke, answer persistence and exam controls. Ongoing editorial review remains part of the content process. |
+| Classroom | Verified | The reviewed Zorami modes, lecture blackboard, no-WebGL fallback and offline classroom reload passed. Mizo drafts retain English fallback. |
+| JEE | Verified | Recorded library and written-course regressions passed. Mathematics timed practice checks cover separate progress, deadline and answer review. |
+| NEET | Partially Verified | Recorded course and practice routes passed the checked flows. Ten of 34 dedicated recordings have focused written companions. The course inventory tracks broader subheading and narration review. |
+| Virtual laboratories | Verified | Chromium exercised the twelve shipped activities and the on-demand molecule view. Physical GPU performance remains unmeasured. |
+| Offline learning | Partially Verified | Saved recording playback, seek, captions, pack recovery and retired editions passed in Chromium. Initial visit and explicit saving require a connection. OS eviction behaviour on real phones remains untested. |
+| Security | Partially Verified | Local checks cover the effective CSP, private/no-store responses, API boundaries, cache isolation and the dependency audit. Deployment-specific headers and environment have yet to be verified. |
+| Accessibility | Partially Verified | Keyboard actions, visible focus, semantic labels, reduced motion and no-WebGL fallback were exercised in Chromium. Screen-reader interaction remains untested. |
+| Mobile performance | Partially Verified | The 360 px smoke suite and browser bundle measurements cover responsive layouts and on-demand assets. Physical Android and constrained-device measurements remain untested. |
+| Paid API cost protections | Verified for paid-off mode | The private fixture forwarded zero paid requests. Server-side gates and safeguards remain in place. Provider credentials, live Redis and live charges are outside the offline release scope. |
+| Production configuration | Blocked pending release approval and verification | Repository defaults keep both paid modes off and disable automatic deployment for this branch. The effective target environment, release commit, and approved deployment have yet to be verified. |
+
+**Before an offline-only release** — Obtain authorization for the release commit, complete the main integration required by AGENTS.md, and confirm its CI. In the authorized target configuration, verify both paid modes are off and the offline classroom works without provider credentials. After authorized deployment, confirm the exact revision, public security headers, service worker and a representative saved-content flow against the target.
+
+**Follow-up work** — Additional Biology companions, complete narration alignment, reviewed Mizo translations, screen-reader testing and physical Android storage and performance measurements. Live paid generation is a separate decision and does not gate the offline-only release. [Course inventory](./genesis-course-inventory.md) · [Security audit](./security-audit.md) · [Project verification](./project-genesis.md)
+
 ## Local credential setup in VS Code
 
 Open the repository root in VS Code. Create `.env.local` alongside `package.json` using `.env.example` as the template. Git ignores `.env.local`. Keep real values out of source, screenshots, command arguments, and PRs.

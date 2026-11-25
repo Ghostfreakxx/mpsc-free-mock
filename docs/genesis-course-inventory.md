@@ -5,7 +5,7 @@ Run `node scripts/inventory-courses.mjs` for the per-recording listing. Add `--h
 | Published catalog | Recorded lessons | Written lessons | Checks performed |
 | --- | ---: | ---: | --- |
 | JEE Physics, Chemistry and Mathematics | 120 | 57 | Catalog references, chapter narration scripts, cue metadata, quizzes, nonempty audio and WebVTT |
-| NEET dedicated | 34 | 8 | Same recorded lesson checks |
+| NEET dedicated | 34 | 10 | Same recorded lesson checks |
 | NEET shared Physics and Chemistry | 106 mappings | — | Every mapping resolves to an existing JEE recording |
 
 The checked JEE syllabus inventory has 20 Physics, 20 Chemistry and 14 Mathematics units, with 21, 22 and 14 written lessons respectively. The inventory maps a recording to each of the 54 JEE units. All 57 written lessons have a local figure and worked examples. A lesson count alone does not measure subheading coverage. Retain the repository's [NEET Biology coverage](./neet-class-coverage-2026.md), [shared course mapping](./neet-physics-chemistry-mapping-2026.md), and [subheading audit](./neet-subheading-review-2026.md) when marking syllabus completion.
@@ -108,3 +108,10 @@ We decoded the first 30 seconds of Plant Physiology chapter 9 and Human Physiolo
 - Rechecked the earlier companion models. Zero net gas exchange balances uptake and release, nephron excretion is filtration minus reabsorption plus secretion on one interval, the enzyme graph fixes active enzyme and assay conditions, and the chromosome-count example separates whole-cell DNA content from pole-specific chromosome counts. Added a numeric light-compensation example and noted that the point varies with response and respiration.
 
 Decoded the first 30 seconds of Reproduction chapter 8 and Ecology chapter 20 and compared them with the authored text using local Vosk. Token-sequence similarities were .824 and .952. The recognizer substituted several biological terms, including “deployed” for “diploid” and “triplet” for “triploid.” No new discrepancy was confirmed. Audio, scripts, cues, active captions and offline editions remain as published.
+
+## Plant classification and leaf anatomy
+
+- B04 Diversity chapters 9–11 support the bryophyte, seedless vascular plant and gymnosperm comparison. The companion uses moss, fern and cone-bearing seed plant evidence and leaves algae and animal classification in the broader lecture. [OpenStax seedless vascular plants](https://openstax.org/books/biology-2e/pages/25-4-seedless-vascular-plants) · [OpenStax gymnosperms](https://openstax.org/books/biology-2e/pages/26-2-gymnosperms)
+- B05 Structural Organisation chapter 13 supports leaf anatomy and function. The companion labels a typical dorsiventral section, including mesophyll and a stomatal pore. It practises orientation and diffusion, with other leaf types and organs in the broader course. [OpenStax leaves](https://openstax.org/books/biology-2e/pages/30-4-leaves)
+- Rechecked prior calculations. In the typical diploid angiosperm with 2n = 18, syngamy gives 18, triple fusion gives 27, and the maternal seed coat stays at 18 chromosomes per nucleus. In the ecology example, GPP less producer respiration gives 1,000 kJ per square metre per year; 12% gives 120 in the same units. Sequential 12% and 15% transfers from 1,000 give 18. The model uses stated rates and efficiencies.
+- Ten dedicated recordings now have focused companions. The remaining syllabus headings and depth are tracked separately.

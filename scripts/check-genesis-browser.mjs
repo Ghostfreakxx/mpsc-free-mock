@@ -164,6 +164,8 @@ try {
       ["nephron transport filtration reabsorption secretion", "Nephron transport: filtration, reabsorption and secretion", "Filtration: glomerular blood to Bowman’s space."],
       ["double fertilization seed tissue ploidy", "Double fertilization and seed tissue ploidy", "Syngamy forms the zygote. Triple fusion forms the primary endosperm nucleus."],
       ["ecosystem productivity trophic transfer", "Ecosystem productivity and trophic transfer", "NPP = GPP − producer respiration."],
+      ["plant diversity vascular tissue spores seeds", "Plant diversity: vascular tissue, spores and seeds", "Fern: vascular tissue; spores, no seeds."],
+      ["leaf cross sections tissues gas exchange", "Leaf cross sections: tissues and gas exchange", "Guard cells regulate stomatal aperture."],
     ]) {
       await room.getByLabel("Teaching mode").selectOption("questions");
       await room.getByLabel("Ask Zorami a question").fill(query);
@@ -197,7 +199,7 @@ try {
       await cellDiagram.scrollIntoViewIfNeeded();
       await page.screenshot({ path: path.join(screenshots, "neet-cell-notes-360.png") });
     }
-    for (const [slug, answer, count] of [["cell-cycle-division", "12", 4], ["genetics-evolution", "2/3", 4], ["biomolecules", "Activation barrier", 4], ["plant-physiology", "Net carbon dioxide exchange is zero", 3], ["human-physiology", "Tubular reabsorption", 3], ["reproduction", "Zygote", 3], ["ecology", "Phytoplankton may turn over rapidly", 3]]) {
+    for (const [slug, answer, count] of [["cell-cycle-division", "12", 4], ["genetics-evolution", "2/3", 4], ["biomolecules", "Activation barrier", 4], ["plant-physiology", "Net carbon dioxide exchange is zero", 3], ["human-physiology", "Tubular reabsorption", 3], ["reproduction", "Zygote", 3], ["ecology", "Phytoplankton may turn over rapidly", 3], ["diversity-living-world", "True vascular tissue", 3], ["structural-organisation", "Large intercellular air spaces", 3]]) {
       await page.goto(base + "/neet/classes/written/" + slug);
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
       const diagram = page.locator("figure img");

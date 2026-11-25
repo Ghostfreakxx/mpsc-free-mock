@@ -609,6 +609,162 @@ export const biologyCompanions = [
         explanation: "Multiply by both transfer fractions: 1,000 × 0.12 × 0.15 = 18."
       }
     ]
+  },
+  {
+    id: "diversity-living-world",
+    unit: 1,
+    title: "Plant diversity: vascular tissue, spores and seeds",
+    reference: {
+      title: "OpenStax Biology 2e: 25.4 Seedless Vascular Plants",
+      url: "https://openstax.org/books/biology-2e/pages/25-4-seedless-vascular-plants"
+    },
+    lab: null,
+    alt: "A comparison chart shows mosses without true vascular tissue, ferns with vascular tissue and spores but no seeds, and gymnosperms with vascular tissue and seeds without an enclosing ovary.",
+    sections: [
+      {
+        title: "Identify the useful features",
+        paragraphs: [
+          "A moss lacks true xylem and phloem and produces spores. A fern has vascular tissue and also produces spores, but it does not produce seeds. Spore production alone does not distinguish mosses from ferns."
+        ]
+      },
+      {
+        title: "Trace seed and fruit separately",
+        paragraphs: [
+          "Gymnosperms produce seeds from ovules that are not enclosed in an ovary. These seeds are not enclosed within fruits. A seed provides an embryo with protective tissue and stored resources, while a spore is a reproductive cell."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Moss: no true vascular tissue; spores, no seeds.",
+          "Fern: vascular tissue; spores, no seeds.",
+          "Gymnosperm: vascular tissue; seeds without an enclosing ovary."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "A specimen has true xylem, and the mature plant bears clusters of sporangia on its leaves. It makes spores but no seeds. Which group fits?",
+        steps: [
+          "Check the two independent clues: true vascular tissue and no seeds.",
+          "Clusters of sporangia on leaves support a fern identification."
+        ],
+        answer: "A fern is consistent with the findings."
+      }
+    ],
+    quiz: [
+      {
+        question: "Which feature distinguishes a fern from a moss in this comparison?",
+        options: [
+          "Spore production",
+          "True vascular tissue",
+          "Absence of seeds",
+          "An enclosing fruit"
+        ],
+        answer: 1,
+        explanation: "Both form spores and lack seeds. The fern has true xylem and phloem."
+      },
+      {
+        question: "A plant has ovules exposed on cone scales and makes seeds. Which group fits?",
+        options: [
+          "Moss",
+          "Fern",
+          "Gymnosperm",
+          "Angiosperm with a fruit"
+        ],
+        answer: 2,
+        explanation: "Exposed ovules on cone scales support a gymnosperm identification."
+      },
+      {
+        question: "Which pair shares true vascular tissue but differs in whether it makes seeds?",
+        options: [
+          "Moss and fern",
+          "Fern and gymnosperm",
+          "Two mosses",
+          "Two ferns"
+        ],
+        answer: 1,
+        explanation: "Both ferns and gymnosperms are vascular. Ferns are seedless while gymnosperms make seeds."
+      }
+    ]
+  },
+  {
+    id: "structural-organisation",
+    unit: 2,
+    title: "Leaf cross sections: tissues and gas exchange",
+    reference: {
+      title: "OpenStax Biology 2e: 30.4 Leaves",
+      url: "https://openstax.org/books/biology-2e/pages/30-4-leaves"
+    },
+    lab: null,
+    alt: "A schematic typical dorsiventral leaf shows upper epidermis, palisade mesophyll, spongy mesophyll with air spaces, lower epidermis and a stomatal pore.",
+    sections: [
+      {
+        title: "Orient the section using tissue clues",
+        paragraphs: [
+          "In a typical dorsiventral leaf, the upper epidermis covers a layer of tightly packed palisade mesophyll. Spongy mesophyll lies below it and has larger intercellular air spaces. Leaf orientations and tissue arrangements vary among species."
+        ]
+      },
+      {
+        title: "Follow the diffusion pathway",
+        paragraphs: [
+          "In the schematic, carbon dioxide can enter through a stomatal pore, then diffuse through the air spaces toward photosynthetic cells. Guard cells regulate the pore. Water vapour can leave through the same network."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Palisade: closely packed photosynthetic cells in this model.",
+          "Spongy mesophyll: loose cells with spaces for gas diffusion.",
+          "Guard cells regulate stomatal aperture."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "A leaf cross section shows elongate packed cells near surface A and loose cells above a pore near surface B. Which side is upper in this schematic?",
+        steps: [
+          "Identify palisade cells by their elongated, packed arrangement.",
+          "Identify spongy tissue by the air spaces; the pore communicates with those spaces."
+        ],
+        answer: "Surface A is upper in the typical dorsiventral model."
+      }
+    ],
+    quiz: [
+      {
+        question: "Which observed feature best identifies spongy mesophyll in this model?",
+        options: [
+          "A continuous surface cell layer",
+          "Large intercellular air spaces",
+          "A cluster of root hairs",
+          "Two guard cells around a pore"
+        ],
+        answer: 1,
+        explanation: "Loose cell packing creates internal air spaces. Guard cells instead identify the pore’s immediate boundary."
+      },
+      {
+        question: "What directly regulates stomatal aperture?",
+        options: [
+          "Guard cells",
+          "Palisade cell walls",
+          "Xylem vessel ends",
+          "Cuticle alone"
+        ],
+        answer: 0,
+        explanation: "Changes in guard-cell turgor adjust the opening."
+      },
+      {
+        question: "Which sequence describes a possible carbon dioxide path toward a photosynthetic cell?",
+        options: [
+          "Xylem then cuticle",
+          "Guard-cell nucleus then phloem",
+          "Stomatal pore then mesophyll air spaces",
+          "Cuticle then root hair"
+        ],
+        answer: 2,
+        explanation: "An open pore connects the outside atmosphere with internal air spaces, from which carbon dioxide diffuses toward cells."
+      }
+    ]
   }
 ];
 
