@@ -79,16 +79,17 @@ function Room({ active, closeUp, reducedMotion, onBookClick, onTeacherClick, gre
     return () => { entrance.kill(); };
   }, [invalidate, reducedMotion]);
 
+  const boardActive = Boolean(lesson) && !closeUp;
   useEffect(() => {
     const move = gsap.to(framing.current, {
       zoom: closeUp ? 1 : 0,
-      board: lesson && !closeUp ? 1 : 0,
+      board: boardActive ? 1 : 0,
       duration: reducedMotion ? 0 : 1.1,
       ease: "power2.inOut",
       onUpdate: invalidate,
     });
     return () => { move.kill(); };
-  }, [closeUp, invalidate, lesson, reducedMotion]);
+  }, [boardActive, closeUp, invalidate, reducedMotion]);
 
   useFrame(({ camera, size }, delta) => {
     const { zoom, arrival, board } = framing.current;
@@ -115,8 +116,10 @@ function Room({ active, closeUp, reducedMotion, onBookClick, onTeacherClick, gre
   return (
     <>
       <color attach="background" args={["#251919"]} />
+      <fog attach="fog" args={["#382728", 10, 22]} />
       <ambientLight color="#edd1b0" intensity={0.65} />
       <Zorami active={active} reducedMotion={reducedMotion} greeting={greeting} lesson={lesson} onSelect={onTeacherClick} />
+      <pointLight position={[1.1, 3.1, 0.3]} color="#ffcf99" intensity={4.4} distance={5} decay={2} />
       <hemisphereLight color="#aeb9fa" groundColor="#784527" intensity={1.3} />
       <directionalLight position={[1.8, 4.8, -1.6]} intensity={2.3} color="#ffc09c" />
       <directionalLight position={[-2, 4.2, 3]} intensity={1.45} color="#ffe0ac" castShadow

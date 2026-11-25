@@ -58,6 +58,25 @@ try {
       const geography = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "Geography · Distance along a meridian" }) });
       await geography.getByRole("slider", { name: "First latitude" }).press("Home");
       await geography.getByText(/67° apart/).waitFor();
+      const advancedLab = title => page.getByRole("article").filter({ has: page.getByRole("heading", { name: title }) });
+      const friction = advancedLab("Physics · Force and friction");
+      await friction.getByRole("slider", { name: "Pull force (N)" }).press("Home");
+      await friction.getByText(/The block stays at rest/).waitFor();
+      const optics = advancedLab("Physics · Reflection and refraction");
+      await optics.getByLabel("Incident medium").selectOption("glass");
+      await optics.getByLabel("Transmitted medium").selectOption("air");
+      await optics.getByRole("slider", { name: "Incident angle from normal (degrees)" }).press("End");
+      await optics.getByText(/Total internal reflection/).waitFor();
+      const cell = advancedLab("Biology · Plant and animal cells");
+      await cell.getByLabel("Cell model").selectOption("plant");
+      await cell.getByRole("button", { name: "Chloroplast", exact: true }).click();
+      await cell.getByRole("status").getByText(/Captures light energy/).waitFor();
+      const molecules = advancedLab("Chemistry · Molecular geometry");
+      await molecules.getByLabel("Molecule", { exact: true }).selectOption("methane");
+      await molecules.getByRole("button", { name: "Carbon", exact: true }).click();
+      await molecules.getByText(/Tetrahedral/).waitFor();
+      await molecules.getByRole("button", { name: "Reset molecule" }).click();
+      await molecules.getByText(/104.5°/).waitFor();
       if (screenshots && width === 360) {
         await civic.screenshot({ path: path.join(screenshots, "majority-360.png") });
         await geography.screenshot({ path: path.join(screenshots, "meridian-360.png") });
@@ -105,6 +124,12 @@ try {
     await room.getByRole("radio", { name: "Every person" }).check();
     await room.getByRole("button", { name: "Check answer" }).click();
     await room.getByRole("status").getByText(/Correct/).waitFor();
+    await room.getByLabel("Teaching mode").selectOption("questions");
+    await room.getByLabel("Search subject").selectOption("ICT");
+    await room.getByLabel("Ask Zorami a question").fill("volatile memory");
+    await room.getByRole("button", { name: "Find a reviewed lesson" }).click();
+    await room.getByRole("status").getByText(/Related lesson: Volatile memory and persistent storage/).waitFor();
+    await room.getByText(/ordinary working RAM/).waitFor();
     assert.equal(classroomRequests, 0);
     await context.setOffline(false);
     await room.getByLabel("Teaching mode").selectOption("explain");
@@ -230,6 +255,34 @@ try {
     }
     await page.goto(base + "/jee/offline-learning");
 
+    const retiredId = "gravity-chapter-1-v999";
+    await page.evaluate(async id => {
+      const cache = await caches.open("mpsc-free-mock-lesson-v1-pack-" + id);
+      await cache.put("/lectures/__offline_ready__", new Response("saved"));
+    }, retiredId);
+    await page.reload();
+    await page.getByRole("button", { name: "Remove " + retiredId }).click();
+    await page.getByText("Previous pack removed.").waitFor();
+    await page.getByRole("heading", { name: /NEET Biology recorded lessons/ }).first().waitFor();
+    await page.evaluate(async () => {
+      const cache = await caches.open("mpsc-free-mock-lesson-v1-pack-newtons-laws-chapter-1-v1");
+      await cache.put("/jee/offline-packs/newtons-laws-chapter-1-v1", new Response("Incomplete fixture"));
+    });
+    await page.reload();
+    const newton = page.getByRole("article").filter({ hasText: /Newton’s laws · Chapter 1 with narration/ });
+    await newton.getByText(/Previous download was interrupted/).waitFor();
+    await newton.getByRole("button", { name: "Save offline pack" }).click();
+    await newton.getByText("Offline pack saved. Open the pack to study.").waitFor();
+    const newtonUrl = await newton.getByRole("link").getAttribute("href");
+    await context.setOffline(true);
+    await page.goto(base + newtonUrl);
+    await page.getByLabel("Narration with captions").evaluate(item => item.load());
+    await page.waitForFunction(() => document.querySelector("video")?.readyState >= 1);
+    await context.setOffline(false);
+    await page.goto(base + "/jee/offline-learning");
+    await newton.getByRole("button", { name: "Remove offline pack" }).click();
+    await newton.getByText("Offline pack removed.").waitFor();
+
     const subjectPack = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "JEE Mathematics recorded lessons" }) });
     await subjectPack.getByRole("button", { name: "Save offline pack" }).click();
     await subjectPack.getByText("Offline pack saved. Open the pack to study.").waitFor({ timeout: 180_000 });
@@ -248,7 +301,7 @@ try {
     await context.close();
   }
 
-  console.log("Genesis checks passed: three viewport sizes, both themes, classroom offline reload, synchronized lecture blackboard, offline lecture reload, partial audio, playback, seek, captions, individual/chapter/subject removal, and eight lab activities.");
+  console.log("Genesis checks passed: three viewport sizes, both themes, classroom offline reload, synchronized lecture blackboard, offline lecture reload, partial audio, playback, seek, captions, individual/chapter/subject removal, and twelve lab activities.");
 } finally {
   await browser.close();
 }

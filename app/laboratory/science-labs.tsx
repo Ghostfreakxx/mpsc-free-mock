@@ -5,12 +5,12 @@ import Link from "next/link";
 import styles from "../study-room/study-room.module.css";
 import { atomCounts, meridianArc, peaCross, quadraticRoots, quadraticValue, simpleMajority, type PeaGenotype } from "./lab-models";
 
-function Experiment({ title, children, onReset, lesson, question, choices, answer, feedback }: {
-  title: string; children: ReactNode; onReset: () => void; lesson: string; question: string;
+export function Experiment({ id, title, children, onReset, lesson, question, choices, answer, feedback }: {
+  id?: string; title: string; children: ReactNode; onReset: () => void; lesson: string; question: string;
   choices: string[]; answer: number; feedback: string;
 }) {
   const [picked, setPicked] = useState<number>();
-  return <article className={styles.reviewedBoard}>
+  return <article id={id} className={styles.reviewedBoard}>
     <h2>{title}</h2>
     {children}
     <button type="button" className={styles.reviewCheck} onClick={() => { onReset(); setPicked(undefined); }}>Reset experiment</button>
@@ -25,7 +25,7 @@ function Experiment({ title, children, onReset, lesson, question, choices, answe
   </article>;
 }
 
-function Slider({ label, value, min, max, step = 1, change }: {
+export function Slider({ label, value, min, max, step = 1, change }: {
   label: string; value: number; min: number; max: number; step?: number; change: (value: number) => void;
 }) {
   return <label className={styles.labSlider}>

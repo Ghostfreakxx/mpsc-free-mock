@@ -445,3 +445,11 @@
 .labAxis { fill: none; stroke: currentColor; stroke-width: 2; }
 .labStroke { fill: none; stroke: var(--room-accent); stroke-width: 4; }
 .labDot { fill: var(--room-accent); stroke: var(--room-card); stroke-width: 2; }
+
+.labViewport {
+  block-size: clamp(16rem, 45vw, 29rem);
+  overflow: hidden;
+  border: 1px solid var(--room-line);
+  border-radius: 0.5rem;
+  background: var(--room-card);
+}

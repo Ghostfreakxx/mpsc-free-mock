@@ -69,3 +69,18 @@ Chapter notes can now be downloaded individually from the lecture player, and th
 - Local checks, registry audit, Webpack production build, the 271-route smoke suite, the recorded-library and JEE course checks, and the private zero-paid-request fixture passed. The default Windows Turbopack build still exits in its worker.
 - Chromium verified all eight lab activities, the existing individual recording after clearing the general static cache, and chapter and Mathematics subject packs. The chapter played and sought offline with native captions. The Mathematics pack saved all 14 recordings and loaded its first audio stream offline. All five Gravitation MP3 durations matched their published chapter cues within 0.25 seconds. Spoken-word alignment and wider syllabus review remain open.
 - At simulated 360 px with 4× CPU slowdown, 150 ms latency and 1.6 Mbps downstream, lab controls appeared in 0.98 s and offline-library controls in 2.69 s. Physical Android hardware was unavailable.
+
+## Advanced implementation
+
+- The lab preserves its first eight activities and adds force and friction, reflection and refraction, a plant and animal cell comparison, and a 3D molecular bench. The bench loads only after opening. Models and materials are authored in the project. The classroom lighting and spectacles are refined, and cue changes no longer repeatedly restart the same blackboard camera transition.
+- The offline classroom adds source-checked questions and notes for polity, history, economics, JEE/NEET science, ICT, and aptitude. Existing Mizo drafts are brought into additional aptitude topics, and English fallback labeling remains. The ICT memory lesson uses the NIST glossary. Classroom topics with suitable lab activities link directly to them. [NIST CSRC Glossary](https://csrc.nist.gov/glossary/term/volatile_memory)
+- NEET subject media and five Newton's laws chapters join the existing download catalog. Storage estimates, large-download prompts, retry after interrupted writes, and management of saved retired versions are available. Existing media files and progress keys are untouched.
+- Remaining work includes laboratory modules listed in the inventory, broader Mizo review, more chapter packs, device storage testing, and actual spoken-word alignment. The live lecture link still requires its original repository, route, or documented integration. No new service was configured.
+
+### Advanced batch verification
+
+The built offline classroom pack contains 36 topics, 108 questions and 39 Mizo drafts. Chromium found the ICT lesson with networking disabled. Tests covered all twelve lab activities, the unfinished Newton download recovery, retired-edition removal, and the existing individual, chapter and Mathematics subject pack flows. A separate 360 px Chromium run saved the 466.6 MB NEET Biology pack, opened all 32 recording entries offline, loaded the first recording, and removed the pack.
+
+Playwright rendered and rotated the 3D molecule and captured the refreshed classroom at 360, 768 and 1440 px. Chromium used software WebGL, and no physical Android benchmark was run. The local production build passed with Webpack. Turbopack on this Windows machine continues to fail before its worker handshake. The existing Linux build job for Actions run #264 passed.
+
+There was no installed local speech recognizer available for an independent spoken-text comparison. Chapter playback and WebVTT timing are verified to the extent documented by the fixtures. Keep spoken-word alignment separate from those checks.

@@ -9,3 +9,9 @@ The explicit downloader fetches first-party resources without credentials or red
 Maintain a new versioned URL and unique media paths when rebuilding a pack whose source recording changes. Future work includes additional chapter catalogs, NEET subject packs, and a gallery for retired editions. Browser-managed storage can be evicted by the device. Check storage availability and keep bookmarks for saved editions.
 
 The current audio sizes are approximately 567.5 MB for Physics, 891.5 MB for Chemistry, and 206.5 MB for Mathematics. The individual Gravitation chapters are approximately 1.2–1.5 MB. Large subject downloads need device storage and may be unsuitable for limited data plans.
+
+## Advanced batch
+
+NEET Physics and Chemistry packs reuse the published shared recordings and include the dedicated closeout lessons. NEET Biology uses the dedicated recording catalog. Subjects split into parts at a 500 MB audio target. Five Newton's laws chapter packs reuse the original MP3s and rebase their WebVTT cues. Existing Gravitation, JEE subject and individual recording URLs remain available.
+
+The library estimates free browser storage, flags large downloads and lists completed retired editions through their existing markers. Interrupted downloads can be restarted. Restart discards incomplete files and verifies the package again. There is no automatic retry or automatic media download. Availability still depends on device quota and eviction.

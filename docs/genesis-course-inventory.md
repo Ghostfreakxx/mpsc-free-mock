@@ -19,3 +19,11 @@ The existing published manifests contain **zero missing narration files**. The d
 The published lesson player reads first-party MP3s and WebVTT. The repository has OpenAI narration and transcription scripts and a separate private classroom API. This pass found no public live lecture API route in this checkout. Leave those existing integrations untouched and verify the intended live integration against the deployment or source that actually owns it. No paid generation was run.
 
 The machine-readable [inventory snapshot](./genesis-course-inventory.json) includes per-lesson section, script, cue, quiz and media checks, written examples, unit mappings, media scan totals and the current narration queue.
+
+## Advanced syllabus and audio review
+
+The recorded map still has a recording for each of the 54 JEE units. Nine Physics units have no dedicated written companion in the current catalog: Units and Measurements; Work, Energy and Power; Oscillations and Waves; Electromagnetic Waves; Optics; Dual Nature of Matter and Radiation; Atoms and Nuclei; Electronic Devices; and Experimental Skills. These are written-coverage gaps. All 154 published caption files still match the player cues. No missing published audio was found.
+
+Chromium decoded all five standalone Newton's laws chapter MP3s. Each media duration matched its existing chapter interval within 0.25 seconds. An independent spoken-word check remains outstanding.
+
+The related `tochhawng-data` repository contains a Next.js data site. Its 52-file tree has no API, live, lecture, stream or voice route. No new lead for the separate lecture service was found. [Related data repository](https://github.com/Ghostfreakxx/tochhawng-data)

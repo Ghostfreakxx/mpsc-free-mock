@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { searchLessons } from "../app/study-room/lesson-search.ts";
 import { atomCounts, meridianArc, peaCross, quadraticRoots, quadraticValue, simpleMajority } from "../app/laboratory/lab-models.ts";
+import { frictionTrial, refractedAngle } from "../app/laboratory/advanced-models.ts";
+import { molecules } from "../app/laboratory/molecules.ts";
 import { resistiveCircuit } from "../app/laboratory/circuit.ts";
 import { pendulum, projectile } from "../app/laboratory/motion.ts";
 
@@ -62,4 +64,17 @@ test("majorities and meridian distances use the correct denominators", () => {
   assert.equal(simpleMajority(0, 0).threshold, null);
   assert.equal(meridianArc(20, -30).degrees, 50);
   assert.ok(Math.abs(meridianArc(0, 90).kilometres - 10007.54) < 0.01);
+});
+
+test("force, refraction and molecular angle models match their stated assumptions", () => {
+  assert.equal(frictionTrial(10, 6, 0.4).net, 0);
+  assert.ok(frictionTrial(40, 6, 0.4).acceleration > 0);
+  assert.equal(refractedAngle(50, 1.5, 1), null);
+  assert.equal(refractedAngle(0, 1.5, 1), 0);
+  assert.ok(Math.abs(refractedAngle(30, 1, 1.5) - 19.471) < 0.001);
+  for (const model of Object.values(molecules)) {
+    const pair = model.points[0].map((value, index) => value * model.points[1][index]);
+    const angle = Math.acos(pair.reduce((a, b) => a + b, 0)) * 180 / Math.PI;
+    assert.ok(Math.abs(angle - model.angle) < 0.04, model.name);
+  }
 });

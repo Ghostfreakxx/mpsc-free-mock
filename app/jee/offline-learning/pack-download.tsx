@@ -18,6 +18,7 @@ export default function PackDownload({ pack }: { pack: PackSummary }) {
   const bytes = pack.assets.reduce((total, asset) => total + asset.bytes, 0);
   const [supported, setSupported] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [interrupted, setInterrupted] = useState(false);
   const [working, setWorking] = useState(false);
   const [message, setMessage] = useState("");
   const [completed, setCompleted] = useState(0);
@@ -26,8 +27,8 @@ export default function PackDownload({ pack }: { pack: PackSummary }) {
   useEffect(() => {
     if (!("caches" in window) || !("serviceWorker" in navigator) || !navigator.locks) return;
     let active = true;
-    void caches.match(marker, { cacheName }).then(result => {
-      if (active) { setSupported(true); setSaved(Boolean(result)); }
+    void Promise.all([caches.match(marker, { cacheName }), caches.has(cacheName)]).then(([result, exists]) => {
+      if (active) { setSupported(true); setSaved(Boolean(result)); setInterrupted(exists && !result); }
     }).catch(() => {});
     return () => { active = false; controller.current?.abort(); };
   }, [cacheName]);
@@ -36,6 +37,7 @@ export default function PackDownload({ pack }: { pack: PackSummary }) {
     const request = new AbortController();
     controller.current = request;
     setWorking(true);
+    setInterrupted(false);
     setCompleted(0);
     setMessage("");
     try {
@@ -88,6 +90,8 @@ export default function PackDownload({ pack }: { pack: PackSummary }) {
   return <article className={styles.notes}>
     <h2>{pack.title}</h2>
     <p>{pack.description} Audio size {size(bytes)}. Version {pack.version}.</p>
+    {!saved && bytes > 100_000_000 && <p>Large download. Check your data allowance and free storage first.</p>}
+    {interrupted && <p>Previous download was interrupted. Saving again replaces the incomplete files.</p>}
     <p><a href={route}>Open {pack.title}</a></p>
     {supported && (working ? <>
       <progress aria-label="Offline pack files downloaded" max={pack.assets.length} value={completed} />

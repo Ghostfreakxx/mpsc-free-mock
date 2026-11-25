@@ -16,6 +16,7 @@ export type ReviewedLesson = {
   notes: string[];
   pitfall: string;
   source: { title: string; url: string };
+  lab?: string;
   companion?: { title: string; audio: string; captions: string; href: string };
   quiz: (Question & { answer: number; mizo?: Question })[];
 };
@@ -201,6 +202,7 @@ export default function ReviewedClassroom() {
             publish(active, mode, displayLanguage, text);
             document.getElementById("classroom-lesson-title")?.focus();
           }}>Show on blackboard</button>
+          {active.lab && <p><Link href={active.lab} prefetch={false}>Try the related laboratory activity ↗</Link></p>}
           {active.companion && <RecordedCompanion key={active.id} companion={active.companion} />}
         </>}
         <div className={styles.roomActions}>

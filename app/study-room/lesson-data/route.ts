@@ -2,6 +2,7 @@ import { getMizoTranslation } from "../../data/mizo-translations";
 import { reviewedQuestions, sources, topics } from "../../data/reviewed-content";
 import { lectures } from "../../jee/classes/lessons";
 import { cellLesson } from "../../neet/classes/cell-lesson";
+import { memoryLesson } from "../ict-lesson";
 import type { ReviewedLesson } from "../reviewed-classroom";
 
 export const dynamic = "force-static";
@@ -15,6 +16,10 @@ const selection = {
   "fundamental-rights-dpsp": "political-science", "centre-state-relations": "political-science",
   "indian-monsoon": "geography", "india-drainage": "geography", inflation: "economics",
   "money-functions": "economics", "acids-bases-ph": "science", "mizoram-geography-culture": "mizoram",
+  "union-polity": "political-science", "local-government": "political-science", "union-judiciary": "political-science",
+  "mughal-chronicles": "history", "national-income": "economics", "newtons-laws": "science",
+  "evolution-evidence": "science", "cellular-respiration": "science",
+  percentages: "mathematics", "simple-interest": "mathematics", "speed-distance-time": "mathematics",
 } as const;
 
 const recordedCompanions = {
@@ -36,7 +41,9 @@ export function GET() {
     const recording = Object.hasOwn(recordedCompanions, id) ? recordedCompanions[id as keyof typeof recordedCompanions] : undefined;
     const companion = recording && { title: recording.title, audio: recording.audio, captions: recording.subtitles,
       href: id === "biology" ? "/neet/classes/cell-unit-life" : `/jee/classes/${recording.id}` };
-    return { id, subject, companion, label: topic.subject, title: topic.title, notes: topic.notes, pitfall: topic.pitfall, source: sources[topic.sourceId], quiz };
+    const labs: Record<string, string> = { chemistry: "/laboratory#molecular-geometry", biology: "/laboratory#plant-animal-cells",
+      "newtons-laws": "/laboratory#force-friction", physics: "/laboratory#force-friction" };
+    return { id, subject, companion, lab: labs[id], label: topic.subject, title: topic.title, notes: topic.notes, pitfall: topic.pitfall, source: sources[topic.sourceId], quiz };
   });
-  return Response.json(lessons);
+  return Response.json([...lessons, memoryLesson]);
 }

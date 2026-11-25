@@ -158,10 +158,16 @@ export default function Zorami({ active, reducedMotion, greeting, lesson, onSele
               <Form at={[-0.004, 0.022, 0.233]} size={[0.004, 0.004, 0.003]} color="#fff1d3" />
             </group>)}
           </group>
-          {eyes.map(x => <mesh key={x} position={[x, 0.023, 0.242]} scale={[1, 0.83, 1]}>
-            <torusGeometry args={[0.068, 0.008, 8, 24]} />
-            <meshStandardMaterial color="#302228" roughness={0.34} />
-          </mesh>)}
+          {eyes.map(x => <group key={x} position={[x, 0.023, 0.242]} scale={[1, 0.83, 1]}>
+            <mesh>
+              <torusGeometry args={[0.068, 0.008, 8, 24]} />
+              <meshStandardMaterial color="#302228" metalness={0.26} roughness={0.34} />
+            </mesh>
+            <mesh>
+              <circleGeometry args={[0.06, 24]} />
+              <meshBasicMaterial color="#e8f1e6" transparent opacity={0.075} depthWrite={false} />
+            </mesh>
+          </group>)}
           <mesh position={[0, 0.037, 0.243]}>
             <boxGeometry args={[0.044, 0.011, 0.013]} />
             <meshStandardMaterial color="#302228" />
