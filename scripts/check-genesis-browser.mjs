@@ -152,6 +152,13 @@ try {
     await room.getByRole("button", { name: "Read the full lesson" }).click();
     await room.getByLabel("Teaching mode").selectOption("revision");
     await room.getByText("A test cross uses a homozygous recessive partner.").waitFor();
+    await room.getByLabel("Teaching mode").selectOption("questions");
+    await room.getByLabel("Ask Zorami a question").fill("enzyme activity substrate saturation");
+    await room.getByRole("button", { name: "Find a reviewed lesson" }).click();
+    await room.getByRole("status").getByText(/Related lesson: Enzyme activity and substrate saturation/).waitFor();
+    await room.getByRole("button", { name: "Read the full lesson" }).click();
+    await room.getByLabel("Teaching mode").selectOption("revision");
+    await room.getByText("Vary one factor at a time.").waitFor();
     assert.equal(classroomRequests, 0);
     await context.setOffline(false);
     await room.getByLabel("Teaching mode").selectOption("explain");
@@ -176,7 +183,7 @@ try {
       await cellDiagram.scrollIntoViewIfNeeded();
       await page.screenshot({ path: path.join(screenshots, "neet-cell-notes-360.png") });
     }
-    for (const [slug, answer] of [["cell-cycle-division", "12"], ["genetics-evolution", "2/3"]]) {
+    for (const [slug, answer] of [["cell-cycle-division", "12"], ["genetics-evolution", "2/3"], ["biomolecules", "Activation barrier"]]) {
       await page.goto(base + "/neet/classes/written/" + slug);
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
       const diagram = page.locator("figure img");
@@ -389,6 +396,31 @@ try {
     await page.goto(base + "/jee/offline-learning");
     await subjectPack.getByRole("button", { name: "Remove offline pack" }).click();
     await subjectPack.getByText("Offline pack removed.").waitFor();
+    await page.setViewportSize({ width: 360, height: 800 });
+    await page.goto(base + "/jee/mathematics-timed?exam=neet");
+    await page.getByRole("heading", { name: "JEE Mathematics timed practice" }).waitFor();
+    await page.getByRole("button", { name: /Start 10-question JEE Mathematics practice/ }).click();
+    await page.getByRole("timer").waitFor();
+    const firstQuestion = page.getByRole("region", { name: "Question 1", exact: true });
+    await firstQuestion.getByText(/Mathematics ·/).waitFor();
+    await firstQuestion.getByRole("group", { name: "Answer options" }).getByRole("button").first().click();
+    await page.getByRole("button", { name: /Mark for review/ }).click();
+    const secondQuestion = page.getByRole("region", { name: "Question 2", exact: true });
+    await secondQuestion.waitFor();
+    await page.reload();
+    await secondQuestion.waitFor();
+    await page.getByRole("button", { name: "Previous", exact: true }).click();
+    await firstQuestion.getByRole("button", { pressed: true }).waitFor();
+    await firstQuestion.getByRole("button", { name: /Unmark/ }).waitFor();
+    assert.equal(await page.evaluate(() => localStorage.getItem("exam-simulator:attempt:v1")), null);
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+    if (screenshots) await page.screenshot({ path: path.join(screenshots, "jee-mathematics-timed-360.png") });
+    await page.getByRole("button", { name: "Submit", exact: true }).click();
+    await page.getByRole("button", { name: "Submit exam" }).click();
+    await page.getByRole("heading", { name: /You scored [01] out of 10/ }).waitFor();
+    await page.getByRole("heading", { name: "Review answers" }).waitFor();
+    await page.getByRole("button", { name: "All (10)", exact: true }).click();
+    await page.getByText(/Correct answer:/).first().waitFor();
   } finally {
     await context.close();
   }

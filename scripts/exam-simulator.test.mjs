@@ -206,3 +206,17 @@ test('a link to a specific exam replaces a finished paper but never an unfinishe
   assert.equal(attemptOnArrival(running, 'neet'), running);
   assert.equal(attemptOnArrival(null, 'neet'), null);
 });
+
+test('dedicated Mathematics practice selects only reviewed Mathematics and restores only matching papers', () => {
+  const math = examConfigs['jee-math'];
+  const paper = selectQuestions(math, jeePool, 10, 88);
+  assert.equal(paper.length, 10);
+  assert.ok(paper.every(question => question.subject === 'Mathematics'));
+  const active = startAttempt(math, 'practice', paper, 1000);
+  assert.equal(active.deadline - active.startedAt, 20 * 60_000);
+  const answered = selectAnswer(active, paper[0].answer, 2000);
+  assert.equal(scoreAttempt(submitAttempt(answered, 3000), math, byId).score, 1);
+  assert.deepEqual(restoreAttempt(JSON.stringify(answered), byId), answered);
+  const mixed = startAttempt(math, 'practice', [jeePool.find(question => question.subject === 'Physics')], 1000);
+  assert.equal(restoreAttempt(JSON.stringify(mixed), byId), null);
+});

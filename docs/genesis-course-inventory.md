@@ -5,7 +5,7 @@ Run `node scripts/inventory-courses.mjs` for the per-recording listing. Add `--h
 | Published catalog | Recorded lessons | Written lessons | Checks performed |
 | --- | ---: | ---: | --- |
 | JEE Physics, Chemistry and Mathematics | 120 | 57 | Catalog references, chapter narration scripts, cue metadata, quizzes, nonempty audio and WebVTT |
-| NEET dedicated | 34 | 3 | Same recorded lesson checks |
+| NEET dedicated | 34 | 4 | Same recorded lesson checks |
 | NEET shared Physics and Chemistry | 106 mappings | — | Every mapping resolves to an existing JEE recording |
 
 The checked JEE syllabus inventory has 20 Physics, 20 Chemistry and 14 Mathematics units, with 21, 22 and 14 written lessons respectively. The inventory maps a recording to each of the 54 JEE units. All 57 written lessons have a local figure and worked examples. A lesson count alone does not measure subheading coverage. Retain the repository's [NEET Biology coverage](./neet-class-coverage-2026.md), [shared course mapping](./neet-physics-chemistry-mapping-2026.md), and [subheading audit](./neet-subheading-review-2026.md) when marking syllabus completion.
@@ -78,3 +78,11 @@ Practical Chemistry now includes a numerical example distinguishing theoretical 
 The first 40 seconds of Cell Cycle chapters 3 and 13 and Genetics chapters 1 and 2 were decoded locally and compared to actual scripts using Vosk. Token-sequence similarities were .775, .693, .824 and .771 respectively. The weak matches clustered around scientific terms, allele symbols and spoken numerals. No new caption mismatch was confirmed and no audio, cues, captions or existing offline-pack versions were edited.
 
 Teaching references checked for this batch: [Cell cycle](https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle), [Meiosis](https://openstax.org/books/biology-2e/pages/11-1-the-process-of-meiosis), and [Genotypes and test crosses](https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits).
+
+## Dedicated Mathematics practice and Biomolecules
+
+The Mathematics class tab links to a separate timed practice mode with reviewed Mathematics questions from the existing JEE bank. Practice settings are 10 or 20 questions, two minutes per question, one point per correct answer, and zero for wrong or skipped answers. It uses the existing question palette, review flags, deadline, scoring breakdown and explanations. Attempts and recent scores use separate storage keys from full simulator papers. The mode is unofficial and makes no claim about NTA paper format or chapter weight.
+
+The fourth NEET written companion focuses on enzyme activity and substrate saturation, using Biomolecules B02 chapters 10–12 and the existing Unit 3 inventory. It adds a labelled schematic, a worked initial-rate comparison, revision, three explained questions, downloadable notes, and Zorami offline search and revision. Wider Biomolecules headings and unpaired recordings remain in the inventory. The chromosome-count companion distinguishes the undivided mitotic anaphase cell from one pole; the Mendelian companion states the simplified single-gene model assumptions. [OpenStax enzymes](https://openstax.org/books/biology-2e/pages/6-5-enzymes)
+
+Local decoded-audio review compared the first 30 seconds of Biomolecules chapters 10, 11 and 12 with their scripts using Vosk. Token-sequence similarities were .931, .954 and .903. The differences included spelling, words clipped at the excerpt boundary, and recognizer substitutions such as “act of” for “active.” No new narration mismatch was confirmed. The MP3s, cue manifests, active captions and offline pack versions were left intact.

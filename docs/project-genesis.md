@@ -111,3 +111,9 @@ Verification passed locally: repository checks, registry audit, 500-page Webpack
 ## NEET Biology expansion
 
 Added focused written companions on chromosome counting and Mendelian test crosses with diagrams, original practice, text downloads, and offline classroom integration. Existing recorded content and saved keys are unchanged. The course inventory records the companion boundaries, the local sample narration pass and outstanding course work.
+
+## Mathematics-only timed practice and Biomolecules
+
+Added a dedicated JEE Mathematics practice route with independent progress, reviewed bank questions and the existing exam interface. Added an enzyme activity companion with English offline classroom support and reviewed Biology counting and probability assumptions. The course inventory records source coverage and additional local narration sampling.
+
+Mobile screenshots: [Mathematics practice](./genesis-screenshots/jee-mathematics-timed-360.png) and [Biomolecules](./genesis-screenshots/neet-written-biomolecules-360.png). A local 360 px Chromium fixture also verified both light-theme routes and used a simulated clock to verify that time-up submits the Mathematics paper at its saved deadline.

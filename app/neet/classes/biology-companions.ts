@@ -28,7 +28,7 @@ export const biologyCompanions = [
       {
         title: "State what you are counting",
         paragraphs: [
-          "After meiosis I each daughter cell is haploid but each chromosome still has two chromatids. During anaphase, counts for the undivided cell can differ from counts at one pole. Use the question’s boundary."
+          "After meiosis I each daughter cell is haploid but each chromosome still has two chromatids. During anaphase, counts for the undivided cell can differ from counts at one pole. In mitotic anaphase, a cell that started with eight chromosomes has sixteen single-chromatid chromosomes before cytokinesis, eight headed to each pole. Total nuclear DNA in the undivided cell is still 4C. Use the question’s boundary."
         ]
       },
       {
@@ -109,7 +109,7 @@ export const biologyCompanions = [
       {
         title: "Use a test cross",
         paragraphs: [
-          "Cross the unknown yellow parent with yy. All offspring are predicted yellow for YY × yy. For Yy × yy, each offspring independently has probability 1/2 of being green under the simple model. A small all-yellow sample does not prove YY."
+          "Cross the unknown yellow parent with yy. All offspring are predicted yellow for YY × yy. For Yy × yy, each offspring independently has probability 1/2 of being green under the simple model. A small all-yellow sample does not prove YY. This model assumes a single gene, complete dominance, equal segregation, random fertilization and comparable survival. Linkage in two-gene problems or unequal survival can change predicted ratios."
         ]
       },
       {
@@ -169,6 +169,90 @@ export const biologyCompanions = [
         ],
         answer: 1,
         explanation: "One green can occur first or second. Each order has probability 1/4, so the total is 1/2."
+      }
+    ]
+  },
+  {
+    id: "biomolecules",
+    unit: 3,
+    title: "Enzyme activity and substrate saturation",
+    reference: {
+      title: "OpenStax Biology 2e: Enzymes",
+      url: "https://openstax.org/books/biology-2e/pages/6-5-enzymes"
+    },
+    lab: null,
+    alt: "Initial rate rises toward a plateau as substrate concentration increases, with active enzyme amount, pH and temperature fixed.",
+    sections: [
+      {
+        title: "What an enzyme changes",
+        paragraphs: [
+          "A substrate is a reactant on which an enzyme acts. It binds at the active site. An enzyme accelerates the reaction by lowering the activation barrier and is regenerated. It speeds the approach to equilibrium without shifting the equilibrium position."
+        ]
+      },
+      {
+        title: "Read the axes",
+        paragraphs: [
+          "Initial rate is plotted against substrate concentration. With active enzyme amount held fixed, increasing substrate initially raises the rate. At high substrate concentration, active sites are occupied much of the time and extra substrate has little effect. The schematic represents simple saturation behaviour."
+        ]
+      },
+      {
+        title: "Control the comparison",
+        paragraphs: [
+          "Temperature, pH and active enzyme amount can each affect rate. Keep them fixed before attributing a difference to substrate concentration. A drop in measured rate alone cannot establish that an enzyme has been permanently denatured."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Catalysts lower the activation barrier without changing equilibrium.",
+          "The plateau is consistent with saturation under fixed assay conditions.",
+          "Vary one factor at a time."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "With active enzyme amount held fixed, doubling substrate changes initial rate from 2.0 to 3.8 at low substrate, and from 9.8 to 9.9 at high substrate. Which result supports saturation?",
+        steps: [
+          "Compare the gains: 1.8 and 0.1 rate units respectively.",
+          "The smaller gain at high substrate is consistent with most active sites being occupied much of the time."
+        ],
+        answer: "The high-substrate comparison supports saturation. Two points do not establish an exact limiting rate."
+      }
+    ],
+    quiz: [
+      {
+        question: "What does an enzyme lower?",
+        options: [
+          "Equilibrium constant",
+          "Activation barrier",
+          "Product free energy only",
+          "Equilibrium product concentration"
+        ],
+        answer: 1,
+        explanation: "An enzyme offers a faster pathway. It does not alter the free-energy difference between reactants and products."
+      },
+      {
+        question: "Why does extra substrate have little effect near the plateau?",
+        options: [
+          "All enzyme is destroyed",
+          "Most sites are already occupied much of the time",
+          "The reaction is uncatalysed",
+          "Substrate and enzyme are equally concentrated"
+        ],
+        answer: 1,
+        explanation: "Under simple saturation, existing active sites already spend much of their time occupied."
+      },
+      {
+        question: "How can you isolate the effect of substrate concentration?",
+        options: [
+          "Vary pH and substrate",
+          "Vary enzyme amount and substrate",
+          "Hold enzyme amount, pH and temperature fixed",
+          "Compare different enzymes at different temperatures"
+        ],
+        answer: 2,
+        explanation: "Holding other factors constant allows the initial-rate difference to be attributed to substrate concentration."
       }
     ]
   }

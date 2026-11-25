@@ -39,7 +39,7 @@ export default async function BiologyNotes({ params }: { params: Promise<{ slug:
     </section>
     <PracticeQuiz quiz={lesson.quiz} progressKey={`neet.study.${lesson.id}.v1`} />
     <section className={styles.notes}><h2>Continue studying</h2><p>{remaining}</p>
-      <p><Link href={lesson.lab.href} prefetch={false}>{lesson.lab.title}</Link></p>
+      {lesson.lab && <p><Link href={lesson.lab.href} prefetch={false}>{lesson.lab.title}</Link></p>}
       <p><Link href="/study-room" prefetch={false}>Open Zorami’s classroom</Link></p>
       {sources.map(source => <p key={source.url}><a href={source.url} rel="noreferrer">{source.title}</a></p>)}
     </section>
