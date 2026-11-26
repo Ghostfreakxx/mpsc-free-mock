@@ -1,4 +1,4 @@
-const CACHE_NAME = "mpsc-free-mock-v14";
+const CACHE_NAME = "mpsc-free-mock-v14-recovery";
 // Hashed build files get their own capped cache: each deploy adds new names, so drop the oldest
 // entries instead of letting old builds fill the phone's storage.
 const STATIC_CACHE = "mpsc-free-mock-static";
@@ -9,6 +9,96 @@ const LESSON_READY = "/lectures/__offline_ready__";
 const publicNavigation = /^\/(?:study-room|laboratory|neet|jee|law|trading|nursing|terms)(?:\/|$)/;
 const cacheableResponse = response => response.status === 200 && response.type === "basic" &&
   !response.redirected && !/(?:^|,)\s*(?:private|no-store)\b/i.test(response.headers.get("Cache-Control") ?? "");
+
+const lessonRoute = /^\/(?:jee|neet)\/classes\/[a-z0-9-]+(?:\/[a-z0-9-]+)*$/;
+const editionName = /^pack-([a-z0-9]+(?:-[a-z0-9]+)*-v[1-9]\d*)$/;
+const buildAsset = /^\/_next\/static\/.+\.(?:js|css|woff2?|ttf|otf|eot)$/i;
+const lectureAudio = /^\/lectures\/[\w/-]+\.mp3$/;
+const lectureCaptions = /^\/lectures\/[\w/-]+\.vtt$/;
+const buildType = /^(?:text\/css|(?:text|application)\/javascript|font\/|application\/font-)/i;
+
+function publicEntry(request, response) {
+  const url = new URL(request.url);
+  return url.origin === self.location.origin && !url.search && !url.hash &&
+    !request.headers.has("Authorization") && !request.headers.has("Cookie") &&
+    response && response.url === request.url && cacheableResponse(response) &&
+    !/(?:^|,)\s*(?:authorization|cookie|\*)\s*(?:,|$)/i.test(response.headers.get("Vary") ?? "");
+}
+
+function entryKind(path, page, pack, type) {
+  if (path === page && /^text\/html\b/i.test(type)) return "page";
+  if (lectureAudio.test(path) && /^audio\/mpeg\b/i.test(type)) return "audio";
+  if ((lectureCaptions.test(path) || (pack && path === page + "/captions")) && /^text\/vtt\b/i.test(type)) return "captions";
+  if (!pack && buildAsset.test(path) && buildType.test(type)) return "asset";
+}
+
+async function pruneLessonCache(name) {
+  const suffix = name.slice(LESSON_PREFIX.length);
+  const pack = editionName.exec(suffix);
+  const routeKey = suffix.replace(/-captions-v3$/, "");
+  let page;
+  if (pack) {
+    page = "/jee/offline-packs/" + pack[1];
+  } else {
+    try { page = decodeURIComponent(routeKey); } catch { return caches.delete(name); }
+    if (!lessonRoute.test(page) || encodeURIComponent(page) !== routeKey) return caches.delete(name);
+  }
+
+  const check = async () => {
+    const cache = await caches.open(name);
+    const marker = await cache.match(LESSON_READY);
+    if (marker?.type !== "default" || marker.url || marker.status !== 200 ||
+      marker.headers.has("Cache-Control") || marker.headers.has("Vary") || await marker.text() !== "saved") return false;
+    const counts = { page: 0, audio: 0, captions: 0, asset: 0 };
+    const media = new Set();
+    let packPage;
+    for (const request of await cache.keys()) {
+      if (request.url === self.location.origin + LESSON_READY) {
+        if (request.headers.has("Authorization") || request.headers.has("Cookie")) return false;
+        continue;
+      }
+      const response = await cache.match(request, { ignoreVary: true });
+      if (!publicEntry(request, response)) return false;
+      const path = new URL(request.url).pathname;
+      const kind = entryKind(path, page, pack, response.headers.get("Content-Type") ?? "");
+      if (!kind) return false;
+      counts[kind]++;
+      if (kind === "audio" || kind === "captions") media.add(path);
+      if (kind === "page" && pack) packPage = response;
+    }
+    if (counts.page !== 1) return false;
+    if (!pack) return counts.audio === 1 && counts.captions === 1;
+    if (!counts.audio || !counts.captions) return false;
+    // The saved standalone page is also the inventory for retired pack editions.
+    const html = await packPage.text();
+    const referenced = new Set(Array.from(html.matchAll(/<(?:video|track)\b[^>]*\bsrc="([^"]+)"/g), match => match[1]));
+    return referenced.size === media.size && [...referenced].every(path => media.has(path));
+  };
+  // Use the downloader's lock so activation checks a settled cache.
+  const prune = async () => { if (!await check()) await caches.delete(name); };
+  const locks = self.navigator?.locks;
+  return locks ? locks.request(pack ? name : LESSON_PREFIX + routeKey, prune) : prune();
+}
+
+async function prunePreviousCaches() {
+  for (const name of await caches.keys()) {
+    if (!name.startsWith("mpsc-free-mock-") || name === CACHE_NAME) continue;
+    if (name === STATIC_CACHE) {
+      const cache = await caches.open(name);
+      for (const request of await cache.keys()) {
+        const response = await cache.match(request, { ignoreVary: true });
+        if (!publicEntry(request, response) || !buildAsset.test(new URL(request.url).pathname) ||
+          !buildType.test(response.headers.get("Content-Type") ?? "")) {
+          await cache.delete(request, { ignoreVary: true });
+        }
+      }
+    } else if (name.startsWith(LESSON_PREFIX)) {
+      await pruneLessonCache(name);
+    } else {
+      await caches.delete(name);
+    }
+  }
+}
 
 async function savedLessonFile(request, ignoreSearch = false) {
   const names = (await caches.keys()).filter(name => name.startsWith(LESSON_PREFIX));
@@ -72,15 +162,7 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener("activate", (event) => {
-  event.waitUntil(
-    caches.keys().then((cacheNames) =>
-      Promise.all(
-        cacheNames
-          .filter((cacheName) => cacheName.startsWith("mpsc-free-mock-") && cacheName !== CACHE_NAME && cacheName !== STATIC_CACHE && !cacheName.startsWith(LESSON_PREFIX))
-          .map((cacheName) => caches.delete(cacheName)),
-      ),
-    ).then(() => self.clients.claim()),
-  );
+  event.waitUntil(prunePreviousCaches().then(() => self.clients.claim()));
 });
 
 self.addEventListener("fetch", (event) => {
