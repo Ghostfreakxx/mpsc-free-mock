@@ -50,10 +50,12 @@ const base = process.env.TEST_URL || 'http://localhost:3105';
       await chapters.nth(2).click();
       const positionBeforeRetry = await page.locator('audio').evaluate(audio => audio.currentTime);
       await page.getByRole('link', { name: 'JEE classes', exact: true }).click();
-      const row = page.locator('article').filter({ has: page.locator(`a[href="/jee/classes/${id}"]`) });
-      await row.getByRole('link', { name: 'Resume class' }).waitFor();
+      const resume = page.getByRole('link', { name: 'Resume class', exact: true })
+        .and(page.locator(`a[href="/jee/classes/${id}"]`));
+      const row = page.locator('article').filter({ has: resume });
+      await resume.waitFor();
       assert.match(await row.textContent(), /Practice: 1 \/ 3 answered/);
-      await row.getByRole('link', { name: 'Resume class' }).click();
+      await resume.click();
       await page.waitForFunction(value => Math.abs(document.querySelector('audio')?.currentTime - value) < 1, positionBeforeRetry);
       await page.getByRole('button', { name: 'Retry practice' }).click();
       assert.equal(await page.locator('input[type="radio"]:checked').count(), 0);

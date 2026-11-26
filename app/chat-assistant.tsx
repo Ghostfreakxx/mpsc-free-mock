@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from "react";
+import Image from "next/image";
+import ReplyPlayback from "./reply-playback";
 import Link from "next/link";
+import { CLASSROOM_LESSON_EVENT, type ClassroomLesson } from "./lib/classroom-lesson";
 import {
   ArrowRight,
-  Bot,
   LoaderCircle,
   MessageCircle,
   RotateCcw,
@@ -12,6 +14,10 @@ import {
   Sparkles,
   X,
 } from "lucide-react";
+import {
+  classroomSubject, defaultTeachingOptions, MAX_CHAT_CONTEXT_CHARS, MAX_CHAT_MESSAGES, MAX_QUESTION_CHARS,
+  subjects, teachers, teachingLanguages, teachingModes, type TeacherId, type TeachingOptions,
+} from "./lib/tochhawng-teachers";
 
 type ChatLink = { label: string; href: string };
 type ChatMessage = {
@@ -19,32 +25,43 @@ type ChatMessage = {
   content: string;
   links?: ChatLink[];
   mode?: "ai" | "offline";
+  teacher?: TeacherId;
+  language?: TeachingOptions["language"];
   // Connection or server errors are shown to the student but never sent back as conversation history.
   failed?: boolean;
 };
 
 const suggestions = [
+  "Preamble of the Constitution of India",
   "Help me plan today's study session",
   "Where can I practice MPSC questions?",
   "How do I improve my accuracy?",
 ];
 
-const openingMessage: ChatMessage = {
-  role: "assistant",
-  content:
-    "Hi, I’m your MPSC study mentor. Bring me a question, a topic you’re revising, or the time you have today and we’ll find a useful next step.",
-};
-
 class AssistantError extends Error {}
 
+function contextFor(messages: ChatMessage[]) {
+  const context = [];
+  let remaining = MAX_CHAT_CONTEXT_CHARS;
+  for (const message of messages.slice().reverse()) {
+    if (message.failed || message.mode === "offline") continue;
+    if (context.length >= MAX_CHAT_MESSAGES || message.content.length > remaining) break;
+    context.push({ role: message.role, content: message.content });
+    remaining -= message.content.length;
+  }
+  return context.reverse();
+}
+
 // Loaded on demand by ChatLauncher; opens straight away when the student asked for it.
-export default function ChatAssistant({ initialOpen = false }: { initialOpen?: boolean }) {
+export default function ChatAssistant({ initialOpen = false, initialSubject }: {
+  initialOpen?: boolean; initialSubject?: TeachingOptions["subject"];
+}) {
   const [isOpen, setIsOpen] = useState(initialOpen);
   const [draft, setDraft] = useState("");
   const [isSending, setIsSending] = useState(false);
-  // True once a streamed answer has started, so the "thinking" row gives way to the answer.
-  const [isStreaming, setIsStreaming] = useState(false);
-  const [messages, setMessages] = useState<ChatMessage[]>([openingMessage]);
+  const [options, setOptions] = useState(() => ({ ...defaultTeachingOptions, subject: initialSubject ?? defaultTeachingOptions.subject }));
+  const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const teacher = teachers[options.teacher];
   const launcherRef = useRef<HTMLButtonElement>(null);
   const returnFocusRef = useRef<HTMLElement | null>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
@@ -59,6 +76,9 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
 
   useEffect(() => {
     if (!isOpen) return;
+    if (!returnFocusRef.current && document.activeElement instanceof HTMLElement) {
+      returnFocusRef.current = document.activeElement;
+    }
     // On phones, focusing would pop the keyboard up over the chat as it opens; there the student taps the box.
     if (window.matchMedia("(pointer: fine)").matches) inputRef.current?.focus();
 
@@ -74,11 +94,16 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
   }, [isOpen]);
 
   useEffect(() => {
-    function openFromPageAction() {
+    function openFromPageAction(event: Event) {
       returnFocusRef.current =
         document.activeElement instanceof HTMLElement
           ? document.activeElement
           : launcherRef.current;
+      if (event instanceof CustomEvent && event.detail === "zorami") {
+        setOptions(previous => ({ ...previous, teacher: "zorami" }));
+      }
+      const subject = classroomSubject(event);
+      if (subject) setOptions(previous => ({ ...previous, teacher: "zorami", subject }));
       setIsOpen(true);
     }
 
@@ -87,7 +112,8 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
   }, []);
 
   useEffect(() => {
-    latestMessageRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    latestMessageRef.current?.scrollIntoView({ behavior: reducedMotion ? "instant" : "smooth", block: "nearest" });
   }, [messages, isSending]);
 
   async function sendMessage(content: string) {
@@ -104,32 +130,10 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          messages: nextMessages
-            .filter((message) => !message.failed)
-            .slice(-8)
-            .map(({ role, content: messageContent }) => ({ role, content: messageContent })),
+          messages: contextFor(nextMessages),
+          teaching: options,
         }),
       });
-
-      // AI answers stream in as plain text, so the first words show while the rest is written.
-      if (response.ok && response.body && (response.headers.get("content-type") ?? "").startsWith("text/plain")) {
-        const reader = response.body.getReader();
-        const decoder = new TextDecoder();
-        let answer = "";
-        for (;;) {
-          const { done, value } = await reader.read();
-          if (done) break;
-          const firstWords = !answer;
-          answer += decoder.decode(value, { stream: true });
-          if (firstWords) setIsStreaming(true);
-          const content = answer;
-          setMessages((current) => firstWords
-            ? [...current, { role: "assistant", content, mode: "ai" }]
-            : [...current.slice(0, -1), { ...current[current.length - 1], content }]);
-        }
-        if (!answer.trim()) throw new AssistantError("The assistant could not answer that just now.");
-        return;
-      }
 
       const result = (await response.json().catch(() => ({}))) as {
         reply?: string;
@@ -139,6 +143,11 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
       };
 
       if (!response.ok) throw new AssistantError(result.error || "The assistant could not answer that just now.");
+      if (window.location.pathname === "/study-room" && result.reply && (result.mode === "ai" || result.mode === "offline")) {
+        window.dispatchEvent(new CustomEvent<ClassroomLesson>(CLASSROOM_LESSON_EVENT, {
+          detail: { ...options, topic: prompt.replace(/\s+/gu, " ").slice(0, 90), text: result.reply, source: result.mode },
+        }));
+      }
       setMessages((current) => [
         ...current,
         {
@@ -146,6 +155,8 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
           content: result.reply || "Try that once more with a little more detail.",
           links: result.links,
           mode: result.mode,
+          teacher: result.mode === "ai" ? options.teacher : undefined,
+          language: options.language,
         },
       ]);
     } catch (error) {
@@ -165,7 +176,6 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
       ]);
     } finally {
       setIsSending(false);
-      setIsStreaming(false);
     }
   }
 
@@ -182,7 +192,10 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
   }
 
   function startFreshChat() {
-    if (!isSending) setMessages([openingMessage]);
+    if (!isSending) {
+      setMessages([]);
+      window.dispatchEvent(new CustomEvent(CLASSROOM_LESSON_EVENT, { detail: null }));
+    }
   }
 
   function closeChat() {
@@ -195,10 +208,13 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
       {isOpen && (
         <section className="assistant-panel" role="dialog" aria-modal="false" aria-labelledby="assistant-title">
           <header className="assistant-header">
-            <span className="assistant-avatar"><Bot size={22} /></span>
+            <span className="assistant-avatar">
+              <Image src={`/teachers/${options.teacher}.webp`} width={42} height={42} unoptimized
+                alt={options.teacher === "zorami" ? "Illustrated avatar of Zorami wearing spectacles" : ""} />
+            </span>
             <div className="assistant-heading-copy">
-              <strong id="assistant-title">MPSC study mentor</strong>
-              <span><span className="assistant-status-dot" />Ask about any topic or study plan</span>
+              <strong id="assistant-title">Tochhawng Teachers</strong>
+              <span>Fictional Mizo AI teachers</span>
             </div>
             <button
               type="button"
@@ -217,7 +233,42 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
             ><X size={18} /></button>
           </header>
 
+          <fieldset className="assistant-teaching-options" disabled={isSending}>
+            <legend className="sr-only">Teaching options</legend>
+            <div>
+              <label htmlFor="assistant-teacher">AI teacher</label>
+              <select id="assistant-teacher" value={options.teacher} onChange={event => setOptions({ ...options, teacher: event.target.value as TeacherId })}>
+                {Object.entries(teachers).map(([id, value]) => <option key={id} value={id}>{value.givenName}</option>)}
+              </select>
+            </div>
+            <div>
+              <label htmlFor="assistant-subject">Subject</label>
+              <select id="assistant-subject" value={options.subject} onChange={event => setOptions({ ...options, subject: event.target.value as TeachingOptions["subject"] })}>
+                {Object.entries(subjects).map(([id, label]) => <option key={id} value={id}>{label}</option>)}
+              </select>
+            </div>
+            <div>
+              <label htmlFor="assistant-mode">Teaching mode</label>
+              <select id="assistant-mode" value={options.mode} onChange={event => setOptions({ ...options, mode: event.target.value as TeachingOptions["mode"] })}>
+                {Object.entries(teachingModes).map(([id, label]) => <option key={id} value={id}>{label}</option>)}
+              </select>
+            </div>
+            <div>
+              <label htmlFor="assistant-language">Reply language</label>
+              <select id="assistant-language" value={options.language} onChange={event => setOptions({ ...options, language: event.target.value as TeachingOptions["language"] })}>
+                {Object.entries(teachingLanguages).map(([id, label]) => <option key={id} value={id}>{label}</option>)}
+              </select>
+            </div>
+          </fieldset>
           <div className="assistant-messages" role="log" aria-live="polite" aria-relevant="additions text">
+            {messages.length === 0 && (
+              <div className="assistant-message-row is-assistant">
+                <div className="assistant-bubble">
+                  <strong>{teacher.name}</strong>
+                  <p>{teacher.specialty}</p>
+                </div>
+              </div>
+            )}
             {messages.map((message, index) => (
               <div
                 className={`assistant-message-row ${message.role === "user" ? "is-user" : "is-assistant"}`}
@@ -226,7 +277,11 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
               >
                 {message.role === "assistant" && <span className="assistant-message-icon"><Sparkles size={15} /></span>}
                 <div className="assistant-bubble">
+                  {message.teacher && <strong>{teachers[message.teacher].name}</strong>}
                   <p>{message.content}</p>
+                  {message.role === "assistant" && message.language && (
+                    <ReplyPlayback text={message.content} language={message.language} />
+                  )}
                   {!!message.links?.length && (
                     <div className="assistant-links">
                       {message.links.map((link) => (
@@ -240,7 +295,7 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
               </div>
             ))}
 
-            {messages.length === 1 && !isSending && (
+            {messages.length === 0 && !isSending && (
               <div className="assistant-suggestions" aria-label="Suggested questions">
                 {suggestions.map((suggestion) => (
                   <button type="button" key={suggestion} onClick={() => void sendMessage(suggestion)}>
@@ -250,7 +305,7 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
               </div>
             )}
 
-            {isSending && !isStreaming && (
+            {isSending && (
               <div className="assistant-message-row is-assistant" role="status">
                 <span className="assistant-message-icon"><Sparkles size={15} /></span>
                 <div className="assistant-bubble assistant-typing"><LoaderCircle size={17} className="assistant-spinner" />Thinking through it…</div>
@@ -260,13 +315,13 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
 
           <form className="assistant-form" onSubmit={submit}>
             <label className="assistant-input-wrap">
-              <span className="sr-only">Message the MPSC study mentor</span>
+              <span className="sr-only">Message the AI teacher</span>
               <textarea
                 ref={inputRef}
                 value={draft}
                 onChange={(event) => setDraft(event.target.value)}
                 onKeyDown={handleInputKeyDown}
-                maxLength={1_200}
+                maxLength={MAX_QUESTION_CHARS}
                 rows={2}
                 placeholder="Ask about a topic or study plan…"
                 disabled={isSending}
@@ -280,7 +335,7 @@ export default function ChatAssistant({ initialOpen = false }: { initialOpen?: b
               title="Send message"
             >{isSending ? <LoaderCircle size={20} className="assistant-spinner" /> : <Send size={20} />}</button>
           </form>
-          <div className="assistant-footnote">Check official notices for dates and syllabus changes.</div>
+          <div className="assistant-footnote">AI replies can contain mistakes. Check important details with course materials and official notices.</div>
         </section>
       )}
 

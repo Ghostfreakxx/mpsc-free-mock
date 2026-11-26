@@ -1,3 +1,12 @@
+import { measurementCompanion } from "./physics-measurement-study.ts";
+import { workEnergyCompanion } from "./physics-work-energy-study.ts";
+import { oscillationsWavesCompanion } from "./physics-oscillations-waves-study.ts";
+import { electromagneticWavesCompanion } from "./physics-electromagnetic-waves-study.ts";
+import { opticsCompanion } from "./physics-optics-study.ts";
+import { dualNatureCompanion } from "./physics-dual-nature-study.ts";
+import { atomsNucleiCompanion } from "./physics-atoms-nuclei-study.ts";
+import { electronicDevicesCompanion } from "./physics-electronic-devices-study.ts";
+import { experimentalSkillsCompanion } from "./physics-experimental-skills-study.ts";
 import { statisticsProbabilityLesson } from './statistics-probability-study.ts';
 import { vectorAlgebraLesson } from './vector-algebra-study.ts';
 import { threeDimensionalGeometryLesson } from './three-dimensional-geometry-study.ts';
@@ -195,6 +204,15 @@ export const studyLessons: StudyLesson[] = [
   threeDimensionalGeometryLesson,
   vectorAlgebraLesson,
   statisticsProbabilityLesson,
+  measurementCompanion,
+  workEnergyCompanion,
+  oscillationsWavesCompanion,
+  electromagneticWavesCompanion,
+  opticsCompanion,
+  dualNatureCompanion,
+  atomsNucleiCompanion,
+  electronicDevicesCompanion,
+  experimentalSkillsCompanion,
 ];
 
 const moleConceptCompanion = studyLessons.find(lesson=>lesson.id==="mole-concept");

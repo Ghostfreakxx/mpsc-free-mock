@@ -26,6 +26,8 @@ export const targets = [
   { source: "app/law/mjs/law.module.css", scope: ':global(html[data-theme="dark"])' },
   { source: "app/nursing/nursing.module.css", scope: ':global(html[data-theme="dark"])' },
   { source: "app/trading/trading.module.css", scope: ':global(html[data-theme="dark"])' },
+  // The 3D viewer and its static poster share a fixed palette.
+  { source: "app/study-room/study-room.module.css", scope: ':global(html[data-theme="dark"])', keep: /\.(?:viewer|controls)\b/ },
 ];
 
 // --- Colour maths (OKLab / OKLCH) ---

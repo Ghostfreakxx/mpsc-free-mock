@@ -1,0 +1,455 @@
+.roomPage {
+  --room-ink: #211815;
+  --room-muted: #654f44;
+  --room-paper: #f9f0e3;
+  --room-card: #fff8eb;
+  --room-line: #cbb59f;
+  --room-accent: #79362a;
+  --viewer-ink: #fff0d6;
+  --viewer-dark: #201514;
+  background: var(--room-paper);
+  color: var(--room-ink);
+  min-width: 0;
+}
+
+:global(html[data-theme="dark"]) .roomPage {
+  --room-ink: #fff0da;
+  --room-muted: #dac4b0;
+  --room-paper: #201815;
+  --room-card: #2e231e;
+  --room-line: #72594a;
+  --room-accent: #f4c58b;
+}
+
+.roomPage a:focus-visible,
+.roomPage button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+}
+
+.header, .hero, .motto, .resources, .trail {
+  width: min(100% - 2.5rem, 82rem);
+  margin-inline: auto;
+}
+
+.trail {
+  padding-top: 0.75rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 4.6rem;
+  border-bottom: 1px solid var(--room-line);
+}
+
+.brand {
+  color: var(--room-accent);
+  font-weight: 750;
+}
+
+.header nav {
+  display: flex;
+  gap: clamp(0.75rem, 3vw, 2.5rem);
+  font-size: 0.84rem;
+  font-weight: 650;
+}
+
+.header a:hover, .resources > a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.35fr);
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 5rem);
+  padding-block: clamp(1.5rem, 5vw, 4.5rem);
+}
+
+.intro {
+  padding-block: 1rem;
+}
+
+.eyebrow {
+  color: var(--room-accent);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.intro h1, .motto blockquote, .resources h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+}
+
+.intro h1 {
+  margin-block: 0.5rem 1rem;
+  font-size: clamp(2.85rem, 6.55vw, 7rem);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+}
+
+.intro p:not(.eyebrow), .motto p {
+  max-width: 42ch;
+  color: var(--room-muted);
+  line-height: 1.7;
+}
+
+.primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 0;
+  color: var(--room-accent);
+  font-size: 0.94rem;
+  font-weight: 750;
+  text-decoration: underline;
+  text-underline-offset: 0.32rem;
+}
+
+.roomActions {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.1rem;
+  margin-top: 1.15rem;
+}
+
+.roomActions button {
+  cursor: pointer;
+}
+
+.viewer {
+  position: relative;
+  isolation: isolate;
+  min-height: 20rem;
+  height: clamp(24rem, 47vw, 42rem);
+  overflow: hidden;
+  background: var(--viewer-dark) center / cover no-repeat url("/study-room-poster.webp");
+  color: var(--viewer-ink);
+  border-radius: 0.65rem;
+}
+
+.canvas {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.28s ease-out;
+}
+
+.canvas[data-ready="true"] {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.canvas canvas {
+  touch-action: pan-y;
+}
+
+.caption {
+  position: absolute;
+  left: 50%;
+  bottom: 6.6rem;
+  width: max-content;
+  max-width: min(90%, 42ch);
+  transform: translateX(-50%);
+  padding: 0.55rem 0.75rem;
+  border-radius: 0.35rem;
+  background: var(--viewer-dark);
+  color: var(--viewer-ink);
+  text-align: center;
+  overflow-wrap: anywhere;
+  pointer-events: none;
+}
+
+.lesson {
+  --room-board: #1e332e;
+  --room-chalk: #faf1de;
+  --room-chalk-accent: #f5d096;
+  --room-chalk-edge: #9b8469;
+  --chat-border: var(--room-chalk-edge);
+  --chat-canvas: var(--room-board);
+  --chat-text: var(--room-chalk);
+  --chat-accent: var(--room-chalk-accent);
+  margin-top: 0.75rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--room-line);
+  border-radius: 0.5rem;
+  background: var(--room-board);
+  color: var(--room-chalk);
+}
+
+.lesson h2 {
+  font-weight: 750;
+}
+
+.lessonByline {
+  color: var(--room-chalk-accent);
+  font-size: 0.83rem;
+}
+
+.chalkLesson {
+  margin-top: 0.4rem;
+  animation: chalk-appear 0.34s ease-out both;
+}
+
+.chalkLesson h3 {
+  font-size: 1.1rem;
+}
+
+.chalkLesson h3 span {
+  color: var(--room-chalk-accent);
+  font-weight: 500;
+}
+
+.lessonTopic {
+  font-weight: 680;
+  overflow-wrap: anywhere;
+}
+
+@keyframes chalk-appear {
+  from { opacity: 0; transform: translateY(0.22rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.lessonText {
+  max-width: 72ch;
+  margin-block: 0.55rem 0.8rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.65;
+}
+
+.captionButtons {
+  margin-top: 0.6rem;
+  display: flex;
+  gap: 0.35rem 0.65rem;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.84rem;
+}
+
+.captionButtons button {
+  padding: 0.5rem;
+  border: 1px solid var(--room-chalk-edge);
+  border-radius: 0.3rem;
+  color: var(--room-chalk-accent);
+  cursor: pointer;
+}
+
+.captionButtons button:disabled {
+  opacity: 0.62;
+  cursor: default;
+}
+
+.controls {
+  position: absolute;
+  inset: auto 0 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  padding: 2rem 1rem 1rem;
+  pointer-events: none;
+  background: linear-gradient(transparent, #1d1211ee);
+  font-size: 0.8rem;
+}
+
+.controls button, .controls p {
+  padding: 0.7rem 0.85rem;
+  border: 1px solid #c39968;
+  border-radius: 0.25rem;
+  background: var(--viewer-dark);
+  color: inherit;
+}
+
+.controls button {
+  min-height: 44px;
+  font-weight: 700;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.controls button:hover:not([aria-disabled="true"]) {
+  background: #492e23;
+}
+
+.motto, .resources {
+  padding-block: clamp(2.2rem, 6vw, 5.4rem);
+  border-top: 1px solid #cbb59f;
+}
+
+.motto blockquote {
+  max-width: 32ch;
+  margin-block: 0.65rem 1rem;
+  font-size: clamp(1.8rem, 4vw, 3.8rem);
+  line-height: 1.13;
+}
+
+.resources {
+  scroll-margin-top: 1rem;
+}
+
+.lessonChooser {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.3rem;
+  max-width: 22rem;
+  margin-block: 1rem;
+  font-weight: 650;
+}
+
+.lessonChooser select, .lessonChooser input, .reviewCheck {
+  min-width: 0;
+  max-width: 100%;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--room-line);
+  border-radius: 0.35rem;
+  background: var(--room-card);
+  color: var(--room-ink);
+}
+
+.reviewedBoard {
+  max-width: 52rem;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid var(--room-line);
+  border-radius: 0.6rem;
+  background: var(--room-card);
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.recordedCompanion { min-width: 0; width: 100%; margin-block-start: 0.75rem; }
+.recordedCompanion audio { display: block; width: min(100%, 26rem); }
+
+.reviewedBoard h3 { font-size: 1.45rem; font-weight: 700; }
+.reviewedBoard > p { margin-block: 0.45rem; }
+.reviewedBoard > a { color: var(--room-accent); text-decoration: underline; }
+.revisionPoints { list-style: decimal; padding-inline-start: 1.5rem; margin-block: 0.75rem; }
+.reviewQuiz { min-width: 0; margin-block: 1.1rem 0.6rem; }
+.reviewQuiz legend { max-width: 100%; font-weight: 700; }
+.reviewQuiz label { display: flex; gap: 0.55rem; align-items: baseline; padding-block: 0.28rem; }
+.reviewCheck:enabled { cursor: pointer; }
+.reviewCheck:disabled { opacity: 0.65; }
+
+.resources h2 {
+  font-size: clamp(1.7rem, 3vw, 2.7rem);
+}
+
+.resources ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: 0.75rem;
+  padding: 0;
+  margin: 1.25rem 0 2rem;
+  list-style: none;
+}
+
+.resources li a {
+  display: grid;
+  align-content: start;
+  gap: 0.35rem;
+  height: 100%;
+  padding: 0.9rem;
+  border: 1px solid var(--room-line);
+  border-radius: 0.35rem;
+  background: var(--room-card);
+}
+
+.resources li a:hover {
+  border-color: var(--room-accent);
+}
+
+.resources strong {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4rem;
+  color: var(--room-accent);
+}
+
+.resources li a > span {
+  color: var(--room-muted);
+  font-size: 0.85rem;
+}
+
+.resources > a {
+  color: var(--room-accent);
+  font-weight: 650;
+}
+
+@media (max-width: 720px) {
+  .header, .hero, .motto, .resources, .trail {
+    width: calc(100% - 2rem);
+  }
+
+  .header {
+    flex-wrap: wrap;
+    padding-block: 0.8rem;
+    gap: 0.35rem 1rem;
+  }
+
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.7rem;
+  }
+
+  .viewer {
+    height: clamp(20rem, 90vw, 32rem);
+  }
+
+  .caption {
+    bottom: 6.1rem;
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+
+  .controls {
+    column-gap: 0.5rem;
+  }
+
+  .controls button {
+    padding-inline: 0.6rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .canvas {
+    transition: none;
+  }
+  .chalkLesson {
+    animation: none;
+  }
+}
+
+/* dark-theme:generated:start (edit the light rules, then run node scripts/dark-theme.mjs) */
+:global(html[data-theme="dark"]) .motto, :global(html[data-theme="dark"]) .resources { border-top: 1px solid #5c4936; }
+/* dark-theme:generated:end */
+
+.labTitle { font-size: clamp(1.8rem, 4vw, 3rem); margin-block-end: 1.25rem; }
+.labControls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+  gap: 1rem;
+  margin-block: 1rem;
+}
+.labSlider { display: grid; gap: 0.2rem; font-weight: 650; }
+.labSlider output { font-weight: 400; }
+.labSlider input { width: 100%; min-height: 1.75rem; accent-color: var(--room-accent); }
+.labDiagram { display: block; width: 100%; border: 1px solid var(--room-line); }
+.labDiagram text { fill: currentColor; font: 14px Geist, system-ui, sans-serif; }
+.labAxis { fill: none; stroke: currentColor; stroke-width: 2; }
+.labStroke { fill: none; stroke: var(--room-accent); stroke-width: 4; }
+.labDot { fill: var(--room-accent); stroke: var(--room-card); stroke-width: 2; }
+
+.labViewport {
+  block-size: clamp(16rem, 45vw, 29rem);
+  overflow: hidden;
+  border: 1px solid var(--room-line);
+  border-radius: 0.5rem;
+  background: var(--room-card);
+}

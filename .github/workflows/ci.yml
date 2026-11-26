@@ -63,3 +63,15 @@ jobs:
           TEST_URL: http://localhost:3000
           PLAYWRIGHT_CHANNEL: chromium
           SCREENSHOT_DIR: ${{ runner.temp }}
+      - name: Genesis accessibility, security and offline check
+        run: node scripts/check-genesis-browser.mjs
+        timeout-minutes: 10
+        env:
+          TEST_URL: http://localhost:3000
+          PLAYWRIGHT_CHANNEL: chromium
+          SCREENSHOT_DIR: ${{ runner.temp }}
+      - name: Private classroom fixture with zero paid requests
+        run: node --experimental-strip-types scripts/test-private-zorami.mjs
+        timeout-minutes: 5
+        env:
+          TEACHING_TEST_URL: http://127.0.0.1:3000

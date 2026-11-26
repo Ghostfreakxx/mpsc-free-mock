@@ -206,3 +206,45 @@ test('a link to a specific exam replaces a finished paper but never an unfinishe
   assert.equal(attemptOnArrival(running, 'neet'), running);
   assert.equal(attemptOnArrival(null, 'neet'), null);
 });
+
+test('dedicated Mathematics practice selects only reviewed Mathematics and restores only matching papers', () => {
+  const math = examConfigs['jee-math'];
+  const paper = selectQuestions(math, jeePool, 10, 88);
+  assert.equal(paper.length, 10);
+  assert.ok(paper.every(question => question.subject === 'Mathematics'));
+  const active = startAttempt(math, 'practice', paper, 1000);
+  assert.equal(active.deadline - active.startedAt, 20 * 60_000);
+  const answered = selectAnswer(active, paper[0].answer, 2000);
+  assert.equal(scoreAttempt(submitAttempt(answered, 3000), math, byId).score, 1);
+  assert.deepEqual(restoreAttempt(JSON.stringify(answered), byId), answered);
+  const mixed = startAttempt(math, 'practice', [jeePool.find(question => question.subject === 'Physics')], 1000);
+  assert.equal(restoreAttempt(JSON.stringify(mixed), byId), null);
+});
+
+test('actions at time-up cannot alter a paper before the next timer tick', () => {
+  const math = examConfigs['jee-math'];
+  const paper = selectQuestions(math, jeePool, 10, 27);
+  const attempt = startAttempt(math, 'practice', paper, 1000);
+  const at = attempt.deadline;
+  const answered = selectAnswer(attempt, paper[0].answer, at - 1);
+  assert.equal(selectAnswer(answered, wrongOption(paper[0]), at), answered);
+  assert.equal(clearAnswer(answered, at + 1), answered);
+  assert.equal(toggleMark(answered, at), answered);
+  assert.equal(goTo(answered, 1, at), answered);
+  const submitted = submitAttempt(answered, at + 1000);
+  assert.equal(submitted.submittedAt, at);
+  assert.equal(scoreAttempt(submitted, math, byId).score, 1);
+});
+
+test('corrupt saved Mathematics attempts are rejected without rejecting valid progress', () => {
+  const math = examConfigs['jee-math'];
+  const paper = selectQuestions(math, jeePool, 10, 19);
+  const attempt = startAttempt(math, 'practice', paper, 1000);
+  const restore = value => restoreAttempt(JSON.stringify(value), byId);
+  assert.deepEqual(restore(attempt), attempt);
+  assert.equal(restore({...attempt, current: 0.5}), null);
+  assert.equal(restore({...attempt, questionIds: [paper[0].id, paper[0].id]}), null);
+  assert.equal(restore({...attempt, submittedAt: 'invalid'}), null);
+  const id = paper[0].id;
+  assert.equal(restore({...attempt, responses: {...attempt.responses, [id]: {...attempt.responses[id], history: [false]}}}), null);
+});

@@ -34,7 +34,24 @@ test('quiz answers and lesson calculations are consistent', () => {
 
 test('published audio and caption assets exist with all cues', () => {
   assert.ok(fs.statSync(new URL('../public/lectures/units/narration-marin-v2.mp3', import.meta.url)).size > 1000000);
-  const vtt = fs.readFileSync(new URL('../public/lectures/units/english-marin-v2.vtt', import.meta.url), 'utf8');
+  const vtt = fs.readFileSync(new URL('../public/lectures/units/english-marin-v3.vtt', import.meta.url), 'utf8');
   assert.ok(vtt.startsWith('WEBVTT'));
   assert.equal(vtt.match(/ --> /g).length, timing.cues.length);
+});
+
+test('the two reviewed Units cues match the active subtitles and spoken endings', () => {
+  const vtt = fs.readFileSync(new URL('../public/lectures/units/english-marin-v3.vtt', import.meta.url), 'utf8');
+  const oldTrack = fs.readFileSync(new URL('../public/lectures/units/english-marin-v2.vtt', import.meta.url), 'utf8');
+  const words = [
+    [384.412, 'It does not become four times as large, because period depends on the square root of length.'],
+    [417.888, 'Significant figures, measurement uncertainty, and measuring instruments need their own later lessons.'],
+  ];
+  for (const [start, expected] of words) {
+    const cue = timing.cues.find(item => Math.abs(item.start - start) < 0.002);
+    assert.equal(cue?.text, expected);
+    assert.ok(vtt.split(/\r?\n/).includes(expected));
+  }
+  assert.match(oldTrack, /not directly on length/);
+  assert.match(oldTrack, /they are not covered in this class/);
+  assert.doesNotMatch(vtt, /not directly on length|they are not covered in this class/);
 });

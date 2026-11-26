@@ -45,6 +45,13 @@ const nextConfig: NextConfig = {
     // Note downloads send their own stricter CSP, so they are excluded here.
     return [
       { source: "/((?!downloads/).*)", headers: securityHeaders },
+      // Route responses do not override the framework's configured CSP.
+      { source: "/api/admin/teacher-usage", headers: [
+        { key: "Content-Security-Policy", value: "default-src 'none'; style-src 'unsafe-inline'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'" },
+      ] },
+      { source: "/jee/offline-packs/:path*", headers: [
+        { key: "Content-Security-Policy", value: "default-src 'none'; style-src 'unsafe-inline'; media-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'" },
+      ] },
       // Data files are for the site's own pages: keep them out of search results and caches of copies.
       { source: "/question-bank/:path*", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow, noarchive, noai" }] },
     ];

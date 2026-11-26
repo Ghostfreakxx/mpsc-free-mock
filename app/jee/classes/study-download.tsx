@@ -2,7 +2,7 @@
 import { Download } from "lucide-react";
 import type { StudyLesson } from "./course";
 
-export default function StudyDownload({ lesson, kind = "Written foundation lesson" }: { lesson: StudyLesson; kind?: "Written foundation lesson" | "Class transcript" }) {
+export default function StudyDownload({ lesson, kind = "Written foundation lesson", exam = "jee" }: { lesson: Pick<StudyLesson, "id" | "title" | "prerequisites" | "sections" | "examples" | "quiz" | "remaining" | "sources"> & { subject: StudyLesson["subject"] | "Biology" }; exam?: "jee" | "neet"; kind?: "Written foundation lesson" | "Class transcript" }) {
   function download() {
     const text = [lesson.title, `${lesson.subject} - ${kind.toLowerCase()}`, `Prerequisites: ${lesson.prerequisites}`,
       ...lesson.sections.map(section => `${section.title}\n${section.paragraphs.join("\n\n")}\n${section.formula ?? ""}`),
@@ -13,7 +13,7 @@ export default function StudyDownload({ lesson, kind = "Written foundation lesso
     ].join("\n\n");
     const url = URL.createObjectURL(new Blob([text], { type: "text/plain;charset=utf-8" }));
     const anchor = document.createElement("a");
-    anchor.href = url; anchor.download = `jee-${lesson.id}-notes.txt`; anchor.click();
+    anchor.href = url; anchor.download = `${exam}-${lesson.id}-notes.txt`; anchor.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
   return <button onClick={download}><Download size={17} /> Download notes</button>;

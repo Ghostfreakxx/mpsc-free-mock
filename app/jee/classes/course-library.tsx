@@ -22,6 +22,7 @@ export default function CourseLibrary({ lectures, studyLessons }: { lectures: Re
     <nav className={styles.subjects} aria-label="Course subjects">{subjects.map(name => <button key={name} aria-pressed={subject === name} onClick={() => setSubject(name)}>{name}</button>)}</nav>
     <section aria-label={`${subject} available lessons`} className={styles.library}>
       <h2 className={styles.libraryTitle}>{subject} lessons</h2>
+      {subject === "Mathematics" && <p><Link href="/jee/mathematics-timed" prefetch={false}>Open Mathematics-only timed practice</Link></p>}
       {recordingGroups.map((group, index) => <details className={styles.recordingGroup} key={group.title} open={index === 0}>
         <summary><span>{group.title}</span><small>{group.lessons.length} {group.lessons.length === 1 ? "class" : "classes"} · {Math.floor(group.duration / 60)} min</small></summary>
         {group.lessons.map(lesson => <article key={lesson.id}>
@@ -33,14 +34,17 @@ export default function CourseLibrary({ lectures, studyLessons }: { lectures: Re
         </div>
       </article>)}
       </details>)}
-      {available.map(lesson => <article key={lesson.id}>
+      {available.map(lesson => {
+        const sameRecording = subjectRecordings.find(recording => recording.id === lesson.id);
+        const companionRecording = sameRecording?.id ?? (subject === "Physics" ? physicsCoverage[lesson.unit - 1]?.recordings[0] : undefined);
+        return <article key={lesson.id}>
         <div className={styles.lessonNumber}><BookOpen size={28} /><span>U{lesson.unit}</span></div>
         <div><h3>{lesson.title}</h3><p>{lesson.summary}</p>
-          <p className={styles.lessonMeta}>{subjectRecordings.some(recording => recording.id === lesson.id) ? "Written notes + recorded class" : "Written lesson"} <span>{lesson.exampleCount} worked examples</span><span>{lesson.quizCount} practice checks</span></p>
-          {lectures.some(recording => recording.id === lesson.id) ? <Link prefetch={false} href={`/jee/classes/${lesson.id}`}>Watch recorded class <ArrowRight size={17} /></Link> : <p>Marin recording not yet available</p>}
+          <p className={styles.lessonMeta}>{companionRecording ? "Written notes + recorded class" : "Written lesson"} <span>{lesson.exampleCount} worked examples</span><span>{lesson.quizCount} practice checks</span></p>
+          {companionRecording ? <Link prefetch={false} href={`/jee/classes/${companionRecording}`}>Watch recorded class <ArrowRight size={17} /></Link> : <p>Marin recording not yet available</p>}
           <Link prefetch={false} href={`/jee/classes/study/${lesson.id}`}>Read lesson <ArrowRight size={17} /></Link>
         </div>
-      </article>)}
+      </article>; })}
     </section>
     <section className={styles.notes} aria-label={`${subject} course map`}>
       <h2>{subject} course map</h2>

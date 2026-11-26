@@ -1,0 +1,179 @@
+# Project Genesis development checklist
+
+Work on feature/cinematic-3d-foundation in work/cinematic. Draft PR #62 is the delivery branch. Preserve existing progress keys, question banks, branding and both lines of the motto. No merge, deployment, or paid testing without approval.
+
+| Workstream | Implemented in the first batch | Outstanding |
+| --- | --- | --- |
+| Classroom | Four reviewed modes, 24 selected topics, source excerpts, subject filter, synonyms, single-typo matching, related quiz and marked Mizo drafts | Broader bilingual coverage, diagrams and audio reuse tied to reviewed curricular mappings |
+| Visual system | Local Geist with OFL, desktop/tablet/phone review harness, preserved procedural scene, added facial details and reduced-motion alternatives | Further character, lighting, environment and affordable Android review |
+| Courses | Reproducible manifest/file inventory and all-file hash sweep | Syllabus gap content, case-by-case worked-example and diagram review, playback sampling across courses and alternate formats |
+| Provider integrations | Existing private chat, narration and transcription tooling preserved. Classroom access remains credential-free. | Locate and verify any separately hosted live lecture service. No public live lecture endpoint was found in this checkout. |
+| Offline distribution | Individual recording downloads through the existing player and service worker, with size estimate, completion, cancellation, removal and byte ranges | Subject and chapter pack management, cap cache growth, test interrupted downloads and storage exhaustion on low-end devices |
+| Laboratories | Unified lab route with interactive projectile and pendulum experiments | Complete the other labs and tie the existing lecture activities into the unified inventory |
+| Lecture presentation | Opt-in Zorami blackboard follows chapter and caption cues. Manual chapter navigation is available when coverage is incomplete. Three classroom topics reuse matching existing audio. | Extend classroom recording mappings and visually verify the presentation against more chapter and device combinations |
+| Quality | Dedicated numeric, retrieval, and browser integration checks | Run all project and course checks after each delivery batch and record actual results in draft PR |
+
+See [course and recording inventory](./genesis-course-inventory.md) and [laboratory inventory](./genesis-laboratory-inventory.md).
+
+## Reproduce the Windows checks
+
+Use the installed browser cache with `PLAYWRIGHT_BROWSERS_PATH` pointed at the sibling `cinematic-browsers` directory and `PLAYWRIGHT_CHANNEL=chromium`. Use a loopback-only production server and set both paid mode flags to `off`.
+
+`npm run build` remains the default. On this Windows checkout, Turbopack's PostCSS worker exited before establishing IPC even after the font was made local. Use `npm run build -- --webpack` on that machine. `npm run start -- -H 127.0.0.1 -p 3000` serves either production build.
+
+Run `npm run check`, `npm run audit`, `npm run smoke`, `node scripts/check-genesis-browser.mjs`, and the AGENTS.md recorded-course checks. The private Zorami fixture is free only without the paid flag. No live endpoint or narration generation job is required to verify this batch.
+
+## First-batch verification
+
+- `npm run check` and the live npm registry audit passed. The check retains one pre-existing unused-variable lint warning.
+- The Windows Webpack production build passed and prerendered 458 pages. The default Turbopack build reached the documented worker failure.
+- Chromium exercised the four modes after an offline reload and observed zero chat requests. A saved JEE lecture also reloaded, played, sought, displayed its caption and was removed with the browser offline.
+- The classroom fits at 360, 768 and 1440 px in both themes. The same widths were checked on the lab route. Screenshots are in [the browser review directory](./genesis-screenshots).
+- The recorded library and JEE course scripts passed. The private Zorami fixture intercepted the one chat submission locally and forwarded zero paid calls.
+- The built classroom pack includes 24 topics, 72 questions, and 30 Mizo variants. The recent scope expansion uses reviewed English notes with an explicit English fallback.
+
+The full smoke suite passed across 269 routes at 360 px, including exact motto text, mock progress, the simulator, no-WebGL access, classroom modes and lab controls.
+
+## Recorded lecture follow-up
+
+The classroom can open existing English recordings for Newton's laws, atomic structure, and cell structure. In the recorded player, the opt-in Zorami view follows the current chapter and narration cues, without claiming lip synchronization. A missing chapter timestamp switches chapter navigation to manual selection. The browser test verified audio metadata in the linked classroom recording and a changed blackboard chapter after seeking.
+
+## Continue development
+
+1. Trace the separately hosted live lecture service before changing any provider configuration. Use a non-billable local fixture at that service boundary. Keep the recorded player and its progress keys intact.
+2. Compare the generated per-unit inventory with the existing JEE and NEET syllabus audits. Prepare worked examples and diagrams for the named gaps, then create a narration queue only after the new scripts are reviewed.
+3. Expand the lab by reusing the existing class diagrams and motion engine. Verify each module before marking its row complete.
+4. Extend individual offline downloads to chapter and subject packs. Keep individual lesson download and audio seek tests as regressions and exercise browser-specific quota and eviction behavior before relying on the PWA for a full course.
+
+In one Chromium run at 360 px with 4× CPU throttling, 150 ms latency and a 1.6 Mbps download limit, the classroom selector appeared in 2.86 seconds and had transferred about 312 kB of completed resources. The lab slider appeared in 0.83 seconds and had transferred about 33 kB. Neither page started WebGL before entry. These are loopback simulation measurements, with no physical-device benchmark.
+
+The final offline browser check injected a storage quota failure, verified that no incomplete pack remained, and then downloaded, reloaded, played, sought and removed the lesson successfully.
+
+## Security and circuit follow-up
+
+See [the security audit](./security-audit.md) for the comparison with main, local API and cache fixtures, and live lecture investigation. The third laboratory module adds ideal series and parallel resistor networks, linked to the existing JEE recording and practice. The recorded audit checked all 154 distinct published WebVTT timelines against the player cues for count, text, and timestamps within 2 ms. This comparison does not independently verify the spoken audio.
+
+The individual recording-download flow is retained. Chapter-only narrated packs and bulk subject packs still need a manifest with versioned assets, storage rules, and progress through partial failures. Use the existing media audit and offline seek fixture as regressions before publishing those packs.
+
+Chapter notes can now be downloaded individually from the lecture player, and the JEE library offers full text transcript downloads for Physics, Chemistry, and Mathematics. These text files remain readable outside the app. Individual audio packs remain available in the player. Chapter-only audio and bundled subject audio packs are still outstanding.
+
+## CI, media packs, and cross-subject laboratories
+
+- GitHub reported the CI workflow active and accepted the draft PR event. Use Actions run records or the PR Checks tab when the combined status list is empty. The CI browser job now runs the Genesis and zero-paid-request fixtures. [CI diagnostics](./ci-diagnostics.md)
+- The offline library offers full JEE recorded subject media packs and individual Gravitation chapters with rebased captions. Existing individual lesson downloads remain in place. Additional chapter manifests, NEET subject packs, retired-version management and physical-device storage testing remain. [Offline media packs](./genesis-offline-packs.md)
+- The new chemistry, biology and mathematics labs cover isotope and ion counts, simple pea inheritance and quadratic graphs. A simple-majority assembly and a spherical meridian model extend the lab to political science and geography. Other models remain in the syllabus inventory. [Laboratory inventory](./genesis-laboratory-inventory.md)
+- The current routing, Vercel configuration and environment template contain no active live lecture configuration. Continue only after locating an owning repository and route or an integration document with the authentication and fixture contract. The retired voice audition still has no connection to the live lecture requirement.
+
+## Verification for this pass
+
+- Local checks, registry audit, Webpack production build, the 271-route smoke suite, the recorded-library and JEE course checks, and the private zero-paid-request fixture passed. The default Windows Turbopack build still exits in its worker.
+- Chromium verified all eight lab activities, the existing individual recording after clearing the general static cache, and chapter and Mathematics subject packs. The chapter played and sought offline with native captions. The Mathematics pack saved all 14 recordings and loaded its first audio stream offline. All five Gravitation MP3 durations matched their published chapter cues within 0.25 seconds. Spoken-word alignment and wider syllabus review remain open.
+- At simulated 360 px with 4× CPU slowdown, 150 ms latency and 1.6 Mbps downstream, lab controls appeared in 0.98 s and offline-library controls in 2.69 s. Physical Android hardware was unavailable.
+
+## Advanced implementation
+
+- The lab preserves its first eight activities and adds force and friction, reflection and refraction, a plant and animal cell comparison, and a 3D molecular bench. The bench loads only after opening. Models and materials are authored in the project. The classroom lighting and spectacles are refined, and cue changes no longer repeatedly restart the same blackboard camera transition.
+- The offline classroom adds source-checked questions and notes for polity, history, economics, JEE/NEET science, ICT, and aptitude. Existing Mizo drafts are brought into additional aptitude topics, and English fallback labeling remains. The ICT memory lesson uses the NIST glossary. Classroom topics with suitable lab activities link directly to them. [NIST CSRC Glossary](https://csrc.nist.gov/glossary/term/volatile_memory)
+- NEET subject media and five Newton's laws chapters join the existing download catalog. Storage estimates, large-download prompts, retry after interrupted writes, and management of saved retired versions are available. Existing media files and progress keys are untouched.
+- Remaining work includes laboratory modules listed in the inventory, broader Mizo review, more chapter packs, device storage testing, and actual spoken-word alignment. The live lecture link still requires its original repository, route, or documented integration. No new service was configured.
+
+### Advanced batch verification
+
+The built offline classroom pack contains 36 topics, 108 questions and 39 Mizo drafts. Chromium found the ICT lesson with networking disabled. Tests covered all twelve lab activities, the unfinished Newton download recovery, retired-edition removal, and the existing individual, chapter and Mathematics subject pack flows. A separate 360 px Chromium run saved the 466.6 MB NEET Biology pack, opened all 32 recording entries offline, loaded the first recording, and removed the pack.
+
+Playwright rendered and rotated the 3D molecule and captured the refreshed classroom at 360, 768 and 1440 px. Chromium used software WebGL, and no physical Android benchmark was run. The local production build passed with Webpack. Turbopack on this Windows machine continues to fail before its worker handshake. The existing Linux build job for Actions run #264 passed.
+
+There was no installed local speech recognizer available for an independent spoken-text comparison. Chapter playback and WebVTT timing are verified to the extent documented by the fixtures. Keep spoken-word alignment separate from those checks.
+
+## Educational quality pass
+
+- Added dedicated written JEE Physics companions for all nine open unit gaps. New lesson routes preserve recorded content and its existing saved answers. The inventory identifies remaining subheading depth and places spoken-word review separately from caption tests.
+- Zorami search can open its match in Explain mode. Existing revised language labels and English fallback are preserved. No additional translations were promoted to reviewed status.
+- Corrected the plant-cell membrane placement, added an explicitly inspectable central vacuole, and clarified the omission of lone pairs from molecular models. The refraction experiment links to the new optics notes. No additional simulations were added while reviewing the existing set.
+- Offline pack cards now refresh when a tab regains focus so another tab’s changes or browser eviction can be reflected. The original cache restrictions, locks, and version names still apply.
+
+### Educational quality verification
+
+Local checks passed for the 499-page Webpack build, 280-route mobile smoke suite, registry audit, recorded library, JEE study pages, and the Genesis browser and private classroom fixtures. The offline test covered two-tab cache removal, offline search-to-Explain, and retained downloading, seeking, and captions. Chromium covered mobile widths, both themes, and reduced motion. No physical Android device was available. The narration sample review and proposed Units and dimensions caption correction are recorded in the course inventory.
+
+Mobile screenshots: [Optics, dark](./genesis-screenshots/optics-companion-dark-360.png), [Optics, light](./genesis-screenshots/optics-companion-light-360.png), and [plant cell](./genesis-screenshots/plant-cell-360.png).
+
+## Narration correction and NEET learning quality
+
+Corrected the two confirmed Units and Dimensions omissions from the authored transcript, timing manifest and active caption track. Retained the original audio, saved progress, and legacy caption URL for existing offline copies. The new lesson and pack editions use the corrected caption URL. The retired pack navigation fallback still checks the existing public-response and completion rules.
+
+Added the Cell organization and protein transport companion to the NEET catalog, recording, and offline classroom. The written companion and Zorami share English explanations, revision cues and practice questions. Expanded three existing JEE Physics companions with worked examples and left Chemistry and timed Mathematics expansion in the inventory.
+
+Mobile screenshot: [NEET cell companion at 360 px](./genesis-screenshots/neet-cell-notes-360.png).
+
+Verification passed locally: repository checks, registry audit, 500-page Webpack production build, 280-route smoke suite at 360 px, recorded-library and JEE course checks, Genesis browser tests, and the private classroom fixture with zero paid requests. Chromium verified the upgraded Units offline track, retired-pack navigation, NEET companion quiz persistence, and offline classroom search and revision. The two-tab fixture now waits for the deletion to finish before simulating focus.
+
+## NEET Biology expansion
+
+Added focused written companions on chromosome counting and Mendelian test crosses with diagrams, original practice, text downloads, and offline classroom integration. Existing recorded content and saved keys are unchanged. The course inventory records the companion boundaries, the local sample narration pass and outstanding course work.
+
+## Mathematics-only timed practice and Biomolecules
+
+Added a dedicated JEE Mathematics practice route with independent progress, reviewed bank questions and the existing exam interface. Added an enzyme activity companion with English offline classroom support and reviewed Biology counting and probability assumptions. The course inventory records source coverage and additional local narration sampling.
+
+Mobile screenshots: [Mathematics practice](./genesis-screenshots/jee-mathematics-timed-360.png) and [Biomolecules](./genesis-screenshots/neet-written-biomolecules-360.png). A local 360 px Chromium fixture also verified both light-theme routes and used a simulated clock to verify that time-up submits the Mathematics paper at its saved deadline.
+
+## Biology coverage and quality pass
+
+Added Plant Physiology and Human Physiology companions, plus application questions in the four earlier Biology lessons. The Mathematics simulator reuses its existing UI and saved keys. Actions are rejected at the deadline even before the timer updates, and malformed saved attempts are rejected. New local Browser and unit checks cover the deadline, score, answer review, keyboard start and saved-state validation.
+
+The local verification covered the 284-route mobile smoke suite, both recorded-course checks, Genesis browser tests, and the private fixture with zero paid requests. Mobile testing used Chromium at 360 px in both themes, including keyboard interaction and a simulated clock. Physical Android performance and assistive technology were not measured. The local Windows production build used Webpack with a reduced worker count after the default worker count exhausted available memory.
+
+## Biology expansion and Windows build stability
+
+Added written notes on flowering-plant double fertilization and ecosystem productivity and trophic transfer. Rechecked the earlier light compensation, nephron, enzyme and chromosome examples, and sampled two additional recordings locally. The course inventory records the chapter boundaries and source review.
+
+### Windows build diagnostics
+
+On this Windows host with Node 24.15.0, 16 logical CPUs and 15.9 GiB RAM, a normal-worker Webpack production build succeeded. Sampling aggregate Node private bytes every 500 ms showed 2.11 GiB peak during compilation, 2.81 GiB during page data collection and 5.44 GiB during static page generation, when Next used 15 workers. Static generation is the measured memory bottleneck, and was the failure phase in the preceding OOM run. A matched three-worker Webpack replay also completed all 508 pages, with 2.23 GiB peak during static generation and 1.28 GiB during data collection. The current measurements do not establish prior system-wide commit pressure or a per-route leak.
+
+The default Turbopack build succeeded with 15 workers on the current code. A reduced-worker Turbopack build on the preceding code also completed with three workers, while logging a cache compaction warning. The earlier worker exit before the PostCSS IPC handshake did not recur, so its underlying cause remains unconfirmed. Build configuration and CI were left intact. On a memory-constrained Windows workstation use the previously verified local Webpack fallback:
+
+```powershell
+$env:CIRCLE_NODE_TOTAL = '4'
+npm run build -- --webpack
+Remove-Item Env:CIRCLE_NODE_TOTAL
+```
+
+### Client loading and accessibility
+
+Fresh desktop Chromium contexts at a 360 px viewport measured compressed JavaScript response payloads from the local Turbopack server. The figures exclude HTML, images and lesson JSON, and do not represent timings on physical mobile hardware.
+
+| Initial route | JavaScript, KiB | Additional JavaScript after opening 3D, KiB |
+| --- | ---: | ---: |
+| Home | 186 | — |
+| Study room | 152 | 272 |
+| Laboratory | 189 | 244 |
+| Mathematics timed setup | 179 | — |
+| Ecology notes | 152 | — |
+
+The largest deferred decoded chunk was 907 KiB and contains the Three.js WebGL renderer. Neither 3D route created a canvas before opening. The offline classroom loaded its own 87 KiB uncompressed lesson JSON. The Mathematics setup fetched the JEE question bank only after starting, and the other sampled routes did not fetch a bank. The existing client-bundle assertions passed.
+
+Chromium exercised keyboard 3D activation, visible focus, the no-WebGL classroom fallback, focus transfer to the reviewed classroom, and reduced-motion layouts. Both new companion diagrams rendered in both themes at 360 px. Physical Android and screen-reader testing were unavailable.
+
+## Release-readiness pass
+
+Added focused plant classification and dorsiventral leaf companions, checked the preceding reproduction and ecology calculations, and recorded current product status and release gates in the [production readiness matrix](./production-readiness.md).
+
+The default Windows Turbopack build completed all 510 pages. The documented three-worker Webpack command remains available and build configuration is unchanged. Cold 360 px Chromium measurements on the local production build matched the previous sample to the nearest KiB for the study room (152), laboratory (189), Mathematics setup (179) and Ecology notes (152). Opening 3D added 272 KiB in the room and 244 KiB in the lab. The uncompressed classroom lesson JSON grew from 89,095 to 93,752 bytes. The Mathematics question bank fetched when starting a paper.
+
+Mobile checks used desktop Chromium at 360 px in both themes. Real Android and screen-reader interaction remain untested. [Plant diversity screenshot](./genesis-screenshots/neet-diversity-living-world-dark-360.png) · [Leaf anatomy screenshot](./genesis-screenshots/neet-structural-organisation-light-360.png)
+
+## Pre-release validation batch
+
+The default Windows Turbopack build completed 512 pages. The three-worker Webpack fallback and build configuration remain in place. Cold 360 px Chromium samples matched the previous rounded JavaScript measurements: 152 KiB for the classroom, 189 KiB for the laboratory and 179 KiB for Mathematics setup. Opening 3D added 272 KiB and 244 KiB for the room and the lab respectively. The classroom lesson response grew to 99,079 uncompressed bytes from 93,752. The Mathematics question bank requested only after starting a paper.
+
+Chromium checked reduced-motion mode, both themes, visible keyboard focus, order from library link to recording to download, Enter activation of downloads, 17 px lesson body text, and diagram rendering at 360 px. Genesis passed the offline classroom, saved media, and cache isolation fixtures using credentials-free local production. No physical Android device or screen-reader setup was available for verification.
+
+[Integration and offline release evidence](./production-readiness.md) · [Immunity screenshot](./genesis-screenshots/neet-human-welfare-dark-360.png) · [Placentation screenshot](./genesis-screenshots/neet-flower-tissue-diagrams-light-360.png)
+
+## Release candidate hardening
+
+Added chemical synapse and root/stem vascular diagram companions and a dedicated MPSC offline regression in the Genesis suite. Recorded data preservation, release blockers, safeguards, and post-deployment and rollback checks are in the [release-candidate report](./production-readiness.md).
+
+Windows Turbopack completed 514 pages. The existing three-worker Webpack fallback stays available. Chromium measured 152 KiB initial compressed JavaScript on the room, 189 KiB on the lab, and 179 KiB on Mathematics setup. Opening 3D added 272 KiB and 244 KiB in the room and lab. The question bank loaded when starting the timed practice. Screenshots show the new [synapse](./genesis-screenshots/neet-nephron-neuron-diagrams-dark-360.png) and [vascular diagrams](./genesis-screenshots/neet-root-stem-vascular-diagrams-light-360.png).

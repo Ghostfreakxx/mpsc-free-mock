@@ -28,7 +28,7 @@ export const courseUnits: Record<Subject, string[]> = {
 
 export type StudyLesson = {
   id: string; subject: Subject; unit: number; title: string; summary: string;
-  prerequisites: string; remaining: string;
+  prerequisites: string; remaining: string; figure?: { alt: string };
   sections: { title: string; paragraphs: string[]; formula?: string }[];
   examples: { question: string; steps: string[]; answer: string }[];
   quiz: { question: string; options: string[]; answer: number; explanation: string }[];

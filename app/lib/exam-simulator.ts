@@ -3,7 +3,7 @@ import type { ReviewedQuestion, Stream } from "../data/reviewed-content";
 // The fields a paper needs; practice pages download only these (app/lib/question-bank-format.ts).
 export type PoolQuestion = Pick<ReviewedQuestion, "id" | "subject" | "category" | "question" | "options" | "answer" | "explanation"> & { lessonHref?: string; challenge?: boolean };
 
-export type ExamId = "jee" | "neet" | "cuet-pg" | "mpsc";
+export type ExamId = "jee-math" | "jee" | "neet" | "cuet-pg" | "mpsc";
 export type Marking = { correct: number; wrong: number };
 export type MarkingOption = { id: string; label: string; marking: Marking };
 
@@ -14,6 +14,7 @@ export type ExamConfig = {
   secondsPerQuestion: number;
   // Relative share of each subject, listed in paper order; unlisted subjects get weight 1.
   subjectWeights?: Record<string, number>;
+  onlySubject?: string;
   lengths: number[];
   markingOptions: MarkingOption[];
   note: string;
@@ -29,6 +30,12 @@ export const examConfigs: Record<ExamId, ExamConfig> = {
     subjectWeights: { Physics: 1, Chemistry: 1, Mathematics: 1 },
     lengths: [15, 30, 75], markingOptions: [nta],
     note: "JEE Main pattern: 75 questions in 3 hours, +4 for a correct answer and −1 for a wrong one. All questions here are multiple choice; the real paper also has numerical-answer questions.",
+  },
+  "jee-math": {
+    id: "jee-math", name: "JEE Mathematics practice", stream: "jee", onlySubject: "Mathematics",
+    secondsPerQuestion: 120, lengths: [10, 20],
+    markingOptions: [{ id: "practice", label: "+1 correct, 0 wrong or skipped", marking: { correct: 1, wrong: 0 } }],
+    note: "Unofficial practice settings: two minutes per question, one point for each correct answer, and no penalty.",
   },
   neet: {
     id: "neet", name: "NEET UG", stream: "neet", secondsPerQuestion: 60,
@@ -100,7 +107,11 @@ function shuffle<T>(values: readonly T[], random: () => number): T[] {
 }
 
 export function maxLength(config: ExamConfig, pool: readonly PoolQuestion[]) {
-  return Math.min(Math.max(...config.lengths), pool.length);
+  return Math.min(Math.max(...config.lengths), examPool(config, pool).length);
+}
+
+export function examPool(config: ExamConfig, pool: readonly PoolQuestion[]) {
+  return config.onlySubject ? pool.filter(question => question.subject === config.onlySubject) : pool;
 }
 
 // Allocate questions to subjects by weight, move any shortfall to subjects with spare
@@ -108,12 +119,13 @@ export function maxLength(config: ExamConfig, pool: readonly PoolQuestion[]) {
 export function selectQuestions(config: ExamConfig, pool: readonly PoolQuestion[], count: number, seed: number): PoolQuestion[] {
   const random = seededRandom(seed);
   const bySubject = new Map<string, PoolQuestion[]>();
-  for (const question of pool) bySubject.set(question.subject, [...(bySubject.get(question.subject) ?? []), question]);
+  const eligible = examPool(config, pool);
+  for (const question of eligible) bySubject.set(question.subject, [...(bySubject.get(question.subject) ?? []), question]);
   // Order subjects as the exam pattern lists them (e.g. NEET: Physics, Chemistry, Biology).
   const listed = Object.keys(config.subjectWeights ?? {});
   const position = (subject: string) => (listed.includes(subject) ? listed.indexOf(subject) : listed.length);
   const subjects = [...bySubject.keys()].sort((a, b) => position(a) - position(b));
-  const total = Math.min(count, pool.length);
+  const total = Math.min(count, eligible.length);
   const weightOf = (subject: string) => config.subjectWeights?.[subject] ?? 1;
   const weightSum = subjects.reduce((sum, subject) => sum + weightOf(subject), 0);
 
@@ -155,14 +167,14 @@ function bankTime(attempt: Attempt, now: number): Attempt {
 }
 
 function update(attempt: Attempt, now: number, change: (response: Response) => Response): Attempt {
-  if (attempt.submittedAt !== undefined) return attempt;
+  if (attempt.submittedAt !== undefined || now >= attempt.deadline) return attempt;
   const banked = bankTime(attempt, now);
   const id = banked.questionIds[banked.current];
   return { ...banked, responses: { ...banked.responses, [id]: change(banked.responses[id]) } };
 }
 
 export function goTo(attempt: Attempt, index: number, now: number): Attempt {
-  if (attempt.submittedAt !== undefined || index < 0 || index >= attempt.questionIds.length) return attempt;
+  if (attempt.submittedAt !== undefined || now >= attempt.deadline || index < 0 || index >= attempt.questionIds.length) return attempt;
   const banked = bankTime(attempt, now);
   const id = banked.questionIds[index];
   return { ...banked, current: index, responses: { ...banked.responses, [id]: { ...banked.responses[id], visited: true } } };
@@ -268,19 +280,27 @@ export function restoreAttempt(serialized: string | null, questionsById: Readonl
   if (!serialized) return null;
   try {
     const value = JSON.parse(serialized) as Partial<Attempt>;
+    const config = typeof value?.examId === "string" && Object.hasOwn(examConfigs, value.examId)
+      ? examConfigs[value.examId] : undefined;
     const valid =
       value?.version === 1 &&
-      typeof value.examId === "string" && value.examId in examConfigs &&
-      typeof value.markingId === "string" &&
+      config &&
+      config.markingOptions.some(option => option.id === value.markingId) &&
       Array.isArray(value.questionIds) && value.questionIds.length > 0 &&
-      value.questionIds.every(id => typeof id === "string" && questionsById.has(id)) &&
+      new Set(value.questionIds).size === value.questionIds.length &&
+      value.questionIds.every(id => typeof id === "string" && questionsById.has(id) &&
+        (!config.onlySubject || questionsById.get(id)?.subject === config.onlySubject)) &&
       [value.startedAt, value.deadline, value.activeSince, value.current].every(Number.isFinite) &&
-      value.current! >= 0 && value.current! < value.questionIds.length &&
+      value.deadline! > value.startedAt! &&
+      (value.submittedAt === undefined || (Number.isFinite(value.submittedAt) && value.submittedAt >= value.startedAt! && value.submittedAt <= value.deadline!)) &&
+      Number.isInteger(value.current) && value.current! >= 0 && value.current! < value.questionIds.length &&
       value.responses !== null && typeof value.responses === "object" &&
       value.questionIds.every(id => {
         const response = value.responses![id];
-        return response && Number.isFinite(response.timeMs) && Array.isArray(response.history) &&
-          (response.answer === undefined || questionsById.get(id)!.options.includes(response.answer));
+        const options = questionsById.get(id)!.options;
+        return response && Number.isFinite(response.timeMs) && response.timeMs >= 0 && Array.isArray(response.history) &&
+          response.history.every(answer => options.includes(answer)) &&
+          (response.answer === undefined || options.includes(response.answer));
       });
     return valid ? (value as Attempt) : null;
   } catch {

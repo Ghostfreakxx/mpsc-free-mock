@@ -1,0 +1,1085 @@
+export const biologyCompanions = [
+  {
+    id: "cell-cycle-division",
+    unit: 3,
+    title: "Mitosis and meiosis: chromosome counting",
+    reference: {
+      title: "OpenStax Biology 2e: The Cell Cycle",
+      url: "https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle"
+    },
+    lab: {
+      title: "Compare cell structures before division",
+      href: "/laboratory#plant-animal-cells"
+    },
+    alt: "Cell counting diagram: the diploid cell is 2n, 2C in G1 and 2n, 4C after S phase. Each daughter is n, 2C after meiosis I and n, 1C after meiosis II.",
+    sections: [
+      {
+        title: "Track three quantities",
+        paragraphs: [
+          "Ploidy counts chromosome sets. C is DNA content relative to an unreplicated haploid set. A chromatid is one DNA-containing copy of a replicated chromosome. Count joined sisters as one chromosome until they separate."
+        ]
+      },
+      {
+        title: "Separate the two divisions",
+        paragraphs: [
+          "In mitosis the sister chromatids separate and daughter nuclei retain the parent ploidy. In meiosis I homologous chromosomes separate, reducing ploidy. In meiosis II sister chromatids separate without another S phase."
+        ]
+      },
+      {
+        title: "State what you are counting",
+        paragraphs: [
+          "After meiosis I each daughter cell is haploid but each chromosome still has two chromatids. During anaphase, counts for the undivided cell can differ from counts at one pole. In mitotic anaphase, a cell that started with eight chromosomes has sixteen single-chromatid chromosomes before cytokinesis, eight headed to each pole. Total nuclear DNA in the undivided cell is still 4C. Use the question’s boundary."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "G1 → S: DNA doubles; chromosome number and ploidy stay the same.",
+          "Meiosis I separates homologs; meiosis II separates sisters."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "A cell with 2n = 8 has completed S phase. Give chromosome, chromatid and DNA counts after replication and after each meiotic division.",
+        steps: [
+          "After S: 8 chromosomes, each with two chromatids, so 16 chromatids and 4C DNA.",
+          "After meiosis I each daughter receives one from each homologous pair: 4 chromosomes, 8 chromatids and 2C DNA.",
+          "After meiosis II each product has 4 single-chromatid chromosomes and 1C DNA."
+        ],
+        answer: "Per cell: (8, 16, 4C) → (4, 8, 2C) → (4, 4, 1C)."
+      }
+    ],
+    quiz: [
+      {
+        question: "A diploid cell with 2n = 12 has just completed meiosis I. How many chromatids are in each daughter cell?",
+        options: [
+          "3",
+          "6",
+          "12",
+          "24"
+        ],
+        answer: 2,
+        explanation: "Each daughter has six replicated chromosomes, with two sister chromatids each."
+      },
+      {
+        question: "Which event makes the first meiotic division reductional?",
+        options: [
+          "Replication of each chromosome",
+          "Separation of homologous chromosomes",
+          "Separation of sister chromatids",
+          "Formation of the spindle"
+        ],
+        answer: 1,
+        explanation: "Each daughter receives one chromosome of each homologous pair. Sister chromatids remain together at this division."
+      },
+      {
+        question: "When is DNA replicated in the normal meiotic sequence?",
+        options: [
+          "Only before meiosis I",
+          "Only before meiosis II",
+          "Before both divisions",
+          "During telophase II"
+        ],
+        answer: 0,
+        explanation: "There is one premeiotic S phase. A second round of DNA replication does not precede meiosis II."
+      },
+      {
+        question: "A diploid cell with 2n = 6 is in mitotic anaphase before cytokinesis. How many chromosomes are moving toward each pole, and what is total DNA content in the whole cell?",
+        options: [
+          "3 and 2C",
+          "6 and 2C",
+          "6 and 4C",
+          "12 and 4C"
+        ],
+        answer: 2,
+        explanation: "Six separated chromosomes move toward each pole. There are twelve in the undivided cell, which still contains 4C DNA."
+      }
+    ]
+  },
+  {
+    id: "genetics-evolution",
+    unit: 7,
+    title: "Mendelian test crosses and conditional probability",
+    reference: {
+      title: "OpenStax Biology 2e: Laws of Inheritance",
+      url: "https://openstax.org/books/biology-2e/pages/12-3-laws-of-inheritance"
+    },
+    lab: {
+      title: "Try the pea-seed inheritance experiment",
+      href: "/laboratory#pea-seed-inheritance"
+    },
+    alt: "Test-cross diagram: a heterozygous Yy parent produces Y or y gametes, a yy parent produces y. Offspring are equally likely to be Yy, yellow, or yy, green.",
+    sections: [
+      {
+        title: "Distinguish genotype from phenotype",
+        paragraphs: [
+          "A genotype is an allele combination; a phenotype is an observable trait. Under complete dominance, YY and Yy both give yellow seeds and yy gives green seeds. The dominant phenotype alone does not identify the genotype."
+        ]
+      },
+      {
+        title: "Use a test cross",
+        paragraphs: [
+          "Cross the unknown yellow parent with yy. All offspring are predicted yellow for YY × yy. For Yy × yy, each offspring independently has probability 1/2 of being green under the simple model. A small all-yellow sample does not prove YY. This model assumes a single gene, complete dominance, equal segregation, random fertilization and comparable survival. Linkage in two-gene problems or unequal survival can change predicted ratios."
+        ]
+      },
+      {
+        title: "Choose the correct denominator",
+        paragraphs: [
+          "Yy × Yy predicts YY, Yy and yy in proportions 1/4, 1/2 and 1/4. If an offspring is known to be yellow, exclude yy from the denominator. P(Yy | yellow) is (1/2)/(3/4) = 2/3."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "A test cross uses a homozygous recessive partner.",
+          "When a phenotype is already given, divide by the probability of that phenotype."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "A known Yy plant is crossed with yy. What is the probability that three offspring are all yellow?",
+        steps: [
+          "One offspring has probability 1/2 of inheriting Y.",
+          "Under the stated independent-offspring model, multiply the three probabilities."
+        ],
+        answer: "1/8. An all-yellow sample of three is possible even with a heterozygous parent."
+      }
+    ],
+    quiz: [
+      {
+        question: "In Yy × Yy, what fraction of the yellow offspring are expected to be heterozygous?",
+        options: [
+          "1/4",
+          "1/2",
+          "2/3",
+          "3/4"
+        ],
+        answer: 2,
+        explanation: "Two of the three equally weighted yellow Punnett cells contain Yy."
+      },
+      {
+        question: "A yellow parent crossed with yy gives a green offspring. Which genotype can the yellow parent have under this model?",
+        options: [
+          "YY only",
+          "Yy only",
+          "yy only",
+          "Both YY and Yy"
+        ],
+        answer: 1,
+        explanation: "The green offspring is yy and received one recessive allele from each parent. The yellow parent must also carry Y."
+      },
+      {
+        question: "What is P(exactly one green offspring in two) for Yy × yy, assuming independent offspring?",
+        options: [
+          "1/4",
+          "1/2",
+          "3/4",
+          "1"
+        ],
+        answer: 1,
+        explanation: "One green can occur first or second. Each order has probability 1/4, so the total is 1/2."
+      },
+      {
+        question: "A heterozygous pea is test-crossed. Given that its first offspring was yellow, what is the probability that the second is green under the independent-offspring model?",
+        options: [
+          "1/4",
+          "1/2",
+          "2/3",
+          "3/4"
+        ],
+        answer: 1,
+        explanation: "Each offspring independently receives Y or y from the known heterozygote with equal probability. The first outcome does not change the second."
+      }
+    ]
+  },
+  {
+    id: "biomolecules",
+    unit: 3,
+    title: "Enzyme activity and substrate saturation",
+    reference: {
+      title: "OpenStax Biology 2e: Enzymes",
+      url: "https://openstax.org/books/biology-2e/pages/6-5-enzymes"
+    },
+    lab: null,
+    alt: "Initial rate rises toward a plateau as substrate concentration increases, with active enzyme amount, pH and temperature fixed.",
+    sections: [
+      {
+        title: "What an enzyme changes",
+        paragraphs: [
+          "A substrate is a reactant on which an enzyme acts. It binds at the active site. An enzyme accelerates the reaction by lowering the activation barrier and is regenerated. It speeds the approach to equilibrium without shifting the equilibrium position."
+        ]
+      },
+      {
+        title: "Read the axes",
+        paragraphs: [
+          "Initial rate is plotted against substrate concentration. With active enzyme amount held fixed, increasing substrate initially raises the rate. At high substrate concentration, active sites are occupied much of the time and extra substrate has little effect. The schematic represents simple saturation behaviour."
+        ]
+      },
+      {
+        title: "Control the comparison",
+        paragraphs: [
+          "Temperature, pH and active enzyme amount can each affect rate. Keep them fixed before attributing a difference to substrate concentration. A drop in measured rate alone cannot establish that an enzyme has been permanently denatured."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Catalysts lower the activation barrier without changing equilibrium.",
+          "The plateau is consistent with saturation under fixed assay conditions.",
+          "Vary one factor at a time."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "With active enzyme amount held fixed, doubling substrate changes initial rate from 2.0 to 3.8 at low substrate, and from 9.8 to 9.9 at high substrate. Which result supports saturation?",
+        steps: [
+          "Compare the gains: 1.8 and 0.1 rate units respectively.",
+          "The smaller gain at high substrate is consistent with most active sites being occupied much of the time."
+        ],
+        answer: "The high-substrate comparison supports saturation. Two points do not establish an exact limiting rate."
+      }
+    ],
+    quiz: [
+      {
+        question: "What does an enzyme lower?",
+        options: [
+          "Equilibrium constant",
+          "Activation barrier",
+          "Product free energy only",
+          "Equilibrium product concentration"
+        ],
+        answer: 1,
+        explanation: "An enzyme offers a faster pathway. It does not alter the free-energy difference between reactants and products."
+      },
+      {
+        question: "Why does extra substrate have little effect near the plateau?",
+        options: [
+          "All enzyme is destroyed",
+          "Most sites are already occupied much of the time",
+          "The reaction is uncatalysed",
+          "Substrate and enzyme are equally concentrated"
+        ],
+        answer: 1,
+        explanation: "Under simple saturation, existing active sites already spend much of their time occupied."
+      },
+      {
+        question: "How can you isolate the effect of substrate concentration?",
+        options: [
+          "Vary pH and substrate",
+          "Vary enzyme amount and substrate",
+          "Hold enzyme amount, pH and temperature fixed",
+          "Compare different enzymes at different temperatures"
+        ],
+        answer: 2,
+        explanation: "Holding other factors constant allows the initial-rate difference to be attributed to substrate concentration."
+      },
+      {
+        question: "Two curves plateau at different initial rates. The higher curve used twice as much active enzyme at the same pH and temperature. Which interpretation is consistent with simple saturation?",
+        options: [
+          "The higher curve has more available catalytic sites",
+          "The enzyme changed equilibrium",
+          "The lower curve proves permanent denaturation",
+          "Substrate never binds at saturation"
+        ],
+        answer: 0,
+        explanation: "More active enzyme provides more catalytic sites and can raise the limiting initial rate. The observation does not imply an equilibrium change."
+      }
+    ]
+  },
+  {
+    id: "plant-physiology",
+    unit: 4,
+    title: "Photosynthesis: limiting factors and net gas exchange",
+    reference: {
+      title: "NCERT Biology: Photosynthesis in Higher Plants",
+      url: "https://ncert.nic.in/textbook/pdf/kebo111.pdf"
+    },
+    lab: null,
+    alt: "Schematic of net carbon dioxide uptake versus light intensity. Uptake is negative in darkness, crosses zero at the light compensation point, then levels off under the fixed comparison conditions.",
+    sections: [
+      {
+        title: "Separate net exchange from carbon fixation",
+        paragraphs: [
+          "A leaf exchanges carbon dioxide through stomata. In the light it fixes carbon and also releases carbon dioxide through respiratory processes. Net uptake is the amount taken up minus the amount released. At the light compensation point, net exchange is zero even though these processes continue. For example, four units of gross uptake and four units of total carbon dioxide release give zero net uptake. The compensation point can shift as the light response or respiratory losses change."
+        ]
+      },
+      {
+        title: "Identify what limits the rate",
+        paragraphs: [
+          "Increasing light may raise net uptake at low light. A plateau means additional light has little effect under those conditions. It does not alone identify the limiting factor. Compare results while varying carbon dioxide, temperature or another factor one at a time."
+        ]
+      },
+      {
+        title: "Interpret the evidence",
+        paragraphs: [
+          "A starch test indicates starch accumulation in the tested tissue. It does not directly measure an instantaneous photosynthetic rate. Compare similar leaves with matched starting conditions and vary only the factor under investigation."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Net uptake is zero at the light compensation point.",
+          "A light-response plateau alone does not identify the limiting factor.",
+          "A starch test is evidence of accumulation over time."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "At low light, increasing carbon dioxide has no measurable effect. At high light it raises net uptake from 6 to 10 units. What can you infer?",
+        steps: [
+          "Compare leaves at the same light level with only carbon dioxide changed.",
+          "The high-light increase shows carbon dioxide supply constrained uptake under those high-light conditions."
+        ],
+        answer: "The low-light result alone does not prove that carbon dioxide can never limit that leaf."
+      }
+    ],
+    quiz: [
+      {
+        question: "What happens at the light compensation point?",
+        options: [
+          "Photosynthesis stops",
+          "Respiration stops",
+          "Net carbon dioxide exchange is zero",
+          "Stomata must close"
+        ],
+        answer: 2,
+        explanation: "Carbon dioxide uptake and release balance. Zero net exchange does not imply that either process stops."
+      },
+      {
+        question: "What can a single light-response plateau establish?",
+        options: [
+          "Only that extra light has little effect in that comparison",
+          "Carbon dioxide is always limiting",
+          "The leaf has stopped respiring",
+          "Heat has irreversibly killed the leaf"
+        ],
+        answer: 0,
+        explanation: "Other factors or the capacity of the photosynthetic system may limit the response. An additional controlled comparison is needed."
+      },
+      {
+        question: "Which comparison isolates light intensity most directly?",
+        options: [
+          "Vary light and temperature",
+          "Vary light with carbon dioxide and temperature matched",
+          "Vary light and leaf age",
+          "Compare unmatched plants in different chambers"
+        ],
+        answer: 1,
+        explanation: "Matching the other factors makes light intensity the variable under comparison."
+      }
+    ]
+  },
+  {
+    id: "human-physiology",
+    unit: 5,
+    title: "Nephron transport: filtration, reabsorption and secretion",
+    reference: {
+      title: "OpenStax Biology 2e: The Kidneys and Osmoregulatory Organs",
+      url: "https://openstax.org/books/biology-2e/pages/41-2-the-kidneys-and-osmoregulatory-organs"
+    },
+    lab: null,
+    alt: "Filtration moves solute from blood to Bowman’s space. Reabsorption moves solute from tubular fluid toward blood. Secretion moves solute from blood toward tubular fluid. Excretion leaves in urine.",
+    sections: [
+      {
+        title: "Follow the direction of transport",
+        paragraphs: [
+          "During glomerular filtration, water and many small solutes pass from glomerular capillaries into Bowman’s space. Blood cells and most large plasma proteins remain in the circulation under normal conditions."
+        ]
+      },
+      {
+        title: "Track a solute along the tubule",
+        paragraphs: [
+          "Reabsorption transfers material from tubular fluid back toward the blood. Secretion transfers material in the opposite direction, from blood or cells into tubular fluid. Filtrate composition changes as it moves through the nephron."
+        ]
+      },
+      {
+        title: "Keep amount and concentration separate",
+        paragraphs: [
+          "For a substance unchanged by the kidney, the excreted amount over a given interval equals the filtered amount minus the reabsorbed amount plus the secreted amount. All terms must use the same units and interval. Concentration also depends on urine volume."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Filtration: glomerular blood to Bowman’s space.",
+          "Reabsorption: tubule toward blood. Secretion: toward the tubule.",
+          "Excreted = filtered − reabsorbed + secreted."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "Over one hour, 100 mg of a model solute is filtered, 93 mg is reabsorbed and 2 mg is secreted. No solute is produced or broken down. How much is excreted?",
+        steps: [
+          "Start with 100 mg in the filtrate.",
+          "Subtract the 93 mg returned toward blood. Add the 2 mg transferred into the tubule."
+        ],
+        answer: "9 mg is excreted over the hour. Urine concentration cannot be calculated without its volume."
+      }
+    ],
+    quiz: [
+      {
+        question: "Which process transfers a substance from tubular fluid toward the blood?",
+        options: [
+          "Filtration",
+          "Tubular reabsorption",
+          "Tubular secretion",
+          "Excretion"
+        ],
+        answer: 1,
+        explanation: "Reabsorption returns material from the tubule toward circulation."
+      },
+      {
+        question: "A substance is filtered at 15 mg/min, reabsorbed at 6 mg/min and secreted at 4 mg/min. What is its excretion rate?",
+        options: [
+          "5 mg/min",
+          "9 mg/min",
+          "13 mg/min",
+          "25 mg/min"
+        ],
+        answer: 2,
+        explanation: "Apply the mass balance with matched units: 15 − 6 + 4 = 13 mg/min."
+      },
+      {
+        question: "If 10 mg is excreted per minute and urine flow doubles while that excretion rate stays fixed, what happens to urine concentration?",
+        options: [
+          "It doubles",
+          "It halves",
+          "It stays fixed",
+          "It becomes zero"
+        ],
+        answer: 1,
+        explanation: "Concentration equals mass excretion rate divided by urine flow. Doubling the denominator halves the concentration."
+      }
+    ]
+  },
+  {
+    id: "reproduction",
+    unit: 6,
+    title: "Double fertilization and seed tissue ploidy",
+    reference: {
+      title: "OpenStax Biology 2e: Angiosperms",
+      url: "https://openstax.org/books/biology-2e/pages/26-3-angiosperms"
+    },
+    lab: null,
+    alt: "Two panels show a sperm plus egg making a diploid zygote, and the other sperm plus two polar nuclei making a triploid primary endosperm nucleus.",
+    sections: [
+      {
+        title: "Follow the two sperm cells",
+        paragraphs: [
+          "In the typical diploid angiosperm model, one haploid sperm fuses with the haploid egg to form the diploid zygote. The other sperm fuses with the central cell’s two haploid polar nuclei, or with their combined nucleus, forming the triploid primary endosperm nucleus."
+        ]
+      },
+      {
+        title: "Follow each tissue’s origin",
+        paragraphs: [
+          "The embryo develops from the zygote. The endosperm develops from the fertilized central cell. The seed coat develops from maternal integuments, which remain diploid in this model. Ploidy reflects nuclear contributions and tissue origin."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Syngamy forms the zygote. Triple fusion forms the primary endosperm nucleus.",
+          "The typical diploid model has a 2n embryo, 3n primary endosperm nucleus and 2n maternal seed coat."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "In a typical diploid plant with 2n = 18, compare the zygote, primary endosperm nucleus and seed coat.",
+        steps: [
+          "Each sperm and each haploid female nucleus contributes nine chromosomes. Add two sets for the zygote and three for the primary endosperm nucleus. The seed coat retains maternal ploidy."
+        ],
+        answer: "18, 27 and 18 chromosomes per nucleus respectively."
+      }
+    ],
+    quiz: [
+      {
+        question: "What directly becomes the embryo?",
+        options: [
+          "Zygote",
+          "Primary endosperm nucleus",
+          "Integument",
+          "Pollen tube"
+        ],
+        answer: 0,
+        explanation: "The zygote develops into the embryo; the other fusion initiates endosperm development."
+      },
+      {
+        question: "Why is triple fusion called triple?",
+        options: [
+          "Three sperm arrive",
+          "Three haploid nuclear contributions combine",
+          "Three eggs are fertilized",
+          "Three zygotes form"
+        ],
+        answer: 1,
+        explanation: "One sperm contributes one set and the two polar nuclei contribute one set each in the typical model."
+      },
+      {
+        question: "If n = 7, what is the chromosome number in a typical primary endosperm nucleus?",
+        options: [
+          "7",
+          "14",
+          "21",
+          "28"
+        ],
+        answer: 2,
+        explanation: "The usual primary endosperm nucleus is 3n, which is 21 for n = 7."
+      }
+    ]
+  },
+  {
+    id: "ecology",
+    unit: 10,
+    title: "Ecosystem productivity and trophic transfer",
+    reference: {
+      title: "OpenStax: Energy Flow through Ecosystems",
+      url: "https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems"
+    },
+    lab: null,
+    alt: "An energy budget shows 1,500 units of gross production minus 500 units of producer respiration, leaving 1,000 units of net primary production. A 12 percent transfer leaves 120 units of herbivore production.",
+    sections: [
+      {
+        title: "Distinguish production from standing stock",
+        paragraphs: [
+          "Standing biomass describes mass present at a time. Productivity is a rate of formation of new organic material. A small producer stock can sustain consumers if it turns over quickly. A snapshot of mass does not directly measure productivity."
+        ]
+      },
+      {
+        title: "Balance the energy budget",
+        paragraphs: [
+          "Net primary productivity equals gross primary productivity minus producer respiration. Compare on the same area and time basis. Trophic transfer efficiency compares production at the receiving level with production at the preceding level."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "NPP = GPP − producer respiration.",
+          "Multiply by each stated transfer fraction. Ten percent is a simplified classroom model.",
+          "An inverted standing biomass pyramid can coexist with decreasing production across trophic levels."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "Producers gross 1,500 kJ per square metre per year and respire 500. Herbivores produce 12% of the producer NPP. What are the two production rates?",
+        steps: [
+          "Subtract producer respiration to find net production, then multiply by 0.12 for herbivore production."
+        ],
+        answer: "NPP = 1,000 and herbivore production = 120 kJ per square metre per year."
+      }
+    ],
+    quiz: [
+      {
+        question: "Why can a small phytoplankton standing stock support greater consumer standing mass?",
+        options: [
+          "Consumers create energy",
+          "Phytoplankton may turn over rapidly",
+          "Biomass and productivity are identical",
+          "Consumers transfer all food energy"
+        ],
+        answer: 1,
+        explanation: "Standing stock is a snapshot. Fast replacement can sustain a substantial production rate."
+      },
+      {
+        question: "Which term is subtracted from GPP to obtain NPP?",
+        options: [
+          "Producer respiration",
+          "All consumer respiration",
+          "Decomposer biomass",
+          "Consumer ingestion"
+        ],
+        answer: 0,
+        explanation: "NPP is producer production left after producer respiration."
+      },
+      {
+        question: "Starting with 1,000 units, successive transfers of 12% and 15% produce what final amount?",
+        options: [
+          "150",
+          "120",
+          "27",
+          "18"
+        ],
+        answer: 3,
+        explanation: "Multiply by both transfer fractions: 1,000 × 0.12 × 0.15 = 18."
+      }
+    ]
+  },
+  {
+    id: "diversity-living-world",
+    unit: 1,
+    title: "Plant diversity: vascular tissue, spores and seeds",
+    reference: {
+      title: "OpenStax Biology 2e: 25.4 Seedless Vascular Plants",
+      url: "https://openstax.org/books/biology-2e/pages/25-4-seedless-vascular-plants"
+    },
+    lab: null,
+    alt: "A comparison chart shows mosses without true vascular tissue, ferns with vascular tissue and spores but no seeds, and gymnosperms with vascular tissue and seeds without an enclosing ovary.",
+    sections: [
+      {
+        title: "Identify the useful features",
+        paragraphs: [
+          "A moss lacks true xylem and phloem and produces spores. A fern has vascular tissue and also produces spores, but it does not produce seeds. Spore production alone does not distinguish mosses from ferns."
+        ]
+      },
+      {
+        title: "Trace seed and fruit separately",
+        paragraphs: [
+          "Gymnosperms produce seeds from ovules that are not enclosed in an ovary. These seeds are not enclosed within fruits. A seed provides an embryo with protective tissue and stored resources, while a spore is a reproductive cell."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Moss: no true vascular tissue; spores, no seeds.",
+          "Fern: vascular tissue; spores, no seeds.",
+          "Gymnosperm: vascular tissue; seeds without an enclosing ovary."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "A specimen has true xylem, and the mature plant bears clusters of sporangia on its leaves. It makes spores but no seeds. Which group fits?",
+        steps: [
+          "Check the two independent clues: true vascular tissue and no seeds.",
+          "Clusters of sporangia on leaves support a fern identification."
+        ],
+        answer: "A fern is consistent with the findings."
+      }
+    ],
+    quiz: [
+      {
+        question: "Which feature distinguishes a fern from a moss in this comparison?",
+        options: [
+          "Spore production",
+          "True vascular tissue",
+          "Absence of seeds",
+          "An enclosing fruit"
+        ],
+        answer: 1,
+        explanation: "Both form spores and lack seeds. The fern has true xylem and phloem."
+      },
+      {
+        question: "A plant has ovules exposed on cone scales and makes seeds. Which group fits?",
+        options: [
+          "Moss",
+          "Fern",
+          "Gymnosperm",
+          "Angiosperm with a fruit"
+        ],
+        answer: 2,
+        explanation: "Exposed ovules on cone scales support a gymnosperm identification."
+      },
+      {
+        question: "Which pair shares true vascular tissue but differs in whether it makes seeds?",
+        options: [
+          "Moss and fern",
+          "Fern and gymnosperm",
+          "Two mosses",
+          "Two ferns"
+        ],
+        answer: 1,
+        explanation: "Both ferns and gymnosperms are vascular. Ferns are seedless while gymnosperms make seeds."
+      }
+    ]
+  },
+  {
+    id: "structural-organisation",
+    unit: 2,
+    title: "Leaf cross sections: tissues and gas exchange",
+    reference: {
+      title: "OpenStax Biology 2e: 30.4 Leaves",
+      url: "https://openstax.org/books/biology-2e/pages/30-4-leaves"
+    },
+    lab: null,
+    alt: "A schematic typical dorsiventral leaf shows upper epidermis, palisade mesophyll, spongy mesophyll with air spaces, lower epidermis and a stomatal pore.",
+    sections: [
+      {
+        title: "Orient the section using tissue clues",
+        paragraphs: [
+          "In a typical dorsiventral leaf, the upper epidermis covers a layer of tightly packed palisade mesophyll. Spongy mesophyll lies below it and has larger intercellular air spaces. Leaf orientations and tissue arrangements vary among species."
+        ]
+      },
+      {
+        title: "Follow the diffusion pathway",
+        paragraphs: [
+          "In the schematic, carbon dioxide can enter through a stomatal pore, then diffuse through the air spaces toward photosynthetic cells. Guard cells regulate the pore. Water vapour can leave through the same network."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Palisade: closely packed photosynthetic cells in this model.",
+          "Spongy mesophyll: loose cells with spaces for gas diffusion.",
+          "Guard cells regulate stomatal aperture."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "A leaf cross section shows elongate packed cells near surface A and loose cells above a pore near surface B. Which side is upper in this schematic?",
+        steps: [
+          "Identify palisade cells by their elongated, packed arrangement.",
+          "Identify spongy tissue by the air spaces; the pore communicates with those spaces."
+        ],
+        answer: "Surface A is upper in the typical dorsiventral model."
+      }
+    ],
+    quiz: [
+      {
+        question: "Which observed feature best identifies spongy mesophyll in this model?",
+        options: [
+          "A continuous surface cell layer",
+          "Large intercellular air spaces",
+          "A cluster of root hairs",
+          "Two guard cells around a pore"
+        ],
+        answer: 1,
+        explanation: "Loose cell packing creates internal air spaces. Guard cells instead identify the pore’s immediate boundary."
+      },
+      {
+        question: "What directly regulates stomatal aperture?",
+        options: [
+          "Guard cells",
+          "Palisade cell walls",
+          "Xylem vessel ends",
+          "Cuticle alone"
+        ],
+        answer: 0,
+        explanation: "Changes in guard-cell turgor adjust the opening."
+      },
+      {
+        question: "Which sequence describes a possible carbon dioxide path toward a photosynthetic cell?",
+        options: [
+          "Xylem then cuticle",
+          "Guard-cell nucleus then phloem",
+          "Stomatal pore then mesophyll air spaces",
+          "Cuticle then root hair"
+        ],
+        answer: 2,
+        explanation: "An open pore connects the outside atmosphere with internal air spaces, from which carbon dioxide diffuses toward cells."
+      }
+    ]
+  },
+  {
+    id: "human-welfare",
+    unit: 8,
+    title: "Immune memory and active versus passive immunity",
+    reference: {
+      title: "OpenStax Biology 2e: Adaptive Immune Response",
+      url: "https://openstax.org/books/biology-2e/pages/42-2-adaptive-immune-response"
+    },
+    lab: null,
+    alt: "Active immunity: antigen exposure leads to a recipient response and memory. Passive immunity: transferred antibodies provide temporary protection without establishing recipient memory by themselves.",
+    sections: [
+      {
+        title: "Identify who makes the antibodies",
+        paragraphs: [
+          "In active immunity, the recipient’s immune system responds to antigen. Some responding cells become memory cells. In passive immunity, the recipient receives already formed antibodies. The transferred antibodies can provide temporary protection without creating immune memory by themselves."
+        ]
+      },
+      {
+        title: "Compare primary and secondary responses",
+        paragraphs: [
+          "A later encounter with the same antigen can produce a faster antibody response because antigen-specific memory cells are already present. Timing and magnitude depend on the antigen and previous response. An antibody measurement alone does not establish how that antibody was acquired."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Active immunity: recipient response and potential memory.",
+          "Passive immunity: transferred antibodies with temporary protection.",
+          "A faster response to the same antigen is consistent with immune memory."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "Person A has detectable antibodies shortly after receiving preformed antibodies. Person B produces antibodies and memory cells after antigen exposure. Classify each response.",
+        steps: [
+          "Determine the source of the antibody in each case.",
+          "Check whether the person generated the response and memory."
+        ],
+        answer: "A illustrates passive immunity, and B illustrates active immunity."
+      }
+    ],
+    quiz: [
+      {
+        question: "What explains a faster antibody response after a repeat encounter with the same antigen?",
+        options: [
+          "Antigen-specific memory cells",
+          "All antibodies were supplied by a donor",
+          "The antigen no longer has recognizable features",
+          "The skin barrier has disappeared"
+        ],
+        answer: 0,
+        explanation: "Existing antigen-specific memory cells can respond faster than the initial response."
+      },
+      {
+        question: "Which is an example of passive immunity?",
+        options: [
+          "A recipient makes antibodies after immunization",
+          "Maternal antibodies cross to the fetus",
+          "A previously activated B-cell clone expands",
+          "A recipient develops memory after infection"
+        ],
+        answer: 1,
+        explanation: "The fetus receives maternal antibodies already made by someone else."
+      },
+      {
+        question: "A recipient has detectable antibody very soon after a transfer. Which conclusion is supported by this result alone?",
+        options: [
+          "Long-term memory is guaranteed",
+          "The antibodies may have come from the transfer",
+          "The same result proves the recipient made them",
+          "All future exposure is prevented"
+        ],
+        answer: 1,
+        explanation: "A transfer can account for early circulating antibody. Detecting it does not by itself demonstrate a new recipient response."
+      }
+    ]
+  },
+  {
+    id: "flower-tissue-diagrams",
+    unit: 2,
+    title: "Placentation in ovary sections",
+    reference: {
+      title: "NCERT Biology: Morphology of Flowering Plants",
+      url: "https://ncert.nic.in/textbook/pdf/kebo105.pdf"
+    },
+    lab: null,
+    alt: "Three ovary sections compare ovule positions: marginal along one margin, axile at the central junction of partitions, and parietal on the inner wall.",
+    sections: [
+      {
+        title: "Find the attachment point",
+        paragraphs: [
+          "Placentation describes how ovules attach within an ovary. First identify the ovary boundary and check whether the drawing is longitudinal or transverse. Position and attachment matter more than overall outline."
+        ]
+      },
+      {
+        title: "Use partitions as evidence",
+        paragraphs: [
+          "In marginal placentation, ovules attach along one margin. In the typical axile cross section, partitions meet at a central axis bearing ovules. In the illustrated parietal arrangement, ovules attach to the inner ovary wall. Check attachment rather than assuming every partition proves an axile pattern."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Marginal: ovules attach along one margin.",
+          "Axile: ovules attach to a central axis where partitions meet.",
+          "Parietal: ovules attach at the wall."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "Unknown A has ovules on a centre where septa meet. Unknown B has ovules attached to the inner wall. Classify both.",
+        steps: [
+          "Trace ovule attachment rather than comparing fruit outlines.",
+          "Look for a central axis in A and peripheral attachment in B."
+        ],
+        answer: "A fits axile and B fits parietal in this model."
+      }
+    ],
+    quiz: [
+      {
+        question: "What feature best identifies the illustrated axile arrangement?",
+        options: [
+          "A central attachment axis with radiating partitions",
+          "An elongated ovary outline",
+          "Ovules attached only to the inner wall",
+          "A pore in an epidermis"
+        ],
+        answer: 0,
+        explanation: "Axile placentation has central attachment associated with partitions in this model."
+      },
+      {
+        question: "A longitudinal section shows ovules lining one margin. What is the best interpretation?",
+        options: [
+          "Axile",
+          "Marginal",
+          "Parietal in a transverse model",
+          "The image is a stem"
+        ],
+        answer: 1,
+        explanation: "A row along one margin fits marginal placentation."
+      },
+      {
+        question: "Why should the section plane be read before classifying a diagram?",
+        options: [
+          "It helps explain shape differences unrelated to attachment",
+          "It changes the ovules into seeds",
+          "It determines the species by itself",
+          "It makes the wall irrelevant"
+        ],
+        answer: 0,
+        explanation: "Longitudinal and transverse sections can have different outlines. The attachment remains the key criterion."
+      }
+    ]
+  },
+  {
+    id: "nephron-neuron-diagrams",
+    unit: 5,
+    title: "Chemical synapse: trace the signal",
+    reference: {
+      title: "OpenStax Biology 2e: How Neurons Communicate",
+      url: "https://openstax.org/books/biology-2e/pages/35-2-how-neurons-communicate"
+    },
+    lab: null,
+    alt: "Vesicles in the presynaptic terminal release transmitter into the cleft. Transmitter reaches receptors on the postsynaptic membrane.",
+    sections: [
+      {
+        title: "Follow the direction of the signal",
+        paragraphs: [
+          "In a typical chemical synapse, an action potential reaches the presynaptic terminal and opens voltage-gated calcium channels. Calcium entry triggers vesicle fusion. Transmitter molecules released into the cleft can bind to receptors on the receiving cell."
+        ]
+      },
+      {
+        title: "Distinguish the two membranes",
+        paragraphs: [
+          "The presynaptic membrane is the release surface. The postsynaptic membrane carries receptors in this schematic. Vesicles remain on the release side as they fuse; individual transmitter molecules cross the gap. Receptor activation can increase or decrease the likelihood that the receiving cell fires."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Calcium entry triggers vesicle fusion at the terminal.",
+          "Transmitter, rather than a whole vesicle, crosses the synaptic cleft.",
+          "The effect depends on the postsynaptic receptors."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "A diagram shows an impulse arriving and transmitter released normally, but the receiving membrane lacks the matching receptor. What step is directly impaired?",
+        steps: [
+          "Separate release from reception: the first cell still releases transmitter.",
+          "Follow the released molecules to the membrane that should detect them."
+        ],
+        answer: "The receptor-mediated postsynaptic response is impaired."
+      }
+    ],
+    quiz: [
+      {
+        question: "What crosses the synaptic cleft in this model?",
+        options: [
+          "Whole vesicles",
+          "Transmitter molecules",
+          "The presynaptic membrane",
+          "The entire impulse as continuous axon current"
+        ],
+        answer: 1,
+        explanation: "The vesicle fuses with the release membrane and its soluble transmitter crosses the cleft."
+      },
+      {
+        question: "Which event directly triggers release in the typical model?",
+        options: [
+          "Calcium enters the presynaptic terminal",
+          "Receptors move to the cleft",
+          "The two cells join into one axon",
+          "Calcium leaves the postsynaptic membrane"
+        ],
+        answer: 0,
+        explanation: "Calcium entry at the release terminal promotes vesicle fusion."
+      },
+      {
+        question: "Normal release is observed but postsynaptic receptors are blocked. Which observation is expected?",
+        options: [
+          "The release surface must disappear",
+          "Transmitter reaches the cleft but its usual postsynaptic action is reduced",
+          "All synaptic vesicles enter the other cell",
+          "The junction becomes an electrical synapse"
+        ],
+        answer: 1,
+        explanation: "Release and receptor binding are separate steps; blocking the latter can reduce the response despite normal release."
+      }
+    ]
+  },
+  {
+    id: "root-stem-vascular-diagrams",
+    unit: 2,
+    title: "Vascular tissue patterns in roots and stems",
+    reference: {
+      title: "IIT Kanpur SATHEE: Anatomy of Flowering Plants",
+      url: "https://sathee.iitk.ac.in/sathee-neet/ncert-books/neet-ncert-books/neet-nb-bio-11/bio-11-chapter-6-anatomy-of-flowering-plants/"
+    },
+    lab: null,
+    alt: "A root schematic alternates xylem and phloem on different radii. A collateral stem bundle places outer phloem and inner xylem on the same radius.",
+    sections: [
+      {
+        title: "Look at the relationship between tissues",
+        paragraphs: [
+          "In the root pattern shown, xylem and phloem occupy alternate positions on different radii. This is radial arrangement. In a typical collateral stem bundle, xylem and phloem share a radius, with xylem toward the centre and phloem toward the outside."
+        ]
+      },
+      {
+        title: "Keep two layers of evidence separate",
+        paragraphs: [
+          "Radial or collateral describes the relationship of tissues. Ring or scattered describes the layout of bundles across the section. A ring alone does not tell which tissue is on the inner side of an individual bundle."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Radial root model: xylem and phloem alternate on different radii.",
+          "Collateral stem model: outer phloem and inner xylem on one radius.",
+          "Use position relative to the whole organ centre."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "In an unknown section, each bundle shows one tissue just outside the other along a radius. The bundles form a ring. What can you infer?",
+        steps: [
+          "Use the same-radius pairing to identify the illustrated collateral pattern.",
+          "Interpret the ring as a separate clue to the whole organ layout."
+        ],
+        answer: "The pattern supports a typical collateral stem model. Confirm the tissue labels before naming the inner and outer tissue."
+      }
+    ],
+    quiz: [
+      {
+        question: "Which arrangement identifies the typical radial root diagram?",
+        options: [
+          "Outer phloem and inner xylem share one radius",
+          "Xylem and phloem alternate on different radii",
+          "Xylem exists only in the outer epidermis",
+          "Phloem fills a stomatal pore"
+        ],
+        answer: 1,
+        explanation: "Separate, alternating radial positions distinguish the root model."
+      },
+      {
+        question: "In the illustrated collateral stem bundle, which tissue is toward the organ centre?",
+        options: [
+          "Phloem",
+          "Xylem",
+          "Epidermis",
+          "Cuticle"
+        ],
+        answer: 1,
+        explanation: "The typical collateral arrangement puts xylem inward and phloem outward."
+      },
+      {
+        question: "What does a bundle ring establish by itself?",
+        options: [
+          "The organ layout of bundles",
+          "The identity of every cell",
+          "The exact species",
+          "The presence of secondary growth"
+        ],
+        answer: 0,
+        explanation: "A ring describes bundle positions. Identification of the tissues requires examining the individual bundles."
+      }
+    ]
+  }
+];
+
+export function biologyNotesHref(id: string) {
+  return `/neet/classes/written/${id}`;
+}

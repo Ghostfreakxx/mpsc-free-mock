@@ -1,0 +1,534 @@
+import assert from "node:assert/strict";
+import { mkdir, readFile } from "node:fs/promises";
+import path from "node:path";
+import { chromium } from "playwright";
+
+const base = process.env.TEST_URL || "http://127.0.0.1:3000";
+const screenshots = process.env.SCREENSHOT_DIR;
+if (screenshots) await mkdir(screenshots, { recursive: true });
+const browser = await chromium.launch({ channel: process.env.PLAYWRIGHT_CHANNEL });
+try {
+  for (const width of [360, 768, 1440]) {
+    const page = await browser.newPage({ viewport: { width, height: 900 }, reducedMotion: "reduce" });
+    try {
+      await page.goto(base + "/study-room");
+      const heading = page.getByRole("heading", { name: "Reviewed classroom lessons" });
+      await page.getByLabel("Subject and topic").waitFor();
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+      if (screenshots) {
+        await heading.scrollIntoViewIfNeeded();
+        await page.screenshot({ path: path.join(screenshots, `after-classroom-${width}.png`) });
+      }
+      await page.evaluate(() => localStorage.setItem("mpsc-theme", "light"));
+      await page.reload();
+      await page.getByLabel("Subject and topic").waitFor();
+      assert.equal(await page.locator("html").getAttribute("data-theme"), "light");
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+      await page.goto(base + "/laboratory");
+      await page.getByRole("slider", { name: "Launch speed" }).waitFor();
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+      if (screenshots) await page.screenshot({ path: path.join(screenshots, `laboratory-${width}.png`) });
+      const circuit = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "Resistors in series and parallel" }) });
+      await circuit.getByLabel("Connection").selectOption("parallel");
+      await circuit.getByText(/Equivalent resistance 3.00 Ω/).waitFor();
+      await circuit.getByRole("slider", { name: "Supply voltage" }).press("End");
+      await circuit.getByText(/Supply current 8.00 A/).waitFor();
+      if (screenshots) await circuit.screenshot({ path: path.join(screenshots, `circuit-${width}.png`) });
+      await circuit.getByRole("button", { name: "Reset circuit" }).click();
+      await circuit.getByText(/Equivalent resistance 12.00 Ω/).waitFor();
+      const atomic = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "Chemistry · Isotopes and ions" }) });
+      await atomic.getByRole("slider", { name: "Neutrons" }).press("ArrowRight");
+      await atomic.getByText("C-13", { exact: true }).waitFor();
+      const peas = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "Biology · Pea-seed inheritance" }) });
+      await peas.getByLabel("First pea plant").selectOption("yy");
+      await peas.getByText("50% yellow · 50% green.").waitFor();
+      const graph = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "Mathematics · Quadratic graphs" }) });
+      await graph.getByRole("slider", { name: "Vertical shift k" }).press("ArrowRight");
+      await graph.getByText(/Real roots: 0.00/).waitFor();
+      if (screenshots && width === 360) {
+        for (const [panel, name] of [[atomic, "isotopes"], [peas, "pea-inheritance"], [graph, "quadratic"]]) {
+          await panel.screenshot({ path: path.join(screenshots, name + "-360.png") });
+        }
+      }
+      await graph.getByRole("button", { name: "Reset experiment" }).click();
+      await graph.getByText(/Real roots: -1.00, 1.00/).waitFor();
+      const civic = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "Political Science · Simple-majority votes" }) });
+      await civic.getByRole("slider", { name: "Yes votes" }).press("Home");
+      await civic.getByText(/The motion does not pass/).waitFor();
+      const geography = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "Geography · Distance along a meridian" }) });
+      await geography.getByRole("slider", { name: "First latitude" }).press("Home");
+      await geography.getByText(/67° apart/).waitFor();
+      const advancedLab = title => page.getByRole("article").filter({ has: page.getByRole("heading", { name: title }) });
+      const friction = advancedLab("Physics · Force and friction");
+      await friction.getByRole("slider", { name: "Pull force (N)" }).press("Home");
+      await friction.getByText(/The block stays at rest/).waitFor();
+      const optics = advancedLab("Physics · Reflection and refraction");
+      await optics.getByLabel("Incident medium").selectOption("glass");
+      await optics.getByLabel("Transmitted medium").selectOption("air");
+      await optics.getByRole("slider", { name: "Incident angle from normal (degrees)" }).press("End");
+      await optics.getByText(/Total internal reflection/).waitFor();
+      const cell = advancedLab("Biology · Plant and animal cells");
+      await cell.getByLabel("Cell model").selectOption("plant");
+      await cell.getByRole("button", { name: "Chloroplast", exact: true }).click();
+      await cell.getByRole("status").getByText(/Captures light energy/).waitFor();
+      await cell.getByRole("button", { name: "Central vacuole", exact: true }).click();
+      await cell.getByRole("status").getByText(/Stores water and solutes/).waitFor();
+      if (screenshots && width === 360) await cell.screenshot({ path: path.join(screenshots, "plant-cell-360.png") });
+      const molecules = advancedLab("Chemistry · Molecular geometry");
+      await molecules.getByLabel("Molecule", { exact: true }).selectOption("methane");
+      await molecules.getByRole("button", { name: "Carbon", exact: true }).click();
+      await molecules.getByText(/Tetrahedral/).waitFor();
+      await molecules.getByRole("button", { name: "Reset molecule" }).click();
+      await molecules.getByText(/104.5°/).waitFor();
+      if (screenshots && width === 360) {
+        await civic.screenshot({ path: path.join(screenshots, "majority-360.png") });
+        await geography.screenshot({ path: path.join(screenshots, "meridian-360.png") });
+      }
+    } finally {
+      await page.close();
+    }
+  }
+
+  const context = await browser.newContext({ reducedMotion: "reduce" });
+  try {
+    const page = await context.newPage();
+    let classroomRequests = 0;
+    page.on("request", request => {
+      if (new URL(request.url()).pathname === "/api/chat") classroomRequests++;
+    });
+    await page.goto(base + "/study-room");
+    await page.waitForFunction(() => navigator.serviceWorker.controller);
+    await page.reload();
+    const privateResult = await page.evaluate(async () => {
+      const response = await fetch("/api/admin/teacher-usage", { headers: { Authorization: "Basic fixture" } });
+      return { status: response.status, control: response.headers.get("Cache-Control"), policy: response.headers.get("Content-Security-Policy"),
+        cached: Boolean(await caches.match("/api/admin/teacher-usage")) };
+    });
+    assert.ok([401, 404].includes(privateResult.status));
+    assert.match(privateResult.control, /no-store/);
+    assert.equal(privateResult.cached, false);
+    assert.match(privateResult.policy, /default-src 'none'/);
+    await page.getByLabel("Subject and topic").waitFor();
+    await page.waitForFunction(async () => {
+      const cache = await caches.open("mpsc-free-mock-v14");
+      return Boolean(await cache.match("/study-room") && await cache.match("/study-room/lesson-data"));
+    });
+    await context.setOffline(true);
+    await page.reload();
+    const room = page.getByRole("region", { name: "Reviewed classroom lessons" });
+    await room.getByRole("heading", { name: "Rights and constitutional remedies" }).waitFor();
+    await room.getByLabel("Teaching mode").selectOption("revision");
+    await room.getByRole("list").waitFor();
+    await room.getByLabel("Teaching mode").selectOption("questions");
+    await room.getByLabel("Ask Zorami a question").fill("Article 14");
+    await room.getByRole("button", { name: "Find a reviewed lesson" }).click();
+    await room.getByRole("status").getByText(/Related lesson:/).waitFor();
+    await room.getByRole("button", { name: "Try the related quiz" }).click();
+    await room.getByRole("radio", { name: "Every person" }).check();
+    await room.getByRole("button", { name: "Check answer" }).click();
+    await room.getByRole("status").getByText(/Correct/).waitFor();
+    await room.getByLabel("Teaching mode").selectOption("questions");
+    await room.getByLabel("Search subject").selectOption("ICT");
+    await room.getByLabel("Ask Zorami a question").fill("volatile memory");
+    await room.getByRole("button", { name: "Find a reviewed lesson" }).click();
+    await room.getByRole("status").getByText(/Related lesson: Volatile memory and persistent storage/).waitFor();
+    await room.getByText(/ordinary working RAM/).waitFor();
+    await room.getByRole("button", { name: "Read the full lesson" }).click();
+    assert.equal(await room.getByLabel("Teaching mode").inputValue(), "explain");
+    await room.getByRole("heading", { name: "Volatile memory and persistent storage" }).waitFor();
+    await room.getByLabel("Teaching mode").selectOption("questions");
+    await room.getByLabel("Search subject").selectOption("Biology");
+    await room.getByLabel("Ask Zorami a question").fill("cell organization and protein transport");
+    await room.getByRole("button", { name: "Find a reviewed lesson" }).click();
+    await room.getByRole("status").getByText(/Related lesson: Cell organization and protein transport/).waitFor();
+    await room.getByRole("button", { name: "Read the full lesson" }).click();
+    await room.getByLabel("Teaching mode").selectOption("revision");
+    await room.getByText(/Secretory route/).waitFor();
+    await room.getByRole("link", { name: /Read the written companion/ }).waitFor();
+    await room.getByLabel("Teaching mode").selectOption("questions");
+    await room.getByLabel("Ask Zorami a question").fill("Mendelian test crosses conditional probability");
+    await room.getByRole("button", { name: "Find a reviewed lesson" }).click();
+    await room.getByRole("status").getByText(/Related lesson: Mendelian test crosses and conditional probability/).waitFor();
+    await room.getByRole("button", { name: "Read the full lesson" }).click();
+    await room.getByLabel("Teaching mode").selectOption("revision");
+    await room.getByText("A test cross uses a homozygous recessive partner.").waitFor();
+    await room.getByLabel("Teaching mode").selectOption("questions");
+    await room.getByLabel("Ask Zorami a question").fill("enzyme activity substrate saturation");
+    await room.getByRole("button", { name: "Find a reviewed lesson" }).click();
+    await room.getByRole("status").getByText(/Related lesson: Enzyme activity and substrate saturation/).waitFor();
+    await room.getByRole("button", { name: "Read the full lesson" }).click();
+    await room.getByLabel("Teaching mode").selectOption("revision");
+    await room.getByText("Vary one factor at a time.").waitFor();
+    for (const [query, title, revision] of [
+      ["photosynthesis limiting factors net gas exchange", "Photosynthesis: limiting factors and net gas exchange", "Net uptake is zero at the light compensation point."],
+      ["nephron transport filtration reabsorption secretion", "Nephron transport: filtration, reabsorption and secretion", "Filtration: glomerular blood to Bowman’s space."],
+      ["double fertilization seed tissue ploidy", "Double fertilization and seed tissue ploidy", "Syngamy forms the zygote. Triple fusion forms the primary endosperm nucleus."],
+      ["ecosystem productivity trophic transfer", "Ecosystem productivity and trophic transfer", "NPP = GPP − producer respiration."],
+      ["plant diversity vascular tissue spores seeds", "Plant diversity: vascular tissue, spores and seeds", "Fern: vascular tissue; spores, no seeds."],
+      ["leaf cross sections tissues gas exchange", "Leaf cross sections: tissues and gas exchange", "Guard cells regulate stomatal aperture."],
+      ["immune memory active passive immunity", "Immune memory and active versus passive immunity", "Active immunity: recipient response and potential memory."],
+      ["placentation ovary sections", "Placentation in ovary sections", "Marginal: ovules attach along one margin."],
+      ["chemical synapse trace signal", "Chemical synapse: trace the signal", "Calcium entry triggers vesicle fusion at the terminal."],
+      ["vascular tissue patterns roots stems", "Vascular tissue patterns in roots and stems", "Use position relative to the whole organ centre."],
+    ]) {
+      await room.getByLabel("Teaching mode").selectOption("questions");
+      await room.getByLabel("Ask Zorami a question").fill(query);
+      await room.getByRole("button", { name: "Find a reviewed lesson" }).click();
+      await room.getByRole("status").getByText("Related lesson: " + title).waitFor();
+      await room.getByRole("button", { name: "Read the full lesson" }).click();
+      await room.getByLabel("Teaching mode").selectOption("revision");
+      await room.getByText(revision, { exact: true }).waitFor();
+    }
+    assert.equal(classroomRequests, 0);
+    await context.setOffline(false);
+    await room.getByLabel("Teaching mode").selectOption("explain");
+    await room.getByLabel("Subject and topic").selectOption({ label: "Physics · Net force and acceleration" });
+    await room.getByRole("button", { name: "Open related recording" }).click();
+    const companion = room.getByLabel("Related class narration");
+    await companion.evaluate(item => item.load());
+    await page.waitForFunction(() => Array.from(document.querySelectorAll("audio")).some(item =>
+      item.getAttribute("aria-label") === "Related class narration" && item.readyState >= 1));
+    const previousViewport = page.viewportSize();
+    await page.setViewportSize({ width: 360, height: 800 });
+    await page.goto(base + "/neet/classes/cell-unit-life/notes");
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+    const cellDiagram = page.getByRole("img", { name: /rough ER.*Golgi/ });
+    await cellDiagram.scrollIntoViewIfNeeded();
+    await page.waitForFunction(() => document.querySelector("figure img")?.naturalWidth > 0);
+    await page.getByRole("radio", { name: "12", exact: true }).check();
+    assert.match(await page.getByRole("region", { name: "Lesson practice" }).textContent(), /1 \/ 4 answered · 1 correct/);
+    await page.reload();
+    await page.getByRole("radio", { name: "12", exact: true, checked: true }).waitFor();
+    if (screenshots) {
+      await cellDiagram.scrollIntoViewIfNeeded();
+      await page.screenshot({ path: path.join(screenshots, "neet-cell-notes-360.png") });
+    }
+    for (const [slug, answer, count] of [["cell-cycle-division", "12", 4], ["genetics-evolution", "2/3", 4], ["biomolecules", "Activation barrier", 4], ["plant-physiology", "Net carbon dioxide exchange is zero", 3], ["human-physiology", "Tubular reabsorption", 3], ["reproduction", "Zygote", 3], ["ecology", "Phytoplankton may turn over rapidly", 3], ["diversity-living-world", "True vascular tissue", 3], ["structural-organisation", "Large intercellular air spaces", 3], ["human-welfare", "Antigen-specific memory cells", 3], ["flower-tissue-diagrams", "A central attachment axis with radiating partitions", 3], ["nephron-neuron-diagrams", "Transmitter molecules", 3], ["root-stem-vascular-diagrams", "Xylem and phloem alternate on different radii", 3]]) {
+      await page.goto(base + "/neet/classes/written/" + slug);
+      assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+      const diagram = page.locator("figure img");
+      await diagram.scrollIntoViewIfNeeded();
+      await page.waitForFunction(() => document.querySelector("figure img")?.naturalWidth > 0);
+      const fileEvent = page.waitForEvent("download");
+      await page.getByRole("button", { name: "Download notes" }).click();
+      const file = await fileEvent;
+      assert.equal(file.suggestedFilename(), "neet-" + slug + "-notes.txt");
+      assert.match(await readFile(await file.path(), "utf8"), /Quick revision[\s\S]*ANSWER KEY/);
+      await page.getByRole("region", { name: "Lesson practice" }).locator("fieldset").first().getByRole("radio", { name: answer, exact: true }).check();
+      assert.ok((await page.getByRole("region", { name: "Lesson practice" }).textContent()).includes(`1 / ${count} answered · 1 correct`));
+      if (screenshots) {
+        await diagram.scrollIntoViewIfNeeded();
+        await page.screenshot({ path: path.join(screenshots, "neet-written-" + slug + "-360.png") });
+      }
+    }
+    if (previousViewport) await page.setViewportSize(previousViewport);
+    await page.goto(base + "/jee/classes");
+    const subjectDownload = page.waitForEvent("download");
+    await page.getByRole("link", { name: "Download JEE Physics transcripts" }).click();
+    const subjectFile = await subjectDownload;
+    assert.equal(subjectFile.suggestedFilename(), "jee-physics-transcripts.txt");
+    assert.match(await readFile(await subjectFile.path(), "utf8"), /JEE Physics recorded class transcripts/);
+    await page.goto(base + "/jee/classes/units");
+    await page.waitForFunction(() => navigator.serviceWorker.controller);
+    const presentation = page.getByRole("region", { name: "Tochhawng lecture classroom" });
+    await presentation.getByRole("button", { name: "Show Zorami’s classroom" }).click();
+    const presentationBoard = presentation.getByRole("region", { name: "Lecture blackboard" });
+    await presentationBoard.getByText("Tochhawng Zorami · Reviewed course material").waitFor();
+    const onlineChapters = page.getByRole("complementary", { name: "Class chapters" });
+    const oldTopic = await presentationBoard.locator("p").first().textContent();
+    await page.waitForFunction(() => document.querySelector("audio")?.readyState >= 1);
+    await onlineChapters.getByRole("button").nth(2).click();
+    await presentationBoard.locator("p").first().filter({ hasNotText: oldTopic }).waitFor();
+    if (screenshots) await presentationBoard.screenshot({ path: path.join(screenshots, "lecture-blackboard.png") });
+    const chapterDownload = page.waitForEvent("download");
+    await page.getByRole("button", { name: "Download current chapter notes" }).click();
+    const chapterFile = await chapterDownload;
+    assert.equal(chapterFile.suggestedFilename(), "jee-units-chapter-3-notes.txt");
+    const chapterText = await readFile(await chapterFile.path(), "utf8");
+    assert.match(chapterText, /3\. Convert without guessing/);
+    assert.doesNotMatch(chapterText, /^1\. /m);
+    await page.evaluate(() => {
+      const put = Cache.prototype.put;
+      Cache.prototype.put = function (request, response) {
+        if (typeof request === "string" && request.endsWith(".mp3")) {
+          return Promise.reject(new DOMException("Storage quota exceeded.", "QuotaExceededError"));
+        }
+        return put.call(this, request, response);
+      };
+    });
+    const download = page.getByRole("region", { name: "Offline lesson download" });
+    await download.getByRole("button", { name: "Save lesson for offline use" }).click();
+    await download.getByRole("status").getByText("Storage quota exceeded.").waitFor();
+    const partialPacks = await page.evaluate(async () =>
+      (await caches.keys()).filter(name => name.startsWith("mpsc-free-mock-lesson-v1-")));
+    assert.deepEqual(partialPacks, []);
+    const legacyLessonCache = "mpsc-free-mock-lesson-v1-" + encodeURIComponent("/jee/classes/units");
+    await page.evaluate(async name => {
+      const cache = await caches.open(name);
+      const track = "/lectures/units/english-marin-v2.vtt";
+      await cache.put(track, await fetch(track));
+      await cache.put("/lectures/__offline_ready__", new Response("saved"));
+    }, legacyLessonCache);
+    await page.reload();
+    await page.getByRole("button", { name: "Save lesson for offline use" }).click();
+    await page.getByRole("status").getByText("Lesson saved on this device.").waitFor({ timeout: 90_000 });
+    assert.equal(await page.evaluate(async name => {
+      if (await caches.has(name)) return false;
+      const cache = await caches.open(name + "-captions-v3");
+      return Boolean(await cache.match("/lectures/units/english-marin-v3.vtt"))
+        && !await cache.match("/lectures/units/english-marin-v2.vtt");
+    }, legacyLessonCache), true);
+    const audio = page.getByLabel("Class narration");
+    await page.waitForFunction(() => document.querySelector("audio")?.readyState >= 1);
+    const audioPath = new URL(await audio.getAttribute("src"), base).pathname;
+    await page.evaluate(() => caches.delete("mpsc-free-mock-static"));
+    await context.setOffline(true);
+    await page.reload();
+    await page.getByRole("button", { name: "Remove offline lesson" }).waitFor();
+    await page.waitForFunction(() => document.querySelector("audio")?.readyState >= 1);
+    const range = await page.evaluate(async url => {
+      const response = await fetch(url, { headers: { range: "bytes=0-15" } });
+      return { status: response.status, length: (await response.arrayBuffer()).byteLength };
+    }, audioPath);
+    assert.deepEqual(range, { status: 206, length: 16 });
+    const chapters = page.getByRole("complementary", { name: "Class chapters" });
+    await chapters.getByRole("button").nth(2).click();
+    await page.waitForFunction(() => document.querySelector("audio")?.currentTime > 10);
+    await audio.evaluate(async item => { await item.play(); });
+    await page.waitForFunction(() => document.querySelector("audio")?.readyState >= 3);
+    await page.getByLabel("English subtitles", { exact: true }).filter({ visible: true }).first().waitFor();
+    await page.waitForFunction(() => document.querySelector('[class*="caption"][aria-label="English subtitles"]')?.textContent?.trim() !== "English subtitles");
+    await audio.evaluate(item => item.pause());
+    await page.getByRole("button", { name: "Remove offline lesson" }).click();
+    await page.getByRole("status").getByText(/Offline lesson removed/).waitFor();
+    await context.setOffline(false);
+    await page.goto(base + "/jee/offline-learning");
+    await page.waitForFunction(() => navigator.serviceWorker.controller);
+    const chapterPack = page.getByRole("article").filter({ hasText: /Gravitation · Chapter 1 with narration/ });
+    await chapterPack.getByRole("button", { name: "Save offline pack" }).click();
+    await chapterPack.getByText("Offline pack saved. Open the pack to study.").waitFor();
+    const chapterUrl = await chapterPack.getByRole("link").getAttribute("href");
+    const packName = "mpsc-free-mock-lesson-v1-pack-gravity-chapter-1-v1";
+    await context.setOffline(true);
+    const clipRange = await page.evaluate(async url => {
+      const result = await fetch(url, { headers: { Range: "bytes=0-15" } });
+      return [result.status, (await result.arrayBuffer()).byteLength];
+    }, "/lectures/gravity/chapter-01.mp3");
+    assert.deepEqual(clipRange, [206, 16]);
+    const vtt = await page.evaluate(async url => (await fetch(url + "/captions")).text(), chapterUrl);
+    assert.match(vtt, /^WEBVTT\n\n00:00:00.000 -->/);
+    const cachedPage = await page.goto(base + chapterUrl);
+    assert.match(cachedPage.headers()["content-security-policy"], /default-src 'none'/);
+    await page.getByRole("heading", { name: "One force law, from apples to planets" }).waitFor();
+    const recording = page.getByLabel("Narration with captions");
+    assert.equal(await recording.getAttribute("src"), "/lectures/gravity/chapter-01.mp3");
+    await recording.evaluate(item => item.load());
+    await page.waitForFunction(() => document.querySelector("video")?.readyState >= 1);
+    const duration = await recording.evaluate(item => item.duration);
+    assert.ok(Math.abs(duration - 75) < 0.25, `Chapter clip duration ${duration} differs from cues`);
+    await recording.evaluate(item => { item.currentTime = 30; });
+    await page.waitForFunction(() => document.querySelector("video")?.currentTime >= 30);
+    await page.getByText("Read the transcript and notes", { exact: true }).click();
+    await recording.evaluate(async item => { await item.play(); });
+    await page.waitForFunction(() => { const item = document.querySelector("video"); return item && item.currentTime > 30 && !item.seeking; });
+    await page.waitForFunction(() => (document.querySelector("video")?.textTracks[0]?.cues?.length ?? 0) > 0);
+    await recording.evaluate(item => item.pause());
+    if (screenshots) await page.screenshot({ path: path.join(screenshots, "offline-gravity-pack.png") });
+    await context.setOffline(false);
+    await page.goto(base + "/jee/offline-learning");
+    const otherTab = await context.newPage();
+    try {
+      await otherTab.goto(base + "/jee/offline-learning");
+      const otherCard = otherTab.getByRole("article").filter({ hasText: /Gravitation · Chapter 1 with narration/ });
+      await otherCard.getByRole("button", { name: "Remove offline pack" }).waitFor();
+      await chapterPack.getByRole("button", { name: "Remove offline pack" }).click();
+      await chapterPack.getByText("Offline pack removed.").waitFor();
+      await otherTab.evaluate(() => window.dispatchEvent(new Event("focus")));
+      await otherCard.getByRole("button", { name: "Save offline pack" }).waitFor();
+    } finally {
+      await otherTab.close();
+    }
+    await chapterPack.getByText("Offline pack removed.").waitFor();
+    assert.equal(await page.evaluate(name => caches.has(name), packName), false);
+    const gravityTiming = JSON.parse(await readFile(new URL("../app/data/jee-gravity-timings.json", import.meta.url), "utf8"));
+    for (const [i, timing] of gravityTiming.chapters.entries()) {
+      await page.goto(base + "/jee/offline-packs/gravity-chapter-" + (i + 1) + "-v1");
+      const media = page.getByLabel("Narration with captions");
+      await media.evaluate(item => item.load());
+      await page.waitForFunction(() => document.querySelector("video")?.readyState >= 1);
+      const actual = await media.evaluate(item => item.duration);
+      assert.ok(Math.abs(actual - (timing.end - timing.start)) < 0.25,
+        `Gravity chapter ${i + 1} has ${actual}s audio and ${timing.end - timing.start}s cues`);
+    }
+    await page.goto(base + "/jee/offline-learning");
+
+    const retiredId = "gravity-chapter-1-v999";
+    await page.evaluate(async id => {
+      const cache = await caches.open("mpsc-free-mock-lesson-v1-pack-" + id);
+      const savedPublicPage = await fetch("/jee/offline-packs/gravity-chapter-1-v1");
+      await cache.put("/jee/offline-packs/" + id, savedPublicPage);
+      await cache.put("/lectures/__offline_ready__", new Response("saved"));
+    }, retiredId);
+    await page.reload();
+    const retiredPage = await context.newPage();
+    try {
+      const restored = await retiredPage.goto(base + "/jee/offline-packs/" + retiredId);
+      assert.equal(restored.status(), 200);
+      await retiredPage.getByLabel("Narration with captions").waitFor();
+    } finally {
+      await retiredPage.close();
+    }
+    await page.getByRole("link", { name: "Open JEE Physics recorded lessons", exact: true }).waitFor();
+    assert.equal(await page.getByRole("link", { name: "Open JEE Physics recorded lessons", exact: true }).getAttribute("href"), "/jee/offline-packs/jee-physics-v2");
+    await page.getByRole("button", { name: "Remove " + retiredId }).click();
+    await page.getByText("Previous pack removed.").waitFor();
+    await page.getByRole("heading", { name: /NEET Biology recorded lessons/ }).first().waitFor();
+    await page.evaluate(async () => {
+      const cache = await caches.open("mpsc-free-mock-lesson-v1-pack-newtons-laws-chapter-1-v1");
+      await cache.put("/jee/offline-packs/newtons-laws-chapter-1-v1", new Response("Incomplete fixture"));
+    });
+    await page.reload();
+    const newton = page.getByRole("article").filter({ hasText: /Newton’s laws · Chapter 1 with narration/ });
+    await newton.getByText(/Previous download was interrupted/).waitFor();
+    await newton.getByRole("button", { name: "Save offline pack" }).click();
+    await newton.getByText("Offline pack saved. Open the pack to study.").waitFor();
+    const newtonUrl = await newton.getByRole("link").getAttribute("href");
+    await context.setOffline(true);
+    await page.goto(base + newtonUrl);
+    await page.getByLabel("Narration with captions").evaluate(item => item.load());
+    await page.waitForFunction(() => document.querySelector("video")?.readyState >= 1);
+    await context.setOffline(false);
+    await page.goto(base + "/jee/offline-learning");
+    await newton.getByRole("button", { name: "Remove offline pack" }).click();
+    await newton.getByText("Offline pack removed.").waitFor();
+
+    const subjectPack = page.getByRole("article").filter({ has: page.getByRole("heading", { name: "JEE Mathematics recorded lessons" }) });
+    await subjectPack.getByRole("button", { name: "Save offline pack" }).click();
+    await subjectPack.getByText("Offline pack saved. Open the pack to study.").waitFor({ timeout: 180_000 });
+    const subjectUrl = await subjectPack.getByRole("link").getAttribute("href");
+    await context.setOffline(true);
+    await page.goto(base + subjectUrl);
+    await page.getByRole("heading", { name: "JEE Mathematics recorded lessons" }).waitFor();
+    assert.ok(await page.locator("video").count() > 10);
+    await page.locator("video").first().evaluate(item => item.load());
+    await page.waitForFunction(() => document.querySelector("video")?.readyState >= 1);
+    await context.setOffline(false);
+    await page.goto(base + "/jee/offline-learning");
+    await subjectPack.getByRole("button", { name: "Remove offline pack" }).click();
+    await subjectPack.getByText("Offline pack removed.").waitFor();
+    await page.setViewportSize({ width: 360, height: 800 });
+    await page.goto(base + "/jee/mathematics-timed?exam=neet");
+    await page.getByRole("heading", { name: "JEE Mathematics timed practice" }).waitFor();
+    await page.getByRole("button", { name: /Start 10-question JEE Mathematics practice/ }).click();
+    await page.getByRole("timer").waitFor();
+    const firstQuestion = page.getByRole("region", { name: "Question 1", exact: true });
+    await firstQuestion.getByText(/Mathematics ·/).waitFor();
+    await firstQuestion.getByRole("group", { name: "Answer options" }).getByRole("button").first().click();
+    await page.getByRole("button", { name: /Mark for review/ }).click();
+    const secondQuestion = page.getByRole("region", { name: "Question 2", exact: true });
+    await secondQuestion.waitFor();
+    await page.reload();
+    await secondQuestion.waitFor();
+    await page.getByRole("button", { name: "Previous", exact: true }).click();
+    await firstQuestion.getByRole("button", { pressed: true }).waitFor();
+    await firstQuestion.getByRole("button", { name: /Unmark/ }).waitFor();
+    assert.equal(await page.evaluate(() => localStorage.getItem("exam-simulator:attempt:v1")), null);
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+    if (screenshots) await page.screenshot({ path: path.join(screenshots, "jee-mathematics-timed-360.png") });
+    await page.getByRole("button", { name: "Submit", exact: true }).click();
+    await page.getByRole("button", { name: "Submit exam" }).click();
+    await page.getByRole("heading", { name: /You scored [01] out of 10/ }).waitFor();
+    await page.getByRole("heading", { name: "Review answers" }).waitFor();
+    await page.getByRole("button", { name: "All (10)", exact: true }).click();
+    await page.getByText(/Correct answer:/).first().waitFor();
+    await page.evaluate(() => {
+      const key = "jee-math:attempt:v1";
+      const stored = JSON.parse(localStorage.getItem(key));
+      localStorage.setItem(key, JSON.stringify({ ...stored, current: 0.5 }));
+      localStorage.setItem("mpsc-theme", "light");
+    });
+    await page.reload();
+    await page.getByRole("heading", { name: "JEE Mathematics timed practice" }).waitFor();
+    await page.getByRole("button", { name: /Start 10-question JEE Mathematics practice/ }).focus();
+    assert.equal(await page.locator("html").getAttribute("data-theme"), "light");
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+    await page.clock.install();
+    await page.keyboard.press("Enter");
+    await page.getByRole("timer").waitFor();
+    await page.clock.fastForward(20 * 60_000 + 2_000);
+    await page.getByRole("heading", { name: "You scored 0 out of 10" }).waitFor();
+    assert.equal(await page.evaluate(() => {
+      const saved = JSON.parse(localStorage.getItem("jee-math:attempt:v1"));
+      return saved.submittedAt === saved.deadline;
+    }), true);
+  } finally {
+    await context.close();
+  }
+
+  const mpsc = await browser.newContext({ viewport: { width: 360, height: 800 }, reducedMotion: "reduce", hasTouch: true, isMobile: true });
+  try {
+    const page = await mpsc.newPage();
+    await page.goto(base + "/mock-test");
+    await page.waitForFunction(() => Boolean(navigator.serviceWorker.controller));
+    await page.reload();
+    await page.locator(".practice-option").first().waitFor();
+    await page.waitForFunction(async () => Boolean(await caches.match("/question-bank/mpsc")));
+    const bank = await page.evaluate(async () => (await (await caches.match("/question-bank/mpsc")).json()).questions);
+    assert.ok(bank.length > 1_000);
+    const categories = [...new Set(bank.map(question => question.category))];
+    const choices = page.getByRole("region", { name: "Choose a MPSC practice topic" });
+    for (const category of categories) {
+      const option = choices.getByRole("button", { name: category, exact: true });
+      await option.press("Enter");
+      assert.equal(await option.getAttribute("aria-pressed"), "true");
+    }
+    await page.locator(".practice-option").first().tap();
+    await page.locator(".practice-result").waitFor();
+    const responseKey = "mpsc.practice.responses.v1";
+    await page.waitForFunction(key => Object.keys(JSON.parse(localStorage.getItem(key) ?? "{}")).length > 0, responseKey);
+    const responses = await page.evaluate(key => localStorage.getItem(key), responseKey);
+    await page.goto(base + "/mizo");
+    await page.locator(".practice-option").first().waitFor();
+    await page.waitForFunction(async () => Boolean(await caches.match("/question-bank/mpsc-mizo")));
+    await mpsc.setOffline(true);
+    await page.reload();
+    await page.locator(".practice-option").first().waitFor();
+    await page.goto(base + "/mock-test");
+    await page.locator(".practice-option").first().waitFor();
+    assert.equal(await page.evaluate(key => localStorage.getItem(key), responseKey), responses);
+    await mpsc.setOffline(false);
+
+    await page.goto(base + "/exam-simulator?exam=mpsc");
+    await page.getByRole("button", { name: /Start 25-question MPSC/ }).press("Enter");
+    await page.getByRole("timer").waitFor();
+    await page.getByRole("group", { name: "Answer options" }).getByRole("button").first().tap();
+    await page.getByRole("button", { name: /Mark for review/ }).press("Enter");
+    const second = page.getByRole("region", { name: "Question 2", exact: true });
+    await second.waitFor();
+    await mpsc.setOffline(true);
+    await page.reload();
+    await second.waitFor();
+    await page.getByRole("button", { name: "Previous", exact: true }).press("Enter");
+    await page.getByRole("button", { name: /Unmark/ }).waitFor();
+    await page.getByRole("group", { name: "Answer options" }).getByRole("button", { pressed: true }).waitFor();
+    await page.getByRole("button", { name: "Submit", exact: true }).press("Enter");
+    await page.getByRole("button", { name: "Submit exam", exact: true }).press("Enter");
+    await page.getByRole("heading", { name: /You scored .* out of 25/ }).waitFor();
+    const saved = await page.evaluate(() => ({
+      attempt: JSON.parse(localStorage.getItem("exam-simulator:attempt:v1")),
+      history: JSON.parse(localStorage.getItem("exam-simulator:history:v1")),
+      math: localStorage.getItem("jee-math:attempt:v1"),
+    }));
+    assert.equal(saved.attempt.examId, "mpsc");
+    assert.equal(saved.history[0].examId, "mpsc");
+    assert.equal(saved.math, null);
+    assert.equal(await page.evaluate(key => localStorage.getItem(key), responseKey), responses);
+    console.log("MPSC regression passed: " + bank.length + " bank items, " + categories.length + " categories, two offline practice routes, saved answer and simulator review restoration.");
+  } finally {
+    await mpsc.close();
+  }
+
+  console.log("Genesis checks passed: three viewport sizes, both themes, classroom offline reload, synchronized lecture blackboard, offline lecture reload, partial audio, playback, seek, captions, individual/chapter/subject removal, and twelve lab activities.");
+} finally {
+  await browser.close();
+}
