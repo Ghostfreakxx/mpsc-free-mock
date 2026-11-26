@@ -163,3 +163,11 @@ Added focused plant classification and dorsiventral leaf companions, checked the
 The default Windows Turbopack build completed all 510 pages. The documented three-worker Webpack command remains available and build configuration is unchanged. Cold 360 px Chromium measurements on the local production build matched the previous sample to the nearest KiB for the study room (152), laboratory (189), Mathematics setup (179) and Ecology notes (152). Opening 3D added 272 KiB in the room and 244 KiB in the lab. The uncompressed classroom lesson JSON grew from 89,095 to 93,752 bytes. The Mathematics question bank fetched when starting a paper.
 
 Mobile checks used desktop Chromium at 360 px in both themes. Real Android and screen-reader interaction remain untested. [Plant diversity screenshot](./genesis-screenshots/neet-diversity-living-world-dark-360.png) · [Leaf anatomy screenshot](./genesis-screenshots/neet-structural-organisation-light-360.png)
+
+## Pre-release validation batch
+
+The default Windows Turbopack build completed 512 pages. The three-worker Webpack fallback and build configuration remain in place. Cold 360 px Chromium samples matched the previous rounded JavaScript measurements: 152 KiB for the classroom, 189 KiB for the laboratory and 179 KiB for Mathematics setup. Opening 3D added 272 KiB and 244 KiB for the room and the lab respectively. The classroom lesson response grew to 99,079 uncompressed bytes from 93,752. The Mathematics question bank requested only after starting a paper.
+
+Chromium checked reduced-motion mode, both themes, visible keyboard focus, order from library link to recording to download, Enter activation of downloads, 17 px lesson body text, and diagram rendering at 360 px. Genesis passed the offline classroom, saved media, and cache isolation fixtures using credentials-free local production. No physical Android device or screen-reader setup was available for verification.
+
+[Integration and offline release evidence](./production-readiness.md) · [Immunity screenshot](./genesis-screenshots/neet-human-welfare-dark-360.png) · [Placentation screenshot](./genesis-screenshots/neet-flower-tissue-diagrams-light-360.png)

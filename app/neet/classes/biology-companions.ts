@@ -765,6 +765,162 @@ export const biologyCompanions = [
         explanation: "An open pore connects the outside atmosphere with internal air spaces, from which carbon dioxide diffuses toward cells."
       }
     ]
+  },
+  {
+    id: "human-welfare",
+    unit: 8,
+    title: "Immune memory and active versus passive immunity",
+    reference: {
+      title: "OpenStax Biology 2e: Adaptive Immune Response",
+      url: "https://openstax.org/books/biology-2e/pages/42-2-adaptive-immune-response"
+    },
+    lab: null,
+    alt: "Active immunity: antigen exposure leads to a recipient response and memory. Passive immunity: transferred antibodies provide temporary protection without establishing recipient memory by themselves.",
+    sections: [
+      {
+        title: "Identify who makes the antibodies",
+        paragraphs: [
+          "In active immunity, the recipient’s immune system responds to antigen. Some responding cells become memory cells. In passive immunity, the recipient receives already formed antibodies. The transferred antibodies can provide temporary protection without creating immune memory by themselves."
+        ]
+      },
+      {
+        title: "Compare primary and secondary responses",
+        paragraphs: [
+          "A later encounter with the same antigen can produce a faster antibody response because antigen-specific memory cells are already present. Timing and magnitude depend on the antigen and previous response. An antibody measurement alone does not establish how that antibody was acquired."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Active immunity: recipient response and potential memory.",
+          "Passive immunity: transferred antibodies with temporary protection.",
+          "A faster response to the same antigen is consistent with immune memory."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "Person A has detectable antibodies shortly after receiving preformed antibodies. Person B produces antibodies and memory cells after antigen exposure. Classify each response.",
+        steps: [
+          "Determine the source of the antibody in each case.",
+          "Check whether the person generated the response and memory."
+        ],
+        answer: "A illustrates passive immunity, and B illustrates active immunity."
+      }
+    ],
+    quiz: [
+      {
+        question: "What explains a faster antibody response after a repeat encounter with the same antigen?",
+        options: [
+          "Antigen-specific memory cells",
+          "All antibodies were supplied by a donor",
+          "The antigen no longer has recognizable features",
+          "The skin barrier has disappeared"
+        ],
+        answer: 0,
+        explanation: "Existing antigen-specific memory cells can respond faster than the initial response."
+      },
+      {
+        question: "Which is an example of passive immunity?",
+        options: [
+          "A recipient makes antibodies after immunization",
+          "Maternal antibodies cross to the fetus",
+          "A previously activated B-cell clone expands",
+          "A recipient develops memory after infection"
+        ],
+        answer: 1,
+        explanation: "The fetus receives maternal antibodies already made by someone else."
+      },
+      {
+        question: "A recipient has detectable antibody very soon after a transfer. Which conclusion is supported by this result alone?",
+        options: [
+          "Long-term memory is guaranteed",
+          "The antibodies may have come from the transfer",
+          "The same result proves the recipient made them",
+          "All future exposure is prevented"
+        ],
+        answer: 1,
+        explanation: "A transfer can account for early circulating antibody. Detecting it does not by itself demonstrate a new recipient response."
+      }
+    ]
+  },
+  {
+    id: "flower-tissue-diagrams",
+    unit: 2,
+    title: "Placentation in ovary sections",
+    reference: {
+      title: "NCERT Biology: Morphology of Flowering Plants",
+      url: "https://ncert.nic.in/textbook/pdf/kebo105.pdf"
+    },
+    lab: null,
+    alt: "Three ovary sections compare ovule positions: marginal along one margin, axile at the central junction of partitions, and parietal on the inner wall.",
+    sections: [
+      {
+        title: "Find the attachment point",
+        paragraphs: [
+          "Placentation describes how ovules attach within an ovary. First identify the ovary boundary and check whether the drawing is longitudinal or transverse. Position and attachment matter more than overall outline."
+        ]
+      },
+      {
+        title: "Use partitions as evidence",
+        paragraphs: [
+          "In marginal placentation, ovules attach along one margin. In the typical axile cross section, partitions meet at a central axis bearing ovules. In the illustrated parietal arrangement, ovules attach to the inner ovary wall. Check attachment rather than assuming every partition proves an axile pattern."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Marginal: ovules attach along one margin.",
+          "Axile: ovules attach to a central axis where partitions meet.",
+          "Parietal: ovules attach at the wall."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "Unknown A has ovules on a centre where septa meet. Unknown B has ovules attached to the inner wall. Classify both.",
+        steps: [
+          "Trace ovule attachment rather than comparing fruit outlines.",
+          "Look for a central axis in A and peripheral attachment in B."
+        ],
+        answer: "A fits axile and B fits parietal in this model."
+      }
+    ],
+    quiz: [
+      {
+        question: "What feature best identifies the illustrated axile arrangement?",
+        options: [
+          "A central attachment axis with radiating partitions",
+          "An elongated ovary outline",
+          "Ovules attached only to the inner wall",
+          "A pore in an epidermis"
+        ],
+        answer: 0,
+        explanation: "Axile placentation has central attachment associated with partitions in this model."
+      },
+      {
+        question: "A longitudinal section shows ovules lining one margin. What is the best interpretation?",
+        options: [
+          "Axile",
+          "Marginal",
+          "Parietal in a transverse model",
+          "The image is a stem"
+        ],
+        answer: 1,
+        explanation: "A row along one margin fits marginal placentation."
+      },
+      {
+        question: "Why should the section plane be read before classifying a diagram?",
+        options: [
+          "It helps explain shape differences unrelated to attachment",
+          "It changes the ovules into seeds",
+          "It determines the species by itself",
+          "It makes the wall irrelevant"
+        ],
+        answer: 0,
+        explanation: "Longitudinal and transverse sections can have different outlines. The attachment remains the key criterion."
+      }
+    ]
   }
 ];
 

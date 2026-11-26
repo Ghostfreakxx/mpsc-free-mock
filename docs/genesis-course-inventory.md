@@ -5,7 +5,7 @@ Run `node scripts/inventory-courses.mjs` for the per-recording listing. Add `--h
 | Published catalog | Recorded lessons | Written lessons | Checks performed |
 | --- | ---: | ---: | --- |
 | JEE Physics, Chemistry and Mathematics | 120 | 57 | Catalog references, chapter narration scripts, cue metadata, quizzes, nonempty audio and WebVTT |
-| NEET dedicated | 34 | 10 | Same recorded lesson checks |
+| NEET dedicated | 34 | 12 | Same recorded lesson checks |
 | NEET shared Physics and Chemistry | 106 mappings | — | Every mapping resolves to an existing JEE recording |
 
 The checked JEE syllabus inventory has 20 Physics, 20 Chemistry and 14 Mathematics units, with 21, 22 and 14 written lessons respectively. The inventory maps a recording to each of the 54 JEE units. All 57 written lessons have a local figure and worked examples. A lesson count alone does not measure subheading coverage. Retain the repository's [NEET Biology coverage](./neet-class-coverage-2026.md), [shared course mapping](./neet-physics-chemistry-mapping-2026.md), and [subheading audit](./neet-subheading-review-2026.md) when marking syllabus completion.
@@ -115,3 +115,7 @@ Decoded the first 30 seconds of Reproduction chapter 8 and Ecology chapter 20 an
 - B05 Structural Organisation chapter 13 supports leaf anatomy and function. The companion labels a typical dorsiventral section, including mesophyll and a stomatal pore. It practises orientation and diffusion, with other leaf types and organs in the broader course. [OpenStax leaves](https://openstax.org/books/biology-2e/pages/30-4-leaves)
 - Rechecked prior calculations. In the typical diploid angiosperm with 2n = 18, syngamy gives 18, triple fusion gives 27, and the maternal seed coat stays at 18 chromosomes per nucleus. In the ecology example, GPP less producer respiration gives 1,000 kJ per square metre per year; 12% gives 120 in the same units. Sequential 12% and 15% transfers from 1,000 give 18. The model uses stated rates and efficiencies.
 - Ten dedicated recordings now have focused companions. The remaining syllabus headings and depth are tracked separately.
+
+## Human Welfare and floral diagram companions
+
+B10 chapters 8–12 support basic immunology and the new immune-memory and active/passive immunity companion. Vaccination is treated as an example of active immunity in the source course; the notes focus on antibody origin and evidence for memory. B25 chapters 3–4 support the new placentation comparison, limited to marginal, axile and the illustrated parietal attachment. Twelve of 34 dedicated recordings now have focused companions. These are subtopic-level additions. [OpenStax adaptive immunity](https://openstax.org/books/biology-2e/pages/42-2-adaptive-immune-response) · [IIT Kanpur SATHEE on placentation](https://sathee.iitk.ac.in/ncert-books/neet-ncert-exemplar/ncert_b11_exemplar/morphology_of_flowering_plants/)
