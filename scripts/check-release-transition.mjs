@@ -13,9 +13,31 @@ function localBuild(value) {
 
 const main = localBuild(process.env.RELEASE_MAIN_URL);
 const candidate = localBuild(process.env.RELEASE_CANDIDATE_URL);
-assert.notEqual(main.port, candidate.port);
+const recovery = localBuild(process.env.RELEASE_RECOVERY_URL);
+assert.equal(new Set([main.port, candidate.port, recovery.port]).size, 3);
+const chapter = "/jee/offline-packs/gravity-chapter-1-v1";
+const individual = "/jee/classes/units";
+const standardLesson = "/jee/classes/measurements";
+const clip = "/lectures/gravity/chapter-01.mp3";
+const protectedFiles = new Set([chapter, chapter + "/captions", clip, "/lectures/units/english-marin-v3.vtt"]);
+let blockedFetches = 0;
+let forbidDownload = false;
 let upstream = main;
 const proxy = createServer((incoming, outgoing) => {
+  const path = new URL(incoming.url, "http://127.0.0.1").pathname;
+  if (forbidDownload && protectedFiles.has(path)) {
+    blockedFetches++;
+    outgoing.writeHead(503, { "Cache-Control": "no-store" }).end();
+    return;
+  }
+  if (/^\/jee\/offline-packs\/rollback-fixture-[a-z-]+-v1$/.test(path)) {
+    const headers = { "Content-Type": "text/html" };
+    if (path.endsWith("-private-v1")) headers["Cache-Control"] = "private, no-store";
+    if (path.endsWith("-vary-v1")) headers.Vary = "Authorization";
+    const missing = path.endsWith("-missing-track-v1") ? '<track src="/lectures/fixture/missing.vtt">' : "";
+    outgoing.writeHead(200, headers).end(`<video src="${clip}"><track src="/lectures/units/english-marin-v3.vtt">${missing}</video>`);
+    return;
+  }
   const forward = request({
     hostname: upstream.hostname,
     port: upstream.port,
@@ -37,11 +59,13 @@ try {
   const context = await browser.newContext({ viewport: { width: 360, height: 800 }, reducedMotion: "reduce" });
   const page = await context.newPage();
   const exam = "/exam-simulator?exam=mpsc";
-  const chapter = "/jee/offline-packs/gravity-chapter-1-v1";
   const pack = "mpsc-free-mock-lesson-v1-pack-gravity-chapter-1-v1";
+  const lesson = "mpsc-free-mock-lesson-v1-" + encodeURIComponent(individual) + "-captions-v3";
+  const standardSave = "mpsc-free-mock-lesson-v1-" + encodeURIComponent(standardLesson);
+  const savedNames = [pack, lesson, standardSave];
   const ready = "/lectures/__offline_ready__";
-  const media = "/lectures/gravity/chapter-01.mp3";
-  const hasPack = () => page.evaluate(async ({ pack, ready }) => Boolean(await caches.match(ready, { cacheName: pack })), { pack, ready });
+  const media = clip;
+  const hasSaved = name => page.evaluate(async ({ name, ready }) => Boolean(await caches.match(ready, { cacheName: name })), { name, ready });
   const status = () => page.evaluate(async () => ({
     controller: Boolean(navigator.serviceWorker.controller),
     caches: await caches.keys(),
@@ -112,7 +136,7 @@ try {
     await cache.put(ready, new Response("saved"));
   }, { pack, paths: [chapter, `${chapter}/captions`, media], ready });
   upstream = main;
-  assert.ok(await hasPack());
+  assert.ok(await hasSaved(pack));
 
   async function assertRestored() {
     await page.goto(origin + exam);
@@ -127,9 +151,50 @@ try {
     assert.deepEqual(restored.attempt.responses, original.attempt.responses);
   }
 
+  async function assertPlayback(path, selector) {
+    const response = await page.goto(origin + path);
+    assert.equal(response.status(), 200);
+    if (path === chapter) assert.match(response.headers()["content-security-policy"], /default-src 'none'/);
+    const player = page.locator(selector);
+    await player.waitFor();
+    await player.evaluate(element => { element.muted = true; element.load(); });
+    await page.waitForFunction(selector => document.querySelector(selector)?.readyState >= 1, selector);
+    await player.evaluate(async element => {
+      element.textTracks[0].mode = "hidden";
+      await element.play();
+    });
+    await page.waitForFunction(selector => document.querySelector(selector)?.currentTime > 0.1, selector);
+    await page.waitForFunction(selector => document.querySelector(selector)?.textTracks[0]?.cues?.length > 0, selector);
+    const nearEnd = await player.evaluate(element => {
+      if (!Number.isFinite(element.duration) || element.duration < 30) throw new Error("Incomplete recording");
+      element.currentTime = element.duration - 2;
+      return element.duration - 2;
+    });
+    await page.waitForFunction(({ selector, nearEnd }) => {
+      const player = document.querySelector(selector);
+      return !player?.seeking && player?.currentTime >= nearEnd;
+    }, { selector, nearEnd });
+    await player.evaluate(element => element.pause());
+  }
+
+  const mediaDigests = () => page.evaluate(async names => {
+    const result = {};
+    for (const name of names) {
+      const cache = await caches.open(name);
+      for (const request of await cache.keys()) {
+        if (!/\.mp3$|\.vtt$|\/captions$/.test(request.url)) continue;
+        const response = await cache.match(request);
+        const bytes = await response.arrayBuffer();
+        const hash = await crypto.subtle.digest("SHA-256", bytes);
+        result[request.url] = [bytes.byteLength, Array.from(new Uint8Array(hash))];
+      }
+    }
+    return result;
+  }, savedNames);
+
   await switchBuild(candidate, "mpsc-free-mock-v14", "mpsc-free-mock-v13");
   await assertRestored();
-  assert.ok(await hasPack());
+  assert.ok(await hasSaved(pack));
   await context.setOffline(true);
   await assertRestored();
   const replay = await page.evaluate(async ({ chapter, media }) => {
@@ -139,23 +204,80 @@ try {
   }, { chapter, media });
   assert.match(replay[0], /^WEBVTT/);
   assert.deepEqual(replay.slice(1), [206, 16]);
-  const response = await page.goto(origin + chapter);
-  assert.match(response.headers()["content-security-policy"], /default-src 'none'/);
-  await page.getByLabel("Narration with captions").waitFor();
+  await assertPlayback(chapter, "video");
   await context.setOffline(false);
+
+  const downloadArea = page.getByRole("region", { name: "Offline lesson download" });
+  for (const [route, name] of [[individual, lesson], [standardLesson, standardSave]]) {
+    await page.goto(origin + route);
+    await downloadArea.getByRole("button", { name: "Save lesson for offline use" }).click();
+    await downloadArea.getByRole("status").getByText("Lesson saved on this device.").waitFor();
+    assert.ok(await hasSaved(name));
+  }
+  const savedBytes = await mediaDigests();
+  assert.equal(Object.keys(savedBytes).length, 6);
+  for (const url of Object.keys(savedBytes)) protectedFiles.add(new URL(url).pathname);
+
+  const discard = await page.evaluate(async ({ chapter, media, ready }) => {
+    const prefix = "mpsc-free-mock-lesson-v1-pack-rollback-fixture-";
+    const captionsPath = "/lectures/units/english-marin-v3.vtt";
+    const [audio, captions, chapterPage] = await Promise.all([media, captionsPath, chapter].map(path => fetch(path)));
+    const names = [];
+    for (const reason of ["missing-marker", "bad-marker", "missing-audio", "missing-track", "private", "vary", "auth", "foreign", "api"]) {
+      const id = "rollback-fixture-" + reason + "-v1";
+      const name = prefix + reason + "-v1";
+      names.push(name);
+      const cache = await caches.open(name);
+      const packPath = "/jee/offline-packs/" + id;
+      const headers = reason === "auth" ? { Authorization: "Basic local-test-fixture" } : {};
+      const request = new Request(packPath, { headers });
+      await cache.put(request, await fetch(request));
+      if (reason !== "missing-audio") await cache.put(media, audio.clone());
+      await cache.put(captionsPath, captions.clone());
+      if (reason !== "missing-marker") await cache.put(ready, new Response(reason === "bad-marker" ? "incomplete" : "saved"));
+      if (reason === "foreign") await cache.put("https://example.invalid/lectures/foreign.mp3", audio.clone());
+      if (reason === "api") await cache.put("/api/admin/teacher-usage", chapterPage.clone());
+    }
+    const obsolete = "mpsc-free-mock-v1";
+    await (await caches.open(obsolete)).put("/old", new Response("obsolete"));
+    await (await caches.open("mpsc-free-mock-static")).put("/api/admin/teacher-usage", chapterPage.clone());
+    return [...names, obsolete];
+  }, { chapter, media, ready });
+
+  forbidDownload = true;
+  for (const [build, expected, old] of [
+    [recovery, "mpsc-free-mock-v14-recovery", "mpsc-free-mock-v14"],
+    [candidate, "mpsc-free-mock-v14", "mpsc-free-mock-v14-recovery"],
+  ]) {
+    await switchBuild(build, expected, old);
+    await assertRestored();
+    await page.waitForFunction(async obsolete => !(await caches.keys()).some(name => obsolete.includes(name)), [...discard, old]);
+    assert.equal(await page.evaluate(async () => Boolean(await caches.match("/api/admin/teacher-usage"))), false);
+    for (const name of savedNames) assert.ok(await hasSaved(name), name);
+    assert.deepEqual(await mediaDigests(), savedBytes);
+    await context.setOffline(true);
+    await assertRestored();
+    await assertPlayback(chapter, "video");
+    await assertPlayback(individual, "audio");
+    await assertPlayback(standardLesson, "audio");
+    await context.setOffline(false);
+  }
+  assert.equal(blockedFetches, 0, "A saved media or pack request reached the network during recovery");
+  forbidDownload = false;
+  console.log("Safe recovery passed: v13 → v14 → recovery → v14. Saved chapter and individual media are byte-identical, with offline playback, seeking and captions; unsafe and obsolete caches were removed.");
 
   // This is an observed rollback limitation, so protect it as an explicit release gate.
   await switchBuild(main, "mpsc-free-mock-v13", "mpsc-free-mock-v14");
   await assertRestored();
   await page.waitForFunction(async ({ pack, ready }) => !(await caches.match(ready, { cacheName: pack })), { pack, ready });
-  assert.ok(!await hasPack(), "v13 is expected to retire the candidate pack contents");
+  for (const name of savedNames) assert.ok(!await hasSaved(name), `v13 unexpectedly retained ${name}`);
   await context.setOffline(true);
   await assertRestored();
   await context.setOffline(false);
 
   await switchBuild(candidate, "mpsc-free-mock-v14", "mpsc-free-mock-v13");
   await assertRestored();
-  assert.ok(!await hasPack());
+  assert.ok(!await hasSaved(pack));
   await page.goto(origin + "/jee/offline-learning");
   const packCard = page.getByRole("article").filter({ hasText: /Gravitation · Chapter 1 with narration/ });
   await packCard.getByRole("button", { name: "Save offline pack" }).click();
