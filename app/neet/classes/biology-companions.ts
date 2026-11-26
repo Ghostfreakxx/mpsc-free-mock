@@ -921,6 +921,162 @@ export const biologyCompanions = [
         explanation: "Longitudinal and transverse sections can have different outlines. The attachment remains the key criterion."
       }
     ]
+  },
+  {
+    id: "nephron-neuron-diagrams",
+    unit: 5,
+    title: "Chemical synapse: trace the signal",
+    reference: {
+      title: "OpenStax Biology 2e: How Neurons Communicate",
+      url: "https://openstax.org/books/biology-2e/pages/35-2-how-neurons-communicate"
+    },
+    lab: null,
+    alt: "Vesicles in the presynaptic terminal release transmitter into the cleft. Transmitter reaches receptors on the postsynaptic membrane.",
+    sections: [
+      {
+        title: "Follow the direction of the signal",
+        paragraphs: [
+          "In a typical chemical synapse, an action potential reaches the presynaptic terminal and opens voltage-gated calcium channels. Calcium entry triggers vesicle fusion. Transmitter molecules released into the cleft can bind to receptors on the receiving cell."
+        ]
+      },
+      {
+        title: "Distinguish the two membranes",
+        paragraphs: [
+          "The presynaptic membrane is the release surface. The postsynaptic membrane carries receptors in this schematic. Vesicles remain on the release side as they fuse; individual transmitter molecules cross the gap. Receptor activation can increase or decrease the likelihood that the receiving cell fires."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Calcium entry triggers vesicle fusion at the terminal.",
+          "Transmitter, rather than a whole vesicle, crosses the synaptic cleft.",
+          "The effect depends on the postsynaptic receptors."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "A diagram shows an impulse arriving and transmitter released normally, but the receiving membrane lacks the matching receptor. What step is directly impaired?",
+        steps: [
+          "Separate release from reception: the first cell still releases transmitter.",
+          "Follow the released molecules to the membrane that should detect them."
+        ],
+        answer: "The receptor-mediated postsynaptic response is impaired."
+      }
+    ],
+    quiz: [
+      {
+        question: "What crosses the synaptic cleft in this model?",
+        options: [
+          "Whole vesicles",
+          "Transmitter molecules",
+          "The presynaptic membrane",
+          "The entire impulse as continuous axon current"
+        ],
+        answer: 1,
+        explanation: "The vesicle fuses with the release membrane and its soluble transmitter crosses the cleft."
+      },
+      {
+        question: "Which event directly triggers release in the typical model?",
+        options: [
+          "Calcium enters the presynaptic terminal",
+          "Receptors move to the cleft",
+          "The two cells join into one axon",
+          "Calcium leaves the postsynaptic membrane"
+        ],
+        answer: 0,
+        explanation: "Calcium entry at the release terminal promotes vesicle fusion."
+      },
+      {
+        question: "Normal release is observed but postsynaptic receptors are blocked. Which observation is expected?",
+        options: [
+          "The release surface must disappear",
+          "Transmitter reaches the cleft but its usual postsynaptic action is reduced",
+          "All synaptic vesicles enter the other cell",
+          "The junction becomes an electrical synapse"
+        ],
+        answer: 1,
+        explanation: "Release and receptor binding are separate steps; blocking the latter can reduce the response despite normal release."
+      }
+    ]
+  },
+  {
+    id: "root-stem-vascular-diagrams",
+    unit: 2,
+    title: "Vascular tissue patterns in roots and stems",
+    reference: {
+      title: "IIT Kanpur SATHEE: Anatomy of Flowering Plants",
+      url: "https://sathee.iitk.ac.in/sathee-neet/ncert-books/neet-ncert-books/neet-nb-bio-11/bio-11-chapter-6-anatomy-of-flowering-plants/"
+    },
+    lab: null,
+    alt: "A root schematic alternates xylem and phloem on different radii. A collateral stem bundle places outer phloem and inner xylem on the same radius.",
+    sections: [
+      {
+        title: "Look at the relationship between tissues",
+        paragraphs: [
+          "In the root pattern shown, xylem and phloem occupy alternate positions on different radii. This is radial arrangement. In a typical collateral stem bundle, xylem and phloem share a radius, with xylem toward the centre and phloem toward the outside."
+        ]
+      },
+      {
+        title: "Keep two layers of evidence separate",
+        paragraphs: [
+          "Radial or collateral describes the relationship of tissues. Ring or scattered describes the layout of bundles across the section. A ring alone does not tell which tissue is on the inner side of an individual bundle."
+        ]
+      },
+      {
+        title: "Quick revision",
+        paragraphs: [
+          "Radial root model: xylem and phloem alternate on different radii.",
+          "Collateral stem model: outer phloem and inner xylem on one radius.",
+          "Use position relative to the whole organ centre."
+        ]
+      }
+    ],
+    examples: [
+      {
+        question: "In an unknown section, each bundle shows one tissue just outside the other along a radius. The bundles form a ring. What can you infer?",
+        steps: [
+          "Use the same-radius pairing to identify the illustrated collateral pattern.",
+          "Interpret the ring as a separate clue to the whole organ layout."
+        ],
+        answer: "The pattern supports a typical collateral stem model. Confirm the tissue labels before naming the inner and outer tissue."
+      }
+    ],
+    quiz: [
+      {
+        question: "Which arrangement identifies the typical radial root diagram?",
+        options: [
+          "Outer phloem and inner xylem share one radius",
+          "Xylem and phloem alternate on different radii",
+          "Xylem exists only in the outer epidermis",
+          "Phloem fills a stomatal pore"
+        ],
+        answer: 1,
+        explanation: "Separate, alternating radial positions distinguish the root model."
+      },
+      {
+        question: "In the illustrated collateral stem bundle, which tissue is toward the organ centre?",
+        options: [
+          "Phloem",
+          "Xylem",
+          "Epidermis",
+          "Cuticle"
+        ],
+        answer: 1,
+        explanation: "The typical collateral arrangement puts xylem inward and phloem outward."
+      },
+      {
+        question: "What does a bundle ring establish by itself?",
+        options: [
+          "The organ layout of bundles",
+          "The identity of every cell",
+          "The exact species",
+          "The presence of secondary growth"
+        ],
+        answer: 0,
+        explanation: "A ring describes bundle positions. Identification of the tissues requires examining the individual bundles."
+      }
+    ]
   }
 ];
 

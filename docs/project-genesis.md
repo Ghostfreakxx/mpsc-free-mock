@@ -171,3 +171,9 @@ The default Windows Turbopack build completed 512 pages. The three-worker Webpac
 Chromium checked reduced-motion mode, both themes, visible keyboard focus, order from library link to recording to download, Enter activation of downloads, 17 px lesson body text, and diagram rendering at 360 px. Genesis passed the offline classroom, saved media, and cache isolation fixtures using credentials-free local production. No physical Android device or screen-reader setup was available for verification.
 
 [Integration and offline release evidence](./production-readiness.md) · [Immunity screenshot](./genesis-screenshots/neet-human-welfare-dark-360.png) · [Placentation screenshot](./genesis-screenshots/neet-flower-tissue-diagrams-light-360.png)
+
+## Release candidate hardening
+
+Added chemical synapse and root/stem vascular diagram companions and a dedicated MPSC offline regression in the Genesis suite. Recorded data preservation, release blockers, safeguards, and post-deployment and rollback checks are in the [release-candidate report](./production-readiness.md).
+
+Windows Turbopack completed 514 pages. The existing three-worker Webpack fallback stays available. Chromium measured 152 KiB initial compressed JavaScript on the room, 189 KiB on the lab, and 179 KiB on Mathematics setup. Opening 3D added 272 KiB and 244 KiB in the room and lab. The question bank loaded when starting the timed practice. Screenshots show the new [synapse](./genesis-screenshots/neet-nephron-neuron-diagrams-dark-360.png) and [vascular diagrams](./genesis-screenshots/neet-root-stem-vascular-diagrams-light-360.png).

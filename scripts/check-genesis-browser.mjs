@@ -168,6 +168,8 @@ try {
       ["leaf cross sections tissues gas exchange", "Leaf cross sections: tissues and gas exchange", "Guard cells regulate stomatal aperture."],
       ["immune memory active passive immunity", "Immune memory and active versus passive immunity", "Active immunity: recipient response and potential memory."],
       ["placentation ovary sections", "Placentation in ovary sections", "Marginal: ovules attach along one margin."],
+      ["chemical synapse trace signal", "Chemical synapse: trace the signal", "Calcium entry triggers vesicle fusion at the terminal."],
+      ["vascular tissue patterns roots stems", "Vascular tissue patterns in roots and stems", "Use position relative to the whole organ centre."],
     ]) {
       await room.getByLabel("Teaching mode").selectOption("questions");
       await room.getByLabel("Ask Zorami a question").fill(query);
@@ -201,7 +203,7 @@ try {
       await cellDiagram.scrollIntoViewIfNeeded();
       await page.screenshot({ path: path.join(screenshots, "neet-cell-notes-360.png") });
     }
-    for (const [slug, answer, count] of [["cell-cycle-division", "12", 4], ["genetics-evolution", "2/3", 4], ["biomolecules", "Activation barrier", 4], ["plant-physiology", "Net carbon dioxide exchange is zero", 3], ["human-physiology", "Tubular reabsorption", 3], ["reproduction", "Zygote", 3], ["ecology", "Phytoplankton may turn over rapidly", 3], ["diversity-living-world", "True vascular tissue", 3], ["structural-organisation", "Large intercellular air spaces", 3], ["human-welfare", "Antigen-specific memory cells", 3], ["flower-tissue-diagrams", "A central attachment axis with radiating partitions", 3]]) {
+    for (const [slug, answer, count] of [["cell-cycle-division", "12", 4], ["genetics-evolution", "2/3", 4], ["biomolecules", "Activation barrier", 4], ["plant-physiology", "Net carbon dioxide exchange is zero", 3], ["human-physiology", "Tubular reabsorption", 3], ["reproduction", "Zygote", 3], ["ecology", "Phytoplankton may turn over rapidly", 3], ["diversity-living-world", "True vascular tissue", 3], ["structural-organisation", "Large intercellular air spaces", 3], ["human-welfare", "Antigen-specific memory cells", 3], ["flower-tissue-diagrams", "A central attachment axis with radiating partitions", 3], ["nephron-neuron-diagrams", "Transmitter molecules", 3], ["root-stem-vascular-diagrams", "Xylem and phloem alternate on different radii", 3]]) {
       await page.goto(base + "/neet/classes/written/" + slug);
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
       const diagram = page.locator("figure img");
@@ -461,6 +463,69 @@ try {
     }), true);
   } finally {
     await context.close();
+  }
+
+  const mpsc = await browser.newContext({ viewport: { width: 360, height: 800 }, reducedMotion: "reduce", hasTouch: true, isMobile: true });
+  try {
+    const page = await mpsc.newPage();
+    await page.goto(base + "/mock-test");
+    await page.waitForFunction(() => Boolean(navigator.serviceWorker.controller));
+    await page.reload();
+    await page.locator(".practice-option").first().waitFor();
+    await page.waitForFunction(async () => Boolean(await caches.match("/question-bank/mpsc")));
+    const bank = await page.evaluate(async () => (await (await caches.match("/question-bank/mpsc")).json()).questions);
+    assert.ok(bank.length > 1_000);
+    const categories = [...new Set(bank.map(question => question.category))];
+    const choices = page.getByRole("region", { name: "Choose a MPSC practice topic" });
+    for (const category of categories) {
+      const option = choices.getByRole("button", { name: category, exact: true });
+      await option.press("Enter");
+      assert.equal(await option.getAttribute("aria-pressed"), "true");
+    }
+    await page.locator(".practice-option").first().tap();
+    await page.locator(".practice-result").waitFor();
+    const responseKey = "mpsc.practice.responses.v1";
+    await page.waitForFunction(key => Object.keys(JSON.parse(localStorage.getItem(key) ?? "{}")).length > 0, responseKey);
+    const responses = await page.evaluate(key => localStorage.getItem(key), responseKey);
+    await page.goto(base + "/mizo");
+    await page.locator(".practice-option").first().waitFor();
+    await page.waitForFunction(async () => Boolean(await caches.match("/question-bank/mpsc-mizo")));
+    await mpsc.setOffline(true);
+    await page.reload();
+    await page.locator(".practice-option").first().waitFor();
+    await page.goto(base + "/mock-test");
+    await page.locator(".practice-option").first().waitFor();
+    assert.equal(await page.evaluate(key => localStorage.getItem(key), responseKey), responses);
+    await mpsc.setOffline(false);
+
+    await page.goto(base + "/exam-simulator?exam=mpsc");
+    await page.getByRole("button", { name: /Start 25-question MPSC/ }).press("Enter");
+    await page.getByRole("timer").waitFor();
+    await page.getByRole("group", { name: "Answer options" }).getByRole("button").first().tap();
+    await page.getByRole("button", { name: /Mark for review/ }).press("Enter");
+    const second = page.getByRole("region", { name: "Question 2", exact: true });
+    await second.waitFor();
+    await mpsc.setOffline(true);
+    await page.reload();
+    await second.waitFor();
+    await page.getByRole("button", { name: "Previous", exact: true }).press("Enter");
+    await page.getByRole("button", { name: /Unmark/ }).waitFor();
+    await page.getByRole("group", { name: "Answer options" }).getByRole("button", { pressed: true }).waitFor();
+    await page.getByRole("button", { name: "Submit", exact: true }).press("Enter");
+    await page.getByRole("button", { name: "Submit exam", exact: true }).press("Enter");
+    await page.getByRole("heading", { name: /You scored .* out of 25/ }).waitFor();
+    const saved = await page.evaluate(() => ({
+      attempt: JSON.parse(localStorage.getItem("exam-simulator:attempt:v1")),
+      history: JSON.parse(localStorage.getItem("exam-simulator:history:v1")),
+      math: localStorage.getItem("jee-math:attempt:v1"),
+    }));
+    assert.equal(saved.attempt.examId, "mpsc");
+    assert.equal(saved.history[0].examId, "mpsc");
+    assert.equal(saved.math, null);
+    assert.equal(await page.evaluate(key => localStorage.getItem(key), responseKey), responses);
+    console.log("MPSC regression passed: " + bank.length + " bank items, " + categories.length + " categories, two offline practice routes, saved answer and simulator review restoration.");
+  } finally {
+    await mpsc.close();
   }
 
   console.log("Genesis checks passed: three viewport sizes, both themes, classroom offline reload, synchronized lecture blackboard, offline lecture reload, partial audio, playback, seek, captions, individual/chapter/subject removal, and twelve lab activities.");

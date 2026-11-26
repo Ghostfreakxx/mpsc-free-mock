@@ -5,7 +5,7 @@ Run `node scripts/inventory-courses.mjs` for the per-recording listing. Add `--h
 | Published catalog | Recorded lessons | Written lessons | Checks performed |
 | --- | ---: | ---: | --- |
 | JEE Physics, Chemistry and Mathematics | 120 | 57 | Catalog references, chapter narration scripts, cue metadata, quizzes, nonempty audio and WebVTT |
-| NEET dedicated | 34 | 12 | Same recorded lesson checks |
+| NEET dedicated | 34 | 14 | Same recorded lesson checks |
 | NEET shared Physics and Chemistry | 106 mappings | — | Every mapping resolves to an existing JEE recording |
 
 The checked JEE syllabus inventory has 20 Physics, 20 Chemistry and 14 Mathematics units, with 21, 22 and 14 written lessons respectively. The inventory maps a recording to each of the 54 JEE units. All 57 written lessons have a local figure and worked examples. A lesson count alone does not measure subheading coverage. Retain the repository's [NEET Biology coverage](./neet-class-coverage-2026.md), [shared course mapping](./neet-physics-chemistry-mapping-2026.md), and [subheading audit](./neet-subheading-review-2026.md) when marking syllabus completion.
@@ -119,3 +119,7 @@ Decoded the first 30 seconds of Reproduction chapter 8 and Ecology chapter 20 an
 ## Human Welfare and floral diagram companions
 
 B10 chapters 8–12 support basic immunology and the new immune-memory and active/passive immunity companion. Vaccination is treated as an example of active immunity in the source course; the notes focus on antibody origin and evidence for memory. B25 chapters 3–4 support the new placentation comparison, limited to marginal, axile and the illustrated parietal attachment. Twelve of 34 dedicated recordings now have focused companions. These are subtopic-level additions. [OpenStax adaptive immunity](https://openstax.org/books/biology-2e/pages/42-2-adaptive-immune-response) · [IIT Kanpur SATHEE on placentation](https://sathee.iitk.ac.in/ncert-books/neet-ncert-exemplar/ncert_b11_exemplar/morphology_of_flowering_plants/)
+
+## Synapse and vascular diagram companions
+
+B24 chapters 7–8 support directional reasoning at a typical chemical synapse. The companion separates presynaptic calcium entry, vesicle fusion, transmitter diffusion and receptor response. B26 chapters 2 and 5–6 support radial versus collateral arrangement and root/stem section interpretation, with whole-section patterns distinguished from tissue position within a bundle. Fourteen of 34 dedicated recordings now have focused companions. [OpenStax chemical synapses](https://openstax.org/books/biology-2e/pages/35-2-how-neurons-communicate) · [IIT Kanpur SATHEE plant anatomy](https://sathee.iitk.ac.in/sathee-neet/ncert-books/neet-ncert-books/neet-nb-bio-11/bio-11-chapter-6-anatomy-of-flowering-plants/)
